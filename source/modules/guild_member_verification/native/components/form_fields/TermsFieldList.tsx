@@ -1,86 +1,85 @@
-// Module ID: 5158
-// Function ID: 44561
+// Module ID: 5180
+// Function ID: 5181
 // Name: TermsFieldListItem
-// Dependencies: [31, 27, 33, 4165, 689, 4161, 4155, 1212, 5159, 2]
+// Dependencies: [19, 17, 21, 4189, 712, 4185, 4179, 1236, 5181, 2]
 // Exports: default
 
-// Module 5158 (TermsFieldListItem)
-import result from "result";
+// Module 5180 (TermsFieldListItem)
+import noop from "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_5;
+let c5;
 let closure_6;
-let closure_7;
+let error;
 const require = arg1;
 function TermsFieldListItem(arg0) {
   let rowNumber;
   let rule;
   let rulesChannelId;
   ({ rowNumber, rule, rulesChannelId } = arg0);
-  const tmp = _createForOfIteratorHelperLoose();
-  let obj = { style: tmp.termsRow };
-  obj = { style: tmp.termsRowNumber, variant: "text-sm/medium", color: "text-muted", children: "" + rowNumber + "." };
-  const items = [callback(require(4161) /* Text */.Text, obj), ];
-  obj = { style: tmp.termsRowContent, variant: "text-md/medium", children: importDefault(4155).parseGuildVerificationFormRule(rule, true, { channelId: rulesChannelId }) };
-  items[1] = callback(require(4161) /* Text */.Text, obj);
-  obj.children = items;
+  const tmp = createCacheKey();
+  let obj = { style: tmp.termsRow, children: null };
+  obj = { style: tmp.termsRowNumber, variant: "text-sm/medium", color: "text-muted", children: null };
+  obj[3] = "" + rowNumber + ".";
+  const items = [callback(require(4185) /* Text */.Text, obj), ];
+  obj = { style: tmp.termsRowContent, variant: "text-md/medium", children: null };
+  obj[2] = importDefault(4179).parseGuildVerificationFormRule(rule, true, { channelId: rulesChannelId });
+  items[1] = callback(require(4185) /* Text */.Text, obj);
+  obj[1] = items;
   return callback2(View, obj);
 }
-({ jsx: closure_5, jsxs: closure_6, Fragment: closure_7 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { padding: 16, flexDirection: "column", justifyContent: "space-between", backgroundColor: require("_createForOfIteratorHelperLoose").colors.CARD_BACKGROUND_DEFAULT };
-_createForOfIteratorHelperLoose.termsContainer = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.firstItem = { borderTopLeftRadius: require("_createForOfIteratorHelperLoose").radii.sm, borderTopRightRadius: require("_createForOfIteratorHelperLoose").radii.sm };
-const obj1 = { borderTopLeftRadius: require("_createForOfIteratorHelperLoose").radii.sm, borderTopRightRadius: require("_createForOfIteratorHelperLoose").radii.sm };
-_createForOfIteratorHelperLoose.lastItem = { borderBottomLeftRadius: require("_createForOfIteratorHelperLoose").radii.sm, borderBottomRightRadius: require("_createForOfIteratorHelperLoose").radii.sm, marginBottom: 12 };
-_createForOfIteratorHelperLoose.termsRow = { flexDirection: "row" };
-_createForOfIteratorHelperLoose.termsRowContent = { flex: 1, lineHeight: 20 };
-_createForOfIteratorHelperLoose.termsRowNumber = { paddingRight: 8, width: 20, height: 20 };
-_createForOfIteratorHelperLoose.title = { marginBottom: 16 };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-const obj2 = { borderBottomLeftRadius: require("_createForOfIteratorHelperLoose").radii.sm, borderBottomRightRadius: require("_createForOfIteratorHelperLoose").radii.sm, marginBottom: 12 };
+({ jsx: c5, jsxs: closure_6, Fragment: error } = jsxProd);
+createCacheKey = { termsContainer: null, firstItem: null, lastItem: null, termsRow: null, termsRowContent: null, termsRowNumber: null, title: null };
+createCacheKey = { padding: 16, flexDirection: "column", justifyContent: "space-between", backgroundColor: require("Themes").colors.CARD_BACKGROUND_DEFAULT };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { borderTopLeftRadius: require("Themes").radii.sm, borderTopRightRadius: require("Themes").radii.sm };
+const obj1 = { borderTopLeftRadius: require("Themes").radii.sm, borderTopRightRadius: require("Themes").radii.sm };
+createCacheKey[2] = { borderBottomLeftRadius: require("Themes").radii.sm, borderBottomRightRadius: require("Themes").radii.sm, marginBottom: 12 };
+createCacheKey[3] = { flexDirection: "row" };
+createCacheKey[4] = { flex: 1, lineHeight: 20 };
+createCacheKey[5] = { paddingRight: 8, width: 20, height: 20 };
+createCacheKey[6] = { marginBottom: 16 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+const obj2 = { borderBottomLeftRadius: require("Themes").radii.sm, borderBottomRightRadius: require("Themes").radii.sm, marginBottom: 12 };
 const result = require("jsxProd").fileFinishedImporting("modules/guild_member_verification/native/components/form_fields/TermsFieldList.tsx");
 
 export default function TermsFieldList(rules) {
   rules = rules.rules;
   const rulesChannelId = rules.rulesChannelId;
-  const tmp = _createForOfIteratorHelperLoose();
-  const dependencyMap = tmp;
-  let obj = {};
-  obj = { style: tmp.title, accessibilityRole: "header", variant: "heading-md/semibold", color: "mobile-text-heading-primary" };
-  const intl = rules(1212).intl;
-  obj.children = intl.string(rules(1212).t.prJqwT);
+  let dependencyMap;
+  const tmp = createCacheKey();
+  dependencyMap = tmp;
+  let obj = { children: null };
+  obj = { style: tmp.title, accessibilityRole: "header", variant: "heading-md/semibold", color: "mobile-text-heading-primary", children: null };
+  const intl = rules(1236).intl;
+  obj[4] = intl.string(rules(1236).t.prJqwT);
   let items = [
-    callback(rules(4161).Text, obj),
+    callback(rules(4185).Text, obj),
     rules.map((rule) => {
-      let obj = {};
-      obj = {};
-      const items = [tmp.termsContainer, , ];
+      const items = [_undefined.termsContainer, , ];
       let firstItem = null;
       if (0 === arg1) {
-        firstItem = tmp.firstItem;
+        firstItem = tmp4.firstItem;
       }
       items[1] = firstItem;
       let lastItem = null;
       if (arg1 === rules.length - 1) {
-        lastItem = tmp.lastItem;
+        lastItem = tmp4.lastItem;
       }
+      obj = { style: items, children: tmp2(outer1_9, obj) };
       items[2] = lastItem;
-      obj.style = items;
       obj = { rule, rowNumber: arg1 + 1, rulesChannelId };
-      obj.children = outer1_5(outer1_9, obj);
-      const items1 = [outer1_5(outer1_4, obj), ];
-      let tmp8 = null;
+      const children = [outer1_5(outer1_4, obj), ];
+      let tmp2Result = null;
       if (arg1 !== rules.length - 1) {
-        tmp8 = outer1_5(rules(tmp[8]).TableRowDivider, {});
+        tmp2Result = tmp2(rules(_undefined[8]).TableRowDivider, {});
       }
-      items1[1] = tmp8;
-      obj.children = items1;
-      return outer1_6(outer1_3.Fragment, obj, "term-" + rule + "-" + arg1);
+      children[1] = tmp2Result;
+      return outer1_6(outer1_3.Fragment, { children }, "term-" + rule + "-" + arg1);
     })
   ];
-  obj.children = items;
+  obj[0] = items;
   return callback2(closure_7, obj);
 };

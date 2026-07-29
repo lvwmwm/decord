@@ -1,53 +1,50 @@
-// Module ID: 11425
-// Function ID: 88600
+// Module ID: 11449
+// Function ID: 11450
 // Name: NewBadge
-// Dependencies: [31, 27, 33, 4165, 477, 689, 4011, 8801, 4101, 4161, 1212, 2]
+// Dependencies: [19, 17, 21, 4189, 500, 712, 4035, 8825, 4125, 4185, 1236, 2]
 // Exports: default
 
-// Module 11425 (NewBadge)
-import "result";
+// Module 11449 (NewBadge)
+import "noop";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
 const require = arg1;
-let closure_5 = _createForOfIteratorHelperLoose.createStyles((arg0, arg1) => {
-  let obj = {};
-  obj = { textAlign: "center", textTransform: "uppercase" };
+let closure_5 = createCacheKey.createStyles((arg0, arg1) => {
+  let obj = require(500) /* set */;
   let num = 0;
-  if (obj3.isIOS()) {
+  if (obj.isIOS()) {
     num = 1;
   }
-  obj.marginTop = num;
-  obj.text = obj;
-  obj = { flexDirection: "row", alignItems: "center", justifyContent: "center", borderRadius: importDefault(689).radii.round, paddingHorizontal: 6, paddingVertical: 3 };
-  obj3 = require(477) /* set */;
-  if (obj5.isThemeLight(arg1)) {
+  obj = { text: { textAlign: "center", textTransform: "uppercase", marginTop: num }, base: null };
+  obj = { flexDirection: "row", alignItems: "center", justifyContent: "center", borderRadius: importDefault(712).radii.round, paddingHorizontal: 6, paddingVertical: 3, backgroundColor: null };
+  if (tmpResult.isThemeLight(arg1)) {
     if (!arg0) {
-      let MOBILE_TOAST_BACKGROUND_DEFAULT = importDefault(689).colors.BACKGROUND_BRAND;
+      let MOBILE_TOAST_BACKGROUND_DEFAULT = tmp3(712).colors.BACKGROUND_BRAND;
     }
-    obj.backgroundColor = MOBILE_TOAST_BACKGROUND_DEFAULT;
-    obj.base = obj;
+    obj[6] = MOBILE_TOAST_BACKGROUND_DEFAULT;
+    obj[1] = obj;
     return obj;
   }
-  MOBILE_TOAST_BACKGROUND_DEFAULT = importDefault(689).colors.MOBILE_TOAST_BACKGROUND_DEFAULT;
+  MOBILE_TOAST_BACKGROUND_DEFAULT = tmp3(712).colors.MOBILE_TOAST_BACKGROUND_DEFAULT;
 });
 const result = require("jsxProd").fileFinishedImporting("modules/channel_list_v2/native/components/NewBadge.tsx");
 
 export default function NewBadge() {
-  const tmp = importDefault(8801)();
-  const tmp2 = importDefault(4101)();
-  const tmp3 = callback(tmp, tmp2);
-  let obj = { style: tmp3.base };
-  obj = { variant: "text-xxs/bold", style: tmp3.text };
-  if (obj3.isThemeLight(tmp2)) {
+  const tmp2 = importDefault(8825)();
+  const tmp3 = importDefault(4125)();
+  const tmp4 = callback(tmp2, tmp3);
+  let obj = { style: tmp4.base, children: null };
+  obj = { variant: "text-xxs/bold", style: tmp4.text, color: null, children: null };
+  if (obj3.isThemeLight(tmp3)) {
     let str = "text-overlay-light";
   } else {
     str = "text-brand";
   }
-  obj.color = str;
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj.children = intl.string(require(1212) /* getSystemLocale */.t.y2b7CA);
-  obj.children = jsx(require(4161) /* Text */.Text, { variant: "text-xxs/bold", style: tmp3.text });
-  return <View variant="text-xxs/bold" style={tmp3.text} />;
+  obj[2] = str;
+  const intl = tmp7(1236).intl;
+  obj[3] = intl.string(require(1236) /* getSystemLocale */.t.y2b7CA);
+  obj[1] = jsx(require(4185) /* Text */.Text, { variant: "text-xxs/bold", style: tmp4.text, color: null, children: null });
+  return <View variant="text-xxs/bold" style={tmp4.text} color={null}>{null}</View>;
 };

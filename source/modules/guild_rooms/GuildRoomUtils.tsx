@@ -1,50 +1,58 @@
-// Module ID: 12792
-// Function ID: 99515
-// Name: mapGuildRoomBaseObjectFields
-// Dependencies: [12793, 2]
+// Module ID: 12814
+// Function ID: 12815
+// Name: serverGuildRoomObjectToClient
+// Dependencies: [12815, 2]
 // Exports: serverGuildRoomToClient
 
-// Module 12792 (mapGuildRoomBaseObjectFields)
-function mapGuildRoomBaseObjectFields(objectId) {
-  const obj = { objectId: objectId.object_id, createdBy: objectId.created_by };
-  let date;
-  if (null != objectId.updated_at) {
-    const _Date = Date;
-    date = new Date(objectId.updated_at);
-  }
-  obj.updatedAt = date;
-  obj.updatedBy = objectId.updated_by;
-  return obj;
-}
+// Module 12814 (serverGuildRoomObjectToClient)
 function serverGuildRoomObjectToClient(object_type) {
-  if (object_type.object_type === require(12793) /* GuildRoomObjectTypes */.GuildRoomObjectTypes.PLANT) {
-    let obj = { objectType: require(12793) /* GuildRoomObjectTypes */.GuildRoomObjectTypes.PLANT };
-    const merged = Object.assign(mapGuildRoomBaseObjectFields(object_type));
+  if (object_type.object_type === require(12815) /* GuildRoomObjectTypes */.GuildRoomObjectTypes.PLANT) {
+    let obj = { objectType: null };
+    obj[0] = tmp(12815).GuildRoomObjectTypes.PLANT;
+    obj = { objectId: null, createdBy: null, updatedAt: null, updatedBy: null };
+    ({ object_id: obj2[0], created_by: obj2[1] } = object_type);
+    let date;
+    if (null != object_type.updated_at) {
+      const _Date2 = Date;
+      date = new Date(object_type.updated_at);
+    }
+    obj[2] = date;
+    obj[3] = object_type.updated_by;
+    const merged = Object.assign(obj);
   } else {
-    obj = { objectType: require(12793) /* GuildRoomObjectTypes */.GuildRoomObjectTypes.NOTE };
-    const merged1 = Object.assign(mapGuildRoomBaseObjectFields(object_type));
-    obj["content"] = object_type.content;
-    obj["position"] = object_type.position;
+    obj = { objectType: null };
+    obj[0] = tmp(12815).GuildRoomObjectTypes.NOTE;
+    const obj1 = { objectId: null, createdBy: null, updatedAt: null, updatedBy: null };
+    ({ object_id: obj4[0], created_by: obj4[1] } = object_type);
+    let date1;
+    if (null != object_type.updated_at) {
+      const _Date = Date;
+      date1 = new Date(object_type.updated_at);
+    }
+    obj1[2] = date1;
+    obj1[3] = object_type.updated_by;
+    const merged1 = Object.assign(obj1);
+    ({ content: obj3.content, position: obj3.position } = object_type);
   }
   return obj;
 }
 let result = require("set").fileFinishedImporting("modules/guild_rooms/GuildRoomUtils.tsx");
 
 export const serverGuildRoomToClient = function serverGuildRoomToClient(body) {
-  const obj = { roomId: body.room_id };
+  const obj = { roomId: body.room_id, users: null, background: null, objects: null };
   const users = body.users;
-  obj.users = users.reduce((set, userId) => {
+  obj[1] = users.reduce((set, userId) => {
     const result = set.set(userId.user_id, { userId: userId.user_id, position: userId.position, statusId: userId.status_id, statusText: userId.status_text });
     return set;
   }, new Map());
-  obj.background = body.background;
+  obj[2] = body.background;
   const entries = Object.entries(body.objects);
   const map = new Map();
-  obj.objects = entries.reduce((set) => {
+  obj[3] = entries.reduce((set) => {
     let arr;
     let tmp;
     [tmp, arr] = arg1;
-    const result = set.set(+tmp, arr.map(outer1_3));
+    const result = set.set(+tmp, arr.map(closure_2));
     return set;
   }, new Map());
   return obj;

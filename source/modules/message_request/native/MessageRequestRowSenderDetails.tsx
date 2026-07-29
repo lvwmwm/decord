@@ -1,34 +1,36 @@
-// Module ID: 15668
-// Function ID: 120667
+// Module ID: 15703
+// Function ID: 15704
 // Name: MessageRequestRowSenderDetails
-// Dependencies: [31, 27, 3802, 33, 4165, 1273, 689, 566, 4004, 15669, 1395, 4161, 1212, 15670, 15671, 2]
+// Dependencies: [19, 17, 3826, 21, 4189, 1297, 712, 589, 4028, 15704, 1419, 4185, 1236, 15705, 15706, 2]
 // Exports: default
 
-// Module 15668 (MessageRequestRowSenderDetails)
-import "result";
+// Module 15703 (MessageRequestRowSenderDetails)
+import "noop";
 import { View } from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import upsertRelationship from "upsertRelationship";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_5;
+let c5;
 let closure_6;
-let closure_7;
+let error;
 const require = arg1;
-({ jsx: closure_5, jsxs: closure_6, Fragment: closure_7 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { borderRadius: require("Button").AVATAR_SIZE_MAP[require("Button").AvatarSizes.NORMAL] / 2, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SURFACE_HIGH };
-_createForOfIteratorHelperLoose.avatar = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.avatarContainer = { marginRight: 16, alignItems: "flex-start", height: "100%" };
-_createForOfIteratorHelperLoose.detailsContainer = { marginRight: 8, justifyContent: "flex-start", alignItems: "flex-start", flex: 1 };
-_createForOfIteratorHelperLoose.messageDetails = { flexDirection: "row", alignItems: "center" };
-_createForOfIteratorHelperLoose.username = { flexShrink: 1, color: require("_createForOfIteratorHelperLoose").colors.MOBILE_TEXT_HEADING_PRIMARY };
-_createForOfIteratorHelperLoose.timestampSeparator = { marginHorizontal: 6 };
-_createForOfIteratorHelperLoose.messagePreview = { marginTop: 2 };
-_createForOfIteratorHelperLoose.usernameTextContainer = { flexShrink: 1 };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-let obj1 = { flexShrink: 1, color: require("_createForOfIteratorHelperLoose").colors.MOBILE_TEXT_HEADING_PRIMARY };
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/message_request/native/MessageRequestRowSenderDetails.tsx");
+({ jsx: c5, jsxs: closure_6, Fragment: error } = jsxProd);
+createCacheKey = { avatar: null, avatarContainer: null, detailsContainer: null, messageDetails: null, username: null, timestampSeparator: null, messagePreview: null, usernameTextContainer: null };
+createCacheKey = { borderRadius: null, backgroundColor: null };
+createCacheKey[0] = require("Button").AVATAR_SIZE_MAP[require("Button").AvatarSizes.NORMAL] / 2;
+createCacheKey[1] = require("Themes").colors.BACKGROUND_SURFACE_HIGH;
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { marginRight: 16, alignItems: "flex-start", height: "100%" };
+createCacheKey[2] = { marginRight: 8, justifyContent: "flex-start", alignItems: "flex-start", flex: 1 };
+createCacheKey[3] = { flexDirection: "row", alignItems: "center" };
+createCacheKey[4] = { flexShrink: 1, color: require("Themes").colors.MOBILE_TEXT_HEADING_PRIMARY };
+createCacheKey[5] = { marginHorizontal: 6 };
+createCacheKey[6] = { marginTop: 2 };
+createCacheKey[7] = { flexShrink: 1 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let obj1 = { flexShrink: 1, color: require("Themes").colors.MOBILE_TEXT_HEADING_PRIMARY };
+const result = require("upsertRelationship").fileFinishedImporting("modules/message_request/native/MessageRequestRowSenderDetails.tsx");
 
 export default function MessageRequestRowSenderDetails(isRestricted) {
   let channel;
@@ -38,94 +40,98 @@ export default function MessageRequestRowSenderDetails(isRestricted) {
   if (flag === undefined) {
     flag = false;
   }
-  const tmp = _createForOfIteratorHelperLoose();
-  let obj = otherUser(566);
-  const items = [_isNativeReflectConstruct];
+  const tmp = createCacheKey();
+  let obj = otherUser(589);
+  const items = [upsertRelationship];
   const stateFromStores = obj.useStateFromStores(items, () => {
-    if (null == otherUser) {
-      return null;
-    } else {
-      let nickname = outer1_4.getNickname(otherUser.id);
-      if (null == nickname) {
-        nickname = outer1_1(outer1_2[8]).getGlobalName(otherUser);
+    let tmp2 = null;
+    if (null != otherUser) {
+      let nickname = outer1_4.getNickname(tmp.id);
+      if (nickname == null) {
+        nickname = outer1_1(outer1_2[8]).getGlobalName(tmp);
         const obj = outer1_1(outer1_2[8]);
       }
-      return nickname;
+      tmp2 = nickname;
     }
+    return tmp2;
   });
-  let obj1 = otherUser(15669);
+  let obj1 = otherUser(15704);
   const messageRequestRelativeTimestampText = obj1.useMessageRequestRelativeTimestampText(channel);
   const random = Math.random();
-  const rounded = Math.floor(random * importDefault(1395).DEFAULT_AVATARS.length);
-  obj = {};
-  obj = { style: tmp.avatarContainer };
+  const rounded = Math.floor(random * importDefault(1419).DEFAULT_AVATARS.length);
+  obj = { style: tmp.avatarContainer, children: null };
   if (null != otherUser) {
-    obj1 = { avatarStyle: tmp.avatar, user: otherUser, guildId: undefined, disablePlaceholder: true };
+    obj = { avatarStyle: null, user: null, guildId: "HermesInternal", disablePlaceholder: null, avatarDecoration: "Warning" };
+    obj[0] = tmp.avatar;
+    obj[1] = otherUser;
     let avatarDecoration;
-    if (null != otherUser) {
+    if (otherUser != null) {
       avatarDecoration = otherUser.avatarDecoration;
     }
-    obj1.avatarDecoration = avatarDecoration;
-    let obj2 = obj1;
+    obj[4] = avatarDecoration;
+    obj1 = obj;
   } else {
-    obj2 = { avatarStyle: tmp.avatar, source: importDefault(1395).DEFAULT_AVATARS[rounded] };
+    obj1 = { avatarStyle: null, source: null };
+    obj1[0] = tmp.avatar;
+    obj1[1] = importDefault(1419).DEFAULT_AVATARS[rounded];
   }
-  obj.children = callback(otherUser(1273).Avatar, obj2);
-  const items1 = [callback(View, obj), ];
-  const obj3 = { style: tmp.detailsContainer };
-  const obj4 = { style: tmp.messageDetails };
-  const obj5 = { lineClamp: 1, variant: "text-md/semibold", color: "mobile-text-heading-primary", style: tmp.usernameTextContainer };
-  const obj6 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", style: tmp.username };
+  obj[1] = closure_5(otherUser(1297).Avatar, obj1);
+  const items1 = [closure_5(View, obj), ];
+  const obj2 = { style: tmp.detailsContainer, children: null };
+  const obj3 = { style: tmp.messageDetails, children: null };
+  const obj4 = { lineClamp: 1, variant: "text-md/semibold", color: "mobile-text-heading-primary", style: tmp.usernameTextContainer, children: null };
+  const obj5 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", style: tmp.username, children: null };
   let stringResult = stateFromStores;
-  if (null == stateFromStores) {
+  if (stateFromStores == null) {
     let username;
-    if (null != otherUser) {
+    if (otherUser != null) {
       username = otherUser.username;
     }
     stringResult = username;
   }
-  if (null == stringResult) {
-    const intl = otherUser(1212).intl;
-    stringResult = intl.string(otherUser(1212).t["30mdIx"]);
+  if (stringResult == null) {
+    const intl = tmp2(1236).intl;
+    stringResult = intl.string(tmp2(1236).t["30mdIx"]);
   }
-  obj6.children = stringResult;
-  const items2 = [callback(otherUser(4161).Text, obj6), ];
-  let tmp18 = null != stateFromStores;
-  if (tmp18) {
-    const obj7 = { variant: "text-md/medium", color: "text-muted" };
-    let obj11 = otherUser(4004);
-    const items3 = [" ", obj11.getUserTag(otherUser)];
-    obj7.children = items3;
-    tmp18 = callback2(otherUser(4161).Text, obj7);
+  obj5[3] = stringResult;
+  const items2 = [closure_5(otherUser(4185).Text, obj5), ];
+  let tmp9Result = null != stateFromStores;
+  if (tmp9Result) {
+    const obj6 = { variant: "text-md/medium", color: "text-muted", children: null };
+    const items3 = [" ", tmp2(4028).getUserTag(otherUser)];
+    obj6[2] = items3;
+    tmp9Result = tmp9(tmp2(4185).Text, obj6);
+    const tmp2Result = tmp2(4028);
   }
-  items2[1] = tmp18;
-  obj5.children = items2;
-  const items4 = [callback2(otherUser(4161).Text, obj5), , ];
-  const obj8 = { style: tmp.timestampSeparator, variant: "text-xs/medium", color: "text-muted", children: "\u00B7" };
-  items4[1] = callback(otherUser(4161).Text, obj8);
-  const obj9 = { variant: "text-xs/semibold", color: "text-muted", children: messageRequestRelativeTimestampText };
-  items4[2] = callback(otherUser(4161).Text, obj9);
-  obj4.children = items4;
-  const items5 = [callback2(View, obj4), , ];
-  let tmp22 = !flag;
-  if (tmp22) {
-    const obj10 = { style: tmp.messagePreview, channel };
-    tmp22 = callback(importDefault(15670), obj10);
+  items2[1] = tmp9Result;
+  obj4[4] = items2;
+  const items4 = [closure_6(otherUser(4185).Text, obj4), closure_5(otherUser(4185).Text, { style: tmp.timestampSeparator, variant: "text-xs/medium", color: "text-muted", children: "\u00B7" }), closure_5(otherUser(4185).Text, { variant: "text-xs/semibold", color: "text-muted", children: messageRequestRelativeTimestampText })];
+  obj3[1] = items4;
+  const items5 = [closure_6(View, obj3), , ];
+  let tmp11Result = !flag;
+  if (!flag) {
+    const obj8 = { style: null, channel: null };
+    obj8[0] = tmp.messagePreview;
+    obj8[1] = channel;
+    tmp11Result = tmp11(tmp7(15705), obj8);
   }
-  items5[1] = tmp22;
+  items5[1] = tmp11Result;
   if (flag) {
     flag = null != otherUser;
   }
   if (flag) {
-    obj11 = { style: tmp.messagePreview, userId: otherUser.id };
-    const intl2 = otherUser(1212).intl;
-    obj11.suffix = intl2.string(otherUser(1212).t.hTltPn);
-    flag = callback(importDefault(15671), obj11);
-    const tmp29 = importDefault(15671);
+    const obj9 = { style: null, userId: null, suffix: null };
+    obj9[0] = tmp.messagePreview;
+    obj9[1] = otherUser.id;
+    const intl2 = tmp2(1236).intl;
+    obj9[2] = intl2.string(tmp2(1236).t.hTltPn);
+    flag = tmp11(tmp7(15706), obj9);
+    const tmp7Result = tmp7(15706);
   }
+  const obj10 = { children: null };
   items5[2] = flag;
-  obj3.children = items5;
-  items1[1] = callback2(View, obj3);
-  obj.children = items1;
-  return callback2(closure_7, obj);
+  obj2[1] = items5;
+  items1[1] = closure_6(View, obj2);
+  obj10[0] = items1;
+  return closure_6(closure_7, obj10);
 };

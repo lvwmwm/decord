@@ -1,14 +1,14 @@
-// Module ID: 16734
-// Function ID: 130355
+// Module ID: 16770
+// Function ID: 16771
 // Name: promise
-// Dependencies: [653, 5104, 2]
+// Dependencies: [676, 5126, 2]
 
-// Module 16734 (promise)
+// Module 16770 (promise)
 import ME from "ME";
 
-let closure_2;
-let closure_3;
-({ AnalyticsObjectTypes: closure_2, AnalyticsObjects: closure_3 } = ME);
+let c3;
+let obj1;
+({ AnalyticsObjectTypes: obj1, AnalyticsObjects: c3 } = ME);
 const result = require("set").fileFinishedImporting("modules/headless_tasks/android/MarkAsRead.tsx");
 
 export default (arg0) => {

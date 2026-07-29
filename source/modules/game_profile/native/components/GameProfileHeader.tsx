@@ -1,45 +1,45 @@
-// Module ID: 8492
-// Function ID: 67472
+// Module ID: 8516
+// Function ID: 8517
 // Name: GameProfileHeader
-// Dependencies: [57, 31, 27, 33, 4165, 689, 4026, 8493, 4589, 8494, 4161, 2]
+// Dependencies: [32, 19, 17, 21, 4189, 712, 4050, 8517, 4611, 8518, 4185, 2]
 // Exports: default
 
-// Module 8492 (GameProfileHeader)
+// Module 8516 (GameProfileHeader)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
+import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_5;
+let c5;
 let closure_6;
-let closure_7;
-let closure_8;
+let error;
+let metroImportAll;
 const require = arg1;
-({ View: closure_5, Image: closure_6 } = get_ActivityIndicator);
-({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWEST };
-_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
-let obj1 = { width: "100%", position: "absolute", top: 0, bottom: -require("_createForOfIteratorHelperLoose").space.PX_80, left: 0, right: 0 };
-_createForOfIteratorHelperLoose.artHero = obj1;
-_createForOfIteratorHelperLoose.artHeroImage = { height: "100%", width: "100%", resizeMode: "cover" };
-_createForOfIteratorHelperLoose.artHeroGradient = { position: "absolute", top: 0, bottom: 0, left: 0, right: 0 };
-let obj2 = { paddingTop: require("_createForOfIteratorHelperLoose").space.PX_32, paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16, gap: require("_createForOfIteratorHelperLoose").space.PX_12, flexDirection: "row", alignItems: "flex-end", maxWidth: 520, alignSelf: "center", width: "100%" };
-_createForOfIteratorHelperLoose.headerContent = obj2;
-const merged = Object.assign(require("_createForOfIteratorHelperLoose").shadows.SHADOW_LOW);
-_createForOfIteratorHelperLoose.shadowContainer = { borderRadius: require("_createForOfIteratorHelperLoose").radii.sm };
-const obj4 = { width: 85, height: 114, borderRadius: require("_createForOfIteratorHelperLoose").radii.sm, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW, overflow: "hidden" };
-_createForOfIteratorHelperLoose.coverContainer = obj4;
-let obj5 = { width: 85, height: 85, borderRadius: require("_createForOfIteratorHelperLoose").radii.sm, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW, overflow: "hidden" };
-_createForOfIteratorHelperLoose.iconContainer = obj5;
-_createForOfIteratorHelperLoose.image = { width: "100%", height: "100%" };
-_createForOfIteratorHelperLoose.titleContainer = { flex: 1, flexDirection: "column", alignItems: "flex-start" };
-let obj3 = { borderRadius: require("_createForOfIteratorHelperLoose").radii.sm };
-_createForOfIteratorHelperLoose.textShadow = { textShadowColor: require("_createForOfIteratorHelperLoose").colors.BLACK, textShadowOffset: { width: 0, height: 0 }, textShadowRadius: 1 };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+({ View: c5, Image: closure_6 } = get_ActivityIndicator);
+({ jsx: error, jsxs: metroImportAll } = jsxProd);
+createCacheKey = { container: null, artHero: null, artHeroImage: null, artHeroGradient: null, headerContent: null, shadowContainer: null, coverContainer: null, iconContainer: null, image: null, titleContainer: null, textShadow: null };
+createCacheKey = { backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOWEST };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { width: "100%", position: "absolute", top: 0, bottom: -require("Themes").space.PX_80, left: 0, right: 0 };
+createCacheKey[2] = { height: "100%", width: "100%", resizeMode: "cover" };
+createCacheKey[3] = { position: "absolute", top: 0, bottom: 0, left: 0, right: 0 };
+let obj1 = { width: "100%", position: "absolute", top: 0, bottom: -require("Themes").space.PX_80, left: 0, right: 0 };
+createCacheKey[4] = { paddingTop: require("Themes").space.PX_32, paddingHorizontal: require("Themes").space.PX_16, gap: require("Themes").space.PX_12, flexDirection: "row", alignItems: "flex-end", maxWidth: 520, alignSelf: "center", width: "100%" };
+let obj2 = { paddingTop: require("Themes").space.PX_32, paddingHorizontal: require("Themes").space.PX_16, gap: require("Themes").space.PX_12, flexDirection: "row", alignItems: "flex-end", maxWidth: 520, alignSelf: "center", width: "100%" };
+const merged = Object.assign(require("Themes").shadows.SHADOW_LOW);
+createCacheKey[5] = { borderRadius: require("Themes").radii.sm };
+const obj3 = { borderRadius: require("Themes").radii.sm };
+createCacheKey[6] = { width: 85, height: 114, borderRadius: require("Themes").radii.sm, backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW, overflow: "hidden" };
+let obj4 = { width: 85, height: 114, borderRadius: require("Themes").radii.sm, backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW, overflow: "hidden" };
+createCacheKey[7] = { width: 85, height: 85, borderRadius: require("Themes").radii.sm, backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW, overflow: "hidden" };
+createCacheKey[8] = { width: "100%", height: "100%" };
+createCacheKey[9] = { flex: 1, flexDirection: "column", alignItems: "flex-start" };
+let obj5 = { width: 85, height: 85, borderRadius: require("Themes").radii.sm, backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW, overflow: "hidden" };
+createCacheKey[10] = { textShadowColor: require("Themes").colors.BLACK, textShadowOffset: { width: 0, height: 0 }, textShadowRadius: 1 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
 let closure_10 = { code: "function GameProfileHeaderTsx1(){const{effectiveScrollY}=this.__closure;return{top:-Math.max(0,-effectiveScrollY.get())};}" };
-let obj6 = { textShadowColor: require("_createForOfIteratorHelperLoose").colors.BLACK, textShadowOffset: { width: 0, height: 0 }, textShadowRadius: 1 };
+let obj6 = { textShadowColor: require("Themes").colors.BLACK, textShadowOffset: { width: 0, height: 0 }, textShadowRadius: 1 };
 const result = require("get ActivityIndicator").fileFinishedImporting("modules/game_profile/native/components/GameProfileHeader.tsx");
 
 export default function GameProfileHeader(game) {
@@ -47,72 +47,71 @@ export default function GameProfileHeader(game) {
   let scrollY;
   game = game.game;
   ({ scrollY, onHeightMeasured } = game);
-  let sharedValue;
-  const tmp = _createForOfIteratorHelperLoose();
-  const first = sharedValue(React.useState(() => Math.random()), 1)[0];
-  let obj = game(first[6]);
-  sharedValue = obj.useSharedValue(0);
-  if (null != scrollY) {
-    sharedValue = scrollY;
-  }
+  let first;
+  scrollY = undefined;
+  const tmp = createCacheKey();
+  let obj = React;
+  first = scrollY(React.useState(() => Math.random()), 1)[0];
   let obj1 = game(first[6]);
-  const fn = function x() {
-    return { top: -Math.max(0, -sharedValue.get()) };
+  if (scrollY == null) {
+    scrollY = obj1.useSharedValue(0);
+  }
+  const fn = function _() {
+    return { top: -Math.max(0, -scrollY.get()) };
   };
-  obj = { effectiveScrollY: sharedValue };
-  fn.__closure = obj;
+  fn.__closure = { effectiveScrollY: scrollY };
   fn.__workletHash = 1177397229282;
   fn.__initData = closure_10;
   let name;
-  const animatedStyle = obj1.useAnimatedStyle(fn);
-  if (null != game) {
+  const animatedStyle = game(first[6]).useAnimatedStyle(fn);
+  if (game != null) {
     name = game.name;
   }
   let joined;
-  if (null != game) {
+  if (game != null) {
     const genres = game.genres;
-    const mapped = genres.map(game(first[7]).getGenreText);
+    const mapped = genres.map(tmp3(tmp4[7]).getGenreText);
     joined = mapped.join(", ");
   }
   let l30Rank;
-  if (null != game) {
+  if (game != null) {
     l30Rank = game.l30Rank;
   }
   const items = [game, first];
-  const memo = React.useMemo(() => {
+  const memo = obj.useMemo(() => {
     let bannerURL;
-    if (null != game) {
-      bannerURL = game.getBannerURL(1024);
+    if (game != null) {
+      bannerURL = obj.getBannerURL(1024);
     }
     if (null == bannerURL) {
       let screenshotUrls;
-      if (null != game) {
-        screenshotUrls = game.screenshotUrls;
+      if (obj != null) {
+        screenshotUrls = obj.screenshotUrls;
       }
-      let tmp6 = null;
+      let tmp3 = null;
       if (null != screenshotUrls) {
-        tmp6 = null;
-        if (game.screenshotUrls.length > 0) {
+        tmp3 = null;
+        if (obj.screenshotUrls.length > 0) {
           const _Math = Math;
-          tmp6 = game.screenshotUrls[Math.floor(Math, first * game.screenshotUrls.length)];
+          tmp3 = obj.screenshotUrls[Math.floor(Math, first * obj.screenshotUrls.length)];
         }
       }
-      bannerURL = tmp6;
+      bannerURL = tmp3;
     }
     return bannerURL;
   }, items);
   const items1 = [game];
-  const memo1 = React.useMemo(() => {
+  const memo1 = obj.useMemo(() => {
     let coverURL;
-    if (null != game) {
+    if (game != null) {
       coverURL = game.getCoverURL(114);
     }
     return coverURL;
   }, items1);
   const items2 = [game];
-  const memo2 = React.useMemo(() => {
+  const memo2 = obj.useMemo(() => {
     let iconURL;
-    if (null != game) {
+    if (game != null) {
       iconURL = game.getIconURL(114);
     }
     return iconURL;
@@ -120,73 +119,80 @@ export default function GameProfileHeader(game) {
   const items3 = [onHeightMeasured];
   obj = {
     style: tmp.container,
-    onLayout: React.useCallback((nativeEvent) => {
-      if (null != onHeightMeasured) {
-        onHeightMeasured(nativeEvent.nativeEvent.layout.height);
+    onLayout: obj.useCallback((nativeEvent) => {
+      if (onHeightMeasured != null) {
+        tmp(nativeEvent.nativeEvent.layout.height);
       }
-    }, items3)
+    }, items3),
+    children: null
   };
-  obj1 = { style: items4 };
+  obj = { style: items4, children: null };
   items4 = [tmp.artHero, animatedStyle];
   let tmp15 = null != memo;
   if (tmp15) {
-    const obj2 = {};
-    const obj3 = { uri: memo };
-    obj2.source = obj3;
-    obj2.style = tmp.artHeroImage;
-    tmp15 = callback(closure_6, obj2);
+    obj1 = { source: null, style: null };
+    const obj2 = { uri: null };
+    obj2[0] = memo;
+    obj1[0] = obj2;
+    obj1[1] = tmp.artHeroImage;
+    tmp15 = callback(closure_6, obj1);
   }
   const items5 = [tmp15, ];
   const items6 = ["rgba(0,0,0,0.3)", tmp.container.backgroundColor];
   items5[1] = callback(onHeightMeasured(first[8]), { colors: items6, style: tmp.artHeroGradient });
-  obj1.children = items5;
-  const items7 = [closure_8(onHeightMeasured(first[6]).View, obj1), ];
-  const obj5 = { style: tmp.headerContent };
-  const obj6 = { style: tmp.shadowContainer };
+  obj[1] = items5;
+  const items7 = [closure_8(onHeightMeasured(first[6]).View, obj), ];
+  const obj4 = { style: tmp.headerContent, children: null };
+  const obj5 = { style: tmp.shadowContainer, children: null };
   if (null != memo1) {
-    const obj7 = { style: tmp.coverContainer };
-    const obj8 = {};
-    const obj9 = { uri: memo1 };
-    obj8.source = obj9;
-    obj8.style = tmp.image;
-    obj7.children = callback(closure_6, obj8);
-    let obj10 = obj7;
+    const obj6 = { style: null, children: null };
+    obj6[0] = tmp.coverContainer;
+    const obj7 = { source: null, style: null };
+    const obj8 = { uri: null };
+    obj8[0] = memo1;
+    obj7[0] = obj8;
+    obj7[1] = tmp.image;
+    obj6[1] = tmp18(closure_6, obj7);
+    let obj9 = obj6;
   } else {
-    obj10 = { style: tmp.iconContainer };
-    let tmp21 = null != memo2;
-    if (tmp21) {
-      const obj11 = {};
-      const obj12 = { uri: memo2 };
-      obj11.source = obj12;
-      obj11.style = tmp.image;
-      tmp21 = callback(closure_6, obj11);
+    obj9 = { style: null, children: null };
+    obj9[0] = tmp.iconContainer;
+    let tmp18Result = null != memo2;
+    if (tmp18Result) {
+      const obj10 = { source: null, style: null };
+      const obj11 = { uri: null };
+      obj11[0] = memo2;
+      obj10[0] = obj11;
+      obj10[1] = tmp.image;
+      tmp18Result = tmp18(closure_6, obj10);
     }
-    obj10.children = tmp21;
+    obj9[1] = tmp18Result;
   }
-  obj6.children = callback(closure_5, obj10);
-  const items8 = [callback(closure_5, obj6), ];
-  const obj13 = { style: tmp.titleContainer };
-  let tmp28 = null != l30Rank;
-  if (tmp28) {
-    const obj14 = { rank: l30Rank };
-    tmp28 = callback(onHeightMeasured(first[9]), obj14);
+  obj5[1] = callback(closure_5, obj9);
+  const items8 = [callback(closure_5, obj5), ];
+  const obj12 = { style: tmp.titleContainer, children: null };
+  tmp18Result = null != l30Rank;
+  if (tmp18Result) {
+    const obj13 = { rank: null };
+    obj13[0] = l30Rank;
+    tmp18Result = tmp18(tmp14(tmp4[9]), obj13);
   }
-  const items9 = [tmp28, , ];
-  const obj15 = { variant: "heading-xxl/semibold", color: "text-overlay-light", lineClamp: 2, style: tmp.textShadow, children: name };
-  items9[1] = callback(game(first[10]).Text, obj15);
-  let tmp32 = null;
+  const items9 = [tmp18Result, callback(game(first[10]).Text, { variant: "heading-xxl/semibold", color: "text-overlay-light", lineClamp: 2, style: tmp.textShadow, children: name }), ];
+  let tmp18Result1 = null;
   if (null != joined) {
-    tmp32 = null;
+    tmp18Result1 = null;
     if ("" !== joined) {
-      const obj16 = { variant: "text-md/normal", color: "text-overlay-light", lineClamp: 2, style: tmp.textShadow, children: joined };
-      tmp32 = callback(game(first[10]).Text, obj16);
+      const obj15 = { variant: "text-md/normal", color: "text-overlay-light", lineClamp: 2, style: null, children: null };
+      obj15[3] = tmp.textShadow;
+      obj15[4] = joined;
+      tmp18Result1 = tmp18(tmp3(tmp4[10]).Text, obj15);
     }
   }
-  items9[2] = tmp32;
-  obj13.children = items9;
-  items8[1] = closure_8(closure_5, obj13);
-  obj5.children = items8;
-  items7[1] = closure_8(closure_5, obj5);
-  obj.children = items7;
+  items9[2] = tmp18Result1;
+  obj12[1] = items9;
+  items8[1] = closure_8(closure_5, obj12);
+  obj4[1] = items8;
+  items7[1] = closure_8(closure_5, obj4);
+  obj[2] = items7;
   return closure_8(closure_5, obj);
 };

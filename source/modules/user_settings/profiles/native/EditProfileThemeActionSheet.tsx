@@ -1,49 +1,49 @@
-// Module ID: 13698
-// Function ID: 105079
+// Module ID: 13719
+// Function ID: 13720
 // Name: EditProfileThemeActionSheet
-// Dependencies: [31, 33, 4165, 689, 5533, 5220, 1212, 1273, 5536, 5198, 4133, 2]
+// Dependencies: [19, 21, 4189, 712, 5551, 5242, 1236, 1297, 5554, 5220, 4157, 2]
 // Exports: default
 
-// Module 13698 (EditProfileThemeActionSheet)
-import "result";
+// Module 13719 (EditProfileThemeActionSheet)
+import "noop";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_3;
-let closure_4;
+let c3;
+let c4;
 const require = arg1;
-({ jsx: closure_3, jsxs: closure_4 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { tintColor: require("_createForOfIteratorHelperLoose").colors.MOBILE_TEXT_HEADING_PRIMARY, marginLeft: 4, width: 20, height: 20 };
-_createForOfIteratorHelperLoose.nitroWheel = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.titleWrapper = { flex: 0 };
-_createForOfIteratorHelperLoose.titleContainer = { justifyContent: "flex-start" };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/user_settings/profiles/native/EditProfileThemeActionSheet.tsx");
+({ jsx: c3, jsxs: c4 } = jsxProd);
+createCacheKey = { nitroWheel: null, titleWrapper: null, titleContainer: null };
+createCacheKey = { tintColor: require("Themes").colors.MOBILE_TEXT_HEADING_PRIMARY, marginLeft: 4, width: 20, height: 20 };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { flex: 0 };
+createCacheKey[2] = { justifyContent: "flex-start" };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+const result = require("createCacheKey").fileFinishedImporting("modules/user_settings/profiles/native/EditProfileThemeActionSheet.tsx");
 
 export default function EditProfileThemeActionSheet(onResetTheme) {
   onResetTheme = onResetTheme.onResetTheme;
-  const tmp = _createForOfIteratorHelperLoose();
-  let obj = {};
-  obj = {};
-  const intl = onResetTheme(1212).intl;
-  obj.title = intl.string(onResetTheme(1212).t.DMeO2X);
+  const tmp = createCacheKey();
+  let obj = { children: null };
+  obj = { title: null, trailing: null, titleWrapperStyle: null, titleContainerStyle: null };
+  const intl = onResetTheme(1236).intl;
+  obj[0] = intl.string(onResetTheme(1236).t.DMeO2X);
   obj = { style: tmp.nitroWheel };
-  obj.trailing = callback(onResetTheme(1273).NitroWheel, obj);
-  ({ titleWrapper: obj2.titleWrapperStyle, titleContainer: obj2.titleContainerStyle } = tmp);
-  const items = [callback(onResetTheme(5220).BottomSheetTitleHeader, obj), ];
-  const obj1 = { hasIcons: false };
-  const obj2 = {};
-  const intl2 = onResetTheme(1212).intl;
-  obj2.label = intl2.string(onResetTheme(1212).t["L+GmoR"]);
-  const intl3 = onResetTheme(1212).intl;
-  obj2.subLabel = intl3.string(onResetTheme(1212).t.MA9iNr);
-  obj2.onPress = function onPress() {
+  obj[1] = callback(onResetTheme(1297).NitroWheel, obj);
+  ({ titleWrapper: obj2[2], titleContainer: obj2[3] } = tmp);
+  const items = [callback(onResetTheme(5242).BottomSheetTitleHeader, obj), ];
+  const obj1 = { hasIcons: false, children: null };
+  const obj2 = { label: null, subLabel: null, onPress: null };
+  const intl2 = onResetTheme(1236).intl;
+  obj2[0] = intl2.string(onResetTheme(1236).t["L+GmoR"]);
+  const intl3 = onResetTheme(1236).intl;
+  obj2[1] = intl3.string(onResetTheme(1236).t.MA9iNr);
+  obj2[2] = function onPress() {
     onResetTheme();
     outer1_1(outer1_2[10]).hideActionSheet();
   };
-  obj1.children = callback(onResetTheme(5198).TableRow, obj2);
-  items[1] = callback(onResetTheme(5536).TableRowGroup, obj1);
-  obj.children = items;
-  return callback2(onResetTheme(5533).ActionSheet, obj);
+  obj1[1] = callback(onResetTheme(5220).TableRow, obj2);
+  items[1] = callback(onResetTheme(5554).TableRowGroup, obj1);
+  obj[0] = items;
+  return callback2(onResetTheme(5551).ActionSheet, obj);
 };

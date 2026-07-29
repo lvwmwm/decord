@@ -1,54 +1,60 @@
-// Module ID: 9200
-// Function ID: 71998
+// Module ID: 9224
+// Function ID: 9225
 // Name: EnterEmail
-// Dependencies: [5, 57, 31, 27, 1850, 9155, 653, 33, 4165, 689, 1456, 566, 668, 9201, 675, 4161, 1212, 8971, 4578, 2]
+// Dependencies: [5, 32, 19, 17, 1874, 9179, 676, 21, 4189, 712, 1480, 589, 691, 9225, 698, 4185, 1236, 8995, 4600, 2]
 // Exports: default
 
-// Module 9200 (EnterEmail)
-import closure_4 from "setChangeEmailError";
+// Module 9224 (EnterEmail)
+import closure_4 from "ChangeEmailFields";
 import _slicedToArray from "_slicedToArray";
-import result from "result";
-import get_ActivityIndicator from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import setChangeEmailError from "setChangeEmailError";
+import set from "set";
+import get_ActivityIndicator from "module_8995";
+import mergeGuildAvatar from "mergeGuildAvatar";
+import ChangeEmailFields from "ChangeEmailFields";
 import { AnalyticEvents } from "ME";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_10;
-let closure_11;
+let c10;
 let closure_12;
 let closure_14;
 let closure_15;
-let closure_7;
-let closure_8;
+let error;
+let metroImportAll;
+let unpackModuleId;
 const require = arg1;
-({ View: closure_7, ScrollView: closure_8 } = get_ActivityIndicator);
-({ useChangeEmailError: closure_10, useChangeEmailStore: closure_11, ChangeEmailFields: closure_12 } = setChangeEmailError);
+({ View: error, ScrollView: metroImportAll } = get_ActivityIndicator);
+({ useChangeEmailError: c10, useChangeEmailStore: unpackModuleId, ChangeEmailFields: closure_12 } = ChangeEmailFields);
 ({ jsx: closure_14, jsxs: closure_15 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW };
-_createForOfIteratorHelperLoose.background = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.container = { paddingVertical: 12, paddingHorizontal: 16 };
-_createForOfIteratorHelperLoose.title = { textAlign: "center" };
-_createForOfIteratorHelperLoose.prompt = { marginTop: 8, lineHeight: 18, textAlign: "center" };
-_createForOfIteratorHelperLoose.input = { marginTop: 24, marginBottom: 16 };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-let result = require("result").fileFinishedImporting("modules/verification/native/components/EnterEmail.tsx");
+createCacheKey = { background: null, container: null, title: null, prompt: null, input: null };
+createCacheKey = { backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { paddingVertical: 12, paddingHorizontal: 16 };
+createCacheKey[2] = { textAlign: "center" };
+createCacheKey[3] = { marginTop: 8, lineHeight: 18, textAlign: "center" };
+createCacheKey[4] = { marginTop: 24, marginBottom: 16 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let result = require("noop").fileFinishedImporting("modules/verification/native/components/EnterEmail.tsx");
 
 export default function EnterEmail(isChangeEmail) {
   isChangeEmail = isChangeEmail.isChangeEmail;
   const changeEmailReason = isChangeEmail.changeEmailReason;
-  const tmp = _createForOfIteratorHelperLoose();
+  let navigation;
+  let stateFromStores;
+  let first;
+  let callback;
+  let emailToken;
+  callback = undefined;
+  const tmp = createCacheKey();
   let obj = isChangeEmail(stateFromStores[10]);
-  const navigation = obj.useNavigation();
+  navigation = obj.useNavigation();
   let obj1 = isChangeEmail(stateFromStores[11]);
-  const items = [_isNativeReflectConstruct];
-  stateFromStores = obj1.useStateFromStores(items, () => outer1_9.getCurrentUser());
-  const tmp4 = callback(emailToken.useState(""), 2);
-  const first = tmp4[0];
-  const tmp6 = callback(callback2(constants.EMAIL), 2);
-  callback = tmp7;
+  const items = [mergeGuildAvatar];
+  stateFromStores = obj1.useStateFromStores(items, () => currentUser.getCurrentUser());
+  const tmp6 = callback(emailToken.useState(""), 2);
+  first = tmp6[0];
+  const tmp8 = callback(callback2(constants.EMAIL), 2);
+  callback = tmp9;
   emailToken = callback3().emailToken;
   const items1 = [navigation];
   callback = emailToken.useCallback((arg0) => {
@@ -56,84 +62,157 @@ export default function EnterEmail(isChangeEmail) {
     const routes = navigation.getState().routes;
     return routes.findIndex((name) => name.name === closure_0);
   }, items1);
-  const items2 = [navigation, stateFromStores, tmp6[1], first, emailToken, callback, isChangeEmail, changeEmailReason];
+  const items2 = [navigation, stateFromStores, tmp8[1], first, emailToken, callback, isChangeEmail, changeEmailReason];
   const callback1 = emailToken.useCallback(() => {
-    let obj = {};
-    // CreateGeneratorClosureLongIndex (0x67)
-    let closure_0 = first(tmp);
-    obj.onSubmit = function() {
-      return callback(...arguments);
-    };
-    obj.onSuccess = function onSuccess() {
-      if (closure_0) {
-        let obj = { change_email_reason_enum: outer1_1 };
-        changeEmailReason(stateFromStores[14]).track(outer2_13.USER_ACCOUNT_EMAIL_CHANGE_SAVE_NEW_EMAIL, obj);
-        const obj2 = changeEmailReason(stateFromStores[14]);
-        const result = navigation(stateFromStores[13]).finishChangeEmailFlow(outer1_2, outer1_4);
-        const obj4 = navigation(stateFromStores[13]);
+    let obj = { onSubmit: null, onSuccess: null, hideUnverifiedBanner: true };
+    let closure_0 = first((arg0) => {
+      let closure_0 = arg0;
+      let c2 = 0;
+      let c1 = 0;
+      return (function*(arg0) {
+        if (c1 === 2) {
+          c1 = 3;
+          HermesBuiltin.throwTypeError();
+        } else if (tmp3 === 3) {
+          if (arg0 === 1) {
+            throw arg1;
+          } else if (arg0 === 2) {
+            let obj = { value: null, done: true };
+            obj[0] = arg1;
+            return obj;
+          } else {
+            return { value: "HermesInternal", done: null };
+          }
+        } else {
+          try {
+            c1 = 2;
+            if (0 === c2) {
+              if (arg0 === 1) {
+                c1 = 3;
+                throw arg1;
+              } else if (arg0 === 2) {
+                c1 = 3;
+                obj = { value: null, done: true };
+                obj[0] = arg1;
+                return obj;
+              } else {
+                let tmp5 = null;
+                if (null != outer1_3) {
+                  outer1_5(null);
+                  let obj1 = outer2_2(outer2_3[13]);
+                  obj1 = { email: null, password: null, emailToken: null };
+                  obj1[0] = outer1_4;
+                  obj1[1] = tmp20;
+                  obj1[2] = outer1_6;
+                  c2 = 1;
+                  c1 = 1;
+                  const obj2 = { value: null, done: false };
+                  obj2[0] = obj1.saveEmail(obj1, c2, outer1_7);
+                  return obj2;
+                }
+              }
+            } else if (arg0 === 1) {
+              c1 = 3;
+              throw arg1;
+            } else {
+              tmp5 = arg1;
+              if (arg0 === 2) {
+                c1 = 3;
+                obj = { value: null, done: true };
+                obj[0] = arg1;
+                return obj;
+              }
+            }
+            c1 = 3;
+            const obj3 = { value: null, done: true };
+            obj3[0] = tmp5;
+            return obj3;
+          } catch (tmp14) {
+            c1 = tmp;
+            throw tmp14;
+          }
+        }
+      })();
+    });
+    obj[0] = function() {
+      const self = this;
+      const apply = closure_0.apply;
+      if (typeof apply === "unknown") {
+        let applyArgumentsResult = HermesBuiltin.applyArguments(self);
       } else {
-        obj = navigation(stateFromStores[13]);
-        const result1 = obj.finishVerifyEmailFlow(outer1_2, outer1_7);
+        applyArgumentsResult = apply(self, arguments);
+      }
+      return applyArgumentsResult;
+    };
+    obj[1] = function onSuccess() {
+      if (closure_0) {
+        let obj = { change_email_reason_enum: null };
+        obj[0] = closure_1;
+        outer1_1(outer1_3[14]).track(outer1_13.USER_ACCOUNT_EMAIL_CHANGE_SAVE_NEW_EMAIL, obj);
+        const obj2 = outer1_1(outer1_3[14]);
+        const result = outer1_2(outer1_3[13]).finishChangeEmailFlow(closure_2, closure_4);
+        const obj4 = outer1_2(outer1_3[13]);
+      } else {
+        obj = outer1_2(outer1_3[13]);
+        const result1 = obj.finishVerifyEmailFlow(closure_2, closure_7);
       }
     };
-    obj.hideUnverifiedBanner = true;
     navigation.push(isChangeEmail(stateFromStores[12]).VerificationModalScenes.VERIFY_PASSWORD, obj);
   }, items2);
-  let tmp11Result = null;
+  let tmp13Result = null;
   if (null != stateFromStores) {
-    obj = { style: tmp.background, keyboardShouldPersistTaps: "handled", alwaysBounceVertical: false };
-    obj = { style: tmp.container };
-    obj1 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary" };
+    obj = { style: null, keyboardShouldPersistTaps: "handled", alwaysBounceVertical: false, children: null };
+    obj[0] = tmp.background;
+    obj = { style: null, children: null };
+    obj[0] = tmp.container;
+    obj1 = { style: null, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: null };
+    obj1[0] = tmp.title;
     if (null != stateFromStores.email) {
-      const intl2 = isChangeEmail(stateFromStores[16]).intl;
-      let stringResult = intl2.string(isChangeEmail(stateFromStores[16]).t.Vm8akB);
+      const intl2 = tmp2(tmp3[16]).intl;
+      let stringResult = intl2.string(tmp2(tmp3[16]).t.Vm8akB);
     } else {
-      const intl = isChangeEmail(stateFromStores[16]).intl;
-      stringResult = intl.string(isChangeEmail(stateFromStores[16]).t["CDTD/K"]);
+      const intl = tmp2(tmp3[16]).intl;
+      stringResult = intl.string(tmp2(tmp3[16]).t["CDTD/K"]);
     }
-    obj1.children = stringResult;
-    const items3 = [callback4(isChangeEmail(stateFromStores[15]).Text, obj1), , , ];
-    let obj2 = { style: tmp.prompt, variant: "text-sm/medium", color: "text-default" };
+    obj1[4] = stringResult;
+    const items3 = [closure_14(tmp2(tmp3[15]).Text, obj1), , , ];
+    let obj2 = { style: null, variant: "text-sm/medium", color: "text-default", children: null };
+    obj2[0] = tmp.prompt;
     if (null != stateFromStores.email) {
-      const intl4 = isChangeEmail(stateFromStores[16]).intl;
-      const obj3 = { email: stateFromStores.email };
-      let formatToPlainStringResult = intl4.formatToPlainString(isChangeEmail(stateFromStores[16]).t.Z7CaI7, obj3);
+      const intl4 = tmp2(tmp3[16]).intl;
+      let obj3 = { email: null };
+      obj3[0] = stateFromStores.email;
+      let formatToPlainStringResult = intl4.formatToPlainString(tmp2(tmp3[16]).t.Z7CaI7, obj3);
     } else {
-      const intl3 = isChangeEmail(stateFromStores[16]).intl;
-      formatToPlainStringResult = intl3.string(isChangeEmail(stateFromStores[16]).t.YXXMxK);
+      const intl3 = tmp2(tmp3[16]).intl;
+      formatToPlainStringResult = intl3.string(tmp2(tmp3[16]).t.YXXMxK);
     }
-    obj2.children = formatToPlainStringResult;
-    items3[1] = callback4(isChangeEmail(stateFromStores[15]).Text, obj2);
-    let obj4 = { style: tmp.input };
-    const intl5 = isChangeEmail(stateFromStores[16]).intl;
-    obj4.label = intl5.string(isChangeEmail(stateFromStores[16]).t["w/qqKK"]);
-    obj4.textContentType = "emailAddress";
-    obj4.keyboardType = "email-address";
-    obj4.value = first;
-    obj4.onChangeText = tmp4[1];
-    obj4.onSubmitEditing = callback1;
-    const intl6 = isChangeEmail(stateFromStores[16]).intl;
-    obj4.placeholder = intl6.string(isChangeEmail(stateFromStores[16]).t.dI4d4S);
-    obj4.returnKeyType = "done";
-    obj4.autoCapitalize = "none";
-    obj4.error = tmp6[0];
-    obj4.autoFocus = true;
-    items3[2] = callback4(changeEmailReason(stateFromStores[17]), obj4);
-    const obj5 = {};
-    const intl7 = isChangeEmail(stateFromStores[16]).intl;
-    obj5.text = intl7.string(isChangeEmail(stateFromStores[16]).t.Vm8akB);
-    obj5.onPress = callback1;
-    obj5.disabled = "" === first || first === stateFromStores.email;
-    items3[3] = callback4(isChangeEmail(stateFromStores[18]).Button, obj5);
-    obj.children = items3;
-    obj.children = closure_15(callback, obj);
-    tmp11Result = tmp11(closure_8, obj);
-    const tmp12 = closure_8;
-    const tmp13 = closure_15;
-    const tmp14 = callback;
-    const tmp22 = callback4;
-    const tmp30 = callback4;
-    const tmp33 = changeEmailReason(stateFromStores[17]);
+    obj2[3] = formatToPlainStringResult;
+    items3[1] = closure_14(tmp2(tmp3[15]).Text, obj2);
+    let obj4 = { style: null, label: null, textContentType: "emailAddress", keyboardType: "email-address", value: null, onChangeText: null, onSubmitEditing: null, placeholder: null, returnKeyType: "done", autoCapitalize: "none", error: null, autoFocus: true };
+    obj4[0] = tmp.input;
+    const intl5 = tmp2(tmp3[16]).intl;
+    obj4[1] = intl5.string(tmp2(tmp3[16]).t["w/qqKK"]);
+    obj4[4] = first;
+    obj4[5] = tmp6[1];
+    obj4[6] = callback1;
+    const intl6 = tmp2(tmp3[16]).intl;
+    obj4[7] = intl6.string(tmp2(tmp3[16]).t.dI4d4S);
+    obj4[10] = tmp8[0];
+    items3[2] = closure_14(changeEmailReason(tmp3[17]), obj4);
+    const obj5 = { text: null, onPress: null, disabled: null };
+    const intl7 = tmp2(tmp3[16]).intl;
+    obj5[0] = intl7.string(tmp2(tmp3[16]).t.Vm8akB);
+    obj5[1] = callback1;
+    obj5[2] = "" === first || first === stateFromStores.email;
+    items3[3] = closure_14(tmp2(tmp3[18]).Button, obj5);
+    obj[1] = items3;
+    obj[3] = closure_15(callback, obj);
+    tmp13Result = tmp13(closure_8, obj);
+    const tmp14 = closure_8;
+    const tmp15 = closure_15;
+    const tmp16 = callback;
+    const tmp20 = changeEmailReason(tmp3[17]);
   }
-  return tmp11Result;
+  return tmp13Result;
 };

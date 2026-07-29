@@ -1,17 +1,14 @@
-// Module ID: 15196
-// Function ID: 115447
-// Name: items
-// Dependencies: [4077, 2]
+// Module ID: 15229
+// Function ID: 15230
+// Name: experiment
+// Dependencies: [4101, 2]
 // Exports: useGameClaimCoachmarkEnabled
 
-// Module 15196 (items)
+// Module 15229 (experiment)
 import createExperiment from "createExperiment";
 
-let obj = { kind: "guild", id: "2026-02_game_claim_coachmark", label: "Game Claim Coachmark", defaultConfig: { enabled: false } };
-obj = { id: 1, label: "Enable Game Claim Coachmark", config: { enabled: true } };
-const items = [obj];
-obj.treatments = items;
-const experiment = createExperiment.createExperiment(obj);
+const items = [{ id: 1, label: "Enable Game Claim Coachmark", config: { enabled: true } }];
+const experiment = createExperiment.createExperiment({ kind: "guild", id: "2026-02_game_claim_coachmark", label: "Game Claim Coachmark", defaultConfig: { enabled: false }, treatments: items });
 const result = require("set").fileFinishedImporting("modules/game_claim/experiments/GameClaimCoachmarkExperiment.tsx");
 
 export const GameClaimCoachmarkExperiment = experiment;

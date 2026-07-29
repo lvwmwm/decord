@@ -1,47 +1,50 @@
-// Module ID: 13001
-// Function ID: 100707
+// Module ID: 13024
+// Function ID: 13025
 // Name: ActivateDeviceError
-// Dependencies: [31, 27, 33, 4165, 8957, 12999, 4161, 1212, 4578, 2]
+// Dependencies: [19, 17, 21, 4189, 8981, 13022, 4185, 1236, 4600, 2]
 // Exports: ActivateDeviceError
 
-// Module 13001 (ActivateDeviceError)
-import "result";
+// Module 13024 (ActivateDeviceError)
+import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_3;
-let closure_4;
-let closure_5;
+let c3;
+let c4;
+let c5;
 let closure_6;
-let closure_7;
+let error;
 const require = arg1;
-({ Image: closure_3, View: closure_4 } = get_ActivityIndicator);
-({ jsx: closure_5, jsxs: closure_6, Fragment: closure_7 } = jsxProd);
-let closure_8 = _createForOfIteratorHelperLoose.createStyles({ image: { width: 254, height: 127, alignSelf: "center" } });
+({ Image: c3, View: c4 } = get_ActivityIndicator);
+({ jsx: c5, jsxs: closure_6, Fragment: error } = jsxProd);
+let closure_8 = createCacheKey.createStyles({ image: { width: 254, height: 127, alignSelf: "center" } });
 const result = require("jsxProd").fileFinishedImporting("modules/activate_device/native/ActivateDeviceError.tsx");
 
 export const ActivateDeviceError = function ActivateDeviceError(onRetry) {
-  let obj = {};
-  obj = { source: importDefault(8957), style: callback3().image };
+  let obj = { children: null };
+  obj = { source: null, style: null };
+  obj[0] = importDefault(8981);
+  obj[1] = callback3().image;
   const items = [callback(closure_3, obj), , ];
-  obj = { style: importDefault(12999).innerContent };
-  const obj1 = { variant: "heading-lg/bold", color: "mobile-text-heading-primary", style: importDefault(12999).centerText };
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj1.children = intl.string(require(1212) /* getSystemLocale */.t["3dgwPD"]);
-  const items1 = [callback(require(4161) /* Text */.Text, obj1), ];
-  const obj2 = { variant: "text-md/medium", color: "text-default", style: importDefault(12999).centerText };
-  const intl2 = require(1212) /* getSystemLocale */.intl;
-  obj2.children = intl2.string(require(1212) /* getSystemLocale */.t["/GAO1P"]);
-  items1[1] = callback(require(4161) /* Text */.Text, obj2);
-  obj.children = items1;
+  obj = { style: importDefault(13022).innerContent, children: null };
+  const obj1 = { variant: "heading-lg/bold", color: "mobile-text-heading-primary", style: null, children: null };
+  obj1[2] = importDefault(13022).centerText;
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj1[3] = intl.string(require(1236) /* getSystemLocale */.t["3dgwPD"]);
+  const items1 = [callback(require(4185) /* Text */.Text, obj1), ];
+  const obj2 = { variant: "text-md/medium", color: "text-default", style: null, children: null };
+  obj2[2] = importDefault(13022).centerText;
+  const intl2 = require(1236) /* getSystemLocale */.intl;
+  obj2[3] = intl2.string(require(1236) /* getSystemLocale */.t["/GAO1P"]);
+  items1[1] = callback(require(4185) /* Text */.Text, obj2);
+  obj[1] = items1;
   items[1] = callback2(closure_4, obj);
-  const obj3 = { size: "lg" };
-  const intl3 = require(1212) /* getSystemLocale */.intl;
-  obj3.text = intl3.string(require(1212) /* getSystemLocale */.t["5911Lb"]);
-  obj3.onPress = onRetry.onRetry;
-  obj3.grow = true;
-  items[2] = callback(require(4578) /* Button */.Button, obj3);
-  obj.children = items;
+  const obj3 = { size: "lg", text: null, onPress: null, grow: true };
+  const intl3 = require(1236) /* getSystemLocale */.intl;
+  obj3[1] = intl3.string(require(1236) /* getSystemLocale */.t["5911Lb"]);
+  obj3[2] = onRetry.onRetry;
+  items[2] = callback(require(4600) /* Button */.Button, obj3);
+  obj[0] = items;
   return callback2(closure_7, obj);
 };

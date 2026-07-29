@@ -1,22 +1,22 @@
-// Module ID: 15176
-// Function ID: 115375
+// Module ID: 15209
+// Function ID: 15210
 // Name: GuildRoleSubscriptionsUpsellActionSheet
-// Dependencies: [31, 27, 653, 1345, 33, 4165, 5221, 5119, 15177, 4161, 1212, 4578, 8280, 2]
+// Dependencies: [19, 17, 676, 1369, 21, 4189, 5243, 5141, 15210, 4185, 1236, 4600, 8304, 2]
 // Exports: default
 
-// Module 15176 (GuildRoleSubscriptionsUpsellActionSheet)
-import "result";
+// Module 15209 (GuildRoleSubscriptionsUpsellActionSheet)
+import "noop";
 import { View } from "get ActivityIndicator";
 import { GuildSettingsSections } from "ME";
 import { ContentDismissActionType } from "ContentDismissActionType";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
 let closure_6;
-let closure_7;
+let error;
 const require = arg1;
-({ jsx: closure_6, jsxs: closure_7 } = jsxProd);
-let closure_8 = _createForOfIteratorHelperLoose.createStyles({ title: { marginTop: 24, textAlign: "center" }, description: { marginTop: 8, marginBottom: 24, textAlign: "center" }, dismissButton: { marginTop: 4 } });
+({ jsx: closure_6, jsxs: error } = jsxProd);
+let closure_8 = createCacheKey.createStyles({ title: { marginTop: 24, textAlign: "center" }, description: { marginTop: 8, marginBottom: 24, textAlign: "center" }, dismissButton: { marginTop: 4 } });
 const result = require("ME").fileFinishedImporting("modules/guild_role_subscriptions/native/guild_sidebar/GuildRoleSubscriptionsUpsellActionSheet.tsx");
 
 export default function GuildRoleSubscriptionsUpsellActionSheet(arg0) {
@@ -28,38 +28,42 @@ export default function GuildRoleSubscriptionsUpsellActionSheet(arg0) {
     startExpanded: true,
     onDismiss() {
       return callback(outer1_5.UNKNOWN);
-    }
+    },
+    children: null
   };
-  obj = { source: importDefault(15177) };
-  const items = [callback(importDefault(5119), obj), , , , ];
-  obj = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary" };
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj.children = intl.string(require(1212) /* getSystemLocale */.t.C0m4rQ);
-  items[1] = callback(require(4161) /* Text */.Text, obj);
-  const obj1 = { style: tmp.description, variant: "text-sm/medium", color: "text-default" };
-  const intl2 = require(1212) /* getSystemLocale */.intl;
-  obj1.children = intl2.string(require(1212) /* getSystemLocale */.t.zOHfEX);
-  items[2] = callback(require(4161) /* Text */.Text, obj1);
+  obj = { source: null };
+  obj[0] = importDefault(15210);
+  const items = [callback(importDefault(5141), obj), , , , ];
+  obj = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: null };
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj[4] = intl.string(require(1236) /* getSystemLocale */.t.C0m4rQ);
+  items[1] = callback(require(4185) /* Text */.Text, obj);
+  const obj1 = { style: tmp.description, variant: "text-sm/medium", color: "text-default", children: null };
+  const intl2 = require(1236) /* getSystemLocale */.intl;
+  obj1[3] = intl2.string(require(1236) /* getSystemLocale */.t.zOHfEX);
+  items[2] = callback(require(4185) /* Text */.Text, obj1);
   const obj2 = {
     onPress() {
       callback(outer1_5.UNKNOWN);
       outer1_1(outer1_2[12]).open(closure_0, outer1_4.ROLE_SUBSCRIPTIONS);
-    }
+    },
+    text: null
   };
-  const intl3 = require(1212) /* getSystemLocale */.intl;
-  obj2.text = intl3.string(require(1212) /* getSystemLocale */.t.OgQQbG);
-  items[3] = callback(require(4578) /* Button */.Button, obj2);
-  const obj3 = { style: tmp.dismissButton };
+  const intl3 = require(1236) /* getSystemLocale */.intl;
+  obj2[1] = intl3.string(require(1236) /* getSystemLocale */.t.OgQQbG);
+  items[3] = callback(require(4600) /* Button */.Button, obj2);
+  const obj3 = { style: tmp.dismissButton, children: null };
   const obj4 = {
     onPress() {
       return callback(outer1_5.UNKNOWN);
-    }
+    },
+    text: null,
+    variant: "secondary"
   };
-  const intl4 = require(1212) /* getSystemLocale */.intl;
-  obj4.text = intl4.string(require(1212) /* getSystemLocale */.t.WAI6xu);
-  obj4.variant = "secondary";
-  obj3.children = callback(require(4578) /* Button */.Button, obj4);
+  const intl4 = require(1236) /* getSystemLocale */.intl;
+  obj4[1] = intl4.string(require(1236) /* getSystemLocale */.t.WAI6xu);
+  obj3[1] = callback(require(4600) /* Button */.Button, obj4);
   items[4] = callback(View, obj3);
-  obj.children = items;
-  return callback2(require(5221) /* Background */.BottomSheet, obj);
+  obj[2] = items;
+  return callback2(require(5243) /* Background */.BottomSheet, obj);
 };

@@ -1,10 +1,10 @@
-// Module ID: 14226
-// Function ID: 109298
+// Module ID: 14248
+// Function ID: 14249
 // Name: getBenefitKey
-// Dependencies: [14200, 1852, 1212, 2]
+// Dependencies: [14222, 1876, 1236, 2]
 // Exports: formatPlanInterval, formatPlanIntervalDuration, getBenefitKey, isChannelBenefit, isIntangibleBenefit
 
-// Module 14226 (getBenefitKey)
+// Module 14248 (getBenefitKey)
 import { GuildRoleSubscriptionBenefitTypes as closure_2 } from "MAX_SUBSCRIPTION_TIERS";
 import { SubscriptionIntervalTypes } from "GuildFeatures";
 
@@ -22,13 +22,13 @@ export const getBenefitKey = function getBenefitKey(id) {
 };
 export const formatPlanInterval = function formatPlanInterval(first2) {
   const interval = first2.interval;
-  const intl = require(1212) /* getSystemLocale */.intl;
+  const intl = require(1236) /* getSystemLocale */.intl;
   if (SubscriptionIntervalTypes.DAY === interval) {
-    let cuSp8Q = require(1212) /* getSystemLocale */.t["3rUmPQ"];
-  } else if (SubscriptionIntervalTypes.MONTH === interval) {
-    cuSp8Q = require(1212) /* getSystemLocale */.t.zuN545;
-  } else if (SubscriptionIntervalTypes.YEAR === interval) {
-    cuSp8Q = require(1212) /* getSystemLocale */.t.cuSp8Q;
+    let cuSp8Q = tmp(1236).t["3rUmPQ"];
+  } else if (tmp3.MONTH === interval) {
+    cuSp8Q = tmp(1236).t.zuN545;
+  } else if (tmp3.YEAR === interval) {
+    cuSp8Q = tmp(1236).t.cuSp8Q;
   }
   return intl.format(cuSp8Q, { count: first2.interval_count });
 };
@@ -38,23 +38,27 @@ export const formatPlanIntervalDuration = function formatPlanIntervalDuration(in
   if (SubscriptionIntervalTypes.DAY === interval) {
     if (interval_count > 0) {
       if (interval_count % 7 === 0) {
-        const intl4 = require(1212) /* getSystemLocale */.intl;
-        let obj = { weeks: interval_count / 7 };
-        let formatToPlainStringResult = intl4.formatToPlainString(require(1212) /* getSystemLocale */.t.iVZYyl, obj);
+        const intl4 = require(1236) /* getSystemLocale */.intl;
+        let obj = { weeks: null };
+        obj[0] = interval_count / 7;
+        let formatToPlainStringResult = intl4.formatToPlainString(require(1236) /* getSystemLocale */.t.iVZYyl, obj);
       }
       return formatToPlainStringResult;
     }
-    const intl3 = require(1212) /* getSystemLocale */.intl;
-    obj = { days: interval_count };
-    formatToPlainStringResult = intl3.formatToPlainString(require(1212) /* getSystemLocale */.t.jzH70Z, obj);
-  } else if (SubscriptionIntervalTypes.MONTH === interval) {
-    const intl2 = require(1212) /* getSystemLocale */.intl;
-    const obj1 = { months: interval_count };
-    return intl2.formatToPlainString(require(1212) /* getSystemLocale */.t.erUSmA, obj1);
-  } else if (SubscriptionIntervalTypes.YEAR === interval) {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    obj = { years: interval_count };
-    return intl.formatToPlainString(require(1212) /* getSystemLocale */.t.IfYQVC, obj);
+    const intl3 = require(1236) /* getSystemLocale */.intl;
+    obj = { days: null };
+    obj[0] = interval_count;
+    formatToPlainStringResult = intl3.formatToPlainString(require(1236) /* getSystemLocale */.t.jzH70Z, obj);
+  } else if (tmp.MONTH === interval) {
+    const intl2 = require(1236) /* getSystemLocale */.intl;
+    const obj1 = { months: null };
+    obj1[0] = interval_count;
+    return intl2.formatToPlainString(require(1236) /* getSystemLocale */.t.erUSmA, obj1);
+  } else if (tmp.YEAR === interval) {
+    const intl = require(1236) /* getSystemLocale */.intl;
+    obj = { years: null };
+    obj[0] = interval_count;
+    return intl.formatToPlainString(require(1236) /* getSystemLocale */.t.IfYQVC, obj);
   }
 };
 export const isChannelBenefit = function isChannelBenefit(ref_type) {

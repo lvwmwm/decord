@@ -1,17 +1,54 @@
-// Module ID: 7964
-// Function ID: 63221
+// Module ID: 7989
+// Function ID: 7990
 // Name: getProfileTheme
-// Dependencies: [57, 653, 665, 4010, 22, 4011, 666, 2]
-// Exports: calculateGradientSplitColors, calculateOverlayedColor, getUserProfileGradientContainerColors
+// Dependencies: [32, 676, 688, 4034, 12, 4035, 689, 2]
+// Exports: calculateGradientSplitColors, calculateOverlayedColor, getGradientPercentageColorInRgb, getProfileTheme, getUserProfileGradientContainerColors, getValueInColorGradientByPercentage
 
-// Module 7964 (getProfileTheme)
+// Module 7989 (getProfileTheme)
 import _slicedToArray from "_slicedToArray";
 import { ThemeTypes } from "ME";
 import apply from "apply";
 import apply from "apply";
 
 const require = arg1;
-function getProfileTheme(first) {
+const memoizeResult = apply.memoize((arg0) => {
+  let obj = require(4035) /* AccessibilityAnnouncer */;
+  obj = { base: "#ffffff", contrastRatio: require(4035) /* AccessibilityAnnouncer */.WCAGContrastRatios.HighContrastText };
+  const contrastingColor = obj.getContrastingColor(arg0, obj);
+  return require(688) /* int2hslRaw */.hex2int(contrastingColor);
+}, (arg0) => arg0);
+const memoizeResult1 = apply.memoize((hex2intResult) => {
+  let tmp = arg2;
+  if (arg2 == null) {
+    if (null == hex2intResult) {
+      tmp = null;
+    } else {
+      if (obj.getDarkness(hex2intResult) > 0.5) {
+        let LIGHT = ThemeTypes.DARK;
+      } else {
+        LIGHT = ThemeTypes.LIGHT;
+      }
+      obj = require(688) /* int2hslRaw */;
+    }
+  }
+  const obj2 = importDefault(689);
+  const tmp8 = importDefault;
+  const mixResult = obj2.mix(importDefault(689)(hex2intResult), importDefault(689)(arg1), 0.5, "lab");
+  const result = Math.round(100 * mixResult.get("hsl.l")) / 100;
+  if (tmp !== ThemeTypes.LIGHT) {
+    let clampResult = require(12) /* apply */.clamp(result, 0, 0.1);
+    const obj5 = require(12) /* apply */;
+  } else {
+    clampResult = require(12) /* apply */.clamp(result, 0.8, 1);
+    const obj4 = require(12) /* apply */;
+  }
+  const tmp10 = importDefault(689)(hex2intResult);
+  const result1 = tmp8(689)(mixResult).set("hsl.l", clampResult);
+  return result1.num();
+}, (arg0, arg1, arg2) => "" + arg0 + "-" + arg1 + "-" + arg2);
+let result = require("int2hslRaw").fileFinishedImporting("modules/user_profile/UserProfileGradientUtils.tsx");
+
+export const getProfileTheme = function getProfileTheme(first) {
   if (null == first) {
     return null;
   } else {
@@ -20,110 +57,106 @@ function getProfileTheme(first) {
     } else {
       LIGHT = ThemeTypes.LIGHT;
     }
-    obj = require(665) /* pad2 */;
+    obj = require(688) /* int2hslRaw */;
   }
-}
-function getValueInColorGradientByPercentage(items, items1, arg2) {
+};
+export const getValueInColorGradientByPercentage = function getValueInColorGradientByPercentage(items, items1, arg2) {
   const result = arg2 / 100;
   const diff = 1 - result;
   items = [Math.round(items[0] * diff + items1[0] * result), Math.round(items[1] * diff + items1[1] * result), Math.round(items[2] * diff + items1[2] * result)];
   return items;
-}
-function getGradientPercentageColorInRgb(int2rgbArrayResult, int2rgbArrayResult1, arg2) {
-  const tmp = getValueInColorGradientByPercentage(int2rgbArrayResult, int2rgbArrayResult1, arg2);
-  return "rgba(" + tmp[0] + ", " + tmp[1] + ", " + tmp[2] + ", 1)";
-}
-const memoizeResult = apply.memoize((primaryColor) => {
-  let obj = require(4011) /* AccessibilityAnnouncer */;
-  obj = { base: "#ffffff", contrastRatio: require(4011) /* AccessibilityAnnouncer */.WCAGContrastRatios.HighContrastText };
-  const contrastingColor = obj.getContrastingColor(primaryColor, obj);
-  return require(665) /* pad2 */.hex2int(contrastingColor);
-}, (arg0) => arg0);
-const memoizeResult1 = apply.memoize((first) => {
-  let tmp = arg2;
-  if (null == arg2) {
-    tmp = getProfileTheme(first);
-  }
-  const obj = importDefault(666);
-  const mixResult = obj.mix(importDefault(666)(first), importDefault(666)(arg1), 0.5, "lab");
-  const result = Math.round(100 * mixResult.get("hsl.l")) / 100;
-  if (tmp !== ThemeTypes.LIGHT) {
-    let clampResult = require(22) /* apply */.clamp(result, 0, 0.1);
-    const obj4 = require(22) /* apply */;
-  } else {
-    clampResult = require(22) /* apply */.clamp(result, 0.8, 1);
-    const obj3 = require(22) /* apply */;
-  }
-  const tmp3 = importDefault(666)(first);
-  const result1 = importDefault(666)(mixResult).set("hsl.l", clampResult);
-  return result1.num();
-}, (arg0, arg1, arg2) => "" + arg0 + "-" + arg1 + "-" + arg2);
-let result = require("pad2").fileFinishedImporting("modules/user_profile/UserProfileGradientUtils.tsx");
-
-export { getProfileTheme };
-export { getValueInColorGradientByPercentage };
+};
 export const calculateOverlayedColor = function calculateOverlayedColor(secondaryColor, overlay) {
-  const int2rgbArrayResult = items1(665).int2rgbArray(secondaryColor);
+  let tmp10;
+  let tmp8;
+  let tmp9;
+  const obj = items1(688);
+  const tmp = items1;
   if (null == overlay) {
     return 0;
   } else {
-    const parseStringResult = alpha(4010).parseString(overlay);
+    const parseStringResult = alpha(4034).parseString(overlay);
     if (null == parseStringResult) {
       return 0;
     } else {
       const items = [, , ];
       ({ red: arr[0], green: arr[1], blue: arr[2] } = parseStringResult);
-      items1 = [int2rgbArrayResult[0], int2rgbArrayResult[1], int2rgbArrayResult[2]];
+      items1 = [, , ];
+      [arr2[0], arr2[1], arr2[2]] = int2rgbArrayResult;
       alpha = parseStringResult.alpha;
-      const tmp6 = callback(items.map((arg0, arg1) => Math.floor(alpha * arg0 + (1 - alpha) * items1[arg1])), 3);
-      const first = tmp6[0];
+      [tmp8, tmp9, tmp10] = callback(items.map((arg0, arg1) => Math.floor(alpha * arg0 + (1 - alpha) * items1[arg1])), 3);
+      const tmp7 = callback(items.map((arg0, arg1) => Math.floor(alpha * arg0 + (1 - alpha) * items1[arg1])), 3);
       const _HermesInternal = HermesInternal;
-      return items1(665).rgb2int("rgba(" + first + ", " + tmp6[1] + ", " + tmp6[2] + ")");
+      return tmp(688).rgb2int("rgba(" + tmp8 + ", " + tmp9 + ", " + tmp10 + ")");
     }
-    const obj2 = alpha(4010);
+    const obj2 = alpha(4034);
   }
-  const obj = items1(665);
+  int2rgbArrayResult = items1(688).int2rgbArray(secondaryColor);
 };
 export const calculateButtonColor = memoizeResult;
 export const calculateModalV2BackgroundColor = memoizeResult1;
-export { getGradientPercentageColorInRgb };
+export const getGradientPercentageColorInRgb = function getGradientPercentageColorInRgb(arg0, arg1, arg2) {
+  const result = arg2 / 100;
+  const diff = 1 - result;
+  const items = [Math.round(arg0[0] * diff + arg1[0] * result), Math.round(arg0[1] * diff + arg1[1] * result), Math.round(arg0[2] * diff + arg1[2] * result)];
+  return "rgba(" + items[0] + ", " + items[1] + ", " + items[2] + ", 1)";
+};
 export const calculateGradientSplitColors = function calculateGradientSplitColors(modalV2BackgroundColor, modalV2BackgroundColor) {
   if (0 === arg2) {
     return [];
   } else {
-    const int2rgbArrayResult = require(665) /* pad2 */.int2rgbArray(modalV2BackgroundColor);
-    const obj = require(665) /* pad2 */;
-    const int2rgbArrayResult1 = require(665) /* pad2 */.int2rgbArray(modalV2BackgroundColor);
-    const items = [getGradientPercentageColorInRgb(int2rgbArrayResult, int2rgbArrayResult1, 100 * arg3 / arg2), getGradientPercentageColorInRgb(int2rgbArrayResult, int2rgbArrayResult1, 100 * arg4 / arg2)];
-    return items;
+    const int2rgbArrayResult = require(688) /* int2hslRaw */.int2rgbArray(modalV2BackgroundColor);
+    const obj = require(688) /* int2hslRaw */;
+    const int2rgbArrayResult1 = require(688) /* int2hslRaw */.int2rgbArray(modalV2BackgroundColor);
+    const result = 100 * arg3 / arg2 / 100;
+    const diff = 1 - result;
+    const _Math = Math;
+    const items = [Math.round(int2rgbArrayResult[0] * diff + int2rgbArrayResult1[0] * result), , ];
+    const _Math2 = Math;
+    items[1] = Math.round(int2rgbArrayResult[1] * diff + int2rgbArrayResult1[1] * result);
+    const _Math3 = Math;
+    items[2] = Math.round(int2rgbArrayResult[2] * diff + int2rgbArrayResult1[2] * result);
+    const _HermesInternal = HermesInternal;
+    const items1 = ["rgba(" + items[0] + ", " + items[1] + ", " + items[2] + ", 1)", ];
+    const result1 = 100 * arg4 / arg2 / 100;
+    const diff1 = 1 - result1;
+    const _Math4 = Math;
+    const items2 = [Math.round(int2rgbArrayResult[0] * diff1 + int2rgbArrayResult1[0] * result1), , ];
+    const _Math5 = Math;
+    items2[1] = Math.round(int2rgbArrayResult[1] * diff1 + int2rgbArrayResult1[1] * result1);
+    const _Math6 = Math;
+    items2[2] = Math.round(int2rgbArrayResult[2] * diff1 + int2rgbArrayResult1[2] * result1);
+    const _HermesInternal2 = HermesInternal;
+    items1[1] = "rgba(" + items2[0] + ", " + items2[1] + ", " + items2[2] + ", 1)";
+    return items1;
   }
 };
 export const getUserProfileGradientContainerColors = function getUserProfileGradientContainerColors(result, result1, closure_2) {
   let int2rgbaResult1 = closure_2;
-  if ("string" === typeof closure_2) {
+  if (typeof closure_2 === "y") {
     let int2rgbaResult = int2rgbaResult1;
     if (null != result) {
-      int2rgbaResult = require(665) /* pad2 */.int2rgba(result, 1);
-      const obj3 = require(665) /* pad2 */;
+      int2rgbaResult = require(688) /* int2hslRaw */.int2rgba(result, 1);
+      const obj3 = require(688) /* int2hslRaw */;
     }
     const items = [int2rgbaResult, ];
     if (null != result1) {
-      int2rgbaResult1 = require(665) /* pad2 */.int2rgba(result1, 1);
-      const obj4 = require(665) /* pad2 */;
+      int2rgbaResult1 = require(688) /* int2hslRaw */.int2rgba(result1, 1);
+      const obj4 = require(688) /* int2hslRaw */;
     }
     items[1] = int2rgbaResult1;
     let items1 = items;
   } else {
     if (null != result) {
-      let int2rgbaResult2 = require(665) /* pad2 */.int2rgba(result, 1);
-      const obj = require(665) /* pad2 */;
+      let int2rgbaResult2 = require(688) /* int2hslRaw */.int2rgba(result, 1);
+      const obj = require(688) /* int2hslRaw */;
     } else {
       int2rgbaResult2 = int2rgbaResult1[0];
     }
     items1 = [int2rgbaResult2, ];
     if (null != result1) {
-      let int2rgbaResult3 = require(665) /* pad2 */.int2rgba(result1, 1);
-      const obj2 = require(665) /* pad2 */;
+      let int2rgbaResult3 = require(688) /* int2hslRaw */.int2rgba(result1, 1);
+      const obj2 = require(688) /* int2hslRaw */;
     } else {
       int2rgbaResult3 = int2rgbaResult1[1];
     }

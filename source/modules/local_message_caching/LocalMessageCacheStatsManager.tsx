@@ -1,28 +1,14 @@
-// Module ID: 16689
-// Function ID: 130018
-// Name: _isNativeReflectConstruct
-// Dependencies: [7, 6, 15, 17, 18, 653, 5726, 675, 5112, 2]
+// Module ID: 16725
+// Function ID: 16726
+// Name: makeLogLine
+// Dependencies: [676, 5744, 698, 5134, 2]
 
-// Module 16689 (_isNativeReflectConstruct)
-import expandLocation from "expandLocation";
-import makeLogKey from "makeLogKey";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
+// Module 16725 (makeLogLine)
 import ME from "ME";
-import tmp3 from "AutomaticLifecycleManager";
+import "initialize";
 
-let closure_7;
-let closure_8;
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
-  }
-  const result = _isNativeReflectConstruct();
-}
+let c3;
+let obj1;
 function makeLogLine(channelId) {
   const items = [channelId.channelId, , , ];
   let str = "-1";
@@ -55,21 +41,31 @@ function makeLogLine(channelId) {
 function handleAppStateUpdate(state) {
   if (state.state === constants2.BACKGROUND) {
     const _Array = Array;
-    const fetchLogs = importDefault(5726).fetchLogs;
+    const fetchLogs = importDefault(5744).fetchLogs;
     const mapped = Array.from(fetchLogs.values()).map(makeLogLine);
-    let obj = importDefault(675);
-    obj = { num_channels_fetch_started: importDefault(5726).channelsFetchStarted.size, num_channels_local_cached: importDefault(5726).channelsFetchedWithLocalMessages.size, num_channels_fetched_network: importDefault(5726).channelsFetchedNetwork.size };
-    const sum = c9 + 1;
-    c9 = sum;
-    obj.num_times_backgrounded = sum;
-    obj.fetch_entries = mapped;
+    let obj = importDefault(698);
+    obj = { num_channels_fetch_started: null, num_channels_local_cached: null, num_channels_fetched_network: null, num_times_backgrounded: null, fetch_entries: null };
+    obj[0] = importDefault(5744).channelsFetchStarted.size;
+    obj[1] = importDefault(5744).channelsFetchedWithLocalMessages.size;
+    obj[2] = importDefault(5744).channelsFetchedNetwork.size;
+    const sum = c4 + 1;
+    c4 = sum;
+    obj[3] = sum;
+    obj[4] = mapped;
     obj.track(constants.CACHE_STATS_RECORDED, obj);
     const arr = Array.from(fetchLogs.values());
   }
 }
-({ AnalyticEvents: closure_7, AppStates: closure_8 } = ME);
-let c9 = 0;
-tmp3 = new tmp3();
-let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/local_message_caching/LocalMessageCacheStatsManager.tsx");
+({ AnalyticEvents: obj1, AppStates: c3 } = ME);
+let c4 = 0;
+let prototype = function LocalMessageCacheStatsManager() {
+  const applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
+  applyArgumentsResult.actions = { APP_STATE_UPDATE: handleAppStateUpdate };
+  return applyArgumentsResult;
+}.prototype;
+class prototype extends tmp3 {
+}
+prototype = new prototype();
+const result = require("expandEventProperties").fileFinishedImporting("modules/local_message_caching/LocalMessageCacheStatsManager.tsx");
 
-export default tmp3;
+export default prototype;

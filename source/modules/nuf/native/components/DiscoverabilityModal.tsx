@@ -1,38 +1,39 @@
-// Module ID: 11825
-// Function ID: 91637
+// Module ID: 11850
+// Function ID: 11851
 // Name: DiscoverabilityLandingScene
-// Dependencies: [31, 27, 11743, 1850, 653, 33, 4165, 689, 5118, 1456, 566, 11750, 668, 11770, 11826, 11763, 480, 5552, 1212, 2]
+// Dependencies: [19, 17, 11768, 1874, 676, 21, 4189, 712, 5140, 1480, 589, 11775, 691, 11795, 11851, 11788, 503, 5570, 1236, 2]
 
-// Module 11825 (DiscoverabilityLandingScene)
-import result from "result";
-import { View } from "get ActivityIndicator";
-import { useContactSyncModalStore } from "initialValues";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 11850 (DiscoverabilityLandingScene)
+import set from "set";
+import { View } from "NavigationStack";
+import { useContactSyncModalStore } from "ContactSyncModes";
+import mergeGuildAvatar from "mergeGuildAvatar";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
 const require = arg1;
 function DiscoverabilityLandingScene() {
   navigation = navigation(allowPhone[9]).useNavigation();
   let obj = navigation(allowPhone[9]);
-  const items = [_isNativeReflectConstruct];
+  const tmp = allowPhone;
+  const items = [mergeGuildAvatar];
   const stateFromStores = navigation(allowPhone[10]).useStateFromStores(items, () => {
-    const currentUser = outer1_6.getCurrentUser();
+    currentUser = currentUser.getCurrentUser();
     let phone;
-    if (null != currentUser) {
+    if (currentUser != null) {
       phone = currentUser.phone;
     }
     return phone;
   });
-  const tmp3 = useContactSyncModalStore();
-  allowPhone = tmp3.allowPhone;
-  const allowEmail = tmp3.allowEmail;
-  let tmp4 = allowPhone;
+  const tmp4 = useContactSyncModalStore();
+  allowPhone = tmp4.allowPhone;
+  const allowEmail = tmp4.allowEmail;
+  let tmp5 = allowPhone;
   if (!allowPhone) {
-    tmp4 = allowEmail;
+    tmp5 = allowEmail;
   }
-  const View = tmp4;
-  const items1 = [navigation, stateFromStores, allowEmail, allowPhone, tmp4];
+  const View = tmp5;
+  const items1 = [navigation, stateFromStores, allowEmail, allowPhone, tmp5];
   const onNext = allowEmail.useCallback(() => {
     let obj = stateFromStores(allowPhone[11]);
     obj = { phone: allowPhone, email: allowEmail };
@@ -40,18 +41,18 @@ function DiscoverabilityLandingScene() {
     if (closure_4) {
       if (null != stateFromStores) {
         if (allowPhone) {
-          navigation.push(navigation(allowPhone[12]).DiscoverabilityScenes.NAME);
+          navigation.push(navigation(tmp[12]).DiscoverabilityScenes.NAME);
         }
       }
     }
     const result1 = navigation(allowPhone[13]).closeDiscoverabilityModal(false);
   }, items1);
-  return jsx(stateFromStores(allowPhone[14]), { onNext });
+  return jsx(stateFromStores(tmp[14]), { onNext });
 }
 function DiscoverabilityNameScene() {
   let allowPhone;
   let name;
-  const tmp = _createForOfIteratorHelperLoose();
+  const tmp = createCacheKey();
   ({ name, allowPhone } = useContactSyncModalStore());
   const items = [allowPhone];
   const effect = React.useEffect(() => {
@@ -60,70 +61,61 @@ function DiscoverabilityNameScene() {
       const obj = allowPhone(outer1_2[13]);
     }
   }, items);
-  let obj = { style: tmp.container };
+  let obj = { style: tmp.container, children: null };
   const callback = React.useCallback((arg0) => {
-    const result = allowPhone(outer1_2[13]).startContactSyncForDiscoverability(arg0);
-    const obj = allowPhone(outer1_2[13]);
-    const result1 = allowPhone(outer1_2[13]).closeDiscoverabilityModal(false);
+    const result = allowPhone(11795).startContactSyncForDiscoverability(arg0);
+    const obj = allowPhone(11795);
+    const result1 = allowPhone(11795).closeDiscoverabilityModal(false);
   }, []);
-  obj = { onNext: callback, loading: false };
-  let str = "";
+  obj = { onNext: callback, loading: false, initialName: null };
   const tmp2 = useContactSyncModalStore();
-  const tmp5 = jsx;
   const tmp6 = View;
-  const tmp7 = jsx;
-  if (null != name) {
-    str = name;
+  if (name == null) {
+    name = "";
   }
-  obj.initialName = str;
-  obj.children = tmp7(importDefault(11763), obj);
-  return tmp5(tmp6, obj);
+  obj[2] = name;
+  obj[1] = jsx(importDefault(11788), { onNext: callback, loading: false, initialName: null });
+  return <tmp6 onNext={callback} loading={false} initialName={null} />;
 }
 class DiscoverabilityModal {
   constructor() {
-    obj = {};
-    obj.screens = result.useMemo(() => (function getScreens() {
+    obj = { screens: null, initialRouteName: null, headerBackTitle: null };
+    obj[0] = set.useMemo(() => {
       let obj = {};
-      obj = {
-        ignoreKeyboard: true,
-        impressionName: outer2_0(outer2_2[16]).ImpressionNames.DISCOVERABILITY,
-        fullscreen: true,
-        headerLeft() {
-          return null;
-        },
-        headerTitle() {
-          return null;
-        },
-        render() {
-          return outer3_7(outer3_9, {});
-        }
+      obj = { ignoreKeyboard: true, impressionName: null, fullscreen: true, headerLeft: null, headerTitle: null, render: null };
+      obj[1] = callback(503).ImpressionNames.DISCOVERABILITY;
+      obj[3] = function headerLeft() {
+        return null;
       };
-      obj[outer2_0(outer2_2[12]).DiscoverabilityScenes.LANDING] = obj;
-      obj = {
-        ignoreKeyboard: true,
-        impressionName: outer2_0(outer2_2[16]).ImpressionNames.DISCOVERABILITY,
-        fullscreen: true,
-        headerTitle() {
-          return null;
-        },
-        render() {
-          return outer3_7(outer3_10, {});
-        }
+      obj[4] = function headerTitle() {
+        return null;
       };
-      obj[outer2_0(outer2_2[12]).DiscoverabilityScenes.NAME] = obj;
+      obj[5] = function render() {
+        return callback(closure_9, {});
+      };
+      obj[callback(691).DiscoverabilityScenes.LANDING] = obj;
+      obj = { ignoreKeyboard: true, impressionName: null, fullscreen: true, headerTitle: null, render: null };
+      obj[1] = callback(503).ImpressionNames.DISCOVERABILITY;
+      obj[3] = function headerTitle() {
+        return null;
+      };
+      obj[4] = function render() {
+        return callback(closure_10, {});
+      };
+      obj[callback(691).DiscoverabilityScenes.NAME] = obj;
       return obj;
-    })(), []);
-    obj.initialRouteName = require("keys").DiscoverabilityScenes.LANDING;
+    }, []);
+    obj[1] = require("keys").DiscoverabilityScenes.LANDING;
     intl = require("getSystemLocale").intl;
-    obj.headerBackTitle = intl.string(require("getSystemLocale").t["13/7kX"]);
+    obj[2] = intl.string(require("getSystemLocale").t["13/7kX"]);
     return jsx(require("NavigationStack").Navigator, obj);
   }
 }
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { flex: 1, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW, justifyContent: "center", paddingBottom: 44, paddingTop: require("NAV_BAR_HEIGHT").NAV_BAR_HEIGHT + 32 };
-_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+createCacheKey = { container: null };
+createCacheKey = { flex: 1, backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW, justifyContent: "center", paddingBottom: 44, paddingTop: require("NAV_BAR_HEIGHT").NAV_BAR_HEIGHT + 32 };
+createCacheKey[0] = createCacheKey;
+createCacheKey = createCacheKey.createStyles(createCacheKey);
 DiscoverabilityModal.modalConfig = { animation: require("ME").ModalAnimation.SLIDE_IN_OUT };
-let result = require("initialValues").fileFinishedImporting("modules/nuf/native/components/DiscoverabilityModal.tsx");
+let result = require("ContactSyncModes").fileFinishedImporting("modules/nuf/native/components/DiscoverabilityModal.tsx");
 
 export default DiscoverabilityModal;

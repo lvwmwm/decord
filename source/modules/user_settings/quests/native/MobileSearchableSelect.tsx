@@ -1,20 +1,20 @@
-// Module ID: 14180
-// Function ID: 108873
+// Module ID: 14202
+// Function ID: 14203
 // Name: MobileSearchableSelect
-// Dependencies: [57, 31, 27, 33, 4165, 689, 1212, 6712, 8270, 4161, 2]
+// Dependencies: [32, 19, 17, 21, 4189, 712, 1236, 6733, 8294, 4185, 2]
 
-// Module 14180 (MobileSearchableSelect)
+// Module 14202 (MobileSearchableSelect)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
+import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_4;
-let closure_5;
+let c4;
+let c5;
 let closure_6;
-let closure_7;
-let closure_8;
+let error;
+let metroImportAll;
 const require = arg1;
 class MobileSearchableSelect {
   constructor(arg0) {
@@ -26,7 +26,6 @@ class MobileSearchableSelect {
     if (placeholder === undefined) {
       tmp = options;
       tmp2 = closure_1;
-      num = 6;
       intl = require("getSystemLocale").intl;
       placeholder = intl.string(require("getSystemLocale").t.XqMe3N);
     }
@@ -45,71 +44,70 @@ class MobileSearchableSelect {
     c7 = undefined;
     useState = undefined;
     useState = undefined;
-    intl = undefined;
-    c11 = undefined;
-    f108881 = undefined;
+    c10 = undefined;
+    useEffect = undefined;
+    f93315 = undefined;
     tmp3 = useState();
     c5 = tmp3;
-    str = "";
-    tmp4 = c3;
-    if (null != value) {
-      str = value;
+    obj = c3;
+    str = value;
+    if (value == null) {
+      str = "";
     }
-    tmp5 = onChange(c3.useState(str), 2);
-    first = tmp5[0];
+    tmp4 = onChange(c3.useState(str), 2);
+    first = tmp4[0];
     c6 = first;
-    c7 = tmp5[1];
-    tmp6 = onChange(c3.useState(false), 2);
-    [tmp7, useState] = tmp6;
-    tmp8 = onChange(c3.useState(false), 2);
-    first1 = tmp8[0];
+    c7 = tmp4[1];
+    tmp5 = onChange(obj.useState(false), 2);
+    [tmp6, useState] = tmp5;
+    tmp7 = onChange(obj.useState(false), 2);
+    first1 = tmp7[0];
     useState = first1;
-    intl = tmp8[1];
+    c10 = tmp7[1];
     items = [, , ];
     items[0] = value;
     items[1] = first;
     items[2] = first1;
-    effect = c3.useEffect(() => {
-      let tmp = null == closure_1;
-      if (!tmp) {
-        tmp = closure_1 === first;
+    effect = obj.useEffect(() => {
+      let tmp2 = null == closure_1;
+      if (!tmp2) {
+        tmp2 = tmp === first;
       }
-      if (!tmp) {
-        tmp = first1;
+      if (!tmp2) {
+        tmp2 = first1;
       }
-      if (!tmp) {
-        callback(closure_1);
+      if (!tmp2) {
+        callback(tmp);
       }
     }, items);
     items1 = [, , ];
     items1[0] = options;
     items1[1] = first;
     items1[2] = flag;
-    memo = c3.useMemo(() => {
-      const arr = (function defaultFilter(options, first) {
-        if ("" === first.trim()) {
-          return options;
-        } else {
-          let closure_0 = first.toLowerCase();
-          return options.filter((label) => {
-            const formatted = label.label.toLowerCase();
-            let hasItem = formatted.includes(closure_0);
-            if (!hasItem) {
-              const formatted1 = label.value.toLowerCase();
-              hasItem = formatted1.includes(closure_0);
-              const str2 = label.value;
-            }
-            return hasItem;
-          });
-        }
-      })(options, first);
-      let tmp = arr;
+    memo = obj.useMemo(() => {
+      let found = closure_0;
+      if ("" !== first.trim()) {
+        closure_0 = str.toLowerCase();
+        found = closure_0.filter((label) => {
+          const formatted = label.label.toLowerCase();
+          let hasItem = formatted.includes(closure_0);
+          if (!hasItem) {
+            const formatted1 = label.value.toLowerCase();
+            hasItem = formatted1.includes(closure_0);
+            const str2 = label.value;
+          }
+          return hasItem;
+        });
+      }
+      let tmp = found;
       if (flag) {
-        tmp = arr;
-        if (0 === arr.length) {
-          tmp = arr;
-          if ("" !== first.trim()) {
-            const obj = { label: first.trim(), value: first.trim() };
+        tmp = found;
+        if (0 === found.length) {
+          tmp = found;
+          if ("" !== str.trim()) {
+            const obj = { label: null, value: null };
+            obj[0] = str.trim();
+            obj[1] = str.trim();
             const items = [obj];
             tmp = items;
           }
@@ -117,13 +115,13 @@ class MobileSearchableSelect {
       }
       return tmp;
     }, items1);
-    c11 = memo;
+    useEffect = memo;
     items2 = [];
     items2[0] = options.length;
     items3 = [, ];
     items3[0] = first;
     items3[1] = onChange;
-    callback = c3.useCallback((arg0) => {
+    callback = obj.useCallback((arg0) => {
       callback2(true);
       callback(arg0);
       let tmp4 = arg0.length > 0;
@@ -134,14 +132,14 @@ class MobileSearchableSelect {
     }, items2);
     items4 = [];
     items4[0] = onChange;
-    callback1 = c3.useCallback(() => {
+    callback1 = obj.useCallback(() => {
       if ("" !== first.trim()) {
         onChange(first);
         callback2(false);
         _undefined2(false);
       }
     }, items3);
-    f108881 = c3.useCallback((arg0) => {
+    f93315 = obj.useCallback((arg0) => {
       callback(arg0);
       onChange(arg0);
       callback2(false);
@@ -150,84 +148,73 @@ class MobileSearchableSelect {
     items5 = [, ];
     items5[0] = first.length;
     items5[1] = options.length;
-    callback2 = c3.useCallback(() => {
+    callback2 = obj.useCallback(() => {
       let tmp2 = first.length > 0;
       if (!tmp2) {
         tmp2 = options.length > 0;
       }
       c8(tmp2);
     }, items5);
-    obj = { style: { position: "relative", zIndex: 100, overflow: "visible" } };
-    callback3 = c3.useCallback(() => {
+    tmp15 = c4;
+    obj = { style: { position: "relative", zIndex: 100, overflow: "visible" }, children: null };
+    tmp16 = c7;
+    callback3 = obj.useCallback(() => {
       _undefined2(false);
       callback2(false);
     }, []);
-    tmp15 = useState;
-    tmp16 = c4;
-    obj = {};
-    obj.placeholder = placeholder;
-    obj.value = first;
-    obj.onChange = callback;
-    obj.onSubmitEditing = callback1;
-    obj.onFocus = callback2;
-    obj.onBlur = callback3;
-    obj.leadingIcon = require("MagnifyingGlassIcon").MagnifyingGlassIcon;
-    obj.isClearable = true;
-    obj.returnKeyType = "search";
-    obj.accessibilityRole = "search";
-    obj.autoCorrect = false;
-    obj.autoCapitalize = "none";
-    obj.isDisabled = flag2;
+    tmp14 = useState;
+    obj1 = { placeholder, value: first, onChange: callback, onSubmitEditing: callback1, onFocus: callback2, onBlur: callback3, leadingIcon: null, isClearable: true, returnKeyType: "search", accessibilityRole: "search", autoCorrect: false, autoCapitalize: "none", isDisabled: null };
+    obj1[6] = require("MagnifyingGlassIcon").MagnifyingGlassIcon;
+    obj1[12] = flag2;
     items6 = [, ];
-    items6[0] = c7(require("TextField").TextField, obj);
-    if (tmp7) {
-      tmp7 = memo.length > 0;
+    items6[0] = c7(require("TextField").TextField, obj1);
+    if (tmp16Result) {
+      num = 0;
+      tmp16Result = memo.length > 0;
     }
-    if (tmp7) {
-      tmp17 = c7;
-      tmp18 = c4;
-      obj1 = {};
-      obj1.style = tmp3.dropdownContainer;
-      tmp19 = c7;
-      tmp20 = c5;
-      obj2 = { nestedScrollEnabled: true, showsVerticalScrollIndicator: false, keyboardShouldPersistTaps: "handled" };
-      obj2.children = memo.map((label) => {
-        let closure_0 = label;
-        let obj = {};
+    if (tmp16Result) {
+      obj2 = { style: null, children: null };
+      obj2[0] = tmp3.dropdownContainer;
+      tmp17 = c5;
+      obj3 = { nestedScrollEnabled: true, showsVerticalScrollIndicator: false, keyboardShouldPersistTaps: "handled", children: null };
+      obj3[3] = memo.map((children) => {
+        let closure_0 = children;
         const items = [_undefined.dropdownItem, ];
         let dropdownItemLast = arg1 === memo.length - 1;
         if (dropdownItemLast) {
-          dropdownItemLast = _undefined.dropdownItemLast;
+          dropdownItemLast = tmp3.dropdownItemLast;
         }
-        items[1] = dropdownItemLast;
-        obj.style = items;
-        obj.activeOpacity = 0.7;
-        obj.onPress = function onPress() {
-          outer1_12(label.value);
+        obj = {
+          style: items,
+          activeOpacity: 0.7,
+          onPress() {
+            outer1_12(value.value);
+          },
+          disabled: flag2,
+          children: tmp(options(value[9]).Text, obj)
         };
-        obj.disabled = flag2;
-        obj = { variant: "text-sm/medium", color: "text-default", style: _undefined.dropdownItemText, children: label.label };
-        obj.children = callback(options(value[9]).Text, obj);
-        return callback(first, obj, "option-" + label.value + "-" + arg1);
+        items[1] = dropdownItemLast;
+        obj = { variant: "text-sm/medium", color: "text-default", style: tmp3.dropdownItemText, children: children.label };
+        return closure_7(first, obj, "option-" + children.value + "-" + arg1);
       });
-      obj1.children = c7(c5, obj2);
-      tmp7 = c7(c4, obj1);
+      obj2[1] = tmp16(c5, obj3);
+      tmp16Result = tmp16(tmp15, obj2);
     }
-    items6[1] = tmp7;
-    obj.children = items6;
-    return tmp15(tmp16, obj);
+    items6[1] = tmp16Result;
+    obj[1] = items6;
+    return tmp14(tmp15, obj);
   }
 }
-({ View: closure_4, ScrollView: closure_5, TouchableOpacity: closure_6 } = get_ActivityIndicator);
-({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWER, borderRadius: require("_createForOfIteratorHelperLoose").radii.md, marginTop: require("_createForOfIteratorHelperLoose").space.PX_4, borderWidth: 1, borderColor: require("_createForOfIteratorHelperLoose").colors.BORDER_SUBTLE, left: 0, right: 0, zIndex: 999999, elevation: 30, shadowColor: "#000", shadowOffset: { width: 0, height: 6 }, shadowOpacity: 0.4, shadowRadius: 8, maxHeight: 250 };
-_createForOfIteratorHelperLoose.dropdownContainer = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.dropdownItem = { padding: require("_createForOfIteratorHelperLoose").space.PX_12, borderBottomWidth: 1, borderBottomColor: require("_createForOfIteratorHelperLoose").colors.BORDER_MUTED };
-_createForOfIteratorHelperLoose.dropdownItemLast = { borderBottomWidth: 0 };
-_createForOfIteratorHelperLoose.dropdownItemText = { fontSize: 14 };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-let obj1 = { padding: require("_createForOfIteratorHelperLoose").space.PX_12, borderBottomWidth: 1, borderBottomColor: require("_createForOfIteratorHelperLoose").colors.BORDER_MUTED };
+({ View: c4, ScrollView: c5, TouchableOpacity: closure_6 } = get_ActivityIndicator);
+({ jsx: error, jsxs: metroImportAll } = jsxProd);
+createCacheKey = { dropdownContainer: null, dropdownItem: null, dropdownItemLast: null, dropdownItemText: null };
+createCacheKey = { backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOWER, borderRadius: require("Themes").radii.md, marginTop: require("Themes").space.PX_4, borderWidth: 1, borderColor: require("Themes").colors.BORDER_SUBTLE, left: 0, right: 0, zIndex: 999999, elevation: 30, shadowColor: "#000", shadowOffset: { width: 0, height: 6 }, shadowOpacity: 0.4, shadowRadius: 8, maxHeight: 250 };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { padding: require("Themes").space.PX_12, borderBottomWidth: 1, borderBottomColor: require("Themes").colors.BORDER_MUTED };
+createCacheKey[2] = { borderBottomWidth: 0 };
+createCacheKey[3] = { fontSize: 14 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let obj1 = { padding: require("Themes").space.PX_12, borderBottomWidth: 1, borderBottomColor: require("Themes").colors.BORDER_MUTED };
 const result = require("get ActivityIndicator").fileFinishedImporting("modules/user_settings/quests/native/MobileSearchableSelect.tsx");
 
 export default MobileSearchableSelect;

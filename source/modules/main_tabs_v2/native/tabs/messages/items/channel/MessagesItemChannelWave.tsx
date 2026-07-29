@@ -1,30 +1,28 @@
-// Module ID: 15010
-// Function ID: 114275
-// Dependencies: [31, 33, 4578, 1212, 4161, 2]
+// Module ID: 15036
+// Function ID: 15037
+// Dependencies: [19, 21, 4600, 1236, 4185, 2]
 
-// Module 15010
+// Module 15036
 import { jsx } from "jsxProd";
-import importAllResult from "result";
+import importAllResult from "noop";
 
 const require = arg1;
-const memoResult = require("result").memo(function MessagesItemChannelWave(hasNameplate) {
+const memoResult = require("noop").memo(function MessagesItemChannelWave(hasNameplate) {
   let flag = hasNameplate.hasNameplate;
   if (flag === undefined) {
     flag = false;
   }
-  let obj = {};
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj.text = intl.string(require(1212) /* getSystemLocale */.t.n8nU4W);
-  obj = { style: { marginTop: 3 }, variant: "text-sm/semibold", "aria-hidden": true, children: "\u{1F44B}" };
-  obj.icon = jsx(require(4161) /* Text */.Text, { style: { marginTop: 3 }, variant: "text-sm/semibold", "aria-hidden": true, children: "\u{1F44B}" });
+  const obj = { text: null, icon: null, variant: null, size: "sm", onPress: null };
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj[0] = intl.string(require(1236) /* getSystemLocale */.t.n8nU4W);
+  obj[1] = jsx(require(4185) /* Text */.Text, { style: { marginTop: 3 }, variant: "text-sm/semibold", "aria-hidden": true, children: "\u{1F44B}" });
   let str = "secondary";
   if (flag) {
     str = "secondary-overlay";
   }
-  obj.variant = str;
-  obj.size = "sm";
-  obj.onPress = hasNameplate.wavePressed;
-  return jsx(require(4578) /* Button */.Button, { style: { marginTop: 3 }, variant: "text-sm/semibold", "aria-hidden": true, children: "\u{1F44B}" });
+  obj[2] = str;
+  obj[4] = hasNameplate.wavePressed;
+  return jsx(require(4600) /* Button */.Button, { text: null, icon: null, variant: null, size: "sm", onPress: null });
 });
 const result = require("Button").fileFinishedImporting("modules/main_tabs_v2/native/tabs/messages/items/channel/MessagesItemChannelWave.tsx");
 

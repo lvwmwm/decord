@@ -1,85 +1,87 @@
-// Module ID: 8174
-// Function ID: 65045
-// Name: resolveShareFileExtension
-// Dependencies: [653, 675, 8175, 5178, 2]
-// Exports: getMediaShareParams, trackAppClickInNativeShareSheet
+// Module ID: 8198
+// Function ID: 8199
+// Name: trackAppClickInNativeShareSheet
+// Dependencies: [676, 698, 8199, 5200, 2]
+// Exports: getMediaShareParams, resolveShareFileExtension, trackAppClickInNativeShareSheet
 
-// Module 8174 (resolveShareFileExtension)
+// Module 8198 (trackAppClickInNativeShareSheet)
 import { AnalyticEvents } from "ME";
 
-function resolveShareFileExtension(uri, contentType) {
-  return require(5178) /* decideFileExtension */.decideFileExtension(uri, contentType, true);
-}
 const result = require("apexExperiment").fileFinishedImporting("modules/action_sheet/native/ShowShareActionSheetUtils.tsx");
 
 export const trackAppClickInNativeShareSheet = function trackAppClickInNativeShareSheet(app, _location) {
-  let obj = importDefault(675);
-  obj = {};
-  let str = "";
-  if (null != app) {
-    str = app;
+  let str = app;
+  let obj = importDefault(698);
+  if (app == null) {
+    str = "";
   }
-  obj.package_name = str;
-  obj.location = _location;
+  obj = { package_name: str, location: _location };
   obj.track(AnalyticEvents.NATIVE_SHARE_SHEET_APP_CLICKED, obj);
 };
 export const getMediaShareParams = function getMediaShareParams(source) {
   let contentType;
   let videoURI;
-  let obj = require(8175) /* apexExperiment */;
+  let obj = require(8199) /* apexExperiment */;
   if (obj.getMobileMediaViewerShareExperimentEnabled("shareMediaSource")) {
     if (true !== source.disableDownload) {
       if (true === source.isGIFV) {
-        obj = {};
         let uri2 = source.embedURI;
-        if (null == uri2) {
+        if (uri2 == null) {
           uri2 = source.sourceURI;
         }
-        if (null == uri2) {
+        if (uri2 == null) {
           uri2 = source.uri;
         }
-        obj.mediaFallbackUrl = uri2;
+        obj = { mediaFallbackUrl: null };
+        obj[0] = uri2;
         return obj;
       } else {
         ({ videoURI, contentType } = source);
         if (null != videoURI) {
-          const tmp5 = resolveShareFileExtension(videoURI, contentType);
-          obj = { mediaFallbackUrl: videoURI };
+          let tmpResult = tmp(5200);
+          const decideFileExtensionResult = tmpResult.decideFileExtension(videoURI, contentType, true);
+          obj = { mediaFallbackUrl: null, mediaStagingOptions: null };
+          obj[0] = videoURI;
           let tmp6;
-          if (null != tmp5) {
-            const obj1 = { url: videoURI, fileExtension: tmp5, mediaType: "video" };
+          if (null != decideFileExtensionResult) {
+            const obj1 = { url: null, fileExtension: null, mediaType: "video" };
+            obj1[0] = videoURI;
+            obj1[1] = decideFileExtensionResult;
             tmp6 = obj1;
           }
-          obj.mediaStagingOptions = tmp6;
+          obj[1] = tmp6;
           return obj;
         } else {
-          const tmp2 = resolveShareFileExtension(source.uri, contentType);
-          const obj2 = {};
+          tmpResult = tmp(5200);
+          const decideFileExtensionResult1 = tmpResult.decideFileExtension(source.uri, contentType, true);
           let uri = source.sourceURI;
-          if (null == uri) {
+          if (uri == null) {
             uri = source.uri;
           }
-          obj2.mediaFallbackUrl = uri;
-          let tmp3;
-          if (null != tmp2) {
-            const obj3 = { url: source.uri, fileExtension: tmp2, mediaType: "image" };
-            tmp3 = obj3;
+          const obj2 = { mediaFallbackUrl: null, mediaStagingOptions: null };
+          obj2[0] = uri;
+          let tmp4;
+          if (null != decideFileExtensionResult1) {
+            const obj3 = { url: null, fileExtension: null, mediaType: "image" };
+            obj3[0] = source.uri;
+            obj3[1] = decideFileExtensionResult1;
+            tmp4 = obj3;
           }
-          obj2.mediaStagingOptions = tmp3;
+          obj2[1] = tmp4;
           return obj2;
         }
       }
     }
   }
-  const obj4 = {};
-  let uri3 = source.videoURI;
-  if (null == uri3) {
-    uri3 = source.sourceURI;
+  let mediaFallbackUrl = source.videoURI;
+  if (mediaFallbackUrl == null) {
+    mediaFallbackUrl = source.sourceURI;
   }
-  if (null == uri3) {
-    uri3 = source.uri;
+  if (mediaFallbackUrl == null) {
+    mediaFallbackUrl = source.uri;
   }
-  obj4.mediaFallbackUrl = uri3;
-  return obj4;
+  return { mediaFallbackUrl };
 };
-export { resolveShareFileExtension };
+export const resolveShareFileExtension = function resolveShareFileExtension(closure_0, contentType) {
+  return require(5200) /* decideFileExtension */.decideFileExtension(closure_0, contentType, true);
+};

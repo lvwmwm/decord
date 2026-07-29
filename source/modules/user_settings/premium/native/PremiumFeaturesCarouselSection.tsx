@@ -1,41 +1,41 @@
-// Module ID: 12483
-// Function ID: 96679
+// Module ID: 12505
+// Function ID: 12506
 // Name: PremiumFeaturesCardBackground
-// Dependencies: [57, 31, 27, 653, 6207, 1852, 33, 689, 4165, 4589, 668, 4161, 5119, 1212, 6557, 6560, 6596, 6599, 4563, 1553, 9692, 1273, 5497, 1450, 675, 2]
+// Dependencies: [32, 19, 17, 676, 6227, 1876, 21, 712, 4189, 4611, 691, 4185, 5141, 1236, 6578, 6581, 6617, 6620, 4586, 1577, 9714, 1297, 5515, 1474, 698, 2]
 // Exports: default
 
-// Module 12483 (PremiumFeaturesCardBackground)
+// Module 12505 (PremiumFeaturesCardBackground)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
-import get_ActivityIndicator from "get ActivityIndicator";
+import isMetaQuest from "isMetaQuest";
+import get_ActivityIndicator from "registerAsset";
 import { AnalyticEvents } from "ME";
 import { Gradients } from "items";
 import { PremiumTypes } from "GuildFeatures";
-import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import jsxProd from "Button";
+import createCacheKey from "createCacheKey";
+import createCacheKey from "createCacheKey";
+import createCacheKey from "createCacheKey";
 
-let closure_10;
-let closure_11;
-let closure_5;
+let c10;
+let c5;
 let closure_6;
+let unpackModuleId;
 const require = arg1;
 class PremiumFeaturesCardBackground {
   constructor(arg0) {
     ({ style, children } = global);
-    tmp = Object();
-    obj = { style: tmp.cardContainer };
-    obj = { style: items };
+    tmp = PX_12();
+    obj = { style: tmp.cardContainer, children: null };
+    obj = { style: items, start: null, end: null, colors: null, children: null };
     items = [, ];
     items[0] = tmp.card;
     items[1] = style;
     tmp2 = require("LinearGradient");
-    obj.start = require("keys").VerticalGradient.START;
-    obj.end = require("keys").VerticalGradient.END;
-    obj.colors = Gradients.PREMIUM_TIER_0_PERK_CARD;
-    obj.children = children;
-    obj.children = jsx(tmp2, obj);
+    obj[1] = require("keys").VerticalGradient.START;
+    obj[2] = require("keys").VerticalGradient.END;
+    obj[3] = Gradients.PREMIUM_TIER_0_PERK_CARD;
+    obj[4] = children;
+    obj[1] = jsx(tmp2, obj);
     return jsx(View, obj);
   }
 }
@@ -46,145 +46,155 @@ function CarouselCard(arg0) {
   let title;
   ({ style, title, imageSrc, imageStyle } = arg0);
   const tmp = callback4();
-  let obj = { style };
+  let obj = { style, children: null };
   obj = { variant: "heading-md/extrabold", color: "text-overlay-light", style: tmp.cardTitle, children: title };
-  const items = [callback2(require(4161) /* Text */.Text, obj), ];
+  const items = [callback2(require(4185) /* Text */.Text, obj), ];
   const items1 = [tmp.image, imageStyle];
-  items[1] = callback2(importDefault(5119), { source: imageSrc, style: items1, resizeMode: "contain" });
-  obj.children = items;
+  items[1] = callback2(importDefault(5141), { source: imageSrc, style: items1, resizeMode: "contain" });
+  obj[1] = items;
   return callback3(PremiumFeaturesCardBackground, obj);
 }
 function PremiumFeaturesCarousel(arg0) {
   let onEndReached;
   let width;
   ({ width, onEndReached } = arg0);
-  let tmp = _createForOfIteratorHelperLoose();
-  let obj = onEndReached(4563);
+  width = onEndReached;
+  let importDefault;
+  let dependencyMap;
+  let mapped;
+  let React;
+  const tmp = createCacheKey();
+  let obj = width(4586);
   const isScreenReaderEnabled = obj.useIsScreenReaderEnabled();
-  const tmp3 = arr(sum.useState(0), 2);
-  let first = tmp3[0];
-  const dependencyMap = tmp5;
-  arr = (function usePremiumFeatureCardData(width) {
-    let closure_0 = width;
-    const tmp = outer1_16();
-    const first = tmp;
-    let items = [tmp];
-    const memo = sum.useMemo(() => {
-      let obj = {};
-      const intl = onEndReached(1212).intl;
-      obj.title = intl.string(onEndReached(1212).t["3cyhe3"]);
-      obj.imageSrc = first(6557);
-      obj.imageStyle = tmp.emojiImage;
-      const items = [outer2_9.TIER_0, outer2_9.TIER_2];
-      obj.premiumTypes = new Set(items);
-      const items1 = [obj, , , ];
-      obj = {};
-      const intl2 = onEndReached(1212).intl;
-      obj.title = intl2.string(onEndReached(1212).t["8AhJqy"]);
-      obj.imageSrc = first(6560);
-      const items2 = [outer2_9.TIER_0, outer2_9.TIER_2];
-      const set = new Set(items);
-      obj.premiumTypes = new Set(items2);
-      items1[1] = obj;
-      obj = {};
-      const intl3 = onEndReached(1212).intl;
-      obj.title = intl3.string(onEndReached(1212).t["t/Mvdj"]);
-      obj.imageSrc = first(6596);
-      const items3 = [outer2_9.TIER_2];
-      const set1 = new Set(items2);
-      obj.premiumTypes = new Set(items3);
-      items1[2] = obj;
-      const obj1 = {};
-      const intl4 = onEndReached(1212).intl;
-      obj1.title = intl4.string(onEndReached(1212).t["n+DGY/"]);
-      obj1.imageSrc = first(6599);
-      const items4 = [outer2_9.TIER_2];
-      const set2 = new Set(items3);
-      obj1.premiumTypes = new Set(items4);
-      items1[3] = obj1;
-      return items1;
-    }, items);
-    return memo.map((arg0, arg1) => {
-      obj = { style: obj };
-      obj = { width: closure_0 * outer2_12 };
-      const merged = Object.assign(arg0);
-      return outer2_10(outer2_18, obj, arg1);
-    });
-  })(width);
-  let items = [first, arr.length, onEndReached];
-  const effect = sum.useEffect(() => {
-    if (first === arr.length - 1) {
-      if (null != onEndReached) {
-        onEndReached();
+  const tmp5 = mapped(React.useState(0), 2);
+  const first = tmp5[0];
+  importDefault = first;
+  dependencyMap = tmp7;
+  importDefault = undefined;
+  const tmp8 = callback5();
+  importDefault = tmp8;
+  let items = [tmp8];
+  const memo = React.useMemo(() => {
+    let obj = { title: null, imageSrc: null, imageStyle: null, premiumTypes: null };
+    const intl = width(_undefined2[13]).intl;
+    obj[0] = intl.string(width(_undefined2[13]).t["3cyhe3"]);
+    obj[1] = _undefined(_undefined2[14]);
+    obj[2] = _undefined.emojiImage;
+    const items = [, ];
+    ({ TIER_0: arr[0], TIER_2: arr[1] } = outer1_9);
+    obj[3] = new Set(items);
+    const items1 = [obj, , , ];
+    obj = { title: null, imageSrc: null, premiumTypes: null };
+    const intl2 = width(_undefined2[13]).intl;
+    obj[0] = intl2.string(width(_undefined2[13]).t["8AhJqy"]);
+    obj[1] = _undefined(_undefined2[15]);
+    const items2 = [, ];
+    ({ TIER_0: arr3[0], TIER_2: arr3[1] } = outer1_9);
+    const set = new Set(items);
+    obj[2] = new Set(items2);
+    items1[1] = obj;
+    obj = { title: null, imageSrc: null, premiumTypes: null };
+    const intl3 = width(_undefined2[13]).intl;
+    obj[0] = intl3.string(width(_undefined2[13]).t["t/Mvdj"]);
+    obj[1] = _undefined(_undefined2[16]);
+    const items3 = [outer1_9.TIER_2];
+    const set1 = new Set(items2);
+    obj[2] = new Set(items3);
+    items1[2] = obj;
+    const obj1 = { title: null, imageSrc: null, premiumTypes: null };
+    const intl4 = width(_undefined2[13]).intl;
+    obj1[0] = intl4.string(width(_undefined2[13]).t["n+DGY/"]);
+    obj1[1] = _undefined(_undefined2[17]);
+    const items4 = [outer1_9.TIER_2];
+    const set2 = new Set(items3);
+    obj1[2] = new Set(items4);
+    items1[3] = obj1;
+    return items1;
+  }, items);
+  mapped = memo.map((arg0, arg1) => {
+    obj = { style: obj };
+    obj = { width: width * outer1_12 };
+    const merged = Object.assign(arg0);
+    return outer1_10(outer1_18, obj, arg1);
+  });
+  let items1 = [first, mapped.length, onEndReached];
+  const effect = React.useEffect(() => {
+    if (c1 === mapped.length - 1) {
+      if (width != null) {
+        tmp();
       }
     }
-  }, items);
-  const result = width * c12;
-  sum = result + PX_12;
-  let items1 = [sum, arr.length];
-  const bound = Math.max(0, (width - result) / 2);
-  obj = { style: tmp.carouselContainer };
-  const callback = sum.useCallback((nativeEvent) => {
-    tmp5(Math.max(0, Math.min(arr.length - 1, Math.round(nativeEvent.nativeEvent.contentOffset.x / result))));
   }, items1);
-  if (!onEndReached(1553).isThumbstickScrollDevice) {
+  const result = width * c12;
+  const sum = result + PX_12;
+  React = sum;
+  let items2 = [sum, mapped.length];
+  const bound = Math.max(0, (width - result) / 2);
+  obj = { style: tmp.carouselContainer, children: null };
+  const callback = React.useCallback((nativeEvent) => {
+    _undefined2(Math.max(0, Math.min(mapped.length - 1, Math.round(nativeEvent.nativeEvent.contentOffset.x / c4))));
+  }, items2);
+  if (!width(1577).isThumbstickScrollDevice) {
     if (!isScreenReaderEnabled) {
-      obj = {
-        style: tmp.carousel,
-        data: arr,
-        renderItem(item) {
-              return item.item;
-            },
-        width,
-        loop: false,
-        onConfigurePanGesture(activeOffsetX) {
-              const items = [-10, 10];
-              activeOffsetX.activeOffsetX(items);
-            },
-        scrollAnimationDuration: 200,
-        mode: "parallax",
-        modeConfig: { parallaxScrollingScale: 1, parallaxScrollingOffset: 45 },
-        onSnapToItem: tmp5
+      let tmp17 = callback2;
+      obj = { style: null, data: null, renderItem: null, width: null, loop: false, onConfigurePanGesture: null, scrollAnimationDuration: 200, mode: "parallax", modeConfig: null, onSnapToItem: null };
+      obj[0] = tmp.carousel;
+      obj[1] = mapped;
+      obj[2] = function renderItem(item) {
+        return item.item;
       };
-      let tmp16 = callback2(first(9692), obj);
+      obj[3] = width;
+      obj[5] = function onConfigurePanGesture(activeOffsetX) {
+        activeOffsetX.activeOffsetX([-10, 10]);
+      };
+      obj[8] = { parallaxScrollingScale: 1, parallaxScrollingOffset: 45 };
+      obj[9] = tmp7;
+      let tmp19 = callback2(importDefault(9714), obj);
     }
-    let items2 = [tmp16, ];
-    let obj1 = { containerStyle: tmp.indicators, numberOfItems: arr.length, currentIndex: first };
-    items2[1] = callback2(onEndReached(1273).CarouselPagination, obj1);
-    obj.children = items2;
+    let items3 = [tmp19, ];
+    let obj1 = { containerStyle: null, numberOfItems: null, currentIndex: null };
+    obj1[0] = tmp.indicators;
+    obj1[1] = mapped.length;
+    obj1[2] = first;
+    items3[1] = tmp17(width(1297).CarouselPagination, obj1);
+    obj[1] = items3;
     return closure_11(closure_6, obj);
   }
-  const obj2 = { style: tmp.carousel, contentContainerStyle: { paddingHorizontal: bound, gap: PX_12 }, horizontal: true, showsHorizontalScrollIndicator: false, decelerationRate: "fast", snapToOffsets: arr.map((arg0, arg1) => arg1 * result), scrollEventThrottle: 100, onScroll: callback, children: arr };
-  tmp16 = callback2(closure_5, obj2);
+  tmp19 = callback2(closure_5, { style: tmp.carousel, contentContainerStyle: { paddingHorizontal: bound, gap: PX_12 }, horizontal: true, showsHorizontalScrollIndicator: false, decelerationRate: "fast", snapToOffsets: mapped.map((arg0, arg1) => arg1 * c4), scrollEventThrottle: 100, onScroll: callback, children: mapped });
+  tmp17 = callback2;
 }
-({ ScrollView: closure_5, View: closure_6 } = get_ActivityIndicator);
-({ jsx: closure_10, jsxs: closure_11 } = jsxProd);
+({ ScrollView: c5, View: closure_6 } = get_ActivityIndicator);
+({ jsx: c10, jsxs: unpackModuleId } = jsxProd);
 let c12 = 0.85;
-const PX_12 = require("_createForOfIteratorHelperLoose").space.PX_12;
-_createForOfIteratorHelperLoose = { container: { flex: 1 }, headerText: { textAlign: "center" } };
-_createForOfIteratorHelperLoose = { flex: 1, marginTop: require("_createForOfIteratorHelperLoose").space.PX_16 };
-_createForOfIteratorHelperLoose.carouselContainer = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.carousel = { flex: 1, minHeight: 262 };
-_createForOfIteratorHelperLoose.indicators = { marginBottom: -require("_createForOfIteratorHelperLoose").space.PX_48 };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-let obj2 = { cardContainer: { flex: 1 } };
-const obj3 = { flex: 1, alignSelf: "center", justifyContent: "space-between", borderRadius: require("_createForOfIteratorHelperLoose").radii.lg, overflow: "hidden" };
-obj2.card = obj3;
-obj2.image = { alignSelf: "center" };
-_createForOfIteratorHelperLoose = { marginTop: require("_createForOfIteratorHelperLoose").space.PX_24, marginHorizontal: require("_createForOfIteratorHelperLoose").space.PX_24 };
-obj2.cardTitle = _createForOfIteratorHelperLoose;
-let closure_15 = _createForOfIteratorHelperLoose.createStyles(obj2);
-let closure_16 = _createForOfIteratorHelperLoose.createStyles({ emojiImage: { alignSelf: "flex-end" } });
-let obj1 = { marginBottom: -require("_createForOfIteratorHelperLoose").space.PX_48 };
+const PX_12 = require("Themes").space.PX_12;
+createCacheKey = { container: { flex: 1 }, headerText: { textAlign: "center" }, carouselContainer: null, carousel: null, indicators: null };
+createCacheKey = { flex: 1, marginTop: require("Themes").space.PX_16 };
+createCacheKey[2] = createCacheKey;
+createCacheKey[3] = { flex: 1, minHeight: 262 };
+createCacheKey[4] = { marginBottom: -require("Themes").space.PX_48 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+const obj2 = { cardContainer: { flex: 1 }, card: null, image: null, cardTitle: null };
+let obj1 = { marginBottom: -require("Themes").space.PX_48 };
+obj2[1] = { flex: 1, alignSelf: "center", justifyContent: "space-between", borderRadius: require("Themes").radii.lg, overflow: "hidden" };
+obj2[2] = { alignSelf: "center" };
+createCacheKey = { marginTop: require("Themes").space.PX_24, marginHorizontal: require("Themes").space.PX_24 };
+obj2[3] = createCacheKey;
+let closure_15 = createCacheKey.createStyles(obj2);
+let closure_16 = createCacheKey.createStyles({ emojiImage: { alignSelf: "flex-end" } });
+const obj3 = { flex: 1, alignSelf: "center", justifyContent: "space-between", borderRadius: require("Themes").radii.lg, overflow: "hidden" };
 let result = require("get ActivityIndicator").fileFinishedImporting("modules/user_settings/premium/native/PremiumFeaturesCarouselSection.tsx");
 
 export default function PremiumFeaturesCarouselSection(style) {
-  const tmp = _createForOfIteratorHelperLoose();
-  const analyticsLocations = first(5497)().analyticsLocations;
+  let analyticsLocations;
+  let first;
+  let dependencyMap;
+  let callback;
+  const tmp = createCacheKey();
+  analyticsLocations = first(5515)().analyticsLocations;
   const tmp2 = callback(React.useState(false), 2);
   first = tmp2[0];
-  const dependencyMap = tmp2[1];
-  let obj = analyticsLocations(1450);
+  dependencyMap = tmp2[1];
+  let obj = analyticsLocations(1474);
   const tmp4 = callback(React.useState(obj.getWindowDimensions().width), 2);
   callback = tmp4[1];
   const items = [analyticsLocations, first];
@@ -192,22 +202,24 @@ export default function PremiumFeaturesCarouselSection(style) {
     style: items1,
     onLayout(nativeEvent) {
       return callback(nativeEvent.nativeEvent.layout.width);
-    }
+    },
+    children: null
   };
   items1 = [tmp.container, style.style];
   callback = React.useCallback(() => {
     if (!first) {
-      let obj = first(675);
-      obj = { location_stack: analyticsLocations };
+      let obj = first(698);
+      obj = { location_stack: null };
+      obj[0] = analyticsLocations;
       obj.track(outer1_7.PREMIUM_MARKETING_SCROLLED_TO_LAST, obj);
       dependencyMap(true);
     }
   }, items);
-  obj = { style: tmp.headerText, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", accessibilityRole: "header" };
-  const intl = analyticsLocations(1212).intl;
-  obj.children = intl.string(analyticsLocations(1212).t.RGadQR);
-  const items2 = [callback2(analyticsLocations(4161).Text, obj), callback2(PremiumFeaturesCarousel, { width: tmp4[0], onEndReached: callback })];
-  obj.children = items2;
+  obj = { style: tmp.headerText, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", accessibilityRole: "header", children: null };
+  const intl = analyticsLocations(1236).intl;
+  obj[4] = intl.string(analyticsLocations(1236).t.RGadQR);
+  const items2 = [callback2(analyticsLocations(4185).Text, obj), callback2(PremiumFeaturesCarousel, { width: tmp4[0], onEndReached: callback })];
+  obj[2] = items2;
   return callback3(closure_6, obj);
 };
 export const PREMIUM_FEATURES_PROPORTIONAL_CARD_WIDTH = 0.85;

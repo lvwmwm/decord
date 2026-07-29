@@ -1,12 +1,13 @@
-// Module ID: 15906
-// Function ID: 122656
-// Dependencies: [31, 33, 5107, 5550, 5198, 1212, 5204, 12960, 2]
+// Module ID: 15941
+// Function ID: 15942
+// Dependencies: [19, 21, 5129, 5568, 5220, 1236, 5226, 12983, 2]
 
-// Module 15906
-import importAllResult from "result";
+// Module 15941
+import importAllResult from "noop";
 import { jsx } from "jsxProd";
 
 const require = arg1;
+let c3 = importAllResult;
 const memoResult = importAllResult.memo(function VoicePanelChannelOptInNotice(channel) {
   channel = channel.channel;
   const analyticsSection = channel.analyticsSection;
@@ -16,20 +17,18 @@ const memoResult = importAllResult.memo(function VoicePanelChannelOptInNotice(ch
     obj = { section: analyticsSection };
     obj.setOptInChannel(channel.guild_id, channel.id, true, obj);
   }, items);
-  let obj = { style: channel.style };
-  obj = {};
-  const intl = channel(1212).intl;
-  obj.label = intl.string(channel(1212).t["9mysCh"]);
-  const intl2 = channel(1212).intl;
-  obj.subLabel = intl2.string(channel(1212).t.PDUCIN);
-  obj = { IconComponent: channel(12960).ChannelListMagnifyingGlassIcon };
-  obj.icon = jsx(channel(5204).TableRowIcon, { IconComponent: channel(12960).ChannelListMagnifyingGlassIcon });
-  obj.onPress = callback;
-  obj.start = true;
-  obj.end = true;
-  obj.arrow = true;
-  obj.children = jsx(channel(5198).TableRow, { IconComponent: channel(12960).ChannelListMagnifyingGlassIcon });
-  return jsx(analyticsSection(5550), { IconComponent: channel(12960).ChannelListMagnifyingGlassIcon });
+  let obj = { style: channel.style, children: null };
+  obj = { label: null, subLabel: null, icon: null, onPress: null, start: true, end: true, arrow: true };
+  const intl = channel(1236).intl;
+  obj[0] = intl.string(channel(1236).t["9mysCh"]);
+  const intl2 = channel(1236).intl;
+  obj[1] = intl2.string(channel(1236).t.PDUCIN);
+  obj = { IconComponent: null };
+  obj[0] = channel(12983).ChannelListMagnifyingGlassIcon;
+  obj[2] = jsx(channel(5226).TableRowIcon, { IconComponent: null });
+  obj[3] = callback;
+  obj[1] = jsx(channel(5220).TableRow, { IconComponent: null });
+  return jsx(analyticsSection(5568), { IconComponent: null });
 });
 const result = require("_persistOptInChannelUpdates2").fileFinishedImporting("modules/voice_panel/native/shared/VoicePanelChannelOptInNotice.tsx");
 

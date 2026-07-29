@@ -1,11 +1,11 @@
-// Module ID: 15599
-// Function ID: 119900
+// Module ID: 15633
+// Function ID: 15634
 // Name: useShouldShowExpiringTrialOfferCard
-// Dependencies: [12752, 653, 1852, 664, 624, 6222, 6214, 2]
+// Dependencies: [12774, 676, 1876, 687, 647, 6242, 6234, 2]
 // Exports: useShouldShowExpiringTrialOfferCard
 
-// Module 15599 (useShouldShowExpiringTrialOfferCard)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 15633 (useShouldShowExpiringTrialOfferCard)
+import clearDismissUntil from "clearDismissUntil";
 import { NoticeTypes } from "ME";
 import { PremiumSubscriptionSKUs } from "GuildFeatures";
 
@@ -14,12 +14,12 @@ let closure_6 = 10 * require("set").Millis.SECOND;
 const result = require("GuildFeatures").fileFinishedImporting("modules/main_tabs_v2/native/tabs/you/hooks/useShouldShowExpiringTrialOfferCard.tsx");
 
 export const useShouldShowExpiringTrialOfferCard = function useShouldShowExpiringTrialOfferCard() {
-  const items = [_isNativeReflectConstruct];
-  const stateFromStores = require(624) /* defaultAreStatesEqual */.useStateFromStores(items, () => outer1_3.getNoticeType());
-  const obj = require(624) /* defaultAreStatesEqual */;
-  const premiumTrialOffer = require(6222) /* usePremiumTrialOffer */.usePremiumTrialOffer();
+  const items = [clearDismissUntil];
+  const stateFromStores = require(647) /* defaultAreStatesEqual */.useStateFromStores(items, () => noticeType.getNoticeType());
+  const obj = require(647) /* defaultAreStatesEqual */;
+  const premiumTrialOffer = require(6242) /* usePremiumTrialOffer */.usePremiumTrialOffer();
   let num = 0;
-  const obj2 = require(6222) /* usePremiumTrialOffer */;
+  const obj2 = require(6242) /* usePremiumTrialOffer */;
   if (null != premiumTrialOffer) {
     num = 0;
     if (null != premiumTrialOffer.expires_at) {
@@ -28,16 +28,13 @@ export const useShouldShowExpiringTrialOfferCard = function useShouldShowExpirin
     }
   }
   let tmp6 = null != premiumTrialOffer;
-  const tmp3 = importDefault(6214);
+  const tmp3 = importDefault(6234);
   if (tmp6) {
     tmp6 = null != stateFromStores;
   }
   if (tmp6) {
-    let tmp8 = stateFromStores === NoticeTypes.PREMIUM_TIER_0_TRIAL_ENDING;
-    if (!tmp8) {
-      tmp8 = stateFromStores === NoticeTypes.PREMIUM_TIER_2_TRIAL_ENDING;
-    }
-    tmp6 = tmp8;
+    tmp6 = stateFromStores === NoticeTypes.PREMIUM_TIER_0_TRIAL_ENDING || stateFromStores === NoticeTypes.PREMIUM_TIER_2_TRIAL_ENDING;
+    const tmp7 = stateFromStores === NoticeTypes.PREMIUM_TIER_0_TRIAL_ENDING || stateFromStores === NoticeTypes.PREMIUM_TIER_2_TRIAL_ENDING;
   }
   if (!tmp6) {
     if (tmp6) {
@@ -52,7 +49,7 @@ export const useShouldShowExpiringTrialOfferCard = function useShouldShowExpirin
   } else {
     const subscription_trial = premiumTrialOffer.subscription_trial;
     let sku_id;
-    if (null != subscription_trial) {
+    if (subscription_trial != null) {
       sku_id = subscription_trial.sku_id;
     }
     if (null == stateFromStores) {
@@ -60,7 +57,7 @@ export const useShouldShowExpiringTrialOfferCard = function useShouldShowExpirin
     } else {
       if (NoticeTypes.PREMIUM_TIER_2_TRIAL_ENDING === stateFromStores) {
         TIER_0 = PremiumSubscriptionSKUs.TIER_2;
-      } else if (NoticeTypes.PREMIUM_TIER_0_TRIAL_ENDING !== stateFromStores) {
+      } else if (tmp9.PREMIUM_TIER_0_TRIAL_ENDING !== stateFromStores) {
         TIER_0 = PremiumSubscriptionSKUs.NONE;
       }
       TIER_0 = PremiumSubscriptionSKUs.TIER_0;

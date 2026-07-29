@@ -1,49 +1,67 @@
-// Module ID: 9548
-// Function ID: 74380
-// Name: formSubmitError
-// Dependencies: [1212, 6160, 2]
+// Module ID: 9572
+// Function ID: 9573
+// Name: FormSubmitErrorType
+// Dependencies: [1236, 6178, 2]
 // Exports: makeApiNameValidationError, makeAutomodViolationError, makeEmptyMessageError, makeEmptyTagsError, makeEmptyTitleError, renderError
 
-// Module 9548 (formSubmitError)
-function formSubmitError(type) {
-  const obj = { type };
-  let tmp = null;
-  if (null != arg1) {
-    tmp = arg1;
-  }
-  obj.message = tmp;
-  return obj;
-}
-function makeEmptyContentError(arg0) {
-  return formSubmitError(obj.EmptyContent, arg0);
-}
+// Module 9572 (FormSubmitErrorType)
 let obj = { EmptyContent: 0, [0]: "EmptyContent", AutomodViolation: 1, [1]: "AutomodViolation", EmptyTags: 2, [2]: "EmptyTags", ApiValidation: 3, [3]: "ApiValidation" };
 const result = require("set").fileFinishedImporting("modules/forums/FormError.tsx");
 
 export const FormSubmitErrorType = obj;
 export const makeEmptyTitleError = function makeEmptyTitleError() {
-  const intl = require(1212) /* getSystemLocale */.intl;
-  return makeEmptyContentError(intl.string(require(1212) /* getSystemLocale */.t["71wuR0"]));
+  const intl = require(1236) /* getSystemLocale */.intl;
+  let stringResult = intl.string(require(1236) /* getSystemLocale */.t["71wuR0"]);
+  obj = { type: obj.EmptyContent, message: null };
+  if (stringResult == null) {
+    stringResult = null;
+  }
+  obj[1] = stringResult;
+  return obj;
 };
 export const makeEmptyMessageError = function makeEmptyMessageError() {
-  const intl = require(1212) /* getSystemLocale */.intl;
-  return makeEmptyContentError(intl.string(require(1212) /* getSystemLocale */.t["w/BT3G"]));
+  const intl = require(1236) /* getSystemLocale */.intl;
+  let stringResult = intl.string(require(1236) /* getSystemLocale */.t["w/BT3G"]);
+  obj = { type: obj.EmptyContent, message: null };
+  if (stringResult == null) {
+    stringResult = null;
+  }
+  obj[1] = stringResult;
+  return obj;
 };
 export const makeAutomodViolationError = function makeAutomodViolationError(errorResponseBody, id) {
-  const obj = require(6160) /* _callSuper */;
+  let obj = require(6178) /* getAutomodErrorMessageFromErrorResponse */;
   id = undefined;
-  if (null != id) {
+  if (id != null) {
     id = id.id;
   }
-  return formSubmitError(obj.AutomodViolation, obj.getAutomodErrorMessageFromErrorResponse(errorResponseBody, id));
+  let automodErrorMessageFromErrorResponse = obj.getAutomodErrorMessageFromErrorResponse(errorResponseBody, id);
+  obj = { type: obj.AutomodViolation, message: null };
+  if (automodErrorMessageFromErrorResponse == null) {
+    automodErrorMessageFromErrorResponse = null;
+  }
+  obj[1] = automodErrorMessageFromErrorResponse;
+  return obj;
 };
 export const makeApiNameValidationError = function makeApiNameValidationError() {
-  const intl = require(1212) /* getSystemLocale */.intl;
-  return formSubmitError(obj.ApiValidation, intl.string(require(1212) /* getSystemLocale */.t["71wuR0"]));
+  const intl = require(1236) /* getSystemLocale */.intl;
+  let stringResult = intl.string(require(1236) /* getSystemLocale */.t["71wuR0"]);
+  obj = { type: obj.ApiValidation, message: null };
+  if (stringResult == null) {
+    stringResult = null;
+  }
+  obj[1] = stringResult;
+  return obj;
 };
 export const makeEmptyTagsError = function makeEmptyTagsError() {
-  const intl = require(1212) /* getSystemLocale */.intl;
-  return formSubmitError(obj.EmptyTags, intl.string(require(1212) /* getSystemLocale */.t.xPfNQi));
+  const intl = require(1236) /* getSystemLocale */.intl;
+  let stringResult = intl.string(require(1236) /* getSystemLocale */.t.xPfNQi);
+  obj = { type: obj.EmptyTags, message: null };
+  if (stringResult == null) {
+    stringResult = null;
+  }
+  obj[1] = stringResult;
+  return obj;
 };
 export const renderError = function renderError(type, content) {
   let tmp = null;
@@ -54,17 +72,17 @@ export const renderError = function renderError(type, content) {
         const str = content.content;
       }
     }
-    if (type.type === obj.EmptyTags) {
+    if (type.type === tmp3.EmptyTags) {
       if (null != content.tags) {
         tmp = null;
       }
     }
-    const message = type.message;
-    let tmp4 = null;
-    if (null != message) {
-      tmp4 = message;
+    let message = type.message;
+    if (message == null) {
+      message = null;
     }
-    tmp = tmp4;
+    tmp = message;
+    tmp3 = obj;
   }
   return tmp;
 };

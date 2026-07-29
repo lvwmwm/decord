@@ -1,11 +1,10 @@
 // Module ID: 4878
-// Function ID: 42321
+// Function ID: 4879
 // Name: registerAsset
-// Dependencies: [1217]
+// Dependencies: [1241]
 
 // Module 4878 (registerAsset)
 import registerAsset from "registerAsset";
 
-const obj = { __packager_asset: true, httpServerLocation: "/assets/images/platforms", width: 255, height: 255, scales: [1], hash: "25ba997e1d3e8344c193637ad6eeccd3", name: "img_account_sync_league_of_legends_white", type: "png" };
 
-export default registerAsset.registerAsset(obj);
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/platforms", width: 255, height: 255, scales: [1], hash: "2eaff20be2a75be7ccdd4c6f19f0eb36", name: "img_account_sync_youtube_white", type: "png" });

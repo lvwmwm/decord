@@ -1,173 +1,56 @@
-// Module ID: 8000
-// Function ID: 63534
-// Name: _createForOfIteratorHelperLoose
-// Dependencies: [1352, 1838, 4601, 653, 8001, 5687, 5686, 1882, 483, 8004, 44, 5684, 5685, 2]
-// Exports: hasAccess
+// Module ID: 8025
+// Function ID: 8026
+// Name: computeAllowedForUser
+// Dependencies: [1376, 1862, 4623, 676, 8026, 5705, 5704, 1906, 506, 8028, 38, 5702, 5703, 2]
+// Exports: computeAllowedForChannel, hasAccess
 
-// Module 8000 (_createForOfIteratorHelperLoose)
-import { ChannelRecordBase } from "_callSuper";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+// Module 8025 (computeAllowedForUser)
+import { ChannelRecordBase } from "createChannelRecord";
+import createGuildRecordFromRust from "createGuildRecordFromRust";
 import { BuiltInSectionId } from "TRUE_OPTION_NAME";
 import { Permissions } from "ME";
 
-function _createForOfIteratorHelperLoose(iterable) {
-  let closure_0 = iterable;
-  iterable = "undefined" !== typeof Symbol;
-  if (iterable) {
-    const _Symbol = Symbol;
-    iterable = iterable[Symbol.iterator];
-  }
-  if (!iterable) {
-    iterable = iterable[Symbol.iterator];
-  }
-  if (iterable) {
-    const iter = iterable.call(iterable);
-    const next = iter.next;
-    return next.bind(iter);
-  } else {
-    const _Array = Array;
-    let tmp = iterable;
-    if (!Array.isArray(iterable)) {
-      let tmp2;
-      if (iterable) {
-        if ("string" === typeof iterable) {
-          tmp2 = _arrayLikeToArray(iterable, undefined);
-        } else {
-          const toString = {}.toString;
-          const substr = toString.call(iterable).slice(8, -1);
-          let name = substr;
-          if (tmp3) {
-            name = iterable.constructor.name;
-          }
-          if ("Map" !== name) {
-            if ("Set" !== name) {
-              if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(iterable, undefined);
-              } else {
-                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
-              }
-            }
-            tmp2 = arr;
-          }
-          const _Array2 = Array;
-          arr = Array.from(iterable);
-          const callResult = toString.call(iterable);
-          tmp3 = "Object" === substr && iterable.constructor;
-        }
-      }
-      tmp = tmp2;
-      if (!tmp2) {
-        const _TypeError = TypeError;
-        const typeError = new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
-        throw typeError;
-      }
-    }
-    if (tmp) {
-      closure_0 = tmp;
-    }
-    let c1 = 0;
-    return () => {
-      if (closure_1 >= length.length) {
-        let obj = { done: true };
-      } else {
-        obj = { done: false };
-        closure_1 = tmp3 + 1;
-        obj.value = length[+closure_1];
-      }
-      return obj;
-    };
-  }
-}
-function _arrayLikeToArray(arg0, arg1) {
-  let length;
-  if (tmp) {
-    length = arg0.length;
-  }
-  const ArrayResult = Array(length);
-  for (let num = 0; num < length; num = num + 1) {
-    ArrayResult[num] = arg0[num];
-  }
-  return ArrayResult;
-}
-function isExplicitAllow(arg0) {
-  return true === arg0;
-}
-function isExplicitDeny(applicationAllowedForChannel) {
-  return false === applicationAllowedForChannel;
-}
-function computeAllowedForChannel(permissions, context, guild_id) {
-  if (null == permissions) {
-    return null;
-  } else {
-    let id2 = context.id;
-    if (context.isThread()) {
-      let id = context.parent_id;
-      if (null == id) {
-        id = context.id;
-      }
-      id2 = id;
-    }
-    const obj = require(5685) /* toPermissionKey */;
-    const tmp3 = permissions[obj.toPermissionKey(obj, id2, require(undefined, 5686) /* ApplicationCommandSectionType */.ApplicationCommandPermissionType.CHANNEL)];
-    if (null != tmp3) {
-      return tmp3.permission;
-    } else {
-      const obj2 = require(5685) /* toPermissionKey */;
-      const obj3 = require(5684) /* _createForOfIteratorHelperLoose */;
-      const tmp8 = permissions[obj2.toPermissionKey(obj2, require(5684) /* _createForOfIteratorHelperLoose */.allChannelsSentinel(guild_id), require(undefined, 5686) /* ApplicationCommandSectionType */.ApplicationCommandPermissionType.CHANNEL)];
-      let permission = null;
-      if (null != tmp8) {
-        permission = tmp8.permission;
-      }
-      return permission;
-    }
-  }
-}
 function computeAllowedForUser(permissions, guild_id, userId, roleIds, isImpersonating) {
   if (null == permissions) {
     return null;
   } else {
     if (!isImpersonating) {
-      const obj = require(5685) /* toPermissionKey */;
-      const tmp4 = permissions[obj.toPermissionKey(obj, userId, require(undefined, 5686) /* ApplicationCommandSectionType */.ApplicationCommandPermissionType.USER)];
+      const obj = require(5703) /* commandPermissions */;
+      const tmp4 = permissions[obj.toPermissionKey(obj, userId, require(undefined, 5704) /* ApplicationCommandSectionType */.ApplicationCommandPermissionType.USER)];
       if (null != tmp4) {
         return tmp4.permission;
       }
     }
-    const tmp7 = _createForOfIteratorHelperLoose(roleIds);
-    const iter = tmp7();
-    let iter2 = iter;
-    let flag3 = false;
-    let flag4 = false;
-    if (!iter.done) {
-      while (true) {
-        let tmp8 = require;
-        let tmp9 = dependencyMap;
-        let obj2 = require(5685) /* toPermissionKey */;
-        let tmp10 = permissions[obj2.toPermissionKey(obj2, iter2.value, require(undefined, 5686) /* ApplicationCommandSectionType */.ApplicationCommandPermissionType.ROLE)];
-        if (null != tmp10) {
-          flag3 = true;
-          if (tmp10.permission) {
-            break;
-          }
+    let flag2 = false;
+    const obj2 = roleIds[Symbol.iterator]();
+    while (obj2 !== undefined) {
+      let tmp10 = require;
+      let tmp11 = dependencyMap;
+      let obj3 = require(5703) /* commandPermissions */;
+      let tmp12 = permissions[obj3.toPermissionKey(obj3, tmp8, require(undefined, 5704) /* ApplicationCommandSectionType */.ApplicationCommandPermissionType.ROLE)];
+      if (null != tmp12) {
+        let tmp14 = tmp12;
+        if (tmp13.permission) {
+          let tmp15 = obj2;
+          obj2.return();
+          return true;
+        } else {
+          flag2 = true;
         }
-        let iter3 = tmp7();
-        iter2 = iter3;
-        flag4 = flag3;
       }
-      return true;
+      continue;
     }
-    if (flag4) {
+    if (flag2) {
       return false;
     } else {
-      let tmp11 = null;
+      let tmp17 = null;
       if (null != guild_id) {
-        const obj3 = require(5685) /* toPermissionKey */;
-        tmp11 = permissions[obj3.toPermissionKey(obj3, guild_id, require(undefined, 5686) /* ApplicationCommandSectionType */.ApplicationCommandPermissionType.ROLE)];
+        const obj4 = require(5703) /* commandPermissions */;
+        tmp17 = permissions[obj4.toPermissionKey(obj4, guild_id, require(undefined, 5704) /* ApplicationCommandSectionType */.ApplicationCommandPermissionType.ROLE)];
       }
       let permission = null;
-      if (null != tmp11) {
-        permission = tmp11.permission;
+      if (null != tmp17) {
+        permission = tmp17.permission;
       }
       return permission;
     }
@@ -202,7 +85,7 @@ export const hasAccess = function hasAccess(type, arg1, applicationAllowedForCha
       }
     }
     if (null != context) {
-      obj = require(5687) /* computeAllowNsfw */;
+      obj = require(5705) /* computePermissions */;
       const commandContextType = obj.computeCommandContextType(context, commandBotId);
     }
     if (null != type.contexts) {
@@ -212,19 +95,21 @@ export const hasAccess = function hasAccess(type, arg1, applicationAllowedForCha
           return obj.CONTEXT_NOT_ALLOWED;
         }
       }
-    } else if (type.inputType === require(5686) /* ApplicationCommandSectionType */.ApplicationCommandInputType.BOT) {
+    } else if (type.inputType === require(5704) /* ApplicationCommandSectionType */.ApplicationCommandInputType.BOT) {
       if (false === type.dmPermission) {
-        if (commandContextType === require(1882) /* PermissionOverwriteType */.InteractionContextType.BOT_DM) {
+        if (commandContextType === tmp51(1906).InteractionContextType.BOT_DM) {
           return obj.CONTEXT_NOT_ALLOWED;
         }
       }
-      if (commandContextType === require(1882) /* PermissionOverwriteType */.InteractionContextType.PRIVATE_CHANNEL) {
+      if (commandContextType === tmp51(1906).InteractionContextType.PRIVATE_CHANNEL) {
         return obj.CONTEXT_NOT_ALLOWED;
       }
     }
     if (null != type.predicate) {
       if (context instanceof ChannelRecordBase) {
-        obj = { channel: context, guild: guild.getGuild(context.guild_id) };
+        obj = { channel: null, guild: null };
+        obj[0] = context;
+        obj[1] = guild.getGuild(context.guild_id);
         if (!type.predicate(obj)) {
           return obj.PREDICATE_FAILED;
         }
@@ -235,21 +120,23 @@ export const hasAccess = function hasAccess(type, arg1, applicationAllowedForCha
     } else {
       let contextGuildId;
       if (null != context) {
-        contextGuildId = require(5687) /* computeAllowNsfw */.getContextGuildId(context);
-        const obj3 = require(5687) /* computeAllowNsfw */;
+        contextGuildId = require(5705) /* computePermissions */.getContextGuildId(context);
+        const obj3 = require(5705) /* computePermissions */;
       }
       if (null == contextGuildId) {
         return obj.ALLOWED;
       } else {
-        if (obj6.has(computedPermissions, Permissions.ADMINISTRATOR)) {
+        if (obj9.has(computedPermissions, Permissions.ADMINISTRATOR)) {
           return obj.ALLOWED;
         } else {
           if (isUserInstalled) {
             const integration_types = type.integration_types;
-            if (null != integration_types) {
-              if (integration_types.includes(require(8004) /* ApplicationIntegrationType */.ApplicationIntegrationType.USER_INSTALL)) {
-                return obj.ALLOWED;
-              }
+            let hasItem;
+            if (integration_types != null) {
+              hasItem = integration_types.includes(require(8028) /* ApplicationIntegrationType */.ApplicationIntegrationType.USER_INSTALL);
+            }
+            if (hasItem) {
+              return obj.ALLOWED;
             }
           }
           if (!hasBaseAccessPermissions) {
@@ -261,31 +148,57 @@ export const hasAccess = function hasAccess(type, arg1, applicationAllowedForCha
             }
           }
           if (context instanceof ChannelRecordBase) {
-            importDefault(44)(undefined !== applicationAllowedForChannel, "missing applicationAllowedForChannel");
-            const tmp33 = computeAllowedForChannel(type.permissions, context, contextGuildId);
-            if (isExplicitDeny(tmp33)) {
+            importDefault(38)(undefined !== applicationAllowedForChannel, "missing applicationAllowedForChannel");
+            const permissions = type.permissions;
+            let permission = null;
+            if (null != permissions) {
+              let id = context.id;
+              if (context.isThread()) {
+                let id2 = context.parent_id;
+                if (id2 == null) {
+                  id2 = context.id;
+                }
+                id = id2;
+              }
+              const obj4 = require(5703) /* commandPermissions */;
+              const tmp28 = permissions[obj4.toPermissionKey(obj4, id, require(undefined, 5704) /* ApplicationCommandSectionType */.ApplicationCommandPermissionType.CHANNEL)];
+              if (null != tmp28) {
+                permission = tmp28.permission;
+              } else {
+                let tmp27Result = tmp27(5703);
+                tmp27Result = tmp27(5702);
+                const tmp30 = permissions[tmp27Result.toPermissionKey(tmp27Result, tmp27Result.allChannelsSentinel(contextGuildId), tmp27(undefined, 5704).ApplicationCommandPermissionType.CHANNEL)];
+                let permission1 = null;
+                if (null != tmp30) {
+                  permission1 = tmp30.permission;
+                }
+                permission = permission1;
+                const allChannelsSentinelResult = tmp27Result.allChannelsSentinel(contextGuildId);
+              }
+            }
+            if (false === permission) {
               return obj.CHANNEL_DENIED;
-            } else if (!isExplicitAllow(tmp33)) {
-              if (isExplicitDeny(applicationAllowedForChannel)) {
+            } else if (true !== permission) {
+              if (false === applicationAllowedForChannel) {
                 return obj.CHANNEL_DENIED;
               }
             }
           }
-          const tmp43 = computeAllowedForUser(type.permissions, contextGuildId, userId, roleIds, isImpersonating);
-          if (isExplicitAllow(tmp43)) {
+          const tmp38 = computeAllowedForUser(type.permissions, contextGuildId, userId, roleIds, isImpersonating);
+          if (true === tmp38) {
             let USER_DENIED = obj.ALLOWED;
           } else {
-            if (!isExplicitDeny(tmp43)) {
-              if (!isExplicitDeny(applicationAllowedForUser)) {
+            if (false !== tmp38) {
+              if (false !== applicationAllowedForUser) {
                 if (null != type.defaultMemberPermissions) {
-                  if (!obj4.equals(type.defaultMemberPermissions, require(5684) /* _createForOfIteratorHelperLoose */.DISABLED_BY_DEFAULT_PERMISSION_FLAG)) {
-                    if (obj5.has(computedPermissions, type.defaultMemberPermissions)) {
+                  let tmp53Result = tmp53(506);
+                  if (!tmp53Result.equals(type.defaultMemberPermissions, require(5702) /* buildCommand */.DISABLED_BY_DEFAULT_PERMISSION_FLAG)) {
+                    tmp53Result = tmp53(506);
+                    if (tmp53Result.has(computedPermissions, type.defaultMemberPermissions)) {
                       let USER_DENIED2 = obj.ALLOWED;
                     }
-                    obj5 = importAll(483);
                   }
                   USER_DENIED2 = obj.USER_DENIED;
-                  obj4 = importAll(483);
                 } else {
                   USER_DENIED = obj.ALLOWED;
                 }
@@ -295,12 +208,39 @@ export const hasAccess = function hasAccess(type, arg1, applicationAllowedForCha
           }
           return USER_DENIED;
         }
-        obj6 = importAll(483);
+        obj9 = importAll(506);
       }
     }
   } else {
     return obj.WRONG_COMMAND_TYPE;
   }
 };
-export { computeAllowedForChannel };
+export const computeAllowedForChannel = function computeAllowedForChannel(permissions, context, guild_id) {
+  if (null == permissions) {
+    return null;
+  } else {
+    let id2 = context.id;
+    if (context.isThread()) {
+      let id = context.parent_id;
+      if (id == null) {
+        id = context.id;
+      }
+      id2 = id;
+    }
+    const obj = require(5703) /* commandPermissions */;
+    const tmp3 = permissions[obj.toPermissionKey(obj, id2, require(undefined, 5704) /* ApplicationCommandSectionType */.ApplicationCommandPermissionType.CHANNEL)];
+    if (null != tmp3) {
+      return tmp3.permission;
+    } else {
+      let tmpResult = tmp(5703);
+      tmpResult = tmp(5702);
+      const tmp6 = permissions[tmpResult.toPermissionKey(tmpResult, tmpResult.allChannelsSentinel(guild_id), tmp(undefined, 5704).ApplicationCommandPermissionType.CHANNEL)];
+      let permission = null;
+      if (null != tmp6) {
+        permission = tmp6.permission;
+      }
+      return permission;
+    }
+  }
+};
 export { computeAllowedForUser };

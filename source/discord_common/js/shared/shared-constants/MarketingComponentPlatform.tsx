@@ -1,9 +1,9 @@
-// Module ID: 6544
-// Function ID: 58257
+// Module ID: 6565
+// Function ID: 6566
 // Name: MarketingComponentPlatform
 // Dependencies: [2]
 
-// Module 6544 (MarketingComponentPlatform)
+// Module 6565 (MarketingComponentPlatform)
 const result = require("set").fileFinishedImporting("../discord_common/js/shared/shared-constants/MarketingComponentPlatform.tsx");
 
 export const MarketingComponentPlatform = { DESKTOP: 0, [0]: "DESKTOP", MOBILE: 1, [1]: "MOBILE" };

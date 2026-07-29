@@ -1,55 +1,53 @@
-// Module ID: 13840
-// Function ID: 105972
-// Name: getTitle
-// Dependencies: [7733, 7685, 13834, 13830, 5844, 5863, 1212, 13831, 1282, 10099, 2]
+// Module ID: 13861
+// Function ID: 13862
+// Name: pressable
+// Dependencies: [7756, 7708, 13855, 13851, 5862, 5881, 1236, 13852, 1306, 10120, 2]
 
-// Module 13840 (getTitle)
+// Module 13861 (pressable)
 import { MobileSetting } from "MobileSetting";
 import createToggle from "createToggle";
 
-function getTitle() {
-  const intl = require(1212) /* getSystemLocale */.intl;
-  return intl.string(require(1212) /* getSystemLocale */.t["FP+a42"]);
-}
 const pressable = createToggle.createPressable({
-  useTitle: getTitle,
+  useTitle: function getTitle() {
+    const intl = require(1236) /* getSystemLocale */.intl;
+    return intl.string(require(1236) /* getSystemLocale */.t["FP+a42"]);
+  },
   parent() {
     return MobileSetting.SENSITIVE_CONTENT_FILTERS;
   },
   useTrailing: function useObscuredContentGuildsSettingValue() {
-    const obj = require(13830) /* useExplicitContentSettingOrDefault */;
-    return require(5844) /* timeoutAttachmentsAndEmbedsForMessage */.redactionSettingToRenderedString(obj.useExplicitContentSettingOrDefault().explicitContentGuilds)();
+    const obj = require(13851) /* useExplicitContentSettingOrDefault */;
+    return require(5862) /* redactionSettingToRenderedString */.redactionSettingToRenderedString(obj.useExplicitContentSettingOrDefault().explicitContentGuilds)();
   },
   onPress: function onObscuredContentGuildsOnPress() {
-    let obj = require(5863) /* resolveExplicitContentSettingWithDefaults */;
-    const intl = require(1212) /* getSystemLocale */.intl;
-    const stringResult = intl.string(require(1212) /* getSystemLocale */.t.GYpoAq);
-    obj = {
-      title: stringResult,
-      subtitle: getTitle(),
-      handlePress(explicitContentGuilds) {
-        let obj = outer1_0(outer1_1[5]);
-        obj = { explicitContentGuilds };
-        return obj.updateExplicitContentSetting(obj);
-      }
+    let obj = require(5881) /* resolveExplicitContentSettingWithDefaults */;
+    const intl = require(1236) /* getSystemLocale */.intl;
+    const stringResult = intl.string(require(1236) /* getSystemLocale */.t.GYpoAq);
+    obj = { title: stringResult, subtitle: null, handlePress: null, excluded: null, currentValue: null };
+    const intl2 = require(1236) /* getSystemLocale */.intl;
+    obj[1] = intl2.string(require(1236) /* getSystemLocale */.t["FP+a42"]);
+    obj[2] = function handlePress(explicitContentGuilds) {
+      let obj = callback(table[5]);
+      obj = { explicitContentGuilds };
+      return obj.updateExplicitContentSetting(obj);
     };
-    const items = [require(1282) /* _callSuper */.ExplicitContentRedaction.BLOCK];
-    obj.excluded = items;
-    obj.currentValue = obj.getExplicitContentSettingOrDefault().explicitContentGuilds;
-    const result = require(13831) /* handleSensitiveMediaFilterPress */.handleSensitiveMediaFilterPress(obj);
+    const items = [require(1306) /* create */.ExplicitContentRedaction.BLOCK];
+    obj[3] = items;
+    obj[4] = obj.getExplicitContentSettingOrDefault().explicitContentGuilds;
+    const result = require(13852) /* handleSensitiveMediaFilterPress */.handleSensitiveMediaFilterPress(obj);
   },
   useSearchTerms: function getSearchTerms() {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    const items = [intl.string(require(1212) /* getSystemLocale */.t["N/oRI+"]), , ];
-    const intl2 = require(1212) /* getSystemLocale */.intl;
-    items[1] = intl2.string(require(1212) /* getSystemLocale */.t.QVdYsK);
-    const intl3 = require(1212) /* getSystemLocale */.intl;
-    items[2] = intl3.string(require(1212) /* getSystemLocale */.t["5mnTa7"]);
+    const intl = require(1236) /* getSystemLocale */.intl;
+    const items = [intl.string(require(1236) /* getSystemLocale */.t["N/oRI+"]), , ];
+    const intl2 = require(1236) /* getSystemLocale */.intl;
+    items[1] = intl2.string(require(1236) /* getSystemLocale */.t.QVdYsK);
+    const intl3 = require(1236) /* getSystemLocale */.intl;
+    items[2] = intl3.string(require(1236) /* getSystemLocale */.t["5mnTa7"]);
     return items;
   },
   useIsDisabled() {
-    let userIsTeen = require(7685) /* useUserIsTeen */.useUserIsTeen();
-    const obj = require(7685) /* useUserIsTeen */;
+    let userIsTeen = require(7708) /* useUserIsTeen */.useUserIsTeen();
+    const obj = require(7708) /* useUserIsTeen */;
     if (!userIsTeen) {
       userIsTeen = obj2.useIsParentallyControlled();
     }

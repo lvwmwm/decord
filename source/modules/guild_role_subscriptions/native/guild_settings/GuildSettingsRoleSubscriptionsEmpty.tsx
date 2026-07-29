@@ -1,57 +1,60 @@
-// Module ID: 16483
-// Function ID: 128458
+// Module ID: 16518
+// Function ID: 16519
 // Name: GuildSettingsRoleSubscriptionsEmptyContent
-// Dependencies: [31, 1838, 653, 4191, 33, 1456, 16484, 16485, 16486, 566, 2]
+// Dependencies: [19, 1862, 676, 4215, 21, 1480, 16519, 16520, 16521, 589, 2]
 // Exports: default
 
-// Module 16483 (GuildSettingsRoleSubscriptionsEmptyContent)
-import "result";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+// Module 16518 (GuildSettingsRoleSubscriptionsEmptyContent)
+import "noop";
+import createGuildRecordFromRust from "createGuildRecordFromRust";
 import ME from "ME";
 import { ApplicationTypes } from "ApplicationTypes";
 import { jsx } from "jsxProd";
 
-let closure_4;
-let closure_5;
+let c4;
+let c5;
 const require = arg1;
 function GuildSettingsRoleSubscriptionsEmptyContent(guild) {
   guild = guild.guild;
-  let obj = require(1456) /* useNavigation */;
+  let obj = require(1480) /* useNavigation */;
   const str = obj.useNavigation();
-  if (tmp.loading) {
-    let tmp8 = jsx(importDefault(16485), {});
+  if (tmp3.loading) {
+    let tmp7 = jsx(tmp2(16520), {});
   } else {
     const features = guild.features;
     if (!features.has(constants.CREATOR_MONETIZABLE)) {
       const features2 = guild.features;
-      if (!features2.has(constants.CREATOR_MONETIZABLE_PROVISIONAL)) {
-        obj = { guild };
-        tmp8 = jsx(importDefault(16486), { guild });
+      if (!features2.has(tmp5.CREATOR_MONETIZABLE_PROVISIONAL)) {
+        obj = { guild: null };
+        obj[0] = guild;
+        tmp7 = jsx(tmp2(16521), { guild: null });
       }
     }
-    if (null == tmp2) {
+    if (null == tmp4) {
       const replaced = str.replace(constants2.ROLE_SUBSCRIPTIONS_ENABLE_MONETIZATION);
-      tmp8 = null;
+      tmp7 = null;
     } else {
       const replaced1 = str.replace(constants2.ROLE_SUBSCRIPTIONS_TIERS);
-      tmp8 = null;
+      tmp7 = null;
     }
+    tmp5 = constants;
   }
-  return tmp8;
+  return tmp7;
 }
-({ GuildFeatures: closure_4, GuildSettingsSections: closure_5 } = ME);
+({ GuildFeatures: c4, GuildSettingsSections: c5 } = ME);
 const result = require("ME").fileFinishedImporting("modules/guild_role_subscriptions/native/guild_settings/GuildSettingsRoleSubscriptionsEmpty.tsx");
 
 export default function GuildSettingsRoleSubscriptionsEmpty(guildId) {
   guildId = guildId.guildId;
-  let obj = guildId(566);
-  const items = [_createForOfIteratorHelperLoose];
+  let obj = guildId(589);
+  const items = [createGuildRecordFromRust];
   const stateFromStores = obj.useStateFromStores(items, () => outer1_3.getGuild(guildId));
   if (null == stateFromStores) {
-    let tmp4 = jsx(importDefault(16485), {});
+    let tmp5 = jsx(importDefault(16520), {});
   } else {
-    obj = { guild: stateFromStores };
-    tmp4 = <GuildSettingsRoleSubscriptionsEmptyContent guild={stateFromStores} />;
+    obj = { guild: null };
+    obj[0] = stateFromStores;
+    tmp5 = <GuildSettingsRoleSubscriptionsEmptyContent guild={null} />;
   }
-  return tmp4;
+  return tmp5;
 };

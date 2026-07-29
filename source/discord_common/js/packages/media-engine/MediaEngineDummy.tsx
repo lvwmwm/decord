@@ -1,38 +1,333 @@
-// Module ID: 4333
-// Function ID: 37679
-// Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 4226, 4262, 4332, 2]
+// Module ID: 4357
+// Function ID: 4358
+// Name: Video
+// Dependencies: [4250, 4289, 4286, 2]
 
-// Module 4333 (_isNativeReflectConstruct)
-import getMediaEngineImpl from "getMediaEngineImpl";
-import TypedEventEmitter from "TypedEventEmitter";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
+// Module 4357 (Video)
 import DesktopSources from "DesktopSources";
-import tmp3 from "TypedEventEmitter";
+import "on";
 
-let closure_10;
-let closure_7;
-let closure_8;
-let closure_9;
-const require = arg1;
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
-  }
-  const result = _isNativeReflectConstruct();
-}
+let c3;
+let c4;
+let c5;
+let obj1;
 function Video() {
   return null;
 }
 function Camera() {
   return null;
 }
-({ AudioSubsystems: closure_7, DISABLED_DEVICE_ID: closure_8, Features: closure_9, MediaEngineContextTypes: closure_10 } = DesktopSources);
-let result = require("_possibleConstructorReturn").fileFinishedImporting("../discord_common/js/packages/media-engine/MediaEngineDummy.tsx");
+({ AudioSubsystems: obj1, DISABLED_DEVICE_ID: c3, Features: c4, MediaEngineContextTypes: c5 } = DesktopSources);
+class MediaEngineDummy extends tmp3 {
+  constructor() {
+    applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
+    applyArgumentsResult.Video = Video;
+    applyArgumentsResult.Camera = Camera;
+    return applyArgumentsResult;
+  }
+}
+const prototype = MediaEngineDummy.prototype;
+prototype["destroy"] = function destroy() {
+  this.emit(require(4286) /* BaseConnectionEvent */.MediaEngineEvent.Destroy);
+  this.removeAllListeners();
+};
+prototype["interact"] = function interact() {
 
-export default tmp3;
+};
+prototype["supported"] = function supported() {
+  return false;
+};
+prototype["supports"] = function supports(arg0) {
+  return false;
+};
+prototype["connect"] = function connect() {
+  const error = new Error("NOT_IMPLEMENTED");
+  throw error;
+};
+prototype["eachConnection"] = function eachConnection() {
+
+};
+prototype["enable"] = function enable() {
+  return Promise.resolve();
+};
+prototype["setAudioMixerOptions"] = function setAudioMixerOptions() {
+
+};
+prototype["setInputVolume"] = function setInputVolume() {
+
+};
+prototype["setOutputVolume"] = function setOutputVolume() {
+
+};
+prototype["getAudioInputDevices"] = function getAudioInputDevices() {
+  return Promise.resolve([]);
+};
+prototype["setAudioInputDevice"] = function setAudioInputDevice() {
+
+};
+prototype["getAudioOutputDevices"] = function getAudioOutputDevices() {
+  return Promise.resolve([]);
+};
+prototype["setAudioOutputDevice"] = function setAudioOutputDevice() {
+
+};
+prototype["getVideoInputDevices"] = function getVideoInputDevices() {
+  return Promise.resolve([]);
+};
+prototype["setVideoInputDevice"] = function setVideoInputDevice() {
+
+};
+prototype["getVideoInputDeviceId"] = function getVideoInputDeviceId() {
+  return closure_3;
+};
+prototype["setAsyncVideoInputDeviceInit"] = function setAsyncVideoInputDeviceInit() {
+
+};
+prototype["getCodecCapabilities"] = function getCodecCapabilities(arg0) {
+  arg0("");
+};
+prototype["getCodecSurvey"] = function getCodecSurvey() {
+  const error = new Error("getCodecSurvey is not implemented for MediaEngineDummy");
+  return Promise.reject(error);
+};
+prototype["getAudioSubsystem"] = function getAudioSubsystem() {
+  return constants.STANDARD;
+};
+prototype["getAudioLayer"] = function getAudioLayer() {
+  return "";
+};
+prototype["setGoLiveSource"] = function setGoLiveSource() {
+
+};
+prototype["setClipsSource"] = function setClipsSource() {
+
+};
+prototype["setClipsQualitySettings"] = function setClipsQualitySettings() {
+  return false;
+};
+prototype["setDesktopSource"] = function setDesktopSource(arg0, useVideoHook, arg2) {
+  if (useVideoHook === undefined) {
+    const DEFAULT = constants2.DEFAULT;
+  }
+};
+prototype["setSoundshareSource"] = function setSoundshareSource() {
+
+};
+prototype["getDesktopSource"] = function getDesktopSource() {
+  const error = new Error("NO_STREAM");
+  return Promise.reject(error);
+};
+prototype["getScreenPreviews"] = function getScreenPreviews() {
+  const error = new Error("UNSUPPORTED");
+  return Promise.reject(error);
+};
+prototype["getWindowPreviews"] = function getWindowPreviews() {
+  const error = new Error("UNSUPPORTED");
+  return Promise.reject(error);
+};
+prototype["getSingleWindowPreview"] = function getSingleWindowPreview() {
+  const error = new Error("UNSUPPORTED");
+  return Promise.reject(error);
+};
+prototype["setClipsModulePath"] = function setClipsModulePath() {
+
+};
+prototype["setClipsDataPath"] = function setClipsDataPath() {
+
+};
+prototype["setClipsV3Enabled"] = function setClipsV3Enabled() {
+
+};
+prototype["setClipsV3MLEnabled"] = function setClipsV3MLEnabled() {
+
+};
+prototype["setClipsRecordingEnabled"] = function setClipsRecordingEnabled() {
+
+};
+prototype["hasSetClipsRecordingEnabled"] = function hasSetClipsRecordingEnabled() {
+  return false;
+};
+prototype["setClipsUIActive"] = function setClipsUIActive() {
+
+};
+prototype["setClipBufferLength"] = function setClipBufferLength() {
+
+};
+prototype["getSystemSteadyClockNowMs"] = function getSystemSteadyClockNowMs() {
+  return null;
+};
+prototype["saveClipEx"] = function saveClipEx() {
+  const error = new Error("UNSUPPORTED");
+  return Promise.reject(error);
+};
+prototype["updateClipMetadata"] = function updateClipMetadata() {
+  const error = new Error("UNSUPPORTED");
+  return Promise.reject(error);
+};
+prototype["exportClip"] = function exportClip() {
+  const error = new Error("UNSUPPORTED");
+  return Promise.reject(error);
+};
+prototype["hasExportClipToFile"] = function hasExportClipToFile() {
+  return false;
+};
+prototype["exportClipToFile"] = function exportClipToFile() {
+  const error = new Error("UNSUPPORTED");
+  return Promise.reject(error);
+};
+prototype["setClipsPerfMonitoring"] = function setClipsPerfMonitoring() {
+  const error = new Error("UNSUPPORTED");
+  return Promise.reject(error);
+};
+prototype["saveScreenshot"] = function saveScreenshot() {
+  const error = new Error("UNSUPPORTED");
+  return Promise.reject(error);
+};
+prototype["setAudioSubsystem"] = function setAudioSubsystem() {
+
+};
+prototype["queueAudioSubsystem"] = function queueAudioSubsystem() {
+
+};
+prototype["setOffloadAdmControls"] = function setOffloadAdmControls() {
+
+};
+prototype["updateFieldTrial"] = function updateFieldTrial() {
+
+};
+prototype["getDebugLogging"] = function getDebugLogging() {
+  return false;
+};
+prototype["setDebugLogging"] = function setDebugLogging() {
+
+};
+prototype["writeAudioDebugState"] = function writeAudioDebugState() {
+  const error = new Error("Audio debug state is not supported.");
+  return Promise.reject(error);
+};
+prototype["setLoopback"] = function setLoopback() {
+
+};
+prototype["getLoopback"] = function getLoopback() {
+  return false;
+};
+prototype["setExperimentFlag"] = function setExperimentFlag() {
+
+};
+prototype["startAecDump"] = function startAecDump() {
+
+};
+prototype["stopAecDump"] = function stopAecDump() {
+
+};
+prototype["setAecDump"] = function setAecDump() {
+
+};
+prototype["startRecordingRawSamples"] = function startRecordingRawSamples() {
+
+};
+prototype["stopRecordingRawSamples"] = function stopRecordingRawSamples() {
+
+};
+prototype["processBatchAudioFiles"] = function processBatchAudioFiles() {
+
+};
+prototype["cancelBatchAudioProcessing"] = function cancelBatchAudioProcessing() {
+
+};
+prototype["createReplayConnection"] = function createReplayConnection() {
+  const error = new Error("Connection replay is not supported.");
+  throw error;
+};
+prototype["setOnVideoContainerResized"] = function setOnVideoContainerResized() {
+
+};
+prototype["setMaxSyncDelayOverride"] = function setMaxSyncDelayOverride() {
+
+};
+prototype["rankRtcRegions"] = function rankRtcRegions() {
+  const error = new Error("RTC region latency test is not supported.");
+  return Promise.reject(error);
+};
+prototype["applyMediaFilterSettings"] = function applyMediaFilterSettings() {
+  return Promise.resolve();
+};
+prototype["startLocalAudioRecording"] = function startLocalAudioRecording() {
+  const error = new Error("startLocalAudioRecording is not supported.");
+  return Promise.reject(error);
+};
+prototype["stopLocalAudioRecording"] = function stopLocalAudioRecording() {
+
+};
+prototype["setHasFullbandPerformance"] = function setHasFullbandPerformance() {
+
+};
+prototype["setNcModels"] = function setNcModels() {
+
+};
+prototype["getSupportedSecureFramesProtocolVersion"] = function getSupportedSecureFramesProtocolVersion() {
+  return 0;
+};
+prototype["getSupportedBandwidthEstimationExperiments"] = function getSupportedBandwidthEstimationExperiments(arg0) {
+  arg0([]);
+};
+prototype["getMLSSigningKey"] = function getMLSSigningKey() {
+  const error = new Error("NOT_IMPLEMENTED");
+  return Promise.reject(error);
+};
+prototype["setSidechainCompression"] = function setSidechainCompression() {
+
+};
+prototype["setSidechainCompressionStrength"] = function setSidechainCompressionStrength() {
+
+};
+prototype["setVoiceSampleRateCap"] = function setVoiceSampleRateCap() {
+
+};
+prototype["setVoiceChannelCountCap"] = function setVoiceChannelCountCap() {
+
+};
+prototype["getSystemMicrophoneMode"] = function getSystemMicrophoneMode() {
+  return Promise.resolve("");
+};
+prototype["showSystemCaptureConfigurationUI"] = function showSystemCaptureConfigurationUI() {
+
+};
+prototype["setNativeDesktopVideoSourcePickerActive"] = function setNativeDesktopVideoSourcePickerActive() {
+
+};
+prototype["presentNativeScreenSharePicker"] = function presentNativeScreenSharePicker() {
+
+};
+prototype["releaseNativeDesktopVideoSourcePickerStream"] = function releaseNativeDesktopVideoSourcePickerStream() {
+
+};
+prototype["setMaybePreprocessMute"] = function setMaybePreprocessMute() {
+
+};
+prototype["setAudioInputBypassSystemProcessing"] = function setAudioInputBypassSystemProcessing() {
+
+};
+prototype["fetchAsyncResources"] = function fetchAsyncResources() {
+  return Promise.resolve();
+};
+prototype["getDeviceOSVolume"] = function getDeviceOSVolume() {
+  return Promise.resolve(undefined);
+};
+prototype["getDeviceOSMuted"] = function getDeviceOSMuted() {
+  return Promise.resolve(undefined);
+};
+prototype["getDeviceAudioEffects"] = function getDeviceAudioEffects() {
+  const error = new Error("Device audio effect querying not supported");
+  return Promise.reject(error);
+};
+prototype["getNoiseCancellationStats"] = function getNoiseCancellationStats() {
+  const error = new Error("Dummy noise cancellation stats not supported");
+  return Promise.reject(error);
+};
+prototype["setNoiseCancellationEnableStats"] = function setNoiseCancellationEnableStats() {
+
+};
+const result = require("BaseConnectionEvent").fileFinishedImporting("../discord_common/js/packages/media-engine/MediaEngineDummy.tsx");
+
+export default MediaEngineDummy;

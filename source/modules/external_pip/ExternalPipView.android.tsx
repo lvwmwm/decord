@@ -1,89 +1,87 @@
-// Module ID: 15791
-// Function ID: 121613
-// Name: requestFreezeLock
-// Dependencies: [57, 31, 8110, 33, 15792, 10237, 15794, 2]
+// Module ID: 15826
+// Function ID: 15827
+// Name: FreezeAfterLayoutPipView
+// Dependencies: [32, 19, 8134, 21, 15827, 10258, 15829, 2]
 // Exports: default
 
-// Module 15791 (requestFreezeLock)
+// Module 15826 (FreezeAfterLayoutPipView)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
-import module_8110 from "module_8110";
+import noop from "noop";
+import module_8134 from "module_8134";
 import { jsx } from "jsxProd";
 
-function requestFreezeLock(lockEnabled) {
-  state = state.getState();
-  const freezeLock = state.requestFreezeLock({ lockEnabled, key: "external-pip" });
-}
 function FreezeAfterLayoutPipView() {
   const importDefault = React.useRef(false);
   const onLayout = React.useCallback(() => {
     if (!ref.current) {
-      ref.current = true;
-      outer1_6(true);
+      tmp.current = true;
+      const state = outer1_4.getState();
+      const freezeLock = state.requestFreezeLock({ lockEnabled: true, key: "external-pip" });
     }
   }, []);
   const effect = React.useEffect(() => () => {
-    if (outer1_0.current) {
-      outer2_6(false);
+    if (ref.current) {
+      const state = outer1_4.getState();
+      const freezeLock = state.requestFreezeLock({ lockEnabled: false, key: "external-pip" });
     }
   }, []);
-  return jsx(importDefault(15794), { onLayout });
+  return jsx(importDefault(15829), { onLayout });
 }
-const result = require("module_8110").fileFinishedImporting("modules/external_pip/ExternalPipView.android.tsx");
+const result = require("module_8134").fileFinishedImporting("modules/external_pip/ExternalPipView.android.tsx");
 
 export default function ExternalPipView() {
-  const obj = {};
-  const tmp = externalPipEnabled(setExternalPipActive[4]);
-  obj.disabled = !externalPipEnabled(setExternalPipActive[5]).isSupported();
-  externalPipEnabled = tmp(obj).externalPipEnabled;
-  const tmp2 = (function useExternalPipActive() {
-    const externalPipActive = outer1_2(outer1_3.useState(false), 2);
-    let closure_0 = externalPipActive[1];
-    const setExternalPipActive = outer1_3.useCallback((arg0) => {
-      callback(arg0);
-      if (!arg0) {
-        outer2_6(false);
-      }
-    }, []);
-    const effect = outer1_3.useEffect(() => () => {
-      outer3_6(false);
-    }, []);
-    return { externalPipActive: externalPipActive[0], setExternalPipActive };
-  })();
-  setExternalPipActive = tmp2.setExternalPipActive;
-  const items = [externalPipEnabled];
-  let effect = React.useEffect(() => {
-    externalPipEnabled(setExternalPipActive[5]).setEnabled(externalPipEnabled);
-  }, items);
-  const items1 = [setExternalPipActive];
+  let c0;
+  let tmp3;
+  const obj = { disabled: null };
+  const tmp = importDefault(callback[4]);
+  obj[0] = !importDefault(callback[5]).isSupported();
+  importDefault = undefined;
+  const obj2 = importDefault(callback[5]);
+  [tmp3, c0] = callback(React.useState(false), 2);
+  callback = React.useCallback((arg0) => {
+    _undefined(arg0);
+    if (!arg0) {
+      const state = outer1_4.getState();
+      const freezeLock = state.requestFreezeLock({ lockEnabled: false, key: "external-pip" });
+    }
+  }, []);
+  const effect = React.useEffect(() => () => {
+    state = state.getState();
+    const freezeLock = state.requestFreezeLock({ lockEnabled: false, key: "external-pip" });
+  }, []);
+  const items = [tmp(obj).externalPipEnabled];
   const effect1 = React.useEffect(() => {
-    let closure_0 = externalPipEnabled(setExternalPipActive[5]).addOnPipModeChangedListener((arg0) => {
-      outer1_1(arg0);
+    _undefined(callback[5]).setEnabled(_undefined);
+  }, items);
+  const items1 = [callback];
+  const effect2 = React.useEffect(() => {
+    let closure_0 = _undefined(callback[5]).addOnPipModeChangedListener((arg0) => {
+      callback(arg0);
     });
     return () => {
       let removeResult;
-      if (null != closure_0) {
+      if (closure_0 != null) {
         removeResult = closure_0.remove();
       }
       return removeResult;
     };
   }, items1);
-  const items2 = [setExternalPipActive];
-  const effect2 = React.useEffect(() => {
-    let closure_0 = externalPipEnabled(setExternalPipActive[5]).addOnPipModeWillChangeListener(() => {
-      outer1_1(true);
+  const items2 = [callback];
+  const effect3 = React.useEffect(() => {
+    let closure_0 = _undefined(callback[5]).addOnPipModeWillChangeListener(() => {
+      callback(true);
     });
     return () => {
       let removeResult;
-      if (null != closure_0) {
+      if (closure_0 != null) {
         removeResult = closure_0.remove();
       }
       return removeResult;
     };
   }, items2);
-  let tmp6 = null;
-  if (tmp2.externalPipActive) {
-    tmp6 = <FreezeAfterLayoutPipView />;
+  let tmp9 = null;
+  if (tmp3) {
+    tmp9 = <FreezeAfterLayoutPipView />;
   }
-  return tmp6;
+  return tmp9;
 };

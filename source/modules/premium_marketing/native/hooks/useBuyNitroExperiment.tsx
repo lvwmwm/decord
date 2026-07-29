@@ -1,12 +1,12 @@
-// Module ID: 6488
-// Function ID: 58020
+// Module ID: 6509
+// Function ID: 6510
 // Name: useBuyNitroExperiment
-// Dependencies: [57, 31, 6205, 5485, 6489, 2]
+// Dependencies: [32, 19, 6225, 5503, 6510, 2]
 // Exports: useBuyNitroExperiment
 
-// Module 6488 (useBuyNitroExperiment)
+// Module 6509 (useBuyNitroExperiment)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
+import noop from "noop";
 import { usePremiumPlanPurchasedStore as closure_5 } from "usePremiumPlanPurchasedStore";
 
 const require = arg1;
@@ -17,34 +17,31 @@ export const useBuyNitroExperiment = function useBuyNitroExperiment(isNitroHomeS
   let userHasSubscription;
   isNitroHomeSurface = isNitroHomeSurface.isNitroHomeSurface;
   ({ userHasSubscription, isConfirmedNonSubscriber } = isNitroHomeSurface);
-  let tmp = importDefault(5485)(() => outer1_0(outer1_2[4]).getMobileNitroMarketingRedesignExperiment({ location: "PremiumMarketingPage" }));
+  let canRenderRedesignUpsellEarly = importDefault(5503)(() => callback(table[4]).getMobileNitroMarketingRedesignExperiment({ location: "PremiumMarketingPage" }));
   const tmp3 = callback(React.useState(false), 2);
   const first = tmp3[0];
-  let tmp5 = tmp;
-  if (tmp) {
-    tmp5 = !userHasSubscription;
+  let showRedesignUpsell = canRenderRedesignUpsellEarly;
+  if (canRenderRedesignUpsellEarly) {
+    showRedesignUpsell = !userHasSubscription;
   }
-  if (tmp5) {
-    tmp5 = !isNitroHomeSurface;
+  if (showRedesignUpsell) {
+    showRedesignUpsell = !isNitroHomeSurface;
   }
-  if (!tmp5) {
+  if (!showRedesignUpsell) {
     let tmp6 = first;
     if (first) {
       tmp6 = tmp2;
     }
-    tmp5 = tmp6;
+    showRedesignUpsell = tmp6;
   }
-  if (first !== tmp5) {
-    tmp3[1](tmp5);
+  if (first !== showRedesignUpsell) {
+    tmp3[1](showRedesignUpsell);
   }
-  const obj = {};
-  if (tmp) {
-    tmp = !isNitroHomeSurface;
+  if (canRenderRedesignUpsellEarly) {
+    canRenderRedesignUpsellEarly = !isNitroHomeSurface;
   }
-  if (tmp) {
-    tmp = isConfirmedNonSubscriber;
+  if (canRenderRedesignUpsellEarly) {
+    canRenderRedesignUpsellEarly = isConfirmedNonSubscriber;
   }
-  obj.canRenderRedesignUpsellEarly = tmp;
-  obj.showRedesignUpsell = tmp5;
-  return obj;
+  return { canRenderRedesignUpsellEarly, showRedesignUpsell };
 };

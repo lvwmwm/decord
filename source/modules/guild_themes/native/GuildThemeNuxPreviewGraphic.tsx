@@ -1,32 +1,30 @@
-// Module ID: 15103
-// Function ID: 114885
+// Module ID: 15136
+// Function ID: 15137
 // Name: GuildThemeNuxPreviewGraphic
-// Dependencies: [31, 27, 33, 4165, 689, 15104, 2]
+// Dependencies: [19, 17, 21, 4189, 712, 15137, 2]
 // Exports: default
 
-// Module 15103 (GuildThemeNuxPreviewGraphic)
-import "result";
+// Module 15136 (GuildThemeNuxPreviewGraphic)
+import "noop";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { width: "100%", aspectRatio: 1.7777777777777777, alignItems: "center", justifyContent: "center", marginBottom: require("_createForOfIteratorHelperLoose").space.PX_24 };
-_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+createCacheKey = { container: null };
+createCacheKey = { width: "100%", aspectRatio: 1.7777777777777777, alignItems: "center", justifyContent: "center", marginBottom: require("Themes").space.PX_24 };
+createCacheKey[0] = createCacheKey;
+createCacheKey = createCacheKey.createStyles(createCacheKey);
 const result = require("jsxProd").fileFinishedImporting("modules/guild_themes/native/GuildThemeNuxPreviewGraphic.tsx");
 
 export default function GuildThemeNuxPreviewGraphic(arg0) {
   let isPersonal;
   let themeSettings;
   ({ themeSettings, isPersonal } = arg0);
-  let obj = { accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", style: _createForOfIteratorHelperLoose().container };
-  obj = {};
+  const obj = { accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", style: createCacheKey().container, children: null };
   let tmp4 = null;
   if (!isPersonal) {
     tmp4 = themeSettings;
   }
-  obj.themeSettings = tmp4;
-  obj.children = jsx(importDefault(15104), {});
-  return <View />;
+  obj[3] = jsx(importDefault(15137), { themeSettings: tmp4 });
+  return <View accessibilityElementsHidden importantForAccessibility="no-hide-descendants" style={createCacheKey().container}>{null}</View>;
 };

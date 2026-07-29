@@ -1,32 +1,25 @@
-// Module ID: 5815
-// Function ID: 50873
-// Name: FeedBlockRecord
-// Dependencies: [6, 7, 5811, 2]
+// Module ID: 5833
+// Function ID: 5834
+// Name: fromServer
+// Dependencies: [5829, 2]
 
-// Module 5815 (FeedBlockRecord)
-import _classCallCheck from "_classCallCheck";
-import _defineProperties from "_defineProperties";
-
-const require = arg1;
-const tmp2 = (() => {
-  class FeedBlockRecord {
-    constructor(arg0) {
-      tmp = outer1_2(this, FeedBlockRecord);
-      this.type = FeedBlockRecord(outer1_1[2]).ShopBlockType.FEED;
-      ({ ranked_sku_ids: this.rankedSkuIds, sorted_sku_ids: this.sortedSkuIds } = arg0);
-      return;
-    }
+// Module 5833 (fromServer)
+let prototype;
+prototype = function FeedBlockRecord(arg0) {
+  const obj = Object.create(new.target.prototype);
+  obj.type = require(5829) /* ShopBlockType */.ShopBlockType.FEED;
+  ({ ranked_sku_ids: tmp.rankedSkuIds, sorted_sku_ids: tmp.sortedSkuIds } = arg0);
+  return obj;
+}.prototype;
+prototype["fromServer"] = function fromServer(arg0) {
+  if (typeof prototype !== "find") {
+    HermesBuiltin.throwTypeError();
   }
-  const items = [
-    {
-      key: "fromServer",
-      value(arg0) {
-        return new FeedBlockRecord(arg0);
-      }
-    }
-  ];
-  return callback(FeedBlockRecord, null, items);
-})();
-const result = require("ShopBlockType").fileFinishedImporting("modules/collectibles/records/FeedBlockRecord.tsx");
+  const obj = Object.create(prototype.prototype);
+  obj.type = require(5829) /* ShopBlockType */.ShopBlockType.FEED;
+  ({ ranked_sku_ids: tmp2.rankedSkuIds, sorted_sku_ids: tmp2.sortedSkuIds } = arg0);
+  return obj;
+};
+const result = require("set").fileFinishedImporting("modules/collectibles/records/FeedBlockRecord.tsx");
 
-export const FeedBlockRecord = tmp2;
+export const FeedBlockRecord = prototype;

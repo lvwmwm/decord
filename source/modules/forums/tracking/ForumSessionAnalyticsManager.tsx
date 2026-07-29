@@ -1,42 +1,29 @@
-// Module ID: 6064
-// Function ID: 54209
-// Name: createSessionData
-// Dependencies: [6, 7, 491, 2]
+// Module ID: 6082
+// Function ID: 6083
+// Name: getForumChannelSessionId
+// Dependencies: [514, 2]
 
-// Module 6064 (createSessionData)
-import _classCallCheck from "_classCallCheck";
-import _defineProperties from "_defineProperties";
-
-const require = arg1;
-function createSessionData(channelId) {
-  const obj = { channelId, sessionId: require(491) /* v1 */.v4() };
-  return obj;
+// Module 6082 (getForumChannelSessionId)
+class ForumSessionAnalyticsManager {
 }
-let tmp2 = (() => {
-  class ForumSessionAnalyticsManager {
-    constructor() {
-      tmp = outer1_2(this, ForumSessionAnalyticsManager);
-      return;
-    }
+ForumSessionAnalyticsManager.prototype["getForumChannelSessionId"] = function getForumChannelSessionId(arg0) {
+  const self = this;
+  if (null == this.session) {
+    let obj = { channelId: null, sessionId: null };
+    obj[0] = arg0;
+    obj[1] = require(514) /* v1 */.v4();
+    self.session = obj;
+    const obj2 = require(514) /* v1 */;
   }
-  const items = [
-    {
-      key: "getForumChannelSessionId",
-      value(arg0) {
-        const self = this;
-        if (null == this.session) {
-          self.session = outer1_4(arg0);
-        }
-        if (self.session.channelId !== arg0) {
-          self.session = outer1_4(arg0);
-        }
-        return self.session.sessionId;
-      }
-    }
-  ];
-  return callback(ForumSessionAnalyticsManager, items);
-})();
-tmp2 = new tmp2();
-const result = require("v1").fileFinishedImporting("modules/forums/tracking/ForumSessionAnalyticsManager.tsx");
+  if (self.session.channelId !== arg0) {
+    obj = { channelId: null, sessionId: null };
+    obj[0] = arg0;
+    obj[1] = require(514) /* v1 */.v4();
+    self.session = obj;
+    const obj4 = require(514) /* v1 */;
+  }
+  return self.session.sessionId;
+};
+const result = require("set").fileFinishedImporting("modules/forums/tracking/ForumSessionAnalyticsManager.tsx");
 
-export default tmp2;
+export default Object.create(ForumSessionAnalyticsManager.prototype);

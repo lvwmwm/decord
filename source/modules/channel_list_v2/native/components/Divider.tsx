@@ -1,34 +1,27 @@
-// Module ID: 11424
-// Function ID: 88597
+// Module ID: 11448
+// Function ID: 11449
 // Name: Divider
-// Dependencies: [31, 27, 33, 4165, 689, 1324, 2]
+// Dependencies: [19, 17, 21, 4189, 712, 1348, 2]
 // Exports: default
 
-// Module 11424 (Divider)
-import "result";
+// Module 11448 (Divider)
+import "noop";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_4 = _createForOfIteratorHelperLoose.createStyles((arg0) => {
-  let obj = {};
-  obj = { height: 1, backgroundColor: null, marginTop: 8, marginBottom: 8 };
-  const colors = importDefault(689).colors;
-  obj.backgroundColor = arg0 ? colors.BORDER_SUBTLE : colors.BORDER_MUTED;
-  if (arg0) {
-    obj = { marginHorizontal: 16 };
-    let obj1 = obj;
-  } else {
-    obj1 = {};
-  }
-  const merged = Object.assign(obj1);
-  obj.divider = obj;
+let closure_4 = createCacheKey.createStyles((arg0) => {
+  const colors = importDefault(712).colors;
+  let obj = { height: 1, backgroundColor: arg0 ? colors.BORDER_SUBTLE : colors.BORDER_MUTED, marginTop: 8, marginBottom: 8 };
+  obj = { divider: null };
+  const merged = Object.assign(arg0 ? { marginHorizontal: 16 } : {});
+  obj[0] = obj;
   return obj;
 });
 const result = require("jsxProd").fileFinishedImporting("modules/channel_list_v2/native/components/Divider.tsx");
 
 export default function Divider() {
-  return <View style={callback(importDefault(1324)("Divider")).divider} />;
+  return <View style={callback(importDefault(1348)("Divider")).divider} />;
 };
 export const DIVIDER_MARGIN_TOP = 8;
 export const DIVIDER_MARGIN_BOTTOM = 8;

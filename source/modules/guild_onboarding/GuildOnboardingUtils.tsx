@@ -1,257 +1,118 @@
-// Module ID: 5100
-// Function ID: 44039
-// Name: _createForOfIteratorHelperLoose
-// Dependencies: [1348, 4847, 1908, 1838, 3793, 5094, 653, 3781, 566, 1360, 4658, 5095, 3798, 1327, 620, 1832, 5101, 2]
+// Module ID: 5122
+// Function ID: 5123
+// Name: isChattableChannel
+// Dependencies: [1372, 4869, 1932, 1862, 3817, 5116, 676, 3805, 589, 1384, 4680, 5117, 3822, 1351, 643, 1856, 5123, 2]
 // Exports: getApplicationConnectionState, getChannelCoverageForOnboarding, getChattableDefaultChannels, getMinimumSetOfDefaultChannelIds, getProviderConnectionState, getSelectedChannelIds, getSelectedRoleIds, isBlockedByOnboarding, isChattableChannelId, isGuildOnboardingSettingsAvailable, showRulesInOnboarding, useChannelCoverageForOnboarding, useChattableDefaultChannels, useGuildOnboardingSettingsAvailable, useIsChattableChannel
 
-// Module 5100 (_createForOfIteratorHelperLoose)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_5 from "_isNativeReflectConstruct";
-import closure_6 from "_isNativeReflectConstruct";
-import { GUILD_SELECTABLE_CHANNELS_KEY as closure_7 } from "_isNativeReflectConstruct";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import closure_9 from "_isNativeReflectConstruct";
-import { OnboardingConnectionType } from "_createForOfIteratorHelperLoose";
+// Module 5122 (isChattableChannel)
+import ensureGuildLoaded from "ensureGuildLoaded";
+import set from "set";
+import comparator from "comparator";
+import { GUILD_SELECTABLE_CHANNELS_KEY as closure_7 } from "comparator";
+import createGuildRecordFromRust from "createGuildRecordFromRust";
+import getUncachedChannelPermissions from "getUncachedChannelPermissions";
+import { OnboardingConnectionType } from "serverPromptToClientPrompt";
 import ME from "ME";
 import { GuildMemberFlags } from "GuildMemberFlags";
 
-let closure_11;
 let closure_12;
+let unpackModuleId;
 const require = arg1;
-function _createForOfIteratorHelperLoose(iterable) {
-  let closure_0 = iterable;
-  iterable = "undefined" !== typeof Symbol;
-  if (iterable) {
-    const _Symbol = Symbol;
-    iterable = iterable[Symbol.iterator];
-  }
-  if (!iterable) {
-    iterable = iterable[Symbol.iterator];
-  }
-  if (iterable) {
-    const iter = iterable.call(iterable);
-    const next = iter.next;
-    return next.bind(iter);
-  } else {
-    const _Array = Array;
-    let tmp = iterable;
-    if (!Array.isArray(iterable)) {
-      let tmp2;
-      if (iterable) {
-        if ("string" === typeof iterable) {
-          tmp2 = _arrayLikeToArray(iterable, undefined);
-        } else {
-          const toString = {}.toString;
-          const substr = toString.call(iterable).slice(8, -1);
-          let name = substr;
-          if (tmp3) {
-            name = iterable.constructor.name;
-          }
-          if ("Map" !== name) {
-            if ("Set" !== name) {
-              if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(iterable, undefined);
-              } else {
-                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
-              }
-            }
-            tmp2 = arr;
-          }
-          const _Array2 = Array;
-          arr = Array.from(iterable);
-          const callResult = toString.call(iterable);
-          tmp3 = "Object" === substr && iterable.constructor;
-        }
-      }
-      tmp = tmp2;
-      if (!tmp2) {
-        const _TypeError = TypeError;
-        const typeError = new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
-        throw typeError;
-      }
-    }
-    if (tmp) {
-      closure_0 = tmp;
-    }
-    let c1 = 0;
-    return () => {
-      if (closure_1 >= length.length) {
-        let obj = { done: true };
-      } else {
-        obj = { done: false };
-        closure_1 = tmp3 + 1;
-        obj.value = length[+closure_1];
-      }
-      return obj;
-    };
-  }
-}
-function _arrayLikeToArray(arg0, arg1) {
-  let length;
+function isChattableChannel(guild_id) {
+  let tmp = null != guild_id;
   if (tmp) {
-    length = arg0.length;
-  }
-  const ArrayResult = Array(length);
-  for (let num = 0; num < length; num = num + 1) {
-    ArrayResult[num] = arg0[num];
-  }
-  return ArrayResult;
-}
-function getChannelCoverage(arr, arr2, arr) {
-  const set = new Set();
-  let item = arr.forEach((options) => {
-    options = options.options;
-    let item = options.forEach((channelIds) => {
-      let tmp = null == channelIds;
-      if (!tmp) {
-        channelIds = channelIds.channelIds;
-        tmp = null == channelIds;
-        const arr = channelIds;
-      }
-      if (!tmp) {
-        const item = arr.forEach((arg0) => {
-          outer2_0.add(arg0);
-        });
-      }
-    });
-  });
-  const item1 = arr2.forEach((arg0) => set.add(arg0));
-  const found = arr.filter((isCategory) => {
-    let tmp = !isCategory.isCategory() && !isCategory.isThread();
-    if (tmp) {
-      tmp = !outer1_1(outer1_3[10])(isCategory);
-    }
-    return tmp;
-  });
-  const items = [
-    found.filter((id) => {
-      let hasItem = set.has(id.id);
-      if (!hasItem) {
-        let hasItem1 = null != id.parent_id;
-        if (hasItem1) {
-          hasItem1 = set.has(id.parent_id);
-        }
-        hasItem = hasItem1;
-      }
-      return hasItem;
-    }),
-    found.filter((id) => {
-      let hasItem = set.has(id.id);
-      if (!hasItem) {
-        let hasItem1 = null != id.parent_id;
-        if (hasItem1) {
-          hasItem1 = set.has(id.parent_id);
-        }
-        hasItem = hasItem1;
-      }
-      return !hasItem;
-    })
-  ];
-  return items;
-}
-function isChattableChannel(channel) {
-  let tmp = null != channel;
-  if (tmp) {
-    const tmp4 = !require(5095) /* getDefaultPermissionsForChannel */.canChannelBeDefault(channel.guild_id, channel.id);
-    if (tmp4) {
-      tmp = !tmp4;
+    const canChannelBeDefaultResult = require(5117) /* useCanChannelBeDefault */.canChannelBeDefault(guild_id.guild_id, guild_id.id);
+    if (!canChannelBeDefaultResult) {
+      tmp = canChannelBeDefaultResult;
     } else {
-      const isForumChannelResult = channel.isForumChannel();
-      const canEveryoneRole = importAll(3798).canEveryoneRole;
+      const isForumChannelResult = guild_id.isForumChannel();
+      const canEveryoneRole = importAll(3822).canEveryoneRole;
       let SEND_MESSAGES_IN_THREADS = closure_12;
       if (isForumChannelResult) {
         SEND_MESSAGES_IN_THREADS = SEND_MESSAGES_IN_THREADS.SEND_MESSAGES_IN_THREADS;
-        let canEveryoneRoleResult = canEveryoneRole(SEND_MESSAGES_IN_THREADS, channel);
+        let canEveryoneRoleResult = canEveryoneRole(SEND_MESSAGES_IN_THREADS, guild_id);
       } else {
-        canEveryoneRoleResult = canEveryoneRole(SEND_MESSAGES_IN_THREADS.SEND_MESSAGES, channel);
+        canEveryoneRoleResult = canEveryoneRole(SEND_MESSAGES_IN_THREADS.SEND_MESSAGES, guild_id);
       }
-      const tmp8 = importAll(3798);
+      const tmp7 = importAll(3822);
     }
-    const obj = require(5095) /* getDefaultPermissionsForChannel */;
+    const obj = require(5117) /* useCanChannelBeDefault */;
   }
   return tmp;
 }
-function getFlattenedDefaultChannels(guildId, arr, arg2, fn) {
-  let iter3;
+function getFlattenedDefaultChannels(closure_0, arr, arg2, fn) {
   fn = arg2;
-  let fn2 = fn;
   if (arg2 === undefined) {
-    fn = function r(channel) {
-      return channel;
+    fn = function u(arg0) {
+      return arg0;
     };
   }
-  if (fn2 === undefined) {
-    fn2 = function l(fnResult) {
+  let fn2 = fn;
+  if (fn === undefined) {
+    fn2 = function s(fnResult) {
       return true;
     };
   }
   const items = [];
-  const tmp = _createForOfIteratorHelperLoose(store.getChannels(guildId)[closure_7]);
-  const iter = tmp();
-  let iter2 = iter;
-  if (!iter.done) {
-    do {
-      let channel = iter2.value.channel;
-      let tmp3 = require;
-      let tmp4 = dependencyMap;
-      let obj = require(5095) /* getDefaultPermissionsForChannel */;
-      let tmp5 = tmp2;
-      if (obj.canChannelBeDefault(channel.guild_id, channel.id)) {
-        if (!arr.includes(channel.id)) {
-          tmp5 = tmp2;
-          if (!channel.isThread()) {
-            tmp5 = tmp2;
-            if (null != channel.parent_id) {
-              tmp5 = tmp2;
-            }
+  const iter = store.getChannels(closure_0)[closure_7][Symbol.iterator]();
+  while (iter !== undefined) {
+    let channel = iter.next().channel;
+    let obj = channel;
+    let tmp = require;
+    let tmp2 = dependencyMap;
+    let obj2 = require(5117) /* useCanChannelBeDefault */;
+    if (obj2.canChannelBeDefault(channel.guild_id, channel.id)) {
+      let tmp3 = channel;
+      if (!arr.includes(obj.id)) {
+        let tmp5 = channel;
+        if (!obj.isThread()) {
+          let tmp6 = channel;
+          if (null != obj.parent_id) {
+            let tmp7 = channel;
           }
         }
-        let fnResult = fn(channel);
-        tmp5 = fnResult;
-        if (fn2(fnResult)) {
-          arr = items.push(fnResult);
-          tmp5 = fnResult;
-        }
+      } else {
+        let tmp4 = channel;
       }
-      iter3 = tmp();
-      tmp2 = tmp5;
-      iter2 = iter3;
-    } while (!iter3.done);
+      let tmp8 = channel;
+      let fnResult = fn(obj);
+      let tmp10 = fnResult;
+      if (fn2(fnResult)) {
+        let tmp11 = fnResult;
+        arr = items.push(tmp10);
+      }
+    }
+    continue;
   }
   return items;
 }
 function areStatesEqual(arg0, arg1) {
-  let tmp = arg0[0].length === arg1[0].length;
+  let tmp = arg0[0].length === arg1[0].length && arg0[1].length === arg1[1].length;
   if (tmp) {
-    tmp = arg0[1].length === arg1[1].length;
-  }
-  if (tmp) {
-    let tmp4 = importDefault(620)(arg0[0], arg1[0]);
-    if (tmp4) {
-      tmp4 = importDefault(620)(arg0[1], arg1[1]);
-    }
-    tmp = tmp4;
+    tmp = importDefault(643)(arg0[0], arg1[0]) && importDefault(643)(arg0[1], arg1[1]);
+    const tmp2 = importDefault;
+    const tmp4 = importDefault(643)(arg0[0], arg1[0]) && importDefault(643)(arg0[1], arg1[1]);
   }
   return tmp;
 }
-({ GuildFeatures: closure_11, Permissions: closure_12 } = ME);
+({ GuildFeatures: unpackModuleId, Permissions: closure_12 } = ME);
 let date = new Date(1682488800000);
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/guild_onboarding/GuildOnboardingUtils.tsx");
+const result = require("comparator").fileFinishedImporting("modules/guild_onboarding/GuildOnboardingUtils.tsx");
 
 export const ONBOARDING_EPOCH = date;
 export const useGuildOnboardingSettingsAvailable = function useGuildOnboardingSettingsAvailable(arg0) {
   const _require = arg0;
-  const items = [_createForOfIteratorHelperLoose, closure_9];
-  return _require(566).useStateFromStores(items, () => {
+  const items = [createGuildRecordFromRust, getUncachedChannelPermissions];
+  return _require(589).useStateFromStores(items, () => {
     const guild = outer1_8.getGuild(closure_0);
-    let tmp2 = null == guild;
-    if (!tmp2) {
+    let hasItem;
+    if (guild != null) {
       const features = guild.features;
-      tmp2 = !features.has(outer1_11.COMMUNITY);
+      hasItem = features.has(outer1_11.COMMUNITY);
     }
-    let tmp4 = !tmp2;
+    let tmp4 = hasItem;
     const canResult = outer1_9.can(outer1_12.MANAGE_GUILD, guild);
-    if (!tmp2) {
+    if (tmp4) {
       tmp4 = canResult;
     }
     if (tmp4) {
@@ -260,16 +121,16 @@ export const useGuildOnboardingSettingsAvailable = function useGuildOnboardingSe
     return tmp4;
   });
 };
-export const isGuildOnboardingSettingsAvailable = function isGuildOnboardingSettingsAvailable(closure_0) {
-  guild = guild.getGuild(closure_0);
-  let tmp2 = null == guild;
-  if (!tmp2) {
+export const isGuildOnboardingSettingsAvailable = function isGuildOnboardingSettingsAvailable(id) {
+  guild = guild.getGuild(id);
+  let hasItem;
+  if (guild != null) {
     const features = guild.features;
-    tmp2 = !features.has(constants.COMMUNITY);
+    hasItem = features.has(constants.COMMUNITY);
   }
-  let tmp4 = !tmp2;
-  const canResult = closure_9.can(constants2.MANAGE_GUILD, guild);
-  if (!tmp2) {
+  let tmp4 = hasItem;
+  const canResult = getUncachedChannelPermissions.can(constants2.MANAGE_GUILD, guild);
+  if (tmp4) {
     tmp4 = canResult;
   }
   if (tmp4) {
@@ -288,15 +149,14 @@ export const isBlockedByOnboarding = function isBlockedByOnboarding(guild, selfM
           if (date < date) {
             return false;
           } else {
-            const flags = selfMember.flags;
-            let num = 0;
-            if (null != flags) {
-              num = flags;
+            let num = selfMember.flags;
+            if (num == null) {
+              num = 0;
             }
-            let hasFlagResult = importAll(1360).hasFlag(num, GuildMemberFlags.STARTED_ONBOARDING);
+            let hasFlagResult = importAll(1384).hasFlag(num, GuildMemberFlags.STARTED_ONBOARDING);
             if (hasFlagResult) {
-              hasFlagResult = !importAll(1360).hasFlag(num, GuildMemberFlags.COMPLETED_ONBOARDING);
-              const obj2 = importAll(1360);
+              hasFlagResult = !importAll(1384).hasFlag(num, GuildMemberFlags.COMPLETED_ONBOARDING);
+              const tmp2Result = importAll(1384);
             }
             return hasFlagResult;
           }
@@ -318,109 +178,251 @@ export const showRulesInOnboarding = function showRulesInOnboarding(stateFromSto
     hasItem = features2.has(constants.MEMBER_VERIFICATION_GATE_ENABLED);
   }
   let tmp4 = !hasItem;
-  if (tmp4) {
+  if (!hasItem) {
     tmp4 = null != stateFromStores;
   }
   return tmp4;
 };
-export const getChannelCoverageForOnboarding = function getChannelCoverageForOnboarding(guildId, prompts, defaultChannelIds) {
-  return getChannelCoverage(prompts, defaultChannelIds, store.getChannels(guildId)[closure_7].map((channel) => channel.channel));
+export const getChannelCoverageForOnboarding = function getChannelCoverageForOnboarding(guildId, arr, defaultChannelIds) {
+  const mapped = store.getChannels(guildId)[closure_7].map((channel) => channel.channel);
+  let set;
+  set = new Set();
+  const item = arr.forEach((options) => {
+    options = options.options;
+    let item = options.forEach((channelIds) => {
+      if (channelIds != null) {
+        channelIds = channelIds.channelIds;
+        if (channelIds != null) {
+          const item = channelIds.forEach((arg0) => {
+            set.add(arg0);
+          });
+        }
+      }
+    });
+  });
+  const item1 = defaultChannelIds.forEach((arg0) => set.add(arg0));
+  const found = mapped.filter((isCategory) => {
+    const isCategoryResult = isCategory.isCategory();
+    let tmp2 = !isCategoryResult;
+    if (!isCategoryResult) {
+      tmp2 = !isCategory.isThread();
+    }
+    if (tmp2) {
+      tmp2 = !callback(table[10])(isCategory);
+    }
+    return tmp2;
+  });
+  const items = [
+    found.filter((id) => {
+      let hasItem = set.has(id.id);
+      if (!hasItem) {
+        hasItem = null != id.parent_id && set.has(id.parent_id);
+        const tmp3 = null != id.parent_id && set.has(id.parent_id);
+      }
+      return hasItem;
+    }),
+    found.filter((id) => {
+      let hasItem = set.has(id.id);
+      if (!hasItem) {
+        hasItem = null != id.parent_id && set.has(id.parent_id);
+        const tmp3 = null != id.parent_id && set.has(id.parent_id);
+      }
+      return !hasItem;
+    })
+  ];
+  return items;
 };
 export const useChannelCoverageForOnboarding = function useChannelCoverageForOnboarding(arg0, arr, arr2) {
-  const _require = arg0;
-  const items = [closure_6];
-  const obj = _require(566);
-  return getChannelCoverage(arr, arr2, _require(566).useStateFromStores(items, () => outer1_6.getChannels(closure_0))[closure_7].map((channel) => channel.channel));
+  let set = arg0;
+  const items = [comparator];
+  const obj = set(589);
+  const mapped = set(589).useStateFromStores(items, () => outer1_6.getChannels(set))[closure_7].map((channel) => channel.channel);
+  set = undefined;
+  set = new Set();
+  let item = arr.forEach((options) => {
+    options = options.options;
+    let item = options.forEach((channelIds) => {
+      if (channelIds != null) {
+        channelIds = channelIds.channelIds;
+        if (channelIds != null) {
+          const item = channelIds.forEach((arg0) => {
+            set.add(arg0);
+          });
+        }
+      }
+    });
+  });
+  const item1 = arr2.forEach((arg0) => set.add(arg0));
+  const found = mapped.filter((isCategory) => {
+    const isCategoryResult = isCategory.isCategory();
+    let tmp2 = !isCategoryResult;
+    if (!isCategoryResult) {
+      tmp2 = !isCategory.isThread();
+    }
+    if (tmp2) {
+      tmp2 = !callback(table[10])(isCategory);
+    }
+    return tmp2;
+  });
+  const items1 = [
+    found.filter((id) => {
+      let hasItem = set.has(id.id);
+      if (!hasItem) {
+        hasItem = null != id.parent_id && set.has(id.parent_id);
+        const tmp3 = null != id.parent_id && set.has(id.parent_id);
+      }
+      return hasItem;
+    }),
+    found.filter((id) => {
+      let hasItem = set.has(id.id);
+      if (!hasItem) {
+        hasItem = null != id.parent_id && set.has(id.parent_id);
+        const tmp3 = null != id.parent_id && set.has(id.parent_id);
+      }
+      return !hasItem;
+    })
+  ];
+  return items1;
 };
-export const isChattableChannelId = function isChattableChannelId(channelId) {
-  return isChattableChannel(channel.getChannel(channelId));
+export const isChattableChannelId = function isChattableChannelId(arg0) {
+  channel = channel.getChannel(arg0);
+  let tmp = null != channel;
+  if (tmp) {
+    const canChannelBeDefaultResult = require(5117) /* useCanChannelBeDefault */.canChannelBeDefault(channel.guild_id, channel.id);
+    if (!canChannelBeDefaultResult) {
+      tmp = canChannelBeDefaultResult;
+    } else {
+      const isForumChannelResult = channel.isForumChannel();
+      const canEveryoneRole = importAll(3822).canEveryoneRole;
+      let SEND_MESSAGES_IN_THREADS = closure_12;
+      if (isForumChannelResult) {
+        SEND_MESSAGES_IN_THREADS = SEND_MESSAGES_IN_THREADS.SEND_MESSAGES_IN_THREADS;
+        let canEveryoneRoleResult = canEveryoneRole(SEND_MESSAGES_IN_THREADS, channel);
+      } else {
+        canEveryoneRoleResult = canEveryoneRole(SEND_MESSAGES_IN_THREADS.SEND_MESSAGES, channel);
+      }
+      const tmp7 = importAll(3822);
+    }
+    const obj2 = require(5117) /* useCanChannelBeDefault */;
+  }
+  return tmp;
 };
 export { isChattableChannel };
 export const useIsChattableChannel = function useIsChattableChannel(arg0) {
   const _require = arg0;
-  const items = [_isNativeReflectConstruct];
-  return _require(566).useStateFromStores(items, () => {
+  const items = [ensureGuildLoaded];
+  return _require(589).useStateFromStores(items, () => {
     const channel = outer1_4.getChannel(callback);
     let isNotNullishResult = callback(outer1_3[13]).isNotNullish(channel);
     if (isNotNullishResult) {
-      isNotNullishResult = outer1_18(channel);
+      let tmp5 = null != channel;
+      if (tmp5) {
+        const canChannelBeDefaultResult = callback(tmp2[11]).canChannelBeDefault(channel.guild_id, channel.id);
+        if (!canChannelBeDefaultResult) {
+          tmp5 = canChannelBeDefaultResult;
+        } else {
+          const isForumChannelResult = channel.isForumChannel();
+          const canEveryoneRole = outer1_2(tmp2[12]).canEveryoneRole;
+          let SEND_MESSAGES_IN_THREADS = outer1_12;
+          if (isForumChannelResult) {
+            SEND_MESSAGES_IN_THREADS = SEND_MESSAGES_IN_THREADS.SEND_MESSAGES_IN_THREADS;
+            let canEveryoneRoleResult = canEveryoneRole(SEND_MESSAGES_IN_THREADS, channel);
+          } else {
+            canEveryoneRoleResult = canEveryoneRole(SEND_MESSAGES_IN_THREADS.SEND_MESSAGES, channel);
+          }
+          const tmp9 = outer1_2(tmp2[12]);
+        }
+        const tmpResult = callback(tmp2[11]);
+      }
+      isNotNullishResult = tmp5;
     }
     return isNotNullishResult;
   });
 };
-export const getMinimumSetOfDefaultChannelIds = function getMinimumSetOfDefaultChannelIds(guildId, defaultChannelIds1, onboardingPromptsForOnboarding, arg3) {
+export const getMinimumSetOfDefaultChannelIds = function getMinimumSetOfDefaultChannelIds(closure_0, outer1_4, c5, arg3) {
   let fn = arg3;
-  let closure_0 = guildId;
   if (arg3 === undefined) {
-    fn = function a() {
+    fn = function o() {
       return true;
     };
   }
   let c2;
-  let tmp = getFlattenedDefaultChannels(guildId, defaultChannelIds1, (id) => id.id, fn);
+  let tmp = getFlattenedDefaultChannels(closure_0, outer1_4, (id) => id.id, fn);
   c2 = tmp;
-  const item = onboardingPromptsForOnboarding.forEach((required) => {
+  const item = c5.forEach((required) => {
     if (required.required) {
       const first = required.options[0];
       let channelIds;
-      if (null != first) {
+      if (first != null) {
         channelIds = first.channelIds;
       }
-      if (null == channelIds) {
+      if (channelIds == null) {
         channelIds = [];
       }
       const options = required.options;
       const push = _undefined.push;
       const items = [];
       HermesBuiltin.arraySpread(options.reduce((arg0, channelIds) => {
-        let arr = arg0;
         if (null == channelIds.channelIds) {
           return [];
         } else {
-          const arr2 = outer2_19(outer1_0, channelIds.channelIds, (id) => id.id, (arg0) => {
-            let tmp = outer2_1(arg0);
+          let tmp = arg0;
+          const arr = outer1_16(closure_0, channelIds.channelIds, (id) => id.id, (arg0) => {
+            let tmp = callback(arg0);
             if (tmp) {
-              tmp = !outer2_2.includes(arg0);
+              tmp = !closure_2.includes(arg0);
             }
             return tmp;
           });
-          if (arr2.length < arr.length) {
-            arr = arr2;
+          if (arr.length < arg0.length) {
+            tmp = arr;
           }
-          return arr;
+          return tmp;
         }
-      }, outer1_19(closure_0, channelIds, (id) => id.id)), 0);
+      }, outer1_16(closure_0, channelIds, (id) => id.id)), 0);
       HermesBuiltin.apply(items, _undefined);
-      let tmp = outer1_19;
+      let tmp = outer1_16;
       const tmp2 = closure_0;
     }
   });
   return tmp;
 };
-export const getChattableDefaultChannels = function getChattableDefaultChannels(guildId, arr) {
-  let done;
-  arr = getFlattenedDefaultChannels(guildId, arr);
-  const obj = {};
-  const tmp = _createForOfIteratorHelperLoose(store.getChannels(guildId)[closure_7]);
-  let iter = tmp();
-  if (!iter.done) {
-    do {
-      let value = iter.value;
-      obj[value.channel.id] = value;
-      let iter2 = tmp();
-      iter = iter2;
-      done = iter2.done;
-    } while (!done);
+export const getChattableDefaultChannels = function getChattableDefaultChannels(closure_0, arr) {
+  arr = getFlattenedDefaultChannels(closure_0, arr);
+  let obj = {};
+  for (const item10015 of tmp) {
+    obj[item10015.channel.id] = item10015;
+    continue;
   }
   const items = [
     (function filterChattableChannels(arr, arg1) {
       let closure_0 = arg1;
       return arr.filter((arg0) => {
         let channel;
-        if (null != table[arg0]) {
-          channel = tmp2.channel;
+        if (dependencyMap[arg0] != null) {
+          channel = tmp.channel;
         }
-        return outer2_18(channel);
+        let tmp3 = null != channel;
+        if (tmp3) {
+          const canChannelBeDefaultResult = dependencyMap(outer1_3[11]).canChannelBeDefault(channel.guild_id, channel.id);
+          if (!canChannelBeDefaultResult) {
+            tmp3 = canChannelBeDefaultResult;
+          } else {
+            const isForumChannelResult = channel.isForumChannel();
+            const canEveryoneRole = outer1_2(tmp5[12]).canEveryoneRole;
+            let SEND_MESSAGES_IN_THREADS = outer1_12;
+            if (isForumChannelResult) {
+              SEND_MESSAGES_IN_THREADS = SEND_MESSAGES_IN_THREADS.SEND_MESSAGES_IN_THREADS;
+              let canEveryoneRoleResult = canEveryoneRole(SEND_MESSAGES_IN_THREADS, channel);
+            } else {
+              canEveryoneRoleResult = canEveryoneRole(SEND_MESSAGES_IN_THREADS.SEND_MESSAGES, channel);
+            }
+            const tmp9 = outer1_2(tmp5[12]);
+          }
+          const obj = dependencyMap(outer1_3[11]);
+          tmp5 = outer1_3;
+        }
+        return tmp3;
       });
     })(arr.map((id) => id.id), obj),
     arr
@@ -430,67 +432,80 @@ export const getChattableDefaultChannels = function getChattableDefaultChannels(
 export const useChattableDefaultChannels = function useChattableDefaultChannels(arg0, arg1) {
   const _require = arg0;
   let closure_1 = arg1;
-  let items = [closure_6];
+  let items = [comparator];
   let items1 = [arg0, arg1];
-  return _require(566).useStateFromStores(items, () => {
-    let iter2;
+  return _require(589).useStateFromStores(items, () => {
     const items = [];
     const items1 = [];
-    const tmp = outer1_15(outer1_6.getChannels(callback)[outer1_7]);
-    let iter = tmp();
-    if (!iter.done) {
-      do {
-        let value = iter.value;
-        let tmp2 = callback;
-        let tmp3 = outer1_3;
-        let obj = callback(outer1_3[11]);
-        let canChannelBeDefaultResult = obj.canChannelBeDefault(value.channel.guild_id, value.channel.id);
-        if (canChannelBeDefaultResult) {
-          let tmp5 = set;
-          let hasItem = set.has(value.channel.id);
-          if (hasItem) {
-            let channel = value.channel;
-            hasItem = !channel.isCategory();
-          }
-          if (!hasItem) {
-            let channel2 = value.channel;
-            let hasItem1 = !channel2.isThread() && null != value.channel.parent_id;
-            if (hasItem1) {
-              let tmp8 = set;
-              hasItem1 = set.has(value.channel.parent_id);
-            }
-            hasItem = hasItem1;
-          }
-          canChannelBeDefaultResult = hasItem;
+    const iter = outer1_6.getChannels(callback)[outer1_7][Symbol.iterator]();
+    const nextResult = iter.next();
+    while (iter !== undefined) {
+      let tmp2 = nextResult;
+      let tmp3 = callback;
+      let tmp4 = outer1_3;
+      let obj = callback(outer1_3[11]);
+      let canChannelBeDefaultResult = obj.canChannelBeDefault(nextResult.channel.guild_id, nextResult.channel.id);
+      if (canChannelBeDefaultResult) {
+        let obj2 = set;
+        let tmp6 = nextResult;
+        let hasItem = set.has(tmp2.channel.id);
+        if (hasItem) {
+          let tmp8 = nextResult;
+          let channel = tmp2.channel;
+          hasItem = !channel.isCategory();
         }
-        if (canChannelBeDefaultResult) {
-          {}[value.channel.id] = value;
-          let arr = items.push(value.channel);
-          let tmp10 = outer1_18;
-          if (outer1_18(value.channel)) {
-            arr = items1.push(value.channel.id);
+        if (!hasItem) {
+          let tmp9 = nextResult;
+          let channel2 = tmp2.channel;
+          let isThreadResult = channel2.isThread();
+          let hasItem1 = !isThreadResult;
+          if (!isThreadResult) {
+            let tmp12 = nextResult;
+            hasItem1 = null != tmp2.channel.parent_id;
           }
+          if (hasItem1) {
+            let tmp13 = nextResult;
+            hasItem1 = obj2.has(tmp2.channel.parent_id);
+          }
+          hasItem = hasItem1;
         }
-        iter2 = tmp();
-        iter = iter2;
-      } while (!iter2.done);
+        canChannelBeDefaultResult = hasItem;
+      }
+      if (canChannelBeDefaultResult) {
+        let tmp14 = nextResult;
+        {}[tmp2.channel.id] = tmp2;
+        let arr = items.push(tmp2.channel);
+        let tmp16 = outer1_15;
+        if (outer1_15(tmp2.channel)) {
+          let tmp17 = nextResult;
+          arr = items1.push(tmp2.channel.id);
+        }
+      }
+      continue;
     }
     const items2 = [items1, items];
     return items2;
   }, items1, areStatesEqual);
 };
-export const getSelectedRoleIds = function getSelectedRoleIds(found) {
-  const mapped = found.map((roleIds) => roleIds.roleIds);
+export const getSelectedRoleIds = function getSelectedRoleIds(selectedOptions) {
+  const mapped = selectedOptions.map((roleIds) => roleIds.roleIds);
   const flatResult = mapped.flat();
-  return new Set(mapped.flat().filter(require(1327) /* isDiscordFrontendDevelopment */.isNotNullish));
+  return new Set(mapped.flat().filter(require(1351) /* isDiscordFrontendDevelopment */.isNotNullish));
 };
-export const getSelectedChannelIds = function getSelectedChannelIds(found) {
-  const mapped = found.map((channelIds) => channelIds.channelIds);
+export const getSelectedChannelIds = function getSelectedChannelIds(selectedOptions) {
+  const mapped = selectedOptions.map((channelIds) => channelIds.channelIds);
   const flatResult = mapped.flat();
-  return new Set(mapped.flat().filter(require(1327) /* isDiscordFrontendDevelopment */.isNotNullish));
+  return new Set(mapped.flat().filter(require(1351) /* isDiscordFrontendDevelopment */.isNotNullish));
 };
-export const getProviderConnectionState = function getProviderConnectionState(stateFromStores) {
-  const found = stateFromStores.filter((connection_type) => connection_type.connection_type === outer1_10.PROVIDER_CONNECTED_ACCOUNT && connection_type.provider_id);
+export const getProviderConnectionState = function getProviderConnectionState(connections) {
+  const found = connections.filter((connection_type) => {
+    let BooleanResult = connection_type.connection_type === constants.PROVIDER_CONNECTED_ACCOUNT;
+    if (BooleanResult) {
+      const _Boolean = Boolean;
+      BooleanResult = Boolean(connection_type.provider_id);
+    }
+    return BooleanResult;
+  });
   const connected = [];
   const notConnected = [];
   const item = found.forEach((provider_id) => {
@@ -507,8 +522,15 @@ export const getProviderConnectionState = function getProviderConnectionState(st
   });
   return { connected, notConnected };
 };
-export const getApplicationConnectionState = function getApplicationConnectionState(stateFromStores) {
-  const found = stateFromStores.filter((connection_type) => connection_type.connection_type === outer1_10.APPLICATION && connection_type.application_id);
+export const getApplicationConnectionState = function getApplicationConnectionState(connections) {
+  const found = connections.filter((connection_type) => {
+    let BooleanResult = connection_type.connection_type === constants.APPLICATION;
+    if (BooleanResult) {
+      const _Boolean = Boolean;
+      BooleanResult = Boolean(connection_type.application_id);
+    }
+    return BooleanResult;
+  });
   const connected = [];
   const notConnected = [];
   let closure_2 = connected(FetchState[16]).default;

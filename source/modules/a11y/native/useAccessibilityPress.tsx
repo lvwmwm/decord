@@ -1,28 +1,28 @@
-// Module ID: 8269
-// Function ID: 66156
+// Module ID: 8293
+// Function ID: 8294
 // Name: useAccessibilityPress
-// Dependencies: [31, 2]
+// Dependencies: [19, 2]
 // Exports: default
 
-// Module 8269 (useAccessibilityPress)
-import result from "result";
+// Module 8293 (useAccessibilityPress)
+import noop from "noop";
 
 const result = require("set").fileFinishedImporting("modules/a11y/native/useAccessibilityPress.tsx");
 
-export default function useAccessibilityPress(arg0, arg1) {
-  const React = arg0;
+export default function useAccessibilityPress(stateFromStores) {
+  const React = stateFromStores;
   let closure_1 = arg1;
-  let closure_2 = React.useRef(arg0);
-  let items = [arg0];
+  let closure_2 = React.useRef(stateFromStores);
+  let items = [stateFromStores];
   const effect = React.useEffect(() => {
-    closure_2.current = result;
+    closure_2.current = noop;
   }, items);
   const items1 = [arg1];
   return React.useMemo(() => {
     let obj = {
       onAccessibilityAction(nativeEvent) {
         if ("activate" === nativeEvent.nativeEvent.actionName) {
-          outer1_2.current();
+          ref.current();
         }
       },
       accessibilityActions: items

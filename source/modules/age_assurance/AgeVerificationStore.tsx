@@ -1,192 +1,142 @@
-// Module ID: 7603
-// Function ID: 60734
-// Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 1850, 587, 566, 686, 2]
+// Module ID: 6779
+// Function ID: 6780
+// Name: initialize
+// Dependencies: [1874, 595, 589, 709, 2]
 
-// Module 7603 (_isNativeReflectConstruct)
-import Storage from "Storage";
-import initialize from "initialize";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 6779 (initialize)
+import mergeGuildAvatar from "mergeGuildAvatar";
+import { Store } from "initialize";
 
 const require = arg1;
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
-  }
-  const result = _isNativeReflectConstruct();
+let c3 = 86400000;
+let c4 = null;
+let c5 = null;
+let c6 = false;
+let unchecked = "unchecked";
+let c8 = null;
+class AgeVerificationStore extends Store {
 }
-function getStorageKey() {
-  currentUser = currentUser.getCurrentUser();
-  let id;
-  if (null != currentUser) {
-    id = currentUser.id;
-  }
-  let combined = null;
-  if (null != id) {
-    const _HermesInternal = HermesInternal;
-    combined = "AgeVerificationStore_" + id;
-  }
-  return combined;
-}
-function resetToDefaults() {
-  const unchecked = "unchecked";
-  let c12 = null;
-}
-function persist() {
-  const tmp = getStorageKey();
-  if (null != tmp) {
-    const Storage = require(587) /* Storage */.Storage;
-    const obj = { reactiveCheckStatus: unchecked, reactiveCheckMissAt: c12 };
-    const result = Storage.set(tmp, obj);
-  }
-}
-function loadFromStorage() {
-  const tmp = getStorageKey();
-  if (null != tmp) {
-    const Storage = require(587) /* Storage */.Storage;
-    const value = Storage.get(tmp);
-    if (null != value) {
-      if ("object" === typeof value) {
-        const reactiveCheckStatus = value.reactiveCheckStatus;
-        let str2 = "unchecked";
-        if (null != reactiveCheckStatus) {
-          str2 = reactiveCheckStatus;
-        }
-        const reactiveCheckMissAt = value.reactiveCheckMissAt;
-        let tmp9 = null;
-        if (null != reactiveCheckMissAt) {
-          tmp9 = reactiveCheckMissAt;
-        }
-        let tmp10 = "miss" === str2 && null != tmp9;
-        if (tmp10) {
-          const _Date = Date;
-          tmp10 = Date.now() - tmp9 >= c8;
-        }
-        if (tmp10) {
-          resetToDefaults();
-        } else {
-          let c12 = tmp9;
-        }
-      }
-    }
-    resetToDefaults();
-  } else {
-    resetToDefaults();
-  }
-}
-function isMissWithinTTL() {
+const prototype = AgeVerificationStore.prototype;
+prototype["initialize"] = function initialize() {
+  this.waitFor(mergeGuildAvatar);
+};
+Object.defineProperty(prototype, "loading", {
+  get: function loading() {
+    return c6;
+  },
+  set: undefined
+});
+Object.defineProperty(prototype, "methods", {
+  get: function methods(arg0) {
+    return c4;
+  },
+  set: undefined
+});
+Object.defineProperty(prototype, "methodsV2", {
+  get: function methodsV2() {
+    return c5;
+  },
+  set: undefined
+});
+prototype["getReactiveCheckStatus"] = function getReactiveCheckStatus() {
+  return unchecked;
+};
+prototype["getReactiveCheckMiss"] = function getReactiveCheckMiss() {
   let tmp = "miss" === unchecked;
   if (tmp) {
-    tmp = null != c12;
+    tmp = null != c8;
   }
   if (tmp) {
     const _Date = Date;
-    tmp = Date.now() - c12 < c8;
+    tmp = Date.now() - c8 < c3;
   }
   return tmp;
-}
-let c8 = 86400000;
-let c9 = null;
-let c10 = false;
-let unchecked = "unchecked";
-let c12 = null;
-let tmp2 = ((Store) => {
-  class AgeVerificationStore {
-    constructor() {
-      self = this;
-      tmp = outer1_2(this, AgeVerificationStore);
-      obj = outer1_5(AgeVerificationStore);
-      tmp2 = outer1_4;
-      if (outer1_13()) {
-        tmp6 = globalThis;
-        _Reflect = Reflect;
-        tmp7 = outer1_5;
-        tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, outer1_5(self).constructor);
-      } else {
-        tmp3 = arguments;
-        tmp4 = arguments;
-        constructResult = obj(...arguments);
+};
+prototype["getReactiveCheckPassed"] = function getReactiveCheckPassed() {
+  return "passed" === unchecked;
+};
+prototype["shouldCallReactiveCheck"] = function shouldCallReactiveCheck() {
+  let tmp2 = "passed" !== unchecked;
+  if (tmp2) {
+    let tmp3 = "suppress" !== tmp;
+    if (tmp3) {
+      let tmp4 = "miss" === tmp;
+      if (tmp4) {
+        tmp4 = null != c8;
       }
-      return tmp2(self, constructResult);
+      if (tmp4) {
+        const _Date = Date;
+        tmp4 = Date.now() - c8 < c3;
+      }
+      tmp3 = !tmp4;
     }
+    tmp2 = tmp3;
   }
-  callback2(AgeVerificationStore, Store);
-  let obj = {
-    key: "initialize",
-    value() {
-      this.waitFor(outer1_7);
-    }
-  };
-  const items = [obj, , , , , , ];
-  obj = {
-    key: "loading",
-    get() {
-      return outer1_10;
-    }
-  };
-  items[1] = obj;
-  obj = {
-    key: "methods",
-    get() {
-      return outer1_9;
-    }
-  };
-  items[2] = obj;
-  items[3] = {
-    key: "getReactiveCheckStatus",
-    value() {
-      return outer1_11;
-    }
-  };
-  items[4] = {
-    key: "getReactiveCheckMiss",
-    value() {
-      return outer1_18();
-    }
-  };
-  items[5] = {
-    key: "getReactiveCheckPassed",
-    value() {
-      return "passed" === outer1_11;
-    }
-  };
-  items[6] = {
-    key: "shouldCallReactiveCheck",
-    value() {
-      let tmp = "passed" !== outer1_11;
-      if (tmp) {
-        let tmp3 = "suppress" !== outer1_11;
-        if (tmp3) {
-          tmp3 = !outer1_18();
-        }
-        tmp = tmp3;
-      }
-      return tmp;
-    }
-  };
-  return callback(AgeVerificationStore, items);
-})(require("initialize").Store);
-tmp2.displayName = "AgeVerificationStore";
-tmp2 = new tmp2(require("dispatcher"), {
+  return tmp2;
+};
+AgeVerificationStore.displayName = "AgeVerificationStore";
+const ageVerificationStore = new AgeVerificationStore(require("dispatcher"), {
   AGE_VERIFICATION_METHODS_LOAD_START: function handleAgeVerificationMethodsLoadStart() {
-    let c10 = true;
+    let c6 = true;
   },
   AGE_VERIFICATION_METHODS_LOAD_SUCCESS: function handleAgeVerificationMethodsLoadSuccess(methods) {
     methods = methods.methods;
-    let c10 = false;
+    let c6 = false;
   },
   AGE_VERIFICATION_METHODS_LOAD_FAILURE: function handleAgeVerificationMethodsLoadFailure() {
-    let c10 = false;
+    let c6 = false;
+  },
+  AGE_VERIFICATION_METHODS_V2_LOAD_SUCCESS: function handleAgeVerificationMethodsV2LoadSuccess(methods) {
+    methods = methods.methods;
+  },
+  INITIATE_AGE_VERIFICATION: function invalidateAgeVerificationMethodsV2() {
+    let c5 = null;
   },
   CONNECTION_OPEN: function handleConnectionOpen() {
-    loadFromStorage();
+    const currentUser = authStore.getCurrentUser();
+    let id;
+    if (currentUser != null) {
+      id = currentUser.id;
+    }
+    let combined = null;
+    if (null != id) {
+      const _HermesInternal = HermesInternal;
+      combined = "AgeVerificationStore_" + id;
+    }
+    if (null != combined) {
+      const Storage = require(595) /* Storage */.Storage;
+      const value = Storage.get(combined);
+      if (null != value) {
+        if (typeof value === "ay") {
+          let str4 = value.reactiveCheckStatus;
+          if (str4 == null) {
+            str4 = "unchecked";
+          }
+          let reactiveCheckMissAt = value.reactiveCheckMissAt;
+          if (reactiveCheckMissAt == null) {
+            reactiveCheckMissAt = null;
+          }
+          let tmp9 = "miss" === str4 && null != reactiveCheckMissAt;
+          if (tmp9) {
+            const _Date = Date;
+            tmp9 = Date.now() - reactiveCheckMissAt >= c3;
+          }
+          if (tmp9) {
+            let unchecked = "unchecked";
+            let c8 = null;
+          } else {
+            unchecked = str4;
+            c8 = reactiveCheckMissAt;
+          }
+        }
+      }
+      unchecked = "unchecked";
+      c8 = null;
+    } else {
+      unchecked = "unchecked";
+      c8 = null;
+    }
+    let c5 = null;
   },
   AGE_VERIFICATION_CHECK_RESULT_SET: function handleReactiveCheckResultSet(status) {
     status = status.status;
@@ -195,14 +145,47 @@ tmp2 = new tmp2(require("dispatcher"), {
       const _Date = Date;
       timestamp = Date.now();
     }
-    persist();
+    const currentUser = authStore.getCurrentUser();
+    let id;
+    if (currentUser != null) {
+      id = currentUser.id;
+    }
+    let combined = null;
+    if (null != id) {
+      const _HermesInternal = HermesInternal;
+      combined = "AgeVerificationStore_" + id;
+    }
+    if (null != combined) {
+      const Storage = require(595) /* Storage */.Storage;
+      const obj = { reactiveCheckStatus: null, reactiveCheckMissAt: null };
+      obj[0] = status;
+      obj[1] = timestamp;
+      const result = Storage.set(combined, obj);
+    }
   },
   AGE_VERIFICATION_RESET: function handleAgeVerificationReset() {
     const suppress = "suppress";
-    let c12 = null;
-    persist();
+    let c8 = null;
+    const currentUser = authStore.getCurrentUser();
+    let id;
+    if (currentUser != null) {
+      id = currentUser.id;
+    }
+    let combined = null;
+    if (null != id) {
+      const _HermesInternal = HermesInternal;
+      combined = "AgeVerificationStore_" + id;
+    }
+    if (null != combined) {
+      const Storage = require(595) /* Storage */.Storage;
+      const obj = { reactiveCheckStatus: null, reactiveCheckMissAt: null };
+      obj[0] = suppress;
+      obj[1] = c8;
+      const result = Storage.set(combined, obj);
+    }
+    let c5 = null;
   }
 });
-let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/age_assurance/AgeVerificationStore.tsx");
+let result = require("initialize").fileFinishedImporting("modules/age_assurance/AgeVerificationStore.tsx");
 
-export default tmp2;
+export default ageVerificationStore;

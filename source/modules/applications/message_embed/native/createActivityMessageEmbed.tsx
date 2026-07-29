@@ -1,10 +1,10 @@
-// Module ID: 12329
-// Function ID: 95982
+// Module ID: 12351
+// Function ID: 12352
 // Name: createActivityMessageEmbed
-// Dependencies: [11109, 12256, 2]
+// Dependencies: [11133, 12280, 2]
 // Exports: createActivityMessageEmbed
 
-// Module 12329 (createActivityMessageEmbed)
+// Module 12351 (createActivityMessageEmbed)
 const result = require("set").fileFinishedImporting("modules/applications/message_embed/native/createActivityMessageEmbed.tsx");
 
 export const createActivityMessageEmbed = function createActivityMessageEmbed(app) {
@@ -14,7 +14,7 @@ export const createActivityMessageEmbed = function createActivityMessageEmbed(ap
   let theme;
   app = app.app;
   ({ theme, embedUrl, message, params } = app);
-  let obj = require(11109) /* createBlockedAppMessageEmbed */;
+  let obj = require(11133) /* createAppMessageEmbed */;
   const appMessageEmbed = obj.createAppMessageEmbed({ theme, embedUrl, message, app });
   if (null == appMessageEmbed) {
     return null;
@@ -23,25 +23,24 @@ export const createActivityMessageEmbed = function createActivityMessageEmbed(ap
     if (null == linkId) {
       return appMessageEmbed;
     } else {
-      const orFetchCustomActivityLink = require(12256) /* fetchCustomActivityLink */.getOrFetchCustomActivityLink(app.id, linkId);
-      let tmp7 = null;
+      const orFetchCustomActivityLink = tmp(12280).getOrFetchCustomActivityLink(app.id, linkId);
+      let tmp8 = null;
       if (null != orFetchCustomActivityLink) {
         obj = {};
         const merged = Object.assign(appMessageEmbed);
-        obj["title"] = app.name;
-        obj["header"] = orFetchCustomActivityLink.title;
-        obj["info"] = orFetchCustomActivityLink.description;
-        obj["bannerRatio"] = "bot";
-        const assetURL = orFetchCustomActivityLink.getAssetURL();
-        let tmp6 = null;
-        if (null != assetURL) {
-          tmp6 = assetURL;
+        obj.title = app.name;
+        ({ title: obj2.header, description: obj2.info } = orFetchCustomActivityLink);
+        obj.bannerRatio = "bot";
+        let assetURL = orFetchCustomActivityLink.getAssetURL();
+        if (assetURL == null) {
+          assetURL = null;
         }
-        obj["staticBannerSrc"] = tmp6;
-        obj["tagline"] = null;
-        tmp7 = obj;
+        obj.staticBannerSrc = assetURL;
+        obj.tagline = null;
+        tmp8 = obj;
       }
-      return tmp7;
+      return tmp8;
     }
   }
+  tmp = require;
 };

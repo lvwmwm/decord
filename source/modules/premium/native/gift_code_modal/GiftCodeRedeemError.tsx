@@ -1,64 +1,61 @@
-// Module ID: 12309
-// Function ID: 95957
+// Module ID: 12331
+// Function ID: 12332
 // Name: GiftCodeRedeemError
-// Dependencies: [31, 27, 33, 4165, 689, 1457, 5155, 12310, 12311, 4161, 1212, 4578, 4372, 2]
+// Dependencies: [19, 17, 21, 4189, 712, 1481, 5177, 12332, 12333, 4185, 1236, 4600, 4395, 2]
 // Exports: default
 
-// Module 12309 (GiftCodeRedeemError)
-import "result";
+// Module 12331 (GiftCodeRedeemError)
+import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_3;
-let closure_4;
-let closure_5;
+let c3;
+let c4;
+let c5;
 let closure_6;
-let closure_7;
+let error;
 const require = arg1;
-({ Image: closure_3, View: closure_4, ScrollView: closure_5 } = get_ActivityIndicator);
-({ jsx: closure_6, jsxs: closure_7 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { flex: 1, justifyContent: "space-between", backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW };
-_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.body = { flex: 1, alignItems: "center", justifyContent: "center", paddingTop: 28, paddingBottom: 12, paddingHorizontal: 32 };
-_createForOfIteratorHelperLoose.header = { marginTop: 32, textAlign: "center" };
-_createForOfIteratorHelperLoose.message = { marginTop: 8, textAlign: "center" };
-_createForOfIteratorHelperLoose.footer = { paddingHorizontal: 24 };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+({ Image: c3, View: c4, ScrollView: c5 } = get_ActivityIndicator);
+({ jsx: closure_6, jsxs: error } = jsxProd);
+createCacheKey = { container: null, body: null, header: null, message: null, footer: null };
+createCacheKey = { flex: 1, justifyContent: "space-between", backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { flex: 1, alignItems: "center", justifyContent: "center", paddingTop: 28, paddingBottom: 12, paddingHorizontal: 32 };
+createCacheKey[2] = { marginTop: 32, textAlign: "center" };
+createCacheKey[3] = { marginTop: 8, textAlign: "center" };
+createCacheKey[4] = { paddingHorizontal: 24 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
 const result = require("jsxProd").fileFinishedImporting("modules/premium/native/gift_code_modal/GiftCodeRedeemError.tsx");
 
 export default function GiftCodeRedeemError(children) {
-  const tmp = _createForOfIteratorHelperLoose();
-  let obj = require(1457) /* Link */;
+  const tmp = createCacheKey();
+  let obj = require(1481) /* Link */;
   const theme = obj.useTheme();
-  obj = { bottom: true, style: tmp.container };
-  obj = { contentContainerStyle: tmp.body, alwaysBounceVertical: false };
-  const obj1 = {};
+  obj = { bottom: true, style: tmp.container, children: null };
+  obj = { contentContainerStyle: tmp.body, alwaysBounceVertical: false, children: null };
   if (theme.dark) {
-    let tmp7Result = tmp7(12310);
+    let tmp9Result = tmp9(12332);
   } else {
-    tmp7Result = tmp7(12311);
+    tmp9Result = tmp9(12333);
   }
-  obj1.source = tmp7Result;
-  const items = [callback(closure_3, obj1), , ];
-  const obj2 = { variant: "heading-xl/bold", style: tmp.header };
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj2.children = intl.formatToMarkdownString(require(1212) /* getSystemLocale */.t.JUvC0s, {});
-  items[1] = callback(require(4161) /* Text */.Text, obj2);
-  items[2] = callback(require(4161) /* Text */.Text, { variant: "text-lg/medium", style: tmp.message, children: children.message });
-  obj.children = items;
+  const items = [closure_6(closure_3, { source: tmp9Result }), , ];
+  const obj1 = { variant: "heading-xl/bold", style: tmp.header, children: null };
+  const intl = tmp2(1236).intl;
+  obj1[2] = intl.formatToMarkdownString(require(1236) /* getSystemLocale */.t.JUvC0s, {});
+  items[1] = closure_6(require(4185) /* Text */.Text, obj1);
+  items[2] = closure_6(require(4185) /* Text */.Text, { variant: "text-lg/medium", style: tmp.message, children: children.message });
+  obj[2] = items;
   const items1 = [closure_7(closure_5, obj), ];
-  const obj4 = { style: tmp.footer };
-  const obj5 = {};
-  const intl2 = require(1212) /* getSystemLocale */.intl;
-  obj5.text = intl2.string(require(1212) /* getSystemLocale */.t.cpT0Cq);
-  obj5.size = "md";
-  obj5.onPress = function onPress() {
-    return outer1_1(outer1_2[12]).pop();
+  const obj3 = { style: tmp.footer, children: null };
+  const obj4 = { text: null, size: "md", onPress: null };
+  const intl2 = tmp2(1236).intl;
+  obj4[0] = intl2.string(require(1236) /* getSystemLocale */.t.cpT0Cq);
+  obj4[2] = function onPress() {
+    return callback(table[12]).pop();
   };
-  obj4.children = callback(require(4578) /* Button */.Button, obj5);
-  items1[1] = callback(closure_4, obj4);
-  obj.children = items1;
-  return closure_7(require(5155) /* SafeAreaPaddingView */.SafeAreaPaddingView, obj);
+  obj3[1] = closure_6(require(4600) /* Button */.Button, obj4);
+  items1[1] = closure_6(closure_4, obj3);
+  obj[2] = items1;
+  return closure_7(require(5177) /* SafeAreaPaddingView */.SafeAreaPaddingView, obj);
 };

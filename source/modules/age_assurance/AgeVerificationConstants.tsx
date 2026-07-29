@@ -1,10 +1,10 @@
-// Module ID: 6727
-// Function ID: 59162
+// Module ID: 6748
+// Function ID: 6749
 // Name: set
-// Dependencies: [653, 6728, 1212, 6726, 1921, 2717, 2]
+// Dependencies: [676, 6749, 1236, 6747, 1945, 2741, 2]
 // Exports: getAgeVerificationGetStartedSteps
 
-// Module 6727 (set)
+// Module 6748 (set)
 import { HelpdeskArticles } from "ME";
 import set from "getSystemLocale";
 
@@ -22,23 +22,23 @@ let result = set.fileFinishedImporting("modules/age_assurance/AgeVerificationCon
 export const FULLSCREEN_AGE_VERIFICATION_ENTRY_POINTS = set;
 export const getAgeVerificationGetStartedSteps = function getAgeVerificationGetStartedSteps(arg0) {
   const _require = arg0;
-  let obj = {};
-  const intl = _require(1212).intl;
-  obj.title = intl.string(_require(1212).t.HphYKp);
-  const intl2 = _require(1212).intl;
-  obj.description = intl2.string(_require(1212).t["GCZC+9"]);
+  let obj = { title: null, description: null };
+  const intl = _require(1236).intl;
+  obj[0] = intl.string(_require(1236).t.HphYKp);
+  const intl2 = _require(1236).intl;
+  obj[1] = intl2.string(_require(1236).t["GCZC+9"]);
   const items = [obj, , ];
-  obj = {};
-  const intl3 = _require(1212).intl;
-  obj.title = intl3.string(_require(1212).t.nkO4L3);
-  const intl4 = _require(1212).intl;
-  obj.description = intl4.string(_require(1212).t.rHZFsH);
+  obj = { title: null, description: null };
+  const intl3 = _require(1236).intl;
+  obj[0] = intl3.string(_require(1236).t.nkO4L3);
+  const intl4 = _require(1236).intl;
+  obj[1] = intl4.string(_require(1236).t.rHZFsH);
   items[1] = obj;
-  obj = {};
-  const intl5 = _require(1212).intl;
-  obj.title = intl5.string(_require(1212).t.aVwLfn);
-  const intl6 = _require(1212).intl;
-  obj.description = intl6.format(_require(1212).t.n5vd1E, {
+  obj = { title: null, description: null };
+  const intl5 = _require(1236).intl;
+  obj[0] = intl5.string(_require(1236).t.aVwLfn);
+  const intl6 = _require(1236).intl;
+  obj[1] = intl6.format(_require(1236).t.n5vd1E, {
     handleOnHelpUrlHook() {
       const obj = outer1_1(outer1_2[3]);
       obj.openUrl(outer1_1(outer1_2[4]).getArticleURL(outer1_3.TIGGER_PAWTECT_SYSTEM_DMS));

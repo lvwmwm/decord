@@ -1,11 +1,11 @@
-// Module ID: 12358
-// Function ID: 96117
+// Module ID: 12380
+// Function ID: 12381
 // Name: getJoinFromSupportedPlatformsIconKeys
-// Dependencies: [31, 653, 2]
+// Dependencies: [19, 676, 2]
 // Exports: useJoinFromSupportedPlatformsIconKeys
 
-// Module 12358 (getJoinFromSupportedPlatformsIconKeys)
-import result from "result";
+// Module 12380 (getJoinFromSupportedPlatformsIconKeys)
+import noop from "noop";
 import { ActivityGamePlatforms } from "ME";
 
 function getJoinFromSupportedPlatformsIconKeys(isGameLaunchable) {
@@ -13,45 +13,42 @@ function getJoinFromSupportedPlatformsIconKeys(isGameLaunchable) {
   let platforms;
   ({ platforms, currentPlatform } = isGameLaunchable);
   const set = new Set(platforms);
-  const items = [];
   if (null != platforms) {
     if (0 !== platforms.length) {
       if (null != currentPlatform) {
         if (set.has(currentPlatform)) {
-          return tmp23;
+          return tmp15;
         }
       }
+      const items = [];
       if (set.has(ActivityGamePlatforms.ANDROID)) {
-        if (set.has(ActivityGamePlatforms.IOS)) {
+        if (set.has(tmp.IOS)) {
           items.push(obj.MOBILE);
         }
-        let hasItem = set.has(ActivityGamePlatforms.PS4);
-        if (!hasItem) {
-          hasItem = set.has(ActivityGamePlatforms.PS5);
-        }
-        if (hasItem) {
+        if (tmp8) {
           items.push(obj.PLAYSTATION);
         }
-        if (set.has(ActivityGamePlatforms.XBOX)) {
+        if (set.has(tmp.XBOX)) {
           items.push(obj.XBOX);
         }
-        if (set.has(ActivityGamePlatforms.DESKTOP)) {
+        if (set.has(tmp.DESKTOP)) {
           items.push(obj.DESKTOP);
         }
-        tmp23 = items;
-        if (set.has(ActivityGamePlatforms.META_QUEST)) {
+        tmp15 = items;
+        if (set.has(tmp.META_QUEST)) {
           items.push(obj.VR);
-          tmp23 = items;
+          tmp15 = items;
         }
+        tmp8 = set.has(tmp.PS4) || set.has(tmp.PS5);
       }
       if (set.has(ActivityGamePlatforms.ANDROID)) {
         items.push(obj.ANDROID);
-      } else if (set.has(ActivityGamePlatforms.IOS)) {
+      } else if (set.has(tmp.IOS)) {
         items.push(obj.IOS);
       }
     }
   }
-  tmp23 = closure_3;
+  tmp15 = closure_3;
 }
 let obj = { DESKTOP: "desktop", MOBILE: "mobile", ANDROID: "android", IOS: "ios", PLAYSTATION: "playstation", XBOX: "xbox", VR: "vr" };
 obj = { [ActivityGamePlatforms.DESKTOP]: obj.DESKTOP, [ActivityGamePlatforms.ANDROID]: obj.ANDROID, [ActivityGamePlatforms.IOS]: obj.IOS, [ActivityGamePlatforms.XBOX]: obj.XBOX, [ActivityGamePlatforms.PS4]: obj.PLAYSTATION, [ActivityGamePlatforms.PS5]: obj.PLAYSTATION, [ActivityGamePlatforms.SAMSUNG]: null, [ActivityGamePlatforms.EMBEDDED]: null, [ActivityGamePlatforms.META_QUEST]: obj.VR };

@@ -1,30 +1,30 @@
-// Module ID: 7697
-// Function ID: 61425
+// Module ID: 7720
+// Function ID: 7721
 // Name: createThreadEmbed
-// Dependencies: [27, 4157, 4202, 3977, 5026, 7696, 7698, 3794, 7699, 5839, 3795, 6048, 1278, 1194, 1348, 1918, 1838, 3802, 6131, 1850, 4158, 7691, 653, 7701, 4355, 7702, 21, 7703, 7704, 1212, 7706, 7707, 7708, 4501, 1360, 6054, 7713, 4606, 7714, 7716, 5904, 7718, 7840, 7841, 7860, 5859, 5844, 3838, 7861, 7866, 7792, 7907, 4395, 1395, 1392, 7910, 1273, 5521, 7966, 1327, 7967, 3782, 4974, 7968, 7969, 3835, 7972, 7980, 7917, 6028, 689, 7981, 7721, 7983, 7984, 7837, 7987, 8007, 12328, 12347, 12349, 12363, 7724, 7725, 12364, 12367, 12368, 12369, 7726, 12370, 2]
+// Dependencies: [17, 4181, 4226, 4001, 5048, 7719, 7721, 3818, 7722, 5857, 3819, 6066, 1302, 1218, 1372, 1942, 1862, 3826, 6149, 1874, 4182, 7714, 676, 7724, 4380, 7725, 11, 7726, 7727, 1236, 7729, 7730, 7731, 4524, 1384, 6072, 7736, 4628, 7737, 7739, 5923, 7741, 7863, 7864, 7883, 5877, 5862, 3862, 7884, 7889, 7815, 7932, 4418, 1419, 1416, 7935, 1297, 5539, 7991, 1351, 7992, 3806, 4996, 7993, 7994, 3859, 7997, 8005, 7942, 6046, 712, 8006, 7744, 8008, 8009, 7860, 8012, 8031, 12350, 12369, 12371, 12385, 7747, 7748, 12386, 12389, 12390, 12391, 7749, 12392, 2]
 
-// Module 7697 (createThreadEmbed)
-import { processColor } from "shouldUseOldMaxMessageCount";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_5 from "_isNativeReflectConstruct";
-import closure_6 from "_isNativeReflectConstruct";
-import closure_7 from "_isNativeReflectConstruct";
-import closure_8 from "_isNativeReflectConstruct";
-import closure_9 from "_isNativeReflectConstruct";
-import closure_10 from "_isNativeReflectConstruct";
-import closure_11 from "_isNativeReflectConstruct";
-import closure_12 from "_isNativeReflectConstruct";
-import { ReferencedMessageState } from "_isNativeReflectConstruct";
-import closure_14 from "_isNativeReflectConstruct";
-import closure_15 from "_isNativeReflectConstruct";
-import closure_16 from "_isNativeReflectConstruct";
-import closure_17 from "_isNativeReflectConstruct";
-import closure_18 from "_isNativeReflectConstruct";
-import closure_19 from "_isNativeReflectConstruct";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import closure_21 from "_isNativeReflectConstruct";
-import closure_22 from "_isNativeReflectConstruct";
-import closure_23 from "_isNativeReflectConstruct";
+// Module 7720 (createThreadEmbed)
+import { processColor } from "upsertRelationship";
+import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
+import addApplication from "addApplication";
+import isSyncedModeThemesEnabled from "isSyncedModeThemesEnabled";
+import getEmojiToGroupId from "getEmojiToGroupId";
+import handleMessageSendFailedAutomod from "handleMessageSendFailedAutomod";
+import deleteNonce from "deleteNonce";
+import initialize from "initialize";
+import set from "set";
+import processMessage from "processMessage";
+import { ReferencedMessageState } from "processMessage";
+import storeThread from "storeThread";
+import updateState from "updateState";
+import handleThemeChange from "handleThemeChange";
+import fetchFingerprint from "fetchFingerprint";
+import ensureGuildLoaded from "ensureGuildLoaded";
+import trackCommunicationDisabled from "trackCommunicationDisabled";
+import createGuildRecordFromRust from "createGuildRecordFromRust";
+import upsertRelationship from "upsertRelationship";
+import closure_22 from "initialize";
+import mergeGuildAvatar from "mergeGuildAvatar";
 import MESSAGE_GROUP_SPACING from "MESSAGE_GROUP_SPACING";
 import { ReferencedMessageRowState } from "Changeset";
 import ME from "ME";
@@ -37,120 +37,114 @@ let closure_28;
 let closure_29;
 let closure_30;
 let closure_31;
-function createThreadEmbed(message, roleStyle, isInlineReplyPreview, channel1, options, forcedTheme) {
+function createThreadEmbed(message, roleStyle, isInlineReplyPreview, channel1, options, arg5) {
   if (!isInlineReplyPreview) {
-    if (message.hasFlag(closure_30.HAS_THREAD)) {
+    if (message.hasFlag(constants3.HAS_THREAD)) {
       if (null != channel1) {
-        let channelName = require(4355) /* computeDefaultGroupDmNameFromUserIds */.computeChannelName(channel1, closure_23, closure_21);
-        const backgroundColor = importDefault(7702)(forcedTheme).baseColors.backgroundColor;
-        const obj11 = require(4355) /* computeDefaultGroupDmNameFromUserIds */;
-        const mostRecentMessage = store3.getMostRecentMessage(importDefault(21).castMessageIdAsChannelId(message.id));
-        const obj12 = importDefault(21);
-        const count = store3.getCount(importDefault(21).castMessageIdAsChannelId(message.id));
-        const obj13 = importDefault(21);
-        let intl5 = require(7703) /* shouldUseOldMaxMessageCount */.formatMobileMessageCountLabel(count, channel1.id);
-        const obj14 = require(7703) /* shouldUseOldMaxMessageCount */;
-        let string2 = require(7703) /* shouldUseOldMaxMessageCount */.formatMessageCountLabel(count, channel1.id);
+        let string2Result = dependencyMap;
+        const channelName = require(4380) /* computeChannelName */.computeChannelName(channel1, mergeGuildAvatar, upsertRelationship);
+        const backgroundColor = importDefault(7725)(arg5).baseColors.backgroundColor;
+        const obj11 = require(4380) /* computeChannelName */;
+        const tmp19 = importDefault;
+        const mostRecentMessage = store3.getMostRecentMessage(importDefault(11).castMessageIdAsChannelId(message.id));
+        const obj12 = importDefault(11);
+        const count = store3.getCount(importDefault(11).castMessageIdAsChannelId(message.id));
+        const obj13 = importDefault(11);
+        let intl5 = require(7726) /* _formatMessageCountLabel */.formatMobileMessageCountLabel(count, channel1.id);
+        const obj14 = require(7726) /* _formatMessageCountLabel */;
+        let string2 = require(7726) /* _formatMessageCountLabel */.formatMessageCountLabel(count, channel1.id);
         if (null != count) {
           if (count > 0) {
-            let obj1 = require(7704) /* getSpoilerGatingChannelId */;
-            if (obj1.isChannelSpoilerGated(channel1)) {
-              let obj = { title: channelName, messageCountLabel: intl5, messageCountAccessibilityLabel: string2 };
-              channelName = require;
-              intl5 = require(1212) /* getSystemLocale */.intl;
+            let tmp15Result = tmp15(7727);
+            if (tmp15Result.isChannelSpoilerGated(channel1)) {
+              let obj = { title: null, messageCountLabel: null, messageCountAccessibilityLabel: null, messagePreviewString: null, archived: false, backgroundColor: null };
+              obj[0] = channelName;
+              obj[1] = intl5;
+              obj[2] = string2;
+              intl5 = tmp15(1236).intl;
               string2 = intl5.string;
-              obj.messagePreviewString = string2(require(1212) /* getSystemLocale */.t["5uaI/7"]);
-              obj.archived = false;
-              obj.backgroundColor = backgroundColor;
-              obj1 = obj;
+              string2Result = string2(tmp15(1236).t["5uaI/7"]);
+              obj[3] = string2Result;
+              obj[5] = backgroundColor;
+              let obj1 = obj;
             } else {
               const threadMetadata = channel1.threadMetadata;
-              if (null != threadMetadata) {
-                if (threadMetadata.archived) {
-                  obj = { title: channelName, messageCountLabel: intl5, messageCountAccessibilityLabel: string2 };
-                  const intl4 = require(1212) /* getSystemLocale */.intl;
-                  obj.messagePreviewString = intl4.string(require(1212) /* getSystemLocale */.t.ZTo4HS);
-                  obj.archived = true;
-                  obj.archivedIconUrl = require(7706) /* frozen */.getAssetUriForEmbed(importDefault(7707));
-                  obj.backgroundColor = backgroundColor;
-                  obj1 = obj;
-                  const obj9 = require(7706) /* frozen */;
-                }
+              let archived;
+              if (threadMetadata != null) {
+                archived = threadMetadata.archived;
               }
-              if (null != mostRecentMessage) {
-                if (mostRecentMessage.type !== constants.CHANNEL_NAME_CHANGE) {
-                  if (mostRecentMessage.type !== constants.THREAD_STARTER_MESSAGE) {
-                    if (!mostRecentMessage.blocked) {
-                      if (!mostRecentMessage.ignored) {
-                        obj1 = { title: channelName, messageCountLabel: intl5, messageCountAccessibilityLabel: string2 };
-                        const obj2 = { state: ReferencedMessageRowState.LOADED };
-                        const obj3 = { message: mostRecentMessage, roleStyle, options, isFirst: true, isEditing: false, canShowImages: true, isSystemDM: false, isInlineReplyPreview: true };
-                        obj2.message = createMessageContent(obj3);
-                        obj1.referencedMessage = obj2;
-                        obj1.backgroundColor = backgroundColor;
+              if (archived) {
+                obj = { title: null, messageCountLabel: null, messageCountAccessibilityLabel: null, messagePreviewString: null, archived: true, archivedIconUrl: null, backgroundColor: null };
+                obj[0] = channelName;
+                obj[1] = intl5;
+                obj[2] = string2;
+                const intl4 = tmp15(1236).intl;
+                obj[3] = intl4.string(tmp15(1236).t.ZTo4HS);
+                tmp15Result = tmp15(7729);
+                obj[5] = tmp15Result.getAssetUriForEmbed(tmp19(7730));
+                obj[6] = backgroundColor;
+                obj1 = obj;
+              } else {
+                if (null != mostRecentMessage) {
+                  if (mostRecentMessage.type !== constants.CHANNEL_NAME_CHANGE) {
+                    if (mostRecentMessage.type !== tmp23.THREAD_STARTER_MESSAGE) {
+                      if (!mostRecentMessage.blocked) {
+                        if (!mostRecentMessage.ignored) {
+                          obj1 = { title: null, messageCountLabel: null, messageCountAccessibilityLabel: null, referencedMessage: null, backgroundColor: null };
+                          obj1[0] = channelName;
+                          obj1[1] = intl5;
+                          obj1[2] = string2;
+                          const obj2 = { state: null, message: null };
+                          obj2[0] = ReferencedMessageRowState.LOADED;
+                          const obj3 = { message: null, roleStyle: null, options: null, isFirst: true, isEditing: false, canShowImages: true, isSystemDM: false, isInlineReplyPreview: true };
+                          obj3[0] = mostRecentMessage;
+                          obj3[1] = roleStyle;
+                          obj3[2] = options;
+                          obj2[1] = createMessageContent(obj3);
+                          obj1[3] = obj2;
+                          obj1[4] = backgroundColor;
+                        }
                       }
+                      const obj4 = { title: null, messageCountLabel: null, messageCountAccessibilityLabel: null, messagePreviewString: null, archived: false, backgroundColor: null };
+                      obj4[0] = channelName;
+                      obj4[1] = intl5;
+                      obj4[2] = string2;
+                      const intl2 = tmp15(1236).intl;
+                      const string = intl2.string;
+                      let XAkOo2 = tmp15(1236).t;
+                      if (mostRecentMessage.blocked) {
+                        XAkOo2 = XAkOo2.XAkOo2;
+                        let stringResult = string(XAkOo2);
+                      } else {
+                        stringResult = string(XAkOo2["G7p6v/"]);
+                      }
+                      obj4[3] = stringResult;
+                      obj4[5] = backgroundColor;
                     }
-                    const obj4 = { title: channelName, messageCountLabel: intl5, messageCountAccessibilityLabel: string2 };
-                    const intl2 = require(1212) /* getSystemLocale */.intl;
-                    const string = intl2.string;
-                    let XAkOo2 = require(1212) /* getSystemLocale */.t;
-                    if (mostRecentMessage.blocked) {
-                      XAkOo2 = XAkOo2.XAkOo2;
-                      let stringResult = string(XAkOo2);
-                    } else {
-                      stringResult = string(XAkOo2["G7p6v/"]);
-                    }
-                    obj4.messagePreviewString = stringResult;
-                    obj4.archived = false;
-                    obj4.backgroundColor = backgroundColor;
                   }
                 }
+                const obj5 = { title: null, messageCountLabel: null, messageCountAccessibilityLabel: null, messagePreviewString: null, archived: false, backgroundColor: null };
+                obj5[0] = channelName;
+                obj5[1] = intl5;
+                obj5[2] = string2;
+                const intl3 = tmp15(1236).intl;
+                obj5[3] = intl3.string(tmp15(1236).t.ZTo4HS);
+                obj5[5] = backgroundColor;
+                obj1 = obj5;
               }
-              const obj5 = { title: channelName, messageCountLabel: intl5, messageCountAccessibilityLabel: string2 };
-              const intl3 = require(1212) /* getSystemLocale */.intl;
-              obj5.messagePreviewString = intl3.string(require(1212) /* getSystemLocale */.t.ZTo4HS);
-              obj5.archived = false;
-              obj5.backgroundColor = backgroundColor;
-              obj1 = obj5;
             }
           }
         }
-        obj = { title: channelName, messageCountLabel: intl5, messageCountAccessibilityLabel: string2 };
-        const intl = require(1212) /* getSystemLocale */.intl;
-        obj.messagePreviewString = intl.string(require(1212) /* getSystemLocale */.t.HYtNyE);
-        obj.archived = false;
-        obj.backgroundColor = backgroundColor;
+        obj = { title: null, messageCountLabel: null, messageCountAccessibilityLabel: null, messagePreviewString: null, archived: false, backgroundColor: null };
+        obj[0] = channelName;
+        obj[1] = intl5;
+        obj[2] = string2;
+        const intl = tmp15(1236).intl;
+        obj[3] = intl.string(require(1236) /* getSystemLocale */.t.HYtNyE);
+        obj[5] = backgroundColor;
         return obj;
       }
     }
-  }
-}
-function getForumPostActions(message, channel) {
-  if (message.id === message.channel_id) {
-    const guildId = channel.getGuildId();
-    let defaultReaction;
-    if (0 === message.reactions.length) {
-      channel = store4.getChannel(channel.parent_id);
-      let defaultReactionEmoji;
-      if (null != channel) {
-        defaultReactionEmoji = channel.defaultReactionEmoji;
-      }
-      let emojiId;
-      if (null != defaultReactionEmoji) {
-        emojiId = defaultReactionEmoji.emojiId;
-      }
-      let usableCustomEmojiById = null;
-      if (null != emojiId) {
-        usableCustomEmojiById = usableCustomEmojiById.getUsableCustomEmojiById(defaultReactionEmoji.emojiId);
-      }
-      let obj = require(7708) /* createDefaultReaction */;
-      obj = { defaultReactionEmoji, customGuildEmoji: usableCustomEmojiById };
-      defaultReaction = obj.createDefaultReaction(obj);
-    }
-    const hasJoinedResult = closure_14.hasJoined(message.channel_id);
-    const shouldDisplayPromptResult = closure_11.shouldDisplayPrompt(channel.id);
-    obj = { isFollowing: hasJoinedResult, hasReactions: 0 !== message.reactions.length, defaultReaction, showMediaPostSharePrompt: shouldDisplayPromptResult };
-    return require(7708) /* createDefaultReaction */.createForumPostActions(obj);
   }
 }
 function createMessageContent(message) {
@@ -159,6 +153,7 @@ function createMessageContent(message) {
   let canShowImages;
   let colorString;
   let colorString2;
+  let colorStrings;
   let constrainedWidth;
   let forceHideSimpleEmbedContent;
   let forcedTheme;
@@ -229,45 +224,48 @@ function createMessageContent(message) {
   let result1;
   let setting;
   let interaction;
-  ({ animateEmoji, gifAutoPlay } = options);
+  ({ ignoreMentioned, animateEmoji, gifAutoPlay } = options);
   ({ renderCommunicationDisabled, renderAttachments, renderPolls, forcedTheme, forceHideSimpleEmbedContent, shouldObscureSpoiler } = options);
   shouldDisableInteractiveComponents = options.shouldDisableInteractiveComponents;
   const restrictedPreview = options.restrictedPreview;
-  ({ renderEmbeds, renderReactions, inlineEmbedMedia, inlineAttachmentMedia, constrainedWidth, ignoreMentioned, animatingStickerMessageId, timestampHourCycle, renderCodedLinks, renderGiftCode, renderActivityInstanceEmbed, renderActivityInviteEmbed, renderComponents, renderThreadEmbeds, renderReplies, renderExecutedCommands, renderSharedClientTheme, renderForumPostActions, ignoreEmbedDescriptionCache, useAlternateEmbedColors } = options);
-  if (null == forcedTheme) {
+  ({ renderEmbeds, renderReactions, inlineEmbedMedia, inlineAttachmentMedia, constrainedWidth, animatingStickerMessageId, timestampHourCycle, renderCodedLinks, renderGiftCode, renderActivityInstanceEmbed, renderActivityInviteEmbed, renderComponents, renderThreadEmbeds, renderReplies, renderExecutedCommands, renderSharedClientTheme, renderForumPostActions, ignoreEmbedDescriptionCache, useAlternateEmbedColors } = options);
+  if (forcedTheme == null) {
     let merged = theme;
     forcedTheme = theme.theme;
   }
-  const tmp2 = gifAutoPlay(shouldObscureSpoiler[36])(forcedTheme, useAlternateEmbedColors);
-  c4 = tmp2;
-  store = tmp3;
-  let tmp4 = tmp3;
+  const tmp3 = shouldObscureSpoiler;
+  const tmp4 = gifAutoPlay(shouldObscureSpoiler[36])(forcedTheme, useAlternateEmbedColors);
+  c4 = tmp4;
+  store = tmp5;
+  let tmp7 = tmp5;
   if (true === canShowImages) {
-    tmp4 = renderEmbeds;
+    tmp7 = renderEmbeds;
   }
-  if (tmp4) {
-    tmp4 = message.type !== constants.CUSTOM_GIFT;
+  if (tmp7) {
+    tmp7 = message.type !== constants.CUSTOM_GIFT;
   }
-  let tmp6 = tmp3;
+  let tmp9 = tmp5;
   if (true === canShowImages) {
-    tmp6 = inlineEmbedMedia;
+    tmp9 = inlineEmbedMedia;
   }
-  let tmp7 = tmp3;
+  let tmp10 = tmp5;
   if (true === canShowImages) {
-    tmp7 = inlineAttachmentMedia;
+    tmp10 = inlineAttachmentMedia;
   }
+  let obj = store4;
   const channel = store4.getChannel(message.getChannelId());
-  let obj1 = gifAutoPlay(shouldObscureSpoiler[26]);
-  const channel1 = store4.getChannel(obj1.castMessageIdAsChannelId(message.id));
+  let tmp2Result = tmp2(tmp3[26]);
+  const channel1 = store4.getChannel(tmp2Result.castMessageIdAsChannelId(message.id));
   guildId = undefined;
-  if (null != channel) {
+  if (channel != null) {
     guildId = channel.getGuildId();
   }
-  let obj2 = message(shouldObscureSpoiler[37]);
-  const hasEnhancedRoleColors = obj2.getHasEnhancedRoleColors(guildId, message.author.id);
-  if (null == messageForward) {
-    let obj3 = message(shouldObscureSpoiler[38]);
-    messageForward = obj3.maybeCreateSingleForwardForMessage(message);
+  const tmp13 = message;
+  let obj4 = message(tmp3[37]);
+  const hasEnhancedRoleColors = obj4.getHasEnhancedRoleColors(guildId, message.author.id);
+  if (messageForward == null) {
+    let tmp13Result = tmp13(tmp3[38]);
+    messageForward = tmp13Result.maybeCreateSingleForwardForMessage(message);
   }
   let message2 = message;
   if (null != messageForward) {
@@ -275,1118 +273,1016 @@ function createMessageContent(message) {
   }
   let items = [];
   if (renderReactions) {
-    let obj = { reactions: message.reactions, animateEmoji };
-    items = gifAutoPlay(shouldObscureSpoiler[39])(obj);
+    obj = { reactions: null, animateEmoji: null };
+    obj[0] = message.reactions;
+    obj[1] = animateEmoji;
+    items = tmp2(tmp3[39])(obj);
   }
-  let tmp15 = null;
+  let tmp16 = null;
   if (message.type === constants.THREAD_STARTER_MESSAGE) {
     const messageByReference = store2.getMessageByReference(message.messageReference);
     message = null;
     if (messageByReference.state === ReferencedMessageState.LOADED) {
       message = messageByReference.message;
     }
-    tmp15 = message;
+    tmp16 = message;
   }
-  if (null != tmp15) {
+  if (null != tmp16) {
     obj = {};
     merged = createMessageContent;
-    obj1 = { message: tmp15, roleStyle, isFirst, isEditing, canShowImages, isSystemDM, isInlineReplyPreview };
-    obj2 = {};
-    merged = obj2;
+    obj = { message: null, roleStyle: null, isFirst: null, isEditing: null, canShowImages: null, isSystemDM: null, isInlineReplyPreview: null, options: null };
+    obj[0] = tmp16;
+    obj[1] = roleStyle;
+    obj[2] = isFirst;
+    obj[3] = isEditing;
+    obj[4] = canShowImages;
+    obj[5] = isSystemDM;
+    obj[6] = isInlineReplyPreview;
+    obj = {};
+    merged = obj;
     merged = options;
     merged = Object.assign(options);
-    obj2["renderThreadEmbeds"] = false;
-    obj2["renderReactions"] = false;
-    obj2["shouldDisableInteractiveComponents"] = true;
-    obj1.options = obj2;
+    obj.renderThreadEmbeds = false;
+    obj.renderReactions = false;
+    obj.shouldDisableInteractiveComponents = true;
+    obj[7] = obj;
     merged = obj;
-    merged = Object.assign(createMessageContent(obj1));
-    obj["id"] = message.id;
+    merged = Object.assign(createMessageContent(obj));
+    obj.id = message.id;
     return obj;
-  } else {
-    merged = gifAutoPlay;
-    merged = shouldObscureSpoiler;
-    if (gifAutoPlay(shouldObscureSpoiler[40])(message)) {
-      merged = constants;
-      if (message.type === constants.THREAD_CREATED) {
-        obj3 = {};
-        merged = createThreadEmbed;
-        merged = message;
-        merged = roleStyle;
-        merged = isInlineReplyPreview;
-        merged = channel1;
-        merged = options;
-        merged = forcedTheme;
-        obj3.threadEmbed = createThreadEmbed(message, roleStyle, isInlineReplyPreview, channel1, options, forcedTheme);
-        merged = message;
-        merged = shouldObscureSpoiler;
-        const obj4 = { message, theme: forcedTheme, reactions: items, roleStyle };
-        merged = obj3;
-        merged = Object.assign(message(shouldObscureSpoiler[41]).createSystemMessageContent(obj4));
-        merged = obj3;
-        const obj92 = message(shouldObscureSpoiler[41]);
-      } else {
-        merged = message;
-        merged = shouldObscureSpoiler;
-        let obj5 = { message, theme: forcedTheme, reactions: items, roleStyle };
-        merged = undefined;
-        if (null != channel) {
-          merged = channel.isForumPost();
-        }
-        obj5.isForumPost = merged;
-        merged = message(shouldObscureSpoiler[41]).createSystemMessageContent(obj5);
-        const obj89 = message(shouldObscureSpoiler[41]);
-      }
-      return merged;
+  } else if (tmp2(tmp3[40])(message)) {
+    if (message.type === tmp15.THREAD_CREATED) {
+      const obj1 = { threadEmbed: null };
+      merged = createThreadEmbed;
+      merged = message;
+      merged = roleStyle;
+      merged = isInlineReplyPreview;
+      merged = channel1;
+      merged = options;
+      merged = forcedTheme;
+      obj1[0] = createThreadEmbed(message, roleStyle, isInlineReplyPreview, channel1, options, tmp6);
+      tmp13Result = tmp13(tmp3[41]);
+      obj = { message: null, theme: null, reactions: null, roleStyle: null };
+      obj[0] = message;
+      obj[1] = forcedTheme;
+      obj[2] = items;
+      obj[3] = roleStyle;
+      merged = obj1;
+      merged = Object.assign(tmp13Result.createSystemMessageContent(obj));
+      merged = obj1;
     } else {
-      const author = message.author;
-      obj5 = message(shouldObscureSpoiler[42]);
-      let timestamp = message.editedTimestamp;
-      if (null == timestamp) {
-        timestamp = message.timestamp;
+      const obj2 = { message: null, theme: null, reactions: null, roleStyle: null, isForumPost: null };
+      obj2[0] = message;
+      obj2[1] = forcedTheme;
+      obj2[2] = items;
+      obj2[3] = roleStyle;
+      merged = undefined;
+      if (channel != null) {
+        merged = channel.isForumPost();
       }
-      const result = obj5.isMessageNewerThanImprovedMarkdownEpoch(timestamp.valueOf());
-      if (null != message2.content) {
-        if ("" !== message2.content) {
-          let obj7 = message(shouldObscureSpoiler[43]);
-          if (!forceHideSimpleEmbedContent) {
-            let tmp26 = tmp4;
-            if (tmp4) {
-              tmp26 = tmp6;
+      obj2[4] = merged;
+      merged = tmp13(tmp3[41]).createSystemMessageContent(obj2);
+      const tmp13Result1 = tmp13(tmp3[41]);
+    }
+    return merged;
+  } else {
+    let tmp21 = !isFirst;
+    if (isFirst) {
+      tmp21 = renderContentOnly;
+    }
+    const author = message.author;
+    let timestamp = message.editedTimestamp;
+    if (timestamp == null) {
+      timestamp = message.timestamp;
+    }
+    const result = tmp13(tmp3[42]).isMessageNewerThanImprovedMarkdownEpoch(timestamp.valueOf());
+    if (null != message2.content) {
+      if ("" !== message2.content) {
+        const tmp13Result3 = tmp13(tmp3[43]);
+        if (!forceHideSimpleEmbedContent) {
+          let tmp23 = tmp7;
+          if (tmp7) {
+            tmp23 = tmp9;
+          }
+          forceHideSimpleEmbedContent = tmp23;
+        }
+        const tmp24 = null != channel1 && message.isFirstMessageInForumPost(channel1);
+        let parseMessageMarkupResult = tmp13Result3.parseMessageMarkup(message, message2, forceHideSimpleEmbedContent, isInlineReplyPreview, tmp24, result, result);
+      }
+      const content = parseMessageMarkupResult.content;
+      let tmp33 = restrictedPreview;
+      ({ hasSpoilerEmbeds, hasBailedAst } = parseMessageMarkupResult);
+      if (restrictedPreview) {
+        tmp33 = null != content;
+      }
+      let stringResult = content;
+      if (tmp33) {
+        stringResult = tmp2(tmp3[44])(content);
+      }
+      enabledHarmTypesForMessage = tmp13(tmp3[45]).getEnabledHarmTypesForMessage(message);
+      const tmp13Result4 = tmp13(tmp3[45]);
+      result1 = tmp13(tmp3[46]).shouldAgeVerifyForExplicitMedia();
+      const ViewImageDescriptions = tmp13(tmp3[47]).ViewImageDescriptions;
+      setting = ViewImageDescriptions.getSetting();
+      if (tmp7) {
+        tmp7 = !hasBailedAst;
+      }
+      if (tmp7) {
+        tmp7 = !restrictedPreview;
+      }
+      interaction = setting.getInteraction(message);
+      let tmp40;
+      if (tmp7) {
+        const obj3 = { embeds: null, channelId: null, gifAutoPlay: null, hasSpoilerEmbeds: null, ignoreEmbedDescriptionCache: null, shouldInlineEmbedMedia: null, colors: null, showListsAndHeaders: null, showMaskedLinks: null, themedBackgroundColor: null, enabledContentHarmTypeFlags: null, shouldAgeVerify: null, authorIsBot: null, showContentInventoryEntryFallbackEmbed: null, transformComponents: null };
+        obj3[0] = message2.embeds;
+        obj3[1] = message.channel_id;
+        obj3[2] = gifAutoPlay;
+        obj3[3] = hasSpoilerEmbeds;
+        obj3[4] = ignoreEmbedDescriptionCache;
+        obj3[5] = tmp9;
+        obj3[6] = tmp4;
+        obj3[7] = result;
+        obj3[8] = result;
+        obj3[9] = tmp4.embedBackgroundColor;
+        obj3[10] = enabledHarmTypesForMessage;
+        obj3[11] = result1;
+        obj3[12] = message.author.bot;
+        obj3[13] = message.showContentInventoryEntryFallbackEmbed;
+        obj3[14] = function transformComponents(arg0) {
+          return gifAutoPlay(shouldObscureSpoiler[49])({ message, guildId, interaction, shouldDisableInteractiveComponents, shouldShowMedia: c5, shouldObscureSpoiler, enabledContentHarmTypeFlags: enabledHarmTypesForMessage, shouldAgeVerify: result1, shouldShowMosaicMediaDescriptions: setting, shouldAutoPlayGifs: gifAutoPlay, colors: c4 }, arg0);
+        };
+        tmp40 = tmp2(tmp3[48])(obj3);
+      }
+      obj4 = { message: null, isSystemDM: null, channel: null, colors: null };
+      obj4[0] = message;
+      obj4[1] = isSystemDM;
+      obj4[2] = channel;
+      obj4[3] = tmp4;
+      const tmp13Result5 = tmp13(tmp3[46]);
+      let obj14 = uploaderFileForMessageId;
+      ({ tagText, tagAccessibilityLabel, tagVerified, tagTextColor, tagBackgroundColor, tagType, tagIconUrl, opTagText, opTagTextColor, opTagBackgroundColor } = tmp2(tmp3[50])(obj4));
+      uploaderFileForMessageId = uploaderFileForMessageId.getUploaderFileForMessageId(message.id);
+      const tmp41 = tmp2(tmp3[50])(obj4);
+      let tmp46 = tmp40;
+      if (!tmp45) {
+        let items1 = tmp40;
+        if (tmp40 == null) {
+          items1 = [];
+        }
+        const obj5 = { uploaderFile: null, useAttachmentUploadPreview: null, colors: null };
+        obj5[0] = uploaderFileForMessageId;
+        obj5[1] = tmp43;
+        obj5[2] = tmp4;
+        items1.push(tmp2(tmp3[51])(obj5));
+        tmp46 = items1;
+      }
+      const message1 = result1.getMessage(message.id);
+      let tmp50 = tmp46;
+      if (null != message1) {
+        let items2 = tmp46;
+        if (tmp46 == null) {
+          items2 = [];
+        }
+        const obj6 = { errorMessage: null, colors: null };
+        obj6[0] = message1.errorMessage;
+        obj6[1] = tmp4;
+        items2.push(tmp13(tmp3[51]).createAutomodBlockedMessageEmbed(obj6));
+        tmp50 = items2;
+        const tmp13Result6 = tmp13(tmp3[51]);
+      }
+      tmp45 = message.state !== constants2.SEND_FAILED || message.isCommandType();
+      const userAuthor = tmp13(tmp3[52]).getUserAuthor(message.author, channel);
+      ({ guildMemberAvatar, guildMemberAvatarDecoration, iconRoleId } = userAuthor);
+      const tmp13Result7 = tmp13(tmp3[52]);
+      if (message.isInteractionPlaceholder()) {
+        if (null == message.author.avatar) {
+          if (null == guildMemberAvatar) {
+            const application = message.application;
+            let icon;
+            if (application != null) {
+              icon = application.icon;
             }
-            forceHideSimpleEmbedContent = tmp26;
-          }
-          const tmp27 = null != channel1 && message.isFirstMessageInForumPost(channel1);
-          let parseMessageMarkupResult = obj7.parseMessageMarkup(message, message2, forceHideSimpleEmbedContent, isInlineReplyPreview, tmp27, result, result);
-        }
-        const content = parseMessageMarkupResult.content;
-        let tmp36 = restrictedPreview;
-        ({ hasSpoilerEmbeds, hasBailedAst } = parseMessageMarkupResult);
-        if (restrictedPreview) {
-          tmp36 = null != content;
-        }
-        let stringResult = content;
-        if (tmp36) {
-          stringResult = gifAutoPlay(shouldObscureSpoiler[44])(content);
-        }
-        let obj8 = message(shouldObscureSpoiler[45]);
-        enabledHarmTypesForMessage = obj8.getEnabledHarmTypesForMessage(message);
-        let obj9 = message(shouldObscureSpoiler[46]);
-        result1 = obj9.shouldAgeVerifyForExplicitMedia();
-        const ViewImageDescriptions = message(shouldObscureSpoiler[47]).ViewImageDescriptions;
-        setting = ViewImageDescriptions.getSetting();
-        if (tmp4) {
-          tmp4 = !hasBailedAst;
-        }
-        if (tmp4) {
-          tmp4 = !restrictedPreview;
-        }
-        interaction = setting.getInteraction(message);
-        let tmp47;
-        if (tmp4) {
-          const obj6 = {
-            embeds: message2.embeds,
-            channelId: message.channel_id,
-            gifAutoPlay,
-            hasSpoilerEmbeds,
-            ignoreEmbedDescriptionCache,
-            shouldInlineEmbedMedia: tmp6,
-            colors: tmp2,
-            showListsAndHeaders: result,
-            showMaskedLinks: result,
-            themedBackgroundColor: tmp2.embedBackgroundColor,
-            enabledContentHarmTypeFlags: enabledHarmTypesForMessage,
-            shouldAgeVerify: result1,
-            authorIsBot: message.author.bot,
-            showContentInventoryEntryFallbackEmbed: message.showContentInventoryEntryFallbackEmbed,
-            transformComponents(arg0) {
-                      return gifAutoPlay(shouldObscureSpoiler[49])({ message, guildId, interaction, shouldDisableInteractiveComponents, shouldShowMedia: c5, shouldObscureSpoiler, enabledContentHarmTypeFlags: enabledHarmTypesForMessage, shouldAgeVerify: result1, shouldShowMosaicMediaDescriptions: setting, shouldAutoPlayGifs: gifAutoPlay, colors: c4 }, arg0);
-                    }
-          };
-          tmp47 = gifAutoPlay(shouldObscureSpoiler[48])(obj6);
-        }
-        obj7 = { message, isSystemDM, channel, colors: tmp2 };
-        ({ tagText, tagAccessibilityLabel, tagVerified, tagTextColor, tagBackgroundColor, tagType, tagIconUrl, opTagText, opTagTextColor, opTagBackgroundColor } = gifAutoPlay(shouldObscureSpoiler[50])(obj7));
-        const uploaderFileForMessageId = store5.getUploaderFileForMessageId(message.id);
-        const tmp52 = gifAutoPlay(shouldObscureSpoiler[50])(obj7);
-        let tmp58 = tmp47;
-        if (!tmp57) {
-          let items1 = tmp47;
-          if (null == tmp47) {
-            items1 = [];
-          }
-          obj8 = { uploaderFile: uploaderFileForMessageId, useAttachmentUploadPreview: tmp55, colors: tmp2 };
-          items1.push(gifAutoPlay(shouldObscureSpoiler[51])(obj8));
-          tmp58 = items1;
-        }
-        const message1 = result1.getMessage(message.id);
-        let tmp64 = tmp58;
-        if (null != message1) {
-          let items2 = tmp58;
-          if (null == tmp58) {
-            items2 = [];
-          }
-          let obj13 = message(shouldObscureSpoiler[51]);
-          obj9 = { errorMessage: message1.errorMessage, colors: tmp2 };
-          items2.push(obj13.createAutomodBlockedMessageEmbed(obj9));
-          tmp64 = items2;
-        }
-        let obj15 = message(shouldObscureSpoiler[52]);
-        const userAuthor = obj15.getUserAuthor(message.author, channel);
-        ({ guildMemberAvatar, guildMemberAvatarDecoration, iconRoleId } = userAuthor);
-        let obj16 = message(shouldObscureSpoiler[53]);
-        if (message.isInteractionPlaceholder()) {
-          if (null == message.author.avatar) {
-            if (null == guildMemberAvatar) {
-              const application = message.application;
-              let icon;
-              if (null != application) {
-                icon = application.icon;
+            if (null != icon) {
+              tmp2Result = tmp2(tmp3[54]);
+              const obj7 = { id: null, icon: null, bot: null };
+              obj7[0] = message.application.id;
+              obj7[1] = message.application.icon;
+              obj7[2] = message.application.bot;
+              let applicationIconSource = tmp2Result.getApplicationIconSource(obj7);
+            }
+            const ensureAvatarSourceResult = tmp13Result8.ensureAvatarSource(applicationIconSource);
+            if (null == guildMemberAvatarDecoration) {
+              guildMemberAvatarDecoration = author.avatarDecoration;
+            }
+            const obj8 = { avatarDecoration: null, size: null };
+            obj8[0] = guildMemberAvatarDecoration;
+            const tmp13Result9 = tmp13(tmp3[54]);
+            obj8[1] = tmp13(tmp3[55]).getDecorationSizeForAvatarSize(tmp13(tmp3[56]).AvatarSizes.NORMAL);
+            const avatarDecorationURL = tmp13Result9.getAvatarDecorationURL(obj8);
+            if (null != iconRoleId) {
+              if (null != guildId) {
+                const obj9 = { guildId: null, roleId: null, size: 18 };
+                obj9[0] = guildId;
+                obj9[1] = iconRoleId;
+                const roleIcon = tmp13(tmp3[57]).getRoleIcon(obj9);
+                const tmp13Result11 = tmp13(tmp3[57]);
               }
-              if (null != icon) {
-                let obj19 = gifAutoPlay(shouldObscureSpoiler[54]);
-                const obj10 = { id: message.application.id, icon: message.application.icon, bot: message.application.bot };
-                let applicationIconSource = obj19.getApplicationIconSource(obj10);
-              }
-              const ensureAvatarSourceResult = obj16.ensureAvatarSource(applicationIconSource);
-              let obj21 = message(shouldObscureSpoiler[54]);
-              const obj11 = {};
-              if (null == guildMemberAvatarDecoration) {
-                guildMemberAvatarDecoration = author.avatarDecoration;
-              }
-              obj11.avatarDecoration = guildMemberAvatarDecoration;
-              let obj23 = message(shouldObscureSpoiler[55]);
-              obj11.size = obj23.getDecorationSizeForAvatarSize(message(shouldObscureSpoiler[56]).AvatarSizes.NORMAL);
-              const avatarDecorationURL = obj21.getAvatarDecorationURL(obj11);
-              if (null != iconRoleId) {
-                if (null != guildId) {
-                  let obj24 = message(shouldObscureSpoiler[57]);
-                  const obj12 = { guildId, roleId: iconRoleId, size: 18 };
-                  const roleIcon = obj24.getRoleIcon(obj12);
-                }
-              }
-              if (message.hasFlag(closure_30.SOURCE_MESSAGE_DELETED)) {
-                const intl = message(shouldObscureSpoiler[29]).intl;
-                stringResult = intl.string(message(shouldObscureSpoiler[29]).t.JOtgSw);
-              }
-              let obj26 = message(shouldObscureSpoiler[52]);
-              const messageAuthor = obj26.getMessageAuthor(message);
-              ({ nick, colorString } = messageAuthor);
-              if (message.type === constants.INTERACTION_PREMIUM_UPSELL) {
-                const intl2 = message(shouldObscureSpoiler[29]).intl;
-                obj13 = { appName: nick };
-                stringResult = intl2.formatToPlainString(message(shouldObscureSpoiler[29]).t["u4A+xK"], obj13);
-              }
-              if (message.type === constants.REPLY) {
-                if (renderReplies) {
-                  const messageByReference1 = store2.getMessageByReference(message.messageReference);
-                  const state = messageByReference1.state;
-                  if (ReferencedMessageState.LOADED === state) {
-                    const message3 = messageByReference1.message;
-                    merged = message;
-                    merged = shouldObscureSpoiler;
-                    merged = message(shouldObscureSpoiler[38]).maybeCreateSingleForwardForMessage(message3);
-                    merged = closure_21;
-                    if (closure_21.isBlockedForMessage(message3)) {
-                      const obj14 = {};
-                      merged = ReferencedMessageRowState;
-                      obj14.state = ReferencedMessageRowState.SYSTEM;
-                      merged = message;
-                      merged = shouldObscureSpoiler;
-                      const intl12 = message(shouldObscureSpoiler[29]).intl;
-                      obj14.content = intl12.string(message(shouldObscureSpoiler[29]).t.XAkOo2);
-                      let tmp96 = obj14;
+            }
+            if (message.hasFlag(constants3.SOURCE_MESSAGE_DELETED)) {
+              const intl = tmp13(tmp3[29]).intl;
+              stringResult = intl.string(tmp13(tmp3[29]).t.JOtgSw);
+            }
+            const tmp13Result10 = tmp13(tmp3[55]);
+            const messageAuthor = tmp13(tmp3[52]).getMessageAuthor(message);
+            ({ nick, colorString, colorStrings } = messageAuthor);
+            if (message.type === tmp15.INTERACTION_PREMIUM_UPSELL) {
+              const intl2 = tmp13(tmp3[29]).intl;
+              const obj10 = { appName: null };
+              obj10[0] = nick;
+              stringResult = intl2.formatToPlainString(tmp13(tmp3[29]).t["u4A+xK"], obj10);
+            }
+            if (message.type === tmp15.REPLY) {
+              if (renderReplies) {
+                const messageByReference1 = store2.getMessageByReference(message.messageReference);
+                const state = messageByReference1.state;
+                if (ReferencedMessageState.LOADED === state) {
+                  const message3 = messageByReference1.message;
+                  const result2 = tmp13(tmp3[38]).maybeCreateSingleForwardForMessage(message3);
+                  if (blockedForMessage.isBlockedForMessage(message3)) {
+                    const obj11 = { state: null, content: null };
+                    obj11[0] = ReferencedMessageRowState.SYSTEM;
+                    const intl12 = tmp13(tmp3[29]).intl;
+                    obj11[1] = intl12.string(tmp13(tmp3[29]).t.XAkOo2);
+                    let tmp60 = obj11;
+                  } else if (obj35.isIgnoredForMessage(message3)) {
+                    const obj12 = { state: null, content: null };
+                    obj12[0] = ReferencedMessageRowState.SYSTEM;
+                    const intl11 = tmp13(tmp3[29]).intl;
+                    obj12[1] = intl11.string(tmp13(tmp3[29]).t["G7p6v/"]);
+                    tmp60 = obj12;
+                  } else {
+                    const obj13 = { message: null, messageForward: null, roleStyle: null, isFirst: true, isEditing: false, canShowImages: true, isSystemDM: false, isInlineReplyPreview: true, options: null };
+                    obj13[0] = message3;
+                    obj13[1] = result2;
+                    obj13[2] = roleStyle;
+                    obj14 = {};
+                    const merged1 = Object.assign(options);
+                    obj14.renderReplies = false;
+                    obj13[8] = obj14;
+                    const tmp72 = createMessageContent(obj13);
+                    if (null == tmp72) {
+                      const obj15 = { state: null, content: null };
+                      obj15[0] = ReferencedMessageRowState.SYSTEM;
+                      const intl10 = tmp13(tmp3[29]).intl;
+                      obj15[1] = intl10.string(tmp13(tmp3[29]).t["1i+hMi"]);
+                      tmp60 = obj15;
                     } else {
-                      merged = closure_21;
-                      if (closure_21.isIgnoredForMessage(message3)) {
-                        obj15 = {};
-                        merged = ReferencedMessageRowState;
-                        obj15.state = ReferencedMessageRowState.SYSTEM;
-                        merged = message;
-                        merged = shouldObscureSpoiler;
-                        const intl11 = message(shouldObscureSpoiler[29]).intl;
-                        obj15.content = intl11.string(message(shouldObscureSpoiler[29]).t["G7p6v/"]);
-                        tmp96 = obj15;
-                      } else {
-                        merged = createMessageContent;
-                        obj16 = { message: message3, messageForward: merged, roleStyle, isFirst: true, isEditing: false, canShowImages: true, isSystemDM: false, isInlineReplyPreview: true };
-                        let obj17 = {};
-                        merged = obj17;
-                        merged = options;
-                        merged = Object.assign(options);
-                        obj17["renderReplies"] = false;
-                        obj16.options = obj17;
-                        merged = createMessageContent(obj16);
-                        if (null == merged) {
-                          const obj18 = {};
-                          merged = ReferencedMessageRowState;
-                          obj18.state = ReferencedMessageRowState.SYSTEM;
-                          merged = message;
-                          merged = shouldObscureSpoiler;
-                          const intl10 = message(shouldObscureSpoiler[29]).intl;
-                          obj18.content = intl10.string(message(shouldObscureSpoiler[29]).t["1i+hMi"]);
-                          tmp96 = obj18;
+                      if ("username" in tmp72) {
+                        const messageAuthor1 = tmp13(tmp3[52]).getMessageAuthor(message3);
+                        ({ nick: nick2, colorString: colorString2 } = messageAuthor1);
+                        if (nick2 == null) {
+                          nick2 = message3.author.username;
+                        }
+                        tmp72.username = nick2;
+                        if (tmp21) {
+                          let colorString3 = tmp72.colorString;
                         } else {
-                          if ("username" in merged) {
-                            merged = message;
-                            merged = shouldObscureSpoiler;
-                            merged = message(shouldObscureSpoiler[52]).getMessageAuthor(message3);
-                            ({ nick: nick2, colorString: colorString2 } = merged);
-                            if (null == nick2) {
-                              nick2 = message3.author.username;
+                          colorString3 = shouldDisableInteractiveComponents(colorString2);
+                          if (colorString3 == null) {
+                            colorString3 = tmp72.colorString;
+                          }
+                          const tmp74 = shouldDisableInteractiveComponents;
+                        }
+                        tmp72.colorString = colorString3;
+                        if (tmp2(tmp3[58])(message, message3)) {
+                          tmp72.username = `@${tmp72.username}`;
+                        }
+                        const tmp13Result14 = tmp13(tmp3[52]);
+                      }
+                      const _Array = Array;
+                      let isArray = Array.isArray(tmp72.content);
+                      if (isArray) {
+                        isArray = 0 === tmp72.content.length;
+                      }
+                      if (isArray) {
+                        tmp72.content = undefined;
+                      }
+                      message2 = undefined;
+                      if (result2 != null) {
+                        message2 = result2.messageSnapshot.message;
+                      }
+                      if (message2 == null) {
+                        message2 = message3;
+                      }
+                      if ("stickers" in message2) {
+                        let messageStickers = tmp13(tmp3[33]).getMessageStickers(message2);
+                        const tmp13Result15 = tmp13(tmp3[33]);
+                      } else {
+                        messageStickers = [];
+                      }
+                      if (messageStickers.length > 0) {
+                        const intl9 = tmp13(tmp3[29]).intl;
+                        let stringResult1 = intl9.string(tmp13(tmp3[29]).t["7K5Lma"]);
+                      } else {
+                        if ("interaction" in message2) {
+                          if (null != message2.interaction) {
+                            if ("" === message2.content) {
+                              const intl8 = tmp13(tmp3[29]).intl;
+                              stringResult1 = intl8.string(tmp13(tmp3[29]).t["2v7kfl"]);
                             }
-                            merged = undefined;
-                            if (null != nick2) {
-                              merged = nick2;
-                            }
-                            merged.username = merged;
-                            if (tmp20) {
-                              let colorString3 = merged.colorString;
-                            } else {
-                              merged = undefined;
-                              merged = shouldDisableInteractiveComponents;
-                              if (null != colorString2) {
-                                merged = colorString2;
-                              }
-                              colorString3 = merged(merged);
-                              if (null == colorString3) {
-                                colorString3 = merged.colorString;
-                              }
-                            }
-                            merged.colorString = colorString3;
-                            merged = gifAutoPlay;
-                            merged = shouldObscureSpoiler;
-                            if (gifAutoPlay(shouldObscureSpoiler[58])(message, message3)) {
-                              merged.username = `@${tmp.username}`;
-                            }
-                            const obj35 = message(shouldObscureSpoiler[52]);
-                          }
-                          merged = globalThis;
-                          const _Array = Array;
-                          merged = Array.isArray(merged.content);
-                          if (merged) {
-                            merged = 0 === merged.content.length;
-                          }
-                          if (merged) {
-                            merged.content = undefined;
-                          }
-                          merged = undefined;
-                          if (null != merged) {
-                            merged = merged.messageSnapshot.message;
-                          }
-                          merged = message3;
-                          if ("stickers" in merged) {
-                            merged = message;
-                            merged = shouldObscureSpoiler;
-                            let messageStickers = message(shouldObscureSpoiler[33]).getMessageStickers(merged);
-                            const obj36 = message(shouldObscureSpoiler[33]);
-                          } else {
-                            messageStickers = [];
-                          }
-                          if (messageStickers.length > 0) {
-                            merged = message;
-                            merged = shouldObscureSpoiler;
-                            const intl9 = message(shouldObscureSpoiler[29]).intl;
-                            merged = intl9.string(message(shouldObscureSpoiler[29]).t["7K5Lma"]);
-                          } else {
-                            if ("interaction" in merged) {
-                              if (null != merged.interaction) {
-                                if ("" === merged.content) {
-                                  merged = message;
-                                  merged = shouldObscureSpoiler;
-                                  const intl8 = message(shouldObscureSpoiler[29]).intl;
-                                  merged = intl8.string(message(shouldObscureSpoiler[29]).t["2v7kfl"]);
-                                }
-                              }
-                            }
-                            merged = message;
-                            merged = shouldObscureSpoiler;
-                            merged = closure_30;
-                            if (obj37.hasFlag(merged.flags, closure_30.IS_VOICE_MESSAGE)) {
-                              merged = message;
-                              merged = shouldObscureSpoiler;
-                              const intl7 = message(shouldObscureSpoiler[29]).intl;
-                              merged = intl7.string(message(shouldObscureSpoiler[29]).t["6bhHrc"]);
-                            } else {
-                              merged = constants;
-                              if (merged.type === constants.POLL_RESULT) {
-                                merged = message;
-                                merged = shouldObscureSpoiler;
-                                merged = message(shouldObscureSpoiler[35]).getPollResultsReplyPreviewMobile(merged);
-                                const obj38 = message(shouldObscureSpoiler[35]);
-                              } else {
-                                merged = message;
-                                merged = shouldObscureSpoiler;
-                                merged = closure_30;
-                                if (obj97.hasFlag(merged.flags, closure_30.IS_COMPONENTS_V2)) {
-                                  merged = message;
-                                  merged = shouldObscureSpoiler;
-                                  const intl6 = message(shouldObscureSpoiler[29]).intl;
-                                  merged = intl6.string(message(shouldObscureSpoiler[29]).t.Xxm5i3);
-                                } else if ("" === merged.content) {
-                                  merged = message;
-                                  merged = shouldObscureSpoiler;
-                                  const intl5 = message(shouldObscureSpoiler[29]).intl;
-                                  merged = intl5.string(message(shouldObscureSpoiler[29]).t.JAKsM8);
-                                } else {
-                                  merged = null;
-                                }
-                                obj97 = message(shouldObscureSpoiler[34]);
-                              }
-                            }
-                            obj37 = message(shouldObscureSpoiler[34]);
-                          }
-                          merged = constants;
-                          if (message3.type === constants.POLL_RESULT) {
-                            merged.content = merged;
-                          }
-                          obj19 = {};
-                          merged = ReferencedMessageRowState;
-                          obj19.state = ReferencedMessageRowState.LOADED;
-                          obj19.message = merged;
-                          tmp96 = obj19;
-                          if (null != merged) {
-                            obj19.systemContent = merged;
-                            tmp96 = obj19;
                           }
                         }
+                        if (tmp13Result16.hasFlag(message2.flags, tmp58.IS_VOICE_MESSAGE)) {
+                          const intl7 = tmp13(tmp3[29]).intl;
+                          stringResult1 = intl7.string(tmp13(tmp3[29]).t["6bhHrc"]);
+                        } else if (message2.type === tmp15.POLL_RESULT) {
+                          stringResult1 = tmp13(tmp3[35]).getPollResultsReplyPreviewMobile(message2);
+                          const tmp13Result17 = tmp13(tmp3[35]);
+                        } else {
+                          obj = tmp13(tmp3[34]);
+                          if (obj.hasFlag(message2.flags, tmp58.IS_COMPONENTS_V2)) {
+                            const intl6 = tmp13(tmp3[29]).intl;
+                            stringResult1 = intl6.string(tmp13(tmp3[29]).t.Xxm5i3);
+                          } else if ("" === message2.content) {
+                            const intl5 = tmp13(tmp3[29]).intl;
+                            stringResult1 = intl5.string(tmp13(tmp3[29]).t.JAKsM8);
+                          } else {
+                            stringResult1 = null;
+                          }
+                        }
+                        tmp13Result16 = tmp13(tmp3[34]);
                       }
-                    }
-                    const obj32 = message(shouldObscureSpoiler[38]);
-                  } else {
-                    merged = ReferencedMessageState;
-                    if (ReferencedMessageState.NOT_LOADED === state) {
-                      const obj20 = {};
-                      merged = ReferencedMessageRowState;
-                      obj20.state = ReferencedMessageRowState.SYSTEM;
-                      merged = message;
-                      merged = shouldObscureSpoiler;
-                      const intl4 = message(shouldObscureSpoiler[29]).intl;
-                      obj20.content = intl4.string(message(shouldObscureSpoiler[29]).t["1i+hMi"]);
-                      tmp96 = obj20;
-                    } else {
-                      merged = ReferencedMessageState;
-                      if (ReferencedMessageState.DELETED === state) {
-                        obj21 = {};
-                        merged = ReferencedMessageRowState;
-                        obj21.state = ReferencedMessageRowState.SYSTEM;
-                        merged = message;
-                        merged = shouldObscureSpoiler;
-                        const intl3 = message(shouldObscureSpoiler[29]).intl;
-                        obj21.content = intl3.string(message(shouldObscureSpoiler[29]).t.mE3KJN);
-                        tmp96 = obj21;
-                      } else {
-                        merged = message;
-                        merged = shouldObscureSpoiler;
-                        let obj28 = message(shouldObscureSpoiler[59]);
-                        merged = obj28.assertNever(messageByReference1);
+                      if (message3.type === tmp15.POLL_RESULT) {
+                        tmp72.content = stringResult1;
+                      }
+                      const obj16 = { state: null, message: null };
+                      obj16[0] = ReferencedMessageRowState.LOADED;
+                      obj16[1] = tmp72;
+                      tmp60 = obj16;
+                      if (null != stringResult1) {
+                        obj16.systemContent = stringResult1;
+                        tmp60 = obj16;
                       }
                     }
                   }
+                  obj35 = blockedForMessage;
+                  const tmp13Result13 = tmp13(tmp3[38]);
+                } else if (tmp63.NOT_LOADED === state) {
+                  const obj17 = { state: null, content: null };
+                  obj17[0] = ReferencedMessageRowState.SYSTEM;
+                  const intl4 = tmp13(tmp3[29]).intl;
+                  obj17[1] = intl4.string(tmp13(tmp3[29]).t["1i+hMi"]);
+                  tmp60 = obj17;
+                } else if (tmp63.DELETED === state) {
+                  const obj18 = { state: null, content: null };
+                  obj18[0] = ReferencedMessageRowState.SYSTEM;
+                  const intl3 = tmp13(tmp3[29]).intl;
+                  obj18[1] = intl3.string(tmp13(tmp3[29]).t.mE3KJN);
+                  tmp60 = obj18;
+                } else {
+                  tmp13(tmp3[59]).assertNever(messageByReference1);
+                  const tmp13Result18 = tmp13(tmp3[59]);
                 }
               }
-              if (renderThreadEmbeds) {
-                merged = createThreadEmbed;
-                merged = message;
-                merged = roleStyle;
-                merged = isInlineReplyPreview;
-                merged = channel1;
-                merged = options;
-                merged = forcedTheme;
-                merged = createThreadEmbed(message, roleStyle, isInlineReplyPreview, channel1, options, forcedTheme);
+            }
+            if (renderThreadEmbeds) {
+              const tmp83 = createThreadEmbed(message, roleStyle, isInlineReplyPreview, channel1, options, tmp6);
+            }
+            const tmp13Result12 = tmp13(tmp3[52]);
+            let member = null;
+            const interactionStatus = tmp13(tmp3[60]).createInteractionStatus(message, interaction);
+            if (null != guildId) {
+              member = member.getMember(guildId, author.id);
+            }
+            const tmp13Result19 = tmp13(tmp3[60]);
+            const useReducedMotion = c4.useReducedMotion;
+            let parent_id;
+            const result3 = tmp13(tmp3[61]).isMemberCommunicationDisabled(member);
+            if (channel != null) {
+              parent_id = channel.parent_id;
+            }
+            let channel2 = channel;
+            if (null != parent_id) {
+              let isThreadResult;
+              if (channel != null) {
+                isThreadResult = channel.isThread();
               }
-              merged = message;
-              merged = shouldObscureSpoiler;
-              merged = null;
-              merged = message(shouldObscureSpoiler[60]).createInteractionStatus(message, interaction);
-              if (null != guildId) {
-                merged = member;
-                merged = member.getMember(guildId, author.id);
+              channel2 = channel;
+              if (isThreadResult) {
+                channel2 = obj.getChannel(channel.parent_id);
               }
-              merged = message;
-              merged = shouldObscureSpoiler;
-              const obj43 = message(shouldObscureSpoiler[60]);
-              merged = c4;
-              const useReducedMotion = c4.useReducedMotion;
-              merged = c4;
-              merged = undefined;
-              merged = message(shouldObscureSpoiler[61]).isMemberCommunicationDisabled(merged);
-              if (null != channel) {
-                merged = channel.parent_id;
+            }
+            const tmp13Result20 = tmp13(tmp3[61]);
+            const obj19 = { guildMember: null, channel: null, onlyChannelConnectionRoles: true };
+            obj19[0] = member;
+            obj19[1] = channel2;
+            merged = tmp13(tmp3[62]).getVisibleConnectionsRole(obj19);
+            merged = tmp43;
+            if (tmp43) {
+              merged = 0 === message.attachments.length;
+            }
+            if (merged) {
+              merged = null != uploaderFileForMessageId;
+            }
+            if (merged) {
+              const obj20 = { uploaderFile: null, isFailedMessage: null, shouldInlineAttachmentMedia: null };
+              obj20[0] = uploaderFileForMessageId;
+              obj20[1] = message.state === tmp44.SEND_FAILED;
+              obj20[2] = tmp10;
+              let items3 = tmp2(tmp3[63])(obj20);
+            } else {
+              items3 = [];
+              if (renderAttachments) {
+                const obj21 = { attachments: null, uploadAttachments: null, shouldInlineAttachmentMedia: null, gifAutoPlay: null, viewImageDescriptions: null, useReducedMotion: null, shouldObscureSpoiler: null, themedBackgroundColor: null, enabledContentHarmTypeFlags: null, shouldAgeVerify: null, colors: null };
+                obj21[0] = message2.attachments;
+                merged = tmp2(tmp3[64]);
+                obj21[1] = obj14.getUploadAttachments(message.nonce);
+                obj21[2] = tmp10;
+                obj21[3] = gifAutoPlay;
+                obj21[4] = setting;
+                obj21[5] = useReducedMotion;
+                obj21[6] = shouldObscureSpoiler;
+                obj21[7] = tmp4.embedBackgroundColor;
+                obj21[8] = enabledHarmTypesForMessage;
+                obj21[9] = result1;
+                obj21[10] = tmp4;
+                items3 = merged(obj21);
               }
-              merged = channel;
-              if (null != merged) {
-                merged = channel;
-                if (null != channel) {
-                  merged = channel;
-                  if (channel.isThread()) {
-                    merged = store4;
-                    merged = store4.getChannel(channel.parent_id);
+            }
+            if (merged) {
+              if (message.state !== tmp44.SEND_FAILED) {
+                const intl13 = tmp13(tmp3[29]).intl;
+                merged = intl13.string(tmp13(tmp3[29]).t["yXY+5J"]);
+              }
+              if (merged) {
+                if (message.state !== tmp44.SEND_FAILED) {
+                  const intl14 = tmp13(tmp3[29]).intl;
+                  merged = intl14.string(tmp13(tmp3[29]).t["yXY+5J"]);
+                }
+                merged = id;
+                merged = stringResult;
+                merged = id.getId();
+                if (message.isUnsupported) {
+                  const intl15 = tmp13(tmp3[29]).intl;
+                  merged = intl15.string(tmp13(tmp3[29]).t.sWi5EU);
+                }
+                merged = message.isPoll();
+                merged = !merged;
+                if (merged) {
+                  merged = !isInlineReplyPreview;
+                  if (!isInlineReplyPreview) {
+                    merged = renderPolls;
                   }
                 }
-              }
-              merged = message;
-              merged = shouldObscureSpoiler;
-              const obj44 = message(shouldObscureSpoiler[61]);
-              const obj22 = { guildMember: merged, channel: merged, onlyChannelConnectionRoles: true };
-              merged = message(shouldObscureSpoiler[62]).getVisibleConnectionsRole(obj22);
-              merged = 0 !== message2.attachments.length;
-              merged = tmp55;
-              merged = 0 !== message2.embeds.length;
-              if (tmp55) {
-                merged = 0 === message.attachments.length;
-              }
-              if (merged) {
-                merged = null != uploaderFileForMessageId;
-              }
-              let items3 = [];
-              if (merged) {
-                merged = gifAutoPlay;
-                merged = shouldObscureSpoiler;
-                obj23 = { uploaderFile: uploaderFileForMessageId };
-                merged = constants2;
-                obj23.isFailedMessage = message.state === constants2.SEND_FAILED;
-                obj23.shouldInlineAttachmentMedia = tmp7;
-                items3 = gifAutoPlay(shouldObscureSpoiler[63])(obj23);
-              } else if (renderAttachments) {
-                merged = gifAutoPlay;
-                merged = shouldObscureSpoiler;
-                obj24 = { attachments: message2.attachments };
-                merged = store5;
-                merged = gifAutoPlay(shouldObscureSpoiler[64]);
-                obj24.uploadAttachments = store5.getUploadAttachments(message.nonce);
-                obj24.shouldInlineAttachmentMedia = tmp7;
-                obj24.gifAutoPlay = gifAutoPlay;
-                obj24.viewImageDescriptions = setting;
-                obj24.useReducedMotion = useReducedMotion;
-                obj24.shouldObscureSpoiler = shouldObscureSpoiler;
-                obj24.themedBackgroundColor = tmp2.embedBackgroundColor;
-                obj24.enabledContentHarmTypeFlags = enabledHarmTypesForMessage;
-                obj24.shouldAgeVerify = result1;
-                obj24.colors = tmp2;
-                items3 = merged(obj24);
-              }
-              if (merged) {
-                merged = constants2;
-                if (message.state !== constants2.SEND_FAILED) {
+                if (!merged) {
+                  merged = null != stringResult;
+                  if (merged) {
+                    merged = "" !== stringResult;
+                  }
+                }
+                if (!merged) {
+                  merged = tmp13(tmp3[35]).getPollReplyPreview(message);
+                  const tmp13Result22 = tmp13(tmp3[35]);
+                }
+                if (renderPolls) {
+                  const obj22 = { theme: null, animateEmoji: null };
+                  obj22[0] = forcedTheme;
+                  obj22[1] = animateEmoji;
+                  merged = tmp2(tmp3[66])(message, undefined, obj22);
+                }
+                if (renderSharedClientTheme) {
+                  merged = tmp13(tmp3[67]).formatSharedClientThemeData(message, ensureAvatarSourceResult, nick);
+                  const tmp13Result23 = tmp13(tmp3[67]);
+                }
+                merged = guildId;
+                if (tmp13Result24.shouldDisplayGuildTag(author.id, merged)) {
+                  merged = tmp13(tmp3[68]).getUserPrimaryGuild(author.primaryGuild);
+                  merged = undefined;
+                  ({ guildId, tag } = merged);
+                  if (null != merged.guildId) {
+                    merged = GuildTagBadgeSize;
+                    merged = tmp13(tmp3[68]).getGuildTagBadgeUrl(merged.guildId, merged.badge, GuildTagBadgeSize.SIZE_12);
+                    const tmp13Result26 = tmp13(tmp3[68]);
+                  }
+                  merged = tag;
+                  merged = guildId;
+                  const tmp13Result25 = tmp13(tmp3[68]);
+                }
+                merged = undefined;
+                if (channel != null) {
+                  merged = channel.linkedLobby;
+                }
+                if (null != merged) {
+                  if (null != message.additionalName) {
+                    if ("" !== message.additionalName) {
+                      merged = store;
+                      merged = store.getApplication(merged.application_id);
+                      merged = undefined;
+                      if (merged != null) {
+                        merged = merged.icon;
+                      }
+                      merged = undefined;
+                      if (null != merged) {
+                        ({ id: obj61[0], icon: obj61[1] } = merged);
+                        merged = tmp2(tmp3[54]).getApplicationIconURL({ id: null, icon: null, size: 16 });
+                        const obj23 = { id: null, icon: null, size: 16 };
+                        const tmp2Result1 = tmp2(tmp3[54]);
+                      }
+                      const additionalName = message.additionalName;
+                    }
+                  }
+                }
+                tmp13Result24 = tmp13(tmp3[68]);
+                merged = message2;
+                if (message2 == null) {
                   merged = message;
-                  merged = shouldObscureSpoiler;
-                  const intl13 = message(shouldObscureSpoiler[29]).intl;
-                  merged = intl13.string(message(shouldObscureSpoiler[29]).t["yXY+5J"]);
+                }
+                let str8 = message.applicationId;
+                merged = tmp13(tmp3[34]).hasFlag(merged.flags, tmp58.IS_VOICE_MESSAGE);
+                merged = store;
+                if (str8 == null) {
+                  str8 = "";
+                }
+                merged = store.getApplication(str8);
+                merged = null != merged;
+                if (merged) {
+                  merged = tmp13(tmp3[34]).hasFlag(message.flags, tmp58.SENT_BY_SOCIAL_LAYER_INTEGRATION);
+                  const tmp13Result28 = tmp13(tmp3[34]);
                 }
                 if (merged) {
-                  merged = constants2;
-                  if (message.state !== constants2.SEND_FAILED) {
-                    merged = message;
-                    merged = shouldObscureSpoiler;
-                    const intl14 = message(shouldObscureSpoiler[29]).intl;
-                    merged = intl14.string(message(shouldObscureSpoiler[29]).t["yXY+5J"]);
-                  }
-                  merged = id;
-                  merged = stringResult;
-                  merged = id.getId();
-                  if (message.isUnsupported) {
-                    merged = message;
-                    merged = shouldObscureSpoiler;
-                    const intl15 = message(shouldObscureSpoiler[29]).intl;
-                    merged = intl15.string(message(shouldObscureSpoiler[29]).t.sWi5EU);
-                  }
-                  merged = !message.isPoll();
-                  if (!merged) {
-                    merged = !isInlineReplyPreview && renderPolls;
-                  }
-                  if (!merged) {
-                    merged = null != stringResult;
-                    if (merged) {
-                      merged = "" !== stringResult;
-                    }
-                  }
-                  if (!merged) {
-                    merged = message;
-                    merged = shouldObscureSpoiler;
-                    merged = message(shouldObscureSpoiler[35]).getPollReplyPreview(message);
-                    const obj51 = message(shouldObscureSpoiler[35]);
-                  }
-                  if (renderPolls) {
-                    merged = gifAutoPlay;
-                    merged = shouldObscureSpoiler;
-                    const obj25 = { theme: forcedTheme, animateEmoji };
-                    merged = gifAutoPlay(shouldObscureSpoiler[66])(message, undefined, obj25);
-                  }
-                  if (renderSharedClientTheme) {
-                    merged = message;
-                    merged = shouldObscureSpoiler;
-                    merged = message(shouldObscureSpoiler[67]).formatSharedClientThemeData(message, ensureAvatarSourceResult, nick);
-                    const obj53 = message(shouldObscureSpoiler[67]);
-                  }
-                  merged = message;
-                  merged = shouldObscureSpoiler;
-                  merged = undefined;
-                  if (null != guildId) {
-                    merged = guildId;
-                  }
-                  if (obj54.shouldDisplayGuildTag(author.id, merged)) {
-                    merged = message;
-                    merged = shouldObscureSpoiler;
-                    merged = message(shouldObscureSpoiler[68]).getUserPrimaryGuild(author.primaryGuild);
-                    merged = undefined;
-                    ({ guildId, tag } = merged);
-                    if (null != merged.guildId) {
-                      merged = message;
-                      merged = shouldObscureSpoiler;
-                      merged = GuildTagBadgeSize;
-                      merged = message(shouldObscureSpoiler[68]).getGuildTagBadgeUrl(merged.guildId, merged.badge, GuildTagBadgeSize.SIZE_12);
-                      const obj56 = message(shouldObscureSpoiler[68]);
-                    }
-                    merged = guildId;
-                    merged = tag;
-                    const obj55 = message(shouldObscureSpoiler[68]);
-                  }
-                  merged = undefined;
-                  if (null != channel) {
-                    merged = channel.linkedLobby;
-                  }
+                  id = merged.id;
+                }
+                merged = undefined;
+                if (message2 != null) {
+                  merged = message2.hasFlag(tmp58.IS_GUILD_OFFICIAL);
+                }
+                if (merged) {
+                  merged = guild;
+                  merged = guild.getGuild(guildId);
                   if (null != merged) {
-                    if (null != message.additionalName) {
-                      if ("" !== message.additionalName) {
-                        merged = store;
-                        merged = store.getApplication(merged.application_id);
-                        merged = undefined;
-                        if (null != merged) {
-                          merged = merged.icon;
-                        }
-                        merged = undefined;
-                        if (null != merged) {
-                          merged = gifAutoPlay;
-                          merged = shouldObscureSpoiler;
-                          obj26 = {};
-                          ({ id: obj58.id, icon: obj58.icon } = merged);
-                          obj26.size = 16;
-                          merged = gifAutoPlay(shouldObscureSpoiler[54]).getApplicationIconURL(obj26);
-                          const obj57 = gifAutoPlay(shouldObscureSpoiler[54]);
-                        }
-                        const additionalName = message.additionalName;
+                    if (tmp13Result29.isGuildOfficialMessagesEnabled(merged, "createMessageContent")) {
+                      let officialMessageColor = merged.officialMessageColor;
+                      if (officialMessageColor == null) {
+                        officialMessageColor = closure_24;
                       }
-                    }
-                  }
-                  merged = message;
-                  merged = shouldObscureSpoiler;
-                  obj54 = message(shouldObscureSpoiler[68]);
-                  merged = message;
-                  if (null != message2) {
-                    merged = message2;
-                  }
-                  merged = closure_30;
-                  const applicationId = message.applicationId;
-                  let str10 = "";
-                  merged = message(shouldObscureSpoiler[34]).hasFlag(merged.flags, closure_30.IS_VOICE_MESSAGE);
-                  merged = store;
-                  if (null != applicationId) {
-                    str10 = applicationId;
-                  }
-                  merged = store.getApplication(str10);
-                  merged = null != merged;
-                  if (merged) {
-                    merged = message;
-                    merged = shouldObscureSpoiler;
-                    merged = closure_30;
-                    merged = message(shouldObscureSpoiler[34]).hasFlag(message.flags, closure_30.SENT_BY_SOCIAL_LAYER_INTEGRATION);
-                    const obj60 = message(shouldObscureSpoiler[34]);
-                  }
-                  if (merged) {
-                    id = merged.id;
-                  }
-                  if (null != message2) {
-                    merged = closure_30;
-                    if (message2.hasFlag(closure_30.IS_GUILD_OFFICIAL)) {
-                      merged = guild;
-                      merged = guild.getGuild(guildId);
-                      if (null != merged) {
-                        merged = message;
-                        merged = shouldObscureSpoiler;
-                        if (obj61.isGuildOfficialMessagesEnabled(merged, "createMessageContent")) {
-                          let officialMessageColor = merged.officialMessageColor;
-                          if (null == officialMessageColor) {
-                            officialMessageColor = closure_24;
-                          }
-                          merged = c4;
-                          const officialMessageStyle = c4.officialMessageStyle;
-                          merged = message;
-                          merged = shouldObscureSpoiler;
-                          merged = message(shouldObscureSpoiler[69]).showGuildOfficialMessageGradient(officialMessageStyle);
-                          merged = undefined;
-                          if (merged) {
-                            merged = closure_26;
-                            merged = officialMessageColor | closure_26;
-                          }
-                          merged = message;
-                          merged = shouldObscureSpoiler;
-                          const obj62 = message(shouldObscureSpoiler[69]);
-                          merged = undefined;
-                          if (obj63.showGuildOfficialMessageTextColor(officialMessageStyle)) {
-                            merged = gifAutoPlay;
-                            merged = shouldObscureSpoiler;
-                            const internal = gifAutoPlay(shouldObscureSpoiler[70]).internal;
-                            merged = internal.resolveSemanticColor(forcedTheme, gifAutoPlay(shouldObscureSpoiler[70]).colors.BACKGROUND_BASE_LOWER);
-                            merged = c4;
-                            let num61 = 1;
-                            if (c4.desaturateUserColors) {
-                              merged = c4;
-                              num61 = c4.saturation;
-                            }
-                            merged = message;
-                            merged = shouldObscureSpoiler;
-                            const obj64 = message(shouldObscureSpoiler[69]);
-                            let num62 = 0;
-                            if (merged) {
-                              num62 = closure_25;
-                            }
-                            merged = obj64;
-                            merged = officialMessageColor;
-                            merged = num61;
-                            merged = num62;
-                            const accessibleGuildOfficialTextColor = obj64.getAccessibleGuildOfficialTextColor(officialMessageColor, merged, num61, num62);
-                            merged = accessibleGuildOfficialTextColor.num();
-                          }
-                          merged = message;
-                          merged = shouldObscureSpoiler;
-                          const intl16 = message(shouldObscureSpoiler[29]).intl;
-                          merged = intl16.string(message(shouldObscureSpoiler[29]).t.GzDTxY);
-                          obj63 = message(shouldObscureSpoiler[69]);
-                        }
-                        obj61 = message(shouldObscureSpoiler[69]);
-                      }
-                    }
-                  }
-                  merged = message;
-                  merged = shouldObscureSpoiler;
-                  const obj59 = message(shouldObscureSpoiler[34]);
-                  const obj27 = {};
-                  ({ id: obj67.id, channel_id: obj67.channelId } = message);
-                  merged = undefined;
-                  merged = message(shouldObscureSpoiler[71]).createVoiceChannelBadge(message.author.id, guildId);
-                  if (null != guildId) {
-                    merged = guildId;
-                  }
-                  obj27.guildId = merged;
-                  merged = message;
-                  if (null != message2) {
-                    merged = message2;
-                  }
-                  obj27.flags = merged.flags;
-                  obj27.type = message.type;
-                  if (null != message.nonce) {
-                    if ("string" !== typeof message.nonce) {
-                      merged = globalThis;
-                      const _String = String;
-                      let nonce = String(message.nonce);
-                    }
-                    obj27.nonce = nonce;
-                    obj27.state = message.state;
-                    obj27.reactions = items;
-                    merged = undefined;
-                    if (!renderContentOnly) {
-                      merged = tmp96;
-                    }
-                    obj27.referencedMessage = merged;
-                    obj27.threadEmbed = merged;
-                    merged = undefined;
-                    if (null != messageForward) {
-                      merged = messageForward.getForwardInfo();
-                    }
-                    obj27.forwardInfo = merged;
-                    obj27.mentioned = !ignoreMentioned && message.mentioned;
-                    let str13 = "";
-                    if (message.isEdited()) {
-                      str13 = "";
-                      if (!renderContentOnly) {
-                        merged = message;
-                        merged = shouldObscureSpoiler;
-                        const intl17 = message(shouldObscureSpoiler[29]).intl;
-                        str13 = intl17.string(message(shouldObscureSpoiler[29]).t.C8sXIM);
-                      }
-                    }
-                    obj27.edited = str13;
-                    merged = undefined;
-                    if (message.isEdited()) {
-                      if (!renderContentOnly) {
-                        if (null != message.editedTimestamp) {
-                          merged = message;
-                          merged = shouldObscureSpoiler;
-                          merged = message(shouldObscureSpoiler[65]).dateFormat(message.editedTimestamp, "LLLL");
-                          const obj68 = message(shouldObscureSpoiler[65]);
-                        }
-                      }
-                    }
-                    obj27.editedTimestamp = merged;
-                    obj27.editedColor = tmp2.editedColor;
-                    if (message.isUnsupported) {
-                      let textColor = tmp2.unsupportedColor;
-                    } else if (null != merged) {
-                      textColor = 4278190080 | merged;
-                    } else {
-                      textColor = tmp2.textColor;
-                    }
-                    obj27.textColor = textColor;
-                    obj27.officialMessageColor = merged;
-                    obj27.linkColor = tmp2.linkColor;
-                    obj27.tagText = tagText;
-                    obj27.tagAccessibilityLabel = tagAccessibilityLabel;
-                    obj27.tagVerified = tagVerified;
-                    obj27.tagTextColor = tagTextColor;
-                    obj27.tagBackgroundColor = tagBackgroundColor;
-                    obj27.tagType = tagType;
-                    obj27.tagIconUrl = tagIconUrl;
-                    obj27.opTagText = opTagText;
-                    obj27.opTagTextColor = opTagTextColor;
-                    obj27.opTagBackgroundColor = opTagBackgroundColor;
-                    obj27.stateAccessibilityLabel = merged;
-                    obj27.constrainedWidth = constrainedWidth;
-                    obj27.gifAutoPlay = gifAutoPlay;
-                    obj27.animateEmoji = animateEmoji;
-                    let username = nick;
-                    if (tmp20) {
-                      username = author.username;
-                    }
-                    merged = undefined;
-                    if (null != username) {
-                      merged = username;
-                    }
-                    obj27.username = merged;
-                    merged = undefined;
-                    if (!tmp20) {
-                      merged = ensureAvatarSourceResult.uri;
-                    }
-                    obj27.avatarURL = merged;
-                    merged = null;
-                    if (!tmp20) {
-                      merged = avatarDecorationURL;
-                    }
-                    obj27.avatarDecorationURL = merged;
-                    obj27.authorId = author.id;
-                    if (!tmp20) {
-                      if ("username" === roleStyle) {
-                        merged = undefined;
-                        merged = shouldDisableInteractiveComponents;
-                        if (null != colorString) {
-                          merged = colorString;
-                        }
-                        let defaultUsernameColor = merged(merged);
-                        if (null == defaultUsernameColor) {
-                          defaultUsernameColor = tmp2.defaultUsernameColor;
-                        }
-                      }
-                      obj27.usernameColor = defaultUsernameColor;
-                      merged = null;
-                      if (!tmp20) {
-                        merged = undefined;
-                        merged = shouldDisableInteractiveComponents;
-                        if (null != colorString) {
-                          merged = colorString;
-                        }
-                        merged = merged(merged);
-                        merged = null;
-                      }
-                      obj27.roleColor = merged;
-                      merged = null;
-                      if (hasEnhancedRoleColors) {
-                        merged = null;
-                        if (!tmp20) {
-                          merged = message;
-                          merged = shouldObscureSpoiler;
-                          merged = message(shouldObscureSpoiler[72]).processColorStrings(messageAuthor.colorStrings);
-                          const obj69 = message(shouldObscureSpoiler[72]);
-                        }
-                      }
-                      obj27.roleColors = merged;
-                      obj27.shouldShowRoleDot = "dot" === roleStyle;
-                      obj27.shouldShowRoleOnName = "username" === roleStyle;
-                      obj27.showLinkDecorations = c4.alwaysShowLinkDecorations;
-                      if (tmp20) {
-                        let defaultUsernameColor2 = tmp2.defaultUsernameColor;
-                      } else {
-                        merged = undefined;
-                        merged = shouldDisableInteractiveComponents;
-                        if (null != colorString) {
-                          merged = colorString;
-                        }
-                        defaultUsernameColor2 = merged(merged);
-                        if (null == defaultUsernameColor2) {
-                          defaultUsernameColor2 = tmp2.defaultUsernameColor;
-                        }
-                      }
-                      obj27.colorString = defaultUsernameColor2;
-                      merged = undefined;
-                      if (!tmp20) {
-                        merged = roleIcon;
-                      }
-                      obj27.roleIcon = merged;
-                      merged = undefined;
-                      if (null != merged) {
-                        merged = message;
-                        merged = shouldObscureSpoiler;
-                        merged = message(shouldObscureSpoiler[73]).createConnectionsRoleTag(merged);
-                        const obj70 = message(shouldObscureSpoiler[73]);
-                      }
-                      obj27.connectionsRoleTag = merged;
-                      merged = undefined;
-                      obj27.timestamp = merged;
-                      merged = undefined;
-                      if (!tmp20) {
-                        merged = message;
-                        merged = shouldObscureSpoiler;
-                        merged = message(shouldObscureSpoiler[65]).dateFormat(message.timestamp, "LLLL");
-                        const obj71 = message(shouldObscureSpoiler[65]);
-                      }
-                      obj27.timestampTooltip = merged;
-                      merged = undefined;
-                      if (!tmp20) {
-                        merged = tmp2.timestampColor;
-                      }
-                      obj27.timestampColor = merged;
-                      merged = undefined;
-                      obj27.timestampAccessibilityLabel = merged;
-                      obj27.content = merged;
-                      obj27.isEditing = isEditing;
-                      obj27.renderContentOnly = renderContentOnly;
-                      merged = undefined;
-                      if (undefined !== pushFeedbackType) {
-                        merged = message;
-                        merged = shouldObscureSpoiler;
-                        merged = message(shouldObscureSpoiler[74]).createSurveyIndication(message, forcedTheme, pushFeedbackType);
-                        const obj72 = message(shouldObscureSpoiler[74]);
-                      }
-                      obj27.surveyIndication = merged;
-                      merged = message;
-                      merged = shouldObscureSpoiler;
-                      obj27.ephemeralIndication = message(shouldObscureSpoiler[75]).createEphemeralIndication(message);
-                      obj27.interactionStatus = merged;
-                      merged = undefined;
-                      if (renderExecutedCommands) {
-                        merged = message;
-                        merged = shouldObscureSpoiler;
-                        const obj74 = message(shouldObscureSpoiler[76]);
-                        merged = obj74;
-                        merged = message;
-                        merged = channel;
-                        merged = roleStyle;
-                        merged = forcedTheme;
-                        merged = obj74.createExecutedCommand(message, channel, roleStyle, forcedTheme, tmp2.defaultUsernameColor);
-                      }
-                      obj27.executedCommand = merged;
-                      merged = undefined;
-                      if (message2.components.length > 0) {
-                        if (renderComponents) {
-                          merged = gifAutoPlay;
-                          merged = shouldObscureSpoiler;
-                          obj28 = { message, guildId, interaction, shouldDisableInteractiveComponents, shouldShowMedia: tmp3, shouldObscureSpoiler, enabledContentHarmTypeFlags: enabledHarmTypesForMessage, shouldAgeVerify: result1, shouldShowMosaicMediaDescriptions: setting, shouldAutoPlayGifs: gifAutoPlay, colors: tmp2 };
-                          merged = gifAutoPlay(shouldObscureSpoiler[49])(obj28, message2.components);
-                        }
-                      }
-                      obj27.components = merged;
-                      let num75 = 0;
-                      if (!renderContentOnly) {
-                        num75 = tmp2.feedbackColor;
-                      }
-                      obj27.feedbackColor = num75;
-                      let num76 = 0;
-                      if (!renderContentOnly) {
-                        num76 = tmp2.highlightColor;
-                      }
-                      obj27.highlightColor = num76;
-                      merged = undefined;
-                      if (null != tmp64) {
-                        merged = tmp64;
-                      }
-                      obj27.embeds = merged;
-                      if (renderGiftCode) {
-                        merged = message;
-                        merged = shouldObscureSpoiler;
-                        let giftCodeEmbed = message(shouldObscureSpoiler[77]).createGiftCodeEmbed(message, forcedTheme);
-                        const obj76 = message(shouldObscureSpoiler[77]);
-                      } else {
-                        giftCodeEmbed = [];
-                      }
-                      obj27.giftCodes = giftCodeEmbed;
-                      if (renderCodedLinks) {
-                        merged = message;
-                        merged = shouldObscureSpoiler;
-                        const obj77 = message(shouldObscureSpoiler[78]);
-                        merged = obj77;
-                        merged = message;
-                        merged = message2;
-                        merged = channel;
-                        merged = forcedTheme;
-                        let codedLinkEmbeds = obj77.createCodedLinkEmbeds(message, message2, channel, forcedTheme);
-                      } else {
-                        codedLinkEmbeds = [];
-                      }
-                      obj27.codedLinks = codedLinkEmbeds;
-                      merged = undefined;
-                      if (renderActivityInstanceEmbed) {
-                        merged = message;
-                        merged = shouldObscureSpoiler;
-                        merged = message(shouldObscureSpoiler[79]).createActivityInstanceEmbed(message);
-                        const obj78 = message(shouldObscureSpoiler[79]);
-                      }
-                      obj27.activityInstanceEmbed = merged;
-                      merged = undefined;
-                      if (renderActivityInviteEmbed) {
-                        merged = message;
-                        merged = shouldObscureSpoiler;
-                        merged = message(shouldObscureSpoiler[80]).createActivityRichPresenceInviteEmbed(message, channel);
-                        const obj79 = message(shouldObscureSpoiler[80]);
-                      }
-                      obj27.activityRichPresenceInviteEmbed = merged;
-                      if (tmp7) {
-                        if (renderAttachments) {
-                          renderAttachments = merged;
-                        }
-                        if (!renderAttachments) {
-                          renderAttachments = tmp55;
-                        }
-                        tmp7 = renderAttachments;
-                      }
-                      obj27.useAttachmentGridLayout = tmp7;
-                      obj27.useAttachmentUploadPreview = tmp55;
-                      obj27.attachments = items3;
-                      let num82 = 1;
-                      if (tmp55) {
-                        merged = constants2;
-                        num82 = 1;
-                        if (message.state === constants2.SEND_FAILED) {
-                          num82 = 0.2;
-                        }
-                      }
-                      obj27.attachmentsOpacity = num82;
-                      if (restrictedPreview) {
-                        let items4 = [];
-                      } else {
-                        merged = gifAutoPlay;
-                        merged = shouldObscureSpoiler;
-                        const obj29 = { message: message2 };
-                        merged = message;
-                        merged = gifAutoPlay(shouldObscureSpoiler[81]);
-                        const AnimateStickers = message(shouldObscureSpoiler[47]).AnimateStickers;
-                        obj29.animateStickersSetting = AnimateStickers.getSetting();
-                        obj29.isUserInteracting = message.id === animatingStickerMessageId;
-                        items4 = merged(obj29);
-                      }
-                      obj27.stickers = items4;
-                      if (renderCommunicationDisabled) {
-                        renderCommunicationDisabled = merged;
-                      }
-                      obj27.communicationDisabled = renderCommunicationDisabled;
-                      merged = null == channel || !channel.isForumPost();
-                      merged = !merged;
-                      if (!merged) {
-                        merged = message.id === message.channel_id;
-                      }
-                      obj27.isFirstForumPostMessage = merged;
-                      merged = undefined;
-                      if (null != channel) {
-                        if (channel.isForumPost()) {
-                          if (renderForumPostActions) {
-                            merged = getForumPostActions;
-                            merged = getForumPostActions(message, channel);
-                          }
-                        }
-                      }
-                      obj27.postActions = merged;
-                      obj27.isCurrentUserMessageAuthor = message.author.id === merged;
-                      merged = guildId;
-                      obj27.usingGradientTheme = null != guildId.gradientPreset;
-                      merged = message;
-                      merged = shouldObscureSpoiler;
-                      const obj73 = message(shouldObscureSpoiler[75]);
-                      merged = gifAutoPlay;
-                      obj27.swipeToReplyIconUrl = message(shouldObscureSpoiler[30]).getAssetUriForEmbed(gifAutoPlay(shouldObscureSpoiler[82]));
-                      const obj81 = message(shouldObscureSpoiler[30]);
-                      obj27.swipeToEditIconUrl = message(shouldObscureSpoiler[30]).getAssetUriForEmbed(gifAutoPlay(shouldObscureSpoiler[83]));
-                      if (tmp4) {
-                        merged = message;
-                        merged = shouldObscureSpoiler;
-                        let postPreviewEmbeds = message(shouldObscureSpoiler[84]).createPostPreviewEmbeds(message, roleStyle, useReducedMotion);
-                        const obj83 = message(shouldObscureSpoiler[84]);
-                      } else {
-                        postPreviewEmbeds = [];
-                      }
-                      obj27.postPreviewEmbeds = postPreviewEmbeds;
-                      merged = message;
-                      merged = shouldObscureSpoiler;
-                      const intl18 = message(shouldObscureSpoiler[29]).intl;
-                      obj27.obscureLearnMoreLabel = intl18.string(message(shouldObscureSpoiler[29]).t["2aXnfa"]);
-                      const obj82 = message(shouldObscureSpoiler[30]);
-                      obj27.safetyPolicyNoticeEmbed = message(shouldObscureSpoiler[85]).createSafetyPolicyNoticeEmbed(message);
-                      obj27.pollData = merged;
-                      obj27.sharedClientTheme = merged;
-                      const obj84 = message(shouldObscureSpoiler[85]);
-                      obj27.safetySystemNotificationEmbed = message(shouldObscureSpoiler[86]).createSafetySystemNotificationEmbed(message);
-                      const obj85 = message(shouldObscureSpoiler[86]);
-                      obj27.ctaButton = message(shouldObscureSpoiler[87]).createCtaButton(message.id, message.channel_id, tmp2);
+                      const officialMessageStyle = tmp95.officialMessageStyle;
+                      merged = tmp13(tmp3[69]).showGuildOfficialMessageGradient(officialMessageStyle);
                       merged = undefined;
                       if (merged) {
-                        merged = tmp2.embedBackgroundColor;
+                        merged = closure_26;
+                        merged = officialMessageColor | closure_26;
                       }
-                      obj27.audioAttachmentBackgroundColor = merged;
-                      merged = message;
-                      merged = shouldObscureSpoiler;
-                      const obj86 = message(shouldObscureSpoiler[87]);
-                      obj27.accessibilityActions = message(shouldObscureSpoiler[88]).createMessageAccessibilityActions(message, channel);
-                      obj27.clanTagGuildId = merged;
-                      obj27.clanTag = merged;
-                      obj27.clanBadgeUrl = merged;
-                      obj27.lobbyAdditionalName = additionalName;
-                      obj27.lobbyTagIconUrl = merged;
-                      obj27.isFirst = isFirst;
-                      obj27.gameApplicationId = id;
+                      const tmp13Result30 = tmp13(tmp3[69]);
                       merged = undefined;
-                      if (null != channel) {
-                        merged = channel.type;
+                      if (tmp13Result31.showGuildOfficialMessageTextColor(officialMessageStyle)) {
+                        const internal = tmp2(tmp3[70]).internal;
+                        merged = internal.resolveSemanticColor(forcedTheme, tmp2(tmp3[70]).colors.BACKGROUND_BASE_LOWER);
+                        let num5 = 1;
+                        if (tmp95.desaturateUserColors) {
+                          num5 = tmp95.saturation;
+                        }
+                        const tmp13Result32 = tmp13(tmp3[69]);
+                        let num6 = 0;
+                        if (merged) {
+                          num6 = closure_25;
+                        }
+                        merged = tmp13Result32;
+                        merged = officialMessageColor;
+                        merged = num5;
+                        merged = num6;
+                        const accessibleGuildOfficialTextColor = tmp13Result32.getAccessibleGuildOfficialTextColor(officialMessageColor, merged, num5, num6);
+                        merged = accessibleGuildOfficialTextColor.num();
                       }
-                      merged = constants3;
-                      obj27.isAnnouncementChannel = merged === constants3.GUILD_ANNOUNCEMENT;
-                      merged = message;
-                      merged = shouldObscureSpoiler;
-                      const obj87 = message(shouldObscureSpoiler[88]);
-                      obj27.displayNameStyles = message(shouldObscureSpoiler[89]).createDisplayNameStylesMobile(message.author, merged);
-                      obj27.voiceChannelBadge = merged;
-                      return obj27;
+                      const intl16 = tmp13(tmp3[29]).intl;
+                      merged = intl16.string(tmp13(tmp3[29]).t.GzDTxY);
+                      tmp13Result31 = tmp13(tmp3[69]);
                     }
-                    defaultUsernameColor = tmp2.defaultUsernameColor;
+                    tmp13Result29 = tmp13(tmp3[69]);
                   }
-                  nonce = message.nonce;
-                  const obj66 = message(shouldObscureSpoiler[71]);
                 }
-                merged = message;
-                merged = shouldObscureSpoiler;
-                merged = message(shouldObscureSpoiler[65]).accessibilityLabelCalendarFormat(message.timestamp);
-                const obj50 = message(shouldObscureSpoiler[65]);
+                const tmp13Result27 = tmp13(tmp3[34]);
+                const obj24 = { id: null, channelId: null, guildId: null, flags: null, type: null, nonce: null, state: null, reactions: null, referencedMessage: null, threadEmbed: null, forwardInfo: null, mentioned: null, edited: null, editedTimestamp: null, editedColor: null, textColor: null, officialMessageColor: null, linkColor: null, tagText: null, tagAccessibilityLabel: null, tagVerified: null, tagTextColor: null, tagBackgroundColor: null, tagType: null, tagIconUrl: null, opTagText: null, opTagTextColor: null, opTagBackgroundColor: null, stateAccessibilityLabel: null, constrainedWidth: null, gifAutoPlay: null, animateEmoji: null, username: null, avatarURL: null, avatarDecorationURL: null, authorId: null, usernameColor: null, roleColor: null, roleColors: null, shouldShowRoleDot: null, shouldShowRoleOnName: null, showLinkDecorations: null, colorString: null, roleIcon: null, connectionsRoleTag: null, timestamp: null, timestampTooltip: null, timestampColor: null, timestampAccessibilityLabel: null, content: null, isEditing: null, renderContentOnly: null, surveyIndication: null, ephemeralIndication: null, interactionStatus: null, executedCommand: null, components: null, feedbackColor: null, highlightColor: null, embeds: null, giftCodes: null, codedLinks: null, activityInstanceEmbed: null, activityRichPresenceInviteEmbed: null, useAttachmentGridLayout: null, useAttachmentUploadPreview: null, attachments: null, attachmentsOpacity: null, stickers: null, communicationDisabled: null, isFirstForumPostMessage: null, postActions: null, isCurrentUserMessageAuthor: null, usingGradientTheme: null, swipeToReplyIconUrl: null, swipeToEditIconUrl: null, postPreviewEmbeds: null, obscureLearnMoreLabel: null, safetyPolicyNoticeEmbed: null, pollData: null, sharedClientTheme: null, safetySystemNotificationEmbed: null, ctaButton: null, audioAttachmentBackgroundColor: null, accessibilityActions: null, clanTagGuildId: null, clanTag: null, clanBadgeUrl: null, lobbyAdditionalName: null, lobbyTagIconUrl: null, isFirst: null, gameApplicationId: null, isAnnouncementChannel: null, displayNameStyles: null, voiceChannelBadge: null };
+                ({ id: obj70[0], channel_id: obj70[1] } = message);
+                merged = guildId;
+                merged = tmp13(tmp3[71]).createVoiceChannelBadge(message.author.id, guildId);
+                obj24[2] = merged;
+                merged = message2;
+                if (message2 == null) {
+                  merged = message;
+                }
+                obj24[3] = merged.flags;
+                obj24[4] = message.type;
+                if (null != message.nonce) {
+                  if (typeof message.nonce === "init") {
+                    merged = globalThis;
+                    const _String = String;
+                    let nonce = String(message.nonce);
+                  }
+                  obj24[5] = nonce;
+                  obj24[6] = message.state;
+                  obj24[7] = items;
+                  merged = undefined;
+                  if (!renderContentOnly) {
+                    merged = tmp60;
+                  }
+                  obj24[8] = merged;
+                  obj24[9] = tmp83;
+                  merged = undefined;
+                  if (null != messageForward) {
+                    merged = messageForward.getForwardInfo();
+                  }
+                  obj24[10] = merged;
+                  let mentioned = !ignoreMentioned;
+                  if (!ignoreMentioned) {
+                    mentioned = message.mentioned;
+                  }
+                  obj24[11] = mentioned;
+                  let str11 = "";
+                  if (message.isEdited()) {
+                    str11 = "";
+                    if (!renderContentOnly) {
+                      const intl17 = tmp13(tmp3[29]).intl;
+                      str11 = intl17.string(tmp13(tmp3[29]).t.C8sXIM);
+                    }
+                  }
+                  obj24[12] = str11;
+                  merged = undefined;
+                  if (message.isEdited()) {
+                    if (!renderContentOnly) {
+                      if (null != message.editedTimestamp) {
+                        merged = tmp13(tmp3[65]).dateFormat(message.editedTimestamp, "LLLL");
+                        const tmp13Result34 = tmp13(tmp3[65]);
+                      }
+                    }
+                  }
+                  obj24[13] = merged;
+                  obj24[14] = tmp4.editedColor;
+                  if (message.isUnsupported) {
+                    let textColor = tmp4.unsupportedColor;
+                  } else if (null != merged) {
+                    textColor = 4278190080 | merged;
+                  } else {
+                    textColor = tmp4.textColor;
+                  }
+                  obj24[15] = textColor;
+                  obj24[16] = merged;
+                  obj24[17] = tmp4.linkColor;
+                  obj24[18] = tagText;
+                  obj24[19] = tagAccessibilityLabel;
+                  obj24[20] = tagVerified;
+                  obj24[21] = tagTextColor;
+                  obj24[22] = tagBackgroundColor;
+                  obj24[23] = tagType;
+                  obj24[24] = tagIconUrl;
+                  obj24[25] = opTagText;
+                  obj24[26] = opTagTextColor;
+                  obj24[27] = opTagBackgroundColor;
+                  obj24[28] = merged;
+                  obj24[29] = constrainedWidth;
+                  obj24[30] = gifAutoPlay;
+                  obj24[31] = animateEmoji;
+                  if (tmp21) {
+                    nick = author.username;
+                  }
+                  obj24[32] = nick;
+                  merged = undefined;
+                  if (!tmp21) {
+                    merged = ensureAvatarSourceResult.uri;
+                  }
+                  obj24[33] = merged;
+                  merged = null;
+                  if (!tmp21) {
+                    merged = avatarDecorationURL;
+                  }
+                  obj24[34] = merged;
+                  obj24[35] = author.id;
+                  if (!tmp21) {
+                    if ("username" === roleStyle) {
+                      merged = colorString;
+                      merged = shouldDisableInteractiveComponents;
+                      let defaultUsernameColor = merged(merged);
+                      if (defaultUsernameColor == null) {
+                        defaultUsernameColor = tmp4.defaultUsernameColor;
+                      }
+                    }
+                    obj24[36] = defaultUsernameColor;
+                    merged = null;
+                    if (!tmp21) {
+                      merged = colorString;
+                      merged = shouldDisableInteractiveComponents;
+                      merged = merged(merged);
+                      if (merged == null) {
+                        merged = null;
+                      }
+                    }
+                    obj24[37] = merged;
+                    merged = null;
+                    if (hasEnhancedRoleColors) {
+                      merged = null;
+                      if (!tmp21) {
+                        merged = tmp13(tmp3[72]).processColorStrings(colorStrings);
+                        const tmp13Result35 = tmp13(tmp3[72]);
+                      }
+                    }
+                    obj24[38] = merged;
+                    obj24[39] = "dot" === roleStyle;
+                    obj24[40] = "username" === roleStyle;
+                    obj24[41] = c4.alwaysShowLinkDecorations;
+                    if (tmp21) {
+                      let defaultUsernameColor2 = tmp4.defaultUsernameColor;
+                    } else {
+                      merged = shouldDisableInteractiveComponents;
+                      defaultUsernameColor2 = merged(colorString);
+                      if (defaultUsernameColor2 == null) {
+                        defaultUsernameColor2 = tmp4.defaultUsernameColor;
+                      }
+                    }
+                    obj24[42] = defaultUsernameColor2;
+                    merged = undefined;
+                    if (!tmp21) {
+                      merged = roleIcon;
+                    }
+                    obj24[43] = merged;
+                    merged = undefined;
+                    if (null != merged) {
+                      merged = tmp13(tmp3[73]).createConnectionsRoleTag(merged);
+                      const tmp13Result36 = tmp13(tmp3[73]);
+                    }
+                    obj24[44] = merged;
+                    merged = undefined;
+                    obj24[45] = merged;
+                    merged = undefined;
+                    if (!tmp21) {
+                      merged = tmp13(tmp3[65]).dateFormat(message.timestamp, "LLLL");
+                      const tmp13Result37 = tmp13(tmp3[65]);
+                    }
+                    obj24[46] = merged;
+                    merged = undefined;
+                    if (!tmp21) {
+                      merged = tmp4.timestampColor;
+                    }
+                    obj24[47] = merged;
+                    merged = undefined;
+                    obj24[48] = merged;
+                    obj24[49] = merged;
+                    obj24[50] = isEditing;
+                    obj24[51] = renderContentOnly;
+                    merged = undefined;
+                    if (undefined !== pushFeedbackType) {
+                      merged = tmp13(tmp3[74]).createSurveyIndication(message, forcedTheme, pushFeedbackType);
+                      const tmp13Result38 = tmp13(tmp3[74]);
+                    }
+                    obj24[52] = merged;
+                    obj24[53] = tmp13(tmp3[75]).createEphemeralIndication(message);
+                    obj24[54] = interactionStatus;
+                    merged = undefined;
+                    if (renderExecutedCommands) {
+                      const tmp13Result40 = tmp13(tmp3[76]);
+                      merged = tmp13Result40;
+                      merged = message;
+                      merged = channel;
+                      merged = roleStyle;
+                      merged = forcedTheme;
+                      merged = tmp13Result40.createExecutedCommand(message, channel, roleStyle, tmp6, tmp4.defaultUsernameColor);
+                    }
+                    obj24[55] = merged;
+                    merged = undefined;
+                    if (message2.components.length > 0) {
+                      if (renderComponents) {
+                        const obj25 = { message: null, guildId: null, interaction: null, shouldDisableInteractiveComponents: null, shouldShowMedia: null, shouldObscureSpoiler: null, enabledContentHarmTypeFlags: null, shouldAgeVerify: null, shouldShowMosaicMediaDescriptions: null, shouldAutoPlayGifs: null, colors: null };
+                        obj25[0] = message;
+                        obj25[1] = guildId;
+                        obj25[2] = interaction;
+                        obj25[3] = shouldDisableInteractiveComponents;
+                        obj25[4] = tmp5;
+                        obj25[5] = shouldObscureSpoiler;
+                        obj25[6] = enabledHarmTypesForMessage;
+                        obj25[7] = result1;
+                        obj25[8] = setting;
+                        obj25[9] = gifAutoPlay;
+                        obj25[10] = tmp4;
+                        merged = tmp2(tmp3[49])(obj25, message2.components);
+                      }
+                    }
+                    obj24[56] = merged;
+                    let num9 = 0;
+                    if (!renderContentOnly) {
+                      num9 = tmp4.feedbackColor;
+                    }
+                    obj24[57] = num9;
+                    let num10 = 0;
+                    if (!renderContentOnly) {
+                      num10 = tmp4.highlightColor;
+                    }
+                    obj24[58] = num10;
+                    obj24[59] = tmp50;
+                    if (renderGiftCode) {
+                      let giftCodeEmbed = tmp13(tmp3[77]).createGiftCodeEmbed(message, forcedTheme);
+                      const tmp13Result41 = tmp13(tmp3[77]);
+                    } else {
+                      giftCodeEmbed = [];
+                    }
+                    obj24[60] = giftCodeEmbed;
+                    if (renderCodedLinks) {
+                      const tmp13Result42 = tmp13(tmp3[78]);
+                      merged = tmp13Result42;
+                      merged = message;
+                      merged = message2;
+                      merged = channel;
+                      merged = forcedTheme;
+                      let codedLinkEmbeds = tmp13Result42.createCodedLinkEmbeds(message, message2, channel, tmp6);
+                    } else {
+                      codedLinkEmbeds = [];
+                    }
+                    obj24[61] = codedLinkEmbeds;
+                    merged = undefined;
+                    if (renderActivityInstanceEmbed) {
+                      merged = tmp13(tmp3[79]).createActivityInstanceEmbed(message);
+                      const tmp13Result43 = tmp13(tmp3[79]);
+                    }
+                    obj24[62] = merged;
+                    merged = undefined;
+                    if (renderActivityInviteEmbed) {
+                      merged = tmp13(tmp3[80]).createActivityRichPresenceInviteEmbed(message, channel);
+                      const tmp13Result44 = tmp13(tmp3[80]);
+                    }
+                    obj24[63] = merged;
+                    if (tmp10) {
+                      if (renderAttachments) {
+                        merged = 0 !== message2.attachments.length || 0 !== message2.embeds.length;
+                        renderAttachments = merged;
+                      }
+                      if (!renderAttachments) {
+                        renderAttachments = tmp43;
+                      }
+                      tmp10 = renderAttachments;
+                    }
+                    obj24[64] = tmp10;
+                    obj24[65] = tmp43;
+                    obj24[66] = items3;
+                    let num12 = 1;
+                    if (tmp43) {
+                      num12 = 1;
+                      if (message.state === tmp44.SEND_FAILED) {
+                        num12 = 0.2;
+                      }
+                    }
+                    obj24[67] = num12;
+                    if (restrictedPreview) {
+                      let items4 = [];
+                    } else {
+                      const obj26 = { message: null, animateStickersSetting: null, isUserInteracting: null };
+                      obj26[0] = message2;
+                      merged = tmp2(tmp3[81]);
+                      const AnimateStickers = tmp13(tmp3[47]).AnimateStickers;
+                      obj26[1] = AnimateStickers.getSetting();
+                      obj26[2] = message.id === animatingStickerMessageId;
+                      items4 = merged(obj26);
+                    }
+                    obj24[68] = items4;
+                    if (renderCommunicationDisabled) {
+                      renderCommunicationDisabled = result3;
+                    }
+                    obj24[69] = renderCommunicationDisabled;
+                    merged = undefined;
+                    if (channel != null) {
+                      merged = channel.isForumPost();
+                    }
+                    obj24[70] = merged && message.id === message.channel_id;
+                    merged = undefined;
+                    if (channel != null) {
+                      merged = channel.isForumPost();
+                    }
+                    merged = undefined;
+                    if (merged) {
+                      if (renderForumPostActions) {
+                        merged = undefined;
+                        if (message.id === message.channel_id) {
+                          merged = channel.getGuildId();
+                          if (null == merged) {
+                            merged = storeThread;
+                            merged = 0 !== message.reactions.length;
+                            merged = undefined;
+                            merged = storeThread.hasJoined(message.channel_id);
+                            if (!merged) {
+                              merged = obj.getChannel(channel.parent_id);
+                              merged = undefined;
+                              if (merged != null) {
+                                merged = merged.defaultReactionEmoji;
+                              }
+                              merged = undefined;
+                              if (merged != null) {
+                                merged = merged.emojiId;
+                              }
+                              merged = null;
+                              if (null != merged) {
+                                merged = enabledHarmTypesForMessage;
+                                merged = enabledHarmTypesForMessage.getUsableCustomEmojiById(merged.emojiId);
+                              }
+                              const obj27 = { defaultReactionEmoji: null, customGuildEmoji: null };
+                              obj27[0] = merged;
+                              obj27[1] = merged;
+                              merged = tmp13(tmp3[32]).createDefaultReaction(obj27);
+                              const tmp13Result45 = tmp13(tmp3[32]);
+                            }
+                            merged = set;
+                            merged = set.shouldDisplayPrompt(channel.id);
+                            const obj28 = { isFollowing: null, hasReactions: null, defaultReaction: null, showMediaPostSharePrompt: null };
+                            obj28[0] = merged;
+                            obj28[1] = merged;
+                            obj28[2] = merged;
+                            obj28[3] = merged;
+                            merged = tmp13(tmp3[32]).createForumPostActions(obj28);
+                            const tmp13Result46 = tmp13(tmp3[32]);
+                          } else {
+                            merged = interaction;
+                          }
+                        }
+                      }
+                    }
+                    obj24[71] = merged;
+                    obj24[72] = message.author.id === merged;
+                    merged = guildId;
+                    obj24[73] = null != guildId.gradientPreset;
+                    const tmp13Result39 = tmp13(tmp3[75]);
+                    obj24[74] = tmp13(tmp3[30]).getAssetUriForEmbed(tmp2(tmp3[82]));
+                    const tmp13Result47 = tmp13(tmp3[30]);
+                    obj24[75] = tmp13(tmp3[30]).getAssetUriForEmbed(tmp2(tmp3[83]));
+                    if (tmp7) {
+                      let postPreviewEmbeds = tmp13(tmp3[84]).createPostPreviewEmbeds(message, roleStyle, useReducedMotion);
+                      const tmp13Result49 = tmp13(tmp3[84]);
+                    } else {
+                      postPreviewEmbeds = [];
+                    }
+                    obj24[76] = postPreviewEmbeds;
+                    const intl18 = tmp13(tmp3[29]).intl;
+                    obj24[77] = intl18.string(tmp13(tmp3[29]).t["2aXnfa"]);
+                    const tmp13Result48 = tmp13(tmp3[30]);
+                    obj24[78] = tmp13(tmp3[85]).createSafetyPolicyNoticeEmbed(message);
+                    obj24[79] = merged;
+                    obj24[80] = merged;
+                    const tmp13Result50 = tmp13(tmp3[85]);
+                    obj24[81] = tmp13(tmp3[86]).createSafetySystemNotificationEmbed(message);
+                    const tmp13Result51 = tmp13(tmp3[86]);
+                    obj24[82] = tmp13(tmp3[87]).createCtaButton(message.id, message.channel_id, tmp4);
+                    merged = undefined;
+                    if (merged) {
+                      merged = tmp4.embedBackgroundColor;
+                    }
+                    obj24[83] = merged;
+                    const tmp13Result52 = tmp13(tmp3[87]);
+                    obj24[84] = tmp13(tmp3[88]).createMessageAccessibilityActions(message, channel);
+                    obj24[85] = merged;
+                    obj24[86] = merged;
+                    obj24[87] = merged;
+                    obj24[88] = additionalName;
+                    obj24[89] = merged;
+                    obj24[90] = isFirst;
+                    obj24[91] = id;
+                    merged = undefined;
+                    if (channel != null) {
+                      merged = channel.type;
+                    }
+                    merged = constants4;
+                    obj24[92] = merged === constants4.GUILD_ANNOUNCEMENT;
+                    const tmp13Result53 = tmp13(tmp3[88]);
+                    obj24[93] = tmp13(tmp3[89]).createDisplayNameStylesMobile(message.author, member);
+                    obj24[94] = merged;
+                    return obj24;
+                  }
+                  defaultUsernameColor = tmp4.defaultUsernameColor;
+                }
+                nonce = message.nonce;
+                const tmp13Result33 = tmp13(tmp3[71]);
               }
-              merged = message;
-              merged = shouldObscureSpoiler;
-              const obj45 = message(shouldObscureSpoiler[62]);
-              merged = message(shouldObscureSpoiler[65]).calendarFormat(message.timestamp, true, timestampHourCycle);
-              const obj49 = message(shouldObscureSpoiler[65]);
+              merged = tmp13(tmp3[65]).accessibilityLabelCalendarFormat(message.timestamp);
+              const tmp13Result55 = tmp13(tmp3[65]);
             }
+            const tmp13Result21 = tmp13(tmp3[62]);
+            merged = tmp13(tmp3[65]).calendarFormat(message.timestamp, true, timestampHourCycle);
+            const tmp13Result56 = tmp13(tmp3[65]);
           }
         }
-        if (null != guildMemberAvatar) {
-          if (null != guildId) {
-            obj17 = gifAutoPlay(shouldObscureSpoiler[54]);
-            const obj30 = { userId: author.id, avatar: guildMemberAvatar, guildId };
-            applicationIconSource = obj17.getGuildMemberAvatarSource(obj30, author);
-          }
-        }
-        applicationIconSource = author.getAvatarSource(undefined);
-        tmp57 = message.state !== constants2.SEND_FAILED || message.isCommandType();
       }
-      parseMessageMarkupResult = { content: undefined, hasSpoilerEmbeds: false, hasBailedAst: false };
+      if (null != guildMemberAvatar) {
+        if (null != guildId) {
+          const obj29 = { userId: null, avatar: null, guildId: null };
+          obj29[0] = author.id;
+          obj29[1] = guildMemberAvatar;
+          obj29[2] = guildId;
+          applicationIconSource = tmp2(tmp3[54]).getGuildMemberAvatarSource(obj29, author);
+          const tmp2Result2 = tmp2(tmp3[54]);
+        }
+      }
+      applicationIconSource = author.getAvatarSource(undefined);
+      tmp13Result8 = tmp13(tmp3[53]);
     }
+    parseMessageMarkupResult = { content: "PX_16", hasSpoilerEmbeds: "horse", hasBailedAst: "horse_face" };
+    const tmp13Result2 = tmp13(tmp3[42]);
   }
 }
 ({ DEFAULT_GUILD_OFFICIAL_COLOR: closure_24, GUILD_OFFICIAL_HIGHLIGHT_ALPHA: closure_25, GUILD_OFFICIAL_HIGHLIGHT_ALPHA_COLOR: closure_26 } = MESSAGE_GROUP_SPACING);
 ({ MessageTypes: closure_28, MessageStates: closure_29, MessageFlags: closure_30, ChannelTypes: closure_31 } = ME);
-let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/messages/native/renderer/createMessageContent.tsx");
+let result = require("addApplication").fileFinishedImporting("modules/messages/native/renderer/createMessageContent.tsx");
 
 export default createMessageContent;

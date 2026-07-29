@@ -1,12 +1,12 @@
-// Module ID: 16675
-// Function ID: 129919
+// Module ID: 16711
+// Function ID: 16712
 // Name: EnterEmailScreen
-// Dependencies: [57, 31, 33, 1456, 16676, 1212, 2461, 16667, 4576, 6706, 2]
+// Dependencies: [32, 19, 21, 1480, 16712, 1236, 2485, 16703, 4598, 6727, 2]
 // Exports: default
 
-// Module 16675 (EnterEmailScreen)
+// Module 16711 (EnterEmailScreen)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
+import noop from "noop";
 import { jsx } from "jsxProd";
 
 const require = arg1;
@@ -15,19 +15,20 @@ const result = require("jsxProd").fileFinishedImporting("modules/safety_flows/na
 export default function EnterEmailScreen() {
   let tmp2;
   let tmp3;
-  let obj = _require(1456);
+  let obj = _require(1480);
   _require = obj.useNavigation();
   [tmp2, tmp3] = callback(React.useState(""), 2);
-  obj = {};
+  obj = { title: null, action: null, onAction: null, children: null };
   const tmp = callback(React.useState(""), 2);
-  const intl = _require(1212).intl;
-  obj.title = intl.string(importDefault(2461).bFbsV6);
-  const intl2 = _require(1212).intl;
-  obj.action = intl2.string(importDefault(2461).RRBNpv);
-  obj.onAction = function onAction() {
+  const intl = _require(1236).intl;
+  obj[0] = intl.string(importDefault(2485).bFbsV6);
+  const intl2 = _require(1236).intl;
+  obj[1] = intl2.string(importDefault(2485).RRBNpv);
+  obj[2] = function onAction() {
     arr = arr.push(arr(outer1_2[7]).SafetyFlowScreens.VERIFY_EMAIL);
   };
-  obj = { children: jsx(_require(6706).TextInput, { label: "Email", value: tmp2, onChange: tmp3 }) };
-  obj.children = jsx(_require(4576).Stack, { children: jsx(_require(6706).TextInput, { label: "Email", value: tmp2, onChange: tmp3 }) });
-  return jsx(importDefault(16676), { children: jsx(_require(6706).TextInput, { label: "Email", value: tmp2, onChange: tmp3 }) });
+  obj = { children: null };
+  obj[0] = jsx(_require(6727).TextInput, { label: "Email", value: tmp2, onChange: tmp3 });
+  obj[3] = jsx(_require(4598).Stack, { children: null });
+  return jsx(importDefault(16712), { children: null });
 };

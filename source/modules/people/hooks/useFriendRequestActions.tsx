@@ -1,11 +1,11 @@
-// Module ID: 12194
-// Function ID: 95360
+// Module ID: 12218
+// Function ID: 12219
 // Name: useFriendRequestActions
-// Dependencies: [31, 9032, 2]
+// Dependencies: [19, 9056, 2]
 // Exports: useFriendRequestActions
 
-// Module 12194 (useFriendRequestActions)
-import result from "result";
+// Module 12218 (useFriendRequestActions)
+import noop from "noop";
 
 let result = require("set").fileFinishedImporting("modules/people/hooks/useFriendRequestActions.tsx");
 
@@ -18,33 +18,33 @@ export const useFriendRequestActions = function useFriendRequestActions(userId) 
   const onCancel = userId.onCancel;
   const onFinally = userId.onFinally;
   const items = [applicationId, isGameRelationship, _location, userId];
-  let obj = {};
+  let obj = { acceptFriendRequest: null, cancelFriendRequest: null };
   const items1 = [applicationId, isGameRelationship, _location, onCancel, onConfirm, onFinally, userId];
   const callback = isGameRelationship.useCallback(() => {
     let obj = userId(applicationId[1]);
-    obj = { userId };
+    obj = { userId, applicationId: null, location: null };
     let tmp = null;
     if (isGameRelationship) {
       tmp = applicationId;
     }
-    obj.applicationId = tmp;
-    obj.location = _location;
+    obj[1] = tmp;
+    obj[2] = _location;
     obj.cancelFriendRequest(obj);
   }, items);
-  obj.acceptFriendRequest = isGameRelationship.useCallback(() => {
+  obj[0] = isGameRelationship.useCallback(() => {
     let obj = userId(applicationId[1]);
-    obj = { userId };
+    obj = { userId, applicationId: null, location: null, onConfirm: null, onCancel: null, onFinally: null };
     let tmp = null;
     if (isGameRelationship) {
       tmp = applicationId;
     }
-    obj.applicationId = tmp;
-    obj.location = _location;
-    obj.onConfirm = onConfirm;
-    obj.onCancel = onCancel;
-    obj.onFinally = onFinally;
+    obj[1] = tmp;
+    obj[2] = _location;
+    obj[3] = onConfirm;
+    obj[4] = onCancel;
+    obj[5] = onFinally;
     const result = obj.maybeConfirmFriendRequestAccept(obj);
   }, items1);
-  obj.cancelFriendRequest = callback;
+  obj[1] = callback;
   return obj;
 };

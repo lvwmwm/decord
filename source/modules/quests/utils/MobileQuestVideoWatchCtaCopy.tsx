@@ -1,75 +1,97 @@
-// Module ID: 10477
-// Function ID: 81075
+// Module ID: 10501
+// Function ID: 10502
 // Name: formatWatchRemainingDurationShort
-// Dependencies: [5989, 1212, 2]
-// Exports: getVideoQuestWatchCtaAccessibilityLabel, getVideoQuestWatchCtaText
+// Dependencies: [6008, 1236, 2]
+// Exports: formatWatchRemainingDurationShort, getVideoQuestWatchCtaAccessibilityLabel, getVideoQuestWatchCtaText
 
-// Module 10477 (formatWatchRemainingDurationShort)
-function formatWatchRemainingDurationShort(closure_7) {
-  let obj = require(5989) /* _createForOfIteratorHelperLoose */;
-  const remainingTaskTime = obj.getRemainingTaskTime(closure_7);
-  const sum = 60 * remainingTaskTime.minutes + remainingTaskTime.seconds;
-  if (sum >= 60) {
-    const intl2 = require(1212) /* getSystemLocale */.intl;
-    obj = {};
-    const _Math = Math;
-    obj.count = Math.round(sum / 60);
-    let formatToPlainStringResult = intl2.formatToPlainString(require(1212) /* getSystemLocale */.t.PHhTXX, obj);
-  } else {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    obj = { count: sum };
-    formatToPlainStringResult = intl.formatToPlainString(require(1212) /* getSystemLocale */.t.rUfeQx, obj);
-  }
-  return formatToPlainStringResult;
-}
+// Module 10501 (formatWatchRemainingDurationShort)
 const result = require("set").fileFinishedImporting("modules/quests/utils/MobileQuestVideoWatchCtaCopy.tsx");
 
-export { formatWatchRemainingDurationShort };
-export const getVideoQuestWatchCtaText = function getVideoQuestWatchCtaText(closure_7) {
-  const tmp2 = formatWatchRemainingDurationShort(closure_7);
-  const intl = require(1212) /* getSystemLocale */.intl;
-  const formatToPlainString = intl.formatToPlainString;
-  const t = require(1212) /* getSystemLocale */.t;
-  if (tmp) {
-    let obj = { durationShort: tmp2 };
-    let formatToPlainStringResult = formatToPlainString(t["pF/deA"], obj);
+export const formatWatchRemainingDurationShort = function formatWatchRemainingDurationShort(targetSeconds) {
+  let obj = require(6008) /* getApplicationIdsByTaskTypes */;
+  const remainingTaskTime = obj.getRemainingTaskTime(targetSeconds);
+  const sum = 60 * remainingTaskTime.minutes + remainingTaskTime.seconds;
+  if (sum >= 60) {
+    const intl2 = tmp(1236).intl;
+    obj = { count: null };
+    const _Math = Math;
+    obj[0] = Math.round(sum / 60);
+    let formatToPlainStringResult = intl2.formatToPlainString(tmp(1236).t.PHhTXX, obj);
   } else {
-    obj = { durationShort: tmp2 };
-    formatToPlainStringResult = formatToPlainString(t.CHrvqg, obj);
+    const intl = tmp(1236).intl;
+    obj = { count: null };
+    obj[0] = sum;
+    formatToPlainStringResult = intl.formatToPlainString(tmp(1236).t.rUfeQx, obj);
   }
   return formatToPlainStringResult;
 };
-export const getVideoQuestWatchCtaAccessibilityLabel = function getVideoQuestWatchCtaAccessibilityLabel(closure_7) {
+export const getVideoQuestWatchCtaText = function getVideoQuestWatchCtaText(questTaskDetails) {
+  let obj = require(6008) /* getApplicationIdsByTaskTypes */;
+  const remainingTaskTime = obj.getRemainingTaskTime(questTaskDetails);
+  const sum = 60 * remainingTaskTime.minutes + remainingTaskTime.seconds;
+  if (sum >= 60) {
+    const intl2 = tmp2(1236).intl;
+    obj = { count: null };
+    const _Math = Math;
+    obj[0] = Math.round(sum / 60);
+    let formatToPlainStringResult = intl2.formatToPlainString(tmp2(1236).t.PHhTXX, obj);
+  } else {
+    const intl = tmp2(1236).intl;
+    obj = { count: null };
+    obj[0] = sum;
+    formatToPlainStringResult = intl.formatToPlainString(tmp2(1236).t.rUfeQx, obj);
+  }
+  const intl3 = tmp2(1236).intl;
+  const formatToPlainString = intl3.formatToPlainString;
+  const t = tmp2(1236).t;
+  if (tmp) {
+    const obj1 = { durationShort: null };
+    obj1[0] = formatToPlainStringResult;
+    let formatToPlainStringResult1 = formatToPlainString(t["pF/deA"], obj1);
+  } else {
+    const obj2 = { durationShort: null };
+    obj2[0] = formatToPlainStringResult;
+    formatToPlainStringResult1 = formatToPlainString(t.CHrvqg, obj2);
+  }
+  return formatToPlainStringResult1;
+};
+export const getVideoQuestWatchCtaAccessibilityLabel = function getVideoQuestWatchCtaAccessibilityLabel(questTaskDetails) {
   let minutes;
   let seconds;
-  let obj = require(5989) /* _createForOfIteratorHelperLoose */;
-  const remainingTaskTime = obj.getRemainingTaskTime(closure_7);
+  let obj = require(6008) /* getApplicationIdsByTaskTypes */;
+  const remainingTaskTime = obj.getRemainingTaskTime(questTaskDetails);
   ({ minutes, seconds } = remainingTaskTime);
   if (minutes > 0) {
     if (seconds > 0) {
-      const intl3 = require(1212) /* getSystemLocale */.intl;
-      obj = { minutes, seconds };
-      let formatToPlainStringResult = intl3.formatToPlainString(require(1212) /* getSystemLocale */.t["lW/66D"], obj);
+      const intl3 = tmp2(1236).intl;
+      obj = { minutes: null, seconds: null };
+      obj[0] = minutes;
+      obj[1] = seconds;
+      let formatToPlainStringResult = intl3.formatToPlainString(tmp2(1236).t["lW/66D"], obj);
     }
-    const intl4 = require(1212) /* getSystemLocale */.intl;
+    const intl4 = tmp2(1236).intl;
     const formatToPlainString = intl4.formatToPlainString;
-    const t = require(1212) /* getSystemLocale */.t;
+    const t = tmp2(1236).t;
     if (tmp) {
-      obj = { remainTime: formatToPlainStringResult };
+      obj = { remainTime: null };
+      obj[0] = formatToPlainStringResult;
       let formatToPlainStringResult1 = formatToPlainString(t["ch+yrN"], obj);
     } else {
-      const obj1 = { remainTime: formatToPlainStringResult };
+      const obj1 = { remainTime: null };
+      obj1[0] = formatToPlainStringResult;
       formatToPlainStringResult1 = formatToPlainString(t.Bwc5Dg, obj1);
     }
     return formatToPlainStringResult1;
   }
   if (minutes > 0) {
-    const intl2 = require(1212) /* getSystemLocale */.intl;
-    const obj2 = { count: minutes };
-    formatToPlainStringResult = intl2.formatToPlainString(require(1212) /* getSystemLocale */.t["SxnF/O"], obj2);
+    const intl2 = tmp2(1236).intl;
+    const obj2 = { count: null };
+    obj2[0] = minutes;
+    formatToPlainStringResult = intl2.formatToPlainString(tmp2(1236).t["SxnF/O"], obj2);
   } else {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    const obj3 = { count: seconds };
-    formatToPlainStringResult = intl.formatToPlainString(require(1212) /* getSystemLocale */.t["0BZpdi"], obj3);
+    const intl = tmp2(1236).intl;
+    const obj3 = { count: null };
+    obj3[0] = seconds;
+    formatToPlainStringResult = intl.formatToPlainString(tmp2(1236).t["0BZpdi"], obj3);
   }
 };

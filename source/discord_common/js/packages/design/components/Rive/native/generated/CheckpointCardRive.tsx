@@ -1,15 +1,16 @@
-// Module ID: 3952
-// Function ID: 32471
+// Module ID: 3976
+// Function ID: 3977
 // Name: CheckpointCardRive
-// Dependencies: [29, 31, 33, 3894, 3953, 3945, 2]
+// Dependencies: [109, 19, 21, 3918, 3977, 3969, 2]
 
-// Module 3952 (CheckpointCardRive)
+// Module 3976 (CheckpointCardRive)
 import _objectWithoutProperties from "_objectWithoutProperties";
-import importAllResult from "result";
+import importAllResult from "noop";
 import { jsx } from "jsxProd";
 
 const require = arg1;
 let closure_3 = ["fallback", "artboard", "stateMachine", "defaultViewModelInstance", "dataBinding", "onDataBindingChange"];
+let c5 = importAllResult;
 let closure_7 = { Main: { reducedMotion: "boolean", Icon: "artboard", Illustration: "artboard", AnimationState: "number", PowerMeter: "number", LVL: "string", PersonaName: "string", "id#": "string", Outof: "string", FillColor: "color" }, Cassette: { reducedMotion: "boolean", Icon: "artboard", Illustration: "artboard", AnimationState: "number", PowerMeter: "number", LVL: "string", PersonaName: "string", "id#": "string", Outof: "string", FillColor: "color" }, "Cassette Icon": {}, Cat: { reducedMotion: "boolean", Icon: "artboard", Illustration: "artboard", AnimationState: "number", PowerMeter: "number", LVL: "string", PersonaName: "string", "id#": "string", Outof: "string", FillColor: "color" }, "Cat Icon": {}, Banana: { reducedMotion: "boolean", Icon: "artboard", Illustration: "artboard", AnimationState: "number", PowerMeter: "number", LVL: "string", PersonaName: "string", "id#": "string", Outof: "string", FillColor: "color" }, "Banana Icon": {}, "Duck Icon": {}, Duck: { reducedMotion: "boolean", Icon: "artboard", Illustration: "artboard", AnimationState: "number", PowerMeter: "number", LVL: "string", PersonaName: "string", "id#": "string", Outof: "string", FillColor: "color" }, "Snail Icon": {}, Snail: { reducedMotion: "boolean", Icon: "artboard", Illustration: "artboard", AnimationState: "number", PowerMeter: "number", LVL: "string", PersonaName: "string", "id#": "string", Outof: "string", FillColor: "color" }, "Origami Icon": {}, Origami: { reducedMotion: "boolean", Icon: "artboard", Illustration: "artboard", AnimationState: "number", PowerMeter: "number", LVL: "string", PersonaName: "string", "id#": "string", Outof: "string", FillColor: "color" }, "Disco Icon": {}, Disco: { reducedMotion: "boolean", Icon: "artboard", Illustration: "artboard", AnimationState: "number", PowerMeter: "number", LVL: "string", PersonaName: "string", "id#": "string", Outof: "string", FillColor: "color" }, Capybara: { reducedMotion: "boolean", Icon: "artboard", Illustration: "artboard", AnimationState: "number", PowerMeter: "number", LVL: "string", PersonaName: "string", "id#": "string", Outof: "string", FillColor: "color" }, "Capybara Icon": {}, Donut: { reducedMotion: "boolean", Icon: "artboard", Illustration: "artboard", AnimationState: "number", PowerMeter: "number", LVL: "string", PersonaName: "string", "id#": "string", Outof: "string", FillColor: "color" }, "Donut Icon": {}, "Bonsai Icon": {}, Bonsai: { reducedMotion: "boolean", Icon: "artboard", Illustration: "artboard", AnimationState: "number", PowerMeter: "number", LVL: "string", PersonaName: "string", "id#": "string", Outof: "string", FillColor: "color" }, "Globe Single Line": {}, "Card Back": { reducedMotion: "boolean", Icon: "artboard", Illustration: "artboard", AnimationState: "number", PowerMeter: "number", LVL: "string", PersonaName: "string", "id#": "string", Outof: "string", FillColor: "color" }, Knickknack: { reducedMotion: "boolean", Icon: "artboard", Illustration: "artboard", AnimationState: "number", PowerMeter: "number", LVL: "string", PersonaName: "string", "id#": "string", Outof: "string", FillColor: "color" }, Globe: {}, Card: { reducedMotion: "boolean", Icon: "artboard", Illustration: "artboard", AnimationState: "number", PowerMeter: "number", LVL: "string", PersonaName: "string", "id#": "string", Outof: "string", FillColor: "color" } };
 let closure_8 = { Main: ["Bonsai", "Cassette-reducedMotion", "Cat-reducedMotion", "Banana-reducedMotion", "Duck-reducedMotion", "Snail-reducedMotion", "Origami-reducedMotion", "Disco-reducedMotion", "Capybara-reducedMotion", "Donut-reducedMotion", "Bonsai-reducedMotion", "Donut", "Capybara", "Disco", "Origami", "Snail", "Duck", "Banana", "Cat", "Cassette"], Cassette: ["Bonsai", "Cassette-reducedMotion", "Cat-reducedMotion", "Banana-reducedMotion", "Duck-reducedMotion", "Snail-reducedMotion", "Origami-reducedMotion", "Disco-reducedMotion", "Capybara-reducedMotion", "Donut-reducedMotion", "Bonsai-reducedMotion", "Donut", "Capybara", "Disco", "Origami", "Snail", "Duck", "Banana", "Cat", "Cassette"], "Cassette Icon": [], Cat: ["Bonsai", "Cassette-reducedMotion", "Cat-reducedMotion", "Banana-reducedMotion", "Duck-reducedMotion", "Snail-reducedMotion", "Origami-reducedMotion", "Disco-reducedMotion", "Capybara-reducedMotion", "Donut-reducedMotion", "Bonsai-reducedMotion", "Donut", "Capybara", "Disco", "Origami", "Snail", "Duck", "Banana", "Cat", "Cassette"], "Cat Icon": [], Banana: ["Bonsai", "Cassette-reducedMotion", "Cat-reducedMotion", "Banana-reducedMotion", "Duck-reducedMotion", "Snail-reducedMotion", "Origami-reducedMotion", "Disco-reducedMotion", "Capybara-reducedMotion", "Donut-reducedMotion", "Bonsai-reducedMotion", "Donut", "Capybara", "Disco", "Origami", "Snail", "Duck", "Banana", "Cat", "Cassette"], "Banana Icon": [], "Duck Icon": [], Duck: ["Bonsai", "Cassette-reducedMotion", "Cat-reducedMotion", "Banana-reducedMotion", "Duck-reducedMotion", "Snail-reducedMotion", "Origami-reducedMotion", "Disco-reducedMotion", "Capybara-reducedMotion", "Donut-reducedMotion", "Bonsai-reducedMotion", "Donut", "Capybara", "Disco", "Origami", "Snail", "Duck", "Banana", "Cat", "Cassette"], "Snail Icon": [], Snail: ["Bonsai", "Cassette-reducedMotion", "Cat-reducedMotion", "Banana-reducedMotion", "Duck-reducedMotion", "Snail-reducedMotion", "Origami-reducedMotion", "Disco-reducedMotion", "Capybara-reducedMotion", "Donut-reducedMotion", "Bonsai-reducedMotion", "Donut", "Capybara", "Disco", "Origami", "Snail", "Duck", "Banana", "Cat", "Cassette"], "Origami Icon": [], Origami: ["Bonsai", "Cassette-reducedMotion", "Cat-reducedMotion", "Banana-reducedMotion", "Duck-reducedMotion", "Snail-reducedMotion", "Origami-reducedMotion", "Disco-reducedMotion", "Capybara-reducedMotion", "Donut-reducedMotion", "Bonsai-reducedMotion", "Donut", "Capybara", "Disco", "Origami", "Snail", "Duck", "Banana", "Cat", "Cassette"], "Disco Icon": [], Disco: ["Bonsai", "Cassette-reducedMotion", "Cat-reducedMotion", "Banana-reducedMotion", "Duck-reducedMotion", "Snail-reducedMotion", "Origami-reducedMotion", "Disco-reducedMotion", "Capybara-reducedMotion", "Donut-reducedMotion", "Bonsai-reducedMotion", "Donut", "Capybara", "Disco", "Origami", "Snail", "Duck", "Banana", "Cat", "Cassette"], Capybara: ["Bonsai", "Cassette-reducedMotion", "Cat-reducedMotion", "Banana-reducedMotion", "Duck-reducedMotion", "Snail-reducedMotion", "Origami-reducedMotion", "Disco-reducedMotion", "Capybara-reducedMotion", "Donut-reducedMotion", "Bonsai-reducedMotion", "Donut", "Capybara", "Disco", "Origami", "Snail", "Duck", "Banana", "Cat", "Cassette"], "Capybara Icon": [], Donut: ["Bonsai", "Cassette-reducedMotion", "Cat-reducedMotion", "Banana-reducedMotion", "Duck-reducedMotion", "Snail-reducedMotion", "Origami-reducedMotion", "Disco-reducedMotion", "Capybara-reducedMotion", "Donut-reducedMotion", "Bonsai-reducedMotion", "Donut", "Capybara", "Disco", "Origami", "Snail", "Duck", "Banana", "Cat", "Cassette"], "Donut Icon": [], "Bonsai Icon": [], Bonsai: ["Bonsai", "Cassette-reducedMotion", "Cat-reducedMotion", "Banana-reducedMotion", "Duck-reducedMotion", "Snail-reducedMotion", "Origami-reducedMotion", "Disco-reducedMotion", "Capybara-reducedMotion", "Donut-reducedMotion", "Bonsai-reducedMotion", "Donut", "Capybara", "Disco", "Origami", "Snail", "Duck", "Banana", "Cat", "Cassette"], "Globe Single Line": [], "Card Back": ["Bonsai", "Cassette-reducedMotion", "Cat-reducedMotion", "Banana-reducedMotion", "Duck-reducedMotion", "Snail-reducedMotion", "Origami-reducedMotion", "Disco-reducedMotion", "Capybara-reducedMotion", "Donut-reducedMotion", "Bonsai-reducedMotion", "Donut", "Capybara", "Disco", "Origami", "Snail", "Duck", "Banana", "Cat", "Cassette"], Knickknack: ["Bonsai", "Cassette-reducedMotion", "Cat-reducedMotion", "Banana-reducedMotion", "Duck-reducedMotion", "Snail-reducedMotion", "Origami-reducedMotion", "Disco-reducedMotion", "Capybara-reducedMotion", "Donut-reducedMotion", "Bonsai-reducedMotion", "Donut", "Capybara", "Disco", "Origami", "Snail", "Duck", "Banana", "Cat", "Cassette"], Globe: [], Card: ["Bonsai", "Cassette-reducedMotion", "Cat-reducedMotion", "Banana-reducedMotion", "Duck-reducedMotion", "Snail-reducedMotion", "Origami-reducedMotion", "Disco-reducedMotion", "Capybara-reducedMotion", "Donut-reducedMotion", "Bonsai-reducedMotion", "Donut", "Capybara", "Disco", "Origami", "Snail", "Duck", "Banana", "Cat", "Cassette"] };
 let closure_9 = {
@@ -20,89 +21,89 @@ let closure_9 = {
     let onDataBindingChange;
     let playIfNeeded;
     ({ instance, file, dataBinding, onDataBindingChange, playIfNeeded } = reducedMotionEnabled);
-    const booleanBinding = require(3894) /* useObservedValue */.useBooleanBinding("reducedMotion", instance, reducedMotionEnabled.reducedMotionEnabled, undefined, playIfNeeded);
-    const obj = require(3894) /* useObservedValue */;
+    const booleanBinding = require(3918) /* BaseRive */.useBooleanBinding("reducedMotion", instance, reducedMotionEnabled.reducedMotionEnabled, undefined, playIfNeeded);
+    const obj = require(3918) /* BaseRive */;
     let Icon;
-    if (null != dataBinding) {
+    if (dataBinding != null) {
       Icon = dataBinding.Icon;
     }
-    const artboardBinding = require(3894) /* useObservedValue */.useArtboardBinding("Icon", instance, file, Icon, playIfNeeded);
-    const obj2 = require(3894) /* useObservedValue */;
+    const artboardBinding = require(3918) /* BaseRive */.useArtboardBinding("Icon", instance, file, Icon, playIfNeeded);
+    let tmpResult = tmp(3918);
     let Illustration;
-    if (null != dataBinding) {
+    if (dataBinding != null) {
       Illustration = dataBinding.Illustration;
     }
-    const artboardBinding1 = require(3894) /* useObservedValue */.useArtboardBinding("Illustration", instance, file, Illustration, playIfNeeded);
-    const obj3 = require(3894) /* useObservedValue */;
+    const artboardBinding1 = tmpResult.useArtboardBinding("Illustration", instance, file, Illustration, playIfNeeded);
+    tmpResult = tmp(3918);
     let AnimationState;
-    if (null != dataBinding) {
+    if (dataBinding != null) {
       AnimationState = dataBinding.AnimationState;
     }
     let AnimationState1;
-    if (null != onDataBindingChange) {
+    if (onDataBindingChange != null) {
       AnimationState1 = onDataBindingChange.AnimationState;
     }
-    const numberBinding = require(3894) /* useObservedValue */.useNumberBinding("AnimationState", instance, AnimationState, AnimationState1, playIfNeeded);
-    const obj4 = require(3894) /* useObservedValue */;
+    const numberBinding = tmpResult.useNumberBinding("AnimationState", instance, AnimationState, AnimationState1, playIfNeeded);
+    const obj2 = require(3918) /* BaseRive */;
     let PowerMeter;
-    if (null != dataBinding) {
+    if (dataBinding != null) {
       PowerMeter = dataBinding.PowerMeter;
     }
     let PowerMeter1;
-    if (null != onDataBindingChange) {
+    if (onDataBindingChange != null) {
       PowerMeter1 = onDataBindingChange.PowerMeter;
     }
-    const numberBinding1 = require(3894) /* useObservedValue */.useNumberBinding("PowerMeter", instance, PowerMeter, PowerMeter1, playIfNeeded);
-    const obj5 = require(3894) /* useObservedValue */;
+    const numberBinding1 = require(3918) /* BaseRive */.useNumberBinding("PowerMeter", instance, PowerMeter, PowerMeter1, playIfNeeded);
+    const tmpResult1 = require(3918) /* BaseRive */;
     let LVL;
-    if (null != dataBinding) {
+    if (dataBinding != null) {
       LVL = dataBinding.LVL;
     }
     let LVL1;
-    if (null != onDataBindingChange) {
+    if (onDataBindingChange != null) {
       LVL1 = onDataBindingChange.LVL;
     }
-    const stringBinding = require(3894) /* useObservedValue */.useStringBinding("LVL", instance, LVL, LVL1, playIfNeeded);
-    const obj6 = require(3894) /* useObservedValue */;
+    const stringBinding = require(3918) /* BaseRive */.useStringBinding("LVL", instance, LVL, LVL1, playIfNeeded);
+    const tmpResult2 = require(3918) /* BaseRive */;
     let PersonaName;
-    if (null != dataBinding) {
+    if (dataBinding != null) {
       PersonaName = dataBinding.PersonaName;
     }
     let PersonaName1;
-    if (null != onDataBindingChange) {
+    if (onDataBindingChange != null) {
       PersonaName1 = onDataBindingChange.PersonaName;
     }
-    const stringBinding1 = require(3894) /* useObservedValue */.useStringBinding("PersonaName", instance, PersonaName, PersonaName1, playIfNeeded);
-    const obj7 = require(3894) /* useObservedValue */;
+    const stringBinding1 = require(3918) /* BaseRive */.useStringBinding("PersonaName", instance, PersonaName, PersonaName1, playIfNeeded);
+    const tmpResult3 = require(3918) /* BaseRive */;
     let prop;
-    if (null != dataBinding) {
+    if (dataBinding != null) {
       prop = dataBinding["id#"];
     }
     let prop1;
-    if (null != onDataBindingChange) {
+    if (onDataBindingChange != null) {
       prop1 = onDataBindingChange["id#"];
     }
-    const stringBinding2 = require(3894) /* useObservedValue */.useStringBinding("id#", instance, prop, prop1, playIfNeeded);
-    const obj8 = require(3894) /* useObservedValue */;
+    const stringBinding2 = require(3918) /* BaseRive */.useStringBinding("id#", instance, prop, prop1, playIfNeeded);
+    const tmpResult4 = require(3918) /* BaseRive */;
     let Outof;
-    if (null != dataBinding) {
+    if (dataBinding != null) {
       Outof = dataBinding.Outof;
     }
     let Outof1;
-    if (null != onDataBindingChange) {
+    if (onDataBindingChange != null) {
       Outof1 = onDataBindingChange.Outof;
     }
-    const stringBinding3 = require(3894) /* useObservedValue */.useStringBinding("Outof", instance, Outof, Outof1, playIfNeeded);
-    const obj9 = require(3894) /* useObservedValue */;
+    const stringBinding3 = require(3918) /* BaseRive */.useStringBinding("Outof", instance, Outof, Outof1, playIfNeeded);
+    const tmpResult5 = require(3918) /* BaseRive */;
     let FillColor;
-    if (null != dataBinding) {
+    if (dataBinding != null) {
       FillColor = dataBinding.FillColor;
     }
     let FillColor1;
-    if (null != onDataBindingChange) {
+    if (onDataBindingChange != null) {
       FillColor1 = onDataBindingChange.FillColor;
     }
-    const colorBinding = require(3894) /* useObservedValue */.useColorBinding("FillColor", instance, FillColor, FillColor1, playIfNeeded);
+    const colorBinding = require(3918) /* BaseRive */.useColorBinding("FillColor", instance, FillColor, FillColor1, playIfNeeded);
     return null;
   },
   Cassette: function CassetteBindings(reducedMotionEnabled) {
@@ -112,89 +113,89 @@ let closure_9 = {
     let onDataBindingChange;
     let playIfNeeded;
     ({ instance, file, dataBinding, onDataBindingChange, playIfNeeded } = reducedMotionEnabled);
-    const booleanBinding = require(3894) /* useObservedValue */.useBooleanBinding("reducedMotion", instance, reducedMotionEnabled.reducedMotionEnabled, undefined, playIfNeeded);
-    const obj = require(3894) /* useObservedValue */;
+    const booleanBinding = require(3918) /* BaseRive */.useBooleanBinding("reducedMotion", instance, reducedMotionEnabled.reducedMotionEnabled, undefined, playIfNeeded);
+    const obj = require(3918) /* BaseRive */;
     let Icon;
-    if (null != dataBinding) {
+    if (dataBinding != null) {
       Icon = dataBinding.Icon;
     }
-    const artboardBinding = require(3894) /* useObservedValue */.useArtboardBinding("Icon", instance, file, Icon, playIfNeeded);
-    const obj2 = require(3894) /* useObservedValue */;
+    const artboardBinding = require(3918) /* BaseRive */.useArtboardBinding("Icon", instance, file, Icon, playIfNeeded);
+    let tmpResult = tmp(3918);
     let Illustration;
-    if (null != dataBinding) {
+    if (dataBinding != null) {
       Illustration = dataBinding.Illustration;
     }
-    const artboardBinding1 = require(3894) /* useObservedValue */.useArtboardBinding("Illustration", instance, file, Illustration, playIfNeeded);
-    const obj3 = require(3894) /* useObservedValue */;
+    const artboardBinding1 = tmpResult.useArtboardBinding("Illustration", instance, file, Illustration, playIfNeeded);
+    tmpResult = tmp(3918);
     let AnimationState;
-    if (null != dataBinding) {
+    if (dataBinding != null) {
       AnimationState = dataBinding.AnimationState;
     }
     let AnimationState1;
-    if (null != onDataBindingChange) {
+    if (onDataBindingChange != null) {
       AnimationState1 = onDataBindingChange.AnimationState;
     }
-    const numberBinding = require(3894) /* useObservedValue */.useNumberBinding("AnimationState", instance, AnimationState, AnimationState1, playIfNeeded);
-    const obj4 = require(3894) /* useObservedValue */;
+    const numberBinding = tmpResult.useNumberBinding("AnimationState", instance, AnimationState, AnimationState1, playIfNeeded);
+    const obj2 = require(3918) /* BaseRive */;
     let PowerMeter;
-    if (null != dataBinding) {
+    if (dataBinding != null) {
       PowerMeter = dataBinding.PowerMeter;
     }
     let PowerMeter1;
-    if (null != onDataBindingChange) {
+    if (onDataBindingChange != null) {
       PowerMeter1 = onDataBindingChange.PowerMeter;
     }
-    const numberBinding1 = require(3894) /* useObservedValue */.useNumberBinding("PowerMeter", instance, PowerMeter, PowerMeter1, playIfNeeded);
-    const obj5 = require(3894) /* useObservedValue */;
+    const numberBinding1 = require(3918) /* BaseRive */.useNumberBinding("PowerMeter", instance, PowerMeter, PowerMeter1, playIfNeeded);
+    const tmpResult1 = require(3918) /* BaseRive */;
     let LVL;
-    if (null != dataBinding) {
+    if (dataBinding != null) {
       LVL = dataBinding.LVL;
     }
     let LVL1;
-    if (null != onDataBindingChange) {
+    if (onDataBindingChange != null) {
       LVL1 = onDataBindingChange.LVL;
     }
-    const stringBinding = require(3894) /* useObservedValue */.useStringBinding("LVL", instance, LVL, LVL1, playIfNeeded);
-    const obj6 = require(3894) /* useObservedValue */;
+    const stringBinding = require(3918) /* BaseRive */.useStringBinding("LVL", instance, LVL, LVL1, playIfNeeded);
+    const tmpResult2 = require(3918) /* BaseRive */;
     let PersonaName;
-    if (null != dataBinding) {
+    if (dataBinding != null) {
       PersonaName = dataBinding.PersonaName;
     }
     let PersonaName1;
-    if (null != onDataBindingChange) {
+    if (onDataBindingChange != null) {
       PersonaName1 = onDataBindingChange.PersonaName;
     }
-    const stringBinding1 = require(3894) /* useObservedValue */.useStringBinding("PersonaName", instance, PersonaName, PersonaName1, playIfNeeded);
-    const obj7 = require(3894) /* useObservedValue */;
+    const stringBinding1 = require(3918) /* BaseRive */.useStringBinding("PersonaName", instance, PersonaName, PersonaName1, playIfNeeded);
+    const tmpResult3 = require(3918) /* BaseRive */;
     let prop;
-    if (null != dataBinding) {
+    if (dataBinding != null) {
       prop = dataBinding["id#"];
     }
     let prop1;
-    if (null != onDataBindingChange) {
+    if (onDataBindingChange != null) {
       prop1 = onDataBindingChange["id#"];
     }
-    const stringBinding2 = require(3894) /* useObservedValue */.useStringBinding("id#", instance, prop, prop1, playIfNeeded);
-    const obj8 = require(3894) /* useObservedValue */;
+    const stringBinding2 = require(3918) /* BaseRive */.useStringBinding("id#", instance, prop, prop1, playIfNeeded);
+    const tmpResult4 = require(3918) /* BaseRive */;
     let Outof;
-    if (null != dataBinding) {
+    if (dataBinding != null) {
       Outof = dataBinding.Outof;
     }
     let Outof1;
-    if (null != onDataBindingChange) {
+    if (onDataBindingChange != null) {
       Outof1 = onDataBindingChange.Outof;
     }
-    const stringBinding3 = require(3894) /* useObservedValue */.useStringBinding("Outof", instance, Outof, Outof1, playIfNeeded);
-    const obj9 = require(3894) /* useObservedValue */;
+    const stringBinding3 = require(3918) /* BaseRive */.useStringBinding("Outof", instance, Outof, Outof1, playIfNeeded);
+    const tmpResult5 = require(3918) /* BaseRive */;
     let FillColor;
-    if (null != dataBinding) {
+    if (dataBinding != null) {
       FillColor = dataBinding.FillColor;
     }
     let FillColor1;
-    if (null != onDataBindingChange) {
+    if (onDataBindingChange != null) {
       FillColor1 = onDataBindingChange.FillColor;
     }
-    const colorBinding = require(3894) /* useObservedValue */.useColorBinding("FillColor", instance, FillColor, FillColor1, playIfNeeded);
+    const colorBinding = require(3918) /* BaseRive */.useColorBinding("FillColor", instance, FillColor, FillColor1, playIfNeeded);
     return null;
   },
   Cat: function CatBindings(reducedMotionEnabled) {
@@ -204,89 +205,89 @@ let closure_9 = {
     let onDataBindingChange;
     let playIfNeeded;
     ({ instance, file, dataBinding, onDataBindingChange, playIfNeeded } = reducedMotionEnabled);
-    const booleanBinding = require(3894) /* useObservedValue */.useBooleanBinding("reducedMotion", instance, reducedMotionEnabled.reducedMotionEnabled, undefined, playIfNeeded);
-    const obj = require(3894) /* useObservedValue */;
+    const booleanBinding = require(3918) /* BaseRive */.useBooleanBinding("reducedMotion", instance, reducedMotionEnabled.reducedMotionEnabled, undefined, playIfNeeded);
+    const obj = require(3918) /* BaseRive */;
     let Icon;
-    if (null != dataBinding) {
+    if (dataBinding != null) {
       Icon = dataBinding.Icon;
     }
-    const artboardBinding = require(3894) /* useObservedValue */.useArtboardBinding("Icon", instance, file, Icon, playIfNeeded);
-    const obj2 = require(3894) /* useObservedValue */;
+    const artboardBinding = require(3918) /* BaseRive */.useArtboardBinding("Icon", instance, file, Icon, playIfNeeded);
+    let tmpResult = tmp(3918);
     let Illustration;
-    if (null != dataBinding) {
+    if (dataBinding != null) {
       Illustration = dataBinding.Illustration;
     }
-    const artboardBinding1 = require(3894) /* useObservedValue */.useArtboardBinding("Illustration", instance, file, Illustration, playIfNeeded);
-    const obj3 = require(3894) /* useObservedValue */;
+    const artboardBinding1 = tmpResult.useArtboardBinding("Illustration", instance, file, Illustration, playIfNeeded);
+    tmpResult = tmp(3918);
     let AnimationState;
-    if (null != dataBinding) {
+    if (dataBinding != null) {
       AnimationState = dataBinding.AnimationState;
     }
     let AnimationState1;
-    if (null != onDataBindingChange) {
+    if (onDataBindingChange != null) {
       AnimationState1 = onDataBindingChange.AnimationState;
     }
-    const numberBinding = require(3894) /* useObservedValue */.useNumberBinding("AnimationState", instance, AnimationState, AnimationState1, playIfNeeded);
-    const obj4 = require(3894) /* useObservedValue */;
+    const numberBinding = tmpResult.useNumberBinding("AnimationState", instance, AnimationState, AnimationState1, playIfNeeded);
+    const obj2 = require(3918) /* BaseRive */;
     let PowerMeter;
-    if (null != dataBinding) {
+    if (dataBinding != null) {
       PowerMeter = dataBinding.PowerMeter;
     }
     let PowerMeter1;
-    if (null != onDataBindingChange) {
+    if (onDataBindingChange != null) {
       PowerMeter1 = onDataBindingChange.PowerMeter;
     }
-    const numberBinding1 = require(3894) /* useObservedValue */.useNumberBinding("PowerMeter", instance, PowerMeter, PowerMeter1, playIfNeeded);
-    const obj5 = require(3894) /* useObservedValue */;
+    const numberBinding1 = require(3918) /* BaseRive */.useNumberBinding("PowerMeter", instance, PowerMeter, PowerMeter1, playIfNeeded);
+    const tmpResult1 = require(3918) /* BaseRive */;
     let LVL;
-    if (null != dataBinding) {
+    if (dataBinding != null) {
       LVL = dataBinding.LVL;
     }
     let LVL1;
-    if (null != onDataBindingChange) {
+    if (onDataBindingChange != null) {
       LVL1 = onDataBindingChange.LVL;
     }
-    const stringBinding = require(3894) /* useObservedValue */.useStringBinding("LVL", instance, LVL, LVL1, playIfNeeded);
-    const obj6 = require(3894) /* useObservedValue */;
+    const stringBinding = require(3918) /* BaseRive */.useStringBinding("LVL", instance, LVL, LVL1, playIfNeeded);
+    const tmpResult2 = require(3918) /* BaseRive */;
     let PersonaName;
-    if (null != dataBinding) {
+    if (dataBinding != null) {
       PersonaName = dataBinding.PersonaName;
     }
     let PersonaName1;
-    if (null != onDataBindingChange) {
+    if (onDataBindingChange != null) {
       PersonaName1 = onDataBindingChange.PersonaName;
     }
-    const stringBinding1 = require(3894) /* useObservedValue */.useStringBinding("PersonaName", instance, PersonaName, PersonaName1, playIfNeeded);
-    const obj7 = require(3894) /* useObservedValue */;
+    const stringBinding1 = require(3918) /* BaseRive */.useStringBinding("PersonaName", instance, PersonaName, PersonaName1, playIfNeeded);
+    const tmpResult3 = require(3918) /* BaseRive */;
     let prop;
-    if (null != dataBinding) {
+    if (dataBinding != null) {
       prop = dataBinding["id#"];
     }
     let prop1;
-    if (null != onDataBindingChange) {
+    if (onDataBindingChange != null) {
       prop1 = onDataBindingChange["id#"];
     }
-    const stringBinding2 = require(3894) /* useObservedValue */.useStringBinding("id#", instance, prop, prop1, playIfNeeded);
-    const obj8 = require(3894) /* useObservedValue */;
+    const stringBinding2 = require(3918) /* BaseRive */.useStringBinding("id#", instance, prop, prop1, playIfNeeded);
+    const tmpResult4 = require(3918) /* BaseRive */;
     let Outof;
-    if (null != dataBinding) {
+    if (dataBinding != null) {
       Outof = dataBinding.Outof;
     }
     let Outof1;
-    if (null != onDataBindingChange) {
+    if (onDataBindingChange != null) {
       Outof1 = onDataBindingChange.Outof;
     }
-    const stringBinding3 = require(3894) /* useObservedValue */.useStringBinding("Outof", instance, Outof, Outof1, playIfNeeded);
-    const obj9 = require(3894) /* useObservedValue */;
+    const stringBinding3 = require(3918) /* BaseRive */.useStringBinding("Outof", instance, Outof, Outof1, playIfNeeded);
+    const tmpResult5 = require(3918) /* BaseRive */;
     let FillColor;
-    if (null != dataBinding) {
+    if (dataBinding != null) {
       FillColor = dataBinding.FillColor;
     }
     let FillColor1;
-    if (null != onDataBindingChange) {
+    if (onDataBindingChange != null) {
       FillColor1 = onDataBindingChange.FillColor;
     }
-    const colorBinding = require(3894) /* useObservedValue */.useColorBinding("FillColor", instance, FillColor, FillColor1, playIfNeeded);
+    const colorBinding = require(3918) /* BaseRive */.useColorBinding("FillColor", instance, FillColor, FillColor1, playIfNeeded);
     return null;
   },
   Banana: function BananaBindings(reducedMotionEnabled) {
@@ -296,89 +297,89 @@ let closure_9 = {
     let onDataBindingChange;
     let playIfNeeded;
     ({ instance, file, dataBinding, onDataBindingChange, playIfNeeded } = reducedMotionEnabled);
-    const booleanBinding = require(3894) /* useObservedValue */.useBooleanBinding("reducedMotion", instance, reducedMotionEnabled.reducedMotionEnabled, undefined, playIfNeeded);
-    const obj = require(3894) /* useObservedValue */;
+    const booleanBinding = require(3918) /* BaseRive */.useBooleanBinding("reducedMotion", instance, reducedMotionEnabled.reducedMotionEnabled, undefined, playIfNeeded);
+    const obj = require(3918) /* BaseRive */;
     let Icon;
-    if (null != dataBinding) {
+    if (dataBinding != null) {
       Icon = dataBinding.Icon;
     }
-    const artboardBinding = require(3894) /* useObservedValue */.useArtboardBinding("Icon", instance, file, Icon, playIfNeeded);
-    const obj2 = require(3894) /* useObservedValue */;
+    const artboardBinding = require(3918) /* BaseRive */.useArtboardBinding("Icon", instance, file, Icon, playIfNeeded);
+    let tmpResult = tmp(3918);
     let Illustration;
-    if (null != dataBinding) {
+    if (dataBinding != null) {
       Illustration = dataBinding.Illustration;
     }
-    const artboardBinding1 = require(3894) /* useObservedValue */.useArtboardBinding("Illustration", instance, file, Illustration, playIfNeeded);
-    const obj3 = require(3894) /* useObservedValue */;
+    const artboardBinding1 = tmpResult.useArtboardBinding("Illustration", instance, file, Illustration, playIfNeeded);
+    tmpResult = tmp(3918);
     let AnimationState;
-    if (null != dataBinding) {
+    if (dataBinding != null) {
       AnimationState = dataBinding.AnimationState;
     }
     let AnimationState1;
-    if (null != onDataBindingChange) {
+    if (onDataBindingChange != null) {
       AnimationState1 = onDataBindingChange.AnimationState;
     }
-    const numberBinding = require(3894) /* useObservedValue */.useNumberBinding("AnimationState", instance, AnimationState, AnimationState1, playIfNeeded);
-    const obj4 = require(3894) /* useObservedValue */;
+    const numberBinding = tmpResult.useNumberBinding("AnimationState", instance, AnimationState, AnimationState1, playIfNeeded);
+    const obj2 = require(3918) /* BaseRive */;
     let PowerMeter;
-    if (null != dataBinding) {
+    if (dataBinding != null) {
       PowerMeter = dataBinding.PowerMeter;
     }
     let PowerMeter1;
-    if (null != onDataBindingChange) {
+    if (onDataBindingChange != null) {
       PowerMeter1 = onDataBindingChange.PowerMeter;
     }
-    const numberBinding1 = require(3894) /* useObservedValue */.useNumberBinding("PowerMeter", instance, PowerMeter, PowerMeter1, playIfNeeded);
-    const obj5 = require(3894) /* useObservedValue */;
+    const numberBinding1 = require(3918) /* BaseRive */.useNumberBinding("PowerMeter", instance, PowerMeter, PowerMeter1, playIfNeeded);
+    const tmpResult1 = require(3918) /* BaseRive */;
     let LVL;
-    if (null != dataBinding) {
+    if (dataBinding != null) {
       LVL = dataBinding.LVL;
     }
     let LVL1;
-    if (null != onDataBindingChange) {
+    if (onDataBindingChange != null) {
       LVL1 = onDataBindingChange.LVL;
     }
-    const stringBinding = require(3894) /* useObservedValue */.useStringBinding("LVL", instance, LVL, LVL1, playIfNeeded);
-    const obj6 = require(3894) /* useObservedValue */;
+    const stringBinding = require(3918) /* BaseRive */.useStringBinding("LVL", instance, LVL, LVL1, playIfNeeded);
+    const tmpResult2 = require(3918) /* BaseRive */;
     let PersonaName;
-    if (null != dataBinding) {
+    if (dataBinding != null) {
       PersonaName = dataBinding.PersonaName;
     }
     let PersonaName1;
-    if (null != onDataBindingChange) {
+    if (onDataBindingChange != null) {
       PersonaName1 = onDataBindingChange.PersonaName;
     }
-    const stringBinding1 = require(3894) /* useObservedValue */.useStringBinding("PersonaName", instance, PersonaName, PersonaName1, playIfNeeded);
-    const obj7 = require(3894) /* useObservedValue */;
+    const stringBinding1 = require(3918) /* BaseRive */.useStringBinding("PersonaName", instance, PersonaName, PersonaName1, playIfNeeded);
+    const tmpResult3 = require(3918) /* BaseRive */;
     let prop;
-    if (null != dataBinding) {
+    if (dataBinding != null) {
       prop = dataBinding["id#"];
     }
     let prop1;
-    if (null != onDataBindingChange) {
+    if (onDataBindingChange != null) {
       prop1 = onDataBindingChange["id#"];
     }
-    const stringBinding2 = require(3894) /* useObservedValue */.useStringBinding("id#", instance, prop, prop1, playIfNeeded);
-    const obj8 = require(3894) /* useObservedValue */;
+    const stringBinding2 = require(3918) /* BaseRive */.useStringBinding("id#", instance, prop, prop1, playIfNeeded);
+    const tmpResult4 = require(3918) /* BaseRive */;
     let Outof;
-    if (null != dataBinding) {
+    if (dataBinding != null) {
       Outof = dataBinding.Outof;
     }
     let Outof1;
-    if (null != onDataBindingChange) {
+    if (onDataBindingChange != null) {
       Outof1 = onDataBindingChange.Outof;
     }
-    const stringBinding3 = require(3894) /* useObservedValue */.useStringBinding("Outof", instance, Outof, Outof1, playIfNeeded);
-    const obj9 = require(3894) /* useObservedValue */;
+    const stringBinding3 = require(3918) /* BaseRive */.useStringBinding("Outof", instance, Outof, Outof1, playIfNeeded);
+    const tmpResult5 = require(3918) /* BaseRive */;
     let FillColor;
-    if (null != dataBinding) {
+    if (dataBinding != null) {
       FillColor = dataBinding.FillColor;
     }
     let FillColor1;
-    if (null != onDataBindingChange) {
+    if (onDataBindingChange != null) {
       FillColor1 = onDataBindingChange.FillColor;
     }
-    const colorBinding = require(3894) /* useObservedValue */.useColorBinding("FillColor", instance, FillColor, FillColor1, playIfNeeded);
+    const colorBinding = require(3918) /* BaseRive */.useColorBinding("FillColor", instance, FillColor, FillColor1, playIfNeeded);
     return null;
   },
   Duck: function DuckBindings(reducedMotionEnabled) {
@@ -388,89 +389,89 @@ let closure_9 = {
     let onDataBindingChange;
     let playIfNeeded;
     ({ instance, file, dataBinding, onDataBindingChange, playIfNeeded } = reducedMotionEnabled);
-    const booleanBinding = require(3894) /* useObservedValue */.useBooleanBinding("reducedMotion", instance, reducedMotionEnabled.reducedMotionEnabled, undefined, playIfNeeded);
-    const obj = require(3894) /* useObservedValue */;
+    const booleanBinding = require(3918) /* BaseRive */.useBooleanBinding("reducedMotion", instance, reducedMotionEnabled.reducedMotionEnabled, undefined, playIfNeeded);
+    const obj = require(3918) /* BaseRive */;
     let Icon;
-    if (null != dataBinding) {
+    if (dataBinding != null) {
       Icon = dataBinding.Icon;
     }
-    const artboardBinding = require(3894) /* useObservedValue */.useArtboardBinding("Icon", instance, file, Icon, playIfNeeded);
-    const obj2 = require(3894) /* useObservedValue */;
+    const artboardBinding = require(3918) /* BaseRive */.useArtboardBinding("Icon", instance, file, Icon, playIfNeeded);
+    let tmpResult = tmp(3918);
     let Illustration;
-    if (null != dataBinding) {
+    if (dataBinding != null) {
       Illustration = dataBinding.Illustration;
     }
-    const artboardBinding1 = require(3894) /* useObservedValue */.useArtboardBinding("Illustration", instance, file, Illustration, playIfNeeded);
-    const obj3 = require(3894) /* useObservedValue */;
+    const artboardBinding1 = tmpResult.useArtboardBinding("Illustration", instance, file, Illustration, playIfNeeded);
+    tmpResult = tmp(3918);
     let AnimationState;
-    if (null != dataBinding) {
+    if (dataBinding != null) {
       AnimationState = dataBinding.AnimationState;
     }
     let AnimationState1;
-    if (null != onDataBindingChange) {
+    if (onDataBindingChange != null) {
       AnimationState1 = onDataBindingChange.AnimationState;
     }
-    const numberBinding = require(3894) /* useObservedValue */.useNumberBinding("AnimationState", instance, AnimationState, AnimationState1, playIfNeeded);
-    const obj4 = require(3894) /* useObservedValue */;
+    const numberBinding = tmpResult.useNumberBinding("AnimationState", instance, AnimationState, AnimationState1, playIfNeeded);
+    const obj2 = require(3918) /* BaseRive */;
     let PowerMeter;
-    if (null != dataBinding) {
+    if (dataBinding != null) {
       PowerMeter = dataBinding.PowerMeter;
     }
     let PowerMeter1;
-    if (null != onDataBindingChange) {
+    if (onDataBindingChange != null) {
       PowerMeter1 = onDataBindingChange.PowerMeter;
     }
-    const numberBinding1 = require(3894) /* useObservedValue */.useNumberBinding("PowerMeter", instance, PowerMeter, PowerMeter1, playIfNeeded);
-    const obj5 = require(3894) /* useObservedValue */;
+    const numberBinding1 = require(3918) /* BaseRive */.useNumberBinding("PowerMeter", instance, PowerMeter, PowerMeter1, playIfNeeded);
+    const tmpResult1 = require(3918) /* BaseRive */;
     let LVL;
-    if (null != dataBinding) {
+    if (dataBinding != null) {
       LVL = dataBinding.LVL;
     }
     let LVL1;
-    if (null != onDataBindingChange) {
+    if (onDataBindingChange != null) {
       LVL1 = onDataBindingChange.LVL;
     }
-    const stringBinding = require(3894) /* useObservedValue */.useStringBinding("LVL", instance, LVL, LVL1, playIfNeeded);
-    const obj6 = require(3894) /* useObservedValue */;
+    const stringBinding = require(3918) /* BaseRive */.useStringBinding("LVL", instance, LVL, LVL1, playIfNeeded);
+    const tmpResult2 = require(3918) /* BaseRive */;
     let PersonaName;
-    if (null != dataBinding) {
+    if (dataBinding != null) {
       PersonaName = dataBinding.PersonaName;
     }
     let PersonaName1;
-    if (null != onDataBindingChange) {
+    if (onDataBindingChange != null) {
       PersonaName1 = onDataBindingChange.PersonaName;
     }
-    const stringBinding1 = require(3894) /* useObservedValue */.useStringBinding("PersonaName", instance, PersonaName, PersonaName1, playIfNeeded);
-    const obj7 = require(3894) /* useObservedValue */;
+    const stringBinding1 = require(3918) /* BaseRive */.useStringBinding("PersonaName", instance, PersonaName, PersonaName1, playIfNeeded);
+    const tmpResult3 = require(3918) /* BaseRive */;
     let prop;
-    if (null != dataBinding) {
+    if (dataBinding != null) {
       prop = dataBinding["id#"];
     }
     let prop1;
-    if (null != onDataBindingChange) {
+    if (onDataBindingChange != null) {
       prop1 = onDataBindingChange["id#"];
     }
-    const stringBinding2 = require(3894) /* useObservedValue */.useStringBinding("id#", instance, prop, prop1, playIfNeeded);
-    const obj8 = require(3894) /* useObservedValue */;
+    const stringBinding2 = require(3918) /* BaseRive */.useStringBinding("id#", instance, prop, prop1, playIfNeeded);
+    const tmpResult4 = require(3918) /* BaseRive */;
     let Outof;
-    if (null != dataBinding) {
+    if (dataBinding != null) {
       Outof = dataBinding.Outof;
     }
     let Outof1;
-    if (null != onDataBindingChange) {
+    if (onDataBindingChange != null) {
       Outof1 = onDataBindingChange.Outof;
     }
-    const stringBinding3 = require(3894) /* useObservedValue */.useStringBinding("Outof", instance, Outof, Outof1, playIfNeeded);
-    const obj9 = require(3894) /* useObservedValue */;
+    const stringBinding3 = require(3918) /* BaseRive */.useStringBinding("Outof", instance, Outof, Outof1, playIfNeeded);
+    const tmpResult5 = require(3918) /* BaseRive */;
     let FillColor;
-    if (null != dataBinding) {
+    if (dataBinding != null) {
       FillColor = dataBinding.FillColor;
     }
     let FillColor1;
-    if (null != onDataBindingChange) {
+    if (onDataBindingChange != null) {
       FillColor1 = onDataBindingChange.FillColor;
     }
-    const colorBinding = require(3894) /* useObservedValue */.useColorBinding("FillColor", instance, FillColor, FillColor1, playIfNeeded);
+    const colorBinding = require(3918) /* BaseRive */.useColorBinding("FillColor", instance, FillColor, FillColor1, playIfNeeded);
     return null;
   },
   Snail: function SnailBindings(reducedMotionEnabled) {
@@ -480,89 +481,89 @@ let closure_9 = {
     let onDataBindingChange;
     let playIfNeeded;
     ({ instance, file, dataBinding, onDataBindingChange, playIfNeeded } = reducedMotionEnabled);
-    const booleanBinding = require(3894) /* useObservedValue */.useBooleanBinding("reducedMotion", instance, reducedMotionEnabled.reducedMotionEnabled, undefined, playIfNeeded);
-    const obj = require(3894) /* useObservedValue */;
+    const booleanBinding = require(3918) /* BaseRive */.useBooleanBinding("reducedMotion", instance, reducedMotionEnabled.reducedMotionEnabled, undefined, playIfNeeded);
+    const obj = require(3918) /* BaseRive */;
     let Icon;
-    if (null != dataBinding) {
+    if (dataBinding != null) {
       Icon = dataBinding.Icon;
     }
-    const artboardBinding = require(3894) /* useObservedValue */.useArtboardBinding("Icon", instance, file, Icon, playIfNeeded);
-    const obj2 = require(3894) /* useObservedValue */;
+    const artboardBinding = require(3918) /* BaseRive */.useArtboardBinding("Icon", instance, file, Icon, playIfNeeded);
+    let tmpResult = tmp(3918);
     let Illustration;
-    if (null != dataBinding) {
+    if (dataBinding != null) {
       Illustration = dataBinding.Illustration;
     }
-    const artboardBinding1 = require(3894) /* useObservedValue */.useArtboardBinding("Illustration", instance, file, Illustration, playIfNeeded);
-    const obj3 = require(3894) /* useObservedValue */;
+    const artboardBinding1 = tmpResult.useArtboardBinding("Illustration", instance, file, Illustration, playIfNeeded);
+    tmpResult = tmp(3918);
     let AnimationState;
-    if (null != dataBinding) {
+    if (dataBinding != null) {
       AnimationState = dataBinding.AnimationState;
     }
     let AnimationState1;
-    if (null != onDataBindingChange) {
+    if (onDataBindingChange != null) {
       AnimationState1 = onDataBindingChange.AnimationState;
     }
-    const numberBinding = require(3894) /* useObservedValue */.useNumberBinding("AnimationState", instance, AnimationState, AnimationState1, playIfNeeded);
-    const obj4 = require(3894) /* useObservedValue */;
+    const numberBinding = tmpResult.useNumberBinding("AnimationState", instance, AnimationState, AnimationState1, playIfNeeded);
+    const obj2 = require(3918) /* BaseRive */;
     let PowerMeter;
-    if (null != dataBinding) {
+    if (dataBinding != null) {
       PowerMeter = dataBinding.PowerMeter;
     }
     let PowerMeter1;
-    if (null != onDataBindingChange) {
+    if (onDataBindingChange != null) {
       PowerMeter1 = onDataBindingChange.PowerMeter;
     }
-    const numberBinding1 = require(3894) /* useObservedValue */.useNumberBinding("PowerMeter", instance, PowerMeter, PowerMeter1, playIfNeeded);
-    const obj5 = require(3894) /* useObservedValue */;
+    const numberBinding1 = require(3918) /* BaseRive */.useNumberBinding("PowerMeter", instance, PowerMeter, PowerMeter1, playIfNeeded);
+    const tmpResult1 = require(3918) /* BaseRive */;
     let LVL;
-    if (null != dataBinding) {
+    if (dataBinding != null) {
       LVL = dataBinding.LVL;
     }
     let LVL1;
-    if (null != onDataBindingChange) {
+    if (onDataBindingChange != null) {
       LVL1 = onDataBindingChange.LVL;
     }
-    const stringBinding = require(3894) /* useObservedValue */.useStringBinding("LVL", instance, LVL, LVL1, playIfNeeded);
-    const obj6 = require(3894) /* useObservedValue */;
+    const stringBinding = require(3918) /* BaseRive */.useStringBinding("LVL", instance, LVL, LVL1, playIfNeeded);
+    const tmpResult2 = require(3918) /* BaseRive */;
     let PersonaName;
-    if (null != dataBinding) {
+    if (dataBinding != null) {
       PersonaName = dataBinding.PersonaName;
     }
     let PersonaName1;
-    if (null != onDataBindingChange) {
+    if (onDataBindingChange != null) {
       PersonaName1 = onDataBindingChange.PersonaName;
     }
-    const stringBinding1 = require(3894) /* useObservedValue */.useStringBinding("PersonaName", instance, PersonaName, PersonaName1, playIfNeeded);
-    const obj7 = require(3894) /* useObservedValue */;
+    const stringBinding1 = require(3918) /* BaseRive */.useStringBinding("PersonaName", instance, PersonaName, PersonaName1, playIfNeeded);
+    const tmpResult3 = require(3918) /* BaseRive */;
     let prop;
-    if (null != dataBinding) {
+    if (dataBinding != null) {
       prop = dataBinding["id#"];
     }
     let prop1;
-    if (null != onDataBindingChange) {
+    if (onDataBindingChange != null) {
       prop1 = onDataBindingChange["id#"];
     }
-    const stringBinding2 = require(3894) /* useObservedValue */.useStringBinding("id#", instance, prop, prop1, playIfNeeded);
-    const obj8 = require(3894) /* useObservedValue */;
+    const stringBinding2 = require(3918) /* BaseRive */.useStringBinding("id#", instance, prop, prop1, playIfNeeded);
+    const tmpResult4 = require(3918) /* BaseRive */;
     let Outof;
-    if (null != dataBinding) {
+    if (dataBinding != null) {
       Outof = dataBinding.Outof;
     }
     let Outof1;
-    if (null != onDataBindingChange) {
+    if (onDataBindingChange != null) {
       Outof1 = onDataBindingChange.Outof;
     }
-    const stringBinding3 = require(3894) /* useObservedValue */.useStringBinding("Outof", instance, Outof, Outof1, playIfNeeded);
-    const obj9 = require(3894) /* useObservedValue */;
+    const stringBinding3 = require(3918) /* BaseRive */.useStringBinding("Outof", instance, Outof, Outof1, playIfNeeded);
+    const tmpResult5 = require(3918) /* BaseRive */;
     let FillColor;
-    if (null != dataBinding) {
+    if (dataBinding != null) {
       FillColor = dataBinding.FillColor;
     }
     let FillColor1;
-    if (null != onDataBindingChange) {
+    if (onDataBindingChange != null) {
       FillColor1 = onDataBindingChange.FillColor;
     }
-    const colorBinding = require(3894) /* useObservedValue */.useColorBinding("FillColor", instance, FillColor, FillColor1, playIfNeeded);
+    const colorBinding = require(3918) /* BaseRive */.useColorBinding("FillColor", instance, FillColor, FillColor1, playIfNeeded);
     return null;
   },
   Origami: function OrigamiBindings(reducedMotionEnabled) {
@@ -572,89 +573,89 @@ let closure_9 = {
     let onDataBindingChange;
     let playIfNeeded;
     ({ instance, file, dataBinding, onDataBindingChange, playIfNeeded } = reducedMotionEnabled);
-    const booleanBinding = require(3894) /* useObservedValue */.useBooleanBinding("reducedMotion", instance, reducedMotionEnabled.reducedMotionEnabled, undefined, playIfNeeded);
-    const obj = require(3894) /* useObservedValue */;
+    const booleanBinding = require(3918) /* BaseRive */.useBooleanBinding("reducedMotion", instance, reducedMotionEnabled.reducedMotionEnabled, undefined, playIfNeeded);
+    const obj = require(3918) /* BaseRive */;
     let Icon;
-    if (null != dataBinding) {
+    if (dataBinding != null) {
       Icon = dataBinding.Icon;
     }
-    const artboardBinding = require(3894) /* useObservedValue */.useArtboardBinding("Icon", instance, file, Icon, playIfNeeded);
-    const obj2 = require(3894) /* useObservedValue */;
+    const artboardBinding = require(3918) /* BaseRive */.useArtboardBinding("Icon", instance, file, Icon, playIfNeeded);
+    let tmpResult = tmp(3918);
     let Illustration;
-    if (null != dataBinding) {
+    if (dataBinding != null) {
       Illustration = dataBinding.Illustration;
     }
-    const artboardBinding1 = require(3894) /* useObservedValue */.useArtboardBinding("Illustration", instance, file, Illustration, playIfNeeded);
-    const obj3 = require(3894) /* useObservedValue */;
+    const artboardBinding1 = tmpResult.useArtboardBinding("Illustration", instance, file, Illustration, playIfNeeded);
+    tmpResult = tmp(3918);
     let AnimationState;
-    if (null != dataBinding) {
+    if (dataBinding != null) {
       AnimationState = dataBinding.AnimationState;
     }
     let AnimationState1;
-    if (null != onDataBindingChange) {
+    if (onDataBindingChange != null) {
       AnimationState1 = onDataBindingChange.AnimationState;
     }
-    const numberBinding = require(3894) /* useObservedValue */.useNumberBinding("AnimationState", instance, AnimationState, AnimationState1, playIfNeeded);
-    const obj4 = require(3894) /* useObservedValue */;
+    const numberBinding = tmpResult.useNumberBinding("AnimationState", instance, AnimationState, AnimationState1, playIfNeeded);
+    const obj2 = require(3918) /* BaseRive */;
     let PowerMeter;
-    if (null != dataBinding) {
+    if (dataBinding != null) {
       PowerMeter = dataBinding.PowerMeter;
     }
     let PowerMeter1;
-    if (null != onDataBindingChange) {
+    if (onDataBindingChange != null) {
       PowerMeter1 = onDataBindingChange.PowerMeter;
     }
-    const numberBinding1 = require(3894) /* useObservedValue */.useNumberBinding("PowerMeter", instance, PowerMeter, PowerMeter1, playIfNeeded);
-    const obj5 = require(3894) /* useObservedValue */;
+    const numberBinding1 = require(3918) /* BaseRive */.useNumberBinding("PowerMeter", instance, PowerMeter, PowerMeter1, playIfNeeded);
+    const tmpResult1 = require(3918) /* BaseRive */;
     let LVL;
-    if (null != dataBinding) {
+    if (dataBinding != null) {
       LVL = dataBinding.LVL;
     }
     let LVL1;
-    if (null != onDataBindingChange) {
+    if (onDataBindingChange != null) {
       LVL1 = onDataBindingChange.LVL;
     }
-    const stringBinding = require(3894) /* useObservedValue */.useStringBinding("LVL", instance, LVL, LVL1, playIfNeeded);
-    const obj6 = require(3894) /* useObservedValue */;
+    const stringBinding = require(3918) /* BaseRive */.useStringBinding("LVL", instance, LVL, LVL1, playIfNeeded);
+    const tmpResult2 = require(3918) /* BaseRive */;
     let PersonaName;
-    if (null != dataBinding) {
+    if (dataBinding != null) {
       PersonaName = dataBinding.PersonaName;
     }
     let PersonaName1;
-    if (null != onDataBindingChange) {
+    if (onDataBindingChange != null) {
       PersonaName1 = onDataBindingChange.PersonaName;
     }
-    const stringBinding1 = require(3894) /* useObservedValue */.useStringBinding("PersonaName", instance, PersonaName, PersonaName1, playIfNeeded);
-    const obj7 = require(3894) /* useObservedValue */;
+    const stringBinding1 = require(3918) /* BaseRive */.useStringBinding("PersonaName", instance, PersonaName, PersonaName1, playIfNeeded);
+    const tmpResult3 = require(3918) /* BaseRive */;
     let prop;
-    if (null != dataBinding) {
+    if (dataBinding != null) {
       prop = dataBinding["id#"];
     }
     let prop1;
-    if (null != onDataBindingChange) {
+    if (onDataBindingChange != null) {
       prop1 = onDataBindingChange["id#"];
     }
-    const stringBinding2 = require(3894) /* useObservedValue */.useStringBinding("id#", instance, prop, prop1, playIfNeeded);
-    const obj8 = require(3894) /* useObservedValue */;
+    const stringBinding2 = require(3918) /* BaseRive */.useStringBinding("id#", instance, prop, prop1, playIfNeeded);
+    const tmpResult4 = require(3918) /* BaseRive */;
     let Outof;
-    if (null != dataBinding) {
+    if (dataBinding != null) {
       Outof = dataBinding.Outof;
     }
     let Outof1;
-    if (null != onDataBindingChange) {
+    if (onDataBindingChange != null) {
       Outof1 = onDataBindingChange.Outof;
     }
-    const stringBinding3 = require(3894) /* useObservedValue */.useStringBinding("Outof", instance, Outof, Outof1, playIfNeeded);
-    const obj9 = require(3894) /* useObservedValue */;
+    const stringBinding3 = require(3918) /* BaseRive */.useStringBinding("Outof", instance, Outof, Outof1, playIfNeeded);
+    const tmpResult5 = require(3918) /* BaseRive */;
     let FillColor;
-    if (null != dataBinding) {
+    if (dataBinding != null) {
       FillColor = dataBinding.FillColor;
     }
     let FillColor1;
-    if (null != onDataBindingChange) {
+    if (onDataBindingChange != null) {
       FillColor1 = onDataBindingChange.FillColor;
     }
-    const colorBinding = require(3894) /* useObservedValue */.useColorBinding("FillColor", instance, FillColor, FillColor1, playIfNeeded);
+    const colorBinding = require(3918) /* BaseRive */.useColorBinding("FillColor", instance, FillColor, FillColor1, playIfNeeded);
     return null;
   },
   Disco: function DiscoBindings(reducedMotionEnabled) {
@@ -664,89 +665,89 @@ let closure_9 = {
     let onDataBindingChange;
     let playIfNeeded;
     ({ instance, file, dataBinding, onDataBindingChange, playIfNeeded } = reducedMotionEnabled);
-    const booleanBinding = require(3894) /* useObservedValue */.useBooleanBinding("reducedMotion", instance, reducedMotionEnabled.reducedMotionEnabled, undefined, playIfNeeded);
-    const obj = require(3894) /* useObservedValue */;
+    const booleanBinding = require(3918) /* BaseRive */.useBooleanBinding("reducedMotion", instance, reducedMotionEnabled.reducedMotionEnabled, undefined, playIfNeeded);
+    const obj = require(3918) /* BaseRive */;
     let Icon;
-    if (null != dataBinding) {
+    if (dataBinding != null) {
       Icon = dataBinding.Icon;
     }
-    const artboardBinding = require(3894) /* useObservedValue */.useArtboardBinding("Icon", instance, file, Icon, playIfNeeded);
-    const obj2 = require(3894) /* useObservedValue */;
+    const artboardBinding = require(3918) /* BaseRive */.useArtboardBinding("Icon", instance, file, Icon, playIfNeeded);
+    let tmpResult = tmp(3918);
     let Illustration;
-    if (null != dataBinding) {
+    if (dataBinding != null) {
       Illustration = dataBinding.Illustration;
     }
-    const artboardBinding1 = require(3894) /* useObservedValue */.useArtboardBinding("Illustration", instance, file, Illustration, playIfNeeded);
-    const obj3 = require(3894) /* useObservedValue */;
+    const artboardBinding1 = tmpResult.useArtboardBinding("Illustration", instance, file, Illustration, playIfNeeded);
+    tmpResult = tmp(3918);
     let AnimationState;
-    if (null != dataBinding) {
+    if (dataBinding != null) {
       AnimationState = dataBinding.AnimationState;
     }
     let AnimationState1;
-    if (null != onDataBindingChange) {
+    if (onDataBindingChange != null) {
       AnimationState1 = onDataBindingChange.AnimationState;
     }
-    const numberBinding = require(3894) /* useObservedValue */.useNumberBinding("AnimationState", instance, AnimationState, AnimationState1, playIfNeeded);
-    const obj4 = require(3894) /* useObservedValue */;
+    const numberBinding = tmpResult.useNumberBinding("AnimationState", instance, AnimationState, AnimationState1, playIfNeeded);
+    const obj2 = require(3918) /* BaseRive */;
     let PowerMeter;
-    if (null != dataBinding) {
+    if (dataBinding != null) {
       PowerMeter = dataBinding.PowerMeter;
     }
     let PowerMeter1;
-    if (null != onDataBindingChange) {
+    if (onDataBindingChange != null) {
       PowerMeter1 = onDataBindingChange.PowerMeter;
     }
-    const numberBinding1 = require(3894) /* useObservedValue */.useNumberBinding("PowerMeter", instance, PowerMeter, PowerMeter1, playIfNeeded);
-    const obj5 = require(3894) /* useObservedValue */;
+    const numberBinding1 = require(3918) /* BaseRive */.useNumberBinding("PowerMeter", instance, PowerMeter, PowerMeter1, playIfNeeded);
+    const tmpResult1 = require(3918) /* BaseRive */;
     let LVL;
-    if (null != dataBinding) {
+    if (dataBinding != null) {
       LVL = dataBinding.LVL;
     }
     let LVL1;
-    if (null != onDataBindingChange) {
+    if (onDataBindingChange != null) {
       LVL1 = onDataBindingChange.LVL;
     }
-    const stringBinding = require(3894) /* useObservedValue */.useStringBinding("LVL", instance, LVL, LVL1, playIfNeeded);
-    const obj6 = require(3894) /* useObservedValue */;
+    const stringBinding = require(3918) /* BaseRive */.useStringBinding("LVL", instance, LVL, LVL1, playIfNeeded);
+    const tmpResult2 = require(3918) /* BaseRive */;
     let PersonaName;
-    if (null != dataBinding) {
+    if (dataBinding != null) {
       PersonaName = dataBinding.PersonaName;
     }
     let PersonaName1;
-    if (null != onDataBindingChange) {
+    if (onDataBindingChange != null) {
       PersonaName1 = onDataBindingChange.PersonaName;
     }
-    const stringBinding1 = require(3894) /* useObservedValue */.useStringBinding("PersonaName", instance, PersonaName, PersonaName1, playIfNeeded);
-    const obj7 = require(3894) /* useObservedValue */;
+    const stringBinding1 = require(3918) /* BaseRive */.useStringBinding("PersonaName", instance, PersonaName, PersonaName1, playIfNeeded);
+    const tmpResult3 = require(3918) /* BaseRive */;
     let prop;
-    if (null != dataBinding) {
+    if (dataBinding != null) {
       prop = dataBinding["id#"];
     }
     let prop1;
-    if (null != onDataBindingChange) {
+    if (onDataBindingChange != null) {
       prop1 = onDataBindingChange["id#"];
     }
-    const stringBinding2 = require(3894) /* useObservedValue */.useStringBinding("id#", instance, prop, prop1, playIfNeeded);
-    const obj8 = require(3894) /* useObservedValue */;
+    const stringBinding2 = require(3918) /* BaseRive */.useStringBinding("id#", instance, prop, prop1, playIfNeeded);
+    const tmpResult4 = require(3918) /* BaseRive */;
     let Outof;
-    if (null != dataBinding) {
+    if (dataBinding != null) {
       Outof = dataBinding.Outof;
     }
     let Outof1;
-    if (null != onDataBindingChange) {
+    if (onDataBindingChange != null) {
       Outof1 = onDataBindingChange.Outof;
     }
-    const stringBinding3 = require(3894) /* useObservedValue */.useStringBinding("Outof", instance, Outof, Outof1, playIfNeeded);
-    const obj9 = require(3894) /* useObservedValue */;
+    const stringBinding3 = require(3918) /* BaseRive */.useStringBinding("Outof", instance, Outof, Outof1, playIfNeeded);
+    const tmpResult5 = require(3918) /* BaseRive */;
     let FillColor;
-    if (null != dataBinding) {
+    if (dataBinding != null) {
       FillColor = dataBinding.FillColor;
     }
     let FillColor1;
-    if (null != onDataBindingChange) {
+    if (onDataBindingChange != null) {
       FillColor1 = onDataBindingChange.FillColor;
     }
-    const colorBinding = require(3894) /* useObservedValue */.useColorBinding("FillColor", instance, FillColor, FillColor1, playIfNeeded);
+    const colorBinding = require(3918) /* BaseRive */.useColorBinding("FillColor", instance, FillColor, FillColor1, playIfNeeded);
     return null;
   },
   Capybara: function CapybaraBindings(reducedMotionEnabled) {
@@ -756,89 +757,89 @@ let closure_9 = {
     let onDataBindingChange;
     let playIfNeeded;
     ({ instance, file, dataBinding, onDataBindingChange, playIfNeeded } = reducedMotionEnabled);
-    const booleanBinding = require(3894) /* useObservedValue */.useBooleanBinding("reducedMotion", instance, reducedMotionEnabled.reducedMotionEnabled, undefined, playIfNeeded);
-    const obj = require(3894) /* useObservedValue */;
+    const booleanBinding = require(3918) /* BaseRive */.useBooleanBinding("reducedMotion", instance, reducedMotionEnabled.reducedMotionEnabled, undefined, playIfNeeded);
+    const obj = require(3918) /* BaseRive */;
     let Icon;
-    if (null != dataBinding) {
+    if (dataBinding != null) {
       Icon = dataBinding.Icon;
     }
-    const artboardBinding = require(3894) /* useObservedValue */.useArtboardBinding("Icon", instance, file, Icon, playIfNeeded);
-    const obj2 = require(3894) /* useObservedValue */;
+    const artboardBinding = require(3918) /* BaseRive */.useArtboardBinding("Icon", instance, file, Icon, playIfNeeded);
+    let tmpResult = tmp(3918);
     let Illustration;
-    if (null != dataBinding) {
+    if (dataBinding != null) {
       Illustration = dataBinding.Illustration;
     }
-    const artboardBinding1 = require(3894) /* useObservedValue */.useArtboardBinding("Illustration", instance, file, Illustration, playIfNeeded);
-    const obj3 = require(3894) /* useObservedValue */;
+    const artboardBinding1 = tmpResult.useArtboardBinding("Illustration", instance, file, Illustration, playIfNeeded);
+    tmpResult = tmp(3918);
     let AnimationState;
-    if (null != dataBinding) {
+    if (dataBinding != null) {
       AnimationState = dataBinding.AnimationState;
     }
     let AnimationState1;
-    if (null != onDataBindingChange) {
+    if (onDataBindingChange != null) {
       AnimationState1 = onDataBindingChange.AnimationState;
     }
-    const numberBinding = require(3894) /* useObservedValue */.useNumberBinding("AnimationState", instance, AnimationState, AnimationState1, playIfNeeded);
-    const obj4 = require(3894) /* useObservedValue */;
+    const numberBinding = tmpResult.useNumberBinding("AnimationState", instance, AnimationState, AnimationState1, playIfNeeded);
+    const obj2 = require(3918) /* BaseRive */;
     let PowerMeter;
-    if (null != dataBinding) {
+    if (dataBinding != null) {
       PowerMeter = dataBinding.PowerMeter;
     }
     let PowerMeter1;
-    if (null != onDataBindingChange) {
+    if (onDataBindingChange != null) {
       PowerMeter1 = onDataBindingChange.PowerMeter;
     }
-    const numberBinding1 = require(3894) /* useObservedValue */.useNumberBinding("PowerMeter", instance, PowerMeter, PowerMeter1, playIfNeeded);
-    const obj5 = require(3894) /* useObservedValue */;
+    const numberBinding1 = require(3918) /* BaseRive */.useNumberBinding("PowerMeter", instance, PowerMeter, PowerMeter1, playIfNeeded);
+    const tmpResult1 = require(3918) /* BaseRive */;
     let LVL;
-    if (null != dataBinding) {
+    if (dataBinding != null) {
       LVL = dataBinding.LVL;
     }
     let LVL1;
-    if (null != onDataBindingChange) {
+    if (onDataBindingChange != null) {
       LVL1 = onDataBindingChange.LVL;
     }
-    const stringBinding = require(3894) /* useObservedValue */.useStringBinding("LVL", instance, LVL, LVL1, playIfNeeded);
-    const obj6 = require(3894) /* useObservedValue */;
+    const stringBinding = require(3918) /* BaseRive */.useStringBinding("LVL", instance, LVL, LVL1, playIfNeeded);
+    const tmpResult2 = require(3918) /* BaseRive */;
     let PersonaName;
-    if (null != dataBinding) {
+    if (dataBinding != null) {
       PersonaName = dataBinding.PersonaName;
     }
     let PersonaName1;
-    if (null != onDataBindingChange) {
+    if (onDataBindingChange != null) {
       PersonaName1 = onDataBindingChange.PersonaName;
     }
-    const stringBinding1 = require(3894) /* useObservedValue */.useStringBinding("PersonaName", instance, PersonaName, PersonaName1, playIfNeeded);
-    const obj7 = require(3894) /* useObservedValue */;
+    const stringBinding1 = require(3918) /* BaseRive */.useStringBinding("PersonaName", instance, PersonaName, PersonaName1, playIfNeeded);
+    const tmpResult3 = require(3918) /* BaseRive */;
     let prop;
-    if (null != dataBinding) {
+    if (dataBinding != null) {
       prop = dataBinding["id#"];
     }
     let prop1;
-    if (null != onDataBindingChange) {
+    if (onDataBindingChange != null) {
       prop1 = onDataBindingChange["id#"];
     }
-    const stringBinding2 = require(3894) /* useObservedValue */.useStringBinding("id#", instance, prop, prop1, playIfNeeded);
-    const obj8 = require(3894) /* useObservedValue */;
+    const stringBinding2 = require(3918) /* BaseRive */.useStringBinding("id#", instance, prop, prop1, playIfNeeded);
+    const tmpResult4 = require(3918) /* BaseRive */;
     let Outof;
-    if (null != dataBinding) {
+    if (dataBinding != null) {
       Outof = dataBinding.Outof;
     }
     let Outof1;
-    if (null != onDataBindingChange) {
+    if (onDataBindingChange != null) {
       Outof1 = onDataBindingChange.Outof;
     }
-    const stringBinding3 = require(3894) /* useObservedValue */.useStringBinding("Outof", instance, Outof, Outof1, playIfNeeded);
-    const obj9 = require(3894) /* useObservedValue */;
+    const stringBinding3 = require(3918) /* BaseRive */.useStringBinding("Outof", instance, Outof, Outof1, playIfNeeded);
+    const tmpResult5 = require(3918) /* BaseRive */;
     let FillColor;
-    if (null != dataBinding) {
+    if (dataBinding != null) {
       FillColor = dataBinding.FillColor;
     }
     let FillColor1;
-    if (null != onDataBindingChange) {
+    if (onDataBindingChange != null) {
       FillColor1 = onDataBindingChange.FillColor;
     }
-    const colorBinding = require(3894) /* useObservedValue */.useColorBinding("FillColor", instance, FillColor, FillColor1, playIfNeeded);
+    const colorBinding = require(3918) /* BaseRive */.useColorBinding("FillColor", instance, FillColor, FillColor1, playIfNeeded);
     return null;
   },
   Donut: function DonutBindings(reducedMotionEnabled) {
@@ -848,89 +849,89 @@ let closure_9 = {
     let onDataBindingChange;
     let playIfNeeded;
     ({ instance, file, dataBinding, onDataBindingChange, playIfNeeded } = reducedMotionEnabled);
-    const booleanBinding = require(3894) /* useObservedValue */.useBooleanBinding("reducedMotion", instance, reducedMotionEnabled.reducedMotionEnabled, undefined, playIfNeeded);
-    const obj = require(3894) /* useObservedValue */;
+    const booleanBinding = require(3918) /* BaseRive */.useBooleanBinding("reducedMotion", instance, reducedMotionEnabled.reducedMotionEnabled, undefined, playIfNeeded);
+    const obj = require(3918) /* BaseRive */;
     let Icon;
-    if (null != dataBinding) {
+    if (dataBinding != null) {
       Icon = dataBinding.Icon;
     }
-    const artboardBinding = require(3894) /* useObservedValue */.useArtboardBinding("Icon", instance, file, Icon, playIfNeeded);
-    const obj2 = require(3894) /* useObservedValue */;
+    const artboardBinding = require(3918) /* BaseRive */.useArtboardBinding("Icon", instance, file, Icon, playIfNeeded);
+    let tmpResult = tmp(3918);
     let Illustration;
-    if (null != dataBinding) {
+    if (dataBinding != null) {
       Illustration = dataBinding.Illustration;
     }
-    const artboardBinding1 = require(3894) /* useObservedValue */.useArtboardBinding("Illustration", instance, file, Illustration, playIfNeeded);
-    const obj3 = require(3894) /* useObservedValue */;
+    const artboardBinding1 = tmpResult.useArtboardBinding("Illustration", instance, file, Illustration, playIfNeeded);
+    tmpResult = tmp(3918);
     let AnimationState;
-    if (null != dataBinding) {
+    if (dataBinding != null) {
       AnimationState = dataBinding.AnimationState;
     }
     let AnimationState1;
-    if (null != onDataBindingChange) {
+    if (onDataBindingChange != null) {
       AnimationState1 = onDataBindingChange.AnimationState;
     }
-    const numberBinding = require(3894) /* useObservedValue */.useNumberBinding("AnimationState", instance, AnimationState, AnimationState1, playIfNeeded);
-    const obj4 = require(3894) /* useObservedValue */;
+    const numberBinding = tmpResult.useNumberBinding("AnimationState", instance, AnimationState, AnimationState1, playIfNeeded);
+    const obj2 = require(3918) /* BaseRive */;
     let PowerMeter;
-    if (null != dataBinding) {
+    if (dataBinding != null) {
       PowerMeter = dataBinding.PowerMeter;
     }
     let PowerMeter1;
-    if (null != onDataBindingChange) {
+    if (onDataBindingChange != null) {
       PowerMeter1 = onDataBindingChange.PowerMeter;
     }
-    const numberBinding1 = require(3894) /* useObservedValue */.useNumberBinding("PowerMeter", instance, PowerMeter, PowerMeter1, playIfNeeded);
-    const obj5 = require(3894) /* useObservedValue */;
+    const numberBinding1 = require(3918) /* BaseRive */.useNumberBinding("PowerMeter", instance, PowerMeter, PowerMeter1, playIfNeeded);
+    const tmpResult1 = require(3918) /* BaseRive */;
     let LVL;
-    if (null != dataBinding) {
+    if (dataBinding != null) {
       LVL = dataBinding.LVL;
     }
     let LVL1;
-    if (null != onDataBindingChange) {
+    if (onDataBindingChange != null) {
       LVL1 = onDataBindingChange.LVL;
     }
-    const stringBinding = require(3894) /* useObservedValue */.useStringBinding("LVL", instance, LVL, LVL1, playIfNeeded);
-    const obj6 = require(3894) /* useObservedValue */;
+    const stringBinding = require(3918) /* BaseRive */.useStringBinding("LVL", instance, LVL, LVL1, playIfNeeded);
+    const tmpResult2 = require(3918) /* BaseRive */;
     let PersonaName;
-    if (null != dataBinding) {
+    if (dataBinding != null) {
       PersonaName = dataBinding.PersonaName;
     }
     let PersonaName1;
-    if (null != onDataBindingChange) {
+    if (onDataBindingChange != null) {
       PersonaName1 = onDataBindingChange.PersonaName;
     }
-    const stringBinding1 = require(3894) /* useObservedValue */.useStringBinding("PersonaName", instance, PersonaName, PersonaName1, playIfNeeded);
-    const obj7 = require(3894) /* useObservedValue */;
+    const stringBinding1 = require(3918) /* BaseRive */.useStringBinding("PersonaName", instance, PersonaName, PersonaName1, playIfNeeded);
+    const tmpResult3 = require(3918) /* BaseRive */;
     let prop;
-    if (null != dataBinding) {
+    if (dataBinding != null) {
       prop = dataBinding["id#"];
     }
     let prop1;
-    if (null != onDataBindingChange) {
+    if (onDataBindingChange != null) {
       prop1 = onDataBindingChange["id#"];
     }
-    const stringBinding2 = require(3894) /* useObservedValue */.useStringBinding("id#", instance, prop, prop1, playIfNeeded);
-    const obj8 = require(3894) /* useObservedValue */;
+    const stringBinding2 = require(3918) /* BaseRive */.useStringBinding("id#", instance, prop, prop1, playIfNeeded);
+    const tmpResult4 = require(3918) /* BaseRive */;
     let Outof;
-    if (null != dataBinding) {
+    if (dataBinding != null) {
       Outof = dataBinding.Outof;
     }
     let Outof1;
-    if (null != onDataBindingChange) {
+    if (onDataBindingChange != null) {
       Outof1 = onDataBindingChange.Outof;
     }
-    const stringBinding3 = require(3894) /* useObservedValue */.useStringBinding("Outof", instance, Outof, Outof1, playIfNeeded);
-    const obj9 = require(3894) /* useObservedValue */;
+    const stringBinding3 = require(3918) /* BaseRive */.useStringBinding("Outof", instance, Outof, Outof1, playIfNeeded);
+    const tmpResult5 = require(3918) /* BaseRive */;
     let FillColor;
-    if (null != dataBinding) {
+    if (dataBinding != null) {
       FillColor = dataBinding.FillColor;
     }
     let FillColor1;
-    if (null != onDataBindingChange) {
+    if (onDataBindingChange != null) {
       FillColor1 = onDataBindingChange.FillColor;
     }
-    const colorBinding = require(3894) /* useObservedValue */.useColorBinding("FillColor", instance, FillColor, FillColor1, playIfNeeded);
+    const colorBinding = require(3918) /* BaseRive */.useColorBinding("FillColor", instance, FillColor, FillColor1, playIfNeeded);
     return null;
   },
   Bonsai: function BonsaiBindings(reducedMotionEnabled) {
@@ -940,89 +941,89 @@ let closure_9 = {
     let onDataBindingChange;
     let playIfNeeded;
     ({ instance, file, dataBinding, onDataBindingChange, playIfNeeded } = reducedMotionEnabled);
-    const booleanBinding = require(3894) /* useObservedValue */.useBooleanBinding("reducedMotion", instance, reducedMotionEnabled.reducedMotionEnabled, undefined, playIfNeeded);
-    const obj = require(3894) /* useObservedValue */;
+    const booleanBinding = require(3918) /* BaseRive */.useBooleanBinding("reducedMotion", instance, reducedMotionEnabled.reducedMotionEnabled, undefined, playIfNeeded);
+    const obj = require(3918) /* BaseRive */;
     let Icon;
-    if (null != dataBinding) {
+    if (dataBinding != null) {
       Icon = dataBinding.Icon;
     }
-    const artboardBinding = require(3894) /* useObservedValue */.useArtboardBinding("Icon", instance, file, Icon, playIfNeeded);
-    const obj2 = require(3894) /* useObservedValue */;
+    const artboardBinding = require(3918) /* BaseRive */.useArtboardBinding("Icon", instance, file, Icon, playIfNeeded);
+    let tmpResult = tmp(3918);
     let Illustration;
-    if (null != dataBinding) {
+    if (dataBinding != null) {
       Illustration = dataBinding.Illustration;
     }
-    const artboardBinding1 = require(3894) /* useObservedValue */.useArtboardBinding("Illustration", instance, file, Illustration, playIfNeeded);
-    const obj3 = require(3894) /* useObservedValue */;
+    const artboardBinding1 = tmpResult.useArtboardBinding("Illustration", instance, file, Illustration, playIfNeeded);
+    tmpResult = tmp(3918);
     let AnimationState;
-    if (null != dataBinding) {
+    if (dataBinding != null) {
       AnimationState = dataBinding.AnimationState;
     }
     let AnimationState1;
-    if (null != onDataBindingChange) {
+    if (onDataBindingChange != null) {
       AnimationState1 = onDataBindingChange.AnimationState;
     }
-    const numberBinding = require(3894) /* useObservedValue */.useNumberBinding("AnimationState", instance, AnimationState, AnimationState1, playIfNeeded);
-    const obj4 = require(3894) /* useObservedValue */;
+    const numberBinding = tmpResult.useNumberBinding("AnimationState", instance, AnimationState, AnimationState1, playIfNeeded);
+    const obj2 = require(3918) /* BaseRive */;
     let PowerMeter;
-    if (null != dataBinding) {
+    if (dataBinding != null) {
       PowerMeter = dataBinding.PowerMeter;
     }
     let PowerMeter1;
-    if (null != onDataBindingChange) {
+    if (onDataBindingChange != null) {
       PowerMeter1 = onDataBindingChange.PowerMeter;
     }
-    const numberBinding1 = require(3894) /* useObservedValue */.useNumberBinding("PowerMeter", instance, PowerMeter, PowerMeter1, playIfNeeded);
-    const obj5 = require(3894) /* useObservedValue */;
+    const numberBinding1 = require(3918) /* BaseRive */.useNumberBinding("PowerMeter", instance, PowerMeter, PowerMeter1, playIfNeeded);
+    const tmpResult1 = require(3918) /* BaseRive */;
     let LVL;
-    if (null != dataBinding) {
+    if (dataBinding != null) {
       LVL = dataBinding.LVL;
     }
     let LVL1;
-    if (null != onDataBindingChange) {
+    if (onDataBindingChange != null) {
       LVL1 = onDataBindingChange.LVL;
     }
-    const stringBinding = require(3894) /* useObservedValue */.useStringBinding("LVL", instance, LVL, LVL1, playIfNeeded);
-    const obj6 = require(3894) /* useObservedValue */;
+    const stringBinding = require(3918) /* BaseRive */.useStringBinding("LVL", instance, LVL, LVL1, playIfNeeded);
+    const tmpResult2 = require(3918) /* BaseRive */;
     let PersonaName;
-    if (null != dataBinding) {
+    if (dataBinding != null) {
       PersonaName = dataBinding.PersonaName;
     }
     let PersonaName1;
-    if (null != onDataBindingChange) {
+    if (onDataBindingChange != null) {
       PersonaName1 = onDataBindingChange.PersonaName;
     }
-    const stringBinding1 = require(3894) /* useObservedValue */.useStringBinding("PersonaName", instance, PersonaName, PersonaName1, playIfNeeded);
-    const obj7 = require(3894) /* useObservedValue */;
+    const stringBinding1 = require(3918) /* BaseRive */.useStringBinding("PersonaName", instance, PersonaName, PersonaName1, playIfNeeded);
+    const tmpResult3 = require(3918) /* BaseRive */;
     let prop;
-    if (null != dataBinding) {
+    if (dataBinding != null) {
       prop = dataBinding["id#"];
     }
     let prop1;
-    if (null != onDataBindingChange) {
+    if (onDataBindingChange != null) {
       prop1 = onDataBindingChange["id#"];
     }
-    const stringBinding2 = require(3894) /* useObservedValue */.useStringBinding("id#", instance, prop, prop1, playIfNeeded);
-    const obj8 = require(3894) /* useObservedValue */;
+    const stringBinding2 = require(3918) /* BaseRive */.useStringBinding("id#", instance, prop, prop1, playIfNeeded);
+    const tmpResult4 = require(3918) /* BaseRive */;
     let Outof;
-    if (null != dataBinding) {
+    if (dataBinding != null) {
       Outof = dataBinding.Outof;
     }
     let Outof1;
-    if (null != onDataBindingChange) {
+    if (onDataBindingChange != null) {
       Outof1 = onDataBindingChange.Outof;
     }
-    const stringBinding3 = require(3894) /* useObservedValue */.useStringBinding("Outof", instance, Outof, Outof1, playIfNeeded);
-    const obj9 = require(3894) /* useObservedValue */;
+    const stringBinding3 = require(3918) /* BaseRive */.useStringBinding("Outof", instance, Outof, Outof1, playIfNeeded);
+    const tmpResult5 = require(3918) /* BaseRive */;
     let FillColor;
-    if (null != dataBinding) {
+    if (dataBinding != null) {
       FillColor = dataBinding.FillColor;
     }
     let FillColor1;
-    if (null != onDataBindingChange) {
+    if (onDataBindingChange != null) {
       FillColor1 = onDataBindingChange.FillColor;
     }
-    const colorBinding = require(3894) /* useObservedValue */.useColorBinding("FillColor", instance, FillColor, FillColor1, playIfNeeded);
+    const colorBinding = require(3918) /* BaseRive */.useColorBinding("FillColor", instance, FillColor, FillColor1, playIfNeeded);
     return null;
   },
   "Card Back": function CardBackBindings(reducedMotionEnabled) {
@@ -1032,89 +1033,89 @@ let closure_9 = {
     let onDataBindingChange;
     let playIfNeeded;
     ({ instance, file, dataBinding, onDataBindingChange, playIfNeeded } = reducedMotionEnabled);
-    const booleanBinding = require(3894) /* useObservedValue */.useBooleanBinding("reducedMotion", instance, reducedMotionEnabled.reducedMotionEnabled, undefined, playIfNeeded);
-    const obj = require(3894) /* useObservedValue */;
+    const booleanBinding = require(3918) /* BaseRive */.useBooleanBinding("reducedMotion", instance, reducedMotionEnabled.reducedMotionEnabled, undefined, playIfNeeded);
+    const obj = require(3918) /* BaseRive */;
     let Icon;
-    if (null != dataBinding) {
+    if (dataBinding != null) {
       Icon = dataBinding.Icon;
     }
-    const artboardBinding = require(3894) /* useObservedValue */.useArtboardBinding("Icon", instance, file, Icon, playIfNeeded);
-    const obj2 = require(3894) /* useObservedValue */;
+    const artboardBinding = require(3918) /* BaseRive */.useArtboardBinding("Icon", instance, file, Icon, playIfNeeded);
+    let tmpResult = tmp(3918);
     let Illustration;
-    if (null != dataBinding) {
+    if (dataBinding != null) {
       Illustration = dataBinding.Illustration;
     }
-    const artboardBinding1 = require(3894) /* useObservedValue */.useArtboardBinding("Illustration", instance, file, Illustration, playIfNeeded);
-    const obj3 = require(3894) /* useObservedValue */;
+    const artboardBinding1 = tmpResult.useArtboardBinding("Illustration", instance, file, Illustration, playIfNeeded);
+    tmpResult = tmp(3918);
     let AnimationState;
-    if (null != dataBinding) {
+    if (dataBinding != null) {
       AnimationState = dataBinding.AnimationState;
     }
     let AnimationState1;
-    if (null != onDataBindingChange) {
+    if (onDataBindingChange != null) {
       AnimationState1 = onDataBindingChange.AnimationState;
     }
-    const numberBinding = require(3894) /* useObservedValue */.useNumberBinding("AnimationState", instance, AnimationState, AnimationState1, playIfNeeded);
-    const obj4 = require(3894) /* useObservedValue */;
+    const numberBinding = tmpResult.useNumberBinding("AnimationState", instance, AnimationState, AnimationState1, playIfNeeded);
+    const obj2 = require(3918) /* BaseRive */;
     let PowerMeter;
-    if (null != dataBinding) {
+    if (dataBinding != null) {
       PowerMeter = dataBinding.PowerMeter;
     }
     let PowerMeter1;
-    if (null != onDataBindingChange) {
+    if (onDataBindingChange != null) {
       PowerMeter1 = onDataBindingChange.PowerMeter;
     }
-    const numberBinding1 = require(3894) /* useObservedValue */.useNumberBinding("PowerMeter", instance, PowerMeter, PowerMeter1, playIfNeeded);
-    const obj5 = require(3894) /* useObservedValue */;
+    const numberBinding1 = require(3918) /* BaseRive */.useNumberBinding("PowerMeter", instance, PowerMeter, PowerMeter1, playIfNeeded);
+    const tmpResult1 = require(3918) /* BaseRive */;
     let LVL;
-    if (null != dataBinding) {
+    if (dataBinding != null) {
       LVL = dataBinding.LVL;
     }
     let LVL1;
-    if (null != onDataBindingChange) {
+    if (onDataBindingChange != null) {
       LVL1 = onDataBindingChange.LVL;
     }
-    const stringBinding = require(3894) /* useObservedValue */.useStringBinding("LVL", instance, LVL, LVL1, playIfNeeded);
-    const obj6 = require(3894) /* useObservedValue */;
+    const stringBinding = require(3918) /* BaseRive */.useStringBinding("LVL", instance, LVL, LVL1, playIfNeeded);
+    const tmpResult2 = require(3918) /* BaseRive */;
     let PersonaName;
-    if (null != dataBinding) {
+    if (dataBinding != null) {
       PersonaName = dataBinding.PersonaName;
     }
     let PersonaName1;
-    if (null != onDataBindingChange) {
+    if (onDataBindingChange != null) {
       PersonaName1 = onDataBindingChange.PersonaName;
     }
-    const stringBinding1 = require(3894) /* useObservedValue */.useStringBinding("PersonaName", instance, PersonaName, PersonaName1, playIfNeeded);
-    const obj7 = require(3894) /* useObservedValue */;
+    const stringBinding1 = require(3918) /* BaseRive */.useStringBinding("PersonaName", instance, PersonaName, PersonaName1, playIfNeeded);
+    const tmpResult3 = require(3918) /* BaseRive */;
     let prop;
-    if (null != dataBinding) {
+    if (dataBinding != null) {
       prop = dataBinding["id#"];
     }
     let prop1;
-    if (null != onDataBindingChange) {
+    if (onDataBindingChange != null) {
       prop1 = onDataBindingChange["id#"];
     }
-    const stringBinding2 = require(3894) /* useObservedValue */.useStringBinding("id#", instance, prop, prop1, playIfNeeded);
-    const obj8 = require(3894) /* useObservedValue */;
+    const stringBinding2 = require(3918) /* BaseRive */.useStringBinding("id#", instance, prop, prop1, playIfNeeded);
+    const tmpResult4 = require(3918) /* BaseRive */;
     let Outof;
-    if (null != dataBinding) {
+    if (dataBinding != null) {
       Outof = dataBinding.Outof;
     }
     let Outof1;
-    if (null != onDataBindingChange) {
+    if (onDataBindingChange != null) {
       Outof1 = onDataBindingChange.Outof;
     }
-    const stringBinding3 = require(3894) /* useObservedValue */.useStringBinding("Outof", instance, Outof, Outof1, playIfNeeded);
-    const obj9 = require(3894) /* useObservedValue */;
+    const stringBinding3 = require(3918) /* BaseRive */.useStringBinding("Outof", instance, Outof, Outof1, playIfNeeded);
+    const tmpResult5 = require(3918) /* BaseRive */;
     let FillColor;
-    if (null != dataBinding) {
+    if (dataBinding != null) {
       FillColor = dataBinding.FillColor;
     }
     let FillColor1;
-    if (null != onDataBindingChange) {
+    if (onDataBindingChange != null) {
       FillColor1 = onDataBindingChange.FillColor;
     }
-    const colorBinding = require(3894) /* useObservedValue */.useColorBinding("FillColor", instance, FillColor, FillColor1, playIfNeeded);
+    const colorBinding = require(3918) /* BaseRive */.useColorBinding("FillColor", instance, FillColor, FillColor1, playIfNeeded);
     return null;
   },
   Knickknack: function KnickknackBindings(reducedMotionEnabled) {
@@ -1124,89 +1125,89 @@ let closure_9 = {
     let onDataBindingChange;
     let playIfNeeded;
     ({ instance, file, dataBinding, onDataBindingChange, playIfNeeded } = reducedMotionEnabled);
-    const booleanBinding = require(3894) /* useObservedValue */.useBooleanBinding("reducedMotion", instance, reducedMotionEnabled.reducedMotionEnabled, undefined, playIfNeeded);
-    const obj = require(3894) /* useObservedValue */;
+    const booleanBinding = require(3918) /* BaseRive */.useBooleanBinding("reducedMotion", instance, reducedMotionEnabled.reducedMotionEnabled, undefined, playIfNeeded);
+    const obj = require(3918) /* BaseRive */;
     let Icon;
-    if (null != dataBinding) {
+    if (dataBinding != null) {
       Icon = dataBinding.Icon;
     }
-    const artboardBinding = require(3894) /* useObservedValue */.useArtboardBinding("Icon", instance, file, Icon, playIfNeeded);
-    const obj2 = require(3894) /* useObservedValue */;
+    const artboardBinding = require(3918) /* BaseRive */.useArtboardBinding("Icon", instance, file, Icon, playIfNeeded);
+    let tmpResult = tmp(3918);
     let Illustration;
-    if (null != dataBinding) {
+    if (dataBinding != null) {
       Illustration = dataBinding.Illustration;
     }
-    const artboardBinding1 = require(3894) /* useObservedValue */.useArtboardBinding("Illustration", instance, file, Illustration, playIfNeeded);
-    const obj3 = require(3894) /* useObservedValue */;
+    const artboardBinding1 = tmpResult.useArtboardBinding("Illustration", instance, file, Illustration, playIfNeeded);
+    tmpResult = tmp(3918);
     let AnimationState;
-    if (null != dataBinding) {
+    if (dataBinding != null) {
       AnimationState = dataBinding.AnimationState;
     }
     let AnimationState1;
-    if (null != onDataBindingChange) {
+    if (onDataBindingChange != null) {
       AnimationState1 = onDataBindingChange.AnimationState;
     }
-    const numberBinding = require(3894) /* useObservedValue */.useNumberBinding("AnimationState", instance, AnimationState, AnimationState1, playIfNeeded);
-    const obj4 = require(3894) /* useObservedValue */;
+    const numberBinding = tmpResult.useNumberBinding("AnimationState", instance, AnimationState, AnimationState1, playIfNeeded);
+    const obj2 = require(3918) /* BaseRive */;
     let PowerMeter;
-    if (null != dataBinding) {
+    if (dataBinding != null) {
       PowerMeter = dataBinding.PowerMeter;
     }
     let PowerMeter1;
-    if (null != onDataBindingChange) {
+    if (onDataBindingChange != null) {
       PowerMeter1 = onDataBindingChange.PowerMeter;
     }
-    const numberBinding1 = require(3894) /* useObservedValue */.useNumberBinding("PowerMeter", instance, PowerMeter, PowerMeter1, playIfNeeded);
-    const obj5 = require(3894) /* useObservedValue */;
+    const numberBinding1 = require(3918) /* BaseRive */.useNumberBinding("PowerMeter", instance, PowerMeter, PowerMeter1, playIfNeeded);
+    const tmpResult1 = require(3918) /* BaseRive */;
     let LVL;
-    if (null != dataBinding) {
+    if (dataBinding != null) {
       LVL = dataBinding.LVL;
     }
     let LVL1;
-    if (null != onDataBindingChange) {
+    if (onDataBindingChange != null) {
       LVL1 = onDataBindingChange.LVL;
     }
-    const stringBinding = require(3894) /* useObservedValue */.useStringBinding("LVL", instance, LVL, LVL1, playIfNeeded);
-    const obj6 = require(3894) /* useObservedValue */;
+    const stringBinding = require(3918) /* BaseRive */.useStringBinding("LVL", instance, LVL, LVL1, playIfNeeded);
+    const tmpResult2 = require(3918) /* BaseRive */;
     let PersonaName;
-    if (null != dataBinding) {
+    if (dataBinding != null) {
       PersonaName = dataBinding.PersonaName;
     }
     let PersonaName1;
-    if (null != onDataBindingChange) {
+    if (onDataBindingChange != null) {
       PersonaName1 = onDataBindingChange.PersonaName;
     }
-    const stringBinding1 = require(3894) /* useObservedValue */.useStringBinding("PersonaName", instance, PersonaName, PersonaName1, playIfNeeded);
-    const obj7 = require(3894) /* useObservedValue */;
+    const stringBinding1 = require(3918) /* BaseRive */.useStringBinding("PersonaName", instance, PersonaName, PersonaName1, playIfNeeded);
+    const tmpResult3 = require(3918) /* BaseRive */;
     let prop;
-    if (null != dataBinding) {
+    if (dataBinding != null) {
       prop = dataBinding["id#"];
     }
     let prop1;
-    if (null != onDataBindingChange) {
+    if (onDataBindingChange != null) {
       prop1 = onDataBindingChange["id#"];
     }
-    const stringBinding2 = require(3894) /* useObservedValue */.useStringBinding("id#", instance, prop, prop1, playIfNeeded);
-    const obj8 = require(3894) /* useObservedValue */;
+    const stringBinding2 = require(3918) /* BaseRive */.useStringBinding("id#", instance, prop, prop1, playIfNeeded);
+    const tmpResult4 = require(3918) /* BaseRive */;
     let Outof;
-    if (null != dataBinding) {
+    if (dataBinding != null) {
       Outof = dataBinding.Outof;
     }
     let Outof1;
-    if (null != onDataBindingChange) {
+    if (onDataBindingChange != null) {
       Outof1 = onDataBindingChange.Outof;
     }
-    const stringBinding3 = require(3894) /* useObservedValue */.useStringBinding("Outof", instance, Outof, Outof1, playIfNeeded);
-    const obj9 = require(3894) /* useObservedValue */;
+    const stringBinding3 = require(3918) /* BaseRive */.useStringBinding("Outof", instance, Outof, Outof1, playIfNeeded);
+    const tmpResult5 = require(3918) /* BaseRive */;
     let FillColor;
-    if (null != dataBinding) {
+    if (dataBinding != null) {
       FillColor = dataBinding.FillColor;
     }
     let FillColor1;
-    if (null != onDataBindingChange) {
+    if (onDataBindingChange != null) {
       FillColor1 = onDataBindingChange.FillColor;
     }
-    const colorBinding = require(3894) /* useObservedValue */.useColorBinding("FillColor", instance, FillColor, FillColor1, playIfNeeded);
+    const colorBinding = require(3918) /* BaseRive */.useColorBinding("FillColor", instance, FillColor, FillColor1, playIfNeeded);
     return null;
   },
   Card: function CardBindings(reducedMotionEnabled) {
@@ -1216,89 +1217,89 @@ let closure_9 = {
     let onDataBindingChange;
     let playIfNeeded;
     ({ instance, file, dataBinding, onDataBindingChange, playIfNeeded } = reducedMotionEnabled);
-    const booleanBinding = require(3894) /* useObservedValue */.useBooleanBinding("reducedMotion", instance, reducedMotionEnabled.reducedMotionEnabled, undefined, playIfNeeded);
-    const obj = require(3894) /* useObservedValue */;
+    const booleanBinding = require(3918) /* BaseRive */.useBooleanBinding("reducedMotion", instance, reducedMotionEnabled.reducedMotionEnabled, undefined, playIfNeeded);
+    const obj = require(3918) /* BaseRive */;
     let Icon;
-    if (null != dataBinding) {
+    if (dataBinding != null) {
       Icon = dataBinding.Icon;
     }
-    const artboardBinding = require(3894) /* useObservedValue */.useArtboardBinding("Icon", instance, file, Icon, playIfNeeded);
-    const obj2 = require(3894) /* useObservedValue */;
+    const artboardBinding = require(3918) /* BaseRive */.useArtboardBinding("Icon", instance, file, Icon, playIfNeeded);
+    let tmpResult = tmp(3918);
     let Illustration;
-    if (null != dataBinding) {
+    if (dataBinding != null) {
       Illustration = dataBinding.Illustration;
     }
-    const artboardBinding1 = require(3894) /* useObservedValue */.useArtboardBinding("Illustration", instance, file, Illustration, playIfNeeded);
-    const obj3 = require(3894) /* useObservedValue */;
+    const artboardBinding1 = tmpResult.useArtboardBinding("Illustration", instance, file, Illustration, playIfNeeded);
+    tmpResult = tmp(3918);
     let AnimationState;
-    if (null != dataBinding) {
+    if (dataBinding != null) {
       AnimationState = dataBinding.AnimationState;
     }
     let AnimationState1;
-    if (null != onDataBindingChange) {
+    if (onDataBindingChange != null) {
       AnimationState1 = onDataBindingChange.AnimationState;
     }
-    const numberBinding = require(3894) /* useObservedValue */.useNumberBinding("AnimationState", instance, AnimationState, AnimationState1, playIfNeeded);
-    const obj4 = require(3894) /* useObservedValue */;
+    const numberBinding = tmpResult.useNumberBinding("AnimationState", instance, AnimationState, AnimationState1, playIfNeeded);
+    const obj2 = require(3918) /* BaseRive */;
     let PowerMeter;
-    if (null != dataBinding) {
+    if (dataBinding != null) {
       PowerMeter = dataBinding.PowerMeter;
     }
     let PowerMeter1;
-    if (null != onDataBindingChange) {
+    if (onDataBindingChange != null) {
       PowerMeter1 = onDataBindingChange.PowerMeter;
     }
-    const numberBinding1 = require(3894) /* useObservedValue */.useNumberBinding("PowerMeter", instance, PowerMeter, PowerMeter1, playIfNeeded);
-    const obj5 = require(3894) /* useObservedValue */;
+    const numberBinding1 = require(3918) /* BaseRive */.useNumberBinding("PowerMeter", instance, PowerMeter, PowerMeter1, playIfNeeded);
+    const tmpResult1 = require(3918) /* BaseRive */;
     let LVL;
-    if (null != dataBinding) {
+    if (dataBinding != null) {
       LVL = dataBinding.LVL;
     }
     let LVL1;
-    if (null != onDataBindingChange) {
+    if (onDataBindingChange != null) {
       LVL1 = onDataBindingChange.LVL;
     }
-    const stringBinding = require(3894) /* useObservedValue */.useStringBinding("LVL", instance, LVL, LVL1, playIfNeeded);
-    const obj6 = require(3894) /* useObservedValue */;
+    const stringBinding = require(3918) /* BaseRive */.useStringBinding("LVL", instance, LVL, LVL1, playIfNeeded);
+    const tmpResult2 = require(3918) /* BaseRive */;
     let PersonaName;
-    if (null != dataBinding) {
+    if (dataBinding != null) {
       PersonaName = dataBinding.PersonaName;
     }
     let PersonaName1;
-    if (null != onDataBindingChange) {
+    if (onDataBindingChange != null) {
       PersonaName1 = onDataBindingChange.PersonaName;
     }
-    const stringBinding1 = require(3894) /* useObservedValue */.useStringBinding("PersonaName", instance, PersonaName, PersonaName1, playIfNeeded);
-    const obj7 = require(3894) /* useObservedValue */;
+    const stringBinding1 = require(3918) /* BaseRive */.useStringBinding("PersonaName", instance, PersonaName, PersonaName1, playIfNeeded);
+    const tmpResult3 = require(3918) /* BaseRive */;
     let prop;
-    if (null != dataBinding) {
+    if (dataBinding != null) {
       prop = dataBinding["id#"];
     }
     let prop1;
-    if (null != onDataBindingChange) {
+    if (onDataBindingChange != null) {
       prop1 = onDataBindingChange["id#"];
     }
-    const stringBinding2 = require(3894) /* useObservedValue */.useStringBinding("id#", instance, prop, prop1, playIfNeeded);
-    const obj8 = require(3894) /* useObservedValue */;
+    const stringBinding2 = require(3918) /* BaseRive */.useStringBinding("id#", instance, prop, prop1, playIfNeeded);
+    const tmpResult4 = require(3918) /* BaseRive */;
     let Outof;
-    if (null != dataBinding) {
+    if (dataBinding != null) {
       Outof = dataBinding.Outof;
     }
     let Outof1;
-    if (null != onDataBindingChange) {
+    if (onDataBindingChange != null) {
       Outof1 = onDataBindingChange.Outof;
     }
-    const stringBinding3 = require(3894) /* useObservedValue */.useStringBinding("Outof", instance, Outof, Outof1, playIfNeeded);
-    const obj9 = require(3894) /* useObservedValue */;
+    const stringBinding3 = require(3918) /* BaseRive */.useStringBinding("Outof", instance, Outof, Outof1, playIfNeeded);
+    const tmpResult5 = require(3918) /* BaseRive */;
     let FillColor;
-    if (null != dataBinding) {
+    if (dataBinding != null) {
       FillColor = dataBinding.FillColor;
     }
     let FillColor1;
-    if (null != onDataBindingChange) {
+    if (onDataBindingChange != null) {
       FillColor1 = onDataBindingChange.FillColor;
     }
-    const colorBinding = require(3894) /* useObservedValue */.useColorBinding("FillColor", instance, FillColor, FillColor1, playIfNeeded);
+    const colorBinding = require(3918) /* BaseRive */.useColorBinding("FillColor", instance, FillColor, FillColor1, playIfNeeded);
     return null;
   }
 };
@@ -1323,22 +1324,29 @@ let closure_10 = importAllResult.forwardRef(function CheckpointCardRiveInner(def
     if (null != outer1_9[str]) {
       const obj = {};
       const merged = Object.assign(arg0);
-      obj["dataBinding"] = dataBinding;
-      obj["onDataBindingChange"] = onDataBindingChange;
+      obj.dataBinding = dataBinding;
+      obj.onDataBindingChange = onDataBindingChange;
       tmp2 = outer1_6(tmp, obj);
     }
     return tmp2;
   }, items);
-  let obj = { ref, src: dataBinding(onDataBindingChange[4]), artboard: str, artboardProperties: closure_7, artboardViewModelInstances: closure_8, defaultViewModelInstance: str2, stateMachine: defaultViewModelInstance.stateMachine, renderDataBinding: callback };
+  let obj = { ref, src: null, artboard: null, artboardProperties: null, artboardViewModelInstances: null, defaultViewModelInstance: null, stateMachine: null, renderDataBinding: null };
+  obj[1] = dataBinding(onDataBindingChange[4]);
+  obj[2] = str;
+  obj[3] = closure_7;
+  obj[4] = closure_8;
+  obj[5] = str2;
+  obj[6] = defaultViewModelInstance.stateMachine;
+  obj[7] = callback;
   let merged = Object.assign(callback(defaultViewModelInstance, closure_3));
-  return jsx(str(onDataBindingChange[3]).BaseRive, { ref, src: dataBinding(onDataBindingChange[4]), artboard: str, artboardProperties: closure_7, artboardViewModelInstances: closure_8, defaultViewModelInstance: str2, stateMachine: defaultViewModelInstance.stateMachine, renderDataBinding: callback });
+  return jsx(str(onDataBindingChange[3]).BaseRive, { ref, src: null, artboard: null, artboardProperties: null, artboardViewModelInstances: null, defaultViewModelInstance: null, stateMachine: null, renderDataBinding: null });
 });
 const forwardRefResult = importAllResult.forwardRef(function CheckpointCardRiveWithBoundary(fallback, ref) {
-  let obj = { fallback: fallback.fallback };
+  let obj = { fallback: fallback.fallback, children: null };
   obj = { ref };
   const merged = Object.assign(fallback);
-  obj.children = <closure_10 ref={arg1} />;
-  return jsx(require(3945) /* _isNativeReflectConstruct */.RiveErrorBoundary, { ref });
+  obj[1] = <closure_10 ref={arg1} />;
+  return jsx(require(3969) /* getDerivedStateFromError */.RiveErrorBoundary, { ref });
 });
 const result = require("jsxProd").fileFinishedImporting("../discord_common/js/packages/design/components/Rive/native/generated/CheckpointCardRive.tsx");
 

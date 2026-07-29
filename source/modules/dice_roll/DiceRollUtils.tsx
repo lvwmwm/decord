@@ -1,25 +1,23 @@
-// Module ID: 11459
-// Function ID: 88888
-// Name: sumResults
-// Dependencies: [1212, 2]
+// Module ID: 11483
+// Function ID: 11484
+// Name: getBarText
+// Dependencies: [1236, 2]
 // Exports: getBarText
 
-// Module 11459 (sumResults)
-function sumResults(arr) {
-  return arr.reduce((arg0, arg1) => arg0 + arg1, 0);
-}
+// Module 11483 (getBarText)
 const result = require("set").fileFinishedImporting("modules/dice_roll/DiceRollUtils.tsx");
 
-export const getBarText = function getBarText(arg0, results) {
-  if (arg0) {
-    const intl2 = require(1212) /* getSystemLocale */.intl;
-    let str = intl2.string(require(1212) /* getSystemLocale */.t["x/FIRX"]);
+export const getBarText = function getBarText(flag, results) {
+  if (flag) {
+    const intl2 = require(1236) /* getSystemLocale */.intl;
+    let str = intl2.string(require(1236) /* getSystemLocale */.t["x/FIRX"]);
   } else {
     str = "";
     if (null != results) {
-      const intl = require(1212) /* getSystemLocale */.intl;
-      const obj = { total: sumResults(results) };
-      str = intl.formatToPlainString(require(1212) /* getSystemLocale */.t.xU4pF1, obj);
+      const intl = require(1236) /* getSystemLocale */.intl;
+      const obj = { total: null };
+      obj[0] = results.reduce((arg0, arg1) => arg0 + arg1, 0);
+      str = intl.formatToPlainString(require(1236) /* getSystemLocale */.t.xU4pF1, obj);
     }
   }
   return str;

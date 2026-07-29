@@ -1,10 +1,10 @@
-// Module ID: 13837
-// Function ID: 105952
+// Module ID: 13858
+// Function ID: 13859
 // Name: spendingLimitEqual
 // Dependencies: [2]
 // Exports: getCurrencySymbol, getNextRenewalDateLabel, sanitizeAmountInput, spendingLimitEqual
 
-// Module 13837 (spendingLimitEqual)
+// Module 13858 (spendingLimitEqual)
 const result = require("set").fileFinishedImporting("modules/parent_tools/SpendingLimitUtils.tsx");
 
 export const spendingLimitEqual = function spendingLimitEqual(amount, amount2) {
@@ -26,19 +26,23 @@ export const getNextRenewalDateLabel = function getNextRenewalDateLabel() {
   return dateTimeFormat.format(new Date(Date.UTC(uTCFullYear, date.getUTCMonth() + 1, 1)));
 };
 export const getCurrencySymbol = function getCurrencySymbol(formatted) {
-  const numberFormat = new Intl.NumberFormat(undefined, { style: "currency", currency: formatted.toUpperCase() });
-  const obj = { style: "currency", currency: formatted.toUpperCase() };
-  const iter = numberFormat.formatToParts(0).find((type) => "currency" === type.type);
-  let value;
-  if (null != iter) {
-    value = iter.value;
+  try {
+    const _Intl = Intl;
+    const obj = { style: "currency", currency: null };
+    obj[1] = formatted.toUpperCase();
+    formatted = undefined;
+    const numberFormat = new Intl.NumberFormat(undefined, obj);
+    const iter = numberFormat.formatToParts(0).find((type) => "currency" === type.type);
+    if (iter != null) {
+      formatted = iter.value;
+    }
+    if (formatted == null) {
+      formatted = formatted.toUpperCase();
+    }
+    return formatted;
+  } catch (err) {
+    return str.toUpperCase();
   }
-  if (null != value) {
-    formatted = value;
-  } else {
-    formatted = formatted.toUpperCase();
-  }
-  return formatted;
 };
 export const sanitizeAmountInput = function sanitizeAmountInput(str, arg1) {
   if (0 === arg1) {

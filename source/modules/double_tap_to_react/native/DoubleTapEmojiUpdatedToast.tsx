@@ -1,15 +1,15 @@
-// Module ID: 9325
-// Function ID: 72863
+// Module ID: 9349
+// Function ID: 9350
 // Name: ToastEmoji
-// Dependencies: [31, 4157, 1853, 33, 4165, 689, 477, 566, 1392, 5184, 4161, 1212, 4563, 3878, 3866, 2]
+// Dependencies: [19, 4181, 1877, 21, 4189, 712, 500, 589, 1416, 5206, 4185, 1236, 4586, 3902, 3890, 2]
 // Exports: showDoubleTapEmojiUpdatedToast
 
-// Module 9325 (ToastEmoji)
-import result from "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 9349 (ToastEmoji)
+import noop from "noop";
+import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
 import { EMOJI_URL_BASE_SIZE } from "set";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 import set from "set";
 import set from "set";
 import set from "set";
@@ -18,93 +18,91 @@ const require = arg1;
 class ToastEmoji {
   constructor(arg0) {
     emoji = global.emoji;
+    c1 = undefined;
     obj = require("initialize");
     items = [];
-    items[0] = c4;
-    stateFromStores = obj.useStateFromStores(items, () => outer1_4.useReducedMotion);
-    closure_1 = stateFromStores;
-    tmp2 = c7();
+    items[0] = maybeApplyNoTextColorForLightCustomTheme;
+    stateFromStores = obj.useStateFromStores(items, () => useReducedMotion.useReducedMotion);
+    c1 = stateFromStores;
+    tmp2 = jsx();
     items1 = [, ];
     items1[0] = emoji;
     items1[1] = stateFromStores;
-    memo = result.useMemo(() => {
+    memo = noop.useMemo(() => {
       if (null != emoji.id) {
         let obj = stateFromStores(outer1_2[8]);
-        obj = { id: emoji.id };
+        obj = { id: null, animated: null, size: null };
+        obj[0] = tmp.id;
         let animated = !stateFromStores;
-        if (animated) {
-          animated = emoji.animated;
+        if (!stateFromStores) {
+          animated = tmp.animated;
         }
-        obj.animated = animated;
-        obj.size = outer1_5;
+        obj[1] = animated;
+        obj[2] = outer1_5;
         let url = obj.getEmojiURL(obj);
       } else {
-        url = emoji.url;
+        url = tmp.url;
       }
       return url;
     }, items1);
     tmp4 = jsx;
-    obj = { style: tmp2.toastEmoji, fastImageStyle: tmp2.toastEmojiCustom, textEmojiStyle: tmp2.toastEmojiText };
+    obj = { style: tmp2.toastEmoji, fastImageStyle: tmp2.toastEmojiCustom, textEmojiStyle: tmp2.toastEmojiText, name: null, src: null };
     str = "";
     tmp5 = require("Emoji");
     if (null == emoji.id) {
       str = emoji.surrogates;
     }
-    obj.name = str;
-    obj.src = memo;
+    obj[3] = str;
+    obj[4] = memo;
     return tmp4(tmp5, obj);
   }
 }
 function ToastText(emoji) {
-  let obj = { variant: "text-sm/normal", style: _createForOfIteratorHelperLoose().toastText };
-  const intl = require(1212) /* getSystemLocale */.intl;
+  let obj = { variant: "text-sm/normal", style: createCacheKey().toastText, children: null };
+  const intl = require(1236) /* getSystemLocale */.intl;
   obj = { emojiName: emoji.emoji.name };
-  obj.children = intl.format(require(1212) /* getSystemLocale */.t.nKY0Fl, obj);
-  return jsx(require(4161) /* Text */.Text, { emojiName: emoji.emoji.name });
+  obj[2] = intl.format(require(1236) /* getSystemLocale */.t.nKY0Fl, obj);
+  return jsx(require(4185) /* Text */.Text, { emojiName: emoji.emoji.name });
 }
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { marginLeft: require("_createForOfIteratorHelperLoose").space.PX_8, marginVertical: require("_createForOfIteratorHelperLoose").space.PX_8 };
-_createForOfIteratorHelperLoose.toastEmoji = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.toastEmojiCustom = { width: 24, height: 24 };
-const obj1 = {};
+createCacheKey = { toastEmoji: null, toastEmojiCustom: null, toastEmojiText: null, toastText: null };
+createCacheKey = { marginLeft: require("Themes").space.PX_8, marginVertical: require("Themes").space.PX_8 };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { width: 24, height: 24 };
 let num = 16;
 if (set.isIOS()) {
   num = 24;
 }
-obj1.fontSize = num;
+const obj1 = { fontSize: num, lineHeight: null, textAlign: "center", color: null };
 let num2;
 if (set.isIOS()) {
   num2 = 32;
 }
-obj1.lineHeight = num2;
-obj1.textAlign = "center";
-obj1.color = require("_createForOfIteratorHelperLoose").colors.INTERACTIVE_TEXT_DEFAULT;
-_createForOfIteratorHelperLoose.toastEmojiText = obj1;
-_createForOfIteratorHelperLoose.toastText = { marginRight: require("_createForOfIteratorHelperLoose").space.PX_12, marginVertical: require("_createForOfIteratorHelperLoose").space.PX_8 };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+obj1[1] = num2;
+obj1[3] = require("Themes").colors.INTERACTIVE_TEXT_DEFAULT;
+createCacheKey[2] = obj1;
+createCacheKey[3] = { marginRight: require("Themes").space.PX_12, marginVertical: require("Themes").space.PX_8 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
 const result = set.fileFinishedImporting("modules/double_tap_to_react/native/DoubleTapEmojiUpdatedToast.tsx");
 
 export { ToastEmoji };
 export const showDoubleTapEmojiUpdatedToast = function showDoubleTapEmojiUpdatedToast(emoji) {
   emoji = emoji.emoji;
-  let obj = emoji(4563);
+  let obj = emoji(4586);
   if (obj.getIsScreenReaderEnabled()) {
-    const AccessibilityAnnouncer = emoji(3878).AccessibilityAnnouncer;
-    const intl = emoji(1212).intl;
-    obj = { emojiName: emoji.name };
-    AccessibilityAnnouncer.announce(intl.formatToPlainString(emoji(1212).t.nKY0Fl, obj));
+    const AccessibilityAnnouncer = tmp(3902).AccessibilityAnnouncer;
+    const intl = tmp(1236).intl;
+    obj = { emojiName: null };
+    obj[0] = emoji.name;
+    AccessibilityAnnouncer.announce(intl.formatToPlainString(tmp(1236).t.nKY0Fl, obj));
   } else {
-    obj = {
-      key: "DEFAULT_REACTION_EMOJI_UPDATED",
-      icon() {
-          return outer1_6(outer1_8, { emoji });
-        },
-      content() {
-          return outer1_6(outer1_9, { emoji });
-        },
-      toastDurationMs: 3000
+    obj = { key: "DEFAULT_REACTION_EMOJI_UPDATED", icon: null, content: null, toastDurationMs: 3000 };
+    obj[1] = function icon() {
+      return outer1_6(outer1_8, { emoji });
     };
-    importDefault(3866).open(obj);
-    const obj2 = importDefault(3866);
+    obj[2] = function content() {
+      return outer1_6(outer1_9, { emoji });
+    };
+    importDefault(3890).open(obj);
+    const obj2 = importDefault(3890);
   }
 };

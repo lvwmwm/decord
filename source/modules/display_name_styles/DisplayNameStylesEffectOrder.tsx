@@ -1,11 +1,11 @@
-// Module ID: 14332
-// Function ID: 109908
+// Module ID: 14354
+// Function ID: 14355
 // Name: items
-// Dependencies: [31, 1862, 8358, 2]
+// Dependencies: [19, 1886, 8382, 2]
 // Exports: useVisibleEffectOrder
 
-// Module 14332 (items)
-import result from "result";
+// Module 14354 (items)
+import noop from "noop";
 import items3 from "items3";
 
 const require = arg1;
@@ -14,7 +14,7 @@ let items = [...tmp2.FLYWHEEL_EFFECTS];
 const result = require("apexExperiment").fileFinishedImporting("modules/display_name_styles/DisplayNameStylesEffectOrder.tsx");
 
 export const useVisibleEffectOrder = function useVisibleEffectOrder() {
-  isDisplayNameStylesFlywheelSettersEnabled = isDisplayNameStylesFlywheelSettersEnabled(8358).useIsDisplayNameStylesFlywheelSettersEnabled("effect-order");
+  isDisplayNameStylesFlywheelSettersEnabled = isDisplayNameStylesFlywheelSettersEnabled(8382).useIsDisplayNameStylesFlywheelSettersEnabled("effect-order");
   const items = [isDisplayNameStylesFlywheelSettersEnabled];
   return React.useMemo(() => isDisplayNameStylesFlywheelSettersEnabled ? outer1_4 : outer1_3, items);
 };

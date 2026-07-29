@@ -1,27 +1,27 @@
-// Module ID: 16590
-// Function ID: 129107
+// Module ID: 16625
+// Function ID: 16626
 // Name: GuildRoleSubscriptionTierTemplateBasicInfo
-// Dependencies: [31, 27, 1852, 482, 33, 4165, 689, 5119, 1273, 4161, 1212, 5651, 14226, 4579, 2]
+// Dependencies: [19, 17, 1876, 505, 21, 4189, 712, 5141, 1297, 4185, 1236, 5669, 14248, 4601, 2]
 // Exports: GuildRoleSubscriptionTierTemplateBasicInfo
 
-// Module 16590 (GuildRoleSubscriptionTierTemplateBasicInfo)
-import "result";
+// Module 16625 (GuildRoleSubscriptionTierTemplateBasicInfo)
+import "noop";
 import { View } from "get ActivityIndicator";
 import { SubscriptionIntervalTypes } from "GuildFeatures";
 import { CurrencyCodes } from "sum";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
 let closure_6;
-let closure_7;
+let error;
 const require = arg1;
-({ jsx: closure_6, jsxs: closure_7 } = jsxProd);
-_createForOfIteratorHelperLoose = { container: { paddingBottom: 24 }, header: { flexDirection: "row" } };
-_createForOfIteratorHelperLoose = { width: 48, height: 48, borderRadius: require("_createForOfIteratorHelperLoose").radii.sm };
-_createForOfIteratorHelperLoose.image = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.templateCTAButton = { borderRadius: require("_createForOfIteratorHelperLoose").radii.sm };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-let obj1 = { borderRadius: require("_createForOfIteratorHelperLoose").radii.sm };
+({ jsx: closure_6, jsxs: error } = jsxProd);
+createCacheKey = { container: { paddingBottom: 24 }, header: { flexDirection: "row" }, image: null, templateCTAButton: null };
+createCacheKey = { width: 48, height: 48, borderRadius: require("Themes").radii.sm };
+createCacheKey[2] = createCacheKey;
+createCacheKey[3] = { borderRadius: require("Themes").radii.sm };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let obj1 = { borderRadius: require("Themes").radii.sm };
 const result = require("GuildFeatures").fileFinishedImporting("modules/guild_role_subscriptions/native/guild_settings/tier_templates/GuildRoleSubscriptionTierTemplateBasicInfo.tsx");
 
 export const GuildRoleSubscriptionTierTemplateBasicInfo = function GuildRoleSubscriptionTierTemplateBasicInfo(template) {
@@ -37,40 +37,38 @@ export const GuildRoleSubscriptionTierTemplateBasicInfo = function GuildRoleSubs
   template = template.template;
   ({ handleSelectTemplateInPreview: importDefault, closeActionSheet: dependencyMap, descriptionTextProps } = template);
   ({ subscriptionPlanTextStyle, descriptionTextStyle } = template);
-  const tmp = _createForOfIteratorHelperLoose();
-  let obj = { style: tmp.container };
-  obj = { style: tmp.header };
+  const tmp = createCacheKey();
+  let obj = { style: tmp.container, children: null };
+  obj = { style: tmp.header, children: null };
   ({ image, name, price_tier, description } = template.listings[0]);
   obj = { source: { uri: image }, style: tmp.image };
-  const items = [callback(importDefault(5119), obj), callback(template(1273).Spacer, { size: 16 }), ];
-  const obj1 = { style: { flexShrink: 1 } };
-  const obj2 = { variant: "heading-md/semibold", color: "mobile-text-heading-primary", style: { flexWrap: "wrap" }, children: name };
-  const items1 = [callback(template(4161).Text, obj2), callback(template(1273).Spacer, { size: 4 }), ];
-  const obj3 = { variant: "heading-md/medium", style: subscriptionPlanTextStyle };
-  const intl = template(1212).intl;
-  const obj4 = {};
-  let obj7 = template(5651);
-  obj4.price = obj7.formatPrice(price_tier, CurrencyCodes.USD);
-  obj4.interval = template(14226).formatPlanInterval({ interval: SubscriptionIntervalTypes.MONTH, interval_count: 1 });
-  obj3.children = intl.format(template(1212).t.CgmBaG, obj4);
-  items1[2] = callback(template(4161).Text, obj3);
-  obj1.children = items1;
+  const items = [callback(importDefault(5141), obj), callback(template(1297).Spacer, { size: 16 }), ];
+  const obj1 = { style: { flexShrink: 1 }, children: null };
+  const items1 = [callback(template(4185).Text, { variant: "heading-md/semibold", color: "mobile-text-heading-primary", style: { flexWrap: "wrap" }, children: name }), callback(template(1297).Spacer, { size: 4 }), ];
+  const obj2 = { variant: "heading-md/medium", style: subscriptionPlanTextStyle, children: null };
+  const intl = template(1236).intl;
+  const obj3 = { price: null, interval: null };
+  let obj6 = template(5669);
+  obj3[0] = obj6.formatPrice(price_tier, CurrencyCodes.USD);
+  obj3[1] = template(14248).formatPlanInterval({ interval: SubscriptionIntervalTypes.MONTH, interval_count: 1 });
+  obj2[2] = intl.format(template(1236).t.CgmBaG, obj3);
+  items1[2] = callback(template(4185).Text, obj2);
+  obj1[1] = items1;
   items[2] = callback2(View, obj1);
-  obj.children = items;
+  obj[1] = items;
   const items2 = [callback2(View, obj), , ];
-  const obj6 = { variant: "text-sm/normal", style: descriptionTextStyle };
+  const obj5 = { variant: "text-sm/normal", style: descriptionTextStyle };
   const merged = Object.assign(descriptionTextProps);
-  obj6["children"] = description;
-  items2[1] = callback(template(4161).Text, obj6);
-  obj7 = {};
-  const intl2 = template(1212).intl;
-  obj7.text = intl2.string(template(1212).t["1W7mCt"]);
-  obj7.pillStyle = tmp.templateCTAButton;
-  obj7.onPress = function onPress() {
+  obj5.children = description;
+  items2[1] = callback(template(4185).Text, obj5);
+  obj6 = { text: null, pillStyle: null, onPress: null, grow: true };
+  const intl2 = template(1236).intl;
+  obj6[0] = intl2.string(template(1236).t["1W7mCt"]);
+  obj6[1] = tmp.templateCTAButton;
+  obj6[2] = function onPress() {
     return callback(template, closure_2);
   };
-  obj7.grow = true;
-  items2[2] = callback(template(4579).BaseTextButton, obj7);
-  obj.children = items2;
+  items2[2] = callback(template(4601).BaseTextButton, obj6);
+  obj[1] = items2;
   return callback2(View, obj);
 };

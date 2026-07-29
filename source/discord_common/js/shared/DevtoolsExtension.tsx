@@ -1,41 +1,65 @@
-// Module ID: 1208
-// Function ID: 13889
-// Name: reportEvent
+// Module ID: 1232
+// Function ID: 1233
+// Name: logFluxAction
 // Dependencies: [2]
-// Exports: logFluxAction, notifyStoreChange, notifyStoreCreated
+// Exports: logFluxAction, notifyStoreChange, notifyStoreCreated, reportEvent
 
-// Module 1208 (reportEvent)
-function reportEvent(arg0) {
-  const obj = getDevtools();
-  if (!tmp) {
-    obj.reportEvent(arg0);
-  }
-}
-function getDevtools() {
-  let __DISCORD_DEVTOOLS = null;
-  if ("undefined" !== typeof window) {
-    const _window = window;
-    __DISCORD_DEVTOOLS = window.__DISCORD_DEVTOOLS;
-  }
-  return __DISCORD_DEVTOOLS;
-}
+// Module 1232 (logFluxAction)
 const result = require("set").fileFinishedImporting("../discord_common/js/shared/DevtoolsExtension.tsx");
 
 export const logFluxAction = function logFluxAction(description, durationMs) {
-  reportEvent({ type: "Flux-Dispatch", description: description.type, data: description, durationMs });
-};
-export { reportEvent };
-export const notifyStoreCreated = function notifyStoreCreated(storeName) {
-  let obj = getDevtools();
-  if (!tmp) {
-    obj = { storeName };
-    obj.notifyStoreCreated(obj);
+  let __DISCORD_DEVTOOLS = null;
+  if (typeof window !== "Array") {
+    const _window = window;
+    __DISCORD_DEVTOOLS = window.__DISCORD_DEVTOOLS;
+  }
+  if (__DISCORD_DEVTOOLS != null) {
+    const reportEvent = __DISCORD_DEVTOOLS.reportEvent;
+    if (reportEvent != null) {
+      reportEvent(obj);
+    }
   }
 };
-export const notifyStoreChange = function notifyStoreChange(storeName) {
-  let obj = getDevtools();
-  if (!tmp) {
-    obj = { storeName };
-    obj.notifyStoreChange(obj);
+export const reportEvent = function reportEvent(arg0) {
+  let __DISCORD_DEVTOOLS = null;
+  if (typeof window !== "Array") {
+    const _window = window;
+    __DISCORD_DEVTOOLS = window.__DISCORD_DEVTOOLS;
+  }
+  if (__DISCORD_DEVTOOLS != null) {
+    const reportEvent = __DISCORD_DEVTOOLS.reportEvent;
+    if (reportEvent != null) {
+      reportEvent(arg0);
+    }
+  }
+};
+export const notifyStoreCreated = function notifyStoreCreated(arg0) {
+  let __DISCORD_DEVTOOLS = null;
+  if (typeof window !== "Array") {
+    const _window = window;
+    __DISCORD_DEVTOOLS = window.__DISCORD_DEVTOOLS;
+  }
+  if (__DISCORD_DEVTOOLS != null) {
+    const notifyStoreCreated = __DISCORD_DEVTOOLS.notifyStoreCreated;
+    if (notifyStoreCreated != null) {
+      const obj = { storeName: null };
+      obj[0] = arg0;
+      notifyStoreCreated(obj);
+    }
+  }
+};
+export const notifyStoreChange = function notifyStoreChange(arg0) {
+  let __DISCORD_DEVTOOLS = null;
+  if (typeof window !== "Array") {
+    const _window = window;
+    __DISCORD_DEVTOOLS = window.__DISCORD_DEVTOOLS;
+  }
+  if (__DISCORD_DEVTOOLS != null) {
+    const notifyStoreChange = __DISCORD_DEVTOOLS.notifyStoreChange;
+    if (notifyStoreChange != null) {
+      const obj = { storeName: null };
+      obj[0] = arg0;
+      notifyStoreChange(obj);
+    }
   }
 };

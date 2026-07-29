@@ -1,14 +1,14 @@
-// Module ID: 10349
-// Function ID: 79838
+// Module ID: 10370
+// Function ID: 10371
 // Name: showThreadNotificationsBottomSheet
-// Dependencies: [4133, 10350, 1935, 2]
+// Dependencies: [4157, 10371, 1959, 2]
 // Exports: showThreadNotificationsBottomSheet
 
-// Module 10349 (showThreadNotificationsBottomSheet)
-const result = require("maybeLoadBundle").fileFinishedImporting("modules/threads/native/threadActionSheets.tsx");
+// Module 10370 (showThreadNotificationsBottomSheet)
+const result = require("asyncRequireImpl").fileFinishedImporting("modules/threads/native/threadActionSheets.tsx");
 
 export const showThreadNotificationsBottomSheet = function showThreadNotificationsBottomSheet(channel) {
-  let obj = importDefault(4133);
+  let obj = importDefault(4157);
   obj = { channel };
-  obj.openLazy(require(1935) /* maybeLoadBundle */(10350, dependencyMap.paths), "ThreadNotificationsBottomSheet", obj);
+  obj.openLazy(require(1959) /* asyncRequireImpl */(10371, dependencyMap.paths), "ThreadNotificationsBottomSheet", obj);
 };

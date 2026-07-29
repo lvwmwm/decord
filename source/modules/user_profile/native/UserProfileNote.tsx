@@ -1,81 +1,76 @@
-// Module ID: 12020
-// Function ID: 92743
+// Module ID: 12044
+// Function ID: 12045
 // Name: UserProfileNote
-// Dependencies: [31, 33, 4165, 8083, 12021, 9257, 12023, 4695, 1212, 4133, 12025, 5544, 4161, 2]
+// Dependencies: [19, 21, 4189, 8107, 12045, 9281, 12047, 4717, 1236, 4157, 12049, 5562, 4185, 2]
 // Exports: default
 
-// Module 12020 (UserProfileNote)
-import "result";
+// Module 12044 (UserProfileNote)
+import "noop";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
 const require = arg1;
-let closure_4 = _createForOfIteratorHelperLoose.createStyles({ title: { justifyContent: "space-between" } });
-const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/user_profile/native/UserProfileNote.tsx");
+let closure_4 = createCacheKey.createStyles({ title: { justifyContent: "space-between" } });
+const result = require("createCacheKey").fileFinishedImporting("modules/user_profile/native/UserProfileNote.tsx");
 
 export default function UserProfileNote(style) {
   const userId = style.userId;
   const onBack = style.onBack;
+  let trackUserProfileAction;
   let obj = userId(trackUserProfileAction[3]);
   trackUserProfileAction = obj.useUserProfileAnalyticsContext().trackUserProfileAction;
   const note = onBack(trackUserProfileAction[4])(userId).note;
-  let tmp2 = null != note;
-  if (tmp2) {
-    tmp2 = "" !== note;
+  let tmp6Result = null != note;
+  if (tmp6Result) {
+    tmp6Result = "" !== note;
   }
-  if (tmp2) {
-    let PaperPlusIcon = tmp3(tmp4[5]).PaperIcon;
+  if (tmp6Result) {
+    let PaperPlusIcon = tmp2(tmp3[5]).PaperIcon;
   } else {
-    PaperPlusIcon = tmp3(tmp4[6]).PaperPlusIcon;
+    PaperPlusIcon = tmp2(tmp3[6]).PaperPlusIcon;
   }
-  obj = { accessibilityRole: "button" };
-  const intl = userId(trackUserProfileAction[8]).intl;
+  const intl = tmp2(tmp3[8]).intl;
   const string = intl.string;
-  const t = userId(trackUserProfileAction[8]).t;
-  if (tmp2) {
+  const t = tmp2(tmp3[8]).t;
+  if (tmp6Result) {
     let stringResult = string(t["gs+qcM"]);
   } else {
     stringResult = string(t["1ZZtts"]);
   }
-  obj.accessibilityHint = stringResult;
-  let tmp7;
-  if (null != note) {
-    tmp7 = note;
-  }
-  obj.accessibilityLabel = tmp7;
-  obj.onPress = function onPress() {
+  obj = { accessibilityRole: "button", accessibilityHint: stringResult, accessibilityLabel: null, onPress: null, activeOpacity: 0.8, children: null };
+  obj[2] = note;
+  obj[3] = function onPress() {
     let obj = onBack(trackUserProfileAction[9]);
     obj.hideActionSheet();
     obj = {
       userId,
       onBack,
       onSave() {
-        return outer1_2({ action: "SET_NOTE" });
+        return callback({ action: "SET_NOTE" });
       }
     };
     onBack(trackUserProfileAction[10])(obj);
   };
-  obj.activeOpacity = 0.8;
-  obj = { style: style.style };
+  obj = { style: style.style, title: null, titleStyle: null, titleIcon: null, children: null };
   const tmp = callback();
-  const tmp5 = jsx;
-  const tmp8 = jsx;
-  const intl2 = userId(trackUserProfileAction[8]).intl;
-  obj.title = intl2.string(userId(trackUserProfileAction[8]).t["mQKv+v"]);
+  const tmp4 = onBack;
+  const tmp8 = note;
+  const intl2 = tmp2(tmp3[8]).intl;
+  obj[1] = intl2.string(userId(trackUserProfileAction[8]).t["mQKv+v"]);
   const items = [tmp.title, ];
-  let tmp10 = !tmp2;
-  if (!tmp2) {
-    const obj1 = { marginBottom: 0 };
-    tmp10 = obj1;
+  let obj1 = !tmp6Result;
+  if (!tmp6Result) {
+    obj1 = { marginBottom: 0 };
   }
-  items[1] = tmp10;
-  obj.titleStyle = items;
-  obj.titleIcon = <PaperPlusIcon size="xs" color="interactive-text-default" />;
-  if (tmp2) {
-    const obj2 = { variant: "text-md/normal", color: "text-default", children: note };
-    tmp2 = jsx(userId(trackUserProfileAction[12]).Text, { variant: "text-md/normal", color: "text-default", children: note });
+  items[1] = obj1;
+  obj[2] = items;
+  obj[3] = <PaperPlusIcon size="xs" color="interactive-text-default" />;
+  if (tmp6Result) {
+    const obj2 = { variant: "text-md/normal", color: "text-default", children: null };
+    obj2[2] = note;
+    tmp6Result = tmp6(tmp2(tmp3[12]).Text, obj2);
   }
-  obj.children = tmp2;
-  obj.children = tmp8(onBack(trackUserProfileAction[11]), obj);
-  return tmp5(userId(trackUserProfileAction[7]).PressableOpacity, obj);
+  obj[4] = tmp6Result;
+  obj[5] = jsx(onBack(trackUserProfileAction[11]), { style: style.style, title: null, titleStyle: null, titleIcon: null, children: null });
+  return jsx(userId(trackUserProfileAction[7]).PressableOpacity, { style: style.style, title: null, titleStyle: null, titleIcon: null, children: null });
 };

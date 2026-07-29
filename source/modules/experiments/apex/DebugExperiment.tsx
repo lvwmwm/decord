@@ -1,14 +1,15 @@
-// Module ID: 12722
-// Function ID: 98597
+// Module ID: 12744
+// Function ID: 12745
 // Name: apexExperiment
-// Dependencies: [1428, 2]
+// Dependencies: [1452, 2]
 // Exports: useDebugExperiment
 
-// Module 12722 (apexExperiment)
+// Module 12744 (apexExperiment)
 import ApexExperiment from "ApexExperiment";
 
-const obj = { name: "2026-03-debug-experiment", kind: "user", defaultConfig: {}, variations: { [1]: {}, [2]: {} } };
-const apexExperiment = ApexExperiment.createApexExperiment(obj);
+const obj = { 1: null, 2: {} };
+obj[2] = {};
+const apexExperiment = ApexExperiment.createApexExperiment({ name: "2026-03-debug-experiment", kind: "user", defaultConfig: {}, variations: obj });
 const result = require("set").fileFinishedImporting("modules/experiments/apex/DebugExperiment.tsx");
 
 export default apexExperiment;

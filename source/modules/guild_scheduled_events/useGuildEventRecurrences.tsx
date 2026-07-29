@@ -1,109 +1,108 @@
-// Module ID: 8307
-// Function ID: 66519
+// Module ID: 8331
+// Function ID: 8332
 // Name: useGuildEventRecurrences
-// Dependencies: [57, 31, 5761, 566, 8308, 8186, 22, 21, 664, 8197, 2]
+// Dependencies: [32, 19, 5779, 589, 8332, 8210, 12, 11, 687, 8221, 2]
 // Exports: default
 
-// Module 8307 (useGuildEventRecurrences)
+// Module 8331 (useGuildEventRecurrences)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import noop from "noop";
+import scheduledEventSort from "scheduledEventSort";
 
 const require = arg1;
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/guild_scheduled_events/useGuildEventRecurrences.tsx");
+const result = require("scheduledEventSort").fileFinishedImporting("modules/guild_scheduled_events/useGuildEventRecurrences.tsx");
 
-export default function useGuildEventRecurrences(arg0, arg1, closure_2) {
+export default function useGuildEventRecurrences(arg0, arg1, byWeekday) {
   const _require = arg0;
   const importDefault = arg1;
-  const dependencyMap = closure_2;
-  let obj = _require(566);
+  const dependencyMap = byWeekday;
+  let obj = _require(589);
   let items = [first];
   const stateFromStores = obj.useStateFromStores(items, () => first.getGuildScheduledEvent(closure_0));
-  const tmp2 = importDefault(8308)(closure_2);
-  const React = tmp2;
-  if (null != closure_2) {
+  const tmp4 = importDefault(8332)(byWeekday);
+  let noop = tmp4;
+  if (null != byWeekday) {
     if (null != stateFromStores) {
-      let obj2 = _require(8186);
+      let tmpResult = tmp(8210);
+      tmpResult = tmp(8210);
       let _Date = Date;
-      let rRule = _require(8186).getRRule(closure_2);
+      let rRule = tmpResult.getRRule(byWeekday);
       let date = new Date(stateFromStores.scheduled_start_time);
-      const nextRecurrences = obj2.generateNextRecurrences(4, rRule, date);
-      let obj3 = _require(8186);
+      const nextRecurrences = tmpResult.generateNextRecurrences(4, rRule, date);
     }
-    const tmp15 = stateFromStores(tmp4([]), 2);
-    first = tmp15[0];
-    let closure_6 = tmp15[1];
-    const items1 = [closure_2, first.length, stateFromStores, tmp2];
-    const effect = React.useEffect(() => {
-      if (null != result) {
-        if (null != dependencyMap) {
+    const tmp14 = stateFromStores(tmp5([]), 2);
+    first = tmp14[0];
+    let closure_6 = tmp14[1];
+    const items1 = [byWeekday, first.length, stateFromStores, tmp4];
+    const effect = obj2.useEffect(() => {
+      if (null != noop) {
+        if (null != byWeekday) {
           if (null != stateFromStores) {
-            if (!obj3.isEqual(result, dependencyMap)) {
-              const rRule = callback(8186).getRRule(dependencyMap);
-              const obj = callback(8186);
+            if (!obj3.isEqual(tmp, tmp12)) {
+              const rRule = callback(tmp15[5]).getRRule(tmp12);
+              const obj = callback(tmp15[5]);
               const _Date = Date;
-              const date = new Date(stateFromStores.scheduled_start_time);
-              callback3(callback(8186).generateNextRecurrences(first.length, rRule, date));
-              const obj2 = callback(8186);
+              const date = new Date(tmp13.scheduled_start_time);
+              callback3(callback(tmp15[5]).generateNextRecurrences(first.length, rRule, date));
+              const obj2 = callback(tmp15[5]);
             }
-            obj3 = callback2(22);
+            obj3 = callback2(byWeekday[6]);
           }
         }
       }
     }, items1);
     const items2 = [arg0, arg1, first];
-    const effect1 = React.useEffect(() => {
+    const effect1 = obj2.useEffect(() => {
       if (null != callback2) {
         const mapped = first.map((getTime) => {
           const time = getTime.getTime();
-          const rounded = Math.floor(time / callback(664).Millis.SECOND);
-          return callback(21).fromTimestamp(rounded * callback(664).Millis.SECOND);
+          const rounded = Math.floor(time / callback(687).Millis.SECOND);
+          return callback(11).fromTimestamp(rounded * callback(687).Millis.SECOND);
         });
-        const guildEventUserCounts = callback2(8197).getGuildEventUserCounts(callback2, closure_0, mapped);
-        const obj = callback2(8197);
+        const guildEventUserCounts = callback2(byWeekday[9]).getGuildEventUserCounts(tmp, closure_0, mapped);
+        const obj = callback2(byWeekday[9]);
       }
     }, items2);
-    const items3 = [closure_2, first, ];
+    const items3 = [byWeekday, first, ];
     let scheduled_start_time;
-    if (null != stateFromStores) {
+    if (stateFromStores != null) {
       scheduled_start_time = stateFromStores.scheduled_start_time;
     }
     items3[2] = scheduled_start_time;
-    obj = {
-      recurrenceStartTimes: first,
-      canViewMoreRecurrences: React.useMemo(() => {
-          if (null != dependencyMap) {
-            if (0 !== first.length) {
-              let scheduled_start_time;
-              if (null != stateFromStores) {
-                scheduled_start_time = stateFromStores.scheduled_start_time;
-              }
-              if (null != scheduled_start_time) {
-                const _Date = Date;
-                const date = new Date();
-                const fullYear = date.getFullYear();
-                date.setFullYear(fullYear + callback(8186).MAX_YEARS_AHEAD_RECURRING_EVENT);
-                const rRule = callback(8186).getRRule(dependencyMap);
-                const afterResult = rRule.after(first[first.length - 1]);
-                return null != afterResult && afterResult <= date;
-              }
-            }
+    obj = { recurrenceStartTimes: null, canViewMoreRecurrences: null, updateRecurrenceStartTimes: null };
+    obj[0] = first;
+    obj[1] = obj2.useMemo(() => {
+      if (null != byWeekday) {
+        if (0 !== first.length) {
+          let scheduled_start_time;
+          if (stateFromStores != null) {
+            scheduled_start_time = stateFromStores.scheduled_start_time;
           }
-          return false;
-        }, items3),
-      updateRecurrenceStartTimes() {
-          if (null != dependencyMap) {
-            if (null != stateFromStores) {
-              const rRule = callback(8186).getRRule(dependencyMap);
-              const items = [];
-              let arraySpreadResult = HermesBuiltin.arraySpread(first, 0);
-              const obj2 = callback(8186);
-              arraySpreadResult = HermesBuiltin.arraySpread(obj2.generateNextRecurrences(4, rRule, tmp7, true), arraySpreadResult);
-              callback3(items);
-              const obj = callback(8186);
-            }
+          if (null != scheduled_start_time) {
+            const _Date = Date;
+            const date = new Date();
+            const fullYear = date.getFullYear();
+            date.setFullYear(fullYear + callback(byWeekday[5]).MAX_YEARS_AHEAD_RECURRING_EVENT);
+            const rRule = callback(byWeekday[5]).getRRule(tmp);
+            const afterResult = rRule.after(arr[arr.length - 1]);
+            return null != afterResult && afterResult <= date;
           }
         }
+      }
+      return false;
+    }, items3);
+    obj[2] = function updateRecurrenceStartTimes() {
+      if (null != byWeekday) {
+        if (null != stateFromStores) {
+          const rRule = callback(byWeekday[5]).getRRule(tmp);
+          const items = [];
+          let arraySpreadResult = HermesBuiltin.arraySpread(first, 0);
+          const obj2 = callback(byWeekday[5]);
+          arraySpreadResult = HermesBuiltin.arraySpread(obj2.generateNextRecurrences(4, rRule, tmp7, true), arraySpreadResult);
+          callback3(items);
+          const obj = callback(byWeekday[5]);
+        }
+      }
     };
     return obj;
   }

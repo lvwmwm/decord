@@ -1,17 +1,17 @@
-// Module ID: 7932
-// Function ID: 63029
+// Module ID: 7957
+// Function ID: 7958
 // Name: useFetchPurchases
-// Dependencies: [57, 31, 4079, 5796, 624, 5779, 7933, 2]
+// Dependencies: [32, 19, 4103, 5814, 647, 5797, 7958, 2]
 // Exports: useGetOrFetchCollectiblesCategoriesAndPurchases, useGetOrFetchPurchase, useGetOrFetchPurchases
 
-// Module 7932 (useFetchPurchases)
+// Module 7957 (useFetchPurchases)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_7 from "_isNativeReflectConstruct";
+import noop from "noop";
+import getHash from "getHash";
+import map from "map";
 
-let closure_4;
-let closure_5;
+let c4;
+let c5;
 const require = arg1;
 function useFetchPurchases(flag) {
   if (flag === undefined) {
@@ -22,39 +22,40 @@ function useFetchPurchases(flag) {
   let fetchPurchasesError;
   let hasPreviouslyFetched;
   let callback;
-  let _isNativeReflectConstruct;
-  let closure_7;
-  let items = [_isNativeReflectConstruct];
+  let getHash;
+  let map;
+  let items = [getHash];
   stateFromStores = flag(isFetching[4]).useStateFromStores(items, () => ref2.hasLoadedExperiments);
   let obj = flag(isFetching[4]);
-  const items1 = [closure_7];
+  const items1 = [map];
   const isClaiming = fetchPurchasesError(flag(isFetching[4]).useStateFromStoresArray(items1, () => {
-    const items = [closure_7.isFetching, closure_7.isClaiming, closure_7.fetchError, closure_7.claimError, closure_7.purchases, closure_7.hasPreviouslyFetched];
+    const items = [, , , , , ];
+    ({ isFetching: arr[0], isClaiming: arr[1], fetchError: arr[2], claimError: arr[3], purchases: arr[4], hasPreviouslyFetched: arr[5] } = map);
     return items;
   }), 6);
   isFetching = isClaiming[0];
   fetchPurchasesError = isClaiming[2];
   hasPreviouslyFetched = isClaiming[5];
-  callback = callback(closure_7.hasPreviouslyFetched);
+  callback = callback(map.hasPreviouslyFetched);
   const items2 = [hasPreviouslyFetched];
   hasPreviouslyFetched(() => {
     closure_5.current = hasPreviouslyFetched;
   }, items2);
-  _isNativeReflectConstruct = callback(closure_7.fetchError);
+  getHash = callback(map.fetchError);
   const items3 = [fetchPurchasesError];
   hasPreviouslyFetched(() => {
-    _isNativeReflectConstruct.current = fetchPurchasesError;
+    getHash.current = fetchPurchasesError;
   }, items3);
-  closure_7 = callback(closure_7.isFetching);
+  map = callback(map.isFetching);
   const items4 = [isFetching];
   hasPreviouslyFetched(() => {
-    closure_7.current = isFetching;
+    map.current = isFetching;
   }, items4);
   const items5 = [flag, stateFromStores];
   hasPreviouslyFetched(() => {
     let current = !stateFromStores;
-    if (!current) {
-      current = closure_7.current;
+    if (stateFromStores) {
+      current = ref3.current;
     }
     if (!current) {
       let current2 = true === flag;
@@ -81,55 +82,44 @@ function useFetchCollectiblesCategoriesAndPurchases(paymentGateway) {
   let isClaiming;
   let refreshCategories;
   paymentGateway = undefined;
-  if (null != paymentGateway) {
+  if (paymentGateway != null) {
     paymentGateway = paymentGateway.paymentGateway;
   }
-  let obj = { paymentGateway };
+  let obj = { paymentGateway, noOp: null, logPerf: null, countryCode: null };
   let noOp;
-  if (null != paymentGateway) {
+  if (paymentGateway != null) {
     noOp = paymentGateway.noOp;
   }
-  obj.noOp = noOp;
+  obj[1] = noOp;
   let logPerf;
-  if (null != paymentGateway) {
+  if (paymentGateway != null) {
     logPerf = paymentGateway.logPerf;
   }
-  obj.logPerf = logPerf;
+  obj[2] = logPerf;
   let countryCode;
-  if (null != paymentGateway) {
+  if (paymentGateway != null) {
     countryCode = paymentGateway.countryCode;
   }
-  obj.countryCode = countryCode;
-  const tmp2Result = importDefault(7933)(obj, arg1);
+  obj[3] = countryCode;
+  const tmp2Result = importDefault(7958)(obj, arg1);
   const isFetching = tmp2Result.isFetching;
   let stalePurchasesOK;
   ({ categories, fetchCategoriesError, refreshCategories } = tmp2Result);
-  if (null != paymentGateway) {
+  if (paymentGateway != null) {
     stalePurchasesOK = paymentGateway.stalePurchasesOK;
   }
   const tmp7Result = useFetchPurchases(stalePurchasesOK);
   const isFetching2 = tmp7Result.isFetching;
-  obj = {};
   let tmp10 = isFetching;
   ({ isClaiming, fetchPurchasesError, claimError } = tmp7Result);
   if (!isFetching) {
     tmp10 = isFetching2;
   }
-  obj.isFetching = tmp10;
-  obj.isFetchingCategories = isFetching;
-  obj.isFetchingPurchases = isFetching2;
-  obj.isClaiming = isClaiming;
-  obj.categories = categories;
-  obj.purchases = tmp7Result.purchases;
-  obj.fetchCategoriesError = fetchCategoriesError;
-  obj.fetchPurchasesError = fetchPurchasesError;
-  obj.claimError = claimError;
-  obj.refreshCategories = refreshCategories;
-  obj.hasPreviouslyFetched = tmp7Result.hasPreviouslyFetched;
+  obj = { isFetching: tmp10, isFetchingCategories: isFetching, isFetchingPurchases: isFetching2, isClaiming, categories, purchases: tmp7Result.purchases, fetchCategoriesError, fetchPurchasesError, claimError, refreshCategories, hasPreviouslyFetched: tmp7Result.hasPreviouslyFetched };
   return obj;
 }
-({ useEffect: closure_4, useRef: closure_5 } = result);
-result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/collectibles/hooks/useFetchCollectiblesCategoriesAndPurchases.tsx");
+({ useEffect: c4, useRef: c5 } = noop);
+const result = require("getHash").fileFinishedImporting("modules/collectibles/hooks/useFetchCollectiblesCategoriesAndPurchases.tsx");
 
 export default useFetchCollectiblesCategoriesAndPurchases;
 export { useFetchPurchases };
@@ -149,11 +139,11 @@ export const useGetOrFetchPurchase = function useGetOrFetchPurchase(selectedGift
 };
 export const useGetOrFetchCollectiblesCategoriesAndPurchases = function useGetOrFetchCollectiblesCategoriesAndPurchases(arg0) {
   let obj = arg0;
-  obj = {};
-  if (null == arg0) {
+  if (arg0 == null) {
     obj = {};
   }
+  obj = {};
   const merged = Object.assign(obj);
-  obj["stalePurchasesOK"] = true;
+  obj.stalePurchasesOK = true;
   return useFetchCollectiblesCategoriesAndPurchases(obj);
 };

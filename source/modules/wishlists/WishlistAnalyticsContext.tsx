@@ -1,23 +1,23 @@
-// Module ID: 12179
-// Function ID: 95250
-// Name: useWishlistAnalyticsContext
-// Dependencies: [31, 33, 2]
-// Exports: WishlistAnalyticsProvider
+// Module ID: 12203
+// Function ID: 12204
+// Name: context
+// Dependencies: [19, 21, 2]
+// Exports: WishlistAnalyticsProvider, useWishlistAnalyticsContext
 
-// Module 12179 (useWishlistAnalyticsContext)
-import importAllResult from "result";
+// Module 12203 (context)
+import importAllResult from "noop";
 import { jsx } from "jsxProd";
 
-function useWishlistAnalyticsContext() {
-  return importAllResult.useContext(context);
-}
+let c0 = importAllResult;
 const context = importAllResult.createContext(null);
 const result = require("set").fileFinishedImporting("modules/wishlists/WishlistAnalyticsContext.tsx");
 
 export const WishlistAnalyticsContext = context;
-export { useWishlistAnalyticsContext };
+export const useWishlistAnalyticsContext = function useWishlistAnalyticsContext() {
+  return importAllResult.useContext(context);
+};
 export const WishlistAnalyticsProvider = function WishlistAnalyticsProvider(children) {
-  const merged = Object.assign(useWishlistAnalyticsContext());
+  const merged = Object.assign(importAllResult.useContext(context));
   const merged1 = Object.assign(children.newValue);
   return <context.Provider value={{}}>{arg0.children}</context.Provider>;
 };

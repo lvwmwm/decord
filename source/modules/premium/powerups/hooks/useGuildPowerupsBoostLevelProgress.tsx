@@ -1,42 +1,42 @@
-// Module ID: 4091
-// Function ID: 33934
+// Module ID: 4115
+// Function ID: 4116
 // Name: useGuildPowerupBoostLevelProgress
-// Dependencies: [1838, 653, 4072, 566, 2]
+// Dependencies: [1862, 676, 4096, 589, 2]
 // Exports: default, getGuildPowerupBoostLevelProgress
 
-// Module 4091 (useGuildPowerupBoostLevelProgress)
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+// Module 4115 (useGuildPowerupBoostLevelProgress)
+import createGuildRecordFromRust from "createGuildRecordFromRust";
 import ME from "ME";
 
-let closure_4;
-let closure_5;
+let c4;
+let c5;
 let closure_6;
 const require = arg1;
-({ AppliedGuildBoostsRequiredForBoostedGuildTier: closure_4, BoostedGuildTiers: closure_5, GuildFeatures: closure_6 } = ME);
+({ AppliedGuildBoostsRequiredForBoostedGuildTier: c4, BoostedGuildTiers: c5, GuildFeatures: closure_6 } = ME);
 const result = require("useGuildAppliedBoostCount").fileFinishedImporting("modules/premium/powerups/hooks/useGuildPowerupsBoostLevelProgress.tsx");
 
 export default function useGuildPowerupBoostLevelProgress(arg0) {
   const _require = arg0;
-  const tmp = importDefault(4072)(arg0);
-  const items = [_createForOfIteratorHelperLoose];
-  const stateFromStores = _require(566).useStateFromStores(items, () => {
+  const tmp = importDefault(4096)(arg0);
+  const items = [createGuildRecordFromRust];
+  const stateFromStores = _require(589).useStateFromStores(items, () => {
     const guild = outer1_3.getGuild(closure_0);
     let premiumTier;
-    if (null != guild) {
+    if (guild != null) {
       premiumTier = guild.premiumTier;
     }
-    if (null == premiumTier) {
+    if (premiumTier == null) {
       premiumTier = outer1_5.NONE;
     }
     return premiumTier;
   });
-  const obj = _require(566);
-  const items1 = [_createForOfIteratorHelperLoose];
+  const obj = _require(589);
+  const items1 = [createGuildRecordFromRust];
   let num = 0;
   if (!obj2.useStateFromStores(items1, () => {
     const guild = outer1_3.getGuild(closure_0);
     let hasItem;
-    if (null != guild) {
+    if (guild != null) {
       const features = guild.features;
       hasItem = features.has(outer1_6.PREMIUM_TIER_3_OVERRIDE);
     }
@@ -47,13 +47,13 @@ export default function useGuildPowerupBoostLevelProgress(arg0) {
   return num + tmp.available;
 };
 export const getGuildPowerupBoostLevelProgress = function getGuildPowerupBoostLevelProgress(id) {
-  let premiumTier;
-  const guildPowerupsBoostCount = require(4072) /* useGuildAppliedBoostCount */.getGuildPowerupsBoostCount(id);
+  const guildPowerupsBoostCount = require(4096) /* useGuildAppliedBoostCount */.getGuildPowerupsBoostCount(id);
   guild = guild.getGuild(id);
-  if (null != guild) {
+  let premiumTier;
+  if (guild != null) {
     premiumTier = guild.premiumTier;
   }
-  if (null == premiumTier) {
+  if (premiumTier == null) {
     premiumTier = constants.NONE;
   }
   return dependencyMap[premiumTier] + guildPowerupsBoostCount.available;

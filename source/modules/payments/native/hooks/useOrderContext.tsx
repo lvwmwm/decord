@@ -1,12 +1,12 @@
-// Module ID: 8782
-// Function ID: 69304
+// Module ID: 8806
+// Function ID: 8807
 // Name: useOrderContext
-// Dependencies: [57, 31, 2]
+// Dependencies: [32, 19, 2]
 // Exports: useOrderContext
 
-// Module 8782 (useOrderContext)
+// Module 8806 (useOrderContext)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
+import noop from "noop";
 
 const result = require("set").fileFinishedImporting("modules/payments/native/hooks/useOrderContext.tsx");
 
@@ -21,7 +21,7 @@ export const useOrderContext = function useOrderContext(initialOrder, NativeGift
       if (null != arg0) {
         const obj = {};
         const merged = Object.assign(arg0);
-        obj["revision"] = _slicedToArray;
+        obj.revision = _slicedToArray;
         tmp = obj;
       }
       return tmp;
@@ -29,28 +29,28 @@ export const useOrderContext = function useOrderContext(initialOrder, NativeGift
   }, []);
   const items = [first, tmp[1], callback];
   return React.useMemo(() => {
-    const obj = { order: first, setOrder: result, setRevision: callback };
+    const obj = { order: first, setOrder: noop, setRevision: callback, orderId: null, orderLineItemId: null, revision: null };
     let id;
-    if (null != first) {
-      id = first.id;
+    if (first != null) {
+      id = tmp.id;
     }
-    obj.orderId = id;
+    obj[3] = id;
     let id1;
-    if (null != first) {
-      const order_line_items = first.order_line_items;
-      if (null != order_line_items) {
+    if (first != null) {
+      const order_line_items = tmp.order_line_items;
+      if (order_line_items != null) {
         first = order_line_items[0];
-        if (null != first) {
+        if (first != null) {
           id1 = first.id;
         }
       }
     }
-    obj.orderLineItemId = id1;
+    obj[4] = id1;
     let revision;
-    if (null != first) {
-      revision = first.revision;
+    if (first != null) {
+      revision = tmp.revision;
     }
-    obj.revision = revision;
+    obj[5] = revision;
     return obj;
   }, items);
 };

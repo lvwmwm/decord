@@ -1,30 +1,39 @@
-// Module ID: 11581
-// Function ID: 90016
-// Name: getHasAllocateBoostPermission
-// Dependencies: [1838, 3793, 482, 566, 2]
-// Exports: default
+// Module ID: 11605
+// Function ID: 11606
+// Name: useHasAllocateBoostPermission
+// Dependencies: [1862, 3817, 505, 589, 2]
+// Exports: default, getHasAllocateBoostPermission
 
-// Module 11581 (getHasAllocateBoostPermission)
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 11605 (useHasAllocateBoostPermission)
+import createGuildRecordFromRust from "createGuildRecordFromRust";
+import getUncachedChannelPermissions from "getUncachedChannelPermissions";
 import { Permissions } from "sum";
 
 const require = arg1;
-function getHasAllocateBoostPermission(outer1_9, guild) {
-  let canResult = null;
-  if (null != guild) {
-    canResult = null;
-    if (null != outer1_9.getGuildPermissions(guild)) {
-      canResult = outer1_9.can(Permissions.ADMINISTRATOR, guild);
-    }
-  }
-  return canResult;
-}
 const result = require("sum").fileFinishedImporting("modules/premium/powerups/hooks/useHasAllocateBoostPermission.tsx");
 
 export default function useHasAllocateBoostPermission(arg0) {
   const _require = arg0;
-  const items = [_isNativeReflectConstruct, _createForOfIteratorHelperLoose];
-  return _require(566).useStateFromStores(items, () => outer1_5(outer1_3, outer1_2.getGuild(closure_0)));
+  const items = [getUncachedChannelPermissions, createGuildRecordFromRust];
+  return _require(589).useStateFromStores(items, () => {
+    const guild = outer1_2.getGuild(closure_0);
+    let canResult = null;
+    if (null != guild) {
+      canResult = null;
+      if (null != obj.getGuildPermissions(guild)) {
+        canResult = obj.can(outer1_4.ADMINISTRATOR, guild);
+      }
+    }
+    return canResult;
+  });
 };
-export { getHasAllocateBoostPermission };
+export const getHasAllocateBoostPermission = function getHasAllocateBoostPermission(closure_4, guild) {
+  let canResult = null;
+  if (null != guild) {
+    canResult = null;
+    if (null != closure_4.getGuildPermissions(guild)) {
+      canResult = closure_4.can(Permissions.ADMINISTRATOR, guild);
+    }
+  }
+  return canResult;
+};

@@ -1,18 +1,18 @@
-// Module ID: 10928
-// Function ID: 84691
+// Module ID: 10952
+// Function ID: 10953
 // Name: getRemoteJoinableActivityPlatform
-// Dependencies: [5102, 4180, 653, 478, 1360, 10453, 2]
+// Dependencies: [5124, 4204, 676, 501, 1384, 10477, 2]
 // Exports: getRemoteJoinableActivityPlatform
 
-// Module 10928 (getRemoteJoinableActivityPlatform)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_3 from "_isNativeReflectConstruct";
+// Module 10952 (getRemoteJoinableActivityPlatform)
+import isConnected from "isConnected";
+import handleUpdate from "handleUpdate";
 import ME from "ME";
 
-let closure_4;
-let closure_5;
+let c4;
+let c5;
 const require = arg1;
-({ ActivityFlags: closure_4, ActivityGamePlatforms: closure_5 } = ME);
+({ ActivityFlags: c4, ActivityGamePlatforms: c5 } = ME);
 const result = require("ME").fileFinishedImporting("modules/activities/utils/getRemoteJoinableActivityPlatform.tsx");
 
 export const getRemoteJoinableActivityPlatform = function getRemoteJoinableActivityPlatform(presenceActivity) {
@@ -21,57 +21,55 @@ export const getRemoteJoinableActivityPlatform = function getRemoteJoinableActiv
   } else {
     const application_id = presenceActivity.application_id;
     if (null != application_id) {
-      const flags2 = presenceActivity.flags;
-      let num = 0;
-      if (null != flags2) {
-        num = flags2;
+      let num = presenceActivity.flags;
+      if (num == null) {
+        num = 0;
       }
       if (obj5.hasFlag(num, constants.SUPPORTS_REMOTE_ACTIVITY_ACTION_JOIN)) {
         remoteApplicationActivity = remoteApplicationActivity.getRemoteApplicationActivity(application_id);
         let tmp4 = null;
         if (null != remoteApplicationActivity) {
+          let tmp11Result = tmp11(10477);
           tmp4 = null;
-          if (!obj.isContextlessEmbeddedActivity(remoteApplicationActivity)) {
+          if (!tmp11Result.isContextlessEmbeddedActivity(remoteApplicationActivity)) {
             if (null == remoteApplicationActivity.application_id) {
-              const flags = remoteApplicationActivity.flags;
-              let num4 = 0;
-              if (null != flags) {
-                num4 = flags;
+              tmp11Result = tmp11(1384);
+              let num2 = remoteApplicationActivity.flags;
+              if (num2 == null) {
+                num2 = 0;
               }
-              let tmp18 = null;
-              if (obj4.hasFlag(num4, constants.SUPPORTS_REMOTE_ACTIVITY_ACTION_JOIN)) {
-                const platform2 = remoteApplicationActivity.platform;
-                tmp18 = null;
-                if (null != platform2) {
-                  tmp18 = platform2;
+              let tmp9 = null;
+              if (tmp11Result.hasFlag(num2, tmp.SUPPORTS_REMOTE_ACTIVITY_ACTION_JOIN)) {
+                let platform = remoteApplicationActivity.platform;
+                if (platform == null) {
+                  platform = null;
                 }
+                tmp9 = platform;
               }
-              tmp4 = tmp18;
-              obj4 = require(1360) /* hasFlag */;
+              tmp4 = tmp9;
             } else {
               tmp4 = null;
               if (!connected.isConnected(remoteApplicationActivity.application_id)) {
-                const platform = remoteApplicationActivity.platform;
-                if (obj2.isAndroid()) {
-                  let tmp12 = platform === constants2.ANDROID;
+                platform = remoteApplicationActivity.platform;
+                if (tmp11Result1.isAndroid()) {
+                  let isIOSResult = platform === constants2.ANDROID;
                 } else {
-                  const tmp11 = !require(478) /* isWindows */.isIOS();
-                  tmp12 = !tmp11;
-                  if (!tmp11) {
-                    tmp12 = platform === constants2.IOS;
+                  isIOSResult = tmp11(501).isIOS();
+                  if (isIOSResult) {
+                    isIOSResult = platform === constants2.IOS;
                   }
-                  const obj3 = require(478) /* isWindows */;
+                  const tmp11Result2 = tmp11(501);
                 }
                 tmp4 = null;
-                obj2 = require(478) /* isWindows */;
+                tmp11Result1 = tmp11(501);
               }
             }
           }
-          obj = require(10453) /* _computeActivityPartyPrivacyFlags */;
         }
         return tmp4;
       }
-      obj5 = require(1360) /* hasFlag */;
+      obj5 = require(1384) /* hasFlag */;
+      tmp = constants;
     }
     return null;
   }

@@ -1,42 +1,42 @@
-// Module ID: 3844
-// Function ID: 31521
+// Module ID: 3868
+// Function ID: 3869
 // Name: isFeatureAgeGated
-// Dependencies: [3845, 566, 2]
+// Dependencies: [3869, 589, 2]
 // Exports: hasAgeGatedFeatures, hasTeenDefaults, isFeatureAgeGated, isSettingTeenByDefault, useHasAgeGatedFeatures, useHasTeenDefaults, useIsFeatureAgeGated, useIsSettingTeenByDefault
 
-// Module 3844 (isFeatureAgeGated)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 3868 (isFeatureAgeGated)
+import getRegionalFeatureConfig from "getRegionalFeatureConfig";
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/regional_feature_config/RegionalFeatureConfigUtils.tsx");
 
-export const isFeatureAgeGated = function isFeatureAgeGated(AGE_GATED_SPACES) {
-  return _isNativeReflectConstruct.isFeatureAgeGated(AGE_GATED_SPACES);
+export const isFeatureAgeGated = function isFeatureAgeGated(arg0) {
+  return getRegionalFeatureConfig.isFeatureAgeGated(arg0);
 };
-export const useIsFeatureAgeGated = function useIsFeatureAgeGated(STAGE_SPEAKING) {
-  const _require = STAGE_SPEAKING;
-  const items = [_isNativeReflectConstruct];
-  return _require(566).useStateFromStores(items, () => outer1_2.isFeatureAgeGated(closure_0));
+export const useIsFeatureAgeGated = function useIsFeatureAgeGated(AGE_GATED_SPACES) {
+  const _require = AGE_GATED_SPACES;
+  const items = [getRegionalFeatureConfig];
+  return _require(589).useStateFromStores(items, () => outer1_2.isFeatureAgeGated(closure_0));
 };
-export const isSettingTeenByDefault = function isSettingTeenByDefault(GUILD_ACTIVITY_STATUS) {
-  return _isNativeReflectConstruct.isSettingTeenByDefault(GUILD_ACTIVITY_STATUS);
+export const isSettingTeenByDefault = function isSettingTeenByDefault(arg0) {
+  return getRegionalFeatureConfig.isSettingTeenByDefault(arg0);
 };
 export const useIsSettingTeenByDefault = function useIsSettingTeenByDefault(GUILD_ACTIVITY_STATUS) {
   const _require = GUILD_ACTIVITY_STATUS;
-  const items = [_isNativeReflectConstruct];
-  return _require(566).useStateFromStores(items, () => outer1_2.isSettingTeenByDefault(closure_0));
+  const items = [getRegionalFeatureConfig];
+  return _require(589).useStateFromStores(items, () => outer1_2.isSettingTeenByDefault(closure_0));
 };
 export const hasAgeGatedFeatures = function hasAgeGatedFeatures() {
-  return _isNativeReflectConstruct.hasAgeGatedFeatures();
+  return getRegionalFeatureConfig.hasAgeGatedFeatures();
 };
 export const useHasAgeGatedFeatures = function useHasAgeGatedFeatures() {
-  const items = [_isNativeReflectConstruct];
-  return require(566) /* initialize */.useStateFromStores(items, () => outer1_2.hasAgeGatedFeatures());
+  const items = [getRegionalFeatureConfig];
+  return require(589) /* initialize */.useStateFromStores(items, () => getRegionalFeatureConfig.hasAgeGatedFeatures());
 };
 export const hasTeenDefaults = function hasTeenDefaults() {
-  return _isNativeReflectConstruct.hasTeenDefaults();
+  return getRegionalFeatureConfig.hasTeenDefaults();
 };
 export const useHasTeenDefaults = function useHasTeenDefaults() {
-  const items = [_isNativeReflectConstruct];
-  return require(566) /* initialize */.useStateFromStores(items, () => outer1_2.hasTeenDefaults());
+  const items = [getRegionalFeatureConfig];
+  return require(589) /* initialize */.useStateFromStores(items, () => getRegionalFeatureConfig.hasTeenDefaults());
 };

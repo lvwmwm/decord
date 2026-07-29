@@ -1,77 +1,78 @@
-// Module ID: 15208
-// Function ID: 115607
+// Module ID: 15241
+// Function ID: 15242
 // Name: useYouBarCoachmark
-// Dependencies: [57, 31, 3982, 1345, 1212, 1334, 4026, 12159, 1457, 566, 12731, 4241, 8417, 15209, 8406, 2]
+// Dependencies: [32, 19, 4006, 1369, 1236, 1358, 4050, 12183, 1481, 589, 12753, 4265, 8441, 15242, 8430, 2]
 // Exports: useYouBarCoachmark
 
-// Module 15208 (useYouBarCoachmark)
+// Module 15241 (useYouBarCoachmark)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import noop from "noop";
+import handleConnectionOpen from "handleConnectionOpen";
 import { ContentDismissActionType } from "ContentDismissActionType";
 
 const require = arg1;
 let closure_6 = [];
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/main_tabs_v2/native/you_bar/hooks/useYouBarCoachmark.tsx");
+const result = require("handleConnectionOpen").fileFinishedImporting("modules/main_tabs_v2/native/you_bar/hooks/useYouBarCoachmark.tsx");
 
 export const useYouBarCoachmark = function useYouBarCoachmark(isQuestRendered) {
+  let tmp7;
+  let tmp8;
   isQuestRendered = isQuestRendered.isQuestRendered;
-  const animatedRef = isQuestRendered(isInPrivateProfilesExperiment[6]).useAnimatedRef();
-  let obj = isQuestRendered(isInPrivateProfilesExperiment[6]);
-  isInPrivateProfilesExperiment = isQuestRendered(isInPrivateProfilesExperiment[7]).useIsInPrivateProfilesExperiment("PrivateProfileCoachmark");
-  const obj2 = isQuestRendered(isInPrivateProfilesExperiment[7]);
-  const isFocused = isQuestRendered(isInPrivateProfilesExperiment[8]).useIsFocused();
-  const obj3 = isQuestRendered(isInPrivateProfilesExperiment[8]);
-  let items = [_isNativeReflectConstruct];
-  const stateFromStores = isQuestRendered(isInPrivateProfilesExperiment[9]).useStateFromStores(items, () => {
-    let obj = isQuestRendered(isInPrivateProfilesExperiment[10]);
-    obj = { from: "authed", unit: isQuestRendered(isInPrivateProfilesExperiment[11]).TimeUnits.DAYS };
+  const visibleContent = isQuestRendered;
+  let markAsDismissed;
+  let isFocused;
+  let stateFromStores;
+  const animatedRef = visibleContent(markAsDismissed[6]).useAnimatedRef();
+  let obj = visibleContent(markAsDismissed[6]);
+  const isInPrivateProfilesExperiment = visibleContent(markAsDismissed[7]).useIsInPrivateProfilesExperiment("PrivateProfileCoachmark");
+  markAsDismissed = isInPrivateProfilesExperiment;
+  const obj2 = visibleContent(markAsDismissed[7]);
+  isFocused = visibleContent(markAsDismissed[8]).useIsFocused();
+  const obj3 = visibleContent(markAsDismissed[8]);
+  let items = [handleConnectionOpen];
+  stateFromStores = visibleContent(markAsDismissed[9]).useStateFromStores(items, () => {
+    let obj = visibleContent(markAsDismissed[10]);
+    obj = { from: "authed", unit: visibleContent(markAsDismissed[11]).TimeUnits.DAYS };
     const tmp = obj.getFirstInstallTimeElapsed(obj) >= 10;
-    return null != outer1_4.getGuildId() && obj.getFirstInstallTimeElapsed(obj) >= 10;
+    return null != guildId.getGuildId() && obj.getFirstInstallTimeElapsed(obj) >= 10;
   });
   const items1 = [isInPrivateProfilesExperiment, isQuestRendered, stateFromStores, isFocused];
   const memo = stateFromStores.useMemo(() => {
-    if (!isQuestRendered) {
+    if (!visibleContent) {
       if (isFocused) {
         const items = [];
         if (stateFromStores) {
-          items.push(isQuestRendered(isInPrivateProfilesExperiment[5]).DismissibleContent.YOU_BAR_DM_SWIPE_COACHMARK);
+          items.push(visibleContent(markAsDismissed[5]).DismissibleContent.YOU_BAR_DM_SWIPE_COACHMARK);
         }
-        if (isInPrivateProfilesExperiment) {
-          items.push(isQuestRendered(isInPrivateProfilesExperiment[5]).DismissibleContent.PRIVATE_PROFILE_COACHMARK);
+        if (markAsDismissed) {
+          items.push(visibleContent(markAsDismissed[5]).DismissibleContent.PRIVATE_PROFILE_COACHMARK);
         }
         return items;
       }
     }
     return outer1_6;
   }, items1);
-  const obj4 = isQuestRendered(isInPrivateProfilesExperiment[9]);
-  const tmp6 = isFocused(isQuestRendered(isInPrivateProfilesExperiment[12]).useSelectedDismissibleContent(memo), 2);
-  let visibleContent = tmp6[0];
-  let markAsDismissed = tmp6[1];
-  const obj5 = isQuestRendered(isInPrivateProfilesExperiment[12]);
-  const tmp9 = (function useSwipeCoachmarkProps(visibleContent) {
-    visibleContent = visibleContent.visibleContent;
-    const markAsDismissed = visibleContent.markAsDismissed;
-    const items = [markAsDismissed, visibleContent];
-    return stateFromStores.useMemo(() => {
-      const obj = {};
-      const intl = isQuestRendered(isInPrivateProfilesExperiment[4]).intl;
-      obj.title = intl.string(isQuestRendered(isInPrivateProfilesExperiment[4]).t.gMFchc);
-      const intl2 = isQuestRendered(isInPrivateProfilesExperiment[4]).intl;
-      obj.description = intl2.string(isQuestRendered(isInPrivateProfilesExperiment[4]).t["V3j11+"]);
-      obj.position = "top";
-      obj.visible = visibleContent === isQuestRendered(isInPrivateProfilesExperiment[5]).DismissibleContent.YOU_BAR_DM_SWIPE_COACHMARK;
-      obj.onDismiss = function onDismiss() {
-        return outer1_1(outer3_5.USER_DISMISS);
-      };
-      return obj;
-    }, items);
-  })({ visibleContent, markAsDismissed });
-  const privateProfileCoachmarkProps = isQuestRendered(isInPrivateProfilesExperiment[13]).usePrivateProfileCoachmarkProps({ visibleContent, markAsDismissed });
-  const obj6 = isQuestRendered(isInPrivateProfilesExperiment[13]);
-  const coachmark = isQuestRendered(isInPrivateProfilesExperiment[14]).useCoachmark(animatedRef, privateProfileCoachmarkProps);
-  const obj7 = isQuestRendered(isInPrivateProfilesExperiment[14]);
-  const coachmark1 = isQuestRendered(isInPrivateProfilesExperiment[14]).useCoachmark(animatedRef, tmp9);
+  const obj4 = visibleContent(markAsDismissed[9]);
+  const obj5 = visibleContent(markAsDismissed[12]);
+  [tmp7, tmp8] = isFocused(visibleContent(markAsDismissed[12]).useSelectedDismissibleContent(memo), 2);
+  const items2 = [markAsDismissed, visibleContent];
+  const memo1 = stateFromStores.useMemo(() => {
+    const obj = { title: null, description: null, position: "top", visible: null, onDismiss: null };
+    const intl = visibleContent(markAsDismissed[4]).intl;
+    obj[0] = intl.string(visibleContent(markAsDismissed[4]).t.gMFchc);
+    const intl2 = visibleContent(markAsDismissed[4]).intl;
+    obj[1] = intl2.string(visibleContent(markAsDismissed[4]).t["V3j11+"]);
+    obj[3] = visibleContent === visibleContent(markAsDismissed[5]).DismissibleContent.YOU_BAR_DM_SWIPE_COACHMARK;
+    obj[4] = function onDismiss() {
+      return callback(outer1_5.USER_DISMISS);
+    };
+    return obj;
+  }, items2);
+  const tmp6 = isFocused(visibleContent(markAsDismissed[12]).useSelectedDismissibleContent(memo), 2);
+  const privateProfileCoachmarkProps = visibleContent(markAsDismissed[13]).usePrivateProfileCoachmarkProps({ visibleContent, markAsDismissed });
+  const obj6 = visibleContent(markAsDismissed[13]);
+  const coachmark = visibleContent(markAsDismissed[14]).useCoachmark(animatedRef, privateProfileCoachmarkProps);
+  const obj7 = visibleContent(markAsDismissed[14]);
+  const coachmark1 = visibleContent(markAsDismissed[14]).useCoachmark(animatedRef, memo1);
   return { animatedRef, visibleContent, markAsDismissed };
 };

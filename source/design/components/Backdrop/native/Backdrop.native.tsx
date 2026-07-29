@@ -1,37 +1,30 @@
-// Module ID: 4566
-// Function ID: 39933
-// Name: getBlurAmount
-// Dependencies: [31, 27, 33, 4165, 689, 1212, 3877, 1557, 4009, 4026, 4567, 2]
+// Module ID: 4588
+// Function ID: 4589
+// Name: Backdrop
+// Dependencies: [19, 17, 21, 4189, 712, 1236, 3901, 1581, 4033, 4050, 4589, 2]
 // Exports: Backdrop
 
-// Module 4566 (getBlurAmount)
-import result from "result";
+// Module 4588 (Backdrop)
+import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_5;
+let StyleSheet;
+let c4;
+let c5;
 let closure_6;
 const require = arg1;
-function getBlurAmount(animatedProps) {
-  if ("none" === animatedProps) {
-    return 0;
-  } else if ("subtle" === animatedProps) {
-    return 0.05;
-  } else if ("strong" === animatedProps) {
-    return 0.25;
-  }
-}
-const Pressable = get_ActivityIndicator.Pressable;
-({ jsx: closure_5, jsxs: closure_6 } = jsxProd);
+({ Pressable: c4, StyleSheet } = get_ActivityIndicator);
+({ jsx: c5, jsxs: closure_6 } = jsxProd);
 let closure_7 = {};
-_createForOfIteratorHelperLoose = { fill: get_ActivityIndicator.StyleSheet.absoluteFillObject };
-_createForOfIteratorHelperLoose = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SCRIM };
-_createForOfIteratorHelperLoose.backdrop = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.backdropOpaque = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.MOBILE_BACKGROUND_SCRIM_OPAQUE };
-_createForOfIteratorHelperLoose.accessibilityDismiss = { position: "absolute", top: 0, left: 0, right: 0, height: 16 };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-let obj1 = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.MOBILE_BACKGROUND_SCRIM_OPAQUE };
+createCacheKey = { fill: StyleSheet.absoluteFillObject, backdrop: null, backdropOpaque: null, accessibilityDismiss: null };
+createCacheKey = { backgroundColor: require("Themes").colors.BACKGROUND_SCRIM };
+createCacheKey[1] = createCacheKey;
+createCacheKey[2] = { backgroundColor: require("Themes").colors.MOBILE_BACKGROUND_SCRIM_OPAQUE };
+createCacheKey[3] = { position: "absolute", top: 0, left: 0, right: 0, height: 16 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let obj1 = { backgroundColor: require("Themes").colors.MOBILE_BACKGROUND_SCRIM_OPAQUE };
 const result = require("jsxProd").fileFinishedImporting("design/components/Backdrop/native/Backdrop.native.tsx");
 
 export const Backdrop = function Backdrop(animatedProps) {
@@ -54,49 +47,58 @@ export const Backdrop = function Backdrop(animatedProps) {
   }
   ({ onDismiss, accessibilityLabel } = animatedProps);
   if (accessibilityLabel === undefined) {
-    const intl = backgroundColor(1212).intl;
-    accessibilityLabel = intl.string(backgroundColor(1212).t.WAI6xu);
+    const intl = backgroundColor2(1236).intl;
+    accessibilityLabel = intl.string(backgroundColor2(1236).t.WAI6xu);
   }
-  backgroundColor = undefined;
-  const tmp3 = _createForOfIteratorHelperLoose();
-  let obj = backgroundColor(3877);
-  backgroundColor = tmp3.backdrop.backgroundColor;
-  const items = [backgroundColor];
+  backgroundColor2 = undefined;
+  let backgroundColor = createCacheKey();
+  let obj = backgroundColor2(3901);
+  backgroundColor2 = backgroundColor.backdrop.backgroundColor;
+  const items = [backgroundColor2];
   obj = { onPress: onDismiss, "aria-hidden": true };
-  const memo = React.useMemo(() => backgroundColor(outer1_2[8]).hexToRgbaString(backgroundColor), items);
-  obj = { style: items1, pointerEvents: "box-none" };
-  items1 = [tmp3.fill, style];
-  obj.animatedProps = animatedProps;
-  let tmp6 = null != onDismiss;
-  if (tmp6) {
-    const obj1 = {};
-    const items2 = [tmp3.accessibilityDismiss, , ];
-    const obj2 = { top: importDefault(1557)().top };
+  const memo = React.useMemo(() => backgroundColor2(outer1_2[8]).hexToRgbaString(backgroundColor2), items);
+  obj = { style: items1, pointerEvents: "box-none", animatedProps, children: null };
+  items1 = [backgroundColor.fill, style];
+  let tmp5 = null != onDismiss;
+  if (tmp5) {
+    const obj1 = { style: null, onPress: null, accessibilityRole: "button", accessibilityLabel: null, "aria-hidden": null };
+    const items2 = [backgroundColor.accessibilityDismiss, , ];
+    const obj2 = { top: null };
+    obj2[0] = importDefault(1581)().top;
     items2[1] = obj2;
     items2[2] = accessibleDismissStyle;
-    obj1.style = items2;
-    obj1.onPress = onDismiss;
-    obj1.accessibilityRole = "button";
-    obj1.accessibilityLabel = accessibilityLabel;
-    obj1["aria-hidden"] = animatedProps["aria-hidden"];
-    tmp6 = callback(Pressable, obj1);
+    obj1[0] = items2;
+    obj1[1] = onDismiss;
+    obj1[3] = accessibilityLabel;
+    obj1[4] = animatedProps["aria-hidden"];
+    tmp5 = callback(closure_4, obj1);
   }
-  const items3 = [tmp6, ];
+  const items3 = [tmp5, ];
   if ("none" !== str) {
     const obj3 = {};
     const merged = Object.assign(obj);
-    obj3["style"] = tmp3.fill;
-    const obj4 = { blurAmount: getBlurAmount(str), style: tmp3.fill, blurTheme: obj.useThemeContext().theme, blurTintRgba: memo, android_fallbackColor: tmp3.backdrop.backgroundColor };
-    obj3["children"] = callback(importDefault(4567), obj4);
-    let obj5 = obj3;
-    const tmp20 = importDefault(4567);
+    obj3.style = backgroundColor.fill;
+    if ("none" === str) {
+      let num = 0;
+      const obj4 = { blurAmount: null, style: null, blurTheme: null, blurTintRgba: null, android_fallbackColor: null };
+      obj4[0] = num;
+      obj4[1] = backgroundColor.fill;
+      obj4[2] = obj.useThemeContext().theme;
+      obj4[3] = memo;
+      backgroundColor = backgroundColor.backdrop.backgroundColor;
+      obj4[4] = backgroundColor;
+      obj3.children = tmp8(tmp16, obj4);
+    } else if ("subtle" !== str) {
+      num = 0.25;
+    }
+    num = 0.05;
   } else {
-    obj5 = {};
+    const obj5 = {};
     const merged1 = Object.assign(obj);
-    const items4 = [tmp3.fill, flag ? tmp3.backdropOpaque : tmp3.backdrop];
-    obj5["style"] = items4;
+    const items4 = [backgroundColor.fill, flag ? backgroundColor.backdropOpaque : backgroundColor.backdrop];
+    obj5.style = items4;
+    items3[1] = tmp8(tmp9, obj5);
+    obj[3] = items3;
+    return closure_6(importDefault(4050).View, obj);
   }
-  items3[1] = callback(Pressable, obj5);
-  obj.children = items3;
-  return closure_6(importDefault(4026).View, obj);
 };

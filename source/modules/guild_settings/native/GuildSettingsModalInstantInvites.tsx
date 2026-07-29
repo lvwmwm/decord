@@ -1,71 +1,61 @@
-// Module ID: 16451
-// Function ID: 128277
+// Module ID: 16486
+// Function ID: 16487
 // Name: InvitesDisabledRow
-// Dependencies: [57, 31, 27, 10223, 6676, 1348, 1838, 8281, 653, 33, 4165, 1212, 1921, 9068, 4161, 5204, 9148, 11446, 566, 22, 7776, 7774, 4133, 10995, 1935, 3866, 10170, 5618, 1273, 16452, 5483, 2]
+// Dependencies: [32, 19, 17, 10244, 6697, 1372, 1862, 8305, 676, 21, 4189, 1236, 1945, 9092, 4185, 5226, 9172, 11470, 589, 12, 7799, 7797, 4157, 11019, 1959, 3890, 10191, 5636, 1297, 16487, 5501, 2]
 // Exports: default
 
-// Module 16451 (InvitesDisabledRow)
+// Module 16486 (InvitesDisabledRow)
 import _slicedToArray from "_slicedToArray";
-import set from "set";
-import get_ActivityIndicator from "SceneLoadingIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import importDefaultResult from "_isNativeReflectConstruct";
-import closure_7 from "_isNativeReflectConstruct";
-import closure_8 from "_createForOfIteratorHelperLoose";
-import closure_9 from "_isNativeReflectConstruct";
+import apply from "apply";
+import get_ActivityIndicator from "useInvitesDisabledPermission";
+import computeAlertSettings from "computeAlertSettings";
+import importDefaultResult from "createFromServer";
+import ensureGuildLoaded from "ensureGuildLoaded";
+import createGuildRecordFromRust from "createGuildRecordFromRust";
+import handleFormInit from "handleFormInit";
 import ME from "ME";
-import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import jsxProd from "DATE_CONFIG";
+import createCacheKey from "createCacheKey";
 
 let Platform;
-let closure_10;
-let closure_11;
+let c10;
+let c5;
 let closure_12;
-let closure_13;
 let closure_14;
-let closure_5;
+let map1;
+let unpackModuleId;
 const require = arg1;
 class InvitesDisabledRow {
   constructor(arg0) {
     invitesDisabled = global.invitesDisabled;
+    tmp = closure_0;
+    tmp2 = closure_2;
     intl = require("getSystemLocale").intl;
-    tmp2 = closure_0;
-    tmp3 = closure_2;
     stringResult = intl.string(require("getSystemLocale").t.Uwsjn6);
     intl2 = require("getSystemLocale").intl;
     if (invitesDisabled) {
       stringResult1 = intl2.string(require("getSystemLocale").t["2LLbj9"]);
     } else {
-      obj = {};
+      obj = { helpArticleUrl: null };
       tmp4 = closure_1;
-      num = 12;
-      obj2 = require("wrapURL");
+      obj2 = require("combined");
       tmp5 = HelpdeskArticles;
-      obj.helpArticleUrl = obj2.getArticleURL(HelpdeskArticles.INVITE_DISABLED);
+      obj[0] = obj2.getArticleURL(HelpdeskArticles.INVITE_DISABLED);
       stringResult1 = intl2.format(require("getSystemLocale").t.IFBHag, obj);
     }
     tmp7 = jsx;
-    obj = { label: stringResult };
-    obj1 = { variant: "text-xs/medium" };
-    obj1.children = stringResult1;
-    obj.subLabel = jsx(require("Text").Text, obj1);
-    tmp8 = null;
+    obj = { label: stringResult, subLabel: null, icon: null, checked: null, onPress: null, start: true, end: true };
+    obj[1] = jsx(require("Text").Text, { variant: "text-xs/medium", children: stringResult1 });
+    tmp7Result = null;
     if (invitesDisabled) {
-      tmp9 = jsx;
-      tmp10 = closure_0;
-      tmp11 = closure_2;
-      num2 = 15;
-      obj2 = {};
-      tmp12 = closure_1;
-      num3 = 16;
-      obj2.source = require("registerAsset");
-      tmp8 = jsx(require("TableRowIcon").TableRowIcon, obj2);
+      obj1 = { source: null };
+      tmp9 = closure_1;
+      obj1[0] = require("registerAsset");
+      tmp7Result = tmp7(require("TableRowIcon").TableRowIcon, obj1);
     }
-    obj.icon = tmp8;
-    obj.checked = invitesDisabled;
-    obj.onPress = global.onPauseInvites;
-    obj.start = true;
-    obj.end = true;
+    obj[2] = tmp7Result;
+    obj[3] = invitesDisabled;
+    obj[4] = global.onPauseInvites;
     return tmp7(require("TableCheckboxRow").TableCheckboxRow, obj);
   }
 }
@@ -80,8 +70,8 @@ function GuildSettingsModalInstantInvites(invites) {
   let stateFromStores;
   let hasItem;
   let first;
-  let closure_7;
-  let closure_8;
+  let ensureGuildLoaded;
+  let createGuildRecordFromRust;
   let memo;
   let stateFromStoresArray;
   let callback1;
@@ -95,58 +85,57 @@ function GuildSettingsModalInstantInvites(invites) {
   hasItem = features.has(stateFromStoresArray.INVITES_DISABLED);
   if (!hasItem) {
     let invitesDisabledUntil;
-    if (null != stateFromStores) {
+    if (stateFromStores != null) {
       invitesDisabledUntil = stateFromStores.invitesDisabledUntil;
     }
-    let tmp7 = null != invitesDisabledUntil;
-    if (tmp7) {
+    let BooleanResult = null != invitesDisabledUntil;
+    if (BooleanResult) {
+      const _Boolean = Boolean;
       const _Date = Date;
       const date = new Date(stateFromStores.invitesDisabledUntil);
       const _Date2 = Date;
       const date1 = new Date();
-      tmp7 = date > date1;
+      BooleanResult = Boolean(date > date1);
     }
-    hasItem = tmp7;
+    hasItem = BooleanResult;
   }
-  const tmp17 = invitesDisabledPermission(stateFromStores.useState(false), 2);
-  first = tmp17[0];
-  closure_7 = tmp17[1];
-  const tmp19 = invitesDisabledPermission(stateFromStores.useState(21), 2);
-  closure_8 = tmp19[1];
+  const tmp19 = invitesDisabledPermission(stateFromStores.useState(false), 2);
+  first = tmp19[0];
+  ensureGuildLoaded = tmp19[1];
+  const tmp21 = invitesDisabledPermission(stateFromStores.useState(21), 2);
+  createGuildRecordFromRust = tmp21[1];
   const items1 = [invites, invitesDisabledPermission, flag];
   memo = stateFromStores.useMemo(() => {
     const sortByResult = guild(flag[19]).sortBy(invites, (channel) => {
-      if (outer1_2) {
+      if (closure_2) {
         channel = channel.channel;
         let formatted;
-        if (null != channel) {
+        if (channel != null) {
           formatted = channel.name.toLowerCase();
           const str3 = channel.name;
         }
-        let str2 = formatted;
+        let str = formatted;
       } else {
         const inviter = channel.inviter;
-        let formatted1;
-        if (null != inviter) {
-          if (null != inviter.username) {
-            formatted1 = str.toLowerCase();
+        str = undefined;
+        if (inviter != null) {
+          if (inviter.username != null) {
+            str = str2.toLowerCase();
           }
         }
-        str2 = "";
-        if (null != formatted1) {
-          str2 = formatted1;
+        if (str == null) {
+          str = "";
         }
       }
-      return str2;
+      return str;
     });
     if (invitesDisabledPermission) {
       sortByResult.unshift(outer1_17);
     }
     return sortByResult;
   }, items1);
-  let obj2 = invites(flag[18]);
-  const items2 = [closure_7];
-  stateFromStoresArray = obj2.useStateFromStoresArray(items2, () => sortedLinkedChannelsForGuild.getSortedLinkedChannelsForGuild(guild.id));
+  const items2 = [ensureGuildLoaded];
+  stateFromStoresArray = invites(flag[18]).useStateFromStoresArray(items2, () => sortedLinkedChannelsForGuild.getSortedLinkedChannelsForGuild(guild.id));
   const items3 = [memo, stateFromStoresArray];
   const memo1 = stateFromStores.useMemo(() => {
     const items = [...memo.map((data) => ({ type: "invite", data })), ...stateFromStoresArray.map((data) => ({ type: "channel", data }))];
@@ -167,70 +156,84 @@ function GuildSettingsModalInstantInvites(invites) {
   callback1 = stateFromStores.useCallback(() => {
     if (!first) {
       sortedLinkedChannelsForGuild(true);
-      let obj = { source: invites(true[20]).GuildIncidentActionSources.MESSAGE, alertType: invites(true[21]).getIncidentAlertType(stateFromStores) };
-      const obj2 = invites(true[21]);
-      obj = { guild };
-      obj.analyticsData = obj;
-      guild(true[22]).openLazy(invites(true[24])(true[23], true.paths), "GuildIncidentActionsActionSheet", obj);
-      sortedLinkedChannelsForGuild(false);
-      const obj3 = guild(true[22]);
+      try {
+        let obj = { source: null, alertType: null };
+        obj[0] = invites(flag[20]).GuildIncidentActionSources.MESSAGE;
+        obj[1] = invites(flag[21]).getIncidentAlertType(stateFromStores);
+        const obj2 = invites(flag[21]);
+        obj = { guild: null, analyticsData: null };
+        obj[0] = guild;
+        obj[1] = obj;
+        guild(flag[22]).openLazy(invites(flag[24])(flag[23], flag.paths), "GuildIncidentActionsActionSheet", obj);
+        tmp3(false);
+        const obj3 = guild(flag[22]);
+      } catch (tmp17) {
+        tmp2(false);
+        throw tmp17;
+      }
+      tmp3 = sortedLinkedChannelsForGuild;
     }
   }, items4);
   const items5 = [hasItem, callback1, first];
   if (null == invites) {
-    let tmp26 = callback(invites(flag[27]).SceneLoadingIndicator, {});
+    let tmp28 = callback(tmp2(tmp3[27]).SceneLoadingIndicator, {});
   } else if (0 === memo1.length) {
-    obj = {};
-    obj = { onPauseInvites: callback1, invitesDisabled: hasItem, invitesDisabledLoading: first };
+    obj = { children: null };
+    obj = { onPauseInvites: null, invitesDisabled: null, invitesDisabledLoading: null };
+    obj[0] = callback1;
+    obj[1] = hasItem;
+    obj[2] = first;
     const items6 = [callback(InvitesDisabledRow, obj), ];
-    obj1 = { Illustration: invites(flag[29]).InviteEmpty };
-    const intl = invites(flag[11]).intl;
-    obj1.title = intl.string(invites(flag[11]).t["+nLJkZ"]);
-    const intl2 = invites(flag[11]).intl;
-    obj1.body = intl2.string(invites(flag[11]).t.F53CAc);
-    items6[1] = callback(invites(flag[28]).EmptyState, obj1);
-    obj.children = items6;
-    tmp26 = callback2(closure_13, obj);
+    obj1 = { Illustration: null, title: null, body: null };
+    obj1[0] = tmp2(tmp3[29]).InviteEmpty;
+    const intl = tmp2(tmp3[11]).intl;
+    obj1[1] = intl.string(tmp2(tmp3[11]).t["+nLJkZ"]);
+    const intl2 = tmp2(tmp3[11]).intl;
+    obj1[2] = intl2.string(tmp2(tmp3[11]).t.F53CAc);
+    items6[1] = callback(tmp2(tmp3[28]).EmptyState, obj1);
+    obj[0] = items6;
+    tmp28 = callback2(closure_13, obj);
   } else {
-    obj2 = {};
+    let obj2 = { style: null, data: null, keyExtractor: null, renderItem: null, initialNumToRender: 10, windowSize: null, contentContainerStyle: null };
     const items7 = [invitesDisabledPermission ? tmp.listWithPause : tmp.list];
-    obj2.style = items7;
-    obj2.data = memo1;
-    obj2.keyExtractor = callback;
-    obj2.renderItem = tmp25;
-    obj2.initialNumToRender = 10;
-    obj2.windowSize = tmp19[0];
+    obj2[0] = items7;
+    obj2[1] = memo1;
+    obj2[2] = callback;
+    obj2[3] = tmp27;
+    obj2[5] = tmp21[0];
     const items8 = [invites.contentContainerStyle, tmp.content];
-    obj2.contentContainerStyle = items8;
-    tmp26 = callback(hasItem, obj2);
+    obj2[6] = items8;
+    tmp28 = callback(hasItem, obj2);
   }
-  return tmp26;
+  return tmp28;
 }
-({ Platform, FlatList: closure_5 } = get_ActivityIndicator);
-({ GuildFeatures: closure_10, HelpdeskArticles: closure_11 } = ME);
-({ jsx: closure_12, Fragment: closure_13, jsxs: closure_14 } = jsxProd);
-let closure_15 = _createForOfIteratorHelperLoose.createStyles({ list: { paddingTop: 8 }, content: { padding: 16, gap: 24 }, listWithPause: { paddingTop: 0 } });
+({ Platform, FlatList: c5 } = get_ActivityIndicator);
+({ GuildFeatures: c10, HelpdeskArticles: unpackModuleId } = ME);
+({ jsx: closure_12, Fragment: map1, jsxs: closure_14 } = jsxProd);
+let closure_15 = createCacheKey.createStyles({ list: { paddingTop: 8 }, content: { padding: 16, gap: 24 }, listWithPause: { paddingTop: 0 } });
 const pause_invites = "pause_invites";
-_createForOfIteratorHelperLoose = { code: "pause_invites" };
-importDefaultResult = new importDefaultResult(_createForOfIteratorHelperLoose);
+importDefaultResult = new importDefaultResult({ code: "pause_invites" });
 let closure_18 = {};
 const result = require("get ActivityIndicator").fileFinishedImporting("modules/guild_settings/native/GuildSettingsModalInstantInvites.tsx");
 
 export default function ConnectedGuildSettingsModalInstantInvites(guildId) {
   guildId = guildId.guildId;
-  let obj = guildId(566);
-  const items = [closure_8];
+  let obj = guildId(589);
+  const items = [createGuildRecordFromRust];
   const stateFromStores = obj.useStateFromStores(items, () => outer1_8.getGuild(guildId));
-  guildId(566);
-  [][0] = closure_9;
-  let tmp4 = null;
+  guildId(589);
+  [][0] = handleFormInit;
+  let tmp6 = null;
   if (null != stateFromStores) {
-    obj = {};
-    obj = { guild: stateFromStores, invites: tmp3, contentContainerStyle: guildId.contentContainerStyle, showChannel: true };
-    const items1 = [callback(GuildSettingsModalInstantInvites, obj), callback(guildId(5483).NavScrim, {})];
-    obj.children = items1;
-    tmp4 = callback2(closure_13, obj);
+    obj = { children: null };
+    obj = { guild: null, invites: null, contentContainerStyle: null, showChannel: true };
+    obj[0] = stateFromStores;
+    obj[1] = tmp5;
+    obj[2] = guildId.contentContainerStyle;
+    const items1 = [callback(GuildSettingsModalInstantInvites, obj), callback(guildId(5501).NavScrim, {})];
+    obj[0] = items1;
+    tmp6 = callback2(closure_13, obj);
   }
-  return tmp4;
+  return tmp6;
 };
 export { InvitesDisabledRow };

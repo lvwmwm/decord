@@ -1,20 +1,21 @@
-// Module ID: 16655
-// Function ID: 129722
+// Module ID: 16691
+// Function ID: 16692
 // Name: AVErrorCameraSendLowFPSDefinition
-// Dependencies: [1194, 4212, 4237, 664, 16641, 8828, 16638, 2]
+// Dependencies: [1218, 4236, 4261, 687, 16677, 8852, 16674, 2]
 
-// Module 16655 (AVErrorCameraSendLowFPSDefinition)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_3 from "_isNativeReflectConstruct";
-import closure_4 from "_isNativeReflectConstruct";
+// Module 16691 (AVErrorCameraSendLowFPSDefinition)
+import fetchFingerprint from "fetchFingerprint";
+import _detectH265HardwareDecode from "_detectH265HardwareDecode";
+import createRTCConnection from "createRTCConnection";
 
 const require = arg1;
 let closure_5 = 20 * require("set").Millis.SECOND;
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/errors/av_errors/definitions/AVErrorCameraSendLowFPS.tsx");
+const result = require("createRTCConnection").fileFinishedImporting("modules/errors/av_errors/definitions/AVErrorCameraSendLowFPS.tsx");
 
 export const AVErrorCameraSendLowFPSDefinition = {
   getActiveErrors() {
-    const rTCConnection = store2.getRTCConnection();
+    let obj = rTCConnection;
+    rTCConnection = rTCConnection.getRTCConnection();
     if (null == rTCConnection) {
       return null;
     } else {
@@ -22,7 +23,7 @@ export const AVErrorCameraSendLowFPSDefinition = {
       if (null == mediaEngineConnectionId) {
         return null;
       } else if (videoEnabled.isVideoEnabled()) {
-        const lastNonZeroRemoteVideoSinkWantsTime = store2.getLastNonZeroRemoteVideoSinkWantsTime();
+        const lastNonZeroRemoteVideoSinkWantsTime = obj.getLastNonZeroRemoteVideoSinkWantsTime();
         if (null != lastNonZeroRemoteVideoSinkWantsTime) {
           const _performance = performance;
           if (performance.now() - lastNonZeroRemoteVideoSinkWantsTime < closure_5) {
@@ -30,19 +31,21 @@ export const AVErrorCameraSendLowFPSDefinition = {
           }
         }
         if (rTCConnection.hasActiveRemoteWants()) {
-          const accumulatedStatsWithMinDatapoints = require(16641) /* getReportInboundErrors */.getAccumulatedStatsWithMinDatapoints(mediaEngineConnectionId, store.getId());
-          let tmp9 = null;
+          const accumulatedStatsWithMinDatapoints = require(16677) /* getReportInboundErrors */.getAccumulatedStatsWithMinDatapoints(mediaEngineConnectionId, id.getId());
+          let tmp7 = null;
           if (null != accumulatedStatsWithMinDatapoints) {
             if (accumulatedStatsWithMinDatapoints.short.frameRate < 10) {
-              const obj = { type: require(8828) /* validateUniqueErrorCodes */.AVError.CAMERA_SEND_LOW_FPS, userId: store.getId() };
-              const merged = Object.assign(require(16638) /* getCommonErrorContext */.getVoiceChannelErrorContext());
+              obj = { type: null, userId: null };
+              obj[0] = tmp4(8852).AVError.CAMERA_SEND_LOW_FPS;
+              obj[1] = id.getId();
+              const merged = Object.assign(tmp4(16674).getVoiceChannelErrorContext());
               const items = [obj];
-              const obj4 = require(16638) /* getCommonErrorContext */;
-              const tmp10 = items;
+              const tmp4Result = tmp4(16674);
+              const tmp8 = items;
             }
-            tmp9 = tmp10;
+            tmp7 = tmp8;
           }
-          return tmp9;
+          return tmp7;
         } else {
           return null;
         }

@@ -1,18 +1,17 @@
-// Module ID: 16619
-// Function ID: 129477
+// Module ID: 16654
+// Function ID: 16655
 // Name: apexExperiment
-// Dependencies: [664, 1428, 2]
+// Dependencies: [687, 1452, 2]
 // Exports: getQuestFetchReconnectJitterConfig
 
-// Module 16619 (apexExperiment)
+// Module 16654 (apexExperiment)
 import ApexExperiment from "ApexExperiment";
 
 let obj = { questFetchJitterMs: 5 * require("set").Millis.SECOND, questHomeHeroJitterMs: 5 * require("set").Millis.SECOND };
-obj = { name: "2026-06-quest-fetch-reconnect-jitter", kind: "user" };
-obj.defaultConfig = obj;
-obj = {};
+obj = { name: "2026-06-quest-fetch-reconnect-jitter", kind: "user", defaultConfig: obj, variations: null };
+obj = { 1: null };
 obj[1] = { questFetchJitterMs: 60 * require("set").Millis.SECOND, questHomeHeroJitterMs: 60 * require("set").Millis.SECOND };
-obj.variations = obj;
+obj[3] = obj;
 const apexExperiment = ApexExperiment.createApexExperiment(obj);
 const obj1 = { questFetchJitterMs: 60 * require("set").Millis.SECOND, questHomeHeroJitterMs: 60 * require("set").Millis.SECOND };
 const result = require("set").fileFinishedImporting("modules/quests/experiments/QuestFetchReconnectJitterExperiment.tsx");

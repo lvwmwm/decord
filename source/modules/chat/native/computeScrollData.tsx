@@ -1,28 +1,17 @@
-// Module ID: 9440
-// Function ID: 73419
-// Name: findMessageRowIndex
-// Dependencies: [4157, 7691, 9441, 4097, 2]
-// Exports: default
+// Module ID: 9464
+// Function ID: 9465
+// Name: computeScrollData
+// Dependencies: [4181, 7714, 9465, 4121, 2]
+// Exports: default, findMessageRowIndex
 
-// Module 9440 (findMessageRowIndex)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 9464 (computeScrollData)
+import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
 import Changeset from "Changeset";
 
-let closure_3;
-let closure_4;
+let c3;
+let c4;
 const require = arg1;
-function findMessageRowIndex(rows, focusTargetId) {
-  let closure_0 = focusTargetId;
-  const findIndexResult = rows.findIndex((message) => {
-    let tmp = null != message.message;
-    if (tmp) {
-      tmp = message.message.id === closure_0;
-    }
-    return tmp;
-  });
-  return -1 !== findIndexResult ? findIndexResult : undefined;
-}
-({ RowType: closure_3, SeparatorType: closure_4 } = Changeset);
+({ RowType: c3, SeparatorType: c4 } = Changeset);
 const result = require("ChatScrollPosition").fileFinishedImporting("modules/chat/native/computeScrollData.tsx");
 
 export default function computeScrollData(shouldInitialScroll) {
@@ -36,57 +25,95 @@ export default function computeScrollData(shouldInitialScroll) {
   ({ rows, scrollToMessageId, jumpTargetId, animated, scrollPosition, focusTargetId, jumpType } = shouldInitialScroll);
   if (shouldInitialScroll.shouldInitialScroll) {
     if (null == jumpTargetId) {
-      const tmp2 = (function findUnreadSeperatorRowIndex(rows) {
-        const findIndexResult = rows.findIndex((type) => {
-          let tmp = type.type === outer2_3.SEPARATOR;
-          if (tmp) {
-            tmp = type.id === outer2_4.UNREAD;
-          }
-          return tmp;
-        });
-        return -1 !== findIndexResult ? findIndexResult : undefined;
-      })(rows);
-      if (null != tmp2) {
-        let obj = { type: require(9441) /* ChatScrollPosition */.ChatScrollType.SCROLL, index: tmp2 };
-        if (animated) {
-          animated = !_isNativeReflectConstruct.useReducedMotion;
+      const findIndexResult = rows.findIndex((type) => {
+        let tmp = type.type === constants.SEPARATOR;
+        if (tmp) {
+          tmp = type.id === constants2.UNREAD;
         }
-        obj.animate = animated;
-        obj.highlight = false;
-        obj.position = require(9441) /* ChatScrollPosition */.ChatScrollPosition.TOP;
+        return tmp;
+      });
+      let tmp3;
+      if (-1 !== findIndexResult) {
+        tmp3 = findIndexResult;
+      }
+      if (null != tmp3) {
+        let obj = { type: null, index: null, animate: null, highlight: false, position: null };
+        obj[0] = focusTargetId(9465).ChatScrollType.SCROLL;
+        obj[1] = tmp3;
+        if (animated) {
+          animated = !maybeApplyNoTextColorForLightCustomTheme.useReducedMotion;
+        }
+        obj[2] = animated;
+        obj[4] = focusTargetId(9465).ChatScrollPosition.TOP;
         return obj;
       }
     }
   }
-  let tmp3;
+  let tmp4;
   if (null != scrollToMessageId) {
-    const tmp5 = findMessageRowIndex(rows, scrollToMessageId);
-    if (null != tmp5) {
-      obj = { type: require(9441) /* ChatScrollPosition */.ChatScrollType.SCROLL, index: tmp5 };
-      let tmp9 = !_isNativeReflectConstruct.useReducedMotion;
-      if (tmp9) {
-        tmp9 = jumpType !== require(4097) /* GuildThemeSourcePreference */.JumpType.INSTANT;
+    focusTargetId = scrollToMessageId;
+    const findIndexResult1 = rows.findIndex((message) => {
+      let tmp = null != message.message;
+      if (tmp) {
+        tmp = message.message.id === focusTargetId;
       }
-      obj.animate = tmp9;
-      obj.highlight = scrollToMessageId === jumpTargetId;
-      if (null == scrollPosition) {
-        scrollPosition = require(9441) /* ChatScrollPosition */.ChatScrollPosition.TOP;
+      return tmp;
+    });
+    let tmp6;
+    if (-1 !== findIndexResult1) {
+      tmp6 = findIndexResult1;
+    }
+    if (null != tmp6) {
+      obj = { type: null, index: null, animate: null, highlight: null, position: null };
+      obj[0] = focusTargetId(9465).ChatScrollType.SCROLL;
+      obj[1] = tmp6;
+      const useReducedMotion = maybeApplyNoTextColorForLightCustomTheme.useReducedMotion;
+      let tmp10 = !useReducedMotion;
+      if (!useReducedMotion) {
+        tmp10 = jumpType !== tmp7(4121).JumpType.INSTANT;
       }
-      obj.position = scrollPosition;
-      tmp3 = obj;
+      obj[2] = tmp10;
+      obj[3] = scrollToMessageId === jumpTargetId;
+      if (scrollPosition == null) {
+        scrollPosition = tmp7(9465).ChatScrollPosition.TOP;
+      }
+      obj[4] = scrollPosition;
+      tmp4 = obj;
     }
   }
-  if (null == tmp3) {
-    let tmp14;
+  if (null == tmp4) {
+    let tmp11;
     if (null != focusTargetId) {
-      const tmp16 = findMessageRowIndex(rows, focusTargetId);
-      if (null != tmp16) {
-        obj = { type: require(9441) /* ChatScrollPosition */.ChatScrollType.FOCUS_ONLY, index: tmp16 };
-        tmp14 = obj;
+      const findIndexResult2 = rows.findIndex((message) => {
+        let tmp = null != message.message;
+        if (tmp) {
+          tmp = message.message.id === focusTargetId;
+        }
+        return tmp;
+      });
+      let tmp13;
+      if (-1 !== findIndexResult2) {
+        tmp13 = findIndexResult2;
+      }
+      if (null != tmp13) {
+        obj = { type: null, index: null };
+        obj[0] = focusTargetId(9465).ChatScrollType.FOCUS_ONLY;
+        obj[1] = tmp13;
+        tmp11 = obj;
       }
     }
-    tmp3 = tmp14;
+    tmp4 = tmp11;
   }
-  return tmp3;
+  return tmp4;
 };
-export { findMessageRowIndex };
+export const findMessageRowIndex = function findMessageRowIndex(previousRows, ChatTTITracker) {
+  let closure_0 = ChatTTITracker;
+  const findIndexResult = previousRows.findIndex((message) => {
+    let tmp = null != message.message;
+    if (tmp) {
+      tmp = message.message.id === focusTargetId;
+    }
+    return tmp;
+  });
+  return -1 !== findIndexResult ? findIndexResult : undefined;
+};

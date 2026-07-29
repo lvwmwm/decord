@@ -1,153 +1,157 @@
-// Module ID: 5189
-// Function ID: 45054
+// Module ID: 5211
+// Function ID: 5212
 // Name: DropdownOptionRow
-// Dependencies: [31, 27, 5026, 5093, 1853, 33, 4165, 624, 5184, 1392, 1273, 1212, 4161, 5190, 1557, 4133, 5220, 5221, 5223, 4578, 2]
+// Dependencies: [19, 17, 5048, 5115, 1877, 21, 4189, 647, 5206, 1416, 1297, 1236, 4185, 5212, 1581, 4157, 5242, 5243, 5245, 4600, 2]
 // Exports: default
 
-// Module 5189 (DropdownOptionRow)
-import result from "result";
-import { View } from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_6 from "_isNativeReflectConstruct";
+// Module 5211 (DropdownOptionRow)
+import Button from "Button";
+import { View } from "Background";
+import getEmojiToGroupId from "getEmojiToGroupId";
+import handleUpdate from "handleUpdate";
 import { EMOJI_URL_BASE_SIZE } from "set";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_8;
-let closure_9;
+let c9;
+let metroImportAll;
 const require = arg1;
 function DropdownOptionRow(option) {
   let onSelect;
   let responses;
   option = option.option;
   ({ responses, onSelect } = option);
+  let selected;
   const tmp = callback3();
-  let obj = option(hasItem[7]);
-  const items = [_isNativeReflectConstruct];
+  let obj = option(selected[7]);
+  const items = [getEmojiToGroupId];
   const stateFromStores = obj.useStateFromStores(items, () => {
     const emoji = option.emoji;
     let id;
-    if (null != emoji) {
+    if (emoji != null) {
       id = emoji.id;
     }
     let usableCustomEmojiById = null;
     if (null != id) {
       const emoji2 = option.emoji;
       let id1;
-      if (null != emoji2) {
+      if (emoji2 != null) {
         id1 = emoji2.id;
       }
       usableCustomEmojiById = outer1_5.getUsableCustomEmojiById(id1);
     }
     return usableCustomEmojiById;
   });
-  hasItem = responses.includes(option.id);
-  const items1 = [onSelect, option, hasItem];
+  selected = responses.includes(option.id);
+  const items1 = [onSelect, option, selected];
   let emoji = option.emoji;
   let id;
-  const callback = React.useCallback(() => {
-    onSelect(option, !hasItem);
+  const onPress = React.useCallback(() => {
+    onSelect(option, !selected);
   }, items1);
-  if (null != emoji) {
+  if (emoji != null) {
     id = emoji.id;
   }
   if (null != id) {
-    obj = { style: { display: "flex", alignItems: "center" } };
-    obj = {};
-    ({ optionTextEmoji: obj3.textEmojiStyle, optionImageEmoji: obj3.fastImageStyle } = tmp);
+    obj = { style: null, children: null };
+    obj[0] = { display: "flex", alignItems: "center" };
+    obj = { textEmojiStyle: null, fastImageStyle: null, src: null, name: null };
+    ({ optionTextEmoji: obj3[0], optionImageEmoji: obj3[1] } = tmp);
     let emojiURL;
     if (null != stateFromStores) {
-      let obj3 = onSelect(hasItem[9]);
-      const obj1 = {};
-      ({ id: obj5.id, animated: obj5.animated } = stateFromStores);
-      obj1.size = EMOJI_URL_BASE_SIZE;
-      emojiURL = obj3.getEmojiURL(obj1);
+      const obj1 = { id: null, animated: null, size: null };
+      ({ id: obj5[0], animated: obj5[1] } = stateFromStores);
+      obj1[2] = EMOJI_URL_BASE_SIZE;
+      emojiURL = tmp12(tmp3[9]).getEmojiURL(obj1);
+      const tmp12Result = tmp12(tmp3[9]);
     }
-    obj.src = emojiURL;
+    obj[2] = emojiURL;
     const emoji3 = option.emoji;
-    let name;
-    if (null != emoji3) {
-      name = emoji3.name;
+    let str;
+    if (emoji3 != null) {
+      str = emoji3.name;
     }
-    let str = "";
-    if (null != name) {
-      str = name;
+    if (str == null) {
+      str = "";
     }
-    obj.name = str;
-    obj.children = callback(onSelect(hasItem[8]), obj);
-    let tmp8Result = callback(View, obj);
-    const tmp10 = callback;
-    const tmp13 = onSelect(hasItem[8]);
-    const tmp8 = callback;
-    const tmp9 = View;
+    obj[3] = str;
+    obj[1] = callback(onSelect(tmp3[8]), obj);
+    let leading = tmp10(View, obj);
+    const tmp11 = View;
+    tmp12 = onSelect;
+    const tmp13 = onSelect(tmp3[8]);
   } else {
     let emoji2 = option.emoji;
-    let name1;
-    if (null != emoji2) {
-      name1 = emoji2.name;
+    let name;
+    if (emoji2 != null) {
+      name = emoji2.name;
     }
-    tmp8Result = null;
+    leading = null;
   }
-  let tmp19 = null;
+  let trailing = null;
   if (option.canBeNew) {
-    tmp19 = null;
+    trailing = null;
     if (option.isUnseen) {
-      const obj2 = { color: option(hasItem[10]).BadgeColors.BRAND };
-      const intl = option(hasItem[11]).intl;
-      obj2.text = intl.string(option(hasItem[11]).t.y2b7CA);
-      obj2.textStyle = tmp.newBadge;
-      tmp19 = callback(option(hasItem[10]).TextBadge, obj2);
+      const obj2 = { color: null, text: null, textStyle: null };
+      obj2[0] = tmp2(tmp3[10]).BadgeColors.BRAND;
+      const intl = tmp2(tmp3[11]).intl;
+      obj2[1] = intl.string(tmp2(tmp3[11]).t.y2b7CA);
+      obj2[2] = tmp.newBadge;
+      trailing = callback(tmp2(tmp3[10]).TextBadge, obj2);
     }
   }
-  obj3 = { style: tmp.labelRow };
-  const items2 = [callback(option(hasItem[12]).Text, { variant: "text-md/normal", children: option.title }), tmp19];
-  obj3.children = items2;
-  const obj5 = { label: callback2(View, obj3), selected: hasItem, leading: tmp8Result, trailing: tmp19, onPress: callback };
-  return callback(onSelect(hasItem[13]), obj5);
+  const obj3 = { style: tmp.labelRow, children: null };
+  const items2 = [callback(option(selected[12]).Text, { variant: "text-md/normal", children: option.title }), trailing];
+  obj3[1] = items2;
+  const label = callback2(View, obj3);
+  return callback(onSelect(selected[13]), { label, selected, leading, trailing, onPress });
 }
-({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
-let closure_10 = _createForOfIteratorHelperLoose.createStyles({ optionTextEmoji: { fontSize: 24, lineHeight: 24, paddingTop: 5 }, optionImageEmoji: { height: 24, width: 24 }, newBadge: { fontWeight: "bold" }, labelRow: { display: "flex", flexDirection: "row", justifyContent: "space-between", alignItems: "center" }, closeButtonWrapper: { marginTop: 16, marginHorizontal: 16 } });
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/guild_onboarding/native/DropdownOptionsActionSheet.tsx");
+({ jsx: metroImportAll, jsxs: c9 } = jsxProd);
+let closure_10 = createCacheKey.createStyles({ optionTextEmoji: { fontSize: 24, lineHeight: 24, paddingTop: 5 }, optionImageEmoji: { height: 24, width: 24 }, newBadge: { fontWeight: "bold" }, labelRow: { display: "flex", flexDirection: "row", justifyContent: "space-between", alignItems: "center" }, closeButtonWrapper: { marginTop: 16, marginHorizontal: 16 } });
+const result = require("getEmojiToGroupId").fileFinishedImporting("modules/guild_onboarding/native/DropdownOptionsActionSheet.tsx");
 
 export default function DropdownOptionsActionSheet(arg0) {
-  let result;
+  let Button;
   let dependencyMap;
   let importDefault;
   let require;
-  ({ guildId: require, promptId: importDefault, canBeNew: dependencyMap, onSelect: result } = arg0);
-  let obj = require(624) /* defaultAreStatesEqual */;
-  const items = [closure_6];
+  ({ guildId: require, promptId: importDefault, canBeNew: dependencyMap, onSelect: Button } = arg0);
+  let closure_4;
+  let obj = require(647) /* defaultAreStatesEqual */;
+  const items = [handleUpdate];
   const stateFromStores = obj.useStateFromStores(items, () => outer1_6.getOnboardingPrompt(closure_1));
-  let obj1 = require(624) /* defaultAreStatesEqual */;
-  const items1 = [closure_6];
-  let closure_4 = obj1.useStateFromStoresArray(items1, () => outer1_6.getOnboardingResponsesForPrompt(closure_0, closure_1));
+  let obj1 = require(647) /* defaultAreStatesEqual */;
+  const items1 = [handleUpdate];
+  closure_4 = obj1.useStateFromStoresArray(items1, () => outer1_6.getOnboardingResponsesForPrompt(closure_0, closure_1));
   if (null == stateFromStores) {
     return null;
   } else {
-    obj = {};
-    const intl = require(1212) /* getSystemLocale */.intl;
-    obj.title = intl.string(require(1212) /* getSystemLocale */.t.E2ICbC);
-    obj = { scrollable: true };
-    obj.header = callback(require(5220) /* RedesignBottomSheetTitleHeaderBase */.BottomSheetTitleHeader, obj);
-    obj1 = {};
-    const obj2 = { paddingBottom: importDefault(1557)().bottom };
-    obj1.contentContainerStyle = obj2;
-    const obj3 = { accessibilityRole: "radiogroup" };
-    const intl2 = require(1212) /* getSystemLocale */.intl;
-    obj3.accessibilityLabel = intl2.string(require(1212) /* getSystemLocale */.t.E2ICbC);
+    obj = { title: null };
+    const intl = tmp3(1236).intl;
+    obj[0] = intl.string(tmp3(1236).t.E2ICbC);
+    obj = { scrollable: true, header: null, children: null };
+    obj[1] = callback(tmp3(5242).BottomSheetTitleHeader, obj);
+    obj1 = { contentContainerStyle: null, children: null };
+    const obj2 = { paddingBottom: null };
+    obj2[0] = importDefault(1581)().bottom;
+    obj1[0] = obj2;
+    const obj3 = { accessibilityRole: "radiogroup", accessibilityLabel: null, children: null };
+    const intl2 = tmp3(1236).intl;
+    obj3[1] = intl2.string(tmp3(1236).t.E2ICbC);
     const options = stateFromStores.options;
-    obj3.children = options.map((id) => outer1_8(outer1_11, { option: id, responses: closure_4, onSelect: result, canBeNew: Boolean(closure_2) }, id.id));
-    const items2 = [callback(require(1273) /* Button */.CardSection, obj3), ];
-    const obj4 = { style: tmp.closeButtonWrapper };
-    const obj5 = { onPress: tmp3 };
-    const intl3 = require(1212) /* getSystemLocale */.intl;
-    obj5.text = intl3.string(require(1212) /* getSystemLocale */.t.cpT0Cq);
-    obj5.grow = true;
-    obj4.children = callback(require(4578) /* Button */.Button, obj5);
+    obj3[2] = options.map((id) => outer1_8(outer1_11, { option: id, responses: closure_4, onSelect: Button, canBeNew: Boolean(closure_2) }, id.id));
+    const items2 = [callback(tmp3(1297).CardSection, obj3), ];
+    const obj4 = { style: null, children: null };
+    obj4[0] = tmp.closeButtonWrapper;
+    const obj5 = { onPress: null, text: null, grow: true };
+    obj5[0] = tmp5;
+    const intl3 = tmp3(1236).intl;
+    obj5[1] = intl3.string(tmp3(1236).t.cpT0Cq);
+    obj4[1] = callback(tmp3(4600).Button, obj5);
     items2[1] = callback(closure_4, obj4);
-    obj1.children = items2;
-    obj.children = callback2(require(5223) /* BottomSheetModal */.BottomSheetScrollView, obj1);
-    return callback(require(5221) /* Background */.BottomSheet, obj);
+    obj1[1] = items2;
+    obj[2] = callback2(tmp3(5245).BottomSheetScrollView, obj1);
+    return callback(tmp3(5243).BottomSheet, obj);
   }
   tmp = callback3();
 };

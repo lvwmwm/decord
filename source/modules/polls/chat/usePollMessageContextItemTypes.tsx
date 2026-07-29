@@ -1,11 +1,11 @@
-// Module ID: 9535
-// Function ID: 74208
+// Module ID: 9559
+// Function ID: 9560
 // Name: usePollMessageContextItemTypes
-// Dependencies: [1194, 566, 2]
+// Dependencies: [1218, 589, 2]
 // Exports: default
 
-// Module 9535 (usePollMessageContextItemTypes)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 9559 (usePollMessageContextItemTypes)
+import fetchFingerprint from "fetchFingerprint";
 
 const require = arg1;
 let obj = { END_EARLY: 0, [0]: "END_EARLY" };
@@ -13,16 +13,21 @@ let closure_4 = [];
 const result = require("set").fileFinishedImporting("modules/polls/chat/usePollMessageContextItemTypes.tsx");
 
 export default function usePollMessageContextItemTypes(poll) {
-  const obj = require(566) /* initialize */;
-  const items = [_isNativeReflectConstruct];
+  const obj = require(589) /* initialize */;
+  const items = [fetchFingerprint];
   poll = poll.poll;
-  const stateFromStores = obj.useStateFromStores(items, () => outer1_2.getId());
+  const stateFromStores = obj.useStateFromStores(items, () => id.getId());
   if (poll.isPoll()) {
     if (null != poll) {
-      const items1 = [];
       const expiry = poll.expiry;
       const _Date = Date;
-      if (tmp4) {
+      const isSameOrBeforeResult = expiry.isSameOrBefore(Date.now());
+      let tmp5 = !isSameOrBeforeResult;
+      if (!isSameOrBeforeResult) {
+        tmp5 = poll.author.id === stateFromStores;
+      }
+      const items1 = [];
+      if (tmp5) {
         items1.push(obj.END_EARLY);
       }
       return items1;

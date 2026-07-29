@@ -1,21 +1,21 @@
-// Module ID: 15593
-// Function ID: 119851
+// Module ID: 15627
+// Function ID: 15628
 // Name: MobileShopButtonCoachmark
-// Dependencies: [31, 27, 1345, 33, 4165, 689, 15582, 1212, 8406, 2]
+// Dependencies: [19, 17, 1369, 21, 4189, 712, 15616, 1236, 8430, 2]
 // Exports: default
 
-// Module 15593 (MobileShopButtonCoachmark)
-import result from "result";
+// Module 15627 (MobileShopButtonCoachmark)
+import noop from "noop";
 import { Image } from "get ActivityIndicator";
 import { ContentDismissActionType } from "ContentDismissActionType";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
 const require = arg1;
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { height: 80, width: 80, marginTop: require("_createForOfIteratorHelperLoose").space.PX_8, marginBottom: -require("_createForOfIteratorHelperLoose").space.PX_16 };
-_createForOfIteratorHelperLoose.image = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+createCacheKey = { image: null };
+createCacheKey = { height: 80, width: 80, marginTop: require("Themes").space.PX_8, marginBottom: -require("Themes").space.PX_16 };
+createCacheKey[0] = createCacheKey;
+createCacheKey = createCacheKey.createStyles(createCacheKey);
 const result = require("ContentDismissActionType").fileFinishedImporting("modules/collectibles/native/MobileShopButtonCoachmark.tsx");
 
 export default function MobileShopButtonCoachmark(marketing) {
@@ -23,26 +23,34 @@ export default function MobileShopButtonCoachmark(marketing) {
   const navigateToShop = marketing.navigateToShop;
   const visible = marketing.visible;
   const onDismiss = marketing.onDismiss;
-  const tmp = _createForOfIteratorHelperLoose();
-  const ContentDismissActionType = tmp;
-  const assetLight = marketing.assetLight;
-  _createForOfIteratorHelperLoose = visible.useRef(false);
+  let c4;
+  let assetLight;
+  let createCacheKey;
+  let callback;
+  let callback1;
+  let closure_9;
+  const tmp = createCacheKey();
+  c4 = tmp;
+  assetLight = marketing.assetLight;
+  createCacheKey = visible.useRef(false);
   const items = [onDismiss, navigateToShop];
-  const callback = visible.useCallback(() => {
+  callback = visible.useCallback(() => {
     closure_6.current = true;
+    onDismiss(_undefined.TAKE_ACTION);
     navigateToShop();
   }, items);
   const items1 = [onDismiss];
-  const callback1 = visible.useCallback(() => {
+  callback1 = visible.useCallback(() => {
     closure_6.current = true;
+    onDismiss(_undefined.USER_DISMISS);
   }, items1);
-  let closure_9 = visible.useRef(onDismiss);
+  closure_9 = visible.useRef(onDismiss);
   const effect = visible.useEffect(() => {
     closure_9.current = onDismiss;
   });
   const effect1 = visible.useEffect(() => () => {
-    if (!outer1_6.current) {
-      outer1_9.current(constants.AUTO_DISMISS);
+    if (!ref.current) {
+      ref2.current(outer1_4.AUTO_DISMISS);
     }
   }, []);
   const items2 = [, , , , , , , ];
@@ -53,26 +61,25 @@ export default function MobileShopButtonCoachmark(marketing) {
   items2[6] = callback;
   items2[7] = callback1;
   const memo = visible.useMemo(() => {
-    let obj = { title: marketing.title, description: marketing.body, visible };
+    let obj = { title: marketing.title, description: marketing.body, visible, position: null, renderImgComponent: null, buttonLabel: null, buttonVariant: "secondary", onButtonPress: null, onDismiss: null };
     let str = "bottom";
     if (obj2.isYouNavFloating()) {
       str = "top";
     }
-    obj.position = str;
-    obj.renderImgComponent = function renderImgComponent() {
-      obj = { style: outer1_4.image, source: obj };
-      obj = { uri: outer1_5 };
-      return assetLight(onDismiss, obj);
+    obj[3] = str;
+    obj[4] = function renderImgComponent() {
+      obj = { style: image.image, source: obj };
+      obj = { uri: closure_5 };
+      return outer1_5(outer1_3, obj);
     };
     let buttonLabel = marketing.buttonLabel;
-    if (null == buttonLabel) {
-      const intl = marketing(navigateToShop[7]).intl;
-      buttonLabel = intl.string(marketing(navigateToShop[7]).t.fYfGgK);
+    if (buttonLabel == null) {
+      const intl = tmp2(tmp3[7]).intl;
+      buttonLabel = intl.string(tmp2(tmp3[7]).t.fYfGgK);
     }
-    obj.buttonLabel = buttonLabel;
-    obj.buttonVariant = "secondary";
-    obj.onButtonPress = callback;
-    obj.onDismiss = callback1;
+    obj[5] = buttonLabel;
+    obj[7] = callback;
+    obj[8] = callback1;
     return obj;
   }, items2);
   const coachmark = marketing(navigateToShop[8]).useCoachmark(marketing.shopButtonRef, memo);

@@ -1,22 +1,22 @@
-// Module ID: 4704
-// Function ID: 40671
-// Name: isClipsV3Enabled
-// Dependencies: [1428, 2]
-// Exports: getClipsRuntime, isClipsV3MLEnabled, setActiveClipsRuntime, useIsClipsV3Enabled, useIsClipsV3MLEnabled
+// Module ID: 4726
+// Function ID: 4727
+// Name: apexExperiment
+// Dependencies: [1452, 2]
+// Exports: getClipsRuntime, isClipsV3Enabled, isClipsV3MLEnabled, setActiveClipsRuntime, useIsClipsV3Enabled, useIsClipsV3MLEnabled
 
-// Module 4704 (isClipsV3Enabled)
+// Module 4726 (apexExperiment)
 import ApexExperiment from "ApexExperiment";
 
-function isClipsV3Enabled(location) {
-  return apexExperiment.getConfig({ location }).enableClipsV3;
-}
-const obj = { kind: "user", name: "2026-04-clips-v3-runtime", defaultConfig: { enableClipsV3: false, enableClipsV3ML: false }, variations: { [1]: { enableClipsV3: true, enableClipsV3ML: false }, [2]: { enableClipsV3: true, enableClipsV3ML: true } } };
-const apexExperiment = ApexExperiment.createApexExperiment(obj);
+let obj = { 1: null, 2: { enableClipsV3: true, enableClipsV3ML: false } };
+obj[2] = { enableClipsV3: true, enableClipsV3ML: true };
+const apexExperiment = ApexExperiment.createApexExperiment({ kind: "user", name: "2026-04-clips-v3-runtime", defaultConfig: { enableClipsV3: false, enableClipsV3ML: false }, variations: obj });
 let c1 = null;
 const result = require("set").fileFinishedImporting("modules/clips/ClipsV3RuntimeExperiment.tsx");
 
 export const ClipsV3RuntimeExperiment = apexExperiment;
-export { isClipsV3Enabled };
+export const isClipsV3Enabled = function isClipsV3Enabled(location) {
+  return apexExperiment.getConfig({ location }).enableClipsV3;
+};
 export const useIsClipsV3Enabled = function useIsClipsV3Enabled(location) {
   return apexExperiment.useConfig({ location }).enableClipsV3;
 };
@@ -27,8 +27,10 @@ export const getClipsRuntime = function getClipsRuntime(classifyHardwareAndTrack
   if (null != c1) {
     let str = c1;
   } else {
+    const obj = { location: null };
+    obj[0] = classifyHardwareAndTrack;
     str = "v1";
-    if (isClipsV3Enabled(classifyHardwareAndTrack)) {
+    if (apexExperiment.getConfig(obj).enableClipsV3) {
       str = "v3";
     }
   }

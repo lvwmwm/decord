@@ -1,58 +1,56 @@
-// Module ID: 8218
-// Function ID: 65736
+// Module ID: 8242
+// Function ID: 8243
 // Name: CollapsableButton
-// Dependencies: [31, 33, 4582, 4165, 4026, 4577, 4581, 4579, 8219, 689, 2]
+// Dependencies: [19, 21, 4604, 4189, 4050, 4599, 4603, 4601, 8243, 712, 2]
 // Exports: CollapsibleFloatingActionButton
 
-// Module 8218 (CollapsableButton)
-import result from "result";
+// Module 8242 (CollapsableButton)
+import noop from "noop";
 import { jsx } from "jsxProd";
-import getButtonPadding from "getButtonPadding";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import MINIMUM_HIT_AREA from "MINIMUM_HIT_AREA";
+import createCacheKey from "createCacheKey";
 
 const require = arg1;
 function CollapsableButton(arg0) {
   let state;
   let style;
   ({ state, style } = arg0);
-  let obj = Object.create(null);
-  obj.state = 0;
-  obj.style = 0;
-  const collapseText = state.collapseText;
-  const merged = Object.assign(arg0, obj);
-  obj = collapseText(4026);
+  let collapseText;
+  collapseText = state.collapseText;
+  const merged = Object.assign(arg0, Object.create(null));
+  let obj = collapseText(4050);
   class B {
     constructor() {
-      obj = { minWidth: collapseText(outer1_2[2]).FAB_BUTTON_SIZE, minHeight: collapseText(outer1_2[2]).FAB_BUTTON_SIZE };
+      obj = { minWidth: collapseText(outer1_2[2]).FAB_BUTTON_SIZE, minHeight: collapseText(outer1_2[2]).FAB_BUTTON_SIZE, paddingHorizontal: null, paddingVertical: null };
       obj2 = collapseText(outer1_2[5]);
       obj3 = collapseText(outer1_2[4]);
       items = [20];
       items[1] = outer1_5;
       interpolateResult = obj3.interpolate(collapseText.get(), [0, 1], items);
-      obj.paddingHorizontal = obj2.withSpring(interpolateResult, collapseText(outer1_2[6]).SUBTLE_SPRING, "animate-always");
-      obj.paddingVertical = outer1_5;
+      obj[2] = obj2.withSpring(interpolateResult, collapseText(outer1_2[6]).SUBTLE_SPRING, "animate-always");
+      obj[3] = outer1_5;
       return obj;
     }
   }
-  obj = { FAB_BUTTON_SIZE: collapseText(4582).FAB_BUTTON_SIZE, withSpring: collapseText(4577).withSpring, interpolate: collapseText(4026).interpolate, collapseText, FAB_PADDING_HORIZONTAL: 20, FAB_PADDING_VERTICAL: buttonPadding, SUBTLE_SPRING: collapseText(4581).SUBTLE_SPRING };
+  obj = { FAB_BUTTON_SIZE: collapseText(4604).FAB_BUTTON_SIZE, withSpring: collapseText(4599).withSpring, interpolate: collapseText(4050).interpolate, collapseText, FAB_PADDING_HORIZONTAL: 20, FAB_PADDING_VERTICAL: buttonPadding, SUBTLE_SPRING: collapseText(4603).SUBTLE_SPRING };
   B.__closure = obj;
   B.__workletHash = 5958377845220;
   B.__initData = closure_7;
   const animatedStyle = obj.useAnimatedStyle(B);
-  const obj1 = {};
+  obj = {};
   const merged1 = Object.assign(merged);
-  obj1["size"] = "lg";
-  obj1["variant"] = "primary";
-  obj1["textVariant"] = "text-md/semibold";
-  obj1["collapseText"] = collapseText;
-  obj1["style"] = style;
-  obj1["pillStyle"] = animatedStyle;
-  return jsx(collapseText(4579).BaseTextButton, {});
+  obj.size = "lg";
+  obj.variant = "primary";
+  obj.textVariant = "text-md/semibold";
+  obj.collapseText = collapseText;
+  obj.style = style;
+  obj.pillStyle = animatedStyle;
+  return jsx(collapseText(4601).BaseTextButton, {});
 }
-const buttonPadding = getButtonPadding.getButtonPadding(require("getButtonPadding").FAB_BUTTON_SIZE, require("getButtonPadding").FAB_BUTTON_ICON_SIZE);
-let closure_6 = _createForOfIteratorHelperLoose.createStyles({ textButtonPill: { paddingHorizontal: 20, paddingVertical: buttonPadding } });
+const buttonPadding = MINIMUM_HIT_AREA.getButtonPadding(require("MINIMUM_HIT_AREA").FAB_BUTTON_SIZE, require("MINIMUM_HIT_AREA").FAB_BUTTON_ICON_SIZE);
+let closure_6 = createCacheKey.createStyles({ textButtonPill: { paddingHorizontal: 20, paddingVertical: buttonPadding } });
 let closure_7 = { code: "function CollapsibleFloatingActionButtonNativeTsx1(){const{FAB_BUTTON_SIZE,withSpring,interpolate,collapseText,FAB_PADDING_HORIZONTAL,FAB_PADDING_VERTICAL,SUBTLE_SPRING}=this.__closure;return{minWidth:FAB_BUTTON_SIZE,minHeight:FAB_BUTTON_SIZE,paddingHorizontal:withSpring(interpolate(collapseText.get(),[0,1],[FAB_PADDING_HORIZONTAL,FAB_PADDING_VERTICAL]),SUBTLE_SPRING,'animate-always'),paddingVertical:FAB_PADDING_VERTICAL};}" };
-const result = require("getButtonPadding").fileFinishedImporting("design/components/experimental/Button/native/CollapsibleFloatingActionButton.native.tsx");
+const result = require("MINIMUM_HIT_AREA").fileFinishedImporting("design/components/experimental/Button/native/CollapsibleFloatingActionButton.native.tsx");
 
 export const CollapsibleFloatingActionButton = function CollapsibleFloatingActionButton(arg0) {
   let icon;
@@ -61,45 +59,45 @@ export const CollapsibleFloatingActionButton = function CollapsibleFloatingActio
   let state;
   let text;
   ({ icon, positionBottom, positionRight, text, state } = arg0);
-  let obj = { icon: 0, positionBottom: 0, positionRight: 0, text: 0, state: 0 };
-  Object.setPrototypeOf(null);
-  const merged = Object.assign(arg0, obj);
-  let obj1 = require(8219) /* styles */;
-  const styles = obj1.useStyles();
+  const merged = Object.assign(arg0, Object.create(null));
+  let obj = require(8243) /* styles */;
+  let obj1 = validElement;
+  const styles = obj.useStyles();
   let cloneElementResult = icon;
-  if (result.isValidElement(icon)) {
-    obj = { color: importDefault(689).colors.WHITE };
-    cloneElementResult = result.cloneElement(icon, obj);
+  if (validElement.isValidElement(icon)) {
+    obj = { color: null };
+    obj[0] = importDefault(712).colors.WHITE;
+    cloneElementResult = obj1.cloneElement(icon, obj);
   }
-  obj = { position: "absolute" };
-  if (null == positionRight) {
-    positionRight = require(8219) /* styles */.DEFAULT_POSITION_OFFSET;
+  const items = [styles.button, ];
+  if (positionRight == null) {
+    positionRight = tmp3(8243).DEFAULT_POSITION_OFFSET;
   }
-  obj.right = positionRight;
-  if (null == positionBottom) {
-    positionBottom = require(8219) /* styles */.DEFAULT_POSITION_OFFSET;
+  obj = { position: "absolute", right: positionRight, bottom: null };
+  if (positionBottom == null) {
+    positionBottom = tmp3(8243).DEFAULT_POSITION_OFFSET;
   }
-  obj.bottom = positionBottom;
-  const items = [styles.button, obj];
+  obj[2] = positionBottom;
+  items[1] = obj;
   if (null != state) {
     obj1 = {};
     const merged1 = Object.assign(merged);
-    obj1["state"] = state;
-    obj1["text"] = text;
-    obj1["style"] = items;
-    obj1["icon"] = cloneElementResult;
-    let tmp18 = <CollapsableButton />;
+    obj1.state = state;
+    obj1.text = text;
+    obj1.style = items;
+    obj1.icon = cloneElementResult;
+    let tmp12 = <CollapsableButton />;
   } else {
     const obj2 = {};
     const merged2 = Object.assign(merged);
-    obj2["text"] = text;
-    obj2["size"] = "lg";
-    obj2["variant"] = "primary";
-    obj2["textVariant"] = "text-md/semibold";
-    obj2["icon"] = cloneElementResult;
-    obj2["style"] = items;
-    obj2["pillStyle"] = tmp3.textButtonPill;
-    tmp18 = jsx(require(4579) /* CollapsingText */.BaseTextButton, {});
+    obj2.text = text;
+    obj2.size = "lg";
+    obj2.variant = "primary";
+    obj2.textVariant = "text-md/semibold";
+    obj2.icon = cloneElementResult;
+    obj2.style = items;
+    obj2.pillStyle = tmp2.textButtonPill;
+    tmp12 = jsx(tmp3(4601).BaseTextButton, {});
   }
-  return tmp18;
+  return tmp12;
 };

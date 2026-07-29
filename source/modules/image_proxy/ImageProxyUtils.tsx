@@ -1,32 +1,31 @@
-// Module ID: 4196
-// Function ID: 35262
+// Module ID: 4220
+// Function ID: 4221
 // Name: isImageProxyURL
-// Dependencies: [1443, 1426, 2]
-// Exports: getSizedImageProxyURL
+// Dependencies: [1467, 1450, 2]
+// Exports: getSizedImageProxyURL, isImageProxyURL
 
-// Module 4196 (isImageProxyURL)
+// Module 4220 (isImageProxyURL)
 import set from "set";
 
+let parts;
+if (window.GLOBAL_ENV.IMAGE_PROXY_ENDPOINTS != null) {
+  parts = str.split(",");
+}
+if (parts == null) {
+  parts = [];
+}
 function isImageProxyURL(hostname) {
-  const tmp = !set.has(hostname.hostname);
-  let startsWithResult = !tmp;
-  if (!tmp) {
+  let startsWithResult = set.has(hostname.hostname);
+  if (startsWithResult) {
     const pathname = hostname.pathname;
     startsWithResult = pathname.startsWith("/external/");
   }
   return startsWithResult;
 }
-let parts;
-if (null != window.GLOBAL_ENV.IMAGE_PROXY_ENDPOINTS) {
-  parts = str.split(",");
-}
-if (null == parts) {
-  parts = [];
-}
 const mapped = parts.map((str) => str.substring(2));
 const mapped1 = mapped.map(function getHostWithoutPort(arg0) {
   let first;
-  if (null != arg0) {
+  if (arg0 != null) {
     first = arg0.split(":")[0];
   }
   return first;
@@ -39,18 +38,23 @@ export const getSizedImageProxyURL = function getSizedImageProxyURL(value, arg1)
   let keepAspectRatio;
   let size;
   ({ size, keepAspectRatio } = arg1);
-  const str = importDefault(1443).toURLSafe(value);
+  const str = importDefault(1467).toURLSafe(value);
   if (null != str) {
-    if (isImageProxyURL(str)) {
+    let startsWithResult = set.has(str.hostname);
+    if (startsWithResult) {
+      const pathname = str.pathname;
+      startsWithResult = pathname.startsWith("/external/");
+    }
+    if (startsWithResult) {
       if (null != size) {
         const _String = String;
-        const obj2 = require(1426) /* isAttachmentLadderEnabled */;
-        const StringResult = String(obj2.getBestMediaProxySize(size * require(1426) /* isAttachmentLadderEnabled */.getDevicePixelRatio()));
+        const obj2 = require(1450) /* isAttachmentLadderEnabled */;
+        const StringResult = String(obj2.getBestMediaProxySize(size * require(1450) /* isAttachmentLadderEnabled */.getDevicePixelRatio()));
         const searchParams = str.searchParams;
         const result = searchParams.set("width", StringResult);
         const searchParams2 = str.searchParams;
         const result1 = searchParams2.set("height", StringResult);
-        const obj3 = require(1426) /* isAttachmentLadderEnabled */;
+        const obj3 = require(1450) /* isAttachmentLadderEnabled */;
       }
       if (null != keepAspectRatio) {
         const searchParams3 = str.searchParams;

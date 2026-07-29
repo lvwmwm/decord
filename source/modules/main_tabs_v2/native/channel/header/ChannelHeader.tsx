@@ -1,12 +1,12 @@
-// Module ID: 10115
-// Function ID: 78225
+// Module ID: 10136
+// Function ID: 10137
 // Name: ChannelHeader
-// Dependencies: [31, 1348, 653, 1355, 33, 477, 4024, 10097, 1207, 4017, 624, 4380, 10116, 10118, 10120, 10126, 1212, 10128, 2]
+// Dependencies: [19, 1372, 676, 1379, 21, 500, 4048, 10118, 1231, 4041, 647, 4403, 10137, 10139, 10141, 10147, 1236, 10149, 2]
 // Exports: default, navigateToChannelDetails
 
-// Module 10115 (ChannelHeader)
-import "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 10136 (ChannelHeader)
+import "noop";
+import ensureGuildLoaded from "ensureGuildLoaded";
 import { ComponentActions } from "ME";
 import { StaticChannelRoute } from "set";
 import { jsx } from "jsxProd";
@@ -31,81 +31,103 @@ export default function ChannelHeader(channelId) {
   if (flag2 === undefined) {
     flag2 = false;
   }
-  let obj = channelId(624);
-  const items = [_isNativeReflectConstruct];
+  let obj = channelId(647);
+  const items = [ensureGuildLoaded];
   const stateFromStores = obj.useStateFromStores(items, () => outer1_3.getChannel(channelId));
-  const tmp = !channelId(4380).useIsChannelContentGated(stateFromStores) && pressable;
+  const isChannelContentGated = channelId(4403).useIsChannelContentGated(stateFromStores);
+  let tmp4 = !isChannelContentGated;
+  if (!isChannelContentGated) {
+    tmp4 = pressable;
+  }
   if (channelId === StaticChannelRoute.ROLE_SUBSCRIPTIONS) {
-    let tmp2Result = jsx(importDefault(10116), {});
-  } else if (channelId === StaticChannelRoute.GUILD_HOME) {
-    tmp2Result = jsx(importDefault(10118), {});
+    let tmp8Result = jsx(importDefault(10137), {});
+  } else if (channelId === tmp5.GUILD_HOME) {
+    tmp8Result = jsx(importDefault(10139), {});
   } else {
-    if (null != stateFromStores) {
-      if (stateFromStores.isPrivate()) {
-        obj = { channelId, pressable: tmp, screenIndex };
-        tmp2Result = jsx(importDefault(10120), { channelId, pressable: tmp, screenIndex });
-      }
+    let isPrivateResult;
+    if (stateFromStores != null) {
+      isPrivateResult = stateFromStores.isPrivate();
     }
-    if (null != stateFromStores) {
-      if (stateFromStores.isForumLikeChannel()) {
-        obj = { channelId };
+    if (isPrivateResult) {
+      obj = { channelId: null, pressable: null, screenIndex: null };
+      obj[0] = channelId;
+      obj[1] = tmp4;
+      obj[2] = screenIndex;
+      tmp8Result = jsx(importDefault(10141), { channelId: null, pressable: null, screenIndex: null });
+    } else {
+      let isForumLikeChannelResult;
+      if (stateFromStores != null) {
+        isForumLikeChannelResult = stateFromStores.isForumLikeChannel();
+      }
+      if (isForumLikeChannelResult) {
+        obj = { channelId: null, guildId: null, pressable: null, isGuildMemberCountVisible: null, isNavigationScreen: null, screenIndex: null, searchPlaceholder: null };
+        obj[0] = channelId;
         let guild_id;
-        if (null != stateFromStores) {
+        let tmp9Result = tmp9(10147);
+        if (stateFromStores != null) {
           guild_id = stateFromStores.guild_id;
         }
-        obj.guildId = guild_id;
-        obj.pressable = tmp;
-        obj.isGuildMemberCountVisible = flag;
-        obj.isNavigationScreen = isNavigationScreen;
-        obj.screenIndex = screenIndex;
+        obj[1] = guild_id;
+        obj[2] = tmp4;
+        obj[3] = flag;
+        obj[4] = isNavigationScreen;
+        obj[5] = screenIndex;
         let stringResult;
         if (!stateFromStores.isForumChannel()) {
-          const intl = channelId(1212).intl;
-          stringResult = intl.string(channelId(1212).t["L9fR+P"]);
+          const intl = tmp(1236).intl;
+          stringResult = intl.string(tmp(1236).t["L9fR+P"]);
         }
-        obj.searchPlaceholder = stringResult;
-        tmp2Result = jsx(importDefault(10126), { channelId });
-        const tmp11 = importDefault(10126);
-        const tmp8 = jsx;
+        obj[6] = stringResult;
+        tmp8Result = tmp8(tmp9Result, obj);
+      } else {
+        const obj1 = { channelId: null, guildId: null, pressable: null, isGuildMemberCountVisible: null, isNavigationScreen: null, screenIndex: null, showCreateThread: null };
+        obj1[0] = channelId;
+        let guild_id1;
+        tmp9Result = tmp9(10149);
+        if (stateFromStores != null) {
+          guild_id1 = stateFromStores.guild_id;
+        }
+        obj1[1] = guild_id1;
+        obj1[2] = tmp4;
+        obj1[3] = flag;
+        obj1[4] = isNavigationScreen;
+        obj1[5] = screenIndex;
+        obj1[6] = flag2;
+        tmp8Result = tmp8(tmp9Result, obj1);
       }
     }
-    const obj1 = { channelId };
-    let guild_id1;
-    if (null != stateFromStores) {
-      guild_id1 = stateFromStores.guild_id;
-    }
-    obj1.guildId = guild_id1;
-    obj1.pressable = tmp;
-    obj1.isGuildMemberCountVisible = flag;
-    obj1.isNavigationScreen = isNavigationScreen;
-    obj1.screenIndex = screenIndex;
-    obj1.showCreateThread = flag2;
-    tmp2Result = jsx(importDefault(10128), { channelId });
-    const tmp2 = jsx;
-    const tmp5 = importDefault(10128);
   }
-  return tmp2Result;
+  return tmp8Result;
 };
-export const navigateToChannelDetails = function navigateToChannelDetails(channelId, screenIndex, source) {
-  let obj = require(477) /* set */;
+export const navigateToChannelDetails = function navigateToChannelDetails(channelId, screenIndex, arg2) {
+  let obj = require(500) /* set */;
   if (obj.isIOS()) {
-    const chatInputRef = require(4024) /* getHighestActiveScreenIndex */.getChatInputRef(channelId, screenIndex);
-    if (null != chatInputRef) {
+    let tmpResult = tmp(4048);
+    const chatInputRef = tmpResult.getChatInputRef(channelId, screenIndex);
+    if (chatInputRef != null) {
       chatInputRef.blur();
     }
-    const obj2 = require(4024) /* getHighestActiveScreenIndex */;
   }
-  if (obj4.isSwipeToMemberListEnabled()) {
-    const ComponentDispatch = tmp5(1207).ComponentDispatch;
-    obj = { source, channelId, screenIndex };
+  tmpResult = tmp(10118);
+  if (tmpResult.isSwipeToMemberListEnabled()) {
+    const ComponentDispatch = tmp(1231).ComponentDispatch;
+    obj = { source: null, channelId: null, screenIndex: null };
+    obj[0] = arg2;
+    obj[1] = channelId;
+    obj[2] = screenIndex;
     ComponentDispatch.dispatch(ComponentActions.SHOW_CHANNEL_DETAILS, obj);
   } else {
-    const rootNavigationRef = tmp5(4017).getRootNavigationRef();
-    const tmp5Result = tmp5(4017);
-    if (tmp8) {
-      obj = { channelId, source };
+    const rootNavigationRef = tmp(4041).getRootNavigationRef();
+    let isReadyResult;
+    if (rootNavigationRef != null) {
+      isReadyResult = rootNavigationRef.isReady();
+    }
+    if (isReadyResult) {
+      obj = { channelId: null, source: null };
+      obj[0] = channelId;
+      obj[1] = arg2;
       rootNavigationRef.navigate("sidebar", obj);
     }
-    tmp8 = null != rootNavigationRef && rootNavigationRef.isReady();
+    const tmpResult1 = tmp(4041);
   }
 };

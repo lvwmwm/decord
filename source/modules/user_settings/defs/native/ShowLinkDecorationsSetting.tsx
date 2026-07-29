@@ -1,25 +1,25 @@
-// Module ID: 14348
-// Function ID: 110034
+// Module ID: 14370
+// Function ID: 14371
 // Name: useShowLinkDecorationsSettingValue
-// Dependencies: [4157, 7733, 566, 13479, 10099, 1212, 2]
+// Dependencies: [4181, 7756, 589, 13502, 10120, 1236, 2]
 // Exports: onShowLinkDecorationsValueChange, useShowLinkDecorationsSettingValue
 
-// Module 14348 (useShowLinkDecorationsSettingValue)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 14370 (useShowLinkDecorationsSettingValue)
+import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
 import createToggle from "createToggle";
 
 const require = arg1;
 function useShowLinkDecorationsSettingValue() {
-  const items = [_isNativeReflectConstruct];
-  return require(566) /* initialize */.useStateFromStores(items, () => outer1_2.alwaysShowLinkDecorations);
+  const items = [maybeApplyNoTextColorForLightCustomTheme];
+  return require(589) /* initialize */.useStateFromStores(items, () => obj.alwaysShowLinkDecorations);
 }
 function onShowLinkDecorationsValueChange(alwaysShowLinkDecorations) {
-  const result = require(13479) /* setFontSize */.setAlwaysShowLinkDecorations(alwaysShowLinkDecorations);
+  const result = require(13502) /* setFontSize */.setAlwaysShowLinkDecorations(alwaysShowLinkDecorations);
 }
 createToggle = {
   useTitle() {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(require(1212) /* getSystemLocale */.t.OLZFB8);
+    const intl = require(1236) /* getSystemLocale */.intl;
+    return intl.string(require(1236) /* getSystemLocale */.t.OLZFB8);
   },
   parent: require("MobileSetting").MobileSetting.ACCESSIBILITY,
   useValue: useShowLinkDecorationsSettingValue,

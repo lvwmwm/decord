@@ -1,16 +1,16 @@
-// Module ID: 11077
-// Function ID: 85964
+// Module ID: 11101
+// Function ID: 11102
 // Name: useSafetyHubInitialized
-// Dependencies: [11048, 566, 2]
+// Dependencies: [11072, 589, 2]
 // Exports: useSafetyHubInitialized
 
-// Module 11077 (useSafetyHubInitialized)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 11101 (useSafetyHubInitialized)
+import handleSafetyHubRequestAgeVerificationResetModalAction from "handleSafetyHubRequestAgeVerificationResetModalAction";
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/safety_hub/hooks/useSafetyHubInitialized.tsx");
 
 export const useSafetyHubInitialized = function useSafetyHubInitialized() {
-  const items = [_isNativeReflectConstruct];
-  return require(566) /* initialize */.useStateFromStores(items, () => outer1_2.isInitialized());
+  const items = [handleSafetyHubRequestAgeVerificationResetModalAction];
+  return require(589) /* initialize */.useStateFromStores(items, () => initialized.isInitialized());
 };

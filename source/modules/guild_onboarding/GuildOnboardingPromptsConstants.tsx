@@ -1,115 +1,27 @@
-// Module ID: 5094
-// Function ID: 43960
-// Name: _createForOfIteratorHelperLoose
-// Dependencies: [57, 29, 653, 636, 1212, 1832, 2]
-// Exports: clientPromptToServerPrompt, getEmptyPrompt, isDefaultPrompt, isEmojiEmpty, parseConnectionIdentifier, serverApiResponseToClientState, validateOnboardingConnections
+// Module ID: 5116
+// Function ID: 5117
+// Name: serverPromptToClientPrompt
+// Dependencies: [32, 109, 676, 659, 1236, 1856, 2]
+// Exports: clientPromptToServerPrompt, getConnectionIdentifier, getDefaultPrompt, getEmptyPrompt, isDefaultPrompt, isEmojiEmpty, parseConnectionIdentifier, serverApiResponseToClientState, validateOnboardingConnections
 
-// Module 5094 (_createForOfIteratorHelperLoose)
+// Module 5116 (serverPromptToClientPrompt)
 import _slicedToArray from "_slicedToArray";
 import _objectWithoutProperties from "_objectWithoutProperties";
 import { PlatformTypes } from "ME";
 import set from "ME";
 
 const require = arg1;
-function _createForOfIteratorHelperLoose(iterable) {
-  let closure_0 = iterable;
-  iterable = "undefined" !== typeof Symbol;
-  if (iterable) {
-    const _Symbol = Symbol;
-    iterable = iterable[Symbol.iterator];
-  }
-  if (!iterable) {
-    iterable = iterable[Symbol.iterator];
-  }
-  if (iterable) {
-    const iter = iterable.call(iterable);
-    const next = iter.next;
-    return next.bind(iter);
-  } else {
-    const _Array = Array;
-    let tmp = iterable;
-    if (!Array.isArray(iterable)) {
-      let tmp2;
-      if (iterable) {
-        if ("string" === typeof iterable) {
-          tmp2 = _arrayLikeToArray(iterable, undefined);
-        } else {
-          const toString = {}.toString;
-          const substr = toString.call(iterable).slice(8, -1);
-          let name = substr;
-          if (tmp3) {
-            name = iterable.constructor.name;
-          }
-          if ("Map" !== name) {
-            if ("Set" !== name) {
-              if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(iterable, undefined);
-              } else {
-                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
-              }
-            }
-            tmp2 = arr;
-          }
-          const _Array2 = Array;
-          arr = Array.from(iterable);
-          const callResult = toString.call(iterable);
-          tmp3 = "Object" === substr && iterable.constructor;
-        }
-      }
-      tmp = tmp2;
-      if (!tmp2) {
-        const _TypeError = TypeError;
-        const typeError = new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
-        throw typeError;
-      }
-    }
-    if (tmp) {
-      closure_0 = tmp;
-    }
-    let c1 = 0;
-    return () => {
-      if (closure_1 >= length.length) {
-        let obj = { done: true };
-      } else {
-        obj = { done: false };
-        closure_1 = tmp3 + 1;
-        obj.value = length[+closure_1];
-      }
-      return obj;
-    };
-  }
-}
-function _arrayLikeToArray(arg0, arg1) {
-  let length;
-  if (tmp) {
-    length = arg0.length;
-  }
-  const ArrayResult = Array(length);
-  for (let num = 0; num < length; num = num + 1) {
-    ArrayResult[num] = arg0[num];
-  }
-  return ArrayResult;
-}
-function getDefaultPrompt() {
-  const obj = { id: String(Date.now()), title: null, options: null, singleSelect: false, required: false, inOnboarding: true };
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj.title = intl.string(require(1212) /* getSystemLocale */.t.vY91C9);
-  obj.options = [];
-  obj.type = obj.MULTIPLE_CHOICE;
-  return obj;
-}
 function serverPromptToClientPrompt(id) {
   const options = id.options;
   return {
     id: id.id,
     options: options.map((id) => {
-      const obj = { id: id.id, channelIds: id.channel_ids, roleIds: id.role_ids, emoji: id.emoji, title: id.title };
-      const description = id.description;
-      let str = "";
-      if (null != description) {
-        str = description;
+      const obj = { id: id.id, channelIds: id.channel_ids, roleIds: id.role_ids, emoji: id.emoji, title: id.title, description: null };
+      let str = id.description;
+      if (str == null) {
+        str = "";
       }
-      obj.description = str;
+      obj[5] = str;
       return obj;
     }),
     title: id.title,
@@ -120,16 +32,6 @@ function serverPromptToClientPrompt(id) {
     type: id.type
   };
 }
-function getConnectionIdentifier(connection_type) {
-  if (connection_type.connection_type === obj.APPLICATION) {
-    const _HermesInternal2 = HermesInternal;
-    let combined = "app:" + connection_type.application_id;
-  } else {
-    const _HermesInternal = HermesInternal;
-    combined = "provider:" + connection_type.provider_id;
-  }
-  return combined;
-}
 function validateOnboardingConnection(connection_type) {
   const items = [];
   connection_type = connection_type.connection_type;
@@ -137,32 +39,34 @@ function validateOnboardingConnection(connection_type) {
     if (obj3.isNullOrEmpty(connection_type.application_id)) {
       items.push("Application ID is required for application connections");
     }
-    obj3 = require(1832) /* isNullOrEmpty */;
-    if (!obj4.isNullOrEmpty(connection_type.provider_id)) {
+    obj3 = require(1856) /* isNullOrEmpty */;
+    const tmp9 = require;
+    if (!tmp9Result.isNullOrEmpty(connection_type.provider_id)) {
       items.push("Platform ID not allowed for application connections");
     }
-    obj4 = require(1832) /* isNullOrEmpty */;
-  } else if (obj.PROVIDER_CONNECTED_ACCOUNT === connection_type) {
-    obj = require(1832) /* isNullOrEmpty */;
+    tmp9Result = require(1856) /* isNullOrEmpty */;
+  } else if (tmp.PROVIDER_CONNECTED_ACCOUNT === connection_type) {
+    obj = require(1856) /* isNullOrEmpty */;
     if (obj.isNullOrEmpty(connection_type.provider_id)) {
       items.push("Platform ID is required for platform connections");
-    } else if (!closure_10.includes(connection_type.provider_id)) {
+    } else if (!closure_11.includes(connection_type.provider_id)) {
       items.push("Invalid platform ID");
     }
-    if (!obj2.isNullOrEmpty(connection_type.application_id)) {
+    if (!tmp3Result.isNullOrEmpty(connection_type.application_id)) {
       items.push("Application ID not allowed for platform connections");
     }
-    obj2 = require(1832) /* isNullOrEmpty */;
+    const tmp3 = require;
+    tmp3Result = require(1856) /* isNullOrEmpty */;
   } else {
     const connection_type2 = connection_type.connection_type;
     items.push("Invalid connection type");
     return items;
   }
-  let tmp16 = null != connection_type.description;
-  if (tmp16) {
-    tmp16 = connection_type.description.length > 100;
+  let tmp13 = null != connection_type.description;
+  if (tmp13) {
+    tmp13 = connection_type.description.length > 100;
   }
-  if (tmp16) {
+  if (tmp13) {
     items.push("Description must be 100 characters or less");
   }
   return items;
@@ -175,7 +79,7 @@ let items = [, , , , , , , ];
 ({ PLAYSTATION_STAGING: arr[0], CONTACTS: arr[1], DOMAIN: arr[2], TWITTER_LEGACY: arr[3], MASTODON: arr[4], INSTAGRAM: arr[5], LEAGUE_OF_LEGENDS: arr[6], SKYPE: arr[7] } = PlatformTypes);
 let set = new Set(items);
 const values = Object.values(PlatformTypes);
-let closure_10 = values.filter((arg0) => !set.has(arg0));
+let closure_11 = values.filter((arg0) => !set.has(arg0));
 const result = set.fileFinishedImporting("modules/guild_onboarding/GuildOnboardingPromptsConstants.tsx");
 
 export const MAX_PROMPT_TITLE_LENGTH = 100;
@@ -198,17 +102,30 @@ export const isDefaultPrompt = function isDefaultPrompt(options) {
   if (options.options.length > 0) {
     return false;
   } else {
-    const tmp2 = getDefaultPrompt();
-    const id = tmp2.id;
+    const obj = { id: null, title: null, options: null, singleSelect: false, required: false, inOnboarding: true, type: null };
+    const _String = String;
+    const _Date = Date;
+    obj[0] = String(Date.now());
+    const intl = require(1236) /* getSystemLocale */.intl;
+    obj[1] = intl.string(require(1236) /* getSystemLocale */.t.vY91C9);
+    obj[2] = [];
+    obj[6] = obj.MULTIPLE_CHOICE;
+    const id = obj.id;
     const id2 = options.id;
-    const tmp5 = callback2(tmp2, closure_3);
-    return importDefault(636)(tmp5, callback2(options, closure_4));
+    const tmp7 = callback2(obj, closure_3);
+    return importDefault(659)(tmp7, callback2(options, closure_4));
   }
 };
-export { getDefaultPrompt };
+export const getDefaultPrompt = function getDefaultPrompt() {
+  const obj = { id: String(Date.now()), title: null, options: null, singleSelect: false, required: false, inOnboarding: true, type: null };
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj[1] = intl.string(require(1236) /* getSystemLocale */.t.vY91C9);
+  obj[2] = [];
+  obj[6] = obj.MULTIPLE_CHOICE;
+  return obj;
+};
 export const getEmptyPrompt = function getEmptyPrompt(inOnboarding) {
-  const obj = { id: String(Date.now()), title: "", options: [], singleSelect: false, required: false, inOnboarding };
-  obj.type = obj.MULTIPLE_CHOICE;
+  obj = { id: String(Date.now()), title: "", options: [], singleSelect: false, required: false, inOnboarding, type: obj.MULTIPLE_CHOICE };
   return obj;
 };
 export const clientPromptToServerPrompt = function clientPromptToServerPrompt(id) {
@@ -216,26 +133,26 @@ export const clientPromptToServerPrompt = function clientPromptToServerPrompt(id
   return {
     id: id.id,
     options: options.map((id) => {
-      const obj = { id: id.id, channel_ids: id.channelIds, role_ids: id.roleIds, emoji: id.emoji };
+      const obj = { id: id.id, channel_ids: id.channelIds, role_ids: id.roleIds, emoji: id.emoji, emoji_id: null, emoji_name: null, emoji_animated: null, title: null, description: null };
       const emoji = id.emoji;
       id = undefined;
-      if (null != emoji) {
+      if (emoji != null) {
         id = emoji.id;
       }
-      obj.emoji_id = id;
+      obj[4] = id;
       const emoji2 = id.emoji;
       let name;
-      if (null != emoji2) {
+      if (emoji2 != null) {
         name = emoji2.name;
       }
-      obj.emoji_name = name;
+      obj[5] = name;
       const emoji3 = id.emoji;
       let animated;
-      if (null != emoji3) {
+      if (emoji3 != null) {
         animated = emoji3.animated;
       }
-      obj.emoji_animated = animated;
-      ({ title: obj.title, description: obj.description } = id);
+      obj[6] = animated;
+      ({ title: obj[7], description: obj[8] } = id);
       return obj;
     }),
     title: id.title,
@@ -250,33 +167,33 @@ export { serverPromptToClientPrompt };
 export const serverApiResponseToClientState = function serverApiResponseToClientState(defaultChannelIds) {
   let connections;
   let onboarding_prompts_seen;
-  const obj = { prompts: prompts.map(serverPromptToClientPrompt), defaultChannelIds: defaultChannelIds.default_channel_ids };
+  const obj = { prompts: prompts.map(serverPromptToClientPrompt), defaultChannelIds: defaultChannelIds.default_channel_ids, responses: null, mode: null, enabled: null, onboardingPromptsSeen: null, onboardingResponsesSeen: null, belowRequirements: null, connections: null, additionalConnections: null };
   prompts = defaultChannelIds.prompts;
   let responses = defaultChannelIds.responses;
-  if (null == responses) {
+  if (responses == null) {
     responses = [];
   }
-  obj.responses = responses;
-  ({ mode: obj.mode, enabled: obj.enabled, onboarding_prompts_seen } = defaultChannelIds);
-  if (null == onboarding_prompts_seen) {
+  obj[2] = responses;
+  ({ mode: obj[3], enabled: obj[4], onboarding_prompts_seen } = defaultChannelIds);
+  if (onboarding_prompts_seen == null) {
     onboarding_prompts_seen = {};
   }
-  obj.onboardingPromptsSeen = onboarding_prompts_seen;
+  obj[5] = onboarding_prompts_seen;
   let prop = defaultChannelIds.onboarding_responses_seen;
-  if (null == prop) {
+  if (prop == null) {
     prop = {};
   }
-  obj.onboardingResponsesSeen = prop;
-  ({ below_requirements: obj.belowRequirements, connections } = defaultChannelIds);
-  if (null == connections) {
+  obj[6] = prop;
+  ({ below_requirements: obj[7], connections } = defaultChannelIds);
+  if (connections == null) {
     connections = [];
   }
-  obj.connections = connections;
+  obj[8] = connections;
   let prop1 = defaultChannelIds.additional_connections;
-  if (null == prop1) {
+  if (prop1 == null) {
     prop1 = [];
   }
-  obj.additionalConnections = prop1;
+  obj[9] = prop1;
   return obj;
 };
 export const isEmojiEmpty = function isEmojiEmpty(id) {
@@ -288,30 +205,40 @@ export const isEmojiEmpty = function isEmojiEmpty(id) {
   return tmp;
 };
 export const EXCLUDED_ONBOARDING_PLATFORM_TYPES = set;
-export { getConnectionIdentifier };
+export const getConnectionIdentifier = function getConnectionIdentifier(connection_type) {
+  if (connection_type.connection_type === obj.APPLICATION) {
+    const _HermesInternal2 = HermesInternal;
+    let combined = "app:" + connection_type.application_id;
+  } else {
+    const _HermesInternal = HermesInternal;
+    combined = "provider:" + connection_type.provider_id;
+  }
+  return combined;
+};
 export const parseConnectionIdentifier = function parseConnectionIdentifier(str) {
-  const tmp = callback(str.split(":"), 2);
-  const first = tmp[0];
-  if ("app" === first) {
+  let tmp2;
+  let tmp3;
+  [tmp2, tmp3] = callback(str.split(":"), 2);
+  if ("app" === tmp2) {
     if (undefined !== tmp3) {
       if ("" !== tmp3) {
-        let obj = {};
-        obj.type = obj.APPLICATION;
-        obj.applicationId = tmp3;
+        let obj = { type: null, applicationId: null };
+        obj[0] = obj.APPLICATION;
+        obj[1] = tmp3;
         let tmp4 = obj;
       }
       return tmp4;
     }
   }
   tmp4 = null;
-  if ("provider" === first) {
+  if ("provider" === tmp2) {
     tmp4 = null;
     if (undefined !== tmp3) {
       tmp4 = null;
       if ("" !== tmp3) {
-        obj = {};
-        obj.type = obj.PROVIDER_CONNECTED_ACCOUNT;
-        obj.providerId = tmp3;
+        obj = { type: null, providerId: null };
+        obj[0] = obj.PROVIDER_CONNECTED_ACCOUNT;
+        obj[1] = tmp3;
         tmp4 = obj;
       }
     }
@@ -319,32 +246,32 @@ export const parseConnectionIdentifier = function parseConnectionIdentifier(str)
 };
 export { validateOnboardingConnection };
 export const validateOnboardingConnections = function validateOnboardingConnections(arr) {
-  let done;
   let items = [];
   const set = new Set();
   function _loop(arg0) {
     let items = arg0;
-    let arr = outer1_16(closure_2);
+    let arr = outer1_12(connection_type);
     items = [...arr.map((arg0) => "Connection " + closure_0 + 1 + ": " + arg0)];
     items.push.apply(items);
-    const tmp2 = outer1_15(closure_2);
-    if (set.has(tmp2)) {
+    if (connection_type.connection_type === outer1_8.APPLICATION) {
+      const _HermesInternal2 = HermesInternal;
+      let combined = "app:" + tmp.application_id;
+    } else {
+      const _HermesInternal = HermesInternal;
+      combined = "provider:" + tmp.provider_id;
+    }
+    if (set.has(combined)) {
       arr = items.push("Duplicate connection configuration");
     }
-    set.add(tmp2);
+    set.add(combined);
   }
-  let tmp2 = _createForOfIteratorHelperLoose(arr.entries());
-  let iter = tmp2();
-  if (!iter.done) {
-    do {
-      let tmp3 = callback;
-      let tmp4 = callback(iter.value, 2);
-      let dependencyMap = tmp4[1];
-      let _loopResult = _loop(tmp4[0]);
-      let iter2 = tmp2();
-      iter = iter2;
-      done = iter2.done;
-    } while (!done);
+  const entries = arr.entries();
+  while (tmp3 !== undefined) {
+    let tmp5 = callback;
+    let tmp6 = callback(tmp4, 2);
+    let closure_2 = tmp6[1];
+    let _loopResult = _loop(tmp6[0]);
+    continue;
   }
   return items;
 };

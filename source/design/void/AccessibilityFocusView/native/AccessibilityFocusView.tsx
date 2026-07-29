@@ -1,11 +1,11 @@
-// Module ID: 13136
-// Function ID: 101292
+// Module ID: 13159
+// Function ID: 13160
 // Name: AccessibilityFocusView
-// Dependencies: [31, 27, 33, 477, 13137, 2]
+// Dependencies: [19, 17, 21, 500, 13160, 2]
 // Exports: default
 
-// Module 13136 (AccessibilityFocusView)
-import "result";
+// Module 13159 (AccessibilityFocusView)
+import "noop";
 import { jsx } from "jsxProd";
 import set from "set";
 import set from "jsxProd";
@@ -21,12 +21,9 @@ export default function AccessibilityFocusView(arg0) {
   let onAccessibilityBlur;
   let onAccessibilityFocus;
   ({ onAccessibilityFocus, onAccessibilityBlur } = arg0);
-  let obj = Object.create(null);
-  obj.onAccessibilityFocus = 0;
-  obj.onAccessibilityBlur = 0;
-  obj = {};
-  const merged = Object.assign(Object.assign(arg0, obj));
-  obj["onAccessibilityFocus"] = onAccessibilityFocus;
-  obj["onAccessibilityBlur"] = onAccessibilityBlur;
+  const obj = {};
+  const merged = Object.assign(Object.assign(arg0, Object.create(null)));
+  obj.onAccessibilityFocus = onAccessibilityFocus;
+  obj.onAccessibilityBlur = onAccessibilityBlur;
   return <closure_1 />;
 };

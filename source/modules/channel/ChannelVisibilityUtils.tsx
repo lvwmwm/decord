@@ -1,15 +1,15 @@
-// Module ID: 10230
-// Function ID: 78975
+// Module ID: 10251
+// Function ID: 10252
 // Name: isChannelCurrentlyVisible
-// Dependencies: [5856, 1907, 3982, 2]
+// Dependencies: [5874, 1931, 4006, 2]
 // Exports: isChannelCurrentlyVisible
 
-// Module 10230 (isChannelCurrentlyVisible)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_1 from "_isNativeReflectConstruct";
-import closure_2 from "_isNativeReflectConstruct";
+// Module 10251 (isChannelCurrentlyVisible)
+import handlePermissionsChange from "handlePermissionsChange";
+import handleConnectionOpen from "handleConnectionOpen";
+import closure_2 from "handleConnectionOpen";
 
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/channel/ChannelVisibilityUtils.tsx");
+const result = require("handleConnectionOpen").fileFinishedImporting("modules/channel/ChannelVisibilityUtils.tsx");
 
 export const isChannelCurrentlyVisible = function isChannelCurrentlyVisible(id) {
   channelId = channelId.getChannelId(guildId.getGuildId());

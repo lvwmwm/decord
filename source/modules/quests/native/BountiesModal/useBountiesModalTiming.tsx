@@ -1,12 +1,12 @@
-// Module ID: 14033
-// Function ID: 107236
+// Module ID: 14055
+// Function ID: 14056
 // Name: BountyVideoEndMode
-// Dependencies: [57, 31, 5011, 10857, 2]
+// Dependencies: [32, 19, 5033, 10881, 2]
 // Exports: useBountiesModalTiming
 
-// Module 14033 (BountyVideoEndMode)
+// Module 14055 (BountyVideoEndMode)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
+import noop from "noop";
 import { QuestsExperimentLocations } from "QuestsExperimentLocations";
 
 const require = arg1;
@@ -15,16 +15,18 @@ let result = require("QuestsExperimentLocations").fileFinishedImporting("modules
 
 export const BountyVideoEndMode = obj;
 export const useBountiesModalTiming = function useBountiesModalTiming(endMode) {
+  let c11;
   let c12;
   let c13;
   let c14;
   let c15;
   let isCompleted;
   let onRewardEarned;
-  let tmp11;
-  let tmp13;
-  let tmp15;
-  let tmp9;
+  let tmp10;
+  let tmp12;
+  let tmp4;
+  let tmp6;
+  let tmp8;
   endMode = endMode.endMode;
   const rewardDurationMs = endMode.rewardDurationMs;
   ({ isCompleted, onRewardEarned } = endMode);
@@ -42,11 +44,11 @@ export const useBountiesModalTiming = function useBountiesModalTiming(endMode) {
   if (num2 === undefined) {
     num2 = 0;
   }
-  let prop = endMode.initialVideoDurationSec;
-  if (prop === undefined) {
-    prop = null;
+  let num3 = endMode.initialVideoDurationSec;
+  if (num3 === undefined) {
+    num3 = null;
   }
-  let closure_11;
+  c11 = undefined;
   c12 = undefined;
   c13 = undefined;
   c14 = undefined;
@@ -56,151 +58,136 @@ export const useBountiesModalTiming = function useBountiesModalTiming(endMode) {
   let closure_18;
   let closure_19;
   let closure_20;
-  let tmp3 = null != prop;
-  if (tmp3) {
-    tmp3 = num >= prop - 1;
+  let obj = onVideoProgress;
+  let tmp = null != num3;
+  if (tmp) {
+    tmp = num >= num3 - 1;
   }
-  if (tmp3) {
-    tmp3 = endMode !== onVideoLooped.LOOP;
+  if (tmp) {
+    tmp = endMode !== onVideoLooped.LOOP;
   }
-  const tmp5 = onRewardEarned(onVideoProgress.useState(tmp3), 2);
-  const first = tmp5[0];
-  closure_11 = tmp5[1];
-  [tmp9, c12] = onRewardEarned(onVideoProgress.useState(() => {
+  [tmp4, c11] = onRewardEarned(onVideoProgress.useState(tmp), 2);
+  const tmp3 = onRewardEarned(onVideoProgress.useState(tmp), 2);
+  [tmp6, c12] = onRewardEarned(obj.useState(() => {
     let num = 0;
-    if (null != prop) {
-      num = num / prop;
+    if (null != num3) {
+      num = num / tmp;
     }
     return num;
   }), 2);
-  const tmp8 = onRewardEarned(onVideoProgress.useState(() => {
+  const tmp5 = onRewardEarned(obj.useState(() => {
     let num = 0;
-    if (null != prop) {
-      num = num / prop;
+    if (null != num3) {
+      num = num / tmp;
     }
     return num;
   }), 2);
-  [tmp11, c13] = onRewardEarned(onVideoProgress.useState(null), 2);
-  const tmp10 = onRewardEarned(onVideoProgress.useState(null), 2);
-  [tmp13, c14] = onRewardEarned(onVideoProgress.useState(num2), 2);
-  const tmp12 = onRewardEarned(onVideoProgress.useState(num2), 2);
-  [tmp15, c15] = onRewardEarned(onVideoProgress.useState(prop), 2);
-  closure_16 = onVideoProgress.useRef(isCompleted);
-  closure_17 = onVideoProgress.useRef(num2);
-  let num4 = 0;
-  if (null != prop) {
-    num4 = prop;
+  [tmp8, c13] = onRewardEarned(obj.useState(null), 2);
+  const tmp7 = onRewardEarned(obj.useState(null), 2);
+  [tmp10, c14] = onRewardEarned(obj.useState(num2), 2);
+  const tmp9 = onRewardEarned(obj.useState(num2), 2);
+  [tmp12, c15] = onRewardEarned(obj.useState(num3), 2);
+  closure_16 = obj.useRef(isCompleted);
+  closure_17 = obj.useRef(num2);
+  if (num3 == null) {
+    num3 = 0;
   }
-  closure_18 = onVideoProgress.useRef(num4);
-  closure_19 = onVideoProgress.useRef(0);
-  closure_20 = onVideoProgress.useRef(num);
+  closure_18 = obj.useRef(num3);
+  closure_19 = obj.useRef(0);
+  closure_20 = obj.useRef(num);
   const items = [onVideoProgress, onRewardEarned, rewardDurationMs];
   const items1 = [endMode, onVideoEnd, onVideoLooped, onRewardEarned];
-  const callback = onVideoProgress.useCallback((progress) => {
+  const callback = obj.useCallback((progress) => {
     let currentTime;
     let seekableDuration;
     ({ currentTime, seekableDuration } = progress);
-    _undefined2(null);
+    _undefined3(null);
     const bound = Math.max(currentTime, ref2.current);
     ref2.current = bound;
     closure_18.current = seekableDuration;
     closure_20.current = currentTime;
-    _undefined(progress.progress);
-    _undefined3(bound);
-    _undefined4(seekableDuration);
+    _undefined2(progress.progress);
+    _undefined4(bound);
+    _undefined5(seekableDuration);
     onVideoProgress(bound, seekableDuration, currentTime);
-    let tmp7 = !ref.current;
-    if (tmp7) {
-      tmp7 = 1000 * bound >= rewardDurationMs;
+    const current = ref.current;
+    let tmp8 = !current;
+    if (!current) {
+      tmp8 = 1000 * bound >= rewardDurationMs;
     }
-    if (tmp7) {
+    if (tmp8) {
       ref.current = true;
       onRewardEarned();
     }
   }, items);
   const items2 = [playerRef];
-  const callback1 = onVideoProgress.useCallback(() => {
+  const callback1 = obj.useCallback(() => {
     onVideoEnd(ref2.current, ref3.current, ref5.current);
     if (endMode === onVideoLooped.LOOP) {
       ref4.current = ref4.current + 1;
       onVideoLooped(ref4.current);
       ref5.current = 0;
     } else {
-      callback(true);
+      _undefined(true);
     }
     if (!ref.current) {
-      ref.current = true;
+      tmp8.current = true;
       onRewardEarned();
     }
   }, items1);
   const items3 = [onVideoPaused];
-  const callback2 = onVideoProgress.useCallback(() => {
-    let tmp = null == playerRef;
-    if (!tmp) {
+  const callback2 = obj.useCallback(() => {
+    if (playerRef != null) {
       const current = playerRef.current;
-      tmp = null == current;
-      const obj = current;
+      if (current != null) {
+        current.seekToStart();
+      }
     }
-    if (!tmp) {
-      obj.seekToStart();
-    }
-    _undefined2(0);
-    callback(false);
+    _undefined3(0);
+    _undefined(false);
   }, items2);
   const items4 = [onVideoResumed];
-  const callback3 = onVideoProgress.useCallback((arg0) => {
+  const callback3 = obj.useCallback((arg0) => {
     onVideoPaused(ref5.current, arg0);
   }, items3);
-  const result = 1000 * tmp13;
+  const result = 1000 * tmp10;
   const result1 = rewardDurationMs / 1000;
-  const callback4 = onVideoProgress.useCallback((arg0) => {
+  const callback4 = obj.useCallback((arg0) => {
     onVideoResumed(ref5.current, arg0);
   }, items4);
-  let bound = Math.max(0, result1 - tmp13);
+  let bound = Math.max(0, result1 - tmp10);
   let num5 = 0;
   if (result < rewardDurationMs) {
     num5 = 0;
-    if (!first) {
+    if (!tmp4) {
       num5 = 0;
       if (!isCompleted) {
         num5 = bound;
-        if (null != tmp15) {
+        if (null != tmp12) {
           num5 = bound;
-          if (tmp15 > 0) {
+          if (tmp12 > 0) {
             const _Math = Math;
             const _Math2 = Math;
-            num5 = Math.max(0, Math.min(result1, tmp15) - tmp13);
+            num5 = Math.max(0, Math.min(result1, tmp12) - tmp10);
           }
         }
       }
     }
   }
-  let obj = endMode(rewardDurationMs[3]);
-  let tmp24 = first;
-  if (first) {
-    tmp24 = endMode !== onVideoLooped.END_CARD_WITH_CTA;
+  const tmp11 = onRewardEarned(obj.useState(num3), 2);
+  let tmp21 = tmp4;
+  if (tmp4) {
+    tmp21 = endMode !== onVideoLooped.END_CARD_WITH_CTA;
   }
-  obj = {};
   if (!isCompleted) {
-    isCompleted = result > obj.useBountiesExperience(onVideoEnd.VIDEO_MODAL_MOBILE).ctaTimerMilliSeconds;
+    isCompleted = result > obj2.useBountiesExperience(onVideoEnd.VIDEO_MODAL_MOBILE).ctaTimerMilliSeconds;
   }
   if (isCompleted) {
-    isCompleted = !tmp24;
+    isCompleted = !tmp21;
   }
-  obj.isCtaVisible = isCompleted;
-  obj.isEndCardVisible = first;
-  obj.handleVideoEnd = callback1;
-  obj.handleVideoProgress = callback;
-  obj.handleVideoPaused = callback3;
-  obj.handleVideoResumed = callback4;
-  obj.handleReplay = callback2;
-  obj.rewardRemainingSeconds = num5;
-  obj.rewardTotalSeconds = result1;
-  if (null != tmp11) {
-    tmp9 = tmp11;
-  }
-  obj.normalizedProgress = tmp9;
-  obj.maxVideoProgressSeconds = tmp13;
-  obj.videoDuration = tmp15;
+  obj = { isCtaVisible: isCompleted, isEndCardVisible: tmp4, handleVideoEnd: callback1, handleVideoProgress: callback, handleVideoPaused: callback3, handleVideoResumed: callback4, handleReplay: callback2, rewardRemainingSeconds: num5, rewardTotalSeconds: result1, normalizedProgress: null, maxVideoProgressSeconds: null, videoDuration: null };
+  obj[9] = tmp8;
+  obj[10] = tmp10;
+  obj[11] = tmp12;
   return obj;
 };

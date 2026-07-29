@@ -1,12 +1,12 @@
-// Module ID: 4265
-// Function ID: 37215
+// Module ID: 4290
+// Function ID: 4291
 // Name: Video
-// Dependencies: [4266, 2]
+// Dependencies: [4291, 2]
 
-// Module 4265 (Video)
+// Module 4290 (Video)
 class Video {
   constructor(arg0) {
-    return require("_createForOfIteratorHelperLoose")(global, Video.onContainerResized);
+    return require("logger")(global, Video.onContainerResized);
   }
 }
 Video.onContainerResized = () => {

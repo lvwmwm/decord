@@ -1,16 +1,16 @@
-// Module ID: 11667
-// Function ID: 90450
+// Module ID: 11691
+// Function ID: 11692
 // Name: UserSettingsAuthedAppDeleteWarningModal
-// Dependencies: [33, 10871, 1212, 11668, 8031, 4510, 2]
+// Dependencies: [21, 10895, 1236, 11692, 8055, 4533, 2]
 // Exports: default
 
-// Module 11667 (UserSettingsAuthedAppDeleteWarningModal)
+// Module 11691 (UserSettingsAuthedAppDeleteWarningModal)
 import jsxProd from "jsxProd";
 
-let closure_3;
-let closure_4;
-let closure_5;
-({ jsx: closure_3, Fragment: closure_4, jsxs: closure_5 } = jsxProd);
+let c3;
+let c4;
+let c5;
+({ jsx: c3, Fragment: c4, jsxs: c5 } = jsxProd);
 let result = require("getSystemLocale").fileFinishedImporting("modules/user_settings/authorized_apps/native/UserSettingsAuthedAppDeleteWarningModal.tsx");
 
 export default function UserSettingsAuthedAppDeleteWarningModal(application) {
@@ -18,57 +18,61 @@ export default function UserSettingsAuthedAppDeleteWarningModal(application) {
   let scopes;
   application = application.application;
   ({ scopes, onDelete } = application);
-  let obj = require(10871) /* isSocialLayerApplication */;
-  let result = obj.isSocialLayerSDKAuthorization(application, scopes);
-  const intl = require(1212) /* getSystemLocale */.intl;
+  let obj = require(10895) /* isSocialLayerApplication */;
+  const result = obj.isSocialLayerSDKAuthorization(application, scopes);
+  const intl = require(1236) /* getSystemLocale */.intl;
   if (result) {
-    obj = { applicationName: application.name };
-    let formatToPlainStringResult = intl.formatToPlainString(tmp2(1212).t["paC+US"], obj);
+    obj = { applicationName: null };
+    obj[0] = application.name;
+    let formatToPlainStringResult = intl.formatToPlainString(tmp(1236).t["paC+US"], obj);
   } else {
-    formatToPlainStringResult = intl.string(tmp2(1212).t["DT39A+"]);
+    formatToPlainStringResult = intl.string(tmp(1236).t["DT39A+"]);
   }
-  const intl2 = require(1212) /* getSystemLocale */.intl;
+  const intl2 = tmp(1236).intl;
   const formatToPlainString = intl2.formatToPlainString;
-  const t = require(1212) /* getSystemLocale */.t;
+  const t = tmp(1236).t;
   if (result) {
-    obj = { applicationName: application.name };
+    obj = { applicationName: null };
+    obj[0] = application.name;
     let formatToPlainStringResult1 = formatToPlainString(t.inM1Yt, obj);
   } else {
-    const obj1 = { applicationName: application.name };
+    const obj1 = { applicationName: null };
+    obj1[0] = application.name;
     formatToPlainStringResult1 = formatToPlainString(t.QWGvxA, obj1);
   }
-  const obj2 = {};
-  let tmp8 = importDefault(11668)(application.id);
-  if (tmp8) {
-    const obj3 = {};
-    const intl3 = require(1212) /* getSystemLocale */.intl;
-    const obj4 = { applicationName: application.name };
-    obj3.children = intl3.format(require(1212) /* getSystemLocale */.t.KRnERi, obj4);
-    tmp8 = callback(importDefault(8031), obj3);
-    const tmp12 = importDefault(8031);
+  let tmp9 = importDefault(11692)(application.id);
+  if (tmp9) {
+    const obj2 = { children: null };
+    let tmp8Result = tmp8(8055);
+    const intl3 = tmp(1236).intl;
+    const obj3 = { applicationName: null };
+    obj3[0] = application.name;
+    obj2[0] = intl3.format(tmp(1236).t.KRnERi, obj3);
+    tmp9 = callback(tmp8Result, obj2);
   }
-  const items = [tmp8, ];
+  const items = [tmp9, ];
+  let tmp12 = result;
   if (result) {
-    const obj5 = { look: require(8031) /* InfoBox */.InfoBoxLooks.WARNING };
-    const intl4 = require(1212) /* getSystemLocale */.intl;
-    obj5.children = intl4.string(require(1212) /* getSystemLocale */.t.LY35Zy);
-    result = callback(importDefault(8031), obj5);
-    const tmp17 = importDefault(8031);
+    const obj4 = { look: null, children: null };
+    tmp8Result = tmp8(8055);
+    obj4[0] = tmp(8055).InfoBoxLooks.WARNING;
+    const intl4 = tmp(1236).intl;
+    obj4[1] = intl4.string(tmp(1236).t.LY35Zy);
+    tmp12 = callback(tmp8Result, obj4);
   }
-  items[1] = result;
-  obj2.children = items;
-  const obj6 = { title: formatToPlainStringResult, content: formatToPlainStringResult1, extraContent: callback2(closure_4, obj2) };
-  const obj7 = {};
-  const obj8 = { variant: "destructive" };
-  const intl5 = require(1212) /* getSystemLocale */.intl;
-  obj8.text = intl5.string(require(1212) /* getSystemLocale */.t.xUqheM);
-  obj8.onPress = onDelete;
-  const items1 = [callback(require(4510) /* getAlertModalItemKey */.AlertActionButton, obj8, "confirm"), ];
-  const obj9 = { variant: "secondary" };
-  const intl6 = require(1212) /* getSystemLocale */.intl;
-  obj9.text = intl6.string(require(1212) /* getSystemLocale */.t["ETE/oC"]);
-  items1[1] = callback(require(4510) /* getAlertModalItemKey */.AlertActionButton, obj9, "cancel");
-  obj7.children = items1;
-  obj6.actions = callback2(closure_4, obj7);
-  return callback(require(4510) /* getAlertModalItemKey */.AlertModal, obj6);
+  items[1] = tmp12;
+  const obj5 = { title: formatToPlainStringResult, content: formatToPlainStringResult1, extraContent: closure_5(closure_4, { children: items }), actions: null };
+  const obj6 = { children: null };
+  const obj7 = { variant: "destructive", text: null, onPress: null };
+  const intl5 = tmp(1236).intl;
+  obj7[1] = intl5.string(require(1236) /* getSystemLocale */.t.xUqheM);
+  obj7[2] = onDelete;
+  const items1 = [callback(require(4533) /* getAlertModalItemKey */.AlertActionButton, obj7, "confirm"), ];
+  const obj8 = { variant: "secondary", text: null };
+  const intl6 = tmp(1236).intl;
+  obj8[1] = intl6.string(require(1236) /* getSystemLocale */.t["ETE/oC"]);
+  items1[1] = callback(require(4533) /* getAlertModalItemKey */.AlertActionButton, obj8, "cancel");
+  obj6[0] = items1;
+  obj5[3] = closure_5(closure_4, obj6);
+  return callback(require(4533) /* getAlertModalItemKey */.AlertModal, obj5);
 };

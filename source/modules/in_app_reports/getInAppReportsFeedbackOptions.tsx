@@ -1,31 +1,28 @@
-// Module ID: 16143
-// Function ID: 124796
+// Module ID: 16181
+// Function ID: 16182
 // Name: getInAppReportsFeedbackOptions
-// Dependencies: [1212, 2]
+// Dependencies: [1236, 2]
 // Exports: default
 
-// Module 16143 (getInAppReportsFeedbackOptions)
+// Module 16181 (getInAppReportsFeedbackOptions)
 let obj = { COULD_NOT_FIND: "I couldn't find what I was looking for", CONFUSING_LANGUAGE: "I found the language confusing", OTHER: "Other" };
 const result = require("set").fileFinishedImporting("modules/in_app_reports/getInAppReportsFeedbackOptions.tsx");
 
 export default function getInAppReportsFeedbackOptions() {
-  let obj = {};
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj.label = intl.string(require(1212) /* getSystemLocale */.t.cigGCe);
-  obj.code = 2;
-  obj.value = obj.COULD_NOT_FIND;
+  let obj = { label: null, code: 2, value: null };
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj[0] = intl.string(require(1236) /* getSystemLocale */.t.cigGCe);
+  obj[2] = obj.COULD_NOT_FIND;
   const items = [obj, , ];
-  obj = {};
-  const intl2 = require(1212) /* getSystemLocale */.intl;
-  obj.label = intl2.string(require(1212) /* getSystemLocale */.t.ZyXA0q);
-  obj.code = 3;
-  obj.value = obj.CONFUSING_LANGUAGE;
+  obj = { label: null, code: 3, value: null };
+  const intl2 = require(1236) /* getSystemLocale */.intl;
+  obj[0] = intl2.string(require(1236) /* getSystemLocale */.t.ZyXA0q);
+  obj[2] = obj.CONFUSING_LANGUAGE;
   items[1] = obj;
-  obj = {};
-  const intl3 = require(1212) /* getSystemLocale */.intl;
-  obj.label = intl3.string(require(1212) /* getSystemLocale */.t.emlT91);
-  obj.code = 1;
-  obj.value = obj.OTHER;
+  obj = { label: null, code: 1, value: null };
+  const intl3 = require(1236) /* getSystemLocale */.intl;
+  obj[0] = intl3.string(require(1236) /* getSystemLocale */.t.emlT91);
+  obj[2] = obj.OTHER;
   items[2] = obj;
   return items;
 };

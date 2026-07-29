@@ -1,54 +1,61 @@
-// Module ID: 13932
-// Function ID: 106509
+// Module ID: 13953
+// Function ID: 13954
 // Name: FamilyCenterAvatarPair
-// Dependencies: [31, 27, 1850, 33, 4165, 689, 624, 1273, 2]
+// Dependencies: [19, 17, 1874, 21, 4189, 712, 647, 1297, 2]
 // Exports: default
 
-// Module 13932 (FamilyCenterAvatarPair)
-import "result";
+// Module 13953 (FamilyCenterAvatarPair)
+import "noop";
 import { View } from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import mergeGuildAvatar from "mergeGuildAvatar";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_4;
-let closure_5;
+let c4;
+let c5;
 const require = arg1;
-({ jsx: closure_4, jsxs: closure_5 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SURFACE_HIGH, borderRadius: require("_createForOfIteratorHelperLoose").radii.round, display: "flex", flexDirection: "row", justifyContent: "space-between", alignItems: "center", padding: 8 };
-_createForOfIteratorHelperLoose.avatars = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.icon = { height: 24, width: 24, marginHorizontal: 16 };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/parent_tools/native/FamilyCenterAvatarPair.tsx");
+({ jsx: c4, jsxs: c5 } = jsxProd);
+createCacheKey = { avatars: null, icon: null };
+createCacheKey = { backgroundColor: require("Themes").colors.BACKGROUND_SURFACE_HIGH, borderRadius: require("Themes").radii.round, display: "flex", flexDirection: "row", justifyContent: "space-between", alignItems: "center", padding: 8 };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { height: 24, width: 24, marginHorizontal: 16 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+const result = require("mergeGuildAvatar").fileFinishedImporting("modules/parent_tools/native/FamilyCenterAvatarPair.tsx");
 
 export default function FamilyCenterAvatarPair(otherUser) {
   let iconSrc;
   let iconStyles;
   otherUser = otherUser.otherUser;
   ({ iconSrc, iconStyles } = otherUser);
-  const tmp = _createForOfIteratorHelperLoose();
-  let obj = require(624) /* defaultAreStatesEqual */;
-  const items = [_isNativeReflectConstruct];
-  const stateFromStores = obj.useStateFromStores(items, () => outer1_3.getCurrentUser());
-  let tmp3 = null;
+  const tmp = createCacheKey();
+  let obj = require(647) /* defaultAreStatesEqual */;
+  const items = [mergeGuildAvatar];
+  const stateFromStores = obj.useStateFromStores(items, () => currentUser.getCurrentUser());
+  let tmp5 = null;
   if (undefined !== stateFromStores) {
-    tmp3 = null;
+    tmp5 = null;
     if (undefined !== otherUser) {
-      obj = { style: tmp.avatars };
-      obj = { size: require(1273) /* Button */.AvatarSizes.LARGE_48, user: stateFromStores, guildId: undefined, avatarDecoration: stateFromStores.avatarDecoration };
-      const items1 = [callback(require(1273) /* Button */.Avatar, obj), , ];
-      const obj1 = {};
+      obj = { style: null, children: null };
+      obj[0] = tmp.avatars;
+      obj = { size: null, user: null, guildId: "Array", avatarDecoration: "<string:3052339201>" };
+      obj[0] = tmp2(1297).AvatarSizes.LARGE_48;
+      obj[1] = stateFromStores;
+      obj[3] = stateFromStores.avatarDecoration;
+      const items1 = [callback(tmp2(1297).Avatar, obj), , ];
+      const obj1 = { style: null, size: null, source: null };
       const items2 = [tmp.icon, iconStyles];
-      obj1.style = items2;
-      obj1.size = require(1273) /* Button */.Icon.Sizes.EXTRA_SMALL;
-      obj1.source = iconSrc;
-      items1[1] = callback(require(1273) /* Button */.Icon, obj1);
-      const obj2 = { size: require(1273) /* Button */.AvatarSizes.LARGE_48, user: otherUser, guildId: undefined, avatarDecoration: otherUser.avatarDecoration };
-      items1[2] = callback(require(1273) /* Button */.Avatar, obj2);
-      obj.children = items1;
-      tmp3 = callback2(View, obj);
+      obj1[0] = items2;
+      obj1[1] = tmp2(1297).Icon.Sizes.EXTRA_SMALL;
+      obj1[2] = iconSrc;
+      items1[1] = callback(tmp2(1297).Icon, obj1);
+      const obj2 = { size: null, user: null, guildId: "Array", avatarDecoration: "<string:3052339201>" };
+      obj2[0] = tmp2(1297).AvatarSizes.LARGE_48;
+      obj2[1] = otherUser;
+      obj2[3] = otherUser.avatarDecoration;
+      items1[2] = callback(tmp2(1297).Avatar, obj2);
+      obj[1] = items1;
+      tmp5 = callback2(View, obj);
     }
   }
-  return tmp3;
+  return tmp5;
 };

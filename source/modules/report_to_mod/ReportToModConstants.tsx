@@ -1,13 +1,13 @@
-// Module ID: 6042
-// Function ID: 53716
+// Module ID: 6060
+// Function ID: 6061
 // Name: ReportToModPermissions
-// Dependencies: [653, 483, 2]
+// Dependencies: [676, 506, 2]
 
-// Module 6042 (ReportToModPermissions)
+// Module 6060 (ReportToModPermissions)
 import { Permissions } from "ME";
-import importAllResult from "fromHexReverseArray";
+import importAllResult from "fromString";
 
-const combineResult = require("fromHexReverseArray").combine(Permissions.ADMINISTRATOR, Permissions.BAN_MEMBERS, Permissions.KICK_MEMBERS, Permissions.MODERATE_MEMBERS);
+const combineResult = require("fromString").combine(Permissions.ADMINISTRATOR, Permissions.BAN_MEMBERS, Permissions.KICK_MEMBERS, Permissions.MODERATE_MEMBERS);
 const result = require("set").fileFinishedImporting("modules/report_to_mod/ReportToModConstants.tsx");
 
 export const ReportToModPermissions = combineResult;

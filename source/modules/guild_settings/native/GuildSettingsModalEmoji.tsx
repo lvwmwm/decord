@@ -1,32 +1,26 @@
-// Module ID: 16360
-// Function ID: 127227
-// Name: computeSectionItem
-// Dependencies: [57, 31, 27, 1838, 16361, 33, 22, 9391, 4165, 689, 1212, 5031, 4057, 566, 8242, 4161, 16363, 16367, 1273, 16368, 5619, 5483, 1456, 5121, 2]
-// Exports: default
+// Module ID: 16395
+// Function ID: 16396
+// Name: computeEmojiItem
+// Dependencies: [32, 19, 17, 1862, 16396, 21, 12, 9415, 4189, 712, 1236, 5053, 4081, 589, 8266, 4185, 16398, 16402, 1297, 16403, 5637, 5501, 1480, 5143, 2]
+// Exports: computeSectionItem, default
 
-// Module 16360 (computeSectionItem)
+// Module 16395 (computeEmojiItem)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
-import get_ActivityIndicator from "get ActivityIndicator";
-import closure_7 from "_createForOfIteratorHelperLoose";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import importDefaultResult from "useNavigation";
-import importDefaultResult1 from "useNavigation";
+import getEmptyServerSettingsEmojiSource from "getEmptyServerSettingsEmojiSource";
+import get_ActivityIndicator from "HeaderRow";
+import createGuildRecordFromRust from "createGuildRecordFromRust";
+import initialize from "initialize";
+import jsxProd from "NavScrim";
+import createCacheKey from "createCacheKey";
+import importDefaultResult from "getGuildTierFromGuild";
+import importDefaultResult1 from "getGuildTierFromGuild";
 
-let closure_10;
-let closure_11;
-let closure_5;
+let c10;
+let c5;
+let c9;
 let closure_6;
-let closure_9;
+let unpackModuleId;
 const require = arg1;
-function computeSectionItem(intl, length, maxEmojiSlots) {
-  const bound = Math.max(maxEmojiSlots - length, 0);
-  intl = require(1212) /* getSystemLocale */.intl;
-  const key = "" + intl + " - " + intl.formatToPlainString(require(1212) /* getSystemLocale */.t.sgL8sI, { count: bound }).toUpperCase();
-  return { type: "SECTION", key, section: key };
-}
 function computeEmojiItem(id) {
   return { type: "EMOJI", key: id.id, emoji: id };
 }
@@ -45,24 +39,27 @@ class ManageEmojisModal {
     revision = undefined;
     canManageGuildExpression = undefined;
     computeEmojiItems = undefined;
-    c8 = undefined;
+    useStateFromStoresObject = undefined;
     useRef = undefined;
+    tmp = c0;
+    tmp2 = headerDescription;
     obj = require("initialize");
     items = [];
-    items[0] = c8;
+    items[0] = useStateFromStoresObject;
     stateFromStoresObject = obj.useStateFromStoresObject(items, () => ({ emojis: _undefined.getEmojis(guild.id), revision: _undefined.getEmojiRevision(guild.id) }));
     emojis = stateFromStoresObject.emojis;
     revision = stateFromStoresObject.revision;
     obj2 = require("canManageResource");
     canManageGuildExpression = obj2.useManageResourcePermissions(guild).canManageGuildExpression;
     items1 = emojis;
-    if (null == emojis) {
+    if (emojis == null) {
       items1 = [];
     }
     emojiItems = computeEmojiItems(items1, guild);
     computeEmojiItems = emojiItems;
-    tmp3 = c13();
-    c8 = tmp3;
+    tmp5 = fetchEmoji();
+    useStateFromStoresObject = tmp5;
+    obj3 = emojis;
     useRef = emojis.useRef(revision);
     items2 = [];
     items2[0] = guild.id;
@@ -82,7 +79,7 @@ class ManageEmojisModal {
     items4[0] = guild.id;
     items4[1] = flag;
     items4[2] = emojiItems;
-    items4[3] = tmp3;
+    items4[3] = tmp5;
     items4[4] = onSelectRolesForEmoji;
     items4[5] = canManageGuildExpression;
     items5 = [, , , , ];
@@ -94,40 +91,39 @@ class ManageEmojisModal {
       ({ item, index } = arg0);
       let type = item.type;
       if ("SECTION" === type) {
-        let obj = { style: _undefined.section, variant: "text-xs/bold", color: "text-default", children: item.section };
+        let obj = { style: null, variant: "text-xs/bold", color: "text-default", children: null };
+        obj[0] = _undefined.section;
+        obj[3] = item.section;
         return ref(flag(headerDescription[15]).Text, obj);
       } else if ("EMOJI" === type) {
         type = undefined;
-        if (null != emojiItems[index - 1]) {
-          type = tmp3.type;
+        if (emojiItems[index - 1] != null) {
+          type = tmp2.type;
         }
         let type1;
-        if (null != emojiItems[index + 1]) {
-          type1 = tmp7.type;
+        if (emojiItems[index + 1] != null) {
+          type1 = tmp5.type;
         }
-        let tmp9 = "SECTION" === type1;
-        if (!tmp9) {
-          tmp9 = index === emojiItems.length - 1;
-        }
-        obj = { emoji: item.emoji, guildId: guild.id };
-        let tmp15 = flag;
+        obj = { emoji: null, guildId: null, disabled: null, onSelectRolesForEmoji: null, start: null, end: null };
+        obj[0] = item.emoji;
+        obj[1] = guild.id;
+        let tmp12 = flag;
         if (!flag) {
-          tmp15 = !item.emoji.available;
+          tmp12 = !item.emoji.available;
         }
-        if (!tmp15) {
-          tmp15 = !canManageGuildExpression(item.emoji);
+        if (!tmp12) {
+          tmp12 = !canManageGuildExpression(item.emoji);
         }
-        obj.disabled = tmp15;
-        obj.onSelectRolesForEmoji = onSelectRolesForEmoji;
-        obj.start = "SECTION" === type;
-        obj.end = tmp9;
+        obj[2] = tmp12;
+        obj[3] = onSelectRolesForEmoji;
+        obj[4] = "SECTION" === type;
+        obj[5] = "SECTION" === type1 || index === emojiItems.length - 1;
         return ref(flag(headerDescription[16]).EmojiRow, obj);
       } else {
         return null;
       }
     }, items4);
-    tmp7 = emojis;
-    if (null != emojis) {
+    if (emojis != null) {
       length = emojis.length;
     }
     items5[1] = length;
@@ -135,108 +131,110 @@ class ManageEmojisModal {
     items5[3] = onSelectRolesForEmoji;
     items5[4] = flag;
     items6 = [];
-    items6[0] = tmp3;
+    items6[0] = tmp5;
     callback1 = emojis.useCallback(() => {
-      const obj = { guild };
-      let length;
-      if (null != emojis) {
-        length = emojis.length;
+      const obj = { guild, emojisLength: null, description: null, onSelectRolesForEmoji: null, uploadDisabled: null };
+      let num;
+      if (emojis != null) {
+        num = emojis.length;
       }
-      let num = 0;
-      if (null != length) {
-        num = length;
+      if (num == null) {
+        num = 0;
       }
-      obj.emojisLength = num;
-      obj.description = headerDescription;
-      obj.onSelectRolesForEmoji = onSelectRolesForEmoji;
-      obj.uploadDisabled = flag;
+      obj[1] = num;
+      obj[2] = headerDescription;
+      obj[3] = onSelectRolesForEmoji;
+      obj[4] = flag;
       return closure_9(flag(headerDescription[17]).ConnectedHeaderRow, obj);
     }, items5);
-    callback2 = emojis.useCallback(() => {
-      const obj = { Illustration: flag(headerDescription[19]).EmptyServerSettingsEmoji, style: _undefined.emptyState };
+    callback2 = obj3.useCallback(() => {
+      const obj = { Illustration: null, style: null, title: null, body: null };
+      obj[0] = flag(headerDescription[19]).EmptyServerSettingsEmoji;
+      obj[1] = _undefined.emptyState;
       const intl = flag(headerDescription[10]).intl;
-      obj.title = intl.string(flag(headerDescription[10]).t.lxsmBd);
+      obj[2] = intl.string(flag(headerDescription[10]).t.lxsmBd);
       const intl2 = flag(headerDescription[10]).intl;
-      obj.body = intl2.string(flag(headerDescription[10]).t.RBbtMy);
+      obj[3] = intl2.string(flag(headerDescription[10]).t.RBbtMy);
       return ref(flag(headerDescription[18]).EmptyState, obj);
     }, items6);
     if (null == emojis) {
-      tmp15 = jsxs;
-      tmp16 = revision;
-      obj = {};
-      obj.style = tmp3.loadingContainer;
-      tmp17 = useRef;
-      tmp18 = c0;
-      tmp19 = headerDescription;
-      num3 = 20;
+      tmp16 = jsxs;
+      tmp17 = revision;
+      obj = { style: null, children: null };
+      obj[0] = tmp5.loadingContainer;
+      tmp18 = useRef;
       items7 = [, ];
       items7[0] = useRef(require("ActivityIndicator").ActivityIndicator, {});
-      tmp20 = useRef;
-      num4 = 21;
       items7[1] = useRef(require("NavScrim").NavScrim, {});
-      obj.children = items7;
-      tmp14 = jsxs(revision, obj);
+      obj[1] = items7;
+      tmp15 = jsxs(revision, obj);
     } else {
-      tmp12 = useRef;
-      tmp13 = canManageGuildExpression;
-      obj1 = {};
-      num = 12;
-      obj1.initialNumToRender = 12;
-      obj1.ListHeaderComponent = callback1;
-      obj1.ListEmptyComponent = callback2;
-      num2 = 4;
-      obj1.windowSize = 4;
-      obj1.data = emojiItems;
-      obj1.keyExtractor = tmp11;
-      obj1.renderItem = callback;
+      tmp13 = useRef;
+      tmp14 = canManageGuildExpression;
+      obj1 = { initialNumToRender: 12, ListHeaderComponent: null, ListEmptyComponent: null, windowSize: 4, data: null, keyExtractor: null, renderItem: null, contentContainerStyle: null };
+      obj1[1] = callback1;
+      obj1[2] = callback2;
+      obj1[4] = emojiItems;
+      obj1[5] = tmp12;
+      obj1[6] = callback;
       items8 = [, ];
       items8[0] = contentContainerStyle;
-      items8[1] = tmp3.list;
-      obj1.contentContainerStyle = items8;
-      tmp14 = useRef(canManageGuildExpression, obj1);
+      items8[1] = tmp5.list;
+      obj1[7] = items8;
+      tmp15 = useRef(canManageGuildExpression, obj1);
     }
-    return tmp14;
+    return tmp15;
   }
 }
-({ View: closure_5, FlatList: closure_6 } = get_ActivityIndicator);
-({ jsx: closure_9, jsxs: closure_10, Fragment: closure_11 } = jsxProd);
-let closure_12 = require("useNavigation").throttle(require("_updateEmoji").fetchEmoji, 1000);
-let obj = { loadingContainer: { flex: 1, paddingTop: 40 }, emptyState: { paddingTop: 30 } };
-obj = { paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_12 };
-obj.list = obj;
-_createForOfIteratorHelperLoose = { paddingVertical: require("_createForOfIteratorHelperLoose").space.PX_16 };
-obj.section = _createForOfIteratorHelperLoose;
-obj.titleContainer = { paddingLeft: 16, paddingRight: 16 };
-let closure_13 = _createForOfIteratorHelperLoose.createStyles(obj);
-let closure_14 = require("useNavigation").memoize((arr, stateFromStores) => {
+({ View: c5, FlatList: closure_6 } = get_ActivityIndicator);
+({ jsx: c9, jsxs: c10, Fragment: unpackModuleId } = jsxProd);
+let closure_12 = require("getGuildTierFromGuild").throttle(require("_updateEmoji").fetchEmoji, 1000);
+let obj = { loadingContainer: { flex: 1, paddingTop: 40 }, emptyState: { paddingTop: 30 }, list: null, section: null, titleContainer: null };
+obj = { paddingHorizontal: require("Themes").space.PX_12 };
+obj[2] = obj;
+createCacheKey = { paddingVertical: require("Themes").space.PX_16 };
+obj[3] = createCacheKey;
+obj[4] = { paddingLeft: 16, paddingRight: 16 };
+let closure_13 = createCacheKey.createStyles(obj);
+let closure_15 = require("getGuildTierFromGuild").memoize((arr, stateFromStores) => {
+  let arr2;
+  let arr3;
   const _require = stateFromStores;
   const found = arr.filter((roles) => !stateFromStores(outer1_2[11]).isRoleSubscriptionEmoji(roles, stateFromStores.id));
   const mapped = found.map(computeEmojiItem);
   const reversed = mapped.reverse();
-  const maxEmojiSlots = _require(4057).getMaxEmojiSlots(stateFromStores);
-  const obj2 = _require(4057);
-  const tmp3 = callback(importDefault(22).partition(reversed, (emoji) => !emoji.emoji.animated), 2);
-  const first = tmp3[0];
-  const intl = _require(1212).intl;
-  const obj3 = importDefault(22);
-  const intl2 = _require(1212).intl;
-  const tmp4 = computeSectionItem(intl.string(_require(1212).t.sMOuuS), first.length, maxEmojiSlots);
-  if (first.length > 0) {
-    const items = [tmp4];
-    HermesBuiltin.arraySpread(first, 1);
+  const maxEmojiSlots = _require(4081).getMaxEmojiSlots(stateFromStores);
+  const obj2 = _require(4081);
+  const obj3 = importDefault(12);
+  [arr2, arr3] = callback(importDefault(12).partition(reversed, (emoji) => !emoji.emoji.animated), 2);
+  const intl = _require(1236).intl;
+  const tmp3 = callback(importDefault(12).partition(reversed, (emoji) => !emoji.emoji.animated), 2);
+  const bound = Math.max(maxEmojiSlots - arr2.length, 0);
+  const intl2 = _require(1236).intl;
+  const stringResult = intl.string(_require(1236).t.sMOuuS);
+  const formatted = "" + intl.string(_require(1236).t.sMOuuS) + " - " + intl2.formatToPlainString(_require(1236).t.sgL8sI, { count: bound }).toUpperCase();
+  const intl3 = _require(1236).intl;
+  const str = "" + intl.string(_require(1236).t.sMOuuS) + " - " + intl2.formatToPlainString(_require(1236).t.sgL8sI, { count: bound });
+  const bound1 = Math.max(maxEmojiSlots - arr3.length, 0);
+  const intl4 = _require(1236).intl;
+  const stringResult1 = intl3.string(_require(1236).t.wWjQye);
+  const formatted1 = "" + intl3.string(_require(1236).t.wWjQye) + " - " + intl4.formatToPlainString(_require(1236).t.sgL8sI, { count: bound1 }).toUpperCase();
+  if (arr2.length > 0) {
+    const items = [{ type: "SECTION", key: formatted, section: formatted }];
+    HermesBuiltin.arraySpread(arr2, 1);
     let items1 = items;
   } else {
     items1 = [];
   }
   const items2 = [...items1];
-  if (tmp3[1].length > 0) {
-    const items3 = [tmp5];
+  if (arr3.length > 0) {
+    const items3 = [{ type: "SECTION", key: formatted1, section: formatted1 }];
     HermesBuiltin.arraySpread(arr3, 1);
     let items4 = items3;
   } else {
     items4 = [];
   }
-  HermesBuiltin.arraySpread(items4, tmp9);
+  HermesBuiltin.arraySpread(items4, tmp13);
   return items2;
 });
 const result = require("get ActivityIndicator").fileFinishedImporting("modules/guild_settings/native/GuildSettingsModalEmoji.tsx");
@@ -245,26 +243,28 @@ export default function GuildSettingsModalEmoji(contentContainerStyle) {
   let isLandingScreen;
   let require;
   ({ guildId: require, isLandingScreen } = contentContainerStyle);
+  let stateFromStores;
+  let navigation;
+  let React;
   let obj = require(stateFromStores[13]);
-  const items = [closure_7];
+  const items = [createGuildRecordFromRust];
   stateFromStores = obj.useStateFromStores(items, () => outer1_7.getGuild(closure_0));
   let obj1 = require(stateFromStores[22]);
-  const navigation = obj1.useNavigation();
-  const tmp3 = callback4();
-  const React = tmp3;
-  const items1 = [navigation, stateFromStores, isLandingScreen, tmp3];
+  navigation = obj1.useNavigation();
+  const tmp5 = callback4();
+  React = tmp5;
+  const items1 = [navigation, stateFromStores, isLandingScreen, tmp5];
   const layoutEffect = React.useLayoutEffect(() => {
     let tmp = isLandingScreen;
     if (isLandingScreen) {
       tmp = undefined !== stateFromStores;
     }
     if (tmp) {
-      let obj = {
-        headerTitle() {
-            obj = { style: outer1_4.titleContainer, children: outer2_9(outer2_0(stateFromStores[23]).NavigatorHeader, obj) };
-            obj = { title: outer1_2.name };
-            return outer2_9(outer2_5, obj);
-          }
+      let obj = { headerTitle: null };
+      obj[0] = function headerTitle() {
+        obj = { style: titleContainer.titleContainer, children: outer1_9(outer1_0(outer1_2[23]).NavigatorHeader, obj) };
+        obj = { title: name.name };
+        return outer1_9(outer1_5, obj);
       };
       navigation.setOptions(obj);
     }
@@ -272,16 +272,26 @@ export default function GuildSettingsModalEmoji(contentContainerStyle) {
   if (null == stateFromStores) {
     return null;
   } else {
-    const maxEmojiSlots = require(stateFromStores[12]).getMaxEmojiSlots(stateFromStores);
-    const intl = require(stateFromStores[10]).intl;
-    obj = { count: maxEmojiSlots };
-    obj = {};
-    obj1 = { guild: stateFromStores, headerDescription: intl.formatToPlainString(require(stateFromStores[10]).t.TA1BR0, obj), computeEmojiItems: closure_14, contentContainerStyle: contentContainerStyle.contentContainerStyle };
-    const items2 = [callback2(ManageEmojisModal, obj1), callback2(require(stateFromStores[21]).NavScrim, {})];
-    obj.children = items2;
+    const maxEmojiSlots = tmp(tmp2[12]).getMaxEmojiSlots(stateFromStores);
+    const intl = tmp(tmp2[10]).intl;
+    obj = { count: null };
+    obj[0] = maxEmojiSlots;
+    obj = { children: null };
+    obj1 = { guild: null, headerDescription: null, computeEmojiItems: null, contentContainerStyle: null };
+    obj1[0] = stateFromStores;
+    obj1[1] = intl.formatToPlainString(tmp(tmp2[10]).t.TA1BR0, obj);
+    obj1[2] = closure_15;
+    obj1[3] = contentContainerStyle.contentContainerStyle;
+    const items2 = [callback2(ManageEmojisModal, obj1), callback2(tmp(tmp2[21]).NavScrim, {})];
+    obj[0] = items2;
     return callback3(closure_11, obj);
   }
 };
-export { computeSectionItem };
+export const computeSectionItem = function computeSectionItem(intl, length, arg2) {
+  const bound = Math.max(arg2 - length, 0);
+  intl = require(1236) /* getSystemLocale */.intl;
+  const key = "" + intl + " - " + intl.formatToPlainString(require(1236) /* getSystemLocale */.t.sgL8sI, { count: bound }).toUpperCase();
+  return { type: "SECTION", key, section: key };
+};
 export { computeEmojiItem };
 export { ManageEmojisModal };

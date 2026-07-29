@@ -1,14 +1,14 @@
-// Module ID: 7318
-// Function ID: 60248
+// Module ID: 7338
+// Function ID: 7339
 // Name: NitroSupergraphicLogo
-// Dependencies: [27, 33, 689, 3869, 7319, 2]
+// Dependencies: [17, 21, 712, 3893, 7339, 2]
 // Exports: NitroSupergraphicLogo
 
-// Module 7318 (NitroSupergraphicLogo)
+// Module 7338 (NitroSupergraphicLogo)
 import { Image } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
 
-const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("design/components/mana-assets/native/generated/NitroSupergraphicLogo.native.tsx");
+const result = require("Themes").fileFinishedImporting("design/components/mana-assets/native/generated/NitroSupergraphicLogo.native.tsx");
 
 export const NitroSupergraphicLogo = function NitroSupergraphicLogo(color) {
   let accessibilityLabel;
@@ -17,41 +17,40 @@ export const NitroSupergraphicLogo = function NitroSupergraphicLogo(color) {
   let ICON_STRONG = color.color;
   ({ accessible, accessibilityLabel, resizeMode } = color);
   if (ICON_STRONG === undefined) {
-    ICON_STRONG = importDefault(689).colors.ICON_STRONG;
+    ICON_STRONG = importDefault(712).colors.ICON_STRONG;
   }
-  let num2 = color.width;
+  let num = color.width;
+  if (num === undefined) {
+    num = 100;
+  }
+  let num2 = color.height;
   if (num2 === undefined) {
-    num2 = 100;
+    num2 = 80;
   }
-  let num3 = color.height;
+  let num3 = color.scale;
   if (num3 === undefined) {
-    num3 = 80;
+    num3 = 1;
   }
-  let num4 = color.scale;
-  if (num4 === undefined) {
-    num4 = 1;
-  }
-  let obj = require(3869) /* map */;
+  let obj = require(3893) /* map */;
   const token = obj.useToken(ICON_STRONG);
   if (null != token) {
-    obj = { tintColor: token };
-    let tmp5 = obj;
+    obj = { tintColor: null };
+    obj[0] = token;
+    let tmp6 = obj;
   } else {
-    let tmp4 = null != ICON_STRONG;
-    if (tmp4) {
-      tmp4 = "string" === typeof ICON_STRONG;
+    if (tmp5) {
+      obj = { tintColor: null };
+      obj[0] = ICON_STRONG;
+      tmp6 = obj;
     }
-    if (tmp4) {
-      obj = { tintColor: ICON_STRONG };
-      tmp5 = obj;
-    }
+    tmp5 = null != ICON_STRONG && typeof ICON_STRONG === "y";
   }
-  const obj1 = { fadeDuration: 0, source: { uri: importDefault(7319) } };
-  const obj3 = { width: num2 * num4, height: num3 * num4 };
-  const items = [obj3, tmp5];
-  obj1.style = items;
-  obj1.accessible = accessible;
-  obj1.accessibilityLabel = accessibilityLabel;
-  obj1.resizeMode = resizeMode;
-  return <Image fadeDuration={0} source={{ uri: importDefault(7319) }} />;
+  const obj1 = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
+  obj1[1] = { uri: importDefault(7339) };
+  const items = [{ width: num * num3, height: num2 * num3 }, tmp6];
+  obj1[2] = items;
+  obj1[3] = accessible;
+  obj1[4] = accessibilityLabel;
+  obj1[5] = resizeMode;
+  return <Image fadeDuration={0} source={null} style={null} accessible={null} accessibilityLabel={null} resizeMode={null} />;
 };

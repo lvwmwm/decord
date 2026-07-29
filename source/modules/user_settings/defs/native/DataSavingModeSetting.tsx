@@ -1,30 +1,30 @@
-// Module ID: 14403
-// Function ID: 110171
+// Module ID: 14425
+// Function ID: 14426
 // Name: toggle
-// Dependencies: [1280, 7733, 566, 14401, 3838, 10099, 1212, 2]
+// Dependencies: [1304, 7756, 589, 14423, 3862, 10120, 1236, 2]
 
-// Module 14403 (toggle)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 14425 (toggle)
+import CHANNEL_SIDEBAR_WIDTH from "CHANNEL_SIDEBAR_WIDTH";
 import createToggle from "createToggle";
 
 const require = arg1;
 createToggle = {
   useTitle() {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(require(1212) /* getSystemLocale */.t.ix8XIj);
+    const intl = require(1236) /* getSystemLocale */.intl;
+    return intl.string(require(1236) /* getSystemLocale */.t.ix8XIj);
   },
   parent: require("MobileSetting").MobileSetting.CHAT,
   useValue: function useDataSavingModeSettingValue() {
-    const items = [_isNativeReflectConstruct];
-    return require(566) /* initialize */.useStateFromStores(items, () => outer1_2.dataSavingMode);
+    const items = [CHANNEL_SIDEBAR_WIDTH];
+    return require(589) /* initialize */.useStateFromStores(items, () => dataSavingMode.dataSavingMode);
   },
-  onValueChange: function onDataSavingModeSettingValueChange(dataSavingMode) {
-    let obj = require(14401) /* trackSettingsUpdated */;
-    obj = { videoUploadQuality: _isNativeReflectConstruct.videoUploadQuality };
-    const ViewImageDescriptions = require(3838) /* explicitContentFromProto */.ViewImageDescriptions;
-    obj.viewImageDescriptions = ViewImageDescriptions.getSetting();
-    obj.lowQualityImageMode = _isNativeReflectConstruct.lowQualityImageMode;
-    obj.dataSavingMode = dataSavingMode;
+  onValueChange: function onDataSavingModeSettingValueChange(arg0) {
+    let obj = require(14423) /* UserSettingsText */;
+    obj = { videoUploadQuality: CHANNEL_SIDEBAR_WIDTH.videoUploadQuality, viewImageDescriptions: null, lowQualityImageMode: null, dataSavingMode: null };
+    const ViewImageDescriptions = require(3862) /* explicitContentFromProto */.ViewImageDescriptions;
+    obj[1] = ViewImageDescriptions.getSetting();
+    obj[2] = CHANNEL_SIDEBAR_WIDTH.lowQualityImageMode;
+    obj[3] = arg0;
     obj.setDataSavingMode(obj);
   }
 };

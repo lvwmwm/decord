@@ -1,20 +1,35 @@
-// Module ID: 10960
-// Function ID: 85001
-// Name: getPendingFolderGuildIds
-// Dependencies: [3983, 1838, 566, 2]
-// Exports: default
+// Module ID: 10984
+// Function ID: 10985
+// Name: usePendingFolderGuildIds
+// Dependencies: [4007, 1862, 589, 2]
+// Exports: default, getPendingFolderGuildIds
 
-// Module 10960 (getPendingFolderGuildIds)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+// Module 10984 (usePendingFolderGuildIds)
+import handleGatewayJoinRequestUpdate from "handleGatewayJoinRequestUpdate";
+import createGuildRecordFromRust from "createGuildRecordFromRust";
 
 const require = arg1;
-function getPendingFolderGuildIds() {
+const result = require("initialize").fileFinishedImporting("modules/guilds_bar/usePendingFolderGuildIds.tsx");
+
+export default function usePendingFolderGuildIds() {
+  let items = [handleGatewayJoinRequestUpdate, createGuildRecordFromRust];
+  return require(589) /* initialize */.useStateFromStoresArray(items, () => {
+    let obj;
+    let obj2;
+    const items = [handleGatewayJoinRequestUpdate, createGuildRecordFromRust];
+    [obj, obj2] = items;
+    let guilds;
+    const guildIds = obj.computeGuildIds();
+    guilds = obj2.getGuilds();
+    return guildIds.filter((arg0) => null == table[arg0]);
+  });
+};
+export const getPendingFolderGuildIds = function getPendingFolderGuildIds() {
   let obj;
   let obj2;
   let tmp = arg0;
   if (arg0 === undefined) {
-    const items = [_isNativeReflectConstruct, _createForOfIteratorHelperLoose];
+    const items = [handleGatewayJoinRequestUpdate, createGuildRecordFromRust];
     tmp = items;
   }
   [obj, obj2] = tmp;
@@ -22,14 +37,4 @@ function getPendingFolderGuildIds() {
   const guildIds = obj.computeGuildIds();
   guilds = obj2.getGuilds();
   return guildIds.filter((arg0) => null == table[arg0]);
-}
-const result = require("initialize").fileFinishedImporting("modules/guilds_bar/usePendingFolderGuildIds.tsx");
-
-export default function usePendingFolderGuildIds() {
-  let items = [_isNativeReflectConstruct, _createForOfIteratorHelperLoose];
-  return require(566) /* initialize */.useStateFromStoresArray(items, () => {
-    const items = [outer1_2, outer1_3];
-    return outer1_4(items);
-  });
 };
-export { getPendingFolderGuildIds };

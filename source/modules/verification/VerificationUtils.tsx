@@ -1,9 +1,9 @@
-// Module ID: 9161
-// Function ID: 71811
+// Module ID: 9185
+// Function ID: 9186
 // Name: UserRequiredActions
-// Dependencies: [653, 1212, 22, 2]
+// Dependencies: [676, 1236, 12, 2]
 
-// Module 9161 (UserRequiredActions)
+// Module 9185 (UserRequiredActions)
 import ME from "ME";
 
 let EMAIL;
@@ -29,47 +29,19 @@ export default {
   isPhoneReverification(currentUser, action) {
     let tmp = undefined !== currentUser && currentUser.isPhoneVerified();
     if (tmp) {
-      let tmp3 = action === UserRequiredActions.REQUIRE_REVERIFIED_PHONE;
-      if (!tmp3) {
-        tmp3 = action === UserRequiredActions.REQUIRE_REVERIFIED_EMAIL_OR_REVERIFIED_PHONE;
-      }
-      if (!tmp3) {
-        tmp3 = action === UserRequiredActions.REQUIRE_VERIFIED_EMAIL_OR_REVERIFIED_PHONE;
-      }
-      tmp = tmp3;
+      tmp = action === UserRequiredActions.REQUIRE_REVERIFIED_PHONE || action === UserRequiredActions.REQUIRE_REVERIFIED_EMAIL_OR_REVERIFIED_PHONE || action === UserRequiredActions.REQUIRE_VERIFIED_EMAIL_OR_REVERIFIED_PHONE;
+      const tmp4 = action === UserRequiredActions.REQUIRE_REVERIFIED_PHONE || action === UserRequiredActions.REQUIRE_REVERIFIED_EMAIL_OR_REVERIFIED_PHONE || action === UserRequiredActions.REQUIRE_VERIFIED_EMAIL_OR_REVERIFIED_PHONE;
     }
     return tmp;
   },
   isEmailReverification(stateFromStores1) {
-    let tmp = stateFromStores1 === UserRequiredActions.REQUIRE_REVERIFIED_EMAIL;
-    if (!tmp) {
-      tmp = stateFromStores1 === UserRequiredActions.REQUIRE_REVERIFIED_EMAIL_OR_REVERIFIED_PHONE;
-    }
-    if (!tmp) {
-      tmp = stateFromStores1 === UserRequiredActions.REQUIRE_REVERIFIED_EMAIL_OR_VERIFIED_PHONE;
-    }
-    return tmp;
+    return stateFromStores1 === UserRequiredActions.REQUIRE_REVERIFIED_EMAIL || stateFromStores1 === UserRequiredActions.REQUIRE_REVERIFIED_EMAIL_OR_REVERIFIED_PHONE || stateFromStores1 === UserRequiredActions.REQUIRE_REVERIFIED_EMAIL_OR_VERIFIED_PHONE;
   },
   isFullScreenVerification(action) {
-    const self = this;
-    let result = action === UserRequiredActions.REQUIRE_CAPTCHA;
+    let result = action === UserRequiredActions.REQUIRE_CAPTCHA || action === tmp.REQUIRE_VERIFIED_EMAIL || action === tmp.REQUIRE_VERIFIED_PHONE || action === tmp.REQUIRE_REVERIFIED_PHONE || action === tmp.REQUIRE_REVERIFIED_EMAIL_OR_REVERIFIED_PHONE || action === tmp.REQUIRE_VERIFIED_EMAIL_OR_REVERIFIED_PHONE;
     if (!result) {
-      result = action === UserRequiredActions.REQUIRE_VERIFIED_EMAIL;
-    }
-    if (!result) {
-      result = action === UserRequiredActions.REQUIRE_VERIFIED_PHONE;
-    }
-    if (!result) {
-      result = action === UserRequiredActions.REQUIRE_REVERIFIED_PHONE;
-    }
-    if (!result) {
-      result = action === UserRequiredActions.REQUIRE_REVERIFIED_EMAIL_OR_REVERIFIED_PHONE;
-    }
-    if (!result) {
-      result = action === UserRequiredActions.REQUIRE_VERIFIED_EMAIL_OR_REVERIFIED_PHONE;
-    }
-    if (!result) {
-      result = self.isEmailReverification(action);
+      const self = this;
+      result = this.isEmailReverification(action);
     }
     return result;
   },
@@ -80,23 +52,23 @@ export default {
   },
   getButtonTitle(arg0) {
     if (VerificationTypes.EMAIL === arg0) {
-      const intl5 = require(1212) /* getSystemLocale */.intl;
-      return intl5.string(require(1212) /* getSystemLocale */.t["1MPz27"]);
-    } else if (VerificationTypes.PHONE === arg0) {
-      const intl4 = require(1212) /* getSystemLocale */.intl;
-      return intl4.string(require(1212) /* getSystemLocale */.t.mjJeco);
-    } else if (VerificationTypes.REVERIFY_EMAIL === arg0) {
-      const intl3 = require(1212) /* getSystemLocale */.intl;
-      return intl3.string(require(1212) /* getSystemLocale */.t.nmdPFX);
-    } else if (VerificationTypes.REVERIFY_PHONE === arg0) {
-      const intl2 = require(1212) /* getSystemLocale */.intl;
-      return intl2.string(require(1212) /* getSystemLocale */.t.of2125);
+      const intl5 = require(1236) /* getSystemLocale */.intl;
+      return intl5.string(require(1236) /* getSystemLocale */.t["1MPz27"]);
+    } else if (tmp.PHONE === arg0) {
+      const intl4 = require(1236) /* getSystemLocale */.intl;
+      return intl4.string(require(1236) /* getSystemLocale */.t.mjJeco);
+    } else if (tmp.REVERIFY_EMAIL === arg0) {
+      const intl3 = require(1236) /* getSystemLocale */.intl;
+      return intl3.string(require(1236) /* getSystemLocale */.t.nmdPFX);
+    } else if (tmp.REVERIFY_PHONE === arg0) {
+      const intl2 = require(1236) /* getSystemLocale */.intl;
+      return intl2.string(require(1236) /* getSystemLocale */.t.of2125);
     } else {
-      const intl = require(1212) /* getSystemLocale */.intl;
-      return intl.string(require(1212) /* getSystemLocale */.t["oF6+Ww"]);
+      const intl = require(1236) /* getSystemLocale */.intl;
+      return intl.string(require(1236) /* getSystemLocale */.t["oF6+Ww"]);
     }
   },
   areVerificationTypesEqual(arg0, arg1) {
-    return importDefault(22).isEqual(arg0, arg1);
+    return importDefault(12).isEqual(arg0, arg1);
   }
 };

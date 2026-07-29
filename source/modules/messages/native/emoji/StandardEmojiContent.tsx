@@ -1,80 +1,83 @@
-// Module ID: 9386
-// Function ID: 73135
+// Module ID: 9410
+// Function ID: 9411
 // Name: Emoji
-// Dependencies: [31, 27, 3982, 33, 4165, 689, 9387, 3810, 5119, 4161, 9388, 3806, 9316, 9389, 1212, 7611, 4578, 9391, 2]
+// Dependencies: [19, 17, 4006, 21, 4189, 712, 9411, 3834, 5141, 4185, 9412, 3830, 9340, 9413, 1236, 7634, 4600, 9415, 2]
 // Exports: default
 
-// Module 9386 (Emoji)
-import result from "result";
-import { View } from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 9410 (Emoji)
+import noop from "noop";
+import { View } from "_updateEmoji";
+import handleConnectionOpen from "handleConnectionOpen";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
 let closure_6;
-let closure_7;
-let closure_8;
+let error;
+let metroImportAll;
 const require = arg1;
 function Emoji(surrogate) {
   surrogate = surrogate.surrogate;
   let obj = {};
-  const merged = Object.assign(_createForOfIteratorHelperLoose());
-  let obj1 = require(9387) /* styles */;
+  const merged = Object.assign(createCacheKey());
+  let obj1 = require(9411) /* styles */;
   const merged1 = Object.assign(obj1.useSharedMessageEmojiStyles());
-  let obj2 = importDefault(3810);
+  let obj2 = importDefault(3834);
   const uRL = obj2.getURL(surrogate);
-  obj = { style: obj.emojiWrapper };
+  obj = { style: obj.emojiWrapper, children: null };
   if ("" !== uRL) {
-    obj = {};
-    obj.style = obj.emojiIcon;
-    obj.resizeMode = "contain";
-    obj1 = { uri: uRL };
-    obj.source = obj1;
-    let tmp9 = callback(importDefault(5119), obj);
+    obj = { style: null, resizeMode: "contain", source: null };
+    obj[0] = obj.emojiIcon;
+    obj1 = { uri: null };
+    obj1[0] = uRL;
+    obj[2] = obj1;
+    let tmp7Result = tmp7(importDefault(5141), obj);
   } else {
-    obj2 = { style: obj.emojiSurrogate, variant: "text-md/medium", children: surrogate };
-    tmp9 = callback(require(4161) /* Text */.Text, obj2);
+    obj2 = { style: null, variant: "text-md/medium", children: null };
+    obj2[0] = obj.emojiSurrogate;
+    obj2[2] = surrogate;
+    tmp7Result = tmp7(require(4185) /* Text */.Text, obj2);
   }
-  obj.children = tmp9;
-  return callback(View, obj);
+  obj[1] = tmp7Result;
+  return closure_6(View, obj);
 }
-({ jsx: closure_6, jsxs: closure_7, Fragment: closure_8 } = jsxProd);
-_createForOfIteratorHelperLoose = { emojiSurrogate: { lineHeight: 48, fontSize: 40, margin: 8 } };
-_createForOfIteratorHelperLoose = { paddingTop: require("_createForOfIteratorHelperLoose").space.PX_4 };
-_createForOfIteratorHelperLoose.ctaContainer = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/messages/native/emoji/StandardEmojiContent.tsx");
+({ jsx: closure_6, jsxs: error, Fragment: metroImportAll } = jsxProd);
+createCacheKey = { emojiSurrogate: { lineHeight: 48, fontSize: 40, margin: 8 }, ctaContainer: null };
+createCacheKey = { paddingTop: require("Themes").space.PX_4 };
+createCacheKey[1] = createCacheKey;
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+const result = require("handleConnectionOpen").fileFinishedImporting("modules/messages/native/emoji/StandardEmojiContent.tsx");
 
 export default function StandardEmojiContent(nonce) {
   const emojiNode = nonce.emojiNode;
+  let memo;
+  let isFavoriteEmoji;
   let obj = {};
-  const merged = Object.assign(_createForOfIteratorHelperLoose());
+  const merged = Object.assign(createCacheKey());
   let obj1 = emojiNode(isFavoriteEmoji[6]);
   const merged1 = Object.assign(obj1.useSharedMessageEmojiStyles());
   guildId = guildId.getGuildId();
   let obj2 = emojiNode(isFavoriteEmoji[10]);
   const trackOpenPopout = obj2.useTrackOpenPopout({ currentGuildId: guildId, nonce: nonce.nonce });
   const items = [emojiNode.surrogate];
-  const memo = React.useMemo(() => memo(isFavoriteEmoji[11]).convertSurrogateToBase(emojiNode.surrogate), items);
+  memo = React.useMemo(() => memo(isFavoriteEmoji[11]).convertSurrogateToBase(emojiNode.surrogate), items);
   let obj3 = emojiNode(isFavoriteEmoji[12]);
   isFavoriteEmoji = obj3.useIsFavoriteEmoji(guildId, memo);
-  obj = {};
-  obj = { style: obj.emojiContainer };
-  obj1 = { surrogate: emojiNode.surrogate };
-  const items1 = [callback(Emoji, obj1), ];
-  obj2 = { style: obj.emojiDescriptionWrapper };
-  obj3 = { variant: "text-md/bold", color: "mobile-text-heading-primary", children: memo(isFavoriteEmoji[13])(emojiNode.content) };
-  const items2 = [callback(emojiNode(isFavoriteEmoji[9]).Text, obj3), ];
-  const obj4 = { variant: "text-sm/medium" };
+  obj = { style: obj.emojiContainer, children: null };
+  obj = { surrogate: emojiNode.surrogate };
+  const items1 = [callback(Emoji, obj), ];
+  obj1 = { style: obj.emojiDescriptionWrapper, children: null };
+  const items2 = [callback(emojiNode(isFavoriteEmoji[9]).Text, { variant: "text-md/bold", color: "mobile-text-heading-primary", children: memo(isFavoriteEmoji[13])(emojiNode.content) }), ];
+  obj2 = { variant: "text-sm/medium", children: null };
   const intl = emojiNode(isFavoriteEmoji[14]).intl;
-  obj4.children = intl.string(emojiNode(isFavoriteEmoji[14]).t.sXdH8c);
-  items2[1] = callback(emojiNode(isFavoriteEmoji[9]).Text, obj4);
-  obj2.children = items2;
-  items1[1] = callback2(View, obj2);
-  obj.children = items1;
-  const items3 = [callback2(View, obj), callback(emojiNode(isFavoriteEmoji[15]).FormDivider, { style: obj.divider }), ];
-  const obj6 = { style: obj.ctaContainer };
-  const obj7 = {};
+  obj2[1] = intl.string(emojiNode(isFavoriteEmoji[14]).t.sXdH8c);
+  items2[1] = callback(emojiNode(isFavoriteEmoji[9]).Text, obj2);
+  obj1[1] = items2;
+  items1[1] = callback2(View, obj1);
+  obj[1] = items1;
+  const items3 = [callback2(View, obj), , ];
+  obj3 = { style: obj.divider };
+  items3[1] = callback(emojiNode(isFavoriteEmoji[15]).FormDivider, obj3);
+  const obj4 = { style: obj.ctaContainer, children: null };
   const intl2 = emojiNode(isFavoriteEmoji[14]).intl;
   const string = intl2.string;
   const t = emojiNode(isFavoriteEmoji[14]).t;
@@ -83,13 +86,14 @@ export default function StandardEmojiContent(nonce) {
   } else {
     stringResult = string(t.nNsr67);
   }
-  obj7.text = stringResult;
+  const obj5 = { text: stringResult, variant: null, onPress: null };
   let str = "primary";
   if (isFavoriteEmoji) {
     str = "tertiary";
   }
-  obj7.variant = str;
-  obj7.onPress = function onPress() {
+  const obj6 = { children: null };
+  obj5[1] = str;
+  obj5[2] = function onPress() {
     const obj = emojiNode(isFavoriteEmoji[17]);
     if (isFavoriteEmoji) {
       obj.unfavoriteEmoji(memo);
@@ -97,8 +101,8 @@ export default function StandardEmojiContent(nonce) {
       obj.favoriteEmoji(memo);
     }
   };
-  obj6.children = callback(emojiNode(isFavoriteEmoji[16]).Button, obj7);
-  items3[2] = callback(View, obj6);
-  obj.children = items3;
-  return callback2(closure_8, obj);
+  obj4[1] = callback(emojiNode(isFavoriteEmoji[16]).Button, obj5);
+  items3[2] = callback(View, obj4);
+  obj6[0] = items3;
+  return callback2(closure_8, obj6);
 };

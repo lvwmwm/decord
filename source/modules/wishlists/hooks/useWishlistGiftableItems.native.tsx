@@ -1,11 +1,11 @@
-// Module ID: 8666
-// Function ID: 68734
+// Module ID: 8690
+// Function ID: 8691
 // Name: set
-// Dependencies: [31, 653, 2]
+// Dependencies: [19, 676, 2]
 // Exports: useWishlistGiftableItems
 
-// Module 8666 (set)
-import result from "result";
+// Module 8690 (set)
+import noop from "noop";
 import set from "set";
 
 let items = [, , ];
@@ -19,11 +19,11 @@ export const useWishlistGiftableItems = function useWishlistGiftableItems(wishli
   let items = [wishlist];
   return React.useMemo(() => {
     let found;
-    if (null != wishlist) {
+    if (wishlist != null) {
       const items = wishlist.items;
-      found = items.filter((skuProductLine) => outer2_1.has(skuProductLine.skuProductLine) && !skuProductLine.isOwned);
+      found = items.filter((skuProductLine) => set.has(skuProductLine.skuProductLine) && !skuProductLine.isOwned);
     }
-    if (null == found) {
+    if (found == null) {
       found = [];
     }
     return found;

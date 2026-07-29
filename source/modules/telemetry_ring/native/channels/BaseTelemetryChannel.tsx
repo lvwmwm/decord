@@ -1,61 +1,43 @@
-// Module ID: 13230
-// Function ID: 101774
-// Name: BaseTelemetryChannel
-// Dependencies: [6, 7, 2]
+// Module ID: 13250
+// Function ID: 13251
+// Name: append
+// Dependencies: [2]
 
-// Module 13230 (BaseTelemetryChannel)
-import _classCallCheck from "_classCallCheck";
-import _defineProperties from "_defineProperties";
-
-const tmp2 = (() => {
-  class BaseTelemetryChannel {
-    constructor(arg0, arg1) {
-      tmp = BaseTelemetryChannel(this, BaseTelemetryChannel);
-      this.native = arg0;
-      this.channels = arg1;
-      return;
-    }
-  }
-  let obj = {
-    key: "append",
-    value(arg0, arg1, arg2, arg3) {
-      let timestamp = arg3;
-      const self = this;
-      if (null == arg3) {
-        const _Date = Date;
-        timestamp = Date.now();
-      }
-      let tmp3 = null;
-      if (null != arg2) {
-        tmp3 = arg2;
-      }
-      let tmp4 = null;
-      if (null != arg1) {
-        tmp4 = arg1;
-      }
-      const native = self.native;
-      native.append(arg0, timestamp, tmp3, tmp4, self.channels);
-    }
-  };
-  const items = [obj, , ];
-  obj = {
-    key: "snapshot",
-    value(arg0, arg1, arg2) {
-      const native = this.native;
-      return native.snapshot(this.channels, arg0, arg1, arg2);
-    }
-  };
-  items[1] = obj;
-  obj = {
-    key: "clearAll",
-    value() {
-      const native = this.native;
-      native.clear();
-    }
-  };
-  items[2] = obj;
-  return callback(BaseTelemetryChannel, items);
-})();
+// Module 13250 (append)
 const result = require("set").fileFinishedImporting("modules/telemetry_ring/native/channels/BaseTelemetryChannel.tsx");
+class BaseTelemetryChannel {
+  constructor(arg0, arg1) {
+    obj = Object.create(new.target.prototype);
+    obj.native = global;
+    obj.channels = require;
+    return obj;
+  }
+}
+const prototype = BaseTelemetryChannel.prototype;
+prototype["append"] = function append(arg0, arg1, arg2, arg3) {
+  let timestamp = arg3;
+  if (arg3 == null) {
+    const _Date = Date;
+    timestamp = Date.now();
+  }
+  let tmp3 = arg2;
+  const native = this.native;
+  if (arg2 == null) {
+    tmp3 = null;
+  }
+  let tmp4 = arg1;
+  if (arg1 == null) {
+    tmp4 = null;
+  }
+  native.append(arg0, timestamp, tmp3, tmp4, this.channels);
+};
+prototype["snapshot"] = function snapshot(arg0, arg1, arg2) {
+  const native = this.native;
+  return native.snapshot(this.channels, arg0, arg1, arg2);
+};
+prototype["clearAll"] = function clearAll() {
+  const native = this.native;
+  native.clear();
+};
 
-export default tmp2;
+export default BaseTelemetryChannel;

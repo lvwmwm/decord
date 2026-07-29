@@ -1,98 +1,103 @@
-// Module ID: 15935
-// Function ID: 122934
+// Module ID: 15970
+// Function ID: 15971
 // Name: FocusedActivityAccessibilityLayer
-// Dependencies: [57, 31, 27, 10016, 33, 4165, 4574, 1212, 4560, 4563, 2]
+// Dependencies: [32, 19, 17, 10038, 21, 4189, 4596, 1236, 4583, 4586, 2]
 // Exports: default
 
-// Module 15935 (FocusedActivityAccessibilityLayer)
+// Module 15970 (FocusedActivityAccessibilityLayer)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
+import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { IS_IOS } from "VoicePanelModes";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_4;
-let closure_5;
+let c4;
+let c5;
+let c9;
 let closure_6;
-let closure_8;
-let closure_9;
+let metroImportAll;
 const require = arg1;
 function FocusedActivityAccessibilityLayer(activityName) {
+  let c0;
   let channelId;
   let children;
+  let tmp3;
   activityName = activityName.activityName;
+  let _require;
+  let ref;
   ({ channelId, children } = activityName);
   const tmp = callback3();
-  const tmp2 = callback(React.useState(false), 2);
-  const first = tmp2[0];
-  const _require = tmp2[1];
-  const ref = React.useRef(null);
+  [tmp3, c0] = callback(React.useState(false), 2);
+  ref = React.useRef(null);
   callback = React.useCallback(() => {
-    callback(true);
+    _undefined(true);
   }, []);
   const callback1 = React.useCallback(() => {
-    callback(false);
-    let obj = callback(ref[6]);
+    _undefined(false);
+    let obj = _undefined(ref[6]);
     obj = { ref, delay: 300 };
     const result = obj.setAccessibilityFocus(obj);
   }, []);
   if (null != activityName) {
     const intl2 = _require(ref[7]).intl;
-    let obj = { name: activityName };
+    let obj = { name: null };
+    obj[0] = activityName;
     let formatToPlainStringResult = intl2.formatToPlainString(_require(ref[7]).t.XSfwGL, obj);
+    let tmp8 = ref;
+    let tmp10 = _require;
   } else {
+    tmp8 = ref;
     const intl = _require(ref[7]).intl;
     formatToPlainStringResult = intl.string(_require(ref[7]).t.KYNi2m);
+    tmp10 = _require;
   }
-  obj = { style: tmp.fill };
-  obj = { nativeID: "voice-panel-activity-" + channelId, accessibilityViewIsModal: first };
-  let tmp15;
-  if (first) {
-    tmp15 = callback1;
+  obj = { style: tmp.fill, children: null };
+  obj = { nativeID: null, accessibilityViewIsModal: null, onAccessibilityEscape: null, accessibilityElementsHidden: null, importantForAccessibility: null, style: null, children: null };
+  obj[0] = "voice-panel-activity-" + channelId;
+  obj[1] = tmp3;
+  let tmp16;
+  if (tmp3) {
+    tmp16 = callback1;
   }
-  obj.onAccessibilityEscape = tmp15;
-  obj.accessibilityElementsHidden = !first;
+  obj[2] = tmp16;
+  obj[3] = !tmp3;
   let str = "no-hide-descendants";
-  if (first) {
+  if (tmp3) {
     str = "auto";
   }
-  obj.importantForAccessibility = str;
-  obj.style = tmp.fill;
-  obj.children = children;
-  const items = [closure_8(_require(ref[8]).AccessibilityView, obj), ];
-  const obj1 = { ref, style: absoluteFill.absoluteFill };
+  obj[4] = str;
+  obj[5] = tmp.fill;
+  obj[6] = children;
+  const items = [closure_8(tmp10(tmp8[8]).AccessibilityView, obj), ];
+  const obj1 = { ref, style: absoluteFill.absoluteFill, pointerEvents: null, accessible: true, accessibilityRole: "button", accessibilityLabel: null, accessibilityHint: null, accessibilityElementsHidden: null, importantForAccessibility: null, onPress: null };
   let str2 = "auto";
   let str3 = "auto";
-  if (first) {
+  if (tmp3) {
     str3 = "none";
   }
-  obj1.pointerEvents = str3;
-  obj1.accessible = true;
-  obj1.accessibilityRole = "button";
-  obj1.accessibilityLabel = formatToPlainStringResult;
-  const intl3 = _require(ref[7]).intl;
-  obj1.accessibilityHint = intl3.string(_require(ref[7]).t["8DaKO6"]);
-  obj1.accessibilityElementsHidden = first;
-  if (first) {
+  obj1[2] = str3;
+  obj1[5] = formatToPlainStringResult;
+  const intl3 = tmp10(tmp8[7]).intl;
+  obj1[6] = intl3.string(tmp10(tmp8[7]).t["8DaKO6"]);
+  obj1[7] = tmp3;
+  if (tmp3) {
     str2 = "no-hide-descendants";
   }
-  obj1.importantForAccessibility = str2;
-  obj1.onPress = callback;
+  obj1[8] = str2;
+  obj1[9] = callback;
   items[1] = closure_8(closure_4, obj1);
-  obj.children = items;
+  obj[1] = items;
   return closure_9(closure_6, obj);
 }
-({ Pressable: closure_4, StyleSheet: closure_5, View: closure_6 } = get_ActivityIndicator);
-({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
-let closure_10 = _createForOfIteratorHelperLoose.createStyles({ fill: { flex: 1 } });
+({ Pressable: c4, StyleSheet: c5, View: closure_6 } = get_ActivityIndicator);
+({ jsx: metroImportAll, jsxs: c9 } = jsxProd);
+let closure_10 = createCacheKey.createStyles({ fill: { flex: 1 } });
 let result = require("get ActivityIndicator").fileFinishedImporting("modules/voice_panel/native/card/ActivityAccessibilityLayer.tsx");
 
 export default function ActivityAccessibilityLayer(isActivityFocused) {
-  let obj = Object.create(null);
-  obj.isActivityFocused = 0;
-  const merged = Object.assign(isActivityFocused, obj);
-  obj = require(4563) /* SCREEN_READER_ENABLED_GETTER */;
+  const merged = Object.assign(isActivityFocused, Object.create(null));
+  let obj = require(4586) /* SCREEN_READER_ENABLED_GETTER */;
   if (IS_IOS) {
     if (obj.useIsScreenReaderEnabled()) {
       if (isActivityFocused.isActivityFocused) {

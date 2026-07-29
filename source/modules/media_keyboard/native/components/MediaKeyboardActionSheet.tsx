@@ -1,11 +1,11 @@
-// Module ID: 9652
-// Function ID: 75155
+// Module ID: 9674
+// Function ID: 9675
 // Name: MediaKeyboardActionSheet
-// Dependencies: [31, 1552, 653, 33, 4026, 1212, 9653, 9655, 9657, 4134, 4135, 675, 4594, 9659, 4679, 5221, 1553, 9660, 2]
+// Dependencies: [19, 1576, 676, 21, 4050, 1236, 9675, 9677, 9679, 4158, 4159, 698, 4616, 9681, 4701, 5243, 1577, 9682, 2]
 // Exports: default
 
-// Module 9652 (MediaKeyboardActionSheet)
-import result from "result";
+// Module 9674 (MediaKeyboardActionSheet)
+import noop from "noop";
 import { MediaPickerActionSheetEngagedActions as closure_4 } from "DRAG_HANDLE";
 import { AnalyticEvents } from "ME";
 import { jsx } from "jsxProd";
@@ -29,26 +29,27 @@ export default function MediaKeyboardActionSheet(onAttachPress) {
   const onViewAll = onAttachPress.onViewAll;
   const onClose = onAttachPress.onClose;
   const onBack = onAttachPress.onBack;
+  let sharedValue;
+  let memo;
+  let callback2;
   ({ channel, draftType, uploadLimit, disableWhenReachedLimit, includedUploadIds, extensions, allowCamera, onPressCamera, onPressItem, onLongPressItem, onManageLimited } = onAttachPress);
   let obj = onAttachPress(onClose[4]);
-  const sharedValue = obj.useSharedValue(-1);
+  sharedValue = obj.useSharedValue(-1);
   let items = [onAttachPress];
-  const memo = onBack.useMemo(() => {
-    let obj = {};
+  memo = onBack.useMemo(() => {
+    let obj = { text: null, IconComponent: null, onPress: null, disabled: true };
     const intl = onAttachPress(onClose[5]).intl;
-    obj.text = intl.string(onAttachPress(onClose[5]).t.RgIi2B);
-    obj.IconComponent = onAttachPress(onClose[6]).PollsIcon;
-    obj.onPress = function onPress() {
+    obj[0] = intl.string(onAttachPress(onClose[5]).t.RgIi2B);
+    obj[1] = onAttachPress(onClose[6]).PollsIcon;
+    obj[2] = function onPress() {
 
     };
-    obj.disabled = true;
     const items = [obj, ];
-    obj = {};
+    obj = { text: null, IconComponent: null, onPress: null, disabled: false };
     const intl2 = onAttachPress(onClose[5]).intl;
-    obj.text = intl2.string(onAttachPress(onClose[5]).t["8Hvr3+"]);
-    obj.IconComponent = onAttachPress(onClose[7]).AttachmentIcon;
-    obj.onPress = onAttachPress;
-    obj.disabled = false;
+    obj[0] = intl2.string(onAttachPress(onClose[5]).t["8Hvr3+"]);
+    obj[1] = onAttachPress(onClose[7]).AttachmentIcon;
+    obj[2] = onAttachPress;
     items[1] = obj;
     return items;
   }, items);
@@ -61,15 +62,15 @@ export default function MediaKeyboardActionSheet(onAttachPress) {
     obj = { action: sharedValue.FULLY_EXPANDED };
     onViewAll(onClose[11]).track(memo.MEDIA_PICKER_ACTION_SHEET_ENGAGED, obj);
   }, []);
-  const callback2 = onBack.useCallback(() => {
-    if (null != onClose) {
-      onClose();
+  callback2 = onBack.useCallback(() => {
+    if (onClose != null) {
+      tmp();
     }
   }, items2);
   onViewAll(onClose[12])(() => () => {
     let tmp;
-    if (null != outer1_6) {
-      tmp = outer1_6();
+    if (callback != null) {
+      tmp = callback();
     }
     return tmp;
   });
@@ -80,18 +81,24 @@ export default function MediaKeyboardActionSheet(onAttachPress) {
       onHeightChange() {
 
       },
-      uploadDisabled: false
+      uploadDisabled: false,
+      overflowButtons: null
     };
-    obj = {};
+    obj = { text: null, IconComponent: null, onPress: null, disabled: false };
     const intl = onAttachPress(onClose[5]).intl;
-    obj.text = intl.string(onAttachPress(onClose[5]).t.Zmm6dN);
-    obj.IconComponent = onAttachPress(onClose[14]).ImageIcon;
-    obj.onPress = onViewAll;
-    obj.disabled = false;
+    obj[0] = intl.string(onAttachPress(onClose[5]).t.Zmm6dN);
+    obj[1] = onAttachPress(onClose[14]).ImageIcon;
+    obj[2] = onViewAll;
     const items = [obj, ...memo];
-    obj.overflowButtons = items;
+    obj[3] = items;
     return callback2(onViewAll(onClose[13]), obj);
   }, items3);
-  obj = { handleComponent: callback, scrollable: true, startExpanded: onAttachPress(onClose[16]).isMetaQuest(), onExpand: callback1, onDismiss: callback2, animatedIndex: sharedValue, footer: memo1, children: callback2(onViewAll(onClose[17]), { channel, draftType, onPressCamera, onAttachPress, onPressItem, onLongPressItem, onViewAll, onManageLimited, includedUploadIds, extensions, allowCamera, uploadLimit, disableWhenReachedLimit }) };
+  obj = { handleComponent: callback, scrollable: true, startExpanded: null, onExpand: null, onDismiss: null, animatedIndex: null, footer: null, children: null };
+  obj[2] = onAttachPress(onClose[16]).isMetaQuest();
+  obj[3] = callback1;
+  obj[4] = callback2;
+  obj[5] = sharedValue;
+  obj[6] = memo1;
+  obj[7] = callback2(onViewAll(onClose[17]), { channel, draftType, onPressCamera, onAttachPress, onPressItem, onLongPressItem, onViewAll, onManageLimited, includedUploadIds, extensions, allowCamera, uploadLimit, disableWhenReachedLimit });
   return callback2(onAttachPress(onClose[15]).BottomSheet, obj);
 };

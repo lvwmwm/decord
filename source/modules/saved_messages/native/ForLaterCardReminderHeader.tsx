@@ -1,25 +1,25 @@
-// Module ID: 9928
-// Function ID: 76732
+// Module ID: 9950
+// Function ID: 9951
 // Name: ForLaterCardReminderHeader
-// Dependencies: [27, 33, 4165, 689, 9920, 4129, 4161, 2]
+// Dependencies: [17, 21, 4189, 712, 9942, 4153, 4185, 2]
 // Exports: ForLaterCardReminderHeader
 
-// Module 9928 (ForLaterCardReminderHeader)
+// Module 9950 (ForLaterCardReminderHeader)
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_4;
-let closure_5;
-({ jsx: closure_4, jsxs: closure_5 } = jsxProd);
-let obj = {};
-obj = { flexDirection: "row", alignItems: "center", backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWER, borderTopLeftRadius: require("_createForOfIteratorHelperLoose").radii.lg, borderTopRightRadius: require("_createForOfIteratorHelperLoose").radii.lg, overflow: "hidden", gap: 8, marginHorizontal: -16, marginTop: -16, paddingHorizontal: 16, paddingVertical: 12 };
-obj.container = obj;
-let obj1 = { width: 24, height: 24, borderRadius: require("_createForOfIteratorHelperLoose").radii.sm, backgroundColor: require("_createForOfIteratorHelperLoose").colors.CARD_BACKGROUND_DEFAULT, alignItems: "center", justifyContent: "center" };
-obj.icon = obj1;
-obj.actionsContainer = { marginVertical: -4, marginLeft: "auto" };
-let closure_6 = _createForOfIteratorHelperLoose.createStyles(obj);
-const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/saved_messages/native/ForLaterCardReminderHeader.tsx");
+let c4;
+let c5;
+({ jsx: c4, jsxs: c5 } = jsxProd);
+let obj = { container: null, icon: null, actionsContainer: null };
+obj = { flexDirection: "row", alignItems: "center", backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOWER, borderTopLeftRadius: require("Themes").radii.lg, borderTopRightRadius: require("Themes").radii.lg, overflow: "hidden", gap: 8, marginHorizontal: -16, marginTop: -16, paddingHorizontal: 16, paddingVertical: 12 };
+obj[0] = obj;
+obj[1] = { width: 24, height: 24, borderRadius: require("Themes").radii.sm, backgroundColor: require("Themes").colors.CARD_BACKGROUND_DEFAULT, alignItems: "center", justifyContent: "center" };
+obj[2] = { marginVertical: -4, marginLeft: "auto" };
+let closure_6 = createCacheKey.createStyles(obj);
+let obj1 = { width: 24, height: 24, borderRadius: require("Themes").radii.sm, backgroundColor: require("Themes").colors.CARD_BACKGROUND_DEFAULT, alignItems: "center", justifyContent: "center" };
+const result = require("createCacheKey").fileFinishedImporting("modules/saved_messages/native/ForLaterCardReminderHeader.tsx");
 
 export const ForLaterCardReminderHeader = function ForLaterCardReminderHeader(savedMessage) {
   let actions;
@@ -27,15 +27,12 @@ export const ForLaterCardReminderHeader = function ForLaterCardReminderHeader(sa
   savedMessage = savedMessage.savedMessage;
   ({ throttledNow, actions } = savedMessage);
   const tmp = callback3();
-  let obj = require(9920) /* _savedMessageJumpToMessage */;
-  obj = {};
+  let obj = require(9942) /* _savedMessageJumpToMessage */;
   let dueAt;
-  if (null != savedMessage) {
+  if (savedMessage != null) {
     dueAt = savedMessage.saveData.dueAt;
   }
-  obj.dueAt = dueAt;
-  obj.now = throttledNow;
-  obj.type = require(9920) /* _savedMessageJumpToMessage */.DueInStringTypes.SHORT;
+  obj = { dueAt, now: throttledNow, type: tmp2(9942).DueInStringTypes.SHORT };
   const dueInString = obj.useDueInString(obj);
   const isOverdue = dueInString.isOverdue;
   if (null == savedMessage.saveData.dueAt) {
@@ -45,17 +42,24 @@ export const ForLaterCardReminderHeader = function ForLaterCardReminderHeader(sa
     if (isOverdue) {
       str = "text-feedback-critical";
     }
-    const colors = importDefault(689).colors;
-    obj = { style: tmp.container };
-    const obj1 = { style: tmp.icon };
-    const obj2 = { size: "xxs", color: isOverdue ? colors.TEXT_FEEDBACK_CRITICAL : colors.INTERACTIVE_TEXT_DEFAULT };
-    obj1.children = callback(require(4129) /* ClockIcon */.ClockIcon, obj2);
+    const colors = importDefault(712).colors;
+    obj = { style: null, children: null };
+    obj[0] = tmp.container;
+    const obj1 = { style: null, children: null };
+    obj1[0] = tmp.icon;
+    const obj2 = { size: "xxs", color: null };
+    obj2[1] = isOverdue ? colors.TEXT_FEEDBACK_CRITICAL : colors.INTERACTIVE_TEXT_DEFAULT;
+    obj1[1] = callback(tmp2(4153).ClockIcon, obj2);
     const items = [callback(View, obj1), , ];
-    const obj3 = { variant: "text-md/semibold", color: str, children: tmp4 };
-    items[1] = callback(require(4161) /* Text */.Text, obj3);
-    const obj4 = { style: tmp.actionsContainer, children: actions };
+    const obj3 = { variant: "text-md/semibold", color: null, children: null };
+    obj3[1] = str;
+    obj3[2] = tmp6;
+    items[1] = callback(tmp2(4185).Text, obj3);
+    const obj4 = { style: null, children: null };
+    obj4[0] = tmp.actionsContainer;
+    obj4[1] = actions;
     items[2] = callback(View, obj4);
-    obj.children = items;
+    obj[1] = items;
     return callback2(View, obj);
   }
 };

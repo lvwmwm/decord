@@ -1,29 +1,30 @@
-// Module ID: 10497
-// Function ID: 81286
+// Module ID: 10521
+// Function ID: 10522
 // Name: useShouldForcePipOrientation
-// Dependencies: [1347, 4178, 1194, 4190, 4183, 10498, 566, 10487, 8143, 2]
+// Dependencies: [1371, 4202, 1218, 4214, 4207, 10522, 589, 10511, 8167, 2]
 // Exports: useShouldForcePipOrientation
 
-// Module 10497 (useShouldForcePipOrientation)
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_5 from "_isNativeReflectConstruct";
+// Module 10521 (useShouldForcePipOrientation)
+import participantFromServer from "participantFromServer";
+import getParticipants from "getParticipants";
+import fetchFingerprint from "fetchFingerprint";
 import { OrientationLockState } from "items3";
 import ParticipantTypes from "ParticipantTypes";
 
-let closure_7;
-let closure_8;
+let error;
+let metroImportAll;
 const require = arg1;
-({ isStreamParticipant: closure_7, ParticipantTypes: closure_8 } = ParticipantTypes);
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/video_calls/native/components/useShouldForcePipOrientation.tsx");
+({ isStreamParticipant: error, ParticipantTypes: metroImportAll } = ParticipantTypes);
+const result = require("fetchFingerprint").fileFinishedImporting("modules/video_calls/native/components/useShouldForcePipOrientation.tsx");
 
 export const useShouldForcePipOrientation = function useShouldForcePipOrientation(channel) {
   let activityLockOrientation;
   let focusedEmbeddedActivityParticipant;
   channel = channel.channel;
-  const tmp = importDefault(10498)(channel.id);
-  const items = [_isNativeReflectConstruct, id];
-  const stateFromStores = channel(566).useStateFromStores(items, () => {
+  let OrientationType = dependencyMap;
+  const tmp = importDefault(10522)(channel.id);
+  const items = [getParticipants, fetchFingerprint];
+  const stateFromStores = channel(589).useStateFromStores(items, () => {
     const participant = outer1_4.getParticipant(channel.id, outer1_5.getId());
     let tmp2 = null;
     if (null != participant) {
@@ -37,63 +38,64 @@ export const useShouldForcePipOrientation = function useShouldForcePipOrientatio
     }
     return tmp2;
   });
-  let obj = channel(566);
-  const items1 = [_createForOfIteratorHelperLoose, _isNativeReflectConstruct];
-  const stateFromStoresObject = channel(566).useStateFromStoresObject(items1, () => {
+  let obj = channel(589);
+  let obj2 = fetchFingerprint;
+  const items1 = [participantFromServer, getParticipants];
+  const stateFromStoresObject = channel(589).useStateFromStoresObject(items1, () => {
+    let obj = outer1_3;
     const currentEmbeddedActivity = outer1_3.getCurrentEmbeddedActivity();
     const selectedParticipant = outer1_4.getSelectedParticipant(channel.id);
-    let obj = {};
     let applicationId;
-    if (null != currentEmbeddedActivity) {
+    if (currentEmbeddedActivity != null) {
       applicationId = currentEmbeddedActivity.applicationId;
     }
     let tmp4 = null;
     if (null != applicationId) {
       let id;
-      if (null != selectedParticipant) {
+      if (selectedParticipant != null) {
         id = selectedParticipant.id;
       }
-      obj = {};
-      ({ applicationId: obj3.applicationId, compositeInstanceId: obj3.instanceId } = currentEmbeddedActivity);
+      obj = { applicationId: null, instanceId: null };
+      ({ applicationId: obj3[0], compositeInstanceId: obj3[1] } = currentEmbeddedActivity);
       tmp4 = null;
       if (id === obj2.getEmbeddedActivityParticipantId(obj)) {
         tmp4 = selectedParticipant;
       }
       obj2 = channel(outer1_2[7]);
     }
-    obj.focusedEmbeddedActivityParticipant = tmp4;
+    obj = { focusedEmbeddedActivityParticipant: tmp4, activityLockOrientation: null };
     let pipOrientationLockStateForApp = null;
     if (null != currentEmbeddedActivity) {
-      pipOrientationLockStateForApp = outer1_3.getPipOrientationLockStateForApp(currentEmbeddedActivity.applicationId);
+      pipOrientationLockStateForApp = obj.getPipOrientationLockStateForApp(currentEmbeddedActivity.applicationId);
     }
-    obj.activityLockOrientation = pipOrientationLockStateForApp;
+    obj[1] = pipOrientationLockStateForApp;
     return obj;
   });
   ({ focusedEmbeddedActivityParticipant, activityLockOrientation } = stateFromStoresObject);
-  let tmp4 = null;
+  let tmp5 = null;
   if (null != tmp) {
-    tmp4 = null;
-    if (tmp.user.id !== id.getId()) {
-      tmp4 = tmp;
+    tmp5 = null;
+    if (tmp.user.id !== obj2.getId()) {
+      tmp5 = tmp;
     }
   }
-  let tmp6 = tmp4;
-  if (null != focusedEmbeddedActivityParticipant) {
-    tmp6 = focusedEmbeddedActivityParticipant;
+  if (focusedEmbeddedActivityParticipant == null) {
+    focusedEmbeddedActivityParticipant = tmp5;
   }
-  if (null != tmp6) {
-    if (callback(tmp6)) {
+  if (null != focusedEmbeddedActivityParticipant) {
+    if (callback(focusedEmbeddedActivityParticipant)) {
       if (null == stateFromStores) {
-        return channel(8143).OrientationType.LANDSCAPE;
+        return tmp2(8167).OrientationType.LANDSCAPE;
       }
     }
   }
   if (activityLockOrientation === OrientationLockState.LANDSCAPE) {
-    let LANDSCAPE = channel(8143).OrientationType.LANDSCAPE;
+    OrientationType = tmp2(8167).OrientationType;
+    let LANDSCAPE = OrientationType.LANDSCAPE;
   } else {
     LANDSCAPE = null;
-    if (activityLockOrientation === OrientationLockState.PORTRAIT) {
-      LANDSCAPE = channel(8143).OrientationType.PORTRAIT;
+    if (activityLockOrientation === tmp8.PORTRAIT) {
+      LANDSCAPE = tmp2(8167).OrientationType.PORTRAIT;
     }
   }
 };

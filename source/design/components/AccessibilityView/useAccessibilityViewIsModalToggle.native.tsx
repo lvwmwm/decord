@@ -1,11 +1,11 @@
-// Module ID: 4561
-// Function ID: 39895
+// Module ID: 4584
+// Function ID: 4585
 // Name: useAccessibilityViewIsModalToggle
-// Dependencies: [31, 4562, 2]
+// Dependencies: [19, 4585, 2]
 // Exports: default
 
-// Module 4561 (useAccessibilityViewIsModalToggle)
-import result from "result";
+// Module 4584 (useAccessibilityViewIsModalToggle)
+import noop from "noop";
 
 let result = require("set").fileFinishedImporting("design/components/AccessibilityView/useAccessibilityViewIsModalToggle.native.tsx");
 
@@ -29,11 +29,11 @@ export default function useAccessibilityViewIsModalToggle(accessibilityViewIsMod
         const _Error = Error;
         const error = new Error("Must have a unique nativeID when accessibilityViewIsModal is enabled.");
         throw error;
-      } else if (ref.current !== nativeID) {
-        ref.current = nativeID;
-        const items = [nativeID];
+      } else if (ref.current !== tmp6) {
+        ref.current = tmp6;
+        const items = [tmp6];
         const result = flag(nativeID[1]).enableAccessibilityFocusLock(items);
-        const obj = flag(nativeID[1]);
+        const obj2 = flag(nativeID[1]);
       }
     } else {
       const current = ref.current;
@@ -41,7 +41,7 @@ export default function useAccessibilityViewIsModalToggle(accessibilityViewIsMod
         ref.current = undefined;
         const items1 = [current];
         const result1 = flag(nativeID[1]).disableAccessibilityFocusLock(items1);
-        const obj2 = flag(nativeID[1]);
+        const obj = flag(nativeID[1]);
       }
     }
   }, items);
@@ -49,7 +49,7 @@ export default function useAccessibilityViewIsModalToggle(accessibilityViewIsMod
   const effect = React.useEffect(() => {
     callback();
     return () => {
-      outer1_3(false);
+      callback(false);
     };
   }, items1);
 };

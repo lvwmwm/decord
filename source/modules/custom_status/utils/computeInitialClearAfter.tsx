@@ -1,10 +1,10 @@
-// Module ID: 11950
-// Function ID: 92367
+// Module ID: 11974
+// Function ID: 11975
 // Name: ClearAfterValues
-// Dependencies: [11948, 3838, 2]
+// Dependencies: [11972, 3862, 2]
 // Exports: default
 
-// Module 11950 (ClearAfterValues)
+// Module 11974 (ClearAfterValues)
 import { ClearAfterValues } from "StatusTypes";
 
 const items = [, , ];
@@ -12,7 +12,7 @@ const items = [, , ];
 const result = require("set").fileFinishedImporting("modules/custom_status/utils/computeInitialClearAfter.tsx");
 
 export default function computeInitialClearAfter() {
-  const CustomStatusSetting = _require(3838).CustomStatusSetting;
+  const CustomStatusSetting = _require(3862).CustomStatusSetting;
   const setting = CustomStatusSetting.getSetting();
   if (null != setting) {
     if ("" !== setting.expiresAtMs) {
@@ -43,7 +43,7 @@ export default function computeInitialClearAfter() {
           const _Date = Date;
           _require = Number(NumberResult) - Date.now();
           let TODAY = items.find((arg0) => closure_0 <= arg0);
-          if (null == TODAY) {
+          if (TODAY == null) {
             TODAY = ClearAfterValues.TODAY;
           }
           return TODAY;

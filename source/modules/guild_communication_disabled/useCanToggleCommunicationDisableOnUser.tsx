@@ -1,14 +1,14 @@
-// Module ID: 11002
-// Function ID: 85344
+// Module ID: 11026
+// Function ID: 11027
 // Name: canToggleCommunicationDisableOnUser
-// Dependencies: [1391, 1838, 3793, 1850, 653, 3798, 566, 2]
+// Dependencies: [1415, 1862, 3817, 1874, 676, 3822, 589, 2]
 // Exports: default
 
-// Module 11002 (canToggleCommunicationDisableOnUser)
-import { isGuildOwner } from "isGuildOwner";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_6 from "_isNativeReflectConstruct";
+// Module 11026 (canToggleCommunicationDisableOnUser)
+import { isGuildOwner } from "GuildNSFWContentLevel";
+import createGuildRecordFromRust from "createGuildRecordFromRust";
+import getUncachedChannelPermissions from "getUncachedChannelPermissions";
+import mergeGuildAvatar from "mergeGuildAvatar";
 import { Permissions } from "ME";
 
 function canToggleCommunicationDisableOnUser(id, id2, items) {
@@ -17,7 +17,7 @@ function canToggleCommunicationDisableOnUser(id, id2, items) {
   let obj3;
   let tmp = items;
   if (items === undefined) {
-    items = [closure_6, _createForOfIteratorHelperLoose, _isNativeReflectConstruct];
+    items = [mergeGuildAvatar, createGuildRecordFromRust, getUncachedChannelPermissions];
     tmp = items;
   }
   [obj, obj2, obj3] = tmp;
@@ -25,32 +25,36 @@ function canToggleCommunicationDisableOnUser(id, id2, items) {
   const user = obj.getUser(id2);
   let tmp6 = null != guild && null != user;
   if (tmp6) {
-    let tmp7 = !user.isNonUserBot();
-    if (tmp7) {
+    const isNonUserBotResult = user.isNonUserBot();
+    let tmp8 = !isNonUserBotResult;
+    if (!isNonUserBotResult) {
       let canResult = isGuildOwner(guild, user);
       if (!canResult) {
-        obj = { permission: Permissions.ADMINISTRATOR, user, context: guild };
-        canResult = importAll(3798).can(obj);
-        const obj5 = importAll(3798);
+        obj = { permission: null, user: null, context: null };
+        obj[0] = Permissions.ADMINISTRATOR;
+        obj[1] = user;
+        obj[2] = guild;
+        canResult = importAll(3822).can(obj);
+        const obj5 = importAll(3822);
       }
       let canManageUserResult = !canResult;
-      if (canManageUserResult) {
+      if (!canResult) {
         canManageUserResult = obj3.canManageUser(Permissions.MODERATE_MEMBERS, user, guild);
       }
-      tmp7 = canManageUserResult;
+      tmp8 = canManageUserResult;
     }
-    tmp6 = tmp7;
+    tmp6 = tmp8;
   }
   return tmp6;
 }
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/guild_communication_disabled/useCanToggleCommunicationDisableOnUser.tsx");
+const result = require("getUncachedChannelPermissions").fileFinishedImporting("modules/guild_communication_disabled/useCanToggleCommunicationDisableOnUser.tsx");
 
 export default function useCanToggleCommunicationDisableOnUser(arg0, arg1) {
   const _require = arg0;
   let closure_1 = arg1;
-  let items = [closure_6, _createForOfIteratorHelperLoose, _isNativeReflectConstruct];
+  let items = [mergeGuildAvatar, createGuildRecordFromRust, getUncachedChannelPermissions];
   const items1 = [arg0, arg1];
-  return _require(566).useStateFromStores(items, () => {
+  return _require(589).useStateFromStores(items, () => {
     const items = [outer1_6, outer1_4, outer1_5];
     return outer1_8(closure_0, closure_1, items);
   }, items1);

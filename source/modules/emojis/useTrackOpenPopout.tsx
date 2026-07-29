@@ -1,18 +1,18 @@
-// Module ID: 9388
-// Function ID: 73141
+// Module ID: 9412
+// Function ID: 9413
 // Name: useTrackOpenPopout
-// Dependencies: [31, 1348, 1907, 1853, 653, 4359, 4594, 9313, 675, 2]
+// Dependencies: [19, 1372, 1931, 1877, 676, 4384, 4616, 9337, 698, 2]
 // Exports: useTrackOpenPopout
 
-// Module 9388 (useTrackOpenPopout)
-import result from "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_5 from "_isNativeReflectConstruct";
+// Module 9412 (useTrackOpenPopout)
+import noop from "noop";
+import ensureGuildLoaded from "ensureGuildLoaded";
+import handleConnectionOpen from "handleConnectionOpen";
 import { EmojiInteractionPoint } from "set";
 import { AnalyticEvents } from "ME";
 
 const require = arg1;
-let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/emojis/useTrackOpenPopout.tsx");
+let result = require("handleConnectionOpen").fileFinishedImporting("modules/emojis/useTrackOpenPopout.tsx");
 
 export const useTrackOpenPopout = (emojiId) => {
   let currentGuildId;
@@ -20,23 +20,23 @@ export const useTrackOpenPopout = (emojiId) => {
   let importDefault;
   let require;
   ({ currentGuildId, popoutData: require, nonce: importDefault, demoMode: dependencyMap } = emojiId);
-  let merged = Object.assign(require(4359) /* _createForOfIteratorHelperLoose */.collectChannelAnalyticsMetadata(channel.getChannel(channelId.getChannelId(currentGuildId))));
+  let current;
+  let merged = Object.assign(require(4384) /* collectGuildAnalyticsMetadata */.collectChannelAnalyticsMetadata(channel.getChannel(channelId.getChannelId(currentGuildId))));
   current = current.useRef({ guild_id: currentGuildId, emoji_id: emojiId.emojiId }).current;
-  importDefault(4594)(() => {
+  importDefault(4616)(() => {
     let obj = outer1_0(outer1_2[7]);
     const result = obj.initiateEmojiInteraction(outer1_6.TrackOpenPopoutUsed);
     if (!closure_2) {
-      obj = {};
-      let analyticsType;
-      if (null != analyticsType) {
-        analyticsType = analyticsType.analyticsType;
+      let str;
+      if (analyticsType != null) {
+        str = analyticsType.analyticsType;
       }
-      let str = "Standard Emoji Popout";
-      if (null != analyticsType) {
-        str = analyticsType;
+      if (str == null) {
+        str = "Standard Emoji Popout";
       }
-      obj.type = str;
-      obj.nonce = closure_1;
+      obj = { type: null, nonce: null };
+      obj[0] = str;
+      obj[1] = closure_1;
       const merged = Object.assign(current);
       outer1_1(outer1_2[8]).track(outer1_7.OPEN_POPOUT, obj);
       const obj2 = outer1_1(outer1_2[8]);

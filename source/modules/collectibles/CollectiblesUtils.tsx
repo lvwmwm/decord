@@ -1,220 +1,117 @@
-// Module ID: 5792
-// Function ID: 50683
-// Name: getPriceForCollectiblesProduct
-// Dependencies: [5785, 1875, 5786, 5787, 5793, 655, 653, 482, 3811, 1866, 1868, 5794, 5651, 477, 1877, 22, 1212, 5791, 2]
-// Exports: canActionOnProduct, getAnalyticsShopDiscountSource, getAssetDisplayConfig, getAssetForAvatarDecorationProduct, getAvatarDecorations, getCollectibleTypeLabel, getCollectiblesItemTypeForDisplay, getCollectiblesPrice, getCollectiblesProductPriceComparisons, getFormattedPriceForCollectiblesProduct, getLogoSize, getNameplates, getProductDiscount, getProductTypeNameForLogging, getProfileEffects, getProfileFrames, getShopDiscountSource, getStrikeThroughPriceAmountForCollectiblesProduct, groupProfileEffects, isCollectiblesGiftCode, isFreeCollectiblesProduct, isPremiumCollectiblesProduct, isPremiumCollectiblesPurchase, isProductNew, removeRewardProductsFilter, shouldHideGiftingForCurrency, shouldShowLimitedTimeBadge, sortProductsByPrice
+// Module ID: 5810
+// Function ID: 5811
+// Name: getItemRecordsFromPurchases
+// Dependencies: [5803, 1899, 5804, 5805, 5811, 678, 676, 505, 3835, 1890, 1892, 5812, 5669, 500, 1901, 12, 1236, 5809, 2]
+// Exports: canActionOnProduct, extendVariantsProducts, extractPriceByPurchaseTypes, getAnalyticsShopDiscountSource, getAssetDisplayConfig, getAssetForAvatarDecorationProduct, getAvatarDecorations, getAvatarDecorationsFromCategories, getAvatarDecorationsFromPurchases, getBundleItemsPriceSum, getCollectibleTypeLabel, getCollectiblesItemTypeForDisplay, getCollectiblesPrice, getCollectiblesProductPriceComparisons, getDaysRemaining, getDefaultPriceSetAssignmentPurchaseType, getFormattedPriceForCollectiblesProduct, getLogoSize, getNameplates, getNameplatesFromCategories, getNameplatesFromPurchases, getPriceForCollectiblesProduct, getProductDiscount, getProductTypeNameForLogging, getProductsFromCategories, getProfileEffects, getProfileEffectsFromCategories, getProfileEffectsFromPurchases, getProfileFrames, getProfileFramesFromCategories, getProfileFramesFromPurchases, getShopDiscountSource, getStrikeThroughPriceAmountForCollectiblesProduct, groupProfileEffects, isBundleProduct, isCollectiblesGiftCode, isFreeCollectiblesProduct, isPremiumCollectiblesProduct, isPremiumCollectiblesPurchase, isProductNew, removeRewardProductsFilter, shouldHideGiftingForCurrency, shouldShowLimitedTimeBadge, sortProductsByPrice
 
-// Module 5792 (getPriceForCollectiblesProduct)
-import { isAvatarDecorationRecord } from "_isNativeReflectConstruct";
-import { isNameplateRecord } from "_isNativeReflectConstruct";
-import { isProfileEffectRecord } from "_isNativeReflectConstruct";
-import { isProfileFrameRecord } from "_isNativeReflectConstruct";
-import { AssetDisplayConfigRecord } from "AssetDisplayConfigRecord";
+// Module 5810 (getItemRecordsFromPurchases)
+import { isAvatarDecorationRecord } from "fromServer";
+import { isNameplateRecord } from "fromServer";
+import { isProfileEffectRecord } from "fromServer";
+import { isProfileFrameRecord } from "fromServer";
+import { AssetDisplayConfigRecord } from "fromServer";
 import items from "items";
 import ME from "ME";
 import { CurrencyCodes } from "sum";
 
-let closure_10;
-let closure_11;
+let c10;
+let c9;
 let closure_12;
-let closure_13;
-let closure_8;
-let closure_9;
-function getPriceForCollectiblesProduct(closure_0, c5, arg2) {
-  if (!arg2) {
-    return tmp(closure_0, c5 ? tmp2.PREMIUM_TIER_2 : tmp2.DEFAULT);
-  }
-}
-function getDefaultPriceSetAssignmentPurchaseType(canUseShopDiscountsResult, DISCORD_ORB) {
-  if (!obj.isAndroid()) {
-    const obj2 = require(477) /* set */;
-  }
-  return canUseShopDiscountsResult ? closure_13.PREMIUM_TIER_2 : closure_13.DEFAULT;
-}
-function getBundleItemsPriceSum(bundledProducts, DISCORD_ORB) {
-  let closure_0 = DISCORD_ORB;
-  bundledProducts = bundledProducts.bundledProducts;
-  if (null == bundledProducts) {
-    return 0;
+let map1;
+let metroImportAll;
+let unpackModuleId;
+function getItemRecordsFromPurchases(arr, PROFILE_EFFECT) {
+  if (PROFILE_EFFECT === require(1901) /* CollectiblesItemType */.CollectiblesItemType.AVATAR_DECORATION) {
+    let tmpResult = tmp(12);
+    const items = [];
+    HermesBuiltin.arraySpread(arr.values(), 0);
+    const found = tmpResult.flatMap(items, "items").filter(isAvatarDecorationRecord);
+    tmpResult = tmp(12);
+    return tmpResult.uniqBy(found, "skuId");
+  } else if (PROFILE_EFFECT === tmp(1901).CollectiblesItemType.NAMEPLATE) {
+    const items1 = [];
+    HermesBuiltin.arraySpread(arr.values(), 0);
+    const tmpResult1 = tmp(12);
+    const found1 = tmp(12).flatMap(items1, "items").filter(isNameplateRecord);
+    const flatMapResult1 = tmp(12).flatMap(items1, "items");
+    return tmp(12).uniqBy(found1, "skuId");
+  } else if (PROFILE_EFFECT === tmp(1901).CollectiblesItemType.PROFILE_EFFECT) {
+    const items2 = [];
+    HermesBuiltin.arraySpread(arr.values(), 0);
+    const tmpResult3 = tmp(12);
+    const found2 = tmp(12).flatMap(items2, "items").filter(isProfileEffectRecord);
+    const flatMapResult2 = tmp(12).flatMap(items2, "items");
+    return tmp(12).uniqBy(found2, "skuId");
+  } else if (PROFILE_EFFECT === tmp(1901).CollectiblesItemType.PROFILE_FRAME) {
+    const items3 = [];
+    HermesBuiltin.arraySpread(arr.values(), 0);
+    const tmpResult5 = tmp(12);
+    const found3 = tmp(12).flatMap(items3, "items").filter(isProfileFrameRecord);
+    const flatMapResult3 = tmp(12).flatMap(items3, "items");
+    return tmp(12).uniqBy(found3, "skuId");
   } else {
-    let closure_1 = getDefaultPriceSetAssignmentPurchaseType(false, DISCORD_ORB);
-    return bundledProducts.reduce((arg0, arg1) => {
-      let amount;
-      const tmp2 = outer1_22(arg1, closure_1, closure_0);
-      if (null != tmp2) {
-        amount = tmp2.amount;
-      }
-      let num = 0;
-      if (null != amount) {
-        num = amount;
-      }
-      return arg0 + num;
-    }, 0);
+    return [];
   }
 }
-function extractPriceByPurchaseTypes(arg0, arg1, arg2) {
-  let closure_0 = arg2;
-  let prices;
-  if (null != arg0.prices[arg1]) {
-    const countryPrices = tmp.countryPrices;
-    if (null != countryPrices) {
-      prices = countryPrices.prices;
-    }
-  }
-  let tmp3 = null;
-  if (null != prices) {
-    if (null == arg2) {
-      let first = prices[0];
-    } else {
-      first = prices.find((currency) => currency.currency === closure_0);
-    }
-    let tmp5 = null;
-    if (null != first) {
-      tmp5 = first;
-    }
-    tmp3 = tmp5;
-  }
-  return tmp3;
-}
-function extendVariantsProducts(flatMapResult) {
-  return flatMapResult.reduce((arr, type) => {
-    let closure_0 = type;
+function getItemRecordsFromCategories(arr, PROFILE_EFFECT) {
+  const items = [...arr.values()];
+  let obj = require(12) /* apply */;
+  const flatMapResult = require(12) /* apply */.flatMap(items, "products");
+  const uniqByResult = require(12) /* apply */.uniqBy(flatMapResult.reduce((arr, type) => {
+    const callback = type;
     if (null != type) {
-      if (type.type === outer1_0(outer1_2[14]).CollectiblesItemType.VARIANTS_GROUP) {
+      if (type.type === callback(table[14]).CollectiblesItemType.VARIANTS_GROUP) {
         if (null != type.variants) {
           const variants = type.variants;
-          let combined = outer1_0(outer1_2[15]).concat(arr, variants.map((arg0) => {
+          let combined = tmp(tmp2[15]).concat(arr, variants.map((arg0) => {
             const obj = {};
             const merged = Object.assign(arg0);
-            obj["variantGroupStoreListingId"] = type.storeListingId;
-            obj["eligibleOffers"] = type.eligibleOffers;
+            ({ storeListingId: obj.variantGroupStoreListingId, eligibleOffers: obj.eligibleOffers } = closure_0);
             return obj;
           }));
-          let obj = outer1_0(outer1_2[15]);
+          const tmpResult = tmp(tmp2[15]);
         }
         return combined;
       }
+      tmp = callback;
+      tmp2 = table;
     }
     arr.push(type);
     combined = arr;
-  }, []);
-}
-function getProductsFromCategories(closure_19, arg1) {
-  const items = [...closure_19.values()];
-  const flatMapResult = require(22) /* apply */.flatMap(items, "products");
-  const obj = require(22) /* apply */;
-  let tmp2 = flatMapResult;
-  if (arg1) {
-    tmp2 = extendVariantsProducts(flatMapResult);
-  }
-  return require(22) /* apply */.uniqBy(tmp2, "storeListingId");
-}
-function getItemRecordsFromPurchases(arr, AVATAR_DECORATION) {
-  if (AVATAR_DECORATION === require(1877) /* CollectiblesItemType */.CollectiblesItemType.AVATAR_DECORATION) {
-    const items = [];
-    HermesBuiltin.arraySpread(arr.values(), 0);
-    const obj7 = require(22) /* apply */;
-    const found = require(22) /* apply */.flatMap(items, "items").filter(isAvatarDecorationRecord);
-    const flatMapResult = require(22) /* apply */.flatMap(items, "items");
-    return require(22) /* apply */.uniqBy(found, "skuId");
-  } else if (AVATAR_DECORATION === require(1877) /* CollectiblesItemType */.CollectiblesItemType.NAMEPLATE) {
-    const items1 = [];
-    HermesBuiltin.arraySpread(arr.values(), 0);
-    const obj5 = require(22) /* apply */;
-    const found1 = require(22) /* apply */.flatMap(items1, "items").filter(isNameplateRecord);
-    const flatMapResult1 = require(22) /* apply */.flatMap(items1, "items");
-    return require(22) /* apply */.uniqBy(found1, "skuId");
-  } else if (AVATAR_DECORATION === require(1877) /* CollectiblesItemType */.CollectiblesItemType.PROFILE_EFFECT) {
-    const items2 = [];
-    HermesBuiltin.arraySpread(arr.values(), 0);
-    const obj3 = require(22) /* apply */;
-    const found2 = require(22) /* apply */.flatMap(items2, "items").filter(isProfileEffectRecord);
-    const flatMapResult2 = require(22) /* apply */.flatMap(items2, "items");
-    return require(22) /* apply */.uniqBy(found2, "skuId");
-  } else if (AVATAR_DECORATION === require(1877) /* CollectiblesItemType */.CollectiblesItemType.PROFILE_FRAME) {
-    const items3 = [];
-    HermesBuiltin.arraySpread(arr.values(), 0);
-    const obj = require(22) /* apply */;
-    const found3 = require(22) /* apply */.flatMap(items3, "items").filter(isProfileFrameRecord);
-    const flatMapResult3 = require(22) /* apply */.flatMap(items3, "items");
-    return require(22) /* apply */.uniqBy(found3, "skuId");
+  }, []), "storeListingId");
+  if (PROFILE_EFFECT === require(1901) /* CollectiblesItemType */.CollectiblesItemType.AVATAR_DECORATION) {
+    let tmpResult = tmp(12);
+    const found = tmpResult.flatMap(uniqByResult, "items").filter(isAvatarDecorationRecord);
+    tmpResult = tmp(12);
+    return tmpResult.uniqBy(found, "skuId");
+  } else if (PROFILE_EFFECT === tmp(1901).CollectiblesItemType.NAMEPLATE) {
+    const tmpResult1 = tmp(12);
+    const found1 = tmp(12).flatMap(uniqByResult, "items").filter(isNameplateRecord);
+    const flatMapResult2 = tmp(12).flatMap(uniqByResult, "items");
+    return tmp(12).uniqBy(found1, "skuId");
+  } else if (PROFILE_EFFECT === tmp(1901).CollectiblesItemType.PROFILE_EFFECT) {
+    const tmpResult3 = tmp(12);
+    const found2 = tmp(12).flatMap(uniqByResult, "items").filter(isProfileEffectRecord);
+    const flatMapResult3 = tmp(12).flatMap(uniqByResult, "items");
+    return tmp(12).uniqBy(found2, "skuId");
+  } else if (PROFILE_EFFECT === tmp(1901).CollectiblesItemType.PROFILE_FRAME) {
+    const tmpResult5 = tmp(12);
+    const found3 = tmp(12).flatMap(uniqByResult, "items").filter(isProfileFrameRecord);
+    const flatMapResult4 = tmp(12).flatMap(uniqByResult, "items");
+    return tmp(12).uniqBy(found3, "skuId");
   } else {
     return [];
   }
+  const obj2 = require(12) /* apply */;
 }
-function getItemRecordsFromCategories(first, AVATAR_DECORATION) {
-  const tmp = getProductsFromCategories(first, true);
-  if (AVATAR_DECORATION === require(1877) /* CollectiblesItemType */.CollectiblesItemType.AVATAR_DECORATION) {
-    const obj7 = require(22) /* apply */;
-    const found = require(22) /* apply */.flatMap(tmp, "items").filter(isAvatarDecorationRecord);
-    const flatMapResult = require(22) /* apply */.flatMap(tmp, "items");
-    return require(22) /* apply */.uniqBy(found, "skuId");
-  } else if (AVATAR_DECORATION === require(1877) /* CollectiblesItemType */.CollectiblesItemType.NAMEPLATE) {
-    const obj5 = require(22) /* apply */;
-    const found1 = require(22) /* apply */.flatMap(tmp, "items").filter(isNameplateRecord);
-    const flatMapResult1 = require(22) /* apply */.flatMap(tmp, "items");
-    return require(22) /* apply */.uniqBy(found1, "skuId");
-  } else if (AVATAR_DECORATION === require(1877) /* CollectiblesItemType */.CollectiblesItemType.PROFILE_EFFECT) {
-    const obj3 = require(22) /* apply */;
-    const found2 = require(22) /* apply */.flatMap(tmp, "items").filter(isProfileEffectRecord);
-    const flatMapResult2 = require(22) /* apply */.flatMap(tmp, "items");
-    return require(22) /* apply */.uniqBy(found2, "skuId");
-  } else if (AVATAR_DECORATION === require(1877) /* CollectiblesItemType */.CollectiblesItemType.PROFILE_FRAME) {
-    const obj = require(22) /* apply */;
-    const found3 = require(22) /* apply */.flatMap(tmp, "items").filter(isProfileFrameRecord);
-    const flatMapResult3 = require(22) /* apply */.flatMap(tmp, "items");
-    return require(22) /* apply */.uniqBy(found3, "skuId");
-  } else {
-    return [];
-  }
-}
-function getAvatarDecorationsFromPurchases(stateFromStores) {
-  return getItemRecordsFromPurchases(stateFromStores, require(1877) /* CollectiblesItemType */.CollectiblesItemType.AVATAR_DECORATION);
-}
-function getAvatarDecorationsFromCategories(categories) {
-  return getItemRecordsFromCategories(categories, require(1877) /* CollectiblesItemType */.CollectiblesItemType.AVATAR_DECORATION);
-}
-function getNameplatesFromPurchases(stateFromStores) {
-  return getItemRecordsFromPurchases(stateFromStores, require(1877) /* CollectiblesItemType */.CollectiblesItemType.NAMEPLATE);
-}
-function getNameplatesFromCategories(first) {
-  return getItemRecordsFromCategories(first, require(1877) /* CollectiblesItemType */.CollectiblesItemType.NAMEPLATE);
-}
-function getProfileEffectsFromPurchases(stateFromStores) {
-  return getItemRecordsFromPurchases(stateFromStores, require(1877) /* CollectiblesItemType */.CollectiblesItemType.PROFILE_EFFECT);
-}
-function getProfileEffectsFromCategories(first) {
-  return getItemRecordsFromCategories(first, require(1877) /* CollectiblesItemType */.CollectiblesItemType.PROFILE_EFFECT);
-}
-function getProfileFramesFromPurchases(stateFromStores) {
-  return getItemRecordsFromPurchases(stateFromStores, require(1877) /* CollectiblesItemType */.CollectiblesItemType.PROFILE_FRAME);
-}
-function getProfileFramesFromCategories(first) {
-  return getItemRecordsFromCategories(first, require(1877) /* CollectiblesItemType */.CollectiblesItemType.PROFILE_FRAME);
-}
-function getDaysRemaining(date) {
-  date = new Date();
-  const fullYear = date.getFullYear();
-  const month = date.getMonth();
-  const fullYear1 = date.getFullYear();
-  const month1 = date.getMonth();
-  return Math.floor((Date.UTC(fullYear1, month1, date.getDate()) - Date.UTC(fullYear, month, date.getDate())) / 86400000);
-}
-function isBundleProduct(type) {
-  type = undefined;
-  if (null != type) {
-    type = type.type;
-  }
-  return type === require(1877) /* CollectiblesItemType */.CollectiblesItemType.BUNDLE;
-}
-({ EXTERNAL_PRODUCT_SKU_IDS: closure_8, LIMITED_TIME_BADGE_DAYS_THRESHOLD: closure_9, SHOP_CARD_PER_PRODUCT_NEW_BADGE_EXPIRY_SETTINGS: closure_10 } = items);
-({ COLLECTIBLES_APPLICATION_ID: closure_11, EntitlementTypes: closure_12, PriceSetAssignmentPurchaseTypes: closure_13 } = ME);
+({ EXTERNAL_PRODUCT_SKU_IDS: metroImportAll, LIMITED_TIME_BADGE_DAYS_THRESHOLD: c9, SHOP_CARD_PER_PRODUCT_NEW_BADGE_EXPIRY_SETTINGS: c10 } = items);
+({ COLLECTIBLES_APPLICATION_ID: unpackModuleId, EntitlementTypes: closure_12, PriceSetAssignmentPurchaseTypes: map1 } = ME);
 let obj = { NITRO: "nitro", THIRDPARTY: "thirdparty" };
 let closure_16 = { [obj.NITRO]: "nitro", [obj.THIRDPARTY]: "xbox" };
 obj = { original: -1, discountPercentage: -1 };
 items = [, , ];
 ({ KZT: arr[0], NGN: arr[1], EGP: arr[2] } = CurrencyCodes);
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/collectibles/CollectiblesUtils.tsx");
+const result = require("fromServer").fileFinishedImporting("modules/collectibles/CollectiblesUtils.tsx");
 
 export const ShopDiscountSource = obj;
 export const getAnalyticsShopDiscountSource = function getAnalyticsShopDiscountSource(shopDiscountSource) {
@@ -225,160 +122,451 @@ export const getAnalyticsShopDiscountSource = function getAnalyticsShopDiscountS
   return tmp;
 };
 export const getShopDiscountSource = function getShopDiscountSource(currentUser) {
-  const obj = importDefault(3811);
+  const obj = importDefault(3835);
   if (obj.canUseShopDiscounts(currentUser)) {
-    if (obj2.canUseCollectibles(currentUser)) {
+    if (tmpResult.canUseCollectibles(currentUser)) {
       return obj.NITRO;
     } else {
       let perks;
-      if (null != currentUser) {
+      if (currentUser != null) {
         perks = currentUser.perks;
       }
-      const perkSource = require(1866) /* parseServerPerkConfigKind */.getPerkSource(perks, require(1868) /* _callSuper */.Perk.SHOP_DISCOUNTS);
-      if (null != perkSource) {
-        if (perkSource.includes(require(1868) /* _callSuper */.PerkSource.SOURCE_NITRO)) {
-          let NITRO = obj.NITRO;
-        }
-        return NITRO;
+      const perkSource = require(1890) /* parseServerPerkConfigKind */.getPerkSource(perks, tmp4(1892).Perk.SHOP_DISCOUNTS);
+      let hasItem;
+      if (perkSource != null) {
+        hasItem = perkSource.includes(tmp4(1892).PerkSource.SOURCE_NITRO);
       }
-      const obj3 = require(1866) /* parseServerPerkConfigKind */;
-      NITRO = null;
-      if (obj5.getIsCrepeEnabled("getShopDiscountSource")) {
+      if (hasItem) {
+        let NITRO = obj.NITRO;
+      } else {
         NITRO = null;
-        if (null != perkSource) {
+        if (tmp4Result.getIsCrepeEnabled("getShopDiscountSource")) {
+          let hasItem1;
+          if (perkSource != null) {
+            hasItem1 = perkSource.includes(tmp4(1892).PerkSource.SOURCE_THIRDPARTY_CROISSANT);
+          }
           NITRO = null;
-          if (perkSource.includes(require(1868) /* _callSuper */.PerkSource.SOURCE_THIRDPARTY_CROISSANT)) {
+          if (hasItem1) {
             NITRO = obj.THIRDPARTY;
           }
         }
+        tmp4Result = tmp4(5812);
       }
-      obj5 = require(5794) /* apexExperiment */;
+      return NITRO;
     }
-    obj2 = importDefault(3811);
+    tmpResult = tmp(3835);
   } else {
     return null;
   }
+  tmp = importDefault;
 };
 export const isPremiumCollectiblesProduct = function isPremiumCollectiblesProduct(product) {
   let premiumType;
-  if (null != product) {
+  if (product != null) {
     premiumType = product.premiumType;
   }
   return null != premiumType;
 };
 export const isPremiumCollectiblesPurchase = function isPremiumCollectiblesPurchase(purchase) {
   let purchaseType;
-  if (null != purchase) {
+  if (purchase != null) {
     purchaseType = purchase.purchaseType;
   }
-  return purchaseType === constants.PREMIUM_PURCHASE;
+  return purchaseType === constants2.PREMIUM_PURCHASE;
 };
 export const getAssetForAvatarDecorationProduct = function getAssetForAvatarDecorationProduct(items) {
   items = items.items;
   const found = items.find(isAvatarDecorationRecord);
   let asset;
-  if (null != found) {
+  if (found != null) {
     asset = found.asset;
   }
   return asset;
 };
-export { getPriceForCollectiblesProduct };
-export const getFormattedPriceForCollectiblesProduct = function getFormattedPriceForCollectiblesProduct(closure_0, c5) {
-  const tmp = getPriceForCollectiblesProduct(closure_0, c5, arg2);
-  let str = "";
-  if (null != tmp) {
-    let amount;
-    if (null != tmp) {
-      amount = tmp.amount;
+export const getPriceForCollectiblesProduct = function getPriceForCollectiblesProduct(arg0, c5, arg2) {
+  if (!arg2) {
+    const tmp4 = arg0.prices[c5 ? tmp.PREMIUM_TIER_2 : tmp.DEFAULT];
+    let prices;
+    if (tmp4 != null) {
+      const countryPrices = tmp4.countryPrices;
+      if (countryPrices != null) {
+        prices = countryPrices.prices;
+      }
     }
-    let currency;
-    if (null != tmp) {
-      currency = tmp.currency;
+    let tmp7 = null;
+    if (null != prices) {
+      let first = prices[0];
+      if (first == null) {
+        first = null;
+      }
+      tmp7 = first;
     }
-    str = require(5651) /* formatSingleCurrencyPrice */.formatPrice(amount, currency);
-    const obj = require(5651) /* formatSingleCurrencyPrice */;
+    return tmp7;
   }
-  return str;
 };
-export { getDefaultPriceSetAssignmentPurchaseType };
-export { getBundleItemsPriceSum };
-export { extractPriceByPurchaseTypes };
+export const getFormattedPriceForCollectiblesProduct = function getFormattedPriceForCollectiblesProduct(arg0, arg1, arg2) {
+  if (!arg2) {
+    const tmp4 = arg0.prices[arg1 ? tmp.PREMIUM_TIER_2 : tmp.DEFAULT];
+    let prices;
+    if (tmp4 != null) {
+      const countryPrices = tmp4.countryPrices;
+      if (countryPrices != null) {
+        prices = countryPrices.prices;
+      }
+    }
+    let tmp7 = null;
+    if (null != prices) {
+      let first = prices[0];
+      if (first == null) {
+        first = null;
+      }
+      tmp7 = first;
+    }
+    let str = "";
+    if (null != tmp7) {
+      let amount;
+      if (tmp7 != null) {
+        amount = tmp7.amount;
+      }
+      let currency;
+      if (tmp7 != null) {
+        currency = tmp7.currency;
+      }
+      str = require(5669) /* formatSingleCurrencyPrice */.formatPrice(amount, currency);
+      const obj = require(5669) /* formatSingleCurrencyPrice */;
+    }
+    return str;
+  }
+};
+export const getDefaultPriceSetAssignmentPurchaseType = function getDefaultPriceSetAssignmentPurchaseType(canUseShopDiscountsResult) {
+  if (!obj.isAndroid()) {
+    const tmpResult = require(500) /* set */;
+  }
+  return canUseShopDiscountsResult ? closure_13.PREMIUM_TIER_2 : closure_13.DEFAULT;
+};
+export const getBundleItemsPriceSum = function getBundleItemsPriceSum(bundledProducts) {
+  const _require = arg1;
+  bundledProducts = bundledProducts.bundledProducts;
+  if (null == bundledProducts) {
+    return 0;
+  } else {
+    if (obj.isAndroid()) {
+      if (arg1 !== CurrencyCodes.DISCORD_ORB) {
+        let DEFAULT = constants3.MOBILE;
+      }
+      return bundledProducts.reduce((arg0, arg1) => {
+        let prices;
+        if (arg1.prices[DEFAULT] != null) {
+          const countryPrices = tmp2.countryPrices;
+          if (countryPrices != null) {
+            prices = countryPrices.prices;
+          }
+        }
+        let tmp4 = null;
+        if (null != prices) {
+          if (null == closure_0) {
+            let first = prices[0];
+          } else {
+            first = prices.find((currency) => currency.currency === closure_0);
+          }
+          if (first == null) {
+            first = null;
+          }
+          tmp4 = first;
+        }
+        let num;
+        if (tmp4 != null) {
+          num = tmp4.amount;
+        }
+        if (num == null) {
+          num = 0;
+        }
+        return arg0 + num;
+      }, 0);
+    } else {
+      const tmpResult = tmp(500);
+    }
+    DEFAULT = constants3.DEFAULT;
+    obj = _require(500);
+    tmp = _require;
+  }
+};
+export const extractPriceByPurchaseTypes = function extractPriceByPurchaseTypes(arg0, arg1, arg2) {
+  let closure_0 = arg2;
+  let prices;
+  if (arg0.prices[arg1] != null) {
+    const countryPrices = tmp.countryPrices;
+    if (countryPrices != null) {
+      prices = countryPrices.prices;
+    }
+  }
+  let tmp3 = null;
+  if (null != prices) {
+    if (null == arg2) {
+      let first = prices[0];
+    } else {
+      first = prices.find((currency) => currency.currency === closure_0);
+    }
+    if (first == null) {
+      first = null;
+    }
+    tmp3 = first;
+  }
+  return tmp3;
+};
 export const NoDiscount = obj;
 export const DISCOUNT_DISPLAY_MINIMUM_THRESHOLD = 5;
 export const getProductDiscount = function getProductDiscount(product, hasShopDiscount, DISCORD_ORB) {
   if (null == product) {
     return obj;
   } else {
-    const tmp2 = getBundleItemsPriceSum(product, DISCORD_ORB);
-    if (tmp2 <= 0) {
-      return obj;
-    } else {
-      const tmp6 = extractPriceByPurchaseTypes(product, getDefaultPriceSetAssignmentPurchaseType(hasShopDiscount, DISCORD_ORB), DISCORD_ORB);
-      if (null != tmp6) {
-        obj = { original: tmp2 };
-        const _Math = Math;
-        obj.discountPercentage = Math.round((tmp2 - tmp6.amount) / tmp2 * 100);
+    let _require = DISCORD_ORB;
+    const bundledProducts = product.bundledProducts;
+    if (null == bundledProducts) {
+      if (0 <= 0) {
+        return obj;
+      } else {
+        if (!obj5.isAndroid()) {
+          const tmp20Result = _require(500);
+        }
+        _require = DISCORD_ORB;
+        const tmp11 = product.prices[hasShopDiscount ? constants3.PREMIUM_TIER_2 : constants3.DEFAULT];
+        let prices;
+        if (tmp11 != null) {
+          const countryPrices = tmp11.countryPrices;
+          if (countryPrices != null) {
+            prices = countryPrices.prices;
+          }
+        }
+        let tmp13 = null;
+        if (null != prices) {
+          if (null == DISCORD_ORB) {
+            let first = prices[0];
+          } else {
+            first = prices.find((currency) => currency.currency === closure_0);
+          }
+          if (first == null) {
+            first = null;
+          }
+          tmp13 = first;
+        }
+        if (null != tmp13) {
+          obj = { original: null, discountPercentage: null };
+          obj[0] = 0;
+          const _Math = Math;
+          obj[1] = Math.round((0 - tmp13.amount) / 0 * 100);
+        }
+        return obj;
       }
-      return obj;
+    } else {
+      obj = _require(500);
+      if (obj.isAndroid()) {
+        if (DISCORD_ORB !== CurrencyCodes.DISCORD_ORB) {
+          let DEFAULT = constants3.MOBILE;
+        }
+        const reduced = bundledProducts.reduce((arg0, arg1) => {
+          let prices;
+          if (arg1.prices[DEFAULT] != null) {
+            const countryPrices = tmp2.countryPrices;
+            if (countryPrices != null) {
+              prices = countryPrices.prices;
+            }
+          }
+          let tmp4 = null;
+          if (null != prices) {
+            if (null == closure_0) {
+              let first = prices[0];
+            } else {
+              first = prices.find((currency) => currency.currency === closure_0);
+            }
+            if (first == null) {
+              first = null;
+            }
+            tmp4 = first;
+          }
+          let num;
+          if (tmp4 != null) {
+            num = tmp4.amount;
+          }
+          if (num == null) {
+            num = 0;
+          }
+          return arg0 + num;
+        }, 0);
+      } else {
+        const tmpResult = tmp(500);
+      }
+      DEFAULT = constants3.DEFAULT;
+      tmp = _require;
     }
   }
 };
 export const getCollectiblesProductPriceComparisons = function getCollectiblesProductPriceComparisons(type, hasShopDiscount) {
   hasShopDiscount = hasShopDiscount.hasShopDiscount;
-  const tmp = extractPriceByPurchaseTypes(type, closure_13.DEFAULT);
-  if (null == tmp) {
+  let _require;
+  let prices;
+  if (type.prices[constants3.DEFAULT] != null) {
+    const countryPrices = tmp2.countryPrices;
+    if (countryPrices != null) {
+      prices = countryPrices.prices;
+    }
+  }
+  let tmp4 = null;
+  if (null != prices) {
+    let first = prices[0];
+    if (first == null) {
+      first = null;
+    }
+    tmp4 = first;
+  }
+  if (null == tmp4) {
     return null;
-  } else if (tmp.amount <= 0) {
-    let obj = { defaultPrice: tmp, showDefaultPriceOnly: true };
+  } else if (tmp4.amount <= 0) {
+    let obj = { defaultPrice: null, showDefaultPriceOnly: true };
+    obj[0] = tmp4;
     return obj;
   } else {
-    const tmp9 = extractPriceByPurchaseTypes(type, closure_13.PREMIUM_TIER_2);
-    let tmp2 = tmp;
-    if (isBundleProduct(type)) {
-      tmp2 = tmp;
+    _require = undefined;
+    let prices1;
+    if (type.prices[tmp.PREMIUM_TIER_2] != null) {
+      const countryPrices2 = tmp17.countryPrices;
+      if (countryPrices2 != null) {
+        prices1 = countryPrices2.prices;
+      }
+    }
+    let tmp7 = null;
+    if (null != prices1) {
+      let first1 = prices1[0];
+      if (first1 == null) {
+        first1 = null;
+      }
+      tmp7 = first1;
+    }
+    type = undefined;
+    if (type != null) {
+      type = type.type;
+    }
+    let tmp12 = tmp4;
+    if (type === _require(1901).CollectiblesItemType.BUNDLE) {
+      tmp12 = tmp4;
       if (hasShopDiscount) {
         obj = {};
-        const merged = Object.assign(tmp);
-        obj["amount"] = hasShopDiscount.discount.original;
-        tmp2 = obj;
+        const merged = Object.assign(tmp4);
+        obj.amount = hasShopDiscount.discount.original;
+        tmp12 = obj;
       }
     }
     if (hasShopDiscount) {
-      hasShopDiscount = null != tmp9;
+      hasShopDiscount = null != tmp7;
     }
-    let tmp6 = tmp2;
+    let tmp16 = tmp12;
     if (hasShopDiscount) {
-      tmp6 = tmp9;
+      tmp16 = tmp7;
     }
-    obj = { defaultPrice: tmp, originalPrice: tmp2, premiumPrice: tmp9, finalPrice: tmp6, showDiscountPrice: hasShopDiscount, finalPriceIsDifferent: tmp6.amount !== tmp2.amount, showDefaultPriceOnly: false };
+    obj = { defaultPrice: null, originalPrice: null, premiumPrice: null, finalPrice: null, showDiscountPrice: null, finalPriceIsDifferent: null, showDefaultPriceOnly: false };
+    obj[0] = tmp4;
+    obj[1] = tmp12;
+    obj[2] = tmp7;
+    obj[3] = tmp16;
+    obj[4] = hasShopDiscount;
+    obj[5] = tmp16.amount !== tmp12.amount;
     return obj;
   }
+  tmp = constants3;
 };
 export const isFreeCollectiblesProduct = function isFreeCollectiblesProduct(product) {
+  let c0;
+  let prices;
+  if (product.prices[constants3.DEFAULT] != null) {
+    const countryPrices = tmp.countryPrices;
+    if (countryPrices != null) {
+      prices = countryPrices.prices;
+    }
+  }
+  let tmp3 = null;
+  if (null != prices) {
+    let first = prices[0];
+    if (first == null) {
+      first = null;
+    }
+    tmp3 = first;
+  }
   let amount;
-  const tmp2 = extractPriceByPurchaseTypes(product, closure_13.DEFAULT);
-  if (null != tmp2) {
-    amount = tmp2.amount;
+  if (tmp3 != null) {
+    amount = tmp3.amount;
   }
   return 0 === amount;
 };
-export { extendVariantsProducts };
-export { getProductsFromCategories };
+export const extendVariantsProducts = function extendVariantsProducts(items) {
+  return items.reduce((arr, type) => {
+    const callback = type;
+    if (null != type) {
+      if (type.type === callback(table[14]).CollectiblesItemType.VARIANTS_GROUP) {
+        if (null != type.variants) {
+          const variants = type.variants;
+          let combined = tmp(tmp2[15]).concat(arr, variants.map((arg0) => {
+            const obj = {};
+            const merged = Object.assign(arg0);
+            ({ storeListingId: obj.variantGroupStoreListingId, eligibleOffers: obj.eligibleOffers } = closure_0);
+            return obj;
+          }));
+          const tmpResult = tmp(tmp2[15]);
+        }
+        return combined;
+      }
+      tmp = callback;
+      tmp2 = table;
+    }
+    arr.push(type);
+    combined = arr;
+  }, []);
+};
+export const getProductsFromCategories = function getProductsFromCategories(closure_14, arg1) {
+  const items = [...closure_14.values()];
+  const flatMapResult = require(12) /* apply */.flatMap(items, "products");
+  const obj = require(12) /* apply */;
+  let reduced = flatMapResult;
+  if (arg1) {
+    reduced = flatMapResult.reduce((arr, type) => {
+      const callback = type;
+      if (null != type) {
+        if (type.type === callback(table[14]).CollectiblesItemType.VARIANTS_GROUP) {
+          if (null != type.variants) {
+            const variants = type.variants;
+            let combined = tmp(tmp2[15]).concat(arr, variants.map((arg0) => {
+              const obj = {};
+              const merged = Object.assign(arg0);
+              ({ storeListingId: obj.variantGroupStoreListingId, eligibleOffers: obj.eligibleOffers } = closure_0);
+              return obj;
+            }));
+            const tmpResult = tmp(tmp2[15]);
+          }
+          return combined;
+        }
+        tmp = callback;
+        tmp2 = table;
+      }
+      arr.push(type);
+      combined = arr;
+    }, []);
+  }
+  return require(12) /* apply */.uniqBy(reduced, "storeListingId");
+};
 export { getItemRecordsFromPurchases };
 export { getItemRecordsFromCategories };
 export const getCollectibleTypeLabel = function getCollectibleTypeLabel(type) {
-  if (require(1877) /* CollectiblesItemType */.CollectiblesItemType.AVATAR_DECORATION === type) {
-    const intl4 = require(1212) /* getSystemLocale */.intl;
-    return intl4.string(require(1212) /* getSystemLocale */.t["7v0T9P"]);
-  } else if (require(1877) /* CollectiblesItemType */.CollectiblesItemType.PROFILE_EFFECT === type) {
-    const intl3 = require(1212) /* getSystemLocale */.intl;
-    return intl3.string(require(1212) /* getSystemLocale */.t.wR5wOo);
-  } else if (require(1877) /* CollectiblesItemType */.CollectiblesItemType.NAMEPLATE === type) {
-    const intl2 = require(1212) /* getSystemLocale */.intl;
-    return intl2.string(require(1212) /* getSystemLocale */.t.x5CoXR);
-  } else if (require(1877) /* CollectiblesItemType */.CollectiblesItemType.PROFILE_FRAME === type) {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(require(1212) /* getSystemLocale */.t.GWrZOd);
+  if (require(1901) /* CollectiblesItemType */.CollectiblesItemType.AVATAR_DECORATION === type) {
+    const intl4 = tmp(1236).intl;
+    return intl4.string(tmp(1236).t["7v0T9P"]);
+  } else if (tmp(1901).CollectiblesItemType.PROFILE_EFFECT === type) {
+    const intl3 = tmp(1236).intl;
+    return intl3.string(tmp(1236).t.wR5wOo);
+  } else if (tmp(1901).CollectiblesItemType.NAMEPLATE === type) {
+    const intl2 = tmp(1236).intl;
+    return intl2.string(tmp(1236).t.x5CoXR);
+  } else if (tmp(1901).CollectiblesItemType.PROFILE_FRAME === type) {
+    const intl = tmp(1236).intl;
+    return intl.string(tmp(1236).t.GWrZOd);
   } else {
     return null;
   }
@@ -390,41 +578,57 @@ export const getAssetDisplayConfig = function getAssetDisplayConfig(banner_displ
   }
   return fromServerResult;
 };
-export { getAvatarDecorationsFromPurchases };
-export { getAvatarDecorationsFromCategories };
+export const getAvatarDecorationsFromPurchases = function getAvatarDecorationsFromPurchases(arr) {
+  return getItemRecordsFromPurchases(arr, require(1901) /* CollectiblesItemType */.CollectiblesItemType.AVATAR_DECORATION);
+};
+export const getAvatarDecorationsFromCategories = function getAvatarDecorationsFromCategories(categories) {
+  return getItemRecordsFromCategories(categories, require(1901) /* CollectiblesItemType */.CollectiblesItemType.AVATAR_DECORATION);
+};
 export const getAvatarDecorations = function getAvatarDecorations(stateFromStores, first) {
-  const items = [...getAvatarDecorationsFromPurchases(stateFromStores), ...getAvatarDecorationsFromCategories(first)];
-  return require(22) /* apply */.uniqBy(items, "skuId");
+  const items = [...getItemRecordsFromPurchases(stateFromStores, require(1901) /* CollectiblesItemType */.CollectiblesItemType.AVATAR_DECORATION), ...getItemRecordsFromCategories(first, require(1901) /* CollectiblesItemType */.CollectiblesItemType.AVATAR_DECORATION)];
+  return require(12) /* apply */.uniqBy(items, "skuId");
 };
-export { getNameplatesFromPurchases };
-export { getNameplatesFromCategories };
+export const getNameplatesFromPurchases = function getNameplatesFromPurchases(arr) {
+  return getItemRecordsFromPurchases(arr, require(1901) /* CollectiblesItemType */.CollectiblesItemType.NAMEPLATE);
+};
+export const getNameplatesFromCategories = function getNameplatesFromCategories(arr) {
+  return getItemRecordsFromCategories(arr, require(1901) /* CollectiblesItemType */.CollectiblesItemType.NAMEPLATE);
+};
 export const getNameplates = function getNameplates(stateFromStores, first) {
-  const items = [...getNameplatesFromPurchases(stateFromStores), ...getNameplatesFromCategories(first)];
-  return require(22) /* apply */.uniqBy(items, "skuId");
+  const items = [...getItemRecordsFromPurchases(stateFromStores, require(1901) /* CollectiblesItemType */.CollectiblesItemType.NAMEPLATE), ...getItemRecordsFromCategories(first, require(1901) /* CollectiblesItemType */.CollectiblesItemType.NAMEPLATE)];
+  return require(12) /* apply */.uniqBy(items, "skuId");
 };
-export { getProfileEffectsFromPurchases };
-export { getProfileEffectsFromCategories };
+export const getProfileEffectsFromPurchases = function getProfileEffectsFromPurchases(arr) {
+  return getItemRecordsFromPurchases(arr, require(1901) /* CollectiblesItemType */.CollectiblesItemType.PROFILE_EFFECT);
+};
+export const getProfileEffectsFromCategories = function getProfileEffectsFromCategories(arr) {
+  return getItemRecordsFromCategories(arr, require(1901) /* CollectiblesItemType */.CollectiblesItemType.PROFILE_EFFECT);
+};
 export const getProfileEffects = function getProfileEffects(stateFromStores, first) {
-  const items = [...getProfileEffectsFromPurchases(stateFromStores), ...getProfileEffectsFromCategories(first)];
-  return require(22) /* apply */.uniqBy(items, "skuId");
+  const items = [...getItemRecordsFromPurchases(stateFromStores, require(1901) /* CollectiblesItemType */.CollectiblesItemType.PROFILE_EFFECT), ...getItemRecordsFromCategories(first, require(1901) /* CollectiblesItemType */.CollectiblesItemType.PROFILE_EFFECT)];
+  return require(12) /* apply */.uniqBy(items, "skuId");
 };
-export const groupProfileEffects = function groupProfileEffects(first, stateFromStores) {
-  const tmp = getProfileEffectsFromPurchases(stateFromStores);
-  const require = tmp;
-  const arr = getProfileEffectsFromCategories(first);
+export const groupProfileEffects = function groupProfileEffects(arr, arr) {
+  const tmp = getItemRecordsFromPurchases(arr, require(1901) /* CollectiblesItemType */.CollectiblesItemType.PROFILE_EFFECT);
+  require = tmp;
+  arr = getItemRecordsFromCategories(arr, require(1901) /* CollectiblesItemType */.CollectiblesItemType.PROFILE_EFFECT);
   return {
     purchased: tmp,
-    shopPreviews: getProfileEffectsFromCategories(first).filter((skuId) => {
+    shopPreviews: getItemRecordsFromCategories(arr, require(1901) /* CollectiblesItemType */.CollectiblesItemType.PROFILE_EFFECT).filter((skuId) => {
       skuId = skuId.skuId;
       return !skuId.some((skuId) => skuId.skuId === skuId);
     })
   };
 };
-export { getProfileFramesFromPurchases };
-export { getProfileFramesFromCategories };
+export const getProfileFramesFromPurchases = function getProfileFramesFromPurchases(arr) {
+  return getItemRecordsFromPurchases(arr, require(1901) /* CollectiblesItemType */.CollectiblesItemType.PROFILE_FRAME);
+};
+export const getProfileFramesFromCategories = function getProfileFramesFromCategories(arr) {
+  return getItemRecordsFromCategories(arr, require(1901) /* CollectiblesItemType */.CollectiblesItemType.PROFILE_FRAME);
+};
 export const getProfileFrames = function getProfileFrames(stateFromStores, first) {
-  const items = [...getProfileFramesFromPurchases(stateFromStores), ...getProfileFramesFromCategories(first)];
-  return require(22) /* apply */.uniqBy(items, "skuId");
+  const items = [...getItemRecordsFromPurchases(stateFromStores, require(1901) /* CollectiblesItemType */.CollectiblesItemType.PROFILE_FRAME), ...getItemRecordsFromCategories(first, require(1901) /* CollectiblesItemType */.CollectiblesItemType.PROFILE_FRAME)];
+  return require(12) /* apply */.uniqBy(items, "skuId");
 };
 export const isCollectiblesGiftCode = function isCollectiblesGiftCode(giftCode) {
   return giftCode.applicationId === closure_11;
@@ -433,11 +637,28 @@ export const LOGO_ASPECT_RATIO = 3.8;
 export const getLogoSize = function getLogoSize(arg0) {
   return 3.8 * arg0;
 };
-export { getDaysRemaining };
+export const getDaysRemaining = function getDaysRemaining(date) {
+  date = new Date();
+  const fullYear = date.getFullYear();
+  const month = date.getMonth();
+  const fullYear1 = date.getFullYear();
+  const month1 = date.getMonth();
+  return Math.floor((Date.UTC(fullYear1, month1, date.getDate()) - Date.UTC(fullYear, month, date.getDate())) / 86400000);
+};
 export const shouldShowLimitedTimeBadge = function shouldShowLimitedTimeBadge(date) {
   let tmp = null != date;
   if (tmp) {
-    tmp = getDaysRemaining(date) <= closure_9;
+    const _Date = Date;
+    date = new Date();
+    const _Date2 = Date;
+    const fullYear = date.getFullYear();
+    const month = date.getMonth();
+    const _Date3 = Date;
+    const fullYear1 = date.getFullYear();
+    const month1 = date.getMonth();
+    const _Math = Math;
+    tmp = Math.floor((Date.UTC(fullYear1, month1, date.getDate()) - Date.UTC(fullYear, month, date.getDate())) / 86400000) <= closure_9;
+    const UTCResult = Date.UTC(fullYear, month, date.getDate());
   }
   return tmp;
 };
@@ -450,16 +671,22 @@ export const isProductNew = function isProductNew(skuId) {
   }
   return tmp2;
 };
-export { isBundleProduct };
+export const isBundleProduct = function isBundleProduct(type) {
+  type = undefined;
+  if (type != null) {
+    type = type.type;
+  }
+  return type === require(1901) /* CollectiblesItemType */.CollectiblesItemType.BUNDLE;
+};
 export const getCollectiblesItemTypeForDisplay = function getCollectiblesItemTypeForDisplay(type) {
   if (null != type) {
-    if (type.type === require(1877) /* CollectiblesItemType */.CollectiblesItemType.BUNDLE) {
-      type = require(1877) /* CollectiblesItemType */.CollectiblesItemType.BUNDLE;
+    if (type.type === require(1901) /* CollectiblesItemType */.CollectiblesItemType.BUNDLE) {
+      type = require(1901) /* CollectiblesItemType */.CollectiblesItemType.BUNDLE;
     } else {
       const items = type.items;
-      if (null != items) {
+      if (items != null) {
         const first = items[0];
-        if (null != first) {
+        if (first != null) {
           type = first.type;
         }
       }
@@ -472,19 +699,19 @@ export const getCollectiblesPrice = function getCollectiblesPrice(arg0) {
   let selectedSkuId;
   ({ invoicePreview, selectedSkuId } = arg0);
   let unitPrice;
-  if (null != invoicePreview) {
+  if (invoicePreview != null) {
     const invoiceItems = invoicePreview.invoiceItems;
-    if (null != invoiceItems) {
+    if (invoiceItems != null) {
       const first = invoiceItems[0];
-      if (null != first) {
+      if (first != null) {
         unitPrice = first.unitPrice;
       }
     }
   }
   let tmp3;
   if (null != unitPrice) {
-    let obj = {};
-    ({ amount: obj.amount, currency: obj.currency } = unitPrice);
+    let obj = { amount: null, currency: null };
+    ({ amount: obj[0], currency: obj[1] } = unitPrice);
     tmp3 = obj;
   }
   let tmp4 = tmp3;
@@ -492,12 +719,14 @@ export const getCollectiblesPrice = function getCollectiblesPrice(arg0) {
     tmp4 = tmp3;
     if (null != selectedSkuId) {
       let price;
-      if (null != arg0.skusById[selectedSkuId]) {
+      if (arg0.skusById[selectedSkuId] != null) {
         price = tmp5.price;
       }
       tmp4 = tmp3;
       if (null != price) {
-        obj = { amount: tmp5.price.amount, currency: tmp5.price.currency };
+        obj = { amount: null, currency: null };
+        obj[0] = tmp5.price.amount;
+        obj[1] = tmp5.price.currency;
         tmp4 = obj;
       }
     }
@@ -511,14 +740,75 @@ export const shouldHideGiftingForCurrency = function shouldHideGiftingForCurrenc
   }
   return hasItem;
 };
-export const getStrikeThroughPriceAmountForCollectiblesProduct = function getStrikeThroughPriceAmountForCollectiblesProduct(closure_0, c5, arg2) {
-  if (isBundleProduct(closure_0)) {
-    return getBundleItemsPriceSum(closure_0);
+export const getStrikeThroughPriceAmountForCollectiblesProduct = function getStrikeThroughPriceAmountForCollectiblesProduct(type, c5, arg2) {
+  type = undefined;
+  if (type != null) {
+    type = type.type;
+  }
+  if (type === require(1901) /* CollectiblesItemType */.CollectiblesItemType.BUNDLE) {
+    const bundledProducts = type.bundledProducts;
+    if (null == bundledProducts) {
+      return 0;
+    } else {
+      let tmp2Result = tmp2(500);
+      if (tmp2Result.isAndroid()) {
+        if (undefined !== CurrencyCodes.DISCORD_ORB) {
+          let DEFAULT = constants3.MOBILE;
+        }
+        const reduced = bundledProducts.reduce((arg0, arg1) => {
+          let prices;
+          if (arg1.prices[DEFAULT] != null) {
+            const countryPrices = tmp2.countryPrices;
+            if (countryPrices != null) {
+              prices = countryPrices.prices;
+            }
+          }
+          let tmp4 = null;
+          if (null != prices) {
+            if (null == closure_0) {
+              let first = prices[0];
+            } else {
+              first = prices.find((currency) => currency.currency === closure_0);
+            }
+            if (first == null) {
+              first = null;
+            }
+            tmp4 = first;
+          }
+          let num;
+          if (tmp4 != null) {
+            num = tmp4.amount;
+          }
+          if (num == null) {
+            num = 0;
+          }
+          return arg0 + num;
+        }, 0);
+      } else {
+        tmp2Result = tmp2(500);
+      }
+      DEFAULT = constants3.DEFAULT;
+    }
   } else if (!c5) {
-    const tmpResult = tmp(closure_0, arg2 ? tmp2.MOBILE_PREMIUM_TIER_2 : tmp2.PREMIUM_TIER_2);
+    const tmp5 = type.prices[arg2 ? tmp16.MOBILE_PREMIUM_TIER_2 : tmp16.PREMIUM_TIER_2];
+    let prices;
+    if (tmp5 != null) {
+      let countryPrices = tmp5.countryPrices;
+      if (countryPrices != null) {
+        prices = countryPrices.prices;
+      }
+    }
+    let tmp7 = null;
+    if (null != prices) {
+      let first = prices[0];
+      if (first == null) {
+        first = null;
+      }
+      tmp7 = first;
+    }
     let amount;
-    if (null != tmpResult) {
-      amount = tmpResult.amount;
+    if (tmp7 != null) {
+      amount = tmp7.amount;
     }
     return amount;
   }
@@ -529,32 +819,32 @@ export const canActionOnProduct = function canActionOnProduct(arg0) {
   ({ product, isPartiallyOwnedBundle } = arg0);
   if (!isPartiallyOwnedBundle) {
     let skuId;
-    if (null != product) {
+    if (product != null) {
       skuId = product.skuId;
     }
-    isPartiallyOwnedBundle = closure_8.ORB_PROFILE_BADGE === skuId && tmp;
-    const tmp5 = closure_8.ORB_PROFILE_BADGE === skuId && tmp;
+    isPartiallyOwnedBundle = constants.ORB_PROFILE_BADGE === skuId && tmp;
+    const tmp5 = constants.ORB_PROFILE_BADGE === skuId && tmp;
   }
   return !isPartiallyOwnedBundle;
 };
 export const getProductTypeNameForLogging = function getProductTypeNameForLogging(arg0, arg1) {
-  if (require(1877) /* CollectiblesItemType */.CollectiblesItemType.AVATAR_DECORATION === arg0) {
+  if (require(1901) /* CollectiblesItemType */.CollectiblesItemType.AVATAR_DECORATION === arg0) {
     return "avatar decoration";
-  } else if (require(1877) /* CollectiblesItemType */.CollectiblesItemType.PROFILE_EFFECT === arg0) {
+  } else if (tmp(1901).CollectiblesItemType.PROFILE_EFFECT === arg0) {
     return "profile effect";
-  } else if (require(1877) /* CollectiblesItemType */.CollectiblesItemType.NAMEPLATE === arg0) {
+  } else if (tmp(1901).CollectiblesItemType.NAMEPLATE === arg0) {
     return "nameplate";
-  } else if (require(1877) /* CollectiblesItemType */.CollectiblesItemType.PROFILE_FRAME === arg0) {
+  } else if (tmp(1901).CollectiblesItemType.PROFILE_FRAME === arg0) {
     return "profile frame";
-  } else if (require(1877) /* CollectiblesItemType */.CollectiblesItemType.BUNDLE === arg0) {
+  } else if (tmp(1901).CollectiblesItemType.BUNDLE === arg0) {
     return "bundle";
-  } else if (require(1877) /* CollectiblesItemType */.CollectiblesItemType.EXTERNAL_SKU === arg0) {
+  } else if (tmp(1901).CollectiblesItemType.EXTERNAL_SKU === arg0) {
     let str3 = "3-day nitro credit";
-    if (arg1 !== closure_8.FRACTIONAL_PREMIUM) {
+    if (arg1 !== constants.FRACTIONAL_PREMIUM) {
       let str4 = "1-day nitro credit";
-      if (arg1 !== closure_8.FRACTIONAL_PREMIUM_1_DAY) {
+      if (arg1 !== tmp4.FRACTIONAL_PREMIUM_1_DAY) {
         let str5 = "unknown";
-        if (arg1 === closure_8.ORB_PROFILE_BADGE) {
+        if (arg1 === tmp4.ORB_PROFILE_BADGE) {
           str5 = "orb profile badge";
         }
         str4 = str5;
@@ -562,7 +852,7 @@ export const getProductTypeNameForLogging = function getProductTypeNameForLoggin
       str3 = str4;
     }
     return str3;
-  } else if (require(1877) /* CollectiblesItemType */.CollectiblesItemType.VARIANTS_GROUP === arg0) {
+  } else if (tmp(1901).CollectiblesItemType.VARIANTS_GROUP === arg0) {
     return "variants group";
   } else {
     return "unknown";
@@ -571,38 +861,72 @@ export const getProductTypeNameForLogging = function getProductTypeNameForLoggin
 export const sortProductsByPrice = function sortProductsByPrice(arr) {
   let closure_0 = arg1;
   let closure_1 = arg2;
-  return arr.sort((product, product2) => {
+  return arr.sort((arg0, arg1) => {
     if (closure_1) {
       let obj = callback(outer1_2[17]);
-      obj = { product, hasShopDiscount: callback };
+      obj = { product: null, hasShopDiscount: null };
+      obj[0] = arg0;
+      obj[1] = callback;
       let productOrbPrice = obj.getProductOrbPrice(obj);
+      let tmp2 = callback;
     } else {
-      productOrbPrice = outer1_19(product, callback, true);
+      tmp2 = callback;
+      const tmp4 = arg0.prices[callback ? outer1_13.MOBILE_PREMIUM_TIER_2 : outer1_13.MOBILE];
+      let prices;
+      if (tmp4 != null) {
+        const countryPrices = tmp4.countryPrices;
+        if (countryPrices != null) {
+          prices = countryPrices.prices;
+        }
+      }
+      productOrbPrice = null;
+      if (null != prices) {
+        let first = prices[0];
+        if (first == null) {
+          first = null;
+        }
+        productOrbPrice = first;
+      }
     }
     if (closure_1) {
-      obj = { product: product2, hasShopDiscount: callback };
+      obj = { product: null, hasShopDiscount: null };
+      obj[0] = arg1;
+      obj[1] = tmp2;
       let productOrbPrice1 = callback(outer1_2[17]).getProductOrbPrice(obj);
       const obj3 = callback(outer1_2[17]);
     } else {
-      productOrbPrice1 = outer1_19(product2, callback, true);
+      const tmp13 = arg1.prices[tmp2 ? outer1_13.MOBILE_PREMIUM_TIER_2 : outer1_13.MOBILE];
+      let prices1;
+      if (tmp13 != null) {
+        const countryPrices2 = tmp13.countryPrices;
+        if (countryPrices2 != null) {
+          prices1 = countryPrices2.prices;
+        }
+      }
+      productOrbPrice1 = null;
+      if (null != prices1) {
+        let first1 = prices1[0];
+        if (first1 == null) {
+          first1 = null;
+        }
+        productOrbPrice1 = first1;
+      }
     }
-    let amount;
-    if (null != productOrbPrice) {
-      amount = productOrbPrice.amount;
+    let num;
+    if (productOrbPrice != null) {
+      num = productOrbPrice.amount;
     }
-    let num3 = 0;
-    if (null != amount) {
-      num3 = amount;
+    if (num == null) {
+      num = 0;
     }
-    let amount1;
-    if (null != productOrbPrice1) {
-      amount1 = productOrbPrice1.amount;
+    let num2;
+    if (productOrbPrice1 != null) {
+      num2 = productOrbPrice1.amount;
     }
-    let num4 = 0;
-    if (null != amount1) {
-      num4 = amount1;
+    if (num2 == null) {
+      num2 = 0;
     }
-    return num3 - num4;
+    return num - num2;
   });
 };
 export const removeRewardProductsFilter = function removeRewardProductsFilter(arr) {

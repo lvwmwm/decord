@@ -1,14 +1,14 @@
-// Module ID: 1357
-// Function ID: 16293
+// Module ID: 1381
+// Function ID: 1382
 // Name: set
 // Dependencies: [2]
 
-// Module 1357 (set)
+// Module 1381 (set)
 import set from "set";
 
-const obj = {};
+const obj = { ALL: null };
 let set = new Set([0, 1]);
-obj.ALL = set;
+obj[0] = set;
 const result = set.fileFinishedImporting("../discord_common/js/shared/shared-constants/ThreadSortOrder.tsx");
 
 export const ThreadSortOrder = { LATEST_ACTIVITY: 0, [0]: "LATEST_ACTIVITY", CREATION_DATE: 1, [1]: "CREATION_DATE" };

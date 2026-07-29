@@ -1,8 +1,8 @@
-// Module ID: 13527
-// Function ID: 103824
-// Dependencies: [4190, 482, 10595, 686, 10592, 2]
+// Module ID: 13550
+// Function ID: 13551
+// Dependencies: [4214, 505, 10629, 709, 10626, 2]
 
-// Module 13527
+// Module 13550
 import { OrientationLockState } from "items3";
 import sum from "sum";
 
@@ -12,19 +12,19 @@ const result = require("createRpcJoiSchemaObject").fileFinishedImporting("module
 export default {
   [sum.RPCCommands.SET_ORIENTATION_LOCK_STATE]: {
     validation(number) {
-      let obj = importDefault(10595)(number);
-      obj = {};
+      let obj = importDefault(10629)(number);
+      obj = { lock_state: null, picture_in_picture_lock_state: null, grid_lock_state: null };
       const requiredResult = obj.required();
       let validResult = number.number().valid(OrientationLockState.UNLOCKED, OrientationLockState.PORTRAIT, OrientationLockState.LANDSCAPE);
-      obj.lock_state = validResult.required();
+      obj[0] = validResult.required();
       const numberResult = number.number();
       validResult = number.number().valid(OrientationLockState.UNLOCKED, OrientationLockState.PORTRAIT, OrientationLockState.LANDSCAPE);
       const numberResult1 = number.number();
-      obj.picture_in_picture_lock_state = validResult.allow(null).optional();
+      obj[1] = validResult.allow(null).optional();
       const allowResult = validResult.allow(null);
       const numberResult2 = number.number();
       const validResult1 = number.number().valid(OrientationLockState.UNLOCKED, OrientationLockState.PORTRAIT, OrientationLockState.LANDSCAPE);
-      obj.grid_lock_state = number.number().valid(OrientationLockState.UNLOCKED, OrientationLockState.PORTRAIT, OrientationLockState.LANDSCAPE).allow(null).optional();
+      obj[2] = number.number().valid(OrientationLockState.UNLOCKED, OrientationLockState.PORTRAIT, OrientationLockState.LANDSCAPE).allow(null).optional();
       return requiredResult.keys(obj);
     },
     handler(args) {
@@ -33,17 +33,23 @@ export default {
       ({ lock_state, picture_in_picture_lock_state } = args.args);
       const id = args.socket.application.id;
       if (null == id) {
-        let tmp8 = importDefault(10592);
-        let obj = { errorCode: RPCErrors.INVALID_COMMAND };
-        const prototype = tmp8.prototype;
-        tmp8 = new tmp8(obj, "No application.");
-        throw tmp8;
+        let obj = { errorCode: null };
+        obj[0] = RPCErrors.INVALID_COMMAND;
+        const tmp12 = new importDefault(10626)(obj, "No application.");
+        throw tmp12;
       } else {
-        obj = importDefault(686);
-        obj = { type: "FRAME_SET_ORIENTATION_LOCK_STATE", applicationId: id, lockState: lock_state, pictureInPictureLockState: picture_in_picture_lock_state };
+        obj = importDefault(709);
+        obj = { type: "FRAME_SET_ORIENTATION_LOCK_STATE", applicationId: null, lockState: null, pictureInPictureLockState: null };
+        obj[1] = id;
+        obj[2] = lock_state;
+        obj[3] = picture_in_picture_lock_state;
         obj.dispatch(obj);
-        const obj1 = { type: "EMBEDDED_ACTIVITY_SET_ORIENTATION_LOCK_STATE", applicationId: id, lockState: lock_state, pictureInPictureLockState: picture_in_picture_lock_state, gridLockState: tmp };
-        importDefault(686).dispatch(obj1);
+        const obj1 = { type: "EMBEDDED_ACTIVITY_SET_ORIENTATION_LOCK_STATE", applicationId: null, lockState: null, pictureInPictureLockState: null, gridLockState: null };
+        obj1[1] = id;
+        obj1[2] = lock_state;
+        obj1[3] = picture_in_picture_lock_state;
+        obj1[4] = tmp;
+        importDefault(709).dispatch(obj1);
       }
     }
   }

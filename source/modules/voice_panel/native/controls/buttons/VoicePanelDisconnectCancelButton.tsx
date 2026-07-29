@@ -1,58 +1,66 @@
-// Module ID: 15980
-// Function ID: 123328
+// Module ID: 16015
+// Function ID: 16016
 // Name: DisconnectCancelButton
-// Dependencies: [57, 31, 1347, 4184, 4377, 10016, 33, 4165, 689, 10015, 10487, 4026, 10585, 4358, 4344, 4979, 10686, 15981, 9106, 15971, 1212, 2]
+// Dependencies: [32, 19, 1371, 4208, 4400, 10038, 21, 4189, 712, 10037, 10511, 4050, 10609, 4383, 4369, 5001, 10710, 16016, 9130, 16006, 1236, 2]
 // Exports: default
 
-// Module 15980 (DisconnectCancelButton)
+// Module 16015 (DisconnectCancelButton)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
-import closure_5 from "_createForOfIteratorHelperLoose";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import AnimatedButtonWrapper from "AnimatedButtonWrapper";
+import participantFromServer from "participantFromServer";
+import reset from "reset";
 import withEqualityFn from "withEqualityFn";
 import { VoicePanelModes } from "VoicePanelModes";
-import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import { jsx } from "set";
+import createCacheKey from "createCacheKey";
 
-let require = arg1;
+const require = arg1;
 let closure_10 = { USER: 0, [0]: "USER", STREAM: 1, [1]: "STREAM", ACTIVITY: 2, [2]: "ACTIVITY" };
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.CONTROL_CRITICAL_PRIMARY_BACKGROUND_DEFAULT };
-_createForOfIteratorHelperLoose.disconnectCancelBG = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.icon = { tintColor: require("_createForOfIteratorHelperLoose").colors.WHITE };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+createCacheKey = { disconnectCancelBG: null, icon: null };
+createCacheKey = { backgroundColor: require("Themes").colors.CONTROL_CRITICAL_PRIMARY_BACKGROUND_DEFAULT };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { tintColor: require("Themes").colors.WHITE };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
 let closure_12 = { code: "function VoicePanelDisconnectCancelButtonTsx1(){const{mode,VoicePanelModes,focused}=this.__closure;var _focused$get$id,_focused$get;if(mode.get()!==VoicePanelModes.PANEL){return null;}return(_focused$get$id=(_focused$get=focused.get())===null||_focused$get===void 0?void 0:_focused$get.id)!==null&&_focused$get$id!==void 0?_focused$get$id:null;}" };
 let closure_13 = { code: "function VoicePanelDisconnectCancelButtonTsx2(focusId,lastFocusId){const{runOnJS,handleFocusChange}=this.__closure;if(focusId!==lastFocusId){runOnJS(handleFocusChange)(focusId);}}" };
-let obj1 = { tintColor: require("_createForOfIteratorHelperLoose").colors.WHITE };
-let result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/voice_panel/native/controls/buttons/VoicePanelDisconnectCancelButton.tsx");
+let obj1 = { tintColor: require("Themes").colors.WHITE };
+let result = require("participantFromServer").fileFinishedImporting("modules/voice_panel/native/controls/buttons/VoicePanelDisconnectCancelButton.tsx");
 
 export default function DisconnectCancelButton(props) {
+  let _require;
+  let channelId;
+  let focused;
+  let mode;
+  let first;
+  let participantFromServer;
+  let callback;
   let PhoneHangUpIcon;
-  let tmp = _createForOfIteratorHelperLoose();
-  const require = tmp;
+  let tmp = createCacheKey();
+  _require = tmp;
+  let obj = first;
   const context = first.useContext(channelId(focused[9]));
   channelId = context.channelId;
   focused = context.focused;
-  const mode = context.mode;
-  const tmp3 = mode(first.useState(null), 2);
-  first = tmp3[0];
-  let closure_5 = tmp3[1];
-  const callback = first.useCallback((arg0) => {
-    if (null != arg0) {
+  mode = context.mode;
+  const tmp5 = mode(first.useState(null), 2);
+  first = tmp5[0];
+  participantFromServer = tmp5[1];
+  callback = first.useCallback((id) => {
+    if (null != id) {
       const currentEmbeddedActivity = store.getCurrentEmbeddedActivity();
       let applicationId;
-      if (null != currentEmbeddedActivity) {
+      if (currentEmbeddedActivity != null) {
         applicationId = currentEmbeddedActivity.applicationId;
       }
       if (null != applicationId) {
-        let obj = tmp(focused[10]);
-        obj = {};
-        ({ applicationId: obj2.applicationId, compositeInstanceId: obj2.instanceId } = currentEmbeddedActivity);
-        if (arg0 === obj.getEmbeddedActivityParticipantId(obj)) {
+        let obj = _undefined(focused[10]);
+        obj = { applicationId: null, instanceId: null };
+        ({ applicationId: obj2[0], compositeInstanceId: obj2[1] } = currentEmbeddedActivity);
+        if (id === obj.getEmbeddedActivityParticipantId(obj)) {
           store(outer1_10.ACTIVITY);
         }
       }
-      if (null == callback.getActiveStreamForStreamKey(arg0)) {
+      if (null == callback.getActiveStreamForStreamKey(id)) {
         let STREAM = outer1_10.USER;
       } else {
         STREAM = outer1_10.STREAM;
@@ -63,60 +71,55 @@ export default function DisconnectCancelButton(props) {
       store(null);
     }
   }, []);
-  let obj = require(focused[11]);
-  class T {
-    constructor() {
-      tmp = null;
-      if (mode.get() === outer1_8.PANEL) {
-        tmp2 = focused;
-        value = focused.get();
-        id = undefined;
-        if (null != value) {
-          id = value.id;
-        }
-        tmp5 = null;
-        if (null != id) {
-          tmp5 = id;
-        }
-        tmp = tmp5;
+  let obj1 = _require(focused[11]);
+  const fn = function p() {
+    let tmp = null;
+    if (mode.get() === outer1_8.PANEL) {
+      const value = focused.get();
+      let id;
+      if (value != null) {
+        id = value.id;
       }
-      return tmp;
+      if (id == null) {
+        id = null;
+      }
+      tmp = id;
     }
-  }
+    return tmp;
+  };
   obj = { mode, VoicePanelModes, focused };
-  T.__closure = obj;
-  T.__workletHash = 1109426015268;
-  T.__initData = closure_12;
-  class A {
+  fn.__closure = obj;
+  fn.__workletHash = 1109426015268;
+  fn.__initData = closure_12;
+  class T {
     constructor(arg0, arg1) {
       if (props !== arg1) {
-        tmp = outer1_0;
+        tmp = c0;
         tmp2 = focused;
-        num = 11;
-        obj = outer1_0(focused[11]);
-        tmp3 = _isNativeReflectConstruct;
-        tmp4 = obj.runOnJS(_isNativeReflectConstruct)(props);
+        obj = c0(focused[11]);
+        tmp3 = c6;
+        tmp4 = obj.runOnJS(c6)(props);
       }
       return;
     }
   }
-  obj = { runOnJS: require(focused[11]).runOnJS, handleFocusChange: callback };
-  A.__closure = obj;
-  A.__workletHash = 16719769067952;
-  A.__initData = closure_13;
-  const animatedReaction = obj.useAnimatedReaction(T, A);
+  obj = { runOnJS: _require(focused[11]).runOnJS, handleFocusChange: callback };
+  T.__closure = obj;
+  T.__workletHash = 16719769067952;
+  T.__initData = closure_13;
+  const animatedReaction = obj1.useAnimatedReaction(fn, T);
   const items = [channelId, first, focused];
   const callback1 = first.useCallback(() => {
     const value = focused.get();
-    if (null != value) {
+    if (value != null) {
       const id = value.id;
     }
     if (first !== outer1_10.ACTIVITY) {
-      if (first === outer1_10.STREAM) {
+      if (tmp2 === outer1_10.STREAM) {
         const participant = channelId(focused[13]).selectParticipant(channelId, null);
         if (null != id) {
-          tmp(focused[14]).stopStream(id);
-          const obj7 = tmp(focused[14]);
+          _undefined(focused[14]).stopStream(id);
+          const obj7 = _undefined(focused[14]);
         }
       } else {
         channelId(focused[15]).disconnect();
@@ -126,39 +129,39 @@ export default function DisconnectCancelButton(props) {
       }
     } else {
       const currentEmbeddedActivity = store.getCurrentEmbeddedActivity();
-      let obj = tmp(focused[10]);
+      let obj = _undefined(focused[10]);
       const result = obj.activityParticipantIdToApplicationId(id);
-      obj = {};
       let _location;
-      if (null != currentEmbeddedActivity) {
+      if (currentEmbeddedActivity != null) {
         _location = currentEmbeddedActivity.location;
       }
-      obj.location = _location;
-      obj.applicationId = result;
+      obj = { location: null, applicationId: null };
+      obj[0] = _location;
+      obj[1] = result;
       channelId(focused[12]).leaveActivity(obj);
       const obj2 = channelId(focused[12]);
     }
   }, items);
   if (first === constants.ACTIVITY) {
-    PhoneHangUpIcon = require(focused[16]).DoorExitIcon;
-  } else if (first === constants.STREAM) {
-    PhoneHangUpIcon = require(focused[17]).ScreenXIcon;
+    PhoneHangUpIcon = tmp8(tmp3[16]).DoorExitIcon;
+  } else if (first === tmp11.STREAM) {
+    PhoneHangUpIcon = tmp8(tmp3[17]).ScreenXIcon;
   } else {
-    PhoneHangUpIcon = require(focused[18]).PhoneHangUpIcon;
+    PhoneHangUpIcon = tmp8(tmp3[18]).PhoneHangUpIcon;
   }
-  const obj1 = { onPress: callback1, props: props.props, style: tmp.disconnectCancelBG };
+  obj1 = { onPress: callback1, props: props.props, style: tmp.disconnectCancelBG, accessibilityLabel: null, children: null };
   if (first === constants.ACTIVITY) {
-    const intl3 = require(focused[20]).intl;
-    let stringResult = intl3.string(require(focused[20]).t["R/FK4A"]);
-  } else if (first === constants.STREAM) {
-    const intl2 = require(focused[20]).intl;
-    stringResult = intl2.string(require(focused[20]).t.q3O3J8);
+    const intl3 = tmp8(tmp3[20]).intl;
+    let stringResult = intl3.string(tmp8(tmp3[20]).t["R/FK4A"]);
+  } else if (first === tmp11.STREAM) {
+    const intl2 = tmp8(tmp3[20]).intl;
+    stringResult = intl2.string(tmp8(tmp3[20]).t.q3O3J8);
   } else {
-    const intl = require(focused[20]).intl;
-    stringResult = intl.string(require(focused[20]).t["6vrfgt"]);
+    const intl = tmp8(tmp3[20]).intl;
+    stringResult = intl.string(tmp8(tmp3[20]).t["6vrfgt"]);
   }
-  obj1.accessibilityLabel = stringResult;
+  obj1[3] = stringResult;
   const items1 = [PhoneHangUpIcon, tmp.icon];
-  obj1.children = first.useMemo(() => outer1_9(PhoneHangUpIcon, { style: tmp.icon }), items1);
-  return jsx(channelId(focused[19]), { onPress: callback1, props: props.props, style: tmp.disconnectCancelBG });
+  obj1[4] = obj.useMemo(() => outer1_9(PhoneHangUpIcon, { style: _undefined.icon }), items1);
+  return jsx(channelId(focused[19]), { onPress: callback1, props: props.props, style: tmp.disconnectCancelBG, accessibilityLabel: null, children: null });
 };

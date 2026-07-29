@@ -1,18 +1,18 @@
-// Module ID: 15557
-// Function ID: 119475
+// Module ID: 15591
+// Function ID: 15592
 // Name: useMediaKeyboardConfig
-// Dependencies: [31, 1552, 653, 6054, 11372, 6030, 7989, 9650, 1882, 2]
+// Dependencies: [19, 1576, 676, 6072, 11396, 6048, 8014, 9672, 1906, 2]
 // Exports: default
 
-// Module 15557 (useMediaKeyboardConfig)
-import result from "result";
+// Module 15591 (useMediaKeyboardConfig)
+import noop from "noop";
 import { MediaKeyboardTarget } from "DRAG_HANDLE";
 import ME from "ME";
 
-let closure_5;
+let c5;
 let closure_6;
 const require = arg1;
-({ ChannelTypesSets: closure_5, MAX_UPLOAD_COUNT: closure_6 } = ME);
+({ ChannelTypesSets: c5, MAX_UPLOAD_COUNT: closure_6 } = ME);
 const result = require("ME").fileFinishedImporting("modules/media_keyboard/native/components/useMediaKeyboardConfig.tsx");
 
 export default function useMediaKeyboardConfig(arg0) {
@@ -24,12 +24,12 @@ export default function useMediaKeyboardConfig(arg0) {
   let canStartThread;
   let MediaKeyboardTarget;
   let mediaKeyboardDraftType;
-  const tmp2 = context(6054).useCanPostPollsInChannel(channel) && context.target !== MediaKeyboardTarget.COMMAND;
-  importDefault = tmp2;
-  const tmp3 = importDefault(11372)(channel);
-  dependencyMap = tmp3;
-  let obj = context(6054);
-  canStartThread = context(6030).useCanStartThread(channel);
+  const tmp4 = context(6072).useCanPostPollsInChannel(channel) && context.target !== MediaKeyboardTarget.COMMAND;
+  importDefault = tmp4;
+  const tmp5 = importDefault(11396)(channel);
+  dependencyMap = tmp5;
+  let tmp2Result = tmp2(6048);
+  canStartThread = tmp2Result.useCanStartThread(channel);
   if (canStartThread) {
     const GUILD_THREADS_ONLY = mediaKeyboardDraftType.GUILD_THREADS_ONLY;
     canStartThread = !GUILD_THREADS_ONLY.has(channel.type);
@@ -40,16 +40,16 @@ export default function useMediaKeyboardConfig(arg0) {
   if (canStartThread) {
     canStartThread = !tmp;
   }
-  const obj2 = context(6030);
-  const tmp6 = context(7989).useIsAppLauncherEnabled(channel.id) && context.target !== MediaKeyboardTarget.COMMAND;
-  MediaKeyboardTarget = tmp6;
-  const obj3 = context(7989);
-  mediaKeyboardDraftType = context(9650).getMediaKeyboardDraftType(context.target);
-  let items = [context, tmp2, tmp3, mediaKeyboardDraftType, canStartThread, tmp6];
+  tmp2Result = tmp2(8014);
+  const tmp8 = tmp2Result.useIsAppLauncherEnabled(channel.id) && context.target !== MediaKeyboardTarget.COMMAND;
+  MediaKeyboardTarget = tmp8;
+  let obj = context(6072);
+  mediaKeyboardDraftType = context(9672).getMediaKeyboardDraftType(context.target);
+  let items = [context, tmp4, tmp5, mediaKeyboardDraftType, canStartThread, tmp8];
   return canStartThread.useMemo(() => {
     const target = context.target;
     if (target !== _undefined2.CHAT) {
-      if (target !== _undefined2.COMMAND) {
+      if (target !== tmp2.COMMAND) {
         const _Error = Error;
         const _HermesInternal = HermesInternal;
         const error = new Error("MediaKeyboard does not support context target " + target);
@@ -58,29 +58,27 @@ export default function useMediaKeyboardConfig(arg0) {
     }
     let fileTypes;
     if (target === _undefined2.COMMAND) {
-      if (context.option.type === context(_undefined[8]).ApplicationCommandOptionType.ATTACHMENT) {
-        fileTypes = context.option.fileTypes;
+      if (tmp.option.type === context(_undefined[8]).ApplicationCommandOptionType.ATTACHMENT) {
+        fileTypes = tmp.option.fileTypes;
       }
     }
-    const obj = {};
-    let num2 = 1;
+    let num = 1;
     if (target === _undefined2.CHAT) {
-      num2 = outer1_6;
+      num = outer1_6;
     }
-    obj.uploadLimit = num2;
-    obj.disableWhenReachedLimit = target === _undefined2.CHAT;
-    let tmp7;
+    const obj = { uploadLimit: num, disableWhenReachedLimit: target === _undefined2.CHAT, includedUploadIds: null, fileTypes: null, canPostPolls: null, canStartThreads: null, isAppLauncherEnabled: null, uploadDisabled: null, draftType: null };
+    let tmp6;
     if (target !== _undefined2.CHAT) {
-      const items = [context.option.name];
-      tmp7 = items;
+      const items = [tmp.option.name];
+      tmp6 = items;
     }
-    obj.includedUploadIds = tmp7;
-    obj.fileTypes = fileTypes;
-    obj.canPostPolls = c1;
-    obj.canStartThreads = canStartThread;
-    obj.isAppLauncherEnabled = _undefined2;
-    obj.uploadDisabled = _undefined;
-    obj.draftType = mediaKeyboardDraftType;
+    obj[2] = tmp6;
+    obj[3] = fileTypes;
+    obj[4] = c1;
+    obj[5] = canStartThread;
+    obj[6] = _undefined2;
+    obj[7] = _undefined;
+    obj[8] = mediaKeyboardDraftType;
     return obj;
   }, items);
 };

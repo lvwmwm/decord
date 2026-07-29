@@ -1,11 +1,11 @@
-// Module ID: 9310
-// Function ID: 72736
+// Module ID: 9334
+// Function ID: 9335
 // Name: SuperReactionLocalImageAnimation
-// Dependencies: [31, 33, 6077, 6120, 2]
+// Dependencies: [19, 21, 6095, 6138, 2]
 // Exports: default
 
-// Module 9310 (SuperReactionLocalImageAnimation)
-import "result";
+// Module 9334 (SuperReactionLocalImageAnimation)
+import "noop";
 import { jsx } from "jsxProd";
 
 const require = arg1;
@@ -16,17 +16,15 @@ export default function SuperReactionLocalImageAnimation(arg0) {
   let localImageSource;
   let tmp = null;
   ({ localImageSource, animationSource } = arg0);
-  let obj = Object.create(null);
-  obj.localImageSource = 0;
-  obj.animationSource = 0;
-  const merged = Object.assign(arg0, obj);
-  obj = require(6077) /* _generateAnimationSource */;
+  const merged = Object.assign(arg0, Object.create(null));
+  let obj = require(6095) /* _generateAnimationSource */;
   const superReactionAnimationSourceFromLocalImage = obj.useSuperReactionAnimationSourceFromLocalImage({ animationSource, localImageSource });
   if (null != superReactionAnimationSourceFromLocalImage) {
-    obj = { loop: true, source: superReactionAnimationSourceFromLocalImage };
+    obj = { loop: true, source: null };
+    obj[1] = superReactionAnimationSourceFromLocalImage;
     const merged1 = Object.assign(merged);
-    tmp = jsx(importDefault(6120), { loop: true, source: superReactionAnimationSourceFromLocalImage });
-    const tmp8 = importDefault(6120);
+    tmp = jsx(importDefault(6138), { loop: true, source: null });
+    const tmp7 = importDefault(6138);
   }
   return tmp;
 };

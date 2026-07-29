@@ -1,15 +1,12 @@
-// Module ID: 8374
-// Function ID: 66979
-// Name: getMobileTenureBadgeImages
-// Dependencies: [1852, 8375, 8376, 8377, 8378, 8379, 8380, 8381, 8382, 8383, 8384, 8385, 8386, 8387, 8388, 8389, 8390, 8391, 8392, 8393, 8394, 8395, 8396, 8397, 8398, 2]
-// Exports: useMobileTenureBadgeImages
+// Module ID: 8398
+// Function ID: 8399
+// Name: useMobileTenureBadgeImages
+// Dependencies: [1876, 8399, 8400, 8401, 8402, 8403, 8404, 8405, 8406, 8407, 8408, 8409, 8410, 8411, 8412, 8413, 8414, 8415, 8416, 8417, 8418, 8419, 8420, 8421, 8422, 2]
+// Exports: getMobileTenureBadgeImages, useMobileTenureBadgeImages
 
-// Module 8374 (getMobileTenureBadgeImages)
+// Module 8398 (useMobileTenureBadgeImages)
 import { TieredTenureBadge } from "GuildFeatures";
 
-function getMobileTenureBadgeImages(id) {
-  return obj[id];
-}
 let obj = {};
 obj = { small: require("registerAsset"), medium: require("metadata"), large: require("metadata") };
 obj[TieredTenureBadge.PREMIUM_TENURE_1_MONTH] = obj;
@@ -32,8 +29,10 @@ const result = require("metadata").fileFinishedImporting("modules/premium/tiered
 export const useMobileTenureBadgeImages = function useMobileTenureBadgeImages(id) {
   let tmp = null;
   if (null != id) {
-    tmp = getMobileTenureBadgeImages(id);
+    tmp = obj[id];
   }
   return tmp;
 };
-export { getMobileTenureBadgeImages };
+export const getMobileTenureBadgeImages = function getMobileTenureBadgeImages(arg0) {
+  return obj[arg0];
+};

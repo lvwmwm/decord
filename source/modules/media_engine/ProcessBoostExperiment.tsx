@@ -1,16 +1,16 @@
-// Module ID: 12848
-// Function ID: 99872
+// Module ID: 12870
+// Function ID: 12871
 // Name: apexExperiment
-// Dependencies: [4226, 1428, 2]
+// Dependencies: [4250, 1452, 2]
 
-// Module 12848 (apexExperiment)
+// Module 12870 (apexExperiment)
 import { ProcessPriority } from "DesktopSources";
 import ApexExperiment from "ApexExperiment";
 
-let obj = { name: "2026-02-process-boost-on-voice", kind: "user", defaultConfig: { processPriority: ProcessPriority.HIGH, threadPriorityConfiguration: 0 } };
-obj = { processPriority: ProcessPriority.NORMAL, threadPriorityConfiguration: 0 };
-obj.variations = { [1]: obj, [2]: { processPriority: ProcessPriority.NORMAL, threadPriorityConfiguration: 1 }, [3]: { processPriority: ProcessPriority.NORMAL, threadPriorityConfiguration: 2 }, [4]: { processPriority: ProcessPriority.NORMAL, threadPriorityConfiguration: 3 } };
-const apexExperiment = ApexExperiment.createApexExperiment(obj);
+let obj = { processPriority: ProcessPriority.HIGH, threadPriorityConfiguration: 0 };
+obj = { 1: null, 2: obj1, 3: obj2, 4: obj3 };
+obj[4] = { processPriority: ProcessPriority.NORMAL, threadPriorityConfiguration: 3 };
+const apexExperiment = ApexExperiment.createApexExperiment({ name: "2026-02-process-boost-on-voice", kind: "user", defaultConfig: obj, variations: obj });
 const result = require("set").fileFinishedImporting("modules/media_engine/ProcessBoostExperiment.tsx");
 
 export const ProcessBoostExperiment = apexExperiment;

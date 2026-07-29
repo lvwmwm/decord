@@ -1,17 +1,16 @@
-// Module ID: 13539
-// Function ID: 103947
+// Module ID: 13562
+// Function ID: 13563
 // Name: handler
-// Dependencies: [1922, 653, 8150, 2]
+// Dependencies: [1946, 676, 8174, 2]
 
-// Module 13539 (handler)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 13562 (handler)
+import _getSystemLocale from "_getSystemLocale";
 
 let obj = {};
-obj = {
-  scope: require("set").OAuth2Scopes.IDENTIFY,
-  handler() {
-    return { locale: locale.locale };
-  }
+obj = { scope: null, handler: null };
+obj[0] = require("set").OAuth2Scopes.IDENTIFY;
+obj[1] = function handler() {
+  return { locale: locale.locale };
 };
 obj[require("ME").RPCCommands.USER_SETTINGS_GET_LOCALE] = obj;
 const result = require("set").fileFinishedImporting("modules/rpc/server/commands/userSettings.tsx");

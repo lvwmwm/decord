@@ -1,144 +1,142 @@
-// Module ID: 15296
-// Function ID: 116283
-// Name: customScoreToIndex
-// Dependencies: [57, 31, 27, 4360, 8146, 33, 4165, 689, 8160, 1212, 1273, 15297, 15298, 15299, 8200, 8731, 566, 15300, 4161, 5537, 4355, 2]
+// Module ID: 15329
+// Function ID: 15330
+// Name: ContentSettingsControl
+// Dependencies: [32, 19, 17, 4385, 8170, 21, 4189, 712, 8184, 1236, 1297, 15330, 15331, 15332, 8224, 8755, 589, 15333, 4185, 5555, 4380, 2]
 // Exports: ChannelScoreSettings, GuildScoreSettings
 
-// Module 15296 (customScoreToIndex)
+// Module 15329 (ContentSettingsControl)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
-import { View } from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_7 from "_isNativeReflectConstruct";
-import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import TableSwitchRow from "TableSwitchRow";
+import { View } from "module_15333";
+import updateUserGuildSettingsInternal from "updateUserGuildSettingsInternal";
+import filterStaffGuild from "filterStaffGuild";
+import jsxProd from "set";
+import createCacheKey from "createCacheKey";
 
-let closure_8;
-let closure_9;
+let c9;
+let metroImportAll;
 const require = arg1;
-function customScoreToIndex(first) {
-  if (require(8160) /* generateHydrationId */.ICYMICustomScore.LESS === first) {
-    return 0;
-  } else if (require(8160) /* generateHydrationId */.ICYMICustomScore.MORE === first) {
-    return 2;
-  } else {
-    return 1;
-  }
-}
 function ContentSettingsControl(initialValue) {
+  let c1;
   let disabled;
   let require;
+  let tmp3;
   ({ onValueUpdated: require, disabled } = initialValue);
-  const tmp = _createForOfIteratorHelperLoose();
-  const tmp2 = callback(React.useState(initialValue.initialValue), 2);
-  const first = tmp2[0];
-  const importDefault = tmp2[1];
-  let obj = {};
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj.label = intl.string(require(1212) /* getSystemLocale */.t.rdt65I);
-  obj.id = "-1";
-  obj = { source: importDefault(15297) };
+  let importDefault;
+  const tmp = createCacheKey();
+  [tmp3, c1] = callback(React.useState(initialValue.initialValue), 2);
+  let obj = { label: null, id: "-1", icon: null, page: null };
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj[0] = intl.string(require(1236) /* getSystemLocale */.t.rdt65I);
+  obj = { source: null, style: null };
+  obj[0] = importDefault(15330);
   const items = [tmp.icon, ];
   let iconSelected = null;
-  if (first === require(8160) /* generateHydrationId */.ICYMICustomScore.LESS) {
+  if (tmp3 === require(8184) /* generateHydrationId */.ICYMICustomScore.LESS) {
     iconSelected = tmp.iconSelected;
   }
   items[1] = iconSelected;
-  obj.style = items;
-  obj.icon = callback2(require(1273) /* Button */.Icon, obj);
-  obj.page = null;
+  obj[1] = items;
+  obj[2] = closure_8(require(1297) /* Button */.Icon, obj);
   const items1 = [obj, , ];
-  obj = {};
-  const intl2 = require(1212) /* getSystemLocale */.intl;
-  obj.label = intl2.string(require(1212) /* getSystemLocale */.t.SnrG00);
-  obj.id = "0";
-  const obj1 = { source: importDefault(15298) };
+  obj = { label: null, id: "0", icon: null, page: null };
+  const intl2 = tmp4(1236).intl;
+  obj[0] = intl2.string(require(1236) /* getSystemLocale */.t.SnrG00);
+  const obj1 = { source: null, style: null };
+  obj1[0] = importDefault(15331);
   const items2 = [tmp.icon, ];
   let iconSelected1 = null;
-  if (first === require(8160) /* generateHydrationId */.ICYMICustomScore.DEFAULT) {
+  if (tmp3 === require(8184) /* generateHydrationId */.ICYMICustomScore.DEFAULT) {
     iconSelected1 = tmp.iconSelected;
   }
   items2[1] = iconSelected1;
-  obj1.style = items2;
-  obj.icon = callback2(require(1273) /* Button */.Icon, obj1);
-  obj.page = null;
+  obj1[1] = items2;
+  obj[2] = closure_8(require(1297) /* Button */.Icon, obj1);
   items1[1] = obj;
-  const obj2 = {};
-  const intl3 = require(1212) /* getSystemLocale */.intl;
-  obj2.label = intl3.string(require(1212) /* getSystemLocale */.t.Rxe3jF);
-  obj2.id = "1";
-  const obj3 = { source: importDefault(15299) };
+  const obj2 = { label: null, id: "1", icon: null, page: null };
+  const intl3 = tmp4(1236).intl;
+  obj2[0] = intl3.string(require(1236) /* getSystemLocale */.t.Rxe3jF);
+  const obj3 = { source: null, style: null };
+  obj3[0] = importDefault(15332);
   const items3 = [tmp.icon, ];
   let iconSelected2 = null;
-  if (first === require(8160) /* generateHydrationId */.ICYMICustomScore.MORE) {
+  if (tmp3 === require(8184) /* generateHydrationId */.ICYMICustomScore.MORE) {
     iconSelected2 = tmp.iconSelected;
   }
   items3[1] = iconSelected2;
-  obj3.style = items3;
-  obj2.icon = callback2(require(1273) /* Button */.Icon, obj3);
-  obj2.page = null;
+  obj3[1] = items3;
+  obj2[2] = closure_8(require(1297) /* Button */.Icon, obj3);
   items1[2] = obj2;
-  let obj6 = require(8200) /* useSegmentedControlState */;
-  const obj5 = {};
-  let tmp13 = null;
-  const segmentedControlState = obj6.useSegmentedControlState({
+  const tmp2 = callback(React.useState(initialValue.initialValue), 2);
+  const obj4 = {
     pageWidth: 0,
     onSetActiveIndex(arg0) {
       let MORE = outer1_0(outer1_2[8]).ICYMICustomScore.DEFAULT;
       if (0 === arg0) {
-        MORE = outer1_0(outer1_2[8]).ICYMICustomScore.LESS;
+        MORE = tmp(tmp2[8]).ICYMICustomScore.LESS;
       } else if (2 === arg0) {
-        MORE = outer1_0(outer1_2[8]).ICYMICustomScore.MORE;
+        MORE = tmp(tmp2[8]).ICYMICustomScore.MORE;
       }
-      callback2(MORE);
+      _undefined(MORE);
       callback(MORE);
     },
     items: items1,
-    defaultIndex: customScoreToIndex(first)
-  });
-  if (disabled) {
-    obj6 = { opacity: 0.7 };
-    tmp13 = obj6;
+    defaultIndex: null
+  };
+  let num = 0;
+  if (require(8184) /* generateHydrationId */.ICYMICustomScore.LESS !== tmp3) {
+    num = 1;
+    if (tmp4(8184).ICYMICustomScore.MORE === tmp3) {
+      num = 2;
+    }
   }
-  obj5.style = tmp13;
+  obj4[3] = num;
+  let obj5 = null;
+  const segmentedControlState = require(8224) /* useSegmentedControlState */.useSegmentedControlState(obj4);
+  if (disabled) {
+    obj5 = { opacity: 0.7 };
+  }
+  const obj6 = { style: obj5, pointerEvents: null, children: null };
   let str = "auto";
   if (disabled) {
     str = "none";
   }
-  obj5.pointerEvents = str;
-  obj5.children = callback2(require(8731) /* SegmentedControl */.SegmentedControl, { variant: "experimental_Large", state: segmentedControlState });
-  return callback2(View, obj5);
+  obj6[1] = str;
+  obj6[2] = closure_8(require(8755) /* SegmentedControl */.SegmentedControl, { variant: "experimental_Large", state: segmentedControlState });
+  return closure_8(View, obj6);
 }
-({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { marginVertical: require("_createForOfIteratorHelperLoose").space.PX_16 };
-_createForOfIteratorHelperLoose.customScoreWrapper = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.warningText = { marginTop: require("_createForOfIteratorHelperLoose").space.PX_8, marginHorizontal: require("_createForOfIteratorHelperLoose").space.PX_12 };
-let obj2 = { width: 24, height: 24, tintColor: require("_createForOfIteratorHelperLoose").colors.TEXT_MUTED };
-_createForOfIteratorHelperLoose.icon = obj2;
-let obj1 = { marginTop: require("_createForOfIteratorHelperLoose").space.PX_8, marginHorizontal: require("_createForOfIteratorHelperLoose").space.PX_12 };
-_createForOfIteratorHelperLoose.iconSelected = { tintColor: require("_createForOfIteratorHelperLoose").colors.INTERACTIVE_TEXT_ACTIVE };
-let obj3 = { tintColor: require("_createForOfIteratorHelperLoose").colors.INTERACTIVE_TEXT_ACTIVE };
-_createForOfIteratorHelperLoose.muted = { marginTop: require("_createForOfIteratorHelperLoose").space.PX_16 };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-let obj4 = { marginTop: require("_createForOfIteratorHelperLoose").space.PX_16 };
+({ jsx: metroImportAll, jsxs: c9 } = jsxProd);
+createCacheKey = { customScoreWrapper: null, warningText: null, icon: null, iconSelected: null, muted: null };
+createCacheKey = { marginVertical: require("Themes").space.PX_16 };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { marginTop: require("Themes").space.PX_8, marginHorizontal: require("Themes").space.PX_12 };
+let obj1 = { marginTop: require("Themes").space.PX_8, marginHorizontal: require("Themes").space.PX_12 };
+createCacheKey[2] = { width: 24, height: 24, tintColor: require("Themes").colors.TEXT_MUTED };
+let obj2 = { width: 24, height: 24, tintColor: require("Themes").colors.TEXT_MUTED };
+createCacheKey[3] = { tintColor: require("Themes").colors.INTERACTIVE_TEXT_ACTIVE };
+let obj3 = { tintColor: require("Themes").colors.INTERACTIVE_TEXT_ACTIVE };
+createCacheKey[4] = { marginTop: require("Themes").space.PX_16 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let obj4 = { marginTop: require("Themes").space.PX_16 };
 const result = require("get ActivityIndicator").fileFinishedImporting("modules/icymi/native/custom_scores/ICYMIContentSettingControl.tsx");
 
 export const GuildScoreSettings = function GuildScoreSettings(guild) {
   guild = guild.guild;
-  const id = guild.id;
-  let obj = id(566);
-  const items = [closure_7];
+  let id;
+  let c1;
+  id = guild.id;
+  let obj = id(589);
+  const items = [filterStaffGuild];
   const stateFromStores = obj.useStateFromStores(items, () => outer1_7.getCustomGuildScore(id));
-  let obj1 = id(8160);
+  let obj1 = id(8184);
   const numberToCustomScoreResult = obj1.numberToCustomScore(stateFromStores);
-  const importDefault = numberToCustomScoreResult;
-  const tmp3 = numberToCustomScoreResult === id(8160).ICYMICustomScore.MUTED;
+  c1 = numberToCustomScoreResult;
+  const tmp5 = numberToCustomScoreResult === id(8184).ICYMICustomScore.MUTED;
   const items1 = [id];
   const items2 = [numberToCustomScoreResult, id];
   const callback = React.useCallback((arg0) => {
-    let obj = numberToCustomScoreResult(outer1_2[17]);
-    obj = { guildId: id };
+    let obj = _undefined(outer1_2[17]);
+    obj = { guildId: id, guildScore: null };
     const customScoreToNumber = id(outer1_2[8]).customScoreToNumber;
     const ICYMICustomScore = id(outer1_2[8]).ICYMICustomScore;
     if (arg0) {
@@ -146,61 +144,67 @@ export const GuildScoreSettings = function GuildScoreSettings(guild) {
     } else {
       customScoreToNumberResult = customScoreToNumber(ICYMICustomScore.MUTED);
     }
-    obj.guildScore = customScoreToNumberResult;
+    obj[1] = customScoreToNumberResult;
     obj.customScoreGuild(obj);
   }, items1);
   const callback1 = React.useCallback((DEFAULT) => {
-    if (closure_1 !== DEFAULT) {
-      let obj = numberToCustomScoreResult(outer1_2[17]);
-      obj = { guildId: id, guildScore: id(outer1_2[8]).customScoreToNumber(DEFAULT) };
+    if (_undefined !== DEFAULT) {
+      let obj = _undefined(outer1_2[17]);
+      obj = { guildId: null, guildScore: null };
+      obj[0] = id;
+      obj[1] = id(outer1_2[8]).customScoreToNumber(DEFAULT);
       obj.customScoreGuild(obj);
       const obj3 = id(outer1_2[8]);
     }
   }, items2);
-  const tmp6 = _createForOfIteratorHelperLoose();
-  obj = {};
-  obj = { variant: "text-sm/semibold", color: "text-default" };
-  const intl = id(1212).intl;
-  obj.children = intl.string(id(1212).t.Clq6km);
-  const items3 = [callback2(id(4161).Text, obj), , , , ];
-  obj1 = { variant: "text-xs/normal", color: "text-default" };
-  const intl2 = id(1212).intl;
-  obj1.children = intl2.format(id(1212).t["0DhU2P"], { guildName: guild.name });
-  items3[1] = callback2(id(4161).Text, obj1);
-  let tmp9 = null;
-  if (!tmp3) {
-    let obj3 = { style: tmp6.customScoreWrapper };
-    const obj4 = { initialValue: numberToCustomScoreResult, onValueUpdated: callback1 };
-    obj3.children = callback2(ContentSettingsControl, obj4);
-    tmp9 = callback2(View, obj3);
+  const tmp8 = createCacheKey();
+  obj = { variant: "text-sm/semibold", color: "text-default", children: null };
+  const intl = id(1236).intl;
+  obj[2] = intl.string(id(1236).t.Clq6km);
+  const items3 = [callback2(id(4185).Text, obj), , , , ];
+  obj = { variant: "text-xs/normal", color: "text-default", children: null };
+  const intl2 = id(1236).intl;
+  obj1 = { guildName: guild.name };
+  obj[2] = intl2.format(id(1236).t["0DhU2P"], obj1);
+  items3[1] = callback2(id(4185).Text, obj);
+  let tmp11Result = null;
+  if (!tmp5) {
+    const obj2 = { style: null, children: null };
+    obj2[0] = tmp8.customScoreWrapper;
+    let obj3 = { initialValue: null, onValueUpdated: null };
+    obj3[0] = numberToCustomScoreResult;
+    obj3[1] = callback1;
+    obj2[1] = tmp11(ContentSettingsControl, obj3);
+    tmp11Result = tmp11(tmp10, obj2);
   }
-  items3[2] = tmp9;
-  const obj5 = {};
-  let muted = tmp3;
-  if (tmp3) {
-    muted = tmp6.muted;
+  items3[2] = tmp11Result;
+  let muted = tmp5;
+  if (tmp5) {
+    muted = tmp8.muted;
   }
-  obj5.style = muted;
-  const obj6 = { value: !tmp3, onValueChange: callback };
-  const intl3 = id(1212).intl;
-  obj6.label = intl3.string(id(1212).t.oujX73);
-  obj6.start = true;
-  obj6.end = true;
-  obj5.children = callback2(id(5537).TableSwitchRow, obj6);
+  const obj4 = { children: null };
+  const obj5 = { style: muted, children: null };
+  const obj6 = { value: !tmp5, onValueChange: callback, label: null, start: true, end: true };
+  const intl3 = tmp(1236).intl;
+  obj6[2] = intl3.string(id(1236).t.oujX73);
+  obj5[1] = callback2(id(5555).TableSwitchRow, obj6);
   items3[3] = callback2(View, obj5);
-  const obj7 = { variant: "text-xs/normal", color: "text-muted", style: tmp6.warningText };
-  const intl4 = id(1212).intl;
-  obj7.children = intl4.string(id(1212).t.vRVs07);
-  items3[4] = callback2(id(4161).Text, obj7);
-  obj.children = items3;
-  return closure_9(View, obj);
+  const obj7 = { variant: "text-xs/normal", color: "text-muted", style: tmp8.warningText, children: null };
+  const intl4 = tmp(1236).intl;
+  obj7[3] = intl4.string(id(1236).t.vRVs07);
+  items3[4] = callback2(id(4185).Text, obj7);
+  obj4[0] = items3;
+  return closure_9(View, obj4);
 };
 export const ChannelScoreSettings = function ChannelScoreSettings(channel) {
   channel = channel.channel;
-  const id = channel.guild.id;
-  const id2 = channel.id;
+  let id;
+  let id2;
+  let stateFromStores;
+  id = channel.guild.id;
+  id2 = channel.id;
   let obj = id(stateFromStores[16]);
-  let items = [closure_7, _isNativeReflectConstruct];
+  let items = [filterStaffGuild, updateUserGuildSettingsInternal];
   stateFromStores = obj.useStateFromStores(items, () => {
     const customChannelScore = outer1_7.getCustomChannelScore(id, id2);
     if (customChannelScore !== id(stateFromStores[8]).ICYMICustomScore.UNKNOWN) {
@@ -211,29 +215,32 @@ export const ChannelScoreSettings = function ChannelScoreSettings(channel) {
     }
   });
   let obj1 = id(stateFromStores[16]);
-  const items1 = [closure_7];
+  const items1 = [filterStaffGuild];
   const stateFromStores1 = obj1.useStateFromStores(items1, () => outer1_7.getCustomGuildScore(id));
   let obj2 = id(stateFromStores[8]);
-  const tmp2 = id2(stateFromStores[20])(channel, true);
-  const tmp5 = obj2.numberToCustomScore(stateFromStores1) === id(stateFromStores[8]).ICYMICustomScore.MUTED;
-  const tmp6 = stateFromStores === id(stateFromStores[8]).ICYMICustomScore.MUTED;
+  const tmp4 = id2(stateFromStores[20])(channel, true);
+  const tmp7 = obj2.numberToCustomScore(stateFromStores1) === id(stateFromStores[8]).ICYMICustomScore.MUTED;
+  const tmp8 = stateFromStores === id(stateFromStores[8]).ICYMICustomScore.MUTED;
   const items2 = [stateFromStores, id, id2];
   const items3 = [id2, id];
   const callback = React.useCallback((DEFAULT) => {
     if (stateFromStores !== DEFAULT) {
       let obj = id2(stateFromStores[17]);
-      obj = { guildId: id };
-      obj = { channelId: id2, score: id(stateFromStores[8]).customScoreToNumber(DEFAULT) };
+      obj = { guildId: null, channelScores: null };
+      obj[0] = id;
+      obj = { channelId: null, score: null };
+      obj[0] = id2;
+      obj[1] = id(stateFromStores[8]).customScoreToNumber(DEFAULT);
       const items = [obj];
-      obj.channelScores = items;
+      obj[1] = items;
       obj.customScoreGuild(obj);
       const obj4 = id(stateFromStores[8]);
     }
   }, items2);
   const callback1 = React.useCallback((arg0) => {
     let obj = id2(stateFromStores[17]);
-    obj = { guildId: id };
-    obj = { channelId: id2 };
+    obj = { guildId: id, channelScores: null };
+    obj = { channelId: id2, score: null };
     const customScoreToNumber = id(stateFromStores[8]).customScoreToNumber;
     const ICYMICustomScore = id(stateFromStores[8]).ICYMICustomScore;
     if (arg0) {
@@ -241,47 +248,48 @@ export const ChannelScoreSettings = function ChannelScoreSettings(channel) {
     } else {
       customScoreToNumberResult = customScoreToNumber(ICYMICustomScore.MUTED);
     }
-    obj.score = customScoreToNumberResult;
+    obj[1] = customScoreToNumberResult;
     const items = [obj];
-    obj.channelScores = items;
+    obj[1] = items;
     obj.customScoreGuild(obj);
   }, items3);
-  const tmp9 = _createForOfIteratorHelperLoose();
-  obj = {};
-  obj = { variant: "text-sm/semibold", color: "text-default" };
+  const tmp11 = createCacheKey();
+  obj = { variant: "text-sm/semibold", color: "text-default", children: null };
   const intl = id(stateFromStores[9]).intl;
-  obj.children = intl.string(id(stateFromStores[9]).t["0jRosn"]);
+  obj[2] = intl.string(id(stateFromStores[9]).t["0jRosn"]);
   const items4 = [callback2(id(stateFromStores[18]).Text, obj), , , , ];
-  obj1 = { variant: "text-xs/normal", color: "text-default" };
+  obj = { variant: "text-xs/normal", color: "text-default", children: null };
   const intl2 = id(stateFromStores[9]).intl;
-  obj1.children = intl2.format(id(stateFromStores[9]).t.KzkF1j, { channelName: tmp2 });
-  items4[1] = callback2(id(stateFromStores[18]).Text, obj1);
-  let tmp12 = null;
-  if (!tmp6) {
-    obj2 = { style: tmp9.customScoreWrapper };
-    const obj3 = { disabled: tmp5, initialValue: stateFromStores, onValueUpdated: callback };
-    obj2.children = callback2(ContentSettingsControl, obj3);
-    tmp12 = callback2(View, obj2);
+  obj[2] = intl2.format(id(stateFromStores[9]).t.KzkF1j, { channelName: tmp4 });
+  items4[1] = callback2(id(stateFromStores[18]).Text, obj);
+  let tmp14Result = null;
+  if (!tmp8) {
+    obj1 = { style: null, children: null };
+    obj1[0] = tmp11.customScoreWrapper;
+    obj2 = { disabled: null, initialValue: null, onValueUpdated: null };
+    obj2[0] = tmp7;
+    obj2[1] = stateFromStores;
+    obj2[2] = callback;
+    obj1[1] = tmp14(ContentSettingsControl, obj2);
+    tmp14Result = tmp14(tmp13, obj1);
   }
-  items4[2] = tmp12;
-  let obj4 = {};
-  let muted = tmp6;
-  if (tmp6) {
-    muted = tmp9.muted;
+  items4[2] = tmp14Result;
+  let muted = tmp8;
+  if (tmp8) {
+    muted = tmp11.muted;
   }
-  obj4.style = muted;
-  const obj5 = { value: !tmp6, onValueChange: callback1 };
-  const intl3 = id(stateFromStores[9]).intl;
-  obj5.label = intl3.string(id(stateFromStores[9]).t.W2aJRS);
-  obj5.disabled = tmp5;
-  obj5.start = true;
-  obj5.end = true;
-  obj4.children = callback2(id(stateFromStores[19]).TableSwitchRow, obj5);
+  const obj3 = { children: null };
+  let obj4 = { style: muted, children: null };
+  const obj5 = { value: !tmp8, onValueChange: callback1, label: null, disabled: null, start: true, end: true };
+  const intl3 = tmp(tmp2[9]).intl;
+  obj5[2] = intl3.string(id(stateFromStores[9]).t.W2aJRS);
+  obj5[3] = tmp7;
+  obj4[1] = callback2(id(stateFromStores[19]).TableSwitchRow, obj5);
   items4[3] = callback2(View, obj4);
-  const obj6 = { variant: "text-xs/normal", color: "text-muted", style: tmp9.warningText };
-  const intl4 = id(stateFromStores[9]).intl;
-  obj6.children = intl4.string(id(stateFromStores[9]).t["5lP6Ax"]);
+  const obj6 = { variant: "text-xs/normal", color: "text-muted", style: tmp11.warningText, children: null };
+  const intl4 = tmp(tmp2[9]).intl;
+  obj6[3] = intl4.string(id(stateFromStores[9]).t["5lP6Ax"]);
   items4[4] = callback2(id(stateFromStores[18]).Text, obj6);
-  obj.children = items4;
-  return closure_9(View, obj);
+  obj3[0] = items4;
+  return closure_9(View, obj3);
 };

@@ -1,10 +1,10 @@
-// Module ID: 14636
-// Function ID: 111516
+// Module ID: 14661
+// Function ID: 14662
 // Name: GUILD_SELECT_ALL_SERVERS_OPTION_ID
-// Dependencies: [621, 2]
+// Dependencies: [644, 2]
 // Exports: getSelectedGuildId, setSelectedGuildId
 
-// Module 14636 (GUILD_SELECT_ALL_SERVERS_OPTION_ID)
+// Module 14661 (GUILD_SELECT_ALL_SERVERS_OPTION_ID)
 import keys from "keys";
 
 let closure_0 = { selectedGuildId: "0" };
@@ -12,10 +12,10 @@ let obj = keys.create((arg0) => {
   let closure_0 = arg0;
   const obj = {};
   const merged = Object.assign(closure_0);
-  obj["setSelectedGuildId"] = function setSelectedGuildId(selectedGuildId) {
+  obj.setSelectedGuildId = function setSelectedGuildId(selectedGuildId) {
     callback({ selectedGuildId });
   };
-  obj["reset"] = function reset() {
+  obj.reset = function reset() {
     callback(callback);
   };
   return obj;

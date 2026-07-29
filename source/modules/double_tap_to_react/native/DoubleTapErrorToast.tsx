@@ -1,61 +1,62 @@
-// Module ID: 7730
-// Function ID: 61605
+// Module ID: 7753
+// Function ID: 7754
 // Name: DoubleTapErrorToastIcon
-// Dependencies: [31, 27, 1853, 33, 4165, 689, 7731, 3866, 4161, 1212, 2]
+// Dependencies: [19, 17, 1877, 21, 4189, 712, 7754, 3890, 4185, 1236, 2]
 // Exports: showDoubleTapErrorToast
 
-// Module 7730 (DoubleTapErrorToastIcon)
-import "result";
+// Module 7753 (DoubleTapErrorToastIcon)
+import "noop";
 import { View } from "get ActivityIndicator";
 import { EmojiDisabledReasons } from "set";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
 const require = arg1;
 function DoubleTapErrorToastIcon() {
-  let obj = { style: _createForOfIteratorHelperLoose().icon, "aria-hidden": true };
-  obj = { color: importDefault(689).colors.WHITE, size: "xs" };
-  obj.children = jsx(require(7731) /* XSmallBoldIcon */.XSmallBoldIcon, { color: importDefault(689).colors.WHITE, size: "xs" });
-  return <View color={importDefault(689).colors.WHITE} size="xs" />;
+  let obj = { style: createCacheKey().icon, "aria-hidden": true, children: null };
+  obj = { color: null, size: "xs" };
+  obj[0] = importDefault(712).colors.WHITE;
+  obj[2] = jsx(require(7754) /* XSmallBoldIcon */.XSmallBoldIcon, { color: null, size: "xs" });
+  return <View color={null} size="xs" />;
 }
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_FEEDBACK_CRITICAL, borderRadius: require("_createForOfIteratorHelperLoose").radii.round, padding: require("_createForOfIteratorHelperLoose").space.PX_4, marginLeft: require("_createForOfIteratorHelperLoose").space.PX_4 };
-_createForOfIteratorHelperLoose.icon = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+createCacheKey = { icon: null };
+createCacheKey = { backgroundColor: require("Themes").colors.BACKGROUND_FEEDBACK_CRITICAL, borderRadius: require("Themes").radii.round, padding: require("Themes").space.PX_4, marginLeft: require("Themes").space.PX_4 };
+createCacheKey[0] = createCacheKey;
+createCacheKey = createCacheKey.createStyles(createCacheKey);
 const result = require("set").fileFinishedImporting("modules/double_tap_to_react/native/DoubleTapErrorToast.tsx");
 
 export const showDoubleTapErrorToast = function showDoubleTapErrorToast(arg0) {
   let importDefault;
   let require;
   ({ emojiName: require, reason: importDefault } = arg0);
-  let obj = importDefault(3866);
+  let obj = importDefault(3890);
   obj = {
     key: "EMOJI_DOUBLE_TAP_ERROR",
     icon() {
-      return outer1_5(outer1_7, {});
+      return callback(closure_7, {});
     },
     content() {
       if (closure_1 === outer1_4.DISALLOW_EXTERNAL) {
         if (null != closure_0) {
-          let obj = { variant: "text-sm/normal" };
+          let obj = { variant: "text-sm/normal", children: null };
           const intl3 = outer1_0(outer1_2[9]).intl;
-          obj = { emojiName: closure_0 };
-          obj.children = intl3.format(outer1_0(outer1_2[9]).t.Dz4vkv, obj);
+          obj = { emojiName: null };
+          obj[0] = tmp;
+          obj[1] = intl3.format(outer1_0(outer1_2[9]).t.Dz4vkv, obj);
           let tmp3Result = outer1_5(outer1_0(outer1_2[8]).Text, obj);
         }
         return tmp3Result;
       }
-      obj = { variant: "text-sm/normal" };
       if (null != closure_0) {
-        const intl2 = outer1_0(outer1_2[9]).intl;
-        const obj1 = { emojiName: closure_0 };
-        let formatResult = intl2.format(outer1_0(outer1_2[9]).t.WZGLFq, obj1);
+        const intl2 = tmp4(tmp5[9]).intl;
+        obj = { emojiName: null };
+        obj[0] = tmp6;
+        let formatResult = intl2.format(tmp4(tmp5[9]).t.WZGLFq, obj);
       } else {
-        const intl = outer1_0(outer1_2[9]).intl;
-        formatResult = intl.string(outer1_0(outer1_2[9]).t.CL5mWi);
+        const intl = tmp4(tmp5[9]).intl;
+        formatResult = intl.string(tmp4(tmp5[9]).t.CL5mWi);
       }
-      obj.children = formatResult;
-      tmp3Result = outer1_5(outer1_0(outer1_2[8]).Text, obj);
+      tmp3Result = outer1_5(outer1_0(outer1_2[8]).Text, { variant: "text-sm/normal", children: formatResult });
     },
     toastDurationMs: 3000
   };

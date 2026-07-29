@@ -1,59 +1,71 @@
-// Module ID: 6156
-// Function ID: 55073
+// Module ID: 6174
+// Function ID: 6175
 // Name: createAutocompleterResultForChannelId
-// Dependencies: [1348, 3802, 1850, 5078, 653, 4355, 2]
+// Dependencies: [1372, 3826, 1874, 5100, 676, 4380, 2]
 // Exports: default
 
-// Module 6156 (createAutocompleterResultForChannelId)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_3 from "_isNativeReflectConstruct";
-import closure_4 from "_isNativeReflectConstruct";
+// Module 6174 (createAutocompleterResultForChannelId)
+import ensureGuildLoaded from "ensureGuildLoaded";
+import upsertRelationship from "upsertRelationship";
+import mergeGuildAvatar from "mergeGuildAvatar";
 import { ChannelTypes } from "ME";
 
 const require = arg1;
 require("HeaderRecord").AutocompleterResultTypes;
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/autocompleter/createAutocompleterResultForChannelId.tsx");
+const result = require("mergeGuildAvatar").fileFinishedImporting("modules/autocompleter/createAutocompleterResultForChannelId.tsx");
 
-export default function createAutocompleterResultForChannelId(channelId, arg1, closure_14, closure_7) {
+export default function createAutocompleterResultForChannelId(arg0, arg1, closure_9, closure_7) {
   let obj = arg1;
-  let obj1 = closure_14;
-  let tmp = closure_7;
   if (arg1 === undefined) {
-    obj = _isNativeReflectConstruct;
+    obj = ensureGuildLoaded;
   }
-  if (obj1 === undefined) {
-    obj1 = closure_4;
+  let obj1 = closure_9;
+  if (closure_9 === undefined) {
+    obj1 = mergeGuildAvatar;
   }
-  if (tmp === undefined) {
-    tmp = closure_3;
+  let tmp = closure_7;
+  if (closure_7 === undefined) {
+    tmp = upsertRelationship;
   }
-  const channel = obj.getChannel(channelId);
+  const channel = obj.getChannel(arg0);
   if (null == channel) {
     return null;
   } else {
-    const channelName = require(4355) /* computeDefaultGroupDmNameFromUserIds */.computeChannelName(channel, obj1, tmp);
+    const channelName = require(4380) /* computeChannelName */.computeChannelName(channel, obj1, tmp);
     const type = channel.type;
     if (ChannelTypes.DM === type) {
       const user = obj1.getUser(channel.getRecipientId());
-      let tmp8 = null;
+      let tmp6 = null;
       if (null != user) {
-        obj = { type: AutocompleterResultTypes.USER, record: user, score: 0, comparator: channelName };
-        tmp8 = obj;
+        obj = { type: null, record: null, score: 0, comparator: null };
+        obj[0] = AutocompleterResultTypes.USER;
+        obj[1] = user;
+        obj[3] = channelName;
+        tmp6 = obj;
       }
-      return tmp8;
-    } else if (ChannelTypes.GROUP_DM === type) {
-      obj = { type: AutocompleterResultTypes.GROUP_DM, record: channel, score: 0, comparator: channelName };
+      return tmp6;
+    } else if (tmp11.GROUP_DM === type) {
+      obj = { type: null, record: null, score: 0, comparator: null };
+      obj[0] = AutocompleterResultTypes.GROUP_DM;
+      obj[1] = channel;
+      obj[3] = channelName;
       return obj;
     } else {
-      if (ChannelTypes.GUILD_VOICE !== type) {
-        if (ChannelTypes.GUILD_STAGE_VOICE !== type) {
-          obj1 = { type: AutocompleterResultTypes.TEXT_CHANNEL, record: channel, score: 0, comparator: channelName };
+      if (tmp11.GUILD_VOICE !== type) {
+        if (tmp11.GUILD_STAGE_VOICE !== type) {
+          obj1 = { type: null, record: null, score: 0, comparator: null };
+          obj1[0] = AutocompleterResultTypes.TEXT_CHANNEL;
+          obj1[1] = channel;
+          obj1[3] = channelName;
           return obj1;
         }
       }
-      const obj2 = { type: AutocompleterResultTypes.VOICE_CHANNEL, record: channel, score: 0, comparator: channelName };
+      const obj2 = { type: null, record: null, score: 0, comparator: null };
+      obj2[0] = AutocompleterResultTypes.VOICE_CHANNEL;
+      obj2[1] = channel;
+      obj2[3] = channelName;
       return obj2;
     }
-    const obj8 = require(4355) /* computeDefaultGroupDmNameFromUserIds */;
+    const obj8 = require(4380) /* computeChannelName */;
   }
 };

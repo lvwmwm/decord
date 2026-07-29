@@ -1,12 +1,12 @@
-// Module ID: 9064
-// Function ID: 71081
+// Module ID: 9088
+// Function ID: 9089
 // Name: useNameplate
-// Dependencies: [31, 1918, 566, 1874, 2]
+// Dependencies: [19, 1942, 589, 1898, 2]
 // Exports: useNameplate
 
-// Module 9064 (useNameplate)
-import result from "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 9088 (useNameplate)
+import noop from "noop";
+import trackCommunicationDisabled from "trackCommunicationDisabled";
 
 const require = arg1;
 const result = require("initialize").fileFinishedImporting("modules/collectibles/nameplates/hooks/useNameplate.tsx");
@@ -14,13 +14,14 @@ const result = require("initialize").fileFinishedImporting("modules/collectibles
 export const useNameplate = function useNameplate(user) {
   user = user.user;
   const guildId = user.guildId;
-  const items = [_isNativeReflectConstruct];
-  const stateFromStores = user(guildId[2]).useStateFromStores(items, () => {
+  let stateFromStores;
+  const items = [trackCommunicationDisabled];
+  stateFromStores = user(guildId[2]).useStateFromStores(items, () => {
     let member = null;
     if (null != guildId) {
       member = null;
       if (null != user) {
-        member = outer1_3.getMember(guildId, user.id);
+        member = outer1_3.getMember(tmp, tmp3.id);
       }
     }
     return member;
@@ -29,15 +30,15 @@ export const useNameplate = function useNameplate(user) {
   return stateFromStores.useMemo(() => {
     if (null != user) {
       let nameplate;
-      if (null != stateFromStores) {
+      if (stateFromStores != null) {
         const collectibles = stateFromStores.collectibles;
-        if (null != collectibles) {
+        if (collectibles != null) {
           nameplate = collectibles.nameplate;
         }
       }
       nameplate = user(guildId[3]).getNameplateData(nameplate);
-      if (null == nameplate) {
-        nameplate = user.nameplate;
+      if (nameplate == null) {
+        nameplate = tmp.nameplate;
       }
       return nameplate;
     }

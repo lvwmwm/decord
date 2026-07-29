@@ -1,17 +1,17 @@
-// Module ID: 16081
-// Function ID: 124047
+// Module ID: 16116
+// Function ID: 16117
 // Name: useIsInRestrictedHours
-// Dependencies: [1850, 5775, 566, 16082, 2]
+// Dependencies: [1874, 5793, 589, 16117, 2]
 // Exports: default
 
-// Module 16081 (useIsInRestrictedHours)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_3 from "_isNativeReflectConstruct";
+// Module 16116 (useIsInRestrictedHours)
+import mergeGuildAvatar from "mergeGuildAvatar";
+import freshTeenActivityWithMap from "freshTeenActivityWithMap";
 
 const require = arg1;
 const result = require("initialize").fileFinishedImporting("modules/parent_tools/hooks/useIsInRestrictedHours.tsx");
 
 export default function useIsInRestrictedHours() {
-  const items = [_isNativeReflectConstruct, closure_3];
-  return require(566) /* initialize */.useStateFromStores(items, require(16082) /* _isNativeReflectConstruct */.getCurrentRestrictedHoursState);
+  const items = [mergeGuildAvatar, freshTeenActivityWithMap];
+  return require(589) /* initialize */.useStateFromStores(items, require(16117) /* scheduleUpcomingWarning */.getCurrentRestrictedHoursState);
 };

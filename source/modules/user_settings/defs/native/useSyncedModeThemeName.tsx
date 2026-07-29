@@ -1,11 +1,11 @@
-// Module ID: 14299
-// Function ID: 109696
+// Module ID: 14321
+// Function ID: 14322
 // Name: useSyncedModeThemeName
-// Dependencies: [1278, 3978, 1324, 566, 4008, 1212, 2397, 2]
+// Dependencies: [1302, 4002, 1348, 589, 4032, 1236, 2421, 2]
 // Exports: useSyncedModeThemeName
 
-// Module 14299 (useSyncedModeThemeName)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 14321 (useSyncedModeThemeName)
+import handleThemeChange from "handleThemeChange";
 import { BACKGROUND_GRADIENT_PRESETS_MAP as closure_4 } from "items1";
 
 const require = arg1;
@@ -13,35 +13,36 @@ const result = require("useIsMobileVisualRefreshExperimentEnabled").fileFinished
 
 export const useSyncedModeThemeName = function useSyncedModeThemeName(DARK) {
   const _require = DARK;
-  importDefault = importDefault(1324)("useSyncedModeThemeName");
-  const items = [_isNativeReflectConstruct];
-  return _require(566).useStateFromStores(items, () => {
+  importDefault = importDefault(1348)("useSyncedModeThemeName");
+  const items = [handleThemeChange];
+  return _require(589).useStateFromStores(items, () => {
     const syncedClientTheme = outer1_3.getSyncedClientTheme(DARK);
     const themeName = DARK(outer1_2[4]).getThemeName(outer1_3.themePreferenceForSystemTheme(DARK), callback);
     let prop;
-    if (null != syncedClientTheme) {
+    if (syncedClientTheme != null) {
       prop = syncedClientTheme.customUserThemeSettings;
     }
     if (null != prop) {
-      const intl = DARK(outer1_2[5]).intl;
-      let stringResult = intl.string(callback(outer1_2[6]).yl1iMm);
+      const intl = DARK(tmp3[5]).intl;
+      let stringResult = intl.string(callback(tmp3[6]).yl1iMm);
     } else {
       let prop1;
-      if (null != syncedClientTheme) {
+      if (syncedClientTheme != null) {
         prop1 = syncedClientTheme.backgroundGradientPresetId;
       }
       stringResult = themeName;
       if (null != prop1) {
         let name;
-        if (null != outer1_4[syncedClientTheme.backgroundGradientPresetId]) {
-          if (null != obj2.getName) {
-            name = obj2.getName();
+        if (outer1_4[syncedClientTheme.backgroundGradientPresetId] != null) {
+          const getName = tmp9.getName;
+          if (getName != null) {
+            name = getName();
           }
         }
-        stringResult = themeName;
-        if (null != name) {
-          stringResult = name;
+        if (name == null) {
+          name = themeName;
         }
+        stringResult = name;
       }
     }
     return stringResult;

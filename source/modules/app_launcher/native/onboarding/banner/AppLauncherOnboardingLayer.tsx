@@ -1,36 +1,39 @@
-// Module ID: 11197
-// Function ID: 86866
-// Dependencies: [31, 27, 9286, 33, 4165, 689, 11198, 2]
+// Module ID: 11221
+// Function ID: 11222
+// Dependencies: [19, 17, 9310, 21, 4189, 712, 11222, 2]
 
-// Module 11197
+// Module 11221
 import { View } from "get ActivityIndicator";
-import { useBestActiveChatInputContainerHeight as closure_3 } from "getChatInputContainerHeight";
+import { useBestActiveChatInputContainerHeight as closure_3 } from "updateChatInputContainerHeight";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import importAllResult from "result";
+import createCacheKey from "createCacheKey";
+import importAllResult from "noop";
 
-let obj = {};
-obj = { opacity: 1, width: "100%", position: "absolute", left: 0, top: 0, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SCRIM };
-obj.container = obj;
-let closure_5 = _createForOfIteratorHelperLoose.createStyles(obj);
-const memoResult = require("result").memo((visibleContent) => {
+let obj = { container: null };
+obj = { opacity: 1, width: "100%", position: "absolute", left: 0, top: 0, backgroundColor: require("Themes").colors.BACKGROUND_SCRIM };
+obj[0] = obj;
+let closure_5 = createCacheKey.createStyles(obj);
+const memoResult = require("noop").memo((visibleContent) => {
   let bottomOffset;
   let context;
   visibleContent = visibleContent.visibleContent;
   ({ context, bottomOffset } = visibleContent);
   let tmp3 = null;
   if (null != visibleContent) {
-    let obj = {};
+    let obj = { style: null, children: null };
     const items = [tmp.container, ];
-    obj = { bottom: tmp2 + bottomOffset };
+    obj = { bottom: null };
+    obj[0] = tmp2 + bottomOffset;
     items[1] = obj;
-    obj.style = items;
-    obj = { context, visibleContent };
-    obj.children = jsx(importDefault(11198), { context, visibleContent });
-    tmp3 = <View context={context} visibleContent={visibleContent} />;
+    obj[0] = items;
+    obj = { context: null, visibleContent: null };
+    obj[0] = context;
+    obj[1] = visibleContent;
+    obj[1] = jsx(importDefault(11222), { context: null, visibleContent: null });
+    tmp3 = <View context={null} visibleContent={null} />;
   }
   return tmp3;
 });
-const result = require("getChatInputContainerHeight").fileFinishedImporting("modules/app_launcher/native/onboarding/banner/AppLauncherOnboardingLayer.tsx");
+const result = require("updateChatInputContainerHeight").fileFinishedImporting("modules/app_launcher/native/onboarding/banner/AppLauncherOnboardingLayer.tsx");
 
 export default memoResult;

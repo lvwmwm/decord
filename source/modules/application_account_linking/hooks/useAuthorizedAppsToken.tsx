@@ -1,55 +1,58 @@
-// Module ID: 5504
-// Function ID: 46875
+// Module ID: 5522
+// Function ID: 5523
 // Name: useAuthorizedAppsTokens
-// Dependencies: [31, 5101, 566, 1327, 5505, 2]
+// Dependencies: [19, 5123, 589, 1351, 5523, 2]
 // Exports: useAuthorizedAppsToken
 
-// Module 5504 (useAuthorizedAppsTokens)
-import result from "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import { FetchState } from "_isNativeReflectConstruct";
+// Module 5522 (useAuthorizedAppsTokens)
+import noop from "noop";
+import recomputeFromAppTokens from "recomputeFromAppTokens";
+import { FetchState } from "recomputeFromAppTokens";
 
 const require = arg1;
-function useAuthorizedAppsTokens(result, arg1) {
+function useAuthorizedAppsTokens(noop, arg1) {
+  const _require = noop;
   let obj = arg1;
-  const _require = result;
-  if (null == arg1) {
+  if (arg1 == null) {
     obj = {};
   }
   const disableFetch = obj.disableFetch;
   const importDefault = tmp;
-  const items = [_isNativeReflectConstruct];
-  const items1 = [result];
+  const items = [recomputeFromAppTokens];
+  const items1 = [noop];
   const tokens = _require(stateFromStoresArray1[2]).useStateFromStoresArray(items, () => {
     let found;
-    if (null != lib) {
-      const mapped = lib.map((arg0) => outer2_4.getNewestTokenForApplication(arg0));
-      found = mapped.filter(lib(stateFromStoresArray1[3]).isNotNullish);
+    if (callback != null) {
+      const mapped = callback.map((id) => newestTokenForApplication.getNewestTokenForApplication(id));
+      found = mapped.filter(callback(stateFromStoresArray1[3]).isNotNullish);
     }
-    if (null == found) {
+    if (found == null) {
       found = [];
     }
     return found;
   }, items1);
   const obj2 = _require(stateFromStoresArray1[2]);
-  const items2 = [_isNativeReflectConstruct];
-  const items3 = [result];
+  const items2 = [recomputeFromAppTokens];
+  const items3 = [noop];
   const fetched = _require(stateFromStoresArray1[2]).useStateFromStores(items2, () => {
-    let everyResult;
-    if (null != lib) {
-      everyResult = lib.every((arg0) => outer2_4.getFetchStateForApplication(arg0) === outer2_5.FETCHED);
+    let flag;
+    if (closure_0 != null) {
+      flag = closure_0.every((applicationId) => fetchStateForApplication.getFetchStateForApplication(applicationId) === constants.FETCHED);
     }
-    return null != everyResult && everyResult;
+    if (flag == null) {
+      flag = false;
+    }
+    return flag;
   }, items3);
   const obj3 = _require(stateFromStoresArray1[2]);
-  const items4 = [_isNativeReflectConstruct];
-  const items5 = [result];
+  const items4 = [recomputeFromAppTokens];
+  const items5 = [noop];
   stateFromStoresArray1 = _require(stateFromStoresArray1[2]).useStateFromStoresArray(items4, () => {
     let found;
-    if (null != lib) {
-      found = lib.filter((arg0) => outer2_4.getFetchStateForApplication(arg0) === outer2_5.NOT_FETCHED);
+    if (closure_0 != null) {
+      found = closure_0.filter((applicationId) => fetchStateForApplication.getFetchStateForApplication(applicationId) === constants.NOT_FETCHED);
     }
-    if (null == found) {
+    if (found == null) {
       found = [];
     }
     return found;
@@ -72,21 +75,18 @@ export { useAuthorizedAppsTokens };
 export const useAuthorizedAppsToken = function useAuthorizedAppsToken(parentId) {
   let closure_0 = parentId;
   let items = [parentId];
-  let tmp = useAuthorizedAppsTokens(React.useMemo(() => {
-    let tmp = null;
+  const fetched = useAuthorizedAppsTokens(React.useMemo(() => {
+    let tmp2 = null;
     if (null != closure_0) {
-      const items = [closure_0];
-      tmp = items;
+      const items = [tmp];
+      tmp2 = items;
     }
-    return tmp;
+    return tmp2;
   }, items), arg1);
-  const tokens = tmp.tokens;
-  const obj = {};
-  let first = null;
+  const tokens = fetched.tokens;
+  let token = null;
   if (tokens.length > 0) {
-    first = tokens[0];
+    token = tokens[0];
   }
-  obj.token = first;
-  obj.fetched = tmp.fetched;
-  return obj;
+  return { token, fetched: fetched.fetched };
 };

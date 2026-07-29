@@ -1,29 +1,30 @@
-// Module ID: 11295
-// Function ID: 87645
+// Module ID: 11319
+// Function ID: 11320
 // Name: useDelayedSwapToActivityActionLeave
-// Dependencies: [57, 31, 11207, 2]
+// Dependencies: [32, 19, 11231, 2]
 // Exports: useDelayedSwapToActivityActionLeave
 
-// Module 11295 (useDelayedSwapToActivityActionLeave)
+// Module 11319 (useDelayedSwapToActivityActionLeave)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
+import noop from "noop";
 
 const require = arg1;
-const result = require("getStaffReleasePhase").fileFinishedImporting("modules/app_launcher/hooks/useDelayedSwapToActivityActionLeave.tsx");
+const result = require("useActivityAction").fileFinishedImporting("modules/app_launcher/hooks/useDelayedSwapToActivityActionLeave.tsx");
 
 export const useDelayedSwapToActivityActionLeave = function useDelayedSwapToActivityActionLeave(activityAction) {
   let closure_0 = activityAction;
-  const tmp = callback(React.useState(activityAction), 2);
+  let tmp = callback(React.useState(activityAction), 2);
   let closure_1 = tmp[1];
   const items = [activityAction];
   const layoutEffect = React.useLayoutEffect(() => {
-    if (activityAction === activityAction(11207).ActivityAction.LEAVE) {
+    if (activityAction === activityAction(11231).ActivityAction.LEAVE) {
       const _setTimeout = setTimeout;
-      activityAction = setTimeout(() => outer1_1(closure_0), 100);
+      activityAction = setTimeout(() => callback(closure_0), 100);
       return () => clearTimeout(closure_0);
     } else {
-      dependencyMap(activityAction);
+      dependencyMap(tmp);
     }
+    tmp = activityAction;
   }, items);
   return tmp[0];
 };

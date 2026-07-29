@@ -1,272 +1,280 @@
-// Module ID: 12308
-// Function ID: 95949
+// Module ID: 12330
+// Function ID: 12331
 // Name: GiftCodeRedeemSuccess
-// Dependencies: [31, 27, 4210, 8015, 33, 4165, 689, 566, 8017, 5503, 8021, 5792, 1877, 8022, 9774, 5155, 5644, 8029, 5507, 8032, 4364, 1273, 8051, 8721, 9801, 12304, 4161, 1212, 4401, 4578, 4372, 2]
+// Dependencies: [19, 17, 4234, 8039, 21, 4189, 712, 589, 8041, 5521, 8045, 5810, 1901, 8046, 9796, 5177, 5662, 8053, 5525, 8056, 4389, 1297, 8075, 8745, 9823, 12326, 4185, 1236, 4424, 4600, 4395, 2]
 // Exports: default
 
-// Module 12308 (GiftCodeRedeemSuccess)
-import "set";
-import get_ActivityIndicator from "getSystemLocale";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 12330 (GiftCodeRedeemSuccess)
+import "BundleStaticPreviewContent";
+import get_ActivityIndicator from "SlayerStorefrontItemCard";
+import addSku from "addSku";
 import { BUNDLE_PREVIEW_CONFIG } from "SAMPLE_PROFILE_ASPECT_RATIO";
-import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import jsxProd from "Button";
+import createCacheKey from "createCacheKey";
 
-let closure_3;
-let closure_4;
+let c3;
+let c4;
 let closure_6;
-let closure_7;
+let error;
 const require = arg1;
-({ View: closure_3, ScrollView: closure_4 } = get_ActivityIndicator);
-({ jsx: closure_6, jsxs: closure_7 } = jsxProd);
+({ View: c3, ScrollView: c4 } = get_ActivityIndicator);
+({ jsx: closure_6, jsxs: error } = jsxProd);
 let closure_8 = { width: BUNDLE_PREVIEW_CONFIG.large.bundleWidth, height: BUNDLE_PREVIEW_CONFIG.large.bundleHeight };
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { flex: 1, justifyContent: "space-between", backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW };
-_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.body = { flex: 1, alignItems: "center", justifyContent: "center", paddingTop: 28, paddingBottom: 12, paddingHorizontal: 32 };
-_createForOfIteratorHelperLoose.nameplateContainer = { width: "100%", paddingTop: require("_createForOfIteratorHelperLoose").space.PX_24 };
-let obj2 = { width: "100%", alignItems: "center", paddingTop: require("_createForOfIteratorHelperLoose").space.PX_24 };
-_createForOfIteratorHelperLoose.bundleContainer = obj2;
-_createForOfIteratorHelperLoose.header = { marginTop: 32, textAlign: "center" };
-_createForOfIteratorHelperLoose.message = { marginTop: 8, textAlign: "center" };
-_createForOfIteratorHelperLoose.footer = { paddingHorizontal: 24 };
-_createForOfIteratorHelperLoose.gameItemCard = { marginTop: 20 };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-let obj1 = { width: "100%", paddingTop: require("_createForOfIteratorHelperLoose").space.PX_24 };
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/premium/native/gift_code_modal/GiftCodeRedeemSuccess.tsx");
+createCacheKey = { container: null, body: null, nameplateContainer: null, bundleContainer: null, header: null, message: null, footer: null, gameItemCard: null };
+createCacheKey = { flex: 1, justifyContent: "space-between", backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { flex: 1, alignItems: "center", justifyContent: "center", paddingTop: 28, paddingBottom: 12, paddingHorizontal: 32 };
+createCacheKey[2] = { width: "100%", paddingTop: require("Themes").space.PX_24 };
+let obj1 = { width: "100%", paddingTop: require("Themes").space.PX_24 };
+createCacheKey[3] = { width: "100%", alignItems: "center", paddingTop: require("Themes").space.PX_24 };
+createCacheKey[4] = { marginTop: 32, textAlign: "center" };
+createCacheKey[5] = { marginTop: 8, textAlign: "center" };
+createCacheKey[6] = { paddingHorizontal: 24 };
+createCacheKey[7] = { marginTop: 20 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let obj2 = { width: "100%", alignItems: "center", paddingTop: require("Themes").space.PX_24 };
+const result = require("addSku").fileFinishedImporting("modules/premium/native/gift_code_modal/GiftCodeRedeemSuccess.tsx");
 
 export default function GiftCodeRedeemSuccess(giftCode) {
   let firstAvatarDecoration;
+  let firstNameplate;
   let firstProfileEffect;
   let handleUseNow;
   let isApplying;
   giftCode = giftCode.giftCode;
   const user = giftCode.user;
-  const tmp = _createForOfIteratorHelperLoose();
-  const dependencyMap = tmp;
-  let obj = giftCode(566);
-  const items = [_isNativeReflectConstruct];
+  let dependencyMap;
+  const tmp = createCacheKey();
+  dependencyMap = tmp;
+  let obj = giftCode(589);
+  const items = [addSku];
   const stateFromStores = obj.useStateFromStores(items, () => outer1_5.get(giftCode.skuId));
-  let obj1 = giftCode(8017);
+  let obj1 = giftCode(8041);
   const getOrFetchSubscriptionPlan = obj1.useGetOrFetchSubscriptionPlan(giftCode.subscriptionPlanId);
-  let obj2 = giftCode(5503);
+  let obj2 = giftCode(5521);
   const getOrFetchApplication = obj2.useGetOrFetchApplication(giftCode.applicationId);
-  let obj3 = giftCode(8021);
-  let obj4 = giftCode(5792);
+  let obj3 = giftCode(8045);
+  let obj4 = giftCode(5810);
   let skuId = null;
   if (obj4.isCollectiblesGiftCode(giftCode)) {
     skuId = giftCode.skuId;
   }
   const product = obj3.useFetchCollectiblesProduct(skuId, true).product;
   let first;
-  if (null != product) {
+  if (product != null) {
     first = product.items[0];
   }
   let type;
-  if (null != product) {
+  if (product != null) {
     type = product.type;
   }
-  let tmp8 = type === giftCode(1877).CollectiblesItemType.BUNDLE;
-  let obj5 = giftCode(8022);
-  let tmp9 = product;
-  if (null == product) {
-    obj = { items: [] };
-    tmp9 = obj;
+  let tmp2Result = tmp2(8046);
+  let tmp10 = product;
+  if (product == null) {
+    obj = { items: null };
+    obj[0] = [];
+    tmp10 = obj;
   }
-  const shopProductItems = obj5.useShopProductItems(tmp9);
-  ({ firstAvatarDecoration, firstProfileEffect } = shopProductItems);
-  let obj7 = giftCode(9774);
-  obj = {};
-  let tmp11 = product;
-  if (null == product) {
-    obj1 = { skuId: "", type: giftCode(1877).CollectiblesItemType.BUNDLE, items: [] };
-    tmp11 = obj1;
+  const shopProductItems = tmp2Result.useShopProductItems(tmp10);
+  ({ firstAvatarDecoration, firstProfileEffect, firstNameplate } = shopProductItems);
+  tmp2Result = tmp2(9796);
+  let tmp12 = product;
+  if (product == null) {
+    obj = { skuId: "", type: null, items: null };
+    obj[1] = tmp2(1901).CollectiblesItemType.BUNDLE;
+    obj[2] = [];
+    tmp12 = obj;
   }
-  obj.product = tmp11;
-  handleUseNow = obj7.useHandleUseNow(obj);
+  let tmp13 = type === tmp2(1901).CollectiblesItemType.BUNDLE;
+  handleUseNow = tmp2Result.useHandleUseNow({ product: tmp12 });
   ({ handleUseNow, isApplying } = handleUseNow);
-  obj2 = { bottom: true, style: tmp.container };
-  obj3 = { contentContainerStyle: tmp.body, alwaysBounceVertical: false };
+  obj1 = { bottom: true, style: tmp.container, children: null };
+  obj2 = { contentContainerStyle: tmp.body, alwaysBounceVertical: false, children: null };
   if (null == first) {
     if (null != getOrFetchApplication) {
-      let obj23 = giftCode(5644);
-      if (obj23.isGameItemSKU(stateFromStores)) {
-        obj4 = { style: tmp.gameItemCard };
-        obj5 = { sku: stateFromStores };
-        obj4.children = tmp25(user(8029), obj5);
-        let tmp25Result = tmp25(closure_3, obj4);
+      if (tmp2Result1.isGameItemSKU(stateFromStores)) {
+        obj3 = { style: null, children: null };
+        obj3[0] = tmp.gameItemCard;
+        obj4 = { sku: null };
+        obj4[0] = stateFromStores;
+        obj3[1] = tmp22(user(8053), obj4);
+        let tmp22Result = tmp22(closure_3, obj3);
       } else {
-        const obj6 = { game: getOrFetchApplication, size: giftCode(5507).GameIconSizes.LARGE, skuId: giftCode.skuId };
-        tmp25Result = tmp25(user(5507), obj6);
-        const tmp28 = user(5507);
+        const obj5 = { game: null, size: null, skuId: null };
+        obj5[0] = getOrFetchApplication;
+        obj5[1] = tmp2(5525).GameIconSizes.LARGE;
+        obj5[2] = giftCode.skuId;
+        tmp22Result = tmp22(user(5525), obj5);
+        const tmp24 = user(5525);
       }
+      tmp2Result1 = tmp2(5662);
     }
   }
-  if (tmp8) {
+  if (tmp13) {
     if (null != product) {
       if (null != firstAvatarDecoration) {
         if (null != firstProfileEffect) {
-          obj7 = { style: tmp.bundleContainer };
-          const obj8 = { deco: firstAvatarDecoration, pfx: firstProfileEffect, nameplate: shopProductItems.firstNameplate, size: "large", targetSize: closure_8 };
-          obj7.children = callback(user(8032), obj8);
-          let otherwiseResult = callback(closure_3, obj7);
+          const obj6 = { style: null, children: null };
+          obj6[0] = tmp.bundleContainer;
+          const obj7 = { deco: null, pfx: null, nameplate: null, size: "large", targetSize: null };
+          obj7[0] = firstAvatarDecoration;
+          obj7[1] = firstProfileEffect;
+          obj7[2] = firstNameplate;
+          obj7[4] = closure_8;
+          obj6[1] = callback(user(8056), obj7);
+          let otherwiseResult = callback(closure_3, obj6);
         }
         const items1 = [otherwiseResult, , ];
         if (null == stateFromStores) {
-          const obj9 = { variant: "heading-xl/bold", style: tmp.header, accessibilityRole: "header" };
-          const intl4 = giftCode(1212).intl;
-          obj9.children = intl4.string(giftCode(1212).t["+BNMcF"]);
-          let tmp35 = callback(giftCode(4161).Text, obj9);
+          const obj8 = { variant: "heading-xl/bold", style: null, accessibilityRole: "header", children: null };
+          obj8[1] = tmp.header;
+          const intl4 = tmp2(1236).intl;
+          obj8[3] = intl4.string(tmp2(1236).t["+BNMcF"]);
+          let tmp29 = callback(tmp2(4185).Text, obj8);
         } else {
-          if (obj43.isGameItemSKU(stateFromStores)) {
-            const obj10 = { variant: "heading-xl/bold", style: tmp.header, accessibilityRole: "header" };
-            const intl3 = giftCode(1212).intl;
-            obj10.children = intl3.string(giftCode(1212).t["5glWta"]);
-            tmp35 = callback(giftCode(4161).Text, obj10);
+          if (tmp2Result2.isGameItemSKU(stateFromStores)) {
+            const obj9 = { variant: "heading-xl/bold", style: null, accessibilityRole: "header", children: null };
+            obj9[1] = tmp.header;
+            const intl3 = tmp2(1236).intl;
+            obj9[3] = intl3.string(tmp2(1236).t["5glWta"]);
+            tmp29 = callback(tmp2(4185).Text, obj9);
           } else {
             if (giftCode.isSubscription) {
               if (null != getOrFetchSubscriptionPlan) {
-                const obj11 = { variant: "heading-xl/bold", style: tmp.header, accessibilityRole: "header" };
-                const intl2 = giftCode(1212).intl;
-                const obj12 = { skuName: stateFromStores.name };
-                obj11.children = intl2.format(giftCode(1212).t["1C2BG/"], obj12);
-                tmp35 = callback(giftCode(4161).Text, obj11);
+                const obj10 = { variant: "heading-xl/bold", style: null, accessibilityRole: "header", children: null };
+                obj10[1] = tmp.header;
+                const intl2 = tmp2(1236).intl;
+                const obj11 = { skuName: null };
+                obj11[0] = stateFromStores.name;
+                obj10[3] = intl2.format(tmp2(1236).t["1C2BG/"], obj11);
+                tmp29 = callback(tmp2(4185).Text, obj10);
               }
             }
             if (null != first) {
-              const obj13 = { variant: "heading-xl/bold", color: "mobile-text-heading-primary", style: tmp.header, accessibilityRole: "header" };
-              const intl = giftCode(1212).intl;
-              obj13.children = intl.string(giftCode(1212).t.IMffmm);
-              tmp35 = callback(giftCode(4161).Text, obj13);
+              const obj12 = { variant: "heading-xl/bold", color: "mobile-text-heading-primary", style: null, accessibilityRole: "header", children: null };
+              obj12[2] = tmp.header;
+              const intl = tmp2(1236).intl;
+              obj12[4] = intl.string(tmp2(1236).t.IMffmm);
+              tmp29 = callback(tmp2(4185).Text, obj12);
             }
           }
-          obj43 = giftCode(5644);
+          tmp2Result2 = tmp2(5662);
         }
-        items1[1] = tmp35;
-        if (obj33.isGameItemSKU(stateFromStores)) {
+        items1[1] = tmp29;
+        if (tmp2Result3.isGameItemSKU(stateFromStores)) {
           if (null != getOrFetchApplication) {
-            const obj14 = { variant: "text-md/medium", style: tmp.message };
-            const intl7 = giftCode(1212).intl;
-            const obj15 = {};
-            let name;
-            if (null != stateFromStores) {
-              name = stateFromStores.name;
+            const obj13 = { variant: "text-md/medium", style: null, children: null };
+            obj13[1] = tmp.message;
+            const intl7 = tmp2(1236).intl;
+            let str2;
+            if (stateFromStores != null) {
+              str2 = stateFromStores.name;
             }
-            let str7 = "";
-            if (null != name) {
-              str7 = name;
+            if (str2 == null) {
+              str2 = "";
             }
-            obj15.skuName = str7;
-            obj15.applicationName = getOrFetchApplication.name;
-            obj14.children = intl7.formatToPlainString(giftCode(1212).t.W2znvX, obj15);
-            let tmp50Result = callback(giftCode(4161).Text, obj14);
-            const tmp64 = callback;
+            const obj14 = { skuName: null, applicationName: null };
+            obj14[0] = str2;
+            obj14[1] = getOrFetchApplication.name;
+            obj13[2] = intl7.formatToPlainString(tmp2(1236).t.W2znvX, obj14);
+            let tmp34Result = tmp40(tmp2(4185).Text, obj13);
+            let tmp34 = tmp40;
           }
-          items1[2] = tmp50Result;
-          obj3.children = items1;
-          const items2 = [tmp15(tmp16, obj3), ];
-          const obj16 = { style: tmp.footer };
+          items1[2] = tmp34Result;
+          obj2[2] = items1;
+          const items2 = [tmp15(tmp16, obj2), ];
+          const obj15 = { style: null, children: null };
+          obj15[0] = tmp.footer;
           if (null == first) {
-            const obj17 = {};
-            const intl8 = giftCode(1212).intl;
-            obj17.text = intl8.string(giftCode(1212).t["NX+WJN"]);
-            obj17.size = "md";
-            obj17.onPress = user(4372).pop;
-            let obj18 = obj17;
+            const obj16 = { text: null, size: "md", onPress: null };
+            const intl9 = tmp2(1236).intl;
+            obj16[0] = intl9.string(tmp2(1236).t["NX+WJN"]);
+            obj16[2] = user(4395).pop;
+            let obj17 = obj16;
           } else {
-            obj18 = {};
-            const intl9 = giftCode(1212).intl;
-            obj18.text = intl9.string(giftCode(1212).t.MAS7uK);
-            obj18.size = "md";
-            obj18.loading = isApplying;
-            let tmp73 = null != first;
-            if (tmp73) {
-              let tmp72 = !tmp8;
-              if (tmp8) {
-                if (tmp8) {
-                  tmp8 = null != product;
+            obj17 = { text: null, size: "md", loading: null, disabled: null, onPress: null };
+            const intl8 = tmp2(1236).intl;
+            obj17[0] = intl8.string(tmp2(1236).t.MAS7uK);
+            obj17[2] = isApplying;
+            let tmp42 = null != first;
+            if (tmp42) {
+              let tmp43 = !tmp13;
+              if (tmp13) {
+                if (tmp13) {
+                  tmp13 = null != product;
                 }
-                if (tmp8) {
-                  tmp8 = null != firstAvatarDecoration;
+                if (tmp13) {
+                  tmp13 = null != firstAvatarDecoration;
                 }
-                if (tmp8) {
-                  tmp8 = null != firstProfileEffect;
+                if (tmp13) {
+                  tmp13 = null != firstProfileEffect;
                 }
-                tmp72 = tmp8;
+                tmp43 = tmp13;
               }
-              tmp73 = tmp72;
+              tmp42 = tmp43;
             }
-            obj18.disabled = !tmp73;
-            obj18.onPress = handleUseNow;
+            obj17[3] = !tmp42;
+            obj17[4] = handleUseNow;
           }
-          obj16.children = callback(giftCode(4578).Button, obj18);
-          items2[1] = callback(closure_3, obj16);
-          obj2.children = items2;
-          return tmp15(giftCode(5155).SafeAreaPaddingView, obj2);
+          obj15[1] = tmp34(tmp2(4600).Button, obj17);
+          items2[1] = tmp34(closure_3, obj15);
+          obj1[2] = items2;
+          return tmp15(tmp2(5177).SafeAreaPaddingView, obj1);
         }
         if (giftCode.isSubscription) {
           if (null != getOrFetchSubscriptionPlan) {
-            const obj19 = { variant: "text-md/medium", style: tmp.message, children: giftCode(4401).getSubscriptionGiftSuccessText(getOrFetchSubscriptionPlan) };
-            tmp50Result = callback(giftCode(4161).Text, obj19);
-            const obj37 = giftCode(4401);
+            const obj18 = { variant: "text-md/medium", style: null, children: null };
+            obj18[1] = tmp.message;
+            obj18[2] = tmp2(4424).getSubscriptionGiftSuccessText(getOrFetchSubscriptionPlan);
+            tmp34Result = callback(tmp2(4185).Text, obj18);
+            tmp34 = callback;
+            const tmp2Result4 = tmp2(4424);
           }
         }
-        const obj20 = { variant: "text-md/medium", style: tmp.message };
+        tmp34 = callback;
+        const obj19 = { variant: "text-md/medium", style: null, children: null };
+        obj19[1] = tmp.message;
         if (null != first) {
-          let name1;
-          if (null != stateFromStores) {
-            name1 = stateFromStores.name;
+          let name;
+          if (stateFromStores != null) {
+            name = stateFromStores.name;
           }
-          if (null != name1) {
-            const intl6 = giftCode(1212).intl;
-            const obj21 = { itemName: stateFromStores.name };
-            let formatToPlainStringResult = intl6.formatToPlainString(giftCode(1212).t["4kp0AB"], obj21);
+          if (null != name) {
+            const intl6 = tmp2(1236).intl;
+            const obj20 = { itemName: null };
+            obj20[0] = stateFromStores.name;
+            let formatToPlainStringResult = intl6.formatToPlainString(tmp2(1236).t["4kp0AB"], obj20);
           }
-          obj20.children = formatToPlainStringResult;
-          tmp50Result = tmp50(tmp53, obj20);
+          obj19[2] = formatToPlainStringResult;
+          tmp34Result = tmp34(tmp35, obj19);
         }
-        const intl5 = giftCode(1212).intl;
-        formatToPlainStringResult = intl5.string(giftCode(1212).t["5ayf7w"]);
-        obj33 = giftCode(5644);
-        tmp50 = callback;
+        const intl5 = tmp2(1236).intl;
+        formatToPlainStringResult = intl5.string(tmp2(1236).t["5ayf7w"]);
+        tmp2Result3 = tmp2(5662);
       }
     }
   }
-  const match = giftCode(4364).match(first);
-  const str2 = giftCode(4364);
+  const match = giftCode(4389).match(first);
+  const str = giftCode(4389);
   tmp16 = closure_4;
-  const obj22 = { type: giftCode(1877).CollectiblesItemType.AVATAR_DECORATION };
-  obj23 = { type: giftCode(1877).CollectiblesItemType.PROFILE_EFFECT };
-  const withResult = match.with({ type: giftCode(1877).CollectiblesItemType.AVATAR_DECORATION }, (avatarDecoration) => {
-    const obj = {};
+  const obj21 = { type: giftCode(1901).CollectiblesItemType.AVATAR_DECORATION };
+  const withResult = match.with({ type: giftCode(1901).CollectiblesItemType.AVATAR_DECORATION }, (avatarDecoration) => {
+    let obj = user;
     let avatarSource;
-    if (null != user) {
-      avatarSource = user.getAvatarSource(null, true, giftCode(tmp[21]).AVATAR_SIZE_MAP[giftCode(undefined, tmp[21]).AvatarSizes.GIFT_SUCCESS]);
+    if (user != null) {
+      avatarSource = obj.getAvatarSource(null, true, tmp2(tmp3[21]).AVATAR_SIZE_MAP[tmp2(undefined, tmp3[21]).AvatarSizes.GIFT_SUCCESS]);
     }
-    obj.source = avatarSource;
-    obj.avatarDecoration = avatarDecoration;
-    obj.size = giftCode(outer1_6[21]).AvatarSizes.GIFT_SUCCESS;
-    obj.animate = true;
-    return outer1_6(giftCode(outer1_6[21]).Avatar, obj);
+    obj = { source: avatarSource, avatarDecoration, size: tmp2(tmp3[21]).AvatarSizes.GIFT_SUCCESS, animate: true };
+    return outer1_6(giftCode(_undefined[21]).Avatar, obj);
   });
-  const withResult1 = match.with({ type: giftCode(1877).CollectiblesItemType.AVATAR_DECORATION }, (avatarDecoration) => {
-    const obj = {};
-    let avatarSource;
-    if (null != user) {
-      avatarSource = user.getAvatarSource(null, true, giftCode(tmp[21]).AVATAR_SIZE_MAP[giftCode(undefined, tmp[21]).AvatarSizes.GIFT_SUCCESS]);
-    }
-    obj.source = avatarSource;
-    obj.avatarDecoration = avatarDecoration;
-    obj.size = giftCode(outer1_6[21]).AvatarSizes.GIFT_SUCCESS;
-    obj.animate = true;
-    return outer1_6(giftCode(outer1_6[21]).Avatar, obj);
-  }).with(obj23, (profileEffect) => outer1_6(user(tmp[22]), { user, profileEffect }));
-  const obj24 = { type: giftCode(1877).CollectiblesItemType.PROFILE_FRAME };
-  const withResult2 = withResult1.with({ type: giftCode(1877).CollectiblesItemType.PROFILE_FRAME }, (profileFrame) => outer1_6(user(tmp[23]), { user, profileFrame }));
-  const obj25 = { type: giftCode(1877).CollectiblesItemType.NAMEPLATE };
-  otherwiseResult = withResult2.with({ type: giftCode(1877).CollectiblesItemType.NAMEPLATE }, (nameplate) => {
-    obj = { style: tmp.nameplateContainer, children: outer1_6(giftCode(tmp[24]).NameplatePreview, obj) };
+  const obj22 = { type: giftCode(1901).CollectiblesItemType.PROFILE_EFFECT };
+  const withResult1 = withResult.with({ type: giftCode(1901).CollectiblesItemType.PROFILE_EFFECT }, (profileEffect) => outer1_6(user(_undefined[22]), { user, profileEffect }));
+  const obj23 = { type: giftCode(1901).CollectiblesItemType.PROFILE_FRAME };
+  const withResult2 = withResult1.with({ type: giftCode(1901).CollectiblesItemType.PROFILE_FRAME }, (profileFrame) => outer1_6(user(_undefined[23]), { user, profileFrame }));
+  const obj24 = { type: giftCode(1901).CollectiblesItemType.NAMEPLATE };
+  otherwiseResult = withResult2.with({ type: giftCode(1901).CollectiblesItemType.NAMEPLATE }, (nameplate) => {
+    obj = { style: _undefined.nameplateContainer, children: outer1_6(giftCode(_undefined[24]).NameplatePreview, obj) };
     obj = { user, nameplate };
     return outer1_6(outer1_3, obj);
-  }).otherwise(() => outer1_6(user(tmp[25]), { giftStyle: giftCode.giftStyle }));
+  }).otherwise(() => outer1_6(user(_undefined[25]), { giftStyle: giftCode.giftStyle }));
 };

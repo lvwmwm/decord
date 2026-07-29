@@ -1,23 +1,23 @@
-// Module ID: 14590
-// Function ID: 111279
+// Module ID: 14615
+// Function ID: 14616
 // Name: FeaturedFirstCardCoachmarkAnchor
-// Dependencies: [31, 27, 33, 14591, 2]
+// Dependencies: [19, 17, 21, 14616, 2]
 // Exports: default
 
-// Module 14590 (FeaturedFirstCardCoachmarkAnchor)
-import result from "result";
+// Module 14615 (FeaturedFirstCardCoachmarkAnchor)
+import noop from "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
 
-let closure_4;
-let closure_5;
-({ jsx: closure_4, jsxs: closure_5 } = jsxProd);
+let c4;
+let c5;
+({ jsx: c4, jsxs: c5 } = jsxProd);
 const result = require("jsxProd").fileFinishedImporting("modules/collectibles/native/FeaturedFirstCardCoachmarkAnchor.tsx");
 
 export default function FeaturedFirstCardCoachmarkAnchor(children) {
   const ref = React.useRef(null);
-  const obj = { collapsable: false };
-  const items = [callback(View, { ref, style: { position: "absolute", top: 0, right: 6, width: 32, height: 32 }, collapsable: false }), children.children, callback(importDefault(14591), { anchorRef: ref })];
-  obj.children = items;
+  const obj = { collapsable: false, children: null };
+  const items = [callback(View, { ref, style: { position: "absolute", top: 0, right: 6, width: 32, height: 32 }, collapsable: false }), children.children, callback(importDefault(14616), { anchorRef: ref })];
+  obj[1] = items;
   return callback2(View, obj);
 };

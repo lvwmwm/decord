@@ -1,24 +1,24 @@
-// Module ID: 15184
-// Function ID: 115402
+// Module ID: 15217
+// Function ID: 15218
 // Name: useCanSeeNUFChannelsForGuild
-// Dependencies: [1918, 1838, 1850, 653, 3781, 566, 4004, 1360, 2]
+// Dependencies: [1942, 1862, 1874, 676, 3805, 589, 4028, 1384, 2]
 // Exports: useCanSeeNUFChannelsForGuild
 
-// Module 15184 (useCanSeeNUFChannelsForGuild)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import closure_4 from "_isNativeReflectConstruct";
+// Module 15217 (useCanSeeNUFChannelsForGuild)
+import trackCommunicationDisabled from "trackCommunicationDisabled";
+import createGuildRecordFromRust from "createGuildRecordFromRust";
+import mergeGuildAvatar from "mergeGuildAvatar";
 import { GuildFeatures } from "ME";
 import { GuildMemberFlags } from "GuildMemberFlags";
 
 const require = arg1;
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/nuf_channels/native/useCanSeeNUFChannelsForGuild.tsx");
+const result = require("mergeGuildAvatar").fileFinishedImporting("modules/nuf_channels/native/useCanSeeNUFChannelsForGuild.tsx");
 
 export const useCanSeeNUFChannelsForGuild = function useCanSeeNUFChannelsForGuild(id) {
   const _require = id;
-  const items = [closure_4, _createForOfIteratorHelperLoose, _isNativeReflectConstruct];
+  const items = [mergeGuildAvatar, createGuildRecordFromRust, trackCommunicationDisabled];
   const items1 = [id];
-  return _require(566).useStateFromStores(items, () => {
+  return _require(589).useStateFromStores(items, () => {
     const currentUser = outer1_4.getCurrentUser();
     if (null != currentUser) {
       if (obj3.isNewUser(currentUser)) {
@@ -28,27 +28,26 @@ export const useCanSeeNUFChannelsForGuild = function useCanSeeNUFChannelsForGuil
           if (!features2.has(outer1_5.HUB)) {
             const selfMember = outer1_2.getSelfMember(id);
             const features = guild.features;
-            let hasFlagResult = features.has(outer1_5.GUILD_ONBOARDING) && null != selfMember;
+            let hasFlagResult = features.has(tmp12.GUILD_ONBOARDING) && null != selfMember;
             if (hasFlagResult) {
-              const flags = selfMember.flags;
-              let num2 = 0;
-              if (null != flags) {
-                num2 = flags;
+              let tmp10Result = tmp10(tmp11[7]);
+              let num = selfMember.flags;
+              if (num == null) {
+                num = 0;
               }
-              hasFlagResult = id(outer1_1[7]).hasFlag(num2, outer1_6.STARTED_ONBOARDING);
-              const obj = id(outer1_1[7]);
+              hasFlagResult = tmp10Result.hasFlag(num, outer1_6.STARTED_ONBOARDING);
             }
             if (hasFlagResult) {
-              const flags2 = selfMember.flags;
-              let num4 = 0;
-              if (null != flags2) {
-                num4 = flags2;
+              tmp10Result = tmp10(tmp11[7]);
+              let num2 = selfMember.flags;
+              if (num2 == null) {
+                num2 = 0;
               }
-              hasFlagResult = !id(outer1_1[7]).hasFlag(num4, outer1_6.COMPLETED_ONBOARDING);
-              const obj2 = id(outer1_1[7]);
+              hasFlagResult = !tmp10Result.hasFlag(num2, outer1_6.COMPLETED_ONBOARDING);
             }
             return !hasFlagResult;
           }
+          tmp12 = outer1_5;
         }
         return false;
       }

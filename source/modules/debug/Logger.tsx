@@ -1,7 +1,7 @@
 // Module ID: 3
-// Function ID: 107
+// Function ID: 4
 // Name: timestamp
-// Dependencies: [4, 12, 2]
+// Dependencies: [4, 7, 2]
 
 // Module 3 (timestamp)
 import log from "log";
@@ -14,7 +14,7 @@ log.setLogFn((name) => {
   const result1 = (timestamp - timestamp) / 1000;
   const toFixedResult = result.toFixed(3);
   const toFixedResult1 = result1.toFixed(3);
-  const tmp5 = importAll(12);
+  const tmp5 = importAll(7);
   const items = [{ name, timing: "\u03A3:" + toFixedResult + "s, \u0394:" + toFixedResult1 + "s" }, arg2, ...substr];
   tmp5.report.apply(items);
   const obj = { name, timing: "\u03A3:" + toFixedResult + "s, \u0394:" + toFixedResult1 + "s" };

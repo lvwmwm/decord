@@ -1,61 +1,62 @@
-// Module ID: 13025
-// Function ID: 100853
+// Module ID: 13048
+// Function ID: 13049
 // Name: HideMutedChannelsOption
-// Dependencies: [31, 27, 5767, 1316, 1391, 5902, 1911, 4177, 4360, 1850, 653, 5090, 7701, 4361, 33, 4165, 689, 566, 5535, 1212, 10211, 9971, 3981, 1334, 5763, 4133, 4372, 9970, 1935, 11420, 4354, 5497, 5517, 9778, 1273, 9430, 13026, 1282, 1331, 8283, 13027, 7917, 8428, 4161, 3838, 6485, 5113, 10289, 5108, 13075, 10284, 13076, 8296, 4974, 8252, 8205, 9991, 13077, 4507, 44, 13024, 10244, 10243, 5771, 9977, 13078, 7669, 7776, 10995, 5524, 5525, 3865, 1392, 2]
-// Exports: GuildActionSheetDirectoryActions, GuildActionSheetPrimaryActions, GuildActionSheetSecondaryActions, GuildDeveloperOptionAction, GuildUnreadAction
+// Dependencies: [19, 17, 5785, 1340, 1415, 5921, 1935, 4201, 4385, 1874, 676, 5112, 7724, 4386, 21, 4189, 712, 589, 5553, 1236, 10232, 9993, 4005, 1358, 5781, 4157, 4395, 9992, 1959, 11444, 4379, 5515, 5535, 9800, 1297, 9454, 13049, 1306, 1355, 8307, 13050, 7942, 8452, 4185, 3862, 6506, 5135, 10310, 5130, 13098, 10305, 13099, 8320, 4996, 8276, 8229, 10013, 13100, 4530, 38, 13047, 10265, 10264, 5789, 9999, 13101, 7692, 7799, 11019, 5542, 5543, 3889, 1416, 2]
+// Exports: GuildActionSheetDirectoryActions, GuildActionSheetPrimaryActions, GuildActionSheetSecondaryActions, GuildDeveloperOptionAction, GuildUnreadAction, handleLeaveServer
 
-// Module 13025 (HideMutedChannelsOption)
-import mergeLocations from "mergeLocations";
-import { View } from "ChannelsAndRolesScreen";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_6 from "_isNativeReflectConstruct";
-import isGuildOwner from "isGuildOwner";
-import closure_9 from "_isNativeReflectConstruct";
-import closure_10 from "_createForOfIteratorHelperLoose";
-import closure_11 from "_isNativeReflectConstruct";
-import closure_12 from "_isNativeReflectConstruct";
-import closure_13 from "_isNativeReflectConstruct";
+// Module 13048 (HideMutedChannelsOption)
+import getSystemLocale from "getSystemLocale";
+import { View } from "initialize";
+import guildHasCommunity from "guildHasCommunity";
+import handleConnectionClosedOrResumed from "handleConnectionClosedOrResumed";
+import GuildNSFWContentLevel from "GuildNSFWContentLevel";
+import updateGuildUnreadSentinel from "updateGuildUnreadSentinel";
+import createGuildRoleRecordFromRust from "createGuildRoleRecordFromRust";
+import generateOldThreadCutoff from "generateOldThreadCutoff";
+import updateUserGuildSettingsInternal from "updateUserGuildSettingsInternal";
+import mergeGuildAvatar from "mergeGuildAvatar";
 import ME from "ME";
 import { CHANNELS_AND_ROLES_MODAL_KEY as closure_18 } from "GUILD_ONBOARDING_MODAL_KEY";
 import { GuildTagBadgeSize } from "items";
 import { ReadStateTypes } from "ReadStateTypes";
-import jsxProd from "useOpenProfileSettings";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import jsxProd from "useGuildOnboardingAvailable";
+import createCacheKey from "createCacheKey";
 
+let Fonts;
 let closure_14;
 let closure_15;
 let closure_16;
 let closure_17;
 let closure_21;
 let closure_22;
-let closure_7;
-let closure_8;
+let error;
+let metroImportAll;
 const require = arg1;
 function HideMutedChannelsOption(guild) {
   guild = guild.guild;
-  let obj = guild(566);
-  const items = [closure_12];
+  let obj = guild(589);
+  const items = [updateUserGuildSettingsInternal];
   const stateFromStores = obj.useStateFromStores(items, () => outer1_12.isGuildCollapsed(guild.id));
-  obj = {};
-  const intl = guild(1212).intl;
-  obj.label = intl.string(guild(1212).t.UwOLJO);
-  obj.value = stateFromStores;
-  obj.onValueChange = function onValueChange() {
+  obj = { label: null, value: null, onValueChange: null };
+  const intl = guild(1236).intl;
+  obj[0] = intl.string(guild(1236).t.UwOLJO);
+  obj[1] = stateFromStores;
+  obj[2] = function onValueChange() {
     return outer1_1(outer1_2[20]).toggleCollapseGuild(guild.id);
   };
-  return callback2(guild(5535).ActionSheetSwitchRow, obj);
+  return callback2(guild(5553).ActionSheetSwitchRow, obj);
 }
 function BrowseChannelsOption(guild) {
   guild = guild.guild;
-  let obj = guild(3981);
-  const result = obj.useIsDismissibleContentDismissed_UNSAFE(guild(1334).DismissibleContent.CHANNEL_BROWSER_NEW_BADGE_NUX);
-  const tmp = importDefault(9971)(guild);
-  const items = [closure_11];
-  const stateFromStores = guild(566).useStateFromStores(items, () => outer1_11.hasUnread(guild.id, outer1_20.GUILD_ONBOARDING_QUESTION));
-  const obj2 = guild(566);
-  const items1 = [_isNativeReflectConstruct];
+  let obj = guild(4005);
+  const result = obj.useIsDismissibleContentDismissed_UNSAFE(guild(1358).DismissibleContent.CHANNEL_BROWSER_NEW_BADGE_NUX);
+  const tmp2 = importDefault(9993)(guild);
+  const items = [generateOldThreadCutoff];
+  const stateFromStores = guild(589).useStateFromStores(items, () => outer1_11.hasUnread(guild.id, outer1_20.GUILD_ONBOARDING_QUESTION));
+  const obj2 = guild(589);
+  const items1 = [guildHasCommunity];
   const items2 = [guild.id];
-  const stateFromStores1 = guild(566).useStateFromStores(items1, () => outer1_5.getNewChannelIds(guild.id).size > guild(outer1_2[24]).MAX_NEW_CHANNELS_TO_SHOW);
+  const stateFromStores1 = guild(589).useStateFromStores(items1, () => outer1_5.getNewChannelIds(guild.id).size > guild(outer1_2[24]).MAX_NEW_CHANNELS_TO_SHOW);
   const features = guild.features;
   const callback = React.useCallback(() => {
     let obj = outer1_1(outer1_2[25]);
@@ -66,125 +67,127 @@ function BrowseChannelsOption(guild) {
   if (!features.has(constants.COMMUNITY)) {
     return null;
   } else {
-    obj = {};
     if (result) {
       if (!stateFromStores) {
-        let tmp10 = null;
+        let tmp8Result = null;
       }
-      obj.trailing = tmp10;
-      obj.onPress = callback;
-      const intl = guild(1212).intl;
+      obj = { trailing: null, onPress: null, label: null };
+      obj[0] = tmp8Result;
+      obj[1] = callback;
+      const intl = tmp3(1236).intl;
       const string = intl.string;
-      let h9mGOP = guild(1212).t;
-      if (tmp) {
+      let h9mGOP = tmp3(1236).t;
+      if (tmp2) {
         h9mGOP = h9mGOP.h9mGOP;
         let stringResult = string(h9mGOP);
       } else {
         stringResult = string(h9mGOP.et6wav);
       }
-      obj.label = stringResult;
-      tmp6(tmp9, obj);
+      obj[2] = stringResult;
+      tmp8Result = tmp8(tmp9, obj);
     }
-    tmp10 = callback2(guild(11420).NewBadge, {});
-    tmp6 = callback2;
+    tmp8Result = tmp8(tmp3(11444).NewBadge, {});
   }
 }
 function ChangeIdentityOption(arg0) {
   let guild;
   let user;
   ({ guild, user } = arg0);
-  const tmp = _createForOfIteratorHelperLoose();
-  let obj = importDefault(4354);
+  let _require;
+  const tmp = createCacheKey();
+  let obj = importDefault(4379);
   const nickname = obj.getNickname(guild.id, undefined, user);
-  const _require = importDefault(9778)({ guild, analyticsLocations: importDefault(5497)(importDefault(5517).GUILD_SETTINGS).analyticsLocations });
-  obj = {};
-  const intl = _require(1212).intl;
+  _require = importDefault(9800)({ guild, analyticsLocations: importDefault(5515)(importDefault(5535).GUILD_SETTINGS).analyticsLocations });
+  const intl = _require(1236).intl;
   const features = guild.features;
   const hasItem = features.has(constants.HUB);
-  const t = _require(1212).t;
-  obj.label = intl.string(hasItem ? t["+MWrWt"] : t["PKQB/H"]);
-  let tmp6 = nickname;
+  const t = _require(1236).t;
+  obj = { label: intl.string(hasItem ? t["+MWrWt"] : t["PKQB/H"]), subLabel: null, onPress: null };
+  let tmp9 = nickname;
   if (null != user) {
-    tmp6 = nickname;
+    tmp9 = nickname;
     if (user.hasAvatarForGuild(guild.id)) {
-      obj = { style: tmp.identitySublabel };
-      const obj1 = { size: _require(1273).AvatarSizes.SIZE_16, style: tmp.guildServerAvatar, user, guildId: guild.id };
-      const items = [callback2(_require(1273).Avatar, obj1), ];
-      const obj2 = { user, nick: nickname };
-      ({ identityName: obj5.usernameStyle, identityName: obj5.discriminatorStyle, identityName: obj5.nicknameStyle } = tmp);
-      items[1] = callback2(importDefault(9430), obj2);
-      obj.children = items;
-      tmp6 = callback3(View, obj);
+      obj = { style: null, children: null };
+      obj[0] = tmp.identitySublabel;
+      const obj1 = { size: null, style: null, user: null, guildId: null };
+      obj1[0] = tmp7(1297).AvatarSizes.SIZE_16;
+      obj1[1] = tmp.guildServerAvatar;
+      obj1[2] = user;
+      obj1[3] = guild.id;
+      const items = [tmp6(tmp7(1297).Avatar, obj1), ];
+      const obj2 = { user: null, nick: null, usernameStyle: null, discriminatorStyle: null, nicknameStyle: null };
+      obj2[0] = user;
+      obj2[1] = nickname;
+      ({ identityName: obj5[2], identityName: obj5[3], identityName: obj5[4] } = tmp);
+      items[1] = tmp6(importDefault(9454), obj2);
+      obj[1] = items;
+      tmp9 = callback3(View, obj);
     }
   }
-  obj.subLabel = tmp6;
-  obj.onPress = function onPress() {
+  obj[1] = tmp9;
+  obj[2] = function onPress() {
     outer1_1(outer1_2[25]).hideActionSheet();
     callback();
   };
-  return callback2(_require(5535).ActionSheetRow, obj);
+  return closure_21(_require(5553).ActionSheetRow, obj);
 }
 function GuildThemePreferenceOption(guild) {
   guild = guild.guild;
-  let obj = guild(566);
-  const items = [closure_6];
+  let obj = guild(589);
+  const items = [handleConnectionClosedOrResumed];
   const items1 = [guild.id];
   [][0] = guild.id;
   const stateFromStores = obj.useStateFromStores(items, () => outer1_6.resolveGuildThemeSourcePreference(guild.id), items1);
-  let tmp4 = null;
-  if (tmp) {
-    obj = {};
-    const intl = guild(1212).intl;
-    obj.label = intl.string(guild(1212).t.CFzDOG);
-    obj.value = stateFromStores === guild(1282).GuildThemeSourcePreference.GUILD;
-    obj.onValueChange = tmp3;
-    tmp4 = callback2(guild(5535).ActionSheetSwitchRow, obj);
+  let tmp6 = null;
+  if (tmp2) {
+    obj = { label: null, value: null, onValueChange: null };
+    const intl = tmp3(1236).intl;
+    obj[0] = intl.string(tmp3(1236).t.CFzDOG);
+    obj[1] = stateFromStores === tmp3(1306).GuildThemeSourcePreference.GUILD;
+    obj[2] = tmp5;
+    tmp6 = callback2(tmp3(5553).ActionSheetSwitchRow, obj);
   }
-  return tmp4;
+  return tmp6;
 }
 function ServerTagOption(guild) {
   guild = guild.guild;
-  let obj = guild(8283);
+  let obj = guild(8307);
   [][0] = guild.id;
   const result = obj.canViewMobileServerTag(guild.id);
   if (result) {
-    let obj1 = guild(7917);
     const profile = guild.profile;
     let badge;
-    if (null != profile) {
+    if (profile != null) {
       badge = profile.badge;
     }
-    const guildTagBadgeUrl = obj1.getGuildTagBadgeUrl(guild.id, badge, GuildTagBadgeSize.SIZE_16);
-    obj = {};
-    obj = { style: tmp.serverTagLabel };
-    obj1 = { accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants" };
-    let obj2 = {};
+    const guildTagBadgeUrl = tmp2(7942).getGuildTagBadgeUrl(guild.id, badge, GuildTagBadgeSize.SIZE_16);
+    obj = { style: null, children: null };
+    obj[0] = tmp.serverTagLabel;
     const profile2 = guild.profile;
     let tag;
-    if (null != profile2) {
+    if (profile2 != null) {
       tag = profile2.tag;
     }
-    let tmp20;
-    if (null != tag) {
-      tmp20 = tag;
-    }
-    obj2.guildTag = tmp20;
-    obj2.guildBadge = guildTagBadgeUrl;
-    obj2.badgeSize = GuildTagBadgeSize.SIZE_16;
-    obj1.children = callback2(guild(8428).BaseGuildTagChiplet, obj2);
-    const items = [callback2(View, obj1), ];
-    const obj3 = { variant: "heading-md/semibold", color: "mobile-text-heading-primary" };
-    const intl = guild(1212).intl;
-    obj3.children = intl.string(guild(1212).t["2QmKZ2"]);
-    items[1] = callback2(guild(4161).Text, obj3);
-    obj.children = items;
-    obj.label = closure_22(View, obj);
-    obj.onPress = tmp3;
-    return callback2(guild(5535).ActionSheetRow, obj);
+    obj = { label: null, onPress: null };
+    const obj1 = { accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: null };
+    let obj2 = { guildTag: null, guildBadge: null, badgeSize: null };
+    obj2[0] = tag;
+    obj2[1] = guildTagBadgeUrl;
+    obj2[2] = GuildTagBadgeSize.SIZE_16;
+    obj1[2] = closure_21(tmp2(8452).BaseGuildTagChiplet, obj2);
+    const items = [closure_21(View, obj1), ];
+    const obj3 = { variant: "heading-md/semibold", color: "mobile-text-heading-primary", children: null };
+    const intl = tmp2(1236).intl;
+    obj3[2] = intl.string(tmp2(1236).t["2QmKZ2"]);
+    items[1] = closure_21(tmp2(4185).Text, obj3);
+    obj[1] = items;
+    obj[0] = closure_22(View, obj);
+    obj[1] = tmp5;
+    return closure_21(tmp2(5553).ActionSheetRow, obj);
   } else {
     return null;
   }
-  tmp = _createForOfIteratorHelperLoose();
+  tmp = createCacheKey();
 }
 class RestrictedGuildPrivacyOption {
   constructor(arg0) {
@@ -193,9 +196,9 @@ class RestrictedGuildPrivacyOption {
     setting = RestrictedGuildIds.useSetting();
     hasItem = setting.includes(guild.id);
     tmp2 = jsx;
-    obj = {};
+    obj = { label: null, subLabel: null, value: null, onValueChange: null };
     intl = require("getSystemLocale").intl;
-    obj.label = intl.string(require("getSystemLocale").t.KXNTgb);
+    obj[0] = intl.string(require("getSystemLocale").t.KXNTgb);
     features = guild.features;
     hasItem1 = features.has(GuildFeatures.HUB);
     intl2 = require("getSystemLocale").intl;
@@ -206,9 +209,9 @@ class RestrictedGuildPrivacyOption {
     } else {
       stringResult = string(t.jMFSQV);
     }
-    obj.subLabel = stringResult;
-    obj.value = !hasItem;
-    obj.onValueChange = function onValueChange(arg0) {
+    obj[1] = stringResult;
+    obj[2] = !hasItem;
+    obj[3] = function onValueChange(arg0) {
       const sanitizedRestrictedGuilds = guild(outer1_2[45]).getSanitizedRestrictedGuilds();
       if (arg0) {
         sanitizedRestrictedGuilds.delete(guild.id);
@@ -224,10 +227,10 @@ class RestrictedGuildPrivacyOption {
 class NotificationAction {
   constructor(arg0) {
     guild = global.guild;
-    obj = {};
+    obj = { label: null, onPress: null };
     intl = require("getSystemLocale").intl;
-    obj.label = intl.string(require("getSystemLocale").t.HcoRu0);
-    obj.onPress = function onPress() {
+    obj[0] = intl.string(require("getSystemLocale").t.HcoRu0);
+    obj[1] = function onPress() {
       outer1_1(outer1_2[25]).hideActionSheet();
       const obj = outer1_1(outer1_2[25]);
       outer1_1(outer1_2[46]).open(guild.id);
@@ -235,77 +238,71 @@ class NotificationAction {
     return jsx(require("ActionSheetRowIcon").ActionSheetRow, obj);
   }
 }
-function handleLeaveServer(guild) {
-  let obj = importDefault(4133);
-  obj.hideActionSheet();
-  const lazyResult = React.lazy(() => outer1_0(outer1_2[28])(outer1_2[57], outer1_2.paths));
-  obj = { guild };
-  require(4507) /* useAlertStore */.openAlert("guild-action-sheet-leave-server", callback2(lazyResult, obj));
-}
-({ isGuildOwner: closure_7, getGuildIconURL: closure_8 } = isGuildOwner);
-({ ChannelTypes: closure_14, GuildFeatures: closure_15, AnalyticsSections: closure_16, AVATAR_MAX_SIZE: closure_17 } = ME);
+({ isGuildOwner: error, getGuildIconURL: metroImportAll } = GuildNSFWContentLevel);
+({ ChannelTypes: closure_14, GuildFeatures: closure_15, AnalyticsSections: closure_16, AVATAR_MAX_SIZE: closure_17, Fonts } = ME);
 ({ jsx: closure_21, jsxs: closure_22 } = jsxProd);
-_createForOfIteratorHelperLoose = { guildServerAvatar: { marginRight: 4 } };
-_createForOfIteratorHelperLoose = { color: require("_createForOfIteratorHelperLoose").colors.INTERACTIVE_TEXT_DEFAULT, fontFamily: ME.Fonts.PRIMARY_MEDIUM, fontSize: 12 };
-_createForOfIteratorHelperLoose.identityName = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.identitySublabel = { flexDirection: "row" };
-let obj1 = { flexDirection: "row", alignItems: "center", columnGap: require("_createForOfIteratorHelperLoose").space.PX_8 };
-_createForOfIteratorHelperLoose.serverTagLabel = obj1;
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/guild_action_sheet/native/components/GuildActionSheetActions.tsx");
+createCacheKey = { guildServerAvatar: { marginRight: 4 }, identityName: null, identitySublabel: null, serverTagLabel: null };
+createCacheKey = { color: require("Themes").colors.INTERACTIVE_TEXT_DEFAULT, fontFamily: Fonts.PRIMARY_MEDIUM, fontSize: 12 };
+createCacheKey[1] = createCacheKey;
+createCacheKey[2] = { flexDirection: "row" };
+createCacheKey[3] = { flexDirection: "row", alignItems: "center", columnGap: require("Themes").space.PX_8 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let obj1 = { flexDirection: "row", alignItems: "center", columnGap: require("Themes").space.PX_8 };
+let result = require("guildHasCommunity").fileFinishedImporting("modules/guild_action_sheet/native/components/GuildActionSheetActions.tsx");
 
 export { RestrictedGuildPrivacyOption };
 export { NotificationAction };
 export const GuildUnreadAction = function GuildUnreadAction(guild) {
   guild = guild.guild;
+  let closure_1;
+  let stateFromStores1;
   let obj = guild(stateFromStores1[17]);
-  let items = [closure_9];
+  let items = [updateGuildUnreadSentinel];
   const items1 = [guild];
   const stateFromStores = obj.useStateFromStores(items, () => outer1_9.getGuildHasUnreadIgnoreMuted(guild.id), items1);
   let obj1 = guild(stateFromStores1[47]);
   const shouldUseNewNotificationSystem = obj1.useShouldUseNewNotificationSystem("GuildUnreadAction");
   const items2 = [guild.id];
-  let closure_1 = React.useCallback(() => {
+  closure_1 = React.useCallback(() => {
     const result = callback(stateFromStores1[46]).updateGuildNotificationSettings(guild.id, { muted: false }, guild(stateFromStores1[48]).NotificationLabels.Unmuted);
   }, items2);
-  let obj2 = guild(stateFromStores1[17]);
-  const items3 = [closure_12];
-  stateFromStores1 = obj2.useStateFromStores(items3, () => outer1_12.isMuted(guild.id));
-  obj = { hasIcons: false };
-  obj = {};
+  const items3 = [updateUserGuildSettingsInternal];
+  stateFromStores1 = guild(stateFromStores1[17]).useStateFromStores(items3, () => outer1_12.isMuted(guild.id));
+  obj = { label: null, onPress: null, disabled: null };
   const intl = guild(stateFromStores1[19]).intl;
-  obj.label = intl.string(guild(stateFromStores1[19]).t.e6RscS);
-  obj.onPress = function onPress() {
+  obj[0] = intl.string(guild(stateFromStores1[19]).t.e6RscS);
+  obj[1] = function onPress() {
     callback(stateFromStores1[25]).hideActionSheet();
     const items = [guild.id];
     callback(stateFromStores1[49])(items, outer1_16.GUILD_POPOUT);
   };
-  obj.disabled = !stateFromStores;
+  obj[2] = !stateFromStores;
   const items4 = [callback2(guild(stateFromStores1[18]).ActionSheetRow, obj), , ];
   if (!shouldUseNewNotificationSystem) {
     items4[1] = shouldUseNewNotificationSystem;
     const features = guild.features;
-    let tmp13 = null;
+    let tmp7Result = null;
     if (features.has(constants.COMMUNITY)) {
-      obj1 = { guild };
-      tmp13 = callback2(BrowseChannelsOption, obj1);
+      obj = { guild: null };
+      obj[0] = guild;
+      tmp7Result = tmp7(BrowseChannelsOption, obj);
     }
-    items4[2] = tmp13;
-    obj.children = items4;
-    return closure_22(guild(stateFromStores1[18]).ActionSheetRow.Group, obj);
+    obj1 = { hasIcons: false, children: null };
+    items4[2] = tmp7Result;
+    obj1[1] = items4;
+    return closure_22(guild(stateFromStores1[18]).ActionSheetRow.Group, obj1);
   } else {
-    obj2 = {};
-    const intl2 = guild(stateFromStores1[19]).intl;
+    const intl2 = tmp(tmp2[19]).intl;
     const string = intl2.string;
-    let De0BTC = guild(stateFromStores1[19]).t;
+    let t = tmp(tmp2[19]).t;
     if (stateFromStores1) {
-      De0BTC = De0BTC.De0BTC;
-      let stringResult = string(De0BTC);
+      let stringResult = string(t.De0BTC);
     } else {
-      stringResult = string(De0BTC.vRzp7P);
+      stringResult = string(t.vRzp7P);
     }
-    obj2.label = stringResult;
-    obj2.onPress = function onPress() {
+    t = { label: null, onPress: null };
+    t[0] = stringResult;
+    t[1] = function onPress() {
       if (stateFromStores1) {
         callback();
       } else {
@@ -313,58 +310,58 @@ export const GuildUnreadAction = function GuildUnreadAction(guild) {
         obj.hideActionSheet();
         const _HermesInternal = HermesInternal;
         const obj2 = callback(stateFromStores1[25]);
-        obj = { guildId: guild.id };
+        obj = { guildId: null };
+        obj[0] = guild.id;
         obj2.openLazy(guild(stateFromStores1[28])(stateFromStores1[50], stateFromStores1.paths), "muteSettings" + guild.id, obj);
         const tmp5 = guild(stateFromStores1[28])(stateFromStores1[50], stateFromStores1.paths);
       }
     };
-    callback2(guild(stateFromStores1[18]).ActionSheetRow, obj2);
-    let tmp5 = callback2;
+    tmp7Result = tmp7(tmp(tmp2[18]).ActionSheetRow, t);
   }
 };
 export const GuildActionSheetPrimaryActions = function GuildActionSheetPrimaryActions(guild) {
   guild = guild.guild;
-  let obj = guild(13076);
-  let obj1 = guild(566);
-  const items = [closure_10];
+  let obj = guild(13099);
+  let obj1 = guild(589);
+  const items = [createGuildRoleRecordFromRust];
   const items1 = [];
   const stateFromStores = obj1.useStateFromStores(items, () => guild(outer1_2[53]).isVerifiedRolesChannelVisible(outer1_10.getSortedRoles(guild.id)));
   if (obj.useGuildActionSheetPermissions(guild).canManageChannels) {
-    obj = {};
-    const intl = guild(1212).intl;
-    obj.label = intl.string(guild(1212).t["fUYU+j"]);
-    obj.onPress = function onPress() {
+    obj = { label: null, onPress: null };
+    const intl = tmp(1236).intl;
+    obj[0] = intl.string(tmp(1236).t["fUYU+j"]);
+    obj[1] = function onPress() {
       outer1_1(outer1_2[25]).hideActionSheet();
       const obj = outer1_1(outer1_2[25]);
       outer1_1(outer1_2[54]).open(null, guild.id, null, null);
     };
-    items1.push(callback2(guild(5535).ActionSheetRow, obj));
-    obj = {};
-    const intl2 = guild(1212).intl;
-    obj.label = intl2.string(guild(1212).t["ISN+NM"]);
-    obj.onPress = function onPress() {
+    items1.push(callback2(tmp(5553).ActionSheetRow, obj));
+    obj = { label: null, onPress: null };
+    const intl2 = tmp(1236).intl;
+    obj[0] = intl2.string(tmp(1236).t["ISN+NM"]);
+    obj[1] = function onPress() {
       outer1_1(outer1_2[25]).hideActionSheet();
       const obj = outer1_1(outer1_2[25]);
       outer1_1(outer1_2[54]).open(outer1_14.GUILD_CATEGORY, guild.id, null, null);
     };
-    items1.push(callback2(guild(5535).ActionSheetRow, obj));
+    items1.push(callback2(tmp(5553).ActionSheetRow, obj));
   }
-  if (tmp) {
-    obj1 = {};
-    const intl3 = guild(1212).intl;
-    obj1.label = intl3.string(guild(1212).t["60lJ0C"]);
-    obj1.onPress = function onPress() {
+  if (tmp3) {
+    obj1 = { label: null, onPress: null };
+    const intl3 = tmp(1236).intl;
+    obj1[0] = intl3.string(tmp(1236).t["60lJ0C"]);
+    obj1[1] = function onPress() {
       outer1_1(outer1_2[25]).hideActionSheet();
       const obj = outer1_1(outer1_2[25]);
       const result = guild(outer1_2[55]).openCreateOrEditGuildEventModal(guild, {});
     };
-    items1.push(callback2(guild(5535).ActionSheetRow, obj1));
+    items1.push(callback2(tmp(5553).ActionSheetRow, obj1));
   }
   if (stateFromStores) {
-    const obj2 = {};
-    const intl4 = guild(1212).intl;
-    obj2.label = intl4.string(guild(1212).t.ghtnss);
-    obj2.onPress = function onPress() {
+    const obj2 = { label: null, onPress: null };
+    const intl4 = tmp(1236).intl;
+    obj2[0] = intl4.string(tmp(1236).t.ghtnss);
+    obj2[1] = function onPress() {
       let obj = outer1_1(outer1_2[25]);
       obj.hideActionSheet();
       obj = {
@@ -375,56 +372,65 @@ export const GuildActionSheetPrimaryActions = function GuildActionSheetPrimaryAc
       };
       const result = guild(outer1_2[56]).openGuildRoleConnectionsModal(obj);
     };
-    items1.push(callback2(guild(5535).ActionSheetRow, obj2));
+    items1.push(callback2(tmp(5553).ActionSheetRow, obj2));
   }
-  let tmp17 = null;
+  let tmp12 = null;
   if (0 !== items1.length) {
-    const obj3 = { hasIcons: false, children: items1.map((children) => outer1_21(outer1_3.Fragment, { children }, arg1)) };
-    tmp17 = callback2(guild(5535).ActionSheetRow.Group, obj3);
+    const obj3 = { hasIcons: false, children: null };
+    obj3[1] = items1.map((children) => callback(React.Fragment, { children }, arg1));
+    tmp12 = callback2(tmp(5553).ActionSheetRow.Group, obj3);
   }
-  return tmp17;
+  return tmp12;
 };
-export { handleLeaveServer };
+export const handleLeaveServer = function handleLeaveServer(guild) {
+  let obj = importDefault(4157);
+  obj.hideActionSheet();
+  const lazyResult = React.lazy(() => callback(paths[28])(paths[57], paths.paths));
+  obj = { guild };
+  require(4530) /* useAlertStore */.openAlert("guild-action-sheet-leave-server", callback2(lazyResult, obj));
+};
 export const GuildActionSheetDirectoryActions = function GuildActionSheetDirectoryActions(guild) {
   guild = guild.guild;
   const currentUser = authStore.getCurrentUser();
-  importDefault(44)(null != currentUser, "GuildActionSheetDirectoryActions: user cannot be undefined");
+  importDefault(38)(null != currentUser, "GuildActionSheetDirectoryActions: user cannot be undefined");
   const items = [];
   items.push(callback2(NotificationAction, { guild }));
   items.push(callback2(ChangeIdentityOption, { guild, user: currentUser }));
   items.push(callback2(RestrictedGuildPrivacyOption, { guild }));
-  let obj = guild(13024);
+  let obj = guild(13047);
   const messageRequestPrivacyOption = obj.useMessageRequestPrivacyOption({ guild });
   if (null != messageRequestPrivacyOption) {
     items.push(messageRequestPrivacyOption);
   }
-  if (tmp3) {
-    let tmp17 = null;
+  if (tmp4) {
+    let tmp5Result = null;
     if (0 !== items.length) {
-      obj = { hasIcons: false, children: items.map((children) => outer1_21(outer1_3.Fragment, { children }, arg1)) };
-      tmp17 = callback2(guild(5535).ActionSheetRow.Group, obj);
+      obj = { hasIcons: false, children: null };
+      obj[1] = items.map((children) => callback(React.Fragment, { children }, arg1));
+      tmp5Result = tmp5(tmp9(5553).ActionSheetRow.Group, obj);
     }
-    return tmp17;
+    return tmp5Result;
   } else {
-    obj = {};
     const features = guild.features;
     const hasItem = features.has(constants.HUB);
-    const intl = guild(1212).intl;
+    const intl = tmp9(1236).intl;
     const string = intl.string;
-    let Dv8gFT = guild(1212).t;
+    let t = tmp9(1236).t;
     if (hasItem) {
-      Dv8gFT = Dv8gFT.Dv8gFT;
-      let stringResult = string(Dv8gFT);
+      let stringResult = string(t.Dv8gFT);
     } else {
-      stringResult = string(Dv8gFT.J2TBi3);
+      stringResult = string(t.J2TBi3);
     }
-    obj.label = stringResult;
-    obj.variant = "danger";
-    obj.onPress = function onPress() {
-      outer1_31(guild);
+    obj = { label: null, variant: "danger", onPress: null };
+    obj[0] = stringResult;
+    obj[2] = function onPress() {
+      let obj = outer1_1(outer1_2[25]);
+      obj.hideActionSheet();
+      const lazyResult = outer1_3.lazy(() => callback(paths[28])(paths[57], paths.paths));
+      obj = { guild };
+      guild(outer1_2[58]).openAlert("guild-action-sheet-leave-server", outer1_21(lazyResult, obj));
     };
-    obj = items.push(callback2(guild(5535).ActionSheetRow, obj));
-    const tmp9 = callback2;
+    t = items.push(tmp5(tmp9(5553).ActionSheetRow, obj));
   }
 };
 export const GuildActionSheetSecondaryActions = function GuildActionSheetSecondaryActions(guild) {
@@ -432,130 +438,130 @@ export const GuildActionSheetSecondaryActions = function GuildActionSheetSeconda
   let shouldShowIncidentActions;
   guild = guild.guild;
   const currentUser = authStore.getCurrentUser();
-  let obj = guild(10244);
+  let obj = guild(10265);
   const canReportRaid = obj.useCanReportRaid(guild);
-  let obj1 = guild(10243);
+  let obj1 = guild(10264);
   const guildIncidentsState = obj1.useGuildIncidentsState(guild.id);
   const items = [];
   ({ shouldShowIncidentActions, isUnderLockdown } = guildIncidentsState);
-  let obj2 = guild(5771);
+  let obj2 = guild(5789);
   const optInEnabledForGuild = obj2.useOptInEnabledForGuild(guild.id);
   items.push(callback2(ChangeIdentityOption, { guild, user: currentUser }));
   items.push(callback2(GuildThemePreferenceOption, { guild }));
   items.push(callback2(ServerTagOption, { guild }));
   const features = guild.features;
   if (features.has(constants.COMMUNITY)) {
-    obj = {};
-    const intl = guild(1212).intl;
-    obj.label = intl.string(guild(1212).t.FB2ZZV);
-    obj.value = !optInEnabledForGuild;
-    obj.onValueChange = function onValueChange() {
+    obj = { label: null, value: null, onValueChange: null };
+    const intl = tmp3(1236).intl;
+    obj[0] = intl.string(tmp3(1236).t.FB2ZZV);
+    obj[1] = !optInEnabledForGuild;
+    obj[2] = function onValueChange() {
       return guild(outer1_2[64]).toggleShowAllChannels(guild.id);
     };
-    items.push(callback2(guild(5535).ActionSheetSwitchRow, obj));
+    items.push(tmp8(tmp3(5553).ActionSheetSwitchRow, obj));
   }
   items.push(callback2(HideMutedChannelsOption, { guild }));
   items.push(callback2(RestrictedGuildPrivacyOption, { guild }));
-  let obj4 = guild(13024);
-  const messageRequestPrivacyOption = obj4.useMessageRequestPrivacyOption({ guild });
+  const tmp12 = constants;
+  const tmp2 = callback(guild, currentUser);
+  const messageRequestPrivacyOption = guild(13047).useMessageRequestPrivacyOption({ guild });
   if (null != messageRequestPrivacyOption) {
     items.push(messageRequestPrivacyOption);
   }
   if (canReportRaid) {
-    obj = {};
-    const intl2 = guild(1212).intl;
-    obj.label = intl2.string(guild(1212).t.cswId3);
-    obj.onPress = function onPress() {
+    obj = { label: null, onPress: null };
+    const intl2 = tmp3(1236).intl;
+    obj[0] = intl2.string(tmp3(1236).t.cswId3);
+    obj[1] = function onPress() {
       outer1_1(outer1_2[25]).hideActionSheet();
       const obj = outer1_1(outer1_2[25]);
       guild(outer1_2[65]).openReportRaidModal(guild.id);
     };
-    items.push(callback2(guild(5535).ActionSheetRow, obj));
+    items.push(tmp8(tmp3(5553).ActionSheetRow, obj));
   }
-  obj1 = {};
-  const intl3 = guild(1212).intl;
-  obj1.label = intl3.string(guild(1212).t.Aen9eh);
-  obj1.onPress = function onPress() {
+  obj1 = { label: null, onPress: null };
+  const intl3 = tmp3(1236).intl;
+  obj1[0] = intl3.string(guild(1236).t.Aen9eh);
+  obj1[1] = function onPress() {
     outer1_1(outer1_2[25]).hideActionSheet();
     const obj = outer1_1(outer1_2[25]);
     const result = guild(outer1_2[66]).showReportModalForGuild(guild);
   };
-  items.push(callback2(guild(5535).ActionSheetRow, obj1));
+  items.push(callback2(guild(5553).ActionSheetRow, obj1));
   if (!shouldShowIncidentActions) {
     if (tmp2) {
-      let tmp36 = null;
+      let tmp8Result = null;
       if (0 !== items.length) {
-        obj2 = { hasIcons: false, children: items.map((children) => outer1_21(outer1_3.Fragment, { children }, arg1)) };
-        tmp36 = callback2(guild(5535).ActionSheetRow.Group, obj2);
+        obj2 = { hasIcons: false, children: null };
+        obj2[1] = items.map((children) => callback(React.Fragment, { children }, arg1));
+        tmp8Result = tmp8(tmp3(5553).ActionSheetRow.Group, obj2);
       }
-      return tmp36;
+      return tmp8Result;
     } else {
-      let obj3 = {};
       const features2 = guild.features;
-      const hasItem = features2.has(constants.HUB);
-      const intl5 = guild(1212).intl;
+      const hasItem = features2.has(tmp12.HUB);
+      const intl5 = tmp3(1236).intl;
       const string2 = intl5.string;
-      let Dv8gFT = guild(1212).t;
+      let t2 = tmp3(1236).t;
       if (hasItem) {
-        Dv8gFT = Dv8gFT.Dv8gFT;
-        let string2Result = string2(Dv8gFT);
+        let string2Result = string2(t2.Dv8gFT);
       } else {
-        string2Result = string2(Dv8gFT.J2TBi3);
+        string2Result = string2(t2.J2TBi3);
       }
-      obj3.label = string2Result;
-      obj3.variant = "danger";
-      obj3.onPress = function onPress() {
-        outer1_31(guild);
+      const obj3 = { label: null, variant: "danger", onPress: null };
+      obj3[0] = string2Result;
+      obj3[2] = function onPress() {
+        let obj = outer1_1(outer1_2[25]);
+        obj.hideActionSheet();
+        const lazyResult = outer1_3.lazy(() => callback(paths[28])(paths[57], paths.paths));
+        obj = { guild };
+        guild(outer1_2[58]).openAlert("guild-action-sheet-leave-server", outer1_21(lazyResult, obj));
       };
-      obj3 = items.push(callback2(guild(5535).ActionSheetRow, obj3));
-      const tmp28 = callback2;
+      t2 = items.push(tmp8(tmp3(5553).ActionSheetRow, obj3));
     }
   } else {
-    obj4 = {};
-    const intl4 = guild(1212).intl;
+    const intl4 = tmp3(1236).intl;
     const string = intl4.string;
-    _tSVi3 = guild(1212).t;
+    let t = tmp3(1236).t;
     if (isUnderLockdown) {
-      _tSVi3 = _tSVi3["+tSVi3"];
-      let stringResult = string(_tSVi3);
+      let stringResult = string(t["+tSVi3"]);
     } else {
-      stringResult = string(_tSVi3.EPlEdu);
+      stringResult = string(t.EPlEdu);
     }
-    obj4.label = stringResult;
-    obj4.variant = "danger";
-    obj4.onPress = function onPress() {
+    const obj4 = { label: null, variant: "danger", onPress: null };
+    obj4[0] = stringResult;
+    obj4[2] = function onPress() {
       let obj = outer1_1(outer1_2[25]);
       obj.hideActionSheet();
       obj = { source: guild(outer1_2[67]).GuildIncidentActionSources.GUILD_PROFILE };
       obj = { guild, analyticsData: obj };
       outer1_1(outer1_2[25]).openLazy(guild(outer1_2[28])(outer1_2[68], outer1_2.paths), "GuildIncidentActionsActionSheet", obj);
     };
-    obj4 = items.push(callback2(guild(5535).ActionSheetRow, obj4));
-    const tmp22 = callback2;
+    t = items.push(tmp8(tmp3(5553).ActionSheetRow, obj4));
   }
 };
 export const GuildDeveloperOptionAction = function GuildDeveloperOptionAction(guild) {
   guild = guild.guild;
-  const DeveloperMode = guild(3838).DeveloperMode;
+  const DeveloperMode = guild(3862).DeveloperMode;
   const setting = DeveloperMode.useSetting();
-  importDefault(5524);
+  importDefault(5542);
   if (setting) {
     const items = [];
-    let obj = {};
-    const intl = guild(1212).intl;
-    obj.label = intl.string(guild(1212).t["94lLD7"]);
-    obj.onPress = function onPress() {
+    let obj = { label: null, onPress: null };
+    const intl = tmp(1236).intl;
+    obj[0] = intl.string(tmp(1236).t["94lLD7"]);
+    obj[1] = function onPress() {
       guild(outer1_2[70]).copy(guild.id);
       const obj = guild(outer1_2[70]);
       guild(outer1_2[71]).presentIdCopied();
     };
-    items.push(callback2(guild(5535).ActionSheetRow, obj));
-    if (tmp3) {
+    items.push(callback2(tmp(5553).ActionSheetRow, obj));
+    if (tmp5) {
       if (null != guild.icon) {
-        obj = {};
-        const intl2 = guild(1212).intl;
-        obj.label = intl2.string(guild(1212).t["7H30wR"]);
-        obj.onPress = function onPress() {
+        obj = { label: null, onPress: null };
+        const intl2 = tmp(1236).intl;
+        obj[0] = intl2.string(tmp(1236).t["7H30wR"]);
+        obj[1] = function onPress() {
           const tmp = outer1_8(guild, outer1_17, true);
           if (null != tmp) {
             guild(outer1_2[70]).copy(tmp);
@@ -564,31 +570,31 @@ export const GuildDeveloperOptionAction = function GuildDeveloperOptionAction(gu
             const obj2 = guild(outer1_2[71]);
           }
         };
-        items.push(callback2(guild(5535).ActionSheetRow, obj));
+        items.push(tmp7(tmp(5553).ActionSheetRow, obj));
       }
       if (null != guild.banner) {
-        obj = {};
-        const intl3 = guild(1212).intl;
-        obj.label = intl3.string(guild(1212).t["2FoUnk"]);
-        obj.onPress = function onPress() {
+        obj = { label: null, onPress: null };
+        const intl3 = tmp(1236).intl;
+        obj[0] = intl3.string(tmp(1236).t["2FoUnk"]);
+        obj[1] = function onPress() {
           let obj = outer1_1(outer1_2[72]);
           obj = { id: guild.id, banner: guild.banner };
           const guildBannerURL = obj.getGuildBannerURL(obj, true);
           if (null != guildBannerURL) {
-            guild(outer1_2[70]).copy(guildBannerURL);
-            const obj3 = guild(outer1_2[70]);
-            guild(outer1_2[71]).presentLinkCopied();
-            const obj4 = guild(outer1_2[71]);
+            guild(tmp[70]).copy(guildBannerURL);
+            const obj3 = guild(tmp[70]);
+            guild(tmp[71]).presentLinkCopied();
+            const obj4 = guild(tmp[71]);
           }
         };
-        items.push(callback2(guild(5535).ActionSheetRow, obj));
+        items.push(tmp7(tmp(5553).ActionSheetRow, obj));
       }
     }
-    const obj1 = { hasIcons: false };
-    const intl4 = guild(1212).intl;
-    obj1.title = intl4.string(guild(1212).t.ObIb1Q);
-    obj1.children = items.map((children) => outer1_21(outer1_3.Fragment, { children }, arg1));
-    return callback2(guild(5535).ActionSheetRow.Group, obj1);
+    const obj1 = { hasIcons: false, title: null, children: null };
+    const intl4 = tmp(1236).intl;
+    obj1[1] = intl4.string(tmp(1236).t.ObIb1Q);
+    obj1[2] = items.map((children) => callback(React.Fragment, { children }, arg1));
+    return callback2(tmp(5553).ActionSheetRow.Group, obj1);
   } else {
     return null;
   }

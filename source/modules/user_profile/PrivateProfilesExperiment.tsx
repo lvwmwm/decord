@@ -1,23 +1,22 @@
-// Module ID: 12159
-// Function ID: 95099
+// Module ID: 12183
+// Function ID: 12184
 // Name: apexExperiment
-// Dependencies: [1428, 12160, 12161, 2]
+// Dependencies: [1452, 12184, 12185, 2]
 // Exports: getIsInPrivateProfilesExperiment, useIsInPrivateProfilesExperiment
 
-// Module 12159 (apexExperiment)
+// Module 12183 (apexExperiment)
 import ApexExperiment from "ApexExperiment";
 
-let obj = { name: "2026-02-private-profiles", kind: "user", defaultConfig: { enabled: false }, variations: { [0]: { enabled: false }, [1]: { enabled: true } } };
-const apexExperiment = ApexExperiment.createApexExperiment(obj);
+const apexExperiment = ApexExperiment.createApexExperiment({ name: "2026-02-private-profiles", kind: "user", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true } } });
 const result = require("apexExperiment").fileFinishedImporting("modules/user_profile/PrivateProfilesExperiment.tsx");
 
 export const PrivateProfilesExperiment = apexExperiment;
-export const useIsInPrivateProfilesExperiment = function useIsInPrivateProfilesExperiment(PrivateProfileCoachmark) {
-  let enabled = apexExperiment.useConfig({ location: PrivateProfileCoachmark }).enabled;
-  const isInPrivateProfilesStrictExperiment = require(12160) /* apexExperiment */.useIsInPrivateProfilesStrictExperiment(PrivateProfileCoachmark);
-  const obj = { location: PrivateProfileCoachmark };
-  const obj2 = require(12160) /* apexExperiment */;
-  const isInPrivateProfilesStrictGbExperiment = require(12161) /* apexExperiment */.useIsInPrivateProfilesStrictGbExperiment(PrivateProfileCoachmark);
+export const useIsInPrivateProfilesExperiment = function useIsInPrivateProfilesExperiment(UserProfilePrivacyNotice) {
+  let enabled = apexExperiment.useConfig({ location: UserProfilePrivacyNotice }).enabled;
+  const isInPrivateProfilesStrictExperiment = require(12184) /* apexExperiment */.useIsInPrivateProfilesStrictExperiment(UserProfilePrivacyNotice);
+  const obj = { location: UserProfilePrivacyNotice };
+  const obj2 = require(12184) /* apexExperiment */;
+  const isInPrivateProfilesStrictGbExperiment = require(12185) /* apexExperiment */.useIsInPrivateProfilesStrictGbExperiment(UserProfilePrivacyNotice);
   if (!enabled) {
     enabled = isInPrivateProfilesStrictExperiment;
   }
@@ -29,12 +28,12 @@ export const useIsInPrivateProfilesExperiment = function useIsInPrivateProfilesE
 export const getIsInPrivateProfilesExperiment = function getIsInPrivateProfilesExperiment(ProfilePrivacySetting) {
   let enabled = apexExperiment.getConfig({ location: ProfilePrivacySetting }).enabled;
   if (!enabled) {
-    enabled = require(12160) /* apexExperiment */.getIsInPrivateProfilesStrictExperiment(ProfilePrivacySetting);
-    const obj2 = require(12160) /* apexExperiment */;
+    enabled = require(12184) /* apexExperiment */.getIsInPrivateProfilesStrictExperiment(ProfilePrivacySetting);
+    const obj2 = require(12184) /* apexExperiment */;
   }
   if (!enabled) {
-    enabled = require(12161) /* apexExperiment */.getIsInPrivateProfilesStrictGbExperiment(ProfilePrivacySetting);
-    const obj3 = require(12161) /* apexExperiment */;
+    enabled = require(12185) /* apexExperiment */.getIsInPrivateProfilesStrictGbExperiment(ProfilePrivacySetting);
+    const obj3 = require(12185) /* apexExperiment */;
   }
   return enabled;
 };

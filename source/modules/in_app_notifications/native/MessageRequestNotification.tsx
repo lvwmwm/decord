@@ -1,11 +1,11 @@
-// Module ID: 10361
-// Function ID: 79893
+// Module ID: 10382
+// Function ID: 10383
 // Name: MessageRequestInAppNotification
-// Dependencies: [31, 33, 1212, 10239, 4017, 10313, 1273, 10258, 2]
+// Dependencies: [19, 21, 1236, 10260, 4041, 10334, 1297, 10279, 2]
 // Exports: default
 
-// Module 10361 (MessageRequestInAppNotification)
-import result from "result";
+// Module 10382 (MessageRequestInAppNotification)
+import noop from "noop";
 import { jsx } from "jsxProd";
 
 const require = arg1;
@@ -13,33 +13,36 @@ const result = require("getSystemLocale").fileFinishedImporting("modules/in_app_
 
 export default function MessageRequestInAppNotification(notification) {
   notification = notification.notification;
-  const author = notification.author;
-  const numMutualGuilds = notification.numMutualGuilds;
+  let author;
+  let numMutualGuilds;
+  author = notification.author;
+  numMutualGuilds = notification.numMutualGuilds;
   const items = [author.username, numMutualGuilds];
   const memo = React.useMemo(() => {
-    let obj = { type: "simple" };
+    let obj = { type: "simple", text: null };
     const intl = author(outer1_2[2]).intl;
     obj = { name: author.username, count: numMutualGuilds };
-    obj.text = intl.formatToPlainString(author(outer1_2[2]).t.LeYU4d, obj);
+    obj[1] = intl.formatToPlainString(author(outer1_2[2]).t.LeYU4d, obj);
     return obj;
   }, items);
   const callback = React.useCallback(() => {
-    numMutualGuilds(outer1_2[3]).clearNotification();
-    const obj = numMutualGuilds(outer1_2[3]);
-    const rootNavigationRef = author(outer1_2[4]).getRootNavigationRef();
-    if (null != rootNavigationRef) {
+    numMutualGuilds(10260).clearNotification();
+    const obj = numMutualGuilds(10260);
+    const rootNavigationRef = author(4041).getRootNavigationRef();
+    if (rootNavigationRef != null) {
       rootNavigationRef.navigate("message-requests");
     }
   }, []);
-  let obj = {};
-  obj = { user: author, size: author(1273).AvatarSizes.NORMAL, guildId: undefined };
-  obj.icon = jsx(author(1273).Avatar, { user: author, size: author(1273).AvatarSizes.NORMAL, guildId: undefined });
-  obj.header = memo;
-  obj = {};
-  let intl = author(1212).intl;
-  obj.text = intl.string(author(1212).t["Bx4/Lf"]);
-  obj.children = jsx(author(10258).SystemMessageText, {});
-  obj.onPress = callback;
-  obj.notification = notification;
-  return jsx(author(10313).NotificationPressable, {});
+  let obj = { icon: null, header: null, children: null, onPress: null, notification: null };
+  obj = { user: author, size: null, guildId: "Array" };
+  obj[1] = author(1297).AvatarSizes.NORMAL;
+  obj[0] = jsx(author(1297).Avatar, { user: author, size: null, guildId: "Array" });
+  obj[1] = memo;
+  obj = { text: null };
+  let intl = author(1236).intl;
+  obj[0] = intl.string(author(1236).t["Bx4/Lf"]);
+  obj[2] = jsx(author(10279).SystemMessageText, { text: null });
+  obj[3] = callback;
+  obj[4] = notification;
+  return jsx(author(10334).NotificationPressable, { text: null });
 };

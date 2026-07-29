@@ -1,10 +1,10 @@
-// Module ID: 12946
-// Function ID: 100426
+// Module ID: 12969
+// Function ID: 12970
 // Name: windowSourceMatches
-// Dependencies: [57, 2]
+// Dependencies: [32, 2]
 // Exports: default
 
-// Module 12946 (windowSourceMatches)
+// Module 12969 (windowSourceMatches)
 import _slicedToArray from "_slicedToArray";
 
 const result = require("set").fileFinishedImporting("modules/go_live/utils/windowSourceMatches.tsx");
@@ -13,7 +13,7 @@ export default function windowSourceMatches(str) {
   if (null == arg1) {
     return false;
   } else {
-    const tmp2 = callback(str.split(":"), 2);
-    return "window" === tmp2[0] && tmp2[1] === arg1;
+    const tmp3 = callback(str.split(":"), 2);
+    return "window" === tmp3[0] && tmp3[1] === arg1;
   }
 };

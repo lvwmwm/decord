@@ -1,42 +1,41 @@
-// Module ID: 13790
-// Function ID: 105675
+// Module ID: 13811
+// Function ID: 13812
 // Name: pressable
-// Dependencies: [1850, 7733, 13755, 13791, 4505, 1212, 10099, 2]
+// Dependencies: [1874, 7756, 13776, 13812, 4528, 1236, 10120, 2]
 
-// Module 13790 (pressable)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 13811 (pressable)
+import mergeGuildAvatar from "mergeGuildAvatar";
 import createToggle from "createToggle";
 
 const require = arg1;
 createToggle = {
   useTitle() {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(require(1212) /* getSystemLocale */.t.cDgKte);
+    const intl = require(1236) /* getSystemLocale */.intl;
+    return intl.string(require(1236) /* getSystemLocale */.t.cDgKte);
   },
   parent: require("MobileSetting").MobileSetting.ACCOUNT,
   onPress: function onAccountEnable2FASettingPress() {
     currentUser = currentUser.getCurrentUser();
     let verified;
-    if (null != currentUser) {
+    if (currentUser != null) {
       verified = currentUser.verified;
     }
-    if (null != verified) {
+    if (verified != null) {
       if (verified) {
-        importDefault(13791).open();
-        const obj3 = importDefault(13791);
+        let obj = importDefault(13812);
+        obj.open();
       }
     }
-    let obj = importDefault(4505);
-    obj = {};
-    const intl = require(1212) /* getSystemLocale */.intl;
-    obj.title = intl.string(require(1212) /* getSystemLocale */.t.v740sh);
-    const intl2 = require(1212) /* getSystemLocale */.intl;
-    obj.body = intl2.string(require(1212) /* getSystemLocale */.t.uggF7o);
-    obj.show(obj);
+    obj = { title: null, body: null };
+    const intl = require(1236) /* getSystemLocale */.intl;
+    obj[0] = intl.string(require(1236) /* getSystemLocale */.t.v740sh);
+    const intl2 = require(1236) /* getSystemLocale */.intl;
+    obj[1] = intl2.string(require(1236) /* getSystemLocale */.t.uggF7o);
+    importDefault(4528).show(obj);
   },
   withArrow: true,
   usePredicate: function useHasAccountEnable2FASetting() {
-    return !require(13755) /* useIs2FAEnabled */.useIsTOTPEnabled();
+    return !require(13776) /* useIs2FAEnabled */.useIsTOTPEnabled();
   }
 };
 createToggle = createToggle.createPressable(createToggle);

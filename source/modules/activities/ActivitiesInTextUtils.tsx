@@ -1,12 +1,12 @@
-// Module ID: 7989
-// Function ID: 63358
+// Module ID: 8014
+// Function ID: 8015
 // Name: isActivityInTextSupportedForChannel
-// Dependencies: [1348, 3793, 482, 669, 566, 2]
-// Exports: isActivitiesInTextEnabled, useIsActivitiesInTextEnabled, useIsAppLauncherEnabled
+// Dependencies: [1372, 3817, 505, 692, 589, 2]
+// Exports: getIsAppLauncherEnabled, isActivitiesInTextEnabled, useIsActivitiesInTextEnabled, useIsAppLauncherEnabled
 
-// Module 7989 (isActivityInTextSupportedForChannel)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_3 from "_isNativeReflectConstruct";
+// Module 8014 (isActivityInTextSupportedForChannel)
+import ensureGuildLoaded from "ensureGuildLoaded";
+import getUncachedChannelPermissions from "getUncachedChannelPermissions";
 import { Permissions } from "sum";
 
 const require = arg1;
@@ -18,38 +18,67 @@ function isActivityInTextSupportedForChannel(channel) {
     let hasItem = null == channel;
     if (!hasItem) {
       let type;
-      if (null != channel) {
+      if (channel != null) {
         type = channel.type;
       }
-      hasItem = type === require(669) /* set */.ChannelTypes.GUILD_CATEGORY;
+      hasItem = type === require(692) /* set */.ChannelTypes.GUILD_CATEGORY;
     }
     if (hasItem) {
-      const items = [require(669) /* set */.ChannelTypes.GUILD_TEXT, require(669) /* set */.ChannelTypes.GUILD_VOICE, require(669) /* set */.ChannelTypes.GROUP_DM, require(669) /* set */.ChannelTypes.DM];
+      const items = [require(692) /* set */.ChannelTypes.GUILD_TEXT, require(692) /* set */.ChannelTypes.GUILD_VOICE, require(692) /* set */.ChannelTypes.GROUP_DM, require(692) /* set */.ChannelTypes.DM];
       hasItem = items.includes(channel.type);
     }
     return hasItem;
   }
 }
-function isActivitiesInTextEnabledForChannelWithPermissions(guild_id, closure_3) {
-  if (null != guild_id) {
-    if (undefined !== guild_id) {
-      if (isActivityInTextSupportedForChannel(guild_id)) {
-        if (null != guild_id.guild_id) {
-          if (!closure_3.can(Permissions.USE_EMBEDDED_ACTIVITIES, guild_id)) {
-            return false;
+const result = require("sum").fileFinishedImporting("modules/activities/ActivitiesInTextUtils.tsx");
+
+export { isActivityInTextSupportedForChannel };
+export const isActivitiesInTextEnabled = function isActivitiesInTextEnabled(channel) {
+  let flag = false;
+  if (null != channel) {
+    flag = false;
+    if (undefined !== channel) {
+      flag = false;
+      if (isActivityInTextSupportedForChannel(channel)) {
+        flag = true;
+        if (null != channel.guild_id) {
+          flag = true;
+          if (!getUncachedChannelPermissions.can(Permissions.USE_EMBEDDED_ACTIVITIES, channel)) {
+            flag = false;
           }
         }
-        return true;
-      } else {
-        return false;
       }
     }
   }
-  return false;
-}
-function getIsAppLauncherEnabled(channel) {
+  return flag;
+};
+export const useIsActivitiesInTextEnabled = function useIsActivitiesInTextEnabled(id) {
+  const _require = id;
+  const items = [ensureGuildLoaded, getUncachedChannelPermissions];
+  return _require(589).useStateFromStores(items, () => {
+    const channel = outer1_2.getChannel(closure_0);
+    let flag = false;
+    if (null != channel) {
+      flag = false;
+      if (undefined !== channel) {
+        flag = false;
+        if (outer1_5(channel)) {
+          flag = true;
+          if (null != channel.guild_id) {
+            flag = true;
+            if (!outer1_3.can(outer1_4.USE_EMBEDDED_ACTIVITIES, channel)) {
+              flag = false;
+            }
+          }
+        }
+      }
+    }
+    return flag;
+  });
+};
+export const getIsAppLauncherEnabled = function getIsAppLauncherEnabled(channel) {
   let guild_id;
-  if (null != channel) {
+  if (channel != null) {
     guild_id = channel.guild_id;
   }
   let tmp2 = null != guild_id;
@@ -57,27 +86,23 @@ function getIsAppLauncherEnabled(channel) {
     tmp2 = isActivityInTextSupportedForChannel(channel);
   }
   return tmp2;
-}
-const result = require("sum").fileFinishedImporting("modules/activities/ActivitiesInTextUtils.tsx");
-
-export { isActivityInTextSupportedForChannel };
-export const isActivitiesInTextEnabled = function isActivitiesInTextEnabled(channel) {
-  return isActivitiesInTextEnabledForChannelWithPermissions(channel, closure_3);
 };
-export const useIsActivitiesInTextEnabled = function useIsActivitiesInTextEnabled(id) {
-  const _require = id;
-  const items = [_isNativeReflectConstruct, closure_3];
-  return _require(566).useStateFromStores(items, () => outer1_6(outer1_2.getChannel(closure_0), outer1_3));
-};
-export { getIsAppLauncherEnabled };
 export const useIsAppLauncherEnabled = function useIsAppLauncherEnabled(id) {
   const _require = id;
-  const items = [_isNativeReflectConstruct];
-  return _require(566).useStateFromStores(items, () => {
+  const items = [ensureGuildLoaded];
+  return _require(589).useStateFromStores(items, () => {
     const channel = outer1_2.getChannel(closure_0);
     let tmp2 = null != channel;
     if (tmp2) {
-      tmp2 = outer1_7(channel);
+      let guild_id;
+      if (channel != null) {
+        guild_id = channel.guild_id;
+      }
+      let tmp4 = null != guild_id;
+      if (!tmp4) {
+        tmp4 = outer1_5(channel);
+      }
+      tmp2 = tmp4;
     }
     return tmp2;
   });

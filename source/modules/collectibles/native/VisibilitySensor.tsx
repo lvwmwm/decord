@@ -1,42 +1,47 @@
-// Module ID: 11895
-// Function ID: 92017
+// Module ID: 11919
+// Function ID: 11920
 // Name: onChange
-// Dependencies: [31, 27, 33, 1450, 2]
+// Dependencies: [19, 17, 21, 1474, 2]
 // Exports: default
 
-// Module 11895 (onChange)
-import result from "result";
-import closure_4 from "result";
+// Module 11919 (onChange)
+import noop from "noop";
+import closure_4 from "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
 
-let closure_2;
-let closure_3;
+let c3;
 let closure_6;
-let closure_7;
-({ useEffect: closure_2, useRef: closure_3 } = result);
-({ jsx: closure_6, jsxs: closure_7 } = jsxProd);
-result = require("jsxProd").fileFinishedImporting("modules/collectibles/native/VisibilitySensor.tsx");
+let error;
+let obj1;
+({ useEffect: obj1, useRef: c3 } = noop);
+({ jsx: closure_6, jsxs: error } = jsxProd);
+const result = require("jsxProd").fileFinishedImporting("modules/collectibles/native/VisibilitySensor.tsx");
 
 export default function _default(onChange) {
   let children;
   let resetKey;
   onChange = onChange.onChange;
+  let dependencyMap;
+  let callback;
+  let width;
+  let height;
   let closure_5;
+  callback = undefined;
   function stopWatching(closure_5, arg1) {
     if (null !== ref.current) {
       const _clearInterval = clearInterval;
-      clearInterval(ref.current);
-      ref.current = null;
+      clearInterval(tmp.current);
+      tmp.current = null;
     }
   }
   ({ children, resetKey } = onChange);
   let tmp = width(null);
-  const dependencyMap = tmp;
-  let callback = width(false);
-  const size = onChange(1450)();
+  dependencyMap = tmp;
+  callback = width(false);
+  const size = onChange(1474)();
   width = size.width;
-  const height = size.height;
+  height = size.height;
   closure_5 = width(null);
   const items = [resetKey];
   callback(() => {
@@ -48,23 +53,23 @@ export default function _default(onChange) {
     let closure_1 = arg1;
     if (null === ref.current) {
       const _setInterval = setInterval;
-      ref.current = setInterval(() => {
+      tmp.current = setInterval(() => {
         if (null !== ref.current) {
           const current = ref.current;
           current.measure((arg0, arg1, arg2, arg3, arg4, arg5) => {
             let tmp = arg5 + arg3 > 0;
             if (tmp) {
-              tmp = arg5 < outer1_1;
+              tmp = arg5 < closure_1;
             }
             if (tmp) {
-              tmp = arg4 < outer1_0;
+              tmp = arg4 < closure_0;
             }
             if (tmp) {
               tmp = arg4 + arg2 > 0;
             }
-            if (tmp !== outer2_2.current) {
-              outer2_2.current = tmp;
-              callback(tmp);
+            if (tmp !== outer1_2.current) {
+              outer1_2.current = tmp;
+              outer1_0(tmp);
             }
           });
         }
@@ -76,8 +81,8 @@ export default function _default(onChange) {
     callback(width, height);
     return stopWatching;
   }, items2);
-  const obj = { collapsable: false, ref: tmp };
+  const obj = { collapsable: false, ref: tmp, children: null };
   const items3 = [children, callback(closure_5, {})];
-  obj.children = items3;
+  obj[2] = items3;
   return stopWatching(closure_5, obj);
 };

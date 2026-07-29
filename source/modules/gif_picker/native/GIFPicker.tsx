@@ -1,30 +1,35 @@
-// Module ID: 9571
-// Function ID: 74494
-// Dependencies: [57, 31, 27, 9572, 653, 33, 4165, 9573, 675, 6540, 1450, 9579, 22, 566, 9582, 9583, 9584, 9588, 9592, 2]
+// Module ID: 9595
+// Function ID: 9596
+// Dependencies: [32, 19, 17, 9596, 676, 21, 4189, 9597, 698, 6561, 9600, 12, 9603, 589, 9604, 9605, 9606, 9609, 9610, 9614, 2]
 
-// Module 9571
+// Module 9595
 import _slicedToArray from "_slicedToArray";
-import importAllResult from "result";
-import { View } from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import importAllResult from "module_9614";
+import { View } from "module_9609";
+import getFormatFromUrl from "getFormatFromUrl";
 import ME from "ME";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_10;
-let closure_11;
+let c10;
+let c9;
 let closure_12;
-let closure_13;
 let closure_14;
-let closure_8;
-let closure_9;
+let map1;
+let metroImportAll;
+let unpackModuleId;
 const require = arg1;
-({ AnalyticEvents: closure_8, ChatInputComponentViewedTypes: closure_9, GIF_FETCH_LIMIT_IOS: closure_10, GIFPickerResultTypes: closure_11, TooltipNames: closure_12 } = ME);
-({ jsx: closure_13, jsxs: closure_14 } = jsxProd);
-let closure_15 = _createForOfIteratorHelperLoose.createStyles({ container: { flex: 1 } });
+let c5 = importAllResult;
+({ AnalyticEvents: metroImportAll, ChatInputComponentViewedTypes: c9, GIF_FETCH_LIMIT_IOS: c10, GIFPickerResultTypes: unpackModuleId, TooltipNames: closure_12 } = ME);
+({ jsx: map1, jsxs: closure_14 } = jsxProd);
+let closure_15 = createCacheKey.createStyles({ container: { flex: 1 } });
 const memoResult = importAllResult.memo(function GIFPicker(bottomSheetRef) {
+  let c13;
+  let columnWidth;
+  let columns;
   let keyboardDismissMode;
   let selectedGifSrc;
+  let tmp12;
   bottomSheetRef = bottomSheetRef.bottomSheetRef;
   const channelId = bottomSheetRef.channelId;
   const guildId = bottomSheetRef.guildId;
@@ -36,19 +41,23 @@ const memoResult = importAllResult.memo(function GIFPicker(bottomSheetRef) {
   const contentHorizontalPadding = bottomSheetRef.contentHorizontalPadding;
   const onPressGIF = bottomSheetRef.onPressGIF;
   let c6;
-  let c7;
+  let first;
+  let closure_8;
   let ref;
-  let closure_9;
   let closure_10;
   let constants;
   let closure_12;
-  let first;
-  let closure_14;
+  let callback;
+  let first1;
+  let callback2;
+  let first2;
+  let c17;
   let memo1;
   let favorites;
+  let closure_20;
   let resultItems;
   let resultQuery;
-  let callback1;
+  callback2 = undefined;
   ({ selectedGifSrc, keyboardDismissMode } = bottomSheetRef);
   const items = [channelId, guildId];
   const effect = onPressGIF.useEffect(() => {
@@ -56,196 +65,221 @@ const memoResult = importAllResult.memo(function GIFPicker(bottomSheetRef) {
     obj.initializeSearch();
     guildId(initialQuery[7]).resetSearch();
     if (null != channelId) {
-      obj = { type: lib.GIF, channel_id: channelId, guild_id: guildId };
-      channelId(initialQuery[8]).track(ref.CHAT_INPUT_COMPONENT_VIEWED, obj);
+      obj = { type: null, channel_id: null, guild_id: null };
+      obj[0] = ref.GIF;
+      obj[1] = tmp4;
+      obj[2] = guildId;
+      channelId(initialQuery[8]).track(lib.CHAT_INPUT_COMPONENT_VIEWED, obj);
       const obj3 = channelId(initialQuery[8]);
     }
   }, items);
-  let tmp3 = channelId(initialQuery[9])();
-  c6 = tmp3;
-  const tmp4 = channelId(initialQuery[10])();
-  c7 = tmp4;
-  const items1 = [tmp3, tmp4, contentHorizontalPadding];
+  let tmp3 = channelId;
+  let obj = initialQuery;
+  const tmp4 = channelId(initialQuery[9])();
+  c6 = tmp4;
+  const tmp5 = contentHorizontalPadding(onPressGIF.useState(0), 2);
+  first = tmp5[0];
+  closure_8 = tmp5[1];
+  const items1 = [tmp4, first, contentHorizontalPadding];
+  callback = onPressGIF.useCallback((nativeEvent) => {
+    lib(nativeEvent.nativeEvent.layout.width);
+  }, []);
   const memo = onPressGIF.useMemo(() => {
     let num = 2;
     if (c6) {
       num = 3;
     }
-    const obj = { columns: num };
-    let num2 = 0;
-    if (null != contentHorizontalPadding) {
-      num2 = contentHorizontalPadding;
+    const obj = { columns: num, columnWidth: null };
+    let num2 = contentHorizontalPadding;
+    if (contentHorizontalPadding == null) {
+      num2 = 0;
     }
-    const diff = _undefined.width - 2 * num2;
-    obj.columnWidth = diff / num - bottomSheetRef(initialQuery[11]).GIF_PICKER_GUTTER_SPACING;
+    const diff = first - 2 * num2;
+    const sum = diff + bottomSheetRef(initialQuery[10]).GIF_PICKER_GUTTER_SPACING;
+    obj[1] = Math.max(0, sum / num - bottomSheetRef(initialQuery[10]).GIF_PICKER_GUTTER_SPACING);
     return obj;
   }, items1);
-  const columns = memo.columns;
-  let tmp6 = null;
+  ({ columns, columnWidth } = memo);
   ref = onPressGIF.useRef(null);
-  const tmp8 = contentHorizontalPadding(onPressGIF.useState(false), 2);
-  closure_9 = tmp8[1];
-  closure_10 = onPressGIF.useRef("");
-  constants = onPressGIF.useRef(false);
-  const tmp9 = contentHorizontalPadding(onPressGIF.useState(false), 2);
-  closure_12 = tmp9[1];
-  const tmp10 = contentHorizontalPadding(onPressGIF.useState(constants.SEARCH), 2);
-  first = tmp10[0];
-  closure_14 = tmp10[1];
+  const tmp10 = contentHorizontalPadding(onPressGIF.useState(false), 2);
+  closure_10 = tmp10[1];
+  constants = onPressGIF.useRef("");
+  closure_12 = onPressGIF.useRef(false);
+  const tmp = callback2();
+  [tmp12, c13] = contentHorizontalPadding(onPressGIF.useState(false), 2);
+  const tmp14 = contentHorizontalPadding(onPressGIF.useState(constants.SEARCH), 2);
+  first1 = tmp14[0];
+  callback2 = tmp14[1];
+  const tmp16 = contentHorizontalPadding(onPressGIF.useState(""), 2);
+  first2 = tmp16[0];
+  c17 = tmp17;
   const items2 = [ref];
-  const callback = onPressGIF.useCallback(() => {
-    lib(false);
-    callback(closure_11.SEARCH);
+  const callback1 = onPressGIF.useCallback(() => {
+    callback(false);
+    callback2(closure_11.SEARCH);
+    _undefined2("");
     guildId(initialQuery[7]).resetSearch();
     const current = ref.current;
-    if (null != current) {
+    if (current != null) {
       current.blur();
     }
   }, items2);
-  memo1 = onPressGIF.useMemo(() => bottomSheetRef(initialQuery[12]).debounce(guildId(initialQuery[7]).search, 200), []);
-  let obj = bottomSheetRef(initialQuery[11]);
-  const favoriteGIFsMobile = obj.useFavoriteGIFsMobile();
+  memo1 = onPressGIF.useMemo(() => bottomSheetRef(initialQuery[11]).debounce(guildId(initialQuery[7]).search, 200), []);
+  let obj1 = bottomSheetRef(initialQuery[10]);
+  const favoriteGIFsMobile = obj1.useFavoriteGIFsMobile();
   favorites = favoriteGIFsMobile.favorites;
-  let obj1 = bottomSheetRef(initialQuery[13]);
-  const items3 = [c7];
-  const stateFromStoresObject = obj1.useStateFromStoresObject(items3, () => {
-    const obj = {};
-    if (first !== closure_11.FAVORITES) {
-      let resultItems = _undefined.getResultItems();
+  const items3 = [favorites, first2];
+  closure_20 = onPressGIF.useMemo(() => bottomSheetRef(initialQuery[12]).filterFavoriteGIFsByQuery(favorites, first2), items3);
+  let obj2 = bottomSheetRef(initialQuery[13]);
+  const items4 = [first];
+  const stateFromStoresObject = obj2.useStateFromStoresObject(items4, () => {
+    if (first1 !== closure_11.FAVORITES) {
+      let resultItems = first.getResultItems();
     } else {
-      resultItems = favorites;
+      resultItems = closure_20;
     }
-    obj.resultItems = resultItems;
-    obj.resultQuery = _undefined.getResultQuery();
-    return obj;
+    return { resultItems, resultQuery: first.getResultQuery() };
   });
   resultItems = stateFromStoresObject.resultItems;
   resultQuery = stateFromStoresObject.resultQuery;
-  const items4 = [memo1, ref, resultQuery];
-  callback1 = onPressGIF.useCallback((current) => {
+  const items5 = [memo1, ref, resultQuery];
+  callback2 = onPressGIF.useCallback((current) => {
     let flag = arg1;
     if (arg1 === undefined) {
       flag = true;
     }
-    if (ref.current !== current) {
-      ref.current = current;
-      callback(closure_11.SEARCH);
-      const tmp23 = current.trim().length > 0;
-      let tmp2 = tmp23;
-      if (tmp23) {
+    if (closure_11.current !== current) {
+      closure_11.current = current;
+      callback2(closure_11.SEARCH);
+      const tmp21 = current.trim().length > 0;
+      let tmp2 = tmp21;
+      if (tmp2) {
         tmp2 = resultQuery !== current;
       }
-      closure_12(tmp2);
-      lib(tmp23);
-      if (!flag) {
-        let search = guildId(initialQuery[7]).search;
+      c13(tmp2);
+      callback(tmp21);
+      if (flag) {
+        let search = memo1;
       } else {
-        search = memo1;
+        search = guildId(initialQuery[7]).search;
       }
       let SEARCH = null;
       if ("" !== current) {
-        SEARCH = closure_11.SEARCH;
+        SEARCH = tmp19.SEARCH;
       }
-      search(current, SEARCH, !flag, ref);
+      search(current, SEARCH, !flag, callback);
       if (!flag) {
         current = ref.current;
-        if (null != current) {
+        if (current != null) {
           current.setText(current);
         }
       }
-      const tmp24 = closure_12;
-    }
-  }, items4);
-  const items5 = [callback1, initialQuery];
-  const effect1 = onPressGIF.useEffect(() => {
-    if (!closure_11.current) {
-      let tmp3 = null != initialQuery;
-      if (tmp3) {
-        tmp3 = initialQuery.trim().length > 0;
-      }
-      if (tmp3) {
-        closure_11.current = true;
-        callback1(initialQuery, false);
-      }
+      tmp19 = closure_11;
+      const tmp22 = c13;
     }
   }, items5);
+  const items6 = [callback2, initialQuery];
+  const effect1 = onPressGIF.useEffect(() => {
+    if (!ref.current) {
+      let tmp3 = null != initialQuery;
+      if (tmp3) {
+        tmp3 = str.trim().length > 0;
+      }
+      if (tmp3) {
+        tmp.current = true;
+        callback2(str, false);
+      }
+    }
+  }, items6);
   const effect2 = onPressGIF.useEffect(() => {
-    channelId(initialQuery[14]).acknowledgeTooltip(constants.GIF_PICKER_TOOLTIP);
+    channelId(initialQuery[14]).acknowledgeTooltip(ref.GIF_PICKER_TOOLTIP);
     const obj = channelId(initialQuery[14]);
     const trendingSearchTerms = guildId(initialQuery[7]).fetchTrendingSearchTerms();
   }, []);
-  const items6 = [resultQuery, ref];
+  const items7 = [resultQuery, ref];
   const effect3 = onPressGIF.useEffect(() => {
     if ("" !== resultQuery) {
-      const suggestions = guildId(initialQuery[7]).fetchSuggestions(resultQuery);
+      const suggestions = guildId(initialQuery[7]).fetchSuggestions(tmp);
       const obj = guildId(initialQuery[7]);
     }
     const current = ref.current;
     let text;
-    if (null != current) {
+    if (current != null) {
       text = current.getText();
     }
-    closure_12(resultQuery !== text);
-  }, items6);
-  const items7 = [callback1];
-  const items8 = [onPressGIF, resultItems.length, resultQuery];
-  const memo2 = onPressGIF.useMemo(() => first(channelId(initialQuery[15]), {
+    c13(resultQuery !== text);
+  }, items7);
+  const items8 = [callback2];
+  const items9 = [onPressGIF, resultItems.length, resultQuery];
+  const memo2 = onPressGIF.useMemo(() => _undefined(channelId(initialQuery[15]), {
     onClickSuggestion(arg0) {
-      return outer1_19(arg0, false);
+      return callback(arg0, false);
     }
-  }), items7);
-  const items9 = [bottomSheetRef, callback1];
-  const callback2 = onPressGIF.useCallback((gifId, index) => {
+  }), items8);
+  const items10 = [bottomSheetRef, callback2];
+  const callback3 = onPressGIF.useCallback((gifId, index) => {
     let obj = guildId(initialQuery[7]);
     obj = { type: closure_11.SEARCH, index, offset: 0, limit: closure_10, results: resultItems.length, totalResults: resultItems.length, query: resultQuery, gifId: gifId.id };
     obj.trackSelectGIF(obj);
     onPressGIF(gifId);
-  }, items8);
-  obj = {};
-  const items10 = [memo1().container, ];
-  const callback3 = onPressGIF.useCallback((arg0, arg1) => {
+  }, items9);
+  const callback4 = onPressGIF.useCallback((arg0, arg1) => {
     if (arg0 === closure_11.TRENDING_GIFS) {
-      lib(false);
-      callback(arg0);
-      const trendingGIFs = guildId(initialQuery[7]).fetchTrendingGIFs(closure_10);
+      callback(false);
+      callback2(arg0);
+      const trendingGIFs = guildId(initialQuery[7]).fetchTrendingGIFs(callback);
       const obj = guildId(initialQuery[7]);
-    } else if (arg0 === closure_11.FAVORITES) {
-      lib(false);
-      callback(arg0);
+    } else if (arg0 === tmp.FAVORITES) {
+      callback(false);
+      callback2(arg0);
     } else {
-      callback1(arg1, false);
+      callback2(arg1, false);
     }
     const current = bottomSheetRef.current;
-    if (null != current) {
+    if (current != null) {
       current.expandActionSheet();
     }
-  }, items9);
+  }, items10);
+  obj = { onLayout: callback, style: null, children: null };
+  const items11 = [tmp.container, ];
+  let tmp31 = null;
   if (null != contentHorizontalPadding) {
-    obj = { paddingHorizontal: contentHorizontalPadding };
-    tmp6 = obj;
+    obj = { paddingHorizontal: null };
+    obj[0] = contentHorizontalPadding;
+    tmp31 = obj;
   }
-  items10[1] = tmp6;
-  obj.style = items10;
-  const items11 = [first(channelId(initialQuery[16]), { categoryType: first, onQueryClear: callback, onQueryChange: callback1, searchInputRef: ref }), ];
+  items11[1] = tmp31;
+  obj[1] = items11;
+  const items12 = [callback(tmp3(obj[16]), { categoryType: first1, columnWidth, onQueryClear: callback1, onQueryChange: callback2, onFavoritesQueryChange: tmp16[1], searchInputRef: ref }), ];
   if (resultItems.length <= 0) {
-    if (!tmp8[0]) {
-      obj1 = { columns, onSelectCategory: callback3 };
-      let favoritesCategory;
-      if (true !== bottomSheetRef.hideFavorites) {
-        favoritesCategory = favoriteGIFsMobile.favoritesCategory;
+    if (!tmp10[0]) {
+      if (first2.length <= 0) {
+        obj1 = { columns: null, onSelectCategory: null, favoritesCategory: null, inActionSheet: null };
+        obj1[0] = columns;
+        obj1[1] = callback4;
+        let favoritesCategory;
+        if (true !== bottomSheetRef.hideFavorites) {
+          favoritesCategory = favoriteGIFsMobile.favoritesCategory;
+        }
+        obj1[2] = favoritesCategory;
+        obj1[3] = flag;
+        items12[1] = tmp32(tmp3(obj[19]), obj1);
+        obj[2] = items12;
+        return first1(c6, obj);
       }
-      obj1.favoritesCategory = favoritesCategory;
-      obj1.inActionSheet = flag;
-      let tmp25Result = first(channelId(initialQuery[18]), obj1);
-      const tmp25 = first;
-      const tmp28 = channelId(initialQuery[18]);
     }
-    items11[1] = tmp25Result;
-    obj.children = items11;
-    return closure_14(c6, obj);
   }
-  const obj2 = { columns, columnWidth: memo.columnWidth, loading: tmp9[0], inActionSheet: flag, resultItems, onPressGIF: callback2, selectedGifSrc, keyboardDismissMode, ListFooterComponent: memo2 };
-  tmp25Result = first(channelId(initialQuery[17]), obj2);
+  if (0 === resultItems.length) {
+    if (!tmp12) {
+      obj2 = { categoryType: null, inActionSheet: null };
+      obj2[0] = first1;
+      obj2[1] = flag;
+      let tmp32Result = tmp32(tmp3(obj[17]), obj2);
+    }
+  }
+  tmp3 = tmp3(obj[18]);
+  obj = { columns, columnWidth, loading: tmp12, inActionSheet: flag, resultItems, onPressGIF: callback3, selectedGifSrc, keyboardDismissMode, ListFooterComponent: memo2 };
+  tmp32Result = tmp32(tmp3, obj);
 });
 const result = require("get ActivityIndicator").fileFinishedImporting("modules/gif_picker/native/GIFPicker.tsx");
 

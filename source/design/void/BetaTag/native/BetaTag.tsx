@@ -1,22 +1,22 @@
-// Module ID: 12585
-// Function ID: 97230
+// Module ID: 12607
+// Function ID: 12608
 // Name: BetaTag
-// Dependencies: [31, 27, 6207, 33, 4165, 689, 4589, 668, 4161, 1212, 2]
+// Dependencies: [19, 17, 6227, 21, 4189, 712, 4611, 691, 4185, 1236, 2]
 // Exports: default
 
-// Module 12585 (BetaTag)
-import "result";
+// Module 12607 (BetaTag)
+import "noop";
 import { View } from "get ActivityIndicator";
 import { Gradients } from "items";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
 const require = arg1;
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BRAND, borderRadius: require("_createForOfIteratorHelperLoose").radii.lg, marginLeft: 8, paddingHorizontal: 8, justifyContent: "center" };
-_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.text = { textTransform: "uppercase" };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+createCacheKey = { container: null, text: null };
+createCacheKey = { backgroundColor: require("Themes").colors.BACKGROUND_BRAND, borderRadius: require("Themes").radii.lg, marginLeft: 8, paddingHorizontal: 8, justifyContent: "center" };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { textTransform: "uppercase" };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
 let obj1 = { SMALL: "small", MEDIUM: "medium" };
 const result = require("items").fileFinishedImporting("design/void/BetaTag/native/BetaTag.tsx");
 
@@ -32,7 +32,7 @@ export default function BetaTag(gradient) {
   if (flag === undefined) {
     flag = false;
   }
-  const tmp2 = _createForOfIteratorHelperLoose();
+  const tmp2 = createCacheKey();
   let str = "text-xs/bold";
   if (obj1.SMALL !== size) {
     if (obj1.MEDIUM === size) {
@@ -40,32 +40,34 @@ export default function BetaTag(gradient) {
     }
   }
   if (flag) {
-    let obj = {};
+    let obj = { style: null, start: null, end: null, colors: null, children: null };
     const items = [tmp2.container, style];
-    obj.style = items;
-    obj.start = require(668) /* keys */.HorizontalGradient.START;
-    obj.end = require(668) /* keys */.HorizontalGradient.END;
-    obj.colors = Gradients.PREMIUM_TIER_2_TRI_COLOR;
-    obj = { variant: str, color: "text-overlay-light" };
+    obj[0] = items;
+    obj[1] = require(691) /* keys */.HorizontalGradient.START;
+    obj[2] = require(691) /* keys */.HorizontalGradient.END;
+    obj[3] = Gradients.PREMIUM_TIER_2_TRI_COLOR;
+    obj = { variant: null, color: "text-overlay-light", style: null, children: null };
+    obj[0] = str;
     const items1 = [tmp2.text, textStyle];
-    obj.style = items1;
-    const intl2 = require(1212) /* getSystemLocale */.intl;
-    obj.children = intl2.string(require(1212) /* getSystemLocale */.t.oW0eUd);
-    obj.children = tmp4(require(4161) /* Text */.Text, obj);
-    let tmp4Result = tmp4(importDefault(4589), obj);
-    const tmp11 = importDefault(4589);
+    obj[2] = items1;
+    const intl2 = require(1236) /* getSystemLocale */.intl;
+    obj[3] = intl2.string(require(1236) /* getSystemLocale */.t.oW0eUd);
+    obj[4] = tmp3(require(4185) /* Text */.Text, obj);
+    let tmp3Result = tmp3(importDefault(4611), obj);
+    const tmp10 = importDefault(4611);
   } else {
-    obj = {};
+    obj = { style: null, children: null };
     const items2 = [tmp2.container, style];
-    obj.style = items2;
-    obj1 = { variant: str, color: "text-overlay-light" };
+    obj[0] = items2;
+    obj1 = { variant: null, color: "text-overlay-light", style: null, children: null };
+    obj1[0] = str;
     const items3 = [tmp2.text, textStyle];
-    obj1.style = items3;
-    const intl = require(1212) /* getSystemLocale */.intl;
-    obj1.children = intl.string(require(1212) /* getSystemLocale */.t.oW0eUd);
-    obj.children = tmp4(require(4161) /* Text */.Text, obj1);
-    tmp4Result = tmp4(View, obj);
+    obj1[2] = items3;
+    const intl = require(1236) /* getSystemLocale */.intl;
+    obj1[3] = intl.string(require(1236) /* getSystemLocale */.t.oW0eUd);
+    obj[1] = tmp3(require(4185) /* Text */.Text, obj1);
+    tmp3Result = tmp3(View, obj);
   }
-  return tmp4Result;
+  return tmp3Result;
 };
 export const BetaSizes = obj1;

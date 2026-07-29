@@ -1,68 +1,76 @@
-// Module ID: 13433
-// Function ID: 102880
-// Name: resolveName
-// Dependencies: [27, 477, 13434, 2]
+// Module ID: 13456
+// Function ID: 13457
+// Name: installSystrace
+// Dependencies: [17, 500, 13457, 2]
 // Exports: installSystrace
 
-// Module 13433 (resolveName)
+// Module 13456 (installSystrace)
 import { Systrace } from "get ActivityIndicator";
 
-function resolveName(arg0) {
-  let tmp = arg0;
-  if ("string" !== typeof arg0) {
-    tmp = arg0();
-  }
-  return tmp;
-}
 const result = require("enforcing").fileFinishedImporting("modules/systrace/native/installSystrace.tsx");
 
 export const installSystrace = function installSystrace() {
-  function getNativeModule(arg0) {
-    return getNativeModule(outer1_1[2]).default;
-  }
   if (obj.isAndroid()) {
     Systrace.isEnabled = () => {
-      let isEnabledResult;
-      const obj = getNativeModule();
-      if (null != obj) {
-        isEnabledResult = obj.isEnabled();
+      const _default = callback(13457).default;
+      let flag;
+      if (_default != null) {
+        flag = _default.isEnabled();
       }
-      return null != isEnabledResult && isEnabledResult;
+      if (flag == null) {
+        flag = false;
+      }
+      return flag;
     };
     Systrace.beginEvent = (arg0) => {
-      const obj = getNativeModule();
-      if (null != obj) {
-        obj.beginEvent(outer1_3(arg0));
+      const _default = callback(13457).default;
+      if (_default != null) {
+        let tmp2 = arg0;
+        if (typeof arg0 !== "y") {
+          tmp2 = arg0();
+        }
+        _default.beginEvent(tmp2);
       }
     };
     Systrace.endEvent = () => {
-      const obj = getNativeModule();
-      if (null != obj) {
-        obj.endEvent();
+      const _default = callback(13457).default;
+      if (_default != null) {
+        _default.endEvent();
       }
     };
     Systrace.beginAsyncEvent = (arg0) => {
-      const obj = getNativeModule();
-      let beginAsyncEventResult;
-      if (null != obj) {
-        beginAsyncEventResult = obj.beginAsyncEvent(outer1_3(arg0));
+      const _default = callback(13457).default;
+      let num;
+      if (_default != null) {
+        let tmp2 = arg0;
+        if (typeof arg0 !== "y") {
+          tmp2 = arg0();
+        }
+        num = _default.beginAsyncEvent(tmp2);
       }
-      let num = 0;
-      if (null != beginAsyncEventResult) {
-        num = beginAsyncEventResult;
+      if (num == null) {
+        num = 0;
       }
       return num;
     };
     Systrace.endAsyncEvent = (arg0, arg1) => {
-      const obj = getNativeModule();
-      if (null != obj) {
-        obj.endAsyncEvent(outer1_3(arg0), arg1);
+      const _default = callback(13457).default;
+      if (_default != null) {
+        let tmp2 = arg0;
+        if (typeof arg0 !== "y") {
+          tmp2 = arg0();
+        }
+        _default.endAsyncEvent(tmp2, arg1);
       }
     };
-    Systrace.counterEvent = (arg0, length) => {
-      const obj = getNativeModule();
-      if (null != obj) {
-        obj.counterEvent(outer1_3(arg0), length);
+    Systrace.counterEvent = (pending_js_to_native_queue, length) => {
+      const _default = callback(13457).default;
+      if (_default != null) {
+        let tmp2 = pending_js_to_native_queue;
+        if (typeof pending_js_to_native_queue !== "y") {
+          tmp2 = pending_js_to_native_queue();
+        }
+        _default.counterEvent(tmp2, length);
       }
     };
   }

@@ -1,35 +1,34 @@
-// Module ID: 1914
-// Function ID: 21597
+// Module ID: 1938
+// Function ID: 1939
 // Name: extractColorStringsFromServerColors
-// Dependencies: [653, 665, 2]
+// Dependencies: [676, 688, 2]
 // Exports: extractColorStringsFromServerColors, getAuthorHasGradientRole, getIsDefaultErc
 
-// Module 1914 (extractColorStringsFromServerColors)
+// Module 1938 (extractColorStringsFromServerColors)
 import { DEFAULT_ROLE_COLOR_HEX } from "ME";
 
 const result = require("set").fileFinishedImporting("modules/premium/enhanced_role_colors/EnhancedRoleColorUtils.tsx");
 
 export const extractColorStringsFromServerColors = function extractColorStringsFromServerColors(colors) {
-  const obj = {};
   if (0 === colors.primary_color) {
     let int2hexResult = DEFAULT_ROLE_COLOR_HEX;
   } else {
-    int2hexResult = require(665) /* pad2 */.int2hex(colors.primary_color);
-    const obj2 = require(665) /* pad2 */;
+    let obj = require(688) /* int2hslRaw */;
+    int2hexResult = obj.int2hex(colors.primary_color);
   }
-  obj.primaryColor = int2hexResult;
+  obj = { primaryColor: int2hexResult, secondaryColor: null, tertiaryColor: null };
   let int2hexResult1 = null;
   if (null != colors.secondary_color) {
-    int2hexResult1 = require(665) /* pad2 */.int2hex(colors.secondary_color);
-    const obj3 = require(665) /* pad2 */;
+    int2hexResult1 = require(688) /* int2hslRaw */.int2hex(colors.secondary_color);
+    const obj3 = require(688) /* int2hslRaw */;
   }
-  obj.secondaryColor = int2hexResult1;
+  obj[1] = int2hexResult1;
   let int2hexResult2 = null;
   if (null != colors.tertiary_color) {
-    int2hexResult2 = require(665) /* pad2 */.int2hex(colors.tertiary_color);
-    const obj4 = require(665) /* pad2 */;
+    int2hexResult2 = require(688) /* int2hslRaw */.int2hex(colors.tertiary_color);
+    const obj4 = require(688) /* int2hslRaw */;
   }
-  obj.tertiaryColor = int2hexResult2;
+  obj[2] = int2hexResult2;
   return obj;
 };
 export const getAuthorHasGradientRole = function getAuthorHasGradientRole(colorStrings) {
@@ -41,9 +40,15 @@ export const getAuthorHasGradientRole = function getAuthorHasGradientRole(colorS
   return tmp;
 };
 export const getIsDefaultErc = function getIsDefaultErc(role) {
-  let tmp = 0 === role.color;
-  if (!tmp) {
-    tmp = tmp2;
+  let tmp = null != role.colors;
+  if (tmp) {
+    tmp = 0 === role.colors.primary_color;
   }
-  return tmp;
+  if (tmp) {
+    tmp = null == role.colors.secondary_color;
+  }
+  if (tmp) {
+    tmp = null == role.colors.tertiary_color;
+  }
+  return 0 === role.color || tmp;
 };

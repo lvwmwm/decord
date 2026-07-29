@@ -1,10 +1,10 @@
-// Module ID: 1844
-// Function ID: 20255
+// Module ID: 1868
+// Function ID: 1869
 // Name: fluxApi
-// Dependencies: [1845, 2]
+// Dependencies: [1869, 2]
 // Exports: hasFluxApi
 
-// Module 1844 (fluxApi)
+// Module 1868 (fluxApi)
 import isBlockedDomain from "isBlockedDomain";
 
 isBlockedDomain = isBlockedDomain.getFluxApi();

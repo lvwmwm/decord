@@ -1,32 +1,33 @@
-// Module ID: 7772
-// Function ID: 61766
+// Module ID: 7795
+// Function ID: 7796
 // Name: createAutoModerationActionSystemMessage
-// Dependencies: [27, 1348, 1918, 3793, 3802, 1850, 653, 22, 4011, 689, 7694, 5746, 4395, 1212, 7749, 3747, 7773, 7774, 1392, 7777, 6711, 1395, 7778, 5521, 7723, 4355, 3782, 3835, 7779, 7780, 2]
+// Dependencies: [17, 1372, 1942, 3817, 3826, 1874, 676, 12, 4035, 712, 7717, 5764, 4418, 1236, 7772, 3771, 7796, 7797, 1416, 7800, 6732, 1419, 7801, 5539, 7746, 4380, 3806, 3859, 7802, 7803, 2]
 // Exports: createAutoModerationActionSystemMessage
 
-// Module 7772 (createAutoModerationActionSystemMessage)
-import get_ActivityIndicator from "resetCache";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_6 from "_isNativeReflectConstruct";
-import closure_7 from "_isNativeReflectConstruct";
-import closure_8 from "_isNativeReflectConstruct";
-import closure_9 from "_isNativeReflectConstruct";
+// Module 7795 (createAutoModerationActionSystemMessage)
+import get_ActivityIndicator from "DATE_CONFIG";
+import ensureGuildLoaded from "ensureGuildLoaded";
+import trackCommunicationDisabled from "trackCommunicationDisabled";
+import getUncachedChannelPermissions from "getUncachedChannelPermissions";
+import upsertRelationship from "upsertRelationship";
+import mergeGuildAvatar from "mergeGuildAvatar";
 import { Permissions } from "ME";
-import apply from "registerAsset";
+import apply from "useNullableMessageAuthor";
 
-let closure_3;
-let closure_4;
-({ processColor: closure_3, Image: closure_4 } = get_ActivityIndicator);
+let c3;
+let c4;
+({ processColor: c3, Image: c4 } = get_ActivityIndicator);
 let closure_11 = apply.memoize((arg0) => {
-  let obj = require(4011) /* AccessibilityAnnouncer */;
-  const unsafe_rawColors = importDefault(689).unsafe_rawColors;
-  obj = {};
+  let obj = require(4035) /* AccessibilityAnnouncer */;
+  const unsafe_rawColors = importDefault(712).unsafe_rawColors;
+  obj = { defaultUsernameColor: null };
   const isThemeDarkResult = obj.isThemeDark(arg0);
-  const tmp2 = obj.isThemeDark(arg0) ? unsafe_rawColors.WHITE : unsafe_rawColors.PRIMARY_630;
-  obj.defaultUsernameColor = require(7694) /* processColorOrThrow */.processColorOrThrow(tmp2);
+  const tmp = require;
+  const tmp4 = obj.isThemeDark(arg0) ? unsafe_rawColors.WHITE : unsafe_rawColors.PRIMARY_630;
+  obj[0] = tmp(7717).processColorOrThrow(tmp4);
   return obj;
 });
-let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/messages/native/renderer/system_messages/AutoModerationActionSystemMessage.tsx");
+let result = require("trackCommunicationDisabled").fileFinishedImporting("modules/messages/native/renderer/system_messages/AutoModerationActionSystemMessage.tsx");
 
 export const createAutoModerationActionSystemMessage = function createAutoModerationActionSystemMessage(message) {
   let colorString;
@@ -43,230 +44,213 @@ export const createAutoModerationActionSystemMessage = function createAutoModera
   let ruleName;
   let theme;
   ({ message, theme, roleStyle } = message);
-  let defaultUsernameColor = callback2(theme).defaultUsernameColor;
-  let obj = require(5746) /* getEmbedFieldFromMessage */;
+  const defaultUsernameColor = callback2(theme).defaultUsernameColor;
+  const tmp = require;
+  let obj = require(5764) /* getDecisionOutcomeFromMessage */;
   if (obj.isAutomodMessageRecord(message)) {
-    let obj1 = require(5746) /* getEmbedFieldFromMessage */;
-    const result = obj1.extractAutomodMessageFields(message);
-    ({ keyword, embedChannel, flaggedMessageId, embedChannelId, quarantineType } = result);
-    ({ ruleName, content, interactionUserId } = result);
+    let tmpResult = tmp(5764);
+    const result = tmpResult.extractAutomodMessageFields(message);
+    ({ keyword, embedChannel, flaggedMessageId, quarantineType } = result);
+    ({ ruleName, content, embedChannelId, interactionUserId } = result);
     channel = channel.getChannel(message.getChannelId());
     let guildId;
-    if (null != channel) {
+    if (channel != null) {
       guildId = channel.getGuildId();
     }
-    let obj3 = require(4395) /* useNullableMessageAuthor */;
-    const messageAuthor = obj3.getMessageAuthor(message);
+    tmpResult = tmp(4418);
+    const messageAuthor = tmpResult.getMessageAuthor(message);
     ({ guildMemberAvatar, colorString, iconRoleId } = messageAuthor);
     const author = message.author;
-    let obj4 = require(5746) /* getEmbedFieldFromMessage */;
-    let str = obj4.getActionHeaderTextMobile(message, author, interactionUserId);
-    const intl = require(1212) /* getSystemLocale */.intl;
-    const stringResult = intl.string(require(1212) /* getSystemLocale */.t["94JbM3"]);
-    let obj5 = require(5746) /* getEmbedFieldFromMessage */;
-    const result1 = obj5.isAutomodNotification(message);
-    let tmp16 = stringResult;
-    let tmp17 = null;
+    const canResult = getUncachedChannelPermissions.can(Permissions.VIEW_CHANNEL, embedChannel);
+    let str = tmp(5764).getActionHeaderTextMobile(message, author, interactionUserId);
+    const intl = tmp(1236).intl;
+    const stringResult = intl.string(tmp(1236).t["94JbM3"]);
+    const tmpResult1 = tmp(5764);
+    const result1 = tmp(5764).isAutomodNotification(message);
+    let tmp14 = null;
+    let tmp15 = stringResult;
     if (result1) {
-      let obj6 = require(5746) /* getEmbedFieldFromMessage */;
-      let resolvedReason = obj6.extractAutomodNotificationFields(message);
+      let resolvedReason = tmp(5764).extractAutomodNotificationFields(message);
       const notificationType = resolvedReason.notificationType;
-      if (require(5746) /* getEmbedFieldFromMessage */.IS_BACKWARDS_COMPAT_RAID_TYPE !== notificationType) {
-        let id = require;
-        id = dependencyMap;
-        if (require(7749) /* AutomodNotificationEmbedTypeKeys */.AutomodNotificationEmbedTypeKeys.RAID !== notificationType) {
-          id = require;
-          id = dependencyMap;
-          if (require(7749) /* AutomodNotificationEmbedTypeKeys */.AutomodNotificationEmbedTypeKeys.MENTION_RAID === notificationType) {
-            obj = {};
+      if (tmp(5764).IS_BACKWARDS_COMPAT_RAID_TYPE !== notificationType) {
+        if (tmp(7772).AutomodNotificationEmbedTypeKeys.RAID !== notificationType) {
+          if (tmp(7772).AutomodNotificationEmbedTypeKeys.MENTION_RAID === notificationType) {
             let fromNowResult;
             if (null != resolvedReason.raidDatetime) {
-              fromNowResult = importDefault(3747)(resolvedReason.raidDatetime).fromNow();
-              const obj18 = importDefault(3747)(resolvedReason.raidDatetime);
+              fromNowResult = importDefault(3771)(resolvedReason.raidDatetime).fromNow();
+              const obj17 = importDefault(3771)(resolvedReason.raidDatetime);
             }
-            obj.subtitleLeft = fromNowResult;
-            const intl5 = require(1212) /* getSystemLocale */.intl;
-            obj.header = intl5.string(require(1212) /* getSystemLocale */.t.C2uIXE);
-            const internal3 = importDefault(689).internal;
-            obj.headerColor = require(7694) /* processColorOrThrow */.processColorOrThrow(internal3.resolveSemanticColor(theme, importDefault(689).colors.TEXT_FEEDBACK_CRITICAL));
-            const obj19 = require(7694) /* processColorOrThrow */;
-            obj.headerIconURL = closure_4.resolveAssetSource(require(1392) /* getAvatarURL */.makeSource(importDefault(6711))).uri;
-            const obj20 = require(1392) /* getAvatarURL */;
-            const internal4 = importDefault(689).internal;
-            obj.headerIconColor = require(7694) /* processColorOrThrow */.processColorOrThrow(internal4.resolveSemanticColor(theme, importDefault(689).colors.TEXT_FEEDBACK_CRITICAL));
-            const intl6 = require(1212) /* getSystemLocale */.intl;
-            obj.body = intl6.string(require(1212) /* getSystemLocale */.t.SWIWEV);
-            obj.shouldShowActions = false;
+            obj = { subtitleLeft: null, header: null, headerColor: null, headerIconURL: null, headerIconColor: null, body: null, shouldShowActions: false };
+            obj[0] = fromNowResult;
+            const intl5 = tmp(1236).intl;
+            obj[1] = intl5.string(tmp(1236).t.C2uIXE);
+            const internal3 = importDefault(712).internal;
+            obj[2] = tmp(7717).processColorOrThrow(internal3.resolveSemanticColor(theme, importDefault(712).colors.TEXT_FEEDBACK_CRITICAL));
+            const tmpResult4 = tmp(7717);
+            obj[3] = closure_4.resolveAssetSource(tmp(1416).makeSource(importDefault(6732))).uri;
+            const tmpResult5 = tmp(1416);
+            const internal4 = importDefault(712).internal;
+            obj[4] = tmp(7717).processColorOrThrow(internal4.resolveSemanticColor(theme, importDefault(712).colors.TEXT_FEEDBACK_CRITICAL));
+            const intl6 = tmp(1236).intl;
+            obj[5] = intl6.string(tmp(1236).t.SWIWEV);
             str = "";
-            tmp16 = stringResult;
-            tmp17 = obj;
-            const obj21 = require(7694) /* processColorOrThrow */;
-          } else {
-            id = require;
-            id = dependencyMap;
-            if (require(7749) /* AutomodNotificationEmbedTypeKeys */.AutomodNotificationEmbedTypeKeys.ACTIVITY_ALERTS_ENABLED === notificationType) {
-              let obj7 = require(5746) /* getEmbedFieldFromMessage */;
-              const userIdOfAutomodAction = obj7.getUserIdOfAutomodAction(message);
-              user = user.getUser(userIdOfAutomodAction);
-              let member = null;
-              if (null != userIdOfAutomodAction) {
-                member = null;
-                if (null != guildId) {
-                  member = store.getMember(guildId, userIdOfAutomodAction);
-                }
+            tmp14 = obj;
+            tmp15 = stringResult;
+            const tmpResult6 = tmp(7717);
+          } else if (tmp(7772).AutomodNotificationEmbedTypeKeys.ACTIVITY_ALERTS_ENABLED === notificationType) {
+            const userIdOfAutomodAction = tmp(5764).getUserIdOfAutomodAction(message);
+            user = user.getUser(userIdOfAutomodAction);
+            let member = null;
+            if (null != userIdOfAutomodAction) {
+              member = null;
+              if (null != guildId) {
+                member = store.getMember(guildId, userIdOfAutomodAction);
               }
-              let nick;
-              if (null != member) {
-                nick = member.nick;
-              }
-              if (null == nick) {
-                let username;
-                if (null != user) {
-                  username = user.username;
-                }
-                nick = username;
-              }
-              let obj8 = require(1395) /* ensureAvatarSource */;
-              let avatar;
-              if (null != member) {
-                avatar = member.avatar;
-              }
-              if (null != avatar) {
-                if (null != guildId) {
-                  let obj9 = require(1392) /* getAvatarURL */;
-                  obj = { userId: author.id };
-                  let avatar1;
-                  if (null != member) {
-                    avatar1 = member.avatar;
-                  }
-                  obj.avatar = avatar1;
-                  obj.guildId = guildId;
-                  let guildMemberAvatarSource = obj9.getGuildMemberAvatarSource(obj, author);
-                }
-                obj1 = {};
-                const intl2 = require(1212) /* getSystemLocale */.intl;
-                obj1.header = intl2.string(require(1212) /* getSystemLocale */.t.lVLiFp);
-                let obj12 = require(7694) /* processColorOrThrow */;
-                const internal = importDefault(689).internal;
-                obj1.headerColor = obj12.processColorOrThrow(internal.resolveSemanticColor(theme, importDefault(689).colors.TEXT_FEEDBACK_POSITIVE));
-                let obj13 = require(1392) /* getAvatarURL */;
-                obj1.headerIconURL = closure_4.resolveAssetSource(obj13.makeSource(importDefault(7778))).uri;
-                let obj14 = require(7694) /* processColorOrThrow */;
-                const internal2 = importDefault(689).internal;
-                obj1.headerIconColor = obj14.processColorOrThrow(internal2.resolveSemanticColor(theme, importDefault(689).colors.TEXT_FEEDBACK_POSITIVE));
-                const intl3 = require(1212) /* getSystemLocale */.intl;
-                obj1.body = intl3.string(require(1212) /* getSystemLocale */.t["QV/8u5"]);
-                obj1.shouldShowActions = false;
-                const ensureAvatarSourceResult = obj8.ensureAvatarSource(guildMemberAvatarSource);
-                obj1.subtitleRight = importDefault(3747)(message.timestamp).fromNow();
-                const intl4 = require(1212) /* getSystemLocale */.intl;
-                obj1.subtitleLeft = intl4.string(require(1212) /* getSystemLocale */.t.qlFrXW);
-                obj1.enabledByAvatarURL = ensureAvatarSourceResult.uri;
-                obj1.enabledByUsername = nick;
-                colorString = undefined;
-                if (null != member) {
-                  colorString = member.colorString;
-                }
-                let tmp42;
-                if (null != colorString) {
-                  tmp42 = callback(member.colorString);
-                }
-                obj1.enabledByColor = tmp42;
-                str = "";
-                tmp16 = stringResult;
-                tmp17 = obj1;
-                const obj16 = importDefault(3747)(message.timestamp);
-              }
-              guildMemberAvatarSource = author.getAvatarSource(undefined, false, 16);
-            } else {
-              const obj2 = {};
-              id = require;
-              id = dependencyMap;
-              const intl17 = require(1212) /* getSystemLocale */.intl;
-              obj2.header = intl17.string(require(1212) /* getSystemLocale */.t.VdZCcC);
-              id = importDefault;
-              const internal7 = importDefault(689).internal;
-              obj2.headerColor = require(7694) /* processColorOrThrow */.processColorOrThrow(internal7.resolveSemanticColor(theme, importDefault(689).colors.TEXT_SUBTLE));
-              id = closure_4;
-              const obj49 = require(7694) /* processColorOrThrow */;
-              obj2.headerIconURL = closure_4.resolveAssetSource(require(1392) /* getAvatarURL */.makeSource(importDefault(6711))).uri;
-              const obj50 = require(1392) /* getAvatarURL */;
-              const internal8 = importDefault(689).internal;
-              obj2.headerIconColor = require(7694) /* processColorOrThrow */.processColorOrThrow(internal8.resolveSemanticColor(theme, importDefault(689).colors.TEXT_SUBTLE));
-              const intl18 = require(1212) /* getSystemLocale */.intl;
-              obj2.body = intl18.string(require(1212) /* getSystemLocale */.t["NxHYX/"]);
-              obj2.shouldShowActions = false;
-              str = "";
-              tmp16 = stringResult;
-              tmp17 = obj2;
-              const obj51 = require(7694) /* processColorOrThrow */;
             }
+            let nick;
+            if (member != null) {
+              nick = member.nick;
+            }
+            if (nick == null) {
+              let username;
+              if (user != null) {
+                username = user.username;
+              }
+              nick = username;
+            }
+            const tmpResult7 = tmp(5764);
+            let avatar;
+            if (member != null) {
+              avatar = member.avatar;
+            }
+            if (null != avatar) {
+              if (null != guildId) {
+                obj = { userId: null, avatar: null, guildId: null };
+                obj[0] = author.id;
+                let avatar1;
+                if (member != null) {
+                  avatar1 = member.avatar;
+                }
+                obj[1] = avatar1;
+                obj[2] = guildId;
+                let guildMemberAvatarSource = tmp(1416).getGuildMemberAvatarSource(obj, author);
+                const tmpResult9 = tmp(1416);
+              }
+              const obj1 = { header: null, headerColor: null, headerIconURL: null, headerIconColor: null, body: null, shouldShowActions: false, subtitleRight: null, subtitleLeft: null, enabledByAvatarURL: null, enabledByUsername: null, enabledByColor: null };
+              const intl2 = tmp(1236).intl;
+              obj1[0] = intl2.string(tmp(1236).t.lVLiFp);
+              const ensureAvatarSourceResult = tmpResult8.ensureAvatarSource(guildMemberAvatarSource);
+              const internal = importDefault(712).internal;
+              obj1[1] = tmp(7717).processColorOrThrow(internal.resolveSemanticColor(theme, importDefault(712).colors.TEXT_FEEDBACK_POSITIVE));
+              const tmpResult10 = tmp(7717);
+              obj1[2] = closure_4.resolveAssetSource(tmp(1416).makeSource(importDefault(7801))).uri;
+              const tmpResult11 = tmp(1416);
+              const internal2 = importDefault(712).internal;
+              obj1[3] = tmp(7717).processColorOrThrow(internal2.resolveSemanticColor(theme, importDefault(712).colors.TEXT_FEEDBACK_POSITIVE));
+              const intl3 = tmp(1236).intl;
+              obj1[4] = intl3.string(tmp(1236).t["QV/8u5"]);
+              const tmpResult12 = tmp(7717);
+              obj1[6] = importDefault(3771)(message.timestamp).fromNow();
+              const intl4 = tmp(1236).intl;
+              obj1[7] = intl4.string(tmp(1236).t.qlFrXW);
+              obj1[8] = ensureAvatarSourceResult.uri;
+              obj1[9] = nick;
+              colorString = undefined;
+              if (member != null) {
+                colorString = member.colorString;
+              }
+              let tmp30;
+              if (null != colorString) {
+                tmp30 = callback(member.colorString);
+              }
+              obj1[10] = tmp30;
+              str = "";
+              tmp14 = obj1;
+              tmp15 = stringResult;
+              const obj16 = importDefault(3771)(message.timestamp);
+            }
+            guildMemberAvatarSource = author.getAvatarSource(undefined, false, 16);
+            tmpResult8 = tmp(1419);
+          } else {
+            const obj2 = { header: null, headerColor: null, headerIconURL: null, headerIconColor: null, body: null, shouldShowActions: false };
+            const intl17 = tmp(1236).intl;
+            obj2[0] = intl17.string(tmp(1236).t.VdZCcC);
+            const internal7 = importDefault(712).internal;
+            obj2[1] = tmp(7717).processColorOrThrow(internal7.resolveSemanticColor(theme, importDefault(712).colors.TEXT_SUBTLE));
+            const tmpResult13 = tmp(7717);
+            obj2[2] = closure_4.resolveAssetSource(tmp(1416).makeSource(importDefault(6732))).uri;
+            const tmpResult14 = tmp(1416);
+            const internal8 = importDefault(712).internal;
+            obj2[3] = tmp(7717).processColorOrThrow(internal8.resolveSemanticColor(theme, importDefault(712).colors.TEXT_SUBTLE));
+            const intl18 = tmp(1236).intl;
+            obj2[4] = intl18.string(tmp(1236).t["NxHYX/"]);
+            str = "";
+            tmp14 = obj2;
+            tmp15 = stringResult;
+            const tmpResult15 = tmp(7717);
           }
         }
       }
       let fromNowResult1;
       if (null != resolvedReason.raidDatetime) {
-        fromNowResult1 = importDefault(3747)(resolvedReason.raidDatetime).fromNow();
-        const obj22 = importDefault(3747)(resolvedReason.raidDatetime);
+        fromNowResult1 = importDefault(3771)(resolvedReason.raidDatetime).fromNow();
+        const obj22 = importDefault(3771)(resolvedReason.raidDatetime);
       }
-      const tmp56 = resolvedReason.raidType === require(7773) /* AutomodRaidAlertTypes */.AutomodRaidAlertTypes.DM_RAID;
       let str2 = "";
       if (null != resolvedReason.raidDatetime) {
         const _Date = Date;
         const date = new Date(resolvedReason.raidDatetime);
-        str2 = date.toLocaleString(require(1212) /* getSystemLocale */.intl.currentLocale, require(7774) /* hasDetectedRaid */.DATE_CONFIG);
+        str2 = date.toLocaleString(tmp(1236).intl.currentLocale, tmp(7797).DATE_CONFIG);
       }
-      const intl7 = require(1212) /* getSystemLocale */.intl;
+      const tmp42 = resolvedReason.raidType === tmp(7796).AutomodRaidAlertTypes.DM_RAID;
+      const intl7 = tmp(1236).intl;
       const formatToPlainString = intl7.formatToPlainString;
-      const t = require(1212) /* getSystemLocale */.t;
-      if (tmp56) {
-        obj3 = { dmsSent: resolvedReason.dmsSent };
+      const t = tmp(1236).t;
+      if (tmp42) {
+        const obj3 = { dmsSent: null };
+        obj3[0] = resolvedReason.dmsSent;
         let formatToPlainStringResult = formatToPlainString(t["5C8Mh3"], obj3);
       } else {
-        obj4 = { joinCount: resolvedReason.joinAttempts };
+        const obj4 = { joinCount: null };
+        obj4[0] = resolvedReason.joinAttempts;
         formatToPlainStringResult = formatToPlainString(t["4ylIiu"], obj4);
       }
-      obj5 = { subtitleLeft: formatToPlainStringResult, severity: formatToPlainStringResult, subtitleRight: fromNowResult1, startTime: fromNowResult1 };
-      const intl8 = require(1212) /* getSystemLocale */.intl;
+      const obj5 = { subtitleLeft: null, severity: null, subtitleRight: null, startTime: null, header: null, headerColor: null, headerIconURL: null, headerIconColor: null, body: null, shouldShowActions: true };
+      obj5[0] = formatToPlainStringResult;
+      obj5[1] = formatToPlainStringResult;
+      obj5[2] = fromNowResult1;
+      obj5[3] = fromNowResult1;
+      const intl8 = tmp(1236).intl;
       const string = intl8.string;
-      const t2 = require(1212) /* getSystemLocale */.t;
-      if (tmp56) {
+      const t2 = tmp(1236).t;
+      if (tmp42) {
         let stringResult1 = string(t2["8+lHUb"]);
       } else {
         stringResult1 = string(t2.xMwcwV);
       }
-      obj5.header = stringResult1;
-      let num19 = 10;
-      let tmp71 = importDefault;
-      let num20 = 9;
-      const internal5 = importDefault(689).internal;
-      obj5.headerColor = require(7694) /* processColorOrThrow */.processColorOrThrow(internal5.resolveSemanticColor(theme, importDefault(689).colors.TEXT_FEEDBACK_CRITICAL));
-      let intl9 = closure_4;
-      let resolveAssetSource = closure_4.resolveAssetSource;
-      let internal6 = require(1392) /* getAvatarURL */;
-      let intl10 = internal6.makeSource;
-      if (tmp56) {
-        let tmp73 = 7777;
-      } else {
-        tmp73 = 6711;
-      }
-      obj5.headerIconURL = resolveAssetSource(intl10(tmp71(tmp73))).uri;
-      const obj27 = require(7694) /* processColorOrThrow */;
-      tmp71 = importDefault;
-      internal6 = importDefault(dependencyMap[num20]).internal;
-      obj5.headerIconColor = require(dependencyMap[num19]).processColorOrThrow(internal6.resolveSemanticColor(theme, importDefault(dependencyMap[num20]).colors.TEXT_FEEDBACK_CRITICAL));
-      intl10 = require(1212) /* getSystemLocale */.intl;
-      obj6 = { dateTime: str2 };
-      obj5.body = intl10.formatToPlainString(require(1212) /* getSystemLocale */.t["4QIIZl"], obj6);
-      obj5.shouldShowActions = true;
-      intl9 = require(1212) /* getSystemLocale */.intl;
-      num19 = intl9.string;
-      num20 = require(1212) /* getSystemLocale */.t.ufawcw;
-      num19(num20);
-      resolveAssetSource = require(5746) /* getEmbedFieldFromMessage */;
+      obj5[4] = stringResult1;
+      const tmpResult3 = tmp(5764);
+      const internal5 = importDefault(712).internal;
+      obj5[5] = tmp(7717).processColorOrThrow(internal5.resolveSemanticColor(theme, importDefault(712).colors.TEXT_FEEDBACK_CRITICAL));
+      let tmpResult18 = closure_4;
+      let getRaidAlertResolveCTAText = closure_4.resolveAssetSource;
+      let internal6 = tmp(1416);
+      let intl9 = internal6.makeSource;
+      obj5[6] = getRaidAlertResolveCTAText(intl9(importDefault(tmp42 ? 7800 : 6732))).uri;
+      const tmpResult16 = tmp(7717);
+      internal6 = tmp45(712).internal;
+      obj5[7] = tmp(7717).processColorOrThrow(internal6.resolveSemanticColor(theme, importDefault(712).colors.TEXT_FEEDBACK_CRITICAL));
+      intl9 = tmp(1236).intl;
+      const obj6 = { dateTime: null };
+      obj6[0] = str2;
+      obj5[8] = intl9.formatToPlainString(tmp(1236).t["4QIIZl"], obj6);
+      const intl10 = tmp(1236).intl;
+      intl10.string(tmp(1236).t.ufawcw);
+      tmpResult18 = tmp(5764);
+      getRaidAlertResolveCTAText = tmpResult18.getRaidAlertResolveCTAText;
       resolvedReason = resolvedReason.resolvedReason;
-      const raidAlertResolveCTAText = resolveAssetSource.getRaidAlertResolveCTAText(resolvedReason);
-      const obj28 = require(dependencyMap[num19]);
+      const raidAlertResolveCTAText = getRaidAlertResolveCTAText(resolvedReason);
+      const tmpResult17 = tmp(7717);
     }
     if (null == guildId) {
       let member1 = null;
@@ -276,162 +260,134 @@ export const createAutoModerationActionSystemMessage = function createAutoModera
       let roleIcon;
       if (null != iconRoleId) {
         if (null != guildId) {
-          obj7 = { guildId, roleId: iconRoleId, size: 18 };
-          roleIcon = require(5521) /* useRoleIcon */.getRoleIcon(obj7);
-          const obj32 = require(5521) /* useRoleIcon */;
+          const obj7 = { guildId: null, roleId: null, size: 18 };
+          obj7[0] = guildId;
+          obj7[1] = iconRoleId;
+          roleIcon = tmp(5539).getRoleIcon(obj7);
+          const tmpResult19 = tmp(5539);
         }
       }
-      obj8 = {};
-      const merged = Object.assign(importDefault(7723)(message));
-      obj8["roleIcon"] = roleIcon;
-      obj8["authorId"] = author.id;
-      const intl11 = require(1212) /* getSystemLocale */.intl;
-      obj8["username"] = intl11.string(require(1212) /* getSystemLocale */.t.hG1StD);
-      const obj35 = require(1395) /* ensureAvatarSource */;
-      const obj36 = require(1392) /* getAvatarURL */;
-      obj8["avatarURL"] = obj35.ensureAvatarSource(obj36.makeSource(require(1395) /* ensureAvatarSource */.getAutomodAvatarURL())).uri;
-      let tmp98;
-      if (null != colorString) {
-        tmp98 = colorString;
-      }
-      obj8["colorString"] = callback(tmp98);
-      obj9 = { headerText: str };
-      id = dependencyMap;
-      const intl12 = require(1212) /* getSystemLocale */.intl;
-      obj9.headerBadgeText = intl12.string(require(1212) /* getSystemLocale */.t["70CJbT"]);
-      let str8 = "";
+      const obj8 = {};
+      const merged = Object.assign(importDefault(7746)(message));
+      obj8.roleIcon = roleIcon;
+      obj8.authorId = author.id;
+      const intl11 = tmp(1236).intl;
+      obj8.username = intl11.string(tmp(1236).t.hG1StD);
+      const tmp57 = importDefault;
+      const tmpResult20 = tmp(1419);
+      const tmpResult21 = tmp(1416);
+      obj8.avatarURL = tmpResult20.ensureAvatarSource(tmpResult21.makeSource(tmp(1419).getAutomodAvatarURL())).uri;
+      obj8.colorString = callback(colorString);
+      const obj9 = { headerText: null, headerBadgeText: null, keywordDisplayText: null, message: null, notification: null, ruleDisplayText: null, reasonDisplayText: null, actionsIconURL: null, actionsText: null, feedbackText: null };
+      obj9[0] = str;
+      const intl12 = tmp(1236).intl;
+      obj9[1] = intl12.string(tmp(1236).t["70CJbT"]);
+      let str3 = "";
       if (null != keyword) {
-        id = require;
-        id = dependencyMap;
-        const intl13 = require(1212) /* getSystemLocale */.intl;
-        const obj10 = { keyword };
-        str8 = intl13.formatToPlainString(require(1212) /* getSystemLocale */.t.SYIUTR, obj10);
+        const intl13 = tmp(1236).intl;
+        const obj10 = { keyword: null };
+        obj10[0] = keyword;
+        str3 = intl13.formatToPlainString(tmp(1236).t.SYIUTR, obj10);
       }
-      obj9.keywordDisplayText = str8;
-      const obj11 = {};
-      if (null == flaggedMessageId) {
+      obj9[2] = str3;
+      if (flaggedMessageId == null) {
         flaggedMessageId = message.id;
       }
-      obj11.id = flaggedMessageId;
-      id = undefined;
-      if (null != embedChannel) {
+      const obj11 = { id: null, channelId: null, guildId: null, userId: null, channelName: null, username: null, usernameColor: null, roleColor: null, shouldShowRoleDot: null, colorString: null, avatarURL: null, content: null, communicationDisabled: null, timestamp: null };
+      obj11[0] = flaggedMessageId;
+      let id;
+      if (embedChannel != null) {
         id = embedChannel.id;
       }
-      if (null != id) {
-        embedChannelId = id;
+      if (id == null) {
+        id = embedChannelId;
       }
-      if (null == embedChannelId) {
-        embedChannelId = message.channel_id;
+      if (id == null) {
+        id = message.channel_id;
       }
-      obj11.channelId = embedChannelId;
-      obj11.guildId = guildId;
-      obj11.userId = author.id;
-      id = undefined;
+      obj11[1] = id;
+      obj11[2] = guildId;
+      obj11[3] = author.id;
+      let channelName;
       if (canResult) {
         if (null == quarantineType) {
           if (null != embedChannel) {
-            id = require;
-            id = dependencyMap;
-            id = user;
-            id = closure_8;
-            id = require(4355) /* computeDefaultGroupDmNameFromUserIds */.computeChannelName(embedChannel, user, closure_8);
-            const obj41 = require(4355) /* computeDefaultGroupDmNameFromUserIds */;
+            channelName = tmp(4380).computeChannelName(embedChannel, user, upsertRelationship);
+            const tmpResult23 = tmp(4380);
           }
         }
       }
-      obj11.channelName = id;
-      obj11.username = messageAuthor.nick;
-      id = defaultUsernameColor;
+      obj11[4] = channelName;
+      obj11[5] = messageAuthor.nick;
+      let tmp66 = defaultUsernameColor;
       if ("username" === roleStyle) {
-        id = undefined;
-        id = callback;
-        if (null != colorString) {
-          id = colorString;
+        let tmp60Result = tmp60(colorString);
+        if (tmp60Result == null) {
+          tmp60Result = defaultUsernameColor;
         }
-        id = id(id);
-        id = defaultUsernameColor;
+        tmp66 = tmp60Result;
+        const tmp67 = colorString;
       }
-      obj11.usernameColor = id;
-      id = undefined;
-      id = callback;
-      if (null != colorString) {
-        id = colorString;
+      obj11[6] = tmp66;
+      obj11[7] = callback(colorString);
+      obj11[8] = "dot" === roleStyle && null != colorString;
+      tmp60Result = tmp60(colorString);
+      if (tmp60Result == null) {
+        tmp60Result = defaultUsernameColor;
       }
-      obj11.roleColor = id(id);
-      obj11.shouldShowRoleDot = "dot" === roleStyle && null != colorString;
-      id = undefined;
-      id = callback;
-      if (null != colorString) {
-        id = colorString;
-      }
-      id = id(id);
-      if (null != id) {
-        defaultUsernameColor = id;
-      }
-      obj11.colorString = defaultUsernameColor;
-      obj11.avatarURL = null;
-      obj11.content = content;
-      id = require;
-      id = dependencyMap;
-      const obj37 = require(1395) /* ensureAvatarSource */;
-      const tmp97 = callback;
-      obj11.communicationDisabled = require(3782) /* isCommunicationDisabled */.isMemberCommunicationDisabled(member1);
-      const obj42 = require(3782) /* isCommunicationDisabled */;
-      obj11.timestamp = require(3835) /* resetCache */.accessibilityLabelCalendarFormat(message.timestamp);
-      obj9.message = obj11;
-      obj9.notification = tmp17;
-      const intl14 = require(1212) /* getSystemLocale */.intl;
-      obj12 = { ruleName };
-      obj9.ruleDisplayText = intl14.formatToPlainString(require(1212) /* getSystemLocale */.t.ZoOyKB, obj12);
-      id = null;
+      obj11[9] = tmp60Result;
+      obj11[10] = null;
+      obj11[11] = content;
+      const tmp61 = colorString;
+      const tmp69 = colorString;
+      const tmpResult22 = tmp(1419);
+      obj11[12] = tmp(3806).isMemberCommunicationDisabled(member1);
+      const tmpResult24 = tmp(3806);
+      obj11[13] = tmp(3859).accessibilityLabelCalendarFormat(message.timestamp);
+      obj9[3] = obj11;
+      obj9[4] = tmp14;
+      const intl14 = tmp(1236).intl;
+      const obj12 = { ruleName: null };
+      obj12[0] = ruleName;
+      obj9[5] = intl14.formatToPlainString(tmp(1236).t.ZoOyKB, obj12);
+      let formatToPlainStringResult1 = null;
       if (null != quarantineType) {
-        id = require;
-        id = dependencyMap;
-        const intl15 = require(1212) /* getSystemLocale */.intl;
-        obj13 = { reason: require(5746) /* getEmbedFieldFromMessage */.getQuarantineReasonString(quarantineType) };
-        id = intl15.formatToPlainString(require(1212) /* getSystemLocale */.t["26bB2M"], obj13);
-        const obj46 = require(5746) /* getEmbedFieldFromMessage */;
+        const intl15 = tmp(1236).intl;
+        const obj13 = { reason: null };
+        obj13[0] = tmp(5764).getQuarantineReasonString(quarantineType);
+        formatToPlainStringResult1 = intl15.formatToPlainString(tmp(1236).t["26bB2M"], obj13);
+        const tmpResult26 = tmp(5764);
       }
-      obj9.reasonDisplayText = id;
-      id = require;
-      id = dependencyMap;
-      id = closure_4;
-      const obj43 = require(3835) /* resetCache */;
-      id = dependencyMap;
-      id = importDefault;
-      if (result1) {
-        id = 7779;
-      } else {
-        id = 7780;
-      }
-      obj9.actionsIconURL = closure_4.resolveAssetSource(require(1392) /* getAvatarURL */.makeSource(id(id))).uri;
-      id = require;
-      id = dependencyMap;
-      const intl16 = require(1212) /* getSystemLocale */.intl;
+      obj9[6] = formatToPlainStringResult1;
+      const tmpResult25 = tmp(3859);
+      obj9[7] = closure_4.resolveAssetSource(tmp(1416).makeSource(tmp57(result1 ? 7802 : 7803))).uri;
+      const intl16 = tmp(1236).intl;
       const string2 = intl16.string;
-      const t3 = require(1212) /* getSystemLocale */.t;
+      const t3 = tmp(1236).t;
       if (result1) {
-        id = string2(t3.UgXhdn);
+        let string2Result = string2(t3.UgXhdn);
       } else {
-        id = string2(t3.DEoVWZ);
+        string2Result = string2(t3.DEoVWZ);
       }
-      obj9.actionsText = id;
-      obj9.feedbackText = tmp16;
-      obj8["autoModerationContext"] = obj9;
+      obj9[8] = string2Result;
+      obj9[9] = tmp15;
+      obj8.autoModerationContext = obj9;
       return obj8;
     } else {
-      require(1395) /* ensureAvatarSource */;
+      tmp(1419);
       if (null == guildMemberAvatar) {
         let avatarSource = author.getAvatarSource(undefined);
-        const uri = tmp83(avatarSource).uri;
+        const uri = tmp52(avatarSource).uri;
       }
-      obj14 = { userId: author.id, avatar: guildMemberAvatar, guildId };
-      avatarSource = require(1392) /* getAvatarURL */.getGuildMemberAvatarSource(obj14, author);
-      const obj30 = require(1392) /* getAvatarURL */;
+      const obj14 = { userId: null, avatar: null, guildId: null };
+      obj14[0] = author.id;
+      obj14[1] = guildMemberAvatar;
+      obj14[2] = guildId;
+      avatarSource = tmp(1416).getGuildMemberAvatarSource(obj14, author);
+      const tmpResult29 = tmp(1416);
     }
-    canResult = closure_7.can(Permissions.VIEW_CHANNEL, embedChannel);
+    const tmpResult2 = tmp(5764);
   } else {
-    id = null;
     return null;
   }
 };

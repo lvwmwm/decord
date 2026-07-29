@@ -1,17 +1,17 @@
-// Module ID: 5184
-// Function ID: 45047
+// Module ID: 5206
+// Function ID: 5207
 // Name: Emoji
-// Dependencies: [31, 27, 1278, 33, 477, 3810, 1273, 5119, 4011, 5185, 5186, 2]
+// Dependencies: [19, 17, 1302, 21, 500, 3834, 1297, 5141, 4035, 5207, 5208, 2]
 // Exports: default
 
-// Module 5184 (Emoji)
-import "result";
+// Module 5206 (Emoji)
+import "noop";
 import { View } from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import handleThemeChange from "handleThemeChange";
 import { jsx } from "jsxProd";
 
 const require = arg1;
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/emojis/native/Emoji.tsx");
+const result = require("handleThemeChange").fileFinishedImporting("modules/emojis/native/Emoji.tsx");
 
 export default function Emoji(arg0) {
   let adjustsFontSizeToFit;
@@ -23,36 +23,37 @@ export default function Emoji(arg0) {
   let textEmojiStyle;
   ({ src, name } = arg0);
   ({ style, textEmojiStyle, fastImageStyle, forceTextEmoji, adjustsFontSizeToFit } = arg0);
-  let obj = require(477) /* set */;
+  let obj = require(500) /* set */;
   let uRL = src;
   if (obj.isAndroid()) {
     uRL = src;
     if (null == src) {
-      let obj1 = importDefault(3810);
+      let obj1 = importDefault(3834);
       uRL = obj1.getURL(name);
     }
   }
-  obj = { style };
+  obj = { style, children: null };
   if (!forceTextEmoji) {
     if (null != uRL) {
       if ("" !== uRL) {
-        obj = { resizeMode: "contain", style: fastImageStyle };
-        const tmp10 = jsx;
-        const tmp13 = importDefault(5119);
-        if (obj6.isThemeDark(theme.theme)) {
-          let tmp16Result = tmp16(5185);
+        obj = { resizeMode: "contain", style: null, placeholder: null, source: null };
+        obj[1] = fastImageStyle;
+        const tmp10 = importDefault(5141);
+        if (tmpResult.isThemeDark(theme.theme)) {
+          let tmp9Result = tmp9(5207);
         } else {
-          tmp16Result = tmp16(5186);
+          tmp9Result = tmp9(5208);
         }
-        obj.placeholder = tmp16Result;
-        obj1 = { uri: uRL };
-        obj.source = obj1;
-        let tmp10Result = tmp10(tmp13, obj);
-        obj6 = require(4011) /* AccessibilityAnnouncer */;
+        obj[2] = tmp9Result;
+        obj1 = { uri: null };
+        obj1[0] = uRL;
+        obj[3] = obj1;
+        let tmp6Result = tmp6(tmp10, obj);
+        tmpResult = tmp(4035);
       }
-      obj.children = tmp10Result;
-      return tmp5(tmp6, obj);
+      obj[1] = tmp6Result;
+      return tmp6(tmp7, obj);
     }
   }
-  tmp10Result = jsx(require(1273) /* Button */.LegacyText, { style: textEmojiStyle, allowFontScaling: false, adjustsFontSizeToFit, children: name });
+  tmp6Result = tmp6(tmp(1297).LegacyText, { style: textEmojiStyle, allowFontScaling: false, adjustsFontSizeToFit, children: name });
 };

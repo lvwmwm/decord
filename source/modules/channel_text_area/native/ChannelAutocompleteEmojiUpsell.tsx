@@ -1,62 +1,61 @@
-// Module ID: 11462
-// Function ID: 88962
+// Module ID: 11486
+// Function ID: 11487
 // Name: ChannelAutocompleteEmojiUpsell
-// Dependencies: [31, 27, 1853, 33, 4165, 689, 5119, 1392, 4161, 1212, 2]
+// Dependencies: [19, 17, 1877, 21, 4189, 712, 5141, 1416, 4185, 1236, 2]
 // Exports: default
 
-// Module 11462 (ChannelAutocompleteEmojiUpsell)
-import "result";
+// Module 11486 (ChannelAutocompleteEmojiUpsell)
+import "noop";
 import { View } from "get ActivityIndicator";
 import { EMOJI_URL_BASE_SIZE } from "set";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_5;
+let c5;
 let closure_6;
-let require = arg1;
-({ jsx: closure_5, jsxs: closure_6 } = jsxProd);
-_createForOfIteratorHelperLoose = { upsell: { flexDirection: "row", alignItems: "center", justifyContent: "space-between" }, title: { lineHeight: 16, flex: 1 }, emojis: { height: 28 } };
-_createForOfIteratorHelperLoose = { position: "absolute", width: 28, height: 28, padding: 2, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWEST, borderWidth: 2, borderRadius: 14, borderColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SURFACE_HIGH, alignItems: "center", justifyContent: "center" };
-_createForOfIteratorHelperLoose.emojiWrapper = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.emoji = { width: 16, height: 16 };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+const require = arg1;
+({ jsx: c5, jsxs: closure_6 } = jsxProd);
+createCacheKey = { upsell: { flexDirection: "row", alignItems: "center", justifyContent: "space-between" }, title: { lineHeight: 16, flex: 1 }, emojis: { height: 28 }, emojiWrapper: null, emoji: null };
+createCacheKey = { position: "absolute", width: 28, height: 28, padding: 2, backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOWEST, borderWidth: 2, borderRadius: 14, borderColor: require("Themes").colors.BACKGROUND_SURFACE_HIGH, alignItems: "center", justifyContent: "center" };
+createCacheKey[3] = createCacheKey;
+createCacheKey[4] = { width: 16, height: 16 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
 let result = require("set").fileFinishedImporting("modules/channel_text_area/native/ChannelAutocompleteEmojiUpsell.tsx");
 
 export default function ChannelAutocompleteEmojiUpsell(results) {
   results = results.results;
-  const tmp = _createForOfIteratorHelperLoose();
-  const require = tmp;
+  let _require;
+  const tmp = createCacheKey();
+  _require = tmp;
   const substr = results.slice(0, 3);
-  let obj = { style: tmp.upsell };
+  let obj = { style: tmp.upsell, children: null };
   const mapped = substr.map((id) => {
-    let obj = { style: items };
-    items = [outer1_5.emojiWrapper, ];
+    let obj = { style: items, children: null };
+    items = [_undefined.emojiWrapper, ];
     obj = { left: 24 * arg1 };
     items[1] = obj;
-    obj = { style: tmp.emoji };
-    const obj1 = {};
+    obj = { style: _undefined.emoji, source: null };
     if (null != id.id) {
-      const obj2 = {};
-      ({ id: obj6.id, animated: obj6.animated } = id);
-      obj2.size = outer1_4;
-      let url = outer1_1(outer1_2[7]).getEmojiURL(obj2);
-      const obj5 = outer1_1(outer1_2[7]);
+      const obj1 = { id: null, animated: null, size: null };
+      ({ id: obj5[0], animated: obj5[1] } = id);
+      obj1[2] = outer1_4;
+      let url = outer1_1(outer1_2[7]).getEmojiURL(obj1);
+      const tmp3Result = outer1_1(outer1_2[7]);
     } else {
       url = id.url;
     }
-    obj1.uri = url;
-    obj.source = obj1;
-    obj.children = outer1_5(outer1_1(outer1_2[6]), obj);
+    obj[1] = { uri: url };
+    obj[1] = outer1_5(outer1_1(outer1_2[6]), obj);
     return outer1_5(outer1_3, obj, id.id);
   });
   const result = 24 * substr.length;
-  obj = { style: tmp.title, accessibilityRole: "header", variant: "text-sm/medium" };
-  const intl = require(1212) /* getSystemLocale */.intl;
+  obj = { style: tmp.title, accessibilityRole: "header", variant: "text-sm/medium", children: null };
+  const intl = _require(1236).intl;
   obj = { count: results.length };
-  obj.children = intl.format(require(1212) /* getSystemLocale */.t.uEky42, obj);
-  let items = [callback(require(4161) /* Text */.Text, obj), ];
+  obj[3] = intl.format(_require(1236).t.uEky42, obj);
+  let items = [callback(_require(4185).Text, obj), ];
   const items1 = [tmp.emojis, { width: result + 16 }];
   items[1] = callback(View, { style: items1, children: mapped });
-  obj.children = items;
+  obj[1] = items;
   return callback2(View, obj);
 };

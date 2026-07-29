@@ -1,40 +1,44 @@
-// Module ID: 7817
-// Function ID: 61905
+// Module ID: 7840
+// Function ID: 7841
 // Name: useHasActiveTrial
-// Dependencies: [1850, 3817, 6191, 1852, 566, 6224, 2]
+// Dependencies: [1874, 3841, 6211, 1876, 589, 6244, 2]
 // Exports: getPremiumTrialOffer, hasActiveTrial, isEligibleTrialSub, useCurrentPremiumTrialTier, useHasActiveTrial
 
-// Module 7817 (useHasActiveTrial)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_3 from "_isNativeReflectConstruct";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+// Module 7840 (useHasActiveTrial)
+import mergeGuildAvatar from "mergeGuildAvatar";
+import reset from "reset";
+import emitChanges from "emitChanges";
 import GuildFeatures from "GuildFeatures";
 
-let closure_5;
+let c5;
+let c9;
 let closure_6;
-let closure_7;
-let closure_8;
-let closure_9;
+let error;
+let metroImportAll;
 const require = arg1;
-({ PREMIUM_TIER_2_LIKELIHOOD_TRIAL_ID: closure_5, PREMIUM_TIER_2_REACTIVATION_TRIAL_ID: closure_6, PREMIUM_TIER_2_3P_ONE_MONTH_TRIAL_ID: closure_7, PREMIUM_TIER_2_REFERRAL_TRIAL_ID: closure_8, PREMIUM_TRIAL_IDS_ALL: closure_9 } = GuildFeatures);
-const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/premium/PremiumSubscriptionTrialUtil.tsx");
+({ PREMIUM_TIER_2_LIKELIHOOD_TRIAL_ID: c5, PREMIUM_TIER_2_REACTIVATION_TRIAL_ID: closure_6, PREMIUM_TIER_2_3P_ONE_MONTH_TRIAL_ID: error, PREMIUM_TIER_2_REFERRAL_TRIAL_ID: metroImportAll, PREMIUM_TRIAL_IDS_ALL: c9 } = GuildFeatures);
+const result = require("emitChanges").fileFinishedImporting("modules/premium/PremiumSubscriptionTrialUtil.tsx");
 
 export const useHasActiveTrial = function useHasActiveTrial() {
-  const items = [closure_3];
-  const stateFromStores = require(566) /* initialize */.useStateFromStores(items, () => outer1_3.getPremiumTypeSubscription());
-  return !(null == stateFromStores || !stateFromStores.hasActiveTrial);
+  const items = [reset];
+  const stateFromStores = require(589) /* initialize */.useStateFromStores(items, () => premiumTypeSubscription.getPremiumTypeSubscription());
+  let hasActiveTrial;
+  if (stateFromStores != null) {
+    hasActiveTrial = stateFromStores.hasActiveTrial;
+  }
+  return hasActiveTrial;
 };
 export const hasActiveTrial = function hasActiveTrial() {
   premiumTypeSubscription = premiumTypeSubscription.getPremiumTypeSubscription();
   let trialId;
-  if (null != premiumTypeSubscription) {
+  if (premiumTypeSubscription != null) {
     trialId = premiumTypeSubscription.trialId;
   }
   return null != trialId;
 };
 export const isEligibleTrialSub = function isEligibleTrialSub(trialId) {
   trialId = undefined;
-  if (null != trialId) {
+  if (trialId != null) {
     trialId = trialId.trialId;
   }
   let tmp2 = null != trialId;
@@ -54,31 +58,32 @@ export const isEligibleTrialSub = function isEligibleTrialSub(trialId) {
   return tmp2;
 };
 export const useCurrentPremiumTrialTier = function useCurrentPremiumTrialTier() {
-  const items = [closure_3];
-  const stateFromStores = require(566) /* initialize */.useStateFromStores(items, () => outer1_3.getPremiumTypeSubscription());
-  const obj = require(566) /* initialize */;
-  const items1 = [_isNativeReflectConstruct];
-  const stateFromStores1 = require(566) /* initialize */.useStateFromStores(items1, () => outer1_2.getCurrentUser());
-  let tmp3 = null;
-  if (null != stateFromStores) {
-    tmp3 = null;
-    if (stateFromStores.hasActiveTrial) {
-      let premiumType;
-      if (null != stateFromStores1) {
-        premiumType = stateFromStores1.premiumType;
-      }
-      tmp3 = premiumType;
-    }
+  const items = [reset];
+  const stateFromStores = require(589) /* initialize */.useStateFromStores(items, () => premiumTypeSubscription.getPremiumTypeSubscription());
+  const obj = require(589) /* initialize */;
+  const items1 = [mergeGuildAvatar];
+  const stateFromStores1 = require(589) /* initialize */.useStateFromStores(items1, () => currentUser.getCurrentUser());
+  let hasActiveTrial;
+  if (stateFromStores != null) {
+    hasActiveTrial = stateFromStores.hasActiveTrial;
   }
-  return tmp3;
+  let tmp4 = null;
+  if (hasActiveTrial) {
+    let premiumType;
+    if (stateFromStores1 != null) {
+      premiumType = stateFromStores1.premiumType;
+    }
+    tmp4 = premiumType;
+  }
+  return tmp4;
 };
 export const getPremiumTrialOffer = function getPremiumTrialOffer() {
-  const mapped = closure_9.map((arg0) => outer1_4.getUserTrialOffer(arg0));
-  const found = mapped.filter((stateFromStores) => {
-    let tmp = null != stateFromStores;
+  const mapped = closure_9.map((closure_9) => userTrialOffer.getUserTrialOffer(closure_9));
+  const found = mapped.filter((expires_at) => {
+    let tmp = null != expires_at;
     if (tmp) {
-      tmp = !outer1_0(outer1_1[5]).hasUserTrialOfferExpired(stateFromStores);
-      const obj = outer1_0(outer1_1[5]);
+      tmp = !callback(table[5]).hasUserTrialOfferExpired(expires_at);
+      const obj = callback(table[5]);
     }
     return tmp;
   });

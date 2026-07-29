@@ -1,304 +1,248 @@
-// Module ID: 8257
-// Function ID: 66026
-// Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 653, 561, 5162, 566, 686, 2]
+// Module ID: 8281
+// Function ID: 8282
+// Name: handleUpdateStart
+// Dependencies: [676, 584, 5184, 589, 709, 2]
 
-// Module 8257 (_isNativeReflectConstruct)
-import Backoff from "Backoff";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
+// Module 8281 (handleUpdateStart)
 import { ChannelTypes } from "ME";
+import { Store } from "initialize";
 
-const require = arg1;
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
-  }
-  const result = _isNativeReflectConstruct();
-}
 function handleUpdateStart(guildId) {
   guildId = guildId.guildId;
+  let obj = map;
   const value = map.get(guildId);
   if (null == value) {
-    let obj = {};
-    const merged = Object.assign(obj);
-    obj["isUpdating"] = true;
-    const result = map.set(guildId, obj);
+    obj = {};
+    const merged = Object.assign(closure_7);
+    obj.isUpdating = true;
+    const result = obj.set(guildId, obj);
   } else {
     obj = {};
     const merged1 = Object.assign(value);
-    obj["isUpdating"] = true;
-    const result1 = map.set(guildId, obj);
+    obj.isUpdating = true;
+    const result1 = obj.set(guildId, obj);
   }
 }
 function handleUpdateFailure(arg0) {
   let error;
   let guildId;
   ({ guildId, error } = arg0);
+  let obj = map;
   const value = map.get(guildId);
   if (null == value) {
-    let obj = {};
-    const merged = Object.assign(obj);
-    obj["error"] = error;
-    const result = map.set(guildId, obj);
+    obj = {};
+    const merged = Object.assign(closure_7);
+    obj.error = error;
+    const result = obj.set(guildId, obj);
   } else {
     obj = {};
     const merged1 = Object.assign(value);
-    obj["error"] = error;
-    obj["isUpdating"] = false;
-    const result1 = map.set(guildId, obj);
+    obj.error = error;
+    obj.isUpdating = false;
+    const result1 = obj.set(guildId, obj);
   }
 }
 function handleInviteResolveOrCreate(invite) {
   const profile = invite.invite.profile;
   if (null != profile) {
     const value = map.get(profile.id);
-    const guildProfileFromServer = require(5162) /* _createForOfIteratorHelperLoose */.buildGuildProfileFromServer(profile);
+    const guildProfileFromServer = require(5184) /* getEmoji */.buildGuildProfileFromServer(profile);
     if (null == value) {
       let obj = {};
-      const merged = Object.assign(obj);
-      obj["profile"] = guildProfileFromServer;
+      const merged = Object.assign(closure_7);
+      obj.profile = guildProfileFromServer;
       const _Date2 = Date;
-      obj["lastSyncTimestamp"] = Date.now();
-      obj["fetchStatus"] = obj.FETCHED;
-      const result = map.set(profile.id, obj);
+      obj.lastSyncTimestamp = Date.now();
+      obj.fetchStatus = obj.FETCHED;
+      const result = obj3.set(profile.id, obj);
     } else {
       obj = {};
       const merged1 = Object.assign(value);
-      obj["profile"] = guildProfileFromServer;
+      obj.profile = guildProfileFromServer;
       const _Date = Date;
-      obj["lastSyncTimestamp"] = Date.now();
-      obj["fetchStatus"] = obj.FETCHED;
-      const result1 = map.set(profile.id, obj);
+      obj.lastSyncTimestamp = Date.now();
+      obj.fetchStatus = obj.FETCHED;
+      const result1 = obj3.set(profile.id, obj);
     }
-    const obj3 = require(5162) /* _createForOfIteratorHelperLoose */;
+    const obj4 = require(5184) /* getEmoji */;
   }
 }
 let obj = { NOT_FETCHED: "NOT_FETCHED", FETCHING: "FETCHING", FETCHED: "FETCHED" };
 const map = new Map();
 const map1 = new Map();
-obj = { profile: null, lastSyncTimestamp: null, fetchStatus: null, isUpdating: false, error: null, nextFetchAllowedAt: null };
-obj.fetchStatus = obj.NOT_FETCHED;
-let tmp4 = ((Store) => {
-  class GuildProfileStore {
-    constructor() {
-      self = this;
-      tmp = outer1_3(this, GuildProfileStore);
-      obj = outer1_6(GuildProfileStore);
-      tmp2 = outer1_5;
-      if (outer1_13()) {
-        tmp6 = globalThis;
-        _Reflect = Reflect;
-        tmp7 = outer1_6;
-        tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, outer1_6(self).constructor);
-      } else {
-        tmp3 = arguments;
-        tmp4 = arguments;
-        constructResult = obj(...arguments);
-      }
-      return tmp2(self, constructResult);
+let closure_7 = { profile: null, lastSyncTimestamp: null, fetchStatus: obj.NOT_FETCHED, isUpdating: false, error: null, nextFetchAllowedAt: null };
+class GuildProfileStore extends Store {
+}
+const prototype = GuildProfileStore.prototype;
+prototype["getProfile"] = function getProfile(arg0) {
+  let tmp = null;
+  if (null != arg0) {
+    const value = map.get(arg0);
+    let profile;
+    if (value != null) {
+      profile = value.profile;
+    }
+    if (profile == null) {
+      profile = null;
+    }
+    tmp = profile;
+  }
+  return tmp;
+};
+prototype["getFetchStatus"] = function getFetchStatus(closure_0) {
+  if (null == closure_0) {
+    let NOT_FETCHED = obj.NOT_FETCHED;
+  } else {
+    const value = map.get(closure_0);
+    NOT_FETCHED = undefined;
+    if (value != null) {
+      NOT_FETCHED = value.fetchStatus;
+    }
+    if (NOT_FETCHED == null) {
+      NOT_FETCHED = obj.NOT_FETCHED;
     }
   }
-  callback2(GuildProfileStore, Store);
-  let obj = {
-    key: "getProfile",
-    value(arg0) {
-      let tmp = null;
-      if (null != arg0) {
-        const value = outer1_10.get(arg0);
-        let profile;
-        if (null != value) {
-          profile = value.profile;
-        }
-        let tmp5 = null;
-        if (null != profile) {
-          tmp5 = profile;
-        }
-        tmp = tmp5;
-      }
-      return tmp;
+  return NOT_FETCHED;
+};
+prototype["getLastSyncTimestamp"] = function getLastSyncTimestamp(outer1_0) {
+  let tmp = null;
+  if (null != outer1_0) {
+    const value = map.get(outer1_0);
+    let lastSyncTimestamp;
+    if (value != null) {
+      lastSyncTimestamp = value.lastSyncTimestamp;
     }
-  };
-  const items = [obj, , , , , ];
-  obj = {
-    key: "getFetchStatus",
-    value(arg0) {
-      if (null == arg0) {
-        let NOT_FETCHED = outer1_9.NOT_FETCHED;
-      } else {
-        const value = outer1_10.get(arg0);
-        NOT_FETCHED = undefined;
-        if (null != value) {
-          NOT_FETCHED = value.fetchStatus;
-        }
-        if (null == NOT_FETCHED) {
-          NOT_FETCHED = outer1_9.NOT_FETCHED;
-        }
-      }
-      return NOT_FETCHED;
+    if (lastSyncTimestamp == null) {
+      lastSyncTimestamp = null;
     }
-  };
-  items[1] = obj;
-  obj = {
-    key: "getLastSyncTimestamp",
-    value(arg0) {
-      let tmp = null;
-      if (null != arg0) {
-        const value = outer1_10.get(arg0);
-        let lastSyncTimestamp;
-        if (null != value) {
-          lastSyncTimestamp = value.lastSyncTimestamp;
-        }
-        let tmp5 = null;
-        if (null != lastSyncTimestamp) {
-          tmp5 = lastSyncTimestamp;
-        }
-        tmp = tmp5;
-      }
-      return tmp;
+    tmp = lastSyncTimestamp;
+  }
+  return tmp;
+};
+prototype["getNextFetchAllowedAt"] = function getNextFetchAllowedAt(outer1_0) {
+  let tmp = null;
+  if (null != outer1_0) {
+    const value = map.get(outer1_0);
+    let nextFetchAllowedAt;
+    if (value != null) {
+      nextFetchAllowedAt = value.nextFetchAllowedAt;
     }
-  };
-  items[2] = obj;
-  items[3] = {
-    key: "getNextFetchAllowedAt",
-    value(arg0) {
-      let tmp = null;
-      if (null != arg0) {
-        const value = outer1_10.get(arg0);
-        let nextFetchAllowedAt;
-        if (null != value) {
-          nextFetchAllowedAt = value.nextFetchAllowedAt;
-        }
-        let tmp5 = null;
-        if (null != nextFetchAllowedAt) {
-          tmp5 = nextFetchAllowedAt;
-        }
-        tmp = tmp5;
-      }
-      return tmp;
+    if (nextFetchAllowedAt == null) {
+      nextFetchAllowedAt = null;
     }
-  };
-  items[4] = {
-    key: "getIsUpdating",
-    value(arg0) {
-      let tmp = null != arg0;
-      if (tmp) {
-        const value = outer1_10.get(arg0);
-        let isUpdating;
-        if (null != value) {
-          isUpdating = value.isUpdating;
-        }
-        tmp = null != isUpdating && isUpdating;
-        const tmp5 = null != isUpdating && isUpdating;
-      }
-      return tmp;
+    tmp = nextFetchAllowedAt;
+  }
+  return tmp;
+};
+prototype["getIsUpdating"] = function getIsUpdating(outer1_0) {
+  let tmp = null != outer1_0;
+  if (tmp) {
+    const value = map.get(outer1_0);
+    let flag;
+    if (value != null) {
+      flag = value.isUpdating;
     }
-  };
-  items[5] = {
-    key: "getErrorCode",
-    value(arg0) {
-      let tmp = null;
-      if (null != arg0) {
-        const value = outer1_10.get(arg0);
-        let code;
-        if (null != value) {
-          const error = value.error;
-          if (null != error) {
-            code = error.code;
-          }
-        }
-        let tmp5 = null;
-        if (null != code) {
-          tmp5 = code;
-        }
-        tmp = tmp5;
-      }
-      return tmp;
+    if (flag == null) {
+      flag = false;
     }
-  };
-  return callback(GuildProfileStore, items);
-})(require("initialize").Store);
-tmp4.displayName = "GuildProfileStore";
+    tmp = flag;
+  }
+  return tmp;
+};
+prototype["getErrorCode"] = function getErrorCode(enabled) {
+  let tmp = null;
+  if (null != enabled) {
+    const value = map.get(enabled);
+    let code;
+    if (value != null) {
+      const error = value.error;
+      if (error != null) {
+        code = error.code;
+      }
+    }
+    if (code == null) {
+      code = null;
+    }
+    tmp = code;
+  }
+  return tmp;
+};
+GuildProfileStore.displayName = "GuildProfileStore";
 obj = {
   GUILD_PROFILE_FETCH: function handleFetchStart(guildId) {
     guildId = guildId.guildId;
+    let obj = map;
     const value = map.get(guildId);
     if (null == value) {
-      let obj = {};
-      const merged = Object.assign(obj);
-      obj["fetchStatus"] = obj.FETCHING;
-      const result = map.set(guildId, obj);
+      obj = {};
+      const merged = Object.assign(closure_7);
+      obj.fetchStatus = obj.FETCHING;
+      const result = obj.set(guildId, obj);
     } else {
       obj = {};
       const merged1 = Object.assign(value);
-      obj["fetchStatus"] = obj.FETCHING;
-      const result1 = map.set(guildId, obj);
+      obj.fetchStatus = obj.FETCHING;
+      const result1 = obj.set(guildId, obj);
     }
   },
   GUILD_PROFILE_FETCH_SUCCESS: function handleFetchSuccess(arg0) {
     let guildId;
     let profile;
     ({ guildId, profile } = arg0);
+    let obj = map1;
     let value = map1.get(guildId);
-    if (null != value) {
+    if (value != null) {
       value.succeed();
     }
-    map1.delete(guildId);
+    obj.delete(guildId);
     value = map.get(guildId);
     if (null == value) {
-      let obj = {};
-      const merged = Object.assign(obj);
-      obj["profile"] = profile;
+      obj = {};
+      const merged = Object.assign(closure_7);
+      obj.profile = profile;
       const _Date2 = Date;
-      obj["lastSyncTimestamp"] = Date.now();
-      obj["fetchStatus"] = obj.FETCHED;
-      const result = map.set(guildId, obj);
+      obj.lastSyncTimestamp = Date.now();
+      obj.fetchStatus = obj.FETCHED;
+      const result = obj3.set(guildId, obj);
     } else {
       obj = {};
       const merged1 = Object.assign(value);
-      obj["profile"] = profile;
+      obj.profile = profile;
       const _Date = Date;
-      obj["lastSyncTimestamp"] = Date.now();
-      obj["fetchStatus"] = obj.FETCHED;
-      obj["error"] = null;
-      obj["nextFetchAllowedAt"] = null;
-      const result1 = map.set(guildId, obj);
+      obj.lastSyncTimestamp = Date.now();
+      obj.fetchStatus = obj.FETCHED;
+      obj.error = null;
+      obj.nextFetchAllowedAt = null;
+      const result1 = obj3.set(guildId, obj);
     }
   },
   GUILD_PROFILE_FETCH_FAILURE: function handleFetchFailure(arg0) {
     let error;
     let guildId;
     ({ guildId, error } = arg0);
+    let obj = map1;
     let value = map1.get(guildId);
     if (null == value) {
-      let tmp3 = importDefault(561);
-      const prototype = tmp3.prototype;
-      tmp3 = new tmp3(5000, 300000);
-      const result = map1.set(guildId, tmp3);
-      value = tmp3;
+      const tmp5 = new importDefault(584)(5000, 300000);
+      const result = obj.set(guildId, tmp5);
+      value = tmp5;
     }
     const sum = Date.now() + value.fail();
     value = map.get(guildId);
     if (null == value) {
-      let obj = {};
-      const merged = Object.assign(obj);
-      obj["error"] = error;
-      obj["fetchStatus"] = obj.FETCHED;
-      obj["nextFetchAllowedAt"] = sum;
-      const result1 = map.set(guildId, obj);
+      obj = {};
+      const merged = Object.assign(closure_7);
+      obj.error = error;
+      obj.fetchStatus = obj.FETCHED;
+      obj.nextFetchAllowedAt = sum;
+      const result1 = obj3.set(guildId, obj);
     } else {
       obj = {};
       const merged1 = Object.assign(value);
-      obj["error"] = error;
-      obj["fetchStatus"] = obj.FETCHED;
-      obj["nextFetchAllowedAt"] = sum;
-      const result2 = map.set(guildId, obj);
+      obj.error = error;
+      obj.fetchStatus = obj.FETCHED;
+      obj.nextFetchAllowedAt = sum;
+      const result2 = obj3.set(guildId, obj);
     }
   },
   GUILD_PROFILE_UPDATE: handleUpdateStart,
@@ -306,18 +250,19 @@ obj = {
     let guildId;
     let profile;
     ({ guildId, profile } = arg0);
+    let obj = map;
     const value = map.get(guildId);
     if (null == value) {
-      let obj = {};
-      const merged = Object.assign(obj);
-      obj["profile"] = profile;
-      const result = map.set(guildId, obj);
+      obj = {};
+      const merged = Object.assign(closure_7);
+      obj.profile = profile;
+      const result = obj.set(guildId, obj);
     } else {
       obj = {};
       const merged1 = Object.assign(value);
-      obj["profile"] = profile;
-      obj["isUpdating"] = false;
-      const result1 = map.set(guildId, obj);
+      obj.profile = profile;
+      obj.isUpdating = false;
+      const result1 = obj.set(guildId, obj);
     }
   },
   GUILD_PROFILE_UPDATE_FAILURE: handleUpdateFailure,
@@ -326,27 +271,27 @@ obj = {
     let guildId;
     ({ form, guildId } = arg0);
     let profile;
-    if (null != form) {
+    if (form != null) {
       profile = form.profile;
     }
     if (null != profile) {
       const value = map.get(guildId);
       if (null == value) {
         let obj = {};
-        const merged = Object.assign(obj);
-        obj["profile"] = profile;
+        const merged = Object.assign(closure_7);
+        obj.profile = profile;
         const _Date2 = Date;
-        obj["lastSyncTimestamp"] = Date.now();
-        obj["fetchStatus"] = obj.FETCHED;
-        const result = map.set(guildId, obj);
+        obj.lastSyncTimestamp = Date.now();
+        obj.fetchStatus = obj.FETCHED;
+        const result = obj3.set(guildId, obj);
       } else {
         obj = {};
         const merged1 = Object.assign(value);
-        obj["profile"] = profile;
+        obj.profile = profile;
         const _Date = Date;
-        obj["lastSyncTimestamp"] = Date.now();
-        obj["fetchStatus"] = obj.FETCHED;
-        const result1 = map.set(guildId, obj);
+        obj.lastSyncTimestamp = Date.now();
+        obj.fetchStatus = obj.FETCHED;
+        const result1 = obj3.set(guildId, obj);
       }
     }
   },
@@ -373,33 +318,31 @@ obj = {
   GUILD_UPDATE: function handleGuildUpdate(guild) {
     let icon;
     guild = guild.guild;
+    let obj = map;
     const value = map.get(guild.id);
     if (null != value) {
       if (null != value.profile) {
-        let obj = {};
+        obj = {};
         const merged = Object.assign(value.profile);
-        ({ name: obj2["name"], icon } = guild);
-        let tmp2 = null;
-        if (null != icon) {
-          tmp2 = icon;
+        ({ name: obj2.name, icon } = guild);
+        if (icon == null) {
+          icon = null;
         }
-        obj["icon"] = tmp2;
-        const description = guild.description;
-        let str2 = "";
-        if (null != description) {
-          str2 = description;
+        obj.icon = icon;
+        let str = guild.description;
+        if (str == null) {
+          str = "";
         }
-        obj["description"] = str2;
-        const discovery_splash = guild.discovery_splash;
-        let tmp3 = null;
-        if (null != discovery_splash) {
-          tmp3 = discovery_splash;
+        obj.description = str;
+        let discovery_splash = guild.discovery_splash;
+        if (discovery_splash == null) {
+          discovery_splash = null;
         }
-        obj["customBanner"] = tmp3;
+        obj.customBanner = discovery_splash;
         obj = {};
         const merged1 = Object.assign(value);
-        obj["profile"] = obj;
-        const result = map.set(guild.id, obj);
+        obj.profile = obj;
+        const result = obj.set(guild.id, obj);
       }
     }
     return false;
@@ -407,26 +350,27 @@ obj = {
   GUILD_PROFILE_UPDATE_VISIBILITY: handleUpdateStart,
   GUILD_PROFILE_UPDATE_VISIBILITY_SUCCESS: function handleUpdateVisibilitySuccess(guildId) {
     guildId = guildId.guildId;
+    let obj = map;
     const value = map.get(guildId);
     let profile;
-    if (null != value) {
+    if (value != null) {
       profile = value.profile;
     }
     if (tmp3) {
-      let obj = {};
+      obj = {};
       const merged = Object.assign(value);
-      obj["isUpdating"] = false;
+      obj.isUpdating = false;
       obj = {};
       const merged1 = Object.assign(profile);
-      obj["visibility"] = guildId.visibility;
-      obj["profile"] = obj;
-      const result = map.set(guildId, obj);
+      obj.visibility = guildId.visibility;
+      obj.profile = obj;
+      const result = obj.set(guildId, obj);
     }
   },
   GUILD_PROFILE_UPDATE_VISIBILITY_FAILURE: handleUpdateFailure
 };
-tmp4 = new tmp4(require("dispatcher"), obj);
-let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/guild_profile/GuildProfileStore.tsx");
+const guildProfileStore = new GuildProfileStore(require("dispatcher"), obj);
+let result = require("getEmoji").fileFinishedImporting("modules/guild_profile/GuildProfileStore.tsx");
 
-export default tmp4;
+export default guildProfileStore;
 export const GuildProfileFetchStatus = obj;

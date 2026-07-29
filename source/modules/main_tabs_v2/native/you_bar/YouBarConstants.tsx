@@ -1,15 +1,19 @@
-// Module ID: 14103
-// Function ID: 107809
+// Module ID: 14125
+// Function ID: 14126
 // Name: CONNECTION_BANNER_HEIGHT
-// Dependencies: [27, 689, 1273, 2]
+// Dependencies: [17, 712, 1297, 2]
 
-// Module 14103 (CONNECTION_BANNER_HEIGHT)
+// Module 14125 (CONNECTION_BANNER_HEIGHT)
 import { PixelRatio } from "get ActivityIndicator";
 import roundToNearestPixelResult from "module_14";
 
-const PX_12 = require("_createForOfIteratorHelperLoose").space.PX_12;
+const PX_12 = require("Themes").space.PX_12;
 const result = 2 * PX_12;
-const obj = { top: require("_createForOfIteratorHelperLoose").space.PX_16, bottom: require("_createForOfIteratorHelperLoose").space.PX_16, left: require("_createForOfIteratorHelperLoose").space.PX_16, right: require("_createForOfIteratorHelperLoose").space.PX_16 };
+const obj = { top: null, bottom: null, left: null, right: null };
+obj[0] = require("Themes").space.PX_16;
+obj[1] = require("Themes").space.PX_16;
+obj[2] = require("Themes").space.PX_16;
+obj[3] = require("Themes").space.PX_16;
 const REFRESH_MEDIUM_32 = require("Button").AvatarSizes.REFRESH_MEDIUM_32;
 const NORMAL = require("Button").AvatarSizes.NORMAL;
 const YOUBAR_60 = require("Button").AvatarSizes.YOUBAR_60;
@@ -23,11 +27,11 @@ export const CONNECTION_BANNER_HEIGHT = 48;
 export const YOU_BAR_SPRING_CONFIG = { damping: 20, stiffness: 300, mass: 1.5, overshootClamping: true, restSpeedThreshold: 0.001, restDisplacementThreshold: 0.001 };
 export const YOU_BAR_PADDING = PX_12;
 export const YOU_BAR_HEIGHT = 32 + result;
-export const YOU_BAR_MARGIN = require("_createForOfIteratorHelperLoose").space.PX_16;
-export const YOU_BAR_MARGIN_IOS = require("_createForOfIteratorHelperLoose").space.PX_24;
-export const YOU_BAR_LEFT_INSET = require("_createForOfIteratorHelperLoose").space.PX_16;
-export const YOU_BAR_FLOATING_OFFSET_MINIMUM = require("_createForOfIteratorHelperLoose").space.PX_16;
-export const YOU_BAR_GRADIENT_EXTRA_HEIGHT = require("_createForOfIteratorHelperLoose").space.PX_16;
+export const YOU_BAR_MARGIN = require("Themes").space.PX_16;
+export const YOU_BAR_MARGIN_IOS = require("Themes").space.PX_24;
+export const YOU_BAR_LEFT_INSET = require("Themes").space.PX_16;
+export const YOU_BAR_FLOATING_OFFSET_MINIMUM = require("Themes").space.PX_16;
+export const YOU_BAR_GRADIENT_EXTRA_HEIGHT = require("Themes").space.PX_16;
 export const YOU_BAR_BUTTON_HIT_SLOP = obj;
 export const YOU_BAR_STATUS_INSET = -3;
 export const YOU_BAR_LARGE_STATUS_SIZE = roundToNearestPixelResult;

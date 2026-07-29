@@ -1,57 +1,66 @@
-// Module ID: 6221
-// Function ID: 55649
+// Module ID: 6241
+// Function ID: 6242
 // Name: useShouldShowPremiumTrialUserSettingsAvatarBadge
-// Dependencies: [1852, 6222, 3981, 1334, 6225, 3811, 1212, 2]
+// Dependencies: [1876, 6242, 4005, 1358, 6245, 3835, 1236, 2]
 // Exports: useNitroTrialCtaOverride, usePremiumTrialOfferPremiumType, useShouldShowPremiumTrialUserSettingsAvatarBadge
 
-// Module 6221 (useShouldShowPremiumTrialUserSettingsAvatarBadge)
+// Module 6241 (useShouldShowPremiumTrialUserSettingsAvatarBadge)
 import { PremiumSubscriptionSKUToPremiumType as closure_2 } from "GuildFeatures";
 
 let result = require("UNSAFE_isDismissibleContentDismissed").fileFinishedImporting("modules/premium/native/MobileTrialUtils.tsx");
 
 export const useShouldShowPremiumTrialUserSettingsAvatarBadge = function useShouldShowPremiumTrialUserSettingsAvatarBadge() {
-  let expires_at;
-  const premiumTrialOffer = require(6222) /* usePremiumTrialOffer */.usePremiumTrialOffer();
-  const obj = require(6222) /* usePremiumTrialOffer */;
-  const result = require(3981) /* UNSAFE_isDismissibleContentDismissed */.useIsDismissibleContentDismissed_UNSAFE(require(1334) /* DismissibleContent */.DismissibleContent.PREMIUM_MOBILE_TRIAL_USER_SETTINGS_AVATAR_BADGE);
-  if (null != premiumTrialOffer) {
-    expires_at = premiumTrialOffer.expires_at;
+  const premiumTrialOffer = require(6242) /* usePremiumTrialOffer */.usePremiumTrialOffer();
+  const obj = require(6242) /* usePremiumTrialOffer */;
+  let tmp3 = null != premiumTrialOffer;
+  const result = require(4005) /* UNSAFE_isDismissibleContentDismissed */.useIsDismissibleContentDismissed_UNSAFE(require(1358) /* DismissibleContent */.DismissibleContent.PREMIUM_MOBILE_TRIAL_USER_SETTINGS_AVATAR_BADGE);
+  if (tmp3) {
+    let expires_at;
+    if (premiumTrialOffer != null) {
+      expires_at = premiumTrialOffer.expires_at;
+    }
+    tmp3 = null == expires_at;
   }
-  return null != premiumTrialOffer && null == expires_at && !result;
+  if (tmp3) {
+    tmp3 = !result;
+  }
+  return tmp3;
 };
 export const usePremiumTrialOfferPremiumType = function usePremiumTrialOfferPremiumType() {
-  const premiumTrialOffer = require(6222) /* usePremiumTrialOffer */.usePremiumTrialOffer();
+  const premiumTrialOffer = require(6242) /* usePremiumTrialOffer */.usePremiumTrialOffer();
   let sku_id;
-  if (null != premiumTrialOffer) {
+  if (premiumTrialOffer != null) {
     const subscription_trial = premiumTrialOffer.subscription_trial;
-    if (null != subscription_trial) {
+    if (subscription_trial != null) {
       sku_id = subscription_trial.sku_id;
     }
   }
   return table[sku_id];
 };
 export const useNitroTrialCtaOverride = function useNitroTrialCtaOverride(user_profile_premium_upsell_card) {
-  let obj = require(6222) /* usePremiumTrialOffer */;
+  let obj = require(6242) /* usePremiumTrialOffer */;
   const premiumTrialOffer = obj.usePremiumTrialOffer();
   let subscription_trial;
-  if (null != premiumTrialOffer) {
+  if (premiumTrialOffer != null) {
     subscription_trial = premiumTrialOffer.subscription_trial;
   }
   if (null == subscription_trial) {
     return null;
   } else {
-    obj = { location: user_profile_premium_upsell_card };
-    if (obj5.isAndroidTwoWeekTrialsTrialCTAEnabled(obj)) {
-      let obj1 = require(3811) /* _createForOfIteratorHelperLoose */;
-      obj = {};
-      ({ interval: obj3.intervalType, interval_count: obj3.intervalCount } = subscription_trial);
-      const result = obj1.formatIntervalDuration(obj);
-      const intl = require(1212) /* getSystemLocale */.intl;
-      obj1 = { duration: result };
-      return intl.formatToPlainString(require(1212) /* getSystemLocale */.t["6xpY54"], obj1);
+    let tmpResult = tmp(6245);
+    obj = { location: null };
+    obj[0] = user_profile_premium_upsell_card;
+    if (tmpResult.isAndroidTwoWeekTrialsTrialCTAEnabled(obj)) {
+      tmpResult = tmp(3835);
+      obj = { intervalType: null, intervalCount: null };
+      ({ interval: obj3[0], interval_count: obj3[1] } = subscription_trial);
+      const result = tmpResult.formatIntervalDuration(obj);
+      const intl = tmp(1236).intl;
+      const obj1 = { duration: null };
+      obj1[0] = result;
+      return intl.formatToPlainString(tmp(1236).t["6xpY54"], obj1);
     } else {
       return null;
     }
-    obj5 = require(6225) /* apexExperiment */;
   }
 };

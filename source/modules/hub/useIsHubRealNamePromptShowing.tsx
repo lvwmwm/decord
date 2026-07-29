@@ -1,28 +1,28 @@
-// Module ID: 11718
-// Function ID: 90753
+// Module ID: 11743
+// Function ID: 11744
 // Name: useIsHubRealNamePromptShowing
-// Dependencies: [31, 11719, 1918, 1838, 1850, 653, 11720, 566, 11721, 2]
+// Dependencies: [19, 11744, 1942, 1862, 1874, 676, 11745, 589, 11746, 2]
 // Exports: default
 
-// Module 11718 (useIsHubRealNamePromptShowing)
-import result from "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_5 from "_isNativeReflectConstruct";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import closure_7 from "_isNativeReflectConstruct";
+// Module 11743 (useIsHubRealNamePromptShowing)
+import noop from "noop";
+import initialize from "initialize";
+import trackCommunicationDisabled from "trackCommunicationDisabled";
+import createGuildRecordFromRust from "createGuildRecordFromRust";
+import mergeGuildAvatar from "mergeGuildAvatar";
 import { GuildFeatures } from "ME";
 import { GuildPrompts } from "GuildPrompts";
 
 const require = arg1;
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/hub/useIsHubRealNamePromptShowing.tsx");
+const result = require("trackCommunicationDisabled").fileFinishedImporting("modules/hub/useIsHubRealNamePromptShowing.tsx");
 
 export default function useIsHubRealNamePromptShowing(arg0) {
   const _require = arg0;
-  const items = [_createForOfIteratorHelperLoose, _isNativeReflectConstruct, closure_7, closure_5];
-  const stateFromStores = _require(566).useStateFromStores(items, () => {
+  const items = [createGuildRecordFromRust, initialize, mergeGuildAvatar, trackCommunicationDisabled];
+  const stateFromStores = _require(589).useStateFromStores(items, () => {
     const guild = outer1_6.getGuild(closure_0);
     let hasItem;
-    if (null != guild) {
+    if (guild != null) {
       const features = guild.features;
       hasItem = features.has(outer1_8.HUB);
     }
@@ -36,12 +36,12 @@ export default function useIsHubRealNamePromptShowing(arg0) {
         return null;
       } else {
         let id;
-        if (null != currentUser) {
+        if (currentUser != null) {
           id = currentUser.id;
         }
         const member = outer1_5.getMember(guild.id, id);
         let nick;
-        if (null != member) {
+        if (member != null) {
           nick = member.nick;
         }
         return null == nick;
@@ -50,11 +50,11 @@ export default function useIsHubRealNamePromptShowing(arg0) {
   });
   const items1 = [stateFromStores, arg0];
   const effect = React.useEffect(() => {
-    let tmp = null != closure_0;
-    if (tmp) {
-      tmp = null != stateFromStores;
+    let tmp2 = null != closure_0;
+    if (tmp2) {
+      tmp2 = null != stateFromStores;
     }
-    if (tmp) {
+    if (tmp2) {
       if (!stateFromStores) {
         stateFromStores(outer1_2[8]).viewPrompt(outer1_9.REAL_NAME_PROMPT, closure_0);
         const obj = stateFromStores(outer1_2[8]);

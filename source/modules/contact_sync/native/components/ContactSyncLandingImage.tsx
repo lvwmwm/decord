@@ -1,34 +1,35 @@
-// Module ID: 11755
-// Function ID: 91152
+// Module ID: 11780
+// Function ID: 11781
 // Name: ContactSyncLandingImage
-// Dependencies: [31, 27, 33, 4165, 11756, 11757, 2]
+// Dependencies: [19, 17, 21, 4189, 11781, 11782, 2]
 // Exports: default
 
-// Module 11755 (ContactSyncLandingImage)
-import "result";
+// Module 11780 (ContactSyncLandingImage)
+import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_2;
-let closure_3;
-let closure_4;
-let closure_5;
+let c3;
+let c4;
+let c5;
 let closure_6;
-({ Image: closure_2, View: closure_3 } = get_ActivityIndicator);
-({ jsx: closure_4, Fragment: closure_5, jsxs: closure_6 } = jsxProd);
-let closure_7 = _createForOfIteratorHelperLoose.createStyles({ leftContainer: { zIndex: 2, height: 106, width: 102, position: "absolute" }, landingImageLeft: { left: 58, top: -92 }, rightContainer: { position: "absolute", height: 113, width: 103 }, landingImageRight: { left: 134, top: -99 } });
+let obj1;
+({ Image: obj1, View: c3 } = get_ActivityIndicator);
+({ jsx: c4, Fragment: c5, jsxs: closure_6 } = jsxProd);
+let closure_7 = createCacheKey.createStyles({ leftContainer: { zIndex: 2, height: 106, width: 102, position: "absolute" }, landingImageLeft: { left: 58, top: -92 }, rightContainer: { position: "absolute", height: 113, width: 103 }, landingImageRight: { left: 134, top: -99 } });
 const result = require("jsxProd").fileFinishedImporting("modules/contact_sync/native/components/ContactSyncLandingImage.tsx");
 
 export default function ContactSyncLandingImage() {
   const tmp = callback3();
-  let obj = {};
-  obj = { style: tmp.leftContainer };
-  obj = { resizeMode: "contain", style: tmp.landingImageLeft, source: importDefault(11756) };
-  obj.children = callback(closure_2, obj);
+  let obj = { children: null };
+  obj = { style: tmp.leftContainer, children: null };
+  obj = { resizeMode: "contain", style: tmp.landingImageLeft, source: importDefault(11781) };
+  obj[1] = callback(closure_2, obj);
   const items = [callback(closure_3, obj), ];
-  const obj1 = { style: tmp.rightContainer, children: callback(closure_2, { resizeMode: "contain", style: tmp.landingImageRight, source: importDefault(11757) }) };
+  const obj1 = { style: tmp.rightContainer, children: null };
+  obj1[1] = callback(closure_2, { resizeMode: "contain", style: tmp.landingImageRight, source: importDefault(11782) });
   items[1] = callback(closure_3, obj1);
-  obj.children = items;
+  obj[0] = items;
   return callback2(closure_5, obj);
 };

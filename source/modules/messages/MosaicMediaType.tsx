@@ -1,10 +1,10 @@
-// Module ID: 9899
-// Function ID: 76559
+// Module ID: 9921
+// Function ID: 9922
 // Name: isVisualMedia
-// Dependencies: [653, 4352, 1360, 9900, 2]
+// Dependencies: [676, 4377, 1384, 9922, 2]
 // Exports: getMosaicMediaTypeForAttachment, getMosaicMediaTypeForUnfurledMediaItem, isVisualMedia
 
-// Module 9899 (isVisualMedia)
+// Module 9921 (isVisualMedia)
 import { MessageAttachmentFlags } from "ME";
 
 const re3 = /\.(mp3|m4a|ogg|opus|wav|flac)$/i;
@@ -35,28 +35,27 @@ export const getMosaicMediaTypeForAttachment = function getMosaicMediaTypeForAtt
           if (height > 0) {
             let str3 = "IMAGE";
             if (!obj2.isImageFile(filename)) {
+              let tmp5Result = tmp5(4377);
               let str5 = "INVALID";
-              if (obj3.isVideoFile(filename)) {
+              if (tmp5Result.isVideoFile(filename)) {
                 str5 = "INVALID";
                 if (null != proxy_url.proxy_url) {
-                  const flags = proxy_url.flags;
-                  let num5 = 0;
-                  if (null != flags) {
-                    num5 = flags;
+                  tmp5Result = tmp5(1384);
+                  let num2 = proxy_url.flags;
+                  if (num2 == null) {
+                    num2 = 0;
                   }
                   let str6 = "VIDEO";
-                  if (obj4.hasFlag(num5, MessageAttachmentFlags.IS_CLIP)) {
+                  if (tmp5Result.hasFlag(num2, MessageAttachmentFlags.IS_CLIP)) {
                     str6 = "CLIP";
                   }
                   str5 = str6;
-                  obj4 = require(1360) /* hasFlag */;
                 }
               }
               str3 = str5;
-              obj3 = require(4352) /* urlMatchesFileExtension */;
             }
             let str = str3;
-            obj2 = require(4352) /* urlMatchesFileExtension */;
+            obj2 = require(4377) /* urlMatchesFileExtension */;
           }
           return str;
         }
@@ -74,7 +73,7 @@ export const getMosaicMediaTypeForAttachment = function getMosaicMediaTypeForAtt
     if (obj.isPlaintextPreviewableFile(filename)) {
       str2 = "PLAINTEXT_PREVIEW";
     }
-    obj = require(9900) /* set */;
+    obj = require(9922) /* set */;
   }
   str = str2;
 };
@@ -90,12 +89,13 @@ export const getMosaicMediaTypeForUnfurledMediaItem = function getMosaicMediaTyp
           if (obj.isImageContentType(contentType)) {
             return "IMAGE";
           } else {
-            if (obj2.isVideoContentType(contentType)) {
+            if (tmpResult.isVideoContentType(contentType)) {
               return "VIDEO";
             }
-            obj2 = require(4352) /* urlMatchesFileExtension */;
+            tmpResult = tmp(4377);
           }
-          obj = require(4352) /* urlMatchesFileExtension */;
+          obj = require(4377) /* urlMatchesFileExtension */;
+          tmp = require;
         }
       }
     }

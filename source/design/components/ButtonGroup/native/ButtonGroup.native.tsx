@@ -1,38 +1,36 @@
-// Module ID: 5000
-// Function ID: 42805
+// Module ID: 5022
+// Function ID: 5023
 // Name: ButtonGroup
-// Dependencies: [31, 33, 4165, 4576, 2]
+// Dependencies: [19, 21, 4189, 4598, 2]
 // Exports: ButtonGroup
 
-// Module 5000 (ButtonGroup)
-import "result";
+// Module 5022 (ButtonGroup)
+import "noop";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
 const require = arg1;
-let closure_3 = _createForOfIteratorHelperLoose.createStyles({ container: { paddingVertical: 16 } });
-const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("design/components/ButtonGroup/native/ButtonGroup.native.tsx");
+let closure_3 = createCacheKey.createStyles({ container: { paddingVertical: 16 } });
+const result = require("createCacheKey").fileFinishedImporting("design/components/ButtonGroup/native/ButtonGroup.native.tsx");
 
-export const ButtonGroup = function ButtonGroup(Text, arg1) {
+export const ButtonGroup = function ButtonGroup(size) {
   let children;
   let style;
-  let str = Text.size;
+  let str = size.size;
   if (str === undefined) {
     str = "md";
   }
-  let obj = { size: 0, children: 0, style: 0 };
-  ({ children, style } = Text);
-  Object.setPrototypeOf(null);
-  const merged = Object.assign(Text, obj);
+  ({ children, style } = size);
+  const merged = Object.assign(size, Object.create(null));
   let num = 8;
   if ("sm" === str) {
     num = 12;
   }
-  obj = {};
+  const obj = {};
   const merged1 = Object.assign(merged);
-  obj["spacing"] = num;
+  obj.spacing = num;
   const items = [callback().container, style];
-  obj["style"] = items;
-  obj["children"] = children;
-  return jsx(require(4576) /* Stack */.Stack, {});
+  obj.style = items;
+  obj.children = children;
+  return jsx(require(4598) /* Stack */.Stack, {});
 };

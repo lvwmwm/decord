@@ -1,29 +1,29 @@
-// Module ID: 12813
-// Function ID: 99601
+// Module ID: 12835
+// Function ID: 12836
 // Name: NUFActionSheetTemplate
-// Dependencies: [31, 27, 33, 4165, 689, 4161, 4578, 2]
+// Dependencies: [19, 17, 21, 4189, 712, 4185, 4600, 2]
 // Exports: default
 
-// Module 12813 (NUFActionSheetTemplate)
-import "result";
+// Module 12835 (NUFActionSheetTemplate)
+import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_2;
-let closure_3;
-let closure_4;
-let closure_5;
+let c3;
+let c4;
+let c5;
+let obj1;
 const require = arg1;
-({ View: closure_2, Image: closure_3 } = get_ActivityIndicator);
-({ jsx: closure_4, jsxs: closure_5 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { padding: 16, alignItems: "center", backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW };
-_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.title = { textAlign: "center", marginBottom: 8 };
-_createForOfIteratorHelperLoose.description = { textAlign: "center", lineHeight: 18, marginBottom: 24 };
-_createForOfIteratorHelperLoose.image = { marginBottom: 24 };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+({ View: obj1, Image: c3 } = get_ActivityIndicator);
+({ jsx: c4, jsxs: c5 } = jsxProd);
+createCacheKey = { container: null, title: null, description: null, image: null };
+createCacheKey = { padding: 16, alignItems: "center", backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { textAlign: "center", marginBottom: 8 };
+createCacheKey[2] = { textAlign: "center", lineHeight: 18, marginBottom: 24 };
+createCacheKey[3] = { marginBottom: 24 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
 const result = require("jsxProd").fileFinishedImporting("modules/nuf_channels/native/components/NUFTemplate.tsx");
 
 export default function NUFActionSheetTemplate(arg0) {
@@ -33,14 +33,14 @@ export default function NUFActionSheetTemplate(arg0) {
   let onCTAPress;
   let title;
   ({ title, description, imageSrc, onCTAPress, CTALabel } = arg0);
-  const tmp = _createForOfIteratorHelperLoose();
-  let obj = { style: tmp.container };
+  const tmp = createCacheKey();
+  let obj = { style: tmp.container, children: null };
   obj = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: title };
-  const items = [callback(require(4161) /* Text */.Text, obj), , , ];
+  const items = [callback(require(4185) /* Text */.Text, obj), , , ];
   obj = { style: tmp.description, variant: "text-sm/medium", color: "text-default", children: description };
-  items[1] = callback(require(4161) /* Text */.Text, obj);
+  items[1] = callback(require(4185) /* Text */.Text, obj);
   items[2] = callback(closure_3, { source: imageSrc, style: tmp.image });
-  items[3] = callback(require(4578) /* Button */.Button, { text: CTALabel, size: "md", onPress: onCTAPress, grow: true });
-  obj.children = items;
+  items[3] = callback(require(4600) /* Button */.Button, { text: CTALabel, size: "md", onPress: onCTAPress, grow: true });
+  obj[1] = items;
   return callback2(closure_2, obj);
 };

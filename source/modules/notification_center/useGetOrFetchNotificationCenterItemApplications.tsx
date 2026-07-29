@@ -1,11 +1,11 @@
-// Module ID: 15252
-// Function ID: 116023
+// Module ID: 15285
+// Function ID: 15286
 // Name: set
-// Dependencies: [31, 5907, 5503, 2]
+// Dependencies: [19, 5926, 5521, 2]
 // Exports: useGetOrFetchNotificationCenterItemsApplications
 
-// Module 15252 (set)
-import result from "result";
+// Module 15285 (set)
+import noop from "noop";
 import set from "useGetOrFetchApplications";
 
 let items = [require("NotificationCenterScenes").NotificationCenterLocalItems.INCOMING_GAME_FRIEND_REQUESTS, require("NotificationCenterScenes").NotificationCenterLocalItems.INCOMING_GAME_FRIEND_REQUESTS_ACCEPTED, require("NotificationCenterScenes").NotificationCenterLocalItems.INCOMING_FRIEND_REQUESTS, require("NotificationCenterScenes").NotificationCenterLocalItems.INCOMING_FRIEND_REQUESTS_ACCEPTED];
@@ -20,7 +20,7 @@ export const useGetOrFetchNotificationCenterItemsApplications = function useGetO
     const items = [];
     const item = set.forEach((applicationId) => {
       applicationId = applicationId.applicationId;
-      if (outer2_3.has(applicationId.type)) {
+      if (outer1_3.has(applicationId.type)) {
         let hasItem = null == applicationId;
         if (!hasItem) {
           hasItem = set.has(applicationId);
@@ -33,5 +33,5 @@ export const useGetOrFetchNotificationCenterItemsApplications = function useGetO
     });
     return items;
   }, items);
-  return importDefault(5503)(memo);
+  return importDefault(5521)(memo);
 };

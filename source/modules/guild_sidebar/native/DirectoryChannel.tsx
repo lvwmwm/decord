@@ -1,26 +1,27 @@
-// Module ID: 15143
-// Function ID: 115171
-// Dependencies: [31, 1348, 1908, 10263, 4361, 33, 4165, 689, 624, 1198, 9073, 15071, 8292, 2]
+// Module ID: 15176
+// Function ID: 15177
+// Dependencies: [19, 1372, 1932, 10284, 4386, 21, 4189, 712, 647, 1222, 9097, 15104, 8316, 2]
 
-// Module 15143
-import importAllResult from "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_5 from "_isNativeReflectConstruct";
+// Module 15176
+import importAllResult from "noop";
+import ensureGuildLoaded from "ensureGuildLoaded";
+import comparator from "comparator";
 import { UnreadSetting } from "ReadStateTypes";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
 const require = arg1;
-let obj = {};
-obj = { marginVertical: require("hairlineWidth").CHANNEL_MARGIN_VERTICAL, marginHorizontal: 8, borderRadius: require("_createForOfIteratorHelperLoose").radii.md };
-obj.container = obj;
-let closure_8 = _createForOfIteratorHelperLoose.createStyles(obj);
+let c3 = importAllResult;
+let obj = { container: null };
+obj = { marginVertical: require("hairlineWidth").CHANNEL_MARGIN_VERTICAL, marginHorizontal: 8, borderRadius: require("Themes").radii.md };
+obj[0] = obj;
+let closure_8 = createCacheKey.createStyles(obj);
 const memoResult = importAllResult.memo((guildId) => {
   guildId = guildId.guildId;
   let selected = guildId.selected;
   let id;
-  let obj = guildId(624);
-  const items = [_isNativeReflectConstruct, closure_5];
+  let obj = guildId(647);
+  const items = [ensureGuildLoaded, comparator];
   const stateFromStores = obj.useStateFromStores(items, () => {
     const directoryChannelIds = outer1_5.getDirectoryChannelIds(guildId);
     let channel = null;
@@ -30,7 +31,7 @@ const memoResult = importAllResult.memo((guildId) => {
     return channel;
   });
   id = undefined;
-  if (null != stateFromStores) {
+  if (stateFromStores != null) {
     id = stateFromStores.id;
   }
   if (!selected) {
@@ -41,21 +42,26 @@ const memoResult = importAllResult.memo((guildId) => {
   const callback = importAllResult.useCallback(() => {
     guildId(outer1_2[9]).transitionToGuild(guildId, id);
   }, items1);
-  let tmp6 = null;
+  let tmp7 = null;
   if (null != stateFromStores) {
-    obj = { onPress: callback, onLongPress: tmp5, style: tmp.container, accessible: true, accessibilityRole: "button" };
-    obj = { channel: stateFromStores };
-    obj.accessibilityLabel = id(8292)(obj);
-    const obj1 = { selected };
-    obj.accessibilityState = obj1;
-    obj.channel = stateFromStores;
-    obj.selected = selected;
-    obj.resolvedUnreadSetting = UnreadSetting.ONLY_MENTIONS;
-    tmp6 = jsx(id(15071), { channel: stateFromStores });
-    const tmp10 = id(15071);
+    obj = { onPress: null, onLongPress: null, style: null, accessible: true, accessibilityRole: "button", accessibilityLabel: null, accessibilityState: null, channel: null, selected: null, resolvedUnreadSetting: null };
+    obj[0] = callback;
+    obj[1] = tmp6;
+    obj[2] = tmp.container;
+    obj = { channel: null };
+    obj[0] = stateFromStores;
+    obj[5] = id(8316)(obj);
+    const obj1 = { selected: null };
+    obj1[0] = selected;
+    obj[6] = obj1;
+    obj[7] = stateFromStores;
+    obj[8] = selected;
+    obj[9] = UnreadSetting.ONLY_MENTIONS;
+    tmp7 = jsx(id(15104), { channel: null });
+    const tmp10 = id(15104);
   }
-  return tmp6;
+  return tmp7;
 });
-let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/guild_sidebar/native/DirectoryChannel.tsx");
+let result = require("comparator").fileFinishedImporting("modules/guild_sidebar/native/DirectoryChannel.tsx");
 
 export default memoResult;

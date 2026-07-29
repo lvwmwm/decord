@@ -1,27 +1,27 @@
-// Module ID: 14286
-// Function ID: 109622
+// Module ID: 14308
+// Function ID: 14309
 // Name: MessagesHeaderItem
-// Dependencies: [31, 27, 33, 4165, 689, 4161, 1212, 2]
+// Dependencies: [19, 17, 21, 4189, 712, 4185, 1236, 2]
 // Exports: default
 
-// Module 14286 (MessagesHeaderItem)
-import "result";
+// Module 14308 (MessagesHeaderItem)
+import "noop";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
 const require = arg1;
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { flexDirection: "row", gap: require("_createForOfIteratorHelperLoose").space.PX_12, alignItems: "center", marginHorizontal: require("_createForOfIteratorHelperLoose").space.PX_24 };
-_createForOfIteratorHelperLoose.messagesHeaderContainer = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+createCacheKey = { messagesHeaderContainer: null };
+createCacheKey = { flexDirection: "row", gap: require("Themes").space.PX_12, alignItems: "center", marginHorizontal: require("Themes").space.PX_24 };
+createCacheKey[0] = createCacheKey;
+createCacheKey = createCacheKey.createStyles(createCacheKey);
 const result = require("jsxProd").fileFinishedImporting("modules/user_settings/appearance/native/components/SettingsAppearanceMessagesHeaderItem.tsx");
 
 export default function MessagesHeaderItem(animatedStyles) {
-  let obj = { style: _createForOfIteratorHelperLoose().messagesHeaderContainer };
-  obj = { animated: true, style: animatedStyles.animatedStyles.textNormal, variant: "text-lg/bold" };
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj.children = intl.string(require(1212) /* getSystemLocale */.t.OIgYlQ);
-  obj.children = jsx(require(4161) /* Text */.Text, { animated: true, style: animatedStyles.animatedStyles.textNormal, variant: "text-lg/bold" });
-  return <View animated style={arg0.animatedStyles.textNormal} variant="text-lg/bold" />;
+  let obj = { style: createCacheKey().messagesHeaderContainer, children: null };
+  obj = { animated: true, style: animatedStyles.animatedStyles.textNormal, variant: "text-lg/bold", children: null };
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj[3] = intl.string(require(1236) /* getSystemLocale */.t.OIgYlQ);
+  obj[1] = jsx(require(4185) /* Text */.Text, { animated: true, style: animatedStyles.animatedStyles.textNormal, variant: "text-lg/bold", children: null });
+  return <View animated style={arg0.animatedStyles.textNormal} variant="text-lg/bold">{null}</View>;
 };

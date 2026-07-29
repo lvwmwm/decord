@@ -1,71 +1,73 @@
-// Module ID: 15977
-// Function ID: 123318
+// Module ID: 16012
+// Function ID: 16013
 // Name: VoicePanelNsfwAlert
-// Dependencies: [31, 1391, 1838, 33, 4510, 4510, 1212, 5083, 4979, 2]
+// Dependencies: [19, 1415, 1862, 21, 4533, 4533, 1236, 5105, 5001, 2]
 // Exports: default
 
-// Module 15977 (VoicePanelNsfwAlert)
-import "result";
-import { isGuildNSFW } from "isGuildOwner";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+// Module 16012 (VoicePanelNsfwAlert)
+import "noop";
+import { isGuildNSFW } from "GuildNSFWContentLevel";
+import createGuildRecordFromRust from "createGuildRecordFromRust";
 import jsxProd from "jsxProd";
 
-let closure_5;
+let c5;
 let closure_6;
 const require = arg1;
-({ jsx: closure_5, jsxs: closure_6 } = jsxProd);
-const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/voice_panel/native/alerts/VoicePanelNsfwAlert.tsx");
+({ jsx: c5, jsxs: closure_6 } = jsxProd);
+const result = require("createGuildRecordFromRust").fileFinishedImporting("modules/voice_panel/native/alerts/VoicePanelNsfwAlert.tsx");
 
 export default function VoicePanelNsfwAlert(guildId) {
   guildId = guildId.guildId;
   const channelId = guildId.channelId;
-  let obj = guildId(4510);
-  const dependencyMap = obj.useDismissModalCallback();
-  const tmp = isGuildNSFW(guild.getGuild(guildId));
-  obj = {};
-  const intl = guildId(1212).intl;
+  let dependencyMap;
+  let obj = guildId(4533);
+  dependencyMap = obj.useDismissModalCallback();
+  const tmp3 = isGuildNSFW(guild.getGuild(guildId));
+  const intl = guildId(1236).intl;
   const string = intl.string;
-  const t = guildId(1212).t;
-  if (tmp) {
+  const t = guildId(1236).t;
+  if (tmp3) {
     let stringResult = string(t.xi46lg);
   } else {
     stringResult = string(t.ZmwvDc);
   }
-  obj.title = stringResult;
-  const intl2 = guildId(1212).intl;
+  obj = { title: stringResult, content: null, actions: null };
+  const intl2 = tmp(1236).intl;
   const string2 = intl2.string;
-  const t2 = guildId(1212).t;
-  if (tmp) {
+  const t2 = tmp(1236).t;
+  if (tmp3) {
     let string2Result = string2(t2.ZtuRts);
   } else {
     string2Result = string2(t2.E4Cd5I);
   }
-  obj.content = string2Result;
-  obj = {};
+  obj[1] = string2Result;
+  obj = { children: null };
   const obj1 = {
     variant: "primary",
     onPress() {
-      channelId(5083).nsfwAgree(guildId);
-      const obj = channelId(5083);
-      const voiceChannel = channelId(4979).selectVoiceChannel(channelId);
+      channelId(5105).nsfwAgree(guildId);
+      const obj = channelId(5105);
+      const voiceChannel = channelId(5001).selectVoiceChannel(channelId);
       dependencyMap();
-    }
+    },
+    text: null
   };
-  const intl3 = guildId(1212).intl;
-  obj1.text = intl3.string(guildId(1212).t.wVq7uo);
-  const items = [callback(guildId(4510).AlertActionButton, obj1, "confirm"), ];
+  const intl3 = tmp(1236).intl;
+  obj1[2] = intl3.string(guildId(1236).t.wVq7uo);
+  const items = [closure_5(guildId(4533).AlertActionButton, obj1, "confirm"), ];
   const obj2 = {
     variant: "secondary",
     onPress() {
-      channelId(5083).nsfwReturnToSafety(guildId);
+      channelId(5105).nsfwReturnToSafety(guildId);
       dependencyMap();
-    }
+    },
+    text: null
   };
-  const intl4 = guildId(1212).intl;
-  obj2.text = intl4.string(guildId(1212).t["/g10LC"]);
-  items[1] = callback(guildId(4510).AlertActionButton, obj2, "add-profile-picture");
-  obj.children = items;
-  obj.actions = callback2(guildId(4510).AlertActions, obj);
-  return callback(guildId(4510).AlertModal, obj);
+  const intl4 = tmp(1236).intl;
+  obj2[2] = intl4.string(guildId(1236).t["/g10LC"]);
+  items[1] = closure_5(guildId(4533).AlertActionButton, obj2, "add-profile-picture");
+  obj[0] = items;
+  obj[2] = callback(guildId(4533).AlertActions, obj);
+  return closure_5(guildId(4533).AlertModal, obj);
 };
 export const VOICE_PANEL_NSFW_KEY = "voice-panel-nsfw";

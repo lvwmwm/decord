@@ -1,53 +1,55 @@
-// Module ID: 11641
-// Function ID: 90309
+// Module ID: 11665
+// Function ID: 11666
 // Name: GuildPowerupsGameServerCard
-// Dependencies: [31, 27, 4157, 4073, 33, 4165, 689, 566, 11642, 11643, 11634, 11638, 3877, 2]
+// Dependencies: [19, 17, 4181, 4097, 21, 4189, 712, 589, 11666, 11667, 11658, 11662, 3901, 2]
 // Exports: default
 
-// Module 11641 (GuildPowerupsGameServerCard)
-import "result";
+// Module 11665 (GuildPowerupsGameServerCard)
+import "noop";
 import { View } from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_5 from "_isNativeReflectConstruct";
+import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
+import handleGameServerInstanceCreated from "handleGameServerInstanceCreated";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
 const require = arg1;
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { flex: 1, paddingVertical: require("_createForOfIteratorHelperLoose").space.PX_8 };
-_createForOfIteratorHelperLoose.riveContainer = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/premium/powerups/native/GuildPowerupsGameServerCard.tsx");
+createCacheKey = { riveContainer: null };
+createCacheKey = { flex: 1, paddingVertical: require("Themes").space.PX_8 };
+createCacheKey[0] = createCacheKey;
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+const result = require("maybeApplyNoTextColorForLightCustomTheme").fileFinishedImporting("modules/premium/powerups/native/GuildPowerupsGameServerCard.tsx");
 
 export default function GuildPowerupsGameServerCard(guildId) {
   guildId = guildId.guildId;
-  let obj = guildId(566);
-  const items = [closure_5];
+  let obj = guildId(589);
+  const items = [handleGameServerInstanceCreated];
   const stateFromStores = obj.useStateFromStores(items, () => outer1_5.getStateForGuild(guildId));
-  const tmp = _createForOfIteratorHelperLoose();
-  const tmp4 = importDefault(11643)(guildId);
-  let obj1 = guildId(566);
-  const items1 = [_isNativeReflectConstruct];
-  const stateFromStores1 = obj1.useStateFromStores(items1, () => outer1_4.useReducedMotion);
-  let tmp7 = null;
+  const tmp = createCacheKey();
+  const tmp2 = guildId;
+  const tmp5 = importDefault;
+  const tmp7 = importDefault(11667)(guildId);
+  let obj1 = guildId(589);
+  const items1 = [maybeApplyNoTextColorForLightCustomTheme];
+  const stateFromStores1 = obj1.useStateFromStores(items1, () => useReducedMotion.useReducedMotion);
+  let tmp10 = null;
   if (null != stateFromStores) {
-    tmp7 = null;
-    if (null != tmp4) {
-      obj = {};
-      ({ title: obj3.title, description: obj3.description, cost: obj3.cost } = tmp4);
-      obj.costDecorator = "+";
-      obj = { style: tmp.riveContainer };
-      obj1 = { stateMachine: "SM_Auto" };
-      const obj2 = { reducedMotion: stateFromStores1 };
-      obj1.dataBinding = obj2;
-      obj.children = jsx(guildId(3877).GameServerHostingRive, { stateMachine: "SM_Auto" });
-      obj.riveComponent = <View style={tmp.riveContainer} />;
-      obj.badge = "beta";
-      obj.status = tmp3;
-      obj.onPress = tmp6;
-      tmp7 = jsx(importDefault(11638), { style: tmp.riveContainer });
-      const tmp11 = importDefault(11638);
+    tmp10 = null;
+    if (null != tmp7) {
+      obj = { title: null, description: null, cost: null, costDecorator: "+", riveComponent: null, badge: "beta", status: null, onPress: null };
+      ({ title: obj3[0], description: obj3[1], cost: obj3[2] } = tmp7);
+      obj = { style: null, children: null };
+      obj[0] = tmp.riveContainer;
+      obj1 = { stateMachine: "SM_Auto", dataBinding: null };
+      const obj2 = { reducedMotion: null };
+      obj2[0] = stateFromStores1;
+      obj1[1] = obj2;
+      obj[1] = jsx(tmp2(3901).GameServerHostingRive, { stateMachine: "SM_Auto", dataBinding: null });
+      obj[4] = <View style={null}>{null}</View>;
+      obj[6] = tmp6;
+      obj[7] = tmp9;
+      tmp10 = jsx(tmp5(11662), { style: null, children: null });
+      const tmp5Result = tmp5(11662);
     }
   }
-  return tmp7;
+  return tmp10;
 };

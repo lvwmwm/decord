@@ -1,23 +1,21 @@
-// Module ID: 4229
-// Function ID: 36191
+// Module ID: 4253
+// Function ID: 4254
 // Name: isStreamKey
-// Dependencies: [57, 4230, 2]
+// Dependencies: [32, 4254, 2]
 // Exports: decodeStreamKey, encodeStreamKey, isStreamKey
 
-// Module 4229 (isStreamKey)
+// Module 4253 (isStreamKey)
 import _slicedToArray from "_slicedToArray";
 import { StreamTypes } from "StreamIssueReportReasons";
 
 const result = require("set").fileFinishedImporting("modules/go_live/utils/StreamKeyUtils.tsx");
 
-export const isStreamKey = function isStreamKey(c29) {
-  let tmp = null != c29;
+export const isStreamKey = function isStreamKey(id) {
+  let tmp = null != id;
   if (tmp) {
-    let startsWithResult = c29.startsWith(StreamTypes.GUILD);
-    if (!startsWithResult) {
-      startsWithResult = c29.startsWith(StreamTypes.CALL);
-    }
-    tmp = startsWithResult;
+    tmp = id.startsWith(StreamTypes.GUILD) || id.startsWith(StreamTypes.CALL);
+    const tmp2 = StreamTypes;
+    const tmp3 = id.startsWith(StreamTypes.GUILD) || id.startsWith(StreamTypes.CALL);
   }
   return tmp;
 };
@@ -25,12 +23,12 @@ export const decodeStreamKey = function decodeStreamKey(streamKey) {
   const parts = streamKey.split(":");
   const first = parts[0];
   if (StreamTypes.GUILD === first) {
-    const tmp12 = callback(parts, 4);
-    let obj = { streamType: tmp12[0], guildId: tmp12[1], channelId: tmp12[2], ownerId: tmp12[3] };
+    let obj = { streamType: null, guildId: null, channelId: null, ownerId: null };
+    [obj2[0], obj2[1], obj2[2], obj2[3]] = callback(parts, 4);
     return obj;
-  } else if (StreamTypes.CALL === first) {
-    const tmp10 = callback(parts, 3);
-    obj = { streamType: tmp10[0], channelId: tmp10[1], ownerId: tmp10[2] };
+  } else if (tmp3.CALL === first) {
+    obj = { streamType: null, channelId: null, ownerId: null };
+    [obj[0], obj[1], obj[2]] = callback(parts, 3);
     return obj;
   } else {
     const _Error = Error;
@@ -47,7 +45,7 @@ export const encodeStreamKey = function encodeStreamKey(currentUserActiveStream)
   if (StreamTypes.GUILD === streamType) {
     const items = [streamType, tmp, channelId, ownerId];
     return items.join(":");
-  } else if (StreamTypes.CALL === streamType) {
+  } else if (tmp2.CALL === streamType) {
     const items1 = [streamType, channelId, ownerId];
     return items1.join(":");
   } else {

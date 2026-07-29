@@ -1,79 +1,81 @@
-// Module ID: 12033
-// Function ID: 92853
+// Module ID: 12057
+// Function ID: 12058
 // Name: UserProfileWidgetsBoardEditNotice
-// Dependencies: [31, 27, 1345, 33, 4165, 689, 8055, 1324, 9642, 1334, 4121, 4161, 1212, 4695, 5153, 2]
+// Dependencies: [19, 17, 1369, 21, 4189, 712, 8079, 1348, 9664, 1358, 4145, 4185, 1236, 4717, 5175, 2]
 // Exports: default
 
-// Module 12033 (UserProfileWidgetsBoardEditNotice)
-import "result";
+// Module 12057 (UserProfileWidgetsBoardEditNotice)
+import "noop";
 import { View } from "get ActivityIndicator";
 import { ContentDismissActionType } from "ContentDismissActionType";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_5;
+let c5;
 let closure_6;
 const require = arg1;
-({ jsx: closure_5, jsxs: closure_6 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { flexDirection: "row", alignItems: "flex-start", gap: require("_createForOfIteratorHelperLoose").space.PX_8, marginBottom: require("_createForOfIteratorHelperLoose").space.PX_16 };
-_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.icon = { flexShrink: 0, marginTop: 2 };
-_createForOfIteratorHelperLoose.text = { flex: 1 };
-_createForOfIteratorHelperLoose.closeButton = { flexShrink: 0 };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+({ jsx: c5, jsxs: closure_6 } = jsxProd);
+createCacheKey = { container: null, icon: null, text: null, closeButton: null };
+createCacheKey = { flexDirection: "row", alignItems: "flex-start", gap: require("Themes").space.PX_8, marginBottom: require("Themes").space.PX_16 };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { flexShrink: 0, marginTop: 2 };
+createCacheKey[2] = { flex: 1 };
+createCacheKey[3] = { flexShrink: 0 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
 const result = require("ContentDismissActionType").fileFinishedImporting("modules/user_profile/native/UserProfileWidgetsBoardEditNotice.tsx");
 
 export default function UserProfileWidgetsBoardEditNotice() {
-  const _require = _createForOfIteratorHelperLoose();
-  importDefault = importDefault(8055)();
-  const dependencyMap = importDefault(1324)("UserProfileWidgetsBoardEditNotice");
-  let obj = {};
-  let items = [_require(1334).DismissibleContent.USER_PROFILE_WIDGETS_BOARD_MOBILE_EDIT_NOTICE];
-  obj.contentTypes = items;
-  obj.bypassAutoDismiss = true;
-  obj.children = function children(markAsDismissed) {
+  const _require = createCacheKey();
+  importDefault = importDefault(8079)();
+  const dependencyMap = importDefault(1348)("UserProfileWidgetsBoardEditNotice");
+  let obj = { contentTypes: null, bypassAutoDismiss: true, children: null };
+  let items = [_require(1358).DismissibleContent.USER_PROFILE_WIDGETS_BOARD_MOBILE_EDIT_NOTICE];
+  obj[0] = items;
+  obj[2] = function children(markAsDismissed) {
     markAsDismissed = markAsDismissed.markAsDismissed;
-    let tmp = null;
-    if (markAsDismissed.visibleContent === callback(1334).DismissibleContent.USER_PROFILE_WIDGETS_BOARD_MOBILE_EDIT_NOTICE) {
-      let obj = {};
+    let tmp4Result = null;
+    if (markAsDismissed.visibleContent === callback(table[9]).DismissibleContent.USER_PROFILE_WIDGETS_BOARD_MOBILE_EDIT_NOTICE) {
+      let obj = { style: null, children: null };
       const items = [lib.card, markAsDismissed.container];
-      obj.style = items;
-      obj = { style: markAsDismissed.icon };
-      const obj1 = { size: "xs", color: lib(689).colors.TEXT_MUTED };
-      obj.children = outer1_5(callback(4121).CircleInformationIcon, obj1);
+      obj[0] = items;
+      obj = { style: null, children: null };
+      obj[0] = markAsDismissed.icon;
+      const obj1 = { size: "xs", color: null };
+      obj1[1] = lib(tmp2[5]).colors.TEXT_MUTED;
+      obj[1] = outer1_5(tmp(tmp2[10]).CircleInformationIcon, obj1);
       const items1 = [outer1_5(outer1_3, obj), , ];
-      const obj2 = { style: markAsDismissed.text };
+      const obj2 = { style: null, variant: null, color: null, children: null };
+      obj2[0] = markAsDismissed.text;
       let str = "text-sm/semibold";
-      if (dependencyMap) {
+      if (table) {
         str = "text-sm/medium";
       }
-      obj2.variant = str;
+      obj2[1] = str;
       let str2 = "text-default";
-      if (dependencyMap) {
+      if (tmp10) {
         str2 = "text-strong";
       }
-      obj2.color = str2;
-      const intl = callback(1212).intl;
-      obj2.children = intl.string(callback(1212).t.kv8ULD);
-      items1[1] = outer1_5(callback(4161).Text, obj2);
-      obj = { accessibilityRole: "button" };
-      const intl2 = callback(1212).intl;
-      obj.accessibilityLabel = intl2.string(callback(1212).t.WAI6xu);
-      obj.onPress = function onPress() {
-        return markAsDismissed(outer2_4.USER_DISMISS);
+      obj2[2] = str2;
+      const intl = tmp(tmp2[12]).intl;
+      obj2[3] = intl.string(tmp(tmp2[12]).t.kv8ULD);
+      items1[1] = outer1_5(tmp(tmp2[11]).Text, obj2);
+      obj = { accessibilityRole: "button", accessibilityLabel: null, onPress: null, style: null, children: null };
+      const intl2 = tmp(tmp2[12]).intl;
+      obj[1] = intl2.string(tmp(tmp2[12]).t.WAI6xu);
+      obj[2] = function onPress() {
+        return markAsDismissed(outer1_4.USER_DISMISS);
       };
-      obj.style = markAsDismissed.closeButton;
-      const obj3 = { size: "sm" };
-      obj.children = outer1_5(callback(5153).XSmallIcon, obj3);
-      items1[2] = outer1_5(callback(4695).PressableOpacity, obj);
-      obj.children = items1;
-      tmp = outer1_6(outer1_3, obj);
-      const tmp11 = outer1_5;
-      const tmp7 = outer1_6;
-      const tmp8 = outer1_3;
+      obj[3] = markAsDismissed.closeButton;
+      obj[4] = outer1_5(tmp(tmp2[14]).XSmallIcon, { size: "sm" });
+      items1[2] = outer1_5(tmp(tmp2[13]).PressableOpacity, obj);
+      obj[1] = items1;
+      tmp4Result = outer1_6(outer1_3, obj);
+      tmp10 = table;
+      const tmp4 = outer1_6;
+      const tmp5 = outer1_3;
+      const tmp7 = markAsDismissed;
     }
-    return tmp;
+    return tmp4Result;
   };
-  return callback(importDefault(9642), obj);
+  return callback(importDefault(9664), obj);
 };

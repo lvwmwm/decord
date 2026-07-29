@@ -1,23 +1,36 @@
 // Module ID: 3343
-// Function ID: 26192
-// Dependencies: [1932, 1933]
+// Function ID: 3344
+// Dependencies: [1957, 1956]
 
 // Module 3343
-import result from "result";
+import buildMatchPatternFn from "buildMatchPatternFn";
+import buildMatchFn from "buildMatchFn";
 
-obj = { ordinalNumber: require("result")(obj), era: result.default({ matchPatterns: obj1, defaultMatchWidth: "wide", parsePatterns: { any: items }, defaultParseWidth: "any" }), quarter: result.default(obj2), month: result.default({ matchPatterns: obj4, defaultMatchWidth: "wide", parsePatterns: { narrow: items2, any: items3 }, defaultParseWidth: "any" }), day: result.default({ matchPatterns: obj5, defaultMatchWidth: "wide", parsePatterns: { any: items4 }, defaultParseWidth: "any" }), dayPeriod: result.default({ matchPatterns: obj6, defaultMatchWidth: "any", parsePatterns: { any: obj7 }, defaultParseWidth: "any" }) };
-obj = {
-  matchPattern: /^(\d+)\.?/i,
+if (!buildMatchPatternFn) {
+  let obj = { default: null };
+  obj[0] = buildMatchPatternFn;
+} else {
+  obj = buildMatchPatternFn;
+}
+if (!buildMatchFn) {
+  obj = { default: null };
+  obj[0] = buildMatchFn;
+  let obj2 = obj;
+} else {
+  obj2 = buildMatchFn;
+}
+obj2 = {
+  matchPattern: /^第?\d+(年|四半期|月|週|日|時|分|秒)?/i,
   parsePattern: /\d+/i,
-  valueCallback(replaced) {
-    return parseInt(replaced, 10);
+  valueCallback(joined) {
+    return parseInt(joined, 10);
   }
 };
-items = [/^f/i, /^e/i];
-const items1 = [/1/i, /2/i, /3/i, /4/i];
-items2 = [/^j/i, /^f/i, /^m/i, /^a/i, /^m/i, /^j/i, /^j/i, /^a/i, /^s/i, /^o/i, /^n/i, /^d/i];
-items3 = [/^ja/i, /^f/i, /^mar/i, /^ap/i, /^mai/i, /^jun/i, /^jul/i, /^aug/i, /^s/i, /^o/i, /^n/i, /^d/i];
-items4 = [/^s/i, /^m/i, /^ti/i, /^o/i, /^to/i, /^f/i, /^l/i];
+const items = [/^B/i, /^A/i];
+const items1 = [/^(紀元前)/i, /^(西暦|紀元後)/i];
+const items2 = [/(1|一|１)/i, /(2|二|２)/i, /(3|三|３)/i, /(4|四|４)/i];
+const items3 = [/^1\D/, /^2/, /^3/, /^4/, /^5/, /^6/, /^7/, /^8/, /^9/, /^10/, /^11/, /^12/];
+const items4 = [/^日/, /^月/, /^火/, /^水/, /^木/, /^金/, /^土/];
 
-export default obj;
+export default { ordinalNumber: obj.default(obj2), era: obj2.default({ matchPatterns: obj3, defaultMatchWidth: "wide", parsePatterns: { narrow: items, any: items1 }, defaultParseWidth: "any" }), quarter: obj2.default(obj4), month: obj2.default({ matchPatterns: obj6, defaultMatchWidth: "wide", parsePatterns: { any: items3 }, defaultParseWidth: "any" }), day: obj2.default({ matchPatterns: obj7, defaultMatchWidth: "wide", parsePatterns: { any: items4 }, defaultParseWidth: "any" }), dayPeriod: obj2.default({ matchPatterns: obj8, defaultMatchWidth: "any", parsePatterns: { any: obj9 }, defaultParseWidth: "any" }) };
 export default exports.default;

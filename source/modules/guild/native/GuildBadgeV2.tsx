@@ -1,54 +1,54 @@
-// Module ID: 8440
-// Function ID: 67276
+// Module ID: 8464
+// Function ID: 8465
 // Name: GuildBadgeV2
-// Dependencies: [31, 33, 4165, 1273, 4011, 8441, 8438, 8439, 2]
+// Dependencies: [19, 21, 4189, 1297, 4035, 8465, 8462, 8463, 2]
 // Exports: default, hasGuildBadge
 
-// Module 8440 (GuildBadgeV2)
-import "result";
+// Module 8464 (GuildBadgeV2)
+import "noop";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
 const require = arg1;
-let closure_3 = _createForOfIteratorHelperLoose.createStyles({ icon: { marginRight: 8 } });
-const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/guild/native/GuildBadgeV2.tsx");
+let closure_3 = createCacheKey.createStyles({ icon: { marginRight: 8 } });
+const result = require("createCacheKey").fileFinishedImporting("modules/guild/native/GuildBadgeV2.tsx");
 
 export default function GuildBadgeV2(arg0) {
   let guild;
   let size;
   ({ guild, size } = arg0);
   if (size === undefined) {
-    size = require(1273) /* Button */.Icon.Sizes.MEDIUM;
+    size = require(1297) /* Button */.Icon.Sizes.MEDIUM;
   }
-  let obj = Object.create(null);
-  obj.guild = 0;
-  obj.size = 0;
-  const merged = Object.assign(arg0, obj);
-  require(4011) /* AccessibilityAnnouncer */;
+  const merged = Object.assign(arg0, Object.create(null));
+  require(4035) /* AccessibilityAnnouncer */;
   if (null == guild) {
     return null;
   } else {
-    obj = require(8441) /* resolveImageSource */;
-    const guildBadgeImageSource = obj.getGuildBadgeImageSource(guild, tmp7);
-    let tmp11 = null;
+    const guildBadgeImageSource = tmp5(8465).getGuildBadgeImageSource(guild, tmp8);
+    let tmp10 = null;
     if (null != guildBadgeImageSource) {
-      obj = { size, source: guildBadgeImageSource, style: tmp5.icon, disableColor: true };
+      const obj = { size: null, source: null, style: null, disableColor: true };
+      obj[0] = size;
+      obj[1] = guildBadgeImageSource;
+      obj[2] = tmp4.icon;
       const merged1 = Object.assign(merged);
-      tmp11 = jsx(require(1273) /* Button */.Icon, { size, source: guildBadgeImageSource, style: tmp5.icon, disableColor: true });
+      tmp10 = jsx(tmp5(1297).Icon, { size: null, source: null, style: null, disableColor: true });
     }
-    return tmp11;
+    return tmp10;
   }
-  tmp5 = callback();
+  tmp4 = callback();
 };
-export const hasGuildBadge = function hasGuildBadge(fromGuildProfileResult, closure_2) {
-  const guildTraits = require(8438) /* isPremiumGuild */.getGuildTraits(fromGuildProfileResult);
-  const obj = require(8438) /* isPremiumGuild */;
-  const badgeCategory = require(8439) /* BadgeCategory */.getBadgeCategory(guildTraits);
-  const tmp3 = require(8441) /* resolveImageSource */.badgeVariants[badgeCategory];
-  let tmp4 = null != tmp3;
-  if (tmp4) {
-    tmp4 = null != require(8441) /* resolveImageSource */.resolveImageSource(tmp3, guildTraits, closure_2);
-    const obj3 = require(8441) /* resolveImageSource */;
+export const hasGuildBadge = function hasGuildBadge(fromGuildProfileResult) {
+  const guildTraits = require(8462) /* GuildVisibility */.getGuildTraits(fromGuildProfileResult);
+  const obj = require(8462) /* GuildVisibility */;
+  const tmp = require;
+  const badgeCategory = require(8463) /* BadgeCategory */.getBadgeCategory(guildTraits);
+  const tmp5 = require(8465) /* badgeVariants */.badgeVariants[badgeCategory];
+  let tmp6 = null != tmp5;
+  if (tmp6) {
+    tmp6 = null != tmp(8465).resolveImageSource(tmp5, guildTraits, arg1);
+    const tmpResult = tmp(8465);
   }
-  return tmp4;
+  return tmp6;
 };

@@ -1,32 +1,33 @@
-// Module ID: 9406
-// Function ID: 73229
+// Module ID: 9430
+// Function ID: 9431
 // Name: EXPRESSION_FOOTER_HEIGHT
-// Dependencies: [31, 5030, 653, 1314, 33, 4165, 689, 4026, 675, 4134, 4135, 9407, 9419, 5251, 9420, 9217, 9422, 9424, 2]
+// Dependencies: [19, 5052, 676, 1338, 21, 4189, 712, 4050, 698, 4158, 4159, 9431, 9443, 5273, 9444, 9241, 9446, 9448, 2]
 
-// Module 9406 (EXPRESSION_FOOTER_HEIGHT)
-import importAllResult from "result";
+// Module 9430 (EXPRESSION_FOOTER_HEIGHT)
+import importAllResult from "noop";
 import { EmojiCategoryTypes } from "EmojiCategoryTypes";
 import ME from "ME";
 import { ExpressionPickerViewType } from "ExpressionPickerViewType";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
 let CATEGORY_ICON_SIZE;
 let EXPRESSION_FOOTER_HEIGHT;
-let closure_10;
-let closure_11;
-let closure_5;
+let c10;
+let c5;
+let c9;
 let closure_6;
-let closure_9;
+let unpackModuleId;
 const require = arg1;
-({ AnalyticEvents: closure_5, AnalyticsPages: closure_6, CATEGORY_ICON_SIZE, EXPRESSION_FOOTER_HEIGHT } = ME);
-({ jsx: closure_9, Fragment: closure_10, jsxs: closure_11 } = jsxProd);
-let obj = { list: { flex: 1, height: EXPRESSION_FOOTER_HEIGHT } };
-obj = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_MOD_MUTED };
-obj.listPlaceholder = obj;
-obj.item = { height: EXPRESSION_FOOTER_HEIGHT, width: EXPRESSION_FOOTER_HEIGHT, justifyContent: "center", alignItems: "center" };
-obj.keyboardItem = { height: CATEGORY_ICON_SIZE, width: CATEGORY_ICON_SIZE };
-let closure_12 = _createForOfIteratorHelperLoose.createStyles(obj);
+let c3 = importAllResult;
+({ AnalyticEvents: c5, AnalyticsPages: closure_6, CATEGORY_ICON_SIZE, EXPRESSION_FOOTER_HEIGHT } = ME);
+({ jsx: c9, Fragment: c10, jsxs: unpackModuleId } = jsxProd);
+let obj = { list: { flex: 1, height: EXPRESSION_FOOTER_HEIGHT }, listPlaceholder: null, item: null, keyboardItem: null };
+obj = { backgroundColor: require("Themes").colors.BACKGROUND_MOD_MUTED };
+obj[1] = obj;
+obj[2] = { height: EXPRESSION_FOOTER_HEIGHT, width: EXPRESSION_FOOTER_HEIGHT, justifyContent: "center", alignItems: "center" };
+obj[3] = { height: CATEGORY_ICON_SIZE, width: CATEGORY_ICON_SIZE };
+let closure_12 = createCacheKey.createStyles(obj);
 let closure_13 = { code: "function EmojiPickerCategoriesTsx1(){const{categoryIndexActive}=this.__closure;return categoryIndexActive.get();}" };
 let closure_14 = { code: "function EmojiPickerCategoriesTsx2(categoryIndex,categoryIndexPrev){const{blockRef,EXPRESSION_FOOTER_HEIGHT,runOnJS,scrollToCategoryIndex}=this.__closure;const ref=blockRef.get();if(categoryIndexPrev==null||categoryIndex===categoryIndexPrev||ref==null){return;}const categoryScrollPos=categoryIndex*EXPRESSION_FOOTER_HEIGHT;if(categoryScrollPos>ref.end||categoryScrollPos<ref.start){runOnJS(scrollToCategoryIndex)(categoryIndex);}}" };
 let closure_15 = { code: "function EmojiPickerCategoriesTsx3(){const{inPortalKeyboard,bottomSheetIndex}=this.__closure;return inPortalKeyboard?bottomSheetIndex.get()===1:bottomSheetIndex.get()===0;}" };
@@ -76,28 +77,30 @@ const memoResult = importAllResult.memo(function EmojiPickerCategories(bottomShe
   ref = categoryIndexActive.useRef(null);
   let items = [categories];
   const memo = categoryIndexActive.useMemo(() => {
+    let arr = categories;
     let num = 0;
     if (0 < categories.length) {
       while (categories[num].type !== emojiPickerListRef.UNICODE) {
         num = num + 1;
-        let tmp5 = categories;
+        arr = arr2;
       }
-      const obj = {};
+      const obj = { sections: null, firstUnicodeCategory: null, firstUnicodeCategoryIndex: null };
       const items = [categories.length];
-      obj.sections = items;
-      obj.firstUnicodeCategory = categories[num];
-      obj.firstUnicodeCategoryIndex = num;
+      obj[0] = items;
+      obj[1] = categories[num];
+      obj[2] = num;
       return obj;
     }
-    const sections = [categories.length];
+    const sections = [arr.length];
     return { sections };
   }, items);
   ({ firstUnicodeCategory, sections, firstUnicodeCategoryIndex } = memo);
-  callback = categoryIndexActive.useCallback((item) => {
-    if (null != closure_10.current) {
+  callback = categoryIndexActive.useCallback((arg0) => {
+    if (null != ref.current) {
       const current = ref.current;
-      if (null != current) {
-        const obj = { section: 0, item, animated: false };
+      if (current != null) {
+        const obj = { section: 0, item: null, animated: false };
+        obj[1] = arg0;
         current.scrollToLocation(obj);
       }
     }
@@ -115,11 +118,11 @@ const memoResult = importAllResult.memo(function EmojiPickerCategories(bottomShe
       if (arg0 !== arg1) {
         if (null != value) {
           const result = arg0 * onClearSearch;
-          if (tmp4) {
+          if (tmp5) {
             bottomSheetRef(categories[7]).runOnJS(callback)(arg0);
             const obj = bottomSheetRef(categories[7]);
           }
-          tmp4 = result > value.end || result < value.start;
+          tmp5 = result > value.end || result < value.start;
         }
       }
     }
@@ -131,8 +134,10 @@ const memoResult = importAllResult.memo(function EmojiPickerCategories(bottomShe
   const animatedReaction = obj1.useAnimatedReaction(fn, fn2);
   const items1 = [sharedValue];
   const callback1 = categoryIndexActive.useCallback((nativeEvent) => {
-    if (null != closure_10.current) {
-      const obj = { start: nativeEvent.nativeEvent.contentOffset.x, end: nativeEvent.nativeEvent.contentOffset.x + closure_10.current };
+    if (null != ref.current) {
+      const obj = { start: null, end: null };
+      obj[0] = nativeEvent.nativeEvent.contentOffset.x;
+      obj[1] = nativeEvent.nativeEvent.contentOffset.x + tmp.current;
       const result = sharedValue.set(obj);
     }
   }, items1);
@@ -150,8 +155,7 @@ const memoResult = importAllResult.memo(function EmojiPickerCategories(bottomShe
       return tmp2;
     }
   }
-  obj = { inPortalKeyboard: flag, bottomSheetIndex };
-  X.__closure = obj;
+  X.__closure = { inPortalKeyboard: flag, bottomSheetIndex };
   X.__workletHash = 15413192314561;
   X.__initData = closure_15;
   derivedValue = obj3.useDerivedValue(X);
@@ -161,41 +165,40 @@ const memoResult = importAllResult.memo(function EmojiPickerCategories(bottomShe
   callback2 = categoryIndexActive.useCallback(() => {
     let current = arg0;
     if (arg0 === undefined) {
-      current = ref.current;
+      current = ref2.current;
     }
     if (null != current) {
       if (!derivedValue.get()) {
         if (flag) {
-          let tmp4 = null == bottomSheetRef;
-          if (!tmp4) {
+          if (bottomSheetRef != null) {
             const current2 = bottomSheetRef.current;
-            tmp4 = null == current2;
-            let obj = current2;
+            if (current2 != null) {
+              current2.expandActionSheet();
+            }
           }
-          if (!tmp4) {
-            obj.expandActionSheet();
-          }
-          ref.current = current;
+          ref2.current = current;
           closure_15.current = false;
         }
       }
-      if (isSearching) {
-        if (null != onClearSearch) {
-          ref.current = current;
-          closure_15.current = true;
-          onClearSearch();
+      let tmp7 = isSearching;
+      if (!isSearching) {
+        if (null != emojiPickerListRef.current) {
+          ref2.current = undefined;
+          closure_15.current = false;
+          const current3 = tmp8.current;
+          const obj = { index: null };
+          obj[0] = current;
+          current3.scrollToHeaderIndex(obj);
         }
+      } else {
+        tmp7 = onClearSearch;
       }
-      if (null != emojiPickerListRef.current) {
-        ref.current = undefined;
-        closure_15.current = false;
-        const current3 = emojiPickerListRef.current;
-        obj = { index: current };
-        current3.scrollToHeaderIndex(obj);
-      }
+      ref2.current = current;
+      closure_15.current = true;
+      tmp7 = tmp7();
     }
   }, items2);
-  let obj5 = bottomSheetRef(categories[7]);
+  let obj4 = bottomSheetRef(categories[7]);
   class B {
     constructor() {
       return c13.get();
@@ -210,23 +213,24 @@ const memoResult = importAllResult.memo(function EmojiPickerCategories(bottomShe
       const obj = bottomSheetRef(categories[7]);
     }
   };
-  obj1 = { runOnJS: bottomSheetRef(categories[7]).runOnJS, handleScrollToCategoryIndex: callback2 };
-  fn3.__closure = obj1;
+  obj = { runOnJS: bottomSheetRef(categories[7]).runOnJS, handleScrollToCategoryIndex: callback2 };
+  fn3.__closure = obj;
   fn3.__workletHash = 13670816929775;
   fn3.__initData = callback3;
-  const animatedReaction1 = obj5.useAnimatedReaction(B, fn3);
+  const animatedReaction1 = obj4.useAnimatedReaction(B, fn3);
   const items3 = [isSearching, categoryIndexActive, emojiPickerListRef];
   const effect = categoryIndexActive.useEffect(() => {
     if (!isSearching) {
-      if (ref2.current) {
-        if (null != ref.current) {
-          const current = ref.current;
-          ref.current = undefined;
-          ref2.current = false;
+      if (ref3.current) {
+        if (null != ref2.current) {
+          const current = tmp2.current;
+          tmp2.current = undefined;
+          tmp.current = false;
           const result = categoryIndexActive.set(current);
           const current2 = emojiPickerListRef.current;
-          if (null != current2) {
-            const obj = { index: current };
+          if (current2 != null) {
+            const obj = { index: null };
+            obj[0] = current;
             current2.scrollToHeaderIndex(obj);
           }
         }
@@ -239,11 +243,12 @@ const memoResult = importAllResult.memo(function EmojiPickerCategories(bottomShe
       const guild = type.guild;
       if (null != guild) {
         let obj = bottomSheetIndex(categories[8]);
-        obj = {};
-        obj = { page: isSearching.EXPRESSION_PICKER };
-        obj.location = obj;
-        obj.tab = _undefined.EMOJI;
-        obj.guild_id = guild.id;
+        obj = { location: null, tab: null, guild_id: null };
+        obj = { page: null };
+        obj[0] = isSearching.EXPRESSION_PICKER;
+        obj[0] = obj;
+        obj[1] = _undefined.EMOJI;
+        obj[2] = guild.id;
         obj.track(flag.EXPRESSION_PICKER_CATEGORY_SELECTED, obj);
       }
     }
@@ -260,25 +265,22 @@ const memoResult = importAllResult.memo(function EmojiPickerCategories(bottomShe
   const callback5 = categoryIndexActive.useCallback((nativeEvent) => {
     closure_10.current = nativeEvent.nativeEvent.layout.width;
     const value = sharedValue.get();
-    const obj = {};
-    let start;
-    if (null != value) {
-      start = value.start;
+    let num;
+    if (value != null) {
+      num = value.start;
     }
-    let num = 0;
-    if (null != start) {
-      num = start;
+    if (num == null) {
+      num = 0;
     }
-    obj.start = num;
-    let start1;
-    if (null != value) {
-      start1 = value.start;
+    const obj = { start: num, end: null };
+    let num2;
+    if (value != null) {
+      num2 = value.start;
     }
-    let num2 = 0;
-    if (null != start1) {
-      num2 = start1;
+    if (num2 == null) {
+      num2 = 0;
     }
-    obj.end = num2 + closure_10.current;
+    obj[1] = num2 + closure_10.current;
     const result = sharedValue.set(obj);
   }, items6);
   const callback6 = categoryIndexActive.useCallback((arg0, index) => sharedValue(bottomSheetIndex(categories[11]), { category: categories[index], categoryIndexActive, index, handlePressCategory: callback3, loadingStyle: _undefined.listPlaceholder, locked: categories[index].isNitroLocked, style: _undefined.item }), items7);
@@ -286,31 +288,33 @@ const memoResult = importAllResult.memo(function EmojiPickerCategories(bottomShe
     const Gesture = bottomSheetRef(categories[13]).Gesture;
     return Gesture.Native().disallowInterruption(true);
   }, []);
-  const obj2 = { portalHostName, style: bottomSheetRef.style };
-  obj3 = {};
-  const tmp16 = bottomSheetIndex(categories[12])();
-  const tmp18 = sharedValue;
-  const obj4 = { gesture: memo1 };
-  obj5 = { estimatedListSize: "windowSize", horizontal: true, itemSize: onClearSearch, keyboardShouldPersistTaps: "always", listId: ExpressionPickerViewType.EMOJI, onLayout: callback5, onScroll: callback1, placeholderConfig: tmp16, ref, renderAhead, renderItem: callback6, scrollReporting: "callbacks", sections, showsHorizontalScrollIndicator: false, style: tmp.list };
-  obj4.children = sharedValue(bottomSheetIndex(categories[15]), obj5);
-  const items8 = [sharedValue(bottomSheetRef(categories[13]).GestureDetector, obj4), , ];
-  let tmp22 = null;
+  obj1 = { portalHostName, style: bottomSheetRef.style, children: null };
+  const tmp18 = bottomSheetIndex(categories[12])();
+  const obj2 = { gesture: memo1, children: null };
+  obj3 = { estimatedListSize: "windowSize", horizontal: true, itemSize: onClearSearch, keyboardShouldPersistTaps: "always", listId: ExpressionPickerViewType.EMOJI, onLayout: callback5, onScroll: callback1, placeholderConfig: tmp18, ref, renderAhead, renderItem: callback6, scrollReporting: "callbacks", sections, showsHorizontalScrollIndicator: false, style: tmp.list };
+  obj2[1] = sharedValue(bottomSheetIndex(categories[15]), obj3);
+  const items8 = [sharedValue(bottomSheetRef(categories[13]).GestureDetector, obj2), , ];
+  let tmp20Result = null;
   if (null != firstUnicodeCategory) {
-    const obj6 = { blockRef: sharedValue, category: firstUnicodeCategory, categoryIndex: firstUnicodeCategoryIndex, onPress: callback4, style: tmp.item };
-    tmp22 = sharedValue(bottomSheetIndex(categories[16]), obj6);
+    obj4 = { blockRef: null, category: null, categoryIndex: null, onPress: null, style: null };
+    obj4[0] = sharedValue;
+    obj4[1] = firstUnicodeCategory;
+    obj4[2] = firstUnicodeCategoryIndex;
+    obj4[3] = callback4;
+    obj4[4] = tmp.item;
+    tmp20Result = tmp20(tmp17(tmp2[16]), obj4);
   }
-  items8[1] = tmp22;
-  let tmp26 = null;
+  items8[1] = tmp20Result;
+  tmp20Result = null;
   if (null != onBackspace) {
-    const obj7 = {};
-    ({ item: obj13.style, keyboardItem: obj13.iconStyle } = tmp);
-    obj7.onBackspace = onBackspace;
-    tmp26 = sharedValue(bottomSheetIndex(categories[17]), obj7);
+    const obj5 = { style: null, iconStyle: null, onBackspace: null };
+    ({ item: obj11[0], keyboardItem: obj11[1] } = tmp);
+    obj5[2] = onBackspace;
+    tmp20Result = tmp20(tmp17(tmp2[17]), obj5);
   }
-  items8[2] = tmp26;
-  obj3.children = items8;
-  obj2.children = ref(closure_10, obj3);
-  return tmp18(bottomSheetIndex(categories[14]), obj2);
+  items8[2] = tmp20Result;
+  obj1[2] = ref(closure_10, { children: items8 });
+  return sharedValue(bottomSheetIndex(categories[14]), obj1);
 });
 let result = require("ME").fileFinishedImporting("modules/emoji_picker/native/components/categories/EmojiPickerCategories.tsx");
 

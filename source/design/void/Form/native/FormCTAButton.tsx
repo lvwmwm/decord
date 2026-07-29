@@ -1,42 +1,33 @@
-// Module ID: 7617
-// Function ID: 60811
-// Name: getCTAButtonColor
-// Dependencies: [31, 27, 1277, 653, 33, 4165, 5087, 689, 1273, 5197, 7614, 2]
+// Module ID: 7640
+// Function ID: 7641
+// Name: FormCTAButton
+// Dependencies: [19, 17, 1301, 676, 21, 4189, 5109, 712, 1297, 5219, 7637, 2]
 
-// Module 7617 (getCTAButtonColor)
-import result from "result";
+// Module 7640 (FormCTAButton)
+import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import semanticColor from "semanticColor";
 import { Fonts } from "ME";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 import importDefaultResult from "createTextStyle";
 import importDefaultResult1 from "createTextStyle";
 import importDefaultResult2 from "createTextStyle";
 
 let Platform;
 let StyleSheet;
-let closure_3;
-let closure_4;
-let closure_5;
+let c3;
+let c4;
+let c5;
 let closure_6;
-let closure_7;
+let error;
 const require = arg1;
-function getCTAButtonColor(BRAND, textBrand) {
-  if (obj3.BRAND === BRAND) {
-    return textBrand.textBrand;
-  } else if (obj3.DANGER === BRAND) {
-    return textBrand.textDanger;
-  } else {
-    return obj3.WARNING === BRAND ? textBrand.textWarning : undefined;
-  }
-}
 class FormCTAButton {
   constructor(arg0) {
     BRAND = global.color;
     if (undefined === BRAND) {
-      tmp = c10;
-      BRAND = c10.BRAND;
+      tmp = jsx;
+      BRAND = jsx.BRAND;
     }
     fontSize = global.fontSize;
     num = 16;
@@ -50,50 +41,47 @@ class FormCTAButton {
     loading = global.loading;
     tmp3 = undefined !== loading && loading;
     ({ testID, onPress } = global);
-    tmp4 = c9();
+    tmp4 = jsx();
     tmp5 = jsx;
-    obj = {};
+    tmp6 = closure_0;
+    tmp7 = closure_1;
     items = [, , , ];
     items[0] = tmp4.text;
-    items[1] = getCTAButtonColor(BRAND, tmp4);
-    obj = {};
-    obj.fontSize = num;
-    items[2] = obj;
+    tmp8 = jsx;
+    if (jsx.BRAND === BRAND) {
+      textWarning = tmp4.textBrand;
+    } else if (tmp8.DANGER === BRAND) {
+      textWarning = tmp4.textDanger;
+    } else if (tmp8.WARNING === BRAND) {
+      textWarning = tmp4.textWarning;
+    }
+    items[1] = textWarning;
+    items[2] = { fontSize: num };
     if (alignLeft2) {
       alignLeft2 = tmp4.alignLeft;
     }
     items[3] = alignLeft2;
-    obj.style = items;
-    obj.children = global.label;
-    tmp5Result = tmp5(require("Button").LegacyText, obj);
+    tmp5Result = tmp5(require("Button").LegacyText, { style: items, children: global.label });
     if (tmp3) {
-      tmp7 = jsx;
-      tmp8 = ActivityIndicator;
-      obj1 = {};
-      obj1.color = BRAND;
-      tmp5Result = jsx(ActivityIndicator, obj1);
+      tmp10 = ActivityIndicator;
+      obj = { color: null };
+      obj[0] = BRAND;
+      tmp5Result = tmp5(ActivityIndicator, obj);
     }
-    obj2 = {};
-    tmp9 = jsx;
-    tmp10 = View;
-    if (result.useContext(require("context").RedesignCompatContext)) {
-      obj2.style = tmp4.rowButton;
-      tmp18 = closure_0;
-      tmp19 = closure_1;
-      num2 = 10;
-      tmp17 = jsx;
-      obj3 = {};
-      obj3.label = tmp5Result;
-      obj3.onPress = onPress;
-      flag = false;
-      obj3.arrow = false;
+    obj = { style: null, children: null };
+    tmp11 = View;
+    if (noop.useContext(require("context").RedesignCompatContext)) {
+      obj[0] = tmp4.rowButton;
+      obj1 = { label: null, onPress: null, arrow: false, disabled: null, testID: null };
+      obj1[0] = tmp5Result;
+      obj1[1] = onPress;
       if (!tmp2) {
         tmp2 = tmp3;
       }
-      obj3.disabled = tmp2;
-      obj3.testID = testID;
-      obj2.children = tmp17(require("RowButtonWrapper").RowButton, obj3);
-      tmp16 = obj2;
+      obj1[3] = tmp2;
+      obj1[4] = testID;
+      obj[1] = tmp5(require("RowButtonWrapper").RowButton, obj1);
+      tmp16 = obj;
     } else {
       items1 = [, , ];
       items1[0] = tmp4.sectionBody;
@@ -103,46 +91,43 @@ class FormCTAButton {
       }
       items1[1] = disabled2;
       items1[2] = global.style;
-      obj2.style = items1;
-      obj4 = {};
-      obj4.testID = testID;
-      str = "button";
-      obj4.accessibilityRole = "button";
-      obj4.onPress = onPress;
-      obj4.style = tmp4.button;
+      obj[0] = items1;
+      obj2 = { testID: null, accessibilityRole: "button", onPress: null, style: null, disabled: null, android_ripple: null, children: null };
+      obj2[0] = testID;
+      obj2[2] = onPress;
+      obj2[3] = tmp4.button;
       tmp13 = tmp2;
-      tmp11 = jsx;
       tmp12 = Pressable;
       if (!tmp2) {
         tmp13 = tmp3;
       }
-      obj4.disabled = tmp13;
+      obj2[4] = tmp13;
       tmp14 = getThemedRippleConfig;
       tmp15 = ANDROID_FOREGROUND_RIPPLE;
-      obj4.android_ripple = getThemedRippleConfig(ANDROID_FOREGROUND_RIPPLE);
-      obj4.children = tmp5Result;
-      obj2.children = tmp11(tmp12, obj4);
-      tmp16 = obj2;
+      obj2[5] = getThemedRippleConfig(ANDROID_FOREGROUND_RIPPLE);
+      obj2[6] = tmp5Result;
+      obj[1] = tmp5(tmp12, obj2);
+      tmp16 = obj;
     }
-    return tmp9(tmp10, tmp16);
+    return tmp5(tmp11, tmp16);
   }
 }
-({ ActivityIndicator: closure_3, Pressable: closure_4, Platform, StyleSheet, View: closure_5 } = get_ActivityIndicator);
-({ ANDROID_FOREGROUND_RIPPLE: closure_6, getThemedRippleConfig: closure_7 } = semanticColor);
-_createForOfIteratorHelperLoose = { rowButton: { paddingHorizontal: 16 }, sectionBody: {}, button: { minHeight: 44, justifyContent: "center" }, text: { lineHeight: 44, paddingHorizontal: 17, textAlign: "left" } };
-_createForOfIteratorHelperLoose = {};
-const merged = Object.assign(require("createTextStyle")(Fonts.PRIMARY_SEMIBOLD, require("_createForOfIteratorHelperLoose").colors.CONTROL_BRAND_FOREGROUND, 16));
-_createForOfIteratorHelperLoose.textBrand = _createForOfIteratorHelperLoose;
+({ ActivityIndicator: c3, Pressable: c4, Platform, StyleSheet, View: c5 } = get_ActivityIndicator);
+({ ANDROID_FOREGROUND_RIPPLE: closure_6, getThemedRippleConfig: error } = semanticColor);
+createCacheKey = { rowButton: { paddingHorizontal: 16 }, sectionBody: {}, button: { minHeight: 44, justifyContent: "center" }, text: { lineHeight: 44, paddingHorizontal: 17, textAlign: "left" }, textBrand: null, textDanger: null, textWarning: null, alignLeft: null, disabled: null };
+createCacheKey = {};
+const merged = Object.assign(require("createTextStyle")(Fonts.PRIMARY_SEMIBOLD, require("Themes").colors.CONTROL_BRAND_FOREGROUND, 16));
+createCacheKey[4] = createCacheKey;
 let obj1 = {};
-const merged1 = Object.assign(require("createTextStyle")(Fonts.PRIMARY_SEMIBOLD, require("_createForOfIteratorHelperLoose").colors.TEXT_FEEDBACK_CRITICAL, 16));
-_createForOfIteratorHelperLoose.textDanger = obj1;
-let obj2 = {};
-const merged2 = Object.assign(require("createTextStyle")(Fonts.PRIMARY_SEMIBOLD, require("_createForOfIteratorHelperLoose").colors.STATUS_WARNING, 16));
-_createForOfIteratorHelperLoose.textWarning = obj2;
-_createForOfIteratorHelperLoose.alignLeft = { textAlign: "left" };
-_createForOfIteratorHelperLoose.disabled = { opacity: 0.5 };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-let obj3 = { BRAND: "brand", DANGER: "danger", WARNING: "warning" };
+const merged1 = Object.assign(require("createTextStyle")(Fonts.PRIMARY_SEMIBOLD, require("Themes").colors.TEXT_FEEDBACK_CRITICAL, 16));
+createCacheKey[5] = obj1;
+const obj2 = {};
+const merged2 = Object.assign(require("createTextStyle")(Fonts.PRIMARY_SEMIBOLD, require("Themes").colors.STATUS_WARNING, 16));
+createCacheKey[6] = obj2;
+createCacheKey[7] = { textAlign: "left" };
+createCacheKey[8] = { opacity: 0.5 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+const obj3 = { BRAND: "brand", DANGER: "danger", WARNING: "warning" };
 FormCTAButton.Colors = obj3;
 const result = require("semanticColor").fileFinishedImporting("design/void/Form/native/FormCTAButton.tsx");
 

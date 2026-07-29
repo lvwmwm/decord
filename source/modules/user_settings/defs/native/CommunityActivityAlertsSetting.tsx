@@ -1,33 +1,33 @@
-// Module ID: 14457
-// Function ID: 110386
+// Module ID: 14479
+// Function ID: 14480
 // Name: route
-// Dependencies: [10223, 7733, 653, 566, 1212, 10099, 14458, 2]
+// Dependencies: [10244, 7756, 676, 589, 1236, 10120, 14480, 2]
 
-// Module 14457 (route)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 14479 (route)
+import computeAlertSettings from "computeAlertSettings";
 import createToggle from "createToggle";
 
 const require = arg1;
 createToggle = {
   useTitle() {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(require(1212) /* getSystemLocale */.t.D9yVAH);
+    const intl = require(1236) /* getSystemLocale */.intl;
+    return intl.string(require(1236) /* getSystemLocale */.t.D9yVAH);
   },
   parent: require("MobileSetting").MobileSetting.NOTIFICATIONS,
   useDescription: function useCommunityActivityAlertsSettingDescription() {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(require(1212) /* getSystemLocale */.t["0PhAOH"]);
+    const intl = require(1236) /* getSystemLocale */.intl;
+    return intl.string(require(1236) /* getSystemLocale */.t["0PhAOH"]);
   },
   usePredicate: function useHasCommunityActivityAlertsSetting() {
-    const items = [_isNativeReflectConstruct];
-    return require(566) /* initialize */.useStateFromStores(items, () => Object.keys(outer1_2.getGuildAlertSettings()).length > 0);
+    const items = [computeAlertSettings];
+    return require(589) /* initialize */.useStateFromStores(items, () => Object.keys(guildAlertSettings.getGuildAlertSettings()).length > 0);
   },
   screen: createToggle
 };
 createToggle = {
   route: require("ME").UserSettingsSections.COMMUNITY_ALERTS,
   getComponent() {
-    return require(14458) /* UserSettingsCommunityNotifications */.default;
+    return require(14480) /* UserSettingsCommunityNotifications */.default;
   }
 };
 createToggle = createToggle.createRoute(createToggle);

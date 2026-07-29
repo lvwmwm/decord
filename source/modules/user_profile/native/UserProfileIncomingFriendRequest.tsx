@@ -1,23 +1,23 @@
-// Module ID: 12193
-// Function ID: 95355
+// Module ID: 12217
+// Function ID: 12218
 // Name: UserProfileIncomingFriendRequest
-// Dependencies: [31, 27, 33, 4165, 689, 8055, 8083, 5497, 12194, 4354, 5503, 4161, 1212, 1273, 1392, 12195, 4578, 2]
+// Dependencies: [19, 17, 21, 4189, 712, 8079, 8107, 5515, 12218, 4379, 5521, 4185, 1236, 1297, 1416, 12219, 4600, 2]
 // Exports: default
 
-// Module 12193 (UserProfileIncomingFriendRequest)
-import result from "result";
-import { View } from "get ActivityIndicator";
+// Module 12217 (UserProfileIncomingFriendRequest)
+import noop from "noop";
+import { View } from "set";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_5;
+let c5;
 let closure_6;
 const require = arg1;
-({ jsx: closure_5, jsxs: closure_6 } = jsxProd);
-_createForOfIteratorHelperLoose = { container: { rowGap: 16, flexDirection: "column" }, buttons: { flexDirection: "row", columnGap: 12 }, gameIcon: { paddingTop: 2 } };
-_createForOfIteratorHelperLoose = { borderWidth: 1, borderColor: require("_createForOfIteratorHelperLoose").colors.BORDER_STRONG };
-_createForOfIteratorHelperLoose.friendRequestNote = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+({ jsx: c5, jsxs: closure_6 } = jsxProd);
+createCacheKey = { container: { rowGap: 16, flexDirection: "column" }, buttons: { flexDirection: "row", columnGap: 12 }, gameIcon: { paddingTop: 2 }, friendRequestNote: null };
+createCacheKey = { borderWidth: 1, borderColor: require("Themes").colors.BORDER_STRONG };
+createCacheKey[3] = createCacheKey;
+createCacheKey = createCacheKey.createStyles(createCacheKey);
 const result = require("jsxProd").fileFinishedImporting("modules/user_profile/native/UserProfileIncomingFriendRequest.tsx");
 
 export default function UserProfileIncomingFriendRequest(style) {
@@ -33,113 +33,109 @@ export default function UserProfileIncomingFriendRequest(style) {
     isGameRelationship = false;
   }
   ({ applicationId, showUserProfile } = style);
-  let importDefault;
+  let items4;
   let trackUserProfileAction;
   let acceptFriendRequest;
   let cancelFriendRequest;
   let getOrFetchApplication;
-  let tmp = _createForOfIteratorHelperLoose();
-  importDefault = tmp;
+  items4 = createCacheKey();
+  let tmp = items4;
+  let userResult = trackUserProfileAction;
   let obj = isGameRelationship(trackUserProfileAction[6]);
   trackUserProfileAction = obj.useUserProfileAnalyticsContext().trackUserProfileAction;
   let obj1 = isGameRelationship(trackUserProfileAction[8]);
-  obj = { userId: user.id, applicationId, isGameRelationship, location: importDefault(trackUserProfileAction[7])().newestAnalyticsLocation, onConfirm: showUserProfile, onCancel: showUserProfile };
+  obj = { userId: user.id, applicationId, isGameRelationship, location: items4(trackUserProfileAction[7])().newestAnalyticsLocation, onConfirm: showUserProfile, onCancel: showUserProfile };
   const friendRequestActions = obj1.useFriendRequestActions(obj);
   acceptFriendRequest = friendRequestActions.acceptFriendRequest;
   cancelFriendRequest = friendRequestActions.cancelFriendRequest;
-  let obj3 = importDefault(trackUserProfileAction[9]);
+  let obj3 = items4(trackUserProfileAction[9]);
   let name = obj3.useName(guildId, channelId, user);
   const items = [acceptFriendRequest, isGameRelationship, trackUserProfileAction];
-  let string = acceptFriendRequest.useCallback(() => {
+  let Button = acceptFriendRequest.useCallback(() => {
     acceptFriendRequest();
-    const obj = {};
     let str = "ACCEPT_FRIEND_REQUEST";
     if (isGameRelationship) {
       str = "ACCEPT_GAME_FRIEND_REQUEST";
     }
-    obj.action = str;
-    trackUserProfileAction(obj);
+    trackUserProfileAction({ action: str });
   }, items);
   const items1 = [cancelFriendRequest, isGameRelationship, trackUserProfileAction];
-  let intl = null;
+  let tmp8 = null;
   const callback = acceptFriendRequest.useCallback(() => {
     cancelFriendRequest();
-    const obj = {};
     let str = "IGNORE_FRIEND_REQUEST";
     if (isGameRelationship) {
       str = "IGNORE_GAME_FRIEND_REQUEST";
     }
-    obj.action = str;
-    trackUserProfileAction(obj);
+    trackUserProfileAction({ action: str });
   }, items1);
   let obj4 = isGameRelationship(trackUserProfileAction[10]);
   getOrFetchApplication = obj4.useGetOrFetchApplication(applicationId);
   if (null != applicationId) {
-    if (intl == getOrFetchApplication) {
+    if (tmp8 == getOrFetchApplication) {
       return null;
     }
   }
-  obj = { style: items2 };
-  items2 = [tmp.container, importDefault(trackUserProfileAction[5])().card, style.style];
-  let tmp12 = getOrFetchApplication;
-  let Text = isGameRelationship(trackUserProfileAction[11]).Text;
-  obj1 = { variant: "text-sm/semibold", color: "text-default" };
-  intl = isGameRelationship(trackUserProfileAction[12]).intl;
-  let intl2 = intl.format;
+  obj = { style: items2, children: null };
+  items2 = [items4.container, items4(trackUserProfileAction[5])().card, style.style];
+  let Text = tmp4(userResult[11]).Text;
+  obj1 = { variant: "text-sm/semibold", color: "text-default", children: null };
+  const intl = tmp4(userResult[12]).intl;
+  const format = intl.format;
+  let intl2 = tmp4(userResult[12]).t;
   if (null != applicationId) {
-    const t = isGameRelationship(trackUserProfileAction[12]).t;
-    let obj2 = { username: name };
-    name = intl == getOrFetchApplication;
-    let name1;
-    if (!name) {
-      name1 = getOrFetchApplication.name;
+    isGameRelationship = isGameRelationship ? intl2.syHjLL : intl2.V15uUI;
+    let obj2 = { username: null, applicationName: null, applicationIcon: null };
+    obj2[0] = name;
+    tmp8 = getOrFetchApplication == tmp8;
+    name = undefined;
+    if (!tmp8) {
+      name = getOrFetchApplication.name;
     }
-    obj2.applicationName = name1;
-    obj2.applicationIcon = function applicationIcon() {
-      let tmp = null;
+    obj2[1] = name;
+    obj2[2] = function applicationIcon() {
+      let tmp2 = null;
       if (null != getOrFetchApplication) {
-        let obj = {};
-        obj = { id: getOrFetchApplication.id, icon: getOrFetchApplication.icon };
-        obj.source = _undefined(trackUserProfileAction[14]).getApplicationIconSource(obj);
-        obj.size = isGameRelationship(trackUserProfileAction[13]).AvatarSizes.XXSMALL;
-        obj.style = _undefined.gameIcon;
-        tmp = getOrFetchApplication(isGameRelationship(trackUserProfileAction[13]).Avatar, obj, getOrFetchApplication.id);
-        const obj2 = _undefined(trackUserProfileAction[14]);
+        let obj = { source: null, size: null, style: null };
+        obj = { id: null, icon: null };
+        ({ id: obj3[0], icon: obj3[1] } = tmp);
+        obj[0] = items4(trackUserProfileAction[14]).getApplicationIconSource(obj);
+        obj[1] = isGameRelationship(trackUserProfileAction[13]).AvatarSizes.XXSMALL;
+        obj[2] = items4.gameIcon;
+        tmp2 = getOrFetchApplication(isGameRelationship(trackUserProfileAction[13]).Avatar, obj, tmp.id);
+        const obj2 = items4(trackUserProfileAction[14]);
       }
-      return tmp;
+      return tmp2;
     };
-    obj1.children = intl2(isGameRelationship ? t.syHjLL : t.V15uUI, obj2);
+    obj1[2] = format(isGameRelationship, obj2);
     let tmp15 = obj1;
-    const tmp18 = isGameRelationship ? t.syHjLL : t.V15uUI;
   } else {
-    obj3 = { username: name };
-    obj1.children = intl2(isGameRelationship(trackUserProfileAction[12]).t.uIomXw, obj3);
+    obj3 = { username: null };
+    obj3[0] = name;
+    obj1[2] = format(intl2.uIomXw, obj3);
     tmp15 = obj1;
   }
-  const items3 = [tmp12(Text, tmp15), , ];
-  obj4 = { userId: user.id, styles: tmp.friendRequestNote, analyticsLocation: "User Profile" };
-  items3[1] = getOrFetchApplication(importDefault(trackUserProfileAction[15]), obj4);
-  user = callback;
-  tmp12 = cancelFriendRequest;
-  const obj5 = { style: tmp.buttons };
-  intl = isGameRelationship;
-  const obj6 = { size: "sm", variant: "primary" };
-  intl = isGameRelationship(trackUserProfileAction[12]).intl;
-  obj6.text = intl.string(isGameRelationship(trackUserProfileAction[12]).t.Zcibdf);
-  obj6.onPress = string;
-  const items4 = [getOrFetchApplication(isGameRelationship(trackUserProfileAction[16]).Button, obj6), ];
-  obj1 = isGameRelationship(trackUserProfileAction[16]).Button;
-  const obj7 = { size: "sm", variant: "secondary" };
-  intl2 = isGameRelationship(trackUserProfileAction[12]).intl;
-  string = intl2.string;
-  isGameRelationship = string(isGameRelationship(trackUserProfileAction[12]).t.xuio0C);
-  obj7.text = isGameRelationship;
-  obj7.onPress = callback;
-  tmp = getOrFetchApplication(obj1, obj7);
+  const items3 = [getOrFetchApplication(Text, tmp15), , ];
+  obj4 = { userId: user.id, styles: items4.friendRequestNote, analyticsLocation: "User Profile" };
+  items3[1] = getOrFetchApplication(tmp(userResult[15]), obj4);
+  const obj5 = { style: items4.buttons, children: null };
+  const obj6 = { size: "sm", variant: "primary", text: null, onPress: null };
+  intl2 = tmp4(userResult[12]).intl;
+  obj6[2] = intl2.string(isGameRelationship(userResult[12]).t.Zcibdf);
+  obj6[3] = Button;
+  items4 = [getOrFetchApplication(isGameRelationship(userResult[16]).Button, obj6), ];
+  Button = tmp4(userResult[16]).Button;
+  const obj7 = { size: "sm", variant: "secondary", text: null, onPress: null };
+  obj1 = tmp4(userResult[12]).intl;
+  user = obj1.string;
+  userResult = user(tmp4(userResult[12]).t.xuio0C);
+  obj7[2] = userResult;
+  obj7[3] = callback;
+  tmp = tmp14(Button, obj7);
   items4[1] = tmp;
-  obj5.children = items4;
-  Text = callback(cancelFriendRequest, obj5);
+  obj5[1] = items4;
+  Text = tmp12(tmp13, obj5);
   items3[2] = Text;
-  obj.children = items3;
-  callback(cancelFriendRequest, obj);
+  obj[1] = items3;
+  closure_6(cancelFriendRequest, obj);
 };

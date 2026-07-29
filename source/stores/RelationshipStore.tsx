@@ -1,134 +1,40 @@
-// Module ID: 3802
-// Function ID: 28975
-// Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 57, 3803, 1850, 653, 686, 566, 2]
+// Module ID: 3826
+// Function ID: 3827
+// Name: upsertRelationship
+// Dependencies: [32, 3827, 1874, 676, 709, 589, 2]
 
-// Module 3802 (_isNativeReflectConstruct)
-import _callSuper from "_callSuper";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
+// Module 3826 (upsertRelationship)
 import _slicedToArray from "_slicedToArray";
-import closure_8 from "_callSuper";
-import closure_9 from "_isNativeReflectConstruct";
+import hasFlag from "hasFlag";
+import mergeGuildAvatar from "mergeGuildAvatar";
 import { RelationshipTypes } from "ME";
-import set from "_possibleConstructorReturn";
+import { Store } from "initialize";
+import set from "mergeGuildAvatar";
 
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
-  }
-  const result = _isNativeReflectConstruct();
-}
-function _createForOfIteratorHelperLoose(iterable) {
-  let closure_0 = iterable;
-  iterable = "undefined" !== typeof Symbol;
-  if (iterable) {
-    const _Symbol = Symbol;
-    iterable = iterable[Symbol.iterator];
-  }
-  if (!iterable) {
-    iterable = iterable[Symbol.iterator];
-  }
-  if (iterable) {
-    const iter = iterable.call(iterable);
-    const next = iter.next;
-    return next.bind(iter);
-  } else {
-    const _Array = Array;
-    let tmp = iterable;
-    if (!Array.isArray(iterable)) {
-      let tmp2;
-      if (iterable) {
-        if ("string" === typeof iterable) {
-          tmp2 = _arrayLikeToArray(iterable, undefined);
-        } else {
-          const toString = {}.toString;
-          const substr = toString.call(iterable).slice(8, -1);
-          let name = substr;
-          if (tmp3) {
-            name = iterable.constructor.name;
-          }
-          if ("Map" !== name) {
-            if ("Set" !== name) {
-              if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(iterable, undefined);
-              } else {
-                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
-              }
-            }
-            tmp2 = arr;
-          }
-          const _Array2 = Array;
-          arr = Array.from(iterable);
-          const callResult = toString.call(iterable);
-          tmp3 = "Object" === substr && iterable.constructor;
-        }
-      }
-      tmp = tmp2;
-      if (!tmp2) {
-        const _TypeError = TypeError;
-        const typeError = new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
-        throw typeError;
-      }
-    }
-    if (tmp) {
-      closure_0 = tmp;
-    }
-    let c1 = 0;
-    return () => {
-      if (closure_1 >= length.length) {
-        let obj = { done: true };
-      } else {
-        obj = { done: false };
-        closure_1 = tmp3 + 1;
-        obj.value = length[+closure_1];
-      }
-      return obj;
-    };
-  }
-}
-function _arrayLikeToArray(arg0, arg1) {
-  let length;
-  if (tmp) {
-    length = arg0.length;
-  }
-  const ArrayResult = Array(length);
-  for (let num = 0; num < length; num = num + 1) {
-    ArrayResult[num] = arg0[num];
-  }
-  return ArrayResult;
-}
-function resetUserIdLists() {
-  closure_24.friends = undefined;
-  closure_24.blocked = undefined;
-  closure_24.ignored = undefined;
-  closure_24.blockedOrIgnored = undefined;
-}
-function upsertRelationship(id, type) {
-  let value = map.get(id);
-  if (value !== type) {
+function upsertRelationship(arg0, arg1) {
+  let value = map.get(arg0);
+  if (value !== arg1) {
     if (null != value) {
       value = map1.get(value);
-      if (null != value) {
-        value.delete(id);
+      if (value != null) {
+        value.delete(arg0);
       }
     }
-    const result = map.set(id, type);
-    const value1 = map1.get(type);
+    const result = map.set(arg0, arg1);
+    const value1 = map1.get(arg1);
     if (null != value1) {
-      value1.add(id);
+      value1.add(arg0);
     } else {
       const _Set = Set;
-      const items = [id];
+      const items = [arg0];
       const set = new Set(items);
-      const result1 = map1.set(type, set);
+      const result1 = obj3.set(arg1, set);
     }
-    resetUserIdLists();
+    closure_19.friends = undefined;
+    closure_19.blocked = undefined;
+    closure_19.ignored = undefined;
+    closure_19.blockedOrIgnored = undefined;
+    obj3 = map1;
   }
 }
 function removeRelationship(arg0) {
@@ -136,531 +42,497 @@ function removeRelationship(arg0) {
   if (null != value) {
     map.delete(arg0);
     value = map1.get(value);
-    if (null != value) {
+    if (value != null) {
       value.delete(arg0);
     }
-    resetUserIdLists();
+    closure_19.friends = undefined;
+    closure_19.blocked = undefined;
+    closure_19.ignored = undefined;
+    closure_19.blockedOrIgnored = undefined;
   }
 }
 function recountPending() {
   let size = set.size;
   size = set2.size;
   const value = map1.get(RelationshipTypes.PENDING_INCOMING);
-  size = undefined;
-  if (null != value) {
-    size = value.size;
+  let num;
+  if (value != null) {
+    num = value.size;
   }
-  let num = 0;
-  if (null != size) {
-    num = size;
+  if (num == null) {
+    num = 0;
   }
-  let closure_21 = Math.max(num - size - size, 0);
-  closure_19 = closure_19 + 1;
+  let closure_16 = Math.max(num - size - size, 0);
+  closure_14 = closure_14 + 1;
 }
 const map = new Map();
-let closure_12 = {};
-let closure_13 = {};
-let closure_14 = {};
+let closure_7 = {};
+let closure_8 = {};
+let closure_9 = {};
 let set = new Set();
 const set1 = new Set();
 const set2 = new Set();
-let closure_18 = {};
-let c19 = 0;
-let closure_20 = {};
-let c21 = 0;
-let c22 = 0;
-let c23 = 0;
-let closure_24 = { friends: undefined, blocked: undefined, ignored: undefined, blockedOrIgnored: undefined };
+let closure_13 = {};
+let c14 = 0;
+let closure_15 = {};
+let c16 = 0;
+let c17 = 0;
+let c18 = 0;
+let closure_19 = { friends: "Array", blocked: "flex", ignored: "y", blockedOrIgnored: "HermesInternal" };
 const map1 = new Map();
-let tmp7 = ((Store) => {
-  class RelationshipStore {
-    constructor() {
-      self = this;
-      tmp = outer1_2(this, RelationshipStore);
-      obj = outer1_5(RelationshipStore);
-      tmp2 = outer1_4;
-      if (outer1_26()) {
-        tmp6 = globalThis;
-        _Reflect = Reflect;
-        tmp7 = outer1_5;
-        tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, outer1_5(self).constructor);
-      } else {
-        tmp3 = arguments;
-        tmp4 = arguments;
-        constructResult = obj(...arguments);
-      }
-      return tmp2(self, constructResult);
+class RelationshipStore extends Store {
+}
+const prototype = RelationshipStore.prototype;
+prototype["initialize"] = function initialize() {
+  this.waitFor(mergeGuildAvatar);
+};
+prototype["isFriend"] = function isFriend(id) {
+  let tmp = null != id;
+  if (tmp) {
+    tmp = map.get(id) === RelationshipTypes.FRIEND;
+  }
+  return tmp;
+};
+prototype["isBlockedOrIgnored"] = function isBlockedOrIgnored(id) {
+  const self = this;
+  return this.isBlocked(id) || self.isIgnored(id);
+};
+prototype["isBlockedOrIgnoredForMessage"] = function isBlockedOrIgnoredForMessage(message) {
+  const self = this;
+  return this.isBlockedForMessage(message) || self.isIgnoredForMessage(message);
+};
+prototype["isBlocked"] = function isBlocked(arg0) {
+  let tmp = null != arg0;
+  if (tmp) {
+    tmp = map.get(arg0) === RelationshipTypes.BLOCKED;
+  }
+  return tmp;
+};
+prototype["isBlockedForMessage"] = function isBlockedForMessage(message) {
+  if (null != message.author) {
+    if (map.get(message.author.id) === RelationshipTypes.BLOCKED) {
+      return true;
     }
   }
-  callback2(RelationshipStore, Store);
-  let obj = {
-    key: "initialize",
-    value() {
-      this.waitFor(outer1_9);
-    }
-  };
-  let items = [obj, , , , , , , , , , , , , , , , , , , , , , , , , , , , ];
-  obj = {
-    key: "isFriend",
-    value(arg0) {
-      let tmp = null != arg0;
-      if (tmp) {
-        tmp = outer1_11.get(arg0) === outer1_10.FRIEND;
-      }
-      return tmp;
-    }
-  };
-  items[1] = obj;
-  obj = {
-    key: "isBlockedOrIgnored",
-    value(arg0) {
-      const self = this;
-      return this.isBlocked(arg0) || self.isIgnored(arg0);
-    }
-  };
-  items[2] = obj;
-  items[3] = {
-    key: "isBlockedOrIgnoredForMessage",
-    value(arg0) {
-      const self = this;
-      return this.isBlockedForMessage(arg0) || self.isIgnoredForMessage(arg0);
-    }
-  };
-  items[4] = {
-    key: "isBlocked",
-    value(arg0) {
-      let tmp = null != arg0;
-      if (tmp) {
-        tmp = outer1_11.get(arg0) === outer1_10.BLOCKED;
-      }
-      return tmp;
-    }
-  };
-  items[5] = {
-    key: "isBlockedForMessage",
-    value(author) {
-      const self = this;
-      if (null != author.author) {
-        if (outer1_11.get(author.author.id) === outer1_10.BLOCKED) {
-          return true;
-        }
-      }
-      const isBlocked = self.isBlocked;
-      if (author instanceof outer1_8) {
-        const interactionMetadata = author.interactionMetadata;
-        let id;
-        if (null != interactionMetadata) {
-          const user2 = interactionMetadata.user;
-          if (null != user2) {
-            id = user2.id;
-          }
-        }
-        if (isBlocked(id)) {
-          return true;
-        }
-      } else {
-        const interaction_metadata = author.interaction_metadata;
-        let id1;
-        if (null != interaction_metadata) {
-          const user = interaction_metadata.user;
-          if (null != user) {
-            id1 = user.id;
-          }
-        }
-        if (isBlocked(id1)) {
-          return true;
-        }
-      }
-      return false;
-    }
-  };
-  items[6] = {
-    key: "isIgnored",
-    value(arg0) {
-      let tmp = null != arg0;
-      if (tmp) {
-        let hasItem = outer1_11.get(arg0) !== outer1_10.BLOCKED;
-        if (hasItem) {
-          hasItem = outer1_16.has(arg0);
-        }
-        tmp = hasItem;
-      }
-      return tmp;
-    }
-  };
-  items[7] = {
-    key: "isIgnoredForMessage",
-    value(author) {
-      const self = this;
-      if (null != author.author) {
-        if (self.isIgnored(author.author.id)) {
-          return true;
-        }
-      }
-      const isIgnored = self.isIgnored;
-      if (author instanceof outer1_8) {
-        const interactionMetadata = author.interactionMetadata;
-        let id;
-        if (null != interactionMetadata) {
-          const user2 = interactionMetadata.user;
-          if (null != user2) {
-            id = user2.id;
-          }
-        }
-        if (isIgnored(id)) {
-          return true;
-        }
-      } else {
-        const interaction_metadata = author.interaction_metadata;
-        let id1;
-        if (null != interaction_metadata) {
-          const user = interaction_metadata.user;
-          if (null != user) {
-            id1 = user.id;
-          }
-        }
-        if (isIgnored(id1)) {
-          return true;
-        }
-      }
-      return false;
-    }
-  };
-  items[8] = {
-    key: "isUnfilteredPendingIncoming",
-    value(arg0) {
-      const self = this;
-      return outer1_11.get(arg0) === outer1_10.PENDING_INCOMING && !self.isSpam(arg0) && !self.isIgnored(arg0);
-    }
-  };
-  items[9] = {
-    key: "getPendingCount",
-    value() {
-      return outer1_21;
-    }
-  };
-  items[10] = {
-    key: "getSpamCount",
-    value() {
-      return outer1_22;
-    }
-  };
-  items[11] = {
-    key: "getPendingIgnoredCount",
-    value() {
-      return outer1_23;
-    }
-  };
-  items[12] = {
-    key: "getOutgoingCount",
-    value() {
-      const value = outer1_25.get(outer1_10.PENDING_OUTGOING);
-      let size;
-      if (null != value) {
-        size = value.size;
-      }
-      let num = 0;
-      if (null != size) {
-        num = size;
-      }
-      return num;
-    }
-  };
-  items[13] = {
-    key: "getFriendCount",
-    value() {
-      const value = outer1_25.get(outer1_10.FRIEND);
-      let size;
-      if (null != value) {
-        size = value.size;
-      }
-      let num = 0;
-      if (null != size) {
-        num = size;
-      }
-      return num;
-    }
-  };
-  items[14] = {
-    key: "getRelationshipCount",
-    value() {
-      return outer1_11.size;
-    }
-  };
-  items[15] = {
-    key: "getMutableRelationships",
-    value() {
-      return outer1_11;
-    }
-  };
-  items[16] = {
-    key: "getVersion",
-    value() {
-      return outer1_19;
-    }
-  };
-  items[17] = {
-    key: "isSpam",
-    value(arg0) {
-      return outer1_15.has(arg0);
-    }
-  };
-  items[18] = {
-    key: "getRelationshipType",
-    value(arg0) {
-      let NONE = outer1_11.get(arg0);
-      if (null == NONE) {
-        NONE = outer1_10.NONE;
-      }
-      return NONE;
-    }
-  };
-  items[19] = {
-    key: "getNickname",
-    value(arg0) {
-      return outer1_12[arg0];
-    }
-  };
-  items[20] = {
-    key: "getSince",
-    value(arg0) {
-      return outer1_13[arg0];
-    }
-  };
-  items[21] = {
-    key: "getSinces",
-    value() {
-      return outer1_13;
-    }
-  };
-  items[22] = {
-    key: "getNote",
-    value(arg0) {
-      return outer1_14[arg0];
-    }
-  };
-  items[23] = {
-    key: "getFriendIDs",
-    value() {
-      if (null == outer1_24.friends) {
-        let items = outer1_25.get(outer1_10.FRIEND);
-        if (null == items) {
-          items = [];
-        }
-        outer1_24.friends = Array.from(items);
-        const tmp = outer1_24;
-      }
-      return outer1_24.friends;
-    }
-  };
-  items[24] = {
-    key: "getBlockedIDs",
-    value() {
-      if (null == outer1_24.blocked) {
-        let items = outer1_25.get(outer1_10.BLOCKED);
-        if (null == items) {
-          items = [];
-        }
-        outer1_24.blocked = Array.from(items);
-        const tmp = outer1_24;
-      }
-      return outer1_24.blocked;
-    }
-  };
-  items[25] = {
-    key: "getIgnoredIDs",
-    value() {
-      const self = this;
-      if (null == outer1_24.ignored) {
-        const _Array = Array;
-        outer1_24.ignored = Array.from(outer1_16.values()).filter((arg0) => self.isIgnored(arg0));
-        const arr = Array.from(outer1_16.values());
-      }
-      return outer1_24.ignored;
-    }
-  };
-  items[26] = {
-    key: "getBlockedOrIgnoredIDs",
-    value() {
-      let done;
-      if (null == outer1_24.blockedOrIgnored) {
-        const _Set = Set;
-        const set = new Set(outer1_16);
-        const value = outer1_25.get(outer1_10.BLOCKED);
-        if (null != value) {
-          const tmp2 = outer1_27(value);
-          let iter = tmp2();
-          if (!iter.done) {
-            do {
-              let addResult = set.add(iter.value);
-              let iter2 = tmp2();
-              iter = iter2;
-              done = iter2.done;
-            } while (!done);
-          }
-        }
-        const _Array = Array;
-        outer1_24.blockedOrIgnored = Array.from(set.values());
-      }
-      return outer1_24.blockedOrIgnored;
-    }
-  };
-  items[27] = {
-    key: "getOriginApplicationId",
-    value(arg0) {
-      return outer1_18[arg0];
-    }
-  };
-  items[28] = {
-    key: "isStranger",
-    value(arg0) {
-      if (null != outer1_20[arg0]) {
-        const _Date = Date;
-        if (outer1_20[arg0].expiry < Date.now()) {
-          delete tmp[tmp2];
-        } else {
-          return outer1_20[arg0].isStranger;
-        }
+  const self = this;
+  const isBlocked = this.isBlocked;
+  if (message instanceof hasFlag) {
+    const interactionMetadata = message.interactionMetadata;
+    let id;
+    if (interactionMetadata != null) {
+      const user2 = interactionMetadata.user;
+      if (user2 != null) {
+        id = user2.id;
       }
     }
-  };
-  return callback(RelationshipStore, items);
-})(require("initialize").Store);
-tmp7.displayName = "RelationshipStore";
-tmp7 = new tmp7(require("dispatcher"), {
+    if (isBlocked(id)) {
+      return true;
+    }
+  } else {
+    const interaction_metadata = message.interaction_metadata;
+    let id1;
+    if (interaction_metadata != null) {
+      const user = interaction_metadata.user;
+      if (user != null) {
+        id1 = user.id;
+      }
+    }
+    if (isBlocked(id1)) {
+      return true;
+    }
+  }
+  return false;
+};
+prototype["isIgnored"] = function isIgnored(arg0) {
+  let tmp = null != arg0;
+  if (tmp) {
+    let hasItem = map.get(arg0) !== RelationshipTypes.BLOCKED;
+    if (hasItem) {
+      hasItem = set1.has(arg0);
+    }
+    tmp = hasItem;
+  }
+  return tmp;
+};
+prototype["isIgnoredForMessage"] = function isIgnoredForMessage(result) {
+  const self = this;
+  if (null != result.author) {
+    if (self.isIgnored(result.author.id)) {
+      return true;
+    }
+  }
+  const isIgnored = self.isIgnored;
+  if (result instanceof hasFlag) {
+    const interactionMetadata = result.interactionMetadata;
+    let id;
+    if (interactionMetadata != null) {
+      const user2 = interactionMetadata.user;
+      if (user2 != null) {
+        id = user2.id;
+      }
+    }
+    if (isIgnored(id)) {
+      return true;
+    }
+  } else {
+    const interaction_metadata = result.interaction_metadata;
+    let id1;
+    if (interaction_metadata != null) {
+      const user = interaction_metadata.user;
+      if (user != null) {
+        id1 = user.id;
+      }
+    }
+    if (isIgnored(id1)) {
+      return true;
+    }
+  }
+  return false;
+};
+prototype["isUnfilteredPendingIncoming"] = function isUnfilteredPendingIncoming(nextResult) {
+  const self = this;
+  return map.get(nextResult) === RelationshipTypes.PENDING_INCOMING && !self.isSpam(nextResult) && !self.isIgnored(nextResult);
+};
+prototype["getPendingCount"] = function getPendingCount() {
+  return c16;
+};
+prototype["getSpamCount"] = function getSpamCount() {
+  return c17;
+};
+prototype["getPendingIgnoredCount"] = function getPendingIgnoredCount() {
+  return c18;
+};
+prototype["getOutgoingCount"] = function getOutgoingCount() {
+  const value = map1.get(RelationshipTypes.PENDING_OUTGOING);
+  let num;
+  if (value != null) {
+    num = value.size;
+  }
+  if (num == null) {
+    num = 0;
+  }
+  return num;
+};
+prototype["getFriendCount"] = function getFriendCount() {
+  const value = map1.get(RelationshipTypes.FRIEND);
+  let num;
+  if (value != null) {
+    num = value.size;
+  }
+  if (num == null) {
+    num = 0;
+  }
+  return num;
+};
+prototype["getRelationshipCount"] = function getRelationshipCount() {
+  return map.size;
+};
+prototype["getMutableRelationships"] = function getMutableRelationships() {
+  return map;
+};
+prototype["getVersion"] = function getVersion() {
+  return c14;
+};
+prototype["isSpam"] = function isSpam(arg0) {
+  return set.has(arg0);
+};
+prototype["getRelationshipType"] = function getRelationshipType(arg0) {
+  let NONE = map.get(arg0);
+  if (null == NONE) {
+    NONE = RelationshipTypes.NONE;
+  }
+  return NONE;
+};
+prototype["getNickname"] = function getNickname(arg0) {
+  return table[arg0];
+};
+prototype["getSince"] = function getSince(userId) {
+  return table2[userId];
+};
+prototype["getSinces"] = function getSinces() {
+  return closure_8;
+};
+prototype["getNote"] = function getNote(arg0) {
+  return table3[arg0];
+};
+prototype["getFriendIDs"] = function getFriendIDs() {
+  if (null == closure_19.friends) {
+    let items = map1.get(RelationshipTypes.FRIEND);
+    if (items == null) {
+      items = [];
+    }
+    tmp.friends = Array.from(items);
+  }
+  return closure_19.friends;
+};
+prototype["getBlockedIDs"] = function getBlockedIDs() {
+  if (null == closure_19.blocked) {
+    let items = map1.get(RelationshipTypes.BLOCKED);
+    if (items == null) {
+      items = [];
+    }
+    tmp.blocked = Array.from(items);
+  }
+  return closure_19.blocked;
+};
+prototype["getIgnoredIDs"] = function getIgnoredIDs() {
+  const self = this;
+  if (null == closure_19.ignored) {
+    const _Array = Array;
+    tmp.ignored = Array.from(set1.values()).filter((arg0) => self.isIgnored(arg0));
+    const arr = Array.from(set1.values());
+  }
+  return closure_19.ignored;
+};
+prototype["getBlockedOrIgnoredIDs"] = function getBlockedOrIgnoredIDs() {
+  let tmp = closure_19;
+  if (null == closure_19.blockedOrIgnored) {
+    const _Set = Set;
+    const set = new Set(set1);
+    const value = map1.get(RelationshipTypes.BLOCKED);
+    if (null != value) {
+      for (const item10007 of value) {
+        let addResult = set.add(item10007);
+        continue;
+      }
+    }
+    const _Array = Array;
+    closure_19.blockedOrIgnored = Array.from(set.values());
+    tmp = closure_19;
+  }
+  return tmp.blockedOrIgnored;
+};
+prototype["getOriginApplicationId"] = function getOriginApplicationId(id) {
+  return table4[id];
+};
+prototype["isStranger"] = function isStranger(userId) {
+  if (null != dependencyMap[userId]) {
+    const _Date = Date;
+    if (dependencyMap[userId].expiry < Date.now()) {
+      delete tmp[tmp2];
+    } else {
+      return dependencyMap[userId].isStranger;
+    }
+  }
+};
+RelationshipStore.displayName = "RelationshipStore";
+const relationshipStore = new RelationshipStore(require("dispatcher"), {
   CONNECTION_OPEN: function handleConnectionOpen(relationships) {
     map.clear();
     map1.clear();
-    let closure_12 = {};
-    let closure_13 = {};
-    let closure_14 = {};
+    let closure_7 = {};
+    let closure_8 = {};
+    let closure_9 = {};
     set1.clear();
     set.clear();
     set2.clear();
-    resetUserIdLists();
-    let closure_18 = {};
-    let closure_20 = {};
+    closure_19.friends = undefined;
+    closure_19.blocked = undefined;
+    closure_19.ignored = undefined;
+    closure_19.blockedOrIgnored = undefined;
+    let closure_13 = {};
+    let closure_15 = {};
     relationships = relationships.relationships;
-    const item = relationships.forEach((id) => {
-      outer1_30(id.id, id.type);
-      if (null != id.nickname) {
-        closure_12[id.id] = id.nickname;
-      }
-      if (null != id.since) {
-        closure_13[id.id] = id.since;
-      }
-      if (null != id.note) {
-        closure_14[id.id] = id.note;
-      }
-      if (id.is_spam_request) {
-        outer1_15.add(id.id);
-      }
-      if (null != id.origin_application_id) {
-        closure_18[id.id] = id.origin_application_id;
-      }
-      if (id.user_ignored) {
-        outer1_16.add(id.id);
-        if (id.type === outer1_10.PENDING_INCOMING) {
-          outer1_17.add(id.id);
+    const item = relationships.forEach((nickname) => {
+      let id;
+      let type;
+      ({ id, type } = nickname);
+      let value = closure_6.get(id);
+      if (value === type) {
+        if (null != nickname.nickname) {
+          closure_7[nickname.id] = nickname.nickname;
         }
+        if (null != nickname.since) {
+          closure_8[nickname.id] = nickname.since;
+        }
+        if (null != nickname.note) {
+          closure_9[nickname.id] = nickname.note;
+        }
+        if (nickname.is_spam_request) {
+          set.add(nickname.id);
+        }
+        if (null != nickname.origin_application_id) {
+          closure_13[nickname.id] = nickname.origin_application_id;
+        }
+        if (nickname.user_ignored) {
+          set2.add(nickname.id);
+          if (nickname.type === constants.PENDING_INCOMING) {
+            set3.add(nickname.id);
+          }
+        }
+      } else {
+        if (null != value) {
+          value = store.get(value);
+          if (value != null) {
+            value.delete(id);
+          }
+        }
+        const result = closure_6.set(id, type);
+        const value1 = store.get(type);
+        if (null != value1) {
+          value1.add(id);
+        } else {
+          const _Set = Set;
+          const items = [id];
+          set = new Set(items);
+          const result1 = obj3.set(type, set);
+        }
+        closure_19.friends = undefined;
+        closure_19.blocked = undefined;
+        closure_19.ignored = undefined;
+        closure_19.blockedOrIgnored = undefined;
+        obj3 = store;
       }
     });
-    recountPending();
+    let size = set.size;
+    size = set2.size;
+    let value = map1.get(RelationshipTypes.PENDING_INCOMING);
+    let num;
+    if (value != null) {
+      num = value.size;
+    }
+    if (num == null) {
+      num = 0;
+    }
+    let closure_16 = Math.max(num - size - size, 0);
+    closure_14 = closure_14 + 1;
   },
-  OVERLAY_INITIALIZE: function handleOverlayInitialize(relationships) {
-    let done;
+  OVERLAY_INITIALIZE: function handleOverlayInitialize(arg0) {
     map.clear();
     map1.clear();
-    const tmp3 = _createForOfIteratorHelperLoose(relationships.relationships);
-    let iter = tmp3();
-    if (!iter.done) {
-      do {
-        let tmp4 = callback3;
-        let tmp5 = callback3(iter.value, 2);
-        let tmp6 = upsertRelationship;
-        let tmp7 = upsertRelationship(tmp5[0], tmp5[1]);
-        let iter2 = tmp3();
-        iter = iter2;
-        done = iter2.done;
-      } while (!done);
+    while (tmp3 !== undefined) {
+      let tmp5 = callback;
+      let tmp6 = callback(tmp4, 2);
+      let tmp7 = upsertRelationship;
+      let tmp8 = upsertRelationship(tmp6[0], tmp6[1]);
+      continue;
     }
     recountPending();
   },
   RELATIONSHIP_ADD: function handleRelationshipAdd(relationship) {
-    const value = map.get(relationship.relationship.id);
-    upsertRelationship(relationship.relationship.id, relationship.relationship.type);
-    if (null != relationship.relationship.nickname) {
-      let obj = {};
-      const merged = Object.assign(obj);
-      obj[relationship.relationship.id] = relationship.relationship.nickname;
-    }
-    if (null != relationship.relationship.since) {
-      obj = {};
-      const merged1 = Object.assign(obj);
-      obj[relationship.relationship.id] = relationship.relationship.since;
-    }
-    if (null != relationship.relationship.note) {
-      obj = {};
-      const merged2 = Object.assign(obj);
-      obj[relationship.relationship.id] = relationship.relationship.note;
-    }
-    if (null != relationship.relationship.originApplicationId) {
-      const obj1 = {};
-      const merged3 = Object.assign(obj1);
-      obj1[relationship.relationship.id] = relationship.relationship.originApplicationId;
-    }
-    if (relationship.relationship.isSpamRequest) {
-      obj5.add(relationship.relationship.id);
-    } else {
-      obj5.delete(relationship.relationship.id);
-    }
-    if (relationship.relationship.userIgnored) {
-      obj6.add(relationship.relationship.id);
-      if (relationship.relationship.type === RelationshipTypes.PENDING_INCOMING) {
-        set2.add(relationship.relationship.id);
-      } else if (relationship.relationship.type === RelationshipTypes.FRIEND) {
+    let obj = map;
+    const id = relationship.relationship.id;
+    const type = relationship.relationship.type;
+    let value = map.get(relationship.relationship.id);
+    value = map.get(id);
+    if (value === type) {
+      if (null != relationship.relationship.nickname) {
+        obj = {};
+        const merged = Object.assign(obj);
+        obj[relationship.relationship.id] = relationship.relationship.nickname;
+      }
+      if (null != relationship.relationship.since) {
+        obj = {};
+        const merged1 = Object.assign(obj);
+        obj[relationship.relationship.id] = relationship.relationship.since;
+      }
+      if (null != relationship.relationship.note) {
+        const obj1 = {};
+        const merged2 = Object.assign(obj1);
+        obj1[relationship.relationship.id] = relationship.relationship.note;
+      }
+      if (null != relationship.relationship.originApplicationId) {
+        let obj2 = {};
+        const merged3 = Object.assign(obj2);
+        obj2[relationship.relationship.id] = relationship.relationship.originApplicationId;
+      }
+      if (relationship.relationship.isSpamRequest) {
+        obj9.add(relationship.relationship.id);
+        let tmp29 = obj9;
+      } else {
+        obj9.delete(relationship.relationship.id);
+        tmp29 = obj9;
+      }
+      if (relationship.relationship.userIgnored) {
+        obj10.add(relationship.relationship.id);
+        if (relationship.relationship.type === RelationshipTypes.PENDING_INCOMING) {
+          set2.add(relationship.relationship.id);
+        } else if (relationship.relationship.type === tmp35.FRIEND) {
+          set2.delete(relationship.relationship.id);
+        }
+      } else {
+        obj10.delete(relationship.relationship.id);
         set2.delete(relationship.relationship.id);
       }
+      let size = tmp29.size;
+      size = set2.size;
+      const value1 = map1.get(RelationshipTypes.PENDING_INCOMING);
+      let num;
+      if (value1 != null) {
+        num = value1.size;
+      }
+      if (num == null) {
+        num = 0;
+      }
+      let closure_16 = Math.max(num - size - size, 0);
+      closure_14 = closure_14 + 1;
+      if (tmp48) {
+        const obj3 = { type: "FRIEND_REQUEST_ACCEPTED", user: null };
+        obj3[1] = relationship.relationship.user;
+        importDefault(709).dispatch(obj3);
+        const obj11 = importDefault(709);
+      }
     } else {
-      obj6.delete(relationship.relationship.id);
-      set2.delete(relationship.relationship.id);
-    }
-    recountPending();
-    let tmp28 = relationship.relationship.type === RelationshipTypes.FRIEND;
-    if (tmp28) {
-      tmp28 = value === RelationshipTypes.PENDING_OUTGOING;
-    }
-    if (tmp28) {
-      const obj2 = { type: "FRIEND_REQUEST_ACCEPTED", user: relationship.relationship.user };
-      importDefault(686).dispatch(obj2);
-      const obj7 = importDefault(686);
+      if (null != value) {
+        const value2 = map1.get(value);
+        if (value2 != null) {
+          value2.delete(id);
+        }
+      }
+      const result = obj.set(id, type);
+      obj2 = map1;
+      const value3 = map1.get(type);
+      if (null != value3) {
+        value3.add(id);
+      } else {
+        const _Set = Set;
+        const items = [id];
+        const set = new Set(items);
+        const result1 = obj2.set(type, set);
+      }
+      closure_19.friends = undefined;
+      closure_19.blocked = undefined;
+      closure_19.ignored = undefined;
+      closure_19.blockedOrIgnored = undefined;
     }
   },
   RELATIONSHIP_REMOVE: function handleRelationshipRemove(relationship) {
-    removeRelationship(relationship.relationship.id);
+    const id = relationship.relationship.id;
+    let obj = map;
+    let value = map.get(id);
+    if (null != value) {
+      obj.delete(id);
+      value = map1.get(value);
+      if (value != null) {
+        value.delete(id);
+      }
+      closure_19.friends = undefined;
+      closure_19.blocked = undefined;
+      closure_19.ignored = undefined;
+      closure_19.blockedOrIgnored = undefined;
+    }
     if (null != obj[relationship.relationship.id]) {
       obj = {};
       const merged = Object.assign(obj);
-      const id = relationship.relationship.id;
-      delete tmp3[tmp];
+      const id2 = relationship.relationship.id;
+      delete tmp2[tmp];
     }
     if (null != obj[relationship.relationship.id]) {
       obj = {};
       const merged1 = Object.assign(obj);
-      const id2 = relationship.relationship.id;
-      delete tmp3[tmp];
-    }
-    if (null != obj[relationship.relationship.id]) {
-      obj = {};
-      const merged2 = Object.assign(obj);
       const id3 = relationship.relationship.id;
-      delete tmp3[tmp];
+      delete tmp2[tmp];
     }
     if (null != obj1[relationship.relationship.id]) {
       obj1 = {};
-      const merged3 = Object.assign(obj1);
+      const merged2 = Object.assign(obj1);
       const id4 = relationship.relationship.id;
+      delete tmp2[tmp];
+    }
+    if (null != obj2[relationship.relationship.id]) {
+      obj2 = {};
+      const merged3 = Object.assign(obj2);
+      const id5 = relationship.relationship.id;
       delete tmp2[tmp];
     }
     if (!relationship.relationship.userIgnored) {
@@ -668,84 +540,133 @@ tmp7 = new tmp7(require("dispatcher"), {
     }
     set2.delete(relationship.relationship.id);
     set.delete(relationship.relationship.id);
-    recountPending();
+    let size = set.size;
+    size = set2.size;
+    const value1 = map1.get(RelationshipTypes.PENDING_INCOMING);
+    let num;
+    if (value1 != null) {
+      num = value1.size;
+    }
+    if (num == null) {
+      num = 0;
+    }
+    let closure_16 = Math.max(num - size - size, 0);
+    closure_14 = closure_14 + 1;
   },
   RELATIONSHIP_UPDATE: function handleRelationshipUpdate(relationship) {
+    let id;
+    let type;
     relationship = relationship.relationship;
-    upsertRelationship(relationship.id, relationship.type);
-    if (null == relationship.since) {
-      const id = relationship.id;
-      delete tmp3[tmp];
-    } else {
-      closure_13[relationship.id] = relationship.since;
-    }
-    if (null == relationship.nickname) {
-      const id2 = relationship.id;
-      delete tmp3[tmp];
-    } else {
-      closure_12[relationship.id] = relationship.nickname;
-    }
-    if (null == relationship.note) {
-      const id3 = relationship.id;
-      delete tmp3[tmp];
-    } else {
-      closure_14[relationship.id] = relationship.note;
-    }
-    if (relationship.isSpamRequest) {
-      obj.add(relationship.id);
-    } else {
-      obj.delete(relationship.id);
-    }
-    if (null != table[relationship.id]) {
-      const id4 = relationship.id;
-      delete tmp3[tmp];
-    }
-    if (null == relationship.originApplicationId) {
-      const id5 = relationship.id;
-      delete tmp2[tmp];
-    } else {
-      closure_18[relationship.id] = relationship.originApplicationId;
-    }
-    if (relationship.userIgnored) {
-      obj2.add(relationship.id);
-      if (relationship.type === RelationshipTypes.PENDING_INCOMING) {
-        set2.add(relationship.id);
+    ({ id, type } = relationship);
+    let value = map.get(id);
+    if (value === type) {
+      if (null == relationship.since) {
+        const id2 = relationship.id;
+        delete tmp2[tmp];
+      } else {
+        closure_8[relationship.id] = relationship.since;
       }
+      if (null == relationship.nickname) {
+        const id3 = relationship.id;
+        delete tmp2[tmp];
+      } else {
+        closure_7[relationship.id] = relationship.nickname;
+      }
+      if (null == relationship.note) {
+        const id4 = relationship.id;
+        delete tmp2[tmp];
+      } else {
+        closure_9[relationship.id] = relationship.note;
+      }
+      if (relationship.isSpamRequest) {
+        obj5.add(relationship.id);
+        let tmp25 = obj5;
+      } else {
+        obj5.delete(relationship.id);
+        tmp25 = obj5;
+      }
+      if (null != dependencyMap[relationship.id]) {
+        const id5 = relationship.id;
+        delete tmp3[tmp2];
+      }
+      if (null == relationship.originApplicationId) {
+        const id6 = relationship.id;
+        delete tmp3[tmp2];
+      } else {
+        closure_13[relationship.id] = relationship.originApplicationId;
+      }
+      if (relationship.userIgnored) {
+        obj6.add(relationship.id);
+        if (relationship.type === RelationshipTypes.PENDING_INCOMING) {
+          set2.add(relationship.id);
+        }
+      } else {
+        obj6.delete(relationship.id);
+        set2.delete(relationship.id);
+      }
+      let size = tmp25.size;
+      size = set2.size;
+      value = map1.get(RelationshipTypes.PENDING_INCOMING);
+      let num;
+      if (value != null) {
+        num = value.size;
+      }
+      if (num == null) {
+        num = 0;
+      }
+      let closure_16 = Math.max(num - size - size, 0);
+      closure_14 = closure_14 + 1;
     } else {
-      obj2.delete(relationship.id);
-      set2.delete(relationship.id);
+      if (null != value) {
+        const value1 = map1.get(value);
+        if (value1 != null) {
+          value1.delete(id);
+        }
+      }
+      const result = map.set(id, type);
+      const value2 = map1.get(type);
+      if (null != value2) {
+        value2.add(id);
+      } else {
+        const _Set = Set;
+        const items = [id];
+        const set = new Set(items);
+        const result1 = obj3.set(type, set);
+      }
+      closure_19.friends = undefined;
+      closure_19.blocked = undefined;
+      closure_19.ignored = undefined;
+      closure_19.blockedOrIgnored = undefined;
+      obj3 = map1;
     }
-    recountPending();
   },
   RELATIONSHIP_PENDING_INCOMING_REMOVED: function handlePendingIncomingRemoved() {
-    let iter2;
-    const tmp3 = _createForOfIteratorHelperLoose(map.keys());
-    let iter = tmp3();
-    if (!iter.done) {
-      do {
-        let value = iter.value;
-        let tmp4 = map;
-        let tmp5 = RelationshipTypes;
-        if (map.get(value) === RelationshipTypes.PENDING_INCOMING) {
-          let tmp6 = removeRelationship;
-          let tmp7 = removeRelationship(value);
-          let tmp8 = set;
-          let deleteResult = set.delete(value);
-          let tmp10 = set2;
-          let deleteResult1 = set2.delete(value);
-          let tmp12 = closure_20;
-          delete tmp[tmp2];
-        }
-        iter2 = tmp3();
-        iter = iter2;
-      } while (!iter2.done);
+    const keys = map.keys();
+    const iter = keys[Symbol.iterator]();
+    const nextResult = iter.next();
+    while (iter !== undefined) {
+      let tmp5 = nextResult;
+      let tmp6 = map;
+      let tmp7 = RelationshipTypes;
+      if (map.get(nextResult) === RelationshipTypes.PENDING_INCOMING) {
+        let tmp8 = removeRelationship;
+        let tmp9 = nextResult;
+        let tmp10 = removeRelationship(tmp5);
+        let tmp11 = set;
+        let deleteResult = set.delete(tmp5);
+        let tmp13 = set2;
+        let deleteResult1 = set2.delete(tmp5);
+        let tmp15 = closure_15;
+        delete tmp[tmp2];
+      }
+      continue;
     }
     recountPending();
   },
   UPDATE_STRANGER_STATUS: function handleUpdateStrangerStatus(isStranger) {
-    closure_20[isStranger.userId] = { expiry: Date.now() + 300000, isStranger: isStranger.isStranger };
+    closure_15[isStranger.userId] = { expiry: Date.now() + 300000, isStranger: isStranger.isStranger };
   }
 });
 let result = set.fileFinishedImporting("stores/RelationshipStore.tsx");
 
-export default tmp7;
+export default relationshipStore;

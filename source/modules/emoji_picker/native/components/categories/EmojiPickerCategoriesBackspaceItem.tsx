@@ -1,11 +1,11 @@
-// Module ID: 9424
-// Function ID: 73287
+// Module ID: 9448
+// Function ID: 9449
 // Name: EmojiPickerCategoriesBackspaceItem
-// Dependencies: [31, 27, 653, 33, 4050, 1212, 9425, 2]
+// Dependencies: [19, 17, 676, 21, 4074, 1236, 9449, 2]
 // Exports: default
 
-// Module 9424 (EmojiPickerCategoriesBackspaceItem)
-import result from "result";
+// Module 9448 (EmojiPickerCategoriesBackspaceItem)
+import noop from "noop";
 import { Pressable } from "get ActivityIndicator";
 import { NODE_MARGIN } from "ME";
 import { jsx } from "jsxProd";
@@ -17,12 +17,13 @@ export default function EmojiPickerCategoriesBackspaceItem(onBackspace) {
   let iconStyle;
   let style;
   onBackspace = onBackspace.onBackspace;
+  let dependencyMap;
   let React;
   ({ style, iconStyle } = onBackspace);
-  const interval = new onBackspace(4050).Interval();
-  const dependencyMap = React.useRef(interval);
-  const delayedCall = new onBackspace(4050).DelayedCall(500, () => {
-    const current = result.current;
+  const interval = new onBackspace(4074).Interval();
+  dependencyMap = React.useRef(interval);
+  const delayedCall = new onBackspace(4074).DelayedCall(500, () => {
+    const current = noop.current;
     current.cancel();
     const current2 = ref.current;
     current2.start(50, onBackspace);
@@ -32,11 +33,11 @@ export default function EmojiPickerCategoriesBackspaceItem(onBackspace) {
   const items1 = [onBackspace];
   const callback = React.useCallback(() => {
     onBackspace();
-    const current = result.current;
+    const current = noop.current;
     current.delay();
   }, items);
   const callback1 = React.useCallback(() => {
-    const current = result.current;
+    const current = noop.current;
     current.cancel();
     const current2 = ref.current;
     current2.stop();
@@ -44,20 +45,19 @@ export default function EmojiPickerCategoriesBackspaceItem(onBackspace) {
   }, items1);
   const effect = React.useEffect(() => {
     current = current.current;
-    current = result.current;
+    current = noop.current;
     return () => {
       current.stop();
       current.cancel();
     };
   });
-  obj = { hitSlop: obj, style, accessibilityRole: "keyboardkey" };
+  obj = { hitSlop: obj, style, accessibilityRole: "keyboardkey", accessibilityLabel: null, delayLongPress: 500, onPressOut: null, onLongPress: null, children: null };
   obj = { top: NODE_MARGIN, bottom: NODE_MARGIN, right: NODE_MARGIN, left: NODE_MARGIN };
-  const intl = onBackspace(1212).intl;
-  obj.accessibilityLabel = intl.string(onBackspace(1212).t["4SnBzF"]);
-  obj.delayLongPress = 500;
-  obj.onPressOut = callback1;
-  obj.onLongPress = callback;
+  const intl = onBackspace(1236).intl;
+  obj[3] = intl.string(onBackspace(1236).t["4SnBzF"]);
+  obj[5] = callback1;
+  obj[6] = callback;
   const items2 = [iconStyle, { opacity: 0.5 }];
-  obj.children = jsx(onBackspace(9425).BackspaceIcon, { style: items2 });
+  obj[7] = jsx(onBackspace(9449).BackspaceIcon, { style: items2 });
   return <Pressable top={NODE_MARGIN} bottom={NODE_MARGIN} right={NODE_MARGIN} left={NODE_MARGIN} />;
 };

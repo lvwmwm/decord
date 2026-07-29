@@ -1,12 +1,12 @@
-// Module ID: 8434
-// Function ID: 67257
+// Module ID: 8458
+// Function ID: 8459
 // Name: useProfilePrimaryColor
-// Dependencies: [57, 4157, 1392, 7886, 5790, 2]
+// Dependencies: [32, 4181, 1416, 7911, 5808, 2]
 // Exports: getProfilePrimaryColor, useProfilePrimaryColor
 
-// Module 8434 (useProfilePrimaryColor)
+// Module 8458 (useProfilePrimaryColor)
 import _slicedToArray from "_slicedToArray";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
 
 const require = arg1;
 const result = require("getAvatarURL").fileFinishedImporting("modules/guild_profile/native/GuildProfileUtils.tsx");
@@ -16,16 +16,15 @@ export const useProfilePrimaryColor = function useProfilePrimaryColor(guildProfi
   if (null != guildProfile) {
     guildIconURL = null;
     if (null == guildProfile.brandColorPrimary) {
-      let obj = importDefault(1392);
-      obj = {};
-      ({ id: obj2.id, icon: obj2.icon } = guildProfile);
-      obj.size = 64;
+      let obj = importDefault(1416);
+      obj = { id: null, icon: null, size: 64 };
+      ({ id: obj2[0], icon: obj2[1] } = guildProfile);
       guildIconURL = obj.getGuildIconURL(obj);
     }
   }
-  let brandColorPrimary;
-  brandColorPrimary = importDefault(7886)(guildIconURL, token);
-  if (null != guildProfile) {
+  let brandColorPrimary = importDefault(7911)(guildIconURL, token);
+  brandColorPrimary = undefined;
+  if (guildProfile != null) {
     brandColorPrimary = guildProfile.brandColorPrimary;
   }
   if (null != brandColorPrimary) {
@@ -45,38 +44,43 @@ export const getProfilePrimaryColor = function getProfilePrimaryColor(guildProfi
   } else if (null != guildProfileFromInvite.brandColorPrimary) {
     return guildProfileFromInvite.brandColorPrimary;
   } else {
-    let obj = {};
-    ({ id: obj6.id, icon: obj6.icon } = guildProfileFromInvite);
-    obj.size = 64;
-    const guildIconURL = importDefault(1392).getGuildIconURL(obj);
+    let obj = { id: null, icon: null, size: 64 };
+    ({ id: obj6[0], icon: obj6[1] } = guildProfileFromInvite);
+    const guildIconURL = importDefault(1416).getGuildIconURL(obj);
     if (null == guildIconURL) {
       return null;
     } else {
-      require(7886) /* hasFetchedColors */.maybeFetchColors(guildIconURL);
-      const useColorStore = require(7886) /* hasFetchedColors */.useColorStore;
-      const tmp20 = useColorStore.getState().palette[guildIconURL];
+      require(7911) /* hasFetchedColors */.maybeFetchColors(guildIconURL);
+      const useColorStore = require(7911) /* hasFetchedColors */.useColorStore;
+      const tmp13 = useColorStore.getState().palette[guildIconURL];
       let first;
-      if (null != tmp20) {
-        first = tmp20[0];
+      if (tmp13 != null) {
+        first = tmp13[0];
       }
       if (null != first) {
-        let num3 = 1;
         [tmp4, tmp5, tmp6] = callback(first, 3);
-        obj = { r: tmp4, g: tmp5, b: tmp6 };
+        obj = { r: null, g: null, b: null };
+        obj[0] = tmp4;
+        obj[1] = tmp5;
+        obj[2] = tmp6;
         const tmp3 = callback(first, 3);
-        const obj2 = importDefault(5790)(obj);
-        ({ h, s, l } = importDefault(5790)(obj).toHsl());
-        if (_isNativeReflectConstruct.desaturateUserColors) {
-          num3 = _isNativeReflectConstruct.saturation;
+        const obj2 = tmp8(5808)(obj);
+        let num2 = 1;
+        ({ h, s, l } = tmp8(5808)(obj).toHsl());
+        if (maybeApplyNoTextColorForLightCustomTheme.desaturateUserColors) {
+          num2 = maybeApplyNoTextColorForLightCustomTheme.saturation;
         }
-        obj = { h, s: s * num3, l };
-        const toHslResult = importDefault(5790)(obj).toHsl();
-        return importDefault(5790)(obj).toHexString();
+        obj = { h: null, s: null, l: null };
+        obj[0] = h;
+        obj[1] = s * num2;
+        obj[2] = l;
+        const toHslResult = tmp8(5808)(obj).toHsl();
+        return tmp8(5808)(obj).toHexString();
       } else {
         return null;
       }
-      const obj7 = require(7886) /* hasFetchedColors */;
+      const obj7 = require(7911) /* hasFetchedColors */;
     }
-    const obj5 = importDefault(1392);
+    const obj5 = importDefault(1416);
   }
 };

@@ -1,27 +1,25 @@
-// Module ID: 15485
-// Function ID: 117995
-// Dependencies: [31, 27, 9077, 33, 4165, 4161, 2]
+// Module ID: 15519
+// Function ID: 15520
+// Dependencies: [19, 17, 9101, 21, 4189, 4185, 2]
 
-// Module 15485
+// Module 15519
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import importAllResult from "result";
+import createCacheKey from "createCacheKey";
+import importAllResult from "noop";
 
-let closure_3;
-let closure_4;
+let c3;
+let c4;
 const require = arg1;
-({ jsx: closure_3, jsxs: closure_4 } = jsxProd);
-let obj = { flex: 1, display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "space-between", textTransform: "none", paddingTop: require("SearchAutocompleteSelectAnalyticsActions").SEARCH_LIST_SECTION_TOP_PADDING, paddingHorizontal: 16, paddingBottom: 8 };
-let closure_5 = _createForOfIteratorHelperLoose.createStyles({ section: obj });
-const memoResult = require("result").memo((arg0) => {
+({ jsx: c3, jsxs: c4 } = jsxProd);
+let closure_5 = createCacheKey.createStyles({ section: { flex: 1, display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "space-between", textTransform: "none", paddingTop: require("SearchAutocompleteSelectAnalyticsActions").SEARCH_LIST_SECTION_TOP_PADDING, paddingHorizontal: 16, paddingBottom: 8 } });
+const memoResult = require("noop").memo((arg0) => {
   let title;
   let trailing;
   ({ title, trailing } = arg0);
-  let obj = { style: callback3().section };
-  obj = { maxFontSizeMultiplier: 2, accessibilityRole: "header", variant: "text-sm/semibold", color: "interactive-text-default", children: title };
-  const items = [callback(require(4161) /* Text */.Text, obj), trailing];
-  obj.children = items;
+  const obj = { style: callback3().section, children: null };
+  const items = [callback(require(4185) /* Text */.Text, { maxFontSizeMultiplier: 2, accessibilityRole: "header", variant: "text-sm/semibold", color: "interactive-text-default", children: title }), trailing];
+  obj[1] = items;
   return callback2(View, obj);
 });
 const result = require("SearchAutocompleteSelectAnalyticsActions").fileFinishedImporting("modules/search/native/components/list/SearchListSection.tsx");

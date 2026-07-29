@@ -1,176 +1,178 @@
-// Module ID: 5070
-// Function ID: 43487
-// Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 5, 1350, 1838, 5071, 5072, 1883, 1902, 20, 5073, 686, 566, 2]
+// Module ID: 5092
+// Function ID: 5093
+// Name: loadSavedGuildStickers
+// Dependencies: [5, 1374, 1862, 5093, 5094, 1907, 1926, 10, 5095, 709, 589, 2]
 
-// Module 5070 (_isNativeReflectConstruct)
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import closure_4 from "_createForOfIteratorHelperLoose";
-import initialize from "initialize";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
-import asyncGeneratorStep from "asyncGeneratorStep";
-import closure_9 from "_createForOfIteratorHelperLoose";
-import closure_10 from "_createForOfIteratorHelperLoose";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_12 from "_isNativeReflectConstruct";
+// Module 5092 (loadSavedGuildStickers)
+import items from "items";
+import allGuildIds from "allGuildIds";
+import createGuildRecordFromRust from "createGuildRecordFromRust";
+import parseServerGuildSticker from "parseServerGuildSticker";
+import parseServerPackSticker from "parseServerPackSticker";
+import { Store } from "initialize";
 
 const require = arg1;
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
-  }
-  const result = _isNativeReflectConstruct();
-}
 function loadSavedGuildStickers() {
-  return _loadSavedGuildStickers(...arguments);
+  const self = this;
+  const apply = _loadSavedGuildStickers.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
 }
-async function _loadSavedGuildStickers() {
-  let c0;
-  if (outer2_14 === outer2_13.Unloaded) {
-    const databaseResult = outer2_1(outer2_2[10]).database();
-    c0 = databaseResult;
-    if (null != databaseResult) {
-      outer2_14 = outer2_13.Loaded;
-      let obj = outer2_0(outer2_2[11]);
-      const tmp4 = yield obj.tryLoadOrResetCacheGatewayAsync("StickerStore.loadSavedGuildStickers", () => outer3_1(outer3_2[12]).timeAsync("\u{1F4BE}", "loadSavedGuildStickers", () => outer4_1(outer4_2[13]).getAsync(outer1_0)));
-      if (null != tmp4) {
-        obj = { type: "CACHED_STICKERS_LOADED", stickers: tmp4 };
-        outer2_1(outer2_2[14]).dispatch(obj);
-        const obj2 = outer2_1(outer2_2[14]);
+function _loadSavedGuildStickers() {
+  const self = this;
+  const tmp = callback(function*() {
+    if (c3 === 2) {
+      c3 = 3;
+      HermesBuiltin.throwTypeError();
+    } else if (tmp4 === 3) {
+      if (arg0 === 1) {
+        throw arg1;
+      } else if (arg0 === 2) {
+        let obj = { value: null, done: true };
+        obj[0] = arg1;
+        return obj;
+      } else {
+        return { value: "HermesInternal", done: null };
+      }
+    } else {
+      try {
+        c3 = 2;
+        if (0 === dependencyMap) {
+          if (arg0 === 1) {
+            c3 = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            c3 = 3;
+            obj = { value: null, done: true };
+            obj[0] = arg1;
+            return obj;
+          } else {
+            let callback = tmp2;
+            let c0 = tmp5;
+            c0 = undefined;
+            callback = undefined;
+            if (outer1_9 === outer1_8.Unloaded) {
+              let obj1 = outer1_1(1907);
+              const databaseResult = obj1.database();
+              c0 = databaseResult;
+              if (null != databaseResult) {
+                outer1_9 = tmp28.Loaded;
+                let obj2 = outer1_0(1926);
+                dependencyMap = 1;
+                c3 = 1;
+                obj1 = { value: null, done: false };
+                obj1[0] = obj2.tryLoadOrResetCacheGatewayAsync("StickerStore.loadSavedGuildStickers", () => callback(table[7]).timeAsync("\u{1F4BE}", "loadSavedGuildStickers", () => outer1_1(outer1_2[8]).getAsync(closure_0)));
+                return obj1;
+              }
+            }
+            c3 = 3;
+          }
+        } else if (arg0 === 1) {
+          c3 = 3;
+          throw arg1;
+        } else if (arg0 !== 2) {
+          callback = arg1;
+          if (null != callback) {
+            obj2 = { type: "CACHED_STICKERS_LOADED", stickers: null };
+            obj2[1] = callback;
+            callback(709).dispatch(obj2);
+            const obj7 = callback(709);
+          }
+        }
+        c3 = 3;
+        obj = { value: null, done: true };
+        obj[0] = arg1;
+        return obj;
+      } catch (tmp15) {
+        c3 = tmp;
+        throw tmp15;
       }
     }
-    const obj4 = outer2_1(outer2_2[10]);
+  });
+  const _loadSavedGuildStickers = tmp;
+  const apply = tmp.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
   }
+  return applyArgumentsResult;
 }
 let obj = { Unloaded: 0, [0]: "Unloaded", Loaded: 1, [1]: "Loaded" };
 let Unloaded = obj.Unloaded;
-let tmp2 = ((Store) => {
-  class StickersStore {
-    constructor() {
-      self = this;
-      tmp = outer1_3(this, StickersStore);
-      obj = outer1_6(StickersStore);
-      tmp2 = outer1_5;
-      if (outer1_15()) {
-        tmp6 = globalThis;
-        _Reflect = Reflect;
-        tmp7 = outer1_6;
-        tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, outer1_6(self).constructor);
-      } else {
-        tmp3 = arguments;
-        tmp4 = arguments;
-        constructResult = obj(...arguments);
-      }
-      return tmp2(self, constructResult);
-    }
+class StickersStore extends Store {
+}
+const prototype = StickersStore.prototype;
+prototype["initialize"] = function initialize() {
+  this.waitFor(allGuildIds, parseServerGuildSticker, createGuildRecordFromRust, parseServerPackSticker);
+  const items = [parseServerGuildSticker, parseServerPackSticker];
+  this.syncWith(items, () => true);
+};
+Object.defineProperty(prototype, "isLoaded", {
+  get: function isLoaded() {
+    return Unloaded !== obj.Unloaded;
+  },
+  set: undefined
+});
+Object.defineProperty(prototype, "loadState", {
+  get: function loadState() {
+    return Unloaded;
+  },
+  set: undefined
+});
+prototype["getStickerMetadataArrays"] = function getStickerMetadataArrays() {
+  loadSavedGuildStickers();
+  const items = [store.getStickerMetadataMap(), store2.getStickerMetadataMap()];
+  return items;
+};
+Object.defineProperty(prototype, "hasLoadedStickerPacks", {
+  get: function hasLoadedStickerPacks() {
+    return store2.hasLoadedStickerPacks;
+  },
+  set: undefined
+});
+Object.defineProperty(prototype, "isFetchingStickerPacks", {
+  get: function isFetchingStickerPacks() {
+    return store2.isFetchingStickerPacks;
+  },
+  set: undefined
+});
+prototype["getStickerById"] = function getStickerById(arg0) {
+  loadSavedGuildStickers();
+  let stickerById = store.getStickerById(arg0);
+  if (stickerById == null) {
+    stickerById = store2.getStickerById(arg0);
   }
-  callback2(StickersStore, Store);
-  let obj = {
-    key: "initialize",
-    value() {
-      this.waitFor(outer1_9, outer1_11, outer1_10, outer1_12);
-      const items = [outer1_11, outer1_12];
-      this.syncWith(items, () => true);
-    }
-  };
-  let items = [obj, , , , , , , , , , , , , ];
-  obj = {
-    key: "isLoaded",
-    get() {
-      return outer1_14 !== outer1_13.Unloaded;
-    }
-  };
-  items[1] = obj;
-  obj = {
-    key: "loadState",
-    get() {
-      return outer1_14;
-    }
-  };
-  items[2] = obj;
-  items[3] = {
-    key: "getStickerMetadataArrays",
-    value() {
-      outer1_16();
-      const items = [outer1_11.getStickerMetadataMap(), outer1_12.getStickerMetadataMap()];
-      return items;
-    }
-  };
-  items[4] = {
-    key: "hasLoadedStickerPacks",
-    get() {
-      return outer1_12.hasLoadedStickerPacks;
-    }
-  };
-  items[5] = {
-    key: "isFetchingStickerPacks",
-    get() {
-      return outer1_12.isFetchingStickerPacks;
-    }
-  };
-  items[6] = {
-    key: "getStickerById",
-    value(arg0) {
-      outer1_16();
-      let stickerById = outer1_11.getStickerById(arg0);
-      if (null == stickerById) {
-        stickerById = outer1_12.getStickerById(arg0);
-      }
-      return stickerById;
-    }
-  };
-  items[7] = {
-    key: "getStickerPack",
-    value(arg0) {
-      return outer1_12.getStickerPack(arg0);
-    }
-  };
-  items[8] = {
-    key: "getPremiumPacks",
-    value() {
-      return outer1_12.getPremiumPacks();
-    }
-  };
-  items[9] = {
-    key: "isPremiumPack",
-    value(arg0) {
-      return outer1_12.isPremiumPack(arg0);
-    }
-  };
-  items[10] = {
-    key: "getRawStickersByGuild",
-    value() {
-      return outer1_11.getAllGuildStickers();
-    }
-  };
-  items[11] = {
-    key: "getAllGuildStickers",
-    value() {
-      outer1_16();
-      return outer1_11.getAllGuildStickers();
-    }
-  };
-  items[12] = {
-    key: "getAllPackStickers",
-    value() {
-      return outer1_12.getAllPackStickers();
-    }
-  };
-  items[13] = {
-    key: "getStickersByGuildId",
-    value(arg0) {
-      outer1_16();
-      return outer1_11.getStickersByGuildId(arg0);
-    }
-  };
-  return callback(StickersStore, items);
-})(require("initialize").Store);
-tmp2.displayName = "StickersStore";
+  return stickerById;
+};
+prototype["getStickerPack"] = function getStickerPack(arg0) {
+  return store2.getStickerPack(arg0);
+};
+prototype["getPremiumPacks"] = function getPremiumPacks() {
+  return store2.getPremiumPacks();
+};
+prototype["isPremiumPack"] = function isPremiumPack(arg0) {
+  return store2.isPremiumPack(arg0);
+};
+prototype["getRawStickersByGuild"] = function getRawStickersByGuild() {
+  return store.getAllGuildStickers();
+};
+prototype["getAllGuildStickers"] = function getAllGuildStickers() {
+  loadSavedGuildStickers();
+  return store.getAllGuildStickers();
+};
+prototype["getAllPackStickers"] = function getAllPackStickers() {
+  return store2.getAllPackStickers();
+};
+prototype["getStickersByGuildId"] = function getStickersByGuildId(closure_0) {
+  loadSavedGuildStickers();
+  return store.getStickersByGuildId(closure_0);
+};
+StickersStore.displayName = "StickersStore";
 obj = {
   BACKGROUND_SYNC: function handleBackgroundSync() {
     const Unloaded = obj.Unloaded;
@@ -188,7 +190,7 @@ obj = {
     const Unloaded = obj.Unloaded;
   }
 };
-tmp2 = new tmp2(require("dispatcher"), obj);
-let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/stickers/StickersStore.tsx");
+const stickersStore = new StickersStore(require("dispatcher"), obj);
+const result = require("createGuildRecordFromRust").fileFinishedImporting("modules/stickers/StickersStore.tsx");
 
-export default tmp2;
+export default stickersStore;

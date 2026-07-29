@@ -1,10 +1,10 @@
-// Module ID: 10934
-// Function ID: 84725
+// Module ID: 10958
+// Function ID: 10959
 // Name: trackApplicationOpen
-// Dependencies: [653, 675, 2]
+// Dependencies: [676, 698, 2]
 // Exports: default
 
-// Module 10934 (trackApplicationOpen)
+// Module 10958 (trackApplicationOpen)
 import { AnalyticEvents } from "ME";
 
 const result = require("set").fileFinishedImporting("modules/activities/utils/trackApplicationOpen.tsx");
@@ -25,19 +25,15 @@ export default function trackApplicationOpen(partyId) {
   let userId;
   partyId = partyId.partyId;
   ({ type, source, userId, guildId, channelId, channelType, applicationId, messageId, locationObject, analyticsLocations, referrerId, inviterUserId, remoteJoinPlatform } = partyId);
-  let obj = importDefault(675);
-  obj = { type, source, guild_id: guildId, channel_id: channelId, channel_type: channelType, application_id: applicationId };
-  let tmp;
-  if (null != partyId) {
-    tmp = partyId;
-  }
-  obj.party_id = tmp;
-  obj.other_user_id = userId;
-  obj.message_id = messageId;
-  obj.location = locationObject;
-  obj.location_stack = analyticsLocations;
-  obj.referrer_id = referrerId;
-  obj.invite_inviter_id = inviterUserId;
-  obj.remote_join_platform = remoteJoinPlatform;
+  let obj = importDefault(698);
+  obj = { type, source, guild_id: guildId, channel_id: channelId, channel_type: channelType, application_id: applicationId, party_id: null, other_user_id: null, message_id: null, location: null, location_stack: null, referrer_id: null, invite_inviter_id: null, remote_join_platform: null };
+  obj[6] = partyId;
+  obj[7] = userId;
+  obj[8] = messageId;
+  obj[9] = locationObject;
+  obj[10] = analyticsLocations;
+  obj[11] = referrerId;
+  obj[12] = inviterUserId;
+  obj[13] = remoteJoinPlatform;
   obj.track(AnalyticEvents.APPLICATION_OPENED, obj);
 };

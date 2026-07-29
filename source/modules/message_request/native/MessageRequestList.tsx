@@ -1,21 +1,21 @@
-// Module ID: 15667
-// Function ID: 120656
+// Module ID: 15702
+// Function ID: 15703
 // Name: PendingMessageRequestRow
-// Dependencies: [31, 27, 653, 33, 4165, 689, 1212, 3866, 9148, 4173, 4372, 11510, 675, 4695, 15668, 1273, 10335, 13933, 7611, 1557, 15673, 15675, 11508, 15678, 477, 4161, 2]
+// Dependencies: [19, 17, 676, 21, 4189, 712, 1236, 3890, 9172, 4197, 4395, 11534, 698, 4717, 15703, 1297, 10356, 13954, 7634, 1581, 15708, 15710, 11532, 15713, 500, 4185, 2]
 // Exports: default
 
-// Module 15667 (PendingMessageRequestRow)
-import result from "result";
-import get_ActivityIndicator from "get ActivityIndicator";
+// Module 15702 (PendingMessageRequestRow)
+import useSafeAreaInsets from "useSafeAreaInsets";
+import get_ActivityIndicator from "registerAsset";
 import { AnalyticEvents } from "ME";
-import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import jsxProd from "useListHasSingleMessageRequest";
+import createCacheKey from "createCacheKey";
 
-let closure_4;
-let closure_5;
+let c4;
+let c5;
+let c9;
 let closure_6;
-let closure_8;
-let closure_9;
+let metroImportAll;
 const require = arg1;
 function PendingMessageRequestRow(isRestricted) {
   let c5;
@@ -38,29 +38,17 @@ function PendingMessageRequestRow(isRestricted) {
   let id;
   c5 = undefined;
   c6 = undefined;
-  function handleRejectMessageRequest() {
-    _undefined2(channel.id);
-  }
-  function handleAcceptMessageRequest(Icon, arg1) {
-    _undefined(channel.id);
-  }
-  function handleSelectRow() {
-    let obj = hasSingleMessageRequest(str[12]);
-    obj = { is_spam: false, channel_id: channel.id, other_user_id: str.id };
-    obj.track(handleRejectMessageRequest.MESSAGE_REQUEST_PREVIEW_VIEWED, obj);
-    callback();
-  }
-  const tmp = _createForOfIteratorHelperLoose();
+  const tmp = createCacheKey();
   str = messageRequest.user;
   channel = messageRequest.channel;
   id = channel.id;
   const items = [id, hasSingleMessageRequest];
   const callback = channel.useCallback(() => {
     let obj = hasSingleMessageRequest(str[7]);
-    obj = { key: "MESSAGE_REQUEST_REQUEST_ERROR_ALERT_TITLE" };
-    const intl = outer1_0(str[6]).intl;
-    obj.content = intl.string(outer1_0(str[6]).t["EDYbS+"]);
-    obj.icon = hasSingleMessageRequest(str[8]);
+    obj = { key: "MESSAGE_REQUEST_REQUEST_ERROR_ALERT_TITLE", content: null, icon: null };
+    const intl = callback(str[6]).intl;
+    obj[1] = intl.string(callback(str[6]).t["EDYbS+"]);
+    obj[2] = hasSingleMessageRequest(str[8]);
     obj.open(obj);
   }, []);
   const callback1 = channel.useCallback(() => {
@@ -74,187 +62,207 @@ function PendingMessageRequestRow(isRestricted) {
   let obj = require(str[11]);
   const messageRequestActions = obj.useMessageRequestActions({ user: str, onAcceptSuccess: callback1, onError: callback });
   ({ acceptMessageRequest: c5, rejectMessageRequest: c6, isAcceptLoading, isRejectLoading, isUserProfileLoading, isOptimisticAccepted, isOptimisticRejected } = messageRequestActions);
-  let tmp5 = isAcceptLoading;
+  let tmp7 = isAcceptLoading;
   if (!isAcceptLoading) {
-    tmp5 = isRejectLoading;
+    tmp7 = isRejectLoading;
   }
-  if (!tmp5) {
-    tmp5 = isUserProfileLoading;
+  if (!tmp7) {
+    tmp7 = isUserProfileLoading;
   }
-  if (!tmp5) {
-    tmp5 = isOptimisticAccepted;
+  if (!tmp7) {
+    tmp7 = isOptimisticAccepted;
   }
-  if (!tmp5) {
-    tmp5 = isOptimisticRejected;
+  if (!tmp7) {
+    tmp7 = isOptimisticRejected;
   }
-  obj = { onPress: handleSelectRow, accessibilityRole: "button" };
-  obj = { name: constants.ACCEPT_MESSAGE_REQUEST };
-  let intl = require(str[6]).intl;
-  obj.label = intl.string(require(str[6]).t.hSLLWi);
+  function handleSelectRow() {
+    let obj = hasSingleMessageRequest(str[12]);
+    obj = { is_spam: false, channel_id: channel.id, other_user_id: str.id };
+    obj.track(outer1_7.MESSAGE_REQUEST_PREVIEW_VIEWED, obj);
+    callback();
+  }
+  obj = { onPress: handleSelectRow, accessibilityRole: "button", accessibilityActions: null, onAccessibilityAction: null, style: null, children: null };
+  obj = { name: constants.ACCEPT_MESSAGE_REQUEST, label: null };
+  let intl = tmp4(tmp5[6]).intl;
+  obj[1] = intl.string(require(str[6]).t.hSLLWi);
   const items1 = [obj, , ];
-  const obj1 = { name: constants.IGNORE_MESSAGE_REQUEST };
-  const intl2 = require(str[6]).intl;
-  obj1.label = intl2.string(require(str[6]).t.fIBuSD);
+  const obj1 = { name: constants.IGNORE_MESSAGE_REQUEST, label: null };
+  const intl2 = tmp4(tmp5[6]).intl;
+  obj1[1] = intl2.string(require(str[6]).t.fIBuSD);
   items1[1] = obj1;
-  const obj2 = { name: constants.PREVIEW_MESSAGE_REQUEST };
-  const intl3 = require(str[6]).intl;
-  obj2.label = intl3.string(require(str[6]).t.HjgsKJ);
+  const obj2 = { name: constants.PREVIEW_MESSAGE_REQUEST, label: null };
+  const intl3 = tmp4(tmp5[6]).intl;
+  obj2[1] = intl3.string(require(str[6]).t.HjgsKJ);
   items1[2] = obj2;
-  obj.accessibilityActions = items1;
-  obj.onAccessibilityAction = function onAccessibilityAction(nativeEvent) {
+  obj[2] = items1;
+  obj[3] = function onAccessibilityAction(nativeEvent) {
     const actionName = nativeEvent.nativeEvent.actionName;
     if (outer1_11.ACCEPT_MESSAGE_REQUEST === actionName) {
-      handleAcceptMessageRequest();
-    } else if (outer1_11.IGNORE_MESSAGE_REQUEST === actionName) {
-      handleRejectMessageRequest();
-    } else if (outer1_11.PREVIEW_MESSAGE_REQUEST === actionName) {
-      handleSelectRow();
+      _undefined(channel.id);
+    } else if (tmp.IGNORE_MESSAGE_REQUEST === actionName) {
+      _undefined2(channel.id);
+    } else if (tmp.PREVIEW_MESSAGE_REQUEST === actionName) {
+      let obj = hasSingleMessageRequest(str[12]);
+      obj = { is_spam: false, channel_id: null, other_user_id: null };
+      obj[1] = channel.id;
+      obj[2] = str.id;
+      obj.track(outer1_7.MESSAGE_REQUEST_PREVIEW_VIEWED, obj);
+      callback();
     }
   };
-  obj.style = tmp.pressableRow;
-  const obj3 = { style: tmp.rowContainer };
-  const obj4 = { channel: messageRequest.channel, otherUser: messageRequest.user, isRestricted: flag };
-  const items2 = [handleAcceptMessageRequest(hasSingleMessageRequest(str[14]), obj4), ];
-  const obj5 = { style: tmp.actionContainer };
-  const obj6 = { accessibilityRole: "button" };
-  const intl4 = require(str[6]).intl;
-  const obj7 = {};
+  obj[4] = tmp.pressableRow;
+  const obj3 = { style: tmp.rowContainer, children: null };
+  const items2 = [callback(hasSingleMessageRequest(str[14]), { channel: messageRequest.channel, otherUser: messageRequest.user, isRestricted: flag }), ];
+  const obj5 = { style: tmp.actionContainer, children: null };
+  const intl4 = tmp4(tmp5[6]).intl;
   str = undefined;
-  if (null != str) {
+  if (str != null) {
     str = str.toString();
   }
-  obj7.name = str;
-  obj6.accessibilityLabel = intl4.formatToPlainString(require(str[6]).t["6p0yBo"], obj7);
-  obj6.onPress = handleAcceptMessageRequest;
-  obj6.disabled = tmp5;
-  const items3 = [tmp.actionButton, flag ? tmp.acceptButtonRestricted : tmp.acceptButton];
-  obj6.style = items3;
+  const obj6 = { accessibilityRole: "button", accessibilityLabel: intl4.formatToPlainString(require(str[6]).t["6p0yBo"], { name: str }), onPress: handleAcceptMessageRequest, disabled: tmp7, style: items3, children: null };
+  handleAcceptMessageRequest = function handleAcceptMessageRequest() {
+    _undefined(channel.id);
+  };
+  items3 = [tmp.actionButton, flag ? tmp.acceptButtonRestricted : tmp.acceptButton];
   if (!isAcceptLoading) {
     if (!isUserProfileLoading) {
       if (!isOptimisticAccepted) {
-        const obj8 = { size: require(str[15]).Icon.Sizes.SMALL, disableColor: true, source: hasSingleMessageRequest(str[16]) };
-        let tmp17 = handleAcceptMessageRequest(require(str[15]).Icon, obj8);
+        const obj7 = { size: null, disableColor: true, source: null };
+        obj7[0] = tmp4(tmp5[15]).Icon.Sizes.SMALL;
+        obj7[2] = tmp11(tmp5[16]);
+        let tmp10Result = tmp10(tmp4(tmp5[15]).Icon, obj7);
       }
-      obj6.children = tmp17;
-      const items4 = [handleAcceptMessageRequest(require(str[13]).PressableOpacity, obj6), ];
-      const obj9 = { accessibilityRole: "button" };
-      const intl5 = require(str[6]).intl;
-      const obj10 = {};
+      obj6[5] = tmp10Result;
+      const items4 = [tmp10(tmp4(tmp5[13]).PressableOpacity, obj6), ];
+      const intl5 = tmp4(tmp5[6]).intl;
       let str1;
-      if (null != str) {
+      if (str != null) {
         str1 = str.toString();
       }
-      obj10.name = str1;
-      obj9.accessibilityLabel = intl5.formatToPlainString(require(str[6]).t["C9Xe6+"], obj10);
-      obj9.onPress = handleRejectMessageRequest;
-      obj9.disabled = tmp5;
-      obj9.style = tmp.actionButton;
+      const obj8 = { accessibilityRole: "button", accessibilityLabel: null, onPress: null, disabled: null, style: null, children: null };
+      const obj9 = { name: null };
+      obj9[0] = str1;
+      function handleRejectMessageRequest() {
+        _undefined2(channel.id);
+      }
+      obj8[1] = intl5.formatToPlainString(tmp4(tmp5[6]).t["C9Xe6+"], obj9);
+      obj8[2] = handleRejectMessageRequest;
+      obj8[3] = tmp7;
+      obj8[4] = tmp.actionButton;
       if (!isRejectLoading) {
         if (!isOptimisticRejected) {
-          const obj11 = { size: require(str[15]).Icon.Sizes.SMALL, disableColor: true, source: hasSingleMessageRequest(str[17]) };
-          let tmp26 = handleAcceptMessageRequest(require(str[15]).Icon, obj11);
+          const obj10 = { size: null, disableColor: true, source: null };
+          obj10[0] = tmp4(tmp5[15]).Icon.Sizes.SMALL;
+          obj10[2] = tmp11(tmp5[17]);
+          tmp10Result = tmp10(tmp4(tmp5[15]).Icon, obj10);
         }
-        obj9.children = tmp26;
-        items4[1] = tmp18(require(str[13]).PressableOpacity, obj9);
-        obj5.children = items4;
-        items2[1] = handleSelectRow(c5, obj5);
-        obj3.children = items2;
-        const items5 = [handleSelectRow(c5, obj3), ];
-        let tmp29 = null;
+        obj8[5] = tmp10Result;
+        items4[1] = tmp10(tmp4(tmp5[13]).PressableOpacity, obj8);
+        obj5[1] = items4;
+        items2[1] = tmp8(tmp9, obj5);
+        obj3[1] = items2;
+        const items5 = [tmp8(tmp9, obj3), ];
+        let tmp10Result1 = null;
         if (!isRestricted.isLastRow) {
-          tmp29 = handleAcceptMessageRequest(require(str[18]).FormDivider, { iconPush: true, outer: true });
+          tmp10Result1 = tmp10(tmp4(tmp5[18]).FormDivider, { iconPush: true, outer: true });
         }
-        items5[1] = tmp29;
-        obj.children = items5;
-        return handleSelectRow(require(str[13]).PressableOpacity, obj);
+        items5[1] = tmp10Result1;
+        obj[5] = items5;
+        return tmp8(tmp4(tmp5[13]).PressableOpacity, obj);
       }
-      const obj12 = { style: tmp.activityIndicator };
-      tmp26 = handleAcceptMessageRequest(id, obj12);
-      tmp18 = handleAcceptMessageRequest;
+      const obj11 = { style: null };
+      obj11[0] = tmp.activityIndicator;
+      tmp10Result = tmp10(id, obj11);
     }
   }
-  tmp17 = handleAcceptMessageRequest(id, { style: tmp.activityIndicator });
+  tmp10Result = tmp10(id, { style: tmp.activityIndicator });
 }
-({ ActivityIndicator: closure_4, View: closure_5, FlatList: closure_6 } = get_ActivityIndicator);
-({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW, flexDirection: "row", justifyContent: "space-between", marginTop: 6, marginBottom: 10 };
-_createForOfIteratorHelperLoose.sectionContainer = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.rowContainer = { flexDirection: "row", alignItems: "center", justifyContent: "space-between", marginTop: 14, marginBottom: 12 };
-_createForOfIteratorHelperLoose.actionContainer = { flexDirection: "row", alignItems: "flex-start", height: "100%" };
-let obj1 = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SURFACE_HIGH, tintColor: require("_createForOfIteratorHelperLoose").colors.INTERACTIVE_TEXT_DEFAULT, borderRadius: require("_createForOfIteratorHelperLoose").radii.lg, alignItems: "center", justifyContent: "center", height: 32, width: 32 };
-_createForOfIteratorHelperLoose.actionButton = obj1;
-_createForOfIteratorHelperLoose.acceptButton = { marginRight: 16 };
-_createForOfIteratorHelperLoose.acceptButtonRestricted = { marginRight: 12 };
-_createForOfIteratorHelperLoose.pressableRow = { borderRadius: require("_createForOfIteratorHelperLoose").radii.md };
-_createForOfIteratorHelperLoose.activityIndicator = { height: 16, width: 16 };
-let obj3 = { flex: 1, paddingHorizontal: 16, alignSelf: "stretch", backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW };
-_createForOfIteratorHelperLoose.list = obj3;
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+({ ActivityIndicator: c4, View: c5, FlatList: closure_6 } = get_ActivityIndicator);
+({ jsx: metroImportAll, jsxs: c9 } = jsxProd);
+createCacheKey = { sectionContainer: null, rowContainer: null, actionContainer: null, actionButton: null, acceptButton: null, acceptButtonRestricted: null, pressableRow: null, activityIndicator: null, list: null };
+createCacheKey = { backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW, flexDirection: "row", justifyContent: "space-between", marginTop: 6, marginBottom: 10 };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { flexDirection: "row", alignItems: "center", justifyContent: "space-between", marginTop: 14, marginBottom: 12 };
+createCacheKey[2] = { flexDirection: "row", alignItems: "flex-start", height: "100%" };
+createCacheKey[3] = { backgroundColor: require("Themes").colors.BACKGROUND_SURFACE_HIGH, tintColor: require("Themes").colors.INTERACTIVE_TEXT_DEFAULT, borderRadius: require("Themes").radii.lg, alignItems: "center", justifyContent: "center", height: 32, width: 32 };
+createCacheKey[4] = { marginRight: 16 };
+createCacheKey[5] = { marginRight: 12 };
+let obj1 = { backgroundColor: require("Themes").colors.BACKGROUND_SURFACE_HIGH, tintColor: require("Themes").colors.INTERACTIVE_TEXT_DEFAULT, borderRadius: require("Themes").radii.lg, alignItems: "center", justifyContent: "center", height: 32, width: 32 };
+createCacheKey[6] = { borderRadius: require("Themes").radii.md };
+createCacheKey[7] = { height: 16, width: 16 };
+let obj2 = { borderRadius: require("Themes").radii.md };
+createCacheKey[8] = { flex: 1, paddingHorizontal: 16, alignSelf: "stretch", backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
 let closure_11 = { ACCEPT_MESSAGE_REQUEST: "accept-message-request", IGNORE_MESSAGE_REQUEST: "ignore-message-request", PREVIEW_MESSAGE_REQUEST: "preview-message-request" };
-let obj2 = { borderRadius: require("_createForOfIteratorHelperLoose").radii.md };
+let obj3 = { flex: 1, paddingHorizontal: 16, alignSelf: "stretch", backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW };
 const result = require("ME").fileFinishedImporting("modules/message_request/native/MessageRequestList.tsx");
 
 export default function MessageRequestList(goToMessageRequestPreview) {
   goToMessageRequestPreview = goToMessageRequestPreview.goToMessageRequestPreview;
-  const tmp = _createForOfIteratorHelperLoose();
-  const importDefault = tmp;
+  let importDefault;
+  let arr;
+  let useSafeAreaInsets;
+  let closure_4;
+  const tmp = createCacheKey();
+  importDefault = tmp;
   const bottom = importDefault(arr[19])().bottom;
   arr = importDefault(arr[20])();
   let obj = goToMessageRequestPreview(arr[21]);
-  let result = obj.useListHasSingleMessageRequest();
+  useSafeAreaInsets = obj.useListHasSingleMessageRequest();
   let obj1 = goToMessageRequestPreview(arr[22]);
-  let closure_4 = obj1.useIsMessageRequestRestrictedViewer("MessageRequestList");
+  closure_4 = obj1.useIsMessageRequestRestrictedViewer("MessageRequestList");
   if (0 === arr.length) {
-    obj = {};
-    let intl = goToMessageRequestPreview(arr[6]).intl;
-    obj.bodyText = intl.string(goToMessageRequestPreview(arr[6]).t.SXrqTf);
-    return callback(importDefault(arr[23]), obj);
+    obj = { bodyText: null };
+    let intl = tmp4(tmp3[6]).intl;
+    obj[0] = intl.string(tmp4(tmp3[6]).t.SXrqTf);
+    return callback(tmp2(tmp3[23]), obj);
   } else {
     const items = ["header-section"];
     HermesBuiltin.arraySpread(arr, 1);
-    obj = {};
     const items1 = [tmp.list, ];
-    obj1 = {};
     let num = 0;
-    if (obj8.isAndroid()) {
+    if (tmp4Result.isAndroid()) {
       num = bottom;
     }
-    obj1.marginBottom = num;
+    obj = { style: null, scrollIndicatorInsets: null, contentContainerStyle: null, renderItem: null, data: null };
+    obj1 = { marginBottom: null };
+    obj1[0] = num;
     items1[1] = obj1;
-    obj.style = items1;
-    const obj2 = { right: 0.01 };
-    obj.scrollIndicatorInsets = obj2;
-    const obj3 = { paddingBottom: bottom, paddingTop: 12 };
-    obj.contentContainerStyle = obj3;
-    obj.renderItem = function renderItem(item) {
+    obj[0] = items1;
+    obj[1] = { right: 0.01 };
+    const obj2 = { paddingBottom: null, paddingTop: 12 };
+    obj2[0] = bottom;
+    obj[2] = obj2;
+    obj[3] = function renderItem(item) {
       item = item.item;
-      if ("string" === typeof item) {
-        let obj = { style: tmp.sectionContainer };
-        obj = { variant: "eyebrow", color: "text-default" };
+      if (typeof item === "y") {
+        let obj = { style: null, children: null };
+        obj[0] = _undefined.sectionContainer;
+        obj = { variant: "eyebrow", color: "text-default", children: null };
         const intl = goToMessageRequestPreview(arr[6]).intl;
-        const obj1 = { pendingRequestNumber: arr.length };
-        obj.children = intl.format(goToMessageRequestPreview(arr[6]).t.evH4Yb, obj1);
-        obj.children = outer1_8(goToMessageRequestPreview(arr[25]).Text, obj);
+        const obj1 = { pendingRequestNumber: null };
+        obj1[0] = arr.length;
+        obj[2] = intl.format(goToMessageRequestPreview(arr[6]).t.evH4Yb, obj1);
+        obj[1] = outer1_8(goToMessageRequestPreview(arr[25]).Text, obj);
         return outer1_8(outer1_5, obj);
       } else {
         let id;
-        if (null != arr[arr.length - 1]) {
+        if (arr[arr.length - 1] != null) {
           id = tmp14.channel.id;
         }
-        obj = {
-          messageRequest: item,
-          goToMessageRequestPreview() {
-              return item(item.channel.id);
-            },
-          isLastRow: item.channel.id === id,
-          hasSingleMessageRequest: result,
-          isRestricted: closure_4
+        obj = { messageRequest: null, goToMessageRequestPreview: null, isLastRow: null, hasSingleMessageRequest: null, isRestricted: null };
+        obj[0] = item;
+        obj[1] = function goToMessageRequestPreview() {
+          return item(item.channel.id);
         };
+        obj[2] = item.channel.id === id;
+        obj[3] = useSafeAreaInsets;
+        obj[4] = closure_4;
         return outer1_8(outer1_12, obj, item.channel.id);
       }
     };
-    obj.data = items;
+    obj[4] = items;
     return callback(closure_6, obj);
   }
+  tmp2 = importDefault;
 };

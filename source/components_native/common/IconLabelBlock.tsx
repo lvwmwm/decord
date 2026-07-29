@@ -1,161 +1,113 @@
-// Module ID: 15643
-// Function ID: 120462
-// Name: _isNativeReflectConstruct
-// Dependencies: [29, 6, 7, 15, 17, 18, 31, 27, 33, 4165, 689, 1273, 4161, 10166, 4011, 3877, 2]
+// Module ID: 15678
+// Function ID: 15679
+// Name: renderLabel
+// Dependencies: [109, 19, 17, 21, 4189, 712, 3901, 1297, 4185, 10187, 4035, 2]
 
-// Module 15643 (_isNativeReflectConstruct)
+// Module 15678 (renderLabel)
 import _objectWithoutProperties from "_objectWithoutProperties";
-import result from "result";
-import getActivityIndicator from "get ActivityIndicator";
-import ManaContext from "ManaContext";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import importAllResult from "result";
+import createCacheKey from "createCacheKey";
+import importAllResult from "noop";
 
-let closure_10;
-let closure_11;
-let closure_12;
-let closure_13;
+let c5;
+let closure_6;
+let error;
+let metroImportAll;
 const require = arg1;
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
-  }
-  const result = _isNativeReflectConstruct();
-}
 let closure_3 = ["error"];
-({ View: closure_10, Image: closure_11 } = get_ActivityIndicator);
-({ jsx: closure_12, jsxs: closure_13 } = jsxProd);
-_createForOfIteratorHelperLoose = { wrapper: { alignItems: "center", paddingTop: 26, paddingBottom: 16 } };
-_createForOfIteratorHelperLoose = { fontSize: 12, textAlign: "center", alignSelf: "center", marginBottom: 10, color: require("_createForOfIteratorHelperLoose").unsafe_rawColors.RED_400 };
-_createForOfIteratorHelperLoose.error = _createForOfIteratorHelperLoose;
-let obj1 = { fontSize: 12, marginTop: 20, color: require("_createForOfIteratorHelperLoose").colors.TEXT_SUBTLE };
-_createForOfIteratorHelperLoose.label = obj1;
-_createForOfIteratorHelperLoose.iconUploaderWrapper = { alignSelf: "stretch", alignItems: "center" };
-_createForOfIteratorHelperLoose.text = { marginTop: 9 };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createLegacyClassComponentStyles(_createForOfIteratorHelperLoose);
-const tmp5 = ((PureComponent) => {
-  class IconLabelBlock {
-    constructor() {
-      self = this;
-      tmp = outer1_5(this, IconLabelBlock);
-      obj = outer1_8(IconLabelBlock);
-      tmp2 = outer1_7;
-      if (outer1_15()) {
-        tmp6 = globalThis;
-        _Reflect = Reflect;
-        tmp7 = outer1_8;
-        tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, outer1_8(self).constructor);
-      } else {
-        tmp3 = arguments;
-        tmp4 = arguments;
-        constructResult = obj(...arguments);
-      }
-      return tmp2(self, constructResult);
-    }
+({ View: c5, Image: closure_6 } = get_ActivityIndicator);
+({ jsx: error, jsxs: metroImportAll } = jsxProd);
+createCacheKey = { wrapper: { alignItems: "center", paddingTop: 26, paddingBottom: 16 }, error: null, label: null, iconUploaderWrapper: null, text: null };
+createCacheKey = { fontSize: 12, textAlign: "center", alignSelf: "center", marginBottom: 10, color: require("Themes").unsafe_rawColors.RED_400 };
+createCacheKey[1] = createCacheKey;
+createCacheKey[2] = { fontSize: 12, marginTop: 20, color: require("Themes").colors.TEXT_SUBTLE };
+createCacheKey[3] = { alignSelf: "stretch", alignItems: "center" };
+createCacheKey[4] = { marginTop: 9 };
+createCacheKey = createCacheKey.createLegacyClassComponentStyles(createCacheKey);
+const PureComponent = importAllResult.PureComponent;
+class IconLabelBlock extends PureComponent {
+}
+const prototype = IconLabelBlock.prototype;
+prototype["renderLabel"] = function renderLabel() {
+  const label = this.props.label;
+  let tmp3 = null;
+  if (null != label) {
+    const obj = { style: null, children: null };
+    const items = [tmp.label, tmp2];
+    obj[0] = items;
+    obj[1] = label;
+    tmp3 = callback2(require(1297) /* Button */.LegacyText, obj);
   }
-  callback2(IconLabelBlock, PureComponent);
-  let obj = {
-    key: "renderLabel",
-    value() {
-      const label = this.props.label;
-      let tmp3 = null;
-      if (null != label) {
-        const obj = {};
-        const items = [tmp.label, tmp2];
-        obj.style = items;
-        obj.children = label;
-        tmp3 = outer1_12(IconLabelBlock(outer1_2[11]).LegacyText, obj);
+  return tmp3;
+};
+prototype["renderText"] = function renderText() {
+  const text = this.props.text;
+  let tmp4 = null;
+  if (null != text) {
+    const obj = { variant: "heading-md/medium", color: "text-default", style: null, accessibilityRole: null, children: null };
+    const items = [tmp.text, tmp2];
+    obj[2] = items;
+    obj[3] = tmp3;
+    obj[4] = text;
+    tmp4 = callback2(require(4185) /* Text */.Text, obj);
+  }
+  return tmp4;
+};
+prototype["renderIcon"] = function renderIcon() {
+  let darkSource;
+  let errorProps;
+  let iconProps;
+  let source;
+  const tmp = createCacheKey(this.context);
+  ({ iconProps, source, darkSource, errorProps } = this.props);
+  if (null != iconProps) {
+    const error = iconProps.error;
+    let obj = { style: null, children: null };
+    obj[0] = tmp.iconUploaderWrapper;
+    obj = {};
+    const tmp11 = callback(iconProps, closure_3);
+    const tmp12 = closure_8;
+    const tmp13 = closure_5;
+    const tmp14 = callback2;
+    const merged = Object.assign(tmp11);
+    const items = [callback2(importDefault(10187), obj), ];
+    let tmp14Result = null;
+    if (null != error) {
+      const obj1 = { style: null };
+      const items1 = [tmp.error, tmp4];
+      obj1[0] = items1;
+      const merged1 = Object.assign(errorProps);
+      obj1.children = error;
+      tmp14Result = tmp14(require(1297) /* Button */.LegacyText, obj1);
+    }
+    items[1] = tmp14Result;
+    obj[1] = items;
+    return tmp12(tmp13, obj);
+  } else {
+    if (null == source) {
+      obj = require(4035) /* AccessibilityAnnouncer */;
+      if (obj.isThemeLight(this.context.theme)) {
+        darkSource = tmp2;
       }
-      return tmp3;
+      source = darkSource;
     }
-  };
-  let items = [obj, , , ];
-  obj = {
-    key: "renderText",
-    value() {
-      const text = this.props.text;
-      let tmp4 = null;
-      if (null != text) {
-        const obj = { variant: "heading-md/medium", color: "text-default" };
-        const items = [tmp.text, tmp2];
-        obj.style = items;
-        obj.accessibilityRole = tmp3;
-        obj.children = text;
-        tmp4 = outer1_12(IconLabelBlock(outer1_2[12]).Text, obj);
-      }
-      return tmp4;
-    }
-  };
-  items[1] = obj;
-  obj = {
-    key: "renderIcon",
-    value() {
-      let darkSource;
-      let errorProps;
-      let iconProps;
-      let source;
-      const tmp = outer1_14(this.context);
-      ({ iconProps, source, darkSource, errorProps } = this.props);
-      if (null != iconProps) {
-        const error = iconProps.error;
-        let obj = { style: tmp.iconUploaderWrapper };
-        obj = {};
-        const tmp11 = outer1_4(iconProps, outer1_3);
-        const tmp12 = outer1_13;
-        const tmp13 = outer1_10;
-        const merged = Object.assign(tmp11);
-        const items = [outer1_12(outer1_1(outer1_2[13]), obj), ];
-        let tmp20 = null;
-        if (null != error) {
-          let obj1 = {};
-          const items1 = [tmp.error, tmp4];
-          obj1.style = items1;
-          const merged1 = Object.assign(errorProps);
-          obj1["children"] = error;
-          tmp20 = outer1_12(IconLabelBlock(outer1_2[11]).LegacyText, obj1);
-        }
-        items[1] = tmp20;
-        obj.children = items;
-        return tmp12(tmp13, obj);
-      } else {
-        obj = {};
-        if (null == source) {
-          obj1 = IconLabelBlock(outer1_2[14]);
-          if (obj1.isThemeLight(this.context.theme)) {
-            darkSource = tmp2;
-          }
-          source = darkSource;
-        }
-        obj.source = source;
-        obj.style = tmp3;
-        obj.resizeMode = "contain";
-        return outer1_12(outer1_11, obj);
-      }
-    }
-  };
-  items[2] = obj;
-  items[3] = {
-    key: "render",
-    value() {
-      const obj = {};
-      const items = [outer1_14(this.context).wrapper, this.props.wrapperStyles];
-      obj.style = items;
-      const items1 = [this.renderIcon(), this.props.children, this.renderLabel(), this.renderText()];
-      obj.children = items1;
-      return outer1_13(outer1_10, obj);
-    }
-  };
-  return callback(IconLabelBlock, items);
-})(require("result").PureComponent);
-tmp5.contextType = require("ManaContext").ThemeContext;
-let result = require("_defineProperties").fileFinishedImporting("components_native/common/IconLabelBlock.tsx");
+    const obj2 = { source: null, style: null, resizeMode: "contain" };
+    obj2[0] = source;
+    obj2[1] = tmp3;
+    return callback2(closure_6, obj2);
+  }
+};
+prototype["render"] = function render() {
+  const obj = { style: null, children: null };
+  const items = [createCacheKey(this.context).wrapper, this.props.wrapperStyles];
+  obj[0] = items;
+  const items1 = [this.renderIcon(), this.props.children, this.renderLabel(), this.renderText()];
+  obj[1] = items1;
+  return callback3(closure_5, obj);
+};
+IconLabelBlock.contextType = require("ManaContext").ThemeContext;
+let obj1 = { fontSize: 12, marginTop: 20, color: require("Themes").colors.TEXT_SUBTLE };
+const result = require("get ActivityIndicator").fileFinishedImporting("components_native/common/IconLabelBlock.tsx");
 
-export default tmp5;
+export default IconLabelBlock;

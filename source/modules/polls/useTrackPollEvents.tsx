@@ -1,15 +1,15 @@
-// Module ID: 11357
-// Function ID: 88145
+// Module ID: 11381
+// Function ID: 11382
 // Name: useTrackPollCreationEvents
-// Dependencies: [31, 653, 4359, 7977, 2]
+// Dependencies: [19, 676, 4384, 8002, 2]
 // Exports: useTrackPollCreationEvents
 
-// Module 11357 (useTrackPollCreationEvents)
-import result from "result";
+// Module 11381 (useTrackPollCreationEvents)
+import noop from "noop";
 import { AnalyticEvents } from "ME";
 
 const require = arg1;
-const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/polls/useTrackPollEvents.tsx");
+const result = require("collectGuildAnalyticsMetadata").fileFinishedImporting("modules/polls/useTrackPollEvents.tsx");
 
 export const useTrackPollCreationEvents = function useTrackPollCreationEvents(answers, allowMultiSelect) {
   let closure_0 = answers;

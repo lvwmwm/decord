@@ -1,28 +1,68 @@
-// Module ID: 16270
-// Function ID: 126036
-// Name: _isNativeReflectConstruct
-// Dependencies: [7, 6, 15, 17, 18, 11484, 1850, 4004, 10670, 5112, 2]
+// Module ID: 16305
+// Function ID: 16306
+// Name: prototype
+// Dependencies: [11508, 1874, 4028, 5134, 10694, 2]
 
-// Module 16270 (_isNativeReflectConstruct)
-import conceal from "conceal";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
-import closure_7 from "_isNativeReflectConstruct";
-import closure_8 from "_isNativeReflectConstruct";
-import tmp2 from "AutomaticLifecycleManager";
+// Module 16305 (prototype)
+import initialize from "initialize";
+import mergeGuildAvatar from "mergeGuildAvatar";
+import "initialize";
 
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
-  }
-  const result = _isNativeReflectConstruct();
+let prototype = function PushNotificationCacheManager() {
+  const applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
+  const importDefault = applyArgumentsResult;
+  applyArgumentsResult.actions = {
+    POST_CONNECTION_OPEN() {
+      return applyArgumentsResult.handleUserUpdate();
+    },
+    CURRENT_USER_UPDATE() {
+      return applyArgumentsResult.handleUserUpdate();
+    },
+    LOGOUT() {
+      return applyArgumentsResult.handleLogout();
+    }
+  };
+  const items = [initialize, () => applyArgumentsResult.syncMultiAccountUsers()];
+  const items1 = [items];
+  applyArgumentsResult.stores = new Map(items1);
+  applyArgumentsResult.handleUserUpdate = function handleUserUpdate() {
+    currentUser = currentUser.getCurrentUser();
+    if (null != currentUser) {
+      applyArgumentsResult(10694).setCurrentUser(currentUser.username, currentUser.id);
+      const obj2 = applyArgumentsResult(10694);
+    } else {
+      applyArgumentsResult(10694).setCurrentUser(null, null);
+      const obj = applyArgumentsResult(10694);
+    }
+  };
+  applyArgumentsResult.syncMultiAccountUsers = function syncMultiAccountUsers() {
+    obj = obj(10694);
+    obj = undefined;
+    if (obj.canUseMultiAccountNotifications) {
+      const validUsers = obj.getValidUsers();
+      if (validUsers.length < 2) {
+        obj = {};
+      } else {
+        obj = {};
+        const item = validUsers.forEach((id) => {
+          obj = obj(outer1_1[2]);
+          obj[id.id] = obj.getUserTag(id, { identifiable: "always" });
+        });
+      }
+    } else {
+      obj = {};
+    }
+    obj.setMultiAccountUsers(obj);
+  };
+  applyArgumentsResult.handleLogout = function handleLogout() {
+    const result = applyArgumentsResult(outer1_1[4]).clearPushNotificationLogs();
+    applyArgumentsResult.handleUserUpdate();
+  };
+  return applyArgumentsResult;
+}.prototype;
+class prototype extends tmp2 {
 }
-tmp2 = new tmp2();
-let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/push_notifications/native/PushNotificationCacheManager.tsx");
+prototype = new prototype();
+let result = require("nameFromUser").fileFinishedImporting("modules/push_notifications/native/PushNotificationCacheManager.tsx");
 
-export default tmp2;
+export default prototype;

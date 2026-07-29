@@ -1,79 +1,79 @@
-// Module ID: 13816
-// Function ID: 105812
-// Name: handleUnblockUser
-// Dependencies: [31, 1850, 33, 8894, 5497, 5198, 1273, 1212, 8335, 4578, 566, 2]
+// Module ID: 13837
+// Function ID: 13838
+// Name: BlockedUserRow
+// Dependencies: [19, 1874, 21, 8918, 5515, 5220, 1297, 1236, 8359, 4600, 589, 2]
 // Exports: default
 
-// Module 13816 (handleUnblockUser)
-import "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 13837 (BlockedUserRow)
+import "noop";
+import mergeGuildAvatar from "mergeGuildAvatar";
 import { jsx } from "jsxProd";
 
 const require = arg1;
-function handleUnblockUser(id) {
-  importDefault(8894).unblockUser(id, { location: "blocked-users-list-mobile-v2" });
-}
 function BlockedUserRow(userRecord) {
   userRecord = userRecord.userRecord;
-  analyticsLocations = analyticsLocations(5497)().analyticsLocations;
-  let obj = { icon: null, label: null, subLabel: null, labelLineClamp: 1, subLabelLineClamp: 1, accessibilityRole: "button" };
-  obj = { user: userRecord, guildId: undefined, size: userRecord(1273).AvatarSizes.REFRESH_MEDIUM_32 };
-  obj.icon = jsx(userRecord(1273).Avatar, { user: userRecord, guildId: undefined, size: userRecord(1273).AvatarSizes.REFRESH_MEDIUM_32 });
-  let tmp2 = null != userRecord;
-  if (tmp2) {
+  let analyticsLocations;
+  analyticsLocations = analyticsLocations(5515)().analyticsLocations;
+  let obj = { icon: null, label: null, subLabel: null, labelLineClamp: 1, subLabelLineClamp: 1, accessibilityRole: "button", accessibilityActions: null, onAccessibilityAction: null, onPress: null, trailing: null };
+  obj = { user: userRecord, guildId: "Array", size: 2086900762484230000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 };
+  obj[2] = userRecord(1297).AvatarSizes.REFRESH_MEDIUM_32;
+  obj[0] = jsx(userRecord(1297).Avatar, { user: userRecord, guildId: "Array", size: 2086900762484230000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 });
+  let tmp4 = null != userRecord;
+  if (tmp4) {
     let username = userRecord.globalName;
-    if (null == username) {
-      username = userRecord.username;
-    }
-    tmp2 = username;
-  }
-  obj.label = tmp2;
-  let globalName;
-  if (null != userRecord) {
-    globalName = userRecord.globalName;
-  }
-  let tmp4;
-  if (null != globalName) {
-    username = undefined;
-    if (null != userRecord) {
+    if (username == null) {
       username = userRecord.username;
     }
     tmp4 = username;
   }
-  obj.subLabel = tmp4;
-  obj = { name: "unblock" };
-  const intl = userRecord(1212).intl;
-  obj.label = intl.string(userRecord(1212).t.XyHpKH);
+  obj[1] = tmp4;
+  let globalName;
+  if (userRecord != null) {
+    globalName = userRecord.globalName;
+  }
+  let tmp6;
+  if (null != globalName) {
+    username = undefined;
+    if (userRecord != null) {
+      username = userRecord.username;
+    }
+    tmp6 = username;
+  }
+  obj[2] = tmp6;
+  obj = { name: "unblock", label: null };
+  const intl = tmp3(1236).intl;
+  obj[1] = intl.string(userRecord(1236).t.XyHpKH);
   const items = [obj];
-  obj.accessibilityActions = items;
-  obj.onAccessibilityAction = function onAccessibilityAction(nativeEvent) {
+  obj[6] = items;
+  obj[7] = function onAccessibilityAction(nativeEvent) {
     if ("unblock" === nativeEvent.nativeEvent.actionName) {
-      outer1_5(userRecord.id);
+      analyticsLocations(outer1_2[3]).unblockUser(userRecord.id, { location: "blocked-users-list-mobile-v2" });
     }
   };
-  obj.onPress = function onPress() {
+  obj[8] = function onPress() {
     return analyticsLocations(outer1_2[8])({ userId: userRecord.id, sourceAnalyticsLocations: analyticsLocations });
   };
-  const obj1 = { size: "sm", variant: "secondary" };
-  const intl2 = userRecord(1212).intl;
-  obj1.text = intl2.string(userRecord(1212).t["PR/xUz"]);
-  obj1.onPress = function onPress() {
-    outer1_5(userRecord.id);
+  const obj1 = { size: "sm", variant: "secondary", text: null, onPress: null };
+  const intl2 = tmp3(1236).intl;
+  obj1[2] = intl2.string(userRecord(1236).t["PR/xUz"]);
+  obj1[3] = function onPress() {
+    analyticsLocations(outer1_2[3]).unblockUser(userRecord.id, { location: "blocked-users-list-mobile-v2" });
   };
-  obj.trailing = jsx(userRecord(4578).Button, { size: "sm", variant: "secondary" });
-  return jsx(userRecord(5198).TableRow, { name: "unblock" });
+  obj[9] = jsx(userRecord(4600).Button, { size: "sm", variant: "secondary", text: null, onPress: null });
+  return jsx(userRecord(5220).TableRow, { name: "unblock", label: null });
 }
 const result = require("jsxProd").fileFinishedImporting("modules/user_settings/content_and_social/native/BlockedUserRowV2.tsx");
 
 export default function ConnectedBlockedUserRow(userId) {
   userId = userId.userId;
-  let obj = userId(566);
-  const items = [_isNativeReflectConstruct];
+  let obj = userId(589);
+  const items = [mergeGuildAvatar];
   const stateFromStores = obj.useStateFromStores(items, () => outer1_3.getUser(userId));
   let tmp2 = null;
   if (null != stateFromStores) {
-    obj = { userRecord: stateFromStores };
-    tmp2 = <BlockedUserRow userRecord={stateFromStores} />;
+    obj = { userRecord: null };
+    obj[0] = stateFromStores;
+    tmp2 = <BlockedUserRow userRecord={null} />;
   }
   return tmp2;
 };

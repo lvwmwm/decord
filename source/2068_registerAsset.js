@@ -1,11 +1,10 @@
 // Module ID: 2068
-// Function ID: 22289
+// Function ID: 2069
 // Name: registerAsset
-// Dependencies: [1217]
+// Dependencies: [1241]
 
 // Module 2068 (registerAsset)
 import registerAsset from "registerAsset";
 
-const obj = { __packager_asset: true, httpServerLocation: "/assets/modules/go_live/web/modal", scales: [1], hash: "cd2d5c0ef187afb877c9d94c96dd5098", name: "GoLiveModal.compiled.messages", type: "jsona" };
 
-export default registerAsset.registerAsset(obj);
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9nb19saXZlL3dlYi9tb2RhbA==", scales: [1], hash: "b5f5698a144b85786f509e9bcfcfbf6b", name: "es-419.messages.b5f5698a144b85786f509e9bcfcfbf6b.compiled.messages", type: "jsona" });

@@ -1,29 +1,29 @@
-// Module ID: 11133
-// Function ID: 86347
+// Module ID: 11157
+// Function ID: 11158
 // Name: useTypingUserIds
-// Dependencies: [3802, 11134, 1850, 566, 2]
+// Dependencies: [3826, 11158, 1874, 589, 2]
 // Exports: useTypingUserIds
 
-// Module 11133 (useTypingUserIds)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_3 from "_isNativeReflectConstruct";
-import closure_4 from "_isNativeReflectConstruct";
+// Module 11157 (useTypingUserIds)
+import upsertRelationship from "upsertRelationship";
+import handleTypingStart from "handleTypingStart";
+import mergeGuildAvatar from "mergeGuildAvatar";
 
 const require = arg1;
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/chat/useTypingUsersIds.tsx");
+const result = require("mergeGuildAvatar").fileFinishedImporting("modules/chat/useTypingUsersIds.tsx");
 
 export const useTypingUserIds = function useTypingUserIds(id, arg1) {
-  let MAX_SAFE_INTEGER = arg1;
   const _require = id;
+  let MAX_SAFE_INTEGER = arg1;
   if (arg1 === undefined) {
     const _Number = Number;
     MAX_SAFE_INTEGER = Number.MAX_SAFE_INTEGER;
   }
-  let items = [closure_4, closure_3, _isNativeReflectConstruct];
+  let items = [mergeGuildAvatar, handleTypingStart, upsertRelationship];
   const items1 = [id, MAX_SAFE_INTEGER];
   return _require(MAX_SAFE_INTEGER[3]).useStateFromStoresArray(items, () => {
     const currentUser = outer1_4.getCurrentUser();
-    if (null != currentUser) {
+    if (currentUser != null) {
       const id = currentUser.id;
     }
     const typingUsers = outer1_3.getTypingUsers(closure_0);

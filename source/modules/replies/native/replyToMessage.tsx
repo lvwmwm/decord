@@ -1,17 +1,17 @@
-// Module ID: 9869
-// Function ID: 76356
+// Module ID: 9891
+// Function ID: 9892
 // Name: longPressMessageHandleReply
-// Dependencies: [5947, 1850, 5946, 653, 675, 9539, 5695, 9541, 4359, 2]
+// Dependencies: [5966, 1874, 5965, 676, 698, 9563, 5713, 9565, 4384, 2]
 // Exports: default
 
-// Module 9869 (longPressMessageHandleReply)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_4 from "_isNativeReflectConstruct";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+// Module 9891 (longPressMessageHandleReply)
+import initialize from "initialize";
+import mergeGuildAvatar from "mergeGuildAvatar";
+import getState from "getState";
 import { AnalyticEvents } from "ME";
 
 const require = arg1;
-const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/replies/native/replyToMessage.tsx");
+const result = require("getState").fileFinishedImporting("modules/replies/native/replyToMessage.tsx");
 
 export default function longPressMessageHandleReply(arg0) {
   let actionSource;
@@ -26,16 +26,16 @@ export default function longPressMessageHandleReply(arg0) {
   editingMessage = editingMessage.getEditingMessage(channel.id);
   if (null != editingMessage) {
     const currentUser = authStore.getCurrentUser();
-    let obj = { message_id: message.id };
-    ({ id: obj13.channel_id, guild_id: obj13.guild_id } = channel);
-    obj.context_action = "edit";
-    const obj12 = importDefault(675);
-    obj.reason = require(9539) /* getContextBarCancelReason */.getContextBarCancelReason("edit", actionSource);
-    obj.is_own_message = null != currentUser && currentUser.id === editingMessage.author.id;
-    obj12.track(AnalyticEvents.CHAT_CONTEXT_BAR_ACTION_CANCELED, obj);
-    const obj14 = require(9539) /* getContextBarCancelReason */;
+    let obj = { message_id: null, channel_id: null, guild_id: null, context_action: "edit", reason: null, is_own_message: null };
+    obj[0] = message.id;
+    ({ id: obj11[1], guild_id: obj11[2] } = channel);
+    const obj10 = importDefault(698);
+    obj[4] = require(9563) /* handleEdit */.getContextBarCancelReason("edit", actionSource);
+    obj[5] = null != currentUser && currentUser.id === editingMessage.author.id;
+    obj10.track(AnalyticEvents.CHAT_CONTEXT_BAR_ACTION_CANCELED, obj);
+    const obj12 = require(9563) /* handleEdit */;
   }
-  obj = importDefault(5695);
+  obj = importDefault(5713);
   obj.endEditMessage(channel.id);
   pendingReply = pendingReply.getPendingReply(channel.id);
   if (invertible) {
@@ -43,58 +43,59 @@ export default function longPressMessageHandleReply(arg0) {
       if (null != pendingReply) {
         if (pendingReply.message.id === message.id) {
           const currentUser1 = authStore.getCurrentUser();
-          obj = { message_id: message.id };
-          ({ id: obj9.channel_id, guild_id: obj9.guild_id } = channel);
-          obj.context_action = "reply";
-          obj.reason = "swipe_reply_undo";
+          let tmp3Result = tmp3(698);
+          obj = { message_id: null, channel_id: null, guild_id: null, context_action: "reply", reason: "swipe_reply_undo", is_own_message: null };
+          obj[0] = message.id;
+          ({ id: obj8[1], guild_id: obj8[2] } = channel);
           let tmp18 = null != currentUser1;
           if (tmp18) {
             tmp18 = currentUser1.id === pendingReply.message.author.id;
           }
-          obj.is_own_message = tmp18;
-          importDefault(675).track(AnalyticEvents.CHAT_CONTEXT_BAR_ACTION_CANCELED, obj);
-          const obj8 = importDefault(675);
-          require(9541) /* createPendingReply */.deletePendingReply(channel.id);
+          obj[5] = tmp18;
+          tmp3Result.track(AnalyticEvents.CHAT_CONTEXT_BAR_ACTION_CANCELED, obj);
+          require(9565) /* createPendingReply */.deletePendingReply(channel.id);
           let text;
-          if (null != chatInputRef) {
-            const current2 = chatInputRef.current;
-            if (null != current2) {
-              text = current2.getText();
+          if (chatInputRef != null) {
+            const current = chatInputRef.current;
+            if (current != null) {
+              text = current.getText();
             }
           }
           if ("" === text) {
-            let tmp24 = null == chatInputRef;
-            if (!tmp24) {
-              const current3 = chatInputRef.current;
-              tmp24 = null == current3;
-              const obj11 = current3;
-            }
-            if (!tmp24) {
-              obj11.dismissKeyboard();
+            if (chatInputRef != null) {
+              const current2 = chatInputRef.current;
+              if (current2 != null) {
+                current2.dismissKeyboard();
+              }
             }
           }
-          const obj10 = require(9541) /* createPendingReply */;
+          const obj9 = require(9565) /* createPendingReply */;
         }
       }
     }
   }
-  let obj1 = importDefault(675);
-  obj1 = { source: actionSource };
-  const merged = Object.assign(require(4359) /* _createForOfIteratorHelperLoose */.collectGuildAnalyticsMetadata(channel.guild_id));
-  const obj4 = require(4359) /* _createForOfIteratorHelperLoose */;
-  const merged1 = Object.assign(require(4359) /* _createForOfIteratorHelperLoose */.collectChannelAnalyticsMetadata(channel));
-  obj1.track(AnalyticEvents.REPLY_MESSAGE_STARTED, obj1);
+  tmp3Result = tmp3(698);
+  const merged = Object.assign(require(4384) /* collectGuildAnalyticsMetadata */.collectGuildAnalyticsMetadata(channel.guild_id));
+  const obj1 = { source: actionSource };
+  const obj4 = require(4384) /* collectGuildAnalyticsMetadata */;
+  const tmp7 = require;
+  const merged1 = Object.assign(require(4384) /* collectGuildAnalyticsMetadata */.collectChannelAnalyticsMetadata(channel));
+  tmp3Result.track(AnalyticEvents.REPLY_MESSAGE_STARTED, obj1);
   const currentUser2 = authStore.getCurrentUser();
-  const obj5 = require(4359) /* _createForOfIteratorHelperLoose */;
-  const tmp9 = !channel.isDM() && null != currentUser2 && message.author.id !== currentUser2.id;
-  const pendingReply1 = require(9541) /* createPendingReply */.createPendingReply({ message, channel, shouldMention: tmp9, source: actionSource });
-  let tmp11 = null == chatInputRef;
-  if (!tmp11) {
-    const current = chatInputRef.current;
-    tmp11 = null == current;
-    const obj7 = current;
+  const isDMResult = channel.isDM();
+  let tmp13 = !isDMResult;
+  if (!isDMResult) {
+    tmp13 = null != currentUser2;
   }
-  if (!tmp11) {
-    obj7.openSystemKeyboard();
+  if (tmp13) {
+    tmp13 = message.author.id !== currentUser2.id;
+  }
+  const obj5 = require(4384) /* collectGuildAnalyticsMetadata */;
+  const pendingReply1 = tmp7(9565).createPendingReply({ message, channel, shouldMention: tmp13, source: actionSource });
+  if (chatInputRef != null) {
+    const current3 = chatInputRef.current;
+    if (current3 != null) {
+      current3.openSystemKeyboard();
+    }
   }
 };

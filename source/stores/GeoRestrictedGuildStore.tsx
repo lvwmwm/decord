@@ -1,76 +1,36 @@
-// Module ID: 12776
-// Function ID: 99272
-// Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 566, 686, 2]
+// Module ID: 12798
+// Function ID: 12799
+// Name: getGeoRestrictedGuilds
+// Dependencies: [589, 709, 2]
 
-// Module 12776 (_isNativeReflectConstruct)
-import dispatcher from "dispatcher";
-import set from "set";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
+// Module 12798 (getGeoRestrictedGuilds)
+import { Store } from "initialize";
 
-function _isNativeReflectConstruct() {
-  let dispatcher = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return dispatcher;
-  }
-  const result = _isNativeReflectConstruct();
+let closure_0 = [];
+class GeoRestrictedGuildStore extends Store {
 }
-let closure_5 = [];
-let tmp2 = ((Store) => {
-  class GeoRestrictedGuildStore {
-    constructor() {
-      self = this;
-      tmp = GeoRestrictedGuildStore(this, GeoRestrictedGuildStore);
-      obj = outer1_3(GeoRestrictedGuildStore);
-      tmp2 = outer1_2;
-      if (outer1_6()) {
-        tmp6 = globalThis;
-        _Reflect = Reflect;
-        tmp7 = outer1_3;
-        tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, outer1_3(self).constructor);
-      } else {
-        tmp3 = arguments;
-        tmp4 = arguments;
-        constructResult = obj(...arguments);
-      }
-      return tmp2(self, constructResult);
-    }
-  }
-  callback2(GeoRestrictedGuildStore, Store);
-  const items = [
-    {
-      key: "getGeoRestrictedGuilds",
-      value() {
-        return outer1_5;
-      }
-    }
-  ];
-  return callback(GeoRestrictedGuildStore, items);
-})(require("initialize").Store);
-tmp2.displayName = "GeoRestrictedGuildStore";
-tmp2 = new tmp2(require("dispatcher"), {
+GeoRestrictedGuildStore.prototype["getGeoRestrictedGuilds"] = function getGeoRestrictedGuilds() {
+  return closure_0;
+};
+GeoRestrictedGuildStore.displayName = "GeoRestrictedGuildStore";
+const geoRestrictedGuildStore = new GeoRestrictedGuildStore(require("dispatcher"), {
   CONNECTION_OPEN: function handleConnectionOpen(geoRestrictedGuilds) {
     geoRestrictedGuilds = geoRestrictedGuilds.geoRestrictedGuilds;
   },
   GUILD_DELETE: function handleDeleteGuild(guild) {
     guild = guild.guild;
-    if (-1 === closure_5.findIndex((id) => id.id === guild.id)) {
+    if (-1 === guild.findIndex((id) => id.id === user.id)) {
       return false;
     } else {
-      closure_5 = closure_5.filter((id) => id.id !== guild.id);
+      guild = guild.filter((id) => id.id !== user.id);
     }
   },
   GUILD_GEO_RESTRICTED: function handleGeoRestrictGuild(guildId) {
-    let dispatcher = guildId;
-    found = found.filter((id) => id.id !== guildId.guildId);
+    let found = guildId;
+    found = found.filter((id) => id.id !== found.guildId);
     found.push({ id: guildId.guildId, name: guildId.name, icon: guildId.icon, unavailable: true, geo_restricted: true });
   }
 });
-let result = require("_possibleConstructorReturn").fileFinishedImporting("stores/GeoRestrictedGuildStore.tsx");
+const result = require("set").fileFinishedImporting("stores/GeoRestrictedGuildStore.tsx");
 
-export default tmp2;
+export default geoRestrictedGuildStore;

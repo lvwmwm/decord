@@ -1,19 +1,19 @@
-// Module ID: 7759
-// Function ID: 61735
+// Module ID: 7782
+// Function ID: 7783
 // Name: __INTERNAL_VIEW_CONFIG
-// Dependencies: [42, 117, 2]
+// Dependencies: [65, 114, 2]
 
-// Module 7759 (__INTERNAL_VIEW_CONFIG)
-import get from "get";
+// Module 7782 (__INTERNAL_VIEW_CONFIG)
+import setRuntimeConfigProvider from "setRuntimeConfigProvider";
 
 let obj = { uiViewClassName: "NativeLottieNode", validAttributes: {} };
 obj = {
-  setup(nodeFromPublicInstance) {
+  setup(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7) {
     const items = [arg1, arg2, arg3, arg4, arg5, arg6, arg7];
-    require(117) /* renderElement */.dispatchCommand(nodeFromPublicInstance, "setup", items);
+    require(114) /* renderElement */.dispatchCommand(arg0, "setup", items);
   }
 };
-const value = get.get("NativeLottieNode", () => obj);
+const value = setRuntimeConfigProvider.get("NativeLottieNode", () => obj);
 const result = require("set").fileFinishedImporting("../discord_common/js/packages/rtn-codegen/js/LottieNodeNativeComponent.tsx");
 
 export default value;

@@ -1,42 +1,34 @@
-// Module ID: 13929
-// Function ID: 106492
+// Module ID: 13950
+// Function ID: 13951
 // Name: FamilyCenterLinkRowWrapper
-// Dependencies: [31, 33, 4165, 689, 5497, 4695, 8335, 2]
+// Dependencies: [19, 21, 4189, 712, 5515, 4717, 8359, 2]
 // Exports: default
 
-// Module 13929 (FamilyCenterLinkRowWrapper)
-import "result";
+// Module 13950 (FamilyCenterLinkRowWrapper)
+import "noop";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
 const require = arg1;
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { display: "flex", flexDirection: "row", alignItems: "center", paddingTop: 14, paddingBottom: require("_createForOfIteratorHelperLoose").space.PX_12, paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_12 };
-_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/parent_tools/native/FamilyCenterLinkWrapper.tsx");
+createCacheKey = { container: null };
+createCacheKey = { display: "flex", flexDirection: "row", alignItems: "center", paddingTop: 14, paddingBottom: require("Themes").space.PX_12, paddingHorizontal: require("Themes").space.PX_12 };
+createCacheKey[0] = createCacheKey;
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+const result = require("createCacheKey").fileFinishedImporting("modules/parent_tools/native/FamilyCenterLinkWrapper.tsx");
 
 export default function FamilyCenterLinkRowWrapper(userId) {
   userId = userId.userId;
-  analyticsLocations = analyticsLocations(5497)().analyticsLocations;
-  let tmp2 = null;
+  let analyticsLocations;
+  analyticsLocations = analyticsLocations(5515)().analyticsLocations;
+  let tmp3 = null;
   if (undefined !== userId) {
-    let obj = {
-      style: tmp.container,
-      onPress() {
-          const obj = { userId, disableCalls: true, disableMessage: true, sourceAnalyticsLocations: analyticsLocations };
-          analyticsLocations(outer1_2[6])(obj);
-        },
-      children: userId.children
+    const obj = { style: null, onPress: null, children: null };
+    obj[0] = tmp.container;
+    obj[1] = function onPress() {
+      analyticsLocations(outer1_2[6])({ userId, disableCalls: true, disableMessage: true, sourceAnalyticsLocations: analyticsLocations });
     };
-    tmp2 = jsx(userId(4695).PressableOpacity, {
-      style: tmp.container,
-      onPress() {
-          const obj = { userId, disableCalls: true, disableMessage: true, sourceAnalyticsLocations: analyticsLocations };
-          analyticsLocations(outer1_2[6])(obj);
-        },
-      children: userId.children
-    });
+    obj[2] = userId.children;
+    tmp3 = jsx(userId(4717).PressableOpacity, { style: null, onPress: null, children: null });
   }
-  return tmp2;
+  return tmp3;
 };

@@ -1,11 +1,11 @@
-// Module ID: 13733
-// Function ID: 105308
+// Module ID: 13754
+// Function ID: 13755
 // Name: UserSettingsWebAuthn
-// Dependencies: [31, 13731, 33, 13734, 5552, 2]
+// Dependencies: [19, 13752, 21, 13755, 5570, 2]
 // Exports: default
 
-// Module 13733 (UserSettingsWebAuthn)
-import result from "result";
+// Module 13754 (UserSettingsWebAuthn)
+import noop from "noop";
 import { WebAuthnScreens } from "WebAuthnScreens";
 import { jsx } from "jsxProd";
 
@@ -23,15 +23,10 @@ export default function UserSettingsWebAuthn(showNav) {
   if (flag === undefined) {
     flag = false;
   }
-  let obj = require(flag[3]);
-  const screens = obj.getScreens({ isModal: false });
+  const screens = require(flag[3]).getScreens({ isModal: false });
   const layoutEffect = React.useLayoutEffect(() => {
     options.setOptions({ headerShown: flag });
   });
-  obj = { screens, initialRouteName };
-  obj = { name: initialRouteName };
-  const items = [obj];
-  obj.initialRouteStack = items;
-  obj.useContainer = false;
-  return jsx(require(flag[4]).Navigator, { name: initialRouteName });
+  const initialRouteStack = [{ name: initialRouteName }];
+  return jsx(require(flag[4]).Navigator, { screens, initialRouteName, initialRouteStack, useContainer: false });
 };

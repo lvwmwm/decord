@@ -1,20 +1,21 @@
-// Module ID: 4026
-// Function ID: 33235
-// Dependencies: [478, 1582, 4027, 2]
+// Module ID: 4050
+// Function ID: 4051
+// Dependencies: [501, 1606, 4051, 2]
 
-// Module 4026
-import isWindows from "isWindows";
+// Module 4050
+import PlatformTypes from "PlatformTypes";
 
-if (isWindows.isAndroid()) {
+if (PlatformTypes.isAndroid()) {
   const _Object = Object;
-  const obj = { View: require("View") };
+  const obj = { View: null };
+  obj[0] = require("View");
   const merged = Object.assign(require("cancelAnimation"), obj);
   const importDefaultResult = require("cancelAnimation");
 }
 const result = require("View").fileFinishedImporting("modules/reanimated/ReanimatedRexport.tsx");
-for (const key10039 in require("cancelAnimation")) {
-  let tmp5 = key10039;
-  arg5[key10039] = require("cancelAnimation")[key10039];
+for (const key10033 in require("cancelAnimation")) {
+  let tmp5 = key10033;
+  arg5[key10033] = require("cancelAnimation")[key10033];
   continue;
 }
 

@@ -1,16 +1,17 @@
-// Module ID: 5192
-// Function ID: 45071
+// Module ID: 5214
+// Function ID: 5215
 // Name: context
-// Dependencies: [31, 27, 33, 4165, 5193, 5197, 2]
+// Dependencies: [19, 17, 21, 4189, 5215, 5219, 2]
 
-// Module 5192 (context)
-import importAllResult from "result";
+// Module 5214 (context)
+import importAllResult from "noop";
 import { ScrollView } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
 const require = arg1;
-let closure_6 = _createForOfIteratorHelperLoose.createStyles({ form: { flex: 1 }, redesign: { paddingTop: 16 } });
+let c3 = importAllResult;
+let closure_6 = createCacheKey.createStyles({ form: { flex: 1 }, redesign: { paddingTop: 16 } });
 const context = importAllResult.createContext({ isForm: false });
 const forwardRefResult = importAllResult.forwardRef((keyboardShouldPersistTaps, ref) => {
   let children;
@@ -30,26 +31,25 @@ const forwardRefResult = importAllResult.forwardRef((keyboardShouldPersistTaps, 
   }
   ({ contentContainerStyle, onScroll, scrollsToTop, onLayout } = keyboardShouldPersistTaps);
   const tmp = callback();
-  let redesign = importAllResult.useContext(require(5197) /* context */.RedesignCompatContext);
-  let obj = { value: { isForm: true } };
-  obj = { ref, onLayout, scrollsToTop };
+  let redesign = importAllResult.useContext(require(5219) /* context */.RedesignCompatContext);
+  let obj = { value: { isForm: true }, children: null };
+  obj = { ref, onLayout, scrollsToTop, style: null, contentContainerStyle: null, contentInset: null, automaticallyAdjustContentInsets: false, keyboardShouldPersistTaps: null, alwaysBounceVertical: null, onScroll: null, children: null };
   const items = [tmp.form, style, ];
   if (redesign) {
     redesign = tmp.redesign;
   }
   items[2] = redesign;
-  obj.style = items;
-  obj = { paddingBottom: 38 + importDefault(5193)().insets.bottom };
+  obj[3] = items;
+  obj = { paddingBottom: 38 + importDefault(5215)().insets.bottom };
   const items1 = [obj, contentContainerStyle];
-  obj.contentContainerStyle = items1;
-  obj.contentInset = { top: 0 };
-  obj.automaticallyAdjustContentInsets = false;
-  obj.keyboardShouldPersistTaps = str;
-  obj.alwaysBounceVertical = flag;
-  obj.onScroll = onScroll;
-  obj.children = children;
-  obj.children = <ScrollView paddingBottom={38 + importDefault(5193)().insets.bottom} />;
-  return <context.Provider paddingBottom={38 + importDefault(5193)().insets.bottom} />;
+  obj[4] = items1;
+  obj[5] = { top: 0 };
+  obj[7] = str;
+  obj[8] = flag;
+  obj[9] = onScroll;
+  obj[10] = children;
+  obj[1] = <ScrollView paddingBottom={38 + importDefault(5215)().insets.bottom} />;
+  return <context.Provider paddingBottom={38 + importDefault(5215)().insets.bottom} />;
 });
 const result = require("jsxProd").fileFinishedImporting("design/void/Form/native/Form.tsx");
 

@@ -1,31 +1,33 @@
-// Module ID: 1430
-// Function ID: 16716
+// Module ID: 1454
+// Function ID: 1455
 // Name: awaitOnline
-// Dependencies: [1431, 2]
+// Dependencies: [1455, 2]
 
-// Module 1430 (awaitOnline)
+// Module 1454 (awaitOnline)
 let closure_2 = [];
 let c3 = false;
 const obj = {};
-const merged = Object.assign(require("ensureChangeListenerCreated").default);
-obj["awaitOnline"] = function awaitOnline() {
+const merged = Object.assign(require("notifyListeners").default);
+obj.awaitOnline = function awaitOnline() {
   return new Promise((arg0) => {
-    function whenOnline() {
-      const item = outer2_2.forEach((arg0) => arg0());
-      outer2_2.length = 0;
-      const outer2_3 = false;
-      outer2_0(outer2_1[0]).default.removeOnlineCallback(whenOnline);
-    }
     if (_default.isOnline()) {
       return arg0();
     } else {
-      outer1_2.push(arg0);
-      if (!outer1_3) {
-        outer1_3 = true;
-        outer1_0(outer1_1[0]).default.addOnlineCallback(whenOnline);
+      function whenOnline(arg0) {
+        const item = outer1_2.forEach((arg0) => arg0());
+        outer1_2.length = 0;
+        let c3 = false;
+        whenOnline(outer1_1[0]).default.removeOnlineCallback(whenOnline);
+      }
+      arr = arr.push(arg0);
+      if (!c3) {
+        c3 = true;
+        tmp(tmp2[0]).default.addOnlineCallback(whenOnline);
       }
     }
-    _default = outer1_0(outer1_1[0]).default;
+    _default = whenOnline(table[0]).default;
+    tmp = whenOnline;
+    tmp2 = table;
   });
 };
 const result = require("set").fileFinishedImporting("utils/NetworkUtils.tsx");

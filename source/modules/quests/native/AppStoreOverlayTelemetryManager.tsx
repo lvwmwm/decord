@@ -1,38 +1,59 @@
-// Module ID: 10475
-// Function ID: 81055
-// Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 653, 477, 668, 5112, 2]
+// Module ID: 10499
+// Function ID: 10500
+// Name: handleAppStateUpdate
+// Dependencies: [676, 5134, 500, 691, 2]
 // Exports: clearAppStoreOverlayOpen, setAppStoreOverlayOpen
 
-// Module 10475 (_isNativeReflectConstruct)
-import set from "set";
-import keys from "keys";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
+// Module 10499 (handleAppStateUpdate)
 import { AnalyticEvents } from "ME";
-import tmp2 from "AutomaticLifecycleManager";
+import "initialize";
 
-const require = arg1;
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
+let c3 = null;
+let c4 = null;
+class AppStoreOverlayTelemetryManager extends tmp2 {
+  constructor() {
+    applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
+    closure_0 = applyArgumentsResult;
+    applyArgumentsResult.actions = {
+      APP_STATE_UPDATE(arg0) {
+            return applyArgumentsResult.handleAppStateUpdate(arg0);
+          }
+    };
+    return applyArgumentsResult;
   }
-  const result = _isNativeReflectConstruct();
 }
-let c8 = null;
-let c9 = null;
-tmp2 = new tmp2();
-let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/quests/native/AppStoreOverlayTelemetryManager.tsx");
+AppStoreOverlayTelemetryManager.prototype["handleAppStateUpdate"] = function handleAppStateUpdate(state) {
+  state = state.state;
+  const isAndroidResult = require(500) /* set */.isAndroid();
+  if (isAndroidResult) {
+    return !isAndroidResult;
+  } else {
+    let flag = null != _null;
+    if (flag) {
+      if (state !== tmp(691).AppStates.ACTIVE) {
+        flag = false;
+        if (state === tmp(691).AppStates.BACKGROUND) {
+          _null.trackOverlayEvent(AnalyticEvents.QUEST_APP_STORE_OVERLAY_BACKGROUNDED);
+          const _Date = Date;
+          let c4 = Date.now();
+          flag = false;
+        }
+      }
+      const _Date2 = Date;
+      _null.trackOverlayEvent(AnalyticEvents.QUEST_APP_STORE_OVERLAY_RETURNED, Date.now() - c4);
+      c4 = null;
+      flag = false;
+    }
+  }
+};
+const appStoreOverlayTelemetryManager = new AppStoreOverlayTelemetryManager();
+const result = require("set").fileFinishedImporting("modules/quests/native/AppStoreOverlayTelemetryManager.tsx");
 
-export default tmp2;
+export default appStoreOverlayTelemetryManager;
 export function setAppStoreOverlayOpen(arg0) {
-  let closure_8 = arg0;
+  let closure_3 = arg0;
 }
 export function clearAppStoreOverlayOpen() {
-  let c8 = null;
-  let c9 = null;
+  let c3 = null;
+  let c4 = null;
 }

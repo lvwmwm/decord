@@ -1,8 +1,8 @@
 // Module ID: 225
-// Function ID: 3118
+// Function ID: 226
 // Name: FileReaderModule
-// Dependencies: [55]
+// Dependencies: [30]
 
 // Module 225 (FileReaderModule)
 
-export default require("requireModule").getEnforcing("FileReaderModule");
+export default require("get").getEnforcing("FileReaderModule");

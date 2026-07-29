@@ -1,17 +1,17 @@
-// Module ID: 12249
-// Function ID: 95610
+// Module ID: 12273
+// Function ID: 12274
 // Name: getGuildScheduledEventHeaderProps
-// Dependencies: [5761, 1354, 8186, 689, 8302, 1212, 7660, 12250, 2]
+// Dependencies: [5779, 1378, 8210, 712, 8326, 1236, 7683, 12274, 2]
 // Exports: getGuildScheduledEventHeaderProps
 
-// Module 12249 (getGuildScheduledEventHeaderProps)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 12273 (getGuildScheduledEventHeaderProps)
+import scheduledEventSort from "scheduledEventSort";
 import { GuildScheduledEventEntityTypes as closure_5 } from "GUILD_EVENT_MAX_NAME_LENGTH";
 
-let closure_3;
-let closure_4;
-({ isGuildEventEnded: closure_3, isGuildScheduledEventActive: closure_4 } = _isNativeReflectConstruct);
-const result = require("getNextBucketedTime").fileFinishedImporting("modules/guild_scheduled_events/native/GuildScheduledEventHeaderUtils.tsx");
+let c3;
+let c4;
+({ isGuildEventEnded: c3, isGuildScheduledEventActive: c4 } = scheduledEventSort);
+const result = require("getRRule").fileFinishedImporting("modules/guild_scheduled_events/native/GuildScheduledEventHeaderUtils.tsx");
 
 export const getGuildScheduledEventHeaderProps = function getGuildScheduledEventHeaderProps(eventTimeData) {
   let currentOrPastEvent;
@@ -26,80 +26,79 @@ export const getGuildScheduledEventHeaderProps = function getGuildScheduledEvent
   ({ startDateTimeString, diffMinutes, currentOrPastEvent, upcomingEvent } = eventTimeData.eventTimeData);
   ({ event, recurrenceId } = eventTimeData);
   ({ isStage, theme, isCanceled } = eventTimeData);
-  let obj = require(8186) /* getNextBucketedTime */;
+  let obj = require(8210) /* getRRule */;
   if (null != recurrenceId) {
-    let tmp3 = obj.getNextRecurrenceIdInEvent(event) === recurrenceId;
-    if (tmp3) {
-      tmp3 = callback2(event);
+    let tmp5 = obj.getNextRecurrenceIdInEvent(event) === recurrenceId;
+    if (tmp5) {
+      tmp5 = callback2(event);
     }
-    let tmp2 = tmp3;
+    let tmp4 = tmp5;
   } else {
-    tmp2 = callback2(event);
+    tmp4 = callback2(event);
   }
-  const tmp5 = callback(event);
-  const ICON_SUBTLE = importDefault(689).colors.ICON_SUBTLE;
-  let tmp6 = importDefault(8302);
-  if (tmp2) {
-    const intl4 = require(1212) /* getSystemLocale */.intl;
-    let stringResult = intl4.string(require(1212) /* getSystemLocale */.t["X2K3/4"]);
+  const tmp7 = callback(event);
+  const ICON_SUBTLE = importDefault(712).colors.ICON_SUBTLE;
+  let tmp8Result = importDefault(8326);
+  if (tmp4) {
+    const intl4 = tmp(1236).intl;
+    let stringResult = intl4.string(tmp(1236).t["X2K3/4"]);
     if (isStage) {
-      tmp6 = importDefault(7660);
+      tmp8Result = tmp8(7683);
     }
     let entity_type;
-    if (null != event) {
+    if (event != null) {
       entity_type = event.entity_type;
     }
     if (entity_type === constants.EXTERNAL) {
-      const intl5 = require(1212) /* getSystemLocale */.intl;
-      stringResult = intl5.string(require(1212) /* getSystemLocale */.t.TxqPQR);
+      const intl5 = tmp(1236).intl;
+      stringResult = intl5.string(tmp(1236).t.TxqPQR);
     }
-    let ICON_FEEDBACK_CRITICAL = importDefault(689).colors.ICON_FEEDBACK_POSITIVE;
+    let ICON_FEEDBACK_CRITICAL = tmp8(712).colors.ICON_FEEDBACK_POSITIVE;
     let stringResult1 = stringResult;
-    let tmp8 = tmp6;
-  } else if (tmp5) {
-    tmp8 = importDefault(12250);
-    ICON_FEEDBACK_CRITICAL = ICON_SUBTLE;
+  } else if (tmp7) {
+    tmp8Result = tmp8(12274);
     stringResult1 = startDateTimeString;
+    ICON_FEEDBACK_CRITICAL = ICON_SUBTLE;
   } else if (currentOrPastEvent) {
-    tmp8 = importDefault(12250);
-    const intl3 = require(1212) /* getSystemLocale */.intl;
-    stringResult1 = intl3.string(require(1212) /* getSystemLocale */.t.WINqKV);
+    tmp8Result = tmp8(12274);
+    const intl3 = tmp(1236).intl;
+    stringResult1 = intl3.string(tmp(1236).t.WINqKV);
     ICON_FEEDBACK_CRITICAL = ICON_SUBTLE;
   } else {
-    ICON_FEEDBACK_CRITICAL = ICON_SUBTLE;
     stringResult1 = startDateTimeString;
-    tmp8 = tmp6;
+    ICON_FEEDBACK_CRITICAL = ICON_SUBTLE;
     if (upcomingEvent) {
       if (diffMinutes > 0) {
-        const intl2 = require(1212) /* getSystemLocale */.intl;
-        obj = { minutes: diffMinutes };
-        let formatToPlainStringResult = intl2.formatToPlainString(require(1212) /* getSystemLocale */.t.PQlCWk, obj);
+        const intl2 = tmp(1236).intl;
+        obj = { minutes: null };
+        obj[0] = diffMinutes;
+        let formatToPlainStringResult = intl2.formatToPlainString(tmp(1236).t.PQlCWk, obj);
       } else {
-        const intl = require(1212) /* getSystemLocale */.intl;
-        formatToPlainStringResult = intl.string(require(1212) /* getSystemLocale */.t.WINqKV);
+        const intl = tmp(1236).intl;
+        formatToPlainStringResult = intl.string(tmp(1236).t.WINqKV);
       }
       stringResult1 = formatToPlainStringResult;
+      tmp8Result = tmp8(12274);
       ICON_FEEDBACK_CRITICAL = ICON_SUBTLE;
-      tmp8 = importDefault(12250);
-      const tmp11 = importDefault(12250);
+      const tmp8Result1 = tmp8(12274);
     }
   }
   if (isCanceled) {
-    ICON_FEEDBACK_CRITICAL = importDefault(689).colors.ICON_FEEDBACK_CRITICAL;
+    ICON_FEEDBACK_CRITICAL = tmp8(712).colors.ICON_FEEDBACK_CRITICAL;
   }
-  obj = { icon: tmp8, text: stringResult1 };
-  const internal = importDefault(689).internal;
-  obj.color = internal.resolveSemanticColor(theme, ICON_FEEDBACK_CRITICAL);
-  let tmp35 = !tmp5;
-  if (tmp35) {
-    if (!tmp2) {
-      tmp2 = currentOrPastEvent;
+  obj = { icon: tmp8Result, text: stringResult1, color: null, shouldChangeTextColor: null };
+  const internal = tmp8(712).internal;
+  obj[2] = internal.resolveSemanticColor(theme, ICON_FEEDBACK_CRITICAL);
+  let tmp17 = !tmp7;
+  if (!tmp7) {
+    if (!tmp4) {
+      tmp4 = currentOrPastEvent;
     }
-    if (!tmp2) {
-      tmp2 = upcomingEvent;
+    if (!tmp4) {
+      tmp4 = upcomingEvent;
     }
-    tmp35 = tmp2;
+    tmp17 = tmp4;
   }
-  obj.shouldChangeTextColor = tmp35;
+  obj[3] = tmp17;
   return obj;
 };

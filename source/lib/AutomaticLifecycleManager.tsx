@@ -1,99 +1,78 @@
-// Module ID: 5112
-// Function ID: 44314
-// Name: AutomaticLifecycleManager
-// Dependencies: [6, 7, 686, 2]
+// Module ID: 5134
+// Function ID: 5135
+// Name: initialize
+// Dependencies: [709, 2]
 
-// Module 5112 (AutomaticLifecycleManager)
-import _classCallCheck from "_classCallCheck";
-import _defineProperties from "_defineProperties";
-
-const tmp2 = (() => {
-  class AutomaticLifecycleManager {
-    constructor() {
-      tmp = outer1_2(this, AutomaticLifecycleManager);
-      this.initializedCount = 0;
-      this.actions = {};
-      map = new Map();
-      this.stores = map;
-      return;
+// Module 5134 (initialize)
+const result = require("set").fileFinishedImporting("lib/AutomaticLifecycleManager.tsx");
+class AutomaticLifecycleManager {
+  constructor() {
+    obj = Object.create(new.target.prototype);
+    obj[1] = {};
+    map = new Map();
+    obj[2] = map;
+    return obj;
+  }
+}
+const prototype = AutomaticLifecycleManager.prototype;
+prototype["initialize"] = function initialize() {
+  const self = this;
+  this.initializedCount = this.initializedCount + 1;
+  if (this.initializedCount <= 1) {
+    self._initialize();
+    const _Object = Object;
+    const entries = Object.entries(self.actions);
+    const item = entries.forEach((arg0) => {
+      let tmp;
+      let tmp2;
+      [tmp, tmp2] = arg0;
+      let callback = tmp2;
+      if (typeof tmp2 !== "find") {
+        callback = tmp2.callback;
+      }
+      const subscription = callback(table[0]).subscribe(tmp, callback);
+    });
+    const stores = self.stores;
+    const item1 = stores.forEach((onChange, addChangeListener) => {
+      addChangeListener.addChangeListener(onChange);
+      onChange();
+    });
+  }
+};
+prototype["terminate"] = function terminate(arg0) {
+  const self = this;
+  if (this.initializedCount > 0) {
+    if (arg0) {
+      self.initializedCount = 0;
+    } else {
+      self.initializedCount = self.initializedCount - 1;
+    }
+    if (0 === self.initializedCount) {
+      self._terminate();
+      const _Object = Object;
+      const entries = Object.entries(self.actions);
+      const item = entries.forEach((arg0) => {
+        let tmp;
+        let tmp2;
+        [tmp, tmp2] = arg0;
+        let callback = tmp2;
+        if (typeof tmp2 !== "find") {
+          callback = tmp2.callback;
+        }
+        callback(table[0]).unsubscribe(tmp, callback);
+      });
+      const stores = self.stores;
+      const item1 = stores.forEach((arg0, removeChangeListener) => {
+        removeChangeListener.removeChangeListener(arg0);
+      });
     }
   }
-  let obj = {
-    key: "initialize",
-    value() {
-      const self = this;
-      this.initializedCount = this.initializedCount + 1;
-      if (this.initializedCount <= 1) {
-        self._initialize();
-        const _Object = Object;
-        const entries = Object.entries(self.actions);
-        const item = entries.forEach((arg0) => {
-          let tmp;
-          let tmp2;
-          [tmp, tmp2] = arg0;
-          let callback = tmp2;
-          if ("function" !== typeof tmp2) {
-            callback = tmp2.callback;
-          }
-          const subscription = AutomaticLifecycleManager(outer2_1[2]).subscribe(tmp, callback);
-        });
-        const stores = self.stores;
-        const item1 = stores.forEach((handleStoreChange, addChangeListener) => {
-          addChangeListener.addChangeListener(handleStoreChange);
-          handleStoreChange();
-        });
-      }
-    }
-  };
-  const items = [obj, , , ];
-  obj = {
-    key: "terminate",
-    value(arg0) {
-      const self = this;
-      if (this.initializedCount > 0) {
-        if (arg0) {
-          self.initializedCount = 0;
-        } else {
-          self.initializedCount = self.initializedCount - 1;
-        }
-        if (0 === self.initializedCount) {
-          self._terminate();
-          const _Object = Object;
-          const entries = Object.entries(self.actions);
-          const item = entries.forEach((arg0) => {
-            let tmp;
-            let tmp2;
-            [tmp, tmp2] = arg0;
-            let callback = tmp2;
-            if ("function" !== typeof tmp2) {
-              callback = tmp2.callback;
-            }
-            AutomaticLifecycleManager(outer2_1[2]).unsubscribe(tmp, callback);
-          });
-          const stores = self.stores;
-          const item1 = stores.forEach((arg0, removeChangeListener) => {
-            removeChangeListener.removeChangeListener(arg0);
-          });
-        }
-      }
-    }
-  };
-  items[1] = obj;
-  obj = {
-    key: "_initialize",
-    value() {
+};
+prototype["_initialize"] = function _initialize() {
 
-    }
-  };
-  items[2] = obj;
-  items[3] = {
-    key: "_terminate",
-    value() {
+};
+prototype["_terminate"] = function _terminate() {
 
-    }
-  };
-  return callback(AutomaticLifecycleManager, items);
-})();
-const result = require("dispatcher").fileFinishedImporting("lib/AutomaticLifecycleManager.tsx");
+};
 
-export default tmp2;
+export default AutomaticLifecycleManager;

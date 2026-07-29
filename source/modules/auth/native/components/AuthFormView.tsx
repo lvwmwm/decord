@@ -1,55 +1,54 @@
-// Module ID: 9191
-// Function ID: 71977
+// Module ID: 9215
+// Function ID: 9216
 // Name: AuthFormView
-// Dependencies: [31, 27, 33, 4165, 689, 9169, 9192, 9193, 9194, 9197, 2]
+// Dependencies: [19, 17, 21, 4189, 712, 9193, 9216, 9217, 9218, 9221, 2]
 // Exports: default
 
-// Module 9191 (AuthFormView)
-import result from "result";
+// Module 9215 (AuthFormView)
+import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_4;
-let closure_5;
+let c4;
+let c5;
 let closure_6;
-let closure_7;
+let error;
 const require = arg1;
-({ View: closure_4, ScrollView: closure_5 } = get_ActivityIndicator);
-({ jsx: closure_6, jsxs: closure_7 } = jsxProd);
-let closure_8 = _createForOfIteratorHelperLoose.createStyles((arg0) => {
-  let obj = {};
-  obj = { backgroundColor: importDefault(689).colors.BACKGROUND_BASE_LOW, flex: 1 };
-  let num = 1;
-  obj.container = obj;
-  obj.flex = { flex: 1 };
-  obj = {};
-  let num2 = 0;
+({ View: c4, ScrollView: c5 } = get_ActivityIndicator);
+({ jsx: closure_6, jsxs: error } = jsxProd);
+let closure_8 = createCacheKey.createStyles((arg0) => {
+  let obj = { container: null, flex: null, content: null, subHeader: null };
+  obj = { backgroundColor: importDefault(712).colors.BACKGROUND_BASE_LOW, flex: 1 };
+  obj[0] = obj;
+  obj[1] = { flex: 1 };
+  let num = 0;
   if (arg0) {
-    num2 = 12;
+    num = 12;
   }
-  obj.paddingTop = num2;
+  obj = { paddingTop: num, paddingRight: null, paddingLeft: null, paddingBottom: null, flex: null };
+  let num2 = 16;
+  if (arg0) {
+    num2 = 24;
+  }
+  obj[1] = num2;
   let num3 = 16;
   if (arg0) {
     num3 = 24;
   }
-  obj.paddingRight = num3;
-  let num4 = 16;
+  obj[2] = num3;
+  let num4 = 0;
   if (arg0) {
-    num4 = 24;
+    num4 = 16;
   }
-  obj.paddingLeft = num4;
-  let num5 = 0;
+  obj[3] = num4;
+  let num5 = 1;
   if (arg0) {
-    num5 = 16;
+    num5 = 0;
   }
-  obj.paddingBottom = num5;
-  if (arg0) {
-    num = 0;
-  }
-  obj.flex = num;
-  obj.content = obj;
-  obj.subHeader = { marginTop: 8, alignItems: "center" };
+  obj[4] = num5;
+  obj[2] = obj;
+  obj[3] = { marginTop: 8, alignItems: "center" };
   return obj;
 });
 const result = require("jsxProd").fileFinishedImporting("modules/auth/native/components/AuthFormView.tsx");
@@ -62,70 +61,76 @@ export default function AuthFormView(arg0) {
   let headerText;
   let subHeader;
   ({ children, headerText, subHeader, contentStyle } = arg0);
+  let _require;
   ({ backgroundImageSource, backgroundImageCover } = arg0);
-  const tmp = importDefault(9169)();
-  const tmp2 = callback2(tmp);
-  _require = React.useContext(_require(9192).WideAuthScrollContext);
-  if (tmp) {
-    let obj = { contentInset: null, automaticallyAdjustContentInsets: false, keyboardShouldPersistTaps: "handled", alwaysBounceVertical: false, scrollEventThrottle: 16 };
-    obj = { top: 0 };
-    obj.contentInset = obj;
-    obj.onScroll = function onScroll(nativeEvent) {
+  const tmp3 = importDefault(9193)();
+  const tmp4 = callback2(tmp3);
+  _require = React.useContext(_require(9216).WideAuthScrollContext);
+  if (tmp3) {
+    let obj = { contentInset: null, automaticallyAdjustContentInsets: false, keyboardShouldPersistTaps: "handled", alwaysBounceVertical: false, scrollEventThrottle: 16, onScroll: null, style: null, contentContainerStyle: null, children: null };
+    obj[0] = { top: 0 };
+    obj[5] = function onScroll(nativeEvent) {
       return callback(nativeEvent.nativeEvent.contentOffset.y > 0);
     };
-    obj.style = tmp2.container;
-    const items = [tmp2.content, contentStyle];
-    obj.contentContainerStyle = items;
-    let tmp20 = null;
+    obj[6] = tmp4.container;
+    const items = [tmp4.content, contentStyle];
+    obj[7] = items;
+    let tmp15 = null;
     if (null != headerText) {
-      const obj1 = { children: headerText };
-      tmp20 = callback(importDefault(9193), obj1);
+      obj = { children: null };
+      obj[0] = headerText;
+      tmp15 = callback(tmp(9217), obj);
     }
-    const items1 = [tmp20, , ];
-    let tmp24 = null;
+    const items1 = [tmp15, , ];
+    let tmp17 = null;
     if (null != subHeader) {
-      const obj2 = { style: tmp2.subHeader, children: subHeader };
-      tmp24 = callback(closure_4, obj2);
+      const obj1 = { style: null, children: null };
+      obj1[0] = tmp4.subHeader;
+      obj1[1] = subHeader;
+      tmp17 = callback(closure_4, obj1);
     }
-    items1[1] = tmp24;
+    items1[1] = tmp17;
     items1[2] = children;
-    obj.children = items1;
-    let tmp3Result = tmp3(closure_5, obj);
-    const tmp18 = closure_5;
+    obj[8] = items1;
+    let tmp5Result = tmp5(closure_5, obj);
+    const tmp13 = closure_5;
   } else {
-    obj = {};
+    obj = { style: null, children: null };
     const items2 = [, ];
-    ({ container: arr[0], flex: arr[1] } = tmp2);
-    obj.style = items2;
-    const obj3 = { backgroundImageSource, backgroundImageCover };
-    const items3 = [callback(importDefault(9194), obj3), callback(importDefault(9197), {}), ];
-    const obj4 = { contentInset: null, automaticallyAdjustContentInsets: false, keyboardShouldPersistTaps: "handled", alwaysBounceVertical: false };
-    const obj5 = { top: 0 };
-    obj4.contentInset = obj5;
-    obj4.style = tmp2.flex;
+    ({ container: arr[0], flex: arr[1] } = tmp4);
+    obj[0] = items2;
+    const obj2 = { backgroundImageSource: null, backgroundImageCover: null };
+    obj2[0] = backgroundImageSource;
+    obj2[1] = backgroundImageCover;
+    const items3 = [callback(tmp(9218), obj2), callback(tmp(9221), {}), ];
+    const obj3 = { contentInset: null, automaticallyAdjustContentInsets: false, keyboardShouldPersistTaps: "handled", alwaysBounceVertical: false, style: null, contentContainerStyle: null, children: null };
+    obj3[0] = { top: 0 };
+    obj3[4] = tmp4.flex;
     const items4 = [, , ];
-    ({ content: arr3[0], flex: arr3[1] } = tmp2);
+    ({ content: arr3[0], flex: arr3[1] } = tmp4);
     items4[2] = contentStyle;
-    obj4.contentContainerStyle = items4;
-    let tmp10 = null;
+    obj3[5] = items4;
+    let tmp7Result = null;
     if (null != headerText) {
-      const obj6 = { children: headerText };
-      tmp10 = callback(importDefault(9193), obj6);
+      const obj4 = { children: null };
+      obj4[0] = headerText;
+      tmp7Result = tmp7(tmp(9217), obj4);
     }
-    const items5 = [tmp10, , ];
-    let tmp14 = null;
+    const items5 = [tmp7Result, , ];
+    tmp7Result = null;
     if (null != subHeader) {
-      const obj7 = { style: tmp2.subHeader, children: subHeader };
-      tmp14 = callback(closure_4, obj7);
+      const obj5 = { style: null, children: null };
+      obj5[0] = tmp4.subHeader;
+      obj5[1] = subHeader;
+      tmp7Result = tmp7(tmp6, obj5);
     }
-    items5[1] = tmp14;
+    items5[1] = tmp7Result;
     items5[2] = children;
-    obj4.children = items5;
-    items3[2] = tmp3(closure_5, obj4);
-    obj.children = items3;
-    tmp3Result = tmp3(closure_4, obj);
-    const tmp4 = closure_4;
+    obj3[6] = items5;
+    items3[2] = tmp5(closure_5, obj3);
+    obj[1] = items3;
+    tmp5Result = tmp5(tmp6, obj);
     const tmp8 = closure_5;
   }
-  return tmp3Result;
+  return tmp5Result;
 };

@@ -1,97 +1,17 @@
-// Module ID: 5103
-// Function ID: 44135
-// Name: _createForOfIteratorHelperLoose
-// Dependencies: [1348, 22, 1327, 566, 2]
+// Module ID: 5125
+// Function ID: 5126
+// Name: getFlattenedChannels
+// Dependencies: [1372, 12, 1351, 589, 2]
 // Exports: useFlattenedChannels
 
-// Module 5103 (_createForOfIteratorHelperLoose)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 5125 (getFlattenedChannels)
+import ensureGuildLoaded from "ensureGuildLoaded";
 
 const require = arg1;
-function _createForOfIteratorHelperLoose(iterable) {
-  let closure_0 = iterable;
-  iterable = "undefined" !== typeof Symbol;
-  if (iterable) {
-    const _Symbol = Symbol;
-    iterable = iterable[Symbol.iterator];
-  }
-  if (!iterable) {
-    iterable = iterable[Symbol.iterator];
-  }
-  if (iterable) {
-    const iter = iterable.call(iterable);
-    const next = iter.next;
-    return next.bind(iter);
-  } else {
-    const _Array = Array;
-    let tmp = iterable;
-    if (!Array.isArray(iterable)) {
-      let tmp2;
-      if (iterable) {
-        if ("string" === typeof iterable) {
-          tmp2 = _arrayLikeToArray(iterable, undefined);
-        } else {
-          const toString = {}.toString;
-          const substr = toString.call(iterable).slice(8, -1);
-          let name = substr;
-          if (tmp3) {
-            name = iterable.constructor.name;
-          }
-          if ("Map" !== name) {
-            if ("Set" !== name) {
-              if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(iterable, undefined);
-              } else {
-                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
-              }
-            }
-            tmp2 = arr;
-          }
-          const _Array2 = Array;
-          arr = Array.from(iterable);
-          const callResult = toString.call(iterable);
-          tmp3 = "Object" === substr && iterable.constructor;
-        }
-      }
-      tmp = tmp2;
-      if (!tmp2) {
-        const _TypeError = TypeError;
-        const typeError = new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
-        throw typeError;
-      }
-    }
-    if (tmp) {
-      closure_0 = tmp;
-    }
-    let c1 = 0;
-    return () => {
-      if (closure_1 >= length.length) {
-        let obj = { done: true };
-      } else {
-        obj = { done: false };
-        closure_1 = tmp3 + 1;
-        obj.value = length[+closure_1];
-      }
-      return obj;
-    };
-  }
-}
-function _arrayLikeToArray(arg0, arg1) {
-  let length;
-  if (tmp) {
-    length = arg0.length;
-  }
-  const ArrayResult = Array(length);
-  for (let num = 0; num < length; num = num + 1) {
-    ArrayResult[num] = arg0[num];
-  }
-  return ArrayResult;
-}
 function getFlattenedChannels(guildId, set, found, arg3) {
-  let done;
-  let flag = arg3;
   const _require = set;
   const importDefault = found;
+  let flag = arg3;
   if (arg3 === undefined) {
     flag = false;
   }
@@ -106,7 +26,7 @@ function getFlattenedChannels(guildId, set, found, arg3) {
   const mapped = importDefault(flag[1])(found).map((isCategory) => isCategory.isCategory() ? isCategory.id : isCategory.parent_id);
   found = mapped.filter(_require(flag[2]).isNotNullish);
   const arr = importDefault(flag[1])(found);
-  const mapped1 = found.uniq().map((channelId) => channel.getChannel(channelId));
+  const mapped1 = found.uniq().map((arg0) => channel.getChannel(arg0));
   const found1 = mapped1.filter(_require(flag[2]).isNotNullish);
   const uniqResult = found.uniq();
   const valueResult = found1.sortBy("position").value();
@@ -133,16 +53,16 @@ function getFlattenedChannels(guildId, set, found, arg3) {
     return sum;
   });
   found2 = sortByResult;
-  function _loop(value) {
+  function _loop(iter3) {
     if (!flag) {
-      found2.push(value);
+      found2.push(iter3);
     }
-    if (value.has(value.id)) {
-      let found = channel[value.id];
+    if (iter3.has(iter3.id)) {
+      let found = channel[iter3.id];
     } else {
-      found = lib.filter((parent_id) => parent_id.parent_id === value.id);
+      found = lib.filter((parent_id) => parent_id.parent_id === iter3.id);
     }
-    if (null == found) {
+    if (found == null) {
       found = [];
     }
     const items = [
@@ -158,15 +78,10 @@ function getFlattenedChannels(guildId, set, found, arg3) {
     ];
     found2.push.apply(items);
   }
-  const tmp5 = set(valueResult);
-  let iter3 = tmp5();
-  if (!iter3.done) {
-    do {
-      let _loopResult = _loop(iter3.value);
-      let iter4 = tmp5();
-      iter3 = iter4;
-      done = iter4.done;
-    } while (!done);
+  const iter3 = valueResult[Symbol.iterator]();
+  while (iter3 !== undefined) {
+    let _loopResult = _loop(iter3.next());
+    continue;
   }
   return sortByResult;
 }
@@ -174,15 +89,15 @@ const result = require("isDiscordFrontendDevelopment").fileFinishedImporting("mo
 
 export { getFlattenedChannels };
 export const useFlattenedChannels = function useFlattenedChannels(arg0, arg1) {
-  let flag = arg2;
   const _require = arg0;
   let closure_1 = arg1;
+  let flag = arg2;
   if (arg2 === undefined) {
     flag = false;
   }
-  const items = [_isNativeReflectConstruct];
+  const items = [ensureGuildLoaded];
   return _require(flag[3]).useStateFromStoresArray(items, () => {
-    const mapped = Array.from(closure_1).map((channelId) => outer2_3.getChannel(channelId));
-    return outer1_6(callback, closure_1, mapped.filter(callback(flag[2]).isNotNullish), flag);
+    const mapped = Array.from(closure_1).map((arg0) => channel.getChannel(arg0));
+    return outer1_4(callback, closure_1, mapped.filter(callback(flag[2]).isNotNullish), flag);
   });
 };

@@ -1,84 +1,62 @@
-// Module ID: 14965
-// Function ID: 113987
+// Module ID: 14991
+// Function ID: 14992
 // Name: getMediaIcon
-// Dependencies: [31, 33, 4165, 689, 3869, 5550, 1273, 8303, 8302, 4689, 7660, 11902, 14966, 6616, 14967, 4693, 14968, 6592, 6593, 14963, 2]
+// Dependencies: [19, 21, 4189, 712, 3893, 5568, 1297, 8327, 8326, 4711, 7683, 11926, 14992, 6637, 14993, 4715, 14994, 6613, 6614, 14989, 2]
+// Exports: useActivityIndicatorState
 
-// Module 14965 (getMediaIcon)
-import importAllResult from "result";
+// Module 14991 (getMediaIcon)
+import importAllResult from "canConnectToChannel";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
 let require = arg1;
 function getMediaIcon(closure_3) {
   if (closure_3.activeEvent) {
-    let obj = { icon: require(8303) /* CalendarIcon */.CalendarIcon, source: importDefault(8302) };
+    let obj = { icon: null, source: null };
+    obj[0] = require(8327) /* CalendarIcon */.CalendarIcon;
+    obj[1] = importDefault(8326);
     let tmp6 = obj;
   } else if (tmp4) {
-    obj = { icon: require(4689) /* StageIcon */.StageIcon, source: importDefault(7660) };
+    obj = { icon: null, source: null };
+    obj[0] = require(4711) /* StageIcon */.StageIcon;
+    obj[1] = importDefault(7683);
     tmp6 = obj;
   } else if (tmp3) {
-    const obj1 = { icon: require(11902) /* ScreenIcon */.ScreenIcon, source: importDefault(14966) };
+    const obj1 = { icon: null, source: null };
+    obj1[0] = require(11926) /* ScreenIcon */.ScreenIcon;
+    obj1[1] = importDefault(14992);
     tmp6 = obj1;
   } else if (tmp2) {
-    const obj2 = { icon: require(6616) /* VideoIcon */.VideoIcon, source: importDefault(14967) };
+    const obj2 = { icon: null, source: null };
+    obj2[0] = require(6637) /* VideoIcon */.VideoIcon;
+    obj2[1] = importDefault(14993);
     tmp6 = obj2;
   } else if (tmp) {
-    const obj3 = { icon: require(4693) /* VoiceNormalIcon */.VoiceNormalIcon, source: importDefault(14968) };
+    const obj3 = { icon: null, source: null };
+    obj3[0] = require(4715) /* VoiceNormalIcon */.VoiceNormalIcon;
+    obj3[1] = importDefault(14994);
     tmp6 = obj3;
   } else {
     tmp6 = null;
     if (tmp5) {
-      obj = { icon: require(6592) /* AppsIcon */.AppsIcon, source: importDefault(6593) };
+      obj = { icon: null, source: null };
+      obj[0] = require(6613) /* AppsIcon */.AppsIcon;
+      obj[1] = importDefault(6614);
       tmp6 = obj;
     }
   }
   return tmp6;
 }
-function useActivityIndicatorState(guildId) {
-  const tmp = importDefault(14963)(guildId);
-  const require = tmp;
-  const tmp2 = getMediaIcon(tmp);
-  importDefault = tmp2;
-  let icon;
-  if (null != tmp2) {
-    icon = tmp2.icon;
-  }
-  const items = [icon, , ];
-  let source;
-  if (null != tmp2) {
-    source = tmp2.source;
-  }
-  items[1] = source;
-  items[2] = tmp.isCurrentUserConnected;
-  return importAllResult.useMemo(() => {
-    const obj = {};
-    let icon;
-    if (null != tmp2) {
-      icon = tmp2.icon;
-    }
-    obj.IconComponent = icon;
-    let source;
-    if (null != tmp2) {
-      source = tmp2.source;
-    }
-    let tmp5 = null;
-    if (null != source) {
-      tmp5 = source;
-    }
-    obj.source = tmp5;
-    obj.isCurrentUserConnected = tmp.isCurrentUserConnected;
-    return obj;
-  }, items);
-}
-let obj = {};
-obj = { position: "absolute", top: -3, right: -3, justifyContent: "center", width: 22, height: 22, padding: 3, borderRadius: require("_createForOfIteratorHelperLoose").radii.md, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWEST };
-obj.activityWrapper = obj;
-_createForOfIteratorHelperLoose = { justifyContent: "center", width: 16, height: 16, padding: 2, borderRadius: require("_createForOfIteratorHelperLoose").radii.sm, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_MOD_STRONG };
-obj.activityIconWrapper = _createForOfIteratorHelperLoose;
-obj.activityIconWrapperActive = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.CONTROL_CONNECTED_BACKGROUND_DEFAULT };
-let obj3 = { width: 12, height: 12, borderRadius: require("_createForOfIteratorHelperLoose").radii.none };
-obj.activityIcon = obj3;
-let closure_5 = _createForOfIteratorHelperLoose.createStyles(obj);
+let c3 = importAllResult;
+let obj = { activityWrapper: null, activityIconWrapper: null, activityIconWrapperActive: null, activityIcon: null };
+obj = { position: "absolute", top: -3, right: -3, justifyContent: "center", width: 22, height: 22, padding: 3, borderRadius: require("Themes").radii.md, backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOWEST };
+obj[0] = obj;
+createCacheKey = { justifyContent: "center", width: 16, height: 16, padding: 2, borderRadius: require("Themes").radii.sm, backgroundColor: require("Themes").colors.BACKGROUND_MOD_STRONG };
+obj[1] = createCacheKey;
+obj[2] = { backgroundColor: require("Themes").colors.CONTROL_CONNECTED_BACKGROUND_DEFAULT };
+let obj2 = { backgroundColor: require("Themes").colors.CONTROL_CONNECTED_BACKGROUND_DEFAULT };
+obj[3] = { width: 12, height: 12, borderRadius: require("Themes").radii.none };
+let closure_5 = createCacheKey.createStyles(obj);
 const memoResult = importAllResult.memo((arg0) => {
   let IconComponent;
   let isCurrentUserConnected;
@@ -87,53 +65,127 @@ const memoResult = importAllResult.memo((arg0) => {
   ({ IconComponent, isCurrentUserConnected } = arg0);
   ({ style, source } = arg0);
   let activityIcon = callback();
-  let obj = require(3869) /* map */;
-  let WHITE = obj.useToken(importDefault(689).colors.ICON_DEFAULT);
-  obj = { style: items };
+  let obj = require(3893) /* map */;
+  let WHITE = obj.useToken(importDefault(712).colors.ICON_DEFAULT);
+  obj = { style: items, children: null };
   items = [activityIcon.activityWrapper, style];
-  obj = {};
   const items1 = [activityIcon.activityIconWrapper, ];
   let prop = null;
-  const tmp2 = importDefault(5550);
+  const tmp = require;
+  const tmp5 = importDefault(5568);
   if (isCurrentUserConnected) {
     prop = activityIcon.activityIconWrapperActive;
   }
+  obj = { style: items1, children: null };
   items1[1] = prop;
-  obj.style = items1;
   if (null != IconComponent) {
-    const obj1 = {};
-    const colors = importDefault(689).colors;
-    obj1.color = isCurrentUserConnected ? colors.WHITE : colors.ICON_DEFAULT;
-    obj1.size = "xxs";
+    let colors = tmp3(712).colors;
+    colors = { color: null, size: "xxs", style: null };
+    colors[0] = isCurrentUserConnected ? colors.WHITE : colors.ICON_DEFAULT;
     activityIcon = activityIcon.activityIcon;
-    obj1.style = activityIcon;
-    <IconComponent />;
-    const tmp10 = jsx;
+    colors[2] = activityIcon;
+    tmp4(IconComponent, colors);
+    const tmp8 = isCurrentUserConnected ? colors.WHITE : colors.ICON_DEFAULT;
   } else {
-    const obj2 = { source };
+    const obj1 = { source: null, color: null, style: null };
+    obj1[0] = source;
     if (isCurrentUserConnected) {
-      WHITE = importDefault(689).unsafe_rawColors.WHITE;
+      WHITE = tmp3(712).unsafe_rawColors.WHITE;
     }
-    obj2.color = WHITE;
-    obj2.style = activityIcon.activityIcon;
-    obj.children = jsx(require(1273) /* Button */.Icon, { source });
-    obj.children = tmp(tmp3, obj);
-    return tmp(tmp2, obj);
+    obj1[1] = WHITE;
+    obj1[2] = activityIcon.activityIcon;
+    obj[1] = tmp4(tmp(1297).Icon, obj1);
+    obj[1] = tmp4(tmp6, obj);
+    return tmp4(tmp5, obj);
   }
 });
-let obj2 = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.CONTROL_CONNECTED_BACKGROUND_DEFAULT };
-const memoResult1 = importAllResult.memo(function GuildsBarGuildActivityIndicator(guildId) {
-  const source = useActivityIndicatorState(guildId.guildId).source;
-  let tmp4 = null;
+let obj3 = { width: 12, height: 12, borderRadius: require("Themes").radii.none };
+const memoResult1 = importAllResult.memo(function GuildsBarGuildActivityIndicator(arg0) {
+  let guildId;
+  let style;
+  let c0;
+  let importDefault;
+  ({ guildId, style } = arg0);
+  const tmp = importDefault(14989)(guildId);
+  c0 = tmp;
+  const tmp2 = getMediaIcon(tmp);
+  importDefault = tmp2;
+  let icon;
+  if (tmp2 != null) {
+    icon = tmp2.icon;
+  }
+  const items = [icon, , ];
+  let source;
+  if (tmp2 != null) {
+    source = tmp2.source;
+  }
+  items[1] = source;
+  items[2] = tmp.isCurrentUserConnected;
+  const memo = importAllResult.useMemo(() => {
+    let icon;
+    if (c1 != null) {
+      icon = tmp.icon;
+    }
+    const obj = { IconComponent: icon, source: null, isCurrentUserConnected: null };
+    let source;
+    if (c1 != null) {
+      source = tmp.source;
+    }
+    if (source == null) {
+      source = null;
+    }
+    obj[1] = source;
+    obj[2] = _undefined.isCurrentUserConnected;
+    return obj;
+  }, items);
+  source = memo.source;
+  let tmp9 = null;
   if (null != source) {
-    const obj = { IconComponent: tmp2, style: guildId.style, source, isCurrentUserConnected: tmp3 };
-    tmp4 = <closure_6 IconComponent={tmp2} style={arg0.style} source={source} isCurrentUserConnected={tmp3} />;
+    let obj = { IconComponent: null, style: null, source: null, isCurrentUserConnected: null };
+    obj[0] = tmp7;
+    obj[1] = style;
+    obj[2] = source;
+    obj[3] = tmp8;
+    tmp9 = <closure_6 IconComponent={null} style={null} source={null} isCurrentUserConnected={null} />;
   }
-  return tmp4;
+  return tmp9;
 });
-const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/guilds_bar/native/GuildsBarActivityIndicator.tsx");
+const result = require("createCacheKey").fileFinishedImporting("modules/guilds_bar/native/GuildsBarActivityIndicator.tsx");
 
 export default memoResult1;
 export const GuildsBarActivityIndicatorBase = memoResult;
 export { getMediaIcon };
-export { useActivityIndicatorState };
+export const useActivityIndicatorState = function useActivityIndicatorState(guildId) {
+  const tmp = importDefault(14989)(guildId);
+  const require = tmp;
+  const tmp2 = getMediaIcon(tmp);
+  importDefault = tmp2;
+  let icon;
+  if (tmp2 != null) {
+    icon = tmp2.icon;
+  }
+  const items = [icon, , ];
+  let source;
+  if (tmp2 != null) {
+    source = tmp2.source;
+  }
+  items[1] = source;
+  items[2] = tmp.isCurrentUserConnected;
+  return importAllResult.useMemo(() => {
+    let icon;
+    if (c1 != null) {
+      icon = tmp.icon;
+    }
+    const obj = { IconComponent: icon, source: null, isCurrentUserConnected: null };
+    let source;
+    if (c1 != null) {
+      source = tmp.source;
+    }
+    if (source == null) {
+      source = null;
+    }
+    obj[1] = source;
+    obj[2] = _undefined.isCurrentUserConnected;
+    return obj;
+  }, items);
+};

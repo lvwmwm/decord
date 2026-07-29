@@ -1,10 +1,10 @@
-// Module ID: 4183
-// Function ID: 35058
+// Module ID: 4207
+// Function ID: 4208
 // Name: ParticipantTypes
 // Dependencies: [2]
 // Exports: isActivityParticipant, isStreamParticipant, isUserParticipant
 
-// Module 4183 (ParticipantTypes)
+// Module 4207 (ParticipantTypes)
 let obj = { STREAM: 0, [0]: "STREAM", HIDDEN_STREAM: 1, [1]: "HIDDEN_STREAM", USER: 2, [2]: "USER", ACTIVITY: 3, [3]: "ACTIVITY" };
 obj = { VIDEO: 0, [0]: "VIDEO", CAMERA_PREVIEW: 1, [1]: "CAMERA_PREVIEW", HAVEN: 2, [2]: "HAVEN" };
 const result = require("set").fileFinishedImporting("modules/calls/CallConstants.tsx");
@@ -16,29 +16,29 @@ export const VoicePlatforms = { DESKTOP: 0, [0]: "DESKTOP", MOBILE: 1, [1]: "MOB
 export const CallMenuEntrypoint = { CONTEXT_MENU: "Context Menu", THREE_DOT: "Three-Dot", CARET: "Caret", OTHER_BUTTON: "Other Button" };
 export const isStreamParticipant = function isStreamParticipant(stateFromStores) {
   let type;
-  if (null != stateFromStores) {
+  if (stateFromStores != null) {
     type = stateFromStores.type;
   }
-  let tmp2 = type === obj.STREAM;
-  if (!tmp2) {
+  let tmp3 = type === obj.STREAM;
+  if (!tmp3) {
     let type1;
-    if (null != stateFromStores) {
+    if (stateFromStores != null) {
       type1 = stateFromStores.type;
     }
-    tmp2 = type1 === obj.HIDDEN_STREAM;
+    tmp3 = type1 === tmp2.HIDDEN_STREAM;
   }
-  return tmp2;
+  return tmp3;
 };
 export const isUserParticipant = function isUserParticipant(type) {
   type = undefined;
-  if (null != type) {
+  if (type != null) {
     type = type.type;
   }
   return type === obj.USER;
 };
 export const isActivityParticipant = function isActivityParticipant(type) {
   type = undefined;
-  if (null != type) {
+  if (type != null) {
     type = type.type;
   }
   return type === obj.ACTIVITY;

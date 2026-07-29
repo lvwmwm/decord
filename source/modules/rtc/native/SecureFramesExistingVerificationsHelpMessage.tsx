@@ -1,35 +1,37 @@
-// Module ID: 8880
-// Function ID: 70162
+// Module ID: 8904
+// Function ID: 8905
 // Name: SecureFramesExistingVerificationsHelpMessage
-// Dependencies: [27, 33, 4165, 8881, 1273, 1212, 2]
+// Dependencies: [17, 21, 4189, 8905, 1297, 1236, 2]
 // Exports: default
 
-// Module 8880 (SecureFramesExistingVerificationsHelpMessage)
+// Module 8904 (SecureFramesExistingVerificationsHelpMessage)
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_4 = _createForOfIteratorHelperLoose.createStyles({ container: { width: "100%" } });
-const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/rtc/native/SecureFramesExistingVerificationsHelpMessage.tsx");
+let closure_4 = createCacheKey.createStyles({ container: { width: "100%" } });
+const result = require("createCacheKey").fileFinishedImporting("modules/rtc/native/SecureFramesExistingVerificationsHelpMessage.tsx");
 
 export default function SecureFramesExistingVerificationsHelpMessage(arg0) {
   let style;
   let userId;
   let userKey;
   ({ style, userId, userKey } = arg0);
-  let obj = require(8881) /* useSecureFramesUserVerifiedKeysCount */;
+  let obj = require(8905) /* useSecureFramesUserVerifiedKeysCount */;
   const secureFramesUserVerifiedKeysCount = obj.useSecureFramesUserVerifiedKeysCount({ userId, keyToOmit: userKey });
-  let tmp3 = null;
+  let tmp5 = null;
   if (0 !== secureFramesUserVerifiedKeysCount) {
-    obj = {};
+    obj = { style: null, children: null };
     const items = [tmp.container, style];
-    obj.style = items;
-    obj = { messageType: require(1273) /* Button */.HelpMessageTypes.INFO };
-    const intl = require(1212) /* getSystemLocale */.intl;
-    const obj1 = { count: secureFramesUserVerifiedKeysCount };
-    obj.children = intl.format(require(1212) /* getSystemLocale */.t.uZDkz0, obj1);
-    obj.children = jsx(require(1273) /* Button */.HelpMessage, { messageType: require(1273) /* Button */.HelpMessageTypes.INFO });
-    tmp3 = <View messageType={require(1273) /* Button */.HelpMessageTypes.INFO} />;
+    obj[0] = items;
+    obj = { messageType: null, children: null };
+    obj[0] = tmp2(1297).HelpMessageTypes.INFO;
+    const intl = tmp2(1236).intl;
+    const obj1 = { count: null };
+    obj1[0] = secureFramesUserVerifiedKeysCount;
+    obj[1] = intl.format(tmp2(1236).t.uZDkz0, obj1);
+    obj[1] = jsx(tmp2(1297).HelpMessage, { messageType: null, children: null });
+    tmp5 = <View messageType={null}>{null}</View>;
   }
-  return tmp3;
+  return tmp5;
 };

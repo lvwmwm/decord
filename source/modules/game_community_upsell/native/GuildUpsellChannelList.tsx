@@ -1,54 +1,58 @@
-// Module ID: 15199
-// Function ID: 115513
+// Module ID: 15232
+// Function ID: 15233
 // Name: GuildUpsellChannelList
-// Dependencies: [31, 27, 14695, 653, 33, 4165, 689, 12743, 15200, 566, 675, 11774, 5200, 4161, 1212, 4578, 14105, 15201, 15203, 2]
+// Dependencies: [19, 17, 14720, 676, 21, 4189, 712, 12765, 15233, 589, 698, 11799, 5222, 4185, 1236, 4600, 14127, 15234, 15236, 2]
 // Exports: default
 
-// Module 15199 (GuildUpsellChannelList)
-import result from "result";
-import { View } from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 15232 (GuildUpsellChannelList)
+import set from "set";
+import { View } from "handleJoinGuild";
+import closure_6 from "set";
 import { AnalyticEvents } from "ME";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_8;
-let closure_9;
-let require = arg1;
-({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { flex: 1, backgroundColor: require("_createForOfIteratorHelperLoose").colors.PANEL_BG };
-_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
-let obj1 = { height: 56, flexDirection: "row", alignItems: "center", marginHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16 };
-_createForOfIteratorHelperLoose.header = obj1;
-_createForOfIteratorHelperLoose.headerTitle = { flex: 1 };
-let obj2 = { flexDirection: "row", gap: require("_createForOfIteratorHelperLoose").space.PX_16, flex: 1 };
-_createForOfIteratorHelperLoose.twoColumnRow = obj2;
-_createForOfIteratorHelperLoose.listContainer = { flex: 1 };
-_createForOfIteratorHelperLoose.subheaderWrapper = { marginBottom: require("_createForOfIteratorHelperLoose").space.PX_8 };
-let obj3 = { marginBottom: require("_createForOfIteratorHelperLoose").space.PX_8 };
-_createForOfIteratorHelperLoose.createCard = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BG_SURFACE_RAISED, gap: require("_createForOfIteratorHelperLoose").space.PX_4, marginBottom: require("_createForOfIteratorHelperLoose").space.PX_24 };
-let obj4 = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BG_SURFACE_RAISED, gap: require("_createForOfIteratorHelperLoose").space.PX_4, marginBottom: require("_createForOfIteratorHelperLoose").space.PX_24 };
-_createForOfIteratorHelperLoose.descriptionSpacing = { marginBottom: require("_createForOfIteratorHelperLoose").space.PX_8 };
-let obj5 = { marginBottom: require("_createForOfIteratorHelperLoose").space.PX_8 };
-_createForOfIteratorHelperLoose.joinSection = { gap: require("_createForOfIteratorHelperLoose").space.PX_4 };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-const obj6 = { gap: require("_createForOfIteratorHelperLoose").space.PX_4 };
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/game_community_upsell/native/GuildUpsellChannelList.tsx");
+let c9;
+let metroImportAll;
+const require = arg1;
+({ jsx: metroImportAll, jsxs: c9 } = jsxProd);
+createCacheKey = { container: null, header: null, headerTitle: null, twoColumnRow: null, listContainer: null, subheaderWrapper: null, createCard: null, descriptionSpacing: null, joinSection: null };
+createCacheKey = { flex: 1, backgroundColor: require("Themes").colors.PANEL_BG };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { height: 56, flexDirection: "row", alignItems: "center", marginHorizontal: require("Themes").space.PX_16 };
+createCacheKey[2] = { flex: 1 };
+let obj1 = { height: 56, flexDirection: "row", alignItems: "center", marginHorizontal: require("Themes").space.PX_16 };
+createCacheKey[3] = { flexDirection: "row", gap: require("Themes").space.PX_16, flex: 1 };
+createCacheKey[4] = { flex: 1 };
+let obj2 = { flexDirection: "row", gap: require("Themes").space.PX_16, flex: 1 };
+createCacheKey[5] = { marginBottom: require("Themes").space.PX_8 };
+let obj3 = { marginBottom: require("Themes").space.PX_8 };
+createCacheKey[6] = { backgroundColor: require("Themes").colors.BG_SURFACE_RAISED, gap: require("Themes").space.PX_4, marginBottom: require("Themes").space.PX_24 };
+let obj4 = { backgroundColor: require("Themes").colors.BG_SURFACE_RAISED, gap: require("Themes").space.PX_4, marginBottom: require("Themes").space.PX_24 };
+createCacheKey[7] = { marginBottom: require("Themes").space.PX_8 };
+let obj5 = { marginBottom: require("Themes").space.PX_8 };
+createCacheKey[8] = { gap: require("Themes").space.PX_4 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+const obj6 = { gap: require("Themes").space.PX_4 };
+const result = require("set").fileFinishedImporting("modules/game_community_upsell/native/GuildUpsellChannelList.tsx");
 
 export default function GuildUpsellChannelList(style) {
   style = style.style;
-  const tmp = _createForOfIteratorHelperLoose();
-  const require = tmp;
-  const GameCommunityUpsellMultiExperiment = require(youBarTotalHeight[7]).GameCommunityUpsellMultiExperiment;
-  const visualVariant = GameCommunityUpsellMultiExperiment.useConfig({ location: "GuildUpsellChannelList" }).visualVariant;
+  let _require;
+  let visualVariant;
+  let callback1;
+  let youBarTotalHeight;
+  const tmp = createCacheKey();
+  _require = tmp;
+  const GameCommunityUpsellMultiExperiment = _require(youBarTotalHeight[7]).GameCommunityUpsellMultiExperiment;
+  visualVariant = GameCommunityUpsellMultiExperiment.useConfig({ location: "GuildUpsellChannelList" }).visualVariant;
   const effect = React.useEffect(() => {
-    let arr = Array.from(outer1_6.getLastFetchedGameIds());
-    arr = Array.from(outer1_6.getDismissedGuildIds());
-    const mobileGameCommunities = tmp(youBarTotalHeight[8]).fetchMobileGameCommunities(arr, arr);
+    let arr = Array.from(store.getLastFetchedGameIds());
+    arr = Array.from(store.getDismissedGuildIds());
+    const mobileGameCommunities = _undefined(youBarTotalHeight[8]).fetchMobileGameCommunities(arr, arr);
   }, []);
-  let obj = require(youBarTotalHeight[9]);
-  let items = [_isNativeReflectConstruct];
+  let obj = _require(youBarTotalHeight[9]);
+  let items = [closure_6];
   const stateFromStoresArray = obj.useStateFromStoresArray(items, () => {
     const presentableUpsellGuilds = outer1_6.getPresentableUpsellGuilds();
     let num = 20;
@@ -64,80 +68,92 @@ export default function GuildUpsellChannelList(style) {
     obj = { game_id, guild_id, variant: visualVariant };
     visualVariant(youBarTotalHeight[10]).track(outer1_7.GAME_COMMUNITY_MULTI_GUILD_UPSELL_CARD_DISMISSED, obj);
   }, items1);
-  const callback1 = React.useCallback(() => {
+  callback1 = React.useCallback(() => {
     visualVariant(youBarTotalHeight[11]).openCreateGuildModal();
   }, []);
   let items2 = [callback1, , , , ];
   ({ subheaderWrapper: arr4[1], createCard: arr4[2], descriptionSpacing: arr4[3], joinSection: arr4[4] } = tmp);
   const memo = React.useMemo(() => {
-    let obj = { style: tmp.subheaderWrapper };
-    obj = { style: tmp.createCard };
-    obj = { variant: "heading-md/bold", color: "mobile-text-heading-primary" };
-    const intl = tmp(youBarTotalHeight[14]).intl;
-    obj.children = intl.string(tmp(youBarTotalHeight[14]).t.B44MTm);
-    const items = [outer1_8(tmp(youBarTotalHeight[13]).Text, obj), , ];
-    const obj1 = { variant: "text-sm/medium", color: "text-default", style: tmp.descriptionSpacing };
-    const intl2 = tmp(youBarTotalHeight[14]).intl;
-    obj1.children = intl2.string(tmp(youBarTotalHeight[14]).t.l0tmhq);
-    items[1] = outer1_8(tmp(youBarTotalHeight[13]).Text, obj1);
+    let obj = { style: _undefined.subheaderWrapper, children: null };
+    obj = { style: _undefined.createCard, children: null };
+    obj = { variant: "heading-md/bold", color: "mobile-text-heading-primary", children: null };
+    const intl = _undefined(youBarTotalHeight[14]).intl;
+    obj[2] = intl.string(_undefined(youBarTotalHeight[14]).t.B44MTm);
+    const items = [outer1_8(_undefined(youBarTotalHeight[13]).Text, obj), , ];
+    const obj1 = { variant: "text-sm/medium", color: "text-default", style: _undefined.descriptionSpacing, children: null };
+    const intl2 = _undefined(youBarTotalHeight[14]).intl;
+    obj1[3] = intl2.string(_undefined(youBarTotalHeight[14]).t.l0tmhq);
+    items[1] = outer1_8(_undefined(youBarTotalHeight[13]).Text, obj1);
     const obj2 = { variant: "primary", size: "sm", text: null, onPress: null, grow: true };
-    const intl3 = tmp(youBarTotalHeight[14]).intl;
-    obj2.text = intl3.string(tmp(youBarTotalHeight[14]).t.CumH4u);
-    obj2.onPress = callback1;
-    items[2] = outer1_8(tmp(youBarTotalHeight[15]).Button, obj2);
-    obj.children = items;
-    const items1 = [outer1_9(tmp(youBarTotalHeight[12]).Card, obj), ];
-    const obj3 = { style: tmp.joinSection };
-    const obj4 = { variant: "heading-md/bold", color: "mobile-text-heading-primary" };
-    const intl4 = tmp(youBarTotalHeight[14]).intl;
-    obj4.children = intl4.string(tmp(youBarTotalHeight[14]).t.rJRote);
-    const items2 = [outer1_8(tmp(youBarTotalHeight[13]).Text, obj4), ];
-    const obj5 = { variant: "text-sm/medium", color: "text-subtle", style: tmp.descriptionSpacing };
-    const intl5 = tmp(youBarTotalHeight[14]).intl;
-    obj5.children = intl5.string(tmp(youBarTotalHeight[14]).t.pJT2DK);
-    items2[1] = outer1_8(tmp(youBarTotalHeight[13]).Text, obj5);
-    obj3.children = items2;
+    const intl3 = _undefined(youBarTotalHeight[14]).intl;
+    obj2[2] = intl3.string(_undefined(youBarTotalHeight[14]).t.CumH4u);
+    obj2[3] = callback1;
+    items[2] = outer1_8(_undefined(youBarTotalHeight[15]).Button, obj2);
+    obj[1] = items;
+    const items1 = [outer1_9(_undefined(youBarTotalHeight[12]).Card, obj), ];
+    const obj3 = { style: _undefined.joinSection, children: null };
+    const obj4 = { variant: "heading-md/bold", color: "mobile-text-heading-primary", children: null };
+    const intl4 = _undefined(youBarTotalHeight[14]).intl;
+    obj4[2] = intl4.string(_undefined(youBarTotalHeight[14]).t.rJRote);
+    const items2 = [outer1_8(_undefined(youBarTotalHeight[13]).Text, obj4), ];
+    const obj5 = { variant: "text-sm/medium", color: "text-subtle", style: _undefined.descriptionSpacing, children: null };
+    const intl5 = _undefined(youBarTotalHeight[14]).intl;
+    obj5[3] = intl5.string(_undefined(youBarTotalHeight[14]).t.pJT2DK);
+    items2[1] = outer1_8(_undefined(youBarTotalHeight[13]).Text, obj5);
+    obj3[1] = items2;
     items1[1] = outer1_9(outer1_5, obj3);
-    obj.children = items1;
+    obj[1] = items1;
     return outer1_9(outer1_5, obj);
   }, items2);
-  let obj1 = require(youBarTotalHeight[16]);
+  let obj1 = _require(youBarTotalHeight[16]);
   youBarTotalHeight = obj1.useYouBarTotalHeight();
   const items3 = [youBarTotalHeight];
   const memo1 = React.useMemo(() => ({ paddingHorizontal: visualVariant(youBarTotalHeight[6]).space.PX_16, paddingBottom: visualVariant(youBarTotalHeight[6]).space.PX_16 + youBarTotalHeight }), items3);
   if (0 === stateFromStoresArray.length) {
-    obj = {};
+    obj = { style: null, children: null };
     const items4 = [tmp.container, style];
-    obj.style = items4;
-    obj.children = callback(require(youBarTotalHeight[17]).GuildsEmptyContent, {});
-    let tmp21Result = callback(View, obj);
+    obj[0] = items4;
+    obj[1] = callback(tmp2(tmp3[17]).GuildsEmptyContent, {});
+    let tmp15Result = callback(View, obj);
   } else {
-    obj = {};
+    obj = { style: null, children: null };
     const items5 = [tmp.container, style];
-    obj.style = items5;
-    obj1 = { style: tmp.header };
-    let obj2 = { style: tmp.headerTitle, color: "mobile-text-heading-primary", variant: "heading-lg/bold" };
-    let intl = require(youBarTotalHeight[14]).intl;
-    obj2.children = intl.string(require(youBarTotalHeight[14]).t["7hB4kg"]);
-    obj1.children = callback(require(youBarTotalHeight[13]).Text, obj2);
+    obj[0] = items5;
+    obj1 = { style: null, children: null };
+    obj1[0] = tmp.header;
+    let obj2 = { style: null, color: "mobile-text-heading-primary", variant: "heading-lg/bold", children: null };
+    obj2[0] = tmp.headerTitle;
+    let intl = tmp2(tmp3[14]).intl;
+    obj2[3] = intl.string(tmp2(tmp3[14]).t["7hB4kg"]);
+    obj1[1] = callback(tmp2(tmp3[13]).Text, obj2);
     const items6 = [callback(View, obj1), ];
-    let obj3 = { style: tmp.listContainer };
-    let tmp11 = null;
+    let obj3 = { style: null, children: null };
+    obj3[0] = tmp.listContainer;
+    let tmp17Result = null;
     if ("one-column" === visualVariant) {
-      let obj4 = { suggestedGuilds: stateFromStoresArray, contentContainerStyle: memo1, onDismiss: callback, subheader: memo };
-      tmp11 = callback(require(youBarTotalHeight[18]).OneColumnGuildUpsellList, obj4);
+      let obj4 = { suggestedGuilds: null, contentContainerStyle: null, onDismiss: null, subheader: null };
+      obj4[0] = stateFromStoresArray;
+      obj4[1] = memo1;
+      obj4[2] = callback;
+      obj4[3] = memo;
+      tmp17Result = tmp17(tmp2(tmp3[18]).OneColumnGuildUpsellList, obj4);
     }
-    const items7 = [tmp11, ];
-    let tmp12 = null;
+    const items7 = [tmp17Result, ];
+    tmp17Result = null;
     if ("two-column" === visualVariant) {
-      let obj5 = { suggestedGuilds: stateFromStoresArray, contentContainerStyle: memo1, rowStyle: tmp.twoColumnRow, onDismiss: callback, subheader: memo };
-      tmp12 = callback(require(youBarTotalHeight[18]).TwoColumnGuildUpsellList, obj5);
+      let obj5 = { suggestedGuilds: null, contentContainerStyle: null, rowStyle: null, onDismiss: null, subheader: null };
+      obj5[0] = stateFromStoresArray;
+      obj5[1] = memo1;
+      obj5[2] = tmp.twoColumnRow;
+      obj5[3] = callback;
+      obj5[4] = memo;
+      tmp17Result = tmp17(tmp2(tmp3[18]).TwoColumnGuildUpsellList, obj5);
     }
-    items7[1] = tmp12;
-    obj3.children = items7;
+    items7[1] = tmp17Result;
+    obj3[1] = items7;
     items6[1] = closure_9(View, obj3);
-    obj.children = items6;
-    tmp21Result = tmp21(tmp22, obj);
+    obj[1] = items6;
+    tmp15Result = tmp15(tmp16, obj);
   }
-  return tmp21Result;
+  return tmp15Result;
 };

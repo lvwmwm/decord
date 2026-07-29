@@ -1,19 +1,22 @@
-// Module ID: 3823
-// Function ID: 29644
+// Module ID: 3847
+// Function ID: 3848
 // Name: getNonePlanIdForIntervalType
-// Dependencies: [1852, 2]
-// Exports: getBasePlanIdForSubscriptionItems, getNonePlanIdForSubscription
+// Dependencies: [1876, 2]
+// Exports: getBasePlanIdForSubscriptionItems, getBaseSubscriptionItemForSubscriptionItems, getNonePlanIdForIntervalType, getNonePlanIdForSubscription
 
-// Module 3823 (getNonePlanIdForIntervalType)
+// Module 3847 (getNonePlanIdForIntervalType)
 import GuildFeatures from "GuildFeatures";
 
-let closure_0;
+let c0;
 let closure_1;
-let closure_2;
-function getNonePlanIdForIntervalType(interval, intervalCount) {
-  let num = intervalCount;
-  const constants = interval;
-  if (intervalCount === undefined) {
+let obj1;
+({ SubscriptionPlans: c0, SubscriptionPlanInfo: closure_1, PremiumSubscriptionSKUs: obj1 } = GuildFeatures);
+const result = require("set").fileFinishedImporting("modules/premium/PremiumSubscription.tsx");
+
+export const getNonePlanIdForIntervalType = function getNonePlanIdForIntervalType(arg0) {
+  const constants = arg0;
+  let num = arg1;
+  if (arg1 === undefined) {
     num = 1;
   }
   const keys = Object.keys(num);
@@ -23,37 +26,76 @@ function getNonePlanIdForIntervalType(interval, intervalCount) {
       tmp2 = tmp.skuId === outer1_2.NONE;
     }
     if (tmp2) {
-      tmp2 = tmp.interval === closure_0;
+      tmp2 = tmp.interval === interval;
     }
     if (tmp2) {
-      tmp2 = tmp.intervalCount === num;
+      tmp2 = tmp.intervalCount === intervalCount;
     }
     return tmp2;
   });
-  if (null == NONE_MONTH) {
+  if (NONE_MONTH == null) {
     NONE_MONTH = constants.NONE_MONTH;
   }
   return NONE_MONTH;
-}
-function getBaseSubscriptionItemForSubscriptionItems(arr) {
-  return arr.find((arg0) => null != outer1_1[arg0.planId] && null != outer1_1[arg0.planId].premiumType);
-}
-({ SubscriptionPlans: closure_0, SubscriptionPlanInfo: closure_1, PremiumSubscriptionSKUs: closure_2 } = GuildFeatures);
-const result = require("set").fileFinishedImporting("modules/premium/PremiumSubscription.tsx");
-
-export { getNonePlanIdForIntervalType };
-export const getNonePlanIdForSubscription = function getNonePlanIdForSubscription(arg0) {
-  return getNonePlanIdForIntervalType(dependencyMap[arg0.items[0].planId].interval, dependencyMap[arg0.items[0].planId].intervalCount);
 };
-export { getBaseSubscriptionItemForSubscriptionItems };
-export const getBasePlanIdForSubscriptionItems = function getBasePlanIdForSubscriptionItems(items, interval, intervalCount) {
-  const tmp = getBaseSubscriptionItemForSubscriptionItems(items);
-  if (null == tmp) {
-    if (items.length > 0) {
-      ({ interval, intervalCount } = dependencyMap[items[0].planId]);
+export const getNonePlanIdForSubscription = function getNonePlanIdForSubscription(arg0) {
+  let num = tmp2.intervalCount;
+  num = undefined;
+  const interval = tmp2.interval;
+  if (num === undefined) {
+    num = 1;
+  }
+  const keys = Object.keys(num);
+  let NONE_MONTH = keys.find((arg0) => {
+    let tmp2 = null != tmp;
+    if (tmp2) {
+      tmp2 = tmp.skuId === outer1_2.NONE;
     }
-    return getNonePlanIdForIntervalType(interval, intervalCount);
+    if (tmp2) {
+      tmp2 = tmp.interval === interval;
+    }
+    if (tmp2) {
+      tmp2 = tmp.intervalCount === intervalCount;
+    }
+    return tmp2;
+  });
+  if (NONE_MONTH == null) {
+    NONE_MONTH = interval.NONE_MONTH;
+  }
+  return NONE_MONTH;
+};
+export const getBaseSubscriptionItemForSubscriptionItems = function getBaseSubscriptionItemForSubscriptionItems(arr) {
+  return arr.find((arg0) => null != intervalCount[arg0.planId] && null != intervalCount[arg0.planId].premiumType);
+};
+export const getBasePlanIdForSubscriptionItems = function getBasePlanIdForSubscriptionItems(items, interval, intervalCount) {
+  const found = items.find((arg0) => null != intervalCount[arg0.planId] && null != intervalCount[arg0.planId].premiumType);
+  if (null == found) {
+    if (items.length > 0) {
+      ({ interval, intervalCount } = intervalCount[items[0].planId]);
+    }
+    if (intervalCount === undefined) {
+      intervalCount = 1;
+    }
+    const _Object = Object;
+    const keys = Object.keys(intervalCount);
+    let NONE_MONTH = keys.find((arg0) => {
+      let tmp2 = null != tmp;
+      if (tmp2) {
+        tmp2 = tmp.skuId === outer1_2.NONE;
+      }
+      if (tmp2) {
+        tmp2 = tmp.interval === interval;
+      }
+      if (tmp2) {
+        tmp2 = tmp.intervalCount === intervalCount;
+      }
+      return tmp2;
+    });
+    if (NONE_MONTH == null) {
+      NONE_MONTH = interval.NONE_MONTH;
+    }
+    return NONE_MONTH;
   } else {
-    return tmp.planId;
+    return found.planId;
   }
 };

@@ -1,11 +1,10 @@
 // Module ID: 11784
-// Function ID: 91375
+// Function ID: 11785
 // Name: registerAsset
-// Dependencies: [1217]
+// Dependencies: [1241]
 
 // Module 11784 (registerAsset)
 import registerAsset from "registerAsset";
 
-const obj = { __packager_asset: true, httpServerLocation: "/assets/modules/create_guild/native/images", width: 161, height: 105, scales: [1, 2, 3], hash: "15df55e98006c5e50dacb86d466b47d8", name: "invite-wumpus-ticket", type: "png" };
 
-export default registerAsset.registerAsset(obj);
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/contact_sync/native/images", width: 215.5, height: 135, scales: [2, 3], hash: "fad7ba73a3f13e1d6de72f833c30efc1", name: "header-art-onboarding", type: "png" });

@@ -1,17 +1,17 @@
-// Module ID: 6697
-// Function ID: 59019
+// Module ID: 6718
+// Function ID: 6719
 // Name: RowType
-// Dependencies: [653, 1212, 6698, 1921, 6699, 2]
+// Dependencies: [676, 1236, 6719, 1945, 6720, 2]
 // Exports: getChannelPermissionSpecMap
 
-// Module 6697 (RowType)
+// Module 6718 (RowType)
 import ME from "ME";
 
-let closure_3;
-let closure_4;
-let closure_5;
+let c3;
+let c4;
+let c5;
 let closure_6;
-({ ChannelTypes: closure_3, ChannelTypesSets: closure_4, HelpdeskArticles: closure_5, Permissions: closure_6 } = ME);
+({ ChannelTypes: c3, ChannelTypesSets: c4, HelpdeskArticles: c5, Permissions: closure_6 } = ME);
 const result = require("getSystemLocale").fileFinishedImporting("modules/channel_permissions/ChannelPermissionsConstants.tsx");
 
 export const RowType = { EMPTY_STATE: 0, [0]: "EMPTY_STATE", ADMINISTRATOR: 1, [1]: "ADMINISTRATOR", ROLE: 2, [2]: "ROLE", OWNER: 3, [3]: "OWNER", MEMBER: 4, [4]: "MEMBER", USER: 5, [5]: "USER", GUILD: 6, [6]: "GUILD" };
@@ -21,1058 +21,786 @@ export const ADVANCED_MODE_ON_KEY = "channelPermissionSettingsAdvancedModeOn";
 export const TrackExposureLocations = { SETTINGS_PAGE: "settings-page", MEMBERS_LIST: "members-list", EMPTY_STATE: "empty-state", CREATE_CHANNEL: "create-channel" };
 export const SettingMode = { BASIC: "basic", ADVANCED: "advanced" };
 export const getChannelPermissionSpecMap = function getChannelPermissionSpecMap(type, arg1, createPostsDisabled) {
+  let MANAGE_CHANNELS;
   type = type.type;
-  let obj = {};
+  const tmp = constants4;
   let str = constants4.VIEW_CHANNEL;
-  obj = {};
+  const tmp3 = constants;
   str = str.toString();
   if (type === constants.GUILD_CATEGORY) {
-    const intl2 = require(1212) /* getSystemLocale */.intl;
-    let stringResult = intl2.string(require(1212) /* getSystemLocale */.t.uV83yi);
+    const intl2 = require(1236) /* getSystemLocale */.intl;
+    let stringResult = intl2.string(require(1236) /* getSystemLocale */.t.uV83yi);
+    let tmp8 = require;
+    let tmp10 = require;
   } else {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    stringResult = intl.string(require(1212) /* getSystemLocale */.t["W/A4Qp"]);
+    const intl = require(1236) /* getSystemLocale */.intl;
+    stringResult = intl.string(require(1236) /* getSystemLocale */.t["W/A4Qp"]);
+    tmp8 = require;
+    tmp10 = require;
   }
-  obj.title = stringResult;
-  const GUILD_CATEGORY = constants.GUILD_CATEGORY;
+  let obj = { title: stringResult, description: null, flag: null };
+  const GUILD_CATEGORY = tmp3.GUILD_CATEGORY;
   if (arg1) {
     if (GUILD_CATEGORY === type) {
-      let M2iEy3 = require(1212) /* getSystemLocale */.t["o/vBzj"];
+      let M2iEy3 = tmp8(1236).t["o/vBzj"];
     } else {
-      if (constants.GUILD_VOICE !== type) {
-        if (constants.GUILD_STAGE_VOICE !== type) {
-          M2iEy3 = require(1212) /* getSystemLocale */.t["3jG0Bo"];
+      if (tmp3.GUILD_VOICE !== type) {
+        if (tmp3.GUILD_STAGE_VOICE !== type) {
+          M2iEy3 = tmp8(1236).t["3jG0Bo"];
         }
       }
-      M2iEy3 = require(1212) /* getSystemLocale */.t.ejL1Wo;
+      M2iEy3 = tmp8(1236).t.ejL1Wo;
     }
   } else if (type === GUILD_CATEGORY) {
-    M2iEy3 = require(1212) /* getSystemLocale */.t.SzosGs;
+    M2iEy3 = tmp8(1236).t.SzosGs;
   } else {
-    M2iEy3 = require(1212) /* getSystemLocale */.t.M2iEy3;
+    M2iEy3 = tmp8(1236).t.M2iEy3;
   }
-  obj.description = M2iEy3;
-  obj.flag = constants4.VIEW_CHANNEL;
-  obj[str] = obj;
-  let str2 = constants4.MANAGE_CHANNELS;
-  obj = {};
-  if (type === constants.GUILD_CATEGORY) {
-    const intl4 = require(1212) /* getSystemLocale */.intl;
-    let stringResult1 = intl4.string(require(1212) /* getSystemLocale */.t["9qLtWs"]);
+  obj = { [str]: obj };
+  obj[1] = M2iEy3;
+  ({ VIEW_CHANNEL: obj[2], MANAGE_CHANNELS } = tmp);
+  if (type === tmp3.GUILD_CATEGORY) {
+    const intl4 = tmp10(1236).intl;
+    let stringResult1 = intl4.string(tmp10(1236).t["9qLtWs"]);
   } else {
-    const intl3 = require(1212) /* getSystemLocale */.intl;
-    stringResult1 = intl3.string(require(1212) /* getSystemLocale */.t.nAw15L);
+    const intl3 = tmp10(1236).intl;
+    stringResult1 = intl3.string(tmp10(1236).t.nAw15L);
   }
-  obj.title = stringResult1;
-  if (constants.GUILD_CATEGORY === type) {
-    let ydL28i = require(1212) /* getSystemLocale */.t.KJ2JnG;
+  obj = { title: stringResult1, description: null, flag: null };
+  if (tmp3.GUILD_CATEGORY === type) {
+    let ydL28i = tmp8(1236).t.KJ2JnG;
+  } else if (tmp3.GUILD_VOICE === type) {
+    ydL28i = tmp8(1236).t["+gl2ne"];
+  } else if (tmp3.GUILD_STAGE_VOICE === type) {
+    ydL28i = tmp8(1236).t.SDX669;
   } else {
-    str = constants;
-    if (constants.GUILD_VOICE === type) {
-      ydL28i = require(1212) /* getSystemLocale */.t["+gl2ne"];
-    } else if (constants.GUILD_STAGE_VOICE === type) {
-      ydL28i = require(1212) /* getSystemLocale */.t.SDX669;
-    } else {
-      ydL28i = require(1212) /* getSystemLocale */.t.ydL28i;
-    }
+    ydL28i = tmp8(1236).t.ydL28i;
   }
-  obj.description = ydL28i;
-  obj.flag = constants4.MANAGE_CHANNELS;
-  obj[str2.toString()] = obj;
-  let str3 = constants4.MANAGE_ROLES;
-  const obj1 = {};
-  str2 = str3.toString();
-  const intl5 = require(1212) /* getSystemLocale */.intl;
-  obj1.title = intl5.string(require(1212) /* getSystemLocale */.t.ICb6am);
-  if (constants.GUILD_CATEGORY === type) {
-    let hOMXOv = require(1212) /* getSystemLocale */.t.TyyCMD;
-  } else if (constants.GUILD_STAGE_VOICE === type) {
-    hOMXOv = require(1212) /* getSystemLocale */.t.hcw4mx;
+  obj[1] = ydL28i;
+  obj[2] = tmp.MANAGE_CHANNELS;
+  obj[MANAGE_CHANNELS.toString()] = obj;
+  let str2 = tmp.MANAGE_ROLES;
+  const obj1 = { title: null, description: null, flag: null };
+  str2 = str2.toString();
+  const intl5 = tmp10(1236).intl;
+  obj1[0] = intl5.string(tmp10(1236).t.ICb6am);
+  if (tmp3.GUILD_CATEGORY === type) {
+    let hOMXOv = tmp8(1236).t.TyyCMD;
+  } else if (tmp3.GUILD_STAGE_VOICE === type) {
+    hOMXOv = tmp8(1236).t.hcw4mx;
   } else {
-    hOMXOv = require(1212) /* getSystemLocale */.t.hOMXOv;
+    hOMXOv = tmp8(1236).t.hOMXOv;
   }
-  obj1.description = hOMXOv;
-  obj1.flag = constants4.MANAGE_ROLES;
+  obj1[1] = hOMXOv;
+  obj1[2] = tmp.MANAGE_ROLES;
   obj[str2] = obj1;
-  let str4 = tmp34.MANAGE_WEBHOOKS;
-  const obj2 = {};
-  str3 = str4.toString();
-  const intl6 = tmp36(1212).intl;
-  obj2.title = intl6.string(require(1212) /* getSystemLocale */.t["/ADKmM"]);
-  if (type === constants.GUILD_CATEGORY) {
-    let CYBZry = require(1212) /* getSystemLocale */.t["K5+ZZ7"];
+  let str3 = tmp.MANAGE_WEBHOOKS;
+  const obj2 = { title: null, description: null, flag: null };
+  str3 = str3.toString();
+  const intl6 = tmp10(1236).intl;
+  obj2[0] = intl6.string(tmp10(1236).t["/ADKmM"]);
+  if (type === tmp3.GUILD_CATEGORY) {
+    let CYBZry = tmp10(1236).t["K5+ZZ7"];
   } else {
-    CYBZry = require(1212) /* getSystemLocale */.t.CYBZry;
+    CYBZry = tmp10(1236).t.CYBZry;
   }
-  obj2.description = CYBZry;
-  obj2.flag = constants4.MANAGE_WEBHOOKS;
+  obj2[1] = CYBZry;
+  obj2[2] = tmp.MANAGE_WEBHOOKS;
   obj[str3] = obj2;
-  let str5 = constants4.CREATE_INSTANT_INVITE;
-  const obj3 = {};
-  str4 = str5.toString();
-  const intl7 = require(1212) /* getSystemLocale */.intl;
-  obj3.title = intl7.string(require(1212) /* getSystemLocale */.t.zJrgTG);
-  if (constants.GUILD_CATEGORY === type) {
-    let lUCs1n = require(1212) /* getSystemLocale */.t["3YFAAX"];
+  let str4 = tmp.CREATE_INSTANT_INVITE;
+  const obj3 = { title: null, description: null, flag: null };
+  str4 = str4.toString();
+  const intl7 = tmp10(1236).intl;
+  obj3[0] = intl7.string(tmp10(1236).t.zJrgTG);
+  if (tmp3.GUILD_CATEGORY === type) {
+    let lUCs1n = tmp8(1236).t["3YFAAX"];
   } else {
-    if (constants.GUILD_VOICE !== type) {
-      if (constants.GUILD_STAGE_VOICE !== type) {
-        lUCs1n = require(1212) /* getSystemLocale */.t.q4g2aI;
+    if (tmp3.GUILD_VOICE !== type) {
+      if (tmp3.GUILD_STAGE_VOICE !== type) {
+        lUCs1n = tmp8(1236).t.q4g2aI;
       }
     }
-    lUCs1n = require(1212) /* getSystemLocale */.t.lUCs1n;
+    lUCs1n = tmp8(1236).t.lUCs1n;
   }
-  obj3.description = lUCs1n;
-  obj3.flag = constants4.CREATE_INSTANT_INVITE;
+  obj3[1] = lUCs1n;
+  obj3[2] = tmp.CREATE_INSTANT_INVITE;
   obj[str4] = obj3;
-  let str6 = tmp50.SEND_MESSAGES;
-  const obj4 = {};
+  let str5 = tmp.SEND_MESSAGES;
   const GUILD_THREADS_ONLY = constants2.GUILD_THREADS_ONLY;
-  str5 = str6.toString();
+  str5 = str5.toString();
   if (GUILD_THREADS_ONLY.has(type)) {
-    const intl10 = require(1212) /* getSystemLocale */.intl;
-    let stringResult2 = intl10.string(require(1212) /* getSystemLocale */.t.nJwAHX);
-  } else if (type === constants.GUILD_CATEGORY) {
-    const intl9 = require(1212) /* getSystemLocale */.intl;
-    stringResult2 = intl9.string(require(1212) /* getSystemLocale */.t.S1VOwd);
+    const intl10 = tmp10(1236).intl;
+    let stringResult2 = intl10.string(tmp10(1236).t.nJwAHX);
+  } else if (type === tmp3.GUILD_CATEGORY) {
+    const intl9 = tmp10(1236).intl;
+    stringResult2 = intl9.string(tmp10(1236).t.S1VOwd);
   } else {
-    const intl8 = require(1212) /* getSystemLocale */.intl;
-    stringResult2 = intl8.string(require(1212) /* getSystemLocale */.t.T32rkC);
+    const intl8 = tmp10(1236).intl;
+    stringResult2 = intl8.string(tmp10(1236).t.T32rkC);
   }
-  obj4.title = stringResult2;
-  if (constants.GUILD_CATEGORY === type) {
-    let WQ6zpT = require(1212) /* getSystemLocale */.t.IjeLuu;
-  } else {
-    str = constants;
-    if (constants.GUILD_FORUM === type) {
-      if (null != createPostsDisabled) {
-        if (createPostsDisabled.createPostsDisabled) {
-          if (!type.isMediaChannel()) {
-            let obj10 = importDefault(6698);
-            let LG9VAi = obj10.getForumChannelPermissionText();
-          }
-          WQ6zpT = LG9VAi;
-        }
-      }
-      LG9VAi = require(1212) /* getSystemLocale */.t.LG9VAi;
-    } else {
-      str = constants;
-      if (constants.GUILD_MEDIA === type) {
-        WQ6zpT = require(1212) /* getSystemLocale */.t.LG9VAi;
-      } else {
-        str = constants;
-        if (constants.GUILD_ANNOUNCEMENT === type) {
-          const intl11 = require(1212) /* getSystemLocale */.intl;
-          const obj5 = {};
-          let obj9 = importDefault(1921);
-          obj5.articleURL = obj9.getArticleURL(constants3.ANNOUNCEMENT_CHANNELS);
-          WQ6zpT = intl11.format(require(1212) /* getSystemLocale */.t.WFwfSD, obj5);
-        } else if (constants.GUILD_VOICE === type) {
-          let obj7 = importDefault(6699);
-          let sendMessagesDisabled;
-          if (null != createPostsDisabled) {
-            sendMessagesDisabled = createPostsDisabled.sendMessagesDisabled;
-          }
-          WQ6zpT = obj7.getTextInVoiceSendMessageChannelPermissionText(sendMessagesDisabled);
-        } else {
-          WQ6zpT = require(1212) /* getSystemLocale */.t.WQ6zpT;
-        }
-      }
+  const obj4 = { title: stringResult2, description: null, flag: null };
+  if (tmp3.GUILD_CATEGORY === type) {
+    let WQ6zpT = tmp8(1236).t.IjeLuu;
+  } else if (tmp3.GUILD_FORUM === type) {
+    createPostsDisabled = undefined;
+    if (createPostsDisabled != null) {
+      createPostsDisabled = createPostsDisabled.createPostsDisabled;
     }
+    if (createPostsDisabled) {
+      if (!type.isMediaChannel()) {
+        let obj10 = importDefault(6719);
+        let LG9VAi = obj10.getForumChannelPermissionText();
+      }
+      WQ6zpT = LG9VAi;
+    }
+    LG9VAi = tmp8(1236).t.LG9VAi;
+  } else if (tmp3.GUILD_MEDIA === type) {
+    WQ6zpT = tmp8(1236).t.LG9VAi;
+  } else if (tmp3.GUILD_ANNOUNCEMENT === type) {
+    const intl11 = tmp8(1236).intl;
+    const obj5 = { articleURL: null };
+    let obj9 = importDefault(1945);
+    obj5[0] = obj9.getArticleURL(constants3.ANNOUNCEMENT_CHANNELS);
+    WQ6zpT = intl11.format(tmp8(1236).t.WFwfSD, obj5);
+  } else if (tmp3.GUILD_VOICE === type) {
+    let obj7 = importDefault(6720);
+    let sendMessagesDisabled;
+    if (createPostsDisabled != null) {
+      sendMessagesDisabled = createPostsDisabled.sendMessagesDisabled;
+    }
+    WQ6zpT = obj7.getTextInVoiceSendMessageChannelPermissionText(sendMessagesDisabled);
+  } else {
+    WQ6zpT = tmp8(1236).t.WQ6zpT;
   }
-  obj4.description = WQ6zpT;
-  obj4.flag = constants4.SEND_MESSAGES;
+  obj4[1] = WQ6zpT;
+  obj4[2] = tmp.SEND_MESSAGES;
   obj[str5] = obj4;
-  let str7 = constants4.EMBED_LINKS;
-  const obj6 = {};
-  str6 = str7.toString();
-  const intl12 = require(1212) /* getSystemLocale */.intl;
-  obj6.title = intl12.string(require(1212) /* getSystemLocale */.t["969dEL"]);
-  if (type === constants.GUILD_CATEGORY) {
-    let XFFhA0 = require(1212) /* getSystemLocale */.t["7zlUay"];
+  let str6 = tmp.EMBED_LINKS;
+  const obj6 = { title: null, description: null, flag: null };
+  str6 = str6.toString();
+  const intl12 = tmp10(1236).intl;
+  obj6[0] = intl12.string(tmp10(1236).t["969dEL"]);
+  if (type === tmp3.GUILD_CATEGORY) {
+    let XFFhA0 = tmp10(1236).t["7zlUay"];
   } else {
-    XFFhA0 = require(1212) /* getSystemLocale */.t.XFFhA0;
+    XFFhA0 = tmp10(1236).t.XFFhA0;
   }
-  obj6.description = XFFhA0;
-  obj6.flag = constants4.EMBED_LINKS;
+  obj6[1] = XFFhA0;
+  obj6[2] = tmp.EMBED_LINKS;
   obj[str6] = obj6;
-  obj7 = {};
-  str7 = constants4.ATTACH_FILES.toString();
-  const intl13 = require(1212) /* getSystemLocale */.intl;
-  obj7.title = intl13.string(require(1212) /* getSystemLocale */.t["3AS4UM"]);
-  if (type === constants.GUILD_CATEGORY) {
-    let WK9r7F = require(1212) /* getSystemLocale */.t.XREf9l;
+  let str7 = tmp.ATTACH_FILES;
+  obj7 = { title: null, description: null, flag: null };
+  str7 = str7.toString();
+  const intl13 = tmp10(1236).intl;
+  obj7[0] = intl13.string(tmp10(1236).t["3AS4UM"]);
+  if (type === tmp3.GUILD_CATEGORY) {
+    let WK9r7F = tmp10(1236).t.XREf9l;
   } else {
-    WK9r7F = require(1212) /* getSystemLocale */.t.WK9r7F;
+    WK9r7F = tmp10(1236).t.WK9r7F;
   }
-  obj7.description = WK9r7F;
-  obj7.flag = constants4.ATTACH_FILES;
+  obj7[1] = WK9r7F;
+  obj7[2] = tmp.ATTACH_FILES;
   obj[str7] = obj7;
-  const obj8 = {};
-  str = require;
-  str = dependencyMap;
-  str = constants4.ADD_REACTIONS.toString();
-  const intl14 = require(1212) /* getSystemLocale */.intl;
-  obj8.title = intl14.string(require(1212) /* getSystemLocale */.t.yEoJAr);
-  if (constants.GUILD_CATEGORY === type) {
-    str = require;
-    str = dependencyMap;
-    let PVjR1Y = require(1212) /* getSystemLocale */.t.pZT2Zh;
+  let str8 = tmp.ADD_REACTIONS;
+  const obj8 = { title: null, description: null, flag: null };
+  str8 = str8.toString();
+  const intl14 = tmp10(1236).intl;
+  obj8[0] = intl14.string(tmp10(1236).t.yEoJAr);
+  if (tmp3.GUILD_CATEGORY === type) {
+    let PVjR1Y = tmp8(1236).t.pZT2Zh;
+  } else if (tmp3.GUILD_VOICE === type) {
+    PVjR1Y = tmp8(1236).t.xSSbIs;
   } else {
-    str = constants;
-    if (constants.GUILD_VOICE === type) {
-      str = require;
-      str = dependencyMap;
-      PVjR1Y = require(1212) /* getSystemLocale */.t.xSSbIs;
-    } else {
-      str = require;
-      str = dependencyMap;
-      PVjR1Y = require(1212) /* getSystemLocale */.t.PVjR1Y;
-    }
+    PVjR1Y = tmp8(1236).t.PVjR1Y;
   }
-  obj8.description = PVjR1Y;
-  obj8.flag = constants4.ADD_REACTIONS;
-  obj[str] = obj8;
-  obj9 = {};
-  str = constants4.USE_EXTERNAL_EMOJIS.toString();
-  const intl15 = str(1212).intl;
-  obj9.title = intl15.string(str(1212).t["+bxf3H"]);
-  if (type === constants.GUILD_CATEGORY) {
-    str = require;
-    str = dependencyMap;
-    let Qc5vOr = require(1212) /* getSystemLocale */.t.mWAbK4;
+  obj8[1] = PVjR1Y;
+  obj8[2] = tmp.ADD_REACTIONS;
+  obj[str8] = obj8;
+  let str9 = tmp.USE_EXTERNAL_EMOJIS;
+  obj9 = { title: null, description: null, flag: null };
+  str9 = str9.toString();
+  const intl15 = tmp10(1236).intl;
+  obj9[0] = intl15.string(tmp10(1236).t["+bxf3H"]);
+  if (type === tmp3.GUILD_CATEGORY) {
+    let Qc5vOr = tmp10(1236).t.mWAbK4;
   } else {
-    str = require;
-    str = dependencyMap;
-    Qc5vOr = require(1212) /* getSystemLocale */.t.Qc5vOr;
+    Qc5vOr = tmp10(1236).t.Qc5vOr;
   }
-  obj9.description = Qc5vOr;
-  obj9.flag = constants4.USE_EXTERNAL_EMOJIS;
-  obj[str] = obj9;
-  obj10 = {};
-  str = constants4.USE_EXTERNAL_STICKERS.toString();
-  const intl16 = require(1212) /* getSystemLocale */.intl;
-  obj10.title = intl16.string(require(1212) /* getSystemLocale */.t.ERNhYf);
-  if (type === constants.GUILD_CATEGORY) {
-    str = require;
-    str = dependencyMap;
-    let VF4fZZ = require(1212) /* getSystemLocale */.t["39whJ4"];
+  obj9[1] = Qc5vOr;
+  obj9[2] = tmp.USE_EXTERNAL_EMOJIS;
+  obj[str9] = obj9;
+  let str10 = tmp.USE_EXTERNAL_STICKERS;
+  obj10 = { title: null, description: null, flag: null };
+  str10 = str10.toString();
+  const intl16 = tmp10(1236).intl;
+  obj10[0] = intl16.string(tmp10(1236).t.ERNhYf);
+  if (type === tmp3.GUILD_CATEGORY) {
+    let VF4fZZ = tmp10(1236).t["39whJ4"];
   } else {
-    str = require;
-    str = dependencyMap;
-    VF4fZZ = require(1212) /* getSystemLocale */.t.VF4fZZ;
+    VF4fZZ = tmp10(1236).t.VF4fZZ;
   }
-  obj10.description = VF4fZZ;
-  obj10.flag = constants4.USE_EXTERNAL_STICKERS;
-  obj[str] = obj10;
-  const obj11 = {};
-  str = constants4.MENTION_EVERYONE.toString();
-  if (type === constants.GUILD_STAGE_VOICE) {
-    str = require;
-    str = dependencyMap;
-    const intl18 = require(1212) /* getSystemLocale */.intl;
-    str = intl18.string(require(1212) /* getSystemLocale */.t.VDUAHO);
+  obj10[1] = VF4fZZ;
+  obj10[2] = tmp.USE_EXTERNAL_STICKERS;
+  obj[str10] = obj10;
+  let str11 = tmp.MENTION_EVERYONE;
+  str11 = str11.toString();
+  if (type === tmp3.GUILD_STAGE_VOICE) {
+    const intl18 = tmp10(1236).intl;
+    let stringResult3 = intl18.string(tmp10(1236).t.VDUAHO);
   } else {
-    str = require;
-    str = dependencyMap;
-    const intl17 = require(1212) /* getSystemLocale */.intl;
-    str = intl17.string(require(1212) /* getSystemLocale */.t.Y78KGC);
+    const intl17 = tmp10(1236).intl;
+    stringResult3 = intl17.string(tmp10(1236).t.Y78KGC);
   }
-  obj11.title = str;
-  if (type === constants.GUILD_CATEGORY) {
-    str = require;
-    str = dependencyMap;
+  const obj11 = { title: stringResult3, description: null, flag: null };
+  if (type === tmp3.GUILD_CATEGORY) {
+  } else if (type === tmp3.GUILD_STAGE_VOICE) {
   } else {
-    str = constants;
-    if (type === constants.GUILD_STAGE_VOICE) {
-      str = require;
-      str = dependencyMap;
-    } else {
-      str = require;
-      str = dependencyMap;
-    }
   }
-  obj11.description = _6IUSdt;
-  str = constants4;
-  obj11.flag = constants4.MENTION_EVERYONE;
-  obj[str] = obj11;
-  const obj12 = {};
-  str = require;
-  str = dependencyMap;
-  str = constants4.MANAGE_MESSAGES.toString();
-  const intl19 = require(1212) /* getSystemLocale */.intl;
-  obj12.title = intl19.string(require(1212) /* getSystemLocale */.t["6lU9xM"]);
-  if (constants.GUILD_CATEGORY === type) {
-    str = require;
-    str = dependencyMap;
-    SeA_G9 = require(1212) /* getSystemLocale */.t["5R9nYh"];
+  obj11[1] = _6IUSdt;
+  obj11[2] = tmp.MENTION_EVERYONE;
+  obj[str11] = obj11;
+  let str12 = tmp.MANAGE_MESSAGES;
+  const obj12 = { title: null, description: null, flag: null };
+  str12 = str12.toString();
+  const intl19 = tmp10(1236).intl;
+  obj12[0] = intl19.string(tmp10(1236).t["6lU9xM"]);
+  if (tmp3.GUILD_CATEGORY === type) {
+    SeA_G9 = tmp8(1236).t["5R9nYh"];
+  } else if (tmp3.GUILD_ANNOUNCEMENT === type) {
+    const intl20 = tmp8(1236).intl;
+    const obj13 = { articleURL: null };
+    let obj19 = importDefault(1945);
+    obj13[0] = obj19.getArticleURL(constants3.ANNOUNCEMENT_CHANNELS);
+    SeA_G9 = intl20.format(tmp8(1236).t.XRxOo0, obj13);
   } else {
-    str = constants;
-    if (constants.GUILD_ANNOUNCEMENT === type) {
-      str = require;
-      str = dependencyMap;
-      const intl20 = require(1212) /* getSystemLocale */.intl;
-      const obj13 = {};
-      str = importDefault;
-      let obj19 = importDefault(1921);
-      str = constants3;
-      obj13.articleURL = obj19.getArticleURL(constants3.ANNOUNCEMENT_CHANNELS);
-      SeA_G9 = intl20.format(require(1212) /* getSystemLocale */.t.XRxOo0, obj13);
-    } else {
-      str = require;
-      str = dependencyMap;
-      SeA_G9 = require(1212) /* getSystemLocale */.t["SeA+G9"];
-    }
+    SeA_G9 = tmp8(1236).t["SeA+G9"];
   }
-  obj12.description = SeA_G9;
-  obj12.flag = str.MANAGE_MESSAGES;
-  obj[str] = obj12;
-  const obj14 = {};
-  str = str.PIN_MESSAGES.toString();
-  const intl21 = str(1212).intl;
-  obj14.title = intl21.string(str(1212).t.Y5BI39);
-  if (type === constants.GUILD_CATEGORY) {
-    str = require;
-    str = dependencyMap;
+  obj12[1] = SeA_G9;
+  obj12[2] = tmp.MANAGE_MESSAGES;
+  obj[str12] = obj12;
+  let str13 = tmp.PIN_MESSAGES;
+  const obj14 = { title: null, description: null, flag: null };
+  str13 = str13.toString();
+  const intl21 = tmp10(1236).intl;
+  obj14[0] = intl21.string(tmp10(1236).t.Y5BI39);
+  if (type === tmp3.GUILD_CATEGORY) {
   } else {
-    str = require;
-    str = dependencyMap;
   }
-  obj14.description = _0l2EjL;
-  obj14.flag = constants4.PIN_MESSAGES;
-  obj[str] = obj14;
-  const obj15 = {};
-  str = constants4.BYPASS_SLOWMODE.toString();
-  const intl22 = require(1212) /* getSystemLocale */.intl;
-  obj15.title = intl22.string(require(1212) /* getSystemLocale */.t.kqcjeV);
-  if (type === constants.GUILD_CATEGORY) {
-    str = require;
-    str = dependencyMap;
-    let Ha1xbw = require(1212) /* getSystemLocale */.t.C4t1Xu;
+  obj14[1] = _0l2EjL;
+  obj14[2] = tmp.PIN_MESSAGES;
+  obj[str13] = obj14;
+  let str14 = tmp.BYPASS_SLOWMODE;
+  const obj15 = { title: null, description: null, flag: null };
+  str14 = str14.toString();
+  const intl22 = tmp10(1236).intl;
+  obj15[0] = intl22.string(tmp10(1236).t.kqcjeV);
+  if (type === tmp3.GUILD_CATEGORY) {
+    let Ha1xbw = tmp10(1236).t.C4t1Xu;
   } else {
-    str = require;
-    str = dependencyMap;
-    Ha1xbw = require(1212) /* getSystemLocale */.t.Ha1xbw;
+    Ha1xbw = tmp10(1236).t.Ha1xbw;
   }
-  obj15.description = Ha1xbw;
-  obj15.flag = constants4.BYPASS_SLOWMODE;
-  obj[str] = obj15;
-  const obj16 = {};
-  str = constants4.MANAGE_OFFICIAL_MESSAGES.toString();
-  const intl23 = require(1212) /* getSystemLocale */.intl;
-  obj16.title = intl23.string(require(1212) /* getSystemLocale */.t.Aj9ruN);
-  if (type === constants.GUILD_CATEGORY) {
-    str = require;
-    str = dependencyMap;
-    let qEbw4W = require(1212) /* getSystemLocale */.t["Pf0e/Q"];
+  obj15[1] = Ha1xbw;
+  obj15[2] = tmp.BYPASS_SLOWMODE;
+  obj[str14] = obj15;
+  let str15 = tmp.MANAGE_OFFICIAL_MESSAGES;
+  const obj16 = { title: null, description: null, flag: null };
+  str15 = str15.toString();
+  const intl23 = tmp10(1236).intl;
+  obj16[0] = intl23.string(tmp10(1236).t.Aj9ruN);
+  if (type === tmp3.GUILD_CATEGORY) {
+    let qEbw4W = tmp10(1236).t["Pf0e/Q"];
   } else {
-    str = require;
-    str = dependencyMap;
-    qEbw4W = require(1212) /* getSystemLocale */.t.qEbw4W;
+    qEbw4W = tmp10(1236).t.qEbw4W;
   }
-  obj16.description = qEbw4W;
-  obj16.flag = constants4.MANAGE_OFFICIAL_MESSAGES;
-  obj[str] = obj16;
-  const obj17 = {};
-  const GUILD_THREADS_ONLY2 = constants2.GUILD_THREADS_ONLY;
-  str = constants4.READ_MESSAGE_HISTORY.toString();
-  str = GUILD_THREADS_ONLY2.has(type);
-  const intl24 = require(1212) /* getSystemLocale */.intl;
+  obj16[1] = qEbw4W;
+  obj16[2] = tmp.MANAGE_OFFICIAL_MESSAGES;
+  obj[str15] = obj16;
+  let str16 = tmp.READ_MESSAGE_HISTORY;
+  const GUILD_THREADS_ONLY2 = tmp19.GUILD_THREADS_ONLY;
+  str16 = str16.toString();
+  const hasItem = GUILD_THREADS_ONLY2.has(type);
+  const intl24 = tmp10(1236).intl;
   const string = intl24.string;
-  const t = require(1212) /* getSystemLocale */.t;
-  if (str) {
-    str = string(t["0RQwtn"]);
+  const t = tmp10(1236).t;
+  if (hasItem) {
+    let stringResult4 = string(t["0RQwtn"]);
   } else {
-    str = string(t.l9ufaR);
+    stringResult4 = string(t.l9ufaR);
   }
-  obj17.title = str;
-  if (constants.GUILD_CATEGORY === type) {
-    str = require;
-    str = dependencyMap;
-    let RqCc7i = require(1212) /* getSystemLocale */.t["cJRv/g"];
-  } else {
-    str = constants;
-    if (constants.GUILD_VOICE === type) {
-      str = importDefault;
-      str = dependencyMap;
-      let obj24 = importDefault(6699);
-      str = null;
-      str = undefined;
-      if (null != createPostsDisabled) {
-        str = createPostsDisabled.readMessageHistoryDisabled;
-      }
-      RqCc7i = obj24.getTextInVoiceReadMessageHistoryChannelPermissionText(str);
-    } else {
-      str = constants;
-      if (constants.GUILD_FORUM !== type) {
-        str = constants;
-        if (constants.GUILD_MEDIA !== type) {
-          str = require;
-          str = dependencyMap;
-          RqCc7i = require(1212) /* getSystemLocale */.t.cuMfH0;
-        }
-      }
-      str = require;
-      str = dependencyMap;
-      RqCc7i = require(1212) /* getSystemLocale */.t.RqCc7i;
+  const obj17 = { title: stringResult4, description: null, flag: null };
+  if (tmp3.GUILD_CATEGORY === type) {
+    let RqCc7i = tmp8(1236).t["cJRv/g"];
+  } else if (tmp3.GUILD_VOICE === type) {
+    let obj24 = importDefault(6720);
+    let prop;
+    if (createPostsDisabled != null) {
+      prop = createPostsDisabled.readMessageHistoryDisabled;
     }
-  }
-  obj17.description = RqCc7i;
-  obj17.flag = constants4.READ_MESSAGE_HISTORY;
-  obj[str] = obj17;
-  const obj18 = {};
-  str = constants4.SEND_TTS_MESSAGES.toString();
-  const intl25 = require(1212) /* getSystemLocale */.intl;
-  obj18.title = intl25.string(require(1212) /* getSystemLocale */.t.mMbwh7);
-  if (type === constants.GUILD_CATEGORY) {
-    str = require;
-    str = dependencyMap;
-    let CpakGz = require(1212) /* getSystemLocale */.t.b7pc9U;
+    RqCc7i = obj24.getTextInVoiceReadMessageHistoryChannelPermissionText(prop);
   } else {
-    str = require;
-    str = dependencyMap;
-    CpakGz = require(1212) /* getSystemLocale */.t.CpakGz;
+    if (tmp3.GUILD_FORUM !== type) {
+      if (tmp3.GUILD_MEDIA !== type) {
+        RqCc7i = tmp8(1236).t.cuMfH0;
+      }
+    }
+    RqCc7i = tmp8(1236).t.RqCc7i;
   }
-  obj18.description = CpakGz;
-  obj18.flag = constants4.SEND_TTS_MESSAGES;
-  obj[str] = obj18;
-  obj19 = {};
-  str = constants4.USE_APPLICATION_COMMANDS.toString();
-  const intl26 = require(1212) /* getSystemLocale */.intl;
-  obj19.title = intl26.string(require(1212) /* getSystemLocale */.t.nkoPOt);
-  if (type === constants.GUILD_CATEGORY) {
-    str = require;
-    str = dependencyMap;
-    let ReG3gG = require(1212) /* getSystemLocale */.t["D+qW0J"];
+  obj17[1] = RqCc7i;
+  obj17[2] = tmp.READ_MESSAGE_HISTORY;
+  obj[str16] = obj17;
+  let str17 = tmp.SEND_TTS_MESSAGES;
+  const obj18 = { title: null, description: null, flag: null };
+  str17 = str17.toString();
+  const intl25 = tmp10(1236).intl;
+  obj18[0] = intl25.string(tmp10(1236).t.mMbwh7);
+  if (type === tmp3.GUILD_CATEGORY) {
+    let CpakGz = tmp10(1236).t.b7pc9U;
   } else {
-    str = require;
-    str = dependencyMap;
-    ReG3gG = require(1212) /* getSystemLocale */.t.ReG3gG;
+    CpakGz = tmp10(1236).t.CpakGz;
   }
-  obj19.description = ReG3gG;
-  obj19.flag = constants4.USE_APPLICATION_COMMANDS;
-  obj[str] = obj19;
-  const obj20 = {};
-  str = constants4.SEND_VOICE_MESSAGES.toString();
-  const intl27 = require(1212) /* getSystemLocale */.intl;
-  obj20.title = intl27.string(require(1212) /* getSystemLocale */.t.WlWSBT);
-  if (type === constants.GUILD_CATEGORY) {
-    str = require;
-    str = dependencyMap;
-    let BhEo9V = require(1212) /* getSystemLocale */.t.gavGfv;
+  obj18[1] = CpakGz;
+  obj18[2] = tmp.SEND_TTS_MESSAGES;
+  obj[str17] = obj18;
+  let str18 = tmp.USE_APPLICATION_COMMANDS;
+  obj19 = { title: null, description: null, flag: null };
+  str18 = str18.toString();
+  const intl26 = tmp10(1236).intl;
+  obj19[0] = intl26.string(tmp10(1236).t.nkoPOt);
+  if (type === tmp3.GUILD_CATEGORY) {
+    let ReG3gG = tmp10(1236).t["D+qW0J"];
   } else {
-    str = require;
-    str = dependencyMap;
-    BhEo9V = require(1212) /* getSystemLocale */.t.BhEo9V;
+    ReG3gG = tmp10(1236).t.ReG3gG;
   }
-  obj20.description = BhEo9V;
-  obj20.flag = constants4.SEND_VOICE_MESSAGES;
-  obj[str] = obj20;
-  const obj21 = {};
-  str = constants4.SEND_POLLS.toString();
-  const intl28 = require(1212) /* getSystemLocale */.intl;
-  obj21.title = intl28.string(require(1212) /* getSystemLocale */.t.UMQ7Ww);
-  if (type === constants.GUILD_CATEGORY) {
-    str = require;
-    str = dependencyMap;
-    let ckKKIO = require(1212) /* getSystemLocale */.t["18Ya7L"];
+  obj19[1] = ReG3gG;
+  obj19[2] = tmp.USE_APPLICATION_COMMANDS;
+  obj[str18] = obj19;
+  let str19 = tmp.SEND_VOICE_MESSAGES;
+  const obj20 = { title: null, description: null, flag: null };
+  str19 = str19.toString();
+  const intl27 = tmp10(1236).intl;
+  obj20[0] = intl27.string(tmp10(1236).t.WlWSBT);
+  if (type === tmp3.GUILD_CATEGORY) {
+    let BhEo9V = tmp10(1236).t.gavGfv;
   } else {
-    str = require;
-    str = dependencyMap;
-    ckKKIO = require(1212) /* getSystemLocale */.t.ckKKIO;
+    BhEo9V = tmp10(1236).t.BhEo9V;
   }
-  obj21.description = ckKKIO;
-  str = constants4;
-  obj21.flag = constants4.SEND_POLLS;
-  obj[str] = obj21;
-  const obj22 = {};
-  str = require;
-  str = dependencyMap;
-  str = constants4.CONNECT.toString();
-  const intl29 = require(1212) /* getSystemLocale */.intl;
-  obj22.title = intl29.string(require(1212) /* getSystemLocale */.t.S0W8Z5);
-  const GUILD_CATEGORY2 = constants.GUILD_CATEGORY;
+  obj20[1] = BhEo9V;
+  obj20[2] = tmp.SEND_VOICE_MESSAGES;
+  obj[str19] = obj20;
+  let str20 = tmp.SEND_POLLS;
+  const obj21 = { title: null, description: null, flag: null };
+  str20 = str20.toString();
+  const intl28 = tmp10(1236).intl;
+  obj21[0] = intl28.string(tmp10(1236).t.UMQ7Ww);
+  if (type === tmp3.GUILD_CATEGORY) {
+    let ckKKIO = tmp10(1236).t["18Ya7L"];
+  } else {
+    ckKKIO = tmp10(1236).t.ckKKIO;
+  }
+  obj21[1] = ckKKIO;
+  obj21[2] = tmp.SEND_POLLS;
+  obj[str20] = obj21;
+  let str21 = tmp.CONNECT;
+  const obj22 = { title: null, description: null, flag: null };
+  str21 = str21.toString();
+  const intl29 = tmp10(1236).intl;
+  obj22[0] = intl29.string(tmp10(1236).t.S0W8Z5);
+  const GUILD_CATEGORY2 = tmp3.GUILD_CATEGORY;
   if (arg1) {
     if (GUILD_CATEGORY2 === type) {
-      str = require;
-      str = dependencyMap;
-      QU_Rw8 = require(1212) /* getSystemLocale */.t.XcrieN;
+      QU_Rw8 = tmp8(1236).t.XcrieN;
+    } else if (tmp3.GUILD_STAGE_VOICE === type) {
+      QU_Rw8 = tmp8(1236).t.SOFNhP;
     } else {
-      str = constants;
-      if (constants.GUILD_STAGE_VOICE === type) {
-        str = require;
-        str = dependencyMap;
-        QU_Rw8 = require(1212) /* getSystemLocale */.t.SOFNhP;
-      } else {
-        str = constants;
-        if (constants.GUILD_TEXT !== type) {
-          str = constants;
-          if (constants.GUILD_FORUM !== type) {
-            str = constants;
-            if (constants.GUILD_MEDIA !== type) {
-              str = require;
-              str = dependencyMap;
-              QU_Rw8 = require(1212) /* getSystemLocale */.t.j4AyO8;
-            }
+      if (tmp3.GUILD_TEXT !== type) {
+        if (tmp3.GUILD_FORUM !== type) {
+          if (tmp3.GUILD_MEDIA !== type) {
+            QU_Rw8 = tmp8(1236).t.j4AyO8;
           }
         }
-        str = require;
-        str = dependencyMap;
-        QU_Rw8 = require(1212) /* getSystemLocale */.t.LsS8xT;
       }
+      QU_Rw8 = tmp8(1236).t.LsS8xT;
     }
   } else if (GUILD_CATEGORY2 === type) {
-    str = require;
-    str = dependencyMap;
-    QU_Rw8 = require(1212) /* getSystemLocale */.t.stA0Hl;
+    QU_Rw8 = tmp8(1236).t.stA0Hl;
+  } else if (tmp3.GUILD_STAGE_VOICE === type) {
+    QU_Rw8 = tmp8(1236).t["G9+Qie"];
   } else {
-    str = constants;
-    if (constants.GUILD_STAGE_VOICE === type) {
-      str = require;
-      str = dependencyMap;
-      QU_Rw8 = require(1212) /* getSystemLocale */.t["G9+Qie"];
-    } else {
-      str = constants;
-      if (constants.GUILD_TEXT !== type) {
-        str = constants;
-        if (constants.GUILD_FORUM !== type) {
-          str = constants;
-          if (constants.GUILD_MEDIA !== type) {
-            str = require;
-            str = dependencyMap;
-            QU_Rw8 = require(1212) /* getSystemLocale */.t.HvG8uR;
-          }
+    if (tmp3.GUILD_TEXT !== type) {
+      if (tmp3.GUILD_FORUM !== type) {
+        if (tmp3.GUILD_MEDIA !== type) {
+          QU_Rw8 = tmp8(1236).t.HvG8uR;
         }
       }
-      str = require;
-      str = dependencyMap;
-      QU_Rw8 = require(1212) /* getSystemLocale */.t["QU/Rw8"];
     }
+    QU_Rw8 = tmp8(1236).t["QU/Rw8"];
   }
-  obj22.description = QU_Rw8;
-  obj22.flag = str.CONNECT;
-  obj[str] = obj22;
-  const obj23 = {};
-  str = str.SPEAK.toString();
-  const intl30 = str(1212).intl;
-  obj23.title = intl30.string(str(1212).t["8w1tIR"]);
-  if (constants.GUILD_CATEGORY === type) {
-    str = require;
-    str = dependencyMap;
-    _VXsJI = require(1212) /* getSystemLocale */.t.iXhS6R;
+  obj22[1] = QU_Rw8;
+  obj22[2] = tmp.CONNECT;
+  obj[str21] = obj22;
+  let str22 = tmp.SPEAK;
+  const obj23 = { title: null, description: null, flag: null };
+  str22 = str22.toString();
+  const intl30 = tmp10(1236).intl;
+  obj23[0] = intl30.string(tmp10(1236).t["8w1tIR"]);
+  if (tmp3.GUILD_CATEGORY === type) {
+    _VXsJI = tmp8(1236).t.iXhS6R;
+  } else if (tmp3.GUILD_STAGE_VOICE === type) {
+    _VXsJI = tmp8(1236).t.a8n741;
   } else {
-    str = constants;
-    if (constants.GUILD_STAGE_VOICE === type) {
-      str = require;
-      str = dependencyMap;
-      _VXsJI = require(1212) /* getSystemLocale */.t.a8n741;
-    } else {
-      str = constants;
-      if (constants.GUILD_TEXT !== type) {
-        str = constants;
-        if (constants.GUILD_FORUM !== type) {
-          str = constants;
-          if (constants.GUILD_MEDIA !== type) {
-            str = require;
-            str = dependencyMap;
-            _VXsJI = require(1212) /* getSystemLocale */.t["568E6d"];
-          }
+    if (tmp3.GUILD_TEXT !== type) {
+      if (tmp3.GUILD_FORUM !== type) {
+        if (tmp3.GUILD_MEDIA !== type) {
+          _VXsJI = tmp8(1236).t["568E6d"];
         }
       }
-      str = require;
-      str = dependencyMap;
-      _VXsJI = require(1212) /* getSystemLocale */.t["+VXsJI"];
     }
+    _VXsJI = tmp8(1236).t["+VXsJI"];
   }
-  obj23.description = _VXsJI;
-  obj23.flag = str.SPEAK;
-  obj[str] = obj23;
-  obj24 = {};
-  str = str.STREAM.toString();
-  const intl31 = str(1212).intl;
-  obj24.title = intl31.string(str(1212).t.FlNoSV);
-  if (constants.GUILD_CATEGORY === type) {
-    str = require;
-    str = dependencyMap;
-    let AuEQEC = require(1212) /* getSystemLocale */.t["ryG0/J"];
+  obj23[1] = _VXsJI;
+  obj23[2] = tmp.SPEAK;
+  obj[str22] = obj23;
+  let str23 = tmp.STREAM;
+  obj24 = { title: null, description: null, flag: null };
+  str23 = str23.toString();
+  const intl31 = tmp10(1236).intl;
+  obj24[0] = intl31.string(tmp10(1236).t.FlNoSV);
+  if (tmp3.GUILD_CATEGORY === type) {
+    let AuEQEC = tmp8(1236).t["ryG0/J"];
   } else {
-    str = constants;
-    if (constants.GUILD_TEXT !== type) {
-      str = constants;
-      if (constants.GUILD_FORUM !== type) {
-        str = constants;
-        if (constants.GUILD_MEDIA !== type) {
-          str = constants;
-          if (constants.GUILD_STAGE_VOICE === type) {
-            str = require;
-            str = dependencyMap;
-            AuEQEC = require(1212) /* getSystemLocale */.t.swJcN6;
+    if (tmp3.GUILD_TEXT !== type) {
+      if (tmp3.GUILD_FORUM !== type) {
+        if (tmp3.GUILD_MEDIA !== type) {
+          if (tmp3.GUILD_STAGE_VOICE === type) {
+            AuEQEC = tmp8(1236).t.swJcN6;
           } else {
-            str = require;
-            str = dependencyMap;
-            AuEQEC = require(1212) /* getSystemLocale */.t.RY8rIc;
+            AuEQEC = tmp8(1236).t.RY8rIc;
           }
         }
       }
     }
-    str = require;
-    str = dependencyMap;
-    AuEQEC = require(1212) /* getSystemLocale */.t.AuEQEC;
+    AuEQEC = tmp8(1236).t.AuEQEC;
   }
-  obj24.description = AuEQEC;
-  obj24.flag = str.STREAM;
-  obj[str] = obj24;
-  const obj25 = {};
-  str = str.USE_EMBEDDED_ACTIVITIES.toString();
-  const intl32 = str(1212).intl;
-  obj25.title = intl32.string(str(1212).t.rLSGeh);
-  if (constants.GUILD_CATEGORY === type) {
-    str = require;
-    str = dependencyMap;
-    let RyEwla = require(1212) /* getSystemLocale */.t.maNzCO;
+  obj24[1] = AuEQEC;
+  obj24[2] = tmp.STREAM;
+  obj[str23] = obj24;
+  let str24 = tmp.USE_EMBEDDED_ACTIVITIES;
+  const obj25 = { title: null, description: null, flag: null };
+  str24 = str24.toString();
+  const intl32 = tmp10(1236).intl;
+  obj25[0] = intl32.string(tmp10(1236).t.rLSGeh);
+  if (tmp3.GUILD_CATEGORY === type) {
+    let RyEwla = tmp8(1236).t.maNzCO;
   } else {
-    str = constants;
-    if (constants.GUILD_FORUM !== type) {
-      str = constants;
-      if (constants.GUILD_MEDIA !== type) {
-        str = require;
-        str = dependencyMap;
-        RyEwla = require(1212) /* getSystemLocale */.t.qinvMU;
+    if (tmp3.GUILD_FORUM !== type) {
+      if (tmp3.GUILD_MEDIA !== type) {
+        RyEwla = tmp8(1236).t.qinvMU;
       }
     }
-    str = require;
-    str = dependencyMap;
-    RyEwla = require(1212) /* getSystemLocale */.t.RyEwla;
+    RyEwla = tmp8(1236).t.RyEwla;
   }
-  obj25.description = RyEwla;
-  obj25.flag = str.USE_EMBEDDED_ACTIVITIES;
-  obj[str] = obj25;
-  const obj26 = {};
-  str = str.USE_EXTERNAL_APPS.toString();
-  const intl33 = str(1212).intl;
-  obj26.title = intl33.string(str(1212).t["3TzAk0"]);
-  if (constants.GUILD_CATEGORY === type) {
-    str = require;
-    str = dependencyMap;
-    let qPUPip = require(1212) /* getSystemLocale */.t.bgIY3H;
+  obj25[1] = RyEwla;
+  obj25[2] = tmp.USE_EMBEDDED_ACTIVITIES;
+  obj[str24] = obj25;
+  let str25 = tmp.USE_EXTERNAL_APPS;
+  const obj26 = { title: null, description: null, flag: null };
+  str25 = str25.toString();
+  const intl33 = tmp10(1236).intl;
+  obj26[0] = intl33.string(tmp10(1236).t["3TzAk0"]);
+  if (tmp3.GUILD_CATEGORY === type) {
+    let qPUPip = tmp8(1236).t.bgIY3H;
   } else {
-    str = constants;
-    if (constants.GUILD_FORUM !== type) {
-      str = constants;
-      if (constants.GUILD_MEDIA !== type) {
-        str = require;
-        str = dependencyMap;
-        qPUPip = require(1212) /* getSystemLocale */.t.czqMLp;
+    if (tmp3.GUILD_FORUM !== type) {
+      if (tmp3.GUILD_MEDIA !== type) {
+        qPUPip = tmp8(1236).t.czqMLp;
       }
     }
-    str = require;
-    str = dependencyMap;
-    qPUPip = require(1212) /* getSystemLocale */.t.qPUPip;
+    qPUPip = tmp8(1236).t.qPUPip;
   }
-  obj26.description = qPUPip;
-  obj26.flag = str.USE_EXTERNAL_APPS;
-  obj[str] = obj26;
-  const obj27 = {};
-  str = str.USE_SOUNDBOARD.toString();
-  const intl34 = str(1212).intl;
-  obj27.title = intl34.string(str(1212).t.Bco7NG);
-  if (constants.GUILD_CATEGORY === type) {
-    str = require;
-    str = dependencyMap;
-    const intl37 = require(1212) /* getSystemLocale */.intl;
-    const obj28 = {};
-    str = importDefault;
-    let obj40 = importDefault(1921);
-    str = constants3;
-    obj28.helpCenterArticle = obj40.getArticleURL(constants3.SOUNDBOARD);
-    str = intl37.format(require(1212) /* getSystemLocale */.t["0kBp/0"], obj28);
+  obj26[1] = qPUPip;
+  obj26[2] = tmp.USE_EXTERNAL_APPS;
+  obj[str25] = obj26;
+  let str26 = tmp.USE_SOUNDBOARD;
+  const obj27 = { title: null, description: null, flag: null };
+  str26 = str26.toString();
+  const intl34 = tmp10(1236).intl;
+  obj27[0] = intl34.string(tmp10(1236).t.Bco7NG);
+  if (tmp3.GUILD_CATEGORY === type) {
+    const intl37 = tmp8(1236).intl;
+    const obj28 = { helpCenterArticle: null };
+    let obj40 = importDefault(1945);
+    obj28[0] = obj40.getArticleURL(constants3.SOUNDBOARD);
+    let formatResult = intl37.format(tmp8(1236).t["0kBp/0"], obj28);
   } else {
-    str = constants;
-    if (constants.GUILD_TEXT !== type) {
-      str = constants;
-      if (constants.GUILD_FORUM !== type) {
-        str = constants;
-        if (constants.GUILD_MEDIA !== type) {
-          str = require;
-          str = dependencyMap;
-          const intl35 = require(1212) /* getSystemLocale */.intl;
-          const obj29 = {};
-          str = importDefault;
-          let obj36 = importDefault(1921);
-          str = constants3;
-          obj29.helpCenterArticle = obj36.getArticleURL(constants3.SOUNDBOARD);
-          str = intl35.format(require(1212) /* getSystemLocale */.t.GEi6Ym, obj29);
+    if (tmp3.GUILD_TEXT !== type) {
+      if (tmp3.GUILD_FORUM !== type) {
+        if (tmp3.GUILD_MEDIA !== type) {
+          const intl35 = tmp8(1236).intl;
+          const obj29 = { helpCenterArticle: null };
+          let obj36 = importDefault(1945);
+          obj29[0] = obj36.getArticleURL(constants3.SOUNDBOARD);
+          formatResult = intl35.format(tmp8(1236).t.GEi6Ym, obj29);
         }
       }
     }
-    str = require;
-    str = dependencyMap;
-    const intl36 = require(1212) /* getSystemLocale */.intl;
-    const obj30 = {};
-    str = importDefault;
-    let obj38 = importDefault(1921);
-    str = constants3;
-    obj30.helpCenterArticle = obj38.getArticleURL(constants3.SOUNDBOARD);
-    str = intl36.format(require(1212) /* getSystemLocale */.t["6eYqU1"], obj30);
+    const intl36 = tmp8(1236).intl;
+    const obj30 = { helpCenterArticle: null };
+    let obj38 = importDefault(1945);
+    obj30[0] = obj38.getArticleURL(constants3.SOUNDBOARD);
+    formatResult = intl36.format(tmp8(1236).t["6eYqU1"], obj30);
   }
-  obj27.description = str;
-  obj27.flag = str.USE_SOUNDBOARD;
-  obj[str] = obj27;
-  const obj31 = {};
-  str = str.USE_EXTERNAL_SOUNDS.toString();
-  const intl38 = str(1212).intl;
-  obj31.title = intl38.string(str(1212).t.pwaVJ6);
-  obj31.description = str(1212).t.qDpPtX;
-  obj31.flag = str.USE_EXTERNAL_SOUNDS;
-  obj[str] = obj31;
-  const obj32 = {};
-  str = str.USE_VAD.toString();
-  const intl39 = str(1212).intl;
-  obj32.title = intl39.string(str(1212).t["08zAV7"]);
-  if (constants.GUILD_CATEGORY === type) {
-    str = require;
-    str = dependencyMap;
+  obj27[1] = formatResult;
+  obj27[2] = tmp.USE_SOUNDBOARD;
+  obj[str26] = obj27;
+  let str27 = tmp.USE_EXTERNAL_SOUNDS;
+  const obj31 = { title: null, description: null, flag: null };
+  str27 = str27.toString();
+  const intl38 = tmp10(1236).intl;
+  obj31[0] = intl38.string(tmp10(1236).t.pwaVJ6);
+  obj31[1] = tmp10(1236).t.qDpPtX;
+  obj31[2] = tmp.USE_EXTERNAL_SOUNDS;
+  obj[str27] = obj31;
+  let str28 = tmp.USE_VAD;
+  const obj32 = { title: null, description: null, flag: null };
+  str28 = str28.toString();
+  const intl39 = tmp10(1236).intl;
+  obj32[0] = intl39.string(tmp10(1236).t["08zAV7"]);
+  if (tmp3.GUILD_CATEGORY === type) {
+  } else if (tmp3.GUILD_STAGE_VOICE === type) {
   } else {
-    str = constants;
-    if (constants.GUILD_STAGE_VOICE === type) {
-      str = require;
-      str = dependencyMap;
-    } else {
-      str = constants;
-      if (constants.GUILD_TEXT !== type) {
-        str = constants;
-        if (constants.GUILD_FORUM !== type) {
-          str = constants;
-          if (constants.GUILD_MEDIA !== type) {
-            str = require;
-            str = dependencyMap;
-          }
-        }
-      }
-      str = require;
-      str = dependencyMap;
-    }
-  }
-  obj32.description = _3GJwsc;
-  obj32.flag = str.USE_VAD;
-  obj[str] = obj32;
-  const obj33 = {};
-  str = str.PRIORITY_SPEAKER.toString();
-  const intl40 = str(1212).intl;
-  obj33.title = intl40.string(str(1212).t.BVK71i);
-  if (constants.GUILD_CATEGORY === type) {
-    str = require;
-    str = dependencyMap;
-    const intl45 = require(1212) /* getSystemLocale */.intl;
-    const obj34 = {};
-    const intl46 = require(1212) /* getSystemLocale */.intl;
-    obj34.keybind = intl46.string(require(1212) /* getSystemLocale */.t.DkSwJ2);
-    str = intl45.format(require(1212) /* getSystemLocale */.t.g5MzON, obj34);
-  } else {
-    str = constants;
-    if (constants.GUILD_TEXT !== type) {
-      str = constants;
-      if (constants.GUILD_FORUM !== type) {
-        str = constants;
-        if (constants.GUILD_MEDIA !== type) {
-          str = require;
-          str = dependencyMap;
-          const intl41 = require(1212) /* getSystemLocale */.intl;
-          const obj35 = {};
-          const intl42 = require(1212) /* getSystemLocale */.intl;
-          obj35.keybind = intl42.string(require(1212) /* getSystemLocale */.t.DkSwJ2);
-          str = intl41.format(require(1212) /* getSystemLocale */.t.Ij0yKX, obj35);
+    if (tmp3.GUILD_TEXT !== type) {
+      if (tmp3.GUILD_FORUM !== type) {
+        if (tmp3.GUILD_MEDIA !== type) {
         }
       }
     }
-    str = require;
-    str = dependencyMap;
-    const intl43 = require(1212) /* getSystemLocale */.intl;
-    obj36 = {};
-    const intl44 = require(1212) /* getSystemLocale */.intl;
-    obj36.keybind = intl44.string(require(1212) /* getSystemLocale */.t.DkSwJ2);
-    str = intl43.format(require(1212) /* getSystemLocale */.t["4nbjL0"], obj36);
   }
-  obj33.description = str;
-  obj33.flag = str.PRIORITY_SPEAKER;
-  obj[str] = obj33;
-  const obj37 = {};
-  str = str.MUTE_MEMBERS.toString();
-  const intl47 = str(1212).intl;
-  obj37.title = intl47.string(str(1212).t["8EI30/"]);
-  if (constants.GUILD_CATEGORY === type) {
-    str = require;
-    str = dependencyMap;
-    let KYDG2K = require(1212) /* getSystemLocale */.t.bcuobK;
+  obj32[1] = _3GJwsc;
+  obj32[2] = tmp.USE_VAD;
+  obj[str28] = obj32;
+  let str29 = tmp.PRIORITY_SPEAKER;
+  const obj33 = { title: null, description: null, flag: null };
+  str29 = str29.toString();
+  const intl40 = tmp10(1236).intl;
+  obj33[0] = intl40.string(tmp10(1236).t.BVK71i);
+  if (tmp3.GUILD_CATEGORY === type) {
+    const intl45 = tmp8(1236).intl;
+    const obj34 = { keybind: null };
+    const intl46 = tmp8(1236).intl;
+    obj34[0] = intl46.string(tmp8(1236).t.DkSwJ2);
+    let formatResult1 = intl45.format(tmp8(1236).t.g5MzON, obj34);
   } else {
-    str = constants;
-    if (constants.GUILD_STAGE_VOICE === type) {
-      str = require;
-      str = dependencyMap;
-      KYDG2K = require(1212) /* getSystemLocale */.t.EbvdH9;
-    } else {
-      str = constants;
-      if (constants.GUILD_TEXT !== type) {
-        str = constants;
-        if (constants.GUILD_FORUM !== type) {
-          str = constants;
-          if (constants.GUILD_MEDIA !== type) {
-            str = require;
-            str = dependencyMap;
-            KYDG2K = require(1212) /* getSystemLocale */.t.LW5C9P;
-          }
-        }
-      }
-      str = require;
-      str = dependencyMap;
-      KYDG2K = require(1212) /* getSystemLocale */.t.KYDG2K;
-    }
-  }
-  obj37.description = KYDG2K;
-  obj37.flag = str.MUTE_MEMBERS;
-  obj[str] = obj37;
-  obj38 = {};
-  str = str.DEAFEN_MEMBERS.toString();
-  const intl48 = str(1212).intl;
-  obj38.title = intl48.string(str(1212).t["9L47Fr"]);
-  if (constants.GUILD_CATEGORY === type) {
-    str = require;
-    str = dependencyMap;
-    d_i1nX = require(1212) /* getSystemLocale */.t.amZ5vn;
-  } else {
-    str = constants;
-    if (constants.GUILD_TEXT !== type) {
-      str = constants;
-      if (constants.GUILD_FORUM !== type) {
-        str = constants;
-        if (constants.GUILD_MEDIA !== type) {
-          str = require;
-          str = dependencyMap;
-          d_i1nX = require(1212) /* getSystemLocale */.t.UAdIxo;
+    if (tmp3.GUILD_TEXT !== type) {
+      if (tmp3.GUILD_FORUM !== type) {
+        if (tmp3.GUILD_MEDIA !== type) {
+          const intl41 = tmp8(1236).intl;
+          const obj35 = { keybind: null };
+          const intl42 = tmp8(1236).intl;
+          obj35[0] = intl42.string(tmp8(1236).t.DkSwJ2);
+          formatResult1 = intl41.format(tmp8(1236).t.Ij0yKX, obj35);
         }
       }
     }
-    str = require;
-    str = dependencyMap;
-    d_i1nX = require(1212) /* getSystemLocale */.t["d+i1nX"];
+    const intl43 = tmp8(1236).intl;
+    obj36 = { keybind: null };
+    const intl44 = tmp8(1236).intl;
+    obj36[0] = intl44.string(tmp8(1236).t.DkSwJ2);
+    formatResult1 = intl43.format(tmp8(1236).t["4nbjL0"], obj36);
   }
-  obj38.description = d_i1nX;
-  obj38.flag = str.DEAFEN_MEMBERS;
-  obj[str] = obj38;
-  const obj39 = {};
-  str = str.MOVE_MEMBERS.toString();
-  const intl49 = str(1212).intl;
-  obj39.title = intl49.string(str(1212).t.YtjJPQ);
-  if (constants.GUILD_CATEGORY === type) {
-    str = require;
-    str = dependencyMap;
-    let cbdQy2 = require(1212) /* getSystemLocale */.t.XmoyRD;
+  obj33[1] = formatResult1;
+  obj33[2] = tmp.PRIORITY_SPEAKER;
+  obj[str29] = obj33;
+  let str30 = tmp.MUTE_MEMBERS;
+  const obj37 = { title: null, description: null, flag: null };
+  str30 = str30.toString();
+  const intl47 = tmp10(1236).intl;
+  obj37[0] = intl47.string(tmp10(1236).t["8EI30/"]);
+  if (tmp3.GUILD_CATEGORY === type) {
+    let KYDG2K = tmp8(1236).t.bcuobK;
+  } else if (tmp3.GUILD_STAGE_VOICE === type) {
+    KYDG2K = tmp8(1236).t.EbvdH9;
   } else {
-    str = constants;
-    if (constants.GUILD_STAGE_VOICE === type) {
-      str = require;
-      str = dependencyMap;
-      cbdQy2 = require(1212) /* getSystemLocale */.t.bizKz6;
-    } else {
-      str = constants;
-      if (constants.GUILD_TEXT !== type) {
-        str = constants;
-        if (constants.GUILD_FORUM !== type) {
-          str = constants;
-          if (constants.GUILD_MEDIA !== type) {
-            str = require;
-            str = dependencyMap;
-            cbdQy2 = require(1212) /* getSystemLocale */.t.nSD1ah;
-          }
+    if (tmp3.GUILD_TEXT !== type) {
+      if (tmp3.GUILD_FORUM !== type) {
+        if (tmp3.GUILD_MEDIA !== type) {
+          KYDG2K = tmp8(1236).t.LW5C9P;
         }
       }
-      str = require;
-      str = dependencyMap;
-      cbdQy2 = require(1212) /* getSystemLocale */.t.cbdQy2;
     }
+    KYDG2K = tmp8(1236).t.KYDG2K;
   }
-  obj39.description = cbdQy2;
-  obj39.flag = str.MOVE_MEMBERS;
-  obj[str] = obj39;
-  obj40 = {};
-  str = str.REQUEST_TO_SPEAK.toString();
-  const intl50 = str(1212).intl;
-  obj40.title = intl50.string(str(1212).t["5kicT2"]);
-  if (type === constants.GUILD_CATEGORY) {
-    str = require;
-    str = dependencyMap;
-    let uzlYFE = require(1212) /* getSystemLocale */.t.T1lMSl;
+  obj37[1] = KYDG2K;
+  obj37[2] = tmp.MUTE_MEMBERS;
+  obj[str30] = obj37;
+  let str31 = tmp.DEAFEN_MEMBERS;
+  obj38 = { title: null, description: null, flag: null };
+  str31 = str31.toString();
+  const intl48 = tmp10(1236).intl;
+  obj38[0] = intl48.string(tmp10(1236).t["9L47Fr"]);
+  if (tmp3.GUILD_CATEGORY === type) {
+    d_i1nX = tmp8(1236).t.amZ5vn;
   } else {
-    str = require;
-    str = dependencyMap;
-    uzlYFE = require(1212) /* getSystemLocale */.t.uzlYFE;
+    if (tmp3.GUILD_TEXT !== type) {
+      if (tmp3.GUILD_FORUM !== type) {
+        if (tmp3.GUILD_MEDIA !== type) {
+          d_i1nX = tmp8(1236).t.UAdIxo;
+        }
+      }
+    }
+    d_i1nX = tmp8(1236).t["d+i1nX"];
   }
-  obj40.description = uzlYFE;
-  obj40.flag = constants4.REQUEST_TO_SPEAK;
-  obj[str] = obj40;
-  const obj41 = {};
-  const GUILD_THREADS_ONLY3 = constants2.GUILD_THREADS_ONLY;
-  str = constants4.MANAGE_THREADS.toString();
+  obj38[1] = d_i1nX;
+  obj38[2] = tmp.DEAFEN_MEMBERS;
+  obj[str31] = obj38;
+  let str32 = tmp.MOVE_MEMBERS;
+  const obj39 = { title: null, description: null, flag: null };
+  str32 = str32.toString();
+  const intl49 = tmp10(1236).intl;
+  obj39[0] = intl49.string(tmp10(1236).t.YtjJPQ);
+  if (tmp3.GUILD_CATEGORY === type) {
+    let cbdQy2 = tmp8(1236).t.XmoyRD;
+  } else if (tmp3.GUILD_STAGE_VOICE === type) {
+    cbdQy2 = tmp8(1236).t.bizKz6;
+  } else {
+    if (tmp3.GUILD_TEXT !== type) {
+      if (tmp3.GUILD_FORUM !== type) {
+        if (tmp3.GUILD_MEDIA !== type) {
+          cbdQy2 = tmp8(1236).t.nSD1ah;
+        }
+      }
+    }
+    cbdQy2 = tmp8(1236).t.cbdQy2;
+  }
+  obj39[1] = cbdQy2;
+  obj39[2] = tmp.MOVE_MEMBERS;
+  obj[str32] = obj39;
+  let str33 = tmp.REQUEST_TO_SPEAK;
+  obj40 = { title: null, description: null, flag: null };
+  str33 = str33.toString();
+  const intl50 = tmp10(1236).intl;
+  obj40[0] = intl50.string(tmp10(1236).t["5kicT2"]);
+  if (type === tmp3.GUILD_CATEGORY) {
+    let uzlYFE = tmp10(1236).t.T1lMSl;
+  } else {
+    uzlYFE = tmp10(1236).t.uzlYFE;
+  }
+  obj40[1] = uzlYFE;
+  obj40[2] = tmp.REQUEST_TO_SPEAK;
+  obj[str33] = obj40;
+  let str34 = tmp.MANAGE_THREADS;
+  const GUILD_THREADS_ONLY3 = tmp19.GUILD_THREADS_ONLY;
+  str34 = str34.toString();
   if (GUILD_THREADS_ONLY3.has(type)) {
-    str = require;
-    str = dependencyMap;
-    const intl53 = require(1212) /* getSystemLocale */.intl;
-    str = intl53.string(require(1212) /* getSystemLocale */.t.ossiZD);
+    const intl53 = tmp10(1236).intl;
+    let stringResult5 = intl53.string(tmp10(1236).t.ossiZD);
+  } else if (type === tmp3.GUILD_CATEGORY) {
+    const intl52 = tmp10(1236).intl;
+    stringResult5 = intl52.string(tmp10(1236).t.QKe7Q3);
   } else {
-    str = constants;
-    if (type === constants.GUILD_CATEGORY) {
-      str = require;
-      str = dependencyMap;
-      const intl52 = require(1212) /* getSystemLocale */.intl;
-      str = intl52.string(require(1212) /* getSystemLocale */.t.QKe7Q3);
-    } else {
-      str = require;
-      str = dependencyMap;
-      const intl51 = require(1212) /* getSystemLocale */.intl;
-      str = intl51.string(require(1212) /* getSystemLocale */.t.kEqgr7);
-    }
+    const intl51 = tmp10(1236).intl;
+    stringResult5 = intl51.string(tmp10(1236).t.kEqgr7);
   }
-  obj41.title = str;
-  if (constants.GUILD_CATEGORY === type) {
-    str = require;
-    str = dependencyMap;
-    XLi_jG = require(1212) /* getSystemLocale */.t.S31soU;
+  const obj41 = { title: stringResult5, description: null, flag: null };
+  if (tmp3.GUILD_CATEGORY === type) {
+    XLi_jG = tmp8(1236).t.S31soU;
   } else {
-    str = constants;
-    if (constants.GUILD_FORUM !== type) {
-      str = constants;
-      if (constants.GUILD_MEDIA !== type) {
-        str = require;
-        str = dependencyMap;
-        XLi_jG = require(1212) /* getSystemLocale */.t.yvan0j;
+    if (tmp3.GUILD_FORUM !== type) {
+      if (tmp3.GUILD_MEDIA !== type) {
+        XLi_jG = tmp8(1236).t.yvan0j;
       }
     }
-    str = require;
-    str = dependencyMap;
-    XLi_jG = require(1212) /* getSystemLocale */.t["XLi/jG"];
+    XLi_jG = tmp8(1236).t["XLi/jG"];
   }
-  obj41.description = XLi_jG;
-  obj41.flag = constants4.MANAGE_THREADS;
-  obj[str] = obj41;
-  const obj42 = {};
-  str = constants4.CREATE_PUBLIC_THREADS.toString();
-  const intl54 = require(1212) /* getSystemLocale */.intl;
-  obj42.title = intl54.string(require(1212) /* getSystemLocale */.t["25rKnX"]);
-  if (type === constants.GUILD_CATEGORY) {
-    str = require;
-    str = dependencyMap;
+  obj41[1] = XLi_jG;
+  obj41[2] = tmp.MANAGE_THREADS;
+  obj[str34] = obj41;
+  let str35 = tmp.CREATE_PUBLIC_THREADS;
+  const obj42 = { title: null, description: null, flag: null };
+  str35 = str35.toString();
+  const intl54 = tmp10(1236).intl;
+  obj42[0] = intl54.string(tmp10(1236).t["25rKnX"]);
+  if (type === tmp3.GUILD_CATEGORY) {
   } else {
-    str = require;
-    str = dependencyMap;
   }
-  obj42.description = _5SDtGB;
-  obj42.flag = constants4.CREATE_PUBLIC_THREADS;
-  obj[str] = obj42;
-  const obj43 = {};
-  str = constants4.CREATE_PRIVATE_THREADS.toString();
-  const intl55 = require(1212) /* getSystemLocale */.intl;
-  obj43.title = intl55.string(require(1212) /* getSystemLocale */.t.QwbTSa);
-  if (type === constants.GUILD_CATEGORY) {
-    str = require;
-    str = dependencyMap;
-    let Chg2zd = require(1212) /* getSystemLocale */.t["hBS/zn"];
+  obj42[1] = _5SDtGB;
+  obj42[2] = tmp.CREATE_PUBLIC_THREADS;
+  obj[str35] = obj42;
+  let str36 = tmp.CREATE_PRIVATE_THREADS;
+  const obj43 = { title: null, description: null, flag: null };
+  str36 = str36.toString();
+  const intl55 = tmp10(1236).intl;
+  obj43[0] = intl55.string(tmp10(1236).t.QwbTSa);
+  if (type === tmp3.GUILD_CATEGORY) {
+    let Chg2zd = tmp10(1236).t["hBS/zn"];
   } else {
-    str = require;
-    str = dependencyMap;
-    Chg2zd = require(1212) /* getSystemLocale */.t.Chg2zd;
+    Chg2zd = tmp10(1236).t.Chg2zd;
   }
-  obj43.description = Chg2zd;
-  obj43.flag = constants4.CREATE_PRIVATE_THREADS;
-  obj[str] = obj43;
-  const obj44 = {};
-  const GUILD_THREADS_ONLY4 = constants2.GUILD_THREADS_ONLY;
-  str = constants4.SEND_MESSAGES_IN_THREADS.toString();
+  obj43[1] = Chg2zd;
+  obj43[2] = tmp.CREATE_PRIVATE_THREADS;
+  obj[str36] = obj43;
+  let str37 = tmp.SEND_MESSAGES_IN_THREADS;
+  const GUILD_THREADS_ONLY4 = tmp19.GUILD_THREADS_ONLY;
+  str37 = str37.toString();
   if (GUILD_THREADS_ONLY4.has(type)) {
-    str = require;
-    str = dependencyMap;
-    const intl58 = require(1212) /* getSystemLocale */.intl;
-    str = intl58.string(require(1212) /* getSystemLocale */.t.fqhqWm);
+    const intl58 = tmp10(1236).intl;
+    let stringResult6 = intl58.string(tmp10(1236).t.fqhqWm);
+  } else if (type === tmp3.GUILD_CATEGORY) {
+    const intl57 = tmp10(1236).intl;
+    stringResult6 = intl57.string(tmp10(1236).t["5QlVGy"]);
   } else {
-    str = constants;
-    if (type === constants.GUILD_CATEGORY) {
-      str = require;
-      str = dependencyMap;
-      const intl57 = require(1212) /* getSystemLocale */.intl;
-      str = intl57.string(require(1212) /* getSystemLocale */.t["5QlVGy"]);
-    } else {
-      str = require;
-      str = dependencyMap;
-      const intl56 = require(1212) /* getSystemLocale */.intl;
-      str = intl56.string(require(1212) /* getSystemLocale */.t.fTE74g);
-    }
+    const intl56 = tmp10(1236).intl;
+    stringResult6 = intl56.string(tmp10(1236).t.fTE74g);
   }
-  obj44.title = str;
-  if (constants.GUILD_CATEGORY === type) {
-    str = require;
-    str = dependencyMap;
-    let XTnrPH = require(1212) /* getSystemLocale */.t.DlIVcN;
+  const obj44 = { title: stringResult6, description: null, flag: null };
+  if (tmp3.GUILD_CATEGORY === type) {
+    let XTnrPH = tmp8(1236).t.DlIVcN;
   } else {
-    str = constants;
-    if (constants.GUILD_FORUM !== type) {
-      str = constants;
-      if (constants.GUILD_MEDIA !== type) {
-        str = require;
-        str = dependencyMap;
-        XTnrPH = require(1212) /* getSystemLocale */.t.xHO6Me;
+    if (tmp3.GUILD_FORUM !== type) {
+      if (tmp3.GUILD_MEDIA !== type) {
+        XTnrPH = tmp8(1236).t.xHO6Me;
       }
     }
-    str = require;
-    str = dependencyMap;
-    XTnrPH = require(1212) /* getSystemLocale */.t.XTnrPH;
+    XTnrPH = tmp8(1236).t.XTnrPH;
   }
-  obj44.description = XTnrPH;
-  obj44.flag = constants4.SEND_MESSAGES_IN_THREADS;
-  obj[str] = obj44;
-  const obj45 = {};
-  str = constants4.MANAGE_EVENTS.toString();
-  const intl59 = require(1212) /* getSystemLocale */.intl;
-  obj45.title = intl59.string(require(1212) /* getSystemLocale */.t.HIgA5a);
-  if (type === constants.GUILD_CATEGORY) {
-    str = require;
-    str = dependencyMap;
+  obj44[1] = XTnrPH;
+  obj44[2] = tmp.SEND_MESSAGES_IN_THREADS;
+  obj[str37] = obj44;
+  let str38 = tmp.MANAGE_EVENTS;
+  const obj45 = { title: null, description: null, flag: null };
+  str38 = str38.toString();
+  const intl59 = tmp10(1236).intl;
+  obj45[0] = intl59.string(tmp10(1236).t.HIgA5a);
+  if (type === tmp3.GUILD_CATEGORY) {
   } else {
-    str = require;
-    str = dependencyMap;
   }
-  obj45.description = _4pO_TY;
-  obj45.flag = constants4.MANAGE_EVENTS;
-  obj[str] = obj45;
-  const obj46 = {};
-  str = constants4.CREATE_EVENTS.toString();
-  const intl60 = require(1212) /* getSystemLocale */.intl;
-  obj46.title = intl60.string(require(1212) /* getSystemLocale */.t.qyjZua);
-  if (type === constants.GUILD_CATEGORY) {
-    str = require;
-    str = dependencyMap;
-    let sPoBLa = require(1212) /* getSystemLocale */.t.XpibmC;
+  obj45[1] = _4pO_TY;
+  obj45[2] = tmp.MANAGE_EVENTS;
+  obj[str38] = obj45;
+  let str39 = tmp.CREATE_EVENTS;
+  const obj46 = { title: null, description: null, flag: null };
+  str39 = str39.toString();
+  const intl60 = tmp10(1236).intl;
+  obj46[0] = intl60.string(tmp10(1236).t.qyjZua);
+  if (type === tmp3.GUILD_CATEGORY) {
+    let sPoBLa = tmp10(1236).t.XpibmC;
   } else {
-    str = require;
-    str = dependencyMap;
-    sPoBLa = require(1212) /* getSystemLocale */.t.sPoBLa;
+    sPoBLa = tmp10(1236).t.sPoBLa;
   }
-  obj46.description = sPoBLa;
-  obj46.flag = constants4.CREATE_EVENTS;
-  obj[str] = obj46;
-  const obj47 = {};
-  str = constants4.SET_VOICE_CHANNEL_STATUS.toString();
-  const intl61 = require(1212) /* getSystemLocale */.intl;
-  obj47.title = intl61.string(require(1212) /* getSystemLocale */.t.VBwkUf);
-  if (null != createPostsDisabled) {
-    if (createPostsDisabled.enableHangoutWindow) {
-      str = require;
-      str = dependencyMap;
-      let C6BzXx = require(1212) /* getSystemLocale */.t.CYcJ6H;
-    }
-    obj47.description = C6BzXx;
-    str = constants4;
-    obj47.flag = constants4.SET_VOICE_CHANNEL_STATUS;
-    obj[str] = obj47;
-    return obj;
+  obj46[1] = sPoBLa;
+  obj46[2] = tmp.CREATE_EVENTS;
+  obj[str39] = obj46;
+  let str40 = tmp.SET_VOICE_CHANNEL_STATUS;
+  const obj47 = { title: null, description: null, flag: null };
+  str40 = str40.toString();
+  const intl61 = tmp10(1236).intl;
+  obj47[0] = intl61.string(tmp10(1236).t.VBwkUf);
+  let enableHangoutWindow;
+  if (createPostsDisabled != null) {
+    enableHangoutWindow = createPostsDisabled.enableHangoutWindow;
   }
-  C6BzXx = require(1212) /* getSystemLocale */.t.C6BzXx;
+  const t2 = tmp10(1236).t;
+  obj47[1] = enableHangoutWindow ? t2.CYcJ6H : t2.C6BzXx;
+  obj47[2] = tmp.SET_VOICE_CHANNEL_STATUS;
+  obj[str40] = obj47;
+  return obj;
 };

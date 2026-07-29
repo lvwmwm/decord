@@ -1,71 +1,58 @@
-// Module ID: 5636
-// Function ID: 47726
-// Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 5637, 5638, 1352, 1348, 1838, 4177, 4360, 1850, 21, 3789, 3747, 5639, 566, 686, 2]
+// Module ID: 5654
+// Function ID: 5655
+// Name: makeSortedChannel
+// Dependencies: [5655, 5656, 1376, 1372, 1862, 4201, 4385, 1874, 11, 3813, 3771, 5657, 589, 709, 2]
 
-// Module 5636 (_isNativeReflectConstruct)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import _callSuper from "_callSuper";
-import closure_5 from "t";
-import initialize from "initialize";
-import dispatcher from "dispatcher";
-import closure_8 from "_isNativeReflectConstruct";
-import closure_9 from "_isNativeReflectConstruct";
-import { isPrivate } from "_callSuper";
-import closure_11 from "_isNativeReflectConstruct";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import closure_13 from "_isNativeReflectConstruct";
-import closure_14 from "_isNativeReflectConstruct";
-import closure_15 from "_isNativeReflectConstruct";
+// Module 5654 (makeSortedChannel)
+import processChannel from "processChannel";
+import closure_4 from "processChannel";
+import { isPrivate } from "createChannelRecord";
+import ensureGuildLoaded from "ensureGuildLoaded";
+import createGuildRecordFromRust from "createGuildRecordFromRust";
+import generateOldThreadCutoff from "generateOldThreadCutoff";
+import updateUserGuildSettingsInternal from "updateUserGuildSettingsInternal";
+import mergeGuildAvatar from "mergeGuildAvatar";
+import { Store } from "initialize";
 
 const require = arg1;
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
-  }
-  const result = _isNativeReflectConstruct();
-}
 function makeSortedChannel(channel, id) {
   let tmp = id;
   if (id === undefined) {
-    id = closure_13.lastMessageId(channel.id);
-    if (null == id) {
+    id = generateOldThreadCutoff.lastMessageId(channel.id);
+    if (id == null) {
       id = channel.lastMessageId;
     }
-    if (null == id) {
+    if (id == null) {
       id = channel.id;
     }
     const isMessageRequestTimestamp = channel.isMessageRequestTimestamp;
     let tmp2 = id;
     if (null != isMessageRequestTimestamp) {
-      let obj = importDefault(3747)(isMessageRequestTimestamp);
+      let obj = importDefault(3771)(isMessageRequestTimestamp);
       const valueOfResult = obj.valueOf();
-      let fromTimestampResult = importDefault(21).fromTimestamp(valueOfResult);
-      const obj2 = importDefault(21);
+      let fromTimestampResult = importDefault(11).fromTimestamp(valueOfResult);
+      const obj2 = importDefault(11);
       if (obj3.compare(id, fromTimestampResult) > 0) {
         fromTimestampResult = id;
       }
       tmp2 = fromTimestampResult;
-      obj3 = importDefault(21);
+      obj3 = importDefault(11);
     }
     tmp = tmp2;
   }
-  obj = { channelId: channel.id, lastMessageId: tmp, isFavorite: messagesFavorite.isMessagesFavorite(channel.id) };
+  obj = { channelId: channel.id, lastMessageId: tmp, isFavorite: messagesFavorite.isMessagesFavorite(channel.id), isRequest: null };
   let isMessageRequestResult = messageRequest.isMessageRequest(channel.id);
   if (!isMessageRequestResult) {
     isMessageRequestResult = spam.isSpam(channel.id);
   }
-  obj.isRequest = isMessageRequestResult;
+  obj[3] = isMessageRequestResult;
   return obj;
 }
 function handleConnectionOpen() {
   secondaryIndexMap.clear();
   const values = Object.values(store.getMutablePrivateChannels());
   const item = values.forEach((id) => {
-    const result = outer1_17.set(id.id, outer1_23(id));
+    const result = closure_12.set(id.id, callback(id));
   });
 }
 function handleCacheLoaded() {
@@ -78,21 +65,35 @@ function handleCacheLoaded() {
     continue;
   }
 }
-let closure_16 = { DEFAULT: "DEFAULT", FAVORITE: "FAVORITE" };
-const secondaryIndexMap = new require("sortedInsert").SecondaryIndexMap(function indexBy(value) {
+let closure_11 = { DEFAULT: "DEFAULT", FAVORITE: "FAVORITE" };
+const secondaryIndexMap = new require("version").SecondaryIndexMap(function indexBy(value) {
   if (value.isRequest) {
     let items = [];
   } else {
-    items = [tmp ? closure_16.FAVORITE : closure_16.DEFAULT];
+    items = [tmp ? closure_11.FAVORITE : closure_11.DEFAULT];
   }
   return items;
 }, function sortBy(arr, items, arg2) {
-  return -importDefault(21).extractTimestamp(arr.lastMessageId);
+  return -importDefault(11).extractTimestamp(arr.lastMessageId);
 });
-let closure_18 = [];
-let closure_19 = [];
-let closure_20 = [];
-const f47736 = () => {
+let closure_15 = [];
+let closure_16 = [];
+let closure_17 = [];
+const f35824 = () => {
+
+};
+class PrivateChannelSortStore extends Store {
+}
+const prototype = PrivateChannelSortStore.prototype;
+prototype["initialize"] = function initialize() {
+  this.waitFor(ensureGuildLoaded, createGuildRecordFromRust, processChannel, generateOldThreadCutoff, closure_4, updateUserGuildSettingsInternal, mergeGuildAvatar);
+  const items = [updateUserGuildSettingsInternal, processChannel];
+  this.syncWith(items, handleConnectionOpen);
+};
+prototype["getPrivateChannelIds"] = function getPrivateChannelIds() {
+  if (typeof f35824 !== "find") {
+    HermesBuiltin.throwTypeError();
+  }
   let values = secondaryIndexMap.values(constants.FAVORITE);
   values = secondaryIndexMap.values(constants.DEFAULT);
   let tmp = values === values;
@@ -100,73 +101,26 @@ const f47736 = () => {
     tmp = values === values;
   }
   if (!tmp) {
-    let closure_20 = [];
+    let closure_17 = [];
     const item = values.forEach((channelId) => arr.push(channelId.channelId));
     const item1 = values.forEach((channelId) => arr.push(channelId.channelId));
   }
-  return closure_20;
+  return closure_17;
 };
-let tmp3 = ((Store) => {
-  class PrivateChannelSortStore {
-    constructor() {
-      self = this;
-      tmp = outer1_3(this, PrivateChannelSortStore);
-      obj = outer1_6(PrivateChannelSortStore);
-      tmp2 = outer1_5;
-      if (outer1_22()) {
-        tmp6 = globalThis;
-        _Reflect = Reflect;
-        tmp7 = outer1_6;
-        tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, outer1_6(self).constructor);
-      } else {
-        tmp3 = arguments;
-        tmp4 = arguments;
-        constructResult = obj(...arguments);
-      }
-      return tmp2(self, constructResult);
-    }
-  }
-  callback2(PrivateChannelSortStore, Store);
-  let obj = {
-    key: "initialize",
-    value() {
-      this.waitFor(outer1_11, outer1_12, outer1_8, outer1_13, outer1_9, outer1_14, outer1_15);
-      const items = [outer1_14, outer1_8];
-      this.syncWith(items, outer1_24);
-    }
-  };
-  let items = [obj, , , ];
-  obj = {
-    key: "getPrivateChannelIds",
-    value() {
-      return outer1_21();
-    }
-  };
-  items[1] = obj;
-  obj = {
-    key: "getSortedChannels",
-    value() {
-      const items = [outer1_17.values(outer1_16.FAVORITE), outer1_17.values(outer1_16.DEFAULT)];
-      return items;
-    }
-  };
-  items[2] = obj;
-  items[3] = {
-    key: "serializeForOverlay",
-    value() {
-      const obj = {};
-      const values = outer1_17.values();
-      const item = values.forEach((channelId) => {
-        obj[channelId.channelId] = channelId.lastMessageId;
-      });
-      return obj;
-    }
-  };
-  return callback(PrivateChannelSortStore, items);
-})(require("initialize").Store);
-tmp3.displayName = "PrivateChannelSortStore";
-tmp3 = new tmp3(require("dispatcher"), {
+prototype["getSortedChannels"] = function getSortedChannels() {
+  const items = [secondaryIndexMap.values(constants.FAVORITE), secondaryIndexMap.values(constants.DEFAULT)];
+  return items;
+};
+prototype["serializeForOverlay"] = function serializeForOverlay() {
+  const obj = {};
+  const values = secondaryIndexMap.values();
+  const item = values.forEach((channelId) => {
+    obj[channelId.channelId] = channelId.lastMessageId;
+  });
+  return obj;
+};
+PrivateChannelSortStore.displayName = "PrivateChannelSortStore";
+const privateChannelSortStore = new PrivateChannelSortStore(require("dispatcher"), {
   CONNECTION_OPEN: handleConnectionOpen,
   CONNECTION_OPEN_SUPPLEMENTAL: handleConnectionOpen,
   OVERLAY_INITIALIZE: handleConnectionOpen,
@@ -175,27 +129,26 @@ tmp3 = new tmp3(require("dispatcher"), {
   CHANNEL_UPDATES: function handleChannelUpdates(channels) {
     channels = channels.channels;
     const item = channels.forEach((type) => {
-      let hasItem = outer1_10(type.type);
+      let hasItem = callback(type.type);
       if (!hasItem) {
-        hasItem = outer1_17.has(type.id);
+        hasItem = map.has(type.id);
       }
       if (hasItem) {
-        const result = outer1_17.set(type.id, outer1_23(type));
+        const result = map.set(type.id, callback2(type));
       }
     });
   },
   CHANNEL_CREATE: function handleChannelCreate(channel) {
     channel = channel.channel;
-    const tmp = !isPrivate(channel.type);
-    let tmp2 = !tmp;
-    if (!tmp) {
-      const tmp5 = channel.id !== require(5639) /* FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID */.FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID;
-      if (tmp5) {
+    let tmp = isPrivate(channel.type);
+    if (tmp) {
+      const tmp4 = channel.id !== require(5657) /* FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID */.FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID;
+      if (tmp4) {
         const result = secondaryIndexMap.set(channel.id, makeSortedChannel(channel));
       }
-      tmp2 = tmp5;
+      tmp = tmp4;
     }
-    return tmp2;
+    return tmp;
   },
   CHANNEL_DELETE: function handleChannelDelete(channel) {
     return secondaryIndexMap.delete(channel.channel.id);
@@ -206,12 +159,13 @@ tmp3 = new tmp3(require("dispatcher"), {
       const channel = store.getChannel(channelId);
       let result = null != channel;
       if (result) {
-        result = secondaryIndexMap.set(channelId, makeSortedChannel(channel, channelId.message.id));
+        result = obj.set(channelId, makeSortedChannel(channel, channelId.message.id));
       }
       return result;
     } else {
       return false;
     }
+    obj = secondaryIndexMap;
   },
   GUILD_CREATE: function handleGuildCreate(guild) {
     return secondaryIndexMap.delete(guild.guild.id);
@@ -220,6 +174,6 @@ tmp3 = new tmp3(require("dispatcher"), {
     secondaryIndexMap.clear();
   }
 });
-let result = require("_possibleConstructorReturn").fileFinishedImporting("stores/views/PrivateChannelSortStore.tsx");
+let result = require("createChannelRecord").fileFinishedImporting("stores/views/PrivateChannelSortStore.tsx");
 
-export default tmp3;
+export default privateChannelSortStore;

@@ -1,24 +1,24 @@
-// Module ID: 15349
-// Function ID: 116944
+// Module ID: 15382
+// Function ID: 15383
 // Name: SeparatorDot
-// Dependencies: [31, 27, 33, 4165, 689, 2]
+// Dependencies: [19, 17, 21, 4189, 712, 2]
 // Exports: default
 
-// Module 15349 (SeparatorDot)
-import "result";
+// Module 15382 (SeparatorDot)
+import "noop";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { width: 4, height: 4, borderRadius: require("_createForOfIteratorHelperLoose").radii.round, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_MOD_STRONG };
-_createForOfIteratorHelperLoose.separatorDot = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+createCacheKey = { separatorDot: null };
+createCacheKey = { width: 4, height: 4, borderRadius: require("Themes").radii.round, backgroundColor: require("Themes").colors.BACKGROUND_MOD_STRONG };
+createCacheKey[0] = createCacheKey;
+createCacheKey = createCacheKey.createStyles(createCacheKey);
 const result = require("jsxProd").fileFinishedImporting("modules/icymi/native/SeparatorDot.tsx");
 
 export default function SeparatorDot() {
-  const obj = {};
-  const items = [_createForOfIteratorHelperLoose().separatorDot];
-  obj.style = items;
-  return <View />;
+  const obj = { style: null };
+  const items = [createCacheKey().separatorDot];
+  obj[0] = items;
+  return <View style={null} />;
 };

@@ -1,11 +1,10 @@
 // Module ID: 12556
-// Function ID: 97083
+// Function ID: 12557
 // Name: registerAsset
-// Dependencies: [1217]
+// Dependencies: [1241]
 
 // Module 12556 (registerAsset)
 import registerAsset from "registerAsset";
 
-const obj = { __packager_asset: true, httpServerLocation: "/assets/images/native/premium/plan_selection", width: 64, height: 64, scales: [1], hash: "e56e37c53edc4951356b726ba43f79c4", name: "img_wumpus_nitro_classic_boost", type: "png" };
 
-export default registerAsset.registerAsset(obj);
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "2e0d6978350694e35552111153599c69", name: "BoostTier3Icon", type: "png" });

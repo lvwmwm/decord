@@ -1,17 +1,17 @@
-// Module ID: 6484
-// Function ID: 57991
+// Module ID: 6505
+// Function ID: 6506
 // Name: dispatcher
-// Dependencies: [686, 2]
+// Dependencies: [709, 2]
 
-// Module 6484 (dispatcher)
+// Module 6505 (dispatcher)
 const result = require("set").fileFinishedImporting("actions/UserSettingsModalActionCreators.tsx");
 
 export default {
   close() {
-    importDefault(686).dispatch({ type: "USER_SETTINGS_MODAL_CLOSE" });
+    importDefault(709).dispatch({ type: "USER_SETTINGS_MODAL_CLOSE" });
   },
   setSection(section) {
-    let obj = importDefault(686);
+    let obj = importDefault(709);
     obj = { type: "USER_SETTINGS_MODAL_SET_SECTION", section };
     obj.dispatch(obj);
   }

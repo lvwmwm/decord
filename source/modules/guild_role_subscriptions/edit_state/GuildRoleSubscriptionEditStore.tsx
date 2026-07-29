@@ -1,9 +1,9 @@
-// Module ID: 14223
-// Function ID: 109286
+// Module ID: 14245
+// Function ID: 14246
 // Name: AllChannelAccessOptions
-// Dependencies: [621, 682, 2]
+// Dependencies: [644, 705, 2]
 
-// Module 14223 (AllChannelAccessOptions)
+// Module 14245 (AllChannelAccessOptions)
 import keys from "keys";
 
 let obj = keys.create((arg0) => {
@@ -14,11 +14,11 @@ let obj = keys.create((arg0) => {
       const callback = arg0;
       let closure_1 = arg1;
       return callback(outer1_1[1]).batchUpdates(() => callback((listings) => {
-        let obj = {};
+        let obj = { listings: null };
         obj = {};
         const merged = Object.assign(listings.listings);
-        obj[outer1_0] = outer1_1(listings.listings[outer1_0]);
-        obj.listings = obj;
+        obj[closure_0] = callback(listings.listings[closure_0]);
+        obj[0] = obj;
         return obj;
       }));
     },
@@ -28,11 +28,11 @@ let obj = keys.create((arg0) => {
       let closure_1 = arg1;
       return callback(outer1_1[1]).batchUpdates(() => {
         callback((editStateIdsForGroup) => {
-          let obj = {};
+          let obj = { editStateIdsForGroup: null };
           obj = {};
           const merged = Object.assign(editStateIdsForGroup.editStateIdsForGroup);
-          obj[outer1_0] = outer1_1(editStateIdsForGroup.editStateIdsForGroup[outer1_0]);
-          obj.editStateIdsForGroup = obj;
+          obj[closure_0] = callback(editStateIdsForGroup.editStateIdsForGroup[closure_0]);
+          obj[0] = obj;
           return obj;
         });
       });

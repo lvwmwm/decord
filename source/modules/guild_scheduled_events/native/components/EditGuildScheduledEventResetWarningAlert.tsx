@@ -1,29 +1,29 @@
-// Module ID: 8294
-// Function ID: 66420
+// Module ID: 8318
+// Function ID: 8319
 // Name: EditGuildScheduledEventResetWarningAlert
-// Dependencies: [31, 33, 4596, 1212, 2]
+// Dependencies: [19, 21, 4618, 1236, 2]
 // Exports: default
 
-// Module 8294 (EditGuildScheduledEventResetWarningAlert)
-import "result";
+// Module 8318 (EditGuildScheduledEventResetWarningAlert)
+import "noop";
 import { jsx } from "jsxProd";
 
 const require = arg1;
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/guild_scheduled_events/native/components/EditGuildScheduledEventResetWarningAlert.tsx");
+const result = require("componentDidMount").fileFinishedImporting("modules/guild_scheduled_events/native/components/EditGuildScheduledEventResetWarningAlert.tsx");
 
 export default function EditGuildScheduledEventResetWarningAlert(arg0) {
   let onClose;
   let onConfirm;
   ({ onClose, onConfirm } = arg0);
-  const obj = { onClose, onConfirm };
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj.title = intl.string(require(1212) /* getSystemLocale */.t.aNCYas);
-  const intl2 = require(1212) /* getSystemLocale */.intl;
-  obj.body = intl2.format(require(1212) /* getSystemLocale */.t.RWBa5X, {});
-  const intl3 = require(1212) /* getSystemLocale */.intl;
-  obj.confirmText = intl3.string(require(1212) /* getSystemLocale */.t["cY+Oob"]);
-  obj.confirmColor = importDefault(4596).Colors.GREEN;
-  const intl4 = require(1212) /* getSystemLocale */.intl;
-  obj.cancelText = intl4.string(require(1212) /* getSystemLocale */.t["ETE/oC"]);
-  return jsx(importDefault(4596), { onClose, onConfirm });
+  const obj = { onClose, onConfirm, title: null, body: null, confirmText: null, confirmColor: null, cancelText: null };
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj[2] = intl.string(require(1236) /* getSystemLocale */.t.aNCYas);
+  const intl2 = require(1236) /* getSystemLocale */.intl;
+  obj[3] = intl2.format(require(1236) /* getSystemLocale */.t.RWBa5X, {});
+  const intl3 = require(1236) /* getSystemLocale */.intl;
+  obj[4] = intl3.string(require(1236) /* getSystemLocale */.t["cY+Oob"]);
+  obj[5] = importDefault(4618).Colors.GREEN;
+  const intl4 = require(1236) /* getSystemLocale */.intl;
+  obj[6] = intl4.string(require(1236) /* getSystemLocale */.t["ETE/oC"]);
+  return jsx(importDefault(4618), { onClose, onConfirm, title: null, body: null, confirmText: null, confirmColor: null, cancelText: null });
 };

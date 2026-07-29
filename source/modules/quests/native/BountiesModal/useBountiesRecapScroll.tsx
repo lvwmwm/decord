@@ -1,39 +1,38 @@
-// Module ID: 14017
-// Function ID: 107101
+// Module ID: 14039
+// Function ID: 14040
 // Name: getRevealProgress
-// Dependencies: [31, 2]
+// Dependencies: [19, 2]
 // Exports: useBountiesRecapScroll
 
-// Module 14017 (getRevealProgress)
-import result from "result";
+// Module 14039 (getRevealProgress)
+import noop from "noop";
 
-let closure_1 = { code: "function getRevealProgress_useBountiesRecapScrollTsx1(scrollOffset,startOffset,revealHeight){if(revealHeight<=0){return 0;}return(scrollOffset-startOffset)/revealHeight;}" };
-const tmp2 = (() => {
-  export function getRevealProgress(sharedValue2, lastBountyScrollOffset, height2) {
-    let num = 0;
-    if (height2 > 0) {
-      num = (sharedValue2 - lastBountyScrollOffset) / height2;
-    }
-    return num;
+function getRevealProgress(scrollY, lastBountyScrollOffset, height3) {
+  let num = 0;
+  if (height3 > 0) {
+    num = (scrollY - lastBountyScrollOffset) / height3;
   }
-  getRevealProgress.__closure = {};
-  getRevealProgress.__workletHash = 9769647749947;
-  getRevealProgress.__initData = closure_1;
-  return getRevealProgress;
-})();
-let closure_2 = tmp2;
+  return num;
+}
+getRevealProgress.__closure = {};
+getRevealProgress.__workletHash = 9769647749947;
+getRevealProgress.__initData = { code: "function getRevealProgress_useBountiesRecapScrollTsx1(scrollOffset,startOffset,revealHeight){if(revealHeight<=0){return 0;}return(scrollOffset-startOffset)/revealHeight;}" };
 const result = require("set").fileFinishedImporting("modules/quests/native/BountiesModal/useBountiesRecapScroll.tsx");
 
 export const RECAP_SNAP_EPSILON = 2;
+export { getRevealProgress };
 export const useBountiesRecapScroll = function useBountiesRecapScroll(listRef) {
   listRef = listRef.listRef;
   const enabled = listRef.enabled;
   const offsets = listRef.offsets;
+  let callback;
+  let callback2;
   const items = [listRef];
-  const callback = listRef.useCallback((offset) => {
+  callback = listRef.useCallback((arg0) => {
     if (null != listRef.current) {
-      const current = listRef.current;
-      const obj = { offset, animated: true };
+      const current = tmp.current;
+      const obj = { offset: null, animated: true };
+      obj[0] = arg0;
       current.scrollToOffset(obj);
     }
   }, items);
@@ -44,17 +43,23 @@ export const useBountiesRecapScroll = function useBountiesRecapScroll(listRef) {
   const callback1 = listRef.useCallback(() => {
     callback(offsets.lastBounty);
   }, items1);
-  const callback2 = listRef.useCallback((arg0) => {
+  callback2 = listRef.useCallback((arg0) => {
+    let lastBounty;
+    let revealHeight;
     if (enabled) {
       if (arg0 > offsets.lastBounty) {
-        if (offsets(arg0, offsets.lastBounty, offsets.revealHeight) >= 0.25) {
-          let lastBounty = offsets.fullRecap;
-        } else {
-          lastBounty = offsets.lastBounty;
+        ({ revealHeight, lastBounty } = tmp2);
+        if (typeof enabled !== "find") {
+          HermesBuiltin.throwTypeError();
         }
+        let num = 0;
+        if (revealHeight > 0) {
+          num = (arg0 - lastBounty) / revealHeight;
+        }
+        const tmp3 = num >= 0.25 ? tmp2.fullRecap : tmp2.lastBounty;
         const _Math = Math;
-        if (Math.abs(arg0 - lastBounty) >= 2) {
-          callback(lastBounty);
+        if (Math.abs(arg0 - tmp3) >= 2) {
+          callback(tmp3);
         }
       }
     }

@@ -1,14 +1,15 @@
-// Module ID: 16263
-// Function ID: 125952
+// Module ID: 16298
+// Function ID: 16299
 // Name: isParentalConsentWarningFetchEnabled
-// Dependencies: [1428, 2]
+// Dependencies: [1452, 2]
 // Exports: isParentalConsentWarningFetchEnabled
 
-// Module 16263 (isParentalConsentWarningFetchEnabled)
+// Module 16298 (isParentalConsentWarningFetchEnabled)
 import ApexExperiment from "ApexExperiment";
 
-const obj = { kind: "user", name: "2026-07-parental-consent-warning-fetch", defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } };
-let closure_0 = ApexExperiment.createApexExperiment(obj);
+const obj = { 1: null };
+obj[1] = { enabled: true };
+let closure_0 = ApexExperiment.createApexExperiment({ kind: "user", name: "2026-07-parental-consent-warning-fetch", defaultConfig: { enabled: false }, variations: obj });
 const result = require("set").fileFinishedImporting("modules/parent_tools/ParentalConsentWarningFetchExperiment.tsx");
 
 export const isParentalConsentWarningFetchEnabled = function isParentalConsentWarningFetchEnabled(parental_consent_warning_manager) {

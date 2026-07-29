@@ -1,21 +1,21 @@
-// Module ID: 15767
-// Function ID: 121486
+// Module ID: 15802
+// Function ID: 15803
 // Name: renderItemJSX
-// Dependencies: [31, 27, 1922, 5902, 1838, 4361, 33, 4165, 689, 15768, 6669, 566, 4584, 15769, 4695, 15770, 15772, 5548, 15773, 15775, 6145, 15776, 15782, 15783, 15785, 15067, 4161, 1324, 1212, 1450, 15771, 7655, 2]
+// Dependencies: [19, 17, 1946, 5921, 1862, 4386, 21, 4189, 712, 15803, 6690, 589, 4606, 15804, 4717, 15805, 15807, 5566, 15808, 15810, 6163, 15811, 15817, 15818, 15820, 15100, 4185, 1348, 1236, 1474, 15806, 7678, 2]
 
-// Module 15767 (renderItemJSX)
-import importAllResult from "_isNativeReflectConstruct";
-import { View } from "useIsMobileVisualRefreshExperimentEnabled";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_6 from "_isNativeReflectConstruct";
-import closure_7 from "_createForOfIteratorHelperLoose";
+// Module 15802 (renderItemJSX)
+import importAllResult from "renderChannelBadge";
+import { View } from "GuildIconSizes";
+import _getSystemLocale from "_getSystemLocale";
+import updateGuildUnreadSentinel from "updateGuildUnreadSentinel";
+import createGuildRecordFromRust from "createGuildRecordFromRust";
 import { UnreadSetting } from "ReadStateTypes";
-import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import jsxProd from "module_15811";
+import createCacheKey from "createCacheKey";
 
-let closure_10;
-let closure_11;
-let closure_9;
+let c10;
+let c9;
+let unpackModuleId;
 const require = arg1;
 function renderItemJSX(result) {
   result = result.result;
@@ -23,176 +23,186 @@ function renderItemJSX(result) {
     return null;
   } else {
     const type = result.type;
-    if (require(6145) /* sortByMatchScore */.AutocompleterResultTypes.GUILD === type) {
-      let obj = { guild: result.record };
+    if (require(6163) /* sortByMatchScore */.AutocompleterResultTypes.GUILD === type) {
+      let obj = { guild: null };
+      obj[0] = result.record;
       return callback(closure_14, obj);
-    } else if (require(6145) /* sortByMatchScore */.AutocompleterResultTypes.TEXT_CHANNEL === type) {
-      obj = { channel: result.record, navigationReplace: true, showGuildBadgeIcon: true };
-      return callback(importDefault(15776), obj);
-    } else if (require(6145) /* sortByMatchScore */.AutocompleterResultTypes.GROUP_DM === type) {
-      let obj1 = { channel: result.record, navigationReplace: true };
-      return callback(importDefault(15782), obj1);
-    } else if (require(6145) /* sortByMatchScore */.AutocompleterResultTypes.VOICE_CHANNEL === type) {
-      const obj2 = { channel: result.record };
-      return callback(importDefault(15783), obj2);
-    } else if (require(6145) /* sortByMatchScore */.AutocompleterResultTypes.USER === type) {
-      ({ record: obj4.user, comparator: obj4.comparator } = result);
-      return callback(importDefault(15785), {});
-    } else if (require(6145) /* sortByMatchScore */.AutocompleterResultTypes.HEADER === type) {
-      obj1 = require(15067) /* renderCategoryItem */;
-      const obj4 = { name: result.record.text, styles: tmp, isRefreshEnabled: tmp2 };
-      return obj1.renderCategoryItem(obj4);
+    } else if (tmp14(6163).AutocompleterResultTypes.TEXT_CHANNEL === type) {
+      obj = { channel: null, navigationReplace: true, showGuildBadgeIcon: true };
+      obj[0] = result.record;
+      return callback(importDefault(15811), obj);
+    } else if (tmp14(6163).AutocompleterResultTypes.GROUP_DM === type) {
+      const obj1 = { channel: null, navigationReplace: true };
+      obj1[0] = result.record;
+      return callback(importDefault(15817), obj1);
+    } else if (tmp14(6163).AutocompleterResultTypes.VOICE_CHANNEL === type) {
+      const obj2 = { channel: null };
+      obj2[0] = result.record;
+      return callback(importDefault(15818), obj2);
+    } else if (tmp14(6163).AutocompleterResultTypes.USER === type) {
+      ({ record: obj4[0], comparator: obj4[1] } = result);
+      return callback(importDefault(15820), { user: null, comparator: null });
+    } else if (tmp14(6163).AutocompleterResultTypes.HEADER === type) {
+      const obj4 = { name: null, styles: null, isRefreshEnabled: null };
+      obj4[0] = result.record.text;
+      obj4[1] = tmp;
+      obj4[2] = tmp2;
+      return tmp14(15100).renderCategoryItem(obj4);
     } else {
-      obj = { variant: "text-sm/semibold", children: result.type };
-      return callback(require(4161) /* Text */.Text, obj);
+      obj = { variant: "text-sm/semibold", children: null };
+      obj[1] = result.type;
+      return callback(tmp14(4185).Text, obj);
     }
   }
 }
 function renderSearchResultsSection() {
-  const obj = {};
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj.name = intl.string(require(1212) /* getSystemLocale */.t["zkoeq/"]);
-  return callback(closure_15, obj);
+  const obj = { name: null };
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj[0] = intl.string(require(1236) /* getSystemLocale */.t["zkoeq/"]);
+  return callback(closure_16, obj);
 }
-({ jsx: closure_9, Fragment: closure_10, jsxs: closure_11 } = jsxProd);
+let c3 = importAllResult;
+({ jsx: c9, Fragment: c10, jsxs: unpackModuleId } = jsxProd);
 let closure_12 = { bottom: 24 };
-let obj = { listContainer: { minHeight: 16 }, list: { flex: -1, marginTop: 8 } };
-obj = { borderRadius: require("_createForOfIteratorHelperLoose").radii.sm };
-obj.guildIcon = obj;
-_createForOfIteratorHelperLoose = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW };
-obj.categoryWrapper = _createForOfIteratorHelperLoose;
-obj.pressable = { flex: 1 };
-obj.pressableUnderlayColor = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.INTERACTIVE_BACKGROUND_ACTIVE };
-let closure_13 = _createForOfIteratorHelperLoose.createStyles(obj);
+let obj = { listContainer: { minHeight: 16 }, list: { flex: -1, marginTop: 8 }, guildIcon: null, categoryWrapper: null, pressable: null, pressableUnderlayColor: null };
+obj = { borderRadius: require("Themes").radii.sm };
+obj[2] = obj;
+createCacheKey = { backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW };
+obj[3] = createCacheKey;
+obj[4] = { flex: 1 };
+obj[5] = { backgroundColor: require("Themes").colors.INTERACTIVE_BACKGROUND_ACTIVE };
+let closure_13 = createCacheKey.createStyles(obj);
 let closure_14 = importAllResult.memo((guild) => {
   let isMentionLowImportance;
   let mentionCount;
   let unread;
   guild = guild.guild;
   const tmp = callback3();
-  const tmp2 = importDefault(15768)();
+  const tmp2 = importDefault(15803)();
   const items = [guild.id];
   const callback = importAllResult.useCallback(() => {
     guild(outer1_2[10]).transitionToGuild(guild.id);
   }, items);
-  let obj = guild(566);
-  const items1 = [closure_6];
+  let obj = guild(589);
+  const items1 = [updateGuildUnreadSentinel];
   const stateFromStoresObject = obj.useStateFromStoresObject(items1, () => ({ unread: outer1_6.hasUnread(guild.id), mentionCount: outer1_6.getMentionCount(guild.id), isMentionLowImportance: outer1_6.getIsMentionLowImportance(guild.id) }));
   ({ unread, mentionCount, isMentionLowImportance } = stateFromStoresObject);
-  let obj1 = guild(4584);
+  let obj1 = guild(4606);
   const fontScale = obj1.useFontScale();
-  let obj2 = guild(566);
-  const items2 = [_isNativeReflectConstruct];
-  const stateFromStores = obj2.useStateFromStores(items2, () => outer1_5.locale);
-  obj = { onPress: callback, underlayColor: tmp.pressableUnderlayColor.backgroundColor, style: items3 };
+  let obj2 = guild(589);
+  const items2 = [_getSystemLocale];
+  const stateFromStores = obj2.useStateFromStores(items2, () => locale.locale);
+  obj = { onPress: callback, underlayColor: tmp.pressableUnderlayColor.backgroundColor, style: items3, children: null };
   items3 = [tmp.pressable, { borderRadius: tmp2.container.borderRadius }];
-  obj = {};
-  const tmp7 = importDefault(15769);
+  obj = { children: null };
+  const tmp7 = importDefault(15804);
   obj1 = { unread, resolvedUnreadSetting: UnreadSetting.ALL_MESSAGES };
-  const items4 = [callback(importDefault(15772), obj1), , ];
+  const items4 = [callback(importDefault(15807), obj1), , ];
   obj2 = { size: tmp2.icon.guildIconSize, guild, style: items5 };
   items5 = [tmp.guildIcon, tmp2.icon.margin];
-  items4[1] = callback(importDefault(5548), obj2);
-  const obj3 = { name: guild.name };
-  const tmp8 = importDefault(15770);
-  obj3.mentionBadge = importDefault(15775)({ mentionCount, locale: stateFromStores, isMentionLowImportance });
-  items4[2] = importDefault(15773)(obj3);
-  obj.children = items4;
-  obj.children = tmp8(callback2(closure_10, obj), { fontScale });
-  return tmp7(callback(guild(4695).PressableHighlight, obj));
+  items4[1] = callback(importDefault(5566), obj2);
+  const obj3 = { name: guild.name, mentionBadge: null };
+  const tmp8 = importDefault(15805);
+  obj3[1] = importDefault(15810)({ mentionCount, locale: stateFromStores, isMentionLowImportance });
+  items4[2] = importDefault(15808)(obj3);
+  obj[0] = items4;
+  obj[3] = tmp8(callback2(closure_10, obj), { fontScale });
+  return tmp7(callback(guild(4717).PressableHighlight, obj));
 });
-let closure_15 = importAllResult.memo((arg0) => {
+let closure_16 = importAllResult.memo((arg0) => {
   let name;
   let note;
   let onPress;
   ({ name, onPress, note } = arg0);
-  let obj = require(15067) /* renderCategoryItem */;
+  let obj = require(15100) /* renderCategoryItem */;
   const categoryStyles = obj.useCategoryStyles();
   const tmp = callback3();
-  const tmp3 = importDefault(1324)("WrappedCategoryItem");
-  obj = { style: tmp.categoryWrapper, children: require(15067) /* renderCategoryItem */.renderCategoryItem({ name, onPress, note, styles: categoryStyles, isRefreshEnabled: tmp3 }) };
+  const tmp3 = importDefault(1348)("WrappedCategoryItem");
+  obj = { style: tmp.categoryWrapper, children: require(15100) /* renderCategoryItem */.renderCategoryItem({ name, onPress, note, styles: categoryStyles, isRefreshEnabled: tmp3 }) };
   return callback(View, obj);
 });
-let obj2 = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.INTERACTIVE_BACKGROUND_ACTIVE };
+let obj2 = { backgroundColor: require("Themes").colors.INTERACTIVE_BACKGROUND_ACTIVE };
 const memoResult = importAllResult.memo(function InitialResultsInner(history) {
   history = history.history;
   const unreads = history.unreads;
   const toggleExpandedHistory = history.toggleExpandedHistory;
   const expandedHistory = history.expandedHistory;
-  const selectedGuildId = history.selectedGuildId;
+  let str = history.selectedGuildId;
+  let categoryStyles;
+  let c6;
+  let stateFromStores;
+  let c8;
+  let c9;
+  let fontScale;
   const tmp = callback3();
   let obj = history(toggleExpandedHistory[25]);
-  const categoryStyles = obj.useCategoryStyles();
-  let tmp3 = unreads(toggleExpandedHistory[27])("InitialResults");
-  let closure_6 = tmp3;
+  categoryStyles = obj.useCategoryStyles();
+  const tmp5 = unreads(toggleExpandedHistory[27])("InitialResults");
+  c6 = tmp5;
   const items = [stateFromStores];
   stateFromStores = history(toggleExpandedHistory[11]).useStateFromStores(items, () => {
-    if (null != selectedGuildId) {
-      const guild = stateFromStores.getGuild(selectedGuildId);
+    if (null != str) {
+      const guild = stateFromStores.getGuild(tmp);
       let name;
-      if (null != guild) {
+      if (guild != null) {
         name = guild.name;
       }
       return name;
     }
   });
-  const items1 = [history, unreads, categoryStyles, tmp3];
+  const items1 = [history, unreads, categoryStyles, tmp5];
   const callback = expandedHistory.useCallback((arg0, arg1) => {
-    const obj = {};
     if (0 === arg0) {
       let tmp3 = history[arg1];
     } else {
       tmp3 = unreads[arg1];
     }
-    obj.result = tmp3;
-    obj.categoryStyles = categoryStyles;
-    obj.isRefreshEnabled = closure_6;
-    return outer1_16(obj);
+    return outer1_15({ result: tmp3, categoryStyles, isRefreshEnabled: c6 });
   }, items1);
   const someResult = unreads.some((type) => type.type === history(toggleExpandedHistory[20]).AutocompleterResultTypes.VOICE_CHANNEL);
-  const UnreadSetting = someResult;
+  c8 = someResult;
   const items2 = [toggleExpandedHistory, expandedHistory, stateFromStores, someResult];
   const callback1 = expandedHistory.useCallback((arg0) => {
     if (0 === arg0) {
-      let obj = {};
+      let obj = { name: null, note: null, onPress: null };
       const intl3 = history(toggleExpandedHistory[28]).intl;
-      obj.name = intl3.string(history(toggleExpandedHistory[28]).t["Xmh+5e"]);
-      obj = { variant: "text-xs/semibold", color: "text-brand" };
+      obj[0] = intl3.string(history(toggleExpandedHistory[28]).t["Xmh+5e"]);
+      obj = { variant: "text-xs/semibold", color: "text-brand", children: null };
       const intl4 = history(toggleExpandedHistory[28]).intl;
       const string = intl4.string;
       let t2 = history(toggleExpandedHistory[28]).t;
       if (expandedHistory) {
         t2 = string(t2["3BdvgI"]);
-        obj.children = t2;
-        let tmp22 = obj;
+        obj[2] = t2;
+        let tmp14 = obj;
       } else {
-        obj.children = string(t2["/XSoJ+"]);
-        tmp22 = obj;
+        obj[2] = string(t2["/XSoJ+"]);
+        tmp14 = obj;
       }
-      obj.note = closure_9(history(toggleExpandedHistory[26]).Text, tmp22);
-      obj.onPress = toggleExpandedHistory;
-      const tmp19 = closure_9;
+      obj[1] = tmp(history(toggleExpandedHistory[26]).Text, tmp14);
+      obj[2] = toggleExpandedHistory;
+    } else if (null != stateFromStores) {
+      const intl2 = history(toggleExpandedHistory[28]).intl;
+      let t = history(toggleExpandedHistory[28]).t;
+      t = { guildName: null };
+      t[0] = tmp17;
+      intl2.formatToPlainString(c8 ? t["+DrQVp"] : t["+lFj35"], t);
+      const tmp9 = c8 ? t["+DrQVp"] : t["+lFj35"];
     } else {
-      const obj1 = {};
-      if (null != stateFromStores) {
-        const intl2 = history(toggleExpandedHistory[28]).intl;
-        let t = history(toggleExpandedHistory[28]).t;
-        t = { guildName: stateFromStores };
-        intl2.formatToPlainString(closure_8 ? t["+DrQVp"] : t["+lFj35"], t);
-        const tmp13 = closure_8 ? t["+DrQVp"] : t["+lFj35"];
-      } else {
-        const intl = history(toggleExpandedHistory[28]).intl;
-        t = history(toggleExpandedHistory[28]).t;
-        obj1.name = intl.string(closure_8 ? t.C5viSQ : t.ieCAhD);
-        return tmp(tmp2, obj1);
-      }
+      const intl = history(toggleExpandedHistory[28]).intl;
+      t = history(toggleExpandedHistory[28]).t;
+      const obj1 = { name: null };
+      obj1[0] = intl.string(c8 ? t.C5viSQ : t.ieCAhD);
+      return tmp(tmp2, obj1);
     }
   }, items2);
-  const tmp8 = unreads(toggleExpandedHistory[9])();
-  let closure_9 = tmp8;
+  const tmp10 = unreads(toggleExpandedHistory[9])();
+  c9 = tmp10;
   const obj2 = history(toggleExpandedHistory[11]);
-  const fontScale = history(toggleExpandedHistory[12]).useFontScale();
-  const items3 = [fontScale, history, unreads, tmp8];
+  const tmp2 = toggleExpandedHistory;
+  const tmp4 = unreads;
+  fontScale = history(toggleExpandedHistory[12]).useFontScale();
+  const items3 = [fontScale, history, unreads, tmp10];
   const callback2 = expandedHistory.useCallback((arg0, arg1) => {
     if (null == arg1) {
       return 0;
@@ -202,10 +212,12 @@ const memoResult = importAllResult.memo(function InitialResultsInner(history) {
       } else {
         tmp3 = unreads[arg1];
       }
+      let tmp6 = toggleExpandedHistory;
       if (tmp3.type === history(toggleExpandedHistory[20]).AutocompleterResultTypes.VOICE_CHANNEL) {
-        let diff = unreads(toggleExpandedHistory[30])(fontScale) + tmp8.voiceUsers.height - 2;
+        tmp6 = unreads(tmp6[30])(fontScale);
+        let diff = tmp6 + _undefined.voiceUsers.height - 2;
       } else {
-        diff = unreads(toggleExpandedHistory[30])(fontScale);
+        diff = unreads(tmp6[30])(fontScale);
       }
     }
   }, items3);
@@ -213,66 +225,78 @@ const memoResult = importAllResult.memo(function InitialResultsInner(history) {
     const _Math = Math;
     Math.max(5 - unreads.length, 2);
   }
-  obj = { style: tmp.listContainer };
+  obj = { style: tmp.listContainer, children: null };
   if (history.length > 0) {
-    obj = { optimizeListItemRender: true, batchesToRender: 6, style: tmp.list, sectionSize: tmp8.category.height, itemSize: callback2, renderItem: callback, renderSection: callback1 };
-    const items4 = [tmp11, unreads.length];
-    obj.sections = items4;
-    obj.sectionFooterSize = 8;
-    obj.footerSize = 8;
-    obj.scrollIndicatorInsets = closure_12;
-    obj.chunkBase = unreads(toggleExpandedHistory[29])().height;
-    obj.keyboardShouldPersistTaps = "always";
-    let str2 = "default";
-    if (null != selectedGuildId) {
-      str2 = selectedGuildId;
+    obj = { optimizeListItemRender: true, batchesToRender: 6, style: null, sectionSize: null, itemSize: null, renderItem: null, renderSection: null, sections: null, sectionFooterSize: 8, footerSize: 8, scrollIndicatorInsets: null, chunkBase: null, keyboardShouldPersistTaps: "always" };
+    obj[2] = tmp.list;
+    obj[3] = tmp10.category.height;
+    obj[4] = callback2;
+    obj[5] = callback;
+    obj[6] = callback1;
+    const items4 = [tmp13, unreads.length];
+    obj[7] = items4;
+    obj[10] = closure_12;
+    obj[11] = unreads(toggleExpandedHistory[29])().height;
+    if (str == null) {
+      str = "default";
     }
-    let tmp15Result = closure_9(unreads(toggleExpandedHistory[31]), obj, str2);
-    const tmp15 = closure_9;
-    const tmp18 = unreads(toggleExpandedHistory[31]);
+    let tmp14Result = tmp14(tmp4(tmp2[31]), obj, str);
+    const tmp4Result = tmp4(tmp2[31]);
   } else {
-    tmp15Result = null;
+    tmp14Result = null;
   }
-  obj.children = tmp15Result;
-  return closure_9(selectedGuildId, obj);
+  obj[1] = tmp14Result;
+  return c9(str, obj);
 });
 const memoResult1 = importAllResult.memo(function SearchResultsInner(results) {
   results = results.results;
+  let categoryStyles;
+  let dependencyMap;
+  let ref;
+  let c4;
+  let fontScale;
   const tmp = callback3();
-  let obj = results(15067);
-  const categoryStyles = obj.useCategoryStyles();
-  const tmp3 = categoryStyles(1324)("SearchResults");
-  const dependencyMap = tmp3;
-  const items = [results, categoryStyles, tmp3];
-  let tmp5 = null;
-  const callback = ref.useCallback((arg0, arg1) => outer1_16({ result: results[arg1], categoryStyles, isRefreshEnabled: closure_2 }), items);
+  let obj = results(15100);
+  categoryStyles = obj.useCategoryStyles();
+  const tmp5 = categoryStyles(1348)("SearchResults");
+  dependencyMap = tmp5;
+  const items = [results, categoryStyles, tmp5];
+  const callback = ref.useCallback((arg0, arg1) => outer1_15({ result: results[arg1], categoryStyles, isRefreshEnabled: c2 }), items);
   ref = ref.useRef(null);
   const items1 = [results.query];
   const effect = ref.useEffect(() => {
     const current = ref.current;
-    if (!tmp) {
-      current.scrollToTop(false);
+    if (current != null) {
+      const scrollToTop = current.scrollToTop;
+      if (scrollToTop != null) {
+        scrollToTop(false);
+      }
     }
   }, items1);
-  const tmp8 = categoryStyles(15768)();
-  const View = tmp8;
-  const fontScale = results(4584).useFontScale();
-  const items2 = [fontScale, results, tmp8];
-  obj = { style: tmp.listContainer };
+  const tmp9 = categoryStyles(15803)();
+  c4 = tmp9;
+  fontScale = results(4606).useFontScale();
+  const items2 = [fontScale, results, tmp9];
+  obj = { style: tmp.listContainer, children: null };
+  let tmp12Result = null;
   if (results.length > 0) {
-    obj = { ref, optimizeListItemRender: true, batchesToRender: 6, style: tmp.list, sectionSize: tmp8.category.height, itemSize: tmp10, renderSection: renderSearchResultsSection, renderItem: callback };
+    obj = { ref: null, optimizeListItemRender: true, batchesToRender: 6, style: null, sectionSize: null, itemSize: null, renderSection: null, renderItem: null, sections: null, footerSize: 16, scrollIndicatorInsets: null, chunkBase: null, keyboardShouldPersistTaps: "always" };
+    obj[0] = ref;
+    obj[3] = tmp.list;
+    obj[4] = tmp9.category.height;
+    obj[5] = tmp11;
+    obj[6] = renderSearchResultsSection;
+    obj[7] = callback;
     const items3 = [results.length];
-    obj.sections = items3;
-    obj.footerSize = 16;
-    obj.scrollIndicatorInsets = closure_12;
-    obj.chunkBase = categoryStyles(1450)().height;
-    obj.keyboardShouldPersistTaps = "always";
-    tmp5 = callback(categoryStyles(7655), obj);
+    obj[8] = items3;
+    obj[10] = closure_12;
+    obj[11] = categoryStyles(1474)().height;
+    tmp12Result = tmp12(categoryStyles(7678), obj);
   }
-  obj.children = tmp5;
-  return callback(View, obj);
+  obj[1] = tmp12Result;
+  return closure_9(c4, obj);
 });
-let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/launchpad/native/LaunchPadSearchResults.tsx");
+let result = require("_getSystemLocale").fileFinishedImporting("modules/launchpad/native/LaunchPadSearchResults.tsx");
 
 export const InitialResults = memoResult;
 export const SearchResults = memoResult1;

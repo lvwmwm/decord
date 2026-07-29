@@ -1,56 +1,42 @@
-// Module ID: 10796
-// Function ID: 83613
+// Module ID: 10820
+// Function ID: 10821
 // Name: SingleVideoCall
-// Dependencies: [31, 10214, 33, 1557, 5497, 10546, 1273, 10530, 4358, 8335, 2]
+// Dependencies: [19, 10235, 21, 1581, 5515, 10570, 1297, 10554, 4383, 8359, 2]
 // Exports: default
 
-// Module 10796 (SingleVideoCall)
-import result from "result";
-import resetFocusTimer from "resetFocusTimer";
+// Module 10820 (SingleVideoCall)
+import noop from "noop";
+import VoiceChatDrawerState from "VoiceChatDrawerState";
 import { jsx } from "jsxProd";
 
-let closure_4;
-let closure_5;
+let c4;
+let c5;
 const require = arg1;
-({ resetFocus: closure_4, toggleFocus: closure_5 } = resetFocusTimer);
+({ resetFocus: c4, toggleFocus: c5 } = VoiceChatDrawerState);
 const result = require("jsxProd").fileFinishedImporting("modules/video_calls/native/components/SingleVideoCall.tsx");
 
 export default function SingleVideoCall(channel) {
   channel = channel.channel;
+  let bottom;
+  let right;
+  let analyticsLocations;
   const rect = bottom(right[3])();
   bottom = rect.bottom;
   right = rect.right;
-  const analyticsLocations = bottom(right[4])().analyticsLocations;
+  analyticsLocations = bottom(right[4])().analyticsLocations;
   const items = [right, bottom];
   const memo = analyticsLocations.useMemo(() => ({ marginRight: right, marginBottom: bottom }), items);
-  const obj = {
-    gestureEnabled: true,
-    participant: channel.participant,
-    avatarSize: channel(right[6]).AvatarSizes.PROFILE,
-    resizeMode: channel(right[7]).ResizeMode.AUTO,
-    statusStyle: memo,
-    onSingleTap: closure_5,
-    onDoubleTap() {
-      outer1_4();
-      const participant = bottom(right[8]).selectParticipant(channel.id, null);
-    },
-    onLongPress(user) {
-      bottom(right[9])({ userId: user.user.id, channelId: channel.id, isVoiceContext: true, sourceAnalyticsLocations: analyticsLocations });
-    }
+  const obj = { gestureEnabled: true, participant: channel.participant, avatarSize: null, resizeMode: null, statusStyle: null, onSingleTap: null, onDoubleTap: null, onLongPress: null };
+  obj[2] = channel(right[6]).AvatarSizes.PROFILE;
+  obj[3] = channel(right[7]).ResizeMode.AUTO;
+  obj[4] = memo;
+  obj[5] = closure_5;
+  obj[6] = function onDoubleTap() {
+    outer1_4();
+    const participant = bottom(right[8]).selectParticipant(channel.id, null);
   };
-  return jsx(bottom(right[5]), {
-    gestureEnabled: true,
-    participant: channel.participant,
-    avatarSize: channel(right[6]).AvatarSizes.PROFILE,
-    resizeMode: channel(right[7]).ResizeMode.AUTO,
-    statusStyle: memo,
-    onSingleTap: closure_5,
-    onDoubleTap() {
-      outer1_4();
-      const participant = bottom(right[8]).selectParticipant(channel.id, null);
-    },
-    onLongPress(user) {
-      bottom(right[9])({ userId: user.user.id, channelId: channel.id, isVoiceContext: true, sourceAnalyticsLocations: analyticsLocations });
-    }
-  });
+  obj[7] = function onLongPress(user) {
+    bottom(right[9])({ userId: user.user.id, channelId: channel.id, isVoiceContext: true, sourceAnalyticsLocations: analyticsLocations });
+  };
+  return jsx(bottom(right[5]), { gestureEnabled: true, participant: channel.participant, avatarSize: null, resizeMode: null, statusStyle: null, onSingleTap: null, onDoubleTap: null, onLongPress: null });
 };

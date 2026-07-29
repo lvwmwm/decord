@@ -1,20 +1,20 @@
-// Module ID: 16554
-// Function ID: 128856
+// Module ID: 16589
+// Function ID: 16590
 // Name: useTrialActiveUserLimitOptions
-// Dependencies: [31, 1212, 2]
+// Dependencies: [19, 1236, 2]
 // Exports: default
 
-// Module 16554 (useTrialActiveUserLimitOptions)
-import result from "result";
+// Module 16589 (useTrialActiveUserLimitOptions)
+import noop from "noop";
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/guild_role_subscriptions/useTrialActiveUserLimitOptions.tsx");
 
 export default function useTrialActiveUserLimitOptions() {
   return React.useMemo(() => {
-    const obj = { value: null };
-    const intl = outer1_0(outer1_1[1]).intl;
-    obj.label = intl.string(outer1_0(outer1_1[1]).t.zHfL6o);
+    const obj = { value: null, label: null };
+    const intl = callback(1236).intl;
+    obj[1] = intl.string(callback(1236).t.zHfL6o);
     const items = [obj, { value: 10, label: "10" }, { value: 25, label: "25" }, { value: 50, label: "50" }, { value: 100, label: "100" }];
     return items;
   }, []);

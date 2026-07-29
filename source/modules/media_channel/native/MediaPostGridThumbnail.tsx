@@ -1,19 +1,19 @@
-// Module ID: 11164
-// Function ID: 86684
+// Module ID: 11188
+// Function ID: 11189
 // Name: MediaPostGridThumbnailAndroid
-// Dependencies: [31, 27, 33, 11162, 5119, 477, 2]
+// Dependencies: [19, 17, 21, 11186, 5141, 500, 2]
 // Exports: default
 
-// Module 11164 (MediaPostGridThumbnailAndroid)
-import "result";
+// Module 11188 (MediaPostGridThumbnailAndroid)
+import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
 
-let closure_3;
-let closure_4;
-let closure_5;
+let c3;
+let c4;
+let c5;
 let closure_6;
-let closure_7;
+let error;
 const require = arg1;
 function MediaPostGridThumbnailAndroid(arg0) {
   let androidStyle;
@@ -23,27 +23,35 @@ function MediaPostGridThumbnailAndroid(arg0) {
   let source;
   ({ shouldSpoiler, blurTheme, source, androidStyle, backgroundImagesource } = arg0);
   if (null == backgroundImagesource) {
-    let obj = { style: androidStyle, source };
+    let obj = { style: null, source: null, blurRadius: null, resizeMode: "cover", children: null };
+    obj[0] = androidStyle;
+    obj[1] = source;
     let num = 0;
     if (shouldSpoiler) {
       num = 10;
     }
-    obj.blurRadius = num;
-    obj.resizeMode = "cover";
-    obj = { shouldSpoiler, blurTheme };
-    obj.children = callback(require(11162) /* ForumPostMediaAndroid */.ForumPostMediaSpoiler, obj);
-    let tmp2Result = callback(closure_3, obj);
-    const tmp2 = callback;
+    obj[2] = num;
+    obj = { shouldSpoiler: null, blurTheme: null };
+    obj[0] = shouldSpoiler;
+    obj[1] = blurTheme;
+    obj[4] = callback(require(11186) /* ForumPostMediaAndroid */.ForumPostMediaSpoiler, obj);
+    let tmp2Result = tmp2(closure_3, obj);
     const tmp3 = closure_3;
   } else {
-    obj = { style: androidStyle, source: backgroundImagesource, resizeMode: "cover" };
-    const obj1 = { opacity: 0.2 };
-    obj.imageStyle = obj1;
-    const obj2 = { style: closure_4.absoluteFill, source, resizeMode: tmp };
-    const items = [callback(importDefault(5119), obj2), ];
-    const obj3 = { shouldSpoiler, blurTheme };
-    items[1] = callback(require(11162) /* ForumPostMediaAndroid */.ForumPostMediaSpoiler, obj3);
-    obj.children = items;
+    obj = { style: null, source: null, resizeMode: "cover", imageStyle: null, children: null };
+    obj[0] = androidStyle;
+    obj[1] = backgroundImagesource;
+    obj[3] = { opacity: 0.2 };
+    const obj1 = { style: null, source: null, resizeMode: null };
+    obj1[0] = closure_4.absoluteFill;
+    obj1[1] = source;
+    obj1[2] = tmp;
+    const items = [callback(importDefault(5141), obj1), ];
+    const obj2 = { shouldSpoiler: null, blurTheme: null };
+    obj2[0] = shouldSpoiler;
+    obj2[1] = blurTheme;
+    items[1] = callback(require(11186) /* ForumPostMediaAndroid */.ForumPostMediaSpoiler, obj2);
+    obj[4] = items;
     tmp2Result = callback2(closure_3, obj);
   }
   return tmp2Result;
@@ -57,33 +65,40 @@ function MediaPostGridThumbnailIOS(arg0) {
   let source;
   ({ shouldSpoiler, blurTheme, source, iosStyle, backgroundImagesource, resizeMode } = arg0);
   if (null == backgroundImagesource) {
-    let obj = {};
-    obj = { style: iosStyle, source, resizeMode };
-    const items = [callback(importDefault(5119), obj), ];
-    obj = { shouldSpoiler, blurTheme };
-    items[1] = callback(require(11162) /* ForumPostMediaAndroid */.ForumPostMediaSpoiler, obj);
-    obj.children = items;
+    let obj = { children: null };
+    obj = { style: null, source: null, resizeMode: null };
+    obj[0] = iosStyle;
+    obj[1] = source;
+    obj[2] = resizeMode;
+    const items = [callback(importDefault(5141), obj), ];
+    obj = { shouldSpoiler: null, blurTheme: null };
+    obj[0] = shouldSpoiler;
+    obj[1] = blurTheme;
+    items[1] = callback(require(11186) /* ForumPostMediaAndroid */.ForumPostMediaSpoiler, obj);
+    obj[0] = items;
     let obj1 = obj;
   } else {
-    obj1 = {};
-    const obj2 = {};
-    const items1 = [closure_4.absoluteFill, ];
-    const obj3 = { opacity: 0.2 };
-    items1[1] = obj3;
-    obj2.style = items1;
-    obj2.source = backgroundImagesource;
-    obj2.resizeMode = "cover";
-    const items2 = [callback(importDefault(5119), obj2), , ];
-    const obj4 = { style: iosStyle, source, resizeMode };
-    items2[1] = callback(importDefault(5119), obj4);
-    const obj5 = { shouldSpoiler, blurTheme };
-    items2[2] = callback(require(11162) /* ForumPostMediaAndroid */.ForumPostMediaSpoiler, obj5);
-    obj1.children = items2;
+    obj1 = { children: null };
+    const obj2 = { style: null, source: null, resizeMode: "cover" };
+    const items1 = [closure_4.absoluteFill, { opacity: 0.2 }];
+    obj2[0] = items1;
+    obj2[1] = backgroundImagesource;
+    const items2 = [callback(importDefault(5141), obj2), , ];
+    const obj3 = { style: null, source: null, resizeMode: null };
+    obj3[0] = iosStyle;
+    obj3[1] = source;
+    obj3[2] = resizeMode;
+    items2[1] = callback(importDefault(5141), obj3);
+    const obj4 = { shouldSpoiler: null, blurTheme: null };
+    obj4[0] = shouldSpoiler;
+    obj4[1] = blurTheme;
+    items2[2] = callback(require(11186) /* ForumPostMediaAndroid */.ForumPostMediaSpoiler, obj4);
+    obj1[0] = items2;
   }
   return closure_6(closure_7, obj1);
 }
-({ ImageBackground: closure_3, StyleSheet: closure_4 } = get_ActivityIndicator);
-({ jsx: closure_5, jsxs: closure_6, Fragment: closure_7 } = jsxProd);
+({ ImageBackground: c3, StyleSheet: c4 } = get_ActivityIndicator);
+({ jsx: c5, jsxs: closure_6, Fragment: error } = jsxProd);
 const result = require("jsxProd").fileFinishedImporting("modules/media_channel/native/MediaPostGridThumbnail.tsx");
 
 export default function MediaPostGridThumbnail(isPortrait) {
@@ -99,8 +114,8 @@ export default function MediaPostGridThumbnail(isPortrait) {
   }
   let obj = {};
   const merged = Object.assign(isPortrait);
-  obj["backgroundImagesource"] = source;
-  obj["resizeMode"] = str;
+  obj.backgroundImagesource = source;
+  obj.resizeMode = str;
   if (obj2.isAndroid()) {
     obj = {};
     const merged1 = Object.assign(obj);

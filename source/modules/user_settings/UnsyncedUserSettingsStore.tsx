@@ -1,352 +1,346 @@
-// Module ID: 1280
-// Function ID: 14463
-// Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 1281, 662, 653, 1314, 1315, 566, 587, 22, 686, 2]
+// Module ID: 1304
+// Function ID: 1305
+// Name: CHANNEL_SIDEBAR_WIDTH
+// Dependencies: [1305, 685, 676, 1338, 1339, 589, 595, 12, 709, 2]
 
-// Module 1280 (_isNativeReflectConstruct)
-import MAX_FAVORITES from "MAX_FAVORITES";
-import closure_4 from "ME";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
+// Module 1304 (CHANNEL_SIDEBAR_WIDTH)
 import { SystemThemeState } from "SystemThemeState";
 import { ListDensityMode } from "MAX_FAVORITES";
 import ME from "ME";
 import { ExpressionPickerWidths } from "ExpressionPickerViewType";
+import { DeviceSettingsStore } from "initialize";
 
 let CHANNEL_SIDEBAR_WIDTH;
-let closure_10;
-const require = arg1;
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
-  }
-  const result = _isNativeReflectConstruct();
-}
-({ DEFAULT_CHAT_SIDEBAR_WIDTH: closure_10, CHANNEL_SIDEBAR_WIDTH } = ME);
-let closure_12 = ME.DEFAULT_MESSAGE_REQUEST_SIDEBAR_WIDTH;
+let c5;
+({ DEFAULT_CHAT_SIDEBAR_WIDTH: c5, CHANNEL_SIDEBAR_WIDTH } = ME);
+let closure_7 = ME.DEFAULT_MESSAGE_REQUEST_SIDEBAR_WIDTH;
 let obj = { DATA_SAVER: "data_saver", STANDARD: "standard", BEST: "best" };
-let closure_14 = (window.innerWidth - CHANNEL_SIDEBAR_WIDTH) / 2;
+let closure_9 = (window.innerWidth - CHANNEL_SIDEBAR_WIDTH) / 2;
 const STANDARD = obj.STANDARD;
-let c16 = null;
-let closure_17 = {};
-let tmp3 = ((DeviceSettingsStore) => {
-  class UnsyncedUserSettingsStore {
-    constructor() {
-      self = this;
-      tmp = outer1_3(this, UnsyncedUserSettingsStore);
-      obj = outer1_6(UnsyncedUserSettingsStore);
-      tmp2 = outer1_5;
-      if (outer1_18()) {
-        tmp6 = globalThis;
-        _Reflect = Reflect;
-        tmp7 = outer1_6;
-        tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, outer1_6(self).constructor);
-      } else {
-        tmp3 = arguments;
-        tmp4 = arguments;
-        constructResult = obj(...arguments);
-      }
-      return tmp2(self, constructResult);
-    }
+let c11 = null;
+let closure_12 = {};
+class UnsyncedUserSettingsStore extends DeviceSettingsStore {
+}
+const prototype = UnsyncedUserSettingsStore.prototype;
+prototype["initialize"] = function initialize(arg0) {
+  let obj = arg0;
+  if (arg0 == null) {
+    obj = {};
   }
-  callback2(UnsyncedUserSettingsStore, DeviceSettingsStore);
-  let obj = {
-    key: "initialize",
-    value(arg0) {
-      let obj = arg0;
-      if (null == arg0) {
-        obj = {};
+  const useSystemTheme = obj.useSystemTheme;
+  if (null != useSystemTheme) {
+    if (null != importDefault(1339)()) {
+      let UNSET = useSystemTheme;
+    }
+    obj.useSystemTheme = UNSET;
+    let lowQualityImageMode = obj.dataSavingMode;
+    if (lowQualityImageMode == null) {
+      lowQualityImageMode = obj.lowQualityImageMode;
+    }
+    obj.dataSavingMode = lowQualityImageMode;
+    let str = obj.hdrDynamicRange;
+    if (str == null) {
+      str = "no-limit";
+    }
+    obj.hdrDynamicRange = str;
+  }
+  UNSET = SystemThemeState.UNSET;
+};
+prototype["getUserAgnosticState"] = function getUserAgnosticState() {
+  return closure_12;
+};
+Object.defineProperty(prototype, "displayCompactAvatars", {
+  get: function displayCompactAvatars() {
+    let flag = closure_12.displayCompactAvatars;
+    if (flag == null) {
+      flag = false;
+    }
+    return flag;
+  },
+  set: undefined
+});
+Object.defineProperty(prototype, "lowQualityImageMode", {
+  get: function lowQualityImageMode() {
+    let flag = closure_12.lowQualityImageMode;
+    if (flag == null) {
+      flag = false;
+    }
+    return flag;
+  },
+  set: undefined
+});
+Object.defineProperty(prototype, "videoUploadQuality", {
+  get: function videoUploadQuality(arg0) {
+    let videoUploadQuality = closure_12.videoUploadQuality;
+    if (videoUploadQuality == null) {
+      videoUploadQuality = STANDARD;
+    }
+    return videoUploadQuality;
+  },
+  set: undefined
+});
+Object.defineProperty(prototype, "dataSavingMode", {
+  get: function dataSavingMode() {
+    let flag = closure_12.dataSavingMode;
+    if (flag == null) {
+      flag = closure_12.lowQualityImageMode;
+    }
+    if (flag == null) {
+      flag = false;
+    }
+    return flag;
+  },
+  set: undefined
+});
+Object.defineProperty(prototype, "expressionPickerWidth", {
+  get: function expressionPickerWidth() {
+    let MIN = closure_12.expressionPickerWidth;
+    if (MIN == null) {
+      MIN = ExpressionPickerWidths.MIN;
+    }
+    return MIN;
+  },
+  set: undefined
+});
+Object.defineProperty(prototype, "messageRequestSidebarWidth", {
+  get: function messageRequestSidebarWidth() {
+    let messageRequestSidebarWidth = closure_12.messageRequestSidebarWidth;
+    if (messageRequestSidebarWidth == null) {
+      messageRequestSidebarWidth = closure_7;
+    }
+    return messageRequestSidebarWidth;
+  },
+  set: undefined
+});
+Object.defineProperty(prototype, "threadSidebarWidth", {
+  get: function threadSidebarWidth() {
+    let threadSidebarWidth = closure_12.threadSidebarWidth;
+    if (threadSidebarWidth == null) {
+      threadSidebarWidth = closure_5;
+    }
+    return threadSidebarWidth;
+  },
+  set: undefined
+});
+Object.defineProperty(prototype, "postSidebarWidth", {
+  get: function postSidebarWidth() {
+    let postSidebarWidth = closure_12.postSidebarWidth;
+    if (postSidebarWidth == null) {
+      postSidebarWidth = closure_9;
+    }
+    return postSidebarWidth;
+  },
+  set: undefined
+});
+Object.defineProperty(prototype, "callChatSidebarWidth", {
+  get: function callChatSidebarWidth() {
+    let callChatSidebarWidth = closure_12.callChatSidebarWidth;
+    if (callChatSidebarWidth == null) {
+      callChatSidebarWidth = closure_5;
+    }
+    return callChatSidebarWidth;
+  },
+  set: undefined
+});
+Object.defineProperty(prototype, "homeSidebarWidth", {
+  get: function homeSidebarWidth() {
+    let homeSidebarWidth = closure_12.homeSidebarWidth;
+    if (homeSidebarWidth == null) {
+      if (null == closure_11) {
+        const _Math = Math;
+        const _window = window;
+        closure_11 = Math.max(0.4 * (window.innerWidth - CHANNEL_SIDEBAR_WIDTH), closure_5);
       }
-      const outer1_17 = obj;
-      const useSystemTheme = obj.useSystemTheme;
-      if (null != useSystemTheme) {
-        if (null != outer1_1(outer1_2[9])()) {
-          let UNSET = useSystemTheme;
-        }
-        obj.useSystemTheme = UNSET;
-        let lowQualityImageMode = outer1_17.dataSavingMode;
-        if (null == lowQualityImageMode) {
-          lowQualityImageMode = outer1_17.lowQualityImageMode;
-        }
-        outer1_17.dataSavingMode = lowQualityImageMode;
-        const hdrDynamicRange = outer1_17.hdrDynamicRange;
-        let str2 = "no-limit";
-        if (null != hdrDynamicRange) {
-          str2 = hdrDynamicRange;
-        }
-        outer1_17.hdrDynamicRange = str2;
-      }
-      UNSET = outer1_8.UNSET;
+      homeSidebarWidth = closure_11;
     }
-  };
-  const items = [obj, , , , , , , , , , , , , , , , , , , , , , , , , , , , , ];
-  obj = {
-    key: "getUserAgnosticState",
-    value() {
-      return outer1_17;
+    return homeSidebarWidth;
+  },
+  set: undefined
+});
+Object.defineProperty(prototype, "callHeaderHeight", {
+  get: function callHeaderHeight() {
+    return closure_12.callHeaderHeight;
+  },
+  set: undefined
+});
+Object.defineProperty(prototype, "useSystemTheme", {
+  get: function useSystemTheme() {
+    let UNSET = closure_12.useSystemTheme;
+    if (UNSET == null) {
+      UNSET = SystemThemeState.UNSET;
     }
-  };
-  items[1] = obj;
-  obj = {
-    key: "displayCompactAvatars",
-    get() {
-      const displayCompactAvatars = outer1_17.displayCompactAvatars;
-      return null != displayCompactAvatars && displayCompactAvatars;
+    return UNSET;
+  },
+  set: undefined
+});
+Object.defineProperty(prototype, "activityPanelHeight", {
+  get: function activityPanelHeight() {
+    return closure_12.activityPanelHeight;
+  },
+  set: undefined
+});
+Object.defineProperty(prototype, "disableVoiceChannelChangeAlert", {
+  get: function disableVoiceChannelChangeAlert() {
+    let flag = closure_12.disableVoiceChannelChangeAlert;
+    if (flag == null) {
+      flag = false;
     }
-  };
-  items[2] = obj;
-  items[3] = {
-    key: "lowQualityImageMode",
-    get() {
-      const lowQualityImageMode = outer1_17.lowQualityImageMode;
-      return null != lowQualityImageMode && lowQualityImageMode;
+    return flag;
+  },
+  set: undefined
+});
+Object.defineProperty(prototype, "disableHardwareMuteSilenceAlert", {
+  get: function disableHardwareMuteSilenceAlert() {
+    let flag = closure_12.disableHardwareMuteSilenceAlert;
+    if (flag == null) {
+      flag = false;
     }
-  };
-  items[4] = {
-    key: "videoUploadQuality",
-    get() {
-      let videoUploadQuality = outer1_17.videoUploadQuality;
-      if (null == videoUploadQuality) {
-        videoUploadQuality = outer1_15;
-      }
-      return videoUploadQuality;
+    return flag;
+  },
+  set: undefined
+});
+Object.defineProperty(prototype, "disableEmbeddedActivityPopOutAlert", {
+  get: function disableEmbeddedActivityPopOutAlert() {
+    let flag = closure_12.disableEmbeddedActivityPopOutAlert;
+    if (flag == null) {
+      flag = false;
     }
-  };
-  items[5] = {
-    key: "dataSavingMode",
-    get() {
-      let lowQualityImageMode = outer1_17.dataSavingMode;
-      if (null == lowQualityImageMode) {
-        lowQualityImageMode = outer1_17.lowQualityImageMode;
-      }
-      return null != lowQualityImageMode && lowQualityImageMode;
+    return flag;
+  },
+  set: undefined
+});
+Object.defineProperty(prototype, "disableActivityHardwareAccelerationPrompt", {
+  get: function disableActivityHardwareAccelerationPrompt() {
+    let flag = closure_12.disableActivityHardwareAccelerationPrompt;
+    if (flag == null) {
+      flag = false;
     }
-  };
-  items[6] = {
-    key: "expressionPickerWidth",
-    get() {
-      let MIN = outer1_17.expressionPickerWidth;
-      if (null == MIN) {
-        MIN = outer1_13.MIN;
-      }
-      return MIN;
+    return flag;
+  },
+  set: undefined
+});
+Object.defineProperty(prototype, "disableInviteWithTextChannelActivityLaunch", {
+  get: function disableInviteWithTextChannelActivityLaunch() {
+    let flag = closure_12.disableInviteWithTextChannelActivityLaunch;
+    if (flag == null) {
+      flag = false;
     }
-  };
-  items[7] = {
-    key: "messageRequestSidebarWidth",
-    get() {
-      let messageRequestSidebarWidth = outer1_17.messageRequestSidebarWidth;
-      if (null == messageRequestSidebarWidth) {
-        messageRequestSidebarWidth = outer1_12;
-      }
-      return messageRequestSidebarWidth;
+    return flag;
+  },
+  set: undefined
+});
+Object.defineProperty(prototype, "disableHideSelfStreamAndVideoConfirmationAlert", {
+  get: function disableHideSelfStreamAndVideoConfirmationAlert() {
+    let flag = closure_12.disableHideSelfStreamAndVideoConfirmationAlert;
+    if (flag == null) {
+      flag = false;
     }
-  };
-  items[8] = {
-    key: "threadSidebarWidth",
-    get() {
-      let threadSidebarWidth = outer1_17.threadSidebarWidth;
-      if (null == threadSidebarWidth) {
-        threadSidebarWidth = outer1_10;
-      }
-      return threadSidebarWidth;
+    return flag;
+  },
+  set: undefined
+});
+Object.defineProperty(prototype, "pushUpsellUserSettingsDismissed", {
+  get: function pushUpsellUserSettingsDismissed() {
+    let flag = closure_12.pushUpsellDismissed;
+    if (flag == null) {
+      flag = false;
     }
-  };
-  items[9] = {
-    key: "postSidebarWidth",
-    get() {
-      let postSidebarWidth = outer1_17.postSidebarWidth;
-      if (null == postSidebarWidth) {
-        postSidebarWidth = outer1_14;
-      }
-      return postSidebarWidth;
+    return flag;
+  },
+  set: undefined
+});
+Object.defineProperty(prototype, "disableActivityHostLeftNitroUpsell", {
+  get: function disableActivityHostLeftNitroUpsell() {
+    let flag = closure_12.disableActivityHostLeftNitroUpsell;
+    if (flag == null) {
+      flag = false;
     }
-  };
-  items[10] = {
-    key: "callChatSidebarWidth",
-    get() {
-      let callChatSidebarWidth = outer1_17.callChatSidebarWidth;
-      if (null == callChatSidebarWidth) {
-        callChatSidebarWidth = outer1_10;
-      }
-      return callChatSidebarWidth;
+    return flag;
+  },
+  set: undefined
+});
+Object.defineProperty(prototype, "disableCallUserConfirmationPrompt", {
+  get: function disableCallUserConfirmationPrompt() {
+    let flag = closure_12.disableCallUserConfirmationPrompt;
+    if (flag == null) {
+      flag = false;
     }
-  };
-  items[11] = {
-    key: "homeSidebarWidth",
-    get() {
-      let homeSidebarWidth = outer1_17.homeSidebarWidth;
-      if (null == homeSidebarWidth) {
-        if (null == outer1_16) {
-          const _Math = Math;
-          const _window = window;
-          outer1_16 = Math.max(0.4 * (window.innerWidth - outer1_11), outer1_10);
-        }
-        homeSidebarWidth = outer1_16;
-      }
-      return homeSidebarWidth;
+    return flag;
+  },
+  set: undefined
+});
+Object.defineProperty(prototype, "disableApplicationSubscriptionCancellationSurvey", {
+  get: function disableApplicationSubscriptionCancellationSurvey() {
+    let flag = closure_12.disableApplicationSubscriptionCancellationSurvey;
+    if (flag == null) {
+      flag = false;
     }
-  };
-  items[12] = {
-    key: "callHeaderHeight",
-    get() {
-      return outer1_17.callHeaderHeight;
+    return flag;
+  },
+  set: undefined
+});
+Object.defineProperty(prototype, "darkSidebar", {
+  get: function darkSidebar() {
+    let flag = closure_12.darkSidebar;
+    if (flag == null) {
+      flag = false;
     }
-  };
-  items[13] = {
-    key: "useSystemTheme",
-    get() {
-      let UNSET = outer1_17.useSystemTheme;
-      if (null == UNSET) {
-        UNSET = outer1_8.UNSET;
-      }
-      return UNSET;
+    return flag;
+  },
+  set: undefined
+});
+Object.defineProperty(prototype, "saveCameraUploadsToDevice", {
+  get: function saveCameraUploadsToDevice() {
+    let flag = closure_12.saveCameraUploadsToDevice;
+    if (flag == null) {
+      flag = true;
     }
-  };
-  items[14] = {
-    key: "activityPanelHeight",
-    get() {
-      return outer1_17.activityPanelHeight;
+    return flag;
+  },
+  set: undefined
+});
+prototype["isVisualRefreshDisabled"] = function isVisualRefreshDisabled(arg0) {
+  let disableVisualRefresh = closure_12.disableVisualRefresh;
+  if (disableVisualRefresh == null) {
+    disableVisualRefresh = arg0;
+  }
+  return disableVisualRefresh;
+};
+Object.defineProperty(prototype, "listDensity", {
+  get: function listDensity() {
+    let COZY = closure_12.listDensity;
+    if (COZY == null) {
+      COZY = ListDensityMode.COZY;
     }
-  };
-  items[15] = {
-    key: "disableVoiceChannelChangeAlert",
-    get() {
-      const disableVoiceChannelChangeAlert = outer1_17.disableVoiceChannelChangeAlert;
-      return null != disableVoiceChannelChangeAlert && disableVoiceChannelChangeAlert;
+    return COZY;
+  },
+  set: undefined
+});
+Object.defineProperty(prototype, "hdrDynamicRange", {
+  get: function hdrDynamicRange() {
+    let str = closure_12.hdrDynamicRange;
+    if (str == null) {
+      str = "no-limit";
     }
-  };
-  items[16] = {
-    key: "disableHardwareMuteSilenceAlert",
-    get() {
-      const disableHardwareMuteSilenceAlert = outer1_17.disableHardwareMuteSilenceAlert;
-      return null != disableHardwareMuteSilenceAlert && disableHardwareMuteSilenceAlert;
-    }
-  };
-  items[17] = {
-    key: "disableEmbeddedActivityPopOutAlert",
-    get() {
-      const disableEmbeddedActivityPopOutAlert = outer1_17.disableEmbeddedActivityPopOutAlert;
-      return null != disableEmbeddedActivityPopOutAlert && disableEmbeddedActivityPopOutAlert;
-    }
-  };
-  items[18] = {
-    key: "disableActivityHardwareAccelerationPrompt",
-    get() {
-      const disableActivityHardwareAccelerationPrompt = outer1_17.disableActivityHardwareAccelerationPrompt;
-      return null != disableActivityHardwareAccelerationPrompt && disableActivityHardwareAccelerationPrompt;
-    }
-  };
-  items[19] = {
-    key: "disableInviteWithTextChannelActivityLaunch",
-    get() {
-      const disableInviteWithTextChannelActivityLaunch = outer1_17.disableInviteWithTextChannelActivityLaunch;
-      return null != disableInviteWithTextChannelActivityLaunch && disableInviteWithTextChannelActivityLaunch;
-    }
-  };
-  items[20] = {
-    key: "disableHideSelfStreamAndVideoConfirmationAlert",
-    get() {
-      const disableHideSelfStreamAndVideoConfirmationAlert = outer1_17.disableHideSelfStreamAndVideoConfirmationAlert;
-      return null != disableHideSelfStreamAndVideoConfirmationAlert && disableHideSelfStreamAndVideoConfirmationAlert;
-    }
-  };
-  items[21] = {
-    key: "pushUpsellUserSettingsDismissed",
-    get() {
-      const pushUpsellDismissed = outer1_17.pushUpsellDismissed;
-      return null != pushUpsellDismissed && pushUpsellDismissed;
-    }
-  };
-  items[22] = {
-    key: "disableActivityHostLeftNitroUpsell",
-    get() {
-      const disableActivityHostLeftNitroUpsell = outer1_17.disableActivityHostLeftNitroUpsell;
-      return null != disableActivityHostLeftNitroUpsell && disableActivityHostLeftNitroUpsell;
-    }
-  };
-  items[23] = {
-    key: "disableCallUserConfirmationPrompt",
-    get() {
-      const disableCallUserConfirmationPrompt = outer1_17.disableCallUserConfirmationPrompt;
-      return null != disableCallUserConfirmationPrompt && disableCallUserConfirmationPrompt;
-    }
-  };
-  items[24] = {
-    key: "disableApplicationSubscriptionCancellationSurvey",
-    get() {
-      const disableApplicationSubscriptionCancellationSurvey = outer1_17.disableApplicationSubscriptionCancellationSurvey;
-      return null != disableApplicationSubscriptionCancellationSurvey && disableApplicationSubscriptionCancellationSurvey;
-    }
-  };
-  items[25] = {
-    key: "darkSidebar",
-    get() {
-      const darkSidebar = outer1_17.darkSidebar;
-      return null != darkSidebar && darkSidebar;
-    }
-  };
-  items[26] = {
-    key: "saveCameraUploadsToDevice",
-    get() {
-      const saveCameraUploadsToDevice = outer1_17.saveCameraUploadsToDevice;
-      return null == saveCameraUploadsToDevice || saveCameraUploadsToDevice;
-    }
-  };
-  items[27] = {
-    key: "isVisualRefreshDisabled",
-    value(arg0) {
-      let tmp = arg0;
-      const disableVisualRefresh = outer1_17.disableVisualRefresh;
-      if (null != disableVisualRefresh) {
-        tmp = disableVisualRefresh;
-      }
-      return tmp;
-    }
-  };
-  items[28] = {
-    key: "listDensity",
-    get() {
-      let COZY = outer1_17.listDensity;
-      if (null == COZY) {
-        COZY = outer1_9.COZY;
-      }
-      return COZY;
-    }
-  };
-  items[29] = {
-    key: "hdrDynamicRange",
-    get() {
-      const hdrDynamicRange = outer1_17.hdrDynamicRange;
-      let str = "no-limit";
-      if (null != hdrDynamicRange) {
-        str = hdrDynamicRange;
-      }
-      return str;
-    }
-  };
-  return callback(UnsyncedUserSettingsStore, items);
-})(require("initialize").DeviceSettingsStore);
-tmp3.displayName = "UnsyncedUserSettingsStore";
-tmp3.persistKey = "UnsyncedUserSettingsStore";
-let items = [
+    return str;
+  },
+  set: undefined
+});
+UnsyncedUserSettingsStore.displayName = "UnsyncedUserSettingsStore";
+UnsyncedUserSettingsStore.persistKey = "UnsyncedUserSettingsStore";
+const items = [
   () => {
-    const Storage = require(587) /* Storage */.Storage;
+    const Storage = require(595) /* Storage */.Storage;
     const value = Storage.get("UserSettingsStore");
-    const Storage2 = require(587) /* Storage */.Storage;
+    const Storage2 = require(595) /* Storage */.Storage;
     Storage2.remove("UserSettingsStore");
-    return importDefault(22).pick(value, "dataSavingMode", "videoUploadQuality", "lowQualityImageMode", "useSystemTheme", "expressionPickerWidth", "disableVoiceChannelChangeAlert", "disableHardwareMuteSilenceAlert", "disableHideSelfStreamAndVideoConfirmationAlert", "pushUpsellDismissed", "disableEmbeddedActivityPopOutAlert", "disableActivityHardwareAccelerationPrompt", "disableInviteWithTextChannelActivityLaunch", "disableActivityHostLeftNitroUpsell", "disableCallUserConfirmationPrompt", "disableApplicationSubscriptionCancellationSurvey", "enableAndroidChatListAnimations");
+    return importDefault(12).pick(value, "dataSavingMode", "videoUploadQuality", "lowQualityImageMode", "useSystemTheme", "expressionPickerWidth", "disableVoiceChannelChangeAlert", "disableHardwareMuteSilenceAlert", "disableHideSelfStreamAndVideoConfirmationAlert", "pushUpsellDismissed", "disableEmbeddedActivityPopOutAlert", "disableActivityHardwareAccelerationPrompt", "disableInviteWithTextChannelActivityLaunch", "disableActivityHostLeftNitroUpsell", "disableCallUserConfirmationPrompt", "disableApplicationSubscriptionCancellationSurvey", "enableAndroidChatListAnimations");
   },
   (arg0) => {
-    delete tmp.disableVisualRefresh;
+    delete tmp[tmp2];
   }
 ];
-tmp3.migrations = items;
+UnsyncedUserSettingsStore.migrations = items;
 obj = {
   UNSYNCED_USER_SETTINGS_UPDATE: function handleUnsyncedUserSettingsUpdate(settings) {
     const obj = {};
@@ -357,17 +351,17 @@ obj = {
     obj = { useSystemTheme: obj.useSystemTheme };
   },
   LOGIN_SUCCESS: function handleLogInSuccess() {
-    if (null == closure_17) {
-      closure_17 = {};
+    if (null == closure_12) {
+      closure_12 = {};
     }
   },
   REGISTER_SUCCESS: function handleRegisterSuccess() {
-    closure_17.useSystemTheme = SystemThemeState.ON;
+    closure_12.useSystemTheme = SystemThemeState.ON;
   }
 };
-tmp3 = new tmp3(require("dispatcher"), obj);
-let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/user_settings/UnsyncedUserSettingsStore.tsx");
+const unsyncedUserSettingsStore = new UnsyncedUserSettingsStore(require("dispatcher"), obj);
+const result = require("ME").fileFinishedImporting("modules/user_settings/UnsyncedUserSettingsStore.tsx");
 
-export default tmp3;
+export default unsyncedUserSettingsStore;
 export const VideoQualitySettings = obj;
 export const VideoCompressionQuality = { VERY_LOW: "very_low", LOW: "low", MEDIUM: "medium", HIGH: "high", VERY_HIGH: "very_high" };

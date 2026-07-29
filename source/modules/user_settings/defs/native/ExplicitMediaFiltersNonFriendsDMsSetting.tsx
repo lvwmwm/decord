@@ -1,74 +1,75 @@
-// Module ID: 13839
-// Function ID: 105965
+// Module ID: 13860
+// Function ID: 13861
 // Name: useObscuredContentNonFriendsDmSettingValue
-// Dependencies: [7733, 13830, 5844, 5863, 1212, 13831, 10099, 13833, 2]
+// Dependencies: [7756, 13851, 5862, 5881, 1236, 13852, 10120, 13854, 2]
 // Exports: onObscuredContentNonFriendsDmOnPress, useObscuredContentNonFriendsDmSettingValue
 
-// Module 13839 (useObscuredContentNonFriendsDmSettingValue)
+// Module 13860 (useObscuredContentNonFriendsDmSettingValue)
 import { MobileSetting } from "MobileSetting";
 import createToggle from "createToggle";
 
 function useObscuredContentNonFriendsDmSettingValue() {
-  const obj = require(13830) /* useExplicitContentSettingOrDefault */;
-  return require(5844) /* timeoutAttachmentsAndEmbedsForMessage */.redactionSettingToRenderedString(obj.useExplicitContentSettingOrDefault().explicitContentNonFriendDm)();
+  const obj = require(13851) /* useExplicitContentSettingOrDefault */;
+  return require(5862) /* redactionSettingToRenderedString */.redactionSettingToRenderedString(obj.useExplicitContentSettingOrDefault().explicitContentNonFriendDm)();
 }
 function onObscuredContentNonFriendsDmOnPress() {
-  let obj = require(5863) /* resolveExplicitContentSettingWithDefaults */;
-  const intl = require(1212) /* getSystemLocale */.intl;
-  const stringResult = intl.string(require(1212) /* getSystemLocale */.t.GYpoAq);
-  obj = {
-    title: stringResult,
-    subtitle: getTitle(),
-    handlePress(explicitContentNonFriendDm) {
-      let obj = outer1_0(outer1_1[3]);
-      obj = { explicitContentNonFriendDm };
-      return obj.updateExplicitContentSetting(obj);
-    },
-    currentValue: obj.getExplicitContentSettingOrDefault().explicitContentNonFriendDm
+  let obj = require(5881) /* resolveExplicitContentSettingWithDefaults */;
+  const intl = require(1236) /* getSystemLocale */.intl;
+  const stringResult = intl.string(require(1236) /* getSystemLocale */.t.GYpoAq);
+  obj = { title: stringResult, subtitle: null, handlePress: null, currentValue: null };
+  const intl2 = require(1236) /* getSystemLocale */.intl;
+  obj[1] = intl2.string(require(1236) /* getSystemLocale */.t["Yh+HX1"]);
+  obj[2] = function handlePress(explicitContentNonFriendDm) {
+    let obj = callback(table[3]);
+    obj = { explicitContentNonFriendDm };
+    return obj.updateExplicitContentSetting(obj);
   };
-  const result = require(13831) /* handleSensitiveMediaFilterPress */.handleSensitiveMediaFilterPress(obj);
-}
-function getTitle() {
-  const intl = require(1212) /* getSystemLocale */.intl;
-  return intl.string(require(1212) /* getSystemLocale */.t["Yh+HX1"]);
+  obj[3] = obj.getExplicitContentSettingOrDefault().explicitContentNonFriendDm;
+  const result = require(13852) /* handleSensitiveMediaFilterPress */.handleSensitiveMediaFilterPress(obj);
 }
 const pressable = createToggle.createPressable({
-  useTitle: getTitle,
+  useTitle: function getTitle() {
+    const intl = require(1236) /* getSystemLocale */.intl;
+    return intl.string(require(1236) /* getSystemLocale */.t["Yh+HX1"]);
+  },
   parent() {
     return MobileSetting.SENSITIVE_CONTENT_FILTERS;
   },
   useTrailing: useObscuredContentNonFriendsDmSettingValue,
   onPress: onObscuredContentNonFriendsDmOnPress,
   useSearchTerms: function getSearchTerms() {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    const items = [intl.string(require(1212) /* getSystemLocale */.t["N/oRI+"]), , ];
-    const intl2 = require(1212) /* getSystemLocale */.intl;
-    items[1] = intl2.string(require(1212) /* getSystemLocale */.t.QVdYsK);
-    const intl3 = require(1212) /* getSystemLocale */.intl;
-    items[2] = intl3.string(require(1212) /* getSystemLocale */.t["5mnTa7"]);
+    const intl = require(1236) /* getSystemLocale */.intl;
+    const items = [intl.string(require(1236) /* getSystemLocale */.t["N/oRI+"]), , ];
+    const intl2 = require(1236) /* getSystemLocale */.intl;
+    items[1] = intl2.string(require(1236) /* getSystemLocale */.t.QVdYsK);
+    const intl3 = require(1236) /* getSystemLocale */.intl;
+    items[2] = intl3.string(require(1236) /* getSystemLocale */.t["5mnTa7"]);
     return items;
   },
   useIsDisabled: require("useSensitiveMediaSettingDisabled").useSensitiveMediaSettingDisabled
 });
 let obj = {
-  useTitle: getTitle,
+  useTitle: function getTitle() {
+    const intl = require(1236) /* getSystemLocale */.intl;
+    return intl.string(require(1236) /* getSystemLocale */.t["Yh+HX1"]);
+  },
   parent() {
     return MobileSetting.SENSITIVE_CONTENT_FILTERS;
   },
   useTrailing: useObscuredContentNonFriendsDmSettingValue,
   onPress: onObscuredContentNonFriendsDmOnPress,
   useSearchTerms: function getSearchTerms() {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    const items = [intl.string(require(1212) /* getSystemLocale */.t["N/oRI+"]), , ];
-    const intl2 = require(1212) /* getSystemLocale */.intl;
-    items[1] = intl2.string(require(1212) /* getSystemLocale */.t.QVdYsK);
-    const intl3 = require(1212) /* getSystemLocale */.intl;
-    items[2] = intl3.string(require(1212) /* getSystemLocale */.t["5mnTa7"]);
+    const intl = require(1236) /* getSystemLocale */.intl;
+    const items = [intl.string(require(1236) /* getSystemLocale */.t["N/oRI+"]), , ];
+    const intl2 = require(1236) /* getSystemLocale */.intl;
+    items[1] = intl2.string(require(1236) /* getSystemLocale */.t.QVdYsK);
+    const intl3 = require(1236) /* getSystemLocale */.intl;
+    items[2] = intl3.string(require(1236) /* getSystemLocale */.t["5mnTa7"]);
     return items;
   },
   useIsDisabled: require("useSensitiveMediaSettingDisabled").useSensitiveMediaSettingDisabled
 };
-let result = require("timeoutAttachmentsAndEmbedsForMessage").fileFinishedImporting("modules/user_settings/defs/native/ExplicitMediaFiltersNonFriendsDMsSetting.tsx");
+let result = require("redactionSettingToRenderedString").fileFinishedImporting("modules/user_settings/defs/native/ExplicitMediaFiltersNonFriendsDMsSetting.tsx");
 
 export default pressable;
 export { useObscuredContentNonFriendsDmSettingValue };

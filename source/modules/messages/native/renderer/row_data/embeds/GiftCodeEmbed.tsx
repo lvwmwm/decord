@@ -1,66 +1,59 @@
-// Module ID: 8007
-// Function ID: 63555
+// Module ID: 8031
+// Function ID: 8032
 // Name: getGiftStyleUrl
-// Dependencies: [27, 1194, 8008, 1850, 4210, 653, 1852, 12312, 12313, 12314, 12315, 12316, 12317, 12318, 12319, 12320, 12321, 12322, 11872, 4004, 7702, 4011, 3976, 1212, 10970, 10971, 689, 3747, 7694, 7706, 12323, 12324, 12325, 12326, 12327, 5644, 3811, 2]
+// Dependencies: [17, 1218, 8032, 1874, 4234, 676, 1876, 12334, 12335, 12336, 12337, 12338, 12339, 12340, 12341, 12342, 12343, 12344, 11896, 4028, 7725, 4035, 4000, 1236, 10994, 10995, 712, 3771, 7717, 7729, 12345, 12346, 12347, 12348, 12349, 5662, 3835, 2]
 // Exports: createGiftCodeEmbed
 
-// Module 8007 (getGiftStyleUrl)
-import get_ActivityIndicator from "t";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_6 from "_isNativeReflectConstruct";
-import closure_7 from "_isNativeReflectConstruct";
-import closure_8 from "_isNativeReflectConstruct";
+// Module 8031 (getGiftStyleUrl)
+import get_ActivityIndicator from "registerAsset";
+import fetchFingerprint from "fetchFingerprint";
+import updateGiftCode from "updateGiftCode";
+import mergeGuildAvatar from "mergeGuildAvatar";
+import addSku from "addSku";
 import ME from "ME";
 import GuildFeatures from "GuildFeatures";
 
-let closure_10;
-let closure_11;
+let c10;
+let c3;
+let c4;
+let c9;
 let closure_12;
-let closure_3;
-let closure_4;
-let closure_9;
+let unpackModuleId;
 function getGiftStyleUrl(arg0) {
   if (constants.BOX === arg0) {
-    return importDefault(12312);
-  } else if (constants.CUP === arg0) {
-    return importDefault(12313);
-  } else if (constants.SNOWGLOBE === arg0) {
-    return importDefault(12314);
-  } else if (constants.STANDARD_BOX === arg0) {
-    return importDefault(12315);
-  } else if (constants.COFFEE === arg0) {
-    return importDefault(12316);
-  } else if (constants.CAKE === arg0) {
-    return importDefault(12317);
-  } else if (constants.CHEST === arg0) {
-    return importDefault(12318);
-  } else if (constants.SEASONAL_STANDARD_BOX === arg0) {
-    return importDefault(12319);
-  } else if (constants.SEASONAL_CAKE === arg0) {
-    return importDefault(12320);
-  } else if (constants.SEASONAL_CHEST === arg0) {
-    return importDefault(12321);
-  } else if (constants.SEASONAL_COFFEE === arg0) {
-    return importDefault(12322);
-  } else if (constants.NITROWEEN_STANDARD === arg0) {
-    const obj = { uri: importDefault(11872) };
+    return importDefault(12334);
+  } else if (tmp.CUP === arg0) {
+    return importDefault(12335);
+  } else if (tmp.SNOWGLOBE === arg0) {
+    return importDefault(12336);
+  } else if (tmp.STANDARD_BOX === arg0) {
+    return importDefault(12337);
+  } else if (tmp.COFFEE === arg0) {
+    return importDefault(12338);
+  } else if (tmp.CAKE === arg0) {
+    return importDefault(12339);
+  } else if (tmp.CHEST === arg0) {
+    return importDefault(12340);
+  } else if (tmp.SEASONAL_STANDARD_BOX === arg0) {
+    return importDefault(12341);
+  } else if (tmp.SEASONAL_CAKE === arg0) {
+    return importDefault(12342);
+  } else if (tmp.SEASONAL_CHEST === arg0) {
+    return importDefault(12343);
+  } else if (tmp.SEASONAL_COFFEE === arg0) {
+    return importDefault(12344);
+  } else if (tmp.NITROWEEN_STANDARD === arg0) {
+    const obj = { uri: null };
+    obj[0] = importDefault(11896);
     return obj;
   } else {
-    return importDefault(12315);
+    return importDefault(12337);
   }
 }
-function getUserNameOrDefault(arg0) {
-  const name = importDefault(4004).getName(arg0);
-  let str = "";
-  if (null != name) {
-    str = name;
-  }
-  return str;
-}
-({ Image: closure_3, processColor: closure_4 } = get_ActivityIndicator);
-({ AbortCodes: closure_9, MessageTypes: closure_10 } = ME);
-({ PremiumGiftStyles: closure_11, PremiumSubscriptionSKUs: closure_12 } = GuildFeatures);
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/messages/native/renderer/row_data/embeds/GiftCodeEmbed.tsx");
+({ Image: c3, processColor: c4 } = get_ActivityIndicator);
+({ AbortCodes: c9, MessageTypes: c10 } = ME);
+({ PremiumGiftStyles: unpackModuleId, PremiumSubscriptionSKUs: closure_12 } = GuildFeatures);
+const result = require("updateGiftCode").fileFinishedImporting("modules/messages/native/renderer/row_data/embeds/GiftCodeEmbed.tsx");
 
 export const createGiftCodeEmbed = function createGiftCodeEmbed(message, forcedTheme) {
   let backgroundColor;
@@ -69,114 +62,100 @@ export const createGiftCodeEmbed = function createGiftCodeEmbed(message, forcedT
   let closure_12;
   let closure_3;
   let closure_4;
-  let _isNativeReflectConstruct;
-  let closure_6;
-  let closure_7;
-  let closure_8;
+  let fetchFingerprint;
+  let updateGiftCode;
+  let mergeGuildAvatar;
+  let addSku;
   let closure_9;
   let dependencyMap;
   const _require = message;
   const importDefault = forcedTheme;
   if (null != message.author) {
     if (0 !== message.giftCodes.length) {
-      const colors = importDefault(7702)(forcedTheme).colors;
-      ({ headerColor: dependencyMap, titleColor: closure_3, subtitleColor: closure_4, bodyTextColor: _isNativeReflectConstruct, backgroundColor, resolvingGradientStart: closure_6, resolvingGradientEnd: closure_7, acceptLabelDisabledBackgroundColor: closure_8, acceptLabelDisabledColor: closure_9, thumbnailBackgroundColor: closure_10, acceptLabelGreenColor: closure_11, acceptBlurpleLabelBackgroundColor: closure_12 } = colors);
-      let obj = { borderColor: colors.borderColor };
+      const colors = importDefault(7725)(forcedTheme).colors;
+      ({ headerColor: dependencyMap, titleColor: closure_3, subtitleColor: closure_4, bodyTextColor: fetchFingerprint, backgroundColor, resolvingGradientStart: updateGiftCode, resolvingGradientEnd: mergeGuildAvatar, acceptLabelDisabledBackgroundColor: addSku, acceptLabelDisabledColor: closure_9, thumbnailBackgroundColor: closure_10, acceptLabelGreenColor: closure_11, acceptBlurpleLabelBackgroundColor: closure_12 } = colors);
+      let obj = { borderColor: null, backgroundColor: null, thumbnailCornerRadius: 3 };
+      obj[0] = colors.borderColor;
       let tmp4 = backgroundColor;
       if (obj2.isThemeDark(forcedTheme)) {
-        const embedBackground = _require(3976).getEmbedBackground();
-        let tmp9;
-        if (null != embedBackground) {
-          tmp9 = embedBackground;
+        const embedBackground = _require(4000).getEmbedBackground();
+        let tmp5Result = closure_4(embedBackground);
+        if (tmp5Result == null) {
+          tmp5Result = backgroundColor;
         }
-        const tmp5Result = closure_4(tmp9);
-        tmp4 = backgroundColor;
-        if (null != tmp5Result) {
-          tmp4 = tmp5Result;
-        }
-        let obj3 = _require(3976);
+        tmp4 = tmp5Result;
+        const tmp3Result = _require(4000);
         const tmp5 = closure_4;
       }
-      obj.backgroundColor = tmp4;
-      obj.thumbnailCornerRadius = 3;
+      obj[1] = tmp4;
       const giftCodes = message.giftCodes;
-      return giftCodes.map((arg0) => {
-        let error = outer1_6.get(arg0);
-        if (null != arg0) {
-          if (outer1_6.getIsResolved(arg0)) {
+      return giftCodes.map((giftCode) => {
+        let obj = outer1_6;
+        let error = outer1_6.get(giftCode);
+        if (null != giftCode) {
+          if (obj.getIsResolved(giftCode)) {
             const id = outer1_5.getId();
             if (null != error) {
-              let tmp14 = id === error.userId;
+              let tmp13 = id === error.userId;
             } else {
-              tmp14 = id === message.author.id;
+              tmp13 = id === message.author.id;
             }
             if (null == error) {
-              error = outer1_6;
-              error = outer1_6.getError(arg0);
+              error = obj.getError(giftCode);
               error = undefined;
-              if (null != error) {
+              if (error != null) {
                 error = error.code;
               }
               error = outer1_9;
-              let obj = {};
               error = message;
               error = outer1_2;
               error = outer1_3;
               error = callback;
               error = callback;
-              error = outer1_2;
-              if (obj23.isThemeDark(callback)) {
+              if (obj25.isThemeDark(callback)) {
                 error = error(error[24]);
               } else {
                 error = error(error[25]);
               }
-              obj.thumbnailUrl = outer1_3.resolveAssetSource(error).uri;
-              error = message;
-              error = outer1_2;
-              const intl13 = message(outer1_2[23]).intl;
+              obj = { thumbnailUrl: null, headerText: null, titleText: null, titleColor: null, headerColor: null, thumbnailBackgroundColor: null, subtitle: null, subtitleColor: null };
+              obj[0] = outer1_3.resolveAssetSource(error).uri;
+              const intl13 = error(error[23]).intl;
               const string3 = intl13.string;
-              const t = message(outer1_2[23]).t;
-              if (tmp14) {
-                let str25 = string3(t.kzFKb6);
+              const t = error(error[23]).t;
+              if (tmp13) {
+                let str8 = string3(t.kzFKb6);
               } else {
-                str25 = string3(t.jwCLTM);
+                str8 = string3(t.jwCLTM);
               }
-              obj.headerText = str25.toUpperCase();
-              error = message;
-              error = outer1_2;
-              const intl14 = message(outer1_2[23]).intl;
-              obj.titleText = intl14.string(message(outer1_2[23]).t.SdKbX2);
+              obj[1] = str8.toUpperCase();
+              const intl14 = error(error[23]).intl;
+              obj[2] = intl14.string(error(error[23]).t.SdKbX2);
               error = outer1_4;
-              error = callback;
-              error = outer1_4(callback(outer1_2[26]).unsafe_rawColors.RED_400);
-              if (null == error) {
+              error = outer1_4(error(error[26]).unsafe_rawColors.RED_400);
+              if (error == null) {
                 error = closure_3;
               }
-              obj.titleColor = error;
+              obj[3] = error;
               error = closure_2;
-              obj.headerColor = closure_2;
+              obj[4] = closure_2;
               error = closure_10;
-              obj.thumbnailBackgroundColor = closure_10;
+              obj[5] = closure_10;
               if (error === outer1_9.INVALID_GIFT_REDEMPTION_CLIENT_UPDATE_REQUIRED) {
-                error = message;
-                error = outer1_2;
-                const intl16 = message(outer1_2[23]).intl;
-                error = intl16.string(message(outer1_2[23]).t.QXgO5w);
+                const intl16 = error(error[23]).intl;
+                error = intl16.string(error(error[23]).t.QXgO5w);
               } else {
-                error = message;
-                error = outer1_2;
-                const intl15 = message(outer1_2[23]).intl;
+                const intl15 = error(error[23]).intl;
                 const string4 = intl15.string;
-                const t2 = message(outer1_2[23]).t;
-                if (tmp14) {
+                const t2 = error(error[23]).t;
+                if (tmp13) {
                   error = string4(t2.pBDXpb);
                 } else {
                   error = string4(t2.TPamyd);
                 }
               }
-              obj.subtitle = error;
+              obj[6] = error;
               error = closure_4;
-              obj.subtitleColor = closure_4;
+              obj[7] = closure_4;
               error = obj;
               error = obj;
               error = Object.assign(obj);
@@ -184,20 +163,26 @@ export const createGiftCodeEmbed = function createGiftCodeEmbed(message, forcedT
             } else {
               error = outer1_8;
               error = outer1_8.get(error.skuId);
-              error = outer1_6;
-              error = outer1_7;
-              error = outer1_6.getIsAccepting(arg0);
+              error = obj.getIsAccepting(giftCode);
               error = outer1_7.getCurrentUser();
-              const tmp16 = !(null == error || !error.verified || error.redeemed || error.isClaimed);
-              let tmp17 = tmp16;
-              if (tmp16) {
+              let verified;
+              if (error != null) {
+                verified = error.verified;
+              }
+              let tmp15 = verified;
+              if (tmp15) {
+                tmp15 = !(error.redeemed || error.isClaimed);
+                const tmp16 = error.redeemed || error.isClaimed;
+              }
+              let tmp17 = tmp15;
+              if (tmp15) {
                 tmp17 = null != error.expiresAt;
               }
               if (tmp17) {
                 const intl2 = message(outer1_2[23]).intl;
-                obj = {};
+                obj = { hours: null };
                 const expiresAt = error.expiresAt;
-                obj.hours = expiresAt.diff(callback(outer1_2[27])(), "h");
+                obj[0] = expiresAt.diff(callback(outer1_2[27])(), "h");
                 const formatToPlainStringResult = intl2.formatToPlainString(message(outer1_2[23]).t.nZBvUR, obj);
               }
               if (error.redeemed) {
@@ -207,17 +192,20 @@ export const createGiftCodeEmbed = function createGiftCodeEmbed(message, forcedT
                 const intl4 = message(outer1_2[23]).intl;
                 stringResult = intl4.string(message(outer1_2[23]).t.ARWFQX);
               } else {
-                if (!tmp22) {
+                let verified1;
+                if (error != null) {
+                  verified1 = error.verified;
+                }
+                if (!verified1) {
                   const intl3 = message(outer1_2[23]).intl;
                   stringResult = intl3.string(message(outer1_2[23]).t["j+KPkX"]);
                 }
-                tmp22 = null != error && error.verified;
               }
               let tmp30 = null != error.giftStyle;
               if (!tmp30) {
                 tmp30 = message.type === outer1_10.CUSTOM_GIFT;
               }
-              if (tmp16) {
+              if (tmp15) {
                 const intl9 = message(outer1_2[23]).intl;
                 const string = intl9.string;
                 let TiZFqX = message(outer1_2[23]).t;
@@ -231,221 +219,231 @@ export const createGiftCodeEmbed = function createGiftCodeEmbed(message, forcedT
                 if (error) {
                   const intl8 = message(outer1_2[23]).intl;
                   let stringResult2 = intl8.string(message(outer1_2[23]).t.rTeOBK);
-                  let processColorOrThrowResult = closure_8;
+                  let processColorOrThrowResult = addSku;
                   let processColorOrThrowResult1 = closure_9;
                 } else {
                   if (!error.redeemed) {
                     if (!error.isClaimed) {
-                      if (!tmp33) {
+                      let verified2;
+                      if (error != null) {
+                        verified2 = error.verified;
+                      }
+                      if (!verified2) {
                         const intl6 = message(outer1_2[23]).intl;
                         stringResult2 = intl6.string(message(outer1_2[23]).t.v740sh);
-                        let obj2 = message(outer1_2[28]);
-                        processColorOrThrowResult = obj2.processColorOrThrow(callback(outer1_2[26]).unsafe_rawColors.BRAND_500);
                         let obj3 = message(outer1_2[28]);
-                        processColorOrThrowResult1 = obj3.processColorOrThrow(callback(outer1_2[26]).unsafe_rawColors.WHITE);
+                        processColorOrThrowResult = obj3.processColorOrThrow(callback(outer1_2[26]).unsafe_rawColors.BRAND_500);
+                        let obj4 = message(outer1_2[28]);
+                        processColorOrThrowResult1 = obj4.processColorOrThrow(callback(outer1_2[26]).unsafe_rawColors.WHITE);
                       }
-                      tmp33 = null != error && error.verified;
                     }
                   }
                   const intl7 = message(outer1_2[23]).intl;
                   stringResult2 = intl7.string(message(outer1_2[23]).t.BTihou);
-                  processColorOrThrowResult = closure_8;
+                  processColorOrThrowResult = addSku;
                   processColorOrThrowResult1 = closure_9;
                 }
                 const skuId = error.skuId;
                 if (outer1_12.TIER_0 === skuId) {
                   if (tmp30) {
-                    let tmp87 = obj(error.giftStyle);
+                    let tmp82 = obj(error.giftStyle);
                   } else {
-                    tmp87 = callback(outer1_2[30]);
+                    tmp82 = callback(tmp80[30]);
                   }
-                  const assetUriForEmbed = message(outer1_2[29]).getAssetUriForEmbed(tmp87);
-                  const obj12 = message(outer1_2[29]);
+                  const assetUriForEmbed = message(outer1_2[29]).getAssetUriForEmbed(tmp82);
+                  let tmp79Result = tmp79(tmp80[29]);
+                  tmp79Result = tmp79(tmp80[21]);
+                  if (tmp79Result.isThemeDark(callback)) {
+                    let tmp86Result = tmp86(tmp80[31]);
+                    let tmp88 = tmp86;
+                  } else {
+                    tmp86Result = tmp86(tmp80[32]);
+                    tmp88 = tmp86;
+                  }
+                  const assetUriForEmbed1 = tmp79Result.getAssetUriForEmbed(tmp86Result);
                   const obj13 = message(outer1_2[29]);
-                  if (obj14.isThemeDark(callback)) {
-                    let tmp93Result = tmp93(tmp94[31]);
-                  } else {
-                    tmp93Result = tmp93(tmp94[32]);
-                  }
-                  const assetUriForEmbed1 = obj13.getAssetUriForEmbed(tmp93Result);
-                  obj14 = message(outer1_2[21]);
                 } else {
-                  error = outer1_12;
-                  if (outer1_12.TIER_1 === skuId) {
+                  if (tmp50.TIER_1 === skuId) {
                     if (tmp30) {
-                      let tmp74 = obj(error.giftStyle);
+                      let tmp72 = obj(error.giftStyle);
                     } else {
-                      tmp74 = callback(outer1_2[33]);
+                      tmp72 = callback(tmp70[33]);
                     }
-                    const assetUriForEmbed2 = message(outer1_2[29]).getAssetUriForEmbed(tmp74);
-                    const obj9 = message(outer1_2[29]);
+                    const assetUriForEmbed2 = message(outer1_2[29]).getAssetUriForEmbed(tmp72);
+                    let tmp69Result = tmp69(tmp70[29]);
+                    tmp69Result = tmp69(tmp70[21]);
+                    if (tmp69Result.isThemeDark(callback)) {
+                      let tmp76Result = tmp76(tmp70[31]);
+                      let tmp78 = tmp76;
+                    } else {
+                      tmp76Result = tmp76(tmp70[32]);
+                      tmp78 = tmp76;
+                    }
+                    let assetUriForEmbed3 = tmp69Result.getAssetUriForEmbed(tmp76Result);
+                    let tmp52 = tmp78;
+                    let tmp68 = tmp70;
+                    let tmp55 = tmp69;
+                    let assetUriForEmbed5 = assetUriForEmbed2;
                     const obj10 = message(outer1_2[29]);
-                    if (obj11.isThemeDark(callback)) {
-                      let tmp80Result = tmp80(tmp81[31]);
-                    } else {
-                      tmp80Result = tmp80(tmp81[32]);
-                    }
-                    let assetUriForEmbed3 = obj10.getAssetUriForEmbed(tmp80Result);
-                    let assetUriForEmbed4 = assetUriForEmbed2;
-                    obj11 = message(outer1_2[21]);
                   } else {
-                    error = outer1_12;
-                    if (outer1_12.TIER_2 !== skuId) {
-                      error = outer1_12;
-                      if (outer1_12.LEGACY !== skuId) {
+                    if (tmp50.TIER_2 !== skuId) {
+                      if (tmp50.LEGACY !== skuId) {
                         error = message;
-                        error = outer1_2;
-                        const obj24 = message(outer1_2[29]);
+                        tmp68 = outer1_2;
+                        const obj28 = message(outer1_2[29]);
                         error = callback;
                         error = callback;
-                        error = outer1_2;
-                        if (obj25.isThemeDark(callback)) {
-                          let valueResult = error(error[31]);
+                        if (obj29.isThemeDark(callback)) {
+                          let valueResult = error(tmp68[31]);
+                          tmp52 = error;
                         } else {
-                          valueResult = error(error[32]);
+                          valueResult = error(tmp68[32]);
+                          tmp52 = error;
                         }
-                        assetUriForEmbed3 = obj24.getAssetUriForEmbed(valueResult);
-                        obj25 = message(outer1_2[21]);
-                        assetUriForEmbed4 = message(outer1_2[29]).getAssetUriForEmbed(obj(error.giftStyle));
-                        const obj5 = message(outer1_2[29]);
+                        const assetUriForEmbed4 = obj28.getAssetUriForEmbed(valueResult);
+                        obj29 = message(outer1_2[21]);
+                        tmp55 = error;
+                        assetUriForEmbed3 = assetUriForEmbed4;
+                        assetUriForEmbed5 = error(tmp68[29]).getAssetUriForEmbed(obj(error.giftStyle));
+                        const valueResult1 = error(tmp68[29]);
                       }
                     }
                     if (tmp30) {
                       let tmp61 = obj(error.giftStyle);
                     } else {
-                      tmp61 = callback(outer1_2[34]);
+                      tmp61 = callback(tmp59[34]);
                     }
-                    const assetUriForEmbed5 = message(outer1_2[29]).getAssetUriForEmbed(tmp61);
-                    const obj6 = message(outer1_2[29]);
-                    const obj7 = message(outer1_2[29]);
-                    if (obj8.isThemeDark(callback)) {
-                      let tmp67Result = tmp67(tmp68[31]);
+                    const assetUriForEmbed6 = message(outer1_2[29]).getAssetUriForEmbed(tmp61);
+                    let tmp58Result = tmp58(tmp59[29]);
+                    tmp58Result = tmp58(tmp59[21]);
+                    if (tmp58Result.isThemeDark(callback)) {
+                      let tmp65Result = tmp65(tmp59[31]);
+                      let tmp67 = tmp65;
                     } else {
-                      tmp67Result = tmp67(tmp68[32]);
+                      tmp65Result = tmp65(tmp59[32]);
+                      tmp67 = tmp65;
                     }
-                    assetUriForEmbed3 = obj7.getAssetUriForEmbed(tmp67Result);
-                    assetUriForEmbed4 = assetUriForEmbed5;
-                    obj8 = message(outer1_2[21]);
+                    assetUriForEmbed3 = tmp58Result.getAssetUriForEmbed(tmp65Result);
+                    tmp52 = tmp67;
+                    tmp68 = tmp59;
+                    tmp55 = tmp58;
+                    assetUriForEmbed5 = assetUriForEmbed6;
+                    const obj7 = message(outer1_2[29]);
                   }
-                  error = assetUriForEmbed4;
-                  if (obj15.isGameItemSKU(error)) {
-                    error = message;
-                    error = outer1_2;
-                    const str3 = message(outer1_2[35]).getGameItemThumbnailUrl(error);
-                    error = undefined;
-                    if (null != str3) {
-                      error = str3.toString();
+                  let tmp55Result = tmp55(tmp68[35]);
+                  let tmp95 = assetUriForEmbed5;
+                  if (tmp55Result.isGameItemSKU(error)) {
+                    tmp55Result = tmp55(tmp68[35]);
+                    const str3 = tmp55Result.getGameItemThumbnailUrl(error);
+                    let str;
+                    if (str3 != null) {
+                      str = str3.toString();
                     }
-                    if (null != error) {
-                      assetUriForEmbed4 = error;
+                    if (str == null) {
+                      str = assetUriForEmbed5;
                     }
-                    error = assetUriForEmbed4;
-                    const obj16 = message(outer1_2[35]);
+                    tmp95 = str;
                   }
                   const obj1 = {};
-                  error = obj;
-                  error = obj1;
-                  error = Object.assign(obj);
+                  const merged = Object.assign(obj);
                   error = message;
                   error = outer1_10;
                   if (message.type === outer1_10.CUSTOM_GIFT) {
-                    if (!tmp14) {
-                      error = message;
-                      error = outer1_2;
-                      const intl10 = message(outer1_2[23]).intl;
-                      obj2 = {};
-                      error = outer1_14;
-                      obj2.recipientDisplayName = outer1_14(error);
-                      obj1["headerText"] = intl10.formatToPlainString(message(outer1_2[23]).t.t1SOId, obj2).toUpperCase();
+                    if (!tmp13) {
+                      const intl10 = tmp55(tmp68[23]).intl;
+                      let tmp52Result = tmp52(tmp68[19]);
+                      let str4 = tmp52Result.getName(error);
+                      if (str4 == null) {
+                        str4 = "";
+                      }
+                      const obj2 = { recipientDisplayName: null };
+                      obj2[0] = str4;
+                      obj1.headerText = intl10.formatToPlainString(tmp55(tmp68[23]).t.t1SOId, obj2).toUpperCase();
                       error = undefined;
                       if (null != error) {
-                        error = message;
-                        error = outer1_10;
-                        if (message.type !== outer1_10.CUSTOM_GIFT) {
+                        if (error.type !== error.CUSTOM_GIFT) {
                           error = undefined;
                           if (null != error) {
                             error = error.name;
                           }
                         } else {
-                          error = outer1_7;
-                          error = message;
-                          error = outer1_2;
-                          error = outer1_7.getUser(error.userId);
-                          const intl12 = message(outer1_2[23]).intl;
-                          obj3 = {};
-                          error = outer1_14;
-                          obj3.sender = outer1_14(error);
-                          error = intl12.formatToPlainString(message(outer1_2[23]).t.DDO4Wz, obj3);
+                          error = obj27.getUser(error.userId);
+                          const intl12 = tmp55(tmp68[23]).intl;
+                          tmp52Result = tmp52(tmp68[19]);
+                          let str7 = tmp52Result.getName(error);
+                          if (str7 == null) {
+                            str7 = "";
+                          }
+                          obj3 = { sender: null };
+                          obj3[0] = str7;
+                          error = intl12.formatToPlainString(tmp55(tmp68[23]).t.DDO4Wz, obj3);
                         }
                       }
-                      obj1["titleText"] = error;
-                      obj1["subtitle"] = formatToPlainStringResult;
-                      obj1["bodyText"] = stringResult;
+                      obj1.titleText = error;
+                      obj1.subtitle = formatToPlainStringResult;
+                      obj1.bodyText = stringResult;
                       error = closure_2;
-                      obj1["headerColor"] = closure_2;
+                      obj1.headerColor = closure_2;
                       error = closure_3;
-                      obj1["titleColor"] = closure_3;
+                      obj1.titleColor = closure_3;
                       error = closure_4;
-                      obj1["subtitleColor"] = closure_4;
-                      error = _isNativeReflectConstruct;
-                      obj1["bodyTextColor"] = _isNativeReflectConstruct;
-                      obj1["acceptLabelBackgroundColor"] = processColorOrThrowResult;
-                      obj1["acceptLabelColor"] = processColorOrThrowResult1;
-                      obj1["acceptLabelText"] = stringResult2;
-                      obj1["acceptLabelBorderColor"] = undefined;
-                      obj1["canBeAccepted"] = tmp16;
-                      obj1["embedCanBeTapped"] = true;
-                      obj1["giftCode"] = arg0;
+                      obj1.subtitleColor = closure_4;
+                      error = fetchFingerprint;
+                      obj1.bodyTextColor = fetchFingerprint;
+                      obj1.acceptLabelBackgroundColor = processColorOrThrowResult;
+                      obj1.acceptLabelColor = processColorOrThrowResult1;
+                      obj1.acceptLabelText = stringResult2;
+                      obj1.acceptLabelBorderColor = undefined;
+                      obj1.canBeAccepted = tmp15;
+                      obj1.embedCanBeTapped = true;
+                      obj1.giftCode = giftCode;
                       error = undefined;
-                      obj1["thumbnailUrl"] = error;
-                      error = message;
-                      error = outer1_10;
+                      if (null != tmp95) {
+                        error = tmp95;
+                      }
+                      obj1.thumbnailUrl = error;
                       error = undefined;
-                      if (message.type !== outer1_10.CUSTOM_GIFT) {
+                      if (error.type !== error.CUSTOM_GIFT) {
                         if (null != assetUriForEmbed3) {
                           error = assetUriForEmbed3;
                         }
                       }
-                      obj1["splashUrl"] = error;
-                      error = callback;
-                      error = outer1_2;
-                      const str4 = intl10.formatToPlainString(message(outer1_2[23]).t.t1SOId, obj2);
-                      obj1["splashHasRadialGradient"] = !callback(outer1_2[36]).isPremiumSku(error.skuId);
-                      const obj20 = callback(outer1_2[36]);
-                      let num35 = 0.97;
-                      if (obj21.isPremiumSku(error.skuId)) {
-                        num35 = 0.8;
+                      obj1.splashUrl = error;
+                      const str5 = intl10.formatToPlainString(tmp55(tmp68[23]).t.t1SOId, obj2);
+                      obj1.splashHasRadialGradient = !tmp52(tmp68[36]).isPremiumSku(error.skuId);
+                      const tmp52Result1 = tmp52(tmp68[36]);
+                      let num5 = 0.97;
+                      if (tmp52Result2.isPremiumSku(error.skuId)) {
+                        num5 = 0.8;
                       }
-                      obj1["splashOpacity"] = num35;
+                      obj1.splashOpacity = num5;
                       return obj1;
                     }
                   }
-                  error = message;
-                  error = outer1_2;
-                  const intl11 = message(outer1_2[23]).intl;
+                  const intl11 = tmp55(tmp68[23]).intl;
                   const string2 = intl11.string;
-                  let toUpperCase = message(outer1_2[23]).t;
-                  if (tmp14) {
-                    let str5 = string2(toUpperCase.QLEMld);
+                  let toUpperCase = tmp55(tmp68[23]).t;
+                  if (tmp13) {
+                    let str6 = string2(toUpperCase.QLEMld);
                   } else {
-                    str5 = string2(toUpperCase.W4DBcy);
+                    str6 = string2(toUpperCase.W4DBcy);
                   }
-                  toUpperCase = str5.toUpperCase;
+                  toUpperCase = str6.toUpperCase;
                   error = toUpperCase();
-                  obj15 = message(outer1_2[35]);
                 }
               }
-              const tmp15 = null == error || !error.verified || error.redeemed || error.isClaimed;
+              obj27 = outer1_7;
             }
           } else {
-            obj = {};
+            obj4 = { headerText: null, headerColor: null, resolvingGradientStart: null, resolvingGradientEnd: null };
             const intl = message(outer1_2[23]).intl;
-            obj.headerText = intl.string(message(outer1_2[23]).t["E+va0m"]).toUpperCase();
-            obj.headerColor = closure_2;
-            obj.resolvingGradientStart = closure_6;
-            obj.resolvingGradientEnd = closure_7;
-            const merged = Object.assign(obj);
-            return obj;
+            str = intl.string(message(outer1_2[23]).t["E+va0m"]);
+            obj4[0] = str.toUpperCase();
+            obj4[1] = closure_2;
+            obj4[2] = updateGiftCode;
+            obj4[3] = mergeGuildAvatar;
+            const merged1 = Object.assign(obj);
+            return obj4;
           }
         }
       });

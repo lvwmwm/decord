@@ -1,58 +1,58 @@
-// Module ID: 15630
-// Function ID: 120347
+// Module ID: 15665
+// Function ID: 15666
 // Name: LinkedLobbyFormSection
-// Dependencies: [31, 1348, 653, 33, 1456, 5503, 5536, 1212, 5198, 1273, 1392, 4165, 689, 566, 7611, 4576, 15527, 15631, 2]
+// Dependencies: [19, 1372, 676, 21, 1480, 5521, 5554, 1236, 5220, 1297, 1416, 4189, 712, 589, 7634, 4598, 15561, 15666, 2]
 // Exports: default
 
-// Module 15630 (LinkedLobbyFormSection)
-import "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 15665 (LinkedLobbyFormSection)
+import "noop";
+import ensureGuildLoaded from "ensureGuildLoaded";
 import { ChannelSettingsSections } from "ME";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_5;
+let c5;
 let closure_6;
 const require = arg1;
 function LinkedLobbyFormSection(channel) {
   channel = channel.channel;
-  let obj = channel(1456);
-  const importDefault = obj.useNavigation();
-  let obj1 = channel(5503);
+  let importDefault;
+  let obj = channel(1480);
+  importDefault = obj.useNavigation();
+  let obj1 = channel(5521);
   const linkedLobby = channel.linkedLobby;
   let application_id;
-  if (null != linkedLobby) {
+  if (linkedLobby != null) {
     application_id = linkedLobby.application_id;
   }
   const getOrFetchApplication = obj1.useGetOrFetchApplication(application_id);
-  let tmp3 = null;
+  let tmp5 = null;
   if (null != getOrFetchApplication) {
-    obj = {};
-    const intl = channel(1212).intl;
-    obj.title = intl.string(channel(1212).t.oAvIAg);
-    obj.hasIcons = true;
-    obj = { label: getOrFetchApplication.name };
-    obj1 = {};
-    ({ id: obj7.id, icon: obj7.icon } = getOrFetchApplication);
-    obj1.source = importDefault(1392).getApplicationIconSource({});
-    obj1.size = channel(1273).AvatarSizes.REFRESH_MEDIUM_32;
-    obj.icon = callback(channel(1273).Avatar, obj1);
-    obj.arrow = true;
-    obj.onPress = function onPress() {
+    obj = { title: null, hasIcons: true, children: null };
+    const intl = tmp(1236).intl;
+    obj[0] = intl.string(tmp(1236).t.oAvIAg);
+    obj = { label: null, icon: null, arrow: true, onPress: null };
+    obj[0] = getOrFetchApplication.name;
+    obj1 = { source: null, size: null };
+    ({ id: obj7[0], icon: obj7[1] } = getOrFetchApplication);
+    obj1[0] = importDefault(1416).getApplicationIconSource({ id: null, icon: null });
+    obj1[1] = tmp(1297).AvatarSizes.REFRESH_MEDIUM_32;
+    obj[1] = callback(tmp(1297).Avatar, obj1);
+    obj[3] = function onPress() {
 
     };
-    obj.children = callback(channel(5198).TableRow, obj);
-    tmp3 = callback(channel(5536).TableRowGroup, obj);
-    const obj2 = {};
-    const obj6 = importDefault(1392);
+    obj[2] = callback(tmp(5220).TableRow, obj);
+    tmp5 = callback(tmp(5554).TableRowGroup, obj);
+    const obj2 = { id: null, icon: null };
+    const obj6 = importDefault(1416);
   }
-  return tmp3;
+  return tmp5;
 }
-({ jsx: closure_5, jsxs: closure_6 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { flex: 1, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWER, paddingTop: require("_createForOfIteratorHelperLoose").space.PX_16 };
-_createForOfIteratorHelperLoose.screenContainer = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+({ jsx: c5, jsxs: closure_6 } = jsxProd);
+createCacheKey = { screenContainer: null };
+createCacheKey = { flex: 1, backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOWER, paddingTop: require("Themes").space.PX_16 };
+createCacheKey[0] = createCacheKey;
+createCacheKey = createCacheKey.createStyles(createCacheKey);
 const result = require("ME").fileFinishedImporting("components_native/channel_settings/ChannelSettingsIntegrationsOverview.tsx");
 
 export default function ConnectedChannelSettingsIntegrationsOverview(arg0) {
@@ -60,59 +60,59 @@ export default function ConnectedChannelSettingsIntegrationsOverview(arg0) {
   let canUnlinkLobby;
   let require;
   ({ channelId: require, canManageWebhooks, canUnlinkLobby } = arg0);
-  let obj = require(1456) /* useNavigation */;
-  const importDefault = obj.useNavigation();
-  let obj1 = require(566) /* initialize */;
-  const items = [_isNativeReflectConstruct];
+  let importDefault;
+  let obj = require(1480) /* useNavigation */;
+  importDefault = obj.useNavigation();
+  let obj1 = require(589) /* initialize */;
+  const items = [ensureGuildLoaded];
   const stateFromStores = obj1.useStateFromStores(items, () => outer1_3.getChannel(closure_0));
-  let tmp4Result = null;
+  let tmp6Result = null;
   if (null != stateFromStores) {
-    obj = { style: tmp2.screenContainer };
-    obj = {};
-    obj1 = { paddingHorizontal: importDefault(689).space.PX_12 };
-    obj.style = obj1;
-    obj.spacing = importDefault(689).space.PX_24;
+    obj = { style: null, children: null };
+    obj[0] = tmp4.screenContainer;
+    obj = { style: null, spacing: null, children: null };
+    obj1 = { paddingHorizontal: null };
+    obj1[0] = importDefault(712).space.PX_12;
+    obj[0] = obj1;
+    obj[1] = importDefault(712).space.PX_24;
     if (canManageWebhooks) {
-      const obj2 = { hasIcons: true };
-      const obj3 = {};
-      const intl = require(1212) /* getSystemLocale */.intl;
-      obj3.label = intl.string(require(1212) /* getSystemLocale */.t.jp25Id);
-      const intl2 = require(1212) /* getSystemLocale */.intl;
-      obj3.subLabel = intl2.string(require(1212) /* getSystemLocale */.t.mKIOkI);
-      obj3.icon = callback(require(15527) /* WebhookIcon */.WebhookIcon, {});
-      obj3.arrow = true;
-      obj3.onPress = function onPress() {
+      const obj2 = { hasIcons: true, children: null };
+      const obj3 = { label: null, subLabel: null, icon: null, arrow: true, onPress: null };
+      const intl = tmp(1236).intl;
+      obj3[0] = intl.string(tmp(1236).t.jp25Id);
+      const intl2 = tmp(1236).intl;
+      obj3[1] = intl2.string(tmp(1236).t.mKIOkI);
+      obj3[2] = tmp6(tmp(15561).WebhookIcon, {});
+      obj3[4] = function onPress() {
         return arr.push(outer1_4.WEBHOOKS);
       };
-      const items1 = [callback(require(5198) /* TableRowInner */.TableRow, obj3), ];
-      const obj4 = {};
-      const intl3 = require(1212) /* getSystemLocale */.intl;
-      obj4.label = intl3.string(require(1212) /* getSystemLocale */.t.OrV60r);
-      const intl4 = require(1212) /* getSystemLocale */.intl;
-      obj4.subLabel = intl4.string(require(1212) /* getSystemLocale */.t.rQREJl);
-      obj4.icon = callback(require(15631) /* ChannelsFollowedIcon */.ChannelsFollowedIcon, {});
-      obj4.arrow = true;
-      obj4.onPress = function onPress() {
+      const items1 = [tmp6(tmp(5220).TableRow, obj3), ];
+      const obj4 = { label: null, subLabel: null, icon: null, arrow: true, onPress: null };
+      const intl3 = tmp(1236).intl;
+      obj4[0] = intl3.string(tmp(1236).t.OrV60r);
+      const intl4 = tmp(1236).intl;
+      obj4[1] = intl4.string(tmp(1236).t.rQREJl);
+      obj4[2] = tmp6(tmp(15666).ChannelsFollowedIcon, {});
+      obj4[4] = function onPress() {
         return arr.push(outer1_4.CHANNELS_FOLLOWED);
       };
-      items1[1] = callback(require(5198) /* TableRowInner */.TableRow, obj4);
-      obj2.children = items1;
-      canManageWebhooks = callback2(require(5536) /* TableRowGroupTitle */.TableRowGroup, obj2);
+      items1[1] = tmp6(tmp(5220).TableRow, obj4);
+      obj2[1] = items1;
+      canManageWebhooks = tmp7(tmp(5554).TableRowGroup, obj2);
     }
     const items2 = [canManageWebhooks, ];
     if (canUnlinkLobby) {
       canUnlinkLobby = null != stateFromStores.linkedLobby;
     }
     if (canUnlinkLobby) {
-      const obj5 = { channel: stateFromStores };
-      canUnlinkLobby = callback(LinkedLobbyFormSection, obj5);
+      const obj5 = { channel: null };
+      obj5[0] = stateFromStores;
+      canUnlinkLobby = tmp6(LinkedLobbyFormSection, obj5);
     }
     items2[1] = canUnlinkLobby;
-    obj.children = items2;
-    obj.children = callback2(require(4576) /* Stack */.Stack, obj);
-    tmp4Result = callback(require(7611) /* Form */.Form, obj);
-    const tmp4 = callback;
-    const tmp7 = callback2;
+    obj[2] = items2;
+    obj[1] = closure_6(tmp(4598).Stack, obj);
+    tmp6Result = tmp6(tmp(7634).Form, obj);
   }
-  return tmp4Result;
+  return tmp6Result;
 };

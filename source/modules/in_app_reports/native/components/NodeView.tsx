@@ -1,200 +1,130 @@
-// Module ID: 7677
-// Function ID: 61295
-// Name: _createForOfIteratorHelperLoose
-// Dependencies: [57, 31, 27, 4164, 1348, 3793, 7678, 7675, 653, 482, 33, 4165, 689, 5485, 4597, 4161, 4009, 4121, 566, 4695, 7679, 1456, 4563, 4574, 7672, 7670, 4359, 3878, 7681, 7685, 6235, 5155, 7686, 7687, 7688, 7689, 12373, 12374, 12375, 12376, 12377, 12378, 12379, 12380, 12381, 12383, 12384, 12385, 12386, 12387, 12388, 12389, 12390, 12393, 2]
+// Module ID: 7700
+// Function ID: 7701
+// Name: HeaderView
+// Dependencies: [32, 19, 17, 4188, 1372, 3817, 7701, 7698, 676, 505, 21, 4189, 712, 5503, 4619, 4185, 4033, 4145, 589, 4717, 7702, 1480, 4586, 4596, 7695, 7693, 4384, 3902, 7704, 7708, 6255, 5177, 7709, 7710, 7711, 7712, 12395, 12396, 12397, 12398, 12399, 12400, 12401, 12402, 12403, 12405, 12406, 12407, 12408, 12409, 12410, 12411, 12412, 12415, 2]
 // Exports: default
 
-// Module 7677 (_createForOfIteratorHelperLoose)
-import _slicedToArray from "_slicedToArray";
-import SafeAreaPaddingView from "SafeAreaPaddingView";
-import get_ActivityIndicator from "AccessibilityAnnouncer";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_9 from "_isNativeReflectConstruct";
-import closure_10 from "_isNativeReflectConstruct";
+// Module 7700 (HeaderView)
+import ShieldElement from "ShieldElement";
+import PressableBase from "PressableBase";
+import get_ActivityIndicator from "CircleInformationIcon";
+import getUserAgnosticState from "getUserAgnosticState";
+import ensureGuildLoaded from "ensureGuildLoaded";
+import getUncachedChannelPermissions from "getUncachedChannelPermissions";
 import { REMEDIATION_ELEMENT_TYPES } from "REMEDIATION_ELEMENT_TYPES";
 import { IN_APP_REPORTS_NODE } from "IN_APP_REPORTS_NODE";
 import ME from "ME";
 import { Permissions } from "sum";
-import jsxProd from "TextLineElement";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import jsxProd from "useNavigation";
+import createCacheKey from "createCacheKey";
 
-let closure_13;
 let closure_14;
 let closure_16;
 let closure_17;
 let closure_6;
-let closure_7;
+let error;
+let map1;
 const require = arg1;
-function _createForOfIteratorHelperLoose(iterable) {
-  let closure_0 = iterable;
-  iterable = "undefined" !== typeof Symbol;
-  if (iterable) {
-    const _Symbol = Symbol;
-    iterable = iterable[Symbol.iterator];
-  }
-  if (!iterable) {
-    iterable = iterable[Symbol.iterator];
-  }
-  if (iterable) {
-    const iter = iterable.call(iterable);
-    const next = iter.next;
-    return next.bind(iter);
-  } else {
-    const _Array = Array;
-    let tmp = iterable;
-    if (!Array.isArray(iterable)) {
-      let tmp2;
-      if (iterable) {
-        if ("string" === typeof iterable) {
-          tmp2 = _arrayLikeToArray(iterable, undefined);
-        } else {
-          const toString = {}.toString;
-          const substr = toString.call(iterable).slice(8, -1);
-          let name = substr;
-          if (tmp3) {
-            name = iterable.constructor.name;
-          }
-          if ("Map" !== name) {
-            if ("Set" !== name) {
-              if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(iterable, undefined);
-              } else {
-                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
-              }
-            }
-            tmp2 = arr;
-          }
-          const _Array2 = Array;
-          arr = Array.from(iterable);
-          const callResult = toString.call(iterable);
-          tmp3 = "Object" === substr && iterable.constructor;
-        }
-      }
-      tmp = tmp2;
-      if (!tmp2) {
-        const _TypeError = TypeError;
-        const typeError = new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
-        throw typeError;
-      }
-    }
-    if (tmp) {
-      closure_0 = tmp;
-    }
-    let c1 = 0;
-    return () => {
-      if (closure_1 >= length.length) {
-        let obj = { done: true };
-      } else {
-        obj = { done: false };
-        closure_1 = tmp3 + 1;
-        obj.value = length[+closure_1];
-      }
-      return obj;
-    };
-  }
-}
-function _arrayLikeToArray(arg0, arg1) {
-  let length;
-  if (tmp) {
-    length = arg0.length;
-  }
-  const ArrayResult = Array(length);
-  for (let num = 0; num < length; num = num + 1) {
-    ArrayResult[num] = arg0[num];
-  }
-  return ArrayResult;
-}
 function HeaderView(node) {
   let description;
   let header;
   let subheader;
   ({ header, subheader, description } = node.node);
-  const tmp = _createForOfIteratorHelperLoose();
-  let obj = { style: tmp.headerContainer };
-  let tmp5 = null != header;
-  if (tmp5) {
-    tmp5 = "" !== header;
+  const tmp = createCacheKey();
+  let obj = { style: tmp.headerContainer, children: null };
+  let tmp6 = null != header;
+  if (tmp6) {
+    tmp6 = "" !== header;
   }
-  if (tmp5) {
-    obj = { ref: node.headerRef, style: tmp.header, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", accessibilityRole: "header", children: header };
-    tmp5 = callback2(require(4161) /* Text */.Text, obj);
+  if (tmp6) {
+    obj = { ref: null, style: null, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", accessibilityRole: "header", children: null };
+    obj[0] = node.headerRef;
+    obj[1] = tmp.header;
+    obj[5] = header;
+    tmp6 = callback2(require(4185) /* Text */.Text, obj);
   }
-  const items = [tmp5, , ];
+  const items = [tmp6, , ];
   let tmp9 = null;
   if (null != subheader) {
     tmp9 = null;
     if (subheader.length > 0) {
-      obj = { style: tmp.subheader, variant: "text-md/medium", color: "text-default", children: tmp2(subheader) };
-      tmp9 = callback2(require(4161) /* Text */.Text, obj);
+      obj = { style: null, variant: "text-md/medium", color: "text-default", children: null };
+      obj[0] = tmp.subheader;
+      obj[3] = tmp3(subheader);
+      tmp9 = callback2(require(4185) /* Text */.Text, obj);
     }
   }
   items[1] = tmp9;
-  let tmp13 = null;
+  let tmp12 = null;
   if (null != description) {
-    tmp13 = null;
+    tmp12 = null;
     if (description.length > 0) {
-      const obj1 = { style: tmp.description, variant: "text-xs/medium", color: "text-default", children: description };
-      tmp13 = callback2(require(4161) /* Text */.Text, obj1);
+      const obj1 = { style: null, variant: "text-xs/medium", color: "text-default", children: null };
+      obj1[0] = tmp.description;
+      obj1[3] = description;
+      tmp12 = callback2(require(4185) /* Text */.Text, obj1);
     }
   }
-  items[2] = tmp13;
-  obj.children = items;
+  items[2] = tmp12;
+  obj[1] = items;
   return closure_17(closure_6, obj);
 }
 function InfoView(node) {
   const info = node.node.info;
-  const tmp = _createForOfIteratorHelperLoose();
-  let tmp3 = null;
+  const tmp = createCacheKey();
+  let tmp4 = null;
   if (null != info) {
-    let obj = {};
+    let obj = { style: null, children: null };
     const items = [tmp.infoBox, ];
-    obj = { backgroundColor: require(4009) /* hexToRgb */.hexWithOpacity(tmp.infoBox.backgroundColor, 0.1) };
+    obj = { backgroundColor: null };
+    obj[0] = require(4033) /* hexToRgba */.hexWithOpacity(tmp.infoBox.backgroundColor, 0.1);
     items[1] = obj;
-    obj.style = items;
-    obj = { size: "md", color: tmp.infoBox.backgroundColor };
-    const items1 = [callback2(require(4121) /* CircleInformationIcon */.CircleInformationIcon, obj), ];
-    const obj1 = { style: tmp.infoBoxText, variant: "text-sm/normal", color: "interactive-text-active", children: tmp2(info) };
-    items1[1] = callback2(require(4161) /* Text */.Text, obj1);
-    obj.children = items1;
-    tmp3 = callback3(closure_6, obj);
-    const obj3 = require(4009) /* hexToRgb */;
+    obj[0] = items;
+    obj = { size: "md", color: null };
+    obj[1] = tmp.infoBox.backgroundColor;
+    const items1 = [callback2(require(4145) /* CircleInformationIcon */.CircleInformationIcon, obj), ];
+    const obj1 = { style: null, variant: "text-sm/normal", color: "interactive-text-active", children: null };
+    obj1[0] = tmp.infoBoxText;
+    obj1[3] = tmp3(info);
+    items1[1] = callback2(require(4185) /* Text */.Text, obj1);
+    obj[1] = items1;
+    tmp4 = callback3(closure_6, obj);
+    const obj3 = require(4033) /* hexToRgba */;
   }
-  return tmp3;
+  return tmp4;
 }
 function ChildItem(child) {
+  let tmp3;
   let tmp4;
-  let tmp5;
   child = child.child;
-  let obj = Object.create(null);
-  obj.child = 0;
-  obj.nodeMap = 0;
-  const importDefault = Object.assign(child, obj);
-  const tmp2 = _createForOfIteratorHelperLoose();
-  [tmp4, tmp5] = callback(child, 2);
-  obj = child(566);
-  const items = [_isNativeReflectConstruct];
-  let stateFromStores = obj.useStateFromStores(items, () => outer1_8.get("iar_show_report_sub_type_labels"));
-  if (null != child.nodeMap[tmp5]) {
-    const report_type = tmp7.report_type;
+  const importDefault = Object.assign(child, Object.create(null));
+  const tmp = createCacheKey();
+  [tmp3, tmp4] = callback(child, 2);
+  let obj = child(589);
+  const items = [getUserAgnosticState];
+  let stateFromStores = obj.useStateFromStores(items, () => getUserAgnosticState.get("iar_show_report_sub_type_labels"));
+  if (child.nodeMap[tmp4] != null) {
+    const report_type = tmp8.report_type;
   }
-  obj = { style: tmp2.childButton, accessibilityRole: "button", onPress: callback(React.useState(() => () => outer1_1.onPress(outer1_0)), 1)[0] };
-  const obj1 = { style: tmp2.childContainer };
-  const obj2 = { style: tmp2.childContent };
-  const obj3 = { style: tmp2.childButtonText, variant: "text-md/semibold", color: "mobile-text-heading-primary", children: tmp4 };
-  const items1 = [callback2(child(4161).Text, obj3), ];
+  obj = { style: tmp.childButton, accessibilityRole: "button", onPress: callback(React.useState(() => () => closure_1.onPress(closure_0)), 1)[0], children: null };
+  obj = { style: tmp.childContainer, children: null };
+  const obj1 = { style: tmp.childContent, children: null };
+  const items1 = [callback2(child(4185).Text, { style: tmp.childButtonText, variant: "text-md/semibold", color: "mobile-text-heading-primary", children: tmp3 }), ];
   if (stateFromStores) {
     stateFromStores = null != report_type;
   }
   if (stateFromStores) {
-    const obj4 = { style: tmp2.debugText, variant: "text-xs/normal", color: "text-muted", children: report_type };
-    stateFromStores = callback2(child(4161).Text, obj4);
+    const obj3 = { style: null, variant: "text-xs/normal", color: "text-muted", children: null };
+    obj3[0] = tmp.debugText;
+    obj3[3] = report_type;
+    stateFromStores = tmp9(tmp5(4185).Text, obj3);
   }
   items1[1] = stateFromStores;
-  obj2.children = items1;
-  const items2 = [closure_17(closure_6, obj2), callback2(importDefault(7679), {})];
-  obj1.children = items2;
-  obj.children = closure_17(closure_6, obj1);
-  return callback2(child(4695).PressableHighlight, obj);
+  obj1[1] = items1;
+  const items2 = [closure_17(closure_6, obj1), callback2(importDefault(7702), {})];
+  obj[1] = items2;
+  obj[3] = closure_17(closure_6, obj);
+  return callback2(child(4717).PressableHighlight, obj);
 }
 function ChildrenView(node) {
   let importDefault;
@@ -205,92 +135,86 @@ function ChildrenView(node) {
   if (null != children) {
     tmp2 = null;
     if (0 !== children.length) {
-      const obj = {
-        style: tmp.childrenContainer,
-        children: children.map((child) => {
-              const tmp = outer1_4(child, 2);
-              return outer1_16(outer1_23, { child, nodeMap: closure_1, onPress: closure_0 }, "" + tmp[0] + "+" + tmp[1]);
-            })
-      };
+      const obj = { style: null, children: null };
+      obj[0] = tmp.childrenContainer;
+      obj[1] = children.map((child) => {
+        const tmp = outer1_4(child, 2);
+        return outer1_16(outer1_21, { child, nodeMap: closure_1, onPress: closure_0 }, "" + tmp[0] + "+" + tmp[1]);
+      });
       tmp2 = callback2(closure_6, obj);
     }
   }
   return tmp2;
 }
-function getElementForType(node, block_users) {
-  const elements = node.elements;
-  let closure_0 = block_users;
-  return elements.find((type) => type.type === closure_0);
-}
-function getElementsForType(node, external_link) {
-  const elements = node.elements;
-  external_link = "external_link";
-  return elements.filter((type) => type.type === external_link);
-}
-function hasAnyRemediationElement(node) {
-  const elements = node.elements;
-  return elements.some((type) => outer1_11.includes(type.type));
-}
 function NullComponent() {
   return null;
 }
-({ View: closure_6, ScrollView: closure_7 } = get_ActivityIndicator);
-({ AnalyticEvents: closure_13, ChannelTypes: closure_14 } = ME);
+({ View: closure_6, ScrollView: error } = get_ActivityIndicator);
+({ AnalyticEvents: map1, ChannelTypes: closure_14 } = ME);
 ({ jsx: closure_16, jsxs: closure_17 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { flex: 1, alignSelf: "stretch", justifyContent: "flex-start", alignItems: "center", backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWER, marginTop: 30 };
-_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.scrollView = { flex: 1, alignSelf: "stretch", marginTop: 24 };
-_createForOfIteratorHelperLoose.childrenContainer = { flex: 1, alignSelf: "stretch", paddingHorizontal: 16 };
-_createForOfIteratorHelperLoose.headerContainer = { alignSelf: "stretch", marginBottom: 24, paddingHorizontal: 16 };
-_createForOfIteratorHelperLoose.header = { marginBottom: 8, textAlign: "center" };
-_createForOfIteratorHelperLoose.subheader = { lineHeight: 20, marginBottom: 8, textAlign: "center" };
-_createForOfIteratorHelperLoose.description = { lineHeight: 16, marginBottom: 8, textAlign: "center" };
-let obj1 = { alignSelf: "stretch", backgroundColor: require("_createForOfIteratorHelperLoose").unsafe_rawColors.BLUE_345, borderRadius: require("_createForOfIteratorHelperLoose").radii.xs, borderColor: require("_createForOfIteratorHelperLoose").unsafe_rawColors.BLUE_345, borderWidth: 1, padding: 8, flexDirection: "row", marginBottom: 16, marginHorizontal: 16 };
-_createForOfIteratorHelperLoose.infoBox = obj1;
-_createForOfIteratorHelperLoose.infoBoxText = { flex: 1, lineHeight: 18, marginStart: 8, marginTop: 3 };
-_createForOfIteratorHelperLoose.childButton = { marginBottom: 8, borderRadius: require("_createForOfIteratorHelperLoose").radii.xs };
-let obj3 = { minHeight: 60, flexDirection: "row", alignItems: "center", justifyContent: "flex-start", backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SURFACE_HIGH, paddingVertical: 16, paddingStart: 16, paddingEnd: 8, borderRadius: require("_createForOfIteratorHelperLoose").radii.xs };
-_createForOfIteratorHelperLoose.childContainer = obj3;
-_createForOfIteratorHelperLoose.childContent = { flex: 1 };
-_createForOfIteratorHelperLoose.childButtonText = { lineHeight: 20 };
-_createForOfIteratorHelperLoose.debugText = { marginTop: 4, lineHeight: 16 };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-let obj2 = { marginBottom: 8, borderRadius: require("_createForOfIteratorHelperLoose").radii.xs };
+createCacheKey = { container: null, scrollView: null, childrenContainer: null, headerContainer: null, header: null, subheader: null, description: null, infoBox: null, infoBoxText: null, childButton: null, childContainer: null, childContent: null, childButtonText: null, debugText: null };
+createCacheKey = { flex: 1, alignSelf: "stretch", justifyContent: "flex-start", alignItems: "center", backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOWER, marginTop: 30 };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { flex: 1, alignSelf: "stretch", marginTop: 24 };
+createCacheKey[2] = { flex: 1, alignSelf: "stretch", paddingHorizontal: 16 };
+createCacheKey[3] = { alignSelf: "stretch", marginBottom: 24, paddingHorizontal: 16 };
+createCacheKey[4] = { marginBottom: 8, textAlign: "center" };
+createCacheKey[5] = { lineHeight: 20, marginBottom: 8, textAlign: "center" };
+createCacheKey[6] = { lineHeight: 16, marginBottom: 8, textAlign: "center" };
+createCacheKey[7] = { alignSelf: "stretch", backgroundColor: require("Themes").unsafe_rawColors.BLUE_345, borderRadius: require("Themes").radii.xs, borderColor: require("Themes").unsafe_rawColors.BLUE_345, borderWidth: 1, padding: 8, flexDirection: "row", marginBottom: 16, marginHorizontal: 16 };
+createCacheKey[8] = { flex: 1, lineHeight: 18, marginStart: 8, marginTop: 3 };
+let obj1 = { alignSelf: "stretch", backgroundColor: require("Themes").unsafe_rawColors.BLUE_345, borderRadius: require("Themes").radii.xs, borderColor: require("Themes").unsafe_rawColors.BLUE_345, borderWidth: 1, padding: 8, flexDirection: "row", marginBottom: 16, marginHorizontal: 16 };
+createCacheKey[9] = { marginBottom: 8, borderRadius: require("Themes").radii.xs };
+let obj2 = { marginBottom: 8, borderRadius: require("Themes").radii.xs };
+createCacheKey[10] = { minHeight: 60, flexDirection: "row", alignItems: "center", justifyContent: "flex-start", backgroundColor: require("Themes").colors.BACKGROUND_SURFACE_HIGH, paddingVertical: 16, paddingStart: 16, paddingEnd: 8, borderRadius: require("Themes").radii.xs };
+createCacheKey[11] = { flex: 1 };
+createCacheKey[12] = { lineHeight: 20 };
+createCacheKey[13] = { marginTop: 4, lineHeight: 16 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let obj3 = { minHeight: 60, flexDirection: "row", alignItems: "center", justifyContent: "flex-start", backgroundColor: require("Themes").colors.BACKGROUND_SURFACE_HIGH, paddingVertical: 16, paddingStart: 16, paddingEnd: 8, borderRadius: require("Themes").radii.xs };
 let result = require("get ActivityIndicator").fileFinishedImporting("modules/in_app_reports/native/components/NodeView.tsx");
 
 export default function NodeView(node) {
+  let closure_13;
   let history;
   let onNavigate;
   let reportId;
   let reportSubType;
-  const _require = node;
-  let should_submit_data = _createForOfIteratorHelperLoose();
-  let obj = _require(ref[21]);
+  let tmp14;
+  let external_link = node;
+  const tmp = createCacheKey();
+  let obj = external_link(ref[21]);
   let navigation = obj.useNavigation();
-  let obj1 = _require(ref[22]);
+  let obj1 = external_link(ref[22]);
   const isScreenReaderEnabled = obj1.useIsScreenReaderEnabled();
   ref = node.useRef(null);
   let callback = node.useRef(false);
   let items = [navigation, isScreenReaderEnabled];
   const effect = node.useEffect(() => {
-    function focusHeader() {
-      if (!outer1_4.current) {
-        outer1_4.current = true;
-        let obj = callback(ref[23]);
-        obj = { ref: outer1_3, delay: 300 };
-        const result = obj.setAccessibilityFocus(obj);
+    if (isScreenReaderEnabled) {
+      function focusHeader() {
+        if (!ref.current) {
+          tmp.current = true;
+          let obj = callback(outer1_3[23]);
+          obj = { ref: null, delay: 300 };
+          obj[0] = closure_3;
+          const result = obj.setAccessibilityFocus(obj);
+        }
       }
-    }
-    if (focusHeader) {
       let closure_0 = navigation.addListener("transitionEnd", (data) => {
         data = data.data;
         let closing;
-        if (null != data) {
+        if (data != null) {
           closing = data.closing;
         }
         if (true !== closing) {
-          focusHeader();
+          if (!ref.current) {
+            ref.current = true;
+            let obj = callback(outer1_3[23]);
+            obj = { ref: null, delay: 300 };
+            obj[0] = closure_3;
+            const result = obj.setAccessibilityFocus(obj);
+          }
         }
       });
       const _setTimeout = setTimeout;
@@ -316,39 +240,46 @@ export default function NodeView(node) {
     }
     return channel_id;
   }, items1);
-  const tmp7 = getElementForType(node, "checkbox");
-  const IN_APP_REPORTS_NODE = tmp7;
-  const tmp8 = getElementForType(node, "text_line_resource");
-  const tmp9 = getElementForType(node, "text");
-  const REPORT_TO_MOD = _require(ref[24]).ReportMenuTypeSets.REPORT_TO_MOD;
+  external_link = undefined;
+  let elements = node.elements;
+  external_link = "checkbox";
+  const found = elements.find((type) => type.type === external_link);
+  external_link = undefined;
+  const elements1 = node.elements;
+  external_link = "text_line_resource";
+  const found1 = elements1.find((type) => type.type === external_link);
+  external_link = undefined;
+  const elements2 = node.elements;
+  external_link = "text";
+  const found2 = elements2.find((type) => type.type === external_link);
+  const REPORT_TO_MOD = external_link(ref[24]).ReportMenuTypeSets.REPORT_TO_MOD;
   const hasItem = REPORT_TO_MOD.has(reportType.name);
-  const tmp11 = callback(node.useState(false), 2);
-  let first = tmp11[0];
-  let closure_13 = tmp11[1];
-  const tmp13 = callback(node.useState(false), 2);
-  const first1 = tmp13[0];
-  let closure_15 = tmp13[1];
-  const tmp15 = callback(node.useState(() => ({})), 2);
-  const first2 = tmp15[0];
-  let closure_17 = tmp15[1];
-  const tmp17 = callback(node.useState(false), 2);
-  _createForOfIteratorHelperLoose = tmp17[1];
-  const items2 = [node, tmp7, first2];
+  [tmp14, closure_13] = callback(node.useState(false), 2);
+  const tmp15 = callback(node.useState(false), 2);
+  const first = tmp15[0];
+  let closure_15 = tmp15[1];
+  const tmp17 = callback(node.useState(() => ({})), 2);
+  const first1 = tmp17[0];
+  let closure_17 = tmp17[1];
+  const tmp19 = callback(node.useState(false), 2);
+  createCacheKey = tmp19[1];
+  const items2 = [node, found, first1];
   callback = node.useCallback((destination) => {
-    let obj = { nodeRef: node.id, destination };
-    let tmp;
-    if (null != tmp7) {
-      obj = { name: tmp7.name, state: first2 };
-      tmp = obj;
+    let obj = { nodeRef: node.id, destination, multiSelect: null };
+    let tmp2;
+    if (null != found) {
+      obj = { name: null, state: null };
+      obj[0] = tmp.name;
+      obj[1] = first1;
+      tmp2 = obj;
     }
-    obj.multiSelect = tmp;
+    obj[2] = tmp2;
     return obj;
   }, items2);
-  const items3 = [tmp7];
+  const items3 = [found];
   const effect1 = node.useEffect(() => {
-    let done;
-    if (null != tmp7) {
-      const data = tmp7.data;
+    if (null != found) {
+      const data = found.data;
       if (null != data) {
         function _loop(arg0, arg1) {
           let closure_0 = arg0;
@@ -362,40 +293,37 @@ export default function NodeView(node) {
             });
           }
         }
-        const tmp3 = callback(data);
-        let iter = tmp3();
-        if (!iter.done) {
-          do {
-            let tmp4 = callback;
-            let tmp5 = callback(iter.value, 4);
-            let tmp6 = tmp5[2];
-            let closure_0 = tmp5[3];
-            let _loopResult = _loop(tmp5[0], tmp5[1]);
-            let iter2 = tmp3();
-            iter = iter2;
-            done = iter2.done;
-          } while (!done);
+        const tmp2 = data[Symbol.iterator]();
+        while (tmp2 !== undefined) {
+          let tmp6 = callback;
+          let tmp7 = callback(tmp4, 4);
+          let tmp8 = tmp7[2];
+          let closure_0 = tmp7[3];
+          let _loopResult = _loop(tmp7[0], tmp7[1]);
+          continue;
         }
       }
     }
   }, items3);
   const items4 = [navigation, node];
   const effect2 = node.useEffect(() => navigation.addListener("beforeRemove", () => {
-    if (null != outer1_0.onNavigate) {
-      outer1_0.onNavigate("..");
+    onNavigate = onNavigate.onNavigate;
+    if (onNavigate != null) {
+      onNavigate("..");
     }
   }), items4);
-  const items5 = [node.is_auto_submit, first1, onSubmit, node.id];
+  const items5 = [node.is_auto_submit, first, onSubmit, node.id];
   const effect3 = node.useEffect(() => {
     let is_auto_submit = node.is_auto_submit;
     if (is_auto_submit) {
-      is_auto_submit = !first1;
+      is_auto_submit = !first;
     }
     if (is_auto_submit) {
       lib(true);
-      const obj = { nodeRef: node.id };
-      const items = ["", node.id];
-      obj.destination = items;
+      const obj = { nodeRef: null, destination: null };
+      obj[0] = tmp.id;
+      const items = ["", tmp.id];
+      obj[1] = items;
       onSubmit(obj);
     }
   }, items5);
@@ -405,10 +333,12 @@ export default function NodeView(node) {
     if (null == tmp2) {
       closeModal();
     } else {
-      if (null != outer1_25(tmp2, "skip")) {
+      const elements = tmp2.elements;
+      const skip = "skip";
+      if (null != elements.find((type) => type.type === external_link)) {
         const button = tmp2.button;
         let type;
-        if (null != button) {
+        if (button != null) {
           type = button.type;
         }
         if ("next" === type) {
@@ -416,44 +346,50 @@ export default function NodeView(node) {
           return callback1(items);
         }
       }
-      if (reportType.name === node(ref[25]).ReportNames.MESSAGE) {
-        let obj = navigation(ref[26]);
-        obj = { message_id: reportType.record.id, content_type: reportType.name, report_sub_type: tmp2.report_type, current_node: node.id, next_node: tmp2.id };
-        obj.trackWithMetadata(constants.IAR_NAVIGATE, obj);
+      if (reportType.name === external_link(ref[25]).ReportNames.MESSAGE) {
+        let obj = navigation(tmp6[26]);
+        obj = { message_id: null, content_type: null, report_sub_type: null, current_node: null, next_node: null };
+        obj[0] = tmp4.record.id;
+        obj[1] = tmp4.name;
+        obj[2] = tmp2.report_type;
+        obj[3] = node.id;
+        obj[4] = tmp2.id;
+        obj.trackWithMetadata(outer1_13.IAR_NAVIGATE, obj);
       }
-      obj = { node: tmp2 };
+      obj = { node: null, history: null };
+      obj[0] = tmp2;
       const items1 = [];
-      const arraySpreadResult = HermesBuiltin.arraySpread(history, 0);
-      items1[arraySpreadResult] = tmp;
-      const sum = arraySpreadResult + 1;
-      obj.history = items1;
-      navigation.push(closure_12, obj);
-      if (null != onNavigate) {
-        onNavigate(tmp2.key);
+      items1[HermesBuiltin.arraySpread(history, 0)] = tmp;
+      obj[1] = items1;
+      navigation.push(found, obj);
+      if (onNavigate != null) {
+        tmp16(tmp2.key);
       }
+      const tmp5 = external_link;
     }
   }, items6);
   const items7 = [node, history, navigation];
   const effect4 = node.useEffect(() => {
     const button = node.button;
     let type;
-    if (null != button) {
+    if (button != null) {
       type = button.type;
     }
-    let tmp2 = "done" === type;
-    if (!tmp2) {
+    let tmp3 = "done" === type;
+    if (!tmp3) {
       const button2 = node.button;
       let type1;
-      if (null != button2) {
+      if (button2 != null) {
         type1 = button2.type;
       }
-      tmp2 = "cancel" === type1;
+      tmp3 = "cancel" === type1;
     }
-    if (!tmp2) {
-      tmp2 = 0 === history.length;
+    if (!tmp3) {
+      tmp3 = 0 === history.length;
     }
-    if (tmp2) {
-      const obj = { headerLeft: outer1_28 };
+    if (tmp3) {
+      const obj = { headerLeft: null };
+      obj[0] = outer1_23;
       navigation.setOptions(obj);
     }
   }, items7);
@@ -461,373 +397,438 @@ export default function NodeView(node) {
     const channel = closeModal.getChannel(getChannelId.getChannelId());
     let tmp2 = null != channel;
     if (tmp2) {
-      let result = channel.type !== first1.DM;
+      let result = channel.type !== first.DM && channel.type !== tmp3.GROUP_DM;
       if (result) {
-        result = channel.type !== first1.GROUP_DM;
-      }
-      if (result) {
-        const obj = { channelId: channel.id };
+        const obj = { channelId: null };
+        obj[0] = channel.id;
         result = onSubmit.canWithPartialContext(lib.MANAGE_MESSAGES, obj);
       }
       tmp2 = result;
     }
     return tmp2;
   }, []);
-  let obj2 = _require(ref[28]);
+  let obj2 = external_link(ref[28]);
   const iarReportSettingsUpsells = obj2.useIarReportSettingsUpsells(reportSubType);
-  let tmp26 = null != getElementForType(node, "ignore_users");
-  if (tmp26) {
-    let tmp27 = "message" === reportType.name;
-    if (!tmp27) {
-      tmp27 = "first_dm" === reportType.name;
+  external_link = undefined;
+  const elements3 = node.elements;
+  external_link = "ignore_users";
+  let tmp28 = null != elements3.find((type) => type.type === external_link);
+  if (tmp28) {
+    let tmp29 = "message" === reportType.name;
+    if (!tmp29) {
+      tmp29 = "first_dm" === reportType.name;
     }
-    if (!tmp27) {
-      tmp27 = "user" === reportType.name;
+    if (!tmp29) {
+      tmp29 = "user" === reportType.name;
     }
-    if (!tmp27) {
-      tmp27 = "report_to_mod_message" === reportType.name;
+    if (!tmp29) {
+      tmp29 = "report_to_mod_message" === reportType.name;
     }
-    tmp26 = tmp27;
+    tmp28 = tmp29;
   }
-  let obj3 = _require(ref[29]);
-  let userIsTeen = obj3.useUserIsTeen();
-  let obj4 = _require(ref[30]);
-  const activeLinkUsers = obj4.useActiveLinkUsers();
+  let tmp2Result = tmp2(tmp3[29]);
+  let userIsTeen = tmp2Result.useUserIsTeen();
+  tmp2Result = tmp2(tmp3[30]);
+  const activeLinkUsers = tmp2Result.useActiveLinkUsers();
   if (userIsTeen) {
     userIsTeen = activeLinkUsers.length > 0;
   }
   if (userIsTeen) {
-    userIsTeen = null != getElementForType(node, "share_with_parents");
+    const elements4 = node.elements;
+    external_link = "share_with_parents";
+    userIsTeen = null != elements4.find((type) => type.type === external_link);
   }
-  obj = { style: should_submit_data.container, bottom: true, top: true };
-  obj = { style: should_submit_data.scrollView };
-  obj1 = { element: getElementForType(node, "success") };
-  const items8 = [first2(navigation(ref[32]), obj1), first2(HeaderView, { node, headerRef: ref }), first2(InfoView, { node }), , , , , , , , , , , , , , , ];
-  let tmp34 = null;
-  if (null != tmp8) {
-    obj2 = { element: tmp8 };
-    tmp34 = first2(navigation(ref[33]), obj2);
+  obj = { style: tmp.container, bottom: true, top: true, children: null };
+  obj = { style: tmp.scrollView, children: null };
+  obj1 = { element: null };
+  external_link = undefined;
+  const elements5 = node.elements;
+  external_link = "success";
+  const tmp13 = callback(node.useState(false), 2);
+  const tmp32 = history;
+  obj1[0] = elements5.find((type) => type.type === external_link);
+  const items8 = [first1(navigation(ref[32]), obj1), first1(callback, { node, headerRef: ref }), first1(callback1, { node }), , , , , , , , , , , , , , , ];
+  let tmp33Result = null;
+  if (null != found1) {
+    obj2 = { element: null };
+    obj2[0] = found1;
+    tmp33Result = tmp33(tmp34(tmp3[33]), obj2);
   }
-  items8[3] = tmp34;
-  let tmp38 = null != tmp9;
-  if (tmp38) {
-    obj3 = { element: tmp9 };
-    tmp38 = first2(navigation(ref[34]), obj3);
+  items8[3] = tmp33Result;
+  tmp33Result = null != found2;
+  if (tmp33Result) {
+    const obj3 = { element: null };
+    obj3[0] = found2;
+    tmp33Result = tmp33(tmp34(tmp3[34]), obj3);
   }
-  items8[4] = tmp38;
-  let tmp42 = null;
-  if (null != getElementForType(node, "message_preview")) {
+  items8[4] = tmp33Result;
+  const elements6 = node.elements;
+  external_link = "message_preview";
+  let tmp33Result1 = null;
+  if (null != elements6.find((type) => type.type === external_link)) {
     if ("message" !== reportType.name) {
       if ("first_dm" !== reportType.name) {
-        tmp42 = null;
+        tmp33Result1 = null;
       }
     }
-    obj4 = { message: reportType.record };
-    tmp42 = first2(navigation(ref[35]), obj4);
+    const obj4 = { message: null };
+    obj4[0] = reportType.record;
+    tmp33Result1 = tmp33(tmp34(tmp3[35]), obj4);
   }
-  items8[5] = tmp42;
-  let tmp46 = null;
-  if (null != getElementForType(node, "user_preview")) {
-    tmp46 = null;
+  items8[5] = tmp33Result1;
+  const elements7 = node.elements;
+  external_link = "user_preview";
+  let tmp33Result2 = null;
+  if (null != elements7.find((type) => type.type === external_link)) {
+    tmp33Result2 = null;
     if ("user" === reportType.name) {
-      const obj5 = { user: reportType.record };
-      tmp46 = first2(navigation(ref[36]), obj5);
+      const obj5 = { user: null };
+      obj5[0] = reportType.record;
+      tmp33Result2 = tmp33(tmp34(tmp3[36]), obj5);
     }
   }
-  items8[6] = tmp46;
-  let tmp50 = null;
-  if (null != getElementForType(node, "widget_preview")) {
-    tmp50 = null;
+  items8[6] = tmp33Result2;
+  const elements8 = node.elements;
+  external_link = "widget_preview";
+  let tmp33Result3 = null;
+  if (null != elements8.find((type) => type.type === external_link)) {
+    tmp33Result3 = null;
     if ("widget" === reportType.name) {
-      ({ widget: obj13.widget, user_id: obj13.userId } = reportType);
-      tmp50 = first2(navigation(ref[37]), {});
-      const obj6 = {};
+      ({ widget: obj13[0], user_id: obj13[1] } = reportType);
+      tmp33Result3 = tmp33(tmp34(tmp3[37]), { widget: null, userId: null });
+      const obj6 = { widget: null, userId: null };
     }
   }
-  items8[7] = tmp50;
-  let tmp54 = null;
-  if (null != getElementForType(node, "channel_preview")) {
-    tmp54 = null;
+  items8[7] = tmp33Result3;
+  const elements9 = node.elements;
+  external_link = "channel_preview";
+  let tmp33Result4 = null;
+  if (null != elements9.find((type) => type.type === external_link)) {
+    tmp33Result4 = null;
     if ("stage_channel" === reportType.name) {
-      const obj7 = { stageInstance: reportType.record };
-      tmp54 = first2(navigation(ref[38]), obj7);
+      const obj7 = { stageInstance: null };
+      obj7[0] = reportType.record;
+      tmp33Result4 = tmp33(tmp34(tmp3[38]), obj7);
     }
   }
-  items8[8] = tmp54;
-  let tmp58 = null;
-  if (null != getElementForType(node, "guild_preview")) {
-    tmp58 = null;
+  items8[8] = tmp33Result4;
+  const elements10 = node.elements;
+  external_link = "guild_preview";
+  let tmp33Result5 = null;
+  if (null != elements10.find((type) => type.type === external_link)) {
+    tmp33Result5 = null;
     if ("guild" === reportType.name) {
-      const obj8 = { guild: reportType.record };
-      tmp58 = first2(navigation(ref[39]), obj8);
+      const obj8 = { guild: null };
+      obj8[0] = reportType.record;
+      tmp33Result5 = tmp33(tmp34(tmp3[39]), obj8);
     }
   }
-  items8[9] = tmp58;
-  let tmp62 = null;
-  if (null != getElementForType(node, "guild_scheduled_event_preview")) {
-    tmp62 = null;
+  items8[9] = tmp33Result5;
+  const elements11 = node.elements;
+  external_link = "guild_scheduled_event_preview";
+  let tmp33Result6 = null;
+  if (null != elements11.find((type) => type.type === external_link)) {
+    tmp33Result6 = null;
     if ("guild_scheduled_event" === reportType.name) {
-      const obj9 = { event: reportType.record };
-      tmp62 = first2(navigation(ref[40]), obj9);
+      const obj9 = { event: null };
+      obj9[0] = reportType.record;
+      tmp33Result6 = tmp33(tmp34(tmp3[40]), obj9);
     }
   }
-  items8[10] = tmp62;
-  let tmp66 = null;
-  if (null != getElementForType(node, "guild_discovery_preview")) {
-    tmp66 = null;
+  items8[10] = tmp33Result6;
+  const elements12 = node.elements;
+  external_link = "guild_discovery_preview";
+  let tmp33Result7 = null;
+  if (null != elements12.find((type) => type.type === external_link)) {
+    tmp33Result7 = null;
     if ("guild_discovery" === reportType.name) {
-      const obj10 = { guild: reportType.record };
-      tmp66 = first2(navigation(ref[41]), obj10);
+      const obj10 = { guild: null };
+      obj10[0] = reportType.record;
+      tmp33Result7 = tmp33(tmp34(tmp3[41]), obj10);
     }
   }
-  items8[11] = tmp66;
-  const obj11 = {};
-  const tmp30 = closure_17;
-  const tmp31 = closure_17;
-  const tmp32 = history;
-  const tmp33 = navigation(ref[32]);
-  obj11.element = getElementForType(node, "breadcrumbs");
-  obj11.menuName = reportType.name;
-  obj11.history = history;
-  items8[12] = first2(navigation(ref[42]), obj11);
-  let tmp72Result = hasAnyRemediationElement(node);
-  if (tmp72Result) {
-    const obj12 = {};
-    if (!tmp26) {
-      const items9 = [tmp26, , , , , ];
+  items8[11] = tmp33Result7;
+  const obj11 = { element: null, menuName: null, history: null };
+  external_link = undefined;
+  const elements13 = node.elements;
+  external_link = "breadcrumbs";
+  let tmp34Result = tmp34(tmp3[42]);
+  obj11[0] = elements13.find((type) => type.type === external_link);
+  obj11[1] = reportType.name;
+  obj11[2] = history;
+  items8[12] = first1(tmp34Result, obj11);
+  elements = node.elements;
+  let someResult = elements.some((type) => onNavigate.includes(type.type));
+  if (someResult) {
+    if (!tmp28) {
+      const items9 = [tmp28, , , , , ];
       if (userIsTeen) {
-        const obj13 = { parents: activeLinkUsers };
-        userIsTeen = first2(navigation(ref[45]), obj13);
+        const obj12 = { parents: null };
+        obj12[0] = activeLinkUsers;
+        userIsTeen = tmp33(tmp34(tmp3[45]), obj12);
       }
       items9[1] = userIsTeen;
-      let tmp86 = null != getElementForType(node, "block_users");
-      if (tmp86) {
-        let tmp87 = "message" === reportType.name;
-        if (!tmp87) {
-          tmp87 = "first_dm" === reportType.name;
+      const elements14 = node.elements;
+      external_link = "block_users";
+      let tmp51 = null != elements14.find((type) => type.type === external_link);
+      if (tmp51) {
+        let tmp52 = "message" === reportType.name;
+        if (!tmp52) {
+          tmp52 = "first_dm" === reportType.name;
         }
-        if (!tmp87) {
-          tmp87 = "user" === reportType.name;
+        if (!tmp52) {
+          tmp52 = "user" === reportType.name;
         }
-        if (!tmp87) {
-          tmp87 = "report_to_mod_message" === reportType.name;
+        if (!tmp52) {
+          tmp52 = "report_to_mod_message" === reportType.name;
         }
-        tmp86 = tmp87;
+        tmp51 = tmp52;
       }
-      if (!tmp86) {
-        items9[2] = tmp86;
-        let tmp93 = !tmp26;
-        if (!tmp26) {
-          tmp93 = null != getElementForType(node, "mute_users");
+      if (!tmp51) {
+        items9[2] = tmp51;
+        let tmp55 = !tmp28;
+        if (!tmp28) {
+          const elements15 = node.elements;
+          external_link = "mute_users";
+          tmp55 = null != elements15.find((type) => type.type === external_link);
         }
-        if (tmp93) {
-          let tmp95 = "message" === reportType.name;
-          if (!tmp95) {
-            tmp95 = "first_dm" === reportType.name;
+        if (tmp55) {
+          let tmp56 = "message" === reportType.name;
+          if (!tmp56) {
+            tmp56 = "first_dm" === reportType.name;
           }
-          if (!tmp95) {
-            tmp95 = "user" === reportType.name;
+          if (!tmp56) {
+            tmp56 = "user" === reportType.name;
           }
-          if (!tmp95) {
-            tmp95 = "report_to_mod_message" === reportType.name;
+          if (!tmp56) {
+            tmp56 = "report_to_mod_message" === reportType.name;
           }
-          tmp93 = tmp95;
+          tmp55 = tmp56;
         }
-        if (!tmp93) {
-          items9[3] = tmp93;
-          should_submit_data = getElementForType;
-          should_submit_data = null != getElementForType(node, "delete_message");
-          if (should_submit_data) {
-            should_submit_data = "message" === reportType.name;
-            if (!should_submit_data) {
-              should_submit_data = "report_to_mod_message" === reportType.name;
+        if (!tmp55) {
+          items9[3] = tmp55;
+          const elements16 = node.elements;
+          external_link = "delete_message";
+          let callback2Result = null != elements16.find((type) => type.type === external_link);
+          if (callback2Result) {
+            let tmp60 = "message" === reportType.name;
+            if (!tmp60) {
+              tmp60 = "report_to_mod_message" === reportType.name;
             }
+            callback2Result = tmp60;
           }
-          if (should_submit_data) {
-            should_submit_data = callback2(reportType.record);
+          if (callback2Result) {
+            callback2Result = callback2(reportType.record);
           }
-          if (should_submit_data) {
-            should_submit_data = first2;
-            should_submit_data = navigation;
-            should_submit_data = ref;
-            const obj14 = { message: reportType.record, reportId };
-            should_submit_data = first2(navigation(ref[48]), obj14);
+          if (callback2Result) {
+            const obj13 = { message: null, reportId: null };
+            obj13[0] = reportType.record;
+            obj13[1] = reportId;
+            callback2Result = tmp33(tmp34(tmp3[48]), obj13);
           }
-          items9[4] = should_submit_data;
-          should_submit_data = getElementForType;
-          should_submit_data = null != getElementForType(node, "leave_guild");
-          if (should_submit_data) {
-            should_submit_data = "guild" === reportType.name;
+          items9[4] = callback2Result;
+          const elements17 = node.elements;
+          external_link = "leave_guild";
+          let tmp33Result8 = null != elements17.find((type) => type.type === external_link);
+          if (tmp33Result8) {
+            tmp33Result8 = "guild" === reportType.name;
           }
-          if (should_submit_data) {
-            should_submit_data = first2;
-            should_submit_data = navigation;
-            should_submit_data = ref;
-            const obj15 = { guild: reportType.record, reportId, addCallback: node.addOnCloseCallback };
-            should_submit_data = first2(navigation(ref[49]), obj15);
+          if (tmp33Result8) {
+            const obj14 = { guild: null, reportId: null, addCallback: null };
+            obj14[0] = reportType.record;
+            obj14[1] = reportId;
+            obj14[2] = node.addOnCloseCallback;
+            tmp33Result8 = tmp33(tmp34(tmp3[49]), obj14);
           }
-          items9[5] = should_submit_data;
-          obj12.children = items9;
-          tmp72Result = tmp72(tmp75, obj12);
+          const obj15 = { children: null };
+          items9[5] = tmp33Result8;
+          obj15[0] = items9;
+          someResult = tmp31(tmp47, obj15);
         } else {
-          const obj16 = {};
+          tmp34Result = tmp34(tmp3[47]);
           if ("user" === reportType.name) {
             let author3 = reportType.record;
           } else {
             author3 = reportType.record.author;
           }
-          obj16.user = author3;
-          obj16.channelId = memo;
-          obj16.reportId = reportId;
-          should_submit_data = first2(navigation(ref[47]), obj16);
-          const tmp96 = first2;
-          const tmp99 = navigation(ref[47]);
+          const obj16 = { user: null, channelId: null, reportId: null };
+          obj16[0] = author3;
+          obj16[1] = memo;
+          obj16[2] = reportId;
+          tmp33(tmp34Result, obj16);
         }
       } else {
-        const obj17 = {};
         if ("user" === reportType.name) {
           let author2 = reportType.record;
         } else {
           author2 = reportType.record.author;
         }
-        obj17.user = author2;
-        obj17.channelId = memo;
-        obj17.reportId = reportId;
-        first2(navigation(ref[46]), obj17);
-        const tmp88 = first2;
-        const tmp91 = navigation(ref[46]);
+        const obj17 = { user: null, channelId: null, reportId: null };
+        obj17[0] = author2;
+        obj17[1] = memo;
+        obj17[2] = reportId;
+        tmp33(tmp34(tmp3[46]), obj17);
+        const tmp34Result1 = tmp34(tmp3[46]);
       }
     } else {
-      const obj18 = {};
       if ("user" === reportType.name) {
         let author = reportType.record;
       } else {
         author = reportType.record.author;
       }
-      obj18.user = author;
-      obj18.channelId = memo;
-      obj18.reportId = reportId;
-      first2(navigation(ref[44]), obj18);
-      const tmp77 = first2;
-      const tmp80 = navigation(ref[44]);
-    }
-    tmp72 = closure_17;
-  }
-  items8[13] = tmp72Result;
-  should_submit_data = null != getElementForType(node, "settings_upsells");
-  if (should_submit_data) {
-    should_submit_data = "message" === reportType.name;
-    if (!should_submit_data) {
-      should_submit_data = "report_to_mod_message" === reportType.name;
+      const obj18 = { user: null, channelId: null, reportId: null };
+      obj18[0] = author;
+      obj18[1] = memo;
+      obj18[2] = reportId;
+      tmp33(tmp34(tmp3[44]), obj18);
+      const tmp34Result2 = tmp34(tmp3[44]);
     }
   }
-  if (should_submit_data) {
-    should_submit_data = null != iarReportSettingsUpsells;
+  items8[13] = someResult;
+  const elements18 = node.elements;
+  external_link = "settings_upsells";
+  let tmp33Result12 = null != elements18.find((type) => type.type === external_link);
+  if (tmp33Result12) {
+    let tmp63 = "message" === reportType.name;
+    if (!tmp63) {
+      tmp63 = "report_to_mod_message" === reportType.name;
+    }
+    tmp33Result12 = tmp63;
   }
-  if (should_submit_data) {
-    should_submit_data = first2;
-    should_submit_data = navigation;
-    should_submit_data = ref;
-    const obj19 = { settingsUpsells: iarReportSettingsUpsells, channelId: reportType.record.channel_id, reportId, reportType, reportSubType };
-    should_submit_data = first2(navigation(ref[50]), obj19);
+  if (tmp33Result12) {
+    tmp33Result12 = null != iarReportSettingsUpsells;
   }
-  items8[14] = should_submit_data;
-  items8[15] = first2(navigation(ref[51]), {
-    element: tmp7,
-    state: first2,
+  if (tmp33Result12) {
+    const obj19 = { settingsUpsells: null, channelId: null, reportId: null, reportType: null, reportSubType: null };
+    obj19[0] = iarReportSettingsUpsells;
+    obj19[1] = reportType.record.channel_id;
+    obj19[2] = reportId;
+    obj19[3] = reportType;
+    obj19[4] = reportSubType;
+    tmp33Result12 = tmp33(tmp34(tmp3[50]), obj19);
+  }
+  items8[14] = tmp33Result12;
+  items8[15] = first1(navigation(ref[51]), {
+    element: found,
+    state: first1,
     onPress(arg0, arg1) {
       const obj = {};
-      const merged = Object.assign(first2);
-      if (arg0 in first2) {
-        delete tmp2[tmp];
+      const merged = Object.assign(first1);
+      if (arg0 in first1) {
+        delete tmp[tmp2];
       } else {
         obj[arg0] = arg1;
       }
-      callback2(obj);
+      callback3(obj);
     }
   });
-  items8[16] = first2(ChildrenView, { node, onSelectChild: callback1, nodeMap });
-  should_submit_data = null;
-  if (null != getElementForType(node, "external_link")) {
-    should_submit_data = first2;
-    should_submit_data = navigation;
-    should_submit_data = ref;
-    const obj21 = {};
-    should_submit_data = getElementsForType;
-    should_submit_data = navigation(ref[52]);
-    obj21.elements = getElementsForType(node, "external_link");
-    should_submit_data = first2(should_submit_data, obj21);
+  items8[16] = first1(ChildrenView, { node, onSelectChild: callback1, nodeMap });
+  external_link = undefined;
+  const elements19 = node.elements;
+  external_link = "external_link";
+  let tmp33Result13 = null;
+  if (null != elements19.find((type) => type.type === external_link)) {
+    const obj21 = { elements: null };
+    external_link = undefined;
+    const elements20 = node.elements;
+    external_link = "external_link";
+    obj21[0] = elements20.filter((type) => type.type === external_link);
+    tmp33Result13 = tmp33(tmp34(tmp3[52]), obj21);
+    const tmp34Result3 = tmp34(tmp3[52]);
   }
-  items8[17] = should_submit_data;
-  obj.children = items8;
-  const items10 = [tmp31(tmp32, obj), ];
-  should_submit_data = first2;
-  const obj22 = { isModeratorReport: hasItem };
-  should_submit_data = navigation(ref[53]);
-  if (!first) {
-    should_submit_data = undefined;
-    if (null != tmp7) {
-      should_submit_data = tmp7.should_submit_data;
+  items8[17] = tmp33Result13;
+  obj[1] = items8;
+  const items10 = [closure_17(tmp32, obj), ];
+  const obj22 = { isModeratorReport: hasItem, disabled: null, button: null, hasError: null, onPress: null };
+  const obj20 = {
+    element: found,
+    state: first1,
+    onPress(arg0, arg1) {
+      const obj = {};
+      const merged = Object.assign(first1);
+      if (arg0 in first1) {
+        delete tmp[tmp2];
+      } else {
+        obj[arg0] = arg1;
+      }
+      callback3(obj);
     }
-    should_submit_data = true === should_submit_data;
-    if (should_submit_data) {
-      should_submit_data = globalThis;
+  };
+  const tmp35 = navigation(ref[32]);
+  if (!tmp14) {
+    let should_submit_data;
+    if (found != null) {
+      should_submit_data = found.should_submit_data;
+    }
+    let tmp68 = true === should_submit_data;
+    if (tmp68) {
       const _Object = Object;
-      should_submit_data = 0 === Object.keys(first2).length;
+      tmp68 = 0 === Object.keys(first1).length;
     }
-    first = should_submit_data;
   }
-  obj22.disabled = first;
-  obj22.button = node.button;
-  obj22.hasError = tmp17[0];
-  obj22.onPress = function onPress(type) {
+  obj22[1] = tmp14;
+  obj22[2] = node.button;
+  obj22[3] = tmp19[0];
+  obj22[4] = function onPress(type) {
     type = type.type;
     if ("done" !== type) {
       if ("cancel" !== type) {
         if ("next" === type) {
-          let items = ["", type.target];
+          const items = ["", type.target];
           callback1(items);
         } else if ("submit" === type) {
-          (function handleSubmit() {
-            outer1_13(true);
-            const items = ["", outer1_0.successNodeId];
-            const promise = outer1_10(outer1_19(items));
-            const nextPromise = outer1_10(outer1_19(items)).then(() => {
-              outer2_18(false);
-              let header;
-              if (null != outer2_8[outer2_0.successNodeId]) {
-                header = tmp2.header;
-              }
-              if (null != header) {
-                const AccessibilityAnnouncer = items(ref[27]).AccessibilityAnnouncer;
-                AccessibilityAnnouncer.announce(tmp2.header);
-              }
-              outer2_20(items);
-            });
-            outer1_10(outer1_19(items)).then(() => {
-              outer2_18(false);
-              let header;
-              if (null != outer2_8[outer2_0.successNodeId]) {
-                header = tmp2.header;
-              }
-              if (null != header) {
-                const AccessibilityAnnouncer = items(ref[27]).AccessibilityAnnouncer;
-                AccessibilityAnnouncer.announce(tmp2.header);
-              }
-              outer2_20(items);
-            }).catch(() => {
-              outer2_18(true);
-            }).finally(() => {
-              outer2_13(false);
-            });
-          })();
+          callback2(true);
+          const items1 = [""];
+          items1[1] = items1.successNodeId;
+          const promise = onSubmit(callback(items1));
+          const nextPromise = onSubmit(callback(items1)).then(() => {
+            outer1_18(false);
+            let header;
+            if (outer1_8[items1.successNodeId] != null) {
+              header = tmp2.header;
+            }
+            if (null != header) {
+              const AccessibilityAnnouncer = external_link(ref[27]).AccessibilityAnnouncer;
+              AccessibilityAnnouncer.announce(tmp2.header);
+            }
+            outer1_20(items1);
+          });
+          onSubmit(callback(items1)).then(() => {
+            outer1_18(false);
+            let header;
+            if (outer1_8[items1.successNodeId] != null) {
+              header = tmp2.header;
+            }
+            if (null != header) {
+              const AccessibilityAnnouncer = external_link(ref[27]).AccessibilityAnnouncer;
+              AccessibilityAnnouncer.announce(tmp2.header);
+            }
+            outer1_20(items1);
+          }).catch(() => {
+            callback2(true);
+          }).finally(() => {
+            callback(false);
+          });
+          const catchPromise = onSubmit(callback(items1)).then(() => {
+            outer1_18(false);
+            let header;
+            if (outer1_8[items1.successNodeId] != null) {
+              header = tmp2.header;
+            }
+            if (null != header) {
+              const AccessibilityAnnouncer = external_link(ref[27]).AccessibilityAnnouncer;
+              AccessibilityAnnouncer.announce(tmp2.header);
+            }
+            outer1_20(items1);
+          }).catch(() => {
+            callback2(true);
+          });
         }
       }
     }
-    const items1 = ["", -1];
-    callback1(items1);
+    callback1(["", -1]);
   };
-  items10[1] = should_submit_data(should_submit_data, obj22);
-  obj.children = items10;
-  return tmp30(_require(ref[31]).SafeAreaPaddingView, obj);
+  items10[1] = first1(navigation(ref[53]), obj22);
+  obj[3] = items10;
+  return closure_17(external_link(ref[31]).SafeAreaPaddingView, obj);
 };

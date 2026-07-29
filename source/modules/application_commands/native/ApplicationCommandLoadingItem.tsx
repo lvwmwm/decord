@@ -1,43 +1,43 @@
-// Module ID: 11473
-// Function ID: 89034
+// Module ID: 11497
+// Function ID: 11498
 // Name: ApplicationCommandLoadingItem
-// Dependencies: [31, 27, 9555, 33, 4165, 689, 4584, 2]
+// Dependencies: [19, 17, 9579, 21, 4189, 712, 4606, 2]
 // Exports: default
 
-// Module 11473 (ApplicationCommandLoadingItem)
-import "result";
+// Module 11497 (ApplicationCommandLoadingItem)
+import "noop";
 import { View } from "get ActivityIndicator";
 import { AUTOCOMPLETE_ROW_HEIGHT } from "AUTOCOMPLETE_ROW_HEIGHT";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_5;
+let c5;
 let closure_6;
 const require = arg1;
-({ jsx: closure_5, jsxs: closure_6 } = jsxProd);
-let closure_7 = _createForOfIteratorHelperLoose.createStyles((arg0) => {
-  let obj = {};
+({ jsx: c5, jsxs: closure_6 } = jsxProd);
+let c7 = 16;
+let closure_8 = createCacheKey.createStyles((arg0) => {
+  let obj = { applicationCommandLoadingItem: null, applicationCommandLoadingLeftWrapper: null, applicationCommandLoadingName: null, applicationCommandLoadingDescription: null, applicationCommandLoadingSectionName: null };
   obj = { flexDirection: "row", paddingVertical: 4, paddingHorizontal: 16, alignItems: "center", height: Math.max(arg0 * AUTOCOMPLETE_ROW_HEIGHT, AUTOCOMPLETE_ROW_HEIGHT) };
-  obj.applicationCommandLoadingItem = obj;
-  obj.applicationCommandLoadingLeftWrapper = { flexDirection: "column", width: "75%", height: "100%", justifyContent: "space-between" };
-  obj = { backgroundColor: importDefault(689).colors.BACKGROUND_MOD_STRONG, height: 16, borderRadius: 16, width: "20%" };
-  obj.applicationCommandLoadingName = obj;
-  const obj1 = { backgroundColor: importDefault(689).colors.BACKGROUND_BASE_LOW, height: 16, borderRadius: 16, width: "80%" };
-  obj.applicationCommandLoadingDescription = obj1;
-  const obj2 = { backgroundColor: importDefault(689).colors.BACKGROUND_MOD_STRONG, paddingLeft: 16, width: "25%", marginLeft: "auto", height: 16, borderRadius: 16 };
-  obj.applicationCommandLoadingSectionName = obj2;
+  obj[0] = obj;
+  obj[1] = { flexDirection: "column", width: "75%", height: "100%", justifyContent: "space-between" };
+  obj = { backgroundColor: importDefault(712).colors.BACKGROUND_MOD_STRONG, height: c7, borderRadius: c7, width: "20%" };
+  obj[2] = obj;
+  obj[3] = { backgroundColor: importDefault(712).colors.BACKGROUND_BASE_LOW, height: c7, borderRadius: c7, width: "80%" };
+  const obj1 = { backgroundColor: importDefault(712).colors.BACKGROUND_BASE_LOW, height: c7, borderRadius: c7, width: "80%" };
+  obj[4] = { backgroundColor: importDefault(712).colors.BACKGROUND_MOD_STRONG, paddingLeft: 16, width: "25%", marginLeft: "auto", height: c7, borderRadius: c7 };
   return obj;
 });
 const result = require("AUTOCOMPLETE_ROW_HEIGHT").fileFinishedImporting("modules/application_commands/native/ApplicationCommandLoadingItem.tsx");
 
 export default function ApplicationCommandLoadingItem() {
-  let obj = require(4584) /* getFontScale */;
+  let obj = require(4606) /* getFontScale */;
   const tmp = callback3(obj.useFontScale());
-  obj = { style: tmp.applicationCommandLoadingItem };
-  obj = { style: tmp.applicationCommandLoadingLeftWrapper };
+  obj = { style: tmp.applicationCommandLoadingItem, children: null };
+  obj = { style: tmp.applicationCommandLoadingLeftWrapper, children: null };
   const items = [callback(View, { style: tmp.applicationCommandLoadingName }), callback(View, { style: tmp.applicationCommandLoadingDescription })];
-  obj.children = items;
+  obj[1] = items;
   const items1 = [callback2(View, obj), callback(View, { style: tmp.applicationCommandLoadingSectionName })];
-  obj.children = items1;
+  obj[1] = items1;
   return callback2(View, obj);
 };

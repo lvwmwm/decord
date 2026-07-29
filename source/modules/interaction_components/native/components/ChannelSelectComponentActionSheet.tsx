@@ -1,22 +1,22 @@
-// Module ID: 10993
-// Function ID: 85246
+// Module ID: 11017
+// Function ID: 11018
 // Name: ChannelSelectComponentActionSheet
-// Dependencies: [31, 1348, 1838, 33, 7876, 10990, 10988, 7878, 1273, 8292, 2]
+// Dependencies: [19, 1372, 1862, 21, 7899, 11014, 11012, 7901, 1297, 8316, 2]
 // Exports: default
 
-// Module 10993 (ChannelSelectComponentActionSheet)
-import result from "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+// Module 11017 (ChannelSelectComponentActionSheet)
+import noop from "noop";
+import ensureGuildLoaded from "ensureGuildLoaded";
+import createGuildRecordFromRust from "createGuildRecordFromRust";
 import { jsx } from "jsxProd";
 
 const require = arg1;
-const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/interaction_components/native/components/ChannelSelectComponentActionSheet.tsx");
+const result = require("createGuildRecordFromRust").fileFinishedImporting("modules/interaction_components/native/components/ChannelSelectComponentActionSheet.tsx");
 
 export default function ChannelSelectComponentActionSheet(guildId) {
   let allowEmpty;
+  let c3;
   let channelId;
-  let result;
   let containerId;
   let isSelected;
   let labelComponent;
@@ -28,12 +28,14 @@ export default function ChannelSelectComponentActionSheet(guildId) {
   let setQuery;
   ({ selectionActionComponent, channelId } = guildId);
   guildId = guildId.guildId;
-  const channelTypes = selectionActionComponent.channelTypes;
+  let channelTypes;
+  let React;
+  channelTypes = selectionActionComponent.channelTypes;
   const items = [channelId, channelTypes];
   ({ labelComponent, containerId, onSubmit, allowEmpty } = guildId);
   const callback = React.useCallback((arg0) => channelId(channelTypes[4]).queryChannels(arg0, channelId, channelTypes), items);
   const tmp2 = guildId(channelTypes[5])({ selectActionComponent: selectionActionComponent, containerId, guildId, queryOptions: callback, onSubmit });
-  ({ selectedOptions, submitSelection: result } = tmp2);
+  ({ selectedOptions, submitSelection: c3 } = tmp2);
   ({ options, isSelected, onPressOptionItem, setQuery } = tmp2);
   return jsx(guildId(channelTypes[6]), {
     onPressOptionItem,
@@ -47,7 +49,8 @@ export default function ChannelSelectComponentActionSheet(guildId) {
         const channelIconData = obj.getChannelIconData(channel, guild);
         let tmp8 = null != channelIconData;
         if (tmp8) {
-          obj = { source: channelIconData };
+          obj = { source: null };
+          obj[0] = channelIconData;
           tmp8 = outer1_6(channelId(channelTypes[8]).Icon, obj);
         }
         return tmp8;
@@ -60,13 +63,14 @@ export default function ChannelSelectComponentActionSheet(guildId) {
     selectedOptions,
     isSelected,
     submitSelection() {
-      return callback();
+      return _undefined();
     },
     onQueryChange: setQuery,
     itemAccessibilityLabel(value) {
-      const channel = outer1_4.getChannel(value.value);
+      channel = channel.getChannel(value.value);
       if (null != channel) {
-        const obj = { channel };
+        const obj = { channel: null };
+        obj[0] = channel;
         return guildId(channelTypes[9])(obj);
       }
     },

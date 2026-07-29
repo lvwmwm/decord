@@ -1,106 +1,82 @@
-// Module ID: 9452
-// Function ID: 73592
-// Name: QuestBarRenderDelayTracker
-// Dependencies: [6, 7, 653, 5849, 5854, 675, 9453, 2]
+// Module ID: 9476
+// Function ID: 9477
+// Name: clearTimeoutTimer
+// Dependencies: [676, 5867, 5872, 698, 9477, 2]
 
-// Module 9452 (QuestBarRenderDelayTracker)
-import canUIRequestGatewaySocket from "canUIRequestGatewaySocket";
-import set from "set";
+// Module 9476 (clearTimeoutTimer)
 import { AnalyticEvents } from "ME";
 
-const require = arg1;
-let tmp2 = (() => {
-  class QuestBarRenderDelayTracker {
-    constructor() {
-      tmp = outer1_3(this, QuestBarRenderDelayTracker);
-      this.startTime = null;
-      this.questId = null;
-      this.timeoutTimer = null;
-      return;
+let c4 = 30000;
+class QuestBarRenderDelayTracker {
+}
+const prototype = QuestBarRenderDelayTracker.prototype;
+prototype["clearTimeoutTimer"] = function clearTimeoutTimer() {
+  const self = this;
+  if (null != this.timeoutTimer) {
+    const _clearTimeout = clearTimeout;
+    clearTimeout(self.timeoutTimer);
+    self.timeoutTimer = null;
+  }
+};
+prototype["sendMetric"] = function sendMetric(arg0, arg1, arg2) {
+  if (Math.random() <= 0.1) {
+    let obj = importDefault(5867);
+    obj = { name: null, tags: null };
+    obj[0] = require(5872) /* set */.MetricEvents.QUEST_BAR_RENDER_DELAY;
+    const _HermesInternal = HermesInternal;
+    const items = ["quest_id:" + arg0, ];
+    const _HermesInternal2 = HermesInternal;
+    items[1] = "timeout:" + arg1;
+    obj[1] = items;
+    obj.distribution(obj, arg2);
+    obj = { quest_id: null, timeout: null, duration: null };
+    obj[0] = arg0;
+    obj[1] = arg1;
+    obj[2] = arg2;
+    importDefault(698).track(AnalyticEvents.QUEST_BAR_RENDER_DELAY, obj);
+    const obj3 = importDefault(698);
+  }
+};
+prototype["startTracking"] = function startTracking(questId) {
+  const self = this;
+  let closure_0 = questId;
+  this.clearTracking();
+  this.startTime = performance.now();
+  this.questId = questId;
+  this.timeoutTimer = setTimeout(() => {
+    self.stopTracking(closure_0, true);
+  }, c4);
+};
+prototype["stopTracking"] = function stopTracking(arg0) {
+  let flag = arg1;
+  if (arg1 === undefined) {
+    flag = false;
+  }
+  const self = this;
+  if (null !== this.startTime) {
+    if (self.questId === arg0) {
+      if ("active" !== obj.getState()) {
+        self.clearTracking();
+      } else {
+        if (flag) {
+          let rounded = c4;
+        } else {
+          const _Math = Math;
+          const _performance = performance;
+          rounded = Math.round(performance.now() - self.startTime);
+        }
+        const _Math2 = Math;
+        self.sendMetric(arg0, flag, Math.min(rounded, c4));
+      }
+      obj = importDefault(9477);
     }
   }
-  let obj = {
-    key: "clearTimeoutTimer",
-    value() {
-      const self = this;
-      if (null != this.timeoutTimer) {
-        const _clearTimeout = clearTimeout;
-        clearTimeout(self.timeoutTimer);
-        self.timeoutTimer = null;
-      }
-    }
-  };
-  let items = [obj, , , , ];
-  obj = {
-    key: "sendMetric",
-    value(quest_id, timeout, duration) {
-      if (Math.random() <= 0.1) {
-        let obj = outer1_1(outer1_2[3]);
-        obj = { name: QuestBarRenderDelayTracker(outer1_2[4]).MetricEvents.QUEST_BAR_RENDER_DELAY };
-        const _HermesInternal = HermesInternal;
-        const items = ["quest_id:" + quest_id, ];
-        const _HermesInternal2 = HermesInternal;
-        items[1] = "timeout:" + timeout;
-        obj.tags = items;
-        obj.distribution(obj, duration);
-        obj = { quest_id, timeout, duration };
-        outer1_1(outer1_2[5]).track(outer1_5.QUEST_BAR_RENDER_DELAY, obj);
-        const obj3 = outer1_1(outer1_2[5]);
-      }
-    }
-  };
-  items[1] = obj;
-  obj = {
-    key: "startTracking",
-    value(questId) {
-      const self = this;
-      let closure_1 = questId;
-      this.clearTracking();
-      this.startTime = performance.now();
-      this.questId = questId;
-      this.timeoutTimer = setTimeout(() => {
-        self.stopTracking(closure_1, true);
-      }, 30000);
-    }
-  };
-  items[2] = obj;
-  items[3] = {
-    key: "stopTracking",
-    value(arg0) {
-      let flag = arg1;
-      const self = this;
-      if (arg1 === undefined) {
-        flag = false;
-      }
-      if (null !== self.startTime) {
-        if (self.questId === arg0) {
-          if ("active" === obj.getState()) {
-            let num2 = 30000;
-            if (!flag) {
-              const _Math = Math;
-              const _performance = performance;
-              num2 = Math.round(performance.now() - self.startTime);
-            }
-            const _Math2 = Math;
-            self.sendMetric(arg0, flag, Math.min(num2, 30000));
-          }
-          self.clearTracking();
-          obj = outer1_1(outer1_2[6]);
-        }
-      }
-    }
-  };
-  items[4] = {
-    key: "clearTracking",
-    value() {
-      this.clearTimeoutTimer();
-      this.startTime = null;
-      this.questId = null;
-    }
-  };
-  return callback(QuestBarRenderDelayTracker, items);
-})();
-tmp2 = new tmp2();
-const result = require("ME").fileFinishedImporting("modules/quests/QuestBarRenderDelayTracker.tsx");
+};
+prototype["clearTracking"] = function clearTracking() {
+  this.clearTimeoutTimer();
+  this.startTime = null;
+  this.questId = null;
+};
+const result = require("set").fileFinishedImporting("modules/quests/QuestBarRenderDelayTracker.tsx");
 
-export default tmp2;
+export default Object.create(QuestBarRenderDelayTracker.prototype);

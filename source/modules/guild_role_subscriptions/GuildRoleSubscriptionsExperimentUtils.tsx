@@ -1,11 +1,11 @@
-// Module ID: 13008
-// Function ID: 100740
+// Module ID: 13031
+// Function ID: 13032
 // Name: GuildFeatures
-// Dependencies: [1838, 653, 624, 2]
+// Dependencies: [1862, 676, 647, 2]
 // Exports: hasEnabledMonetization, isGuildEligibleForTierTemplates, useGuildEligibleForTierTemplates
 
-// Module 13008 (GuildFeatures)
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+// Module 13031 (GuildFeatures)
+import createGuildRecordFromRust from "createGuildRecordFromRust";
 import { GuildFeatures } from "ME";
 
 const require = arg1;
@@ -26,23 +26,29 @@ export const hasEnabledMonetization = function hasEnabledMonetization(arg0) {
 };
 export const isGuildEligibleForTierTemplates = function isGuildEligibleForTierTemplates(id) {
   guild = guild.getGuild(id);
-  let hasItem;
-  if (null != guild) {
+  let flag;
+  if (guild != null) {
     const features = guild.features;
-    hasItem = features.has(GuildFeatures.ROLE_SUBSCRIPTIONS_ENABLED);
+    flag = features.has(GuildFeatures.ROLE_SUBSCRIPTIONS_ENABLED);
   }
-  return null != hasItem && hasItem;
+  if (flag == null) {
+    flag = false;
+  }
+  return flag;
 };
 export const useGuildEligibleForTierTemplates = function useGuildEligibleForTierTemplates(guildId) {
   const _require = guildId;
-  const items = [_createForOfIteratorHelperLoose];
-  return _require(624).useStateFromStores(items, () => {
+  const items = [createGuildRecordFromRust];
+  return _require(647).useStateFromStores(items, () => {
     const guild = outer1_2.getGuild(closure_0);
-    let hasItem;
-    if (null != guild) {
+    let flag;
+    if (guild != null) {
       const features = guild.features;
-      hasItem = features.has(outer1_3.ROLE_SUBSCRIPTIONS_ENABLED);
+      flag = features.has(outer1_3.ROLE_SUBSCRIPTIONS_ENABLED);
     }
-    return null != hasItem && hasItem;
+    if (flag == null) {
+      flag = false;
+    }
+    return flag;
   });
 };

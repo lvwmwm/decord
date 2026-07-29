@@ -1,23 +1,23 @@
-// Module ID: 10146
-// Function ID: 78436
+// Module ID: 10167
+// Function ID: 10168
 // Name: SafetyToolsActionSheetHeader
-// Dependencies: [31, 27, 33, 4165, 689, 10137, 5121, 4161, 2]
+// Dependencies: [19, 17, 21, 4189, 712, 10158, 5143, 4185, 2]
 // Exports: default
 
-// Module 10146 (SafetyToolsActionSheetHeader)
-import result from "result";
+// Module 10167 (SafetyToolsActionSheetHeader)
+import noop from "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_4;
-let closure_5;
+let c4;
+let c5;
 const require = arg1;
-({ jsx: closure_4, jsxs: closure_5 } = jsxProd);
-_createForOfIteratorHelperLoose = { navbarContainer: { display: "flex", flexDirection: "row", justifyContent: "center" } };
-_createForOfIteratorHelperLoose = { position: "absolute", left: require("_createForOfIteratorHelperLoose").space.PX_16 };
-_createForOfIteratorHelperLoose.navbarLeft = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+({ jsx: c4, jsxs: c5 } = jsxProd);
+createCacheKey = { navbarContainer: { display: "flex", flexDirection: "row", justifyContent: "center" }, navbarLeft: null };
+createCacheKey = { position: "absolute", left: require("Themes").space.PX_16 };
+createCacheKey[1] = createCacheKey;
+createCacheKey = createCacheKey.createStyles(createCacheKey);
 let result = require("jsxProd").fileFinishedImporting("modules/self_mod/shared/native/SafetyToolsActionSheetHeader.tsx");
 
 export default function SafetyToolsActionSheetHeader(channelId) {
@@ -27,26 +27,26 @@ export default function SafetyToolsActionSheetHeader(channelId) {
   const recipientId = channelId.recipientId;
   const warningId = channelId.warningId;
   const warningType = channelId.warningType;
+  let callback;
+  callback = undefined;
   ({ title, hasBackButton } = channelId);
-  const tmp = _createForOfIteratorHelperLoose();
-  let callback = tmp;
+  const tmp = createCacheKey();
+  callback = tmp;
   const items = [channelId, recipientId, warningId, warningType];
   callback = warningId.useCallback(() => {
     const result = channelId(recipientId[5]).openSafetyToolsActionSheet(channelId, recipientId, warningId, warningType);
   }, items);
   const items1 = [callback, tmp.navbarLeft];
-  let obj = { style: tmp.navbarContainer };
+  let obj = { style: tmp.navbarContainer, children: null };
   let memo = null != hasBackButton;
   if (memo) {
     memo = warningId.useMemo(() => {
       let obj = channelId(recipientId[6]);
-      obj = { style: tmp.navbarLeft };
-      return tmp(obj.getHeaderBackButton(callback), obj);
+      obj = { style: _undefined.navbarLeft };
+      return _undefined(obj.getHeaderBackButton(callback), obj);
     }, items1);
   }
-  const items2 = [memo, ];
-  obj = { variant: "heading-lg/bold", color: "mobile-text-heading-primary", children: title };
-  items2[1] = callback(channelId(recipientId[7]).Text, obj);
-  obj.children = items2;
+  const items2 = [memo, callback(channelId(recipientId[7]).Text, { variant: "heading-lg/bold", color: "mobile-text-heading-primary", children: title })];
+  obj[1] = items2;
   return callback(warningType, obj);
 };

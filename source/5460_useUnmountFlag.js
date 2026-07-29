@@ -1,0 +1,24 @@
+// Module ID: 5460
+// Function ID: 5461
+// Name: useUnmountFlag
+// Dependencies: [19]
+// Exports: useUnmountFlag
+
+// Module 5460 (useUnmountFlag)
+import noop from "noop";
+
+let c0;
+let closure_1;
+({ useRef: c0, useLayoutEffect: closure_1 } = noop);
+
+export const useUnmountFlag = () => {
+  const tmp = callback(false);
+  callback = tmp;
+  callback2(() => {
+    closure_0.current = false;
+    return () => {
+      closure_0.current = true;
+    };
+  }, []);
+  return tmp;
+};

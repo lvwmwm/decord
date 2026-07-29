@@ -1,134 +1,130 @@
-// Module ID: 4600
-// Function ID: 40124
+// Module ID: 4622
+// Function ID: 4623
 // Name: parseLink
-// Dependencies: [57, 830, 1348, 4197, 1911, 1838, 1850, 653, 4601, 4602, 4603, 1212, 4606, 1914, 4354, 4004, 4195, 1392, 3864, 4607, 4608, 4611, 3806, 4612, 4622, 4623, 4624, 4625, 4626, 4599, 4627, 22, 2]
+// Dependencies: [32, 853, 1372, 4221, 1935, 1862, 1874, 676, 4623, 4624, 4625, 1236, 4628, 1938, 4379, 4028, 4219, 1416, 3888, 4629, 4630, 4633, 3830, 4634, 4644, 4645, 4646, 4647, 4648, 4621, 4649, 12, 2]
+// Exports: hydrateCommandMention
 
-// Module 4600 (parseLink)
-import _slicedToArray from "_slicedToArray";
+// Module 4622 (parseLink)
+import set from "set";
 import _toArray from "_toArray";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_6 from "_isNativeReflectConstruct";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import closure_8 from "_createForOfIteratorHelperLoose";
-import closure_9 from "_isNativeReflectConstruct";
+import ensureGuildLoaded from "ensureGuildLoaded";
+import gameFromServer from "gameFromServer";
+import createGuildRoleRecordFromRust from "createGuildRoleRecordFromRust";
+import createGuildRecordFromRust from "createGuildRecordFromRust";
+import mergeGuildAvatar from "mergeGuildAvatar";
 import ME from "ME";
 import { SUB_COMMAND_KEY_SEPARATOR } from "TRUE_OPTION_NAME";
 import { GAME_MENTION_RAW_RE } from "regExp";
 import importDefaultResult from "t";
 import importDefaultResult1 from "t";
 import importDefaultResult2 from "t";
-import importDefaultResult3 from "_createForOfIteratorHelperLoose";
-import importDefaultResult4 from "_createForOfIteratorHelperLoose";
-import importDefaultResult5 from "_createForOfIteratorHelperLoose";
-import importDefaultResult6 from "_createForOfIteratorHelperLoose";
-import importDefaultResult7 from "_createForOfIteratorHelperLoose";
-import importDefaultResult8 from "_createForOfIteratorHelperLoose";
-import importDefaultResult9 from "_createForOfIteratorHelperLoose";
-import importDefaultResult10 from "_createForOfIteratorHelperLoose";
-import importDefaultResult11 from "_createForOfIteratorHelperLoose";
-import importDefaultResult12 from "_createForOfIteratorHelperLoose";
-import importDefaultResult13 from "_createForOfIteratorHelperLoose";
+import importDefaultResult3 from "combineMarkupRules";
+import importDefaultResult4 from "useHasEnhancedRoleColors";
+import importDefaultResult5 from "useHasEnhancedRoleColors";
+import importDefaultResult6 from "useHasEnhancedRoleColors";
+import importDefaultResult7 from "useHasEnhancedRoleColors";
+import importDefaultResult8 from "useHasEnhancedRoleColors";
+import importDefaultResult9 from "useHasEnhancedRoleColors";
+import importDefaultResult10 from "useHasEnhancedRoleColors";
+import importDefaultResult11 from "useHasEnhancedRoleColors";
+import importDefaultResult12 from "combineMarkupRules";
+import importDefaultResult13 from "useHasEnhancedRoleColors";
 
-let closure_10;
-let closure_11;
+let c10;
 let closure_12;
+let unpackModuleId;
 const require = arg1;
 function parseLink(arg0) {
-  let obj = require(4603) /* _createForOfIteratorHelperLoose */;
+  let obj = require(4625) /* validateContentTypes */;
   const punycodeLinkResult = obj.punycodeLink(arg0[1]);
   if (null == punycodeLinkResult) {
-    obj = { type: "text", content: arg0[1] };
+    obj = { type: "text", content: null };
+    obj[1] = arg0[1];
   } else {
-    obj = { type: "link" };
-    const obj1 = { type: "text", content: punycodeLinkResult.displayTarget };
+    obj = { type: "link", content: null, target: null, title: "call" };
+    const obj1 = { type: "text", content: null };
+    obj1[1] = punycodeLinkResult.displayTarget;
     const items = [obj1];
-    obj.content = items;
-    obj.target = punycodeLinkResult.target;
-    obj.title = undefined;
+    obj[1] = items;
+    obj[2] = punycodeLinkResult.target;
   }
   return obj;
 }
-function getGuildIdFromChannelId(channelId) {
-  const channel = store.getChannel(channelId);
-  let guildId;
-  if (null != channel) {
-    guildId = channel.getGuildId();
-  }
-  return guildId;
-}
-function getGuild(guildId, guildActionRows, channelNoticeRows) {
+function hydrateRoleMention(arg0, guildId) {
   if (null != guildId.guildId) {
     let guild = store2.getGuild(guildId.guildId);
   } else {
     guild = null;
     if (null != guildId.channelId) {
-      guild = store2.getGuild(getGuildIdFromChannelId(guildId.channelId));
+      const channel = store.getChannel(guildId.channelId);
+      guildId = undefined;
+      if (channel != null) {
+        guildId = channel.getGuildId();
+      }
+      guild = store2.getGuild(guildId);
     }
   }
-  return guild;
-}
-function hydrateRoleMention(roleId, channelId) {
-  const tmp = getGuild(channelId);
   let role = null;
-  if (null != tmp) {
-    role = role.getRole(tmp.id, roleId);
+  if (null != guild) {
+    role = role.getRole(guild.id, arg0);
   }
   if (null == role) {
-    let obj = { type: "text" };
-    const intl = require(1212) /* getSystemLocale */.intl;
+    let obj = { type: "text", content: null };
+    const intl = require(1236) /* getSystemLocale */.intl;
     const _HermesInternal3 = HermesInternal;
-    obj.content = "@" + intl.string(require(1212) /* getSystemLocale */.t["YV4F/n"]);
+    obj[1] = "@" + intl.string(require(1236) /* getSystemLocale */.t["YV4F/n"]);
     return obj;
   } else {
     let id;
-    if (null != tmp) {
-      id = tmp.id;
+    if (guild != null) {
+      id = guild.id;
     }
-    let hasEnhancedRoleColorsForRole = require(4606) /* useHasEnhancedRoleColors */.getHasEnhancedRoleColorsForRole(id, role);
+    let hasEnhancedRoleColorsForRole = require(4628) /* useHasEnhancedRoleColors */.getHasEnhancedRoleColorsForRole(id, role);
     if (hasEnhancedRoleColorsForRole) {
-      obj = require(1914) /* extractColorStringsFromServerColors */;
-      hasEnhancedRoleColorsForRole = !obj.getIsDefaultErc(role);
+      hasEnhancedRoleColorsForRole = !require(1938) /* extractColorStringsFromServerColors */.getIsDefaultErc(role);
+      const tmp19Result = require(1938) /* extractColorStringsFromServerColors */;
     }
-    obj = { type: "mention", channelId: channelId.channelId };
+    obj = { type: "mention", channelId: null, guildId: null, roleId: null, roleColor: null, roleColors: null, roleName: null, color: null, colorString: null, content: null };
+    obj[1] = guildId.channelId;
     let id1 = null;
-    if (null != tmp) {
-      id1 = tmp.id;
+    if (null != guild) {
+      id1 = guild.id;
     }
-    obj.guildId = id1;
-    obj.roleId = roleId;
-    obj.roleColor = role.color;
-    let tmp9 = null;
+    obj[2] = id1;
+    obj[3] = arg0;
+    obj[4] = role.color;
+    let tmp11 = null;
     if (hasEnhancedRoleColorsForRole) {
-      const obj1 = {};
       const colors = role.colors;
       let primary_color;
-      if (null != colors) {
+      if (colors != null) {
         primary_color = colors.primary_color;
       }
-      obj1.primaryColor = primary_color;
+      const obj1 = { primaryColor: null, secondaryColor: null, tertiaryColor: null };
+      obj1[0] = primary_color;
       const colors2 = role.colors;
       let secondary_color;
-      if (null != colors2) {
+      if (colors2 != null) {
         secondary_color = colors2.secondary_color;
       }
-      obj1.secondaryColor = secondary_color;
+      obj1[1] = secondary_color;
       const colors3 = role.colors;
       let tertiary_color;
-      if (null != colors3) {
+      if (colors3 != null) {
         tertiary_color = colors3.tertiary_color;
       }
-      obj1.tertiaryColor = tertiary_color;
-      tmp9 = obj1;
+      obj1[2] = tertiary_color;
+      tmp11 = obj1;
     }
-    obj.roleColors = tmp9;
+    obj[5] = tmp11;
     const _HermesInternal = HermesInternal;
-    obj.roleName = "@" + role.name;
-    ({ color: obj2.color, colorString: obj2.colorString } = role);
-    const obj2 = { type: "text" };
+    obj[6] = "@" + role.name;
+    ({ color: obj3[7], colorString: obj3[8] } = role);
+    const obj2 = { type: "text", content: null };
     const _HermesInternal2 = HermesInternal;
-    obj2.content = "@" + role.name;
+    obj2[1] = "@" + role.name;
     const items = [obj2];
-    obj.content = items;
+    obj[9] = items;
     return obj;
   }
 }
@@ -138,20 +134,21 @@ function hydrateUserMention(everyoneOrHere, channelId) {
   ({ fullMatch, id } = everyoneOrHere);
   let str = user.getUser(id);
   const channel = store.getChannel(channelId.channelId);
-  let tmp;
   id = undefined;
+  let tmp2;
   if (null != str) {
     str = str.toString();
     if (null != channel) {
-      let nickname = importDefault(4354).getNickname(channel.getGuildId(), channelId.channelId, str);
-      if (null == nickname) {
-        nickname = importDefault(4004).getName(str);
-        const obj3 = importDefault(4004);
+      let nickname = importDefault(4379).getNickname(channel.getGuildId(), channelId.channelId, str);
+      if (nickname == null) {
+        nickname = tmp4(4028).getName(str);
+        const tmp4Result = tmp4(4028);
       }
       str = nickname;
-      const obj2 = importDefault(4354);
+      const obj2 = importDefault(4379);
+      tmp4 = importDefault;
     }
-    tmp = str;
+    tmp2 = str;
     id = str.id;
   }
   let isMatch = null != id;
@@ -162,152 +159,118 @@ function hydrateUserMention(everyoneOrHere, channelId) {
   if (isMatch) {
     combined = fullMatch;
     if (channelId.unknownUserMentionPlaceholder) {
-      const intl = require(1212) /* getSystemLocale */.intl;
+      const intl = require(1236) /* getSystemLocale */.intl;
       const _HermesInternal = HermesInternal;
-      combined = "@" + intl.string(require(1212) /* getSystemLocale */.t.sKdZ6U);
+      combined = "@" + intl.string(require(1236) /* getSystemLocale */.t.sKdZ6U);
     }
   }
-  let obj = { type: "mention", userId: id };
-  ({ channelId: obj4.channelId, viewingChannelId: obj4.viewingChannelId } = channelId);
+  const obj = { type: "mention", userId: id, channelId: channelId.channelId, viewingChannelId: channelId.viewingChannelId, guildId: null, parsedUserId: null, roleName: null, content: null };
   let guildId;
-  if (null != channel) {
+  if (channel != null) {
     guildId = channel.getGuildId();
   }
-  obj.guildId = guildId;
-  let tmp16 = null;
+  obj[4] = guildId;
+  let tmp14 = null;
   if (isMatch) {
-    tmp16 = id;
+    tmp14 = id;
   }
-  obj.parsedUserId = tmp16;
-  obj.roleName = everyoneOrHere.everyoneOrHere;
-  obj = { type: "text" };
-  if (null != tmp) {
+  obj[5] = tmp14;
+  obj[6] = everyoneOrHere.everyoneOrHere;
+  if (null != tmp2) {
     const _HermesInternal2 = HermesInternal;
-    combined = "@" + tmp;
+    combined = "@" + tmp2;
   }
-  obj.content = combined;
-  const items = [obj];
-  obj.content = items;
+  const items = [{ type: "text", content: combined }];
+  obj[7] = items;
   return obj;
 }
 function hydrateGameMention(gameId, channelId) {
   const mentionGames = channelId.mentionGames;
   let value;
-  if (null != mentionGames) {
+  if (mentionGames != null) {
     value = mentionGames.get(gameId);
   }
   detectableGame = detectableGame.getDetectableGame(gameId);
   if (true !== channelId.returnMentionIds) {
     if (null == value) {
       if (null == detectableGame) {
-        let obj = { type: "text" };
-        const intl2 = require(1212) /* getSystemLocale */.intl;
+        let obj = { type: "text", content: null };
+        const intl2 = require(1236) /* getSystemLocale */.intl;
         const _HermesInternal = HermesInternal;
-        obj.content = "@" + intl2.string(require(1212) /* getSystemLocale */.t["11pdXZ"]);
+        obj[1] = "@" + intl2.string(require(1236) /* getSystemLocale */.t["11pdXZ"]);
         return obj;
       }
     }
   }
   let name;
-  if (null != value) {
+  if (value != null) {
     name = value.name;
   }
-  if (null == name) {
+  if (name == null) {
     let name1;
-    if (null != detectableGame) {
+    if (detectableGame != null) {
       name1 = detectableGame.name;
     }
     name = name1;
   }
-  if (null == name) {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    name = intl.string(require(1212) /* getSystemLocale */.t["11pdXZ"]);
+  if (name == null) {
+    const intl = require(1236) /* getSystemLocale */.intl;
+    name = intl.string(require(1236) /* getSystemLocale */.t["11pdXZ"]);
   }
   let icon;
-  if (null != value) {
+  if (value != null) {
     icon = value.icon;
   }
-  let applicationIconURL = importDefault(4195)(gameId, icon, { size: 32 });
+  let applicationIconURL = importDefault(4219)(gameId, icon, { size: 32 });
   if (null == applicationIconURL) {
     let icon1;
-    if (null != detectableGame) {
+    if (detectableGame != null) {
       icon1 = detectableGame.icon;
     }
     if (null != icon1) {
-      obj = importDefault(1392);
-      obj = {};
-      ({ id: obj2.id, icon: obj2.icon } = detectableGame);
-      obj.size = 32;
-      applicationIconURL = obj.getApplicationIconURL(obj);
+      obj = { id: null, icon: null, size: 32 };
+      ({ id: obj2[0], icon: obj2[1] } = detectableGame);
+      applicationIconURL = importDefault(1416).getApplicationIconURL(obj);
+      const tmp7Result = importDefault(1416);
     }
   }
-  const obj1 = { type: "gameMention", gameId, channelId: channelId.channelId };
+  const obj1 = { type: "gameMention", gameId, channelId: channelId.channelId, gameName: null, gameIcon: null, icon: null, displayName: null };
   let name2;
-  if (null != value) {
+  if (value != null) {
     name2 = value.name;
   }
-  obj1.gameName = name2;
+  obj1[3] = name2;
   let icon2;
-  if (null != value) {
+  if (value != null) {
     icon2 = value.icon;
   }
-  obj1.gameIcon = icon2;
-  obj1.icon = applicationIconURL;
-  obj1.displayName = name;
+  obj1[4] = icon2;
+  obj1[5] = applicationIconURL;
+  obj1[6] = name;
   return obj1;
 }
-function hydrateCommandMention(commandName, commandId, channelId) {
-  const items = [...callback2(commandName.split(" ")).slice(1)];
-  const mapped = items.map((arg0) => "" + outer1_13 + arg0);
-  let obj = { type: "commandMention", channelId: channelId.channelId, commandId, commandName, commandKey: "" + commandId + mapped.join("") };
-  obj = { type: "text", content: "" + commandName };
-  const items1 = [obj];
-  obj.content = items1;
-  return obj;
-}
-function _startOfWord(arr, index) {
-  let tmp = 0 === arr.length;
-  if (!tmp) {
-    let tmp2 = 0 === index;
-    if (!tmp2) {
-      tmp2 = "" === arr.charAt(index - 1).trim();
-      const str = arr.charAt(index - 1);
-    }
-    tmp = tmp2;
-  }
-  return tmp;
-}
-function _endOfWord(arr, index, length) {
-  const sum = index + length;
-  let tmp2 = sum === arr.length;
-  if (!tmp2) {
-    tmp2 = "" === arr.charAt(sum).trim();
-    const str = arr.charAt(sum);
-  }
-  return tmp2;
-}
-({ ID_REGEX: closure_10, MARKDOWN_SPOILER_REGEXP: closure_11, MARKDOWN_STATIC_ROUTE_NAME_REGEXP: closure_12 } = ME);
+({ ID_REGEX: c10, MARKDOWN_SPOILER_REGEXP: unpackModuleId, MARKDOWN_STATIC_ROUTE_NAME_REGEXP: closure_12 } = ME);
 const re15 = /^( *>>> +([\s\S]*))|^( *>(?!>>) +[^\n]*(\n *>(?!>>) +[^\n]*)*\n?)/;
 const re16 = /^$|\n *$/;
 const re17 = /^ *>>> ?/;
 const re18 = /^ *> ?/gm;
 const re19 = /^((?:https?|steam):\/\/[^\s<]+[^<.,:;"'\]\s])/;
-let obj = { newline: require("t").defaultRules.newline, paragraph: require("t").defaultRules.paragraph };
+let obj = { newline: require("t").defaultRules.newline, paragraph: require("t").defaultRules.paragraph, escape: null, blockQuote: null, link: null, autolink: null, mailto: null, tel: null, url: null, strong: null, em: null, u: null, br: null, text: null, inlineCode: null, emoticon: null, codeBlock: null, roleMention: null, mention: null, silentPrefix: null, channelMention: null, channelOrMessageUrl: null, mediaPostLink: null, attachmentLink: null, commandMention: null, timestampMentionInput: null, gameMention: null, emoji: null, soundboard: null, customEmoji: null, timestamp: null, s: null, spoiler: null, staticRouteLink: null, heading: null, list: null, subtext: null };
 obj = {};
 let merged = Object.assign(require("t").defaultRules.escape);
-obj["match"] = function match(arg0, allowEscape) {
+obj.match = function match(arg0, allowEscape) {
   let match = null;
   if (false !== allowEscape.allowEscape) {
-    match = importDefault(3864).defaultRules.escape.match(arg0, allowEscape, arg2);
-    const str = importDefault(3864).defaultRules.escape;
+    match = importDefault(3888).defaultRules.escape.match(arg0, allowEscape, arg2);
+    const str = importDefault(3888).defaultRules.escape;
   }
   return match;
 };
-obj.escape = obj;
+obj[2] = obj;
 obj = {};
 const merged1 = Object.assign(require("t").defaultRules.blockQuote);
-obj["requiredFirstCharacters"] = [" ", ">"];
-obj["match"] = function match(arg0, prevCapture) {
+obj.requiredFirstCharacters = [" ", ">"];
+obj.match = function match(arg0, prevCapture) {
   prevCapture = prevCapture.prevCapture;
   if (!prevCapture.inQuote) {
     if (!prevCapture.nested) {
@@ -324,10 +287,14 @@ obj["match"] = function match(arg0, prevCapture) {
   }
   return null;
 };
-obj["parse"] = function parse(arg0, arg1, inQuote) {
+obj.parse = function parse(arg0, arg1, inQuote) {
   const BooleanResult = Boolean(regex6.exec(arg0[0]));
+  let tmp2 = regex6;
+  if (!BooleanResult) {
+    tmp2 = closure_18;
+  }
   let flag = inQuote.inQuote;
-  const replaced = str.replace(BooleanResult ? regex6 : closure_18, "");
+  const replaced = str.replace(tmp2, "");
   if (!flag) {
     flag = false;
   }
@@ -343,53 +310,47 @@ obj["parse"] = function parse(arg0, arg1, inQuote) {
   }
   return { content, type: "blockQuote" };
 };
-obj.blockQuote = obj;
-obj.link = require("_createForOfIteratorHelperLoose");
+obj[3] = obj;
+obj[4] = require("validateContentTypes");
 let obj1 = {};
 const merged2 = Object.assign(require("t").defaultRules.autolink);
-obj1["parse"] = parseLink;
-obj.autolink = obj1;
+obj1.parse = parseLink;
+obj[5] = obj1;
 let obj2 = {};
 const merged3 = Object.assign(require("t").defaultRules.mailto);
-obj2["match"] = require("t").inlineRegex(/^<([^\s<>@]+@[^\s<>@]+\.[^\s<>@]+)>/);
-obj2["requiredFirstCharacters"] = ["<"];
-obj2["parse"] = function parse(content) {
-  let obj = content[1];
-  let text = obj;
-  if (!obj.startsWith("mailto:")) {
-    text = `mailto:${obj}`;
+obj2.match = require("t").inlineRegex(/^<([^\s<>@]+@[^\s<>@]+\.[^\s<>@]+)>/);
+obj2.requiredFirstCharacters = ["<"];
+obj2.parse = function parse(content) {
+  let target = obj;
+  if (!content[1].startsWith("mailto:")) {
+    target = `mailto:${obj}`;
   }
-  obj = { type: "link", content: items };
-  items = [{ type: "text", content: content[1] }];
-  obj.target = text;
-  return obj;
+  content = [{ type: "text", content: content[1] }];
+  return { type: "link", content, target };
 };
-obj.mailto = obj2;
-let obj3 = {};
+obj[6] = obj2;
+const obj3 = {};
 const merged4 = Object.assign(require("t").defaultRules.mailto);
-obj3["requiredFirstCharacters"] = ["<"];
-obj3["match"] = require("t").inlineRegex(/^<((?:(?:tel|sms):\+?|\+)(?:(?:[0-9]|\([0-9]+\)))(?:[- .\/]?(?:[0-9]|\([0-9]+\)))+)>/);
-obj3["parse"] = function parse(content) {
-  let obj = content[1];
-  const replaced = obj.replaceAll(/[ \/]+/g, "-");
+obj3.requiredFirstCharacters = ["<"];
+obj3.match = require("t").inlineRegex(/^<((?:(?:tel|sms):\+?|\+)(?:(?:[0-9]|\([0-9]+\)))(?:[- .\/]?(?:[0-9]|\([0-9]+\)))+)>/);
+obj3.parse = function parse(content) {
+  const replaced = content[1].replaceAll(/[ \/]+/g, "-");
   let startsWithResult = replaced.startsWith("tel:");
   if (!startsWithResult) {
     startsWithResult = replaced.startsWith("sms:");
   }
-  let text = replaced;
+  let target = replaced;
   if (!startsWithResult) {
-    text = `tel:${obj2}`;
+    target = `tel:${obj2}`;
   }
-  obj = { type: "link", content: items };
-  items = [{ type: "text", content: content[1] }];
-  obj.target = text;
-  return obj;
+  content = [{ type: "text", content: content[1] }];
+  return { type: "link", content, target };
 };
-obj.tel = obj3;
+obj[7] = obj3;
 const obj4 = {};
 const merged5 = Object.assign(require("t").defaultRules.url);
-obj4["requiredFirstCharacters"] = ["h", "s"];
-obj4["match"] = function match(arg0, inline) {
+obj4.requiredFirstCharacters = ["h", "s"];
+obj4.match = function match(arg0, inline) {
   if (inline.inline) {
     const match = regex7.exec(arg0);
     if (null == match) {
@@ -398,16 +359,17 @@ obj4["match"] = function match(arg0, inline) {
       const first = match[0];
       let diff = first.length - 1;
       let substr = first;
-      if (diff >= 0) {
+      if (0 <= diff) {
         let num2 = 0;
         substr = first;
         if (")" === first[diff]) {
           const index = first.indexOf("(", num2);
           while (-1 !== index) {
-            num2 = index + 1;
-            diff = diff - 1;
+            let diff1 = diff - 1;
             substr = first;
-            if (diff >= 0) {
+            if (0 <= diff1) {
+              diff = diff1;
+              num2 = tmp7;
               substr = first;
             }
             break;
@@ -422,29 +384,29 @@ obj4["match"] = function match(arg0, inline) {
     return null;
   }
 };
-obj4["parse"] = parseLink;
-obj.url = obj4;
-obj.strong = require("t").defaultRules.strong;
-obj.em = require("t").defaultRules.em;
-obj.u = require("t").defaultRules.u;
-obj.br = require("t").defaultRules.br;
-obj.text = require("textRegexp");
+obj4.parse = parseLink;
+obj[8] = obj4;
+obj[9] = require("t").defaultRules.strong;
+obj[10] = require("t").defaultRules.em;
+obj[11] = require("t").defaultRules.u;
+obj[12] = require("t").defaultRules.br;
+obj[13] = require("textRegexp");
 const obj5 = {};
 const merged6 = Object.assign(require("t").defaultRules.inlineCode);
-obj5["parse"] = function parse(arg0, arg1, parseInlineCodeChildContent) {
-  const inlineCode = importDefault(3864).defaultRules.inlineCode;
+obj5.parse = function parse(arg0, arg1, parseInlineCodeChildContent) {
+  const inlineCode = importDefault(3888).defaultRules.inlineCode;
   const parsed = inlineCode.parse(arg0, arg1, parseInlineCodeChildContent);
   let tmp2 = parsed;
   if (true === parseInlineCodeChildContent.parseInlineCodeChildContent) {
     const obj = {};
     const merged = Object.assign(parsed);
-    obj["validationChildContent"] = arg1(parsed.content, parseInlineCodeChildContent);
+    obj.validationChildContent = arg1(parsed.content, parseInlineCodeChildContent);
     tmp2 = obj;
   }
   return tmp2;
 };
-obj.inlineCode = obj5;
-obj.emoticon = {
+obj[14] = obj5;
+obj[15] = {
   order: require("textRegexp").order,
   requiredFirstCharacters: ["\u00AF"],
   match(arg0) {
@@ -464,25 +426,24 @@ const obj6 = {
     return { type: "text", content: content[1] };
   }
 };
-obj.codeBlock = {
+obj[16] = {
   order: require("t").defaultRules.codeBlock.order,
   requiredFirstCharacters: ["`"],
   match(arg0) {
     return /^```(?:([a-z0-9_+\-.#]+?)\n)?\n*([^\n][^]*?)\n*```/i.exec(arg0);
   },
   parse(arg0, arg1, inQuote) {
-    const obj = {};
-    let str = "";
-    let str2 = "";
-    if (null != arg0[1]) {
-      str2 = tmp;
+    let str = arg0[1];
+    if (str == null) {
+      str = "";
     }
-    obj.lang = str2;
-    if (null != arg0[2]) {
-      str = tmp2;
+    const obj = { lang: str, content: null, inQuote: null };
+    let str2 = arg0[2];
+    if (str2 == null) {
+      str2 = "";
     }
-    obj.content = str;
-    obj.inQuote = inQuote.inQuote || inQuote.formatInline || false;
+    obj[1] = str2;
+    obj[2] = inQuote.inQuote || inQuote.formatInline || false;
     return obj;
   }
 };
@@ -493,22 +454,21 @@ const obj7 = {
     return /^```(?:([a-z0-9_+\-.#]+?)\n)?\n*([^\n][^]*?)\n*```/i.exec(arg0);
   },
   parse(arg0, arg1, inQuote) {
-    const obj = {};
-    let str = "";
-    let str2 = "";
-    if (null != arg0[1]) {
-      str2 = tmp;
+    let str = arg0[1];
+    if (str == null) {
+      str = "";
     }
-    obj.lang = str2;
-    if (null != arg0[2]) {
-      str = tmp2;
+    const obj = { lang: str, content: null, inQuote: null };
+    let str2 = arg0[2];
+    if (str2 == null) {
+      str2 = "";
     }
-    obj.content = str;
-    obj.inQuote = inQuote.inQuote || inQuote.formatInline || false;
+    obj[1] = str2;
+    obj[2] = inQuote.inQuote || inQuote.formatInline || false;
     return obj;
   }
 };
-obj.roleMention = {
+obj[17] = {
   order: require("textRegexp").order,
   requiredFirstCharacters: ["<"],
   match(arg0) {
@@ -518,7 +478,8 @@ obj.roleMention = {
     let tmp;
     [, tmp] = arg0;
     if (returnMentionIds.returnMentionIds) {
-      const obj = { type: "roleMention", id: tmp };
+      const obj = { type: "roleMention", id: null };
+      obj[1] = tmp;
       let tmp3 = obj;
     } else {
       tmp3 = hydrateRoleMention(tmp, returnMentionIds);
@@ -536,7 +497,8 @@ const obj8 = {
     let tmp;
     [, tmp] = arg0;
     if (returnMentionIds.returnMentionIds) {
-      const obj = { type: "roleMention", id: tmp };
+      const obj = { type: "roleMention", id: null };
+      obj[1] = tmp;
       let tmp3 = obj;
     } else {
       tmp3 = hydrateRoleMention(tmp, returnMentionIds);
@@ -544,7 +506,7 @@ const obj8 = {
     return tmp3;
   }
 };
-obj.mention = {
+obj[18] = {
   order: require("textRegexp").order,
   requiredFirstCharacters: ["<", "@"],
   match(arg0) {
@@ -556,14 +518,19 @@ obj.mention = {
     return tmp2;
   },
   parse(arg0, arg1, returnMentionIds) {
+    let first = arg0;
     if (returnMentionIds.returnMentionIds) {
-      if (null == arg0[1]) {
-        let obj = { type: "mention", text: arg0[0] };
+      if (null == first[1]) {
+        let obj = { type: "mention", text: null };
+        first = first[0];
+        obj[1] = first;
       } else {
-        obj = { type: "mention", id: arg0[1] };
+        obj = { type: "mention", id: null };
+        obj[1] = first[1];
       }
     } else {
-      obj = { fullMatch: arg0[0], id: arg0[1], everyoneOrHere: arg0[2] };
+      obj = { fullMatch: null, id: null, everyoneOrHere: null };
+      [obj[0], obj[1], obj[2]] = first;
       return hydrateUserMention(obj, returnMentionIds);
     }
   }
@@ -580,19 +547,24 @@ const obj9 = {
     return tmp2;
   },
   parse(arg0, arg1, returnMentionIds) {
+    let first = arg0;
     if (returnMentionIds.returnMentionIds) {
-      if (null == arg0[1]) {
-        let obj = { type: "mention", text: arg0[0] };
+      if (null == first[1]) {
+        let obj = { type: "mention", text: null };
+        first = first[0];
+        obj[1] = first;
       } else {
-        obj = { type: "mention", id: arg0[1] };
+        obj = { type: "mention", id: null };
+        obj[1] = first[1];
       }
     } else {
-      obj = { fullMatch: arg0[0], id: arg0[1], everyoneOrHere: arg0[2] };
+      obj = { fullMatch: null, id: null, everyoneOrHere: null };
+      [obj[0], obj[1], obj[2]] = first;
       return hydrateUserMention(obj, returnMentionIds);
     }
   }
 };
-obj.silentPrefix = {
+obj[19] = {
   order: require("textRegexp").order,
   requiredFirstCharacters: ["@"],
   match(arg0, arg1, arg2) {
@@ -608,10 +580,10 @@ obj.silentPrefix = {
     return { type: "silentPrefix", content: content[0] };
   }
 };
-obj.channelMention = require("getGuildIdFromChannelId").channelMention;
-obj.channelOrMessageUrl = require("getGuildIdFromChannelId").channelOrMessageUrl;
-obj.mediaPostLink = require("getGuildIdFromChannelId").mediaPostLink;
-obj.attachmentLink = require("module_4611").attachmentLink;
+obj[20] = require("getChannel").channelMention;
+obj[21] = require("getChannel").channelOrMessageUrl;
+obj[22] = require("getChannel").mediaPostLink;
+obj[23] = require("module_4633").attachmentLink;
 const obj10 = {
   order: require("textRegexp").order,
   requiredFirstCharacters: ["@"],
@@ -628,7 +600,7 @@ const obj10 = {
     return { type: "silentPrefix", content: content[0] };
   }
 };
-obj.commandMention = {
+obj[24] = {
   order: require("t").defaultRules.text.order,
   requiredFirstCharacters: ["<"],
   match(arg0) {
@@ -636,12 +608,26 @@ obj.commandMention = {
   },
   parse(arg0, arg1, returnMentionIds) {
     if (returnMentionIds.returnMentionIds) {
-      const obj = { type: "commandMention", id: arg0[2] };
-      let tmp2 = obj;
+      let obj = { type: "commandMention", id: null };
+      obj[1] = arg0[2];
     } else {
-      tmp2 = hydrateCommandMention(arg0[1], arg0[2], returnMentionIds);
+      const items = [];
+      HermesBuiltin.arraySpread(callback2(arg0[1].split(" ")).slice(1), 0);
+      const mapped = items.map((arg0) => "" + closure_13 + arg0);
+      const _HermesInternal = HermesInternal;
+      obj = { type: "commandMention", channelId: null, commandId: null, commandName: null, commandKey: null, content: null };
+      obj[1] = returnMentionIds.channelId;
+      obj[2] = arg0[2];
+      obj[3] = arg0[1];
+      obj[4] = "" + arg0[2] + mapped.join("");
+      const obj1 = { type: "text", content: null };
+      const _HermesInternal2 = HermesInternal;
+      obj1[1] = "" + arg0[1];
+      const items1 = [obj1];
+      obj[5] = items1;
+      const arr = callback2(arg0[1].split(" "));
     }
-    return tmp2;
+    return obj;
   }
 };
 const obj11 = {
@@ -652,15 +638,29 @@ const obj11 = {
   },
   parse(arg0, arg1, returnMentionIds) {
     if (returnMentionIds.returnMentionIds) {
-      const obj = { type: "commandMention", id: arg0[2] };
-      let tmp2 = obj;
+      let obj = { type: "commandMention", id: null };
+      obj[1] = arg0[2];
     } else {
-      tmp2 = hydrateCommandMention(arg0[1], arg0[2], returnMentionIds);
+      const items = [];
+      HermesBuiltin.arraySpread(callback2(arg0[1].split(" ")).slice(1), 0);
+      const mapped = items.map((arg0) => "" + closure_13 + arg0);
+      const _HermesInternal = HermesInternal;
+      obj = { type: "commandMention", channelId: null, commandId: null, commandName: null, commandKey: null, content: null };
+      obj[1] = returnMentionIds.channelId;
+      obj[2] = arg0[2];
+      obj[3] = arg0[1];
+      obj[4] = "" + arg0[2] + mapped.join("");
+      const obj1 = { type: "text", content: null };
+      const _HermesInternal2 = HermesInternal;
+      obj1[1] = "" + arg0[1];
+      const items1 = [obj1];
+      obj[5] = items1;
+      const arr = callback2(arg0[1].split(" "));
     }
-    return tmp2;
+    return obj;
   }
 };
-obj.timestampMentionInput = {
+obj[25] = {
   order: require("t").defaultRules.text.order,
   requiredFirstCharacters: ["<"],
   match(arg0, allowTimeMentionInput) {
@@ -690,7 +690,7 @@ const obj12 = {
     return { type: "timestampMentionInput", content: content[1] };
   }
 };
-obj.gameMention = {
+obj[26] = {
   order: require("t").defaultRules.text.order,
   requiredFirstCharacters: ["<"],
   match(arg0, allowGameMentions) {
@@ -718,85 +718,79 @@ const obj13 = {
     return hydrateGameMention(arg0[1], channelId);
   }
 };
-obj.emoji = {
+obj[27] = {
   order: require("textRegexp").order,
   requiredFirstCharacters: [":"],
   match(arg0) {
-    const EMOJI_NAME_RE = importDefault(3806).EMOJI_NAME_RE;
+    const EMOJI_NAME_RE = importDefault(3830).EMOJI_NAME_RE;
     const match = EMOJI_NAME_RE.exec(arg0);
-    let tmp2 = null;
+    let tmp4 = null;
     if (null != match) {
-      tmp2 = null;
-      if ("" !== obj.convertNameToSurrogate(match[1])) {
-        tmp2 = match;
+      tmp4 = null;
+      if ("" !== tmpResult.convertNameToSurrogate(match[1])) {
+        tmp4 = match;
       }
-      obj = importDefault(3806);
+      tmpResult = importDefault(3830);
     }
-    return tmp2;
+    return tmp4;
   },
   parse(arg0) {
-    let obj = importDefault(3806);
-    let result = obj.convertNameToSurrogate(arg0[1]);
-    obj = { type: "text" };
-    if (null == result) {
+    let content = importDefault(3830).convertNameToSurrogate(arg0[1]);
+    if (null == content) {
       const _HermesInternal = HermesInternal;
-      result = ":" + arg0[1] + ":";
+      content = ":" + arg0[1] + ":";
     }
-    obj.content = result;
-    return obj;
+    return { type: "text", content };
   }
 };
 const obj14 = {
   order: require("textRegexp").order,
   requiredFirstCharacters: [":"],
   match(arg0) {
-    const EMOJI_NAME_RE = importDefault(3806).EMOJI_NAME_RE;
+    const EMOJI_NAME_RE = importDefault(3830).EMOJI_NAME_RE;
     const match = EMOJI_NAME_RE.exec(arg0);
-    let tmp2 = null;
+    let tmp4 = null;
     if (null != match) {
-      tmp2 = null;
-      if ("" !== obj.convertNameToSurrogate(match[1])) {
-        tmp2 = match;
+      tmp4 = null;
+      if ("" !== tmpResult.convertNameToSurrogate(match[1])) {
+        tmp4 = match;
       }
-      obj = importDefault(3806);
+      tmpResult = importDefault(3830);
     }
-    return tmp2;
+    return tmp4;
   },
   parse(arg0) {
-    let obj = importDefault(3806);
-    let result = obj.convertNameToSurrogate(arg0[1]);
-    obj = { type: "text" };
-    if (null == result) {
+    let content = importDefault(3830).convertNameToSurrogate(arg0[1]);
+    if (null == content) {
       const _HermesInternal = HermesInternal;
-      result = ":" + arg0[1] + ":";
+      content = ":" + arg0[1] + ":";
     }
-    obj.content = result;
-    return obj;
+    return { type: "text", content };
   }
 };
-obj.soundboard = {
+obj[28] = {
   order: require("textRegexp").order,
   requiredFirstCharacters: ["<"],
   match(arg0) {
-    const soundmojiRawFormatRegex = require(4612) /* getSoundmojiFromMessage */.soundmojiRawFormatRegex;
+    const soundmojiRawFormatRegex = require(4634) /* getSoundmojiASTFromString */.soundmojiRawFormatRegex;
     return soundmojiRawFormatRegex.exec(arg0);
   },
   parse(arg0, arg1, arg2) {
-    return importDefault(4612)(arg0, arg2);
+    return importDefault(4634)(arg0, arg2);
   }
 };
 const obj15 = {
   order: require("textRegexp").order,
   requiredFirstCharacters: ["<"],
   match(arg0) {
-    const soundmojiRawFormatRegex = require(4612) /* getSoundmojiFromMessage */.soundmojiRawFormatRegex;
+    const soundmojiRawFormatRegex = require(4634) /* getSoundmojiASTFromString */.soundmojiRawFormatRegex;
     return soundmojiRawFormatRegex.exec(arg0);
   },
   parse(arg0, arg1, arg2) {
-    return importDefault(4612)(arg0, arg2);
+    return importDefault(4634)(arg0, arg2);
   }
 };
-obj.customEmoji = {
+obj[29] = {
   order: require("textRegexp").order,
   requiredFirstCharacters: ["<"],
   match(arg0) {
@@ -816,11 +810,11 @@ const obj16 = {
     return { type: "text", content: ":" + arg0[1] + ":" };
   }
 };
-obj.timestamp = {
+obj[30] = {
   order: require("textRegexp").order - 1,
   requiredFirstCharacters: ["<"],
   match(arg0) {
-    const TIMESTAMP_REGEX = require(4622) /* formatTimestampMention */.TIMESTAMP_REGEX;
+    const TIMESTAMP_REGEX = require(4644) /* TIMESTAMP_FORMATS */.TIMESTAMP_REGEX;
     return TIMESTAMP_REGEX.exec(arg0);
   },
   parse(arg0) {
@@ -828,10 +822,11 @@ obj.timestamp = {
     let tmp2;
     let tmp3;
     [tmp, tmp2, tmp3] = arg0;
-    let obj = require(4622) /* formatTimestampMention */;
+    let obj = require(4644) /* TIMESTAMP_FORMATS */;
     let parseTimestampResult = obj.parseTimestamp(tmp2, tmp3);
     if (null == parseTimestampResult) {
-      obj = { type: "text", content: tmp };
+      obj = { type: "text", content: null };
+      obj[1] = tmp;
       parseTimestampResult = obj;
     } else {
       parseTimestampResult.type = "timestamp";
@@ -839,12 +834,12 @@ obj.timestamp = {
     return parseTimestampResult;
   }
 };
-const obj18 = { order: require("t").defaultRules.u.order, requiredFirstCharacters: ["~"] };
+const obj18 = { order: require("t").defaultRules.u.order, requiredFirstCharacters: ["~"], match: null, parse: null };
 const obj17 = {
   order: require("textRegexp").order - 1,
   requiredFirstCharacters: ["<"],
   match(arg0) {
-    const TIMESTAMP_REGEX = require(4622) /* formatTimestampMention */.TIMESTAMP_REGEX;
+    const TIMESTAMP_REGEX = require(4644) /* TIMESTAMP_FORMATS */.TIMESTAMP_REGEX;
     return TIMESTAMP_REGEX.exec(arg0);
   },
   parse(arg0) {
@@ -852,10 +847,11 @@ const obj17 = {
     let tmp2;
     let tmp3;
     [tmp, tmp2, tmp3] = arg0;
-    let obj = require(4622) /* formatTimestampMention */;
+    let obj = require(4644) /* TIMESTAMP_FORMATS */;
     let parseTimestampResult = obj.parseTimestamp(tmp2, tmp3);
     if (null == parseTimestampResult) {
-      obj = { type: "text", content: tmp };
+      obj = { type: "text", content: null };
+      obj[1] = tmp;
       parseTimestampResult = obj;
     } else {
       parseTimestampResult.type = "timestamp";
@@ -863,10 +859,10 @@ const obj17 = {
     return parseTimestampResult;
   }
 };
-obj18.match = require("t").inlineRegex(/^~~([\s\S]+?)~~(?!_)/);
-obj18.parse = require("t").defaultRules.u.parse;
-obj.s = obj18;
-obj.spoiler = {
+obj18[2] = require("t").inlineRegex(/^~~([\s\S]+?)~~(?!_)/);
+obj18[3] = require("t").defaultRules.u.parse;
+obj[31] = obj18;
+obj[32] = {
   order: require("textRegexp").order,
   requiredFirstCharacters: ["|"],
   match(arg0) {
@@ -886,50 +882,74 @@ const obj19 = {
     return { content: arg1(arg0[1], channelId), channelId: channelId.channelId };
   }
 };
-obj.staticRouteLink = {
+obj[33] = {
   order: require("textRegexp").order,
   requiredFirstCharacters: ["<"],
   match(arg0) {
     return regex3.exec(arg0);
   },
-  parse(arg0, arg1, channelId) {
-    function makeNode(result) {
-      let tmp = null;
-      if (null != result) {
-        const obj = { type: "text", content: result };
-        const items = [obj];
-        tmp = items;
-      }
-      return tmp;
-    }
-    let tmp = callback(arg0, 3);
-    let obj = require(4623) /* staticRouteToTranslation */;
+  parse(arg0, arg1, guildId) {
+    const tmp = callback(arg0, 3);
+    let obj = require(4645) /* staticRouteToTranslation */;
     const result = obj.staticRouteToTranslation(tmp2);
-    const tmp5 = getGuild(channelId);
-    let id;
-    if (null != tmp5) {
-      id = tmp5.id;
+    let obj1 = require(4645) /* staticRouteToTranslation */;
+    if (null != guildId.guildId) {
+      let guild = store2.getGuild(guildId.guildId);
+    } else {
+      guild = null;
+      if (null != guildId.channelId) {
+        const channel = store.getChannel(guildId.channelId);
+        guildId = undefined;
+        if (channel != null) {
+          guildId = channel.getGuildId();
+        }
+        guild = store2.getGuild(guildId);
+      }
     }
-    const result1 = require(4623) /* staticRouteToTranslation */.staticRouteToItemString(tmp2, tmp3, id);
-    obj = {};
+    let id;
+    if (guild != null) {
+      id = guild.id;
+    }
+    const result1 = obj1.staticRouteToItemString(tmp2, tmp3, id);
     let str = "";
     if (null != result1) {
       const _HermesInternal = HermesInternal;
       str = " \u203A " + result1;
     }
-    obj.content = makeNode(result + str);
-    obj.mainContent = makeNode(result);
-    obj.itemContent = makeNode(result1);
-    obj.itemId = tmp[2];
-    obj.id = tmp[1];
-    obj.guildId = getGuildIdFromChannelId(channelId.channelId);
-    obj.channelId = tmp[1];
+    obj = { content: items, mainContent: null, itemContent: null, itemId: null, id: null, guildId: null, channelId: null };
+    obj = { type: "text", content: result + str };
+    items = [obj];
+    let tmp13 = null;
+    if (null != result) {
+      obj1 = { type: "text", content: null };
+      obj1[1] = result;
+      const items1 = [obj1];
+      tmp13 = items1;
+    }
+    obj[1] = tmp13;
+    let tmp14 = null;
+    if (null != result1) {
+      const obj2 = { type: "text", content: null };
+      obj2[1] = result1;
+      const items2 = [obj2];
+      tmp14 = items2;
+    }
+    obj[2] = tmp14;
+    obj[3] = tmp[2];
+    obj[4] = tmp[1];
+    const channel1 = store.getChannel(guildId.channelId);
+    let guildId1;
+    if (channel1 != null) {
+      guildId1 = channel1.getGuildId();
+    }
+    obj[5] = guildId1;
+    obj[6] = tmp[1];
     return obj;
   }
 };
-obj.heading = require("match");
-obj.list = require("regExp");
-obj.subtext = require("module_4626");
+obj[34] = require("match");
+obj[35] = require("regExp");
+obj[36] = require("module_4648");
 let items = [obj, ];
 const obj20 = {
   order: require("textRegexp").order,
@@ -937,46 +957,70 @@ const obj20 = {
   match(arg0) {
     return regex3.exec(arg0);
   },
-  parse(arg0, arg1, channelId) {
-    function makeNode(result) {
-      let tmp = null;
-      if (null != result) {
-        const obj = { type: "text", content: result };
-        const items = [obj];
-        tmp = items;
-      }
-      return tmp;
-    }
-    let tmp = callback(arg0, 3);
-    let obj = require(4623) /* staticRouteToTranslation */;
+  parse(arg0, arg1, guildId) {
+    const tmp = callback(arg0, 3);
+    let obj = require(4645) /* staticRouteToTranslation */;
     const result = obj.staticRouteToTranslation(tmp2);
-    const tmp5 = getGuild(channelId);
-    let id;
-    if (null != tmp5) {
-      id = tmp5.id;
+    let obj1 = require(4645) /* staticRouteToTranslation */;
+    if (null != guildId.guildId) {
+      let guild = store2.getGuild(guildId.guildId);
+    } else {
+      guild = null;
+      if (null != guildId.channelId) {
+        const channel = store.getChannel(guildId.channelId);
+        guildId = undefined;
+        if (channel != null) {
+          guildId = channel.getGuildId();
+        }
+        guild = store2.getGuild(guildId);
+      }
     }
-    const result1 = require(4623) /* staticRouteToTranslation */.staticRouteToItemString(tmp2, tmp3, id);
-    obj = {};
+    let id;
+    if (guild != null) {
+      id = guild.id;
+    }
+    const result1 = obj1.staticRouteToItemString(tmp2, tmp3, id);
     let str = "";
     if (null != result1) {
       const _HermesInternal = HermesInternal;
       str = " \u203A " + result1;
     }
-    obj.content = makeNode(result + str);
-    obj.mainContent = makeNode(result);
-    obj.itemContent = makeNode(result1);
-    obj.itemId = tmp[2];
-    obj.id = tmp[1];
-    obj.guildId = getGuildIdFromChannelId(channelId.channelId);
-    obj.channelId = tmp[1];
+    obj = { content: items, mainContent: null, itemContent: null, itemId: null, id: null, guildId: null, channelId: null };
+    obj = { type: "text", content: result + str };
+    items = [obj];
+    let tmp13 = null;
+    if (null != result) {
+      obj1 = { type: "text", content: null };
+      obj1[1] = result;
+      const items1 = [obj1];
+      tmp13 = items1;
+    }
+    obj[1] = tmp13;
+    let tmp14 = null;
+    if (null != result1) {
+      const obj2 = { type: "text", content: null };
+      obj2[1] = result1;
+      const items2 = [obj2];
+      tmp14 = items2;
+    }
+    obj[2] = tmp14;
+    obj[3] = tmp[2];
+    obj[4] = tmp[1];
+    const channel1 = store.getChannel(guildId.channelId);
+    let guildId1;
+    if (channel1 != null) {
+      guildId1 = channel1.getGuildId();
+    }
+    obj[5] = guildId1;
+    obj[6] = tmp[1];
     return obj;
   }
 };
-items[1] = require("decorateWithIcon");
-const importDefaultResult3Result = require("_createForOfIteratorHelperLoose")(items);
-const omitResult = require("_createForOfIteratorHelperLoose").omit(importDefaultResult3Result, ["inlineCode", "codeBlock", "br", "blockQuote", "subtext", "soundboard"]);
-const omitResult1 = require("_createForOfIteratorHelperLoose").omit(importDefaultResult3Result, ["inlineCode", "codeBlock", "br", "blockQuote", "autolink", "url", "attachmentLink", "mention", "roleMention", "channelMention", "channelOrMessageUrl", "mediaPostLink", "subtext", "soundboard", "gameMention"]);
-const omitResult2 = require("_createForOfIteratorHelperLoose").omit(importDefaultResult3Result, ["codeBlock", "br", "mention", "channel", "roleMention", "attachmentLink", "subtext", "soundboard", "gameMention"]);
+items[1] = require("match");
+const importDefaultResult3Result = require("combineMarkupRules")(items);
+const omitResult = require("useHasEnhancedRoleColors").omit(importDefaultResult3Result, ["inlineCode", "codeBlock", "br", "blockQuote", "subtext", "soundboard"]);
+const omitResult1 = require("useHasEnhancedRoleColors").omit(importDefaultResult3Result, ["inlineCode", "codeBlock", "br", "blockQuote", "autolink", "url", "attachmentLink", "mention", "roleMention", "channelMention", "channelOrMessageUrl", "mediaPostLink", "subtext", "soundboard", "gameMention"]);
+const omitResult2 = require("useHasEnhancedRoleColors").omit(importDefaultResult3Result, ["codeBlock", "br", "mention", "channel", "roleMention", "attachmentLink", "subtext", "soundboard", "gameMention"]);
 let items1 = [
   importDefaultResult3Result,
   {
@@ -986,7 +1030,7 @@ let items1 = [
         if (null != match) {
           return match;
         } else {
-          const match1 = importDefaultResult3Result.inlineCode.match(arg0, arg1, arg2);
+          const match1 = tmp.inlineCode.match(arg0, arg1, arg2);
           let tmp4;
           if (null != match1) {
             tmp4 = match1;
@@ -994,6 +1038,7 @@ let items1 = [
           return tmp4;
         }
         const str = importDefaultResult3Result.codeBlock;
+        tmp = importDefaultResult3Result;
       }
     }
   }
@@ -1004,7 +1049,7 @@ const obj21 = {
     if (null != match) {
       return match;
     } else {
-      const match1 = importDefaultResult3Result.inlineCode.match(arg0, arg1, arg2);
+      const match1 = tmp.inlineCode.match(arg0, arg1, arg2);
       let tmp4;
       if (null != match1) {
         tmp4 = match1;
@@ -1012,13 +1057,14 @@ const obj21 = {
       return tmp4;
     }
     const str = importDefaultResult3Result.codeBlock;
+    tmp = importDefaultResult3Result;
   }
 };
-const omitResult3 = require("_createForOfIteratorHelperLoose").omit(require("_createForOfIteratorHelperLoose")(items1), ["blockQuote", "codeBlock", "br"]);
-const omitResult4 = require("_createForOfIteratorHelperLoose").omit(importDefaultResult3Result, ["codeBlock", "br", "blockQuote"]);
-const omitResult5 = require("_createForOfIteratorHelperLoose").omit(importDefaultResult3Result, ["codeBlock", "br", "attachmentLink", "mention", "roleMention", "channel", "paragraph", "newline", "subtext", "soundboard"]);
-const omitResult6 = require("_createForOfIteratorHelperLoose").omit(importDefaultResult3Result, ["codeBlock", "blockQuote", "br"]);
-const items2 = [
+const omitResult3 = require("useHasEnhancedRoleColors").omit(require("combineMarkupRules")(items1), ["blockQuote", "codeBlock", "br"]);
+const omitResult4 = require("useHasEnhancedRoleColors").omit(importDefaultResult3Result, ["codeBlock", "br", "blockQuote"]);
+const omitResult5 = require("useHasEnhancedRoleColors").omit(importDefaultResult3Result, ["codeBlock", "br", "attachmentLink", "mention", "roleMention", "channel", "paragraph", "newline", "subtext", "soundboard"]);
+const omitResult6 = require("useHasEnhancedRoleColors").omit(importDefaultResult3Result, ["codeBlock", "blockQuote", "br"]);
+let items2 = [
   {
     highlightWord: {
       order: -1,
@@ -1034,40 +1080,66 @@ const items2 = [
             if (-1 === index) {
               return null;
             } else {
-              const tmp13 = _startOfWord(arr, index);
-              let tmp2 = !tmp13;
-              if (tmp13) {
-                tmp2 = !_endOfWord(arr, index, parseDepth.highlightWord.length);
+              let tmp2 = 0 === arr.length;
+              if (!tmp2) {
+                let tmp = 0 === index;
+                if (!tmp) {
+                  tmp = "" === arr.charAt(index - 1).trim();
+                  const str = arr.charAt(index - 1);
+                }
+                tmp2 = tmp;
               }
-              let tmp3 = index;
-              let tmp4 = index;
+              let tmp3 = !tmp2;
               if (tmp2) {
+                const sum = index + parseDepth.highlightWord.length;
+                let tmp5 = sum === arr.length;
+                if (!tmp5) {
+                  tmp5 = "" === arr.charAt(sum).trim();
+                  const str3 = arr.charAt(sum);
+                }
+                tmp3 = !tmp5;
+              }
+              let tmp6 = index;
+              let tmp7 = index;
+              if (tmp3) {
                 while (true) {
-                  let index1 = arr.indexOf(parseDepth.highlightWord, tmp3 + 1);
-                  let tmp6 = _startOfWord;
-                  let tmp7 = _startOfWord(arr, index1);
-                  let tmp8 = !tmp7;
-                  if (tmp7) {
-                    let tmp9 = _endOfWord;
-                    tmp8 = !_endOfWord(arr, index1, parseDepth.highlightWord.length);
+                  let index1 = arr.indexOf(parseDepth.highlightWord, tmp6 + 1);
+                  let tmp9 = 0 === arr.length;
+                  if (!tmp9) {
+                    let tmp10 = 0 === index1;
+                    if (!tmp10) {
+                      let str6 = arr.charAt(index1 - 1);
+                      tmp10 = "" === str6.trim();
+                    }
+                    tmp9 = tmp10;
                   }
-                  tmp4 = index1;
-                  if (!tmp8) {
+                  let tmp11 = !tmp9;
+                  if (tmp9) {
+                    let sum1 = index1 + parseDepth.highlightWord.length;
+                    let tmp13 = sum1 === arr.length;
+                    if (!tmp13) {
+                      let str7 = arr.charAt(sum1);
+                      tmp13 = "" === str7.trim();
+                    }
+                    tmp11 = !tmp13;
+                  }
+                  tmp7 = index1;
+                  if (!tmp11) {
                     break;
                   } else {
-                    tmp3 = index1;
-                    tmp4 = index1;
+                    tmp6 = index1;
+                    tmp7 = index1;
                     if (-1 === index1) {
                       break;
                     }
                   }
                 }
               }
-              if (-1 === tmp4) {
+              if (-1 === tmp7) {
                 return null;
               } else {
-                const substr = arr.substring(0, tmp4);
-                const items = [arr, parseDepth.highlightWord, substr, arr.substring(tmp4 + parseDepth.highlightWord.length)];
+                const substr = arr.substring(0, tmp7);
+                const items = [arr, parseDepth.highlightWord, substr, arr.substring(tmp7 + parseDepth.highlightWord.length)];
                 return items;
               }
             }
@@ -1076,14 +1148,13 @@ const items2 = [
         return null;
       },
       parse(arg0, arg1, arg2) {
-        const parseDepth = module.parseDepth;
-        let num = 0;
-        if (null != parseDepth) {
-          num = parseDepth;
+        let num = module.parseDepth;
+        if (num == null) {
+          num = 0;
         }
         let obj = {};
         const merged = Object.assign(module);
-        obj["parseDepth"] = num + 1;
+        obj.parseDepth = num + 1;
         const _module = require(global[2], obj);
         const _module1 = require(global[3], obj);
         const items = [..._module, obj, ..._module1];
@@ -1108,40 +1179,66 @@ const obj22 = {
         if (-1 === index) {
           return null;
         } else {
-          const tmp13 = _startOfWord(arr, index);
-          let tmp2 = !tmp13;
-          if (tmp13) {
-            tmp2 = !_endOfWord(arr, index, parseDepth.highlightWord.length);
+          let tmp2 = 0 === arr.length;
+          if (!tmp2) {
+            let tmp = 0 === index;
+            if (!tmp) {
+              tmp = "" === arr.charAt(index - 1).trim();
+              const str = arr.charAt(index - 1);
+            }
+            tmp2 = tmp;
           }
-          let tmp3 = index;
-          let tmp4 = index;
+          let tmp3 = !tmp2;
           if (tmp2) {
+            const sum = index + parseDepth.highlightWord.length;
+            let tmp5 = sum === arr.length;
+            if (!tmp5) {
+              tmp5 = "" === arr.charAt(sum).trim();
+              const str3 = arr.charAt(sum);
+            }
+            tmp3 = !tmp5;
+          }
+          let tmp6 = index;
+          let tmp7 = index;
+          if (tmp3) {
             while (true) {
-              let index1 = arr.indexOf(parseDepth.highlightWord, tmp3 + 1);
-              let tmp6 = _startOfWord;
-              let tmp7 = _startOfWord(arr, index1);
-              let tmp8 = !tmp7;
-              if (tmp7) {
-                let tmp9 = _endOfWord;
-                tmp8 = !_endOfWord(arr, index1, parseDepth.highlightWord.length);
+              let index1 = arr.indexOf(parseDepth.highlightWord, tmp6 + 1);
+              let tmp9 = 0 === arr.length;
+              if (!tmp9) {
+                let tmp10 = 0 === index1;
+                if (!tmp10) {
+                  let str6 = arr.charAt(index1 - 1);
+                  tmp10 = "" === str6.trim();
+                }
+                tmp9 = tmp10;
               }
-              tmp4 = index1;
-              if (!tmp8) {
+              let tmp11 = !tmp9;
+              if (tmp9) {
+                let sum1 = index1 + parseDepth.highlightWord.length;
+                let tmp13 = sum1 === arr.length;
+                if (!tmp13) {
+                  let str7 = arr.charAt(sum1);
+                  tmp13 = "" === str7.trim();
+                }
+                tmp11 = !tmp13;
+              }
+              tmp7 = index1;
+              if (!tmp11) {
                 break;
               } else {
-                tmp3 = index1;
-                tmp4 = index1;
+                tmp6 = index1;
+                tmp7 = index1;
                 if (-1 === index1) {
                   break;
                 }
               }
             }
           }
-          if (-1 === tmp4) {
+          if (-1 === tmp7) {
             return null;
           } else {
-            const substr = arr.substring(0, tmp4);
-            const items = [arr, parseDepth.highlightWord, substr, arr.substring(tmp4 + parseDepth.highlightWord.length)];
+            const substr = arr.substring(0, tmp7);
+            const items = [arr, parseDepth.highlightWord, substr, arr.substring(tmp7 + parseDepth.highlightWord.length)];
             return items;
           }
         }
@@ -1150,14 +1247,13 @@ const obj22 = {
     return null;
   },
   parse(arg0, arg1, arg2) {
-    const parseDepth = module.parseDepth;
-    let num = 0;
-    if (null != parseDepth) {
-      num = parseDepth;
+    let num = module.parseDepth;
+    if (num == null) {
+      num = 0;
     }
     let obj = {};
     const merged = Object.assign(module);
-    obj["parseDepth"] = num + 1;
+    obj.parseDepth = num + 1;
     const _module = require(global[2], obj);
     const _module1 = require(global[3], obj);
     const items = [..._module, obj, ..._module1];
@@ -1165,13 +1261,21 @@ const obj22 = {
     return items;
   }
 };
-const omitResult7 = require("_createForOfIteratorHelperLoose").omit(importDefaultResult3Result, ["codeBlock", "br", "inlineCode"]);
-items2[1] = require("_createForOfIteratorHelperLoose").omit(importDefaultResult3Result, ["url"]);
+const omitResult7 = require("useHasEnhancedRoleColors").omit(importDefaultResult3Result, ["codeBlock", "br", "inlineCode"]);
+items2[1] = require("useHasEnhancedRoleColors").omit(importDefaultResult3Result, ["url"]);
 const obj23 = { RULES: importDefaultResult3Result, CHANNEL_TOPIC_RULES: omitResult, VOICE_CHANNEL_STATUS_RULES: omitResult1, EMBED_TITLE_RULES: omitResult2, INLINE_REPLY_RULES: omitResult3, GUILD_VERIFICATION_FORM_RULES: omitResult4, GUILD_EVENT_RULES: omitResult6, PROFILE_BIO_RULES: omitResult5, AUTO_MODERATION_SYSTEM_MESSAGE_RULES: importDefaultResult12(items2), NATIVE_SEARCH_RESULT_LINK_RULES: omitResult7 };
-let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/markup/MarkupRules.tsx");
+let result = require("ensureGuildLoaded").fileFinishedImporting("modules/markup/MarkupRules.tsx");
 
 export default obj23;
 export { hydrateRoleMention };
 export { hydrateUserMention };
 export { hydrateGameMention };
-export { hydrateCommandMention };
+export const hydrateCommandMention = function hydrateCommandMention(commandName, commandId, channelId) {
+  const items = [...callback2(commandName.split(" ")).slice(1)];
+  const mapped = items.map((arg0) => "" + closure_13 + arg0);
+  let obj = { type: "commandMention", channelId: channelId.channelId, commandId, commandName, commandKey: "" + commandId + mapped.join(""), content: null };
+  obj = { type: "text", content: "" + commandName };
+  const items1 = [obj];
+  obj[5] = items1;
+  return obj;
+};

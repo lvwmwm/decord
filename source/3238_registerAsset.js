@@ -1,11 +1,10 @@
 // Module ID: 3238
-// Function ID: 25829
+// Function ID: 3239
 // Name: registerAsset
-// Dependencies: [1217]
+// Dependencies: [1241]
 
 // Module 3238 (registerAsset)
 import registerAsset from "registerAsset";
 
-const obj = { __packager_asset: true, httpServerLocation: "/assets/modules/custom_typing_indicator/intl", scales: [1], hash: "8a4e398cedf22d5da2ac5bcd65749284", name: "CustomTypingIndicator.compiled.messages", type: "jsona" };
 
-export default registerAsset.registerAsset(obj);
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9nYW1lX2ludml0ZV9jaGFubmVscw==", scales: [1], hash: "c0df03f60fe221ed64b27821bf888e01", name: "hi.messages.c0df03f60fe221ed64b27821bf888e01.compiled.messages", type: "jsona" });

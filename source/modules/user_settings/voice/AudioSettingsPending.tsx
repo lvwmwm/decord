@@ -1,40 +1,34 @@
-// Module ID: 12938
-// Function ID: 100402
-// Name: makeContextUserKey
-// Dependencies: [57, 2]
+// Module ID: 12960
+// Function ID: 12961
+// Name: getPendingAudioSettings
+// Dependencies: [32, 2]
 // Exports: drainPendingAudioSettings, getPendingAudioSettings, updatePendingSettings
 
-// Module 12938 (makeContextUserKey)
+// Module 12960 (getPendingAudioSettings)
 import _slicedToArray from "_slicedToArray";
 
-function makeContextUserKey(context, userId) {
-  return "" + context + ":" + userId;
-}
-function unpackContextUserKey(key10007) {
-  const tmp = callback(key10007.split(":"), 2);
-  const items = [tmp[0], tmp[1]];
-  return items;
-}
 let closure_1 = {};
 const result = require("set").fileFinishedImporting("modules/user_settings/voice/AudioSettingsPending.tsx");
 
-export const getPendingAudioSettings = function getPendingAudioSettings(_slicedToArray, userId) {
-  return dependencyMap[makeContextUserKey(undefined, _slicedToArray, userId)];
+export const getPendingAudioSettings = function getPendingAudioSettings(_slicedToArray, _slicedToArray) {
+  return dependencyMap["" + _slicedToArray + ":" + _slicedToArray];
 };
 export const updatePendingSettings = function updatePendingSettings(context, userId, arg2) {
-  const tmp = makeContextUserKey(context, userId);
-  const merged = Object.assign(dependencyMap[tmp]);
+  const combined = "" + context + ":" + userId;
+  const merged = Object.assign(dependencyMap[combined]);
   const merged1 = Object.assign(arg2);
-  dependencyMap[tmp] = {};
+  dependencyMap[combined] = {};
 };
 export const drainPendingAudioSettings = function drainPendingAudioSettings(arg0) {
-  for (const key10007 in closure_1) {
-    let tmp = key10007;
-    let tmp2 = unpackContextUserKey;
-    let tmp3 = callback;
-    let tmp4 = callback(unpackContextUserKey(key10007), 2);
+  for (const key10006 in closure_1) {
+    let tmp = key10006;
+    let tmp2 = callback;
+    let tmp3 = callback(key10006.split(":"), 2);
+    let items = [, ];
+    [arr[0], arr[1]] = tmp3;
+    let tmp4 = callback(items, 2);
     let tmp5 = dependencyMap;
-    let tmp6 = arg0(tmp4[0], tmp4[1], dependencyMap[key10007]);
+    let tmp6 = arg0(tmp4[0], tmp4[1], dependencyMap[key10006]);
     continue;
   }
   const dependencyMap = {};

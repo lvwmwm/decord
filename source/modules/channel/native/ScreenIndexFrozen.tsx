@@ -1,27 +1,14 @@
-// Module ID: 4025
-// Function ID: 33225
-// Name: isScreenIndexFrozen
-// Dependencies: [31, 4026, 2]
-// Exports: freezeScreenIndex, useIsScreenIndexFrozenSharedValue
+// Module ID: 4049
+// Function ID: 4050
+// Name: set
+// Dependencies: [19, 4050, 2]
+// Exports: addFrozenScreenIndexesChangedListener, freezeScreenIndex, isScreenIndexFrozen, removeFrozenScreenIndexesChangedListener, useIsScreenIndexFrozenSharedValue
 
-// Module 4025 (isScreenIndexFrozen)
-import result from "result";
+// Module 4049 (set)
+import noop from "noop";
 import set from "set";
 
 const require = arg1;
-function isScreenIndexFrozen(arg0) {
-  return set.has(arg0);
-}
-function addFrozenScreenIndexesChangedListener(arg0) {
-  let closure_0 = arg0;
-  set1.add(arg0);
-  return () => {
-    outer1_7(closure_0);
-  };
-}
-function removeFrozenScreenIndexesChangedListener(arg0) {
-  set1.delete(arg0);
-}
 let set = new Set();
 const set1 = new Set();
 let result = set.fileFinishedImporting("modules/channel/native/ScreenIndexFrozen.tsx");
@@ -34,15 +21,31 @@ export const freezeScreenIndex = function freezeScreenIndex(shouldFreeze, arg1) 
   }
   const item = set1.forEach((arg0) => arg0());
 };
-export { isScreenIndexFrozen };
-export { addFrozenScreenIndexesChangedListener };
-export { removeFrozenScreenIndexesChangedListener };
+export const isScreenIndexFrozen = function isScreenIndexFrozen(arg0) {
+  return set.has(arg0);
+};
+export const addFrozenScreenIndexesChangedListener = function addFrozenScreenIndexesChangedListener(arg0) {
+  let closure_0 = arg0;
+  set1.add(arg0);
+  return () => {
+    outer1_4.delete(fn);
+  };
+};
+export const removeFrozenScreenIndexesChangedListener = function removeFrozenScreenIndexesChangedListener(arg0) {
+  set1.delete(arg0);
+};
 export const useIsScreenIndexFrozenSharedValue = function useIsScreenIndexFrozenSharedValue(arg0) {
   const _require = arg0;
-  sharedValue = _require(sharedValue[1]).useSharedValue(isScreenIndexFrozen(arg0));
+  sharedValue = _require(sharedValue[1]).useSharedValue(set.has(arg0));
   const items = [arg0, sharedValue];
-  const effect = React.useEffect(() => outer1_6(() => {
-    const result = outer1_1.set(outer2_5(outer1_0));
-  }), items);
+  const effect = React.useEffect(() => {
+    const fn = () => {
+      const result = closure_1.set(outer1_3.has(fn));
+    };
+    outer1_4.add(fn);
+    return () => {
+      outer1_4.delete(fn);
+    };
+  }, items);
   return sharedValue;
 };

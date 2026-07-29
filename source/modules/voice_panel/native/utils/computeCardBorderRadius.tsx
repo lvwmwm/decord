@@ -1,10 +1,10 @@
-// Module ID: 15925
-// Function ID: 122875
+// Module ID: 15960
+// Function ID: 15961
 // Name: VoicePanelModes
-// Dependencies: [10016, 2]
+// Dependencies: [10038, 2]
 // Exports: default
 
-// Module 15925 (VoicePanelModes)
+// Module 15960 (VoicePanelModes)
 import VoicePanelModes from "VoicePanelModes";
 
 VoicePanelModes = VoicePanelModes.VoicePanelModes;
@@ -25,7 +25,7 @@ const fn = function o(arg0) {
     return defaultBorderRadius;
   } else {
     let tmp4 = defaultBorderRadius;
-    if (mode === VoicePanelModes.PIP) {
+    if (mode === tmp3.PIP) {
       tmp4 = DEFAULT_BORDER_RADIUS_PIP;
     }
     return tmp4;

@@ -1,14 +1,15 @@
-// Module ID: 1836
-// Function ID: 20069
+// Module ID: 1860
+// Function ID: 1861
 // Name: apexExperiment
-// Dependencies: [1428, 2]
+// Dependencies: [1452, 2]
 // Exports: isServerNSFWLevelEnabled
 
-// Module 1836 (apexExperiment)
+// Module 1860 (apexExperiment)
 import ApexExperiment from "ApexExperiment";
 
-const obj = { name: "2025-09-server-nsfw-level", kind: "user", defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } };
-const apexExperiment = ApexExperiment.createApexExperiment(obj);
+const obj = { 1: null };
+obj[1] = { enabled: true };
+const apexExperiment = ApexExperiment.createApexExperiment({ name: "2025-09-server-nsfw-level", kind: "user", defaultConfig: { enabled: false }, variations: obj });
 const result = require("set").fileFinishedImporting("modules/age_gate/ServerNSFWLevelExperiment.tsx");
 
 export const ServerNSFWLevelExperiment = apexExperiment;

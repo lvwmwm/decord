@@ -1,346 +1,202 @@
-// Module ID: 9976
-// Function ID: 76994
-// Name: resetStoreState
-// Dependencies: [31, 4360, 5093, 662, 686, 22, 1327, 9977, 566, 5098, 1360, 2]
+// Module ID: 9998
+// Function ID: 9999
+// Name: useBatchUpdateSelectOption
+// Dependencies: [19, 4385, 5115, 685, 709, 12, 1351, 9999, 589, 5120, 1384, 2]
 // Exports: default
 
-// Module 9976 (resetStoreState)
-import result from "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_5 from "_isNativeReflectConstruct";
+// Module 9998 (useBatchUpdateSelectOption)
+import noop from "noop";
+import updateUserGuildSettingsInternal from "updateUserGuildSettingsInternal";
+import handleUpdate from "handleUpdate";
 import { ChannelNotificationSettingsFlags as closure_6 } from "MAX_FAVORITES";
 
 const require = arg1;
-function resetStoreState(guildId) {
-  let obj = importDefault(686);
-  obj = { type: "CLEAR_PENDING_CHANNEL_AND_ROLE_UPDATES", guildId };
-  obj.dispatch(obj);
-}
 let closure_7 = {};
-let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/guild_onboarding/useBatchUpdateSelectOption.tsx");
+let result = require("handleUpdate").fileFinishedImporting("modules/guild_onboarding/useBatchUpdateSelectOption.tsx");
 
 export default function useBatchUpdateSelectOption(arg0) {
   const _require = arg0;
-  let obj = _require(566);
-  let items = [closure_5];
+  let obj = _require(589);
+  let items = [handleUpdate];
   let items1 = [arg0];
   const stateFromStores = obj.useStateFromStores(items, () => {
     let pendingResponseOptions = outer1_5.getPendingResponseOptions(closure_0);
-    if (null == pendingResponseOptions) {
+    if (pendingResponseOptions == null) {
       pendingResponseOptions = outer1_7;
     }
     return pendingResponseOptions;
   }, items1);
-  const items2 = [arg0];
+  let items2 = [arg0];
   const effect = React.useEffect(() => {
-    outer1_8(closure_0);
+    let obj = stateFromStores(outer1_2[4]);
+    obj = { type: "CLEAR_PENDING_CHANNEL_AND_ROLE_UPDATES", guildId: closure_0 };
+    obj.dispatch(obj);
     return () => {
-      outer2_8(outer1_0);
+      let obj = outer1_1(outer1_2[4]);
+      obj = { type: "CLEAR_PENDING_CHANNEL_AND_ROLE_UPDATES", guildId: closure_0 };
+      obj.dispatch(obj);
     };
   }, items2);
   const items3 = [arg0, stateFromStores];
   const effect1 = React.useEffect(() => {
-    let tmp = null != stateFromStores;
-    if (tmp) {
+    let tmp2 = null != stateFromStores;
+    if (tmp2) {
       const _Object = Object;
-      tmp = 0 !== Object.keys(stateFromStores).length;
+      tmp2 = 0 !== Object.keys(tmp).length;
     }
-    if (tmp) {
+    if (tmp2) {
       const result = stateFromStores(outer1_2[9]).updateOnboardingResponses(closure_0);
       const obj = stateFromStores(outer1_2[9]);
     }
   }, items3);
   obj = {
-    handleSelectOption: React.useCallback((id, id2, selected) => {
-      let addedChannelIds;
-      let addedRoleIds;
-      let removedChannelIds;
-      let removedRoleIds;
-      const onboardingResponses = outer1_5.getOnboardingResponses(closure_0);
-      let obj = { guildId: closure_0, prompt: id, option: id2, selected, responses: onboardingResponses };
-      ({ addedRoleIds, removedRoleIds } = (function getRoles(singleSelect, roleIds, selected, onboardingResponses) {
-        const callback = roleIds;
-        let closure_1 = onboardingResponses;
+    handleSelectOption: React.useCallback((singleSelect, roleIds) => {
+      let obj = outer1_5;
+      const onboardingResponses = outer1_5.getOnboardingResponses(callback);
+      callback = roleIds;
+      if (singleSelect.singleSelect) {
+        if (arg2) {
+          const options = singleSelect.options;
+          const found = options.find((id) => onboardingResponses.includes(id.id));
+          roleIds = roleIds.roleIds;
+          if (roleIds == null) {
+            roleIds = [];
+          }
+          let roleIds1;
+          if (found != null) {
+            roleIds1 = found.roleIds;
+          }
+          if (roleIds1 == null) {
+            roleIds1 = [];
+          }
+          const obj5 = stateFromStores(outer1_2[5]);
+          const tmp10 = stateFromStores;
+          const tmp11 = outer1_2;
+          const differenceResult = stateFromStores(outer1_2[5]).difference(roleIds, roleIds1);
+          let roleIds2;
+          if (found != null) {
+            roleIds2 = found.roleIds;
+          }
+          if (roleIds2 == null) {
+            roleIds2 = [];
+          }
+          let roleIds3 = roleIds.roleIds;
+          if (roleIds3 == null) {
+            roleIds3 = [];
+          }
+          let differenceResult1 = tmp10(tmp11[5]).difference(roleIds2, roleIds3);
+          let items2 = differenceResult;
+          const tmp10Result = tmp10(tmp11[5]);
+        }
+        callback = roleIds;
         if (singleSelect.singleSelect) {
-          if (selected) {
-            const options = singleSelect.options;
-            const found = options.find((id) => onboardingResponses.includes(id.id));
-            roleIds = roleIds.roleIds;
-            if (null == roleIds) {
-              roleIds = [];
-            }
-            let roleIds1;
-            if (null != found) {
-              roleIds1 = found.roleIds;
-            }
-            if (null == roleIds1) {
-              roleIds1 = [];
-            }
-            const obj4 = stateFromStores(outer2_2[5]);
-            const differenceResult = stateFromStores(outer2_2[5]).difference(roleIds, roleIds1);
-            let roleIds2;
-            if (null != found) {
-              roleIds2 = found.roleIds;
-            }
-            if (null == roleIds2) {
-              roleIds2 = [];
-            }
-            let roleIds3 = roleIds.roleIds;
-            if (null == roleIds3) {
-              roleIds3 = [];
-            }
-            let differenceResult1 = stateFromStores(outer2_2[5]).difference(roleIds2, roleIds3);
-            let items = differenceResult;
-            const obj5 = stateFromStores(outer2_2[5]);
-          }
-          const obj = { addedRoleIds: items, removedRoleIds: differenceResult1 };
-          return obj;
-        }
-        if (selected) {
-          let roleIds4 = roleIds.roleIds;
-          if (null == roleIds4) {
-            roleIds4 = [];
-          }
-          differenceResult1 = [];
-          items = roleIds4;
-        } else {
-          const options1 = singleSelect.options;
-          const found1 = options1.filter((id) => onboardingResponses.includes(id.id));
-          const found2 = found1.filter((id) => id.id !== id.id);
-          const mapped = found1.map((roleIds) => roleIds.roleIds);
-          const found3 = mapped.flat().filter(callback(outer2_2[6]).isNotNullish);
-          const mapped1 = found2.map((roleIds) => roleIds.roleIds);
-          const flatResult = mapped.flat();
-          items = [];
-          const found4 = mapped1.flat().filter(callback(outer2_2[6]).isNotNullish);
-          const flatResult1 = mapped1.flat();
-          differenceResult1 = stateFromStores(outer2_2[5]).difference(found3, found4);
-          const obj3 = stateFromStores(outer2_2[5]);
-        }
-      })(id, id2, selected, onboardingResponses));
-      const tmp2 = (function getRoles(singleSelect, roleIds, selected, onboardingResponses) {
-        const callback = roleIds;
-        let closure_1 = onboardingResponses;
-        if (singleSelect.singleSelect) {
-          if (selected) {
-            const options = singleSelect.options;
-            const found = options.find((id) => onboardingResponses.includes(id.id));
-            roleIds = roleIds.roleIds;
-            if (null == roleIds) {
-              roleIds = [];
-            }
-            let roleIds1;
-            if (null != found) {
-              roleIds1 = found.roleIds;
-            }
-            if (null == roleIds1) {
-              roleIds1 = [];
-            }
-            const obj4 = stateFromStores(outer2_2[5]);
-            const differenceResult = stateFromStores(outer2_2[5]).difference(roleIds, roleIds1);
-            let roleIds2;
-            if (null != found) {
-              roleIds2 = found.roleIds;
-            }
-            if (null == roleIds2) {
-              roleIds2 = [];
-            }
-            let roleIds3 = roleIds.roleIds;
-            if (null == roleIds3) {
-              roleIds3 = [];
-            }
-            let differenceResult1 = stateFromStores(outer2_2[5]).difference(roleIds2, roleIds3);
-            let items = differenceResult;
-            const obj5 = stateFromStores(outer2_2[5]);
-          }
-          const obj = { addedRoleIds: items, removedRoleIds: differenceResult1 };
-          return obj;
-        }
-        if (selected) {
-          let roleIds4 = roleIds.roleIds;
-          if (null == roleIds4) {
-            roleIds4 = [];
-          }
-          differenceResult1 = [];
-          items = roleIds4;
-        } else {
-          const options1 = singleSelect.options;
-          const found1 = options1.filter((id) => onboardingResponses.includes(id.id));
-          const found2 = found1.filter((id) => id.id !== id.id);
-          const mapped = found1.map((roleIds) => roleIds.roleIds);
-          const found3 = mapped.flat().filter(callback(outer2_2[6]).isNotNullish);
-          const mapped1 = found2.map((roleIds) => roleIds.roleIds);
-          const flatResult = mapped.flat();
-          items = [];
-          const found4 = mapped1.flat().filter(callback(outer2_2[6]).isNotNullish);
-          const flatResult1 = mapped1.flat();
-          differenceResult1 = stateFromStores(outer2_2[5]).difference(found3, found4);
-          const obj3 = stateFromStores(outer2_2[5]);
-        }
-      })(id, id2, selected, onboardingResponses);
-      ({ addedChannelIds, removedChannelIds } = (function getChannels(arg0) {
-        let _prompt;
-        let closure_1;
-        let guildId;
-        let option;
-        let selected;
-        ({ guildId, prompt: _prompt, option } = arg0);
-        ({ selected, responses: closure_1 } = arg0);
-        if (_prompt.singleSelect) {
-          if (selected) {
-            const options = _prompt.options;
-            const found = options.find((id) => closure_1.includes(id.id));
-            let channelIds = option.channelIds;
-            if (null == channelIds) {
+          if (arg2) {
+            const options1 = singleSelect.options;
+            const found1 = options1.find((id) => onboardingResponses.includes(id.id));
+            let channelIds = roleIds.channelIds;
+            if (channelIds == null) {
               channelIds = [];
             }
             let channelIds1;
-            if (null != found) {
-              channelIds1 = found.channelIds;
+            if (found1 != null) {
+              channelIds1 = found1.channelIds;
             }
-            if (null == channelIds1) {
+            if (channelIds1 == null) {
               channelIds1 = [];
             }
-            const obj4 = stateFromStores(outer2_2[5]);
-            const differenceResult = stateFromStores(outer2_2[5]).difference(channelIds, channelIds1);
+            const obj10 = stateFromStores(outer1_2[5]);
+            const tmp21 = stateFromStores;
+            const tmp22 = outer1_2;
+            const differenceResult2 = stateFromStores(outer1_2[5]).difference(channelIds, channelIds1);
             let channelIds2;
-            if (null != found) {
-              channelIds2 = found.channelIds;
+            if (found1 != null) {
+              channelIds2 = found1.channelIds;
             }
-            if (null == channelIds2) {
+            if (channelIds2 == null) {
               channelIds2 = [];
             }
-            let channelIds3 = option.channelIds;
-            if (null == channelIds3) {
+            let channelIds3 = roleIds.channelIds;
+            if (channelIds3 == null) {
               channelIds3 = [];
             }
-            let differenceResult1 = stateFromStores(outer2_2[5]).difference(channelIds2, channelIds3);
-            let items1 = differenceResult;
-            const obj5 = stateFromStores(outer2_2[5]);
+            let differenceResult3 = tmp21(tmp22[5]).difference(channelIds2, channelIds3);
+            let items1 = differenceResult2;
+            const tmp21Result = tmp21(tmp22[5]);
           }
-          if (obj6.hasNotSetUpChannelOptIn(guildId)) {
+          if (obj12.hasNotSetUpChannelOptIn(tmp)) {
             const push = items1.push;
             const items = [];
-            HermesBuiltin.arraySpread(outer2_5.getDefaultChannelIds(guildId), 0);
+            HermesBuiltin.arraySpread(obj.getDefaultChannelIds(tmp), 0);
             HermesBuiltin.apply(items, items1);
           }
-          const obj = { addedChannelIds: items1, removedChannelIds: differenceResult1 };
-          return obj;
+          obj = {};
+          const merged = Object.assign(items1.reduce((arg0, id) => {
+            const obj = { flags: null };
+            const channelIdFlags = outer1_4.getChannelIdFlags(lib, id);
+            obj[0] = lib(outer1_2[10]).setFlag(channelIdFlags, outer1_6.OPT_IN_ENABLED, true);
+            arg0[id] = obj;
+            return arg0;
+          }, {}));
+          const merged1 = Object.assign(differenceResult3.reduce((arg0, id) => {
+            const obj = { flags: null };
+            const channelIdFlags = outer1_4.getChannelIdFlags(lib, id);
+            obj[0] = lib(outer1_2[10]).setFlag(channelIdFlags, outer1_6.OPT_IN_ENABLED, false);
+            arg0[id] = obj;
+            return arg0;
+          }, {}));
+          const obj14 = stateFromStores(outer1_2[9]);
+          const option = obj14.selectOption(tmp, singleSelect.id, roleIds.id, arg2);
+          obj12 = callback(outer1_2[7]);
+          obj = { type: "USER_GUILD_SETTINGS_CHANNEL_UPDATE_BULK", guildId: null, overrides: null };
+          obj[1] = tmp;
+          obj[2] = obj;
+          stateFromStores(outer1_2[4]).dispatch(obj);
+          const obj15 = stateFromStores(outer1_2[4]);
+          stateFromStores(outer1_2[9]).updateRolesLocal(tmp, items2, differenceResult1);
         }
-        if (selected) {
-          let channelIds4 = option.channelIds;
-          if (null == channelIds4) {
+        if (arg2) {
+          let channelIds4 = roleIds.channelIds;
+          if (channelIds4 == null) {
             channelIds4 = [];
           }
-          differenceResult1 = [];
+          differenceResult3 = [];
           items1 = channelIds4;
         } else {
-          const options1 = _prompt.options;
-          const found1 = options1.filter((id) => closure_1.includes(id.id));
-          const found2 = found1.filter((id) => option.id !== id.id);
-          const mapped = found1.map((channelIds) => channelIds.channelIds);
-          const found3 = mapped.flat().filter(callback(outer2_2[6]).isNotNullish);
-          const mapped1 = found2.map((channelIds) => channelIds.channelIds);
+          const options2 = singleSelect.options;
+          const found2 = options2.filter((id) => onboardingResponses.includes(id.id));
+          const found3 = found2.filter((id) => lib.id !== id.id);
+          const mapped = found2.map((channelIds) => channelIds.channelIds);
+          const found4 = mapped.flat().filter(callback(outer1_2[6]).isNotNullish);
+          const mapped1 = found3.map((channelIds) => channelIds.channelIds);
           const flatResult = mapped.flat();
           items1 = [];
-          const found4 = mapped1.flat().filter(callback(outer2_2[6]).isNotNullish);
+          const found5 = mapped1.flat().filter(callback(outer1_2[6]).isNotNullish);
           const flatResult1 = mapped1.flat();
-          differenceResult1 = stateFromStores(outer2_2[5]).difference(found3, found4);
-          const obj3 = stateFromStores(outer2_2[5]);
+          differenceResult3 = stateFromStores(outer1_2[5]).difference(found4, found5);
+          const obj9 = stateFromStores(outer1_2[5]);
         }
-      })(obj));
-      obj = {};
-      const merged = Object.assign(addedChannelIds.reduce((arg0, arg1) => {
-        const obj = {};
-        const channelIdFlags = outer2_4.getChannelIdFlags(outer1_0, arg1);
-        obj.flags = callback(outer2_2[10]).setFlag(channelIdFlags, outer2_6.OPT_IN_ENABLED, true);
-        arg0[arg1] = obj;
-        return arg0;
-      }, {}));
-      const merged1 = Object.assign(removedChannelIds.reduce((arg0, arg1) => {
-        const obj = {};
-        const channelIdFlags = outer2_4.getChannelIdFlags(outer1_0, arg1);
-        obj.flags = callback(outer2_2[10]).setFlag(channelIdFlags, outer2_6.OPT_IN_ENABLED, false);
-        arg0[arg1] = obj;
-        return arg0;
-      }, {}));
-      const tmp3 = (function getChannels(arg0) {
-        let _prompt;
-        let closure_1;
-        let guildId;
-        let option;
-        let selected;
-        ({ guildId, prompt: _prompt, option } = arg0);
-        ({ selected, responses: closure_1 } = arg0);
-        if (_prompt.singleSelect) {
-          if (selected) {
-            const options = _prompt.options;
-            const found = options.find((id) => closure_1.includes(id.id));
-            let channelIds = option.channelIds;
-            if (null == channelIds) {
-              channelIds = [];
-            }
-            let channelIds1;
-            if (null != found) {
-              channelIds1 = found.channelIds;
-            }
-            if (null == channelIds1) {
-              channelIds1 = [];
-            }
-            const obj4 = stateFromStores(outer2_2[5]);
-            const differenceResult = stateFromStores(outer2_2[5]).difference(channelIds, channelIds1);
-            let channelIds2;
-            if (null != found) {
-              channelIds2 = found.channelIds;
-            }
-            if (null == channelIds2) {
-              channelIds2 = [];
-            }
-            let channelIds3 = option.channelIds;
-            if (null == channelIds3) {
-              channelIds3 = [];
-            }
-            let differenceResult1 = stateFromStores(outer2_2[5]).difference(channelIds2, channelIds3);
-            let items1 = differenceResult;
-            const obj5 = stateFromStores(outer2_2[5]);
-          }
-          if (obj6.hasNotSetUpChannelOptIn(guildId)) {
-            const push = items1.push;
-            const items = [];
-            HermesBuiltin.arraySpread(outer2_5.getDefaultChannelIds(guildId), 0);
-            HermesBuiltin.apply(items, items1);
-          }
-          const obj = { addedChannelIds: items1, removedChannelIds: differenceResult1 };
-          return obj;
+      }
+      if (arg2) {
+        let roleIds4 = roleIds.roleIds;
+        if (roleIds4 == null) {
+          roleIds4 = [];
         }
-        if (selected) {
-          let channelIds4 = option.channelIds;
-          if (null == channelIds4) {
-            channelIds4 = [];
-          }
-          differenceResult1 = [];
-          items1 = channelIds4;
-        } else {
-          const options1 = _prompt.options;
-          const found1 = options1.filter((id) => closure_1.includes(id.id));
-          const found2 = found1.filter((id) => option.id !== id.id);
-          const mapped = found1.map((channelIds) => channelIds.channelIds);
-          const found3 = mapped.flat().filter(callback(outer2_2[6]).isNotNullish);
-          const mapped1 = found2.map((channelIds) => channelIds.channelIds);
-          const flatResult = mapped.flat();
-          items1 = [];
-          const found4 = mapped1.flat().filter(callback(outer2_2[6]).isNotNullish);
-          const flatResult1 = mapped1.flat();
-          differenceResult1 = stateFromStores(outer2_2[5]).difference(found3, found4);
-          const obj3 = stateFromStores(outer2_2[5]);
-        }
-      })(obj);
-      const option = stateFromStores(outer1_2[9]).selectOption(closure_0, id.id, id2.id, selected);
-      let obj3 = stateFromStores(outer1_2[9]);
-      obj = { type: "USER_GUILD_SETTINGS_CHANNEL_UPDATE_BULK", guildId: closure_0, overrides: obj };
-      stateFromStores(outer1_2[4]).dispatch(obj);
-      let obj4 = stateFromStores(outer1_2[4]);
-      stateFromStores(outer1_2[9]).updateRolesLocal(closure_0, addedRoleIds, removedRoleIds);
+        differenceResult1 = [];
+        items2 = roleIds4;
+      } else {
+        const options3 = singleSelect.options;
+        const found6 = options3.filter((id) => onboardingResponses.includes(id.id));
+        const found7 = found6.filter((id) => lib.id !== id.id);
+        const mapped2 = found6.map((roleIds) => roleIds.roleIds);
+        const found8 = mapped2.flat().filter(callback(outer1_2[6]).isNotNullish);
+        const mapped3 = found7.map((roleIds) => roleIds.roleIds);
+        const flatResult2 = mapped2.flat();
+        items2 = [];
+        const found9 = mapped3.flat().filter(callback(outer1_2[6]).isNotNullish);
+        const flatResult3 = mapped3.flat();
+        differenceResult1 = stateFromStores(outer1_2[5]).difference(found8, found9);
+        const obj4 = stateFromStores(outer1_2[5]);
+      }
     }, items4)
   };
   items4 = [arg0];

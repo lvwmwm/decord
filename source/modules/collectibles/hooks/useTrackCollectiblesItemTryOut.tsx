@@ -1,36 +1,37 @@
-// Module ID: 7915
-// Function ID: 62918
+// Module ID: 7940
+// Function ID: 7941
 // Name: useTrackCollectiblesItemTryOut
-// Dependencies: [31, 5780, 653, 1852, 1877, 624, 675, 5792, 2]
+// Dependencies: [19, 5798, 676, 1876, 1901, 647, 698, 5810, 2]
 // Exports: default
 
-// Module 7915 (useTrackCollectiblesItemTryOut)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 7940 (useTrackCollectiblesItemTryOut)
+import updateCategoriesAndProducts from "updateCategoriesAndProducts";
 import { AnalyticEvents } from "ME";
 import GuildFeatures from "GuildFeatures";
 
 let AnalyticsPremiumFeatureNames;
 let closure_6;
-require("result").useCallback;
+require("noop").useCallback;
 ({ AnalyticsPremiumFeatureNames, AnalyticsPremiumFeatureTiers: closure_6 } = GuildFeatures);
-let obj = { [require(1877).CollectiblesItemType.AVATAR_DECORATION]: AnalyticsPremiumFeatureNames.AVATAR_DECORATION, [require(1877).CollectiblesItemType.PROFILE_EFFECT]: AnalyticsPremiumFeatureNames.PROFILE_EFFECT, [require(1877).CollectiblesItemType.PROFILE_FRAME]: undefined, [require(1877).CollectiblesItemType.NAMEPLATE]: undefined, [require(1877).CollectiblesItemType.NONE]: undefined, [require(1877).CollectiblesItemType.BUNDLE]: undefined, [require(1877).CollectiblesItemType.VARIANTS_GROUP]: undefined, [require(1877).CollectiblesItemType.EXTERNAL_SKU]: undefined };
+let obj = { [require(1901).CollectiblesItemType.AVATAR_DECORATION]: AnalyticsPremiumFeatureNames.AVATAR_DECORATION, [require(1901).CollectiblesItemType.PROFILE_EFFECT]: AnalyticsPremiumFeatureNames.PROFILE_EFFECT, [require(1901).CollectiblesItemType.PROFILE_FRAME]: undefined, [require(1901).CollectiblesItemType.NAMEPLATE]: undefined, [require(1901).CollectiblesItemType.NONE]: undefined, [require(1901).CollectiblesItemType.BUNDLE]: undefined, [require(1901).CollectiblesItemType.VARIANTS_GROUP]: undefined, [require(1901).CollectiblesItemType.EXTERNAL_SKU]: undefined };
 const result = require("ME").fileFinishedImporting("modules/collectibles/hooks/useTrackCollectiblesItemTryOut.tsx");
 
 export default function useTrackCollectiblesItemTryOut(arg0) {
   const _require = arg0;
-  const items = [_isNativeReflectConstruct];
-  const stateFromStores = _require(624).useStateFromStores(items, () => outer1_4.products);
+  const items = [updateCategoriesAndProducts];
+  const stateFromStores = _require(647).useStateFromStores(items, () => products.products);
   const items1 = [stateFromStores, arg0];
   return useCallback((skuId) => {
     const value = stateFromStores.get(skuId.skuId);
     let obj = stateFromStores(outer1_2[6]);
-    obj = { feature_name: outer1_7[skuId.type], feature_tier: callback(outer1_2[7]).isPremiumCollectiblesProduct(value) ? outer1_6.FREE : outer1_6.PREMIUM_STANDARD };
+    obj = { feature_name: outer1_7[skuId.type], feature_tier: null, feature_selection: null, location_stack: null };
+    obj[1] = callback(outer1_2[7]).isPremiumCollectiblesProduct(value) ? outer1_6.FREE : outer1_6.PREMIUM_STANDARD;
     let name;
-    if (null != value) {
+    if (value != null) {
       name = value.name;
     }
-    obj.feature_selection = name;
-    obj.location_stack = callback;
+    obj[2] = name;
+    obj[3] = callback;
     obj.track(outer1_5.PREMIUM_FEATURE_TRY_OUT, obj);
   }, items1);
 };

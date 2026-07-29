@@ -1,11 +1,10 @@
 // Module ID: 12038
-// Function ID: 92906
+// Function ID: 12039
 // Name: registerAsset
-// Dependencies: [1217]
+// Dependencies: [1241]
 
 // Module 12038 (registerAsset)
 import registerAsset from "registerAsset";
 
-const obj = { __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "3707ecbdc52255079d75d7398451480d", name: "RibbonIcon", type: "png" };
 
-export default registerAsset.registerAsset(obj);
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "7f6039bf3e89b748bf345decabdfb1bd", name: "SoundboardSlashIcon", type: "png" });

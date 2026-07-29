@@ -1,16 +1,16 @@
-// Module ID: 15677
-// Function ID: 120714
+// Module ID: 15712
+// Function ID: 15713
 // Name: useSpamMessageRequestCount
-// Dependencies: [5638, 566, 2]
+// Dependencies: [5656, 589, 2]
 // Exports: useSpamMessageRequestCount
 
-// Module 15677 (useSpamMessageRequestCount)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 15712 (useSpamMessageRequestCount)
+import processChannel from "processChannel";
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/message_request/hooks/useSpamMessageRequestsCount.tsx");
 
 export const useSpamMessageRequestCount = function useSpamMessageRequestCount() {
-  const items = [_isNativeReflectConstruct];
-  return require(566) /* initialize */.useStateFromStores(items, () => outer1_2.getSpamChannelsCount());
+  const items = [processChannel];
+  return require(589) /* initialize */.useStateFromStores(items, () => spamChannelsCount.getSpamChannelsCount());
 };

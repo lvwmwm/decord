@@ -1,36 +1,36 @@
-// Module ID: 15284
-// Function ID: 116179
+// Module ID: 15317
+// Function ID: 15318
 // Name: ForYouLoadMore
-// Dependencies: [31, 27, 5906, 33, 4165, 624, 4578, 1212, 2]
+// Dependencies: [19, 17, 5925, 21, 4189, 647, 4600, 1236, 2]
 // Exports: ForYouLoadMore
 
-// Module 15284 (ForYouLoadMore)
-import "result";
+// Module 15317 (ForYouLoadMore)
+import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import _validate from "_validate";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_2;
-let closure_3;
+let c3;
+let obj1;
 const require = arg1;
-({ ActivityIndicator: closure_2, View: closure_3 } = get_ActivityIndicator);
-let closure_6 = _createForOfIteratorHelperLoose.createStyles({ container: { alignItems: "center", flexDirection: "row", justifyContent: "center", marginTop: 8, marginBottom: 24, marginHorizontal: 16, height: 42 } });
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/notification_center/native/ForYouLoadMore.tsx");
+({ ActivityIndicator: obj1, View: c3 } = get_ActivityIndicator);
+let closure_6 = createCacheKey.createStyles({ container: { alignItems: "center", flexDirection: "row", justifyContent: "center", marginTop: 8, marginBottom: 24, marginHorizontal: 16, height: 42 } });
+const result = require("_validate").fileFinishedImporting("modules/notification_center/native/ForYouLoadMore.tsx");
 
 export const ForYouLoadMore = function ForYouLoadMore(onPressLoad) {
-  let obj = require(624) /* defaultAreStatesEqual */;
-  const items = [_isNativeReflectConstruct];
-  obj = { style: callback().container };
-  if (obj.useStateFromStores(items, () => outer1_4.loading)) {
+  let obj = require(647) /* defaultAreStatesEqual */;
+  const items = [_validate];
+  obj = { style: callback().container, children: null };
+  if (obj.useStateFromStores(items, () => loading.loading)) {
     let tmp4Result = tmp4(closure_2, {});
   } else {
-    obj = { variant: "secondary", grow: true, size: "md" };
-    const intl = require(1212) /* getSystemLocale */.intl;
-    obj.text = intl.string(require(1212) /* getSystemLocale */.t["Q/LSXp"]);
-    obj.onPress = onPressLoad.onPressLoad;
-    tmp4Result = tmp4(require(4578) /* Button */.Button, obj);
+    obj = { variant: "secondary", grow: true, size: "md", text: null, onPress: null };
+    const intl = tmp2(1236).intl;
+    obj[3] = intl.string(tmp2(1236).t["Q/LSXp"]);
+    obj[4] = onPressLoad.onPressLoad;
+    tmp4Result = tmp4(tmp2(4600).Button, obj);
   }
-  obj.children = tmp4Result;
-  return <closure_3 style={callback().container} />;
+  obj[1] = tmp4Result;
+  return <closure_3 style={callback().container}>{null}</closure_3>;
 };

@@ -1,84 +1,100 @@
-// Module ID: 14794
-// Function ID: 112617
+// Module ID: 14820
+// Function ID: 14821
 // Name: ShopSkipCategoriesFilter
-// Dependencies: [31, 27, 5780, 33, 4165, 689, 566, 4576, 4161, 5779, 2]
+// Dependencies: [19, 17, 5798, 21, 4189, 712, 589, 4598, 4185, 5797, 2]
 // Exports: ShopSkipCategoriesFilter
 
-// Module 14794 (ShopSkipCategoriesFilter)
-import "result";
+// Module 14820 (ShopSkipCategoriesFilter)
+import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import updateCategoriesAndProducts from "updateCategoriesAndProducts";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_2;
-let closure_3;
-let closure_5;
+let c3;
+let c5;
 let closure_6;
+let obj1;
 const require = arg1;
-({ View: closure_2, Pressable: closure_3 } = get_ActivityIndicator);
-({ jsx: closure_5, jsxs: closure_6 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { paddingVertical: require("_createForOfIteratorHelperLoose").space.PX_12, paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16 };
-_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.label = { marginBottom: require("_createForOfIteratorHelperLoose").space.PX_8 };
-let obj2 = { flexDirection: "row", alignItems: "center", gap: require("_createForOfIteratorHelperLoose").space.PX_12 };
-_createForOfIteratorHelperLoose.stepperContainer = obj2;
-let obj3 = { width: 32, height: 32, borderRadius: require("_createForOfIteratorHelperLoose").radii.xs, backgroundColor: require("_createForOfIteratorHelperLoose").colors.CONTROL_OVERLAY_SECONDARY_BACKGROUND_DEFAULT, justifyContent: "center", alignItems: "center" };
-_createForOfIteratorHelperLoose.stepperButton = obj3;
-_createForOfIteratorHelperLoose.stepperButtonDisabled = { opacity: 0.5 };
-_createForOfIteratorHelperLoose.valueText = { minWidth: 40, textAlign: "center" };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-let obj1 = { marginBottom: require("_createForOfIteratorHelperLoose").space.PX_8 };
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/collectibles/native/tooling/ShopSkipCategoriesFilter.tsx");
+({ View: obj1, Pressable: c3 } = get_ActivityIndicator);
+({ jsx: c5, jsxs: closure_6 } = jsxProd);
+createCacheKey = { container: null, label: null, stepperContainer: null, stepperButton: null, stepperButtonDisabled: null, valueText: null };
+createCacheKey = { paddingVertical: require("Themes").space.PX_12, paddingHorizontal: require("Themes").space.PX_16 };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { marginBottom: require("Themes").space.PX_8 };
+obj1 = { marginBottom: require("Themes").space.PX_8 };
+createCacheKey[2] = { flexDirection: "row", alignItems: "center", gap: require("Themes").space.PX_12 };
+let obj2 = { flexDirection: "row", alignItems: "center", gap: require("Themes").space.PX_12 };
+createCacheKey[3] = { width: 32, height: 32, borderRadius: require("Themes").radii.xs, backgroundColor: require("Themes").colors.CONTROL_OVERLAY_SECONDARY_BACKGROUND_DEFAULT, justifyContent: "center", alignItems: "center" };
+createCacheKey[4] = { opacity: 0.5 };
+createCacheKey[5] = { minWidth: 40, textAlign: "center" };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let obj3 = { width: 32, height: 32, borderRadius: require("Themes").radii.xs, backgroundColor: require("Themes").colors.CONTROL_OVERLAY_SECONDARY_BACKGROUND_DEFAULT, justifyContent: "center", alignItems: "center" };
+const result = require("updateCategoriesAndProducts").fileFinishedImporting("modules/collectibles/native/tooling/ShopSkipCategoriesFilter.tsx");
 
 export const ShopSkipCategoriesFilter = function ShopSkipCategoriesFilter() {
-  const tmp = _createForOfIteratorHelperLoose();
-  let obj = stateFromStores(566);
-  const items = [_isNativeReflectConstruct];
-  stateFromStores = obj.useStateFromStores(items, () => outer1_4.skipNumCategories);
-  obj = { style: tmp.container };
-  obj = { spacing: 8 };
-  const obj1 = { variant: "text-md/normal", style: tmp.label, children: "Hide first # of categories" };
-  const items1 = [callback(stateFromStores(4161).Text, obj1), ];
-  const obj2 = { style: tmp.stepperContainer };
-  const obj3 = {};
+  const tmp = createCacheKey();
+  let obj = stateFromStores(589);
+  const items = [updateCategoriesAndProducts];
+  stateFromStores = obj.useStateFromStores(items, () => skipNumCategories.skipNumCategories);
+  obj = { style: tmp.container, children: null };
+  obj = { variant: "text-md/normal", style: tmp.label, children: "Hide first # of categories" };
+  const items1 = [callback(stateFromStores(4185).Text, obj), ];
+  const obj1 = { style: tmp.stepperContainer, children: null };
   const items2 = [tmp.stepperButton, ];
-  let stepperButtonDisabled = tmp3;
+  let stepperButtonDisabled = tmp5;
   if (stateFromStores <= 0) {
     stepperButtonDisabled = tmp.stepperButtonDisabled;
   }
   items2[1] = stepperButtonDisabled;
-  obj3.style = items2;
-  obj3.onPress = function onPress() {
-    if (stateFromStores > 0) {
-      stateFromStores(outer1_1[9]).setSkipNumCategories(stateFromStores - 1);
-      const obj = stateFromStores(outer1_1[9]);
-    }
-  };
-  obj3.disabled = stateFromStores <= 0;
-  obj3.children = callback(stateFromStores(4161).Text, { variant: "text-lg/semibold", children: "\u2212" });
-  const items3 = [callback(closure_3, obj3), callback(stateFromStores(4161).Text, { variant: "text-md/semibold", style: tmp.valueText, children: stateFromStores }), ];
-  const obj5 = {};
+  const items3 = [
+    callback(closure_3, {
+      style: items2,
+      onPress() {
+        if (stateFromStores > 0) {
+          stateFromStores(outer1_1[9]).setSkipNumCategories(tmp - 1);
+          const obj = stateFromStores(outer1_1[9]);
+        }
+      },
+      disabled: stateFromStores <= 0,
+      children: callback(stateFromStores(4185).Text, { variant: "text-lg/semibold", children: "\u2212" })
+    }),
+    callback(stateFromStores(4185).Text, { variant: "text-md/semibold", style: tmp.valueText, children: stateFromStores }),
+
+  ];
   const items4 = [tmp.stepperButton, ];
-  let stepperButtonDisabled2 = tmp4;
+  let stepperButtonDisabled2 = tmp6;
   if (stateFromStores >= 100) {
     stepperButtonDisabled2 = tmp.stepperButtonDisabled;
   }
-  items4[1] = stepperButtonDisabled2;
-  obj5.style = items4;
-  obj5.onPress = function onPress() {
-    if (stateFromStores < 100) {
-      stateFromStores(outer1_1[9]).setSkipNumCategories(stateFromStores + 1);
-      const obj = stateFromStores(outer1_1[9]);
-    }
+  const obj4 = { spacing: 8, children: null };
+  const obj2 = {
+    style: items2,
+    onPress() {
+      if (stateFromStores > 0) {
+        stateFromStores(outer1_1[9]).setSkipNumCategories(tmp - 1);
+        const obj = stateFromStores(outer1_1[9]);
+      }
+    },
+    disabled: stateFromStores <= 0,
+    children: callback(stateFromStores(4185).Text, { variant: "text-lg/semibold", children: "\u2212" })
   };
-  obj5.disabled = stateFromStores >= 100;
-  obj5.children = callback(stateFromStores(4161).Text, { variant: "text-lg/semibold", children: "+" });
-  items3[2] = callback(closure_3, obj5);
-  obj2.children = items3;
-  items1[1] = closure_6(closure_2, obj2);
-  obj.children = items1;
-  obj.children = closure_6(stateFromStores(4576).Stack, obj);
+  const obj3 = { variant: "text-md/semibold", style: tmp.valueText, children: stateFromStores };
+  items4[1] = stepperButtonDisabled2;
+  items3[2] = callback(closure_3, {
+    style: items4,
+    onPress() {
+      if (stateFromStores < 100) {
+        stateFromStores(outer1_1[9]).setSkipNumCategories(tmp + 1);
+        const obj = stateFromStores(outer1_1[9]);
+      }
+    },
+    disabled: stateFromStores >= 100,
+    children: callback(stateFromStores(4185).Text, { variant: "text-lg/semibold", children: "+" })
+  });
+  obj1[1] = items3;
+  items1[1] = closure_6(closure_2, obj1);
+  obj4[1] = items1;
+  obj[1] = closure_6(stateFromStores(4598).Stack, obj4);
   return callback(closure_2, obj);
 };

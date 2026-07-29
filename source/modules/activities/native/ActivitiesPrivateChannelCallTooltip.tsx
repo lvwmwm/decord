@@ -1,40 +1,37 @@
-// Module ID: 11852
-// Function ID: 91828
-// Name: items
-// Dependencies: [31, 27, 4157, 4190, 33, 4165, 566, 4026, 4166, 1273, 1212, 4578, 2]
+// Module ID: 11877
+// Function ID: 11878
+// Name: ActivitiesPrivateChannelCallTooltip
+// Dependencies: [19, 17, 4181, 4214, 21, 4189, 589, 4050, 4190, 1297, 1236, 4600, 2]
 // Exports: default
 
-// Module 11852 (items)
-import "result";
+// Module 11877 (ActivitiesPrivateChannelCallTooltip)
+import "noop";
 import { View } from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
 import { EMBEDDED_ACTIVITIES_BLOG_POST_URL as closure_5 } from "items3";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
 const require = arg1;
 let closure_7 = { duration: 500 };
-_createForOfIteratorHelperLoose = { marginLeft: 200, top: 9, position: "relative", borderTopWidth: 0, borderRightWidth: 0, borderBottomWidth: 16, borderLeftWidth: 16 };
 let items = [{ rotateZ: "225deg" }];
-_createForOfIteratorHelperLoose.transform = items;
-let closure_8 = _createForOfIteratorHelperLoose.createStyles({ arrow: _createForOfIteratorHelperLoose, tooltip: { padding: 16 }, tooltipContainer: { position: "absolute", width: 280, zIndex: 2, right: -48, top: -8 }, tooltipText: { textAlign: "center", fontSize: 14 }, closeButtonWrapper: { marginTop: 14 } });
+let closure_8 = createCacheKey.createStyles({ arrow: { marginLeft: 200, top: 9, position: "relative", borderTopWidth: 0, borderRightWidth: 0, borderBottomWidth: 16, borderLeftWidth: 16, transform: items }, tooltip: { padding: 16 }, tooltipContainer: { position: "absolute", width: 280, zIndex: 2, right: -48, top: -8 }, tooltipText: { textAlign: "center", fontSize: 14 }, closeButtonWrapper: { marginTop: 14 } });
 let closure_9 = { code: "function ActivitiesPrivateChannelCallTooltipTsx1(){const{withRepeat,withSequence,withTiming,OFFSET,translateBounceOffset,TIMING_CONFIG}=this.__closure;return{transform:[{translateY:withRepeat(withSequence(withTiming(OFFSET,{duration:0}),withTiming(OFFSET+translateBounceOffset,TIMING_CONFIG),withTiming(OFFSET,TIMING_CONFIG)),10)}]};}" };
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/activities/native/ActivitiesPrivateChannelCallTooltip.tsx");
+const result = require("maybeApplyNoTextColorForLightCustomTheme").fileFinishedImporting("modules/activities/native/ActivitiesPrivateChannelCallTooltip.tsx");
 
 export default function ActivitiesPrivateChannelCallTooltip(onClosePress) {
   let num;
   const tmp = callback();
-  let obj = num(566);
-  let items = [_isNativeReflectConstruct];
+  let obj = num(589);
+  let items = [maybeApplyNoTextColorForLightCustomTheme];
   num = 4;
-  if (obj.useStateFromStores(items, () => outer1_4.useReducedMotion)) {
+  if (obj.useStateFromStores(items, () => useReducedMotion.useReducedMotion)) {
     num = 0;
   }
-  let obj1 = num(4026);
   class T {
     constructor() {
-      obj = {};
-      obj = {};
+      obj = { transform: null };
+      obj = { translateY: null };
       obj3 = c0(outer1_2[7]);
       obj4 = c0(outer1_2[7]);
       obj5 = c0(outer1_2[8]);
@@ -42,33 +39,33 @@ export default function ActivitiesPrivateChannelCallTooltip(onClosePress) {
       obj6 = c0(outer1_2[8]);
       withTimingResult1 = obj6.withTiming(40 + c0, outer1_7);
       obj7 = c0(outer1_2[8]);
-      obj.translateY = obj3.withRepeat(obj4.withSequence(withTimingResult, withTimingResult1, obj7.withTiming(40, outer1_7)), 10);
+      obj[0] = obj3.withRepeat(obj4.withSequence(withTimingResult, withTimingResult1, obj7.withTiming(40, outer1_7)), 10);
       items = [];
       items[0] = obj;
-      obj.transform = items;
+      obj[0] = items;
       return obj;
     }
   }
-  obj = { withRepeat: num(4026).withRepeat, withSequence: num(4026).withSequence, withTiming: num(4166).withTiming, OFFSET: 40, translateBounceOffset: num, TIMING_CONFIG: closure_7 };
+  obj = { withRepeat: tmp2(4050).withRepeat, withSequence: tmp2(4050).withSequence, withTiming: tmp2(4190).withTiming, OFFSET: 40, translateBounceOffset: num, TIMING_CONFIG: closure_7 };
   T.__closure = obj;
   T.__workletHash = 4621705591670;
   T.__initData = closure_9;
-  const animatedStyle = obj1.useAnimatedStyle(T);
-  obj = { style: items1 };
+  const animatedStyle = num(4050).useAnimatedStyle(T);
+  obj = { style: items1, children: null };
   items1 = [tmp.tooltipContainer, animatedStyle];
-  obj1 = { containerStyle: tmp.tooltip, labelStyle: tmp.tooltipText, arrowStyle: items2 };
+  const obj1 = { containerStyle: tmp.tooltip, labelStyle: tmp.tooltipText, arrowStyle: items2, label: null, title: null, children: null };
   items2 = [tmp.arrow];
-  const intl = num(1212).intl;
-  obj1.label = intl.format(num(1212).t.xAW71b, { helpdeskUrl: closure_5 });
-  const intl2 = num(1212).intl;
-  obj1.title = intl2.string(num(1212).t.HOPqzR);
-  let obj3 = { style: tmp.closeButtonWrapper };
+  const intl = tmp2(1236).intl;
+  obj1[3] = intl.format(num(1236).t.xAW71b, { helpdeskUrl: closure_5 });
+  const intl2 = tmp2(1236).intl;
+  obj1[4] = intl2.string(num(1236).t.HOPqzR);
+  let obj3 = { style: tmp.closeButtonWrapper, children: null };
   let obj4 = { text: null, onPress: null, variant: "secondary", size: "sm", grow: true };
-  const intl3 = num(1212).intl;
-  obj4.text = intl3.string(num(1212).t["NX+WJN"]);
-  obj4.onPress = onClosePress.onClosePress;
-  obj3.children = jsx(num(4578).Button, { text: null, onPress: null, variant: "secondary", size: "sm", grow: true });
-  obj1.children = <View style={tmp.closeButtonWrapper} />;
-  obj.children = jsx(num(1273).Tooltip, { containerStyle: tmp.tooltip, labelStyle: tmp.tooltipText, arrowStyle: items2 });
-  return jsx(importDefault(4026).View, { style: items1 });
+  const intl3 = tmp2(1236).intl;
+  obj4[0] = intl3.string(num(1236).t["NX+WJN"]);
+  obj4[1] = onClosePress.onClosePress;
+  obj3[1] = jsx(num(4600).Button, { text: null, onPress: null, variant: "secondary", size: "sm", grow: true });
+  obj1[5] = <View style={tmp.closeButtonWrapper}>{null}</View>;
+  obj[1] = jsx(num(1297).Tooltip, { containerStyle: tmp.tooltip, labelStyle: tmp.tooltipText, arrowStyle: items2, label: null, title: null, children: null });
+  return jsx(importDefault(4050).View, { style: items1, children: null });
 };

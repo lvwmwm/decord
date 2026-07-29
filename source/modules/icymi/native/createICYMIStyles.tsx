@@ -1,18 +1,18 @@
-// Module ID: 15289
-// Function ID: 116227
+// Module ID: 15322
+// Function ID: 15323
 // Name: createICYMIStyles
-// Dependencies: [31, 4165, 15290, 2]
+// Dependencies: [19, 4189, 15323, 2]
 // Exports: createICYMIStyles
 
-// Module 15289 (createICYMIStyles)
-import result from "result";
+// Module 15322 (createICYMIStyles)
+import noop from "noop";
 
 const require = arg1;
-const result = require("useICYMIContextConstructor").fileFinishedImporting("modules/icymi/native/createICYMIStyles.tsx");
+const result = require("context").fileFinishedImporting("modules/icymi/native/createICYMIStyles.tsx");
 
-export const createICYMIStyles = function createICYMIStyles(_createForOfIteratorHelperLoose) {
-  _require = _require(4165).createStyles(_createForOfIteratorHelperLoose);
-  return (arg0) => {
+export const createICYMIStyles = function createICYMIStyles(createCacheKey) {
+  _require = _require(4189).createStyles(createCacheKey);
+  return () => {
     const items = [...arguments];
     const useContext = outer1_2.useContext;
     const items1 = [useContext(callback(outer1_1[2]).ICYMIContext), ...items];

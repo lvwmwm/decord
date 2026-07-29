@@ -1,60 +1,62 @@
-// Module ID: 11934
-// Function ID: 92202
-// Name: getStyleConfig
-// Dependencies: [31, 27, 1922, 1918, 1838, 5545, 653, 1455, 33, 4165, 3869, 689, 4161, 1212, 11935, 566, 4974, 21, 9740, 5548, 11936, 1273, 8176, 5497, 8083, 11937, 8335, 4133, 4017, 1198, 5617, 4024, 1555, 11938, 4578, 5544, 2]
+// Module ID: 11958
+// Function ID: 11959
+// Name: Heading
+// Dependencies: [19, 17, 1946, 1942, 1862, 5563, 676, 1479, 21, 4189, 3893, 712, 4185, 1236, 11959, 589, 4996, 11, 9762, 5566, 11960, 1297, 8200, 5515, 8107, 11961, 8359, 4157, 4041, 1222, 5635, 4048, 1579, 11962, 4600, 5562, 2]
 // Exports: default
 
-// Module 11934 (getStyleConfig)
-import getHighestActiveScreenIndex from "getHighestActiveScreenIndex";
-import { View } from "showActionSheet";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_6 from "_isNativeReflectConstruct";
-import closure_7 from "_createForOfIteratorHelperLoose";
+// Module 11958 (Heading)
+import GuildIconSizes from "GuildIconSizes";
+import { View } from "DISCORD_EPOCH";
+import _getSystemLocale from "_getSystemLocale";
+import trackCommunicationDisabled from "trackCommunicationDisabled";
+import createGuildRecordFromRust from "createGuildRecordFromRust";
 import ARBITRARY_LARGE_OFFSET from "ARBITRARY_LARGE_OFFSET";
 import { Routes } from "ME";
 import { AppLauncherRouteName } from "APP_LAUNCHER_BUILT_IN_SECTION_ICON";
-import jsxProd from "module_11938";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import jsxProd from "Button";
+import createCacheKey from "createCacheKey";
 
-let closure_11;
+let UserProfileThemeTypes;
 let closure_12;
-let closure_13;
+let map1;
+let metroImportAll;
+let unpackModuleId;
 const require = arg1;
-function getStyleConfig(arg0) {
+function Heading(children) {
+  let headingSpacing;
+  let headingVariant;
+  const themeType = children.themeType;
   let tmp;
-  if (null != arg0) {
-    tmp = table[arg0];
+  if (null != themeType) {
+    tmp = dependencyMap[themeType];
   }
-  if (null == tmp) {
+  if (tmp == null) {
     tmp = closure_14;
   }
-  return tmp;
-}
-function Heading(themeType) {
-  const tmp = getStyleConfig(themeType.themeType);
-  let headingVariant = tmp.headingVariant;
-  let obj = require(3869) /* map */;
-  const token = obj.useToken(importDefault(689).modules.mobile.USER_PROFILE_ABOUT_ME_HEADING_TEXT_STYLE);
-  obj = { accessibilityRole: "header", variant: null, color: "user-profile-about-me-heading-text" };
-  if (null != token) {
-    headingVariant = token;
+  ({ headingVariant, headingSpacing } = tmp);
+  let variant = require(3893) /* map */.useToken(importDefault(712).modules.mobile.USER_PROFILE_ABOUT_ME_HEADING_TEXT_STYLE);
+  if (variant == null) {
+    variant = headingVariant;
   }
-  obj.variant = headingVariant;
-  obj.style = { marginBottom: tmp.headingSpacing };
-  obj.children = themeType.children;
-  return closure_11(require(4161) /* Text */.Text, obj);
+  return closure_11(require(4185) /* Text */.Text, { accessibilityRole: "header", variant, color: "user-profile-about-me-heading-text", style: { marginBottom }, children: children.children });
 }
-function TextWithIcon(arg0) {
+function TextWithIcon(themeType) {
   let accessibilityLabel;
   let children;
   let icon;
-  let themeType;
-  ({ icon, children, themeType, accessibilityLabel } = arg0);
-  const tmp2 = getStyleConfig(themeType);
-  const obj = { style: items, accessible: true, accessibilityLabel };
+  themeType = themeType.themeType;
+  ({ icon, children, accessibilityLabel } = themeType);
+  let tmp2;
+  if (null != themeType) {
+    tmp2 = dependencyMap[themeType];
+  }
+  if (tmp2 == null) {
+    tmp2 = closure_14;
+  }
+  const obj = { style: items, accessible: true, accessibilityLabel, children: null };
   items = [callback3().textWithIcon, { columnGap: tmp2.columnGap }];
-  const items1 = [icon, callback(require(4161) /* Text */.Text, { variant: tmp2.textVariant, color: "text-default", children })];
-  obj.children = items1;
+  const items1 = [icon, callback(require(4185) /* Text */.Text, { variant: tmp2.textVariant, color: "text-default", children })];
+  obj[3] = items1;
   return callback2(View, obj);
 }
 function Bio(arg0) {
@@ -64,27 +66,39 @@ function Bio(arg0) {
   let themeType;
   let userId;
   ({ displayProfile, themeType } = arg0);
+  let tmp;
   ({ userId, pendingBio, lineClamp } = arg0);
+  if (null != themeType) {
+    tmp = dependencyMap[themeType];
+  }
+  if (tmp == null) {
+    tmp = closure_14;
+  }
   let previewBio;
-  if (null != displayProfile) {
+  if (displayProfile != null) {
     previewBio = displayProfile.getPreviewBio(pendingBio);
   }
-  let tmp2 = null;
+  let tmp4 = null;
   if (null != previewBio) {
-    tmp2 = null;
+    tmp4 = null;
     if ("" !== previewBio) {
-      let obj = {};
-      obj = { themeType };
-      const intl = require(1212) /* getSystemLocale */.intl;
-      obj.children = intl.string(require(1212) /* getSystemLocale */.t.ZzAR2Y);
+      let obj = { children: null };
+      obj = { themeType: null, children: null };
+      obj[0] = themeType;
+      const intl = require(1236) /* getSystemLocale */.intl;
+      obj[1] = intl.string(require(1236) /* getSystemLocale */.t.ZzAR2Y);
       const items = [callback(Heading, obj), ];
-      obj = { bio: previewBio, userId, textVariant: getStyleConfig(themeType).textVariant, lineClamp };
-      items[1] = callback(importDefault(11935), obj);
-      obj.children = items;
-      tmp2 = callback2(View, obj);
+      obj = { bio: null, userId: null, textVariant: null, lineClamp: null };
+      obj[0] = previewBio;
+      obj[1] = userId;
+      obj[2] = tmp.textVariant;
+      obj[3] = lineClamp;
+      items[1] = callback(importDefault(11959), obj);
+      obj[0] = items;
+      tmp4 = callback2(View, obj);
     }
   }
-  return tmp2;
+  return tmp4;
 }
 function MemberJoinDates(userId) {
   let columnGap;
@@ -93,90 +107,113 @@ function MemberJoinDates(userId) {
   let themeType;
   userId = userId.userId;
   ({ guildId: importDefault, themeType } = userId);
-  const tmp = callback3();
-  ({ textVariant, columnGap } = getStyleConfig(themeType));
-  let obj = userId(566);
-  const items = [_isNativeReflectConstruct];
-  const stateFromStores = obj.useStateFromStores(items, () => outer1_5.locale);
-  let obj1 = userId(566);
-  const items1 = [closure_7];
+  let tmp2;
+  if (null != themeType) {
+    tmp2 = dependencyMap[themeType];
+  }
+  if (tmp2 == null) {
+    tmp2 = closure_14;
+  }
+  ({ textVariant, columnGap } = tmp2);
+  let obj = userId(589);
+  const items = [_getSystemLocale];
+  const stateFromStores = obj.useStateFromStores(items, () => locale.locale);
+  let obj1 = userId(589);
+  const items1 = [createGuildRecordFromRust];
   const stateFromStores1 = obj1.useStateFromStores(items1, () => {
     let guild = null;
     if (null != closure_1) {
-      guild = outer1_7.getGuild(closure_1);
+      guild = outer1_7.getGuild(tmp);
     }
     return guild;
   });
-  let obj2 = userId(566);
-  const items2 = [closure_6];
+  let obj2 = userId(589);
+  const items2 = [trackCommunicationDisabled];
   const stateFromStores2 = obj2.useStateFromStores(items2, () => {
     let member = null;
     if (null != closure_1) {
-      member = outer1_6.getMember(closure_1, userId);
+      member = outer1_6.getMember(tmp, userId);
     }
     return member;
   });
-  let obj3 = userId(4974);
-  let obj4 = importDefault(21);
+  let obj3 = userId(4996);
+  let obj4 = importDefault(11);
   const createdAtDate = obj3.getCreatedAtDate(obj4.extractTimestamp(userId), stateFromStores);
-  let obj5 = userId(4974);
+  let obj5 = userId(4996);
   let joinedAt;
-  if (null != stateFromStores2) {
+  if (stateFromStores2 != null) {
     joinedAt = stateFromStores2.joinedAt;
   }
   const createdAtDate1 = obj5.getCreatedAtDate(joinedAt, stateFromStores);
-  obj = {};
-  obj = { themeType };
-  const intl = userId(1212).intl;
-  obj.children = intl.string(userId(1212).t.a6XYD9);
+  obj = { themeType, children: null };
+  const intl = tmp4(1236).intl;
+  obj[1] = intl.string(userId(1236).t.a6XYD9);
   const items3 = [callback(Heading, obj), ];
-  obj1 = { style: items4 };
-  items4 = [tmp.memberJoinDates, { columnGap }];
-  obj2 = { themeType, icon: callback(userId(9740).ClydeIcon, { size: "xs" }) };
-  const intl2 = userId(1212).intl;
-  obj2.accessibilityLabel = intl2.formatToPlainString(userId(1212).t["9t7w53"], { date: createdAtDate });
-  obj2.children = createdAtDate;
-  const items5 = [callback(TextWithIcon, obj2), ];
-  let tmp13 = null != stateFromStores1 && null != createdAtDate1;
-  if (tmp13) {
-    obj3 = {};
-    obj4 = { variant: textVariant, color: "text-default", accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: DIVIDER_DOT };
-    const items6 = [callback(userId(4161).Text, obj4), ];
-    obj5 = { themeType };
-    const obj6 = { guild: stateFromStores1, size: userId(5548).GuildIconSizes.XXSMALL };
-    obj5.icon = callback(importDefault(5548), obj6);
-    const intl3 = userId(1212).intl;
-    const obj7 = { guildName: stateFromStores1.name, date: createdAtDate1 };
-    obj5.accessibilityLabel = intl3.formatToPlainString(userId(1212).t.FdLNDK, obj7);
-    obj5.children = createdAtDate1;
-    items6[1] = callback(TextWithIcon, obj5);
-    obj3.children = items6;
-    tmp13 = callback2(closure_13, obj3);
-    const tmp24 = importDefault(5548);
+  obj = { style: items4, children: null };
+  items4 = [callback3().memberJoinDates, { columnGap }];
+  obj1 = { themeType, icon: callback(tmp4(9762).ClydeIcon, { size: "xs" }), accessibilityLabel: null, children: null };
+  const intl2 = tmp4(1236).intl;
+  obj1[2] = intl2.formatToPlainString(userId(1236).t["9t7w53"], { date: createdAtDate });
+  obj1[3] = createdAtDate;
+  const items5 = [callback(TextWithIcon, obj1), ];
+  let tmp13Result = null != stateFromStores1 && null != createdAtDate1;
+  if (tmp13Result) {
+    obj2 = { children: null };
+    obj3 = { variant: null, color: "text-default", accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: null };
+    obj3[0] = textVariant;
+    obj3[4] = closure_8;
+    const items6 = [tmp15(tmp4(4185).Text, obj3), ];
+    obj4 = { themeType: null, icon: null, accessibilityLabel: null, children: null };
+    obj4[0] = themeType;
+    obj5 = { guild: null, size: null };
+    obj5[0] = stateFromStores1;
+    obj5[1] = tmp4(5566).GuildIconSizes.XXSMALL;
+    obj4[1] = tmp15(importDefault(5566), obj5);
+    const intl3 = tmp4(1236).intl;
+    const obj6 = { guildName: null, date: null };
+    obj6[0] = stateFromStores1.name;
+    obj6[1] = createdAtDate1;
+    obj4[2] = intl3.formatToPlainString(tmp4(1236).t.FdLNDK, obj6);
+    obj4[3] = createdAtDate1;
+    items6[1] = tmp15(TextWithIcon, obj4);
+    obj2[0] = items6;
+    tmp13Result = tmp13(closure_13, obj2);
+    const tmp9Result = importDefault(5566);
   }
-  items5[1] = tmp13;
-  obj1.children = items5;
-  items3[1] = callback2(View, obj1);
-  obj.children = items3;
-  return callback2(View, obj);
+  const obj7 = { children: null };
+  items5[1] = tmp13Result;
+  obj[1] = items5;
+  items3[1] = closure_12(View, obj);
+  obj7[0] = items3;
+  return closure_12(View, obj7);
 }
 function FriendsSinceDate(themeType) {
   themeType = themeType.themeType;
-  let obj = require(11936) /* useFriendsSinceDate */;
-  const friendsSinceDate = obj.useFriendsSinceDate(themeType.userId);
-  let tmp2 = null;
-  if (null != friendsSinceDate) {
-    obj = {};
-    obj = { themeType };
-    const intl = require(1212) /* getSystemLocale */.intl;
-    obj.children = intl.string(require(1212) /* getSystemLocale */.t.wlTO8v);
-    const items = [callback(Heading, obj), ];
-    const obj1 = { variant: getStyleConfig(themeType).textVariant, color: "text-default", children: friendsSinceDate };
-    items[1] = callback(require(4161) /* Text */.Text, obj1);
-    obj.children = items;
-    tmp2 = callback2(View, obj);
+  let tmp;
+  if (null != themeType) {
+    tmp = dependencyMap[themeType];
   }
-  return tmp2;
+  if (tmp == null) {
+    tmp = closure_14;
+  }
+  let obj = require(11960) /* useFriendsSinceDate */;
+  const friendsSinceDate = obj.useFriendsSinceDate(themeType.userId);
+  let tmp6 = null;
+  if (null != friendsSinceDate) {
+    obj = { children: null };
+    obj = { themeType: null, children: null };
+    obj[0] = themeType;
+    const intl = tmp3(1236).intl;
+    obj[1] = intl.string(tmp3(1236).t.wlTO8v);
+    const items = [callback(Heading, obj), ];
+    const obj1 = { variant: null, color: "text-default", children: null };
+    obj1[0] = tmp.textVariant;
+    obj1[2] = friendsSinceDate;
+    items[1] = callback(tmp3(4185).Text, obj1);
+    obj[0] = items;
+    tmp6 = callback2(View, obj);
+  }
+  return tmp6;
 }
 function PolicyLinks(arg0) {
   let privacyPolicyUrl;
@@ -184,55 +221,65 @@ function PolicyLinks(arg0) {
   let themeType;
   ({ termsOfServiceUrl, privacyPolicyUrl, themeType } = arg0);
   if (null != termsOfServiceUrl) {
-    let obj = {};
-    obj = { themeType };
-    const intl = require(1212) /* getSystemLocale */.intl;
-    obj.children = intl.string(require(1212) /* getSystemLocale */.t.l6DP2n);
+    let obj = { themeType: null, children: null };
+    obj[0] = themeType;
+    const intl = require(1236) /* getSystemLocale */.intl;
+    obj[1] = intl.string(require(1236) /* getSystemLocale */.t.l6DP2n);
     const items = [callback(Heading, obj), ];
-    obj = { style: tmp.policyLinks };
-    let tmp11 = null != termsOfServiceUrl;
-    if (tmp11) {
-      const obj1 = { url: termsOfServiceUrl };
-      const intl2 = require(1212) /* getSystemLocale */.intl;
-      obj1.label = intl2.string(require(1212) /* getSystemLocale */.t.s7STcY);
-      obj1.themeType = themeType;
-      tmp11 = callback(PolicyLink, obj1);
+    obj = { style: null, children: null };
+    obj[0] = tmp.policyLinks;
+    let tmp5Result = null != termsOfServiceUrl;
+    if (tmp5Result) {
+      obj = { url: null, label: null, themeType: null };
+      obj[0] = termsOfServiceUrl;
+      const intl2 = tmp7(1236).intl;
+      obj[1] = intl2.string(tmp7(1236).t.s7STcY);
+      obj[2] = themeType;
+      tmp5Result = tmp5(PolicyLink, obj);
     }
-    const items1 = [tmp11, ];
-    let tmp16 = null != privacyPolicyUrl;
-    if (tmp16) {
-      const obj2 = { url: privacyPolicyUrl };
-      const intl3 = require(1212) /* getSystemLocale */.intl;
-      obj2.label = intl3.string(require(1212) /* getSystemLocale */.t.kH3JR5);
-      obj2.themeType = themeType;
-      tmp16 = callback(PolicyLink, obj2);
+    const items1 = [tmp5Result, ];
+    tmp5Result = null != privacyPolicyUrl;
+    if (tmp5Result) {
+      const obj1 = { url: null, label: null, themeType: null };
+      obj1[0] = privacyPolicyUrl;
+      const intl3 = tmp7(1236).intl;
+      obj1[1] = intl3.string(tmp7(1236).t.kH3JR5);
+      obj1[2] = themeType;
+      tmp5Result = tmp5(PolicyLink, obj1);
     }
-    items1[1] = tmp16;
-    obj.children = items1;
+    const obj2 = { children: null };
+    items1[1] = tmp5Result;
+    obj[1] = items1;
     items[1] = closure_12(View, obj);
-    obj.children = items;
-    let tmp3Result = closure_12(View, obj);
-    const tmp10 = View;
-    const tmp3 = closure_12;
-    const tmp4 = View;
-    const tmp9 = closure_12;
+    obj2[0] = items;
+    let tmp3Result = tmp3(tmp4, obj2);
   } else {
     tmp3Result = null;
   }
   return tmp3Result;
 }
 function PolicyLink(children) {
-  const url = children.url;
+  let require;
+  let themeType;
+  ({ url: require, themeType } = children);
+  let tmp;
+  if (null != themeType) {
+    tmp = dependencyMap[themeType];
+  }
+  if (tmp == null) {
+    tmp = closure_14;
+  }
   let obj = {
     accessibilityRole: "link",
     onPress() {
-      let obj = url(outer1_2[22]);
-      obj = { href: url };
+      let obj = outer1_0(outer1_2[22]);
+      obj = { href: closure_0 };
       return obj.handleClick(obj);
     },
-    children: callback(url(4161).Text, { variant: getStyleConfig(children.themeType).textVariant, color: "text-link", children: children.label })
+    children: null
   };
-  return callback(url(1273).PressableOpacity, obj);
+  obj[2] = callback(require(4185) /* Text */.Text, { variant: tmp.textVariant, color: "text-link", children: children.label });
+  return callback(require(1297) /* Button */.PressableOpacity, obj);
 }
 function BotSlashCommands(channel) {
   let application;
@@ -241,6 +288,9 @@ function BotSlashCommands(channel) {
   let commands;
   let themeType;
   channel = channel.channel;
+  let analyticsLocations;
+  let context;
+  application = undefined;
   ({ applicationId, commandIds, themeType } = channel);
   analyticsLocations = analyticsLocations(context[23])().analyticsLocations;
   let obj = channel(context[24]);
@@ -251,40 +301,44 @@ function BotSlashCommands(channel) {
   ({ id: arr[1], guild_id: arr[2] } = channel);
   items[3] = context;
   items[4] = analyticsLocations;
-  let tmp9Result = null;
+  let tmp8Result = null;
   if (null != commands) {
-    tmp9Result = null;
+    tmp8Result = null;
     if (0 !== commands.length) {
-      obj = {};
-      obj = { themeType };
-      const intl2 = channel(context[13]).intl;
-      obj.children = intl2.string(channel(context[13]).t["0hKkS+"]);
+      obj = { themeType: null, children: null };
+      obj[0] = themeType;
+      const intl2 = tmp3(tmp2[13]).intl;
+      obj[1] = intl2.string(tmp3(tmp2[13]).t["0hKkS+"]);
       const items1 = [callback(Heading, obj), , ];
-      const obj1 = { style: tmp.slashCommands, children: commands.map((command) => outer1_11(analyticsLocations(context[33]), { application, channel, command }, command.id)) };
-      items1[1] = callback(View, obj1);
-      let tmp5 = null != application && null != application.bot;
-      if (tmp5) {
-        let obj2 = { size: "sm", variant: "tertiary" };
-        const intl = channel(context[13]).intl;
-        obj2.text = intl.string(channel(context[13]).t.VEfKyb);
-        obj2.onPress = tmp3;
-        tmp5 = callback(channel(context[34]).Button, obj2);
+      obj = { style: null, children: null };
+      obj[0] = tmp.slashCommands;
+      obj[1] = commands.map((command) => outer1_11(analyticsLocations(context[33]), { application, channel, command }, command.id));
+      items1[1] = callback(View, obj);
+      let tmp10Result = null != application && null != application.bot;
+      if (tmp10Result) {
+        const obj1 = { size: "sm", variant: "tertiary", text: null, onPress: null };
+        const intl = tmp3(tmp2[13]).intl;
+        obj1[2] = intl.string(tmp3(tmp2[13]).t.VEfKyb);
+        obj1[3] = tmp5;
+        tmp10Result = tmp10(tmp3(tmp2[34]).Button, obj1);
       }
-      items1[2] = tmp5;
-      obj.children = items1;
-      tmp9Result = closure_12(View, obj);
-      const tmp10 = View;
-      const tmp9 = closure_12;
+      const obj2 = { children: null };
+      items1[2] = tmp10Result;
+      obj2[0] = items1;
+      tmp8Result = closure_12(View, obj2);
+      tmp10 = callback;
+      const tmp8 = closure_12;
+      let tmp9 = View;
     }
   }
-  return tmp9Result;
+  return tmp8Result;
 }
-const DIVIDER_DOT = ARBITRARY_LARGE_OFFSET.DIVIDER_DOT;
-({ jsx: closure_11, jsxs: closure_12, Fragment: closure_13 } = jsxProd);
+({ DIVIDER_DOT: metroImportAll, UserProfileThemeTypes } = ARBITRARY_LARGE_OFFSET);
+({ jsx: unpackModuleId, jsxs: closure_12, Fragment: map1 } = jsxProd);
 let closure_14 = { headingVariant: "text-sm/semibold", textVariant: "text-md/normal", headingSpacing: 8, rowGap: 24, columnGap: 6 };
-let closure_15 = { [ARBITRARY_LARGE_OFFSET.UserProfileThemeTypes.PREVIEW]: { headingVariant: "text-xs/semibold", textVariant: "text-sm/normal", headingSpacing: 4, rowGap: 12, columnGap: 3 } };
-let closure_16 = _createForOfIteratorHelperLoose.createStyles({ card: { flexDirection: "column" }, textWithIcon: { flexDirection: "row", alignItems: "center" }, memberJoinDates: { flexDirection: "row", flexWrap: "wrap" }, slashCommands: { flex: 1, flexDirection: "row", flexWrap: "wrap", marginBottom: 12 }, policyLinks: { rowGap: 8 } });
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/user_profile/native/UserProfileAboutMeCard.tsx");
+let closure_15 = { [UserProfileThemeTypes.PREVIEW]: { headingVariant: "text-xs/semibold", textVariant: "text-sm/normal", headingSpacing: 4, rowGap: 12, columnGap: 3 } };
+let closure_16 = createCacheKey.createStyles({ card: { flexDirection: "column" }, textWithIcon: { flexDirection: "row", alignItems: "center" }, memberJoinDates: { flexDirection: "row", flexWrap: "wrap" }, slashCommands: { flex: 1, flexDirection: "row", flexWrap: "wrap", marginBottom: 12 }, policyLinks: { rowGap: 8 } });
+const result = require("_getSystemLocale").fileFinishedImporting("modules/user_profile/native/UserProfileAboutMeCard.tsx");
 
 export default function UserProfileAboutMeCard(arg0) {
   let bioLineClamp;
@@ -296,47 +350,57 @@ export default function UserProfileAboutMeCard(arg0) {
   let userId;
   ({ userId, displayProfile, channel, themeType } = arg0);
   ({ pendingBio, bioLineClamp, style } = arg0);
+  let tmp2;
+  if (null != themeType) {
+    tmp2 = dependencyMap[themeType];
+  }
+  if (tmp2 == null) {
+    tmp2 = closure_14;
+  }
   let application;
-  if (null != displayProfile) {
+  if (displayProfile != null) {
     application = displayProfile.application;
   }
-  let obj = { style: items };
-  items = [callback3().card, { rowGap: getStyleConfig(themeType).rowGap }, style];
+  let obj = { style: items, children: null };
+  items = [callback3().card, { rowGap: tmp2.rowGap }, style];
   const tmp = callback3();
-  const tmp3 = closure_12;
+  const tmp5 = closure_12;
   const items1 = [callback(Bio, { userId, displayProfile, pendingBio, themeType, lineClamp: bioLineClamp }), , , , ];
-  obj = { userId };
+  obj = { userId, guildId: null, themeType: null };
   let guildId;
-  if (null != displayProfile) {
+  if (displayProfile != null) {
     guildId = displayProfile.guildId;
   }
-  obj.guildId = guildId;
-  obj.themeType = themeType;
+  obj[1] = guildId;
+  obj[2] = themeType;
   items1[1] = callback(MemberJoinDates, obj);
   items1[2] = callback(FriendsSinceDate, { userId, themeType });
-  obj = {};
   let termsOfServiceUrl;
-  if (null != application) {
+  if (application != null) {
     termsOfServiceUrl = application.termsOfServiceUrl;
   }
-  obj.termsOfServiceUrl = termsOfServiceUrl;
+  obj = { termsOfServiceUrl, privacyPolicyUrl: null, themeType: null };
   let privacyPolicyUrl;
-  if (null != application) {
+  if (application != null) {
     privacyPolicyUrl = application.privacyPolicyUrl;
   }
-  obj.privacyPolicyUrl = privacyPolicyUrl;
-  obj.themeType = themeType;
+  obj[1] = privacyPolicyUrl;
+  obj[2] = themeType;
   items1[3] = callback(PolicyLinks, obj);
   let prop;
-  if (null != application) {
+  if (application != null) {
     prop = application.popularApplicationCommandIds;
   }
-  let tmp13 = null != prop && null != channel;
-  if (tmp13) {
-    const obj1 = { applicationId: application.id, channel, commandIds: application.popularApplicationCommandIds, themeType };
-    tmp13 = callback(BotSlashCommands, obj1);
+  let tmp7Result = null != prop && null != channel;
+  if (tmp7Result) {
+    const obj1 = { applicationId: null, channel: null, commandIds: null, themeType: null };
+    obj1[0] = application.id;
+    obj1[1] = channel;
+    obj1[2] = application.popularApplicationCommandIds;
+    obj1[3] = themeType;
+    tmp7Result = tmp7(BotSlashCommands, obj1);
   }
-  items1[4] = tmp13;
-  obj.children = items1;
-  return tmp3(importDefault(5544), obj);
+  items1[4] = tmp7Result;
+  obj[1] = items1;
+  return tmp5(importDefault(5562), obj);
 };

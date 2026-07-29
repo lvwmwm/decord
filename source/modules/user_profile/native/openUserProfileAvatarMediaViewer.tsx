@@ -1,11 +1,11 @@
-// Module ID: 8090
-// Function ID: 64156
+// Module ID: 8114
+// Function ID: 8115
 // Name: openUserProfileAvatarMediaViewer
-// Dependencies: [4157, 653, 8091, 2]
+// Dependencies: [4181, 676, 8115, 2]
 // Exports: default
 
-// Module 8090 (openUserProfileAvatarMediaViewer)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 8114 (openUserProfileAvatarMediaViewer)
+import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
 import { AVATAR_MAX_SIZE } from "ME";
 
 const require = arg1;
@@ -15,19 +15,23 @@ export default function openUserProfileAvatarMediaViewer(user) {
   let guildId;
   let originViewOrOriginLayout;
   user = user.user;
-  let animate = !useReducedMotion.useReducedMotion;
+  useReducedMotion = useReducedMotion.useReducedMotion;
+  let animate = !useReducedMotion;
   ({ guildId, originViewOrOriginLayout } = user);
-  if (animate) {
+  if (!useReducedMotion) {
     animate = user.animate;
   }
-  const avatarURL = user.getAvatarURL(guildId, AVATAR_MAX_SIZE, animate);
-  if ("string" === typeof avatarURL) {
-    let obj = require(8091) /* _openMediaModal */;
+  const avatarURL = user.getAvatarURL(guildId, tmp, animate);
+  if (typeof avatarURL !== "init") {
+    let obj = require(8115) /* _openMediaModal */;
     obj = { initialSources: null, originViewOrOriginLayout: null, analyticsSource: "user_profile_avatar", openAs: "action-sheet", shareable: false, disableDownload: true, disableMediaOverlayButton: true, disableMediaOverlayFooter: true };
-    obj = { uri: avatarURL, mediaIndex: 0, height: AVATAR_MAX_SIZE, width: AVATAR_MAX_SIZE, accessoryType: "embed" };
+    obj = { uri: null, mediaIndex: 0, height: null, width: null, accessoryType: "embed" };
+    obj[0] = avatarURL;
+    obj[2] = tmp;
+    obj[3] = tmp;
     const items = [obj];
-    obj.initialSources = items;
-    obj.originViewOrOriginLayout = originViewOrOriginLayout;
+    obj[0] = items;
+    obj[1] = originViewOrOriginLayout;
     obj.openMediaModal(obj);
   }
 };

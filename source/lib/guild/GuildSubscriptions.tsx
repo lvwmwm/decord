@@ -1,15 +1,194 @@
-// Module ID: 6038
-// Function ID: 53650
-// Name: validateGuildId
-// Dependencies: [6, 7, 653, 1841, 6039, 6040, 6041, 4050, 22, 2]
+// Module ID: 6056
+// Function ID: 6057
+// Name: _enqueue
+// Dependencies: [676, 1865, 6057, 6058, 6059, 4074, 12, 2]
 
-// Module 6038 (validateGuildId)
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import closure_4 from "_createForOfIteratorHelperLoose";
+// Module 6056 (_enqueue)
 import { ME } from "ME";
 
-const require = arg1;
-function validateGuildId(guildId) {
+const result = require("reset").fileFinishedImporting("lib/guild/GuildSubscriptions.tsx");
+class GuildSubscriptions {
+  constructor(arg0) {
+    obj = Object.create(new.target.prototype);
+    closure_0 = obj;
+    tmp2 = new require("reset")((guildId, members) => {
+      const obj = { members };
+      return obj._enqueue(guildId, obj);
+    });
+    obj._members = tmp2;
+    tmp3 = new require("reset")((guildId, channels) => {
+      const obj = { channels };
+      return obj._enqueue(guildId, obj);
+    });
+    obj._channels = tmp3;
+    tmp4 = new require("reset")((guildId, thread_member_lists) => {
+      const obj = { thread_member_lists };
+      return obj._enqueue(guildId, obj);
+    });
+    obj._threadMemberLists = tmp4;
+    set = new Set();
+    obj._typing = set;
+    set1 = new Set();
+    obj._threads = set1;
+    set2 = new Set();
+    obj._activities = set2;
+    set3 = new Set();
+    obj._memberUpdates = set3;
+    set4 = new Set();
+    obj._subscribed = set4;
+    obj._pending = {};
+    delayedCall = new require("start").DelayedCall(0, () => obj.flush());
+    obj._flush = delayedCall;
+    obj._onChange = global;
+    return obj;
+  }
+}
+const prototype = GuildSubscriptions.prototype;
+prototype["_enqueue"] = function _enqueue(guildId, arg1) {
+  const merged = Object.assign(this._pending[guildId]);
+  const merged1 = Object.assign(arg1);
+  this._pending[guildId] = {};
+  const _flush = this._flush;
+  _flush.delay();
+};
+prototype["reset"] = function reset() {
+  const _subscribed = this._subscribed;
+  _subscribed.clear();
+  this._pending = {};
+  const _members = this._members;
+  _members.reset();
+  const _memberUpdates = this._memberUpdates;
+  _memberUpdates.clear();
+  const _channels = this._channels;
+  _channels.reset();
+  const _threadMemberLists = this._threadMemberLists;
+  _threadMemberLists.reset();
+  const _typing = this._typing;
+  _typing.clear();
+  const _threads = this._threads;
+  _threads.clear();
+  const _activities = this._activities;
+  _activities.clear();
+};
+prototype["get"] = function get(arg0) {
+  let _activities;
+  let _channels;
+  let _memberUpdates;
+  let _members;
+  let _threadMemberLists;
+  let _threads;
+  let _typing;
+  ({ _typing, _threads, _activities, _members, _memberUpdates, _channels, _threadMemberLists } = this);
+  return { typing: _typing.has(arg0), threads: _threads.has(arg0), activities: _activities.has(arg0), members: _members.get(arg0), member_updates: _memberUpdates.has(arg0), channels: _channels.get(arg0), thread_member_lists: _threadMemberLists.get(arg0) };
+};
+prototype["getSubscribedThreadIds"] = function getSubscribedThreadIds() {
+  const _threadMemberLists = this._threadMemberLists;
+  return _threadMemberLists.getSubscribedThreadIds();
+};
+prototype["isSubscribedToThreads"] = function isSubscribedToThreads(arg0) {
+  const _threads = this._threads;
+  return _threads.has(arg0);
+};
+prototype["isSubscribedToAnyMember"] = function isSubscribedToAnyMember(arg0) {
+  const _members = this._members;
+  let flag = _members.isSubscribedToAnyMember(arg0);
+  if (flag == null) {
+    flag = false;
+  }
+  return flag;
+};
+prototype["isSubscribedToMemberUpdates"] = function isSubscribedToMemberUpdates(arg0) {
+  let flag = this.get(arg0).member_updates;
+  if (flag == null) {
+    flag = false;
+  }
+  return flag;
+};
+prototype["forEach"] = function forEach(arg0) {
+  const _subscribed = this._subscribed;
+  const item = _subscribed.forEach(arg0);
+};
+prototype["clearWithoutFlushing"] = function clearWithoutFlushing(id, c0) {
+  const self = this;
+  let hasItem = !c0;
+  if (!c0) {
+    const _threads = self._threads;
+    hasItem = _threads.has(id);
+  }
+  if (!hasItem) {
+    const _subscribed = self._subscribed;
+    _subscribed.delete(id);
+  }
+  delete tmp2[tmp];
+  const _members = self._members;
+  _members.clear(id);
+  const _channels = self._channels;
+  _channels.clear(id);
+  const _threadMemberLists = self._threadMemberLists;
+  _threadMemberLists.clear(id);
+  const _typing = self._typing;
+  _typing.delete(id);
+  const _memberUpdates = self._memberUpdates;
+  _memberUpdates.delete(id);
+  if (c0) {
+    const _threads2 = self._threads;
+    _threads2.delete(id);
+  }
+  const _activities = self._activities;
+  _activities.delete(id);
+};
+prototype["flush"] = function flush() {
+  const self = this;
+  const item = importDefault(12).forEach(this._pending, (arg0, arg1) => {
+    const _subscribed = self._subscribed;
+    _subscribed.add(arg1);
+  });
+  this._onChange(this._pending);
+  this._pending = {};
+};
+prototype["subscribeUser"] = function subscribeUser(closure_0, userId) {
+  let tmp = null != closure_0;
+  if (tmp) {
+    tmp = "null" !== closure_0;
+  }
+  if (tmp) {
+    tmp = closure_0 !== ME;
+  }
+  if (tmp) {
+    tmp = "undefined" !== closure_0;
+  }
+  if (tmp) {
+    tmp = !require(1865) /* getFavoritesAwareGuildName */.isFavoritesGuildId(closure_0);
+    const obj = require(1865) /* getFavoritesAwareGuildName */;
+  }
+  if (tmp) {
+    const self = this;
+    const _members = this._members;
+    const subscription = _members.subscribe(closure_0, userId);
+  }
+};
+prototype["unsubscribeUser"] = function unsubscribeUser(closure_0, userId) {
+  let tmp = null != closure_0;
+  if (tmp) {
+    tmp = "null" !== closure_0;
+  }
+  if (tmp) {
+    tmp = closure_0 !== ME;
+  }
+  if (tmp) {
+    tmp = "undefined" !== closure_0;
+  }
+  if (tmp) {
+    tmp = !require(1865) /* getFavoritesAwareGuildName */.isFavoritesGuildId(closure_0);
+    const obj = require(1865) /* getFavoritesAwareGuildName */;
+  }
+  if (tmp) {
+    const self = this;
+    const _members = this._members;
+    _members.unsubscribe(closure_0, userId);
+  }
+};
+prototype["subscribeChannel"] = function subscribeChannel(guildId) {
   let tmp = null != guildId;
   if (tmp) {
     tmp = "null" !== guildId;
@@ -21,280 +200,138 @@ function validateGuildId(guildId) {
     tmp = "undefined" !== guildId;
   }
   if (tmp) {
-    tmp = !require(1841) /* isFavoritesGuildId */.isFavoritesGuildId(guildId);
-    const obj = require(1841) /* isFavoritesGuildId */;
+    tmp = !require(1865) /* getFavoritesAwareGuildName */.isFavoritesGuildId(guildId);
+    const obj = require(1865) /* getFavoritesAwareGuildName */;
   }
-  return tmp;
-}
-let tmp2 = (() => {
-  class GuildSubscriptions {
-    constructor(arg0) {
-      self = this;
-      tmp = outer1_3(this, self);
-      tmp2 = outer1_1(outer1_2[4]);
-      tmp2 = new tmp2((arg0, members) => self._enqueue(arg0, { members }));
-      this._members = tmp2;
-      tmp4 = outer1_1(outer1_2[5]);
-      tmp4 = new tmp4((arg0, channels) => self._enqueue(arg0, { channels }));
-      this._channels = tmp4;
-      tmp6 = outer1_1(outer1_2[6]);
-      tmp6 = new tmp6((arg0, thread_member_lists) => self._enqueue(arg0, { thread_member_lists }));
-      this._threadMemberLists = tmp6;
-      set = new Set();
-      this._typing = set;
-      set1 = new Set();
-      this._threads = set1;
-      set2 = new Set();
-      this._activities = set2;
-      set3 = new Set();
-      this._memberUpdates = set3;
-      set4 = new Set();
-      this._subscribed = set4;
-      this._pending = {};
-      delayedCall = new GuildSubscriptions(outer1_2[7]).DelayedCall(0, () => self.flush());
-      this._flush = delayedCall;
-      this._onChange = arg0;
-      return;
+  let subscription = tmp;
+  if (subscription) {
+    const self = this;
+    const _channels = this._channels;
+    subscription = _channels.subscribe(guildId, arg1, arg2);
+  }
+  return subscription;
+};
+prototype["subscribeToMemberUpdates"] = function subscribeToMemberUpdates(guildId) {
+  let tmp = null != guildId;
+  if (tmp) {
+    tmp = "null" !== guildId;
+  }
+  if (tmp) {
+    tmp = guildId !== ME;
+  }
+  if (tmp) {
+    tmp = "undefined" !== guildId;
+  }
+  if (tmp) {
+    tmp = !require(1865) /* getFavoritesAwareGuildName */.isFavoritesGuildId(guildId);
+    const obj = require(1865) /* getFavoritesAwareGuildName */;
+  }
+  if (tmp) {
+    const self = this;
+    this._enqueue(guildId, { member_updates: true });
+    const _memberUpdates = this._memberUpdates;
+    _memberUpdates.add(guildId);
+  } else {
+    return false;
+  }
+};
+prototype["unsubscribeFromMemberUpdates"] = function unsubscribeFromMemberUpdates(guildId) {
+  let tmp = null != guildId;
+  if (tmp) {
+    tmp = "null" !== guildId;
+  }
+  if (tmp) {
+    tmp = guildId !== ME;
+  }
+  if (tmp) {
+    tmp = "undefined" !== guildId;
+  }
+  if (tmp) {
+    tmp = !require(1865) /* getFavoritesAwareGuildName */.isFavoritesGuildId(guildId);
+    const obj = require(1865) /* getFavoritesAwareGuildName */;
+  }
+  if (tmp) {
+    const self = this;
+    this._enqueue(guildId, { member_updates: false });
+  } else {
+    return false;
+  }
+};
+prototype["subscribeThreadMemberList"] = function subscribeThreadMemberList(guildId, channelId, channelId2) {
+  let tmp = null != guildId;
+  if (tmp) {
+    tmp = "null" !== guildId;
+  }
+  if (tmp) {
+    tmp = guildId !== ME;
+  }
+  if (tmp) {
+    tmp = "undefined" !== guildId;
+  }
+  if (tmp) {
+    tmp = !require(1865) /* getFavoritesAwareGuildName */.isFavoritesGuildId(guildId);
+    const obj = require(1865) /* getFavoritesAwareGuildName */;
+  }
+  let subscription = tmp;
+  if (subscription) {
+    const self = this;
+    const _threadMemberLists = this._threadMemberLists;
+    subscription = _threadMemberLists.subscribe(guildId, channelId, channelId2);
+  }
+  return subscription;
+};
+prototype["unsubscribeThreadMemberList"] = function unsubscribeThreadMemberList(guild_id, id) {
+  let tmp = null != guild_id;
+  if (tmp) {
+    tmp = "null" !== guild_id;
+  }
+  if (tmp) {
+    tmp = guild_id !== ME;
+  }
+  if (tmp) {
+    tmp = "undefined" !== guild_id;
+  }
+  if (tmp) {
+    tmp = !require(1865) /* getFavoritesAwareGuildName */.isFavoritesGuildId(guild_id);
+    const obj = require(1865) /* getFavoritesAwareGuildName */;
+  }
+  let unsubscribeResult = tmp;
+  if (unsubscribeResult) {
+    const self = this;
+    const _threadMemberLists = this._threadMemberLists;
+    unsubscribeResult = _threadMemberLists.unsubscribe(guild_id, id);
+  }
+  return unsubscribeResult;
+};
+prototype["subscribeToGuild"] = function subscribeToGuild(guildId) {
+  this._subscribeToFeature(guildId, this._typing, { typing: true });
+  this._subscribeToFeature(guildId, this._activities, { activities: true });
+  this._subscribeToFeature(guildId, this._threads, { threads: true });
+};
+prototype["_subscribeToFeature"] = function _subscribeToFeature(guildId, _activities, arg2) {
+  let tmp = null != guildId;
+  if (tmp) {
+    tmp = "null" !== guildId;
+  }
+  if (tmp) {
+    tmp = guildId !== ME;
+  }
+  if (tmp) {
+    tmp = "undefined" !== guildId;
+  }
+  if (tmp) {
+    tmp = !require(1865) /* getFavoritesAwareGuildName */.isFavoritesGuildId(guildId);
+    const obj = require(1865) /* getFavoritesAwareGuildName */;
+  }
+  if (tmp) {
+    if (!_activities.has(guildId)) {
+      const self = this;
+      _activities.add(guildId);
+      this._enqueue(guildId, arg2);
     }
   }
-  let obj = {
-    key: "_enqueue",
-    value(arg0, arg1) {
-      const merged = Object.assign(this._pending[arg0]);
-      const merged1 = Object.assign(arg1);
-      this._pending[arg0] = {};
-      const _flush = this._flush;
-      _flush.delay();
-    }
-  };
-  const items = [obj, , , , , , , , , , , , , , , , , , ];
-  obj = {
-    key: "reset",
-    value() {
-      const _subscribed = this._subscribed;
-      _subscribed.clear();
-      this._pending = {};
-      const _members = this._members;
-      _members.reset();
-      const _memberUpdates = this._memberUpdates;
-      _memberUpdates.clear();
-      const _channels = this._channels;
-      _channels.reset();
-      const _threadMemberLists = this._threadMemberLists;
-      _threadMemberLists.reset();
-      const _typing = this._typing;
-      _typing.clear();
-      const _threads = this._threads;
-      _threads.clear();
-      const _activities = this._activities;
-      _activities.clear();
-    }
-  };
-  items[1] = obj;
-  obj = {
-    key: "get",
-    value(arg0) {
-      let _activities;
-      let _channels;
-      let _memberUpdates;
-      let _members;
-      let _threadMemberLists;
-      let _threads;
-      let _typing;
-      ({ _typing, _threads, _activities, _members, _memberUpdates, _channels, _threadMemberLists } = this);
-      return { typing: _typing.has(arg0), threads: _threads.has(arg0), activities: _activities.has(arg0), members: _members.get(arg0), member_updates: _memberUpdates.has(arg0), channels: _channels.get(arg0), thread_member_lists: _threadMemberLists.get(arg0) };
-    }
-  };
-  items[2] = obj;
-  items[3] = {
-    key: "getSubscribedThreadIds",
-    value() {
-      const _threadMemberLists = this._threadMemberLists;
-      return _threadMemberLists.getSubscribedThreadIds();
-    }
-  };
-  items[4] = {
-    key: "isSubscribedToThreads",
-    value(arg0) {
-      const _threads = this._threads;
-      return _threads.has(arg0);
-    }
-  };
-  items[5] = {
-    key: "isSubscribedToAnyMember",
-    value(arg0) {
-      const _members = this._members;
-      const result = _members.isSubscribedToAnyMember(arg0);
-      return null != result && result;
-    }
-  };
-  items[6] = {
-    key: "isSubscribedToMemberUpdates",
-    value(arg0) {
-      const member_updates = this.get(arg0).member_updates;
-      return null != member_updates && member_updates;
-    }
-  };
-  items[7] = {
-    key: "forEach",
-    value(arg0) {
-      const _subscribed = this._subscribed;
-      const item = _subscribed.forEach(arg0);
-    }
-  };
-  items[8] = {
-    key: "clearWithoutFlushing",
-    value(arg0, arg1) {
-      const self = this;
-      let hasItem = !arg1;
-      if (hasItem) {
-        const _threads = self._threads;
-        hasItem = _threads.has(arg0);
-      }
-      if (!hasItem) {
-        const _subscribed = self._subscribed;
-        _subscribed.delete(arg0);
-      }
-      delete tmp2[tmp];
-      const _members = self._members;
-      _members.clear(arg0);
-      const _channels = self._channels;
-      _channels.clear(arg0);
-      const _threadMemberLists = self._threadMemberLists;
-      _threadMemberLists.clear(arg0);
-      const _typing = self._typing;
-      _typing.delete(arg0);
-      const _memberUpdates = self._memberUpdates;
-      _memberUpdates.delete(arg0);
-      if (arg1) {
-        const _threads2 = self._threads;
-        _threads2.delete(arg0);
-      }
-      const _activities = self._activities;
-      _activities.delete(arg0);
-    }
-  };
-  items[9] = {
-    key: "flush",
-    value() {
-      const self = this;
-      const item = outer1_1(outer1_2[8]).forEach(this._pending, (arg0, arg1) => {
-        const _subscribed = self._subscribed;
-        _subscribed.add(arg1);
-      });
-      this._onChange(this._pending);
-      this._pending = {};
-    }
-  };
-  items[10] = {
-    key: "subscribeUser",
-    value(arg0, arg1) {
-      if (outer1_6(arg0)) {
-        const self = this;
-        const _members = this._members;
-        const subscription = _members.subscribe(arg0, arg1);
-      }
-    }
-  };
-  items[11] = {
-    key: "unsubscribeUser",
-    value(arg0, arg1) {
-      if (outer1_6(arg0)) {
-        const self = this;
-        const _members = this._members;
-        _members.unsubscribe(arg0, arg1);
-      }
-    }
-  };
-  items[12] = {
-    key: "subscribeChannel",
-    value(arg0, arg1, arg2) {
-      const tmp = outer1_6(arg0);
-      let subscription = tmp;
-      if (tmp) {
-        const self = this;
-        const _channels = this._channels;
-        subscription = _channels.subscribe(arg0, arg1, arg2);
-      }
-      return subscription;
-    }
-  };
-  items[13] = {
-    key: "subscribeToMemberUpdates",
-    value(arg0) {
-      const self = this;
-      if (outer1_6(arg0)) {
-        const obj = { member_updates: true };
-        self._enqueue(arg0, obj);
-        const _memberUpdates = self._memberUpdates;
-        _memberUpdates.add(arg0);
-      } else {
-        return false;
-      }
-    }
-  };
-  items[14] = {
-    key: "unsubscribeFromMemberUpdates",
-    value(arg0) {
-      const self = this;
-      if (outer1_6(arg0)) {
-        const obj = { member_updates: false };
-        self._enqueue(arg0, obj);
-      } else {
-        return false;
-      }
-    }
-  };
-  items[15] = {
-    key: "subscribeThreadMemberList",
-    value(arg0, arg1, arg2) {
-      const tmp = outer1_6(arg0);
-      let subscription = tmp;
-      if (tmp) {
-        const self = this;
-        const _threadMemberLists = this._threadMemberLists;
-        subscription = _threadMemberLists.subscribe(arg0, arg1, arg2);
-      }
-      return subscription;
-    }
-  };
-  items[16] = {
-    key: "unsubscribeThreadMemberList",
-    value(arg0, arg1) {
-      const tmp = outer1_6(arg0);
-      let unsubscribeResult = tmp;
-      if (tmp) {
-        const self = this;
-        const _threadMemberLists = this._threadMemberLists;
-        unsubscribeResult = _threadMemberLists.unsubscribe(arg0, arg1);
-      }
-      return unsubscribeResult;
-    }
-  };
-  items[17] = {
-    key: "subscribeToGuild",
-    value(arg0) {
-      this._subscribeToFeature(arg0, this._typing, { typing: true });
-      this._subscribeToFeature(arg0, this._activities, { activities: true });
-      this._subscribeToFeature(arg0, this._threads, { threads: true });
-    }
-  };
-  items[18] = {
-    key: "_subscribeToFeature",
-    value(arg0, has) {
-      const self = this;
-      if (outer1_6(arg0)) {
-        if (!has.has(arg0)) {
-          has.add(arg0);
-          self._enqueue(arg0, arg2);
-        }
-      }
-    }
-  };
-  return callback(GuildSubscriptions, items);
-})();
-let result = require("ME").fileFinishedImporting("lib/guild/GuildSubscriptions.tsx");
+};
 
-export default tmp2;
-export const MINIMUM_RANGE = require("serializeChannelRanges").MINIMUM_RANGE;
-export const DEFAULT_RANGES = require("serializeChannelRanges").DEFAULT_RANGES;
+export default GuildSubscriptions;
+export const MINIMUM_RANGE = require("reset").MINIMUM_RANGE;
+export const DEFAULT_RANGES = require("reset").DEFAULT_RANGES;

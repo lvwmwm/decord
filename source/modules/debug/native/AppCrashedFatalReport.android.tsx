@@ -1,10 +1,10 @@
-// Module ID: 16727
-// Function ID: 130270
+// Module ID: 16763
+// Function ID: 16764
 // Name: init
-// Dependencies: [27, 2]
+// Dependencies: [17, 2]
 // Exports: init
 
-// Module 16727 (init)
+// Module 16763 (init)
 const CrashReportingManager = require("get ActivityIndicator").NativeModules.CrashReportingManager;
 const result = require("set").fileFinishedImporting("modules/debug/native/AppCrashedFatalReport.android.tsx");
 

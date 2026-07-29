@@ -1,31 +1,33 @@
-// Module ID: 15428
-// Function ID: 117514
+// Module ID: 15461
+// Function ID: 15462
 // Name: inBoundingBox
-// Dependencies: [31, 4026, 11428, 1557, 477, 5251, 2]
+// Dependencies: [19, 4050, 11452, 1581, 500, 5273, 2]
 // Exports: useSearchSuggestionsGesture
 
-// Module 15428 (inBoundingBox)
-import result from "result";
+// Module 15461 (inBoundingBox)
+import noop from "noop";
 
 const require = arg1;
-let closure_4 = { code: "function inBoundingBox_useSearchSuggestionsGestureTsx1(e,coordinates,safeAreaTop){const touch=e.allTouches[0];if(touch==null)return false;return coordinates.left<touch.absoluteX&&touch.absoluteX<coordinates.right&&coordinates.top<touch.absoluteY+safeAreaTop&&touch.absoluteY+safeAreaTop<coordinates.bottom;}" };
-let closure_5 = (() => {
-  function inBoundingBox(arg0, left) {
-    const first = arg0.allTouches[0];
-    let tmp2 = null != first;
-    if (tmp2) {
-      tmp2 = left.left < first.absoluteX && first.absoluteX < left.right && left.top < first.absoluteY + arg2 && first.absoluteY + arg2 < left.bottom;
-      const tmp3 = left.left < first.absoluteX && first.absoluteX < left.right && left.top < first.absoluteY + arg2 && first.absoluteY + arg2 < left.bottom;
+function inBoundingBox(arg0, left) {
+  const first = arg0.allTouches[0];
+  let tmp2 = null != first;
+  if (tmp2) {
+    let tmp4 = left.left < first.absoluteX && first.absoluteX < left.right;
+    if (tmp4) {
+      tmp4 = left.top < first.absoluteY + arg2;
     }
-    return tmp2;
+    if (tmp4) {
+      tmp4 = first.absoluteY + arg2 < left.bottom;
+    }
+    tmp2 = tmp4;
   }
-  inBoundingBox.__closure = {};
-  inBoundingBox.__workletHash = 14606221606756;
-  inBoundingBox.__initData = closure_4;
-  return inBoundingBox;
-})();
-let closure_6 = { code: "function useSearchSuggestionsGestureTsx2(e,manager){const{coordinates,inBoundingBox,safeAreaTop,dismissed}=this.__closure;manager.fail();const _coordinates=coordinates.get();if(_coordinates==null||inBoundingBox(e,_coordinates,safeAreaTop))return;dismissed.set(true);}" };
-let result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/search/native/components/layout/autocomplete/useSearchSuggestionsGesture.tsx");
+  return tmp2;
+}
+inBoundingBox.__closure = {};
+inBoundingBox.__workletHash = 14606221606756;
+inBoundingBox.__initData = { code: "function inBoundingBox_useSearchSuggestionsGestureTsx1(e,coordinates,safeAreaTop){const touch=e.allTouches[0];if(touch==null)return false;return coordinates.left<touch.absoluteX&&touch.absoluteX<coordinates.right&&coordinates.top<touch.absoluteY+safeAreaTop&&touch.absoluteY+safeAreaTop<coordinates.bottom;}" };
+let closure_5 = { code: "function useSearchSuggestionsGestureTsx2(e,manager){const{coordinates,inBoundingBox,safeAreaTop,dismissed}=this.__closure;manager.fail();const _coordinates=coordinates.get();if(_coordinates==null||inBoundingBox(e,_coordinates,safeAreaTop))return;dismissed.set(true);}" };
+let result = require("performKeyboardAwareNavigation").fileFinishedImporting("modules/search/native/components/layout/autocomplete/useSearchSuggestionsGesture.tsx");
 
 export const useSearchSuggestionsGesture = function useSearchSuggestionsGesture(channelDetailsSearchContext) {
   const _require = channelDetailsSearchContext;
@@ -42,35 +44,44 @@ export const useSearchSuggestionsGesture = function useSearchSuggestionsGesture(
   const effect = callback.useEffect(() => sharedValue(sharedValue1[2]).subscribeTextInputValue(closure_0, callback), items1);
   const obj2 = _require(sharedValue1[1]);
   let num = 0;
-  if (obj3.isAndroid()) {
+  if (obj4.isAndroid()) {
     num = sharedValue(sharedValue1[3])().top;
   }
   const items2 = [sharedValue1, num, sharedValue];
-  const memo = callback.useMemo(() => {
+  const memo = obj3.useMemo(() => {
     const Gesture = channelDetailsSearchContext(sharedValue1[5]).Gesture;
     const ManualResult = Gesture.Manual();
     const fn = function e(arg0, fail) {
       fail.fail();
-      const value = outer1_2.get();
-      let tmp3 = null == value;
-      if (!tmp3) {
-        tmp3 = memo(arg0, value, outer1_4);
+      const rect = closure_2.get();
+      let tmp2 = null == rect;
+      if (!tmp2) {
+        if (typeof outer1_4 !== "find") {
+          HermesBuiltin.throwTypeError();
+        }
+        const first = arg0.allTouches[0];
+        let tmp7 = null != first;
+        if (tmp7) {
+          tmp7 = rect.left < first.absoluteX && first.absoluteX < rect.right && rect.top < first.absoluteY + tmp4 && first.absoluteY + tmp4 < rect.bottom;
+          const tmp8 = rect.left < first.absoluteX && first.absoluteX < rect.right && rect.top < first.absoluteY + tmp4 && first.absoluteY + tmp4 < rect.bottom;
+        }
+        tmp2 = tmp7;
       }
-      if (!tmp3) {
-        const result = outer1_1.set(true);
+      if (!tmp2) {
+        const result = closure_1.set(true);
       }
     };
-    fn.__closure = { coordinates: sharedValue1, inBoundingBox: memo, safeAreaTop: num, dismissed: sharedValue };
+    fn.__closure = { coordinates: sharedValue1, inBoundingBox: num, safeAreaTop: num, dismissed: sharedValue };
     fn.__workletHash = 2369649298113;
-    fn.__initData = callback1;
+    fn.__initData = memo;
     return Gesture.Manual().manualActivation(true).onTouchesDown(fn);
   }, items2);
   const items3 = [sharedValue1];
-  const callback1 = callback.useCallback((arg0) => {
+  const callback1 = obj3.useCallback((arg0) => {
     const result = sharedValue1.set(arg0);
   }, items3);
   const items4 = [sharedValue];
-  const callback2 = callback.useCallback(() => {
+  const callback2 = obj3.useCallback(() => {
     const result = sharedValue.set(true);
   }, items4);
   const items5 = [sharedValue, callback2, memo, callback1];

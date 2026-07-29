@@ -1,58 +1,58 @@
-// Module ID: 13780
-// Function ID: 105623
+// Module ID: 13801
+// Function ID: 13802
 // Name: SettingsAgeGroupHeader
-// Dependencies: [31, 27, 7733, 653, 33, 4165, 689, 6726, 1921, 4161, 1212, 2717, 10099, 13657, 2]
+// Dependencies: [19, 17, 7756, 676, 21, 4189, 712, 6747, 1945, 4185, 1236, 2741, 10120, 13678, 2]
 // Exports: default
 
-// Module 13780 (SettingsAgeGroupHeader)
-import result from "result";
+// Module 13801 (SettingsAgeGroupHeader)
+import noop from "noop";
 import { View } from "get ActivityIndicator";
 import { MobileSetting } from "MobileSetting";
 import { HelpdeskArticles } from "ME";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_7;
-let closure_8;
+let error;
+let metroImportAll;
 const require = arg1;
 function SettingsAgeGroupHeader() {
-  let obj = { style: _createForOfIteratorHelperLoose().headerContainer };
+  let obj = { style: createCacheKey().headerContainer, children: null };
   const callback = React.useCallback(() => {
-    const obj = outer1_1(outer1_2[7]);
-    obj.openUrl(outer1_1(outer1_2[8]).getArticleURL(outer1_6.TIGGER_PAWTECT_LEARN_MORE));
+    const obj = callback(6747);
+    obj.openUrl(callback(1945).getArticleURL(constants.TIGGER_PAWTECT_LEARN_MORE));
   }, []);
-  obj = { variant: "text-sm/semibold", color: "mobile-text-heading-primary" };
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj.children = intl.string(importDefault(2717).PY4MA0);
-  const items = [callback(require(4161) /* Text */.Text, obj), ];
-  obj = { variant: "text-sm/normal", color: "text-default" };
-  const intl2 = require(1212) /* getSystemLocale */.intl;
-  obj.children = intl2.format(importDefault(2717)["1DN29p"], { handleOnHelpUrlHook: callback });
-  items[1] = callback(require(4161) /* Text */.Text, obj);
-  obj.children = items;
+  obj = { variant: "text-sm/semibold", color: "mobile-text-heading-primary", children: null };
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj[2] = intl.string(importDefault(2741).PY4MA0);
+  const items = [callback(require(4185) /* Text */.Text, obj), ];
+  obj = { variant: "text-sm/normal", color: "text-default", children: null };
+  const intl2 = require(1236) /* getSystemLocale */.intl;
+  obj[2] = intl2.format(importDefault(2741)["1DN29p"], { handleOnHelpUrlHook: callback });
+  items[1] = callback(require(4185) /* Text */.Text, obj);
+  obj[1] = items;
   return callback2(View, obj);
 }
-({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { gap: require("_createForOfIteratorHelperLoose").space.PX_4, paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16, paddingTop: require("_createForOfIteratorHelperLoose").space.PX_16 };
-_createForOfIteratorHelperLoose.headerContainer = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+({ jsx: error, jsxs: metroImportAll } = jsxProd);
+createCacheKey = { headerContainer: null };
+createCacheKey = { gap: require("Themes").space.PX_4, paddingHorizontal: require("Themes").space.PX_16, paddingTop: require("Themes").space.PX_16 };
+createCacheKey[0] = createCacheKey;
+createCacheKey = createCacheKey.createStyles(createCacheKey);
 const result = require("MobileSetting").fileFinishedImporting("modules/user_settings/age_group/native/SettingsAgeGroupScreen.tsx");
 
 export default function SettingsAgeGroupScreen() {
   const node = React.useMemo(() => {
-    let obj = outer1_0(outer1_2[12]);
-    obj = {};
-    obj = {};
-    const intl = outer1_0(outer1_2[10]).intl;
-    obj.label = intl.string(outer1_1(outer1_2[11])["5Mi5TE"]);
+    let obj = callback(10120);
+    obj = { sections: null, ListHeaderComponent: null };
+    obj = { label: null, settings: null };
+    const intl = callback(1236).intl;
+    obj[0] = intl.string(callback2(2741)["5Mi5TE"]);
     const items = [, ];
-    ({ AGE_GROUP_CONFIRM: arr[0], AGE_GROUP_RESET: arr[1] } = outer1_5);
-    obj.settings = items;
+    ({ AGE_GROUP_CONFIRM: arr[0], AGE_GROUP_RESET: arr[1] } = closure_5);
+    obj[1] = items;
     const items1 = [obj];
-    obj.sections = items1;
-    obj.ListHeaderComponent = outer1_10;
+    obj[0] = items1;
+    obj[1] = closure_10;
     return obj.createList(obj);
   }, []);
-  return callback(importDefault(13657), { node });
+  return callback(importDefault(13678), { node });
 };

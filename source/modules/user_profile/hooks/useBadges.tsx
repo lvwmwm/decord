@@ -1,57 +1,58 @@
-// Module ID: 8071
-// Function ID: 64022
+// Module ID: 8095
+// Function ID: 8096
 // Name: useBadges
-// Dependencies: [4005, 1850, 3838, 624, 1212, 2]
+// Dependencies: [4029, 1874, 3862, 647, 1236, 2]
 // Exports: default
 
-// Module 8071 (useBadges)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_3 from "_isNativeReflectConstruct";
+// Module 8095 (useBadges)
+import initialize from "initialize";
+import mergeGuildAvatar from "mergeGuildAvatar";
 
 const require = arg1;
+const legacy_username = "legacy_username";
 const result = require("explicitContentFromProto").fileFinishedImporting("modules/user_profile/hooks/useBadges.tsx");
 
 export default function useBadges(getBadges) {
-  const LegacyUsernameDisabled = require(3838) /* explicitContentFromProto */.LegacyUsernameDisabled;
+  const LegacyUsernameDisabled = require(3862) /* explicitContentFromProto */.LegacyUsernameDisabled;
   let setting = LegacyUsernameDisabled.useSetting();
   if (undefined !== arg1) {
     setting = arg1;
   }
-  const items = [closure_3];
-  const stateFromStores = require(624) /* defaultAreStatesEqual */.useStateFromStores(items, () => outer1_3.getCurrentUser());
-  require(624) /* defaultAreStatesEqual */;
-  [][0] = _isNativeReflectConstruct;
+  let tmpResult = tmp(647);
+  const items = [mergeGuildAvatar];
+  const stateFromStores = tmpResult.useStateFromStores(items, () => currentUser.getCurrentUser());
+  tmpResult = tmp(647);
+  [][0] = initialize;
   if (null == getBadges) {
     return [];
   } else {
     let badges;
-    if (null != getBadges) {
+    if (getBadges != null) {
       badges = getBadges.getBadges();
     }
-    if (null == badges) {
+    if (badges == null) {
       badges = [];
     }
     let found = badges;
-    if (tmp5) {
-      found = badges.filter((id) => id.id !== "legacy_username");
+    if (tmp7) {
+      found = badges.filter((id) => id.id !== closure_4);
     }
     let mapped = found;
-    if (tmp4) {
+    if (tmp6) {
       mapped = found.map((id) => {
         const obj = {};
         const merged = Object.assign(id);
-        if (id.id === "legacy_username") {
-          const intl = outer1_0(outer1_1[4]).intl;
-          let description = intl.string(outer1_0(outer1_1[4]).t.Br1ls3);
+        if (id.id === closure_4) {
+          const intl = callback(1236).intl;
+          let description = intl.string(callback(1236).t.Br1ls3);
         } else {
           description = id.description;
         }
-        obj["description"] = description;
+        obj.description = description;
         return obj;
       });
     }
     return mapped;
   }
-  let obj = require(624) /* defaultAreStatesEqual */;
 };
 export const QUEST_COMPLETED_BADGE = "quest_completed";

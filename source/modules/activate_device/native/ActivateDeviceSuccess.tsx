@@ -1,21 +1,21 @@
-// Module ID: 13000
-// Function ID: 100704
+// Module ID: 13023
+// Function ID: 13024
 // Name: ActivateDeviceSuccess
-// Dependencies: [31, 27, 33, 4165, 1212, 8926, 5119, 1392, 12999, 4161, 4578, 2]
+// Dependencies: [19, 17, 21, 4189, 1236, 8950, 5141, 1416, 13022, 4185, 4600, 2]
 // Exports: ActivateDeviceSuccess
 
-// Module 13000 (ActivateDeviceSuccess)
-import "result";
+// Module 13023 (ActivateDeviceSuccess)
+import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_4;
-let closure_5;
+let c4;
+let c5;
 let closure_6;
 const require = arg1;
-({ jsx: closure_4, jsxs: closure_5, Fragment: closure_6 } = jsxProd);
-let closure_7 = _createForOfIteratorHelperLoose.createStyles({ image: { width: 300, height: 200, alignSelf: "center" } });
+({ jsx: c4, jsxs: c5, Fragment: closure_6 } = jsxProd);
+let closure_7 = createCacheKey.createStyles({ image: { width: 300, height: 200, alignSelf: "center" } });
 const result = require("jsxProd").fileFinishedImporting("modules/activate_device/native/ActivateDeviceSuccess.tsx");
 
 export const ActivateDeviceSuccess = function ActivateDeviceSuccess(onComplete) {
@@ -23,47 +23,48 @@ export const ActivateDeviceSuccess = function ActivateDeviceSuccess(onComplete) 
   let successImage;
   ({ data, successImage } = onComplete);
   if (null != data.twoWayLinkCode) {
-    const intl2 = require(1212) /* getSystemLocale */.intl;
-    let stringResult = intl2.string(require(1212) /* getSystemLocale */.t.QhATl2);
+    const intl2 = require(1236) /* getSystemLocale */.intl;
+    let stringResult = intl2.string(require(1236) /* getSystemLocale */.t.QhATl2);
   } else {
     const scopes = data.scopes;
     stringResult = null;
-    if (scopes.some((arg0) => outer1_0(outer1_2[5]).isSocialLayerUmbrellaScope(arg0))) {
-      const intl = require(1212) /* getSystemLocale */.intl;
-      stringResult = intl.string(require(1212) /* getSystemLocale */.t.vBPvK3);
+    if (scopes.some((arg0) => callback(table[5]).isSocialLayerUmbrellaScope(arg0))) {
+      const intl = require(1236) /* getSystemLocale */.intl;
+      stringResult = intl.string(require(1236) /* getSystemLocale */.t.vBPvK3);
     }
   }
-  let obj = {};
   let tmp9 = null;
   if (null != successImage) {
-    obj = {};
-    let obj2 = require(1392) /* getAvatarURL */;
-    obj.source = obj2.makeSource(successImage);
-    obj.style = tmp.image;
-    obj.resizeMode = "contain";
-    tmp9 = callback(importDefault(5119), obj);
-    const tmp13 = importDefault(5119);
+    let obj = { source: null, style: null, resizeMode: "contain" };
+    let obj1 = require(1416) /* getAvatarURL */;
+    obj[0] = obj1.makeSource(successImage);
+    obj[1] = tmp.image;
+    tmp9 = callback(importDefault(5141), obj);
+    const tmp13 = importDefault(5141);
   }
   const items = [tmp9, , ];
-  obj = { style: importDefault(12999).innerContent };
-  const obj1 = { variant: "heading-lg/bold", color: "mobile-text-heading-primary", style: importDefault(12999).centerText };
-  const intl3 = require(1212) /* getSystemLocale */.intl;
-  obj1.children = intl3.string(require(1212) /* getSystemLocale */.t.qDtJmD);
-  const items1 = [callback(require(4161) /* Text */.Text, obj1), ];
-  let tmp17 = null;
+  obj = { style: importDefault(13022).innerContent, children: null };
+  obj = { variant: "heading-lg/bold", color: "mobile-text-heading-primary", style: null, children: null };
+  obj[2] = importDefault(13022).centerText;
+  const intl3 = require(1236) /* getSystemLocale */.intl;
+  obj[3] = intl3.string(require(1236) /* getSystemLocale */.t.qDtJmD);
+  const items1 = [callback(require(4185) /* Text */.Text, obj), ];
+  let tmp18Result = null;
   if (null != stringResult) {
-    obj2 = { variant: "text-md/medium", color: "text-default", style: importDefault(12999).centerText, children: stringResult };
-    tmp17 = callback(require(4161) /* Text */.Text, obj2);
+    obj1 = { variant: "text-md/medium", color: "text-default", style: null, children: null };
+    obj1[2] = importDefault(13022).centerText;
+    obj1[3] = stringResult;
+    tmp18Result = tmp18(tmp19(4185).Text, obj1);
   }
-  items1[1] = tmp17;
-  obj.children = items1;
+  const obj2 = { children: null };
+  items1[1] = tmp18Result;
+  obj[1] = items1;
   items[1] = closure_5(View, obj);
-  const obj3 = { size: "lg" };
-  const intl4 = require(1212) /* getSystemLocale */.intl;
-  obj3.text = intl4.string(require(1212) /* getSystemLocale */.t.cpT0Cq);
-  obj3.onPress = onComplete.onComplete;
-  obj3.grow = true;
-  items[2] = callback(require(4578) /* Button */.Button, obj3);
-  obj.children = items;
-  return closure_5(closure_6, obj);
+  const obj3 = { size: "lg", text: null, onPress: null, grow: true };
+  const intl4 = tmp19(1236).intl;
+  obj3[1] = intl4.string(require(1236) /* getSystemLocale */.t.cpT0Cq);
+  obj3[2] = onComplete.onComplete;
+  items[2] = callback(require(4600) /* Button */.Button, obj3);
+  obj2[0] = items;
+  return closure_5(closure_6, obj2);
 };

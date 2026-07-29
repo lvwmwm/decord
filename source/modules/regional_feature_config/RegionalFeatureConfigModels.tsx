@@ -1,126 +1,92 @@
-// Module ID: 3850
-// Function ID: 31816
-// Name: SettingsConfig
-// Dependencies: [6, 7, 2]
+// Module ID: 3874
+// Function ID: 3875
+// Name: isFeatureTeenByDefault
+// Dependencies: [2]
 
-// Module 3850 (SettingsConfig)
-import _classCallCheck from "_classCallCheck";
-import _defineProperties from "_defineProperties";
-
-let tmp2 = (() => {
-  class SettingsConfig {
-    constructor(arg0) {
-      tmp = SettingsConfig(this, SettingsConfig);
-      this.teenByDefault = arg0;
-      return;
-    }
+// Module 3874 (isFeatureTeenByDefault)
+class SettingsConfig {
+  constructor(arg0) {
+    obj = Object.create(new.target.prototype);
+    obj.teenByDefault = global;
+    return obj;
   }
-  let obj = {
-    key: "isFeatureTeenByDefault",
-    value(arg0) {
-      return this.teenByDefault & arg0;
-    }
-  };
-  const items = [obj, ];
-  obj = {
-    key: "hasTeenDefaults",
-    value() {
-      const teenByDefault = this.teenByDefault;
-      let num = 0;
-      if (null != teenByDefault) {
-        num = teenByDefault;
-      }
-      return 0 !== num;
-    }
-  };
-  items[1] = obj;
-  return callback(SettingsConfig, items);
-})();
-let closure_2 = tmp2;
-const tmp3 = (() => {
-  class AgeVerificationConfig {
-    constructor(arg0) {
-      tmp = AgeVerificationConfig(this, AgeVerificationConfig);
-      this.gatedFeatures = arg0;
-      return;
-    }
+}
+const prototype = SettingsConfig.prototype;
+prototype["isFeatureTeenByDefault"] = function isFeatureTeenByDefault(arg0) {
+  return this.teenByDefault & arg0;
+};
+prototype["hasTeenDefaults"] = function hasTeenDefaults() {
+  let num = this.teenByDefault;
+  if (num == null) {
+    num = 0;
   }
-  let obj = {
-    key: "isFeatureAgeGated",
-    value(arg0) {
-      return this.gatedFeatures & arg0;
-    }
-  };
-  const items = [obj, ];
-  obj = {
-    key: "hasAgeGatedFeatures",
-    value() {
-      const gatedFeatures = this.gatedFeatures;
-      let num = 0;
-      if (null != gatedFeatures) {
-        num = gatedFeatures;
-      }
-      return 0 !== num;
-    }
-  };
-  items[1] = obj;
-  return callback(AgeVerificationConfig, items);
-})();
-let closure_3 = tmp3;
-const tmp4 = (() => {
-  class RegionalFeatureConfig {
-    constructor(arg0, arg1) {
-      tmp = RegionalFeatureConfig(this, RegionalFeatureConfig);
-      this.settings = arg0;
-      this.ageVerification = arg1;
-      return;
-    }
+  return 0 !== num;
+};
+class AgeVerificationConfig {
+  constructor(arg0) {
+    obj = Object.create(new.target.prototype);
+    obj.gatedFeatures = global;
+    return obj;
   }
-  let obj = {
-    key: "isFeatureAgeGated",
-    value(AGE_GATED_SPACES) {
-      const ageVerification = this.ageVerification;
-      return ageVerification.isFeatureAgeGated(AGE_GATED_SPACES);
-    }
-  };
-  const items = [obj, , , ];
-  obj = {
-    key: "isFeatureTeenByDefault",
-    value(arg0) {
-      const settings = this.settings;
-      return settings.isFeatureTeenByDefault(arg0);
-    }
-  };
-  items[1] = obj;
-  obj = {
-    key: "hasAgeGatedFeatures",
-    value() {
-      const ageVerification = this.ageVerification;
-      return ageVerification.hasAgeGatedFeatures();
-    }
-  };
-  items[2] = obj;
-  items[3] = {
-    key: "hasTeenDefaults",
-    value() {
-      const settings = this.settings;
-      return settings.hasTeenDefaults();
-    }
-  };
-  const items1 = [
-    {
-      key: "fromConnectionOpen",
-      value(teen_by_default_settings) {
-        const tmp = new outer1_2(teen_by_default_settings.teen_by_default_settings);
-        const tmp2 = new outer1_3(teen_by_default_settings.age_gated_features);
-        return new RegionalFeatureConfig(tmp, new outer1_3(teen_by_default_settings.age_gated_features));
-      }
-    }
-  ];
-  return callback(RegionalFeatureConfig, items, items1);
-})();
+}
+const prototype2 = AgeVerificationConfig.prototype;
+prototype2["isFeatureAgeGated"] = function isFeatureAgeGated(arg0) {
+  return this.gatedFeatures & arg0;
+};
+prototype2["hasAgeGatedFeatures"] = function hasAgeGatedFeatures() {
+  let num = this.gatedFeatures;
+  if (num == null) {
+    num = 0;
+  }
+  return 0 !== num;
+};
+let RegionalFeatureConfig;
+class RegionalFeatureConfig {
+  constructor(arg0, arg1) {
+    obj = Object.create(new.target.prototype);
+    obj.settings = global;
+    obj.ageVerification = require;
+    return obj;
+  }
+}
+const prototype3 = RegionalFeatureConfig.prototype;
+prototype3["isFeatureAgeGated"] = function isFeatureAgeGated(arg0) {
+  const ageVerification = this.ageVerification;
+  return ageVerification.isFeatureAgeGated(arg0);
+};
+prototype3["isFeatureTeenByDefault"] = function isFeatureTeenByDefault(arg0) {
+  const settings = this.settings;
+  return settings.isFeatureTeenByDefault(arg0);
+};
+prototype3["hasAgeGatedFeatures"] = function hasAgeGatedFeatures() {
+  const ageVerification = this.ageVerification;
+  return ageVerification.hasAgeGatedFeatures();
+};
+prototype3["hasTeenDefaults"] = function hasTeenDefaults() {
+  const settings = this.settings;
+  return settings.hasTeenDefaults();
+};
+RegionalFeatureConfig["fromConnectionOpen"] = function fromConnectionOpen(regionalFeatureConfig) {
+  if (typeof SettingsConfig !== "find") {
+    HermesBuiltin.throwTypeError();
+  }
+  let obj = Object.create(SettingsConfig.prototype);
+  obj.teenByDefault = regionalFeatureConfig.teen_by_default_settings;
+  if (typeof AgeVerificationConfig !== "find") {
+    HermesBuiltin.throwTypeError();
+  }
+  obj = Object.create(AgeVerificationConfig.prototype);
+  obj.gatedFeatures = regionalFeatureConfig.age_gated_features;
+  if (typeof RegionalFeatureConfig !== "find") {
+    HermesBuiltin.throwTypeError();
+  }
+  const obj1 = Object.create(RegionalFeatureConfig.prototype);
+  obj1.settings = obj;
+  obj1.ageVerification = obj;
+  return obj1;
+};
 const result = require("set").fileFinishedImporting("modules/regional_feature_config/RegionalFeatureConfigModels.tsx");
 
-export const SettingsConfig = tmp2;
-export const AgeVerificationConfig = tmp3;
-export const RegionalFeatureConfig = tmp4;
+export { SettingsConfig };
+export { AgeVerificationConfig };
+export { RegionalFeatureConfig };

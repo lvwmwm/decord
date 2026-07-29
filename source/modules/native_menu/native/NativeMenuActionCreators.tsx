@@ -1,23 +1,23 @@
-// Module ID: 9667
-// Function ID: 75253
-// Dependencies: [686, 4134, 4135, 2]
+// Module ID: 9689
+// Function ID: 9690
+// Dependencies: [709, 4158, 4159, 2]
 
-// Module 9667
+// Module 9689
 let result = require("IMPACT_LIGHT").fileFinishedImporting("modules/native_menu/native/NativeMenuActionCreators.tsx");
 
 export default {
-  showNativeMenu(uID, memo) {
-    let closure_0 = uID;
+  showNativeMenu(key, memo) {
+    let closure_0 = key;
     const importDefault = memo;
-    importDefault(686).wait(() => {
-      let obj = uID(outer1_2[1]);
+    importDefault(709).wait(() => {
+      let obj = key(outer1_2[1]);
       const result = obj.triggerHapticFeedback(memo(outer1_2[2]).IMPACT_LIGHT);
-      obj = { type: "SHOW_NATIVE_MENU", key: uID, menu: memo };
+      obj = { type: "SHOW_NATIVE_MENU", key, menu: memo };
       memo(outer1_2[0]).dispatch(obj);
     });
   },
   hideNativeMenu(key) {
-    let obj = importDefault(686);
+    let obj = importDefault(709);
     obj = { type: "HIDE_NATIVE_MENU", key };
     obj.dispatch(obj);
   }

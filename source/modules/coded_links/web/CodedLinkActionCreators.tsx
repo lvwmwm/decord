@@ -1,8 +1,8 @@
-// Module ID: 8011
-// Function ID: 63649
-// Dependencies: [660, 686, 2]
+// Module ID: 8035
+// Function ID: 8036
+// Dependencies: [683, 709, 2]
 
-// Module 8011
+// Module 8035
 import { CONFERENCE_MODE_ENABLED } from "CONFERENCE_MODE_ENABLED";
 
 const result = require("set").fileFinishedImporting("modules/coded_links/web/CodedLinkActionCreators.tsx");
@@ -12,12 +12,12 @@ export default {
 
   },
   nativeModalOpened(code) {
-    let obj = importDefault(686);
+    let obj = importDefault(709);
     obj = { type: "NATIVE_APP_MODAL_OPENED", code };
     obj.dispatch(obj);
   },
   nativeModalOpenFailed(code) {
-    let obj = importDefault(686);
+    let obj = importDefault(709);
     obj = { type: "NATIVE_APP_MODAL_OPEN_FAILED", code };
     obj.dispatch(obj);
   }

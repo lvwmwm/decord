@@ -1,135 +1,119 @@
-// Module ID: 10363
-// Function ID: 79901
+// Module ID: 10387
+// Function ID: 10388
 // Name: ConfirmationToast
-// Dependencies: [31, 27, 10241, 1853, 33, 4165, 689, 10281, 4026, 4595, 4166, 5184, 1392, 4126, 4161, 2]
+// Dependencies: [19, 17, 10262, 1877, 21, 4189, 712, 10302, 4050, 4617, 4190, 5206, 1416, 4150, 4185, 2]
 // Exports: ConfirmationToast
 
-// Module 10363 (ConfirmationToast)
-import "result";
+// Module 10387 (ConfirmationToast)
+import "noop";
 import { View } from "get ActivityIndicator";
 import set from "set";
 import { EMOJI_URL_BASE_SIZE } from "set";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 import set from "set";
 
-let closure_4;
-let closure_5;
-let closure_7;
-let closure_8;
+let c4;
+let c5;
+let error;
+let metroImportAll;
 const require = arg1;
-({ extrapolateConfig: closure_4, PAN_INPUT_RANGE: closure_5 } = set);
-({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { alignItems: "center", justifyContent: "center", marginTop: require("_createForOfIteratorHelperLoose").space.PX_12 };
-_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
+({ extrapolateConfig: c4, PAN_INPUT_RANGE: c5 } = set);
+({ jsx: error, jsxs: metroImportAll } = jsxProd);
+createCacheKey = { container: null, notificationRow: null, textEmoji: null, imageEmoji: null };
+createCacheKey = { alignItems: "center", justifyContent: "center", marginTop: require("Themes").space.PX_12 };
+createCacheKey[0] = createCacheKey;
 let obj1 = {};
-const merged = Object.assign(require("_createForOfIteratorHelperLoose").shadows.SHADOW_HIGH);
-obj1["flexDirection"] = "row";
-obj1["alignItems"] = "center";
-obj1["justifyContent"] = "center";
-obj1["gap"] = require("_createForOfIteratorHelperLoose").space.PX_8;
-obj1["backgroundColor"] = require("_createForOfIteratorHelperLoose").colors.MOBILE_ALERT_BACKGROUND_DEFAULT;
-obj1["paddingStart"] = require("_createForOfIteratorHelperLoose").space.PX_8;
-obj1["paddingEnd"] = require("_createForOfIteratorHelperLoose").space.PX_12;
-obj1["paddingVertical"] = require("_createForOfIteratorHelperLoose").space.PX_8;
-obj1["borderRadius"] = require("_createForOfIteratorHelperLoose").radii.round;
-obj1["overflow"] = "hidden";
-_createForOfIteratorHelperLoose.notificationRow = obj1;
-_createForOfIteratorHelperLoose.textEmoji = { fontSize: 20 };
-_createForOfIteratorHelperLoose.imageEmoji = { width: 20, height: 20 };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+const merged = Object.assign(require("Themes").shadows.SHADOW_HIGH);
+obj1.flexDirection = "row";
+obj1.alignItems = "center";
+obj1.justifyContent = "center";
+obj1.gap = require("Themes").space.PX_8;
+obj1.backgroundColor = require("Themes").colors.MOBILE_ALERT_BACKGROUND_DEFAULT;
+obj1.paddingStart = require("Themes").space.PX_8;
+obj1.paddingEnd = require("Themes").space.PX_12;
+obj1.paddingVertical = require("Themes").space.PX_8;
+obj1.borderRadius = require("Themes").radii.round;
+obj1.overflow = "hidden";
+createCacheKey[1] = obj1;
+createCacheKey[2] = { fontSize: 20 };
+createCacheKey[3] = { width: 20, height: 20 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
 let closure_10 = { code: "function ConfirmationToastTsx1(){const{animatedValue,interpolate,notificationGestureY,PAN_INPUT_RANGE,extrapolateConfig}=this.__closure;const value=animatedValue.get();const scale=interpolate(value,[0,1],[0.8,1]);const enterTranslateY=interpolate(value,[0,1],[-20,0]);const gestureY=notificationGestureY.get();const dismissOpacity=interpolate(gestureY,PAN_INPUT_RANGE,[0,1,0],extrapolateConfig);return{transform:[{translateY:enterTranslateY+gestureY},{scale:scale}],opacity:value*dismissOpacity};}" };
 let result = set.fileFinishedImporting("modules/in_app_notifications/native/ConfirmationToast.tsx");
 
 export const ConfirmationToast = function ConfirmationToast(reaction) {
-  reaction = reaction.reaction;
-  const tmp = _createForOfIteratorHelperLoose();
-  let obj = notificationGestureY(10281);
+  let animated;
+  animated = reaction.reaction;
+  let notificationGestureY;
+  let sharedValue;
+  const tmp = createCacheKey();
+  let obj = notificationGestureY(10302);
   notificationGestureY = obj.useInAppNotificationContext().notificationGestureY;
-  let obj1 = notificationGestureY(4026);
-  const sharedValue = obj1.useSharedValue(0);
-  sharedValue(4595)(() => {
+  let obj1 = notificationGestureY(4050);
+  sharedValue = obj1.useSharedValue(0);
+  let getEmojiURL = sharedValue;
+  sharedValue(4617)(() => {
     const result = sharedValue.set(notificationGestureY(outer1_2[10]).withTiming(1, { duration: 200 }));
   });
-  let obj2 = notificationGestureY(4026);
+  let obj2 = notificationGestureY(4050);
   class A {
     constructor() {
-      value = closure_1.get();
+      value = c1.get();
       obj = notificationGestureY(outer1_2[8]);
       interpolateResult = obj.interpolate(value, [0, 1], [0.8, 1]);
       obj2 = notificationGestureY(outer1_2[8]);
-      items = [, ];
-      items[0] = -20;
-      items[1] = 0;
-      interpolateResult1 = obj2.interpolate(value, [0, 1], items);
+      interpolateResult1 = obj2.interpolate(value, [0, 1], [-20, 0]);
       value1 = notificationGestureY.get();
-      obj = { transform: items1 };
+      obj = { transform: items, opacity: null };
       obj1 = { translateY: interpolateResult1 + value1 };
-      items1 = [, ];
-      items1[0] = obj1;
-      items1[1] = { scale: interpolateResult };
+      items = [, ];
+      items[0] = obj1;
+      items[1] = { scale: interpolateResult };
       obj5 = notificationGestureY(outer1_2[8]);
-      obj.opacity = value * obj5.interpolate(value1, outer1_5, [0, 1, 0], outer1_4);
+      obj[1] = value * obj5.interpolate(value1, outer1_5, [0, 1, 0], outer1_4);
       return obj;
     }
   }
-  obj = { animatedValue: sharedValue, interpolate: notificationGestureY(4026).interpolate, notificationGestureY, PAN_INPUT_RANGE: closure_5, extrapolateConfig: closure_4 };
+  obj = { animatedValue: sharedValue, interpolate: notificationGestureY(4050).interpolate, notificationGestureY, PAN_INPUT_RANGE: closure_5, extrapolateConfig: closure_4 };
   A.__closure = obj;
   A.__workletHash = 4654280152495;
   A.__initData = closure_10;
   const animatedStyle = obj2.useAnimatedStyle(A);
-  const style = [tmp.container, animatedStyle];
-  obj = { style: tmp.notificationRow };
-  if (null != reaction) {
-    obj1 = {};
-    ({ textEmoji: obj7.textEmojiStyle, imageEmoji: obj7.fastImageStyle } = tmp);
-    let str2 = "";
-    if (null == reaction.id) {
-      str2 = reaction.surrogates;
+  obj = { style: items, children: null };
+  items = [tmp.container, animatedStyle];
+  obj1 = { style: tmp.notificationRow, children: null };
+  if (null != animated) {
+    obj2 = { textEmojiStyle: null, fastImageStyle: null, name: null, src: null };
+    ({ textEmoji: obj8[0], imageEmoji: obj8[1] } = tmp);
+    let str = "";
+    const emojiURL = getEmojiURL(5206);
+    if (null == animated.id) {
+      str = animated.surrogates;
     }
-    obj1.name = str2;
-    if (null != reaction.id) {
-      obj2 = {};
-      ({ id: obj9.id, animated: obj9.animated } = reaction);
-      reaction = EMOJI_URL_BASE_SIZE;
-      obj2.size = EMOJI_URL_BASE_SIZE;
-      let url = sharedValue(1392).getEmojiURL(obj2);
-      const obj8 = sharedValue(1392);
+    obj2[2] = str;
+    if (null != animated.id) {
+      const emojiURL1 = getEmojiURL(1416);
+      getEmojiURL = emojiURL1.getEmojiURL;
+      const obj3 = { id: null, animated: null, size: null };
+      ({ id: obj9[0], animated } = animated);
+      obj3[1] = animated;
+      obj3[2] = EMOJI_URL_BASE_SIZE;
+      let url = getEmojiURL(obj3);
     } else {
-      url = reaction.url;
+      url = animated.url;
     }
-    obj1.src = url;
-    callback(sharedValue(5184), obj1);
-    const tmp11 = callback;
-    const tmp14 = sharedValue(5184);
+    obj2[3] = url;
+    tmp7(emojiURL, obj2);
   } else {
-    const obj3 = { size: "md", color: sharedValue(689).colors.STATUS_POSITIVE };
-    let items1 = [callback(notificationGestureY(4126).CircleCheckIcon, obj3), ];
-    const obj4 = { variant: "text-sm/semibold", color: "text-default", children: reaction.message };
-    items1[1] = callback(notificationGestureY(4161).Text, obj4);
-    obj.children = items1;
-    class A {
-      constructor() {
-        value = closure_1.get();
-        obj = notificationGestureY(outer1_2[8]);
-        interpolateResult = obj.interpolate(value, [0, 1], [0.8, 1]);
-        obj2 = notificationGestureY(outer1_2[8]);
-        items = [, ];
-        items[0] = -20;
-        items[1] = 0;
-        interpolateResult1 = obj2.interpolate(value, [0, 1], items);
-        value1 = notificationGestureY.get();
-        obj = { transform: items1 };
-        obj1 = { translateY: interpolateResult1 + value1 };
-        items1 = [, ];
-        items1[0] = obj1;
-        items1[1] = { scale: interpolateResult };
-        obj5 = notificationGestureY(outer1_2[8]);
-        obj.opacity = value * obj5.interpolate(value1, outer1_5, [0, 1, 0], outer1_4);
-        return obj;
-      }
-    }
-    return callback(tmp6, { style });
+    const obj4 = { size: "md", color: null };
+    obj4[1] = getEmojiURL(712).colors.STATUS_POSITIVE;
+    const items1 = [tmp7(tmp2(4150).CircleCheckIcon, obj4), ];
+    const obj5 = { variant: "text-sm/semibold", color: "text-default", children: null };
+    obj5[2] = reaction.message;
+    items1[1] = tmp7(tmp2(4185).Text, obj5);
+    obj1[1] = items1;
+    obj[1] = tmp9(tmp10, obj1);
+    return tmp7(tmp8, obj);
   }
 };

@@ -1,159 +1,450 @@
-// Module ID: 13529
-// Function ID: 103859
-// Name: _createForOfIteratorHelperLoose
-// Dependencies: [5, 653, 686, 10621, 6280, 2]
+// Module ID: 13552
+// Function ID: 13553
+// Name: transformSubscriptionListingToSku
+// Dependencies: [5, 676, 709, 10644, 6301, 2]
 // Exports: dismissApplicationSubscriptionExpirationNotice, fetchAllSubscriptionListingsDataForApplication, fetchEntitlementsForGuild
 
-// Module 13529 (_createForOfIteratorHelperLoose)
+// Module 13552 (transformSubscriptionListingToSku)
 import set from "set";
 import ME from "ME";
 
-let closure_4;
-let closure_5;
-function _createForOfIteratorHelperLoose(iterable) {
-  let closure_0 = iterable;
-  iterable = "undefined" !== typeof Symbol;
-  if (iterable) {
-    const _Symbol = Symbol;
-    iterable = iterable[Symbol.iterator];
-  }
-  if (!iterable) {
-    iterable = iterable[Symbol.iterator];
-  }
-  if (iterable) {
-    const iter = iterable.call(iterable);
-    const next = iter.next;
-    return next.bind(iter);
-  } else {
-    const _Array = Array;
-    let tmp = iterable;
-    if (!Array.isArray(iterable)) {
-      let tmp2;
-      if (iterable) {
-        if ("string" === typeof iterable) {
-          tmp2 = _arrayLikeToArray(iterable, undefined);
-        } else {
-          const toString = {}.toString;
-          const substr = toString.call(iterable).slice(8, -1);
-          let name = substr;
-          if (tmp3) {
-            name = iterable.constructor.name;
-          }
-          if ("Map" !== name) {
-            if ("Set" !== name) {
-              if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(iterable, undefined);
-              } else {
-                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
-              }
-            }
-            tmp2 = arr;
-          }
-          const _Array2 = Array;
-          arr = Array.from(iterable);
-          const callResult = toString.call(iterable);
-          tmp3 = "Object" === substr && iterable.constructor;
-        }
-      }
-      tmp = tmp2;
-      if (!tmp2) {
-        const _TypeError = TypeError;
-        const typeError = new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
-        throw typeError;
-      }
-    }
-    if (tmp) {
-      closure_0 = tmp;
-    }
-    let c1 = 0;
-    return () => {
-      if (closure_1 >= length.length) {
-        let obj = { done: true };
-      } else {
-        obj = { done: false };
-        closure_1 = tmp3 + 1;
-        obj.value = length[+closure_1];
-      }
-      return obj;
-    };
-  }
-}
-function _arrayLikeToArray(arg0, arg1) {
-  let length;
-  if (tmp) {
-    length = arg0.length;
-  }
-  const ArrayResult = Array(length);
-  for (let num = 0; num < length; num = num + 1) {
-    ArrayResult[num] = arg0[num];
-  }
-  return ArrayResult;
-}
+let c4;
+let c5;
 function transformSubscriptionListingToSku(id) {
   return { id: id.id, type: constants2.SUBSCRIPTION, application_id: id.application_id, product_line: constants.APPLICATION, name: id.name, summary: "", description: id.description, flags: id.sku_flags, manifests: [], available_regions: [], legal_notice: "", deleted: id.soft_deleted, price_tier: 0, show_age_gate: false, restricted: false };
 }
 function transformSubscriptionListingToStoreListing(id) {
-  const obj = { id: id.id, sku: transformSubscriptionListingToSku(id), summary: id.description, description: id.description };
+  obj = { id: id.id, sku: obj, summary: id.description, description: id.description, benefits: null, thumbnail: null, published: null };
+  obj = { id: id.id, type: constants2.SUBSCRIPTION, application_id: id.application_id, product_line: constants.APPLICATION, name: id.name, summary: "", description: id.description, flags: id.sku_flags, manifests: [], available_regions: [], legal_notice: "", deleted: id.soft_deleted, price_tier: 0, show_age_gate: false, restricted: false };
   let prop = id.store_listing_benefits;
-  if (null == prop) {
+  if (prop == null) {
     prop = [];
   }
-  obj.benefits = prop;
-  ({ image_asset: obj.thumbnail, published: obj.published } = id);
+  obj[4] = prop;
+  ({ image_asset: obj[5], published: obj[6] } = id);
   return obj;
 }
 function dispatchCompat(arr) {
-  let done;
-  let obj = importDefault(686);
+  let obj = importDefault(709);
   obj = { type: "SKUS_FETCH_SUCCESS", skus: arr.map(transformSubscriptionListingToSku) };
   obj.dispatch(obj);
   obj = { type: "STORE_LISTINGS_FETCH_SUCCESS", storeListings: arr.map(transformSubscriptionListingToStoreListing) };
-  importDefault(686).dispatch(obj);
-  const tmp3 = _createForOfIteratorHelperLoose(arr);
-  let iter = tmp3();
-  if (!iter.done) {
-    do {
-      let value = iter.value;
-      let tmp4 = importDefault;
-      let tmp5 = dependencyMap;
-      let obj5 = importDefault(686);
-      let obj1 = { type: "SUBSCRIPTION_PLANS_FETCH_SUCCESS", skuId: value.id, subscriptionPlans: value.subscription_plans };
-      let dispatchResult2 = obj5.dispatch(obj1);
-      let iter2 = tmp3();
-      iter = iter2;
-      done = iter2.done;
-    } while (!done);
+  importDefault(709).dispatch(obj);
+  const iter = arr[Symbol.iterator]();
+  const obj3 = importDefault(709);
+  while (iter !== undefined) {
+    let tmp4 = importDefault;
+    let tmp5 = dependencyMap;
+    let obj5 = importDefault(709);
+    let obj1 = { type: "SUBSCRIPTION_PLANS_FETCH_SUCCESS", skuId: null, subscriptionPlans: null };
+    ({ id: obj6[1], subscription_plans: obj6[2] } = nextResult);
+    let dispatchResult2 = obj5.dispatch(obj1);
+    continue;
   }
 }
 function _fetchAllSubscriptionListingsDataForApplication() {
-  // CreateGeneratorClosureLongIndex (0x67)
-  const obj = callback(tmp);
-  return obj(...arguments);
+  const self = this;
+  const tmp = callback((arg0, arg1) => {
+    let closure_0 = arg0;
+    let closure_1 = arg1;
+    let c7 = 0;
+    let c8 = 0;
+    let c6 = 0;
+    return (function*(arg0, arg1) {
+      if (c8 === 2) {
+        c8 = 3;
+        HermesBuiltin.throwTypeError();
+      } else if (tmp6 === 3) {
+        if (arg0 === 1) {
+          throw arg1;
+        } else if (arg0 === 2) {
+          let obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
+        } else {
+          return { value: "HermesInternal", done: null };
+        }
+      } else {
+        try {
+          c8 = 2;
+          if (0 === c7) {
+            if (arg0 === 1) {
+              c8 = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              c8 = 3;
+              obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            } else {
+              let closure_4 = tmp3;
+              let set = tmp7;
+              let lib;
+              const obj1 = { type: "APPLICATION_SUBSCRIPTIONS_FETCH_LISTINGS", applicationId: null, groupListingId: null };
+              obj1[1] = callback;
+              obj1[2] = lib;
+              callback(outer1_2[2]).dispatch(obj1);
+              let c6 = 1;
+              const obj10 = callback(outer1_2[2]);
+              c7 = 2;
+              c8 = 1;
+              let obj2 = { value: null, done: false };
+              obj2[0] = lib(outer1_2[3]).getApplicationSubscriptionGroupListingsForApplication(callback, lib);
+              return obj2;
+            }
+          } else if (1 === tmp7) {
+            c6 = 0;
+            obj2 = callback(709);
+            const obj3 = { type: "APPLICATION_SUBSCRIPTIONS_FETCH_LISTINGS_FAILURE", applicationId: null };
+            obj3[1] = callback;
+            obj2.dispatch(obj3);
+            c8 = 3;
+            return { value: "HermesInternal", done: null };
+          } else if (arg0 === 1) {
+            c8 = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            c6 = 0;
+            c8 = 3;
+            const obj4 = { value: null, done: true };
+            obj4[0] = arg1;
+            return obj4;
+          } else {
+            lib = arg1;
+            const obj5 = { type: "APPLICATION_SUBSCRIPTIONS_FETCH_LISTINGS_SUCCESS", applicationId: null, groupListing: null };
+            obj5[1] = callback;
+            obj5[2] = lib;
+            callback(709).dispatch(obj5);
+            const subscription_listings = lib.subscription_listings;
+            let dependencyMap = subscription_listings;
+            if (subscription_listings == null) {
+              dependencyMap = [];
+            }
+            c8(dependencyMap);
+            c6 = 0;
+            c8 = 3;
+            obj = { value: null, done: true };
+            obj[0] = lib;
+            return obj;
+          }
+        } catch (tmp18) {
+          let closure_5 = tmp18;
+          if (tmp4 === c6) {
+            c8 = tmp2;
+            throw tmp18;
+          } else {
+            c7 = tmp;
+          }
+        }
+      }
+    })();
+  });
+  const _fetchAllSubscriptionListingsDataForApplication = tmp;
+  const apply = tmp.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
 }
 function _fetchEntitlementsForGuild() {
-  // CreateGeneratorClosureLongIndex (0x67)
-  const obj = callback(tmp);
-  return obj(...arguments);
+  const self = this;
+  const tmp = callback((arg0) => {
+    let closure_0 = arg0;
+    let c5 = 0;
+    let c6 = 0;
+    let c4 = 0;
+    return (function*(arg0) {
+      if (c6 === 2) {
+        c6 = 3;
+        HermesBuiltin.throwTypeError();
+      } else if (tmp6 === 3) {
+        if (arg0 === 1) {
+          throw arg1;
+        } else if (arg0 === 2) {
+          let obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
+        } else {
+          return { value: "HermesInternal", done: null };
+        }
+      } else {
+        try {
+          c6 = 2;
+          if (0 === c5) {
+            if (arg0 === 1) {
+              c6 = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              c6 = 3;
+              obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            } else {
+              const dependencyMap = tmp3;
+              let closure_1 = tmp7;
+              closure_1 = undefined;
+              const obj1 = { type: "APPLICATION_SUBSCRIPTIONS_FETCH_ENTITLEMENTS", guildId: null };
+              obj1[1] = callback;
+              callback(outer1_2[2]).dispatch(obj1);
+              let c4 = 1;
+              const obj9 = callback(outer1_2[2]);
+              c5 = 2;
+              c6 = 1;
+              const obj2 = { value: null, done: false };
+              obj2[0] = outer1_1(outer1_2[3]).getEntitlementsForGuild(callback);
+              return obj2;
+            }
+          } else {
+            if (1 === tmp7) {
+              c4 = 0;
+              let obj3 = callback(709);
+              obj3 = { type: "APPLICATION_SUBSCRIPTIONS_FETCH_ENTITLEMENTS_FAILURE", guildId: null };
+              obj3[1] = callback;
+              obj3.dispatch(obj3);
+              c6 = 3;
+            } else if (arg0 === 1) {
+              c6 = 3;
+              throw arg1;
+            } else if (arg0 !== 2) {
+              closure_1 = arg1;
+              obj = callback(709);
+              const obj4 = { type: "APPLICATION_SUBSCRIPTIONS_FETCH_ENTITLEMENTS_SUCCESS", guildId: null, entitlements: null };
+              obj4[1] = callback;
+              obj4[2] = closure_1;
+              obj.dispatch(obj4);
+              c4 = 0;
+            }
+            c4 = 0;
+            c6 = 3;
+            const obj5 = { value: null, done: true };
+            obj5[0] = arg1;
+            return obj5;
+          }
+        } catch (tmp22) {
+          let set = tmp22;
+          if (tmp4 === c4) {
+            c6 = tmp2;
+            throw tmp22;
+          } else {
+            c5 = tmp;
+          }
+        }
+      }
+    })();
+  });
+  const _fetchEntitlementsForGuild = tmp;
+  const apply = tmp.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
 }
 function fetchSubscriptionListingForPlan() {
-  return _fetchSubscriptionListingForPlan(...arguments);
+  const self = this;
+  const apply = _fetchSubscriptionListingForPlan.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
 }
 function _fetchSubscriptionListingForPlan() {
-  // CreateGeneratorClosureLongIndex (0x67)
-  const obj = callback(tmp);
-  return obj(...arguments);
+  const self = this;
+  const tmp = callback((arg0) => {
+    let closure_0 = arg0;
+    let closure_1 = arg1;
+    let c7 = 0;
+    let c8 = 0;
+    let c6 = 0;
+    const iter = (function*(arg0) {
+      if (v0 === 2) {
+        v0 = 3;
+        HermesBuiltin.throwTypeError();
+      } else if (tmp6 === 3) {
+        if (arg0 === 1) {
+          throw arg1;
+        } else if (arg0 === 2) {
+          let obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
+        } else {
+          return { value: "HermesInternal", done: null };
+        }
+      } else {
+        try {
+          v0 = 2;
+          if (0 === c7) {
+            if (arg0 === 1) {
+              v0 = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              v0 = 3;
+              obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            } else {
+              let status = tmp3;
+              let set = tmp7;
+              let num13;
+              if (num13 === undefined) {
+                num13 = 0;
+              }
+              obj = undefined;
+              set = undefined;
+              c7 = 1;
+              v0 = 1;
+              return { value: "ct", done: null };
+            }
+          } else if (1 === tmp7) {
+            if (arg0 === 1) {
+              v0 = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              v0 = 3;
+              const obj1 = { value: null, done: true };
+              obj1[0] = arg1;
+              return obj1;
+            } else {
+              const obj2 = { type: "APPLICATION_SUBSCRIPTIONS_FETCH_LISTING_FOR_PLAN", planId: null };
+              obj2[1] = callback;
+              callback(obj[2]).dispatch(obj2);
+              let c6 = 1;
+              const obj12 = callback(obj[2]);
+              c7 = 3;
+              v0 = 1;
+              const obj3 = { value: null, done: false };
+              obj3[0] = num13(obj[3]).getSubscriptionGroupForSubscriptionPlan(callback);
+              return obj3;
+            }
+          } else if (2 === tmp7) {
+            c6 = 0;
+            status = closure_5;
+            if ("status" in status) {
+              if (429 === status.status) {
+                if (num13 < 10) {
+                  const sum = num13 + 1;
+                  num13 = sum;
+                  c7 = 5;
+                  v0 = 1;
+                  const obj4 = { value: null, done: false };
+                  obj4[0] = callback2(callback, sum);
+                  return obj4;
+                }
+              }
+            }
+            throw status;
+          } else if (3 === tmp7) {
+            if (arg0 === 1) {
+              v0 = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              c6 = 0;
+              v0 = 3;
+              const obj5 = { value: null, done: true };
+              obj5[0] = arg1;
+              return obj5;
+            } else {
+              obj = arg1;
+              const obj6 = { type: "APPLICATION_SUBSCRIPTIONS_FETCH_LISTING_FOR_PLAN_SUCCESS", groupListing: null };
+              obj6[1] = obj;
+              callback(obj[2]).dispatch(obj6);
+              const subscription_listings = obj.subscription_listings;
+              obj = subscription_listings;
+              if (subscription_listings == null) {
+                obj = [];
+              }
+              set = obj;
+              c7 = 4;
+              v0 = 1;
+              const obj7 = { value: null, done: false };
+              obj7[0] = Promise.all(set.map((id) => {
+                if (id.subscription_plans[0].id === closure_0) {
+                  const obj = num13(table[4]);
+                  return obj.fetchSubscriptionPlansForSKU(id.id, undefined, undefined, true);
+                }
+              }));
+              return obj7;
+            }
+          } else {
+            if (4 === tmp7) {
+              if (arg0 === 1) {
+                v0 = 3;
+                throw arg1;
+              } else if (arg0 === 2) {
+                c6 = 0;
+                v0 = 3;
+                const obj8 = { value: null, done: true };
+                obj8[0] = arg1;
+                return obj8;
+              } else {
+                v0(set);
+                c6 = 0;
+              }
+            } else if (arg0 === 1) {
+              v0 = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              v0 = 3;
+              obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            }
+            v0 = 3;
+            return { value: "HermesInternal", done: null };
+          }
+        } catch (tmp33) {
+          closure_5 = tmp33;
+          if (tmp4 === c6) {
+            v0 = tmp2;
+            throw tmp33;
+          } else {
+            c7 = tmp;
+          }
+        }
+      }
+    })();
+    iter.next();
+    return iter;
+  });
+  const _fetchSubscriptionListingForPlan = tmp;
+  const apply = tmp.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
 }
-({ SKUProductLines: closure_4, SKUTypes: closure_5 } = ME);
+({ SKUProductLines: c4, SKUTypes: c5 } = ME);
 const result = require("dispatcher").fileFinishedImporting("modules/premium_apps/ApplicationSubscriptionsActionCreators.tsx");
 
-export const fetchAllSubscriptionListingsDataForApplication = function fetchAllSubscriptionListingsDataForApplication(arg0, id) {
-  return _fetchAllSubscriptionListingsDataForApplication(...arguments);
+export const fetchAllSubscriptionListingsDataForApplication = function fetchAllSubscriptionListingsDataForApplication(closure_0, id) {
+  const self = this;
+  const apply = _fetchAllSubscriptionListingsDataForApplication.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
 };
 export const fetchEntitlementsForGuild = function fetchEntitlementsForGuild() {
-  return _fetchEntitlementsForGuild(...arguments);
+  const self = this;
+  const apply = _fetchEntitlementsForGuild.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
 };
 export const dismissApplicationSubscriptionExpirationNotice = function dismissApplicationSubscriptionExpirationNotice(guildId) {
-  let obj = importDefault(686);
+  let obj = importDefault(709);
   obj = { type: "APPLICATION_SUBSCRIPTIONS_CHANNEL_NOTICE_DISMISSED", guildId };
   obj.dispatch(obj);
 };

@@ -1,10 +1,10 @@
-// Module ID: 7953
-// Function ID: 63131
+// Module ID: 7978
+// Function ID: 7979
 // Name: _isStreaming
-// Dependencies: [4190, 653, 2]
+// Dependencies: [4214, 676, 2]
 // Exports: default
 
-// Module 7953 (_isStreaming)
+// Module 7978 (_isStreaming)
 import { validStreamURL } from "items3";
 import { ActivityTypes } from "ME";
 
@@ -29,7 +29,14 @@ export default function isStreaming(activeSourceId, arg1) {
     if (Array.isArray(activeSourceId)) {
       let someResult = activeSourceId.some(_isStreaming);
     } else {
-      someResult = _isStreaming(activeSourceId);
+      someResult = activeSourceId.type === ActivityTypes.STREAMING;
+      if (someResult) {
+        let isMatch = null != activeSourceId.url;
+        if (isMatch) {
+          isMatch = validStreamURL.test(activeSourceId.url);
+        }
+        someResult = isMatch;
+      }
     }
   }
 };

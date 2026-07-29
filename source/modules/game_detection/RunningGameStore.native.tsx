@@ -1,282 +1,142 @@
-// Module ID: 4185
-// Function ID: 35129
-// Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 4186, 4197, 4200, 4211, 566, 686, 2]
+// Module ID: 4209
+// Function ID: 4210
+// Name: initialize
+// Dependencies: [4210, 4221, 4224, 4235, 589, 709, 2]
 // Exports: gameKey, getRawOverlayGameStatus, isDetectionEnabled, maybeTransformSubgame, transformForGameSettings
 
-// Module 4185 (_isNativeReflectConstruct)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_3 from "_isNativeReflectConstruct";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
-import closure_7 from "_isNativeReflectConstruct";
-import closure_8 from "_isNativeReflectConstruct";
-import closure_9 from "_isNativeReflectConstruct";
+// Module 4209 (initialize)
+import map from "map";
+import gameFromServer from "gameFromServer";
+import setLibraryApplications from "setLibraryApplications";
+import { Store } from "initialize";
 
 const require = arg1;
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
-  }
-  const result = _isNativeReflectConstruct();
+class RunningGameStore extends Store {
 }
-let tmp2 = ((Store) => {
-  class RunningGameStore {
-    constructor() {
-      self = this;
-      tmp = outer1_2(this, RunningGameStore);
-      obj = outer1_5(RunningGameStore);
-      tmp2 = outer1_4;
-      if (outer1_10()) {
-        tmp6 = globalThis;
-        _Reflect = Reflect;
-        tmp7 = outer1_5;
-        tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, outer1_5(self).constructor);
-      } else {
-        tmp3 = arguments;
-        tmp4 = arguments;
-        constructResult = obj(...arguments);
-      }
-      return tmp2(self, constructResult);
-    }
-  }
-  callback2(RunningGameStore, Store);
-  let obj = {
-    key: "initialize",
-    value() {
+const prototype = RunningGameStore.prototype;
+prototype["initialize"] = function initialize() {
 
-    }
-  };
-  const items = [obj, , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , ];
-  obj = {
-    key: "getVisibleGame",
-    value() {
-      return null;
-    }
-  };
-  items[1] = obj;
-  obj = {
-    key: "getCurrentGameForAnalytics",
-    value() {
-      return null;
-    }
-  };
-  items[2] = obj;
-  items[3] = {
-    key: "getCurrentNonGameForAnalytics",
-    value() {
-      return null;
-    }
-  };
-  items[4] = {
-    key: "getVisibleRunningGames",
-    value() {
-      return [];
-    }
-  };
-  items[5] = {
-    key: "getRunningGames",
-    value() {
-      return [];
-    }
-  };
-  items[6] = {
-    key: "getDebugRunningGame",
-    value() {
-      return null;
-    }
-  };
-  items[7] = {
-    key: "getDetectionDebug",
-    value() {
-      return null;
-    }
-  };
-  items[8] = {
-    key: "getRunningNonGames",
-    value() {
-      return [];
-    }
-  };
-  items[9] = {
-    key: "getRunningDiscordApplicationIds",
-    value() {
-      return [];
-    }
-  };
-  items[10] = {
-    key: "getRunningVerifiedApplicationIds",
-    value() {
-      return [];
-    }
-  };
-  items[11] = {
-    key: "getGameForPID",
-    value() {
-      return null;
-    }
-  };
-  items[12] = {
-    key: "getGameForName",
-    value() {
-      return null;
-    }
-  };
-  items[13] = {
-    key: "getGameOrTransformedSubgameForPID",
-    value() {
-      return null;
-    }
-  };
-  items[14] = {
-    key: "getLauncherForPID",
-    value() {
-      return null;
-    }
-  };
-  items[15] = {
-    key: "getOverlayOptionsForPID",
-    value() {
-      return null;
-    }
-  };
-  items[16] = {
-    key: "shouldElevateProcessForPID",
-    value() {
-      return false;
-    }
-  };
-  items[17] = {
-    key: "shouldContinueWithoutElevatedProcessForPID",
-    value() {
-      return false;
-    }
-  };
-  items[18] = {
-    key: "canCollectExecutableFingerprintsForRunningGames",
-    value() {
-      return false;
-    }
-  };
-  items[19] = {
-    key: "getCandidateGames",
-    value() {
-      return [];
-    }
-  };
-  items[20] = {
-    key: "isGamesSeenLoaded",
-    value() {
-      return true;
-    }
-  };
-  items[21] = {
-    key: "isGameSeen",
-    value() {
-      return false;
-    }
-  };
-  items[22] = {
-    key: "getGamesSeen",
-    value() {
-      return [];
-    }
-  };
-  items[23] = {
-    key: "getSeenGameByName",
-    value() {
-      return null;
-    }
-  };
-  items[24] = {
-    key: "isObservedAppRunning",
-    value() {
-      return false;
-    }
-  };
-  items[25] = {
-    key: "getOverlayEnabledForGame",
-    value() {
-      return false;
-    }
-  };
-  items[26] = {
-    key: "getOverrides",
-    value() {
-      return [];
-    }
-  };
-  items[27] = {
-    key: "getOverrideForGame",
-    value() {
-      return null;
-    }
-  };
-  items[28] = {
-    key: "getGameOverlayStatus",
-    value() {
-      return null;
-    }
-  };
-  items[29] = {
-    key: "getObservedAppNameForWindow",
-    value() {
-      return null;
-    }
-  };
-  items[30] = {
-    key: "canShowAdminWarning",
-    get() {
-      return false;
-    }
-  };
-  items[31] = {
-    key: "isDetectionEnabled",
-    value() {
-      return false;
-    }
-  };
-  items[32] = {
-    key: "addExecutableTrackedByAnalytics",
-    value() {
+};
+prototype["getVisibleGame"] = function getVisibleGame() {
+  return null;
+};
+prototype["getCurrentGameForAnalytics"] = function getCurrentGameForAnalytics() {
+  return null;
+};
+prototype["getCurrentNonGameForAnalytics"] = function getCurrentNonGameForAnalytics() {
+  return null;
+};
+prototype["getVisibleRunningGames"] = function getVisibleRunningGames() {
+  return [];
+};
+prototype["getRunningGames"] = function getRunningGames() {
+  return [];
+};
+prototype["getDebugRunningGame"] = function getDebugRunningGame() {
+  return null;
+};
+prototype["getDetectionDebug"] = function getDetectionDebug() {
+  return null;
+};
+prototype["getRunningNonGames"] = function getRunningNonGames() {
+  return [];
+};
+prototype["getRunningDiscordApplicationIds"] = function getRunningDiscordApplicationIds() {
+  return [];
+};
+prototype["getRunningVerifiedApplicationIds"] = function getRunningVerifiedApplicationIds() {
+  return [];
+};
+prototype["getGameForPID"] = function getGameForPID(pid) {
+  return null;
+};
+prototype["getGameForName"] = function getGameForName() {
+  return null;
+};
+prototype["getGameOrTransformedSubgameForPID"] = function getGameOrTransformedSubgameForPID() {
+  return null;
+};
+prototype["getLauncherForPID"] = function getLauncherForPID() {
+  return null;
+};
+prototype["getOverlayOptionsForPID"] = function getOverlayOptionsForPID() {
+  return null;
+};
+prototype["shouldElevateProcessForPID"] = function shouldElevateProcessForPID() {
+  return false;
+};
+prototype["shouldContinueWithoutElevatedProcessForPID"] = function shouldContinueWithoutElevatedProcessForPID(closure_0) {
+  return false;
+};
+prototype["canCollectExecutableFingerprintsForRunningGames"] = function canCollectExecutableFingerprintsForRunningGames() {
+  return false;
+};
+prototype["getCandidateGames"] = function getCandidateGames() {
+  return [];
+};
+prototype["isGamesSeenLoaded"] = function isGamesSeenLoaded() {
+  return true;
+};
+prototype["isGameSeen"] = function isGameSeen() {
+  return false;
+};
+prototype["getGamesSeen"] = function getGamesSeen(arg0, arg1) {
+  return [];
+};
+prototype["getSeenGameByName"] = function getSeenGameByName() {
+  return null;
+};
+prototype["isObservedAppRunning"] = function isObservedAppRunning(name) {
+  return false;
+};
+prototype["getOverlayEnabledForGame"] = function getOverlayEnabledForGame() {
+  return false;
+};
+prototype["getOverrides"] = function getOverrides() {
+  return [];
+};
+prototype["getOverrideForGame"] = function getOverrideForGame(arg0) {
+  return null;
+};
+prototype["getGameOverlayStatus"] = function getGameOverlayStatus() {
+  return null;
+};
+prototype["getObservedAppNameForWindow"] = function getObservedAppNameForWindow(sourceId) {
+  return null;
+};
+Object.defineProperty(prototype, "canShowAdminWarning", {
+  get: function canShowAdminWarning() {
+    return false;
+  },
+  set: undefined
+});
+prototype["isDetectionEnabled"] = function isDetectionEnabled() {
+  return false;
+};
+prototype["addExecutableTrackedByAnalytics"] = function addExecutableTrackedByAnalytics() {
 
-    }
-  };
-  items[33] = {
-    key: "getSystemServiceStatus",
-    value() {
-      return { state: "unknown" };
-    }
-  };
-  items[34] = {
-    key: "isSystemServiceInitialized",
-    value() {
-      return false;
-    }
-  };
-  return callback(RunningGameStore, items);
-})(require("initialize").Store);
-tmp2.displayName = "RunningGameStore";
-tmp2 = new tmp2(require("dispatcher"), {});
-let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/game_detection/RunningGameStore.native.tsx");
+};
+prototype["getSystemServiceStatus"] = function getSystemServiceStatus() {
+  return { state: "unknown" };
+};
+prototype["isSystemServiceInitialized"] = function isSystemServiceInitialized() {
+  return false;
+};
+RunningGameStore.displayName = "RunningGameStore";
+const runningGameStore = new RunningGameStore(require("dispatcher"), {});
+const result = require("setLibraryApplications").fileFinishedImporting("modules/game_detection/RunningGameStore.native.tsx");
 
-export default tmp2;
+export default runningGameStore;
 export function gameKey() {
   return "";
 }
 export const getRawOverlayGameStatus = function getRawOverlayGameStatus() {
   if (arg1 === undefined) {
-    const items = [closure_8, closure_9, closure_7];
+    const items = [gameFromServer, setLibraryApplications, map];
   }
-  const obj = { source: require(4211) /* DevToolsFocusedPidsTrackMode */.OverlayGameStatusSource.UNKNOWN, enabledOOP: false, enabledLegacy: false, overlayMethod: require(4211) /* DevToolsFocusedPidsTrackMode */.OverlayMethod.Disabled, reason: "Dummy implementation" };
-  return obj;
+  return { source: require(4235) /* DevToolsFocusedPidsTrackMode */.OverlayGameStatusSource.UNKNOWN, enabledOOP: false, enabledLegacy: false, overlayMethod: require(4235) /* DevToolsFocusedPidsTrackMode */.OverlayMethod.Disabled, reason: "Dummy implementation" };
 };
-export function isDetectionEnabled(value) {
+export function isDetectionEnabled() {
   return false;
 }
 export function maybeTransformSubgame(arg0) {
@@ -285,9 +145,9 @@ export function maybeTransformSubgame(arg0) {
 export const transformForGameSettings = function transformForGameSettings(arg0) {
   const obj = {};
   const merged = Object.assign(arg0);
-  obj["played"] = "";
-  obj["overlay"] = false;
-  obj["verified"] = false;
-  obj["detectable"] = false;
+  obj.played = "";
+  obj.overlay = false;
+  obj.verified = false;
+  obj.detectable = false;
   return obj;
 };

@@ -1,162 +1,217 @@
-// Module ID: 16130
-// Function ID: 124650
-// Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 5026, 5070, 1348, 1911, 1838, 4843, 3, 686, 5112, 566, 5918, 1193, 21, 2]
+// Module ID: 16165
+// Function ID: 16166
+// Name: handleDeletedEntityIds
+// Dependencies: [5048, 5092, 1372, 1935, 1862, 4865, 3, 5134, 709, 589, 5937, 1217, 11, 2]
 
-// Module 16130 (_isNativeReflectConstruct)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_3 from "_isNativeReflectConstruct";
-import GuildsRequiringDeletedIdsSync from "GuildsRequiringDeletedIdsSync";
-import DISCORD_EPOCH from "DISCORD_EPOCH";
-import set from "set";
-import closure_7 from "_isNativeReflectConstruct";
-import closure_8 from "_isNativeReflectConstruct";
-import closure_9 from "_isNativeReflectConstruct";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import closure_11 from "_createForOfIteratorHelperLoose";
-import closure_12 from "_isNativeReflectConstruct";
-import importDefaultResult from "_getPrototypeOf";
-import tmp4 from "AutomaticLifecycleManager";
+// Module 16165 (handleDeletedEntityIds)
+import getEmojiToGroupId from "getEmojiToGroupId";
+import loadSavedGuildStickers from "loadSavedGuildStickers";
+import ensureGuildLoaded from "ensureGuildLoaded";
+import createGuildRoleRecordFromRust from "createGuildRoleRecordFromRust";
+import createGuildRecordFromRust from "createGuildRecordFromRust";
+import _handleConnectionOpen from "_handleConnectionOpen";
+import "initialize";
 
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
-  }
-  const result = _isNativeReflectConstruct();
-}
-function handleDeletedEntityIds(guild_id, arg1) {
+function handleDeletedEntityIds(guild_id) {
   const importDefault = guild_id;
   guild = guild.getGuild(guild_id.guild_id);
   let name;
-  if (null != guild) {
+  if (guild != null) {
     name = guild.name;
   }
-  importDefaultResult.fileOnly("received deleted guild entities (id: " + guild_id.guild_id + ", name: " + name + ")");
-  const Emitter = importDefault(566).Emitter;
+  tmp2.fileOnly("received deleted guild entities (id: " + guild_id.guild_id + ", name: " + name + ")");
+  const Emitter = importDefault(589).Emitter;
   Emitter.batched(() => {
-    if (null != guild_id.channels) {
-      const _Set = Set;
-      const set = new Set(guild_id.channels);
-      (function syncChannels(guild_id, set) {
-        const callback = guild_id;
-        let closure_1 = set;
-        let obj = callback(outer2_1[17]);
-        const keys = obj.keys(outer2_9.getMutableBasicGuildChannelsForGuild(guild_id));
-        obj = { channelIdsInMemory: keys, channelIdsFromServer: set };
-        outer2_13.fileOnly("syncChannels", obj);
-        const item = keys.forEach((id) => {
-          if (!set.has(id)) {
-            let obj = guild_id(outer3_1[12]);
-            obj = { type: "CHANNEL_DELETE" };
-            obj = { guild_id, id, parent_id: undefined };
-            obj.channel = obj;
-            obj.dispatch(obj);
-          }
-        });
-      })(guild_id.guild_id, set);
-    }
-    if (null != guild_id.roles) {
+    if (null != set3.channels) {
+      const guild_id2 = tmp.guild_id;
       const _Set2 = Set;
-      const set1 = new Set(guild_id.roles);
-      (function syncRoles(guild_id, set1) {
-        const callback = guild_id;
-        let closure_1 = set1;
-        const keys = callback(outer2_1[17]).keys(outer2_10.getUnsafeMutableRoles(guild_id));
-        const item = keys.forEach((roleId) => {
-          if (!set1.has(roleId)) {
-            let obj = guild_id(outer3_1[12]);
-            obj = { type: "GUILD_ROLE_DELETE", guildId: guild_id, roleId };
-            obj.dispatch(obj);
-          }
-        });
-      })(guild_id.guild_id, set1);
+      const set = new Set(tmp.channels);
+      set3 = guild_id2;
+      let set1 = set;
+      const keys = guild_id(outer1_1[12]).keys(outer1_4.getMutableBasicGuildChannelsForGuild(guild_id2));
+      let obj = { channelIdsInMemory: null, channelIdsFromServer: null };
+      obj[0] = keys;
+      obj[1] = set;
+      outer1_8.fileOnly("syncChannels", obj);
+      const item = keys.forEach((arg0) => {
+        if (!set1.has(arg0)) {
+          let obj = set3(set1[8]);
+          obj = { type: "CHANNEL_DELETE", channel: null };
+          obj = { guild_id: null, id: null, parent_id: "Array" };
+          obj[0] = set3;
+          obj[1] = arg0;
+          obj[1] = obj;
+          obj.dispatch(obj);
+        }
+      });
+      const obj6 = guild_id(outer1_1[12]);
     }
-    if (null != guild_id.emojis) {
+    if (null != set3.roles) {
+      guild_id = tmp.guild_id;
+      const _Set = Set;
+      set1 = new Set(tmp.roles);
+      set3 = guild_id;
+      obj = guild_id(outer1_1[12]);
+      const keys1 = obj.keys(outer1_5.getUnsafeMutableRoles(guild_id));
+      const item1 = keys1.forEach((arg0) => {
+        if (!set1.has(arg0)) {
+          let obj = set3(set1[8]);
+          obj = { type: "GUILD_ROLE_DELETE", guildId: null, roleId: null };
+          obj[1] = set3;
+          obj[2] = arg0;
+          obj.dispatch(obj);
+        }
+      });
+    }
+    if (null != set3.emojis) {
+      const guild_id3 = tmp.guild_id;
       const _Set3 = Set;
-      const set2 = new Set(guild_id.emojis);
-      (function syncEmojis(guild_id, set2) {
-        const callback = set2;
-        const guildEmoji = outer2_7.getGuildEmoji(guild_id);
-        const found = guildEmoji.filter((id) => set2.has(id.id));
-        if (guildEmoji.length !== found.length) {
-          let obj = callback(outer2_1[12]);
-          obj = { type: "GUILD_EMOJIS_UPDATE", guildId: guild_id, emojis: found };
-          obj.dispatch(obj);
-        }
-      })(guild_id.guild_id, set2);
+      const set2 = new Set(tmp.emojis);
+      set3 = set2;
+      const guildEmoji = outer1_2.getGuildEmoji(guild_id3);
+      const found = guildEmoji.filter((id) => set3.has(id.id));
+      if (guildEmoji.length !== found.length) {
+        let obj1 = guild_id(outer1_1[8]);
+        obj = { type: "GUILD_EMOJIS_UPDATE", guildId: null, emojis: null };
+        obj[1] = guild_id3;
+        obj[2] = found;
+        obj1.dispatch(obj);
+      }
     }
-    if (null != guild_id.stickers) {
+    if (null != set3.stickers) {
+      const guild_id4 = tmp.guild_id;
       const _Set4 = Set;
-      const set3 = new Set(guild_id.stickers);
-      (function syncStickers(guild_id, set3) {
-        const callback = set3;
-        let stickersByGuildId = outer2_8.getStickersByGuildId(guild_id);
-        if (null == stickersByGuildId) {
-          stickersByGuildId = [];
-        }
-        const found = stickersByGuildId.filter((id) => set3.has(id.id));
-        if (stickersByGuildId.length !== found.length) {
-          let obj = callback(outer2_1[12]);
-          obj = { type: "GUILD_STICKERS_UPDATE", guildId: guild_id, stickers: found };
-          obj.dispatch(obj);
-        }
-      })(guild_id.guild_id, set3);
+      set3 = new Set(tmp.stickers);
+      let stickersByGuildId = outer1_3.getStickersByGuildId(guild_id4);
+      if (stickersByGuildId == null) {
+        stickersByGuildId = [];
+      }
+      const found1 = stickersByGuildId.filter((id) => set3.has(id.id));
+      if (stickersByGuildId.length !== found1.length) {
+        obj1 = { type: "GUILD_STICKERS_UPDATE", guildId: null, stickers: null };
+        obj1[1] = guild_id4;
+        obj1[2] = found1;
+        guild_id(outer1_1[8]).dispatch(obj1);
+        const obj4 = guild_id(outer1_1[8]);
+      }
     }
   });
 }
 function handleConnectionOpen() {
-  const all = importDefault(5918).getAll();
+  const all = importDefault(5937).getAll();
   all.then((arr) => {
     const item = arr.forEach((arg0) => {
-      outer2_18(arg0);
+      let closure_0 = arg0;
+      const timerId = setTimeout(() => {
+        const guild = outer1_6.getGuild(callback);
+        let name;
+        if (guild != null) {
+          name = guild.name;
+        }
+        outer1_8.fileOnly("requesting deleted guild entities (id: " + callback + ", name: " + name + ")");
+        const keys = Object.keys(outer1_4.getMutableBasicGuildChannelsForGuild(tmp));
+        const sorted = keys.sort();
+        let str = callback(outer1_1[11]).v3(sorted.join(","));
+        str = str.toString();
+        const sortedRoles = outer1_5.getSortedRoles(tmp);
+        const mapped = sortedRoles.map((id) => id.id);
+        const obj2 = callback(outer1_1[11]);
+        const tmp5 = callback;
+        const tmp6 = outer1_1;
+        const sorted1 = mapped.sort();
+        let str2 = callback(outer1_1[11]).v3(sorted1.join(","));
+        const obj5 = callback(outer1_1[11]);
+        const guildEmoji = outer1_2.getGuildEmoji(tmp);
+        const mapped1 = guildEmoji.map((id) => id.id);
+        const str1 = str2.toString();
+        const sorted2 = mapped1.sort();
+        let str3 = callback(outer1_1[11]).v3(sorted2.join(","));
+        str2 = str3.toString();
+        const stickersByGuildId = outer1_3.getStickersByGuildId(tmp);
+        let mapped2;
+        if (stickersByGuildId != null) {
+          mapped2 = stickersByGuildId.map((id) => id.id);
+        }
+        if (mapped2 == null) {
+          mapped2 = [];
+        }
+        const obj8 = callback(outer1_1[11]);
+        const sorted3 = mapped2.sort();
+        const tmp5Result = tmp5(tmp6[11]);
+        str3 = tmp5(tmp6[11]).v3(sorted3.join(",")).toString();
+        const socket = outer1_7.getSocket();
+        const deletedEntityIdsNotMatchingHash = socket.getDeletedEntityIdsNotMatchingHash(tmp, str, str1, str2, str3);
+      }, Math.ceil(2000 * Math.random()));
     });
   });
 }
 function handleGuildCreate(guild) {
   guild = guild.guild;
   if (guild.unableToSyncDeletes) {
-    scheduleGuild(guild.id);
-  }
-}
-function scheduleGuild(id) {
-  let closure_0 = id;
-  const timerId = setTimeout(() => {
-    (function computeHashAndFetchDeletedIds(closure_0) {
-      const guild = outer2_11.getGuild(closure_0);
+    const id = guild.id;
+    const _Math = Math;
+    const _Math2 = Math;
+    const _setTimeout = setTimeout;
+    const timerId = setTimeout(() => {
+      const guild = outer1_6.getGuild(callback);
       let name;
-      if (null != guild) {
+      if (guild != null) {
         name = guild.name;
       }
-      outer2_13.fileOnly("requesting deleted guild entities (id: " + closure_0 + ", name: " + name + ")");
-      const sortedRoles = outer2_10.getSortedRoles(closure_0);
-      const tmp4 = outer2_19;
-      const tmp5 = outer2_19(Object.keys(outer2_9.getMutableBasicGuildChannelsForGuild(closure_0)));
-      const guildEmoji = outer2_7.getGuildEmoji(closure_0);
-      const tmp6 = outer2_19(sortedRoles.map((id) => id.id));
-      const stickersByGuildId = outer2_8.getStickersByGuildId(closure_0);
-      let mapped;
-      if (null != stickersByGuildId) {
-        mapped = stickersByGuildId.map((id) => id.id);
+      outer1_8.fileOnly("requesting deleted guild entities (id: " + callback + ", name: " + name + ")");
+      const keys = Object.keys(outer1_4.getMutableBasicGuildChannelsForGuild(tmp));
+      const sorted = keys.sort();
+      let str = callback(outer1_1[11]).v3(sorted.join(","));
+      str = str.toString();
+      const sortedRoles = outer1_5.getSortedRoles(tmp);
+      const mapped = sortedRoles.map((id) => id.id);
+      const obj2 = callback(outer1_1[11]);
+      const tmp5 = callback;
+      const tmp6 = outer1_1;
+      const sorted1 = mapped.sort();
+      let str2 = callback(outer1_1[11]).v3(sorted1.join(","));
+      const obj5 = callback(outer1_1[11]);
+      const guildEmoji = outer1_2.getGuildEmoji(tmp);
+      const mapped1 = guildEmoji.map((id) => id.id);
+      const str1 = str2.toString();
+      const sorted2 = mapped1.sort();
+      let str3 = callback(outer1_1[11]).v3(sorted2.join(","));
+      str2 = str3.toString();
+      const stickersByGuildId = outer1_3.getStickersByGuildId(tmp);
+      let mapped2;
+      if (stickersByGuildId != null) {
+        mapped2 = stickersByGuildId.map((id) => id.id);
       }
-      if (null == mapped) {
-        mapped = [];
+      if (mapped2 == null) {
+        mapped2 = [];
       }
-      const tmp7 = outer2_19(guildEmoji.map((id) => id.id));
-      const socket = outer2_12.getSocket();
-      const deletedEntityIdsNotMatchingHash = socket.getDeletedEntityIdsNotMatchingHash(closure_0, tmp5, tmp6, tmp7, tmp4(mapped));
-    })(closure_0);
-  }, Math.ceil(2000 * Math.random()));
+      const obj8 = callback(outer1_1[11]);
+      const sorted3 = mapped2.sort();
+      const tmp5Result = tmp5(tmp6[11]);
+      str3 = tmp5(tmp6[11]).v3(sorted3.join(",")).toString();
+      const socket = outer1_7.getSocket();
+      const deletedEntityIdsNotMatchingHash = socket.getDeletedEntityIdsNotMatchingHash(tmp, str, str1, str2, str3);
+    }, Math.ceil(2000 * Math.random()));
+  }
 }
-function computeHash(arr) {
-  const sorted = arr.sort();
-  const obj = importDefault(1193);
-  return importDefault(1193).v3(sorted.join(",")).toString();
+const metroImportAll = new require("createGuildRoleRecordFromRust")("EntityVersionsManager");
+class EntityVersionsManager extends tmp3 {
+  constructor() {
+    applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
+    obj = { GUILD_CREATE: handleGuildCreate, DELETED_ENTITY_IDS: handleDeletedEntityIds };
+    applyArgumentsResult.actions = obj;
+    return applyArgumentsResult;
+  }
 }
-importDefaultResult = new importDefaultResult("EntityVersionsManager");
-tmp4 = new tmp4();
-let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/gateway/EntityVersionsManager.tsx");
+const prototype = EntityVersionsManager.prototype;
+prototype["_initialize"] = function _initialize() {
+  const subscription = importDefault(709).subscribe("CONNECTION_OPEN", handleConnectionOpen);
+};
+prototype["_terminate"] = function _terminate() {
+  importDefault(709).unsubscribe("CONNECTION_OPEN", handleConnectionOpen);
+};
+const entityVersionsManager = new EntityVersionsManager();
+const tmp2 = new require("createGuildRoleRecordFromRust")("EntityVersionsManager");
+const result = require("ensureGuildLoaded").fileFinishedImporting("modules/gateway/EntityVersionsManager.tsx");
 
-export default tmp4;
+export default entityVersionsManager;

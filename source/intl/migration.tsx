@@ -1,16 +1,17 @@
-// Module ID: 16144
-// Function ID: 124798
+// Module ID: 16182
+// Function ID: 16183
 // Name: newGetEnglishMessageText
-// Dependencies: [1212, 1250, 2]
+// Dependencies: [1236, 1274, 2]
 // Exports: improperGetEnglishIntlMessageText
 
-// Module 16144 (newGetEnglishMessageText)
+// Module 16182 (newGetEnglishMessageText)
 const result = require("set").fileFinishedImporting("intl/migration.tsx");
 
 export const improperGetEnglishIntlMessageText = function newGetEnglishMessageText(code) {
-  const tmp = require(1212) /* getSystemLocale */;
-  const intl = tmp.intl;
-  const obj = require(1250);
+  let intl;
+  let t;
+  ({ intl, t } = require(1236) /* getSystemLocale */);
+  const obj = require(1274);
   intl.currentLocale = intl.currentLocale;
-  return intl.string(tmp.t[obj.runtimeHashMessageKey(obj, code)]);
+  return intl.string(t[obj.runtimeHashMessageKey(obj, code)]);
 };

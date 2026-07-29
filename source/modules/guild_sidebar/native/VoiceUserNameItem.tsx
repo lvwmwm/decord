@@ -1,106 +1,115 @@
-// Module ID: 15079
-// Function ID: 114778
+// Module ID: 15112
+// Function ID: 15113
 // Name: VoiceUserNameItem
-// Dependencies: [57, 31, 27, 33, 4165, 4396, 8359, 4161, 4004, 1212, 15080, 2]
+// Dependencies: [32, 19, 17, 21, 4189, 4419, 8383, 4185, 4028, 1236, 15113, 2]
 // Exports: default
 
-// Module 15079 (VoiceUserNameItem)
+// Module 15112 (VoiceUserNameItem)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
+import noop from "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
 let closure_6;
-let closure_7;
+let error;
 const require = arg1;
-({ jsxs: closure_6, jsx: closure_7 } = jsxProd);
-let closure_8 = _createForOfIteratorHelperLoose.createStyles({ container: { marginLeft: 8, flex: 1, flexDirection: "row" }, tag: { flexDirection: "row", alignItems: "center", paddingLeft: 8 }, measuringTag: { opacity: 0 } });
+({ jsxs: closure_6, jsx: error } = jsxProd);
+let closure_8 = createCacheKey.createStyles({ container: { marginLeft: 8, flex: 1, flexDirection: "row" }, tag: { flexDirection: "row", alignItems: "center", paddingLeft: 8 }, measuringTag: { opacity: 0 } });
 const result = require("get ActivityIndicator").fileFinishedImporting("modules/guild_sidebar/native/VoiceUserNameItem.tsx");
 
 export default function VoiceUserNameItem(arg0) {
-  let _slicedToArray;
+  let c0;
+  let c1;
+  let c2;
+  let c3;
   let color;
-  let dependencyMap;
   let guildId;
-  let importDefault;
   let isGuest;
   let member;
-  let tmp11;
-  let tmp7;
-  let tmp9;
+  let tmp10;
+  let tmp12;
+  let tmp14;
+  let tmp8;
   let user;
   let variant;
   ({ member, user, isGuest } = arg0);
+  let _require;
+  let importDefault;
+  let dependencyMap;
+  let callback;
   ({ guildId, color, variant } = arg0);
-  const tmp = callback4();
+  const tmp = callback3();
   let obj = { userId: user.id, guildId };
-  let obj1 = _require(8359);
-  const displayNameStylesFont = obj1.useDisplayNameStylesFont({ displayNameStyles: importDefault(4396)(obj) });
-  const tmp4 = callback(React.useState(0), 2);
-  const first = tmp4[0];
-  _require = tmp4[1];
-  const tmp2 = importDefault(4396)(obj);
-  [tmp7, importDefault] = callback(React.useState(0), 2);
-  const tmp6 = callback(React.useState(0), 2);
-  [tmp9, dependencyMap] = callback(React.useState(true), 2);
-  const tmp8 = callback(React.useState(true), 2);
-  [tmp11, _slicedToArray] = callback(React.useState(0), 2);
+  let obj1 = _require(8383);
+  const displayNameStylesFont = obj1.useDisplayNameStylesFont({ displayNameStyles: importDefault(4419)(obj) });
+  const tmp4 = importDefault(4419)(obj);
+  [tmp8, c0] = callback(React.useState(0), 2);
+  const tmp7 = callback(React.useState(0), 2);
+  [tmp10, c1] = callback(React.useState(0), 2);
+  const tmp9 = callback(React.useState(0), 2);
+  [tmp12, c2] = callback(React.useState(true), 2);
+  const tmp11 = callback(React.useState(true), 2);
+  [tmp14, c3] = callback(React.useState(0), 2);
   callback = React.useCallback((nativeEvent) => {
-    callback(nativeEvent.nativeEvent.layout.width);
+    _undefined(nativeEvent.nativeEvent.layout.width);
   }, []);
   const callback1 = React.useCallback((nativeEvent) => {
-    callback2(nativeEvent.nativeEvent.layout.width);
+    _undefined2(nativeEvent.nativeEvent.layout.width);
   }, []);
-  obj = { onLayout: callback };
+  obj = { onLayout: callback, style: null, children: null };
   const items = [tmp.container, ];
-  let measuringTag = tmp9;
+  let measuringTag = tmp12;
   const callback2 = React.useCallback((nativeEvent) => {
-    callback4(nativeEvent.nativeEvent.layout.width);
-    callback3(false);
+    _undefined4(nativeEvent.nativeEvent.layout.width);
+    _undefined3(false);
   }, []);
-  if (tmp9) {
+  if (tmp12) {
     measuringTag = tmp.measuringTag;
   }
   items[1] = measuringTag;
-  obj.style = items;
-  obj = { variant, color, lineClamp: 1, onLayout: callback1 };
-  let tmp18 = null != displayNameStylesFont;
-  if (tmp18) {
-    obj1 = { fontFamily: displayNameStylesFont };
-    tmp18 = obj1;
+  obj[1] = items;
+  obj = { variant, color, lineClamp: 1, onLayout: callback1, style: null, children: null };
+  let tmp20 = null != displayNameStylesFont;
+  if (tmp20) {
+    obj1 = { fontFamily: null };
+    obj1[0] = displayNameStylesFont;
+    tmp20 = obj1;
   }
-  obj.style = tmp18;
+  obj[4] = tmp20;
   let nick;
-  if (null != member) {
+  if (member != null) {
     nick = member.nick;
   }
-  if (null == nick) {
-    nick = importDefault(4004).getName(user);
-    const obj6 = importDefault(4004);
+  if (nick == null) {
+    nick = tmp2(4028).getName(user);
+    const tmp2Result = tmp2(4028);
   }
   const items1 = [nick, ];
   if (isGuest) {
-    const obj2 = { variant: "text-sm/normal", lineClamp: 1, color: "status-positive" };
-    const intl = _require(1212).intl;
-    const items2 = ["\u00A0", intl.string(_require(1212).t["pFO/Ph"])];
-    obj2.children = items2;
-    isGuest = callback2(_require(4161).Text, obj2);
+    const obj2 = { variant: "text-sm/normal", lineClamp: 1, color: "status-positive", children: null };
+    const intl = tmp5(1236).intl;
+    const items2 = ["\u00A0", intl.string(tmp5(1236).t["pFO/Ph"])];
+    obj2[3] = items2;
+    isGuest = tmp18(tmp5(4185).Text, obj2);
   }
   items1[1] = isGuest;
-  obj.children = items1;
-  const items3 = [callback2(_require(4161).Text, obj), ];
-  if (!tmp9) {
-    tmp9 = 0 !== first && 0 !== tmp7 && 0 !== tmp11 && first >= tmp7 + tmp11;
-    const tmp25 = 0 !== first && 0 !== tmp7 && 0 !== tmp11 && first >= tmp7 + tmp11;
+  obj[5] = items1;
+  const items3 = [closure_6(_require(4185).Text, obj), ];
+  if (!tmp12) {
+    tmp12 = 0 !== tmp8 && 0 !== tmp10 && 0 !== tmp14 && tmp8 >= tmp10 + tmp14;
+    const tmp22 = 0 !== tmp8 && 0 !== tmp10 && 0 !== tmp14 && tmp8 >= tmp10 + tmp14;
   }
-  if (tmp9) {
-    const obj3 = { onLayout: callback2, style: tmp.tag };
-    const obj4 = { userId: user.id };
-    obj3.children = callback3(importDefault(15080), obj4);
-    tmp9 = callback3(View, obj3);
+  if (tmp12) {
+    const obj3 = { onLayout: null, style: null, children: null };
+    obj3[0] = callback2;
+    obj3[1] = tmp.tag;
+    const obj4 = { userId: null };
+    obj4[0] = user.id;
+    obj3[2] = callback2(tmp2(15113), obj4);
+    tmp12 = callback2(tmp19, obj3);
   }
-  items3[1] = tmp9;
-  obj.children = items3;
-  return callback2(View, obj);
+  items3[1] = tmp12;
+  obj[2] = items3;
+  return closure_6(View, obj);
 };

@@ -1,10 +1,10 @@
-// Module ID: 6340
-// Function ID: 56807
+// Module ID: 6361
+// Function ID: 6362
 // Name: getUnderlyingIOSExceptionRecursively
-// Dependencies: [6341, 2]
+// Dependencies: [6362, 2]
 // Exports: getUnderlyingIOSError, serializeError
 
-// Module 6340 (getUnderlyingIOSExceptionRecursively)
+// Module 6361 (getUnderlyingIOSExceptionRecursively)
 function getUnderlyingIOSExceptionRecursively(NSUnderlyingError) {
   if (null != NSUnderlyingError.userInfo.NSUnderlyingError) {
     const tmp2 = getUnderlyingIOSExceptionRecursively(NSUnderlyingError.userInfo.NSUnderlyingError);
@@ -16,13 +16,16 @@ function getUnderlyingIOSExceptionRecursively(NSUnderlyingError) {
 }
 const result = require("set").fileFinishedImporting("utils/ErrorUtils.tsx");
 
-export const getUnderlyingIOSError = function getUnderlyingIOSError(code) {
-  const tmp = getUnderlyingIOSExceptionRecursively(code);
-  let tmp2 = null;
-  if (null != tmp) {
-    tmp2 = tmp;
+export const getUnderlyingIOSError = function getUnderlyingIOSError(c9) {
+  try {
+    let tmp3 = getUnderlyingIOSExceptionRecursively(c9);
+    if (tmp3 == null) {
+      tmp3 = null;
+    }
+    return tmp3;
+  } catch (err) {
+    return null;
   }
-  return tmp2;
 };
 export const serializeError = function serializeError(arg0) {
   let error = arg0;
@@ -31,10 +34,10 @@ export const serializeError = function serializeError(arg0) {
     error = new Error("unknown error");
   }
   let error1 = error;
-  if ("object" !== typeof error) {
+  if (typeof error !== "ay") {
     const _Error2 = Error;
     const _String = String;
     error1 = new Error(String(error));
   }
-  return JSON.stringify(require(6341) /* BAGGAGE_HEADER_NAME */.normalizeToSize(error1));
+  return JSON.stringify(require(6362) /* BAGGAGE_HEADER_NAME */.normalizeToSize(error1));
 };

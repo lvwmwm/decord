@@ -1,60 +1,66 @@
-// Module ID: 15625
-// Function ID: 120300
-// Name: getHasAutomodAccess
-// Dependencies: [1838, 3793, 653, 566, 2]
+// Module ID: 15660
+// Function ID: 15661
+// Name: canCurrentUserManageMessageFilters
+// Dependencies: [1862, 3817, 676, 589, 2]
 // Exports: canCurrentUserManageAutomod, canCurrentUserManageMessageFilters, useCanCurrentUserManageAutomod, useIsUserProfileRuleEnabled
 
-// Module 15625 (getHasAutomodAccess)
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 15660 (canCurrentUserManageMessageFilters)
+import createGuildRecordFromRust from "createGuildRecordFromRust";
+import getUncachedChannelPermissions from "getUncachedChannelPermissions";
 import ME from "ME";
 
-let closure_4;
-let closure_5;
+let c4;
+let c5;
 const require = arg1;
-function getHasAutomodAccess(guild_id) {
-  let obj = arg1;
-  let obj2 = arg2;
-  if (arg1 === undefined) {
-    obj = _createForOfIteratorHelperLoose;
-  }
-  if (obj2 === undefined) {
-    obj2 = _isNativeReflectConstruct;
-  }
-  const guild = obj.getGuild(guild_id);
-  let canResult = null != guild;
-  if (canResult) {
-    canResult = obj2.can(constants.MANAGE_GUILD, guild);
-  }
-  return canResult;
-}
-({ GuildFeatures: closure_4, Permissions: closure_5 } = ME);
+({ GuildFeatures: c4, Permissions: c5 } = ME);
 const result = require("ME").fileFinishedImporting("modules/guild_automod/PermissionUtils.tsx");
 
 export const canCurrentUserManageMessageFilters = function canCurrentUserManageMessageFilters(guild_id) {
   let tmp = null != guild_id;
   if (tmp) {
-    tmp = getHasAutomodAccess(guild_id);
+    const guild = store.getGuild(guild_id);
+    let canResult = null != guild;
+    if (canResult) {
+      canResult = obj.can(constants.MANAGE_GUILD, guild);
+    }
+    tmp = canResult;
+    obj = getUncachedChannelPermissions;
   }
   return tmp;
 };
-export const canCurrentUserManageAutomod = function canCurrentUserManageAutomod(guild_id) {
-  return getHasAutomodAccess(guild_id);
+export const canCurrentUserManageAutomod = function canCurrentUserManageAutomod(arg0) {
+  const guild = store.getGuild(arg0);
+  let canResult = null != guild;
+  if (canResult) {
+    canResult = getUncachedChannelPermissions.can(constants.MANAGE_GUILD, guild);
+  }
+  return canResult;
 };
 export const useCanCurrentUserManageAutomod = function useCanCurrentUserManageAutomod(arg0) {
   const _require = arg0;
-  const items = [_createForOfIteratorHelperLoose, _isNativeReflectConstruct];
+  const items = [createGuildRecordFromRust, getUncachedChannelPermissions];
   const items1 = [arg0];
-  return _require(566).useStateFromStores(items, () => outer1_6(closure_0, outer1_2, outer1_3), items1);
+  return _require(589).useStateFromStores(items, () => {
+    if (outer1_2 !== undefined) {
+      if (obj2 !== undefined) {
+        const guild = outer1_2.getGuild(tmp);
+        let canResult = null != guild;
+        if (canResult) {
+          canResult = obj2.can(outer1_5.MANAGE_GUILD, guild);
+        }
+        return canResult;
+      }
+    }
+  }, items1);
 };
 export const useIsUserProfileRuleEnabled = function useIsUserProfileRuleEnabled(arg0) {
   const _require = arg0;
-  const items = [_createForOfIteratorHelperLoose];
+  const items = [createGuildRecordFromRust];
   const items1 = [arg0];
-  return _require(566).useStateFromStores(items, () => {
+  return _require(589).useStateFromStores(items, () => {
     const guild = outer1_2.getGuild(closure_0);
     let flag;
-    if (null != guild) {
+    if (guild != null) {
       const features = guild.features;
       flag = features.has(outer1_4.COMMUNITY);
     }

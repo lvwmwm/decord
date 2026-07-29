@@ -1,64 +1,63 @@
-// Module ID: 13762
-// Function ID: 105494
+// Module ID: 13783
+// Function ID: 13784
 // Name: SafetyHubErrorActionSheet
-// Dependencies: [31, 27, 33, 4165, 689, 13760, 5221, 6715, 4161, 1212, 4578, 11054, 2]
+// Dependencies: [19, 17, 21, 4189, 712, 13781, 5243, 6736, 4185, 1236, 4600, 11078, 2]
 // Exports: default
 
-// Module 13762 (SafetyHubErrorActionSheet)
-import "result";
+// Module 13783 (SafetyHubErrorActionSheet)
+import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_5;
+let c5;
 let closure_6;
 const require = arg1;
-({ jsx: closure_5, jsxs: closure_6 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { display: "flex", alignItems: "center", justifyContent: "center", paddingTop: require("_createForOfIteratorHelperLoose").space.PX_8, paddingBottom: require("_createForOfIteratorHelperLoose").space.PX_24, gap: require("_createForOfIteratorHelperLoose").space.PX_16, minHeight: 120 };
-_createForOfIteratorHelperLoose.errorContainer = _createForOfIteratorHelperLoose;
-let obj1 = { display: "flex", justifyContent: "center", alignItems: "center", height: 40, width: 40, borderRadius: require("_createForOfIteratorHelperLoose").radii.round, backgroundColor: require("_createForOfIteratorHelperLoose").colors.WHITE };
-_createForOfIteratorHelperLoose.redesignErrorIconContainer = obj1;
-_createForOfIteratorHelperLoose.redesignErrorIcon = { height: 50, width: 50 };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+({ jsx: c5, jsxs: closure_6 } = jsxProd);
+createCacheKey = { errorContainer: null, redesignErrorIconContainer: null, redesignErrorIcon: null };
+createCacheKey = { display: "flex", alignItems: "center", justifyContent: "center", paddingTop: require("Themes").space.PX_8, paddingBottom: require("Themes").space.PX_24, gap: require("Themes").space.PX_16, minHeight: 120 };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { display: "flex", justifyContent: "center", alignItems: "center", height: 40, width: 40, borderRadius: require("Themes").radii.round, backgroundColor: require("Themes").colors.WHITE };
+createCacheKey[2] = { height: 50, width: 50 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let obj1 = { display: "flex", justifyContent: "center", alignItems: "center", height: 40, width: 40, borderRadius: require("Themes").radii.round, backgroundColor: require("Themes").colors.WHITE };
 const result = require("jsxProd").fileFinishedImporting("modules/safety_hub/native/SafetyHubErrorActionSheet.tsx");
 
 export default function SafetyHubErrorActionSheet(arg0) {
   if (arg0 == null) {
-    HermesBuiltin.throwTypeError("Cannot destructure 'undefined' or 'null'.");
-    throw undefined;
+    HermesBuiltin.throwTypeError();
   } else {
-    const tmp4 = _createForOfIteratorHelperLoose();
-    const tmp7 = importDefault(13760)();
-    let obj = {};
-    obj = {};
-    const items = [tmp4.errorContainer];
-    obj.style = items;
-    obj = {};
-    const items1 = [tmp4.redesignErrorIconContainer];
-    obj.style = items1;
-    const obj1 = { size: "custom", color: importDefault(689).colors.CONTROL_CRITICAL_PRIMARY_BACKGROUND_DEFAULT };
-    const items2 = [tmp4.redesignErrorIcon];
-    obj1.style = items2;
-    obj.children = callback(require(6715) /* CircleXIcon */.CircleXIcon, obj1);
+    const tmp3 = createCacheKey();
+    const tmp6 = importDefault(13781)();
+    let obj = { children: null };
+    obj = { style: null, children: null };
+    const items = [tmp3.errorContainer];
+    obj[0] = items;
+    obj = { style: null, children: null };
+    const items1 = [tmp3.redesignErrorIconContainer];
+    obj[0] = items1;
+    const obj1 = { size: "custom", color: null, style: null };
+    obj1[1] = importDefault(712).colors.CONTROL_CRITICAL_PRIMARY_BACKGROUND_DEFAULT;
+    const items2 = [tmp3.redesignErrorIcon];
+    obj1[2] = items2;
+    obj[1] = callback(require(6736) /* CircleXIcon */.CircleXIcon, obj1);
     const items3 = [callback(View, obj), ];
-    const obj2 = { variant: "heading-lg/normal" };
-    const intl = require(1212) /* getSystemLocale */.intl;
-    obj2.children = intl.string(require(1212) /* getSystemLocale */.t.TDRvqs);
-    items3[1] = callback(require(4161) /* Text */.Text, obj2);
-    obj.children = items3;
+    const obj2 = { variant: "heading-lg/normal", children: null };
+    const intl = require(1236) /* getSystemLocale */.intl;
+    obj2[1] = intl.string(require(1236) /* getSystemLocale */.t.TDRvqs);
+    items3[1] = callback(require(4185) /* Text */.Text, obj2);
+    obj[1] = items3;
     const items4 = [callback2(View, obj), ];
-    const obj3 = {
-      onPress() {
-          return outer1_2(outer1_3[11]).getSafetyHubData();
-        }
+    const obj3 = { onPress: null, text: null, loading: null, disabled: null };
+    obj3[0] = function onPress() {
+      return callback(table[11]).getSafetyHubData();
     };
-    const intl2 = require(1212) /* getSystemLocale */.intl;
-    obj3.text = intl2.string(require(1212) /* getSystemLocale */.t.R1AN4F);
-    obj3.loading = tmp7;
-    obj3.disabled = tmp7;
-    items4[1] = callback(require(4578) /* Button */.Button, obj3);
-    obj.children = items4;
-    return callback2(require(5221) /* Background */.BottomSheet, obj);
+    const intl2 = require(1236) /* getSystemLocale */.intl;
+    obj3[1] = intl2.string(require(1236) /* getSystemLocale */.t.R1AN4F);
+    obj3[2] = tmp6;
+    obj3[3] = tmp6;
+    items4[1] = callback(require(4600) /* Button */.Button, obj3);
+    obj[0] = items4;
+    return callback2(require(5243) /* Background */.BottomSheet, obj);
   }
 };

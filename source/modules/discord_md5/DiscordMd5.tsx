@@ -1,71 +1,108 @@
-// Module ID: 4728
-// Function ID: 40983
-// Name: DiscordMd5
-// Dependencies: [5, 6, 7, 4729, 2]
+// Module ID: 4750
+// Function ID: 4751
+// Name: fromBlob
+// Dependencies: [5, 4751, 2]
 
-// Module 4728 (DiscordMd5)
+// Module 4750 (fromBlob)
 import asyncGeneratorStep from "asyncGeneratorStep";
-import _classCallCheck from "_classCallCheck";
-import _defineProperties from "_defineProperties";
 
-const tmp2 = (() => {
-  class DiscordMd5 {
-    constructor() {
-      tmp = outer1_3(this, DiscordMd5);
-      return;
-    }
-  }
-  let obj = { key: "fromBlob" };
-  let closure_0 = callback(async (arg0) => outer1_1.fromArrayBuffer(yield arg0.arrayBuffer()));
-  obj.value = function fromBlob(arg0) {
-    return callback(...arguments);
-  };
-  const items = [obj, , ];
-  obj = {
-    key: "fromArrayBuffer",
-    value(arg0) {
-      const _ArrayBuffer = callback(DiscordMd5[3]).ArrayBuffer;
-      return _ArrayBuffer.hash(arg0);
-    }
-  };
-  items[1] = obj;
-  obj = {
-    key: "fromDataURI",
-    value(arg0) {
-      let closure_0 = arg0;
-      const resolved = Promise.resolve();
-      return resolved.then(() => {
-        let length;
-        const match = /^data:[^;]*;base64,(.*)$/.exec(callback);
-        if (null == match) {
-          const _Error = Error;
-          const error = new Error("Not a base64 data URI");
-          throw error;
-        } else {
-          const _atob = atob;
-          const atobResult = atob(match[1]);
-          const _ArrayBuffer2 = ArrayBuffer;
-          const arrayBuffer = new ArrayBuffer(atobResult.length);
-          const _Uint8Array = Uint8Array;
-          const uint8Array = new Uint8Array(arrayBuffer);
-          let num = 0;
-          if (0 < atobResult.length) {
-            do {
-              uint8Array[num] = atobResult.charCodeAt(num);
-              num = num + 1;
-              length = atobResult.length;
-            } while (num < length);
+let prototype;
+prototype = function DiscordMd5() {
+  return Object.create(new.target.prototype);
+}.prototype;
+prototype["fromBlob"] = function fromBlob(arg0) {
+  let closure_0 = arg0;
+  return callback(function*() {
+    if (fromArrayBuffer === 2) {
+      fromArrayBuffer = 3;
+      HermesBuiltin.throwTypeError();
+    } else if (tmp3 === 3) {
+      if (arg0 === 1) {
+        throw arg1;
+      } else if (arg0 === 2) {
+        let obj = { value: null, done: true };
+        obj[0] = arg1;
+        return obj;
+      } else {
+        return { value: "HermesInternal", done: null };
+      }
+    } else {
+      try {
+        fromArrayBuffer = 2;
+        if (0 === c2) {
+          if (arg0 === 1) {
+            fromArrayBuffer = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            fromArrayBuffer = 3;
+            obj = { value: null, done: true };
+            obj[0] = arg1;
+            return obj;
+          } else {
+            let closure_1 = fromArrayBuffer;
+            fromArrayBuffer = fromArrayBuffer.fromArrayBuffer;
+            c2 = 1;
+            fromArrayBuffer = 1;
+            const obj1 = { value: null, done: false };
+            obj1[0] = outer1_0.arrayBuffer();
+            return obj1;
           }
-          const _ArrayBuffer = callback(DiscordMd5[3]).ArrayBuffer;
-          return _ArrayBuffer.hash(arrayBuffer);
+        } else if (arg0 === 1) {
+          fromArrayBuffer = 3;
+          throw arg1;
+        } else if (arg0 === 2) {
+          fromArrayBuffer = 3;
+          const obj2 = { value: null, done: true };
+          obj2[0] = arg1;
+          return obj2;
+        } else {
+          fromArrayBuffer = 3;
+          obj = { value: null, done: true };
+          obj[0] = fromArrayBuffer(arg1);
+          return obj;
         }
-        const obj = /^data:[^;]*;base64,(.*)$/;
-      });
+      } catch (tmp9) {
+        fromArrayBuffer = tmp;
+        throw tmp9;
+      }
     }
-  };
-  items[2] = obj;
-  return callback2(DiscordMd5, null, items);
-})();
-const result = require("_defineProperties").fileFinishedImporting("modules/discord_md5/DiscordMd5.tsx");
+  })();
+};
+prototype["fromArrayBuffer"] = function fromArrayBuffer(arg0) {
+  const _ArrayBuffer = importDefault(4751).ArrayBuffer;
+  return _ArrayBuffer.hash(arg0);
+};
+prototype["fromDataURI"] = function fromDataURI(arg0) {
+  let closure_0 = arg0;
+  const resolved = Promise.resolve();
+  return resolved.then(() => {
+    let length;
+    const match = /^data:[^;]*;base64,(.*)$/.exec(callback);
+    if (null == match) {
+      const _Error = Error;
+      const error = new Error("Not a base64 data URI");
+      throw error;
+    } else {
+      const _atob = atob;
+      const atobResult = atob(match[1]);
+      const _ArrayBuffer2 = ArrayBuffer;
+      const arrayBuffer = new ArrayBuffer(atobResult.length);
+      const _Uint8Array = Uint8Array;
+      const uint8Array = new Uint8Array(arrayBuffer);
+      let num = 0;
+      if (0 < atobResult.length) {
+        do {
+          uint8Array[num] = atobResult.charCodeAt(num);
+          num = num + 1;
+          length = atobResult.length;
+        } while (num < length);
+      }
+      const _ArrayBuffer = callback(outer1_1[1]).ArrayBuffer;
+      return _ArrayBuffer.hash(arrayBuffer);
+    }
+    const obj = /^data:[^;]*;base64,(.*)$/;
+  });
+};
+const result = require("set").fileFinishedImporting("modules/discord_md5/DiscordMd5.tsx");
 
-export default tmp2;
+export default prototype;

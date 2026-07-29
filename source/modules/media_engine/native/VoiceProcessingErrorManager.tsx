@@ -1,27 +1,34 @@
-// Module ID: 16301
-// Function ID: 126343
-// Name: _isNativeReflectConstruct
-// Dependencies: [7, 6, 15, 17, 18, 3865, 5112, 2]
+// Module ID: 16336
+// Function ID: 16337
+// Name: prototype
+// Dependencies: [5134, 3889, 2]
 
-// Module 16301 (_isNativeReflectConstruct)
-import set from "set";
-import AutomaticLifecycleManager from "AutomaticLifecycleManager";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
-import tmp2 from "AutomaticLifecycleManager";
+// Module 16336 (prototype)
+import "initialize";
 
-const require = arg1;
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
-  }
-  const result = _isNativeReflectConstruct();
+let require = arg1;
+let prototype = function VoiceProcessingErrorManager() {
+  const applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
+  const require = applyArgumentsResult;
+  applyArgumentsResult.actions = {
+    MEDIA_ENGINE_NOISE_CANCELLATION_ERROR() {
+      return applyArgumentsResult.handleNoiseCancellationError();
+    },
+    MEDIA_ENGINE_VOICE_ACTIVITY_DETECTION_ERROR() {
+      return applyArgumentsResult.handleVoiceActivityDetectionError();
+    }
+  };
+  applyArgumentsResult.handleNoiseCancellationError = function handleNoiseCancellationError() {
+    const result = applyArgumentsResult(3889).presentNoiseCancellationError();
+  };
+  applyArgumentsResult.handleVoiceActivityDetectionError = function handleVoiceActivityDetectionError() {
+    const result = applyArgumentsResult(3889).presentVoiceActivityDetectionError();
+  };
+  return applyArgumentsResult;
+}.prototype;
+class prototype extends tmp2 {
 }
-tmp2 = new tmp2();
-let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/media_engine/native/VoiceProcessingErrorManager.tsx");
+prototype = new prototype();
+let result = require("set").fileFinishedImporting("modules/media_engine/native/VoiceProcessingErrorManager.tsx");
 
-export default tmp2;
+export default prototype;

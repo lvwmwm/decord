@@ -1,39 +1,41 @@
-// Module ID: 12295
-// Function ID: 95839
-// Dependencies: [57, 31, 27, 33, 4165, 689, 4161, 1212, 12296, 2]
+// Module ID: 12317
+// Function ID: 12318
+// Dependencies: [32, 19, 17, 21, 4189, 712, 4185, 1236, 12318, 2]
 
-// Module 12295
+// Module 12317
 import _slicedToArray from "_slicedToArray";
-import importAllResult from "result";
+import importAllResult from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_5;
+let StyleSheet;
+let c5;
 let closure_6;
-let closure_7;
-let closure_8;
+let error;
+let metroImportAll;
 const require = arg1;
-({ View: closure_5, ActivityIndicator: closure_6 } = get_ActivityIndicator);
-({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-let obj = {};
+let c4 = importAllResult;
+({ View: c5, ActivityIndicator: closure_6, StyleSheet } = get_ActivityIndicator);
+({ jsx: error, jsxs: metroImportAll } = jsxProd);
+let obj = { loader: null, loaderIndicator: null, loaderText: null };
 obj = {};
-let merged = Object.assign(get_ActivityIndicator.StyleSheet.absoluteFillObject);
-obj["flex"] = 1;
-obj["alignItems"] = "center";
-obj["justifyContent"] = "center";
-obj["backgroundColor"] = "rgba(0, 0, 0, 0.7)";
-obj.loader = obj;
-_createForOfIteratorHelperLoose = { marginTop: require("_createForOfIteratorHelperLoose").space.PX_12 };
-obj.loaderIndicator = _createForOfIteratorHelperLoose;
-obj.loaderText = { textAlign: "center" };
-let closure_9 = _createForOfIteratorHelperLoose.createStyles(obj);
+let merged = Object.assign(StyleSheet.absoluteFillObject);
+obj.flex = 1;
+obj.alignItems = "center";
+obj.justifyContent = "center";
+obj.backgroundColor = "rgba(0, 0, 0, 0.7)";
+obj[0] = obj;
+createCacheKey = { marginTop: require("Themes").space.PX_12 };
+obj[1] = createCacheKey;
+obj[2] = { textAlign: "center" };
+let closure_9 = createCacheKey.createStyles(obj);
 let closure_10 = { None: 0, [0]: "None", Loading: 1, [1]: "Loading", Loaded: 2, [2]: "Loaded", Error: 3, [3]: "Error" };
 const memoResult = importAllResult.memo(function MediaModalLoader(onLoad) {
   let c5;
   let onLoadStart;
   let style;
-  let tmp7;
+  let tmp8;
   ({ style, onLoadStart } = onLoad);
   onLoad = onLoad.onLoad;
   const onError = onLoad.onError;
@@ -42,29 +44,20 @@ const memoResult = importAllResult.memo(function MediaModalLoader(onLoad) {
     num = 0;
   }
   const source = onLoad.source;
-  let obj = { Component: 0, style: 0, onLoadStart: 0, onLoad: 0, onError: 0, index: 0, source: 0 };
-  Object.setPrototypeOf(null);
-  const merged = Object.assign(onLoad, obj);
+  const merged = Object.assign(onLoad, Object.create(null));
   let first;
   let importAllResult;
   c5 = undefined;
   let closure_6;
-  const tmp3 = callback3();
-  const tmp4 = first(importAllResult.useState(closure_10.None), 2);
-  first = tmp4[0];
-  importAllResult = tmp4[1];
-  [tmp7, c5] = first(importAllResult.useState(0), 2);
+  const tmp2 = callback2();
+  const tmp5 = first(importAllResult.useState(closure_10.None), 2);
+  first = tmp5[0];
+  importAllResult = tmp5[1];
+  [tmp8, c5] = first(importAllResult.useState(0), 2);
   closure_6 = importAllResult.useRef(null);
   const callback = importAllResult.useCallback(() => {
     const timerId = setTimeout(() => {
-      outer1_4((arg0) => {
-        if (arg0 === outer3_10.None) {
-          let None = outer3_10.Loading;
-        } else {
-          None = outer3_10.None;
-        }
-        return None;
-      });
+      callback((arg0) => arg0 === None.None ? None.Loading : None.None);
     }, 1000);
     closure_6.current = timerId;
     return timerId;
@@ -73,83 +66,82 @@ const memoResult = importAllResult.memo(function MediaModalLoader(onLoad) {
     nativeEvent = nativeEvent.nativeEvent;
     _undefined(100 * nativeEvent.loaded / nativeEvent.total);
   }, []);
-  const callback2 = importAllResult.useCallback(() => callback(outer1_10.Loaded), []);
+  callback2 = importAllResult.useCallback(() => callback(outer1_10.Loaded), []);
   const items = [first, onLoadStart, onError, onLoad];
-  callback3 = importAllResult.useCallback(() => callback(outer1_10.Error), []);
+  const callback3 = importAllResult.useCallback(() => callback(outer1_10.Error), []);
   const effect = importAllResult.useEffect(() => {
     if (outer1_10.Loading === first) {
-      if (null != onLoadStart) {
-        onLoadStart();
+      if (onLoadStart != null) {
+        tmp9();
       }
-    } else if (outer1_10.Error === tmp) {
-      if (null != onError) {
-        onError();
+    } else if (tmp2.Error === tmp) {
+      if (onError != null) {
+        tmp6();
       }
-    } else if (outer1_10.Loaded === tmp) {
-      if (null != onLoad) {
-        onLoad();
+    } else if (tmp2.Loaded === tmp) {
+      if (onLoad != null) {
+        tmp3();
       }
     }
   }, items);
-  const effect1 = importAllResult.useEffect(() => () => clearTimeout(outer1_6.current));
+  const effect1 = importAllResult.useEffect(() => () => clearTimeout(ref.current));
   if (first === closure_10.Error) {
-    obj = {};
-    const items1 = [tmp3.loader, style];
-    obj.style = items1;
-    obj = { style: tmp3.loaderText, variant: "heading-md/semibold", color: "text-overlay-light" };
+    let obj = { style: null, children: null };
+    const items1 = [tmp2.loader, style];
+    obj[0] = items1;
+    obj = { style: null, variant: "heading-md/semibold", color: "text-overlay-light", children: null };
+    obj[0] = tmp2.loaderText;
     const intl = onLoadStart(onError[7]).intl;
-    obj.children = intl.string(onLoadStart(onError[7]).t["+ITMYX"]);
-    obj.children = callback(onLoadStart(onError[6]).Text, obj);
-    let tmp32Result = callback(c5, obj);
+    obj[3] = intl.string(onLoadStart(onError[7]).t["+ITMYX"]);
+    obj[1] = callback(onLoadStart(onError[6]).Text, obj);
+    let tmp28Result1 = callback(c5, obj);
   } else {
     const obj1 = {};
-    const obj2 = {};
     const merged1 = Object.assign(merged);
-    obj2["style"] = style;
-    obj2["source"] = source;
-    obj2["onLoadStart"] = callback;
-    obj2["onProgress"] = callback1;
-    obj2["onLoad"] = callback2;
-    obj2["onError"] = callback3;
-    obj2["accessibilityRole"] = "image";
+    obj1.style = style;
+    obj1.source = source;
+    obj1.onLoadStart = callback;
+    obj1.onProgress = callback1;
+    obj1.onLoad = callback2;
+    obj1.onError = callback3;
+    obj1.accessibilityRole = "image";
     const description = source.description;
-    let tmp14;
-    if (null != description) {
-      tmp14 = description;
-    }
-    obj2["accessibilityLabel"] = tmp14;
-    obj2["loop"] = true;
-    const items2 = [callback(onLoad.Component, obj2), , ];
-    let tmp38Result = null;
+    obj1.accessibilityLabel = description;
+    obj1.loop = true;
+    const items2 = [callback(onLoad.Component, obj1), , ];
+    let tmp28Result = null;
     if (first === closure_10.Loading) {
-      const obj3 = {};
-      const items3 = [tmp3.loader, style];
-      obj3.style = items3;
-      let tmp21 = null;
+      const obj2 = { style: null, children: null };
+      const items3 = [tmp2.loader, style];
+      obj2[0] = items3;
+      tmp28Result = null;
       if (null == source.videoURI) {
-        const obj4 = { style: tmp3.loaderText, variant: "heading-md/semibold", color: "text-overlay-light" };
+        obj = { style: null, variant: "heading-md/semibold", color: "text-overlay-light", children: null };
+        obj[0] = tmp2.loaderText;
         const _Math = Math;
-        const items4 = [Math.round(tmp7), "%"];
-        obj4.children = items4;
-        tmp21 = callback2(onLoadStart(onError[6]).Text, obj4);
+        const items4 = [Math.round(tmp8), "%"];
+        obj[3] = items4;
+        tmp28Result = tmp28(onLoadStart(onError[6]).Text, obj);
       }
-      const items5 = [tmp21, ];
-      const obj5 = { color: "white", style: tmp3.loaderIndicator, size: "large" };
-      items5[1] = callback(closure_6, obj5);
-      obj3.children = items5;
-      tmp38Result = callback2(c5, obj3);
-      const tmp38 = callback2;
-      const tmp39 = c5;
+      const items5 = [tmp28Result, ];
+      const obj3 = { color: "white", style: null, size: "large" };
+      obj3[1] = tmp2.loaderIndicator;
+      items5[1] = tmp29(closure_6, obj3);
+      obj2[1] = items5;
+      tmp28Result = tmp28(c5, obj2);
+      const tmp33 = c5;
     }
-    items2[1] = tmp38Result;
-    const obj6 = { style, index: num, source };
-    items2[2] = callback(onLoad(onError[8]), obj6);
-    obj1.children = items2;
-    tmp32Result = callback2(importAllResult.Fragment, obj1);
-    const tmp32 = callback2;
-    const tmp34 = callback;
+    const obj4 = { children: null };
+    items2[1] = tmp28Result;
+    const obj5 = { style: null, index: null, source: null };
+    obj5[0] = style;
+    obj5[1] = num;
+    obj5[2] = source;
+    items2[2] = callback(onLoad(onError[8]), obj5);
+    obj4[0] = items2;
+    tmp28Result1 = tmp28(importAllResult.Fragment, obj4);
   }
-  return tmp32Result;
+  return tmp28Result1;
 });
 const result = require("get ActivityIndicator").fileFinishedImporting("modules/media_viewer/native/components/MediaModalLoader.tsx");
 

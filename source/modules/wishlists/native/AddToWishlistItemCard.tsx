@@ -1,69 +1,165 @@
-// Module ID: 12181
-// Function ID: 95256
+// Module ID: 12205
+// Function ID: 12206
 // Name: AddToWishlistItemCard
-// Dependencies: [5, 57, 31, 27, 653, 33, 4165, 689, 12179, 8645, 8684, 675, 8656, 3866, 1212, 8646, 8641, 2]
+// Dependencies: [5, 32, 19, 17, 676, 21, 4189, 712, 12203, 8669, 8708, 698, 8680, 3890, 1236, 8670, 8665, 2]
 // Exports: default
 
-// Module 12181 (AddToWishlistItemCard)
+// Module 12205 (AddToWishlistItemCard)
 import closure_3 from "jsxProd";
 import _slicedToArray from "_slicedToArray";
-import result from "result";
-import { View } from "get ActivityIndicator";
+import noop from "noop";
+import { View } from "set";
 import { AnalyticEvents } from "ME";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_10;
-let closure_8;
-let closure_9;
+let c10;
+let c9;
+let metroImportAll;
 const require = arg1;
-({ jsx: closure_8, Fragment: closure_9, jsxs: closure_10 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { position: "absolute", top: require("_createForOfIteratorHelperLoose").space.PX_4, right: require("_createForOfIteratorHelperLoose").space.PX_4, zIndex: 1, alignItems: "center", justifyContent: "center", padding: require("_createForOfIteratorHelperLoose").space.PX_6, borderRadius: require("_createForOfIteratorHelperLoose").radii.round, backgroundColor: require("_createForOfIteratorHelperLoose").colors.CONTROL_OVERLAY_SECONDARY_BACKGROUND_DEFAULT };
-_createForOfIteratorHelperLoose.heartOverlay = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-const result = require("result").fileFinishedImporting("modules/wishlists/native/AddToWishlistItemCard.tsx");
+({ jsx: metroImportAll, Fragment: c9, jsxs: c10 } = jsxProd);
+createCacheKey = { heartOverlay: null };
+createCacheKey = { position: "absolute", top: require("Themes").space.PX_4, right: require("Themes").space.PX_4, zIndex: 1, alignItems: "center", justifyContent: "center", padding: require("Themes").space.PX_6, borderRadius: require("Themes").radii.round, backgroundColor: require("Themes").colors.CONTROL_OVERLAY_SECONDARY_BACKGROUND_DEFAULT };
+createCacheKey[0] = createCacheKey;
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+const result = require("noop").fileFinishedImporting("modules/wishlists/native/AddToWishlistItemCard.tsx");
 
 export default function AddToWishlistItemCard(sku) {
   sku = sku.sku;
   const wishlistId = sku.wishlistId;
   const analyticsLocations = sku.analyticsLocations;
-  let obj = { sku: 0, wishlistId: 0, analyticsLocations: 0 };
-  Object.setPrototypeOf(null);
-  const merged = Object.assign(sku, obj);
-  const tmp4 = _createForOfIteratorHelperLoose();
-  let callback = tmp4;
-  const wishlistAnalyticsContext = sku(analyticsLocations[8]).useWishlistAnalyticsContext();
-  const tmp6 = callback(wishlistAnalyticsContext.useState(false), 2);
-  const first = tmp6[0];
-  let closure_7 = tmp6[1];
-  let items = [sku, tmp4.heartOverlay, merged.size];
-  // CreateGeneratorClosureLongIndex (0x67)
+  const merged = Object.assign(sku, Object.create(null));
+  let callback;
+  let wishlistAnalyticsContext;
+  let first;
+  let closure_7;
+  const tmp2 = createCacheKey();
+  callback = tmp2;
+  let obj = sku(analyticsLocations[8]);
+  wishlistAnalyticsContext = obj.useWishlistAnalyticsContext();
+  const tmp4 = callback(wishlistAnalyticsContext.useState(false), 2);
+  first = tmp4[0];
+  closure_7 = tmp4[1];
+  let items = [sku, tmp2.heartOverlay, merged.size];
   callback = wishlistAnalyticsContext.useCallback(() => {
-    let obj = {};
+    let obj = { children: null };
     obj = { sku, size: merged.size };
     const items = [outer1_8(wishlistId(analyticsLocations[9]), obj), ];
-    obj = { style: tmp4.heartOverlay, pointerEvents: "none" };
-    const obj1 = { size: "sm", color: wishlistId(analyticsLocations[7]).colors.ICON_OVERLAY_LIGHT };
-    obj.children = outer1_8(sku(analyticsLocations[10]).HeartOutlineIcon, obj1);
+    obj = { style: _undefined.heartOverlay, pointerEvents: "none", children: null };
+    const obj1 = { size: "sm", color: null };
+    obj1[1] = wishlistId(analyticsLocations[7]).colors.ICON_OVERLAY_LIGHT;
+    obj[2] = outer1_8(sku(analyticsLocations[10]).HeartOutlineIcon, obj1);
     items[1] = outer1_8(first, obj);
-    obj.children = items;
+    obj[0] = items;
     return outer1_10(outer1_9, obj);
   }, items);
   const items1 = [first, wishlistAnalyticsContext, , , , ];
   ({ id: arr2[2], productLine: arr2[3] } = sku);
   items1[4] = wishlistId;
   items1[5] = analyticsLocations;
-  const callback1 = wishlistAnalyticsContext.useCallback(merged(tmp), items1);
-  obj = {};
-  const obj2 = sku(analyticsLocations[8]);
-  const intl = sku(analyticsLocations[14]).intl;
-  obj = {};
-  const tmp10 = wishlistId(analyticsLocations[15]);
-  obj.productName = sku(analyticsLocations[16]).getProductNameAndTypeFromSku(sku);
-  obj.accessibilityLabel = intl.formatToPlainString(sku(analyticsLocations[14]).t.xRjJBe, obj);
-  obj.renderPreview = callback;
-  obj.onPress = callback1;
+  const callback1 = wishlistAnalyticsContext.useCallback(merged(function*() {
+    if (c4 === 2) {
+      c4 = 3;
+      HermesBuiltin.throwTypeError();
+    } else if (tmp7 === 3) {
+      if (arg0 === 1) {
+        throw arg1;
+      } else if (arg0 === 2) {
+        let obj = { value: null, done: true };
+        obj[0] = arg1;
+        return obj;
+      } else {
+        return { value: "HermesInternal", done: null };
+      }
+    } else {
+      try {
+        c4 = 2;
+        if (0 === v0) {
+          if (arg0 === 1) {
+            c4 = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            c4 = 3;
+            obj = { value: null, done: true };
+            obj[0] = arg1;
+            return obj;
+          } else {
+            let closure_0 = tmp4;
+            if (outer1_6) {
+              c4 = 3;
+            } else {
+              let surface;
+              if (outer1_5 != null) {
+                surface = tmp28.surface;
+              }
+              if (null != surface) {
+                let obj1 = { sku_id: null, wishlist_id: null, wishlist_owner_id: null, surface: null, position_in_section: null, item_source: null, click_type: "add_to_wishlist", product_line: null, impression_session_id: null, location_stack: null };
+                obj1[0] = outer1_0.id;
+                obj1[1] = v0;
+                ({ wishlistOwnerId: obj9[2], surface: obj9[3], positionInSection: obj9[4], itemSource: obj9[5] } = tmp28);
+                obj1[7] = outer1_0.productLine;
+                ({ impressionSessionId: obj9[8], analyticsLocations: obj9[9] } = tmp28);
+                v0(outer1_2[11]).track(outer1_7.WISHLIST_ITEM_CLICKED, obj1);
+                const obj8 = v0(outer1_2[11]);
+              }
+              outer1_7(true);
+              let c3 = 2;
+              let obj3 = v0(outer1_2[12]);
+              v0 = 3;
+              c4 = 1;
+              const obj2 = { value: null, done: false };
+              obj2[0] = obj3.addSkuToWishlist(outer1_0.id, outer1_2);
+              return obj2;
+            }
+          }
+        } else if (1 !== tmp8) {
+          if (2 === tmp8) {
+            c3 = 1;
+            obj1 = v0(outer1_2[13]);
+            obj3 = { key: "WISHLIST_ADD_SUGGESTION_ERROR", content: null };
+            const intl = outer1_0(outer1_2[14]).intl;
+            obj3[1] = intl.string(outer1_0(outer1_2[14]).t.F8FvUy);
+            obj1.open(obj3);
+          } else if (arg0 === 1) {
+            c4 = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            c3 = 0;
+            callback(false);
+            c4 = 3;
+            obj = { value: null, done: true };
+            obj[0] = arg1;
+            return obj;
+          } else {
+            c3 = 1;
+          }
+          c3 = 0;
+          callback(false);
+        }
+        c3 = 0;
+        callback(false);
+        throw closure_2;
+      } catch (tmp36) {
+        closure_2 = tmp36;
+        if (tmp5 === c3) {
+          c4 = tmp3;
+          throw tmp36;
+        } else if (tmp2 === tmp38) {
+          v0 = tmp2;
+        } else {
+          v0 = tmp;
+        }
+      }
+    }
+  }), items1);
+  obj = { accessibilityLabel: null, renderPreview: null, onPress: null };
+  let intl = sku(analyticsLocations[14]).intl;
+  obj = { productName: null };
+  const tmp8 = wishlistId(analyticsLocations[15]);
+  obj[0] = sku(analyticsLocations[16]).getProductNameAndTypeFromSku(sku);
+  obj[0] = intl.formatToPlainString(sku(analyticsLocations[14]).t.xRjJBe, obj);
+  obj[1] = callback;
+  obj[2] = callback1;
   const merged1 = Object.assign(merged);
-  return callback2(tmp10, obj);
+  return callback2(tmp8, obj);
 };

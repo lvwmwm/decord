@@ -1,39 +1,39 @@
-// Module ID: 16557
-// Function ID: 128868
+// Module ID: 16592
+// Function ID: 16593
 // Name: resetImperatively
-// Dependencies: [677, 682, 3778, 2]
+// Dependencies: [700, 705, 3802, 2]
 // Exports: initializeImperatively, resetImperatively, useDescriptionState, useEmojiIdState, useEmojiNameState, useNameState, useRefIdState
 
-// Module 16557 (resetImperatively)
-import useStoreWithEqualityFn from "useStoreWithEqualityFn";
+// Module 16592 (resetImperatively)
+import identity from "identity";
 
-let closure_2 = Object.freeze({ name: "", emojiId: undefined, emojiName: undefined, description: undefined, refId: undefined });
-let closure_3 = useStoreWithEqualityFn.createWithEqualityFn((arg0) => {
+let closure_2 = Object.freeze({ name: "", emojiId: "accessibilityRole", emojiName: "LengthDelimited", description: "default", refId: "r" });
+let closure_3 = identity.createWithEqualityFn((arg0) => {
   let closure_0 = arg0;
   const obj = {};
   const merged = Object.assign(closure_2);
-  obj["setEmojiId"] = function setEmojiId(emoji_id) {
+  obj.setEmojiId = function setEmojiId(emoji_id) {
     const callback = emoji_id;
     callback(outer1_1[1]).batchUpdates(() => emoji_id({ emojiId: emoji_id }));
   };
-  obj["setEmojiName"] = function setEmojiName(emoji_name) {
+  obj.setEmojiName = function setEmojiName(emoji_name) {
     const callback = emoji_name;
     callback(outer1_1[1]).batchUpdates(() => emoji_name({ emojiName: emoji_name }));
   };
-  obj["setName"] = function setName(arg0) {
+  obj.setName = function setName(arg0) {
     const callback = arg0;
     callback(outer1_1[1]).batchUpdates(() => callback({ name: callback }));
   };
-  obj["setDescription"] = function setDescription(description) {
+  obj.setDescription = function setDescription(description) {
     const callback = description;
     callback(outer1_1[1]).batchUpdates(() => description({ description }));
   };
-  obj["setRefId"] = function setRefId(ref_id) {
+  obj.setRefId = function setRefId(ref_id) {
     const callback = ref_id;
     callback(outer1_1[1]).batchUpdates(() => callback({ refId: callback }));
   };
-  obj["reset"] = function reset() {
-    callback(outer1_1[1]).batchUpdates(() => outer1_0(outer2_2));
+  obj.reset = function reset() {
+    callback(outer1_1[1]).batchUpdates(() => callback(outer1_2));
   };
   return obj;
 });
@@ -67,33 +67,33 @@ export const useDescriptionState = function useDescriptionState() {
     const items = [, ];
     ({ description: arr[0], setDescription: arr[1] } = arg0);
     return items;
-  }, require(3778) /* isIterable */.shallow);
+  }, require(3802) /* isIterable */.shallow);
 };
 export const useEmojiIdState = function useEmojiIdState() {
   return store((arg0) => {
     const items = [, ];
     ({ emojiId: arr[0], setEmojiId: arr[1] } = arg0);
     return items;
-  }, require(3778) /* isIterable */.shallow);
+  }, require(3802) /* isIterable */.shallow);
 };
 export const useEmojiNameState = function useEmojiNameState() {
   return store((arg0) => {
     const items = [, ];
     ({ emojiName: arr[0], setEmojiName: arr[1] } = arg0);
     return items;
-  }, require(3778) /* isIterable */.shallow);
+  }, require(3802) /* isIterable */.shallow);
 };
 export const useNameState = function useNameState() {
   return store((arg0) => {
     const items = [, ];
     ({ name: arr[0], setName: arr[1] } = arg0);
     return items;
-  }, require(3778) /* isIterable */.shallow);
+  }, require(3802) /* isIterable */.shallow);
 };
 export const useRefIdState = function useRefIdState() {
   return store((arg0) => {
     const items = [, ];
     ({ refId: arr[0], setRefId: arr[1] } = arg0);
     return items;
-  }, require(3778) /* isIterable */.shallow);
+  }, require(3802) /* isIterable */.shallow);
 };

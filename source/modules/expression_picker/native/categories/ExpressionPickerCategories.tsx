@@ -1,25 +1,25 @@
-// Module ID: 9420
-// Function ID: 73273
+// Module ID: 9444
+// Function ID: 9445
 // Name: ExpressionPickerCategories
-// Dependencies: [31, 27, 33, 4165, 689, 1324, 4036, 9421, 2]
+// Dependencies: [19, 17, 21, 4189, 712, 1348, 4060, 9445, 2]
 // Exports: default
 
-// Module 9420 (ExpressionPickerCategories)
-import "result";
+// Module 9444 (ExpressionPickerCategories)
+import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_4;
-let closure_5;
+let c4;
+let c5;
 const require = arg1;
-({ jsx: closure_4, jsxs: closure_5 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SURFACE_HIGH, paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_8, flexDirection: "row", alignItems: "center" };
-_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.containerRefresh = { borderTopWidth: 1, borderTopColor: require("_createForOfIteratorHelperLoose").colors.BORDER_SUBTLE };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-const obj1 = { borderTopWidth: 1, borderTopColor: require("_createForOfIteratorHelperLoose").colors.BORDER_SUBTLE };
+({ jsx: c4, jsxs: c5 } = jsxProd);
+createCacheKey = { container: null, containerRefresh: null };
+createCacheKey = { backgroundColor: require("Themes").colors.BACKGROUND_SURFACE_HIGH, paddingHorizontal: require("Themes").space.PX_8, flexDirection: "row", alignItems: "center" };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { borderTopWidth: 1, borderTopColor: require("Themes").colors.BORDER_SUBTLE };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+const obj1 = { borderTopWidth: 1, borderTopColor: require("Themes").colors.BORDER_SUBTLE };
 const result = require("jsxProd").fileFinishedImporting("modules/expression_picker/native/categories/ExpressionPickerCategories.tsx");
 
 export default function ExpressionPickerCategories(arg0) {
@@ -27,24 +27,23 @@ export default function ExpressionPickerCategories(arg0) {
   let portalHostName;
   let style;
   ({ children, portalHostName, style } = arg0);
-  const tmp = _createForOfIteratorHelperLoose();
-  const tmp2 = importDefault(1324)("ExpressionPickerCategories");
-  let obj = { hostName: portalHostName };
-  obj = {};
+  const tmp = createCacheKey();
+  const tmp4 = importDefault(1348)("ExpressionPickerCategories");
+  let obj = { hostName: portalHostName, children: null };
   const items = [tmp.container, , ];
   let containerRefresh = null;
-  if (tmp2) {
+  if (tmp4) {
     containerRefresh = tmp.containerRefresh;
   }
+  obj = { style: items, children: null };
   items[1] = containerRefresh;
   items[2] = style;
-  obj.style = items;
-  let tmp7 = null;
-  if (!tmp2) {
-    tmp7 = callback(importDefault(9421), {});
+  let tmp5Result = null;
+  if (!tmp4) {
+    tmp5Result = tmp5(importDefault(9445), {});
   }
-  const items1 = [tmp7, children];
-  obj.children = items1;
-  obj.children = closure_5(View, obj);
-  return callback(require(4036) /* Portal */.Portal, obj);
+  const items1 = [tmp5Result, children];
+  obj[1] = items1;
+  obj[1] = closure_5(View, obj);
+  return closure_4(require(4060) /* Portal */.Portal, obj);
 };

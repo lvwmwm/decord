@@ -1,15 +1,19 @@
-// Module ID: 4307
-// Function ID: 37513
-// Name: filterParsedVideoCodecs
-// Dependencies: [4226, 2]
-// Exports: codecNameToPayloadName, filterVideoCodecs, getExperimentCodecs
+// Module ID: 4345
+// Function ID: 4346
+// Name: items
+// Dependencies: [4250, 2]
+// Exports: codecNameToPayloadName, filterParsedVideoCodecs, filterVideoCodecs, getExperimentCodecs, parseNativeCodecs
 
-// Module 4307 (filterParsedVideoCodecs)
+// Module 4345 (items)
 import { ExperimentFlags } from "DesktopSources";
 
-function filterParsedVideoCodecs(parseNativeCodecsResult, experimentCodecs, flag) {
+let items = [{ name: "H264", encode: true, decode: true }, { name: "VP8", encode: true, decode: true }];
+const result = require("set").fileFinishedImporting("../discord_common/js/packages/media-engine/utils/VideoCodecUtils.tsx");
+
+export const filterParsedVideoCodecs = function filterParsedVideoCodecs(parseNativeCodecsResult, experimentCodecs, arg2) {
   let closure_0 = parseNativeCodecsResult;
-  if (flag === undefined) {
+  let flag = arg2;
+  if (arg2 === undefined) {
     flag = false;
   }
   let items;
@@ -17,15 +21,16 @@ function filterParsedVideoCodecs(parseNativeCodecsResult, experimentCodecs, flag
   const combined = experimentCodecs.concat(items);
   items = [];
   const item = combined.forEach((encode) => {
-    const found = encode.find((name) => encode.name === name.name);
+    const mapped = encode;
+    const found = mapped.find((name) => encode.name === name.name);
     if (null != found) {
-      const obj = {};
-      ({ name: obj.name, encode } = found);
+      const obj = { name: null, encode: null, decode: null };
+      ({ name: obj[0], encode } = found);
       if (encode) {
         encode = encode.encode;
       }
-      obj.encode = encode;
-      obj.decode = found.decode && encode.decode;
+      obj[1] = encode;
+      obj[2] = found.decode && encode.decode;
       items.push(obj);
     }
   });
@@ -34,66 +39,102 @@ function filterParsedVideoCodecs(parseNativeCodecsResult, experimentCodecs, flag
     set = new Set(items.map((name) => name.name));
     const item1 = parseNativeCodecsResult.forEach((name) => {
       if (!set.has(name.name)) {
-        const obj = { name: name.name, encode: false, decode: name.decode };
+        const obj = { name: null, encode: false, decode: null };
+        ({ name: obj[0], decode: obj[2] } = name);
         items.push(obj);
       }
     });
   }
   return items;
-}
-function parseNativeCodecs(arg0) {
+};
+export const getExperimentCodecs = function getExperimentCodecs(experimentFlags) {
+  const hasItem = experimentFlags.has(ExperimentFlags.SIGNAL_AV1_ENCODE);
+  const hasItem1 = experimentFlags.has(ExperimentFlags.SIGNAL_AV1_DECODE);
+  let tmp4 = hasItem;
+  if (!hasItem) {
+    tmp4 = hasItem1;
+  }
+  const items = [];
+  if (tmp4) {
+    const obj = { name: "AV1", encode: null, decode: null };
+    obj[1] = hasItem;
+    obj[2] = hasItem1;
+    items.push(obj);
+  }
+  let hasItem2;
+  if (experimentFlags != null) {
+    hasItem2 = experimentFlags.has(tmp.H265_HARDWARE_ONLY);
+  }
+  let tmp8 = !hasItem2;
+  if (hasItem2) {
+    let hasItem3;
+    if (experimentFlags != null) {
+      hasItem3 = experimentFlags.has(tmp.H265_HARDWARE_DECODE_AVAILABLE);
+    }
+    tmp8 = hasItem3;
+  }
+  items.push({ name: "H265", encode: !experimentFlags.has(ExperimentFlags.H265_DISABLE_ENCODE), decode: tmp8 });
+  return items;
+};
+export const filterVideoCodecs = function filterVideoCodecs(arg0, experimentCodecs) {
+  let flag = arg2;
+  if (arg2 === undefined) {
+    flag = false;
+  }
   const parsed = JSON.parse(arg0);
-  return parsed.map((codec) => {
-    const obj = {};
+  let mapped = parsed.map((codec) => {
     codec = codec.codec;
     let str = "AV1";
     if ("AV1X" !== codec) {
       str = codec;
     }
-    obj.name = str;
-    ({ encode: obj.encode, decode: obj.decode } = codec);
-    return obj;
+    return { name: str, encode: codec.encode, decode: codec.decode };
   });
-}
-let items = [{ name: "H264", encode: true, decode: true }, { name: "VP8", encode: true, decode: true }];
-const result = require("set").fileFinishedImporting("../discord_common/js/packages/media-engine/utils/VideoCodecUtils.tsx");
-
-export { filterParsedVideoCodecs };
-export const getExperimentCodecs = function getExperimentCodecs(experimentFlags) {
-  const items = [];
-  const hasItem = experimentFlags.has(ExperimentFlags.SIGNAL_AV1_ENCODE);
-  const hasItem1 = experimentFlags.has(ExperimentFlags.SIGNAL_AV1_DECODE);
-  let tmp3 = hasItem;
-  if (!hasItem) {
-    tmp3 = hasItem1;
-  }
-  if (tmp3) {
-    let obj = { name: "AV1", encode: hasItem, decode: hasItem1 };
-    items.push(obj);
-  }
-  let hasItem2 = null != experimentFlags;
-  if (hasItem2) {
-    hasItem2 = experimentFlags.has(ExperimentFlags.H265_HARDWARE_ONLY);
-  }
-  let tmp8 = !hasItem2;
-  if (!tmp8) {
-    let hasItem3;
-    if (null != experimentFlags) {
-      hasItem3 = experimentFlags.has(ExperimentFlags.H265_HARDWARE_DECODE_AVAILABLE);
-    }
-    tmp8 = hasItem3;
-  }
-  obj = { name: "H265", encode: !experimentFlags.has(ExperimentFlags.H265_DISABLE_ENCODE), decode: tmp8 };
-  items.push(obj);
-  return items;
-};
-export const filterVideoCodecs = function filterVideoCodecs(arg0, experimentCodecs, flag) {
   if (flag === undefined) {
     flag = false;
   }
-  return filterParsedVideoCodecs(parseNativeCodecs(arg0), experimentCodecs, flag);
+  let items;
+  let set;
+  const combined = experimentCodecs.concat(items);
+  items = [];
+  const item = combined.forEach((encode) => {
+    const mapped = encode;
+    const found = mapped.find((name) => encode.name === name.name);
+    if (null != found) {
+      const obj = { name: null, encode: null, decode: null };
+      ({ name: obj[0], encode } = found);
+      if (encode) {
+        encode = encode.encode;
+      }
+      obj[1] = encode;
+      obj[2] = found.decode && encode.decode;
+      items.push(obj);
+    }
+  });
+  if (flag) {
+    const _Set = Set;
+    set = new Set(items.map((name) => name.name));
+    const item1 = mapped.forEach((name) => {
+      if (!set.has(name.name)) {
+        const obj = { name: null, encode: false, decode: null };
+        ({ name: obj[0], decode: obj[2] } = name);
+        items.push(obj);
+      }
+    });
+  }
+  return items;
 };
-export { parseNativeCodecs };
+export const parseNativeCodecs = function parseNativeCodecs(arg0) {
+  const parsed = JSON.parse(arg0);
+  return parsed.map((codec) => {
+    codec = codec.codec;
+    let str = "AV1";
+    if ("AV1X" !== codec) {
+      str = codec;
+    }
+    return { name: str, encode: codec.encode, decode: codec.decode };
+  });
+};
 export function codecNameToPayloadName(name) {
   let str = "AV1X";
   if ("AV1" !== name) {

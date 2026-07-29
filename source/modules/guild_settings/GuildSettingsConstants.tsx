@@ -1,26 +1,26 @@
-// Module ID: 16409
-// Function ID: 127733
+// Module ID: 16444
+// Function ID: 16445
 // Name: MAX_SUBCATEGORIES
-// Dependencies: [1212, 2]
+// Dependencies: [1236, 2]
 // Exports: getSettingsErrorMessage
 
-// Module 16409 (MAX_SUBCATEGORIES)
+// Module 16444 (MAX_SUBCATEGORIES)
 const obj = {
   afk_channel_id() {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(require(1212) /* getSystemLocale */.t.KuYcnU);
+    const intl = require(1236) /* getSystemLocale */.intl;
+    return intl.string(require(1236) /* getSystemLocale */.t.KuYcnU);
   },
   public_updates_channel_id() {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(require(1212) /* getSystemLocale */.t.vAyDGU);
+    const intl = require(1236) /* getSystemLocale */.intl;
+    return intl.string(require(1236) /* getSystemLocale */.t.vAyDGU);
   },
   safety_alerts_channel_id() {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(require(1212) /* getSystemLocale */.t.sMkYE8);
+    const intl = require(1236) /* getSystemLocale */.intl;
+    return intl.string(require(1236) /* getSystemLocale */.t.sMkYE8);
   },
   system_channel_id() {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(require(1212) /* getSystemLocale */.t.NASFnq);
+    const intl = require(1236) /* getSystemLocale */.intl;
+    return intl.string(require(1236) /* getSystemLocale */.t.NASFnq);
   }
 };
 const result = require("set").fileFinishedImporting("modules/guild_settings/GuildSettingsConstants.tsx");
@@ -36,13 +36,13 @@ export const getSettingsErrorMessage = function getSettingsErrorMessage(arg0) {
   } else {
     const _Object = Object;
     const first = Object.keys(arg0)[0];
-    let callResult;
-    if (null != obj[first]) {
-      callResult = obj.call(obj);
+    let tmp2Result;
+    if (obj[first] != null) {
+      tmp2Result = tmp2();
     }
-    if (null != callResult) {
+    if (null != tmp2Result) {
       const _HermesInternal = HermesInternal;
-      let combined = "(" + callResult + ") " + arg0[first];
+      let combined = "(" + tmp2Result + ") " + arg0[first];
     } else {
       combined = arg0[first];
     }

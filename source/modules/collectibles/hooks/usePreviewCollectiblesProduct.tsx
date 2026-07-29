@@ -1,33 +1,35 @@
-// Module ID: 8713
-// Function ID: 68977
+// Module ID: 8737
+// Function ID: 8738
 // Name: usePreviewCollectibleProduct
-// Dependencies: [57, 31, 5785, 1875, 5786, 5787, 8022, 1877, 7916, 2]
+// Dependencies: [32, 19, 5803, 1899, 5804, 5805, 8046, 1901, 7941, 2]
 // Exports: usePreviewCollectibleProduct
 
-// Module 8713 (usePreviewCollectibleProduct)
+// Module 8737 (usePreviewCollectibleProduct)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
-import { isAvatarDecorationRecord } from "_isNativeReflectConstruct";
-import { isNameplateRecord } from "_isNativeReflectConstruct";
-import { isProfileEffectRecord } from "_isNativeReflectConstruct";
-import { isProfileFrameRecord } from "_isNativeReflectConstruct";
+import noop from "noop";
+import { isAvatarDecorationRecord } from "fromServer";
+import { isNameplateRecord } from "fromServer";
+import { isProfileEffectRecord } from "fromServer";
+import { isProfileFrameRecord } from "fromServer";
 
 const require = arg1;
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/collectibles/hooks/usePreviewCollectiblesProduct.tsx");
+const result = require("fromServer").fileFinishedImporting("modules/collectibles/hooks/usePreviewCollectiblesProduct.tsx");
 
 export const usePreviewCollectibleProduct = function usePreviewCollectibleProduct(product, arg1, arg2) {
   const _require = product;
   const dependencyMap = arg1;
   let _slicedToArray = arg2;
-  const shopProductItems = _require(8022).useShopProductItems(product);
+  const shopProductItems = _require(8046).useShopProductItems(product);
   const firstProfileEffect = shopProductItems.firstProfileEffect;
   const firstAvatarDecoration = shopProductItems.firstAvatarDecoration;
   const firstNameplate = shopProductItems.firstNameplate;
   const firstProfileFrame = shopProductItems.firstProfileFrame;
   const items = [product, arg1, firstProfileEffect, firstAvatarDecoration, firstNameplate, firstProfileFrame, arg2];
   const effect = firstProfileEffect.useEffect(() => {
-    if (product.type === product(1877).CollectiblesItemType.BUNDLE) {
-      let obj = {};
+    let obj = product;
+    let setPendingChangesResult = table;
+    if (product.type === product(table[7]).CollectiblesItemType.BUNDLE) {
+      obj = {};
       if (null != firstAvatarDecoration) {
         obj.avatarDecoration = firstAvatarDecoration;
       }
@@ -41,45 +43,48 @@ export const usePreviewCollectibleProduct = function usePreviewCollectibleProduc
         obj.profileFrame = firstProfileFrame;
       }
       if (null != callback) {
-        if (firstAvatarDecoration(callback)) {
-          obj.avatarDecoration = callback;
+        if (firstAvatarDecoration(tmp11)) {
+          obj.avatarDecoration = tmp11;
         } else {
-          if (firstProfileFrame(callback)) {
-            obj.profileEffect = callback;
-          } else if (!firstNameplate(callback)) {
-            if (outer1_7(callback)) {
-              obj.profileFrame = callback;
+          if (firstProfileFrame(tmp11)) {
+            obj.profileEffect = tmp11;
+          } else if (!firstNameplate(tmp11)) {
+            if (outer1_7(tmp11)) {
+              obj.profileFrame = tmp11;
             }
           }
-          obj.nameplate = callback;
+          obj.nameplate = tmp11;
         }
       }
-      product(7916).setPendingChanges(obj);
-      const obj10 = product(7916);
+      obj = obj(setPendingChangesResult[8]);
+      setPendingChangesResult = obj.setPendingChanges(obj);
     } else {
       const first = callback(product.items, 1)[0];
       if (firstAvatarDecoration(first)) {
-        obj = { avatarDecoration: first };
-        product(7916).setPendingChanges(obj);
-        const obj7 = product(7916);
+        let objResult = obj(setPendingChangesResult[8]);
+        obj = { avatarDecoration: null };
+        obj[0] = first;
+        objResult.setPendingChanges(obj);
       } else if (firstProfileFrame(first)) {
-        const obj1 = { profileEffect: first };
-        product(7916).setPendingChanges(obj1);
-        const obj5 = product(7916);
+        objResult = obj(setPendingChangesResult[8]);
+        const obj1 = { profileEffect: null };
+        obj1[0] = first;
+        objResult.setPendingChanges(obj1);
       } else if (firstNameplate(first)) {
-        let obj2 = product(7916);
-        obj2 = { nameplate: first };
-        obj2.setPendingChanges(obj2);
+        const obj2 = { nameplate: null };
+        obj2[0] = first;
+        obj(setPendingChangesResult[8]).setPendingChanges(obj2);
+        const objResult1 = obj(setPendingChangesResult[8]);
       } else if (outer1_7(first)) {
-        obj = product(7916);
-        const obj3 = { profileFrame: first };
-        obj.setPendingChanges(obj3);
+        const obj3 = { profileFrame: null };
+        obj3[0] = first;
+        obj(setPendingChangesResult[8]).setPendingChanges(obj3);
+        const objResult2 = obj(setPendingChangesResult[8]);
       }
       return () => {
-        if (outer1_1) {
-          let obj = callback(table[8]);
-          obj = { avatarDecoration: undefined, profileEffect: undefined, nameplate: undefined, profileFrame: undefined };
-          obj.setPendingChanges(obj);
+        if (closure_1) {
+          outer1_0(outer1_1[8]).setPendingChanges({ avatarDecoration: "Array", profileEffect: "flex", nameplate: "y", profileFrame: "HermesInternal" });
+          const obj = outer1_0(outer1_1[8]);
         }
       };
     }

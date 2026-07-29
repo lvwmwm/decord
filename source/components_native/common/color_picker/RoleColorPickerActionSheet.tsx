@@ -1,34 +1,34 @@
-// Module ID: 14923
-// Function ID: 113693
+// Module ID: 14949
+// Function ID: 14950
 // Name: items
-// Dependencies: [57, 31, 27, 653, 33, 4165, 689, 13676, 9115, 4133, 13674, 5221, 5220, 1212, 4578, 14343, 2]
+// Dependencies: [32, 19, 17, 676, 21, 4189, 712, 13697, 9139, 4157, 13695, 5243, 5242, 1236, 4600, 14365, 2]
 // Exports: default
 
-// Module 14923 (items)
+// Module 14949 (items)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
+import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import ME from "ME";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
 let ROLE_COLORS;
-let closure_5;
+let c5;
+let c9;
 let closure_6;
-let closure_7;
-let closure_8;
-let closure_9;
+let error;
+let metroImportAll;
 const require = arg1;
-({ View: closure_5, Pressable: closure_6 } = get_ActivityIndicator);
-({ DEFAULT_ROLE_COLOR: closure_7, ROLE_COLORS } = ME);
-({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
-let items = [...require("_slicedToArray"), ...require("showCustomColorPickerActionSheet"), ...require("_createForOfIteratorHelperLoose"), ...require("EyeDropperIcon")];
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { paddingVertical: require("_createForOfIteratorHelperLoose").space.PX_16, flexGrow: 1, justifyContent: "center", alignItems: "center" };
-_createForOfIteratorHelperLoose.body = _createForOfIteratorHelperLoose;
-let obj1 = { flexGrow: 1, flexDirection: "row", flexWrap: "wrap", justifyContent: "center", maxWidth: 340, marginBottom: require("_createForOfIteratorHelperLoose").space.PX_16 };
-_createForOfIteratorHelperLoose.colorWrap = obj1;
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+({ View: c5, Pressable: closure_6 } = get_ActivityIndicator);
+({ DEFAULT_ROLE_COLOR: error, ROLE_COLORS } = ME);
+({ jsx: metroImportAll, jsxs: c9 } = jsxProd);
+let items = [...require("_slicedToArray"), ...require("showCustomColorPickerActionSheet"), ...require("createCacheKey"), ...require("EyeDropperIcon")];
+createCacheKey = { body: null, colorWrap: null };
+createCacheKey = { paddingVertical: require("Themes").space.PX_16, flexGrow: 1, justifyContent: "center", alignItems: "center" };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { flexGrow: 1, flexDirection: "row", flexWrap: "wrap", justifyContent: "center", maxWidth: 340, marginBottom: require("Themes").space.PX_16 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let obj1 = { flexGrow: 1, flexDirection: "row", flexWrap: "wrap", justifyContent: "center", maxWidth: 340, marginBottom: require("Themes").space.PX_16 };
 const result = require("get ActivityIndicator").fileFinishedImporting("components_native/common/color_picker/RoleColorPickerActionSheet.tsx");
 
 export default function RoleColorPickerActionSheet(color) {
@@ -45,13 +45,13 @@ export default function RoleColorPickerActionSheet(color) {
   let closure_5;
   let isWindowSmall;
   memo = undefined;
-  let callback;
-  let tmp = _createForOfIteratorHelperLoose();
+  let closure_8;
+  let tmp = createCacheKey();
   let obj = color(defaultColor[7]);
   styles = obj.useStyles();
-  const tmp3 = styles(first.useState(color), 2);
-  first = tmp3[0];
-  closure_5 = tmp3[1];
+  const tmp5 = styles(first.useState(color), 2);
+  first = tmp5[0];
+  closure_5 = tmp5[1];
   let obj1 = color(defaultColor[8]);
   isWindowSmall = obj1.useIsWindowSmall();
   const items = [isWindowSmall, styles.colorBlock];
@@ -60,8 +60,8 @@ export default function RoleColorPickerActionSheet(color) {
     if (isWindowSmall) {
       const obj = {};
       const merged = Object.assign(colorBlock);
-      obj["minWidth"] = 38;
-      obj["height"] = 38;
+      obj.minWidth = 38;
+      obj.height = 38;
       let tmp = obj;
     } else {
       tmp = colorBlock;
@@ -69,51 +69,52 @@ export default function RoleColorPickerActionSheet(color) {
     return tmp;
   }, items);
   const items1 = [first, onSelect];
-  callback = first.useCallback(() => {
+  const callback = first.useCallback(() => {
     onSelect(first);
     onSelect(defaultColor[9]).hideActionSheet();
   }, items1);
-  callback = first.useCallback((arg0) => {
+  closure_8 = first.useCallback((arg0) => {
     callback(arg0);
   }, []);
   const items2 = [color, onSelect];
   const callback1 = first.useCallback(() => {
     onSelect(defaultColor[10])({ color, onSelect });
   }, items2);
-  obj = {};
-  obj = {};
+  obj = { title: null, trailing: null };
   const intl = color(defaultColor[13]).intl;
-  obj.title = intl.string(color(defaultColor[13]).t.WTqQ5e);
+  obj[0] = intl.string(color(defaultColor[13]).t.WTqQ5e);
   if (null != confirmLabel) {
-    obj1 = { size: "sm", variant: "secondary", text: confirmLabel, onPress: callback };
-    let obj2 = obj1;
+    obj = { size: "sm", variant: "secondary", text: null, onPress: null };
+    obj[2] = confirmLabel;
+    obj[3] = callback;
+    obj1 = obj;
   } else {
-    obj2 = { size: "sm" };
-    const intl2 = color(defaultColor[13]).intl;
-    obj2.text = intl2.string(color(defaultColor[13]).t["R3BPH+"]);
-    obj2.onPress = callback;
+    obj1 = { size: "sm", text: null, onPress: null };
+    const intl2 = tmp2(tmp3[13]).intl;
+    obj1[1] = intl2.string(tmp2(tmp3[13]).t["R3BPH+"]);
+    obj1[2] = callback;
   }
-  obj.trailing = callback(color(defaultColor[14]).Button, obj2);
-  obj.header = callback(color(defaultColor[12]).BottomSheetTitleHeader, obj);
-  const obj3 = { style: tmp.body };
-  const obj4 = { style: tmp.colorWrap };
+  const obj2 = { header: null, children: null };
+  obj[1] = closure_8(color(defaultColor[14]).Button, obj1);
+  obj2[0] = closure_8(color(defaultColor[12]).BottomSheetTitleHeader, obj);
+  const obj3 = { style: tmp.body, children: null };
+  const obj4 = { style: tmp.colorWrap, children: null };
   const items3 = [items.map((color) => callback2(onSelect(defaultColor[7]), { color, style: memo, selected: color === first, onSelect: callback2 }, color)), ];
-  const obj5 = { style: memo, onPress: callback1 };
-  const intl3 = color(defaultColor[13]).intl;
-  obj5.accessibilityLabel = intl3.string(color(defaultColor[13]).t["/fkc8a"]);
-  obj5.accessibilityRole = "button";
-  obj5.children = callback(color(defaultColor[15]).EyeDropperIcon, { size: "lg" });
-  items3[1] = callback(isWindowSmall, obj5);
-  obj4.children = items3;
-  const items4 = [callback2(closure_5, obj4), ];
-  const obj6 = { variant: "secondary" };
-  const intl4 = color(defaultColor[13]).intl;
-  obj6.text = intl4.string(color(defaultColor[13]).t.yBZMsQ);
-  obj6.onPress = function onPress() {
+  const obj5 = { style: memo, onPress: callback1, accessibilityLabel: null, accessibilityRole: "button", children: null };
+  const intl3 = tmp2(tmp3[13]).intl;
+  obj5[2] = intl3.string(color(defaultColor[13]).t["/fkc8a"]);
+  obj5[4] = closure_8(color(defaultColor[15]).EyeDropperIcon, { size: "lg" });
+  items3[1] = closure_8(isWindowSmall, obj5);
+  obj4[1] = items3;
+  const items4 = [callback(closure_5, obj4), ];
+  const obj6 = { variant: "secondary", text: null, onPress: null };
+  const intl4 = tmp2(tmp3[13]).intl;
+  obj6[1] = intl4.string(color(defaultColor[13]).t.yBZMsQ);
+  obj6[2] = function onPress() {
     callback(defaultColor);
   };
-  items4[1] = callback(color(defaultColor[14]).Button, obj6);
-  obj3.children = items4;
-  obj.children = callback2(closure_5, obj3);
-  return callback(color(defaultColor[11]).BottomSheet, obj);
+  items4[1] = closure_8(color(defaultColor[14]).Button, obj6);
+  obj3[1] = items4;
+  obj2[1] = callback(closure_5, obj3);
+  return closure_8(color(defaultColor[11]).BottomSheet, obj2);
 };

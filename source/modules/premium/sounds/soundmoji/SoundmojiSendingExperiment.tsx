@@ -1,14 +1,15 @@
-// Module ID: 9322
-// Function ID: 72848
+// Module ID: 9346
+// Function ID: 9347
 // Name: getSoundmojiSendExperiment
-// Dependencies: [1428, 2]
+// Dependencies: [1452, 2]
 // Exports: getSoundmojiSendExperiment, useSoundmojiEmojiPickerSectionExperiment, useSoundmojiSendExperiment
 
-// Module 9322 (getSoundmojiSendExperiment)
+// Module 9346 (getSoundmojiSendExperiment)
 import ApexExperiment from "ApexExperiment";
 
-const obj = { name: "2026-03-soundmoji-sending", kind: "user", defaultConfig: { enabled: false, showSoundmojiInEmojiPicker: false }, variations: { [1]: { enabled: true, showSoundmojiInEmojiPicker: false }, [2]: { enabled: true, showSoundmojiInEmojiPicker: true } } };
-let closure_0 = ApexExperiment.createApexExperiment(obj);
+const obj = { 1: null, 2: { enabled: true, showSoundmojiInEmojiPicker: false } };
+obj[2] = { enabled: true, showSoundmojiInEmojiPicker: true };
+let closure_0 = ApexExperiment.createApexExperiment({ name: "2026-03-soundmoji-sending", kind: "user", defaultConfig: { enabled: false, showSoundmojiInEmojiPicker: false }, variations: obj });
 const result = require("set").fileFinishedImporting("modules/premium/sounds/soundmoji/SoundmojiSendingExperiment.tsx");
 
 export const getSoundmojiSendExperiment = function getSoundmojiSendExperiment(location) {

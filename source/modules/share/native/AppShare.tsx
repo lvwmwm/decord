@@ -1,106 +1,132 @@
-// Module ID: 16728
-// Function ID: 130272
+// Module ID: 16764
+// Function ID: 16765
 // Name: AppShare
-// Dependencies: [57, 31, 27, 5702, 13437, 1194, 653, 11485, 33, 566, 5623, 477, 13476, 11488, 5713, 675, 4594, 13585, 13015, 1553, 8173, 5618, 15700, 15744, 4510, 2]
+// Dependencies: [32, 19, 17, 5720, 13460, 1218, 676, 11509, 21, 589, 5641, 500, 13499, 11512, 5731, 698, 4616, 13608, 13038, 1577, 8197, 5636, 15735, 15780, 4533, 2]
 // Exports: default
 
-// Module 16728 (AppShare)
+// Module 16764 (AppShare)
 import _slicedToArray from "_slicedToArray";
-import closure_4 from "result";
-import get_ActivityIndicator from "get ActivityIndicator";
+import isMetaQuest from "isMetaQuest";
+import get_ActivityIndicator from "GestureWrapper";
 import result from "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_7 from "_isNativeReflectConstruct";
+import handleTokenUpdated from "handleTokenUpdated";
+import fetchFingerprint from "fetchFingerprint";
 import { AnalyticEvents } from "ME";
 import { MultiAccountSwitchLocation as closure_9 } from "MAX_ACCOUNTS";
-import jsxProd from "jsxProd";
+import jsxProd from "SceneLoadingIndicator";
 
-let closure_10;
-let closure_11;
-let closure_5;
+let c10;
+let c5;
 let closure_6;
+let unpackModuleId;
 const require = arg1;
-({ BackHandler: closure_5, NativeModules: closure_6 } = get_ActivityIndicator);
-({ jsx: closure_10, jsxs: closure_11 } = jsxProd);
+({ BackHandler: c5, NativeModules: closure_6 } = get_ActivityIndicator);
+({ jsx: c10, jsxs: unpackModuleId } = jsxProd);
+const share = "share";
 result = require("get ActivityIndicator").fileFinishedImporting("modules/share/native/AppShare.tsx");
 
-export default function AppShare(attachments) {
-  const _require = attachments;
-  (function useAuthenticated() {
-    const items = [outer1_7];
-    const stateFromStores = attachments(outer1_2[9]).useStateFromStores(items, () => outer2_7.isAuthenticated());
-    const items1 = [stateFromStores];
-    const effect = outer1_4.useEffect(() => {
-      if (stateFromStores) {
-        outer2_1(outer2_2[10]).startSession(outer2_7.getToken());
-        const obj = outer2_1(outer2_2[10]);
-        if (obj2.isAndroid()) {
-          const NativePermissionManager = outer2_6.NativePermissionManager;
-          const notificationAuthorization = NativePermissionManager.requestNotificationAuthorization();
-        }
-        obj2 = stateFromStores(outer2_2[11]);
-      }
-    }, items1);
-  })();
-  let items = [attachments.attachments.length, attachments.text];
-  let effect = React.useEffect(() => {
-    let obj = outer1_1(outer1_2[15]);
-    obj = {};
-    let tmp = null != attachments.text;
-    if (tmp) {
-      tmp = attachments.text.length > 0;
+export default function AppShare(targetUserId) {
+  let stateFromStores = targetUserId;
+  targetUserId = targetUserId.targetUserId;
+  stateFromStores = targetUserId;
+  let first;
+  let dependencyMap;
+  let callback;
+  let obj = React;
+  let tmp2 = callback(React.useState(false), 2);
+  first = tmp2[0];
+  dependencyMap = tmp2[1];
+  let tmp4 = null == targetUserId;
+  if (!tmp4) {
+    tmp4 = id.getId() === targetUserId;
+  }
+  const tmpResult = callback(React.useState(tmp4), 2);
+  callback = tmpResult[1];
+  const items = [first];
+  const effect = obj.useEffect(() => {
+    if (!first) {
+      first(13499).init();
+      dependencyMap(true);
+      const obj = first(13499);
     }
-    obj.has_content = tmp;
-    obj.has_attachment = attachments.attachments.length > 0;
-    obj.track(outer1_8.EXTERNAL_SHARE_OPENED, obj);
   }, items);
-  importDefault(4594)(() => {
-    let mimeTypes;
-    let numAttachments;
-    attachments = attachments.attachments;
-    ({ numAttachments, mimeTypes } = {
-      numAttachments: attachments.attachments.length,
-      mimeTypes: attachments.map((mimeType) => {
-        mimeType = mimeType.mimeType;
-        let str = "unknown";
-        if (null != mimeType) {
-          str = mimeType;
-        }
-        return str;
-      })
+  const items1 = [targetUserId];
+  const effect1 = obj.useEffect(() => {
+    let tmp2 = null != stateFromStores;
+    if (tmp2) {
+      tmp2 = outer1_7.getId() !== tmp;
+    }
+    if (tmp2) {
+      const _setTimeout = setTimeout;
+      const timerId = setTimeout(() => {
+        const obj = outer1_0(outer1_2[13]);
+        outer1_0(outer1_2[13]).switchAccount(closure_0, false, outer1_9.SHARE_EXTENSION).then(() => {
+          callback(true);
+        });
+      }, 18);
+    }
+  }, items1);
+  if (first) {
+    first = tmpResult[0];
+  }
+  let obj1 = stateFromStores(589);
+  const items2 = [id];
+  stateFromStores = obj1.useStateFromStores(items2, () => authenticated.isAuthenticated());
+  const items3 = [stateFromStores];
+  const effect2 = obj.useEffect(() => {
+    if (stateFromStores) {
+      first(5641).startSession(outer1_7.getToken());
+      const obj = first(5641);
+      if (obj2.isAndroid()) {
+        const NativePermissionManager = outer1_6.NativePermissionManager;
+        const notificationAuthorization = NativePermissionManager.requestNotificationAuthorization();
+      }
+      obj2 = stateFromStores(500);
+    }
+  }, items3);
+  const items4 = [targetUserId.attachments.length, targetUserId.text];
+  const effect3 = obj.useEffect(() => {
+    let obj = first(698);
+    let tmp2 = null != stateFromStores.text;
+    if (tmp2) {
+      tmp2 = tmp.text.length > 0;
+    }
+    obj = { has_content: tmp2, has_attachment: tmp.attachments.length > 0 };
+    obj.track(outer1_8.EXTERNAL_SHARE_OPENED, obj);
+  }, items4);
+  first(4616)(() => {
+    const attachments = stateFromStores.attachments;
+    const mapped = attachments.map((mimeType) => {
+      let str = mimeType.mimeType;
+      if (str == null) {
+        str = "unknown";
+      }
+      return str;
     });
-    const obj = {
-      numAttachments: attachments.attachments.length,
-      mimeTypes: attachments.map((mimeType) => {
-        mimeType = mimeType.mimeType;
-        let str = "unknown";
-        if (null != mimeType) {
-          str = mimeType;
-        }
-        return str;
-      })
-    };
-    attachments(outer1_2[14]).trackAppUIViewed("share", { share_num_attachments: numAttachments, share_attachment_mimetypes: mimeTypes });
+    stateFromStores(5731).trackAppUIViewed("share", { share_num_attachments: stateFromStores.attachments.length, share_attachment_mimetypes: mapped });
   });
-  let obj = { appEntryKey: "share" };
-  if (tmp) {
-    obj = { appEntryKey: "share", sharedContent: attachments };
-    const tmp12 = importDefault(13015);
-    if (obj3.isMetaQuest()) {
-      let exitApp = importDefault(8173).close;
+  obj = { appEntryKey: share, children: null };
+  if (first) {
+    obj = { appEntryKey: null, sharedContent: null, onClose: null };
+    obj[0] = tmp18;
+    obj[1] = targetUserId;
+    const tmp14Result = tmp14(13038);
+    if (tmp9Result.isMetaQuest()) {
+      let exitApp = tmp14(8197).close;
     } else {
       exitApp = exitApp.exitApp;
     }
-    obj.onClose = exitApp;
-    tmp7(tmp12, obj);
-    obj3 = _require(1553);
+    obj[2] = exitApp;
+    tmp19(tmp14Result, obj);
+    tmp9Result = tmp9(1577);
   } else {
-    let items1 = [tmp7(_require(5618).SceneLoadingIndicator, {}), , , ];
-    obj = { appEntryKey: "share" };
-    items1[1] = callback(_require(15700).ActionSheetContainer, obj);
-    items1[2] = callback(importDefault(15744), {});
-    items1[3] = callback(_require(4510).AlertModalContainer, {});
-    obj.children = items1;
-    return closure_11(tmp6, obj);
+    const items5 = [tmp19(tmp9(5636).SceneLoadingIndicator, {}), , , ];
+    obj1 = { appEntryKey: null };
+    obj1[0] = tmp18;
+    items5[1] = tmp19(tmp9(15735).ActionSheetContainer, obj1);
+    items5[2] = tmp19(tmp14(15780), {});
+    items5[3] = tmp19(tmp9(4533).AlertModalContainer, {});
+    obj[1] = items5;
+    return closure_11(tmp17, obj);
   }
 };

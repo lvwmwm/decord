@@ -1,57 +1,48 @@
-// Module ID: 5486
-// Function ID: 46735
-// Name: LayerContextManager
-// Dependencies: [6, 7, 31, 2]
+// Module ID: 5504
+// Function ID: 5505
+// Name: add
+// Dependencies: [19, 2]
 
-// Module 5486 (LayerContextManager)
-import _classCallCheck from "_classCallCheck";
-import _defineProperties from "_defineProperties";
-import importAllResult from "result";
+// Module 5504 (add)
+import importAllResult from "noop";
 
-let tmp2 = (() => {
-  class LayerContextManager {
-    constructor() {
-      tmp = LayerContextManager(this, LayerContextManager);
-      this.surfaceRef = { current: null };
-      this.items = [];
-      this.invalidate = () => null;
-      return;
-    }
+class LayerContextManager {
+  constructor() {
+    obj = Object.create(new.target.prototype);
+    obj[0] = { current: null };
+    obj[1] = [];
+    obj[2] = function invalidate() {
+      return null;
+    };
+    return obj;
   }
-  let obj = {
-    key: "add",
-    value(key, component) {
-      let _classCallCheck = key;
-      const items = this.items;
-      this.items = items.filter((key) => key.key !== _classCallCheck);
-      const items1 = this.items;
-      items1.push({ key, component });
-      this.invalidate();
-    }
-  };
-  let items = [obj, , ];
-  obj = {
-    key: "remove",
-    value(arg0) {
-      let _classCallCheck = arg0;
-      const items = this.items;
-      this.items = items.filter((key) => key.key !== _classCallCheck);
-      this.invalidate();
-    }
-  };
-  items[1] = obj;
-  obj = {
-    key: "setSurfaceRef",
-    value(current) {
-      this.surfaceRef.current = current;
-    }
-  };
-  items[2] = obj;
-  return callback(LayerContextManager, items);
-})();
-tmp2 = new tmp2();
-const context = require("result").createContext(tmp2);
-const result = require("result").fileFinishedImporting("design/components/Layers/native/LayerContext.native.tsx");
+}
+const prototype = LayerContextManager.prototype;
+prototype["add"] = function add(key, component) {
+  let closure_0 = key;
+  const items = this.items;
+  this.items = items.filter((key) => key.key !== closure_0);
+  const items1 = this.items;
+  items1.push({ key, component });
+  this.invalidate();
+};
+prototype["remove"] = function remove(arg0) {
+  let closure_0 = arg0;
+  const items = this.items;
+  this.items = items.filter((key) => key.key !== closure_0);
+  this.invalidate();
+};
+prototype["setSurfaceRef"] = function setSurfaceRef(current) {
+  this.surfaceRef.current = current;
+};
+let obj = Object.create(LayerContextManager.prototype);
+obj[0] = { current: null };
+obj[1] = [];
+obj[2] = function invalidate() {
+  return null;
+};
+const context = require("noop").createContext(obj);
+const result = require("set").fileFinishedImporting("design/components/Layers/native/LayerContext.native.tsx");
 
-export const LayerContextManager = tmp2;
+export { LayerContextManager };
 export const LayerContext = context;

@@ -1,211 +1,178 @@
-// Module ID: 6253
-// Function ID: 56022
-// Name: _isNativeReflectConstruct
-// Dependencies: [57, 6, 7, 15, 17, 18, 6248, 1284, 2]
+// Module ID: 6273
+// Function ID: 6274
+// Name: create
+// Dependencies: [32, 1307, 6268, 2]
 
-// Module 6253 (_isNativeReflectConstruct)
+// Module 6273 (create)
 import _slicedToArray from "_slicedToArray";
-import _callSuper from "_callSuper";
-import module_1284 from "module_1284";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
+import { MessageType } from "module_1307";
 
 const require = arg1;
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
+class PaymentModalBanner$Type extends MessageType {
+  constructor() {
+    items = [, , , , ];
+    items[0] = { no: 1, name: "asset_url", kind: "scalar", T: 9 };
+    items[1] = { no: 2, name: "header", kind: "scalar", T: 9 };
+    items[2] = { no: 3, name: "body", kind: "scalar", T: 9 };
+    obj = { no: 4, name: "header_localized", kind: "message", T: null };
+    class T {
+      constructor() {
+        return require("create").LocalizedString;
+      }
+    }
+    obj[3] = T;
+    items[3] = obj;
+    items[4] = {
+      no: 5,
+      name: "body_localized",
+      kind: "message",
+      T() {
+            return callback(6268).LocalizedString;
+          }
+    };
+    tmp = new tmp("discord_protos.premium_marketing.v1.PaymentModalBanner", items, T);
+    // ThrowIfThisInitialized (0x7c)
+    return tmp;
   }
-  const result = _isNativeReflectConstruct();
 }
-let tmp2 = ((MessageType) => {
-  class PaymentModalBanner$Type {
-    constructor() {
-      self = this;
-      tmp = outer1_3(this, PaymentModalBanner$Type);
-      items = [, , , , ];
-      items[0] = { no: 1, name: "asset_url", kind: "scalar", T: 9 };
-      items[1] = { no: 2, name: "header", kind: "scalar", T: 9 };
-      items[2] = { no: 3, name: "body", kind: "scalar", T: 9 };
-      obj = { no: 4, name: "header_localized", kind: "message" };
-      obj.T = function T() {
-        return PaymentModalBanner$Type(outer2_1[6]).LocalizedString;
-      };
-      items[3] = obj;
-      obj = { no: 5, name: "body_localized", kind: "message" };
-      obj.T = function T() {
-        return PaymentModalBanner$Type(outer2_1[6]).LocalizedString;
-      };
-      items[4] = obj;
-      items1 = ["discord_protos.premium_marketing.v1.PaymentModalBanner"];
-      items1[1] = items;
-      obj3 = outer1_6(PaymentModalBanner$Type);
-      tmp2 = outer1_5;
-      if (outer1_8()) {
-        tmp4 = globalThis;
-        _Reflect = Reflect;
-        tmp5 = outer1_6;
-        constructResult = Reflect.construct(obj3, items1, outer1_6(self).constructor);
-      } else {
-        constructResult = obj3.apply(self, items1);
-      }
-      return tmp2(self, constructResult);
-    }
+let prototype = PaymentModalBanner$Type.prototype;
+prototype["create"] = function create(arr) {
+  let obj = { assetUrl: "", header: "", body: "" };
+  const _Object = Object;
+  obj = { enumerable: false, value: this };
+  _Object.defineProperty(obj, require(1307).MESSAGE_TYPE, obj);
+  if (undefined !== arr) {
+    const result = require(1307).reflectionMergePartial(this, obj, arr);
+    const tmpResult = require(1307);
   }
-  callback2(PaymentModalBanner$Type, MessageType);
-  let obj = {
-    key: "create",
-    value(arr) {
-      let obj = { assetUrl: "", header: "", body: "" };
-      const _Object = Object;
-      obj = { enumerable: false, value: this };
-      _Object.defineProperty(obj, PaymentModalBanner$Type(outer1_1[7]).MESSAGE_TYPE, obj);
-      if (undefined !== arr) {
-        const result = PaymentModalBanner$Type(outer1_1[7]).reflectionMergePartial(this, obj, arr);
-        const obj3 = PaymentModalBanner$Type(outer1_1[7]);
-      }
-      return obj;
-    }
-  };
-  let items = [obj, , ];
-  obj = {
-    key: "internalBinaryRead",
-    value(pos, arg1, readUnknownField) {
-      let tmp7;
-      let tmp8;
-      let obj = arg3;
-      const self = this;
-      if (null == arg3) {
-        obj = self.create();
-      }
-      const sum = pos.pos + arg1;
-      while (pos.pos < sum) {
-        let tmp5 = outer1_2;
-        let tmp6 = outer1_2(pos.tag(), 2);
-        [tmp7, tmp8] = tmp6;
-        if (1 === tmp7) {
-          obj.assetUrl = pos.string();
-          let tmp10 = tmp3;
-          let tmp11 = tmp4;
-        } else if (2 === tmp7) {
-          obj.header = pos.string();
-          tmp10 = tmp3;
-          tmp11 = tmp4;
-        } else if (3 === tmp7) {
-          obj.body = pos.string();
-          tmp10 = tmp3;
-          tmp11 = tmp4;
-        } else if (4 === tmp7) {
-          let tmp31 = PaymentModalBanner$Type;
-          let tmp32 = outer1_1;
-          let LocalizedString2 = PaymentModalBanner$Type(outer1_1[6]).LocalizedString;
-          let tmp33 = LocalizedString2;
-          let tmp34 = pos;
-          let tmp35 = readUnknownField;
-          obj.headerLocalized = LocalizedString2.internalBinaryRead(pos, pos.uint32(), readUnknownField, obj.headerLocalized);
-          tmp10 = tmp3;
-          tmp11 = tmp4;
-        } else if (5 === tmp7) {
-          let tmp26 = PaymentModalBanner$Type;
-          let tmp27 = outer1_1;
-          let LocalizedString = PaymentModalBanner$Type(outer1_1[6]).LocalizedString;
-          let tmp28 = LocalizedString;
-          let tmp29 = pos;
-          let tmp30 = readUnknownField;
-          obj.bodyLocalized = LocalizedString.internalBinaryRead(pos, pos.uint32(), readUnknownField, obj.bodyLocalized);
-          tmp10 = tmp3;
-          tmp11 = tmp4;
+  return obj;
+};
+prototype["internalBinaryRead"] = function internalBinaryRead(pos, arg1, readUnknownField) {
+  let tmp5;
+  let tmp6;
+  const self = this;
+  let obj = arg3;
+  if (arg3 == null) {
+    obj = self.create();
+  }
+  const sum = pos.pos + arg1;
+  if (pos.pos < sum) {
+    do {
+      let tmp3 = callback;
+      let tmp4 = callback(pos.tag(), 2);
+      [tmp5, tmp6] = tmp4;
+      if (1 === tmp5) {
+        obj.assetUrl = pos.string();
+      } else if (2 === tmp5) {
+        obj.header = pos.string();
+      } else if (3 === tmp5) {
+        obj.body = pos.string();
+      } else if (4 === tmp5) {
+        let tmp27 = require;
+        let tmp28 = dependencyMap;
+        let LocalizedString2 = require(6268) /* create */.LocalizedString;
+        let tmp29 = LocalizedString2;
+        let tmp30 = pos;
+        let tmp31 = readUnknownField;
+        obj.headerLocalized = LocalizedString2.internalBinaryRead(pos, pos.uint32(), readUnknownField, obj.headerLocalized);
+      } else if (5 === tmp5) {
+        let tmp22 = require;
+        let tmp23 = dependencyMap;
+        let LocalizedString = require(6268) /* create */.LocalizedString;
+        let tmp24 = LocalizedString;
+        let tmp25 = pos;
+        let tmp26 = readUnknownField;
+        obj.bodyLocalized = LocalizedString.internalBinaryRead(pos, pos.uint32(), readUnknownField, obj.bodyLocalized);
+      } else {
+        let onRead = readUnknownField.readUnknownField;
+        if ("throw" === onRead) {
+          let tmp15 = globalThis;
+          let _globalThis = globalThis;
+          let _HermesInternal = HermesInternal;
+          let str = ") for ";
+          let str2 = " (wire type ";
+          let str3 = "Unknown field ";
+          let tmp16 = tmp5;
+          let tmp17 = tmp6;
+          let tmp18 = new.target;
+          let tmp19 = new.target;
+          let error = new Error("Unknown field " + tmp5 + " (wire type " + tmp6 + ") for " + self.typeName);
+          let tmp21 = error;
+          throw error;
         } else {
-          readUnknownField = readUnknownField.readUnknownField;
-          if ("throw" === readUnknownField) {
-            let tmp19 = globalThis;
-            let _globalThis = globalThis;
-            let _Error = Error;
-            let _HermesInternal = HermesInternal;
-            let str = "Unknown field ";
-            let str2 = " (wire type ";
-            let str3 = ") for ";
-            let tmp20 = tmp7;
-            let tmp21 = tmp8;
-            let prototype = _Error.prototype;
-            let tmp22 = new.target;
-            let tmp23 = new.target;
-            _Error = new _Error("Unknown field " + tmp7 + " (wire type " + tmp8 + ") for " + self.typeName);
-            let tmp25 = _Error;
-            throw _Error;
-          } else {
-            let skipResult = pos.skip(tmp8);
-            tmp10 = readUnknownField;
-            tmp11 = skipResult;
-            if (false !== readUnknownField) {
-              let onRead = readUnknownField;
-              if (true === readUnknownField) {
-                let tmp12 = PaymentModalBanner$Type;
-                let tmp13 = outer1_1;
-                onRead = PaymentModalBanner$Type(outer1_1[7]).UnknownFieldHandler.onRead;
-              }
-              let tmp14 = obj;
-              let tmp15 = tmp7;
-              let tmp16 = tmp8;
-              let tmp17 = skipResult;
-              let onReadResult = onRead(self.typeName, obj, tmp7, tmp8, skipResult);
-              tmp10 = readUnknownField;
-              tmp11 = skipResult;
+          let skipResult = pos.skip(tmp6);
+          if (false !== onRead) {
+            if (true === onRead) {
+              let tmp8 = require;
+              let tmp9 = dependencyMap;
+              onRead = require(1307).UnknownFieldHandler.onRead;
             }
+            let tmp10 = obj;
+            let tmp11 = tmp5;
+            let tmp12 = tmp6;
+            let tmp13 = skipResult;
+            let onReadResult = onRead(self.typeName, obj, tmp5, tmp6, skipResult);
           }
         }
-        tmp3 = tmp10;
-        tmp4 = tmp11;
       }
-      return obj;
+    } while (pos.pos < sum);
+  }
+  return obj;
+};
+prototype["internalBinaryWrite"] = function internalBinaryWrite(assetUrl, tag, writeUnknownFields) {
+  if ("" !== assetUrl.assetUrl) {
+    tag.tag(1, require(1307).WireType.LengthDelimited).string(assetUrl.assetUrl);
+    const tagResult = tag.tag(1, require(1307).WireType.LengthDelimited);
+  }
+  if ("" !== assetUrl.header) {
+    tag.tag(2, require(1307).WireType.LengthDelimited).string(assetUrl.header);
+    const tagResult1 = tag.tag(2, require(1307).WireType.LengthDelimited);
+  }
+  if ("" !== assetUrl.body) {
+    tag.tag(3, require(1307).WireType.LengthDelimited).string(assetUrl.body);
+    const tagResult2 = tag.tag(3, require(1307).WireType.LengthDelimited);
+  }
+  if (assetUrl.headerLocalized) {
+    const LocalizedString = require(6268) /* create */.LocalizedString;
+    const tagResult3 = tag.tag(4, require(1307).WireType.LengthDelimited);
+    const joined = LocalizedString.internalBinaryWrite(assetUrl.headerLocalized, tag.tag(4, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields).join();
+    const internalBinaryWriteResult = LocalizedString.internalBinaryWrite(assetUrl.headerLocalized, tag.tag(4, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields);
+  }
+  if (assetUrl.bodyLocalized) {
+    const LocalizedString2 = require(6268) /* create */.LocalizedString;
+    const tagResult4 = tag.tag(5, require(1307).WireType.LengthDelimited);
+    const joined1 = LocalizedString2.internalBinaryWrite(assetUrl.bodyLocalized, tag.tag(5, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields).join();
+    const internalBinaryWriteResult1 = LocalizedString2.internalBinaryWrite(assetUrl.bodyLocalized, tag.tag(5, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields);
+  }
+  let onWrite = writeUnknownFields.writeUnknownFields;
+  if (false !== onWrite) {
+    if (1 == onWrite) {
+      onWrite = require(1307).UnknownFieldHandler.onWrite;
     }
-  };
-  items[1] = obj;
-  obj = {
-    key: "internalBinaryWrite",
-    value(assetUrl, tag, writeUnknownFields) {
-      if ("" !== assetUrl.assetUrl) {
-        tag.tag(1, PaymentModalBanner$Type(outer1_1[7]).WireType.LengthDelimited).string(assetUrl.assetUrl);
-        const tagResult = tag.tag(1, PaymentModalBanner$Type(outer1_1[7]).WireType.LengthDelimited);
-      }
-      if ("" !== assetUrl.header) {
-        tag.tag(2, PaymentModalBanner$Type(outer1_1[7]).WireType.LengthDelimited).string(assetUrl.header);
-        const tagResult1 = tag.tag(2, PaymentModalBanner$Type(outer1_1[7]).WireType.LengthDelimited);
-      }
-      if ("" !== assetUrl.body) {
-        tag.tag(3, PaymentModalBanner$Type(outer1_1[7]).WireType.LengthDelimited).string(assetUrl.body);
-        const tagResult2 = tag.tag(3, PaymentModalBanner$Type(outer1_1[7]).WireType.LengthDelimited);
-      }
-      if (assetUrl.headerLocalized) {
-        const LocalizedString = PaymentModalBanner$Type(outer1_1[6]).LocalizedString;
-        const tagResult3 = tag.tag(4, PaymentModalBanner$Type(outer1_1[7]).WireType.LengthDelimited);
-        const joined = LocalizedString.internalBinaryWrite(assetUrl.headerLocalized, tag.tag(4, PaymentModalBanner$Type(outer1_1[7]).WireType.LengthDelimited).fork(), writeUnknownFields).join();
-        const internalBinaryWriteResult = LocalizedString.internalBinaryWrite(assetUrl.headerLocalized, tag.tag(4, PaymentModalBanner$Type(outer1_1[7]).WireType.LengthDelimited).fork(), writeUnknownFields);
-      }
-      if (assetUrl.bodyLocalized) {
-        const LocalizedString2 = PaymentModalBanner$Type(outer1_1[6]).LocalizedString;
-        const tagResult4 = tag.tag(5, PaymentModalBanner$Type(outer1_1[7]).WireType.LengthDelimited);
-        const joined1 = LocalizedString2.internalBinaryWrite(assetUrl.bodyLocalized, tag.tag(5, PaymentModalBanner$Type(outer1_1[7]).WireType.LengthDelimited).fork(), writeUnknownFields).join();
-        const internalBinaryWriteResult1 = LocalizedString2.internalBinaryWrite(assetUrl.bodyLocalized, tag.tag(5, PaymentModalBanner$Type(outer1_1[7]).WireType.LengthDelimited).fork(), writeUnknownFields);
-      }
-      let onWrite = writeUnknownFields.writeUnknownFields;
-      if (false !== onWrite) {
-        if (1 == onWrite) {
-          onWrite = PaymentModalBanner$Type(outer1_1[7]).UnknownFieldHandler.onWrite;
-        }
-        const self = this;
-        onWrite(this.typeName, assetUrl, tag);
-      }
-      return tag;
-    }
-  };
-  items[2] = obj;
-  return callback(PaymentModalBanner$Type, items);
-})(require("module_1284").MessageType);
-tmp2 = new tmp2();
-let result = require("_defineProperties").fileFinishedImporting("../discord_common/js/packages/protos/discord_protos/premium_marketing/v1/payment_modal_banner.tsx");
+    const self = this;
+    onWrite(this.typeName, assetUrl, tag);
+  }
+  return tag;
+};
+let items = [{ no: 1, name: "asset_url", kind: "scalar", T: 9 }, { no: 2, name: "header", kind: "scalar", T: 9 }, { no: 3, name: "body", kind: "scalar", T: 9 }, , ];
+let obj = { no: 4, name: "header_localized", kind: "message", T: null };
+class T {
+  constructor() {
+    return require("create").LocalizedString;
+  }
+}
+obj[3] = T;
+items[3] = obj;
+items[4] = {
+  no: 5,
+  name: "body_localized",
+  kind: "message",
+  T() {
+    return callback(6268).LocalizedString;
+  }
+};
+prototype = new prototype("discord_protos.premium_marketing.v1.PaymentModalBanner", items, tmp, T, PaymentModalBanner$Type, prototype, items);
+// ThrowIfThisInitialized (0x7c)
+let result = require("create").fileFinishedImporting("../discord_common/js/packages/protos/discord_protos/premium_marketing/v1/payment_modal_banner.tsx");
 
-export const PaymentModalBanner = tmp2;
+export const PaymentModalBanner = prototype;

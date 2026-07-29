@@ -1,27 +1,33 @@
-// Module ID: 10423
-// Function ID: 80228
+// Module ID: 10447
+// Function ID: 10448
 // Name: StrangerDangerWarningBanner
-// Dependencies: [31, 3802, 9075, 10138, 653, 10424, 33, 4165, 689, 566, 10135, 10136, 4372, 4133, 10425, 1935, 480, 10415, 1212, 10418, 4161, 10427, 2]
+// Dependencies: [19, 3826, 9099, 10159, 676, 10448, 21, 4189, 712, 589, 10156, 10157, 4395, 4157, 10449, 1959, 503, 10439, 1236, 10442, 4185, 10451, 2]
 
-// Module 10423 (StrangerDangerWarningBanner)
-import result from "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import { SafetyWarningTypes } from "_isNativeReflectConstruct";
+// Module 10447 (StrangerDangerWarningBanner)
+import MoreTipsModalScreen from "MoreTipsModalScreen";
+import upsertRelationship from "upsertRelationship";
+import { SafetyWarningTypes } from "handleConnectionOpen";
 import LOCATION_CONTEXT_MOBILE from "LOCATION_CONTEXT_MOBILE";
 import { AnalyticEvents } from "ME";
 import { BLOCK_CONFIRMATION_ACTION_SHEET_KEY as closure_9 } from "IGNORE_CONFIRMATION_ACTION_SHEET_KEY";
-import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import { jsx } from "StrangerDangerMoreTipsModalActionItems";
+import createCacheKey from "createCacheKey";
 
 let closure_6;
-let closure_7;
+let error;
 const require = arg1;
 class StrangerDangerWarningBanner {
   constructor(arg0) {
     channelId = global.channelId;
     warningId = global.warningId;
     senderId = global.senderId;
-    result = c11();
+    MoreTipsModalScreen = undefined;
+    c4 = undefined;
+    f84662 = undefined;
+    c6 = undefined;
+    MoreTipsModalScreen = jsx();
+    tmp = channelId;
+    tmp2 = senderId;
     obj = require("initialize");
     items = [];
     items[0] = c4;
@@ -32,7 +38,7 @@ class StrangerDangerWarningBanner {
     items2[1] = warningId;
     items2[2] = senderId;
     stateFromStores = obj.useStateFromStores(items, () => callback.isBlocked(senderId), items1);
-    effect = result.useEffect(() => {
+    effect = MoreTipsModalScreen.useEffect(() => {
       let obj = channelId(senderId[10]);
       obj = { channelId, warningId, senderId, warningType: callback1.STRANGER_DANGER };
       obj.trackViewedEvent(outer1_8.SAFETY_WARNING_VIEWED, obj);
@@ -40,7 +46,7 @@ class StrangerDangerWarningBanner {
     items3 = [, ];
     items3[0] = channelId;
     items3[1] = warningId;
-    callback = result.useCallback(() => {
+    callback = MoreTipsModalScreen.useCallback(() => {
       const items = [warningId];
       const result = channelId(senderId[11]).dismissChannelSafetyWarnings(channelId, items);
       const obj = channelId(senderId[11]);
@@ -52,7 +58,7 @@ class StrangerDangerWarningBanner {
     items4[1] = channelId;
     items4[2] = warningId;
     items4[3] = senderId;
-    callback1 = result.useCallback((arg0) => {
+    callback1 = MoreTipsModalScreen.useCallback((arg0) => {
       let closure_0 = arg0;
       return () => {
         outer1_4();
@@ -61,59 +67,55 @@ class StrangerDangerWarningBanner {
         obj.trackCtaEvent(obj);
       };
     }, items4);
-    f80233 = callback1;
+    f84662 = callback1;
     items5 = [, , , , ];
     items5[0] = callback1;
     items5[1] = callback;
     items5[2] = channelId;
     items5[3] = warningId;
     items5[4] = senderId;
-    callback2 = result.useCallback((arg0) => {
+    callback2 = MoreTipsModalScreen.useCallback((arg0) => {
       let closure_0 = arg0;
       return () => {
         let obj = warningId(senderId[13]);
-        obj = {
-          userId: outer1_2,
-          channelId: closure_0,
-          onBlock: outer1_5(closure_0),
-          onSuccess() {
-            return warningId(senderId[13]).hideActionSheet();
-          },
-          onIgnore() {
-            outer2_4();
-            let obj = channelId(senderId[10]);
-            obj = { channelId: closure_0, warningId: outer2_1, senderId: outer2_2, warningType: callback1.STRANGER_DANGER, cta: channelId(senderId[10]).CtaEventTypes.USER_BANNER_IGNORE_CONFIRM };
-            obj.trackCtaEvent(obj);
-          },
-          impressionName: channelId(senderId[16]).ImpressionNames.BLOCK_USER_CONFIRMATION
+        obj = { userId: outer1_2, channelId: closure_0, onBlock: null, onSuccess: null, onIgnore: null, impressionName: null };
+        obj[2] = outer1_5(closure_0);
+        obj[3] = function onSuccess() {
+          return callback(table[13]).hideActionSheet();
         };
+        obj[4] = function onIgnore() {
+          callback2();
+          let obj = outer1_0(outer1_2[10]);
+          obj = { channelId: closure_0, warningId: closure_1, senderId: closure_2, warningType: outer1_5.STRANGER_DANGER, cta: outer1_0(outer1_2[10]).CtaEventTypes.USER_BANNER_IGNORE_CONFIRM };
+          obj.trackCtaEvent(obj);
+        };
+        obj[5] = channelId(senderId[16]).ImpressionNames.BLOCK_USER_CONFIRMATION;
         obj.openLazy(channelId(senderId[15])(senderId[14], senderId.paths), outer2_9, obj);
       };
     }, items5);
-    defineProperty = callback2;
-    tmp6 = jsx;
-    obj = { channelId, warningId, senderId, warningType: f80233.STRANGER_DANGER };
-    tmp7 = require("SafetyWarningBanner");
+    c6 = callback2;
+    tmp8 = jsx;
+    obj = { channelId, warningId, senderId, warningType: f84662.STRANGER_DANGER, header: null, description: null, onDismiss: null, buttons: null };
+    tmp9 = require("SafetyWarningBanner");
     intl = require("getSystemLocale").intl;
-    obj.header = intl.string(require("getSystemLocale").t.iOkDpM);
+    obj[4] = intl.string(require("getSystemLocale").t.iOkDpM);
     intl2 = require("getSystemLocale").intl;
-    obj.description = intl2.string(require("getSystemLocale").t.ISUbcM);
-    obj.onDismiss = callback;
-    obj1 = {};
+    obj[5] = intl2.string(require("getSystemLocale").t.ISUbcM);
+    obj[6] = callback;
+    obj1 = { text: null, variant: "primary", onpress: null };
     intl3 = require("getSystemLocale").intl;
-    obj1.text = intl3.string(require("getSystemLocale").t["Qk/c48"]);
-    obj1.variant = "primary";
-    obj1.onpress = function onpress() {
+    obj1[0] = intl3.string(require("getSystemLocale").t["Qk/c48"]);
+    obj1[2] = function onpress() {
       let obj = warningId(senderId[12]);
-      obj = { modalKey: callback2, headerStyle: moreTipsHeader.moreTipsHeader, channelId, warningId, senderId };
+      obj = { modalKey: callback2, headerStyle: moreTipsHeader.moreTipsHeader, channelId, warningId, senderId, description: null, safetyTips: null, actionItems: null };
       const intl = channelId(senderId[18]).intl;
-      obj.description = intl.string(channelId(senderId[18]).t.DJMZX6);
+      obj[5] = intl.string(channelId(senderId[18]).t.DJMZX6);
       const tmp = channelId(senderId[15])(senderId[19], senderId.paths);
-      obj.safetyTips = outer1_7().map((children) => outer2_10(channelId(senderId[20]).Text, { variant: "text-sm/medium", children }, arg1));
-      obj = { channelId, warningId, senderId };
+      obj[6] = outer1_7().map((children) => callback2(callback(table[20]).Text, { variant: "text-sm/medium", children }, arg1));
+      obj = { channelId, warningId, senderId, onBlockPressed: null };
       const arr = outer1_7();
-      obj.onBlockPressed = callback2(channelId(senderId[10]).CtaEventTypes.USER_MODAL_BLOCK_CONFIRM);
-      obj.actionItems = outer1_10(warningId(senderId[21]), obj);
+      obj[3] = callback2(channelId(senderId[10]).CtaEventTypes.USER_MODAL_BLOCK_CONFIRM);
+      obj[7] = outer1_10(warningId(senderId[21]), obj);
       obj.pushLazy(tmp, obj, callback2);
       const tmp2 = warningId(senderId[21]);
       const obj4 = channelId(senderId[10]);
@@ -124,29 +126,24 @@ class StrangerDangerWarningBanner {
     if (stateFromStores) {
       items7 = [];
     } else {
-      obj2 = {};
-      tmp8 = channelId;
-      tmp9 = senderId;
+      obj2 = { text: null, variant: "destructive", onpress: null };
       intl4 = require("getSystemLocale").intl;
-      obj2.text = intl4.string(require("getSystemLocale").t.ie0QdN);
-      str = "destructive";
-      obj2.variant = "destructive";
-      num = 10;
-      obj2.onpress = callback2(require("trackViewedEvent").CtaEventTypes.USER_BANNER_BLOCK_CONFIRM);
+      obj2[0] = intl4.string(require("getSystemLocale").t.ie0QdN);
+      obj2[2] = callback2(require("trackViewedEvent").CtaEventTypes.USER_BANNER_BLOCK_CONFIRM);
       items7 = [];
       items7[0] = obj2;
     }
     arraySpreadResult = HermesBuiltin.arraySpread(items7, 1);
-    obj.buttons = items6;
-    return tmp6(tmp7, obj);
+    obj[7] = items6;
+    return tmp8(tmp9, obj);
   }
 }
-({ STRANGER_DANGER_MORE_TIPS_MODAL_KEY: closure_6, getStrangerDangerSafetyTips: closure_7 } = LOCATION_CONTEXT_MOBILE);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWER, shadowColor: "transparent" };
-_createForOfIteratorHelperLoose.moreTipsHeader = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/self_mod/stranger_danger/native/components/StrangerDangerWarningBanner.tsx");
+({ STRANGER_DANGER_MORE_TIPS_MODAL_KEY: closure_6, getStrangerDangerSafetyTips: error } = LOCATION_CONTEXT_MOBILE);
+createCacheKey = { moreTipsHeader: null };
+createCacheKey = { backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOWER, shadowColor: "transparent" };
+createCacheKey[0] = createCacheKey;
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let result = require("handleConnectionOpen").fileFinishedImporting("modules/self_mod/stranger_danger/native/components/StrangerDangerWarningBanner.tsx");
 
 export default StrangerDangerWarningBanner;
 export { StrangerDangerWarningBanner };

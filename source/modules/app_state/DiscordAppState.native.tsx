@@ -1,30 +1,22 @@
-// Module ID: 9453
-// Function ID: 73601
-// Name: canUIRequestGatewaySocket
-// Dependencies: [6307, 566, 2]
+// Module ID: 9477
+// Function ID: 9478
+// Dependencies: [6328, 589, 2]
 
-// Module 9453 (canUIRequestGatewaySocket)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 9477
+import getState from "getState";
 
 const require = arg1;
-function canUIRequestGatewaySocket() {
-  let obj = arg0;
-  if (arg0 === undefined) {
-    obj = _isNativeReflectConstruct;
-  }
-  return "active" === obj.getState();
-}
 const result = require("set").fileFinishedImporting("modules/app_state/DiscordAppState.native.tsx");
 
 export default {
-  canUIRequestGatewaySocket() {
-    return canUIRequestGatewaySocket();
+  canUIRequestGatewaySocket(arg0) {
+    return "active" === store.getState();
   },
   getState() {
-    return state.getState();
+    return store.getState();
   },
   useCanUIRequestGatewaySocket() {
-    const items = [_isNativeReflectConstruct];
-    return require(566) /* initialize */.useStateFromStores(items, () => outer1_3(outer1_2));
+    const items = [getState];
+    return require(589) /* initialize */.useStateFromStores(items, () => "active" === state.getState());
   }
 };

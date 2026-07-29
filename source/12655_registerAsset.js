@@ -1,11 +1,10 @@
 // Module ID: 12655
-// Function ID: 97717
+// Function ID: 12656
 // Name: registerAsset
-// Dependencies: [1217]
+// Dependencies: [1241]
 
 // Module 12655 (registerAsset)
 import registerAsset from "registerAsset";
 
-const obj = { __packager_asset: true, httpServerLocation: "/assets/images/native/premium/guild_boosting/tier_icons/flower_star/dark", width: 24, height: 23, scales: [2, 3], hash: "d3ced0dd7614d99a1c612f606eea8d5d", name: "tier_2_24px", type: "png" };
 
-export default registerAsset.registerAsset(obj);
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "3cb1cd2fa7a6da13fc0880992d84830f", name: "ChevronLargeDownIcon", type: "png" });

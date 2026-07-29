@@ -1,29 +1,29 @@
-// Module ID: 6188
-// Function ID: 55251
+// Module ID: 6208
+// Function ID: 6209
 // Name: __INTERNAL_VIEW_CONFIG
-// Dependencies: [110, 42, 117, 2]
+// Dependencies: [106, 65, 114, 2]
 
-// Module 6188 (__INTERNAL_VIEW_CONFIG)
+// Module 6208 (__INTERNAL_VIEW_CONFIG)
 import weakSet from "weakSet";
-import get from "get";
+import setRuntimeConfigProvider from "setRuntimeConfigProvider";
 
-let obj = { uiViewClassName: "APNGDecorationView", directEventTypes: { topLoad: { registrationName: "onLoad" } } };
+let obj = { uiViewClassName: "APNGDecorationView", directEventTypes: { topLoad: { registrationName: "onLoad" } }, validAttributes: null };
 obj = { url: true, autoplay: true };
 const merged = Object.assign(weakSet.ConditionallyIgnoredEventHandlers({ onLoad: true }));
-obj.validAttributes = obj;
+obj[2] = obj;
 obj = {
-  play(nodeFromPublicInstance) {
-    require(117) /* renderElement */.dispatchCommand(nodeFromPublicInstance, "play", []);
+  play(arg0) {
+    require(114) /* renderElement */.dispatchCommand(arg0, "play", []);
   },
-  pause(nodeFromPublicInstance) {
-    require(117) /* renderElement */.dispatchCommand(nodeFromPublicInstance, "pause", []);
+  pause(arg0) {
+    require(114) /* renderElement */.dispatchCommand(arg0, "pause", []);
   },
-  seek(nodeFromPublicInstance) {
+  seek(arg0, arg1) {
     const items = [arg1];
-    require(117) /* renderElement */.dispatchCommand(nodeFromPublicInstance, "seek", items);
+    require(114) /* renderElement */.dispatchCommand(arg0, "seek", items);
   }
 };
-const value = get.get("APNGDecorationView", () => obj);
+const value = setRuntimeConfigProvider.get("APNGDecorationView", () => obj);
 const result = require("renderElement").fileFinishedImporting("../discord_common/js/packages/rtn-codegen/js/APNGDecorationNativeComponent.tsx");
 
 export default value;

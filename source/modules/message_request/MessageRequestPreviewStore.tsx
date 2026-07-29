@@ -1,217 +1,93 @@
-// Module ID: 11665
-// Function ID: 90424
-// Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 1850, 5637, 5638, 4386, 566, 686, 2]
+// Module ID: 11689
+// Function ID: 11690
+// Name: isMessagePreviewEnabledForChannel
+// Dependencies: [1874, 5655, 5656, 4409, 589, 709, 2]
 
-// Module 11665 (_isNativeReflectConstruct)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_3 from "_isNativeReflectConstruct";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
-import closure_7 from "_isNativeReflectConstruct";
-import closure_8 from "_isNativeReflectConstruct";
-import closure_9 from "_isNativeReflectConstruct";
-import set from "_possibleConstructorReturn";
+// Module 11689 (isMessagePreviewEnabledForChannel)
+import mergeGuildAvatar from "mergeGuildAvatar";
+import processChannel from "processChannel";
+import closure_4 from "processChannel";
+import { Store } from "initialize";
+import set from "processChannel";
 
 const require = arg1;
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
-  }
-  const result = _isNativeReflectConstruct();
-}
-function _createForOfIteratorHelperLoose(iterable) {
-  let closure_0 = iterable;
-  iterable = "undefined" !== typeof Symbol;
-  if (iterable) {
-    const _Symbol = Symbol;
-    iterable = iterable[Symbol.iterator];
-  }
-  if (!iterable) {
-    iterable = iterable[Symbol.iterator];
-  }
-  if (iterable) {
-    const iter = iterable.call(iterable);
-    const next = iter.next;
-    return next.bind(iter);
-  } else {
-    const _Array = Array;
-    let tmp = iterable;
-    if (!Array.isArray(iterable)) {
-      let tmp2;
-      if (iterable) {
-        if ("string" === typeof iterable) {
-          tmp2 = _arrayLikeToArray(iterable, undefined);
-        } else {
-          const toString = {}.toString;
-          const substr = toString.call(iterable).slice(8, -1);
-          let name = substr;
-          if (tmp3) {
-            name = iterable.constructor.name;
-          }
-          if ("Map" !== name) {
-            if ("Set" !== name) {
-              if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(iterable, undefined);
-              } else {
-                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
-              }
-            }
-            tmp2 = arr;
-          }
-          const _Array2 = Array;
-          arr = Array.from(iterable);
-          const callResult = toString.call(iterable);
-          tmp3 = "Object" === substr && iterable.constructor;
-        }
-      }
-      tmp = tmp2;
-      if (!tmp2) {
-        const _TypeError = TypeError;
-        const typeError = new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
-        throw typeError;
-      }
-    }
-    if (tmp) {
-      closure_0 = tmp;
-    }
-    let c1 = 0;
-    return () => {
-      if (closure_1 >= length.length) {
-        let obj = { done: true };
-      } else {
-        obj = { done: false };
-        closure_1 = tmp3 + 1;
-        obj.value = length[+closure_1];
-      }
-      return obj;
-    };
-  }
-}
-function _arrayLikeToArray(arg0, arg1) {
-  let length;
-  if (tmp) {
-    length = arg0.length;
-  }
-  const ArrayResult = Array(length);
-  for (let num = 0; num < length; num = num + 1) {
-    ArrayResult[num] = arg0[num];
-  }
-  return ArrayResult;
-}
 function isMessagePreviewEnabledForChannel(id) {
-  let isMessageRequestResult = messageRequest.isMessageRequest(id);
+  let isMessageRequestResult = processChannel.isMessageRequest(id);
   if (!isMessageRequestResult) {
-    isMessageRequestResult = spam.isSpam(id);
+    isMessageRequestResult = closure_4.isSpam(id);
   }
   return isMessageRequestResult;
 }
-function storeMessagePreview(channel_id, message) {
-  let flag = arg2;
-  if (arg2 === undefined) {
-    flag = false;
+function storeMessagePreview(id, arg1) {
+  let isMessageRequestResult = processChannel.isMessageRequest(id);
+  if (!isMessageRequestResult) {
+    isMessageRequestResult = closure_4.isSpam(id);
   }
-  if (isMessagePreviewEnabledForChannel(channel_id)) {
-    if (null == message) {
+  if (isMessageRequestResult) {
+    if (true) {
       let messageRecord = null;
-      if (null != message) {
-        let obj = require(4386) /* createMinimalMessageRecord */;
-        messageRecord = obj.createMessageRecord(message);
+      if (!flag2) {
+        let obj = require(4409) /* createMinimalMessageRecord */;
+        messageRecord = obj.createMessageRecord(null);
       }
-      obj = { loaded: true, error: flag, message: messageRecord };
-      closure_10[channel_id] = obj;
+      obj = { loaded: true, error: null, message: null };
+      obj[1] = flag;
+      obj[2] = messageRecord;
+      closure_5[id] = obj;
     } else {
-      channel_id = undefined;
-      if (null != message) {
-        channel_id = message.channel_id;
-      }
+      // // eliminated: always false
     }
   }
 }
-let closure_10 = {};
+let closure_5 = {};
 let set = new Set();
-let tmp3 = ((Store) => {
-  class MessageRequestPreviewStore {
-    constructor() {
-      self = this;
-      tmp = outer1_2(this, MessageRequestPreviewStore);
-      obj = outer1_5(MessageRequestPreviewStore);
-      tmp2 = outer1_4;
-      if (outer1_12()) {
-        tmp6 = globalThis;
-        _Reflect = Reflect;
-        tmp7 = outer1_5;
-        tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, outer1_5(self).constructor);
-      } else {
-        tmp3 = arguments;
-        tmp4 = arguments;
-        constructResult = obj(...arguments);
-      }
-      return tmp2(self, constructResult);
-    }
+class MessageRequestPreviewStore extends Store {
+}
+const prototype = MessageRequestPreviewStore.prototype;
+prototype["initialize"] = function initialize() {
+  this.waitFor(processChannel, closure_4, mergeGuildAvatar);
+};
+prototype["shouldLoadMessageRequestPreview"] = function shouldLoadMessageRequestPreview(id) {
+  return !set.has(id);
+};
+prototype["getMessageRequestPreview"] = function getMessageRequestPreview(id) {
+  if (!(id in dependencyMap)) {
+    dependencyMap[id] = { loaded: false, error: false, message: null };
   }
-  callback2(MessageRequestPreviewStore, Store);
-  let obj = {
-    key: "initialize",
-    value() {
-      this.waitFor(outer1_8, outer1_9, outer1_7);
-    }
-  };
-  const items = [obj, , ];
-  obj = {
-    key: "shouldLoadMessageRequestPreview",
-    value(arg0) {
-      return !outer1_11.has(arg0);
-    }
-  };
-  items[1] = obj;
-  obj = {
-    key: "getMessageRequestPreview",
-    value(arg0) {
-      if (!(arg0 in outer1_10)) {
-        outer1_10[arg0] = { loaded: false, error: false, message: null };
-      }
-      return outer1_10[arg0];
-    }
-  };
-  items[2] = obj;
-  return callback(MessageRequestPreviewStore, items);
-})(require("initialize").Store);
-tmp3.displayName = "MessageRequestPreviewStore";
-tmp3 = new tmp3(require("dispatcher"), {
+  return dependencyMap[id];
+};
+MessageRequestPreviewStore.displayName = "MessageRequestPreviewStore";
+const messageRequestPreviewStore = new MessageRequestPreviewStore(require("dispatcher"), {
   CONNECTION_OPEN: function handleConnectionOpen() {
-    let closure_10 = {};
+    let closure_5 = {};
     set.clear();
   },
   CHANNEL_CREATE: function handleChannelCreate(channel) {
     channel = channel.channel;
-    if (isMessagePreviewEnabledForChannel(channel.id)) {
+    const id = channel.id;
+    let isMessageRequestResult = processChannel.isMessageRequest(id);
+    if (!isMessageRequestResult) {
+      isMessageRequestResult = closure_4.isSpam(id);
+    }
+    if (isMessageRequestResult) {
       set.add(channel.id);
     }
   },
-  CHANNEL_UPDATES: function handleChannelUpdates(channels) {
-    let iter2;
-    const tmp3 = _createForOfIteratorHelperLoose(channels.channels);
-    let iter = tmp3();
-    if (!iter.done) {
-      do {
-        let value = iter.value;
-        let tmp4 = isMessagePreviewEnabledForChannel;
-        if (!isMessagePreviewEnabledForChannel(value.id)) {
-          let tmp5 = set;
-          let deleteResult = set.delete(value.id);
-          let tmp7 = closure_10;
-          let id = value.id;
-          delete tmp2[tmp];
-        }
-        iter2 = tmp3();
-        iter = iter2;
-      } while (!iter2.done);
+  CHANNEL_UPDATES: function handleChannelUpdates(arg0) {
+    const iter = arg0.channels[Symbol.iterator]();
+    const nextResult = iter.next();
+    while (iter !== undefined) {
+      let tmp4 = nextResult;
+      let tmp5 = isMessagePreviewEnabledForChannel;
+      if (!isMessagePreviewEnabledForChannel(nextResult.id)) {
+        let tmp6 = set;
+        let tmp7 = nextResult;
+        let deleteResult = set.delete(tmp4.id);
+        let tmp9 = closure_5;
+        let id = tmp4.id;
+        delete tmp2[tmp];
+      }
+      continue;
     }
   },
   CHANNEL_DELETE: function handleChannelDelete(channel) {
@@ -222,7 +98,30 @@ tmp3 = new tmp3(require("dispatcher"), {
     if (isPushNotification.isPushNotification) {
       return false;
     } else {
-      storeMessagePreview(isPushNotification.message.channel_id, isPushNotification.message);
+      let channel_id = isPushNotification.message.channel_id;
+      const message = isPushNotification.message;
+      let isMessageRequestResult = processChannel.isMessageRequest(channel_id);
+      if (!isMessageRequestResult) {
+        isMessageRequestResult = closure_4.isSpam(channel_id);
+      }
+      if (isMessageRequestResult) {
+        if (null == message) {
+          let messageRecord = null;
+          if (null != message) {
+            let obj = require(4409) /* createMinimalMessageRecord */;
+            messageRecord = obj.createMessageRecord(message);
+          }
+          obj = { loaded: true, error: null, message: null };
+          obj[1] = false;
+          obj[2] = messageRecord;
+          closure_5[channel_id] = obj;
+        } else {
+          channel_id = undefined;
+          if (message != null) {
+            channel_id = message.channel_id;
+          }
+        }
+      }
     }
   },
   MESSAGE_UPDATE: function handleMessageUpdate(message) {
@@ -235,9 +134,9 @@ tmp3 = new tmp3(require("dispatcher"), {
         if (null != tmp2.message) {
           const obj = {};
           const merged = Object.assign(tmp2);
-          obj["message"] = require(4386) /* createMinimalMessageRecord */.updateMessageRecord(tmp2.message, message.message);
-          table[channel_id] = obj;
-          const obj2 = require(4386) /* createMinimalMessageRecord */;
+          obj.message = require(4409) /* createMinimalMessageRecord */.updateMessageRecord(tmp2.message, message.message);
+          dependencyMap[channel_id] = obj;
+          const obj2 = require(4409) /* createMinimalMessageRecord */;
         }
         tmp3 = tmp4;
       }
@@ -245,39 +144,72 @@ tmp3 = new tmp3(require("dispatcher"), {
     }
   },
   MESSAGE_DELETE: function handleMessageDelete(channelId) {
-    if (isMessagePreviewEnabledForChannel(channelId.channelId)) {
-      closure_10[channelId.channelId] = { loaded: true, error: false, message: null };
+    channelId = channelId.channelId;
+    let isMessageRequestResult = processChannel.isMessageRequest(channelId);
+    if (!isMessageRequestResult) {
+      isMessageRequestResult = closure_4.isSpam(channelId);
+    }
+    if (isMessageRequestResult) {
+      closure_5[channelId.channelId] = { loaded: true, error: false, message: null };
     } else {
       return false;
     }
   },
   LOAD_MESSAGE_REQUESTS_SUPPLEMENTAL_DATA_SUCCESS: function handleLoadMessageRequestsSupplementalDataSuccess(supplementalData) {
-    let length;
     supplementalData = supplementalData.supplementalData;
+    let set;
     const items = [...supplementalData.requestedChannelIds];
-    let num = 0;
-    const set = new Set(items);
+    set = new Set(items);
     const item = supplementalData.forEach((channel_id) => {
-      outer1_16(channel_id.channel_id, channel_id.message_preview);
+      let message_preview;
+      ({ channel_id, message_preview } = channel_id);
+      let isMessageRequestResult = outer1_3.isMessageRequest(channel_id);
+      if (!isMessageRequestResult) {
+        isMessageRequestResult = outer1_4.isSpam(channel_id);
+      }
+      if (isMessageRequestResult) {
+        if (null == message_preview) {
+          let messageRecord = null;
+          if (null != message_preview) {
+            let obj = set(outer1_1[3]);
+            messageRecord = obj.createMessageRecord(message_preview);
+          }
+          obj = { loaded: true, error: null, message: null };
+          obj[1] = false;
+          obj[2] = messageRecord;
+          outer1_5[channel_id] = obj;
+        } else {
+          channel_id = undefined;
+          if (message_preview != null) {
+            channel_id = message_preview.channel_id;
+          }
+        }
+      }
       set.delete(channel_id.channel_id);
     });
     const arr = Array.from(set);
-    if (0 < arr.length) {
-      do {
-        let tmp3 = storeMessagePreview;
-        let tmp4 = storeMessagePreview(arr[num], null);
-        num = num + 1;
-        length = arr.length;
-      } while (num < length);
+    while (tmp4 !== undefined) {
+      let tmp6 = storeMessagePreview;
+      let tmp7 = storeMessagePreview(tmp5, null);
+      continue;
     }
   },
   LOAD_MESSAGE_REQUESTS_SUPPLEMENTAL_DATA_ERROR: function handleLoadMessageRequestsSupplementalDataError(requestedChannelIds) {
     requestedChannelIds = requestedChannelIds.requestedChannelIds;
-    const item = requestedChannelIds.forEach((arg0) => {
-      outer1_16(arg0, null, true);
+    const item = requestedChannelIds.forEach((id) => {
+      let isMessageRequestResult = messageRequest.isMessageRequest(id);
+      if (!isMessageRequestResult) {
+        isMessageRequestResult = spam.isSpam(id);
+      }
+      if (isMessageRequestResult) {
+        const obj = { loaded: true, error: null, message: null };
+        obj[1] = true;
+        obj[2] = null;
+        closure_5[id] = obj;
+      }
     });
   }
 });
-let result = set.fileFinishedImporting("modules/message_request/MessageRequestPreviewStore.tsx");
+const result = set.fileFinishedImporting("modules/message_request/MessageRequestPreviewStore.tsx");
 
-export default tmp3;
+export default messageRequestPreviewStore;

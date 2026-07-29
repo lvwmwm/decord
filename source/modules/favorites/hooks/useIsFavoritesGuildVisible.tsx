@@ -1,41 +1,18 @@
-// Module ID: 14988
-// Function ID: 114130
-// Name: computeIsFavoritesGuildVisible
-// Dependencies: [1340, 3982, 1351, 1841, 10200, 10194, 1334, 3981, 566, 2]
+// Module ID: 15014
+// Function ID: 15015
+// Name: useIsFavoritesGuildVisible
+// Dependencies: [1364, 4006, 1375, 1865, 10221, 10215, 1358, 4005, 589, 2]
 // Exports: default, isFavoritesGuildVisible
 
-// Module 14988 (computeIsFavoritesGuildVisible)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_4 from "_isNativeReflectConstruct";
-import closure_5 from "_isNativeReflectConstruct";
+// Module 15014 (useIsFavoritesGuildVisible)
+import withContent from "withContent";
+import handleConnectionOpen from "handleConnectionOpen";
+import initializeFromUserSettings from "initializeFromUserSettings";
 
-let closure_2;
-let closure_3;
-function computeIsFavoritesGuildVisible(closure_5, closure_4, isExperimentEnabled) {
-  let tmp5 = !tmp4;
-  if (!!isExperimentEnabled.isExperimentEnabled) {
-    let tmp7 = !(!isExperimentEnabled.isMenuItemDCSelected || tmp3);
-    if (!tmp7) {
-      const tmp10 = !require(1841) /* isFavoritesGuildId */.isFavoritesGuildId(closure_4.getGuildId());
-      let tmp11 = !tmp10;
-      if (tmp10) {
-        let isFavoritesGuildEnabled = !tmp12;
-        if (!!tmp2) {
-          isFavoritesGuildEnabled = require(10200) /* computeIsFavoritesGuildEnabled */.computeIsFavoritesGuildEnabled(tmp, closure_5);
-          const obj2 = require(10200) /* computeIsFavoritesGuildEnabled */;
-        }
-        tmp11 = isFavoritesGuildEnabled;
-      }
-      tmp7 = tmp11;
-      const obj = require(1841) /* isFavoritesGuildId */;
-    }
-    tmp5 = tmp7;
-    const tmp6 = !isExperimentEnabled.isMenuItemDCSelected || tmp3;
-  }
-  return tmp5;
-}
-({ isContentShown: closure_2, useIsContentShown: closure_3 } = _isNativeReflectConstruct);
-let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/favorites/hooks/useIsFavoritesGuildVisible.tsx");
+let c3;
+let obj1;
+({ isContentShown: obj1, useIsContentShown: c3 } = withContent);
+let result = require("initializeFromUserSettings").fileFinishedImporting("modules/favorites/hooks/useIsFavoritesGuildVisible.tsx");
 
 export default function useIsFavoritesGuildVisible(FavoritesGuildChannelList) {
   const favoritesAccess = isExperimentEnabled(isFreemium[5]).useFavoritesAccess(FavoritesGuildChannelList);
@@ -46,19 +23,67 @@ export default function useIsFavoritesGuildVisible(FavoritesGuildChannelList) {
   callback2 = tmp2;
   const obj = isExperimentEnabled(isFreemium[5]);
   const result = isExperimentEnabled(isFreemium[7]).useIsDismissibleContentDismissed_UNSAFE(isExperimentEnabled(isFreemium[6]).DismissibleContent.FAVORITES_SERVER_ONBOARDING_INTRO);
-  const obj2 = isExperimentEnabled(isFreemium[7]);
-  const items = [closure_5, result];
+  let handleConnectionOpen = result;
+  let obj2 = isExperimentEnabled(isFreemium[7]);
+  const items = [initializeFromUserSettings, handleConnectionOpen];
   const items1 = [isExperimentEnabled, isFreemium, hasAccess, tmp2, result];
-  return isExperimentEnabled(isFreemium[8]).useStateFromStores(items, () => outer1_6(outer1_5, result, { isExperimentEnabled, isFreemium, hasAccess, isMenuItemDCSelected: closure_3, isIntroDCDismissed: closure_4 }), items1);
+  return isExperimentEnabled(isFreemium[8]).useStateFromStores(items, () => {
+    let tmp6 = isExperimentEnabled;
+    if (tmp6) {
+      let tmp7 = !tmp4;
+      if (tmp4) {
+        tmp7 = tmp5;
+      }
+      let tmp8 = !tmp7;
+      if (tmp7) {
+        let isFavoritesGuildIdResult = isExperimentEnabled(isFreemium[3]).isFavoritesGuildId(result.getGuildId());
+        if (!isFavoritesGuildIdResult) {
+          let isFavoritesGuildEnabled = tmp3;
+          if (isFavoritesGuildEnabled) {
+            isFavoritesGuildEnabled = tmp9(tmp10[4]).computeIsFavoritesGuildEnabled(tmp2, tmp);
+            const tmp9Result = tmp9(tmp10[4]);
+          }
+          isFavoritesGuildIdResult = isFavoritesGuildEnabled;
+        }
+        tmp8 = isFavoritesGuildIdResult;
+        const obj2 = isExperimentEnabled(isFreemium[3]);
+        tmp10 = isFreemium;
+        tmp9 = isExperimentEnabled;
+      }
+      tmp6 = tmp8;
+    }
+    return tmp6;
+  }, items1);
 };
 export const isFavoritesGuildVisible = function isFavoritesGuildVisible() {
   let hasAccess;
   let isExperimentEnabled;
   let isFreemium;
-  let obj = require(10194) /* computeFavoritesAccess */;
-  const favoritesAccess = obj.getFavoritesAccess();
+  const favoritesAccess = require(10215) /* useFavoritesAccess */.getFavoritesAccess();
   ({ isExperimentEnabled, isFreemium, hasAccess } = favoritesAccess);
-  const tmp2 = callback(require(1334) /* DismissibleContent */.DismissibleContent.FAVORITES_SERVER_ONBOARDING_MENU_ITEM);
-  obj = { isExperimentEnabled, isFreemium, hasAccess, isMenuItemDCSelected: tmp2, isIntroDCDismissed: require(3981) /* UNSAFE_isDismissibleContentDismissed */.UNSAFE_isDismissibleContentDismissed(require(1334) /* DismissibleContent */.DismissibleContent.FAVORITES_SERVER_ONBOARDING_INTRO) };
-  return computeIsFavoritesGuildVisible(closure_5, closure_4, obj);
+  const tmp4 = callback(require(1358) /* DismissibleContent */.DismissibleContent.FAVORITES_SERVER_ONBOARDING_MENU_ITEM);
+  require(4005) /* UNSAFE_isDismissibleContentDismissed */;
+  let tmp8 = isExperimentEnabled;
+  if (tmp8) {
+    let tmp9 = !tmp4;
+    if (tmp4) {
+      tmp9 = tmp6;
+    }
+    let tmp10 = !tmp9;
+    if (tmp9) {
+      let tmpResult = tmp(1865);
+      let isFavoritesGuildIdResult = tmpResult.isFavoritesGuildId(handleConnectionOpen.getGuildId());
+      if (!isFavoritesGuildIdResult) {
+        let isFavoritesGuildEnabled = hasAccess;
+        if (isFavoritesGuildEnabled) {
+          tmpResult = tmp(10221);
+          isFavoritesGuildEnabled = tmpResult.computeIsFavoritesGuildEnabled(isFreemium, tmp7);
+        }
+        isFavoritesGuildIdResult = isFavoritesGuildEnabled;
+      }
+      tmp10 = isFavoritesGuildIdResult;
+    }
+    tmp8 = tmp10;
+  }
+  return tmp8;
 };

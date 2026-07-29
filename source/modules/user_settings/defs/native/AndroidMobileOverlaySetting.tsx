@@ -1,29 +1,29 @@
-// Module ID: 14249
-// Function ID: 109465
+// Module ID: 14271
+// Function ID: 14272
 // Name: toggle
-// Dependencies: [10742, 7733, 566, 1212, 10099, 10761, 2]
+// Dependencies: [10766, 7756, 589, 1236, 10120, 10785, 2]
 
-// Module 14249 (toggle)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 14271 (toggle)
+import getUserAgnosticState from "getUserAgnosticState";
 import createToggle from "createToggle";
 
 const require = arg1;
 createToggle = {
   useTitle() {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(require(1212) /* getSystemLocale */.t["9CSZJm"]);
+    const intl = require(1236) /* getSystemLocale */.intl;
+    return intl.string(require(1236) /* getSystemLocale */.t["9CSZJm"]);
   },
   parent: require("MobileSetting").MobileSetting.VOICE,
   useValue: function useAndroidMobileOverlaySettingValue() {
-    const items = [_isNativeReflectConstruct];
-    return require(566) /* initialize */.useStateFromStores(items, () => outer1_2.getEnabled());
+    const items = [getUserAgnosticState];
+    return require(589) /* initialize */.useStateFromStores(items, () => enabled.getEnabled());
   },
   onValueChange: require("dispatcher").setEnabled,
   useDescription: function useAndroidMobileOverlaySettingDescription() {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(require(1212) /* getSystemLocale */.t.Wfoivk);
+    const intl = require(1236) /* getSystemLocale */.intl;
+    return intl.string(require(1236) /* getSystemLocale */.t.Wfoivk);
   },
-  usePredicate: require("_isNativeReflectConstruct").isMobileOverlaySupported
+  usePredicate: require("getUserAgnosticState").isMobileOverlaySupported
 };
 createToggle = createToggle.createToggle(createToggle);
 const result = require("initialize").fileFinishedImporting("modules/user_settings/defs/native/AndroidMobileOverlaySetting.tsx");

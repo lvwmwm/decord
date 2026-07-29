@@ -1,44 +1,30 @@
-// Module ID: 10032
-// Function ID: 77422
+// Module ID: 10053
+// Function ID: 10054
 // Name: GuildDirectorySearchModal
-// Dependencies: [31, 33, 10033, 5552, 5485, 2]
+// Dependencies: [19, 21, 10054, 5570, 5503, 2]
 // Exports: default
 
-// Module 10032 (GuildDirectorySearchModal)
-import "result";
+// Module 10053 (GuildDirectorySearchModal)
+import "noop";
 import { jsx } from "jsxProd";
 
 const require = arg1;
+const SEARCH_SCREEN_KEY = "SEARCH_SCREEN_KEY";
 const result = require("DefaultState").fileFinishedImporting("modules/directory_channels/native/components/GuildDirectorySearchModal.tsx");
 
 export default function GuildDirectorySearchModal(arg0) {
   const _require = arg0;
-  let obj = {
-    screens: importDefault(5485)(() => (function getScreens(closure_0) {
-      const obj = {
-        fullscreen: true,
-        headerShown: false,
-        render() {
-          const merged = Object.assign(closure_0);
-          return outer3_3(outer3_1(outer3_2[2]), {});
-        }
-      };
-      return { ["SEARCH_SCREEN_KEY"]: obj };
-    })(closure_0)),
-    initialRouteName: "SEARCH_SCREEN_KEY"
-  };
-  return jsx(_require(5552).Navigator, {
-    screens: importDefault(5485)(() => (function getScreens(closure_0) {
-      const obj = {
-        fullscreen: true,
-        headerShown: false,
-        render() {
-          const merged = Object.assign(closure_0);
-          return outer3_3(outer3_1(outer3_2[2]), {});
-        }
-      };
-      return { ["SEARCH_SCREEN_KEY"]: obj };
-    })(closure_0)),
-    initialRouteName: "SEARCH_SCREEN_KEY"
-  });
+  const obj = { screens: null, initialRouteName: null };
+  obj[0] = importDefault(5503)(() => ({
+    [outer1_4]: {
+      fullscreen: true,
+      headerShown: false,
+      render() {
+        const merged = Object.assign(closure_0);
+        return outer1_3(outer1_1(outer1_2[2]), {});
+      }
+    }
+  }));
+  obj[1] = SEARCH_SCREEN_KEY;
+  return jsx(_require(5570).Navigator, { screens: null, initialRouteName: null });
 };

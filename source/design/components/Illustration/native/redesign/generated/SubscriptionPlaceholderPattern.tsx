@@ -1,40 +1,63 @@
-// Module ID: 12511
-// Function ID: 96906
+// Module ID: 12533
+// Function ID: 12534
 // Name: getSubscriptionPlaceholderPatternSource
-// Dependencies: [31, 27, 33, 6517, 12512, 12513, 12514, 4011, 2]
-// Exports: SubscriptionPlaceholderPattern
+// Dependencies: [19, 17, 21, 6538, 12534, 12535, 12536, 4035, 2]
+// Exports: SubscriptionPlaceholderPattern, getSubscriptionPlaceholderPatternSource, useSubscriptionPlaceholderPatternSource
 
-// Module 12511 (getSubscriptionPlaceholderPatternSource)
-import "result";
+// Module 12533 (getSubscriptionPlaceholderPatternSource)
+import "noop";
 import { Image } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
 
 const require = arg1;
-function getSubscriptionPlaceholderPatternSource(theme) {
-  let obj = require(6517) /* getIllustrationSource */;
+const result = require("jsxProd").fileFinishedImporting("design/components/Illustration/native/redesign/generated/SubscriptionPlaceholderPattern.tsx");
+
+export const getSubscriptionPlaceholderPatternSource = function getSubscriptionPlaceholderPatternSource(theme) {
+  let obj = require(6538) /* getIllustrationSource */;
   obj = {
     dark() {
-      return outer1_0(outer1_1[4]);
+      return callback(12534);
     },
     darker() {
-      return outer1_0(outer1_1[5]);
+      return callback(12535);
     },
     light() {
-      return outer1_0(outer1_1[6]);
+      return callback(12536);
     }
   };
   return obj.getIllustrationSource(theme, obj);
-}
-function useSubscriptionPlaceholderPatternSource() {
-  return getSubscriptionPlaceholderPatternSource(require(4011) /* AccessibilityAnnouncer */.useThemeContext().theme);
-}
-const result = require("jsxProd").fileFinishedImporting("design/components/Illustration/native/redesign/generated/SubscriptionPlaceholderPattern.tsx");
-
-export { getSubscriptionPlaceholderPatternSource };
-export { useSubscriptionPlaceholderPatternSource };
+};
+export const useSubscriptionPlaceholderPatternSource = function useSubscriptionPlaceholderPatternSource() {
+  let obj = require(4035) /* AccessibilityAnnouncer */;
+  obj = {
+    dark() {
+      return callback(12534);
+    },
+    darker() {
+      return callback(12535);
+    },
+    light() {
+      return callback(12536);
+    }
+  };
+  return require(6538) /* getIllustrationSource */.getIllustrationSource(obj.useThemeContext().theme, obj);
+};
 export const SubscriptionPlaceholderPattern = function SubscriptionPlaceholderPattern(arg0) {
-  const obj = {};
+  let obj = require(4035) /* AccessibilityAnnouncer */;
+  obj = {
+    dark() {
+      return callback(12534);
+    },
+    darker() {
+      return callback(12535);
+    },
+    light() {
+      return callback(12536);
+    }
+  };
+  obj = {};
+  const illustrationSource = require(6538) /* getIllustrationSource */.getIllustrationSource(obj.useThemeContext().theme, obj);
   const merged = Object.assign(arg0);
-  obj["source"] = useSubscriptionPlaceholderPatternSource();
+  obj.source = illustrationSource;
   return <Image />;
 };

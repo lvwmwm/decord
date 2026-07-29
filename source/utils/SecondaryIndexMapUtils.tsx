@@ -1,10 +1,10 @@
-// Module ID: 4999
-// Function ID: 42803
+// Module ID: 5021
+// Function ID: 5022
 // Name: isVersionEqual
-// Dependencies: [636, 2]
+// Dependencies: [659, 2]
 // Exports: isVersionEqual
 
-// Module 4999 (isVersionEqual)
+// Module 5021 (isVersionEqual)
 const result = require("set").fileFinishedImporting("utils/SecondaryIndexMapUtils.tsx");
 
 export const isVersionEqual = function isVersionEqual(arg0, arg1) {
@@ -16,7 +16,7 @@ export const isVersionEqual = function isVersionEqual(arg0, arg1) {
   [tmp3, tmp4] = arg1;
   let tmp5 = tmp2 === tmp4;
   if (tmp5) {
-    tmp5 = importDefault(636)(tmp, tmp3);
+    tmp5 = importDefault(659)(tmp, tmp3);
   }
   return tmp5;
 };

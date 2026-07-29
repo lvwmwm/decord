@@ -1,55 +1,56 @@
-// Module ID: 8268
-// Function ID: 66151
+// Module ID: 8292
+// Function ID: 8293
 // Name: TagListInputTagComponent
-// Dependencies: [31, 27, 33, 4165, 689, 1324, 1212, 8269, 4695, 4161, 2]
+// Dependencies: [19, 17, 21, 4189, 712, 1348, 1236, 8293, 4717, 4185, 2]
 // Exports: TagListInputTagComponent
 
-// Module 8268 (TagListInputTagComponent)
-import "result";
+// Module 8292 (TagListInputTagComponent)
+import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_4;
-let closure_5;
+let c4;
+let c5;
 const require = arg1;
-({ jsx: closure_4, jsxs: closure_5 } = jsxProd);
-let closure_6 = _createForOfIteratorHelperLoose.createStyles(() => {
+({ jsx: c4, jsxs: c5 } = jsxProd);
+let closure_6 = createCacheKey.createStyles(() => {
   let flag = arg0;
   if (arg0 === undefined) {
     flag = false;
   }
-  let obj = {};
-  obj = {};
-  const colors = importDefault(689).colors;
-  obj.backgroundColor = flag ? colors.BACKGROUND_MOD_SUBTLE : colors.BACKGROUND_SURFACE_HIGH;
-  obj.marginHorizontal = 2;
-  const radii = importDefault(689).radii;
-  obj.borderRadius = flag ? radii.xs : radii.round;
+  const colors = importDefault(712).colors;
+  if (flag) {
+    let BACKGROUND_SURFACE_HIGH = colors.BACKGROUND_MOD_SUBTLE;
+    let tmp4 = tmp;
+  } else {
+    BACKGROUND_SURFACE_HIGH = colors.BACKGROUND_SURFACE_HIGH;
+    tmp4 = tmp;
+  }
+  let obj = { backgroundColor: BACKGROUND_SURFACE_HIGH, marginHorizontal: 2, borderRadius: null, borderWidth: null, borderColor: null, paddingHorizontal: null, paddingVertical: null, overflow: "hidden", flexDirection: "row", alignItems: "center", flexShrink: 1 };
+  const radii = tmp4(712).radii;
+  obj[2] = flag ? radii.xs : radii.round;
   let num;
   if (flag) {
     num = 1;
   }
-  obj.borderWidth = num;
+  obj[3] = num;
   let BORDER_SUBTLE;
   if (flag) {
-    BORDER_SUBTLE = importDefault(689).colors.BORDER_SUBTLE;
+    BORDER_SUBTLE = tmp4(712).colors.BORDER_SUBTLE;
   }
-  obj.borderColor = BORDER_SUBTLE;
-  obj.paddingHorizontal = importDefault(689).space.PX_8;
-  obj.paddingVertical = importDefault(689).space.PX_4;
-  obj.overflow = "hidden";
-  obj.flexDirection = "row";
-  obj.alignItems = "center";
-  obj.flexShrink = 1;
-  obj.tagWrapper = obj;
-  obj.tagText = { flexShrink: 1 };
-  obj = { backgroundColor: importDefault(689).colors.BACKGROUND_BRAND };
-  obj.highlightedTagWrapper = obj;
-  obj.tagIcon = { paddingRight: importDefault(689).space.PX_4, marginLeft: 0 };
-  obj.start = { marginLeft: 0 };
-  const obj1 = { paddingRight: importDefault(689).space.PX_4, marginLeft: 0 };
-  obj.end = { marginRight: importDefault(689).space.PX_4 };
+  obj = { tagWrapper: null, tagText: null, highlightedTagWrapper: null, tagIcon: null, start: null, end: null };
+  obj[4] = BORDER_SUBTLE;
+  obj[5] = tmp4(712).space.PX_8;
+  obj[6] = tmp4(712).space.PX_4;
+  obj[0] = obj;
+  obj[1] = { flexShrink: 1 };
+  obj = { backgroundColor: tmp4(712).colors.BACKGROUND_BRAND };
+  obj[2] = obj;
+  obj[3] = { paddingRight: tmp4(712).space.PX_4, marginLeft: 0 };
+  obj[4] = { marginLeft: 0 };
+  const obj1 = { paddingRight: tmp4(712).space.PX_4, marginLeft: 0 };
+  obj[5] = { marginRight: tmp4(712).space.PX_4 };
   return obj;
 });
 const result = require("jsxProd").fileFinishedImporting("design/components/TagListInput/native/TagListInputTag.native.tsx");
@@ -69,50 +70,54 @@ export const TagListInputTagComponent = function TagListInputTagComponent(end) {
   if (flag === undefined) {
     flag = false;
   }
-  const tmp = callback2(importDefault(1324)("TagListInputTag"));
-  const intl = require(1212) /* getSystemLocale */.intl;
+  const tmp2 = callback2(importDefault(1348)("TagListInputTag"));
+  const intl = require(1236) /* getSystemLocale */.intl;
   let obj = { text: tag.text };
-  const formatToPlainStringResult = intl.formatToPlainString(require(1212) /* getSystemLocale */.t["0Vb9FQ"], obj);
-  ({ onAccessibilityAction, accessibilityActions } = importDefault(8269)(() => callback("remove"), formatToPlainStringResult));
-  obj = {};
-  const items = [tmp.tagWrapper, , , ];
+  const formatToPlainStringResult = intl.formatToPlainString(require(1236) /* getSystemLocale */.t["0Vb9FQ"], obj);
+  ({ onAccessibilityAction, accessibilityActions } = importDefault(8293)(() => callback("remove"), formatToPlainStringResult));
+  const items = [tmp2.tagWrapper, , , ];
   let prop;
   if (selected) {
-    prop = tmp.highlightedTagWrapper;
+    prop = tmp2.highlightedTagWrapper;
   }
   items[1] = prop;
   start = undefined;
   if (start) {
-    start = tmp.start;
+    start = tmp2.start;
   }
   items[2] = start;
   end = undefined;
   if (flag) {
-    end = tmp.end;
+    end = tmp2.end;
   }
-  items[3] = end;
-  obj.style = items;
-  obj.onPress = function onPress() {
-    return callback("select");
+  obj = {
+    style: items,
+    onPress() {
+      return callback("select");
+    },
+    accessibilityRole: "button",
+    accessibilityLabel: formatToPlainStringResult,
+    accessibilityActions,
+    onAccessibilityAction,
+    children: null
   };
-  obj.accessibilityRole = "button";
-  obj.accessibilityLabel = formatToPlainStringResult;
-  obj.accessibilityActions = accessibilityActions;
-  obj.onAccessibilityAction = onAccessibilityAction;
-  let tmp8 = null;
+  items[3] = end;
+  let tmp10 = null;
   if (null != tag.icon) {
-    obj = { style: tmp.tagIcon, children: tag.icon };
-    tmp8 = callback(View, obj);
+    obj = { style: null, children: null };
+    obj[0] = tmp2.tagIcon;
+    obj[1] = tag.icon;
+    tmp10 = callback(View, obj);
   }
-  const items1 = [tmp8, ];
-  const obj1 = { style: tmp.tagText, lineClamp: 1, variant: "text-sm/medium" };
+  const items1 = [tmp10, ];
+  const obj1 = { style: tmp2.tagText, lineClamp: 1, variant: "text-sm/medium", color: null, children: null };
   let str = "text-default";
   if (selected) {
     str = "text-overlay-light";
   }
-  obj1.color = str;
-  obj1.children = tag.text;
-  items1[1] = callback(require(4161) /* Text */.Text, obj1);
-  obj.children = items1;
-  return closure_5(require(4695) /* PressableBase */.PressableOpacity, obj);
+  obj1[3] = str;
+  obj1[4] = tag.text;
+  items1[1] = callback(require(4185) /* Text */.Text, obj1);
+  obj[6] = items1;
+  return closure_5(require(4717) /* PressableBase */.PressableOpacity, obj);
 };

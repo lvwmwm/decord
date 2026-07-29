@@ -1,224 +1,81 @@
-// Module ID: 5965
-// Function ID: 52796
-// Name: _createForOfIteratorHelperLoose
-// Dependencies: [6, 7, 15, 17, 18, 566, 686, 2]
+// Module ID: 5984
+// Function ID: 5985
+// Name: set
+// Dependencies: [589, 709, 2]
 
-// Module 5965 (_createForOfIteratorHelperLoose)
-import dispatcher from "dispatcher";
+// Module 5984 (set)
+import { Store } from "initialize";
 import set from "set";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
 
-function _createForOfIteratorHelperLoose(iterable) {
-  let closure_0 = iterable;
-  iterable = "undefined" !== typeof Symbol;
-  if (iterable) {
-    const _Symbol = Symbol;
-    iterable = iterable[Symbol.iterator];
-  }
-  if (!iterable) {
-    iterable = iterable[Symbol.iterator];
-  }
-  if (iterable) {
-    const iter = iterable.call(iterable);
-    const next = iter.next;
-    return next.bind(iter);
-  } else {
-    const _Array = Array;
-    let tmp = iterable;
-    if (!Array.isArray(iterable)) {
-      let tmp2;
-      if (iterable) {
-        if ("string" === typeof iterable) {
-          tmp2 = _arrayLikeToArray(iterable, undefined);
-        } else {
-          const toString = {}.toString;
-          const substr = toString.call(iterable).slice(8, -1);
-          let name = substr;
-          if (tmp3) {
-            name = iterable.constructor.name;
-          }
-          if ("Map" !== name) {
-            if ("Set" !== name) {
-              if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(iterable, undefined);
-              } else {
-                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
-              }
-            }
-            tmp2 = arr;
-          }
-          const _Array2 = Array;
-          arr = Array.from(iterable);
-          const callResult = toString.call(iterable);
-          tmp3 = "Object" === substr && iterable.constructor;
-        }
-      }
-      tmp = tmp2;
-      if (!tmp2) {
-        const _TypeError = TypeError;
-        const typeError = new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
-        throw typeError;
-      }
-    }
-    if (tmp) {
-      closure_0 = tmp;
-    }
-    let c1 = 0;
-    return () => {
-      if (closure_1 >= length.length) {
-        let obj = { done: true };
-      } else {
-        obj = { done: false };
-        closure_1 = tmp3 + 1;
-        obj.value = length[+closure_1];
-      }
-      return obj;
-    };
-  }
+let c0 = false;
+let closure_1 = [];
+let set = new Set();
+let set1 = new Set();
+let map = new Map();
+let map1 = new Map();
+class BountyStore extends Store {
 }
-function _arrayLikeToArray(arg0, arg1) {
-  let length;
-  if (tmp) {
-    length = arg0.length;
+const prototype = BountyStore.prototype;
+Object.defineProperty(prototype, "isFetchingQuestHomeBounties", {
+  get: function isFetchingQuestHomeBounties() {
+    return c0;
+  },
+  set: undefined
+});
+Object.defineProperty(prototype, "questHomeBounties", {
+  get: function questHomeBounties() {
+    return closure_1;
+  },
+  set: undefined
+});
+prototype["isBountyCompleted"] = function isBountyCompleted(id) {
+  return set.has(id);
+};
+prototype["getCompletedBountyCount"] = function getCompletedBountyCount(first) {
+  let num = 0;
+  while (tmp !== undefined) {
+    let tmp3 = set;
+    if (set.has(tmp2.id)) {
+      let tmp4 = num;
+      num = num + 1;
+    }
+    continue;
   }
-  const ArrayResult = Array(length);
-  for (let num = 0; num < length; num = num + 1) {
-    ArrayResult[num] = arg0[num];
+  return num;
+};
+prototype["isClaimingBountyReward"] = function isClaimingBountyReward(closure_0) {
+  return set1.has(closure_0);
+};
+prototype["areAllBountiesCompleted"] = function areAllBountiesCompleted() {
+  return closure_1.every((id) => set.has(id.id));
+};
+prototype["getAdDecisionByPlacementAndAdCreativeId"] = function getAdDecisionByPlacementAndAdCreativeId(arg0, adContentId) {
+  let value = map.get(arg0);
+  value = undefined;
+  if (value != null) {
+    value = value.get(adContentId);
   }
-  return ArrayResult;
-}
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
+  if (value == null) {
+    value = null;
   }
-  const result = _isNativeReflectConstruct();
-}
-function initializeState() {
-  let c0 = false;
-  let closure_1 = [];
-  const set = new Set();
-  const set1 = new Set();
-  const map = new Map();
-  const map1 = new Map();
-}
-initializeState();
-let tmp3 = ((Store) => {
-  class BountyStore {
-    constructor() {
-      self = this;
-      tmp = outer1_6(this, BountyStore);
-      obj = outer1_9(BountyStore);
-      tmp2 = outer1_8;
-      if (outer1_13()) {
-        tmp6 = globalThis;
-        _Reflect = Reflect;
-        tmp7 = outer1_9;
-        tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, outer1_9(self).constructor);
-      } else {
-        tmp3 = arguments;
-        tmp4 = arguments;
-        constructResult = obj(...arguments);
-      }
-      return tmp2(self, constructResult);
-    }
+  return value;
+};
+prototype["getBountyVideoProgress"] = function getBountyVideoProgress(id) {
+  let value = map1.get(id);
+  if (value == null) {
+    value = null;
   }
-  callback2(BountyStore, Store);
-  let obj = {
-    key: "isFetchingQuestHomeBounties",
-    get() {
-      return BountyStore;
-    }
-  };
-  const items = [obj, , , , , , , ];
-  obj = {
-    key: "questHomeBounties",
-    get() {
-      return outer1_1;
-    }
-  };
-  items[1] = obj;
-  obj = {
-    key: "isBountyCompleted",
-    value(arg0) {
-      return outer1_2.has(arg0);
-    }
-  };
-  items[2] = obj;
-  items[3] = {
-    key: "getCompletedBountyCount",
-    value(arg0) {
-      let iter3;
-      const tmp = outer1_11(arg0);
-      const iter = tmp();
-      let iter2 = iter;
-      let num = 0;
-      let num2 = 0;
-      if (!iter.done) {
-        do {
-          let tmp2 = outer1_2;
-          let sum = num;
-          if (outer1_2.has(iter2.value.id)) {
-            sum = num + 1;
-          }
-          iter3 = tmp();
-          num = sum;
-          iter2 = iter3;
-          num2 = sum;
-        } while (!iter3.done);
-      }
-      return num2;
-    }
-  };
-  items[4] = {
-    key: "isClaimingBountyReward",
-    value(arg0) {
-      return outer1_3.has(arg0);
-    }
-  };
-  items[5] = {
-    key: "areAllBountiesCompleted",
-    value() {
-      return outer1_1.every((id) => outer2_2.has(id.id));
-    }
-  };
-  items[6] = {
-    key: "getAdDecisionByPlacementAndAdCreativeId",
-    value(arg0, arg1) {
-      let value = outer1_4.get(arg0);
-      value = undefined;
-      if (null != value) {
-        value = value.get(arg1);
-      }
-      let tmp3 = null;
-      if (null != value) {
-        tmp3 = value;
-      }
-      return tmp3;
-    }
-  };
-  items[7] = {
-    key: "getBountyVideoProgress",
-    value(arg0) {
-      const value = outer1_5.get(arg0);
-      let tmp2 = null;
-      if (null != value) {
-        tmp2 = value;
-      }
-      return tmp2;
-    }
-  };
-  return callback(BountyStore, items);
-})(require("initialize").Store);
-tmp3.displayName = "BountyStore";
-tmp3 = new tmp3(require("dispatcher"), {
+  return value;
+};
+BountyStore.displayName = "BountyStore";
+const bountyStore = new BountyStore(require("dispatcher"), {
   LOGOUT: function handleLogout() {
-    initializeState();
+    let c0 = false;
+    let closure_1 = [];
+    const set = new Set();
+    const set1 = new Set();
+    const map = new Map();
+    const map1 = new Map();
   },
   BOUNTIES_FETCH_QUEST_HOME_BOUNTIES_BEGIN: function handleFetchQuestHomeBountiesBegin() {
     let c0 = true;
@@ -269,6 +126,6 @@ tmp3 = new tmp3(require("dispatcher"), {
     const map = new Map();
   }
 });
-let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/quests/BountyStore.tsx");
+let result = set.fileFinishedImporting("modules/quests/BountyStore.tsx");
 
-export default tmp3;
+export default bountyStore;

@@ -1,35 +1,35 @@
-// Module ID: 8220
-// Function ID: 65744
+// Module ID: 8244
+// Function ID: 8245
 // Name: useCollapsibleFloatingActionButtonState
-// Dependencies: [31, 4026, 2]
+// Dependencies: [19, 4050, 2]
 // Exports: useCollapsibleFloatingActionButtonScroll, useCollapsibleFloatingActionButtonState
 
-// Module 8220 (useCollapsibleFloatingActionButtonState)
-import result from "result";
+// Module 8244 (useCollapsibleFloatingActionButtonState)
+import noop from "noop";
 
 const require = arg1;
 let closure_3 = { code: "function CollapsibleFloatingActionButtonStateNativeTsx1({nativeEvent:nativeEvent}){const{initialScrollStart,previousOffset,MINIMUM_SCROLL_DISTANCE_TO_CLOSE,collapseText,SCROLL_OFFSET_THRESHOLD}=this.__closure;if(nativeEvent==null)return;const{contentOffset:{y:currentOffset},contentSize:{height:contentHeight},layoutMeasurement:{height:layoutHeight}}=nativeEvent;if(currentOffset<initialScrollStart)return;const contentHeightAsOffset=currentOffset+layoutHeight;if(contentHeightAsOffset>contentHeight)return;const offsetChanged=currentOffset-previousOffset.get();if(currentOffset<MINIMUM_SCROLL_DISTANCE_TO_CLOSE){collapseText.set(0);}else{if(Math.abs(offsetChanged)>SCROLL_OFFSET_THRESHOLD){collapseText.set(offsetChanged<0?0:1);}}previousOffset.set(currentOffset);}" };
 let result = require("set").fileFinishedImporting("design/components/experimental/Button/native/CollapsibleFloatingActionButtonState.native.tsx");
 
 export const useCollapsibleFloatingActionButtonState = function useCollapsibleFloatingActionButtonState() {
-  const obj = { collapseText: require(4026).useSharedValue(0) };
+  const obj = { collapseText: null };
+  obj[0] = require(4050).useSharedValue(0);
   return obj;
 };
 export const useCollapsibleFloatingActionButtonScroll = function useCollapsibleFloatingActionButtonScroll(collapsibleFloatingActionButtonState, UNDETERMINED) {
-  let num = UNDETERMINED;
   const collapseText = collapsibleFloatingActionButtonState.collapseText;
+  let num = UNDETERMINED;
   if (UNDETERMINED === undefined) {
     num = 0;
   }
   let sharedValue;
-  let obj = collapseText(num[1]);
-  sharedValue = obj.useSharedValue(num);
+  sharedValue = collapseText(num[1]).useSharedValue(num);
   const fn = function s(nativeEvent) {
     nativeEvent = nativeEvent.nativeEvent;
     if (null != nativeEvent) {
       const y = nativeEvent.contentOffset.y;
       if (y >= num) {
-        if (y + nativeEvent.layoutMeasurement.height <= tmp10) {
+        if (y + nativeEvent.layoutMeasurement.height <= tmp8) {
           const diff = y - sharedValue.get();
           if (y < 10) {
             const result = collapseText.set(0);
@@ -44,12 +44,12 @@ export const useCollapsibleFloatingActionButtonScroll = function useCollapsibleF
             }
           }
           const result2 = sharedValue.set(y);
+          const obj = sharedValue;
         }
       }
     }
   };
-  obj = { initialScrollStart: num, previousOffset: sharedValue, MINIMUM_SCROLL_DISTANCE_TO_CLOSE: 10, collapseText, SCROLL_OFFSET_THRESHOLD: 10 };
-  fn.__closure = obj;
+  fn.__closure = { initialScrollStart: num, previousOffset: sharedValue, MINIMUM_SCROLL_DISTANCE_TO_CLOSE: 10, collapseText, SCROLL_OFFSET_THRESHOLD: 10 };
   fn.__workletHash = 10435259247914;
   fn.__initData = closure_3;
   const items = [num, sharedValue, collapseText];

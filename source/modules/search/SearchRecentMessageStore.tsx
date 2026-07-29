@@ -1,68 +1,28 @@
-// Module ID: 10085
-// Function ID: 77961
-// Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 4386, 566, 686, 2]
+// Module ID: 10106
+// Function ID: 10107
+// Name: handleReset
+// Dependencies: [4409, 589, 709, 2]
 
-// Module 10085 (_isNativeReflectConstruct)
-import initialize from "initialize";
-import dispatcher from "dispatcher";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
+// Module 10106 (handleReset)
+import { Store } from "initialize";
 
 const require = arg1;
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
-  }
-  const result = _isNativeReflectConstruct();
-}
 function handleReset() {
   const map = new Map();
 }
 let map = new Map();
-let closure_8 = [];
-let tmp3 = ((Store) => {
-  class SearchRecentMessageStore {
-    constructor() {
-      self = this;
-      tmp = outer1_2(this, SearchRecentMessageStore);
-      obj = outer1_5(SearchRecentMessageStore);
-      tmp2 = outer1_4;
-      if (outer1_9()) {
-        tmp6 = globalThis;
-        _Reflect = Reflect;
-        tmp7 = outer1_5;
-        tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, outer1_5(self).constructor);
-      } else {
-        tmp3 = arguments;
-        tmp4 = arguments;
-        constructResult = obj(...arguments);
-      }
-      return tmp2(self, constructResult);
-    }
+let closure_3 = [];
+class SearchRecentMessageStore extends Store {
+}
+SearchRecentMessageStore.prototype["getRecentMessageAuthorIds"] = function getRecentMessageAuthorIds(guildId) {
+  let value = map.get(guildId);
+  if (value == null) {
+    value = closure_3;
   }
-  callback2(SearchRecentMessageStore, Store);
-  const items = [
-    {
-      key: "getRecentMessageAuthorIds",
-      value(arg0) {
-        let value = outer1_7.get(arg0);
-        if (null == value) {
-          value = outer1_8;
-        }
-        return value;
-      }
-    }
-  ];
-  return callback(SearchRecentMessageStore, items);
-})(require("initialize").Store);
-tmp3.displayName = "SearchRecentMessageStore";
-tmp3 = new tmp3(require("dispatcher"), {
+  return value;
+};
+SearchRecentMessageStore.displayName = "SearchRecentMessageStore";
+const searchRecentMessageStore = new SearchRecentMessageStore(require("dispatcher"), {
   SEARCH_MESSAGES_SUCCESS: function handleSearchMessagesSuccess(arg0) {
     let data;
     let guildId;
@@ -74,8 +34,8 @@ tmp3 = new tmp3(require("dispatcher"), {
       return false;
     } else {
       c0 = false;
-      items = map.get(guildId);
-      if (null == items) {
+      items = set.get(guildId);
+      if (items == null) {
         items = [];
       }
       items = [];
@@ -87,20 +47,21 @@ tmp3 = new tmp3(require("dispatcher"), {
         const item = messages.forEach((arg0) => {
           let tmp;
           [tmp] = arg0;
-          const messageRecord = callback(items[5]).createMessageRecord(tmp);
-          let tmp3 = !outer1_2.has(messageRecord.author.id);
-          if (tmp3) {
-            tmp3 = outer1_2.size < 15;
+          const messageRecord = outer1_0(outer1_1[0]).createMessageRecord(tmp);
+          const hasItem = set.has(messageRecord.author.id);
+          let tmp4 = !hasItem;
+          if (!hasItem) {
+            tmp4 = obj2.size < 15;
           }
-          if (tmp3) {
-            outer1_2.add(messageRecord.author.id);
-            outer1_1.push(messageRecord.author.id);
-            const outer1_0 = true;
+          if (tmp4) {
+            obj2.add(messageRecord.author.id);
+            arr = arr.push(messageRecord.author.id);
+            let c0 = true;
           }
         });
       });
       if (c0) {
-        const result = map.set(guildId, items);
+        const result = set.set(guildId, items);
       }
       return c0;
     }
@@ -108,6 +69,6 @@ tmp3 = new tmp3(require("dispatcher"), {
   SEARCH_RECENT_MESSAGES_CLEAR: handleReset,
   CONNECTION_OPEN: handleReset
 });
-let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/search/SearchRecentMessageStore.tsx");
+let result = require("dispatcher").fileFinishedImporting("modules/search/SearchRecentMessageStore.tsx");
 
-export default tmp3;
+export default searchRecentMessageStore;

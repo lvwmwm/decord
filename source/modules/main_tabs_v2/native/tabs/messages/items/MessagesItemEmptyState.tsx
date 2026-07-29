@@ -1,70 +1,67 @@
-// Module ID: 15060
-// Function ID: 114628
+// Module ID: 15090
+// Function ID: 15091
 // Name: MESSAGES_ITEM_EMPTY_STATE_HEIGHT
-// Dependencies: [31, 27, 33, 4165, 689, 4017, 15061, 4161, 1212, 4578, 2]
+// Dependencies: [19, 17, 21, 4189, 712, 4041, 15049, 4185, 1236, 4600, 2]
 
-// Module 15060 (MESSAGES_ITEM_EMPTY_STATE_HEIGHT)
-import importAllResult from "result";
+// Module 15090 (MESSAGES_ITEM_EMPTY_STATE_HEIGHT)
+import importAllResult from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_4;
-let closure_5;
+let c4;
+let c5;
 let closure_6;
-let closure_7;
+let error;
 const require = arg1;
-({ Image: closure_4, View: closure_5 } = get_ActivityIndicator);
-({ jsx: closure_6, jsxs: closure_7 } = jsxProd);
-let obj = {};
-obj = { padding: require("_createForOfIteratorHelperLoose").space.PX_16, flex: 1, height: 325 };
-obj.container = obj;
-_createForOfIteratorHelperLoose = { marginBottom: require("_createForOfIteratorHelperLoose").space.PX_16, flexShrink: 1, flexGrow: 1 };
-obj.containerImage = _createForOfIteratorHelperLoose;
-obj.image = { height: "100%", width: "100%" };
-obj.body = { marginBottom: require("_createForOfIteratorHelperLoose").space.PX_16, marginTop: require("_createForOfIteratorHelperLoose").space.PX_8, textAlign: "center" };
-obj.title = { textAlign: "center" };
-let closure_8 = _createForOfIteratorHelperLoose.createStyles(obj);
-let obj2 = { marginBottom: require("_createForOfIteratorHelperLoose").space.PX_16, marginTop: require("_createForOfIteratorHelperLoose").space.PX_8, textAlign: "center" };
+let c3 = importAllResult;
+({ Image: c4, View: c5 } = get_ActivityIndicator);
+({ jsx: closure_6, jsxs: error } = jsxProd);
+let obj = { container: null, containerImage: null, image: null, body: null, title: null };
+obj = { padding: require("Themes").space.PX_16, flex: 1, height: 325 };
+obj[0] = obj;
+createCacheKey = { marginBottom: require("Themes").space.PX_16, flexShrink: 1, flexGrow: 1 };
+obj[1] = createCacheKey;
+obj[2] = { height: "100%", width: "100%" };
+obj[3] = { marginBottom: require("Themes").space.PX_16, marginTop: require("Themes").space.PX_8, textAlign: "center" };
+obj[4] = { textAlign: "center" };
+let closure_8 = createCacheKey.createStyles(obj);
+let obj2 = { marginBottom: require("Themes").space.PX_16, marginTop: require("Themes").space.PX_8, textAlign: "center" };
 const memoResult = importAllResult.memo(function MessagesItemEmptyState() {
   const tmp = callback3();
-  let obj = { style: tmp.container, collapsable: false };
-  obj = { style: tmp.containerImage };
-  obj = { resizeMode: "contain" };
+  let obj = { style: tmp.container, collapsable: false, children: null };
+  obj = { style: tmp.containerImage, children: null };
+  obj = { resizeMode: "contain", source: null, style: null };
   const callback = importAllResult.useCallback(() => {
-    let obj = outer1_0(outer1_2[5]);
+    let obj = callback(table[5]);
     const rootNavigationRef = obj.getRootNavigationRef();
-    let tmp2 = null == rootNavigationRef;
-    let obj2 = rootNavigationRef;
-    if (!tmp2) {
+    if (rootNavigationRef != null) {
       const current = rootNavigationRef.current;
-      tmp2 = null == current;
-      obj2 = current;
-    }
-    if (!tmp2) {
-      obj = { screen: "add-friends", params: { sourcePage: "Messages Empty State", presentation: "card" } };
-      obj2.navigate("friends", obj);
+      if (current != null) {
+        obj = { screen: "add-friends", params: null };
+        obj[1] = { sourcePage: "Messages Empty State", presentation: "card" };
+        current.navigate("friends", obj);
+      }
     }
   }, []);
-  obj.source = importDefault(15061);
-  obj.style = tmp.image;
-  obj.children = callback(closure_4, obj);
+  obj[1] = importDefault(15049);
+  obj[2] = tmp.image;
+  obj[1] = callback(closure_4, obj);
   const items = [callback(closure_5, obj), , , ];
-  const obj1 = { color: "mobile-text-heading-primary", variant: "heading-lg/bold", style: tmp.title, maxFontSizeMultiplier: 2 };
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj1.children = intl.string(require(1212) /* getSystemLocale */.t["8JZof8"]);
-  items[1] = callback(require(4161) /* Text */.Heading, obj1);
-  let obj2 = { color: "text-default", variant: "text-md/medium", style: tmp.body, maxFontSizeMultiplier: 2 };
-  const intl2 = require(1212) /* getSystemLocale */.intl;
-  obj2.children = intl2.string(require(1212) /* getSystemLocale */.t["qm+H7x"]);
-  items[2] = callback(require(4161) /* Text */.Text, obj2);
-  const obj3 = {};
-  const intl3 = require(1212) /* getSystemLocale */.intl;
-  obj3.text = intl3.string(require(1212) /* getSystemLocale */.t.zIJnA6);
-  obj3.onPress = callback;
-  obj3.size = "lg";
-  items[3] = callback(require(4578) /* Button */.Button, obj3);
-  obj.children = items;
+  const obj1 = { color: "mobile-text-heading-primary", variant: "heading-lg/bold", style: tmp.title, maxFontSizeMultiplier: 2, children: null };
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj1[4] = intl.string(require(1236) /* getSystemLocale */.t["8JZof8"]);
+  items[1] = callback(require(4185) /* Text */.Heading, obj1);
+  const obj2 = { color: "text-default", variant: "text-md/medium", style: tmp.body, maxFontSizeMultiplier: 2, children: null };
+  const intl2 = require(1236) /* getSystemLocale */.intl;
+  obj2[4] = intl2.string(require(1236) /* getSystemLocale */.t["qm+H7x"]);
+  items[2] = callback(require(4185) /* Text */.Text, obj2);
+  const obj3 = { text: null, onPress: null, size: "lg" };
+  const intl3 = require(1236) /* getSystemLocale */.intl;
+  obj3[0] = intl3.string(require(1236) /* getSystemLocale */.t.zIJnA6);
+  obj3[1] = callback;
+  items[3] = callback(require(4600) /* Button */.Button, obj3);
+  obj[2] = items;
   return callback2(closure_5, obj);
 });
 const result = require("jsxProd").fileFinishedImporting("modules/main_tabs_v2/native/tabs/messages/items/MessagesItemEmptyState.tsx");

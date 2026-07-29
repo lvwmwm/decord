@@ -1,14 +1,15 @@
-// Module ID: 16197
-// Function ID: 125357
+// Module ID: 16232
+// Function ID: 16233
 // Name: isIOSAppTransactionIdTrackingEnabled
-// Dependencies: [1428, 2]
+// Dependencies: [1452, 2]
 // Exports: isIOSAppTransactionIdTrackingEnabled
 
-// Module 16197 (isIOSAppTransactionIdTrackingEnabled)
+// Module 16232 (isIOSAppTransactionIdTrackingEnabled)
 import ApexExperiment from "ApexExperiment";
 
-const obj = { kind: "user", name: "2026-01-ios-apptransactionid-tracking", defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } };
-let closure_0 = ApexExperiment.createApexExperiment(obj);
+const obj = { 1: null };
+obj[1] = { enabled: true };
+let closure_0 = ApexExperiment.createApexExperiment({ kind: "user", name: "2026-01-ios-apptransactionid-tracking", defaultConfig: { enabled: false }, variations: obj });
 const result = require("set").fileFinishedImporting("modules/user_identifiers/native/IOSAppTransactionIdExperiment.tsx");
 
 export const isIOSAppTransactionIdTrackingEnabled = function isIOSAppTransactionIdTrackingEnabled(IOSUserIdentifiersManager) {

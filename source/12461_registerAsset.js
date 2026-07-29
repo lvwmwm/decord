@@ -1,11 +1,10 @@
 // Module ID: 12461
-// Function ID: 96542
+// Function ID: 12462
 // Name: registerAsset
-// Dependencies: [1217]
+// Dependencies: [1241]
 
 // Module 12461 (registerAsset)
 import registerAsset from "registerAsset";
 
-const obj = { __packager_asset: true, httpServerLocation: "/assets/modules/premium/referral_program/native/images", width: 180, height: 180, scales: [1], hash: "7d7d766e7ebb30cec66584e69b89634d", name: "Glow", type: "png" };
 
-export default registerAsset.registerAsset(obj);
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/premium/native/images/perks", width: 300, height: 175, scales: [2, 3], hash: "cb2a2e3b1b856419d08252c8139a8321", name: "entrace_sounds", type: "png" });

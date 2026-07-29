@@ -1,12 +1,12 @@
-// Module ID: 9553
-// Function ID: 74411
+// Module ID: 9577
+// Function ID: 9578
 // Name: set
-// Dependencies: [31, 653, 9554, 2]
+// Dependencies: [19, 676, 9578, 2]
 // Exports: usePressHorizontalAutocompleteItemHandler
 
-// Module 9553 (set)
-import result from "result";
-import set from "getMentionTextWithUser";
+// Module 9577 (set)
+import noop from "noop";
+import set from "AutocompleteFormDivider";
 
 const require = arg1;
 let items = [, , , ];

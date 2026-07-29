@@ -1,68 +1,61 @@
-// Module ID: 629
-// Function ID: 7247
-// Dependencies: [630, 2]
+// Module ID: 653
+// Function ID: 654
+// Name: u
+// Dependencies: [654, 2]
 
-// Module 629
+// Module 653 (u)
 import u from "u";
 
-if (null == Date.now) {
-  const _Date = Date;
-  Date.now = () => new Date().valueOf();
-}
-while (true) {
-  let tmp3 = global;
-  let navigationStart = global.performance.timing.navigationStart;
-  let tmp4 = navigationStart;
-  let tmp5 = null;
-  if (null != navigationStart) {
-    let nowResult = navigationStart;
-  } else {
-    let tmp6 = global;
-    let _performance = global.performance;
-    nowResult = _performance.now();
+try {
+  let _Date = Date;
+  if (null == Date.now) {
+    const _Date2 = Date;
+    Date.now = () => new Date().valueOf();
   }
-  while (true) {
-    let tmp9 = nowResult;
-    let timeOrigin = global.performance.timeOrigin;
-    let tmp10 = timeOrigin;
-    let tmp11 = null;
-    let tmp8 = nowResult;
-    if (null != timeOrigin) {
-      tmp9 = timeOrigin;
+  const tmp4 = (() => {
+    try {
+      let navigationStart = global.performance.timing.navigationStart;
+      if (navigationStart == null) {
+        const _performance = global.performance;
+        navigationStart = _performance.now();
+      }
+      return navigationStart;
+    } catch (err) {
+      const _Date = Date;
+      return Date.now();
     }
-    while (true) {
-      let tmp13 = global;
-      let tmp14 = null;
-      let tmp12 = tmp9;
-      if (null != global.performance.timing) {
-        break;
-      } else {
-        let tmp15 = global;
-        let obj = {};
-        let tmp16 = nowResult;
-        obj.navigationStart = tmp8;
-        global.performance.timing = obj;
-        break;
+  })();
+  let closure_1 = tmp4;
+  const tmp5 = (() => {
+    try {
+      let timeOrigin = global.performance.timeOrigin;
+      if (timeOrigin == null) {
+        timeOrigin = closure_1;
       }
-      while (true) {
-        let tmp17 = global;
-        if (null != global.performance.timeOrigin) {
-          break;
-        } else {
-          let tmp18 = global;
-          let tmp19 = tmp9;
-          global.performance.timeOrigin = tmp12;
-          break;
-        }
-        let tmp20 = dependencyMap;
-        let num = 1;
-        let _module1 = require("set");
-        let str = "../discord_common/js/packages/performance-utils/index.js";
-        let result = _module1.fileFinishedImporting("../discord_common/js/packages/performance-utils/index.js");
-        exports.navigationStart = nowResult;
-        exports.timeOrigin = tmp9;
-        exports.performance = global.performance;
-      }
+      return timeOrigin;
+    } catch (err) {
+      const _Date = Date;
+      return Date.now();
+    }
+  })();
+  if (null == global.performance.timing) {
+    try {
+      const obj = { navigationStart: null };
+      obj[0] = tmp4;
+      global.performance.timing = obj;
+    } catch (err) {
     }
   }
+  if (null == global.performance.timeOrigin) {
+    try {
+      global.performance.timeOrigin = tmp5;
+    } catch (err) {
+    }
+  }
+  const _module1 = require("set");
+  const result = _module1.fileFinishedImporting("../discord_common/js/packages/performance-utils/index.js");
+  exports.navigationStart = tmp4;
+  exports.timeOrigin = tmp5;
+  exports.performance = global.performance;
+} catch (err) {
 }

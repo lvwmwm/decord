@@ -1,33 +1,42 @@
-// Module ID: 11327
-// Function ID: 87919
-// Dependencies: [31, 33, 4165, 689, 1324, 3869, 4695, 1212, 1273, 9852, 6556, 2]
+// Module ID: 11351
+// Function ID: 11352
+// Dependencies: [19, 21, 4189, 712, 1348, 3893, 4717, 1236, 1297, 9874, 6577, 2]
 
-// Module 11327
-import importAllResult from "result";
+// Module 11351
+import importAllResult from "noop";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
 const require = arg1;
-let closure_5 = _createForOfIteratorHelperLoose.createStyles((arg0, arg1, height) => {
-  let obj = {};
-  obj = {};
-  const radii = importDefault(689).radii;
-  obj.borderRadius = arg0 ? radii.sm : radii.round;
-  obj.height = height;
-  obj.width = height;
+let c3 = importAllResult;
+let closure_5 = createCacheKey.createStyles((arg0, arg1, height) => {
+  const radii = importDefault(712).radii;
+  if (arg0) {
+    let round = radii.sm;
+    let tmp4 = tmp;
+  } else {
+    round = radii.round;
+    tmp4 = tmp;
+  }
+  let obj = { borderRadius: round, height, width: height };
   if (arg0) {
     obj = { alignItems: "center", justifyContent: "center" };
   } else {
-    obj = { paddingHorizontal: importDefault(689).modules.mobile.CHAT_INPUT_PILL_PADDING, paddingVertical: importDefault(689).modules.mobile.CHAT_INPUT_PILL_PADDING };
+    obj = { paddingHorizontal: null, paddingVertical: null };
+    obj[0] = tmp4(712).modules.mobile.CHAT_INPUT_PILL_PADDING;
+    obj[1] = tmp4(712).modules.mobile.CHAT_INPUT_PILL_PADDING;
   }
+  obj = { expressionButton: null, expressionButtonIconPosition: null, expressionButtonIconTint: null };
   const merged = Object.assign(obj);
-  obj.expressionButton = obj;
-  obj.expressionButtonIconPosition = { position: "absolute", left: importDefault(689).modules.mobile.CHAT_INPUT_EXPRESSION_OFFSET_LEFT, top: importDefault(689).modules.mobile.CHAT_INPUT_EXPRESSION_OFFSET_TOP };
-  const obj1 = { position: "absolute", left: importDefault(689).modules.mobile.CHAT_INPUT_EXPRESSION_OFFSET_LEFT, top: importDefault(689).modules.mobile.CHAT_INPUT_EXPRESSION_OFFSET_TOP };
-  obj.expressionButtonIconTint = { tintColor: importDefault(689).colors.CHAT_INPUT_ICON_DEFAULT_TINT };
+  obj[0] = obj;
+  obj[1] = { position: "absolute", left: tmp4(712).modules.mobile.CHAT_INPUT_EXPRESSION_OFFSET_LEFT, top: tmp4(712).modules.mobile.CHAT_INPUT_EXPRESSION_OFFSET_TOP };
+  const obj1 = { position: "absolute", left: tmp4(712).modules.mobile.CHAT_INPUT_EXPRESSION_OFFSET_LEFT, top: tmp4(712).modules.mobile.CHAT_INPUT_EXPRESSION_OFFSET_TOP };
+  obj[2] = { tintColor: tmp4(712).colors.CHAT_INPUT_ICON_DEFAULT_TINT };
   return obj;
 });
 const memoResult = importAllResult.memo((active) => {
+  let chatInputFloating;
+  let enabled;
   let flag = active.active;
   if (flag === undefined) {
     flag = false;
@@ -37,58 +46,52 @@ const memoResult = importAllResult.memo((active) => {
     showKeyboardIcon = flag;
   }
   const onPress = active.onPress;
-  let obj = onPress(1324);
+  let obj = onPress(1348);
   const mobileVisualRefreshConfig = obj.useMobileVisualRefreshConfig({ location: "ChatInputExpressionButton" });
-  const enabled = mobileVisualRefreshConfig.enabled;
-  let obj1 = onPress(3869);
-  const token = obj1.useToken(importDefault(689).modules.mobile.CHAT_INPUT_ACTION_BUTTON_SIZE);
-  const token1 = onPress(3869).useToken(importDefault(689).modules.mobile.CHAT_INPUT_PILL_PADDING);
-  const obj3 = onPress(3869);
-  const token2 = onPress(3869).useToken(importDefault(689).modules.mobile.CHAT_INPUT_PILL_BORDER_WIDTH);
-  const obj4 = onPress(3869);
-  const token3 = onPress(3869).useToken(importDefault(689).modules.mobile.CHAT_INPUT_ICON_SIZE);
-  const obj5 = onPress(3869);
+  ({ enabled, chatInputFloating } = mobileVisualRefreshConfig);
+  const token = onPress(3893).useToken(importDefault(712).modules.mobile.CHAT_INPUT_ACTION_BUTTON_SIZE);
+  const obj2 = onPress(3893);
+  const tmp4 = importDefault;
+  const token1 = onPress(3893).useToken(importDefault(712).modules.mobile.CHAT_INPUT_PILL_PADDING);
+  const obj3 = onPress(3893);
+  const token2 = onPress(3893).useToken(importDefault(712).modules.mobile.CHAT_INPUT_PILL_BORDER_WIDTH);
+  const obj4 = onPress(3893);
+  const token3 = onPress(3893).useToken(importDefault(712).modules.mobile.CHAT_INPUT_ICON_SIZE);
+  const obj5 = onPress(3893);
   let diff = token;
-  const token4 = onPress(3869).useToken(importDefault(689).modules.mobile.CHAT_INPUT_BUTTON_MIN_TOUCH_TARGET_SIZE);
+  const token4 = onPress(3893).useToken(importDefault(712).modules.mobile.CHAT_INPUT_BUTTON_MIN_TOUCH_TARGET_SIZE);
   if (!enabled) {
     diff = token - 2 * (token1 + token2);
   }
-  const tmp8 = callback(enabled, mobileVisualRefreshConfig.chatInputFloating, diff);
+  const tmp11 = callback(enabled, chatInputFloating, diff);
   const bound = Math.max(0, (token4 - diff) / 2);
   const items = [onPress];
   callback = importAllResult.useCallback(() => {
     onPress(undefined);
   }, items);
-  const obj6 = onPress(3869);
-  obj = { ref: importAllResult.useRef(null), style: items1 };
-  items1 = [tmp8.expressionButton, active.style];
-  let tmp13;
+  const obj6 = onPress(3893);
+  obj = { ref: importAllResult.useRef(null), style: items1, hitSlop: null, accessibilityRole: "button", accessibilityLabel: null, accessibilityState: null, onPress: null, children: null };
+  items1 = [tmp11.expressionButton, active.style];
+  let tmp16;
   if (bound > 0) {
-    tmp13 = bound;
+    tmp16 = bound;
   }
-  obj.hitSlop = tmp13;
-  obj.accessibilityRole = "button";
-  const intl = onPress(1212).intl;
-  obj.accessibilityLabel = intl.string(onPress(1212).t.iZ7Mz9);
-  obj = { expanded: flag };
-  obj.accessibilityState = obj;
-  obj.onPress = callback;
-  obj1 = { size: token3 };
+  obj[2] = tmp16;
+  const intl = tmp(1236).intl;
+  obj[4] = intl.string(onPress(1236).t.iZ7Mz9);
+  obj[5] = { expanded: flag };
+  obj[6] = callback;
+  obj = { size: token3, style: null, source: null };
   let expressionButtonIconPosition = !enabled;
-  if (expressionButtonIconPosition) {
-    expressionButtonIconPosition = tmp8.expressionButtonIconPosition;
+  if (!enabled) {
+    expressionButtonIconPosition = tmp11.expressionButtonIconPosition;
   }
-  const items2 = [expressionButtonIconPosition, tmp8.expressionButtonIconTint];
-  obj1.style = items2;
-  if (showKeyboardIcon) {
-    let tmp17 = 9852;
-  } else {
-    tmp17 = 6556;
-  }
-  obj1.source = importDefault(tmp17);
-  obj.children = jsx(onPress(1273).Icon, { size: token3 });
-  return jsx(onPress(4695).PressableOpacity, { expanded: flag });
+  const items2 = [expressionButtonIconPosition, tmp11.expressionButtonIconTint];
+  obj[1] = items2;
+  obj[2] = tmp4(showKeyboardIcon ? 9874 : 6577);
+  obj[7] = jsx(onPress(1297).Icon, { size: token3, style: null, source: null });
+  return jsx(onPress(4717).PressableOpacity, { size: token3, style: null, source: null });
 });
-const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/chat_input/native/accessories/ChatInputExpressionButton.tsx");
+const result = require("createCacheKey").fileFinishedImporting("modules/chat_input/native/accessories/ChatInputExpressionButton.tsx");
 
 export default memoResult;

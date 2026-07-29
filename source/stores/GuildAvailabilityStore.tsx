@@ -1,121 +1,77 @@
-// Module ID: 4504
-// Function ID: 39611
-// Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 1838, 3, 566, 686, 2]
+// Module ID: 4527
+// Function ID: 4528
+// Name: handleConnectionOpen
+// Dependencies: [1862, 3, 589, 709, 2]
 
-// Module 4504 (_isNativeReflectConstruct)
-import timestamp from "timestamp";
-import initialize from "initialize";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import importDefaultResult from "_getPrototypeOf";
-import set from "_possibleConstructorReturn";
+// Module 4527 (handleConnectionOpen)
+import createGuildRecordFromRust from "createGuildRecordFromRust";
+import { Store } from "initialize";
+import set from "initialize";
 
-function _isNativeReflectConstruct() {
-  let timestamp = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return timestamp;
-  }
-  const result = _isNativeReflectConstruct();
-}
 function handleConnectionOpen(unavailableGuilds) {
   const set = new Set(unavailableGuilds.unavailableGuilds);
   if (unavailableGuilds.unavailableGuilds.length > 0) {
     const _HermesInternal = HermesInternal;
-    importDefaultResult.warn("" + unavailableGuilds.unavailableGuilds.length + " guilds are unavailable on connection open: " + unavailableGuilds.unavailableGuilds);
+    tmp2.warn("" + unavailableGuilds.unavailableGuilds.length + " guilds are unavailable on connection open: " + unavailableGuilds.unavailableGuilds);
   }
 }
 function handleGuild(guild) {
   if (set.has(guild.guild.id)) {
     set.delete(guild.guild.id);
     const _HermesInternal = HermesInternal;
-    importDefaultResult.info("Guild has become available: " + guild.guild.id);
+    tmp2.info("Guild has become available: " + guild.guild.id);
   } else {
     return false;
   }
 }
-importDefaultResult = new importDefaultResult("GuildAvailabilityStore");
+let closure_1 = new require("dispatcher")("GuildAvailabilityStore");
 let set = new Set();
-let tmp5 = ((Store) => {
-  class GuildAvailabilityStore {
-    constructor() {
-      self = this;
-      tmp = GuildAvailabilityStore(this, GuildAvailabilityStore);
-      obj = outer1_3(GuildAvailabilityStore);
-      tmp2 = outer1_2;
-      if (outer1_8()) {
-        tmp6 = globalThis;
-        _Reflect = Reflect;
-        tmp7 = outer1_3;
-        tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, outer1_3(self).constructor);
-      } else {
-        tmp3 = arguments;
-        tmp4 = arguments;
-        constructResult = obj(...arguments);
-      }
-      return tmp2(self, constructResult);
-    }
+class GuildAvailabilityStore extends Store {
+}
+const prototype = GuildAvailabilityStore.prototype;
+prototype["initialize"] = function initialize() {
+  this.waitFor(createGuildRecordFromRust);
+};
+prototype["isUnavailable"] = function isUnavailable(guildId, arg1, selected) {
+  let hasItem = null != guildId;
+  if (hasItem) {
+    hasItem = set.has(guildId);
   }
-  callback2(GuildAvailabilityStore, Store);
-  let obj = {
-    key: "initialize",
-    value() {
-      this.waitFor(outer1_5);
-    }
-  };
-  const items = [obj, , , , ];
-  obj = {
-    key: "isUnavailable",
-    value(arg0) {
-      let hasItem = null != arg0;
-      if (hasItem) {
-        hasItem = outer1_7.has(arg0);
-      }
-      return hasItem;
-    }
-  };
-  items[1] = obj;
-  obj = {
-    key: "totalGuilds",
-    get() {
-      return outer1_5.getGuildCount() + outer1_7.size;
-    }
-  };
-  items[2] = obj;
-  items[3] = {
-    key: "totalUnavailableGuilds",
-    get() {
-      return outer1_7.size;
-    }
-  };
-  items[4] = {
-    key: "unavailableGuilds",
-    get() {
-      return Array.from(outer1_7);
-    }
-  };
-  return callback(GuildAvailabilityStore, items);
-})(require("initialize").Store);
-tmp5.displayName = "GuildAvailabilityStore";
-tmp5 = new tmp5(require("dispatcher"), {
+  return hasItem;
+};
+Object.defineProperty(prototype, "totalGuilds", {
+  get: function totalGuilds() {
+    return store.getGuildCount() + set.size;
+  },
+  set: undefined
+});
+Object.defineProperty(prototype, "totalUnavailableGuilds", {
+  get: function totalUnavailableGuilds() {
+    return set.size;
+  },
+  set: undefined
+});
+Object.defineProperty(prototype, "unavailableGuilds", {
+  get: function unavailableGuilds() {
+    return Array.from(set);
+  },
+  set: undefined
+});
+GuildAvailabilityStore.displayName = "GuildAvailabilityStore";
+const guildAvailabilityStore = new GuildAvailabilityStore(require("dispatcher"), {
   CONNECTION_OPEN: handleConnectionOpen,
   OVERLAY_INITIALIZE: handleConnectionOpen,
   GUILD_UNAVAILABLE: function handleGuildUnavailable(guildId) {
     if (set.has(guildId.guildId)) {
       return false;
     } else {
-      guild = guild.getGuild(guildId.guildId);
+      const guild = store.getGuild(guildId.guildId);
       let str = "???";
       if (tmp4) {
         str = guild.name;
       }
       const _HermesInternal = HermesInternal;
-      importDefaultResult.warn("Guild has gone unavailable: " + guildId.guildId + " (" + str + ")");
+      tmp2.warn("Guild has gone unavailable: " + guildId.guildId + " (" + str + ")");
       set.add(guildId.guildId);
     }
   },
@@ -134,6 +90,6 @@ tmp5 = new tmp5(require("dispatcher"), {
     }
   }
 });
-let result = set.fileFinishedImporting("stores/GuildAvailabilityStore.tsx");
+const result = set.fileFinishedImporting("stores/GuildAvailabilityStore.tsx");
 
-export default tmp5;
+export default guildAvailabilityStore;

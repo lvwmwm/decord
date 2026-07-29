@@ -1,56 +1,61 @@
-// Module ID: 12133
-// Function ID: 94899
+// Module ID: 12157
+// Function ID: 12158
 // Name: formatDurationNarrow
-// Dependencies: [31, 27, 33, 4165, 689, 1212, 12134, 4161, 2]
+// Dependencies: [19, 17, 21, 4189, 712, 1236, 12158, 4185, 2]
 // Exports: FieldText, formatDurationNarrow
 
-// Module 12133 (formatDurationNarrow)
-import "result";
+// Module 12157 (formatDurationNarrow)
+import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_2;
-let closure_3;
-let closure_4;
-let closure_5;
+let c3;
+let c4;
+let c5;
+let obj1;
 const require = arg1;
-({ Image: closure_2, View: closure_3 } = get_ActivityIndicator);
-({ jsx: closure_4, jsxs: closure_5 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { flexDirection: "row", alignItems: "center", gap: require("_createForOfIteratorHelperLoose").space.PX_4 };
-_createForOfIteratorHelperLoose.fieldTextRow = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.fieldIcon = { width: 16, height: 16 };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-const result = require("jsxProd").fileFinishedImporting("modules/user_profile/native/UserProfileApplicationWidgetFieldUtils.tsx");
+({ Image: obj1, View: c3 } = get_ActivityIndicator);
+({ jsx: c4, jsxs: c5 } = jsxProd);
+createCacheKey = { fieldTextRow: null, fieldIcon: null };
+createCacheKey = { flexDirection: "row", alignItems: "center", gap: require("Themes").space.PX_4 };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { width: 16, height: 16 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let result = require("jsxProd").fileFinishedImporting("modules/user_profile/native/UserProfileApplicationWidgetFieldUtils.tsx");
 
 export const formatDurationNarrow = function formatDurationNarrow(arg0) {
-  let hours;
-  let minutes;
-  let seconds;
   let num = 0;
   if (Number.isFinite(arg0)) {
     const _Math = Math;
     const _Math2 = Math;
     num = Math.max(0, Math.floor(arg0));
   }
-  let obj = { hours: Math.floor(num / 3600000), minutes: Math.floor(num / 60000) % 60, seconds: Math.floor(num / 1000) % 60 };
-  ({ hours, minutes, seconds } = obj);
+  const rounded = Math.floor(num / 3600000);
+  const result = Math.floor(num / 60000) % 60;
+  const result1 = Math.floor(num / 1000) % 60;
   const items = [];
-  if (hours > 0) {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    obj = { hours };
-    items.push(intl.formatToPlainString(require(1212) /* getSystemLocale */.t.rhY1Rs, obj));
+  if (rounded > 0) {
+    const intl = require(1236) /* getSystemLocale */.intl;
+    let obj = { hours: null };
+    obj[0] = rounded;
+    items.push(intl.formatToPlainString(require(1236) /* getSystemLocale */.t.rhY1Rs, obj));
   }
-  if (minutes > 0) {
-    const intl2 = require(1212) /* getSystemLocale */.intl;
-    obj = { minutes };
-    items.push(intl2.formatToPlainString(require(1212) /* getSystemLocale */.t["XIGt+W"], obj));
+  if (0 < result) {
+    const intl2 = require(1236) /* getSystemLocale */.intl;
+    obj = { minutes: null };
+    obj[0] = result;
+    items.push(intl2.formatToPlainString(require(1236) /* getSystemLocale */.t["XIGt+W"], obj));
   }
-  if (tmp7) {
-    const intl3 = require(1212) /* getSystemLocale */.intl;
-    const obj1 = { seconds };
-    items.push(intl3.formatToPlainString(require(1212) /* getSystemLocale */.t.pyvjRp, obj1));
+  let tmp10 = result1 > 0;
+  if (0 >= result1) {
+    tmp10 = 0 === items.length;
+  }
+  if (tmp10) {
+    const intl3 = require(1236) /* getSystemLocale */.intl;
+    obj = { seconds: null };
+    obj[0] = result1;
+    items.push(intl3.formatToPlainString(require(1236) /* getSystemLocale */.t.pyvjRp, obj));
   }
   return items.join(" ");
 };
@@ -61,29 +66,36 @@ export const FieldText = function FieldText(arg0) {
   let variant;
   ({ field, variant } = arg0);
   ({ color, skeletonWidthChars } = arg0);
-  const tmp = _createForOfIteratorHelperLoose();
+  const tmp = createCacheKey();
   if ("hidden" === field.status) {
     return null;
   } else if ("skeleton" === field.status) {
-    let obj = { variant, widthChars: skeletonWidthChars };
-    let tmp10Result = callback(require(12134) /* ImageSkeleton */.TextSkeleton, obj);
+    let obj = { variant: null, widthChars: null };
+    obj[0] = variant;
+    obj[1] = skeletonWidthChars;
+    let tmp9Result = callback(require(12158) /* ImageSkeleton */.TextSkeleton, obj);
   } else {
-    obj = { style: tmp.fieldTextRow };
-    const obj1 = { variant, color, lineClamp: 2, children: field.text };
-    const items = [callback(require(4161) /* Text */.Text, obj1), ];
-    let tmp4 = null != field.icon;
-    if (tmp4) {
-      obj = {};
-      const obj2 = { uri: field.icon.url };
-      obj.source = obj2;
-      obj.style = tmp.fieldIcon;
-      obj.resizeMode = "contain";
-      tmp4 = callback(closure_2, obj);
+    obj = { style: null, children: null };
+    obj[0] = tmp.fieldTextRow;
+    const obj1 = { variant: null, color: null, lineClamp: 2, children: null };
+    obj1[0] = variant;
+    obj1[1] = color;
+    obj1[3] = field.text;
+    const items = [callback(require(4185) /* Text */.Text, obj1), ];
+    let tmp11Result = null != field.icon;
+    if (tmp11Result) {
+      obj = { source: null, style: null, resizeMode: "contain" };
+      const obj2 = { uri: null };
+      obj2[0] = field.icon.url;
+      obj[0] = obj2;
+      obj[1] = tmp.fieldIcon;
+      tmp11Result = tmp11(closure_2, obj);
     }
-    items[1] = tmp4;
-    obj.children = items;
-    tmp10Result = closure_5(closure_3, obj);
-    const tmp10 = closure_5;
-    const tmp11 = closure_3;
+    items[1] = tmp11Result;
+    obj[1] = items;
+    tmp9Result = closure_5(closure_3, obj);
+    const tmp10 = closure_3;
+    tmp11 = callback;
+    const tmp9 = closure_5;
   }
 };

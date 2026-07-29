@@ -1,36 +1,29 @@
-// Module ID: 16665
-// Function ID: 129843
-// Name: _isNativeReflectConstruct
-// Dependencies: [7, 6, 15, 17, 18, 16666, 5112, 2]
+// Module ID: 16701
+// Function ID: 16702
+// Name: handleConnectionOpenSupplemental
+// Dependencies: [16702, 5134, 2]
 
-// Module 16665 (_isNativeReflectConstruct)
-import set from "set";
-import AutomaticLifecycleManager from "AutomaticLifecycleManager";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
-import tmp2 from "AutomaticLifecycleManager";
+// Module 16701 (handleConnectionOpenSupplemental)
+import "initialize";
 
 const require = arg1;
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
-  }
-  const result = _isNativeReflectConstruct();
-}
 function handleConnectionOpenSupplemental() {
-  require(16666) /* _openSafetyFlow */.openSafetyFlow();
+  require(16702) /* _openSafetyFlow */.openSafetyFlow();
 }
 function handleSafetyFlowsModalOpen() {
-  require(16666) /* _openSafetyFlow */.openSafetyFlow();
+  require(16702) /* _openSafetyFlow */.openSafetyFlow();
 }
 function handleUserRequiredActionUpdate(requiredAction) {
-  require(16666) /* _openSafetyFlow */.openSafetyFlow({ requiredAction: requiredAction.requiredAction });
+  require(16702) /* _openSafetyFlow */.openSafetyFlow({ requiredAction: requiredAction.requiredAction });
 }
-tmp2 = new tmp2();
-let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/safety_flows/SafetyFlowsManager.tsx");
+let prototype = function SafetyFlowsManager() {
+  const applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
+  applyArgumentsResult.actions = { CONNECTION_OPEN_SUPPLEMENTAL: handleConnectionOpenSupplemental, SAFETY_FLOWS_MODAL_OPEN: handleSafetyFlowsModalOpen, USER_REQUIRED_ACTION_UPDATE: handleUserRequiredActionUpdate };
+  return applyArgumentsResult;
+}.prototype;
+class prototype extends tmp2 {
+}
+prototype = new prototype();
+const result = require("set").fileFinishedImporting("modules/safety_flows/SafetyFlowsManager.tsx");
 
-export default tmp2;
+export default prototype;

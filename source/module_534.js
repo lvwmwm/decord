@@ -1,7 +1,26 @@
 // Module ID: 534
-// Function ID: 6648
+// Function ID: 535
 // Dependencies: []
 
 // Module 534
+const re1 = /%20/g;
 
-export default Function.prototype.apply;
+export default {
+  default: "RFC3986",
+  formatters: {
+    RFC1738(arg0) {
+      const call = replace.call;
+      if (typeof call === "unknown") {
+        let callResult = replace(tmp2, "+");
+      } else {
+        callResult = call(arg0, tmp2, "+");
+      }
+      return callResult;
+    },
+    RFC3986(arg0) {
+      return String(arg0);
+    }
+  },
+  RFC1738: "RFC1738",
+  RFC3986: "RFC3986"
+};

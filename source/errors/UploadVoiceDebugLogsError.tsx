@@ -1,50 +1,41 @@
-// Module ID: 4071
-// Function ID: 33711
-// Name: UploadVoiceDebugLogsError
-// Dependencies: [6, 7, 1212, 2]
+// Module ID: 4095
+// Function ID: 4096
+// Name: displayMessage
+// Dependencies: [1236, 2]
 
-// Module 4071 (UploadVoiceDebugLogsError)
-import _classCallCheck from "_classCallCheck";
-import _defineProperties from "_defineProperties";
-
-const require = arg1;
-const obj = { GENERAL: 0, [0]: "GENERAL", NO_FILE: 1, [1]: "NO_FILE", PROGRESS: 2, [2]: "PROGRESS", UPLOAD: 3, [3]: "UPLOAD", READ: 4, [4]: "READ" };
-const tmp2 = (() => {
-  class UploadVoiceDebugLogsError {
-    constructor(arg0) {
-      tmp = outer1_2(this, UploadVoiceDebugLogsError);
-      this.code = arg0;
-      return;
-    }
+// Module 4095 (displayMessage)
+let obj = { GENERAL: 0, [0]: "GENERAL", NO_FILE: 1, [1]: "NO_FILE", PROGRESS: 2, [2]: "PROGRESS", UPLOAD: 3, [3]: "UPLOAD", READ: 4, [4]: "READ" };
+class UploadVoiceDebugLogsError {
+  constructor(arg0) {
+    obj = Object.create(new.target.prototype);
+    obj.code = global;
+    return obj;
   }
-  const items = [
-    {
-      key: "displayMessage",
-      get() {
-        const code = this.code;
-        if (outer1_4.NO_FILE === code) {
-          const intl5 = UploadVoiceDebugLogsError(outer1_1[2]).intl;
-          return intl5.string(UploadVoiceDebugLogsError(outer1_1[2]).t.dDMp2Z);
-        } else if (outer1_4.PROGRESS === code) {
-          const intl4 = UploadVoiceDebugLogsError(outer1_1[2]).intl;
-          return intl4.string(UploadVoiceDebugLogsError(outer1_1[2]).t.XBxyvo);
-        } else if (outer1_4.UPLOAD === code) {
-          const intl3 = UploadVoiceDebugLogsError(outer1_1[2]).intl;
-          return intl3.string(UploadVoiceDebugLogsError(outer1_1[2]).t["6b6rwk"]);
-        } else if (outer1_4.READ === code) {
-          const intl2 = UploadVoiceDebugLogsError(outer1_1[2]).intl;
-          return intl2.string(UploadVoiceDebugLogsError(outer1_1[2]).t.VUc3ti);
-        } else {
-          const GENERAL = outer1_4.GENERAL;
-          const intl = UploadVoiceDebugLogsError(outer1_1[2]).intl;
-          return intl.string(UploadVoiceDebugLogsError(outer1_1[2]).t.VzHcSm);
-        }
-      }
+}
+Object.defineProperty(UploadVoiceDebugLogsError.prototype, "displayMessage", {
+  get: function displayMessage() {
+    const code = this.code;
+    if (obj.NO_FILE === code) {
+      const intl5 = require(1236) /* getSystemLocale */.intl;
+      return intl5.string(require(1236) /* getSystemLocale */.t.dDMp2Z);
+    } else if (tmp.PROGRESS === code) {
+      const intl4 = require(1236) /* getSystemLocale */.intl;
+      return intl4.string(require(1236) /* getSystemLocale */.t.XBxyvo);
+    } else if (tmp.UPLOAD === code) {
+      const intl3 = require(1236) /* getSystemLocale */.intl;
+      return intl3.string(require(1236) /* getSystemLocale */.t["6b6rwk"]);
+    } else if (tmp.READ === code) {
+      const intl2 = require(1236) /* getSystemLocale */.intl;
+      return intl2.string(require(1236) /* getSystemLocale */.t.VUc3ti);
+    } else {
+      const GENERAL = tmp.GENERAL;
+      const intl = require(1236) /* getSystemLocale */.intl;
+      return intl.string(require(1236) /* getSystemLocale */.t.VzHcSm);
     }
-  ];
-  return callback(UploadVoiceDebugLogsError, items);
-})();
-const result = require("getSystemLocale").fileFinishedImporting("errors/UploadVoiceDebugLogsError.tsx");
+  },
+  set: undefined
+});
+const result = require("set").fileFinishedImporting("errors/UploadVoiceDebugLogsError.tsx");
 
-export default tmp2;
+export default UploadVoiceDebugLogsError;
 export const UploadErrorCodes = obj;

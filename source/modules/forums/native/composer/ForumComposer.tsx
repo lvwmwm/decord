@@ -1,156 +1,83 @@
-// Module ID: 9546
-// Function ID: 74305
-// Name: _createForOfIteratorHelperLoose
-// Dependencies: [5, 57, 31, 27, 1278, 4503, 1918, 3793, 1907, 5952, 4502, 1850, 653, 1355, 1345, 1314, 1211, 482, 33, 4165, 689, 5497, 566, 4011, 4031, 6164, 4355, 9109, 5948, 6033, 4004, 5193, 4026, 6070, 4173, 5695, 22, 9111, 7663, 9547, 9548, 4506, 1212, 9549, 9551, 477, 9552, 9553, 9556, 1334, 9557, 1935, 9558, 9559, 7611, 1273, 6166, 1555, 1454, 8975, 8335, 9562, 4161, 9563, 9635, 9642, 9643, 6632, 9644, 9646, 6731, 9851, 4679, 9650, 6060, 4133, 9853, 6555, 4578, 4664, 2]
+// Module ID: 9570
+// Function ID: 9571
+// Name: Tags
+// Dependencies: [5, 32, 19, 17, 4181, 1302, 4526, 1942, 3817, 1931, 5971, 4525, 1874, 676, 1379, 1369, 1338, 1235, 505, 21, 4189, 712, 5515, 589, 4035, 4055, 6182, 4380, 9133, 5967, 6051, 4028, 5215, 4050, 6088, 4197, 5713, 12, 9135, 7686, 9571, 9572, 4529, 1236, 9573, 9575, 500, 9576, 9577, 9580, 1358, 9581, 1959, 9582, 9583, 7634, 1297, 6184, 1579, 1478, 8999, 8359, 9586, 4185, 9587, 9657, 9664, 9665, 6653, 9666, 9668, 6752, 9873, 4701, 9672, 6078, 4157, 9875, 6576, 4600, 4686, 2]
 // Exports: default
 
-// Module 9546 (_createForOfIteratorHelperLoose)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import KeyboardTypes from "KeyboardTypes";
+// Module 9570 (Tags)
+import handleThemeChange from "handleThemeChange";
 import useSafeAreaInsetsKeyboardAware from "useSafeAreaInsetsKeyboardAware";
-import get_ActivityIndicator from "sortForumPostReactionsByPopularityDesc";
-import closure_10 from "_isNativeReflectConstruct";
-import closure_11 from "_isNativeReflectConstruct";
-import { DraftType } from "_isNativeReflectConstruct";
-import closure_13 from "_isNativeReflectConstruct";
-import closure_14 from "_isNativeReflectConstruct";
-import closure_15 from "_isNativeReflectConstruct";
-import closure_16 from "_isNativeReflectConstruct";
-import { SlowmodeType } from "_isNativeReflectConstruct";
-import closure_18 from "_isNativeReflectConstruct";
-import closure_19 from "_isNativeReflectConstruct";
+import closure_5 from "jsxProd";
+import get_ActivityIndicator from "AbortCodes";
+import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
+import closure_11 from "handleThemeChange";
+import handleChanged from "handleChanged";
+import { DraftType } from "handleChanged";
+import trackCommunicationDisabled from "trackCommunicationDisabled";
+import getUncachedChannelPermissions from "getUncachedChannelPermissions";
+import handleConnectionOpen from "handleConnectionOpen";
+import setCooldown from "setCooldown";
+import { SlowmodeType } from "setCooldown";
+import map from "map";
+import mergeGuildAvatar from "mergeGuildAvatar";
 import ME from "ME";
 import { ChannelFlags } from "set";
 import { ContentDismissActionType } from "ContentDismissActionType";
 import { ExpressionPickerViewType } from "ExpressionPickerViewType";
-import { OpenThreadAnalyticsLocations as closure_26 } from "AbortCodes";
+import { OpenThreadAnalyticsLocations as closure_27 } from "AbortCodes";
 import sum from "sum";
-import jsxProd from "dispatcher";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import jsxProd from "Themes";
+import createCacheKey from "createCacheKey";
 
+let Fonts;
 let StyleSheet;
-let closure_20;
+let c9;
 let closure_21;
 let closure_22;
+let closure_23;
 let closure_28;
 let closure_29;
 let closure_30;
+let closure_31;
 let closure_6;
-let closure_7;
-let closure_8;
-let closure_9;
+let error;
+let metroImportAll;
 const require = arg1;
-function _createForOfIteratorHelperLoose(iterable) {
-  let closure_0 = iterable;
-  iterable = "undefined" !== typeof Symbol;
-  if (iterable) {
-    const _Symbol = Symbol;
-    iterable = iterable[Symbol.iterator];
-  }
-  if (!iterable) {
-    iterable = iterable[Symbol.iterator];
-  }
-  if (iterable) {
-    const iter = iterable.call(iterable);
-    const next = iter.next;
-    return next.bind(iter);
-  } else {
-    const _Array = Array;
-    let tmp = iterable;
-    if (!Array.isArray(iterable)) {
-      let tmp2;
-      if (iterable) {
-        if ("string" === typeof iterable) {
-          tmp2 = _arrayLikeToArray(iterable, undefined);
-        } else {
-          const toString = {}.toString;
-          const substr = toString.call(iterable).slice(8, -1);
-          let name = substr;
-          if (tmp3) {
-            name = iterable.constructor.name;
-          }
-          if ("Map" !== name) {
-            if ("Set" !== name) {
-              if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(iterable, undefined);
-              } else {
-                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
-              }
-            }
-            tmp2 = arr;
-          }
-          const _Array2 = Array;
-          arr = Array.from(iterable);
-          const callResult = toString.call(iterable);
-          tmp3 = "Object" === substr && iterable.constructor;
-        }
-      }
-      tmp = tmp2;
-      if (!tmp2) {
-        const _TypeError = TypeError;
-        const typeError = new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
-        throw typeError;
-      }
-    }
-    if (tmp) {
-      closure_0 = tmp;
-    }
-    let c1 = 0;
-    return () => {
-      if (closure_1 >= length.length) {
-        let obj = { done: true };
-      } else {
-        obj = { done: false };
-        closure_1 = tmp3 + 1;
-        obj.value = length[+closure_1];
-      }
-      return obj;
-    };
-  }
-}
-function _arrayLikeToArray(arg0, arg1) {
-  let length;
-  if (tmp) {
-    length = arg0.length;
-  }
-  const ArrayResult = Array(length);
-  for (let num = 0; num < length; num = num + 1) {
-    ArrayResult[num] = arg0[num];
-  }
-  return ArrayResult;
-}
 function Tags(tags) {
   tags = tags.tags;
-  const tmp = _createForOfIteratorHelperLoose();
+  const tmp = createCacheKey();
   let tmp2 = null;
   if (0 !== tags.length) {
-    let obj = { style: tmp.tags };
-    obj = { size: "sm", style: tmp.tagIcon };
+    let obj = { style: null, children: null };
+    obj[0] = tmp.tags;
+    obj = { size: "sm", style: null };
+    obj[1] = tmp.tagIcon;
     let items = [
-      callback(require(6632) /* TagIcon */.TagIcon, obj),
+      callback(require(6653) /* TagIcon */.TagIcon, obj),
       tags.map((id) => {
-          let obj = {};
           let tmp2 = 0 !== arg1;
           if (tmp2) {
-            obj = {};
-            obj = { width: 4 };
-            obj.style = obj;
-            tmp2 = outer1_28(outer1_9, obj);
+            let obj = { style: null };
+            obj[0] = { width: 4 };
+            tmp2 = callback2(closure_9, obj);
           }
-          const items = [tmp2, outer1_28(outer1_0(outer1_2[68]).AppliedForumTagPill, { tag: id })];
-          obj.children = items;
-          return outer1_29(outer1_5.Fragment, obj, id.id);
+          obj = { children: null };
+          const items = [tmp2, ];
+          obj = { tag: id };
+          items[1] = callback2(callback(table[69]).AppliedForumTagPill, obj);
+          obj[0] = items;
+          return closure_30(React.Fragment, obj, id.id);
         })
     ];
-    obj.children = items;
+    obj[1] = items;
     tmp2 = callback2(closure_9, obj);
   }
   return tmp2;
 }
 function ActionBar(channel) {
   let canPost;
-  let KeyboardTypes;
   let useSafeAreaInsetsKeyboardAware;
+  let closure_5;
   let dependencyMap;
   let importDefault;
   let isEdit;
@@ -160,230 +87,239 @@ function ActionBar(channel) {
   let submitting;
   channel = channel.channel;
   ({ tags: importDefault, onTagsSave: dependencyMap, canPost } = channel);
-  ({ submitting, onSubmit: KeyboardTypes, focusLastInput: useSafeAreaInsetsKeyboardAware, isEdit } = channel);
+  ({ submitting, onSubmit: useSafeAreaInsetsKeyboardAware, focusLastInput: closure_5, isEdit } = channel);
   let c7;
-  function maybeFocus() {
-    let tmp = c7 !== channel(outer1_2[57]).KeyboardTypes.SYSTEM;
-    if (tmp) {
-      tmp = c7 !== channel(outer1_2[57]).KeyboardTypes.EXPRESSION;
-    }
-    if (!tmp) {
-      callback2();
-    }
-  }
+  let c8;
   ({ onShowExpressionPicker, lastInput, onLayout } = channel);
-  let tmp = _createForOfIteratorHelperLoose();
-  let obj = channel(566);
-  const items = [closure_18];
-  const stateFromStores = obj.useStateFromStores(items, () => outer1_18.getUploads(channel.id, outer1_12.ChannelMessage));
-  let obj1 = channel(566);
-  const items1 = [closure_14];
+  const tmp = createCacheKey();
+  let obj = channel(589);
+  const items = [map];
+  const stateFromStores = obj.useStateFromStores(items, () => outer1_19.getUploads(channel.id, outer1_13.ChannelMessage));
+  let obj1 = channel(589);
+  const items1 = [getUncachedChannelPermissions];
   const stateFromStores1 = obj1.useStateFromStores(items1, () => {
     let canResult = !isEdit;
-    if (canResult) {
-      canResult = outer1_14.can(outer1_22.ATTACH_FILES, channel);
+    if (!isEdit) {
+      canResult = outer1_15.can(outer1_23.ATTACH_FILES, channel);
     }
     return canResult;
   });
-  const tmp3 = importDefault(4031)();
-  c7 = tmp3;
-  const isMediaChannelResult = channel.isMediaChannel();
-  const tmp5 = tmp3 === channel(1555).KeyboardTypes.MEDIA;
-  let closure_8 = tmp5;
-  let tmp6 = isMediaChannelResult;
+  const tmp6 = importDefault(4055)();
+  c7 = tmp6;
+  let isMediaChannelResult = channel.isMediaChannel();
+  const tmp8 = tmp6 === channel(1579).KeyboardTypes.MEDIA;
+  c8 = tmp8;
   if (!isMediaChannelResult) {
-    let tmp7 = stateFromStores1;
+    let tmp9 = stateFromStores1;
     if (stateFromStores1) {
-      tmp7 = stateFromStores.length > 0;
+      tmp9 = stateFromStores.length > 0;
     }
-    tmp6 = tmp7;
+    isMediaChannelResult = tmp9;
   }
-  let tmp8 = null != channel.availableTags;
-  if (tmp8) {
+  let tmp10 = null != channel.availableTags;
+  if (tmp10) {
     const availableTags = channel.availableTags;
     let length;
-    if (null != availableTags) {
+    if (availableTags != null) {
       length = availableTags.length;
     }
-    tmp8 = length > 0;
+    tmp10 = length > 0;
   }
-  obj = { onLayout, style: items2 };
-  items2 = [tmp.actionsContainer, { marginBottom: importDefault(5193)({ includeKeyboardHeight: true }).insets.bottom }];
-  if (tmp6) {
-    obj = { attachments: stateFromStores, channelId: channel.id, highlightThumbnails: true };
-    tmp6 = callback(importDefault(9646), obj);
+  obj = { onLayout, style: items2, children: null };
+  items2 = [tmp.actionsContainer, { marginBottom: importDefault(5215)({ includeKeyboardHeight: true }).insets.bottom }];
+  if (isMediaChannelResult) {
+    obj = { attachments: null, channelId: null, highlightThumbnails: true };
+    obj[0] = stateFromStores;
+    obj[1] = channel.id;
+    isMediaChannelResult = callback(tmp5(9668), obj);
   }
-  const items3 = [tmp6, ];
-  obj1 = { style: tmp.actions };
+  const items3 = [isMediaChannelResult, ];
+  obj1 = { style: tmp.actions, children: null };
   if (!stateFromStores1) {
     const items4 = [stateFromStores1, , , ];
-    if (tmp8) {
-      const obj2 = {};
-      const intl2 = channel(1212).intl;
-      obj2.accessibilityLabel = intl2.string(channel(1212).t["112vVE"]);
+    if (tmp10) {
+      const obj2 = { accessibilityLabel: null, style: null, IconComponent: null, onPress: null, foregroundRipple: true };
+      const intl2 = tmp2(1236).intl;
+      obj2[0] = intl2.string(tmp2(1236).t["112vVE"]);
       const items5 = [, ];
       ({ actionButton: arr9[0], mediaButton: arr9[1] } = tmp);
-      obj2.style = items5;
-      obj2.IconComponent = channel(6632).TagIcon;
-      obj2.onPress = function onPress() {
+      obj2[1] = items5;
+      obj2[2] = tmp2(6653).TagIcon;
+      obj2[3] = function onPress() {
         isEdit.dismiss();
-        let obj = outer1_1(outer1_2[75]);
+        let obj = outer1_1(outer1_2[76]);
         obj = {
           parentChannel: channel,
           onSave(arg0) {
-            outer1_2(arg0);
-            outer1_9();
+            callback(arg0);
+            if (!tmp5) {
+              callback2();
+            }
+          },
+          title: null,
+          tags: null,
+          onClose: null
+        };
+        const intl = channel(outer1_2[43]).intl;
+        obj[2] = intl.string(channel(outer1_2[43]).t.HPu3kq);
+        obj[3] = closure_1;
+        obj[4] = function onClose() {
+          if (!tmp4) {
+            callback2();
           }
         };
-        const intl = channel(outer1_2[42]).intl;
-        obj.title = intl.string(channel(outer1_2[42]).t.HPu3kq);
-        obj.tags = closure_1;
-        obj.onClose = function onClose() {
-          outer1_9();
-        };
-        obj.openLazy(channel(outer1_2[51])(outer1_2[76], outer1_2.paths), "ForumPostTagsActionSheet", obj);
+        obj.openLazy(channel(outer1_2[52])(outer1_2[77], outer1_2.paths), "ForumPostTagsActionSheet", obj);
       };
-      obj2.foregroundRipple = true;
-      tmp8 = callback(channel(6731).HeaderActionButton, obj2);
+      tmp10 = callback(tmp2(6752).HeaderActionButton, obj2);
     }
-    items4[1] = tmp8;
-    let tmp28 = lastInput === channel(9551).PostComposerInputs.CONTENT;
-    if (tmp28) {
-      const obj3 = {};
-      const intl3 = channel(1212).intl;
-      obj3.accessibilityLabel = intl3.string(channel(1212).t.iZ7Mz9);
-      obj3.style = tmp.actionButton;
-      obj3.IconComponent = channel(6555).ReactionIcon;
-      obj3.onPress = onShowExpressionPicker;
-      obj3.foregroundRipple = true;
-      tmp28 = callback(channel(6731).HeaderActionButton, obj3);
+    items4[1] = tmp10;
+    let tmp18 = lastInput === tmp2(9575).PostComposerInputs.CONTENT;
+    if (tmp18) {
+      const obj3 = { accessibilityLabel: null, style: null, IconComponent: null, onPress: null, foregroundRipple: true };
+      const intl3 = tmp2(1236).intl;
+      obj3[0] = intl3.string(tmp2(1236).t.iZ7Mz9);
+      obj3[1] = tmp.actionButton;
+      obj3[2] = tmp2(6576).ReactionIcon;
+      obj3[3] = onShowExpressionPicker;
+      tmp18 = callback(tmp2(6752).HeaderActionButton, obj3);
     }
-    items4[2] = tmp28;
-    const obj4 = { style: tmp.postButtonWrapper };
-    const obj5 = {};
-    const intl4 = channel(1212).intl;
+    items4[2] = tmp18;
+    const obj4 = { style: null, children: null };
+    obj4[0] = tmp.postButtonWrapper;
+    const intl4 = tmp2(1236).intl;
     const string = intl4.string;
-    const t = channel(1212).t;
+    const t = tmp2(1236).t;
     if (isEdit) {
       let stringResult = string(t["R3BPH+"]);
     } else {
       stringResult = string(t.pIuQI6);
     }
-    obj5.text = stringResult;
-    obj5.loading = submitting;
+    const obj5 = { text: null, loading: null, disabled: null, icon: null, onPress: null };
+    obj5[0] = stringResult;
+    obj5[1] = submitting;
     if (!submitting) {
       submitting = !canPost;
     }
-    obj5.disabled = submitting;
-    const obj6 = { size: "sm", color: importDefault(689).colors.WHITE };
-    obj5.icon = callback(channel(4664).ChatIcon, obj6);
-    obj5.onPress = function onPress() {
+    obj5[2] = submitting;
+    const obj6 = { size: "sm", color: null };
+    obj6[1] = tmp5(712).colors.WHITE;
+    obj5[3] = callback(tmp2(4686).ChatIcon, obj6);
+    obj5[4] = function onPress() {
       if (canPost) {
         callback({});
       }
     };
-    obj4.children = callback(channel(4578).Button, obj5);
-    items4[3] = callback(maybeFocus, obj4);
-    obj1.children = items4;
-    items3[1] = tmp15(tmp16, obj1);
-    obj.children = items3;
-    return closure_29(maybeFocus, obj);
+    obj4[1] = callback(tmp2(4600).Button, obj5);
+    items4[3] = callback(tmp13, obj4);
+    obj1[1] = items4;
+    items3[1] = tmp12(tmp13, obj1);
+    obj[2] = items3;
+    return tmp12(tmp13, obj);
   } else {
-    const obj7 = {};
-    let intl = channel(1212).intl;
-    obj7.accessibilityLabel = intl.string(channel(1212).t.aDZSuz);
+    const obj7 = { accessibilityLabel: null, style: null, IconComponent: null, onPress: null, foregroundRipple: true };
+    let intl = tmp2(1236).intl;
+    obj7[0] = intl.string(tmp2(1236).t.aDZSuz);
     const items6 = [, ];
     ({ actionButton: arr7[0], mediaButton: arr7[1] } = tmp);
-    obj7.style = items6;
-    if (tmp5) {
-      let ImageIcon = tmp20(9851).KeyboardIcon;
+    obj7[1] = items6;
+    if (tmp8) {
+      let ImageIcon = tmp2(9873).KeyboardIcon;
     } else {
-      ImageIcon = tmp20(4679).ImageIcon;
+      ImageIcon = tmp2(4701).ImageIcon;
     }
-    obj7.IconComponent = ImageIcon;
-    obj7.onPress = function onPress() {
-      if (closure_8) {
+    obj7[2] = ImageIcon;
+    obj7[3] = function onPress() {
+      if (c8) {
         callback2();
       } else {
-        const result = channel(outer1_2[73]).showSimpleMediaKeyboard(channel);
+        const result = channel(outer1_2[74]).showSimpleMediaKeyboard(channel);
         isEdit.dismiss();
-        const obj = channel(outer1_2[73]);
+        const obj = channel(outer1_2[74]);
       }
-      const result1 = channel(outer1_2[74]).trackForumChannelMediaUploaderClicked({ isMobile: true });
+      const result1 = channel(outer1_2[75]).trackForumChannelMediaUploaderClicked({ isMobile: true });
     };
-    obj7.foregroundRipple = true;
-    callback(channel(6731).HeaderActionButton, obj7);
-    const tmp17 = callback;
+    callback(tmp2(6752).HeaderActionButton, obj7);
+    const tmp15 = callback;
   }
 }
-({ Keyboard: closure_6, Pressable: closure_7, StyleSheet, Text: closure_8, View: closure_9 } = get_ActivityIndicator);
-({ AbortCodes: closure_20, MAX_CHANNEL_NAME_LENGTH: closure_21, Permissions: closure_22 } = ME);
-const NOOP = sum.NOOP;
-({ jsx: closure_28, jsxs: closure_29, Fragment: closure_30 } = jsxProd);
-const re31 = /(#"[^"]*"|[@#]\S+|:[\w+-]+:)/g;
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { flex: 1, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW, position: "relative" };
-_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.scrollViewContentContainer = { paddingBottom: 16 };
-_createForOfIteratorHelperLoose.avatarContainer = { height: 40 };
-_createForOfIteratorHelperLoose.avatar = { marginRight: 12 };
-_createForOfIteratorHelperLoose.titleInput = { padding: 8 };
-let obj1 = { minHeight: 40, height: "auto", fontFamily: sum.Fonts.DISPLAY_SEMIBOLD, color: require("_createForOfIteratorHelperLoose").colors.MOBILE_TEXT_HEADING_PRIMARY };
-_createForOfIteratorHelperLoose.titleInputText = obj1;
-let obj2 = { width: "100%", height: "100%", padding: 0, lineHeight: 20, color: require("_createForOfIteratorHelperLoose").colors.MOBILE_TEXT_HEADING_PRIMARY, textAlignVertical: "top" };
-_createForOfIteratorHelperLoose.contentInput = obj2;
-_createForOfIteratorHelperLoose.mentionText = { color: require("_createForOfIteratorHelperLoose").unsafe_rawColors.BRAND_500 };
-_createForOfIteratorHelperLoose.postButtonWrapper = { marginLeft: "auto" };
-_createForOfIteratorHelperLoose.tags = { flexDirection: "row", alignItems: "center", padding: 8 };
-_createForOfIteratorHelperLoose.tagIcon = { marginRight: 8 };
-_createForOfIteratorHelperLoose.editor = { flex: 1, flexDirection: "row", paddingHorizontal: 12, paddingTop: 8 };
-_createForOfIteratorHelperLoose.editorBody = { width: "100%", flex: 1, flexDirection: "column", minHeight: 200 };
-_createForOfIteratorHelperLoose.usernameToChannel = { flex: 1, flexDirection: "row", alignItems: "flex-end" };
-_createForOfIteratorHelperLoose.channelName = { lineHeight: 20, flex: 1 };
+({ Keyboard: closure_6, Pressable: error, StyleSheet, Text: metroImportAll, View: c9 } = get_ActivityIndicator);
+({ AbortCodes: closure_21, MAX_CHANNEL_NAME_LENGTH: closure_22, Permissions: closure_23 } = ME);
+({ NOOP: closure_28, Fonts } = sum);
+({ jsx: closure_29, jsxs: closure_30, Fragment: closure_31 } = jsxProd);
+const re32 = /(#"[^"]*"|[@#]\S+|:[\w+-]+:)/g;
+createCacheKey = { container: null, scrollViewContentContainer: null, avatarContainer: null, avatar: null, titleInput: null, titleInputText: null, contentInput: null, mentionText: null, postButtonWrapper: null, tags: null, tagIcon: null, editor: null, editorBody: null, usernameToChannel: null, channelName: null, actionsContainer: null, actions: null, actionButton: null, mediaButton: null, horizontalAutocomplete: null, nameError: null, messageError: null };
+createCacheKey = { flex: 1, backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW, position: "relative" };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { paddingBottom: 16 };
+createCacheKey[2] = { height: 40 };
+createCacheKey[3] = { marginRight: 12 };
+createCacheKey[4] = { padding: 8 };
+createCacheKey[5] = { minHeight: 40, height: "auto", fontFamily: Fonts.DISPLAY_SEMIBOLD, color: require("Themes").colors.MOBILE_TEXT_HEADING_PRIMARY };
+let obj1 = { minHeight: 40, height: "auto", fontFamily: Fonts.DISPLAY_SEMIBOLD, color: require("Themes").colors.MOBILE_TEXT_HEADING_PRIMARY };
+createCacheKey[6] = { width: "100%", height: "100%", padding: 0, lineHeight: 20, color: require("Themes").colors.MOBILE_TEXT_HEADING_PRIMARY, textAlignVertical: "top" };
+let obj2 = { width: "100%", height: "100%", padding: 0, lineHeight: 20, color: require("Themes").colors.MOBILE_TEXT_HEADING_PRIMARY, textAlignVertical: "top" };
+createCacheKey[7] = { color: require("Themes").unsafe_rawColors.BRAND_500 };
+createCacheKey[8] = { marginLeft: "auto" };
+createCacheKey[9] = { flexDirection: "row", alignItems: "center", padding: 8 };
+createCacheKey[10] = { marginRight: 8 };
+createCacheKey[11] = { flex: 1, flexDirection: "row", paddingHorizontal: 12, paddingTop: 8 };
+createCacheKey[12] = { width: "100%", flex: 1, flexDirection: "column", minHeight: 200 };
+createCacheKey[13] = { flex: 1, flexDirection: "row", alignItems: "flex-end" };
+createCacheKey[14] = { lineHeight: 20, flex: 1 };
 let obj4 = {};
 let merged = Object.assign(StyleSheet.absoluteFillObject);
-obj4["borderTopWidth"] = StyleSheet.hairlineWidth;
-obj4["borderTopColor"] = require("_createForOfIteratorHelperLoose").colors.BORDER_SUBTLE;
-obj4["backgroundColor"] = require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW;
-obj4["top"] = undefined;
-_createForOfIteratorHelperLoose.actionsContainer = obj4;
-_createForOfIteratorHelperLoose.actions = { flex: 1, flexDirection: "row", alignItems: "center", padding: 8, width: "100%" };
-let obj5 = { height: 40, minHeight: 40, maxHeight: 40, width: 40, minWidth: 40, maxWidth: 40, borderRadius: 20, color: require("_createForOfIteratorHelperLoose").colors.TEXT_DEFAULT, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_MOD_NORMAL, marginLeft: 0, marginRight: 0, overflow: "hidden" };
-_createForOfIteratorHelperLoose.actionButton = obj5;
-_createForOfIteratorHelperLoose.mediaButton = { marginRight: 8 };
-let obj6 = { position: "absolute", bottom: 0, left: 0, right: 0, zIndex: 100, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SURFACE_HIGH };
-_createForOfIteratorHelperLoose.horizontalAutocomplete = obj6;
-_createForOfIteratorHelperLoose.nameError = { marginBottom: 16, marginLeft: 16, marginRight: 16 };
-_createForOfIteratorHelperLoose.messageError = { marginTop: 8 };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-let closure_33 = { code: "function ForumComposerTsx1({contentOffset:{y:y}}){const{scrollTopValue}=this.__closure;return scrollTopValue.set(y);}" };
-let obj3 = { color: require("_createForOfIteratorHelperLoose").unsafe_rawColors.BRAND_500 };
-let result = require("result").fileFinishedImporting("modules/forums/native/composer/ForumComposer.tsx");
+obj4.borderTopWidth = StyleSheet.hairlineWidth;
+obj4.borderTopColor = require("Themes").colors.BORDER_SUBTLE;
+obj4.backgroundColor = require("Themes").colors.BACKGROUND_BASE_LOW;
+obj4.top = undefined;
+createCacheKey[15] = obj4;
+createCacheKey[16] = { flex: 1, flexDirection: "row", alignItems: "center", padding: 8, width: "100%" };
+let obj3 = { color: require("Themes").unsafe_rawColors.BRAND_500 };
+createCacheKey[17] = { height: 40, minHeight: 40, maxHeight: 40, width: 40, minWidth: 40, maxWidth: 40, borderRadius: 20, color: require("Themes").colors.TEXT_DEFAULT, backgroundColor: require("Themes").colors.BACKGROUND_MOD_NORMAL, marginLeft: 0, marginRight: 0, overflow: "hidden" };
+createCacheKey[18] = { marginRight: 8 };
+let obj5 = { height: 40, minHeight: 40, maxHeight: 40, width: 40, minWidth: 40, maxWidth: 40, borderRadius: 20, color: require("Themes").colors.TEXT_DEFAULT, backgroundColor: require("Themes").colors.BACKGROUND_MOD_NORMAL, marginLeft: 0, marginRight: 0, overflow: "hidden" };
+createCacheKey[19] = { position: "absolute", bottom: 0, left: 0, right: 0, zIndex: 100, backgroundColor: require("Themes").colors.BACKGROUND_SURFACE_HIGH };
+createCacheKey[20] = { marginBottom: 16, marginLeft: 16, marginRight: 16 };
+createCacheKey[21] = { marginTop: 8 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let closure_34 = { code: "function ForumComposerTsx1({contentOffset:{y:y}}){const{scrollTopValue}=this.__closure;return scrollTopValue.set(y);}" };
+let obj6 = { position: "absolute", bottom: 0, left: 0, right: 0, zIndex: 100, backgroundColor: require("Themes").colors.BACKGROUND_SURFACE_HIGH };
+let result = require("noop").fileFinishedImporting("modules/forums/native/composer/ForumComposer.tsx");
 
 export default function ForumComposer(parentChannel) {
+  let c13;
+  let c21;
   let c31;
   let c34;
+  let c38;
   let focusLastInput;
-  let tmp63;
+  let tmp17;
+  let tmp28;
+  let tmp59;
+  let tmp64;
   parentChannel = parentChannel.parentChannel;
-  const thread = parentChannel.thread;
+  let _require = parentChannel;
+  let thread = parentChannel.thread;
   const threadSettingsDraft = parentChannel.threadSettingsDraft;
   const onClose = parentChannel.onClose;
   const message = parentChannel.message;
   const isEdit = parentChannel.isEdit;
-  let stateFromStores3;
+  let c6;
+  let analyticsLocations;
+  let stateFromStores;
   let stateFromStores4;
+  let stateFromStores5;
   let c11;
   let c12;
-  let closure_13;
-  let first1;
-  let closure_15;
+  c13 = undefined;
+  let first;
+  let getUncachedChannelPermissions;
   let str4;
   let c17;
   let appliedTags;
-  let first2;
-  let closure_20;
-  let closure_21;
+  let first1;
+  let mergeGuildAvatar;
+  c21 = undefined;
   let closure_22;
   let ref1;
   let sharedValue;
@@ -400,379 +336,729 @@ export default function ForumComposer(parentChannel) {
   let closure_35;
   let closure_36;
   let closure_37;
-  let closure_38;
-  let obj20;
+  c38 = undefined;
+  let obj22;
   let memo2;
   function MediaPostMultipleThumbnailActionSheetImporter() {
-    return parentChannel(threadSettingsDraft[51])(threadSettingsDraft[50], threadSettingsDraft.paths);
+    return lib(threadSettingsDraft[52])(threadSettingsDraft[51], threadSettingsDraft.paths);
   }
-  let renderErrorResult = focusLastInput();
-  const analyticsLocations = thread(threadSettingsDraft[21])().analyticsLocations;
+  const tmp = blurLastInput();
+  c6 = tmp;
+  analyticsLocations = thread(threadSettingsDraft[22])().analyticsLocations;
+  let obj = isEdit;
   const ref = isEdit.useRef(null);
-  let obj = parentChannel(threadSettingsDraft[22]);
-  let items = [first2];
-  const stateFromStores = obj.useStateFromStores(items, () => {
-    const currentUser = first2.getCurrentUser();
-    let tmp2 = null;
-    if (null != currentUser) {
-      tmp2 = currentUser;
+  let obj1 = _require(threadSettingsDraft[23]);
+  let items = [mergeGuildAvatar];
+  stateFromStores = obj1.useStateFromStores(items, () => {
+    currentUser = currentUser.getCurrentUser();
+    if (currentUser == null) {
+      currentUser = null;
     }
-    return tmp2;
+    return currentUser;
   }, []);
-  let obj1 = parentChannel(threadSettingsDraft[22]);
-  const items1 = [closure_13];
-  const stateFromStores1 = obj1.useStateFromStores(items1, () => selfMember.getSelfMember(parentChannel.guild_id));
-  let obj2 = parentChannel(threadSettingsDraft[22]);
-  const items2 = [c11];
-  const str = obj2.useStateFromStores(items2, () => _undefined.getDraft(parentChannel.id, _undefined2.ChannelMessage));
-  let obj3 = parentChannel(threadSettingsDraft[22]);
-  const items3 = [stateFromStores4];
-  const stateFromStores2 = obj3.useStateFromStores(items3, () => parentChannel(threadSettingsDraft[23]).isThemeDark(stateFromStores4.theme));
-  const unsafe_rawColors = thread(threadSettingsDraft[20]).unsafe_rawColors;
-  const tmp6 = stateFromStores2 ? unsafe_rawColors.PRIMARY_330 : unsafe_rawColors.PRIMARY_460;
-  let obj4 = parentChannel(threadSettingsDraft[22]);
-  const items4 = [str4];
-  stateFromStores3 = obj4.useStateFromStores(items4, () => str4.getSlowmodeCooldownGuess(parentChannel.id, _undefined3.CreateThread));
-  let obj5 = parentChannel(threadSettingsDraft[22]);
-  const items5 = [appliedTags];
-  stateFromStores4 = obj5.useStateFromStores(items5, () => appliedTags.getUploads(parentChannel.id, _undefined2.ChannelMessage));
-  const tmp8 = thread(threadSettingsDraft[24])();
-  c11 = tmp8;
-  const tmp9 = thread(threadSettingsDraft[25])();
-  c12 = tmp9;
-  const tmp10 = thread(threadSettingsDraft[26])(parentChannel);
-  const tmp11 = message(isEdit.useState(false), 2);
-  const first = tmp11[0];
-  closure_13 = tmp11[1];
+  let obj2 = _require(threadSettingsDraft[23]);
+  const items1 = [stateFromStores5];
+  const stateFromStores1 = obj2.useStateFromStores(items1, () => stateFromStores5.useReducedMotion);
+  let obj3 = _require(threadSettingsDraft[23]);
+  const items2 = [first];
+  const stateFromStores2 = obj3.useStateFromStores(items2, () => first.getSelfMember(lib.guild_id));
+  let obj4 = _require(threadSettingsDraft[23]);
+  const items3 = [c12];
+  const str = obj4.useStateFromStores(items3, () => _undefined3.getDraft(lib.id, _undefined4.ChannelMessage));
+  let obj5 = _require(threadSettingsDraft[23]);
+  const items4 = [c11];
+  const stateFromStores3 = obj5.useStateFromStores(items4, () => lib(threadSettingsDraft[24]).isThemeDark(_undefined2.theme));
+  const unsafe_rawColors = thread(threadSettingsDraft[21]).unsafe_rawColors;
+  let tmp10 = stateFromStores3 ? unsafe_rawColors.PRIMARY_330 : unsafe_rawColors.PRIMARY_460;
+  let tmp5Result = tmp5(tmp3[23]);
+  const items5 = [c17];
+  stateFromStores4 = tmp5Result.useStateFromStores(items5, () => _undefined5.getSlowmodeCooldownGuess(lib.id, appliedTags.CreateThread));
+  tmp5Result = tmp5(tmp3[23]);
+  const items6 = [first1];
+  stateFromStores5 = tmp5Result.useStateFromStores(items6, () => first1.getUploads(lib.id, _undefined4.ChannelMessage));
+  let tmp12 = thread(threadSettingsDraft[25])();
+  c11 = tmp12;
+  let tmp13 = thread(threadSettingsDraft[26])();
+  c12 = tmp13;
+  let tmp14 = thread(threadSettingsDraft[27])(parentChannel);
+  [tmp17, c13] = message(obj.useState(false), 2);
   if (isEdit) {
     let name;
-    if (null != thread) {
+    if (thread != null) {
       name = thread.name;
     }
-  } else if (null != threadSettingsDraft) {
-    name = threadSettingsDraft.name;
+    let str2 = name;
+  } else if (threadSettingsDraft != null) {
+    str2 = threadSettingsDraft.name;
   }
-  let str2 = "";
-  if (null != name) {
-    str2 = name;
+  if (str2 == null) {
+    str2 = "";
   }
-  const tmp15 = message(isEdit.useState(str2), 2);
-  first1 = tmp15[0];
-  closure_15 = tmp15[1];
-  let obj6 = parentChannel(threadSettingsDraft[27]);
-  const channelTemplate = obj6.useChannelTemplate(parentChannel);
+  let tmp15Result = tmp15(obj.useState(str2), 2);
+  first = tmp15Result[0];
+  getUncachedChannelPermissions = tmp15Result[1];
+  let tmp16 = message(obj.useState(false), 2);
+  const channelTemplate = _require(threadSettingsDraft[28]).useChannelTemplate(parentChannel);
   let str3 = "";
   if (isEdit) {
     str3 = "";
     if (null != message) {
       str3 = "";
       if (null != thread) {
-        let obj7 = thread(threadSettingsDraft[28]);
-        str3 = obj7.unparse(message.content, thread.id);
+        let tmp2Result = tmp2(tmp3[29]);
+        str3 = tmp2Result.unparse(message.content, thread.id);
       }
     }
   }
   if (!isEdit) {
-    let tmp21 = channelTemplate;
+    let tmp22 = channelTemplate;
     if (null != str) {
-      tmp21 = channelTemplate;
+      tmp22 = channelTemplate;
       if ("" !== str.trim()) {
-        tmp21 = str;
+        tmp22 = str;
       }
     }
-    str3 = tmp21;
+    str3 = tmp22;
   }
-  const tmp22 = message(isEdit.useState(str3), 2);
-  str4 = tmp22[0];
-  c17 = tmp23;
-  let obj8 = parentChannel(threadSettingsDraft[29]);
-  appliedTags = obj8.useAppliedTags(thread);
-  const tmp25 = message(isEdit.useState(() => (function getInitialForumComposerTags(isEdit, appliedTags, threadSettingsDraft, availableTags) {
-    let items = availableTags;
-    if (isEdit) {
-      return appliedTags;
-    } else {
+  tmp15Result = tmp15(obj.useState(str3), 2);
+  str4 = tmp15Result[0];
+  c17 = tmp24;
+  const tmp5Result1 = _require(threadSettingsDraft[28]);
+  appliedTags = _require(threadSettingsDraft[30]).useAppliedTags(thread);
+  const tmp15Result1 = message(obj.useState(() => {
+    let found = appliedTags;
+    let availableTags = map.availableTags;
+    map = undefined;
+    if (!isEdit) {
       appliedTags = undefined;
-      if (null != threadSettingsDraft) {
-        appliedTags = threadSettingsDraft.appliedTags;
+      if (tmp != null) {
+        appliedTags = tmp.appliedTags;
       }
       if (null != appliedTags) {
         if (0 !== appliedTags.size) {
-          let _Map = Map;
-          if (null == items) {
-            items = [];
+          if (availableTags == null) {
+            availableTags = [];
           }
-          const prototype = _Map.prototype;
-          _Map = new _Map(items.map((id) => {
+          map = new Map(availableTags.map((id) => {
             const items = [id.id, id];
             return items;
           }));
           const _Array = Array;
-          const mapped = Array.from(appliedTags).map((arg0) => _Map.get(arg0));
-          return mapped.filter((arg0) => null != arg0);
+          const mapped = Array.from(appliedTags).map((arg0) => map.get(arg0));
+          found = mapped.filter((arg0) => null != arg0);
+          const arr = Array.from(appliedTags);
         }
       }
-      return [];
+      found = [];
     }
-  })(isEdit, appliedTags, threadSettingsDraft, parentChannel.availableTags)), 2);
-  first2 = tmp25[0];
-  closure_20 = tmp25[1];
-  const tmp26 = message(isEdit.useState(null), 2);
-  closure_21 = tmp26[1];
-  const tmp27 = message(isEdit.useState(null), 2);
-  closure_22 = tmp27[1];
+    return found;
+  }), 2);
+  first1 = tmp15Result1[0];
+  mergeGuildAvatar = tmp15Result1[1];
+  const tmp5Result2 = _require(threadSettingsDraft[30]);
+  [tmp28, c21] = message(obj.useState(null), 2);
+  const tmp15Result3 = message(obj.useState(null), 2);
+  closure_22 = tmp15Result3[1];
   let colorString;
-  if (null != stateFromStores1) {
-    colorString = stateFromStores1.colorString;
+  if (stateFromStores2 != null) {
+    colorString = stateFromStores2.colorString;
   }
-  let tmp29 = null;
-  if (null != colorString) {
-    tmp29 = colorString;
+  if (colorString == null) {
+    colorString = null;
   }
   let colorStrings;
-  if (null != stateFromStores1) {
-    colorStrings = stateFromStores1.colorStrings;
+  if (stateFromStores2 != null) {
+    colorStrings = stateFromStores2.colorStrings;
   }
-  let tmp31 = null;
-  if (null != colorStrings) {
-    tmp31 = colorStrings;
+  if (colorStrings == null) {
+    colorStrings = null;
   }
-  let nick;
-  if (null != stateFromStores1) {
-    nick = stateFromStores1.nick;
+  let str5;
+  if (stateFromStores2 != null) {
+    str5 = stateFromStores2.nick;
   }
-  if (null == nick) {
-    let obj9 = thread(threadSettingsDraft[30]);
-    nick = obj9.getName(stateFromStores);
+  if (str5 == null) {
+    tmp2Result = tmp2(tmp3[31]);
+    str5 = tmp2Result.getName(stateFromStores);
   }
-  let str5 = "";
-  if (null != nick) {
-    str5 = nick;
+  if (str5 == null) {
+    str5 = "";
   }
-  ref1 = isEdit.useRef(null);
-  const insets = thread(threadSettingsDraft[31])({ includeKeyboardHeight: true }).insets;
-  const callback = isEdit.useCallback(() => {
+  ref1 = obj.useRef(null);
+  const insets = tmp2(tmp3[32])({ includeKeyboardHeight: true }).insets;
+  const callback = obj.useCallback(() => {
     const current = ref1.current;
-    if (null != current) {
+    if (current != null) {
       current.focus();
     }
   }, []);
-  let obj10 = parentChannel(threadSettingsDraft[32]);
-  sharedValue = obj10.useSharedValue(0);
-  let obj11 = parentChannel(threadSettingsDraft[32]);
-  class W {
+  const tmp15Result2 = message(obj.useState(null), 2);
+  sharedValue = _require(threadSettingsDraft[33]).useSharedValue(0);
+  const tmp5Result3 = _require(threadSettingsDraft[33]);
+  class D {
     constructor(arg0) {
       return c24.set(parentChannel.contentOffset.y);
     }
   }
-  W.__closure = { scrollTopValue: sharedValue };
-  W.__workletHash = 16880842576840;
-  W.__initData = blurLastInput;
-  const items6 = [isEdit, parentChannel.id];
+  D.__closure = { scrollTopValue: sharedValue };
+  D.__workletHash = 16880842576840;
+  D.__initData = c34;
   const items7 = [isEdit, parentChannel.id];
-  const callback1 = isEdit.useCallback((name) => {
+  const tmp5Result4 = _require(threadSettingsDraft[33]);
+  const items8 = [isEdit, parentChannel.id];
+  const callback1 = obj.useCallback((arg0) => {
     if (!isEdit) {
-      let obj = thread(threadSettingsDraft[33]);
-      obj = { name };
-      obj.changeThreadSettings(parentChannel.id, obj);
+      let obj = thread(threadSettingsDraft[34]);
+      obj = { name: null };
+      obj[0] = arg0;
+      obj.changeThreadSettings(lib.id, obj);
     }
-    callback(name);
-  }, items6);
-  const items8 = [onClose];
-  const callback2 = isEdit.useCallback((arr) => {
-    callback2(arr);
+    callback(arg0);
+  }, items7);
+  const items9 = [onClose];
+  const callback2 = obj.useCallback((arr) => {
+    currentUser(arr);
     if (!isEdit) {
-      let obj = thread(threadSettingsDraft[33]);
-      obj = {};
+      let obj = thread(threadSettingsDraft[34]);
+      obj = { appliedTags: null };
       const _Set = Set;
       const set = new Set(arr.map((id) => id.id));
-      obj.appliedTags = set;
-      obj.changeThreadSettings(parentChannel.id, obj);
+      obj[0] = set;
+      obj.changeThreadSettings(lib.id, obj);
     }
-  }, items7);
-  callback3 = isEdit.useCallback((channel) => {
-    onClose(true);
-    let obj = parentChannel(threadSettingsDraft[34]);
-    obj = { navigationReplace: true, source: memo.FORUM };
-    obj.transitionToThread(channel, obj);
   }, items8);
-  const items9 = [first2];
-  memo = isEdit.useMemo(() => new Set(first2.map((id) => id.id)), items9);
-  const items10 = [appliedTags];
-  memo1 = isEdit.useMemo(() => new Set(appliedTags.map((id) => id.id)), items10);
-  const items11 = [thread, message, memo1, memo, first1, callback3, onClose];
-  callback4 = isEdit.useCallback((() => {
-    // CreateGeneratorClosureLongIndex (0x67)
-    let closure_0 = onClose(tmp);
-    return function() {
-      return callback(...arguments);
-    };
-  })(), items11);
+  callback3 = obj.useCallback((channel) => {
+    onClose(true);
+    let obj = lib(threadSettingsDraft[35]);
+    obj = { navigationReplace: true, source: memo1.FORUM };
+    obj.transitionToThread(channel, obj);
+  }, items9);
+  const items10 = [first1];
+  memo = obj.useMemo(() => new Set(first1.map((id) => id.id)), items10);
+  const items11 = [appliedTags];
+  memo1 = obj.useMemo(() => new Set(appliedTags.map((id) => id.id)), items11);
+  _require = undefined;
+  _require = onClose((arg0) => {
+    let closure_0 = arg0;
+    let c2 = 0;
+    let c3 = 0;
+    return (function*(arg0) {
+      if (v0 === 2) {
+        v0 = 3;
+        HermesBuiltin.throwTypeError();
+      } else if (tmp4 === 3) {
+        if (arg0 === 1) {
+          throw arg1;
+        } else if (arg0 === 2) {
+          let obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
+        } else {
+          return { value: "HermesInternal", done: null };
+        }
+      } else {
+        try {
+          v0 = 2;
+          if (0 === c2) {
+            if (arg0 === 1) {
+              v0 = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              v0 = 3;
+              obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            } else {
+              let closure_1 = tmp2;
+              if (null == outer1_1) {
+                v0 = 3;
+              } else {
+                let tmp6 = null != outer1_4;
+                if (tmp6) {
+                  tmp6 = tmp46.content !== tmp43;
+                }
+                if (tmp6) {
+                  let obj2 = thread(threadSettingsDraft[36]);
+                  const obj1 = { content: null };
+                  obj1[0] = tmp43;
+                  obj2.editMessage(outer1_1.id, tmp46.id, obj1);
+                }
+                let obj4 = thread(threadSettingsDraft[37]);
+                if (!obj4.isEqual(outer1_27, outer1_26)) {
+                  let obj5 = thread(threadSettingsDraft[38]);
+                  const _Array = Array;
+                  c2 = 1;
+                  v0 = 1;
+                  obj2 = { value: null, done: false };
+                  obj2[0] = obj5.updateForumPostTags(outer1_1.id, Array.from(tmp14));
+                  return obj2;
+                }
+                tmp14 = outer1_26;
+              }
+              outer1_25(outer1_1);
+            }
+          } else {
+            if (1 === tmp5) {
+              if (arg0 === 1) {
+                v0 = 3;
+                throw arg1;
+              } else if (arg0 === 2) {
+                v0 = 3;
+                const obj3 = { value: null, done: true };
+                obj3[0] = arg1;
+                return obj3;
+              }
+            } else if (arg0 === 1) {
+              v0 = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              v0 = 3;
+              obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            }
+            if (str4.getChannelId() === outer1_1.id) {
+              v0(true);
+            }
+          }
+          if (outer1_1.name !== outer1_14) {
+            obj4 = { name: null };
+            obj4[0] = outer1_14;
+            c2 = 2;
+            v0 = 1;
+            obj5 = { value: null, done: false };
+            obj5[0] = thread(threadSettingsDraft[39]).saveChannel(outer1_1.id, obj4);
+            return obj5;
+          }
+        } catch (tmp37) {
+          v0 = tmp;
+          throw tmp37;
+        }
+      }
+    })();
+  });
+  const items12 = [thread, message, memo1, memo, first, callback3, onClose];
+  callback4 = obj.useCallback(function() {
+    const self = this;
+    const apply = closure_0.apply;
+    if (typeof apply === "unknown") {
+      let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+    } else {
+      applyArgumentsResult = apply(self, arguments);
+    }
+    return applyArgumentsResult;
+  }, items12);
   let name1;
-  if (null != threadSettingsDraft) {
+  if (threadSettingsDraft != null) {
     name1 = threadSettingsDraft.name;
   }
   const trimmed = str4.trim();
-  let tmp48 = "" === channelTemplate;
-  if (!tmp48) {
-    tmp48 = trimmed !== channelTemplate;
+  let tmp46 = "" === channelTemplate;
+  if (!tmp46) {
+    tmp46 = trimmed !== channelTemplate;
+  }
+  if (tmp46) {
+    tmp46 = trimmed.length > 0 || tmp45;
+    const tmp47 = trimmed.length > 0 || tmp45;
+  }
+  let tmp48 = !isEdit;
+  if (!isEdit) {
+    tmp48 = tmp44;
   }
   if (tmp48) {
-    tmp48 = trimmed.length > 0 || tmp47;
-    const tmp49 = trimmed.length > 0 || tmp47;
+    tmp48 = tmp46;
   }
-  let tmp50 = !isEdit && (null != name1 && threadSettingsDraft.name.length > 0) && tmp48;
-  if (!tmp50) {
-    let tmp51 = isEdit;
+  if (!tmp48) {
+    let tmp49 = isEdit;
     if (isEdit) {
       let name2;
-      if (null != thread) {
+      if (thread != null) {
         name2 = thread.name;
       }
-      let tmp53 = first1 !== name2;
-      if (!tmp53) {
+      let tmp51 = first !== name2;
+      if (!tmp51) {
         let content;
-        if (null != message) {
+        if (message != null) {
           content = message.content;
         }
-        tmp53 = trimmed !== content;
+        tmp51 = trimmed !== content;
       }
-      if (!tmp53) {
-        let obj12 = thread(threadSettingsDraft[36]);
-        tmp53 = !obj12.isEqual(memo1, memo);
+      if (!tmp51) {
+        tmp51 = !tmp2(tmp3[37]).isEqual(memo1, memo);
+        const tmp2Result1 = tmp2(tmp3[37]);
       }
-      tmp51 = tmp53;
+      tmp49 = tmp51;
     }
-    tmp50 = tmp51;
+    tmp48 = tmp49;
   }
-  let obj13 = parentChannel(threadSettingsDraft[39]);
-  createForumPost = obj13.useCreateForumPost({ parentChannel, threadSettings: threadSettingsDraft, appliedTags: memo, onThreadCreated: callback3 });
-  const items12 = [parentChannel, first2.length, isEdit, thread, str4, callback4, createForumPost, stateFromStores4];
-  callback5 = isEdit.useCallback((() => {
-    // CreateGeneratorClosureLongIndex (0x67)
-    let closure_0 = onClose(tmp);
-    return function() {
-      return callback(...arguments);
-    };
-  })(), items12);
-  const items13 = [parentChannel, stateFromStores3, tmp9, stateFromStores4, callback5, str4];
-  const items14 = [tmp22[1], parentChannel.id];
-  const callback6 = isEdit.useCallback((stickerId) => {
-    stickerId = stickerId.stickerId;
-    if (stateFromStores3 <= 0) {
-      if (str4.length > c12) {
-        let obj = {};
-        const intl4 = parentChannel(threadSettingsDraft[42]).intl;
-        obj.title = intl4.string(parentChannel(threadSettingsDraft[42]).t.l8rYLt);
-        const intl5 = parentChannel(threadSettingsDraft[42]).intl;
-        obj = { currentLength: str4.length, maxLength: c12 };
-        obj.body = intl5.formatToPlainString(parentChannel(threadSettingsDraft[42]).t.FfjF15, obj);
-        thread(threadSettingsDraft[41]).show(obj);
-        const obj4 = thread(threadSettingsDraft[41]);
+  const animatedScrollHandler = _require(threadSettingsDraft[33]).useAnimatedScrollHandler(D);
+  const tmp41 = onClose;
+  tmp44 = null != name1 && threadSettingsDraft.name.length > 0;
+  tmp45 = stateFromStores5.length > 0;
+  createForumPost = _require(threadSettingsDraft[40]).useCreateForumPost({ parentChannel, threadSettings: threadSettingsDraft, appliedTags: memo, onThreadCreated: callback3 });
+  _require = undefined;
+  _require = tmp41((arg0) => {
+    let closure_0 = arg0;
+    let c5 = 0;
+    let c6 = 0;
+    let c4 = 0;
+    const iter = (function*(arg0) {
+      if (c6 === 2) {
+        c6 = 3;
+        let throwTypeErrorResult = HermesBuiltin.throwTypeError();
       } else {
-        const tmp23 = _undefined5(parentChannel(threadSettingsDraft[43]).RESTRICTIONS);
-        let iter2 = tmp23();
-        if (!iter2.done) {
-          const checkResult = iter2.value.check(str4, stickerId, null != stickerId.getGuildId());
-          while (false === checkResult) {
-            let iter = tmp23();
-            iter2 = iter;
+        throwTypeErrorResult = arg1;
+        throwTypeErrorResult = arg0;
+        throwTypeErrorResult = tmp6;
+        throwTypeErrorResult = null;
+        if (tmp7 === 3) {
+          if (arg0 === 1) {
+            throw arg1;
+          } else if (arg0 === 2) {
+            let obj = { value: null, done: true };
+            obj[0] = arg1;
+            return obj;
+          } else {
+            return { value: "HermesInternal", done: null };
           }
-          obj = thread(threadSettingsDraft[41]);
-          const obj1 = {};
-          const intl = parentChannel(threadSettingsDraft[42]).intl;
-          obj1.title = intl.string(parentChannel(threadSettingsDraft[42]).t.mY3Y38);
-          obj1.body = checkResult.body;
-          const intl2 = parentChannel(threadSettingsDraft[42]).intl;
-          obj1.confirmText = intl2.string(parentChannel(threadSettingsDraft[42]).t.KJnHq3);
-          obj1.onConfirm = function onConfirm() {
-            outer1_30({ stickerId });
-          };
-          const intl3 = parentChannel(threadSettingsDraft[42]).intl;
-          obj1.cancelText = intl3.string(parentChannel(threadSettingsDraft[42]).t.fsBWmS);
-          obj.show(obj1);
+        } else {
+          try {
+            c6 = 2;
+            if (0 === c5) {
+              if (arg0 === 1) {
+                c6 = 3;
+                throw arg1;
+              } else if (arg0 === 2) {
+                c6 = 3;
+                obj = { value: null, done: true };
+                obj[0] = arg1;
+                return obj;
+              } else {
+                let closure_2 = tmp4;
+                let c1 = tmp8;
+                let stickerId;
+                throwTypeErrorResult = stickerId;
+                stickerId = stickerId.stickerId;
+                c1 = undefined;
+                c5 = 1;
+                c6 = 1;
+                return { value: "ct", done: null };
+              }
+            } else {
+              if (1 === tmp8) {
+                if (arg0 === 1) {
+                  c6 = 3;
+                  throw arg1;
+                } else if (arg0 === 2) {
+                  c6 = 3;
+                  const obj1 = { value: null, done: true };
+                  obj1[0] = arg1;
+                  return obj1;
+                } else {
+                  throwTypeErrorResult = closure_2;
+                  throwTypeErrorResult = lib;
+                  throwTypeErrorResult = sharedValue;
+                  if (lib.hasFlag(sharedValue.REQUIRE_TAG)) {
+                    if (0 === outer1_19.length) {
+                      throwTypeErrorResult = threadSettingsDraft;
+                      throwTypeErrorResult = outer1_22(lib(threadSettingsDraft[41]).makeEmptyTagsError());
+                      const obj9 = lib(threadSettingsDraft[41]);
+                    }
+                    c6 = 3;
+                  }
+                  outer1_13(true);
+                  if (c5) {
+                    let tmp74 = outer1_1;
+                  } else {
+                    tmp74 = lib;
+                  }
+                  thread = thread(threadSettingsDraft[29]).parse(tmp74, outer1_16).content;
+                  let c4 = 2;
+                  outer1_21(null);
+                  outer1_22(null);
+                  if (c5) {
+                    c5 = 4;
+                    c6 = 1;
+                    let obj2 = { value: null, done: false };
+                    obj2[0] = outer1_28(outer1_1);
+                    return obj2;
+                  } else {
+                    let tmp90;
+                    if (null != lib) {
+                      const items = [stickerId];
+                      tmp90 = items;
+                    }
+                    c5 = 5;
+                    c6 = 1;
+                    let obj3 = { value: null, done: false };
+                    obj3[0] = outer1_29(outer1_1, tmp90, outer1_10);
+                    return obj3;
+                  }
+                  const obj6 = thread(threadSettingsDraft[29]);
+                }
+              } else if (2 !== tmp8) {
+                if (3 === tmp8) {
+                  c4 = 1;
+                  const outer1_2 = handleThemeChange;
+                  const body = outer1_2.body;
+                  let code;
+                  if (body != null) {
+                    code = body.code;
+                  }
+                  if (null != code) {
+                    throwTypeErrorResult = c1;
+                    throwTypeErrorResult = outer1_2;
+                    const body3 = outer1_2.body;
+                    let code1;
+                    if (body3 != null) {
+                      code1 = body3.code;
+                    }
+                    if (code1 === constants.AUTOMOD_TITLE_BLOCKED) {
+                      let obj4 = lib(threadSettingsDraft[41]);
+                      outer1_21(obj4.makeAutomodViolationError(closure_2.body, lib));
+                    } else {
+                      throwTypeErrorResult = c1;
+                      throwTypeErrorResult = threadSettingsDraft;
+                      const body4 = threadSettingsDraft.body;
+                      let code2;
+                      if (body4 != null) {
+                        code2 = body4.code;
+                      }
+                      if (code2 === constants.AUTOMOD_MESSAGE_BLOCKED) {
+                        obj3 = lib(threadSettingsDraft[41]);
+                        outer1_22(obj3.makeAutomodViolationError(closure_2.body, lib));
+                      } else {
+                        throwTypeErrorResult = c1;
+                        throwTypeErrorResult = threadSettingsDraft;
+                        const body5 = threadSettingsDraft.body;
+                        let code3;
+                        if (body5 != null) {
+                          code3 = body5.code;
+                        }
+                        let tmp29 = code3 === constants.INVALID_FORM_BODY;
+                        if (tmp29) {
+                          const body2 = closure_2.body;
+                          let name;
+                          if (body2 != null) {
+                            const errors = body2.errors;
+                            if (errors != null) {
+                              name = errors.name;
+                            }
+                          }
+                          tmp29 = null != name;
+                        }
+                        if (tmp29) {
+                          obj2 = lib(threadSettingsDraft[41]);
+                          outer1_21(obj2.makeApiNameValidationError());
+                        }
+                      }
+                    }
+                  }
+                } else {
+                  if (4 === tmp8) {
+                    if (arg0 === 1) {
+                      c6 = 3;
+                      throw arg1;
+                    } else if (arg0 === 2) {
+                      c4 = 0;
+                      outer1_13(false);
+                      c6 = 3;
+                      obj4 = { value: null, done: true };
+                      obj4[0] = arg1;
+                      return obj4;
+                    }
+                  } else if (arg0 === 1) {
+                    c6 = 3;
+                    throw arg1;
+                  } else if (arg0 === 2) {
+                    c4 = 0;
+                    outer1_13(false);
+                    c6 = 3;
+                    obj = { value: null, done: true };
+                    obj[0] = arg1;
+                    return obj;
+                  }
+                  c4 = 1;
+                }
+                c4 = 0;
+                outer1_13(false);
+              }
+              c4 = 0;
+              outer1_13(false);
+              throw handleThemeChange;
+            }
+          } catch (throwTypeErrorResult) {
+            handleThemeChange = throwTypeErrorResult;
+            if (tmp5 === c4) {
+              throwTypeErrorResult = tmp3;
+              c6 = tmp3;
+              throw throwTypeErrorResult;
+            } else if (tmp2 === throwTypeErrorResult) {
+              c5 = throwTypeErrorResult;
+            } else {
+              c5 = tmp3;
+            }
+          }
         }
-        const obj2 = { stickerId };
+      }
+    })();
+    iter.next();
+    return iter;
+  });
+  const items13 = [parentChannel, first1.length, isEdit, thread, str4, callback4, createForumPost, stateFromStores5];
+  callback5 = obj.useCallback(function() {
+    const self = this;
+    const apply = closure_0.apply;
+    if (typeof apply === "unknown") {
+      let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+    } else {
+      applyArgumentsResult = apply(self, arguments);
+    }
+    return applyArgumentsResult;
+  }, items13);
+  const items14 = [parentChannel, stateFromStores4, tmp13, stateFromStores5, callback5, str4];
+  const items15 = [tmp15Result[1], parentChannel.id];
+  const callback6 = obj.useCallback((stickerId) => {
+    stickerId = stickerId.stickerId;
+    if (stateFromStores4 <= 0) {
+      if (str4.length > c12) {
+        let obj = { title: null, body: null };
+        const intl4 = lib(threadSettingsDraft[43]).intl;
+        obj[0] = intl4.string(lib(threadSettingsDraft[43]).t.l8rYLt);
+        const intl5 = lib(threadSettingsDraft[43]).intl;
+        obj = { currentLength: null, maxLength: null };
+        obj[0] = arr.length;
+        obj[1] = tmp40;
+        obj[1] = intl5.formatToPlainString(lib(threadSettingsDraft[43]).t.FfjF15, obj);
+        thread(threadSettingsDraft[42]).show(obj);
+        const obj4 = thread(threadSettingsDraft[42]);
+      } else {
+        const RESTRICTIONS = lib(threadSettingsDraft[44]).RESTRICTIONS;
+        const iter = RESTRICTIONS[Symbol.iterator]();
+        while (iter !== undefined) {
+          let tmp5 = str4;
+          let tmp6 = str4;
+          let tmp7 = stickerId;
+          let checkResult = iter.next().check(str4, stickerId, null != stickerId.getGuildId());
+          let tmp9 = checkResult;
+          if (false !== checkResult) {
+            let tmp10 = thread;
+            let tmp11 = threadSettingsDraft;
+            obj = thread(threadSettingsDraft[42]);
+            let obj1 = { title: null, body: null, confirmText: null, onConfirm: null, cancelText: null };
+            let tmp12 = lib;
+            let tmp13 = threadSettingsDraft;
+            let intl = lib(threadSettingsDraft[43]).intl;
+            let tmp14 = lib;
+            let tmp15 = threadSettingsDraft;
+            obj1[0] = intl.string(lib(threadSettingsDraft[43]).t.mY3Y38);
+            obj1[1] = checkResult.body;
+            let tmp16 = lib;
+            let tmp17 = threadSettingsDraft;
+            let intl2 = lib(threadSettingsDraft[43]).intl;
+            let tmp18 = lib;
+            let tmp19 = threadSettingsDraft;
+            obj1[2] = intl2.string(lib(threadSettingsDraft[43]).t.KJnHq3);
+            obj1[3] = function onConfirm() {
+              outer1_30({ stickerId });
+            };
+            let tmp20 = lib;
+            let tmp21 = threadSettingsDraft;
+            let intl3 = lib(threadSettingsDraft[43]).intl;
+            let tmp22 = lib;
+            let tmp23 = threadSettingsDraft;
+            obj1[4] = intl3.string(lib(threadSettingsDraft[43]).t.fsBWmS);
+            let showResult1 = obj.show(obj1);
+            let tmp25 = iter;
+            iter.return();
+          }
+        }
+        const obj2 = { stickerId: null };
+        obj2[0] = stickerId;
         callback5(obj2);
       }
     }
-  }, items13);
-  const callback7 = isEdit.useCallback((draft) => {
-    thread(threadSettingsDraft[33]).changeDraft(parentChannel.id, draft, _undefined2.ChannelMessage);
-    _undefined3(draft);
   }, items14);
-  let obj14 = parentChannel(threadSettingsDraft[44]);
-  const focusHandlers = obj14.useFocusHandlers({ titleInput: ref, contentInput: ref1 });
+  const callback7 = obj.useCallback((draft) => {
+    thread(threadSettingsDraft[34]).changeDraft(lib.id, draft, _undefined4.ChannelMessage);
+    _undefined5(draft);
+  }, items15);
+  const tmp5Result5 = _require(threadSettingsDraft[40]);
+  const focusHandlers = _require(threadSettingsDraft[45]).useFocusHandlers({ titleInput: ref, contentInput: ref1 });
   ({ setFocusedInput: c31, focusLastInput } = focusHandlers);
   blurLastInput = focusHandlers.blurLastInput;
   obj = { start: str4.length, end: null };
-  const animatedScrollHandler = obj11.useAnimatedScrollHandler(W);
-  const tmp46 = null != name1 && threadSettingsDraft.name.length > 0;
-  tmp47 = stateFromStores4.length > 0;
-  [tmp63, c34] = message(isEdit.useState(obj), 2);
-  const callback8 = isEdit.useCallback((nativeEvent) => {
+  const tmp5Result6 = _require(threadSettingsDraft[45]);
+  [tmp59, c34] = message(obj.useState(obj), 2);
+  const callback8 = obj.useCallback((nativeEvent) => {
     const merged = Object.assign(nativeEvent.nativeEvent.selection);
-    _undefined5({});
+    _undefined7({});
   }, []);
-  const callback9 = isEdit.useCallback((arg0) => {
-    let parentChannel;
+  const callback9 = obj.useCallback((arg0) => {
+    let closure_0;
     let thread;
-    ({ start: parentChannel, end: thread } = arg0);
+    ({ start: closure_0, end: thread } = arg0);
     let current;
     if (obj.isAndroid()) {
       current = ref1.current;
       if (null != current) {
         const _setTimeout = setTimeout;
         const timerId = setTimeout(() => {
-          current.setSelection(closure_0, null != closure_1 ? closure_1 : closure_0);
+          let tmp3 = closure_1;
+          if (closure_1 == null) {
+            tmp3 = tmp2;
+          }
+          current.setSelection(closure_0, tmp3);
         });
       }
     }
   }, []);
-  let obj16 = parentChannel(threadSettingsDraft[46]);
-  closure_35 = obj16.usePressEmojiHandler({ selection: tmp63, draftContent: str4, handleTextChange: callback7, focusTextInput: callback, setSelection: callback9 });
-  let obj17 = parentChannel(threadSettingsDraft[46]);
-  closure_36 = obj17.usePressGIFHandler({ selection: tmp63, draftContent: str4, handleTextChange: callback7, focusTextInput: callback, setSelection: callback9 });
-  let obj18 = parentChannel(threadSettingsDraft[47]);
-  const tmp62 = message(isEdit.useState(obj), 2);
-  let obj19 = parentChannel(threadSettingsDraft[48]);
-  closure_37 = obj19.useBackspaceHandler({ selection: tmp63, draftContent: str4, handleTextChange: callback7 });
-  const tmp67 = message(isEdit.useState(0), 2);
-  closure_38 = tmp67[1];
-  obj20 = parentChannel;
-  const callback10 = isEdit.useCallback((nativeEvent) => {
-    callback3(nativeEvent.nativeEvent.layout.height);
+  const tmp15Result4 = message(obj.useState(obj), 2);
+  closure_35 = _require(threadSettingsDraft[47]).usePressEmojiHandler({ selection: tmp59, draftContent: str4, handleTextChange: callback7, focusTextInput: callback, setSelection: callback9 });
+  const tmp5Result7 = _require(threadSettingsDraft[47]);
+  closure_36 = _require(threadSettingsDraft[47]).usePressGIFHandler({ selection: tmp59, draftContent: str4, handleTextChange: callback7, focusTextInput: callback, setSelection: callback9 });
+  const tmp5Result8 = _require(threadSettingsDraft[47]);
+  const tmp5Result9 = _require(threadSettingsDraft[48]);
+  const pressHorizontalAutocompleteItemHandler = _require(threadSettingsDraft[48]).usePressHorizontalAutocompleteItemHandler({ draftContent: str4, handleTextChange: callback7, setSelection: callback9, channel: parentChannel });
+  closure_37 = _require(threadSettingsDraft[49]).useBackspaceHandler({ selection: tmp59, draftContent: str4, handleTextChange: callback7 });
+  const tmp5Result10 = _require(threadSettingsDraft[49]);
+  [tmp64, c38] = message(obj.useState(0), 2);
+  obj22 = parentChannel;
+  const callback10 = obj.useCallback((nativeEvent) => {
+    _undefined8(nativeEvent.nativeEvent.layout.height);
   }, []);
   if (isEdit) {
-    obj20 = thread;
+    obj22 = thread;
   }
-  const items15 = [obj20];
-  memo2 = isEdit.useMemo(() => {
+  const items16 = [obj22];
+  memo2 = obj.useMemo(() => {
     let parserState = null;
-    if (null != obj20) {
-      parserState = parentChannel(threadSettingsDraft[28]).createParserState(obj20);
-      const obj = parentChannel(threadSettingsDraft[28]);
+    if (null != obj22) {
+      parserState = lib(threadSettingsDraft[29]).createParserState(tmp);
+      const obj = lib(threadSettingsDraft[29]);
     }
     return parserState;
-  }, items15);
-  const items16 = [str4, obj20, memo2, renderErrorResult.mentionText];
-  const memo3 = isEdit.useMemo(() => {
+  }, items16);
+  const items17 = [str4, obj22, memo2, tmp.mentionText];
+  const memo3 = obj.useMemo(() => {
     if (0 !== str4.length) {
-      if (null != obj20) {
+      if (null != obj22) {
         if (null != memo2) {
-          const parts = str4.split(c31);
+          const parts = str4.split(focusLastInput);
           let mapped = null;
           if (1 !== parts.length) {
             mapped = parts.map((children) => {
               if (arg1 % 2 === 1) {
-                let obj = thread(threadSettingsDraft[28]);
-                if (obj.parse(outer1_39, children, outer1_40).content !== children) {
-                  obj = { style: outer1_6.mentionText, children };
-                  return callback4(stateFromStores, obj, arg1);
+                let obj = outer1_1(outer1_2[29]);
+                if (obj.parse(closure_39, children, closure_40).content !== children) {
+                  obj = { style: null, children: null };
+                  obj[0] = mentionText.mentionText;
+                  obj[1] = children;
+                  return outer1_29(outer1_8, obj, arg1);
                 }
               }
               obj = { children };
-              return callback4(isEdit.Fragment, obj, arg1);
+              return outer1_29(outer1_5.Fragment, obj, arg1);
             });
           }
           return mapped;
@@ -780,285 +1066,265 @@ export default function ForumComposer(parentChannel) {
       }
     }
     return null;
-  }, items16);
-  if (null == obj20) {
+  }, items17);
+  if (null == obj22) {
     return null;
   } else {
-    renderErrorResult = parentChannel;
-    renderErrorResult = threadSettingsDraft;
-    obj = { content: first1 };
-    renderErrorResult = parentChannel(threadSettingsDraft[40]).renderError(tmp26[0], obj);
-    const obj47 = parentChannel(threadSettingsDraft[40]);
-    obj1 = { content: str4, tags: first2 };
-    renderErrorResult = parentChannel(threadSettingsDraft[40]).renderError(tmp27[0], obj1);
-    if (obj20.isMediaChannel()) {
-      const items17 = [parentChannel(threadSettingsDraft[49]).DismissibleContent.MEDIA_CHANNEL_MULTIPLE_THUMBNAIL_NOTICE];
-      let items18 = items17;
+    obj = { content: null };
+    obj[0] = first;
+    const renderErrorResult = tmp5(tmp3[41]).renderError(tmp28, obj);
+    const tmp5Result11 = tmp5(tmp3[41]);
+    obj1 = { content: null, tags: null };
+    obj1[0] = str4;
+    obj1[1] = first1;
+    const renderErrorResult1 = tmp5(tmp3[41]).renderError(tmp15Result3[0], obj1);
+    if (obj22.isMediaChannel()) {
+      const items18 = [tmp5(tmp3[50]).DismissibleContent.MEDIA_CHANNEL_MULTIPLE_THUMBNAIL_NOTICE];
+      let items19 = items18;
     } else {
-      items18 = [];
+      items19 = [];
     }
-    obj2 = {};
-    const items19 = [renderErrorResult.container, ];
-    obj3 = { paddingTop: insets.top, paddingBottom: insets.bottom + tmp67[0] };
-    items19[1] = obj3;
-    obj2.style = items19;
-    obj4 = {
-      channel: parentChannel,
-      height: 44,
-      onClose,
-      onGuidelinesPress() {
-          blurLastInput();
-          let obj = parentChannel(threadSettingsDraft[53]);
-          obj = {
-            channel: parentChannel,
-            onClose() {
-              outer1_32();
-            }
-          };
-          const result = obj.openForumGuidelinesActionSheet(obj);
-        },
-      submitting: first,
-      title: tmp71
+    obj2 = { style: null, children: null };
+    const items20 = [tmp.container, ];
+    obj3 = { paddingTop: null, paddingBottom: null };
+    obj3[0] = insets.top;
+    obj3[1] = insets.bottom + tmp64;
+    items20[1] = obj3;
+    obj2[0] = items20;
+    obj4 = { channel: null, height: 44, onClose: null, onGuidelinesPress: null, submitting: null, title: null };
+    obj4[0] = parentChannel;
+    obj4[2] = onClose;
+    obj4[3] = function onGuidelinesPress() {
+      blurLastInput();
+      let obj = lib(threadSettingsDraft[54]);
+      obj = {
+        channel: lib,
+        onClose() {
+          callback();
+        }
+      };
+      const result = obj.openForumGuidelinesActionSheet(obj);
     };
-    const items20 = [callback4(thread(threadSettingsDraft[52]), obj4), ];
-    obj5 = {};
-    obj6 = { onScroll: animatedScrollHandler, scrollEventThrottle: 16, keyboardShouldPersistTaps: "always", nestedScrollEnabled: false, contentContainerStyle: renderErrorResult.scrollViewContentContainer, keyboardDismissMode: "on-drag" };
-    obj7 = { ref };
-    ({ titleInput: obj27.style, titleInputText: obj27.inputTextStyle } = renderErrorResult);
-    obj7.showTopContainer = false;
-    let intl = parentChannel(threadSettingsDraft[42]).intl;
-    obj7.placeholder = intl.string(parentChannel(threadSettingsDraft[42]).t.lU4dDS);
-    obj7.placeholderTextColor = tmp6;
-    obj7.large = true;
-    obj7.multiline = true;
-    obj7.value = first1;
-    obj7.clearButtonVisibility = parentChannel(threadSettingsDraft[55]).ClearButtonVisibility.NEVER;
-    obj7.maxLength = closure_21;
-    obj7.onChange = callback1;
-    obj7.onBlur = function onBlur() {
+    obj4[4] = tmp17;
+    obj4[5] = tmp68;
+    const items21 = [createForumPost(tmp2(tmp3[53]), obj4), ];
+    obj5 = { onScroll: null, scrollEventThrottle: 16, keyboardShouldPersistTaps: "always", nestedScrollEnabled: false, contentContainerStyle: null, keyboardDismissMode: "on-drag", children: null };
+    obj5[0] = animatedScrollHandler;
+    obj5[4] = tmp.scrollViewContentContainer;
+    let obj6 = { ref: null, style: null, inputTextStyle: null, showTopContainer: false, placeholder: null, placeholderTextColor: null, large: true, multiline: true, value: null, clearButtonVisibility: null, maxLength: null, onChange: null, onBlur: null, onFocus: null, autoFocus: true, autoCorrect: true, textContentType: "none", returnKeyType: "next", onNext: null };
+    obj6[0] = ref;
+    ({ titleInput: obj28[1], titleInputText: obj28[2] } = tmp);
+    let intl = tmp5(tmp3[43]).intl;
+    obj6[4] = intl.string(tmp5(tmp3[43]).t.lU4dDS);
+    obj6[5] = tmp10;
+    obj6[8] = first;
+    obj6[9] = tmp5(tmp3[56]).ClearButtonVisibility.NEVER;
+    obj6[10] = closure_22;
+    obj6[11] = callback1;
+    obj6[12] = function onBlur() {
       if (!isEdit) {
         let name;
-        if (null != threadSettingsDraft) {
-          name = threadSettingsDraft.name;
+        if (threadSettingsDraft != null) {
+          name = tmp.name;
         }
         if (null != name) {
           let name1;
-          if (null != threadSettingsDraft) {
-            name1 = threadSettingsDraft.name;
+          if (tmp != null) {
+            name1 = tmp.name;
           }
-          const tmp19Result = thread(threadSettingsDraft[56])(name1, true);
+          const tmp6Result = thread(threadSettingsDraft[57])(name1, true);
           let name2;
-          if (null != threadSettingsDraft) {
-            name2 = threadSettingsDraft.name;
+          if (tmp != null) {
+            name2 = tmp.name;
           }
-          if (tmp19Result !== name2) {
-            let obj = thread(threadSettingsDraft[33]);
-            obj = { name: tmp19Result };
-            obj.changeThreadSettings(parentChannel.id, obj);
-            callback(tmp19Result);
+          if (tmp6Result !== name2) {
+            const obj = { name: null };
+            obj[0] = tmp6Result;
+            tmp4(tmp5[34]).changeThreadSettings(lib.id, obj);
+            callback(tmp6Result);
+            const tmp4Result = tmp4(tmp5[34]);
           }
-          const tmp19 = thread(threadSettingsDraft[56]);
+          tmp4 = thread;
+          tmp5 = threadSettingsDraft;
+          const tmp6 = thread(threadSettingsDraft[57]);
         }
       }
     };
-    obj7.onFocus = function onFocus() {
-      let tmp = c11 !== parentChannel(threadSettingsDraft[57]).KeyboardTypes.MEDIA;
-      if (tmp) {
-        tmp = c11 !== parentChannel(threadSettingsDraft[57]).KeyboardTypes.EXPRESSION;
+    obj6[13] = function onFocus() {
+      if (!tmp4) {
+        const obj = { type: null, context: null };
+        obj[0] = tmp2(tmp3[58]).KeyboardTypes.SYSTEM;
+        obj[1] = { keyboardWillOpen: true };
+        tmp2(tmp3[59]).setKeyboardType(obj);
+        const tmp2Result = tmp2(tmp3[59]);
       }
-      if (!tmp) {
-        let obj = parentChannel(threadSettingsDraft[58]);
-        obj = { type: parentChannel(threadSettingsDraft[57]).KeyboardTypes.SYSTEM };
-        obj = { keyboardWillOpen: true };
-        obj.context = obj;
-        obj.setKeyboardType(obj);
-      }
-      _undefined4(parentChannel(threadSettingsDraft[44]).PostComposerInputs.TITLE);
+      _undefined6(lib(threadSettingsDraft[45]).PostComposerInputs.TITLE);
     };
-    obj7.autoFocus = true;
-    obj7.autoCorrect = true;
-    obj7.textContentType = "none";
-    obj7.returnKeyType = "next";
-    obj7.onNext = callback;
-    const items21 = [callback4(parentChannel(threadSettingsDraft[54]).FormInput, obj7), , ];
-    let tmp84 = null;
+    obj6[18] = callback;
+    const items22 = [createForumPost(tmp5(tmp3[55]).FormInput, obj6), , ];
+    let tmp71Result = null;
     if (null != renderErrorResult) {
-      obj8 = { style: renderErrorResult.nameError, children: renderErrorResult };
-      tmp84 = callback4(thread(threadSettingsDraft[59]), obj8);
+      const obj7 = { style: null, children: null };
+      obj7[0] = tmp.nameError;
+      obj7[1] = renderErrorResult;
+      tmp71Result = tmp71(tmp2(tmp3[60]), obj7);
     }
-    items21[1] = tmp84;
-    obj9 = { style: renderErrorResult.editor };
-    let tmp91Result = null != stateFromStores;
-    if (tmp91Result) {
-      obj10 = {
-        style: renderErrorResult.avatarContainer,
-        onPress() {
-              const obj = { userId: stateFromStores.id, channelId: obj20.id };
-              let id;
-              if (null != message) {
-                id = message.id;
-              }
-              obj.messageId = id;
-              obj.sourceAnalyticsLocations = analyticsLocations;
-              return thread(threadSettingsDraft[60])(obj);
-            }
+    items22[1] = tmp71Result;
+    const obj8 = { style: null, children: null };
+    obj8[0] = tmp.editor;
+    tmp71Result = null != stateFromStores;
+    if (tmp71Result) {
+      let obj9 = { style: null, onPress: null, children: null };
+      obj9[0] = tmp.avatarContainer;
+      obj9[1] = function onPress() {
+        const obj = { userId: stateFromStores.id, channelId: obj22.id, messageId: null, sourceAnalyticsLocations: null };
+        let id;
+        if (message != null) {
+          id = message.id;
+        }
+        obj[2] = id;
+        obj[3] = analyticsLocations;
+        return thread(threadSettingsDraft[61])(obj);
       };
-      obj11 = { animate: true, style: renderErrorResult.avatar, user: stateFromStores };
+      const obj10 = { animate: null, style: null, user: null, guildId: null, avatarDecoration: null, accessibilityLabel: null };
+      obj10[0] = !stateFromStores1;
+      obj10[1] = tmp.avatar;
+      obj10[2] = stateFromStores;
       let guildId;
-      if (null != parentChannel) {
+      if (parentChannel != null) {
         guildId = parentChannel.getGuildId();
       }
-      let tmp97;
-      if (null != guildId) {
-        tmp97 = guildId;
-      }
-      obj11.guildId = tmp97;
-      obj11.avatarDecoration = stateFromStores.avatarDecoration;
-      let intl2 = parentChannel(threadSettingsDraft[42]).intl;
-      obj12 = { nickname: str5 };
-      obj11.accessibilityLabel = intl2.formatToPlainString(parentChannel(threadSettingsDraft[42]).t.LvU3nj, obj12);
-      obj10.children = callback4(parentChannel(threadSettingsDraft[55]).Avatar, obj11);
-      tmp91Result = callback4(analyticsLocations, obj10);
-      const tmp91 = callback4;
-      const tmp92 = analyticsLocations;
-      const tmp93 = callback4;
+      obj10[3] = guildId;
+      obj10[4] = stateFromStores.avatarDecoration;
+      let intl2 = tmp5(tmp3[43]).intl;
+      const obj11 = { nickname: null };
+      obj11[0] = str5;
+      obj10[5] = intl2.formatToPlainString(tmp5(tmp3[43]).t.LvU3nj, obj11);
+      obj9[2] = tmp71(tmp5(tmp3[56]).Avatar, obj10);
+      tmp71Result = tmp71(analyticsLocations, obj9);
+      const tmp76 = analyticsLocations;
     }
-    const items22 = [tmp91Result, ];
-    obj13 = { style: renderErrorResult.editorBody };
-    renderErrorResult = createForumPost;
-    renderErrorResult = stateFromStores3;
-    obj14 = { style: renderErrorResult.usernameToChannel };
-    renderErrorResult = parentChannel;
-    renderErrorResult = threadSettingsDraft;
-    renderErrorResult = createForumPost;
-    renderErrorResult = stateFromStores3;
-    let intl3 = parentChannel(threadSettingsDraft[42]).intl;
-    const obj15 = { nickname: str5, channelName: tmp10 };
-    obj14.accessibilityLabel = intl3.formatToPlainString(parentChannel(threadSettingsDraft[42]).t["QicUf+"], obj15);
-    renderErrorResult = callback4;
-    obj16 = { name: str5, color: tmp29, colors: tmp31 };
-    const items23 = [callback4(parentChannel(threadSettingsDraft[61]).RoleLabel, obj16), ];
-    renderErrorResult = createForumPost;
-    obj17 = { color: "text-default", variant: "text-xs/medium", style: renderErrorResult.channelName, lineClamp: 1 };
-    let intl4 = parentChannel(threadSettingsDraft[42]).intl;
-    obj18 = { channelName: tmp10 };
-    const items24 = [" ", intl4.format(parentChannel(threadSettingsDraft[42]).t["6Y1Kev"], obj18)];
-    obj17.children = items24;
-    items23[1] = createForumPost(parentChannel(threadSettingsDraft[62]).Text, obj17);
-    obj14.children = items23;
-    const items25 = [createForumPost(stateFromStores3, obj14), , ];
-    renderErrorResult = null;
-    if (null != renderErrorResult) {
-      renderErrorResult = callback4;
-      renderErrorResult = thread;
-      renderErrorResult = threadSettingsDraft;
-      obj19 = { style: renderErrorResult.messageError, children: renderErrorResult };
-      renderErrorResult = callback4(thread(threadSettingsDraft[59]), obj19);
+    const items23 = [tmp71Result, ];
+    const obj12 = { style: null, children: null };
+    obj12[0] = tmp.editorBody;
+    const obj13 = { style: null, accessibilityLabel: null, children: null };
+    obj13[0] = tmp.usernameToChannel;
+    let intl3 = tmp5(tmp3[43]).intl;
+    const obj14 = { nickname: null, channelName: null };
+    obj14[0] = str5;
+    obj14[1] = tmp14;
+    obj13[1] = intl3.formatToPlainString(tmp5(tmp3[43]).t["QicUf+"], obj14);
+    const obj15 = { name: null, color: null, colors: null };
+    obj15[0] = str5;
+    obj15[1] = colorString;
+    obj15[2] = colorStrings;
+    const items24 = [createForumPost(tmp5(tmp3[62]).RoleLabel, obj15), ];
+    const obj16 = { color: "text-default", variant: "text-xs/medium", style: null, lineClamp: 1, children: null };
+    obj16[2] = tmp.channelName;
+    let intl4 = tmp5(tmp3[43]).intl;
+    const obj17 = { channelName: null };
+    obj17[0] = tmp14;
+    const items25 = [" ", intl4.format(tmp5(tmp3[43]).t["6Y1Kev"], obj17)];
+    obj16[4] = items25;
+    items24[1] = callback5(tmp5(tmp3[63]).Text, obj16);
+    obj13[2] = items24;
+    const items26 = [callback5(stateFromStores4, obj13), , ];
+    let tmp71Result1 = null;
+    if (null != renderErrorResult1) {
+      const obj18 = { style: null, children: null };
+      obj18[0] = tmp.messageError;
+      obj18[1] = renderErrorResult1;
+      tmp71Result1 = tmp71(tmp2(tmp3[60]), obj18);
     }
-    items25[1] = renderErrorResult;
-    renderErrorResult = parentChannel;
-    renderErrorResult = threadSettingsDraft;
-    renderErrorResult = callback4;
-    obj20 = { ref: ref1, style: renderErrorResult.contentInput, multiline: true, scrollEnabled: false };
-    let intl5 = parentChannel(threadSettingsDraft[42]).intl;
-    obj20.placeholder = intl5.string(parentChannel(threadSettingsDraft[42]).t["8IPnv1"]);
-    obj20.placeholderTextColor = tmp6;
-    obj20.onChangeText = callback7;
-    obj20.onSelectionChange = callback8;
-    obj20.onFocus = function onFocus() {
-      if (c11 === parentChannel(threadSettingsDraft[57]).KeyboardTypes.MEDIA) {
-        let obj = parentChannel(threadSettingsDraft[58]);
-        obj = { type: parentChannel(threadSettingsDraft[57]).KeyboardTypes.SYSTEM };
-        obj = { keyboardWillOpen: true };
-        obj.context = obj;
-        obj.setKeyboardType(obj);
+    items26[1] = tmp71Result1;
+    const obj19 = { ref: null, style: null, multiline: true, scrollEnabled: false, placeholder: null, placeholderTextColor: null, onChangeText: null, onSelectionChange: null, onFocus: null, showSoftInputOnFocus: null, children: null };
+    obj19[0] = ref1;
+    obj19[1] = tmp.contentInput;
+    let intl5 = tmp5(tmp3[43]).intl;
+    obj19[4] = intl5.string(tmp5(tmp3[43]).t["8IPnv1"]);
+    obj19[5] = tmp10;
+    obj19[6] = callback7;
+    obj19[7] = callback8;
+    obj19[8] = function onFocus() {
+      if (c11 === lib(threadSettingsDraft[58]).KeyboardTypes.MEDIA) {
+        const obj = { type: null, context: null };
+        obj[0] = tmp(tmp2[58]).KeyboardTypes.SYSTEM;
+        obj[1] = { keyboardWillOpen: true };
+        tmp(tmp2[59]).setKeyboardType(obj);
+        const tmpResult = tmp(tmp2[59]);
       }
-      _undefined4(parentChannel(threadSettingsDraft[44]).PostComposerInputs.CONTENT);
+      _undefined6(lib(threadSettingsDraft[45]).PostComposerInputs.CONTENT);
     };
-    obj20.showSoftInputOnFocus = tmp8 !== parentChannel(threadSettingsDraft[57]).KeyboardTypes.EXPRESSION;
-    renderErrorResult = str4;
+    obj19[9] = tmp12 !== tmp5(tmp3[58]).KeyboardTypes.EXPRESSION;
+    let tmp71Result2 = str4;
     if (null != memo3) {
-      renderErrorResult = callback4;
-      renderErrorResult = stateFromStores;
-      const obj21 = { children: memo3 };
-      renderErrorResult = callback4(stateFromStores, obj21);
+      const obj20 = { children: null };
+      obj20[0] = memo3;
+      tmp71Result2 = tmp71(stateFromStores, obj20);
     }
-    obj20.children = renderErrorResult;
-    items25[2] = renderErrorResult(parentChannel(threadSettingsDraft[55]).TextInput, obj20);
-    obj13.children = items25;
-    items22[1] = renderErrorResult(renderErrorResult, obj13);
-    obj9.children = items22;
-    items21[2] = createForumPost(stateFromStores3, obj9);
-    obj6.children = items21;
-    const items26 = [createForumPost(thread(threadSettingsDraft[32]).ScrollView, obj6), , , , ];
-    renderErrorResult = callback4;
-    renderErrorResult = closure_36;
-    const obj22 = { tags: first2 };
-    items26[1] = callback4(closure_36, obj22);
-    renderErrorResult = callback4;
-    renderErrorResult = closure_37;
-    const obj23 = {
-      channel: parentChannel,
-      tags: first2,
-      onTagsSave: callback2,
-      canPost: tmp50,
-      submitting: first,
-      onSubmit: callback6,
-      onShowExpressionPicker() {
-          renderErrorResult.dismiss();
-          let obj = parentChannel(threadSettingsDraft[63]);
-          obj = { channelId: parentChannel.id, onPressEmoji: closure_35, onPressSticker: memo1, onPressGIF: closure_36, onBackspace: closure_37, visibleTabs: items };
-          items = [, ];
-          ({ EMOJI: arr[0], GIF: arr[1] } = callback3);
-          const result = obj.openExpressionPickerActionSheet(obj);
-        },
-      focusLastInput,
-      lastInput: focusHandlers.focusedInput,
-      isEdit,
-      onLayout: callback10
+    const obj21 = { children: null };
+    obj19[10] = tmp71Result2;
+    items26[2] = createForumPost(tmp5(tmp3[56]).TextInput, obj19);
+    obj12[1] = items26;
+    items23[1] = callback5(stateFromStores4, obj12);
+    obj8[1] = items23;
+    items22[2] = callback5(stateFromStores4, obj8);
+    obj5[6] = items22;
+    const items27 = [callback5(tmp2(tmp3[33]).ScrollView, obj5), , , , ];
+    obj22 = { tags: null };
+    obj22[0] = first1;
+    items27[1] = createForumPost(closure_35, obj22);
+    const obj23 = { channel: null, tags: null, onTagsSave: null, canPost: null, submitting: null, onSubmit: null, onShowExpressionPicker: null, focusLastInput: null, lastInput: null, isEdit: null, onLayout: null };
+    obj23[0] = parentChannel;
+    obj23[1] = first1;
+    obj23[2] = callback2;
+    obj23[3] = tmp48;
+    obj23[4] = tmp17;
+    obj23[5] = callback6;
+    obj23[6] = function onShowExpressionPicker() {
+      _undefined.dismiss();
+      let obj = lib(threadSettingsDraft[64]);
+      obj = { channelId: lib.id, onPressEmoji: closure_35, onPressSticker: callback4, onPressGIF: closure_36, onBackspace: closure_37, visibleTabs: items };
+      items = [, ];
+      ({ EMOJI: arr[0], GIF: arr[1] } = memo);
+      const result = obj.openExpressionPickerActionSheet(obj);
     };
-    items26[2] = callback4(closure_37, obj23);
-    renderErrorResult = callback4;
-    renderErrorResult = thread;
-    renderErrorResult = threadSettingsDraft;
-    const obj24 = {};
-    const items27 = [renderErrorResult.horizontalAutocomplete, ];
-    const obj25 = { bottom: insets.bottom };
-    items27[1] = obj25;
-    obj24.style = items27;
-    obj24.onPressAutocompleteItem = pressHorizontalAutocompleteItemHandler;
-    obj24.text = str4;
-    obj24.selection = tmp63;
-    obj24.channel = obj20;
-    class W {
-      constructor(arg0) {
-        return c24.set(parentChannel.contentOffset.y);
+    obj23[7] = focusLastInput;
+    obj23[8] = focusHandlers.focusedInput;
+    obj23[9] = isEdit;
+    obj23[10] = callback10;
+    items27[2] = createForumPost(closure_36, obj23);
+    const obj24 = { style: null, onPressAutocompleteItem: null, text: null, selection: null, channel: null };
+    const items28 = [tmp.horizontalAutocomplete, ];
+    const obj25 = { bottom: null };
+    obj25[0] = insets.bottom;
+    items28[1] = obj25;
+    obj24[0] = items28;
+    obj24[1] = pressHorizontalAutocompleteItemHandler;
+    obj24[2] = str4;
+    obj24[3] = tmp59;
+    obj24[4] = obj22;
+    items27[3] = createForumPost(tmp2(tmp3[65]), obj24);
+    const obj26 = { contentTypes: null, children: null };
+    obj26[0] = items19;
+    obj26[1] = function children(markAsDismissed) {
+      markAsDismissed = markAsDismissed.markAsDismissed;
+      let tmp3 = null;
+      if (markAsDismissed.visibleContent === lib(threadSettingsDraft[50]).DismissibleContent.MEDIA_CHANNEL_MULTIPLE_THUMBNAIL_NOTICE) {
+        const obj = { markAsDismissed: null, actionSheetKey: "ThumbnailBottomSheet", importer: null };
+        obj[0] = function markAsDismissed() {
+          return markAsDismissed(outer1_25.UNKNOWN);
+        };
+        obj[2] = MediaPostMultipleThumbnailActionSheetImporter;
+        tmp3 = createForumPost(lib(threadSettingsDraft[67]).DismissibleActionSheet, obj);
       }
-    }
-    renderErrorResult = callback4;
-    const obj26 = {
-      contentTypes: items18,
-      children(markAsDismissed) {
-          markAsDismissed = markAsDismissed.markAsDismissed;
-          let tmp = null;
-          if (markAsDismissed.visibleContent === parentChannel(threadSettingsDraft[49]).DismissibleContent.MEDIA_CHANNEL_MULTIPLE_THUMBNAIL_NOTICE) {
-            const obj = {
-              markAsDismissed() {
-                  return markAsDismissed(sharedValue.UNKNOWN);
-                },
-              actionSheetKey: "ThumbnailBottomSheet",
-              importer: MediaPostMultipleThumbnailActionSheetImporter
-            };
-            tmp = callback4(parentChannel(threadSettingsDraft[66]).DismissibleActionSheet, obj);
-          }
-          return tmp;
-        }
+      return tmp3;
     };
-    items26[4] = callback4(thread(threadSettingsDraft[65]), obj26);
-    obj5.children = items26;
-    items20[1] = createForumPost(callback5, obj5);
-    obj2.children = items20;
-    return createForumPost(stateFromStores3, obj2);
+    items27[4] = createForumPost(tmp2(tmp3[66]), obj26);
+    obj21[0] = items27;
+    items21[1] = callback5(c31, obj21);
+    obj2[1] = items21;
+    return callback5(stateFromStores4, obj2);
   }
-  pressHorizontalAutocompleteItemHandler = obj18.usePressHorizontalAutocompleteItemHandler({ draftContent: str4, handleTextChange: callback7, setSelection: callback9, channel: parentChannel });
+  const tmp15Result5 = message(obj.useState(0), 2);
 };

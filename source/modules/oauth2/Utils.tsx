@@ -1,56 +1,58 @@
-// Module ID: 8930
-// Function ID: 70483
+// Module ID: 8954
+// Function ID: 8955
 // Name: getApplicationDetailsText
-// Dependencies: [653, 8931, 1212, 8003, 2]
+// Dependencies: [676, 8955, 1236, 5908, 2]
 // Exports: getApplicationDetailsText, isContentClassificationRestricted
 
-// Module 8930 (getApplicationDetailsText)
+// Module 8954 (getApplicationDetailsText)
 import { MarketingURLs } from "ME";
 
 let result = require("getSystemLocale").fileFinishedImporting("modules/oauth2/Utils.tsx");
 
 export const getApplicationDetailsText = function getApplicationDetailsText(application) {
-  let obj = require(8931) /* getIsSocialLayerParentApplication */;
+  let obj = require(8955) /* useIsSocialLayerParentApplication */;
   const isSocialLayerParentApplication = obj.getIsSocialLayerParentApplication(application);
   if (null != application.privacy_policy_url) {
     if (null != application.terms_of_service_url) {
-      const t4 = require(1212) /* getSystemLocale */.t;
-      const intl4 = require(1212) /* getSystemLocale */.intl;
-      obj = {};
-      ({ name: obj5.application, privacy_policy_url: obj5.privacyPolicyURL, terms_of_service_url: obj5.termsOfServiceURL } = application);
-      obj.discordPrivacyPolicyURL = MarketingURLs.PRIVACY;
+      const t4 = tmp(1236).t;
+      const intl4 = tmp(1236).intl;
+      obj = { application: null, privacyPolicyURL: null, termsOfServiceURL: null, discordPrivacyPolicyURL: null };
+      ({ name: obj5[0], privacy_policy_url: obj5[1], terms_of_service_url: obj5[2] } = application);
+      obj[3] = MarketingURLs.PRIVACY;
       return intl4.format(isSocialLayerParentApplication ? t4.yVfotv : t4.rxlyKL, obj);
     }
   }
   if (null != application.privacy_policy_url) {
-    const t3 = require(1212) /* getSystemLocale */.t;
-    const intl3 = require(1212) /* getSystemLocale */.intl;
-    obj = {};
-    ({ name: obj4.application, privacy_policy_url: obj4.privacyPolicyURL } = application);
-    obj.discordPrivacyPolicyURL = MarketingURLs.PRIVACY;
+    const t3 = tmp(1236).t;
+    const intl3 = tmp(1236).intl;
+    obj = { application: null, privacyPolicyURL: null, discordPrivacyPolicyURL: null };
+    ({ name: obj4[0], privacy_policy_url: obj4[1] } = application);
+    obj[2] = MarketingURLs.PRIVACY;
     return intl3.format(isSocialLayerParentApplication ? t3.pYVSah : t3.TBvmM2, obj);
   } else if (null != application.terms_of_service_url) {
-    const t2 = require(1212) /* getSystemLocale */.t;
-    const intl2 = require(1212) /* getSystemLocale */.intl;
-    const obj1 = {};
-    ({ name: obj3.application, terms_of_service_url: obj3.termsOfServiceURL } = application);
-    obj1.discordPrivacyPolicyURL = MarketingURLs.PRIVACY;
+    const t2 = tmp(1236).t;
+    const intl2 = tmp(1236).intl;
+    const obj1 = { application: null, termsOfServiceURL: null, discordPrivacyPolicyURL: null };
+    ({ name: obj3[0], terms_of_service_url: obj3[1] } = application);
+    obj1[2] = MarketingURLs.PRIVACY;
     return intl2.format(isSocialLayerParentApplication ? t2.nBLOp5 : t2["q0T/Q1"], obj1);
   } else {
-    const t = require(1212) /* getSystemLocale */.t;
-    const intl = require(1212) /* getSystemLocale */.intl;
-    const obj2 = { application: application.name, discordPrivacyPolicyURL: MarketingURLs.PRIVACY };
+    const t = tmp(1236).t;
+    const intl = tmp(1236).intl;
+    const obj2 = { application: null, discordPrivacyPolicyURL: null };
+    obj2[0] = application.name;
+    obj2[1] = MarketingURLs.PRIVACY;
     return intl.format(isSocialLayerParentApplication ? t["8LemYv"] : t["3Ywek3"], obj2);
   }
 };
-export const isContentClassificationRestricted = function isContentClassificationRestricted(content_classification, nsfwAllowed) {
+export const isContentClassificationRestricted = function isContentClassificationRestricted(content_classification, closure_32) {
   let result = null != content_classification;
   if (result) {
-    result = require(8003) /* isAgeRestrictedContentClassification */.isAgeRestrictedContentClassification(content_classification);
-    const obj = require(8003) /* isAgeRestrictedContentClassification */;
+    result = require(5908) /* isAgeRestrictedContentClassification */.isAgeRestrictedContentClassification(content_classification);
+    const obj = require(5908) /* isAgeRestrictedContentClassification */;
   }
   if (result) {
-    result = false === nsfwAllowed;
+    result = false === closure_32;
   }
   return result;
 };

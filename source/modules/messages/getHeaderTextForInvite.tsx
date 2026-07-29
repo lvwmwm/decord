@@ -1,10 +1,10 @@
-// Module ID: 12332
-// Function ID: 95992
+// Module ID: 12354
+// Function ID: 12355
 // Name: getHeaderTextForInvite
-// Dependencies: [1212, 2]
+// Dependencies: [1236, 2]
 // Exports: getHeaderTextForInvite
 
-// Module 12332 (getHeaderTextForInvite)
+// Module 12354 (getHeaderTextForInvite)
 const result = require("set").fileFinishedImporting("modules/messages/getHeaderTextForInvite.tsx");
 
 export const getHeaderTextForInvite = function getHeaderTextForInvite(arg0) {
@@ -16,9 +16,9 @@ export const getHeaderTextForInvite = function getHeaderTextForInvite(arg0) {
   let isVoiceChannel;
   ({ isOwnInvite, isGuest, isStage, isStream } = arg0);
   ({ isVoiceChannel, isHubGuild } = arg0);
-  const intl = require(1212) /* getSystemLocale */.intl;
+  const intl = require(1236) /* getSystemLocale */.intl;
   const string = intl.string;
-  let N85DCl = require(1212) /* getSystemLocale */.t;
+  let N85DCl = require(1236) /* getSystemLocale */.t;
   if (isVoiceChannel) {
     if (!isOwnInvite) {
       if (isStream) {

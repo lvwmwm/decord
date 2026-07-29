@@ -1,50 +1,29 @@
-// Module ID: 15911
-// Function ID: 122688
-// Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 27, 8808, 1348, 4237, 15912, 8809, 566, 686, 2]
+// Module ID: 15946
+// Function ID: 15947
+// Name: handleAudioRouteChanged
+// Dependencies: [17, 8832, 1372, 4261, 15947, 8833, 589, 709, 2]
 
-// Module 15911 (_isNativeReflectConstruct)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_4 from "_isNativeReflectConstruct";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
+// Module 15946 (handleAudioRouteChanged)
 import { NativeModules } from "get ActivityIndicator";
-import closure_9 from "_isNativeReflectConstruct";
-import closure_10 from "_isNativeReflectConstruct";
-import closure_11 from "_isNativeReflectConstruct";
+import handleAudioRouteChanged from "handleAudioRouteChanged";
+import ensureGuildLoaded from "ensureGuildLoaded";
+import createRTCConnection from "createRTCConnection";
+import { Store } from "initialize";
 
-const require = arg1;
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
-  }
-  const result = _isNativeReflectConstruct();
-}
-function disconnectFromCurrentStageChannel() {
-  let c12 = null;
-}
 function handleAudioRouteChanged() {
-  if (c13) {
+  if (c8) {
     currentRouteType = currentRouteType.getCurrentRouteType();
-    let tmp5 = currentRouteType === require(8809) /* RouteTypes */.RouteTypes.SPEAKER;
-    if (!tmp5) {
-      tmp5 = currentRouteType === require(8809) /* RouteTypes */.RouteTypes.BLUETOOTH;
-    }
-    let flag2 = currentRouteType !== require(8809) /* RouteTypes */.RouteTypes.UNKNOWN;
+    let flag2 = currentRouteType !== tmp3(8833).RouteTypes.UNKNOWN;
     if (flag2) {
       if (tmp5) {
-        c13 = false;
+        c8 = false;
         flag2 = true;
       } else {
         const AudioRoutePicker = NativeModules.AudioRoutePicker;
-        if (null != AudioRoutePicker) {
+        if (AudioRoutePicker != null) {
           AudioRoutePicker.toggleSpeaker(true);
         }
-        c13 = false;
+        c8 = false;
         flag2 = true;
       }
     }
@@ -53,113 +32,80 @@ function handleAudioRouteChanged() {
     return false;
   }
 }
-let c12 = null;
-let c13 = false;
-let tmp2 = ((Store) => {
-  class StageChannelAudioStore {
-    constructor() {
-      self = this;
-      tmp = outer1_3(this, StageChannelAudioStore);
-      obj = outer1_6(StageChannelAudioStore);
-      tmp2 = outer1_5;
-      if (outer1_14()) {
-        tmp6 = globalThis;
-        _Reflect = Reflect;
-        tmp7 = outer1_6;
-        tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, outer1_6(self).constructor);
-      } else {
-        tmp3 = arguments;
-        tmp4 = arguments;
-        constructResult = obj(...arguments);
-      }
-      return tmp2(self, constructResult);
-    }
-  }
-  callback2(StageChannelAudioStore, Store);
-  let obj = {
-    key: "initialize",
-    value() {
-      this.waitFor(outer1_9, outer1_10, outer1_11);
-      const items = [outer1_9];
-      this.syncWith(items, outer1_16);
-    }
-  };
-  let items = [obj, , ];
-  obj = {
-    key: "getConnectedChannelId",
-    value() {
-      return outer1_12;
-    }
-  };
-  items[1] = obj;
-  obj = {
-    key: "getQueueAudioSwap",
-    value() {
-      return outer1_13;
-    }
-  };
-  items[2] = obj;
-  return callback(StageChannelAudioStore, items);
-})(require("initialize").Store);
-tmp2.displayName = "StageChannelAudioStore";
-tmp2 = new tmp2(require("dispatcher"), {
+let c7 = null;
+let c8 = false;
+class StageChannelAudioStore extends Store {
+}
+const prototype = StageChannelAudioStore.prototype;
+prototype["initialize"] = function initialize() {
+  this.waitFor(handleAudioRouteChanged, ensureGuildLoaded, createRTCConnection);
+  const items = [handleAudioRouteChanged];
+  this.syncWith(items, handleAudioRouteChanged);
+};
+prototype["getConnectedChannelId"] = function getConnectedChannelId() {
+  return c7;
+};
+prototype["getQueueAudioSwap"] = function getQueueAudioSwap() {
+  return c8;
+};
+StageChannelAudioStore.displayName = "StageChannelAudioStore";
+const stageChannelAudioStore = new StageChannelAudioStore(require("dispatcher"), {
   RTC_CONNECTION_STATE: function handleConnectionStatusChanged() {
-    const isConnectedResult = closure_11.isConnected();
-    const channelId = closure_11.getChannelId();
+    const isConnectedResult = createRTCConnection.isConnected();
+    const channelId = createRTCConnection.getChannelId();
     if (isConnectedResult) {
       if (null != channelId) {
         if (channelId !== id) {
           channel = channel.getChannel(channelId);
-          let tmp11 = null != channel;
-          if (tmp11) {
+          let tmp10 = null != channel;
+          if (tmp10) {
             let isGuildStageVoiceResult = channel.isGuildStageVoice();
             if (!isGuildStageVoiceResult) {
               let defaultSpeakerForGuildCall = channel.isGuildVoice();
               if (defaultSpeakerForGuildCall) {
-                let obj = { location: "StageChannelAudioStore" };
-                defaultSpeakerForGuildCall = importDefault(15912).getConfig(obj).defaultSpeakerForGuildCall;
-                const obj2 = importDefault(15912);
+                defaultSpeakerForGuildCall = importDefault(15947).getConfig({ location: "StageChannelAudioStore" }).defaultSpeakerForGuildCall;
+                const obj2 = importDefault(15947);
               }
               isGuildStageVoiceResult = defaultSpeakerForGuildCall;
             }
             if (!isGuildStageVoiceResult) {
               let defaultSpeakerForDMCall = channel.isDM();
               if (defaultSpeakerForDMCall) {
-                obj = { location: "StageChannelAudioStore" };
-                defaultSpeakerForDMCall = importDefault(15912).getConfig(obj).defaultSpeakerForDMCall;
-                const obj4 = importDefault(15912);
+                defaultSpeakerForDMCall = importDefault(15947).getConfig({ location: "StageChannelAudioStore" }).defaultSpeakerForDMCall;
+                const obj3 = importDefault(15947);
               }
               isGuildStageVoiceResult = defaultSpeakerForDMCall;
             }
-            tmp11 = isGuildStageVoiceResult;
+            tmp10 = isGuildStageVoiceResult;
           }
-          if (!tmp11) {
-            disconnectFromCurrentStageChannel();
-          } else if (null != channel) {
-            if (id !== channel.id) {
-              let c13 = true;
+          if (tmp10) {
+            if (null != channel) {
+              if (id !== channel.id) {
+                let c8 = true;
+              }
+              id = channel.id;
             }
-            id = channel.id;
+          } else {
+            id = null;
           }
           return true;
         }
       }
     }
     let flag = !isConnectedResult;
-    if (flag) {
+    if (!isConnectedResult) {
       flag = null == channelId;
     }
     if (flag) {
       flag = null != id;
     }
     if (flag) {
-      disconnectFromCurrentStageChannel();
+      id = null;
       flag = true;
     }
     return flag;
   }
 });
-let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/stage_channels/native/StageChannelAudioStore.tsx");
+const result = require("ensureGuildLoaded").fileFinishedImporting("modules/stage_channels/native/StageChannelAudioStore.tsx");
 
-export default tmp2;
+export default stageChannelAudioStore;

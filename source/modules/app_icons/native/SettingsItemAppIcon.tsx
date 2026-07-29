@@ -1,37 +1,39 @@
-// Module ID: 14463
-// Function ID: 110424
+// Module ID: 14485
+// Function ID: 14486
 // Name: SettingsItemAppIcon
-// Dependencies: [31, 6562, 33, 4165, 689, 6561, 6563, 9740, 14464, 2]
+// Dependencies: [19, 6583, 21, 4189, 712, 6582, 6584, 9762, 14486, 2]
 // Exports: default
 
-// Module 14463 (SettingsItemAppIcon)
-import "result";
-import { getIconById } from "getDefaultIcon";
+// Module 14485 (SettingsItemAppIcon)
+import "noop";
+import { getIconById } from "items";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
 const require = arg1;
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { borderRadius: require("_createForOfIteratorHelperLoose").radii.round };
-_createForOfIteratorHelperLoose.icon = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+createCacheKey = { icon: null };
+createCacheKey = { borderRadius: require("Themes").radii.round };
+createCacheKey[0] = createCacheKey;
+createCacheKey = createCacheKey.createStyles(createCacheKey);
 const result = require("jsxProd").fileFinishedImporting("modules/app_icons/native/SettingsItemAppIcon.tsx");
 
 export default function SettingsItemAppIcon(color) {
   let INTERACTIVE_ICON_DEFAULT = color.color;
   if (INTERACTIVE_ICON_DEFAULT === undefined) {
-    INTERACTIVE_ICON_DEFAULT = importDefault(689).colors.INTERACTIVE_ICON_DEFAULT;
+    INTERACTIVE_ICON_DEFAULT = importDefault(712).colors.INTERACTIVE_ICON_DEFAULT;
   }
-  let obj = require(6561) /* fetchCurrentAppIcon */;
+  let obj = require(6582) /* fetchCurrentAppIcon */;
   const currentAppIcon = obj.useCurrentAppIcon();
-  const tmp3 = _createForOfIteratorHelperLoose();
-  if (currentAppIcon !== require(6563) /* FreemiumAppIconIds */.FreemiumAppIconIds.DEFAULT) {
-    if (null != tmp5) {
-      obj = { style: tmp3.icon, id: currentAppIcon, size: 32 };
-      let tmp10 = jsx(importDefault(14464), { style: tmp3.icon, id: currentAppIcon, size: 32 });
+  const tmp3 = createCacheKey();
+  const tmp4 = require;
+  if (currentAppIcon !== require(6584) /* FreemiumAppIconIds */.FreemiumAppIconIds.DEFAULT) {
+    if (null != tmp7) {
+      obj = { style: null, id: null, size: 32 };
+      obj[0] = tmp3.icon;
+      obj[1] = currentAppIcon;
+      let tmp11 = jsx(importDefault(14486), { style: null, id: null, size: 32 });
     }
-    return tmp10;
+    return tmp11;
   }
-  obj = { color: INTERACTIVE_ICON_DEFAULT };
-  tmp10 = jsx(require(9740) /* ClydeIcon */.ClydeIcon, { color: INTERACTIVE_ICON_DEFAULT });
+  tmp11 = jsx(tmp4(9762).ClydeIcon, { color: INTERACTIVE_ICON_DEFAULT });
 };

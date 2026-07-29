@@ -1,11 +1,11 @@
-// Module ID: 14787
-// Function ID: 112575
+// Module ID: 14813
+// Function ID: 14814
 // Name: SelectMenuNativeComponent
-// Dependencies: [31, 27, 33, 4029, 14788, 2]
+// Dependencies: [19, 17, 21, 4053, 14814, 2]
 // Exports: default
 
-// Module 14787 (SelectMenuNativeComponent)
-import "result";
+// Module 14813 (SelectMenuNativeComponent)
+import "noop";
 import { jsx } from "jsxProd";
 import isFabric from "isFabric";
 
@@ -19,6 +19,6 @@ const result = require("jsxProd").fileFinishedImporting("modules/interaction_com
 export default function SelectMenuNativeComponent(arg0) {
   const obj = {};
   const merged = Object.assign(arg0);
-  obj["style"] = { width: "100%" };
+  obj.style = { width: "100%" };
   return <closure_1 />;
 };

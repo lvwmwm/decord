@@ -1,81 +1,81 @@
-// Module ID: 3892
-// Function ID: 32186
-// Dependencies: [2, 3893, 3946, 3948, 3950, 3952, 3954, 3956, 3958, 3960, 3962, 3964, 3966, 3968, 3970, 3972]
+// Module ID: 3916
+// Function ID: 3917
+// Dependencies: [2, 3917, 3970, 3972, 3974, 3976, 3978, 3980, 3982, 3984, 3986, 3988, 3990, 3992, 3994, 3996]
 
-// Module 3892
+// Module 3916
 const result = require("BountiesScrollGradientRive").fileFinishedImporting("../discord_common/js/packages/design/components/Rive/native/generated/index.tsx");
-for (const key10021 in require("BoostThisServerRive")) {
-  let tmp3 = key10021;
-  arg5[key10021] = require("BoostThisServerRive")[key10021];
+for (const key10018 in require("BoostThisServerRive")) {
+  let tmp3 = key10018;
+  arg5[key10018] = require("BoostThisServerRive")[key10018];
   continue;
 }
-for (const key10026 in require("BountiesScrollGradientRive")) {
-  let tmp4 = key10026;
-  arg5[key10026] = require("BountiesScrollGradientRive")[key10026];
+for (const key10022 in require("BountiesScrollGradientRive")) {
+  let tmp4 = key10022;
+  arg5[key10022] = require("BountiesScrollGradientRive")[key10022];
   continue;
 }
-for (const key10031 in require("BountiesScrollIndicatorRive")) {
-  let tmp5 = key10031;
-  arg5[key10031] = require("BountiesScrollIndicatorRive")[key10031];
+for (const key10026 in require("BountiesScrollIndicatorRive")) {
+  let tmp5 = key10026;
+  arg5[key10026] = require("BountiesScrollIndicatorRive")[key10026];
   continue;
 }
-for (const key10036 in require("CameraRive")) {
-  let tmp6 = key10036;
-  arg5[key10036] = require("CameraRive")[key10036];
+for (const key10030 in require("CameraRive")) {
+  let tmp6 = key10030;
+  arg5[key10030] = require("CameraRive")[key10030];
   continue;
 }
-for (const key10041 in require("CheckpointCardRive")) {
-  let tmp7 = key10041;
-  arg5[key10041] = require("CheckpointCardRive")[key10041];
+for (const key10034 in require("CheckpointCardRive")) {
+  let tmp7 = key10034;
+  arg5[key10034] = require("CheckpointCardRive")[key10034];
   continue;
 }
-for (const key10046 in require("CheckpointFriendsRive")) {
-  let tmp8 = key10046;
-  arg5[key10046] = require("CheckpointFriendsRive")[key10046];
+for (const key10038 in require("CheckpointFriendsRive")) {
+  let tmp8 = key10038;
+  arg5[key10038] = require("CheckpointFriendsRive")[key10038];
   continue;
 }
-for (const key10051 in require("CheckpointIntroRive")) {
-  let tmp9 = key10051;
-  arg5[key10051] = require("CheckpointIntroRive")[key10051];
+for (const key10042 in require("CheckpointIntroRive")) {
+  let tmp9 = key10042;
+  arg5[key10042] = require("CheckpointIntroRive")[key10042];
   continue;
 }
-for (const key10056 in require("CheckpointKnickKnacksRive")) {
-  let tmp10 = key10056;
-  arg5[key10056] = require("CheckpointKnickKnacksRive")[key10056];
+for (const key10046 in require("CheckpointKnickKnacksRive")) {
+  let tmp10 = key10046;
+  arg5[key10046] = require("CheckpointKnickKnacksRive")[key10046];
   continue;
 }
-for (const key10061 in require("ExpressiveButtonRive")) {
-  let tmp11 = key10061;
-  arg5[key10061] = require("ExpressiveButtonRive")[key10061];
+for (const key10050 in require("ExpressiveButtonRive")) {
+  let tmp11 = key10050;
+  arg5[key10050] = require("ExpressiveButtonRive")[key10050];
   continue;
 }
-for (const key10066 in require("GameServerHostingRive")) {
-  let tmp12 = key10066;
-  arg5[key10066] = require("GameServerHostingRive")[key10066];
+for (const key10054 in require("GameServerHostingRive")) {
+  let tmp12 = key10054;
+  arg5[key10054] = require("GameServerHostingRive")[key10054];
   continue;
 }
-for (const key10071 in require("MicrophoneRive")) {
-  let tmp13 = key10071;
-  arg5[key10071] = require("MicrophoneRive")[key10071];
+for (const key10058 in require("MicrophoneRive")) {
+  let tmp13 = key10058;
+  arg5[key10058] = require("MicrophoneRive")[key10058];
   continue;
 }
-for (const key10076 in require("NitroQuestOrbsMultiplierRive")) {
-  let tmp14 = key10076;
-  arg5[key10076] = require("NitroQuestOrbsMultiplierRive")[key10076];
+for (const key10062 in require("NitroQuestOrbsMultiplierRive")) {
+  let tmp14 = key10062;
+  arg5[key10062] = require("NitroQuestOrbsMultiplierRive")[key10062];
   continue;
 }
-for (const key10081 in require("OmnibuttonCoachmarkRive")) {
-  let tmp15 = key10081;
-  arg5[key10081] = require("OmnibuttonCoachmarkRive")[key10081];
+for (const key10066 in require("OmnibuttonCoachmarkRive")) {
+  let tmp15 = key10066;
+  arg5[key10066] = require("OmnibuttonCoachmarkRive")[key10066];
   continue;
 }
-for (const key10086 in require("TeenScreenTimeRive")) {
-  let tmp16 = key10086;
-  arg5[key10086] = require("TeenScreenTimeRive")[key10086];
+for (const key10070 in require("TeenScreenTimeRive")) {
+  let tmp16 = key10070;
+  arg5[key10070] = require("TeenScreenTimeRive")[key10070];
   continue;
 }
-for (const key10091 in require("ThemeAwareNitroWishlistingWumpusRive")) {
-  let tmp17 = key10091;
-  arg5[key10091] = require("ThemeAwareNitroWishlistingWumpusRive")[key10091];
+for (const key10074 in require("ThemeAwareNitroWishlistingWumpusRive")) {
+  let tmp17 = key10074;
+  arg5[key10074] = require("ThemeAwareNitroWishlistingWumpusRive")[key10074];
   continue;
 }

@@ -1,23 +1,23 @@
-// Module ID: 9430
-// Function ID: 73350
+// Module ID: 9454
+// Function ID: 9455
 // Name: DiscordTag
-// Dependencies: [31, 27, 33, 4165, 689, 4161, 8366, 2]
+// Dependencies: [19, 17, 21, 4189, 712, 4185, 8390, 2]
 // Exports: default
 
-// Module 9430 (DiscordTag)
-import "result";
+// Module 9454 (DiscordTag)
+import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_4;
-let closure_5;
+let c4;
+let c5;
 const require = arg1;
-({ jsx: closure_4, jsxs: closure_5 } = jsxProd);
-_createForOfIteratorHelperLoose = { container: { flexGrow: 1, alignItems: "center", flexDirection: "row" } };
-_createForOfIteratorHelperLoose = { marginLeft: require("_createForOfIteratorHelperLoose").space.PX_4 };
-_createForOfIteratorHelperLoose.botTag = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+({ jsx: c4, jsxs: c5 } = jsxProd);
+createCacheKey = { container: { flexGrow: 1, alignItems: "center", flexDirection: "row" }, botTag: null };
+createCacheKey = { marginLeft: require("Themes").space.PX_4 };
+createCacheKey[1] = createCacheKey;
+createCacheKey = createCacheKey.createStyles(createCacheKey);
 const result = require("jsxProd").fileFinishedImporting("modules/user_profile/native/DiscordTag.tsx");
 
 export default function DiscordTag(arg0) {
@@ -32,44 +32,51 @@ export default function DiscordTag(arg0) {
   if (hideBotTag === undefined) {
     hideBotTag = false;
   }
-  const tmp = _createForOfIteratorHelperLoose();
-  let obj = { style: tmp.container };
+  const tmp = createCacheKey();
+  let obj = { style: tmp.container, children: null };
   if (null != nick) {
-    obj = { variant: "text-md/semibold", maxFontSizeMultiplier: 2, style: nicknameStyle, lineClamp: 1, children: nick };
-    let tmp4Result = callback(require(4161) /* Text */.Text, obj);
+    obj = { variant: "text-md/semibold", maxFontSizeMultiplier: 2, style: null, lineClamp: 1, children: null };
+    obj[2] = nicknameStyle;
+    obj[4] = nick;
+    let tmp2Result = callback(require(4185) /* Text */.Text, obj);
   } else {
-    tmp4Result = null;
+    tmp2Result = null;
     if (null != user) {
-      obj = { variant: "text-md/semibold", style: usernameStyle, lineClamp: 1, maxFontSizeMultiplier: 2 };
+      obj = { variant: "text-md/semibold", style: null, lineClamp: 1, maxFontSizeMultiplier: 2, children: null };
+      obj[1] = usernameStyle;
       const items = [user.toString(), ];
-      let tmp7 = !user.hasUniqueUsername();
-      if (tmp7) {
-        const obj1 = { variant: "text-md/semibold", color: "text-muted", style: discriminatorStyle };
+      const hasUniqueUsernameResult = user.hasUniqueUsername();
+      tmp2Result = !hasUniqueUsernameResult;
+      if (!hasUniqueUsernameResult) {
+        const obj1 = { variant: "text-md/semibold", color: "text-muted", style: null, children: null };
+        obj1[2] = discriminatorStyle;
         const items1 = ["#", user.discriminator];
-        obj1.children = items1;
-        tmp7 = callback2(require(4161) /* Text */.Text, obj1);
+        obj1[3] = items1;
+        tmp2Result = tmp2(tmp4(4185).Text, obj1);
       }
-      items[1] = tmp7;
-      obj.children = items;
-      tmp4Result = callback2(require(4161) /* Text */.Text, obj);
-      const tmp4 = callback2;
+      items[1] = tmp2Result;
+      obj[4] = items;
+      tmp2Result = tmp2(require(4185) /* Text */.Text, obj);
+      tmp4 = require;
     }
   }
-  const items2 = [tmp4Result, ];
+  const items2 = [tmp2Result, ];
   let bot;
-  if (null != user) {
+  if (user != null) {
     bot = user.bot;
   }
-  let tmp16 = null;
+  let tmp13 = null;
   if (true === bot) {
-    tmp16 = null;
+    tmp13 = null;
     if (!hideBotTag) {
-      const obj2 = { style: tmp.botTag, verified: user.isVerifiedBot() };
-      tmp16 = callback(importDefault(8366), obj2);
-      const tmp20 = importDefault(8366);
+      const obj2 = { style: null, verified: null };
+      obj2[0] = tmp.botTag;
+      obj2[1] = user.isVerifiedBot();
+      tmp13 = callback(importDefault(8390), obj2);
+      const tmp17 = importDefault(8390);
     }
   }
-  items2[1] = tmp16;
-  obj.children = items2;
-  return callback2(View, obj);
+  items2[1] = tmp13;
+  obj[1] = items2;
+  return closure_5(View, obj);
 };

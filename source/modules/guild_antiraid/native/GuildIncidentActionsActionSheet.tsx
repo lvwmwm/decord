@@ -1,260 +1,254 @@
-// Module ID: 10995
-// Function ID: 85254
+// Module ID: 11019
+// Function ID: 11020
 // Name: DurationSelectionActionSheet
-// Dependencies: [31, 10223, 10996, 7775, 653, 33, 4165, 5533, 5220, 1212, 5535, 624, 7774, 4133, 1273, 5198, 5536, 5537, 8322, 7606, 5000, 4578, 10997, 675, 10998, 2]
+// Dependencies: [19, 10244, 11020, 7798, 676, 21, 4189, 5551, 5242, 1236, 5553, 647, 7797, 4157, 1297, 5220, 5554, 5555, 8346, 7629, 5022, 4600, 11021, 698, 11022, 2]
 
-// Module 10995 (DurationSelectionActionSheet)
-import result from "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 11019 (DurationSelectionActionSheet)
+import WarningIcon from "WarningIcon";
+import computeAlertSettings from "computeAlertSettings";
 import useGuildIncidentsActionSheetStore from "useGuildIncidentsActionSheetStore";
 import { getTimeframes } from "GUILD_REPORT_RAID_MOBILE_KEY";
 import ME from "ME";
-import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import jsxProd from "Button";
+import createCacheKey from "createCacheKey";
 
-let closure_10;
+let c10;
+let c5;
+let c9;
 let closure_12;
-let closure_13;
 let closure_14;
 let closure_15;
-let closure_5;
 let closure_6;
-let closure_7;
-let closure_8;
-let closure_9;
+let error;
+let map1;
+let metroImportAll;
 const require = arg1;
 function DurationSelectionActionSheet(onClose) {
   onClose = onClose.onClose;
-  let obj = {};
-  obj = {};
-  const intl = onClose(1212).intl;
-  obj.title = intl.string(onClose(1212).t.vKYZzc);
-  const items = [callback2(onClose(5220).BottomSheetTitleHeader, obj), ];
-  obj = {
-    hasIcons: false,
-    children: getTimeframes().map((label) => {
-      let closure_0 = label;
-      return outer1_14(onClose(outer1_2[10]).ActionSheetRow, {
-        label: label.label,
-        onPress() {
-          outer2_9(label.value);
-          label();
-        }
-      }, label.value);
-    })
-  };
-  items[1] = callback2(onClose(5535).ActionSheetRow.Group, obj);
-  obj.children = items;
-  return callback3(onClose(5533).ActionSheet, obj);
+  let obj = { children: null };
+  obj = { title: null };
+  const intl = onClose(1236).intl;
+  obj[0] = intl.string(onClose(1236).t.vKYZzc);
+  const items = [callback2(onClose(5242).BottomSheetTitleHeader, obj), ];
+  obj = { hasIcons: false, children: null };
+  obj[1] = getTimeframes().map((label) => {
+    let closure_0 = label;
+    return outer1_14(onClose(outer1_2[10]).ActionSheetRow, {
+      label: label.label,
+      onPress() {
+        outer2_9(label.value);
+        label();
+      }
+    }, label.value);
+  });
+  items[1] = callback2(onClose(5553).ActionSheetRow.Group, obj);
+  obj[0] = items;
+  return callback3(onClose(5551).ActionSheet, obj);
 }
-({ resetGuildIncidentsActionSheetStore: closure_5, setInitialTime: closure_6, setPauseDms: closure_7, setPauseInvites: closure_8, setTime: closure_9, useGuildIncidentsActionSheetStore: closure_10 } = useGuildIncidentsActionSheetStore);
-({ AnalyticEvents: closure_12, GuildFeatures: closure_13 } = ME);
+({ resetGuildIncidentsActionSheetStore: c5, setInitialTime: closure_6, setPauseDms: error, setPauseInvites: metroImportAll, setTime: c9, useGuildIncidentsActionSheetStore: c10 } = useGuildIncidentsActionSheetStore);
+({ AnalyticEvents: closure_12, GuildFeatures: map1 } = ME);
 ({ jsx: closure_14, jsxs: closure_15 } = jsxProd);
-let closure_16 = _createForOfIteratorHelperLoose.createStyles({ beta: { marginLeft: -12 } });
+let closure_16 = createCacheKey.createStyles({ beta: { marginLeft: -12 } });
 class GuildIncidentActionsActionSheet {
   constructor(arg0) {
     guild = global.guild;
     analyticsData = global.analyticsData;
-    onDurationSelectorClose = function onDurationSelectorClose(closure_5) {
+    time = undefined;
+    pauseInvites = undefined;
+    pauseDms = undefined;
+    c5 = undefined;
+    c6 = undefined;
+    hasDMsDisabled = undefined;
+    onDurationSelectorClose = function onDurationSelectorClose(c5) {
       let obj = guild(time[13]);
       obj = { content: outer1_14(outer1_18, obj), key: "GuildIncidentActionsActionSheet" };
       obj = { guild, analyticsData };
       obj.showActionSheet(obj);
     };
-    handleClose = function handleClose() {
-      analyticsData(time[13]).hideActionSheet("GuildIncidentActionsActionSheet");
-      hasInvitesDisabledResult();
-    };
-    tmp = c16();
-    tmp2 = c10();
+    tmp = jsxs();
+    tmp2 = closure_10();
     time = tmp2.time;
     pauseInvites = tmp2.pauseInvites;
     pauseDms = tmp2.pauseDms;
+    tmp3 = guild;
+    tmp4 = time;
     obj = require("defaultAreStatesEqual");
     items = [];
     items[0] = pauseDms;
     stateFromStores = obj.useStateFromStores(items, () => pauseDms.getGuildIncident(guild.id));
-    obj2 = require("hasDetectedRaid");
+    obj2 = require("DATE_CONFIG");
     hasInvitesDisabledResult = obj2.hasInvitesDisabled(stateFromStores);
-    closure_5 = hasInvitesDisabledResult;
-    obj3 = require("hasDetectedRaid");
+    c5 = hasInvitesDisabledResult;
+    obj3 = require("DATE_CONFIG");
     hasDMsDisabledResult = obj3.hasDMsDisabled(stateFromStores);
-    setInitialTime = hasDMsDisabledResult;
-    obj4 = require("hasDetectedRaid");
+    c6 = hasDMsDisabledResult;
+    obj4 = require("DATE_CONFIG");
     result = obj4.initialLockdownDurationHours(stateFromStores);
-    c7 = result;
+    hasDMsDisabled = result;
     hasItem = undefined;
-    if (null != guild) {
+    if (guild != null) {
       features = guild.features;
-      tmp8 = GuildFeatures;
+      tmp10 = GuildFeatures;
       hasItem = features.has(GuildFeatures.INVITES_DISABLED);
     }
     items1 = [, ];
     items1[0] = hasDMsDisabledResult;
     items1[1] = hasInvitesDisabledResult;
     effect = pauseInvites.useEffect(() => {
-      onDurationSelectorClose(closure_5);
-      result(closure_6);
+      onDurationSelectorClose(c5);
+      _undefined3(c6);
     }, items1);
     items2 = [];
     items2[0] = result;
     effect1 = pauseInvites.useEffect(() => {
       if (!outer1_10.getState().hasTimeChanges) {
-        hasDMsDisabledResult(closure_7);
+        _undefined2(c7);
       }
     }, items2);
     items3 = [];
     items3[0] = time;
     memo = pauseInvites.useMemo(() => {
+      const found = outer1_11().find((value) => value.value === closure_2);
       let label;
-      const found = outer1_11().find((value) => value.value === outer1_2);
-      if (null != found) {
+      if (found != null) {
         label = found.label;
       }
       return label;
     }, items3);
-    tmp12 = jsxs;
-    obj = { startExpanded: true };
-    obj1 = {};
+    tmp14 = jsxs;
+    obj = { startExpanded: true, header: null, children: null };
+    tmp15 = jsx;
+    obj1 = { title: null, leading: null };
     intl = require("getSystemLocale").intl;
-    obj1.title = intl.string(require("getSystemLocale").t.oCYAc7);
-    obj2 = {};
-    obj2.size = require("Button").BetaSizes.SMALL;
-    obj2.style = tmp.beta;
-    obj1.leading = jsx(require("Button").BetaTag, obj2);
-    obj.header = jsx(require("RedesignBottomSheetTitleHeaderBase").BottomSheetTitleHeader, obj1);
-    tmp13 = jsx;
-    obj3 = { trailing: null, label: null, arrow: true, onPress: null, start: true, end: true };
-    tmp14 = jsx;
-    obj4 = {};
-    str = "";
-    if (null != memo) {
-      str = memo;
+    obj1[0] = intl.string(require("getSystemLocale").t.oCYAc7);
+    obj2 = { size: null, style: null };
+    obj2[0] = require("Button").BetaSizes.SMALL;
+    obj2[1] = tmp.beta;
+    obj1[1] = jsx(require("Button").BetaTag, obj2);
+    obj[1] = jsx(require("RedesignBottomSheetTitleHeaderBase").BottomSheetTitleHeader, obj1);
+    str = memo;
+    if (memo == null) {
+      str = "";
     }
-    obj4.text = str;
-    obj3.trailing = tmp14(require("TableRowInner").TableRow.TrailingText, obj4);
+    obj3 = { trailing: tmp15(require("TableRowInner").TableRow.TrailingText, { text: str }), label: null, arrow: true, onPress: null, start: true, end: true, accessibilityLabel: null, accessibilityHint: null };
     intl2 = require("getSystemLocale").intl;
-    obj3.label = intl2.string(require("getSystemLocale").t.vKYZzc);
-    obj3.onPress = function onPress() {
+    obj3[1] = intl2.string(require("getSystemLocale").t.vKYZzc);
+    obj3[3] = function onPress() {
       let obj = guild(time[13]);
       obj = { content: outer1_14(outer1_17, obj), key: "DurationSelectionActionSheet" };
       obj = { onClose: onDurationSelectorClose };
       obj.showActionSheet(obj);
     };
     intl3 = require("getSystemLocale").intl;
-    obj3.accessibilityLabel = intl3.string(require("getSystemLocale").t.vKYZzc);
-    obj3.accessibilityHint = memo;
+    obj3[6] = intl3.string(require("getSystemLocale").t.vKYZzc);
+    obj3[7] = memo;
     items4 = [, , , ];
-    items4[0] = tmp13(require("TableRowInner").TableRow, obj3);
-    tmp15 = jsxs;
-    obj5 = { hasIcons: true };
-    tmp16 = jsx;
-    obj6 = {};
+    items4[0] = tmp15(require("TableRowInner").TableRow, obj3);
+    obj4 = { label: null, subLabel: null, value: null, onValueChange: null, disabled: null };
     intl4 = require("getSystemLocale").intl;
-    obj6.label = intl4.string(require("getSystemLocale").t.Uwsjn6);
+    obj4[0] = intl4.string(require("getSystemLocale").t.Uwsjn6);
     intl5 = require("getSystemLocale").intl;
-    obj6.subLabel = intl5.string(require("getSystemLocale").t.qPJkZh);
-    tmp17 = pauseInvites;
+    obj4[1] = intl5.string(require("getSystemLocale").t.qPJkZh);
+    tmp16 = pauseInvites;
     if (!pauseInvites) {
-      tmp17 = hasItem;
+      tmp16 = hasItem;
     }
-    obj6.value = tmp17;
-    obj6.onValueChange = function onValueChange() {
+    obj4[2] = tmp16;
+    obj4[3] = function onValueChange() {
       onDurationSelectorClose(!pauseInvites);
     };
-    obj6.disabled = hasItem;
+    obj4[4] = hasItem;
     items5 = [, ];
-    items5[0] = tmp16(require("TableSwitchRow").TableSwitchRow, obj6);
+    items5[0] = tmp15(require("TableSwitchRow").TableSwitchRow, obj4);
     if (hasItem) {
-      tmp18 = jsx;
-      tmp19 = guild;
-      tmp20 = time;
-      obj7 = {};
-      tmp21 = jsx;
-      obj8 = {};
-      tmp22 = analyticsData;
-      num = 18;
-      obj8.source = require("registerAsset");
-      num2 = 19;
-      obj8.IconComponent = require("WarningIcon").WarningIcon;
-      str2 = "secondary";
-      obj8.variant = "secondary";
-      obj7.icon = jsx(require("TableRowInner").TableRow.Icon, obj8);
+      obj5 = { icon: null, label: null };
+      obj6 = { source: null, IconComponent: null, variant: "secondary" };
+      tmp17 = analyticsData;
+      obj6[0] = require("registerAsset");
+      obj6[1] = require("WarningIcon").WarningIcon;
+      obj5[0] = tmp15(require("TableRowInner").TableRow.Icon, obj6);
       intl6 = require("getSystemLocale").intl;
-      obj7.label = intl6.string(require("getSystemLocale").t["9GPbsV"]);
-      hasItem = jsx(require("TableRowInner").TableRow, obj7);
+      obj5[1] = intl6.string(require("getSystemLocale").t["9GPbsV"]);
+      hasItem = tmp15(require("TableRowInner").TableRow, obj5);
     }
     items5[1] = hasItem;
-    obj5.children = items5;
-    items4[1] = tmp15(require("TableRowGroupTitle").TableRowGroup, obj5);
-    obj9 = {};
+    items4[1] = tmp14(require("TableRowGroupTitle").TableRowGroup, { hasIcons: true, children: items5 });
+    obj7 = { label: null, subLabel: null, value: null, onValueChange: null, start: true, end: true };
     intl7 = require("getSystemLocale").intl;
-    obj9.label = intl7.string(require("getSystemLocale").t["wrDmA/"]);
+    obj7[0] = intl7.string(require("getSystemLocale").t["wrDmA/"]);
     intl8 = require("getSystemLocale").intl;
-    obj9.subLabel = intl8.string(require("getSystemLocale").t.UQbJW7);
-    obj9.value = pauseDms;
-    obj9.onValueChange = function onValueChange() {
-      result(!pauseDms);
+    obj7[1] = intl8.string(require("getSystemLocale").t.UQbJW7);
+    obj7[2] = pauseDms;
+    obj7[3] = function onValueChange() {
+      _undefined3(!pauseDms);
     };
-    obj9.start = true;
-    obj9.end = true;
-    items4[2] = jsx(require("TableSwitchRow").TableSwitchRow, obj9);
-    tmp23 = jsxs;
-    obj10 = {};
-    tmp24 = jsx;
-    obj11 = {
+    items4[2] = tmp15(require("TableSwitchRow").TableSwitchRow, obj7);
+    obj8 = {
       onPress() {
             let alertType;
             let messageId;
             let source;
             let obj = guild(time[22]);
             const result = obj.setGuildIncidentActions(guild.id, pauseInvites, pauseDms, time);
-            handleClose();
+            let obj1 = analyticsData(time[13]);
+            obj1.hideActionSheet("GuildIncidentActionsActionSheet");
+            _undefined();
             ({ source, alertType, messageId } = analyticsData);
-            let obj1 = analyticsData(time[23]);
-            obj = { guild_id: guild.id, source, raid_alert_id: messageId, raid_alert_type: alertType, intervention_type_enabled: guild(time[12]).getEnabledInterventions(pauseInvites, pauseDms) };
-            const obj4 = guild(time[12]);
-            obj.intervention_type_disabled = guild(time[12]).getDisabledInterventions(pauseInvites, pauseDms);
-            obj.duration = 60 * time;
-            obj1.track(outer1_12.GUILD_RAID_INTERVENTION_STATE_CHANGE, obj);
-            let tmp4 = !closure_5;
-            if (tmp4) {
-              tmp4 = !closure_6;
+            obj = { guild_id: guild.id, source, raid_alert_id: messageId, raid_alert_type: alertType, intervention_type_enabled: null, intervention_type_disabled: null, duration: null };
+            const obj3 = analyticsData(time[23]);
+            const tmp = guild;
+            const tmp3 = guild;
+            const tmp4 = pauseInvites;
+            const tmp5 = pauseDms;
+            const tmp7 = analyticsData;
+            obj[4] = guild(time[12]).getEnabledInterventions(pauseInvites, pauseDms);
+            const obj5 = guild(time[12]);
+            obj[5] = guild(time[12]).getDisabledInterventions(pauseInvites, pauseDms);
+            obj[6] = 60 * time;
+            obj3.track(outer1_12.GUILD_RAID_INTERVENTION_STATE_CHANGE, obj);
+            let tmp11 = !_undefined;
+            if (!_undefined) {
+              tmp11 = !c6;
             }
-            if (!tmp4) {
-              tmp4 = pauseInvites;
+            if (!tmp11) {
+              tmp11 = tmp4;
             }
-            if (!tmp4) {
-              tmp4 = pauseDms;
+            if (!tmp11) {
+              tmp11 = tmp5;
             }
-            if (!tmp4) {
-              obj = {};
-              obj1 = { guildId: guild.id };
-              obj.content = outer1_14(analyticsData(time[24]), obj1);
-              obj.key = "GuildRaidLockdownFeedbackActionSheet";
-              guild(time[13]).showActionSheet(obj);
-              const obj6 = guild(time[13]);
+            if (!tmp11) {
+              obj = { content: null, key: "GuildRaidLockdownFeedbackActionSheet" };
+              obj1 = { guildId: null };
+              obj1[0] = tmp3.id;
+              obj[0] = outer1_14(tmp7(tmp2[24]), obj1);
+              tmp(tmp2[13]).showActionSheet(obj);
+              const tmpResult = tmp(tmp2[13]);
             }
-          }
+          },
+      text: null,
+      variant: "primary",
+      size: "md",
+      disabled: null
     };
     intl9 = require("getSystemLocale").intl;
-    obj11.text = intl9.string(require("getSystemLocale").t["R3BPH+"]);
-    obj11.variant = "primary";
-    obj11.size = "md";
-    tmp25 = pauseInvites !== hasInvitesDisabledResult || pauseDms !== hasDMsDisabledResult || tmp2.hasTimeChanges;
-    obj11.disabled = !tmp25;
+    obj8[1] = intl9.string(require("getSystemLocale").t["R3BPH+"]);
+    tmp18 = pauseInvites !== hasInvitesDisabledResult || pauseDms !== hasDMsDisabledResult || tmp2.hasTimeChanges;
+    obj9 = { children: null };
+    obj8[4] = !tmp18;
+    handleClose = function handleClose() {
+      analyticsData(time[13]).hideActionSheet("GuildIncidentActionsActionSheet");
+      _undefined();
+    };
     items6 = [, ];
-    items6[0] = tmp24(require("Button").Button, obj11);
-    obj12 = { onPress: handleClose };
+    items6[0] = tmp15(require("Button").Button, obj8);
+    obj10 = { onPress: handleClose, text: null, variant: "secondary", size: "md" };
     intl10 = require("getSystemLocale").intl;
-    obj12.text = intl10.string(require("getSystemLocale").t["ETE/oC"]);
-    obj12.variant = "secondary";
-    obj12.size = "md";
-    items6[1] = jsx(require("Button").Button, obj12);
-    obj10.children = items6;
-    items4[3] = tmp23(require("ButtonGroup").ButtonGroup, obj10);
-    obj.children = items4;
-    return tmp12(require("ActionSheet").ActionSheet, obj);
+    obj10[1] = intl10.string(require("getSystemLocale").t["ETE/oC"]);
+    items6[1] = tmp15(require("Button").Button, obj10);
+    obj9[0] = items6;
+    items4[3] = tmp14(require("ButtonGroup").ButtonGroup, obj9);
+    obj[2] = items4;
+    return tmp14(require("ActionSheet").ActionSheet, obj);
   }
 }
 let result = require("useGuildIncidentsActionSheetStore").fileFinishedImporting("modules/guild_antiraid/native/GuildIncidentActionsActionSheet.tsx");

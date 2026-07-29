@@ -1,28 +1,28 @@
-// Module ID: 11313
-// Function ID: 87810
+// Module ID: 11337
+// Function ID: 11338
 // Name: set
-// Dependencies: [31, 27, 4157, 33, 1882, 4165, 689, 566, 4026, 11314, 11315, 4161, 11316, 1273, 9629, 2]
+// Dependencies: [19, 17, 4181, 21, 1906, 4189, 712, 589, 4050, 11338, 11339, 4185, 11340, 1297, 9651, 2]
 // Exports: default
 
-// Module 11313 (set)
-import "result";
+// Module 11337 (set)
+import "noop";
 import { View } from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import set from "_isNativeReflectConstruct";
+import createCacheKey from "createCacheKey";
+import set from "maybeApplyNoTextColorForLightCustomTheme";
 
-let closure_5;
+let c5;
 let closure_6;
 const require = arg1;
-({ jsx: closure_5, jsxs: closure_6 } = jsxProd);
+({ jsx: c5, jsxs: closure_6 } = jsxProd);
 let items = [require("PermissionOverwriteType").ApplicationCommandOptionType.STRING, require("PermissionOverwriteType").ApplicationCommandOptionType.INTEGER, require("PermissionOverwriteType").ApplicationCommandOptionType.ATTACHMENT, require("PermissionOverwriteType").ApplicationCommandOptionType.BOOLEAN, require("PermissionOverwriteType").ApplicationCommandOptionType.MENTIONABLE, require("PermissionOverwriteType").ApplicationCommandOptionType.USER, require("PermissionOverwriteType").ApplicationCommandOptionType.ROLE, require("PermissionOverwriteType").ApplicationCommandOptionType.CHANNEL, require("PermissionOverwriteType").ApplicationCommandOptionType.NUMBER];
 let set = new Set(items);
-_createForOfIteratorHelperLoose = { optionDescription: { marginTop: 4 }, optionErrorContainer: { flexDirection: "row", alignItems: "center", marginTop: 4 } };
-_createForOfIteratorHelperLoose = { marginRight: 4, tintColor: require("_createForOfIteratorHelperLoose").colors.ICON_FEEDBACK_CRITICAL, alignItems: "center" };
-_createForOfIteratorHelperLoose.optionErrorIcon = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.labelText = { marginBottom: 8 };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+createCacheKey = { optionDescription: { marginTop: 4 }, optionErrorContainer: { flexDirection: "row", alignItems: "center", marginTop: 4 }, optionErrorIcon: null, labelText: null };
+createCacheKey = { marginRight: 4, tintColor: require("Themes").colors.ICON_FEEDBACK_CRITICAL, alignItems: "center" };
+createCacheKey[2] = createCacheKey;
+createCacheKey[3] = { marginBottom: 8 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
 let items1 = [require("PermissionOverwriteType").ApplicationCommandOptionType.STRING, require("PermissionOverwriteType").ApplicationCommandOptionType.INTEGER, require("PermissionOverwriteType").ApplicationCommandOptionType.NUMBER];
 const result = set.fileFinishedImporting("modules/app_launcher/native/screens/command_view/CommandOptionView.tsx");
 
@@ -30,7 +30,7 @@ export default function CommandOptionView(option) {
   let View;
   let autoFocusType;
   let channel;
-  let _isNativeReflectConstruct;
+  let maybeApplyNoTextColorForLightCustomTheme;
   let command;
   let dependencyMap;
   let editedOptions;
@@ -44,96 +44,106 @@ export default function CommandOptionView(option) {
   let optionValues;
   let style;
   option = option.option;
-  ({ editedOptions, onOptionViewLayout: importDefault, onPressOption: dependencyMap, onPressAttachmentOption: View, optionValidationResults, setFocusedOption: _isNativeReflectConstruct } = option);
+  ({ editedOptions, onOptionViewLayout: importDefault, onPressOption: dependencyMap, onPressAttachmentOption: View, optionValidationResults, setFocusedOption: maybeApplyNoTextColorForLightCustomTheme } = option);
   ({ style, autoFocusType, onDismiss, onStartEditing, onEndEditing, onOptionValueChange, channel, command, optionValues, isPreSelectedOption } = option);
-  const tmp = _createForOfIteratorHelperLoose();
-  let obj = option(566);
-  const items = [_isNativeReflectConstruct];
-  const stateFromStores = obj.useStateFromStores(items, () => outer1_4.useReducedMotion);
-  const ReduceMotion = option(4026).ReduceMotion;
-  const tmp3 = stateFromStores ? ReduceMotion.Always : ReduceMotion.Never;
-  let obj1 = option(11314);
-  const optionEnteringAnimation = obj1.useOptionEnteringAnimation();
+  const tmp = createCacheKey();
+  let obj = option(589);
+  const items = [maybeApplyNoTextColorForLightCustomTheme];
+  const stateFromStores = obj.useStateFromStores(items, () => lib.useReducedMotion);
+  const ReduceMotion = option(4050).ReduceMotion;
+  const tmp5 = stateFromStores ? ReduceMotion.Always : ReduceMotion.Never;
+  const optionEnteringAnimation = option(11338).useOptionEnteringAnimation();
   let fn = optionEnteringAnimation.registerAnimationCompleteCallback;
   if (set.has(option.type)) {
     if (option.required || isPreSelectedOption) {
       fn = (arg0) => arg0();
     }
-    const FadeOut = option(4026).FadeOut;
-    const FadeInUp = option(4026).FadeInUp;
-    obj = {};
-    obj = { translateY: -10 };
-    const items1 = [obj];
-    obj.transform = items1;
-    const reduceMotionResult = FadeOut.reduceMotion(tmp3);
+    const FadeOut = tmp2(4050).FadeOut;
+    const FadeInUp = tmp2(4050).FadeInUp;
+    obj = { transform: null };
+    const items1 = [{ translateY: -10 }];
+    obj[0] = items1;
+    const reduceMotionResult = FadeOut.reduceMotion(tmp5);
     const withInitialValuesResult = FadeInUp.withInitialValues(obj);
     let hasItem = editedOptions.has(option.name);
     if (hasItem) {
       let error;
-      if (null != optionValidationResults[option.name]) {
+      if (optionValidationResults[option.name] != null) {
         error = tmp12.error;
       }
       hasItem = null != error;
     }
     const hasItem1 = items1.includes(option.type);
-    obj1 = { skipEntering: option.required || isPreSelectedOption };
-    const obj2 = { handleQueuedCallback: fn };
-    const obj3 = {
-      collapsable: false,
-      entering: optionEnteringAnimation.EnteringAnimation,
-      exiting: option(11314).ExitingAnimation,
-      layout: option(11314).LayoutAnimation,
-      onLayout(arg0) {
-          callback(arg0, option);
-        }
+    obj = { skipEntering: null, children: null };
+    obj[0] = option.required || isPreSelectedOption;
+    const obj1 = { handleQueuedCallback: null, children: null };
+    obj1[0] = fn;
+    const obj2 = { collapsable: false, entering: null, exiting: null, layout: null, onLayout: null, children: null };
+    obj2[1] = optionEnteringAnimation.EnteringAnimation;
+    obj2[2] = tmp2(11338).ExitingAnimation;
+    obj2[3] = tmp2(11338).LayoutAnimation;
+    obj2[4] = function onLayout(arg0) {
+      callback(arg0, option);
     };
-    const obj4 = { collapsable: false, style };
-    let tmp23 = hasItem1;
+    const obj3 = { collapsable: false, style: null, children: null };
+    obj3[1] = style;
+    let tmp17Result = hasItem1;
     if (hasItem1) {
-      const obj5 = { style: tmp.labelText, variant: "text-sm/semibold", color: "text-subtle", children: option.displayName };
-      tmp23 = callback(option(4161).Text, obj5);
+      const obj4 = { style: null, variant: "text-sm/semibold", color: "text-subtle", children: null };
+      obj4[0] = tmp.labelText;
+      obj4[3] = option.displayName;
+      tmp17Result = tmp17(tmp2(4185).Text, obj4);
     }
-    const items2 = [tmp23, , , ];
-    const obj6 = {
-      option,
-      onStartEditing,
-      onEndEditing,
-      onDismiss,
-      onOptionValueChange,
-      onFocus() {
-          return callback4(option);
-        },
-      onPress() {
-          return callback2(option);
-        },
-      onPressAttachmentOption() {
-          return callback3(option);
-        },
-      channel,
-      autoFocusType,
-      command,
-      optionValues,
-      hasError: hasItem
+    const items2 = [tmp17Result, , , ];
+    const obj5 = { option: null, onStartEditing: null, onEndEditing: null, onDismiss: null, onOptionValueChange: null, onFocus: null, onPress: null, onPressAttachmentOption: null, channel: null, autoFocusType: null, command: null, optionValues: null, hasError: null };
+    obj5[0] = option;
+    obj5[1] = onStartEditing;
+    obj5[2] = onEndEditing;
+    obj5[3] = onDismiss;
+    obj5[4] = onOptionValueChange;
+    obj5[5] = function onFocus() {
+      return lib(option);
     };
-    items2[1] = callback(importDefault(11316), obj6);
-    const obj7 = { style: tmp.optionDescription, variant: "text-xs/medium", color: "text-muted", children: option.displayDescription };
-    items2[2] = callback(option(4161).Text, obj7);
+    obj5[6] = function onPress() {
+      return callback2(option);
+    };
+    obj5[7] = function onPressAttachmentOption() {
+      return callback3(option);
+    };
+    obj5[8] = channel;
+    obj5[9] = autoFocusType;
+    obj5[10] = command;
+    obj5[11] = optionValues;
+    obj5[12] = hasItem;
+    items2[1] = closure_5(importDefault(11340), obj5);
+    const obj6 = { style: null, variant: "text-xs/medium", color: "text-muted", children: null };
+    obj6[0] = tmp.optionDescription;
+    obj6[3] = option.displayDescription;
+    items2[2] = closure_5(tmp2(4185).Text, obj6);
     if (hasItem) {
-      const obj8 = { collapsable: false, entering: reduceMotionResult1, exiting: reduceMotionResult, style: tmp.optionErrorContainer };
-      const obj9 = { style: tmp.optionErrorIcon, source: importDefault(9629), size: option(1273).IconSizes.REFRESH_SMALL_16 };
-      const items3 = [callback(option(1273).Icon, obj9), ];
-      const obj10 = { variant: "text-xs/medium", color: "text-feedback-critical", children: optionValidationResults[option.name].error };
-      items3[1] = callback(option(4161).Text, obj10);
-      obj8.children = items3;
-      hasItem = callback2(importDefault(4026).View, obj8);
+      const obj7 = { collapsable: false, entering: null, exiting: null, style: null, children: null };
+      obj7[1] = reduceMotionResult1;
+      obj7[2] = reduceMotionResult;
+      obj7[3] = tmp.optionErrorContainer;
+      const obj8 = { style: null, source: null, size: null };
+      obj8[0] = tmp.optionErrorIcon;
+      obj8[1] = tmp18(9651);
+      obj8[2] = tmp2(1297).IconSizes.REFRESH_SMALL_16;
+      const items3 = [tmp17(tmp2(1297).Icon, obj8), ];
+      const obj9 = { variant: "text-xs/medium", color: "text-feedback-critical", children: null };
+      obj9[2] = optionValidationResults[option.name].error;
+      items3[1] = tmp17(tmp2(4185).Text, obj9);
+      obj7[4] = items3;
+      hasItem = tmp19(tmp18(4050).View, obj7);
     }
     items2[3] = hasItem;
-    obj4.children = items2;
-    obj3.children = callback2(View, obj4);
-    obj2.children = callback(importDefault(4026).View, obj3);
-    obj1.children = callback(option(11315).AwaitAnimationContext, obj2);
-    return callback(option(4026).LayoutAnimationConfig, obj1);
+    obj3[2] = items2;
+    obj2[5] = closure_6(View, obj3);
+    obj1[1] = closure_5(importDefault(4050).View, obj2);
+    obj[1] = closure_5(tmp2(11339).AwaitAnimationContext, obj1);
+    return closure_5(tmp2(4050).LayoutAnimationConfig, obj);
   } else {
     return null;
   }
+  const tmp2Result = option(11338);
 };

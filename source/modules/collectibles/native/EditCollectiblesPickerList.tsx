@@ -1,32 +1,31 @@
-// Module ID: 7950
-// Function ID: 63107
+// Module ID: 7975
+// Function ID: 7976
 // Name: EditCollectiblesPickerList
-// Dependencies: [57, 31, 27, 33, 4165, 7938, 4161, 22, 6655, 2]
+// Dependencies: [32, 19, 17, 21, 4189, 7963, 4185, 12, 6676, 2]
 // Exports: EditCollectiblesPickerList
 
-// Module 7950 (EditCollectiblesPickerList)
+// Module 7975 (EditCollectiblesPickerList)
 import _slicedToArray from "_slicedToArray";
-import importAllResult from "result";
+import importAllResult from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_4;
-let closure_5;
+let c4;
+let c5;
 const require = arg1;
-({ ActivityIndicator: closure_4, View: closure_5 } = get_ActivityIndicator);
-let obj = { list: { flex: 1, marginTop: 12 }, listContent: { paddingBottom: 88 }, loadingContainer: { paddingVertical: 80, alignItems: "center" } };
+let c3 = importAllResult;
+({ ActivityIndicator: c4, View: c5 } = get_ActivityIndicator);
+let obj = { list: { flex: 1, marginTop: 12 }, listContent: { paddingBottom: 88 }, loadingContainer: { paddingVertical: 80, alignItems: "center" }, header: null };
 obj = { paddingHorizontal: require("useCollectibleListLayout").GUTTER_SIZE, paddingTop: 10, paddingBottom: 5 };
-obj.header = obj;
-let closure_7 = _createForOfIteratorHelperLoose.createStyles(obj);
-let closure_8 = importAllResult.memo((header) => {
-  obj = { style: callback().header, children: jsx(require(4161) /* Text */.Heading, obj) };
-  obj = { variant: "heading-sm/medium", color: "mobile-text-heading-primary", children: header.header };
-  return <closure_5 variant="heading-sm/medium" color="mobile-text-heading-primary">{arg0.header}</closure_5>;
-});
+obj[3] = obj;
+let closure_7 = createCacheKey.createStyles(obj);
+let closure_8 = importAllResult.memo((children) => <closure_5 style={callback().header}>{jsx(require(4185) /* Text */.Heading, { variant: "heading-sm/medium", color: "mobile-text-heading-primary", children: arg0.header })}</closure_5>);
 const result = require("get ActivityIndicator").fileFinishedImporting("modules/collectibles/native/EditCollectiblesPickerList.tsx");
 
 export const EditCollectiblesPickerList = function EditCollectiblesPickerList(sections) {
+  let c4;
+  let tmp3;
   sections = sections.sections;
   const selectedSkuId = sections.selectedSkuId;
   const renderRow = sections.renderRow;
@@ -35,23 +34,22 @@ export const EditCollectiblesPickerList = function EditCollectiblesPickerList(se
     flag = false;
   }
   let listContent = sections.contentContainerStyle;
-  let closure_4;
+  c4 = undefined;
   let num;
   const tmp = callback();
+  let obj = flag;
   num = 0;
-  const tmp2 = renderRow(flag.useState(0), 2);
-  const first = tmp2[0];
-  closure_4 = tmp2[1];
+  [tmp3, c4] = renderRow(flag.useState(0), 2);
   callback = flag.useCallback((nativeEvent) => {
-    callback(nativeEvent.nativeEvent.layout.width);
+    _undefined(nativeEvent.nativeEvent.layout.width);
   }, []);
-  if (first > 0) {
-    const diff = first - 4 * sections(selectedSkuId[5]).GUTTER_SIZE;
+  if (tmp3 > 0) {
+    const diff = tmp3 - 4 * sections(selectedSkuId[5]).GUTTER_SIZE;
     num = diff / sections(selectedSkuId[5]).ROW_SIZE;
   }
   let items = [sections, flag];
   const items1 = [renderRow, num, selectedSkuId];
-  const memo = flag.useMemo(() => {
+  const memo = obj.useMemo(() => {
     let items = [];
     if (flag) {
       return items;
@@ -60,43 +58,50 @@ export const EditCollectiblesPickerList = function EditCollectiblesPickerList(se
         const items = header;
         items.push({ type: "header", key: "header-" + header.section, header: header.header });
         const obj = { type: "header", key: "header-" + header.section, header: header.header };
-        const obj2 = sections(selectedSkuId[7]);
-        const item = sections(selectedSkuId[7]).chunk(header.items, sections(selectedSkuId[5]).ROW_SIZE).forEach((items) => {
+        const obj2 = items(outer1_1[7]);
+        const item = items(outer1_1[7]).chunk(header.items, items(outer1_1[5]).ROW_SIZE).forEach((items) => {
           header.push({ type: "row", key: "row-" + header.section + "-" + arg1, items });
         });
       });
       return items;
     }
   }, items);
-  const callback1 = flag.useCallback((item) => {
+  const callback1 = obj.useCallback((item) => {
     item = item.item;
     if ("header" === item.type) {
-      let obj = { header: item.header };
+      let obj = { header: null };
+      obj[0] = item.header;
       let tmp4 = outer1_6(outer1_8, obj);
     } else {
-      obj = { items: item.items, size: num, selectedSkuId };
+      obj = { items: null, size: null, selectedSkuId: null };
+      obj[0] = item.items;
+      obj[1] = num;
+      obj[2] = selectedSkuId;
       tmp4 = renderRow(obj);
     }
     return tmp4;
   }, items1);
-  const callback2 = flag.useCallback((type) => type.type, []);
-  let obj = {};
+  const callback2 = obj.useCallback((type) => type.type, []);
+  obj = { style: null, children: null };
   if (flag) {
-    obj.style = tmp.loadingContainer;
-    obj.children = <closure_4 animating size="large" />;
-    let tmp18 = obj;
+    obj[0] = tmp.loadingContainer;
+    obj[1] = tmp12(c4, { animating: true, size: "large" });
+    let tmp17 = obj;
   } else {
-    obj.style = tmp.list;
-    obj = { data: memo, renderItem: callback1, getItemType: callback2, keyExtractor: tmp11, extraData: selectedSkuId };
-    if (null == listContent) {
+    obj[0] = tmp.list;
+    obj = { data: null, renderItem: null, getItemType: null, keyExtractor: null, extraData: null, contentContainerStyle: null, onLayout: null, keyboardShouldPersistTaps: "always" };
+    obj[0] = memo;
+    obj[1] = callback1;
+    obj[2] = callback2;
+    obj[3] = tmp11;
+    obj[4] = selectedSkuId;
+    if (listContent == null) {
       listContent = tmp.listContent;
     }
-    obj.contentContainerStyle = listContent;
-    obj.onLayout = callback;
-    obj.keyboardShouldPersistTaps = "always";
-    obj.children = jsx(sections(selectedSkuId[8]).BottomSheetFlashList, { data: memo, renderItem: callback1, getItemType: callback2, keyExtractor: tmp11, extraData: selectedSkuId });
-    tmp18 = obj;
-    const tmp14 = jsx;
+    obj[5] = listContent;
+    obj[6] = callback;
+    obj[1] = tmp12(sections(selectedSkuId[8]).BottomSheetFlashList, obj);
+    tmp17 = obj;
   }
-  return <num {...tmp18} />;
+  return <num {...tmp17} />;
 };

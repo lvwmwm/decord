@@ -1,114 +1,106 @@
-// Module ID: 14798
-// Function ID: 112670
+// Module ID: 14824
+// Function ID: 14825
 // Name: DevToolsAccountLinkingScreen
-// Dependencies: [57, 31, 27, 4202, 5101, 1838, 3982, 33, 4165, 689, 566, 5505, 1557, 5503, 5500, 5536, 5198, 4161, 6706, 4578, 2]
+// Dependencies: [32, 19, 17, 4226, 5123, 1862, 4006, 21, 4189, 712, 589, 5523, 1581, 5521, 5518, 5554, 5220, 4185, 6727, 4600, 2]
 // Exports: default
 
-// Module 14798 (DevToolsAccountLinkingScreen)
+// Module 14824 (DevToolsAccountLinkingScreen)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
-import get_ActivityIndicator from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_9 from "_isNativeReflectConstruct";
-import closure_10 from "_createForOfIteratorHelperLoose";
-import closure_11 from "_isNativeReflectConstruct";
+import Button from "Button";
+import get_ActivityIndicator from "Text";
+import addApplication from "addApplication";
+import recomputeFromAppTokens from "recomputeFromAppTokens";
+import createGuildRecordFromRust from "createGuildRecordFromRust";
+import handleConnectionOpen from "handleConnectionOpen";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
+let c5;
 let closure_12;
-let closure_13;
-let closure_5;
 let closure_6;
-let closure_7;
+let error;
+let map1;
 const require = arg1;
-({ Image: closure_5, ScrollView: closure_6, View: closure_7 } = get_ActivityIndicator);
-({ jsx: closure_12, jsxs: closure_13 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW, flex: 1 };
-_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.scrollContainer = { padding: require("_createForOfIteratorHelperLoose").space.PX_16, gap: require("_createForOfIteratorHelperLoose").space.PX_16 };
-let obj1 = { padding: require("_createForOfIteratorHelperLoose").space.PX_16, gap: require("_createForOfIteratorHelperLoose").space.PX_16 };
-_createForOfIteratorHelperLoose.buttonRow = { gap: require("_createForOfIteratorHelperLoose").space.PX_8 };
-let obj3 = { width: 64, height: 64, borderRadius: require("_createForOfIteratorHelperLoose").radii.sm };
-_createForOfIteratorHelperLoose.rewardImage = obj3;
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-let obj2 = { gap: require("_createForOfIteratorHelperLoose").space.PX_8 };
+({ Image: c5, ScrollView: closure_6, View: error } = get_ActivityIndicator);
+({ jsx: closure_12, jsxs: map1 } = jsxProd);
+createCacheKey = { container: null, scrollContainer: null, buttonRow: null, rewardImage: null };
+createCacheKey = { backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW, flex: 1 };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { padding: require("Themes").space.PX_16, gap: require("Themes").space.PX_16 };
+let obj1 = { padding: require("Themes").space.PX_16, gap: require("Themes").space.PX_16 };
+createCacheKey[2] = { gap: require("Themes").space.PX_8 };
+let obj2 = { gap: require("Themes").space.PX_8 };
+createCacheKey[3] = { width: 64, height: 64, borderRadius: require("Themes").radii.sm };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let obj3 = { width: 64, height: 64, borderRadius: require("Themes").radii.sm };
 const result = require("get ActivityIndicator").fileFinishedImporting("modules/devtools/native/components/screens/DevToolsAccountLinkingScreen.tsx");
 
 export default function DevToolsAccountLinkingScreen() {
-  let canDeauthorize;
-  let result;
+  let Button;
   let connectionApp;
-  let deauthorize;
   let debug;
   let hasAlreadyLinked;
-  const tmp = _createForOfIteratorHelperLoose();
-  const tmp3 = getOrFetchApplication(React.useState(""), 2);
-  const first = tmp3[0];
-  const importDefault = tmp5;
-  let obj = first(566);
-  let items = [closure_11];
-  const dependencyMap = obj.useStateFromStores(items, () => outer1_11.getGuildId());
-  let obj1 = first(566);
-  let items1 = [closure_10];
-  let stateFromStores = obj1.useStateFromStores(items1, () => outer1_10.getGuild(closure_2));
+  const tmp = createCacheKey();
+  let obj = React;
+  const tmp5 = getOrFetchApplication(React.useState(""), 2);
+  const first = tmp5[0];
+  let id = first;
+  let stateFromStores1 = tmp7;
+  let obj1 = id(589);
+  const items = [handleConnectionOpen];
+  const dependencyMap = obj1.useStateFromStores(items, () => guildId.getGuildId());
+  let obj2 = id(589);
+  const items1 = [createGuildRecordFromRust];
+  const stateFromStores = obj2.useStateFromStores(items1, () => outer1_10.getGuild(closure_2));
   let gameApplicationIds;
-  if (null != stateFromStores) {
+  if (stateFromStores != null) {
     gameApplicationIds = stateFromStores.gameApplicationIds;
   }
-  if (null == gameApplicationIds) {
+  if (gameApplicationIds == null) {
     gameApplicationIds = [];
   }
-  let tmp2 = importDefault(1557)();
-  let found = importDefault(5503)(gameApplicationIds).filter((arg0) => null != arg0);
-  let obj2 = first(5503);
-  getOrFetchApplication = obj2.useGetOrFetchApplication(first);
-  let obj3 = first(566);
-  const items2 = [_isNativeReflectConstruct];
-  const stateFromStoresArray = obj3.useStateFromStoresArray(items2, () => {
+  const tmp4 = stateFromStores1(1581)();
+  let found = stateFromStores1(5521)(gameApplicationIds).filter((arg0) => null != arg0);
+  let tmp8Result = tmp8(5521);
+  getOrFetchApplication = tmp8Result.useGetOrFetchApplication(first);
+  tmp8Result = tmp8(589);
+  const items2 = [addApplication];
+  const stateFromStoresArray = tmp8Result.useStateFromStoresArray(items2, () => {
     let found;
-    if (null != getOrFetchApplication) {
+    if (getOrFetchApplication != null) {
       const linkedGames = getOrFetchApplication.linkedGames;
-      if (null != linkedGames) {
-        const mapped = linkedGames.map((id) => outer2_8.getApplication(id.id));
+      if (linkedGames != null) {
+        const mapped = linkedGames.map((id) => application.getApplication(id.id));
         found = mapped.filter((arg0) => null != arg0);
       }
     }
-    if (null == found) {
+    if (found == null) {
       found = [];
     }
     return found;
   });
-  const tmp8 = importDefault(5500)(getOrFetchApplication, { debug: true });
-  ({ startAuthorization: result, hasAlreadyLinked, debug, connectionApp } = tmp8);
-  let id;
-  if (null != connectionApp) {
+  const tmp11 = stateFromStores1(5518)(getOrFetchApplication, { debug: true });
+  ({ startAuthorization: Button, hasAlreadyLinked, debug, connectionApp } = tmp11);
+  id = undefined;
+  if (connectionApp != null) {
     id = connectionApp.id;
   }
-  const arr4 = importDefault(5503)(gameApplicationIds);
+  const arr4 = stateFromStores1(5521)(gameApplicationIds);
+  const items3 = [recomputeFromAppTokens];
+  stateFromStores1 = id(589).useStateFromStores(items3, () => outer1_9.getNewestTokenForApplication(id));
+  const items4 = [stateFromStores1];
   let str = "N/A";
   let str2 = "N/A";
-  ({ canDeauthorize, deauthorize } = (function useDeauthorize(id) {
-    let closure_0 = id;
-    let obj = first(566);
-    const items = [outer1_9];
-    const stateFromStores = obj.useStateFromStores(items, () => outer2_9.getNewestTokenForApplication(closure_0));
-    const items1 = [stateFromStores];
-    obj = {
-      canDeauthorize: null != stateFromStores,
-      deauthorize: outer1_4.useCallback(() => {
-        if (null != stateFromStores) {
-          stateFromStores(table[11]).delete(stateFromStores.id);
-          const obj = stateFromStores(table[11]);
-        }
-      }, items1)
-    };
-    return obj;
-  })(id));
+  const callback = obj.useCallback(() => {
+    if (null != stateFromStores1) {
+      stateFromStores1(5523).delete(tmp.id);
+      const obj = stateFromStores1(5523);
+    }
+  }, items4);
   if (stateFromStoresArray.length > 0) {
     let mapped = stateFromStoresArray.map((id) => {
       id = undefined;
-      if (null != connectionApp) {
+      if (connectionApp != null) {
         id = connectionApp.id;
       }
       if (id === id.id) {
@@ -121,148 +113,144 @@ export default function DevToolsAccountLinkingScreen() {
     });
     str2 = mapped.join(", ");
   }
-  obj = { style: tmp.container };
-  const items3 = [tmp.scrollContainer, ];
-  obj = { paddingBottom: tmp2.bottom + importDefault(689).space.PX_16 };
-  items3[1] = obj;
-  obj.contentContainerStyle = items3;
-  obj1 = {};
+  obj = { style: tmp.container, contentContainerStyle: null, children: null };
+  const items5 = [tmp.scrollContainer, ];
+  obj = { paddingBottom: tmp4.bottom + tmp2(712).space.PX_16 };
+  items5[1] = obj;
+  obj[1] = items5;
   let name;
-  if (null != stateFromStores) {
+  if (stateFromStores != null) {
     name = stateFromStores.name;
   }
-  let tmp15 = str;
-  if (null != name) {
-    tmp15 = name;
+  if (name == null) {
+    name = str;
   }
-  obj1.title = "Guild Official Games - " + tmp15;
-  obj1.hasIcons = false;
+  obj1 = { title: "Guild Official Games - " + name, hasIcons: false, children: null };
   if (null != stateFromStores) {
     if (found.length > 0) {
       let mapped1 = found.map((name) => {
         let closure_0 = name;
-        const obj = {
-          label: "" + name.name + " (" + name.id + ")",
-          onPress() {
-            return outer1_1(name.id);
-          }
+        const obj = { label: null, onPress: null, trailing: null };
+        obj[0] = "" + name.name + " (" + name.id + ")";
+        obj[1] = function onPress() {
+          return outer1_1(name.id);
         };
-        let tmp2;
+        let tmpResult;
         if (closure_0 === name.id) {
-          tmp2 = outer1_12(first(4161).Text, { variant: "text-sm/semibold", children: "Selected" });
+          tmpResult = tmp(id(4185).Text, { variant: "text-sm/semibold", children: "Selected" });
         }
-        obj.trailing = tmp2;
-        return outer1_12(first(5198).TableRow, obj, name.id);
+        obj[2] = tmpResult;
+        return outer1_12(id(5220).TableRow, obj, name.id);
       });
     } else {
-      obj2 = { label: "No official games" };
-      mapped1 = callback(first(5198).TableRow, obj2);
+      mapped1 = tmp18(tmp8(5220).TableRow, { label: "No official games" });
     }
   } else {
-    obj3 = { label: "No guild selected" };
-    obj1.children = callback(first(5198).TableRow, obj3);
-    const items4 = [callback(first(5536).TableRowGroup, obj1), , , ];
-    const obj4 = { title: "Application", hasIcons: false };
-    const obj5 = {};
-    const obj6 = { padding: importDefault(689).space.PX_12 };
-    obj5.style = obj6;
-    const obj7 = { label: "Application ID", value: first, onChange: tmp5 };
-    obj5.children = callback(first(6706).TextInput, obj7);
-    const items5 = [callback(closure_7, obj5), , ];
-    const obj8 = {};
+    obj1[2] = tmp18(tmp8(5220).TableRow, { label: "No guild selected" });
+    const items6 = [tmp18(tmp8(5554).TableRowGroup, obj1), , , ];
+    obj2 = { style: null, children: null };
+    const obj3 = { padding: null };
+    obj3[0] = tmp2(712).space.PX_12;
+    obj2[0] = obj3;
+    const obj4 = { label: "Application ID", value: null, onChange: null };
+    obj4[1] = first;
+    obj4[2] = tmp7;
+    obj2[1] = tmp18(tmp8(6727).TextInput, obj4);
+    const items7 = [tmp18(closure_7, obj2), , ];
     if (null != getOrFetchApplication) {
       str = getOrFetchApplication.name;
     }
+    const obj5 = { title: "Application", hasIcons: false, children: null };
+    const obj6 = { label: null };
     let _HermesInternal = HermesInternal;
-    obj8.label = "Name: " + str;
-    items5[1] = callback(first(5198).TableRow, obj8);
-    const obj9 = {};
+    obj6[0] = "Name: " + str;
+    items7[1] = tmp18(tmp8(5220).TableRow, obj6);
+    const obj7 = { label: null };
     const _HermesInternal2 = HermesInternal;
-    obj9.label = "Linked Games: " + str2;
-    items5[2] = callback(first(5198).TableRow, obj9);
-    obj4.children = items5;
-    items4[1] = callback2(first(5536).TableRowGroup, obj4);
-    const obj10 = { title: "Authorization", hasIcons: false };
-    const obj11 = { label: "Connection Entrypoint URL" };
-    const obj12 = { variant: "text-sm/semibold" };
-    let str11 = "text-feedback-critical";
+    obj7[0] = "Linked Games: " + str2;
+    items7[2] = tmp18(tmp8(5220).TableRow, obj7);
+    obj5[2] = items7;
+    items6[1] = tmp16(tmp8(5554).TableRowGroup, obj5);
+    let str6 = "text-feedback-critical";
     if (debug.hasConnectionEntrypointUrl) {
-      str11 = "text-feedback-positive";
+      str6 = "text-feedback-positive";
     }
-    obj12.color = str11;
-    let str12 = "Not set";
+    const obj8 = { variant: "text-sm/semibold", color: null, children: null };
+    obj8[1] = str6;
+    let str7 = "Not set";
     if (debug.hasConnectionEntrypointUrl) {
-      str12 = "Set";
+      str7 = "Set";
     }
-    obj12.children = str12;
-    obj11.trailing = callback(first(4161).Text, obj12);
-    const items6 = [callback(first(5198).TableRow, obj11), , ];
-    const obj13 = { label: "Already Linked" };
-    const obj14 = { variant: "text-sm/semibold" };
-    let str14 = "text-muted";
+    const obj9 = { label: "Connection Entrypoint URL", trailing: null };
+    obj8[2] = str7;
+    obj9[1] = tmp18(tmp8(4185).Text, obj8);
+    const items8 = [tmp18(tmp8(5220).TableRow, obj9), , ];
+    let str8 = "text-muted";
     if (hasAlreadyLinked) {
-      str14 = "text-feedback-positive";
+      str8 = "text-feedback-positive";
     }
-    obj14.color = str14;
-    let str15 = "No";
+    const obj10 = { variant: "text-sm/semibold", color: null, children: null };
+    obj10[1] = str8;
+    let str9 = "No";
     if (hasAlreadyLinked) {
-      str15 = "Yes";
+      str9 = "Yes";
     }
-    obj14.children = str15;
-    obj13.trailing = callback(first(4161).Text, obj14);
-    items6[1] = callback(first(5198).TableRow, obj13);
-    const obj15 = { style: tmp.buttonRow };
-    const obj16 = {
-      disabled: !tmp8.canStartAuthorization,
-      onPress() {
-          return callback({});
-        },
-      variant: "primary",
-      text: "Start Authorization"
+    const obj11 = { title: "Authorization", hasIcons: false, children: null };
+    const obj12 = { label: "Already Linked", trailing: null };
+    obj10[2] = str9;
+    obj12[1] = tmp18(tmp8(4185).Text, obj10);
+    items8[1] = tmp18(tmp8(5220).TableRow, obj12);
+    const obj13 = { style: null, children: null };
+    obj13[0] = tmp.buttonRow;
+    const obj14 = { disabled: null, onPress: null, variant: "primary", text: "Start Authorization" };
+    obj14[0] = !tmp11.canStartAuthorization;
+    obj14[1] = function onPress() {
+      return callback({});
     };
-    const items7 = [callback(first(4578).Button, obj16), ];
-    const obj17 = { disabled: !canDeauthorize, onPress: deauthorize, variant: "critical-primary", text: "Deauthorize" };
-    items7[1] = callback(first(4578).Button, obj17);
-    obj15.children = items7;
-    items6[2] = callback2(closure_7, obj15);
-    obj10.children = items6;
-    items4[2] = callback2(first(5536).TableRowGroup, obj10);
+    const items9 = [tmp18(tmp8(4600).Button, obj14), ];
+    const obj15 = { disabled: null, onPress: null, variant: "critical-primary", text: "Deauthorize" };
+    obj15[0] = !tmp15;
+    obj15[1] = callback;
+    items9[1] = tmp18(tmp8(4600).Button, obj15);
+    obj13[1] = items9;
+    items8[2] = tmp16(closure_7, obj13);
+    obj11[2] = items8;
+    items6[2] = tmp16(tmp8(5554).TableRowGroup, obj11);
     let prop;
-    if (null != connectionApp) {
+    if (connectionApp != null) {
       prop = connectionApp.applicationAccountLinkBenefitConfig;
     }
-    let tmp44Result = null != prop;
-    if (tmp44Result) {
-      const obj18 = { title: "Reward Configuration", hasIcons: false };
-      let tmp47 = null != connectionApp.applicationAccountLinkBenefitConfig.reward_image;
-      if (tmp47) {
-        const obj19 = {};
-        const obj20 = { padding: importDefault(689).space.PX_12 };
-        obj19.style = obj20;
-        const obj21 = {};
-        const obj22 = { uri: connectionApp.applicationAccountLinkBenefitConfig.reward_image };
-        obj21.source = obj22;
-        obj21.style = tmp.rewardImage;
-        obj19.children = callback(connectionApp, obj21);
-        tmp47 = callback(closure_7, obj19);
+    let tmp16Result = null != prop;
+    if (tmp16Result) {
+      let tmp18Result = null != connectionApp.applicationAccountLinkBenefitConfig.reward_image;
+      if (tmp18Result) {
+        const obj16 = { style: null, children: null };
+        const obj17 = { padding: null };
+        obj17[0] = tmp2(712).space.PX_12;
+        obj16[0] = obj17;
+        const obj18 = { source: null, style: null };
+        const obj19 = { uri: null };
+        obj19[0] = connectionApp.applicationAccountLinkBenefitConfig.reward_image;
+        obj18[0] = obj19;
+        obj18[1] = tmp.rewardImage;
+        obj16[1] = tmp18(connectionApp, obj18);
+        tmp18Result = tmp18(tmp22, obj16);
       }
-      const items8 = [tmp47, ];
-      const obj23 = {};
-      const reward_name = connectionApp.applicationAccountLinkBenefitConfig.reward_name;
-      let str20 = "Unnamed Reward";
-      if (null != reward_name) {
-        str20 = reward_name;
+      const items10 = [tmp18Result, ];
+      let str10 = connectionApp.applicationAccountLinkBenefitConfig.reward_name;
+      if (str10 == null) {
+        str10 = "Unnamed Reward";
       }
+      const obj20 = { title: "Reward Configuration", hasIcons: false, children: null };
+      const obj21 = { label: null };
       const _HermesInternal3 = HermesInternal;
-      obj23.label = "Reward: " + str20;
-      items8[1] = callback(first(5198).TableRow, obj23);
-      obj18.children = items8;
-      tmp44Result = callback2(first(5536).TableRowGroup, obj18);
-      const tmp44 = callback2;
-      const tmp53 = callback;
+      obj21[0] = "Reward: " + str10;
+      items10[1] = tmp18(tmp8(5220).TableRow, obj21);
+      obj20[2] = items10;
+      tmp16Result = tmp16(tmp8(5554).TableRowGroup, obj20);
     }
-    items4[3] = tmp44Result;
-    obj.children = items4;
-    return callback2(closure_6, obj);
+    items6[3] = tmp16Result;
+    obj[2] = items6;
+    return tmp16(closure_6, obj);
   }
 };

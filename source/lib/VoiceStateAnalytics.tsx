@@ -1,151 +1,133 @@
-// Module ID: 12860
-// Function ID: 100053
-// Name: VoiceStateAnalytics
-// Dependencies: [6, 7, 4212, 4181, 4238, 4226, 22, 2]
+// Module ID: 12882
+// Function ID: 12883
+// Name: updateVoiceStates
+// Dependencies: [4236, 4205, 4262, 4250, 12, 2]
 
-// Module 12860 (VoiceStateAnalytics)
-import apply from "apply";
-import set from "set";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_5 from "_isNativeReflectConstruct";
-import closure_6 from "_isNativeReflectConstruct";
+// Module 12882 (updateVoiceStates)
+import _detectH265HardwareDecode from "_detectH265HardwareDecode";
+import updateVoiceState from "updateVoiceState";
+import getVoiceStatesForGuild from "getVoiceStatesForGuild";
 import { SpeakingFlags } from "DesktopSources";
 
 const require = arg1;
-let tmp2 = (() => {
-  class VoiceStateAnalytics {
-    constructor(arg0, arg1) {
-      tmp = outer1_2(this, VoiceStateAnalytics);
-      this.maxVoiceStateCount = 1;
-      set = new Set();
-      this.totalParticipants = set;
-      this.speaking = outer1_7.NONE;
-      this.maxListenerCount = 0;
-      set1 = new Set();
-      this.totalListeners = set1;
-      this.maxSpeakerCount = 0;
-      this.totalSpeakers = {};
-      this.userId = arg0;
-      setChannelIdResult = this.setChannelId(arg1);
-      return;
+const result = require("getVoiceStatesForGuild").fileFinishedImporting("lib/VoiceStateAnalytics.tsx");
+class VoiceStateAnalytics {
+  constructor(arg0, arg1) {
+    obj = Object.create(new.target.prototype);
+    set = new Set();
+    obj[1] = set;
+    obj[2] = SpeakingFlags.NONE;
+    set1 = new Set();
+    obj[4] = set1;
+    obj[6] = {};
+    obj.userId = global;
+    setChannelIdResult = obj.setChannelId(arg1);
+    return obj;
+  }
+}
+const prototype = VoiceStateAnalytics.prototype;
+prototype["updateVoiceStates"] = function updateVoiceStates(userId, channelId) {
+  const self = this;
+  if (channelId === this.channelId) {
+    const totalParticipants = self.totalParticipants;
+    totalParticipants.add(userId);
+    const _Math = Math;
+    self.maxVoiceStateCount = Math.max(getVoiceStatesForGuild.countVoiceStatesForChannel(channelId), self.maxVoiceStateCount);
+  } else {
+    if (tmp2) {
+      self.totalSpeakers[userId] = SpeakingFlags.NONE;
+    }
+    if (tmp4) {
+      self.setChannelId(channelId);
+    }
+    tmp2 = null == channelId && userId in self.totalSpeakers;
+    tmp4 = userId === self.userId && null != channelId;
+  }
+};
+prototype["getStats"] = function getStats() {
+  return { max_voice_state_count: this.maxVoiceStateCount, total_voice_state_count: this.totalParticipants.size, max_listener_count: this.maxListenerCount, total_listener_count: this.totalListeners.size, max_speaker_count: this.maxSpeakerCount, total_speaker_count: Object.keys(this.totalSpeakers).length };
+};
+prototype["getUserVoiceSettingsStats"] = function getUserVoiceSettingsStats(arg0) {
+  settings = settings.getSettings(arg0);
+  const set = new Set(Object.keys(settings.localMutes));
+  const set1 = new Set(Object.keys(settings.localVolumes));
+  set1.delete(this.userId);
+  set.delete(this.userId);
+  const obj = { num_local_voice_user_mutes: null, num_local_voice_volumes: null };
+  let arr = Array.from(set);
+  obj[0] = require(12) /* apply */.intersection(arr, Array.from(this.totalParticipants)).length;
+  const obj4 = require(12) /* apply */;
+  arr = Array.from(set1);
+  obj[1] = require(12) /* apply */.intersection(arr, Array.from(this.totalParticipants)).length;
+  return obj;
+};
+prototype["setSpeaking"] = function setSpeaking(userId, speaking) {
+  let self = this;
+  self = this;
+  if (speaking !== SpeakingFlags.NONE) {
+    const voiceStateForChannel = store.getVoiceStateForChannel(self.channelId, userId);
+    if (null != voiceStateForChannel) {
+      if (!voiceStateForChannel.selfMute) {
+        if (!voiceStateForChannel.mute) {
+          self.totalSpeakers[userId] = speaking;
+          const _Object = Object;
+          let values = Object.values(self.totalSpeakers);
+          const _Math = Math;
+          self.maxSpeakerCount = Math.max(self.maxSpeakerCount, values.filter((arg0) => arg0 !== constants.NONE).length);
+        }
+      }
+    }
+  } else if (userId in self.totalSpeakers) {
+    self.totalSpeakers[userId] = tmp.NONE;
+  }
+  if (self.userId === userId) {
+    if (speaking !== self.speaking) {
+      if (speaking !== tmp.NONE) {
+        const _Object2 = Object;
+        values = Object.values(store.getVoiceStatesForChannel(self.channelId));
+        const found = values.filter((selfDeaf) => {
+          selfDeaf = selfDeaf.selfDeaf;
+          let tmp = !selfDeaf;
+          if (!selfDeaf) {
+            tmp = !selfDeaf.deaf;
+          }
+          return tmp;
+        });
+        const item = found.forEach((userId) => {
+          const totalListeners = self.totalListeners;
+          return totalListeners.add(userId.userId);
+        });
+        const _Math2 = Math;
+        self.maxListenerCount = Math.max(found.length, self.maxListenerCount);
+      }
+      self.speaking = speaking;
     }
   }
-  let obj = {
-    key: "updateVoiceStates",
-    value(arg0, id) {
-      const self = this;
-      if (id === this.channelId) {
-        const totalParticipants = self.totalParticipants;
-        totalParticipants.add(arg0);
-        const _Math = Math;
-        self.maxVoiceStateCount = Math.max(outer1_6.countVoiceStatesForChannel(id), self.maxVoiceStateCount);
-      } else {
-        if (tmp2) {
-          self.totalSpeakers[arg0] = outer1_7.NONE;
-        }
-        if (tmp4) {
-          self.setChannelId(id);
-        }
-        tmp2 = null == id && arg0 in self.totalSpeakers;
-        tmp4 = arg0 === self.userId && null != id;
-      }
-    }
-  };
-  let items = [obj, , , , ];
-  obj = {
-    key: "getStats",
-    value() {
-      return { max_voice_state_count: this.maxVoiceStateCount, total_voice_state_count: this.totalParticipants.size, max_listener_count: this.maxListenerCount, total_listener_count: this.totalListeners.size, max_speaker_count: this.maxSpeakerCount, total_speaker_count: Object.keys(this.totalSpeakers).length };
-    }
-  };
-  items[1] = obj;
-  obj = {
-    key: "getUserVoiceSettingsStats",
-    value(guildId) {
-      const settings = outer1_4.getSettings(guildId);
-      const set = new Set(Object.keys(settings.localMutes));
-      const set1 = new Set(Object.keys(settings.localVolumes));
-      set1.delete(this.userId);
-      set.delete(this.userId);
-      const obj = {};
-      let arr = Array.from(set);
-      obj.num_local_voice_user_mutes = VoiceStateAnalytics(outer1_1[6]).intersection(arr, Array.from(this.totalParticipants)).length;
-      const obj4 = VoiceStateAnalytics(outer1_1[6]);
-      arr = Array.from(set1);
-      obj.num_local_voice_volumes = VoiceStateAnalytics(outer1_1[6]).intersection(arr, Array.from(this.totalParticipants)).length;
-      return obj;
-    }
-  };
-  items[2] = obj;
-  items[3] = {
-    key: "setSpeaking",
-    value(arg0, speaking) {
-      let self = this;
-      self = this;
-      if (speaking !== outer1_7.NONE) {
-        const voiceStateForChannel = outer1_5.getVoiceStateForChannel(self.channelId, arg0);
-        if (null != voiceStateForChannel) {
-          if (!voiceStateForChannel.selfMute) {
-            if (!voiceStateForChannel.mute) {
-              self.totalSpeakers[arg0] = speaking;
-              const _Object = Object;
-              let values = Object.values(self.totalSpeakers);
-              const _Math = Math;
-              self.maxSpeakerCount = Math.max(self.maxSpeakerCount, values.filter((arg0) => arg0 !== outer2_7.NONE).length);
-            }
-          }
-        }
-      } else if (arg0 in self.totalSpeakers) {
-        self.totalSpeakers[arg0] = outer1_7.NONE;
-      }
-      if (self.userId === arg0) {
-        if (speaking !== self.speaking) {
-          if (speaking !== outer1_7.NONE) {
-            const _Object2 = Object;
-            values = Object.values(outer1_5.getVoiceStatesForChannel(self.channelId));
-            const found = values.filter((selfDeaf) => !selfDeaf.selfDeaf && !selfDeaf.deaf);
-            const item = found.forEach((userId) => {
-              const totalListeners = self.totalListeners;
-              return totalListeners.add(userId.userId);
-            });
-            const _Math2 = Math;
-            self.maxListenerCount = Math.max(found.length, self.maxListenerCount);
-          }
-          self.speaking = speaking;
-        }
-      }
-    }
-  };
-  items[4] = {
-    key: "setChannelId",
-    value(channelId) {
-      let self = this;
-      self = this;
-      if (channelId !== this.channelId) {
-        self.channelId = channelId;
-        const _Set = Set;
-        const items = [self.userId];
-        const set = new Set(items);
-        self.totalParticipants = set;
-        const _Object = Object;
-        const keys = Object.keys(outer1_5.getVoiceStatesForChannel(self.channelId));
-        const item = keys.forEach((arg0) => {
-          const totalParticipants = self.totalParticipants;
-          return totalParticipants.add(arg0);
-        });
-        self.maxVoiceStateCount = keys.length;
-        self.speaking = outer1_7.NONE;
-        self.maxListenerCount = 0;
-        const _Set2 = Set;
-        const set1 = new Set();
-        self.totalListeners = set1;
-        self.maxSpeakerCount = 0;
-        self.totalSpeakers = {};
-      }
-    }
-  };
-  return callback(VoiceStateAnalytics, items);
-})();
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("lib/VoiceStateAnalytics.tsx");
+};
+prototype["setChannelId"] = function setChannelId(channelId) {
+  let self = this;
+  self = this;
+  if (channelId !== this.channelId) {
+    self.channelId = channelId;
+    const _Set = Set;
+    const items = [self.userId];
+    const set = new Set(items);
+    self.totalParticipants = set;
+    const _Object = Object;
+    const keys = Object.keys(store.getVoiceStatesForChannel(self.channelId));
+    const item = keys.forEach((arg0) => {
+      const totalParticipants = self.totalParticipants;
+      return totalParticipants.add(arg0);
+    });
+    self.maxVoiceStateCount = keys.length;
+    self.speaking = SpeakingFlags.NONE;
+    self.maxListenerCount = 0;
+    const _Set2 = Set;
+    const set1 = new Set();
+    self.totalListeners = set1;
+    self.maxSpeakerCount = 0;
+    self.totalSpeakers = {};
+  }
+};
 
-export default tmp2;
+export default VoiceStateAnalytics;

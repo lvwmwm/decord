@@ -1,26 +1,26 @@
-// Module ID: 4105
-// Function ID: 33994
+// Module ID: 4129
+// Function ID: 4130
 // Name: UserPlatformIcon
-// Dependencies: [31, 33, 689, 3868, 4106, 2]
+// Dependencies: [19, 21, 712, 3892, 4130, 2]
 // Exports: UserPlatformIcon
 
-// Module 4105 (UserPlatformIcon)
-import "result";
+// Module 4129 (UserPlatformIcon)
+import "noop";
 import { jsx } from "jsxProd";
 
 const require = arg1;
-const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("design/components/Icon/native/redesign/generated/UserPlatformIcon.tsx");
+const result = require("Themes").fileFinishedImporting("design/components/Icon/native/redesign/generated/UserPlatformIcon.tsx");
 
 export const UserPlatformIcon = function UserPlatformIcon(color) {
   let INTERACTIVE_ICON_DEFAULT = color.color;
   if (INTERACTIVE_ICON_DEFAULT === undefined) {
-    INTERACTIVE_ICON_DEFAULT = importDefault(689).colors.INTERACTIVE_ICON_DEFAULT;
+    INTERACTIVE_ICON_DEFAULT = importDefault(712).colors.INTERACTIVE_ICON_DEFAULT;
   }
-  let obj = Object.create(null);
-  obj.style = 0;
-  obj.color = 0;
-  const merged = Object.assign(color, obj);
-  obj = { source: require(4106) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
+  const merged = Object.assign(color, Object.create(null));
+  const obj = { source: null, color: null, style: null };
+  obj[0] = require(4130) /* registerAsset */;
+  obj[1] = INTERACTIVE_ICON_DEFAULT;
+  obj[2] = color.style;
   const merged1 = Object.assign(merged);
-  return jsx(require(3868) /* BaseIconImage */.BaseIconImage, { source: require(4106) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(require(3892) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
 };

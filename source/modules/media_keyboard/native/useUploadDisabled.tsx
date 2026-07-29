@@ -1,35 +1,35 @@
-// Module ID: 11372
-// Function ID: 88228
+// Module ID: 11396
+// Function ID: 11397
 // Name: useUploadDisabled
-// Dependencies: [4503, 3793, 4502, 653, 566, 5639, 2]
+// Dependencies: [4526, 3817, 4525, 676, 589, 5657, 2]
 // Exports: default
 
-// Module 11372 (useUploadDisabled)
-import { DraftType } from "_isNativeReflectConstruct";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_4 from "_isNativeReflectConstruct";
+// Module 11396 (useUploadDisabled)
+import { DraftType } from "handleChanged";
+import getUncachedChannelPermissions from "getUncachedChannelPermissions";
+import map from "map";
 import ME from "ME";
 
-let closure_5;
+let c5;
 let closure_6;
-({ MAX_UPLOAD_COUNT: closure_5, Permissions: closure_6 } = ME);
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/media_keyboard/native/useUploadDisabled.tsx");
+({ MAX_UPLOAD_COUNT: c5, Permissions: closure_6 } = ME);
+const result = require("map").fileFinishedImporting("modules/media_keyboard/native/useUploadDisabled.tsx");
 
 export default function useUploadDisabled(arg0) {
   const _require = arg0;
-  const items = [_isNativeReflectConstruct, closure_4];
-  return _require(566).useStateFromStores(items, () => {
-    let tmp = outer1_4.getUploads(_private.id, outer1_2.ChannelMessage).length >= outer1_5;
+  const items = [getUncachedChannelPermissions, map];
+  return _require(589).useStateFromStores(items, () => {
+    let tmp = outer1_4.getUploads(lib.id, outer1_2.ChannelMessage).length >= outer1_5;
     if (!tmp) {
-      let tmp5 = _private.id === _private(outer1_1[5]).FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID;
-      if (!tmp5) {
-        let isPrivateResult = _private.isPrivate();
+      let tmp4 = obj.id === lib(outer1_1[5]).FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID;
+      if (!tmp4) {
+        let isPrivateResult = obj.isPrivate();
         if (!isPrivateResult) {
-          isPrivateResult = outer1_3.can(outer1_6.ATTACH_FILES, _private);
+          isPrivateResult = outer1_3.can(outer1_6.ATTACH_FILES, obj);
         }
-        tmp5 = !isPrivateResult;
+        tmp4 = !isPrivateResult;
       }
-      tmp = tmp5;
+      tmp = tmp4;
     }
     return tmp;
   });

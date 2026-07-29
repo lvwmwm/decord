@@ -1,26 +1,31 @@
-// Module ID: 16198
-// Function ID: 125359
-// Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 5112, 2]
+// Module ID: 16233
+// Function ID: 16234
+// Name: _initialize
+// Dependencies: [5134, 2]
 
-// Module 16198 (_isNativeReflectConstruct)
-import set from "set";
-import _defineProperties from "_defineProperties";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
-import tmp2 from "AutomaticLifecycleManager";
+// Module 16233 (_initialize)
+import "initialize";
 
-function _isNativeReflectConstruct() {
-  let set = !valueOf.call(Reflect.construct(Boolean, [], () => {
+class DiskUsageManager extends tmp2 {
+  constructor() {
+    applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
+    obj = {
+      APP_STATE_UPDATE() {
 
-  }));
-  function _isNativeReflectConstruct() {
-    return set;
+          }
+    };
+    applyArgumentsResult.actions = obj;
+    return applyArgumentsResult;
   }
-  const result = _isNativeReflectConstruct();
 }
-tmp2 = new tmp2();
-let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/install/native/DiskUsageManager.android.tsx");
+const prototype = DiskUsageManager.prototype;
+prototype["_initialize"] = function _initialize() {
 
-export default tmp2;
+};
+prototype["_terminate"] = function _terminate() {
+
+};
+const diskUsageManager = new DiskUsageManager();
+const result = require("set").fileFinishedImporting("modules/install/native/DiskUsageManager.android.tsx");
+
+export default diskUsageManager;

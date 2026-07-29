@@ -1,31 +1,33 @@
-// Module ID: 10152
-// Function ID: 78466
+// Module ID: 10173
+// Function ID: 10174
 // Name: playVibingWumpusMusic
-// Dependencies: [653, 686, 507, 507, 2]
+// Dependencies: [676, 709, 530, 530, 2]
 // Exports: deleteAllSafetyWarnings, markAsInappropriateConversation, pauseVibingWumpusMusic, playVibingWumpusMusic, stopVibingWumpusMusic
 
-// Module 10152 (playVibingWumpusMusic)
+// Module 10173 (playVibingWumpusMusic)
 import { Endpoints } from "ME";
 
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/self_mod/inappropriate_conversation/InappropriateConversationsActionCreators.tsx");
+const result = require("sendRequest").fileFinishedImporting("modules/self_mod/inappropriate_conversation/InappropriateConversationsActionCreators.tsx");
 
 export const playVibingWumpusMusic = function playVibingWumpusMusic() {
-  importDefault(686).dispatch({ type: "VIBING_WUMPUS_PLAY_MUSIC" });
+  importDefault(709).dispatch({ type: "VIBING_WUMPUS_PLAY_MUSIC" });
 };
 export const stopVibingWumpusMusic = function stopVibingWumpusMusic() {
-  importDefault(686).dispatch({ type: "VIBING_WUMPUS_STOP_MUSIC" });
+  importDefault(709).dispatch({ type: "VIBING_WUMPUS_STOP_MUSIC" });
 };
 export const pauseVibingWumpusMusic = function pauseVibingWumpusMusic() {
-  importDefault(686).dispatch({ type: "VIBING_WUMPUS_PAUSE_MUSIC" });
+  importDefault(709).dispatch({ type: "VIBING_WUMPUS_PAUSE_MUSIC" });
 };
 export const deleteAllSafetyWarnings = function deleteAllSafetyWarnings(arg0) {
-  const HTTP = require(507) /* _isNativeReflectConstruct */.HTTP;
-  const obj = { url: Endpoints.DELETE_SAFETY_WARNINGS(arg0), rejectWithError: require(507) /* _isNativeReflectConstruct */.rejectWithMigratedError() };
+  const HTTP = require(530) /* sendRequest */.HTTP;
+  const obj = { url: Endpoints.DELETE_SAFETY_WARNINGS(arg0), rejectWithError: null };
+  obj[1] = require(530) /* sendRequest */.rejectWithMigratedError();
   return HTTP.del(obj);
 };
 export const markAsInappropriateConversation = function markAsInappropriateConversation(id, INAPPROPRIATE_CONVERSATION_TIER_1) {
-  const HTTP = require(507) /* _isNativeReflectConstruct */.HTTP;
-  obj = { url: Endpoints.ADD_SAFETY_WARNING(id), body: obj };
-  obj = { safety_warning_type: INAPPROPRIATE_CONVERSATION_TIER_1, rejectWithError: require(507) /* _isNativeReflectConstruct */.rejectWithMigratedError() };
+  const HTTP = require(530) /* sendRequest */.HTTP;
+  obj = { url: Endpoints.ADD_SAFETY_WARNING(id), body: obj, rejectWithError: null };
+  obj = { safety_warning_type: INAPPROPRIATE_CONVERSATION_TIER_1 };
+  obj[2] = require(530) /* sendRequest */.rejectWithMigratedError();
   return HTTP.post(obj);
 };

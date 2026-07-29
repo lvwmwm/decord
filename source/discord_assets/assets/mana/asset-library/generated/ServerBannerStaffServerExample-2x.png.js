@@ -1,9 +1,9 @@
-// Module ID: 7423
-// Function ID: 60406
+// Module ID: 7445
+// Function ID: 7446
 // Name: metadata
 // Dependencies: [2]
 
-// Module 7423 (metadata)
+// Module 7445 (metadata)
 const result = require("set").fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/ServerBannerStaffServerExample-2x.png.js");
 
 export default "https://cdn.discordapp.com/assets/content/4f08549ca82f8ad1a4cadafbc6a9fd147ab763ba71e649779ced06467b305250.png";

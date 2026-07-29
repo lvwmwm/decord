@@ -1,23 +1,23 @@
-// Module ID: 5830
-// Function ID: 50955
+// Module ID: 5848
+// Function ID: 5849
 // Name: calculateFractionalPremiumInfo
-// Dependencies: [57, 31, 1850, 3817, 5831, 653, 1852, 3747, 44, 3826, 3811, 566, 4594, 5832, 22, 2]
+// Dependencies: [32, 19, 1874, 3841, 5849, 676, 1876, 3771, 38, 3850, 3835, 589, 4616, 5850, 12, 2]
 // Exports: default
 
-// Module 5830 (calculateFractionalPremiumInfo)
+// Module 5848 (calculateFractionalPremiumInfo)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_6 from "_isNativeReflectConstruct";
-import closure_7 from "_isNativeReflectConstruct";
+import noop from "noop";
+import mergeGuildAvatar from "mergeGuildAvatar";
+import reset from "reset";
+import addEntitlement from "addEntitlement";
 import ME from "ME";
 import GuildFeatures from "GuildFeatures";
 
-let closure_10;
-let closure_11;
+let c10;
+let c9;
 let closure_12;
-let closure_8;
-let closure_9;
+let metroImportAll;
+let unpackModuleId;
 const require = arg1;
 function calculateFractionalPremiumInfo(isFetching) {
   let entitlements;
@@ -30,12 +30,11 @@ function calculateFractionalPremiumInfo(isFetching) {
     flag = false;
   }
   ({ entitlements, unactivatedFractionalPremiumUnits, premiumSubscription, fetchedAllEntitlements, excludeReverseTrialFromCountdown } = isFetching);
-  let obj = { isFractionalPremiumActive: false, fractionalState: constants3.NONE, startsAt: importDefault(3747)(0), endsAt: importDefault(3747)(0), currentEntitlementId: "", currentEntitlementEndsAt: importDefault(3747)(0), unactivatedUnits: [], fetched: fetchedAllEntitlements };
-  let str = "";
+  let obj = { isFractionalPremiumActive: false, fractionalState: constants3.NONE, startsAt: importDefault(3771)(0), endsAt: importDefault(3771)(0), currentEntitlementId: "", currentEntitlementEndsAt: importDefault(3771)(0), unactivatedUnits: [], fetched: fetchedAllEntitlements };
   if (flag) {
     obj = {};
     const merged = Object.assign(obj);
-    obj["fetched"] = false;
+    obj.fetched = false;
     return obj;
   } else {
     if (null != isFetching.currentUser) {
@@ -45,7 +44,7 @@ function calculateFractionalPremiumInfo(isFetching) {
         if (tmp2) {
           tmp2 = null != endsAt2.endsAt;
         }
-        outer1_1(outer1_2[8])(tmp2, "endsAt should not be null");
+        callback(table[8])(tmp2, "endsAt should not be null");
         let num = -1;
         if (endsAt.endsAt >= endsAt2.endsAt) {
           let num2 = 0;
@@ -61,91 +60,71 @@ function calculateFractionalPremiumInfo(isFetching) {
         const _Array = Array;
         const mapped = Array.from(entitlements.values()).map((id) => id.id);
         const arr = Array.from(entitlements.values());
-        obj = {};
-        const obj1 = { entitlementIds: mapped };
-        obj.extra = obj1;
-        const result = require(3826) /* _createGatewayCheckoutContext */.captureBillingMessage("fractional redemption entitlements should have startsAt/endsAt", obj);
+        obj = { extra: null };
+        const obj1 = { entitlementIds: null };
+        obj1[0] = mapped;
+        obj[0] = obj1;
+        const result = require(3850) /* _createGatewayCheckoutContext */.captureBillingMessage("fractional redemption entitlements should have startsAt/endsAt", obj);
         const _Error = Error;
         const error = new Error("fractional redemption entitlements should have startsAt/endsAt");
         throw error;
       }
-      const first = sorted[0];
-      let tmp4 = null;
-      if (null != first) {
-        tmp4 = first;
+      let first = sorted[0];
+      if (first == null) {
+        first = null;
       }
-      if (null == tmp4) {
+      if (null == first) {
         if (excludeReverseTrialFromCountdown) {
           let sourceType;
-          if (null != tmp4) {
-            sourceType = tmp4.sourceType;
+          if (first != null) {
+            sourceType = first.sourceType;
           }
           excludeReverseTrialFromCountdown = sourceType === constants.REVERSE_TRIAL;
         }
-        const obj2 = { isFractionalPremiumActive: null != tmp4, fractionalState: tmp6 };
-        if (null != tmp4) {
-          let tmp14 = importDefault(3747)(tmp4.startsAt);
+        const obj2 = { isFractionalPremiumActive: null, fractionalState: null, startsAt: null, endsAt: null, currentEntitlementId: null, currentEntitlementEndsAt: null, unactivatedUnits: null, fetched: null };
+        obj2[0] = null != first;
+        obj2[1] = tmp7;
+        if (null != first) {
+          let tmp11 = tmp2(3771)(first.startsAt);
         } else {
-          tmp14 = importDefault(3747)(0);
+          tmp11 = tmp2(3771)(0);
         }
-        obj2.startsAt = tmp14;
-        if (null != tmp4) {
-          const obj4 = require(3811) /* _createForOfIteratorHelperLoose */;
-          let tmp22Result = importDefault(3747)(obj4.extendDateWithUnconsumedFractionalPremium(tmp4.endsAt, unactivatedFractionalPremiumUnits, undefined, excludeReverseTrialFromCountdown));
-          const tmp22 = importDefault(3747);
+        obj2[2] = tmp11;
+        if (null != first) {
+          const obj4 = require(3835) /* getPremiumPlanItem */;
+          let tmp2ResultResult = tmp2(3771)(obj4.extendDateWithUnconsumedFractionalPremium(first.endsAt, unactivatedFractionalPremiumUnits, undefined, excludeReverseTrialFromCountdown));
+          const tmp2Result = tmp2(3771);
         } else {
-          tmp22Result = importDefault(3747)(0);
+          tmp2ResultResult = tmp2(3771)(0);
         }
-        obj2.endsAt = tmp22Result;
-        if (null != tmp4) {
-          str = tmp4.id;
+        obj2[3] = tmp2ResultResult;
+        let str = "";
+        if (null != first) {
+          str = first.id;
         }
-        obj2.currentEntitlementId = str;
-        if (null != tmp4) {
-          let tmp29 = importDefault(3747)(tmp4.endsAt);
+        obj2[4] = str;
+        if (null != first) {
+          let tmp18 = tmp2(3771)(first.endsAt);
         } else {
-          tmp29 = importDefault(3747)(0);
+          tmp18 = tmp2(3771)(0);
         }
-        obj2.currentEntitlementEndsAt = tmp29;
-        obj2.unactivatedUnits = unactivatedFractionalPremiumUnits;
-        obj2.fetched = fetchedAllEntitlements;
+        obj2[5] = tmp18;
+        obj2[6] = unactivatedFractionalPremiumUnits;
+        obj2[7] = fetchedAllEntitlements;
         return obj2;
       } else {
         if (null == premiumSubscription) {
-          const FP_ONLY = constants3.FP_ONLY;
+          const FP_ONLY = tmp.FP_ONLY;
         }
-        const FP_SUB_PAUSED = constants3.FP_SUB_PAUSED;
+        const FP_SUB_PAUSED = tmp.FP_SUB_PAUSED;
       }
     }
     return obj;
   }
 }
-function shouldFetchRedemptionEntitlements(forceFetch, stateFromStores) {
-  let tmp = null != stateFromStores;
-  if (tmp) {
-    tmp = !closure_7.fetchingAllEntitlements;
-  }
-  if (tmp) {
-    tmp = !closure_7.fetchedAllEntitlements || forceFetch;
-    const tmp4 = !closure_7.fetchedAllEntitlements || forceFetch;
-  }
-  return tmp;
-}
-function shouldFetchApplicationEntitlements(stateFromStores) {
-  let tmp = null != stateFromStores;
-  if (tmp) {
-    const applicationIdsFetching = closure_7.applicationIdsFetching;
-    tmp = !applicationIdsFetching.has(closure_12);
-  }
-  if (tmp) {
-    const applicationIdsFetched = closure_7.applicationIdsFetched;
-    tmp = !applicationIdsFetched.has(closure_12);
-  }
-  return tmp;
-}
-({ EntitlementSourceTypes: closure_8, EntitlementTypes: closure_9, SubscriptionStatusTypes: closure_10 } = ME);
-({ FractionalPremiumStates: closure_11, PREMIUM_SUBSCRIPTION_APPLICATION: closure_12 } = GuildFeatures);
-let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/billing/hooks/useFractionalPremiumInfo.tsx");
+({ EntitlementSourceTypes: metroImportAll, EntitlementTypes: c9, SubscriptionStatusTypes: c10 } = ME);
+({ FractionalPremiumStates: unpackModuleId, PREMIUM_SUBSCRIPTION_APPLICATION: closure_12 } = GuildFeatures);
+let result = require("mergeGuildAvatar").fileFinishedImporting("modules/billing/hooks/useFractionalPremiumInfo.tsx");
 
 export default function useFractionalPremiumInfo() {
   let excludeReverseTrialFromCountdown;
@@ -165,6 +144,7 @@ export default function useFractionalPremiumInfo() {
   const items = [stateFromStores1];
   stateFromStores = forceFetch(excludeReverseTrialFromCountdown[11]).useStateFromStores(items, () => stateFromStores1.getCurrentUser());
   const obj2 = forceFetch(excludeReverseTrialFromCountdown[11]);
+  let tmp = excludeReverseTrialFromCountdown;
   const items1 = [stateFromStores2];
   stateFromStoresArray = forceFetch(excludeReverseTrialFromCountdown[11]).useStateFromStoresArray(items1, () => stateFromStores2.getFractionalPremium({ excludeReverseTrial: closure_1 }));
   let obj3 = forceFetch(excludeReverseTrialFromCountdown[11]);
@@ -176,34 +156,68 @@ export default function useFractionalPremiumInfo() {
   const obj5 = forceFetch(excludeReverseTrialFromCountdown[11]);
   const items4 = [stateFromStoresArray1];
   stateFromStores2 = forceFetch(excludeReverseTrialFromCountdown[11]).useStateFromStores(items4, () => stateFromStoresArray1.getPremiumTypeSubscription());
-  obj = {};
-  let fetchingAllEntitlements = shouldFetchRedemptionEntitlements(forceFetch, stateFromStores);
-  if (!fetchingAllEntitlements) {
-    fetchingAllEntitlements = stateFromStores2.fetchingAllEntitlements;
+  let fetchingAllEntitlements = null != stateFromStores;
+  if (fetchingAllEntitlements) {
+    fetchingAllEntitlements = !tmp3.fetchingAllEntitlements;
+  }
+  if (fetchingAllEntitlements) {
+    let fetchedAllEntitlements = tmp3.fetchedAllEntitlements;
+    let tmp9 = !fetchedAllEntitlements;
+    if (fetchedAllEntitlements) {
+      tmp9 = forceFetch;
+    }
+    fetchingAllEntitlements = tmp9;
   }
   if (!fetchingAllEntitlements) {
-    fetchingAllEntitlements = shouldFetchApplicationEntitlements(stateFromStores);
+    fetchingAllEntitlements = tmp3.fetchingAllEntitlements;
   }
   if (!fetchingAllEntitlements) {
-    const applicationIdsFetching = stateFromStores2.applicationIdsFetching;
-    fetchingAllEntitlements = applicationIdsFetching.has(closure_12);
+    let tmp10 = null != stateFromStores;
+    if (tmp10) {
+      let applicationIdsFetching = tmp3.applicationIdsFetching;
+      tmp10 = !applicationIdsFetching.has(closure_12);
+    }
+    if (tmp10) {
+      let applicationIdsFetched = tmp3.applicationIdsFetched;
+      tmp10 = !applicationIdsFetched.has(closure_12);
+    }
+    fetchingAllEntitlements = tmp10;
   }
-  obj.isFetching = fetchingAllEntitlements;
-  obj.entitlements = stateFromStoresArray;
-  obj.unactivatedFractionalPremiumUnits = stateFromStoresArray1;
-  obj.currentUser = stateFromStores;
-  obj.premiumSubscription = stateFromStores2;
-  obj.fetchedAllEntitlements = stateFromStores1;
-  obj.excludeReverseTrialFromCountdown = excludeReverseTrialFromCountdown;
-  const tmp12 = stateFromStores(stateFromStoresArray.useState(calculateFractionalPremiumInfo(obj)), 2);
-  closure_8 = tmp12[1];
-  importDefault(excludeReverseTrialFromCountdown[12])(() => {
-    if (outer1_14(forceFetch, stateFromStores)) {
+  if (!fetchingAllEntitlements) {
+    const applicationIdsFetching2 = tmp3.applicationIdsFetching;
+    fetchingAllEntitlements = applicationIdsFetching2.has(closure_12);
+  }
+  const tmp14 = stateFromStores(stateFromStoresArray.useState(calculateFractionalPremiumInfo({ isFetching: fetchingAllEntitlements, entitlements: stateFromStoresArray, unactivatedFractionalPremiumUnits: stateFromStoresArray1, currentUser: stateFromStores, premiumSubscription: stateFromStores2, fetchedAllEntitlements: stateFromStores1, excludeReverseTrialFromCountdown })), 2);
+  closure_8 = tmp14[1];
+  importDefault(tmp[12])(() => {
+    let tmp3 = null != stateFromStores;
+    if (tmp3) {
+      tmp3 = !stateFromStores2.fetchingAllEntitlements;
+    }
+    if (tmp3) {
+      const fetchedAllEntitlements = stateFromStores2.fetchedAllEntitlements;
+      let tmp6 = !fetchedAllEntitlements;
+      if (fetchedAllEntitlements) {
+        tmp6 = forceFetch;
+      }
+      tmp3 = tmp6;
+    }
+    if (tmp3) {
       let obj = forceFetch(excludeReverseTrialFromCountdown[13]);
-      obj = { entitlementType: outer1_9.FRACTIONAL_REDEMPTION };
+      obj = { entitlementType: null };
+      obj[0] = outer1_9.FRACTIONAL_REDEMPTION;
       const userEntitlements = obj.fetchUserEntitlements(obj);
     }
-    if (outer1_15(stateFromStores)) {
+    let tmp11 = null != stateFromStores;
+    if (tmp11) {
+      const applicationIdsFetching = stateFromStores2.applicationIdsFetching;
+      tmp11 = !applicationIdsFetching.has(outer1_12);
+    }
+    if (tmp11) {
+      const applicationIdsFetched = stateFromStores2.applicationIdsFetched;
+      tmp11 = !applicationIdsFetched.has(outer1_12);
+    }
+    if (tmp11) {
       const userEntitlementsForApplication = forceFetch(excludeReverseTrialFromCountdown[13]).fetchUserEntitlementsForApplication(outer1_12);
       const obj3 = forceFetch(excludeReverseTrialFromCountdown[13]);
     }
@@ -212,12 +226,12 @@ export default function useFractionalPremiumInfo() {
   const effect = stateFromStoresArray.useEffect(() => {
     let closure_0 = outer1_13({ entitlements: stateFromStoresArray, unactivatedFractionalPremiumUnits: stateFromStoresArray1, currentUser: stateFromStores, premiumSubscription: stateFromStores2, fetchedAllEntitlements: stateFromStores1, excludeReverseTrialFromCountdown });
     callback((arg0) => {
-      let tmp = arg0;
-      if (!obj.isEqual(arg0, closure_0)) {
-        tmp = closure_0;
+      let tmp = callback;
+      if (obj.isEqual(arg0, callback)) {
+        tmp = arg0;
       }
       return tmp;
     });
   }, items5);
-  return tmp12[0];
+  return tmp14[0];
 };

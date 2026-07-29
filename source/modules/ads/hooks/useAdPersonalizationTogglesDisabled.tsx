@@ -1,16 +1,16 @@
-// Module ID: 14628
-// Function ID: 111473
+// Module ID: 14653
+// Function ID: 14654
 // Name: useAdPersonalizationTogglesDisabled
-// Dependencies: [12716, 566, 2]
+// Dependencies: [12738, 589, 2]
 // Exports: useAdPersonalizationTogglesDisabled
 
-// Module 14628 (useAdPersonalizationTogglesDisabled)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 14653 (useAdPersonalizationTogglesDisabled)
+import reset from "reset";
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/ads/hooks/useAdPersonalizationTogglesDisabled.tsx");
 
 export const useAdPersonalizationTogglesDisabled = function useAdPersonalizationTogglesDisabled() {
-  const items = [_isNativeReflectConstruct];
-  return require(566) /* initialize */.useStateFromStores(items, () => outer1_2.isTogglesDisabled());
+  const items = [reset];
+  return require(589) /* initialize */.useStateFromStores(items, () => togglesDisabled.isTogglesDisabled());
 };

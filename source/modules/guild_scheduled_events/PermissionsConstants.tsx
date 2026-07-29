@@ -1,16 +1,16 @@
-// Module ID: 8241
-// Function ID: 65853
+// Module ID: 8265
+// Function ID: 8266
 // Name: VIEW_CHANNEL
-// Dependencies: [653, 483, 1356, 2]
+// Dependencies: [676, 506, 1380, 2]
 
-// Module 8241 (VIEW_CHANNEL)
+// Module 8265 (VIEW_CHANNEL)
 import { Permissions } from "ME";
-import importAllResult from "fromHexReverseArray";
-import importAllResult1 from "fromHexReverseArray";
+import importAllResult from "fromString";
+import importAllResult1 from "fromString";
 
 const VIEW_CHANNEL = Permissions.VIEW_CHANNEL;
-const combineResult = require("fromHexReverseArray").combine(VIEW_CHANNEL, Permissions.CONNECT);
-const combineResult1 = require("fromHexReverseArray").combine(VIEW_CHANNEL, require("Permissions").MODERATE_STAGE_CHANNEL_PERMISSIONS);
+const combineResult = require("fromString").combine(VIEW_CHANNEL, Permissions.CONNECT);
+const combineResult1 = require("fromString").combine(VIEW_CHANNEL, require("Permissions").MODERATE_STAGE_CHANNEL_PERMISSIONS);
 const result = require("Permissions").fileFinishedImporting("modules/guild_scheduled_events/PermissionsConstants.tsx");
 
 export const CREATE_GUILD_EVENT_CORE_PERMISSIONS = VIEW_CHANNEL;

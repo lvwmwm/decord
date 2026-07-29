@@ -1,67 +1,77 @@
-// Module ID: 9916
-// Function ID: 76636
+// Module ID: 9938
+// Function ID: 9939
 // Name: keyExtractor
-// Dependencies: [57, 31, 27, 9529, 33, 4165, 689, 4026, 4577, 9917, 566, 8402, 480, 664, 9919, 9931, 6655, 2]
+// Dependencies: [32, 19, 17, 9553, 21, 4189, 712, 4050, 4599, 9939, 589, 8426, 503, 687, 9941, 9953, 6676, 2]
 
-// Module 9916 (keyExtractor)
+// Module 9938 (keyExtractor)
 import _slicedToArray from "_slicedToArray";
-import importAllResult from "result";
-import { View } from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import importAllResult from "noop";
+import { View } from "set";
+import getTimeSafe from "getTimeSafe";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_7;
-let closure_8;
+let error;
+let metroImportAll;
 const require = arg1;
 function keyExtractor(saveData) {
   return saveData.saveData.messageId;
 }
 function ForLaterPage(type) {
   type = type.type;
-  const arr = importDefault(9917)(type);
-  let obj = first(566);
-  const items = [_isNativeReflectConstruct];
-  const stateFromStores = obj.useStateFromStores(items, () => outer1_6.getOverdueMessageReminderCount());
-  obj = {};
+  let first;
+  let importDefault;
+  const arr = importDefault(9939)(type);
+  let obj = first(589);
+  const items = [getTimeSafe];
+  const stateFromStores = obj.useStateFromStores(items, () => overdueMessageReminderCount.getOverdueMessageReminderCount());
+  obj = { type: null, name: null, properties: null };
   const tmp = callback4();
-  obj.type = first(480).ImpressionTypes.MODAL;
-  obj.name = first(480).ImpressionNames.FOR_LATER_LIST_VIEWED;
-  obj.properties = { total_count: arr.length, overdue_count: stateFromStores };
+  obj[0] = first(503).ImpressionTypes.MODAL;
+  obj[1] = first(503).ImpressionNames.FOR_LATER_LIST_VIEWED;
+  obj[2] = { total_count: arr.length, overdue_count: stateFromStores };
   const items1 = [arr.length, stateFromStores];
-  importDefault(8402)(obj, {}, items1);
-  const tmp3 = importDefault(8402);
-  const tmp6 = callback(importAllResult.useState(new Date()), 2);
-  first = tmp6[0];
-  importDefault = tmp6[1];
+  importDefault(8426)(obj, {}, items1);
+  const tmp5 = importDefault(8426);
+  const tmp8 = callback(importAllResult.useState(new Date()), 2);
+  first = tmp8[0];
+  importDefault = tmp8[1];
   const effect = importAllResult.useEffect(() => {
-    const interval = setInterval(() => outer1_1(new Date()), callback(outer1_2[13]).Millis.MINUTE);
+    const interval = setInterval(() => callback(new Date()), callback(outer1_2[13]).Millis.MINUTE);
     return () => {
       clearInterval(closure_0);
     };
   }, []);
   [][0] = first;
   if (0 === arr.length) {
-    obj = { type };
-    let tmp14 = callback2(first(9931).ForLaterEmptyState, obj);
+    obj = { type: null };
+    obj[0] = type;
+    let tmp14 = callback2(tmp3(9953).ForLaterEmptyState, obj);
   } else {
-    const obj1 = { data: arr, renderItem: tmp9, contentContainerStyle: tmp.cardContainer, keyExtractor, onScroll: type.handleScroll };
-    tmp14 = callback2(first(6655).FlashList, obj1);
+    const obj1 = { data: null, renderItem: null, contentContainerStyle: null, keyExtractor: null, onScroll: null };
+    obj1[0] = arr;
+    obj1[1] = tmp11;
+    obj1[2] = tmp.cardContainer;
+    obj1[3] = keyExtractor;
+    obj1[4] = type.handleScroll;
+    tmp14 = callback2(tmp3(6676).FlashList, obj1);
   }
   return tmp14;
 }
-({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-let obj = {};
-obj = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWER, flexGrow: 1 };
-obj.container = obj;
-_createForOfIteratorHelperLoose = { height: 1, width: "100%", backgroundColor: require("_createForOfIteratorHelperLoose").colors.BORDER_SUBTLE };
-obj.headerBorder = _createForOfIteratorHelperLoose;
-obj.cardContainer = { paddingHorizontal: 16, paddingVertical: 8 };
-let closure_9 = _createForOfIteratorHelperLoose.createStyles(obj);
+let c4 = importAllResult;
+({ jsx: error, jsxs: metroImportAll } = jsxProd);
+let obj = { container: null, headerBorder: null, cardContainer: null };
+obj = { backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOWER, flexGrow: 1 };
+obj[0] = obj;
+createCacheKey = { height: 1, width: "100%", backgroundColor: require("Themes").colors.BORDER_SUBTLE };
+obj[1] = createCacheKey;
+obj[2] = { paddingHorizontal: 16, paddingVertical: 8 };
+let closure_9 = createCacheKey.createStyles(obj);
 let closure_10 = { code: "function ForLaterScreenTsx1(){const{borderOpacity}=this.__closure;return{opacity:borderOpacity.get()};}" };
 const memoResult = importAllResult.memo((type) => {
+  let sharedValue;
   const tmp = callback4();
-  let obj = sharedValue(4026);
+  let obj = sharedValue(4050);
   sharedValue = obj.useSharedValue(0);
   const items = [sharedValue];
   const callback = importAllResult.useCallback((nativeEvent) => {
@@ -77,11 +87,11 @@ const memoResult = importAllResult.memo((type) => {
   fn.__closure = { borderOpacity: sharedValue };
   fn.__workletHash = 16693192032676;
   fn.__initData = closure_10;
-  obj = { style: tmp.container };
-  const animatedStyle = sharedValue(4026).useAnimatedStyle(fn);
+  obj = { style: tmp.container, children: null };
+  const animatedStyle = sharedValue(4050).useAnimatedStyle(fn);
   const items1 = [tmp.headerBorder, animatedStyle];
-  const items2 = [callback2(importDefault(4026).View, { style: items1 }), callback2(ForLaterPage, { type: type.type, handleScroll: callback })];
-  obj.children = items2;
+  const items2 = [callback2(importDefault(4050).View, { style: items1 }), callback2(ForLaterPage, { type: type.type, handleScroll: callback })];
+  obj[1] = items2;
   return callback3(View, obj);
 });
 let result = require("get ActivityIndicator").fileFinishedImporting("modules/saved_messages/native/ForLaterScreen.tsx");

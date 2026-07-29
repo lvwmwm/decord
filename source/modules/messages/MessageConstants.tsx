@@ -1,24 +1,23 @@
-// Module ID: 4158
-// Function ID: 34413
+// Module ID: 4182
+// Function ID: 4183
 // Name: MESSAGE_GROUP_SPACING
-// Dependencies: [653, 664, 561, 2]
+// Dependencies: [676, 687, 584, 2]
 // Exports: isChannelStreamMessage
 
-// Module 4158 (MESSAGE_GROUP_SPACING)
+// Module 4182 (MESSAGE_GROUP_SPACING)
 import { ChannelStreamTypes } from "ME";
-import importDefaultResult from "Backoff";
+import importDefaultResult from "fails";
 
-let obj = {};
-obj = {};
+let obj = { timeout: null, backoff: null, retries: 8 };
+obj = { response: null, deadline: null };
 const frozen = Object.freeze({ referencedAvatarProfile: false, referencedUsernameProfile: false, interactionAvatarProfile: false, interactionUsernameProfile: false, interactionData: false, avatarProfile: false, usernameProfile: false, emojiPicker: false, emojiBurstPicker: false, moreUtilities: false, contextMenu: false });
-obj.response = 10 * require("set").Millis.SECOND;
-obj.deadline = require("set").Millis.MINUTE;
-obj.timeout = obj;
+obj[0] = 10 * require("set").Millis.SECOND;
+obj[1] = require("set").Millis.MINUTE;
+obj[0] = obj;
 const result = 0.5 * require("set").Millis.SECOND;
 importDefaultResult = new importDefaultResult(result, 60 * require("set").Millis.SECOND);
-obj.backoff = importDefaultResult;
-obj.retries = 8;
-const result1 = require("Backoff").fileFinishedImporting("modules/messages/MessageConstants.tsx");
+obj[1] = importDefaultResult;
+const result1 = require("fails").fileFinishedImporting("modules/messages/MessageConstants.tsx");
 
 export const MESSAGE_GROUP_SPACING = [0, 4, 8, 16, 24];
 export const DEFAULT_COZY_SPACING = 16;

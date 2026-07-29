@@ -1,67 +1,66 @@
-// Module ID: 9207
-// Function ID: 72060
+// Module ID: 9231
+// Function ID: 9232
 // Name: handlePress
-// Dependencies: [31, 27, 9155, 33, 4165, 689, 9153, 9164, 4161, 1212, 4578, 2]
+// Dependencies: [19, 17, 9179, 21, 4189, 712, 9177, 9188, 4185, 1236, 4600, 2]
 // Exports: default
 
-// Module 9207 (handlePress)
-import "result";
+// Module 9231 (handlePress)
+import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
-import { resetChangeEmailStore } from "setChangeEmailError";
+import { resetChangeEmailStore } from "ChangeEmailFields";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_3;
-let closure_4;
-let closure_5;
-let closure_7;
-let closure_8;
+let c3;
+let c4;
+let c5;
+let error;
+let metroImportAll;
 const require = arg1;
 function handlePress() {
   resetChangeEmailStore();
-  importDefault(9153).close();
+  importDefault(9177).close();
 }
-({ View: closure_3, Image: closure_4, ScrollView: closure_5 } = get_ActivityIndicator);
-({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { flexGrow: 2, paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16, paddingBottom: require("_createForOfIteratorHelperLoose").space.PX_16, gap: 20, alignItems: "center" };
-_createForOfIteratorHelperLoose.contentContainer = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.image = { height: 190, width: 220, resizeMode: "contain" };
-_createForOfIteratorHelperLoose.title = { textAlign: "center" };
-_createForOfIteratorHelperLoose.body = { textAlign: "center" };
-_createForOfIteratorHelperLoose.bodyInner = { gap: 2 };
-let obj1 = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SURFACE_HIGH, width: "100%", padding: 12, borderWidth: 1, borderStyle: "solid", borderRadius: require("_createForOfIteratorHelperLoose").radii.sm, borderColor: require("_createForOfIteratorHelperLoose").colors.BORDER_SUBTLE };
-const merged = Object.assign(require("_createForOfIteratorHelperLoose").shadows.SHADOW_LOW);
-_createForOfIteratorHelperLoose.tooltip = obj1;
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-const result = require("setChangeEmailError").fileFinishedImporting("modules/verification/native/components/ChangeEmailComplete.tsx");
+({ View: c3, Image: c4, ScrollView: c5 } = get_ActivityIndicator);
+({ jsx: error, jsxs: metroImportAll } = jsxProd);
+createCacheKey = { contentContainer: null, image: null, title: null, body: null, bodyInner: null, tooltip: null };
+createCacheKey = { flexGrow: 2, paddingHorizontal: require("Themes").space.PX_16, paddingBottom: require("Themes").space.PX_16, gap: 20, alignItems: "center" };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { height: 190, width: 220, resizeMode: "contain" };
+createCacheKey[2] = { textAlign: "center" };
+createCacheKey[3] = { textAlign: "center" };
+createCacheKey[4] = { gap: 2 };
+const merged = Object.assign(require("Themes").shadows.SHADOW_LOW);
+createCacheKey[5] = { backgroundColor: require("Themes").colors.BACKGROUND_SURFACE_HIGH, width: "100%", padding: 12, borderWidth: 1, borderStyle: "solid", borderRadius: require("Themes").radii.sm, borderColor: require("Themes").colors.BORDER_SUBTLE };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let obj1 = { backgroundColor: require("Themes").colors.BACKGROUND_SURFACE_HIGH, width: "100%", padding: 12, borderWidth: 1, borderStyle: "solid", borderRadius: require("Themes").radii.sm, borderColor: require("Themes").colors.BORDER_SUBTLE };
+const result = require("ChangeEmailFields").fileFinishedImporting("modules/verification/native/components/ChangeEmailComplete.tsx");
 
 export default function ChangeEmailComplete(email) {
-  const tmp = _createForOfIteratorHelperLoose();
-  let obj = { keyboardShouldPersistTaps: "handled", alwaysBounceVertical: false, contentContainerStyle: tmp.contentContainer };
-  obj = { style: tmp.image, source: importDefault(9164) };
+  const tmp = createCacheKey();
+  let obj = { keyboardShouldPersistTaps: "handled", alwaysBounceVertical: false, contentContainerStyle: tmp.contentContainer, children: null };
+  obj = { style: tmp.image, source: importDefault(9188) };
   const items = [callback(closure_4, obj), , , ];
-  obj = { style: tmp.bodyInner };
-  const obj1 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary" };
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj1.children = intl.string(require(1212) /* getSystemLocale */.t["8O+nF7"]);
-  const items1 = [callback(require(4161) /* Text */.Text, obj1), ];
-  const obj2 = { style: tmp.body, variant: "text-sm/medium", color: "text-default" };
-  const intl2 = require(1212) /* getSystemLocale */.intl;
-  obj2.children = intl2.format(require(1212) /* getSystemLocale */.t.Zvx0O3, { email: email.email });
-  items1[1] = callback(require(4161) /* Text */.Text, obj2);
-  obj.children = items1;
+  obj = { style: tmp.bodyInner, children: null };
+  const obj1 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: null };
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj1[4] = intl.string(require(1236) /* getSystemLocale */.t["8O+nF7"]);
+  const items1 = [callback(require(4185) /* Text */.Text, obj1), ];
+  const obj2 = { style: tmp.body, variant: "text-sm/medium", color: "text-default", children: null };
+  const intl2 = require(1236) /* getSystemLocale */.intl;
+  obj2[3] = intl2.format(require(1236) /* getSystemLocale */.t.Zvx0O3, { email: email.email });
+  items1[1] = callback(require(4185) /* Text */.Text, obj2);
+  obj[1] = items1;
   items[1] = callback2(closure_3, obj);
-  const obj3 = { style: tmp.tooltip, variant: "text-sm/normal" };
-  const intl3 = require(1212) /* getSystemLocale */.intl;
-  obj3.children = intl3.string(require(1212) /* getSystemLocale */.t.yb7itQ);
-  items[2] = callback(require(4161) /* Text */.Text, obj3);
-  const obj4 = {};
-  const intl4 = require(1212) /* getSystemLocale */.intl;
-  obj4.text = intl4.string(require(1212) /* getSystemLocale */.t.BddRzS);
-  obj4.onPress = handlePress;
-  obj4.grow = true;
-  items[3] = callback(require(4578) /* Button */.Button, obj4);
-  obj.children = items;
+  const obj3 = { style: tmp.tooltip, variant: "text-sm/normal", children: null };
+  const intl3 = require(1236) /* getSystemLocale */.intl;
+  obj3[2] = intl3.string(require(1236) /* getSystemLocale */.t.yb7itQ);
+  items[2] = callback(require(4185) /* Text */.Text, obj3);
+  const obj4 = { text: null, onPress: null, grow: true };
+  const intl4 = require(1236) /* getSystemLocale */.intl;
+  obj4[0] = intl4.string(require(1236) /* getSystemLocale */.t.BddRzS);
+  obj4[1] = handlePress;
+  items[3] = callback(require(4600) /* Button */.Button, obj4);
+  obj[3] = items;
   return callback2(closure_5, obj);
 };

@@ -1,23 +1,23 @@
-// Module ID: 1321
-// Function ID: 15525
+// Module ID: 1345
+// Function ID: 1346
 // Name: resolveTheme
-// Dependencies: [1322, 1279, 1280, 1316, 1281, 1328, 1282, 1324, 2]
+// Dependencies: [1346, 1303, 1304, 1340, 1305, 1352, 1306, 1348, 2]
 // Exports: default
 
-// Module 1321 (resolveTheme)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_3 from "_isNativeReflectConstruct";
-import closure_4 from "_isNativeReflectConstruct";
-import closure_5 from "_isNativeReflectConstruct";
+// Module 1345 (resolveTheme)
+import reset from "reset";
+import initialize from "initialize";
+import CHANNEL_SIDEBAR_WIDTH from "CHANNEL_SIDEBAR_WIDTH";
+import handleConnectionClosedOrResumed from "handleConnectionClosedOrResumed";
 import SystemThemeState from "SystemThemeState";
 
+let c9;
 let closure_6;
-let closure_7;
-let closure_8;
-let closure_9;
+let error;
+let metroImportAll;
 const require = arg1;
-({ PROTO_THEME_MAP_MOBILE: closure_6, PROTO_THEME_MAP_MOBILE_REFRESH: closure_7, SystemTheme: closure_8, SystemThemeState: closure_9 } = SystemThemeState);
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/themes/resolveTheme.native.tsx");
+({ PROTO_THEME_MAP_MOBILE: closure_6, PROTO_THEME_MAP_MOBILE_REFRESH: error, SystemTheme: metroImportAll, SystemThemeState: c9 } = SystemThemeState);
+const result = require("CHANNEL_SIDEBAR_WIDTH").fileFinishedImporting("modules/themes/resolveTheme.native.tsx");
 
 export default function resolveTheme(arg0, arg1) {
   previewTheme = previewTheme.getPreviewTheme();
@@ -31,7 +31,7 @@ export default function resolveTheme(arg0, arg1) {
     }
     appearanceSettings = appearanceSettings.getAppearanceSettings();
     let theme;
-    if (null != appearanceSettings) {
+    if (appearanceSettings != null) {
       theme = appearanceSettings.theme;
     }
     if (null != theme) {
@@ -39,21 +39,21 @@ export default function resolveTheme(arg0, arg1) {
     } else {
       const appearance = settings.settings.appearance;
       let theme1;
-      if (null != appearance) {
+      if (appearance != null) {
         theme1 = appearance.theme;
       }
-      if (null == theme1) {
-        theme1 = require(1282) /* _callSuper */.Theme.UNSET;
+      if (theme1 == null) {
+        theme1 = tmp14(1306).Theme.UNSET;
       }
-      if (theme1 === require(1282) /* _callSuper */.Theme.UNSET) {
+      if (theme1 === tmp14(1306).Theme.UNSET) {
         if (arg0 !== constants.NO_PREFERENCE) {
-          let tmp16 = arg1[arg0];
+          let tmp10 = arg1[arg0];
         }
-        return tmp16;
+        return tmp10;
       }
-      tmp16 = require(1324) /* useIsMobileVisualRefreshExperimentEnabled */.isMobileVisualRefreshEnabled("resolveTheme") ? closure_7 : closure_6[theme1];
-      const obj = require(1324) /* useIsMobileVisualRefreshExperimentEnabled */;
+      tmp10 = tmp14(1348).isMobileVisualRefreshEnabled("resolveTheme") ? closure_7 : closure_6[theme1];
+      const tmp14Result = tmp14(1348);
     }
-    obj2 = require(1328) /* getToken */;
+    obj2 = require(1352) /* getToken */;
   }
 };

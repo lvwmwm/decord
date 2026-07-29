@@ -1,29 +1,29 @@
-// Module ID: 14245
-// Function ID: 109441
-// Dependencies: [27, 4212, 7733, 33, 4165, 566, 10746, 8814, 10099, 1212, 2]
+// Module ID: 14267
+// Function ID: 14268
+// Dependencies: [17, 4236, 7756, 21, 4189, 589, 10770, 8838, 10120, 1236, 2]
 
-// Module 14245
+// Module 14267
 import { View } from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import _detectH265HardwareDecode from "_detectH265HardwareDecode";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 import createToggle from "createToggle";
 
-let closure_6 = _createForOfIteratorHelperLoose.createStyles({ slider: { marginTop: 8 } });
+let closure_6 = createCacheKey.createStyles({ slider: { marginTop: 8 } });
 let obj = {
   useTitle() {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(require(1212) /* getSystemLocale */.t["sqUm+k"]);
+    const intl = require(1236) /* getSystemLocale */.intl;
+    return intl.string(require(1236) /* getSystemLocale */.t["sqUm+k"]);
   },
   parent: require("MobileSetting").MobileSetting.VOICE,
   useDescription: function useVoiceSensitivitySettingDescription() {
     let vadAutoThreshold;
     let vadThreshold;
-    let obj = inputMode(566);
-    const items = [_isNativeReflectConstruct];
-    const stateFromStoresObject = obj.useStateFromStoresObject(items, () => ({ inputMode: outer1_4.getMode(), vadThreshold: outer1_4.getModeOptions().threshold, vadAutoThreshold: outer1_4.getModeOptions().autoThreshold }));
+    let obj = inputMode(589);
+    const items = [_detectH265HardwareDecode];
+    const stateFromStoresObject = obj.useStateFromStoresObject(items, () => ({ inputMode: store.getMode(), vadThreshold: store.getModeOptions().threshold, vadAutoThreshold: store.getModeOptions().autoThreshold }));
     inputMode = stateFromStoresObject.inputMode;
-    obj = { style: callback().slider, children: jsx(importDefault(10746), obj) };
+    obj = { style: callback().slider, children: jsx(importDefault(10770), obj) };
     ({ vadThreshold, vadAutoThreshold } = stateFromStoresObject);
     obj = {
       auto: vadAutoThreshold,
@@ -41,25 +41,25 @@ let obj = {
     }} />;
   },
   useSearchTerms() {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    const items = [intl.string(require(1212) /* getSystemLocale */.t.nuFtHH)];
+    const intl = require(1236) /* getSystemLocale */.intl;
+    const items = [intl.string(require(1236) /* getSystemLocale */.t.nuFtHH)];
     return items;
   }
 };
 const createStaticResult = createToggle.createStatic({
   useTitle() {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(require(1212) /* getSystemLocale */.t["sqUm+k"]);
+    const intl = require(1236) /* getSystemLocale */.intl;
+    return intl.string(require(1236) /* getSystemLocale */.t["sqUm+k"]);
   },
   parent: require("MobileSetting").MobileSetting.VOICE,
   useDescription: function useVoiceSensitivitySettingDescription() {
     let vadAutoThreshold;
     let vadThreshold;
-    let obj = inputMode(566);
-    const items = [_isNativeReflectConstruct];
-    const stateFromStoresObject = obj.useStateFromStoresObject(items, () => ({ inputMode: outer1_4.getMode(), vadThreshold: outer1_4.getModeOptions().threshold, vadAutoThreshold: outer1_4.getModeOptions().autoThreshold }));
+    let obj = inputMode(589);
+    const items = [_detectH265HardwareDecode];
+    const stateFromStoresObject = obj.useStateFromStoresObject(items, () => ({ inputMode: store.getMode(), vadThreshold: store.getModeOptions().threshold, vadAutoThreshold: store.getModeOptions().autoThreshold }));
     inputMode = stateFromStoresObject.inputMode;
-    obj = { style: callback().slider, children: jsx(importDefault(10746), obj) };
+    obj = { style: callback().slider, children: jsx(importDefault(10770), obj) };
     ({ vadThreshold, vadAutoThreshold } = stateFromStoresObject);
     obj = {
       auto: vadAutoThreshold,
@@ -77,8 +77,8 @@ const createStaticResult = createToggle.createStatic({
     }} />;
   },
   useSearchTerms() {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    const items = [intl.string(require(1212) /* getSystemLocale */.t.nuFtHH)];
+    const intl = require(1236) /* getSystemLocale */.intl;
+    const items = [intl.string(require(1236) /* getSystemLocale */.t.nuFtHH)];
     return items;
   }
 });

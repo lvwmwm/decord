@@ -1,14 +1,13 @@
-// Module ID: 7825
-// Function ID: 61951
+// Module ID: 7848
+// Function ID: 7849
 // Name: apexExperiment
-// Dependencies: [1428, 2]
+// Dependencies: [1452, 2]
 // Exports: getVoiceUserAffinitySortType, useVoiceUserAffinitySortType
 
-// Module 7825 (apexExperiment)
+// Module 7848 (apexExperiment)
 import ApexExperiment from "ApexExperiment";
 
-const obj = { kind: "user", name: "2025-08-voice-user-affinity", defaultConfig: { enabled: false }, variations: { [0]: { enabled: false, sortType: undefined }, [1]: { enabled: true, sortType: "vc_probability" }, [2]: { enabled: true, sortType: "communication_probability" } } };
-const apexExperiment = ApexExperiment.createApexExperiment(obj);
+const apexExperiment = ApexExperiment.createApexExperiment({ kind: "user", name: "2025-08-voice-user-affinity", defaultConfig: { enabled: false }, variations: { 0: { enabled: false, sortType: "r" }, 1: { enabled: true, sortType: "vc_probability" }, 2: { enabled: true, sortType: "communication_probability" } } });
 const result = require("set").fileFinishedImporting("modules/user_affinities/VoiceUserAffinityExperiment.tsx");
 
 export default apexExperiment;

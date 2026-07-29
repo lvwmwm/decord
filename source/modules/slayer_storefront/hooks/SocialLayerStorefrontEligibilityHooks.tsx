@@ -1,359 +1,260 @@
-// Module ID: 8662
-// Function ID: 68682
-// Name: _createForOfIteratorHelperLoose
-// Dependencies: [8663, 4185, 5878, 1838, 4252, 5646, 566, 8152, 8664, 2]
-// Exports: useAreUsersInSocialLayerStorefrontMutualGuildsApplicationIds, useAreUsersPlayingStorefrontEnabledGames, useCurrentUserPlayedSocialLayerStorefrontGamesApplicationIds, useIsCurrentUserInSocialLayerStorefrontGuildsApplicationIds, useIsCurrentUserPlayingSocialLayerStorefrontGames, useUsersPlayedSocialLayerStorefrontGamesInOutboxApplicationIds
+// Module ID: 8686
+// Function ID: 8687
+// Name: useUsersPlayedSocialLayerStorefrontGamesInOutboxApplicationIds
+// Dependencies: [8687, 4209, 5896, 1862, 4276, 5664, 589, 8176, 8688, 2]
+// Exports: useAreUsersInSocialLayerStorefrontMutualGuildsApplicationIds, useAreUsersPlayingStorefrontEnabledGames, useCurrentUserPlayedSocialLayerStorefrontGamesApplicationIds, useCurrentUserPlayingSocialLayerStorefrontGamesApplicationIds, useIsCurrentUserInSocialLayerStorefrontGuildsApplicationIds, useIsCurrentUserPlayingSocialLayerStorefrontGames, useUsersPlayedSocialLayerStorefrontGamesInOutboxApplicationIds, useUsersPlayingStorefrontEnabledGamesApplicationIds
 
-// Module 8662 (_createForOfIteratorHelperLoose)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_3 from "_isNativeReflectConstruct";
-import closure_4 from "_isNativeReflectConstruct";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import closure_6 from "_isNativeReflectConstruct";
-import closure_7 from "_isNativeReflectConstruct";
+// Module 8686 (useUsersPlayedSocialLayerStorefrontGamesInOutboxApplicationIds)
+import map from "map";
+import initialize from "initialize";
+import createUserWidgetFromServer from "createUserWidgetFromServer";
+import createGuildRecordFromRust from "createGuildRecordFromRust";
+import sortActivity from "sortActivity";
+import handleUserSettingsStoreUpdate from "handleUserSettingsStoreUpdate";
 
 const require = arg1;
-function _createForOfIteratorHelperLoose(iterable) {
-  let closure_0 = iterable;
-  iterable = "undefined" !== typeof Symbol;
-  if (iterable) {
-    const _Symbol = Symbol;
-    iterable = iterable[Symbol.iterator];
-  }
-  if (!iterable) {
-    iterable = iterable[Symbol.iterator];
-  }
-  if (iterable) {
-    const iter = iterable.call(iterable);
-    const next = iter.next;
-    return next.bind(iter);
-  } else {
-    const _Array = Array;
-    let tmp = iterable;
-    if (!Array.isArray(iterable)) {
-      let tmp2;
-      if (iterable) {
-        if ("string" === typeof iterable) {
-          tmp2 = _arrayLikeToArray(iterable, undefined);
-        } else {
-          const toString = {}.toString;
-          const substr = toString.call(iterable).slice(8, -1);
-          let name = substr;
-          if (tmp3) {
-            name = iterable.constructor.name;
-          }
-          if ("Map" !== name) {
-            if ("Set" !== name) {
-              if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(iterable, undefined);
-              } else {
-                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
-              }
-            }
-            tmp2 = arr;
-          }
-          const _Array2 = Array;
-          arr = Array.from(iterable);
-          const callResult = toString.call(iterable);
-          tmp3 = "Object" === substr && iterable.constructor;
-        }
-      }
-      tmp = tmp2;
-      if (!tmp2) {
-        const _TypeError = TypeError;
-        const typeError = new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
-        throw typeError;
-      }
-    }
-    if (tmp) {
-      closure_0 = tmp;
-    }
-    let c1 = 0;
-    return () => {
-      if (closure_1 >= length.length) {
-        let obj = { done: true };
-      } else {
-        obj = { done: false };
-        closure_1 = tmp3 + 1;
-        obj.value = length[+closure_1];
-      }
-      return obj;
-    };
-  }
-}
-function _arrayLikeToArray(arg0, arg1) {
-  let length;
-  if (tmp) {
-    length = arg0.length;
-  }
-  const ArrayResult = Array(length);
-  for (let num = 0; num < length; num = num + 1) {
-    ArrayResult[num] = arg0[num];
-  }
-  return ArrayResult;
-}
-function useUsersPlayingStorefrontEnabledGamesApplicationIds(userIds) {
-  userIds = userIds.userIds;
-  let items = [closure_6, closure_7];
-  const items1 = [userIds];
-  const stateFromStoresArray = userIds(566).useStateFromStoresArray(items, () => {
-    let iter6;
-    const items = [];
-    const tmp = outer1_8(userIds);
-    const iter = tmp();
-    let iter2 = iter;
-    if (!iter.done) {
-      do {
-        let tmp3 = outer1_8;
-        let tmp4 = outer1_6;
-        let tmp5 = outer1_8(outer1_6.getActivities(iter2.value));
-        let iter3 = tmp5();
-        let iter4 = iter3;
-        let tmp6 = tmp2;
-        if (!iter3.done) {
-          do {
-            let value = iter4.value;
-            if (null != value.application_id) {
-              let tmp7 = outer1_7;
-              let applicationIdFromDetectableId = outer1_7.getApplicationIdFromDetectableId(value.application_id);
-              tmp6 = applicationIdFromDetectableId;
-              if (null != applicationIdFromDetectableId) {
-                let arr = items.push(applicationIdFromDetectableId);
-                tmp6 = applicationIdFromDetectableId;
-              }
-            }
-            iter5 = tmp5();
-            iter4 = iter5;
-            let tmp10 = value;
-            tmp2 = tmp6;
-          } while (!iter5.done);
-        }
-        iter6 = tmp();
-        iter2 = iter6;
-      } while (!iter6.done);
-    }
-    return items;
-  }, items1);
-  const obj = userIds(566);
-  const slayerStorefrontDevApplicationIdOverride = userIds(8664).useSlayerStorefrontDevApplicationIdOverride();
-  let tmp3 = stateFromStoresArray;
-  if (null != slayerStorefrontDevApplicationIdOverride) {
-    const items2 = [];
-    const arraySpreadResult = HermesBuiltin.arraySpread(stateFromStoresArray, 0);
-    items2[arraySpreadResult] = slayerStorefrontDevApplicationIdOverride;
-    const sum = arraySpreadResult + 1;
-    tmp3 = items2;
-  }
-  return tmp3;
-}
-function useCurrentUserPlayingSocialLayerStorefrontGamesApplicationIds() {
-  let items = [closure_3, closure_7];
-  return require(566) /* initialize */.useStateFromStoresArray(items, () => {
-    let iter3;
-    const items = [];
-    const tmp = outer1_8(outer1_3.getRunningGames());
-    const iter = tmp();
-    let iter2 = iter;
-    if (!iter.done) {
-      do {
-        let value = iter2.value;
-        let tmp3 = tmp2;
-        if (null != value.id) {
-          let tmp4 = outer1_3;
-          tmp3 = tmp2;
-          if (outer1_3.isDetectionEnabled(value)) {
-            let tmp5 = outer1_7;
-            let applicationIdFromDetectableId = outer1_7.getApplicationIdFromDetectableId(value.id);
-            tmp3 = applicationIdFromDetectableId;
-            if (null != applicationIdFromDetectableId) {
-              let arr = items.push(applicationIdFromDetectableId);
-              tmp3 = applicationIdFromDetectableId;
-            }
-          }
-        }
-        iter3 = tmp();
-        tmp2 = tmp3;
-        iter2 = iter3;
-      } while (!iter3.done);
-    }
-    return items;
-  }, []);
-}
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/slayer_storefront/hooks/SocialLayerStorefrontEligibilityHooks.tsx");
+const result = require("createUserWidgetFromServer").fileFinishedImporting("modules/slayer_storefront/hooks/SocialLayerStorefrontEligibilityHooks.tsx");
 
 export const useUsersPlayedSocialLayerStorefrontGamesInOutboxApplicationIds = function useUsersPlayedSocialLayerStorefrontGamesInOutboxApplicationIds(userIds) {
   userIds = userIds.userIds;
-  let items = [_isNativeReflectConstruct, closure_7];
+  let items = [map, handleUserSettingsStoreUpdate];
   const items1 = [userIds];
-  return userIds(566).useStateFromStoresArray(items, () => {
-    let iter6;
+  return userIds(589).useStateFromStoresArray(items, () => {
     const items = [];
-    const tmp = outer1_8(userIds);
-    const iter = tmp();
-    let iter2 = iter;
-    if (!iter.done) {
-      do {
-        let tmp4 = outer1_2;
-        let tmp3 = outer1_8;
-        let userOutbox = outer1_2.getUserOutbox(iter2.value);
-        let entries;
-        if (null != userOutbox) {
-          entries = userOutbox.entries;
-        }
-        if (null == entries) {
-          entries = [];
-        }
-        let tmp3Result = tmp3(entries);
-        let iter3 = tmp3Result();
-        let iter4 = iter3;
-        let tmp7 = tmp2;
-        if (!iter3.done) {
-          do {
-            let value = iter4.value;
-            let tmp8 = tmp7;
-            if (null != value) {
-              let tmp9 = userIds;
-              let tmp10 = outer1_1;
-              let obj = userIds(outer1_1[7]);
-              tmp8 = tmp7;
-              if (obj.isGamingLikeEntry(value)) {
-                let tmp11 = outer1_7;
-                let applicationIdFromDetectableId = outer1_7.getApplicationIdFromDetectableId(value.extra.application_id);
-                tmp8 = applicationIdFromDetectableId;
-                if (null != applicationIdFromDetectableId) {
-                  let arr = items.push(applicationIdFromDetectableId);
-                  tmp8 = applicationIdFromDetectableId;
-                }
-              }
+    while (tmp2 !== undefined) {
+      let tmp4 = outer1_2;
+      let userOutbox = outer1_2.getUserOutbox(tmp3);
+      let entries;
+      if (userOutbox != null) {
+        entries = userOutbox.entries;
+      }
+      if (entries == null) {
+        entries = [];
+      }
+      let tmp6 = entries;
+      let tmp7 = entries;
+      for (const item10019 of entries) {
+        let tmp8 = item10019;
+        if (null != item10019) {
+          let tmp9 = userIds;
+          let tmp10 = outer1_1;
+          let obj = userIds(outer1_1[7]);
+          let tmp11 = item10019;
+          if (obj.isGamingLikeEntry(tmp8)) {
+            let tmp12 = outer1_7;
+            let tmp13 = item10019;
+            let applicationIdFromDetectableId = outer1_7.getApplicationIdFromDetectableId(tmp8.extra.application_id);
+            if (null != applicationIdFromDetectableId) {
+              let tmp16 = applicationIdFromDetectableId;
+              let arr = items.push(tmp15);
             }
-            iter5 = tmp3Result();
-            tmp7 = tmp8;
-            iter4 = iter5;
-            let tmp14 = value;
-            tmp2 = tmp8;
-          } while (!iter5.done);
+          }
         }
-        iter6 = tmp();
-        iter2 = iter6;
-      } while (!iter6.done);
+        continue;
+      }
+      continue;
     }
     return items;
   }, items1);
 };
 export const useAreUsersInSocialLayerStorefrontMutualGuildsApplicationIds = function useAreUsersInSocialLayerStorefrontMutualGuildsApplicationIds(memo) {
   const _require = memo;
-  let items = [closure_4, closure_7];
+  let items = [createUserWidgetFromServer, handleUserSettingsStoreUpdate];
   const items1 = [memo];
-  return _require(566).useStateFromStoresArray(items, () => {
-    let iter5;
+  return _require(589).useStateFromStoresArray(items, () => {
     const items = [];
-    const tmp = outer1_8(closure_0);
-    const iter = tmp();
-    let iter2 = iter;
-    if (!iter.done) {
-      do {
-        let tmp4 = outer1_4;
-        let mutualGuilds = outer1_4.getMutualGuilds(iter2.value);
-        let tmp6 = tmp2;
-        let tmp7 = tmp3;
-        if (null != mutualGuilds) {
-          let tmp15 = outer1_8;
-          let tmp16 = outer1_8(mutualGuilds);
-          let iter6 = tmp16();
-          let iter4 = iter6;
-          let tmp11 = tmp3;
-          let tmp17 = iter6;
-          let tmp18 = tmp16;
-          tmp6 = tmp2;
-          tmp7 = tmp3;
-          if (!iter6.done) {
-            do {
-              let value = iter4.value;
-              let tmp8 = outer1_7;
-              let storefrontGuildIds = outer1_7.getStorefrontGuildIds();
-              if (storefrontGuildIds.has(value.guild.id)) {
-                let tmp9 = outer1_7;
-                let applicationIdFromGuildId = outer1_7.getApplicationIdFromGuildId(value.guild.id);
-                tmp11 = applicationIdFromGuildId;
-                if (null != applicationIdFromGuildId) {
-                  let arr = items.push(applicationIdFromGuildId);
-                  tmp11 = applicationIdFromGuildId;
-                }
-              }
-              iter3 = tmp16();
-              iter4 = iter3;
-              let tmp13 = iter3;
-              let tmp14 = tmp16;
-              tmp6 = value;
-              tmp7 = tmp11;
-            } while (!iter3.done);
+    while (tmp2 !== undefined) {
+      let tmp4 = outer1_4;
+      let mutualGuilds = outer1_4.getMutualGuilds(tmp3);
+      if (null != mutualGuilds) {
+        let tmp7 = tmp6;
+        let tmp8 = mutualGuilds;
+        for (const item10020 of mutualGuilds) {
+          let obj = outer1_7;
+          let tmp9 = item10020;
+          let storefrontGuildIds = outer1_7.getStorefrontGuildIds();
+          if (storefrontGuildIds.has(item10020.guild.id)) {
+            let tmp10 = item10020;
+            let applicationIdFromGuildId = obj.getApplicationIdFromGuildId(tmp9.guild.id);
+            if (null != applicationIdFromGuildId) {
+              let tmp13 = applicationIdFromGuildId;
+              let arr = items.push(tmp12);
+            }
           }
+          continue;
         }
-        iter5 = tmp();
-        tmp2 = tmp6;
-        tmp3 = tmp7;
-        iter2 = iter5;
-      } while (!iter5.done);
+      }
+      continue;
     }
     return items;
   }, items1);
 };
-export { useUsersPlayingStorefrontEnabledGamesApplicationIds };
-export const useAreUsersPlayingStorefrontEnabledGames = function useAreUsersPlayingStorefrontEnabledGames(userIds) {
-  return useUsersPlayingStorefrontEnabledGamesApplicationIds({ userIds: userIds.userIds }).length > 0;
-};
-export const useCurrentUserPlayedSocialLayerStorefrontGamesApplicationIds = function useCurrentUserPlayedSocialLayerStorefrontGamesApplicationIds() {
-  let items = [closure_3, closure_7];
-  return require(566) /* initialize */.useStateFromStoresArray(items, () => {
-    let iter3;
+export const useUsersPlayingStorefrontEnabledGamesApplicationIds = function useUsersPlayingStorefrontEnabledGamesApplicationIds(userIds) {
+  userIds = userIds.userIds;
+  const items = [sortActivity, handleUserSettingsStoreUpdate];
+  const items1 = [userIds];
+  const stateFromStoresArray = userIds(589).useStateFromStoresArray(items, () => {
     const items = [];
-    const tmp = outer1_8(outer1_3.getGamesSeen(false, false));
-    const iter = tmp();
-    let iter2 = iter;
-    if (!iter.done) {
-      do {
-        let value = iter2.value;
-        if (null != value.id) {
-          let tmp2 = outer1_7;
-          let applicationIdFromDetectableId = outer1_7.getApplicationIdFromDetectableId(value.id);
-          let tmp4 = applicationIdFromDetectableId;
+    while (tmp2 !== undefined) {
+      let tmp4 = outer1_6;
+      let activities = outer1_6.getActivities(tmp3);
+      let tmp6 = activities;
+      let tmp7 = activities;
+      for (const item10017 of activities) {
+        if (null != item10017.application_id) {
+          let tmp9 = outer1_7;
+          let tmp10 = item10017;
+          let applicationIdFromDetectableId = outer1_7.getApplicationIdFromDetectableId(tmp8.application_id);
           if (null != applicationIdFromDetectableId) {
-            let arr = items.push(applicationIdFromDetectableId);
-            let tmp6 = applicationIdFromDetectableId;
+            let tmp13 = applicationIdFromDetectableId;
+            let arr = items.push(tmp12);
           }
         }
-        iter3 = tmp();
-        iter2 = iter3;
-      } while (!iter3.done);
+        continue;
+      }
+      continue;
+    }
+    return items;
+  }, items1);
+  const obj = userIds(589);
+  const slayerStorefrontDevApplicationIdOverride = userIds(8688).useSlayerStorefrontDevApplicationIdOverride();
+  let tmp3 = stateFromStoresArray;
+  if (null != slayerStorefrontDevApplicationIdOverride) {
+    const items2 = [];
+    items2[HermesBuiltin.arraySpread(stateFromStoresArray, 0)] = slayerStorefrontDevApplicationIdOverride;
+    tmp3 = items2;
+  }
+  return tmp3;
+};
+export const useAreUsersPlayingStorefrontEnabledGames = function useAreUsersPlayingStorefrontEnabledGames(userIds) {
+  userIds = userIds.userIds;
+  let items = [sortActivity, handleUserSettingsStoreUpdate];
+  const items1 = [userIds];
+  const stateFromStoresArray = userIds(589).useStateFromStoresArray(items, () => {
+    const items = [];
+    while (tmp2 !== undefined) {
+      let tmp4 = outer1_6;
+      let activities = outer1_6.getActivities(tmp3);
+      let tmp6 = activities;
+      let tmp7 = activities;
+      for (const item10017 of activities) {
+        if (null != item10017.application_id) {
+          let tmp9 = outer1_7;
+          let tmp10 = item10017;
+          let applicationIdFromDetectableId = outer1_7.getApplicationIdFromDetectableId(tmp8.application_id);
+          if (null != applicationIdFromDetectableId) {
+            let tmp13 = applicationIdFromDetectableId;
+            let arr = items.push(tmp12);
+          }
+        }
+        continue;
+      }
+      continue;
+    }
+    return items;
+  }, items1);
+  const obj = userIds(589);
+  const slayerStorefrontDevApplicationIdOverride = userIds(8688).useSlayerStorefrontDevApplicationIdOverride();
+  let arr3 = stateFromStoresArray;
+  if (null != slayerStorefrontDevApplicationIdOverride) {
+    const items2 = [];
+    items2[HermesBuiltin.arraySpread(stateFromStoresArray, 0)] = slayerStorefrontDevApplicationIdOverride;
+    arr3 = items2;
+  }
+  return arr3.length > 0;
+};
+export const useCurrentUserPlayedSocialLayerStorefrontGamesApplicationIds = function useCurrentUserPlayedSocialLayerStorefrontGamesApplicationIds() {
+  let items = [initialize, handleUserSettingsStoreUpdate];
+  return require(589) /* initialize */.useStateFromStoresArray(items, () => {
+    const items = [];
+    gamesSeen = gamesSeen.getGamesSeen(false, false);
+    const iter = gamesSeen[Symbol.iterator]();
+    const nextResult = iter.next();
+    while (iter !== undefined) {
+      if (null != nextResult.id) {
+        let tmp4 = applicationIdFromDetectableId;
+        let tmp5 = nextResult;
+        applicationIdFromDetectableId = applicationIdFromDetectableId.getApplicationIdFromDetectableId(tmp3.id);
+        if (null != applicationIdFromDetectableId) {
+          let tmp8 = applicationIdFromDetectableId;
+          let arr = items.push(tmp7);
+        }
+      }
+      continue;
     }
     return items;
   });
 };
-export { useCurrentUserPlayingSocialLayerStorefrontGamesApplicationIds };
+export const useCurrentUserPlayingSocialLayerStorefrontGamesApplicationIds = function useCurrentUserPlayingSocialLayerStorefrontGamesApplicationIds() {
+  const items = [initialize, handleUserSettingsStoreUpdate];
+  return require(589) /* initialize */.useStateFromStoresArray(items, () => {
+    const items = [];
+    const runningGames = initialize.getRunningGames();
+    const iter = runningGames[Symbol.iterator]();
+    const nextResult = iter.next();
+    while (iter !== undefined) {
+      let tmp3 = nextResult;
+      if (null != nextResult.id) {
+        let tmp4 = initialize;
+        let tmp5 = nextResult;
+        if (initialize.isDetectionEnabled(tmp3)) {
+          let tmp6 = applicationIdFromDetectableId;
+          let tmp7 = nextResult;
+          applicationIdFromDetectableId = applicationIdFromDetectableId.getApplicationIdFromDetectableId(tmp3.id);
+          if (null != applicationIdFromDetectableId) {
+            let tmp10 = applicationIdFromDetectableId;
+            let arr = items.push(tmp9);
+          }
+        }
+      }
+      continue;
+    }
+    return items;
+  }, []);
+};
 export const useIsCurrentUserPlayingSocialLayerStorefrontGames = function useIsCurrentUserPlayingSocialLayerStorefrontGames() {
-  return useCurrentUserPlayingSocialLayerStorefrontGamesApplicationIds().length > 0;
+  let items = [initialize, handleUserSettingsStoreUpdate];
+  return require(589) /* initialize */.useStateFromStoresArray(items, () => {
+    const items = [];
+    const runningGames = initialize.getRunningGames();
+    const iter = runningGames[Symbol.iterator]();
+    const nextResult = iter.next();
+    while (iter !== undefined) {
+      let tmp3 = nextResult;
+      if (null != nextResult.id) {
+        let tmp4 = initialize;
+        let tmp5 = nextResult;
+        if (initialize.isDetectionEnabled(tmp3)) {
+          let tmp6 = applicationIdFromDetectableId;
+          let tmp7 = nextResult;
+          applicationIdFromDetectableId = applicationIdFromDetectableId.getApplicationIdFromDetectableId(tmp3.id);
+          if (null != applicationIdFromDetectableId) {
+            let tmp10 = applicationIdFromDetectableId;
+            let arr = items.push(tmp9);
+          }
+        }
+      }
+      continue;
+    }
+    return items;
+  }, []).length > 0;
 };
 export const useIsCurrentUserInSocialLayerStorefrontGuildsApplicationIds = function useIsCurrentUserInSocialLayerStorefrontGuildsApplicationIds() {
-  let items = [_createForOfIteratorHelperLoose];
-  stateFromStores = stateFromStores(566).useStateFromStores(items, () => outer1_5.getGuildIds());
-  const obj = stateFromStores(566);
-  const items1 = [closure_7];
+  let items = [createGuildRecordFromRust];
+  stateFromStores = stateFromStores(589).useStateFromStores(items, () => guildIds.getGuildIds());
+  const obj = stateFromStores(589);
+  const items1 = [handleUserSettingsStoreUpdate];
   const items2 = [stateFromStores];
-  return stateFromStores(566).useStateFromStoresArray(items1, () => {
-    let iter2;
+  return stateFromStores(589).useStateFromStoresArray(items1, () => {
     const items = [];
-    const tmp = outer1_8(stateFromStores);
-    let iter = tmp();
-    if (!iter.done) {
-      do {
-        let tmp2 = outer1_7;
-        let applicationIdFromGuildId = outer1_7.getApplicationIdFromGuildId(iter.value);
-        if (null != applicationIdFromGuildId) {
-          let arr = items.push(applicationIdFromGuildId);
-        }
-        iter2 = tmp();
-        iter = iter2;
-      } while (!iter2.done);
+    while (tmp2 !== undefined) {
+      let tmp4 = outer1_7;
+      let applicationIdFromGuildId = outer1_7.getApplicationIdFromGuildId(tmp3);
+      if (null != applicationIdFromGuildId) {
+        let tmp7 = applicationIdFromGuildId;
+        let arr = items.push(tmp6);
+      }
+      continue;
     }
     return items;
   }, items2);

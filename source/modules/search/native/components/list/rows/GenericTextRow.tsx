@@ -1,16 +1,17 @@
-// Module ID: 15484
-// Function ID: 117991
-// Dependencies: [5, 31, 27, 33, 4165, 4161, 15456, 2]
+// Module ID: 15518
+// Function ID: 15519
+// Dependencies: [5, 19, 17, 21, 4189, 4185, 15490, 2]
 
-// Module 15484
+// Module 15518
 import Text from "Text";
-import importAllResult from "result";
+import importAllResult from "noop";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
 let require = arg1;
-let closure_6 = _createForOfIteratorHelperLoose.createStyles({ title: { flexDirection: "row" }, container: { padding: 10 } });
+let c3 = importAllResult;
+let closure_6 = createCacheKey.createStyles({ title: { flexDirection: "row" }, container: { padding: 10 } });
 const memoResult = importAllResult.memo(function GenericTextRow(text) {
   let accessibilityActions;
   let icon;
@@ -21,25 +22,68 @@ const memoResult = importAllResult.memo(function GenericTextRow(text) {
   const require = text;
   ({ icon, onPress } = text);
   ({ trailing, accessibilityActions, onAccessibilityAction } = text);
-  const tmp2 = callback2();
-  // CreateGeneratorClosureLongIndex (0x67)
+  const tmp = callback2();
   const items = [onPress, text];
-  let obj = { style: tmp2.title };
-  callback = importAllResult.useCallback(callback(tmp), items);
-  obj = { lineClamp: 1, variant: "text-md/medium", color: "mobile-text-heading-primary", style: tmp2.container, children: text };
-  obj.children = jsx(require(onPress[5]).Text, { lineClamp: 1, variant: "text-md/medium", color: "mobile-text-heading-primary", style: tmp2.container, children: text });
-  obj = {};
-  let tmp6 = null != icon;
-  if (tmp6) {
-    tmp6 = <icon size="sm" color="mobile-text-heading-primary" />;
+  let obj = { style: tmp.title, children: null };
+  onPress = importAllResult.useCallback(callback(function*() {
+    if (c0 === 2) {
+      c0 = 3;
+      HermesBuiltin.throwTypeError();
+    } else if (tmp3 === 3) {
+      if (arg0 === 1) {
+        throw arg1;
+      } else if (arg0 === 2) {
+        let obj = { value: null, done: true };
+        obj[0] = arg1;
+        return obj;
+      } else {
+        return { value: "HermesInternal", done: null };
+      }
+    } else {
+      try {
+        c0 = 2;
+        if (0 === v0) {
+          if (arg0 === 1) {
+            c0 = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            c0 = 3;
+            obj = { value: null, done: true };
+            obj[0] = arg1;
+            return obj;
+          } else {
+            v0 = 1;
+            c0 = 1;
+            const obj1 = { value: null, done: false };
+            obj1[0] = v0(c0);
+            return obj1;
+          }
+        } else if (arg0 === 1) {
+          c0 = 3;
+          throw arg1;
+        } else if (arg0 === 2) {
+          c0 = 3;
+          obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
+        } else {
+          c0 = 3;
+          return { value: "HermesInternal", done: null };
+        }
+      } catch (tmp7) {
+        c0 = tmp;
+        throw tmp7;
+      }
+    }
+  }), items);
+  obj = { lineClamp: 1, variant: "text-md/medium", color: "mobile-text-heading-primary", style: tmp.container, children: text };
+  obj[1] = jsx(require(onPress[5]).Text, { lineClamp: 1, variant: "text-md/medium", color: "mobile-text-heading-primary", style: tmp.container, children: text });
+  const label = <View lineClamp={1} variant="text-md/medium" color="mobile-text-heading-primary" style={tmp.container}>{text}</View>;
+  icon = null != icon;
+  if (icon) {
+    icon = tmp3(icon, { size: "sm", color: "mobile-text-heading-primary" });
   }
-  obj.icon = tmp6;
-  obj.label = <View />;
-  obj.onPress = callback;
-  obj.trailing = trailing;
-  obj.accessibilityActions = accessibilityActions;
-  obj.onAccessibilityAction = onAccessibilityAction;
-  return jsx(require(onPress[6]).SearchListRow, {});
+  return jsx(require(onPress[6]).SearchListRow, { icon, label, onPress, trailing, accessibilityActions, onAccessibilityAction });
 });
 const result = require("get ActivityIndicator").fileFinishedImporting("modules/search/native/components/list/rows/GenericTextRow.tsx");
 

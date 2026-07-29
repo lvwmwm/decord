@@ -1,16 +1,16 @@
-// Module ID: 8054
-// Function ID: 63936
+// Module ID: 8078
+// Function ID: 8079
 // Name: useProfileThemeOverrideStore
-// Dependencies: [653, 621, 4101, 7964, 4011, 2]
+// Dependencies: [676, 644, 4125, 7989, 4035, 2]
 // Exports: useEffectiveThemeOverride, useHasNonNitroThemeOverride, useIsBannerDisabledByOverride
 
-// Module 8054 (useProfileThemeOverrideStore)
+// Module 8078 (useProfileThemeOverrideStore)
 import { ThemeTypes } from "ME";
 import keys from "keys";
 
 let tmp2 = keys.create()((arg0) => {
   let closure_0 = arg0;
-  const obj = {
+  return {
     themeOverride: null,
     savedClientTheme: null,
     setThemeOverride(themeOverride) {
@@ -20,78 +20,78 @@ let tmp2 = keys.create()((arg0) => {
       return callback({ savedClientTheme });
     }
   };
-  return obj;
 });
-let closure_4 = tmp2;
+let c4 = tmp2;
 const result = require("useTheme").fileFinishedImporting("modules/user_profile/hooks/useProfileThemeOverrideStore.tsx");
 
 export const useProfileThemeOverrideStore = tmp2;
 export const useEffectiveThemeOverride = function useEffectiveThemeOverride() {
   const tmp = tmp2((themeOverride) => themeOverride.themeOverride);
-  tmp2 = importDefault(4101)();
+  const tmp3 = importDefault(4125)();
   if (null == tmp) {
     return null;
   } else {
     if ("nitro" === tmp.mode) {
       const themeColors = tmp.themeColors;
       let first;
-      if (null != themeColors) {
+      if (themeColors != null) {
         first = themeColors[0];
       }
-      let tmp7 = null;
-      if (null != first) {
-        tmp7 = first;
+      if (first == null) {
+        first = null;
       }
       const themeColors2 = tmp.themeColors;
-      let tmp8;
-      if (null != themeColors2) {
-        tmp8 = themeColors2[1];
+      let tmp7;
+      if (themeColors2 != null) {
+        tmp7 = themeColors2[1];
       }
-      let tmp9 = null;
-      if (null != tmp8) {
-        tmp9 = tmp8;
+      if (tmp7 == null) {
+        tmp7 = null;
       }
-      let tmp10 = tmp2;
-      if (null != tmp7) {
-        tmp10 = tmp2;
-        if (null != tmp9) {
-          let obj = require(7964) /* getProfileTheme */;
-          const profileTheme = obj.getProfileTheme(tmp7);
-          tmp10 = tmp2;
-          if (null != profileTheme) {
-            tmp10 = profileTheme;
+      let tmp8 = tmp3;
+      if (null != first) {
+        tmp8 = tmp3;
+        if (null != tmp7) {
+          let obj = require(7989) /* getProfileTheme */;
+          let profileTheme = obj.getProfileTheme(first);
+          if (profileTheme == null) {
+            profileTheme = tmp3;
           }
+          tmp8 = profileTheme;
         }
       }
-      let tmp3 = tmp10;
+      let themeType = tmp8;
       let tmp4 = tmp7;
-      let tmp5 = tmp9;
+      let tmp5 = first;
     } else {
-      const themeType = tmp.themeType;
-      tmp3 = tmp2;
-      if (null != themeType) {
-        tmp3 = themeType;
+      themeType = tmp.themeType;
+      if (themeType == null) {
+        themeType = tmp3;
       }
       tmp4 = null;
       tmp5 = null;
     }
-    if (tmp3 !== ThemeTypes.DARK) {
-      let isThemeLightResult = tmp3 === ThemeTypes.DARK;
+    if (themeType !== ThemeTypes.DARK) {
+      let isThemeLightResult = themeType === tmp11.DARK;
       if (isThemeLightResult) {
-        isThemeLightResult = require(4011) /* AccessibilityAnnouncer */.isThemeLight(tmp2);
-        const obj3 = require(4011) /* AccessibilityAnnouncer */;
+        isThemeLightResult = require(4035) /* AccessibilityAnnouncer */.isThemeLight(tmp3);
+        const obj3 = require(4035) /* AccessibilityAnnouncer */;
       }
-      let DARKER = tmp3;
+      let DARKER = themeType;
       if (isThemeLightResult) {
-        DARKER = ThemeTypes.DARKER;
+        DARKER = tmp11.DARKER;
       }
     } else {
-      DARKER = tmp2;
-      const obj2 = require(4011) /* AccessibilityAnnouncer */;
+      DARKER = tmp3;
+      const obj2 = require(4035) /* AccessibilityAnnouncer */;
     }
-    obj = { theme: DARKER, primaryColor: tmp4, secondaryColor: tmp5 };
+    obj = { theme: null, primaryColor: null, secondaryColor: null };
+    obj[0] = DARKER;
+    obj[1] = tmp5;
+    obj[2] = tmp4;
     return obj;
   }
+  tmp2 = dependencyMap;
 };
 export const useIsBannerDisabledByOverride = function useIsBannerDisabledByOverride() {
   const tmp = tmp2((themeOverride) => themeOverride.themeOverride);

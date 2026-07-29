@@ -1,9 +1,9 @@
-// Module ID: 6883
-// Function ID: 59596
+// Module ID: 6905
+// Function ID: 6906
 // Name: metadata
 // Dependencies: [2]
 
-// Module 6883 (metadata)
+// Module 6905 (metadata)
 const result = require("set").fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/ButterflyIllocon-2x.png.js");
 
 export default "https://cdn.discordapp.com/assets/content/2ef831e04586fcfa6aabc0e3834696934843eb92fd9b61aa10758836fe3b74dd.png";

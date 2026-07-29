@@ -1,11 +1,11 @@
-// Module ID: 8455
-// Function ID: 67313
+// Module ID: 8479
+// Function ID: 8480
 // Name: useResolveGame
-// Dependencies: [31, 5503, 5888, 2]
+// Dependencies: [19, 5521, 5906, 2]
 // Exports: default
 
-// Module 8455 (useResolveGame)
-import result from "result";
+// Module 8479 (useResolveGame)
+import noop from "noop";
 
 const require = arg1;
 const result = require("importDefaultResult1").fileFinishedImporting("modules/games/hooks/useResolveGame.tsx");
@@ -16,31 +16,31 @@ export default function useResolveGame(arg0) {
   ({ applicationId, gameId } = arg0);
   let getOrFetchApplication;
   let obj = gameId(getOrFetchApplication[1]);
-  let tmp;
+  let tmp3;
   if (null == gameId) {
-    tmp = applicationId;
+    tmp3 = applicationId;
   }
-  getOrFetchApplication = obj.useGetOrFetchApplication(tmp);
+  getOrFetchApplication = obj.useGetOrFetchApplication(tmp3);
   const items = [gameId, getOrFetchApplication];
   const memo = React.useMemo(() => {
-    if (null != gameId) {
-      let canonicalGameId = gameId;
-    } else {
-      canonicalGameId = null;
+    let tmp = gameId;
+    if (null == gameId) {
+      let canonicalGameId = null;
       if (null != getOrFetchApplication) {
-        canonicalGameId = getOrFetchApplication.getCanonicalGameId();
+        canonicalGameId = obj.getCanonicalGameId();
       }
+      tmp = canonicalGameId;
+      obj = getOrFetchApplication;
     }
-    return canonicalGameId;
+    return tmp;
   }, items);
   const game = gameId(getOrFetchApplication[2]).useGame(memo);
-  const data = game.data;
-  obj = { gameId: memo };
-  let tmp5 = null;
-  if (null != data) {
-    tmp5 = data;
+  let data = game.data;
+  obj = { gameId: memo, gameRecord: null, isLoading: null };
+  if (data == null) {
+    data = null;
   }
-  obj.gameRecord = tmp5;
-  obj.isLoading = null == gameId && null != applicationId && null == getOrFetchApplication || game.isLoading;
+  obj[1] = data;
+  obj[2] = null == gameId && null != applicationId && null == getOrFetchApplication || game.isLoading;
   return obj;
 };

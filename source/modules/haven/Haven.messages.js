@@ -1,20 +1,20 @@
-// Module ID: 2911
-// Function ID: 24874
+// Module ID: 2935
+// Function ID: 2936
 // Name: messagesProxy
-// Dependencies: [1215, 2912, 1250, 2]
+// Dependencies: [1239, 2936, 1274, 2]
 
-// Module 2911 (messagesProxy)
-import module_1250 from "module_1250";
-import module_1250 from "module_1250";
+// Module 2935 (messagesProxy)
+import module_1274 from "module_1274";
+import module_1274 from "module_1274";
 
-const loader = module_1250.createLoader({
+const loader = module_1274.createLoader({
   () => {
-    const jsonAsset = require(1215) /* loadJsonAsset */.loadJsonAsset(require(2912) /* registerAsset */);
+    const jsonAsset = require(1239) /* loadJsonAsset */.loadJsonAsset(require(2936) /* registerAsset */);
     return jsonAsset.then((arg0) => ({ default: arg0 }));
   }
 }, "en-US");
-const messagesProxy = module_1250.makeMessagesProxy(loader);
-const result = require("module_1250").fileFinishedImporting("modules/haven/Haven.messages.js");
+const messagesProxy = module_1274.makeMessagesProxy(loader);
+const result = require("module_1274").fileFinishedImporting("modules/haven/Haven.messages.js");
 
 export default messagesProxy;
 export const messagesLoader = loader;

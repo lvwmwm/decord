@@ -1,30 +1,30 @@
-// Module ID: 15572
-// Function ID: 119668
+// Module ID: 15606
+// Function ID: 15607
 // Name: FriendRequestsSettingsScreen
-// Dependencies: [31, 27, 33, 4165, 689, 4697, 15573, 2]
+// Dependencies: [19, 17, 21, 4189, 712, 4719, 15607, 2]
 // Exports: default
 
-// Module 15572 (FriendRequestsSettingsScreen)
-import "result";
+// Module 15606 (FriendRequestsSettingsScreen)
+import "noop";
 import { ScrollView } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_3;
-let closure_4;
-let closure_5;
-({ jsx: closure_3, Fragment: closure_4, jsxs: closure_5 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWER, flex: 1, paddingTop: require("_createForOfIteratorHelperLoose").space.PX_16, paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16 };
-_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+let c3;
+let c4;
+let c5;
+({ jsx: c3, Fragment: c4, jsxs: c5 } = jsxProd);
+createCacheKey = { container: null };
+createCacheKey = { backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOWER, flex: 1, paddingTop: require("Themes").space.PX_16, paddingHorizontal: require("Themes").space.PX_16 };
+createCacheKey[0] = createCacheKey;
+createCacheKey = createCacheKey.createStyles(createCacheKey);
 const result = require("jsxProd").fileFinishedImporting("modules/main_tabs_v2/native/friends/screens/FriendRequestsSettingsScreen.tsx");
 
 export default function FriendRequestsSettingsScreen() {
-  let obj = {};
-  const items = [callback(importDefault(4697), { absolute: true }), ];
-  obj = { style: _createForOfIteratorHelperLoose().container, children: callback(importDefault(15573), {}) };
+  let obj = { children: null };
+  const items = [callback(importDefault(4719), { absolute: true }), ];
+  obj = { style: createCacheKey().container, children: callback(importDefault(15607), {}) };
   items[1] = callback(ScrollView, obj);
-  obj.children = items;
+  obj[0] = items;
   return callback2(closure_4, obj);
 };

@@ -1,59 +1,157 @@
-// Module ID: 10630
-// Function ID: 82681
-// Name: _isNativeReflectConstruct
-// Dependencies: [5, 7, 6, 15, 17, 18, 162, 1907, 4979, 2]
+// Module ID: 10654
+// Function ID: 10655
+// Name: _selectAndWaitForVoiceChannelJoin
+// Dependencies: [5, 1931, 5001, 2]
 // Exports: default
 
-// Module 10630 (_isNativeReflectConstruct)
-import _inherits from "_inherits";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import _wrapNativeSuper from "_wrapNativeSuper";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import closure_7 from "_inherits";
-import closure_8 from "_isNativeReflectConstruct";
-import importDefaultResult from "_wrapNativeSuper";
+// Module 10654 (_selectAndWaitForVoiceChannelJoin)
+import asyncGeneratorStep from "asyncGeneratorStep";
+import handleConnectionOpen from "handleConnectionOpen";
 
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
-  }
-  const result = _isNativeReflectConstruct();
-}
 function _selectAndWaitForVoiceChannelJoin() {
-  // CreateGeneratorClosureLongIndex (0x67)
-  const obj = callback(tmp);
-  return obj(...arguments);
-}
-let closure_9 = ((arg0) => {
-  class JoinTimeoutError {
-    constructor() {
-      self = this;
-      tmp = outer1_4(this, JoinTimeoutError);
-      obj = outer1_6(JoinTimeoutError);
-      tmp2 = outer1_5;
-      if (outer1_10()) {
-        tmp6 = globalThis;
-        _Reflect = Reflect;
-        tmp7 = outer1_6;
-        tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, outer1_6(self).constructor);
+  const self = this;
+  const tmp = callback((arg0) => {
+    let closure_0 = arg0;
+    let c5 = 0;
+    let c6 = 0;
+    let c4 = 0;
+    const iter = (function*(arg0) {
+      let c0;
+      let timeoutMs;
+      if (c6 === 2) {
+        c6 = 3;
+        HermesBuiltin.throwTypeError();
+      } else if (tmp6 === 3) {
+        if (arg0 === 1) {
+          throw arg1;
+        } else if (arg0 === 2) {
+          let obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
+        } else {
+          return { value: "HermesInternal", done: null };
+        }
       } else {
-        tmp3 = arguments;
-        tmp4 = arguments;
-        constructResult = obj(...arguments);
+        try {
+          c6 = 2;
+          if (0 === c5) {
+            if (arg0 === 1) {
+              c6 = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              c6 = 3;
+              obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            } else {
+              let promise = tmp3;
+              timeoutMs = tmp7;
+              let callback;
+              timeoutMs = undefined;
+              ({ channelId: c0, timeoutMs } = callback);
+              if (timeoutMs === undefined) {
+                timeoutMs = 10000;
+              }
+              promise = undefined;
+              c5 = 1;
+              c6 = 1;
+              return { value: "ct", done: null };
+            }
+          } else if (1 === tmp7) {
+            if (arg0 === 1) {
+              c6 = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              c6 = 3;
+              let obj1 = { value: null, done: true };
+              obj1[0] = arg1;
+              return obj1;
+            } else {
+              promise = new Promise((arg0, arg1) => {
+                let closure_0 = arg0;
+                let closure_1 = arg1;
+                const timeout = setTimeout(() => {
+                  callback2(new c4("Joining voice channel has timed out."));
+                }, closure_1);
+                const result = tmp28.addConditionalChangeListener(() => {
+                  let flag = voiceChannelId.getVoiceChannelId() !== callback;
+                  if (!flag) {
+                    const _clearTimeout = clearTimeout;
+                    clearTimeout(asyncGeneratorStep);
+                    callback();
+                    flag = false;
+                  }
+                  return flag;
+                });
+              });
+              obj1 = callback(timeoutMs[2]);
+              const voiceChannel = obj1.selectVoiceChannel(callback);
+              let c4 = 1;
+              c5 = 3;
+              c6 = 1;
+              const obj2 = { value: null, done: false };
+              obj2[0] = promise;
+              return obj2;
+            }
+          } else if (2 === tmp7) {
+            c4 = 0;
+            if (handleConnectionOpen instanceof c4) {
+              c6 = 3;
+              return { value: false, done: true };
+            } else {
+              throw handleConnectionOpen;
+            }
+          } else if (arg0 === 1) {
+            c6 = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            c4 = 0;
+            c6 = 3;
+            obj = { value: null, done: true };
+            obj[0] = arg1;
+            return obj;
+          } else {
+            c4 = 0;
+            c6 = 3;
+            return { value: true, done: true };
+          }
+        } catch (tmp28) {
+          handleConnectionOpen = tmp28;
+          if (tmp4 === c4) {
+            c6 = tmp2;
+            throw tmp28;
+          } else {
+            c5 = tmp;
+          }
+        }
       }
-      return tmp2(self, constructResult);
-    }
+    })();
+    iter.next();
+    return iter;
+  });
+  const _selectAndWaitForVoiceChannelJoin = tmp;
+  const apply = tmp.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
   }
-  callback3(JoinTimeoutError, arg0);
-  return callback2(JoinTimeoutError);
-})(require("_wrapNativeSuper")(Error));
-let result = require("_classCallCheck").fileFinishedImporting("modules/activities/utils/selectAndWaitForVoiceChannelJoin.native.tsx");
+  return applyArgumentsResult;
+}
+const prototype = function JoinTimeoutError() {
+  return HermesBuiltin.applyArguments(new.target, new.target);
+}.prototype;
+class prototype extends Error {
+}
+let result = require("module_5001").fileFinishedImporting("modules/activities/utils/selectAndWaitForVoiceChannelJoin.native.tsx");
 
 export default function selectAndWaitForVoiceChannelJoin() {
-  return _selectAndWaitForVoiceChannelJoin(...arguments);
+  const self = this;
+  const apply = _selectAndWaitForVoiceChannelJoin.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
 };

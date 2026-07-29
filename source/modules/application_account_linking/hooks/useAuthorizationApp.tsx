@@ -1,17 +1,19 @@
-// Module ID: 5502
-// Function ID: 46864
+// Module ID: 5520
+// Function ID: 5521
 // Name: getAuthorizationApp
-// Dependencies: [31, 4202, 4188, 4191, 1882, 5503, 2]
-// Exports: useAuthorizationApp
+// Dependencies: [19, 4226, 4212, 4215, 1906, 5521, 2]
+// Exports: getAuthorizationApp, useAuthorizationApp
 
-// Module 5502 (getAuthorizationApp)
-import result from "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import _callSuper from "_callSuper";
+// Module 5520 (getAuthorizationApp)
+import noop from "noop";
+import addApplication from "addApplication";
+import createExecutable from "createExecutable";
 import { ApplicationTypes } from "ApplicationTypes";
 
 const require = arg1;
-function getAuthorizationApp(type) {
+const result = require("createExecutable").fileFinishedImporting("modules/application_account_linking/hooks/useAuthorizationApp.tsx");
+
+export const getAuthorizationApp = function getAuthorizationApp(type) {
   if (null == type) {
     return null;
   } else if (type.type !== ApplicationTypes.GAME) {
@@ -19,49 +21,72 @@ function getAuthorizationApp(type) {
   } else {
     const linkedGames = type.linkedGames;
     let found;
-    if (null != linkedGames) {
-      found = linkedGames.find((type) => type.type === outer1_0(outer1_1[4]).GameLinkTypes.OFFICIAL);
+    if (linkedGames != null) {
+      found = linkedGames.find((type) => type.type === callback(table[4]).GameLinkTypes.OFFICIAL);
     }
     let application;
-    if (null != found) {
+    if (found != null) {
       application = found.application;
     }
-    if (null == application) {
+    if (application == null) {
       let id;
-      if (null != found) {
+      if (found != null) {
         id = found.id;
       }
       application = application.getApplication(id);
     }
-    let tmp6 = null;
-    if (null != application) {
-      tmp6 = application;
+    if (application == null) {
+      application = null;
     }
-    return tmp6;
+    return application;
   }
-}
-const result = require("_callSuper").fileFinishedImporting("modules/application_account_linking/hooks/useAuthorizationApp.tsx");
-
-export { getAuthorizationApp };
+};
 export const useAuthorizationApp = function useAuthorizationApp(getOfficialApplicationId) {
   const _require = getOfficialApplicationId;
   let officialApplicationId;
   if (null != getOfficialApplicationId) {
-    if (!(getOfficialApplicationId instanceof _callSuper)) {
+    if (!(getOfficialApplicationId instanceof createExecutable)) {
       officialApplicationId = getOfficialApplicationId.getOfficialApplicationId();
     }
   }
   getOrFetchApplication = _require(getOrFetchApplication[5]).useGetOrFetchApplication(officialApplicationId);
   const items = [getOfficialApplicationId, getOrFetchApplication];
   return React.useMemo(() => {
+    let application = closure_0;
     if (null == closure_0) {
       return null;
-    } else if (closure_0 instanceof outer1_4) {
-      let tmp4 = outer1_6(closure_0);
+    } else if (application instanceof outer1_4) {
+      let tmp4 = null;
+      if (null != application) {
+        tmp4 = application;
+        if (application.type === outer1_5.GAME) {
+          const linkedGames = application.linkedGames;
+          let found;
+          if (linkedGames != null) {
+            found = linkedGames.find((type) => type.type === callback(table[4]).GameLinkTypes.OFFICIAL);
+          }
+          application = undefined;
+          if (found != null) {
+            application = found.application;
+          }
+          if (application == null) {
+            let id;
+            if (found != null) {
+              id = found.id;
+            }
+            application = outer1_3.getApplication(id);
+          }
+          if (application == null) {
+            application = null;
+          }
+          tmp4 = application;
+        }
+      }
+      let tmp3 = tmp4;
     } else {
-      tmp4 = null;
-      if (null != getOrFetchApplication) {
-        tmp4 = getOrFetchApplication;
+      tmp3 = getOrFetchApplication;
+      if (getOrFetchApplication == null) {
+        tmp3 = null;
       }
     }
   }, items);

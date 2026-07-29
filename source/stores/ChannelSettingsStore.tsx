@@ -1,142 +1,49 @@
-// Module ID: 7664
-// Function ID: 61111
-// Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 1352, 6676, 1858, 1348, 653, 1211, 3804, 3806, 1357, 1358, 507, 686, 22, 1387, 3747, 566, 2]
+// Module ID: 7687
+// Function ID: 7688
+// Name: normalizeChannelPropertyForCompare
+// Dependencies: [1376, 6697, 1882, 1372, 676, 1235, 3828, 3830, 1381, 1382, 530, 709, 12, 1411, 3771, 589, 2]
 
-// Module 7664 (_isNativeReflectConstruct)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_4 from "_isNativeReflectConstruct";
-import closure_5 from "_isNativeReflectConstruct";
-import apply from "apply";
-import fromGuildPropertiesWithAdditionalFields from "fromGuildPropertiesWithAdditionalFields";
-import { createChannelRecordFromInvite as closure_8 } from "_callSuper";
-import closure_9 from "_isNativeReflectConstruct";
-import closure_10 from "_isNativeReflectConstruct";
-import closure_11 from "_isNativeReflectConstruct";
+// Module 7687 (normalizeChannelPropertyForCompare)
+import { createChannelRecordFromInvite as closure_9 } from "createChannelRecord";
+import createFromServer from "createFromServer";
+import createdAt from "createdAt";
+import ensureGuildLoaded from "ensureGuildLoaded";
 import ME from "ME";
-import { DEFAULT_AUTO_ARCHIVE_DURATION as closure_16 } from "AbortCodes";
+import { DEFAULT_AUTO_ARCHIVE_DURATION as closure_17 } from "AbortCodes";
+import { Store } from "initialize";
 import importDefaultResult from "apply";
 
 let FormStates;
-let closure_12;
-let closure_13;
 let closure_14;
-let require = arg1;
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
-  }
-  const result = _isNativeReflectConstruct();
-}
-function _createForOfIteratorHelperLoose(iterable) {
-  let closure_0 = iterable;
-  iterable = "undefined" !== typeof Symbol;
-  if (iterable) {
-    const _Symbol = Symbol;
-    iterable = iterable[Symbol.iterator];
-  }
-  if (!iterable) {
-    iterable = iterable[Symbol.iterator];
-  }
-  if (iterable) {
-    const iter = iterable.call(iterable);
-    const next = iter.next;
-    return next.bind(iter);
-  } else {
-    const _Array = Array;
-    let tmp = iterable;
-    if (!Array.isArray(iterable)) {
-      let tmp2;
-      if (iterable) {
-        if ("string" === typeof iterable) {
-          tmp2 = _arrayLikeToArray(iterable, undefined);
-        } else {
-          const toString = {}.toString;
-          const substr = toString.call(iterable).slice(8, -1);
-          let name = substr;
-          if (tmp3) {
-            name = iterable.constructor.name;
-          }
-          if ("Map" !== name) {
-            if ("Set" !== name) {
-              if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(iterable, undefined);
-              } else {
-                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
-              }
-            }
-            tmp2 = arr;
-          }
-          const _Array2 = Array;
-          arr = Array.from(iterable);
-          const callResult = toString.call(iterable);
-          tmp3 = "Object" === substr && iterable.constructor;
-        }
-      }
-      tmp = tmp2;
-      if (!tmp2) {
-        const _TypeError = TypeError;
-        const typeError = new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
-        throw typeError;
-      }
-    }
-    if (tmp) {
-      closure_0 = tmp;
-    }
-    let c1 = 0;
-    return () => {
-      if (closure_1 >= length.length) {
-        let obj = { done: true };
-      } else {
-        obj = { done: false };
-        closure_1 = tmp3 + 1;
-        obj.value = length[+closure_1];
-      }
-      return obj;
-    };
-  }
-}
-function _arrayLikeToArray(arg0, arg1) {
-  let length;
-  if (tmp) {
-    length = arg0.length;
-  }
-  const ArrayResult = Array(length);
-  for (let num = 0; num < length; num = num + 1) {
-    ArrayResult[num] = arg0[num];
-  }
-  return ArrayResult;
-}
-function normalizeChannelPropertyForCompare(arg0, emojiId) {
+let closure_15;
+let map1;
+function normalizeChannelPropertyForCompare(arg0, arg1, arg2) {
+  let str = arg1;
   if ("topic_" === arg0) {
-    let str2 = "";
-    if (null != emojiId) {
-      str2 = emojiId;
+    if (str == null) {
+      str = "";
     }
-    return str2;
+    return str;
   } else if ("defaultAutoArchiveDuration" === arg0) {
-    let tmp22 = emojiId;
-    if (null == emojiId) {
-      tmp22 = closure_16;
+    let tmp21 = str;
+    if (str == null) {
+      tmp21 = closure_17;
     }
-    return tmp22;
+    return tmp21;
   } else if ("defaultSortOrder" === arg0) {
-    let LATEST_ACTIVITY = emojiId;
-    if (null == emojiId) {
-      LATEST_ACTIVITY = require(1357) /* set */.ThreadSortOrder.LATEST_ACTIVITY;
+    let LATEST_ACTIVITY = str;
+    if (str == null) {
+      LATEST_ACTIVITY = require(1381) /* set */.ThreadSortOrder.LATEST_ACTIVITY;
     }
     return LATEST_ACTIVITY;
   } else if ("defaultForumLayout" === arg0) {
     if (arg2 === constants2.GUILD_MEDIA) {
-      return require(1358) /* set */.ForumLayout.GRID;
+      return require(1382) /* set */.ForumLayout.GRID;
     } else {
-      if (null == emojiId) {
-        let LIST = require(1358) /* set */.ForumLayout.LIST;
+      if (null == str) {
+        let LIST = require(1382) /* set */.ForumLayout.LIST;
       } else {
-        LIST = emojiId;
+        LIST = str;
       }
       return LIST;
     }
@@ -145,20 +52,22 @@ function normalizeChannelPropertyForCompare(arg0, emojiId) {
       if ("defaultThreadRateLimitPerUser" !== arg0) {
         if ("defaultReactionEmoji" === arg0) {
           let tmp2 = null;
-          if (null != emojiId) {
-            let obj = require(3804) /* getReactionEmojiName */;
-            if (obj.isCustomReactionEmojiId(emojiId.emojiId)) {
-              obj = { emojiId: emojiId.emojiId };
+          if (null != str) {
+            let obj = require(3828) /* MAX_REACTIONS */;
+            if (obj.isCustomReactionEmojiId(str.emojiId)) {
+              obj = { emojiId: null };
+              obj[0] = str.emojiId;
               tmp2 = obj;
             } else {
-              const emojiName = emojiId.emojiName;
+              const emojiName = str.emojiName;
               let tmp5 = null;
               if (null != emojiName) {
                 tmp5 = null;
                 if ("" !== emojiName) {
-                  obj = { emojiName: importDefault(3806).translateInlineEmojiToSurrogates(emojiName) };
+                  obj = { emojiName: null };
+                  obj[0] = importDefault(3830).translateInlineEmojiToSurrogates(emojiName);
                   tmp5 = obj;
-                  const obj3 = importDefault(3806);
+                  const obj3 = importDefault(3830);
                 }
               }
               tmp2 = tmp5;
@@ -166,69 +75,35 @@ function normalizeChannelPropertyForCompare(arg0, emojiId) {
           }
           return tmp2;
         } else {
-          return emojiId;
+          return str;
         }
       }
     }
-    let num3 = 0;
-    if (null != emojiId) {
-      num3 = emojiId;
+    let num = str;
+    if (str == null) {
+      num = 0;
     }
-    return num3;
+    return num;
   }
-}
-function handleSetSection(arg0) {
-  let closure_17;
-  let closure_18;
-  ({ section: closure_17, subsection: closure_18 } = arg0);
-  let tmp = null != store2;
-  if (tmp) {
-    tmp = closure_17 === constants.INSTANT_INVITES;
-  }
-  if (tmp) {
-    let c26 = true;
-    const HTTP = require(507) /* _isNativeReflectConstruct */.HTTP;
-    let obj = { url: closure_14.INSTANT_INVITES(store2.id), oldFormErrors: true, rejectWithError: true };
-    const value = HTTP.get(obj);
-    value.then((body) => {
-      let c26 = false;
-      let obj = outer1_1(outer1_2[16]);
-      obj = { type: "CHANNEL_SETTINGS_LOADED_INVITES", invites: body.body };
-      obj.dispatch(obj);
-    }, () => {
-      let c26 = false;
-      return false;
-    });
-  }
-}
-function handleSettingsClose() {
-  let c27 = false;
-  const CLOSED = FormStates.CLOSED;
-  let c17 = null;
-  let c19 = null;
-  let c20 = null;
-  let c21 = null;
-  let closure_25 = {};
 }
 function _createInvite(code) {
-  let tmp = closure_9;
-  const obj = { code: code.code, temporary: code.temporary, revoked: code.revoked };
+  const obj = { code: code.code, temporary: code.temporary, revoked: code.revoked, inviter: null, channel: null, guild: null, uses: null, maxUses: null, maxAge: null, createdAt: null, type: null, roles: null };
   let tmp2 = null;
+  let tmp = createFromServer;
   if (null != code.inviter) {
-    const prototype = ctor.prototype;
-    tmp2 = new ctor(code.inviter);
+    tmp2 = new createdAt(code.inviter);
   }
-  obj.inviter = tmp2;
-  obj.channel = callback3(code.channel);
+  obj[3] = tmp2;
+  obj[4] = callback(code.channel);
   let fromInviteGuildResult = null;
   if (null != code.guild) {
-    fromInviteGuildResult = require(1387) /* fromGuildPropertiesWithAdditionalFields */.fromInviteGuild(code.guild);
-    const obj2 = require(1387) /* fromGuildPropertiesWithAdditionalFields */;
+    fromInviteGuildResult = require(1411) /* fromGuildPropertiesWithAdditionalFields */.fromInviteGuild(code.guild);
+    const obj2 = require(1411) /* fromGuildPropertiesWithAdditionalFields */;
   }
-  obj.guild = fromInviteGuildResult;
-  ({ uses: obj.uses, max_uses: obj.maxUses, max_age: obj.maxAge } = code);
-  obj.createdAt = importDefault(3747)(code.created_at);
-  ({ type: obj.type, roles: obj.roles } = code);
+  obj[5] = fromInviteGuildResult;
+  ({ uses: obj[6], max_uses: obj[7], max_age: obj[8] } = code);
+  obj[9] = importDefault(3771)(code.created_at);
+  ({ type: obj[10], roles: obj[11] } = code);
   tmp = new tmp(obj);
   return tmp;
 }
@@ -237,43 +112,45 @@ function _syncChannelUpdate(id) {
   if (null != channel1) {
     flag = false;
     if (channel1.id === id) {
-      if (channel1 === store2) {
-        const channel = store.getChannel(id);
+      if (channel1 === store) {
+        const channel = store2.getChannel(id);
         flag = false;
         if (null != channel) {
           channel1 = channel;
-          store2 = channel;
-          let channel2 = store.getChannel(store2.parent_id);
+          store = channel;
+          let channel2 = obj2.getChannel(store.parent_id);
           flag = true;
         }
+        obj2 = store2;
       } else {
-        channel1 = store.getChannel(id);
+        channel1 = store2.getChannel(id);
         flag = false;
         if (null != channel1) {
           flag = true;
-          if (null != store2) {
-            const result = store2.set("permissionOverwrites", channel1.permissionOverwrites);
-            store2 = result.set("availableTags", channel1.availableTags);
-            channel2 = store.getChannel(store2.parent_id);
+          if (null != store) {
+            const result = store.set("permissionOverwrites", channel1.permissionOverwrites);
+            store = result.set("availableTags", channel1.availableTags);
+            channel2 = obj3.getChannel(store.parent_id);
             flag = true;
           }
         }
+        obj3 = store2;
       }
     }
   }
-  let tmp12 = !flag;
+  let tmp10 = !flag;
   if (flag) {
-    tmp12 = null == store2;
+    tmp10 = null == store;
   }
-  let flag2 = !tmp12;
-  if (!tmp12) {
-    let tmp15 = null != guildId;
-    if (tmp15) {
-      tmp15 = null == store2.permissionOverwrites[guildId];
+  let flag2 = !tmp10;
+  if (!tmp10) {
+    let tmp13 = null != guildId;
+    if (tmp13) {
+      tmp13 = null == store.permissionOverwrites[guildId];
     }
     flag2 = true;
-    if (tmp15) {
-      guildId = store2.getGuildId();
+    if (tmp13) {
+      guildId = store.getGuildId();
       flag2 = true;
     }
   }
@@ -282,133 +159,86 @@ function _syncChannelUpdate(id) {
 function handleOverwriteUpdate(channelId) {
   return _syncChannelUpdate(channelId.channelId);
 }
-({ ChannelSettingsSections: closure_12, ChannelTypes: closure_13, Endpoints: closure_14, FormStates } = ME);
+({ ChannelSettingsSections: map1, ChannelTypes: closure_14, Endpoints: closure_15, FormStates } = ME);
 let CLOSED = FormStates.CLOSED;
-let closure_24 = {};
-let closure_25 = {};
-let c26 = false;
-let c27 = false;
-let c28 = null;
-let closure_29 = ["name", "type", "topic_", "bitrate_", "userLimit_", "nsfw_", "flags_", "rateLimitPerUser_", "defaultThreadRateLimitPerUser", "defaultAutoArchiveDuration", "template", "defaultReactionEmoji", "rtcRegion", "videoQualityMode", "threadMetadata", "banner", "availableTags", "defaultSortOrder", "defaultForumLayout", "defaultTagSetting", "iconEmoji", "themeColor"];
-let closure_30 = require("apply").debounce(() => {
-  if (null != store2) {
-    if (null != closure_19) {
-      const toJSResult = store2.toJS();
+let closure_19 = {};
+let closure_20 = {};
+let c21 = false;
+let c22 = false;
+let c23 = null;
+let closure_24 = ["name", "type", "topic_", "bitrate_", "userLimit_", "nsfw_", "flags_", "rateLimitPerUser_", "defaultThreadRateLimitPerUser", "defaultAutoArchiveDuration", "template", "defaultReactionEmoji", "rtcRegion", "videoQualityMode", "threadMetadata", "banner", "availableTags", "defaultSortOrder", "defaultForumLayout", "defaultTagSetting", "iconEmoji", "themeColor"];
+let closure_26 = require("apply").debounce(() => {
+  if (null != store) {
+    if (null != closure_5) {
+      const toJSResult = store.toJS();
       const require = toJSResult;
-      let closure_1 = closure_19.toJS();
+      let closure_1 = closure_5.toJS();
       const type = toJSResult.type;
-      let everyResult = closure_29.every((arg0) => {
-        const tmp = outer1_35(arg0, toJSResult[arg0], type);
-        const tmp2 = outer1_35(arg0, dependencyMap[arg0], type);
-        return dependencyMap(type[17]).isEqual(tmp, tmp2);
+      let everyResult = closure_24.every((arg0) => {
+        const tmp = outer1_25(arg0, toJSResult[arg0], type);
+        const tmp2 = outer1_25(arg0, dependencyMap[arg0], type);
+        return dependencyMap(type[12]).isEqual(tmp, tmp2);
       });
       if (everyResult) {
-        everyResult = store2 !== closure_19;
+        everyResult = store !== closure_5;
       }
       if (everyResult) {
-        store2 = closure_19;
-        tmp3.emitChange();
+        store = closure_5;
+        channelSettingsStore.emitChange();
       }
     }
   }
   return false;
 }, 500);
-let tmp3 = ((Store) => {
-  class ChannelSettingsStore {
-    constructor() {
-      self = this;
-      tmp = outer1_3(this, ChannelSettingsStore);
-      obj = outer1_6(ChannelSettingsStore);
-      tmp2 = outer1_5;
-      if (outer1_32()) {
-        tmp6 = globalThis;
-        _Reflect = Reflect;
-        tmp7 = outer1_6;
-        tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, outer1_6(self).constructor);
-      } else {
-        tmp3 = arguments;
-        tmp4 = arguments;
-        constructResult = obj(...arguments);
-      }
-      return tmp2(self, constructResult);
-    }
-  }
-  callback2(ChannelSettingsStore, Store);
-  let obj = {
-    key: "initialize",
-    value() {
-      this.waitFor(outer1_11);
-    }
-  };
-  const items = [obj, , , , , , , , , ];
-  obj = {
-    key: "hasChanges",
-    value() {
-      return outer1_20 !== outer1_19;
-    }
-  };
-  items[1] = obj;
-  obj = {
-    key: "isOpen",
-    value() {
-      return outer1_27;
-    }
-  };
-  items[2] = obj;
-  items[3] = {
-    key: "getSection",
-    value() {
-      return outer1_17;
-    }
-  };
-  items[4] = {
-    key: "getInvites",
-    value() {
-      return { invites: outer1_25, loading: outer1_26 };
-    }
-  };
-  items[5] = {
-    key: "showNotice",
-    value() {
-      return this.hasChanges();
-    }
-  };
-  items[6] = {
-    key: "getChannel",
-    value() {
-      return outer1_20;
-    }
-  };
-  items[7] = {
-    key: "getFormState",
-    value() {
-      return outer1_23;
-    }
-  };
-  items[8] = {
-    key: "getCategory",
-    value() {
-      return outer1_21;
-    }
-  };
-  items[9] = {
-    key: "getProps",
-    value() {
-      return { submitting: outer1_23 === outer1_15.SUBMITTING, errors: outer1_24, channel: outer1_20, section: outer1_17, subsection: outer1_18, invites: outer1_25, selectedOverwriteId: outer1_22, hasChanges: this.hasChanges(), analyticsLocation: outer1_28 };
-    }
-  };
-  return callback(ChannelSettingsStore, items);
-})(require("initialize").Store);
-tmp3.displayName = "ChannelSettingsStore";
-tmp3 = new tmp3(require("dispatcher"), {
+class ChannelSettingsStore extends Store {
+}
+const prototype = ChannelSettingsStore.prototype;
+prototype["initialize"] = function initialize() {
+  this.waitFor(ensureGuildLoaded);
+};
+prototype["hasChanges"] = function hasChanges() {
+  return closure_6 !== closure_5;
+};
+prototype["isOpen"] = function isOpen() {
+  return c22;
+};
+prototype["getSection"] = function getSection() {
+  return closure_3;
+};
+prototype["getInvites"] = function getInvites() {
+  return { invites: closure_20, loading: c21 };
+};
+prototype["showNotice"] = function showNotice() {
+  return this.hasChanges();
+};
+prototype["getChannel"] = function getChannel() {
+  return closure_6;
+};
+prototype["getFormState"] = function getFormState() {
+  return CLOSED;
+};
+prototype["getCategory"] = function getCategory() {
+  return closure_7;
+};
+prototype["getProps"] = function getProps() {
+  return { submitting: CLOSED === FormStates.SUBMITTING, errors: closure_19, channel: closure_6, section: closure_3, subsection: closure_4, invites: closure_20, selectedOverwriteId: closure_8, hasChanges: this.hasChanges(), analyticsLocation: c23 };
+};
+ChannelSettingsStore.displayName = "ChannelSettingsStore";
+const channelSettingsStore = new ChannelSettingsStore(require("dispatcher"), {
   CHANNEL_SETTINGS_INIT: function handleSettingsInit(channelId) {
-    const channel = store.getChannel(channelId.channelId);
+    let obj = store2;
+    let channel = store2.getChannel(channelId.channelId);
     if (null == channel) {
-      handleSettingsClose();
+      let c22 = false;
+      let OPEN = FormStates.CLOSED;
+      let c3 = null;
+      channel = null;
+      let store = null;
+      let channel2 = null;
+      let closure_20 = {};
     } else {
-      const OPEN = FormStates.OPEN;
-      let store2 = channel;
+      OPEN = FormStates.OPEN;
+      store = channel;
       let _location = null;
       if ("location" in channelId) {
         _location = null;
@@ -420,40 +250,65 @@ tmp3 = new tmp3(require("dispatcher"), {
       if ("subsection" in channelId) {
         subsection = channelId.subsection;
       }
-      if (null != store2) {
-        store2 = store2.set("nsfw", store2.isNSFW());
+      let closure_4 = subsection;
+      if (null != store) {
+        store = store.set("nsfw", store.isNSFW());
       }
-      const channel2 = store.getChannel(store2.parent_id);
-      const guildId = store2.getGuildId();
-      let tmp12 = store2.isModeratorReportChannel() ? tmp11.PERMISSIONS : tmp11.OVERVIEW;
-      let closure_24 = {};
-      const obj = { type: "CHANNEL_SETTINGS_SET_SECTION" };
-      if (null != closure_17) {
-        tmp12 = closure_17;
+      channel2 = obj.getChannel(store.parent_id);
+      const guildId = store.getGuildId();
+      if (store.isModeratorReportChannel()) {
+        let OVERVIEW = tmp10.PERMISSIONS;
+        let tmp11 = tmp10;
+      } else {
+        OVERVIEW = tmp10.OVERVIEW;
+        tmp11 = tmp10;
       }
-      obj.section = tmp12;
-      obj.subsection = subsection;
-      handleSetSection(obj);
+      let closure_19 = {};
+      let tmp12 = c3;
+      if (c3 == null) {
+        tmp12 = OVERVIEW;
+      }
+      c3 = tmp12;
+      let tmp15 = null != store;
+      if (tmp15) {
+        tmp15 = c3 === tmp11.INSTANT_INVITES;
+      }
+      if (tmp15) {
+        let c21 = true;
+        const HTTP = require(530) /* sendRequest */.HTTP;
+        obj = { url: null, oldFormErrors: true, rejectWithError: true };
+        obj[0] = closure_15.INSTANT_INVITES(store.id);
+        const value = HTTP.get(obj);
+        value.then((body) => {
+          let c21 = false;
+          let obj = callback(table[11]);
+          obj = { type: "CHANNEL_SETTINGS_LOADED_INVITES", invites: body.body };
+          obj.dispatch(obj);
+        }, () => {
+          let c21 = false;
+          return false;
+        });
+      }
       return true;
     }
   },
   CHANNEL_SETTINGS_SUBMIT: function handleSettingsSubmit() {
     const SUBMITTING = FormStates.SUBMITTING;
-    let closure_24 = {};
+    let closure_19 = {};
   },
   CHANNEL_SETTINGS_SUBMIT_SUCCESS: function handleSettingsSubmitSuccess() {
-    let closure_19 = closure_20;
+    let closure_5 = closure_6;
     const OPEN = FormStates.OPEN;
   },
   CHANNEL_SETTINGS_SUBMIT_FAILURE: function handleSettingsSubmitFailure(errors) {
     let closure_0 = errors;
     const OPEN = FormStates.OPEN;
     errors = errors.errors;
-    if (null == errors) {
+    if (errors == null) {
       errors = {};
     }
     const keys = Object.keys(errors);
-    let closure_24 = keys.reduce((arg0, arg1) => {
+    let closure_19 = keys.reduce((arg0, arg1) => {
       if (obj2.isArray(errors.errors[arg1])) {
         arg0[arg1] = obj.join("\n");
       } else {
@@ -462,7 +317,15 @@ tmp3 = new tmp3(require("dispatcher"), {
       return arg0;
     }, {});
   },
-  CHANNEL_SETTINGS_CLOSE: handleSettingsClose,
+  CHANNEL_SETTINGS_CLOSE: function handleSettingsClose() {
+    let c22 = false;
+    const CLOSED = FormStates.CLOSED;
+    let c3 = null;
+    let c5 = null;
+    let c6 = null;
+    let c7 = null;
+    let closure_20 = {};
+  },
   CHANNEL_PERMISSIONS_PUT_OVERWRITE_SUCCESS: handleOverwriteUpdate,
   CHANNEL_PERMISSIONS_DELETE_OVERWRITE_SUCCESS: handleOverwriteUpdate,
   CHANNEL_SETTINGS_OVERWRITE_SELECT: function handlePermissionOverwriteSelect(overwriteId) {
@@ -493,132 +356,149 @@ tmp3 = new tmp3(require("dispatcher"), {
     let userLimit;
     let videoQualityMode;
     ({ name, channelType, topic, bitrate, userLimit, nsfw, flags, rateLimitPerUser, defaultThreadRateLimitPerUser, autoArchiveDuration, locked, invitable, defaultAutoArchiveDuration, template, defaultReactionEmoji, rtcRegion, videoQualityMode, availableTags, defaultSortOrder, defaultForumLayout, defaultTagSetting, iconEmoji, themeColor } = arg0);
-    if (null == store2) {
+    if (null == store) {
       return false;
     } else {
       if (null != name) {
-        store2 = store2.set("name", name);
+        store = store.set("name", name);
       }
       if (null != topic) {
-        store2 = store2.set("topic", topic);
+        store = store.set("topic", topic);
       }
       if (null != bitrate) {
-        store2 = store2.set("bitrate", bitrate);
+        store = store.set("bitrate", bitrate);
       }
       if (null != userLimit) {
-        store2 = store2.set("userLimit", userLimit);
+        store = store.set("userLimit", userLimit);
       }
       if (null != nsfw) {
-        store2 = store2.set("nsfw", nsfw);
+        store = store.set("nsfw", nsfw);
       }
       if (null != flags) {
-        store2 = store2.set("flags", flags);
+        store = store.set("flags", flags);
       }
       if (null != rateLimitPerUser) {
-        store2 = store2.set("rateLimitPerUser", rateLimitPerUser);
+        store = store.set("rateLimitPerUser", rateLimitPerUser);
       }
       if (null != defaultThreadRateLimitPerUser) {
-        store2 = store2.set("defaultThreadRateLimitPerUser", defaultThreadRateLimitPerUser);
+        store = store.set("defaultThreadRateLimitPerUser", defaultThreadRateLimitPerUser);
       }
       if (null != autoArchiveDuration) {
         let obj = {};
-        const merged = Object.assign(store2.threadMetadata);
-        obj["autoArchiveDuration"] = autoArchiveDuration;
-        store2 = store2.set("threadMetadata", obj);
+        const merged = Object.assign(store.threadMetadata);
+        obj.autoArchiveDuration = autoArchiveDuration;
+        store = store.set("threadMetadata", obj);
       }
       if (null != locked) {
         obj = {};
-        const merged1 = Object.assign(store2.threadMetadata);
-        obj["locked"] = locked;
-        store2 = store2.set("threadMetadata", obj);
+        const merged1 = Object.assign(store.threadMetadata);
+        obj.locked = locked;
+        store = store.set("threadMetadata", obj);
       }
       if (null != invitable) {
         obj = {};
-        const merged2 = Object.assign(store2.threadMetadata);
-        obj["invitable"] = invitable;
-        store2 = store2.set("threadMetadata", obj);
+        const merged2 = Object.assign(store.threadMetadata);
+        obj.invitable = invitable;
+        store = store.set("threadMetadata", obj);
       }
       if (null != defaultAutoArchiveDuration) {
-        store2 = store2.set("defaultAutoArchiveDuration", defaultAutoArchiveDuration);
+        store = store.set("defaultAutoArchiveDuration", defaultAutoArchiveDuration);
       }
       if (null != template) {
-        store2 = store2.set("template", template);
+        store = store.set("template", template);
       }
       if (null != channelType) {
-        store2 = store2.set("type", channelType);
+        store = store.set("type", channelType);
       }
       if (undefined !== rtcRegion) {
-        store2 = store2.set("rtcRegion", rtcRegion);
+        store = store.set("rtcRegion", rtcRegion);
       }
       if (null != videoQualityMode) {
-        store2 = store2.set("videoQualityMode", videoQualityMode);
+        store = store.set("videoQualityMode", videoQualityMode);
       }
       if (undefined !== defaultReactionEmoji) {
-        store2 = store2.set("defaultReactionEmoji", defaultReactionEmoji);
+        store = store.set("defaultReactionEmoji", defaultReactionEmoji);
       }
       if (null != availableTags) {
-        store2 = store2.set("availableTags", availableTags);
+        store = store.set("availableTags", availableTags);
       }
       if (null != defaultSortOrder) {
-        store2 = store2.set("defaultSortOrder", defaultSortOrder);
+        store = store.set("defaultSortOrder", defaultSortOrder);
       }
       if (null != defaultTagSetting) {
-        store2 = store2.set("defaultTagSetting", defaultTagSetting);
+        store = store.set("defaultTagSetting", defaultTagSetting);
       }
       if (null != defaultForumLayout) {
-        store2 = store2.set("defaultForumLayout", defaultForumLayout);
+        store = store.set("defaultForumLayout", defaultForumLayout);
       }
       if (undefined !== iconEmoji) {
-        store2 = store2.set("iconEmoji", iconEmoji);
+        store = store.set("iconEmoji", iconEmoji);
       }
       if (null != themeColor) {
-        store2 = store2.set("themeColor", themeColor);
+        store = store.set("themeColor", themeColor);
       }
-      callback4();
+      callback2();
     }
   },
-  CHANNEL_SETTINGS_SET_SECTION: handleSetSection,
+  CHANNEL_SETTINGS_SET_SECTION: function handleSetSection(arg0) {
+    let closure_3;
+    let closure_4;
+    ({ section: closure_3, subsection: closure_4 } = arg0);
+    let tmp = null != store;
+    if (tmp) {
+      tmp = closure_3 === constants.INSTANT_INVITES;
+    }
+    if (tmp) {
+      let c21 = true;
+      const HTTP = require(530) /* sendRequest */.HTTP;
+      const obj = { url: null, oldFormErrors: true, rejectWithError: true };
+      obj[0] = closure_15.INSTANT_INVITES(store.id);
+      const value = HTTP.get(obj);
+      value.then((body) => {
+        let c21 = false;
+        let obj = callback(table[11]);
+        obj = { type: "CHANNEL_SETTINGS_LOADED_INVITES", invites: body.body };
+        obj.dispatch(obj);
+      }, () => {
+        let c21 = false;
+        return false;
+      });
+    }
+  },
   CHANNEL_SETTINGS_LOADED_INVITES: function handleLoadedInvites(invites) {
-    let closure_25 = {};
+    let closure_20 = {};
     invites = invites.invites;
     const item = invites.forEach((code) => {
-      closure_25[code.code] = outer1_38(code);
+      closure_20[code.code] = callback(code);
     });
   },
-  CHANNEL_UPDATES: function handleChannelUpdates(arg0) {
-    let iter3;
-    if (null == closure_20) {
+  CHANNEL_UPDATES: function handleChannelUpdates(channels) {
+    channels = channels.channels;
+    if (null == closure_6) {
       return false;
     } else {
-      const tmp3 = _createForOfIteratorHelperLoose(tmp);
-      const iter = tmp3();
-      let iter2 = iter;
       let flag = false;
-      let flag2 = false;
-      if (!iter.done) {
-        do {
-          let tmp4 = _syncChannelUpdate;
-          let tmp5 = _syncChannelUpdate(iter2.value.id) || flag;
-          iter3 = tmp3();
-          flag = tmp5;
-          iter2 = iter3;
-          flag2 = tmp5;
-        } while (!iter3.done);
+      const tmp2 = channels[Symbol.iterator]();
+      while (tmp2 !== undefined) {
+        let tmp6 = _syncChannelUpdate;
+        let tmp7 = _syncChannelUpdate(tmp4.id) || flag;
+        flag = tmp7;
+        continue;
       }
-      return flag2;
+      return flag;
     }
   },
   THREAD_UPDATE: function handleThreadUpdate(arg0) {
-    let tmp2 = null != closure_20;
+    let tmp2 = null != closure_6;
     if (tmp2) {
       tmp2 = _syncChannelUpdate(tmp.id);
     }
     return tmp2;
   },
   CHANNEL_DELETE: function handleChannelDelete(arg0) {
-    let tmp2 = null != store2;
+    let tmp2 = null != store;
     if (tmp2) {
-      if (store2.id === tmp) {
+      if (store.id === tmp) {
         const CLOSED = FormStates.CLOSED;
       }
       tmp2 = tmp4;
@@ -636,15 +516,21 @@ tmp3 = new tmp3(require("dispatcher"), {
     obj[invite.invite.code] = _createInvite(invite.invite);
   }
 });
-let closure_31 = tmp3;
 let obj = {
   CHANNEL_SETTINGS_INIT: function handleSettingsInit(channelId) {
-    const channel = store.getChannel(channelId.channelId);
+    let obj = store2;
+    let channel = store2.getChannel(channelId.channelId);
     if (null == channel) {
-      handleSettingsClose();
+      let c22 = false;
+      let OPEN = FormStates.CLOSED;
+      let c3 = null;
+      channel = null;
+      let store = null;
+      let channel2 = null;
+      let closure_20 = {};
     } else {
-      const OPEN = FormStates.OPEN;
-      let store2 = channel;
+      OPEN = FormStates.OPEN;
+      store = channel;
       let _location = null;
       if ("location" in channelId) {
         _location = null;
@@ -656,40 +542,65 @@ let obj = {
       if ("subsection" in channelId) {
         subsection = channelId.subsection;
       }
-      if (null != store2) {
-        store2 = store2.set("nsfw", store2.isNSFW());
+      let closure_4 = subsection;
+      if (null != store) {
+        store = store.set("nsfw", store.isNSFW());
       }
-      const channel2 = store.getChannel(store2.parent_id);
-      const guildId = store2.getGuildId();
-      let tmp12 = store2.isModeratorReportChannel() ? tmp11.PERMISSIONS : tmp11.OVERVIEW;
-      let closure_24 = {};
-      const obj = { type: "CHANNEL_SETTINGS_SET_SECTION" };
-      if (null != closure_17) {
-        tmp12 = closure_17;
+      channel2 = obj.getChannel(store.parent_id);
+      const guildId = store.getGuildId();
+      if (store.isModeratorReportChannel()) {
+        let OVERVIEW = tmp10.PERMISSIONS;
+        let tmp11 = tmp10;
+      } else {
+        OVERVIEW = tmp10.OVERVIEW;
+        tmp11 = tmp10;
       }
-      obj.section = tmp12;
-      obj.subsection = subsection;
-      handleSetSection(obj);
+      let closure_19 = {};
+      let tmp12 = c3;
+      if (c3 == null) {
+        tmp12 = OVERVIEW;
+      }
+      c3 = tmp12;
+      let tmp15 = null != store;
+      if (tmp15) {
+        tmp15 = c3 === tmp11.INSTANT_INVITES;
+      }
+      if (tmp15) {
+        let c21 = true;
+        const HTTP = require(530) /* sendRequest */.HTTP;
+        obj = { url: null, oldFormErrors: true, rejectWithError: true };
+        obj[0] = closure_15.INSTANT_INVITES(store.id);
+        const value = HTTP.get(obj);
+        value.then((body) => {
+          let c21 = false;
+          let obj = callback(table[11]);
+          obj = { type: "CHANNEL_SETTINGS_LOADED_INVITES", invites: body.body };
+          obj.dispatch(obj);
+        }, () => {
+          let c21 = false;
+          return false;
+        });
+      }
       return true;
     }
   },
   CHANNEL_SETTINGS_SUBMIT: function handleSettingsSubmit() {
     const SUBMITTING = FormStates.SUBMITTING;
-    let closure_24 = {};
+    let closure_19 = {};
   },
   CHANNEL_SETTINGS_SUBMIT_SUCCESS: function handleSettingsSubmitSuccess() {
-    let closure_19 = closure_20;
+    let closure_5 = closure_6;
     const OPEN = FormStates.OPEN;
   },
   CHANNEL_SETTINGS_SUBMIT_FAILURE: function handleSettingsSubmitFailure(errors) {
     let closure_0 = errors;
     const OPEN = FormStates.OPEN;
     errors = errors.errors;
-    if (null == errors) {
+    if (errors == null) {
       errors = {};
     }
     const keys = Object.keys(errors);
-    let closure_24 = keys.reduce((arg0, arg1) => {
+    let closure_19 = keys.reduce((arg0, arg1) => {
       if (obj2.isArray(errors.errors[arg1])) {
         arg0[arg1] = obj.join("\n");
       } else {
@@ -698,7 +609,15 @@ let obj = {
       return arg0;
     }, {});
   },
-  CHANNEL_SETTINGS_CLOSE: handleSettingsClose,
+  CHANNEL_SETTINGS_CLOSE: function handleSettingsClose() {
+    let c22 = false;
+    const CLOSED = FormStates.CLOSED;
+    let c3 = null;
+    let c5 = null;
+    let c6 = null;
+    let c7 = null;
+    let closure_20 = {};
+  },
   CHANNEL_PERMISSIONS_PUT_OVERWRITE_SUCCESS: handleOverwriteUpdate,
   CHANNEL_PERMISSIONS_DELETE_OVERWRITE_SUCCESS: handleOverwriteUpdate,
   CHANNEL_SETTINGS_OVERWRITE_SELECT: function handlePermissionOverwriteSelect(overwriteId) {
@@ -729,132 +648,149 @@ let obj = {
     let userLimit;
     let videoQualityMode;
     ({ name, channelType, topic, bitrate, userLimit, nsfw, flags, rateLimitPerUser, defaultThreadRateLimitPerUser, autoArchiveDuration, locked, invitable, defaultAutoArchiveDuration, template, defaultReactionEmoji, rtcRegion, videoQualityMode, availableTags, defaultSortOrder, defaultForumLayout, defaultTagSetting, iconEmoji, themeColor } = arg0);
-    if (null == store2) {
+    if (null == store) {
       return false;
     } else {
       if (null != name) {
-        store2 = store2.set("name", name);
+        store = store.set("name", name);
       }
       if (null != topic) {
-        store2 = store2.set("topic", topic);
+        store = store.set("topic", topic);
       }
       if (null != bitrate) {
-        store2 = store2.set("bitrate", bitrate);
+        store = store.set("bitrate", bitrate);
       }
       if (null != userLimit) {
-        store2 = store2.set("userLimit", userLimit);
+        store = store.set("userLimit", userLimit);
       }
       if (null != nsfw) {
-        store2 = store2.set("nsfw", nsfw);
+        store = store.set("nsfw", nsfw);
       }
       if (null != flags) {
-        store2 = store2.set("flags", flags);
+        store = store.set("flags", flags);
       }
       if (null != rateLimitPerUser) {
-        store2 = store2.set("rateLimitPerUser", rateLimitPerUser);
+        store = store.set("rateLimitPerUser", rateLimitPerUser);
       }
       if (null != defaultThreadRateLimitPerUser) {
-        store2 = store2.set("defaultThreadRateLimitPerUser", defaultThreadRateLimitPerUser);
+        store = store.set("defaultThreadRateLimitPerUser", defaultThreadRateLimitPerUser);
       }
       if (null != autoArchiveDuration) {
         let obj = {};
-        const merged = Object.assign(store2.threadMetadata);
-        obj["autoArchiveDuration"] = autoArchiveDuration;
-        store2 = store2.set("threadMetadata", obj);
+        const merged = Object.assign(store.threadMetadata);
+        obj.autoArchiveDuration = autoArchiveDuration;
+        store = store.set("threadMetadata", obj);
       }
       if (null != locked) {
         obj = {};
-        const merged1 = Object.assign(store2.threadMetadata);
-        obj["locked"] = locked;
-        store2 = store2.set("threadMetadata", obj);
+        const merged1 = Object.assign(store.threadMetadata);
+        obj.locked = locked;
+        store = store.set("threadMetadata", obj);
       }
       if (null != invitable) {
         obj = {};
-        const merged2 = Object.assign(store2.threadMetadata);
-        obj["invitable"] = invitable;
-        store2 = store2.set("threadMetadata", obj);
+        const merged2 = Object.assign(store.threadMetadata);
+        obj.invitable = invitable;
+        store = store.set("threadMetadata", obj);
       }
       if (null != defaultAutoArchiveDuration) {
-        store2 = store2.set("defaultAutoArchiveDuration", defaultAutoArchiveDuration);
+        store = store.set("defaultAutoArchiveDuration", defaultAutoArchiveDuration);
       }
       if (null != template) {
-        store2 = store2.set("template", template);
+        store = store.set("template", template);
       }
       if (null != channelType) {
-        store2 = store2.set("type", channelType);
+        store = store.set("type", channelType);
       }
       if (undefined !== rtcRegion) {
-        store2 = store2.set("rtcRegion", rtcRegion);
+        store = store.set("rtcRegion", rtcRegion);
       }
       if (null != videoQualityMode) {
-        store2 = store2.set("videoQualityMode", videoQualityMode);
+        store = store.set("videoQualityMode", videoQualityMode);
       }
       if (undefined !== defaultReactionEmoji) {
-        store2 = store2.set("defaultReactionEmoji", defaultReactionEmoji);
+        store = store.set("defaultReactionEmoji", defaultReactionEmoji);
       }
       if (null != availableTags) {
-        store2 = store2.set("availableTags", availableTags);
+        store = store.set("availableTags", availableTags);
       }
       if (null != defaultSortOrder) {
-        store2 = store2.set("defaultSortOrder", defaultSortOrder);
+        store = store.set("defaultSortOrder", defaultSortOrder);
       }
       if (null != defaultTagSetting) {
-        store2 = store2.set("defaultTagSetting", defaultTagSetting);
+        store = store.set("defaultTagSetting", defaultTagSetting);
       }
       if (null != defaultForumLayout) {
-        store2 = store2.set("defaultForumLayout", defaultForumLayout);
+        store = store.set("defaultForumLayout", defaultForumLayout);
       }
       if (undefined !== iconEmoji) {
-        store2 = store2.set("iconEmoji", iconEmoji);
+        store = store.set("iconEmoji", iconEmoji);
       }
       if (null != themeColor) {
-        store2 = store2.set("themeColor", themeColor);
+        store = store.set("themeColor", themeColor);
       }
-      callback4();
+      callback2();
     }
   },
-  CHANNEL_SETTINGS_SET_SECTION: handleSetSection,
+  CHANNEL_SETTINGS_SET_SECTION: function handleSetSection(arg0) {
+    let closure_3;
+    let closure_4;
+    ({ section: closure_3, subsection: closure_4 } = arg0);
+    let tmp = null != store;
+    if (tmp) {
+      tmp = closure_3 === constants.INSTANT_INVITES;
+    }
+    if (tmp) {
+      let c21 = true;
+      const HTTP = require(530) /* sendRequest */.HTTP;
+      const obj = { url: null, oldFormErrors: true, rejectWithError: true };
+      obj[0] = closure_15.INSTANT_INVITES(store.id);
+      const value = HTTP.get(obj);
+      value.then((body) => {
+        let c21 = false;
+        let obj = callback(table[11]);
+        obj = { type: "CHANNEL_SETTINGS_LOADED_INVITES", invites: body.body };
+        obj.dispatch(obj);
+      }, () => {
+        let c21 = false;
+        return false;
+      });
+    }
+  },
   CHANNEL_SETTINGS_LOADED_INVITES: function handleLoadedInvites(invites) {
-    let closure_25 = {};
+    let closure_20 = {};
     invites = invites.invites;
     const item = invites.forEach((code) => {
-      closure_25[code.code] = outer1_38(code);
+      closure_20[code.code] = callback(code);
     });
   },
-  CHANNEL_UPDATES: function handleChannelUpdates(arg0) {
-    let iter3;
-    if (null == closure_20) {
+  CHANNEL_UPDATES: function handleChannelUpdates(channels) {
+    channels = channels.channels;
+    if (null == closure_6) {
       return false;
     } else {
-      const tmp3 = _createForOfIteratorHelperLoose(tmp);
-      const iter = tmp3();
-      let iter2 = iter;
       let flag = false;
-      let flag2 = false;
-      if (!iter.done) {
-        do {
-          let tmp4 = _syncChannelUpdate;
-          let tmp5 = _syncChannelUpdate(iter2.value.id) || flag;
-          iter3 = tmp3();
-          flag = tmp5;
-          iter2 = iter3;
-          flag2 = tmp5;
-        } while (!iter3.done);
+      const tmp2 = channels[Symbol.iterator]();
+      while (tmp2 !== undefined) {
+        let tmp6 = _syncChannelUpdate;
+        let tmp7 = _syncChannelUpdate(tmp4.id) || flag;
+        flag = tmp7;
+        continue;
       }
-      return flag2;
+      return flag;
     }
   },
   THREAD_UPDATE: function handleThreadUpdate(arg0) {
-    let tmp2 = null != closure_20;
+    let tmp2 = null != closure_6;
     if (tmp2) {
       tmp2 = _syncChannelUpdate(tmp.id);
     }
     return tmp2;
   },
   CHANNEL_DELETE: function handleChannelDelete(arg0) {
-    let tmp2 = null != store2;
+    let tmp2 = null != store;
     if (tmp2) {
-      if (store2.id === tmp) {
+      if (store.id === tmp) {
         const CLOSED = FormStates.CLOSED;
       }
       tmp2 = tmp4;
@@ -872,6 +808,6 @@ let obj = {
     obj[invite.invite.code] = _createInvite(invite.invite);
   }
 };
-let result = require("_possibleConstructorReturn").fileFinishedImporting("stores/ChannelSettingsStore.tsx");
+let result = require("createdAt").fileFinishedImporting("stores/ChannelSettingsStore.tsx");
 
-export default tmp3;
+export default channelSettingsStore;

@@ -1,71 +1,65 @@
-// Module ID: 16496
-// Function ID: 128551
+// Module ID: 16531
+// Function ID: 16532
 // Name: EligibilityChecklistRow
-// Dependencies: [31, 27, 33, 4165, 5119, 16497, 16498, 4161, 4578, 1273, 14212, 2]
+// Dependencies: [19, 17, 21, 4189, 5141, 16532, 16533, 4185, 4600, 1297, 14234, 2]
 // Exports: default
 
-// Module 16496 (EligibilityChecklistRow)
-import "result";
+// Module 16531 (EligibilityChecklistRow)
+import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_4;
-let closure_5;
+let c4;
+let c5;
 let closure_6;
 const require = arg1;
 function EligibilityChecklistRow(item) {
   item = item.item;
   const tmp = callback2();
-  let obj = {};
-  obj = {};
   const items = [tmp.row, ];
   let eligibleRow = item.checked;
   if (eligibleRow) {
     eligibleRow = tmp.eligibleRow;
   }
+  let obj = { style: items, children: null };
   items[1] = eligibleRow;
-  obj.style = items;
-  obj = { style: tmp.rowStatusIcon };
+  obj = { style: tmp.rowStatusIcon, source: null };
   if (item.checked) {
-    let tmp7Result = tmp7(16497);
+    let tmp6Result = tmp6(16532);
   } else {
-    tmp7Result = tmp7(16498);
+    tmp6Result = tmp6(16533);
   }
-  obj.source = tmp7Result;
-  const items1 = [callback(importDefault(5119), obj), ];
-  const obj1 = { style: tmp.rowTextColumn };
-  const obj2 = { style: tmp.rowLabel, variant: "text-md/semibold", color: "mobile-text-heading-primary", children: item.checked ? item.checkedLabel : item.uncheckedLabel };
-  const items2 = [callback(require(4161) /* Text */.Text, obj2), , ];
-  const obj3 = { variant: "text-sm/normal", color: "interactive-text-default", children: item.description };
-  items2[1] = callback(require(4161) /* Text */.Text, obj3);
-  let tmp13 = null != item.actionHandler && null != item.actionLabel;
-  if (tmp13) {
-    const obj4 = { style: tmp.actionButtonWrapper };
-    const obj5 = {};
-    ({ actionLabel: obj8.text, actionHandler: obj8.onPress } = item);
-    obj5.grow = true;
-    obj4.children = callback(require(4578) /* Button */.Button, obj5);
-    tmp13 = callback(View, obj4);
+  obj[1] = tmp6Result;
+  const items1 = [closure_4(importDefault(5141), obj), ];
+  obj = { style: tmp.rowTextColumn, children: null };
+  const items2 = [closure_4(require(4185) /* Text */.Text, { style: tmp.rowLabel, variant: "text-md/semibold", color: "mobile-text-heading-primary", children: item.checked ? item.checkedLabel : item.uncheckedLabel }), closure_4(require(4185) /* Text */.Text, { variant: "text-sm/normal", color: "interactive-text-default", children: item.description }), ];
+  let tmp5Result = null != item.actionHandler && null != item.actionLabel;
+  if (tmp5Result) {
+    const obj3 = { style: null, children: null };
+    obj3[0] = tmp.actionButtonWrapper;
+    ({ actionLabel: obj7[0], actionHandler: obj7[1] } = item);
+    obj3[1] = tmp5(tmp10(4600).Button, { text: null, onPress: null, grow: true });
+    tmp5Result = tmp5(tmp4, obj3);
+    const obj4 = { text: null, onPress: null, grow: true };
   }
-  items2[2] = tmp13;
-  obj1.children = items2;
-  items1[1] = closure_5(View, obj1);
-  obj.children = items1;
-  const items3 = [closure_5(View, obj), ];
+  items2[2] = tmp5Result;
+  obj[1] = items2;
+  items1[1] = closure_5(View, obj);
+  obj[1] = items1;
+  const children = [closure_5(View, obj), ];
   if (item.isLast) {
-    const obj6 = { size: 16 };
-    let tmp19Result = tmp19(require(1273) /* Button */.Spacer, obj6);
+    tmp5Result = tmp5(tmp10(1297).Spacer, { size: 16 });
   } else {
-    const obj7 = { style: tmp.divider };
-    tmp19Result = tmp19(importDefault(14212), obj7);
+    const obj5 = { style: null };
+    obj5[0] = tmp.divider;
+    tmp5Result = tmp5(tmp6(14234), obj5);
   }
-  items3[1] = tmp19Result;
-  obj.children = items3;
-  return closure_5(closure_6, obj);
+  children[1] = tmp5Result;
+  return closure_5(closure_6, { children });
 }
-({ jsx: closure_4, jsxs: closure_5, Fragment: closure_6 } = jsxProd);
-let closure_7 = _createForOfIteratorHelperLoose.createStyles({ row: { paddingHorizontal: 24, paddingTop: 16, flex: 0, flexDirection: "row" }, eligibleRow: { opacity: 0.8 }, rowStatusIcon: { height: 20, width: 20, marginRight: 16 }, rowTextColumn: { flex: 1, flexDirection: "column" }, rowLabel: { marginBottom: 4 }, actionButtonWrapper: { marginTop: 12 }, divider: { marginHorizontal: 24 } });
+({ jsx: c4, jsxs: c5, Fragment: closure_6 } = jsxProd);
+let closure_7 = createCacheKey.createStyles({ row: { paddingHorizontal: 24, paddingTop: 16, flex: 0, flexDirection: "row" }, eligibleRow: { opacity: 0.8 }, rowStatusIcon: { height: 20, width: 20, marginRight: 16 }, rowTextColumn: { flex: 1, flexDirection: "column" }, rowLabel: { marginBottom: 4 }, actionButtonWrapper: { marginTop: 12 }, divider: { marginHorizontal: 24 } });
 const result = require("jsxProd").fileFinishedImporting("modules/guild_role_subscriptions/native/components/EligibilityChecklist.tsx");
 
 export default function EligibilityChecklist(items) {
@@ -73,7 +67,9 @@ export default function EligibilityChecklist(items) {
   if (0 === items.length) {
     return null;
   } else {
-    const obj = { style: tmp, children: items.map((checkedLabel) => outer1_4(outer1_8, { item: checkedLabel, isLast: arg1 === items.length - 1 }, checkedLabel.checkedLabel)) };
+    const obj = { style: null, children: null };
+    obj[0] = tmp;
+    obj[1] = items.map((checkedLabel) => outer1_4(outer1_8, { item: checkedLabel, isLast: arg1 === items.length - 1 }, checkedLabel.checkedLabel));
     return callback(View, obj);
   }
 };

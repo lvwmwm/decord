@@ -1,99 +1,93 @@
-// Module ID: 16417
-// Function ID: 127894
+// Module ID: 16452
+// Function ID: 16453
 // Name: width
-// Dependencies: [57, 31, 27, 4157, 1838, 16413, 653, 33, 4165, 689, 6540, 675, 4359, 7636, 4695, 4161, 13201, 1273, 9986, 4578, 1212, 2]
+// Dependencies: [32, 19, 17, 4181, 1862, 16448, 676, 21, 4189, 712, 6561, 698, 4384, 7659, 4717, 4185, 13224, 1297, 10008, 4600, 1236, 2]
 // Exports: default
 
-// Module 16417 (width)
+// Module 16452 (width)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
-import get_ActivityIndicator from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_9 from "_createForOfIteratorHelperLoose";
+import Button from "Button";
+import get_ActivityIndicator from "Button";
+import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
+import createGuildRecordFromRust from "createGuildRecordFromRust";
 import title from "title";
 import ME from "ME";
-import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import jsxProd from "set";
+import createCacheKey from "createCacheKey";
 
 let Dimensions;
-let closure_10;
-let closure_11;
+let c10;
+let c5;
 let closure_12;
-let closure_13;
 let closure_14;
 let closure_15;
 let closure_16;
-let closure_5;
 let closure_6;
-let closure_7;
+let error;
+let map1;
+let unpackModuleId;
 const require = arg1;
-({ View: closure_5, Dimensions, AccessibilityInfo: closure_6, ScrollView: closure_7 } = get_ActivityIndicator);
-({ PermissionTemplateTypes: closure_10, PermissionTemplates: closure_11, DEFAULT_TEMPLATE_TYPE: closure_12 } = title);
-({ AnalyticEvents: closure_13, GuildFeatures: closure_14 } = ME);
+({ View: c5, Dimensions, AccessibilityInfo: closure_6, ScrollView: error } = get_ActivityIndicator);
+({ PermissionTemplateTypes: c10, PermissionTemplates: unpackModuleId, DEFAULT_TEMPLATE_TYPE: closure_12 } = title);
+({ AnalyticEvents: map1, GuildFeatures: closure_14 } = ME);
 ({ jsx: closure_15, jsxs: closure_16 } = jsxProd);
 let width = Dimensions.get("window").width;
 let closure_18 = width - 300;
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWER, flex: 1 };
-_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.carousel = { flex: 1 };
-_createForOfIteratorHelperLoose.cardWrapper = { paddingHorizontal: 10, flex: 1 };
-let obj1 = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW, borderColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWEST, borderRadius: require("_createForOfIteratorHelperLoose").radii.sm, borderStyle: "solid", borderWidth: 1, flex: 1, flexDirection: "column", marginVertical: 16, padding: 16, paddingTop: 20 };
-_createForOfIteratorHelperLoose.card = obj1;
-_createForOfIteratorHelperLoose.templateTitle = { alignItems: "center", textAlign: "center", paddingBottom: 16 };
-_createForOfIteratorHelperLoose.templateSubtitle = { paddingBottom: 16 };
-_createForOfIteratorHelperLoose.templateContentWrapper = { flex: 1, justifyContent: "flex-start" };
-_createForOfIteratorHelperLoose.templateContent = { alignItems: "center", flexDirection: "row", paddingBottom: 8 };
-_createForOfIteratorHelperLoose.templateContentText = { flex: 1, marginLeft: 12 };
-_createForOfIteratorHelperLoose.templateButton = { justifyContent: "flex-end", flexGrow: 0, paddingTop: 16 };
-_createForOfIteratorHelperLoose.sliderContainer = { alignItems: "center" };
-_createForOfIteratorHelperLoose.slider = { marginTop: 8, width: 300, maxWidth: "72%" };
-_createForOfIteratorHelperLoose.sliderLabels = { alignItems: "center", flexDirection: "row", justifyContent: "space-between", marginBottom: 16, textAlign: "center", width: 380, maxWidth: "85%" };
-_createForOfIteratorHelperLoose.sliderLabel = { marginHorizontal: 0, width: "25%", textAlign: "center", alignItems: "center" };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+createCacheKey = { container: null, carousel: null, cardWrapper: null, card: null, templateTitle: null, templateSubtitle: null, templateContentWrapper: null, templateContent: null, templateContentText: null, templateButton: null, sliderContainer: null, slider: null, sliderLabels: null, sliderLabel: null };
+createCacheKey = { backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOWER, flex: 1 };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { flex: 1 };
+createCacheKey[2] = { paddingHorizontal: 10, flex: 1 };
+createCacheKey[3] = { backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW, borderColor: require("Themes").colors.BACKGROUND_BASE_LOWEST, borderRadius: require("Themes").radii.sm, borderStyle: "solid", borderWidth: 1, flex: 1, flexDirection: "column", marginVertical: 16, padding: 16, paddingTop: 20 };
+createCacheKey[4] = { alignItems: "center", textAlign: "center", paddingBottom: 16 };
+createCacheKey[5] = { paddingBottom: 16 };
+createCacheKey[6] = { flex: 1, justifyContent: "flex-start" };
+createCacheKey[7] = { alignItems: "center", flexDirection: "row", paddingBottom: 8 };
+createCacheKey[8] = { flex: 1, marginLeft: 12 };
+createCacheKey[9] = { justifyContent: "flex-end", flexGrow: 0, paddingTop: 16 };
+createCacheKey[10] = { alignItems: "center" };
+createCacheKey[11] = { marginTop: 8, width: 300, maxWidth: "72%" };
+createCacheKey[12] = { alignItems: "center", flexDirection: "row", justifyContent: "space-between", marginBottom: 16, textAlign: "center", width: 380, maxWidth: "85%" };
+createCacheKey[13] = { marginHorizontal: 0, width: "25%", textAlign: "center", alignItems: "center" };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let obj1 = { backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW, borderColor: require("Themes").colors.BACKGROUND_BASE_LOWEST, borderRadius: require("Themes").radii.sm, borderStyle: "solid", borderWidth: 1, flex: 1, flexDirection: "column", marginVertical: 16, padding: 16, paddingTop: 20 };
 let result = require("get ActivityIndicator").fileFinishedImporting("modules/guild_settings/roles/native/GuildSettingsRoleTemplate.tsx");
 
 export default function GuildSettingsRoleTemplate(arg0) {
-  let closure_10;
+  let c10;
   let dependencyMap;
   let importDefault;
   let require;
   let tmp10;
   ({ onSelect: require, location: importDefault, guildId: dependencyMap } = arg0);
+  let callback;
   let ref;
+  let first;
   let closure_6;
-  function updateLevel(arg0) {
-    const rounded = Math.round(arg0);
-    screenReaderEnabled(rounded);
-    let tmp3 = null != ref;
-    if (tmp3) {
-      tmp3 = null != ref.current;
-    }
-    if (tmp3) {
-      const current = ref.current;
-      current.snapToItem(rounded, !lib.useReducedMotion);
-    }
-  }
-  const tmp = _createForOfIteratorHelperLoose();
-  const callback = tmp;
+  let first1;
+  let maybeApplyNoTextColorForLightCustomTheme;
+  let createGuildRecordFromRust;
+  let constants;
+  const tmp = createCacheKey();
+  callback = tmp;
   ref = ref.useRef(null);
   const tmp4 = callback(ref.useState(closure_12), 2);
-  const first = tmp4[0];
+  first = tmp4[0];
   closure_6 = tmp4[1];
   const tmp6 = callback(ref.useState(width), 2);
-  const first1 = tmp6[0];
-  let _isNativeReflectConstruct = tmp6[1];
+  first1 = tmp6[0];
+  maybeApplyNoTextColorForLightCustomTheme = tmp6[1];
   const tmp8 = callback(ref.useState(closure_18), 2);
-  let closure_9 = tmp8[1];
-  const tmp2 = importDefault(6540)();
-  [tmp10, closure_10] = callback(ref.useState(false), 2);
+  createGuildRecordFromRust = tmp8[1];
+  const tmp2 = importDefault(6561)();
+  [tmp10, c10] = callback(ref.useState(false), 2);
   const effect = ref.useEffect(() => {
     const result = screenReaderEnabled.isScreenReaderEnabled();
     result.then((arg0) => {
-      outer1_10(arg0);
+      callback(arg0);
     });
   }, []);
-  const values = Object.values(updateLevel);
+  const values = Object.values(closure_11);
   let obj = {
     style: tmp.container,
     onLayout(nativeEvent) {
@@ -102,12 +96,31 @@ export default function GuildSettingsRoleTemplate(arg0) {
         lib(width);
         callback(width - 300);
       }
-    }
+    },
+    children: null
   };
-  obj = { style: tmp.sliderContainer };
-  obj = { accessible: false, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: callback2(importDefault(7636), { maximumValue: values.length - 1, minimumTrackTintColor: values[first].color, minimumValue: constants.COSMETIC, onSlidingComplete: updateLevel, style: tmp.slider, thumbTintColor: values[first].color, value: first, accessible: false, accessibilityElementsHidden: true, importantForAccessibility: "no" }) };
+  obj = { style: tmp.sliderContainer, children: null };
+  obj = { accessible: false, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: callback2(importDefault(7659), obj1) };
   let items = [callback2(first, obj), ];
-  let obj1 = { maximumValue: values.length - 1, minimumTrackTintColor: values[first].color, minimumValue: constants.COSMETIC, onSlidingComplete: updateLevel, style: tmp.slider, thumbTintColor: values[first].color, value: first, accessible: false, accessibilityElementsHidden: true, importantForAccessibility: "no" };
+  obj1 = {
+    maximumValue: values.length - 1,
+    minimumTrackTintColor: values[first].color,
+    minimumValue: constants.COSMETIC,
+    onSlidingComplete: function updateLevel(arg0) {
+      const rounded = Math.round(arg0);
+      screenReaderEnabled(rounded);
+      if (tmp4) {
+        const current = tmp3.current;
+        current.snapToItem(rounded, !lib.useReducedMotion);
+      }
+    },
+    style: tmp.slider,
+    thumbTintColor: values[first].color,
+    value: first,
+    accessible: false,
+    accessibilityElementsHidden: true,
+    importantForAccessibility: "no"
+  };
   const tmp12 = callback3;
   const tmp13 = first;
   const tmp14 = callback2;
@@ -117,104 +130,121 @@ export default function GuildSettingsRoleTemplate(arg0) {
     children: values.map((title) => {
       title = title.title;
       let closure_0 = arg1;
-      let obj = { style: tmp.sliderLabel };
+      let obj = { style: _undefined.sliderLabel, children: null };
       obj = {
         accessibilityRole: "button",
         accessibilityState: obj,
         onPress() {
-          outer1_11(closure_0);
-        }
+          const rounded = Math.round(closure_0);
+          outer1_6(rounded);
+          if (tmp4) {
+            const current = tmp3.current;
+            current.snapToItem(rounded, !outer1_8.useReducedMotion);
+          }
+        },
+        children: null
       };
       obj = { selected: first === arg1 };
-      const obj1 = { variant: "text-sm/medium", children: title() };
-      obj.children = outer1_15(outer1_0(outer1_2[15]).Text, obj1);
-      obj.children = outer1_15(outer1_0(outer1_2[14]).PressableOpacity, obj);
+      const obj1 = { variant: "text-sm/medium", children: null };
+      obj1[1] = title();
+      obj[3] = outer1_15(outer1_0(outer1_2[15]).Text, obj1);
+      obj[1] = outer1_15(outer1_0(outer1_2[14]).PressableOpacity, obj);
       return outer1_15(first, obj, title());
     })
   });
-  obj.children = items;
+  obj[1] = items;
   let items1 = [callback3(first, obj), ];
-  let obj3 = { data: values, firstItem: 0, inactiveSlideScale: 1 };
+  let obj3 = { data: values, firstItem: 0, inactiveSlideScale: 1, inactiveSlideOpacity: null, itemWidth: null, onBeforeSnapToItem: null, enableMomentum: true, decelerationRate: 0.9, ref: null, renderItem: null, sliderWidth: null, style: null, scrollEnabled: null };
   let num = 0.7;
   let obj2 = {
     style: tmp.sliderLabels,
     children: values.map((title) => {
       title = title.title;
       let closure_0 = arg1;
-      let obj = { style: tmp.sliderLabel };
+      let obj = { style: _undefined.sliderLabel, children: null };
       obj = {
         accessibilityRole: "button",
         accessibilityState: obj,
         onPress() {
-          outer1_11(closure_0);
-        }
+          const rounded = Math.round(closure_0);
+          outer1_6(rounded);
+          if (tmp4) {
+            const current = tmp3.current;
+            current.snapToItem(rounded, !outer1_8.useReducedMotion);
+          }
+        },
+        children: null
       };
       obj = { selected: first === arg1 };
-      const obj1 = { variant: "text-sm/medium", children: title() };
-      obj.children = outer1_15(outer1_0(outer1_2[15]).Text, obj1);
-      obj.children = outer1_15(outer1_0(outer1_2[14]).PressableOpacity, obj);
+      const obj1 = { variant: "text-sm/medium", children: null };
+      obj1[1] = title();
+      obj[3] = outer1_15(outer1_0(outer1_2[15]).Text, obj1);
+      obj[1] = outer1_15(outer1_0(outer1_2[14]).PressableOpacity, obj);
       return outer1_15(first, obj, title());
     })
   };
   if (tmp2) {
     num = 0.3;
   }
-  obj3.inactiveSlideOpacity = num;
-  obj3.itemWidth = first1 - tmp8[0];
-  obj3.onBeforeSnapToItem = function onBeforeSnapToItem(self) {
+  obj3[3] = num;
+  obj3[4] = first1 - tmp8[0];
+  obj3[5] = function onBeforeSnapToItem(self) {
     screenReaderEnabled(self);
   };
-  obj3.enableMomentum = true;
-  obj3.decelerationRate = 0.9;
-  obj3.ref = ref;
-  obj3.renderItem = function renderItem(item) {
+  obj3[8] = ref;
+  obj3[9] = function renderItem(item) {
     item = item.item;
     const contentPrefaceResult = item.contentPreface();
-    let obj = { accessible: !item.index !== first, accessibilityElementsHidden: item.index !== first };
+    let obj = { accessible: !item.index !== first && undefined, accessibilityElementsHidden: tmp5, importantForAccessibility: null, style: null, children: null };
     let str = "no-hide-descendants";
     if (item.index === first) {
       str = "yes";
     }
-    obj.importantForAccessibility = str;
-    obj.style = item.index === first.cardWrapper;
-    obj = { style: tmp.card };
-    obj = {};
-    const obj1 = { style: item.index === first.templateTitle, variant: "heading-lg/extrabold", children: item.title() };
-    let items = [outer1_15(outer1_0(outer1_2[15]).Text, obj1), , ];
-    const obj2 = { style: item.index === first.templateSubtitle, variant: "text-sm/medium", children: item.description() };
-    items[1] = outer1_15(outer1_0(outer1_2[15]).Text, obj2);
-    const obj3 = { style: item.index === first.templateContentWrapper };
-    let tmp10 = null;
+    obj[2] = str;
+    obj[3] = _undefined.cardWrapper;
+    obj = { style: _undefined.card, children: null };
+    obj = { style: _undefined.templateTitle, variant: "heading-lg/extrabold", children: null };
+    obj[2] = item.title();
+    let items = [outer1_15(outer1_0(outer1_2[15]).Text, obj), , ];
+    const obj1 = { style: _undefined.templateSubtitle, variant: "text-sm/medium", children: null };
+    obj1[2] = item.description();
+    items[1] = outer1_15(outer1_0(outer1_2[15]).Text, obj1);
+    const obj2 = { style: _undefined.templateContentWrapper, children: null };
+    let tmp3Result = null;
     if (null != contentPrefaceResult) {
-      tmp10 = null;
+      tmp3Result = null;
       if ("" !== contentPrefaceResult) {
-        const obj4 = { style: tmp.templateSubtitle, variant: "text-sm/medium", children: item.contentPreface() };
-        tmp10 = outer1_15(outer1_0(outer1_2[15]).Text, obj4);
+        const obj3 = { style: null, variant: "text-sm/medium", children: null };
+        obj3[0] = tmp7.templateSubtitle;
+        obj3[2] = item.contentPreface();
+        tmp3Result = tmp3(tmp10(tmp11[15]).Text, obj3);
       }
     }
-    const items1 = [tmp10, ];
-    const obj5 = {
-      accessibilityRole: "list",
-      children: item.contents().map((children) => {
-        let obj = { style: outer1_3.templateContent };
-        obj = { source: outer2_1(outer2_2[18]), size: outer2_0(outer2_2[17]).IconSizes.MEDIUM, color: outer2_1(outer2_2[9]).unsafe_rawColors.GREEN_360 };
-        const items = [outer2_15(outer2_0(outer2_2[17]).Icon, obj), ];
-        obj = { style: outer1_3.templateContentText, variant: "text-sm/medium", children };
-        items[1] = outer2_15(outer2_0(outer2_2[15]).Text, obj);
-        obj.children = items;
-        return outer2_16(first, obj, "" + item.key + "_content_" + arg1);
-      })
-    };
+    const obj4 = { children: null };
+    const items1 = [tmp3Result, ];
+    const obj5 = { accessibilityRole: "list", children: null };
+    obj5[1] = item.contents().map((children) => {
+      let obj = { style: outer1_3.templateContent, children: null };
+      obj = { source: null, size: null, color: null };
+      obj[0] = outer2_1(outer2_2[18]);
+      obj[1] = outer2_0(outer2_2[17]).IconSizes.MEDIUM;
+      obj[2] = outer2_1(outer2_2[9]).unsafe_rawColors.GREEN_360;
+      const items = [outer2_15(outer2_0(outer2_2[17]).Icon, obj), ];
+      obj = { style: outer1_3.templateContentText, variant: "text-sm/medium", children };
+      items[1] = outer2_15(outer2_0(outer2_2[15]).Text, obj);
+      obj[1] = items;
+      return outer2_16(first, obj, "" + item.key + "_content_" + arg1);
+    });
     items1[1] = outer1_15(first, obj5);
-    obj3.children = items1;
-    items[2] = outer1_16(first, obj3);
-    obj.children = items;
-    const items2 = [outer1_16(first1, obj), ];
-    const obj6 = { style: item.index === first.templateButton };
-    const obj7 = {};
-    const intl = outer1_0(outer1_2[20]).intl;
-    obj7.text = intl.string(outer1_0(outer1_2[20]).t.mQS8Is);
-    obj7.onPress = function onPress() {
+    obj2[1] = items1;
+    items[2] = outer1_16(first, obj2);
+    obj4[0] = items;
+    const items2 = [outer1_16(first1, obj4), ];
+    const obj6 = { style: _undefined.templateButton, children: null };
+    const obj7 = { text: null, onPress: null };
+    const intl = tmp10(tmp11[20]).intl;
+    obj7[0] = intl.string(outer1_0(outer1_2[20]).t.mQS8Is);
+    obj7[1] = function onPress() {
       let key;
       let permissions;
       const communityPermissions = item.communityPermissions;
@@ -234,16 +264,16 @@ export default function GuildSettingsRoleTemplate(arg0) {
         item(permissions);
       }
     };
-    obj6.children = outer1_15(outer1_0(outer1_2[19]).Button, obj7);
+    obj6[1] = outer1_15(outer1_0(outer1_2[19]).Button, obj7);
     items2[1] = outer1_15(first, obj6);
-    obj.children = items2;
-    obj.children = outer1_16(first, obj);
+    obj[1] = items2;
+    obj[4] = outer1_16(first, obj);
     return outer1_15(first, obj);
   };
-  obj3.sliderWidth = first1;
-  obj3.style = tmp.carousel;
-  obj3.scrollEnabled = !tmp10;
-  items1[1] = tmp14(importDefault(13201), obj3);
-  obj.children = items1;
+  obj3[10] = first1;
+  obj3[11] = tmp.carousel;
+  obj3[12] = !tmp10;
+  items1[1] = tmp14(importDefault(13224), obj3);
+  obj[2] = items1;
   return tmp12(tmp13, obj);
 };

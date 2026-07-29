@@ -1,336 +1,518 @@
-// Module ID: 4215
-// Function ID: 35970
-// Name: base64Decode
-// Dependencies: [6, 7, 27, 4, 4216, 2]
+// Module ID: 4239
+// Function ID: 4240
+// Name: logger
+// Dependencies: [17, 4, 4240, 2]
 
-// Module 4215 (base64Decode)
-import _classCallCheck from "_classCallCheck";
-import _defineProperties from "_defineProperties";
+// Module 4239 (logger)
 import { Platform } from "get ActivityIndicator";
 import { VoiceEngine } from "constants";
+import { VoiceEngineEmitter } from "constants";
+import { VoiceEngineEmitter as VoiceEngineEmitter2 } from "constants";
+import { VoiceEngineEmitter as VoiceEngineEmitter3 } from "constants";
+import { VoiceEngineEmitter as VoiceEngineEmitter4 } from "constants";
+import { VoiceEngineEmitter as VoiceEngineEmitter5 } from "constants";
+import { VoiceEngineEmitter as VoiceEngineEmitter6 } from "constants";
+import { VoiceEngineEmitter as VoiceEngineEmitter7 } from "constants";
+import { VoiceEngineEmitter as VoiceEngineEmitter8 } from "constants";
+import { VoiceEngineEmitter as VoiceEngineEmitter9 } from "constants";
+import { VoiceEngineEmitter as VoiceEngineEmitter10 } from "constants";
+import { VoiceEngineEmitter as VoiceEngineEmitter11 } from "constants";
+import { VoiceEngineEmitter as VoiceEngineEmitter12 } from "constants";
+import { VoiceEngineEmitter as VoiceEngineEmitter13 } from "constants";
+import { VoiceEngineEmitter as VoiceEngineEmitter14 } from "constants";
 import { VoiceEngine as VoiceEngine2 } from "constants";
 
-const require = arg1;
-function base64Decode(arg0) {
-  return Buffer.from(arg0, "base64").buffer;
-}
-function base64Encode(arg0) {
-  return Buffer.from(arg0).toString("base64");
-}
-function callbackSetter(arg0, arg1) {
-  const _require = arg1;
-  const dependencyMap = null;
-  const VoiceEngineEmitter = _require(4216).VoiceEngineEmitter;
-  VoiceEngineEmitter.addListener(arg0, (arg0) => {
-    let applyResult;
-    if (null != c1) {
-      const items = [];
-      HermesBuiltin.arraySpread(callback(arg0), 0);
-      applyResult = HermesBuiltin.apply(items, undefined);
-    }
-    return applyResult;
-  });
-  return (arg0) => {
-    let closure_1 = arg0;
-    return arg0;
-  };
-}
-const logger = new require("constants").Logger("VoiceEngine");
+let f30580 = require;
+let c1 = dependencyMap;
+const logger = new require("log").Logger("VoiceEngine");
 logger.enableNativeLogger(true);
 require("constants").VoiceEngine.platform = "android";
 const constants = VoiceEngine.getConstants();
 let supportedFeatures;
-if (null != constants) {
+if (constants != null) {
   supportedFeatures = constants.supportedFeatures;
 }
-if (null == supportedFeatures) {
+if (supportedFeatures == null) {
   supportedFeatures = ["voice_sound_stop_loop", "voice_relative_sounds", "voice_legacy_subsystem", "voice_experimental_subsystem", "elevated_hook", "soundshare", "soundshare_loopback", "set_audio_device_by_id", "set_video_device_by_id", "loopback", "wumpus_video", "hybrid_video", "experiment_config", "remote_locus_network_control", "screen_previews", "window_previews", "audio_debug_state", "connection_replay", "simulcast_bugfix", "RTC_REGION_RANKING", "video_effects", "electron_video", "mediapipe", "fixed_keyframe_interval"];
 }
 require("constants").VoiceEngine.supportsFeature = (arg0) => supportedFeatures.includes(arg0);
-let closure_6 = ["configureConnectionRetries", "getEncryptionModes", "setTransportOptions", "mergeUsers", "destroyUser", "setLocalPan", "setLocalVolume", "setLocalMute", "fastUdpReconnect", "wasRemoteDisconnected", "setMinimumOutputDelay", "setSelfMute", "setSelfDeafen", "setNoInputThreshold", "setPTTActive", "setVideoBroadcast", "triggerOnVideoCallback", "getStats", "getFilteredStats", "setPingInterval", "setDesktopSource", "prepareSecureFramesTransition", "executeSecureFramesTransition", "prepareSecureFramesEpoch", "triggerOnSpeakingCallback"];
+let closure_4 = ["configureConnectionRetries", "getEncryptionModes", "setTransportOptions", "mergeUsers", "destroyUser", "setLocalPan", "setLocalVolume", "setLocalMute", "fastUdpReconnect", "wasRemoteDisconnected", "setMinimumOutputDelay", "setSelfMute", "setSelfDeafen", "setNoInputThreshold", "setPTTActive", "setVideoBroadcast", "triggerOnVideoCallback", "getStats", "getFilteredStats", "setPingInterval", "setDesktopSource", "prepareSecureFramesTransition", "executeSecureFramesTransition", "prepareSecureFramesEpoch", "triggerOnSpeakingCallback"];
 if (null != require("constants").VoiceEngine.consoleLog) {
-  require("constants").setNativeLogFn((arg0, arg1, arg2) => {
-    const VoiceEngine = require(4216) /* constants */.VoiceEngine;
+  const _module = require("log");
+  _module.setNativeLogFn((arg0, arg1, arg2) => {
+    const VoiceEngine = f30580(_null[2]).VoiceEngine;
     VoiceEngine.consoleLog(arg1, "[" + arg0 + "] " + arg2);
   });
-  const obj2 = require("constants");
 }
 if (null != require("constants").VoiceEngine.getMLSSigningKeyB64) {
   require("constants").VoiceEngine.getMLSSigningKey = (arg0, arg1, arg2) => {
-    const _require = arg2;
-    const VoiceEngine = _require(4216).VoiceEngine;
+    const callback = arg2;
+    const VoiceEngine = callback(_null[2]).VoiceEngine;
     return VoiceEngine.getMLSSigningKeyB64(arg0, arg1, (arg0, arg1) => {
-      let str = "";
-      if (null != arg1) {
-        str = arg1;
+      let str = arg1;
+      if (arg1 == null) {
+        str = "";
       }
-      closure_0(outer1_11(arg0), outer1_11(str));
+      closure_0(Buffer.from(arg0, "base64").buffer, Buffer.from(str, "base64").buffer);
     });
   };
 }
-let tmp5 = (() => {
-  class VoiceConnection {
-    constructor() {
-      self = this;
-      tmp = outer1_2(this, self);
-      tmp2 = +self.nextId;
-      self.nextId = tmp2 + 1;
-      this.id = tmp2;
-      this.subscriptions = [];
-      this.setNoInputCallback = this.callbackSetter("no-input-callback", (input) => {
-        const items = [input.input];
-        return items;
-      });
-      this.setOnFirstFrameCallback = this.callbackSetter("on-first-frame-callback", (arg0) => {
-        const items = [, , ];
-        ({ userId: arr[0], ssrc: arr[1], streamId: arr[2] } = arg0);
-        return items;
-      });
-      this.setOnNativeMuteChangedCallback = this.callbackSetter("native-mute-state-changed", (muted) => {
-        const items = [muted.muted];
-        return items;
-      });
-      this.setPingCallback = this.callbackSetter("ping-callback", (arg0) => {
-        const items = [, , , ];
-        ({ ping: arr[0], server: arr[1], port: arr[2], seq: arr[3] } = arg0);
-        return items;
-      });
-      this.setPingTimeoutCallback = this.callbackSetter("ping-timeout-callback", (arg0) => {
-        const items = [, , ];
-        ({ server: arr[0], port: arr[1], seq: arr[2] } = arg0);
-        return items;
-      });
-      this.setOnSpeakingCallback_ = this.callbackSetter("user-speaking", (arg0) => {
-        const items = [, , ];
-        ({ userId: arr[0], isSpeaking: arr[1], voiceDb: arr[2] } = arg0);
-        return items;
-      });
-      this.setOnSpeakingCallback = (arg0) => {
-        const result = self.setOnSpeakingCallback_(arg0);
-        const result1 = self.triggerOnSpeakingCallback();
-      };
-      this.setOnSpeakingWhileMutedCallback = this.callbackSetter("speaking-while-muted", () => []);
-      this.setOnVideoCallback_ = this.callbackSetter("on-video-callback", (arg0) => {
-        const items = [, , , , ];
-        ({ userId: arr[0], ssrc: arr[1], streamId: arr[2], videoStreamParameters: arr[3], videoStreamParametersJSON: arr[4] } = arg0);
-        return items;
-      });
-      this.setOnVideoCallback = (arg0) => {
-        const _self = arg0;
-        if (null == arg0) {
-          _self.setOnVideoCallback_(arg0);
-        } else {
-          _self.setOnVideoCallback_((arg0, arg1, arg2, arg3, arg4) => {
-            let parsed = arg3;
-            let tmp2 = arg4;
-            if (arg4) {
-              tmp2 = !parsed;
-            }
-            if (tmp2) {
-              const _JSON = JSON;
-              parsed = JSON.parse(arg4);
-            }
-            return callback(arg0, arg1, arg2, parsed);
-          });
-        }
-        const result = _self.triggerOnVideoCallback();
-      };
-      this.getMLSKeyPackage = (arg0) => {
-        const _self = arg0;
-        _self.boundConnectionMethod("getMLSKeyPackageB64")((arg0) => {
-          callback(outer3_11(arg0));
-        });
-      };
-      this.updateMLSExternalSender = (arg0) => {
-        const tmp = outer2_12(arg0);
-        outer2_4.info("updateMLSExternalSender: " + tmp);
-        self.boundConnectionMethod("updateMLSExternalSenderB64")(tmp);
-      };
-      this.processMLSProposals = (arg0, arg1) => {
-        const _self = arg1;
-        _self.boundConnectionMethod("processMLSProposalsB64")(outer2_12(arg0), (arg0) => {
-          callback(outer3_11(arg0));
-        });
-      };
-      this.prepareMLSCommitTransition = (result) => {
-        result = self.boundConnectionMethod("prepareMLSCommitTransitionB64");
-        result(result, outer2_12(arg1), self.wrapRosterCallback(arg2));
-      };
-      this.processMLSWelcome = (result) => {
-        result = self.boundConnectionMethod("processMLSWelcomeB64");
-        result(result, outer2_12(arg1), self.wrapRosterCallback(arg2));
-      };
-      this.getMLSPairwiseFingerprint = (arg0, arg1, arg2) => {
-        const _self = arg2;
-        _self.boundConnectionMethod("getMLSPairwiseFingerprintB64")(arg0, arg1, (arg0) => {
-          callback(outer3_11(arg0));
-        });
-      };
-      this.setOnMLSFailureCallback = this.callbackSetter("mls-failure-callback", (arg0) => {
-        const items = [, ];
-        ({ source: arr[0], reason: arr[1] } = arg0);
-        return items;
-      });
-      this.setSecureFramesStateUpdateCallback = this.callbackSetter("secure-frames-state-update-callback", (stateUpdate) => {
-        stateUpdate = stateUpdate.stateUpdate;
-        if (null == stateUpdate) {
-          const _JSON = JSON;
-          stateUpdate = JSON.parse(tmp);
-        }
-        const items = [stateUpdate];
-        return items;
-      });
-      item = outer1_6.forEach((arg0) => {
-        self[arg0] = self.boundConnectionMethod(arg0);
-      });
-      return;
-    }
-  }
-  let obj = {
-    key: "wrapRosterCallback",
-    value(arg0) {
-      let closure_0 = arg0;
-      return (arg0, arg1, arg2) => {
-        const obj = {};
-        if (null != arg2) {
-          const _JSON = JSON;
-          const parsed = JSON.parse(arg2);
-          for (const key10010 in parsed) {
-            let tmp5 = key10010;
-            let tmp6 = outer2_11;
-            obj[key10010] = outer2_11(parsed[key10010]);
-            continue;
+let VoiceConnection;
+class VoiceConnection {
+  constructor() {
+    obj = Object.create(new.target.prototype);
+    f30580 = obj;
+    tmp = +VoiceConnection.nextId;
+    VoiceConnection.nextId = tmp + 1;
+    obj.id = tmp;
+    obj.subscriptions = [];
+    obj.setNoInputCallback = obj.callbackSetter("no-input-callback", (input) => {
+      const items = [input.input];
+      return items;
+    });
+    obj.setOnFirstFrameCallback = obj.callbackSetter("on-first-frame-callback", (arg0) => {
+      const items = [, , ];
+      ({ userId: arr[0], ssrc: arr[1], streamId: arr[2] } = arg0);
+      return items;
+    });
+    obj.setOnNativeMuteChangedCallback = obj.callbackSetter("native-mute-state-changed", (muted) => {
+      const items = [muted.muted];
+      return items;
+    });
+    obj.setPingCallback = obj.callbackSetter("ping-callback", (arg0) => {
+      const items = [, , , ];
+      ({ ping: arr[0], server: arr[1], port: arr[2], seq: arr[3] } = arg0);
+      return items;
+    });
+    obj.setPingTimeoutCallback = obj.callbackSetter("ping-timeout-callback", (arg0) => {
+      const items = [, , ];
+      ({ server: arr[0], port: arr[1], seq: arr[2] } = arg0);
+      return items;
+    });
+    obj.setOnSpeakingCallback_ = obj.callbackSetter("user-speaking", (arg0) => {
+      const items = [, , ];
+      ({ userId: arr[0], isSpeaking: arr[1], voiceDb: arr[2] } = arg0);
+      return items;
+    });
+    obj.setOnSpeakingCallback = function setOnSpeakingCallback(handleSpeakingNative) {
+      const result = obj.setOnSpeakingCallback_(handleSpeakingNative);
+      const result1 = obj.triggerOnSpeakingCallback();
+    };
+    obj.setOnSpeakingWhileMutedCallback = obj.callbackSetter("speaking-while-muted", () => []);
+    obj.setOnVideoCallback_ = obj.callbackSetter("on-video-callback", (arg0) => {
+      const items = [, , , , ];
+      ({ userId: arr[0], ssrc: arr[1], streamId: arr[2], videoStreamParameters: arr[3], videoStreamParametersJSON: arr[4] } = arg0);
+      return items;
+    });
+    obj.setOnVideoCallback = function setOnVideoCallback(handleVideo) {
+      const obj = handleVideo;
+      if (null == handleVideo) {
+        obj.setOnVideoCallback_(handleVideo);
+      } else {
+        obj.setOnVideoCallback_((arg0, arg1, arg2, arg3, arg4) => {
+          let parsed = arg3;
+          let tmp2 = arg4;
+          if (arg4) {
+            tmp2 = !parsed;
           }
-        }
-        callback(arg0, arg1, obj);
-      };
-    }
-  };
-  let items = [obj, , , , ];
-  obj = {
-    key: "destroy",
-    value() {
-      let flag = arg0;
-      const self = this;
-      if (arg0 === undefined) {
-        flag = false;
+          if (tmp2) {
+            const _JSON = JSON;
+            parsed = JSON.parse(arg4);
+          }
+          return handleVideo(arg0, arg1, arg2, parsed);
+        });
       }
-      const subscriptions = self.subscriptions;
-      const item = subscriptions.forEach((remove) => remove.remove());
-      self.subscriptions.length = 0;
-      const VoiceEngine = VoiceConnection(outer1_1[4]).VoiceEngine;
-      const result = VoiceEngine.connectionInstanceDestroy(self.id, flag);
+      const result = obj.triggerOnVideoCallback();
+    };
+    obj.getMLSKeyPackage = function getMLSKeyPackage(arg0) {
+      arg0.boundConnectionMethod("getMLSKeyPackageB64")((arg0) => {
+        callback(Buffer.from(arg0, "base64").buffer);
+      });
+    };
+    obj.updateMLSExternalSender = function updateMLSExternalSender(arg0) {
+      let str = Buffer.from(arg0);
+      str = str.toString("base64");
+      outer1_2.info("updateMLSExternalSender: " + str);
+      obj.boundConnectionMethod("updateMLSExternalSenderB64")(str);
+    };
+    obj.processMLSProposals = function processMLSProposals(arg0, arg1) {
+      let str = Buffer.from(arg0);
+      str = str.toString("base64");
+      arg1.boundConnectionMethod("processMLSProposalsB64")(str, (arg0) => {
+        callback(Buffer.from(arg0, "base64").buffer);
+      });
+    };
+    obj.prepareMLSCommitTransition = function prepareMLSCommitTransition(g_v) {
+      let str = Buffer.from(arg1);
+      str = str.toString("base64");
+      const result = obj.boundConnectionMethod("prepareMLSCommitTransitionB64");
+      result(g_v, str, obj.wrapRosterCallback(arg2));
+    };
+    obj.processMLSWelcome = function processMLSWelcome(g_v) {
+      let str = Buffer.from(arg1);
+      str = str.toString("base64");
+      const result = obj.boundConnectionMethod("processMLSWelcomeB64");
+      result(g_v, str, obj.wrapRosterCallback(arg2));
+    };
+    obj.getMLSPairwiseFingerprint = function getMLSPairwiseFingerprint(arg0, arg1, arg2) {
+      arg2.boundConnectionMethod("getMLSPairwiseFingerprintB64")(arg0, arg1, (arg0) => {
+        callback(Buffer.from(arg0, "base64").buffer);
+      });
+    };
+    obj.setOnMLSFailureCallback = obj.callbackSetter("mls-failure-callback", (arg0) => {
+      const items = [, ];
+      ({ source: arr[0], reason: arr[1] } = arg0);
+      return items;
+    });
+    obj.setSecureFramesStateUpdateCallback = obj.callbackSetter("secure-frames-state-update-callback", (stateUpdate) => {
+      stateUpdate = stateUpdate.stateUpdate;
+      if (stateUpdate == null) {
+        const _JSON = JSON;
+        stateUpdate = JSON.parse(tmp);
+      }
+      const items = [stateUpdate];
+      return items;
+    });
+    item = f30555.forEach((getMLSKeyPackageB64) => {
+      obj[getMLSKeyPackageB64] = obj.boundConnectionMethod(getMLSKeyPackageB64);
+    });
+    return obj;
+  }
+}
+const prototype = VoiceConnection.prototype;
+prototype["wrapRosterCallback"] = function wrapRosterCallback(arg0) {
+  let closure_0 = arg0;
+  return (arg0, arg1, arg2) => {
+    const obj = {};
+    if (null != arg2) {
+      const _JSON = JSON;
+      const parsed = JSON.parse(arg2);
+      for (const key10010 in parsed) {
+        let tmp5 = key10010;
+        let _Buffer = Buffer;
+        obj[key10010] = Buffer.from(parsed[key10010], "base64").buffer;
+        continue;
+      }
     }
+    callback(arg0, arg1, obj);
   };
-  items[1] = obj;
-  obj = {
-    key: "getId",
-    value() {
-      return this.id;
+};
+prototype["destroy"] = function destroy() {
+  let flag = arg0;
+  if (arg0 === undefined) {
+    flag = false;
+  }
+  const subscriptions = this.subscriptions;
+  const item = subscriptions.forEach((remove) => remove.remove());
+  this.subscriptions.length = 0;
+  const VoiceEngine = f30580(_null[2]).VoiceEngine;
+  const result = VoiceEngine.connectionInstanceDestroy(this.id, flag);
+};
+prototype["getId"] = function getId() {
+  return this.id;
+};
+prototype["boundConnectionMethod"] = function boundConnectionMethod(getMLSKeyPackageB64) {
+  try {
+    const self = this;
+    return f30580(_null[2]).VoiceEngine[(function connectionInstanceMethod(arr) {
+      const formatted = arr[0].toUpperCase();
+      return "connectionInstance" + formatted + arr.slice(1);
+    })(0, getMLSKeyPackageB64)].bind(f30580(_null[2]).VoiceEngine, this.id);
+  } catch (err) {
+    const _HermesInternal = HermesInternal;
+    logger.warn("VoiceConnection(...): " + tmp + " does not exist.");
+    return () => {
+
+    };
+  }
+};
+prototype["callbackSetter"] = function callbackSetter(arg0, arg1) {
+  const self = this;
+  const _null = arg1;
+  const callback = null;
+  const subscriptions = this.subscriptions;
+  const VoiceEngineEmitter = callback(_null[2]).VoiceEngineEmitter;
+  subscriptions.push(VoiceEngineEmitter.addListener(arg0, (connectionId) => {
+    if (tmp) {
+      const items = [];
+      HermesBuiltin.arraySpread(callback(connectionId), 0);
+      HermesBuiltin.apply(items, undefined);
     }
+  }));
+  return (arg0) => {
+    let closure_0 = arg0;
+    return arg0;
   };
-  items[2] = obj;
-  items[3] = {
-    key: "boundConnectionMethod",
-    value(arg0) {
-      const formatted = arg0[0].toUpperCase();
-      return VoiceConnection(outer1_1[4]).VoiceEngine["connectionInstance" + formatted + arg0.slice(arg0, 1)].bind(VoiceConnection(outer1_1[4]).VoiceEngine, this.id);
-    }
-  };
-  items[4] = {
-    key: "callbackSetter",
-    value(arg0, arg1) {
-      const self = this;
-      let closure_1 = arg1;
-      let c2 = null;
-      const subscriptions = this.subscriptions;
-      const VoiceEngineEmitter = VoiceConnection(outer1_1[4]).VoiceEngineEmitter;
-      subscriptions.push(VoiceEngineEmitter.addListener(arg0, (connectionId) => {
-        if (tmp) {
-          const items = [];
-          HermesBuiltin.arraySpread(callback(connectionId), 0);
-          HermesBuiltin.apply(items, undefined);
-        }
-      }));
-      return (arg0) => {
-        let _classCallCheck = arg0;
-        return arg0;
-      };
-    }
-  };
-  return callback(VoiceConnection, items);
-})();
-let closure_7 = tmp5;
-tmp5.nextId = 0;
-let closure_8 = require("constants").VoiceEngine.createVoiceConnectionWithOptions;
+};
+VoiceConnection.nextId = 0;
+let closure_6 = require("constants").VoiceEngine.createVoiceConnectionWithOptions;
 require("constants").VoiceEngine.createVoiceConnectionWithOptions = (arg0, arg1, arg2) => {
-  const obj = new closure_7();
+  const obj = new VoiceConnection();
   callback2(obj.getId(), arg0, arg1, arg2);
   return obj;
 };
-let closure_9 = require("constants").VoiceEngine.createOwnStreamConnectionWithOptions;
+let closure_7 = require("constants").VoiceEngine.createOwnStreamConnectionWithOptions;
 require("constants").VoiceEngine.createOwnStreamConnectionWithOptions = (arg0, arg1, arg2) => {
-  const obj = new closure_7();
+  const obj = new VoiceConnection();
   callback3(obj.getId(), arg0, arg1, arg2);
   return obj;
 };
-require("constants").VoiceEngine.setNoInputCallback = callbackSetter("no-input-callback", (input) => {
+f30580 = (input) => {
   const items = [input.input];
   return items;
+};
+c1 = null;
+VoiceEngineEmitter.addListener("no-input-callback", (arg0) => {
+  let applyResult;
+  if (c1 != null) {
+    const items = [];
+    HermesBuiltin.arraySpread(f30580(arg0), 0);
+    applyResult = HermesBuiltin.apply(items, undefined);
+  }
+  return applyResult;
 });
-require("constants").VoiceEngine.setOnVoiceCallback = callbackSetter("on-voice", (arg0) => {
+require("constants").VoiceEngine.setNoInputCallback = (arg0) => {
+  let closure_1 = arg0;
+  return arg0;
+};
+f30580 = (arg0) => {
   const items = [, ];
   ({ level: arr[0], speaking: arr[1] } = arg0);
   return items;
+};
+c1 = null;
+VoiceEngineEmitter2.addListener("on-voice", (arg0) => {
+  let applyResult;
+  if (c1 != null) {
+    const items = [];
+    HermesBuiltin.arraySpread(f30580(arg0), 0);
+    applyResult = HermesBuiltin.apply(items, undefined);
+  }
+  return applyResult;
 });
-require("constants").VoiceEngine.setOnNativeMuteChangedCallback = callbackSetter("native-mute-state-changed", (muted) => {
+require("constants").VoiceEngine.setOnVoiceCallback = (arg0) => {
+  let closure_1 = arg0;
+  return arg0;
+};
+f30580 = (muted) => {
   const items = [muted.muted];
   return items;
+};
+c1 = null;
+VoiceEngineEmitter3.addListener("native-mute-state-changed", (arg0) => {
+  let applyResult;
+  if (c1 != null) {
+    const items = [];
+    HermesBuiltin.arraySpread(f30580(arg0), 0);
+    applyResult = HermesBuiltin.apply(items, undefined);
+  }
+  return applyResult;
 });
-require("constants").VoiceEngine.setDeviceChangeCallback = callbackSetter("device-changed", (arg0) => {
+require("constants").VoiceEngine.setOnNativeMuteChangedCallback = (arg0) => {
+  let closure_1 = arg0;
+  return arg0;
+};
+f30580 = (arg0) => {
   const items = [, , ];
   ({ inputDevices: arr[0], outputDevices: arr[1], videoInputDevices: arr[2] } = arg0);
   return items;
+};
+c1 = null;
+VoiceEngineEmitter4.addListener("device-changed", (arg0) => {
+  let applyResult;
+  if (c1 != null) {
+    const items = [];
+    HermesBuiltin.arraySpread(f30580(arg0), 0);
+    applyResult = HermesBuiltin.apply(items, undefined);
+  }
+  return applyResult;
 });
-require("constants").VoiceEngine.setVolumeChangeCallback = callbackSetter("volume-changed", (arg0) => {
+require("constants").VoiceEngine.setDeviceChangeCallback = (arg0) => {
+  let closure_1 = arg0;
+  return arg0;
+};
+f30580 = (arg0) => {
   const items = [, ];
   ({ inputVolume: arr[0], outputVolume: arr[1] } = arg0);
   return items;
+};
+c1 = null;
+VoiceEngineEmitter5.addListener("volume-changed", (arg0) => {
+  let applyResult;
+  if (c1 != null) {
+    const items = [];
+    HermesBuiltin.arraySpread(f30580(arg0), 0);
+    applyResult = HermesBuiltin.apply(items, undefined);
+  }
+  return applyResult;
 });
-require("constants").VoiceEngine.setActiveSinksChangeCallback = callbackSetter("active-sinks-change", (arg0) => {
+require("constants").VoiceEngine.setVolumeChangeCallback = (arg0) => {
+  let closure_1 = arg0;
+  return arg0;
+};
+f30580 = (arg0) => {
   const items = [, ];
   ({ streamId: arr[0], active: arr[1] } = arg0);
   return items;
+};
+c1 = null;
+VoiceEngineEmitter6.addListener("active-sinks-change", (arg0) => {
+  let applyResult;
+  if (c1 != null) {
+    const items = [];
+    HermesBuiltin.arraySpread(f30580(arg0), 0);
+    applyResult = HermesBuiltin.apply(items, undefined);
+  }
+  return applyResult;
 });
-require("constants").VoiceEngine.setBroadcastRequestCallback = callbackSetter("on-broadcast-requested", () => []);
-require("constants").VoiceEngine.setBroadcastFinishedCallback = callbackSetter("on-broadcast-finished", () => []);
-require("constants").VoiceEngine.setBroadcastAnnotatedCallback = callbackSetter("on-broadcast-annotated", (appBundleIdentifier) => {
+require("constants").VoiceEngine.setActiveSinksChangeCallback = (arg0) => {
+  let closure_1 = arg0;
+  return arg0;
+};
+f30580 = () => [];
+c1 = null;
+VoiceEngineEmitter7.addListener("on-broadcast-requested", (arg0) => {
+  let applyResult;
+  if (c1 != null) {
+    const items = [];
+    HermesBuiltin.arraySpread(f30580(arg0), 0);
+    applyResult = HermesBuiltin.apply(items, undefined);
+  }
+  return applyResult;
+});
+require("constants").VoiceEngine.setBroadcastRequestCallback = (arg0) => {
+  let closure_1 = arg0;
+  return arg0;
+};
+f30580 = () => [];
+c1 = null;
+VoiceEngineEmitter8.addListener("on-broadcast-finished", (arg0) => {
+  let applyResult;
+  if (c1 != null) {
+    const items = [];
+    HermesBuiltin.arraySpread(f30580(arg0), 0);
+    applyResult = HermesBuiltin.apply(items, undefined);
+  }
+  return applyResult;
+});
+require("constants").VoiceEngine.setBroadcastFinishedCallback = (arg0) => {
+  let closure_1 = arg0;
+  return arg0;
+};
+f30580 = (appBundleIdentifier) => {
   const items = [appBundleIdentifier.appBundleIdentifier];
   return items;
+};
+c1 = null;
+VoiceEngineEmitter9.addListener("on-broadcast-annotated", (arg0) => {
+  let applyResult;
+  if (c1 != null) {
+    const items = [];
+    HermesBuiltin.arraySpread(f30580(arg0), 0);
+    applyResult = HermesBuiltin.apply(items, undefined);
+  }
+  return applyResult;
 });
-require("constants").VoiceEngine.setBroadcastBlockedCallback = callbackSetter("on-broadcast-blocked", () => []);
-require("constants").VoiceEngine.setSystemMicrophoneModeChangeCallback = callbackSetter("system-microphone-mode-change", (mode) => {
+require("constants").VoiceEngine.setBroadcastAnnotatedCallback = (arg0) => {
+  let closure_1 = arg0;
+  return arg0;
+};
+f30580 = () => [];
+c1 = null;
+VoiceEngineEmitter10.addListener("on-broadcast-blocked", (arg0) => {
+  let applyResult;
+  if (c1 != null) {
+    const items = [];
+    HermesBuiltin.arraySpread(f30580(arg0), 0);
+    applyResult = HermesBuiltin.apply(items, undefined);
+  }
+  return applyResult;
+});
+require("constants").VoiceEngine.setBroadcastBlockedCallback = (arg0) => {
+  let closure_1 = arg0;
+  return arg0;
+};
+f30580 = (mode) => {
   const items = [mode.mode];
   return items;
+};
+c1 = null;
+VoiceEngineEmitter11.addListener("system-microphone-mode-change", (arg0) => {
+  let applyResult;
+  if (c1 != null) {
+    const items = [];
+    HermesBuiltin.arraySpread(f30580(arg0), 0);
+    applyResult = HermesBuiltin.apply(items, undefined);
+  }
+  return applyResult;
 });
-require("constants").VoiceEngine.setVoiceProcessingErrorCallback = callbackSetter("voice-processing-error-callback", (error) => {
+require("constants").VoiceEngine.setSystemMicrophoneModeChangeCallback = (arg0) => {
+  let closure_1 = arg0;
+  return arg0;
+};
+f30580 = (error) => {
   const items = [error.error];
   return items;
+};
+c1 = null;
+VoiceEngineEmitter12.addListener("voice-processing-error-callback", (arg0) => {
+  let applyResult;
+  if (c1 != null) {
+    const items = [];
+    HermesBuiltin.arraySpread(f30580(arg0), 0);
+    applyResult = HermesBuiltin.apply(items, undefined);
+  }
+  return applyResult;
 });
-let closure_10 = callbackSetter("on-broadcast-thumbnail", (imgdata) => {
+require("constants").VoiceEngine.setVoiceProcessingErrorCallback = (arg0) => {
+  let closure_1 = arg0;
+  return arg0;
+};
+f30580 = (imgdata) => {
   const items = [imgdata.imgdata];
   return items;
+};
+c1 = null;
+VoiceEngineEmitter13.addListener("on-broadcast-thumbnail", (arg0) => {
+  let applyResult;
+  if (c1 != null) {
+    const items = [];
+    HermesBuiltin.arraySpread(f30580(arg0), 0);
+    applyResult = HermesBuiltin.apply(items, undefined);
+  }
+  return applyResult;
 });
+const f73963 = (arg0) => {
+  let closure_1 = arg0;
+  return arg0;
+};
 require("constants").VoiceEngine.setBroadcastThumbnailCallback = (arg0, arg1, arg2, arg3) => {
-  callback4(arg3);
-  const VoiceEngine = require(4216) /* constants */.VoiceEngine;
+  if (typeof f73963 !== "find") {
+    HermesBuiltin.throwTypeError();
+  }
+  const _null = arg3;
+  const VoiceEngine = f30580(_null[2]).VoiceEngine;
   const result = VoiceEngine.setBroadcastThumbnailParams(arg0, arg1, arg2);
 };
-require("constants").VoiceEngine.setAudioInputInitializationCallback = callbackSetter("audio-input-initialized", (arg0) => {
+f30580 = (arg0) => {
   const items = [arg0];
   return items;
+};
+c1 = null;
+VoiceEngineEmitter14.addListener("audio-input-initialized", (arg0) => {
+  let applyResult;
+  if (c1 != null) {
+    const items = [];
+    HermesBuiltin.arraySpread(f30580(arg0), 0);
+    applyResult = HermesBuiltin.apply(items, undefined);
+  }
+  return applyResult;
 });
+require("constants").VoiceEngine.setAudioInputInitializationCallback = (arg0) => {
+  let closure_1 = arg0;
+  return arg0;
+};
 VoiceEngine2.initializeEngine();
-let result = require("get ActivityIndicator").fileFinishedImporting("../discord_common/js/packages/media-engine/native/ios/VoiceEngine.tsx");
+let result = require("constants").fileFinishedImporting("../discord_common/js/packages/media-engine/native/ios/VoiceEngine.tsx");
 
 export { VoiceEngine as default } from "constants";

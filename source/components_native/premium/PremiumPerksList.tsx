@@ -1,43 +1,41 @@
-// Module ID: 14764
-// Function ID: 112373
+// Module ID: 14790
+// Function ID: 14791
 // Name: PremiumPerksList
-// Dependencies: [31, 27, 33, 4165, 689, 4161, 2]
+// Dependencies: [19, 17, 21, 4189, 712, 4185, 2]
 // Exports: default
 
-// Module 14764 (PremiumPerksList)
-import "result";
+// Module 14790 (PremiumPerksList)
+import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_3;
-let closure_4;
-let require = arg1;
-({ jsx: closure_3, jsxs: closure_4 } = jsxProd);
-_createForOfIteratorHelperLoose = { perkInfoContainer: { flexDirection: "row", alignItems: "center", gap: 16 }, perkInfoTextContainer: { flexDirection: "column", gap: 4, maxWidth: 279 }, perkListContainer: { width: "100%", paddingVertical: 24, flexDirection: "column", gap: 24 } };
-_createForOfIteratorHelperLoose = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWEST, borderRadius: require("_createForOfIteratorHelperLoose").radii.round, width: 40, height: 40, justifyContent: "center", alignItems: "center" };
-_createForOfIteratorHelperLoose.perkIconContainer = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+let c3;
+let c4;
+const require = arg1;
+({ jsx: c3, jsxs: c4 } = jsxProd);
+createCacheKey = { perkInfoContainer: { flexDirection: "row", alignItems: "center", gap: 16 }, perkInfoTextContainer: { flexDirection: "column", gap: 4, maxWidth: 279 }, perkListContainer: { width: "100%", paddingVertical: 24, flexDirection: "column", gap: 24 }, perkIconContainer: null };
+createCacheKey = { backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOWEST, borderRadius: require("Themes").radii.round, width: 40, height: 40, justifyContent: "center", alignItems: "center" };
+createCacheKey[3] = createCacheKey;
+createCacheKey = createCacheKey.createStyles(createCacheKey);
 const result = require("jsxProd").fileFinishedImporting("components_native/premium/PremiumPerksList.tsx");
 
 export default function PremiumPerksList(perks) {
   perks = perks.perks;
-  const tmp = _createForOfIteratorHelperLoose();
-  const require = tmp;
+  let c0;
+  const tmp = createCacheKey();
+  c0 = tmp;
   return callback(View, {
     style: tmp.perkListContainer,
-    children: perks.map((IconComponent) => {
-      let obj = { style: tmp.perkInfoContainer };
-      obj = { style: tmp.perkIconContainer, children: outer1_3(IconComponent.IconComponent, { size: "md" }) };
+    children: perks.map((children) => {
+      let obj = { style: _undefined.perkInfoContainer, children: null };
+      obj = { style: _undefined.perkIconContainer, children: outer1_3(children.IconComponent, { size: "md" }) };
       const items = [outer1_3(outer1_2, obj), ];
-      obj = { style: tmp.perkInfoTextContainer };
-      const obj1 = { variant: "text-md/bold", color: "text-strong", children: IconComponent.label };
-      const items1 = [outer1_3(tmp(outer1_1[5]).Text, obj1), ];
-      const obj2 = { variant: "text-md/medium", color: "text-default", children: IconComponent.description };
-      items1[1] = outer1_3(tmp(outer1_1[5]).Text, obj2);
-      obj.children = items1;
+      obj = { style: _undefined.perkInfoTextContainer, children: null };
+      const items1 = [outer1_3(_undefined(outer1_1[5]).Text, { variant: "text-md/bold", color: "text-strong", children: children.label }), outer1_3(_undefined(outer1_1[5]).Text, { variant: "text-md/medium", color: "text-default", children: children.description })];
+      obj[1] = items1;
       items[1] = outer1_4(outer1_2, obj);
-      obj.children = items;
+      obj[1] = items;
       return outer1_4(outer1_2, obj, arg1);
     })
   });

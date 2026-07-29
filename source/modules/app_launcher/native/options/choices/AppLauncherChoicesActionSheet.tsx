@@ -1,47 +1,45 @@
-// Module ID: 11318
-// Function ID: 87862
+// Module ID: 11342
+// Function ID: 11343
 // Name: FlashListWrapper
-// Dependencies: [57, 31, 27, 1455, 33, 4165, 689, 6655, 1557, 477, 5009, 7611, 4133, 6540, 11319, 11320, 2]
+// Dependencies: [32, 19, 17, 1479, 21, 4189, 712, 6676, 1581, 500, 5031, 7634, 4157, 6561, 11343, 11344, 2]
 // Exports: default
 
-// Module 11318 (FlashListWrapper)
+// Module 11342 (FlashListWrapper)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
+import noop from "noop";
 import { View } from "get ActivityIndicator";
 import { DEFAULT_CONTENT_PADDING } from "APP_LAUNCHER_BUILT_IN_SECTION_ICON";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_7;
-let closure_8;
+let error;
+let metroImportAll;
 const require = arg1;
 function FlashListWrapper(scrollable) {
-  let obj = Object.create(null);
-  obj.scrollable = 0;
-  const merged = Object.assign(scrollable, obj);
-  const tmp4 = require(6655) /* useModalDismissGuardRefreshControl */;
+  const merged = Object.assign(scrollable, Object.create(null));
+  const tmp3 = require(6676) /* noop */;
   if (scrollable.scrollable) {
-    obj = { preserveScrollMomentum: true };
+    let obj = { preserveScrollMomentum: true };
     const merged1 = Object.assign(merged);
-    let tmp3Result = tmp3(tmp4.BottomSheetFlashList, obj);
+    let tmp2Result = tmp2(tmp3.BottomSheetFlashList, obj);
   } else {
     obj = { scrollEnabled: false };
     const merged2 = Object.assign(merged);
-    tmp3Result = tmp3(tmp4.FlashList, obj);
+    tmp2Result = tmp2(tmp3.FlashList, obj);
   }
-  return tmp3Result;
+  return tmp2Result;
 }
-({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-_createForOfIteratorHelperLoose = { listItemContainer: { overflow: "hidden" } };
-_createForOfIteratorHelperLoose = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.CARD_BACKGROUND_DEFAULT };
-_createForOfIteratorHelperLoose.listItem = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.firstItem = { borderTopLeftRadius: require("_createForOfIteratorHelperLoose").radii.xl, borderTopRightRadius: require("_createForOfIteratorHelperLoose").radii.xl };
-let obj1 = { borderTopLeftRadius: require("_createForOfIteratorHelperLoose").radii.xl, borderTopRightRadius: require("_createForOfIteratorHelperLoose").radii.xl };
-_createForOfIteratorHelperLoose.lastItem = { borderBottomLeftRadius: require("_createForOfIteratorHelperLoose").radii.xl, borderBottomRightRadius: require("_createForOfIteratorHelperLoose").radii.xl };
-let obj2 = { borderBottomLeftRadius: require("_createForOfIteratorHelperLoose").radii.xl, borderBottomRightRadius: require("_createForOfIteratorHelperLoose").radii.xl };
-_createForOfIteratorHelperLoose.divider = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BORDER_SUBTLE, marginLeft: 16 };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-let obj3 = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BORDER_SUBTLE, marginLeft: 16 };
+({ jsx: error, jsxs: metroImportAll } = jsxProd);
+createCacheKey = { listItemContainer: { overflow: "hidden" }, listItem: null, firstItem: null, lastItem: null, divider: null };
+createCacheKey = { backgroundColor: require("Themes").colors.CARD_BACKGROUND_DEFAULT };
+createCacheKey[1] = createCacheKey;
+createCacheKey[2] = { borderTopLeftRadius: require("Themes").radii.xl, borderTopRightRadius: require("Themes").radii.xl };
+let obj1 = { borderTopLeftRadius: require("Themes").radii.xl, borderTopRightRadius: require("Themes").radii.xl };
+createCacheKey[3] = { borderBottomLeftRadius: require("Themes").radii.xl, borderBottomRightRadius: require("Themes").radii.xl };
+let obj2 = { borderBottomLeftRadius: require("Themes").radii.xl, borderBottomRightRadius: require("Themes").radii.xl };
+createCacheKey[4] = { backgroundColor: require("Themes").colors.BORDER_SUBTLE, marginLeft: 16 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let obj3 = { backgroundColor: require("Themes").colors.BORDER_SUBTLE, marginLeft: 16 };
 const result = require("get ActivityIndicator").fileFinishedImporting("modules/app_launcher/native/options/choices/AppLauncherChoicesActionSheet.tsx");
 
 export default function AppLauncherChoicesActionSheet(option) {
@@ -49,42 +47,43 @@ export default function AppLauncherChoicesActionSheet(option) {
   let onDismiss;
   option = option.option;
   const onChoiceSelect = option.onChoiceSelect;
+  let dependencyMap;
   let first;
   let React;
   let first1;
   let closure_6;
   ({ initChoiceIndex, onDismiss } = option);
-  const tmp = _createForOfIteratorHelperLoose();
-  const dependencyMap = tmp;
-  const bottom = onChoiceSelect(1557)().bottom;
-  let obj = option(477);
+  const tmp = createCacheKey();
+  dependencyMap = tmp;
+  const bottom = onChoiceSelect(1581)().bottom;
+  let obj = option(500);
   let sum = bottom;
   if (!obj.isIOS()) {
     sum = bottom + closure_6;
   }
-  const tmp4 = first(React.useState(() => (function toChoicesWithIndex(choices) {
-    let items = choices;
-    if (null == choices) {
-      items = [];
+  const tmp6 = first(React.useState(() => {
+    let choices = option.choices;
+    if (choices == null) {
+      choices = [];
     }
-    return items.map((choice, originalIndex) => ({ choice, originalIndex }));
-  })(option.choices)), 2);
-  first = tmp4[0];
-  React = tmp4[1];
-  const tmp5 = first(React.useState(initChoiceIndex), 2);
-  first1 = tmp5[0];
-  closure_6 = tmp5[1];
+    return choices.map((choice, originalIndex) => ({ choice, originalIndex }));
+  }), 2);
+  first = tmp6[0];
+  React = tmp6[1];
+  const tmp7 = first(React.useState(initChoiceIndex), 2);
+  first1 = tmp7[0];
+  closure_6 = tmp7[1];
   let items = [option.choices];
   let items1 = [onChoiceSelect, first1, tmp, first];
   const callback = React.useCallback((query) => {
-    let obj = onChoiceSelect(tmp[10]);
-    obj = { query };
+    let obj = onChoiceSelect(_undefined[10]);
+    obj = { query, choices: null, limit: null };
     let choices = option.choices;
-    if (null == choices) {
+    if (choices == null) {
       choices = [];
     }
-    obj.choices = choices;
-    obj.limit = null;
+    obj[1] = choices;
+    callback(obj.queryChoice(obj));
   }, items);
   const items2 = [tmp.divider];
   const callback1 = React.useCallback((item) => {
@@ -94,18 +93,17 @@ export default function AppLauncherChoicesActionSheet(option) {
     if (lastItem) {
       lastItem = index === first.length - 1;
     }
-    let obj = {};
-    const items = [tmp.listItemContainer, , ];
+    const items = [_undefined.listItemContainer, , ];
     let firstItem = 0 === index;
     if (firstItem) {
-      firstItem = tmp.firstItem;
+      firstItem = tmp4.firstItem;
     }
     items[1] = firstItem;
     if (lastItem) {
-      lastItem = tmp.lastItem;
+      lastItem = tmp4.lastItem;
     }
+    obj = { style: items, children: tmp2(option(_undefined[11]).FormRadioRow, obj) };
     items[2] = lastItem;
-    obj.style = items;
     obj = {
       style: items1,
       label: item.choice.displayName,
@@ -117,49 +115,51 @@ export default function AppLauncherChoicesActionSheet(option) {
         onChoiceSelect(table[12]).hideActionSheet();
       }
     };
-    items1 = [tmp.listItem];
-    obj.children = outer1_7(option(tmp[11]).FormRadioRow, obj);
+    items1 = [_undefined.listItem];
     return outer1_7(first1, obj);
   }, items1);
-  const callback2 = React.useCallback(() => outer1_7(option(tmp[11]).FormDivider, { style: tmp.divider }), items2);
-  let tmp11 = null != option.choices;
-  if (tmp11) {
+  const callback2 = React.useCallback(() => outer1_7(option(_undefined[11]).FormDivider, { style: _undefined.divider }), items2);
+  let tmp13 = null != option.choices;
+  if (tmp13) {
     let choices = option.choices;
     let length;
-    if (null != choices) {
+    if (choices != null) {
       length = choices.length;
     }
     let num = 5;
-    if (tmp10) {
+    if (tmp12) {
       num = 10;
     }
-    tmp11 = length >= num;
+    tmp13 = length >= num;
   }
-  obj = { option, startExpanded: tmp11, onDismiss, scrollable: tmp11 };
-  let tmp14 = tmp11;
-  if (tmp11) {
-    obj = { onChange: callback };
-    tmp14 = callback(option(11320).AppLauncherListSearchBar, obj);
+  obj = { option, startExpanded: tmp13, onDismiss, scrollable: tmp13, children: null };
+  let tmp16 = tmp13;
+  if (tmp13) {
+    obj = { onChange: null };
+    obj[0] = callback;
+    tmp16 = callback(tmp3(11344).AppLauncherListSearchBar, obj);
   }
-  const items3 = [tmp14, ];
+  const items3 = [tmp16, ];
   if (0 === first.length) {
-    let tmp20 = callback(option(11320).AppLauncherListEmptyState, {});
+    let tmp20 = callback(tmp3(11344).AppLauncherListEmptyState, {});
   } else {
-    const obj1 = { scrollable: tmp11 };
-    const obj2 = { paddingBottom: sum };
-    obj1.contentContainerStyle = obj2;
-    const obj3 = { bottom: sum };
-    obj1.scrollIndicatorInsets = obj3;
-    obj1.keyExtractor = function keyExtractor(choice) {
+    const obj1 = { scrollable: null, contentContainerStyle: null, scrollIndicatorInsets: null, keyExtractor: null, data: null, renderItem: null, ItemSeparatorComponent: null, accessibilityRole: "radiogroup" };
+    obj1[0] = tmp13;
+    const obj2 = { paddingBottom: null };
+    obj2[0] = sum;
+    obj1[1] = obj2;
+    const obj3 = { bottom: null };
+    obj3[0] = sum;
+    obj1[2] = obj3;
+    obj1[3] = function keyExtractor(choice) {
       return "" + choice.choice.name + "_" + choice.originalIndex;
     };
-    obj1.data = first;
-    obj1.renderItem = callback1;
-    obj1.ItemSeparatorComponent = callback2;
-    obj1.accessibilityRole = "radiogroup";
+    obj1[4] = first;
+    obj1[5] = callback1;
+    obj1[6] = callback2;
     tmp20 = callback(FlashListWrapper, obj1);
   }
   items3[1] = tmp20;
-  obj.children = items3;
-  return closure_8(option(11319).AppLauncherCommandOptionActionSheet, obj);
+  obj[4] = items3;
+  return closure_8(option(11343).AppLauncherCommandOptionActionSheet, obj);
 };

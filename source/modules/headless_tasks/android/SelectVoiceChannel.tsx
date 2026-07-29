@@ -1,14 +1,14 @@
-// Module ID: 16740
-// Function ID: 130382
+// Module ID: 16776
+// Function ID: 16777
 // Name: promise
-// Dependencies: [1348, 4237, 16733, 4979, 4376, 4173, 2]
+// Dependencies: [1372, 4261, 16769, 5001, 4399, 4197, 2]
 
-// Module 16740 (promise)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_4 from "_isNativeReflectConstruct";
+// Module 16776 (promise)
+import ensureGuildLoaded from "ensureGuildLoaded";
+import createRTCConnection from "createRTCConnection";
 
 const require = arg1;
-let result = require("module_16733").fileFinishedImporting("modules/headless_tasks/android/SelectVoiceChannel.tsx");
+let result = require("module_16769").fileFinishedImporting("modules/headless_tasks/android/SelectVoiceChannel.tsx");
 
 export default (arg0) => {
   let importDefault;
@@ -22,13 +22,13 @@ export default (arg0) => {
         const obj = outer2_1(outer2_2[3]);
       }
       if (outer2_4.getChannelId() === callback) {
-        const channel = outer2_3.getChannel(callback);
+        const channel = outer2_3.getChannel(tmp5);
         if (null != channel) {
           const result = outer2_0(outer2_2[4]).navigateToVoiceChannel(channel);
           const obj3 = outer2_0(outer2_2[4]);
         }
       } else {
-        outer2_0(outer2_2[5]).transitionToChannel(callback);
+        outer2_0(outer2_2[5]).transitionToChannel(tmp5);
         const obj2 = outer2_0(outer2_2[5]);
       }
       callback(true);

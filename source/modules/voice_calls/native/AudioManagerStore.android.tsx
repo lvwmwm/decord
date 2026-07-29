@@ -1,154 +1,112 @@
-// Module ID: 8811
-// Function ID: 69554
-// Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 27, 653, 4226, 8812, 22, 1184, 566, 686, 2]
+// Module ID: 8835
+// Function ID: 8836
+// Name: nativeEventEmitter
+// Dependencies: [17, 676, 4250, 8836, 12, 1208, 589, 709, 2]
 
-// Module 8811 (_isNativeReflectConstruct)
-import ME from "ME";
-import DesktopSources from "DesktopSources";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
+// Module 8835 (nativeEventEmitter)
 import { RTCConnectionStates } from "ME";
 import { MediaEngineContextTypes } from "DesktopSources";
 import enforcing from "enforcing";
 import enforcing from "enforcing";
+import { Store } from "initialize";
 
-const require = arg1;
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
-  }
-  const result = _isNativeReflectConstruct();
-}
-function setActiveAudioDevice(device) {
-  let obj = importDefault(22);
-  if (obj.isString(device)) {
-    let tmpResult = tmp(1184);
-    obj = {};
-    obj = { deviceString: device };
-    obj.extra = obj;
-    tmpResult.captureMessage("AudioManagerStore received a string for an android audio device", obj);
-  } else {
-    tmpResult = tmp(8812);
-    tmpResult.setActiveAudioDevice(device);
-  }
-}
 const nativeEventEmitter = new require("get ActivityIndicator").NativeEventEmitter(require("enforcing"));
-let closure_11 = [];
+let closure_6 = [];
 enforcing = enforcing.getInvalidAndroidDevice();
 enforcing = enforcing.getInvalidAndroidDevice();
-let c14 = false;
-let tmp3 = ((Store) => {
-  class AudioManagerStore {
-    constructor() {
-      self = this;
-      tmp = outer1_3(this, AudioManagerStore);
-      obj = outer1_6(AudioManagerStore);
-      tmp2 = outer1_5;
-      if (outer1_15()) {
-        tmp6 = globalThis;
-        _Reflect = Reflect;
-        tmp7 = outer1_6;
-        tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, outer1_6(self).constructor);
-      } else {
-        tmp3 = arguments;
-        tmp4 = arguments;
-        constructResult = obj(...arguments);
-      }
-      return tmp2(self, constructResult);
-    }
-  }
-  callback2(AudioManagerStore, Store);
-  let obj = {
-    key: "initialize",
-    value() {
-      const self = this;
-      const audioDevices = outer1_1(outer1_2[8]).getAudioDevices();
-      audioDevices.then((arg0) => {
-        const outer2_11 = arg0;
-        self.emitChange();
-        outer2_10.addListener("android-audio-devices-updated", (devices) => {
-          const outer3_11 = devices.devices;
-          outer1_0.emitChange();
-        });
-      });
-      const obj = outer1_1(outer1_2[8]);
-      const activeAudioDevice = outer1_1(outer1_2[8]).getActiveAudioDevice();
-      activeAudioDevice.then((arg0) => {
-        const outer2_12 = arg0;
-        self.emitChange();
-        outer2_10.addListener("android-active-audio-device-changed", (device) => {
-          const outer3_12 = device.device;
-          outer1_0.emitChange();
-        });
-      });
-      const obj2 = outer1_1(outer1_2[8]);
-      outer1_1(outer1_2[8]).setSCORetryCount(4);
-    }
-  };
-  const items = [obj, , , ];
-  obj = {
-    key: "getAudioDevices",
-    value() {
-      return outer1_11;
-    }
-  };
-  items[1] = obj;
-  obj = {
-    key: "getActiveAudioDevice",
-    value() {
-      return outer1_12;
-    }
-  };
-  items[2] = obj;
-  items[3] = {
-    key: "getRequestedActiveAudioDevice",
-    value() {
-      return outer1_13;
-    }
-  };
-  return callback(AudioManagerStore, items);
-})(require("initialize").Store);
-tmp3.displayName = "AudioManagerStore";
-enforcing = {
+let c9 = false;
+class AudioManagerStore extends Store {
+}
+const prototype = AudioManagerStore.prototype;
+prototype["initialize"] = function initialize() {
+  const self = this;
+  const audioDevices = importDefault(8836).getAudioDevices();
+  audioDevices.then((arg0) => {
+    let outer1_6 = arg0;
+    self.emitChange();
+    outer1_5.addListener("android-audio-devices-updated", (devices) => {
+      const outer1_6 = devices.devices;
+      closure_0.emitChange();
+    });
+  });
+  const obj = importDefault(8836);
+  const activeAudioDevice = importDefault(8836).getActiveAudioDevice();
+  activeAudioDevice.then((arg0) => {
+    let outer1_7 = arg0;
+    self.emitChange();
+    outer1_5.addListener("android-active-audio-device-changed", (device) => {
+      const outer1_7 = device.device;
+      closure_0.emitChange();
+    });
+  });
+  const obj2 = importDefault(8836);
+  importDefault(8836).setSCORetryCount(4);
+};
+prototype["getAudioDevices"] = function getAudioDevices() {
+  return closure_6;
+};
+prototype["getActiveAudioDevice"] = function getActiveAudioDevice() {
+  return enforcing;
+};
+prototype["getRequestedActiveAudioDevice"] = function getRequestedActiveAudioDevice() {
+  return enforcing;
+};
+AudioManagerStore.displayName = "AudioManagerStore";
+const audioManagerStore = new AudioManagerStore(require("dispatcher"), {
   RTC_CONNECTION_STATE: function handleRTCConnectionStateUpdate(context) {
     if (context.context !== MediaEngineContextTypes.DEFAULT) {
       return false;
     } else {
       const state = context.state;
       if (RTCConnectionStates.CONNECTING === state) {
-        let c14 = true;
-        const result = importDefault(8812).setCommunicationModeOn(true);
-        let tmp10 = enforcing !== enforcing;
-        if (tmp10) {
-          tmp10 = enforcing.simpleDeviceType !== require(8812) /* enforcing */.AudioDeviceType.INVALID;
+        let c9 = true;
+        const result = importDefault(8836).setCommunicationModeOn(true);
+        let tmp8 = enforcing !== enforcing;
+        if (tmp8) {
+          tmp8 = enforcing.simpleDeviceType !== require(8836) /* enforcing */.AudioDeviceType.INVALID;
         }
-        if (tmp10) {
-          setActiveAudioDevice(enforcing);
+        if (tmp8) {
+          let tmp4Result = tmp4(12);
+          if (tmp4Result.isString(enforcing)) {
+            tmp4Result = tmp4(1208);
+            let obj = { extra: null };
+            obj = { deviceString: null };
+            obj[0] = tmp10;
+            obj[0] = obj;
+            tmp4Result.captureMessage("AudioManagerStore received a string for an android audio device", obj);
+          } else {
+            tmp4(8836).setActiveAudioDevice(tmp10);
+            const tmp4Result1 = tmp4(8836);
+          }
         }
-        const obj2 = importDefault(8812);
-      } else if (RTCConnectionStates.DISCONNECTED === state) {
+        const obj2 = importDefault(8836);
+      } else if (tmp13.DISCONNECTED === state) {
         if (!context.willReconnect) {
-          c14 = false;
-          const result1 = importDefault(8812).setCommunicationModeOn(false);
-          const obj = importDefault(8812);
+          c9 = false;
+          obj = importDefault(8836);
+          const result1 = obj.setCommunicationModeOn(false);
         }
       }
     }
   },
   NATIVE_AUDIO_SET_OUTPUT_DEVICE: function handleSetActiveAudioDevice(device) {
     device = device.device;
-    if (c14) {
-      setActiveAudioDevice(device);
+    if (c9) {
+      let obj = importDefault(12);
+      if (obj.isString(device)) {
+        let tmpResult = tmp(1208);
+        obj = { extra: null };
+        obj = { deviceString: null };
+        obj[0] = device;
+        obj[0] = obj;
+        tmpResult.captureMessage("AudioManagerStore received a string for an android audio device", obj);
+      } else {
+        tmpResult = tmp(8836);
+        tmpResult.setActiveAudioDevice(device);
+      }
     }
   }
-};
-tmp3 = new tmp3(require("dispatcher"), enforcing);
-let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/voice_calls/native/AudioManagerStore.android.tsx");
+});
+let result = require("DesktopSources").fileFinishedImporting("modules/voice_calls/native/AudioManagerStore.android.tsx");
 
-export default tmp3;
+export default audioManagerStore;

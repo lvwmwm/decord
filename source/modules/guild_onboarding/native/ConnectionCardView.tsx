@@ -1,33 +1,33 @@
-// Module ID: 5512
-// Function ID: 46916
+// Module ID: 5530
+// Function ID: 5531
 // Name: ConnectionCardView
-// Dependencies: [31, 27, 33, 4165, 689, 4161, 1212, 4126, 4578, 2]
+// Dependencies: [19, 17, 21, 4189, 712, 4185, 1236, 4150, 4600, 2]
 // Exports: default
 
-// Module 5512 (ConnectionCardView)
-import "result";
+// Module 5530 (ConnectionCardView)
+import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_2;
-let closure_3;
-let closure_4;
-let closure_5;
+let c3;
+let c4;
+let c5;
+let obj1;
 const require = arg1;
-({ View: closure_2, ActivityIndicator: closure_3 } = get_ActivityIndicator);
-({ jsx: closure_4, jsxs: closure_5 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SURFACE_HIGH, borderRadius: require("_createForOfIteratorHelperLoose").radii.md, borderWidth: 1, borderColor: require("_createForOfIteratorHelperLoose").colors.BORDER_SUBTLE, padding: require("_createForOfIteratorHelperLoose").space.PX_16, marginBottom: require("_createForOfIteratorHelperLoose").space.PX_12, flexDirection: "row", alignItems: "center", justifyContent: "space-between" };
-_createForOfIteratorHelperLoose.card = _createForOfIteratorHelperLoose;
-let obj1 = { flexDirection: "row", alignItems: "center", flex: 1, marginRight: require("_createForOfIteratorHelperLoose").space.PX_12 };
-_createForOfIteratorHelperLoose.leftContent = obj1;
-let obj2 = { width: 32, height: 32, marginRight: require("_createForOfIteratorHelperLoose").space.PX_12, justifyContent: "center", alignItems: "center" };
-_createForOfIteratorHelperLoose.icon = obj2;
-_createForOfIteratorHelperLoose.textContent = { flex: 1 };
-let obj3 = { flexDirection: "row", alignItems: "center", gap: require("_createForOfIteratorHelperLoose").space.PX_8 };
-_createForOfIteratorHelperLoose.connectedStatus = obj3;
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+({ View: obj1, ActivityIndicator: c3 } = get_ActivityIndicator);
+({ jsx: c4, jsxs: c5 } = jsxProd);
+createCacheKey = { card: null, leftContent: null, icon: null, textContent: null, connectedStatus: null };
+createCacheKey = { backgroundColor: require("Themes").colors.BACKGROUND_SURFACE_HIGH, borderRadius: require("Themes").radii.md, borderWidth: 1, borderColor: require("Themes").colors.BORDER_SUBTLE, padding: require("Themes").space.PX_16, marginBottom: require("Themes").space.PX_12, flexDirection: "row", alignItems: "center", justifyContent: "space-between" };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { flexDirection: "row", alignItems: "center", flex: 1, marginRight: require("Themes").space.PX_12 };
+obj1 = { flexDirection: "row", alignItems: "center", flex: 1, marginRight: require("Themes").space.PX_12 };
+createCacheKey[2] = { width: 32, height: 32, marginRight: require("Themes").space.PX_12, justifyContent: "center", alignItems: "center" };
+createCacheKey[3] = { flex: 1 };
+let obj2 = { width: 32, height: 32, marginRight: require("Themes").space.PX_12, justifyContent: "center", alignItems: "center" };
+createCacheKey[4] = { flexDirection: "row", alignItems: "center", gap: require("Themes").space.PX_8 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let obj3 = { flexDirection: "row", alignItems: "center", gap: require("Themes").space.PX_8 };
 const result = require("jsxProd").fileFinishedImporting("modules/guild_onboarding/native/ConnectionCardView.tsx");
 
 export default function ConnectionCardView(description) {
@@ -39,46 +39,47 @@ export default function ConnectionCardView(description) {
   let onConnect;
   description = description.description;
   ({ displayName, icon, isLoading, isConnected, canConnect, onConnect } = description);
-  const tmp = _createForOfIteratorHelperLoose();
-  let obj = { style: tmp.card };
-  obj = { style: tmp.leftContent };
+  const tmp = createCacheKey();
+  let obj = { style: tmp.card, children: null };
+  obj = { style: tmp.leftContent, children: null };
   obj = { style: tmp.icon, children: icon };
   const items = [callback(closure_2, obj), ];
-  const obj1 = { style: tmp.textContent };
-  const obj2 = { variant: "text-md/medium", color: "text-strong", children: displayName };
-  const items1 = [callback(require(4161) /* Text */.Text, obj2), ];
-  let tmp4 = null != description;
-  if (tmp4) {
-    tmp4 = description.length > 0;
+  const obj1 = { style: tmp.textContent, children: null };
+  const items1 = [callback(require(4185) /* Text */.Text, { variant: "text-md/medium", color: "text-strong", children: displayName }), ];
+  let tmp4Result = null != description;
+  if (tmp4Result) {
+    tmp4Result = description.length > 0;
   }
-  if (tmp4) {
-    const obj3 = { variant: "text-sm/normal", color: "text-subtle", children: description };
-    tmp4 = callback(require(4161) /* Text */.Text, obj3);
+  if (tmp4Result) {
+    const obj2 = { variant: "text-sm/normal", color: "text-subtle", children: null };
+    obj2[2] = description;
+    tmp4Result = tmp4(tmp5(4185).Text, obj2);
   }
-  items1[1] = tmp4;
-  obj1.children = items1;
-  items[1] = callback2(closure_2, obj1);
-  obj.children = items;
-  const items2 = [callback2(closure_2, obj), ];
+  items1[1] = tmp4Result;
+  obj1[1] = items1;
+  items[1] = closure_5(closure_2, obj1);
+  obj[1] = items;
+  const items2 = [closure_5(closure_2, obj), ];
   if (isLoading) {
-    const obj4 = { size: "small" };
-    let tmp11 = callback(closure_3, obj4);
+    tmp4Result = tmp4(closure_3, { size: "small" });
   } else if (isConnected) {
-    const obj5 = { style: tmp.connectedStatus };
-    const obj6 = { variant: "text-sm/medium", color: "text-feedback-positive" };
-    const intl2 = require(1212) /* getSystemLocale */.intl;
-    obj6.children = intl2.string(require(1212) /* getSystemLocale */.t["LV+CXH"]);
-    const items3 = [callback(require(4161) /* Text */.Text, obj6), callback(require(4126) /* CircleCheckIcon */.CircleCheckIcon, { size: "sm", color: "status-positive" })];
-    obj5.children = items3;
-    tmp11 = callback2(closure_2, obj5);
+    const obj3 = { style: null, children: null };
+    obj3[0] = tmp.connectedStatus;
+    const obj4 = { variant: "text-sm/medium", color: "text-feedback-positive", children: null };
+    const intl2 = tmp5(1236).intl;
+    obj4[2] = intl2.string(tmp5(1236).t["LV+CXH"]);
+    const items3 = [tmp4(tmp5(4185).Text, obj4), tmp4(tmp5(4150).CircleCheckIcon, { size: "sm", color: "status-positive" })];
+    obj3[1] = items3;
+    tmp4Result = tmp2(tmp3, obj3);
   } else {
-    const obj7 = { variant: "primary", size: "sm", onPress: onConnect };
-    const intl = require(1212) /* getSystemLocale */.intl;
-    obj7.text = intl.string(require(1212) /* getSystemLocale */.t.S0W8Z5);
-    obj7.disabled = !canConnect;
-    tmp11 = callback(require(4578) /* Button */.Button, obj7);
+    const obj5 = { variant: "primary", size: "sm", onPress: null, text: null, disabled: null };
+    obj5[2] = onConnect;
+    const intl = tmp5(1236).intl;
+    obj5[3] = intl.string(tmp5(1236).t.S0W8Z5);
+    obj5[4] = !canConnect;
+    tmp4Result = tmp4(tmp5(4600).Button, obj5);
   }
-  items2[1] = tmp11;
-  obj.children = items2;
-  return callback2(closure_2, obj);
+  items2[1] = tmp4Result;
+  obj[1] = items2;
+  return closure_5(closure_2, obj);
 };

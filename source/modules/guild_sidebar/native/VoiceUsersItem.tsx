@@ -1,32 +1,29 @@
-// Module ID: 15081
-// Function ID: 114786
+// Module ID: 15114
+// Function ID: 15115
 // Name: VoiceUsersItem
-// Dependencies: [31, 27, 33, 4165, 2]
+// Dependencies: [19, 17, 21, 4189, 2]
 // Exports: default
 
-// Module 15081 (VoiceUsersItem)
-import "result";
+// Module 15114 (VoiceUsersItem)
+import "noop";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_2 = _createForOfIteratorHelperLoose.createStyles({ voiceStates: { paddingRight: 8 }, voiceStatesCollapsed: { paddingRight: 0, flexDirection: "row", flexWrap: "wrap", alignItems: "center" } });
+let closure_2 = createCacheKey.createStyles({ voiceStates: { paddingRight: 8 }, voiceStatesCollapsed: { paddingRight: 0, flexDirection: "row", flexWrap: "wrap", alignItems: "center" } });
 const result = require("jsxProd").fileFinishedImporting("modules/guild_sidebar/native/VoiceUsersItem.tsx");
 
-export default function VoiceUsersItem(collapsed) {
-  let voiceStatesCollapsed = collapsed.collapsed;
+export default function VoiceUsersItem(children) {
+  let voiceStatesCollapsed = children.collapsed;
   const tmp = callback();
-  const obj = {};
   let voiceStates = !voiceStatesCollapsed;
-  if (voiceStates) {
+  if (!voiceStatesCollapsed) {
     voiceStates = tmp.voiceStates;
   }
-  const items = [voiceStates, ];
+  const style = [voiceStates, ];
   if (voiceStatesCollapsed) {
     voiceStatesCollapsed = tmp.voiceStatesCollapsed;
   }
-  items[1] = voiceStatesCollapsed;
-  obj.style = items;
-  obj.children = collapsed.children;
-  return <View />;
+  style[1] = voiceStatesCollapsed;
+  return <View style={style}>{arg0.children}</View>;
 };

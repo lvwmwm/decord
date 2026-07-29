@@ -1,10 +1,10 @@
 // Module ID: 401
-// Function ID: 5789
-// Dependencies: [31, 380, 112]
+// Function ID: 402
+// Dependencies: [19, 387, 328]
 
 // Module 401
-import "result";
-import unstable_createAnimatedComponentWithAllowlist from "unstable_createAnimatedComponentWithAllowlist";
+import "noop";
+import createAnimatedComponent from "createAnimatedComponent";
 
 
-export default unstable_createAnimatedComponentWithAllowlist(require("View"));
+export default createAnimatedComponent(require("_queryCache"));

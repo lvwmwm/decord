@@ -1,21 +1,95 @@
-// Module ID: 9041
-// Function ID: 71023
-// Name: getUserVoiceState
-// Dependencies: [1348, 3793, 4181, 482, 566, 2]
-// Exports: canViewUserVoiceChannel, default
+// Module ID: 9065
+// Function ID: 9066
+// Name: getVisibleUserVoiceActivity
+// Dependencies: [1372, 3817, 4205, 505, 589, 2]
+// Exports: canViewUserVoiceChannel, default, getUserVoiceState
 
-// Module 9041 (getUserVoiceState)
-import importDefaultResult from "_isNativeReflectConstruct";
-import importDefaultResult1 from "_isNativeReflectConstruct";
-import importDefaultResult2 from "_isNativeReflectConstruct";
+// Module 9065 (getVisibleUserVoiceActivity)
+import importDefaultResult from "ensureGuildLoaded";
+import importDefaultResult1 from "getUncachedChannelPermissions";
+import importDefaultResult2 from "updateVoiceState";
 import { Permissions } from "sum";
 
 const require = arg1;
-function getUserVoiceState(arg0, arg1) {
+function getVisibleUserVoiceActivity(arg0) {
   let guildId;
   let userId;
-  let tmp = arg1;
   ({ userId, guildId } = arg0);
+  let tmp = arg1;
+  if (arg1 === undefined) {
+    tmp = closure_6;
+  }
+  let tmp3 = tmp;
+  if (tmp === undefined) {
+    tmp3 = closure_6;
+  }
+  if (null != guildId) {
+    if (null != userId) {
+      const VoiceStateStore2 = tmp3.VoiceStateStore;
+      let discoverableVoiceState = VoiceStateStore2.getDiscoverableVoiceState(guildId, userId);
+    }
+    let tmp5 = tmp;
+    if (!tmp2) {
+      tmp5 = closure_6;
+    }
+    let channelId;
+    if (discoverableVoiceState != null) {
+      channelId = discoverableVoiceState.channelId;
+    }
+    if (null != channelId) {
+      const ChannelStore = tmp5.ChannelStore;
+      const channel = ChannelStore.getChannel(discoverableVoiceState.channelId);
+    }
+    if (!tmp2) {
+      tmp = closure_6;
+    }
+    let tmp7 = null != discoverableVoiceState;
+    if (tmp7) {
+      let isPrivateResult;
+      if (channel != null) {
+        isPrivateResult = channel.isPrivate();
+      }
+      if (!isPrivateResult) {
+        const PermissionStore = tmp.PermissionStore;
+        isPrivateResult = PermissionStore.can(Permissions.VIEW_CHANNEL, channel);
+      }
+      tmp7 = isPrivateResult;
+    }
+    if (tmp7) {
+      const obj = { voiceState: null, voiceChannel: null };
+      obj[0] = discoverableVoiceState;
+      obj[1] = channel;
+      let tmp10 = obj;
+    } else {
+      tmp10 = closure_7;
+    }
+    return tmp10;
+  }
+  if (null != userId) {
+    const VoiceStateStore = tmp3.VoiceStateStore;
+    discoverableVoiceState = VoiceStateStore.getDiscoverableVoiceStateForUser(userId);
+  }
+}
+let closure_6 = { ChannelStore: importDefaultResult, PermissionStore: importDefaultResult1, VoiceStateStore: importDefaultResult2 };
+let closure_7 = Object.freeze({ voiceState: "dispatch", voiceChannel: "isArray" });
+const result = require("updateVoiceState").fileFinishedImporting("modules/activity_status/useUserVoiceActivity.tsx");
+
+export default function useUserVoiceActivity(userId) {
+  userId = userId.userId;
+  const guildId = userId.guildId;
+  const items = [closure_2, importDefaultResult1, importDefaultResult2];
+  const items1 = [guildId, userId];
+  return userId(guildId[4]).useStateFromStoresObject(items, () => {
+    let obj = { userId, guildId };
+    obj = { ChannelStore: outer1_2, PermissionStore: outer1_3, VoiceStateStore: outer1_4 };
+    return outer1_8(obj, obj);
+  }, items1);
+};
+export const getUserVoiceState = function getUserVoiceState(arg0) {
+  let guildId;
+  let userId;
+  ({ userId, guildId } = arg0);
+  let tmp = arg1;
   if (arg1 === undefined) {
     tmp = closure_6;
   }
@@ -30,86 +104,56 @@ function getUserVoiceState(arg0, arg1) {
     const VoiceStateStore = tmp.VoiceStateStore;
     discoverableVoiceState = VoiceStateStore.getDiscoverableVoiceStateForUser(userId);
   }
-}
-function getUserVoiceChannel(voiceState, arg1) {
-  let tmp = arg1;
-  voiceState = voiceState.voiceState;
-  if (arg1 === undefined) {
-    tmp = closure_6;
-  }
-  let channelId;
-  if (null != voiceState) {
-    channelId = voiceState.channelId;
-  }
-  if (null != channelId) {
-    const ChannelStore = tmp.ChannelStore;
-    return ChannelStore.getChannel(voiceState.channelId);
-  }
-}
-function canViewVoiceChannel(voiceChannel, arg1) {
-  let tmp = arg1;
-  voiceChannel = voiceChannel.voiceChannel;
-  if (arg1 === undefined) {
-    tmp = closure_6;
-  }
-  let tmp2 = null != voiceChannel.voiceState;
-  if (tmp2) {
-    let isPrivateResult;
-    if (null != voiceChannel) {
-      isPrivateResult = voiceChannel.isPrivate();
-    }
-    if (!isPrivateResult) {
-      const PermissionStore = tmp.PermissionStore;
-      isPrivateResult = PermissionStore.can(Permissions.VIEW_CHANNEL, voiceChannel);
-    }
-    tmp2 = isPrivateResult;
-  }
-  return tmp2;
-}
-function getVisibleUserVoiceActivity(arg0) {
-  let guildId;
-  let userId;
-  let tmp = arg1;
-  ({ userId, guildId } = arg0);
-  if (arg1 === undefined) {
-    tmp = closure_6;
-  }
-  const voiceState = getUserVoiceState({ userId, guildId }, tmp);
-  const voiceChannel = getUserVoiceChannel({ voiceState }, tmp);
-  if (canViewVoiceChannel({ voiceState, voiceChannel }, tmp)) {
-    const obj = { voiceState, voiceChannel };
-    let tmp4 = obj;
-  } else {
-    tmp4 = closure_7;
-  }
-  return tmp4;
-}
-let closure_6 = { ChannelStore: importDefaultResult, PermissionStore: importDefaultResult1, VoiceStateStore: importDefaultResult2 };
-let closure_7 = Object.freeze({ voiceState: undefined, voiceChannel: undefined });
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/activity_status/useUserVoiceActivity.tsx");
-
-export default function useUserVoiceActivity(userId) {
-  userId = userId.userId;
-  const guildId = userId.guildId;
-  const items = [closure_2, importDefaultResult1, importDefaultResult2];
-  const items1 = [guildId, userId];
-  return userId(guildId[4]).useStateFromStoresObject(items, () => {
-    let obj = { userId, guildId };
-    obj = { ChannelStore: outer1_2, PermissionStore: outer1_3, VoiceStateStore: outer1_4 };
-    return outer1_11(obj, obj);
-  }, items1);
 };
-export { getUserVoiceState };
 export const canViewUserVoiceChannel = function canViewUserVoiceChannel(arg0) {
   let guildId;
   let userId;
-  let tmp = arg1;
   ({ userId, guildId } = arg0);
+  let tmp = arg1;
   if (arg1 === undefined) {
     tmp = closure_6;
   }
-  const tmp2 = getUserVoiceState({ userId, guildId }, tmp);
-  const obj = { voiceState: tmp2, voiceChannel: getUserVoiceChannel({ voiceState: tmp2 }, tmp) };
-  return canViewVoiceChannel(obj, tmp);
+  let tmp3 = tmp;
+  if (tmp === undefined) {
+    tmp3 = closure_6;
+  }
+  if (null != guildId) {
+    if (null != userId) {
+      const VoiceStateStore2 = tmp3.VoiceStateStore;
+      let discoverableVoiceState = VoiceStateStore2.getDiscoverableVoiceState(guildId, userId);
+    }
+    let tmp5 = tmp;
+    if (!tmp2) {
+      tmp5 = closure_6;
+    }
+    let channelId;
+    if (discoverableVoiceState != null) {
+      channelId = discoverableVoiceState.channelId;
+    }
+    if (null != channelId) {
+      const ChannelStore = tmp5.ChannelStore;
+      const channel = ChannelStore.getChannel(discoverableVoiceState.channelId);
+    }
+    if (!tmp2) {
+      tmp = closure_6;
+    }
+    let tmp7 = null != discoverableVoiceState;
+    if (tmp7) {
+      let isPrivateResult;
+      if (channel != null) {
+        isPrivateResult = channel.isPrivate();
+      }
+      if (!isPrivateResult) {
+        const PermissionStore = tmp.PermissionStore;
+        isPrivateResult = PermissionStore.can(Permissions.VIEW_CHANNEL, channel);
+      }
+      tmp7 = isPrivateResult;
+    }
+    return tmp7;
+  }
+  if (null != userId) {
+    const VoiceStateStore = tmp3.VoiceStateStore;
+    discoverableVoiceState = VoiceStateStore.getDiscoverableVoiceStateForUser(userId);
+  }
 };
 export { getVisibleUserVoiceActivity };

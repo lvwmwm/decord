@@ -1,146 +1,42 @@
-// Module ID: 6035
-// Function ID: 53530
-// Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 6036, 1850, 21, 4386, 566, 686, 2]
+// Module ID: 6053
+// Function ID: 6054
+// Name: handleLoadThreadsSuccess
+// Dependencies: [6054, 1874, 11, 4409, 589, 709, 2]
 
-// Module 6035 (_isNativeReflectConstruct)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import DISCORD_EPOCH from "DISCORD_EPOCH";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
-import closure_8 from "_isNativeReflectConstruct";
-import closure_9 from "_isNativeReflectConstruct";
+// Module 6053 (handleLoadThreadsSuccess)
+import handleConnectionOpenOrResumed from "handleConnectionOpenOrResumed";
+import mergeGuildAvatar from "mergeGuildAvatar";
+import { Store } from "initialize";
 
 const require = arg1;
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
-  }
-  const result = _isNativeReflectConstruct();
-}
-function _createForOfIteratorHelperLoose(iterable) {
-  let closure_0 = iterable;
-  iterable = "undefined" !== typeof Symbol;
-  if (iterable) {
-    const _Symbol = Symbol;
-    iterable = iterable[Symbol.iterator];
-  }
-  if (!iterable) {
-    iterable = iterable[Symbol.iterator];
-  }
-  if (iterable) {
-    const iter = iterable.call(iterable);
-    const next = iter.next;
-    return next.bind(iter);
-  } else {
-    const _Array = Array;
-    let tmp = iterable;
-    if (!Array.isArray(iterable)) {
-      let tmp2;
-      if (iterable) {
-        if ("string" === typeof iterable) {
-          tmp2 = _arrayLikeToArray(iterable, undefined);
-        } else {
-          const toString = {}.toString;
-          const substr = toString.call(iterable).slice(8, -1);
-          let name = substr;
-          if (tmp3) {
-            name = iterable.constructor.name;
-          }
-          if ("Map" !== name) {
-            if ("Set" !== name) {
-              if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(iterable, undefined);
-              } else {
-                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
-              }
-            }
-            tmp2 = arr;
-          }
-          const _Array2 = Array;
-          arr = Array.from(iterable);
-          const callResult = toString.call(iterable);
-          tmp3 = "Object" === substr && iterable.constructor;
-        }
-      }
-      tmp = tmp2;
-      if (!tmp2) {
-        const _TypeError = TypeError;
-        const typeError = new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
-        throw typeError;
-      }
-    }
-    if (tmp) {
-      closure_0 = tmp;
-    }
-    let c1 = 0;
-    return () => {
-      if (closure_1 >= length.length) {
-        let obj = { done: true };
-      } else {
-        obj = { done: false };
-        closure_1 = tmp3 + 1;
-        obj.value = length[+closure_1];
-      }
-      return obj;
-    };
-  }
-}
-function _arrayLikeToArray(arg0, arg1) {
-  let length;
-  if (tmp) {
-    length = arg0.length;
-  }
-  const ArrayResult = Array(length);
-  for (let num = 0; num < length; num = num + 1) {
-    ArrayResult[num] = arg0[num];
-  }
-  return ArrayResult;
-}
-function handleLoadThreadsSuccess(firstMessages) {
-  let done;
-  let done2;
-  firstMessages = firstMessages.firstMessages;
+function handleLoadThreadsSuccess(arg0) {
+  let firstMessages;
+  let threads;
+  ({ threads, firstMessages } = arg0);
   if (null == firstMessages) {
     return false;
   } else {
-    const tmp8 = _createForOfIteratorHelperLoose(tmp);
-    let iter2 = tmp8();
-    if (!iter2.done) {
-      do {
-        let tmp2 = closure_10;
-        closure_10[iter2.value.id] = { loaded: true, firstMessage: null };
-        let iter = tmp8();
-        iter2 = iter;
-        done = iter.done;
-      } while (!done);
+    for (const item10008 of threads) {
+      let tmp3 = closure_5;
+      closure_5[item10008.id] = { loaded: true, firstMessage: null };
+      continue;
     }
-    const tmp4 = _createForOfIteratorHelperLoose(firstMessages);
-    let iter3 = tmp4();
-    if (!iter3.done) {
-      do {
-        let value = iter3.value;
-        let tmp5 = storeFirstMessage;
-        let tmp6 = storeFirstMessage(value.channel_id, value);
-        let iter4 = tmp4();
-        iter3 = iter4;
-        done2 = iter4.done;
-      } while (!done2);
+    const iter = firstMessages[Symbol.iterator]();
+    const nextResult = iter.next();
+    while (iter !== undefined) {
+      let tmp8 = storeFirstMessage;
+      let tmp9 = storeFirstMessage(nextResult.channel_id, nextResult);
+      continue;
     }
   }
 }
-function storeFirstMessage(channel_id, first_message) {
+function storeFirstMessage(channel_id, nextResult) {
   let messageRecord = null;
-  if (null != first_message) {
-    let obj = require(4386) /* createMinimalMessageRecord */;
-    messageRecord = obj.createMessageRecord(first_message);
+  if (null != nextResult) {
+    messageRecord = require(4409) /* createMinimalMessageRecord */.createMessageRecord(nextResult);
+    const obj = require(4409) /* createMinimalMessageRecord */;
   }
-  obj = { loaded: true, firstMessage: messageRecord };
-  closure_10[channel_id] = obj;
+  closure_5[channel_id] = { loaded: true, firstMessage: messageRecord };
 }
 function handleReaction(colors) {
   let channelId;
@@ -174,73 +70,49 @@ function handleReaction(colors) {
   }
   return false;
 }
-let closure_10 = {};
-let tmp2 = ((Store) => {
-  class ForumPostMessagesStore {
-    constructor() {
-      self = this;
-      tmp = outer1_3(this, ForumPostMessagesStore);
-      obj = outer1_6(ForumPostMessagesStore);
-      tmp2 = outer1_5;
-      if (outer1_11()) {
-        tmp6 = globalThis;
-        _Reflect = Reflect;
-        tmp7 = outer1_6;
-        tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, outer1_6(self).constructor);
-      } else {
-        tmp3 = arguments;
-        tmp4 = arguments;
-        constructResult = obj(...arguments);
-      }
-      return tmp2(self, constructResult);
-    }
+let closure_5 = {};
+class ForumPostMessagesStore extends Store {
+}
+const prototype = ForumPostMessagesStore.prototype;
+prototype["initialize"] = function initialize() {
+  this.waitFor(handleConnectionOpenOrResumed, mergeGuildAvatar);
+};
+prototype["isLoading"] = function isLoading(arg0) {
+  let loaded;
+  if (dependencyMap[arg0] != null) {
+    loaded = tmp.loaded;
   }
-  callback2(ForumPostMessagesStore, Store);
-  let obj = {
-    key: "initialize",
-    value() {
-      this.waitFor(outer1_8, outer1_9);
-    }
-  };
-  const items = [obj, , ];
-  obj = {
-    key: "isLoading",
-    value(arg0) {
-      let loaded;
-      if (null != outer1_10[arg0]) {
-        loaded = tmp.loaded;
-      }
-      return true !== loaded;
-    }
-  };
-  items[1] = obj;
-  obj = {
-    key: "getMessage",
-    value(arg0) {
-      if (!(arg0 in outer1_10)) {
-        outer1_10[arg0] = { loaded: false, firstMessage: null };
-      }
-      return outer1_10[arg0];
-    }
-  };
-  items[2] = obj;
-  return callback(ForumPostMessagesStore, items);
-})(require("initialize").Store);
-tmp2.displayName = "ForumPostMessagesStore";
-tmp2 = new tmp2(require("dispatcher"), {
+  return true !== loaded;
+};
+prototype["getMessage"] = function getMessage(arg0) {
+  if (!(arg0 in dependencyMap)) {
+    dependencyMap[arg0] = { loaded: false, firstMessage: null };
+  }
+  return dependencyMap[arg0];
+};
+ForumPostMessagesStore.displayName = "ForumPostMessagesStore";
+const forumPostMessagesStore = new ForumPostMessagesStore(require("dispatcher"), {
   CONNECTION_OPEN: function handleConnectionOpen() {
-    let closure_10 = {};
+    let closure_5 = {};
   },
   MESSAGE_CREATE: function handleMessageCreate(isPushNotification) {
-    let tmp = !isPushNotification.isPushNotification;
-    if (tmp) {
-      const tmp4 = isPushNotification.message.id === importDefault(21).castChannelIdAsMessageId(isPushNotification.message.channel_id);
+    isPushNotification = isPushNotification.isPushNotification;
+    let tmp = !isPushNotification;
+    if (!isPushNotification) {
+      let obj = importDefault(11);
+      const tmp4 = isPushNotification.message.id === obj.castChannelIdAsMessageId(isPushNotification.message.channel_id);
       if (tmp4) {
-        storeFirstMessage(isPushNotification.message.channel_id, isPushNotification.message);
+        const message = isPushNotification.message;
+        let messageRecord = null;
+        if (null != message) {
+          messageRecord = require(4409) /* createMinimalMessageRecord */.createMessageRecord(message);
+          const obj2 = require(4409) /* createMinimalMessageRecord */;
+        }
+        obj = { loaded: true, firstMessage: null };
+        obj[1] = messageRecord;
+        closure_5[isPushNotification.message.channel_id] = obj;
       }
       tmp = tmp4;
-      const obj = importDefault(21);
     }
     return tmp;
   },
@@ -248,41 +120,40 @@ tmp2 = new tmp2(require("dispatcher"), {
     if (message.message.id !== message.message.channel_id) {
       return false;
     } else {
-      const obj4 = importDefault(21);
-      const tmp14 = dependencyMap[obj4.castMessageIdAsChannelId(obj4, message.message.id)];
-      let tmp10 = null != tmp14;
-      if (tmp10) {
-        if (null != tmp14.firstMessage) {
-          let obj = importDefault(21);
-          obj = {};
-          const result = obj.castMessageIdAsChannelId(message.message.id);
-          const merged = Object.assign(tmp14);
-          obj["firstMessage"] = require(4386) /* createMinimalMessageRecord */.updateMessageRecord(tmp14.firstMessage, message.message);
+      const obj4 = importDefault(11);
+      const tmp12 = dependencyMap[obj4.castMessageIdAsChannelId(obj4, message.message.id)];
+      let tmp8 = null != tmp12;
+      if (tmp8) {
+        if (null != tmp12.firstMessage) {
+          const obj = {};
+          const result = importDefault(11).castMessageIdAsChannelId(message.message.id);
+          const merged = Object.assign(tmp12);
+          const tmp10Result = importDefault(11);
+          obj.firstMessage = require(4409) /* createMinimalMessageRecord */.updateMessageRecord(tmp12.firstMessage, message.message);
           dependencyMap[result] = obj;
-          const obj3 = require(4386) /* createMinimalMessageRecord */;
+          const obj3 = require(4409) /* createMinimalMessageRecord */;
         }
-        tmp10 = tmp;
+        tmp8 = tmp;
       }
-      return tmp10;
+      return tmp8;
     }
   },
   MESSAGE_DELETE: function handleMessageDelete(id) {
     if (id.id !== obj.castChannelIdAsMessageId(id.channelId)) {
       return false;
     } else {
-      closure_10[id.channelId] = { loaded: true, firstMessage: null };
+      closure_5[id.channelId] = { loaded: true, firstMessage: null };
     }
-    obj = importDefault(21);
+    obj = importDefault(11);
   },
   THREAD_CREATE: function handleThreadCreate(channel) {
     let tmp = null == dependencyMap[channel.channel.id];
     if (tmp) {
-      const tmp3 = !subscribedToThreads.isSubscribedToThreads(channel.channel.guild_id);
-      if (!tmp3) {
+      const result = subscribedToThreads.isSubscribedToThreads(channel.channel.guild_id);
+      if (result) {
         dependencyMap[channel.channel.id] = { loaded: true, firstMessage: null };
       }
-      tmp = !tmp3;
-      const tmp4 = !tmp3;
+      tmp = result;
     }
     return tmp;
   },
@@ -299,7 +170,7 @@ tmp2 = new tmp2(require("dispatcher"), {
         const obj = {};
         const merged = Object.assign(tmp);
         const firstMessage = tmp.firstMessage;
-        obj["firstMessage"] = firstMessage.set("reactions", []);
+        obj.firstMessage = firstMessage.set("reactions", []);
         dependencyMap[channelId] = obj;
       }
       tmp2 = tmp3;
@@ -320,7 +191,7 @@ tmp2 = new tmp2(require("dispatcher"), {
         const obj = {};
         const merged = Object.assign(tmp);
         const firstMessage = tmp.firstMessage;
-        obj["firstMessage"] = firstMessage.removeReactionsForEmoji(emoji);
+        obj.firstMessage = firstMessage.removeReactionsForEmoji(emoji);
         dependencyMap[channelId] = obj;
       }
       tmp2 = tmp3;
@@ -337,12 +208,12 @@ tmp2 = new tmp2(require("dispatcher"), {
           const currentUser = authStore.getCurrentUser();
           const firstMessage = tmp3.firstMessage;
           let id;
-          if (null != currentUser) {
+          if (currentUser != null) {
             id = currentUser.id;
           }
           const obj = {};
           const merged = Object.assign(tmp3);
-          obj["firstMessage"] = firstMessage.addReactionBatch(tmp2, id);
+          obj.firstMessage = firstMessage.addReactionBatch(tmp2, id);
           dependencyMap[channelId] = obj;
         }
       }
@@ -351,10 +222,20 @@ tmp2 = new tmp2(require("dispatcher"), {
   },
   LOAD_FORUM_POSTS: function handlePostChannelLoadData(threads) {
     threads = threads.threads;
-    for (const key10005 in threads) {
-      let tmp = key10005;
-      let tmp2 = storeFirstMessage;
-      let tmp3 = storeFirstMessage(key10005, threads[key10005].first_message);
+    for (const key10006 in threads) {
+      let tmp5 = key10006;
+      let first_message = threads[key10006].first_message;
+      let messageRecord = null;
+      if (null != first_message) {
+        let tmp = require;
+        let tmp2 = dependencyMap;
+        let obj = require(4409) /* createMinimalMessageRecord */;
+        messageRecord = obj.createMessageRecord(first_message);
+      }
+      let tmp4 = closure_5;
+      obj = { loaded: true, firstMessage: null };
+      obj[1] = messageRecord;
+      closure_5[key10006] = obj;
       continue;
     }
   },
@@ -366,16 +247,17 @@ tmp2 = new tmp2(require("dispatcher"), {
     ({ channelId, messages } = arg0);
     let tmp2 = null != tmp;
     if (tmp2) {
-      let obj = importDefault(21);
+      let obj = importDefault(11);
       tmp2 = tmp.id === obj.castChannelIdAsMessageId(channelId);
     }
     if (tmp2) {
-      obj = { loaded: true, firstMessage: require(4386) /* createMinimalMessageRecord */.createMessageRecord(tmp) };
-      closure_10[channelId] = obj;
-      const obj3 = require(4386) /* createMinimalMessageRecord */;
+      obj = { loaded: true, firstMessage: null };
+      obj[1] = require(4409) /* createMinimalMessageRecord */.createMessageRecord(tmp);
+      closure_5[channelId] = obj;
+      const obj3 = require(4409) /* createMinimalMessageRecord */;
     }
   }
 });
-let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/forums/ForumPostMessagesStore.tsx");
+let result = require("DISCORD_EPOCH").fileFinishedImporting("modules/forums/ForumPostMessagesStore.tsx");
 
-export default tmp2;
+export default forumPostMessagesStore;

@@ -1,12 +1,12 @@
-// Module ID: 10392
-// Function ID: 80083
+// Module ID: 10416
+// Function ID: 10417
 // Name: isSelectedFromHomeChannel
-// Dependencies: [5856, 1907, 1355, 4017, 4016, 2]
+// Dependencies: [5874, 1931, 1379, 4041, 4040, 2]
 // Exports: default
 
-// Module 10392 (isSelectedFromHomeChannel)
-import "_isNativeReflectConstruct";
-import "_isNativeReflectConstruct";
+// Module 10416 (isSelectedFromHomeChannel)
+import "handlePermissionsChange";
+import "handleConnectionOpen";
 import { isGuildHomeChannel } from "set";
 
 const require = arg1;
@@ -14,14 +14,14 @@ const result = require("set").fileFinishedImporting("modules/guild_onboarding_ho
 
 export default function isSelectedFromHomeChannel(id) {
   let coerceChannelRouteResult1;
-  const rootNavigationRef = require(4017) /* getRootNavigationRef */.getRootNavigationRef();
+  const rootNavigationRef = require(4041) /* getRootNavigationRef */.getRootNavigationRef();
   if (null != rootNavigationRef) {
     if (rootNavigationRef.isReady()) {
       const rootState = rootNavigationRef.getRootState();
       if (null == rootState) {
         return false;
       } else {
-        const coerceMainRouteResult = require(4016) /* _createForOfIteratorHelperLoose */.coerceMainRoute(rootState.routes[rootState.index]);
+        const coerceMainRouteResult = require(4040) /* navigationToRootTabHelper */.coerceMainRoute(rootState.routes[rootState.index]);
         if (null == coerceMainRouteResult) {
           return false;
         } else {
@@ -32,25 +32,17 @@ export default function isSelectedFromHomeChannel(id) {
             let index = state.index;
             if (index >= 0) {
               while (true) {
-                let tmp2 = state.routes[index];
-                let tmp3 = tmp13;
-                if (null != tmp2) {
-                  let tmp4 = require;
-                  let tmp5 = dependencyMap;
-                  let obj3 = require(4016) /* _createForOfIteratorHelperLoose */;
-                  let coerceChannelRouteResult = obj3.coerceChannelRoute(tmp2);
-                  let tmp7 = coerceChannelRouteResult;
-                  tmp3 = tmp13;
+                let tmp4 = state.routes[index];
+                let tmp5 = index;
+                if (null != tmp4) {
+                  let tmp6 = require;
+                  let tmp7 = dependencyMap;
+                  let obj3 = require(4040) /* navigationToRootTabHelper */;
+                  let coerceChannelRouteResult = obj3.coerceChannelRoute(tmp4);
                   if (null != coerceChannelRouteResult) {
-                    let tmp8 = coerceChannelRouteResult;
-                    tmp3 = tmp13;
                     if (coerceChannelRouteResult.params.channelId === id.id) {
-                      let tmp9 = require;
-                      let tmp10 = dependencyMap;
-                      let obj4 = require(4016) /* _createForOfIteratorHelperLoose */;
-                      coerceChannelRouteResult1 = obj4.coerceChannelRoute(state.routes[index - 1]);
-                      let tmp12 = coerceChannelRouteResult;
-                      tmp3 = coerceChannelRouteResult1;
+                      let tmp6Result = tmp6(4040);
+                      coerceChannelRouteResult1 = tmp6Result.coerceChannelRoute(state.routes[index - 1]);
                       if (null != coerceChannelRouteResult1) {
                         break;
                       }
@@ -58,18 +50,17 @@ export default function isSelectedFromHomeChannel(id) {
                   }
                 }
                 index = index - 1;
-                tmp13 = tmp3;
               }
-              let tmp14 = coerceChannelRouteResult1.params.guildId === id.guild_id;
-              if (tmp14) {
-                tmp14 = isGuildHomeChannel(coerceChannelRouteResult1.params.channelId);
+              let tmp10 = coerceChannelRouteResult1.params.guildId === id.guild_id;
+              if (tmp10) {
+                tmp10 = isGuildHomeChannel(coerceChannelRouteResult1.params.channelId);
               }
-              return tmp14;
+              return tmp10;
             }
             return false;
           }
         }
-        const obj5 = require(4016) /* _createForOfIteratorHelperLoose */;
+        const tmpResult = require(4040) /* navigationToRootTabHelper */;
       }
     }
   }

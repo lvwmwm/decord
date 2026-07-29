@@ -1,28 +1,41 @@
-// Module ID: 13576
-// Function ID: 104286
-// Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 5925, 653, 5498, 686, 4565, 2]
+// Module ID: 13599
+// Function ID: 13600
+// Name: _initialize
+// Dependencies: [5944, 676, 4368, 709, 5516, 2]
 
-// Module 13576 (_isNativeReflectConstruct)
-import ME from "ME";
-import fetchApplication from "fetchApplication";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 13599 (_initialize)
+import recountRelationshipTypes from "recountRelationshipTypes";
 import { RelationshipTypes } from "ME";
-import tmp2 from "LifecycleManager";
+import "initialize";
 
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
+class GameRelationshipManager extends tmp2 {
+  constructor() {
+    applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
+    applyArgumentsResult.handlePostConnectionOpen = function handlePostConnectionOpen() {
+      gameRelationships = gameRelationships.getGameRelationships();
+      const set = new Set();
+      const values = gameRelationships.values();
+      const item = values.forEach((type) => {
+        if (type.type === outer1_3.PENDING_INCOMING) {
+          set.add(type.applicationId);
+        }
+      });
+      const applications = set(table[4]).fetchApplications(Array.from(set));
+    };
+    return applyArgumentsResult;
   }
-  const result = _isNativeReflectConstruct();
 }
-tmp2 = new tmp2();
-let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/game_relationships/GameRelationshipManager.tsx");
+const prototype = GameRelationshipManager.prototype;
+prototype["_initialize"] = function _initialize() {
+  const subscription = importDefault(709).subscribe("POST_CONNECTION_OPEN", this.handlePostConnectionOpen);
+};
+prototype["_terminate"] = function _terminate() {
+  importDefault(709).unsubscribe("POST_CONNECTION_OPEN", this.handlePostConnectionOpen);
+};
+prototype["destroy"] = function destroy() {
+  importDefault(709).unsubscribe("POST_CONNECTION_OPEN", this.handlePostConnectionOpen);
+};
+const gameRelationshipManager = new GameRelationshipManager();
+const result = require("initialize").fileFinishedImporting("modules/game_relationships/GameRelationshipManager.tsx");
 
-export default tmp2;
+export default gameRelationshipManager;

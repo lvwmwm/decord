@@ -1,18 +1,18 @@
-// Module ID: 6692
-// Function ID: 58973
+// Module ID: 6713
+// Function ID: 6714
 // Name: useStageChannelIsLive
-// Dependencies: [1353, 566, 2]
+// Dependencies: [1377, 589, 2]
 // Exports: default
 
-// Module 6692 (useStageChannelIsLive)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 6713 (useStageChannelIsLive)
+import handleStageInstanceCreateOrUpdate from "handleStageInstanceCreateOrUpdate";
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/stage_channels/useStateChannelIsLive.tsx");
 
 export default function useStageChannelIsLive(arg0) {
   const _require = arg0;
-  const items = [_isNativeReflectConstruct];
+  const items = [handleStageInstanceCreateOrUpdate];
   const items1 = [arg0];
-  return _require(566).useStateFromStores(items, () => outer1_2.isLive(closure_0), items1);
+  return _require(589).useStateFromStores(items, () => outer1_2.isLive(closure_0), items1);
 };

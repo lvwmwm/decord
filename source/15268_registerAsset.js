@@ -1,11 +1,10 @@
 // Module ID: 15268
-// Function ID: 116123
+// Function ID: 15269
 // Name: registerAsset
-// Dependencies: [1217]
+// Dependencies: [1241]
 
 // Module 15268 (registerAsset)
 import registerAsset from "registerAsset";
 
-const obj = { __packager_asset: true, httpServerLocation: "/assets/images/native/icons", width: 23, height: 29, scales: [1, 2], hash: "9b2d7ede4e6a66812c53739302a187c3", name: "ic_update_profile", type: "png" };
 
-export default registerAsset.registerAsset(obj);
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "094f7a21d1b60a74d620c68e16db5be6", name: "ConnectionUnknownIcon", type: "png" });

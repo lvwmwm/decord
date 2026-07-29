@@ -1,11 +1,11 @@
-// Module ID: 10706
-// Function ID: 83235
+// Module ID: 10730
+// Function ID: 10731
 // Name: useCanRaiseHand
-// Dependencies: [3793, 482, 566, 2]
+// Dependencies: [3817, 505, 589, 2]
 // Exports: useCanRaiseHand
 
-// Module 10706 (useCanRaiseHand)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 10730 (useCanRaiseHand)
+import getUncachedChannelPermissions from "getUncachedChannelPermissions";
 import { Permissions } from "sum";
 
 const require = arg1;
@@ -13,6 +13,6 @@ const result = require("initialize").fileFinishedImporting("modules/stage_channe
 
 export const useCanRaiseHand = function useCanRaiseHand(channel) {
   const _require = channel;
-  const items = [_isNativeReflectConstruct];
-  return _require(566).useStateFromStores(items, () => outer1_2.can(outer1_3.REQUEST_TO_SPEAK, closure_0));
+  const items = [getUncachedChannelPermissions];
+  return _require(589).useStateFromStores(items, () => outer1_2.can(outer1_3.REQUEST_TO_SPEAK, closure_0));
 };

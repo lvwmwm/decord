@@ -1,41 +1,39 @@
-// Module ID: 5993
-// Function ID: 53163
+// Module ID: 6012
+// Function ID: 6013
 // Name: getQuestContentName
-// Dependencies: [5014, 2]
-// Exports: getContentProperties, getQuestStatus
+// Dependencies: [5036, 2]
+// Exports: getContentProperties, getQuestContentName, getQuestStatus
 
-// Module 5993 (getQuestContentName)
-function getQuestContentName(questContent) {
-  let closure_0 = questContent;
-  const found = closure_2.find((arg0) => questContent(outer1_1[0]).QuestContent[arg0] === questContent);
-  let str = "";
-  if (null != found) {
-    str = found;
-  }
-  return str;
-}
+// Module 6012 (getQuestContentName)
 let closure_2 = Object.keys(require("QuestsVisibleMessagesChangedSource").QuestContent);
 const result = require("set").fileFinishedImporting("modules/quests/lib/analytics/AnalyticsTypes.tsx");
 
-export { getQuestContentName };
+export const getQuestContentName = function getQuestContentName(questContent) {
+  let closure_0 = questContent;
+  let str = closure_2.find((arg0) => questContent(outer1_1[0]).QuestContent[arg0] === questContent);
+  if (str == null) {
+    str = "";
+  }
+  return str;
+};
 export const getQuestStatus = function getQuestStatus(quest) {
   const userStatus = quest.userStatus;
   let claimedAt;
-  if (null != userStatus) {
+  if (userStatus != null) {
     claimedAt = userStatus.claimedAt;
   }
   let str = "COMPLETED_CLAIMED";
   if (null == claimedAt) {
     const userStatus2 = quest.userStatus;
     let completedAt;
-    if (null != userStatus2) {
+    if (userStatus2 != null) {
       completedAt = userStatus2.completedAt;
     }
     let str2 = "COMPLETED";
     if (null == completedAt) {
       const userStatus3 = quest.userStatus;
       let enrolledAt;
-      if (null != userStatus3) {
+      if (userStatus3 != null) {
         enrolledAt = userStatus3.enrolledAt;
       }
       let str3 = "NONE";
@@ -49,7 +47,16 @@ export const getQuestStatus = function getQuestStatus(quest) {
   return str;
 };
 export const getContentProperties = function getContentProperties(questContent, questContentPosition, questContentRowIndex) {
-  return { content_id: questContent, content_name: getQuestContentName(questContent), content_position: questContentPosition, row_index: questContentRowIndex };
+  const obj = { content_id: questContent, content_name: null, content_position: null, row_index: null };
+  let closure_0 = questContent;
+  let str = closure_2.find((arg0) => questContent(outer1_1[0]).QuestContent[arg0] === questContent);
+  if (str == null) {
+    str = "";
+  }
+  obj[1] = str;
+  obj[2] = questContentPosition;
+  obj[3] = questContentRowIndex;
+  return obj;
 };
 export const BountyScrollingType = { AUTO: "AUTO", MANUAL: "MANUAL" };
 export const HorizontalScrollingDirection = { LEFT: "LEFT", RIGHT: "RIGHT" };

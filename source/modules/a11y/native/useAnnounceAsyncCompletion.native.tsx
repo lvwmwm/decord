@@ -1,11 +1,11 @@
-// Module ID: 10165
-// Function ID: 78510
+// Module ID: 10186
+// Function ID: 10187
 // Name: useAnnounceAsyncCompletion
-// Dependencies: [31, 27, 4011, 477, 4563, 2]
+// Dependencies: [19, 17, 4035, 500, 4586, 2]
 // Exports: default
 
-// Module 10165 (useAnnounceAsyncCompletion)
-import result from "result";
+// Module 10186 (useAnnounceAsyncCompletion)
+import noop from "noop";
 import { AccessibilityInfo } from "get ActivityIndicator";
 
 const require = arg1;
@@ -14,10 +14,11 @@ const result = require("AccessibilityAnnouncer").fileFinishedImporting("modules/
 export default function useAnnounceAsyncCompletion() {
   let closure_0 = React.useRef(null);
   const effect = React.useEffect(() => () => {
-    if (null != outer1_0.current) {
-      outer1_0.current();
+    const current = ref.current;
+    if (current != null) {
+      current();
     }
-    outer1_0.current = null;
+    ref.current = null;
   }, []);
   return React.useCallback((intl, polite) => {
     let str = polite;
@@ -27,31 +28,34 @@ export default function useAnnounceAsyncCompletion() {
     const AccessibilityAnnouncer = ref(outer1_1[2]).AccessibilityAnnouncer;
     AccessibilityAnnouncer.announce(intl, str);
     if (obj.isIOS()) {
-      if (obj2.getIsScreenReaderEnabled()) {
-        if (null != ref.current) {
-          ref.current();
+      if (tmpResult.getIsScreenReaderEnabled()) {
+        let current = ref.current;
+        if (current != null) {
+          current();
         }
         let resolved = new Promise((arg0) => {
           let closure_0 = arg0;
           const timeout = setTimeout(() => {
+            const current = ref.current;
             let currentResult;
-            if (null != lib.current) {
-              currentResult = lib.current();
+            if (current != null) {
+              currentResult = current();
             }
             return currentResult;
           }, 1800);
-          let result = outer2_3.addEventListener("announcementFinished", (announcement) => {
+          let noop = outer2_3.addEventListener("announcementFinished", (announcement) => {
             if (tmp) {
-              if (null != lib.current) {
-                lib.current();
+              const current = ref.current;
+              if (current != null) {
+                current();
               }
             }
           });
           closure_0.current = () => {
             clearTimeout(closure_1);
-            result.remove();
-            lib.current = null;
-            lib();
+            noop.remove();
+            ref.current = null;
+            ref();
           };
         });
       }

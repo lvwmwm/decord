@@ -1,21 +1,21 @@
-// Module ID: 8073
-// Function ID: 64030
+// Module ID: 8097
+// Function ID: 8098
 // Name: ProfileFrameLayer
-// Dependencies: [31, 27, 8060, 8074, 5545, 33, 4165, 8075, 5119, 8072, 8076, 2]
+// Dependencies: [19, 17, 8084, 8098, 5563, 21, 4189, 8099, 5141, 8096, 8100, 2]
 // Exports: default
 
-// Module 8073 (ProfileFrameLayer)
-import result from "result";
+// Module 8097 (ProfileFrameLayer)
+import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
-import { useFramePreviewOverrideStore as closure_4 } from "_createForOfIteratorHelperLoose";
+import { useFramePreviewOverrideStore as closure_4 } from "measure";
 import PROFILE_FRAME_RESPONSIVE_RAIL_MIN_ASPECT_RATIO from "PROFILE_FRAME_RESPONSIVE_RAIL_MIN_ASPECT_RATIO";
 import { UserProfileThemeTypes } from "ARBITRARY_LARGE_OFFSET";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
 let StyleSheet;
-let closure_3;
-let closure_5;
+let c3;
+let c5;
 let closure_6;
 function ProfileFrameLayer(skuId) {
   let containerHeight;
@@ -25,11 +25,15 @@ function ProfileFrameLayer(skuId) {
   const overflowBottom = skuId.overflowBottom;
   const overflowHorizontal = skuId.overflowHorizontal;
   ({ containerWidth, containerHeight } = skuId);
-  const tmp = _createForOfIteratorHelperLoose();
+  let c4;
+  let assetUrl;
+  let imageHeight;
+  const tmp = createCacheKey();
   const sum = containerWidth + 2 * overflowHorizontal;
-  const tmp3 = layer(overflowTop[7])({ skuId: skuId.skuId, layer, width: sum });
-  const assetUrl = tmp3.assetUrl;
-  const imageHeight = tmp3.imageHeight;
+  c4 = sum;
+  const tmp5 = layer(overflowTop[7])({ skuId: skuId.skuId, layer, width: sum });
+  assetUrl = tmp5.assetUrl;
+  imageHeight = tmp5.imageHeight;
   const items = [, , , , , ];
   ({ anchor: arr[0], type: arr[1], order: arr[2] } = layer);
   items[3] = overflowTop;
@@ -41,80 +45,81 @@ function ProfileFrameLayer(skuId) {
     if ("staple" === type) {
       obj = {};
       const merged = Object.assign(obj);
+      let tmp12;
+      if ("top" === tmp2.anchor) {
+        tmp12 = -overflowTop;
+      }
+      obj.top = tmp12;
       let tmp14;
-      if ("top" === layer.anchor) {
-        tmp14 = -overflowTop;
+      if ("bottom" === tmp2.anchor) {
+        tmp14 = -overflowBottom;
       }
-      obj["top"] = tmp14;
-      let tmp17;
-      if ("bottom" === layer.anchor) {
-        tmp17 = -overflowBottom;
-      }
-      obj["bottom"] = tmp17;
+      obj.bottom = tmp14;
       return obj;
     } else if ("rail" === type) {
       obj = {};
       const merged1 = Object.assign(obj);
-      let str3 = "center";
-      if ("center" !== layer.anchor) {
-        let str4 = "flex-end";
-        if ("top" === layer.anchor) {
-          str4 = "flex-start";
+      let str2 = "center";
+      if ("center" !== tmp2.anchor) {
+        let str3 = "flex-end";
+        if ("top" === tmp2.anchor) {
+          str3 = "flex-start";
         }
-        str3 = str4;
+        str2 = str3;
       }
-      obj["justifyContent"] = str3;
+      obj.justifyContent = str2;
       return obj;
     } else {
       const obj1 = {};
       const merged2 = Object.assign(obj);
-      obj1["left"] = -overflowHorizontal;
+      obj1.left = -tmp;
       return obj1;
     }
   }, items);
-  let tmp5 = true === layer.responsive;
-  if (tmp5) {
-    tmp5 = "rail" === layer.type;
+  let tmp7 = true === layer.responsive;
+  if (tmp7) {
+    tmp7 = "rail" === layer.type;
   }
-  if (tmp5) {
-    tmp5 = null != containerHeight;
+  if (tmp7) {
+    tmp7 = null != containerHeight;
   }
-  if (tmp5) {
-    tmp5 = containerWidth / containerHeight >= assetUrl;
+  if (tmp7) {
+    tmp7 = containerWidth / containerHeight >= assetUrl;
   }
   if (0 !== imageHeight) {
     if (null != assetUrl) {
-      if (!tmp5) {
+      if (!tmp7) {
         if ("border" === layer.type) {
           if (null != containerHeight) {
             if (0 !== containerHeight) {
               const _Math = Math;
-              let obj = {};
+              let obj = { style: null, children: null };
               const items1 = [tmp.layer, memo];
-              obj.style = items1;
+              obj[0] = items1;
               const _Array = Array;
-              obj = { length: Math.ceil(containerHeight / imageHeight) };
-              obj.children = Array.from(obj, (arg0, arg1) => {
-                obj = { source: obj, resizeMode: "cover", width: closure_4, height: imageHeight };
+              obj = { length: null };
+              obj[0] = Math.ceil(containerHeight / imageHeight);
+              obj[1] = Array.from(obj, (arg0, arg1) => {
+                obj = { source: obj, resizeMode: "cover", width: c4, height: imageHeight };
                 obj = { uri: assetUrl };
                 return outer1_8(layer(overflowTop[8]), obj, arg1);
               });
-              return <overflowHorizontal length={Math.ceil(containerHeight / imageHeight)} />;
+              return <overflowHorizontal length={null} />;
             }
           }
           return null;
         } else {
-          obj = {};
+          obj = { style: null, children: null };
           const items2 = [tmp.layer, memo];
-          obj.style = items2;
-          let obj1 = {};
-          const obj2 = { uri: assetUrl };
-          obj1.source = obj2;
-          obj1.resizeMode = "cover";
-          obj1.width = sum;
-          obj1.height = imageHeight;
-          obj.children = jsx(layer(overflowTop[8]), {});
-          return <overflowHorizontal />;
+          obj[0] = items2;
+          let obj1 = { source: null, resizeMode: "cover", width: null, height: null };
+          const obj2 = { uri: null };
+          obj2[0] = assetUrl;
+          obj1[0] = obj2;
+          obj1[2] = sum;
+          obj1[3] = imageHeight;
+          obj[1] = jsx(layer(overflowTop[8]), { source: null, resizeMode: "cover", width: null, height: null });
+          return <overflowHorizontal style={null}>{null}</overflowHorizontal>;
         }
       }
     }
@@ -125,11 +130,11 @@ function LiveProfileFrame(frame) {
   let c6;
   let c7;
   let c8;
-  let result;
+  let noop;
   let profileThemeType;
   frame = frame.frame;
   const containerWidth = frame.containerWidth;
-  ({ containerHeight: result, profileThemeType } = frame);
+  ({ containerHeight: noop, profileThemeType } = frame);
   const frameOrder = frame.frameOrder;
   const filterLayer = frame.filterLayer;
   c6 = undefined;
@@ -139,63 +144,63 @@ function LiveProfileFrame(frame) {
   const memo = React.useMemo(() => {
     const layers = frame.layers;
     return layers.filter((order) => {
-      let tmp = null == outer1_4;
-      if (!tmp) {
-        tmp = outer1_4 === order.order;
-      }
-      if (tmp) {
-        let tmp4 = null != outer1_5;
+      let tmp2 = null == closure_4 || tmp === order.order;
+      if (tmp2) {
+        let tmp4 = null != closure_5;
         if (tmp4) {
-          tmp4 = !outer1_5(order);
+          tmp4 = !tmp3(order);
         }
-        let tmp6 = !tmp4;
+        let tmp5 = !tmp4;
         if (!tmp4) {
-          let tmp9 = outer1_3 === constants.PREVIEW;
-          if (!tmp9) {
-            let tmp10 = "top" === order.anchor;
-            if (tmp10) {
-              tmp10 = "staple" === order.type;
+          let tmp8 = closure_3 === outer1_7.PREVIEW;
+          if (!tmp8) {
+            let tmp9 = "top" === order.anchor;
+            if (tmp9) {
+              tmp9 = "staple" === order.type;
             }
-            tmp9 = tmp10;
+            tmp8 = tmp9;
           }
-          tmp6 = tmp9;
+          tmp5 = tmp8;
         }
-        tmp = tmp6;
+        tmp2 = tmp5;
       }
-      return tmp;
+      return tmp2;
     });
   }, items);
   if (0 !== memo.length) {
     if (0 !== containerWidth) {
       ({ overflowTop: c6, overflowBottom: c7, overflowHorizontal: c8 } = frame(containerWidth[9])(frame, containerWidth));
-      const obj = { style: tmp.container, children: memo.map((id) => _undefined(outer1_10, { skuId: frame.skuId, layer: id, overflowTop: c6, overflowBottom: c7, overflowHorizontal: _undefined, containerWidth, containerHeight: result }, id.id)) };
-      return <profileThemeType style={tmp.container}>{memo.map((id) => _undefined(outer1_10, { skuId: frame.skuId, layer: id, overflowTop: c6, overflowBottom: c7, overflowHorizontal: _undefined, containerWidth, containerHeight: result }, id.id))}</profileThemeType>;
+      const obj = { style: null, children: null };
+      obj[0] = tmp.container;
+      obj[1] = memo.map((id) => _undefined(outer1_10, { skuId: frame.skuId, layer: id, overflowTop: c6, overflowBottom: c7, overflowHorizontal: _undefined, containerWidth, containerHeight: noop }, id.id));
+      return <profileThemeType style={null}>{null}</profileThemeType>;
     }
   }
   return null;
 }
-({ View: closure_3, StyleSheet } = get_ActivityIndicator);
-({ PROFILE_FRAME_RESPONSIVE_RAIL_MIN_ASPECT_RATIO: closure_5, PROFILE_FRAME_Z_INDEX: closure_6 } = PROFILE_FRAME_RESPONSIVE_RAIL_MIN_ASPECT_RATIO);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = {};
+({ View: c3, StyleSheet } = get_ActivityIndicator);
+({ PROFILE_FRAME_RESPONSIVE_RAIL_MIN_ASPECT_RATIO: c5, PROFILE_FRAME_Z_INDEX: closure_6 } = PROFILE_FRAME_RESPONSIVE_RAIL_MIN_ASPECT_RATIO);
+createCacheKey = { container: null, layer: null };
+createCacheKey = {};
 let merged = Object.assign(StyleSheet.absoluteFillObject);
-_createForOfIteratorHelperLoose["pointerEvents"] = "none";
-_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
+createCacheKey.pointerEvents = "none";
+createCacheKey[0] = createCacheKey;
 let obj1 = {};
 let merged1 = Object.assign(StyleSheet.absoluteFillObject);
-obj1["alignItems"] = "center";
-obj1["overflow"] = "hidden";
-_createForOfIteratorHelperLoose.layer = obj1;
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/collectibles/profile_frames/native/ProfileFrame.tsx");
+obj1.alignItems = "center";
+obj1.overflow = "hidden";
+createCacheKey[1] = obj1;
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+const result = require("measure").fileFinishedImporting("modules/collectibles/profile_frames/native/ProfileFrame.tsx");
 
 export default function ProfileFrame(arg0) {
   const tmp = callback((override) => override.override);
   if (null != tmp) {
-    let obj = { override: tmp };
+    let obj = { override: null };
+    obj[0] = tmp;
     const merged = Object.assign(arg0);
-    let tmp7 = jsx(importDefault(8076), { override: tmp });
-    const tmp11 = importDefault(8076);
+    let tmp7 = jsx(importDefault(8100), { override: null });
+    const tmp11 = importDefault(8100);
   } else {
     obj = {};
     const merged1 = Object.assign(arg0);

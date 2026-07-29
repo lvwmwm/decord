@@ -1,470 +1,294 @@
-// Module ID: 15796
-// Function ID: 121655
-// Name: _createForOfIteratorHelperLoose
-// Dependencies: [57, 31, 4178, 1194, 4212, 4237, 4183, 566, 2]
+// Module ID: 15831
+// Function ID: 15832
+// Name: useExternalPipParticipant
+// Dependencies: [32, 19, 4202, 1218, 4236, 4261, 4207, 589, 2]
 // Exports: default
 
-// Module 15796 (_createForOfIteratorHelperLoose)
+// Module 15831 (useExternalPipParticipant)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_5 from "_isNativeReflectConstruct";
-import closure_6 from "_isNativeReflectConstruct";
-import closure_7 from "_isNativeReflectConstruct";
+import noop from "noop";
+import getParticipants from "getParticipants";
+import fetchFingerprint from "fetchFingerprint";
+import _detectH265HardwareDecode from "_detectH265HardwareDecode";
+import createRTCConnection from "createRTCConnection";
 import { ParticipantTypes } from "ParticipantTypes";
 
 const require = arg1;
-function _createForOfIteratorHelperLoose(iterable) {
-  let closure_0 = iterable;
-  iterable = "undefined" !== typeof Symbol;
-  if (iterable) {
-    const _Symbol = Symbol;
-    iterable = iterable[Symbol.iterator];
-  }
-  if (!iterable) {
-    iterable = iterable[Symbol.iterator];
-  }
-  if (iterable) {
-    const iter = iterable.call(iterable);
-    const next = iter.next;
-    return next.bind(iter);
-  } else {
-    const _Array = Array;
-    let tmp = iterable;
-    if (!Array.isArray(iterable)) {
-      let tmp2;
-      if (iterable) {
-        if ("string" === typeof iterable) {
-          tmp2 = _arrayLikeToArray(iterable, undefined);
-        } else {
-          const toString = {}.toString;
-          const substr = toString.call(iterable).slice(8, -1);
-          let name = substr;
-          if (tmp3) {
-            name = iterable.constructor.name;
-          }
-          if ("Map" !== name) {
-            if ("Set" !== name) {
-              if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(iterable, undefined);
-              } else {
-                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
-              }
-            }
-            tmp2 = arr;
-          }
-          const _Array2 = Array;
-          arr = Array.from(iterable);
-          const callResult = toString.call(iterable);
-          tmp3 = "Object" === substr && iterable.constructor;
+const result = require("getParticipants").fileFinishedImporting("modules/external_pip/useExternalPipParticipant.android.tsx");
+
+export default function useExternalPipParticipant() {
+  let c3;
+  let focusedParticipantType;
+  let focusedParticipantUserId;
+  let tmp7;
+  const items = [createRTCConnection];
+  const channelId = selectedParticipantStreamId(focusedParticipantStreamId[7]).useStateFromStores(items, () => channelId.getChannelId());
+  selectedParticipantStreamId = channelId;
+  focusedParticipantStreamId = React.useRef(undefined);
+  let stateFromStores1 = React.useRef(undefined);
+  let tmpResult = tmp(tmp2[7]);
+  const items1 = [selectedParticipantSpeaking];
+  const stateFromStoresObject = tmpResult.useStateFromStoresObject(items1, () => {
+    let selectedParticipantId = null;
+    if (null != selectedParticipantStreamId) {
+      selectedParticipantId = selectedParticipantSpeaking.getSelectedParticipantId(tmp);
+    }
+    let tmp4 = null;
+    if (null != selectedParticipantId) {
+      tmp4 = null;
+      if (null != tmp) {
+        let participant = selectedParticipantSpeaking.getParticipant(tmp, selectedParticipantId);
+        if (participant == null) {
+          participant = null;
         }
-      }
-      tmp = tmp2;
-      if (!tmp2) {
-        const _TypeError = TypeError;
-        const typeError = new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
-        throw typeError;
+        tmp4 = participant;
       }
     }
-    if (tmp) {
-      closure_0 = tmp;
-    }
-    let c1 = 0;
-    return () => {
-      if (closure_1 >= length.length) {
-        let obj = { done: true };
-      } else {
-        obj = { done: false };
-        closure_1 = tmp3 + 1;
-        obj.value = length[+closure_1];
+    if (undefined === focusedParticipantStreamId.current) {
+      let id;
+      if (tmp4 != null) {
+        id = tmp4.id;
       }
-      return obj;
-    };
-  }
-}
-function _arrayLikeToArray(arg0, arg1) {
-  let length;
-  if (tmp) {
-    length = arg0.length;
-  }
-  const ArrayResult = Array(length);
-  for (let num = 0; num < length; num = num + 1) {
-    ArrayResult[num] = arg0[num];
-  }
-  return ArrayResult;
-}
-function useSelectedParticipant(channelId) {
-  let result;
-  let tmp3;
-  channelId = channelId.channelId;
-  const focusedParticipantStreamId = channelId.focusedParticipantStreamId;
-  const items = [closure_5];
-  const stateFromStores = channelId(focusedParticipantStreamId[7]).useStateFromStores(items, () => outer1_5.getId());
-  let obj = channelId(focusedParticipantStreamId[7]);
-  [tmp3, result] = stateFromStores(React.useState(0), 2);
-  let tmp2 = stateFromStores(React.useState(0), 2);
-  const items1 = [stateFromStoresObject];
-  const items2 = [channelId, focusedParticipantStreamId, stateFromStores, tmp3];
-  stateFromStoresObject = channelId(focusedParticipantStreamId[7]).useStateFromStoresObject(items1, () => {
-    let tmp16;
-    let tmp17;
-    let tmp18;
-    if (null != channelId) {
+      tmp7.current = id;
+      let type;
+      if (tmp4 != null) {
+        type = tmp4.type;
+      }
+      stateFromStores1.current = type;
+      const tmp9 = stateFromStores1;
+    }
+    let id1;
+    if (tmp4 != null) {
+      id1 = tmp4.id;
+    }
+    if (focusedParticipantStreamId.current !== id1) {
+      let obj = { focusedParticipantStreamId: "Array", focusedParticipantUserId: "ct", focusedParticipantType: null };
+      obj[2] = stateFromStores1.current;
+    } else {
+      let type1;
+      if (tmp4 != null) {
+        type1 = tmp4.type;
+      }
+      let tmp14;
+      if (type1 !== outer1_8.ACTIVITY) {
+        let streamId;
+        if (tmp4 != null) {
+          streamId = tmp4.streamId;
+        }
+        tmp14 = streamId;
+      }
+      obj = { focusedParticipantStreamId: null, focusedParticipantUserId: null, focusedParticipantType: null };
+      obj[0] = tmp14;
+      let type2;
+      if (tmp4 != null) {
+        type2 = tmp4.type;
+      }
+      let tmp17;
+      if (type2 !== tmp13.ACTIVITY) {
+        let id2;
+        if (tmp4 != null) {
+          const user = tmp4.user;
+          if (user != null) {
+            id2 = user.id;
+          }
+        }
+        tmp17 = id2;
+      }
+      obj[1] = tmp17;
+      let type3;
+      if (tmp4 != null) {
+        type3 = tmp4.type;
+      }
+      obj[2] = type3;
+      tmp13 = outer1_8;
+    }
+    return obj;
+  });
+  focusedParticipantStreamId = stateFromStoresObject.focusedParticipantStreamId;
+  selectedParticipantStreamId = channelId;
+  stateFromStores1 = undefined;
+  React = undefined;
+  selectedParticipantSpeaking = undefined;
+  ({ focusedParticipantUserId, focusedParticipantType } = stateFromStoresObject);
+  tmpResult = tmp(tmp2[7]);
+  const items2 = [fetchFingerprint];
+  stateFromStores1 = tmpResult.useStateFromStores(items2, () => id.getId());
+  let obj = selectedParticipantStreamId(focusedParticipantStreamId[7]);
+  const obj2 = React;
+  [tmp7, c3] = stateFromStores1(React.useState(0), 2);
+  let tmp6 = stateFromStores1(React.useState(0), 2);
+  const items3 = [selectedParticipantSpeaking];
+  const items4 = [channelId, focusedParticipantStreamId, stateFromStores1, tmp7];
+  selectedParticipantSpeaking = selectedParticipantStreamId(focusedParticipantStreamId[7]).useStateFromStoresObject(items3, () => {
+    let tmp15;
+    let tmp25;
+    let tmp30;
+    if (null != selectedParticipantStreamId) {
       if (null == focusedParticipantStreamId) {
         const _Date = Date;
+        let tmp19;
         const timestamp = Date.now();
-        const participants = stateFromStoresObject.getParticipants(channelId);
-        let flag = false;
-        if (3 >= participants.length) {
-          const tmp2 = outer1_9(participants);
-          const iter = tmp2();
-          let iter2 = iter;
-          flag = true;
-          if (!iter.done) {
-            while (true) {
-              let value = iter2.value;
-              let tmp3 = outer1_8;
-              if (value.type === outer1_8.ACTIVITY) {
-                let iter3 = tmp2();
-                iter2 = iter3;
-                flag = true;
-                if (iter3.done) {
-                  break;
-                }
-              } else {
-                let user = value.user;
-                let id;
-                if (null != user) {
-                  id = user.id;
-                }
-                let tmp5 = user;
-                flag = false;
-                if (id !== tmp49) {
-                  break;
-                }
+        const participants = selectedParticipantSpeaking.getParticipants(tmp);
+        let iter = participants[Symbol.iterator]();
+        let nextResult = iter.next();
+        while (iter !== undefined) {
+          let tmp5 = nextResult;
+          if (!tmp48) {
+            let tmp6 = nextResult;
+            let tmp7 = outer1_8;
+            if (tmp5.type === outer1_8.USER) {
+              let tmp8 = nextResult;
+              let user = tmp5.user;
+              let id;
+              if (user != null) {
+                id = user.id;
               }
-              break;
+              let tmp10 = stateFromStores1;
+            }
+            continue;
+          }
+          let tmp11 = nextResult;
+          let type = tmp5.type;
+          if (outer1_8.USER === type) {
+            let tmp16 = nextResult;
+            let speaking = tmp5.speaking;
+            if (!speaking) {
+              let tmp17 = nextResult;
+              speaking = timestamp - tmp5.lastSpoke < 1000;
+            }
+            if (speaking) {
+              let tmp18 = tmp19;
+              speaking = null == tmp19;
+            }
+            if (speaking) {
+              tmp19 = nextResult;
+            }
+            let tmp20 = nextResult;
+            let voiceState = tmp5.voiceState;
+            let flag;
+            if (voiceState != null) {
+              flag = voiceState.selfVideo;
+            }
+            if (flag == null) {
+              flag = false;
+            }
+            if (flag) {
+              let tmp21 = tmp25;
+              let tmp22 = null == tmp25;
+              if (!tmp22) {
+                let tmp23 = tmp25;
+                let tmp24 = nextResult;
+                tmp22 = tmp25.lastSpoke < tmp5.lastSpoke;
+              }
+              flag = tmp22;
+            }
+            if (flag) {
+              tmp25 = nextResult;
+            }
+            let tmp26 = tmp30;
+            let tmp27 = null == tmp30;
+            if (!tmp27) {
+              let tmp28 = tmp30;
+              let tmp29 = nextResult;
+              tmp27 = tmp30.lastSpoke < tmp5.lastSpoke;
+            }
+            if (tmp27) {
+              tmp30 = nextResult;
+            }
+          } else if (tmp12.STREAM === type) {
+            let tmp50 = tmp15;
+            let tmp14 = null == tmp15;
+            if (tmp14) {
+              let tmp13 = nextResult;
+              tmp14 = null != tmp5.streamId;
+            }
+            if (tmp14) {
+              tmp15 = nextResult;
             }
           }
         }
-        const tmp7 = outer1_9(participants);
-        const iter4 = tmp7();
-        let iter5 = iter4;
-        let tmp15;
-        if (!iter4.done) {
-          while (true) {
-            value = iter5.value;
-            let tmp19 = tmp14;
-            if (!flag) {
-              let tmp20 = outer1_8;
-              tmp19 = tmp14;
-              if (value.type === outer1_8.USER) {
-                let user2 = value.user;
-                let id1;
-                if (null != user2) {
-                  id1 = user2.id;
-                }
-                let tmp22 = stateFromStores;
-                tmp19 = user2;
-                let tmp23 = tmp8;
-                let tmp24 = tmp9;
-                let tmp25 = tmp10;
-                let tmp26 = tmp11;
-                let tmp27 = tmp12;
-                let tmp28 = tmp13;
-                tmp14 = user2;
-              }
-              let iter6 = tmp7();
-              tmp8 = tmp23;
-              tmp9 = tmp24;
-              tmp10 = tmp25;
-              tmp11 = tmp26;
-              tmp12 = tmp27;
-              tmp13 = tmp28;
-              iter5 = iter6;
-              tmp15 = tmp25;
-              tmp16 = tmp26;
-              tmp17 = tmp27;
-              tmp18 = tmp28;
-              if (iter6.done) {
-                break;
-              }
-            }
-            let type = value.type;
-            let tmp29 = outer1_8;
-            if (outer1_8.USER === type) {
-              let tmp32 = (value.speaking || timestamp - value.lastSpoke < 1000) && null == tmp10;
-              if (tmp32) {
-                tmp10 = value;
-              }
-              let voiceState = value.voiceState;
-              let selfVideo;
-              if (null != voiceState) {
-                selfVideo = voiceState.selfVideo;
-              }
-              let tmp34 = null != selfVideo && selfVideo;
-              if (tmp34) {
-                let tmp35 = null == tmp11 || tmp11.lastSpoke < value.lastSpoke;
-                tmp34 = tmp35;
-              }
-              if (tmp34) {
-                tmp11 = value;
-              }
-              let tmp36 = null == tmp13 || tmp13.lastSpoke < value.lastSpoke;
-              tmp23 = selfVideo;
-              tmp24 = voiceState;
-              tmp25 = tmp10;
-              tmp26 = tmp11;
-              tmp27 = tmp12;
-              tmp28 = tmp13;
-              tmp14 = tmp19;
-              if (tmp36) {
-                tmp23 = selfVideo;
-                tmp24 = voiceState;
-                tmp25 = tmp10;
-                tmp26 = tmp11;
-                tmp27 = tmp12;
-                tmp28 = value;
-                tmp14 = tmp19;
-              }
-            } else {
-              let tmp30 = outer1_8;
-              tmp23 = tmp8;
-              tmp24 = tmp9;
-              tmp25 = tmp10;
-              tmp26 = tmp11;
-              tmp27 = tmp12;
-              tmp28 = tmp13;
-              tmp14 = tmp19;
-              if (outer1_8.STREAM === type) {
-                let tmp31 = null == tmp12 && null != value.streamId;
-                tmp23 = tmp8;
-                tmp24 = tmp9;
-                tmp25 = tmp10;
-                tmp26 = tmp11;
-                tmp27 = tmp12;
-                tmp28 = tmp13;
-                tmp14 = tmp19;
-                if (tmp31) {
-                  tmp23 = tmp8;
-                  tmp24 = tmp9;
-                  tmp25 = tmp10;
-                  tmp26 = tmp11;
-                  tmp27 = value;
-                  tmp28 = tmp13;
-                  tmp14 = tmp19;
-                }
-              }
-            }
+        const obj = { selectedParticipantSpeaking: null, selectedParticipantUserId: null, selectedStreamId: null };
+        obj[0] = null != tmp19;
+        let id1;
+        if (tmp19 != null) {
+          const user2 = tmp19.user;
+          if (user2 != null) {
+            id1 = user2.id;
           }
         }
-        const obj = { selectedParticipantSpeaking: null != tmp15 };
-        let id2;
-        if (null != tmp15) {
-          const user3 = tmp15.user;
-          if (null != user3) {
-            id2 = user3.id;
+        if (id1 == null) {
+          let id2;
+          if (tmp25 != null) {
+            const user3 = tmp25.user;
+            if (user3 != null) {
+              id2 = user3.id;
+            }
           }
+          id1 = id2;
         }
-        if (null == id2) {
+        if (id1 == null) {
           let id3;
-          if (null != tmp16) {
-            const user4 = tmp16.user;
-            if (null != user4) {
+          if (tmp30 != null) {
+            const user4 = tmp30.user;
+            if (user4 != null) {
               id3 = user4.id;
             }
           }
-          id2 = id3;
+          id1 = id3;
         }
-        if (null == id2) {
-          let id4;
-          if (null != tmp18) {
-            const user5 = tmp18.user;
-            if (null != user5) {
-              id4 = user5.id;
-            }
-          }
-          id2 = id4;
-        }
-        obj.selectedParticipantUserId = id2;
-        if (null != tmp15) {
-          let streamId = tmp15.streamId;
-          let tmp43;
-          if (null != streamId) {
-            tmp43 = streamId;
-          }
-          let tmp42 = tmp43;
+        obj[1] = id1;
+        if (null != tmp19) {
+          let streamId = tmp19.streamId;
         } else {
           streamId = undefined;
-          if (null != tmp17) {
-            streamId = tmp17.streamId;
+          if (tmp15 != null) {
+            streamId = tmp15.streamId;
           }
-          if (null == streamId) {
+          if (streamId == null) {
             let streamId1;
-            if (null != tmp16) {
-              streamId1 = tmp16.streamId;
+            if (tmp25 != null) {
+              streamId1 = tmp25.streamId;
             }
             streamId = streamId1;
           }
-          if (null != streamId) {
-            tmp42 = streamId;
-          }
         }
-        obj.selectedStreamId = tmp42;
+        obj[2] = streamId;
         return obj;
       }
     }
-    return { selectedParticipantSpeaking: false, selectedParticipantUserId: undefined, selectedStreamId: undefined };
-  }, items2);
-  const items3 = [stateFromStoresObject.selectedParticipantSpeaking];
+    return { selectedParticipantSpeaking: false, selectedParticipantUserId: "Boolean", selectedStreamId: "channel" };
+  }, items4);
+  const items5 = [selectedParticipantSpeaking.selectedParticipantSpeaking];
   const effect = React.useEffect(() => {
-    if (stateFromStoresObject.selectedParticipantSpeaking) {
+    if (selectedParticipantSpeaking.selectedParticipantSpeaking) {
       const _setTimeout = setTimeout;
       const timeout = setTimeout(() => {
-        outer1_3((arg0) => arg0 + 1);
+        callback((arg0) => arg0 + 1);
       }, 3000);
       return () => {
         clearTimeout(closure_0);
       };
     }
-  }, items3);
-  return stateFromStoresObject;
-}
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/external_pip/useExternalPipParticipant.android.tsx");
-
-export default function useExternalPipParticipant() {
-  let focusedParticipantType;
-  let focusedParticipantUserId;
-  let selectedParticipantSpeaking;
-  let selectedParticipantUserId;
-  let selectedStreamId;
-  let obj = require(566) /* initialize */;
-  let items = [closure_7];
-  const stateFromStores = obj.useStateFromStores(items, () => outer1_7.getChannelId());
-  let tmp2;
-  if (null != stateFromStores) {
-    tmp2 = stateFromStores;
-  }
-  obj = { channelId: tmp2 };
-  const tmp3 = (function useFocusedParticipant(channelId) {
-    channelId = channelId.channelId;
-    let closure_1 = outer1_3.useRef(undefined);
-    let _slicedToArray = outer1_3.useRef(undefined);
-    const items = [outer1_4];
-    return outer1_0(outer1_1[7]).useStateFromStoresObject(items, () => {
-      let selectedParticipantId = null;
-      if (null != channelId) {
-        selectedParticipantId = outer2_4.getSelectedParticipantId(channelId);
-      }
-      let tmp4 = null;
-      if (null != selectedParticipantId) {
-        tmp4 = null;
-        if (null != channelId) {
-          const participant = outer2_4.getParticipant(channelId, selectedParticipantId);
-          tmp4 = null;
-          if (null != participant) {
-            tmp4 = participant;
-          }
-        }
-      }
-      if (undefined === ref.current) {
-        let id;
-        if (null != tmp4) {
-          id = tmp4.id;
-        }
-        ref.current = id;
-        let type;
-        if (null != tmp4) {
-          type = tmp4.type;
-        }
-        ref2.current = type;
-        const tmp11 = ref2;
-        const tmp9 = ref;
-      }
-      let id1;
-      if (null != tmp4) {
-        id1 = tmp4.id;
-      }
-      if (ref.current !== id1) {
-        let obj = { focusedParticipantStreamId: undefined, focusedParticipantUserId: undefined, focusedParticipantType: ref2.current };
-      } else {
-        obj = {};
-        let type1;
-        if (null != tmp4) {
-          type1 = tmp4.type;
-        }
-        let tmp16;
-        if (type1 !== outer2_8.ACTIVITY) {
-          let streamId;
-          if (null != tmp4) {
-            streamId = tmp4.streamId;
-          }
-          if (null != streamId) {
-            tmp16 = streamId;
-          }
-        }
-        obj.focusedParticipantStreamId = tmp16;
-        let type2;
-        if (null != tmp4) {
-          type2 = tmp4.type;
-        }
-        let tmp20;
-        if (type2 !== outer2_8.ACTIVITY) {
-          let id2;
-          if (null != tmp4) {
-            const user = tmp4.user;
-            if (null != user) {
-              id2 = user.id;
-            }
-          }
-          if (null != id2) {
-            tmp20 = id2;
-          }
-        }
-        obj.focusedParticipantUserId = tmp20;
-        let type3;
-        if (null != tmp4) {
-          type3 = tmp4.type;
-        }
-        let tmp23;
-        if (null != type3) {
-          tmp23 = type3;
-        }
-        obj.focusedParticipantType = tmp23;
-      }
-      return obj;
-    });
-  })(obj);
-  const focusedParticipantStreamId = tmp3.focusedParticipantStreamId;
-  obj = { channelId: tmp2, focusedParticipantStreamId };
-  ({ focusedParticipantUserId, focusedParticipantType } = tmp3);
-  ({ selectedStreamId, selectedParticipantUserId, selectedParticipantSpeaking } = useSelectedParticipant(obj));
-  if (null != focusedParticipantStreamId) {
-    selectedStreamId = focusedParticipantStreamId;
-  }
-  let tmp5;
-  if (null != selectedStreamId) {
-    tmp5 = selectedStreamId;
+  }, items5);
+  let selectedParticipantUserId = selectedParticipantSpeaking.selectedParticipantUserId;
+  selectedParticipantStreamId = focusedParticipantStreamId;
+  if (focusedParticipantStreamId == null) {
+    selectedParticipantStreamId = selectedParticipantSpeaking.selectedStreamId;
   }
   if (null != focusedParticipantStreamId) {
     selectedParticipantUserId = focusedParticipantUserId;
   }
-  const obj1 = { selectedParticipantStreamId: tmp5 };
-  (function useSetHasActiveVideoOutputSink(selectedParticipantStreamId) {
-    selectedParticipantStreamId = selectedParticipantStreamId.selectedParticipantStreamId;
-    const items = [selectedParticipantStreamId];
-    const effect = outer1_3.useEffect(() => {
-      if (null != closure_0) {
-        const useExternalPipParticipant = "useExternalPipParticipant";
-        let mediaEngine = outer2_6.getMediaEngine();
-        mediaEngine.eachConnection((setHasActiveVideoOutputSink) => setHasActiveVideoOutputSink.setHasActiveVideoOutputSink(closure_0, true, useExternalPipParticipant));
-        return () => {
-          const mediaEngine = outer3_6.getMediaEngine();
-          mediaEngine.eachConnection((setHasActiveVideoOutputSink) => setHasActiveVideoOutputSink.setHasActiveVideoOutputSink(outer1_0, false, outer1_1));
-        };
-      }
-    }, items);
-  })(obj1);
-  const obj2 = { channelId: tmp2, selectedParticipantStreamId: tmp5, selectedParticipantUserId, selectedParticipantSpeaking, focusedParticipantType };
-  return obj2;
+  const items6 = [selectedParticipantStreamId];
+  const effect1 = obj2.useEffect(() => {
+    if (null != closure_0) {
+      const useExternalPipParticipant = "useExternalPipParticipant";
+      let mediaEngine = outer1_6.getMediaEngine();
+      mediaEngine.eachConnection((setHasActiveVideoOutputSink) => setHasActiveVideoOutputSink.setHasActiveVideoOutputSink(closure_0, true, useExternalPipParticipant));
+      return () => {
+        const mediaEngine = outer1_6.getMediaEngine();
+        mediaEngine.eachConnection((setHasActiveVideoOutputSink) => setHasActiveVideoOutputSink.setHasActiveVideoOutputSink(closure_0, false, closure_1));
+      };
+    }
+  }, items6);
+  return { channelId, selectedParticipantStreamId, selectedParticipantUserId, selectedParticipantSpeaking: selectedParticipantSpeaking.selectedParticipantSpeaking, focusedParticipantType };
 };

@@ -1,11 +1,11 @@
-// Module ID: 4021
-// Function ID: 33205
+// Module ID: 4045
+// Function ID: 4046
 // Name: useBaseAppContainerDimensions
-// Dependencies: [31, 1450, 1557, 2]
+// Dependencies: [19, 1474, 1581, 2]
 // Exports: default, getBaseAppContainerDimensions
 
-// Module 4021 (useBaseAppContainerDimensions)
-import result from "result";
+// Module 4045 (useBaseAppContainerDimensions)
+import noop from "noop";
 
 const require = arg1;
 const result = require("useSafeAreaInsets").fileFinishedImporting("modules/screen/native/useBaseAppContainerDimensions.tsx");
@@ -23,10 +23,10 @@ export default function useBaseAppContainerDimensions() {
 export const getBaseAppContainerDimensions = function getBaseAppContainerDimensions() {
   let height;
   let width;
-  let obj = require(1450) /* useWindowDimensions */;
+  let obj = require(1474) /* useWindowDimensions */;
   const windowDimensions = obj.getWindowDimensions();
   ({ width, height } = windowDimensions);
-  const rect = require(1557) /* useSafeAreaInsets */.getSafeAreaInsets();
+  const rect = require(1581) /* useSafeAreaInsets */.getSafeAreaInsets();
   obj = { width: width - rect.left - rect.right, height };
   return obj;
 };

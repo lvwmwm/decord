@@ -1,14 +1,15 @@
-// Module ID: 15582
-// Function ID: 119795
+// Module ID: 15616
+// Function ID: 15617
 // Name: isYouNavFloating
-// Dependencies: [1428, 2]
+// Dependencies: [1452, 2]
 // Exports: isYouNavFloating
 
-// Module 15582 (isYouNavFloating)
+// Module 15616 (isYouNavFloating)
 import ApexExperiment from "ApexExperiment";
 
-const obj = { name: "2026-04-you-nav-floating", kind: "user", defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } };
-const apexExperiment = ApexExperiment.createApexExperiment(obj);
+const obj = { 1: null };
+obj[1] = { enabled: true };
+const apexExperiment = ApexExperiment.createApexExperiment({ name: "2026-04-you-nav-floating", kind: "user", defaultConfig: { enabled: false }, variations: obj });
 const enabled = apexExperiment.getConfig({ location: "you-nav-floating" }).enabled;
 const result = require("set").fileFinishedImporting("modules/main_tabs_v2/native/tabs/you/YouNavFloatingExperiment.tsx");
 

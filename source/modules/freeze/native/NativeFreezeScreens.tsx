@@ -1,18 +1,18 @@
-// Module ID: 14995
-// Function ID: 114175
+// Module ID: 15021
+// Function ID: 15022
 // Name: NativeFreezeScreens
-// Dependencies: [57, 31, 27, 33, 44, 4513, 4165, 2]
+// Dependencies: [32, 19, 17, 21, 38, 4536, 4189, 2]
 // Exports: NativeFreezeScreens
 
-// Module 14995 (NativeFreezeScreens)
+// Module 15021 (NativeFreezeScreens)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
+import noop from "noop";
 import { StyleSheet } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
 const require = arg1;
-let closure_7 = _createForOfIteratorHelperLoose.createStyles({ screens: { flex: 1, overflow: "hidden" } });
+let closure_7 = createCacheKey.createStyles({ screens: { flex: 1, overflow: "hidden" } });
 const result = require("get ActivityIndicator").fileFinishedImporting("modules/freeze/native/NativeFreezeScreens.tsx");
 
 export const NativeFreezeScreens = function NativeFreezeScreens(detachInactiveScreens) {
@@ -40,34 +40,33 @@ export const NativeFreezeScreens = function NativeFreezeScreens(detachInactiveSc
     preloadIndices = [];
   }
   let first;
-  let tmp3 = activeIndex >= 0;
+  let tmp4 = activeIndex >= 0;
   const tmp = callback();
-  if (tmp3) {
+  const tmp2 = flag2;
+  if (tmp4) {
     const _Array = Array;
     let num = 1;
     if (Array.isArray(children)) {
       num = children.length;
     }
-    tmp3 = activeIndex < num;
+    tmp4 = activeIndex < num;
   }
-  flag(flag2[4])(tmp3, "NativeFreezeScreens: invalid activeIndex");
+  flag(flag2[4])(tmp4, "NativeFreezeScreens: invalid activeIndex");
   let items = [activeIndex];
-  const tmp6 = flag3(flag4.useState(items), 2);
-  first = tmp6[0];
+  const tmp7 = flag3(flag4.useState(items), 2);
+  first = tmp7[0];
   if (!first.includes(activeIndex)) {
     const items1 = [];
-    const arraySpreadResult = HermesBuiltin.arraySpread(first, 0);
-    items1[arraySpreadResult] = activeIndex;
-    const sum = arraySpreadResult + 1;
-    tmp6[1](items1);
+    items1[HermesBuiltin.arraySpread(first, 0)] = activeIndex;
+    tmp7[1](items1);
   }
-  let obj = { enabled: flag, hasTwoStates: true, style: tmp.screens, nativeID: "native-freeze-screens-container" };
+  const obj = { enabled: flag, hasTwoStates: true, style: tmp.screens, nativeID: "native-freeze-screens-container", children: null };
   let arr4 = children;
   if (!Array.isArray(children)) {
     const items2 = [children];
     arr4 = items2;
   }
-  obj.children = arr4.map((children) => {
+  obj[4] = arr4.map((children) => {
     if (flag3) {
       if (!tmp) {
         return null;
@@ -86,21 +85,13 @@ export const NativeFreezeScreens = function NativeFreezeScreens(detachInactiveSc
     if (activeIndex === arg1) {
       num = 2;
     }
-    let obj = {};
     const items = [preloadIndices.absoluteFill, ];
-    obj = {};
     let num2 = -1;
     if (activeIndex === arg1) {
       num2 = 0;
     }
-    obj.zIndex = num2;
-    items[1] = obj;
-    obj.style = items;
-    obj.activityState = num;
-    obj.enabled = flag;
-    obj.freezeOnBlur = flag4;
-    obj.children = children;
-    return first(activeIndex(flag2[5]).Screen, obj, arg1);
+    items[1] = { zIndex: num2 };
+    return first(activeIndex(flag2[5]).Screen, { style: items, activityState: num, enabled: flag, freezeOnBlur: flag4, children }, arg1);
   });
-  return first(activeIndex(flag2[5]).ScreenContainer, obj);
+  return first(activeIndex(tmp2[5]).ScreenContainer, obj);
 };

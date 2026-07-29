@@ -1,28 +1,28 @@
-// Module ID: 14411
-// Function ID: 110198
+// Module ID: 14433
+// Function ID: 14434
 // Name: route
-// Dependencies: [7733, 653, 3838, 1282, 1212, 10099, 14412, 2]
+// Dependencies: [7756, 676, 3862, 1306, 1236, 10120, 14434, 2]
 
-// Module 14411 (route)
+// Module 14433 (route)
 import createToggle from "createToggle";
 
 obj = {
   useTitle() {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(require(1212) /* getSystemLocale */.t["D/Dkcd"]);
+    const intl = require(1236) /* getSystemLocale */.intl;
+    return intl.string(require(1236) /* getSystemLocale */.t["D/Dkcd"]);
   },
   parent: require("MobileSetting").MobileSetting.CHAT,
   useTrailing: function useSwipeRightToLeftSettingTrailing() {
-    const SwipeRightToLeftModeSetting = require(3838) /* explicitContentFromProto */.SwipeRightToLeftModeSetting;
+    const SwipeRightToLeftModeSetting = require(3862) /* explicitContentFromProto */.SwipeRightToLeftModeSetting;
     const setting = SwipeRightToLeftModeSetting.useSetting();
-    if (setting === require(1282) /* _callSuper */.SwipeRightToLeftMode.SWIPE_RIGHT_TO_LEFT_REPLY) {
-      const intl2 = require(1212) /* getSystemLocale */.intl;
-      let stringResult = intl2.string(require(1212) /* getSystemLocale */.t["3tYNDS"]);
+    if (setting === require(1306) /* create */.SwipeRightToLeftMode.SWIPE_RIGHT_TO_LEFT_REPLY) {
+      const intl2 = tmp(1236).intl;
+      let stringResult = intl2.string(tmp(1236).t["3tYNDS"]);
     } else {
       stringResult = null;
-      if (setting === require(1282) /* _callSuper */.SwipeRightToLeftMode.SWIPE_RIGHT_TO_LEFT_CHANNEL_DETAILS) {
-        const intl = require(1212) /* getSystemLocale */.intl;
-        stringResult = intl.string(require(1212) /* getSystemLocale */.t["6eXLcJ"]);
+      if (setting === tmp(1306).SwipeRightToLeftMode.SWIPE_RIGHT_TO_LEFT_CHANNEL_DETAILS) {
+        const intl = tmp(1236).intl;
+        stringResult = intl.string(tmp(1236).t["6eXLcJ"]);
       }
     }
     return stringResult;
@@ -32,7 +32,7 @@ obj = {
 obj = {
   route: require("ME").UserSettingsSections.SWIPE_RIGHT_TO_LEFT,
   getComponent() {
-    return require(14412) /* UserSettingsSwipeRightToLeft */.default;
+    return require(14434) /* UserSettingsSwipeRightToLeft */.default;
   }
 };
 const route = createToggle.createRoute(obj);

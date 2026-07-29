@@ -1,11 +1,11 @@
-// Module ID: 14300
-// Function ID: 109699
+// Module ID: 14322
+// Function ID: 14323
 // Name: SettingsAppearanceLightModeThemePickerScreen
-// Dependencies: [31, 1281, 33, 14261, 1212, 2]
+// Dependencies: [19, 1305, 21, 14283, 1236, 2]
 // Exports: default
 
-// Module 14300 (SettingsAppearanceLightModeThemePickerScreen)
-import "result";
+// Module 14322 (SettingsAppearanceLightModeThemePickerScreen)
+import "noop";
 import { SystemTheme } from "SystemThemeState";
 import { jsx } from "jsxProd";
 
@@ -13,8 +13,8 @@ const require = arg1;
 const result = require("jsxProd").fileFinishedImporting("modules/user_settings/appearance/native/SettingsAppearanceLightModeThemePickerScreen.tsx");
 
 export default function SettingsAppearanceLightModeThemePickerScreen() {
-  const obj = { mode: SystemTheme.LIGHT, themeSelector: "nitro" };
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj.headerTitle = intl.string(require(1212) /* getSystemLocale */.t.NoFvjZ);
-  return jsx(importDefault(14261), { mode: SystemTheme.LIGHT, themeSelector: "nitro" });
+  const obj = { mode: SystemTheme.LIGHT, themeSelector: "nitro", headerTitle: null };
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj[2] = intl.string(require(1236) /* getSystemLocale */.t.NoFvjZ);
+  return jsx(importDefault(14283), { mode: SystemTheme.LIGHT, themeSelector: "nitro", headerTitle: null });
 };

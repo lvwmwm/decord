@@ -1,29 +1,33 @@
-// Module ID: 15541
-// Function ID: 119298
-// Name: getRedirectPath
-// Dependencies: [31, 653, 660, 33, 484, 3993, 2]
-// Exports: default
+// Module ID: 15575
+// Function ID: 15576
+// Name: RedirectUnauthenticated
+// Dependencies: [19, 676, 683, 21, 507, 4017, 2]
+// Exports: default, getRedirectPath
 
-// Module 15541 (getRedirectPath)
-import "result";
+// Module 15575 (RedirectUnauthenticated)
+import "noop";
 import { Routes } from "ME";
 import { CONFERENCE_MODE_ENABLED } from "CONFERENCE_MODE_ENABLED";
 import { jsx } from "jsxProd";
 
 const require = arg1;
-function getRedirectPath() {
-  if (CONFERENCE_MODE_ENABLED) {
-    let REGISTER = Routes.REGISTER;
-  } else {
-    REGISTER = require(484) /* getAuthenticationPath */.getLoginPath(tmp, false);
-    const obj = require(484) /* getAuthenticationPath */;
-  }
-  return REGISTER;
-}
 const result = require("CONFERENCE_MODE_ENABLED").fileFinishedImporting("modules/auth/RedirectUnauthenticated.tsx");
 
 export default function RedirectUnauthenticated() {
-  const obj = { to: getRedirectPath() };
-  return jsx(require(3993) /* _extends */.Redirect, { to: getRedirectPath() });
+  if (CONFERENCE_MODE_ENABLED) {
+    let to = Routes.REGISTER;
+  } else {
+    to = require(507) /* getAuthenticationPath */.getLoginPath(tmp4, false);
+    const tmp2Result = require(507) /* getAuthenticationPath */;
+  }
+  return jsx(require(4017) /* _extends */.Redirect, { to });
 };
-export { getRedirectPath };
+export const getRedirectPath = function getRedirectPath() {
+  if (CONFERENCE_MODE_ENABLED) {
+    let REGISTER = Routes.REGISTER;
+  } else {
+    REGISTER = require(507) /* getAuthenticationPath */.getLoginPath(tmp, false);
+    const obj = require(507) /* getAuthenticationPath */;
+  }
+  return REGISTER;
+};

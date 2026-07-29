@@ -1,16 +1,16 @@
-// Module ID: 13761
-// Function ID: 105491
+// Module ID: 13782
+// Function ID: 13783
 // Name: useSafetyHubFetchError
-// Dependencies: [11048, 566, 2]
+// Dependencies: [11072, 589, 2]
 // Exports: useSafetyHubFetchError
 
-// Module 13761 (useSafetyHubFetchError)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 13782 (useSafetyHubFetchError)
+import handleSafetyHubRequestAgeVerificationResetModalAction from "handleSafetyHubRequestAgeVerificationResetModalAction";
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/safety_hub/hooks/useSafetyHubFetchError.tsx");
 
 export const useSafetyHubFetchError = function useSafetyHubFetchError() {
-  const items = [_isNativeReflectConstruct];
-  return require(566) /* initialize */.useStateFromStores(items, () => outer1_2.getFetchError());
+  const items = [handleSafetyHubRequestAgeVerificationResetModalAction];
+  return require(589) /* initialize */.useStateFromStores(items, () => fetchError.getFetchError());
 };

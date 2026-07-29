@@ -1,399 +1,247 @@
-// Module ID: 4200
-// Function ID: 35354
-// Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 4201, 1194, 653, 587, 4209, 1360, 22, 566, 686, 2]
+// Module ID: 4224
+// Function ID: 4225
+// Name: setLibraryApplications
+// Dependencies: [4225, 1218, 676, 595, 4233, 1384, 589, 12, 709, 2]
 
-// Module 4200 (_isNativeReflectConstruct)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import ME from "ME";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
-import closure_9 from "_isNativeReflectConstruct";
-import closure_10 from "_isNativeReflectConstruct";
+// Module 4224 (setLibraryApplications)
+import createFromServer from "createFromServer";
+import fetchFingerprint from "fetchFingerprint";
 import { LibraryApplicationFlags } from "ME";
-import set from "_possibleConstructorReturn";
+import { Store } from "initialize";
+import set from "ME";
 
 const require = arg1;
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
-  }
-  const result = _isNativeReflectConstruct();
-}
-function _createForOfIteratorHelperLoose(iterable) {
-  let closure_0 = iterable;
-  iterable = "undefined" !== typeof Symbol;
-  if (iterable) {
-    const _Symbol = Symbol;
-    iterable = iterable[Symbol.iterator];
-  }
-  if (!iterable) {
-    iterable = iterable[Symbol.iterator];
-  }
-  if (iterable) {
-    const iter = iterable.call(iterable);
-    const next = iter.next;
-    return next.bind(iter);
-  } else {
-    const _Array = Array;
-    let tmp = iterable;
-    if (!Array.isArray(iterable)) {
-      let tmp2;
-      if (iterable) {
-        if ("string" === typeof iterable) {
-          tmp2 = _arrayLikeToArray(iterable, undefined);
-        } else {
-          const toString = {}.toString;
-          const substr = toString.call(iterable).slice(8, -1);
-          let name = substr;
-          if (tmp3) {
-            name = iterable.constructor.name;
-          }
-          if ("Map" !== name) {
-            if ("Set" !== name) {
-              if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(iterable, undefined);
-              } else {
-                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
-              }
-            }
-            tmp2 = arr;
-          }
-          const _Array2 = Array;
-          arr = Array.from(iterable);
-          const callResult = toString.call(iterable);
-          tmp3 = "Object" === substr && iterable.constructor;
-        }
-      }
-      tmp = tmp2;
-      if (!tmp2) {
-        const _TypeError = TypeError;
-        const typeError = new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
-        throw typeError;
-      }
-    }
-    if (tmp) {
-      closure_0 = tmp;
-    }
-    let c1 = 0;
-    return () => {
-      if (closure_1 >= length.length) {
-        let obj = { done: true };
-      } else {
-        obj = { done: false };
-        closure_1 = tmp3 + 1;
-        obj.value = length[+closure_1];
-      }
-      return obj;
-    };
-  }
-}
-function _arrayLikeToArray(arg0, arg1) {
-  let length;
-  if (tmp) {
-    length = arg0.length;
-  }
-  const ArrayResult = Array(length);
-  for (let num = 0; num < length; num = num + 1) {
-    ArrayResult[num] = arg0[num];
-  }
-  return ArrayResult;
-}
-function getSavedData() {
-  const Storage = require(587) /* Storage */.Storage;
-  let obj = Storage.get(LibraryApplicationStore);
-  if (null == obj) {
-    obj = {};
-  }
-  return obj;
-}
-function saveActiveLaunchOptionIds() {
-  const Storage = require(587) /* Storage */.Storage;
-  const obj = {};
-  const merged = Object.assign(getSavedData());
-  obj["activeLaunchOptionIds"] = closure_18;
-  const result = Storage.set(LibraryApplicationStore, obj);
-}
-function saveActiveLibraryApplicationBranchIds() {
-  const Storage = require(587) /* Storage */.Storage;
-  const obj = {};
-  const merged = Object.assign(getSavedData());
-  obj["activeLibraryApplicationBranchIds"] = closure_17;
-  const result = Storage.set(LibraryApplicationStore, obj);
-}
 function setLibraryApplications(libraryApplications) {
-  let done;
-  const tmp = _createForOfIteratorHelperLoose(libraryApplications);
-  let iter = tmp();
-  if (!iter.done) {
-    do {
-      let tmp2 = closure_9;
-      let fromServer = closure_9.createFromServer(iter.value);
-      let tmp4 = require;
-      let tmp5 = dependencyMap;
-      let obj = require(4209) /* convertToTransitionState */;
-      let tmp6 = closure_14;
-      closure_14[obj.getComboId(fromServer.id, fromServer.branchId)] = fromServer;
-      let iter2 = tmp();
-      iter = iter2;
-      done = iter2.done;
-    } while (!done);
+  while (tmp !== undefined) {
+    let tmp3 = createFromServer;
+    let fromServer = createFromServer.createFromServer(tmp2);
+    let tmp5 = require;
+    let tmp6 = dependencyMap;
+    let obj = require(4233) /* getComboId */;
+    let tmp7 = closure_9;
+    closure_9[obj.getComboId(fromServer.id, fromServer.branchId)] = fromServer;
+    continue;
   }
 }
 function handleLibraryApplicationUpdate(libraryApplication) {
-  const fromServer = closure_9.createFromServer(libraryApplication.libraryApplication);
-  const comboId = require(4209) /* convertToTransitionState */.getComboId(fromServer.id, fromServer.branchId);
-  closure_14[comboId] = fromServer;
+  const fromServer = createFromServer.createFromServer(libraryApplication.libraryApplication);
+  const comboId = require(4233) /* getComboId */.getComboId(fromServer.id, fromServer.branchId);
+  closure_9[comboId] = fromServer;
   set.delete(comboId);
 }
-function _getLibraryApplication(applicationId, branchId) {
-  const comboId = require(4209) /* convertToTransitionState */.getComboId(applicationId, branchId);
-  let tmp2 = table[comboId];
-  if (null == tmp2) {
-    tmp2 = table2[comboId];
-  }
-  return tmp2;
-}
-function _getAllLibraryApplications() {
-  const merged = Object.assign(closure_15);
-  const merged1 = Object.assign(closure_14);
-  return {};
-}
 const LibraryApplicationStore = "LibraryApplicationStore";
-let c13 = false;
-let closure_14 = {};
-let closure_15 = {};
+let c8 = false;
+let closure_9 = {};
+let closure_10 = {};
 let set = new Set();
-let closure_17 = {};
-let closure_18 = {};
-let c19 = false;
-let tmp3 = ((Store) => {
-  class LibraryApplicationStore {
-    constructor() {
-      self = this;
-      tmp = outer1_4(this, LibraryApplicationStore);
-      obj = outer1_7(LibraryApplicationStore);
-      tmp2 = outer1_6;
-      if (outer1_20()) {
-        tmp6 = globalThis;
-        _Reflect = Reflect;
-        tmp7 = outer1_7;
-        tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, outer1_7(self).constructor);
-      } else {
-        tmp3 = arguments;
-        tmp4 = arguments;
-        constructResult = obj(...arguments);
+let closure_12 = {};
+let closure_13 = {};
+let c14 = false;
+class LibraryApplicationStore extends Store {
+}
+const prototype = LibraryApplicationStore.prototype;
+prototype["initialize"] = function initialize() {
+  this.waitFor(fetchFingerprint);
+  const Storage = require(595) /* Storage */.Storage;
+  let value = Storage.get(LibraryApplicationStore);
+  if (null != value) {
+    if (null == value.activeLaunchOptionIds) {
+      const Storage2 = tmp2(595).Storage;
+      const Storage3 = tmp2(595).Storage;
+      value = Storage3.get(tmp4);
+      if (value == null) {
+        value = {};
       }
-      return tmp2(self, constructResult);
+      let obj = {};
+      const merged = Object.assign(value);
+      obj.activeLaunchOptionIds = activeLaunchOptionIds;
+      const result = Storage2.set(tmp4, obj);
+    } else {
+      activeLaunchOptionIds = value.activeLaunchOptionIds;
+    }
+    if (null == value.activeLibraryApplicationBranchIds) {
+      const Storage4 = tmp2(595).Storage;
+      const Storage5 = tmp2(595).Storage;
+      let value1 = Storage5.get(tmp4);
+      if (value1 == null) {
+        value1 = {};
+      }
+      obj = {};
+      const merged1 = Object.assign(value1);
+      obj.activeLibraryApplicationBranchIds = closure_12;
+      const result1 = Storage4.set(tmp4, obj);
+    } else {
+      closure_12 = value.activeLibraryApplicationBranchIds;
     }
   }
-  callback2(LibraryApplicationStore, Store);
-  let obj = {
-    key: "initialize",
-    value() {
-      this.waitFor(outer1_10);
-      const Storage = LibraryApplicationStore(outer1_3[8]).Storage;
-      const value = Storage.get(outer1_12);
-      if (null != value) {
-        if (null == value.activeLaunchOptionIds) {
-          outer1_24();
-        } else {
-          const outer1_18 = value.activeLaunchOptionIds;
-        }
-        if (null == value.activeLibraryApplicationBranchIds) {
-          outer1_25();
-        } else {
-          const outer1_17 = value.activeLibraryApplicationBranchIds;
-        }
+};
+Object.defineProperty(prototype, "libraryApplications", {
+  get: function libraryApplications() {
+    const obj = {};
+    const merged = Object.assign(closure_10);
+    const merged1 = Object.assign(closure_9);
+    const keys = Object.keys(obj);
+    const item = keys.forEach((arg0) => {
+      if (isHiddenResult) {
+        delete tmp[tmp2];
       }
+    });
+    return obj;
+  },
+  set: undefined
+});
+prototype["getAllLibraryApplications"] = function getAllLibraryApplications() {
+  const merged = Object.assign(closure_10);
+  const merged1 = Object.assign(closure_9);
+  return {};
+};
+prototype["hasLibraryApplication"] = function hasLibraryApplication() {
+  const merged = Object.assign(closure_10);
+  const merged1 = Object.assign(closure_9);
+  return Object.keys({}).length > 0;
+};
+prototype["hasApplication"] = function hasApplication(arg0, arg1) {
+  let flag = arg2;
+  if (arg2 === undefined) {
+    flag = false;
+  }
+  const comboId = require(4233) /* getComboId */.getComboId(arg0, arg1);
+  let obj2 = dependencyMap[comboId];
+  if (obj2 == null) {
+    obj2 = dependencyMap2[comboId];
+  }
+  let tmp5 = null != obj2;
+  if (tmp5) {
+    let isHiddenResult = !flag;
+    if (!flag) {
+      isHiddenResult = obj2.isHidden();
     }
-  };
-  const items = [obj, , , , , , , , , , , , ];
-  obj = {
-    key: "libraryApplications",
-    get() {
-      return (function getLibraryApplicationsFiltered(arg0) {
-        let closure_0 = arg0;
-        const tmp = outer2_28();
-        let closure_1 = tmp;
-        const keys = Object.keys(tmp);
-        const item = keys.forEach((arg0) => {
-          if (!callback(tmp[arg0])) {
-            delete tmp[tmp2];
-          }
-        });
-        return tmp;
-      })((isHidden) => !isHidden.isHidden());
+    let result = !isHiddenResult;
+    if (!isHiddenResult) {
+      result = require(4233) /* getComboId */.isUserEntitledToLibraryApplication(obj2);
+      const tmpResult = require(4233) /* getComboId */;
     }
-  };
-  items[1] = obj;
-  obj = {
-    key: "getAllLibraryApplications",
-    value() {
-      return outer1_28();
+    tmp5 = result;
+  }
+  return tmp5;
+};
+prototype["getLibraryApplication"] = function getLibraryApplication(applicationId, arg1, arg2) {
+  let flag = arg2;
+  if (arg2 === undefined) {
+    flag = false;
+  }
+  const comboId = require(4233) /* getComboId */.getComboId(applicationId, arg1);
+  let tmp4 = dependencyMap[comboId];
+  if (tmp4 == null) {
+    tmp4 = dependencyMap2[comboId];
+  }
+  let tmp6 = tmp4;
+  if (flag) {
+    tmp6 = tmp4;
+    if (null != tmp4) {
+      let tmp7 = null;
+      if (tmpResult.isUserEntitledToLibraryApplication(tmp4)) {
+        tmp7 = tmp4;
+      }
+      tmp6 = tmp7;
+      tmpResult = require(4233) /* getComboId */;
     }
-  };
-  items[2] = obj;
-  items[3] = {
-    key: "hasLibraryApplication",
-    value() {
-      return Object.keys(outer1_28()).length > 0;
+  }
+  return tmp6;
+};
+prototype["getActiveLibraryApplication"] = function getActiveLibraryApplication(id) {
+  let flag = arg1;
+  if (arg1 === undefined) {
+    flag = false;
+  }
+  if (null != dependencyMap3[id]) {
+    let obj = require(4233) /* getComboId */;
+    const comboId = obj.getComboId(id, tmp);
+    let obj2 = dependencyMap[comboId];
+    if (obj2 == null) {
+      obj2 = dependencyMap2[comboId];
     }
-  };
-  items[4] = {
-    key: "hasApplication",
-    value(arg0, arg1) {
-      let flag = arg2;
-      if (arg2 === undefined) {
-        flag = false;
+    if (null != obj2) {
+      if (tmp2Result.isUserEntitledToLibraryApplication(obj2)) {
+        return obj2;
       }
-      const obj = outer1_27(arg0, arg1);
-      let tmp = null != obj;
-      if (tmp) {
-        let result = !(!flag && obj.isHidden());
-        if (result) {
-          result = LibraryApplicationStore(outer1_3[9]).isUserEntitledToLibraryApplication(obj);
-          const obj2 = LibraryApplicationStore(outer1_3[9]);
-        }
-        tmp = result;
-        const tmp2 = !flag && obj.isHidden();
-      }
-      return tmp;
+      tmp2Result = tmp2(4233);
     }
-  };
-  items[5] = {
-    key: "getLibraryApplication",
-    value(arg0, arg1) {
-      let flag = arg2;
-      if (arg2 === undefined) {
-        flag = false;
-      }
-      const tmp = outer1_27(arg0, arg1);
-      let tmp2 = tmp;
-      if (flag) {
-        tmp2 = tmp;
-        if (null != tmp) {
-          let tmp6 = null;
-          if (obj.isUserEntitledToLibraryApplication(tmp)) {
-            tmp6 = tmp;
-          }
-          tmp2 = tmp6;
-          obj = LibraryApplicationStore(outer1_3[9]);
-        }
-      }
-      return tmp2;
-    }
-  };
-  items[6] = {
-    key: "getActiveLibraryApplication",
-    value(arg0) {
-      let flag = arg1;
-      if (arg1 === undefined) {
-        flag = false;
-      }
-      if (null != outer1_17[arg0]) {
-        const comboId = LibraryApplicationStore(outer1_3[9]).getComboId(arg0, tmp);
-        let obj2 = outer1_14[comboId];
-        if (null == obj2) {
-          obj2 = outer1_15[comboId];
-        }
-        if (null != obj2) {
-          if (obj3.isUserEntitledToLibraryApplication(obj2)) {
-            return obj2;
-          }
-          obj3 = LibraryApplicationStore(outer1_3[9]);
-        }
-        const obj = LibraryApplicationStore(outer1_3[9]);
-      }
-      const tmp9 = outer1_28();
-      for (const key10030 in tmp9) {
-        let tmp14 = key10030;
-        if (tmp9[key10030].id !== arg0) {
-          continue;
-        } else {
-          let obj4 = tmp9[key10030];
-          let tmp10 = LibraryApplicationStore;
-          let tmp11 = outer1_3;
-          let obj5 = LibraryApplicationStore(outer1_3[9]);
-          let tmp12 = obj4;
-          if (!obj5.isUserEntitledToLibraryApplication(obj4)) {
-            continue;
-          } else {
-            if (!flag) {
-              let tmp13 = obj4;
-            }
-            return obj4;
-          }
-          continue;
-        }
+    tmp2 = require;
+  }
+  obj = {};
+  const merged = Object.assign(dependencyMap2);
+  const merged1 = Object.assign(dependencyMap);
+  for (const key10030 in obj) {
+    let tmp11 = key10030;
+    if (obj[key10030].id !== arg0) {
+      continue;
+    } else {
+      let obj5 = obj[key10030];
+      let tmp9 = require;
+      let tmp10 = dependencyMap;
+      let obj6 = require(4233) /* getComboId */;
+      if (!obj6.isUserEntitledToLibraryApplication(obj5)) {
         continue;
+      } else {
+        return obj5;
       }
+      continue;
     }
-  };
-  items[7] = {
-    key: "isUpdatingFlags",
-    value(arg0, arg1) {
-      return outer1_16.has(LibraryApplicationStore(outer1_3[9]).getComboId(arg0, arg1));
+    continue;
+  }
+};
+prototype["isUpdatingFlags"] = function isUpdatingFlags(arg0, arg1) {
+  return set.has(require(4233) /* getComboId */.getComboId(arg0, arg1));
+};
+prototype["getActiveLaunchOptionId"] = function getActiveLaunchOptionId(arg0, arg1) {
+  const obj = require(4233) /* getComboId */;
+  return table[obj.getComboId(obj, arg0, arg1)];
+};
+Object.defineProperty(prototype, "fetched", {
+  get: function fetched(arg0) {
+    return c8;
+  },
+  set: undefined
+});
+Object.defineProperty(prototype, "entitledBranchIds", {
+  get: function entitledBranchIds() {
+    const merged = Object.assign(closure_10);
+    const merged1 = Object.assign(closure_9);
+    const obj = {};
+    const tmp = importDefault(12);
+    const values = importDefault(12)({}).values();
+    const found = values.filter((libraryApplication) => callback(table[4]).isUserEntitledToLibraryApplication(libraryApplication));
+    const tmpResult = importDefault(12)({});
+    return found.map((branchId) => branchId.branchId).value();
+  },
+  set: undefined
+});
+Object.defineProperty(prototype, "hasRemovedLibraryApplicationThisSession", {
+  get: function hasRemovedLibraryApplicationThisSession() {
+    return c14;
+  },
+  set: undefined
+});
+prototype["whenInitialized"] = function whenInitialized(arg0) {
+  let closure_0 = arg0;
+  const result = this.addConditionalChangeListener(() => {
+    if (outer1_8) {
+      const _setImmediate = setImmediate;
+      setImmediate(closure_0);
+      return false;
     }
-  };
-  items[8] = {
-    key: "getActiveLaunchOptionId",
-    value(arg0, arg1) {
-      const obj = LibraryApplicationStore(outer1_3[9]);
-      return outer1_18[obj.getComboId(obj, arg0, arg1)];
-    }
-  };
-  items[9] = {
-    key: "fetched",
-    get() {
-      return outer1_13;
-    }
-  };
-  items[10] = {
-    key: "entitledBranchIds",
-    get() {
-      const tmp = outer1_1(outer1_3[11]);
-      const values = outer1_1(outer1_3[11])(outer1_28()).values();
-      const found = values.filter((libraryApplication) => LibraryApplicationStore(outer2_3[9]).isUserEntitledToLibraryApplication(libraryApplication));
-      const tmpResult = outer1_1(outer1_3[11])(outer1_28());
-      return found.map((branchId) => branchId.branchId).value();
-    }
-  };
-  items[11] = {
-    key: "hasRemovedLibraryApplicationThisSession",
-    get() {
-      return outer1_19;
-    }
-  };
-  items[12] = {
-    key: "whenInitialized",
-    value(arg0) {
-      let closure_0 = arg0;
-      const result = this.addConditionalChangeListener(() => {
-        if (outer2_13) {
-          const _setImmediate = setImmediate;
-          setImmediate(closure_0);
-          return false;
-        }
-      });
-    }
-  };
-  return callback(LibraryApplicationStore, items);
-})(require("initialize").Store);
-tmp3.displayName = "LibraryApplicationStore";
-tmp3 = new tmp3(require("dispatcher"), {
+  });
+};
+LibraryApplicationStore.displayName = "LibraryApplicationStore";
+const libraryApplicationStore = new LibraryApplicationStore(require("dispatcher"), {
   LOGOUT: function handleLogout() {
-    let c13 = false;
+    let c8 = false;
   },
   LIBRARY_FETCH_SUCCESS: function handleFetchSuccess(libraryApplications) {
-    let closure_14 = {};
+    let closure_9 = {};
     setLibraryApplications(libraryApplications.libraryApplications);
-    let c13 = true;
+    let c8 = true;
   },
   SKU_PURCHASE_SUCCESS: function handlePurchaseSuccess(libraryApplications) {
     setLibraryApplications(libraryApplications.libraryApplications);
@@ -402,15 +250,20 @@ tmp3 = new tmp3(require("dispatcher"), {
     let applicationId;
     let branchId;
     ({ applicationId, branchId } = flags);
-    const comboId = require(4209) /* convertToTransitionState */.getComboId(applicationId, branchId);
-    const obj2 = _getLibraryApplication(applicationId, branchId);
-    let hasFlagResult = null != obj2 && !obj2.isHidden();
+    const comboId = require(4233) /* getComboId */.getComboId(applicationId, branchId);
+    const obj = require(4233) /* getComboId */;
+    const comboId1 = require(4233) /* getComboId */.getComboId(applicationId, branchId);
+    let obj3 = dependencyMap[comboId1];
+    if (obj3 == null) {
+      obj3 = dependencyMap2[comboId1];
+    }
+    let hasFlagResult = null != obj3 && !obj3.isHidden();
     if (hasFlagResult) {
-      hasFlagResult = importAll(1360).hasFlag(flags.flags, LibraryApplicationFlags.HIDDEN);
-      const obj3 = importAll(1360);
+      hasFlagResult = importAll(1384).hasFlag(flags.flags, LibraryApplicationFlags.HIDDEN);
+      const obj4 = importAll(1384);
     }
     if (hasFlagResult) {
-      let c19 = true;
+      let c14 = true;
     }
     set.add(comboId);
   },
@@ -421,42 +274,53 @@ tmp3 = new tmp3(require("dispatcher"), {
     let branchId;
     let launchOptionId;
     ({ applicationId, branchId, launchOptionId } = arg0);
-    closure_18[require(4209) /* convertToTransitionState */.getComboId(applicationId, branchId)] = launchOptionId;
-    saveActiveLaunchOptionIds();
+    let obj = require(4233) /* getComboId */;
+    closure_13[obj.getComboId(applicationId, branchId)] = launchOptionId;
+    const Storage = require(595) /* Storage */.Storage;
+    const Storage2 = require(595) /* Storage */.Storage;
+    obj = Storage2.get(LibraryApplicationStore);
+    if (obj == null) {
+      obj = {};
+    }
+    obj = {};
+    const merged = Object.assign(obj);
+    obj.activeLaunchOptionIds = closure_13;
+    const result = Storage.set(LibraryApplicationStore, obj);
   },
   LIBRARY_APPLICATION_ACTIVE_BRANCH_UPDATE: function handleActiveBranchUpdate(arg0) {
     let applicationId;
     let branchId;
     ({ applicationId, branchId } = arg0);
-    if (table3[applicationId] === branchId) {
+    if (dependencyMap3[applicationId] === branchId) {
       return false;
     } else {
-      table3[applicationId] = branchId;
-      saveActiveLibraryApplicationBranchIds();
+      dependencyMap3[applicationId] = branchId;
+      const Storage = require(595) /* Storage */.Storage;
+      const Storage2 = require(595) /* Storage */.Storage;
+      let obj = Storage2.get(LibraryApplicationStore);
+      if (obj == null) {
+        obj = {};
+      }
+      obj = {};
+      const merged = Object.assign(obj);
+      obj.activeLibraryApplicationBranchIds = dependencyMap3;
+      const result = Storage.set(LibraryApplicationStore, obj);
     }
   },
-  LIBRARY_APPLICATIONS_TEST_MODE_ENABLED: function handleTestModeEnabled(libraryApplications) {
-    let done;
-    const tmp = _createForOfIteratorHelperLoose(libraryApplications.libraryApplications);
-    let iter = tmp();
-    if (!iter.done) {
-      do {
-        let value = iter.value;
-        let tmp2 = require;
-        let tmp3 = dependencyMap;
-        let obj = require(4209) /* convertToTransitionState */;
-        let tmp4 = closure_15;
-        closure_15[obj.getComboId(value.id, value.branchId)] = value;
-        let iter2 = tmp();
-        iter = iter2;
-        done = iter2.done;
-      } while (!done);
+  LIBRARY_APPLICATIONS_TEST_MODE_ENABLED: function handleTestModeEnabled(arg0) {
+    for (const item10006 of tmp) {
+      let tmp2 = require;
+      let tmp3 = dependencyMap;
+      let obj = require(4233) /* getComboId */;
+      let tmp4 = closure_10;
+      closure_10[obj.getComboId(item10006.id, item10006.branchId)] = item10006;
+      continue;
     }
   },
   DEVELOPER_TEST_MODE_RESET: function handleTestModeDisabled() {
-    let closure_15 = {};
+    let closure_10 = {};
   }
 });
 let result = set.fileFinishedImporting("stores/LibraryApplicationStore.tsx");
 
-export default tmp3;
+export default libraryApplicationStore;

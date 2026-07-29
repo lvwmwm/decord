@@ -1,91 +1,12 @@
-// Module ID: 5162
-// Function ID: 44597
-// Name: _createForOfIteratorHelperLoose
-// Dependencies: [5026, 3806, 5163, 1327, 5164, 2]
+// Module ID: 5184
+// Function ID: 5185
+// Name: getEmoji
+// Dependencies: [5048, 3830, 5185, 1351, 5186, 2]
 // Exports: buildGuildProfileFromInvite, buildGuildProfileUpdateForServer, buildTopGamesFromServer
 
-// Module 5162 (_createForOfIteratorHelperLoose)
-import { EmojiDisambiguations } from "_isNativeReflectConstruct";
+// Module 5184 (getEmoji)
+import { EmojiDisambiguations } from "getEmojiToGroupId";
 
-function _createForOfIteratorHelperLoose(iterable) {
-  let closure_0 = iterable;
-  iterable = "undefined" !== typeof Symbol;
-  if (iterable) {
-    const _Symbol = Symbol;
-    iterable = iterable[Symbol.iterator];
-  }
-  if (!iterable) {
-    iterable = iterable[Symbol.iterator];
-  }
-  if (iterable) {
-    const iter = iterable.call(iterable);
-    const next = iter.next;
-    return next.bind(iter);
-  } else {
-    const _Array = Array;
-    let tmp = iterable;
-    if (!Array.isArray(iterable)) {
-      let tmp2;
-      if (iterable) {
-        if ("string" === typeof iterable) {
-          tmp2 = _arrayLikeToArray(iterable, undefined);
-        } else {
-          const toString = {}.toString;
-          const substr = toString.call(iterable).slice(8, -1);
-          let name = substr;
-          if (tmp3) {
-            name = iterable.constructor.name;
-          }
-          if ("Map" !== name) {
-            if ("Set" !== name) {
-              if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(iterable, undefined);
-              } else {
-                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
-              }
-            }
-            tmp2 = arr;
-          }
-          const _Array2 = Array;
-          arr = Array.from(iterable);
-          const callResult = toString.call(iterable);
-          tmp3 = "Object" === substr && iterable.constructor;
-        }
-      }
-      tmp = tmp2;
-      if (!tmp2) {
-        const _TypeError = TypeError;
-        const typeError = new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
-        throw typeError;
-      }
-    }
-    if (tmp) {
-      closure_0 = tmp;
-    }
-    let c1 = 0;
-    return () => {
-      if (closure_1 >= length.length) {
-        let obj = { done: true };
-      } else {
-        obj = { done: false };
-        closure_1 = tmp3 + 1;
-        obj.value = length[+closure_1];
-      }
-      return obj;
-    };
-  }
-}
-function _arrayLikeToArray(arg0, arg1) {
-  let length;
-  if (tmp) {
-    length = arg0.length;
-  }
-  const ArrayResult = Array(length);
-  for (let num = 0; num < length; num = num + 1) {
-    ArrayResult[num] = arg0[num];
-  }
-  return ArrayResult;
-}
 function getEmoji(guildId) {
   let emojiId;
   let emojiName;
@@ -107,45 +28,39 @@ function getEmoji(guildId) {
   } else {
     byName = null;
     if (byId != emojiName) {
-      byName = importDefault(3806).getByName(emojiName);
-      const obj2 = importDefault(3806);
+      byName = importDefault(3830).getByName(emojiName);
+      const obj2 = importDefault(3830);
     }
   }
 }
-function buildGuildProfileTraitsFromServer(guildId) {
-  let iter3;
+function buildGuildProfileTraitsFromServer(arg0, arg1) {
   let position;
-  const array = new Array(require(5163) /* MAX_TRAITS */.MAX_TRAITS);
-  const fillResult = array.fill(closure_4);
-  const tmp2 = _createForOfIteratorHelperLoose(arg1);
-  const iter = tmp2();
-  let iter2 = iter;
-  if (!iter.done) {
-    do {
-      let value = iter2.value;
-      let tmp3 = value.position < 0;
-      if (!tmp3) {
-        let tmp4 = require;
-        let tmp5 = dependencyMap;
-        tmp3 = value.position >= require(5163) /* MAX_TRAITS */.MAX_TRAITS;
-      }
-      if (!tmp3) {
-        let obj = { label: value.label };
-        let tmp6 = getEmoji;
-        obj = { guildId };
-        ({ emoji_id: obj3.emojiId, emoji_name: obj3.emojiName, position } = value);
-        let tmp7 = getEmoji(obj);
-        let tmp8;
-        if (null != tmp7) {
-          tmp8 = tmp7;
-        }
-        obj.emoji = tmp8;
-        fillResult[position] = obj;
-        let tmp9 = tmp7;
-      }
-      iter3 = tmp2();
-      iter2 = iter3;
-    } while (!iter3.done);
+  const array = new Array(require(5185) /* MAX_TRAITS */.MAX_TRAITS);
+  const fillResult = array.fill(closure_5);
+  const iter = arg1[Symbol.iterator]();
+  const nextResult = iter.next();
+  while (iter !== undefined) {
+    let tmp3 = nextResult;
+    let tmp4 = nextResult.position < 0;
+    if (!tmp4) {
+      let tmp5 = nextResult;
+      let tmp6 = require;
+      let tmp7 = dependencyMap;
+      tmp4 = tmp3.position >= require(5185) /* MAX_TRAITS */.MAX_TRAITS;
+    }
+    if (!tmp4) {
+      let tmp8 = nextResult;
+      let obj = { label: null, emoji: null };
+      obj[0] = tmp3.label;
+      let tmp9 = getEmoji;
+      obj = { guildId: null, emojiId: null, emojiName: null };
+      obj[0] = arg0;
+      ({ emoji_id: obj3[1], emoji_name: obj3[2], position } = tmp3);
+      let tmp10 = getEmoji(obj);
+      obj[1] = tmp10;
+      fillResult[position] = obj;
+    }
+    continue;
   }
   return fillResult;
 }
@@ -153,14 +68,13 @@ function buildGuildProfileFromServer(profile) {
   let brand_color_primary;
   let features;
   let traits;
-  let reduced = { id: profile.id, name: profile.name };
-  const description = profile.description;
-  let str = "";
-  if (null != description) {
-    str = description;
+  let reduced = { id: profile.id, name: profile.name, description: null, icon: null, customBanner: null, onlineCount: null, memberCount: null, brandColorPrimary: null, visibility: null, traits: null, gameApplicationIds: null, gameActivity: null, games: null, features: null, tag: null, badge: null, badgeColorPrimary: null, badgeColorSecondary: null, badgeHash: null, premiumSubscriberCount: null, premiumTier: null };
+  let str = profile.description;
+  if (str == null) {
+    str = "";
   }
-  reduced.description = str;
-  ({ icon_hash: obj.icon, custom_banner_hash: obj.customBanner, online_count: obj.onlineCount, member_count: obj.memberCount, brand_color_primary } = profile);
+  reduced[2] = str;
+  ({ icon_hash: obj[3], custom_banner_hash: obj[4], online_count: obj[5], member_count: obj[6], brand_color_primary } = profile);
   let tmp = null;
   if (null != brand_color_primary) {
     tmp = null;
@@ -168,17 +82,17 @@ function buildGuildProfileFromServer(profile) {
       tmp = brand_color_primary;
     }
   }
-  reduced.brandColorPrimary = tmp;
-  ({ visibility: obj.visibility, traits } = profile);
-  if (null == traits) {
+  reduced[7] = tmp;
+  ({ visibility: obj[8], traits } = profile);
+  if (traits == null) {
     traits = [];
   }
-  reduced.traits = buildGuildProfileTraitsFromServer(profile.id, traits);
+  reduced[9] = buildGuildProfileTraitsFromServer(profile.id, traits);
   let game_application_ids = profile.game_application_ids;
-  if (null == game_application_ids) {
+  if (game_application_ids == null) {
     game_application_ids = [];
   }
-  reduced.gameApplicationIds = game_application_ids;
+  reduced[10] = game_application_ids;
   const game_activity = profile.game_activity;
   if (null == game_activity) {
     reduced = {};
@@ -193,16 +107,16 @@ function buildGuildProfileFromServer(profile) {
       return arg0;
     }, {});
   }
-  reduced.gameActivity = reduced;
-  ({ games: obj.games, features } = profile);
-  if (null == features) {
+  reduced[11] = reduced;
+  ({ games: obj[12], features } = profile);
+  if (features == null) {
     features = [];
   }
-  reduced.features = features;
-  ({ tag: obj.tag, badge: obj.badge, badge_color_primary: obj.badgeColorPrimary, badge_color_secondary: obj.badgeColorSecondary, badge_hash: obj.badgeHash, premium_subscription_count: obj.premiumSubscriberCount, premium_tier: obj.premiumTier } = profile);
+  reduced[13] = features;
+  ({ tag: obj[14], badge: obj[15], badge_color_primary: obj[16], badge_color_secondary: obj[17], badge_hash: obj[18], premium_subscription_count: obj[19], premium_tier: obj[20] } = profile);
   return reduced;
 }
-let closure_4 = { label: "" };
+let closure_5 = { label: "" };
 const result = require("MAX_TRAITS").fileFinishedImporting("modules/guild_profile/GuildProfileBuilders.tsx");
 
 export { buildGuildProfileFromServer };
@@ -228,40 +142,42 @@ export const buildGuildProfileUpdateForServer = function buildGuildProfileUpdate
   }
   if (null != name.traits) {
     const traits = name.traits;
-    const mapped = traits.map((label, position) => {
+    const mapped = traits.map((label) => {
       label = undefined;
-      if (null != label) {
+      if (label != null) {
         label = label.label;
       }
       let tmp2 = null;
       if (null != label) {
         tmp2 = null;
         if (label.label.length > 0) {
-          const obj = { label: label.label, position };
+          const obj = { label: null, position: null, emoji_id: null, emoji_name: null, emoji_animated: null };
+          obj[0] = label.label;
+          obj[1] = arg1;
           const emoji = label.emoji;
           let id;
-          if (null != emoji) {
+          if (emoji != null) {
             id = emoji.id;
           }
-          obj.emoji_id = id;
+          obj[2] = id;
           const emoji2 = label.emoji;
           let name;
-          if (null != emoji2) {
+          if (emoji2 != null) {
             name = emoji2.name;
           }
-          obj.emoji_name = name;
+          obj[3] = name;
           const emoji3 = label.emoji;
           let animated;
-          if (null != emoji3) {
+          if (emoji3 != null) {
             animated = emoji3.animated;
           }
-          obj.emoji_animated = animated;
+          obj[4] = animated;
           tmp2 = obj;
         }
       }
       return tmp2;
     });
-    obj.traits = mapped.filter(require(1327) /* isDiscordFrontendDevelopment */.isNotNullish);
+    obj.traits = mapped.filter(require(1351) /* isDiscordFrontendDevelopment */.isNotNullish);
   }
   if (null != name.gameApplicationIds) {
     obj.game_application_ids = name.gameApplicationIds;
@@ -298,47 +214,38 @@ export const buildGuildProfileFromInvite = function buildGuildProfileFromInvite(
   if (null == tmp) {
     let tmp5 = null;
     if (null != guild) {
-      const obj = {};
-      ({ id: obj.id, name: obj.name, description } = guild);
-      let str = "";
-      if (null != description) {
-        str = description;
+      const obj = { id: null, name: null, description: null, icon: null, customBanner: null, onlineCount: null, memberCount: null, visibility: null, traits: null, gameApplicationIds: null, gameActivity: null, features: null, brandColorPrimary: null, tag: null, badge: null, badgeHash: null, badgeColorPrimary: null, badgeColorSecondary: null, premiumSubscriberCount: null, premiumTier: null };
+      ({ id: obj[0], name: obj[1], description } = guild);
+      if (description == null) {
+        description = "";
       }
-      obj.description = str;
-      ({ icon: obj.icon, banner: obj.customBanner, approximate_presence_count } = guild);
-      if (null == approximate_presence_count) {
+      obj[2] = description;
+      ({ icon: obj[3], banner: obj[4], approximate_presence_count } = guild);
+      if (approximate_presence_count == null) {
         approximate_presence_count = approximate_presence_count.approximate_presence_count;
       }
-      let num = 0;
-      if (null != approximate_presence_count) {
-        num = approximate_presence_count;
+      if (approximate_presence_count == null) {
+        approximate_presence_count = 0;
       }
-      obj.onlineCount = num;
-      let approximate_member_count = guild.approximate_member_count;
-      if (null == approximate_member_count) {
-        approximate_member_count = approximate_presence_count.approximate_member_count;
+      obj[5] = approximate_presence_count;
+      let num = guild.approximate_member_count;
+      if (num == null) {
+        num = approximate_presence_count.approximate_member_count;
       }
-      let num2 = 0;
-      if (null != approximate_member_count) {
-        num2 = approximate_member_count;
+      if (num == null) {
+        num = 0;
       }
-      obj.memberCount = num2;
-      obj.visibility = require(5164) /* GuildProfileVisibility */.GuildProfileVisibility.NOT_SPECIFIED;
-      obj.traits = [];
-      obj.gameApplicationIds = [];
-      obj.gameActivity = {};
+      obj[6] = num;
+      obj[7] = require(5186) /* GuildProfileVisibility */.GuildProfileVisibility.NOT_SPECIFIED;
+      obj[8] = [];
+      obj[9] = [];
+      obj[10] = {};
       let features = guild.features;
-      if (null == features) {
+      if (features == null) {
         features = [];
       }
-      obj.features = features;
-      obj.brandColorPrimary = null;
-      obj.tag = null;
-      obj.badge = null;
-      obj.badgeHash = null;
-      obj.badgeColorPrimary = null;
-      obj.badgeColorSecondary = null;
-      ({ premium_subscription_count: obj.premiumSubscriberCount, premium_tier: obj.premiumTier } = guild);
+      obj[11] = features;
+      ({ premium_subscription_count: obj[18], premium_tier: obj[19] } = guild);
       tmp5 = obj;
     }
     tmp = tmp5;

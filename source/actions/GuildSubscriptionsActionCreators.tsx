@@ -1,79 +1,79 @@
-// Module ID: 6053
-// Function ID: 53916
-// Name: subscribeChannel
-// Dependencies: [686, 6040, 2]
-// Exports: subscribeChannelDimensions, subscribeGuild, subscribeMembers, subscribeToMemberUpdates, unsubscribeFromMemberUpdates, unsubscribeMembers
+// Module ID: 6071
+// Function ID: 6072
+// Name: subscribeMembers
+// Dependencies: [709, 6058, 2]
+// Exports: subscribeChannel, subscribeChannelDimensions, subscribeGuild, subscribeMembers, subscribeToMemberUpdates, unsubscribeFromMemberUpdates, unsubscribeMembers
 
-// Module 6053 (subscribeChannel)
-function subscribeChannel(guildId, channelId, DEFAULT_RANGES) {
-  let obj = importDefault(686);
-  obj = { type: "GUILD_SUBSCRIPTIONS_CHANNEL", guildId, channelId, ranges: DEFAULT_RANGES };
-  obj.dispatch(obj);
-}
+// Module 6071 (subscribeMembers)
 let result = require("set").fileFinishedImporting("actions/GuildSubscriptionsActionCreators.tsx");
 
 export const subscribeMembers = function subscribeMembers(guildId, userIds) {
-  let obj = importDefault(686);
+  let obj = importDefault(709);
   obj = { type: "GUILD_SUBSCRIPTIONS_MEMBERS_ADD", guildId, userIds };
   obj.dispatch(obj);
 };
 export const unsubscribeMembers = function unsubscribeMembers(guildId, userIds) {
-  let obj = importDefault(686);
+  let obj = importDefault(709);
   obj = { type: "GUILD_SUBSCRIPTIONS_MEMBERS_REMOVE", guildId, userIds };
   obj.dispatch(obj);
 };
 export const subscribeToMemberUpdates = function subscribeToMemberUpdates(guildId) {
-  let obj = importDefault(686);
+  let obj = importDefault(709);
   obj = { type: "GUILD_SUBSCRIPTIONS_ADD_MEMBER_UPDATES", guildId };
   obj.dispatch(obj);
 };
 export const unsubscribeFromMemberUpdates = function unsubscribeFromMemberUpdates(guildId) {
-  let obj = importDefault(686);
+  let obj = importDefault(709);
   obj = { type: "GUILD_SUBSCRIPTIONS_REMOVE_MEMBER_UPDATES", guildId };
   obj.dispatch(obj);
 };
-export const subscribeGuild = function subscribeGuild(guildId) {
-  let obj = importDefault(686);
-  obj = { type: "GUILD_SUBSCRIPTIONS", guildId };
+export const subscribeGuild = function subscribeGuild(id) {
+  let obj = importDefault(709);
+  obj = { type: "GUILD_SUBSCRIPTIONS", guildId: id };
   obj.dispatch(obj);
 };
-export { subscribeChannel };
+export const subscribeChannel = function subscribeChannel(guildId, channelId, ranges) {
+  let obj = importDefault(709);
+  obj = { type: "GUILD_SUBSCRIPTIONS_CHANNEL", guildId, channelId, ranges };
+  obj.dispatch(obj);
+};
 export const subscribeChannelDimensions = function subscribeChannelDimensions(arg0) {
   let channelId;
   let guildId;
   let height;
-  let require;
+  let rowHeight;
   let y;
-  ({ y, height, rowHeight: require } = arg0);
-  function toIndex(arg0, toIndexResult) {
-    let num = toIndexResult;
-    if (toIndexResult === undefined) {
-      num = 0;
-    }
-    return Math.max(0, Math.ceil(Math.ceil(arg0 / closure_0)) + num);
-  }
-  function pushRange(result) {
-    const sum = result + (outer1_0(outer1_2[1]).MINIMUM_RANGE - 1);
-    const items = [result, sum];
-    items.push(items);
-    return sum + 1;
-  }
-  let items = [];
+  ({ y, height, rowHeight } = arg0);
   ({ guildId, channelId } = arg0);
-  const toIndexResult = toIndex(0.5 * height);
-  const toIndexResult1 = toIndex(y, -toIndexResult);
-  const toIndexResult2 = toIndex(y + height, toIndexResult);
-  let bound = toIndexResult1;
-  if (toIndexResult1 > 0) {
+  const bound = Math.max(0, Math.ceil(Math.ceil(0.5 * height / rowHeight)));
+  const bound1 = Math.max(0, Math.ceil(Math.ceil(y / rowHeight)) + -bound);
+  let num = bound;
+  const sum = y + height;
+  if (bound === undefined) {
+    num = 0;
+  }
+  const items = [];
+  const bound2 = Math.max(0, Math.ceil(Math.ceil(sum / rowHeight)) + num);
+  let bound3 = bound1;
+  if (bound1 > 0) {
     const _Math = Math;
-    bound = Math.max(pushRange(0), toIndexResult1);
+    const diff = require(6058) /* reset */.MINIMUM_RANGE - 1;
+    const items1 = [0, diff];
+    items.push(items1);
+    bound3 = Math.max(diff + 1, bound1);
   }
-  const rounded = Math.floor(bound / require(6040) /* serializeChannelRanges */.MINIMUM_RANGE);
-  let result = rounded * require(6040) /* serializeChannelRanges */.MINIMUM_RANGE;
-  if (result <= toIndexResult2) {
+  const rounded = Math.floor(bound3 / require(6058) /* reset */.MINIMUM_RANGE);
+  let result = rounded * require(6058) /* reset */.MINIMUM_RANGE;
+  if (result <= bound2) {
     do {
-      result = pushRange(result);
-    } while (result <= toIndexResult2);
+      let tmp14 = require;
+      let tmp15 = dependencyMap;
+      let sum1 = result + (require(6058) /* reset */.MINIMUM_RANGE - 1);
+      let items2 = [result, sum1];
+      let arr = items.push(items2);
+      result = sum1 + 1;
+      let tmp11 = dependencyMap;
+    } while (result <= bound2);
   }
-  subscribeChannel(guildId, channelId, items);
+  importDefault(709).dispatch({ type: "GUILD_SUBSCRIPTIONS_CHANNEL", guildId, channelId, ranges: items });
 };

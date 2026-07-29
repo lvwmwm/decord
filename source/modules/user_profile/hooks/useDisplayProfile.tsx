@@ -1,35 +1,89 @@
-// Module ID: 7958
-// Function ID: 63158
+// Module ID: 7983
+// Function ID: 7984
 // Name: useDisplayProfile
-// Dependencies: [31, 1850, 5878, 566, 7959, 1917, 7962, 2]
-// Exports: useDisplayProfileWithFetchEffect
+// Dependencies: [19, 1874, 5896, 589, 7984, 1941, 7987, 2]
+// Exports: default, getDisplayProfile, useDisplayProfileWithFetchEffect
 
-// Module 7958 (useDisplayProfile)
-import result from "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_5 from "_isNativeReflectConstruct";
+// Module 7983 (useDisplayProfile)
+import noop from "noop";
+import mergeGuildAvatar from "mergeGuildAvatar";
+import createUserWidgetFromServer from "createUserWidgetFromServer";
 import areArraysShallowlyEqual from "areArraysShallowlyEqual";
 
 const require = arg1;
-function useDisplayProfile(arg0, arg1) {
+let closure_6 = areArraysShallowlyEqual.cachedFunction((arg0, arg1) => new importDefault(7987)(arg0, arg1));
+const result = require("createUserWidgetFromServer").fileFinishedImporting("modules/user_profile/hooks/useDisplayProfile.tsx");
+
+export default function useDisplayProfile(arg0, arg1) {
   const _require = arg0;
   let closure_1 = arg1;
-  let items = [_isNativeReflectConstruct, closure_5];
-  return _require(566).useStateFromStores(items, () => {
-    let tmp = null;
+  const items = [mergeGuildAvatar, createUserWidgetFromServer];
+  return _require(589).useStateFromStores(items, () => {
+    let obj;
+    let obj2;
+    let tmp2 = null;
     if (null != closure_0) {
       const items = [outer1_4, outer1_5];
-      tmp = outer1_8(closure_0, closure_1, items);
+      [obj, obj2] = items;
+      let tmp6 = null;
+      if (null !== tmp) {
+        const user = obj.getUser(tmp);
+        const userProfile = obj2.getUserProfile(tmp);
+        let tmp10 = null;
+        if (null != user) {
+          tmp10 = null;
+          if (null != userProfile) {
+            tmp10 = outer1_6(userProfile, tmp9);
+          }
+        }
+        tmp6 = tmp10;
+      }
+      tmp2 = tmp6;
     }
-    return tmp;
+    return tmp2;
   });
-}
-function getDisplayProfile(id, arg1) {
+};
+export const useDisplayProfileWithFetchEffect = function useDisplayProfileWithFetchEffect(arg0, arg1) {
+  let _require = arg0;
+  let closure_1 = arg1;
+  let items = [arg1, arg0];
+  const effect = React.useEffect(() => {
+    callback(outer1_2[4])(closure_0, undefined, { guildId: callback });
+  }, items);
+  _require = arg0;
+  closure_1 = arg1;
+  const items1 = [mergeGuildAvatar, createUserWidgetFromServer];
+  return _require(589).useStateFromStores(items1, () => {
+    let obj;
+    let obj2;
+    let tmp2 = null;
+    if (null != closure_0) {
+      const items = [outer1_4, outer1_5];
+      [obj, obj2] = items;
+      let tmp6 = null;
+      if (null !== tmp) {
+        const user = obj.getUser(tmp);
+        const userProfile = obj2.getUserProfile(tmp);
+        let tmp10 = null;
+        if (null != user) {
+          tmp10 = null;
+          if (null != userProfile) {
+            tmp10 = outer1_6(userProfile, tmp9);
+          }
+        }
+        tmp6 = tmp10;
+      }
+      tmp2 = tmp6;
+    }
+    return tmp2;
+  });
+};
+export const getDisplayProfile = function getDisplayProfile(id, arg1) {
   let obj;
   let obj2;
   let tmp = arg2;
   if (arg2 === undefined) {
-    const items = [_isNativeReflectConstruct, closure_5];
+    const items = [mergeGuildAvatar, createUserWidgetFromServer];
     tmp = items;
   }
   [obj, obj2] = tmp;
@@ -47,28 +101,4 @@ function getDisplayProfile(id, arg1) {
     }
     return tmp8;
   }
-}
-let closure_6 = areArraysShallowlyEqual.cachedFunction((arg0, arg1) => {
-  let tmp = importDefault(7962);
-  tmp = new tmp(arg0, arg1);
-  return tmp;
-});
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/user_profile/hooks/useDisplayProfile.tsx");
-
-export default useDisplayProfile;
-export const useDisplayProfileWithFetchEffect = function useDisplayProfileWithFetchEffect(arg0, arg1) {
-  let closure_0 = arg0;
-  let closure_1 = arg1;
-  const items = [arg1, arg0];
-  const effect = React.useEffect(() => {
-    const obj = {};
-    let tmp3;
-    if (null != callback) {
-      tmp3 = callback;
-    }
-    obj.guildId = tmp3;
-    callback(outer1_2[4])(closure_0, undefined, obj);
-  }, items);
-  return useDisplayProfile(arg0, arg1);
 };
-export { getDisplayProfile };

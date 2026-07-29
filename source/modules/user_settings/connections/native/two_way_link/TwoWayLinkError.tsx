@@ -1,23 +1,23 @@
-// Module ID: 8956
-// Function ID: 70650
+// Module ID: 8980
+// Function ID: 8981
 // Name: TwoWayLinkError
-// Dependencies: [31, 27, 33, 4165, 8914, 8957, 4161, 5155, 4576, 4578, 1212, 2]
+// Dependencies: [19, 17, 21, 4189, 8938, 8981, 4185, 5177, 4598, 4600, 1236, 2]
 // Exports: TwoWayLinkError
 
-// Module 8956 (TwoWayLinkError)
-import "result";
+// Module 8980 (TwoWayLinkError)
+import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_3;
-let closure_4;
-let closure_5;
+let c3;
+let c4;
+let c5;
 let closure_6;
 const require = arg1;
-({ Image: closure_3, View: closure_4 } = get_ActivityIndicator);
-({ jsx: closure_5, jsxs: closure_6 } = jsxProd);
-let closure_7 = _createForOfIteratorHelperLoose.createStyles({ image: { width: 254, height: 127, marginBottom: 32 } });
+({ Image: c3, View: c4 } = get_ActivityIndicator);
+({ jsx: c5, jsxs: closure_6 } = jsxProd);
+let closure_7 = createCacheKey.createStyles({ image: { width: 254, height: 127, marginBottom: 32 } });
 const result = require("jsxProd").fileFinishedImporting("modules/user_settings/connections/native/two_way_link/TwoWayLinkError.tsx");
 
 export const TwoWayLinkError = function TwoWayLinkError(arg0) {
@@ -26,33 +26,29 @@ export const TwoWayLinkError = function TwoWayLinkError(arg0) {
   let onRetry;
   let title;
   ({ onClose, title, body, onRetry } = arg0);
-  let obj = require(8914) /* styles */;
+  let obj = require(8938) /* styles */;
   const twoWayLinkStyles = obj.useTwoWayLinkStyles();
-  obj = { style: twoWayLinkStyles.container };
-  obj = { style: twoWayLinkStyles.content };
+  obj = { style: twoWayLinkStyles.container, children: null };
+  obj = { style: twoWayLinkStyles.content, children: null };
   const tmp = callback3();
-  const items = [callback(closure_3, { source: importDefault(8957), style: callback3().image }), , ];
-  const obj2 = { variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", style: twoWayLinkStyles.title, children: title };
-  items[1] = callback(require(4161) /* Text */.Text, obj2);
-  const obj3 = { variant: "text-md/normal", color: "text-default", style: twoWayLinkStyles.body, children: body };
-  items[2] = callback(require(4161) /* Text */.Text, obj3);
-  obj.children = items;
+  const items = [callback(closure_3, { source: importDefault(8981), style: callback3().image }), callback(require(4185) /* Text */.Text, { variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", style: twoWayLinkStyles.title, children: title }), callback(require(4185) /* Text */.Text, { variant: "text-md/normal", color: "text-default", style: twoWayLinkStyles.body, children: body })];
+  obj[1] = items;
   const items1 = [callback2(closure_4, obj), ];
-  const obj4 = { bottom: true, style: twoWayLinkStyles.footerContainer };
-  const obj5 = { spacing: 8, direction: "vertical", style: twoWayLinkStyles.footerButton };
-  const obj6 = { size: "lg", variant: "primary" };
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj6.text = intl.string(require(1212) /* getSystemLocale */.t["5911Lb"]);
-  obj6.onPress = onRetry;
-  const items2 = [callback(require(4578) /* Button */.Button, obj6), ];
-  const obj7 = { size: "lg", variant: "secondary" };
-  const intl2 = require(1212) /* getSystemLocale */.intl;
-  obj7.text = intl2.string(require(1212) /* getSystemLocale */.t["ETE/oC"]);
-  obj7.onPress = onClose;
-  items2[1] = callback(require(4578) /* Button */.Button, obj7);
-  obj5.children = items2;
-  obj4.children = callback2(require(4576) /* Stack */.Stack, obj5);
-  items1[1] = callback(require(5155) /* SafeAreaPaddingView */.SafeAreaPaddingView, obj4);
-  obj.children = items1;
+  const obj4 = { bottom: true, style: twoWayLinkStyles.footerContainer, children: null };
+  const obj5 = { spacing: 8, direction: "vertical", style: twoWayLinkStyles.footerButton, children: null };
+  const obj6 = { size: "lg", variant: "primary", text: null, onPress: null };
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj6[2] = intl.string(require(1236) /* getSystemLocale */.t["5911Lb"]);
+  obj6[3] = onRetry;
+  const items2 = [callback(require(4600) /* Button */.Button, obj6), ];
+  const obj7 = { size: "lg", variant: "secondary", text: null, onPress: null };
+  const intl2 = require(1236) /* getSystemLocale */.intl;
+  obj7[2] = intl2.string(require(1236) /* getSystemLocale */.t["ETE/oC"]);
+  obj7[3] = onClose;
+  items2[1] = callback(require(4600) /* Button */.Button, obj7);
+  obj5[3] = items2;
+  obj4[2] = callback2(require(4598) /* Stack */.Stack, obj5);
+  items1[1] = callback(require(5177) /* SafeAreaPaddingView */.SafeAreaPaddingView, obj4);
+  obj[1] = items1;
   return callback2(closure_4, obj);
 };

@@ -1,67 +1,55 @@
-// Module ID: 5793
-// Function ID: 50738
-// Name: AssetDisplayConfigRecord
-// Dependencies: [6, 7, 2]
+// Module ID: 5811
+// Function ID: 5812
+// Name: fromServer
+// Dependencies: [2]
 
-// Module 5793 (AssetDisplayConfigRecord)
-import _classCallCheck from "_classCallCheck";
-import _defineProperties from "_defineProperties";
-
-const tmp2 = (() => {
-  class AssetDisplayConfigRecord {
-    constructor(arg0) {
-      tmp = AssetDisplayConfigRecord(this, AssetDisplayConfigRecord);
-      ({ desktop_max_height: this.desktopMaxHeight, mobile_max_height: this.mobileMaxHeight, responsive: this.responsive, background_style: this.backgroundStyle } = arg0);
-      return;
-    }
+// Module 5811 (fromServer)
+let AssetDisplayConfigRecord;
+class AssetDisplayConfigRecord {
+  constructor(arg0) {
+    obj = Object.create(new.target.prototype);
+    ({ desktop_max_height: tmp.desktopMaxHeight, mobile_max_height: tmp.mobileMaxHeight, responsive: tmp.responsive, background_style: tmp.backgroundStyle } = global);
+    return obj;
   }
-  let obj = {
-    key: "toDesktopStyles",
-    value() {
-      const self = this;
-      const obj = {};
-      if (null != this.desktopMaxHeight) {
-        obj.maxHeight = self.desktopMaxHeight;
-      }
-      if (null != self.backgroundStyle) {
-        obj.background = self.backgroundStyle;
-      }
-      let tmp;
-      if (Object.keys(obj).length > 0) {
-        tmp = obj;
-      }
-      return tmp;
-    }
-  };
-  const items = [obj, ];
-  obj = {
-    key: "toMobileStyles",
-    value() {
-      const self = this;
-      const obj = {};
-      if (null != this.mobileMaxHeight) {
-        obj.maxHeight = self.mobileMaxHeight;
-      }
-      if (null != self.backgroundStyle) {
-        obj.background = self.backgroundStyle;
-      }
-      let tmp;
-      if (Object.keys(obj).length > 0) {
-        tmp = obj;
-      }
-      return tmp;
-    }
-  };
-  items[1] = obj;
-  obj = {
-    key: "fromServer",
-    value(arg0) {
-      return new AssetDisplayConfigRecord(arg0);
-    }
-  };
-  const items1 = [obj];
-  return callback(AssetDisplayConfigRecord, items, items1);
-})();
+}
+const prototype = AssetDisplayConfigRecord.prototype;
+AssetDisplayConfigRecord["fromServer"] = function fromServer(arg0) {
+  if (typeof AssetDisplayConfigRecord !== "find") {
+    HermesBuiltin.throwTypeError();
+  }
+  ({ desktop_max_height: tmp2.desktopMaxHeight, mobile_max_height: tmp2.mobileMaxHeight, responsive: tmp2.responsive, background_style: tmp2.backgroundStyle } = arg0);
+  return Object.create(AssetDisplayConfigRecord.prototype);
+};
+prototype["toDesktopStyles"] = function toDesktopStyles() {
+  const self = this;
+  const obj = {};
+  if (null != this.desktopMaxHeight) {
+    obj.maxHeight = self.desktopMaxHeight;
+  }
+  if (null != self.backgroundStyle) {
+    obj.background = self.backgroundStyle;
+  }
+  let tmp;
+  if (Object.keys(obj).length > 0) {
+    tmp = obj;
+  }
+  return tmp;
+};
+prototype["toMobileStyles"] = function toMobileStyles() {
+  const self = this;
+  const obj = {};
+  if (null != this.mobileMaxHeight) {
+    obj.maxHeight = self.mobileMaxHeight;
+  }
+  if (null != self.backgroundStyle) {
+    obj.background = self.backgroundStyle;
+  }
+  let tmp;
+  if (Object.keys(obj).length > 0) {
+    tmp = obj;
+  }
+  return tmp;
+};
 const result = require("set").fileFinishedImporting("modules/collectibles/records/ShopAssetConfigRecord.tsx");
 
-export const AssetDisplayConfigRecord = tmp2;
+export { AssetDisplayConfigRecord };

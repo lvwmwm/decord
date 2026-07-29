@@ -1,22 +1,22 @@
-// Module ID: 9562
-// Function ID: 74458
+// Module ID: 9586
+// Function ID: 9587
 // Name: RoleLabel
-// Dependencies: [31, 27, 4157, 33, 4165, 566, 1273, 7611, 2]
+// Dependencies: [19, 17, 4181, 21, 4189, 589, 1297, 7634, 2]
 // Exports: RoleLabel
 
-// Module 9562 (RoleLabel)
-import "result";
+// Module 9586 (RoleLabel)
+import "noop";
 import { View } from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_4;
-let closure_5;
+let c4;
+let c5;
 const require = arg1;
-({ jsx: closure_4, jsxs: closure_5 } = jsxProd);
-let closure_6 = _createForOfIteratorHelperLoose.createStyles({ container: { display: "flex", flexDirection: "row" }, roleDot: { marginRight: 4 } });
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("design/void/RoleLabel/native/RoleLabel.tsx");
+({ jsx: c4, jsxs: c5 } = jsxProd);
+let closure_6 = createCacheKey.createStyles({ container: { display: "flex", flexDirection: "row" }, roleDot: { marginRight: 4 } });
+const result = require("maybeApplyNoTextColorForLightCustomTheme").fileFinishedImporting("design/void/RoleLabel/native/RoleLabel.tsx");
 
 export const RoleLabel = function RoleLabel(color) {
   let colors;
@@ -24,28 +24,30 @@ export const RoleLabel = function RoleLabel(color) {
   color = color.color;
   ({ name, colors } = color);
   const tmp = callback2();
-  let obj = require(566) /* initialize */;
-  const items = [_isNativeReflectConstruct];
-  const stateFromStores = obj.useStateFromStores(items, () => outer1_3.roleStyle);
-  let tmp4 = "username" === stateFromStores;
-  if (tmp4) {
-    tmp4 = null != color;
+  let obj = require(589) /* initialize */;
+  const items = [maybeApplyNoTextColorForLightCustomTheme];
+  const stateFromStores = obj.useStateFromStores(items, () => roleStyle.roleStyle);
+  let tmp5 = "username" === stateFromStores;
+  if (tmp5) {
+    tmp5 = null != color;
   }
-  if (tmp4) {
-    obj = { color };
+  if (tmp5) {
+    obj = { color: null };
+    obj[0] = color;
   }
-  obj = { style: tmp.container };
-  let tmp8 = "dot" === stateFromStores;
-  if (tmp8) {
-    tmp8 = null != color;
+  obj = { style: tmp.container, children: null };
+  let tmp10 = "dot" === stateFromStores;
+  if (tmp10) {
+    tmp10 = null != color;
   }
-  if (tmp8) {
-    const obj1 = { color, colors, containerStyles: tmp.roleDot };
-    tmp8 = callback(require(1273) /* Button */.RoleDot, obj1);
+  if (tmp10) {
+    const obj1 = { color: null, colors: null, containerStyles: null };
+    obj1[0] = color;
+    obj1[1] = colors;
+    obj1[2] = tmp.roleDot;
+    tmp10 = callback(tmp2(1297).RoleDot, obj1);
   }
-  const items1 = [tmp8, ];
-  const obj2 = { style: {}, text: name };
-  items1[1] = callback(require(7611) /* Form */.FormLabel, obj2);
-  obj.children = items1;
+  const items1 = [tmp10, callback(require(7634) /* Form */.FormLabel, { style: {}, text: name })];
+  obj[1] = items1;
   return closure_5(View, obj);
 };

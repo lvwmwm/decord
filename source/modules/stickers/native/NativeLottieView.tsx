@@ -1,55 +1,56 @@
-// Module ID: 7758
-// Function ID: 61731
+// Module ID: 7781
+// Function ID: 7782
 // Name: NativeLottieView
-// Dependencies: [31, 27, 33, 477, 7759, 116, 2]
+// Dependencies: [19, 17, 21, 500, 7782, 113, 2]
 // Exports: default
 
-// Module 7758 (NativeLottieView)
-import result from "result";
-import closure_2 from "result";
+// Module 7781 (NativeLottieView)
+import noop from "noop";
+import closure_2 from "noop";
 import { jsx } from "jsxProd";
 import set from "set";
 import set from "jsxProd";
 
-let closure_0;
+let c0;
 let closure_1;
-({ useEffect: closure_0, useRef: closure_1 } = result);
+({ useEffect: c0, useRef: closure_1 } = noop);
 if (set.isAndroid()) {
   let importDefaultResult = require("__INTERNAL_VIEW_CONFIG");
 } else {
   importDefaultResult = require("get ActivityIndicator").requireNativeComponent("NativeLottieNode");
 }
+let c4 = importDefaultResult;
 let closure_5 = require("codegenNativeCommands")({ supportedCommands: ["setup"] });
-const obj = { LOOP: 0, [0]: "LOOP", STILL: 1, [1]: "STILL", ONCE: 2, [2]: "ONCE" };
-result = set.fileFinishedImporting("modules/stickers/native/NativeLottieView.tsx");
+let obj = { LOOP: 0, [0]: "LOOP", STILL: 1, [1]: "STILL", ONCE: 2, [2]: "ONCE" };
+const result = set.fileFinishedImporting("modules/stickers/native/NativeLottieView.tsx");
 
-export default function NativeLottieView(renderMode) {
+export default function NativeLottieView(accessibilityLabel) {
   let asset;
   let height;
   let opacity;
   let url;
   let width;
-  ({ width, height, opacity } = renderMode);
-  ({ asset, url } = renderMode);
+  ({ width, height, opacity } = accessibilityLabel);
+  ({ asset, url } = accessibilityLabel);
   if (opacity === undefined) {
     opacity = 1;
   }
-  let LOOP = renderMode.renderMode;
+  let LOOP = accessibilityLabel.renderMode;
   if (LOOP === undefined) {
     LOOP = obj.LOOP;
   }
-  let flag = renderMode.animating;
+  let flag = accessibilityLabel.animating;
   if (flag === undefined) {
     flag = true;
   }
   let ref;
-  let style;
+  obj = undefined;
   let jsx;
-  ref = style.useRef(null);
-  style = { asset, url, width, height, animating: flag, accessibilityLabel: renderMode.accessibilityLabel };
-  jsx = ref(style);
+  ref = obj.useRef(null);
+  obj = { asset, url, width, height, animating: flag, accessibilityLabel: accessibilityLabel.accessibilityLabel };
+  jsx = ref(obj);
   LOOP(() => {
-    closure_3.current = style;
+    closure_3.current = obj;
   });
   const items = [LOOP];
   LOOP(() => {
@@ -57,23 +58,20 @@ export default function NativeLottieView(renderMode) {
     let animating;
     let asset;
     let height;
-    let renderMode;
     let url;
     let width;
-    const current = ref.current;
-    ({ asset, url, width, height, renderMode, animating, accessibilityLabel } = { asset: current.asset, url: current.url, width: current.width, height: current.height, renderMode: LOOP, animating: current.animating, accessibilityLabel: current.accessibilityLabel });
-    let tmp = "" !== url;
-    if (tmp) {
-      tmp = 0 !== width;
+    ({ asset, url, width, height, animating, accessibilityLabel } = ref.current);
+    let tmp2 = "" !== url;
+    if (tmp2) {
+      tmp2 = 0 !== width;
     }
-    if (tmp) {
-      tmp = 0 !== height;
+    if (tmp2) {
+      tmp2 = 0 !== height;
     }
-    if (tmp) {
-      outer1_5.setup(ref.current, asset, url, width, height, renderMode, animating, accessibilityLabel);
+    if (tmp2) {
+      outer1_5.setup(ref.current, asset, url, width, height, tmp, animating, accessibilityLabel);
     }
   }, items);
-  style = { width, height, opacity };
-  return <closure_4 ref={ref} style={style} />;
+  return <closure_4 ref={ref} style={{ width, height, opacity }} />;
 };
 export const NativeLottieRenderMode = obj;

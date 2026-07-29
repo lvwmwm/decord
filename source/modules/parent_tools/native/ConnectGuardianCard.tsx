@@ -1,39 +1,39 @@
-// Module ID: 13891
-// Function ID: 106306
+// Module ID: 13912
+// Function ID: 13913
 // Name: ConnectGuardianCard
-// Dependencies: [31, 27, 1850, 5776, 33, 4165, 689, 624, 6214, 13887, 13888, 5525, 3865, 1212, 2199, 4576, 12218, 4161, 4739, 4578, 12274, 5000, 2]
+// Dependencies: [19, 17, 1874, 5794, 21, 4189, 712, 647, 6234, 13908, 13909, 5543, 3889, 1236, 2223, 4598, 12242, 4185, 4761, 4600, 12296, 5022, 2]
 // Exports: ConnectGuardianCard
 
-// Module 13891 (ConnectGuardianCard)
-import result from "result";
-import { View } from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 13912 (ConnectGuardianCard)
+import Button from "Button";
+import { View } from "Text";
+import mergeGuildAvatar from "mergeGuildAvatar";
 import { FAMILY_CENTER_REQUEST_QR_CODE_URL as closure_6 } from "items";
-import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import jsxProd from "ButtonGroup";
+import createCacheKey from "createCacheKey";
 
-let closure_7;
-let closure_8;
+let error;
+let metroImportAll;
 const require = arg1;
-({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16 };
-_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.compactContainer = { alignSelf: "center", gap: require("_createForOfIteratorHelperLoose").space.PX_16 };
-let obj2 = { alignSelf: "center", padding: require("_createForOfIteratorHelperLoose").space.PX_12, borderWidth: 1, borderRadius: require("_createForOfIteratorHelperLoose").radii.lg, borderColor: require("_createForOfIteratorHelperLoose").colors.BORDER_NORMAL };
-_createForOfIteratorHelperLoose.card = obj2;
-_createForOfIteratorHelperLoose.countdown = { textAlign: "center" };
-let obj3 = { flexDirection: "row", alignItems: "center", paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_8 };
-_createForOfIteratorHelperLoose.divider = obj3;
-_createForOfIteratorHelperLoose.compactDividerFlush = { paddingHorizontal: 0 };
-let obj4 = { flex: 1, height: 1, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BORDER_NORMAL };
-_createForOfIteratorHelperLoose.dividerLine = obj4;
-let obj1 = { alignSelf: "center", gap: require("_createForOfIteratorHelperLoose").space.PX_16 };
-_createForOfIteratorHelperLoose.dividerText = { marginHorizontal: require("_createForOfIteratorHelperLoose").space.PX_8 };
-_createForOfIteratorHelperLoose.buttonGroup = { paddingTop: 0 };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-let obj5 = { marginHorizontal: require("_createForOfIteratorHelperLoose").space.PX_8 };
-let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/parent_tools/native/ConnectGuardianCard.tsx");
+({ jsx: error, jsxs: metroImportAll } = jsxProd);
+createCacheKey = { container: null, compactContainer: null, card: null, countdown: null, divider: null, compactDividerFlush: null, dividerLine: null, dividerText: null, buttonGroup: null };
+createCacheKey = { paddingHorizontal: require("Themes").space.PX_16 };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { alignSelf: "center", gap: require("Themes").space.PX_16 };
+let obj1 = { alignSelf: "center", gap: require("Themes").space.PX_16 };
+createCacheKey[2] = { alignSelf: "center", padding: require("Themes").space.PX_12, borderWidth: 1, borderRadius: require("Themes").radii.lg, borderColor: require("Themes").colors.BORDER_NORMAL };
+createCacheKey[3] = { textAlign: "center" };
+let obj2 = { alignSelf: "center", padding: require("Themes").space.PX_12, borderWidth: 1, borderRadius: require("Themes").radii.lg, borderColor: require("Themes").colors.BORDER_NORMAL };
+createCacheKey[4] = { flexDirection: "row", alignItems: "center", paddingHorizontal: require("Themes").space.PX_8 };
+createCacheKey[5] = { paddingHorizontal: 0 };
+let obj3 = { flexDirection: "row", alignItems: "center", paddingHorizontal: require("Themes").space.PX_8 };
+createCacheKey[6] = { flex: 1, height: 1, backgroundColor: require("Themes").colors.BORDER_NORMAL };
+let obj4 = { flex: 1, height: 1, backgroundColor: require("Themes").colors.BORDER_NORMAL };
+createCacheKey[7] = { marginHorizontal: require("Themes").space.PX_8 };
+createCacheKey[8] = { paddingTop: 0 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let obj5 = { marginHorizontal: require("Themes").space.PX_8 };
+let result = require("mergeGuildAvatar").fileFinishedImporting("modules/parent_tools/native/ConnectGuardianCard.tsx");
 
 export const ConnectGuardianCard = function ConnectGuardianCard(linkCode) {
   let days;
@@ -49,23 +49,23 @@ export const ConnectGuardianCard = function ConnectGuardianCard(linkCode) {
   }
   let stateFromStores;
   let id;
-  let tmp = _createForOfIteratorHelperLoose();
+  const tmp = createCacheKey();
   let obj = linkCode(id[7]);
-  const items = [_isNativeReflectConstruct];
-  stateFromStores = obj.useStateFromStores(items, () => outer1_5.getCurrentUser());
+  const items = [mergeGuildAvatar];
+  stateFromStores = obj.useStateFromStores(items, () => currentUser.getCurrentUser());
   id = undefined;
-  if (null != stateFromStores) {
+  if (stateFromStores != null) {
     id = stateFromStores.id;
   }
   ({ days, hours, minutes, seconds } = stateFromStores(id[8])(expiresAt));
   stateFromStores(id[9])(expiresAt, linkCode.onRefresh);
   const items1 = [stateFromStores, linkCode];
   const callback = React.useCallback(() => {
-    let tmp = null != stateFromStores;
-    if (tmp) {
-      tmp = "" !== linkCode;
+    let tmp2 = null != stateFromStores;
+    if (tmp2) {
+      tmp2 = "" !== linkCode;
     }
-    if (tmp) {
+    if (tmp2) {
       const result = linkCode(id[10]).shareGuardianConnectLink(stateFromStores, linkCode);
       const obj = linkCode(id[10]);
     }
@@ -74,79 +74,91 @@ export const ConnectGuardianCard = function ConnectGuardianCard(linkCode) {
   if (null == id) {
     return null;
   } else {
-    const intl5 = linkCode(id[13]).intl;
-    obj = { style: tmp.card };
-    const tmp31 = callback(id, linkCode);
-    obj = { align: "center", spacing: stateFromStores(id[6]).space.PX_8 };
-    const obj1 = { size: 160, text: tmp31 };
-    const items3 = [callback2(linkCode(id[16]).QRCodeWithOverlay, obj1), ];
-    const obj2 = { style: tmp.countdown, variant: "text-xs/normal" };
-    const stringResult = intl5.string(stateFromStores(id[14]).RfkLDs);
+    const intl5 = tmp2(tmp3[13]).intl;
+    obj = { style: null, children: null };
+    obj[0] = tmp.card;
+    const tmp16 = callback(id, linkCode);
+    obj = { align: "center", spacing: null, children: null };
+    obj[1] = tmp6(tmp3[6]).space.PX_8;
+    const obj1 = { size: 160, text: null };
+    obj1[1] = tmp16;
+    const items3 = [callback2(tmp2(tmp3[16]).QRCodeWithOverlay, obj1), ];
+    const obj2 = { style: null, variant: "text-xs/normal", children: null };
+    obj2[0] = tmp.countdown;
+    const stringResult = intl5.string(tmp6(tmp3[14]).RfkLDs);
     const _HermesInternal = HermesInternal;
-    obj2.children = "" + stringResult + " " + linkCode(id[18]).getTimeFormat(86400 * days + 3600 * hours + 60 * minutes + seconds);
-    items3[1] = callback2(linkCode(id[17]).Text, obj2);
-    obj.children = items3;
-    obj.children = callback3(linkCode(id[15]).Stack, obj);
-    const tmp40 = callback2(View, obj);
+    obj2[2] = "" + stringResult + " " + tmp2(tmp3[18]).getTimeFormat(86400 * days + 3600 * hours + 60 * minutes + seconds);
+    items3[1] = callback2(tmp2(tmp3[17]).Text, obj2);
+    obj[2] = items3;
+    obj[1] = callback3(tmp2(tmp3[15]).Stack, obj);
+    const tmp22 = callback2(View, obj);
     if ("none" === shareActions) {
-      return tmp40;
+      return tmp22;
     } else {
-      const obj3 = {};
       const items4 = [tmp.divider, ];
-      let compactDividerFlush = tmp41;
+      let compactDividerFlush = tmp23;
       if ("compact" === shareActions) {
         compactDividerFlush = tmp.compactDividerFlush;
       }
+      const obj3 = { style: null, children: null };
       items4[1] = compactDividerFlush;
-      obj3.style = items4;
-      const obj4 = { style: tmp.dividerLine };
-      const items5 = [callback2(View, obj4), , ];
-      const obj5 = { style: tmp.dividerText, variant: "text-sm/medium", color: "text-muted" };
-      const intl = linkCode(id[13]).intl;
-      const tmp14 = stateFromStores(id[14]);
-      obj5.children = intl.string("compact" === shareActions ? tmp14.XhROZk : tmp14.lggBOi);
-      items5[1] = callback2(linkCode(id[17]).Text, obj5);
-      const obj6 = { style: tmp.dividerLine };
-      items5[2] = callback2(View, obj6);
-      obj3.children = items5;
-      const tmp42Result = callback3(View, obj3);
+      obj3[0] = items4;
+      const obj4 = { style: null };
+      obj4[0] = tmp.dividerLine;
+      const items5 = [tmp18(tmp19, obj4), , ];
+      const obj5 = { style: null, variant: "text-sm/medium", color: "text-muted", children: null };
+      obj5[0] = tmp.dividerText;
+      const intl = tmp2(tmp3[13]).intl;
+      const tmp6Result = tmp6(tmp3[14]);
+      obj5[3] = intl.string("compact" === shareActions ? tmp6Result.XhROZk : tmp6Result.lggBOi);
+      items5[1] = tmp18(tmp2(tmp3[17]).Text, obj5);
+      const obj6 = { style: null };
+      obj6[0] = tmp.dividerLine;
+      items5[2] = tmp18(tmp19, obj6);
+      obj3[1] = items5;
+      let tmp20Result = tmp20(tmp19, obj3);
       if ("compact" === shareActions) {
-        const obj7 = { style: tmp.compactContainer };
-        const items6 = [tmp40, tmp42Result, ];
-        const obj8 = { variant: "secondary", size: "md" };
-        const intl4 = linkCode(id[13]).intl;
-        obj8.text = intl4.string(linkCode(id[13]).t.Ej3B3Y);
-        const obj9 = { size: "md", color: stateFromStores(id[6]).colors.CONTROL_SECONDARY_TEXT_DEFAULT };
-        obj8.icon = callback2(linkCode(id[20]).ShareIcon, obj9);
-        obj8.disabled = "" === linkCode;
-        obj8.onPress = callback;
-        items6[2] = callback2(linkCode(id[19]).Button, obj8);
-        obj7.children = items6;
-        let tmp18Result = tmp18(View, obj7);
+        const obj7 = { style: null, children: null };
+        obj7[0] = tmp.compactContainer;
+        const items6 = [tmp22, tmp20Result, ];
+        const obj8 = { variant: "secondary", size: "md", text: null, icon: null, disabled: null, onPress: null };
+        const intl4 = tmp2(tmp3[13]).intl;
+        obj8[2] = intl4.string(tmp2(tmp3[13]).t.Ej3B3Y);
+        const obj9 = { size: "md", color: null };
+        obj9[1] = tmp6(tmp3[6]).colors.CONTROL_SECONDARY_TEXT_DEFAULT;
+        obj8[3] = tmp18(tmp2(tmp3[20]).ShareIcon, obj9);
+        obj8[4] = "" === linkCode;
+        obj8[5] = callback;
+        items6[2] = tmp18(tmp2(tmp3[19]).Button, obj8);
+        obj7[1] = items6;
+        tmp20Result = tmp20(tmp19, obj7);
       } else {
-        const obj10 = { spacing: stateFromStores(id[6]).space.PX_32, style: tmp.container };
-        const items7 = [tmp40, tmp42Result, ];
-        const obj11 = { style: tmp.buttonGroup };
-        const obj12 = { variant: "secondary", size: "md" };
-        const intl2 = linkCode(id[13]).intl;
-        obj12.text = intl2.string(linkCode(id[13]).t.Ej3B3Y);
-        obj12.disabled = "" === linkCode;
-        obj12.onPress = callback;
-        const items8 = [callback2(linkCode(id[19]).Button, obj12), ];
-        const obj13 = { variant: "secondary", size: "md" };
-        const intl3 = linkCode(id[13]).intl;
-        obj13.text = intl3.string(linkCode(id[13]).t.WqhZss);
-        obj13.disabled = "" === linkCode;
-        obj13.onPress = tmp7;
-        items8[1] = callback2(linkCode(id[19]).Button, obj13);
-        obj11.children = items8;
-        items7[2] = tmp18(linkCode(id[21]).ButtonGroup, obj11);
-        obj10.children = items7;
-        tmp18Result = tmp18(linkCode(id[15]).Stack, obj10);
+        const obj10 = { spacing: null, style: null, children: null };
+        obj10[0] = tmp6(tmp3[6]).space.PX_32;
+        obj10[1] = tmp.container;
+        const items7 = [tmp22, tmp20Result, ];
+        const obj11 = { style: null, children: null };
+        obj11[0] = tmp.buttonGroup;
+        const obj12 = { variant: "secondary", size: "md", text: null, disabled: null, onPress: null };
+        const intl2 = tmp2(tmp3[13]).intl;
+        obj12[2] = intl2.string(tmp2(tmp3[13]).t.Ej3B3Y);
+        obj12[3] = "" === linkCode;
+        obj12[4] = callback;
+        const items8 = [tmp18(tmp2(tmp3[19]).Button, obj12), ];
+        const obj13 = { variant: "secondary", size: "md", text: null, disabled: null, onPress: null };
+        const intl3 = tmp2(tmp3[13]).intl;
+        obj13[2] = intl3.string(tmp2(tmp3[13]).t.WqhZss);
+        obj13[3] = "" === linkCode;
+        obj13[4] = tmp10;
+        items8[1] = tmp18(tmp2(tmp3[19]).Button, obj13);
+        obj11[1] = items8;
+        items7[2] = tmp20(tmp2(tmp3[21]).ButtonGroup, obj11);
+        obj10[2] = items7;
+        tmp20Result = tmp20(tmp2(tmp3[15]).Stack, obj10);
       }
-      return tmp18Result;
+      return tmp20Result;
     }
-    const obj16 = linkCode(id[18]);
+    const tmp2Result = tmp2(tmp3[18]);
   }
-  const tmp4 = stateFromStores(id[8])(expiresAt);
+  const tmp7 = stateFromStores(id[8])(expiresAt);
 };

@@ -1,22 +1,22 @@
-// Module ID: 14853
-// Function ID: 113145
+// Module ID: 14879
+// Function ID: 14880
 // Name: getDeviceCountry
-// Dependencies: [27, 477, 643, 2]
+// Dependencies: [17, 500, 666, 2]
 // Exports: getDeviceCountry
 
-// Module 14853 (getDeviceCountry)
+// Module 14879 (getDeviceCountry)
 import { NativeModules } from "get ActivityIndicator";
 
 const result = require("enforcing").fileFinishedImporting("modules/auth/native/components/utils/getDeviceCountry.tsx");
 
 export const getDeviceCountry = function getDeviceCountry() {
   if (obj.isAndroid()) {
-    let LocalizationManager = require(643) /* enforcing */.default;
+    let LocalizationManager = tmp(666).default;
   } else {
     LocalizationManager = NativeModules.LocalizationManager;
   }
   let Language;
-  if (null != LocalizationManager) {
+  if (LocalizationManager != null) {
     Language = LocalizationManager.getConstants().Language;
   }
   if (null == Language) {
@@ -30,5 +30,6 @@ export const getDeviceCountry = function getDeviceCountry() {
     }
     return formatted;
   }
-  obj = require(477) /* set */;
+  obj = require(500) /* set */;
+  tmp = require;
 };

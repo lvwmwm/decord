@@ -1,97 +1,101 @@
-// Module ID: 10938
-// Function ID: 84760
+// Module ID: 10962
+// Function ID: 10963
 // Name: QuestRewardDetailsBottomSheet
-// Dependencies: [31, 27, 1850, 33, 4165, 689, 10936, 4133, 10468, 9460, 5971, 1212, 566, 5221, 4576, 10939, 4161, 2]
+// Dependencies: [19, 17, 1874, 21, 4189, 712, 10960, 4157, 10492, 9484, 5990, 1236, 589, 5243, 4598, 10963, 4185, 2]
 // Exports: default
 
-// Module 10938 (QuestRewardDetailsBottomSheet)
-import result from "result";
-import { View } from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 10962 (QuestRewardDetailsBottomSheet)
+import noop from "noop";
+import { View } from "set";
+import mergeGuildAvatar from "mergeGuildAvatar";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
 let closure_6;
-let closure_7;
-let closure_8;
+let error;
+let metroImportAll;
 const require = arg1;
 function QuestRewardDetailsBottomSheet(quest) {
   quest = quest.quest;
-  const tmp = _createForOfIteratorHelperLoose();
+  let memo;
+  const tmp = createCacheKey();
   const items = [quest.config];
-  const memo = React.useMemo(() => quest(outer1_2[9]).isCollectibleQuestRewardPremiumExtendable(quest.config), items);
+  memo = React.useMemo(() => quest(outer1_2[9]).isCollectibleQuestRewardPremiumExtendable(quest.config), items);
   const items1 = [quest, memo];
   const memo1 = React.useMemo(() => {
     const type = quest(outer1_2[9]).getQuestPrimaryReward(quest).type;
     if (quest(outer1_2[10]).QuestRewardTypes.COLLECTIBLE === type) {
-      const intl2 = quest(outer1_2[11]).intl;
-      const t = quest(outer1_2[11]).t;
+      const intl2 = tmp(tmp2[11]).intl;
+      const t = tmp(tmp2[11]).t;
       return intl2.string(memo ? t["66YyBJ"] : t.ABD2CN);
-    } else if (quest(outer1_2[10]).QuestRewardTypes.FRACTIONAL_PREMIUM === type) {
-      const intl = quest(outer1_2[11]).intl;
-      return intl.string(quest(outer1_2[11]).t.maMtqM);
+    } else if (tmp(tmp2[10]).QuestRewardTypes.FRACTIONAL_PREMIUM === type) {
+      const intl = tmp(tmp2[11]).intl;
+      return intl.string(tmp(tmp2[11]).t.maMtqM);
     } else {
       return null;
     }
     const obj = quest(outer1_2[9]);
   }, items1);
-  let obj = quest(566);
-  const items2 = [_isNativeReflectConstruct];
-  const stateFromStores = obj.useStateFromStores(items2, () => outer1_5.getCurrentUser());
-  let obj1 = quest(9460);
+  let obj = quest(589);
+  const items2 = [mergeGuildAvatar];
+  const stateFromStores = obj.useStateFromStores(items2, () => currentUser.getCurrentUser());
+  let obj1 = quest(9484);
   const defaultRewardName = obj1.getDefaultRewardName(quest.config, stateFromStores);
-  obj = { startExpanded: true };
-  obj = { direction: "vertical", spacing: memo(689).space.PX_16, style: tmp.wrapper };
-  obj1 = { align: "center", direction: "horizontal", spacing: memo(689).space.PX_16 };
-  const obj2 = { quest, height: 56, width: 56, withAnimation: true };
-  const items3 = [callback(memo(10939), obj2), ];
-  const obj3 = { direction: "vertical", spacing: memo(689).space.PX_4, style: tmp.rewardDetailsCopy };
-  const obj4 = { variant: "eyebrow", color: "text-subtle" };
-  let intl = quest(1212).intl;
-  obj4.children = intl.string(quest(1212).t["jyYgZ+"]);
-  const items4 = [callback(quest(4161).Text, obj4), ];
-  const obj5 = { variant: "heading-lg/semibold", color: "text-strong", children: defaultRewardName };
-  items4[1] = callback(quest(4161).Text, obj5);
-  obj3.children = items4;
-  items3[1] = callback2(quest(4576).Stack, obj3);
-  obj1.children = items3;
-  const items5 = [callback2(quest(4576).Stack, obj1), ];
-  let tmp8 = null != memo1;
-  if (tmp8) {
-    const obj6 = {};
-    const obj7 = { style: tmp.separator };
-    const items6 = [callback(View, obj7), ];
-    const obj8 = { variant: "text-md/normal", color: "text-subtle", children: memo1 };
-    items6[1] = callback(quest(4161).Text, obj8);
-    obj6.children = items6;
-    tmp8 = callback2(closure_8, obj6);
+  obj = { direction: "vertical", spacing: null, style: null, children: null };
+  obj[1] = memo(712).space.PX_16;
+  obj[2] = tmp.wrapper;
+  obj = { align: "center", direction: "horizontal", spacing: null, children: null };
+  obj[2] = memo(712).space.PX_16;
+  const items3 = [callback(memo(10963), { quest, height: 56, width: 56, withAnimation: true }), ];
+  obj1 = { direction: "vertical", spacing: null, style: null, children: null };
+  obj1[1] = memo(712).space.PX_4;
+  obj1[2] = tmp.rewardDetailsCopy;
+  const obj2 = { variant: "eyebrow", color: "text-subtle", children: null };
+  let intl = quest(1236).intl;
+  obj2[2] = intl.string(quest(1236).t["jyYgZ+"]);
+  const items4 = [callback(quest(4185).Text, obj2), callback(quest(4185).Text, { variant: "heading-lg/semibold", color: "text-strong", children: defaultRewardName })];
+  obj1[3] = items4;
+  items3[1] = callback2(quest(4598).Stack, obj1);
+  obj[3] = items3;
+  const items5 = [callback2(quest(4598).Stack, obj), ];
+  let tmp9Result = null != memo1;
+  if (tmp9Result) {
+    const obj3 = { children: null };
+    const obj4 = { style: null };
+    obj4[0] = tmp.separator;
+    const items6 = [tmp8(View, obj4), ];
+    const obj5 = { variant: "text-md/normal", color: "text-subtle", children: null };
+    obj5[2] = memo1;
+    items6[1] = tmp8(quest(4185).Text, obj5);
+    obj3[0] = items6;
+    tmp9Result = tmp9(closure_8, obj3);
   }
-  items5[1] = tmp8;
-  obj.children = items5;
-  obj.children = callback2(quest(4576).Stack, obj);
-  return callback(quest(5221).BottomSheet, obj);
+  items5[1] = tmp9Result;
+  obj[3] = items5;
+  return callback(quest(5243).BottomSheet, { startExpanded: true, children: callback2(quest(4598).Stack, obj) });
 }
-({ jsx: closure_6, jsxs: closure_7, Fragment: closure_8 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16, paddingBottom: require("_createForOfIteratorHelperLoose").space.PX_8 };
-_createForOfIteratorHelperLoose.wrapper = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.rewardDetailsCopy = { flexShrink: 1 };
-_createForOfIteratorHelperLoose.separator = { height: 1, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BORDER_STRONG };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-let obj1 = { height: 1, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BORDER_STRONG };
-let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/quests/native/QuestRewardDetailsBottomSheet.native.tsx");
+({ jsx: closure_6, jsxs: error, Fragment: metroImportAll } = jsxProd);
+createCacheKey = { wrapper: null, rewardDetailsCopy: null, separator: null };
+createCacheKey = { paddingHorizontal: require("Themes").space.PX_16, paddingBottom: require("Themes").space.PX_8 };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { flexShrink: 1 };
+createCacheKey[2] = { height: 1, backgroundColor: require("Themes").colors.BORDER_STRONG };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let obj1 = { height: 1, backgroundColor: require("Themes").colors.BORDER_STRONG };
+let result = require("mergeGuildAvatar").fileFinishedImporting("modules/quests/native/QuestRewardDetailsBottomSheet.native.tsx");
 
 export default function QuestRewardDetailsBottomSheetConnected(questId) {
   const callback = React.useCallback(() => {
-    const result = outer1_0(outer1_2[6]).showQuestUnavailableAlert();
-    const obj = outer1_0(outer1_2[6]);
-    outer1_1(outer1_2[7]).hideActionSheet();
+    const result = callback(10960).showQuestUnavailableAlert();
+    const obj = callback(10960);
+    callback2(4157).hideActionSheet();
   }, []);
-  let obj = require(10468) /* _createForOfIteratorHelperLoose */;
+  let obj = require(10492) /* useQuests */;
   const nonNullableQuest = obj.useNonNullableQuest(questId.questId, callback);
   let tmp3 = null;
   if (null != nonNullableQuest) {
-    obj = { quest: nonNullableQuest };
+    obj = { quest: null };
+    obj[0] = nonNullableQuest;
     tmp3 = callback(QuestRewardDetailsBottomSheet, obj);
   }
   return tmp3;

@@ -1,26 +1,29 @@
-// Module ID: 4403
-// Function ID: 38895
+// Module ID: 4426
+// Function ID: 4427
 // Name: isTablet
-// Dependencies: [646, 2]
+// Dependencies: [669, 2]
 
-// Module 4403 (isTablet)
-import { product } from "capitalize";
+// Module 4426 (isTablet)
+import { product as str } from "format";
+import importDefaultResult1 from "format";
+import importDefaultResult2 from "format";
 import set from "set";
 
 let set = new Set(["iPad", "Kindle", "Kindle Fire", "Nook", "PlayBook"]);
+const set1 = new Set(["Android", "iOS", "Windows Phone"]);
 let platform;
-if (null != window) {
+if (window != null) {
   const _navigator = window.navigator;
-  if (null != _navigator) {
+  if (_navigator != null) {
     platform = _navigator.platform;
   }
 }
 let tmp3 = "MacIntel" === platform;
 if (tmp3) {
   let standalone;
-  if (null != window) {
+  if (window != null) {
     const _navigator2 = window.navigator;
-    if (null != _navigator2) {
+    if (_navigator2 != null) {
       standalone = _navigator2.standalone;
     }
   }
@@ -28,51 +31,50 @@ if (tmp3) {
 }
 if (tmp3) {
   let maxTouchPoints;
-  if (null != window) {
+  if (window != null) {
     const _navigator3 = window.navigator;
-    if (null != _navigator3) {
+    if (_navigator3 != null) {
       maxTouchPoints = _navigator3.maxTouchPoints;
     }
   }
   tmp3 = maxTouchPoints > 1;
 }
-let str = "";
-let str2 = "";
-if (null != product) {
-  str2 = product;
+if (str == null) {
+  str = "";
 }
-const tmp6 = set.has(str2) || tmp3;
+const tmp6 = set.has(str) || tmp3;
 let hasItem = !tmp6;
-if (hasItem) {
-  let family;
-  if (null != require("capitalize")) {
-    const os = require("capitalize").os;
-    if (null != os) {
-      family = os.family;
+if (!tmp6) {
+  const importDefaultResult = require("format");
+  let str2;
+  if (importDefaultResult != null) {
+    const os = importDefaultResult.os;
+    if (os != null) {
+      str2 = os.family;
     }
   }
-  if (null != family) {
-    str = family;
+  if (str2 == null) {
+    str2 = "";
   }
-  hasItem = set1.has(str);
+  hasItem = set1.has(str2);
+}
+let family;
+if (importDefaultResult1 != null) {
+  const os2 = importDefaultResult1.os;
+  if (os2 != null) {
+    family = os2.family;
+  }
 }
 let family1;
-if (null != require("capitalize")) {
-  const os2 = require("capitalize").os;
-  if (null != os2) {
-    family1 = os2.family;
-  }
-}
-let family2;
-if (null != require("capitalize")) {
-  const os3 = require("capitalize").os;
-  if (null != os3) {
-    family2 = os3.family;
+if (importDefaultResult2 != null) {
+  const os3 = importDefaultResult2.os;
+  if (os3 != null) {
+    family1 = os3.family;
   }
 }
 const result = set.fileFinishedImporting("../discord_common/js/shared/lib/PlatformUtils.tsx");
 
 export const isTablet = tmp6;
 export const isMobile = hasItem;
-export const isIOSWeb = "iOS" === family1;
-export const isAndroidWeb = "Android" === family2;
+export const isIOSWeb = "iOS" === family;
+export const isAndroidWeb = "Android" === family1;

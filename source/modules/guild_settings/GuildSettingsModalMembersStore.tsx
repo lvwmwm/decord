@@ -1,106 +1,66 @@
-// Module ID: 11004
-// Function ID: 85403
-// Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 1918, 653, 566, 686, 2]
+// Module ID: 11028
+// Function ID: 11029
+// Name: handleStopEditingRoles
+// Dependencies: [1942, 676, 589, 709, 2]
 
-// Module 11004 (_isNativeReflectConstruct)
-import ME from "ME";
-import initialize from "initialize";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 11028 (handleStopEditingRoles)
+import trackCommunicationDisabled from "trackCommunicationDisabled";
 import { FormStates } from "ME";
+import { Store } from "initialize";
 
-function _isNativeReflectConstruct() {
-  let ME = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return ME;
-  }
-  const result = _isNativeReflectConstruct();
-}
 function handleStopEditingRoles() {
-  let c7 = null;
-  let c8 = false;
-  let c9 = null;
-  let c10 = null;
-  let c11 = null;
+  let c2 = null;
+  let c3 = false;
+  let c4 = null;
+  let c5 = null;
+  let c6 = null;
 }
 function handleChangeNicknameSuccess() {
-  let c9 = null;
+  let c4 = null;
 }
-let c7 = null;
-let c8 = false;
-let c9 = null;
-let c10 = null;
-let c11 = null;
-let tmp2 = ((Store) => {
-  class GuildSettingsModalMembersStore {
-    constructor() {
-      self = this;
-      tmp = GuildSettingsModalMembersStore(this, GuildSettingsModalMembersStore);
-      obj = outer1_3(GuildSettingsModalMembersStore);
-      tmp2 = outer1_2;
-      if (outer1_12()) {
-        tmp6 = globalThis;
-        _Reflect = Reflect;
-        tmp7 = outer1_3;
-        tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, outer1_3(self).constructor);
-      } else {
-        tmp3 = arguments;
-        tmp4 = arguments;
-        constructResult = obj(...arguments);
-      }
-      return tmp2(self, constructResult);
-    }
-  }
-  callback2(GuildSettingsModalMembersStore, Store);
-  let obj = {
-    key: "initialize",
-    value() {
-      this.waitFor(outer1_5);
-    }
-  };
-  const items = [obj, , , , , ];
-  obj = {
-    key: "isSubmitting",
-    get() {
-      return outer1_7 === outer1_6.SUBMITTING;
-    }
-  };
-  items[1] = obj;
-  obj = {
-    key: "isEditing",
-    get() {
-      return outer1_8;
-    }
-  };
-  items[2] = obj;
-  items[3] = {
-    key: "roles",
-    get() {
-      return outer1_11;
-    }
-  };
-  items[4] = {
-    key: "memberId",
-    get() {
-      return outer1_10;
-    }
-  };
-  items[5] = {
-    key: "nicknameError",
-    get() {
-      return outer1_9;
-    }
-  };
-  return callback(GuildSettingsModalMembersStore, items);
-})(require("initialize").Store);
-tmp2.displayName = "GuildSettingsModalMembersStore";
-tmp2 = new tmp2(require("dispatcher"), {
+let c2 = null;
+let c3 = false;
+let c4 = null;
+let c5 = null;
+let c6 = null;
+class GuildSettingsModalMembersStore extends Store {
+}
+const prototype = GuildSettingsModalMembersStore.prototype;
+prototype["initialize"] = function initialize() {
+  this.waitFor(trackCommunicationDisabled);
+};
+Object.defineProperty(prototype, "isSubmitting", {
+  get: function isSubmitting() {
+    return c2 === FormStates.SUBMITTING;
+  },
+  set: undefined
+});
+Object.defineProperty(prototype, "isEditing", {
+  get: function isEditing() {
+    return c3;
+  },
+  set: undefined
+});
+Object.defineProperty(prototype, "roles", {
+  get: function roles() {
+    return c6;
+  },
+  set: undefined
+});
+Object.defineProperty(prototype, "memberId", {
+  get: function memberId() {
+    return c5;
+  },
+  set: undefined
+});
+Object.defineProperty(prototype, "nicknameError", {
+  get: function nicknameError() {
+    return c4;
+  },
+  set: undefined
+});
+GuildSettingsModalMembersStore.displayName = "GuildSettingsModalMembersStore";
+const guildSettingsModalMembersStore = new GuildSettingsModalMembersStore(require("dispatcher"), {
   GUILD_SETTINGS_MODAL_MEMBERS_START_EDITING: function handleStartEditingRoles(userId) {
     userId = userId.userId;
     member = member.getMember(userId.guildId, userId);
@@ -108,7 +68,7 @@ tmp2 = new tmp2(require("dispatcher"), {
       return false;
     } else {
       const OPEN = FormStates.OPEN;
-      let c8 = true;
+      let c3 = true;
       const roles = member.roles;
     }
   },
@@ -120,9 +80,7 @@ tmp2 = new tmp2(require("dispatcher"), {
       return false;
     } else if (tmp) {
       const items = [];
-      const arraySpreadResult = HermesBuiltin.arraySpread(arr, 0);
-      items[arraySpreadResult] = roleId;
-      const sum = arraySpreadResult + 1;
+      items[HermesBuiltin.arraySpread(arr, 0)] = roleId;
       found = items;
     } else {
       found = arr.filter((arg0) => arg0 !== roleId);
@@ -137,6 +95,6 @@ tmp2 = new tmp2(require("dispatcher"), {
     error = error.error;
   }
 });
-let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/guild_settings/GuildSettingsModalMembersStore.tsx");
+const result = require("initialize").fileFinishedImporting("modules/guild_settings/GuildSettingsModalMembersStore.tsx");
 
-export default tmp2;
+export default guildSettingsModalMembersStore;

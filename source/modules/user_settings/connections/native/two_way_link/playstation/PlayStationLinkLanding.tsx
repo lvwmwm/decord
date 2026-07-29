@@ -1,54 +1,55 @@
-// Module ID: 8945
-// Function ID: 70622
+// Module ID: 8969
+// Function ID: 8970
 // Name: PlayStationLinkLanding
-// Dependencies: [31, 8944, 653, 33, 4165, 1212, 4693, 8911, 1456, 1921, 8946, 8913, 2]
+// Dependencies: [19, 8968, 676, 21, 4189, 1236, 4715, 8935, 1480, 1945, 8970, 8937, 2]
 // Exports: PlayStationLinkLanding
 
-// Module 8945 (PlayStationLinkLanding)
-import result from "result";
+// Module 8969 (PlayStationLinkLanding)
+import noop from "noop";
 import { PlayStationLinkModalScenes as closure_4 } from "PlayStationLinkModalScenes";
 import { HelpdeskArticles } from "ME";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
 const require = arg1;
-let closure_7 = _createForOfIteratorHelperLoose.createStyles({ image: { width: 230, height: 160 } });
+let closure_7 = createCacheKey.createStyles({ image: { width: 230, height: 160 } });
 const result = require("ME").fileFinishedImporting("modules/user_settings/connections/native/two_way_link/playstation/PlayStationLinkLanding.tsx");
 
 export const PlayStationLinkLanding = function PlayStationLinkLanding(platformType) {
-  let obj = navigation(1456);
+  let navigation;
+  let obj = navigation(1480);
   navigation = obj.useNavigation();
   const tmp = callback();
-  const articleURL = importDefault(1921).getArticleURL(HelpdeskArticles.PS_CONNECTION);
-  let intl = navigation(1212).intl;
-  const obj2 = importDefault(1921);
+  const articleURL = importDefault(1945).getArticleURL(HelpdeskArticles.PS_CONNECTION);
+  let intl = navigation(1236).intl;
+  const obj2 = importDefault(1945);
   let items = [navigation];
   const memo = React.useMemo(() => {
-    let obj = {};
-    const intl = navigation(outer1_2[5]).intl;
-    obj.label = intl.string(navigation(outer1_2[5]).t["+eJP7o"]);
-    const intl2 = navigation(outer1_2[5]).intl;
-    obj.subLabel = intl2.string(navigation(outer1_2[5]).t["+0VIUh"]);
-    obj.icon = navigation(outer1_2[6]).VoiceNormalIcon;
+    let obj = { label: null, subLabel: null, icon: null };
+    const intl = navigation(1236).intl;
+    obj[0] = intl.string(navigation(1236).t["+eJP7o"]);
+    const intl2 = navigation(1236).intl;
+    obj[1] = intl2.string(navigation(1236).t["+0VIUh"]);
+    obj[2] = navigation(4715).VoiceNormalIcon;
     const items = [obj, ];
-    obj = {};
-    const intl3 = navigation(outer1_2[5]).intl;
-    obj.label = intl3.string(navigation(outer1_2[5]).t.ZH4QFa);
-    obj.icon = navigation(outer1_2[7]).GameControllerIcon;
+    obj = { label: null, icon: null };
+    const intl3 = navigation(1236).intl;
+    obj[0] = intl3.string(navigation(1236).t.ZH4QFa);
+    obj[1] = navigation(8935).GameControllerIcon;
     items[1] = obj;
     return items;
   }, []);
   callback = React.useCallback(() => {
     navigation.push(outer1_4.PRE_CONNECT);
   }, items);
-  const memo1 = React.useMemo(() => ({ uri: outer1_1(outer1_2[10]) }), []);
-  obj = { platformType: platformType.platformType, img: memo1, imgStyle: tmp.image };
-  let intl2 = navigation(1212).intl;
-  obj.headerConnect = intl2.string(navigation(1212).t.xAWHOy);
-  let intl3 = navigation(1212).intl;
-  obj.headerReconnect = intl3.string(navigation(1212).t["ZJ/vBh"]);
-  obj.body = intl.format(navigation(1212).t.kqZQNe, { helpdeskArticleUrl: articleURL });
-  obj.onNext = callback;
-  obj.valueProps = memo;
-  return jsx(navigation(8913).TwoWayLinkLanding, { platformType: platformType.platformType, img: memo1, imgStyle: tmp.image });
+  const memo1 = React.useMemo(() => ({ uri: callback(8970) }), []);
+  obj = { platformType: platformType.platformType, img: memo1, imgStyle: tmp.image, headerConnect: null, headerReconnect: null, body: null, onNext: null, valueProps: null };
+  let intl2 = navigation(1236).intl;
+  obj[3] = intl2.string(navigation(1236).t.xAWHOy);
+  let intl3 = navigation(1236).intl;
+  obj[4] = intl3.string(navigation(1236).t["ZJ/vBh"]);
+  obj[5] = intl.format(navigation(1236).t.kqZQNe, { helpdeskArticleUrl: articleURL });
+  obj[6] = callback;
+  obj[7] = memo;
+  return jsx(navigation(8937).TwoWayLinkLanding, { platformType: platformType.platformType, img: memo1, imgStyle: tmp.image, headerConnect: null, headerReconnect: null, body: null, onNext: null, valueProps: null });
 };

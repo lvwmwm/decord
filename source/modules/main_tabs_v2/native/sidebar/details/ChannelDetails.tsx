@@ -1,47 +1,52 @@
-// Module ID: 15427
-// Function ID: 117498
+// Module ID: 15460
+// Function ID: 15461
 // Name: PX_8
-// Dependencies: [31, 27, 10081, 1348, 9104, 9076, 33, 689, 4165, 566, 10079, 15428, 5497, 5517, 15426, 4563, 6540, 1557, 477, 4145, 5713, 11436, 11428, 4026, 4166, 4169, 4577, 10089, 4024, 5251, 15429, 15441, 15529, 15531, 15532, 15533, 4524, 2]
+// Dependencies: [19, 17, 10102, 1372, 9128, 9100, 21, 712, 4189, 589, 10100, 15461, 5515, 5535, 15459, 4586, 6561, 1581, 500, 4169, 5731, 11460, 11452, 4050, 4190, 4193, 4599, 10110, 4048, 5273, 15462, 15474, 15563, 15565, 15566, 15567, 4547, 2]
 
-// Module 15427 (PX_8)
-import importAllResult from "SearchFreezeContainer";
-import get_ActivityIndicator from "module_10089";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_6 from "_isNativeReflectConstruct";
-import createChannelState from "createChannelState";
+// Module 15460 (PX_8)
+import importAllResult from "DCDDeviceManager";
+import get_ActivityIndicator from "useSafeAreaInsets";
+import prototype from "prototype";
+import ensureGuildLoaded from "ensureGuildLoaded";
+import useChannelDetailsStore from "useChannelDetailsStore";
 import ChannelDetailsNavigatorScreens from "ChannelDetailsNavigatorScreens";
-import jsxProd from "DirectMessageIcon";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import jsxProd from "module_11460";
+import createCacheKey from "createCacheKey";
 
-let closure_11;
+let CHANNEL_DETAILS_TOP_MARGIN;
+let StyleSheet;
+let c10;
+let c4;
+let c9;
 let closure_12;
-let closure_7;
-let closure_8;
-let closure_9;
+let error;
+let metroImportAll;
+let unpackModuleId;
 const require = arg1;
-const View = get_ActivityIndicator.View;
-({ deleteChannelDetailsSearchState: closure_7, useChannelDetailsSearchActiveSource: closure_8, useIsChannelDetailsSearchActive: closure_9 } = createChannelState);
-const SPRING_CHANNEL_HEADER = ChannelDetailsNavigatorScreens.SPRING_CHANNEL_HEADER;
-({ jsx: closure_11, jsxs: closure_12 } = jsxProd);
-const PX_8 = require("_createForOfIteratorHelperLoose").space.PX_8;
-let obj = {};
+let c3 = importAllResult;
+({ View: c4, StyleSheet } = get_ActivityIndicator);
+({ deleteChannelDetailsSearchState: error, useChannelDetailsSearchActiveSource: metroImportAll, useIsChannelDetailsSearchActive: c9 } = useChannelDetailsStore);
+({ SPRING_CHANNEL_HEADER: c10, CHANNEL_DETAILS_TOP_MARGIN } = ChannelDetailsNavigatorScreens);
+({ jsx: unpackModuleId, jsxs: closure_12 } = jsxProd);
+const PX_8 = require("Themes").space.PX_8;
+let obj = { detailsContainer: null, information: null, linkedLobby: null, search: null, searchLocked: null, autocompleteSuggestions: null, newHeader: null };
 obj = {};
-let merged = Object.assign(get_ActivityIndicator.StyleSheet.absoluteFillObject);
-obj["backgroundColor"] = require("_createForOfIteratorHelperLoose").colors.MOBILE_ACTIONSHEET_BACKGROUND;
-obj["flex"] = 1;
-obj.detailsContainer = obj;
-_createForOfIteratorHelperLoose = { marginHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16, gap: require("_createForOfIteratorHelperLoose").space.PX_12, paddingTop: PX_8 };
-obj.information = _createForOfIteratorHelperLoose;
-obj.linkedLobby = { marginTop: require("_createForOfIteratorHelperLoose").space.PX_12, marginBottom: require("_createForOfIteratorHelperLoose").space.PX_4 };
-obj.search = { flex: 1, flexGrow: 1 };
-let obj2 = { marginTop: require("_createForOfIteratorHelperLoose").space.PX_12, marginBottom: require("_createForOfIteratorHelperLoose").space.PX_4 };
-obj.searchLocked = { marginTop: ChannelDetailsNavigatorScreens.CHANNEL_DETAILS_TOP_MARGIN, marginBottom: require("_createForOfIteratorHelperLoose").space.PX_16 };
-obj.autocompleteSuggestions = { zIndex: 10 };
-let obj3 = { marginTop: ChannelDetailsNavigatorScreens.CHANNEL_DETAILS_TOP_MARGIN, marginBottom: require("_createForOfIteratorHelperLoose").space.PX_16 };
-obj.newHeader = { paddingBottom: require("_createForOfIteratorHelperLoose").space.PX_12, zIndex: 10 };
-let closure_14 = _createForOfIteratorHelperLoose.createStyles(obj);
+let merged = Object.assign(StyleSheet.absoluteFillObject);
+obj.backgroundColor = require("Themes").colors.MOBILE_ACTIONSHEET_BACKGROUND;
+obj.flex = 1;
+obj[0] = obj;
+createCacheKey = { marginHorizontal: require("Themes").space.PX_16, gap: require("Themes").space.PX_12, paddingTop: PX_8 };
+obj[1] = createCacheKey;
+obj[2] = { marginTop: require("Themes").space.PX_12, marginBottom: require("Themes").space.PX_4 };
+obj[3] = { flex: 1, flexGrow: 1 };
+let obj2 = { marginTop: require("Themes").space.PX_12, marginBottom: require("Themes").space.PX_4 };
+obj[4] = { marginTop: CHANNEL_DETAILS_TOP_MARGIN, marginBottom: require("Themes").space.PX_16 };
+obj[5] = { zIndex: 10 };
+let obj3 = { marginTop: CHANNEL_DETAILS_TOP_MARGIN, marginBottom: require("Themes").space.PX_16 };
+obj[6] = { paddingBottom: require("Themes").space.PX_12, zIndex: 10 };
+let closure_14 = createCacheKey.createStyles(obj);
 let closure_15 = { code: "function ChannelDetailsTsx1(){const{headerHeight,isSearchActive,withTiming,timingFast,withSpring,SPRING_CHANNEL_HEADER}=this.__closure;const height=headerHeight.get();return{position:'relative',pointerEvents:isSearchActive?'none':'auto',opacity:withTiming(isSearchActive?0:1,timingFast,'animate-always'),height:height!=null&&height>=0?withSpring(isSearchActive?0:height,{...SPRING_CHANNEL_HEADER,clamp:{min:0,max:height}}):undefined};}" };
-let obj4 = { paddingBottom: require("_createForOfIteratorHelperLoose").space.PX_12, zIndex: 10 };
+let obj4 = { paddingBottom: require("Themes").space.PX_12, zIndex: 10 };
 const memoResult = importAllResult.memo(function ChannelDetails(channelId) {
   let componentWidth;
   let dismissed;
@@ -69,41 +74,44 @@ const memoResult = importAllResult.memo(function ChannelDetails(channelId) {
   let top;
   let sharedValue;
   let tmp = callback();
-  let obj = channelId(isShowing[9]);
+  let obj = channelId;
+  let tmp2 = isShowing;
+  let obj1 = channelId(isShowing[9]);
   const items = [c6];
-  stateFromStores = obj.useStateFromStores(items, () => _undefined.getChannel(channelId));
+  stateFromStores = obj1.useStateFromStores(items, () => _undefined.getChannel(channelId));
   let guild_id;
-  if (null != stateFromStores) {
+  if (stateFromStores != null) {
     guild_id = stateFromStores.guild_id;
   }
   const items1 = [stateFromStores, onChannelDeleted];
   const effect = onChannelDeleted.useEffect(() => {
     if (null == stateFromStores) {
-      if (null != onChannelDeleted) {
-        onChannelDeleted();
+      if (onChannelDeleted != null) {
+        tmp();
       }
     }
   }, items1);
-  let obj2 = channelId(isShowing[10]);
-  channelDetailsSearchContext = obj2.useChannelDetailsSearchContext(channelId, guild_id);
-  let obj3 = channelId(isShowing[11]);
-  const searchSuggestionsGesture = obj3.useSearchSuggestionsGesture(channelDetailsSearchContext);
+  let objResult = obj(tmp2[10]);
+  channelDetailsSearchContext = objResult.useChannelDetailsSearchContext(channelId, guild_id);
+  objResult = obj(tmp2[11]);
+  const searchSuggestionsGesture = objResult.useSearchSuggestionsGesture(channelDetailsSearchContext);
   ({ dismissed, setDismissed, onLayoutMeasure } = searchSuggestionsGesture);
-  const tmp7 = context(channelId);
-  c6 = tmp7;
-  const tmp8 = ref(channelId);
-  c7 = tmp8;
+  let tmp7 = isSearchLocked;
+  const tmp9 = context(channelId);
+  c6 = tmp9;
+  const tmp10 = ref(channelId);
+  c7 = tmp10;
   ref = onChannelDeleted.useRef(null);
-  context = onChannelDeleted.useContext(channelId(isShowing[14]).SwipeForMemberListContext);
-  let obj4 = channelId(isShowing[15]);
-  const isScreenReaderEnabled = obj4.useIsScreenReaderEnabled();
-  let isAndroidResult = isSearchLocked(isShowing[16])();
-  top = isSearchLocked(isShowing[17])().top;
+  context = onChannelDeleted.useContext(obj(tmp2[14]).SwipeForMemberListContext);
+  const tmp8 = isSearchLocked(tmp2[12]);
+  const isScreenReaderEnabled = obj(tmp2[15]).useIsScreenReaderEnabled();
+  let isAndroidResult = isSearchLocked(tmp2[16])();
+  top = isSearchLocked(tmp2[17])().top;
   const items2 = [top, context];
   const memo = onChannelDeleted.useMemo(() => {
     let obj = channelId(isShowing[18]);
     if (!obj.isAndroid()) {
-      if (!obj2.isIpadOS()) {
+      if (!tmpResult.isIpadOS()) {
         let tmp4 = null;
       }
       return tmp4;
@@ -112,97 +120,94 @@ const memoResult = importAllResult.memo(function ChannelDetails(channelId) {
     tmp4 = obj;
   }, items2);
   const layoutEffect = onChannelDeleted.useLayoutEffect(() => channelId(isShowing[20]).trackAppUIViewed(), []);
-  const items3 = [tmp7, isSearchLocked, tmp8, channelDetailsSearchContext];
+  const items3 = [tmp9, isSearchLocked, tmp10, channelDetailsSearchContext];
   const effect1 = onChannelDeleted.useEffect(() => {
     if (!isSearchLocked) {
       if ("initial" !== c7) {
         const current = ref.current;
         if (c6) {
-          if (null != current) {
+          if (current != null) {
             current.focus();
           }
         } else {
-          if (null != current) {
+          if (current != null) {
             current.blur();
           }
           if (!channelDetailsSearchContext.isInitialSearchQuery(channelDetailsSearchContext)) {
-            isSearchLocked(isShowing[21]).updateSearchQuery(channelDetailsSearchContext, (reset) => reset.reset());
+            isSearchLocked(isShowing[21]).updateSearchQuery(tmp4, (reset) => reset.reset());
             const obj = isSearchLocked(isShowing[21]);
-            const initialMessages = isSearchLocked(isShowing[22]).fetchInitialMessages(channelDetailsSearchContext);
+            const initialMessages = isSearchLocked(isShowing[22]).fetchInitialMessages(tmp4);
             const obj2 = isSearchLocked(isShowing[22]);
           }
         }
       }
     }
   }, items3);
-  let obj5 = channelId(isShowing[23]);
-  sharedValue = obj5.useSharedValue(undefined);
+  const objResult1 = obj(tmp2[15]);
+  sharedValue = obj(tmp2[23]).useSharedValue(undefined);
   const items4 = [sharedValue];
   callback = onChannelDeleted.useCallback((nativeEvent) => {
     const height = nativeEvent.nativeEvent.layout.height;
     if (height > outer1_13) {
       const value = sharedValue.get();
-      let tmp4 = null != value;
-      if (tmp4) {
+      let tmp3 = null != value;
+      if (tmp3) {
         const _Math = Math;
-        tmp4 = Math.abs(height - value) < 0.001;
+        tmp3 = Math.abs(height - value) < 0.001;
       }
-      if (!tmp4) {
-        const result = sharedValue.set(height);
+      if (!tmp3) {
+        const result = obj.set(height);
       }
+      obj = sharedValue;
     }
   }, items4);
-  let obj6 = channelId(isShowing[23]);
+  const objResult2 = obj(tmp2[23]);
   class Q {
     constructor() {
       value = c11.get();
-      obj = { position: "relative" };
+      tmp2 = c6;
       str = "auto";
       if (c6) {
         str = "none";
       }
-      obj.pointerEvents = str;
+      obj = { position: "relative", pointerEvents: str, opacity: null, height: null };
+      tmp3 = channelId;
+      tmp4 = c2;
       obj2 = channelId(c2[24]);
       num = 1;
-      if (c6) {
+      if (tmp2) {
         num = 0;
       }
-      obj.opacity = obj2.withTiming(num, channelId(c2[25]).timingFast, "animate-always");
+      obj[2] = obj2.withTiming(num, tmp3(tmp4[25]).timingFast, "animate-always");
       withSpringResult = undefined;
       if (null != value) {
         num2 = 0;
         if (value >= 0) {
-          tmp3 = channelId;
-          tmp4 = c2;
-          num3 = 26;
-          obj3 = channelId(c2[26]);
-          tmp5 = c6;
-          num4 = 0;
-          if (!c6) {
-            num4 = value;
+          tmp3Result = tmp3(tmp4[26]);
+          num3 = 0;
+          if (!tmp2) {
+            num3 = value;
           }
           obj = {};
           tmp6 = top;
           tmp7 = obj;
           merged = Object.assign(top);
-          obj1 = {};
-          obj1.min = 0;
-          obj1.max = value;
-          str2 = "clamp";
-          obj["clamp"] = obj1;
-          withSpringResult = obj3.withSpring(num4, obj);
+          obj1 = { min: 0, max: null };
+          obj1[1] = value;
+          obj.clamp = obj1;
+          withSpringResult = tmp3Result.withSpring(num3, obj);
         }
       }
-      obj.height = withSpringResult;
+      obj[3] = withSpringResult;
       return obj;
     }
   }
-  obj = { headerHeight: sharedValue, isSearchActive: tmp7, withTiming: channelId(isShowing[24]).withTiming, timingFast: channelId(isShowing[25]).timingFast, withSpring: channelId(isShowing[26]).withSpring, SPRING_CHANNEL_HEADER: top };
+  obj = { headerHeight: sharedValue, isSearchActive: tmp9, withTiming: obj(tmp2[24]).withTiming, timingFast: obj(tmp2[25]).timingFast, withSpring: obj(tmp2[26]).withSpring, SPRING_CHANNEL_HEADER: top };
   Q.__closure = obj;
   Q.__workletHash = 8423441529588;
   Q.__initData = closure_15;
   const items5 = [channelDetailsSearchContext];
-  const animatedStyle = obj6.useAnimatedStyle(Q);
+  const animatedStyle = obj(tmp2[23]).useAnimatedStyle(Q);
   const effect2 = onChannelDeleted.useEffect(() => {
     const result = isSearchLocked(isShowing[27]).initializeAutocomplete(channelDetailsSearchContext);
     const obj = isSearchLocked(isShowing[27]);
@@ -219,94 +224,120 @@ const memoResult = importAllResult.memo(function ChannelDetails(channelId) {
   }, items6);
   const items7 = [channelId, channelDetailsSearchContext];
   const effect4 = onChannelDeleted.useEffect(() => () => {
-    const result = isSearchLocked(isShowing[27]).clearAllSearchMesssages();
-    callback(outer1_0);
-    const obj = isSearchLocked(isShowing[27]);
-    isSearchLocked(isShowing[21]).deleteSearchQuery(outer1_5);
+    const result = outer1_1(outer1_2[27]).clearAllSearchMesssages();
+    outer1_7(closure_0);
+    const obj = outer1_1(outer1_2[27]);
+    outer1_1(outer1_2[21]).deleteSearchQuery(prototype);
   }, items7);
   const items8 = [channelId];
   const effect5 = onChannelDeleted.useEffect(() => {
     const bestActiveInputForChannelId = channelId(isShowing[28]).getBestActiveInputForChannelId(channelId);
-    if (null != bestActiveInputForChannelId) {
+    if (bestActiveInputForChannelId != null) {
       bestActiveInputForChannelId.closeCustomKeyboard();
     }
   }, items8);
   if (null == stateFromStores) {
     return null;
   } else {
-    obj = { value: tmp6(isSearchLocked(isShowing[13]).CHANNEL_DETAILS).analyticsLocations };
-    let obj1 = { gesture: searchSuggestionsGesture.gesture };
-    obj2 = {};
+    obj = { value: null, children: null };
+    obj[0] = tmp8(isSearchLocked(tmp2[13]).CHANNEL_DETAILS).analyticsLocations;
+    obj1 = { gesture: null, children: null };
+    obj1[0] = searchSuggestionsGesture.gesture;
+    let obj2 = { style: null, accessibilityViewIsModal: true, onAccessibilityEscape: null, children: null };
     const items9 = [tmp.detailsContainer, memo];
-    obj2.style = items9;
-    obj2.accessibilityViewIsModal = true;
-    obj2.onAccessibilityEscape = onBackPress;
+    obj2[0] = items9;
+    obj2[2] = onBackPress;
+    let obj3 = { style: null, children: null };
     if (isSearchLocked) {
-      obj3 = {};
       const items10 = [, ];
-      ({ searchLocked: arr14[0], autocompleteSuggestions: arr14[1] } = tmp);
-      obj3.style = items10;
-      tmp = isSearchLocked(isShowing[30]);
-      obj4 = { ref, channelId, guildId: guild_id, onSuggestionsLayoutMesure: onLayoutMeasure, onBackPress, suggestionsDismissed: dismissed, setSuggestionsDismissed: setDismissed };
+      ({ searchLocked: arr15[0], autocompleteSuggestions: arr15[1] } = tmp);
+      obj3[0] = items10;
+      tmp = tmp7(tmp2[30]);
+      const obj4 = { ref: null, channelId: null, guildId: null, onSuggestionsLayoutMesure: null, onBackPress: null, suggestionsDismissed: null, setSuggestionsDismissed: null, showBackButton: null };
+      obj4[0] = ref;
+      obj4[1] = channelId;
+      obj4[2] = guild_id;
+      obj4[3] = onLayoutMeasure;
+      obj4[4] = onBackPress;
+      obj4[5] = dismissed;
+      obj4[6] = setDismissed;
       if (!isAndroidResult) {
         isAndroidResult = isScreenReaderEnabled;
       }
       if (!isAndroidResult) {
-        dismissed = isShowing;
-        setDismissed = channelId(isShowing[18]);
-        isAndroidResult = setDismissed.isAndroid();
+        obj = obj(tmp2[18]);
+        isAndroidResult = obj.isAndroid();
       }
       if (isAndroidResult) {
         isAndroidResult = null != onBackPress;
       }
-      obj4.showBackButton = isAndroidResult;
-      obj3.children = sharedValue(tmp, obj4);
-      const items11 = [sharedValue(stateFromStores, obj3), ];
-      obj5 = { searchContext: channelDetailsSearchContext, width: componentWidth };
-      items11[1] = sharedValue(isSearchLocked(isShowing[31]), obj5);
-      obj2.children = items11;
-      let tmp42 = obj2;
-      const tmp44 = stateFromStores;
+      obj4[7] = isAndroidResult;
+      obj3[1] = tmp25(tmp, obj4);
+      let tmp25Result = tmp25(tmp27, obj3);
+      obj3 = [tmp25Result, ];
+      tmp7 = tmp7(tmp2[31]);
+      const obj5 = { searchContext: null, width: null };
+      obj5[0] = channelDetailsSearchContext;
+      obj5[1] = componentWidth;
+      tmp2 = tmp25(tmp7, obj5);
+      obj3[1] = tmp2;
+      obj2[3] = obj3;
+      let tmp29 = obj2;
     } else {
-      obj6 = { style: tmp.newHeader };
-      const obj7 = { ref, channel: stateFromStores, onBackPress, onSuggestionsLayoutMeasure: onLayoutMeasure, suggestionsDismissed: dismissed, setSuggestionsDismissed: setDismissed, componentWidth };
-      const items12 = [sharedValue(isSearchLocked(isShowing[32]), obj7), ];
-      const obj8 = { style: animatedStyle };
-      const obj9 = { style: tmp.information, onLayout: callback };
-      const obj10 = { channel: stateFromStores };
-      const items13 = [sharedValue(isSearchLocked(isShowing[33]), obj10), , ];
-      const obj11 = { channel: stateFromStores, containerStyle: tmp.linkedLobby };
-      items13[1] = sharedValue(isSearchLocked(isShowing[34]), obj11);
-      let tmp33 = null;
+      obj3[0] = tmp.newHeader;
+      const obj6 = { ref: null, channel: null, onBackPress: null, onSuggestionsLayoutMeasure: null, suggestionsDismissed: null, setSuggestionsDismissed: null, componentWidth: null };
+      obj6[0] = ref;
+      obj6[1] = stateFromStores;
+      obj6[2] = onBackPress;
+      obj6[3] = onLayoutMeasure;
+      obj6[4] = dismissed;
+      obj6[5] = setDismissed;
+      obj6[6] = componentWidth;
+      const items11 = [tmp25(tmp7(tmp2[32]), obj6), ];
+      const obj7 = { style: null, children: null };
+      obj7[0] = animatedStyle;
+      const obj8 = { style: null, onLayout: null, children: null };
+      obj8[0] = tmp.information;
+      obj8[1] = callback;
+      const obj9 = { channel: null };
+      obj9[0] = stateFromStores;
+      const items12 = [tmp25(tmp7(tmp2[33]), obj9), , ];
+      const obj10 = { channel: null, containerStyle: null };
+      obj10[0] = stateFromStores;
+      obj10[1] = tmp.linkedLobby;
+      items12[1] = tmp25(tmp7(tmp2[34]), obj10);
+      tmp25Result = null;
       if (!stateFromStores.isPrivate()) {
-        const obj12 = { channel: stateFromStores, textAlign: "left", initialExpanded: flag };
-        tmp33 = sharedValue(isSearchLocked(isShowing[35]), obj12);
+        const obj11 = { channel: null, textAlign: "left", initialExpanded: null };
+        obj11[0] = stateFromStores;
+        obj11[2] = flag;
+        tmp25Result = tmp25(tmp7(tmp2[35]), obj11);
       }
-      items13[2] = tmp33;
-      obj9.children = items13;
-      obj8.children = closure_12(isSearchLocked(isShowing[23]).View, obj9);
-      items12[1] = sharedValue(isSearchLocked(isShowing[23]).View, obj8);
-      obj6.children = items12;
-      const items14 = [closure_12(stateFromStores, obj6), ];
-      const obj13 = { freeze: !isShowing };
-      const obj14 = { style: tmp.search, collapsable: false };
-      const obj15 = { searchContext: channelDetailsSearchContext, width: componentWidth };
-      obj14.children = sharedValue(isSearchLocked(isShowing[31]), obj15);
-      obj13.children = sharedValue(stateFromStores, obj14);
-      items14[1] = sharedValue(channelId(isShowing[36]).Freeze, obj13);
-      obj2.children = items14;
-      tmp42 = obj2;
-      const tmp29 = stateFromStores;
-      const tmp30 = sharedValue;
+      items12[2] = tmp25Result;
+      obj8[2] = items12;
+      obj7[1] = tmp26(tmp7(tmp2[23]).View, obj8);
+      items11[1] = tmp25(tmp7(tmp2[23]).View, obj7);
+      obj3[1] = items11;
+      const items13 = [tmp26(tmp27, obj3), ];
+      const obj12 = { freeze: null, children: null };
+      obj12[0] = !isShowing;
+      const obj13 = { style: null, collapsable: false, children: null };
+      obj13[0] = tmp.search;
+      const obj14 = { searchContext: null, width: null };
+      obj14[0] = channelDetailsSearchContext;
+      obj14[1] = componentWidth;
+      obj13[2] = tmp25(tmp7(tmp2[31]), obj14);
+      obj12[1] = tmp25(tmp27, obj13);
+      items13[1] = tmp25(obj(tmp2[36]).Freeze, obj12);
+      obj2[3] = items13;
+      tmp29 = obj2;
     }
-    obj1.children = closure_12(stateFromStores, tmp42);
-    obj1 = tmp23(channelId(isShowing[29]).GestureDetector, obj1);
-    obj.children = obj1;
-    sharedValue(channelId(isShowing[12]).AnalyticsLocationProvider, obj);
-    const tmp26 = closure_12;
-    const tmp27 = stateFromStores;
+    obj1[1] = closure_12(stateFromStores, tmp29);
+    obj1 = tmp25(obj(tmp2[29]).GestureDetector, obj1);
+    obj[1] = obj1;
+    sharedValue(obj(tmp2[12]).AnalyticsLocationProvider, obj);
   }
 });
-let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/main_tabs_v2/native/sidebar/details/ChannelDetails.tsx");
+let result = require("prototype").fileFinishedImporting("modules/main_tabs_v2/native/sidebar/details/ChannelDetails.tsx");
 
 export default memoResult;

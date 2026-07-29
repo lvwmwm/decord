@@ -1,10 +1,10 @@
-// Module ID: 6902
-// Function ID: 59624
+// Module ID: 6924
+// Function ID: 6925
 // Name: CloverIllocon
-// Dependencies: [33, 5119, 6903, 2]
+// Dependencies: [21, 5141, 6925, 2]
 // Exports: CloverIllocon
 
-// Module 6902 (CloverIllocon)
+// Module 6924 (CloverIllocon)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/CloverIllocon.native.tsx");
@@ -18,14 +18,14 @@ export const CloverIllocon = function CloverIllocon(size) {
   if (num === undefined) {
     num = 64;
   }
-  let obj = { fadeDuration: 0 };
-  obj = { uri: importDefault(6903) };
-  obj.source = obj;
-  obj = { width: num, height: num };
-  const items = [obj];
-  obj.style = items;
-  obj.accessible = accessible;
-  obj.accessibilityLabel = accessibilityLabel;
-  obj.resizeMode = resizeMode;
-  return jsx(importDefault(5119), { width: num, height: num });
+  let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
+  obj = { uri: null };
+  obj[0] = importDefault(6925);
+  obj[1] = obj;
+  const items = [{ width: num, height: num }];
+  obj[2] = items;
+  obj[3] = accessible;
+  obj[4] = accessibilityLabel;
+  obj[5] = resizeMode;
+  return jsx(importDefault(5141), { uri: null });
 };

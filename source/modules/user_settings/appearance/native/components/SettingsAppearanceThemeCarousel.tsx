@@ -1,52 +1,48 @@
-// Module ID: 14266
-// Function ID: 109576
+// Module ID: 14288
+// Function ID: 14289
 // Name: SettingsAppearanceThemeCarousel
-// Dependencies: [31, 27, 14267, 33, 4026, 1273, 4165, 689, 4563, 22, 14268, 4166, 4169, 3979, 9353, 4161, 1553, 9692, 4134, 1212, 14271, 2]
+// Dependencies: [19, 17, 14289, 21, 4050, 1297, 4189, 712, 4586, 12, 14290, 4190, 4193, 4003, 9377, 4185, 1577, 9714, 4158, 1236, 14293, 2]
 // Exports: default
 
-// Module 14266 (SettingsAppearanceThemeCarousel)
-import result from "result";
-import get_ActivityIndicator from "get ActivityIndicator";
+// Module 14288 (SettingsAppearanceThemeCarousel)
+import getSystemLocale from "getSystemLocale";
+import get_ActivityIndicator from "Pagination";
 import importDefaultResult from "THEME_ITEM_WIDTH";
-import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import importDefaultResult1 from "module_4026";
+import jsxProd from "set";
+import createCacheKey from "createCacheKey";
+import importDefaultResult1 from "module_4050";
 
-let closure_4;
-let closure_5;
-let closure_7;
-let closure_8;
-let closure_9;
+let c4;
+let c5;
+let c9;
+let error;
+let metroImportAll;
 const require = arg1;
-({ View: closure_4, ScrollView: closure_5 } = get_ActivityIndicator);
-({ jsx: closure_7, jsxs: closure_8, Fragment: closure_9 } = jsxProd);
-let closure_10 = require("module_4026").createAnimatedComponent(require("Button").Icon);
-let obj = {};
-obj = { gap: require("_createForOfIteratorHelperLoose").space.PX_24, alignItems: "center" };
-obj.container = obj;
-obj.textCentered = { textAlign: "center" };
-_createForOfIteratorHelperLoose = { gap: require("_createForOfIteratorHelperLoose").space.PX_4, alignItems: "center" };
-obj.labelGroup = _createForOfIteratorHelperLoose;
-let obj2 = { minHeight: 20, marginTop: require("_createForOfIteratorHelperLoose").space.PX_4, flexDirection: "row", justifyContent: "center", alignItems: "center" };
-obj.titleContainer = obj2;
-obj.floatingNuxContainer = { position: "absolute", left: require("_createForOfIteratorHelperLoose").space.PX_24 };
-let obj4 = { borderRadius: require("_createForOfIteratorHelperLoose").radii.lg, flexDirection: "row", alignItems: "center", padding: require("_createForOfIteratorHelperLoose").space.PX_4, paddingRight: require("_createForOfIteratorHelperLoose").space.PX_8 };
-const merged = Object.assign(require("_createForOfIteratorHelperLoose").shadows.SHADOW_LOW);
-obj4["shadowColor"] = "#000000";
-obj.floatingNux = obj4;
+({ View: c4, ScrollView: c5 } = get_ActivityIndicator);
+({ jsx: error, jsxs: metroImportAll, Fragment: c9 } = jsxProd);
+let closure_10 = require("module_4050").createAnimatedComponent(require("Button").Icon);
+let obj = { container: null, textCentered: null, labelGroup: null, titleContainer: null, floatingNuxContainer: null, floatingNux: null, arrowLeft: null, selectionBorder: null, a11yThemeList: null, a11yThemeListScroll: null };
+obj = { gap: require("Themes").space.PX_24, alignItems: "center" };
+obj[0] = obj;
+obj[1] = { textAlign: "center" };
+createCacheKey = { gap: require("Themes").space.PX_4, alignItems: "center" };
+obj[2] = createCacheKey;
+obj[3] = { minHeight: 20, marginTop: require("Themes").space.PX_4, flexDirection: "row", justifyContent: "center", alignItems: "center" };
+let obj2 = { minHeight: 20, marginTop: require("Themes").space.PX_4, flexDirection: "row", justifyContent: "center", alignItems: "center" };
+obj[4] = { position: "absolute", left: require("Themes").space.PX_24 };
+let obj4 = { borderRadius: require("Themes").radii.lg, flexDirection: "row", alignItems: "center", padding: require("Themes").space.PX_4, paddingRight: require("Themes").space.PX_8 };
+const merged = Object.assign(require("Themes").shadows.SHADOW_LOW);
+obj4.shadowColor = "#000000";
+obj[5] = obj4;
 let items = [{ rotate: "90deg" }];
-obj.arrowLeft = { transform: items };
-let obj5 = { position: "absolute", alignSelf: "center" };
-({ THEME_ITEM_WIDTH: obj9.width, THEME_ITEM_HEIGHT: obj9.height } = importDefaultResult);
-obj5.borderRadius = require("_createForOfIteratorHelperLoose").radii.md;
-obj5.borderColor = require("_createForOfIteratorHelperLoose").colors.MOBILE_LEGACY_BUTTON_SECONDARY_BORDER_DEFAULT;
-obj5.borderWidth = 2;
-obj.selectionBorder = obj5;
-obj.a11yThemeList = { flexDirection: "row" };
-obj.a11yThemeListScroll = { flexGrow: 0 };
-let closure_11 = _createForOfIteratorHelperLoose.createStyles(obj);
+obj[6] = { transform: items };
+let obj3 = { position: "absolute", left: require("Themes").space.PX_24 };
+obj[7] = { position: "absolute", alignSelf: "center", width: importDefaultResult.THEME_ITEM_WIDTH, height: importDefaultResult.THEME_ITEM_HEIGHT, borderRadius: require("Themes").radii.md, borderColor: require("Themes").colors.MOBILE_LEGACY_BUTTON_SECONDARY_BORDER_DEFAULT, borderWidth: 2 };
+obj[8] = { flexDirection: "row" };
+obj[9] = { flexGrow: 0 };
+let closure_11 = createCacheKey.createStyles(obj);
 let closure_12 = { code: "function SettingsAppearanceThemeCarouselTsx1(){const{withTiming,isMidnightNuxVisible,timingStandard}=this.__closure;return{opacity:withTiming(isMidnightNuxVisible.get()?1:0,timingStandard),pointerEvents:isMidnightNuxVisible.get()?'auto':'none'};}" };
-let obj3 = { position: "absolute", left: require("_createForOfIteratorHelperLoose").space.PX_24 };
+let obj5 = { position: "absolute", alignSelf: "center", width: importDefaultResult.THEME_ITEM_WIDTH, height: importDefaultResult.THEME_ITEM_HEIGHT, borderRadius: require("Themes").radii.md, borderColor: require("Themes").colors.MOBILE_LEGACY_BUTTON_SECONDARY_BORDER_DEFAULT, borderWidth: 2 };
 let result = require("THEME_ITEM_WIDTH").fileFinishedImporting("modules/user_settings/appearance/native/components/SettingsAppearanceThemeCarousel.tsx");
 
 export default function SettingsAppearanceThemeCarousel(themes) {
@@ -61,25 +57,19 @@ export default function SettingsAppearanceThemeCarousel(themes) {
   const isPreview = themes.isPreview;
   ({ defaultIndex, deviceWidth } = themes);
   ({ animatedStyles, hasMidnightNux: closure_4, isRefreshEnabled, onThemeSelected } = themes);
-  function renderA11yThemeItem(index) {
-    index = index.index;
-    return ref(currentThemeIndex(isPreview[10]), {
-      themePreset: index.item,
-      isPreview,
-      isSelected: index === currentThemeIndex,
-      onPress() {
-        return outer1_5(index);
-      }
-    });
-  }
-  const tmp = callback3();
+  let ref;
+  let callback;
+  let closure_8;
+  let sharedValue;
+  let sharedValue1;
+  let callback2;
+  const tmp = callback2();
   let obj = themes(isPreview[8]);
-  let tmp3 = null;
   const isScreenReaderEnabled = obj.useIsScreenReaderEnabled();
-  const ref = deviceWidth.useRef(null);
-  let callback = deviceWidth.useRef(defaultIndex);
+  ref = deviceWidth.useRef(null);
+  callback = deviceWidth.useRef(defaultIndex);
   const items = [themes];
-  const callback2 = deviceWidth.useMemo(() => {
+  closure_8 = deviceWidth.useMemo(() => {
     const findIndexResult = themes.findIndex((theme) => "midnight" === theme.theme);
     let num = 0;
     if (findIndexResult >= 0) {
@@ -88,19 +78,19 @@ export default function SettingsAppearanceThemeCarousel(themes) {
     return num;
   }, items);
   let obj1 = themes(isPreview[4]);
-  const sharedValue = obj1.useSharedValue(false);
+  sharedValue = obj1.useSharedValue(false);
   let obj2 = themes(isPreview[4]);
-  const sharedValue1 = obj2.useSharedValue(false);
+  sharedValue1 = obj2.useSharedValue(false);
   const items1 = [sharedValue, sharedValue1];
   const effect = deviceWidth.useEffect(() => {
     const timeout = setTimeout(() => {
-      const result = outer1_9.set(false);
-      const result1 = outer1_10.set(true);
+      const result = closure_9.set(false);
+      const result1 = closure_10.set(true);
     }, 5500);
     return () => clearTimeout(closure_0);
   }, items1);
   const items2 = [onThemeSelected];
-  callback3 = deviceWidth.useMemo(() => currentThemeIndex(isPreview[9]).debounce(onThemeSelected, 180), items2);
+  callback2 = deviceWidth.useMemo(() => currentThemeIndex(isPreview[9]).debounce(onThemeSelected, 180), items2);
   const items3 = [isPreview, onThemeSelected, currentThemeIndex];
   callback = deviceWidth.useCallback((index) => {
     index = index.index;
@@ -110,25 +100,28 @@ export default function SettingsAppearanceThemeCarousel(themes) {
       isSelected: index === currentThemeIndex,
       onPress() {
         if (null != outer1_6.current) {
-          const current3 = outer1_6.current;
-          const currentIndex = current3.getCurrentIndex();
+          const current = tmp.current;
+          const currentIndex = current.getCurrentIndex();
           if (currentIndex === index) {
-            return outer1_5(index);
+            return outer1_5(tmp3);
           } else {
-            if (currentIndex !== index) {
+            if (currentIndex !== tmp3) {
               if (0 === currentIndex) {
-                let obj = { count: index };
-                return outer1_6.current.next(obj);
+                let obj = { count: null };
+                obj[0] = tmp3;
+                return tmp.current.next(obj);
               } else {
-                const current = outer1_6.current;
-                obj = { index, animated: true };
-                current.scrollTo(obj);
+                const current2 = tmp.current;
+                obj = { index: null, animated: true };
+                obj[0] = tmp3;
+                current2.scrollTo(obj);
               }
             }
-            const current2 = outer1_6.current;
-            if (null != current2) {
-              obj = { index, animated: true };
-              current2.scrollTo(obj);
+            const current3 = tmp.current;
+            if (current3 != null) {
+              obj = { index: null, animated: true };
+              obj[0] = tmp3;
+              current3.scrollTo(obj);
             }
           }
         }
@@ -139,59 +132,67 @@ export default function SettingsAppearanceThemeCarousel(themes) {
   let obj3 = themes(isPreview[4]);
   class P {
     constructor() {
-      obj = {};
-      obj2 = themes(isPreview[11]);
+      tmp = themes;
+      tmp2 = isPreview;
+      obj = themes(isPreview[11]);
+      obj2 = c9;
       num = 0;
-      if (closure_9.get()) {
+      if (c9.get()) {
         num = 1;
       }
-      obj.opacity = obj2.withTiming(num, themes(isPreview[12]).timingStandard);
+      obj = { opacity: obj.withTiming(num, tmp(tmp2[12]).timingStandard), pointerEvents: null };
       str = "none";
-      if (closure_9.get()) {
+      if (obj2.get()) {
         str = "auto";
       }
-      obj.pointerEvents = str;
+      obj[1] = str;
       return obj;
     }
   }
   obj = { withTiming: themes(isPreview[11]).withTiming, isMidnightNuxVisible: sharedValue, timingStandard: themes(isPreview[12]).timingStandard };
   P.__closure = obj;
   P.__workletHash = 3854555745742;
-  P.__initData = renderA11yThemeItem;
-  obj = { style: tmp.titleContainer };
+  P.__initData = closure_12;
+  obj = { style: tmp.titleContainer, children: null };
   const animatedStyle = obj3.useAnimatedStyle(P);
+  let tmp13 = null;
   if (themes[currentThemeIndex].type !== themes(isPreview[13]).ClientThemeType.STANDARD_BACKGROUND_THEME) {
-    obj1 = { source: currentThemeIndex(isPreview[14]), style: animatedStyles.iconHeaderSecondary, size: themes(isPreview[5]).IconSizes.SMALL_20 };
-    tmp3 = callback(sharedValue1, obj1);
+    obj1 = { source: null, style: null, size: null };
+    obj1[0] = currentThemeIndex(tmp3[14]);
+    obj1[1] = animatedStyles.iconHeaderSecondary;
+    obj1[2] = tmp2(tmp3[5]).IconSizes.SMALL_20;
+    tmp13 = callback(sharedValue1, obj1);
   }
-  const items4 = [tmp3, ];
-  obj2 = { animated: true, style: isRefreshEnabled ? animatedStyles.headerPrimary : animatedStyles.headerSecondary, variant: "heading-sm/semibold" };
+  const items4 = [tmp13, ];
+  obj2 = { animated: true, style: isRefreshEnabled ? animatedStyles.headerPrimary : animatedStyles.headerSecondary, variant: "heading-sm/semibold", children: null };
   let obj8 = themes[currentThemeIndex];
-  obj2.children = obj8.getName();
+  obj2[3] = obj8.getName();
   items4[1] = callback(themes(isPreview[15]).Text, obj2);
-  obj.children = items4;
-  const tmp10Result = callback2(closure_4, obj);
-  obj3 = {};
+  obj[1] = items4;
+  let tmp11Result = tmp11(tmp12, obj);
   if (!isScreenReaderEnabled) {
-    if (!themes(isPreview[16]).isThumbstickScrollDevice) {
-      const obj4 = {};
-      const obj5 = { pointerEvents: "none", style: tmp.selectionBorder };
-      const items5 = [callback(closure_4, obj5), ];
-      const obj6 = { ref, data: themes, renderItem: callback };
-      const obj7 = { width: deviceWidth, justifyContent: "center", alignItems: "center", marginLeft: ref.THEME_ITEM_HORIZONTAL_MARGIN };
-      obj6.style = obj7;
-      obj6.width = ref.THEME_ITEM_WIDTH + ref.THEME_ITEM_HORIZONTAL_MARGIN;
-      obj6.height = ref.THEME_ITEM_HEIGHT;
-      obj6.loop = false;
-      obj6.pagingEnabled = true;
-      obj6.defaultIndex = defaultIndex;
-      obj6.onSnapToItem = onThemeSelected;
-      obj6.scrollAnimationDuration = 200;
-      obj6.onProgressChange = function onProgressChange(arg0, arg1) {
+    if (!tmp2(tmp3[16]).isThumbstickScrollDevice) {
+      obj3 = { children: null };
+      const obj4 = { pointerEvents: "none", style: null };
+      obj4[1] = tmp.selectionBorder;
+      const items5 = [tmp17(tmp12, obj4), ];
+      const obj5 = { ref: null, data: null, renderItem: null, style: null, width: null, height: null, loop: false, pagingEnabled: true, defaultIndex: null, onSnapToItem: null, scrollAnimationDuration: 200, onProgressChange: null };
+      obj5[0] = ref;
+      obj5[1] = themes;
+      obj5[2] = callback;
+      const obj6 = { width: null, justifyContent: "center", alignItems: "center", marginLeft: null };
+      obj6[0] = deviceWidth;
+      obj6[3] = ref.THEME_ITEM_HORIZONTAL_MARGIN;
+      obj5[3] = obj6;
+      obj5[4] = ref.THEME_ITEM_WIDTH + ref.THEME_ITEM_HORIZONTAL_MARGIN;
+      obj5[5] = ref.THEME_ITEM_HEIGHT;
+      obj5[8] = defaultIndex;
+      obj5[9] = onThemeSelected;
+      obj5[11] = function onProgressChange(arg0, arg1) {
         const rounded = Math.round(arg1);
         if (rounded !== ref.current) {
           const result = themes(isPreview[18]).triggerHapticFeedback(themes(isPreview[18]).HapticFeedbackTypes.IMPACT_LIGHT);
-          ref.current = rounded;
+          tmp2.current = rounded;
           callback(rounded);
           const obj = themes(isPreview[18]);
         }
@@ -201,96 +202,96 @@ export default function SettingsAppearanceThemeCarousel(themes) {
           if (tmp11) {
             const result1 = sharedValue1.set(true);
           }
-          const result2 = sharedValue.set(!sharedValue1.get() && !tmp11);
-          const tmp16 = !sharedValue1.get() && !tmp11;
+          const value = sharedValue1.get();
+          let tmp17 = !value;
+          if (!value) {
+            tmp17 = !tmp11;
+          }
+          const result2 = sharedValue.set(tmp17);
         }
       };
-      items5[1] = callback(currentThemeIndex(isPreview[17]), obj6);
-      obj4.children = items5;
-      let tmp30 = callback2(sharedValue, obj4);
+      items5[1] = tmp17(currentThemeIndex(tmp3[17]), obj5);
+      obj3[0] = items5;
+      tmp11Result = tmp11(sharedValue, obj3);
     }
-    obj3.children = tmp30;
-    const tmp19Result = tmp19(tmp20, obj3);
-    obj8 = { animated: true, style: null, variant: "text-sm/medium" };
+    const obj7 = { children: null };
+    obj7[0] = tmp11Result;
+    let tmp17Result = tmp17(tmp12, obj7);
+    obj8 = { animated: true, style: null, variant: "text-sm/medium", children: null };
     const items6 = [animatedStyles.headerSecondary, tmp.textCentered];
-    obj8.style = items6;
+    obj8[1] = items6;
     if (isPreview) {
-      if (themes[currentThemeIndex].type !== themes(isPreview[13]).ClientThemeType.STANDARD_BACKGROUND_THEME) {
-        const intl2 = themes(isPreview[19]).intl;
-        let stringResult = intl2.string(themes(isPreview[19]).t.VqGKm0);
+      if (themes[currentThemeIndex].type !== tmp2(tmp3[13]).ClientThemeType.STANDARD_BACKGROUND_THEME) {
+        const intl2 = tmp2(tmp3[19]).intl;
+        let stringResult = intl2.string(tmp2(tmp3[19]).t.VqGKm0);
       }
-      obj8.children = stringResult;
-      const tmp32Result = tmp32(tmp35, obj8);
-      const obj9 = {};
+      obj8[3] = stringResult;
+      tmp17Result = tmp17(tmp24, obj8);
+      const obj9 = { children: null };
       if (isRefreshEnabled) {
-        const items7 = [tmp19Result, ];
-        const obj10 = { style: tmp.labelGroup };
-        const items8 = [tmp10Result, tmp32Result];
-        obj10.children = items8;
-        items7[1] = callback2(closure_4, obj10);
-        obj9.children = items7;
-        let tmp46 = obj9;
+        const items7 = [tmp17Result, ];
+        const obj10 = { style: null, children: null };
+        obj10[0] = tmp.labelGroup;
+        const items8 = [tmp11Result, tmp17Result];
+        obj10[1] = items8;
+        items7[1] = tmp11(tmp12, obj10);
+        obj9[0] = items7;
+        let tmp28 = obj9;
       } else {
-        const items9 = [tmp10Result, tmp19Result, tmp32Result];
-        obj9.children = items9;
-        tmp46 = obj9;
+        const items9 = [tmp11Result, tmp17Result, tmp17Result];
+        obj9[0] = items9;
+        tmp28 = obj9;
       }
-      const obj11 = { style: tmp.container };
-      const obj12 = { style: tmp.floatingNuxContainer };
-      const obj13 = {};
+      const obj11 = { style: null, children: null };
+      obj11[0] = tmp.container;
+      const obj12 = { style: null, children: null };
+      obj12[0] = tmp.floatingNuxContainer;
+      const obj13 = { style: null, children: null };
       const items10 = [tmp.floatingNux, animatedStyle, , ];
       ({ bgSurfaceOverlay: arr12[2], borderFaint: arr12[3] } = animatedStyles);
-      obj13.style = items10;
-      const obj14 = {};
+      obj13[0] = items10;
+      const obj14 = { style: null, source: null, size: null };
       const items11 = [tmp.arrowLeft, animatedStyles.iconInteractive];
-      obj14.style = items11;
-      obj14.source = currentThemeIndex(isPreview[20]);
-      obj14.size = themes(isPreview[5]).IconSizes.REFRESH_SMALL_16;
-      const items12 = [callback(sharedValue1, obj14), ];
-      const obj15 = { animated: true, style: animatedStyles.textNormal, variant: "eyebrow", maxFontSizeMultiplier: 1.5 };
-      const intl3 = themes(isPreview[19]).intl;
-      obj15.children = intl3.string(themes(isPreview[19]).t.y2b7CA);
-      items12[1] = callback(themes(isPreview[15]).Text, obj15);
-      obj13.children = items12;
-      obj12.children = callback2(currentThemeIndex(isPreview[4]).View, obj13);
-      const items13 = [callback(closure_4, obj12), callback2(sharedValue, tmp46)];
-      class P {
-        constructor() {
-          obj = {};
-          obj2 = themes(isPreview[11]);
-          num = 0;
-          if (closure_9.get()) {
-            num = 1;
-          }
-          obj.opacity = obj2.withTiming(num, themes(isPreview[12]).timingStandard);
-          str = "none";
-          if (closure_9.get()) {
-            str = "auto";
-          }
-          obj.pointerEvents = str;
-          return obj;
-        }
-      }
-      return callback2(closure_4, obj11);
+      obj14[0] = items11;
+      obj14[1] = currentThemeIndex(tmp3[20]);
+      obj14[2] = tmp2(tmp3[5]).IconSizes.REFRESH_SMALL_16;
+      const items12 = [tmp17(sharedValue1, obj14), ];
+      const obj15 = { animated: true, style: null, variant: "eyebrow", maxFontSizeMultiplier: 1.5, children: null };
+      obj15[1] = animatedStyles.textNormal;
+      const intl3 = tmp2(tmp3[19]).intl;
+      obj15[4] = intl3.string(tmp2(tmp3[19]).t.y2b7CA);
+      items12[1] = tmp17(tmp2(tmp3[15]).Text, obj15);
+      obj13[1] = items12;
+      obj12[1] = tmp11(currentThemeIndex(tmp3[4]).View, obj13);
+      const items13 = [tmp17(tmp12, obj12), tmp11(sharedValue, tmp28)];
+      obj11[1] = items13;
+      return tmp11(tmp12, obj11);
     }
-    const intl = themes(isPreview[19]).intl;
+    const intl = tmp2(tmp3[19]).intl;
     const string = intl.string;
-    const t = themes(isPreview[19]).t;
+    const t = tmp2(tmp3[19]).t;
     if (themes.isSynced) {
       stringResult = string(t.lhV0Y2);
     } else {
       stringResult = string(t.d5Gu9A);
     }
-    tmp32 = callback;
   }
-  tmp30 = callback(onThemeSelected, {
+  tmp11Result = tmp17(onThemeSelected, {
     horizontal: true,
     style: tmp.a11yThemeListScroll,
     contentContainerStyle: tmp.a11yThemeList,
-    children: themes.map((item, index) => {
-      obj = { children: renderA11yThemeItem(obj) };
-      obj = { item, index };
-      return ref(outer1_4, obj, "theme-" + index);
+    children: themes.map((themePreset) => {
+      obj = { children: ref(currentThemeIndex(isPreview[10]), obj) };
+      let closure_0 = arg1;
+      obj = {
+        themePreset,
+        isPreview,
+        isSelected: arg1 === currentThemeIndex,
+        onPress() {
+          return outer1_5(closure_0);
+        }
+      };
+      return ref(outer1_4, obj, "theme-" + arg1);
     })
   });
 };

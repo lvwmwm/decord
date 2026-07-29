@@ -1,34 +1,32 @@
-// Module ID: 5190
-// Function ID: 45063
+// Module ID: 5212
+// Function ID: 5213
 // Name: FormCheckboxRow
-// Dependencies: [31, 33, 4165, 3883, 5191, 5217, 2]
+// Dependencies: [19, 21, 4189, 3907, 5213, 5239, 2]
 // Exports: default
 
-// Module 5190 (FormCheckboxRow)
-import "result";
+// Module 5212 (FormCheckboxRow)
+import "noop";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
 const require = arg1;
-let closure_4 = _createForOfIteratorHelperLoose.createStyles({ checkboxWrapperStyle: { flexShrink: 0 } });
-const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("design/void/Form/native/FormCheckboxRow.tsx");
+let closure_4 = createCacheKey.createStyles({ checkboxWrapperStyle: { flexShrink: 0 } });
+const result = require("createCacheKey").fileFinishedImporting("design/void/Form/native/FormCheckboxRow.tsx");
 
 export default function FormCheckboxRow(selected) {
   let accessibilityRole;
   let accessibilityState;
   selected = selected.selected;
-  let obj = Object.create(null);
-  obj.selected = 0;
-  const merged = Object.assign(selected, obj);
-  obj = require(3883) /* useCheckboxA11yNative */;
+  const merged = Object.assign(selected, Object.create(null));
+  let obj = require(3907) /* useCheckboxA11yNative */;
   const checkboxA11yNative = obj.useCheckboxA11yNative({ checked: selected });
   ({ accessibilityRole, accessibilityState } = checkboxA11yNative);
   obj = {};
-  const tmp3 = callback();
+  const tmp2 = callback();
   const merged1 = Object.assign(merged);
-  obj["accessibilityRole"] = accessibilityRole;
-  obj["accessibilityState"] = accessibilityState;
-  obj["trailing"] = jsx(importDefault(5217), { selected });
-  obj["trailingWrapperStyle"] = tmp3.checkboxWrapperStyle;
-  return jsx(importDefault(5191), {});
+  obj.accessibilityRole = accessibilityRole;
+  obj.accessibilityState = accessibilityState;
+  obj.trailing = jsx(importDefault(5239), { selected });
+  obj.trailingWrapperStyle = tmp2.checkboxWrapperStyle;
+  return jsx(importDefault(5213), {});
 };

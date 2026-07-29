@@ -1,10 +1,10 @@
-// Module ID: 9447
-// Function ID: 73570
+// Module ID: 9471
+// Function ID: 9472
 // Name: useCaptchaStore
-// Dependencies: [57, 621, 682, 5849, 5854, 2]
+// Dependencies: [32, 644, 705, 5867, 5872, 2]
 // Exports: flushCaptchaServeVolume, incrementCaptchaServeVolume, isCaptchaStoreVolumeEmpty
 
-// Module 9447 (useCaptchaStore)
+// Module 9471 (useCaptchaStore)
 import _slicedToArray from "_slicedToArray";
 import keys from "keys";
 
@@ -18,51 +18,50 @@ export const isCaptchaStoreVolumeEmpty = function isCaptchaStoreVolumeEmpty() {
 };
 export const incrementCaptchaServeVolume = function incrementCaptchaServeVolume(arg0) {
   const _require = arg0;
-  _require(682).batchUpdates(() => {
+  _require(705).batchUpdates(() => {
     outer1_4.setState((arg0) => {
       let sum = arg0;
-      if (null == outer1_0) {
+      if (null == closure_0) {
         return sum;
       } else {
-        let obj = {};
+        let obj = { captchaServeVolume: null };
         obj = {};
         const merged = Object.assign(sum.captchaServeVolume);
         if (tmp3) {
-          sum = sum.captchaServeVolume[tmp6] + 1;
-          obj[tmp6] = sum;
-          obj.captchaServeVolume = obj;
-          let tmp7 = obj;
+          sum = sum.captchaServeVolume[tmp2] + 1;
+          obj[tmp2] = sum;
+          obj[0] = obj;
+          let tmp6 = obj;
         } else {
-          obj[tmp6] = 1;
-          obj.captchaServeVolume = obj;
-          tmp7 = obj;
+          obj[tmp2] = 1;
+          obj[0] = obj;
+          tmp6 = obj;
         }
-        tmp3 = outer1_0 in sum.captchaServeVolume;
+        tmp3 = tmp2 in sum.captchaServeVolume;
       }
     });
   });
 };
 export const flushCaptchaServeVolume = function flushCaptchaServeVolume() {
-  let length;
+  let tmp6;
+  let tmp7;
   const entries = Object.entries(keys.getState().captchaServeVolume);
-  let num = 0;
-  if (0 < entries.length) {
-    do {
-      let tmp = callback;
-      let tmp2 = callback(entries[num], 2);
-      let tmp3 = importDefault;
-      let tmp4 = dependencyMap;
-      let obj = importDefault(5849);
-      obj = {};
-      let tmp5 = require;
-      obj.name = require(5854) /* set */.MetricEvents.CAPTCHA_SERVE_VOLUME_DISTRIBUTION;
-      let _HermesInternal = HermesInternal;
-      let items = ["user_flow:" + tmp2[0]];
-      obj.tags = items;
-      let distributionResult = obj.distribution(obj, tmp2[1], true);
-      num = num + 1;
-      length = entries.length;
-    } while (num < length);
+  while (tmp2 !== undefined) {
+    let tmp4 = callback;
+    let tmp5 = callback(tmp3, 2);
+    let tmp8 = importDefault;
+    let tmp9 = dependencyMap;
+    [tmp6, tmp7] = tmp5;
+    let obj = importDefault(5867);
+    obj = { name: null, tags: null };
+    let tmp10 = require;
+    obj[0] = require(5872) /* set */.MetricEvents.CAPTCHA_SERVE_VOLUME_DISTRIBUTION;
+    let _HermesInternal = HermesInternal;
+    let items = ["user_flow:" + tmp6];
+    obj[1] = items;
+    let distributionResult = obj.distribution(obj, tmp7, true);
+    continue;
   }
-  require(682) /* batchUpdates */.batchUpdates(() => outer1_4.setState({ captchaServeVolume: {} }));
+  tmp2 = entries[Symbol.iterator]();
+  require(705) /* batchUpdates */.batchUpdates(() => state.setState({ captchaServeVolume: {} }));
 };

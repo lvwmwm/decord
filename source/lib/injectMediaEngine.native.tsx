@@ -1,11 +1,11 @@
-// Module ID: 4213
-// Function ID: 35956
-// Dependencies: [4214, 4215, 2]
+// Module ID: 4237
+// Function ID: 4238
+// Dependencies: [4238, 4239, 2]
 
-// Module 4213
-import assertInjected from "assertInjected";
+// Module 4237
+import inject from "inject";
 
-assertInjected.inject({
+inject.inject({
   supported() {
     return true;
   },
@@ -17,7 +17,7 @@ assertInjected.inject({
 
   },
   getVoiceEngine() {
-    return require(4215) /* base64Decode */.default;
+    return require(4239) /* logger */.default;
   },
   getOpenH264LibraryPath() {
 

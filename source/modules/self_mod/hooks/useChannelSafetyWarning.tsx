@@ -1,11 +1,11 @@
-// Module ID: 10410
-// Function ID: 80174
+// Module ID: 10434
+// Function ID: 10435
 // Name: useChannelSafetyWarning
-// Dependencies: [9075, 566, 2]
+// Dependencies: [9099, 589, 2]
 // Exports: useChannelSafetyWarning
 
-// Module 10410 (useChannelSafetyWarning)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 10434 (useChannelSafetyWarning)
+import handleConnectionOpen from "handleConnectionOpen";
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/self_mod/hooks/useChannelSafetyWarning.tsx");
@@ -13,15 +13,15 @@ const result = require("set").fileFinishedImporting("modules/self_mod/hooks/useC
 export const useChannelSafetyWarning = function useChannelSafetyWarning(channelId, LIKELY_ATO) {
   const _require = channelId;
   const dependencyMap = LIKELY_ATO;
-  const items = [_isNativeReflectConstruct];
+  const items = [handleConnectionOpen];
   const items1 = [channelId];
-  const stateFromStores = _require(566).useStateFromStores(items, () => outer1_2.getChannelSafetyWarnings(closure_0), items1);
+  const stateFromStores = _require(589).useStateFromStores(items, () => outer1_2.getChannelSafetyWarnings(closure_0), items1);
   const found = stateFromStores.filter((type) => type.type === closure_1);
   return found.find((dismiss_timestamp) => {
     let tmp = null == dismiss_timestamp.dismiss_timestamp;
     if (tmp) {
       let expiry;
-      if (null != dismiss_timestamp) {
+      if (dismiss_timestamp != null) {
         expiry = dismiss_timestamp.expiry;
       }
       let tmp3 = null == expiry;

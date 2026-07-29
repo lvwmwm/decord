@@ -1,41 +1,41 @@
-// Module ID: 16626
-// Function ID: 129549
-// Name: _isNativeReflectConstruct
-// Dependencies: [7, 6, 15, 17, 18, 27, 1922, 1194, 675, 507, 477, 5112, 2]
+// Module ID: 16661
+// Function ID: 16662
+// Name: updateSocialRpcNetworkConfig
+// Dependencies: [17, 1946, 1218, 698, 530, 5134, 500, 2]
 
-// Module 16626 (_isNativeReflectConstruct)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_4 from "_isNativeReflectConstruct";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
+// Module 16661 (updateSocialRpcNetworkConfig)
 import { NativeModules } from "get ActivityIndicator";
-import closure_9 from "_isNativeReflectConstruct";
-import closure_10 from "_isNativeReflectConstruct";
-import tmp2 from "AutomaticLifecycleManager";
+import _getSystemLocale from "_getSystemLocale";
+import fetchFingerprint from "fetchFingerprint";
+import "initialize";
 
-const require = arg1;
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
-  }
-  const result = _isNativeReflectConstruct();
-}
 function updateSocialRpcNetworkConfig() {
-  let obj = { "X-Super-Properties": importDefault(675).getSuperPropertiesBase64(), "X-Fingerprint": store.getFingerprint(), "X-Installation-ID": store.getInstallationForTracking(), "X-Discord-Locale": locale.locale };
+  let obj = { "X-Super-Properties": null, "X-Fingerprint": null, "X-Installation-ID": null, "X-Discord-Locale": null };
+  obj[0] = importDefault(698).getSuperPropertiesBase64();
+  obj[1] = store.getFingerprint();
+  obj[2] = store.getInstallationForTracking();
+  obj[3] = locale.locale;
   const NativeCacheModule = NativeModules.NativeCacheModule;
-  if (null != NativeCacheModule) {
+  if (NativeCacheModule != null) {
     const _JSON = JSON;
-    obj = { apiBaseUrl: require(507) /* _isNativeReflectConstruct */.getAPIBaseURL() };
-    obj.headers = obj;
+    obj = { apiBaseUrl: null, headers: null };
+    obj[0] = require(530) /* sendRequest */.getAPIBaseURL();
+    obj[1] = obj;
     const result = NativeCacheModule.setItem("socialRpcNetworkRequest", JSON.stringify(obj));
-    const obj4 = require(507) /* _isNativeReflectConstruct */;
+    const obj4 = require(530) /* sendRequest */;
   }
 }
-tmp2 = new tmp2();
-let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/rpc/native/SocialRpcNetworkConfigManager.tsx");
+let prototype = function SocialRpcNetworkConfigManager() {
+  const applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
+  applyArgumentsResult.handleUpdate = require(500) /* set */.isAndroid() ? updateSocialRpcNetworkConfig : (() => {
 
-export default tmp2;
+  });
+  applyArgumentsResult.actions = { POST_CONNECTION_OPEN: applyArgumentsResult.handleUpdate };
+  return applyArgumentsResult;
+}.prototype;
+class prototype extends tmp2 {
+}
+prototype = new prototype();
+let result = require("fetchFingerprint").fileFinishedImporting("modules/rpc/native/SocialRpcNetworkConfigManager.tsx");
+
+export default prototype;

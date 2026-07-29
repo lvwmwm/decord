@@ -1,11 +1,10 @@
 // Module ID: 12656
-// Function ID: 97718
+// Function ID: 12657
 // Name: registerAsset
-// Dependencies: [1217]
+// Dependencies: [1241]
 
 // Module 12656 (registerAsset)
 import registerAsset from "registerAsset";
 
-const obj = { __packager_asset: true, httpServerLocation: "/assets/images/native/premium/guild_boosting/tier_icons/flower_star/light", width: 24, height: 23, scales: [2, 3], hash: "d360e66ed8ba0a3060c68a8e44e7aa91", name: "tier_3_24px", type: "png" };
 
-export default registerAsset.registerAsset(obj);
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/guild_boosting/native/images", width: 18, height: 15, scales: [2, 3], hash: "dc018ce302b0357451a31422d7180d84", name: "sparkle_star_pointed", type: "png" });

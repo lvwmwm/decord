@@ -1,12 +1,13 @@
-// Module ID: 16672
-// Function ID: 129902
+// Module ID: 16708
+// Function ID: 16709
 // Name: context
-// Dependencies: [31, 2]
+// Dependencies: [19, 2]
 // Exports: useSafetyFlowTask
 
-// Module 16672 (context)
-import importAllResult from "result";
+// Module 16708 (context)
+import importAllResult from "noop";
 
+let c0 = importAllResult;
 let context = importAllResult.createContext(null);
 const result = require("set").fileFinishedImporting("modules/safety_flows/SafetyFlowsTaskContext.tsx");
 

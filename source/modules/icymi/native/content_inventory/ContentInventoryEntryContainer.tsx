@@ -1,57 +1,53 @@
-// Module ID: 15345
-// Function ID: 116923
+// Module ID: 15378
+// Function ID: 15379
 // Name: iCYMIStyles
-// Dependencies: [31, 27, 1850, 33, 15289, 689, 477, 8161, 8335, 566, 4695, 15328, 1273, 2]
+// Dependencies: [19, 17, 1874, 21, 15322, 712, 500, 8185, 8359, 589, 4717, 15361, 1297, 2]
 // Exports: default
 
-// Module 15345 (iCYMIStyles)
-import result from "result";
+// Module 15378 (iCYMIStyles)
+import noop from "noop";
 import { View } from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import mergeGuildAvatar from "mergeGuildAvatar";
 import jsxProd from "jsxProd";
 import createICYMIStyles from "createICYMIStyles";
 
 let closure_6;
-let closure_7;
+let error;
 const require = arg1;
-({ jsx: closure_6, jsxs: closure_7 } = jsxProd);
-const iCYMIStyles = createICYMIStyles.createICYMIStyles((margin) => {
-  let obj = {};
-  obj = {};
+({ jsx: closure_6, jsxs: error } = jsxProd);
+const iCYMIStyles = createICYMIStyles.createICYMIStyles((marginBottom) => {
   let num = 0;
   if (!arg1) {
-    num = margin.margin;
+    num = marginBottom.margin;
   }
-  obj.marginTop = num;
-  obj.pressable = obj;
-  obj = { marginHorizontal: margin.margin };
+  let obj = { pressable: { marginTop: num }, container: null, screenshotContainer: null, header: null, headerInfo: null, title: null, subTitleContainer: null };
+  obj = { marginHorizontal: marginBottom.margin, paddingBottom: null, paddingTop: null };
   let num2 = 0;
   if (!arg1) {
-    num2 = margin.margin;
+    num2 = marginBottom.margin;
   }
-  obj.paddingBottom = num2;
+  obj[1] = num2;
   let num3 = 0;
   if (arg1) {
-    num3 = margin.margin;
+    num3 = marginBottom.margin;
   }
-  obj.paddingTop = num3;
-  obj.container = obj;
-  obj.screenshotContainer = { marginBottom: margin.margin };
-  const obj1 = { display: "flex", flexDirection: "row", alignItems: "center", gap: importDefault(689).space.PX_12, marginBottom: margin.margin };
-  obj.header = obj1;
+  obj[2] = num3;
+  obj[1] = obj;
+  obj[2] = { marginBottom: marginBottom.margin };
+  obj = { display: "flex", flexDirection: "row", alignItems: "center", gap: importDefault(712).space.PX_12, marginBottom: marginBottom.margin };
+  obj[3] = obj;
+  obj[4] = { flex: 1 };
   let num4 = 1;
-  obj.headerInfo = { flex: 1 };
-  const obj2 = { display: "flex", flexDirection: "row", alignItems: "center", gap: 6, marginBottom: null, marginTop: 2 };
-  if (obj6.isAndroid()) {
+  if (obj4.isAndroid()) {
     num4 = -1;
   }
-  obj2.marginBottom = num4;
-  obj.title = obj2;
-  const obj3 = { flexDirection: "row", alignItems: "center", gap: importDefault(689).space.PX_8 };
-  obj.subTitleContainer = obj3;
+  obj[5] = { display: "flex", flexDirection: "row", alignItems: "center", gap: 6, marginBottom: num4, marginTop: 2 };
+  obj4 = require(500) /* set */;
+  const tmp = importDefault;
+  obj[6] = { flexDirection: "row", alignItems: "center", gap: importDefault(712).space.PX_8 };
   return obj;
 });
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/icymi/native/content_inventory/ContentInventoryEntryContainer.tsx");
+const result = require("mergeGuildAvatar").fileFinishedImporting("modules/icymi/native/content_inventory/ContentInventoryEntryContainer.tsx");
 
 export default function ContentInventoryEntryContainer(contentId) {
   let highlight;
@@ -76,52 +72,70 @@ export default function ContentInventoryEntryContainer(contentId) {
       let obj = userId(type[7]);
       obj.itemInteracted(contentId, type, "press");
       let obj1 = userId(type[7]);
-      obj = { itemId: contentId, itemType: type, actionParameters: { actionGestureType: "press", actionTargetElement: "item_container", actionIntentType: "open", actionDestinationType: null } };
+      obj = { itemId: null, itemType: null, actionParameters: null };
+      obj[0] = contentId;
+      obj[1] = type;
+      obj[2] = { actionGestureType: "press", actionTargetElement: "item_container", actionIntentType: "open", actionDestinationType: null };
       obj1.feedItemActioned(obj);
-      onPress();
+      tmp();
     } else {
       userId(type[7]).itemInteracted(contentId, type, "open_profile");
       const obj4 = userId(type[7]);
-      obj = { itemId: contentId, itemType: type, actionParameters: { actionGestureType: "press", actionTargetElement: "item_container", actionIntentType: "open", actionDestinationType: "user" } };
+      obj = { itemId: null, itemType: null, actionParameters: null };
+      obj[0] = contentId;
+      obj[1] = type;
+      obj[2] = { actionGestureType: "press", actionTargetElement: "item_container", actionIntentType: "open", actionDestinationType: "user" };
       userId(type[7]).feedItemActioned(obj);
-      obj1 = { userId };
+      obj1 = { userId: null };
+      obj1[0] = userId;
       userId(type[8])(obj1);
       const obj5 = userId(type[7]);
     }
   }, items);
   let obj = contentId(type[9]);
-  const items1 = [_isNativeReflectConstruct];
+  const items1 = [mergeGuildAvatar];
   const stateFromStores = obj.useStateFromStores(items1, () => outer1_5.getUser(userId));
-  let tmp5Result = null;
+  let tmp7Result = null;
   if (null != stateFromStores) {
-    obj = { unstable_pressDelay: 130, onPress: callback, accessibilityRole: "button", style: tmp.pressable };
-    obj = { hideDivider: flag, highlight };
-    let obj1 = {};
+    obj = { unstable_pressDelay: 130, onPress: null, accessibilityRole: "button", style: null, children: null };
+    obj[1] = callback;
+    obj[3] = tmp.pressable;
+    obj = { hideDivider: null, highlight: null, children: null };
+    obj[0] = flag;
+    obj[1] = highlight;
     const items2 = [tmp.container, ];
+    let screenshotContainer = flag;
     if (flag) {
-      flag = tmp.screenshotContainer;
+      screenshotContainer = tmp.screenshotContainer;
     }
-    items2[1] = flag;
-    obj1.style = items2;
-    const obj2 = { style: tmp.header };
-    const obj3 = { animate: true, size: contentId(type[12]).AvatarSizes.NORMAL, user: stateFromStores, guildId: undefined };
-    const items3 = [callback(contentId(type[12]).Avatar, obj3, stateFromStores.id), ];
-    let obj4 = { style: tmp.headerInfo };
-    let obj5 = { style: tmp.title, children: title };
-    const items4 = [callback(View, obj5), ];
-    const obj6 = { style: tmp.subTitleContainer, children: subtitle };
-    items4[1] = callback(View, obj6);
-    obj4.children = items4;
-    items3[1] = callback2(View, obj4);
-    obj2.children = items3;
-    const items5 = [callback2(View, obj2), contentId.children];
-    obj1.children = items5;
-    obj.children = callback2(View, obj1);
-    obj.children = callback(contentId(type[11]).SimplePost, obj);
-    tmp5Result = tmp5(contentId(type[10]).PressableHighlight, obj);
-    const tmp8 = callback2;
-    const tmp9 = View;
+    let obj1 = { style: null, children: null };
+    items2[1] = screenshotContainer;
+    obj1[0] = items2;
+    const obj2 = { style: null, children: null };
+    obj2[0] = tmp.header;
+    const obj3 = { animate: true, size: null, user: null, guildId: "Array" };
+    obj3[1] = tmp3(tmp4[12]).AvatarSizes.NORMAL;
+    obj3[2] = stateFromStores;
+    const items3 = [closure_6(tmp3(tmp4[12]).Avatar, obj3, stateFromStores.id), ];
+    let obj4 = { style: null, children: null };
+    obj4[0] = tmp.headerInfo;
+    let obj5 = { style: null, children: null };
+    obj5[0] = tmp.title;
+    obj5[1] = title;
+    const items4 = [closure_6(View, obj5), ];
+    const obj6 = { style: null, children: null };
+    obj6[0] = tmp.subTitleContainer;
+    obj6[1] = subtitle;
+    items4[1] = closure_6(View, obj6);
+    obj4[1] = items4;
+    items3[1] = closure_7(View, obj4);
+    obj2[1] = items3;
+    const items5 = [closure_7(View, obj2), contentId.children];
+    obj1[1] = items5;
+    obj[2] = closure_7(View, obj1);
+    obj[4] = closure_6(tmp3(tmp4[11]).SimplePost, obj);
+    tmp7Result = tmp7(tmp3(tmp4[10]).PressableHighlight, obj);
   }
-  return tmp5Result;
+  return tmp7Result;
 };
 export const useStyles = iCYMIStyles;

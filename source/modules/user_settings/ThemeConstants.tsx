@@ -1,19 +1,19 @@
-// Module ID: 1281
-// Function ID: 14505
+// Module ID: 1305
+// Function ID: 1306
 // Name: SystemThemeState
-// Dependencies: [653, 1282, 2]
+// Dependencies: [676, 1306, 2]
 
-// Module 1281 (SystemThemeState)
+// Module 1305 (SystemThemeState)
 import { ThemeTypes } from "ME";
 
 let obj = { DARK: "dark", LIGHT: "light", NO_PREFERENCE: "unknown" };
 obj = { [obj.DARK]: ThemeTypes.DARKER, [obj.LIGHT]: ThemeTypes.LIGHT, [obj.NO_PREFERENCE]: ThemeTypes.DARKER };
 obj = { [obj.DARK]: ThemeTypes.DARK, [obj.LIGHT]: ThemeTypes.LIGHT, [obj.NO_PREFERENCE]: ThemeTypes.DARK };
 const obj1 = { [obj.DARK]: ThemeTypes.DARKER, [obj.LIGHT]: ThemeTypes.LIGHT, [obj.NO_PREFERENCE]: ThemeTypes.DARKER };
-const obj2 = { [require(1282).Theme.UNSET]: ThemeTypes.DARK, [require(1282).Theme.DARK]: ThemeTypes.DARK, [require(1282).Theme.DARKER]: ThemeTypes.DARK, [require(1282).Theme.LIGHT]: ThemeTypes.LIGHT, [require(1282).Theme.MIDNIGHT]: ThemeTypes.DARK };
-const obj3 = { [require(1282).Theme.UNSET]: ThemeTypes.DARKER, [require(1282).Theme.DARK]: ThemeTypes.DARK, [require(1282).Theme.DARKER]: ThemeTypes.DARKER, [require(1282).Theme.LIGHT]: ThemeTypes.LIGHT, [require(1282).Theme.MIDNIGHT]: ThemeTypes.MIDNIGHT };
-const obj4 = { [require(1282).Theme.UNSET]: ThemeTypes.DARKER, [require(1282).Theme.DARK]: ThemeTypes.DARKER, [require(1282).Theme.DARKER]: ThemeTypes.DARKER, [require(1282).Theme.LIGHT]: ThemeTypes.LIGHT, [require(1282).Theme.MIDNIGHT]: ThemeTypes.MIDNIGHT };
-const obj5 = { [require(1282).Theme.UNSET]: ThemeTypes.DARKER, [require(1282).Theme.DARK]: ThemeTypes.DARK, [require(1282).Theme.DARKER]: ThemeTypes.DARKER, [require(1282).Theme.LIGHT]: ThemeTypes.LIGHT, [require(1282).Theme.MIDNIGHT]: ThemeTypes.MIDNIGHT };
+const obj2 = { [require(1306).Theme.UNSET]: ThemeTypes.DARK, [require(1306).Theme.DARK]: ThemeTypes.DARK, [require(1306).Theme.DARKER]: ThemeTypes.DARK, [require(1306).Theme.LIGHT]: ThemeTypes.LIGHT, [require(1306).Theme.MIDNIGHT]: ThemeTypes.DARK };
+const obj3 = { [require(1306).Theme.UNSET]: ThemeTypes.DARKER, [require(1306).Theme.DARK]: ThemeTypes.DARK, [require(1306).Theme.DARKER]: ThemeTypes.DARKER, [require(1306).Theme.LIGHT]: ThemeTypes.LIGHT, [require(1306).Theme.MIDNIGHT]: ThemeTypes.MIDNIGHT };
+const obj4 = { [require(1306).Theme.UNSET]: ThemeTypes.DARKER, [require(1306).Theme.DARK]: ThemeTypes.DARKER, [require(1306).Theme.DARKER]: ThemeTypes.DARKER, [require(1306).Theme.LIGHT]: ThemeTypes.LIGHT, [require(1306).Theme.MIDNIGHT]: ThemeTypes.MIDNIGHT };
+const obj5 = { [require(1306).Theme.UNSET]: ThemeTypes.DARKER, [require(1306).Theme.DARK]: ThemeTypes.DARK, [require(1306).Theme.DARKER]: ThemeTypes.DARKER, [require(1306).Theme.LIGHT]: ThemeTypes.LIGHT, [require(1306).Theme.MIDNIGHT]: ThemeTypes.MIDNIGHT };
 const result = require("set").fileFinishedImporting("modules/user_settings/ThemeConstants.tsx");
 
 export const SystemThemeState = { UNSET: 0, [0]: "UNSET", OFF: 1, [1]: "OFF", ON: 2, [2]: "ON" };

@@ -1,42 +1,120 @@
-// Module ID: 16096
-// Function ID: 124302
-// Name: _isNativeReflectConstruct
-// Dependencies: [7, 6, 15, 17, 18, 1348, 4384, 1907, 1850, 653, 6695, 3, 5695, 6046, 1882, 3844, 4991, 4838, 5112, 2]
+// Module ID: 16131
+// Function ID: 16132
+// Name: handleMessageCreate
+// Dependencies: [1372, 4407, 1931, 1874, 676, 6716, 3, 5713, 6064, 5134, 1906, 3868, 5013, 4860, 2]
 
-// Module 16096 (_isNativeReflectConstruct)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_4 from "_isNativeReflectConstruct";
-import isFeatureAgeGated from "isFeatureAgeGated";
-import mergeMessage from "mergeMessage";
-import AutomaticLifecycleManager from "AutomaticLifecycleManager";
-import closure_8 from "_isNativeReflectConstruct";
-import closure_9 from "_isNativeReflectConstruct";
-import closure_10 from "_isNativeReflectConstruct";
-import closure_11 from "_isNativeReflectConstruct";
-import { transformUser } from "_isNativeReflectConstruct";
+// Module 16131 (handleMessageCreate)
+import ensureGuildLoaded from "ensureGuildLoaded";
+import reinjectEphemerals from "reinjectEphemerals";
+import handleConnectionOpen from "handleConnectionOpen";
+import mergeGuildAvatar from "mergeGuildAvatar";
+import { transformUser } from "mergeGuildAvatar";
 import ME from "ME";
 import { SafetyToastType } from "SafetyToastType";
-import importDefaultResult from "_getPrototypeOf";
-import tmp5 from "AutomaticLifecycleManager";
+import "initialize";
 
-let closure_13;
-let closure_14;
-const require = arg1;
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
-  }
-  const result = _isNativeReflectConstruct();
-}
+let c9;
+let metroImportAll;
+let require = arg1;
 function handleMessageCreate(channelId) {
   message = message.getMessage(channelId.channelId, channelId.message.id);
 }
-({ ChannelTypes: closure_13, MAX_MESSAGES_PER_CHANNEL: closure_14 } = ME);
-importDefaultResult = new importDefaultResult("AgeVerificationManager");
-tmp5 = new tmp5();
-let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/age_assurance/AgeVerificationManager.tsx");
+({ ChannelTypes: metroImportAll, MAX_MESSAGES_PER_CHANNEL: c9 } = ME);
+let c10 = new require("mergeGuildAvatar")("AgeVerificationManager");
+let prototype = function AgeVerificationManager() {
+  const applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
+  const require = applyArgumentsResult;
+  applyArgumentsResult._previousAgeVerificationStatus = null;
+  applyArgumentsResult.handlePostConnectionOpen = function handlePostConnectionOpen() {
+    const currentUser = outer1_6.getCurrentUser();
+    let prop;
+    if (currentUser != null) {
+      prop = currentUser.ageVerificationStatus;
+    }
+    if (prop == null) {
+      prop = null;
+    }
+    closure_0._previousAgeVerificationStatus = prop;
+  };
+  applyArgumentsResult.handleCurrentUserUpdate = function handleCurrentUserUpdate(user) {
+    let channelId;
+    let c1;
+    let prop = outer1_7(user.user).ageVerificationStatus;
+    if (prop == null) {
+      prop = null;
+    }
+    let isFeatureAgeGatedResult = channelId._previousAgeVerificationStatus !== prop;
+    if (isFeatureAgeGatedResult) {
+      isFeatureAgeGatedResult = prop === applyArgumentsResult(outer1_2[10]).AgeVerificationStatusUkAndAusOnly.VERIFIED_ADULT;
+    }
+    if (isFeatureAgeGatedResult) {
+      isFeatureAgeGatedResult = applyArgumentsResult(outer1_2[11]).isFeatureAgeGated(applyArgumentsResult(outer1_2[12]).AgeGatedFeature.AGE_GATED_SPACES);
+      let obj = applyArgumentsResult(outer1_2[11]);
+    }
+    try {
+      if (isFeatureAgeGatedResult) {
+        channelId = outer1_5.getChannelId();
+        c1 = false;
+        const item = outer1_1(outer1_2[13]).forEach((channelId) => {
+          channelId = channelId.channelId;
+          const channel = outer1_3.getChannel(channelId);
+          let nsfw;
+          if (channel != null) {
+            nsfw = channel.nsfw;
+          }
+          if (nsfw) {
+            callback(outer1_2[13]).clear(channelId);
+            if (channelId === channelId) {
+              callback = true;
+            }
+            const obj = callback(outer1_2[13]);
+          }
+        });
+        let tmp16 = c1;
+        if (c1) {
+          tmp16 = null != tmp12;
+        }
+        if (tmp16) {
+          (function handleLoadChannelMessages(channelId) {
+            let obj = callback(5713);
+            obj = { channelId, limit: closure_9 };
+            const messages = obj.fetchMessages(obj);
+          })(tmp12);
+          (function handleLoadForumPosts(arg0) {
+            channel = channel.getChannel(arg0);
+            let type;
+            if (channel != null) {
+              type = channel.type;
+            }
+            let tmp4 = type !== constants.GUILD_FORUM;
+            if (tmp4) {
+              let type1;
+              if (channel != null) {
+                type1 = channel.type;
+              }
+              tmp4 = type1 !== tmp3.GUILD_MEDIA;
+            }
+            if (!tmp4) {
+              channelId(6064).preloadForumThreads(channel);
+              const obj = channelId(6064);
+            }
+          })(tmp12);
+        }
+        const arr = outer1_1(outer1_2[13]);
+      }
+      channelId._previousAgeVerificationStatus = prop;
+    } catch (tmp21) {
+      tmp._previousAgeVerificationStatus = tmp2;
+      throw tmp21;
+    }
+  };
+  applyArgumentsResult.actions = { POST_CONNECTION_OPEN: applyArgumentsResult.handlePostConnectionOpen, CURRENT_USER_UPDATE: applyArgumentsResult.handleCurrentUserUpdate, MESSAGE_CREATE: handleMessageCreate };
+  return applyArgumentsResult;
+}.prototype;
+class prototype extends tmp4 {
+}
+prototype = new prototype();
+const tmp3 = new require("mergeGuildAvatar")("AgeVerificationManager");
+const result = require("handleConnectionOpen").fileFinishedImporting("modules/age_assurance/AgeVerificationManager.tsx");
 
-export default tmp5;
+export default prototype;

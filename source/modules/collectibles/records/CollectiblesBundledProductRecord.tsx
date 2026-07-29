@@ -1,38 +1,34 @@
-// Module ID: 5783
-// Function ID: 50527
-// Name: CollectiblesBundledProductRecord
-// Dependencies: [6, 7, 4206, 2]
+// Module ID: 5801
+// Function ID: 5802
+// Name: fromServer
+// Dependencies: [4230, 2]
 
-// Module 5783 (CollectiblesBundledProductRecord)
-import _classCallCheck from "_classCallCheck";
-import _defineProperties from "_defineProperties";
-
-const tmp2 = (() => {
-  class CollectiblesBundledProductRecord {
-    constructor(arg0) {
-      tmp = outer1_2(this, CollectiblesBundledProductRecord);
-      ({ prices: this.prices, type: this.type, premiumType: this.premiumType, name: this.name, skuId: this.skuId, summary: this.summary } = arg0);
-      return;
-    }
+// Module 5801 (fromServer)
+let prototype;
+prototype = function CollectiblesBundledProductRecord(arg0) {
+  ({ prices: tmp.prices, type: tmp.type, premiumType: tmp.premiumType, name: tmp.name, skuId: tmp.skuId, summary: tmp.summary } = arg0);
+  return Object.create(new.target.prototype);
+}.prototype;
+prototype["fromServer"] = function fromServer(arg0) {
+  let name;
+  let premium_type;
+  let prices;
+  let sku_id;
+  let summary;
+  let type;
+  ({ prices, type, premium_type, name, sku_id, summary } = arg0);
+  if (typeof prototype !== "find") {
+    HermesBuiltin.throwTypeError();
   }
-  const items = [
-    {
-      key: "fromServer",
-      value(arg0) {
-        let name;
-        let premium_type;
-        let prices;
-        let sku_id;
-        let summary;
-        let type;
-        ({ prices, type, premium_type, name, sku_id, summary } = arg0);
-        const obj = { prices: CollectiblesBundledProductRecord(outer1_1[2])(prices), type, premiumType: premium_type, name, skuId: sku_id, summary };
-        return new CollectiblesBundledProductRecord({ prices: CollectiblesBundledProductRecord(outer1_1[2])(prices), type, premiumType: premium_type, name, skuId: sku_id, summary });
-      }
-    }
-  ];
-  return callback(CollectiblesBundledProductRecord, null, items);
-})();
-const result = require("getPricesFromServer").fileFinishedImporting("modules/collectibles/records/CollectiblesBundledProductRecord.tsx");
+  const obj = Object.create(prototype.prototype);
+  obj.prices = importDefault(4230)(prices);
+  obj.type = type;
+  obj.premiumType = premium_type;
+  obj.name = name;
+  obj.skuId = sku_id;
+  obj.summary = summary;
+  return obj;
+};
+const result = require("set").fileFinishedImporting("modules/collectibles/records/CollectiblesBundledProductRecord.tsx");
 
-export default tmp2;
+export default prototype;

@@ -1,43 +1,55 @@
-// Module ID: 15789
-// Function ID: 121603
-// Name: getActiveRoute
-// Dependencies: [57, 31, 4017, 2]
+// Module ID: 15824
+// Function ID: 15825
+// Name: getIsOnMainSurface
+// Dependencies: [32, 19, 4041, 2]
 // Exports: useIsOnMainSurface
 
-// Module 15789 (getActiveRoute)
+// Module 15824 (getIsOnMainSurface)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
+import noop from "noop";
 import set from "getRootNavigationRef";
 
 const require = arg1;
-function getActiveRoute(routes) {
-  let index;
-  if (null != routes) {
-    if (0 !== routes.routes.length) {
-      ({ index, routes } = routes);
-      if (null == index) {
-        index = routes.routes.length - 1;
-      }
-      return routes[index];
-    }
-  }
-}
 function getIsOnMainSurface() {
-  const rootNavigationRef = require(4017) /* getRootNavigationRef */.getRootNavigationRef();
+  let index;
+  let index2;
+  let routes;
+  let routes2;
+  const rootNavigationRef = require(4041) /* getRootNavigationRef */.getRootNavigationRef();
   if (null != rootNavigationRef) {
     if (rootNavigationRef.isReady()) {
-      const tmp2 = getActiveRoute(rootNavigationRef.getRootState());
+      const rootState = rootNavigationRef.getRootState();
+      let tmp2;
+      if (null != rootState) {
+        if (0 !== rootState.routes.length) {
+          ({ index, routes } = rootState);
+          if (index == null) {
+            index = rootState.routes.length - 1;
+          }
+          tmp2 = routes[index];
+        }
+      }
       let name;
-      if (null != tmp2) {
+      if (tmp2 != null) {
         name = tmp2.name;
       }
       if ("main" !== name) {
         return false;
       } else {
-        const tmp5 = getActiveRoute(tmp2.state);
-        let hasItem = null != tmp5;
+        const state = tmp2.state;
+        let tmp4;
+        if (null != state) {
+          if (0 !== state.routes.length) {
+            ({ index: index2, routes: routes2 } = state);
+            if (index2 == null) {
+              index2 = state.routes.length - 1;
+            }
+            tmp4 = routes2[index2];
+          }
+        }
+        let hasItem = null != tmp4;
         if (hasItem) {
-          hasItem = set.has(tmp5.name);
+          hasItem = set.has(tmp4.name);
         }
         return hasItem;
       }
@@ -46,7 +58,7 @@ function getIsOnMainSurface() {
   return false;
 }
 let set = new Set(["tabs", "channel"]);
-let result = set.fileFinishedImporting("modules/parent_tools/hooks/useIsOnMainSurface.native.tsx");
+const result = set.fileFinishedImporting("modules/parent_tools/hooks/useIsOnMainSurface.native.tsx");
 
 export const useIsOnMainSurface = function useIsOnMainSurface() {
   let require;
@@ -54,11 +66,11 @@ export const useIsOnMainSurface = function useIsOnMainSurface() {
   [tmp2, require] = callback(React.useState(getIsOnMainSurface), 2);
   const effect = React.useEffect(() => {
     function handleNavigationChange() {
-      return rootNavigationRef(outer2_6());
+      return rootNavigationRef(outer1_5());
     }
     const rootNavigationRef = outer1_0(outer1_1[2]).getRootNavigationRef();
     if (null != rootNavigationRef) {
-      const result = handleNavigationChange();
+      rootNavigationRef(outer1_5());
       rootNavigationRef.addListener("state", handleNavigationChange);
       return () => {
         rootNavigationRef.removeListener("state", handleNavigationChange);

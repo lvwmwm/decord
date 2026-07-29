@@ -1,150 +1,154 @@
-// Module ID: 12614
-// Function ID: 97499
+// Module ID: 12636
+// Function ID: 12637
 // Name: GuildBoostingMarketingOverview
-// Dependencies: [57, 31, 27, 1838, 1850, 653, 33, 4165, 12464, 566, 1456, 5497, 5485, 5830, 1868, 675, 686, 6280, 4486, 12615, 12616, 12623, 12628, 12636, 12641, 12645, 2]
+// Dependencies: [32, 19, 17, 1862, 1874, 676, 21, 4189, 12486, 589, 1480, 5515, 5503, 5848, 1892, 698, 709, 6301, 4509, 12637, 12638, 12645, 12650, 12658, 12663, 12667, 2]
 // Exports: default
 
-// Module 12614 (GuildBoostingMarketingOverview)
+// Module 12636 (GuildBoostingMarketingOverview)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
-import { ScrollView } from "get ActivityIndicator";
-import closure_6 from "_createForOfIteratorHelperLoose";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import GuildBoostingMarketingPersistentCta from "GuildBoostingMarketingPersistentCta";
+import { ScrollView } from "fetchSubscriptionPlansForSKU";
+import createGuildRecordFromRust from "createGuildRecordFromRust";
+import mergeGuildAvatar from "mergeGuildAvatar";
 import ME from "ME";
-import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import jsxProd from "BoostedGuildTiers";
+import createCacheKey from "createCacheKey";
 
-let closure_10;
-let closure_11;
+let c10;
+let c9;
 let closure_12;
-let closure_8;
-let closure_9;
+let metroImportAll;
+let unpackModuleId;
 const require = arg1;
-({ AnalyticEvents: closure_8, AnalyticsPages: closure_9 } = ME);
-({ jsx: closure_10, jsxs: closure_11, Fragment: closure_12 } = jsxProd);
-let closure_13 = _createForOfIteratorHelperLoose.createStyles({ wrapper: { paddingBottom: 24 } });
+({ AnalyticEvents: metroImportAll, AnalyticsPages: c9 } = ME);
+({ jsx: c10, jsxs: unpackModuleId, Fragment: closure_12 } = jsxProd);
+let closure_13 = createCacheKey.createStyles({ wrapper: { paddingBottom: 24 } });
 const result = require("get ActivityIndicator").fileFinishedImporting("modules/guild_boosting/native/marketing_redesign/GuildBoostingMarketingOverview.tsx");
 
 export default function GuildBoostingMarketingOverview(guildId) {
-  let ScrollView;
-  let closure_6;
-  let _isNativeReflectConstruct;
-  let tmp7;
+  let createGuildRecordFromRust;
+  let mergeGuildAvatar;
   guildId = guildId.guildId;
   const guildBoostSlots = guildId.guildBoostSlots;
   let obj = guildId(stateFromStores[8]);
   const giftCardMobileConsumptionHalfsheet = obj.useGiftCardMobileConsumptionHalfsheet();
-  if (null != guildBoostSlots) {
+  if (guildBoostSlots != null) {
     const first = guildBoostSlots[0];
   }
-  let obj1 = guildId(stateFromStores[9]);
-  const items = [closure_6];
-  stateFromStores = obj1.useStateFromStores(items, () => outer1_6.getGuild(guildId));
-  let obj2 = guildId(stateFromStores[10]);
-  const navigation = obj2.useNavigation();
-  const analyticsLocations = guildBoostSlots(stateFromStores[11])().analyticsLocations;
+  let tmp2Result = tmp2(tmp3[9]);
+  const items = [createGuildRecordFromRust];
+  stateFromStores = tmp2Result.useStateFromStores(items, () => outer1_6.getGuild(guildId));
+  tmp2Result = tmp2(tmp3[10]);
+  const navigation = tmp2Result.useNavigation();
+  const analyticsLocations = guildBoostSlots(tmp3[11])().analyticsLocations;
+  let obj3 = analyticsLocations;
+  const tmp9 = navigation(analyticsLocations.useState(false), 2);
+  let closure_5 = tmp9[1];
   let tmp = callback3();
-  [tmp7, ScrollView] = navigation(analyticsLocations.useState(false), 2);
-  const tmp6 = navigation(analyticsLocations.useState(false), 2);
-  [closure_6, _isNativeReflectConstruct] = navigation(analyticsLocations.useState(0), 2);
+  [createGuildRecordFromRust, mergeGuildAvatar] = navigation(analyticsLocations.useState(0), 2);
   let closure_8 = analyticsLocations.useRef(false);
-  const tmp9 = guildBoostSlots(stateFromStores[12])(() => Date.now());
-  let closure_9 = tmp9;
-  const tmp10 = guildBoostSlots(stateFromStores[13])({ forceFetch: true });
-  let obj3 = guildId(stateFromStores[9]);
-  const items1 = [_isNativeReflectConstruct];
-  const stateFromStores1 = obj3.useStateFromStores(items1, () => outer1_7.getCurrentUser());
+  const tmp11 = guildBoostSlots(stateFromStores[12])(() => Date.now());
+  let closure_9 = tmp11;
+  const tmp12 = guildBoostSlots(stateFromStores[13])({ forceFetch: true });
+  const tmp10 = navigation(analyticsLocations.useState(0), 2);
+  const items1 = [mergeGuildAvatar];
+  const stateFromStores1 = guildId(stateFromStores[9]).useStateFromStores(items1, () => currentUser.getCurrentUser());
   if (null != stateFromStores1) {
     let UNSPECIFIED = stateFromStores1.premiumGroupRole;
   } else {
-    UNSPECIFIED = guildId(stateFromStores[14]).PremiumSubscriptionGroupRole.UNSPECIFIED;
+    UNSPECIFIED = tmp2(tmp3[14]).PremiumSubscriptionGroupRole.UNSPECIFIED;
   }
   const items2 = [navigation, guildBoostSlots, ];
   let name;
-  if (null != stateFromStores) {
+  if (stateFromStores != null) {
     name = stateFromStores.name;
   }
   items2[2] = name;
-  const layoutEffect = analyticsLocations.useLayoutEffect(() => {
+  const layoutEffect = obj3.useLayoutEffect(() => {
     let tmp = null != guildBoostSlots;
     if (tmp) {
       tmp = guildBoostSlots.length > 0;
     }
-    const obj = {};
     let str = "";
-    let str2 = "";
     if (!tmp) {
-      let name;
-      if (null != stateFromStores) {
-        name = stateFromStores.name;
+      let str2;
+      if (stateFromStores != null) {
+        str2 = stateFromStores.name;
       }
-      if (null != name) {
-        str = name;
+      if (str2 == null) {
+        str2 = "";
       }
-      str2 = str;
+      str = str2;
     }
-    obj.title = str2;
-    navigation.setOptions(obj);
+    navigation.setOptions({ title: str });
   }, items2);
-  const items3 = [guildId, analyticsLocations, tmp9];
-  const effect = analyticsLocations.useEffect(() => () => {
-    let obj = guildBoostSlots(stateFromStores[15]);
-    obj = { type: constants2.PREMIUM_GUILD_USER_MODAL, location_stack: outer1_4, guild_id: outer1_0, duration_open_ms: Date.now() - outer1_9 };
-    obj.track(constants.MODAL_DISMISSED, obj);
+  const items3 = [guildId, analyticsLocations, tmp11];
+  const effect = obj3.useEffect(() => () => {
+    let obj = outer1_1(outer1_2[15]);
+    obj = { type: outer1_9.PREMIUM_GUILD_USER_MODAL, location_stack: GuildBoostingMarketingPersistentCta, guild_id: closure_0, duration_open_ms: Date.now() - closure_9 };
+    obj.track(outer1_8.MODAL_DISMISSED, obj);
   }, items3);
-  const effect1 = analyticsLocations.useEffect(() => {
+  const effect1 = obj3.useEffect(() => {
     guildBoostSlots(stateFromStores[16]).wait(() => {
-      const premiumSubscriptionPlans = guildId(stateFromStores[17]).fetchPremiumSubscriptionPlans();
-      const obj = guildId(stateFromStores[17]);
-      const paymentSources = guildId(stateFromStores[18]).fetchPaymentSources();
+      const premiumSubscriptionPlans = callback(6301).fetchPremiumSubscriptionPlans();
+      const obj = callback(6301);
+      const paymentSources = callback(4509).fetchPaymentSources();
     });
   }, []);
-  let tmp19 = null;
+  let tmp18 = null;
   if (null != stateFromStores) {
-    obj = {};
-    obj = {
-      contentContainerStyle: tmp.wrapper,
-      onScroll(nativeEvent) {
-          nativeEvent = nativeEvent.nativeEvent;
-          const contentOffset = nativeEvent.contentOffset;
-          let tmp2 = !ref.current;
-          if (tmp2) {
-            const sum = nativeEvent.layoutMeasurement.height + contentOffset.y;
-            tmp2 = sum >= tmp.height - guildId(stateFromStores[19]).VISIBILITY_OFFSET;
-          }
-          if (tmp2) {
-            let obj = guildBoostSlots(stateFromStores[15]);
-            obj = { type: tmp9.PREMIUM_GUILD_USER_MODAL, location_stack: analyticsLocations, guild_id: stateFromStores.id };
-            obj.track(ref.PREMIUM_MARKETING_SURFACE_REACHED_BOTTOM, obj);
-            ref.current = true;
-          }
-          callback(contentOffset.y >= closure_6);
-        },
-      scrollEventThrottle: 16
+    obj = { children: null };
+    obj = { contentContainerStyle: null, onScroll: null, scrollEventThrottle: 16, children: null };
+    obj[0] = tmp.wrapper;
+    obj[1] = function onScroll(nativeEvent) {
+      nativeEvent = nativeEvent.nativeEvent;
+      const contentOffset = nativeEvent.contentOffset;
+      const current = ref.current;
+      let tmp3 = !current;
+      if (!current) {
+        const sum = nativeEvent.layoutMeasurement.height + contentOffset.y;
+        tmp3 = sum >= tmp.height - guildId(stateFromStores[19]).VISIBILITY_OFFSET;
+      }
+      if (tmp3) {
+        let obj = guildBoostSlots(stateFromStores[15]);
+        obj = { type: null, location_stack: null, guild_id: null };
+        obj[0] = tmp11.PREMIUM_GUILD_USER_MODAL;
+        obj[1] = analyticsLocations;
+        obj[2] = stateFromStores.id;
+        obj.track(ref.PREMIUM_MARKETING_SURFACE_REACHED_BOTTOM, obj);
+        ref.current = true;
+      }
+      callback(contentOffset.y >= createGuildRecordFromRust);
     };
-    obj1 = {
-      guild: stateFromStores,
-      previousGuildSubscriptionSlot: first,
-      onLayout(nativeEvent) {
-          return callback2(nativeEvent.nativeEvent.layout.y + nativeEvent.nativeEvent.layout.height);
-        },
-      fractionalPremiumInfo: tmp10,
-      premiumGroupRole: UNSPECIFIED
+    const obj1 = { guild: null, previousGuildSubscriptionSlot: null, onLayout: null, fractionalPremiumInfo: null, premiumGroupRole: null };
+    obj1[0] = stateFromStores;
+    obj1[1] = first;
+    obj1[2] = function onLayout(nativeEvent) {
+      return currentUser(nativeEvent.nativeEvent.layout.y + nativeEvent.nativeEvent.layout.height);
     };
-    const items4 = [callback(guildBoostSlots(stateFromStores[20]), obj1), , , , , ];
-    obj2 = { guild: stateFromStores };
-    items4[1] = callback(guildBoostSlots(stateFromStores[21]), obj2);
-    obj3 = { guild: stateFromStores };
-    items4[2] = callback(guildBoostSlots(stateFromStores[22]), obj3);
-    items4[3] = callback(guildBoostSlots(stateFromStores[23]), {});
-    items4[4] = callback(guildBoostSlots(stateFromStores[24]), {});
-    items4[5] = callback(guildBoostSlots(stateFromStores[25]), {});
-    obj.children = items4;
-    const items5 = [callback2(ScrollView, obj), ];
-    const obj4 = { guild: stateFromStores, previousGuildSubscriptionSlot: first, isVisible: tmp7, fractionalPremiumState: tmp10.fractionalState, premiumGroupRole: UNSPECIFIED };
-    items5[1] = callback(guildBoostSlots(stateFromStores[19]), obj4);
-    obj.children = items5;
-    tmp19 = callback2(closure_12, obj);
+    obj1[3] = tmp12;
+    obj1[4] = UNSPECIFIED;
+    const items4 = [callback(tmp8(tmp3[20]), obj1), , , , , ];
+    const obj2 = { guild: null };
+    obj2[0] = stateFromStores;
+    items4[1] = callback(tmp8(tmp3[21]), obj2);
+    obj3 = { guild: null };
+    obj3[0] = stateFromStores;
+    items4[2] = callback(tmp8(tmp3[22]), obj3);
+    items4[3] = callback(tmp8(tmp3[23]), {});
+    items4[4] = callback(tmp8(tmp3[24]), {});
+    items4[5] = callback(tmp8(tmp3[25]), {});
+    obj[3] = items4;
+    const items5 = [callback2(closure_5, obj), ];
+    const obj4 = { guild: null, previousGuildSubscriptionSlot: null, isVisible: null, fractionalPremiumState: null, premiumGroupRole: null };
+    obj4[0] = stateFromStores;
+    obj4[1] = first;
+    obj4[2] = tmp9[0];
+    obj4[3] = tmp12.fractionalState;
+    obj4[4] = UNSPECIFIED;
+    items5[1] = callback(tmp8(tmp3[19]), obj4);
+    obj[0] = items5;
+    tmp18 = callback2(closure_12, obj);
   }
-  return tmp19;
+  return tmp18;
 };

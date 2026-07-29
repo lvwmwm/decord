@@ -1,28 +1,34 @@
-// Module ID: 13577
-// Function ID: 104297
-// Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 4164, 5779, 5835, 686, 4565, 2]
+// Module ID: 13600
+// Function ID: 13601
+// Name: _initialize
+// Dependencies: [4188, 4368, 709, 5797, 5853, 2]
 
-// Module 13577 (_isNativeReflectConstruct)
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import CollectiblesMarketingReleaseType from "CollectiblesMarketingReleaseType";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import tmp2 from "LifecycleManager";
+// Module 13600 (_initialize)
+import getUserAgnosticState from "getUserAgnosticState";
+import "initialize";
 
 const require = arg1;
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
+class CollectiblesMarketingManager extends tmp2 {
+  constructor() {
+    applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
+    applyArgumentsResult.handlePostConnectionOpen = function handlePostConnectionOpen() {
+      const value = getUserAgnosticState.get("shop_include_unpublished");
+      let obj = callback(5797);
+      const CollectiblesMarketingReleaseType = callback(5853).CollectiblesMarketingReleaseType;
+      obj = { release: value ? CollectiblesMarketingReleaseType.BETA : CollectiblesMarketingReleaseType.PROD };
+      const collectiblesMarketings = obj.fetchCollectiblesMarketings(obj);
+    };
+    return applyArgumentsResult;
   }
-  const result = _isNativeReflectConstruct();
 }
-tmp2 = new tmp2();
-let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/collectibles/CollectiblesMarketingManager.native.tsx");
+const prototype = CollectiblesMarketingManager.prototype;
+prototype["_initialize"] = function _initialize() {
+  const subscription = importDefault(709).subscribe("POST_CONNECTION_OPEN", this.handlePostConnectionOpen);
+};
+prototype["_terminate"] = function _terminate() {
+  importDefault(709).unsubscribe("POST_CONNECTION_OPEN", this.handlePostConnectionOpen);
+};
+const collectiblesMarketingManager = new CollectiblesMarketingManager();
+const result = require("dispatcher").fileFinishedImporting("modules/collectibles/CollectiblesMarketingManager.native.tsx");
 
-export default tmp2;
+export default collectiblesMarketingManager;

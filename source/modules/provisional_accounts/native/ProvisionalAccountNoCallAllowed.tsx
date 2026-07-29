@@ -1,35 +1,35 @@
-// Module ID: 12835
-// Function ID: 99720
+// Module ID: 12857
+// Function ID: 12858
 // Name: ProvisionalAccountNoCallAllowed
-// Dependencies: [31, 653, 33, 4165, 4510, 6709, 1212, 1921, 4510, 2]
+// Dependencies: [19, 676, 21, 4189, 4533, 6730, 1236, 1945, 4533, 2]
 // Exports: default
 
-// Module 12835 (ProvisionalAccountNoCallAllowed)
-import "result";
+// Module 12857 (ProvisionalAccountNoCallAllowed)
+import "noop";
 import { HelpdeskArticles } from "ME";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
 const require = arg1;
-let closure_5 = _createForOfIteratorHelperLoose.createStyles({ header: { alignSelf: "center" } });
+let closure_5 = createCacheKey.createStyles({ header: { alignSelf: "center" } });
 const result = require("jsxProd").fileFinishedImporting("modules/provisional_accounts/native/ProvisionalAccountNoCallAllowed.tsx");
 
 export default function ProvisionalAccountNoCallAllowed() {
-  let obj = {};
+  let obj = { header: null, title: null, content: null, actions: null };
   obj = { size: "lg", style: callback().header };
-  obj.header = jsx(require(6709) /* CircleErrorIcon */.CircleErrorIcon, { size: "lg", style: callback().header });
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj.title = intl.string(require(1212) /* getSystemLocale */.t["vh+Zpq"]);
-  const intl2 = require(1212) /* getSystemLocale */.intl;
-  obj = {};
+  obj[0] = jsx(require(6730) /* CircleErrorIcon */.CircleErrorIcon, { size: "lg", style: callback().header });
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj[1] = intl.string(require(1236) /* getSystemLocale */.t["vh+Zpq"]);
+  const intl2 = require(1236) /* getSystemLocale */.intl;
+  obj = { helpdeskArticle: null };
   const tmp = callback();
-  obj.helpdeskArticle = importDefault(1921).getArticleURL(HelpdeskArticles.SLAYER_PROVISIONAL_ACCOUNTS);
-  obj.content = intl2.format(require(1212) /* getSystemLocale */.t["tx08s+"], obj);
-  const obj1 = {};
-  const obj2 = { variant: "secondary" };
-  const intl3 = require(1212) /* getSystemLocale */.intl;
-  obj2.text = intl3.string(require(1212) /* getSystemLocale */.t["NX+WJN"]);
-  obj1.children = jsx(require(4510) /* getAlertModalItemKey */.AlertActionButton, { variant: "secondary" }, "got-it");
-  obj.actions = jsx(require(4510) /* getAlertModalItemKey */.AlertActions, {});
-  return jsx(require(4510) /* getAlertModalItemKey */.AlertModal, {});
+  obj[0] = importDefault(1945).getArticleURL(HelpdeskArticles.SLAYER_PROVISIONAL_ACCOUNTS);
+  obj[2] = intl2.format(require(1236) /* getSystemLocale */.t["tx08s+"], obj);
+  const obj1 = { children: null };
+  const obj2 = { variant: "secondary", text: null };
+  const intl3 = require(1236) /* getSystemLocale */.intl;
+  obj2[1] = intl3.string(require(1236) /* getSystemLocale */.t["NX+WJN"]);
+  obj1[0] = jsx(require(4533) /* getAlertModalItemKey */.AlertActionButton, { variant: "secondary", text: null }, "got-it");
+  obj[3] = jsx(require(4533) /* getAlertModalItemKey */.AlertActions, { children: null });
+  return jsx(require(4533) /* getAlertModalItemKey */.AlertModal, { helpdeskArticle: null });
 };

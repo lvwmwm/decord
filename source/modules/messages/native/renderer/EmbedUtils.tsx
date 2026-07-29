@@ -1,10 +1,10 @@
-// Module ID: 7706
-// Function ID: 61521
+// Module ID: 7729
+// Function ID: 7730
 // Name: frozen
-// Dependencies: [27, 2]
+// Dependencies: [17, 2]
 // Exports: getAssetUriForEmbed, shouldPlayVideoInline
 
-// Module 7706 (frozen)
+// Module 7729 (frozen)
 import { Image } from "get ActivityIndicator";
 import set from "set";
 
@@ -17,9 +17,9 @@ export const getAssetUriForEmbed = function getAssetUriForEmbed(Image) {
 };
 export const SUPPORTED_VIDEO_PARTNERS = frozen;
 export const shouldPlayVideoInline = function shouldPlayVideoInline(effectiveVideoProvider) {
-  let str = "";
-  if (null != effectiveVideoProvider) {
-    str = effectiveVideoProvider;
+  let str = effectiveVideoProvider;
+  if (effectiveVideoProvider == null) {
+    str = "";
   }
   return frozen.has(str);
 };

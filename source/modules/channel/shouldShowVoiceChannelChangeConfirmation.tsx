@@ -1,39 +1,35 @@
-// Module ID: 12398
-// Function ID: 96272
+// Module ID: 12420
+// Function ID: 12421
 // Name: shouldShowVoiceChannelChangeConfirmation
-// Dependencies: [4179, 1280, 1194, 1838, 4181, 2]
+// Dependencies: [4203, 1304, 1218, 1862, 4205, 2]
 // Exports: shouldShowVoiceChannelChangeConfirmation
 
-// Module 12398 (shouldShowVoiceChannelChangeConfirmation)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_1 from "_isNativeReflectConstruct";
-import closure_2 from "_isNativeReflectConstruct";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import closure_4 from "_isNativeReflectConstruct";
+// Module 12420 (shouldShowVoiceChannelChangeConfirmation)
+import set from "set";
+import CHANNEL_SIDEBAR_WIDTH from "CHANNEL_SIDEBAR_WIDTH";
+import fetchFingerprint from "fetchFingerprint";
+import createGuildRecordFromRust from "createGuildRecordFromRust";
+import updateVoiceState from "updateVoiceState";
 
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/channel/shouldShowVoiceChannelChangeConfirmation.tsx");
+const result = require("fetchFingerprint").fileFinishedImporting("modules/channel/shouldShowVoiceChannelChangeConfirmation.tsx");
 
 export const shouldShowVoiceChannelChangeConfirmation = function shouldShowVoiceChannelChangeConfirmation(id) {
   if (obj.disableVoiceChannelChangeAlert) {
     return false;
   } else {
     remoteSessionId = remoteSessionId.getRemoteSessionId();
-    if (null != closure_4.getVoiceStateForSession(id.getId(), remoteSessionId)) {
+    if (null != voiceStateForSession.getVoiceStateForSession(id.getId(), remoteSessionId)) {
       return false;
-    } else if (closure_4.isCurrentClientInVoiceChannel()) {
-      if (closure_4.isInChannel(id.id)) {
+    } else if (obj.isCurrentClientInVoiceChannel()) {
+      if (obj.isInChannel(id.id)) {
         return false;
       } else {
         guild = guild.getGuild(id.getGuildId());
         let afkChannelId;
-        if (null != guild) {
+        if (guild != null) {
           afkChannelId = guild.afkChannelId;
         }
-        let tmp10 = null == afkChannelId;
-        if (!tmp10) {
-          tmp10 = !closure_4.isInChannel(guild.afkChannelId);
-        }
-        return tmp10;
+        return null == afkChannelId || !obj.isInChannel(guild.afkChannelId);
       }
     } else {
       return false;

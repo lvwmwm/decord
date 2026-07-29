@@ -1,40 +1,40 @@
-// Module ID: 9264
-// Function ID: 72443
+// Module ID: 9288
+// Function ID: 9289
 // Name: ConversationPreviewSkeleton
-// Dependencies: [31, 27, 5842, 33, 4165, 689, 4026, 4166, 2]
+// Dependencies: [19, 17, 5860, 21, 4189, 712, 4050, 4190, 2]
 // Exports: default
 
-// Module 9264 (ConversationPreviewSkeleton)
-import result from "result";
+// Module 9288 (ConversationPreviewSkeleton)
+import noop from "noop";
 import { View } from "get ActivityIndicator";
 import { MOBILE_PREVIEW_MESSAGE_COUNT as closure_5 } from "CONVERSATION_COLORS";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
 let closure_6;
-let closure_7;
+let error;
 const require = arg1;
-({ jsx: closure_6, jsxs: closure_7 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { flexDirection: "row", alignItems: "center", gap: require("_createForOfIteratorHelperLoose").space.PX_8, marginTop: require("_createForOfIteratorHelperLoose").space.PX_4 };
-_createForOfIteratorHelperLoose.row = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.rowSpacing = { marginTop: require("_createForOfIteratorHelperLoose").space.PX_26 };
-const obj2 = { width: 24, height: 24, borderRadius: require("_createForOfIteratorHelperLoose").radii.round, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_MOD_STRONG };
-_createForOfIteratorHelperLoose.avatar = obj2;
-const obj1 = { marginTop: require("_createForOfIteratorHelperLoose").space.PX_26 };
-_createForOfIteratorHelperLoose.lines = { flex: 1, gap: require("_createForOfIteratorHelperLoose").space.PX_4 };
-const obj4 = { height: 10, width: "35%", borderRadius: require("_createForOfIteratorHelperLoose").radii.xs, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_MOD_STRONG };
-_createForOfIteratorHelperLoose.lineName = obj4;
-const obj3 = { flex: 1, gap: require("_createForOfIteratorHelperLoose").space.PX_4 };
-_createForOfIteratorHelperLoose.lineText = { height: 10, borderRadius: require("_createForOfIteratorHelperLoose").radii.xs, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_MOD_STRONG };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+({ jsx: closure_6, jsxs: error } = jsxProd);
+createCacheKey = { row: null, rowSpacing: null, avatar: null, lines: null, lineName: null, lineText: null };
+createCacheKey = { flexDirection: "row", alignItems: "center", gap: require("Themes").space.PX_8, marginTop: require("Themes").space.PX_4 };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { marginTop: require("Themes").space.PX_26 };
+const obj1 = { marginTop: require("Themes").space.PX_26 };
+createCacheKey[2] = { width: 24, height: 24, borderRadius: require("Themes").radii.round, backgroundColor: require("Themes").colors.BACKGROUND_MOD_STRONG };
+const obj2 = { width: 24, height: 24, borderRadius: require("Themes").radii.round, backgroundColor: require("Themes").colors.BACKGROUND_MOD_STRONG };
+createCacheKey[3] = { flex: 1, gap: require("Themes").space.PX_4 };
+const obj3 = { flex: 1, gap: require("Themes").space.PX_4 };
+createCacheKey[4] = { height: 10, width: "35%", borderRadius: require("Themes").radii.xs, backgroundColor: require("Themes").colors.BACKGROUND_MOD_STRONG };
+const obj4 = { height: 10, width: "35%", borderRadius: require("Themes").radii.xs, backgroundColor: require("Themes").colors.BACKGROUND_MOD_STRONG };
+createCacheKey[5] = { height: 10, borderRadius: require("Themes").radii.xs, backgroundColor: require("Themes").colors.BACKGROUND_MOD_STRONG };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
 let closure_9 = { code: "function ConversationPreviewSkeletonTsx1(){const{opacity}=this.__closure;return{opacity:opacity.get()};}" };
-const obj5 = { height: 10, borderRadius: require("_createForOfIteratorHelperLoose").radii.xs, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_MOD_STRONG };
+const obj5 = { height: 10, borderRadius: require("Themes").radii.xs, backgroundColor: require("Themes").colors.BACKGROUND_MOD_STRONG };
 let result = require("CONVERSATION_COLORS").fileFinishedImporting("modules/conversations/components/native/ConversationPreviewSkeleton.tsx");
 
 export default function ConversationPreviewSkeleton() {
-  const _require = _createForOfIteratorHelperLoose();
-  let obj = _require(4026);
+  const _require = createCacheKey();
+  let obj = _require(4050);
   const sharedValue = obj.useSharedValue(0.4);
   let items = [sharedValue];
   const effect = React.useEffect(() => {
@@ -47,26 +47,21 @@ export default function ConversationPreviewSkeleton() {
   fn.__closure = { opacity: sharedValue };
   fn.__workletHash = 11432452203963;
   fn.__initData = closure_9;
-  const animatedStyle = _require(4026).useAnimatedStyle(fn);
-  obj = { style: animatedStyle, "aria-hidden": true };
+  const animatedStyle = _require(4050).useAnimatedStyle(fn);
+  obj = { style: animatedStyle, "aria-hidden": true, children: null };
   obj = { length: closure_5 };
-  obj.children = Array.from(obj, (arg0, arg1) => {
-    let obj = {};
+  obj[2] = Array.from(obj, (arg0, arg1) => {
     const items = [lib.row, ];
-    let rowSpacing = arg1 > 0;
-    if (rowSpacing) {
-      rowSpacing = lib.rowSpacing;
-    }
-    items[1] = rowSpacing;
-    obj.style = items;
-    obj = { style: lib.avatar };
+    let obj = { style: items, children: null };
+    items[1] = arg1 > 0 && lib.rowSpacing;
+    obj = { style: tmp3.avatar };
     const items1 = [outer1_6(outer1_4, obj), ];
-    obj = { style: lib.lines };
+    obj = { style: tmp3.lines, children: null };
     const items2 = [outer1_6(outer1_4, { style: lib.lineName }), outer1_6(outer1_4, { style: lib.lineText })];
-    obj.children = items2;
+    obj[1] = items2;
     items1[1] = outer1_7(outer1_4, obj);
-    obj.children = items1;
+    obj[1] = items1;
     return outer1_7(outer1_4, obj, arg1);
   });
-  return callback(sharedValue(4026).View, obj);
+  return callback(sharedValue(4050).View, obj);
 };

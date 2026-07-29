@@ -1,13 +1,13 @@
-// Module ID: 11613
-// Function ID: 90162
+// Module ID: 11637
+// Function ID: 11638
 // Name: openGuildPowerupsMultiPerkBottomSheet
-// Dependencies: [4133, 11614, 1935, 11585, 2]
+// Dependencies: [4157, 11638, 1959, 11609, 2]
 // Exports: default
 
-// Module 11613 (openGuildPowerupsMultiPerkBottomSheet)
-const result = require("maybeLoadBundle").fileFinishedImporting("modules/premium/powerups/native/utils/openGuildPowerupsMultiPerkBottomSheet.tsx");
+// Module 11637 (openGuildPowerupsMultiPerkBottomSheet)
+const result = require("asyncRequireImpl").fileFinishedImporting("modules/premium/powerups/native/utils/openGuildPowerupsMultiPerkBottomSheet.tsx");
 
 export default function openGuildPowerupsMultiPerkBottomSheet(arg0) {
-  const obj = importDefault(4133);
-  obj.openLazy(require(1935) /* maybeLoadBundle */(11614, dependencyMap.paths), require(11585) /* openGuildPowerupsBottomSheet */.GUILD_POWERUPS_BOTTOM_SHEET_KEY, arg0);
+  const obj = importDefault(4157);
+  obj.openLazy(require(1959) /* asyncRequireImpl */(11638, dependencyMap.paths), require(11609) /* openGuildPowerupsBottomSheet */.GUILD_POWERUPS_BOTTOM_SHEET_KEY, arg0);
 };

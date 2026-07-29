@@ -1,32 +1,32 @@
-// Module ID: 14244
-// Function ID: 109435
+// Module ID: 14266
+// Function ID: 14267
 // Name: toggle
-// Dependencies: [4212, 7733, 566, 8814, 10099, 1212, 2]
+// Dependencies: [4236, 7756, 589, 8838, 10120, 1236, 2]
 
-// Module 14244 (toggle)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 14266 (toggle)
+import _detectH265HardwareDecode from "_detectH265HardwareDecode";
 import createToggle from "createToggle";
 
 const require = arg1;
 createToggle = {
   useTitle() {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(require(1212) /* getSystemLocale */.t.Z4oaN0);
+    const intl = require(1236) /* getSystemLocale */.intl;
+    return intl.string(require(1236) /* getSystemLocale */.t.Z4oaN0);
   },
   parent: require("MobileSetting").MobileSetting.VOICE,
   useValue: function useAutoVoiceSensitivitySettingValue() {
-    const items = [_isNativeReflectConstruct];
-    return require(566) /* initialize */.useStateFromStores(items, () => outer1_3.getModeOptions().autoThreshold);
+    const items = [_detectH265HardwareDecode];
+    return require(589) /* initialize */.useStateFromStores(items, () => modeOptions.getModeOptions().autoThreshold);
   },
   onValueChange: function onAutoVoiceSensitivitySettingValueChange(autoThreshold) {
     mode = mode.getMode();
-    let obj = importDefault(8814);
+    let obj = importDefault(8838);
     obj = { autoThreshold };
     obj.setMode(mode, obj);
   },
   useSearchTerms() {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    const items = [intl.string(require(1212) /* getSystemLocale */.t.nuFtHH)];
+    const intl = require(1236) /* getSystemLocale */.intl;
+    const items = [intl.string(require(1236) /* getSystemLocale */.t.nuFtHH)];
     return items;
   }
 };

@@ -1,12 +1,12 @@
-// Module ID: 15985
-// Function ID: 123350
+// Module ID: 16020
+// Function ID: 16021
 // Name: useSoundboardConfig
-// Dependencies: [31, 1348, 15828, 3981, 1334, 15853, 10759, 2]
+// Dependencies: [19, 1372, 15863, 4005, 1358, 15888, 10783, 2]
 // Exports: default
 
-// Module 15985 (useSoundboardConfig)
-import result from "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 16020 (useSoundboardConfig)
+import noop from "noop";
+import ensureGuildLoaded from "ensureGuildLoaded";
 
 const require = arg1;
 let obj = { VOICE_CONTROLS: "call control drawer", VOICE_PANEL_CONTROLS: "voice panel controls" };
@@ -15,30 +15,34 @@ let result = require("useIsConnectedToVoiceChannel").fileFinishedImporting("modu
 export default function useSoundboardConfig(arg0, arg1) {
   const _require = arg0;
   const importDefault = arg1;
-  let tmp = importDefault(15828)(arg0);
-  let obj = _require(3981);
-  obj = {};
+  const tmp = importDefault(15863)(arg0);
+  let obj = _require(4005);
+  let tmp3 = tmp;
   if (tmp) {
     if (obj.VOICE_CONTROLS === arg1) {
       let flag = true;
     } else {
       flag = false;
     }
-    tmp = flag;
+    tmp3 = flag;
   }
-  obj.visible = tmp;
-  const items = [arg0, arg1];
-  obj.handlePress = React.useCallback(() => {
-    const channel = outer1_4.getChannel(callback);
-    if (null != channel) {
-      let obj = callback(outer1_2[5]);
-      obj = { channel, analyticsSource: closure_1 };
-      const result = obj.showSoundboardSoundPickerActionSheet(obj);
-    }
-  }, items);
-  const items1 = [arg0];
-  obj.disabled = React.useMemo(() => !callback2(outer1_2[6])(outer1_4.getChannel(closure_0)), items1);
-  obj.showIndicator = !obj.useIsDismissibleContentDismissed_UNSAFE(_require(1334).DismissibleContent.SOUNDBOARD_MOBILE_NEW_BADGE);
+  obj = {
+    visible: tmp3,
+    handlePress: React.useCallback(() => {
+      const channel = outer1_4.getChannel(callback);
+      if (null != channel) {
+        let obj = callback(outer1_2[5]);
+        obj = { channel: null, analyticsSource: null };
+        obj[0] = channel;
+        obj[1] = closure_1;
+        const result = obj.showSoundboardSoundPickerActionSheet(obj);
+      }
+    }, items),
+    disabled: React.useMemo(() => !callback2(outer1_2[6])(outer1_4.getChannel(closure_0)), items1),
+    showIndicator: !obj.useIsDismissibleContentDismissed_UNSAFE(_require(1358).DismissibleContent.SOUNDBOARD_MOBILE_NEW_BADGE)
+  };
+  items = [arg0, arg1];
+  items1 = [arg0];
   return obj;
 };
 export const SoundboardButtonLocation = obj;

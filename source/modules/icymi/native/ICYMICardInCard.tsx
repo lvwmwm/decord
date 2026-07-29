@@ -1,81 +1,73 @@
-// Module ID: 15330
-// Function ID: 116689
-// Name: truncateUsername
-// Dependencies: [31, 27, 1348, 1918, 1838, 653, 33, 15289, 689, 7945, 5548, 1273, 4584, 566, 4396, 8359, 4354, 4161, 4355, 15331, 1212, 4673, 15329, 4695, 5908, 8939, 2]
+// Module ID: 15363
+// Function ID: 15364
+// Name: CutoutGuildIconWithUserCustom
+// Dependencies: [19, 17, 1372, 1942, 1862, 676, 21, 15322, 712, 7970, 5566, 1297, 4606, 589, 4419, 8383, 4379, 4185, 4380, 15364, 1236, 4695, 15362, 4717, 5927, 8963, 2]
 // Exports: default
 
-// Module 15330 (truncateUsername)
-import result from "result";
-import { View } from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_6 from "_isNativeReflectConstruct";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+// Module 15363 (CutoutGuildIconWithUserCustom)
+import getIconForChannel from "getIconForChannel";
+import { View } from "Text";
+import ensureGuildLoaded from "ensureGuildLoaded";
+import trackCommunicationDisabled from "trackCommunicationDisabled";
+import createGuildRecordFromRust from "createGuildRecordFromRust";
 import { DEFAULT_ROLE_COLOR_HEX } from "ME";
-import jsxProd from "jsxProd";
+import jsxProd from "TextIcon";
 import createICYMIStyles from "createICYMIStyles";
 
-let closure_10;
-let closure_11;
-let closure_9;
+let c10;
+let c9;
+let unpackModuleId;
 const require = arg1;
-function truncateUsername(arr) {
-  let combined = arr;
-  if (arr.length > 20) {
-    const _HermesInternal = HermesInternal;
-    combined = "" + arr.slice(0, 17) + "...";
-  }
-  return combined;
-}
 function CutoutGuildIconWithUserCustom(guild) {
   guild = guild.guild;
-  let obj = { style: { width: 40, height: 40 } };
-  obj = {};
+  let obj = { style: { width: 40, height: 40 }, children: null };
+  obj = { cutouts: null, children: null };
   obj = { shape: null, x: 18, y: 18, size: 24 };
   const tmp = callback3();
-  obj.shape = require(7945) /* SolidCutout */.CutoutShape.Circle;
+  obj[0] = require(7970) /* SolidCutout */.CutoutShape.Circle;
   const items = [obj];
-  obj.cutouts = items;
-  const obj1 = { guild };
-  const tmp2 = importDefault(7945);
-  obj1.size = require(5548) /* makeSizeStyle */.GuildIconSizes.SMALL_32;
-  obj.children = callback(importDefault(5548), obj1);
+  obj[0] = items;
+  const obj1 = { guild, size: null };
+  const tmp2 = importDefault(7970);
+  obj1[1] = require(5566) /* GuildIconSizes */.GuildIconSizes.SMALL_32;
+  obj[1] = callback(importDefault(5566), obj1);
   const items1 = [callback(tmp2, obj), ];
-  const obj2 = { animate: true, style: tmp.authorAvatar, guildId: guild.id, user: guild.author, size: require(1273) /* Button */.AvatarSizes.XSMALL_20 };
-  items1[1] = callback(require(1273) /* Button */.Avatar, obj2);
-  obj.children = items1;
+  const obj2 = { animate: true, style: tmp.authorAvatar, guildId: guild.id, user: guild.author, size: null };
+  obj2[4] = require(1297) /* Button */.AvatarSizes.XSMALL_20;
+  items1[1] = callback(require(1297) /* Button */.Avatar, obj2);
+  obj[1] = items1;
   return callback2(View, obj);
 }
-({ jsx: closure_9, jsxs: closure_10, Fragment: closure_11 } = jsxProd);
-let closure_12 = createICYMIStyles.createICYMIStyles((margin) => {
-  obj = { container: obj, content: { flex: 1, overflow: "hidden" } };
-  obj = { marginTop: margin.margin };
-  obj = { flexDirection: "row", justifyContent: "space-between", alignItems: "center", paddingBottom: importDefault(689).space.PX_4, marginHorizontal: margin.margin };
-  obj.channelNameAndAccessory = obj;
-  obj.channelNameAndAccessoryLarge = { flexDirection: "column", paddingBottom: importDefault(689).space.PX_4, marginHorizontal: margin.margin };
-  obj.header = { flexDirection: "row", flexGrow: 1 };
-  const obj2 = { flexGrow: 1, flexShrink: 1, marginLeft: importDefault(689).space.PX_12 };
-  obj.headerInfo = obj2;
-  obj.title = { flexDirection: "row", alignItems: "center", justifyContent: "space-between", marginBottom: 2 };
-  obj.titleLeft = { flexShrink: 1, flexGrow: 0, flexDirection: "row", alignItems: "center", gap: 6 };
-  const obj3 = { flexDirection: "row", justifyContent: "space-between", borderRadius: importDefault(689).radii.sm };
-  obj.subTitleContainer = obj3;
-  obj.subtitle = { flexShrink: 1, flexGrow: 0, width: "100%" };
-  obj.genContentSubtitle = { flexDirection: "row", alignItems: "center", gap: 2 };
-  obj.genContentSubtitleChannel = { flexDirection: "row", alignItems: "center", gap: 2, flex: 1 };
-  obj.subtitleTrailing = { paddingVertical: 1 };
-  const obj4 = { height: 1, width: "100%", backgroundColor: importDefault(689).colors.BORDER_SUBTLE };
-  obj.separator = obj4;
-  const obj5 = { borderBottomWidth: 1, borderBottomColor: importDefault(689).colors.BORDER_STRONG, flexShrink: 0 };
-  obj.normalContent = obj5;
-  obj.authorAvatar = { position: "absolute", right: 0, bottom: 0 };
+({ jsx: c9, jsxs: c10, Fragment: unpackModuleId } = jsxProd);
+let closure_12 = createICYMIStyles.createICYMIStyles((marginHorizontal) => {
+  obj = { container: obj, content: { flex: 1, overflow: "hidden" }, channelNameAndAccessory: null, channelNameAndAccessoryLarge: null, header: null, headerInfo: null, title: null, titleLeft: null, subTitleContainer: null, subtitle: null, genContentSubtitle: null, genContentSubtitleChannel: null, subtitleTrailing: null, separator: null, normalContent: null, authorAvatar: null };
+  obj = { marginTop: marginHorizontal.margin };
+  obj = { flexDirection: "row", justifyContent: "space-between", alignItems: "center", paddingBottom: importDefault(712).space.PX_4, marginHorizontal: marginHorizontal.margin };
+  obj[2] = obj;
+  obj[3] = { flexDirection: "column", paddingBottom: importDefault(712).space.PX_4, marginHorizontal: marginHorizontal.margin };
+  obj[4] = { flexDirection: "row", flexGrow: 1 };
+  const obj1 = { flexDirection: "column", paddingBottom: importDefault(712).space.PX_4, marginHorizontal: marginHorizontal.margin };
+  obj[5] = { flexGrow: 1, flexShrink: 1, marginLeft: importDefault(712).space.PX_12 };
+  obj[6] = { flexDirection: "row", alignItems: "center", justifyContent: "space-between", marginBottom: 2 };
+  obj[7] = { flexShrink: 1, flexGrow: 0, flexDirection: "row", alignItems: "center", gap: 6 };
+  const obj2 = { flexGrow: 1, flexShrink: 1, marginLeft: importDefault(712).space.PX_12 };
+  obj[8] = { flexDirection: "row", justifyContent: "space-between", borderRadius: importDefault(712).radii.sm };
+  obj[9] = { flexShrink: 1, flexGrow: 0, width: "100%" };
+  obj[10] = { flexDirection: "row", alignItems: "center", gap: 2 };
+  obj[11] = { flexDirection: "row", alignItems: "center", gap: 2, flex: 1 };
+  obj[12] = { paddingVertical: 1 };
+  const obj3 = { flexDirection: "row", justifyContent: "space-between", borderRadius: importDefault(712).radii.sm };
+  obj[13] = { height: 1, width: "100%", backgroundColor: importDefault(712).colors.BORDER_SUBTLE };
+  const obj4 = { height: 1, width: "100%", backgroundColor: importDefault(712).colors.BORDER_SUBTLE };
+  obj[14] = { borderBottomWidth: 1, borderBottomColor: importDefault(712).colors.BORDER_STRONG, flexShrink: 0 };
+  obj[15] = { position: "absolute", right: 0, bottom: 0 };
   return obj;
 });
-let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/icymi/native/ICYMICardInCard.tsx");
+let result = require("ensureGuildLoaded").fileFinishedImporting("modules/icymi/native/ICYMICardInCard.tsx");
 
 export default function ICYMICardInCard(message) {
   let children;
   let guildId;
-  let hideTimestamp;
   let onHeaderLongPress;
   let timestamp;
   message = message.message;
@@ -84,25 +76,25 @@ export default function ICYMICardInCard(message) {
   const interactionType = message.interactionType;
   const onHeaderPress = message.onHeaderPress;
   const channelId = message.channelId;
-  ({ guildId, hideTimestamp } = message);
-  ({ children, timestamp, onHeaderLongPress } = message);
-  if (hideTimestamp === undefined) {
-    hideTimestamp = false;
-  }
-  let flag = message.shouldFeatureUser;
+  let flag = message.hideTimestamp;
+  ({ children, timestamp, onHeaderLongPress, guildId } = message);
   if (flag === undefined) {
     flag = false;
+  }
+  let flag2 = message.shouldFeatureUser;
+  if (flag2 === undefined) {
+    flag2 = false;
   }
   let c7;
   let fontScale;
   let stateFromStores;
-  guildId = undefined;
+  let guild_id;
   let stateFromStores1;
   let stateFromStores2;
   let displayNameStylesFont;
   let c14;
   let c15;
-  let tmp = stateFromStores2();
+  const tmp = stateFromStores2();
   c7 = tmp;
   let obj = message(id[12]);
   fontScale = obj.useFontScale();
@@ -110,181 +102,194 @@ export default function ICYMICardInCard(message) {
   let items = [channelId];
   let items1 = [channelId];
   stateFromStores = obj1.useStateFromStores(items, () => channelId.getChannel(channelId), items1);
-  let guild_id;
-  if (null != stateFromStores) {
+  guild_id = undefined;
+  if (stateFromStores != null) {
     guild_id = stateFromStores.guild_id;
   }
-  if (null != guild_id) {
-    guildId = guild_id;
+  if (guild_id == null) {
+    guild_id = guildId;
   }
-  let obj2 = message(id[13]);
+  let tmp2Result = tmp2(tmp3[13]);
   let items2 = [c7];
-  let items3 = [guildId];
-  stateFromStores1 = obj2.useStateFromStores(items2, () => {
+  let items3 = [guild_id];
+  stateFromStores1 = tmp2Result.useStateFromStores(items2, () => {
     let guild = null;
-    if (null != guildId) {
-      guild = _undefined.getGuild(guildId);
+    if (null != guild_id) {
+      guild = _undefined.getGuild(tmp);
     }
     return guild;
   }, items3);
-  let obj3 = message(id[13]);
-  let items4 = [flag];
-  let items5 = [flag, guildId, message];
-  stateFromStores2 = obj3.useStateFromStores(items4, () => {
+  tmp2Result = tmp2(tmp3[13]);
+  let items4 = [flag2];
+  let items5 = [flag2, guild_id, message];
+  stateFromStores2 = tmp2Result.useStateFromStores(items4, () => {
     let member = null;
-    if (flag) {
+    if (flag2) {
       member = null;
-      if (null != guildId) {
+      if (null != guild_id) {
         let id;
-        if (null != message) {
-          id = message.author.id;
+        if (message != null) {
+          id = tmp3.author.id;
         }
         member = null;
         if (null != id) {
-          member = flag.getMember(guildId, message.author.id);
+          member = flag2.getMember(tmp2, tmp3.author.id);
         }
       }
     }
     return member;
   }, items5);
-  obj = {};
   id = undefined;
-  if (null != message) {
+  if (message != null) {
     let author = message.author;
-    if (null != author) {
+    if (author != null) {
       id = author.id;
     }
   }
-  obj.userId = id;
-  const tmp7 = actionLabel(id[14]);
-  let obj5 = message(id[15]);
-  displayNameStylesFont = obj5.useDisplayNameStylesFont({ displayNameStyles: actionLabel(id[14])(obj) });
+  let tmp10 = actionLabel(id[14]);
+  const tmp10Result = actionLabel(id[14])({ userId: id });
+  displayNameStylesFont = message(id[15]).useDisplayNameStylesFont({ displayNameStyles: tmp10Result });
   message(id[16]);
-  if (null != stateFromStores) {
+  if (stateFromStores != null) {
     const id2 = stateFromStores.id;
   }
-  if (null != message) {
+  if (message != null) {
     let author2 = message.author;
   }
-  let tmp13 = null;
-  if (flag) {
+  let tmp16 = null;
+  if (flag2) {
     author = undefined;
-    if (null != message) {
+    if (message != null) {
       author = message.author;
     }
-    tmp13 = null;
+    tmp16 = null;
     if (null != author) {
-      tmp13 = null;
-      if (null != guildId) {
-        tmp13 = null;
+      tmp16 = null;
+      if (null != guild_id) {
+        tmp16 = null;
         if (null != stateFromStores) {
-          tmp13 = tmp12;
+          tmp16 = tmp15;
         }
       }
     }
   }
-  c14 = tmp13;
-  const items6 = [stateFromStores1, flag, ];
+  c14 = tmp16;
+  let obj5 = interactionType;
+  const items6 = [stateFromStores1, flag2, ];
   let author1;
-  if (null != message) {
+  if (message != null) {
     author1 = message.author;
   }
   items6[2] = author1;
   const items7 = [stateFromStores1];
   const memo = interactionType.useMemo(() => {
-    if (null == stateFromStores1) {
+    if (tmp2) {
       return null;
     } else {
-      if (!flag) {
-        let obj = { guild: stateFromStores1, size: message(id[10]).GuildIconSizes.NORMAL };
-        let tmp11 = stateFromStores(actionLabel(id[10]), obj);
+      if (!flag2) {
+        let obj = { guild: null, size: null };
+        obj[0] = tmp;
+        obj[1] = message(id[10]).GuildIconSizes.NORMAL;
+        let tmp10 = stateFromStores(actionLabel(id[10]), obj);
         const tmp8 = actionLabel(id[10]);
       } else {
-        let author;
-        if (null != message) {
-          author = message.author;
+        let author = message;
+        author = undefined;
+        if (message != null) {
+          author = author.author;
         }
       }
-      obj = { guild: stateFromStores1, author: message.author };
-      tmp11 = stateFromStores(c14, obj);
+      obj = { guild: null, author: null };
+      obj[0] = tmp;
+      author = author.author;
+      obj[1] = author;
+      tmp10 = stateFromStores(displayNameStylesFont, obj);
     }
   }, items6);
-  const memo1 = interactionType.useMemo(() => {
-    let tmp = null;
+  const memo1 = obj5.useMemo(() => {
+    let tmp2 = null;
     if (null != stateFromStores1) {
-      let obj = { style: null, lineClamp: 1, variant: "text-md/semibold", color: "mobile-text-heading-primary" };
-      obj = { maxWidth: 225 };
-      obj.style = obj;
-      obj.children = stateFromStores1.name;
-      tmp = stateFromStores(message(id[17]).Text, obj, stateFromStores1.id);
+      const obj = { style: null, lineClamp: 1, variant: "text-md/semibold", color: "mobile-text-heading-primary", children: null };
+      obj[0] = { maxWidth: 225 };
+      obj[4] = tmp.name;
+      tmp2 = stateFromStores(message(id[17]).Text, obj, tmp.id);
     }
-    return tmp;
+    return tmp2;
   }, items7);
-  const tmp20 = actionLabel(id[18])(stateFromStores);
-  c15 = tmp20;
-  const items8 = [flag, , , , , , , , , , , ];
+  const tmp21 = actionLabel(id[18])(stateFromStores);
+  c15 = tmp21;
+  const items8 = [flag2, , , , , , , , , , , ];
   author2 = undefined;
-  if (null != message) {
+  if (message != null) {
     author2 = message.author;
   }
   items8[1] = author2;
-  items8[2] = guildId;
+  items8[2] = guild_id;
   items8[3] = stateFromStores;
-  items8[4] = tmp20;
-  items8[5] = tmp13;
+  items8[4] = tmp21;
+  items8[5] = tmp16;
   items8[6] = stateFromStores2;
   items8[7] = displayNameStylesFont;
   ({ genContentSubtitle: arr9[8], genContentSubtitleChannel: arr9[9] } = tmp);
   items8[10] = onHeaderPress;
   items8[11] = actionLabel;
   const items9 = [stateFromStores1, stateFromStores, id, interactionType];
-  const memo2 = interactionType.useMemo(() => {
-    if (flag) {
+  const memo2 = obj5.useMemo(() => {
+    if (flag2) {
       let author;
-      if (null != message) {
+      if (message != null) {
         author = message.author;
       }
       if (null != author) {
-        if (null != guildId) {
+        if (null != guild_id) {
           if (null != stateFromStores) {
             if (null != c14) {
               let colorString;
-              if (null != stateFromStores2) {
+              if (stateFromStores2 != null) {
                 colorString = stateFromStores2.colorString;
               }
-              if (null == colorString) {
+              if (colorString == null) {
                 colorString = fontScale;
               }
-              let obj8 = message(id[19]);
-              let obj = { style: _undefined.genContentSubtitle };
-              const iconForChannel = obj8.getIconForChannel(stateFromStores);
-              obj = { variant: "text-sm/semibold" };
-              const obj1 = { color: colorString };
-              const items = [obj1, ];
-              let tmp40;
+              let obj7 = message(id[19]);
+              let obj = { style: null, children: null };
+              obj[0] = _undefined.genContentSubtitle;
+              const iconForChannel = obj7.getIconForChannel(tmp4);
+              obj = { color: null };
+              obj[0] = colorString;
+              const items = [obj, ];
+              let tmp42;
               if (null != displayNameStylesFont) {
-                const obj2 = { fontFamily: displayNameStylesFont };
-                tmp40 = obj2;
+                const obj1 = { fontFamily: null };
+                obj1[0] = tmp41;
+                tmp42 = obj1;
               }
-              items[1] = tmp40;
-              obj.style = items;
-              obj.children = displayNameStylesFont(c14);
-              const items1 = [stateFromStores(message(id[17]).Text, obj), , ];
-              const obj3 = { variant: "text-sm/medium", color: "text-default" };
+              const obj2 = { variant: "text-sm/semibold", style: null, children: null };
+              items[1] = tmp42;
+              obj2[1] = items;
+              let combined = arr;
+              if (arr.length > 20) {
+                const _HermesInternal = HermesInternal;
+                combined = "" + arr.slice(0, 17) + "...";
+              }
+              obj2[2] = combined;
+              const items1 = [stateFromStores(message(id[17]).Text, obj2), , ];
+              const obj3 = { variant: "text-sm/medium", color: "text-default", children: null };
               const intl2 = message(id[20]).intl;
-              obj3.children = intl2.string(message(id[20]).t.CHUAYk);
+              obj3[2] = intl2.string(message(id[20]).t.CHUAYk);
               items1[1] = stateFromStores(message(id[17]).Text, obj3);
-              const obj4 = { style: _undefined.genContentSubtitleChannel };
+              const obj4 = { style: null, children: null };
+              obj4[0] = _undefined.genContentSubtitleChannel;
               const items2 = [stateFromStores(iconForChannel, { size: "xs", color: "text-default" }), ];
-              const obj5 = { variant: "text-sm/medium", color: "text-default", onPress: onHeaderPress, style: null, lineClamp: 1, ellipsizeMode: "tail" };
-              const obj6 = { flex: 1 };
-              obj5.style = obj6;
-              obj5.children = c15;
+              const obj5 = { variant: "text-sm/medium", color: "text-default", onPress: null, style: null, lineClamp: 1, ellipsizeMode: "tail", children: null };
+              obj5[2] = onHeaderPress;
+              obj5[3] = { flex: 1 };
+              obj5[6] = c15;
               items2[1] = stateFromStores(message(id[17]).Text, obj5);
-              obj4.children = items2;
-              items1[2] = guildId(onHeaderPress, obj4);
-              obj.children = items1;
-              return guildId(onHeaderPress, obj);
+              obj4[1] = items2;
+              items1[2] = guild_id(onHeaderPress, obj4);
+              obj[1] = items1;
+              return guild_id(onHeaderPress, obj);
             }
           }
         }
@@ -292,51 +297,56 @@ export default function ICYMICardInCard(message) {
     }
     if (null != stateFromStores) {
       obj = message(id[19]);
-      let TextIcon = obj.getIconForChannel(stateFromStores);
+      let TextIcon = obj.getIconForChannel(tmp5);
     } else {
       TextIcon = message(id[21]).TextIcon;
     }
-    const obj7 = { style: _undefined.genContentSubtitle };
-    obj8 = { variant: "text-sm/medium", color: "text-default", children: actionLabel };
-    const items3 = [stateFromStores(message(id[17]).Text, obj8), ];
-    let tmp15 = null;
+    const obj6 = { style: _undefined.genContentSubtitle, children: null };
+    obj7 = { variant: "text-sm/medium", color: "text-default", children: actionLabel };
+    const items3 = [stateFromStores(message(id[17]).Text, obj7), ];
+    let tmp13 = null;
     if (null != stateFromStores) {
-      const obj9 = {};
-      const obj10 = { variant: "text-sm/medium", color: "text-default" };
+      const obj8 = { children: null };
+      const obj9 = { variant: "text-sm/medium", color: "text-default", children: null };
       const intl = message(id[20]).intl;
-      obj10.children = intl.string(message(id[20]).t.CHUAYk);
-      const items4 = [stateFromStores(message(id[17]).Text, obj10), ];
-      const obj11 = { style: _undefined.genContentSubtitleChannel };
+      obj9[2] = intl.string(message(id[20]).t.CHUAYk);
+      const items4 = [stateFromStores(message(id[17]).Text, obj9), ];
+      const obj10 = { style: null, children: null };
+      obj10[0] = _undefined.genContentSubtitleChannel;
       const items5 = [stateFromStores(TextIcon, { size: "xs", color: "text-default" }), ];
-      const obj12 = { variant: "text-sm/medium", color: "text-default", onPress: onHeaderPress, style: null, lineClamp: 1, ellipsizeMode: "tail" };
-      const obj13 = { flex: 1 };
-      obj12.style = obj13;
-      obj12.children = c15;
-      items5[1] = stateFromStores(message(id[17]).Text, obj12);
-      obj11.children = items5;
-      items4[1] = guildId(onHeaderPress, obj11);
-      obj9.children = items4;
-      tmp15 = guildId(stateFromStores1, obj9);
+      const obj11 = { variant: "text-sm/medium", color: "text-default", onPress: null, style: null, lineClamp: 1, ellipsizeMode: "tail", children: null };
+      obj11[2] = onHeaderPress;
+      obj11[3] = { flex: 1 };
+      obj11[6] = c15;
+      items5[1] = stateFromStores(message(id[17]).Text, obj11);
+      obj10[1] = items5;
+      items4[1] = guild_id(onHeaderPress, obj10);
+      obj8[0] = items4;
+      tmp13 = guild_id(stateFromStores1, obj8);
     }
-    items3[1] = tmp15;
-    obj7.children = items3;
-    return guildId(onHeaderPress, obj7);
+    items3[1] = tmp13;
+    obj6[1] = items3;
+    return guild_id(onHeaderPress, obj6);
   }, items8);
   const items10 = [fontScale, , ];
   ({ channelNameAndAccessoryLarge: arr11[1], channelNameAndAccessory: arr11[2] } = tmp);
-  const callback = interactionType.useCallback(() => {
-    let tmp = null != stateFromStores1;
-    if (tmp) {
-      tmp = null != stateFromStores;
+  const callback = obj5.useCallback(() => {
+    let tmp2 = null != stateFromStores1;
+    if (tmp2) {
+      tmp2 = null != stateFromStores;
     }
-    if (tmp) {
+    if (tmp2) {
       let obj = message(id[22]);
-      obj = { guildId: stateFromStores1.id, channelId: stateFromStores.id, id, type: interactionType };
+      obj = { guildId: null, channelId: null, id: null, type: null };
+      obj[0] = stateFromStores1.id;
+      obj[1] = stateFromStores.id;
+      obj[2] = id;
+      obj[3] = interactionType;
       const result = obj.openDetailsActionSheet(obj);
     }
   }, items9);
-  obj = { style: tmp.container };
-  const memo3 = interactionType.useMemo(() => {
+  obj = { style: tmp.container, children: null };
+  const memo3 = obj5.useMemo(() => {
     if (fontScale > 1.8) {
       let channelNameAndAccessory = _undefined.channelNameAndAccessoryLarge;
     } else {
@@ -344,50 +354,39 @@ export default function ICYMICardInCard(message) {
     }
     return channelNameAndAccessory;
   }, items10);
-  obj1 = { onPress: onHeaderPress, onLongPress: onHeaderLongPress, style: tmp.content };
-  obj2 = { style: memo3 };
-  obj3 = { style: tmp.header };
+  obj = { onPress: onHeaderPress, onLongPress: onHeaderLongPress, style: tmp.content, children: null };
+  obj1 = { style: memo3, children: null };
+  let obj2 = { style: tmp.header, children: null };
   const items11 = [memo, ];
-  let obj4 = { style: tmp.headerInfo };
-  obj5 = { style: tmp.title };
-  let obj6 = { style: tmp.titleLeft };
+  let obj3 = { style: tmp.headerInfo, children: null };
+  let obj4 = { style: tmp.title, children: null };
+  obj5 = { style: tmp.titleLeft, children: null };
   const items12 = [memo1, ];
-  let tmp38 = !hideTimestamp;
-  if (tmp38) {
-    let obj7 = { lineClamp: 1, variant: "text-xs/normal", color: "text-muted", children: message(id[24]).getRelativeTimestamp(timestamp) };
-    tmp38 = stateFromStores(message(id[17]).Text, obj7);
-    const obj15 = message(id[24]);
+  let tmp28Result = !flag;
+  if (!flag) {
+    let obj6 = { lineClamp: 1, variant: "text-xs/normal", color: "text-muted", children: null };
+    obj6[3] = tmp2(tmp3[24]).getRelativeTimestamp(timestamp);
+    tmp28Result = tmp28(tmp2(tmp3[17]).Text, obj6);
+    const tmp2Result3 = tmp2(tmp3[24]);
   }
-  items12[1] = tmp38;
-  obj6.children = items12;
-  const items13 = [guildId(onHeaderPress, obj6), ];
-  let obj8 = { onPress: callback, style: tmp.subtitleTrailing, hitSlop: 8 };
-  let obj9 = { color: actionLabel(id[8]).colors.ICON_MUTED, size: "sm" };
-  obj8.children = stateFromStores(message(id[25]).MoreHorizontalIcon, obj9);
-  items13[1] = stateFromStores(message(id[23]).PressableOpacity, obj8);
-  obj5.children = items13;
-  const items14 = [guildId(onHeaderPress, obj5), ];
-  const tmp25 = guildId;
-  const tmp26 = onHeaderPress;
-  const tmp27 = stateFromStores;
-  const tmp28 = stateFromStores;
-  const tmp29 = onHeaderPress;
-  const tmp30 = guildId;
-  const tmp31 = onHeaderPress;
-  const tmp32 = guildId;
-  const tmp33 = onHeaderPress;
-  const tmp34 = guildId;
-  const tmp35 = onHeaderPress;
-  const tmp36 = guildId;
-  const tmp37 = onHeaderPress;
-  const tmp7Result = actionLabel(id[14])(obj);
-  items14[1] = stateFromStores(onHeaderPress, { style: tmp.subTitleContainer, children: stateFromStores(onHeaderPress, obj11) });
-  obj4.children = items14;
-  items11[1] = tmp32(tmp33, obj4);
-  obj3.children = items11;
-  obj2.children = tmp30(tmp31, obj3);
-  obj1.children = tmp28(tmp29, obj2);
-  const items15 = [tmp27(message(id[23]).PressableHighlight, obj1), stateFromStores(onHeaderPress, { style: tmp.normalContent, children })];
-  obj.children = items15;
-  return tmp25(tmp26, obj);
+  items12[1] = tmp28Result;
+  obj5[1] = items12;
+  const items13 = [guild_id(onHeaderPress, obj5), ];
+  let obj7 = { onPress: callback, style: tmp.subtitleTrailing, hitSlop: 8, children: null };
+  let obj8 = { color: null, size: "sm" };
+  obj8[0] = actionLabel(id[8]).colors.ICON_MUTED;
+  obj7[3] = stateFromStores(message(id[25]).MoreHorizontalIcon, obj8);
+  items13[1] = stateFromStores(message(id[23]).PressableOpacity, obj7);
+  obj4[1] = items13;
+  const items14 = [guild_id(onHeaderPress, obj4), ];
+  const tmp2Result1 = message(id[15]);
+  items14[1] = stateFromStores(onHeaderPress, { style: tmp.subTitleContainer, children: stateFromStores(onHeaderPress, obj10) });
+  obj3[1] = items14;
+  items11[1] = guild_id(onHeaderPress, obj3);
+  obj2[1] = items11;
+  obj1[1] = guild_id(onHeaderPress, obj2);
+  obj[3] = stateFromStores(onHeaderPress, obj1);
+  const items15 = [stateFromStores(message(id[23]).PressableHighlight, obj), stateFromStores(onHeaderPress, { style: tmp.normalContent, children })];
+  obj[1] = items15;
+  return guild_id(onHeaderPress, obj);
 };

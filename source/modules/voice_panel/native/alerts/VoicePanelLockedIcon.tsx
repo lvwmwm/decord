@@ -1,26 +1,28 @@
-// Module ID: 15974
-// Function ID: 123312
+// Module ID: 16009
+// Function ID: 16010
 // Name: VoicePanelLockedIcon
-// Dependencies: [31, 33, 4165, 689, 5550, 1273, 15975, 2]
+// Dependencies: [19, 21, 4189, 712, 5568, 1297, 16010, 2]
 // Exports: default
 
-// Module 15974 (VoicePanelLockedIcon)
-import "result";
+// Module 16009 (VoicePanelLockedIcon)
+import "noop";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
 const require = arg1;
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { alignItems: "center", justifyContent: "center", alignSelf: "center", width: 64, height: 64, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SURFACE_HIGH, borderRadius: require("_createForOfIteratorHelperLoose").radii.round };
-_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.icon = {};
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/voice_panel/native/alerts/VoicePanelLockedIcon.tsx");
+createCacheKey = { container: null, icon: null };
+createCacheKey = { alignItems: "center", justifyContent: "center", alignSelf: "center", width: 64, height: 64, backgroundColor: require("Themes").colors.BACKGROUND_SURFACE_HIGH, borderRadius: require("Themes").radii.round };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = {};
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+const result = require("createCacheKey").fileFinishedImporting("modules/voice_panel/native/alerts/VoicePanelLockedIcon.tsx");
 
 export default function VoicePanelLockedIcon() {
-  const tmp = _createForOfIteratorHelperLoose();
-  let obj = { style: tmp.container };
-  obj = { style: tmp.icon, source: importDefault(15975), size: require(1273) /* Button */.IconSizes.LARGE };
-  obj.children = jsx(require(1273) /* Button */.Icon, { style: tmp.icon, source: importDefault(15975), size: require(1273) /* Button */.IconSizes.LARGE });
-  return jsx(importDefault(5550), { style: tmp.icon, source: importDefault(15975), size: require(1273) /* Button */.IconSizes.LARGE });
+  const tmp = createCacheKey();
+  let obj = { style: tmp.container, children: null };
+  obj = { style: tmp.icon, source: null, size: null };
+  obj[1] = importDefault(16010);
+  obj[2] = require(1297) /* Button */.IconSizes.LARGE;
+  obj[1] = jsx(require(1297) /* Button */.Icon, { style: tmp.icon, source: null, size: null });
+  return jsx(importDefault(5568), { style: tmp.icon, source: null, size: null });
 };

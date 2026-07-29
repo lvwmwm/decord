@@ -1,44 +1,36 @@
-// Module ID: 9999
-// Function ID: 77227
-// Name: isNearBottom
-// Dependencies: [57, 31, 27, 33, 4165, 689, 1450, 1557, 5620, 8489, 2]
+// Module ID: 10021
+// Function ID: 10022
+// Name: OAuth2AuthorizeContent
+// Dependencies: [32, 19, 17, 21, 4189, 712, 1474, 1581, 5638, 8513, 2]
 // Exports: default
 
-// Module 9999 (isNearBottom)
+// Module 10021 (OAuth2AuthorizeContent)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
+import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_4;
-let closure_5;
+let c4;
+let c5;
 let closure_6;
-let closure_7;
-let closure_8;
-function isNearBottom(contentOffset) {
-  contentOffset = contentOffset.contentOffset;
-  if (contentOffset === undefined) {
-    const obj = { y: 0 };
-    contentOffset = obj;
-  }
-  return contentOffset.layoutMeasurement.height + contentOffset.y >= contentOffset.contentSize.height - 5;
-}
-({ View: closure_4, ScrollView: closure_5 } = get_ActivityIndicator);
-({ jsx: closure_6, Fragment: closure_7, jsxs: closure_8 } = jsxProd);
-_createForOfIteratorHelperLoose = { fill: { flex: 1 } };
-_createForOfIteratorHelperLoose = { flex: 1, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWER, paddingHorizontal: 16 };
-_createForOfIteratorHelperLoose.scrollView = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.scrollViewContentLandscape = { flexDirection: "row", alignItems: "center", width: "100%", flexGrow: 1, gap: 16 };
-_createForOfIteratorHelperLoose.scrollViewContentPortrait = { flexDirection: "column", width: "100%", flexGrow: 1, gap: 16 };
-_createForOfIteratorHelperLoose.header = { paddingTop: 24 };
-_createForOfIteratorHelperLoose.bodyContainer = { flexDirection: "column", gap: 16, padding: 16 };
-_createForOfIteratorHelperLoose.bodyContainerBackground = { marginHorizontal: 16, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BORDER_SUBTLE, borderRadius: require("_createForOfIteratorHelperLoose").radii.lg };
-_createForOfIteratorHelperLoose.footerPortrait = { flexDirection: "column", padding: 16, gap: 16 };
-let obj1 = { marginHorizontal: 16, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BORDER_SUBTLE, borderRadius: require("_createForOfIteratorHelperLoose").radii.lg };
-_createForOfIteratorHelperLoose.separator = { height: 1, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BORDER_SUBTLE };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-let obj2 = { height: 1, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BORDER_SUBTLE };
+let error;
+let metroImportAll;
+({ View: c4, ScrollView: c5 } = get_ActivityIndicator);
+({ jsx: closure_6, Fragment: error, jsxs: metroImportAll } = jsxProd);
+createCacheKey = { fill: { flex: 1 }, scrollView: null, scrollViewContentLandscape: null, scrollViewContentPortrait: null, header: null, bodyContainer: null, bodyContainerBackground: null, footerPortrait: null, separator: null };
+createCacheKey = { flex: 1, backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOWER, paddingHorizontal: 16 };
+createCacheKey[1] = createCacheKey;
+createCacheKey[2] = { flexDirection: "row", alignItems: "center", width: "100%", flexGrow: 1, gap: 16 };
+createCacheKey[3] = { flexDirection: "column", width: "100%", flexGrow: 1, gap: 16 };
+createCacheKey[4] = { paddingTop: 24 };
+createCacheKey[5] = { flexDirection: "column", gap: 16, padding: 16 };
+createCacheKey[6] = { marginHorizontal: 16, backgroundColor: require("Themes").colors.BORDER_SUBTLE, borderRadius: require("Themes").radii.lg };
+createCacheKey[7] = { flexDirection: "column", padding: 16, gap: 16 };
+let obj1 = { marginHorizontal: 16, backgroundColor: require("Themes").colors.BORDER_SUBTLE, borderRadius: require("Themes").radii.lg };
+createCacheKey[8] = { height: 1, backgroundColor: require("Themes").colors.BORDER_SUBTLE };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let obj2 = { height: 1, backgroundColor: require("Themes").colors.BORDER_SUBTLE };
 const result = require("get ActivityIndicator").fileFinishedImporting("modules/oauth2/native/OAuth2AuthorizeContent.tsx");
 
 export default function OAuth2AuthorizeContent(onScroll) {
@@ -55,47 +47,60 @@ export default function OAuth2AuthorizeContent(onScroll) {
   let setAllContentSeen;
   ({ header, footer, appDetails, setAllContentSeen } = onScroll);
   onScroll = onScroll.onScroll;
-  let callback2;
+  let ref;
+  let first;
+  let closure_4;
+  let first1;
+  let closure_6;
+  let closure_7;
+  let c8;
   ({ body, centerContent, hasContentBackground, obscured } = onScroll);
-  const tmp = _createForOfIteratorHelperLoose();
-  const ref = first.useRef(null);
+  const tmp = createCacheKey();
+  let obj = first;
+  ref = first.useRef(null);
   const size = setAllContentSeen(onScroll[6])();
   ({ left, right, bottom } = setAllContentSeen(onScroll[7])());
-  const tmp5 = ref(first.useState(-1), 2);
-  first = tmp5[0];
-  let closure_4 = tmp5[1];
   const tmp7 = ref(first.useState(-1), 2);
-  const first1 = tmp7[0];
-  const callback = tmp7[1];
+  first = tmp7[0];
+  closure_4 = tmp7[1];
   const tmp9 = ref(first.useState(-1), 2);
-  let closure_7 = tmp9[1];
-  let tmp10 = first >= 0;
-  if (tmp10) {
-    tmp10 = first1 >= 0;
+  first1 = tmp9[0];
+  closure_6 = tmp9[1];
+  const tmp11 = ref(first.useState(-1), 2);
+  closure_7 = tmp11[1];
+  let tmp12 = first >= 0;
+  if (tmp12) {
+    tmp12 = first1 >= 0;
   }
-  if (tmp10) {
-    tmp10 = null == footer || tmp9[0] >= 0;
-    const tmp11 = null == footer || tmp9[0] >= 0;
+  if (tmp12) {
+    tmp12 = null == footer || tmp11[0] >= 0;
+    const tmp13 = null == footer || tmp11[0] >= 0;
   }
-  callback2 = tmp10;
-  const items = [first, tmp10, first1, setAllContentSeen];
-  const layoutEffect = first.useLayoutEffect(() => {
+  c8 = tmp12;
+  const items = [first, tmp12, first1, setAllContentSeen];
+  const layoutEffect = obj.useLayoutEffect(() => {
     if (c8) {
-      let obj = {};
-      obj = { height: first1 };
-      obj.layoutMeasurement = obj;
-      obj = { height: first };
-      obj.contentSize = obj;
-      if (outer1_10(obj)) {
-        if (null != tmp4) {
-          setAllContentSeen(true);
+      let obj = { layoutMeasurement: null, contentSize: null };
+      obj = { height: null };
+      obj[0] = first1;
+      obj[0] = obj;
+      obj = { height: null };
+      obj[0] = first;
+      obj[1] = obj;
+      let contentOffset = obj.contentOffset;
+      if (contentOffset === undefined) {
+        contentOffset = { y: 0 };
+      }
+      if (obj.layoutMeasurement.height + contentOffset.y >= obj.contentSize.height - 5) {
+        if (setAllContentSeen != null) {
+          tmp6(true);
         }
-      } else if (null != tmp4) {
-        setAllContentSeen(false);
+      } else if (setAllContentSeen != null) {
+        tmp3(false);
       }
     }
   }, items);
-  let obj = { style: items1 };
+  obj = { style: items1, children: null };
   items1 = [tmp.fill, { marginBottom: bottom }];
   obj = {
     style: items2,
@@ -103,9 +108,8 @@ export default function OAuth2AuthorizeContent(onScroll) {
     ref,
     onContentSizeChange(arg0, arg1) {
       const current = ref.current;
-      if (null != current) {
-        const obj = { y: 0 };
-        current.scrollTo(obj);
+      if (current != null) {
+        current.scrollTo({ y: 0 });
       }
       callback(arg1);
     },
@@ -114,76 +118,74 @@ export default function OAuth2AuthorizeContent(onScroll) {
       callback2(nativeEvent.nativeEvent.layout.height);
     },
     onScroll(nativeEvent) {
-      if (outer1_10(nativeEvent.nativeEvent)) {
-        if (null != setAllContentSeen) {
-          setAllContentSeen(true);
+      nativeEvent = nativeEvent.nativeEvent;
+      let contentOffset = nativeEvent.contentOffset;
+      if (contentOffset === undefined) {
+        contentOffset = { y: 0 };
+      }
+      if (nativeEvent.layoutMeasurement.height + contentOffset.y >= nativeEvent.contentSize.height - 5) {
+        if (setAllContentSeen != null) {
+          tmp(true);
         }
       }
-      if (null != onScroll) {
+      if (onScroll != null) {
         onScroll(nativeEvent);
       }
     },
-    centerContent
+    centerContent,
+    children: null
   };
   items2 = [tmp.scrollView, { paddingLeft: left, paddingRight: right }];
   items3 = [size.width > size.height ? tmp.scrollViewContentLandscape : tmp.scrollViewContentPortrait];
-  const tmp13 = callback2;
-  const tmp4 = setAllContentSeen(onScroll[7])();
-  obj = { obscured };
-  let tmp19 = null;
-  const tmp14 = setAllContentSeen(onScroll[8]);
-  const tmp15 = callback;
-  const tmp16 = first1;
-  const tmp17 = callback2;
+  let tmp3Result = tmp3(tmp4[8]);
+  const obj1 = { obscured, children: null };
+  let tmp17Result = null;
+  tmp3Result = tmp3(tmp4[9]);
   if (null != header) {
-    const obj1 = { style: tmp.header, children: header };
-    tmp19 = callback(closure_4, obj1);
+    const obj2 = { style: null, children: null };
+    obj2[0] = tmp.header;
+    obj2[1] = header;
+    tmp17Result = tmp17(closure_4, obj2);
   }
-  const items4 = [tmp19, ];
-  const obj2 = {};
+  const items4 = [tmp17Result, ];
   const items5 = [tmp.bodyContainer, , ];
   let prop = null;
   if (hasContentBackground) {
     prop = tmp.bodyContainerBackground;
   }
   items5[1] = prop;
-  if (size.width > size.height) {
-    const obj3 = { flex: 1 };
-    let obj4 = obj3;
-  } else {
-    obj4 = {};
-  }
-  items5[2] = obj4;
-  obj2.style = items5;
+  const obj3 = { style: items5, children: null };
+  items5[2] = size.width > size.height ? { flex: 1 } : {};
   const items6 = [body, ];
-  let tmp25 = null;
+  let tmp15Result = null;
   if (null != appDetails) {
-    const obj5 = {};
-    const obj6 = { style: tmp.separator };
-    const items7 = [callback(closure_4, obj6), ];
-    const obj7 = { children: appDetails };
-    items7[1] = callback(closure_4, obj7);
-    obj5.children = items7;
-    tmp25 = callback2(closure_7, obj5);
+    const obj4 = { children: null };
+    const obj5 = { style: null };
+    obj5[0] = tmp.separator;
+    const items7 = [tmp17(tmp22, obj5), ];
+    const obj6 = { children: null };
+    obj6[0] = appDetails;
+    items7[1] = tmp17(tmp22, obj6);
+    obj4[0] = items7;
+    tmp15Result = tmp15(closure_7, obj4);
   }
-  items6[1] = tmp25;
-  obj2.children = items6;
-  items4[1] = callback2(closure_4, obj2);
-  obj.children = items4;
-  obj.children = tmp17(setAllContentSeen(onScroll[9]), obj);
-  const items8 = [tmp15(tmp16, obj), ];
-  let tmp30 = null;
+  items6[1] = tmp15Result;
+  obj3[1] = items6;
+  items4[1] = c8(closure_4, obj3);
+  obj1[1] = items4;
+  obj[8] = c8(tmp3Result, obj1);
+  const items8 = [closure_6(first1, obj), ];
+  tmp17Result = null;
   if (null != footer) {
-    const obj8 = {
-      onLayout(nativeEvent) {
-          callback3(nativeEvent.nativeEvent.layout.height);
-        },
-      style: tmp.footerPortrait,
-      children: footer
+    const obj7 = { onLayout: null, style: null, children: null };
+    obj7[0] = function onLayout(nativeEvent) {
+      callback3(nativeEvent.nativeEvent.layout.height);
     };
-    tmp30 = callback(closure_4, obj8);
+    obj7[1] = tmp.footerPortrait;
+    obj7[2] = footer;
+    tmp17Result = tmp17(tmp22, obj7);
   }
-  items8[1] = tmp30;
-  obj.children = items8;
-  return tmp13(tmp14, obj);
+  items8[1] = tmp17Result;
+  obj[1] = items8;
+  return c8(tmp3Result, obj);
 };

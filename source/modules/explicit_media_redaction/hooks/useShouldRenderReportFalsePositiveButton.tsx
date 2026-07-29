@@ -1,11 +1,11 @@
-// Module ID: 11079
-// Function ID: 85971
+// Module ID: 11103
+// Function ID: 11104
 // Name: shouldRenderReportFalsePositiveButton
-// Dependencies: [5845, 624, 2]
+// Dependencies: [5863, 647, 2]
 // Exports: shouldRenderReportFalsePositiveButton, useShouldRenderReportFalsePositiveButton
 
-// Module 11079 (shouldRenderReportFalsePositiveButton)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 11103 (shouldRenderReportFalsePositiveButton)
+import getFpMessageInfo from "getFpMessageInfo";
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/explicit_media_redaction/hooks/useShouldRenderReportFalsePositiveButton.tsx");
@@ -15,6 +15,6 @@ export const shouldRenderReportFalsePositiveButton = function shouldRenderReport
 };
 export const useShouldRenderReportFalsePositiveButton = function useShouldRenderReportFalsePositiveButton(id) {
   const _require = id;
-  const items = [_isNativeReflectConstruct];
-  return null != _require(624).useStateFromStores(items, () => outer1_2.getFpMessageInfo(closure_0));
+  const items = [getFpMessageInfo];
+  return null != _require(647).useStateFromStores(items, () => outer1_2.getFpMessageInfo(closure_0));
 };

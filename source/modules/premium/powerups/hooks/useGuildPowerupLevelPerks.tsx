@@ -1,19 +1,19 @@
-// Module ID: 11594
-// Function ID: 90078
+// Module ID: 11618
+// Function ID: 11619
 // Name: useGuildPowerupLevelPerks
-// Dependencies: [31, 4053, 4057, 1212, 2231, 1327, 2]
+// Dependencies: [19, 4077, 4081, 1236, 2255, 1351, 2]
 // Exports: default
 
-// Module 11594 (useGuildPowerupLevelPerks)
-import result from "result";
+// Module 11618 (useGuildPowerupLevelPerks)
+import noop from "noop";
 import { GUILD_FEATURE_TO_PERK } from "BoostedGuildTiers";
 
 const require = arg1;
-const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/premium/powerups/hooks/useGuildPowerupLevelPerks.tsx");
+const result = require("getGuildTierFromGuild").fileFinishedImporting("modules/premium/powerups/hooks/useGuildPowerupLevelPerks.tsx");
 
 export default function useGuildPowerupLevelPerks(arg0) {
-  let obj = arg1;
   let closure_0 = arg0;
+  let obj = arg1;
   if (arg1 === undefined) {
     obj = { includeEmojis: true, includeStickers: true, includeSoundboards: true };
   }
@@ -25,24 +25,33 @@ export default function useGuildPowerupLevelPerks(arg0) {
     const items = [];
     const lib = outer1_4();
     if (includeEmojis) {
-      let obj = { perkIcon: lib(includeStickers[2]).PerkIcons.EMOJI };
+      let obj = { perkIcon: null, description: null };
+      obj[0] = lib(includeStickers[2]).PerkIcons.EMOJI;
       const intl = lib(includeStickers[3]).intl;
-      obj = { totalEmojis: lib.features.total_emoji_slots, additionalEmojis: lib.features.additional_emoji_slots };
-      obj.description = intl.formatToPlainString(includeEmojis(includeStickers[4])["NXvV0+"], obj);
+      obj = { totalEmojis: null, additionalEmojis: null };
+      obj[0] = lib.features.total_emoji_slots;
+      obj[1] = lib.features.additional_emoji_slots;
+      obj[1] = intl.formatToPlainString(includeEmojis(includeStickers[4])["NXvV0+"], obj);
       items.push(obj);
     }
     if (includeStickers) {
-      obj = { perkIcon: lib(includeStickers[2]).PerkIcons.STICKER };
+      obj = { perkIcon: null, description: null };
+      obj[0] = lib(includeStickers[2]).PerkIcons.STICKER;
       const intl2 = lib(includeStickers[3]).intl;
-      const obj1 = { totalStickers: lib.features.total_sticker_slots, additionalStickers: lib.features.additional_sticker_slots };
-      obj.description = intl2.formatToPlainString(includeEmojis(includeStickers[4]).ZEvvPz, obj1);
+      const obj1 = { totalStickers: null, additionalStickers: null };
+      obj1[0] = lib.features.total_sticker_slots;
+      obj1[1] = lib.features.additional_sticker_slots;
+      obj[1] = intl2.formatToPlainString(includeEmojis(includeStickers[4]).ZEvvPz, obj1);
       items.push(obj);
     }
     if (includeSoundboards) {
-      const obj2 = { perkIcon: lib(includeStickers[2]).PerkIcons.SOUNDBOARD };
+      const obj2 = { perkIcon: null, description: null };
+      obj2[0] = lib(includeStickers[2]).PerkIcons.SOUNDBOARD;
       const intl3 = lib(includeStickers[3]).intl;
-      const obj3 = { totalSoundboards: lib.features.total_sound_slots, additionalSoundboards: lib.features.additional_sound_slots };
-      obj2.description = intl3.formatToPlainString(includeEmojis(includeStickers[4])["s9u/E7"], obj3);
+      const obj3 = { totalSoundboards: null, additionalSoundboards: null };
+      obj3[0] = lib.features.total_sound_slots;
+      obj3[1] = lib.features.additional_sound_slots;
+      obj2[1] = intl3.formatToPlainString(includeEmojis(includeStickers[4])["s9u/E7"], obj3);
       items.push(obj2);
     }
     const features = lib.features.features;

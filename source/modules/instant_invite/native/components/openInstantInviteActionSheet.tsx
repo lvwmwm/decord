@@ -1,23 +1,22 @@
-// Module ID: 8332
-// Function ID: 66779
+// Module ID: 8356
+// Function ID: 8357
 // Name: openInstantInviteActionSheet
-// Dependencies: [4133, 8333, 1935, 480, 2]
+// Dependencies: [4157, 8357, 1959, 503, 2]
 // Exports: default
 
-// Module 8332 (openInstantInviteActionSheet)
-const result = require("maybeLoadBundle").fileFinishedImporting("modules/instant_invite/native/components/openInstantInviteActionSheet.tsx");
+// Module 8356 (openInstantInviteActionSheet)
+const result = require("asyncRequireImpl").fileFinishedImporting("modules/instant_invite/native/components/openInstantInviteActionSheet.tsx");
 
 export default function openInstantInviteActionSheet(invite_channel_id) {
-  let obj = importDefault(4133);
+  let obj = importDefault(4157);
   let id = invite_channel_id.vanityURLCode;
-  if (null == id) {
+  if (id == null) {
     id = invite_channel_id.channel.id;
   }
   const combined = "InstantInviteActionSheet-" + id;
   obj = {};
   const merged = Object.assign(invite_channel_id);
-  obj["impressionName"] = require(480) /* isThrottled */.ImpressionNames.GUILD_INVITE;
-  obj = { invite_channel_id: invite_channel_id.channel.id, invite_guild_id: invite_channel_id.channel.guild_id };
-  obj["impressionProperties"] = obj;
-  obj.openLazy(require(1935) /* maybeLoadBundle */(8333, dependencyMap.paths), combined, obj, invite_channel_id.stackingBehavior);
+  obj.impressionName = require(503) /* encodeProperties */.ImpressionNames.GUILD_INVITE;
+  obj.impressionProperties = { invite_channel_id: invite_channel_id.channel.id, invite_guild_id: invite_channel_id.channel.guild_id };
+  obj.openLazy(require(1959) /* asyncRequireImpl */(8357, dependencyMap.paths), combined, obj, invite_channel_id.stackingBehavior);
 };

@@ -1,94 +1,86 @@
-// Module ID: 16093
-// Function ID: 124285
-// Name: subtractYearsFromToday
-// Dependencies: [31, 27, 33, 3747, 4133, 8229, 1935, 8971, 1273, 2]
+// Module ID: 16128
+// Function ID: 16129
+// Dependencies: [19, 17, 21, 3771, 4157, 8253, 1959, 8995, 1297, 2]
 
-// Module 16093 (subtractYearsFromToday)
-import importAllResult from "result";
+// Module 16128
+import importAllResult from "noop";
 import { Keyboard } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
 
 const require = arg1;
-function subtractYearsFromToday(arg0) {
-  const obj = importDefault(3747)();
-  const result = obj.set("year", obj.year() - arg0);
-  return obj.toDate();
-}
-function initialDate() {
-  return subtractYearsFromToday(10);
-}
-const forwardRefResult = importAllResult.forwardRef((date) => {
+let c3 = importAllResult;
+const forwardRefResult = importAllResult.forwardRef((date, ref) => {
   let error;
   let importDefault;
   let label;
   let style;
   date = date.date;
   ({ onChangeDate: importDefault, label } = date);
-  let ref;
+  ref = undefined;
   function updateDate(arg0) {
     callback(arg0);
     const current = ref.current;
-    if (null != current) {
+    if (current != null) {
       current.blur();
     }
   }
   function openDatePicker() {
     updateDate.dismiss();
     let obj = outer1_1(label[4]);
-    obj = { onSubmit: updateDate, title: label };
+    obj = { onSubmit: updateDate, title: label, startDate: null, maximumDate: null, minimumDate: null, requireDateChanged: true };
     let toDateResult;
-    if (null != date) {
+    if (date != null) {
       toDateResult = date.toDate();
     }
-    if (null == toDateResult) {
-      toDateResult = outer1_7();
+    if (toDateResult == null) {
+      const obj4 = tmp2(tmp3[3])();
+      const result = obj4.set("year", obj4.year() - 10);
+      toDateResult = obj4.toDate();
     }
-    obj.startDate = toDateResult;
-    obj.maximumDate = outer1_6(3);
-    obj.minimumDate = outer1_6(100);
-    obj.requireDateChanged = true;
+    obj[2] = toDateResult;
+    const obj5 = outer1_1(label[3])();
+    const result1 = obj5.set("year", obj5.year() - 3);
+    obj[3] = obj5.toDate();
+    const obj6 = outer1_1(label[3])();
+    const result2 = obj6.set("year", obj6.year() - 100);
+    obj[4] = obj6.toDate();
     obj.openLazy(date(label[6])(label[5], label.paths), "DatePicker", obj);
   }
   ({ style, error } = date);
   ref = ref.useRef(null);
-  const imperativeHandle = ref.useImperativeHandle(arg1, () => ({
+  const imperativeHandle = ref.useImperativeHandle(ref, () => ({
     focus() {
-      outer1_5();
+      callback();
     }
   }));
   let formatResult;
-  if (null != date) {
+  if (date != null) {
     formatResult = date.format("L");
   }
-  let tmp4;
-  if (null != formatResult) {
-    tmp4 = formatResult;
-  }
+  let obj = importDefault(label[3])();
+  let result = obj.set("year", obj.year() - 10);
+  const tmp4 = label;
   const tmp5 = importDefault(label[3]);
-  let formatResult1 = importDefault(label[3])(initialDate()).format("L");
-  let obj = { style, ref };
-  let str2 = "";
-  const tmp5Result = importDefault(label[3])(initialDate());
-  const tmp7 = openDatePicker;
-  if (null != tmp4) {
-    str2 = tmp4;
+  const formatResult1 = importDefault(label[3])(obj.toDate()).format("L");
+  obj = { style, ref, value: null, placeholder: null, returnKeyType: "next", textContentType: "none", autoCapitalize: "none", clearButtonVisibility: null, editable: false, forceAccessibleContainer: true, accessibilityLabel: null, onPress: null, label: null, error: null };
+  let str2 = formatResult;
+  const tmp5Result = importDefault(label[3])(obj.toDate());
+  const tmp8 = openDatePicker;
+  if (formatResult == null) {
+    str2 = "";
   }
-  obj.value = str2;
-  obj.placeholder = formatResult1;
-  obj.returnKeyType = "next";
-  obj.textContentType = "none";
-  obj.autoCapitalize = "none";
-  obj.clearButtonVisibility = date(label[8]).ClearButtonVisibility.NEVER;
-  obj.editable = false;
-  obj.forceAccessibleContainer = true;
-  if (null != tmp4) {
-    formatResult1 = tmp4;
+  obj[2] = str2;
+  obj[3] = formatResult1;
+  obj[7] = date(tmp4[8]).ClearButtonVisibility.NEVER;
+  let tmp10 = formatResult1;
+  if (null != formatResult) {
+    tmp10 = formatResult;
   }
-  obj.accessibilityLabel = "" + label + ", " + formatResult1;
-  obj.onPress = openDatePicker;
-  obj.label = label;
-  obj.error = error;
-  return tmp7(importDefault(label[7]), obj);
+  obj[10] = "" + label + ", " + tmp10;
+  obj[11] = openDatePicker;
+  obj[12] = label;
+  obj[13] = error;
+  return tmp8(importDefault(label[7]), obj);
 });
 let result = require("jsxProd").fileFinishedImporting("modules/age_gate/native/components/DateInput.tsx");
 

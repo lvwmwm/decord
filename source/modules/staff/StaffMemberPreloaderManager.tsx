@@ -1,27 +1,28 @@
-// Module ID: 16285
-// Function ID: 126161
-// Name: _isNativeReflectConstruct
-// Dependencies: [7, 6, 15, 17, 18, 16286, 5112, 2]
+// Module ID: 16320
+// Function ID: 16321
+// Name: prototype
+// Dependencies: [5134, 16321, 2]
 
-// Module 16285 (_isNativeReflectConstruct)
-import set from "set";
-import AutomaticLifecycleManager from "AutomaticLifecycleManager";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
-import tmp2 from "AutomaticLifecycleManager";
+// Module 16320 (prototype)
+import "initialize";
 
-const require = arg1;
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
-  }
-  const result = _isNativeReflectConstruct();
+let require = arg1;
+let prototype = function StaffMemberPreloaderManager() {
+  const applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
+  const require = applyArgumentsResult;
+  applyArgumentsResult.actions = {
+    POST_CONNECTION_OPEN() {
+      return applyArgumentsResult.handlePostConnectionOpen();
+    }
+  };
+  applyArgumentsResult.handlePostConnectionOpen = function handlePostConnectionOpen() {
+    applyArgumentsResult(table[1]).preloadStaffMembers();
+  };
+  return applyArgumentsResult;
+}.prototype;
+class prototype extends tmp2 {
 }
-tmp2 = new tmp2();
-let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/staff/StaffMemberPreloaderManager.tsx");
+prototype = new prototype();
+const result = require("set").fileFinishedImporting("modules/staff/StaffMemberPreloaderManager.tsx");
 
-export default tmp2;
+export default prototype;

@@ -1,32 +1,347 @@
-// Module ID: 8422
-// Function ID: 67186
+// Module ID: 8446
+// Function ID: 8447
 // Name: emitClickEventWithCreative
-// Dependencies: [5, 5966, 653, 5994, 5983, 5964, 5993, 6000, 675, 491, 477, 5943, 8423, 5995, 5972, 8426, 2]
+// Dependencies: [5, 5985, 676, 6013, 6002, 5983, 6012, 6019, 698, 514, 500, 5962, 8447, 6014, 5991, 8450, 2]
 // Exports: captureAdUserAction
 
-// Module 8422 (emitClickEventWithCreative)
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 8446 (emitClickEventWithCreative)
+import getQuestDeliveryDataForPlacement from "getQuestDeliveryDataForPlacement";
+import initializeState from "initializeState";
 import { AnalyticEvents } from "ME";
 
 const require = arg1;
 function emitClickEventWithCreative() {
-  return _emitClickEventWithCreative(...arguments);
+  const self = this;
+  const apply = _emitClickEventWithCreative.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
 }
 function _emitClickEventWithCreative() {
-  // CreateGeneratorClosureLongIndex (0x67)
-  const obj = callback(tmp);
-  return obj(...arguments);
+  const self = this;
+  const tmp = callback((arg0) => {
+    let closure_0 = arg0;
+    let c7 = 0;
+    let c8 = 0;
+    return (function*(arg0) {
+      let c1;
+      let c3;
+      let c4;
+      let clickId;
+      let impressionId;
+      let questContentCTA;
+      let questContentPosition;
+      let questContentRowIndex;
+      let surfaceId;
+      if (c8 === 2) {
+        c8 = 3;
+        HermesBuiltin.throwTypeError();
+      } else if (tmp4 === 3) {
+        if (arg0 === 1) {
+          throw arg1;
+        } else if (arg0 === 2) {
+          let obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
+        } else {
+          return { value: "HermesInternal", done: null };
+        }
+      } else {
+        try {
+          c8 = 2;
+          if (0 === c7) {
+            if (arg0 === 1) {
+              c8 = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              c8 = 3;
+              obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            } else {
+              let adCreativeId = tmp5;
+              let constants = tmp2;
+              c1 = undefined;
+              let dependencyMap;
+              c3 = undefined;
+              c4 = undefined;
+              constants = undefined;
+              adCreativeId = undefined;
+              ({ adCreativeType: c1, surfaceId } = lib);
+              dependencyMap = surfaceId;
+              ({ sourceQuestContent: c3, trackGuildAndChannelMetadata: c4 } = lib);
+              ({ questContentCTA, impressionId, clickId, questContentPosition, questContentRowIndex } = lib);
+              let obj1 = { questContent: null, questContentPosition: null, questContentRowIndex: null, questContentCTA: null, impressionId: null, clickId: null };
+              obj1[0] = surfaceId;
+              obj1[1] = questContentPosition;
+              obj1[2] = questContentRowIndex;
+              obj1[3] = questContentCTA;
+              obj1[4] = impressionId;
+              obj1[5] = clickId;
+              c7 = 1;
+              c8 = 1;
+              let obj2 = { value: null, done: false };
+              obj2[0] = lib(outer1_2[4]).getCommonClickEventProperties(obj1);
+              return obj2;
+            }
+          } else if (arg0 === 1) {
+            c8 = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            c8 = 3;
+            let obj3 = { value: null, done: true };
+            obj3[0] = arg1;
+            return obj3;
+          } else {
+            constants = arg1;
+            if (c1 !== lib(6013).AdCreativeType.QUEST) {
+              obj3 = lib(6002);
+              const obj4 = { adContentId: null, relatedQuestId: null, adCreativeType: null, event: null, properties: null, trackGuildAndChannelMetadata: null, shouldExtendSession: null, sourceQuestContent: null };
+              obj4[0] = lib.adCreativeId;
+              obj4[1] = lib.relatedQuestId;
+              obj4[2] = c1;
+              obj4[3] = constants.QUEST_CONTENT_CLICKED;
+              const obj5 = {};
+              const merged = Object.assign(constants);
+              let obj6 = lib(6019);
+              const currentQuestHomeSearchSession = obj6.getCurrentQuestHomeSearchSession();
+              let uuid;
+              if (currentQuestHomeSearchSession != null) {
+                uuid = currentQuestHomeSearchSession.uuid;
+              }
+              c1 = uuid;
+              if (uuid == null) {
+                c1 = null;
+              }
+              obj5.search_session_id = c1;
+              obj4[4] = obj5;
+              obj4[5] = c4;
+              let obj7 = lib(5983);
+              obj4[6] = obj7.isBillableQuestContent(dependencyMap);
+              obj4[7] = c3;
+              obj3.trackAdContentEvent(obj4);
+            } else {
+              adCreativeId = lib.adCreativeId;
+              obj6 = { questId: null, event: null, properties: null, trackGuildAndChannelMetadata: null, shouldExtendSession: null, sourceQuestContent: null };
+              obj6[0] = adCreativeId;
+              obj6[1] = constants.QUEST_CONTENT_CLICKED;
+              obj7 = {};
+              const merged1 = Object.assign(constants);
+              const obj13 = lib(6002);
+              const adMetadataSealed = lib(5983).getAdMetadataSealed(c3, adCreativeId);
+              dependencyMap = adMetadataSealed;
+              if (adMetadataSealed == null) {
+                dependencyMap = null;
+              }
+              obj7.metadata_sealed = dependencyMap;
+              obj = lib(5983);
+              const adTrafficMetadataSealed = obj.getAdTrafficMetadataSealed(c3, adCreativeId);
+              c3 = adTrafficMetadataSealed;
+              if (adTrafficMetadataSealed == null) {
+                c3 = null;
+              }
+              obj7.traffic_metadata_sealed = c3;
+              obj1 = lib(6019);
+              const currentQuestHomeSearchSession1 = obj1.getCurrentQuestHomeSearchSession();
+              let uuid1;
+              if (currentQuestHomeSearchSession1 != null) {
+                uuid1 = currentQuestHomeSearchSession1.uuid;
+              }
+              c4 = uuid1;
+              if (uuid1 == null) {
+                c4 = null;
+              }
+              obj7.search_session_id = c4;
+              obj6[2] = obj7;
+              obj6[3] = c4;
+              obj2 = lib(5983);
+              obj6[4] = obj2.isBillableQuestContent(dependencyMap);
+              obj6[5] = c3;
+              obj13.trackQuestEvent(obj6);
+              const obj16 = lib(5983);
+            }
+            c8 = 3;
+          }
+        } catch (tmp54) {
+          c8 = tmp;
+          throw tmp54;
+        }
+      }
+    })();
+  });
+  const _emitClickEventWithCreative = tmp;
+  const apply = tmp.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
 }
 function _handleClickInternalAction() {
-  // CreateGeneratorClosureLongIndex (0x67)
-  const obj = callback(tmp);
-  return obj(...arguments);
+  const self = this;
+  const tmp = callback((arg0) => {
+    let closure_0 = arg0;
+    let c4 = 0;
+    let c3 = 0;
+    return (function*(arg0) {
+      let questContentCTA;
+      let questContentPosition;
+      let questContentRowIndex;
+      let surfaceId;
+      if (c3 === 2) {
+        c3 = 3;
+        HermesBuiltin.throwTypeError();
+      } else if (tmp3 === 3) {
+        if (arg0 === 1) {
+          throw arg1;
+        } else if (arg0 === 2) {
+          let obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
+        } else {
+          return { value: "HermesInternal", done: null };
+        }
+      } else {
+        try {
+          c3 = 2;
+          if (0 === c4) {
+            if (arg0 === 1) {
+              c3 = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              c3 = 3;
+              obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            } else if (null != lib.adCreativeType) {
+              c4 = 1;
+              c3 = 1;
+              const obj1 = { value: null, done: false };
+              obj1[0] = outer1_6(tmp15);
+              return obj1;
+            } else {
+              const clickId = tmp15.clickId;
+              ({ surfaceId, questContentCTA, questContentPosition, questContentRowIndex } = tmp15);
+              const contentProperties = lib(outer1_2[6]).getContentProperties(surfaceId, questContentPosition, questContentRowIndex);
+              const obj6 = lib(outer1_2[6]);
+              const tmp17 = lib;
+              const tmp18 = outer1_2;
+              const obj2 = { cta_name: null, click_id: null, is_targeted: null, content_id: null, content_name: null, content_position: null, row_index: null, ad_content_id: null, quest_id: null };
+              obj2[0] = questContentCTA;
+              let closure_1 = clickId;
+              if (clickId == null) {
+                closure_1 = tmp17(tmp18[9]).v4();
+                const tmp17Result = tmp17(tmp18[9]);
+              }
+              obj2[1] = closure_1;
+              const isTargeted = tmp15.isTargeted;
+              let c2 = isTargeted;
+              if (isTargeted == null) {
+                c2 = false;
+              }
+              obj2[2] = c2;
+              ({ content_id: obj8[3], content_name: obj8[4], content_position: obj8[5], row_index: obj8[6] } = contentProperties);
+              ({ adContentId: obj8[7], relatedQuestId: obj8[8] } = tmp15);
+              outer1_1(outer1_2[8]).track(outer1_5.QUEST_CONTENT_CLICKED, obj2);
+              const obj7 = outer1_1(outer1_2[8]);
+            }
+          } else if (arg0 === 1) {
+            c3 = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            c3 = 3;
+            obj = { value: null, done: true };
+            obj[0] = arg1;
+            return obj;
+          }
+          c3 = 3;
+          return { value: "HermesInternal", done: null };
+        } catch (tmp9) {
+          c3 = tmp;
+          throw tmp9;
+        }
+      }
+    })();
+  });
+  const _handleClickInternalAction = tmp;
+  const apply = tmp.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
 }
 function _handleClickExternalAdvertiserCtaAction() {
-  // CreateGeneratorClosureLongIndex (0x67)
-  const obj = callback(tmp);
-  return obj(...arguments);
+  const self = this;
+  const tmp = callback((arg0) => {
+    let closure_0 = arg0;
+    let c2 = 0;
+    let c1 = 0;
+    return (function*(arg0) {
+      if (c1 === 2) {
+        c1 = 3;
+        HermesBuiltin.throwTypeError();
+      } else if (tmp3 === 3) {
+        if (arg0 === 1) {
+          throw arg1;
+        } else if (arg0 === 2) {
+          let obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
+        } else {
+          return { value: "HermesInternal", done: null };
+        }
+      } else {
+        try {
+          c1 = 2;
+          if (0 === c2) {
+            if (arg0 === 1) {
+              c1 = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              c1 = 3;
+              obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            } else {
+              c2 = 1;
+              c1 = 1;
+              const obj1 = { value: null, done: false };
+              obj1[0] = outer1_6(closure_0);
+              return obj1;
+            }
+          } else if (arg0 === 1) {
+            c1 = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            c1 = 3;
+            obj = { value: null, done: true };
+            obj[0] = arg1;
+            return obj;
+          } else {
+            c1 = 3;
+            return { value: "HermesInternal", done: null };
+          }
+        } catch (tmp7) {
+          c1 = tmp;
+          throw tmp7;
+        }
+      }
+    })();
+  });
+  const _handleClickExternalAdvertiserCtaAction = tmp;
+  const apply = tmp.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
 }
 function handleViewImpression(minViewTimeSeconds) {
   let adUser;
@@ -39,156 +354,307 @@ function handleViewImpression(minViewTimeSeconds) {
   let surfaceId;
   let trackGuildAndChannelMetadata;
   ({ surfaceId, sourceQuestContent, shouldExtendSession, adUser, trackGuildAndChannelMetadata } = minViewTimeSeconds);
-  let obj = { min_view_time_seconds: minViewTimeSeconds.minViewTimeSeconds, min_viewport_percentage: minViewTimeSeconds.minViewportPercentage, triggered_by_status_change: minViewTimeSeconds.triggeredByStatusChange };
+  let obj = { min_view_time_seconds: minViewTimeSeconds.minViewTimeSeconds, min_viewport_percentage: minViewTimeSeconds.minViewportPercentage, triggered_by_status_change: minViewTimeSeconds.triggeredByStatusChange, apple_advertising_id: null, android_advertising_id: null };
   let advertisingId = null;
   ({ impressionId, isQuestEnrollmentBlocked, questContentPosition, questContentRowIndex } = minViewTimeSeconds);
   if (null != adUser) {
-    let obj1 = require(477) /* set */;
+    let obj1 = require(500) /* set */;
     advertisingId = null;
     if (obj1.isIOS()) {
       advertisingId = adUser.advertisingId;
     }
   }
-  obj.apple_advertising_id = advertisingId;
+  obj[3] = advertisingId;
   let advertisingId1 = null;
   if (null != adUser) {
-    let obj2 = require(477) /* set */;
+    let obj2 = require(500) /* set */;
     advertisingId1 = null;
     if (obj2.isAndroid()) {
       advertisingId1 = adUser.advertisingId;
     }
   }
-  obj.android_advertising_id = advertisingId1;
-  const merged = Object.assign(importDefault(5943)());
-  const merged1 = Object.assign(require(8423) /* getBrandSafetyContext */.getBrandSafetyContext(surfaceId));
-  obj["impression_id"] = impressionId;
-  obj["is_quest_enrollment_blocked"] = isQuestEnrollmentBlocked;
-  const obj4 = require(8423) /* getBrandSafetyContext */;
-  const merged2 = Object.assign(require(5993) /* getQuestContentName */.getContentProperties(surfaceId, questContentPosition, questContentRowIndex));
-  if (minViewTimeSeconds.adCreativeType !== require(5994) /* AdCreativeType */.AdCreativeType.QUEST) {
-    obj = { event: AnalyticEvents.QUEST_CONTENT_VIEWED };
-    ({ adCreativeId: obj9.adContentId, adCreativeType: obj9.adCreativeType } = minViewTimeSeconds);
-    obj.trackGuildAndChannelMetadata = trackGuildAndChannelMetadata;
-    obj.shouldExtendSession = shouldExtendSession;
-    obj.sourceQuestContent = sourceQuestContent;
+  obj[4] = advertisingId1;
+  const merged = Object.assign(importDefault(5962)());
+  const merged1 = Object.assign(require(8447) /* getBrandSafetyContext */.getBrandSafetyContext(surfaceId));
+  obj.impression_id = impressionId;
+  obj.is_quest_enrollment_blocked = isQuestEnrollmentBlocked;
+  const obj4 = require(8447) /* getBrandSafetyContext */;
+  const merged2 = Object.assign(require(6012) /* getQuestContentName */.getContentProperties(surfaceId, questContentPosition, questContentRowIndex));
+  if (minViewTimeSeconds.adCreativeType !== require(6013) /* AdCreativeType */.AdCreativeType.QUEST) {
+    let tmp9Result = tmp9(6002);
+    obj = { event: null, adContentId: null, adCreativeType: null, trackGuildAndChannelMetadata: null, shouldExtendSession: null, sourceQuestContent: null, properties: null };
+    obj[0] = AnalyticEvents.QUEST_CONTENT_VIEWED;
+    ({ adCreativeId: obj9[1], adCreativeType: obj9[2] } = minViewTimeSeconds);
+    obj[3] = trackGuildAndChannelMetadata;
+    obj[4] = shouldExtendSession;
+    obj[5] = sourceQuestContent;
     obj = {};
     const merged3 = Object.assign(obj);
-    obj.properties = obj;
-    require(5983) /* assignBillingSessionId */.trackAdContentEvent(obj);
-    const obj8 = require(5983) /* assignBillingSessionId */;
+    obj[6] = obj;
+    tmp9Result.trackAdContentEvent(obj);
   } else {
     const adCreativeId = minViewTimeSeconds.adCreativeId;
-    obj1 = { event: AnalyticEvents.QUEST_CONTENT_VIEWED, questId: adCreativeId, trackGuildAndChannelMetadata, shouldExtendSession, sourceQuestContent };
+    tmp9Result = tmp9(6002);
+    obj1 = { event: null, questId: null, trackGuildAndChannelMetadata: null, shouldExtendSession: null, sourceQuestContent: null, properties: null };
+    obj1[0] = AnalyticEvents.QUEST_CONTENT_VIEWED;
+    obj1[1] = adCreativeId;
+    obj1[2] = trackGuildAndChannelMetadata;
+    obj1[3] = shouldExtendSession;
+    obj1[4] = sourceQuestContent;
     obj2 = {};
     const merged4 = Object.assign(obj);
-    const obj11 = require(5983) /* assignBillingSessionId */;
-    const adMetadataSealed = require(5964) /* _createForOfIteratorHelperLoose */.getAdMetadataSealed(sourceQuestContent, adCreativeId);
-    let tmp10 = null;
-    if (null != adMetadataSealed) {
-      tmp10 = adMetadataSealed;
+    let adMetadataSealed = tmp9(5983).getAdMetadataSealed(sourceQuestContent, adCreativeId);
+    if (adMetadataSealed == null) {
+      adMetadataSealed = null;
     }
-    obj2["metadata_sealed"] = tmp10;
-    const obj14 = require(5964) /* _createForOfIteratorHelperLoose */;
-    const currentQuestHomeSearchSession = require(6000) /* getOrCreateQuestHomeSearchSession */.getCurrentQuestHomeSearchSession();
+    obj2.metadata_sealed = adMetadataSealed;
+    const tmp9Result1 = tmp9(5983);
+    const currentQuestHomeSearchSession = tmp9(6019).getCurrentQuestHomeSearchSession();
     let uuid;
-    if (null != currentQuestHomeSearchSession) {
+    if (currentQuestHomeSearchSession != null) {
       uuid = currentQuestHomeSearchSession.uuid;
     }
-    let tmp15 = null;
-    if (null != uuid) {
-      tmp15 = uuid;
+    if (uuid == null) {
+      uuid = null;
     }
-    obj2["search_session_id"] = tmp15;
-    const obj6 = require(6000) /* getOrCreateQuestHomeSearchSession */;
-    const adTrafficMetadataSealed = require(5964) /* _createForOfIteratorHelperLoose */.getAdTrafficMetadataSealed(sourceQuestContent, adCreativeId);
-    let tmp19 = null;
-    if (null != adTrafficMetadataSealed) {
-      tmp19 = adTrafficMetadataSealed;
+    obj2.search_session_id = uuid;
+    const tmp9Result2 = tmp9(6019);
+    let adTrafficMetadataSealed = tmp9(5983).getAdTrafficMetadataSealed(sourceQuestContent, adCreativeId);
+    if (adTrafficMetadataSealed == null) {
+      adTrafficMetadataSealed = null;
     }
-    obj2["traffic_metadata_sealed"] = tmp19;
-    obj1.properties = obj2;
-    obj11.trackQuestEvent(obj1);
-    const obj7 = require(5964) /* _createForOfIteratorHelperLoose */;
+    obj2.traffic_metadata_sealed = adTrafficMetadataSealed;
+    obj1[5] = obj2;
+    tmp9Result.trackQuestEvent(obj1);
+    const tmp9Result3 = tmp9(5983);
   }
 }
 function _handleViewInternalSurfaceImpressionAction() {
-  // CreateGeneratorClosureLongIndex (0x67)
-  const obj = callback(tmp);
-  return obj(...arguments);
+  const self = this;
+  const tmp = callback((arg0) => {
+    let closure_0 = arg0;
+    let c4 = 0;
+    let c5 = 0;
+    return (function*(arg0) {
+      if (constants === 2) {
+        constants = 3;
+        HermesBuiltin.throwTypeError();
+      } else if (tmp4 === 3) {
+        if (arg0 === 1) {
+          throw arg1;
+        } else if (arg0 === 2) {
+          let obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
+        } else {
+          return { value: "HermesInternal", done: null };
+        }
+      } else {
+        try {
+          constants = 2;
+          if (0 === c4) {
+            if (arg0 === 1) {
+              constants = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              constants = 3;
+              obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            } else {
+              let getQuestDeliveryDataForPlacement = tmp5;
+              const dependencyMap = tmp2;
+              let lib2;
+              if (null != lib.adCreativeType) {
+                outer1_10(tmp48);
+                constants = 3;
+              } else {
+                let obj3 = lib(outer1_2[13]);
+                c4 = 1;
+                constants = 1;
+                let obj1 = { value: null, done: false };
+                obj1[0] = obj3.getAdUser(lib(outer1_2[6]).getQuestContentName(tmp48.surfaceId));
+                return obj1;
+              }
+            }
+          } else if (arg0 === 1) {
+            constants = 3;
+            throw arg1;
+          } else if (arg0 !== 2) {
+            lib2 = arg1;
+            const obj2 = {};
+            const obj9 = lib2(698);
+            const merged = Object.assign(lib(6012).getContentProperties(lib.surfaceId));
+            let advertisingId = null;
+            if (null != lib2) {
+              obj = lib(500);
+              advertisingId = null;
+              if (obj.isIOS()) {
+                advertisingId = lib2.advertisingId;
+              }
+            }
+            obj2.apple_advertising_id = advertisingId;
+            let advertisingId1 = null;
+            if (null != lib2) {
+              obj1 = lib(500);
+              advertisingId1 = null;
+              if (obj1.isAndroid()) {
+                advertisingId1 = lib2.advertisingId;
+              }
+            }
+            obj2.android_advertising_id = advertisingId1;
+            const isTargeted = lib.isTargeted;
+            lib2 = isTargeted;
+            if (isTargeted == null) {
+              lib2 = false;
+            }
+            obj2.is_targeted = lib2;
+            obj9.track(constants.QUEST_CONTENT_VIEWED, obj2);
+            const obj11 = lib(6012);
+          }
+          constants = 3;
+          obj3 = { value: null, done: true };
+          obj3[0] = arg1;
+          return obj3;
+        } catch (tmp30) {
+          constants = tmp;
+          throw tmp30;
+        }
+      }
+    })();
+  });
+  const _handleViewInternalSurfaceImpressionAction = tmp;
+  const apply = tmp.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
 }
 function reportCaptureAdUserActionError(arg0) {
-  const questLogger = require(5972) /* getQuestLogger */.getQuestLogger();
+  const questLogger = require(5991) /* getQuestLogger */.getQuestLogger();
   questLogger.error("captureAdUserAction failed to report an ad user action", arg0);
 }
 const result = require("ME").fileFinishedImporting("modules/ads/analytics/captureAdUserAction.tsx");
 
 export const captureAdUserAction = function captureAdUserAction(type) {
-  type = type.type;
-  if (require(8426) /* AdUserActionType */.AdUserActionType.END_CONTENT_LOAD === type) {
-    if (type.adCreativeType === require(5994) /* AdCreativeType */.AdCreativeType.QUEST) {
-      const adCreativeId = type.adCreativeId;
-      let obj = require(5983) /* assignBillingSessionId */;
-      obj = { event: AnalyticEvents.QUEST_CONTENT_LOADED, questId: adCreativeId };
-      ({ trackGuildAndChannelMetadata: obj2.trackGuildAndChannelMetadata, sourceQuestContent: obj2.sourceQuestContent } = type);
-      obj = { triggered_by_status_change: type.triggeredByStatusChange };
-      const adMetadataSealed = require(5964) /* _createForOfIteratorHelperLoose */.getAdMetadataSealed(type.sourceQuestContent, adCreativeId);
-      let tmp22 = null;
-      if (null != adMetadataSealed) {
-        tmp22 = adMetadataSealed;
-      }
-      obj.metadata_sealed = tmp22;
-      const obj4 = require(5964) /* _createForOfIteratorHelperLoose */;
-      const adTrafficMetadataSealed = require(5964) /* _createForOfIteratorHelperLoose */.getAdTrafficMetadataSealed(type.sourceQuestContent, adCreativeId);
-      let tmp26 = null;
-      if (null != adTrafficMetadataSealed) {
-        tmp26 = adTrafficMetadataSealed;
-      }
-      obj.traffic_metadata_sealed = tmp26;
-      obj.impression_id = type.impressionId;
-      obj.is_quest_enrollment_blocked = tmp15;
-      obj.content_id = type.surfaceId;
-      const obj5 = require(5964) /* _createForOfIteratorHelperLoose */;
-      obj.content_name = require(5993) /* getQuestContentName */.getQuestContentName(type.surfaceId);
-      ({ questContentPosition: obj3.content_position, questContentRowIndex: obj3.row_index } = type);
-      obj.properties = obj;
-      obj.trackQuestEvent(obj);
-      const obj6 = require(5993) /* getQuestContentName */;
-    } else {
-      const obj1 = { event: AnalyticEvents.QUEST_CONTENT_LOADED };
-      ({ adCreativeId: obj8.adContentId, adCreativeType: obj8.adCreativeType, trackGuildAndChannelMetadata: obj8.trackGuildAndChannelMetadata, sourceQuestContent: obj8.sourceQuestContent } = type);
-      const obj2 = {};
-      ({ triggeredByStatusChange: obj9.triggered_by_status_change, impressionId: obj9.impression_id } = type);
-      obj2.is_quest_enrollment_blocked = tmp15;
-      obj2.content_id = type.surfaceId;
-      const obj7 = require(5983) /* assignBillingSessionId */;
-      obj2.content_name = require(5993) /* getQuestContentName */.getQuestContentName(type.surfaceId);
-      ({ questContentPosition: obj9.content_position, questContentRowIndex: obj9.row_index } = type);
-      obj1.properties = obj2;
-      obj7.trackAdContentEvent(obj1);
-      const obj10 = require(5993) /* getQuestContentName */;
+  try {
+    type = type.type;
+    if (require(8450) /* AdUserActionType */.AdUserActionType.END_CONTENT_LOAD === type) {
+      (function handleEndContentLoadAction(adCreativeType) {
+        if (adCreativeType.adCreativeType === callback(table[3]).AdCreativeType.QUEST) {
+          const adCreativeId = adCreativeType.adCreativeId;
+          let tmp2Result = tmp2(tmp3[4]);
+          let obj = { event: null, questId: null, trackGuildAndChannelMetadata: null, sourceQuestContent: null, properties: null };
+          obj[0] = constants.QUEST_CONTENT_LOADED;
+          obj[1] = adCreativeId;
+          ({ trackGuildAndChannelMetadata: obj2[2], sourceQuestContent: obj2[3] } = adCreativeType);
+          obj = { triggered_by_status_change: null, metadata_sealed: null, traffic_metadata_sealed: null, impression_id: null, is_quest_enrollment_blocked: null, content_id: null, content_name: null, content_position: null, row_index: null };
+          obj[0] = adCreativeType.triggeredByStatusChange;
+          tmp2Result = tmp2(tmp3[5]);
+          let adMetadataSealed = tmp2Result.getAdMetadataSealed(adCreativeType.sourceQuestContent, adCreativeId);
+          if (adMetadataSealed == null) {
+            adMetadataSealed = null;
+          }
+          obj[1] = adMetadataSealed;
+          let adTrafficMetadataSealed = tmp2(tmp3[5]).getAdTrafficMetadataSealed(adCreativeType.sourceQuestContent, adCreativeId);
+          if (adTrafficMetadataSealed == null) {
+            adTrafficMetadataSealed = null;
+          }
+          obj[2] = adTrafficMetadataSealed;
+          obj[3] = adCreativeType.impressionId;
+          obj[4] = tmp;
+          obj[5] = adCreativeType.surfaceId;
+          const tmp2Result1 = tmp2(tmp3[5]);
+          obj[6] = tmp2(tmp3[6]).getQuestContentName(adCreativeType.surfaceId);
+          ({ questContentPosition: obj3[7], questContentRowIndex: obj3[8] } = adCreativeType);
+          obj[4] = obj;
+          tmp2Result.trackQuestEvent(obj);
+          const tmp2Result2 = tmp2(tmp3[6]);
+        } else {
+          const obj1 = { event: null, adContentId: null, adCreativeType: null, trackGuildAndChannelMetadata: null, sourceQuestContent: null, properties: null };
+          obj1[0] = constants.QUEST_CONTENT_LOADED;
+          ({ adCreativeId: obj8[1], adCreativeType: obj8[2], trackGuildAndChannelMetadata: obj8[3], sourceQuestContent: obj8[4] } = adCreativeType);
+          const obj2 = { triggered_by_status_change: null, impression_id: null, is_quest_enrollment_blocked: null, content_id: null, content_name: null, content_position: null, row_index: null };
+          ({ triggeredByStatusChange: obj9[0], impressionId: obj9[1] } = adCreativeType);
+          obj2[2] = tmp;
+          obj2[3] = adCreativeType.surfaceId;
+          const tmp2Result3 = tmp2(tmp3[4]);
+          obj2[4] = tmp2(tmp3[6]).getQuestContentName(adCreativeType.surfaceId);
+          ({ questContentPosition: obj9[5], questContentRowIndex: obj9[6] } = adCreativeType);
+          obj1[5] = obj2;
+          tmp2Result3.trackAdContentEvent(obj1);
+          const tmp2Result4 = tmp2(tmp3[6]);
+        }
+      })(type);
+    } else if (tmp2(8450).AdUserActionType.CLICK_INTERNAL === type) {
+      (function handleClickInternalAction(type) {
+        const self = this;
+        const apply = closure_8.apply;
+        if (typeof apply === "unknown") {
+          let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+        } else {
+          applyArgumentsResult = apply(self, arguments);
+        }
+        return applyArgumentsResult;
+      })(type).catch(reportCaptureAdUserActionError);
+      const promise3 = (function handleClickInternalAction(type) {
+        const self = this;
+        const apply = closure_8.apply;
+        if (typeof apply === "unknown") {
+          let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+        } else {
+          applyArgumentsResult = apply(self, arguments);
+        }
+        return applyArgumentsResult;
+      })(type);
+    } else if (tmp2(8450).AdUserActionType.CLICK_EXTERNAL_ADVERTISER_CTA === type) {
+      (function handleClickExternalAdvertiserCtaAction(type) {
+        const self = this;
+        const apply = closure_9.apply;
+        if (typeof apply === "unknown") {
+          let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+        } else {
+          applyArgumentsResult = apply(self, arguments);
+        }
+        return applyArgumentsResult;
+      })(type).catch(reportCaptureAdUserActionError);
+      const promise2 = (function handleClickExternalAdvertiserCtaAction(type) {
+        const self = this;
+        const apply = closure_9.apply;
+        if (typeof apply === "unknown") {
+          let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+        } else {
+          applyArgumentsResult = apply(self, arguments);
+        }
+        return applyArgumentsResult;
+      })(type);
+    } else if (tmp2(8450).AdUserActionType.VIEW_INTERNAL_SURFACE_IMPRESSION === type) {
+      (function handleViewInternalSurfaceImpressionAction(type) {
+        const self = this;
+        const apply = closure_11.apply;
+        if (typeof apply === "unknown") {
+          let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+        } else {
+          applyArgumentsResult = apply(self, arguments);
+        }
+        return applyArgumentsResult;
+      })(type).catch(reportCaptureAdUserActionError);
+      const promise = (function handleViewInternalSurfaceImpressionAction(type) {
+        const self = this;
+        const apply = closure_11.apply;
+        if (typeof apply === "unknown") {
+          let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+        } else {
+          applyArgumentsResult = apply(self, arguments);
+        }
+        return applyArgumentsResult;
+      })(type);
+    } else if (tmp2(8450).AdUserActionType.VIEW_EXTERNAL_PAID_AD_PLACEMENT_IMPRESSION === type) {
+      handleViewImpression(type);
     }
-  } else if (require(8426) /* AdUserActionType */.AdUserActionType.CLICK_INTERNAL === type) {
-    (function handleClickInternalAction(type) {
-      return outer1_8(...arguments);
-    })(type).catch(reportCaptureAdUserActionError);
-    const promise3 = (function handleClickInternalAction(type) {
-      return outer1_8(...arguments);
-    })(type);
-  } else if (require(8426) /* AdUserActionType */.AdUserActionType.CLICK_EXTERNAL_ADVERTISER_CTA === type) {
-    (function handleClickExternalAdvertiserCtaAction(type) {
-      return outer1_9(...arguments);
-    })(type).catch(reportCaptureAdUserActionError);
-    const promise2 = (function handleClickExternalAdvertiserCtaAction(type) {
-      return outer1_9(...arguments);
-    })(type);
-  } else if (require(8426) /* AdUserActionType */.AdUserActionType.VIEW_INTERNAL_SURFACE_IMPRESSION === type) {
-    (function handleViewInternalSurfaceImpressionAction(type) {
-      return outer1_11(...arguments);
-    })(type).catch(reportCaptureAdUserActionError);
-    const promise = (function handleViewInternalSurfaceImpressionAction(type) {
-      return outer1_11(...arguments);
-    })(type);
-  } else if (require(8426) /* AdUserActionType */.AdUserActionType.VIEW_EXTERNAL_PAID_AD_PLACEMENT_IMPRESSION === type) {
-    handleViewImpression(type);
+  } catch (tmp13) {
+    reportCaptureAdUserActionError(tmp13);
   }
 };

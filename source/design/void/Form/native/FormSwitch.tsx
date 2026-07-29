@@ -1,20 +1,20 @@
-// Module ID: 7627
-// Function ID: 60852
+// Module ID: 7650
+// Function ID: 7651
 // Name: FormSwitch
-// Dependencies: [31, 27, 33, 4165, 689, 4101, 4011, 2]
+// Dependencies: [19, 17, 21, 4189, 712, 4125, 4035, 2]
 // Exports: default
 
-// Module 7627 (FormSwitch)
-import "result";
+// Module 7650 (FormSwitch)
+import "noop";
 import { Switch } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
 const require = arg1;
-_createForOfIteratorHelperLoose = { switch: { marginVertical: -5 } };
-_createForOfIteratorHelperLoose = { color: require("_createForOfIteratorHelperLoose").colors.REDESIGN_INPUT_CONTROL_SELECTED };
-_createForOfIteratorHelperLoose.track = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+createCacheKey = { switch: { marginVertical: -5 }, track: null };
+createCacheKey = { color: require("Themes").colors.REDESIGN_INPUT_CONTROL_SELECTED };
+createCacheKey[1] = createCacheKey;
+createCacheKey = createCacheKey.createStyles(createCacheKey);
 const result = require("jsxProd").fileFinishedImporting("design/void/Form/native/FormSwitch.tsx");
 
 export default function FormSwitch(value) {
@@ -33,33 +33,32 @@ export default function FormSwitch(value) {
   if (tmp3) {
     tmp3 = renderIosBackground;
   }
-  const tmp4 = _createForOfIteratorHelperLoose();
+  const tmp4 = createCacheKey();
   let color = value.tintColor;
-  if (null == color) {
+  if (color == null) {
     color = tmp4.track.color;
   }
   if (null == borderColor) {
-    let obj = require(4011) /* AccessibilityAnnouncer */;
-    if (obj.isThemeDark(tmp5)) {
-      borderColor = importDefault(689).unsafe_rawColors.PRIMARY_400;
+    let obj = require(4035) /* AccessibilityAnnouncer */;
+    if (obj.isThemeDark(tmp7)) {
+      borderColor = importDefault(712).unsafe_rawColors.PRIMARY_400;
     }
   }
-  obj = { accessible, trackColor: obj };
-  obj = { true: color, false: borderColor };
-  let tmp12;
+  obj = { accessible, trackColor: { true: color, false: borderColor }, ios_backgroundColor: null, value: null, disabled: null, style: null, onValueChange: null, accessibilityState: null, accessibilityLabel: null, accessibilityHint: null };
+  let tmp11;
   if (false === (undefined !== value && value)) {
     if (tmp3) {
-      tmp12 = borderColor;
+      tmp11 = borderColor;
     }
   }
-  obj.ios_backgroundColor = tmp12;
-  obj.value = undefined !== value && value;
-  obj.disabled = undefined !== disabled && disabled;
+  obj[2] = tmp11;
+  obj[3] = undefined !== value && value;
+  obj[4] = undefined !== disabled && disabled;
   const items = [tmp4.switch, style];
-  obj.style = items;
-  obj.onValueChange = onValueChange;
-  obj.accessibilityState = { disabled: undefined !== disabled && disabled, selected: undefined !== value && value };
-  obj.accessibilityLabel = accessibilityLabel;
-  obj.accessibilityHint = accessibilityHint;
-  return <Switch true={color} false={borderColor} />;
+  obj[5] = items;
+  obj[6] = onValueChange;
+  obj[7] = { disabled: undefined !== disabled && disabled, selected: undefined !== value && value };
+  obj[8] = accessibilityLabel;
+  obj[9] = accessibilityHint;
+  return <Switch accessible={accessible} trackColor={{ true: color, false: borderColor }} ios_backgroundColor={null} value={null} disabled={null} style={null} onValueChange={null} accessibilityState={null} accessibilityLabel={null} accessibilityHint={null} />;
 };

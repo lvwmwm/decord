@@ -1,23 +1,23 @@
-// Module ID: 15704
-// Function ID: 120886
+// Module ID: 15739
+// Function ID: 15740
 // Name: BurstReactionAnimationContainerInner
-// Dependencies: [57, 31, 27, 1345, 33, 4165, 689, 6077, 4134, 4135, 686, 4026, 4166, 9642, 1334, 1273, 6119, 4161, 1212, 3877, 2]
+// Dependencies: [32, 19, 17, 1369, 21, 4189, 712, 6095, 4158, 4159, 709, 4050, 4190, 9664, 1358, 1297, 6137, 4185, 1236, 3901, 2]
 // Exports: default
 
-// Module 15704 (BurstReactionAnimationContainerInner)
+// Module 15739 (BurstReactionAnimationContainerInner)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
-import get_ActivityIndicator from "get ActivityIndicator";
+import ManaContext from "ManaContext";
+import get_ActivityIndicator from "Text";
 import { ContentDismissActionType } from "ContentDismissActionType";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
 let StyleSheet;
-let closure_10;
-let closure_5;
+let c10;
+let c5;
+let c9;
 let closure_6;
-let closure_8;
-let closure_9;
+let metroImportAll;
 const require = arg1;
 function BurstReactionAnimationContainerInner() {
   function handleComponentFinish() {
@@ -25,145 +25,142 @@ function BurstReactionAnimationContainerInner() {
       dependencyMap(null);
     }
   }
-  function handleAnimationFinish(arg0, arg1) {
-    callback2(false);
-    closure_5.current = false;
-    if (null != arg0) {
-      arg0();
-    }
-  }
-  const _require = _createForOfIteratorHelperLoose();
-  let tmp = null;
-  const tmp2 = first1(React.useState(null), 2);
-  const first = tmp2[0];
-  const dependencyMap = tmp2[1];
-  const tmp4 = first1(React.useState(false), 2);
-  first1 = tmp4[0];
-  React = tmp4[1];
+  const _require = createCacheKey();
+  const tmp = first1(React.useState(null), 2);
+  const first = tmp[0];
+  const dependencyMap = tmp[1];
+  const tmp3 = first1(React.useState(false), 2);
+  first1 = tmp3[0];
+  React = tmp3[1];
   let closure_5 = React.useRef(false);
   const effect = React.useEffect(() => {
     function handleEffectReceived(channelId) {
-      outer1_2({ channelId: channelId.channelId, emoji: channelId.emoji, messageId: channelId.messageId });
-      outer1_4(true);
-      outer1_5.current = true;
-      const result = handleEffectReceived(4134).triggerHapticFeedback(first(4135).IMPACT_HEAVY);
+      dependencyMap({ channelId: channelId.channelId, emoji: channelId.emoji, messageId: channelId.messageId });
+      callback(true);
+      closure_5.current = true;
+      const result = handleEffectReceived(outer1_2[8]).triggerHapticFeedback(outer1_1(outer1_2[9]).IMPACT_HEAVY);
     }
-    const subscription = first(686).subscribe("BURST_REACTION_EFFECT_SEND", handleEffectReceived);
+    const subscription = first(709).subscribe("BURST_REACTION_EFFECT_SEND", handleEffectReceived);
     return () => {
-      first(686).unsubscribe("BURST_REACTION_EFFECT_SEND", handleEffectReceived);
+      first(709).unsubscribe("BURST_REACTION_EFFECT_SEND", handleEffectReceived);
     };
   }, []);
-  let obj = _require(4026);
+  let obj = _require(4050);
   let fn = function y() {
     if (null == first) {
       let obj = { opacity: 0 };
-      let tmp6 = obj;
     } else {
-      obj = {};
-      const tmp10 = callback(4166);
-      const withTiming = tmp10.withTiming;
+      obj = { opacity: null };
+      const tmp11 = callback(4190);
+      const withTiming = tmp11.withTiming;
       const obj1 = { duration: 300 };
       if (first1) {
-        obj.opacity = withTiming(1, obj1);
-        tmp6 = obj;
+        obj[0] = withTiming(1, obj1);
       } else {
         const fn = function n(arg0) {
           if (arg0) {
-            callback(table[11]).runOnJS(outer1_7)();
-            const obj = callback(table[11]);
+            outer1_0(outer1_2[11]).runOnJS(closure_6)();
+            const obj = outer1_0(outer1_2[11]);
           }
         };
-        obj = { runOnJS: tmp8(4026).runOnJS, handleComponentFinish };
+        obj = { runOnJS: null, handleComponentFinish: null };
+        obj[0] = callback(4050).runOnJS;
+        obj[1] = handleComponentFinish;
         fn.__closure = obj;
         fn.__workletHash = 9326347209552;
         fn.__initData = outer1_13;
-        obj.opacity = withTiming(0, obj1, "respect-motion-settings", fn);
-        tmp6 = obj;
+        obj[0] = withTiming(0, obj1, "respect-motion-settings", fn);
       }
-      tmp8 = callback;
     }
-    return tmp6;
+    return obj;
   };
-  obj = { animationData: first, showAnimation: first1, withTiming: _require(4166).withTiming, runOnJS: _require(4026).runOnJS, handleComponentFinish };
+  obj = { animationData: first, showAnimation: first1, withTiming: _require(4190).withTiming, runOnJS: _require(4050).runOnJS, handleComponentFinish };
   fn.__closure = obj;
   fn.__workletHash = 12044515783370;
   fn.__initData = closure_12;
-  let closure_6 = obj.useAnimatedStyle(fn);
+  let closure_7 = obj.useAnimatedStyle(fn);
+  let tmp8 = null;
   if (null != first) {
-    obj = {};
-    let items = [_require(1334).DismissibleContent.SUPER_REACTIONS_MOBILE_FULLSCREEN_TAP_TO_DISMISS];
-    obj.contentTypes = items;
-    obj.children = function children(markAsDismissed) {
+    obj = { contentTypes: null, children: null };
+    let items = [_require(1358).DismissibleContent.SUPER_REACTIONS_MOBILE_FULLSCREEN_TAP_TO_DISMISS];
+    obj[0] = items;
+    obj[1] = function children(markAsDismissed) {
       markAsDismissed = markAsDismissed.markAsDismissed;
-      let obj = { style: markAsDismissed.fill };
-      obj = { style: items };
-      items = [markAsDismissed.fill, closure_6];
-      obj = {
-        activeOpacity: callback(6077).BACKDROP_OPACITY,
-        onPress() {
-          outer1_8(() => outer1_0(handleComponentFinish.UNKNOWN));
-        },
-        style: markAsDismissed.fill
+      let obj = { style: markAsDismissed.fill, children: null };
+      obj = { style: items, children: null };
+      items = [markAsDismissed.fill, closure_7];
+      obj = { activeOpacity: null, onPress: null, style: null, children: null };
+      obj[0] = callback(6095).BACKDROP_OPACITY;
+      obj[1] = function onPress() {
+        outer1_4(false);
+        outer1_5.current = false;
+        markAsDismissed(constants.UNKNOWN);
       };
-      const items1 = [handleAnimationFinish(closure_6, { style: markAsDismissed.background }), , ];
-      const obj2 = { style: markAsDismissed.fill };
-      let tmp7 = null;
+      obj[2] = markAsDismissed.fill;
+      const items1 = [outer1_8(handleComponentFinish, { style: markAsDismissed.background }), , ];
+      const obj2 = { style: markAsDismissed.fill, children: null };
+      let tmpResult = null;
       if (first1) {
-        const obj3 = { isFullscreen: true, channelId: null, messageId: null, emoji: null, loop: false, withFadeOut: false };
-        ({ channelId: obj6.channelId, messageId: obj6.messageId, emoji: obj6.emoji } = first);
-        obj3.onComplete = function onComplete() {
-          outer1_8();
+        const obj3 = { isFullscreen: true, channelId: null, messageId: null, emoji: null, loop: false, withFadeOut: false, onComplete: null };
+        ({ channelId: obj6[1], messageId: obj6[2], emoji: obj6[3] } = first);
+        obj3[6] = function onComplete() {
+          callback(false);
+          closure_5.current = false;
         };
-        tmp7 = handleAnimationFinish(first(6119), obj3);
+        tmpResult = tmp(first(6137), obj3);
       }
-      obj2.children = tmp7;
-      items1[1] = handleAnimationFinish(closure_6, obj2);
-      let tmp12 = markAsDismissed.visibleContent === callback(1334).DismissibleContent.SUPER_REACTIONS_MOBILE_FULLSCREEN_TAP_TO_DISMISS;
-      if (tmp12) {
-        const obj4 = {};
-        const obj5 = { style: markAsDismissed.dismissTextContainer, variant: "text-sm/medium" };
-        const intl = callback(1212).intl;
-        obj5.children = intl.string(callback(1212).t.QpPMih);
-        const items2 = [handleAnimationFinish(callback(4161).Text, obj5), ];
-        const obj6 = { style: markAsDismissed.dismissTextBackground };
-        items2[1] = handleAnimationFinish(closure_6, obj6);
-        obj4.children = items2;
-        tmp12 = outer1_10(outer1_9, obj4);
+      obj2[1] = tmpResult;
+      items1[1] = outer1_8(handleComponentFinish, obj2);
+      let tmp6Result = markAsDismissed.visibleContent === tmp2(1358).DismissibleContent.SUPER_REACTIONS_MOBILE_FULLSCREEN_TAP_TO_DISMISS;
+      if (tmp6Result) {
+        const obj4 = { children: null };
+        const obj5 = { style: null, variant: "text-sm/medium", children: null };
+        obj5[0] = tmp4.dismissTextContainer;
+        const intl = tmp2(1236).intl;
+        obj5[2] = intl.string(tmp2(1236).t.QpPMih);
+        const items2 = [tmp(tmp2(4185).Text, obj5), ];
+        const obj6 = { style: null };
+        obj6[0] = tmp4.dismissTextBackground;
+        items2[1] = tmp(tmp8, obj6);
+        obj4[0] = items2;
+        tmp6Result = tmp6(outer1_9, obj4);
       }
-      items1[2] = tmp12;
-      obj.children = items1;
-      obj.children = outer1_10(closure_5, obj);
-      obj.children = handleAnimationFinish(first(4026).View, obj);
-      return handleAnimationFinish(callback(1273).OverlayView, obj);
+      items1[2] = tmp6Result;
+      obj[3] = items1;
+      obj[1] = outer1_10(closure_5, obj);
+      obj[1] = outer1_8(first(4050).View, obj);
+      return outer1_8(callback(1297).OverlayView, obj);
     };
-    tmp = handleAnimationFinish(first(9642), obj);
-    let tmp10 = first(9642);
+    tmp8 = callback(first(9664), obj);
+    let tmp11 = first(9664);
   }
-  return tmp;
+  return tmp8;
 }
-({ TouchableOpacity: closure_5, View: closure_6, StyleSheet } = get_ActivityIndicator);
-({ jsx: closure_8, Fragment: closure_9, jsxs: closure_10 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = {};
+({ TouchableOpacity: c5, View: closure_6, StyleSheet } = get_ActivityIndicator);
+({ jsx: metroImportAll, Fragment: c9, jsxs: c10 } = jsxProd);
+createCacheKey = { background: null, fill: null, dismissTextContainer: null, dismissTextBackground: null };
+createCacheKey = {};
 const merged = Object.assign(StyleSheet.absoluteFillObject);
-_createForOfIteratorHelperLoose["backgroundColor"] = require("_createForOfIteratorHelperLoose").colors.BLACK;
-_createForOfIteratorHelperLoose["opacity"] = require("_generateAnimationSource").BACKDROP_OPACITY;
-_createForOfIteratorHelperLoose.background = _createForOfIteratorHelperLoose;
+createCacheKey.backgroundColor = require("Themes").colors.BLACK;
+createCacheKey.opacity = require("_generateAnimationSource").BACKDROP_OPACITY;
+createCacheKey[0] = createCacheKey;
 let obj1 = {};
 const merged1 = Object.assign(StyleSheet.absoluteFillObject);
-obj1["flex"] = 1;
-obj1["alignItems"] = "center";
-obj1["justifyContent"] = "center";
-_createForOfIteratorHelperLoose.fill = obj1;
-_createForOfIteratorHelperLoose.dismissTextContainer = { position: "absolute", bottom: 48, zIndex: 1 };
-let obj2 = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SURFACE_HIGHEST, borderRadius: require("_createForOfIteratorHelperLoose").radii.round, position: "absolute", bottom: -600, height: 700, width: 700 };
-_createForOfIteratorHelperLoose.dismissTextBackground = obj2;
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+obj1.flex = 1;
+obj1.alignItems = "center";
+obj1.justifyContent = "center";
+createCacheKey[1] = obj1;
+createCacheKey[2] = { position: "absolute", bottom: 48, zIndex: 1 };
+createCacheKey[3] = { backgroundColor: require("Themes").colors.BACKGROUND_SURFACE_HIGHEST, borderRadius: require("Themes").radii.round, position: "absolute", bottom: -600, height: 700, width: 700 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
 let closure_12 = { code: "function BurstReactionAnimationContainerTsx1(){const{animationData,showAnimation,withTiming,runOnJS,handleComponentFinish}=this.__closure;if(animationData==null){return{opacity:0};}if(!showAnimation){return{opacity:withTiming(0,{duration:300},'respect-motion-settings',function(finished){if(finished)runOnJS(handleComponentFinish)();})};}return{opacity:withTiming(1,{duration:300})};}" };
 let closure_13 = { code: "function BurstReactionAnimationContainerTsx2(finished){const{runOnJS,handleComponentFinish}=this.__closure;if(finished)runOnJS(handleComponentFinish)();}" };
+let obj2 = { backgroundColor: require("Themes").colors.BACKGROUND_SURFACE_HIGHEST, borderRadius: require("Themes").radii.round, position: "absolute", bottom: -600, height: 700, width: 700 };
 let result = require("get ActivityIndicator").fileFinishedImporting("modules/messages/native/burst_reactions/BurstReactionAnimationContainer.tsx");
 
 export default function BurstReactionAnimationContainer() {
-  const obj = { theme: importDefault(689).themes.DARKER, children: callback(BurstReactionAnimationContainerInner, {}) };
-  return callback(require(3877) /* ManaContext */.ThemeContextProvider, obj);
+  const obj = { theme: null, children: null };
+  obj[0] = importDefault(712).themes.DARKER;
+  obj[1] = callback(BurstReactionAnimationContainerInner, {});
+  return callback(require(3901) /* ManaContext */.ThemeContextProvider, obj);
 };

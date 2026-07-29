@@ -1,75 +1,75 @@
-// Module ID: 14238
-// Function ID: 109389
+// Module ID: 14260
+// Function ID: 14261
 // Name: pressable
-// Dependencies: [1850, 33, 6310, 4506, 1212, 14239, 1935, 566, 477, 10099, 6606, 2]
+// Dependencies: [1874, 21, 6331, 4529, 1236, 14261, 1959, 589, 500, 10120, 6627, 2]
 
-// Module 14238 (pressable)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 14260 (pressable)
+import mergeGuildAvatar from "mergeGuildAvatar";
 import { jsx } from "jsxProd";
 import createToggle from "createToggle";
 
 const require = arg1;
 createToggle = {
   useTitle() {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(require(1212) /* getSystemLocale */.t.s9h22P);
+    const intl = require(1236) /* getSystemLocale */.intl;
+    return intl.string(require(1236) /* getSystemLocale */.t.s9h22P);
   },
   parent: null,
   IconComponent: require("NitroWheelIcon").NitroWheelIcon,
   onPress: function handleNitroRestoreSettingPress() {
-    let obj = importDefault(6310);
+    let obj = importDefault(6331);
     const result = obj.restoreAndApplyPurchases(true);
     result.then((arg0) => {
       if (arg0.length > 0) {
-        let obj = outer1_1(outer1_2[3]);
-        obj = {};
-        const intl = outer1_0(outer1_2[4]).intl;
-        obj.body = intl.string(outer1_0(outer1_2[4]).t.pnRpIb);
+        let obj = callback2(paths[3]);
+        obj = { body: null };
+        const intl = callback(paths[4]).intl;
+        obj[0] = intl.string(callback(paths[4]).t.pnRpIb);
         obj.show(obj);
       } else {
-        obj = {};
-        const intl2 = outer1_0(outer1_2[4]).intl;
-        obj.title = intl2.string(outer1_0(outer1_2[4]).t.WXkaoM);
-        const intl3 = outer1_0(outer1_2[4]).intl;
-        obj.body = intl3.string(outer1_0(outer1_2[4]).t.YW7lqS);
-        outer1_1(outer1_2[3]).show(obj);
-        const obj3 = outer1_1(outer1_2[3]);
+        obj = { title: null, body: null };
+        const intl2 = callback(paths[4]).intl;
+        obj[0] = intl2.string(callback(paths[4]).t.WXkaoM);
+        const intl3 = callback(paths[4]).intl;
+        obj[1] = intl3.string(callback(paths[4]).t.YW7lqS);
+        callback2(paths[3]).show(obj);
+        const obj3 = callback2(paths[3]);
       }
     }, () => {
-      let obj = outer1_1(outer1_2[3]);
-      obj = {};
-      const intl = outer1_0(outer1_2[4]).intl;
-      obj.title = intl.string(outer1_0(outer1_2[4]).t.POsVOt);
-      const intl2 = outer1_0(outer1_2[4]).intl;
-      obj.body = intl2.string(outer1_0(outer1_2[4]).t["XbE/Ez"]);
+      let obj = callback2(paths[3]);
+      obj = { title: null, body: null };
+      const intl = callback(paths[4]).intl;
+      obj[0] = intl.string(callback(paths[4]).t.POsVOt);
+      const intl2 = callback(paths[4]).intl;
+      obj[1] = intl2.string(callback(paths[4]).t["XbE/Ez"]);
       obj.show(obj);
     });
     obj = {
       importer() {
-        return outer1_0(outer1_2[6])(outer1_2[5], outer1_2.paths).then((arg0) => {
+        return callback(paths[6])(paths[5], paths.paths).then((arg0) => {
           let closure_0 = arg0.default;
           return (arg0) => {
             const merged = Object.assign(arg0);
-            return outer3_4(closure_0, {});
+            return outer1_4(closure_0, {});
           };
         });
       }
     };
-    importDefault(4506).openLazy(obj);
+    importDefault(4529).openLazy(obj);
   },
   withArrow: true,
   usePredicate: function useHasPremiumRestoreSubscriptionSetting() {
-    const items = [_isNativeReflectConstruct];
-    const stateFromStores = require(566) /* initialize */.useStateFromStores(items, () => outer1_3.getCurrentUser());
-    let tmp2 = null != stateFromStores && stateFromStores.verified;
-    if (tmp2) {
-      tmp2 = !require(477) /* set */.isAndroid();
-      const obj2 = require(477) /* set */;
+    const items = [mergeGuildAvatar];
+    const stateFromStores = require(589) /* initialize */.useStateFromStores(items, () => currentUser.getCurrentUser());
+    let tmp4 = null != stateFromStores && stateFromStores.verified;
+    if (tmp4) {
+      tmp4 = !require(500) /* set */.isAndroid();
+      const tmpResult = require(500) /* set */;
     }
-    return tmp2;
+    return tmp4;
   }
 };
 createToggle = createToggle.createPressable(createToggle);
-let result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/user_settings/defs/native/PremiumRestoreSubscriptionSetting.tsx");
+let result = require("applyAppleReceipt").fileFinishedImporting("modules/user_settings/defs/native/PremiumRestoreSubscriptionSetting.tsx");
 
 export default createToggle;

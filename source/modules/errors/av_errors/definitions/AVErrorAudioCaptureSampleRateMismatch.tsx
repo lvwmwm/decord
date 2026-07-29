@@ -1,59 +1,60 @@
-// Module ID: 16650
-// Function ID: 129698
+// Module ID: 16686
+// Function ID: 16687
 // Name: AVErrorAudioCaptureSampleRateMismatchDefinition
-// Dependencies: [4250, 4212, 4237, 664, 8828, 16638, 2]
+// Dependencies: [4274, 4236, 4261, 687, 8852, 16674, 2]
 
-// Module 16650 (AVErrorAudioCaptureSampleRateMismatchDefinition)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_3 from "_isNativeReflectConstruct";
-import closure_4 from "_isNativeReflectConstruct";
+// Module 16686 (AVErrorAudioCaptureSampleRateMismatchDefinition)
+import updateAveragedStatsHelper from "updateAveragedStatsHelper";
+import _detectH265HardwareDecode from "_detectH265HardwareDecode";
+import createRTCConnection from "createRTCConnection";
 
 const require = arg1;
 let closure_5 = 10 * require("set").Millis.SECOND;
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/errors/av_errors/definitions/AVErrorAudioCaptureSampleRateMismatch.tsx");
+const result = require("createRTCConnection").fileFinishedImporting("modules/errors/av_errors/definitions/AVErrorAudioCaptureSampleRateMismatch.tsx");
 
 export const AVErrorAudioCaptureSampleRateMismatchDefinition = {
   getActiveErrors() {
-    const rTCConnection = store.getRTCConnection();
-    let durationSeconds;
-    if (null != rTCConnection) {
-      durationSeconds = rTCConnection.getDurationSeconds();
+    let obj = rTCConnection;
+    rTCConnection = rTCConnection.getRTCConnection();
+    let num;
+    if (rTCConnection != null) {
+      num = rTCConnection.getDurationSeconds();
     }
-    let num = 0;
-    if (null != durationSeconds) {
-      num = durationSeconds;
+    if (num == null) {
+      num = 0;
     }
     if (num >= 30) {
       const _performance = performance;
       if (nowResult - lastAudioInputDeviceChangeTimestamp.getLastAudioInputDeviceChangeTimestamp() >= closure_5) {
-        const rTCConnection1 = store.getRTCConnection();
+        const rTCConnection1 = obj.getRTCConnection();
         let mediaEngineConnectionId;
-        if (null != rTCConnection1) {
+        if (rTCConnection1 != null) {
           mediaEngineConnectionId = rTCConnection1.getMediaEngineConnectionId();
         }
         connectionStats = connectionStats.getConnectionStats(mediaEngineConnectionId);
-        let prop;
-        if (null != connectionStats) {
+        let num2;
+        if (connectionStats != null) {
           const outbound = connectionStats.stats.rtp.outbound;
           const found = outbound.find((type) => "audio" === type.type);
-          if (null != found) {
-            prop = found.sampleRateMismatchPercent;
+          if (found != null) {
+            num2 = found.sampleRateMismatchPercent;
           }
         }
-        let num2 = 0;
-        if (null != prop) {
-          num2 = prop;
+        if (num2 == null) {
+          num2 = 0;
         }
         const _Math = Math;
-        let tmp7;
+        let tmp5;
         if (Math.abs(num2) > 30) {
-          const obj = { type: require(8828) /* validateUniqueErrorCodes */.AVError.AUDIO_CAPTURE_SAMPLE_RATE_MISMATCH, audioCaptureSampleRateMismatchPercent: num2 };
-          const merged = Object.assign(require(16638) /* getCommonErrorContext */.getVoiceChannelErrorContext());
+          obj = { type: null, audioCaptureSampleRateMismatchPercent: null };
+          obj[0] = require(8852) /* mapped */.AVError.AUDIO_CAPTURE_SAMPLE_RATE_MISMATCH;
+          obj[1] = num2;
+          const merged = Object.assign(require(16674) /* getVoiceChannelErrorContext */.getVoiceChannelErrorContext());
           const items = [obj];
-          tmp7 = items;
-          const obj3 = require(16638) /* getCommonErrorContext */;
+          tmp5 = items;
+          const obj4 = require(16674) /* getVoiceChannelErrorContext */;
         }
-        return tmp7;
+        return tmp5;
       }
       nowResult = performance.now();
     }

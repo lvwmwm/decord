@@ -1,11 +1,11 @@
-// Module ID: 13691
-// Function ID: 105044
+// Module ID: 13712
+// Function ID: 13713
 // Name: UserProfileEditFormTextField
-// Dependencies: [31, 33, 7621, 6706, 2]
+// Dependencies: [19, 21, 7644, 6727, 2]
 // Exports: default
 
-// Module 13691 (UserProfileEditFormTextField)
-import "result";
+// Module 13712 (UserProfileEditFormTextField)
+import "noop";
 import { jsx } from "jsxProd";
 
 const require = arg1;
@@ -23,25 +23,25 @@ export default function UserProfileEditFormTextField(inputRef) {
     numberOfLines = 1;
   }
   inputRef = inputRef.inputRef;
-  let obj = { label: 0, description: 0, errorMessage: 0, containerStyle: 0, numberOfLines: 0, inputRef: 0 };
-  Object.setPrototypeOf(null);
-  const merged = Object.assign(inputRef, obj);
-  obj = { label, description, errorMessage, containerStyle };
+  const merged = Object.assign(inputRef, Object.create(null));
+  let obj = { label, description, errorMessage, containerStyle, status: null };
   let str;
   if (null != errorMessage) {
     str = "error";
   }
-  obj.status = str;
+  obj[4] = str;
   const merged1 = Object.assign(merged);
   if (numberOfLines > 1) {
-    obj = { ref: inputRef };
+    obj = { ref: null };
+    obj[0] = inputRef;
     const merged2 = Object.assign(obj);
-    let tmp10 = jsx(require(7621) /* TextArea */.TextArea, { ref: inputRef });
+    let tmp9 = jsx(require(7644) /* TextArea */.TextArea, { ref: null });
   } else {
-    const obj1 = { ref: inputRef };
+    obj = { ref: null };
+    obj[0] = inputRef;
     const merged3 = Object.assign(obj);
-    obj1["isClearable"] = true;
-    tmp10 = jsx(require(6706) /* TextInput */.TextInput, { ref: inputRef });
+    obj.isClearable = true;
+    tmp9 = jsx(require(6727) /* TextInput */.TextInput, { ref: null });
   }
-  return tmp10;
+  return tmp9;
 };

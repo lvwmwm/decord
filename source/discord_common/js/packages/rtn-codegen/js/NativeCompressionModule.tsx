@@ -1,9 +1,9 @@
-// Module ID: 12688
-// Function ID: 98060
+// Module ID: 12710
+// Function ID: 12711
 // Name: enforcing
-// Dependencies: [27, 2]
+// Dependencies: [17, 2]
 
-// Module 12688 (enforcing)
+// Module 12710 (enforcing)
 import { TurboModuleRegistry } from "get ActivityIndicator";
 
 const enforcing = TurboModuleRegistry.getEnforcing("NativeCompressionModule");

@@ -1,65 +1,83 @@
-// Module ID: 10021
-// Function ID: 77391
-// Name: participantHasVideo
-// Dependencies: [1194, 4212, 4183, 566, 2]
-// Exports: useCanRenderParticipantVideo
+// Module ID: 10043
+// Function ID: 10044
+// Name: canRenderParticipantVideo
+// Dependencies: [1218, 4236, 4207, 589, 2]
+// Exports: default, useCanRenderParticipantVideo
 
-// Module 10021 (participantHasVideo)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_3 from "_isNativeReflectConstruct";
+// Module 10043 (canRenderParticipantVideo)
+import fetchFingerprint from "fetchFingerprint";
+import _detectH265HardwareDecode from "_detectH265HardwareDecode";
 import ParticipantTypes from "ParticipantTypes";
 
-let closure_4;
-let closure_5;
+let c4;
+let c5;
 let closure_6;
 const require = arg1;
-function participantHasVideo(type) {
-  let tmp = type;
-  if (type.type === constants.ACTIVITY) {
-    return tmp2;
-  } else if (callback(tmp)) {
-    tmp = null;
-    let tmp6 = null != tmp.streamId;
-  } else {
-    const voiceState = tmp.voiceState;
-    let selfVideo;
-    if (null != voiceState) {
-      selfVideo = voiceState.selfVideo;
-    }
-    tmp6 = null != selfVideo && selfVideo;
-  }
-}
-function canRenderParticipantVideo(value, outer1_4) {
+function canRenderParticipantVideo(participant, outer1_4) {
   let obj = outer1_4;
   if (outer1_4 === undefined) {
-    obj = closure_3;
+    obj = _detectH265HardwareDecode;
   }
-  let tmp = null != value;
+  let tmp = null != participant;
   if (tmp) {
-    const tmp3 = !participantHasVideo(value);
-    let tmp4 = !tmp3;
-    if (!tmp3) {
-      let tmp6 = !callback(value);
-      if (!tmp6) {
-        tmp6 = value.user.id !== id.getId();
-      }
+    if (participant.type === constants.ACTIVITY) {
+      let tmp6 = tmp3;
       if (tmp6) {
-        tmp6 = !callback2(value) || !obj.isLocalVideoDisabled(value.id);
-        const tmp9 = !callback2(value) || !obj.isLocalVideoDisabled(value.id);
+        const tmp8 = callback(participant);
+        let tmp9 = !tmp8;
+        if (tmp8) {
+          tmp9 = participant.user.id !== id.getId();
+        }
+        if (tmp9) {
+          const tmp12 = callback2(participant);
+          let tmp13 = !tmp12;
+          if (tmp12) {
+            tmp13 = !obj.isLocalVideoDisabled(participant.id);
+          }
+          tmp9 = tmp13;
+        }
+        tmp6 = tmp9;
       }
-      tmp4 = tmp6;
+      tmp = tmp6;
+    } else if (callback(participant)) {
+      let flag = null != participant.streamId;
+    } else {
+      const voiceState = participant.voiceState;
+      flag = undefined;
+      if (voiceState != null) {
+        flag = voiceState.selfVideo;
+      }
+      if (flag == null) {
+        flag = false;
+      }
     }
-    tmp = tmp4;
   }
   return tmp;
 }
-({ ParticipantTypes: closure_4, isStreamParticipant: closure_5, isUserParticipant: closure_6 } = ParticipantTypes);
+({ ParticipantTypes: c4, isStreamParticipant: c5, isUserParticipant: closure_6 } = ParticipantTypes);
 const result = require("ParticipantTypes").fileFinishedImporting("modules/video_calls/participantHasVideo.tsx");
 
-export default participantHasVideo;
+export default function participantHasVideo(type) {
+  let streamId = type;
+  if (type.type === constants.ACTIVITY) {
+    return tmp;
+  } else if (callback(streamId)) {
+    streamId = streamId.streamId;
+    let flag = null != streamId;
+  } else {
+    const voiceState = streamId.voiceState;
+    flag = undefined;
+    if (voiceState != null) {
+      flag = voiceState.selfVideo;
+    }
+    if (flag == null) {
+      flag = false;
+    }
+  }
+};
 export { canRenderParticipantVideo };
 export const useCanRenderParticipantVideo = function useCanRenderParticipantVideo(stateFromStores) {
   const _require = stateFromStores;
-  const items = [closure_3];
-  return _require(566).useStateFromStores(items, () => outer1_8(closure_0, outer1_3));
+  const items = [_detectH265HardwareDecode];
+  return _require(589).useStateFromStores(items, () => outer1_7(closure_0, outer1_3));
 };

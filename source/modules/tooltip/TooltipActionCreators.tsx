@@ -1,14 +1,14 @@
-// Module ID: 9582
-// Function ID: 74609
+// Module ID: 9604
+// Function ID: 9605
 // Name: dispatcher
-// Dependencies: [686, 2]
+// Dependencies: [709, 2]
 
-// Module 9582 (dispatcher)
+// Module 9604 (dispatcher)
 const result = require("set").fileFinishedImporting("modules/tooltip/TooltipActionCreators.tsx");
 
 export default {
   acknowledgeTooltip(GIF_PICKER_TOOLTIP) {
-    let obj = importDefault(686);
+    let obj = importDefault(709);
     obj = { type: "TOOLTIP_ACKNOWLEDGE", tooltip: GIF_PICKER_TOOLTIP };
     obj.dispatch(obj);
   },
@@ -16,7 +16,7 @@ export default {
     if (flag === undefined) {
       flag = false;
     }
-    let obj = importDefault(686);
+    let obj = importDefault(709);
     obj = { type: "TOOLTIP_SHOW_ATTEMPT", tooltip: closure_0, ignoreMaxShownLimit: flag };
     obj.dispatch(obj);
   }

@@ -1,58 +1,53 @@
-// Module ID: 11422
-// Function ID: 88585
-// Dependencies: [31, 27, 3793, 4181, 653, 33, 4165, 689, 477, 8801, 4101, 4011, 10218, 624, 4998, 4992, 4985, 11423, 4161, 1212, 4578, 4689, 4693, 2]
+// Module ID: 11446
+// Function ID: 11447
+// Dependencies: [19, 17, 3817, 4205, 676, 21, 4189, 712, 500, 8825, 4125, 4035, 10239, 647, 5020, 5014, 5007, 11447, 4185, 1236, 4600, 4711, 4715, 2]
 
-// Module 11422
-import importAllResult from "result";
-import get_ActivityIndicator from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_7 from "_isNativeReflectConstruct";
+// Module 11446
+import importAllResult from "getSystemLocale";
+import get_ActivityIndicator from "useShowConnectedUserLimit";
+import getUncachedChannelPermissions from "getUncachedChannelPermissions";
+import updateVoiceState from "updateVoiceState";
 import ME from "ME";
-import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import { jsx } from "StageIcon";
+import createCacheKey from "createCacheKey";
 
-let closure_4;
-let closure_5;
-let closure_8;
-let closure_9;
+let c4;
+let c5;
+let c9;
+let metroImportAll;
 const require = arg1;
-({ View: closure_4, Pressable: closure_5 } = get_ActivityIndicator);
-({ NOOP: closure_8, Permissions: closure_9 } = ME);
-let closure_11 = _createForOfIteratorHelperLoose.createStyles((arg0, arg1) => {
-  let obj = {};
-  obj = { borderRadius: importDefault(689).radii.xxl, paddingHorizontal: importDefault(689).space.PX_8, paddingVertical: importDefault(689).space.PX_4, marginVertical: -importDefault(689).space.PX_4, backgroundColor: importDefault(689).colors.CONTROL_SECONDARY_BACKGROUND_DEFAULT, minHeight: 28, justifyContent: "center" };
+let c3 = importAllResult;
+({ View: c4, Pressable: c5 } = get_ActivityIndicator);
+({ NOOP: metroImportAll, Permissions: c9 } = ME);
+let closure_11 = createCacheKey.createStyles((arg0, arg1) => {
+  let obj = { borderRadius: importDefault(712).radii.xxl, paddingHorizontal: importDefault(712).space.PX_8, paddingVertical: importDefault(712).space.PX_4, marginVertical: -importDefault(712).space.PX_4, backgroundColor: importDefault(712).colors.CONTROL_SECONDARY_BACKGROUND_DEFAULT, minHeight: 28, justifyContent: "center", elevation: null, shadowRadius: 4, shadowOffset: null, shadowColor: null, shadowOpacity: null, borderColor: null, borderWidth: 1 };
   let num = 1;
   if (arg0) {
     num = 0;
   }
-  obj.elevation = num;
-  obj.shadowRadius = 4;
-  obj.shadowOffset = { width: 0, height: 1 };
-  obj.shadowColor = importDefault(689).colors.BLACK;
+  obj[7] = num;
+  obj[9] = { width: 0, height: 1 };
+  obj[10] = importDefault(712).colors.BLACK;
   let num2 = 0.14;
   if (arg1) {
     num2 = 0.08;
   }
-  obj.shadowOpacity = num2;
+  obj[11] = num2;
   let str = "rgba(255, 255, 255, 0.14)";
   if (arg1) {
     str = "rgba(0, 0, 0, 0.08)";
   }
-  obj.borderColor = str;
-  obj.borderWidth = 1;
-  obj.joinButton = obj;
-  obj.joinButtonContent = { width: "auto", alignItems: "center" };
-  obj = { tintColor: importDefault(689).colors.WHITE };
-  obj.joinButtonIconActive = obj;
-  obj.joinButtonIconInactive = { tintColor: importDefault(689).colors.INTERACTIVE_TEXT_DEFAULT };
-  const obj2 = { marginTop: null, alignSelf: "center", maxWidth: 64 };
-  const obj1 = { tintColor: importDefault(689).colors.INTERACTIVE_TEXT_DEFAULT };
+  obj = { joinButton: obj, joinButtonContent: { width: "auto", alignItems: "center" }, joinButtonIconActive: null, joinButtonIconInactive: null, joinButtonText: null };
+  obj[12] = str;
+  obj = { tintColor: tmp(712).colors.WHITE };
+  obj[2] = obj;
+  obj[3] = { tintColor: importDefault(712).colors.INTERACTIVE_TEXT_DEFAULT };
+  const obj1 = { tintColor: importDefault(712).colors.INTERACTIVE_TEXT_DEFAULT };
   let num3 = 0;
-  if (obj6.isAndroid()) {
+  if (obj5.isAndroid()) {
     num3 = -2;
   }
-  obj2.marginTop = num3;
-  obj.joinButtonText = obj2;
+  obj[4] = { marginTop: num3, alignSelf: "center", maxWidth: 64 };
   return obj;
 });
 const memoResult = importAllResult.memo(function VocalChannelJoinButton(channel) {
@@ -67,116 +62,116 @@ const memoResult = importAllResult.memo(function VocalChannelJoinButton(channel)
   if (small === undefined) {
     small = false;
   }
-  const tmp = voiceStates(8801)();
-  let obj = channel(4011);
-  let intl = callback(tmp, obj.isThemeLight(voiceStates(4101)()));
-  let obj1 = channel(10218);
+  let VJlc0S = dependencyMap;
+  const tmp = voiceStates(8825)();
+  let obj = channel(4035);
+  let joinButtonText = callback(tmp, obj.isThemeLight(voiceStates(4125)()));
+  let obj1 = channel(10239);
   const isConnectedToVoiceChannel = obj1.useIsConnectedToVoiceChannel(channel);
-  let obj2 = channel(624);
-  const items = [_isNativeReflectConstruct];
+  let obj2 = channel(647);
+  const items = [getUncachedChannelPermissions];
   const stateFromStores = obj2.useStateFromStores(items, () => !outer1_6.can(outer1_9.CONNECT, channel));
-  let obj3 = channel(4998);
-  const stageParticipantsCount = obj3.useStageParticipantsCount(channel.id, channel(4992).StageChannelParticipantNamedIndex.AUDIENCE);
+  let obj3 = channel(5020);
+  const stageParticipantsCount = obj3.useStageParticipantsCount(channel.id, channel(5014).StageChannelParticipantNamedIndex.AUDIENCE);
   const isGuildStageVoiceResult = channel.isGuildStageVoice();
-  let obj4 = channel(4985);
-  const tmp2 = voiceStates(4101)();
-  let obj5 = channel(624);
-  const items1 = [closure_7];
-  const stateFromStores1 = obj5.useStateFromStores(items1, () => outer1_7.hasVideo(channel.id));
+  const tmp2 = voiceStates(4125)();
+  const obj5 = channel(5007);
+  let tmp3Result = tmp3(647);
+  const items1 = [updateVoiceState];
+  const stateFromStores1 = tmp3Result.useStateFromStores(items1, () => outer1_7.hasVideo(channel.id));
   const sum = stageParticipantsCount + voiceStates.length;
-  let num = 0;
-  if (null != sum) {
-    num = sum;
-  }
   const items2 = [voiceStates];
   const memo = importAllResult.useMemo(() => {
     let found;
-    if (null != voiceStates) {
+    if (voiceStates != null) {
       found = voiceStates.find((voiceState) => voiceState.voiceState.selfStream);
     }
     return null != found;
   }, items2);
   let tmp12 = stateFromStores1;
   if (!stateFromStores1) {
-    tmp12 = tmp7;
+    tmp12 = tmp8;
   }
-  tmp7 = obj4.useStageHasMedia(channel.id) && isGuildStageVoiceResult;
-  obj = { channel, video: tmp12 };
-  const connectedUserLimit = channel(11423).useConnectedUserLimit(obj);
-  const obj7 = channel(11423);
-  obj = { channel, video: tmp12, userCount: num };
-  let connectedUserLimitFormatted = channel(11423).useConnectedUserLimitFormatted(obj);
-  let tmp15 = !stateFromStores && !isConnectedToVoiceChannel && tmp10 != connectedUserLimitFormatted && num > 0;
+  tmp3Result = tmp3(11447);
+  const connectedUserLimit = tmp3Result.useConnectedUserLimit({ channel, video: tmp12 });
+  tmp8 = channel(5007).useStageHasMedia(channel.id) && isGuildStageVoiceResult;
+  let connectedUserLimitFormatted = channel(11447).useConnectedUserLimitFormatted({ channel, video: tmp12, userCount: sum });
+  let tmp15 = !stateFromStores;
+  if (!stateFromStores) {
+    tmp15 = !isConnectedToVoiceChannel;
+  }
   if (tmp15) {
-    tmp15 = num >= connectedUserLimit / 2 + 1;
+    tmp15 = null != connectedUserLimitFormatted;
+  }
+  if (tmp15) {
+    tmp15 = sum > 0;
+  }
+  if (tmp15) {
+    tmp15 = sum >= connectedUserLimit / 2 + 1;
   }
   if (isConnectedToVoiceChannel) {
     return null;
   } else if (small) {
-    obj1 = { accessibilityRole: "none", pointerEvents: "none", onPress: closure_8, accessible: false, accessibilityElementsHidden: true, importantForAccessibility: "no", style: intl.joinButton };
-    obj2 = { style: intl.joinButtonContent };
-    obj3 = { style: null, color: "interactive-text-default", variant: "text-xs/semibold", lineClamp: 1 };
-    intl = intl.joinButtonText;
-    obj3.style = intl;
-    if (tmp10 == connectedUserLimitFormatted) {
-      intl = channel(1212).intl;
-      connectedUserLimitFormatted = intl.string(channel(1212).t.VJlc0S);
+    obj = { accessibilityRole: "none", pointerEvents: "none", onPress: null, accessible: false, accessibilityElementsHidden: true, importantForAccessibility: "no", style: null, children: null };
+    obj[2] = closure_8;
+    obj[6] = joinButtonText.joinButton;
+    obj = { style: null, children: null };
+    obj[0] = joinButtonText.joinButtonContent;
+    obj1 = { style: null, color: "interactive-text-default", variant: "text-xs/semibold", lineClamp: 1, children: null };
+    joinButtonText = joinButtonText.joinButtonText;
+    obj1[0] = joinButtonText;
+    if (connectedUserLimitFormatted == null) {
+      const intl2 = tmp3(1236).intl;
+      VJlc0S = tmp3(1236).t.VJlc0S;
+      connectedUserLimitFormatted = intl2.string(VJlc0S);
     }
-    obj3.children = connectedUserLimitFormatted;
-    obj2.children = tmp16(channel(4161).Text, obj3);
-    obj1.children = tmp16(closure_4, obj2);
-    let tmp16Result = tmp16(closure_5, obj1);
-    const tmp30 = closure_5;
-    const tmp32 = closure_4;
-  } else {
-    obj4 = {};
-    if (tmp15) {
-      obj4.text = connectedUserLimitFormatted;
-      if (!noIcon) {
-        if (!isConnectedToVoiceChannel) {
-          if (!memo) {
-            let joinButtonIconActive = intl.joinButtonIconInactive;
-          }
-          const items3 = [joinButtonIconActive, { marginRight: 3, marginLeft: -1 }];
-          let tmp26 = channel;
-          if (isGuildStageVoiceResult) {
-            let VoiceNormalIcon = tmp26(4689).StageIcon;
-          } else {
-            VoiceNormalIcon = tmp26(4693).VoiceNormalIcon;
-          }
-          tmp26 = jsx;
-          obj5 = { size: "xs", style: items3 };
-          <VoiceNormalIcon size="xs" style={items3} />;
+    obj1[4] = connectedUserLimitFormatted;
+    obj[1] = tmp17(tmp3(4185).Text, obj1);
+    obj[7] = tmp17(closure_4, obj);
+    let tmp17Result = tmp17(closure_5, obj);
+    const tmp26 = closure_5;
+    const tmp28 = closure_4;
+  } else if (tmp15) {
+    obj2 = { text: null, icon: null, size: "sm", variant: null, onPress: null, pointerEvents: "none", accessible: false, accessibilityElementsHidden: true, importantForAccessibility: "no" };
+    obj2[0] = connectedUserLimitFormatted;
+    if (!noIcon) {
+      if (!isConnectedToVoiceChannel) {
+        if (!memo) {
+          let joinButtonIconActive = joinButtonText.joinButtonIconInactive;
         }
-        joinButtonIconActive = intl.joinButtonIconActive;
+        const items3 = [joinButtonIconActive, { marginRight: 3, marginLeft: -1 }];
+        if (isGuildStageVoiceResult) {
+          let VoiceNormalIcon = tmp3(4711).StageIcon;
+        } else {
+          VoiceNormalIcon = tmp3(4715).VoiceNormalIcon;
+        }
+        obj3 = { size: "xs", style: null };
+        obj3[1] = items3;
+        tmp17Result = tmp17(VoiceNormalIcon, obj3);
       }
-      obj4.icon = undefined;
-      obj4.size = "sm";
-      let str4 = "tertiary";
-      if (memo) {
-        str4 = "destructive";
-      }
-      obj4.variant = str4;
-      obj4.onPress = closure_8;
-      obj4.pointerEvents = "none";
-      obj4.accessible = false;
-      obj4.accessibilityElementsHidden = true;
-      obj4.importantForAccessibility = "no";
-      tmp16Result = tmp16(tmp19, obj4);
+      joinButtonIconActive = joinButtonText.joinButtonIconActive;
+    }
+    obj2[1] = undefined;
+    let str2 = "tertiary";
+    if (memo) {
+      str2 = "destructive";
+    }
+    obj2[3] = str2;
+    obj2[4] = closure_8;
+    tmp17Result = tmp17(tmp18, obj2);
+  } else {
+    const intl = tmp3(1236).intl;
+    let str = intl.string;
+    let toUpperCase = tmp3(1236).t;
+    if (memo) {
+      str = str(toUpperCase.dI3q4h);
+      toUpperCase = str.toUpperCase;
+      let formatted = toUpperCase();
     } else {
-      const intl2 = channel(1212).intl;
-      let str = intl2.string;
-      let toUpperCase = channel(1212).t;
-      if (memo) {
-        str = str(toUpperCase.dI3q4h);
-        toUpperCase = str.toUpperCase;
-        let formatted = toUpperCase();
-      } else {
-        formatted = str(toUpperCase.VJlc0S);
-      }
+      formatted = str(toUpperCase.VJlc0S);
     }
   }
 });
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/channel_list_v2/native/components/VocalChannelJoinButton.tsx");
+const result = require("getUncachedChannelPermissions").fileFinishedImporting("modules/channel_list_v2/native/components/VocalChannelJoinButton.tsx");
 
 export default memoResult;

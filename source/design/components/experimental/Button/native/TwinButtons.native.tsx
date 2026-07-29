@@ -1,44 +1,43 @@
-// Module ID: 8214
-// Function ID: 65726
+// Module ID: 8238
+// Function ID: 8239
 // Name: TwinButtons
-// Dependencies: [31, 27, 33, 4165, 689, 4584, 4578, 2]
+// Dependencies: [19, 17, 21, 4189, 712, 4606, 4600, 2]
 // Exports: TwinButtons
 
-// Module 8214 (TwinButtons)
-import result from "result";
+// Module 8238 (TwinButtons)
+import noop from "noop";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let require = arg1;
-let closure_6 = _createForOfIteratorHelperLoose.createStyles((arg0) => {
-  let obj = {};
-  obj = {};
+const require = arg1;
+let closure_6 = createCacheKey.createStyles((arg0) => {
   let str = "row";
   if (arg0) {
     str = "column";
   }
-  obj.flexDirection = str;
-  const space = importDefault(689).space;
-  obj.gap = arg0 ? space.PX_8 : space.PX_12;
-  obj.container = obj;
-  obj.button = { flex: 1 };
-  return obj;
+  const container = { flexDirection: str, gap: null };
+  const space = importDefault(712).space;
+  container[1] = arg0 ? space.PX_8 : space.PX_12;
+  return { container, button: { flex: 1 } };
 });
 const result = require("jsxProd").fileFinishedImporting("design/components/experimental/Button/native/TwinButtons.native.tsx");
 
 export const TwinButtons = function TwinButtons(children) {
-  let obj = require(4584) /* getFontScale */;
+  let _require;
+  let obj = _require(4606);
   let tmp = callback(obj.useFontScale() > 1.2);
-  require = tmp;
+  _require = tmp;
   obj = {
     style: tmp.container,
     children: Children.map(children.children, (type) => {
       let tmp = null;
       if (outer1_3.isValidElement(type)) {
         tmp = null;
-        if (type.type === tmp(outer1_2[6]).Button) {
-          const obj = { style: tmp.button, children: type };
+        if (type.type === _undefined(outer1_2[6]).Button) {
+          const obj = { style: null, children: null };
+          obj[0] = _undefined.button;
+          obj[1] = type;
           tmp = outer1_5(outer1_4, obj);
         }
       }
@@ -50,8 +49,10 @@ export const TwinButtons = function TwinButtons(children) {
     let tmp = null;
     if (outer1_3.isValidElement(type)) {
       tmp = null;
-      if (type.type === tmp(outer1_2[6]).Button) {
-        const obj = { style: tmp.button, children: type };
+      if (type.type === _undefined(outer1_2[6]).Button) {
+        const obj = { style: null, children: null };
+        obj[0] = _undefined.button;
+        obj[1] = type;
         tmp = outer1_5(outer1_4, obj);
       }
     }

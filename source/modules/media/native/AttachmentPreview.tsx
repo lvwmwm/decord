@@ -1,39 +1,39 @@
-// Module ID: 9832
-// Function ID: 76194
+// Module ID: 9854
+// Function ID: 9855
 // Name: AttachmentIcon
-// Dependencies: [31, 27, 33, 4165, 689, 9833, 9834, 9835, 9836, 9837, 9838, 9839, 9840, 9841, 9842, 9843, 9844, 9845, 9846, 4705, 4161, 477, 5119, 1273, 9847, 8118, 2]
+// Dependencies: [19, 17, 21, 4189, 712, 9855, 9856, 9857, 9858, 9859, 9860, 9861, 9862, 9863, 9864, 9865, 9866, 9867, 9868, 4727, 4185, 500, 5141, 1297, 9869, 8142, 2]
 // Exports: default
 
-// Module 9832 (AttachmentIcon)
-import importAllResult from "result";
-import get_ActivityIndicator from "get ActivityIndicator";
-import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+// Module 9854 (AttachmentIcon)
+import importAllResult from "getUploadFileSizeSum";
+import get_ActivityIndicator from "registerAsset";
+import jsxProd from "set";
+import createCacheKey from "createCacheKey";
 
-let closure_4;
-let closure_5;
+let c4;
+let c5;
 let closure_6;
-let closure_7;
+let error;
 const require = arg1;
 class AttachmentIcon {
   constructor(arg0) {
     fileName = global.fileName;
     items = [];
     items[0] = fileName;
-    tmp = c8();
+    tmp = jsxs();
     obj = {
       style: tmp.attachmentFileIcon,
-      source: Object.useMemo(() => {
+      source: defineProperty.useMemo(() => {
             const obj = fileName(outer1_2[19]);
-            let str = "";
-            if (null != fileName) {
-              str = fileName;
+            let str = fileName;
+            if (fileName == null) {
+              str = "";
             }
-            let tmp = outer1_9[obj.classifyFileName(obj, str)];
-            if (null == tmp) {
-              tmp = outer1_1(outer1_2[16]);
+            let tmp2 = outer1_9[obj.classifyFileName(obj, str)];
+            if (tmp2 == null) {
+              tmp2 = outer1_1(outer1_2[16]);
             }
-            return tmp;
+            return tmp2;
           }, items)
     };
     return jsx(Image, obj);
@@ -43,58 +43,61 @@ function FilenameText(fileName) {
   fileName = fileName.fileName;
   const tmp = callback3();
   let obj = /(?:\.([^.]+))?$/;
-  let str = "";
-  if (null != fileName) {
-    str = fileName;
+  let str = fileName;
+  if (fileName == null) {
+    str = "";
   }
   const match = obj.exec(str);
-  obj = {};
   let tmp5 = null != fileName;
   if (tmp5) {
     tmp5 = "" !== fileName;
   }
   if (tmp5) {
-    obj = { style: tmp.attachmentFileName, ellipsizeMode: "middle", lineClamp: 1, variant: "text-xs/medium", color: "mobile-text-heading-primary", children: fileName };
-    tmp5 = callback(require(4161) /* Text */.Text, obj);
+    obj = { style: null, ellipsizeMode: "middle", lineClamp: 1, variant: "text-xs/medium", color: "mobile-text-heading-primary", children: null };
+    obj[0] = tmp.attachmentFileName;
+    obj[5] = fileName;
+    tmp5 = callback(require(4185) /* Text */.Text, obj);
   }
   const items = [tmp5, ];
-  const obj1 = { style: tmp.attachmentFileName, lineClamp: 1, variant: "text-xs/medium", color: "text-muted" };
-  let str2 = "UNKNOWN";
+  obj = { style: tmp.attachmentFileName, lineClamp: 1, variant: "text-xs/medium", color: "text-muted", children: null };
+  let str3 = "UNKNOWN";
   if (null != match) {
-    str2 = "UNKNOWN";
+    str3 = "UNKNOWN";
     if (null != match[1]) {
-      str2 = match[1].toUpperCase();
-      const str3 = match[1];
+      str3 = match[1].toUpperCase();
+      const str4 = match[1];
     }
   }
-  obj1.children = str2;
-  items[1] = callback(require(4161) /* Text */.Text, obj1);
-  obj.children = items;
-  return closure_7(closure_5, obj);
+  const obj1 = { children: null };
+  obj[4] = str3;
+  items[1] = callback(require(4185) /* Text */.Text, obj);
+  obj1[0] = items;
+  return closure_7(closure_5, obj1);
 }
 function DefaultAttachmentPreview(fileName) {
   let borderRadius;
   let maxFileWidth;
   fileName = fileName.fileName;
   ({ maxFileWidth, borderRadius } = fileName);
-  const obj = {};
+  const obj = { style: null, children: null };
   const items = [callback3().fileInfoAttachmentPreviewFile, { maxWidth: maxFileWidth, borderRadius }];
-  obj.style = items;
+  obj[0] = items;
   const items1 = [callback(AttachmentIcon, { fileName }), callback(FilenameText, { fileName })];
-  obj.children = items1;
+  obj[1] = items1;
   return callback2(closure_5, obj);
 }
-({ Image: closure_4, View: closure_5 } = get_ActivityIndicator);
-({ jsx: closure_6, jsxs: closure_7 } = jsxProd);
-let obj = {};
-obj = { flexDirection: "row", alignItems: "center", overflow: "hidden", borderRadius: require("_createForOfIteratorHelperLoose").radii.sm, height: 75, padding: 12, flex: 1, gap: require("_createForOfIteratorHelperLoose").space.PX_8 };
-obj.fileInfoAttachmentPreviewFile = obj;
-obj.attachmentFileIcon = { height: 32, width: 24 };
-obj.attachmentFileName = { paddingRight: 4, paddingLeft: 4, maxWidth: 136 };
-obj.videoIcon = { position: "absolute", top: 0, left: 0, right: 0, bottom: 0, alignItems: "center", justifyContent: "center" };
-let closure_8 = _createForOfIteratorHelperLoose.createStyles(obj);
-_createForOfIteratorHelperLoose = { archive: require("registerAsset"), acrobat: require("registerAsset"), ae: require("registerAsset"), ai: require("registerAsset"), audio: require("registerAsset"), code: require("registerAsset"), document: require("registerAsset"), image: require("registerAsset"), photoshop: require("registerAsset"), sketch: require("registerAsset"), spreadsheet: require("registerAsset"), unknown: require("registerAsset"), video: require("registerAsset"), webcode: require("registerAsset") };
-let closure_10 = importAllResult.memo((borderRadius) => {
+let c3 = importAllResult;
+({ Image: c4, View: c5 } = get_ActivityIndicator);
+({ jsx: closure_6, jsxs: error } = jsxProd);
+let obj = { fileInfoAttachmentPreviewFile: null, attachmentFileIcon: null, attachmentFileName: null, videoIcon: null };
+obj = { flexDirection: "row", alignItems: "center", overflow: "hidden", borderRadius: require("Themes").radii.sm, height: 75, padding: 12, flex: 1, gap: require("Themes").space.PX_8 };
+obj[0] = obj;
+obj[1] = { height: 32, width: 24 };
+obj[2] = { paddingRight: 4, paddingLeft: 4, maxWidth: 136 };
+obj[3] = { position: "absolute", top: 0, left: 0, right: 0, bottom: 0, alignItems: "center", justifyContent: "center" };
+let closure_8 = createCacheKey.createStyles(obj);
+createCacheKey = { archive: require("registerAsset"), acrobat: require("registerAsset"), ae: require("registerAsset"), ai: require("registerAsset"), audio: require("registerAsset"), code: require("registerAsset"), document: require("registerAsset"), image: require("registerAsset"), photoshop: require("registerAsset"), sketch: require("registerAsset"), spreadsheet: require("registerAsset"), unknown: require("registerAsset"), video: require("registerAsset"), webcode: require("registerAsset") };
+let closure_13 = importAllResult.memo((borderRadius) => {
   let fileName;
   let height;
   let style;
@@ -112,42 +115,41 @@ let closure_10 = importAllResult.memo((borderRadius) => {
     isMatch = obj2.test(fileName);
   }
   if (isMatch) {
-    let isIOSResult = require(477) /* set */.isIOS();
+    let isIOSResult = require(500) /* set */.isIOS();
     if (isIOSResult) {
       isIOSResult = uri.startsWith("ph://");
     }
     if (!isIOSResult) {
-      let isAndroidResult = require(477) /* set */.isAndroid();
+      let isAndroidResult = tmp2(500).isAndroid();
       if (isAndroidResult) {
         isAndroidResult = uri.startsWith("content://");
       }
       isIOSResult = isAndroidResult;
-      const obj5 = require(477) /* set */;
+      const tmp2Result = tmp2(500);
     }
     isMatch = isIOSResult;
-    const obj4 = require(477) /* set */;
+    const obj4 = require(500) /* set */;
+    tmp2 = require;
   }
-  obj = { style: items };
+  obj = { style: items, children: null };
   items = [obj, style, { overflow: "hidden" }];
   if (isMatch) {
-    const obj1 = {};
+    const obj1 = { style: null, source: null, resizeMode: "cover", enableAnimation: true };
     const items1 = [obj, style];
-    obj1.style = items1;
-    obj1.source = obj;
-    obj1.resizeMode = "cover";
-    obj1.enableAnimation = true;
-    obj.children = tmp10(importDefault(5119), obj1);
-    let tmp13 = obj;
+    obj1[0] = items1;
+    obj1[1] = obj;
+    obj[1] = tmp6(importDefault(5141), obj1);
+    let tmp10 = obj;
   } else {
-    obj2 = {};
+    obj2 = { style: null, source: null, localImageSource: null };
     const items2 = [obj, style];
-    obj2.style = items2;
-    obj2.source = obj;
-    obj2.localImageSource = obj;
-    obj.children = tmp10(require(1273) /* Button */.ThumbnailImage, obj2);
-    tmp13 = obj;
+    obj2[0] = items2;
+    obj2[1] = obj;
+    obj2[2] = obj;
+    obj[1] = tmp6(require(1297) /* Button */.ThumbnailImage, obj2);
+    tmp10 = obj;
   }
-  return closure_6(closure_5, tmp13);
+  return closure_6(closure_5, tmp10);
 });
 const result = require("jsxProd").fileFinishedImporting("modules/media/native/AttachmentPreview.tsx");
 
@@ -168,7 +170,7 @@ export default function AttachmentPreview(height) {
   }
   ({ fileName, borderRadius, maxFileWidth } = height);
   if (borderRadius === undefined) {
-    borderRadius = importDefault(689).radii.sm;
+    borderRadius = importDefault(712).radii.sm;
   }
   let flag = height.showPlayOnVideoPreview;
   if (flag === undefined) {
@@ -176,50 +178,86 @@ export default function AttachmentPreview(height) {
   }
   let defaultPreview = height.defaultPreview;
   if (defaultPreview === undefined) {
-    let obj = { fileName, maxFileWidth, borderRadius };
+    let obj = { fileName: null, maxFileWidth: null, borderRadius: null };
+    obj[0] = fileName;
+    obj[1] = maxFileWidth;
+    obj[2] = borderRadius;
     defaultPreview = callback(DefaultAttachmentPreview, obj);
   }
   const style = height.style;
-  let tmp5 = callback3();
+  let videoIcon = callback3();
   if (height.isImage) {
-    obj = { uri, width, height: num, borderRadius, style, fileName };
-    let tmp10 = callback(closure_10, obj);
+    obj = { uri: null, width: null, height: null, borderRadius: null, style: null, fileName: null };
+    obj[0] = uri;
+    obj[1] = width;
+    obj[2] = num;
+    obj[3] = borderRadius;
+    obj[4] = style;
+    obj[5] = fileName;
+    let tmp9 = callback(closure_13, obj);
   } else {
     if (!isVideo) {
-      let obj2 = require(477) /* set */;
-      tmp10 = defaultPreview;
-      if (isVideo) {
-        let obj3 = require(477) /* set */;
-        tmp10 = defaultPreview;
-        if (obj3.isIOS()) {
-          obj = { style };
-          let obj1 = { style: null, source: null, muted: true, paused: true, resizeMode: "cover", preventsDisplaySleepDuringVideoPlayback: false };
-          obj2 = { height: num, width };
-          obj1.style = obj2;
-          obj3 = { uri };
-          obj1.source = obj3;
-          obj.children = callback(require(8118) /* _isNativeReflectConstruct */.VideoComponent, obj1);
-          tmp10 = callback(closure_5, obj);
-        }
+      let obj2 = require(500) /* set */;
+      if (obj2.isIOS()) {
+        let tmp6 = tmp8;
+        let CirclePlayIcon = tmp7;
       }
+      tmp9 = defaultPreview;
+      if (isVideo) {
+        tmp9 = defaultPreview;
+        if (tmp7Result.isIOS()) {
+          obj = { style: null, children: null };
+          obj[0] = style;
+          let obj1 = { style: null, source: null, muted: true, paused: true, resizeMode: "cover", preventsDisplaySleepDuringVideoPlayback: false };
+          obj2 = { height: null, width: null };
+          obj2[0] = num;
+          obj2[1] = width;
+          obj1[0] = obj2;
+          const obj3 = { uri: null };
+          obj3[0] = uri;
+          obj1[1] = obj3;
+          obj[1] = callback(tmp7(8142).VideoComponent, obj1);
+          tmp9 = callback(closure_5, obj);
+        }
+        tmp7Result = tmp7(500);
+      }
+      tmp8 = dependencyMap;
     } else {
-      obj1 = require(477) /* set */;
+      tmp6 = dependencyMap;
+      obj1 = require(500) /* set */;
+      CirclePlayIcon = require;
     }
     if (flag) {
-      const obj4 = { style };
-      const obj5 = { uri, width, height: num, borderRadius, style, fileName };
-      const items = [callback(closure_10, obj5), ];
-      const obj6 = { style: tmp5.videoIcon };
-      tmp5 = callback(require(9847) /* CirclePlayIcon */.CirclePlayIcon, { size: "md", color: "white", secondaryColor: "black" });
-      obj6.children = tmp5;
+      const obj4 = { style: null, children: null };
+      obj4[0] = style;
+      const obj5 = { uri: null, width: null, height: null, borderRadius: null, style: null, fileName: null };
+      obj5[0] = uri;
+      obj5[1] = width;
+      obj5[2] = num;
+      obj5[3] = borderRadius;
+      obj5[4] = style;
+      obj5[5] = fileName;
+      const items = [callback(closure_13, obj5), ];
+      const obj6 = { style: null, children: null };
+      videoIcon = videoIcon.videoIcon;
+      obj6[0] = videoIcon;
+      CirclePlayIcon = CirclePlayIcon(9869).CirclePlayIcon;
+      tmp6 = callback(CirclePlayIcon, { size: "md", color: "white", secondaryColor: "black" });
+      obj6[1] = tmp6;
       items[1] = callback(closure_5, obj6);
-      obj4.children = items;
-      let tmp20 = callback2(closure_5, obj4);
+      obj4[1] = items;
+      let tmp14 = callback2(closure_5, obj4);
     } else {
-      const obj7 = { uri, width, height: num, borderRadius, style, fileName };
-      tmp20 = callback(closure_10, obj7);
+      const obj7 = { uri: null, width: null, height: null, borderRadius: null, style: null, fileName: null };
+      obj7[0] = uri;
+      obj7[1] = width;
+      obj7[2] = num;
+      obj7[3] = borderRadius;
+      obj7[4] = style;
+      obj7[5] = fileName;
+      tmp14 = callback(closure_13, obj7);
     }
   }
-  return tmp10;
+  return tmp9;
 };
 export { AttachmentIcon };

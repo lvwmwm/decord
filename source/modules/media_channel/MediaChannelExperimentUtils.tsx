@@ -1,33 +1,23 @@
-// Module ID: 8249
-// Function ID: 65927
+// Module ID: 8273
+// Function ID: 8274
 // Name: useGuildEligibleForMediaChannels
-// Dependencies: [653, 2]
+// Dependencies: [676, 2]
 // Exports: useGuildEligibleForMediaChannels
 
-// Module 8249 (useGuildEligibleForMediaChannels)
+// Module 8273 (useGuildEligibleForMediaChannels)
 import { GuildFeatures } from "ME";
 
 const result = require("set").fileFinishedImporting("modules/media_channel/MediaChannelExperimentUtils.tsx");
 
 export const useGuildEligibleForMediaChannels = function useGuildEligibleForMediaChannels(stateFromStores) {
   let id;
-  if (null != stateFromStores) {
+  if (stateFromStores != null) {
     id = stateFromStores.id;
   }
   if (null == id) {
     return false;
   } else {
     const features = stateFromStores.features;
-    let hasItem = features.has(GuildFeatures.CREATOR_MONETIZABLE);
-    if (!hasItem) {
-      hasItem = features.has(GuildFeatures.CREATOR_MONETIZABLE_PROVISIONAL);
-    }
-    if (hasItem) {
-      hasItem = features.has(GuildFeatures.COMMUNITY);
-    }
-    if (!hasItem) {
-      hasItem = features.has(GuildFeatures.INTERNAL_EMPLOYEE_ONLY);
-    }
-    return hasItem;
+    return (features.has(GuildFeatures.CREATOR_MONETIZABLE) || features.has(GuildFeatures.CREATOR_MONETIZABLE_PROVISIONAL)) && features.has(GuildFeatures.COMMUNITY) || features.has(GuildFeatures.INTERNAL_EMPLOYEE_ONLY);
   }
 };

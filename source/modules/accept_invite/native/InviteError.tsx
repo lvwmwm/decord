@@ -1,135 +1,138 @@
-// Module ID: 11798
-// Function ID: 91486
+// Module ID: 11823
+// Function ID: 11824
 // Name: InviteErrorBase
-// Dependencies: [31, 27, 653, 33, 4165, 689, 4011, 4101, 11799, 11800, 11801, 1212, 4161, 4578, 1392, 1273, 11802, 5548, 1921, 2]
+// Dependencies: [19, 17, 676, 21, 4189, 712, 4035, 4125, 11824, 11825, 11826, 1236, 4185, 4600, 1416, 1297, 11827, 5566, 1945, 2]
 // Exports: default
 
-// Module 11798 (InviteErrorBase)
-import "result";
-import get_ActivityIndicator from "get ActivityIndicator";
+// Module 11823 (InviteErrorBase)
+import "set";
+import get_ActivityIndicator from "GuildIconSizes";
 import ME from "ME";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_10;
-let closure_3;
-let closure_4;
-let closure_5;
+let c10;
+let c3;
+let c4;
+let c5;
+let c9;
 let closure_6;
-let closure_7;
-let closure_8;
-let closure_9;
+let error;
+let metroImportAll;
 const require = arg1;
 function InviteErrorBase(invite) {
   let inviteError;
   let require;
   ({ onPressClose: require, inviteError } = invite);
-  const tmp = _createForOfIteratorHelperLoose();
-  let obj = require(4011) /* AccessibilityAnnouncer */;
-  if (obj.isThemeDark(importDefault(4101)())) {
-    let tmp4 = 11799;
-  } else {
-    tmp4 = 11800;
-  }
-  let obj1 = require(11801) /* getDescriptiveInviteError */;
+  const tmp = createCacheKey();
+  let obj = require(4035) /* AccessibilityAnnouncer */;
+  const tmp4 = importDefault;
+  const tmp4Result = importDefault(obj.isThemeDark(importDefault(4125)()) ? 11824 : 11825);
   let code;
-  if (null != inviteError) {
+  if (inviteError != null) {
     code = inviteError.code;
   }
-  const descriptiveInviteError = obj1.getDescriptiveInviteError(code);
+  const descriptiveInviteError = require(11826) /* getDescriptiveInviteError */.getDescriptiveInviteError(code);
   if (invite.invite.state === constants3.BANNED) {
-    const intl2 = require(1212) /* getSystemLocale */.intl;
-    let stringResult = intl2.string(require(1212) /* getSystemLocale */.t["GzD/aa"]);
+    const intl2 = tmp2(1236).intl;
+    let stringResult = intl2.string(tmp2(1236).t["GzD/aa"]);
   } else {
     stringResult = undefined;
-    if (null != descriptiveInviteError) {
+    if (descriptiveInviteError != null) {
       stringResult = descriptiveInviteError.description;
     }
-    if (null == stringResult) {
-      const intl = require(1212) /* getSystemLocale */.intl;
-      stringResult = intl.string(require(1212) /* getSystemLocale */.t.FWkU6P);
+    if (stringResult == null) {
+      const intl = tmp2(1236).intl;
+      stringResult = intl.string(tmp2(1236).t.FWkU6P);
     }
   }
-  obj = {};
-  obj = { style: tmp.expiredImage, source: importDefault(tmp4) };
+  obj = { style: tmp.expiredImage, source: tmp4Result };
   const items = [callback(closure_3, obj), , , ];
-  obj1 = { style: tmp.expiredTitle, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary" };
+  obj = { style: tmp.expiredTitle, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: null };
   let title;
-  if (null != descriptiveInviteError) {
+  if (descriptiveInviteError != null) {
     title = descriptiveInviteError.title;
   }
-  if (null == title) {
-    const intl3 = require(1212) /* getSystemLocale */.intl;
-    title = intl3.string(require(1212) /* getSystemLocale */.t.u9zxnX);
+  if (title == null) {
+    const intl3 = tmp2(1236).intl;
+    title = intl3.string(tmp2(1236).t.u9zxnX);
   }
-  obj1.children = title;
-  items[1] = callback(require(4161) /* Text */.Text, obj1);
-  const obj2 = { style: tmp.expiredBody, variant: "text-sm/medium", color: "text-default", children: stringResult };
-  items[2] = callback(require(4161) /* Text */.Text, obj2);
-  const obj3 = { variant: "primary", size: "lg" };
-  const intl4 = require(1212) /* getSystemLocale */.intl;
-  obj3.text = intl4.string(require(1212) /* getSystemLocale */.t.wcqOoF);
-  obj3.onPress = function handlePressClose() {
+  const obj1 = { children: null };
+  obj[3] = title;
+  function handlePressClose() {
     callback();
-  };
-  items[3] = callback(require(4578) /* Button */.Button, obj3);
-  obj.children = items;
-  return closure_10(closure_9, obj);
+  }
+  items[1] = callback(require(4185) /* Text */.Text, obj);
+  items[2] = callback(require(4185) /* Text */.Text, { style: tmp.expiredBody, variant: "text-sm/medium", color: "text-default", children: stringResult });
+  const obj3 = { variant: "primary", size: "lg", text: null, onPress: null };
+  const intl4 = tmp2(1236).intl;
+  obj3[2] = intl4.string(require(1236) /* getSystemLocale */.t.wcqOoF);
+  obj3[3] = handlePressClose;
+  items[3] = callback(require(4600) /* Button */.Button, obj3);
+  obj1[0] = items;
+  return closure_10(closure_9, obj1);
 }
 function InviteDisabledError(onPressClose) {
   onPressClose = onPressClose.onPressClose;
-  const tmp = _createForOfIteratorHelperLoose();
+  const tmp = createCacheKey();
   const guild = onPressClose.invite.guild;
   if (null == guild) {
     return null;
   } else {
-    let obj = importDefault(1392);
-    obj = {};
-    ({ id: obj2.id, icon: obj2.icon } = guild);
-    obj.size = 64;
-    obj.canAnimate = false;
-    obj = {};
-    const obj1 = { style: tmp.disabledView };
-    const guildIconURL = obj.getGuildIconURL(obj);
-    const obj2 = { style: tmp.disabledPauseIcon, source: importDefault(11802) };
-    const items = [callback(onPressClose(1273).Icon, obj2), ];
-    const obj3 = { style: tmp.guildIcon, icon: guildIconURL, size: onPressClose(5548).GuildIconSizes.XLARGE };
-    items[1] = callback(importDefault(5548), obj3);
-    obj1.children = items;
-    const items1 = [callback2(closure_4, obj1), , , ];
-    const obj4 = { style: tmp.disabledTitle, variant: "heading-xl/semibold", color: "text-feedback-critical" };
-    const intl = onPressClose(1212).intl;
-    obj4.children = intl.string(onPressClose(1212).t.jlLX2Z);
-    items1[1] = callback(onPressClose(4161).Text, obj4);
-    const obj5 = { style: tmp.disabledBody, variant: "text-md/normal", color: "text-default" };
-    const intl2 = onPressClose(1212).intl;
-    const obj6 = {};
-    const tmp11 = importDefault(5548);
-    obj6.articleLink = importDefault(1921).getArticleURL(constants2.INVITE_DISABLED);
-    obj5.children = intl2.format(onPressClose(1212).t.RXSeLl, obj6);
-    items1[2] = callback(onPressClose(4161).Text, obj5);
-    const obj7 = { variant: "primary", size: "lg" };
-    const intl3 = onPressClose(1212).intl;
-    obj7.text = intl3.string(onPressClose(1212).t["yD/zkn"]);
-    obj7.onPress = function handlePressClose() {
+    function handlePressClose() {
       onPressClose();
-    };
-    items1[3] = callback(onPressClose(4578).Button, obj7);
-    obj.children = items1;
+    }
+    let obj = importDefault(1416);
+    obj = { id: null, icon: null, size: 64, canAnimate: false };
+    ({ id: obj2[0], icon: obj2[1] } = guild);
+    obj = { children: null };
+    const obj1 = { style: null, children: null };
+    obj1[0] = tmp.disabledView;
+    const guildIconURL = obj.getGuildIconURL(obj);
+    const obj2 = { style: null, source: null };
+    obj2[0] = tmp.disabledPauseIcon;
+    obj2[1] = importDefault(11827);
+    const items = [callback(onPressClose(1297).Icon, obj2), ];
+    const obj3 = { style: null, icon: null, size: null };
+    obj3[0] = tmp.guildIcon;
+    obj3[1] = guildIconURL;
+    obj3[2] = onPressClose(5566).GuildIconSizes.XLARGE;
+    items[1] = callback(importDefault(5566), obj3);
+    obj1[1] = items;
+    const items1 = [callback2(closure_4, obj1), , , ];
+    const obj4 = { style: null, variant: "heading-xl/semibold", color: "text-feedback-critical", children: null };
+    obj4[0] = tmp.disabledTitle;
+    const intl = onPressClose(1236).intl;
+    obj4[3] = intl.string(onPressClose(1236).t.jlLX2Z);
+    items1[1] = callback(onPressClose(4185).Text, obj4);
+    const obj5 = { style: null, variant: "text-md/normal", color: "text-default", children: null };
+    obj5[0] = tmp.disabledBody;
+    const intl2 = onPressClose(1236).intl;
+    const obj6 = { articleLink: null };
+    const tmp10 = importDefault(5566);
+    obj6[0] = importDefault(1945).getArticleURL(constants2.INVITE_DISABLED);
+    obj5[3] = intl2.format(onPressClose(1236).t.RXSeLl, obj6);
+    items1[2] = callback(onPressClose(4185).Text, obj5);
+    const obj7 = { variant: "primary", size: "lg", text: null, onPress: null };
+    const intl3 = onPressClose(1236).intl;
+    obj7[2] = intl3.string(onPressClose(1236).t["yD/zkn"]);
+    obj7[3] = handlePressClose;
+    items1[3] = callback(onPressClose(4600).Button, obj7);
+    obj[0] = items1;
     return callback2(closure_9, obj);
   }
 }
-({ Image: closure_3, View: closure_4 } = get_ActivityIndicator);
-({ AbortCodes: closure_5, HelpdeskArticles: closure_6, InviteStates: closure_7 } = ME);
-({ jsx: closure_8, Fragment: closure_9, jsxs: closure_10 } = jsxProd);
-_createForOfIteratorHelperLoose = { expiredImage: { marginTop: 32, marginBottom: 32 }, expiredTitle: { marginBottom: 8, backgroundColor: "transparent", textAlign: "center" }, expiredBody: { backgroundColor: "transparent", marginBottom: 24 }, disabledView: { justifyContent: "center", alignItems: "center" } };
-_createForOfIteratorHelperLoose = { position: "absolute", alignSelf: "center", tintColor: require("_createForOfIteratorHelperLoose").colors.WHITE, width: 42, height: 42 };
-_createForOfIteratorHelperLoose.disabledPauseIcon = _createForOfIteratorHelperLoose;
-let obj1 = { borderRadius: require("_createForOfIteratorHelperLoose").radii.lg, opacity: 0.2, zIndex: -999 };
-_createForOfIteratorHelperLoose.guildIcon = obj1;
-_createForOfIteratorHelperLoose.disabledTitle = { marginTop: 16, marginBottom: 8, textAlign: "center" };
-_createForOfIteratorHelperLoose.disabledBody = { textAlign: "center", marginBottom: 16 };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+({ Image: c3, View: c4 } = get_ActivityIndicator);
+({ AbortCodes: c5, HelpdeskArticles: closure_6, InviteStates: error } = ME);
+({ jsx: metroImportAll, Fragment: c9, jsxs: c10 } = jsxProd);
+createCacheKey = { expiredImage: { marginTop: 32, marginBottom: 32 }, expiredTitle: { marginBottom: 8, backgroundColor: "transparent", textAlign: "center" }, expiredBody: { backgroundColor: "transparent", marginBottom: 24 }, disabledView: { justifyContent: "center", alignItems: "center" }, disabledPauseIcon: null, guildIcon: null, disabledTitle: null, disabledBody: null };
+createCacheKey = { position: "absolute", alignSelf: "center", tintColor: require("Themes").colors.WHITE, width: 42, height: 42 };
+createCacheKey[4] = createCacheKey;
+createCacheKey[5] = { borderRadius: require("Themes").radii.lg, opacity: 0.2, zIndex: -999 };
+createCacheKey[6] = { marginTop: 16, marginBottom: 8, textAlign: "center" };
+createCacheKey[7] = { textAlign: "center", marginBottom: 16 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let obj1 = { borderRadius: require("Themes").radii.lg, opacity: 0.2, zIndex: -999 };
 const result = require("ME").fileFinishedImporting("modules/accept_invite/native/InviteError.tsx");
 
 export default function InviteError(inviteError) {

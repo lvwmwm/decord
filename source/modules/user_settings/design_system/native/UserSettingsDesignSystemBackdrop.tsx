@@ -1,20 +1,21 @@
-// Module ID: 14563
-// Function ID: 111060
+// Module ID: 14588
+// Function ID: 14589
 // Name: BackdropCard
-// Dependencies: [57, 31, 27, 33, 4165, 5200, 4576, 4161, 4578, 4026, 4577, 4581, 4559, 4566, 2]
+// Dependencies: [32, 19, 17, 21, 4189, 5222, 4598, 4185, 4600, 4050, 4599, 4603, 4582, 4588, 2]
 // Exports: default
 
-// Module 14563 (BackdropCard)
+// Module 14588 (BackdropCard)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
+import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_4;
-let closure_5;
+let StyleSheet;
+let c4;
+let c5;
 let closure_6;
-let closure_7;
+let error;
 const require = arg1;
 function BackdropCard(arg0) {
   let buttonLabel;
@@ -25,87 +26,86 @@ function BackdropCard(arg0) {
   let title;
   ({ blur: require, setShowBackdrop: dependencyMap, setBlurAmount: _slicedToArray } = arg0);
   ({ buttonLabel, title, description } = arg0);
-  let obj = {};
-  obj = { spacing: 12 };
-  const items = [callback2(require(4161) /* Text */.Text, { variant: "heading-lg/bold", children: title }), , ];
-  obj = { variant: "text-md/normal", color: "text-subtle", children: description };
-  items[1] = callback2(require(4161) /* Text */.Text, obj);
-  items[2] = callback2(require(4578) /* Button */.Button, {
+  let obj = { children: null };
+  obj = { spacing: 12, children: null };
+  const items = [callback2(require(4185) /* Text */.Text, { variant: "heading-lg/bold", children: title }), callback2(require(4185) /* Text */.Text, { variant: "text-md/normal", color: "text-subtle", children: description }), ];
+  obj = {
     text: buttonLabel,
     onPress() {
       callback2(closure_0);
       callback(true);
     }
-  });
-  obj.children = items;
-  obj.children = callback3(require(4576) /* Stack */.Stack, obj);
-  return callback2(require(5200) /* getCardBackgroundToken */.Card, obj);
+  };
+  items[2] = callback2(require(4600) /* Button */.Button, obj);
+  obj[1] = items;
+  obj[0] = callback3(require(4598) /* Stack */.Stack, obj);
+  return callback2(require(5222) /* PressableCard */.Card, obj);
 }
-({ ScrollView: closure_4, View: closure_5 } = get_ActivityIndicator);
-({ jsx: closure_6, jsxs: closure_7 } = jsxProd);
-_createForOfIteratorHelperLoose = { container: { padding: 16 } };
-_createForOfIteratorHelperLoose = {};
-const merged = Object.assign(get_ActivityIndicator.StyleSheet.absoluteFillObject);
-_createForOfIteratorHelperLoose["alignItems"] = "stretch";
-_createForOfIteratorHelperLoose["justifyContent"] = "center";
-_createForOfIteratorHelperLoose["padding"] = 16;
-_createForOfIteratorHelperLoose.backdropContent = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-let closure_9 = { code: "function UserSettingsDesignSystemBackdropTsx1(){const{withSpring,showBackdrop,SUBTLE_SPRING}=this.__closure;return{opacity:withSpring(showBackdrop?1:0,SUBTLE_SPRING,'animate-always')};}" };
+({ ScrollView: c4, View: c5, StyleSheet } = get_ActivityIndicator);
+({ jsx: closure_6, jsxs: error } = jsxProd);
+createCacheKey = { container: { padding: 16 }, backdropContent: null };
+createCacheKey = {};
+const merged = Object.assign(StyleSheet.absoluteFillObject);
+createCacheKey.alignItems = "stretch";
+createCacheKey.justifyContent = "center";
+createCacheKey.padding = 16;
+createCacheKey[1] = createCacheKey;
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let closure_10 = { code: "function UserSettingsDesignSystemBackdropTsx1(){const{withSpring,showBackdrop,SUBTLE_SPRING}=this.__closure;return{opacity:withSpring(showBackdrop?1:0,SUBTLE_SPRING,'animate-always')};}" };
 const result = require("get ActivityIndicator").fileFinishedImporting("modules/user_settings/design_system/native/UserSettingsDesignSystemBackdrop.tsx");
 
 export default function UserSettingsDesignSystemBackdrop() {
   let tmp6;
   let tmp7;
-  function handleClose() {
-    tmp4(false);
-  }
-  const tmp = _createForOfIteratorHelperLoose();
+  const tmp = createCacheKey();
   const tmp2 = callback(React.useState(false), 2);
   let first = tmp2[0];
   const dependencyMap = tmp4;
   [tmp6, tmp7] = callback(React.useState("none"), 2);
-  let obj = first(4026);
+  let obj = first(4050);
   const fn = function n() {
-    const obj = {};
+    let obj = first(tmp4[10]);
     let num = 0;
     if (first) {
       num = 1;
     }
-    obj.opacity = first(tmp4[10]).withSpring(num, first(tmp4[11]).SUBTLE_SPRING, "animate-always");
+    obj = { opacity: obj.withSpring(num, first(tmp4[11]).SUBTLE_SPRING, "animate-always") };
     return obj;
   };
-  obj = { withSpring: first(4577).withSpring, showBackdrop: first, SUBTLE_SPRING: first(4581).SUBTLE_SPRING };
+  obj = { withSpring: first(4599).withSpring, showBackdrop: first, SUBTLE_SPRING: first(4603).SUBTLE_SPRING };
   fn.__closure = obj;
   fn.__workletHash = 1929832617927;
-  fn.__initData = closure_9;
-  obj = { contentContainerStyle: tmp.container };
+  fn.__initData = closure_10;
+  obj = { contentContainerStyle: tmp.container, children: null };
   const animatedStyle = obj.useAnimatedStyle(fn);
-  const obj1 = { spacing: 24 };
-  const obj2 = { title: "Backdrop", description: "A backdrop is an overlay that appears behind a component to provide separation between the component and the rest of the interface. By default it is a semi-transparent overlay.", buttonLabel: "Show Backdrop", blur: "none", setShowBackdrop: tmp2[1], setBlurAmount: tmp7 };
-  const items = [callback2(BackdropCard, obj2), , ];
-  const obj3 = { title: "Subtle Blur", description: "Backdrop also supports blur. You can use a subtle blur for a lite-touch obfuscation, like for Context Menus that help create seperation but don't completly lift you out of the context", buttonLabel: "Show Subtle Blur Backdrop", blur: "subtle", setShowBackdrop: tmp2[1], setBlurAmount: tmp7 };
-  items[1] = callback2(BackdropCard, obj3);
-  const obj4 = { title: "Strong Blur", description: "You can use a strong blur for places where you want to completly lift the user out of the context, like for modals", buttonLabel: "Show Strong Blur Backdrop", blur: "strong", setShowBackdrop: tmp2[1], setBlurAmount: tmp7 };
-  items[2] = callback2(BackdropCard, obj4);
-  obj1.children = items;
-  const items1 = [callback3(first(4576).Stack, obj1), ];
+  const obj1 = { spacing: 24, children: null };
+  const items = [callback2(BackdropCard, { title: "Backdrop", description: "A backdrop is an overlay that appears behind a component to provide separation between the component and the rest of the interface. By default it is a semi-transparent overlay.", buttonLabel: "Show Backdrop", blur: "none", setShowBackdrop: tmp2[1], setBlurAmount: tmp7 }), callback2(BackdropCard, { title: "Subtle Blur", description: "Backdrop also supports blur. You can use a subtle blur for a lite-touch obfuscation, like for Context Menus that help create seperation but don't completly lift you out of the context", buttonLabel: "Show Subtle Blur Backdrop", blur: "subtle", setShowBackdrop: tmp2[1], setBlurAmount: tmp7 }), callback2(BackdropCard, { title: "Strong Blur", description: "You can use a strong blur for places where you want to completly lift the user out of the context, like for modals", buttonLabel: "Show Strong Blur Backdrop", blur: "strong", setShowBackdrop: tmp2[1], setBlurAmount: tmp7 })];
+  obj1[1] = items;
+  const items1 = [callback3(first(4598).Stack, obj1), ];
   if (first) {
-    const obj5 = { onDismiss: handleClose };
-    const obj6 = { style: animatedStyle, blur: tmp6, onDismiss: handleClose };
-    const items2 = [callback2(first(4566).Backdrop, obj6), ];
-    const obj7 = { style: tmp.backdropContent, pointerEvents: "box-none" };
-    const obj8 = {};
-    const obj9 = { variant: "text-md/normal" };
+    function handleClose() {
+      tmp4(false);
+    }
+    const obj2 = { onDismiss: null, children: null };
+    obj2[0] = handleClose;
+    const obj3 = { style: null, blur: null, onDismiss: null };
+    obj3[0] = animatedStyle;
+    obj3[1] = tmp6;
+    obj3[2] = handleClose;
+    const items2 = [tmp13(tmp8(4588).Backdrop, obj3), ];
+    const obj4 = { style: null, pointerEvents: "box-none", children: null };
+    obj4[0] = tmp.backdropContent;
+    const obj5 = { children: null };
+    const obj6 = { variant: "text-md/normal", children: null };
     const items3 = ["blur style: ", tmp6];
-    obj9.children = items3;
-    obj8.children = callback3(first(4161).Text, obj9);
-    obj7.children = callback2(first(5200).Card, obj8);
-    items2[1] = callback2(closure_5, obj7);
-    obj5.children = items2;
-    first = callback3(first(4559).Dialog, obj5);
+    obj6[1] = items3;
+    obj5[0] = tmp11(tmp8(4185).Text, obj6);
+    obj4[2] = tmp13(tmp8(5222).Card, obj5);
+    items2[1] = tmp13(closure_5, obj4);
+    obj2[1] = items2;
+    first = tmp11(tmp8(4582).Dialog, obj2);
   }
   items1[1] = first;
-  obj.children = items1;
+  obj[1] = items1;
   return callback3(closure_4, obj);
 };

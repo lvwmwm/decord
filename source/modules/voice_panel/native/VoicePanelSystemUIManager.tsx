@@ -1,93 +1,124 @@
-// Module ID: 15887
-// Function ID: 122504
-// Dependencies: [57, 31, 4178, 10016, 10014, 4183, 33, 10015, 682, 477, 574, 4026, 9423, 6658, 10492, 2]
+// Module ID: 15922
+// Function ID: 15923
+// Dependencies: [32, 19, 4202, 10038, 10036, 4207, 21, 10037, 705, 500, 636, 4050, 9447, 6679, 10516, 2]
 
-// Module 15887
+// Module 15922
 import _slicedToArray from "_slicedToArray";
-import importAllResult from "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import importAllResult from "noop";
+import getParticipants from "getParticipants";
 import { VoicePanelModes } from "VoicePanelModes";
 import { VoicePanelControlsModes } from "VoicePanelControlsModes";
 import { ParticipantTypes } from "ParticipantTypes";
 import jsxProd from "jsxProd";
 
-let closure_10;
-let closure_11;
-let closure_9;
+let c10;
+let c9;
+let unpackModuleId;
 const require = arg1;
-({ jsx: closure_9, Fragment: closure_10, jsxs: closure_11 } = jsxProd);
+let c4 = importAllResult;
+({ jsx: c9, Fragment: c10, jsxs: unpackModuleId } = jsxProd);
 let closure_12 = { code: "function VoicePanelSystemUIManagerTsx1(){const{focused,mode,controlsSpecs,windowDimensions}=this.__closure;var _focused$get;return{focusedId:(_focused$get=focused.get())===null||_focused$get===void 0?void 0:_focused$get.id,mode:mode.get(),controlsMode:controlsSpecs.get().mode,landscape:windowDimensions.get().landscape};}" };
 let closure_13 = { code: "function VoicePanelSystemUIManagerTsx2(props,previous){const{cheapWorkletShallowEqual,runOnJS,handleStateChange}=this.__closure;if(cheapWorkletShallowEqual(props,previous!==null&&previous!==void 0?previous:undefined))return;runOnJS(handleStateChange)(props);}" };
 const memoResult = importAllResult.memo(function VoicePanelSystemUIManager() {
   let VoicePanelControlsModes;
-  let _isNativeReflectConstruct;
-  let tmp3;
-  let tmp6;
+  let getParticipants;
+  let tmp5;
+  let tmp8;
   const context = windowDimensions.useContext(channelId(mode[7]));
   const focused = context.focused;
   channelId = context.channelId;
   mode = context.mode;
   const controlsSpecs = context.controlsSpecs;
   windowDimensions = context.windowDimensions;
-  [tmp3, _isNativeReflectConstruct] = controlsSpecs(windowDimensions.useState(true), 2);
+  [tmp5, getParticipants] = controlsSpecs(windowDimensions.useState(true), 2);
+  const tmp6 = controlsSpecs(windowDimensions.useState(true), 2);
+  let closure_6 = tmp6[1];
   let tmp4 = controlsSpecs(windowDimensions.useState(true), 2);
-  let closure_6 = tmp4[1];
-  const tmp2 = controlsSpecs(windowDimensions.useState(true), 2);
-  [tmp6, VoicePanelControlsModes] = controlsSpecs(windowDimensions.useState(false), 2);
-  const tmp7 = controlsSpecs(windowDimensions.useState(false), 2);
-  let closure_8 = tmp7[1];
+  [tmp8, VoicePanelControlsModes] = controlsSpecs(windowDimensions.useState(false), 2);
+  const tmp9 = controlsSpecs(windowDimensions.useState(false), 2);
+  let closure_8 = tmp9[1];
   const items = [channelId];
   const memo = windowDimensions.useMemo(() => {
-    function updateState(arg0) {
+    let closure_0 = channelId(mode[10])(function updateState(arg0) {
       let c1;
       let closure_0;
+      let closure_2;
       let _slicedToArray;
-      let updateState;
-      ({ focusedId: closure_0, mode: c1, controlsMode: updateState, landscape: _slicedToArray } = arg0);
-      focused(mode[8]).batchUpdates(() => {
-        outer2_6(closure_1 !== constants.PIP);
-        let tmp4 = !tmp3;
-        if (null == closure_0) {
-          tmp4 = !_slicedToArray;
+      ({ focusedId: closure_0, mode: c1, controlsMode: closure_2, landscape: _slicedToArray } = arg0);
+      lib(outer1_2[8]).batchUpdates(() => {
+        outer1_6(c1 !== outer2_6.PIP);
+        let tmp4 = null == c0;
+        if (tmp4) {
+          tmp4 = !c3;
         }
         if (!tmp4) {
-          tmp4 = tmp2;
+          tmp4 = c2 !== outer2_7.HIDDEN;
         }
-        outer2_5(tmp4);
+        outer1_5(tmp4);
         let participant;
-        if (null != closure_0) {
-          participant = outer3_5.getParticipant(c1, closure_0);
+        if (null != c0) {
+          participant = outer2_5.getParticipant(c1, tmp3);
         }
         let type;
-        if (null != participant) {
+        if (participant != null) {
           type = participant.type;
         }
-        const tmp13 = !focused(mode[9]).isIOS();
-        let tmp14 = !tmp13;
-        if (!tmp13) {
-          tmp14 = tmp12;
-        }
-        outer2_8(tmp14);
-        let tmp17 = !tmp4;
+        const tmp11 = _undefined(outer2_2[9]).isIOS() && type === outer2_8.ACTIVITY;
+        outer1_8(tmp11);
+        let tmp14 = !tmp4;
         if (!tmp4) {
-          tmp17 = !tmp14;
+          tmp14 = !tmp11;
         }
-        outer2_7(tmp17);
+        outer1_7(tmp14);
       });
-    }
-    let closure_0 = channelId(mode[10])(updateState, 500, { maxWait: 2000 });
+    }, 500, { maxWait: 2000 });
     let c1;
     return {
       cancelPendingDebounce(arg0, arg1) {
         lib.cancel();
       },
       handleStateChange(focusedId) {
+        let c0;
+        let c1;
+        let c2;
+        let c3;
         if (focusedId !== focusedId.focusedId) {
           focusedId = focusedId.focusedId;
           lib(focusedId);
         } else {
           lib.cancel();
-          updateState(focusedId);
+          lib = undefined;
+          focusedId = undefined;
+          c2 = undefined;
+          c3 = undefined;
+          ({ focusedId: c0, mode: c1, controlsMode: c2, landscape: c3 } = focusedId);
+          focused(mode[8]).batchUpdates(() => {
+            outer1_6(c1 !== outer2_6.PIP);
+            let tmp4 = null == c0;
+            if (tmp4) {
+              tmp4 = !c3;
+            }
+            if (!tmp4) {
+              tmp4 = c2 !== outer2_7.HIDDEN;
+            }
+            outer1_5(tmp4);
+            let participant;
+            if (null != c0) {
+              participant = outer2_5.getParticipant(c1, tmp3);
+            }
+            let type;
+            if (participant != null) {
+              type = participant.type;
+            }
+            const tmp11 = _undefined(outer2_2[9]).isIOS() && type === outer2_8.ACTIVITY;
+            outer1_8(tmp11);
+            let tmp14 = !tmp4;
+            if (!tmp4) {
+              tmp14 = !tmp11;
+            }
+            outer1_7(tmp14);
+          });
+          const obj = focused(mode[8]);
         }
       }
     };
@@ -95,32 +126,23 @@ const memoResult = importAllResult.memo(function VoicePanelSystemUIManager() {
   const cancelPendingDebounce = memo.cancelPendingDebounce;
   const handleStateChange = memo.handleStateChange;
   const items1 = [cancelPendingDebounce];
-  const effect = windowDimensions.useEffect(() => () => outer1_9(), items1);
+  const effect = windowDimensions.useEffect(() => () => callback(), items1);
   let obj = focused(mode[11]);
   const fn = function v() {
-    const obj = {};
     const value = focused.get();
     let id;
-    if (null != value) {
+    if (value != null) {
       id = value.id;
     }
-    obj.focusedId = id;
-    obj.mode = mode.get();
-    obj.controlsMode = controlsSpecs.get().mode;
-    obj.landscape = windowDimensions.get().landscape;
-    return obj;
+    return { focusedId: id, mode: mode.get(), controlsMode: controlsSpecs.get().mode, landscape: windowDimensions.get().landscape };
   };
   fn.__closure = { focused, mode, controlsSpecs, windowDimensions };
   fn.__workletHash = 2478376475717;
   fn.__initData = closure_12;
-  const fn2 = function u(safeAreaState, safeAreaState2) {
-    let tmp;
-    if (null != safeAreaState2) {
-      tmp = safeAreaState2;
-    }
-    if (!obj.cheapWorkletShallowEqual(safeAreaState, tmp)) {
+  const fn2 = function u(safeAreaState, current) {
+    if (!obj.cheapWorkletShallowEqual(safeAreaState, current)) {
       focused(mode[11]).runOnJS(handleStateChange)(safeAreaState);
-      const obj2 = focused(mode[11]);
+      const tmp2Result = focused(mode[11]);
     }
   };
   obj = { cheapWorkletShallowEqual: focused(mode[12]).cheapWorkletShallowEqual, runOnJS: focused(mode[11]).runOnJS, handleStateChange };
@@ -128,16 +150,17 @@ const memoResult = importAllResult.memo(function VoicePanelSystemUIManager() {
   fn2.__workletHash = 3592680244658;
   fn2.__initData = closure_13;
   const animatedReaction = obj.useAnimatedReaction(fn, fn2);
-  obj = {};
-  let tmp13 = null;
-  if (tmp4[0]) {
-    const obj1 = { hidden: !tmp3, barStyle: "light-content" };
-    tmp13 = cancelPendingDebounce(channelId(mode[13]), obj1);
+  let tmp15 = null;
+  if (tmp6[0]) {
+    obj = { hidden: null, barStyle: "light-content" };
+    obj[0] = !tmp5;
+    tmp15 = cancelPendingDebounce(tmp(tmp2[13]), obj);
   }
-  const items2 = [tmp13, cancelPendingDebounce(channelId(mode[14]), { prefersHidden: tmp6, prefersDeferringSystemGestures: tmp7[0] })];
-  obj.children = items2;
-  return closure_11(handleStateChange, obj);
+  const obj1 = { children: null };
+  const items2 = [tmp15, cancelPendingDebounce(channelId(mode[14]), { prefersHidden: tmp8, prefersDeferringSystemGestures: tmp9[0] })];
+  obj1[0] = items2;
+  return closure_11(handleStateChange, obj1);
 });
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/voice_panel/native/VoicePanelSystemUIManager.tsx");
+const result = require("getParticipants").fileFinishedImporting("modules/voice_panel/native/VoicePanelSystemUIManager.tsx");
 
 export default memoResult;

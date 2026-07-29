@@ -1,293 +1,242 @@
-// Module ID: 683
-// Function ID: 8412
-// Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 653, 561, 664, 507, 684, 685, 587, 1184, 566, 686, 2]
+// Module ID: 706
+// Function ID: 707
+// Name: refreshSourceMapCookie
+// Dependencies: [676, 584, 687, 530, 707, 708, 595, 1208, 589, 709, 2]
 
-// Module 683 (_isNativeReflectConstruct)
-import Backoff from "Backoff";
-import set from "set";
-import closure_6 from "set";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
+// Module 706 (refreshSourceMapCookie)
 import { UserFlags } from "ME";
+import importDefaultResult from "fails";
+import { Store } from "initialize";
 
-const require = arg1;
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
-  }
-  const result = _isNativeReflectConstruct();
-}
-function setOptions(arg0) {
-  const obj = {};
-  const merged = Object.assign(obj);
-  const merged1 = Object.assign(obj);
-  const merged2 = Object.assign(arg0);
-  const result = store.set(obj.sourceMapsEnabled);
-  const Storage = require(587) /* Storage */.Storage;
-  const result1 = Storage.set(DeveloperOptionsStore, obj);
-}
-function setRoutingKeyTags(arg0) {
-  let closure_15 = arg0;
-  const Storage = require(587) /* Storage */.Storage;
-  const result = Storage.set(DeveloperOptionsRoutingKey, closure_15);
-}
-let closure_10 = (() => {
-  function refreshSourceMapCookie() {
-    const HTTP = callback(refreshSourceMapCookie[8]).HTTP;
-    let obj = { url: callback };
-    obj = { Authorization: tmp(refreshSourceMapCookie[9]).getToken() };
-    obj.headers = obj;
-    obj.oldFormErrors = true;
-    obj.rejectWithError = true;
-    const obj3 = tmp(refreshSourceMapCookie[9]);
-    HTTP.put(obj).then((status) => {
-      if (401 !== status.status) {
-        if (403 !== status.status) {
-          if (200 !== status.status) {
-            const _setTimeout2 = setTimeout;
-            let outer1_1 = setTimeout(outer1_3, outer1_2.fail());
-          } else {
-            outer1_2.succeed();
-            const _setTimeout = setTimeout;
-            outer1_1 = setTimeout(outer1_3, status.body.sourceMapCookieTTLSeconds * callback2(refreshSourceMapCookie[7]).Millis.SECOND * 0.75);
-          }
-        }
-      }
-      outer1_1 = null;
-      const result = callback(refreshSourceMapCookie[10]).setDeveloperOptionSettings({ sourceMapsEnabled: false });
-    }, () => {
-      const outer1_1 = setTimeout(outer1_3, outer1_2.fail());
-    });
-  }
-  let closure_0 = "" + location.protocol + "//" + location.host + "/__development/source_maps";
-  const importDefault = null;
-  let tmp = importDefault(refreshSourceMapCookie[6]);
-  let result = 5 * importDefault(refreshSourceMapCookie[7]).Millis.SECOND;
-  tmp = new tmp(result, importDefault(refreshSourceMapCookie[7]).Millis.MINUTE, true);
-  const importAll = tmp;
-  return {
-    set(arg0) {
-      if (arg0 !== null != timeout) {
-        if (arg0) {
-          const _setTimeout = setTimeout;
-          timeout = setTimeout(refreshSourceMapCookie, 0);
+let closure_0 = require;
+let c1 = importDefault;
+let c2 = importAll;
+let refreshSourceMapCookie = dependencyMap;
+closure_0 = undefined;
+c1 = undefined;
+c2 = undefined;
+refreshSourceMapCookie = function refreshSourceMapCookie() {
+  const HTTP = callback(refreshSourceMapCookie[3]).HTTP;
+  let obj = { url: callback, headers: null, oldFormErrors: true, rejectWithError: true };
+  obj = { Authorization: null };
+  obj[0] = _undefined(refreshSourceMapCookie[4]).getToken();
+  obj[1] = obj;
+  const obj3 = _undefined(refreshSourceMapCookie[4]);
+  HTTP.put(obj).then((status) => {
+    if (401 !== status.status) {
+      if (403 !== status.status) {
+        if (200 !== status.status) {
+          const _setTimeout2 = setTimeout;
+          let timeout = setTimeout(closure_3, closure_2.fail());
         } else {
-          const _clearTimeout = clearTimeout;
-          clearTimeout(timeout);
-          timeout = null;
-          const HTTP = callback(refreshSourceMapCookie[8]).HTTP;
-          let obj = { url: callback };
-          obj = { Authorization: timeout(refreshSourceMapCookie[9]).getToken() };
-          obj.headers = obj;
-          obj.oldFormErrors = true;
-          obj.rejectWithError = true;
-          HTTP.del(obj);
-          const obj3 = timeout(refreshSourceMapCookie[9]);
+          closure_2.succeed();
+          const _setTimeout = setTimeout;
+          timeout = setTimeout(closure_3, status.body.sourceMapCookieTTLSeconds * outer1_1(outer1_3[2]).Millis.SECOND * 0.75);
         }
       }
     }
-  };
-})();
+    timeout = null;
+    const result = outer1_0(outer1_3[5]).setDeveloperOptionSettings({ sourceMapsEnabled: false });
+  }, () => {
+    const timeout = setTimeout(closure_3, closure_2.fail());
+  });
+};
+closure_0 = "" + location.protocol + "//" + location.host + "/__development/source_maps";
+c1 = null;
+let result = 5 * require("set").Millis.SECOND;
+importDefaultResult = new importDefaultResult(result, require("set").Millis.MINUTE, true);
+c2 = importDefaultResult;
+let closure_5 = {
+  set(arg0) {
+    if (arg0 !== null != timeout) {
+      if (arg0) {
+        const _setTimeout = setTimeout;
+        timeout = setTimeout(refreshSourceMapCookie, 0);
+      } else {
+        const _clearTimeout = clearTimeout;
+        clearTimeout(timeout);
+        timeout = null;
+        const HTTP = callback(refreshSourceMapCookie[3]).HTTP;
+        let obj = { url: null, headers: null, oldFormErrors: true, rejectWithError: true };
+        obj[0] = callback;
+        obj = { Authorization: null };
+        obj[0] = _undefined(refreshSourceMapCookie[4]).getToken();
+        obj[1] = obj;
+        HTTP.del(obj);
+        const obj3 = _undefined(refreshSourceMapCookie[4]);
+      }
+    }
+  }
+};
 const DeveloperOptionsStore = "DeveloperOptionsStore";
 let obj = { trace: false, canary: false, logGatewayEvents: false, logOverlayEvents: false, logAnalyticsEvents: false, sourceMapsEnabled: false, axeEnabled: false, cssDebuggingEnabled: false, layoutDebuggingEnabled: false, bugReporterEnabled: true, idleStatusIndicatorEnabled: false, onlyShowPreviewAppCollections: false, disableAppCollectionsCache: false, isStreamInfoOverlayEnabled: false, preventPopoutClose: false, logKeyboardMismatches: false, alertStartupMetrics: false, logQuestEvents: false };
 obj = {};
 let merged = Object.assign(obj);
 const DeveloperOptionsRoutingKey = "DeveloperOptionsRoutingKey";
-let closure_15 = [];
-let tmp3 = ((Store) => {
-  class DeveloperOptionsStore {
-    constructor() {
-      self = this;
-      tmp = outer1_4(this, DeveloperOptionsStore);
-      obj = outer1_7(DeveloperOptionsStore);
-      tmp2 = outer1_6;
-      if (outer1_16()) {
-        tmp6 = globalThis;
-        _Reflect = Reflect;
-        tmp7 = outer1_7;
-        tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, outer1_7(self).constructor);
-      } else {
-        tmp3 = arguments;
-        tmp4 = arguments;
-        constructResult = obj(...arguments);
-      }
-      return tmp2(self, constructResult);
-    }
+let closure_10 = [];
+class DeveloperOptionsStore extends Store {
+}
+const prototype = DeveloperOptionsStore.prototype;
+prototype["initialize"] = function initialize() {
+  const Storage = callback(refreshSourceMapCookie[6]).Storage;
+  let value = Storage.get(DeveloperOptionsStore);
+  if (null != value) {
+    const obj = {};
+    const merged = Object.assign(obj);
+    const merged1 = Object.assign(value);
   }
-  callback2(DeveloperOptionsStore, Store);
-  let obj = {
-    key: "initialize",
-    value: function initialize() {
-      const Storage = DeveloperOptionsStore(outer1_3[11]).Storage;
-      let value = Storage.get(outer1_11);
-      if (null != value) {
-        const obj = {};
-        const merged = Object.assign(outer1_12);
-        const merged1 = Object.assign(value);
-        const outer1_13 = obj;
-      }
-      const Storage2 = DeveloperOptionsStore(outer1_3[11]).Storage;
-      value = Storage2.get(outer1_14);
-      if (null != value) {
-        const outer1_15 = value;
-      }
-    }
-  };
-  const items = [obj, , , , , , , , , , , , , , , , , , , , , ];
-  obj = {
-    key: "isTracingRequests",
-    get() {
-      return outer1_13.trace;
-    }
-  };
-  items[1] = obj;
-  obj = {
-    key: "isForcedCanary",
-    get() {
-      return outer1_13.canary;
-    }
-  };
-  items[2] = obj;
-  items[3] = {
-    key: "isLoggingGatewayEvents",
-    get() {
-      return outer1_13.logGatewayEvents;
-    }
-  };
-  items[4] = {
-    key: "isLoggingOverlayEvents",
-    get() {
-      return outer1_13.logOverlayEvents;
-    }
-  };
-  items[5] = {
-    key: "isLoggingAnalyticsEvents",
-    get() {
-      return outer1_13.logAnalyticsEvents;
-    }
-  };
-  items[6] = {
-    key: "isAxeEnabled",
-    get() {
-      return outer1_13.axeEnabled;
-    }
-  };
-  items[7] = {
-    key: "cssDebuggingEnabled",
-    get() {
-      return outer1_13.cssDebuggingEnabled;
-    }
-  };
-  items[8] = {
-    key: "layoutDebuggingEnabled",
-    get() {
-      return outer1_13.layoutDebuggingEnabled;
-    }
-  };
-  items[9] = {
-    key: "sourceMapsEnabled",
-    get() {
-      return outer1_13.sourceMapsEnabled;
-    }
-  };
-  items[10] = {
-    key: "isBugReporterEnabled",
-    get() {
-      return outer1_13.bugReporterEnabled;
-    }
-  };
-  items[11] = {
-    key: "isIdleStatusIndicatorEnabled",
-    get() {
-      return outer1_13.idleStatusIndicatorEnabled;
-    }
-  };
-  items[12] = {
-    key: "onlyShowPreviewAppCollections",
-    get() {
-      return outer1_13.onlyShowPreviewAppCollections;
-    }
-  };
-  items[13] = {
-    key: "disableAppCollectionsCache",
-    get() {
-      return outer1_13.disableAppCollectionsCache;
-    }
-  };
-  items[14] = {
-    key: "isStreamInfoOverlayEnabled",
-    get() {
-      return outer1_13.isStreamInfoOverlayEnabled;
-    }
-  };
-  items[15] = {
-    key: "preventPopoutClose",
-    get() {
-      return outer1_13.preventPopoutClose;
-    }
-  };
-  items[16] = {
-    key: "logKeyboardMismatches",
-    get() {
-      return outer1_13.logKeyboardMismatches;
-    }
-  };
-  items[17] = {
-    key: "alertStartupMetrics",
-    get() {
-      return outer1_13.alertStartupMetrics;
-    }
-  };
-  items[18] = {
-    key: "isLoggingQuestEvents",
-    get() {
-      return outer1_13.logQuestEvents;
-    }
-  };
-  items[19] = {
-    key: "getDebugOptionsHeaderValue",
-    value: function getDebugOptionsHeaderValue() {
-      const keys = Object.keys(outer1_13);
-      const mapped = keys.map((arg0) => outer2_13[arg0]);
-      const keys1 = Object.keys(outer1_13);
-      const found = keys1.filter((arg0) => outer2_13[arg0]);
-      return found.join(",");
-    }
-  };
-  items[20] = {
-    key: "routingKeyTags",
-    get() {
-      return outer1_15;
-    }
-  };
-  items[21] = {
-    key: "getRoutingKeyHeaderValue",
-    value: function getRoutingKeyHeaderValue() {
-      let joined = null;
-      if (0 !== outer1_15.length) {
-        joined = outer1_15.join(",");
-      }
-      return joined;
-    }
-  };
-  return callback(DeveloperOptionsStore, items);
-})(require("initialize").Store);
-tmp3.displayName = "DeveloperOptionsStore";
+  const Storage2 = callback(refreshSourceMapCookie[6]).Storage;
+  value = Storage2.get(DeveloperOptionsRoutingKey);
+  if (null != value) {
+    let closure_10 = value;
+  }
+};
+Object.defineProperty(prototype, "isTracingRequests", {
+  get: function isTracingRequests() {
+    return obj.trace;
+  },
+  set: undefined
+});
+Object.defineProperty(prototype, "isForcedCanary", {
+  get: function isForcedCanary() {
+    return obj.canary;
+  },
+  set: undefined
+});
+Object.defineProperty(prototype, "isLoggingGatewayEvents", {
+  get: function isLoggingGatewayEvents() {
+    return obj.logGatewayEvents;
+  },
+  set: undefined
+});
+Object.defineProperty(prototype, "isLoggingOverlayEvents", {
+  get: function isLoggingOverlayEvents() {
+    return obj.logOverlayEvents;
+  },
+  set: undefined
+});
+Object.defineProperty(prototype, "isLoggingAnalyticsEvents", {
+  get: function isLoggingAnalyticsEvents() {
+    return obj.logAnalyticsEvents;
+  },
+  set: undefined
+});
+Object.defineProperty(prototype, "isAxeEnabled", {
+  get: function isAxeEnabled() {
+    return obj.axeEnabled;
+  },
+  set: undefined
+});
+Object.defineProperty(prototype, "cssDebuggingEnabled", {
+  get: function cssDebuggingEnabled() {
+    return obj.cssDebuggingEnabled;
+  },
+  set: undefined
+});
+Object.defineProperty(prototype, "layoutDebuggingEnabled", {
+  get: function layoutDebuggingEnabled() {
+    return obj.layoutDebuggingEnabled;
+  },
+  set: undefined
+});
+Object.defineProperty(prototype, "sourceMapsEnabled", {
+  get: function sourceMapsEnabled() {
+    return obj.sourceMapsEnabled;
+  },
+  set: undefined
+});
+Object.defineProperty(prototype, "isBugReporterEnabled", {
+  get: function isBugReporterEnabled(arg0) {
+    return obj.bugReporterEnabled;
+  },
+  set: undefined
+});
+Object.defineProperty(prototype, "isIdleStatusIndicatorEnabled", {
+  get: function isIdleStatusIndicatorEnabled() {
+    return obj.idleStatusIndicatorEnabled;
+  },
+  set: undefined
+});
+Object.defineProperty(prototype, "onlyShowPreviewAppCollections", {
+  get: function onlyShowPreviewAppCollections() {
+    return obj.onlyShowPreviewAppCollections;
+  },
+  set: undefined
+});
+Object.defineProperty(prototype, "disableAppCollectionsCache", {
+  get: function disableAppCollectionsCache() {
+    return obj.disableAppCollectionsCache;
+  },
+  set: undefined
+});
+Object.defineProperty(prototype, "isStreamInfoOverlayEnabled", {
+  get: function isStreamInfoOverlayEnabled() {
+    return obj.isStreamInfoOverlayEnabled;
+  },
+  set: undefined
+});
+Object.defineProperty(prototype, "preventPopoutClose", {
+  get: function preventPopoutClose() {
+    return obj.preventPopoutClose;
+  },
+  set: undefined
+});
+Object.defineProperty(prototype, "logKeyboardMismatches", {
+  get: function logKeyboardMismatches() {
+    return obj.logKeyboardMismatches;
+  },
+  set: undefined
+});
+Object.defineProperty(prototype, "alertStartupMetrics", {
+  get: function alertStartupMetrics() {
+    return obj.alertStartupMetrics;
+  },
+  set: undefined
+});
+Object.defineProperty(prototype, "isLoggingQuestEvents", {
+  get: function isLoggingQuestEvents() {
+    return obj.logQuestEvents;
+  },
+  set: undefined
+});
+prototype["getDebugOptionsHeaderValue"] = function getDebugOptionsHeaderValue() {
+  const keys = Object.keys(obj);
+  const mapped = keys.map((arg0) => dependencyMap[arg0]);
+  const keys1 = Object.keys(obj);
+  const found = keys1.filter((arg0) => dependencyMap[arg0]);
+  return found.join(",");
+};
+Object.defineProperty(prototype, "routingKeyTags", {
+  get: function routingKeyTags() {
+    return closure_10;
+  },
+  set: undefined
+});
+prototype["getRoutingKeyHeaderValue"] = function getRoutingKeyHeaderValue() {
+  let joined = null;
+  if (0 !== closure_10.length) {
+    joined = closure_10.join(",");
+  }
+  return joined;
+};
+DeveloperOptionsStore.displayName = "DeveloperOptionsStore";
 obj = {
   LOGOUT: function handleLogout(arg0) {
-    setOptions(obj);
-    setRoutingKeyTags([]);
+    const obj = {};
+    const merged = Object.assign(obj);
+    const merged1 = Object.assign(obj);
+    const merged2 = Object.assign(obj);
+    const result = store.set(obj.sourceMapsEnabled);
+    const Storage = callback(refreshSourceMapCookie[6]).Storage;
+    const result1 = Storage.set(DeveloperOptionsStore, obj);
+    let closure_10 = [];
+    const Storage2 = callback(refreshSourceMapCookie[6]).Storage;
+    const result2 = Storage2.set(DeveloperOptionsRoutingKey, closure_10);
   },
   CONNECTION_OPEN: function handleConnectionOpen(user) {
-    const flags = user.user.flags;
-    let num = 0;
-    if (null != flags) {
-      num = flags;
+    let num = user.user.flags;
+    if (num == null) {
+      num = 0;
     }
     let str = tmp;
     if ((num & UserFlags.STAFF) !== UserFlags.STAFF) {
@@ -296,18 +245,26 @@ obj = {
     if ((num & UserFlags.STAFF) === UserFlags.STAFF) {
       const result = store.set(obj.sourceMapsEnabled);
     }
-    obj = importDefault(1184);
+    obj = _null(refreshSourceMapCookie[7]);
     obj = { isStaff: str.toString() };
     obj.setTags(obj);
   },
   DEVELOPER_OPTIONS_UPDATE_SETTINGS: function handleUpdateSettings(settings) {
-    setOptions(settings.settings);
+    const obj = {};
+    const merged = Object.assign(obj);
+    const merged1 = Object.assign(obj);
+    const merged2 = Object.assign(settings.settings);
+    const result = store.set(obj.sourceMapsEnabled);
+    const Storage = callback(refreshSourceMapCookie[6]).Storage;
+    const result1 = Storage.set(DeveloperOptionsStore, obj);
   },
   DEVELOPER_OPTIONS_SET_ROUTING_KEY: function handleSetRoutingKey(tags) {
-    setRoutingKeyTags(tags.tags);
+    tags = tags.tags;
+    const Storage = callback(refreshSourceMapCookie[6]).Storage;
+    const result = Storage.set(DeveloperOptionsRoutingKey, tags);
   }
 };
-tmp3 = new tmp3(require("dispatcher"), obj);
-let result = require("_possibleConstructorReturn").fileFinishedImporting("stores/DeveloperOptionsStore.tsx");
+const developerOptionsStore = new DeveloperOptionsStore(require("dispatcher"), obj);
+let result1 = require("set").fileFinishedImporting("stores/DeveloperOptionsStore.tsx");
 
-export default tmp3;
+export default developerOptionsStore;

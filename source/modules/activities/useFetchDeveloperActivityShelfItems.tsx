@@ -1,24 +1,24 @@
-// Module ID: 11267
-// Function ID: 87467
+// Module ID: 11291
+// Function ID: 11292
 // Name: useFetchDeveloperActivityShelfItems
-// Dependencies: [31, 5673, 10509, 3838, 566, 5678, 2]
+// Dependencies: [19, 5691, 10533, 3862, 589, 5696, 2]
 // Exports: useFetchDeveloperActivityShelfItems
 
-// Module 11267 (useFetchDeveloperActivityShelfItems)
-import result from "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import { DevShelfFetchState } from "_isNativeReflectConstruct";
+// Module 11291 (useFetchDeveloperActivityShelfItems)
+import noop from "noop";
+import initialize from "initialize";
+import { DevShelfFetchState } from "initialize";
 
 const require = arg1;
-const result = require("isActivitiesAllowed").fileFinishedImporting("modules/activities/useFetchDeveloperActivityShelfItems.tsx");
+const result = require("useIsActivitiesEnabledForCurrentPlatform").fileFinishedImporting("modules/activities/useFetchDeveloperActivityShelfItems.tsx");
 
 export const useFetchDeveloperActivityShelfItems = function useFetchDeveloperActivityShelfItems() {
   isActivitiesEnabledForCurrentPlatform = isActivitiesEnabledForCurrentPlatform(setting[2]).useIsActivitiesEnabledForCurrentPlatform();
   const DeveloperMode = isActivitiesEnabledForCurrentPlatform(setting[3]).DeveloperMode;
   setting = DeveloperMode.getSetting();
   let obj = isActivitiesEnabledForCurrentPlatform(setting[2]);
-  const items = [_isNativeReflectConstruct];
-  const stateFromStores = isActivitiesEnabledForCurrentPlatform(setting[4]).useStateFromStores(items, () => outer1_3.getFetchState(), []);
+  const items = [initialize];
+  const stateFromStores = isActivitiesEnabledForCurrentPlatform(setting[4]).useStateFromStores(items, () => fetchState.getFetchState(), []);
   const items1 = [isActivitiesEnabledForCurrentPlatform, stateFromStores, setting];
   const effect = stateFromStores.useEffect(() => {
     let tmp = isActivitiesEnabledForCurrentPlatform;

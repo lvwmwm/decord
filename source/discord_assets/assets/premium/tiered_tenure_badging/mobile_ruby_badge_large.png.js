@@ -1,9 +1,9 @@
-// Module ID: 8395
-// Function ID: 67002
+// Module ID: 8419
+// Function ID: 8420
 // Name: metadata
 // Dependencies: [2]
 
-// Module 8395 (metadata)
+// Module 8419 (metadata)
 const result = require("set").fileFinishedImporting("../discord_assets/assets/premium/tiered_tenure_badging/mobile_ruby_badge_large.png.js");
 
 export default "https://cdn.discordapp.com/assets/content/8a6e64906edc7d1f9a5aad94d0e5f5d86acc9f88130de738d89aa7bc2772b091.png";

@@ -1,21 +1,21 @@
-// Module ID: 9151
-// Function ID: 71745
+// Module ID: 9175
+// Function ID: 9176
 // Name: UserVerification
-// Dependencies: [31, 33, 4165, 3985, 9152, 4161, 1212, 2]
+// Dependencies: [19, 21, 4189, 4009, 9176, 4185, 1236, 2]
 // Exports: default
 
-// Module 9151 (UserVerification)
-import "result";
+// Module 9175 (UserVerification)
+import "noop";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_3;
-let closure_4;
-let closure_5;
+let c3;
+let c4;
+let c5;
 const require = arg1;
-({ jsx: closure_3, Fragment: closure_4, jsxs: closure_5 } = jsxProd);
-let closure_6 = _createForOfIteratorHelperLoose.createStyles({ emailPhoneNote: { marginTop: 8, marginBottom: 12 } });
-const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/guild_member_verification/native/components/form_fields/UserVerification.tsx");
+({ jsx: c3, Fragment: c4, jsxs: c5 } = jsxProd);
+let closure_6 = createCacheKey.createStyles({ emailPhoneNote: { marginTop: 8, marginBottom: 12 } });
+const result = require("createCacheKey").fileFinishedImporting("modules/guild_member_verification/native/components/form_fields/UserVerification.tsx");
 
 export default function UserVerification(arg0) {
   let field;
@@ -25,27 +25,32 @@ export default function UserVerification(arg0) {
     return null;
   } else {
     const platform = field.platform;
-    let obj = {};
-    let tmp7 = platform === require(3985) /* isTermsFormField */.UserVerificationFieldPlatforms.PHONE;
-    if (tmp7) {
-      obj = { passesVerification: verification[require(undefined, 3985) /* isTermsFormField */.UserVerificationFieldPlatforms.PHONE], platform: require(3985) /* isTermsFormField */.UserVerificationFieldPlatforms.PHONE };
-      tmp7 = callback(importDefault(9152), obj);
-      const tmp5 = importDefault(9152);
+    let tmp5 = platform === require(4009) /* MAX_RESULTS_PER_PAGE */.UserVerificationFieldPlatforms.PHONE;
+    if (tmp5) {
+      let obj = { passesVerification: null, platform: null };
+      obj[0] = verification[tmp12(undefined, 4009).UserVerificationFieldPlatforms.PHONE];
+      obj[1] = tmp12(4009).UserVerificationFieldPlatforms.PHONE;
+      tmp5 = callback(importDefault(9176), obj);
+      const tmp4 = importDefault(9176);
     }
-    const items = [tmp7, , ];
-    obj = { passesVerification: verification[require(undefined, 3985) /* isTermsFormField */.UserVerificationFieldPlatforms.EMAIL], platform: require(3985) /* isTermsFormField */.UserVerificationFieldPlatforms.EMAIL };
-    items[1] = callback(importDefault(9152), obj);
-    const obj1 = { style: tmp.emailPhoneNote, variant: "heading-deprecated-12/medium", color: "text-default" };
-    if (platform === require(3985) /* isTermsFormField */.UserVerificationFieldPlatforms.PHONE) {
-      const intl2 = require(1212) /* getSystemLocale */.intl;
-      let stringResult = intl2.string(require(1212) /* getSystemLocale */.t["jMh+TY"]);
+    const items = [tmp5, , ];
+    obj = { passesVerification: null, platform: null };
+    obj[0] = verification[require(undefined, 4009) /* MAX_RESULTS_PER_PAGE */.UserVerificationFieldPlatforms.EMAIL];
+    obj[1] = require(4009) /* MAX_RESULTS_PER_PAGE */.UserVerificationFieldPlatforms.EMAIL;
+    items[1] = callback(importDefault(9176), obj);
+    obj = { style: null, variant: "heading-deprecated-12/medium", color: "text-default", children: null };
+    obj[0] = tmp.emailPhoneNote;
+    if (platform === require(4009) /* MAX_RESULTS_PER_PAGE */.UserVerificationFieldPlatforms.PHONE) {
+      const intl2 = tmp12(1236).intl;
+      let stringResult = intl2.string(tmp12(1236).t["jMh+TY"]);
     } else {
-      const intl = require(1212) /* getSystemLocale */.intl;
-      stringResult = intl.string(require(1212) /* getSystemLocale */.t.Vgv9ip);
+      const intl = tmp12(1236).intl;
+      stringResult = intl.string(tmp12(1236).t.Vgv9ip);
     }
-    obj1.children = stringResult;
-    items[2] = callback(require(4161) /* Text */.Text, obj1);
-    obj.children = items;
-    return closure_5(closure_4, obj);
+    const obj1 = { children: null };
+    obj[3] = stringResult;
+    items[2] = callback(require(4185) /* Text */.Text, obj);
+    obj1[0] = items;
+    return closure_5(closure_4, obj1);
   }
 };

@@ -1,11 +1,12 @@
-// Module ID: 8707
-// Function ID: 68949
+// Module ID: 8731
+// Function ID: 8732
 // Name: PRODUCT_DETAILS_ACTION_SHEET_KEY
-// Dependencies: [5791, 5779, 4133, 8708, 1935, 2]
+// Dependencies: [5809, 5797, 4157, 8732, 1959, 2]
 // Exports: openProductDetailsActionSheet
 
-// Module 8707 (PRODUCT_DETAILS_ACTION_SHEET_KEY)
-const result = require("showActionSheet").fileFinishedImporting("modules/collectibles/native/openProductDetailsActionSheet.tsx");
+// Module 8731 (PRODUCT_DETAILS_ACTION_SHEET_KEY)
+let c3 = "Shop Product Preview";
+const result = require("ACTION_SHEET_HEIGHT_HALF").fileFinishedImporting("modules/collectibles/native/openProductDetailsActionSheet.tsx");
 
 export const PRODUCT_DETAILS_ACTION_SHEET_KEY = "Shop Product Preview";
 export const openProductDetailsActionSheet = function openProductDetailsActionSheet(arg0, stack) {
@@ -18,7 +19,7 @@ export const openProductDetailsActionSheet = function openProductDetailsActionSh
     initialVariantIndex = 0;
   }
   ({ analyticsLocations, shopAnalyticsContext } = arg0);
-  let obj = require(5791) /* getProductOrbPrice */;
+  let obj = require(5809) /* getProductOrbPrice */;
   const isVariantProduct = obj.getIsVariantProduct(product);
   let num = 0;
   if (isVariantProduct) {
@@ -32,8 +33,9 @@ export const openProductDetailsActionSheet = function openProductDetailsActionSh
   } else {
     skuId = product.skuId;
   }
-  require(5779) /* _createForOfIteratorHelperLoose */.productDetailsOpened(skuId);
-  const obj2 = require(5779) /* _createForOfIteratorHelperLoose */;
+  require(5797) /* openCollectiblesShop */.productDetailsOpened(skuId);
+  const tmp2 = dependencyMap;
+  const tmpResult = require(5797) /* openCollectiblesShop */;
   obj = { product, initialVariantIndex: num, analyticsLocations, shopAnalyticsContext };
-  importDefault(4133).openLazy(require(1935) /* maybeLoadBundle */(8708, dependencyMap.paths), "Shop Product Preview", obj, stack);
+  importDefault(4157).openLazy(require(1959) /* asyncRequireImpl */(8732, tmp2.paths), c3, obj, stack);
 };

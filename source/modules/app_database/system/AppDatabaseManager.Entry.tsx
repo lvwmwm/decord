@@ -1,70 +1,50 @@
-// Module ID: 5913
-// Function ID: 52104
-// Name: Entry
-// Dependencies: [6, 7, 2]
+// Module ID: 5932
+// Function ID: 5933
+// Name: actions
+// Dependencies: [2]
 
-// Module 5913 (Entry)
-import _classCallCheck from "_classCallCheck";
-import _defineProperties from "_defineProperties";
-
-const tmp2 = (() => {
-  class Entry {
-    constructor(arg0, arg1) {
-      tmp = Entry(this, Entry);
-      this.parent = arg0;
-      this.module = null;
-      this.definition = arg1;
-      return;
+// Module 5932 (actions)
+const result = require("set").fileFinishedImporting("modules/app_database/system/AppDatabaseManager.Entry.tsx");
+class Entry {
+  constructor(arg0, arg1) {
+    obj = Object.create(new.target.prototype);
+    obj.parent = global;
+    obj.module = null;
+    obj.definition = require;
+    return obj;
+  }
+}
+const prototype = Entry.prototype;
+Object.defineProperty(prototype, "actions", {
+  get: function actions() {
+    return this.definition.actions;
+  },
+  set: undefined
+});
+prototype["load"] = function load() {
+  const self = this;
+  if (null == this.module) {
+    const definition = self.definition;
+    self.module = definition.require();
+  }
+};
+prototype["reset"] = function reset() {
+  const _module = this.module;
+  if (_module != null) {
+    _module.resetInMemoryState();
+  }
+};
+prototype["execute"] = function execute(arg0, arg1) {
+  this.load();
+  if (null != this.module) {
+    const actions = this.module.actions;
+    if (actions[arg0.type] != null) {
+      tmp3(arg0, arg1);
     }
   }
-  let obj = {
-    key: "actions",
-    get() {
-      return this.definition.actions;
-    }
-  };
-  const items = [obj, , , , ];
-  obj = {
-    key: "load",
-    value() {
-      const self = this;
-      if (null == this.module) {
-        const definition = self.definition;
-        self.module = definition.require();
-      }
-    }
-  };
-  items[1] = obj;
-  obj = {
-    key: "reset",
-    value() {
-      const _module = this.module;
-      if (null != _module) {
-        _module.resetInMemoryState();
-      }
-    }
-  };
-  items[2] = obj;
-  items[3] = {
-    key: "execute",
-    value(arg0, arg1) {
-      this.load();
-      if (null != this.module) {
-        const actions = this.module.actions;
-        if (null != actions[arg0.type]) {
-          obj.call(actions, arg0, arg1);
-        }
-      }
-    }
-  };
-  items[4] = {
-    key: "validateInDev",
-    value() {
+};
+prototype["validateInDev"] = function validateInDev() {
 
-    }
-  };
-  return callback(Entry, items);
-})();
-const result = require("set").fileFinishedImporting("modules/app_database/system/AppDatabaseManager.Entry.tsx");
+};
 
-export const Entry = tmp2;
+export { Entry };

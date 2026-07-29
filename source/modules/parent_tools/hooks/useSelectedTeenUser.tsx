@@ -1,21 +1,21 @@
-// Module ID: 13903
-// Function ID: 106352
+// Module ID: 13924
+// Function ID: 13925
 // Name: useSelectedTeenUser
-// Dependencies: [1850, 5778, 5775, 6236, 624, 2]
+// Dependencies: [1874, 5796, 5793, 6256, 647, 2]
 // Exports: useSelectedTeenUser, useShouldLoadSettingsForSelectedTeenUser, useTeenUserForId
 
-// Module 13903 (useSelectedTeenUser)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_4 from "_isNativeReflectConstruct";
-import closure_5 from "_isNativeReflectConstruct";
+// Module 13924 (useSelectedTeenUser)
+import mergeGuildAvatar from "mergeGuildAvatar";
+import getSettings from "getSettings";
+import freshTeenActivityWithMap from "freshTeenActivityWithMap";
 
 const require = arg1;
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/parent_tools/hooks/useSelectedTeenUser.tsx");
+const result = require("freshTeenActivityWithMap").fileFinishedImporting("modules/parent_tools/hooks/useSelectedTeenUser.tsx");
 
 export const useSelectedTeenUser = function useSelectedTeenUser() {
-  const _require = importDefault(6236)();
-  const items = [closure_5, _isNativeReflectConstruct];
-  return _require(624).useStateFromStores(items, () => {
+  const _require = importDefault(6256)();
+  const items = [freshTeenActivityWithMap, mergeGuildAvatar];
+  return _require(647).useStateFromStores(items, () => {
     if (true !== closure_0) {
       return outer1_3.getCurrentUser();
     } else {
@@ -30,29 +30,30 @@ export const useSelectedTeenUser = function useSelectedTeenUser() {
 };
 export const useTeenUserForId = function useTeenUserForId(gifterUserId) {
   const _require = gifterUserId;
-  const items = [_isNativeReflectConstruct];
-  return _require(624).useStateFromStores(items, () => {
+  const items = [mergeGuildAvatar];
+  return _require(647).useStateFromStores(items, () => {
     const user = outer1_3.getUser(closure_0);
     return null != user ? user : undefined;
   });
 };
 export const useShouldLoadSettingsForSelectedTeenUser = function useShouldLoadSettingsForSelectedTeenUser() {
   selectedTeenId = selectedTeenId.getSelectedTeenId();
-  const items = [closure_4];
-  const stateFromStoresObject = selectedTeenId(624).useStateFromStoresObject(items, () => {
-    const obj = {};
+  const items = [getSettings];
+  const stateFromStoresObject = selectedTeenId(647).useStateFromStoresObject(items, () => {
     let hasSettingsForUserResult = null != selectedTeenId;
     if (hasSettingsForUserResult) {
-      hasSettingsForUserResult = outer1_4.hasSettingsForUser(selectedTeenId);
+      hasSettingsForUserResult = outer1_4.hasSettingsForUser(tmp);
     }
-    obj.hasLoadedSettings = hasSettingsForUserResult;
-    obj.isLoading = outer1_4.isLoading;
-    return obj;
+    return { hasLoadedSettings: hasSettingsForUserResult, isLoading: outer1_4.isLoading };
   });
+  const hasLoadedSettings = stateFromStoresObject.hasLoadedSettings;
   let tmp4 = null !== selectedTeenId;
   if (tmp4) {
-    tmp4 = !stateFromStoresObject.hasLoadedSettings && !tmp3;
-    const tmp5 = !stateFromStoresObject.hasLoadedSettings && !tmp3;
+    let tmp5 = !hasLoadedSettings;
+    if (!hasLoadedSettings) {
+      tmp5 = !tmp3;
+    }
+    tmp4 = tmp5;
   }
   return tmp4;
 };

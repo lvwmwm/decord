@@ -1,77 +1,81 @@
-// Module ID: 7808
-// Function ID: 61850
+// Module ID: 7831
+// Function ID: 7832
 // Name: getPremiumGroupInviteEmbedText
-// Dependencies: [1850, 3825, 4004, 1212, 2781, 2, 7809]
+// Dependencies: [1874, 3849, 4028, 1236, 2805, 2, 7832]
 // Exports: getPremiumGroupInviteEmbedText, shouldShowPrimaryReminderNagbar, useCheckoutInstancePremiumGroupPurchaseEligibility, useIsEligibleForPremiumGroupMarketingMaterials, useIsEligibleForPremiumGroupNitroTabMarketingMaterials, useIsEligibleForPremiumGroupPurchase
 
-// Module 7808 (getPremiumGroupInviteEmbedText)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import TOTAL_PREMIUM_GROUP_MEMBER_SEATS from "TOTAL_PREMIUM_GROUP_MEMBER_SEATS";
+// Module 7831 (getPremiumGroupInviteEmbedText)
+import mergeGuildAvatar from "mergeGuildAvatar";
+import SubscriptionStatusTypes from "SubscriptionStatusTypes";
 
-let closure_4;
-let closure_5;
+let c4;
+let c5;
 const require = arg1;
-({ getPremiumGroupProductName: closure_4, HELP_CENTER_LINK: closure_5 } = TOTAL_PREMIUM_GROUP_MEMBER_SEATS);
-const result = require("conceal").fileFinishedImporting("modules/premium/premium_group/PremiumGroupUtils.native.tsx");
-for (const key10030 in require("getPriceString")) {
-  let tmp4 = key10030;
-  arg5[key10030] = require("getPriceString")[key10030];
+({ getPremiumGroupProductName: c4, HELP_CENTER_LINK: c5 } = SubscriptionStatusTypes);
+const result = require("nameFromUser").fileFinishedImporting("modules/premium/premium_group/PremiumGroupUtils.native.tsx");
+for (const key10025 in require("getPriceString")) {
+  let tmp4 = key10025;
+  arg5[key10025] = require("getPriceString")[key10025];
   continue;
 }
 
-export const getPremiumGroupInviteEmbedText = function getPremiumGroupInviteEmbedText(sender) {
+export const getPremiumGroupInviteEmbedText = function getPremiumGroupInviteEmbedText(isSender) {
   let channel;
-  let isSender;
-  sender = sender.sender;
-  ({ channel, isSender } = sender);
+  let sender;
+  ({ sender, channel } = isSender);
   const tmp = callback();
-  if (isSender) {
-    const tmp7 = (function getReceiverName(sender, channel) {
-      let closure_0 = sender;
-      if (null == channel) {
-        return null;
-      } else {
-        const recipients = channel.recipients;
-        let found;
-        if (null != recipients) {
-          found = recipients.find((arg0) => arg0 !== sender.id);
-        }
-        const user = outer1_3.getUser(found);
-        let nameFromUserResult = null;
-        if (null != user) {
-          nameFromUserResult = outer1_0(outer1_2[2]).nameFromUser(user);
-          const obj = outer1_0(outer1_2[2]);
-        }
-        return nameFromUserResult;
-      }
-    })(sender, channel);
+  if (isSender.isSender) {
     let tmp8 = null;
-    if (null != tmp7) {
-      let obj = {};
-      const intl4 = require(1212) /* getSystemLocale */.intl;
-      obj = { receiverName: tmp7, premiumGroupProductName: tmp };
-      obj.message = intl4.format(importDefault(2781).MkcFjx, obj);
-      const intl5 = require(1212) /* getSystemLocale */.intl;
-      const obj1 = { premiumGroupProductName: tmp };
-      obj.header = intl5.formatToPlainString(importDefault(2781)["5uwv8J"], obj1);
-      const intl6 = require(1212) /* getSystemLocale */.intl;
-      const obj2 = { receiverName: tmp7 };
-      obj.body = intl6.formatToPlainString(importDefault(2781)["AmE0B/"], obj2);
-      tmp8 = obj;
+    if (null != channel) {
+      const recipients = channel.recipients;
+      let found;
+      if (recipients != null) {
+        found = recipients.find((arg0) => arg0 !== sender.id);
+      }
+      user = user.getUser(found);
+      let nameFromUserResult = null;
+      if (null != user) {
+        let obj4 = sender(4028);
+        nameFromUserResult = obj4.nameFromUser(user);
+      }
+      tmp8 = nameFromUserResult;
     }
-    return tmp8;
+    let tmp15 = null;
+    if (null != tmp8) {
+      let obj = { message: null, header: null, body: null };
+      const intl4 = sender(1236).intl;
+      obj = { receiverName: null, premiumGroupProductName: null };
+      obj[0] = tmp8;
+      obj[1] = tmp;
+      obj[0] = intl4.format(importDefault(2805).MkcFjx, obj);
+      const intl5 = sender(1236).intl;
+      const obj1 = { premiumGroupProductName: null };
+      obj1[0] = tmp;
+      obj[1] = intl5.formatToPlainString(importDefault(2805)["5uwv8J"], obj1);
+      const intl6 = sender(1236).intl;
+      const obj2 = { receiverName: null };
+      obj2[0] = tmp8;
+      obj[2] = intl6.formatToPlainString(importDefault(2805)["AmE0B/"], obj2);
+      tmp15 = obj;
+    }
+    return tmp15;
   } else {
-    obj = require(4004) /* conceal */;
-    let nameFromUserResult = obj.nameFromUser(sender);
-    const obj3 = {};
-    const intl = require(1212) /* getSystemLocale */.intl;
-    const obj4 = { senderName: nameFromUserResult, premiumGroupProductName: tmp, helpCenterLink: closure_5 };
-    obj3.message = intl.format(importDefault(2781)["51Kv/4"], obj4);
-    const intl2 = require(1212) /* getSystemLocale */.intl;
-    obj3.header = intl2.string(importDefault(2781).ssge1y);
-    const intl3 = require(1212) /* getSystemLocale */.intl;
-    const obj5 = { senderName: nameFromUserResult, premiumGroupProductName: tmp };
-    obj3.body = intl3.formatToPlainString(importDefault(2781).tej76V, obj5);
+    obj = sender(4028);
+    const nameFromUserResult1 = obj.nameFromUser(sender);
+    const obj3 = { message: null, header: null, body: null };
+    const intl = sender(1236).intl;
+    obj4 = { senderName: null, premiumGroupProductName: null, helpCenterLink: null };
+    obj4[0] = nameFromUserResult1;
+    obj4[1] = tmp;
+    obj4[2] = closure_5;
+    obj3[0] = intl.format(importDefault(2805)["51Kv/4"], obj4);
+    const intl2 = sender(1236).intl;
+    obj3[1] = intl2.string(importDefault(2805).ssge1y);
+    const intl3 = sender(1236).intl;
+    const obj5 = { senderName: null, premiumGroupProductName: null };
+    obj5[0] = nameFromUserResult1;
+    obj5[1] = tmp;
+    obj3[2] = intl3.formatToPlainString(importDefault(2805).tej76V, obj5);
     return obj3;
   }
 };

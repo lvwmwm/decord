@@ -1,41 +1,44 @@
-// Module ID: 10908
-// Function ID: 84551
+// Module ID: 10932
+// Function ID: 10933
 // Name: SummaryActionSheet
-// Dependencies: [31, 27, 1348, 4384, 9481, 653, 33, 4133, 10908, 1935, 4165, 689, 6030, 9496, 3865, 1212, 4347, 8172, 6058, 6070, 4016, 21, 1198, 5221, 5155, 10909, 4161, 10911, 10912, 10101, 7709, 2]
+// Dependencies: [19, 17, 1372, 4407, 9505, 676, 21, 4157, 10932, 1959, 4189, 712, 6048, 9520, 3889, 1236, 4372, 8196, 6076, 6088, 4040, 11, 1222, 5243, 5177, 10933, 4185, 10935, 10936, 10122, 7732, 2]
 // Exports: default, openSummaryDividerActionSheet
 
-// Module 10908 (SummaryActionSheet)
-import set from "set";
-import { View } from "SummaryActionSheetButton";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_6 from "_isNativeReflectConstruct";
-import closure_7 from "_isNativeReflectConstruct";
+// Module 10932 (SummaryActionSheet)
+import dispatcher from "dispatcher";
+import { View } from "showShareActionSheet";
+import ensureGuildLoaded from "ensureGuildLoaded";
+import reinjectEphemerals from "reinjectEphemerals";
+import handleQuickSwitcherUpdate from "handleQuickSwitcherUpdate";
 import ME from "ME";
-import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import jsxProd from "DISCORD_EPOCH";
+import createCacheKey from "createCacheKey";
 
-let closure_10;
-let closure_11;
-let closure_8;
-let closure_9;
+let c10;
+let c9;
+let metroImportAll;
+let unpackModuleId;
 const require = arg1;
-({ AnalyticsSections: closure_8, MessageFlags: closure_9 } = ME);
-({ jsx: closure_10, jsxs: closure_11 } = jsxProd);
-_createForOfIteratorHelperLoose = { summaryContainer: { padding: 16, margin: 16, marginBottom: 24, justifyContent: "center", alignItems: "center" }, summaryContent: { textAlign: "center" } };
-_createForOfIteratorHelperLoose = { marginBottom: 8, borderRadius: require("_createForOfIteratorHelperLoose").radii.round, border: 1, overflow: "hidden", alignItems: "center", justifyContent: "center", backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BRAND };
-_createForOfIteratorHelperLoose.summaryIconContainer = _createForOfIteratorHelperLoose;
-let obj1 = { margin: 8, width: 20, height: 20, tintColor: require("_createForOfIteratorHelperLoose").colors.WHITE };
-_createForOfIteratorHelperLoose.summaryIcon = obj1;
-_createForOfIteratorHelperLoose.summaryTopic = { marginBottom: 4 };
-_createForOfIteratorHelperLoose.divider = { height: 1, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BORDER_SUBTLE };
-_createForOfIteratorHelperLoose.actionsContainer = { flexDirection: "row", justifyContent: "space-evenly", marginBottom: 16 };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-let obj2 = { height: 1, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BORDER_SUBTLE };
-let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/summaries/native/SummaryActionSheet.tsx");
+({ AnalyticsSections: metroImportAll, MessageFlags: c9 } = ME);
+({ jsx: c10, jsxs: unpackModuleId } = jsxProd);
+createCacheKey = { summaryContainer: { padding: 16, margin: 16, marginBottom: 24, justifyContent: "center", alignItems: "center" }, summaryContent: { textAlign: "center" }, summaryIconContainer: null, summaryIcon: null, summaryTopic: null, divider: null, actionsContainer: null };
+createCacheKey = { marginBottom: 8, borderRadius: require("Themes").radii.round, border: 1, overflow: "hidden", alignItems: "center", justifyContent: "center", backgroundColor: require("Themes").colors.BACKGROUND_BRAND };
+createCacheKey[2] = createCacheKey;
+createCacheKey[3] = { margin: 8, width: 20, height: 20, tintColor: require("Themes").colors.WHITE };
+createCacheKey[4] = { marginBottom: 4 };
+let obj1 = { margin: 8, width: 20, height: 20, tintColor: require("Themes").colors.WHITE };
+createCacheKey[5] = { height: 1, backgroundColor: require("Themes").colors.BORDER_SUBTLE };
+createCacheKey[6] = { flexDirection: "row", justifyContent: "space-evenly", marginBottom: 16 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let obj2 = { height: 1, backgroundColor: require("Themes").colors.BORDER_SUBTLE };
+let result = require("ensureGuildLoaded").fileFinishedImporting("modules/summaries/native/SummaryActionSheet.tsx");
 
 export default function SummaryActionSheet(summary) {
   summary = summary.summary;
-  const tmp = _createForOfIteratorHelperLoose();
+  let channel;
+  let message;
+  const tmp = createCacheKey();
+  let obj = React;
   channel = channel.getChannel(summary.channelId);
   message = message.getMessage(summary.channelId, summary.startId);
   let hasFlagResult = null != message;
@@ -47,150 +50,152 @@ export default function SummaryActionSheet(summary) {
     canStartPublicThread = !message.hasFlag(constants.HAS_THREAD);
   }
   if (canStartPublicThread) {
-    let obj1 = summary(message[12]);
-    canStartPublicThread = obj1.computeCanStartPublicThread(channel, message);
+    let obj2 = summary(message[12]);
+    canStartPublicThread = obj2.computeCanStartPublicThread(channel, message);
   }
   let guild_id;
-  if (null != channel) {
+  if (channel != null) {
     guild_id = channel.guild_id;
   }
   const items = [guild_id];
   const items1 = [summary, channel];
-  const callback = React.useCallback(() => {
+  const callback = obj.useCallback(() => {
     let obj = channel(message[7]);
     obj.hideActionSheet();
     let guild_id;
-    if (null != channel) {
-      guild_id = channel.guild_id;
+    if (channel != null) {
+      guild_id = tmp4.guild_id;
     }
     if (null != guild_id) {
-      obj = {};
       let guild_id1;
-      const obj2 = channel(message[7]);
-      if (null != channel) {
-        guild_id1 = channel.guild_id;
+      const tmpResult = channel(tmp2[7]);
+      if (tmp4 != null) {
+        guild_id1 = tmp4.guild_id;
       }
-      obj.guildId = guild_id1;
-      obj2.openLazy(summary(message[9])(message[13], message.paths), "GuildHighlightsNotifications", obj);
-      const tmp7 = summary(message[9])(message[13], message.paths);
+      obj = { guildId: null };
+      obj[0] = guild_id1;
+      tmpResult.openLazy(summary(tmp2[9])(tmp2[13], tmp2.paths), "GuildHighlightsNotifications", obj);
+      const tmp7 = summary(tmp2[9])(tmp2[13], tmp2.paths);
     }
   }, items);
   const items2 = [summary, channel, message];
-  const callback1 = React.useCallback(() => {
+  const callback1 = obj.useCallback(() => {
     let obj = channel(message[7]);
     obj.hideActionSheet();
     if (null != channel) {
-      const intl2 = summary(message[15]).intl;
-      obj = { topic: summary.topic };
-      const obj4 = summary(message[16]);
-      obj.url = obj4.getChannelPermalink(channel.guild_id, channel.id, summary.startId, summary.id);
-      const formatToPlainStringResult = intl2.formatToPlainString(summary(message[15]).t.I3yTDn, obj);
-      obj = { message: formatToPlainStringResult, subject: summary.topic };
-      summary(message[17]).showShareActionSheet(obj, outer1_8.SUMMARY_ACTION_SHEET);
-      const obj5 = summary(message[17]);
+      const intl2 = summary(tmp[15]).intl;
+      obj = { topic: null, url: null };
+      obj[0] = summary.topic;
+      const obj4 = summary(tmp[16]);
+      obj[1] = obj4.getChannelPermalink(tmp3.guild_id, tmp3.id, summary.startId, summary.id);
+      const formatToPlainStringResult = intl2.formatToPlainString(summary(tmp[15]).t.I3yTDn, obj);
+      obj = { message: null, subject: null };
+      obj[0] = formatToPlainStringResult;
+      obj[1] = summary.topic;
+      summary(tmp[17]).showShareActionSheet(obj, outer1_8.SUMMARY_ACTION_SHEET);
+      const obj5 = summary(tmp[17]);
     } else {
-      const intl = summary(message[15]).intl;
-      summary(message[14]).presentFailedToast(intl.string(summary(message[15]).t.gvkcQl));
-      const obj2 = summary(message[14]);
+      const intl = summary(tmp[15]).intl;
+      summary(tmp[14]).presentFailedToast(intl.string(summary(tmp[15]).t.gvkcQl));
+      const obj2 = summary(tmp[14]);
     }
   }, items1);
   const items3 = [channel, message];
-  const callback2 = React.useCallback(() => {
+  const callback2 = obj.useCallback(() => {
     let obj = channel(message[7]);
     obj.hideActionSheet();
     if (null != channel) {
       if (null != message) {
-        const result = channel(message[18]).openThreadCreationForMobile(channel, summary.startId, outer1_8.SUMMARY_ACTION_SHEET);
-        const obj3 = channel(message[18]);
-        obj = { name: summary.topic };
-        channel(message[19]).changeThreadSettings(channel.id, obj);
-        const obj4 = channel(message[19]);
-        const obj6 = summary(message[20]);
-        if (!obj6.navigateToCreateThread(channel.guild_id, obj7.castMessageIdAsChannelId(message.id))) {
-          const obj8 = summary(message[22]);
-          obj8.transitionToGuild(channel.guild_id, channel(message[21]).castMessageIdAsChannelId(message.id));
-          const obj9 = channel(message[21]);
+        let tmpResult = tmp(tmp2[18]);
+        const result = tmpResult.openThreadCreationForMobile(tmp4, summary.startId, outer1_8.SUMMARY_ACTION_SHEET);
+        tmpResult = tmp(tmp2[19]);
+        obj = { name: null };
+        obj[0] = summary.topic;
+        tmpResult.changeThreadSettings(tmp4.id, obj);
+        const obj6 = summary(tmp2[20]);
+        const tmp11 = summary;
+        if (!obj6.navigateToCreateThread(tmp4.guild_id, tmpResult1.castMessageIdAsChannelId(tmp5.id))) {
+          const tmp11Result = tmp11(tmp2[22]);
+          tmp11Result.transitionToGuild(tmp4.guild_id, tmp(tmp2[21]).castMessageIdAsChannelId(tmp5.id));
+          const tmpResult2 = tmp(tmp2[21]);
         }
-        obj7 = channel(message[21]);
+        tmpResult1 = tmp(tmp2[21]);
       }
     }
-    const intl = summary(message[15]).intl;
+    const intl = summary(tmp2[15]).intl;
     summary(message[14]).presentError(intl.string(summary(message[15]).t["/+DWeQ"]));
   }, items2);
-  const callback3 = React.useCallback(() => {
+  const callback3 = obj.useCallback(() => {
     channel(message[7]).hideActionSheet();
-    let tmp2 = null != channel;
-    if (tmp2) {
-      tmp2 = null != message;
+    let tmp5 = null != channel;
+    if (tmp5) {
+      tmp5 = null != message;
     }
-    if (tmp2) {
-      const obj2 = summary(message[22]);
-      obj2.transitionToGuild(channel.guild_id, channel(message[21]).castMessageIdAsChannelId(message.id));
-      const obj3 = channel(message[21]);
+    if (tmp5) {
+      const obj2 = summary(tmp2[22]);
+      obj2.transitionToGuild(channel.guild_id, channel(tmp2[21]).castMessageIdAsChannelId(message.id));
+      const tmpResult = channel(tmp2[21]);
     }
   }, items3);
-  let obj = { ref: React.useRef(null) };
-  obj = { bottom: true };
-  obj1 = { style: tmp.summaryContainer };
-  let obj2 = { style: tmp.summaryIconContainer, children: callback(summary(message[25]).TopicsIcon, { style: tmp.summaryIcon, size: "custom" }) };
-  const items4 = [callback(View, obj2), , ];
-  let obj4 = { style: null, variant: "heading-md/extrabold", color: "mobile-text-heading-primary" };
+  obj = { ref: React.useRef(null), children: null };
+  obj = { style: tmp.summaryContainer, children: null };
+  const obj1 = { style: tmp.summaryIconContainer, children: null };
+  obj2 = { style: tmp.summaryIcon, size: "custom" };
+  obj1[1] = callback(summary(message[25]).TopicsIcon, obj2);
+  const items4 = [callback(View, obj1), , ];
   const items5 = [, ];
   ({ summaryContent: arr6[0], summaryTopic: arr6[1] } = tmp);
-  obj4.style = items5;
-  obj4.children = summary.topic;
-  items4[1] = callback(summary(message[26]).Text, obj4);
-  let obj5 = { style: null, variant: "heading-md/medium", color: "text-default" };
+  items4[1] = callback(summary(message[26]).Text, { style: items5, variant: "heading-md/extrabold", color: "mobile-text-heading-primary", children: summary.topic });
   const items6 = [tmp.summaryContent];
-  obj5.style = items6;
-  obj5.children = summary.summShort;
-  items4[2] = callback(summary(message[26]).Text, obj5);
-  obj1.children = items4;
-  const items7 = [callback2(View, obj1), callback(View, { style: tmp.divider }), ];
-  let obj7 = { style: tmp.actionsContainer };
-  let obj8 = {};
+  items4[2] = callback(summary(message[26]).Text, { style: items6, variant: "heading-md/medium", color: "text-default", children: summary.summShort });
+  obj[1] = items4;
+  const items7 = [callback2(View, obj), callback(View, { style: tmp.divider }), ];
+  let obj6 = { style: tmp.actionsContainer, children: null };
+  const obj7 = { label: null, iconSource: null, onPress: null };
   let intl = summary(message[15]).intl;
-  obj8.label = intl.string(summary(message[15]).t["NY/nlb"]);
-  obj8.iconSource = channel(message[28]);
-  obj8.onPress = callback1;
-  const items8 = [callback(summary(message[27]).SummaryActionSheetButton, obj8), , , ];
+  obj7[0] = intl.string(summary(message[15]).t["NY/nlb"]);
+  obj7[1] = channel(message[28]);
+  obj7[2] = callback1;
+  const items8 = [callback(summary(message[27]).SummaryActionSheetButton, obj7), , , ];
   if (canStartPublicThread) {
-    let obj9 = {};
-    let intl2 = summary(message[15]).intl;
-    obj9.label = intl2.string(summary(message[15]).t.rBIGBL);
-    obj9.iconSource = channel(message[29]);
-    obj9.onPress = callback2;
-    canStartPublicThread = callback(summary(message[27]).SummaryActionSheetButton, obj9);
+    const obj8 = { label: null, iconSource: null, onPress: null };
+    let intl2 = tmp16(tmp17[15]).intl;
+    obj8[0] = intl2.string(tmp16(tmp17[15]).t.rBIGBL);
+    obj8[1] = tmp20(tmp17[29]);
+    obj8[2] = callback2;
+    canStartPublicThread = tmp15(tmp16(tmp17[27]).SummaryActionSheetButton, obj8);
   }
   items8[1] = canStartPublicThread;
   if (hasFlagResult) {
-    const obj10 = {};
-    const intl3 = summary(message[15]).intl;
-    obj10.label = intl3.string(summary(message[15]).t["39d0Wj"]);
-    obj10.iconSource = channel(message[29]);
-    obj10.onPress = callback3;
-    hasFlagResult = callback(summary(message[27]).SummaryActionSheetButton, obj10);
+    const obj9 = { label: null, iconSource: null, onPress: null };
+    const intl3 = tmp16(tmp17[15]).intl;
+    obj9[0] = intl3.string(tmp16(tmp17[15]).t["39d0Wj"]);
+    obj9[1] = tmp20(tmp17[29]);
+    obj9[2] = callback3;
+    hasFlagResult = tmp15(tmp16(tmp17[27]).SummaryActionSheetButton, obj9);
   }
+  const obj10 = { bottom: true, children: null };
   items8[2] = hasFlagResult;
-  const obj11 = {};
-  const intl4 = summary(message[15]).intl;
-  obj11.label = intl4.string(summary(message[15]).t.QLkZ39);
-  obj11.iconSource = channel(message[30]);
-  obj11.onPress = callback;
+  const obj11 = { label: null, iconSource: null, onPress: null };
+  const intl4 = tmp16(tmp17[15]).intl;
+  obj11[0] = intl4.string(summary(message[15]).t.QLkZ39);
+  obj11[1] = channel(message[30]);
+  obj11[2] = callback;
   items8[3] = callback(summary(message[27]).SummaryActionSheetButton, obj11);
-  obj7.children = items8;
-  items7[2] = callback2(View, obj7);
-  obj.children = items7;
-  obj.children = callback2(summary(message[24]).SafeAreaPaddingView, obj);
+  obj6[1] = items8;
+  items7[2] = callback2(View, obj6);
+  obj10[1] = items7;
+  obj[1] = callback2(summary(message[24]).SafeAreaPaddingView, obj10);
   return callback(summary(message[23]).BottomSheet, obj);
 };
-export const openSummaryDividerActionSheet = function openSummaryDividerActionSheet(arg0, arg1) {
-  const findSummaryResult = closure_7.findSummary(arg0, arg1);
+export const openSummaryDividerActionSheet = function openSummaryDividerActionSheet(channelId, summaryId) {
+  const findSummaryResult = handleQuickSwitcherUpdate.findSummary(channelId, summaryId);
   if (null != findSummaryResult) {
-    let obj = importDefault(4133);
+    let obj = importDefault(4157);
     const _HermesInternal = HermesInternal;
-    obj = { summary: findSummaryResult };
-    obj.openLazy(require(1935) /* maybeLoadBundle */(10908, dependencyMap.paths), "SummaryDivider" + arg1, obj);
-    const tmp5 = require(1935) /* maybeLoadBundle */(10908, dependencyMap.paths);
+    obj = { summary: null };
+    obj[0] = findSummaryResult;
+    obj.openLazy(require(1959) /* asyncRequireImpl */(10932, dependencyMap.paths), "SummaryDivider" + summaryId, obj);
+    const tmp5 = require(1959) /* asyncRequireImpl */(10932, dependencyMap.paths);
   }
 };

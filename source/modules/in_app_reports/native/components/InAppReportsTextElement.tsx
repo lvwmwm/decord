@@ -1,20 +1,20 @@
-// Module ID: 7688
-// Function ID: 61383
+// Module ID: 7711
+// Function ID: 7712
 // Name: TextElement
-// Dependencies: [31, 27, 33, 4165, 4597, 4161, 2]
+// Dependencies: [19, 17, 21, 4189, 4619, 4185, 2]
 // Exports: default
 
-// Module 7688 (TextElement)
-import result from "result";
+// Module 7711 (TextElement)
+import noop from "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_5;
+let c5;
 let closure_6;
 const require = arg1;
-({ jsx: closure_5, jsxs: closure_6 } = jsxProd);
-let closure_7 = _createForOfIteratorHelperLoose.createStyles({ container: { marginBottom: 16, paddingHorizontal: 16 }, header: { marginBottom: 8 }, body: { marginBottom: 16 } });
+({ jsx: c5, jsxs: closure_6 } = jsxProd);
+let closure_7 = createCacheKey.createStyles({ container: { marginBottom: 16, paddingHorizontal: 16 }, header: { marginBottom: 8 }, body: { marginBottom: 16 } });
 const result = require("jsxProd").fileFinishedImporting("modules/in_app_reports/native/components/InAppReportsTextElement.tsx");
 
 export default function TextElement(element) {
@@ -23,31 +23,36 @@ export default function TextElement(element) {
   const data = element.element.data;
   ({ header, body } = data);
   const tmp = callback2();
-  let obj = importAll(4597);
-  let tmp2 = null;
+  let obj = importAll(4619);
+  let tmp3 = null;
   if (data.is_localized) {
     if (null != header) {
-      obj = { style: tmp.container };
-      let tmp6 = null != header;
-      if (tmp6) {
-        obj = { style: tmp.header, variant: "heading-md/extrabold", color: "mobile-text-heading-primary", children: header };
-        tmp6 = callback(require(4161) /* Text */.Text, obj);
+      obj = { style: null, children: null };
+      obj[0] = tmp.container;
+      let tmp7 = null != header;
+      if (tmp7) {
+        obj = { style: null, variant: "heading-md/extrabold", color: "mobile-text-heading-primary", children: null };
+        obj[0] = tmp.header;
+        obj[3] = header;
+        tmp7 = callback(require(4185) /* Text */.Text, obj);
       }
-      const items = [tmp6, ];
+      const items = [tmp7, ];
       let tmp10 = null != body;
       if (tmp10) {
-        const obj1 = { style: tmp.body, variant: "text-md/medium", children: ref.current(body) };
-        tmp10 = callback(require(4161) /* Text */.Text, obj1);
+        const obj1 = { style: null, variant: "text-md/medium", children: null };
+        obj1[0] = tmp.body;
+        obj1[2] = ref.current(body);
+        tmp10 = callback(require(4185) /* Text */.Text, obj1);
       }
       items[1] = tmp10;
-      obj.children = items;
-      let tmp4Result = closure_6(View, obj);
-      const tmp4 = closure_6;
-      const tmp5 = View;
+      obj[1] = items;
+      let tmp5Result = closure_6(View, obj);
+      const tmp5 = closure_6;
+      const tmp6 = View;
     } else {
-      tmp4Result = null;
+      tmp5Result = null;
     }
-    tmp2 = tmp4Result;
+    tmp3 = tmp5Result;
   }
-  return tmp2;
+  return tmp3;
 };

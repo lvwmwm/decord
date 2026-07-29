@@ -1,11 +1,11 @@
-// Module ID: 8826
-// Function ID: 69733
+// Module ID: 8850
+// Function ID: 8851
 // Name: isVideoBackgroundSupported
-// Dependencies: [4212, 4226, 2]
+// Dependencies: [4236, 4250, 2]
 // Exports: default
 
-// Module 8826 (isVideoBackgroundSupported)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 8850 (isVideoBackgroundSupported)
+import _detectH265HardwareDecode from "_detectH265HardwareDecode";
 import { Features } from "DesktopSources";
 
 const result = require("set").fileFinishedImporting("modules/video_backgrounds/isVideoBackgroundSupported.tsx");
@@ -13,7 +13,7 @@ const result = require("set").fileFinishedImporting("modules/video_backgrounds/i
 export default function isVideoBackgroundSupported() {
   let obj = arg0;
   if (arg0 === undefined) {
-    obj = _isNativeReflectConstruct;
+    obj = _detectH265HardwareDecode;
   }
   let supportsResult = obj.supports(Features.MEDIAPIPE);
   if (supportsResult) {

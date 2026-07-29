@@ -1,115 +1,120 @@
-// Module ID: 12457
-// Function ID: 96532
+// Module ID: 12479
+// Function ID: 12480
 // Name: SharedUser
-// Dependencies: [27, 653, 33, 4165, 689, 4004, 6193, 1273, 4161, 1212, 4578, 4664, 4133, 4175, 1921, 5221, 5220, 4576, 6763, 2]
+// Dependencies: [17, 676, 21, 4189, 712, 4028, 6213, 1297, 4185, 1236, 4600, 4686, 4157, 4199, 1945, 5243, 5242, 4598, 6785, 2]
 // Exports: default
 
-// Module 12457 (SharedUser)
-import { View } from "get ActivityIndicator";
+// Module 12479 (SharedUser)
+import { View } from "Stack";
 import { HelpdeskArticles } from "ME";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_5;
+let c5;
 let closure_6;
-let closure_7;
+let error;
 function SharedUser(user) {
   user = user.user;
   const tmp = callback3();
-  let obj = importDefault(4004);
+  let obj = importDefault(4028);
   const name = obj.getName(user);
-  const tmp3 = user.trialCreationResult === user(6193).CreateReferralStatus.FAIL;
-  obj = { style: tmp.recipientRow };
-  obj = {};
+  const tmp6 = user.trialCreationResult === user(6213).CreateReferralStatus.FAIL;
+  obj = { style: tmp.recipientRow, children: null };
   const items = [tmp.avatarContainer, ];
-  let erroredAvatar = tmp3;
-  if (tmp3) {
+  let erroredAvatar = tmp6;
+  if (tmp6) {
     erroredAvatar = tmp.erroredAvatar;
   }
+  obj = { style: items, size: tmp5(1297).AvatarSizes.REFRESH_MEDIUM_32, user, guildId: "Array" };
   items[1] = erroredAvatar;
-  obj.style = items;
-  obj.size = user(1273).AvatarSizes.REFRESH_MEDIUM_32;
-  obj.user = user;
-  obj.guildId = undefined;
-  const items1 = [callback(user(1273).Avatar, obj), , ];
-  if (tmp3) {
-    const obj1 = {};
-    const obj2 = { variant: "text-md/medium", color: "text-muted", style: tmp.recipientDisplayName, children: name };
-    const items2 = [callback(user(4161).Text, obj2), ];
-    const obj3 = { variant: "text-md/medium", color: "text-muted" };
-    const intl = user(1212).intl;
-    const obj4 = { userName: name };
-    obj3.children = intl.format(user(1212).t.RO3T4B, obj4);
-    items2[1] = callback(user(4161).Text, obj3);
-    obj1.children = items2;
-    let tmp10 = callback2(closure_6, obj1);
+  const items1 = [closure_5(user(1297).Avatar, obj), , ];
+  if (tmp6) {
+    const obj1 = { children: null };
+    const obj2 = { variant: "text-md/medium", color: "text-muted", style: null, children: null };
+    obj2[2] = tmp.recipientDisplayName;
+    obj2[3] = name;
+    const items2 = [tmp9(tmp5(4185).Text, obj2), ];
+    const obj3 = { variant: "text-md/medium", color: "text-muted", children: null };
+    const intl = tmp5(1236).intl;
+    const obj4 = { userName: null };
+    obj4[0] = name;
+    obj3[2] = intl.format(tmp5(1236).t.RO3T4B, obj4);
+    items2[1] = tmp9(tmp5(4185).Text, obj3);
+    obj1[0] = items2;
+    let tmp9Result = tmp7(closure_6, obj1);
   } else {
-    const obj5 = { variant: "text-md/medium", color: "text-strong", style: tmp.recipientDisplayName, children: name };
-    tmp10 = callback(user(4161).Text, obj5);
+    const obj5 = { variant: "text-md/medium", color: "text-strong", style: null, children: null };
+    obj5[2] = tmp.recipientDisplayName;
+    obj5[3] = name;
+    tmp9Result = tmp9(tmp5(4185).Text, obj5);
   }
-  items1[1] = tmp10;
-  const obj6 = { variant: "secondary", size: "sm" };
-  const intl2 = user(1212).intl;
-  obj6.text = intl2.string(user(1212).t["g33r/P"]);
-  const obj7 = { size: "xs", color: importDefault(689).colors.CONTROL_SECONDARY_TEXT_DEFAULT };
-  obj6.icon = callback(user(4664).ChatIcon, obj7);
-  obj6.onPress = function onPress() {
+  items1[1] = tmp9Result;
+  const obj6 = { variant: "secondary", size: "sm", text: null, icon: null, onPress: null };
+  const intl2 = tmp5(1236).intl;
+  obj6[2] = intl2.string(user(1236).t["g33r/P"]);
+  const obj7 = { size: "xs", color: null };
+  obj7[1] = importDefault(712).colors.CONTROL_SECONDARY_TEXT_DEFAULT;
+  obj6[3] = closure_5(user(4686).ChatIcon, obj7);
+  obj6[4] = function onPress() {
     let obj = outer1_1(outer1_2[12]);
     obj.hideActionSheet();
     obj = { recipientIds: user.id };
     outer1_1(outer1_2[13]).openPrivateChannel(obj);
   };
-  items1[2] = callback(user(4578).Button, obj6);
-  obj.children = items1;
-  return callback2(View, obj);
+  items1[2] = closure_5(user(4600).Button, obj6);
+  obj[1] = items1;
+  return closure_7(View, obj);
 }
-({ jsx: closure_5, Fragment: closure_6, jsxs: closure_7 } = jsxProd);
-let obj = {};
-obj = { paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16 };
-obj.content = obj;
-obj.headerAsset = { alignSelf: "center" };
-obj.header = { marginTop: require("_createForOfIteratorHelperLoose").space.PX_16, alignSelf: "center", paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_8, textAlign: "center" };
-let obj1 = { marginTop: require("_createForOfIteratorHelperLoose").space.PX_16, alignSelf: "center", paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_8, textAlign: "center" };
-obj.subheader = { textAlign: "center", paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_8, marginTop: require("_createForOfIteratorHelperLoose").space.PX_8 };
-let obj2 = { textAlign: "center", paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_8, marginTop: require("_createForOfIteratorHelperLoose").space.PX_8 };
-obj.recipientContainer = { gap: require("_createForOfIteratorHelperLoose").space.PX_16, marginTop: require("_createForOfIteratorHelperLoose").space.PX_16, paddingBottom: 21 };
-let obj4 = { flexDirection: "row", alignItems: "center", padding: require("_createForOfIteratorHelperLoose").space.PX_12, gap: require("_createForOfIteratorHelperLoose").space.PX_12, borderRadius: require("_createForOfIteratorHelperLoose").radii.md, borderWidth: 1, borderColor: require("_createForOfIteratorHelperLoose").colors.BORDER_MUTED };
-obj.recipientRow = obj4;
-obj.recipientDisplayName = { flex: 1 };
-obj.erroredAvatar = { opacity: 0.5 };
-obj.avatarContainer = { alignSelf: "center", justifyContent: "center" };
-let closure_8 = _createForOfIteratorHelperLoose.createStyles(obj);
-let obj3 = { gap: require("_createForOfIteratorHelperLoose").space.PX_16, marginTop: require("_createForOfIteratorHelperLoose").space.PX_16, paddingBottom: 21 };
+({ jsx: c5, Fragment: closure_6, jsxs: error } = jsxProd);
+let obj = { content: null, headerAsset: null, header: null, subheader: null, recipientContainer: null, recipientRow: null, recipientDisplayName: null, erroredAvatar: null, avatarContainer: null };
+obj = { paddingHorizontal: require("Themes").space.PX_16 };
+obj[0] = obj;
+obj[1] = { alignSelf: "center" };
+obj[2] = { marginTop: require("Themes").space.PX_16, alignSelf: "center", paddingHorizontal: require("Themes").space.PX_8, textAlign: "center" };
+let obj1 = { marginTop: require("Themes").space.PX_16, alignSelf: "center", paddingHorizontal: require("Themes").space.PX_8, textAlign: "center" };
+obj[3] = { textAlign: "center", paddingHorizontal: require("Themes").space.PX_8, marginTop: require("Themes").space.PX_8 };
+let obj2 = { textAlign: "center", paddingHorizontal: require("Themes").space.PX_8, marginTop: require("Themes").space.PX_8 };
+obj[4] = { gap: require("Themes").space.PX_16, marginTop: require("Themes").space.PX_16, paddingBottom: 21 };
+let obj3 = { gap: require("Themes").space.PX_16, marginTop: require("Themes").space.PX_16, paddingBottom: 21 };
+obj[5] = { flexDirection: "row", alignItems: "center", padding: require("Themes").space.PX_12, gap: require("Themes").space.PX_12, borderRadius: require("Themes").radii.md, borderWidth: 1, borderColor: require("Themes").colors.BORDER_MUTED };
+obj[6] = { flex: 1 };
+obj[7] = { opacity: 0.5 };
+obj[8] = { alignSelf: "center", justifyContent: "center" };
+let closure_8 = createCacheKey.createStyles(obj);
+let obj4 = { flexDirection: "row", alignItems: "center", padding: require("Themes").space.PX_12, gap: require("Themes").space.PX_12, borderRadius: require("Themes").radii.md, borderWidth: 1, borderColor: require("Themes").colors.BORDER_MUTED };
 const result = require("jsxProd").fileFinishedImporting("modules/premium/referral_program/native/ReferralProgramShareConfirmationActionSheet.tsx");
 
 export default function ReferralProgramShareConfirmationActionSheet(trialCreationResult) {
   const require = trialCreationResult;
   const tmp = callback3();
   let arr = Array.from(trialCreationResult.values());
-  if (0 === arr.filter((arg0) => arg0 === trialCreationResult(outer1_2[6]).CreateReferralStatus.SUCCESS).length) {
-    const intl2 = require(1212) /* getSystemLocale */.intl;
-    let stringResult = intl2.string(require(1212) /* getSystemLocale */.t["7VBEue"]);
+  if (0 === arr.filter((arg0) => arg0 === trialCreationResult(table[6]).CreateReferralStatus.SUCCESS).length) {
+    const intl2 = require(1236) /* getSystemLocale */.intl;
+    let stringResult = intl2.string(require(1236) /* getSystemLocale */.t["7VBEue"]);
+    let tmp5 = require;
   } else {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    stringResult = intl.string(require(1212) /* getSystemLocale */.t.tKCltd);
+    const intl = require(1236) /* getSystemLocale */.intl;
+    stringResult = intl.string(require(1236) /* getSystemLocale */.t.tKCltd);
+    tmp5 = require;
   }
-  const intl3 = require(1212) /* getSystemLocale */.intl;
-  let obj = {};
-  let obj1 = importDefault(1921);
-  obj.helpdeskArticle = obj1.getArticleURL(HelpdeskArticles.REFERRAL_PROGRAM);
-  obj = { startExpanded: true, contentStyles: tmp.content, header: callback(require(5220) /* RedesignBottomSheetTitleHeaderBase */.BottomSheetTitleHeader, { title: null }) };
-  obj = {};
-  obj1 = { style: tmp.headerAsset, children: callback(require(6763) /* AccountAgeTier10LargeBadge */.FistBumpSpotIllustration, {}) };
-  const items = [callback(View, obj1), , , ];
+  const intl3 = tmp5(1236).intl;
+  let obj = { helpdeskArticle: null };
+  let obj1 = importDefault(1945);
+  obj[0] = obj1.getArticleURL(HelpdeskArticles.REFERRAL_PROGRAM);
+  obj = { startExpanded: true, contentStyles: tmp.content, header: null, children: null };
+  obj[2] = callback(tmp5(5242).BottomSheetTitleHeader, { title: null });
+  obj = { children: null };
+  obj1 = { style: tmp.headerAsset, children: null };
+  obj1[1] = callback(tmp5(6785).FistBumpSpotIllustration, {});
+  const items = [callback(View, obj1), callback(tmp5(4185).Text, { variant: "heading-lg/bold", color: "mobile-text-heading-primary", style: tmp.header, children: stringResult }), , ];
+  const formatResult = intl3.format(tmp5(1236).t.AwGSWl, obj);
   const obj2 = { variant: "heading-lg/bold", color: "mobile-text-heading-primary", style: tmp.header, children: stringResult };
-  items[1] = callback(require(4161) /* Text */.Text, obj2);
-  const obj3 = { variant: "text-md/medium", color: "text-default", style: tmp.subheader, children: intl3.format(require(1212) /* getSystemLocale */.t.AwGSWl, obj) };
-  items[2] = callback(require(4161) /* Text */.Text, obj3);
-  const obj4 = { style: tmp.recipientContainer };
+  items[2] = callback(tmp5(4185).Text, { variant: "text-md/medium", color: "text-default", style: tmp.subheader, children: intl3.format(tmp5(1236).t.AwGSWl, obj) });
+  const obj4 = { style: tmp.recipientContainer, children: null };
   arr = Array.from(trialCreationResult.selectedUsers);
-  obj4.children = arr.map((id) => outer1_5(outer1_9, { user: id, trialCreationResult: trialCreationResult.get(id.id) }, id.id));
+  obj4[1] = arr.map((id) => outer1_5(outer1_9, { user: id, trialCreationResult: trialCreationResult.get(id.id) }, id.id));
   items[3] = callback(View, obj4);
-  obj.children = items;
-  obj.children = callback2(require(4576) /* Stack */.Stack, obj);
-  return callback(require(5221) /* Background */.BottomSheet, obj);
+  obj[0] = items;
+  obj[3] = callback2(tmp5(4598).Stack, obj);
+  return callback(tmp5(5243).BottomSheet, obj);
 };

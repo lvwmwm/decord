@@ -1,35 +1,76 @@
-// Module ID: 16657
-// Function ID: 129738
-// Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 31, 4255, 4220, 4226, 33, 3, 4506, 16658, 1935, 10728, 8814, 16660, 2]
+// Module ID: 16693
+// Function ID: 16694
+// Name: platformShowStreamFull
+// Dependencies: [19, 4279, 4244, 4250, 21, 3, 16694, 4529, 16695, 1959, 10752, 8838, 2]
 
-// Module 16657 (_isNativeReflectConstruct)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import makeButton from "makeButton";
-import getInputDeviceName from "getInputDeviceName";
-import set from "set";
-import _inherits from "_inherits";
-import "result";
-import closure_8 from "_isNativeReflectConstruct";
-import { ApplicationStreamPresets } from "makeButton";
+// Module 16693 (platformShowStreamFull)
+import "noop";
+import ApplicationStreamPresets from "ApplicationStreamPresets";
+import { ApplicationStreamPresets } from "RESOLUTION_720";
 import { MediaEngineContextTypes } from "DesktopSources";
 import { jsx } from "jsxProd";
-import importDefaultResult from "_getPrototypeOf";
-import tmp5 from "_createForOfIteratorHelperLoose";
+import "updateRegion";
 
 const require = arg1;
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
-  }
-  const result = _isNativeReflectConstruct();
+let obj = new require("DesktopSources")("ApplicationStreamingManager");
+obj.enableNativeLogger(true);
+class ApplicationStreamingManager extends tmp4 {
 }
-importDefaultResult = new importDefaultResult("ApplicationStreamingManager");
-importDefaultResult.enableNativeLogger(true);
-tmp5 = new tmp5();
-let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/go_live/native/ApplicationStreamingManager.tsx");
+const prototype = ApplicationStreamingManager.prototype;
+prototype["platformShowStreamFull"] = function platformShowStreamFull() {
+  let obj = importDefault(4529);
+  obj = {
+    importer() {
+      return callback(paths[9])(paths[8], paths.paths).then((arg0) => {
+        let closure_0 = arg0.default;
+        return (arg0) => {
+          const merged = Object.assign(arg0);
+          return outer1_6(closure_0, {});
+        };
+      });
+    }
+  };
+  obj.openLazy(obj);
+};
+prototype["platformHandleStreamStart"] = function platformHandleStreamStart(sourceId) {
+  let fps;
+  let preset;
+  let resolution;
+  let soundshareEnabled;
+  sourceId = sourceId.sourceId;
+  if (null != sourceId) {
+    let setGoLiveSource = importDefault;
+    let obj = importDefault(10752);
+    if (obj.getConfig({ location: "platformHandleStreamStart" }).showMobileGoLiveUpsell) {
+      state = state.getState();
+    } else {
+      state = { preset: null, resolution: 720, fps: 30, soundshareEnabled: true };
+      state[0] = ApplicationStreamPresets.PRESET_CUSTOM;
+    }
+    ({ preset, resolution, fps, soundshareEnabled } = state);
+    setGoLiveSource = setGoLiveSource(8838).setGoLiveSource;
+    obj = { desktopSettings: null, qualityOptions: null, context: null };
+    obj = { sourceId: null, sound: null };
+    obj[0] = sourceId;
+    obj[1] = soundshareEnabled;
+    obj[0] = obj;
+    const obj1 = { preset: null, resolution: null, frameRate: null };
+    obj1[0] = preset;
+    obj1[1] = resolution;
+    obj1[2] = fps;
+    obj[1] = obj1;
+    obj[2] = MediaEngineContextTypes.STREAM;
+    setGoLiveSource(obj);
+    const setGoLiveSourceResult = setGoLiveSource(8838);
+  } else {
+    const _HermesInternal = HermesInternal;
+    obj.warn("invalid start_stream: both application + display modes were specified (source-id: " + sourceId + ")");
+  }
+};
+prototype["platformHandleVoiceStateUpdate"] = function platformHandleVoiceStateUpdate(arg0) {
 
-export default tmp5;
+};
+const applicationStreamingManager = new ApplicationStreamingManager();
+const result = require("RESOLUTION_720").fileFinishedImporting("modules/go_live/native/ApplicationStreamingManager.tsx");
+
+export default applicationStreamingManager;

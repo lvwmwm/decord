@@ -1,11 +1,10 @@
 // Module ID: 6580
-// Function ID: 58422
+// Function ID: 6581
 // Name: registerAsset
-// Dependencies: [1217]
+// Dependencies: [1241]
 
 // Module 6580 (registerAsset)
 import registerAsset from "registerAsset";
 
-const obj = { __packager_asset: true, httpServerLocation: "/assets/images/native/custom_app_icons/BeanieIcon", width: 60, height: 60, scales: [2, 3], hash: "5ed4f057d69445a6e4a7fd8ca936d32a", name: "BeanieIcon", type: "png" };
 
-export default registerAsset.registerAsset(obj);
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "67f86c057cc3cdebb258af63ee3c92db", name: "UploadIcon", type: "png" });

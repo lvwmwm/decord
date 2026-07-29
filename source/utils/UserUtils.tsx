@@ -1,45 +1,52 @@
-// Module ID: 4004
-// Function ID: 32955
-// Name: conceal
-// Dependencies: [4005, 1850, 653, 566, 1212, 2]
-// Exports: ageEligibleForPremiumUpsell, getFormattedName, getName, getUserIsStaff, humanizeStatus, isNewUser, useDirectMessageRecipient, useName, useUserTag
+// Module ID: 4028
+// Function ID: 4029
+// Name: nameFromUser
+// Dependencies: [4029, 1874, 676, 589, 1236, 2]
+// Exports: accountAgeInRange, ageEligibleForPremiumUpsell, getFormattedName, getGlobalName, getName, getUserIsStaff, getUserTag, humanizeStatus, isNewUser, useDirectMessageRecipient, useName, useUserTag
 
-// Module 4004 (conceal)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_3 from "_isNativeReflectConstruct";
+// Module 4028 (nameFromUser)
+import initialize from "initialize";
+import mergeGuildAvatar from "mergeGuildAvatar";
 import ME from "ME";
 
-let closure_4;
-let closure_5;
+let c4;
+let c5;
 const require = arg1;
-function conceal(username) {
-  return "" + username[0] + "\u2026";
-}
-function present(globalName) {
-  let tmp = null != globalName;
-  if (tmp) {
-    tmp = globalName.length > 0;
-  }
-  return tmp;
-}
 function nameFromUser(primary1) {
-  if (present(primary1.global_name)) {
+  const global_name = primary1.global_name;
+  let tmp = null != global_name;
+  if (tmp) {
+    tmp = global_name.length > 0;
+  }
+  if (tmp) {
     let globalName = primary1.global_name;
-  } else if (present(primary1.globalName)) {
-    globalName = primary1.globalName;
   } else {
-    globalName = present(primary1.username) ? primary1.username : c7;
+    globalName = primary1.globalName;
+    let tmp2 = null != globalName;
+    if (tmp2) {
+      tmp2 = globalName.length > 0;
+    }
+    if (tmp2) {
+      globalName = primary1.globalName;
+    } else {
+      const username = primary1.username;
+      let tmp3 = null != username;
+      if (tmp3) {
+        tmp3 = username.length > 0;
+      }
+      globalName = tmp3 ? primary1.username : c7;
+    }
   }
   return globalName;
 }
 function getName(username) {
   if (null != username) {
-    let hidePersonalInformation = _isNativeReflectConstruct.hidePersonalInformation;
+    let hidePersonalInformation = initialize.hidePersonalInformation;
     const obj = nameFromUser(username);
     if (hidePersonalInformation) {
       username = username.username;
       let toLocaleLowerCaseResult1;
-      if (null != username) {
+      if (username != null) {
         toLocaleLowerCaseResult1 = username.toLocaleLowerCase();
       }
       hidePersonalInformation = obj.toLocaleLowerCase() === toLocaleLowerCaseResult1;
@@ -48,22 +55,23 @@ function getName(username) {
     if (hidePersonalInformation) {
       hidePersonalInformation = "0" === username.discriminator;
     }
-    let tmp5 = obj;
+    let combined = obj;
     if (hidePersonalInformation) {
-      tmp5 = conceal(obj);
+      const _HermesInternal = HermesInternal;
+      combined = "" + obj[0] + "\u2026";
     }
-    return tmp5;
+    return combined;
   }
 }
 function useName(username) {
-  const items = [_isNativeReflectConstruct];
-  let stateFromStores = require(566) /* initialize */.useStateFromStores(items, () => outer1_2.hidePersonalInformation);
+  const items = [initialize];
+  let stateFromStores = require(589) /* initialize */.useStateFromStores(items, () => obj.hidePersonalInformation);
   if (null != username) {
     const obj2 = nameFromUser(username);
     if (stateFromStores) {
       username = username.username;
       let toLocaleLowerCaseResult1;
-      if (null != username) {
+      if (username != null) {
         toLocaleLowerCaseResult1 = username.toLocaleLowerCase();
       }
       stateFromStores = obj2.toLocaleLowerCase() === toLocaleLowerCaseResult1;
@@ -72,20 +80,33 @@ function useName(username) {
     if (stateFromStores) {
       stateFromStores = "0" === username.discriminator;
     }
-    let tmp5 = obj2;
+    let combined = obj2;
     if (stateFromStores) {
-      tmp5 = conceal(obj2);
+      const _HermesInternal = HermesInternal;
+      combined = "" + obj2[0] + "\u2026";
     }
-    return tmp5;
+    return combined;
   }
-  const obj = require(566) /* initialize */;
+  const obj = require(589) /* initialize */;
 }
 function getGlobalName(user) {
   if (null != user) {
-    if (present(user.globalName)) {
+    const globalName = user.globalName;
+    let tmp = null != globalName;
+    if (tmp) {
+      tmp = globalName.length > 0;
+    }
+    if (tmp) {
       let global_name = user.globalName;
-    } else if (present(user.global_name)) {
+    } else {
       global_name = user.global_name;
+      let tmp2 = null != global_name;
+      if (tmp2) {
+        tmp2 = global_name.length > 0;
+      }
+      if (tmp2) {
+        global_name = user.global_name;
+      }
     }
     return global_name;
   }
@@ -97,26 +118,51 @@ function getFormattedName(inviter, arg1) {
   }
   if (null == inviter) {
     return c7;
-  } else {
-    const tmp2 = getGlobalName(inviter);
+  } else if (null == inviter) {
     if (flag) {
-      let username = getUserTag(inviter);
+      const obj = {};
+      const merged = Object.assign(closure_8);
+      const merged1 = Object.assign(undefined);
+      let hidePersonalInformation = "auto" !== obj.identifiable;
+      if (!hidePersonalInformation) {
+        hidePersonalInformation = initialize.hidePersonalInformation;
+      }
+      let username = presentUserTag(inviter, obj, hidePersonalInformation);
+      const tmp9 = presentUserTag;
     } else {
       username = inviter.username;
-      if (null == username) {
+      if (username == null) {
         username = c7;
       }
     }
-    let tmp4 = tmp2;
-    if (tmp2 !== username) {
+    let tmp11;
+    if (undefined !== username) {
       let combined = username;
-      if (null != tmp2) {
+      if (null != undefined) {
         const _HermesInternal = HermesInternal;
-        combined = "" + tmp2 + " (" + username + ")";
+        combined = "" + undefined + " (" + username + ")";
       }
-      tmp4 = combined;
+      tmp11 = combined;
     }
-    return tmp4;
+    return tmp11;
+  } else {
+    const globalName = inviter.globalName;
+    let tmp = null != globalName;
+    if (tmp) {
+      tmp = globalName.length > 0;
+    }
+    if (tmp) {
+      let global_name = inviter.globalName;
+    } else {
+      global_name = inviter.global_name;
+      let tmp2 = null != global_name;
+      if (tmp2) {
+        tmp2 = global_name.length > 0;
+      }
+      if (tmp2) {
+        global_name = inviter.global_name;
+      }
+    }
   }
 }
 function humanizeStatus(DND, arg1) {
@@ -127,9 +173,9 @@ function humanizeStatus(DND, arg1) {
   const isMobile = obj.isMobile;
   const isVR = obj.isVR;
   if (constants.ONLINE === DND) {
-    const intl6 = require(1212) /* getSystemLocale */.intl;
+    const intl6 = require(1236) /* getSystemLocale */.intl;
     const string = intl6.string;
-    const t = require(1212) /* getSystemLocale */.t;
+    const t = require(1236) /* getSystemLocale */.t;
     if (tmp2) {
       let stringResult = string(t.SWnU0R);
     } else if (tmp) {
@@ -138,89 +184,74 @@ function humanizeStatus(DND, arg1) {
       stringResult = string(t.WbGtnH);
     }
     return stringResult;
-  } else if (constants.OFFLINE === DND) {
-    const intl5 = require(1212) /* getSystemLocale */.intl;
-    return intl5.string(require(1212) /* getSystemLocale */.t.Vv0abJ);
-  } else if (constants.IDLE === DND) {
-    const intl4 = require(1212) /* getSystemLocale */.intl;
-    return intl4.string(require(1212) /* getSystemLocale */.t.qWbtVU);
-  } else if (constants.DND === DND) {
-    const intl3 = require(1212) /* getSystemLocale */.intl;
-    return intl3.string(require(1212) /* getSystemLocale */.t.jaNpQH);
-  } else if (constants.INVISIBLE === DND) {
-    const intl2 = require(1212) /* getSystemLocale */.intl;
-    return intl2.string(require(1212) /* getSystemLocale */.t.bg24HO);
-  } else if (constants.STREAMING === DND) {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(require(1212) /* getSystemLocale */.t.XKYej5);
+  } else if (tmp3.OFFLINE === DND) {
+    const intl5 = require(1236) /* getSystemLocale */.intl;
+    return intl5.string(require(1236) /* getSystemLocale */.t.Vv0abJ);
+  } else if (tmp3.IDLE === DND) {
+    const intl4 = require(1236) /* getSystemLocale */.intl;
+    return intl4.string(require(1236) /* getSystemLocale */.t.qWbtVU);
+  } else if (tmp3.DND === DND) {
+    const intl3 = require(1236) /* getSystemLocale */.intl;
+    return intl3.string(require(1236) /* getSystemLocale */.t.jaNpQH);
+  } else if (tmp3.INVISIBLE === DND) {
+    const intl2 = require(1236) /* getSystemLocale */.intl;
+    return intl2.string(require(1236) /* getSystemLocale */.t.bg24HO);
+  } else if (tmp3.STREAMING === DND) {
+    const intl = require(1236) /* getSystemLocale */.intl;
+    return intl.string(require(1236) /* getSystemLocale */.t.XKYej5);
   } else {
-    const UNKNOWN = constants.UNKNOWN;
+    const UNKNOWN = tmp3.UNKNOWN;
     return null;
   }
   tmp = undefined !== isMobile && isMobile;
   tmp2 = undefined !== isVR && isVR;
 }
-function accountAgeInRange(createdAt, arg1) {
-  let maxDaysOld;
-  let minDaysOld;
-  ({ maxDaysOld, minDaysOld } = arg1);
-  if (minDaysOld === undefined) {
-    minDaysOld = 0;
-  }
-  if (null == createdAt) {
-    return false;
-  } else {
-    const _Date = Date;
-    createdAt = createdAt.createdAt;
-    const timestamp = Date.now();
-    const diff = timestamp - createdAt.getTime();
-    let tmp4 = null == maxDaysOld;
-    if (!tmp4) {
-      tmp4 = diff <= c6 * maxDaysOld;
-    }
-    if (tmp4) {
-      tmp4 = diff >= c6 * minDaysOld;
-    }
-    return tmp4;
-  }
-}
 function presentUserTag(username, identifiable, arg2) {
   if (null == username) {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(require(1212) /* getSystemLocale */.t.sKdZ6U);
-  } else if (present(username.username)) {
-    let flag = false;
-    if ("always" !== identifiable.identifiable) {
-      flag = arg2;
-      if ("never" === identifiable.identifiable) {
-        flag = true;
-      }
-    }
-    if ("0" !== username.discriminator) {
-      if (username.discriminator !== closure_4) {
-        if ("username" !== identifiable.mode) {
-          if (!flag) {
-            const _HermesInternal2 = HermesInternal;
-            let username2 = "" + username.username + "#" + username.discriminator;
-          }
-          return username2;
-        }
-        username2 = username.username;
-      }
-    }
-    if (flag) {
-      username = conceal(username.username);
-    } else {
-      username = username.username;
-    }
-    let combined = username;
-    if ("never" !== identifiable.decoration) {
-      const _HermesInternal = HermesInternal;
-      combined = "@" + username;
-    }
-    return combined;
+    const intl = require(1236) /* getSystemLocale */.intl;
+    return intl.string(require(1236) /* getSystemLocale */.t.sKdZ6U);
   } else {
-    return c7;
+    username = username.username;
+    let tmp = null != username;
+    if (tmp) {
+      tmp = username.length > 0;
+    }
+    if (tmp) {
+      let flag = false;
+      if ("always" !== identifiable.identifiable) {
+        flag = arg2;
+        if ("never" === identifiable.identifiable) {
+          flag = true;
+        }
+      }
+      if ("0" !== username.discriminator) {
+        if (username.discriminator !== closure_4) {
+          if ("username" !== identifiable.mode) {
+            if (!flag) {
+              const _HermesInternal3 = HermesInternal;
+              let username2 = "" + username.username + "#" + username.discriminator;
+            }
+            return username2;
+          }
+          username2 = username.username;
+        }
+      }
+      username = username.username;
+      if (flag) {
+        const _HermesInternal = HermesInternal;
+        let combined = "" + username[0] + "\u2026";
+      } else {
+        combined = username;
+      }
+      let combined1 = combined;
+      if ("never" !== identifiable.decoration) {
+        const _HermesInternal2 = HermesInternal;
+        combined1 = "@" + combined;
+      }
+      return combined1;
+    } else {
+      return c7;
+    }
   }
 }
 function getUserTag(user, arg1) {
@@ -229,26 +260,26 @@ function getUserTag(user, arg1) {
   const merged1 = Object.assign(arg1);
   let hidePersonalInformation = "auto" !== obj.identifiable;
   if (!hidePersonalInformation) {
-    hidePersonalInformation = _isNativeReflectConstruct.hidePersonalInformation;
+    hidePersonalInformation = initialize.hidePersonalInformation;
   }
   return presentUserTag(user, obj, hidePersonalInformation);
 }
 function useUserTag(user) {
   const merged = Object.assign(closure_8);
   const merged1 = Object.assign(arg1);
-  const items = [_isNativeReflectConstruct];
-  return presentUserTag(user, {}, require(566) /* initialize */.useStateFromStores(items, () => outer1_2.hidePersonalInformation));
+  const items = [initialize];
+  return presentUserTag(user, {}, require(589) /* initialize */.useStateFromStores(items, () => obj.hidePersonalInformation));
 }
 function useDirectMessageRecipient(arg0) {
   const _require = arg0;
-  const items = [closure_3];
-  return _require(566).useStateFromStores(items, () => {
+  const items = [mergeGuildAvatar];
+  return _require(589).useStateFromStores(items, () => {
     if (null != closure_0) {
       let user = null;
-      if (closure_0.isPrivate()) {
+      if (obj.isPrivate()) {
         user = null;
-        if (closure_0.isDM()) {
-          user = outer1_3.getUser(closure_0.getRecipientId());
+        if (obj.isDM()) {
+          user = outer1_3.getUser(obj.getRecipientId());
         }
       }
       return user;
@@ -259,7 +290,7 @@ function getUserIsStaff() {
   currentUser = currentUser.getCurrentUser();
   return null != currentUser && currentUser.isStaff();
 }
-({ NON_USER_BOT_DISCRIMINATOR: closure_4, StatusTypes: closure_5 } = ME);
+({ NON_USER_BOT_DISCRIMINATOR: c4, StatusTypes: c5 } = ME);
 let c6 = 86400000;
 let c7 = "???";
 let closure_8 = { mode: "full", decoration: "never", identifiable: "auto" };
@@ -289,12 +320,59 @@ export { useName };
 export { getGlobalName };
 export { getFormattedName };
 export { humanizeStatus };
-export { accountAgeInRange };
+export const accountAgeInRange = function accountAgeInRange(createdAt) {
+  let maxDaysOld;
+  let minDaysOld;
+  ({ maxDaysOld, minDaysOld } = arg1);
+  if (minDaysOld === undefined) {
+    minDaysOld = 0;
+  }
+  if (null == createdAt) {
+    return false;
+  } else {
+    const _Date = Date;
+    createdAt = createdAt.createdAt;
+    const timestamp = Date.now();
+    const diff = timestamp - createdAt.getTime();
+    let tmp4 = null == maxDaysOld;
+    if (!tmp4) {
+      tmp4 = diff <= c6 * maxDaysOld;
+    }
+    if (tmp4) {
+      tmp4 = diff >= c6 * minDaysOld;
+    }
+    return tmp4;
+  }
+};
 export const ageEligibleForPremiumUpsell = function ageEligibleForPremiumUpsell(stateFromStores) {
-  return !accountAgeInRange(stateFromStores, { minDaysOld: 0, maxDaysOld: 30 });
+  let flag = false;
+  if (null != stateFromStores) {
+    const _Date = Date;
+    const createdAt = stateFromStores.createdAt;
+    const timestamp = Date.now();
+    const diff = timestamp - createdAt.getTime();
+    let tmp5 = diff <= c6 * 30;
+    if (tmp5) {
+      tmp5 = diff >= 0;
+    }
+    flag = tmp5;
+  }
+  return !flag;
 };
 export const isNewUser = function isNewUser(createdAt) {
-  return accountAgeInRange(createdAt, { minDaysOld: 0, maxDaysOld: 7 });
+  let flag = false;
+  if (null != createdAt) {
+    const _Date = Date;
+    createdAt = createdAt.createdAt;
+    const timestamp = Date.now();
+    const diff = timestamp - createdAt.getTime();
+    let tmp5 = diff <= c6 * 7;
+    if (tmp5) {
+      tmp5 = diff >= 0;
+    }
+    flag = tmp5;
+  }
+  return flag;
 };
 export { getUserTag };
 export { useUserTag };

@@ -1,10 +1,10 @@
-// Module ID: 7792
-// Function ID: 61814
+// Module ID: 7815
+// Function ID: 7816
 // Name: getTagProperties
-// Dependencies: [27, 4158, 7793, 1212, 7795, 7797, 2]
+// Dependencies: [17, 4182, 7816, 1236, 7818, 7820, 2]
 // Exports: default
 
-// Module 7792 (getTagProperties)
+// Module 7815 (getTagProperties)
 import { Image } from "get ActivityIndicator";
 import { MessageTagTypes } from "MESSAGE_GROUP_SPACING";
 
@@ -22,66 +22,81 @@ export default function getTagProperties(arg0) {
   ({ channel, colors } = arg0);
   const author = message.author;
   const isVerifiedBotResult = author.isVerifiedBot();
-  let obj = require(7793) /* isPublicSystemMessage */;
+  let obj = require(7816) /* isPublicSystemMessage */;
   if (!obj.isPublicSystemMessage(message)) {
     if (!isSystemDM) {
-      if (importDefault(7795)(message)) {
-        const intl2 = require(1212) /* getSystemLocale */.intl;
-        let stringResult = intl2.string(require(1212) /* getSystemLocale */.t.PuJGuM);
+      if (importDefault(7818)(message)) {
+        const intl2 = tmp2(1236).intl;
+        let stringResult = intl2.string(tmp2(1236).t.PuJGuM);
         let SYSTEM_DM_TAG_SYSTEM_TYPE = MessageTagTypes.BOT_TAG_SERVER_TYPE;
         let flag = isVerifiedBotResult;
       } else {
-        stringResult = null;
         flag = isVerifiedBotResult;
+        stringResult = null;
         if (message.author.bot) {
-          const intl = require(1212) /* getSystemLocale */.intl;
+          const intl = tmp2(1236).intl;
           let uri;
           if (isVerifiedBotResult) {
-            uri = Image.resolveAssetSource(importDefault(7797)).uri;
+            uri = Image.resolveAssetSource(tmp4(7820)).uri;
           }
-          stringResult = intl.string(require(1212) /* getSystemLocale */.t["9RNkeF"]);
           flag = isVerifiedBotResult;
-          const stringResult1 = intl.string(require(1212) /* getSystemLocale */.t["9RNkeF"]);
+          stringResult = intl.string(tmp2(1236).t["9RNkeF"]);
+          const stringResult1 = intl.string(tmp2(1236).t["9RNkeF"]);
           const tmp5 = uri;
         }
       }
+      tmp4 = importDefault;
     }
     if (null == stringResult) {
       let ownerId;
-      if (null != channel) {
+      if (channel != null) {
         ownerId = channel.ownerId;
       }
-      let stringResult2 = null;
-      if (tmp30) {
-        const intl6 = require(1212) /* getSystemLocale */.intl;
-        stringResult2 = intl6.string(require(1212) /* getSystemLocale */.t.fyE8sH);
+      let tmp18 = ownerId === message.author.id;
+      if (tmp18) {
+        let isForumPostResult;
+        if (channel != null) {
+          isForumPostResult = channel.isForumPost();
+        }
+        tmp18 = isForumPostResult;
       }
-      obj = { tagText: stringResult, tagAccessibilityLabel: null, tagVerified: flag, tagTextColor: undefined, tagBackgroundColor: undefined, tagType: SYSTEM_DM_TAG_SYSTEM_TYPE, tagIconUrl: tmp5, opTagText: stringResult2 };
-      ({ opTagTextColor: obj3.opTagTextColor, opTagBackgroundColor: obj3.opTagBackgroundColor } = colors);
+      let stringResult2 = null;
+      if (tmp18) {
+        const intl6 = tmp2(1236).intl;
+        stringResult2 = intl6.string(tmp2(1236).t.fyE8sH);
+      }
+      obj = { tagText: null, tagAccessibilityLabel: null, tagVerified: null, tagTextColor: "Boolean", tagBackgroundColor: "apply", tagType: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000005286050206450769, tagIconUrl: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001996450065304826, opTagText: 5880221749827397000000000000, opTagTextColor: 206194441472773600000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, opTagBackgroundColor: -0.0000000000000000000000000000000000000000000000000000000000000000018546069591150724 };
+      obj[0] = stringResult;
+      obj[1] = null;
+      obj[2] = flag;
+      obj[5] = SYSTEM_DM_TAG_SYSTEM_TYPE;
+      obj[6] = tmp5;
+      obj[7] = stringResult2;
+      ({ opTagTextColor: obj3[8], opTagBackgroundColor: obj3[9] } = colors);
       return obj;
     } else {
-      if (!obj2.isPublicSystemMessage(message)) {
+      if (!tmp2Result.isPublicSystemMessage(message)) {
         if (!isSystemDM) {
-          const intl4 = require(1212) /* getSystemLocale */.intl;
+          const intl4 = tmp2(1236).intl;
           const string = intl4.string;
-          const t = require(1212) /* getSystemLocale */.t;
-          if (tmp22) {
+          const t = tmp2(1236).t;
+          if (tmp14) {
             let stringResult3 = string(t["39trQT"]);
           } else if (flag) {
             stringResult3 = string(t.g76OcH);
           } else {
             stringResult3 = string(t.qwJHjo);
           }
-          tmp22 = importDefault(7795)(message);
+          tmp14 = importDefault(7818)(message);
         }
       }
-      const intl5 = require(1212) /* getSystemLocale */.intl;
-      stringResult3 = intl5.string(require(1212) /* getSystemLocale */.t["7s687k"]);
-      obj2 = require(7793) /* isPublicSystemMessage */;
+      const intl5 = tmp2(1236).intl;
+      stringResult3 = intl5.string(tmp2(1236).t["7s687k"]);
+      tmp2Result = tmp2(7816);
     }
   }
-  const intl3 = require(1212) /* getSystemLocale */.intl;
-  stringResult = intl3.string(require(1212) /* getSystemLocale */.t.lKQ7Wt);
+  const intl3 = tmp2(1236).intl;
+  stringResult = intl3.string(tmp2(1236).t.lKQ7Wt);
   SYSTEM_DM_TAG_SYSTEM_TYPE = MessageTagTypes.SYSTEM_DM_TAG_SYSTEM_TYPE;
   flag = true;
 };

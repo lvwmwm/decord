@@ -1,11 +1,11 @@
-// Module ID: 13197
-// Function ID: 101474
+// Module ID: 13220
+// Function ID: 13221
 // Name: AvatarDuoPile
-// Dependencies: [31, 33, 9909, 11688, 7945, 22, 11997, 2]
+// Dependencies: [19, 21, 9931, 11712, 7970, 12, 12021, 2]
 // Exports: AvatarDuoPile
 
-// Module 13197 (AvatarDuoPile)
-import "result";
+// Module 13220 (AvatarDuoPile)
+import "noop";
 import { jsx } from "jsxProd";
 
 const require = arg1;
@@ -13,25 +13,21 @@ const result = require("Pile").fileFinishedImporting("design/components/Pile/nat
 
 export const AvatarDuoPile = function AvatarDuoPile(size) {
   size = size.size;
-  let obj = Object.create(null);
-  obj.size = 0;
-  obj.children = 0;
-  const merged = Object.assign(size, obj);
-  obj = { "aria-label": null, shape: null, size: null, gap: 4, depthX: 0.5, depthY: 0.5 };
+  const merged = Object.assign(size, Object.create(null));
   if ("aria-label" in merged) {
     aria_label = merged["aria-label"];
   } else {
-    aria_label = require(11688) /* getListSummaryLabel */.getListSummaryLabel(merged.names);
-    const obj2 = require(11688) /* getListSummaryLabel */;
+    let tmp3Result = tmp3(11712);
+    aria_label = tmp3Result.getListSummaryLabel(merged.names);
   }
-  obj["aria-label"] = aria_label;
-  obj.shape = require(7945) /* SolidCutout */.CutoutShape.Circle;
-  if (obj3.isArray(size)) {
-    let mapped = size.map((arg0) => outer1_0(outer1_1[6]).AVATAR_SIZE_MAP[arg0]);
+  const obj = { aria-label, shape: require(7970) /* SolidCutout */.CutoutShape.Circle, size: null, gap: 4, depthX: 0.5, depthY: 0.5, children: null };
+  tmp3Result = tmp3(12);
+  if (tmp3Result.isArray(size)) {
+    let mapped = size.map((arg0) => callback(table[6]).AVATAR_SIZE_MAP[arg0]);
   } else {
-    mapped = require(11997) /* StaticNativeCutoutAvatarImage */.AVATAR_SIZE_MAP[size];
+    mapped = tmp3(12021).AVATAR_SIZE_MAP[size];
   }
-  obj.size = mapped;
-  obj.children = size.children;
-  return jsx(require(9909) /* Pile */.Pile, { "aria-label": null, shape: null, size: null, gap: 4, depthX: 0.5, depthY: 0.5 });
+  obj[2] = mapped;
+  obj[6] = size.children;
+  return jsx(require(9931) /* Pile */.Pile, { aria-label, shape: require(7970) /* SolidCutout */.CutoutShape.Circle, size: null, gap: 4, depthX: 0.5, depthY: 0.5, children: null });
 };

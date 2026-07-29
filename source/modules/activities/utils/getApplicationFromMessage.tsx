@@ -1,19 +1,19 @@
-// Module ID: 12353
-// Function ID: 96102
+// Module ID: 12375
+// Function ID: 12376
 // Name: getApplicationFromMessage
-// Dependencies: [4188, 12350, 8151, 2]
+// Dependencies: [4212, 12372, 8175, 2]
 // Exports: getApplicationFromMessage
 
-// Module 12353 (getApplicationFromMessage)
-import _callSuper from "_callSuper";
-import { SpotifyApplication } from "_isNativeReflectConstruct";
-import { isSpotifyParty } from "spotifyUtmParams";
+// Module 12375 (getApplicationFromMessage)
+import createExecutable from "createExecutable";
+import { SpotifyApplication } from "getIconURL";
+import { isSpotifyParty } from "WEB_OPEN";
 
-const result = require("spotifyUtmParams").fileFinishedImporting("modules/activities/utils/getApplicationFromMessage.tsx");
+const result = require("WEB_OPEN").fileFinishedImporting("modules/activities/utils/getApplicationFromMessage.tsx");
 
 export const getApplicationFromMessage = function getApplicationFromMessage(application) {
   if (null != application.application) {
-    let fromServer = _callSuper.createFromServer(application.application);
+    let fromServer = createExecutable.createFromServer(application.application);
   } else if (null != application.activity) {
     if (null != application.activity.party_id) {
       if (isSpotifyParty(application.activity.party_id)) {

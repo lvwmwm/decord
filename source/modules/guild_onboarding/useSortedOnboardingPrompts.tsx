@@ -1,33 +1,37 @@
-// Module ID: 9975
-// Function ID: 76989
+// Module ID: 9997
+// Function ID: 9998
 // Name: useSortedOnboardingPrompts
-// Dependencies: [31, 5093, 624, 2]
+// Dependencies: [19, 5115, 647, 2]
 // Exports: default
 
-// Module 9975 (useSortedOnboardingPrompts)
-import result from "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 9997 (useSortedOnboardingPrompts)
+import noop from "noop";
+import handleUpdate from "handleUpdate";
 
 const require = arg1;
 const result = require("defaultAreStatesEqual").fileFinishedImporting("modules/guild_onboarding/useSortedOnboardingPrompts.tsx");
 
 export default function useSortedOnboardingPrompts(arg0) {
   const _require = arg0;
-  let items = [_isNativeReflectConstruct];
+  let items = [handleUpdate];
   stateFromStoresArray = _require(stateFromStoresArray[2]).useStateFromStoresArray(items, () => outer1_3.getEnabledOnboardingPrompts(closure_0));
   let items1 = [stateFromStoresArray];
   return React.useMemo(() => {
+    let arr5;
     const items = [];
     const items1 = [];
     const items2 = [];
     const items3 = [];
+    let tmp = stateFromStoresArray;
     let num = 0;
     let num2 = 0;
     let num3 = 0;
     if (0 < stateFromStoresArray.length) {
       do {
-        let tmp = stateFromStoresArray;
-        let tmp2 = stateFromStoresArray[num3];
+        arr5 = stateFromStoresArray;
+        let tmp2 = stateFromStoresArray[num];
+        let tmp3 = num;
+        let tmp4 = num2;
         if (tmp2.isNew) {
           let arr = items.push(tmp2);
           let sum = num2;
@@ -42,13 +46,12 @@ export default function useSortedOnboardingPrompts(arg0) {
           let arr2 = items2.push(tmp2);
           sum = num2;
         }
-        num3 = num3 + 1;
-        let tmp8 = stateFromStoresArray;
+        num = num + 1;
         num2 = sum;
-        num = sum;
-      } while (num3 < stateFromStoresArray.length);
+        num3 = sum;
+        tmp = arr5;
+      } while (num < arr5.length);
     }
-    const obj = { onboardingPromptsRaw: stateFromStoresArray, newOnboardingPrompts: items, onboardingPromptsWithNewAnswers: items1, newAnswersCount: num, onboardingPrompts: items2.concat(items3) };
-    return obj;
+    return { onboardingPromptsRaw: tmp, newOnboardingPrompts: items, onboardingPromptsWithNewAnswers: items1, newAnswersCount: num3, onboardingPrompts: items2.concat(items3) };
   }, items1);
 };

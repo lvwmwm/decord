@@ -1,24 +1,24 @@
-// Module ID: 13757
-// Function ID: 105471
+// Module ID: 13778
+// Function ID: 13779
 // Name: SafetySettingsNotice
-// Dependencies: [31, 27, 6695, 33, 4165, 689, 13758, 4121, 4161, 1212, 2]
+// Dependencies: [19, 17, 6716, 21, 4189, 712, 13779, 4145, 4185, 1236, 2]
 // Exports: default
 
-// Module 13757 (SafetySettingsNotice)
-import result from "result";
+// Module 13778 (SafetySettingsNotice)
+import noop from "noop";
 import { View } from "get ActivityIndicator";
 import { SafetySettingsNoticeAction as closure_4 } from "SafetyToastType";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_5;
+let c5;
 let closure_6;
 const require = arg1;
-({ jsx: closure_5, jsxs: closure_6 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { display: "flex", flexDirection: "row", alignItems: "center", gap: require("_createForOfIteratorHelperLoose").space.PX_8, padding: require("_createForOfIteratorHelperLoose").space.PX_8, borderRadius: require("_createForOfIteratorHelperLoose").radii.xs, borderColor: require("_createForOfIteratorHelperLoose").colors.TEXT_LINK, borderWidth: 1, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_FEEDBACK_INFO };
-_createForOfIteratorHelperLoose.blockedIgnoredRedirect = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+({ jsx: c5, jsxs: closure_6 } = jsxProd);
+createCacheKey = { blockedIgnoredRedirect: null };
+createCacheKey = { display: "flex", flexDirection: "row", alignItems: "center", gap: require("Themes").space.PX_8, padding: require("Themes").space.PX_8, borderRadius: require("Themes").radii.xs, borderColor: require("Themes").colors.TEXT_LINK, borderWidth: 1, backgroundColor: require("Themes").colors.BACKGROUND_FEEDBACK_INFO };
+createCacheKey[0] = createCacheKey;
+createCacheKey = createCacheKey.createStyles(createCacheKey);
 let result = require("SafetyToastType").fileFinishedImporting("modules/safety_common/native/SafetySettingsNotice.tsx");
 
 export default function SafetySettingsNotice(noticeType) {
@@ -27,6 +27,7 @@ export default function SafetySettingsNotice(noticeType) {
   ({ label, labelHook } = noticeType);
   noticeType = noticeType.noticeType;
   const count = noticeType.count;
+  let React;
   const items = [noticeType];
   const effect = React.useEffect(() => {
     const result = labelHook(noticeType[6]).trackSafetySettingsNoticeAnalytics(noticeType, outer1_4.VIEWED);
@@ -36,31 +37,27 @@ export default function SafetySettingsNotice(noticeType) {
     labelHook();
     const result = labelHook(noticeType[6]).trackSafetySettingsNoticeAnalytics(noticeType, outer1_4.LEARN_MORE);
   }, items1);
-  let obj = { style: _createForOfIteratorHelperLoose().blockedIgnoredRedirect };
+  let obj = { style: createCacheKey().blockedIgnoredRedirect, children: null };
   const items2 = [callback(labelHook(noticeType[7]).CircleInformationIcon, { color: "text-link" }), ];
-  obj = { style: { flexShrink: 1 }, variant: "heading-sm/medium" };
+  obj = { style: { flexShrink: 1 }, variant: "heading-sm/medium", children: null };
   if (null != count) {
-    const intl2 = labelHook(noticeType[9]).intl;
-    obj = {
-      hook(children) {
-          const obj = { role: "link", variant: "heading-sm/medium", color: "text-link", onPress: result, children };
-          return outer1_5(labelHook(noticeType[8]).Text, obj);
-        },
-      count
+    const intl2 = tmp6(tmp7[9]).intl;
+    obj = { hook: null, count: null };
+    obj[0] = function hook(children) {
+      return outer1_5(labelHook(noticeType[8]).Text, { role: "link", variant: "heading-sm/medium", color: "text-link", onPress: noop, children });
     };
+    obj[1] = count;
     let formatResult = intl2.format(label, obj);
   } else {
-    const intl = labelHook(noticeType[9]).intl;
-    const obj1 = {
-      hook(children) {
-          const obj = { role: "link", variant: "heading-sm/medium", color: "text-link", onPress: result, children };
-          return outer1_5(labelHook(noticeType[8]).Text, obj);
-        }
+    const intl = tmp6(tmp7[9]).intl;
+    const obj1 = { hook: null };
+    obj1[0] = function hook(children) {
+      return outer1_5(labelHook(noticeType[8]).Text, { role: "link", variant: "heading-sm/medium", color: "text-link", onPress: noop, children });
     };
     formatResult = intl.format(label, obj1);
   }
-  obj.children = formatResult;
+  obj[2] = formatResult;
   items2[1] = callback(labelHook(noticeType[8]).Text, obj);
-  obj.children = items2;
+  obj[1] = items2;
   return closure_6(View, obj);
 };

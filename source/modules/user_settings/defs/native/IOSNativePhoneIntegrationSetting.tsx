@@ -1,41 +1,41 @@
-// Module ID: 14427
-// Function ID: 110279
+// Module ID: 14449
+// Function ID: 14450
 // Name: toggle
-// Dependencies: [7733, 10099, 1212, 3838, 14428, 477, 2]
+// Dependencies: [7756, 10120, 1236, 3862, 14450, 500, 2]
 
-// Module 14427 (toggle)
+// Module 14449 (toggle)
 import createToggle from "createToggle";
 
 const toggle = createToggle.createToggle({
   useTitle() {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(require(1212) /* getSystemLocale */.t.V6D0wU);
+    const intl = require(1236) /* getSystemLocale */.intl;
+    return intl.string(require(1236) /* getSystemLocale */.t.V6D0wU);
   },
   parent: require("MobileSetting").MobileSetting.NOTIFICATIONS,
   useValue: require("explicitContentFromProto").NativePhoneIntegrationEnabled.useSetting,
   onValueChange: require("explicitContentFromProto").NativePhoneIntegrationEnabled.updateSetting,
   usePredicate() {
-    let enabled = importDefault(14428).useConfig({ location: "IOSNativePhoneIntegrationSetting" }).enabled;
+    let enabled = importDefault(14450).useConfig({ location: "IOSNativePhoneIntegrationSetting" }).enabled;
     if (enabled) {
-      enabled = require(477) /* set */.isIOS();
-      const obj2 = require(477) /* set */;
+      enabled = require(500) /* set */.isIOS();
+      const obj2 = require(500) /* set */;
     }
     return enabled;
   }
 });
 const obj = {
   useTitle() {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(require(1212) /* getSystemLocale */.t.V6D0wU);
+    const intl = require(1236) /* getSystemLocale */.intl;
+    return intl.string(require(1236) /* getSystemLocale */.t.V6D0wU);
   },
   parent: require("MobileSetting").MobileSetting.NOTIFICATIONS,
   useValue: require("explicitContentFromProto").NativePhoneIntegrationEnabled.useSetting,
   onValueChange: require("explicitContentFromProto").NativePhoneIntegrationEnabled.updateSetting,
   usePredicate() {
-    let enabled = importDefault(14428).useConfig({ location: "IOSNativePhoneIntegrationSetting" }).enabled;
+    let enabled = importDefault(14450).useConfig({ location: "IOSNativePhoneIntegrationSetting" }).enabled;
     if (enabled) {
-      enabled = require(477) /* set */.isIOS();
-      const obj2 = require(477) /* set */;
+      enabled = require(500) /* set */.isIOS();
+      const obj2 = require(500) /* set */;
     }
     return enabled;
   }

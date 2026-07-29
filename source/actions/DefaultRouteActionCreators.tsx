@@ -1,46 +1,61 @@
-// Module ID: 10850
-// Function ID: 83988
-// Name: isLurkingGuildRoute
-// Dependencies: [3794, 653, 3987, 4000, 686, 2]
+// Module ID: 10874
+// Function ID: 10875
+// Name: saveLastRoute
+// Dependencies: [3818, 676, 4011, 4024, 709, 2]
 // Exports: saveLastNonVoiceRoute, saveLastRoute
 
-// Module 10850 (isLurkingGuildRoute)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 10874 (saveLastRoute)
+import initialize from "initialize";
 import { Routes } from "ME";
 
 const require = arg1;
-function isLurkingGuildRoute(Routes) {
-  let obj = require(3987) /* matchPath */;
-  obj = {};
-  const RouteParam = require(4000) /* isPseudoGuildId */.RouteParam;
-  obj.path = Routes.CHANNEL(RouteParam.guildId());
-  const matchPathResult = obj.matchPath(Routes, obj);
-  let guildId;
-  if (null != matchPathResult) {
-    const params = matchPathResult.params;
-    if (null != params) {
-      guildId = params.guildId;
-    }
-  }
-  let tmp3 = null == guildId;
-  if (!tmp3) {
-    tmp3 = !lurking.isLurking(guildId);
-  }
-  return !tmp3;
-}
 const result = require("matchPath").fileFinishedImporting("actions/DefaultRouteActionCreators.tsx");
 
 export const saveLastRoute = function saveLastRoute(pathname) {
-  if (!isLurkingGuildRoute(pathname)) {
-    let obj = importDefault(686);
-    obj = { type: "SAVE_LAST_ROUTE", path: pathname };
-    obj.dispatch(obj);
+  let obj = require(4011) /* matchPath */;
+  obj = { path: null };
+  const RouteParam = require(4024) /* RouteParam */.RouteParam;
+  obj[0] = Routes.CHANNEL(RouteParam.guildId());
+  const matchPathResult = obj.matchPath(pathname, obj);
+  let guildId;
+  if (matchPathResult != null) {
+    const params = matchPathResult.params;
+    if (params != null) {
+      guildId = params.guildId;
+    }
+  }
+  let tmp4 = null == guildId;
+  if (!tmp4) {
+    tmp4 = !initialize.isLurking(guildId);
+  }
+  if (tmp4) {
+    obj = { type: "SAVE_LAST_ROUTE", path: null };
+    obj[1] = pathname;
+    importDefault(709).dispatch(obj);
+    const obj3 = importDefault(709);
   }
 };
 export const saveLastNonVoiceRoute = function saveLastNonVoiceRoute(Routes) {
-  if (!isLurkingGuildRoute(Routes)) {
-    let obj = importDefault(686);
-    obj = { type: "SAVE_LAST_NON_VOICE_ROUTE", path: Routes };
-    obj.dispatch(obj);
+  let obj = require(4011) /* matchPath */;
+  obj = { path: null };
+  const RouteParam = require(4024) /* RouteParam */.RouteParam;
+  obj[0] = Routes.CHANNEL(RouteParam.guildId());
+  const matchPathResult = obj.matchPath(Routes, obj);
+  let guildId;
+  if (matchPathResult != null) {
+    const params = matchPathResult.params;
+    if (params != null) {
+      guildId = params.guildId;
+    }
+  }
+  let tmp4 = null == guildId;
+  if (!tmp4) {
+    tmp4 = !initialize.isLurking(guildId);
+  }
+  if (tmp4) {
+    obj = { type: "SAVE_LAST_NON_VOICE_ROUTE", path: null };
+    obj[1] = Routes;
+    importDefault(709).dispatch(obj);
+    const obj3 = importDefault(709);
   }
 };

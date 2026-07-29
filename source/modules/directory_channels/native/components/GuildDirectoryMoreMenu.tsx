@@ -1,11 +1,11 @@
-// Module ID: 10044
-// Function ID: 77537
+// Module ID: 10065
+// Function ID: 10066
 // Name: GuildDirectoryMoreMenu
-// Dependencies: [31, 33, 10038, 10045, 4506, 1212, 10047, 1273, 7669, 9078, 4124, 9417, 9275, 6661, 8939, 689, 2]
+// Dependencies: [19, 21, 10059, 10066, 4529, 1236, 10068, 1297, 7692, 9102, 4148, 9441, 9299, 6682, 8963, 712, 2]
 // Exports: default
 
-// Module 10044 (GuildDirectoryMoreMenu)
-import "result";
+// Module 10065 (GuildDirectoryMoreMenu)
+import "noop";
 import { jsx } from "jsxProd";
 
 const require = arg1;
@@ -15,15 +15,15 @@ export default function GuildDirectoryMoreMenu(entry) {
   let canRemove;
   let isEntryAdmin;
   entry = entry.entry;
-  const tmp = importDefault(10038)(entry);
+  const tmp2 = importDefault(10059)(entry);
   const items = [];
-  ({ isEntryAdmin, canRemove } = tmp);
-  if (tmp.canEdit) {
-    let obj = {};
-    let intl = entry(1212).intl;
-    obj.label = intl.string(entry(1212).t.XnuOvN);
-    obj.IconComponent = entry(9078).PencilIcon;
-    obj.action = function handleEdit() {
+  ({ isEntryAdmin, canRemove } = tmp2);
+  if (tmp2.canEdit) {
+    let obj = { label: null, IconComponent: null, action: null };
+    let intl = entry(1236).intl;
+    obj[0] = intl.string(entry(1236).t.XnuOvN);
+    obj[1] = entry(9102).PencilIcon;
+    obj[2] = function handleEdit() {
       let obj = outer1_1(outer1_3[3]);
       obj = { entry };
       obj.open(obj);
@@ -31,81 +31,61 @@ export default function GuildDirectoryMoreMenu(entry) {
     items.push(obj);
   }
   if (canRemove) {
-    obj = {};
-    let intl2 = entry(1212).intl;
-    obj.label = intl2.string(entry(1212).t.KUxYWH);
-    obj.IconComponent = entry(4124).TrashIcon;
-    obj.variant = "destructive";
-    obj.action = function handleRemove() {
+    obj = { label: null, IconComponent: null, variant: "destructive", action: null };
+    let intl2 = entry(1236).intl;
+    obj[0] = intl2.string(entry(1236).t.KUxYWH);
+    obj[1] = entry(4148).TrashIcon;
+    obj[3] = function handleRemove() {
       let obj = outer1_1(outer1_3[4]);
-      obj = {};
+      obj = { title: null, body: null, onConfirm: null, confirmColor: null, confirmText: null, cancelText: null, onCancel: null };
       const intl = entry(outer1_3[5]).intl;
-      obj.title = intl.string(entry(outer1_3[5]).t.KUxYWH);
+      obj[0] = intl.string(entry(outer1_3[5]).t.KUxYWH);
       const intl2 = entry(outer1_3[5]).intl;
       obj = { guildName: entry.name };
-      obj.body = intl2.formatToPlainString(entry(outer1_3[5]).t["/5y0uV"], obj);
-      obj.onConfirm = function onConfirm() {
-        const result = outer2_2(outer2_3[6]).removeDirectoryGuildEntry(outer1_0.channelId, outer1_0.guildId);
+      obj[1] = intl2.formatToPlainString(entry(outer1_3[5]).t["/5y0uV"], obj);
+      obj[2] = function onConfirm() {
+        const result = outer1_2(outer1_3[6]).removeDirectoryGuildEntry(closure_0.channelId, closure_0.guildId);
       };
-      obj.confirmColor = entry(outer1_3[7]).ButtonColors.RED;
+      obj[3] = entry(outer1_3[7]).ButtonColors.RED;
       const intl3 = entry(outer1_3[5]).intl;
-      obj.confirmText = intl3.string(entry(outer1_3[5]).t.N86XcP);
+      obj[4] = intl3.string(entry(outer1_3[5]).t.N86XcP);
       const intl4 = entry(outer1_3[5]).intl;
-      obj.cancelText = intl4.string(entry(outer1_3[5]).t["ETE/oC"]);
-      obj.onCancel = function onCancel() {
-        outer2_1(outer2_3[4]).close();
+      obj[5] = intl4.string(entry(outer1_3[5]).t["ETE/oC"]);
+      obj[6] = function onCancel() {
+        callback(table[4]).close();
       };
       obj.show(obj);
     };
     items.push(obj);
   }
   if (!isEntryAdmin) {
-    obj = {};
-    let intl3 = entry(1212).intl;
-    obj.label = intl3.string(entry(1212).t.Aen9eh);
-    obj.IconComponent = entry(9417).FlagIcon;
-    obj.variant = "destructive";
-    obj.action = function handleReport() {
+    obj = { label: null, IconComponent: null, variant: "destructive", action: null };
+    let intl3 = entry(1236).intl;
+    obj[0] = intl3.string(entry(1236).t.Aen9eh);
+    obj[1] = entry(9441).FlagIcon;
+    obj[3] = function handleReport() {
       const result = entry(outer1_3[8]).showReportModalForGuildDirectoryEntry(entry);
     };
     items.push(obj);
   }
-  let tmp11 = null;
+  let tmp9 = null;
   if (0 !== items.length) {
-    const obj1 = {
-      items,
-      children(ref) {
-          let obj = Object.create(null);
-          obj.ref = 0;
-          const merged = Object.assign(ref, obj);
-          obj = { ref: ref.ref };
-          const merged1 = Object.assign(merged);
-          obj["size"] = "sm";
-          obj["variant"] = "secondary";
-          const intl = entry(outer1_3[5]).intl;
-          obj["accessibilityLabel"] = intl.string(entry(outer1_3[5]).t.PdRCRg);
-          obj = { size: "sm", color: outer1_1(outer1_3[15]).colors.WHITE };
-          obj["icon"] = outer1_4(entry(outer1_3[14]).MoreHorizontalIcon, obj);
-          return outer1_4(entry(outer1_3[13]).IconButton, obj);
-        }
+    const obj1 = { items: null, children: null };
+    obj1[0] = items;
+    obj1[1] = function children(ref) {
+      const merged = Object.assign(ref, Object.create(null));
+      let obj = { ref: ref.ref };
+      const merged1 = Object.assign(merged);
+      obj.size = "sm";
+      obj.variant = "secondary";
+      const intl = entry(1236).intl;
+      obj.accessibilityLabel = intl.string(entry(1236).t.PdRCRg);
+      obj = { size: "sm", color: null };
+      obj[1] = callback(712).colors.WHITE;
+      obj.icon = callback2(entry(8963).MoreHorizontalIcon, obj);
+      return callback2(entry(6682).IconButton, obj);
     };
-    tmp11 = jsx(entry(9275).ContextMenu, {
-      items,
-      children(ref) {
-          let obj = Object.create(null);
-          obj.ref = 0;
-          const merged = Object.assign(ref, obj);
-          obj = { ref: ref.ref };
-          const merged1 = Object.assign(merged);
-          obj["size"] = "sm";
-          obj["variant"] = "secondary";
-          const intl = entry(outer1_3[5]).intl;
-          obj["accessibilityLabel"] = intl.string(entry(outer1_3[5]).t.PdRCRg);
-          obj = { size: "sm", color: outer1_1(outer1_3[15]).colors.WHITE };
-          obj["icon"] = outer1_4(entry(outer1_3[14]).MoreHorizontalIcon, obj);
-          return outer1_4(entry(outer1_3[13]).IconButton, obj);
-        }
-    });
+    tmp9 = jsx(entry(9299).ContextMenu, { items: null, children: null });
   }
-  return tmp11;
+  return tmp9;
 };

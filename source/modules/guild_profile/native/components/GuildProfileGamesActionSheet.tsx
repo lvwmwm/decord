@@ -1,41 +1,50 @@
-// Module ID: 11929
-// Function ID: 92172
+// Module ID: 11953
+// Function ID: 11954
 // Name: GuildProfileGameRow
-// Dependencies: [31, 27, 33, 8451, 8462, 5198, 11923, 4165, 11927, 11928, 7928, 1212, 4133, 8429, 1935, 5221, 5223, 5536, 2]
+// Dependencies: [19, 17, 21, 8475, 8486, 5220, 11947, 4189, 11951, 11952, 7953, 1236, 4157, 8453, 1959, 5243, 5245, 5554, 2]
 // Exports: default
 
-// Module 11929 (GuildProfileGameRow)
-import result from "result";
-import { View } from "get ActivityIndicator";
+// Module 11953 (GuildProfileGameRow)
+import noop from "noop";
+import { View } from "TableRowGroupTitle";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let require = arg1;
+const require = arg1;
 function GuildProfileGameRow(activityLevel) {
   let clickable;
   let game;
   ({ game, clickable } = activityLevel);
-  let obj = { gameId: game.id, source: require(8462) /* GameProfileEmbedAction */.GameProfileSources.GuildProfileGames, trackEntryPointImpression: clickable };
-  const tmpResult = importDefault(8451)(obj);
-  require = tmpResult;
+  let _require;
+  let obj = { gameId: game.id, source: null, trackEntryPointImpression: null };
+  obj[1] = _require(8486).GameProfileSources.GuildProfileGames;
+  obj[2] = clickable;
+  const tmp3Result = importDefault(8475)(obj);
+  _require = tmp3Result;
   if (clickable) {
-    clickable = null != tmpResult;
+    clickable = null != tmp3Result;
   }
-  obj = { icon: jsx(importDefault(11923), { game, activityLevel: activityLevel.activityLevel }), label: game.name, arrow: clickable };
+  obj = { icon: null, label: null, arrow: null, onPress: null };
+  obj[0] = jsx(importDefault(11947), { game, activityLevel: activityLevel.activityLevel });
+  obj[1] = game.name;
+  obj[2] = clickable;
   let fn;
   if (clickable) {
-    fn = () => tmpResult();
+    fn = () => _undefined();
   }
-  obj.onPress = fn;
-  return jsx(require(5198) /* TableRowInner */.TableRow, { icon: jsx(importDefault(11923), { game, activityLevel: activityLevel.activityLevel }), label: game.name, arrow: clickable });
+  obj[3] = fn;
+  return jsx(_require(5220).TableRow, { icon: null, label: null, arrow: null, onPress: null });
 }
-let closure_6 = _createForOfIteratorHelperLoose.createStyles({ container: { padding: 16, paddingBottom: 48 } });
+let closure_7 = createCacheKey.createStyles({ container: { padding: 16, paddingBottom: 48 } });
 const result = require("jsxProd").fileFinishedImporting("modules/guild_profile/native/components/GuildProfileGamesActionSheet.tsx");
 
 export default function GuildProfileGamesActionSheet(profile) {
   profile = profile.profile;
-  const id = profile.id;
-  const gameActivity = profile.gameActivity;
+  let id;
+  let gameActivity;
+  let enabled;
+  id = profile.id;
+  gameActivity = profile.gameActivity;
   let obj = id(enabled[8]);
   const allGuildProfileGames = obj.useAllGuildProfileGames(profile);
   let obj1 = id(enabled[9]);
@@ -50,12 +59,13 @@ export default function GuildProfileGamesActionSheet(profile) {
     obj = { guildId: id };
     obj.openLazy(id(enabled[14])(enabled[13], enabled.paths), "GuildProfileActionSheet:" + id, obj);
   }, items);
-  obj = { ref: obj2.useBottomSheetRef().bottomSheetRef, scrollable: true, onDismiss: callback, startHeight: 300 };
-  obj = {};
-  obj1 = { style: callback().container };
-  obj2 = { title: str, hasIcons: true, children: allGuildProfileGames.map((game) => outer1_5(outer1_7, { game, activityLevel: gameActivity[game.id], clickable: enabled }, game.id)) };
-  obj1.children = jsx(id(enabled[17]).TableRowGroup, { title: str, hasIcons: true, children: allGuildProfileGames.map((game) => outer1_5(outer1_7, { game, activityLevel: gameActivity[game.id], clickable: enabled }, game.id)) });
-  obj.children = <View style={callback().container} />;
-  obj.children = jsx(id(enabled[16]).BottomSheetScrollView, {});
-  return jsx(id(enabled[15]).BottomSheet, {});
+  obj = { ref: obj2.useBottomSheetRef().bottomSheetRef, scrollable: true, onDismiss: callback, startHeight: 300, children: null };
+  obj = { children: null };
+  obj1 = { style: callback().container, children: null };
+  obj2 = { title: str, hasIcons: true, children: null };
+  obj2[2] = allGuildProfileGames.map((game) => outer1_5(outer1_6, { game, activityLevel: gameActivity[game.id], clickable: enabled }, game.id));
+  obj1[1] = jsx(id(enabled[17]).TableRowGroup, { title: str, hasIcons: true, children: null });
+  obj[0] = <View style={callback().container}>{null}</View>;
+  obj[4] = jsx(id(enabled[16]).BottomSheetScrollView, { children: null });
+  return jsx(id(enabled[15]).BottomSheet, { children: null });
 };

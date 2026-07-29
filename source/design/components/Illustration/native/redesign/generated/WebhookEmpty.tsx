@@ -1,40 +1,63 @@
-// Module ID: 15638
-// Function ID: 120420
+// Module ID: 15673
+// Function ID: 15674
 // Name: getWebhookEmptySource
-// Dependencies: [31, 27, 33, 6517, 15639, 15640, 15641, 4011, 2]
-// Exports: WebhookEmpty
+// Dependencies: [19, 17, 21, 6538, 15674, 15675, 15676, 4035, 2]
+// Exports: WebhookEmpty, getWebhookEmptySource, useWebhookEmptySource
 
-// Module 15638 (getWebhookEmptySource)
-import "result";
+// Module 15673 (getWebhookEmptySource)
+import "noop";
 import { Image } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
 
 const require = arg1;
-function getWebhookEmptySource(theme) {
-  let obj = require(6517) /* getIllustrationSource */;
+const result = require("jsxProd").fileFinishedImporting("design/components/Illustration/native/redesign/generated/WebhookEmpty.tsx");
+
+export const getWebhookEmptySource = function getWebhookEmptySource(theme) {
+  let obj = require(6538) /* getIllustrationSource */;
   obj = {
     dark() {
-      return outer1_0(outer1_1[4]);
+      return callback(15674);
     },
     darker() {
-      return outer1_0(outer1_1[5]);
+      return callback(15675);
     },
     light() {
-      return outer1_0(outer1_1[6]);
+      return callback(15676);
     }
   };
   return obj.getIllustrationSource(theme, obj);
-}
-function useWebhookEmptySource() {
-  return getWebhookEmptySource(require(4011) /* AccessibilityAnnouncer */.useThemeContext().theme);
-}
-const result = require("jsxProd").fileFinishedImporting("design/components/Illustration/native/redesign/generated/WebhookEmpty.tsx");
-
-export { getWebhookEmptySource };
-export { useWebhookEmptySource };
+};
+export const useWebhookEmptySource = function useWebhookEmptySource() {
+  let obj = require(4035) /* AccessibilityAnnouncer */;
+  obj = {
+    dark() {
+      return callback(15674);
+    },
+    darker() {
+      return callback(15675);
+    },
+    light() {
+      return callback(15676);
+    }
+  };
+  return require(6538) /* getIllustrationSource */.getIllustrationSource(obj.useThemeContext().theme, obj);
+};
 export const WebhookEmpty = function WebhookEmpty(arg0) {
-  const obj = {};
+  let obj = require(4035) /* AccessibilityAnnouncer */;
+  obj = {
+    dark() {
+      return callback(15674);
+    },
+    darker() {
+      return callback(15675);
+    },
+    light() {
+      return callback(15676);
+    }
+  };
+  obj = {};
+  const illustrationSource = require(6538) /* getIllustrationSource */.getIllustrationSource(obj.useThemeContext().theme, obj);
   const merged = Object.assign(arg0);
-  obj["source"] = useWebhookEmptySource();
+  obj.source = illustrationSource;
   return <Image />;
 };

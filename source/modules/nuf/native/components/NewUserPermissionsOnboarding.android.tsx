@@ -1,38 +1,38 @@
-// Module ID: 11754
-// Function ID: 91150
+// Module ID: 11779
+// Function ID: 11780
 // Name: NewUserPermissionsOnboarding
-// Dependencies: [31, 27, 33, 4165, 5118, 689, 4161, 4578, 1212, 2]
+// Dependencies: [19, 17, 21, 4189, 5140, 712, 4185, 4600, 1236, 2]
 // Exports: default
 
-// Module 11754 (NewUserPermissionsOnboarding)
-import "result";
+// Module 11779 (NewUserPermissionsOnboarding)
+import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_2;
-let closure_3;
-let closure_4;
-let closure_5;
+let c3;
+let c4;
+let c5;
+let obj1;
 const require = arg1;
-({ View: closure_2, ScrollView: closure_3 } = get_ActivityIndicator);
-({ jsx: closure_4, jsxs: closure_5 } = jsxProd);
-_createForOfIteratorHelperLoose = { scrollContainer: { minHeight: "100%" }, container: { flexGrow: 1, alignItems: "center", justifyContent: "center" } };
-_createForOfIteratorHelperLoose = { paddingTop: 80 + require("NAV_BAR_HEIGHT").NAV_BAR_HEIGHT };
-_createForOfIteratorHelperLoose.alertContainer = _createForOfIteratorHelperLoose;
-let obj1 = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SURFACE_HIGH, borderRadius: require("_createForOfIteratorHelperLoose").radii.xl, borderWidth: 1, borderColor: require("_createForOfIteratorHelperLoose").colors.INTERACTIVE_BACKGROUND_ACTIVE, alignItems: "center", maxWidth: 290 };
-const merged = Object.assign(require("_createForOfIteratorHelperLoose").shadows.SHADOW_HIGH);
-_createForOfIteratorHelperLoose.alert = obj1;
-_createForOfIteratorHelperLoose.alertContent = { paddingVertical: 24, paddingHorizontal: 24, alignItems: "center" };
-_createForOfIteratorHelperLoose.alertTitle = { paddingBottom: 8, textAlign: "center" };
-_createForOfIteratorHelperLoose.alertSubtitle = { paddingBottom: require("_createForOfIteratorHelperLoose").space.PX_16, textAlign: "center" };
-_createForOfIteratorHelperLoose.buttonWrapper = { flexDirection: "row" };
-let obj2 = { paddingBottom: require("_createForOfIteratorHelperLoose").space.PX_16, textAlign: "center" };
-_createForOfIteratorHelperLoose.primaryButtonContainer = { marginBottom: require("_createForOfIteratorHelperLoose").space.PX_12 };
-let obj3 = { marginBottom: require("_createForOfIteratorHelperLoose").space.PX_12 };
-_createForOfIteratorHelperLoose.trailing = { flexGrow: 0, padding: require("_createForOfIteratorHelperLoose").space.PX_16 };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-let obj4 = { flexGrow: 0, padding: require("_createForOfIteratorHelperLoose").space.PX_16 };
+({ View: obj1, ScrollView: c3 } = get_ActivityIndicator);
+({ jsx: c4, jsxs: c5 } = jsxProd);
+createCacheKey = { scrollContainer: { minHeight: "100%" }, container: { flexGrow: 1, alignItems: "center", justifyContent: "center" }, alertContainer: null, alert: null, alertContent: null, alertTitle: null, alertSubtitle: null, buttonWrapper: null, primaryButtonContainer: null, trailing: null };
+createCacheKey = { paddingTop: 80 + require("NAV_BAR_HEIGHT").NAV_BAR_HEIGHT };
+createCacheKey[2] = createCacheKey;
+const merged = Object.assign(require("Themes").shadows.SHADOW_HIGH);
+createCacheKey[3] = { backgroundColor: require("Themes").colors.BACKGROUND_SURFACE_HIGH, borderRadius: require("Themes").radii.xl, borderWidth: 1, borderColor: require("Themes").colors.INTERACTIVE_BACKGROUND_ACTIVE, alignItems: "center", maxWidth: 290 };
+createCacheKey[4] = { paddingVertical: 24, paddingHorizontal: 24, alignItems: "center" };
+createCacheKey[5] = { paddingBottom: 8, textAlign: "center" };
+obj1 = { backgroundColor: require("Themes").colors.BACKGROUND_SURFACE_HIGH, borderRadius: require("Themes").radii.xl, borderWidth: 1, borderColor: require("Themes").colors.INTERACTIVE_BACKGROUND_ACTIVE, alignItems: "center", maxWidth: 290 };
+createCacheKey[6] = { paddingBottom: require("Themes").space.PX_16, textAlign: "center" };
+createCacheKey[7] = { flexDirection: "row" };
+let obj2 = { paddingBottom: require("Themes").space.PX_16, textAlign: "center" };
+createCacheKey[8] = { marginBottom: require("Themes").space.PX_12 };
+const obj3 = { marginBottom: require("Themes").space.PX_12 };
+createCacheKey[9] = { flexGrow: 0, padding: require("Themes").space.PX_16 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+const obj4 = { flexGrow: 0, padding: require("Themes").space.PX_16 };
 const result = require("jsxProd").fileFinishedImporting("modules/nuf/native/components/NewUserPermissionsOnboarding.android.tsx");
 
 export default function NewUserPermissionsOnboarding(showSkip) {
@@ -49,52 +49,47 @@ export default function NewUserPermissionsOnboarding(showSkip) {
     flag = true;
   }
   ({ onAllow, onDontAllow } = showSkip);
-  const tmp = _createForOfIteratorHelperLoose();
-  let obj = { contentContainerStyle: tmp.scrollContainer };
-  obj = { style: tmp.container };
-  obj = { style: tmp.alertContainer };
-  const obj1 = {};
+  const tmp = createCacheKey();
+  let obj = { contentContainerStyle: tmp.scrollContainer, children: null };
+  obj = { style: tmp.container, children: null };
+  obj = { style: tmp.alertContainer, children: null };
   const items = [header, ];
-  const obj2 = { style: tmp.alert };
-  const obj3 = { style: tmp.alertContent };
-  const obj4 = { style: tmp.alertTitle, variant: "heading-lg/bold", color: "text-default", children: title };
-  const items1 = [callback(require(4161) /* Text */.Text, obj4), , , ];
-  const obj5 = { style: tmp.alertSubtitle, variant: "text-sm/medium", color: "text-default", children: subtitle };
-  items1[1] = callback(require(4161) /* Text */.Text, obj5);
-  const obj6 = {};
+  const obj1 = { style: tmp.alert, children: null };
+  const obj2 = { style: tmp.alertContent, children: null };
+  const items1 = [callback(require(4185) /* Text */.Text, { style: tmp.alertTitle, variant: "heading-lg/bold", color: "text-default", children: title }), callback(require(4185) /* Text */.Text, { style: tmp.alertSubtitle, variant: "text-sm/medium", color: "text-default", children: subtitle }), , ];
   const items2 = [tmp.buttonWrapper, ];
   let primaryButtonContainer = flag;
   if (flag) {
     primaryButtonContainer = tmp.primaryButtonContainer;
   }
+  const obj5 = { style: items2, children: null };
   items2[1] = primaryButtonContainer;
-  obj6.style = items2;
-  const obj7 = { variant: "primary", size: "md" };
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj7.text = intl.string(require(1212) /* getSystemLocale */.t["2nYlT2"]);
-  obj7.onPress = onAllow;
-  obj7.loading = loading;
-  obj7.grow = true;
-  obj6.children = callback(require(4578) /* Button */.Button, obj7);
-  items1[2] = callback(closure_2, obj6);
+  const obj6 = { variant: "primary", size: "md", text: null, onPress: null, loading: null, grow: true };
+  const intl = tmp6(1236).intl;
+  obj6[2] = intl.string(require(1236) /* getSystemLocale */.t["2nYlT2"]);
+  obj6[3] = onAllow;
+  obj6[4] = loading;
+  obj5[1] = callback(require(4600) /* Button */.Button, obj6);
+  items1[2] = callback(closure_2, obj5);
   if (flag) {
-    const obj8 = { style: tmp.buttonWrapper };
-    const obj9 = { variant: "secondary" };
-    const intl2 = require(1212) /* getSystemLocale */.intl;
-    obj9.text = intl2.string(require(1212) /* getSystemLocale */.t["5Wxrcd"]);
-    obj9.onPress = onDontAllow;
-    obj9.grow = true;
-    obj8.children = callback(require(4578) /* Button */.Button, obj9);
-    flag = callback(closure_2, obj8);
+    const obj7 = { style: null, children: null };
+    obj7[0] = tmp.buttonWrapper;
+    const obj8 = { variant: "secondary", text: null, onPress: null, grow: true };
+    const intl2 = tmp6(1236).intl;
+    obj8[1] = intl2.string(tmp6(1236).t["5Wxrcd"]);
+    obj8[2] = onDontAllow;
+    obj7[1] = tmp4(tmp6(4600).Button, obj8);
+    flag = tmp4(tmp5, obj7);
   }
+  const obj9 = { children: null };
   items1[3] = flag;
-  obj3.children = items1;
-  obj2.children = closure_5(closure_2, obj3);
-  items[1] = callback(closure_2, obj2);
-  obj1.children = items;
-  obj.children = closure_5(closure_2, obj1);
-  obj.children = callback(closure_2, obj);
+  obj2[1] = items1;
+  obj1[1] = closure_5(closure_2, obj2);
+  items[1] = callback(closure_2, obj1);
+  obj9[0] = items;
+  obj[1] = closure_5(closure_2, obj9);
+  obj[1] = callback(closure_2, obj);
   const items3 = [callback(closure_2, obj), callback(closure_2, { style: tmp.trailing, children: trailing })];
-  obj.children = items3;
+  obj[1] = items3;
   return closure_5(closure_3, obj);
 };

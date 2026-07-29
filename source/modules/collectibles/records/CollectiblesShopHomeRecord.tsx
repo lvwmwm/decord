@@ -1,75 +1,100 @@
-// Module ID: 5809
-// Function ID: 50851
-// Name: CollectiblesShopHomeRecord
-// Dependencies: [6, 7, 5781, 5810, 5812, 5815, 5816, 5817, 5818, 5819, 5820, 5821, 5822, 5823, 5824, 5811, 2]
+// Module ID: 5827
+// Function ID: 5828
+// Name: fromServer
+// Dependencies: [5799, 5828, 5830, 5833, 5834, 5835, 5836, 5837, 5838, 5839, 5840, 5841, 5842, 5829, 2]
 
-// Module 5809 (CollectiblesShopHomeRecord)
-import FramesBannerBlockRecord from "FramesBannerBlockRecord";
-import FramesProductShelfBlockRecord from "FramesProductShelfBlockRecord";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import { CountdownTimerBlockRecord } from "CountdownTimerBlockRecord";
-import { FeaturedBlockRecord } from "FeaturedBlockRecord";
-import { FeedBlockRecord } from "FeedBlockRecord";
-import { FramesBannerBlockRecord } from "FramesBannerBlockRecord";
-import { FramesProductShelfBlockRecord as closure_9 } from "FramesProductShelfBlockRecord";
-import { GameServerHostingBannerBlockRecord as closure_10 } from "GameServerHostingBannerBlockRecord";
-import { HeroBlockRecord } from "HeroBlockRecord";
-import { ImmersiveBannerBlockRecord as closure_12 } from "ImmersiveBannerBlockRecord";
-import { RewardHeroBlockRecord } from "RewardHeroBlockRecord";
-import { ShelfBlockRecord } from "ShelfBlockRecord";
-import { SocialLayerStorefrontPromotionalBannerBlockRecord as closure_15 } from "SocialLayerStorefrontPromotionalBannerBlockRecord";
-import { WideBannerBlockRecord } from "WideBannerBlockRecord";
+// Module 5827 (fromServer)
+import fromServer from "fromServer";
+import { CountdownTimerBlockRecord } from "fromServer";
+import { FeaturedBlockRecord } from "fromServer";
+import { FeedBlockRecord } from "fromServer";
+import { FramesBannerBlockRecord } from "fromServer";
+import { FramesProductShelfBlockRecord as closure_7 } from "fromServer";
+import { GameServerHostingBannerBlockRecord as closure_8 } from "fromServer";
+import { HeroBlockRecord } from "fromServer";
+import { ImmersiveBannerBlockRecord as closure_10 } from "fromServer";
+import { RewardHeroBlockRecord } from "fromServer";
+import { ShelfBlockRecord } from "fromServer";
+import { SocialLayerStorefrontPromotionalBannerBlockRecord as closure_13 } from "fromServer";
+import { WideBannerBlockRecord } from "fromServer";
 
 const require = arg1;
-const tmp2 = (() => {
-  class CollectiblesShopHomeRecord {
-    constructor(arg0) {
-      tmp = outer1_2(this, CollectiblesShopHomeRecord);
-      shop_blocks = arg0.shop_blocks;
-      mapped = shop_blocks.map((type) => {
-        type = type.type;
-        if (CollectiblesShopHomeRecord(outer2_1[15]).ShopBlockType.HERO === type) {
-          return outer2_11.fromServer(type);
-        } else if (CollectiblesShopHomeRecord(outer2_1[15]).ShopBlockType.FEATURED === type) {
-          return outer2_6.fromServer(type);
-        } else if (CollectiblesShopHomeRecord(outer2_1[15]).ShopBlockType.FEED === type) {
-          return outer2_7.fromServer(type);
-        } else if (CollectiblesShopHomeRecord(outer2_1[15]).ShopBlockType.WIDE_BANNER === type) {
-          return outer2_16.fromServer(type);
-        } else if (CollectiblesShopHomeRecord(outer2_1[15]).ShopBlockType.SHELF === type) {
-          return outer2_14.fromServer(type);
-        } else if (CollectiblesShopHomeRecord(outer2_1[15]).ShopBlockType.COUNTDOWN_TIMER === type) {
-          return outer2_5.fromServer(type);
-        } else if (CollectiblesShopHomeRecord(outer2_1[15]).ShopBlockType.IMMERSIVE_BANNER === type) {
-          return outer2_12.fromServer(type);
-        } else if (CollectiblesShopHomeRecord(outer2_1[15]).ShopBlockType.REWARD_HERO === type) {
-          return outer2_13.fromServer(type);
-        } else if (CollectiblesShopHomeRecord(outer2_1[15]).ShopBlockType.SOCIAL_LAYER_STOREFRONT_PROMOTIONAL_BANNER === type) {
-          return outer2_15.fromServer(type);
-        } else if (CollectiblesShopHomeRecord(outer2_1[15]).ShopBlockType.FRAMES_BANNER === type) {
-          return outer2_8.fromServer(type);
-        } else if (CollectiblesShopHomeRecord(outer2_1[15]).ShopBlockType.FRAMES_PRODUCT_SHELF === type) {
-          return outer2_9.fromServer(type);
-        } else if (CollectiblesShopHomeRecord(outer2_1[15]).ShopBlockType.GAME_SERVER_HOSTING_BANNER === type) {
-          return outer2_10.fromServer(type);
-        }
-      });
-      this.shopBlocks = mapped.filter((arg0) => undefined !== arg0);
-      categories = arg0.categories;
-      this.categories = categories.map((arg0) => outer2_4.fromServer(arg0));
-      return;
+let prototype;
+prototype = function CollectiblesShopHomeRecord(shop_blocks) {
+  const obj = Object.create(new.target.prototype);
+  shop_blocks = shop_blocks.shop_blocks;
+  const mapped = shop_blocks.map((type) => {
+    type = type.type;
+    if (callback(table[13]).ShopBlockType.HERO === type) {
+      return closure_9.fromServer(type);
+    } else if (tmp(tmp2[13]).ShopBlockType.FEATURED === type) {
+      return closure_4.fromServer(type);
+    } else if (tmp(tmp2[13]).ShopBlockType.FEED === type) {
+      return closure_5.fromServer(type);
+    } else if (tmp(tmp2[13]).ShopBlockType.WIDE_BANNER === type) {
+      return closure_14.fromServer(type);
+    } else if (tmp(tmp2[13]).ShopBlockType.SHELF === type) {
+      return closure_12.fromServer(type);
+    } else if (tmp(tmp2[13]).ShopBlockType.COUNTDOWN_TIMER === type) {
+      return closure_3.fromServer(type);
+    } else if (tmp(tmp2[13]).ShopBlockType.IMMERSIVE_BANNER === type) {
+      return closure_10.fromServer(type);
+    } else if (tmp(tmp2[13]).ShopBlockType.REWARD_HERO === type) {
+      return closure_11.fromServer(type);
+    } else if (tmp(tmp2[13]).ShopBlockType.SOCIAL_LAYER_STOREFRONT_PROMOTIONAL_BANNER === type) {
+      return closure_13.fromServer(type);
+    } else if (tmp(tmp2[13]).ShopBlockType.FRAMES_BANNER === type) {
+      return closure_6.fromServer(type);
+    } else if (tmp(tmp2[13]).ShopBlockType.FRAMES_PRODUCT_SHELF === type) {
+      return closure_7.fromServer(type);
+    } else if (tmp(tmp2[13]).ShopBlockType.GAME_SERVER_HOSTING_BANNER === type) {
+      return closure_8.fromServer(type);
     }
+  });
+  obj.shopBlocks = mapped.filter((arg0) => undefined !== arg0);
+  const categories = shop_blocks.categories;
+  obj.categories = categories.map((arg0) => fromServer.fromServer(arg0));
+  return obj;
+}.prototype;
+prototype["fromServer"] = function fromServer(shop_blocks) {
+  if (typeof prototype !== "find") {
+    HermesBuiltin.throwTypeError();
   }
-  const items = [
-    {
-      key: "fromServer",
-      value(shop_blocks) {
-        return new CollectiblesShopHomeRecord(shop_blocks);
-      }
+  const obj = Object.create(prototype.prototype);
+  shop_blocks = shop_blocks.shop_blocks;
+  const mapped = shop_blocks.map((type) => {
+    type = type.type;
+    if (callback(table[13]).ShopBlockType.HERO === type) {
+      return closure_9.fromServer(type);
+    } else if (tmp(tmp2[13]).ShopBlockType.FEATURED === type) {
+      return closure_4.fromServer(type);
+    } else if (tmp(tmp2[13]).ShopBlockType.FEED === type) {
+      return closure_5.fromServer(type);
+    } else if (tmp(tmp2[13]).ShopBlockType.WIDE_BANNER === type) {
+      return closure_14.fromServer(type);
+    } else if (tmp(tmp2[13]).ShopBlockType.SHELF === type) {
+      return closure_12.fromServer(type);
+    } else if (tmp(tmp2[13]).ShopBlockType.COUNTDOWN_TIMER === type) {
+      return closure_3.fromServer(type);
+    } else if (tmp(tmp2[13]).ShopBlockType.IMMERSIVE_BANNER === type) {
+      return closure_10.fromServer(type);
+    } else if (tmp(tmp2[13]).ShopBlockType.REWARD_HERO === type) {
+      return closure_11.fromServer(type);
+    } else if (tmp(tmp2[13]).ShopBlockType.SOCIAL_LAYER_STOREFRONT_PROMOTIONAL_BANNER === type) {
+      return closure_13.fromServer(type);
+    } else if (tmp(tmp2[13]).ShopBlockType.FRAMES_BANNER === type) {
+      return closure_6.fromServer(type);
+    } else if (tmp(tmp2[13]).ShopBlockType.FRAMES_PRODUCT_SHELF === type) {
+      return closure_7.fromServer(type);
+    } else if (tmp(tmp2[13]).ShopBlockType.GAME_SERVER_HOSTING_BANNER === type) {
+      return closure_8.fromServer(type);
     }
-  ];
-  return callback(CollectiblesShopHomeRecord, null, items);
-})();
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/collectibles/records/CollectiblesShopHomeRecord.tsx");
+  });
+  obj.shopBlocks = mapped.filter((arg0) => undefined !== arg0);
+  const categories = shop_blocks.categories;
+  obj.categories = categories.map((arg0) => fromServer.fromServer(arg0));
+  return obj;
+};
+const result = require("fromServer").fileFinishedImporting("modules/collectibles/records/CollectiblesShopHomeRecord.tsx");
 
-export const CollectiblesShopHomeRecord = tmp2;
+export const CollectiblesShopHomeRecord = prototype;

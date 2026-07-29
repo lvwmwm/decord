@@ -1,45 +1,46 @@
-// Module ID: 6155
-// Function ID: 55071
-// Dependencies: [5078, 2]
+// Module ID: 6173
+// Function ID: 6174
+// Dependencies: [5100, 2]
+// Exports: default
 
-// Module 6155
+// Module 6173
 import HeaderRecord from "HeaderRecord";
 
-let closure_0;
+let c0;
 let closure_1;
-({ FindResultDirections: closure_0, AutocompleterResultTypes: closure_1 } = HeaderRecord);
+({ FindResultDirections: c0, AutocompleterResultTypes: closure_1 } = HeaderRecord);
 const result = require("set").fileFinishedImporting("modules/autocompleter/findNextSelectedResult.tsx");
-function findNextSelectedResult(DOWN, closure_27, closure_31) {
-  if (0 === closure_31.length) {
+function findNextSelectedResult(DOWN, closure_24, arr) {
+  if (0 === arr.length) {
     return 0;
   } else {
-    let tmp = closure_27;
+    let tmp = closure_24;
     if (null != arg3) {
       tmp = arg3;
-      if (arg3 === closure_27) {
-        return closure_27;
+      if (arg3 === closure_24) {
+        return closure_24;
       }
     }
     let num = 1;
     if (DOWN === constants.UP) {
       num = -1;
     }
-    const sum = closure_27 + num;
+    const sum = closure_24 + num;
     if (sum >= 0) {
       if (sum < length) {
-        let tmp12Result = sum;
-        if (closure_31[sum].type === constants2.HEADER) {
-          tmp12Result = callback(DOWN, sum, closure_31, tmp);
+        let tmp13Result = sum;
+        if (arr[sum].type === constants2.HEADER) {
+          tmp13Result = callback(DOWN, sum, arr, tmp);
         }
       }
-      return tmp12Result;
+      return tmp13Result;
     }
     let num2 = -1;
     if (sum < 0) {
       num2 = length;
     }
-    tmp12Result = callback(DOWN, num2, closure_31, tmp);
-    const tmp12 = callback;
+    tmp13Result = callback(DOWN, num2, arr, tmp);
+    const tmp13 = callback;
   }
 }
 

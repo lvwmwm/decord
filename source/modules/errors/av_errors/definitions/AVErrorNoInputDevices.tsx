@@ -1,27 +1,27 @@
-// Module ID: 16639
-// Function ID: 129655
+// Module ID: 16675
+// Function ID: 16676
 // Name: AVErrorNoInputDevicesDefinition
-// Dependencies: [1348, 4212, 4237, 8828, 16638, 2]
+// Dependencies: [1372, 4236, 4261, 8852, 16674, 2]
 
-// Module 16639 (AVErrorNoInputDevicesDefinition)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_3 from "_isNativeReflectConstruct";
-import closure_4 from "_isNativeReflectConstruct";
+// Module 16675 (AVErrorNoInputDevicesDefinition)
+import ensureGuildLoaded from "ensureGuildLoaded";
+import _detectH265HardwareDecode from "_detectH265HardwareDecode";
+import createRTCConnection from "createRTCConnection";
 
 const require = arg1;
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/errors/av_errors/definitions/AVErrorNoInputDevices.tsx");
+const result = require("createRTCConnection").fileFinishedImporting("modules/errors/av_errors/definitions/AVErrorNoInputDevices.tsx");
 
 export const AVErrorNoInputDevicesDefinition = {
   getActiveErrors(voiceState) {
     voiceState = voiceState.voiceState;
     channel = channel.getChannel(voiceState.voiceChannelId);
     let isGuildStageVoiceResult;
-    if (null != channel) {
+    if (channel != null) {
       isGuildStageVoiceResult = channel.isGuildStageVoice();
     }
     if (isGuildStageVoiceResult) {
       let suppress;
-      if (null != voiceState) {
+      if (voiceState != null) {
         suppress = voiceState.suppress;
       }
       isGuildStageVoiceResult = suppress;
@@ -30,8 +30,9 @@ export const AVErrorNoInputDevicesDefinition = {
       if (null != channel) {
         if (null != mediaSessionId.getMediaSessionId()) {
           if (!isGuildStageVoiceResult) {
-            const obj = { type: require(8828) /* validateUniqueErrorCodes */.AVError.NO_INPUT_DEVICES };
-            const merged = Object.assign(require(16638) /* getCommonErrorContext */.getVoiceChannelErrorContext());
+            const obj = { type: null };
+            obj[0] = require(8852) /* mapped */.AVError.NO_INPUT_DEVICES;
+            const merged = Object.assign(require(16674) /* getVoiceChannelErrorContext */.getVoiceChannelErrorContext());
             const items = [obj];
             return items;
           }

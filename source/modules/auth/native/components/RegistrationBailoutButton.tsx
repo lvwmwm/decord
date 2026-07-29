@@ -1,26 +1,26 @@
-// Module ID: 14863
-// Function ID: 113236
+// Module ID: 14889
+// Function ID: 14890
 // Name: RegistrationBailoutButton
-// Dependencies: [31, 33, 4165, 1273, 1212, 2]
+// Dependencies: [19, 21, 4189, 1297, 1236, 2]
 // Exports: default
 
-// Module 14863 (RegistrationBailoutButton)
-import "result";
+// Module 14889 (RegistrationBailoutButton)
+import "noop";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
 const require = arg1;
-let closure_3 = _createForOfIteratorHelperLoose.createStyles({ bail: { marginBottom: 16, marginLeft: "auto", marginRight: "auto" } });
-const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/auth/native/components/RegistrationBailoutButton.tsx");
+let closure_3 = createCacheKey.createStyles({ bail: { marginBottom: 16, marginLeft: "auto", marginRight: "auto" } });
+const result = require("createCacheKey").fileFinishedImporting("modules/auth/native/components/RegistrationBailoutButton.tsx");
 
 export default function RegistrationBailoutButton(onBail) {
-  const obj = { shrink: true };
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj.text = intl.string(require(1212) /* getSystemLocale */.t.CZ7wvG);
-  obj.size = require(1273) /* Button */.Button.Sizes.MEDIUM;
-  obj.look = require(1273) /* Button */.ButtonLooks.LINK;
-  obj.color = require(1273) /* Button */.ButtonColors.LINK;
-  obj.style = callback().bail;
-  obj.onPress = onBail.onBail;
-  return jsx(require(1273) /* Button */.Button, { shrink: true });
+  const obj = { shrink: true, text: null, size: null, look: null, color: null, style: null, onPress: null };
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj[1] = intl.string(require(1236) /* getSystemLocale */.t.CZ7wvG);
+  obj[2] = require(1297) /* Button */.Button.Sizes.MEDIUM;
+  obj[3] = require(1297) /* Button */.ButtonLooks.LINK;
+  obj[4] = require(1297) /* Button */.ButtonColors.LINK;
+  obj[5] = callback().bail;
+  obj[6] = onBail.onBail;
+  return jsx(require(1297) /* Button */.Button, { shrink: true, text: null, size: null, look: null, color: null, style: null, onPress: null });
 };

@@ -1,53 +1,52 @@
-// Module ID: 15573
-// Function ID: 119670
+// Module ID: 15607
+// Function ID: 15608
 // Name: UserSettingsFriendRequests
-// Dependencies: [31, 27, 653, 33, 3838, 6485, 5536, 1212, 5537, 1360, 2]
+// Dependencies: [19, 17, 676, 21, 3862, 6506, 5554, 1236, 5555, 1384, 2]
 // Exports: default
 
-// Module 15573 (UserSettingsFriendRequests)
-import result from "result";
+// Module 15607 (UserSettingsFriendRequests)
+import noop from "noop";
 import { View } from "get ActivityIndicator";
 import ME from "ME";
 import jsxProd from "jsxProd";
 
-let closure_5;
+let c5;
 let closure_6;
-let closure_7;
-let closure_8;
+let error;
+let metroImportAll;
 const require = arg1;
-({ AllFriendSourceFlags: closure_5, FriendSourceFlags: closure_6 } = ME);
-({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
+({ AllFriendSourceFlags: c5, FriendSourceFlags: closure_6 } = ME);
+({ jsx: error, jsxs: metroImportAll } = jsxProd);
 const result = require("ME").fileFinishedImporting("modules/user_settings/content_and_social/native/UserSettingsFriendRequests.tsx");
 
 export default function UserSettingsFriendRequests() {
-  let FriendSourceFlagsSetting = setting(3838).FriendSourceFlagsSetting;
+  let FriendSourceFlagsSetting = setting(3862).FriendSourceFlagsSetting;
   setting = FriendSourceFlagsSetting.useSetting();
   const items = [setting];
   const memo = React.useMemo(() => setting(outer1_2[5]).computeFlags(setting), items);
-  let obj = {};
-  obj = {};
-  const intl = setting(1212).intl;
-  obj.title = intl.string(setting(1212).t.vyodkM);
-  obj.hasIcons = false;
-  obj = {};
-  const intl2 = setting(1212).intl;
-  obj.label = intl2.string(setting(1212).t.mGr3CX);
-  obj.value = memo.all;
-  obj.onValueChange = function onValueChange(arg0) {
-    const FriendSourceFlagsSetting = setting(outer1_2[4]).FriendSourceFlagsSetting;
+  let obj = { children: null };
+  obj = { title: null, hasIcons: false, children: null };
+  const intl = setting(1236).intl;
+  obj[0] = intl.string(setting(1236).t.vyodkM);
+  obj = { label: null, value: null, onValueChange: null };
+  const intl2 = setting(1236).intl;
+  obj[0] = intl2.string(setting(1236).t.mGr3CX);
+  obj[1] = memo.all;
+  obj[2] = function onValueChange(arg0) {
+    const FriendSourceFlagsSetting = setting(table[4]).FriendSourceFlagsSetting;
     if (arg0) {
       let tmp3 = tmp;
     } else {
-      tmp3 = tmp & ~outer1_6.NO_RELATION;
+      tmp3 = tmp & ~constants.NO_RELATION;
     }
     return FriendSourceFlagsSetting.updateSetting(tmp3);
   };
-  const items1 = [callback(setting(5537).TableSwitchRow, obj), , ];
-  const obj1 = {};
-  const intl3 = setting(1212).intl;
-  obj1.label = intl3.string(setting(1212).t.IqlCSq);
-  obj1.value = memo.mutualFriends;
-  obj1.onValueChange = function onValueChange(arg0) {
+  const items1 = [callback(setting(5555).TableSwitchRow, obj), , ];
+  const obj1 = { label: null, value: null, onValueChange: null };
+  const intl3 = setting(1236).intl;
+  obj1[0] = intl3.string(setting(1236).t.IqlCSq);
+  obj1[1] = memo.mutualFriends;
+  obj1[2] = function onValueChange(arg0) {
     const FriendSourceFlagsSetting = setting(outer1_2[4]).FriendSourceFlagsSetting;
     const obj = outer1_1(outer1_2[9]);
     if (arg0) {
@@ -57,12 +56,12 @@ export default function UserSettingsFriendRequests() {
     }
     return FriendSourceFlagsSetting.updateSetting(addFlagResult);
   };
-  items1[1] = callback(setting(5537).TableSwitchRow, obj1);
-  const obj2 = {};
-  const intl4 = setting(1212).intl;
-  obj2.label = intl4.string(setting(1212).t.mozb8f);
-  obj2.value = memo.mutualGuilds;
-  obj2.onValueChange = function onValueChange(arg0) {
+  items1[1] = callback(setting(5555).TableSwitchRow, obj1);
+  const obj2 = { label: null, value: null, onValueChange: null };
+  const intl4 = setting(1236).intl;
+  obj2[0] = intl4.string(setting(1236).t.mozb8f);
+  obj2[1] = memo.mutualGuilds;
+  obj2[2] = function onValueChange(arg0) {
     const FriendSourceFlagsSetting = setting(outer1_2[4]).FriendSourceFlagsSetting;
     const obj = outer1_1(outer1_2[9]);
     if (arg0) {
@@ -72,8 +71,8 @@ export default function UserSettingsFriendRequests() {
     }
     return FriendSourceFlagsSetting.updateSetting(addFlagResult);
   };
-  items1[2] = callback(setting(5537).TableSwitchRow, obj2);
-  obj.children = items1;
-  obj.children = callback2(setting(5536).TableRowGroup, obj);
+  items1[2] = callback(setting(5555).TableSwitchRow, obj2);
+  obj[2] = items1;
+  obj[0] = callback2(setting(5554).TableRowGroup, obj);
   return callback(View, obj);
 };

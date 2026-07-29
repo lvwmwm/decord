@@ -1,214 +1,243 @@
-// Module ID: 5687
-// Function ID: 48622
-// Name: computeAllowNsfw
-// Dependencies: [31, 1910, 1352, 1391, 1194, 1348, 1918, 1838, 3793, 1850, 653, 5688, 566, 483, 1882, 2]
-// Exports: buildPermissionContext, computeCommandContextType, usePermissionContext
+// Module ID: 5705
+// Function ID: 5706
+// Name: computePermissions
+// Dependencies: [19, 1934, 1376, 1415, 1218, 1372, 1942, 1862, 3817, 1874, 676, 5706, 589, 506, 1906, 2]
+// Exports: buildPermissionContext, computeCommandContextType, getContextGuildId, usePermissionContext
 
-// Module 5687 (computeAllowNsfw)
-import result from "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import { ChannelRecordBase } from "_callSuper";
-import { isGuildNSFW } from "isGuildOwner";
-import closure_7 from "_isNativeReflectConstruct";
-import closure_8 from "_isNativeReflectConstruct";
-import closure_9 from "_isNativeReflectConstruct";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import closure_11 from "_isNativeReflectConstruct";
-import closure_12 from "_isNativeReflectConstruct";
+// Module 5705 (computePermissions)
+import noop from "noop";
+import initialize from "initialize";
+import { ChannelRecordBase } from "createChannelRecord";
+import { isGuildNSFW } from "GuildNSFWContentLevel";
+import fetchFingerprint from "fetchFingerprint";
+import ensureGuildLoaded from "ensureGuildLoaded";
+import trackCommunicationDisabled from "trackCommunicationDisabled";
+import createGuildRecordFromRust from "createGuildRecordFromRust";
+import getUncachedChannelPermissions from "getUncachedChannelPermissions";
+import mergeGuildAvatar from "mergeGuildAvatar";
 import ME from "ME";
 
-let closure_13;
 let closure_14;
+let map1;
 const require = arg1;
-function computeAllowNsfw(memo, stateFromStores1, viewNsfwCommandsOrDefault, arg3) {
-  let tmp = viewNsfwCommandsOrDefault;
-  let tmp3 = !tmp2;
-  if (!!stateFromStores1) {
-    let tmp6 = !tmp5;
-    if (memo instanceof ChannelRecordBase) {
-      if (null != memo.guild_id) {
-        tmp = memo.isNSFW() || arg3;
-        const tmp8 = memo.isNSFW() || arg3;
-      }
-      tmp6 = tmp;
-    }
-    tmp3 = tmp6;
-  }
-  return tmp3;
-}
 function computePermissions(isPrivate) {
   if (!(isPrivate instanceof ChannelRecordBase)) {
     if (null != isPrivate) {
-      const permissions = closure_11.computePermissions(isPrivate);
+      const permissions = getUncachedChannelPermissions.computePermissions(isPrivate);
+      let SEND_MESSAGES_IN_THREADS = constants2;
       let flag = true;
       let flag2 = true;
       if (!obj6.has(permissions, constants2.ADMINISTRATOR)) {
-        let obj = importAll(483);
-        const hasItem = obj.has(permissions, constants2.VIEW_CHANNEL);
+        let tmp13Result = tmp13(506);
+        const hasItem = tmp13Result.has(permissions, SEND_MESSAGES_IN_THREADS.VIEW_CHANNEL);
         if (tmp3) {
           let hasItem1 = hasItem;
           if (hasItem) {
-            hasItem1 = importAll(483).has(permissions, constants2.USE_APPLICATION_COMMANDS);
-            const obj2 = importAll(483);
+            tmp13Result = tmp13(506);
+            hasItem1 = tmp13Result.has(permissions, SEND_MESSAGES_IN_THREADS.USE_APPLICATION_COMMANDS);
           }
-          const has = importAll(483).has;
-          let SEND_MESSAGES_IN_THREADS = constants2;
+          const has = tmp13(506).has;
           if (arg1) {
             SEND_MESSAGES_IN_THREADS = SEND_MESSAGES_IN_THREADS.SEND_MESSAGES_IN_THREADS;
             let hasItem2 = has(permissions, SEND_MESSAGES_IN_THREADS);
           } else {
             hasItem2 = has(permissions, SEND_MESSAGES_IN_THREADS.SEND_MESSAGES);
           }
-          const tmp14 = importAll(483);
+          const tmp13Result1 = tmp13(506);
         } else {
-          flag = hasItem;
-          flag2 = true;
+          flag = true;
+          flag2 = hasItem;
         }
-        tmp3 = isPrivate instanceof ChannelRecordBase;
+        tmp3 = isPrivate instanceof tmp;
       }
-      obj = { computedPermissions: permissions, hasBaseAccessPermissions: flag, hasSendMessagesPermission: flag2 };
+      let obj = { computedPermissions: null, hasBaseAccessPermissions: null, hasSendMessagesPermission: null };
+      obj[0] = permissions;
+      obj[1] = flag2;
+      obj[2] = flag;
       return obj;
     }
   }
-  obj = { computedPermissions: importAll(483).deserialize(0), hasBaseAccessPermissions: true, hasSendMessagesPermission: true };
+  obj = { computedPermissions: null, hasBaseAccessPermissions: true, hasSendMessagesPermission: true };
+  obj[0] = importAll(506).deserialize(0);
   return obj;
 }
-function getContextGuildId(context) {
-  return context instanceof ChannelRecordBase ? context.guild_id : context.id;
-}
-({ ChannelTypes: closure_13, Permissions: closure_14 } = ME);
-const result = require("_callSuper").fileFinishedImporting("modules/application_commands/CommandPermissionContext.tsx");
+({ ChannelTypes: map1, Permissions: closure_14 } = ME);
+const result = require("createChannelRecord").fileFinishedImporting("modules/application_commands/CommandPermissionContext.tsx");
 
 export const buildPermissionContext = function buildPermissionContext(channel, items) {
-  let tmp = channel;
+  let obj = channel;
   if (channel instanceof ChannelRecordBase) {
-    tmp = channel;
+    obj = channel;
     if (channel.isThread()) {
       channel = channel.getChannel(channel.parent_id);
-      tmp = channel;
-      if (null != channel) {
-        tmp = channel;
+      obj = channel;
+    }
+  }
+  if (null == obj) {
+    let viewNsfwCommandsOrDefault = require(5706) /* resolveNsfwTogglesWithDefaults */.getViewNsfwCommandsOrDefault();
+    id = id.getId();
+    currentUser = currentUser.getCurrentUser();
+    let flag;
+    if (currentUser != null) {
+      flag = currentUser.nsfwAllowed;
+    }
+    if (flag == null) {
+      flag = false;
+    }
+    if (null != undefined) {
+      member = member.getMember(undefined, id);
+      let roles;
+      if (member != null) {
+        roles = member.roles;
       }
+      if (roles == null) {
+        roles = [];
+      }
+      items = roles;
+    } else {
+      items = [];
     }
-  }
-  let tmp5;
-  if (null != tmp) {
-    tmp5 = getContextGuildId(tmp);
-  }
-  let obj = require(5688) /* resolveNsfwTogglesWithDefaults */;
-  const viewNsfwCommandsOrDefault = obj.getViewNsfwCommandsOrDefault();
-  id = id.getId();
-  currentUser = currentUser.getCurrentUser();
-  let nsfwAllowed;
-  if (null != currentUser) {
-    nsfwAllowed = currentUser.nsfwAllowed;
-  }
-  if (null == tmp5) {
-    items = [];
-  } else {
-    member = member.getMember(tmp5, id);
-    items = undefined;
-    if (null != member) {
-      items = member.roles;
+    let isThreadResult = channel instanceof tmp;
+    const obj2 = require(5706) /* resolveNsfwTogglesWithDefaults */;
+    if (isThreadResult) {
+      isThreadResult = channel.isThread();
     }
+    const isViewingRolesResult = viewingRoles.isViewingRoles(undefined);
+    const tmp17 = computePermissions;
+    obj = { context: null, userId: null, roleIds: null, isImpersonating: null, commandTypes: null, computedPermissions: null, hasBaseAccessPermissions: null, hasSendMessagesPermission: null, allowNsfw: null };
+    obj[0] = obj;
+    obj[1] = id;
+    obj[2] = items;
+    obj[3] = isViewingRolesResult;
+    obj[4] = items;
+    ({ computedPermissions: obj3[5], hasBaseAccessPermissions: obj3[6], hasSendMessagesPermission: obj3[7] } = computePermissions(obj, isThreadResult));
+    let tmp24 = flag;
+    if (tmp24) {
+      let tmp25 = !(obj instanceof tmp);
+      if (!tmp25) {
+        if (null != obj.guild_id) {
+          viewNsfwCommandsOrDefault = obj.isNSFW() || tmp23;
+          const tmp26 = obj.isNSFW() || tmp23;
+        }
+        tmp25 = viewNsfwCommandsOrDefault;
+      }
+      tmp24 = tmp25;
+    }
+    obj[8] = tmp24;
+    return obj;
   }
-  let isThreadResult = channel instanceof ChannelRecordBase;
-  if (isThreadResult) {
-    isThreadResult = channel.isThread();
-  }
-  const isViewingRolesResult = viewingRoles.isViewingRoles(tmp5);
-  const tmp11 = null != nsfwAllowed && nsfwAllowed;
-  const tmp16 = computePermissions;
-  obj = { context: tmp, userId: id, roleIds: items, isImpersonating: isViewingRolesResult, commandTypes: items };
-  ({ computedPermissions: obj2.computedPermissions, hasBaseAccessPermissions: obj2.hasBaseAccessPermissions, hasSendMessagesPermission: obj2.hasSendMessagesPermission } = computePermissions(tmp, isThreadResult));
-  obj.allowNsfw = computeAllowNsfw(tmp, tmp11, viewNsfwCommandsOrDefault, isGuildNSFW(guild.getGuild(tmp5)));
-  return obj;
 };
 export const usePermissionContext = function usePermissionContext(channel, items) {
   const _require = channel;
   let closure_1 = items;
   items = [channel];
   const memo = React.useMemo(() => {
-    if (channel instanceof stateFromStoresArray) {
-      if (channel.isThread()) {
-        channel = outer1_8.getChannel(channel.parent_id);
+    let tmp = closure_0;
+    if (closure_0 instanceof stateFromStoresArray) {
+      tmp = obj;
+      if (obj.isThread()) {
+        let channel = outer1_8.getChannel(obj.parent_id);
+        if (channel == null) {
+          channel = obj;
+        }
+        tmp = channel;
       }
-      return channel;
     }
+    return tmp;
   }, items);
-  let tmp2;
-  if (null != memo) {
-    tmp2 = getContextGuildId(memo);
-  }
-  React = tmp2;
-  const viewNsfwCommandsOrDefault = _require(memo[11]).useViewNsfwCommandsOrDefault();
-  const obj = _require(memo[11]);
-  const items1 = [closure_7];
-  const stateFromStores = _require(memo[12]).useStateFromStores(items1, () => tmp9.getId());
-  const obj2 = _require(memo[12]);
-  const items2 = [closure_12];
-  const stateFromStores1 = _require(memo[12]).useStateFromStores(items2, () => {
-    const currentUser = outer1_12.getCurrentUser();
-    let nsfwAllowed;
-    if (null != currentUser) {
-      nsfwAllowed = currentUser.nsfwAllowed;
-    }
-    return null != nsfwAllowed && nsfwAllowed;
-  });
-  const obj3 = _require(memo[12]);
-  const items3 = [closure_9];
-  const stateFromStoresArray = _require(memo[12]).useStateFromStoresArray(items3, () => {
-    if (null == result) {
-      let items = [];
-    } else {
-      const member = outer1_9.getMember(result, stateFromStores);
-      items = undefined;
-      if (null != member) {
-        items = member.roles;
+  if (null == memo) {
+    React = undefined;
+    let viewNsfwCommandsOrDefault = _require(memo[11]).useViewNsfwCommandsOrDefault();
+    const obj3 = _require(memo[11]);
+    const items1 = [fetchFingerprint];
+    const stateFromStores = _require(memo[12]).useStateFromStores(items1, () => tmp17.getId());
+    const obj4 = _require(memo[12]);
+    const items2 = [mergeGuildAvatar];
+    const stateFromStores1 = _require(memo[12]).useStateFromStores(items2, () => {
+      currentUser = currentUser.getCurrentUser();
+      let flag;
+      if (currentUser != null) {
+        flag = currentUser.nsfwAllowed;
       }
+      if (flag == null) {
+        flag = false;
+      }
+      return flag;
+    });
+    const obj5 = _require(memo[12]);
+    const items3 = [trackCommunicationDisabled];
+    const stateFromStoresArray = _require(memo[12]).useStateFromStoresArray(items3, () => {
+      if (null != c3) {
+        const member = outer1_9.getMember(tmp, stateFromStores);
+        let roles;
+        if (member != null) {
+          roles = member.roles;
+        }
+        if (roles == null) {
+          roles = [];
+        }
+        let items = roles;
+      } else {
+        items = [];
+      }
+      return items;
+    });
+    const obj6 = _require(memo[12]);
+    const items4 = [stateFromStores];
+    const stateFromStores2 = _require(memo[12]).useStateFromStores(items4, () => stateFromStores.isViewingRoles(c3));
+    _require(memo[12]);
+    const items5 = [createGuildRecordFromRust];
+    const items6 = [undefined];
+    let tmp17 = stateFromStores1;
+    if (tmp17) {
+      let tmp19 = !(memo instanceof stateFromStoresArray);
+      if (!tmp19) {
+        if (null != memo.guild_id) {
+          viewNsfwCommandsOrDefault = memo.isNSFW() || tmp16;
+          const tmp20 = memo.isNSFW() || tmp16;
+        }
+        tmp19 = viewNsfwCommandsOrDefault;
+      }
+      tmp17 = tmp19;
     }
-    return items;
-  });
-  const obj4 = _require(memo[12]);
-  const items4 = [stateFromStores];
-  const stateFromStores2 = _require(memo[12]).useStateFromStores(items4, () => stateFromStores.isViewingRoles(result));
-  const obj5 = _require(memo[12]);
-  const items5 = [_createForOfIteratorHelperLoose];
-  const items6 = [tmp2];
-  const tmp9 = computeAllowNsfw(memo, stateFromStores1, viewNsfwCommandsOrDefault, _require(memo[12]).useStateFromStores(items5, () => stateFromStores2(outer1_10.getGuild(result)), items6));
-  closure_7 = tmp9;
-  const items7 = [items, memo, stateFromStores2, stateFromStoresArray, stateFromStores, tmp9, channel];
-  return React.useMemo(() => {
-    let isThreadResult = channel instanceof stateFromStoresArray;
-    if (isThreadResult) {
-      isThreadResult = channel.isThread();
-    }
-    const tmpResult = outer1_16(memo, isThreadResult);
-    return { context: memo, userId: stateFromStores, roleIds: stateFromStoresArray, commandTypes: closure_1, isImpersonating: stateFromStores2, computedPermissions: tmpResult.computedPermissions, hasBaseAccessPermissions: tmpResult.hasBaseAccessPermissions, hasSendMessagesPermission: tmpResult.hasSendMessagesPermission, allowNsfw: closure_7 };
-  }, items7);
+    fetchFingerprint = tmp17;
+    const items7 = [items, memo, stateFromStores2, stateFromStoresArray, stateFromStores, tmp17, channel];
+    return React.useMemo(() => {
+      let obj = closure_0;
+      let isThreadResult = closure_0 instanceof stateFromStoresArray;
+      if (isThreadResult) {
+        isThreadResult = obj.isThread();
+      }
+      const tmpResult = outer1_15(memo, isThreadResult);
+      obj = { context: tmp2, userId: stateFromStores, roleIds: stateFromStoresArray, commandTypes: closure_1, isImpersonating: stateFromStores2, computedPermissions: tmpResult.computedPermissions, hasBaseAccessPermissions: tmpResult.hasBaseAccessPermissions, hasSendMessagesPermission: tmpResult.hasSendMessagesPermission, allowNsfw: fetchFingerprint };
+      return obj;
+    }, items7);
+  }
 };
 export const computeCommandContextType = function computeCommandContextType(channel, applicationId) {
   if (channel instanceof ChannelRecordBase) {
     let guild_id;
-    if (null != channel) {
+    if (channel != null) {
       guild_id = channel.guild_id;
     }
     if (null == guild_id) {
       let type;
-      if (null != channel) {
+      if (channel != null) {
         type = channel.type;
       }
       if (type !== constants.DM) {
-        const PRIVATE_CHANNEL = require(1882) /* PermissionOverwriteType */.InteractionContextType.PRIVATE_CHANNEL;
+        const PRIVATE_CHANNEL = require(1906) /* PermissionOverwriteType */.InteractionContextType.PRIVATE_CHANNEL;
       } else {
         let recipientId;
-        if (null != channel) {
+        if (channel != null) {
           recipientId = channel.getRecipientId();
         }
       }
-      const BOT_DM = require(1882) /* PermissionOverwriteType */.InteractionContextType.BOT_DM;
+      const BOT_DM = require(1906) /* PermissionOverwriteType */.InteractionContextType.BOT_DM;
     }
   }
-  return require(1882) /* PermissionOverwriteType */.InteractionContextType.GUILD;
+  return require(1906) /* PermissionOverwriteType */.InteractionContextType.GUILD;
 };
-export { getContextGuildId };
+export const getContextGuildId = function getContextGuildId(context) {
+  return context instanceof ChannelRecordBase ? context.guild_id : context.id;
+};

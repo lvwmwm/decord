@@ -1,42 +1,42 @@
-// Module ID: 8696
-// Function ID: 68856
+// Module ID: 8720
+// Function ID: 8721
 // Name: useFetchVirtualCurrencyBalance
-// Dependencies: [31, 8697, 566, 8698, 2]
+// Dependencies: [19, 8721, 589, 8722, 2]
 // Exports: useFetchVirtualCurrencyBalance
 
-// Module 8696 (useFetchVirtualCurrencyBalance)
-import { useEffect } from "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 8720 (useFetchVirtualCurrencyBalance)
+import { useEffect } from "noop";
+import redeemError from "redeemError";
 
 const result = require("initialize").fileFinishedImporting("modules/virtual_currency/hooks/useFetchVirtualCurrencyBalance.tsx");
 
 export const useFetchVirtualCurrencyBalance = function useFetchVirtualCurrencyBalance(disableFetch) {
   const _require = disableFetch;
-  const items = [_isNativeReflectConstruct];
-  const isFetching = _require(balance[2]).useStateFromStoresObject(items, () => ({ balance: outer1_3.balance, isFetching: outer1_3.isFetchingBalance, error: outer1_3.fetchBalanceError }));
+  const items = [redeemError];
+  const isFetching = _require(balance[2]).useStateFromStoresObject(items, () => ({ balance: redeemError.balance, isFetching: redeemError.isFetchingBalance, error: redeemError.fetchBalanceError }));
   balance = isFetching.balance;
   const error = isFetching.error;
   const items1 = [balance, error, ];
   disableFetch = undefined;
-  if (null != disableFetch) {
+  if (disableFetch != null) {
     disableFetch = disableFetch.disableFetch;
   }
   items1[2] = disableFetch;
   error(() => {
-    let isFetchingBalance = null != disableFetch;
-    if (isFetchingBalance) {
-      isFetchingBalance = disableFetch.disableFetch;
+    let disableFetch;
+    if (disableFetch != null) {
+      disableFetch = disableFetch.disableFetch;
     }
-    if (!isFetchingBalance) {
-      isFetchingBalance = null !== balance;
+    if (!disableFetch) {
+      disableFetch = null !== balance;
     }
-    if (!isFetchingBalance) {
-      isFetchingBalance = null !== error;
+    if (!disableFetch) {
+      disableFetch = null !== error;
     }
-    if (!isFetchingBalance) {
-      isFetchingBalance = outer1_3.isFetchingBalance;
+    if (!disableFetch) {
+      disableFetch = outer1_3.isFetchingBalance;
     }
-    if (!isFetchingBalance) {
+    if (!disableFetch) {
       const virtualCurrencyBalance = disableFetch(balance[3]).fetchVirtualCurrencyBalance();
       const obj = disableFetch(balance[3]);
     }

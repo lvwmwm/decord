@@ -1,51 +1,51 @@
-// Module ID: 14213
-// Function ID: 109163
+// Module ID: 14235
+// Function ID: 14236
 // Name: ResubscribedAlert
-// Dependencies: [31, 27, 33, 4165, 689, 4596, 1212, 14214, 1273, 4161, 2]
+// Dependencies: [19, 17, 21, 4189, 712, 4618, 1236, 14236, 1297, 4185, 2]
 // Exports: default
 
-// Module 14213 (ResubscribedAlert)
-import "result";
+// Module 14235 (ResubscribedAlert)
+import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_3;
-let closure_4;
-let closure_5;
+let c3;
+let c4;
+let c5;
 let closure_6;
 const require = arg1;
-({ View: closure_3, Image: closure_4 } = get_ActivityIndicator);
-({ jsx: closure_5, jsxs: closure_6 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_MOD_NORMAL };
-_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.body = { alignItems: "center", textAlign: "center" };
-_createForOfIteratorHelperLoose.centerText = { textAlign: "center" };
-_createForOfIteratorHelperLoose.headerImage = { width: 87, height: 87 };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+({ View: c3, Image: c4 } = get_ActivityIndicator);
+({ jsx: c5, jsxs: closure_6 } = jsxProd);
+createCacheKey = { container: null, body: null, centerText: null, headerImage: null };
+createCacheKey = { backgroundColor: require("Themes").colors.BACKGROUND_MOD_NORMAL };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { alignItems: "center", textAlign: "center" };
+createCacheKey[2] = { textAlign: "center" };
+createCacheKey[3] = { width: 87, height: 87 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
 const result = require("jsxProd").fileFinishedImporting("modules/guild_role_subscriptions/native/manage_subscriptions/ResubscribedAlert.tsx");
 
 export default function ResubscribedAlert(onClose) {
-  const tmp = _createForOfIteratorHelperLoose();
-  let obj = {};
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj.confirmText = intl.string(require(1212) /* getSystemLocale */.t["NX+WJN"]);
-  obj.onConfirm = onClose.onClose;
-  obj.style = tmp.container;
-  obj = { style: tmp.body };
-  obj = { source: importDefault(14214), style: tmp.headerImage };
-  const items = [callback(closure_4, obj), callback(require(1273) /* Button */.Spacer, { size: 27 }), , , ];
-  const obj1 = { variant: "text-lg/semibold", color: "mobile-text-heading-primary", style: tmp.centerText };
-  const intl2 = require(1212) /* getSystemLocale */.intl;
-  obj1.children = intl2.string(require(1212) /* getSystemLocale */.t.oPV2cy);
-  items[2] = callback(require(4161) /* Text */.Text, obj1);
-  items[3] = callback(require(1273) /* Button */.Spacer, { size: 12 });
-  const obj2 = { variant: "text-md/normal", color: "mobile-text-heading-primary", style: tmp.centerText };
-  const intl3 = require(1212) /* getSystemLocale */.intl;
-  obj2.children = intl3.string(require(1212) /* getSystemLocale */.t.DdRizV);
-  items[4] = callback(require(4161) /* Text */.Text, obj2);
-  obj.children = items;
-  obj.children = callback2(closure_3, obj);
-  return callback(importDefault(4596), obj);
+  const tmp = createCacheKey();
+  let obj = { confirmText: null, onConfirm: null, style: null, children: null };
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj[0] = intl.string(require(1236) /* getSystemLocale */.t["NX+WJN"]);
+  obj[1] = onClose.onClose;
+  obj[2] = tmp.container;
+  obj = { style: tmp.body, children: null };
+  obj = { source: importDefault(14236), style: tmp.headerImage };
+  const items = [callback(closure_4, obj), callback(require(1297) /* Button */.Spacer, { size: 27 }), , , ];
+  const obj1 = { variant: "text-lg/semibold", color: "mobile-text-heading-primary", style: tmp.centerText, children: null };
+  const intl2 = require(1236) /* getSystemLocale */.intl;
+  obj1[3] = intl2.string(require(1236) /* getSystemLocale */.t.oPV2cy);
+  items[2] = callback(require(4185) /* Text */.Text, obj1);
+  items[3] = callback(require(1297) /* Button */.Spacer, { size: 12 });
+  const obj2 = { variant: "text-md/normal", color: "mobile-text-heading-primary", style: tmp.centerText, children: null };
+  const intl3 = require(1236) /* getSystemLocale */.intl;
+  obj2[3] = intl3.string(require(1236) /* getSystemLocale */.t.DdRizV);
+  items[4] = callback(require(4185) /* Text */.Text, obj2);
+  obj[1] = items;
+  obj[3] = callback2(closure_3, obj);
+  return callback(importDefault(4618), obj);
 };

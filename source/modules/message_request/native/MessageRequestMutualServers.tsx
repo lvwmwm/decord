@@ -1,20 +1,20 @@
-// Module ID: 15671
-// Function ID: 120680
+// Module ID: 15706
+// Function ID: 15707
 // Name: MessageRequestMutualServers
-// Dependencies: [31, 27, 33, 4165, 5548, 15672, 1212, 11687, 4161, 4695, 2]
+// Dependencies: [19, 17, 21, 4189, 5566, 15707, 1236, 11711, 4185, 4717, 2]
 // Exports: default
 
-// Module 15671 (MessageRequestMutualServers)
-import "result";
+// Module 15706 (MessageRequestMutualServers)
+import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_4;
-let closure_5;
+let c4;
+let c5;
 const require = arg1;
-({ jsx: closure_4, jsxs: closure_5 } = jsxProd);
-let closure_6 = _createForOfIteratorHelperLoose.createStyles({ container: { flexDirection: "row", alignItems: "center", gap: 4 }, label: { flexShrink: 1 } });
+({ jsx: c4, jsxs: c5 } = jsxProd);
+let closure_6 = createCacheKey.createStyles({ container: { flexDirection: "row", alignItems: "center", gap: 4 }, label: { flexShrink: 1 } });
 const result = require("jsxProd").fileFinishedImporting("modules/message_request/native/MessageRequestMutualServers.tsx");
 
 export default function MessageRequestMutualServers(textVariant) {
@@ -25,7 +25,7 @@ export default function MessageRequestMutualServers(textVariant) {
   ({ onPress, iconSize } = textVariant);
   ({ userId, style } = textVariant);
   if (iconSize === undefined) {
-    iconSize = iconSize(5548).GuildIconSizes.XXSMALL_12;
+    iconSize = iconSize(5566).GuildIconSizes.XXSMALL_12;
   }
   let str = textVariant.textVariant;
   if (str === undefined) {
@@ -33,42 +33,48 @@ export default function MessageRequestMutualServers(textVariant) {
   }
   const suffix = textVariant.suffix;
   const tmp3 = callback2();
-  let obj = iconSize(15672);
+  let obj = iconSize(15707);
   const mutualGuildsForMessageRequests = obj.useMutualGuildsForMessageRequests(userId);
   const substr = mutualGuildsForMessageRequests.slice(0, 3);
   if (mutualGuildsForMessageRequests.length > 0) {
-    const intl2 = iconSize(1212).intl;
-    obj = { count: length };
-    let formatResult = intl2.format(iconSize(1212).t.eE3oep, obj);
+    const intl2 = tmp4(1236).intl;
+    obj = { count: null };
+    obj[0] = length;
+    let formatResult = intl2.format(tmp4(1236).t.eE3oep, obj);
   } else {
-    const intl = iconSize(1212).intl;
-    formatResult = intl.string(iconSize(1212).t.jpY0X5);
+    const intl = tmp4(1236).intl;
+    formatResult = intl.string(tmp4(1236).t.jpY0X5);
   }
-  obj = { style: items };
+  obj = { style: items, children: null };
   items = [tmp3.container, style];
-  let tmp11 = length > 0;
-  if (tmp11) {
-    const obj1 = { size: iconSize, names: substr.map((name) => name.name), children: substr.map((guild) => outer1_4(outer1_1(outer1_2[4]), { guild, size: iconSize }, guild.id)) };
-    tmp11 = callback(iconSize(11687).GuildIconPile, obj1);
+  let tmp9 = length > 0;
+  if (tmp9) {
+    const obj1 = { size: null, names: null, children: null };
+    obj1[0] = iconSize;
+    obj1[1] = substr.map((name) => name.name);
+    obj1[2] = substr.map((guild) => outer1_4(outer1_1(outer1_2[4]), { guild, size: iconSize }, guild.id));
+    tmp9 = callback(tmp4(11711).GuildIconPile, obj1);
   }
-  const items1 = [tmp11, ];
-  const obj2 = { variant: str, color: "text-muted", lineClamp: 1, style: tmp3.label };
+  const items1 = [tmp9, ];
+  const obj2 = { variant: str, color: "text-muted", lineClamp: 1, style: tmp3.label, children: null };
   let combined = formatResult;
   if (null != suffix) {
     const _HermesInternal = HermesInternal;
     combined = "" + formatResult + " \u00B7 " + suffix;
   }
-  obj2.children = combined;
-  items1[1] = callback(iconSize(4161).Text, obj2);
-  obj.children = items1;
-  const tmp9Result = closure_5(View, obj);
-  let tmp19 = tmp9Result;
+  obj2[4] = combined;
+  items1[1] = callback(iconSize(4185).Text, obj2);
+  obj[1] = items1;
+  const tmp7Result = closure_5(View, obj);
+  let tmp11Result = tmp7Result;
   if (null != onPress) {
-    tmp19 = tmp9Result;
+    tmp11Result = tmp7Result;
     if (length > 0) {
-      const obj3 = { accessibilityRole: "button", onPress, children: tmp9Result };
-      tmp19 = callback(iconSize(4695).PressableOpacity, obj3);
+      const obj3 = { accessibilityRole: "button", onPress: null, children: null };
+      obj3[1] = onPress;
+      obj3[2] = tmp7Result;
+      tmp11Result = tmp11(tmp4(4717).PressableOpacity, obj3);
     }
   }
-  return tmp19;
+  return tmp11Result;
 };

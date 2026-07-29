@@ -1,16 +1,15 @@
-// Module ID: 12283
-// Function ID: 95755
-// Dependencies: [31, 33, 6661, 2]
+// Module ID: 12305
+// Function ID: 12306
+// Dependencies: [19, 21, 6682, 2]
 
-// Module 12283
+// Module 12305
 import { jsx } from "jsxProd";
-import importAllResult from "result";
+import importAllResult from "noop";
 
 const require = arg1;
-const forwardRefResult = require("result").forwardRef((arg0, ref) => {
-  const obj = { ref, size: "md", variant: "secondary-overlay" };
+const forwardRefResult = require("noop").forwardRef((arg0, ref) => {
   const merged = Object.assign(arg0);
-  return jsx(require(6661) /* IconButton */.IconButton, { ref, size: "md", variant: "secondary-overlay" });
+  return jsx(require(6682) /* IconButton */.IconButton, { ref, size: "md", variant: "secondary-overlay" });
 });
 const result = require("IconButton").fileFinishedImporting("modules/media_viewer/native/components/overlay/MediaViewerOverlayButton.tsx");
 

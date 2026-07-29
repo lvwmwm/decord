@@ -1,20 +1,20 @@
-// Module ID: 12372
-// Function ID: 96160
+// Module ID: 12394
+// Function ID: 12395
 // Name: generateLoadingRowData
-// Dependencies: [7691, 4165, 689, 2]
+// Dependencies: [7714, 4189, 712, 2]
 // Exports: generateLoadingRowData
 
-// Module 12372 (generateLoadingRowData)
+// Module 12394 (generateLoadingRowData)
 import Changeset from "Changeset";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_0;
+let c0;
 let closure_1;
-let closure_2;
-({ LoadingType: closure_0, RowType: closure_1, SeparatorAction: closure_2 } = Changeset);
-let closure_3 = _createForOfIteratorHelperLoose.createNativeStyleProperties({ loadButtonBackgroundColor: require("_createForOfIteratorHelperLoose").colors.CONTROL_SECONDARY_BACKGROUND_DEFAULT, loadButtonColor: require("_createForOfIteratorHelperLoose").colors.CONTROL_SECONDARY_TEXT_DEFAULT, loadingColor: require("_createForOfIteratorHelperLoose").colors.ICON_SUBTLE });
-let obj = { loadButtonBackgroundColor: require("_createForOfIteratorHelperLoose").colors.CONTROL_SECONDARY_BACKGROUND_DEFAULT, loadButtonColor: require("_createForOfIteratorHelperLoose").colors.CONTROL_SECONDARY_TEXT_DEFAULT, loadingColor: require("_createForOfIteratorHelperLoose").colors.ICON_SUBTLE };
-const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/messages/native/renderer/rows/Loading.tsx");
+let obj1;
+({ LoadingType: c0, RowType: closure_1, SeparatorAction: obj1 } = Changeset);
+let closure_3 = createCacheKey.createNativeStyleProperties({ loadButtonBackgroundColor: require("Themes").colors.CONTROL_SECONDARY_BACKGROUND_DEFAULT, loadButtonColor: require("Themes").colors.CONTROL_SECONDARY_TEXT_DEFAULT, loadingColor: require("Themes").colors.ICON_SUBTLE });
+let obj = { loadButtonBackgroundColor: require("Themes").colors.CONTROL_SECONDARY_BACKGROUND_DEFAULT, loadButtonColor: require("Themes").colors.CONTROL_SECONDARY_TEXT_DEFAULT, loadingColor: require("Themes").colors.ICON_SUBTLE };
+const result = require("Themes").fileFinishedImporting("modules/messages/native/renderer/rows/Loading.tsx");
 
 export const generateLoadingRowData = function generateLoadingRowData(rowType, theme) {
   let changeType;
@@ -29,7 +29,6 @@ export const generateLoadingRowData = function generateLoadingRowData(rowType, t
     LOAD_MORE_AFTER = constants3.LOAD_MORE_AFTER;
   }
   obj = { type: constants2.LOADING, id: rowType, button: obj, color: isLoading ? tmp.loadingColor : tmp.loadButtonColor, changeType, isLoading };
-  obj = { action: obj, backgroundColor: tmp.loadButtonBackgroundColor, cornerRadius: 4, text };
-  obj = { type: LOAD_MORE_AFTER };
+  obj = { action: { type: LOAD_MORE_AFTER }, backgroundColor: tmp.loadButtonBackgroundColor, cornerRadius: 4, text };
   return obj;
 };

@@ -1,54 +1,55 @@
-// Module ID: 10905
-// Function ID: 84546
+// Module ID: 10929
+// Function ID: 10930
 // Name: PublicGuildAnnouncementProfile
-// Dependencies: [31, 27, 33, 4165, 689, 5221, 5119, 7793, 1273, 10906, 4161, 1212, 2]
+// Dependencies: [19, 17, 21, 4189, 712, 5243, 5141, 7816, 1297, 10930, 4185, 1236, 2]
 // Exports: default
 
-// Module 10905 (PublicGuildAnnouncementProfile)
-import "result";
+// Module 10929 (PublicGuildAnnouncementProfile)
+import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_4;
-let closure_5;
+let c4;
+let c5;
 const require = arg1;
-({ jsx: closure_4, jsxs: closure_5 } = jsxProd);
-_createForOfIteratorHelperLoose = { content: { padding: 16 } };
-_createForOfIteratorHelperLoose = { borderRadius: require("_createForOfIteratorHelperLoose").radii.lg, height: 80, width: 80, marginVertical: 16 };
-_createForOfIteratorHelperLoose.avatar = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.nameWrapper = { flexDirection: "row", alignItems: "center" };
-_createForOfIteratorHelperLoose.headerText = { marginLeft: 8 };
-_createForOfIteratorHelperLoose.description = { marginTop: 8 };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+({ jsx: c4, jsxs: c5 } = jsxProd);
+createCacheKey = { content: { padding: 16 }, avatar: null, nameWrapper: null, headerText: null, description: null };
+createCacheKey = { borderRadius: require("Themes").radii.lg, height: 80, width: 80, marginVertical: 16 };
+createCacheKey[1] = createCacheKey;
+createCacheKey[2] = { flexDirection: "row", alignItems: "center" };
+createCacheKey[3] = { marginLeft: 8 };
+createCacheKey[4] = { marginTop: 8 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
 const result = require("jsxProd").fileFinishedImporting("modules/public_guilds/native/components/PublicGuildAnnouncementProfile.tsx");
 
 export default function PublicGuildAnnouncementProfile() {
-  const tmp = _createForOfIteratorHelperLoose();
-  let obj = { startExpanded: true };
-  obj = { style: tmp.content };
-  obj = { style: tmp.avatar };
-  let obj3 = require(7793) /* isPublicSystemMessage */;
-  obj.source = obj3.getPublicSystemMessageAvatar();
-  const items = [callback(importDefault(5119), obj), , , ];
-  const obj1 = { style: tmp.nameWrapper };
-  const obj2 = { source: importDefault(10906), disableColor: true };
-  const items1 = [callback(require(1273) /* Button */.Icon, obj2), ];
-  obj3 = { style: tmp.headerText, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary" };
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj3.children = intl.string(require(1212) /* getSystemLocale */.t.xfAlNx);
-  items1[1] = callback(require(4161) /* Text */.Text, obj3);
-  obj1.children = items1;
+  const tmp = createCacheKey();
+  let obj = { startExpanded: true, children: null };
+  obj = { style: tmp.content, children: null };
+  obj = { style: tmp.avatar, source: null };
+  let obj3 = require(7816) /* isPublicSystemMessage */;
+  obj[1] = obj3.getPublicSystemMessageAvatar();
+  const items = [callback(importDefault(5141), obj), , , ];
+  const obj1 = { style: tmp.nameWrapper, children: null };
+  const obj2 = { source: null, disableColor: true };
+  obj2[0] = importDefault(10930);
+  const items1 = [callback(require(1297) /* Button */.Icon, obj2), ];
+  obj3 = { style: tmp.headerText, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: null };
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj3[3] = intl.string(require(1236) /* getSystemLocale */.t.xfAlNx);
+  items1[1] = callback(require(4185) /* Text */.Text, obj3);
+  obj1[1] = items1;
   items[1] = callback2(View, obj1);
-  const obj4 = { style: tmp.description, variant: "text-sm/medium", color: "text-default" };
-  const intl2 = require(1212) /* getSystemLocale */.intl;
-  obj4.children = intl2.string(require(1212) /* getSystemLocale */.t.BUZ0sl);
-  items[2] = callback(require(4161) /* Text */.Text, obj4);
-  const obj5 = { style: tmp.description, variant: "text-sm/medium", color: "text-default" };
-  const intl3 = require(1212) /* getSystemLocale */.intl;
-  obj5.children = intl3.string(require(1212) /* getSystemLocale */.t.w5beJH);
-  items[3] = callback(require(4161) /* Text */.Text, obj5);
-  obj.children = items;
-  obj.children = callback2(View, obj);
-  return callback(require(5221) /* Background */.BottomSheet, obj);
+  const obj4 = { style: tmp.description, variant: "text-sm/medium", color: "text-default", children: null };
+  const intl2 = require(1236) /* getSystemLocale */.intl;
+  obj4[3] = intl2.string(require(1236) /* getSystemLocale */.t.BUZ0sl);
+  items[2] = callback(require(4185) /* Text */.Text, obj4);
+  const obj5 = { style: tmp.description, variant: "text-sm/medium", color: "text-default", children: null };
+  const intl3 = require(1236) /* getSystemLocale */.intl;
+  obj5[3] = intl3.string(require(1236) /* getSystemLocale */.t.w5beJH);
+  items[3] = callback(require(4185) /* Text */.Text, obj5);
+  obj[1] = items;
+  obj[1] = callback2(View, obj);
+  return callback(require(5243) /* Background */.BottomSheet, obj);
 };

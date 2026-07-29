@@ -1,32 +1,32 @@
-// Module ID: 11479
-// Function ID: 89074
+// Module ID: 11503
+// Function ID: 11504
 // Name: ChatInputNotificationNudgeImpl
-// Dependencies: [57, 31, 27, 3795, 4360, 11480, 653, 1345, 11481, 33, 4165, 689, 1324, 675, 10206, 4161, 4695, 11482, 1212, 11483, 5153, 566, 11298, 11491, 8417, 1334, 2]
+// Dependencies: [32, 19, 17, 3819, 4385, 11504, 676, 1369, 11505, 21, 4189, 712, 1348, 698, 10227, 4185, 4717, 11506, 1236, 11507, 5175, 589, 11322, 11515, 8441, 1358, 2]
 // Exports: default
 
-// Module 11479 (ChatInputNotificationNudgeImpl)
+// Module 11503 (ChatInputNotificationNudgeImpl)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
-import { View } from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_8 from "_isNativeReflectConstruct";
-import { PermissionPromptType } from "_isNativeReflectConstruct";
+import noop from "getOrRefreshPushSyncToken";
+import { View } from "_requestPushNotificationPermission";
+import storeThread from "storeThread";
+import updateUserGuildSettingsInternal from "updateUserGuildSettingsInternal";
+import { PermissionPromptType } from "set";
 import ME from "ME";
 import { ContentDismissActionType } from "ContentDismissActionType";
 import EventActionType from "EventActionType";
-import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import jsxProd from "initialize";
+import createCacheKey from "createCacheKey";
 
-let closure_10;
-let closure_11;
-let closure_13;
+let c10;
+let c4;
+let c5;
 let closure_14;
 let closure_15;
 let closure_16;
 let closure_17;
 let closure_18;
-let closure_4;
-let closure_5;
+let map1;
+let unpackModuleId;
 const require = arg1;
 function ChatInputNotificationNudgeImpl(onDismiss) {
   let importDefault;
@@ -36,38 +36,37 @@ function ChatInputNotificationNudgeImpl(onDismiss) {
   onDismiss = onDismiss.onDismiss;
   let obj = require(surface[12]);
   const enabled = obj.useMobileVisualRefreshConfig({ location: "ChatInputNotificationNudge" }).enabled;
-  const tmp = callback5(enabled);
+  const tmp3 = callback5(enabled);
   const items = [surface];
   callback3(() => {
     let obj = outer1_1(surface[13]);
     obj = { action: outer1_15.IMPRESSION, prompt_type: surface };
     obj.track(outer1_10.CONTEXTUAL_REMINDER_ACTION, obj);
   }, items);
-  obj = {};
-  const items1 = [tmp.container, ];
+  const items1 = [tmp3.container, ];
   let containerRefreshShadow = enabled;
   if (enabled) {
-    containerRefreshShadow = tmp.containerRefreshShadow;
+    containerRefreshShadow = tmp3.containerRefreshShadow;
   }
+  obj = { style: items1, children: null };
   items1[1] = containerRefreshShadow;
-  obj.style = items1;
-  obj = { style: tmp.iconContainer };
-  const obj1 = { size: "sm", color: importDefault(surface[11]).colors.ICON_STRONG };
-  obj.children = callback4(require(surface[14]).BellSlashIcon, obj1);
+  obj = { style: tmp3.iconContainer, children: null };
+  const obj1 = { size: "sm", color: null };
+  obj1[1] = importDefault(surface[11]).colors.ICON_STRONG;
+  obj[1] = callback4(require(surface[14]).BellSlashIcon, obj1);
   const items2 = [callback4(View, obj), , ];
-  const obj2 = { style: tmp.contentContainer };
-  const obj3 = {};
+  const obj2 = { style: tmp3.contentContainer, children: null };
   let str = "text-md/medium";
   if (enabled) {
     str = "text-sm/medium";
   }
-  obj3.variant = str;
+  const obj3 = { variant: str, color: null, children: null };
   let str2 = "text-strong";
   if (enabled) {
     str2 = "text-default";
   }
-  obj3.color = str2;
-  obj3.children = onDismiss.body;
+  obj3[1] = str2;
+  obj3[2] = onDismiss.body;
   const items3 = [callback4(require(surface[15]).Text, obj3), ];
   const obj4 = {
     hitSlop: 8,
@@ -77,21 +76,20 @@ function ChatInputNotificationNudgeImpl(onDismiss) {
       obj = { action: outer1_15.ACCEPT, prompt_type: surface };
       outer1_1(surface[13]).track(outer1_10.CONTEXTUAL_REMINDER_ACTION, obj);
     },
-    style: tmp.ctaButton,
-    accessibilityRole: "button"
+    style: tmp3.ctaButton,
+    accessibilityRole: "button",
+    children: null
   };
-  const obj5 = {};
   let str3 = "text-sm/semibold";
   if (enabled) {
     str3 = "text-xs/medium";
   }
-  obj5.variant = str3;
-  obj5.color = "text-brand";
-  const intl = require(surface[18]).intl;
-  obj5.children = intl.string(require(surface[18]).t["+7MDbQ"]);
-  obj4.children = callback4(require(surface[15]).Text, obj5);
+  const obj5 = { variant: str3, color: "text-brand", children: null };
+  const intl = tmp(tmp2[18]).intl;
+  obj5[2] = intl.string(require(surface[18]).t["+7MDbQ"]);
+  obj4[4] = callback4(require(surface[15]).Text, obj5);
   items3[1] = callback4(require(surface[16]).PressableOpacity, obj4);
-  obj2.children = items3;
+  obj2[1] = items3;
   items2[1] = closure_18(View, obj2);
   const obj6 = {
     onPress() {
@@ -102,124 +100,137 @@ function ChatInputNotificationNudgeImpl(onDismiss) {
       onDismiss();
     },
     hitSlop: 8,
-    accessibilityRole: "button"
+    accessibilityRole: "button",
+    accessibilityLabel: null,
+    children: null
   };
-  const intl2 = require(surface[18]).intl;
-  obj6.accessibilityLabel = intl2.string(require(surface[18]).t.WAI6xu);
-  obj6.children = callback4(require(surface[20]).XSmallIcon, { size: "sm", color: "icon-subtle" });
+  const intl2 = tmp(tmp2[18]).intl;
+  obj6[3] = intl2.string(require(surface[18]).t.WAI6xu);
+  obj6[4] = callback4(require(surface[20]).XSmallIcon, { size: "sm", color: "icon-subtle" });
   items2[2] = callback4(require(surface[16]).PressableHighlight, obj6);
-  obj.children = items2;
+  obj[1] = items2;
   return closure_18(View, obj);
 }
-({ useCallback: closure_4, useEffect: closure_5 } = result);
-({ AnalyticEvents: closure_10, NOOP: closure_11 } = ME);
-({ EventActionLocation: closure_13, EventActionType: closure_14, NotificationNudgeAnalyticsAction: closure_15, NotificationNudgeSurface: closure_16 } = EventActionType);
+({ useCallback: c4, useEffect: c5 } = noop);
+({ AnalyticEvents: c10, NOOP: unpackModuleId } = ME);
+({ EventActionLocation: map1, EventActionType: closure_14, NotificationNudgeAnalyticsAction: closure_15, NotificationNudgeSurface: closure_16 } = EventActionType);
 ({ jsx: closure_17, jsxs: closure_18 } = jsxProd);
-let closure_19 = _createForOfIteratorHelperLoose.createStyles((arg0) => {
-  let obj = {};
-  obj = { display: "flex", flexDirection: "row", padding: importDefault(689).space.PX_12, backgroundColor: importDefault(689).colors.MOBILE_FLOATING_ACCESSORY_BACKGROUND, alignItems: "center", borderTopWidth: importDefault(689).modules.mobile.CHAT_INPUT_FLOATING_ACCESSORY_TOP_BORDER_WIDTH, borderColor: importDefault(689).colors.MOBILE_FLOATING_ACCESSORY_BORDER, borderRadius: importDefault(689).modules.mobile.CHAT_INPUT_FLOATING_BORDER_RADIUS, borderWidth: importDefault(689).modules.mobile.CHAT_INPUT_FLOATING_ACCESSORY_BORDER_WIDTH, marginBottom: importDefault(689).modules.mobile.CHAT_INPUT_FLOATING_ACCESSORY_MARGIN_BOTTOM };
+let closure_19 = createCacheKey.createStyles((arg0) => {
+  let obj = { display: "flex", flexDirection: "row", padding: importDefault(712).space.PX_12, backgroundColor: importDefault(712).colors.MOBILE_FLOATING_ACCESSORY_BACKGROUND, alignItems: "center", borderTopWidth: importDefault(712).modules.mobile.CHAT_INPUT_FLOATING_ACCESSORY_TOP_BORDER_WIDTH, borderColor: importDefault(712).colors.MOBILE_FLOATING_ACCESSORY_BORDER, borderRadius: importDefault(712).modules.mobile.CHAT_INPUT_FLOATING_BORDER_RADIUS, borderWidth: importDefault(712).modules.mobile.CHAT_INPUT_FLOATING_ACCESSORY_BORDER_WIDTH, marginBottom: importDefault(712).modules.mobile.CHAT_INPUT_FLOATING_ACCESSORY_MARGIN_BOTTOM, gap: null };
   let num;
   if (arg0) {
     num = 12;
   }
-  obj.gap = num;
-  obj.container = obj;
+  obj = { container: obj, containerRefreshShadow: null, iconContainer: null, contentContainer: null, ctaButton: null };
+  obj[10] = num;
   obj = {};
-  const merged = Object.assign(importDefault(689).shadows.SHADOW_MEDIUM);
-  obj.containerRefreshShadow = obj;
-  const obj1 = {};
+  const merged = Object.assign(tmp(712).shadows.SHADOW_MEDIUM);
+  obj[1] = obj;
   let num2 = 10;
   if (arg0) {
     num2 = 0;
   }
-  obj1.padding = num2;
+  const obj1 = { padding: num2, backgroundColor: null, borderRadius: null };
   let str = "transparent";
   if (!arg0) {
-    str = importDefault(689).colors.BACKGROUND_MOD_STRONG;
+    str = tmp(712).colors.BACKGROUND_MOD_STRONG;
   }
-  obj1.backgroundColor = str;
-  obj1.borderRadius = importDefault(689).radii.round;
-  obj.iconContainer = obj1;
-  const obj2 = { flex: 1 };
+  obj1[1] = str;
+  obj1[2] = importDefault(712).radii.round;
+  obj[2] = obj1;
   let num3 = 0;
   if (!arg0) {
-    num3 = importDefault(689).space.PX_12;
+    num3 = tmp(712).space.PX_12;
   }
-  obj2.marginLeft = num3;
-  obj.contentContainer = obj2;
-  obj.ctaButton = { alignSelf: "flex-start" };
+  obj[3] = { flex: 1, marginLeft: num3 };
+  obj[4] = { alignSelf: "flex-start" };
   return obj;
 });
-result = require("get ActivityIndicator").fileFinishedImporting("modules/chat_input/native/accessories/ChatInputNotificationNudge.tsx");
+let c20 = 604800000;
+let result = require("get ActivityIndicator").fileFinishedImporting("modules/chat_input/native/accessories/ChatInputNotificationNudge.tsx");
 
 export default function ChatInputNotificationNudge(channel) {
+  let tmp13;
+  let tmp14;
   channel = channel.channel;
   let importDefault;
   let dependencyMap;
-  let obj = channel(566);
-  const items = [_isNativeReflectConstruct, closure_8];
+  let obj = channel(589);
+  const items = [storeThread, updateUserGuildSettingsInternal];
   const stateFromStores = obj.useStateFromStores(items, () => {
     const guildId = channel.getGuildId();
     if (channel.isThread()) {
-      let isMutedResult = outer1_7.isMuted(channel.id);
+      let isMutedResult = outer1_7.isMuted(tmp.id);
     } else {
-      isMutedResult = outer1_8.isChannelMuted(guildId, channel.id);
+      isMutedResult = outer1_8.isChannelMuted(guildId, tmp.id);
     }
     return isMutedResult;
   });
-  const tmp2 = !stateFromStores && !importDefault(11298)(channel);
-  let obj1 = channel(11482);
-  const shouldShowPushNotificationNudgeByPromptType = obj1.useShouldShowPushNotificationNudgeByPromptType(PermissionPromptType.CHANNEL_BANNER);
-  let obj2 = importDefault(11491);
-  const shouldShowPushNotificationNudgeByPromptType1 = channel(11482).useShouldShowPushNotificationNudgeByPromptType(PermissionPromptType.POST_REACTION_BANNER);
-  const obj4 = channel(11482);
+  let tmp5 = !stateFromStores;
+  if (!stateFromStores) {
+    tmp5 = !importDefault(11322)(channel);
+  }
+  let tmpResult = tmp(11506);
+  const shouldShowPushNotificationNudgeByPromptType = tmpResult.useShouldShowPushNotificationNudgeByPromptType(PermissionPromptType.CHANNEL_BANNER);
+  tmpResult = tmp(11506);
+  const shouldShowPushNotificationNudgeByPromptType1 = tmpResult.useShouldShowPushNotificationNudgeByPromptType(PermissionPromptType.POST_REACTION_BANNER);
+  const tmp4 = importDefault;
+  const tmp4Result = importDefault(11515);
   let prop = null;
-  if (tmp2) {
+  if (tmp5) {
     prop = null;
     if (shouldShowPushNotificationNudgeByPromptType) {
-      prop = channel(1334).DismissibleContent.NOTIFICATION_NUDGE_CHAT_BOTTOM_BANNER;
+      prop = tmp(1358).DismissibleContent.NOTIFICATION_NUDGE_CHAT_BOTTOM_BANNER;
     }
   }
-  obj = { cooldownDurationMs: 604800000 };
-  const tmp8 = callback(channel(8417).useSelectedTimeRecurringDismissibleContent(prop, obj, undefined, true), 2);
-  const first = tmp8[0];
-  importDefault = tmp10;
-  const obj5 = channel(8417);
+  obj = { cooldownDurationMs: c20 };
+  const tmp10 = c20;
+  const tmp11 = callback;
+  const tmpResult1 = channel(8441);
+  [tmp13, tmp14] = callback(channel(8441).useSelectedTimeRecurringDismissibleContent(prop, obj, undefined, true), 2);
+  importDefault = tmp14;
+  const tmp12 = callback(channel(8441).useSelectedTimeRecurringDismissibleContent(prop, obj, undefined, true), 2);
   let prop1 = null;
-  if (tmp2) {
+  if (tmp5) {
     prop1 = null;
-    if (obj2.useConfig({ location: "ChatInputNotificationNudge" }).enabled) {
+    if (tmp4Result.useConfig({ location: "ChatInputNotificationNudge" }).enabled) {
       prop1 = null;
       if (shouldShowPushNotificationNudgeByPromptType1) {
         prop1 = null;
-        if (null == first) {
-          prop1 = channel(1334).DismissibleContent.NOTIFICATION_NUDGE_POST_REACTION_BANNER;
+        if (null == tmp13) {
+          prop1 = tmp(1358).DismissibleContent.NOTIFICATION_NUDGE_POST_REACTION_BANNER;
         }
       }
     }
   }
-  obj = { cooldownDurationMs: 604800000 };
-  const tmp14 = callback(channel(8417).useSelectedTimeRecurringDismissibleContent(prop1, obj, undefined, true), 2);
-  dependencyMap = tmp15;
-  const items1 = [tmp8[1]];
-  const items2 = [tmp14[1]];
-  const obj7 = channel(8417);
-  const tmp16 = callback2(() => _undefined(outer1_12.USER_DISMISS), items1);
-  if (first === channel(1334).DismissibleContent.NOTIFICATION_NUDGE_CHAT_BOTTOM_BANNER) {
-    obj1 = { promptType: PermissionPromptType.CHANNEL_BANNER, location: constants.CHANNEL_BANNER, surface: constants2.CHANNEL_BANNER };
-    const intl = channel(1212).intl;
-    obj1.body = intl.string(channel(1212).t["/6SnPw"]);
-    obj1.onDismiss = tmp16;
-    let tmp25 = callback4(ChatInputNotificationNudgeImpl, obj1);
+  obj = { cooldownDurationMs: tmp10 };
+  const tmp11Result = tmp11(channel(8441).useSelectedTimeRecurringDismissibleContent(prop1, obj, undefined, true), 2);
+  dependencyMap = tmp17;
+  const items1 = [tmp14];
+  const items2 = [tmp11Result[1]];
+  const tmpResult2 = channel(8441);
+  const tmp18 = callback2(() => _undefined(outer1_12.USER_DISMISS), items1);
+  if (tmp13 === channel(1358).DismissibleContent.NOTIFICATION_NUDGE_CHAT_BOTTOM_BANNER) {
+    const obj1 = { promptType: null, location: null, surface: null, body: null, onDismiss: null };
+    obj1[0] = tmp6.CHANNEL_BANNER;
+    obj1[1] = constants.CHANNEL_BANNER;
+    obj1[2] = constants2.CHANNEL_BANNER;
+    const intl2 = tmp(1236).intl;
+    obj1[3] = intl2.string(tmp(1236).t["/6SnPw"]);
+    obj1[4] = tmp18;
+    let tmp24 = callback4(ChatInputNotificationNudgeImpl, obj1);
   } else {
-    tmp25 = null;
-    if (tmp14[0] === channel(1334).DismissibleContent.NOTIFICATION_NUDGE_POST_REACTION_BANNER) {
-      obj2 = { promptType: PermissionPromptType.POST_REACTION_BANNER, location: constants.POST_REACTION, surface: constants2.POST_REACTION_BANNER };
-      const intl2 = channel(1212).intl;
-      obj2.body = intl2.string(channel(1212).t.VS6ey0);
-      obj2.onDismiss = tmp17;
-      tmp25 = callback4(ChatInputNotificationNudgeImpl, obj2);
+    tmp24 = null;
+    if (tmp11Result[0] === tmp(1358).DismissibleContent.NOTIFICATION_NUDGE_POST_REACTION_BANNER) {
+      const obj2 = { promptType: null, location: null, surface: null, body: null, onDismiss: null };
+      obj2[0] = tmp6.POST_REACTION_BANNER;
+      obj2[1] = constants.POST_REACTION;
+      obj2[2] = constants2.POST_REACTION_BANNER;
+      const intl = tmp(1236).intl;
+      obj2[3] = intl.string(tmp(1236).t.VS6ey0);
+      obj2[4] = tmp19;
+      tmp24 = callback4(ChatInputNotificationNudgeImpl, obj2);
     }
   }
-  return tmp25;
+  return tmp24;
 };

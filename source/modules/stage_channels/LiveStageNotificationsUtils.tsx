@@ -1,12 +1,12 @@
-// Module ID: 8317
-// Function ID: 66608
+// Module ID: 8341
+// Function ID: 8342
 // Name: useCanSendStageStartNotification
-// Dependencies: [4086, 3793, 482, 566, 2]
+// Dependencies: [4110, 3817, 505, 589, 2]
 // Exports: useCanSendStageStartNotification, useDefaultSendStartStageNotificationToggle
 
-// Module 8317 (useCanSendStageStartNotification)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_3 from "_isNativeReflectConstruct";
+// Module 8341 (useCanSendStageStartNotification)
+import handleInviteData from "handleInviteData";
+import getUncachedChannelPermissions from "getUncachedChannelPermissions";
 import { Permissions } from "sum";
 
 const require = arg1;
@@ -14,24 +14,24 @@ const result = require("sum").fileFinishedImporting("modules/stage_channels/Live
 
 export const useCanSendStageStartNotification = function useCanSendStageStartNotification(first) {
   const _require = first;
-  const items = [closure_3];
+  const items = [getUncachedChannelPermissions];
   const items1 = [first];
-  return _require(566).useStateFromStores(items, () => {
+  return _require(589).useStateFromStores(items, () => {
     let canResult = null != closure_0;
     if (canResult) {
-      canResult = outer1_3.can(outer1_4.MENTION_EVERYONE, closure_0);
+      canResult = outer1_3.can(outer1_4.MENTION_EVERYONE, tmp);
     }
     return canResult;
   }, items1);
 };
 export const useDefaultSendStartStageNotificationToggle = function useDefaultSendStartStageNotificationToggle(first) {
   let guild_id;
-  if (null != first) {
+  if (first != null) {
     guild_id = first.guild_id;
   }
-  const items = [_isNativeReflectConstruct];
+  const items = [handleInviteData];
   const items1 = [guild_id];
-  const stateFromStores = guild_id(566).useStateFromStores(items, () => outer1_2.getMemberCount(guild_id), items1);
+  const stateFromStores = guild_id(589).useStateFromStores(items, () => outer1_2.getMemberCount(guild_id), items1);
   let tmp3 = null == first;
   if (!tmp3) {
     let tmp4 = null == stateFromStores;

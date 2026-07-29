@@ -1,40 +1,44 @@
-// Module ID: 10654
-// Function ID: 82851
+// Module ID: 10678
+// Function ID: 10679
 // Name: ModeratorViewOverlay
-// Dependencies: [57, 31, 27, 482, 33, 10655, 4026, 4577, 689, 10656, 10714, 10658, 10218, 10217, 9877, 10021, 4358, 10715, 10783, 3877, 10485, 10791, 10792, 10661, 10797, 10805, 10809, 10840, 10841, 4165, 10842, 10677, 2]
+// Dependencies: [32, 19, 17, 505, 21, 10679, 4050, 4599, 712, 10680, 10738, 10682, 10239, 10238, 9899, 10043, 4383, 10739, 10807, 3901, 10509, 10815, 10816, 10685, 10821, 10829, 10833, 10864, 10865, 4189, 10866, 10701, 2]
 // Exports: default
 
-// Module 10654 (ModeratorViewOverlay)
-import _slicedToArray from "_slicedToArray";
-import AgeVerificationSpeakerActionSheet from "AgeVerificationSpeakerActionSheet";
-import get_ActivityIndicator from "module_10840";
+// Module 10678 (ModeratorViewOverlay)
+import set from "set";
+import ManaContext from "ManaContext";
+import get_ActivityIndicator from "module_10739";
 import { ThemeTypes } from "sum";
-import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import jsxProd from "GestureContainer";
+import createCacheKey from "createCacheKey";
 
-let closure_10;
-let closure_5;
+let c10;
+let c5;
+let c9;
 let closure_6;
-let closure_8;
-let closure_9;
+let metroImportAll;
 const require = arg1;
 function ModeratorViewOverlay(channel) {
   channel = channel.channel;
+  let first;
+  let importDefault;
+  let first1;
+  let callback;
   let obj = first(first1[5]);
-  const tmp = callback(obj.useModeratorOverlayChannelState(channel.id), 2);
-  first = tmp[0];
-  const importDefault = tmp3;
-  const tmp4 = callback(React.useState(first), 2);
-  first1 = tmp4[0];
-  callback = tmp4[1];
+  const tmp2 = callback(obj.useModeratorOverlayChannelState(channel.id), 2);
+  first = tmp2[0];
+  importDefault = tmp4;
+  const tmp5 = callback(React.useState(first), 2);
+  first1 = tmp5[0];
+  callback = tmp5[1];
   let obj1 = first(first1[6]);
   const fn = function s() {
-    const obj = {};
+    let obj = first(first1[7]);
     let num = 0;
     if (first1) {
       num = 1;
     }
-    obj.opacity = first(first1[7]).withSpring(num, outer1_11);
+    obj = { opacity: obj.withSpring(num, outer1_11) };
     return obj;
   };
   obj = { withSpring: first(first1[7]).withSpring, showStartStageView: first1, viewAnimationConfig: closure_11 };
@@ -46,89 +50,96 @@ function ModeratorViewOverlay(channel) {
   const effect = React.useEffect(() => {
     const timeout = setTimeout(() => {
       if (!closure_0) {
-        outer1_3(false);
+        callback(false);
       }
     }, 500);
     return () => {
       clearTimeout(closure_0);
     };
   }, items);
-  [][0] = tmp[1];
-  let tmp9 = null;
+  [][0] = tmp2[1];
+  let tmp10 = null;
   if (first1) {
-    obj = {};
+    obj = { style: null, children: null };
     const items1 = [closure_5.absoluteFill, , ];
-    obj1 = { backgroundColor: importDefault(first1[8]).unsafe_rawColors.PRIMARY_800 };
+    obj1 = { backgroundColor: null };
+    obj1[0] = importDefault(tmp[8]).unsafe_rawColors.PRIMARY_800;
     items1[1] = obj1;
     items1[2] = animatedStyle;
-    obj.style = items1;
-    const obj2 = { channel, onSkip: tmp8 };
-    obj.children = callback2(importDefault(first1[9]), obj2);
-    tmp9 = callback2(importDefault(first1[6]).View, obj);
+    obj[0] = items1;
+    const obj2 = { channel: null, onSkip: null };
+    obj2[0] = channel;
+    obj2[1] = tmp9;
+    obj[1] = callback2(importDefault(tmp[9]), obj2);
+    tmp10 = callback2(importDefault(tmp[6]).View, obj);
   }
-  return tmp9;
+  return tmp10;
 }
 function JoinStageOverlay(channel) {
+  let first;
+  let importDefault;
   const tmp = callback(React.useState(false), 2);
-  const first = tmp[0];
-  const importDefault = tmp[1];
-  let obj = first(4026);
+  first = tmp[0];
+  importDefault = tmp[1];
+  let obj = first(4050);
   const fn = function s() {
-    const obj = {};
+    let obj = first(outer1_2[7]);
     let num = 0;
     if (first) {
       num = 1;
     }
-    obj.opacity = first(outer1_2[7]).withSpring(num, outer1_11);
+    obj = { opacity: obj.withSpring(num, outer1_11) };
     return obj;
   };
-  obj = { withSpring: first(4577).withSpring, showOverlay: first, viewAnimationConfig: closure_11 };
+  obj = { withSpring: first(4599).withSpring, showOverlay: first, viewAnimationConfig: closure_11 };
   fn.__closure = obj;
   fn.__workletHash = 1929951426580;
-  fn.__initData = closure_14;
+  fn.__initData = closure_15;
   const animatedStyle = obj.useAnimatedStyle(fn);
   const effect = React.useEffect(() => {
     const timeout = setTimeout(() => {
-      outer1_1(true);
+      callback(true);
     }, 500);
     return () => {
       clearTimeout(closure_0);
     };
   }, []);
-  obj = {};
+  obj = { style: null, children: null };
   const items = [closure_5.absoluteFill, , ];
-  const obj1 = { backgroundColor: importDefault(689).unsafe_rawColors.PRIMARY_800 };
+  const obj1 = { backgroundColor: null };
+  obj1[0] = importDefault(712).unsafe_rawColors.PRIMARY_800;
   items[1] = obj1;
   items[2] = animatedStyle;
-  obj.style = items;
-  obj.children = callback2(importDefault(10714), { channel: channel.channel });
-  return callback2(importDefault(4026).View, obj);
+  obj[0] = items;
+  obj[1] = callback2(importDefault(10738), { channel: channel.channel });
+  return callback2(importDefault(4050).View, obj);
 }
 function StagePromptWrapper(channel) {
-  const obj = { children: callback2(StagePromptInner, { channel: channel.channel }) };
-  return callback2(require(10842) /* RootThemeContextProvider */.DisableCustomTheme, obj);
+  const obj = { children: null };
+  obj[0] = callback2(StagePromptInner, { channel: channel.channel });
+  return callback2(require(10866) /* RootThemeContextProvider */.DisableCustomTheme, obj);
 }
 function StagePromptInner(channel) {
-  const tmp = _createForOfIteratorHelperLoose();
-  return callback2(require(10677) /* AgeVerificationSpeakerActionSheet */.AnimatedStartStagePrompt, { channel: channel.channel, style: _createForOfIteratorHelperLoose().startStagePrompt });
+  const tmp = createCacheKey();
+  return callback2(require(10701) /* AgeVerificationSpeakerActionSheet */.AnimatedStartStagePrompt, { channel: channel.channel, style: createCacheKey().startStagePrompt });
 }
-({ StyleSheet: closure_5, View: closure_6 } = get_ActivityIndicator);
-({ jsx: closure_8, jsxs: closure_9, Fragment: closure_10 } = jsxProd);
+({ StyleSheet: c5, View: closure_6 } = get_ActivityIndicator);
+({ jsx: metroImportAll, jsxs: c9, Fragment: c10 } = jsxProd);
 let closure_11 = { mass: 0.5, stiffness: 600, damping: 30, overshootClamping: false, restSpeedThreshold: 0.01, restDisplacementThreshold: 0.01 };
 let closure_12 = { fullScreen: { flex: 1 } };
 let closure_13 = { code: "function StageChannelCallNavigatorTsx1(){const{withSpring,showStartStageView,viewAnimationConfig}=this.__closure;return{opacity:withSpring(showStartStageView?1:0,viewAnimationConfig)};}" };
-let closure_14 = { code: "function StageChannelCallNavigatorTsx2(){const{withSpring,showOverlay,viewAnimationConfig}=this.__closure;return{opacity:withSpring(showOverlay?1:0,viewAnimationConfig)};}" };
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SURFACE_HIGH };
-_createForOfIteratorHelperLoose.startStagePrompt = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+let closure_15 = { code: "function StageChannelCallNavigatorTsx2(){const{withSpring,showOverlay,viewAnimationConfig}=this.__closure;return{opacity:withSpring(showOverlay?1:0,viewAnimationConfig)};}" };
+createCacheKey = { startStagePrompt: null };
+createCacheKey = { backgroundColor: require("Themes").colors.BACKGROUND_SURFACE_HIGH };
+createCacheKey[0] = createCacheKey;
+createCacheKey = createCacheKey.createStyles(createCacheKey);
 const result = require("get ActivityIndicator").fileFinishedImporting("modules/stage_channels/native/components/StageChannelCallNavigator.tsx");
 
 export default function StageChannelCallNavigator(channel) {
   let c5;
   let isLive;
   let isModerator;
-  let tmp9;
+  let tmp13;
   channel = channel.channel;
   let importDefault;
   let first;
@@ -139,44 +150,45 @@ export default function StageChannelCallNavigator(channel) {
   let obj = channel(first[11]);
   const stageChannelStartEvent = obj.useStageChannelStartEvent(channel.id);
   ({ isModerator, isLive } = stageChannelStartEvent);
-  let obj1 = channel(first[12]);
-  let tmp3 = isModerator;
-  const isConnectedToVoiceChannel = obj1.useIsConnectedToVoiceChannel(channel);
+  let obj1 = React;
+  let obj2 = channel(first[12]);
+  let tmp6 = isModerator;
+  const isConnectedToVoiceChannel = obj2.useIsConnectedToVoiceChannel(channel);
   if (isModerator) {
-    tmp3 = !isLive;
+    tmp6 = !isLive;
   }
-  importDefault = tmp3;
-  let obj2 = channel(first[5]);
-  const tmp4 = callback(obj2.useModeratorOverlayChannelState(channel.id), 2);
-  first = tmp4[0];
-  callback = tmp6;
-  const tmp7 = importDefault(first[13])(channel);
-  React = tmp7;
-  [tmp9, c5] = callback(React.useState(false), 2);
+  importDefault = tmp6;
+  let tmp4Result = tmp4(channel(first[5]).useModeratorOverlayChannelState(channel.id), 2);
+  first = tmp4Result[0];
+  callback = tmp9;
+  const tmp11 = importDefault(first[13])(channel);
+  React = tmp11;
+  tmp4Result = tmp4(obj1.useState(false), 2);
+  [tmp13, c5] = tmp4Result;
   const items = [, ];
   ({ id: arr[0], guild_id: arr[1] } = channel);
-  const effect = React.useEffect(() => {
+  const effect = obj1.useEffect(() => {
     let obj = _undefined(first[14]);
     obj = { guildId: channel.guild_id, channelId: channel.id };
     const messages = obj.fetchMessages(obj);
   }, items);
-  closure_6 = React.useRef(channel.id);
-  const effect1 = React.useEffect(() => {
+  closure_6 = obj1.useRef(channel.id);
+  const effect1 = obj1.useEffect(() => {
     closure_6.current = channel.id;
   });
-  const items1 = [tmp7];
-  const effect2 = React.useEffect(() => {
-    let tmp = null == c4;
-    if (!tmp) {
-      tmp = _undefined(first[15])(c4);
+  const items1 = [tmp11];
+  const effect2 = obj1.useEffect(() => {
+    let tmp2 = null == c4;
+    if (!tmp2) {
+      tmp2 = _undefined(first[15])(tmp);
     }
-    if (!tmp) {
+    if (!tmp2) {
       const participant = _undefined(first[16]).selectParticipant(ref.current, null);
       const obj = _undefined(first[16]);
     }
   }, items1);
-  const items2 = [tmp3, tmp4[1], first];
-  const effect3 = React.useEffect(() => {
+  const items2 = [tmp6, tmp4Result[1], first];
+  const effect3 = obj1.useEffect(() => {
     let tmp = first;
     if (first) {
       tmp = !c1;
@@ -185,71 +197,68 @@ export default function StageChannelCallNavigator(channel) {
       _undefined2();
     }
   }, items2);
-  obj = { actionBar: callback2(importDefault(first[17]), { channel }), expandedControls: callback2(importDefault(first[18]), { channel }), isTouchingLeftScreenEdge: true, channel };
-  obj = { theme: ThemeTypes.DARK };
-  if (null != tmp7) {
-    obj1 = { style: fullScreen.fullScreen };
-    obj2 = { channel };
-    const obj3 = {};
-    const tmp34 = callback2;
-    const tmp35 = closure_6;
-    const tmp37 = closure_9;
-    const tmp40 = importDefault(first[20]);
-    const obj4 = { channel, selectedParticipant: tmp7 };
-    obj3.children = callback2(channel(first[22]).ChannelCallSingleController, obj4);
-    const items3 = [callback2(importDefault(first[21]), obj3), , ];
-    const obj5 = {};
-    const tmp42 = importDefault(first[21]);
-    const obj6 = {
-      channel,
-      fullscreenStream: true,
-      onOpenRTCDebugOverlay(arg0) {
-          return _undefined3(true);
-        }
+  obj = { actionBar: callback2(importDefault(tmp2[17]), { channel }), expandedControls: callback2(importDefault(tmp2[18]), { channel }), isTouchingLeftScreenEdge: true, channel };
+  obj = { theme: ThemeTypes.DARK, children: null };
+  if (null != tmp11) {
+    obj1 = { style: null, children: null };
+    obj1[0] = fullScreen.fullScreen;
+    obj2 = { channel: null, children: null };
+    obj2[0] = channel;
+    let tmp10Result = tmp10(tmp2[20]);
+    const obj3 = { children: null };
+    tmp10Result = tmp10(tmp2[21]);
+    const obj4 = { channel: null, selectedParticipant: null };
+    obj4[0] = channel;
+    obj4[1] = tmp11;
+    obj3[0] = tmp18(tmp(tmp2[22]).ChannelCallSingleController, obj4);
+    const items3 = [tmp18(tmp10Result, obj3), , ];
+    const obj5 = { header: null };
+    const obj6 = { channel: null, fullscreenStream: true, onOpenRTCDebugOverlay: null };
+    obj6[0] = channel;
+    obj6[2] = function onOpenRTCDebugOverlay(arg0) {
+      return _undefined3(true);
     };
-    obj5.header = callback2(importDefault(first[24]), obj6);
+    obj5[0] = tmp18(tmp10(tmp2[24]), obj6);
     const merged = Object.assign(obj);
-    items3[1] = callback2(importDefault(first[23]), obj5);
-    if (tmp9) {
-      const obj7 = {
-        onClose() {
-              return _undefined3(false);
-            }
+    items3[1] = tmp18(tmp10(tmp2[23]), obj5);
+    if (tmp18Result) {
+      const obj7 = { onClose: null };
+      obj7[0] = function onClose() {
+        return _undefined3(false);
       };
-      tmp9 = callback2(importDefault(first[25]), obj7);
+      tmp18Result = tmp18(tmp10(tmp2[25]), obj7);
     }
-    items3[2] = tmp9;
-    obj2.children = items3;
-    obj1.children = tmp37(tmp40, obj2);
-    let tmp54Result = tmp34(tmp35, obj1);
-    const tmp46 = importDefault(first[23]);
+    items3[2] = tmp18Result;
+    obj2[1] = items3;
+    obj1[1] = closure_9(tmp10Result, obj2);
+    tmp18Result = tmp18(closure_6, obj1);
+    const tmp10Result1 = tmp10(tmp2[23]);
+    const tmp26 = closure_6;
+    const tmp28 = closure_9;
   } else {
-    const obj8 = {};
     if (first) {
-      let tmp15 = ModeratorViewOverlay;
+      let tmp10Result2 = ModeratorViewOverlay;
     } else {
       if (isLive) {
         if (!isConnectedToVoiceChannel) {
           if (!first) {
-            tmp15 = JoinStageOverlay;
+            tmp10Result2 = JoinStageOverlay;
           }
         }
       }
-      tmp15 = importDefault(first[26]);
+      tmp10Result2 = tmp10(tmp2[26]);
     }
-    const obj9 = { channel };
-    const items4 = [callback2(tmp15, obj9), ];
-    const obj10 = {};
-    if (first) {
-      let tmp24 = tmp23[27];
-    } else {
-      tmp24 = tmp23[24];
-    }
-    const obj11 = { channel };
-    obj10.header = callback2(importDefault(tmp24), obj11);
+    const obj8 = { channel: null };
+    obj8[0] = channel;
+    const items4 = [tmp18(tmp10Result2, obj8), ];
+    const obj9 = { header: null };
+    const obj10 = { channel: null };
+    obj10[0] = channel;
+    obj9[0] = tmp18(tmp10(first ? tmp2[27] : tmp2[24]), obj10);
     const merged1 = Object.assign(obj);
-    const obj12 = { channel };
-    const items5 = [callback2(importDefault(first[28]), obj12), ];
+    const obj11 = { channel: null };
+    obj11[0] = channel;
+    const items5 = [tmp18(tmp10(tmp2[28]), obj11), ];
     if (isModerator) {
       isModerator = !callback(React.useState(isLive), 1)[0];
     }
@@ -257,22 +266,19 @@ export default function StageChannelCallNavigator(channel) {
       isModerator = !first;
     }
     if (isModerator) {
-      const obj13 = { channel };
-      isModerator = callback2(StagePromptWrapper, obj13);
+      const obj12 = { channel: null };
+      obj12[0] = channel;
+      isModerator = tmp18(StagePromptWrapper, obj12);
     }
+    const obj13 = { children: null };
     items5[1] = isModerator;
-    obj10["children"] = items5;
-    items4[1] = closure_9(importDefault(first[23]), obj10);
-    obj8.children = items4;
-    tmp54Result = closure_9(closure_10, obj8);
-    const tmp18 = closure_9;
-    const tmp19 = importDefault;
-    const tmp21 = importDefault(first[23]);
-    const tmp22 = callback2;
-    const tmp54 = closure_9;
-    const tmp55 = closure_10;
-    const tmp56 = callback2;
+    obj9.children = items5;
+    items4[1] = closure_9(tmp10(tmp2[23]), obj9);
+    obj13[0] = items4;
+    tmp18Result = tmp35(closure_10, obj13);
+    const tmp10Result3 = tmp10(tmp2[23]);
+    const tmp36 = closure_10;
   }
-  obj.children = tmp54Result;
+  obj[1] = tmp18Result;
   return callback2(channel(first[19]).ThemeContextProvider, obj);
 };

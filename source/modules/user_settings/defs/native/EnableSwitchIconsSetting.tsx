@@ -1,28 +1,28 @@
-// Module ID: 14349
-// Function ID: 110039
+// Module ID: 14371
+// Function ID: 14372
 // Name: useEnableSwitchIconsSettingValue
-// Dependencies: [4157, 7733, 566, 1324, 10099, 1212, 13479, 2]
+// Dependencies: [4181, 7756, 589, 1348, 10120, 1236, 13502, 2]
 // Exports: useEnableSwitchIconsSettingValue
 
-// Module 14349 (useEnableSwitchIconsSettingValue)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 14371 (useEnableSwitchIconsSettingValue)
+import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
 import createToggle from "createToggle";
 
 const require = arg1;
 function useEnableSwitchIconsSettingValue() {
-  const items = [_isNativeReflectConstruct];
-  return require(566) /* initialize */.useStateFromStores(items, () => outer1_3.isSwitchIconsEnabled);
+  const items = [maybeApplyNoTextColorForLightCustomTheme];
+  return require(589) /* initialize */.useStateFromStores(items, () => isSwitchIconsEnabled.isSwitchIconsEnabled);
 }
 createToggle = {
   useTitle() {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(require(1212) /* getSystemLocale */.t["S3z+pV"]);
+    const intl = require(1236) /* getSystemLocale */.intl;
+    return intl.string(require(1236) /* getSystemLocale */.t["S3z+pV"]);
   },
   parent: require("MobileSetting").MobileSetting.ACCESSIBILITY,
   useValue: useEnableSwitchIconsSettingValue,
   onValueChange: require("setFontSize").setSwitchIconsEnabled,
   usePredicate: function useShowSwitchIconsSetting() {
-    return importDefault(1324)("SettingsAccessibilityScreen");
+    return importDefault(1348)("SettingsAccessibilityScreen");
   },
   hasIcon: true
 };

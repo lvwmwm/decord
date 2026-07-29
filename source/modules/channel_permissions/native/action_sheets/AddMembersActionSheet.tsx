@@ -1,42 +1,47 @@
-// Module ID: 8260
-// Function ID: 66071
+// Module ID: 8284
+// Function ID: 8285
 // Name: _toPropertyKey
-// Dependencies: [5, 29, 57, 31, 27, 1918, 1911, 1838, 1850, 6697, 482, 33, 4165, 689, 3798, 5193, 4153, 566, 8253, 3878, 1212, 1273, 4161, 8261, 5223, 6655, 8265, 5082, 8272, 4355, 4347, 8254, 3865, 4133, 5221, 5220, 4578, 2]
+// Dependencies: [5, 109, 32, 19, 17, 1942, 1935, 1862, 1874, 6718, 505, 21, 4189, 712, 3822, 5215, 4177, 589, 8277, 3902, 1236, 1297, 4185, 8285, 5245, 6676, 8289, 5104, 8296, 4380, 4372, 8278, 3889, 4157, 5243, 5242, 4600, 2]
 // Exports: default
 
-// Module 8260 (_toPropertyKey)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import computeDefaultGroupDmNameFromUserIds from "computeDefaultGroupDmNameFromUserIds";
-import _slicedToArray from "_slicedToArray";
-import _updatePermission from "_updatePermission";
-import get_ActivityIndicator from "requestMembersDebounced";
-import closure_10 from "_isNativeReflectConstruct";
-import closure_11 from "_createForOfIteratorHelperLoose";
-import closure_12 from "_createForOfIteratorHelperLoose";
-import closure_13 from "_isNativeReflectConstruct";
+// Module 8284 (_toPropertyKey)
+import trackCommunicationDisabled from "trackCommunicationDisabled";
+import _objectWithoutProperties from "_objectWithoutProperties";
+import presentAddedFriendToast from "presentAddedFriendToast";
+import AccessibilityAnnouncer from "AccessibilityAnnouncer";
+import get_ActivityIndicator from "initialize";
+import closure_10 from "trackCommunicationDisabled";
+import createGuildRoleRecordFromRust from "createGuildRoleRecordFromRust";
+import createGuildRecordFromRust from "createGuildRecordFromRust";
+import mergeGuildAvatar from "mergeGuildAvatar";
 import RowType from "RowType";
 import { Permissions } from "sum";
-import jsxProd from "showActionSheet";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import jsxProd from "Button";
+import createCacheKey from "createCacheKey";
 
+let c9;
 let closure_14;
 let closure_15;
 let closure_17;
 let closure_18;
 let closure_19;
-let closure_8;
-let closure_9;
+let metroImportAll;
 const require = arg1;
 function _toPropertyKey(arg0) {
   let StringResult = arg0;
-  if ("object" === typeof arg0) {
+  if (typeof arg0 !== "window") {
     StringResult = arg0;
     if (arg0) {
       const _Symbol = Symbol;
       if (undefined !== arg0[Symbol.toPrimitive]) {
-        const callResult = obj.call(arg0, "string");
+        const call = tmp3.call;
+        if (typeof call === "unknown") {
+          let callResult = tmp3("string");
+        } else {
+          callResult = call(arg0, "string");
+        }
         StringResult = callResult;
-        if ("object" === typeof callResult) {
+        if (typeof callResult !== "window") {
           const _TypeError = TypeError;
           const typeError = new TypeError("@@toPrimitive must return a primitive value.");
           throw typeError;
@@ -48,13 +53,10 @@ function _toPropertyKey(arg0) {
     }
   }
   let text = StringResult;
-  if ("symbol" !== typeof StringResult) {
+  if (typeof StringResult !== "e") {
     text = `${tmp}`;
   }
   return text;
-}
-function getFullRowId(rowType) {
-  return "" + rowType.rowType + ":" + rowType.id;
 }
 class AddMembersBody {
   constructor(arg0) {
@@ -64,408 +66,498 @@ class AddMembersBody {
     if (permission === undefined) {
       tmp = setPendingAdditions;
       tmp2 = c3;
-      num = 14;
-      permission = require("calculateElevatedPermissions").NONE;
+      permission = require("applyOverwrites").NONE;
     }
     inActionSheet = global.inActionSheet;
-    obj = { channel: 0, guild: 0, pendingAdditions: 0, setPendingAdditions: 0, permission: 0, inActionSheet: 0 };
-    setPrototypeOfResult = Object.setPrototypeOf(null);
-    merged = Object.assign(global, obj);
+    merged = Object.assign(global, Object.create(null));
     c3 = undefined;
-    c4 = undefined;
-    computeDefaultGroupDmNameFromUserIds = undefined;
+    useState = undefined;
+    c5 = undefined;
     c6 = undefined;
     useState = undefined;
     length = undefined;
     c9 = undefined;
-    length = undefined;
+    c10 = undefined;
     c11 = undefined;
-    length = undefined;
-    getQuery = function getQuery(arr) {
-      let substr = arr;
-      if (arg1) {
-        substr = arr.slice(1);
-      }
-      return substr;
-    };
+    c12 = undefined;
     filterByQuery = function filterByQuery(arg0) {
-      const tmp = getQuery(str.trim(), first);
-      const regExp = new RegExp("" + pendingAdditions(_undefined[16]).escape(tmp), "i");
+      const trimmed = str.trim();
+      let substr = trimmed;
+      if (first) {
+        substr = trimmed.slice(1);
+      }
+      const regExp = new RegExp("" + pendingAdditions(_undefined[16]).escape(substr), "i");
       return regExp.test(arg0);
     };
-    tmp5 = c20();
-    c3 = tmp5;
-    tmp6 = c6(useState.useState(false), 2);
-    first = tmp6[0];
-    c4 = first;
-    computeDefaultGroupDmNameFromUserIds = tmp6[1];
-    tmp8 = c6(useState.useState(""), 2);
-    str = tmp8[0];
+    tmp4 = jsxs();
+    c3 = tmp4;
+    obj = useState;
+    tmp5 = c6(useState.useState(false), 2);
+    first = tmp5[0];
+    useState = first;
+    c5 = tmp5[1];
+    tmp7 = c6(useState.useState(""), 2);
+    str = tmp7[0];
     c6 = str;
-    useState = tmp8[1];
+    useState = tmp7[1];
+    tmp8 = pendingAdditions;
+    tmp9 = c3;
     obj = { isKeyboardAwareOnAndroid: !inActionSheet };
-    obj3 = require("calculateElevatedPermissions");
+    tmp10 = setPendingAdditions;
+    obj3 = require("applyOverwrites");
     canEveryoneRoleResult = obj3.canEveryoneRole(Permissions.ADMINISTRATOR, guild);
+    tmp12 = guild;
     obj4 = require("initialize");
     items = [];
     items[0] = c11;
     stateFromStores = obj4.useStateFromStores(items, () => sum1.getSortedRoles(guild.id));
     obj5 = require("initialize");
     items1 = [];
-    items1[0] = length;
+    items1[0] = c10;
     stateFromStoresArray = obj5.useStateFromStoresArray(items1, () => _undefined2.getMemberIds(guild.id));
     if (first) {
       items2 = [];
     } else {
-      tmp11 = setPendingAdditions;
-      tmp12 = c3;
-      num2 = 18;
-      obj6 = require("isAdmin");
-      tmp13 = obj6;
-      tmp14 = guild;
-      tmp15 = stateFromStores;
-      tmp16 = channel;
-      tmp17 = permission;
-      tmp18 = filterByQuery;
-      rolesRows = obj6.getRolesRows(guild, stateFromStores, channel, permission, filterByQuery);
-      tmp19 = 0 === rolesRows.length && "" === str.trim() && 1 === stateFromStores.length;
+      tmp10Result = require("getRoleRowData");
+      tmp14 = tmp10Result;
+      tmp15 = guild;
+      tmp16 = stateFromStores;
+      tmp17 = channel;
+      tmp18 = permission;
+      tmp19 = filterByQuery;
+      rolesRows = tmp10Result.getRolesRows(guild, stateFromStores, channel, permission, filterByQuery);
+      num = 0;
+      tmp20 = 0 === rolesRows.length && "" === str.trim();
+      if (tmp20) {
+        num2 = 1;
+        tmp20 = 1 === stateFromStores.length;
+      }
       items2 = rolesRows;
-      if (tmp19) {
-        tmp20 = setPendingAdditions;
-        tmp21 = c3;
-        obj7 = require("isAdmin");
-        items2 = obj7.getNoRolesRow();
+      if (tmp20) {
+        tmp10Result1 = require("getRoleRowData");
+        items2 = tmp10Result1.getNoRolesRow();
       }
     }
-    obj8 = require("isAdmin");
-    membersRows = obj8.getMembersRows(stateFromStoresArray, channel, guild, permission, filterByQuery);
+    tmp10Result2 = require("getRoleRowData");
+    membersRows = tmp10Result2.getMembersRows(stateFromStoresArray, channel, guild, permission, filterByQuery);
     sum = items2.length + membersRows.length;
     length = sum;
     items3 = [, ];
     items3[0] = sum;
     items3[1] = str;
-    effect = useState.useEffect(() => {
+    effect = obj.useEffect(() => {
       if ("" !== str) {
         const AccessibilityAnnouncer = guild(_undefined[19]).AccessibilityAnnouncer;
         const intl = guild(_undefined[20]).intl;
-        const obj = { count: c8 };
+        const obj = { count: null };
+        obj[0] = c8;
         AccessibilityAnnouncer.announce(intl.formatToPlainString(guild(_undefined[20]).t.ZGVL3g, obj), "polite");
       }
     }, items3);
-    items4 = [];
     if (items2.length > 0) {
-      tmp24 = guild;
-      tmp25 = c3;
-      num3 = 20;
       intl = require("getSystemLocale").intl;
+      items4 = [];
+      items4[0] = intl.string(require("getSystemLocale").t["LPJmL/"]);
+      items5 = items4;
+    } else {
       items5 = [];
-      items5[0] = intl.string(require("getSystemLocale").t["LPJmL/"]);
-      items6 = items5;
-    } else {
-      items6 = [];
     }
-    items7 = [...items2];
+    items6 = [...items2];
     if (membersRows.length > 0) {
-      tmp27 = guild;
-      tmp28 = c3;
-      num4 = 20;
       intl2 = require("getSystemLocale").intl;
-      items8 = [];
-      items8[0] = intl2.string(require("getSystemLocale").t["9Oq93m"]);
-      items9 = items8;
+      items7 = [];
+      items7[0] = intl2.string(require("getSystemLocale").t["9Oq93m"]);
+      items8 = items7;
     } else {
-      items9 = [];
+      items8 = [];
     }
-    arraySpreadResult = HermesBuiltin.arraySpread(membersRows, HermesBuiltin.arraySpread(items9, tmp26));
-    num5 = 0;
+    arraySpreadResult = HermesBuiltin.arraySpread(membersRows, HermesBuiltin.arraySpread(items8, tmp23));
+    num3 = 0;
     if (items2.length > 0) {
-      num5 = 1;
+      num3 = 1;
     }
-    c9 = num5;
-    diff = num5 + items2.length - 1;
-    length = diff;
+    c9 = num3;
+    diff = num3 + items2.length - 1;
+    c10 = diff;
     sum1 = diff;
     if (membersRows.length > 0) {
       sum1 = diff + 2;
     }
+    items9 = [];
     c11 = sum1;
-    length = sum1 + membersRows.length - 1;
-    obj1 = {};
+    c12 = sum1 + membersRows.length - 1;
+    obj1 = { title: null, data: null };
     intl3 = require("getSystemLocale").intl;
-    obj1.title = intl3.string(require("getSystemLocale").t["LPJmL/"]);
-    obj1.data = items2;
-    arr = items4.push(obj1);
-    obj2 = {};
+    obj1[0] = intl3.string(require("getSystemLocale").t["LPJmL/"]);
+    obj1[1] = items2;
+    arr = items9.push(obj1);
+    obj2 = { title: null, data: null };
     intl4 = require("getSystemLocale").intl;
-    obj2.title = intl4.string(require("getSystemLocale").t["9Oq93m"]);
-    obj2.data = membersRows;
-    arr1 = items4.push(obj2);
+    obj2[0] = intl4.string(require("getSystemLocale").t["9Oq93m"]);
+    obj2[1] = membersRows;
+    arr1 = items9.push(obj2);
     values = Object.values(pendingAdditions);
     mapped = values.map((display) => {
       const obj = {};
       const merged = Object.assign(display.display);
-      obj["id"] = display.row.id;
+      obj.id = display.row.id;
       return obj;
     });
     if (inActionSheet) {
-      tmp35 = guild;
-      tmp36 = c3;
-      num6 = 24;
       BottomSheetScrollView = require("BottomSheetModal").BottomSheetScrollView;
     } else {
       BottomSheetScrollView = c9;
     }
-    tmp37 = require("useModalDismissGuardRefreshControl");
-    obj3 = {};
-    obj4 = { style: tmp5.inputContainer };
-    tmp38 = inActionSheet ? tmp37.BottomSheetFlashList : tmp37.FlashList;
-    tmp39 = jsxs;
-    tmp40 = Fragment;
-    obj5 = {};
-    tmp41 = require("module_8265");
+    tmp12Result = require("noop");
+    tmp34 = jsx;
+    obj3 = { style: tmp4.inputContainer, children: null };
+    tmp31 = inActionSheet ? tmp12Result.BottomSheetFlashList : tmp12Result.FlashList;
+    tmp32 = jsxs;
+    tmp33 = Fragment;
+    tmp35 = length;
+    obj4 = { accessibilityLabel: null, placeholder: null, tags: null, onChangeText: null, onRemove: null };
+    tmp8Result = require("module_8289");
     intl5 = require("getSystemLocale").intl;
-    obj5.accessibilityLabel = intl5.string(require("getSystemLocale").t["5h0QOP"]);
+    obj4[0] = intl5.string(require("getSystemLocale").t["5h0QOP"]);
     intl6 = require("getSystemLocale").intl;
-    obj5.placeholder = intl6.string(require("getSystemLocale").t.TVZdKh);
-    obj5.tags = mapped;
-    obj5.onChangeText = function onChangeText(str) {
+    obj4[1] = intl6.string(require("getSystemLocale").t.TVZdKh);
+    obj4[2] = mapped;
+    obj4[3] = function onChangeText(str) {
       str = str.trim();
       const tmp = "@" === str.charAt(0);
-      const members = pendingAdditions(_undefined[27]).requestMembers(guild.id, getQuery(str, tmp), outer1_15);
+      let substr = str;
+      if (tmp) {
+        substr = str.slice(1);
+      }
+      const members = pendingAdditions(_undefined[27]).requestMembers(guild.id, substr, outer1_15);
       callback3(str);
       callback2(tmp);
     };
-    obj5.onRemove = function onRemove(arg0) {
+    obj4[4] = function onRemove(arg0) {
       let closure_0 = Object.keys(pendingAdditions)[arg0];
       callback((arg0) => {
         const items = [closure_0];
-        return callback(arg0, items.map(outer2_21));
+        return outer1_5(arg0, items.map(outer1_20));
       });
     };
-    obj4.children = jsx(tmp41, obj5);
+    obj3[1] = jsx(tmp8Result, obj4);
     items10 = [, , ];
-    items10[0] = jsx(length, obj4);
+    items10[0] = jsx(length, obj3);
     if (canEveryoneRoleResult) {
-      tmp42 = jsx;
-      tmp43 = length;
-      obj6 = {};
-      obj6.style = tmp5.adminWarning;
-      tmp44 = jsx;
-      tmp45 = guild;
-      tmp46 = c3;
-      num7 = 21;
-      obj7 = {};
-      obj7.messageType = require("Button").HelpMessageTypes.WARNING;
+      obj5 = { style: null, children: null };
+      obj5[0] = tmp4.adminWarning;
+      obj6 = { messageType: null, children: null };
+      obj6[0] = require("Button").HelpMessageTypes.WARNING;
       intl7 = require("getSystemLocale").intl;
-      obj7.children = intl7.string(require("getSystemLocale").t["5f3HIC"]);
-      obj6.children = jsx(require("Button").HelpMessage, obj7);
-      canEveryoneRoleResult = jsx(length, obj6);
+      obj6[1] = intl7.string(require("getSystemLocale").t["5f3HIC"]);
+      obj5[1] = tmp34(require("Button").HelpMessage, obj6);
+      canEveryoneRoleResult = tmp34(tmp35, obj5);
     }
     items10[1] = canEveryoneRoleResult;
     if ("" !== str) {
       if (0 === items2.length) {
         if (0 === membersRows.length) {
-          tmp49 = jsx;
-          obj8 = {};
-          tmp50 = obj8;
-          tmp51 = merged;
+          obj7 = {};
+          tmp39 = obj7;
+          tmp40 = merged;
           merged1 = Object.assign(merged);
-          tmp53 = jsx;
-          tmp54 = guild;
-          tmp55 = c3;
-          num8 = 21;
-          obj9 = {};
-          num9 = 28;
-          obj9.Illustration = require("getNoResultsAltSource").NoResultsAlt;
-          ({ emptyState: obj19.style, emptyStateText: obj19.bodyStyle } = tmp5);
+          obj8 = { Illustration: null, style: null, bodyStyle: null, body: null };
+          obj8[0] = require("getNoResultsAltSource").NoResultsAlt;
+          ({ emptyState: obj18[1], emptyStateText: obj18[2] } = tmp4);
           intl8 = require("getSystemLocale").intl;
-          obj10 = {};
-          obj10.query = str;
-          obj9.body = intl8.format(require("getSystemLocale").t.ErpIY3, obj10);
-          str2 = "children";
-          obj8["children"] = jsx(require("Button").EmptyState, obj9);
-          tmp48 = jsx(BottomSheetScrollView, obj8);
+          obj9 = { query: null };
+          obj9[0] = str;
+          obj8[3] = intl8.format(require("getSystemLocale").t.ErpIY3, obj9);
+          obj7.children = tmp34(require("Button").EmptyState, obj8);
+          tmp34Result = tmp34(BottomSheetScrollView, obj7);
         }
-        items10[2] = tmp48;
-        obj3.children = items10;
-        return tmp39(tmp40, obj3);
+        obj10 = { children: null };
+        items10[2] = tmp34Result;
+        obj10[0] = items10;
+        return tmp32(tmp33, obj10);
       }
     }
     obj11 = {};
     merged2 = Object.assign(merged);
-    obj11["extraData"] = pendingAdditions;
-    obj11["data"] = items7;
-    obj12 = { paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16, paddingBottom: require("_createForOfIteratorHelperLoose").space.PX_16 + require("useSafeAreaInsetsKeyboardAware")(obj).insets.bottom };
-    obj11["contentContainerStyle"] = obj12;
-    obj11["renderItem"] = function renderRow(item) {
+    obj11.extraData = pendingAdditions;
+    obj11.data = items6;
+    obj12 = { paddingHorizontal: require("Themes").space.PX_16, paddingBottom: require("Themes").space.PX_16 + require("useSafeAreaInsetsKeyboardAware")(obj).insets.bottom };
+    obj11.contentContainerStyle = obj12;
+    obj11.renderItem = function renderRow(item) {
       item = item.item;
       const index = item.index;
-      if ("string" === typeof item) {
-        let obj = { style: null, maxFontSizeMultiplier: 2, accessibilityRole: "header", variant: "text-sm/semibold", color: "interactive-text-default" };
+      if (typeof item === "y") {
         let items = [_undefined.sectionRowWrapper, ];
-        if (0 === index) {
-          obj = { paddingTop: 0 };
-        } else {
-          obj = {};
-        }
-        items[1] = obj;
-        obj.style = items;
-        obj.children = item;
+        let obj = { style: null, maxFontSizeMultiplier: 2, accessibilityRole: "header", variant: "text-sm/semibold", color: "interactive-text-default", children: null };
+        items[1] = 0 === index ? { paddingTop: 0 } : {};
+        obj[0] = items;
+        obj[5] = item;
         outer1_17(guild(_undefined[22]).Text, obj);
         const tmp9 = outer1_17;
       } else {
-        let obj1 = {};
-        let tmp2 = num5 === index;
+        let tmp2 = num3 === index;
         if (!tmp2) {
           tmp2 = sum1 === index;
         }
-        obj1.start = tmp2;
+        obj = { start: null, end: null, item: null, guildId: null, onPress: null, checked: null };
+        obj[0] = tmp2;
         let tmp4 = c10 === index;
         if (!tmp4) {
-          tmp4 = closure_12 === index;
+          tmp4 = createGuildRecordFromRust === index;
         }
-        obj1.end = tmp4;
-        obj1.item = item;
-        obj1.guildId = item.id;
-        obj1.onPress = function onPress() {
-          (function updatePendingAdditions(item) {
-            let closure_0 = item;
-            if (item.rowType !== outer3_14.EMPTY_STATE) {
-              outer2_2((arg0) => {
-                let obj = {};
-                const merged = Object.assign(arg0);
-                const tmp4 = outer4_22(item);
-                if (tmp4 in obj) {
-                  delete tmp[tmp2];
-                } else {
-                  const rowType = item.rowType;
-                  if (outer4_14.ROLE !== rowType) {
-                    if (outer4_14.ADMINISTRATOR !== rowType) {
-                      if (outer4_14.MEMBER === rowType) {
-                        const user = getQuery.getUser(item.id);
-                        if (null != user) {
-                          obj = { text: item.name };
-                          obj = { user, guildId: item.id, avatarStyle: outer3_3.tagAvatar, style: outer3_3.tagAvatar };
-                          obj.icon = outer4_17(guild(table[21]).Avatar, obj);
-                          let tmp8 = obj;
-                        }
+        obj[1] = tmp4;
+        obj[2] = item;
+        obj[3] = item.id;
+        obj[4] = function onPress() {
+          if (item.rowType !== outer2_14.EMPTY_STATE) {
+            outer1_2((arg0) => {
+              let obj = {};
+              const merged = Object.assign(arg0);
+              const combined = "" + user.rowType + ":" + user.id;
+              if (combined in obj) {
+                delete tmp[tmp2];
+              } else {
+                const rowType = tmp4.rowType;
+                if (outer2_14.ROLE !== rowType) {
+                  if (tmp6.ADMINISTRATOR !== rowType) {
+                    if (tmp6.MEMBER === rowType) {
+                      user = outer2_13.getUser(tmp4.id);
+                      if (null != user) {
+                        obj = { text: null, icon: null };
+                        obj[0] = tmp4.name;
+                        obj = { user: null, guildId: null, avatarStyle: null, style: null };
+                        obj[0] = user;
+                        obj[1] = user.id;
+                        obj[2] = outer1_3.tagAvatar;
+                        obj[3] = outer1_3.tagAvatar;
+                        obj[1] = outer2_17(item(outer2_3[21]).Avatar, obj);
+                        let tmp7 = obj;
                       }
                     }
-                    if (null != tmp8) {
-                      const obj1 = { display: tmp8, row: item };
-                      obj[tmp4] = obj1;
-                    }
                   }
-                  const obj2 = { text: item.name };
-                  const obj3 = {};
-                  const items = [outer3_3.tagRoleColor, ];
-                  const obj4 = { backgroundColor: item.colorString };
-                  items[1] = obj4;
-                  obj3.style = items;
-                  obj2.icon = outer4_17(c8, obj3);
-                  tmp8 = obj2;
+                  if (null != tmp7) {
+                    const obj1 = { display: null, row: null };
+                    obj1[0] = tmp7;
+                    obj1[1] = tmp4;
+                    obj[combined] = obj1;
+                  }
                 }
-                return obj;
-              });
-            }
-          })(item);
+                const obj2 = { text: null, icon: null };
+                obj2[0] = tmp4.name;
+                const obj3 = { style: null };
+                const items = [outer1_3.tagRoleColor, ];
+                const obj4 = { backgroundColor: null };
+                obj4[0] = tmp4.colorString;
+                items[1] = obj4;
+                obj3[0] = items;
+                obj2[1] = outer2_17(outer2_8, obj3);
+                tmp7 = obj2;
+              }
+              return obj;
+            });
+          }
         };
-        obj1.checked = outer1_22(item) in pendingAdditions;
-        return outer1_17(guild(_undefined[23]).ChannelOverwritesCheckboxItem, obj1);
+        const _HermesInternal = HermesInternal;
+        obj[5] = "" + item.rowType + ":" + item.id in pendingAdditions;
+        return outer1_17(guild(_undefined[23]).ChannelOverwritesCheckboxItem, obj);
       }
     };
-    obj11["keyboardShouldPersistTaps"] = "handled";
-    tmp48 = jsx(tmp38, obj11);
+    obj11.keyboardShouldPersistTaps = "handled";
+    tmp34Result = tmp34(tmp31, obj11);
     return;
   }
 }
-({ View: closure_8, ScrollView: closure_9 } = get_ActivityIndicator);
+({ View: metroImportAll, ScrollView: c9 } = get_ActivityIndicator);
 ({ RowType: closure_14, MEMBER_REQUEST_COUNT: closure_15 } = RowType);
 ({ jsx: closure_17, Fragment: closure_18, jsxs: closure_19 } = jsxProd);
-_createForOfIteratorHelperLoose = { container: { flex: 1 } };
-_createForOfIteratorHelperLoose = { alignItems: "stretch", paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16, paddingVertical: require("_createForOfIteratorHelperLoose").space.PX_12 };
-_createForOfIteratorHelperLoose.inputContainer = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.tagRoleColor = { height: 12, width: 12, borderRadius: 6 };
-let obj1 = { width: 16, height: 16, borderRadius: require("_createForOfIteratorHelperLoose").radii.sm };
-_createForOfIteratorHelperLoose.tagAvatar = obj1;
-_createForOfIteratorHelperLoose.emptyState = { paddingTop: require("_createForOfIteratorHelperLoose").space.PX_16 };
-let obj2 = { paddingTop: require("_createForOfIteratorHelperLoose").space.PX_16 };
-_createForOfIteratorHelperLoose.emptyStateText = { color: require("_createForOfIteratorHelperLoose").colors.TEXT_DEFAULT };
-let obj3 = { color: require("_createForOfIteratorHelperLoose").colors.TEXT_DEFAULT };
-_createForOfIteratorHelperLoose.sectionRowWrapper = { paddingVertical: require("_createForOfIteratorHelperLoose").space.PX_12 };
-_createForOfIteratorHelperLoose.adminWarning = { marginHorizontal: 16, marginVertical: 8 };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-let obj4 = { paddingVertical: require("_createForOfIteratorHelperLoose").space.PX_12 };
-const result = require("_slicedToArray").fileFinishedImporting("modules/channel_permissions/native/action_sheets/AddMembersActionSheet.tsx");
+createCacheKey = { container: { flex: 1 }, inputContainer: null, tagRoleColor: null, tagAvatar: null, emptyState: null, emptyStateText: null, sectionRowWrapper: null, adminWarning: null };
+createCacheKey = { alignItems: "stretch", paddingHorizontal: require("Themes").space.PX_16, paddingVertical: require("Themes").space.PX_12 };
+createCacheKey[1] = createCacheKey;
+createCacheKey[2] = { height: 12, width: 12, borderRadius: 6 };
+createCacheKey[3] = { width: 16, height: 16, borderRadius: require("Themes").radii.sm };
+let obj1 = { width: 16, height: 16, borderRadius: require("Themes").radii.sm };
+createCacheKey[4] = { paddingTop: require("Themes").space.PX_16 };
+let obj2 = { paddingTop: require("Themes").space.PX_16 };
+createCacheKey[5] = { color: require("Themes").colors.TEXT_DEFAULT };
+let obj3 = { color: require("Themes").colors.TEXT_DEFAULT };
+createCacheKey[6] = { paddingVertical: require("Themes").space.PX_12 };
+createCacheKey[7] = { marginHorizontal: 16, marginVertical: 8 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let obj4 = { paddingVertical: require("Themes").space.PX_12 };
+let result = require("_slicedToArray").fileFinishedImporting("modules/channel_permissions/native/action_sheets/AddMembersActionSheet.tsx");
 
 export default function AddMembersActionSheet(channel) {
   channel = channel.channel;
   let first;
   function _handleAddPressed() {
-    // CreateGeneratorClosureLongIndex (0x67)
-    const obj = outer1_4(tmp);
-    return obj(...arguments);
+    const self = this;
+    let tmp = outer1_4(function*() {
+      if (c5 === 2) {
+        c5 = 3;
+        HermesBuiltin.throwTypeError();
+      } else if (tmp6 === 3) {
+        if (arg0 === 1) {
+          throw arg1;
+        } else if (arg0 === 2) {
+          let obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
+        } else {
+          return { value: "HermesInternal", done: null };
+        }
+      } else {
+        try {
+          c5 = 2;
+          if (0 === c4) {
+            if (arg0 === 1) {
+              c5 = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              c5 = 3;
+              obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            } else {
+              let c1 = tmp3;
+              let items = tmp7;
+              items = [];
+              c1 = 0;
+              let c2 = 0;
+              const _Object = Object;
+              const values = Object.values(outer1_1);
+              const item = values.forEach((row) => {
+                row = row.row;
+                let tmp = null != row.id;
+                if (tmp) {
+                  tmp = "" !== row.id;
+                }
+                if (tmp) {
+                  if (row.rowType === outer2_14.ROLE) {
+                    closure_2 = closure_2 + 1;
+                    items.push(outer2_0(4372).permissionOverwriteForRole(row.id, items.type));
+                    const obj = outer2_0(4372);
+                  } else if (row.rowType === tmp2.MEMBER) {
+                    closure_1 = closure_1 + 1;
+                    items.push(outer2_0(4372).permissionOverwriteForUser(row.id, items.type));
+                    const obj2 = outer2_0(4372);
+                  }
+                }
+              });
+              let dependencyMap = 1;
+              c4 = 2;
+              c5 = 1;
+              let obj1 = { value: null, done: false };
+              obj1[0] = outer1_0(8278).savePermissionUpdates(outer1_0.id, items);
+              return obj1;
+            }
+          } else {
+            if (1 === tmp7) {
+              dependencyMap = 0;
+              c5 = 3;
+            } else if (arg0 === 1) {
+              c5 = 3;
+              throw arg1;
+            } else if (arg0 !== 2) {
+              obj = outer1_0(3889);
+              const result = obj.memberOrRoleAddedToast(c2, c1);
+              obj1 = outer1_1(4157);
+              obj1.hideActionSheet();
+              dependencyMap = 0;
+            }
+            dependencyMap = 0;
+            c5 = 3;
+            let obj2 = { value: null, done: true };
+            obj2[0] = arg1;
+            return obj2;
+          }
+        } catch (tmp19) {
+          c2 = tmp19;
+          if (tmp4 === dependencyMap) {
+            c5 = tmp2;
+            throw tmp19;
+          } else {
+            c4 = tmp;
+          }
+        }
+      }
+    });
+    const _handleAddPressed = tmp;
+    const apply = tmp.apply;
+    if (typeof apply === "unknown") {
+      let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+    } else {
+      applyArgumentsResult = apply(self, arguments);
+    }
+    return applyArgumentsResult;
   }
   const tmp2 = callback(React.useState({}), 2);
   first = tmp2[0];
-  let obj = channel(566);
-  const items = [closure_12];
+  let obj = channel(589);
+  let items = [createGuildRecordFromRust];
   const stateFromStores = obj.useStateFromStores(items, () => {
     let guildId;
-    if (null != channel) {
+    if (channel != null) {
       guildId = channel.getGuildId();
     }
     return outer1_12.getGuild(guildId);
   });
-  const tmp5 = first(4355)(channel, true);
-  let str = "";
-  if (null != tmp5) {
-    str = tmp5;
+  let str = first(4380)(channel, true);
+  if (str == null) {
+    str = "";
   }
   if (null == stateFromStores) {
     return null;
   } else {
-    const _Object = Object;
-    const tmp15 = 0 === Object.keys(first).length;
-    obj = { scrollable: true, header: null, startExpanded: true };
-    obj = {};
-    const intl3 = channel(1212).intl;
-    obj.title = intl3.string(channel(1212).t.dMJ3Y6);
-    obj.subtitle = str;
+    let _Object = Object;
+    const tmp10 = 0 === Object.keys(first).length;
+    obj = { title: null, subtitle: null, trailing: null };
+    const intl3 = tmp4(1236).intl;
+    obj[0] = intl3.string(tmp4(1236).t.dMJ3Y6);
+    obj[1] = str;
     if (channel.canSkip) {
-      if (tmp15) {
-        const obj1 = { size: "sm" };
-        const intl2 = channel(1212).intl;
-        obj1.text = intl2.string(channel(1212).t["5Wxrcd"]);
-        obj1.onPress = function onPress() {
-          first(outer1_3[33]).hideActionSheet();
+      if (tmp10) {
+        obj = { size: "sm", text: null, onPress: null, variant: "secondary" };
+        const intl2 = tmp4(1236).intl;
+        obj[1] = intl2.string(tmp4(1236).t["5Wxrcd"]);
+        obj[2] = function onPress() {
+          first(table[33]).hideActionSheet();
         };
-        obj1.variant = "secondary";
-        let obj4 = obj1;
+        let obj4 = obj;
       }
-      obj.trailing = tmp20(tmp21, obj4);
-      obj.header = tmp19(channel(5220).BottomSheetTitleHeader, obj);
-      const obj2 = { style: tmp.container };
-      const obj3 = { channel, guild: stateFromStores, permission: channel.accessPermissions, pendingAdditions: first, setPendingAdditions: tmp2[1], inActionSheet: true };
-      obj2.children = callback2(AddMembersBody, obj3);
-      obj.children = callback2(closure_8, obj2);
-      return tmp16(channel(5221).BottomSheet, obj);
+      let obj1 = { scrollable: true, header: null, startExpanded: true, children: null };
+      obj[2] = tmp11(tmp12, obj4);
+      obj1[1] = tmp11(tmp4(5242).BottomSheetTitleHeader, obj);
+      let obj2 = { style: null, children: null };
+      obj2[0] = tmp.container;
+      const obj3 = { channel: null, guild: null, permission: null, pendingAdditions: null, setPendingAdditions: null, inActionSheet: true };
+      obj3[0] = channel;
+      obj3[1] = stateFromStores;
+      obj3[2] = channel.accessPermissions;
+      obj3[3] = first;
+      obj3[4] = tmp2[1];
+      obj2[1] = tmp11(AddMembersBody, obj3);
+      obj1[3] = tmp11(closure_8, obj2);
+      return tmp11(tmp4(5243).BottomSheet, obj1);
     }
-    obj4 = { size: "sm" };
-    const intl = channel(1212).intl;
-    obj4.text = intl.string(channel(1212).t.OYkgVk);
-    obj4.onPress = function handleAddPressed() {
-      return _handleAddPressed(...arguments);
+    obj4 = { size: "sm", text: null, onPress: null, variant: null, disabled: null };
+    const intl = tmp4(1236).intl;
+    obj4[1] = intl.string(tmp4(1236).t.OYkgVk);
+    obj4[2] = function handleAddPressed() {
+      const self = this;
+      const apply = _handleAddPressed.apply;
+      if (typeof apply === "unknown") {
+        let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+      } else {
+        applyArgumentsResult = apply(self, arguments);
+      }
+      return applyArgumentsResult;
     };
-    let str3 = "primary";
-    if (tmp15) {
-      str3 = "secondary";
+    let str2 = "primary";
+    if (tmp10) {
+      str2 = "secondary";
     }
-    obj4.variant = str3;
-    obj4.disabled = tmp15;
-    tmp16 = callback2;
-    tmp19 = callback2;
-    tmp20 = callback2;
+    obj4[3] = str2;
+    obj4[4] = tmp10;
   }
 };
 export { AddMembersBody };

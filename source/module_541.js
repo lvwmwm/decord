@@ -1,11 +1,7 @@
 // Module ID: 541
-// Function ID: 6655
+// Function ID: 542
 // Dependencies: []
 
 // Module 541
-if (Object.defineProperty || false) {
-  const obj = { value: 1 };
-  tmp2({}, "a", obj);
-}
 
-export default Object.defineProperty || false;
+export default TypeError;

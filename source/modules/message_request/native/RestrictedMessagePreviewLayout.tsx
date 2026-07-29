@@ -1,9 +1,9 @@
-// Module ID: 15691
-// Function ID: 120799
+// Module ID: 15726
+// Function ID: 15727
 // Name: RESTRICTED_AVATAR_SIZE
-// Dependencies: [1273, 2]
+// Dependencies: [1297, 2]
 
-// Module 15691 (RESTRICTED_AVATAR_SIZE)
+// Module 15726 (RESTRICTED_AVATAR_SIZE)
 const tmp2 = require("Button").AVATAR_SIZE_MAP[require("Button").AvatarSizes.NORMAL];
 const sum = tmp2 + 18;
 const result = require("set").fileFinishedImporting("modules/message_request/native/RestrictedMessagePreviewLayout.tsx");

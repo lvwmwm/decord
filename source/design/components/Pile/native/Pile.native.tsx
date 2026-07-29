@@ -1,32 +1,34 @@
-// Module ID: 9909
-// Function ID: 76598
+// Module ID: 9931
+// Function ID: 9932
 // Name: Pile
-// Dependencies: [31, 27, 33, 4165, 1327, 22, 7945, 9910, 2]
+// Dependencies: [19, 17, 21, 4189, 1351, 12, 7970, 9932, 2]
 // Exports: Pile
 
-// Module 9909 (Pile)
-import result from "result";
+// Module 9931 (Pile)
+import noop from "noop";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
 const require = arg1;
-let closure_6 = _createForOfIteratorHelperLoose.createStyles({ pile: { flexDirection: "row" } });
+let closure_6 = createCacheKey.createStyles({ pile: { flexDirection: "row" } });
 let result = require("jsxProd").fileFinishedImporting("design/components/Pile/native/Pile.native.tsx");
 
 export const Pile = function Pile(aria_label) {
   let View;
   let children;
-  let result;
+  let noop;
   let dependencyMap;
   let require;
   let size;
   ({ shape: require, size } = aria_label);
-  ({ gap: dependencyMap, depthX: result, depthY: View, children } = aria_label);
+  ({ gap: dependencyMap, depthX: noop, depthY: View, children } = aria_label);
+  let length;
   let Children = React.Children;
   const tmp = callback();
-  const length = Children.toArray(children).filter(require(1327) /* isDiscordFrontendDevelopment */.isNotNullish).length;
-  let obj = require(22) /* apply */;
+  const tmp2 = React;
+  length = Children.toArray(children).filter(require(1351) /* isDiscordFrontendDevelopment */.isNotNullish).length;
+  let obj = require(12) /* apply */;
   if (obj.isArray(size)) {
     if (size.length !== length) {
       const _Error = Error;
@@ -41,101 +43,109 @@ export const Pile = function Pile(aria_label) {
     children: Children.map(children, (type) => {
       if (outer1_3.isValidElement(type)) {
         let obj = outer1_0(outer1_2[5]);
-        const tmp6 = obj.isArray(size) ? size[arg1] : size;
+        let tmp6 = size;
+        if (obj.isArray(size)) {
+          tmp6 = tmp5[arg1];
+        }
         let tmp8;
         if (arg1 < length - 1) {
-          let obj1 = outer1_0(outer1_2[5]);
-          if (obj1.isArray(size)) {
-            let tmp13 = tmp12[arg1 + 1];
-          } else {
-            tmp13 = tmp12;
+          let tmp3Result = tmp3(tmp4[5]);
+          let sum = tmp5;
+          if (tmp3Result.isArray(tmp5)) {
+            sum = tmp5[arg1 + 1];
           }
-          if (outer1_0(outer1_2[6]).CutoutShape.Circle === closure_0) {
-            obj = { shape: closure_0 };
-            if (null == result) {
+          if (tmp3(tmp4[6]).CutoutShape.Circle === closure_0) {
+            obj = { shape: null, x: null, y: null, size: null };
+            obj[0] = tmp10;
+            if (null == noop) {
               let result = -closure_2;
             } else {
-              result = tmp6 * (1 - result);
+              result = tmp6 * (1 - tmp20);
             }
-            obj.x = result;
+            obj[1] = result;
             if (null == closure_4) {
               let result1 = -closure_2;
             } else {
-              result1 = tmp6 * (1 - closure_4);
+              result1 = tmp6 * (1 - tmp24);
             }
-            obj.y = result1;
-            obj.size = tmp13 + 2 * closure_2;
-          } else if (outer1_0(outer1_2[6]).CutoutShape.RoundedRect === tmp14) {
-            obj = { shape: closure_0 };
-            if (null == result) {
+            obj[2] = result1;
+            sum = sum + 2 * closure_2;
+            obj[3] = sum;
+          } else if (tmp3(tmp4[6]).CutoutShape.RoundedRect === tmp10) {
+            obj = { shape: null, x: null, y: null, width: null, height: null, cornerRadius: null };
+            obj[0] = tmp10;
+            if (null == noop) {
               let result2 = -closure_2;
             } else {
-              result2 = tmp6 * (1 - result);
+              result2 = tmp6 * (1 - tmp12);
             }
-            obj.x = result2;
+            obj[1] = result2;
             if (null == closure_4) {
               let result3 = -closure_2;
             } else {
-              result3 = tmp6 * (1 - closure_4);
+              result3 = tmp6 * (1 - tmp16);
             }
-            obj.y = result3;
-            obj.width = tmp13 + 2 * closure_2;
-            obj.height = tmp13 + 2 * closure_2;
-            obj.cornerRadius = tmp13 / 3 + closure_2;
+            obj[2] = result3;
+            obj[3] = sum + 2 * closure_2;
+            obj[4] = sum + 2 * closure_2;
+            obj[5] = sum / 3 + closure_2;
             tmp8 = obj;
           } else {
-            let obj2 = outer1_0(outer1_2[4]);
-            obj2.assertNever(closure_0);
+            tmp3Result = tmp3(tmp4[4]);
+            tmp3Result.assertNever(tmp10);
           }
-          tmp14 = closure_0;
         }
-        let num9 = 0;
-        let num10 = 0;
+        let num6 = 0;
+        let num7 = 0;
         if (arg1 > 0) {
-          let obj5 = outer1_0(outer1_2[5]);
-          if (obj5.isArray(size)) {
-            let tmp48 = tmp47[arg1 - 1];
-          } else {
-            tmp48 = tmp47;
+          let tmp29 = tmp5;
+          if (tmp3Result1.isArray(tmp5)) {
+            tmp29 = tmp5[arg1 - 1];
           }
-          if (null == result) {
-            let sum = -tmp48;
+          if (null == noop) {
+            let sum1 = -tmp29;
           } else {
-            sum = -tmp48 * result + closure_2;
+            sum1 = -tmp29 * tmp30 + closure_2;
           }
-          let num11 = 0;
+          let num8 = 0;
           if (null != closure_4) {
-            num11 = arg1 * (tmp48 - tmp48 * closure_4 + closure_2);
+            num8 = arg1 * (tmp29 - tmp29 * closure_4 + closure_2);
           }
-          num10 = num11;
-          num9 = sum;
+          num6 = num8;
+          num7 = sum1;
+          tmp3Result1 = tmp3(tmp4[5]);
         }
-        obj1 = {};
-        obj2 = { height: tmp6, marginLeft: num9, marginTop: num10 };
-        const items = [obj2, ];
+        const obj1 = { height: null, marginLeft: null, marginTop: null };
+        obj1[0] = tmp6;
+        obj1[1] = num7;
+        obj1[2] = num6;
+        const items = [obj1, ];
         if (type.type === outer1_0(outer1_2[7]).PileOverflow) {
-          const obj3 = { minWidth: tmp6 };
-          let obj4 = obj3;
+          const obj2 = { minWidth: null };
+          obj2[0] = tmp6;
+          let obj3 = obj2;
         } else {
-          obj4 = { width: tmp6 };
+          obj3 = { width: null };
+          obj3[0] = tmp6;
         }
-        items[1] = obj4;
-        obj1.style = items;
-        let tmp62 = type;
+        const obj4 = { style: null, children: null };
+        items[1] = obj3;
+        obj4[0] = items;
+        let tmp35Result = type;
         if (null != tmp8) {
-          obj5 = {};
+          const obj5 = { cutouts: null, children: null };
           const items1 = [tmp8];
-          obj5.cutouts = items1;
-          obj5.children = type;
-          tmp62 = length(size(outer1_2[6]), obj5);
+          obj5[0] = items1;
+          obj5[1] = type;
+          tmp35Result = tmp35(size(tmp4[6]), obj5);
         }
-        obj1.children = tmp62;
-        return length(outer1_4, obj1, arg1);
+        obj4[1] = tmp35Result;
+        return length(outer1_4, obj4, arg1);
       } else {
         return null;
       }
     })
   };
-  Children = React.Children;
+  Children = tmp2.Children;
   return length(View, obj);
 };

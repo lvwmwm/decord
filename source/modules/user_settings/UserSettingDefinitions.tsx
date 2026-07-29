@@ -1,34 +1,23 @@
-// Module ID: 3842
-// Function ID: 31498
-// Name: makeUpdateSettingFunction
-// Dependencies: [1279, 1316, 662, 1331, 566, 686, 2]
+// Module ID: 3866
+// Function ID: 3867
+// Name: defineProtoSetting
+// Dependencies: [1303, 1340, 685, 1355, 589, 709, 2]
 // Exports: defineProtoSetting, wrapSettingWithExperimentDefaults, wrapSettingWithOverride, wrapSettingWithSelectiveSyncing
 
-// Module 3842 (makeUpdateSettingFunction)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_4 from "_isNativeReflectConstruct";
+// Module 3866 (defineProtoSetting)
+import initialize from "initialize";
+import handleConnectionClosedOrResumed from "handleConnectionClosedOrResumed";
 import { UserSettingsDelay } from "MAX_FAVORITES";
 
 const require = arg1;
-function makeUpdateSettingFunction(getSetting, arg1) {
-  let closure_0 = getSetting;
-  let closure_1 = arg1;
-  return (arg0) => {
-    let tmp2 = arg0;
-    if ("function" === typeof arg0) {
-      tmp2 = arg0(getSetting());
-    }
-    return closure_1(tmp2);
-  };
-}
 const result = require("MAX_FAVORITES").fileFinishedImporting("modules/user_settings/UserSettingDefinitions.tsx");
 
 export const defineProtoSetting = function defineProtoSetting(textAndImages, activityRestrictedGuildIds, explicitContentFromProto, explicitContentToProto, set) {
-  let obj = set;
-  let closure_0 = textAndImages;
-  let closure_1 = activityRestrictedGuildIds;
+  let getSetting = textAndImages;
+  let f73152 = activityRestrictedGuildIds;
   let closure_2 = explicitContentFromProto;
-  let _isNativeReflectConstruct = explicitContentToProto;
+  let initialize = explicitContentToProto;
+  let obj = set;
   if (set === undefined) {
     obj = {};
   }
@@ -38,136 +27,157 @@ export const defineProtoSetting = function defineProtoSetting(textAndImages, act
   }
   fn = obj.comparator;
   if (fn === undefined) {
-    fn = function o(arg0, arg1) {
+    fn = function l(arg0, arg1) {
       return arg0 === arg1;
     };
   }
-  function getSetting(getSetting, arg1) {
+  getSetting = function getSetting() {
     let tmp3;
-    if (null != INFREQUENT_USER_ACTION.settings[closure_0]) {
-      tmp3 = tmp2[closure_1];
+    if (INFREQUENT_USER_ACTION.settings[getSetting] != null) {
+      tmp3 = tmp2[f73152];
     }
     return closure_2(tmp3);
-  }
+  };
   obj = {
     getSetting,
-    updateSetting: getSetting(getSetting, (favorites) => {
-      const textAndImages = favorites;
-      const PreloadedUserSettingsActionCreators = textAndImages(explicitContentFromProto[3]).PreloadedUserSettingsActionCreators;
-      return PreloadedUserSettingsActionCreators.updateAsync(textAndImages, (arg0) => {
-        arg0[outer1_1] = outer1_3(closure_0, arg0[outer1_1]);
-      }, INFREQUENT_USER_ACTION);
-    }),
+    updateSetting: (arg0) => {
+      let tmp2 = arg0;
+      if (typeof arg0 !== "_") {
+        tmp2 = arg0(getSetting());
+      }
+      return f73159(tmp2);
+    },
     useSetting() {
       const items = [INFREQUENT_USER_ACTION];
-      return textAndImages(explicitContentFromProto[4]).useStateFromStores(items, getSetting, undefined, fn);
+      return getSetting(explicitContentFromProto[4]).useStateFromStores(items, getSetting, undefined, fn);
     }
+  };
+  f73152 = (favorites) => {
+    let closure_0 = favorites;
+    const PreloadedUserSettingsActionCreators = getSetting(explicitContentFromProto[3]).PreloadedUserSettingsActionCreators;
+    return PreloadedUserSettingsActionCreators.updateAsync(closure_0, (arg0) => {
+      arg0[outer1_1] = outer1_3(closure_0, arg0[outer1_1]);
+    }, INFREQUENT_USER_ACTION);
   };
   return obj;
 };
-export const wrapSettingWithSelectiveSyncing = function wrapSettingWithSelectiveSyncing(makeUpdateSettingFunction, text, animateEmoji) {
-  let closure_0 = makeUpdateSettingFunction;
-  let closure_1 = text;
+export function wrapSettingWithSelectiveSyncing(defineProtoSetting, text, animateEmoji) {
+  let getSetting = defineProtoSetting;
+  let f73156 = text;
   let closure_2 = animateEmoji;
-  function getSetting() {
-    const tmp = outer1_3.getState()[closure_1];
+  getSetting = function getSetting() {
+    const tmp = outer1_3.getState()[f73156];
     let setting;
-    if (null != tmp) {
+    if (tmp != null) {
       setting = tmp.settings[closure_2];
     }
-    if (null == setting) {
-      setting = makeUpdateSettingFunction.getSetting();
+    if (setting == null) {
+      setting = getSetting.getSetting();
     }
     return setting;
-  }
+  };
+  f73156 = (arg0) => {
+    if (outer1_3.shouldSync(f73156)) {
+      let updateSettingResult = getSetting.updateSetting(arg0);
+    } else {
+      let obj = f73156(animateEmoji[5]);
+      obj = { type: "SELECTIVELY_SYNCED_USER_SETTINGS_UPDATE", changes: null };
+      obj = {};
+      const obj1 = { settings: null };
+      const obj2 = {};
+      obj2[animateEmoji] = arg0;
+      obj1[0] = obj2;
+      obj[f73156] = obj1;
+      obj[1] = obj;
+      obj.dispatch(obj);
+      updateSettingResult = Promise.resolve();
+    }
+    return updateSettingResult;
+  };
   return {
     getSetting,
     useSetting() {
-      let setting = makeUpdateSettingFunction.useSetting();
+      const setting = getSetting.useSetting();
       const items = [outer1_3];
-      const stateFromStores = makeUpdateSettingFunction(animateEmoji[4]).useStateFromStores(items, () => {
-        const tmp = outer2_3.getState()[outer1_1];
+      let stateFromStores = getSetting(animateEmoji[4]).useStateFromStores(items, () => {
+        const tmp = outer1_3.getState()[closure_1];
         let tmp2;
-        if (null != tmp) {
-          tmp2 = tmp.settings[outer1_2];
+        if (tmp != null) {
+          tmp2 = tmp.settings[closure_2];
         }
         return tmp2;
       });
-      if (null != stateFromStores) {
-        setting = stateFromStores;
+      if (stateFromStores == null) {
+        stateFromStores = setting;
       }
-      return setting;
+      return stateFromStores;
     },
-    updateSetting: makeUpdateSettingFunction(getSetting, (addFlagResult) => {
-      if (outer1_3.shouldSync(text)) {
-        let updateSettingResult = makeUpdateSettingFunction.updateSetting(addFlagResult);
-      } else {
-        let obj = text(animateEmoji[5]);
-        obj = { type: "SELECTIVELY_SYNCED_USER_SETTINGS_UPDATE" };
-        obj = {};
-        const obj1 = {};
-        const obj2 = {};
-        obj2[animateEmoji] = addFlagResult;
-        obj1.settings = obj2;
-        obj[text] = obj1;
-        obj.changes = obj;
-        obj.dispatch(obj);
-        updateSettingResult = Promise.resolve();
+    updateSetting: (arg0) => {
+      let tmp2 = arg0;
+      if (typeof arg0 !== "_") {
+        tmp2 = arg0(getSetting());
       }
-      return updateSettingResult;
-    })
+      return f73159(tmp2);
+    }
   };
-};
-export const wrapSettingWithOverride = function wrapSettingWithOverride(makeUpdateSettingFunction, animateEmoji, arg2, arg3) {
-  let closure_0 = makeUpdateSettingFunction;
-  let closure_1 = animateEmoji;
+}
+export function wrapSettingWithOverride(defineProtoSetting, animateEmoji, arg2, arg3) {
+  let getSetting = defineProtoSetting;
+  let f73159 = animateEmoji;
   let closure_2 = arg2;
-  let _isNativeReflectConstruct = arg3;
-  function getSetting() {
+  let initialize = arg3;
+  getSetting = function getSetting() {
     let setting = dependencyMap();
-    if (null == setting) {
-      setting = makeUpdateSettingFunction.getSetting();
+    if (setting == null) {
+      setting = getSetting.getSetting();
     }
     return setting;
-  }
+  };
+  f73159 = (arg0) => {
+    const items = [f73159];
+    f73159(709).dispatch({ type: "USER_SETTINGS_OVERRIDE_CLEAR", settings: items });
+    return getSetting.updateSetting(arg0);
+  };
   return {
     getSetting,
     useSetting() {
-      let setting = makeUpdateSettingFunction.useSetting();
-      const tmp2 = callback();
-      if (null != tmp2) {
-        setting = tmp2;
+      const setting = getSetting.useSetting();
+      let tmp2 = callback();
+      if (tmp2 == null) {
+        tmp2 = setting;
       }
-      return setting;
+      return tmp2;
     },
-    updateSetting: makeUpdateSettingFunction(getSetting, (addFlagResult) => {
-      const items = [animateEmoji];
-      animateEmoji(686).dispatch({ type: "USER_SETTINGS_OVERRIDE_CLEAR", settings: items });
-      return makeUpdateSettingFunction.updateSetting(addFlagResult);
-    })
+    updateSetting: (arg0) => {
+      let tmp2 = arg0;
+      if (typeof arg0 !== "_") {
+        tmp2 = arg0(getSetting());
+      }
+      return f73159(tmp2);
+    }
   };
-};
+}
 export const wrapSettingWithExperimentDefaults = function wrapSettingWithExperimentDefaults(set) {
   let UserSettingsDelay;
-  let _isNativeReflectConstruct;
-  let closure_4;
+  let initialize;
+  let handleConnectionClosedOrResumed;
   let dependencyMap;
   let importDefault;
   let require;
-  ({ baseSetting: require, isEligible: importDefault, useIsEligible: dependencyMap, eligibleDefault: _isNativeReflectConstruct, ineligibleDefault: closure_4, onUseDefault: UserSettingsDelay } = set);
+  ({ baseSetting: require, isEligible: importDefault, useIsEligible: dependencyMap, eligibleDefault: initialize, ineligibleDefault: handleConnectionClosedOrResumed, onUseDefault: UserSettingsDelay } = set);
   return {
     getSetting() {
       const setting = closure_0.getSetting();
       if (null != setting) {
         return setting;
       } else {
-        if (null != callback3) {
-          callback3();
+        if (closure_5 != null) {
+          tmp2();
         }
         if (callback()) {
-          let tmp6 = callback2();
+          let tmp5 = callback2();
         } else {
-          tmp6 = closure_4;
+          tmp5 = handleConnectionClosedOrResumed;
         }
       }
     },
@@ -176,18 +186,18 @@ export const wrapSettingWithExperimentDefaults = function wrapSettingWithExperim
       if (null != setting) {
         return setting;
       } else {
-        if (null != callback3) {
+        if (callback3 != null) {
           callback3();
         }
         if (tmp2) {
-          let tmp6 = callback2();
+          let tmp4 = callback2();
         } else {
-          tmp6 = closure_4;
+          tmp4 = handleConnectionClosedOrResumed;
         }
       }
     },
-    updateSetting(addFlagResult, NotificationLabel) {
-      return closure_0.updateSetting(addFlagResult);
+    updateSetting(arg0) {
+      return closure_0.updateSetting(arg0);
     }
   };
 };

@@ -1,32 +1,35 @@
-// Module ID: 4579
-// Function ID: 39975
+// Module ID: 4601
+// Function ID: 4602
 // Name: CollapsingText
-// Dependencies: [57, 31, 27, 33, 4165, 689, 4026, 4580, 4577, 4581, 4582, 4583, 1324, 4161, 3884, 4134, 4585, 3871, 4587, 2]
+// Dependencies: [32, 19, 17, 21, 4189, 712, 4050, 4602, 4599, 4603, 4604, 4605, 1348, 4185, 3908, 4158, 4607, 3895, 4609, 2]
 
-// Module 4579 (CollapsingText)
+// Module 4601 (CollapsingText)
 import _slicedToArray from "_slicedToArray";
-import importAllResult from "result";
-import get_ActivityIndicator from "get ActivityIndicator";
+import importAllResult from "set";
+import get_ActivityIndicator from "getNodeText";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import getIconSize from "getIconSize";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import importDefaultResult from "module_4026";
+import createCacheKey from "createCacheKey";
+import createCacheKey from "createCacheKey";
+import createCacheKey from "createCacheKey";
+import IconSizes from "IconSizes";
+import createCacheKey from "createCacheKey";
+import { LARGE_BUTTON_HEIGHT } from "MINIMUM_HIT_AREA";
+import { LARGE_BUTTON_HEIGHT as LARGE_BUTTON_HEIGHT2 } from "MINIMUM_HIT_AREA";
+import importDefaultResult from "module_4050";
 
 let Platform;
-let closure_5;
+let c5;
 let closure_6;
-let closure_7;
-let closure_8;
+let error;
+let metroImportAll;
 const require = arg1;
 function CollapsingText(children) {
   const collapseText = children.collapseText;
-  let obj = sharedValue(4026);
+  let sharedValue;
+  let obj = sharedValue(textCollapsed[6]);
   sharedValue = obj.useSharedValue(0);
   const tmp = callback3();
-  let fn = function o(nativeEvent) {
+  const fn = function o(nativeEvent) {
     if (0 === sharedValue.get()) {
       const result = sharedValue.set(nativeEvent.nativeEvent.layout.width);
     }
@@ -35,73 +38,56 @@ function CollapsingText(children) {
   fn.__workletHash = 5541458715155;
   fn.__initData = closure_14;
   const items = [sharedValue];
-  const obj2 = sharedValue(4026);
-  const workletCallback = sharedValue(4026).useWorkletCallback(fn, items);
-  const tmp4 = (function useCollapsingTextContainerStyles(sharedValue, collapseText) {
-    let closure_0 = sharedValue;
-    let closure_1 = collapseText;
-    let obj = sharedValue(outer1_2[6]);
-    const fn = function o() {
-      if (0 === sharedValue.get()) {
-        let obj = {};
-      } else {
-        obj = {};
-        let num3 = 1;
-        let num = 0;
-        if (1 !== store.get()) {
-          num = sharedValue.get();
-        }
-        obj.width = sharedValue(outer2_2[8]).withSpring(num, sharedValue(outer2_2[9]).SUBTLE_SPRING, "animate-always");
-        obj = sharedValue(outer2_2[8]);
-        if (num3 === store.get()) {
-          num3 = 0;
-        }
-        obj.opacity = obj.withSpring(num3, sharedValue(outer2_2[9]).SUBTLE_SPRING, "animate-always");
-        const obj3 = sharedValue(outer2_2[8]);
+  const obj2 = sharedValue(textCollapsed[6]);
+  const workletCallback = sharedValue(textCollapsed[6]).useWorkletCallback(fn, items);
+  const fn2 = function o() {
+    let obj = sharedValue;
+    if (0 === sharedValue.get()) {
+      obj = {};
+    } else {
+      let num2 = 1;
+      let num = 0;
+      if (1 !== collapseText.get()) {
+        num = obj.get();
       }
-      return obj;
-    };
-    obj = { containerWidth: sharedValue, withSpring: sharedValue(outer1_2[8]).withSpring, collapsed: collapseText, SUBTLE_SPRING: sharedValue(outer1_2[9]).SUBTLE_SPRING };
-    fn.__closure = obj;
-    fn.__workletHash = 493185281611;
-    fn.__initData = outer1_15;
-    return obj.useAnimatedStyle(fn);
-  })(sharedValue, collapseText);
-  obj = { style: items1, onLayout: workletCallback };
-  items1 = [tmp.container, tmp4];
-  obj.children = callback(importDefault(4026).View, {
-    style: (function useCollapsingTextStyles(sharedValue, collapseText) {
-      let closure_0 = sharedValue;
-      let closure_1 = collapseText;
-      const textCollapsed = outer1_10().textCollapsed;
-      const fn = function s() {
-        if (0 === collapseText.get()) {
-          let obj = {};
-        } else {
-          obj = {};
-          const merged = Object.assign(textCollapsed);
-          obj["width"] = sharedValue.get();
-        }
-        return obj;
-      };
-      fn.__closure = { collapsed: collapseText, textCollapsed, containerWidth: sharedValue };
-      fn.__workletHash = 5824483783888;
-      fn.__initData = outer1_16;
-      return sharedValue(outer1_2[6]).useAnimatedStyle(fn);
-    })(sharedValue, collapseText),
-    children: children.children
-  });
-  return callback(importDefault(4026).View, obj);
-}
-function getHitSlop(lg) {
-  let MEDIUM_BUTTON_HEIGHT = require(4582) /* getButtonPadding */.LARGE_BUTTON_HEIGHT;
-  if ("sm" === lg) {
-    MEDIUM_BUTTON_HEIGHT = require(4582) /* getButtonPadding */.SMALL_BUTTON_HEIGHT;
-  } else if ("md" === lg) {
-    MEDIUM_BUTTON_HEIGHT = require(4582) /* getButtonPadding */.MEDIUM_BUTTON_HEIGHT;
-  }
-  const top = Math.max((require(4582) /* getButtonPadding */.MINIMUM_HIT_AREA - MEDIUM_BUTTON_HEIGHT) / 2, 0);
-  return { top, left: undefined, right: undefined, bottom: top };
+      obj = { width: null, opacity: null };
+      obj[0] = sharedValue(textCollapsed[8]).withSpring(num, sharedValue(textCollapsed[9]).SUBTLE_SPRING, "animate-always");
+      const obj4 = sharedValue(textCollapsed[8]);
+      const obj5 = collapseText;
+      if (num2 === obj5.get()) {
+        num2 = 0;
+      }
+      obj[1] = sharedValue(textCollapsed[8]).withSpring(num2, sharedValue(textCollapsed[9]).SUBTLE_SPRING, "animate-always");
+      const tmpResult = sharedValue(textCollapsed[8]);
+    }
+    return obj;
+  };
+  obj = { containerWidth: sharedValue, withSpring: sharedValue(textCollapsed[8]).withSpring, collapsed: collapseText, SUBTLE_SPRING: sharedValue(textCollapsed[9]).SUBTLE_SPRING };
+  fn2.__closure = obj;
+  fn2.__workletHash = 493185281611;
+  fn2.__initData = closure_16;
+  textCollapsed = undefined;
+  const animatedStyle = sharedValue(textCollapsed[6]).useAnimatedStyle(fn2);
+  textCollapsed = callback3().textCollapsed;
+  const obj3 = sharedValue(textCollapsed[6]);
+  const fn3 = function s() {
+    if (0 === collapseText.get()) {
+      let obj = {};
+    } else {
+      obj = {};
+      const merged = Object.assign(textCollapsed);
+      obj.width = sharedValue.get();
+    }
+    return obj;
+  };
+  fn3.__closure = { collapsed: collapseText, textCollapsed, containerWidth: sharedValue };
+  fn3.__workletHash = 5824483783888;
+  fn3.__initData = closure_17;
+  const animatedStyle1 = sharedValue(textCollapsed[6]).useAnimatedStyle(fn3);
+  obj = { style: items1, onLayout: workletCallback, children: null };
+  items1 = [tmp.container, animatedStyle];
+  obj[2] = callback(collapseText(textCollapsed[6]).View, { style: animatedStyle1, children: children.children });
+  return callback(collapseText(textCollapsed[6]).View, obj);
 }
 function BaseTextButtonIcon(arg0) {
   let icon;
@@ -110,85 +96,84 @@ function BaseTextButtonIcon(arg0) {
   let size;
   let style;
   ({ icon, size, iconPosition, iconOpticalOffsetMargin, style } = arg0);
-  let obj = require(4583) /* useProfileThemedButtonStyles */;
+  let obj = require(4605) /* styleProperties */;
   const iconSizeStyles = obj.useIconSizeStyles(size);
-  obj = { source: icon };
+  obj = { source: icon, style: null };
   const items = [style, iconSizeStyles, callback5(iconPosition, iconOpticalOffsetMargin).offset];
-  obj.style = items;
-  return callback(getIconSize, obj);
+  obj[1] = items;
+  return callback(IconSizes, obj);
 }
-({ Platform, Text: closure_5, View: closure_6 } = get_ActivityIndicator);
-({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-let closure_9 = _createForOfIteratorHelperLoose.createStyles((arg0, sm) => {
-  let obj = { grow: { flexGrow: 1, alignSelf: "stretch" }, shrink: { flexShrink: 1 } };
-  obj = { flexShrink: 1, flexGrow: 0, lineHeight: getTextPlatformLineHeight(sm, arg0) };
-  obj.buttonText = obj;
-  obj.icon = { flexShrink: 0, flexGrow: 0 };
-  obj.iconLeft = { paddingLeft: 4 };
-  obj.iconRight = { paddingRight: 4 };
-  obj.expressiveButtonContainer = { position: "relative" };
+let c4 = importAllResult;
+({ Platform, Text: c5, View: closure_6 } = get_ActivityIndicator);
+({ jsx: error, jsxs: metroImportAll } = jsxProd);
+let closure_9 = createCacheKey.createStyles((arg0, arg1) => {
+  let obj = { grow: { flexGrow: 1, alignSelf: "stretch" }, shrink: { flexShrink: 1 }, buttonText: null, icon: null, iconLeft: null, iconRight: null, expressiveButtonContainer: null };
+  if (typeof getTextPlatformLineHeight !== "find") {
+    HermesBuiltin.throwTypeError();
+  }
+  let tmp;
+  if (null != arg1) {
+    obj = { sm: null, md: null, lg: null };
+    obj[0] = arg1;
+    obj[1] = arg1 + 0.5;
+    obj[2] = arg1 + 1.9;
+    tmp = obj[arg0];
+  }
+  obj[2] = { flexShrink: 1, flexGrow: 0, lineHeight: tmp };
+  obj[3] = { flexShrink: 0, flexGrow: 0 };
+  obj[4] = { paddingLeft: 4 };
+  obj[5] = { paddingRight: 4 };
+  obj[6] = { position: "relative" };
   return obj;
 });
-let closure_10 = _createForOfIteratorHelperLoose.createStyles({ container: { flexDirection: "row", alignItems: "center", position: "relative" }, textCollapsed: { position: "absolute", left: 0 } });
-let obj = {};
-obj = { borderWidth: 1, borderRadius: require("_createForOfIteratorHelperLoose").radii.round, borderColor: require("_createForOfIteratorHelperLoose").colors.BORDER_SUBTLE, overflow: "hidden" };
-obj.entityWrapper = obj;
-let closure_11 = _createForOfIteratorHelperLoose.createStyles(obj);
+let closure_10 = createCacheKey.createStyles({ container: { flexDirection: "row", alignItems: "center", position: "relative" }, textCollapsed: { position: "absolute", left: 0 } });
+let obj = { entityWrapper: null };
+obj = { borderWidth: 1, borderRadius: require("Themes").radii.round, borderColor: require("Themes").colors.BORDER_SUBTLE, overflow: "hidden" };
+obj[0] = obj;
+let closure_11 = createCacheKey.createStyles(obj);
 let context = importAllResult.createContext("md");
 let closure_14 = { code: "function BaseTextButtonNativeTsx1({nativeEvent:nativeEvent}){const{containerWidth}=this.__closure;if(containerWidth.get()!==0)return;const{width:width}=nativeEvent.layout;containerWidth.set(width);}" };
-let closure_15 = { code: "function BaseTextButtonNativeTsx2(){const{containerWidth,withSpring,collapsed,SUBTLE_SPRING}=this.__closure;if(containerWidth.get()===0)return{};return{width:withSpring(collapsed.get()===1?0:containerWidth.get(),SUBTLE_SPRING,'animate-always'),opacity:withSpring(collapsed.get()===1?0:1,SUBTLE_SPRING,'animate-always')};}" };
-let closure_16 = { code: "function BaseTextButtonNativeTsx3(){const{collapsed,textCollapsed,containerWidth}=this.__closure;if(collapsed.get()===0)return{};return{...textCollapsed,width:containerWidth.get()};}" };
-let closure_17 = _createForOfIteratorHelperLoose.createStyles((arg0, marginLeft) => {
-  if (0 === marginLeft) {
-    let obj = { offset: {} };
+let closure_16 = { code: "function BaseTextButtonNativeTsx2(){const{containerWidth,withSpring,collapsed,SUBTLE_SPRING}=this.__closure;if(containerWidth.get()===0)return{};return{width:withSpring(collapsed.get()===1?0:containerWidth.get(),SUBTLE_SPRING,'animate-always'),opacity:withSpring(collapsed.get()===1?0:1,SUBTLE_SPRING,'animate-always')};}" };
+let closure_17 = { code: "function BaseTextButtonNativeTsx3(){const{collapsed,textCollapsed,containerWidth}=this.__closure;if(collapsed.get()===0)return{};return{...textCollapsed,width:containerWidth.get()};}" };
+let closure_18 = createCacheKey.createStyles((arg0, arg1) => {
+  if (0 === arg1) {
+    let obj = { offset: null };
+    obj[0] = {};
     return obj;
   } else if ("start" === arg0) {
-    obj = {};
-    const obj1 = { marginLeft };
-    obj.offset = obj1;
+    obj = { offset: null };
+    const obj1 = { marginLeft: null };
+    obj1[0] = arg1;
+    obj[0] = obj1;
     return obj;
   } else if ("end" === arg0) {
-    const obj2 = {};
-    const obj3 = { marginRight: marginLeft };
-    obj2.offset = obj3;
+    const obj2 = { offset: null };
+    const obj3 = { marginRight: null };
+    obj3[0] = arg1;
+    obj2[0] = obj3;
     return obj2;
   } else {
-    obj = { offset: {} };
+    obj = { offset: null };
+    obj[0] = {};
     return obj;
   }
 });
-_createForOfIteratorHelperLoose = { sm: getHitSlop("sm"), md: getHitSlop("md"), lg: getHitSlop("lg") };
-function getTextPlatformLineHeight(sm, arg1) {
-  let tmp;
-  if (null != sm) {
-    const obj = { sm, md: sm + 0.5, lg: sm + 1.9 };
-    tmp = obj[arg1];
-  }
-  return tmp;
+createCacheKey = { sm: null, md: null, lg: null };
+const bound = Math.max((require("MINIMUM_HIT_AREA").MINIMUM_HIT_AREA - require("MINIMUM_HIT_AREA").SMALL_BUTTON_HEIGHT) / 2, 0);
+createCacheKey = { top: bound, left: "Array", right: "isArray", bottom: 50225408 };
+createCacheKey[3] = bound;
+createCacheKey[0] = createCacheKey;
+const bound1 = Math.max((require("MINIMUM_HIT_AREA").MINIMUM_HIT_AREA - require("MINIMUM_HIT_AREA").MEDIUM_BUTTON_HEIGHT) / 2, 0);
+createCacheKey = { top: bound1, left: "Array", right: "isArray", bottom: 50225408 };
+createCacheKey[3] = bound1;
+createCacheKey[1] = createCacheKey;
+const bound2 = Math.max((require("MINIMUM_HIT_AREA").MINIMUM_HIT_AREA - require("MINIMUM_HIT_AREA").LARGE_BUTTON_HEIGHT) / 2, 0);
+let obj4 = { top: bound2, left: "Array", right: "isArray", bottom: 50225408 };
+obj4[3] = bound2;
+createCacheKey[2] = obj4;
+function getTextPlatformLineHeight(arg0, arg1) {
+
 }
-_createForOfIteratorHelperLoose = {
-  Icon: function TextButtonIcon(source) {
-    let str = source.variant;
-    if (str === undefined) {
-      str = "icon";
-    }
-    let flag = source.disableColor;
-    if (flag === undefined) {
-      flag = true;
-    }
-    const context = importAllResult.useContext(closure_13);
-    let obj = require(4583) /* useProfileThemedButtonStyles */;
-    obj = { source: source.source, disableColor: flag };
-    obj.style = obj.useIconSizeStyles(context);
-    const tmp3 = callback(getIconSize, obj);
-    let tmp4 = tmp3;
-    if ("entity" === str) {
-      obj = { style: tmp2.entityWrapper, children: tmp3 };
-      tmp4 = callback(closure_6, obj);
-    }
-    return tmp4;
-  }
-};
 let merged = Object.assign({}, importAllResult.forwardRef((iconOpticalOffsetMargin, ref) => {
   let accessibilityLabel;
   let accessibilityRole;
@@ -212,9 +197,9 @@ let merged = Object.assign({}, importAllResult.forwardRef((iconOpticalOffsetMarg
     str = iconPosition;
   }
   iconOpticalOffsetMargin = iconOpticalOffsetMargin.iconOpticalOffsetMargin;
-  let num2 = 0;
+  let num = 0;
   if (undefined !== iconOpticalOffsetMargin) {
-    num2 = iconOpticalOffsetMargin;
+    num = iconOpticalOffsetMargin;
   }
   const grow = iconOpticalOffsetMargin.grow;
   let grow2 = undefined !== grow && grow;
@@ -233,181 +218,235 @@ let merged = Object.assign({}, importAllResult.forwardRef((iconOpticalOffsetMarg
   onPressIn = iconOpticalOffsetMargin.onPressIn;
   const onPressOut = iconOpticalOffsetMargin.onPressOut;
   onLayout = iconOpticalOffsetMargin.onLayout;
-  let tmp6 = onPressOut(onLayout[12])("BaseTextButton");
+  let tmp7 = onPressOut(onLayout[12])("BaseTextButton");
   if (null != iconOpticalOffsetMargin.textVariant) {
     let textVariant = iconOpticalOffsetMargin.textVariant;
   } else {
-    let obj = onPressIn(onLayout[10]);
+    let obj = onPressIn(tmp6[10]);
     textVariant = obj.getButtonDefaultTextVariant(size);
   }
-  const tmp9 = onPressIn(onLayout[13]).TextStyleSheet[textVariant];
-  const tmp10 = callback2(size, tmp9.fontSize);
-  const enabled = startsWithResult.useContext(onPressIn(onLayout[14]).AccessibilityPreferencesContext).reducedMotion.enabled;
-  const variant = iconOpticalOffsetMargin.variant;
-  let str3 = "primary";
-  if (null != variant) {
-    str3 = variant;
+  const tmp10 = onPressIn(onLayout[13]).TextStyleSheet[textVariant];
+  const tmp11 = callback2(size, tmp10.fontSize);
+  let obj1 = importAllResult;
+  const enabled = importAllResult.useContext(onPressIn(tmp6[14]).AccessibilityPreferencesContext).reducedMotion.enabled;
+  let str3 = iconOpticalOffsetMargin.variant;
+  if (str3 == null) {
+    str3 = "primary";
   }
-  if (tmp6) {
-    tmp6 = "tertiary" === str3;
+  if (tmp7) {
+    tmp7 = "tertiary" === str3;
   }
-  if (tmp6) {
+  if (tmp7) {
     str3 = "secondary";
   }
-  let obj1 = onPressIn(onLayout[6]);
-  const sharedValue = obj1.useSharedValue(0);
-  startsWithResult = str3.startsWith("expressive");
-  ref = startsWithResult.useRef(null);
-  let closure_6 = startsWithResult.useRef({ width: 0, height: 0 });
-  const tmp14 = enabled(startsWithResult.useState({ pressed: false, posx: 0, posy: 0 }), 2);
-  let callback = tmp14[1];
+  let tmp9Result = tmp9(tmp6[6]);
+  const sharedValue = tmp9Result.useSharedValue(0);
+  const startsWithResult = str3.startsWith("expressive");
+  ref = obj1.useRef(null);
+  let closure_6 = obj1.useRef({ width: 0, height: 0 });
+  const tmp15 = enabled(obj1.useState({ pressed: false, posx: 0, posy: 0 }), 2);
+  let callback = tmp15[1];
   const items = [onLayout, startsWithResult];
   const items1 = [startsWithResult, onPressIn, enabled];
-  callback = startsWithResult.useCallback((nativeEvent) => {
-    if (null != onLayout) {
-      onLayout(nativeEvent);
+  callback = obj1.useCallback((nativeEvent) => {
+    if (onLayout != null) {
+      tmp(nativeEvent);
     }
     if (closure_4) {
-      const obj = {};
-      ({ width: obj.width, height: obj.height } = nativeEvent.nativeEvent.layout);
+      const obj = { width: null, height: null };
+      ({ width: obj[0], height: obj[1] } = nativeEvent.nativeEvent.layout);
       closure_6.current = obj;
     }
   }, items);
   const items2 = [startsWithResult, onPressOut];
-  const callback1 = startsWithResult.useCallback((nativeEvent) => {
-    let result = null;
-    if (null != onPressIn) {
-      onPressIn(nativeEvent);
+  const callback1 = obj1.useCallback((nativeEvent) => {
+    if (onPressIn != null) {
+      tmp(nativeEvent);
     }
     if (closure_4) {
       if (enabled) {
         const current2 = ref.current;
-        if (result != current2) {
+        if (current2 != tmp2) {
           current2.play();
         }
       } else {
         nativeEvent = nativeEvent.nativeEvent;
         const current = ref.current;
-        const obj = { pressed: true, posx: nativeEvent.locationX - current.width / 2, posy: nativeEvent.locationY - current.height / 2 };
+        const obj = { pressed: true, posx: null, posy: null };
+        obj[1] = nativeEvent.locationX - current.width / 2;
+        obj[2] = nativeEvent.locationY - current.height / 2;
         callback(obj);
       }
-      result = onPressIn(onLayout[15]).triggerHapticFeedback(onPressIn(onLayout[15]).HapticFeedbackTypes.IMPACT_HEAVY);
+      const result = onPressIn(onLayout[15]).triggerHapticFeedback(onPressIn(onLayout[15]).HapticFeedbackTypes.IMPACT_HEAVY);
       const obj2 = onPressIn(onLayout[15]);
     }
   }, items1);
-  callback2 = startsWithResult.useCallback((arg0) => {
-    if (null != onPressOut) {
-      onPressOut(arg0);
+  callback2 = obj1.useCallback((arg0) => {
+    if (onPressOut != null) {
+      tmp(arg0);
     }
     if (closure_4) {
       callback((arg0) => {
         const obj = {};
         const merged = Object.assign(arg0);
-        obj["pressed"] = false;
+        obj.pressed = false;
         return obj;
       });
       const result = onPressIn(onLayout[15]).triggerHapticFeedback(onPressIn(onLayout[15]).HapticFeedbackTypes.IMPACT_MEDIUM);
       let obj = onPressIn(onLayout[15]);
     }
   }, items2);
-  let obj2 = onPressIn(onLayout[11]);
-  const buttonTextColorStyles = obj2.useButtonTextColorStyles(str3);
+  tmp9Result = tmp9(tmp6[11]);
+  const buttonTextColorStyles = tmp9Result.useButtonTextColorStyles(str3);
   if (null == icon) {
     obj = {};
   } else {
-    obj = "start" === str ? tmp10.iconLeft : tmp10.iconRight;
+    obj = "start" === str ? tmp11.iconLeft : tmp11.iconRight;
   }
   if (null == icon) {
-    obj = { icon, size };
-    const items3 = [tmp10.icon, ];
-    obj1 = { tintColor: buttonTextColorStyles.color };
+    obj = { icon: null, size: null, style: null, iconOpticalOffsetMargin: null, iconPosition: null };
+    obj[0] = icon;
+    obj[1] = size;
+    const items3 = [tmp11.icon, ];
+    obj1 = { tintColor: null };
+    obj1[0] = buttonTextColorStyles.color;
     items3[1] = obj1;
-    obj.style = items3;
-    obj.iconOpticalOffsetMargin = num2;
-    obj.iconPosition = str;
+    obj[2] = items3;
+    obj[3] = num;
+    obj[4] = str;
     let tmp20 = callback(BaseTextButtonIcon, obj);
   } else {
     tmp20 = icon;
   }
   if (null == textElement) {
-    obj2 = { maxFontSizeMultiplier, numberOfLines: 1 };
-    const items4 = [tmp10.buttonText, tmp9, buttonTextColorStyles, obj];
-    obj2.style = items4;
-    obj2.children = text;
+    let obj2 = { maxFontSizeMultiplier: null, numberOfLines: 1, style: null, children: null };
+    obj2[0] = maxFontSizeMultiplier;
+    const items4 = [tmp11.buttonText, tmp10, buttonTextColorStyles, obj];
+    obj2[2] = items4;
+    obj2[3] = text;
     textElement = callback(ref, obj2);
   }
   const obj3 = { ref };
   let merged = Object.assign(iconOpticalOffsetMargin);
-  obj3["onPressIn"] = callback1;
-  obj3["onPressOut"] = callback2;
-  obj3["onLayout"] = callback;
+  obj3.onPressIn = callback1;
+  obj3.onPressOut = callback2;
+  obj3.onLayout = callback;
   if (grow2) {
-    grow2 = tmp10.grow;
+    grow2 = tmp11.grow;
   }
   const items5 = [grow2, , , ];
   if (shrink2) {
-    shrink2 = tmp10.shrink;
+    shrink2 = tmp11.shrink;
   }
   items5[1] = shrink2;
   items5[2] = style;
   let expressiveButtonContainer = startsWithResult;
   if (startsWithResult) {
-    expressiveButtonContainer = tmp10.expressiveButtonContainer;
+    expressiveButtonContainer = tmp11.expressiveButtonContainer;
   }
   items5[3] = expressiveButtonContainer;
-  obj3["style"] = items5;
+  obj3.style = items5;
   let str5 = "box-only";
   if (!startsWithResult) {
     str5 = iconOpticalOffsetMargin.pointerEvents;
   }
-  obj3["pointerEvents"] = str5;
-  obj3["pressed"] = sharedValue;
-  obj3["accessibilityRole"] = str2;
-  if (null == accessibilityLabel) {
-    accessibilityLabel = onPressIn(onLayout[17]).getNodeText(text);
-    const obj9 = onPressIn(onLayout[17]);
+  obj3.pointerEvents = str5;
+  obj3.pressed = sharedValue;
+  obj3.accessibilityRole = str2;
+  if (accessibilityLabel == null) {
+    accessibilityLabel = tmp9(tmp6[17]).getNodeText(text);
+    const tmp9Result1 = tmp9(tmp6[17]);
   }
-  obj3["accessibilityLabel"] = accessibilityLabel;
-  obj3["hitSlop"] = _createForOfIteratorHelperLoose[size];
-  const obj4 = { variant: str3, size, loading: iconOpticalOffsetMargin.loading, pressed: sharedValue, style: pillStyle, shiny: undefined !== shiny && shiny };
-  let tmp30;
+  obj3.accessibilityLabel = accessibilityLabel;
+  obj3.hitSlop = createCacheKey[size];
+  const obj4 = { variant: str3, size, loading: iconOpticalOffsetMargin.loading, pressed: sharedValue, style: pillStyle, shiny: undefined !== shiny && shiny, expressiveRiveRef: null, expressivePressState: null, children: null };
+  let tmp27;
   if (startsWithResult) {
-    tmp30 = ref;
+    tmp27 = ref;
   }
-  obj4.expressiveRiveRef = tmp30;
+  obj4[6] = tmp27;
   let first;
   if (startsWithResult) {
-    first = tmp14[0];
+    first = tmp15[0];
   }
-  obj4.expressivePressState = first;
-  const obj5 = { value: size };
+  obj4[7] = first;
+  const obj5 = { value: size, children: null };
+  let tmp30 = null != icon;
+  if (tmp30) {
+    tmp30 = "start" === str;
+  }
+  if (tmp30) {
+    tmp30 = tmp20;
+  }
+  const items6 = [tmp30, , ];
+  let tmp25Result = textElement;
+  if (undefined !== collapseText) {
+    const obj6 = { collapseText: null, children: null };
+    obj6[0] = collapseText;
+    obj6[1] = textElement;
+    tmp25Result = tmp25(CollapsingText, obj6);
+  }
+  items6[1] = tmp25Result;
   let tmp33 = null != icon;
   if (tmp33) {
-    tmp33 = "start" === str;
+    tmp33 = "end" === str;
   }
   if (tmp33) {
     tmp33 = tmp20;
   }
-  const items6 = [tmp33, , ];
-  let tmp34 = textElement;
-  if (undefined !== collapseText) {
-    const obj6 = { collapseText, children: textElement };
-    tmp34 = callback(CollapsingText, obj6);
-  }
-  items6[1] = tmp34;
-  let tmp37 = null != icon;
-  if (tmp37) {
-    tmp37 = "end" === str;
-  }
-  if (tmp37) {
-    tmp37 = tmp20;
-  }
-  items6[2] = tmp37;
-  obj5.children = items6;
-  obj4.children = closure_8(redux.Provider, obj5);
-  obj3["children"] = callback(onPressIn(onLayout[18]).ButtonPill, obj4);
+  items6[2] = tmp33;
+  obj5[1] = items6;
+  obj4[8] = closure_8(redux.Provider, obj5);
+  obj3.children = callback(onPressIn(onLayout[18]).ButtonPill, obj4);
   return callback(onPressIn(onLayout[16]).BaseButton, obj3);
-}), _createForOfIteratorHelperLoose);
+}), {
+  Icon: function TextButtonIcon(source) {
+    let str = source.variant;
+    if (str === undefined) {
+      str = "icon";
+    }
+    let flag = source.disableColor;
+    if (flag === undefined) {
+      flag = true;
+    }
+    const context = importAllResult.useContext(closure_13);
+    let obj = require(4605) /* styleProperties */;
+    obj = { source: source.source, disableColor: flag, style: obj.useIconSizeStyles(context) };
+    const tmp4 = callback(IconSizes, obj);
+    let tmp3Result = tmp4;
+    if ("entity" === str) {
+      obj = { style: null, children: null };
+      obj[0] = tmp2.entityWrapper;
+      obj[1] = tmp4;
+      tmp3Result = callback(closure_6, obj);
+    }
+    return tmp3Result;
+  }
+});
+let obj5 = {
+  Icon: function TextButtonIcon(source) {
+    let str = source.variant;
+    if (str === undefined) {
+      str = "icon";
+    }
+    let flag = source.disableColor;
+    if (flag === undefined) {
+      flag = true;
+    }
+    const context = importAllResult.useContext(closure_13);
+    let obj = require(4605) /* styleProperties */;
+    obj = { source: source.source, disableColor: flag, style: obj.useIconSizeStyles(context) };
+    const tmp4 = callback(IconSizes, obj);
+    let tmp3Result = tmp4;
+    if ("entity" === str) {
+      obj = { style: null, children: null };
+      obj[0] = tmp2.entityWrapper;
+      obj[1] = tmp4;
+      tmp3Result = callback(closure_6, obj);
+    }
+    return tmp3Result;
+  }
+};
 let result = require("get ActivityIndicator").fileFinishedImporting("design/components/Button/native/BaseTextButton.native.tsx");
 
 export const BaseTextButton = merged;

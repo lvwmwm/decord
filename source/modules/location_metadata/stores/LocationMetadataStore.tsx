@@ -1,73 +1,33 @@
-// Module ID: 12746
-// Function ID: 98869
-// Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 3846, 566, 686, 2]
+// Module ID: 12768
+// Function ID: 12769
+// Name: handleSetLocationMetadata
+// Dependencies: [3870, 589, 709, 2]
 
-// Module 12746 (_isNativeReflectConstruct)
-import initialize from "initialize";
-import dispatcher from "dispatcher";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
-import getCountryCodeByCountryName from "getCountryCodeByCountryName";
+// Module 12768 (handleSetLocationMetadata)
+import DEFAULT_COUNTRY_CODE_NAME from "DEFAULT_COUNTRY_CODE_NAME";
+import { Store } from "initialize";
 
-let closure_5;
-let closure_6;
-function _isNativeReflectConstruct() {
-  let initialize = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return initialize;
-  }
-  const result = _isNativeReflectConstruct();
-}
+let c0;
+let closure_1;
 function handleSetLocationMetadata(countryCode) {
   countryCode = countryCode.countryCode;
   if (null != countryCode) {
-    let tmp2 = callback4(countryCode);
-    if (null == tmp2) {
-      tmp2 = callback3();
+    let tmp2 = callback2(countryCode);
+    if (tmp2 == null) {
+      tmp2 = callback();
     }
-    let c7 = tmp2;
+    let c2 = tmp2;
   }
 }
-({ getDefaultCountryCode: closure_5, getCountryCodeByAlpha2: closure_6 } = getCountryCodeByCountryName);
-let c7 = null;
-let tmp3 = ((Store) => {
-  class LocationMetadataStore {
-    constructor() {
-      self = this;
-      tmp = LocationMetadataStore(this, LocationMetadataStore);
-      obj = outer1_3(LocationMetadataStore);
-      tmp2 = outer1_2;
-      if (outer1_8()) {
-        tmp6 = globalThis;
-        _Reflect = Reflect;
-        tmp7 = outer1_3;
-        tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, outer1_3(self).constructor);
-      } else {
-        tmp3 = arguments;
-        tmp4 = arguments;
-        constructResult = obj(...arguments);
-      }
-      return tmp2(self, constructResult);
-    }
-  }
-  callback2(LocationMetadataStore, Store);
-  const items = [
-    {
-      key: "getCountryCode",
-      value() {
-        return outer1_7;
-      }
-    }
-  ];
-  return callback(LocationMetadataStore, items);
-})(require("initialize").Store);
-tmp3.displayName = "LocationMetadataStore";
-tmp3 = new tmp3(require("dispatcher"), { CONNECTION_OPEN: handleSetLocationMetadata, SET_LOCATION_METADATA: handleSetLocationMetadata });
-let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/location_metadata/stores/LocationMetadataStore.tsx");
+({ getDefaultCountryCode: c0, getCountryCodeByAlpha2: closure_1 } = DEFAULT_COUNTRY_CODE_NAME);
+let c2 = null;
+class LocationMetadataStore extends Store {
+}
+LocationMetadataStore.prototype["getCountryCode"] = function getCountryCode() {
+  return c2;
+};
+LocationMetadataStore.displayName = "LocationMetadataStore";
+const locationMetadataStore = new LocationMetadataStore(require("dispatcher"), { CONNECTION_OPEN: handleSetLocationMetadata, SET_LOCATION_METADATA: handleSetLocationMetadata });
+const result = require("dispatcher").fileFinishedImporting("modules/location_metadata/stores/LocationMetadataStore.tsx");
 
-export default tmp3;
+export default locationMetadataStore;

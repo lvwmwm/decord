@@ -1,15 +1,15 @@
-// Module ID: 4396
-// Function ID: 38820
+// Module ID: 4419
+// Function ID: 4420
 // Name: useDisplayNameStyles
-// Dependencies: [31, 1918, 1850, 4397, 566, 4399, 2]
+// Dependencies: [19, 1942, 1874, 4420, 589, 4422, 2]
 // Exports: default
 
-// Module 4396 (useDisplayNameStyles)
-import { useContext } from "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_5 from "_isNativeReflectConstruct";
+// Module 4419 (useDisplayNameStyles)
+import { useContext } from "noop";
+import trackCommunicationDisabled from "trackCommunicationDisabled";
+import mergeGuildAvatar from "mergeGuildAvatar";
 
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/display_name_styles/hooks/useDisplayNameStyles.tsx");
+const result = require("mergeGuildAvatar").fileFinishedImporting("modules/display_name_styles/hooks/useDisplayNameStyles.tsx");
 
 export default function useDisplayNameStyles() {
   let guildId;
@@ -28,29 +28,31 @@ export default function useDisplayNameStyles() {
   let stateFromStores;
   const displayNameStylesEnabled = require(stateFromStores[3]).useDisplayNameStylesEnabled({ location: "useDisplayNameStyles" });
   const obj2 = require(stateFromStores[3]);
-  const items = [closure_5];
+  const tmp = require;
+  const tmp2 = stateFromStores;
+  const items = [mergeGuildAvatar];
   stateFromStores = require(stateFromStores[4]).useStateFromStores(items, () => {
     if (null != closure_0) {
-      let user = outer1_5.getUser(closure_0);
+      let user = outer1_5.getUser(tmp);
     } else {
       user = outer1_5.getCurrentUser();
     }
     return user;
   });
-  const tmp3 = useContext(guildId(stateFromStores[5]));
-  let tmp4 = null;
+  const tmp5 = useContext(guildId(stateFromStores[5]));
+  let tmp6 = null;
   if (null == guildId) {
-    guildId = tmp3;
-    guildId = tmp3;
+    guildId = tmp5;
+    guildId = tmp5;
   }
   const obj3 = require(stateFromStores[4]);
-  const items1 = [_isNativeReflectConstruct];
-  const stateFromStores1 = require(stateFromStores[4]).useStateFromStores(items1, () => {
+  const items1 = [trackCommunicationDisabled];
+  const stateFromStores1 = tmp(tmp2[4]).useStateFromStores(items1, () => {
     let member = null;
     if (null != guildId) {
       member = null;
       if (null != stateFromStores) {
-        member = outer1_4.getMember(guildId, stateFromStores.id);
+        member = outer1_4.getMember(tmp, tmp3.id);
       }
     }
     return member;
@@ -61,30 +63,30 @@ export default function useDisplayNameStyles() {
     }
   }
   if (undefined !== pendingDisplayNameStyles) {
-    let tmp9 = pendingDisplayNameStyles;
-    if (tmp4 === pendingDisplayNameStyles) {
-      tmp9 = pendingDisplayNameStyles;
-      if (tmp4 != guildId) {
-        tmp4 = tmp4 == stateFromStores;
-        let displayNameStyles;
-        if (!tmp4) {
-          displayNameStyles = stateFromStores.displayNameStyles;
+    let tmp11 = pendingDisplayNameStyles;
+    if (tmp6 === pendingDisplayNameStyles) {
+      tmp11 = pendingDisplayNameStyles;
+      if (tmp6 != guildId) {
+        tmp6 = stateFromStores == tmp6;
+        guildId = undefined;
+        if (!tmp6) {
+          guildId = stateFromStores.displayNameStyles;
         }
-        tmp9 = displayNameStyles;
+        tmp11 = guildId;
       }
     }
-    let displayNameStyles1 = tmp9;
+    let displayNameStyles = tmp11;
   } else {
-    displayNameStyles1 = undefined;
-    if (tmp4 != stateFromStores1) {
-      displayNameStyles1 = stateFromStores1.displayNameStyles;
+    displayNameStyles = undefined;
+    if (stateFromStores1 != tmp6) {
+      displayNameStyles = stateFromStores1.displayNameStyles;
     }
-    if (tmp4 == displayNameStyles1) {
-      let displayNameStyles2;
-      if (tmp4 != stateFromStores) {
-        displayNameStyles2 = stateFromStores.displayNameStyles;
+    if (displayNameStyles == tmp6) {
+      let displayNameStyles1;
+      if (stateFromStores != tmp6) {
+        displayNameStyles1 = stateFromStores.displayNameStyles;
       }
-      displayNameStyles1 = displayNameStyles2;
+      displayNameStyles = displayNameStyles1;
     }
   }
 };

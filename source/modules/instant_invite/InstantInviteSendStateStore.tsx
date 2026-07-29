@@ -1,10 +1,10 @@
-// Module ID: 11780
-// Function ID: 91347
+// Module ID: 11805
+// Function ID: 11806
 // Name: setSendState
-// Dependencies: [621, 682, 2]
+// Dependencies: [644, 705, 2]
 // Exports: setSendState
 
-// Module 11780 (setSendState)
+// Module 11805 (setSendState)
 import keys from "keys";
 
 let obj = keys.create(() => ({}));
@@ -15,7 +15,7 @@ export const setSendState = function setSendState(arg0, arg1, arg2) {
   const dependencyMap = arg1;
   let obj = arg2;
   const state = obj.getState();
-  obj = _require(682);
+  obj = _require(705);
   obj.batchUpdates(() => {
     let obj = {};
     const merged = Object.assign(table);

@@ -1,154 +1,213 @@
-// Module ID: 9775
-// Function ID: 75954
-// Name: _createForOfIteratorHelperLoose
-// Dependencies: [5, 57, 31, 1877, 1212, 8022, 9776, 7919, 9202, 2]
+// Module ID: 9797
+// Function ID: 9798
+// Name: useHandleUseNow
+// Dependencies: [5, 32, 19, 1901, 1236, 8046, 9798, 7944, 9226, 2]
 // Exports: useHandleUseNow
 
-// Module 9775 (_createForOfIteratorHelperLoose)
-import ItemsSortingHat from "ItemsSortingHat";
+// Module 9797 (useHandleUseNow)
+import firstAvatarDecoration from "firstAvatarDecoration";
 import _slicedToArray from "_slicedToArray";
-import result from "result";
+import noop from "noop";
 
 let require = arg1;
-function _createForOfIteratorHelperLoose(iterable) {
-  let closure_0 = iterable;
-  iterable = "undefined" !== typeof Symbol;
-  if (iterable) {
-    const _Symbol = Symbol;
-    iterable = iterable[Symbol.iterator];
-  }
-  if (!iterable) {
-    iterable = iterable[Symbol.iterator];
-  }
-  if (iterable) {
-    const iter = iterable.call(iterable);
-    const next = iter.next;
-    return next.bind(iter);
-  } else {
-    const _Array = Array;
-    let tmp = iterable;
-    if (!Array.isArray(iterable)) {
-      let tmp2;
-      if (iterable) {
-        if ("string" === typeof iterable) {
-          tmp2 = _arrayLikeToArray(iterable, undefined);
-        } else {
-          const toString = {}.toString;
-          const substr = toString.call(iterable).slice(8, -1);
-          let name = substr;
-          if (tmp3) {
-            name = iterable.constructor.name;
-          }
-          if ("Map" !== name) {
-            if ("Set" !== name) {
-              if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(iterable, undefined);
-              } else {
-                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
-              }
-            }
-            tmp2 = arr;
-          }
-          const _Array2 = Array;
-          arr = Array.from(iterable);
-          const callResult = toString.call(iterable);
-          tmp3 = "Object" === substr && iterable.constructor;
-        }
-      }
-      tmp = tmp2;
-      if (!tmp2) {
-        const _TypeError = TypeError;
-        const typeError = new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
-        throw typeError;
-      }
-    }
-    if (tmp) {
-      closure_0 = tmp;
-    }
-    let c1 = 0;
-    return () => {
-      if (closure_1 >= length.length) {
-        let obj = { done: true };
-      } else {
-        obj = { done: false };
-        closure_1 = tmp3 + 1;
-        obj.value = length[+closure_1];
-      }
-      return obj;
-    };
-  }
-}
-function _arrayLikeToArray(arg0, arg1) {
-  let length;
-  if (tmp) {
-    length = arg0.length;
-  }
-  const ArrayResult = Array(length);
-  for (let num = 0; num < length; num = num + 1) {
-    ArrayResult[num] = arg0[num];
-  }
-  return ArrayResult;
-}
-const result = require("result").fileFinishedImporting("modules/collectibles/hooks/useHandleUseNow.tsx");
+const result = require("noop").fileFinishedImporting("modules/collectibles/hooks/useHandleUseNow.tsx");
 
 export const useHandleUseNow = function useHandleUseNow(product) {
   product = product.product;
   const require = product;
   const onSuccess = product.onSuccess;
   const onError = product.onError;
+  let callback;
+  let firstAvatarDecoration;
+  let firstProfileEffect;
+  let firstNameplate;
+  let firstProfileFrame;
+  let memo;
   let obj = firstAvatarDecoration;
-  const tmp2 = callback(firstAvatarDecoration.useState(false), 2);
-  callback = tmp2[1];
+  const tmp = callback(firstAvatarDecoration.useState(false), 2);
+  callback = tmp[1];
   const shopProductItems = require(onSuccess[5]).useShopProductItems(product);
   firstAvatarDecoration = shopProductItems.firstAvatarDecoration;
-  const firstProfileEffect = shopProductItems.firstProfileEffect;
-  const firstNameplate = shopProductItems.firstNameplate;
-  const firstProfileFrame = shopProductItems.firstProfileFrame;
+  firstProfileEffect = shopProductItems.firstProfileEffect;
+  firstNameplate = shopProductItems.firstNameplate;
+  firstProfileFrame = shopProductItems.firstProfileFrame;
   const type = product.type;
   if (require(onSuccess[3]).CollectiblesItemType.AVATAR_DECORATION === type) {
-    const intl5 = require(onSuccess[4]).intl;
-    let stringResult = intl5.string(require(onSuccess[4]).t.zOA4ax);
-  } else if (require(onSuccess[3]).CollectiblesItemType.NAMEPLATE === type) {
-    const intl4 = require(onSuccess[4]).intl;
-    stringResult = intl4.string(require(onSuccess[4]).t.gOzMvx);
-  } else if (require(onSuccess[3]).CollectiblesItemType.PROFILE_FRAME === type) {
-    const intl3 = require(onSuccess[4]).intl;
-    stringResult = intl3.string(require(onSuccess[4]).t.lOF4zR);
-  } else if (require(onSuccess[3]).CollectiblesItemType.PROFILE_EFFECT === type) {
-    const intl2 = require(onSuccess[4]).intl;
-    stringResult = intl2.string(require(onSuccess[4]).t.SWm2ai);
+    const intl5 = tmp2(tmp3[4]).intl;
+    let stringResult = intl5.string(tmp2(tmp3[4]).t.zOA4ax);
+  } else if (tmp2(tmp3[3]).CollectiblesItemType.NAMEPLATE === type) {
+    const intl4 = tmp2(tmp3[4]).intl;
+    stringResult = intl4.string(tmp2(tmp3[4]).t.gOzMvx);
+  } else if (tmp2(tmp3[3]).CollectiblesItemType.PROFILE_FRAME === type) {
+    const intl3 = tmp2(tmp3[4]).intl;
+    stringResult = intl3.string(tmp2(tmp3[4]).t.lOF4zR);
+  } else if (tmp2(tmp3[3]).CollectiblesItemType.PROFILE_EFFECT === type) {
+    const intl2 = tmp2(tmp3[4]).intl;
+    stringResult = intl2.string(tmp2(tmp3[4]).t.SWm2ai);
   } else {
-    const BUNDLE = require(onSuccess[3]).CollectiblesItemType.BUNDLE;
-    const intl = require(onSuccess[4]).intl;
-    stringResult = intl.string(require(onSuccess[4]).t.tf1ZZ4);
+    const BUNDLE = tmp2(tmp3[3]).CollectiblesItemType.BUNDLE;
+    const intl = tmp2(tmp3[4]).intl;
+    stringResult = intl.string(tmp2(tmp3[4]).t.tf1ZZ4);
   }
-  const items = [product];
-  const memo = obj.useMemo(() => {
-    let flag = true;
-    if (product.type === product(onSuccess[3]).CollectiblesItemType.BUNDLE) {
+  let items = [product];
+  memo = obj.useMemo(() => (function computeCanUseNow(closure_0) {
+    if (closure_0.type !== callback(table[3]).CollectiblesItemType.BUNDLE) {
+      return true;
+    } else {
       const _Set = Set;
       const set = new Set();
-      const tmp7 = firstProfileEffect(product.items);
-      let iter = tmp7();
-      flag = true;
-      if (!iter.done) {
-        const value = iter.value;
-        flag = false;
-        while (!set.has(value.type)) {
-          let addResult = set.add(value.type);
-          let iter2 = tmp7();
-          iter = iter2;
-          flag = true;
-          if (iter2.done) {
-            break;
+      const items = closure_0.items;
+      for (const item10020 of items) {
+        let tmp7 = item10020;
+        if (set.has(item10020.type)) {
+          let tmp10 = obj2;
+          obj2.return();
+          let flag = false;
+          return false;
+        } else {
+          let tmp8 = item10020;
+          let addResult = set.add(tmp7.type);
+          continue;
+        }
+      }
+      return true;
+    }
+  })(closure_0), items);
+  obj = {
+    handleUseNow: obj.useCallback(onError(function*() {
+      if (c7 === 2) {
+        c7 = 3;
+        HermesBuiltin.throwTypeError();
+      } else if (tmp7 === 3) {
+        if (arg0 === 1) {
+          throw arg1;
+        } else if (arg0 === 2) {
+          let obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
+        } else {
+          return { value: "HermesInternal", done: null };
+        }
+      } else {
+        try {
+          c7 = 2;
+          if (0 === c6) {
+            if (arg0 === 1) {
+              c7 = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              c7 = 3;
+              obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            } else {
+              const callback2 = tmp4;
+              let firstAvatarDecoration = tmp8;
+              let c0;
+              if (!outer1_8) {
+                c7 = 3;
+                return { value: "HermesInternal", done: null };
+              } else {
+                outer1_3(true);
+                const obj1 = {};
+                c0 = obj1;
+                let c5 = 2;
+                if (null != outer1_4) {
+                  obj1.avatarDecoration = outer1_4;
+                }
+                if (null == c5) {
+                  if (null == c7) {
+                    if (null != c6) {
+                      c0.nameplate = c6;
+                    }
+                    const _Object = Object;
+                    if (Object.keys(c0).length > 0) {
+                      let obj3 = outer1_0(outer1_1[8]);
+                      c6 = 4;
+                      c7 = 1;
+                      const obj2 = { value: null, done: false };
+                      obj2[0] = obj3.saveProfileAndAccountChanges(c0);
+                      return obj2;
+                    } else {
+                      if (callback != null) {
+                        callback();
+                      }
+                      c5 = 1;
+                      c5 = 0;
+                      callback2(false);
+                    }
+                  }
+                }
+                let obj5 = outer1_0(outer1_1[6]);
+                c0 = tmp21;
+                if (c5 == null) {
+                  c0 = undefined;
+                }
+                obj3 = { pendingProfileEffect: null, pendingProfileFrame: null };
+                obj3[0] = c0;
+                callback = c7;
+                if (c7 == null) {
+                  callback = undefined;
+                }
+                obj3[1] = callback;
+                const profileChangesForUpdateRequest = obj5.getProfileChangesForUpdateRequest(obj3);
+                c6 = 3;
+                c7 = 1;
+                const obj4 = { value: null, done: false };
+                obj4[0] = outer1_0(outer1_1[7]).saveProfileChanges(profileChangesForUpdateRequest);
+                return obj4;
+              }
+            }
+          } else if (1 !== tmp8) {
+            if (2 === tmp8) {
+              c5 = 1;
+              callback = noop;
+              if (firstAvatarDecoration != null) {
+                tmp13(callback);
+              }
+            } else if (3 === tmp8) {
+              if (arg0 === 1) {
+                c7 = 3;
+                throw arg1;
+              } else if (arg0 === 2) {
+                c5 = 0;
+                callback2(false);
+                c7 = 3;
+                obj5 = { value: null, done: true };
+                obj5[0] = arg1;
+                return obj5;
+              }
+            } else if (arg0 === 1) {
+              c7 = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              c5 = 0;
+              callback2(false);
+              c7 = 3;
+              obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            }
+          }
+          c5 = 0;
+          callback2(false);
+          throw noop;
+        } catch (tmp48) {
+          noop = tmp48;
+          if (tmp5 === c5) {
+            c7 = tmp3;
+            throw tmp48;
+          } else if (tmp2 === tmp50) {
+            c6 = tmp2;
+          } else {
+            c6 = tmp;
           }
         }
       }
-    }
-    return flag;
-  }, items);
-  obj = { handleUseNow: obj.useCallback(onError(tmp), items1), isApplying: tmp2[0], canUseNow: memo };
-  // CreateGeneratorClosureLongIndex (0x67)
+    }), items1),
+    isApplying: tmp[0],
+    canUseNow: memo
+  };
   items1 = [memo, firstAvatarDecoration, firstProfileEffect, firstNameplate, firstProfileFrame, onSuccess, stringResult, onError];
   return obj;
 };

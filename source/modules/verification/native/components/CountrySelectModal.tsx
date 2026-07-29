@@ -1,38 +1,38 @@
-// Module ID: 9213
-// Function ID: 72117
+// Module ID: 9237
+// Function ID: 9238
 // Name: CountrySelectModal
-// Dependencies: [31, 33, 1212, 5121, 4372, 9214, 9211, 5617, 9233, 5552, 2]
+// Dependencies: [19, 21, 1236, 5143, 4395, 9238, 9235, 5635, 9257, 5570, 2]
 // Exports: default
 
-// Module 9213 (CountrySelectModal)
-import result from "result";
+// Module 9237 (CountrySelectModal)
+import noop from "noop";
 import { jsx } from "jsxProd";
 
 const require = arg1;
 const result = require("getSystemLocale").fileFinishedImporting("modules/verification/native/components/CountrySelectModal.tsx");
 
 export default function CountrySelectModal() {
-  const screens = React.useMemo(() => (function getScreens() {
-    let obj = {};
-    obj = {};
-    const intl = outer2_0(outer2_2[2]).intl;
-    obj.title = intl.string(outer2_0(outer2_2[2]).t.gzXECH);
-    obj.headerLeft = outer2_0(outer2_2[3]).getHeaderCloseButton(outer2_1(outer2_2[4]).pop);
-    obj.render = function render() {
-      return outer3_4(outer3_1(outer3_2[5]), {
+  const screens = React.useMemo(() => {
+    let obj = { COUNTRY_SELECT: null };
+    obj = { title: null, headerLeft: null, render: null };
+    const intl = callback(1236).intl;
+    obj[0] = intl.string(callback(1236).t.gzXECH);
+    obj[1] = callback(5143).getHeaderCloseButton(callback2(4395).pop);
+    obj[2] = function render() {
+      return callback2(callback(table[5]), {
         onClose() {
-          return outer4_1(outer4_2[4]).pop();
+          return callback(4395).pop();
         },
         onCountrySelected(countryCode) {
-          return outer4_1(outer4_2[6]).setCountryCode(countryCode);
+          return callback(9235).setCountryCode(countryCode);
         }
       });
     };
-    obj.COUNTRY_SELECT = obj;
+    obj[0] = obj;
     return obj;
-  })(), []);
-  const effect = React.useEffect(() => () => {
-    outer2_1(outer2_2[7]).runAfterInteractions(outer2_1(outer2_2[8]).setCountrySelectorClosed, 400);
   }, []);
-  return jsx(require(5552) /* NavigationStack */.Navigator, { screens, initialRouteName: "COUNTRY_SELECT" });
+  const effect = React.useEffect(() => () => {
+    callback(5635).runAfterInteractions(callback(9257).setCountrySelectorClosed, 400);
+  }, []);
+  return jsx(require(5570) /* NavigationStack */.Navigator, { screens, initialRouteName: "COUNTRY_SELECT" });
 };

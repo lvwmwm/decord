@@ -1,80 +1,68 @@
-// Module ID: 12367
-// Function ID: 96148
+// Module ID: 12389
+// Function ID: 12390
 // Name: createSafetyPolicyNoticeEmbed
-// Dependencies: [27, 653, 6735, 3747, 1212, 7706, 7607, 2]
+// Dependencies: [17, 676, 6756, 3771, 1236, 7729, 7630, 2]
 // Exports: createSafetyPolicyNoticeEmbed
 
-// Module 12367 (createSafetyPolicyNoticeEmbed)
+// Module 12389 (createSafetyPolicyNoticeEmbed)
 import { Image } from "get ActivityIndicator";
 import { MessageEmbedTypes } from "ME";
-import { SafetyHubPolicyNoticeKeys } from "SafetyHubLinks";
+import { SafetyHubPolicyNoticeKeys } from "SafetyHubView";
 
-const result = require("SafetyHubLinks").fileFinishedImporting("modules/messages/native/renderer/row_data/embeds/SafetyPolicyNoticeEmbed.tsx");
+const result = require("SafetyHubView").fileFinishedImporting("modules/messages/native/renderer/row_data/embeds/SafetyPolicyNoticeEmbed.tsx");
 
 export const createSafetyPolicyNoticeEmbed = function createSafetyPolicyNoticeEmbed(message) {
   if (null != message.embeds) {
     const first = message.embeds[0];
     let fields;
-    if (null != first) {
+    if (first != null) {
       fields = first.fields;
     }
     if (null != fields) {
       const first1 = message.embeds[0];
       let type;
-      if (null != first1) {
+      if (first1 != null) {
         type = first1.type;
       }
       if (type === MessageEmbedTypes.SAFETY_POLICY_NOTICE) {
         const first2 = message.embeds[0];
         const fields1 = first2.fields;
         let found;
-        if (null != fields1) {
-          found = fields1.find((rawName) => rawName.rawName === outer1_5.CLASSIFICATION_ID);
-        }
-        let tmp5;
-        if (null != found) {
-          tmp5 = found;
+        if (fields1 != null) {
+          found = fields1.find((rawName) => rawName.rawName === constants.CLASSIFICATION_ID);
         }
         let rawValue;
-        if (null != tmp5) {
-          rawValue = tmp5.rawValue;
-        }
-        let tmp7;
-        if (null != rawValue) {
-          tmp7 = rawValue;
+        if (found != null) {
+          rawValue = found.rawValue;
         }
         const fields2 = first2.fields;
         let found1;
-        if (null != fields2) {
-          found1 = fields2.find((rawName) => rawName.rawName === outer1_5.INCIDENT_TIMESTAMP);
+        if (fields2 != null) {
+          found1 = fields2.find((rawName) => rawName.rawName === constants.INCIDENT_TIMESTAMP);
         }
-        let tmp9;
         if (null != found1) {
-          tmp9 = found1;
-        }
-        if (null != tmp9) {
-          if (null != tmp9.rawValue) {
+          if (null != found1.rawValue) {
             const _parseFloat = parseFloat;
-            const parsed = parseFloat(tmp9.rawValue);
+            const parsed = parseFloat(found1.rawValue);
           }
         }
-        if (null != tmp7) {
+        if (null != rawValue) {
           if (null != parsed) {
-            let obj = {};
-            const intl = require(1212) /* getSystemLocale */.intl;
-            obj.titleText = intl.string(require(1212) /* getSystemLocale */.t["4CxGXi"]);
-            obj.titleIcon = require(7706) /* frozen */.getAssetUriForEmbed(Image.resolveAssetSource(importDefault(7607)));
-            const intl2 = require(1212) /* getSystemLocale */.intl;
-            obj = {};
-            const obj2 = require(7706) /* frozen */;
-            const obj4 = importDefault(3747)();
-            obj.daysAgo = obj4.diff(importDefault(3747).unix(parsed), "days");
-            obj.subtitleText = intl2.formatToPlainString(require(1212) /* getSystemLocale */.t.eevFb6, obj);
-            const intl3 = require(1212) /* getSystemLocale */.intl;
-            obj.descriptionText = intl3.string(require(1212) /* getSystemLocale */.t["5CLb0A"]);
-            const intl4 = require(1212) /* getSystemLocale */.intl;
-            obj.ctaText = intl4.string(require(1212) /* getSystemLocale */.t.zKnzwm);
-            obj.classificationId = tmp7;
+            let obj = { titleText: null, titleIcon: null, subtitleText: null, descriptionText: null, ctaText: null, classificationId: null };
+            const intl = require(1236) /* getSystemLocale */.intl;
+            obj[0] = intl.string(require(1236) /* getSystemLocale */.t["4CxGXi"]);
+            obj[1] = require(7729) /* frozen */.getAssetUriForEmbed(Image.resolveAssetSource(importDefault(7630)));
+            const intl2 = require(1236) /* getSystemLocale */.intl;
+            obj = { daysAgo: null };
+            const obj2 = require(7729) /* frozen */;
+            const obj4 = importDefault(3771)();
+            obj[0] = obj4.diff(importDefault(3771).unix(parsed), "days");
+            obj[2] = intl2.formatToPlainString(require(1236) /* getSystemLocale */.t.eevFb6, obj);
+            const intl3 = require(1236) /* getSystemLocale */.intl;
+            obj[3] = intl3.string(require(1236) /* getSystemLocale */.t["5CLb0A"]);
+            const intl4 = require(1236) /* getSystemLocale */.intl;
+            obj[4] = intl4.string(require(1236) /* getSystemLocale */.t.zKnzwm);
+            obj[5] = rawValue;
             return obj;
           }
         }

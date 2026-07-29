@@ -1,45 +1,33 @@
-// Module ID: 7624
-// Function ID: 60838
-// Name: hasTrailingError
-// Dependencies: [31, 27, 1277, 33, 4165, 689, 5197, 5191, 7618, 5536, 7625, 477, 2]
+// Module ID: 7647
+// Function ID: 7648
+// Name: FormSection
+// Dependencies: [19, 17, 1301, 21, 4189, 712, 5219, 5213, 7641, 5554, 7648, 500, 2]
 // Exports: default
 
-// Module 7624 (hasTrailingError)
-import result from "result";
+// Module 7647 (FormSection)
+import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { TitleStyleType } from "semanticColor";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
 let Platform;
 let StyleSheet;
-let closure_4;
+let c4;
 let closure_6;
-let closure_7;
+let error;
 const require = arg1;
-function hasTrailingError(found) {
-  const element = found[found.length - 1];
-  if (React.isValidElement(element)) {
-    if (element.type !== importDefault(7618)) {
-      if (null != element.props) {
-        const props = element.props;
-        return "error" in props && null != props.error;
-      }
-    }
-  }
-  return false;
-}
-({ View: closure_4, StyleSheet, Platform } = get_ActivityIndicator);
-({ jsx: closure_6, jsxs: closure_7 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { borderTopWidth: 1, borderColor: require("_createForOfIteratorHelperLoose").colors.BORDER_SUBTLE, marginTop: 16 };
-_createForOfIteratorHelperLoose.titledSectionHeader = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.titledSectionNoBorder = { marginTop: 24 };
-_createForOfIteratorHelperLoose.titledSectionNoBorderOrMargin = {};
-_createForOfIteratorHelperLoose.emptySectionHeader = { marginTop: 24 };
-_createForOfIteratorHelperLoose.sectionBody = {};
-_createForOfIteratorHelperLoose.sectionBodyIOSBorder = {};
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+({ View: c4, StyleSheet, Platform } = get_ActivityIndicator);
+({ jsx: closure_6, jsxs: error } = jsxProd);
+createCacheKey = { titledSectionHeader: null, titledSectionNoBorder: null, titledSectionNoBorderOrMargin: null, emptySectionHeader: null, sectionBody: null, sectionBodyIOSBorder: null };
+createCacheKey = { borderTopWidth: 1, borderColor: require("Themes").colors.BORDER_SUBTLE, marginTop: 16 };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { marginTop: 24 };
+createCacheKey[2] = {};
+createCacheKey[3] = { marginTop: 24 };
+createCacheKey[4] = {};
+createCacheKey[5] = {};
+createCacheKey = createCacheKey.createStyles(createCacheKey);
 const result = require("semanticColor").fileFinishedImporting("design/void/Form/native/FormSection.tsx");
 
 export default function FormSection(arg0) {
@@ -71,116 +59,116 @@ export default function FormSection(arg0) {
   }
   ({ error, hint, hasIcons } = arg0);
   ({ titleViewStyle, titleTextStyle, sectionBodyStyle, wrapperStyle } = arg0);
-  let tmp2 = _createForOfIteratorHelperLoose();
-  if (React.useContext(require(5197) /* context */.RedesignCompatContext)) {
-    const Children = React.Children;
+  const tmp2 = createCacheKey();
+  let obj = React;
+  if (React.useContext(require(5219) /* context */.RedesignCompatContext)) {
+    const Children = obj.Children;
     const toArrayResult = Children.toArray(children);
-    let tmp23 = null != toArrayResult.find((type) => {
-      let isValidElementResult = outer1_3.isValidElement(type);
+    const found = toArrayResult.filter((type) => {
+      let isValidElementResult = noop.isValidElement(type);
       if (isValidElementResult) {
-        isValidElementResult = type.type === outer1_1(outer1_2[7]);
-      }
-      if (isValidElementResult) {
-        const _Boolean = Boolean;
-        isValidElementResult = Boolean(type.props.leading);
+        isValidElementResult = type.type !== callback(7641);
       }
       return isValidElementResult;
     });
-    const found = toArrayResult.filter((type) => {
-      const tmp = !outer1_3.isValidElement(type);
-      let tmp2 = !tmp;
-      if (!tmp) {
-        tmp2 = type.type !== outer1_1(outer1_2[8]);
+    obj = { style: null, children: null };
+    obj[0] = { marginBottom: 24 };
+    obj = { style: null, children: null };
+    obj[0] = { paddingHorizontal: 12 };
+    const obj1 = { title: null, hasIcons: null, hasTrailingText: null, children: null };
+    obj1[0] = title;
+    if (hasIcons == null) {
+      hasIcons = tmp17;
+    }
+    obj1[1] = hasIcons;
+    const element = found[found.length - 1];
+    let flag = false;
+    if (obj.isValidElement(element)) {
+      flag = false;
+      if (element.type !== importDefault(7641)) {
+        flag = false;
+        if (null != element.props) {
+          const props = element.props;
+          flag = "error" in props && null != props.error;
+          const tmp22 = "error" in props && null != props.error;
+        }
       }
-      return tmp2;
-    });
-    let obj = {};
-    obj = { marginBottom: 24 };
-    obj.style = obj;
-    let obj1 = {};
-    const obj2 = { paddingHorizontal: 12 };
-    obj1.style = obj2;
-    const obj3 = { title };
-    if (null != hasIcons) {
-      tmp23 = hasIcons;
     }
-    obj3.hasIcons = tmp23;
-    obj3.hasTrailingText = hasTrailingError(found);
-    obj3.children = found;
-    obj1.children = callback(require(5536) /* TableRowGroupTitle */.TableRowGroup, obj3);
-    const items = [callback(closure_4, obj1), ];
-    let tmp31 = null;
+    obj1[2] = flag;
+    obj1[3] = found;
+    obj[1] = callback(tmp3(5554).TableRowGroup, obj1);
+    const items = [callback(closure_4, obj), ];
+    let tmp20Result = null;
     if (null != hint) {
-      const obj4 = {};
-      const obj5 = { marginTop: 8 };
-      obj4.style = obj5;
-      obj4.children = hint;
-      tmp31 = callback(closure_4, obj4);
+      const obj2 = { style: null, children: null };
+      obj2[0] = { marginTop: 8 };
+      obj2[1] = hint;
+      tmp20Result = tmp20(tmp19, obj2);
     }
-    items[1] = tmp31;
-    obj.children = items;
+    items[1] = tmp20Result;
+    obj[1] = items;
     return closure_7(closure_4, obj);
   } else {
-    let tmp4;
+    let tmp6;
     if (null != title) {
       let str2 = "";
       if (null != error) {
         const _HermesInternal = HermesInternal;
         str2 = "(" + error + ")";
       }
-      obj = { textStyle: titleTextStyle, viewStyle: titleViewStyle };
+      const obj3 = { textStyle: null, viewStyle: null, title: null, icon: null, error: null, thinTitle: null, uppercaseTitle: null, inset: null };
+      obj3[0] = titleTextStyle;
+      obj3[1] = titleViewStyle;
       const _HermesInternal2 = HermesInternal;
-      obj.title = "" + title + " " + str2;
-      obj.icon = icon;
-      obj.error = null != error;
-      obj.thinTitle = thinTitle;
-      obj.uppercaseTitle = uppercaseTitle;
-      obj.inset = inset;
-      tmp4 = callback(importDefault(7625), obj);
-      const tmp9 = importDefault(7625);
+      obj3[2] = "" + title + " " + str2;
+      obj3[3] = icon;
+      obj3[4] = null != error;
+      obj3[5] = thinTitle;
+      obj3[6] = uppercaseTitle;
+      obj3[7] = inset;
+      tmp6 = callback(importDefault(7648), obj3);
+      const tmp10 = importDefault(7648);
     }
     const emptySectionHeader = tmp2.emptySectionHeader;
     let titledSectionNoBorderOrMargin = emptySectionHeader;
-    if (null != tmp4) {
+    if (null != tmp6) {
       if (TitleStyleType.DEFAULT === titleStyleType) {
         titledSectionNoBorderOrMargin = tmp2.titledSectionHeader;
-      } else if (TitleStyleType.ANDROID_NO_BORDER === titleStyleType) {
-        obj1 = require(477) /* set */;
-        titledSectionNoBorderOrMargin = obj1.isAndroid() ? tmp2.titledSectionNoBorder : tmp2.titledSectionHeader;
+      } else if (tmp12.ANDROID_NO_BORDER === titleStyleType) {
+        titledSectionNoBorderOrMargin = tmp3(500).isAndroid() ? tmp2.titledSectionNoBorder : tmp2.titledSectionHeader;
+        const tmp3Result = tmp3(500);
       } else {
         titledSectionNoBorderOrMargin = emptySectionHeader;
-        if (TitleStyleType.NO_BORDER_OR_MARGIN === titleStyleType) {
+        if (tmp12.NO_BORDER_OR_MARGIN === titleStyleType) {
           titledSectionNoBorderOrMargin = tmp2.titledSectionNoBorderOrMargin;
         }
       }
     }
-    const obj6 = {};
+    const obj4 = { style: null, accessibilityRole: null, accessibilityLabel: null, children: null };
     const items1 = [titledSectionNoBorderOrMargin, wrapperStyle];
-    obj6.style = items1;
-    let str6 = "list";
-    if (null != accessibilityRole) {
-      str6 = accessibilityRole;
+    obj4[0] = items1;
+    if (accessibilityRole == null) {
+      accessibilityRole = "list";
     }
-    obj6.accessibilityRole = str6;
-    let tmp18 = title;
-    if (null != accessibilityLabel) {
-      tmp18 = accessibilityLabel;
+    obj4[1] = accessibilityRole;
+    if (accessibilityLabel == null) {
+      accessibilityLabel = title;
     }
-    obj6.accessibilityLabel = tmp18;
-    const items2 = [tmp4, description, , ];
-    const obj7 = {};
+    obj4[2] = accessibilityLabel;
+    const items2 = [tmp6, description, , ];
     const items3 = [tmp2.sectionBody, , ];
     let sectionBodyIOSBorder = !inset;
-    if (sectionBodyIOSBorder) {
+    if (!inset) {
       sectionBodyIOSBorder = tmp2.sectionBodyIOSBorder;
     }
+    const obj5 = { style: null, children: null };
     items3[1] = sectionBodyIOSBorder;
     items3[2] = sectionBodyStyle;
-    obj7.style = items3;
-    obj7.children = children;
-    items2[2] = callback(closure_4, obj7);
+    obj5[0] = items3;
+    obj5[1] = children;
+    items2[2] = callback(closure_4, obj5);
     items2[3] = hint;
-    obj6.children = items2;
-    return closure_7(closure_4, obj6);
+    obj4[3] = items2;
+    return closure_7(closure_4, obj4);
   }
 };

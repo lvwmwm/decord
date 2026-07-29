@@ -1,45 +1,46 @@
-// Module ID: 10793
-// Function ID: 83600
+// Module ID: 10817
+// Function ID: 10818
 // Name: SingleScreenshare
-// Dependencies: [31, 10214, 33, 4165, 689, 4594, 10794, 4358, 2]
+// Dependencies: [19, 10235, 21, 4189, 712, 4616, 10818, 4383, 2]
 // Exports: default
 
-// Module 10793 (SingleScreenshare)
-import "result";
-import resetFocusTimer from "resetFocusTimer";
+// Module 10817 (SingleScreenshare)
+import "noop";
+import VoiceChatDrawerState from "VoiceChatDrawerState";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_2;
-let closure_3;
-({ resetFocus: closure_2, toggleFocus: closure_3 } = resetFocusTimer);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BLACK };
-_createForOfIteratorHelperLoose.stageStreamContainer = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+let c3;
+let obj1;
+({ resetFocus: obj1, toggleFocus: c3 } = VoiceChatDrawerState);
+createCacheKey = { stageStreamContainer: null };
+createCacheKey = { backgroundColor: require("Themes").colors.BLACK };
+createCacheKey[0] = createCacheKey;
+createCacheKey = createCacheKey.createStyles(createCacheKey);
 const result = require("jsxProd").fileFinishedImporting("modules/video_calls/native/components/SingleScreenshare.tsx");
 
 export default function SingleScreenshare(channel) {
   channel = channel.channel;
-  channel(4594)(() => {
-    outer1_2();
+  channel(4616)(() => {
+    callback();
   });
   const obj = {
     participant: channel.participant,
     onSingleTap() {
-      outer1_3();
+      callback2();
     },
     onDoubleTap() {
       outer1_2();
       const participant = channel(outer1_1[7]).selectParticipant(channel.id, null);
-    }
+    },
+    containerStyle: null
   };
-  const tmp = _createForOfIteratorHelperLoose();
+  const tmp = createCacheKey();
   const tmp3 = jsx;
   let stageStreamContainer;
   if (channel.isGuildStageVoice()) {
     stageStreamContainer = tmp.stageStreamContainer;
   }
-  obj.containerStyle = stageStreamContainer;
-  return tmp3(channel(10794), obj);
+  obj[3] = stageStreamContainer;
+  return tmp3(channel(10818), obj);
 };

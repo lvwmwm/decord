@@ -1,42 +1,45 @@
-// Module ID: 5812
-// Function ID: 50863
-// Name: FeaturedBlockRecord
-// Dependencies: [6, 7, 5813, 5811, 5814, 2]
+// Module ID: 5830
+// Function ID: 5831
+// Name: fromServer
+// Dependencies: [5831, 5829, 5832, 2]
 
-// Module 5812 (FeaturedBlockRecord)
-import _classCallCheck from "_classCallCheck";
-import _defineProperties from "_defineProperties";
-import { FeaturedCategorySubblockRecord as closure_4 } from "FeaturedCategorySubblockRecord";
+// Module 5830 (fromServer)
+import { FeaturedCategorySubblockRecord as closure_2 } from "fromServer";
 
-const require = arg1;
-const tmp2 = (() => {
-  class FeaturedBlockRecord {
-    constructor(arg0) {
-      tmp = outer1_2(this, FeaturedBlockRecord);
-      this.type = FeaturedBlockRecord(outer1_1[3]).ShopBlockType.FEATURED;
-      subblocks = arg0.subblocks;
-      this.subblocks = subblocks.map((type) => {
-        if (type.type === FeaturedBlockRecord(outer2_1[4]).FeaturedSubblockType.CATEGORY) {
-          let fromServerResult = outer2_4.fromServer(type);
-        } else {
-          type = type.type;
-          fromServerResult = type;
-        }
-        return fromServerResult;
-      });
-      return;
+let prototype;
+prototype = function FeaturedBlockRecord(subblocks) {
+  const obj = Object.create(new.target.prototype);
+  obj.type = require(5829) /* ShopBlockType */.ShopBlockType.FEATURED;
+  subblocks = subblocks.subblocks;
+  obj.subblocks = subblocks.map((type) => {
+    if (type.type === callback(table[2]).FeaturedSubblockType.CATEGORY) {
+      let fromServerResult = closure_2.fromServer(type);
+    } else {
+      type = type.type;
+      fromServerResult = type;
     }
+    return fromServerResult;
+  });
+  return obj;
+}.prototype;
+prototype["fromServer"] = function fromServer(subblocks) {
+  if (typeof prototype !== "find") {
+    HermesBuiltin.throwTypeError();
   }
-  const items = [
-    {
-      key: "fromServer",
-      value(subblocks) {
-        return new FeaturedBlockRecord(subblocks);
-      }
+  const obj = Object.create(prototype.prototype);
+  obj.type = require(5829) /* ShopBlockType */.ShopBlockType.FEATURED;
+  subblocks = subblocks.subblocks;
+  obj.subblocks = subblocks.map((type) => {
+    if (type.type === callback(table[2]).FeaturedSubblockType.CATEGORY) {
+      let fromServerResult = closure_2.fromServer(type);
+    } else {
+      type = type.type;
+      fromServerResult = type;
     }
-  ];
-  return callback(FeaturedBlockRecord, null, items);
-})();
-const result = require("FeaturedCategorySubblockRecord").fileFinishedImporting("modules/collectibles/records/FeaturedBlockRecord.tsx");
+    return fromServerResult;
+  });
+  return obj;
+};
+const result = require("FeaturedSubblockType").fileFinishedImporting("modules/collectibles/records/FeaturedBlockRecord.tsx");
 
-export const FeaturedBlockRecord = tmp2;
+export const FeaturedBlockRecord = prototype;

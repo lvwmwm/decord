@@ -1,48 +1,51 @@
-// Module ID: 15508
-// Function ID: 118197
-// Dependencies: [31, 27, 33, 4165, 689, 1273, 11374, 4161, 1212, 4578, 2]
+// Module ID: 15542
+// Function ID: 15543
+// Dependencies: [19, 17, 21, 4189, 712, 1297, 11398, 4185, 1236, 4600, 2]
 
-// Module 15508
+// Module 15542
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import importAllResult from "result";
+import createCacheKey from "createCacheKey";
+import importAllResult from "noop";
 
-let closure_4;
-let closure_5;
+let c4;
+let c5;
 const require = arg1;
-({ jsx: closure_4, jsxs: closure_5 } = jsxProd);
-let obj = { container: { flex: 1, justifyContent: "center", alignItems: "center" } };
-obj = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_MOD_SUBTLE, borderRadius: require("_createForOfIteratorHelperLoose").radii.round, padding: 12 };
-obj.iconWrapper = obj;
-obj.title = { textAlign: "center", marginTop: 16, marginHorizontal: 16 };
-obj.subtext = { textAlign: "center", marginTop: 4, marginHorizontal: 16, marginBottom: 16 };
-let closure_6 = _createForOfIteratorHelperLoose.createStyles(obj);
-const memoResult = require("result").memo((onCreateThreadPress) => {
+({ jsx: c4, jsxs: c5 } = jsxProd);
+let obj = { container: { flex: 1, justifyContent: "center", alignItems: "center" }, iconWrapper: null, title: null, subtext: null };
+obj = { backgroundColor: require("Themes").colors.BACKGROUND_MOD_SUBTLE, borderRadius: require("Themes").radii.round, padding: 12 };
+obj[1] = obj;
+obj[2] = { textAlign: "center", marginTop: 16, marginHorizontal: 16 };
+obj[3] = { textAlign: "center", marginTop: 4, marginHorizontal: 16, marginBottom: 16 };
+let closure_6 = createCacheKey.createStyles(obj);
+const memoResult = require("noop").memo((onCreateThreadPress) => {
   onCreateThreadPress = onCreateThreadPress.onCreateThreadPress;
   const tmp = callback2();
-  let obj = { style: tmp.container };
-  obj = { style: tmp.iconWrapper };
-  obj = { source: importDefault(11374), size: require(1273) /* Button */.Icon.Sizes.MEDIUM };
-  obj.children = callback(require(1273) /* Button */.Icon, obj);
+  let obj = { style: tmp.container, children: null };
+  obj = { style: tmp.iconWrapper, children: null };
+  obj = { source: null, size: null };
+  obj[0] = importDefault(11398);
+  obj[1] = require(1297) /* Button */.Icon.Sizes.MEDIUM;
+  obj[1] = callback(require(1297) /* Button */.Icon, obj);
   const items = [callback(View, obj), , , ];
-  const obj1 = { style: tmp.title, accessibilityRole: "header", maxFontSizeMultiplier: 2, variant: "heading-lg/semibold", color: "mobile-text-heading-primary" };
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj1.children = intl.string(require(1212) /* getSystemLocale */.t.HgTQ8p);
-  items[1] = callback(require(4161) /* Text */.Text, obj1);
-  const obj2 = { style: tmp.subtext, maxFontSizeMultiplier: 2, variant: "text-sm/medium", color: "text-default" };
-  const intl2 = require(1212) /* getSystemLocale */.intl;
-  obj2.children = intl2.string(require(1212) /* getSystemLocale */.t.jmq9GC);
-  items[2] = callback(require(4161) /* Text */.Text, obj2);
-  let tmp4 = null != onCreateThreadPress;
-  if (tmp4) {
-    const obj3 = { onPress: onCreateThreadPress };
-    const intl3 = require(1212) /* getSystemLocale */.intl;
-    obj3.text = intl3.string(require(1212) /* getSystemLocale */.t.rBIGBL);
-    tmp4 = callback(require(4578) /* Button */.Button, obj3);
+  const obj1 = { style: tmp.title, accessibilityRole: "header", maxFontSizeMultiplier: 2, variant: "heading-lg/semibold", color: "mobile-text-heading-primary", children: null };
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj1[5] = intl.string(require(1236) /* getSystemLocale */.t.HgTQ8p);
+  items[1] = callback(require(4185) /* Text */.Text, obj1);
+  const obj2 = { style: tmp.subtext, maxFontSizeMultiplier: 2, variant: "text-sm/medium", color: "text-default", children: null };
+  const intl2 = require(1236) /* getSystemLocale */.intl;
+  obj2[4] = intl2.string(require(1236) /* getSystemLocale */.t.jmq9GC);
+  items[2] = callback(require(4185) /* Text */.Text, obj2);
+  let tmp4Result = null != onCreateThreadPress;
+  if (tmp4Result) {
+    const obj3 = { onPress: null, text: null };
+    obj3[0] = onCreateThreadPress;
+    const intl3 = tmp5(1236).intl;
+    obj3[1] = intl3.string(tmp5(1236).t.rBIGBL);
+    tmp4Result = callback(tmp5(4600).Button, obj3);
   }
-  items[3] = tmp4;
-  obj.children = items;
+  items[3] = tmp4Result;
+  obj[1] = items;
   return closure_5(View, obj);
 });
 const result = require("jsxProd").fileFinishedImporting("modules/threads/native/components/redesign/ThreadListEmpty.tsx");

@@ -1,25 +1,25 @@
-// Module ID: 10727
-// Function ID: 83346
+// Module ID: 10751
+// Function ID: 10752
 // Name: canUseStreamSetting
-// Dependencies: [1852, 3811, 4057, 2]
+// Dependencies: [1876, 3835, 4081, 2]
 // Exports: default
 
-// Module 10727 (canUseStreamSetting)
+// Module 10751 (canUseStreamSetting)
 import { StreamQualities } from "GuildFeatures";
 
-let result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/go_live/utils/canUseStreamSetting.tsx");
+let result = require("getGuildTierFromGuild").fileFinishedImporting("modules/go_live/utils/canUseStreamSetting.tsx");
 
-export default function canUseStreamSetting(quality, user, premiumTier) {
+export default function canUseStreamSetting(quality, user) {
   if (null != quality) {
     let flag = false;
     if (null != quality.quality) {
       quality = quality.quality;
       if (StreamQualities.HIGH_STREAMING_QUALITY === quality) {
-        flag = importDefault(3811).canStreamQuality(importDefault(3811).StreamQuality.HIGH, user);
-        const obj2 = importDefault(3811);
-      } else if (StreamQualities.MID_STREAMING_QUALITY === quality) {
-        flag = importDefault(3811).canStreamQuality(importDefault(3811).StreamQuality.MID, user);
-        const obj = importDefault(3811);
+        flag = importDefault(3835).canStreamQuality(importDefault(3835).StreamQuality.HIGH, user);
+        const obj2 = importDefault(3835);
+      } else if (tmp2.MID_STREAMING_QUALITY === quality) {
+        flag = importDefault(3835).canStreamQuality(importDefault(3835).StreamQuality.MID, user);
+        const obj = importDefault(3835);
       } else {
         const quality2 = quality.quality;
         flag = false;
@@ -29,8 +29,8 @@ export default function canUseStreamSetting(quality, user, premiumTier) {
     if (null != quality.guildPremiumTier) {
       let result = flag;
       if (!flag) {
-        result = require(4057) /* _createForOfIteratorHelperLoose */.isGuildBoostedAtLeast(premiumTier, quality.guildPremiumTier);
-        const obj3 = require(4057) /* _createForOfIteratorHelperLoose */;
+        result = require(4081) /* getGuildTierFromGuild */.isGuildBoostedAtLeast(arg2, quality.guildPremiumTier);
+        const obj3 = require(4081) /* getGuildTierFromGuild */;
       }
       tmp7 = result;
     }

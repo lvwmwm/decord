@@ -1,55 +1,52 @@
-// Module ID: 9910
-// Function ID: 76601
+// Module ID: 9932
+// Function ID: 9933
 // Name: map
-// Dependencies: [31, 27, 1922, 33, 4165, 689, 624, 4161, 1827, 2]
+// Dependencies: [19, 17, 1946, 21, 4189, 712, 647, 4185, 1851, 2]
 // Exports: PileOverflow
 
-// Module 9910 (map)
-import "result";
+// Module 9932 (map)
+import "noop";
 import { View } from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import _getSystemLocale from "_getSystemLocale";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_4;
-let closure_5;
+let c4;
+let c5;
 const require = arg1;
-({ jsxs: closure_4, jsx: closure_5 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { alignItems: "center", justifyContent: "center", backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_MOD_STRONG, flexShrink: 0 };
-_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+({ jsxs: c4, jsx: c5 } = jsxProd);
+createCacheKey = { container: null };
+createCacheKey = { alignItems: "center", justifyContent: "center", backgroundColor: require("Themes").colors.BACKGROUND_MOD_STRONG, flexShrink: 0 };
+createCacheKey[0] = createCacheKey;
+createCacheKey = createCacheKey.createStyles(createCacheKey);
 let items = [[64, "text-lg/semibold"], [48, "text-md/semibold"], [40, "text-md/semibold"], [30, "text-sm/semibold"], [24, "text-xs/semibold"], [16, "text-xxs/semibold"]];
 const map = new Map(items);
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("design/components/Pile/native/PileOverflow.native.tsx");
+const result = require("_getSystemLocale").fileFinishedImporting("design/components/Pile/native/PileOverflow.native.tsx");
 
 export const PileOverflow = function PileOverflow(size) {
   let borderRadius;
   let value;
   size = size.size;
   ({ borderRadius, value } = size);
-  let obj = require(624) /* defaultAreStatesEqual */;
-  const items = [_isNativeReflectConstruct];
-  const stateFromStores = obj.useStateFromStores(items, () => outer1_3.locale);
-  obj = {};
-  const items1 = [_createForOfIteratorHelperLoose().container, ];
-  obj = { borderRadius, minWidth: size, height: size };
+  let obj = require(647) /* defaultAreStatesEqual */;
+  const items = [_getSystemLocale];
+  const stateFromStores = obj.useStateFromStores(items, () => locale.locale);
+  const items1 = [createCacheKey().container, ];
+  obj = { borderRadius, minWidth: size, height: size, paddingHorizontal: null };
   let num = 4;
   if (size >= 32) {
     num = 8;
   }
-  obj.paddingHorizontal = num;
+  obj = { style: items1, children: null };
+  obj[3] = num;
   items1[1] = obj;
-  obj.style = items1;
-  const obj1 = { lineClamp: 1, maxFontSizeMultiplier: 2 };
-  value = map.get(size);
-  let str = "text-md/semibold";
-  if (null != value) {
-    str = value;
+  let str = map.get(size);
+  if (str == null) {
+    str = "text-md/semibold";
   }
-  obj1.variant = str;
-  const items2 = ["+", require(1827) /* shortenAndLocalizeNumber */.humanizeValue(value, stateFromStores)];
-  obj1.children = items2;
-  obj.children = closure_4(require(4161) /* Text */.Text, obj1);
+  const obj1 = { lineClamp: 1, maxFontSizeMultiplier: 2, variant: str, children: null };
+  const items2 = ["+", require(1851) /* shortenAndLocalizeNumber */.humanizeValue(value, stateFromStores)];
+  obj1[3] = items2;
+  obj[1] = closure_4(require(4185) /* Text */.Text, obj1);
   return closure_5(View, obj);
 };

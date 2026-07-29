@@ -1,38 +1,39 @@
-// Module ID: 13884
-// Function ID: 106268
+// Module ID: 13905
+// Function ID: 13906
 // Name: FamilyCenterInlineWarningNotice
-// Dependencies: [31, 27, 33, 4165, 689, 7606, 4161, 2]
+// Dependencies: [19, 17, 21, 4189, 712, 7629, 4185, 2]
 // Exports: default
 
-// Module 13884 (FamilyCenterInlineWarningNotice)
-import "result";
+// Module 13905 (FamilyCenterInlineWarningNotice)
+import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_4;
-let closure_5;
+let c4;
+let c5;
 const require = arg1;
-({ jsx: closure_4, jsxs: closure_5 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { flexDirection: "row", alignItems: "flex-start", gap: require("_createForOfIteratorHelperLoose").space.PX_8, padding: require("_createForOfIteratorHelperLoose").space.PX_12, borderWidth: 1, borderColor: require("_createForOfIteratorHelperLoose").colors.BORDER_FEEDBACK_WARNING, borderRadius: require("_createForOfIteratorHelperLoose").radii.lg, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_FEEDBACK_WARNING };
-_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.text = { flex: 1, paddingRight: require("_createForOfIteratorHelperLoose").space.PX_8 };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-const obj1 = { flex: 1, paddingRight: require("_createForOfIteratorHelperLoose").space.PX_8 };
+({ jsx: c4, jsxs: c5 } = jsxProd);
+createCacheKey = { container: null, text: null };
+createCacheKey = { flexDirection: "row", alignItems: "flex-start", gap: require("Themes").space.PX_8, padding: require("Themes").space.PX_12, borderWidth: 1, borderColor: require("Themes").colors.BORDER_FEEDBACK_WARNING, borderRadius: require("Themes").radii.lg, backgroundColor: require("Themes").colors.BACKGROUND_FEEDBACK_WARNING };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { flex: 1, paddingRight: require("Themes").space.PX_8 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+const obj1 = { flex: 1, paddingRight: require("Themes").space.PX_8 };
 const result = require("jsxProd").fileFinishedImporting("modules/parent_tools/native/FamilyCenterInlineWarningNotice.tsx");
 
 export default function FamilyCenterInlineWarningNotice(arg0) {
   let style;
   let text;
   ({ text, style } = arg0);
-  const tmp = _createForOfIteratorHelperLoose();
-  let obj = { style: items };
+  const tmp = createCacheKey();
+  let obj = { style: items, children: null };
   items = [tmp.container, style];
-  obj = { size: "sm", color: importDefault(689).colors.ICON_FEEDBACK_WARNING };
-  const items1 = [callback(require(7606) /* WarningIcon */.WarningIcon, obj), ];
+  obj = { size: "sm", color: null };
+  obj[1] = importDefault(712).colors.ICON_FEEDBACK_WARNING;
+  const items1 = [callback(require(7629) /* WarningIcon */.WarningIcon, obj), ];
   obj = { variant: "text-sm/medium", color: "text-strong", style: tmp.text, children: text };
-  items1[1] = callback(require(4161) /* Text */.Text, obj);
-  obj.children = items1;
+  items1[1] = callback(require(4185) /* Text */.Text, obj);
+  obj[1] = items1;
   return callback2(View, obj);
 };

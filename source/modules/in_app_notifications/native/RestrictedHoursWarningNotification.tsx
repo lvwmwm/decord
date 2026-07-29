@@ -1,29 +1,32 @@
-// Module ID: 10358
-// Function ID: 79886
-// Dependencies: [31, 27, 10241, 653, 33, 4165, 689, 10359, 4372, 10239, 6590, 10313, 4161, 2]
+// Module ID: 10379
+// Function ID: 10380
+// Dependencies: [19, 17, 10262, 676, 21, 4189, 712, 10380, 4395, 10260, 6611, 10334, 4185, 2]
 
-// Module 10358
-import importAllResult from "result";
+// Module 10379
+import importAllResult from "noop";
 import { View } from "get ActivityIndicator";
 import { NOTIFICATION_PREVIEW_LINE_CLAMP as closure_5 } from "set";
 import ME from "ME";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
 let closure_6;
-let closure_7;
+let error;
 const require = arg1;
-({ InAppNotificationTypes: closure_6, UserSettingsSections: closure_7 } = ME);
-let obj = {};
-obj = { width: 48, height: 48, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BRAND, borderRadius: require("_createForOfIteratorHelperLoose").radii.round, alignItems: "center", justifyContent: "center" };
-obj.iconContainer = obj;
-let closure_9 = _createForOfIteratorHelperLoose.createStyles(obj);
+let c3 = importAllResult;
+({ InAppNotificationTypes: closure_6, UserSettingsSections: error } = ME);
+let obj = { iconContainer: null };
+obj = { width: 48, height: 48, backgroundColor: require("Themes").colors.BACKGROUND_BRAND, borderRadius: require("Themes").radii.round, alignItems: "center", justifyContent: "center" };
+obj[0] = obj;
+let closure_9 = createCacheKey.createStyles(obj);
 const memoResult = importAllResult.memo(function RestrictedHoursWarningNotification(notification) {
   notification = notification.notification;
-  const type = notification.type;
-  let obj = { style: callback().iconContainer };
-  obj = { size: "sm", color: type(689).colors.WHITE };
-  obj.children = jsx(notification(10359).ThemeDarkIcon, { size: "sm", color: type(689).colors.WHITE });
+  let type;
+  type = notification.type;
+  let obj = { style: callback().iconContainer, children: null };
+  obj = { size: "sm", color: null };
+  obj[1] = type(712).colors.WHITE;
+  obj[1] = jsx(notification(10380).ThemeDarkIcon, { size: "sm", color: null });
   const items = [notification.title];
   const items1 = [type];
   const memo = importAllResult.useMemo(() => ({ type: "simple", text: notification.title }), items);
@@ -37,12 +40,11 @@ const memoResult = importAllResult.memo(function RestrictedHoursWarningNotificat
     obj = { screen: outer1_7.FAMILY_CENTER };
     notification(outer1_2[10]).openUserSettings(obj);
   }, items1);
-  obj = { icon: <View size="sm" color={type(689).colors.WHITE} />, header: memo };
-  const obj1 = { variant: "redesign/message-preview/medium", color: "text-subtle", lineClamp: closure_5, children: notification.subtitle };
-  obj.children = jsx(notification(4161).Text, { variant: "redesign/message-preview/medium", color: "text-subtle", lineClamp: closure_5, children: notification.subtitle });
-  obj.onPress = callback;
-  obj.notification = notification;
-  return jsx(notification(10313).NotificationPressable, { icon: <View size="sm" color={type(689).colors.WHITE} />, header: memo });
+  obj = { icon: <View size="sm" color={null} />, header: memo, children: null, onPress: null, notification: null };
+  obj[2] = jsx(notification(4185).Text, { variant: "redesign/message-preview/medium", color: "text-subtle", lineClamp: closure_5, children: notification.subtitle });
+  obj[3] = callback;
+  obj[4] = notification;
+  return jsx(notification(10334).NotificationPressable, { icon: <View size="sm" color={null} />, header: memo, children: null, onPress: null, notification: null });
 });
 const result = require("set").fileFinishedImporting("modules/in_app_notifications/native/RestrictedHoursWarningNotification.tsx");
 

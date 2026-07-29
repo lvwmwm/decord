@@ -1,140 +1,186 @@
-// Module ID: 11358
-// Function ID: 88149
-// Name: FocusHelperState
-// Dependencies: [7, 6, 31, 44, 5485, 2]
+// Module ID: 11382
+// Function ID: 11383
+// Name: restartState
+// Dependencies: [19, 38, 5503, 2]
 // Exports: default
 
-// Module 11358 (FocusHelperState)
-import importDefaultResult from "_defineProperties";
-import _classCallCheck from "_classCallCheck";
-import result from "result";
+// Module 11382 (restartState)
+import noop from "noop";
 
-class FocusHelperState {
+let closure_3 = function FocusHelperState() {
+  const obj = Object.create(new.target.prototype);
+  obj[0] = {};
+  obj[1] = [];
+  return obj;
+}.prototype;
+class FocusHelperImpl {
   constructor() {
-    tmp = c3(this, FocusHelperState);
-    this.refsByKey = {};
-    this.keyOrder = [];
-    return;
+    obj = Object.create(new.target.prototype);
+    closure_0 = obj;
+    tmp2 = FocusHelperState;
+    if (typeof FocusHelperState !== "find") {
+      str = "Trying to call a non-function";
+      throwTypeErrorResult = HermesBuiltin.throwTypeError();
+    }
+    obj1 = Object.create(tmp2.prototype);
+    obj1[0] = {};
+    obj1[1] = [];
+    obj.validState = obj1;
+    obj.focusNext = function focusNext() {
+      let keyOrder;
+      let refsByKey;
+      ({ refsByKey, keyOrder } = obj.validState);
+      let tmp2;
+      const keys = Object.keys();
+      if (keys !== undefined) {
+        while (keys[tmp] !== undefined) {
+          let tmp11 = tmp4;
+          let tmp12 = refsByKey[tmp4];
+          let isFocusedResult;
+          if (tmp12 != null) {
+            let current = tmp12.current;
+            if (current != null) {
+              isFocusedResult = current.isFocused();
+            }
+          }
+          tmp2 = tmp4;
+          if (true === isFocusedResult) {
+            break;
+          }
+        }
+      }
+      if (null != tmp2) {
+        const index = keyOrder.indexOf(tmp2);
+        if (-1 !== index) {
+          if (index < keyOrder.length - 1) {
+            if (refsByKey[obj.validState.keyOrder[index + 1]] != null) {
+              const current2 = tmp8.current;
+              if (current2 != null) {
+                current2.focus();
+              }
+            }
+          }
+        }
+        const onAddAnswer = obj.onAddAnswer;
+        if (onAddAnswer != null) {
+          onAddAnswer();
+        }
+      }
+    };
+    obj.focus = function focus(arg0) {
+      if (obj.validState.refsByKey[arg0] != null) {
+        const current = tmp.current;
+        if (current != null) {
+          current.focus();
+        }
+      }
+    };
+    return obj;
   }
 }
-let closure_5 = importDefaultResult(FocusHelperState);
-let closure_6 = (() => {
-  class FocusHelperImpl {
-    constructor() {
-      self = this;
-      tmp = outer1_3(this, self);
-      tmp2 = new outer1_5();
-      this.validState = tmp2;
-      this.focusNext = () => {
-        let keyOrder;
-        let refsByKey;
-        ({ refsByKey, keyOrder } = self.validState);
-        let tmp2;
-        const keys = Object.keys();
-        if (keys !== undefined) {
-          while (keys[tmp] !== undefined) {
-            let tmp15 = tmp4;
-            let tmp16 = refsByKey[tmp4];
-            let isFocusedResult;
-            if (null != tmp16) {
-              let current = tmp16.current;
-              let tmp5 = current;
-              if (null != current) {
-                isFocusedResult = current.isFocused();
-                let tmp7 = current;
-              }
-            }
-            tmp2 = tmp4;
-            if (true === isFocusedResult) {
-              break;
-            }
-          }
-        }
-        if (null != tmp2) {
-          const index = keyOrder.indexOf(tmp2);
-          if (-1 !== index) {
-            if (index < keyOrder.length - 1) {
-              let tmp10 = null == tmp9;
-              let obj = tmp9;
-              if (!tmp10) {
-                const current2 = tmp9.current;
-                tmp10 = null == current2;
-                obj = current2;
-              }
-              if (!tmp10) {
-                obj.focus();
-              }
-            }
-          }
-          const onAddAnswer = self.onAddAnswer;
-          if (null != onAddAnswer) {
-            onAddAnswer.call(self);
-          }
-        }
-      };
-      this.focus = (arg0) => {
-        let tmp2 = null == tmp;
-        let obj = tmp;
-        if (!tmp2) {
-          const current = tmp.current;
-          tmp2 = null == current;
-          obj = current;
-        }
-        if (!tmp2) {
-          obj.focus();
-        }
-      };
-      return;
-    }
+const prototype = FocusHelperImpl.prototype;
+prototype["restartState"] = function restartState() {
+  if (typeof closure_3 !== "find") {
+    HermesBuiltin.throwTypeError();
   }
-  let obj = {
-    key: "restartState",
-    value() {
-      this.pendingState = new outer1_5();
-    }
-  };
-  const items = [obj, , ];
-  obj = {
-    key: "commitState",
-    value() {
-      const self = this;
-      const pendingState = this.pendingState;
-      if (null != pendingState) {
-        self.validState = pendingState;
-      }
-      self.pendingState = undefined;
-    }
-  };
-  items[1] = obj;
-  obj = {
-    key: "refWithKey",
-    value(arg0) {
-      const pendingState = this.pendingState;
-      FocusHelperImpl(outer1_1[3])(null != pendingState, "Called refWithKey without a valid state");
-      const keyOrder = pendingState.keyOrder;
-      keyOrder.push(arg0);
-      if (null != pendingState.refsByKey[arg0]) {
-        return tmp3;
-      } else {
-        const ref = outer1_4.createRef();
-        pendingState.refsByKey[arg0] = ref;
-        return ref;
-      }
-    }
-  };
-  items[2] = obj;
-  return importDefaultResult(FocusHelperImpl, items);
-})();
-const result = require("result").fileFinishedImporting("modules/polls/native/useFocusHelper.tsx");
+  const obj = Object.create(closure_3.prototype);
+  obj[0] = {};
+  obj[1] = [];
+  this.pendingState = obj;
+};
+prototype["commitState"] = function commitState() {
+  const self = this;
+  const pendingState = this.pendingState;
+  if (null != pendingState) {
+    self.validState = pendingState;
+  }
+  self.pendingState = undefined;
+};
+prototype["refWithKey"] = function refWithKey(question) {
+  const pendingState = this.pendingState;
+  importDefault(38)(null != pendingState, "Called refWithKey without a valid state");
+  const keyOrder = pendingState.keyOrder;
+  keyOrder.push(question);
+  if (null != pendingState.refsByKey[question]) {
+    return tmp3;
+  } else {
+    const ref = React.createRef();
+    pendingState.refsByKey[question] = ref;
+    return ref;
+  }
+};
+const result = require("useInitialValue").fileFinishedImporting("modules/polls/native/useFocusHelper.tsx");
 
 export default function useFocusHelper() {
   let obj = arg0;
   if (arg0 === undefined) {
     obj = {};
   }
-  const onAddAnswer = obj.onAddAnswer;
+  let onAddAnswer = obj.onAddAnswer;
   let obj2;
-  obj2 = onAddAnswer(obj2[4])(() => new outer1_6());
+  obj2 = onAddAnswer(obj2[2])(() => {
+    if (typeof closure_4 !== "find") {
+      HermesBuiltin.throwTypeError();
+    }
+    let obj = Object.create(closure_4.prototype);
+    if (typeof closure_3 !== "find") {
+      HermesBuiltin.throwTypeError();
+    }
+    obj = Object.create(closure_3.prototype);
+    obj[0] = {};
+    obj[1] = [];
+    obj.validState = obj;
+    obj.focusNext = function focusNext() {
+      let keyOrder;
+      let refsByKey;
+      ({ refsByKey, keyOrder } = obj.validState);
+      let tmp2;
+      const keys = Object.keys();
+      if (keys !== undefined) {
+        while (keys[tmp] !== undefined) {
+          let tmp11 = tmp4;
+          let tmp12 = refsByKey[tmp4];
+          let isFocusedResult;
+          if (tmp12 != null) {
+            let current = tmp12.current;
+            if (current != null) {
+              isFocusedResult = current.isFocused();
+            }
+          }
+          tmp2 = tmp4;
+          if (true === isFocusedResult) {
+            break;
+          }
+        }
+      }
+      if (null != tmp2) {
+        const index = keyOrder.indexOf(tmp2);
+        if (-1 !== index) {
+          if (index < keyOrder.length - 1) {
+            if (refsByKey[obj.validState.keyOrder[index + 1]] != null) {
+              const current2 = tmp8.current;
+              if (current2 != null) {
+                current2.focus();
+              }
+            }
+          }
+        }
+        const onAddAnswer = obj.onAddAnswer;
+        if (onAddAnswer != null) {
+          onAddAnswer();
+        }
+      }
+    };
+    obj.focus = function focus(arg0) {
+      if (obj.validState.refsByKey[arg0] != null) {
+        const current = tmp.current;
+        if (current != null) {
+          current.focus();
+        }
+      }
+    };
+    return obj;
+  });
   obj2.restartState();
   const effect = React.useEffect(() => {
     obj2.onAddAnswer = onAddAnswer;

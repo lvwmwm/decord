@@ -1,118 +1,41 @@
-// Module ID: 7856
-// Function ID: 62176
-// Name: _createForOfIteratorHelperLoose
-// Dependencies: [57, 4079, 4080, 4087, 22, 2]
+// Module ID: 7879
+// Function ID: 7880
+// Name: getFirstEligibleUserExperiment
+// Dependencies: [32, 4103, 4104, 4111, 12, 2]
 
-// Module 7856 (_createForOfIteratorHelperLoose)
+// Module 7879 (getFirstEligibleUserExperiment)
 import _slicedToArray from "_slicedToArray";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import getHash from "getHash";
 import ExperimentBuckets from "ExperimentBuckets";
 
-let closure_5;
+let c5;
 let closure_6;
 const require = arg1;
-function _createForOfIteratorHelperLoose(iterable) {
-  let closure_0 = iterable;
-  iterable = "undefined" !== typeof Symbol;
-  if (iterable) {
-    const _Symbol = Symbol;
-    iterable = iterable[Symbol.iterator];
-  }
-  if (!iterable) {
-    iterable = iterable[Symbol.iterator];
-  }
-  if (iterable) {
-    const iter = iterable.call(iterable);
-    const next = iter.next;
-    return next.bind(iter);
-  } else {
-    const _Array = Array;
-    let tmp = iterable;
-    if (!Array.isArray(iterable)) {
-      let tmp2;
-      if (iterable) {
-        if ("string" === typeof iterable) {
-          tmp2 = _arrayLikeToArray(iterable, undefined);
-        } else {
-          const toString = {}.toString;
-          const substr = toString.call(iterable).slice(8, -1);
-          let name = substr;
-          if (tmp3) {
-            name = iterable.constructor.name;
-          }
-          if ("Map" !== name) {
-            if ("Set" !== name) {
-              if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(iterable, undefined);
-              } else {
-                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
-              }
-            }
-            tmp2 = arr;
-          }
-          const _Array2 = Array;
-          arr = Array.from(iterable);
-          const callResult = toString.call(iterable);
-          tmp3 = "Object" === substr && iterable.constructor;
-        }
-      }
-      tmp = tmp2;
-      if (!tmp2) {
-        const _TypeError = TypeError;
-        const typeError = new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
-        throw typeError;
-      }
-    }
-    if (tmp) {
-      closure_0 = tmp;
-    }
-    let c1 = 0;
-    return () => {
-      if (closure_1 >= length.length) {
-        let obj = { done: true };
-      } else {
-        obj = { done: false };
-        closure_1 = tmp3 + 1;
-        obj.value = length[+closure_1];
-      }
-      return obj;
-    };
-  }
-}
-function _arrayLikeToArray(arg0, arg1) {
-  let length;
-  if (tmp) {
-    length = arg0.length;
-  }
-  const ArrayResult = Array(length);
-  for (let num = 0; num < length; num = num + 1) {
-    ArrayResult[num] = arg0[num];
-  }
-  return ArrayResult;
-}
 function getFirstEligibleUserExperiment(arg0) {
-  const tmp = _createForOfIteratorHelperLoose(arg0);
-  const iter = tmp();
-  let iter2 = iter;
-  if (!iter.done) {
-    const value = iter2.value;
-    const userExperimentDescriptor = authStore.getUserExperimentDescriptor(value);
-    while (null == userExperimentDescriptor) {
-      let iter3 = tmp();
-      iter2 = iter3;
+  const iter = arg0[Symbol.iterator]();
+  const nextResult = iter.next();
+  while (iter !== undefined) {
+    let tmp3 = authStore;
+    let tmp2 = nextResult;
+    let userExperimentDescriptor = authStore.getUserExperimentDescriptor(nextResult);
+    let tmp5 = userExperimentDescriptor;
+    if (null != userExperimentDescriptor) {
+      let tmp6 = nextResult;
+      let items = [tmp2, userExperimentDescriptor];
+      let tmp7 = iter;
+      iter.return();
+      return items;
     }
-    const items = [value, userExperimentDescriptor];
-    return items;
   }
   return null;
 }
-({ ExperimentTypes: closure_5, ExperimentBuckets: closure_6 } = ExperimentBuckets);
+({ ExperimentTypes: c5, ExperimentBuckets: closure_6 } = ExperimentBuckets);
 let result = require("ExperimentBuckets").fileFinishedImporting("utils/ExperimentUtils.tsx");
 
 export default {
   getFirstEligibleUserExperiment,
-  isInExperimentBucket(arg0, arg1) {
-    return authStore.getUserExperimentBucket(arg0) === arg1;
+  isInExperimentBucket(id) {
+    return authStore.getUserExperimentBucket(id) === arg1;
   },
   experimentDescriptorEquals(type, type2) {
     if (null == type) {
@@ -142,8 +65,8 @@ export default {
           } else if (type.revision !== type2.revision) {
             return false;
           } else if (type.type === constants.USER) {
-            if (type2.type === constants.USER) {
-              return importDefault(22).isEqual(type.context, type2.context);
+            if (type2.type === tmp.USER) {
+              return importDefault(12).isEqual(type.context, type2.context);
             }
           }
         }
@@ -155,7 +78,7 @@ export default {
     const tmp = getFirstEligibleUserExperiment(arg0);
     if (null != tmp) {
       const tmp3 = callback(tmp, 2);
-      const result = require(4087) /* trackExposureToExperiment */.trackExposureToExperiment(tmp3[0], tmp4);
+      const result = require(4111) /* trackExposureToExperiment */.trackExposureToExperiment(tmp3[0], tmp4);
       return tmp3[1];
     }
   },
@@ -175,32 +98,35 @@ export default {
     let closure_0 = arg1;
     const entries = Object.entries(arg0);
     return entries.reduce((arg0, arg1) => {
-      let str;
       let tmp;
-      [str, tmp] = arg1;
-      const tmp3 = outer1_3(str.split("-"), 2);
-      const first = tmp3[0];
-      if (null == tmp3[1]) {
-        let flag = false;
-      } else {
-        const _Date = Date;
-        const _HermesInternal = HermesInternal;
-        const date = new Date("" + first + "-" + arr.slice(0, 2) + "-01");
-        flag = date > closure_0;
-      }
-      while (true) {
-        if (!flag) {
-          break;
-        } else {
-          let tmp13 = outer1_6;
-          flag = tmp > outer1_6.CONTROL;
-          break;
+      let tmp2;
+      [tmp, tmp2] = arg1;
+      let tmp3 = (function isRecentExperiment(str, closure_0) {
+        let tmp4;
+        let tmp5;
+        try {
+          [tmp4, tmp5] = callback(str.split("-"), 2);
+          if (null == tmp5) {
+            return false;
+          } else {
+            const _Date = Date;
+            const _HermesInternal = HermesInternal;
+            const date = new Date("" + tmp4 + "-" + arr.slice(0, 2) + "-01");
+            return date > closure_0;
+          }
+          arr = tmp5;
+          const tmp3 = callback(str.split("-"), 2);
+        } catch (err) {
+          return false;
         }
-        if (flag) {
-          arg0[str] = tmp;
-        }
-        return arg0;
+      })(tmp, closure_0);
+      if (tmp3) {
+        tmp3 = tmp2 > outer1_6.CONTROL;
       }
+      if (tmp3) {
+        arg0[tmp] = tmp2;
+      }
+      return arg0;
     }, {});
   }
 };

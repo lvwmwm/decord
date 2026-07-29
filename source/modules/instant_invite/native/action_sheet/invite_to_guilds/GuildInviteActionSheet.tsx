@@ -1,136 +1,139 @@
-// Module ID: 12186
-// Function ID: 95308
+// Module ID: 12210
+// Function ID: 12211
 // Name: EmptyGuildList
-// Dependencies: [57, 31, 27, 33, 4165, 689, 1273, 1212, 12187, 12188, 12184, 4161, 5193, 11673, 12189, 5220, 5221, 9215, 8326, 2]
+// Dependencies: [32, 19, 17, 21, 4189, 712, 1297, 1236, 12211, 12212, 12208, 4185, 5215, 11697, 12213, 5242, 5243, 9239, 8350, 2]
 // Exports: default
 
-// Module 12186 (EmptyGuildList)
+// Module 12210 (EmptyGuildList)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
-import { View } from "get ActivityIndicator";
+import set from "set";
+import { View } from "SearchField";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
 let closure_6;
-let closure_7;
+let error;
 const require = arg1;
 function EmptyGuildList() {
-  const obj = { containerStyle: _createForOfIteratorHelperLoose().emptyStateContainer };
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj.title = intl.string(require(1212) /* getSystemLocale */.t["2bfiLk"]);
-  const intl2 = require(1212) /* getSystemLocale */.intl;
-  obj.body = intl2.string(require(1212) /* getSystemLocale */.t.V6nAfF);
-  obj.darkSource = importDefault(12187);
-  obj.lightSource = importDefault(12188);
-  return callback2(require(1273) /* Button */.ThemedEmptyState, obj);
+  const obj = { containerStyle: createCacheKey().emptyStateContainer, title: null, body: null, darkSource: null, lightSource: null };
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj[1] = intl.string(require(1236) /* getSystemLocale */.t["2bfiLk"]);
+  const intl2 = require(1236) /* getSystemLocale */.intl;
+  obj[2] = intl2.string(require(1236) /* getSystemLocale */.t.V6nAfF);
+  obj[3] = importDefault(12211);
+  obj[4] = importDefault(12212);
+  return callback2(require(1297) /* Button */.ThemedEmptyState, obj);
 }
 function GuildList(recipientId) {
+  let arr;
+  let arr2;
   recipientId = recipientId.recipientId;
   const source = recipientId.source;
+  let dependencyMap;
   let callback;
-  const dependencyMap = _createForOfIteratorHelperLoose();
-  let obj = recipientId(12184);
-  let tmp = callback(obj.useServerInviteRows(recipientId, recipientId.query), 2);
-  const first = tmp[0];
-  if (0 === first.length) {
+  dependencyMap = createCacheKey();
+  let obj = recipientId(12208);
+  [arr, arr2] = callback(obj.useServerInviteRows(recipientId, recipientId.query), 2);
+  if (0 === arr.length) {
     if (0 === arr2.length) {
       let items = [];
     }
-    let tmp4 = 0 === first.length;
-    if (!tmp4) {
-      tmp4 = 0 === arr2.length;
+    let tmp5 = 0 === arr.length;
+    if (!tmp5) {
+      tmp5 = 0 === arr2.length;
     }
-    callback = tmp4;
-    obj = {
-      renderItem(arg0) {
-          let end;
-          let item;
-          let start;
-          ({ item, start, end } = arg0);
-          return outer1_6(source(sectionTitle[14]), { row: item, recipientId, source, start, end });
-        }
+    callback = tmp5;
+    obj = { renderItem: null, contentContainerStyle: null, sections: null, renderSectionHeader: null, stickySectionHeadersEnabled: true, keyExtractor: null, ListEmptyComponent: null };
+    obj[0] = function renderItem(arg0) {
+      let end;
+      let item;
+      let start;
+      ({ item, start, end } = arg0);
+      return outer1_6(source(sectionTitle[14]), { row: item, recipientId, source, start, end });
     };
-    obj = {};
-    let num3 = 0;
-    if (tmp4) {
-      num3 = 24;
+    let num = 0;
+    if (tmp5) {
+      num = 24;
     }
-    obj.paddingTop = num3;
-    obj.paddingBottom = source(5193)().insets.bottom + source(689).space.PX_16;
-    obj.contentContainerStyle = obj;
-    obj.sections = items;
-    obj.renderSectionHeader = function renderSectionHeader(section) {
+    obj = { paddingTop: null, paddingBottom: null };
+    obj[0] = num;
+    obj[1] = source(5215)().insets.bottom + source(712).space.PX_16;
+    obj[1] = obj;
+    obj[2] = items;
+    obj[3] = function renderSectionHeader(section) {
       section = section.section;
       let tmp = null;
       if (!c3) {
         let tmp2 = null;
         if (section.data.length > 0) {
-          const obj = { style: sectionTitle.sectionTitle, variant: "text-sm/semibold", color: "text-default", children: section.title };
+          const obj = { style: null, variant: "text-sm/semibold", color: "text-default", children: null };
+          obj[0] = sectionTitle.sectionTitle;
+          obj[3] = section.title;
           tmp2 = outer1_6(recipientId(sectionTitle[11]).Text, obj);
         }
         tmp = tmp2;
       }
       return tmp;
     };
-    obj.stickySectionHeadersEnabled = true;
-    obj.keyExtractor = function keyExtractor(guild) {
+    obj[5] = function keyExtractor(guild) {
       return guild.guild.id;
     };
-    obj.ListEmptyComponent = EmptyGuildList;
-    return closure_6(recipientId(11673).UserProfileStackedActionSheetSectionList, obj);
+    obj[6] = EmptyGuildList;
+    return closure_6(tmp(11697).UserProfileStackedActionSheetSectionList, obj);
   }
-  const obj1 = {};
-  const intl = recipientId(1212).intl;
-  obj1.title = intl.string(recipientId(1212).t["u+Ithu"]);
-  obj1.data = first;
+  const obj1 = { title: null, data: null };
+  const intl = tmp(1236).intl;
+  obj1[0] = intl.string(recipientId(1236).t["u+Ithu"]);
+  obj1[1] = arr;
   items = [obj1, ];
-  const obj2 = {};
-  const intl2 = recipientId(1212).intl;
-  obj2.title = intl2.string(recipientId(1212).t["c5T+X/"]);
-  obj2.data = tmp[1];
+  const obj2 = { title: null, data: null };
+  const intl2 = tmp(1236).intl;
+  obj2[0] = intl2.string(recipientId(1236).t["c5T+X/"]);
+  obj2[1] = arr2;
   items[1] = obj2;
 }
-({ jsx: closure_6, jsxs: closure_7 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16 };
-_createForOfIteratorHelperLoose.content = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.searchbarWrapper = { rowGap: 8, backgroundColor: require("_createForOfIteratorHelperLoose").colors.MOBILE_ACTIONSHEET_BACKGROUND };
-let obj2 = { paddingBottom: 6, paddingTop: 24, backgroundColor: require("_createForOfIteratorHelperLoose").colors.MOBILE_ACTIONSHEET_BACKGROUND };
-_createForOfIteratorHelperLoose.sectionTitle = obj2;
-_createForOfIteratorHelperLoose.emptyStateContainer = { margin: 24 };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-let obj1 = { rowGap: 8, backgroundColor: require("_createForOfIteratorHelperLoose").colors.MOBILE_ACTIONSHEET_BACKGROUND };
+({ jsx: closure_6, jsxs: error } = jsxProd);
+createCacheKey = { content: null, searchbarWrapper: null, sectionTitle: null, emptyStateContainer: null };
+createCacheKey = { paddingHorizontal: require("Themes").space.PX_16 };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { rowGap: 8, backgroundColor: require("Themes").colors.MOBILE_ACTIONSHEET_BACKGROUND };
+let obj1 = { rowGap: 8, backgroundColor: require("Themes").colors.MOBILE_ACTIONSHEET_BACKGROUND };
+createCacheKey[2] = { paddingBottom: 6, paddingTop: 24, backgroundColor: require("Themes").colors.MOBILE_ACTIONSHEET_BACKGROUND };
+createCacheKey[3] = { margin: 24 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let obj2 = { paddingBottom: 6, paddingTop: 24, backgroundColor: require("Themes").colors.MOBILE_ACTIONSHEET_BACKGROUND };
 const result = require("get ActivityIndicator").fileFinishedImporting("modules/instant_invite/native/action_sheet/invite_to_guilds/GuildInviteActionSheet.tsx");
 
 export default function GuildInviteActionSheet(arg0) {
   let recipientId;
   let source;
+  let _require;
   ({ recipientId, source } = arg0);
-  const tmp = _createForOfIteratorHelperLoose();
+  const tmp = createCacheKey();
   const tmp2 = callback(React.useState(""), 2);
-  const _require = tmp2[1];
-  let obj = {};
-  const intl = _require(1212).intl;
-  obj.title = intl.string(_require(1212).t.HvoZQD);
-  obj = { scrollable: true, startExpanded: true };
-  obj.header = callback2(_require(5220).BottomSheetTitleHeader, obj);
-  obj.contentStyles = tmp.content;
-  obj = { style: tmp.searchbarWrapper };
+  _require = tmp2[1];
+  let obj = { title: null };
+  const intl = _require(1236).intl;
+  obj[0] = intl.string(_require(1236).t.HvoZQD);
+  obj = { scrollable: true, startExpanded: true, header: callback2(_require(5242).BottomSheetTitleHeader, obj), contentStyles: tmp.content, children: null };
+  obj = { style: tmp.searchbarWrapper, children: null };
   const obj1 = {
     onChange(arg0) {
       callback(arg0);
-    }
+    },
+    placeholder: null
   };
-  const intl2 = _require(1212).intl;
-  obj1.placeholder = intl2.string(_require(1212).t.uohsSv);
-  const items = [callback2(_require(9215).SearchField, obj1), ];
-  const obj2 = { variant: "text-xs/medium", color: "text-subtle" };
-  const intl3 = _require(1212).intl;
-  const obj3 = { xDays: importDefault(8326).INVITE_OPTIONS_7_DAYS.label };
-  obj2.children = intl3.format(_require(1212).t["4UyUHh"], obj3);
-  items[1] = callback2(_require(4161).Text, obj2);
-  obj.children = items;
+  const intl2 = _require(1236).intl;
+  obj1[1] = intl2.string(_require(1236).t.uohsSv);
+  const items = [callback2(_require(9239).SearchField, obj1), ];
+  const obj2 = { variant: "text-xs/medium", color: "text-subtle", children: null };
+  const intl3 = _require(1236).intl;
+  const obj3 = { xDays: null };
+  obj3[0] = importDefault(8350).INVITE_OPTIONS_7_DAYS.label;
+  obj2[2] = intl3.format(_require(1236).t["4UyUHh"], obj3);
+  items[1] = callback2(_require(4185).Text, obj2);
+  obj[1] = items;
   const items1 = [callback3(View, obj), callback2(GuildList, { query: tmp2[0], recipientId, source })];
-  obj.children = items1;
-  return callback3(_require(5221).BottomSheet, obj);
+  obj[4] = items1;
+  return callback3(_require(5243).BottomSheet, obj);
 };

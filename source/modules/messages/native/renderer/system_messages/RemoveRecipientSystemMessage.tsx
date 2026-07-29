@@ -1,15 +1,15 @@
-// Module ID: 7736
-// Function ID: 61632
+// Module ID: 7759
+// Function ID: 7760
 // Name: createRemoveRecipientSystemMessage
-// Dependencies: [1352, 1348, 1850, 7720, 7722, 1212, 7723, 2]
+// Dependencies: [1376, 1372, 1874, 7743, 7745, 1236, 7746, 2]
 // Exports: createRemoveRecipientSystemMessage
 
-// Module 7736 (createRemoveRecipientSystemMessage)
-import { THREAD_CHANNEL_TYPES } from "_callSuper";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_5 from "_isNativeReflectConstruct";
+// Module 7759 (createRemoveRecipientSystemMessage)
+import { THREAD_CHANNEL_TYPES } from "createChannelRecord";
+import ensureGuildLoaded from "ensureGuildLoaded";
+import mergeGuildAvatar from "mergeGuildAvatar";
 
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/messages/native/renderer/system_messages/RemoveRecipientSystemMessage.tsx");
+const result = require("mergeGuildAvatar").fileFinishedImporting("modules/messages/native/renderer/system_messages/RemoveRecipientSystemMessage.tsx");
 
 export const createRemoveRecipientSystemMessage = function createRemoveRecipientSystemMessage(message) {
   let roleStyle;
@@ -20,42 +20,45 @@ export const createRemoveRecipientSystemMessage = function createRemoveRecipient
   if (hasItem) {
     hasItem = THREAD_CHANNEL_TYPES.has(channel.type);
   }
-  let obj = require(7720) /* getMessageAuthorWithProcessedColor */;
+  let obj = require(7743) /* getMessageAuthorWithProcessedColor */;
   const messageAuthorWithProcessedColor = obj.getMessageAuthorWithProcessedColor(message);
-  obj = { username: messageAuthorWithProcessedColor.nick, usernameOnClick: importDefault(7722)({ message, author: messageAuthorWithProcessedColor, roleStyle }) };
+  obj = { username: messageAuthorWithProcessedColor.nick, usernameOnClick: importDefault(7745)({ message, author: messageAuthorWithProcessedColor, roleStyle }) };
   if (message.author.id === first) {
-    obj = {};
-    const intl = require(1212) /* getSystemLocale */.intl;
+    const intl = tmp5(1236).intl;
     const formatToParts = intl.formatToParts;
-    const t = require(1212) /* getSystemLocale */.t;
+    const t = tmp5(1236).t;
     if (hasItem) {
       let formatToPartsResult = formatToParts(t.uHmblj, obj);
     } else {
       formatToPartsResult = formatToParts(t["Qn5+Lf"], obj);
     }
-    obj.content = formatToPartsResult;
-    const merged = Object.assign(importDefault(7723)(message));
+    obj = { content: null };
+    obj[0] = formatToPartsResult;
+    const merged = Object.assign(tmp8(7746)(message));
     return obj;
   } else {
     user = user.getUser(first);
-    let obj3 = require(7720) /* getMessageAuthorWithProcessedColor */;
-    const userAuthorWithProcessedColor = obj3.getUserAuthorWithProcessedColor(user, channel);
+    const userAuthorWithProcessedColor = tmp5(7743).getUserAuthorWithProcessedColor(user, channel);
     const obj1 = {};
     const merged1 = Object.assign(obj);
-    obj1["otherUsername"] = userAuthorWithProcessedColor.nick;
-    const obj2 = { userId: first, message, author: userAuthorWithProcessedColor, roleStyle };
-    obj1["otherUsernameOnClick"] = importDefault(7722)(obj2);
-    obj3 = {};
-    const intl2 = require(1212) /* getSystemLocale */.intl;
+    obj1.otherUsername = userAuthorWithProcessedColor.nick;
+    const obj2 = { userId: null, message: null, author: null, roleStyle: null };
+    obj2[0] = first;
+    obj2[1] = message;
+    obj2[2] = userAuthorWithProcessedColor;
+    obj2[3] = roleStyle;
+    obj1.otherUsernameOnClick = tmp8(7745)(obj2);
+    const intl2 = tmp5(1236).intl;
     const formatToParts2 = intl2.formatToParts;
-    const t2 = require(1212) /* getSystemLocale */.t;
+    const t2 = tmp5(1236).t;
     if (hasItem) {
       let formatToParts2Result = formatToParts2(t2.KBrM5t, obj1);
     } else {
       formatToParts2Result = formatToParts2(t2.QtZ0RD, obj1);
     }
-    obj3.content = formatToParts2Result;
-    const merged2 = Object.assign(importDefault(7723)(message));
+    const obj3 = { content: null };
+    obj3[0] = formatToParts2Result;
+    const merged2 = Object.assign(tmp8(7746)(message));
     return obj3;
   }
 };

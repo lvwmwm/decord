@@ -1,14 +1,14 @@
-// Module ID: 8738
-// Function ID: 69152
+// Module ID: 8762
+// Function ID: 8763
 // Name: useVirtualCurrencyData
-// Dependencies: [31, 5791, 8695, 2]
+// Dependencies: [19, 5809, 8719, 2]
 // Exports: useVirtualCurrencyData
 
-// Module 8738 (useVirtualCurrencyData)
-import result from "result";
+// Module 8762 (useVirtualCurrencyData)
+import noop from "noop";
 
 const require = arg1;
-const result = require("module_8695").fileFinishedImporting("modules/collectibles/native/hooks/useVirtualCurrencyData.tsx");
+const result = require("module_8719").fileFinishedImporting("modules/collectibles/native/hooks/useVirtualCurrencyData.tsx");
 
 export const useVirtualCurrencyData = function useVirtualCurrencyData(product, canUseShopDiscountsResult) {
   let obj = productOrbPrice(balance[1]);
@@ -20,14 +20,14 @@ export const useVirtualCurrencyData = function useVirtualCurrencyData(product, c
     price: productOrbPrice,
     balance,
     canAfford: React.useMemo(() => {
-      let tmp = null;
+      let tmp2 = null;
       if (null != productOrbPrice) {
-        tmp = null;
+        tmp2 = null;
         if (null != balance) {
-          tmp = productOrbPrice.amount <= balance;
+          tmp2 = tmp.amount <= tmp3;
         }
       }
-      return tmp;
+      return tmp2;
     }, items)
   };
   return obj;

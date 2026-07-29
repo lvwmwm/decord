@@ -1,12 +1,12 @@
-// Module ID: 14148
-// Function ID: 108644
+// Module ID: 14170
+// Function ID: 14171
 // Name: useVideoQuestCaptions
-// Dependencies: [57, 31, 9455, 507, 14149, 2]
+// Dependencies: [32, 19, 9479, 530, 14171, 2]
 // Exports: useVideoQuestCaptions
 
-// Module 14148 (useVideoQuestCaptions)
+// Module 14170 (useVideoQuestCaptions)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
+import noop from "noop";
 
 const require = arg1;
 let closure_4 = { NONE: "none", LOADING: "loading", SUCCESS: "success", ERROR: "error" };
@@ -15,12 +15,12 @@ const result = require("resolveAsset").fileFinishedImporting("modules/quests/nat
 export const useVideoQuestCaptions = (quest) => {
   let dependencyMap;
   let tmp4;
-  const questAsset = url(9455).getQuestAsset(quest, url(9455).QuestAssetType.VIDEO_PLAYER_CAPTION, undefined, true);
+  const questAsset = url(9479).getQuestAsset(quest, url(9479).QuestAssetType.VIDEO_PLAYER_CAPTION, undefined, true);
   url = undefined;
-  if (null != questAsset) {
+  if (questAsset != null) {
     url = questAsset.url;
   }
-  let obj = url(9455);
+  let obj = url(9479);
   [tmp4, dependencyMap] = callback(React.useState(constants.NONE), 2);
   const captions = callback(React.useState(null), 2);
   callback = captions[1];
@@ -28,17 +28,26 @@ export const useVideoQuestCaptions = (quest) => {
   const effect = React.useEffect(() => {
     if (null != url) {
       const HTTP = url(outer1_1[3]).HTTP;
-      const obj = { url, rejectWithError: true };
+      const obj = { url: null, rejectWithError: true };
+      obj[0] = tmp;
       const value = HTTP.get(obj);
       value.then((text) => {
-        outer1_2(url(outer2_1[4]).parseVtt(text.text).cues);
-        outer1_1(outer2_4.SUCCESS);
+        try {
+          callback2(outer1_0(outer1_1[4]).parseVtt(text.text).cues);
+          callback(outer1_4.SUCCESS);
+        } catch (err) {
+          callback(outer1_4.ERROR);
+        }
       }).catch(() => {
-        outer1_1(outer2_4.ERROR);
+        callback(outer1_4.ERROR);
       });
       const nextPromise = value.then((text) => {
-        outer1_2(url(outer2_1[4]).parseVtt(text.text).cues);
-        outer1_1(outer2_4.SUCCESS);
+        try {
+          callback2(outer1_0(outer1_1[4]).parseVtt(text.text).cues);
+          callback(outer1_4.SUCCESS);
+        } catch (err) {
+          callback(outer1_4.ERROR);
+        }
       });
     } else {
       callback(outer1_4.NONE);

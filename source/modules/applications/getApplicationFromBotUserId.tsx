@@ -1,11 +1,11 @@
-// Module ID: 11670
-// Function ID: 90460
+// Module ID: 11694
+// Function ID: 11695
 // Name: useGetApplicationFromBotUserId
-// Dependencies: [5878, 653, 566, 2]
+// Dependencies: [5896, 676, 589, 2]
 // Exports: default
 
-// Module 11670 (useGetApplicationFromBotUserId)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 11694 (useGetApplicationFromBotUserId)
+import createUserWidgetFromServer from "createUserWidgetFromServer";
 import { EMPTY_STRING_SNOWFLAKE_ID } from "ME";
 
 const require = arg1;
@@ -13,22 +13,22 @@ const result = require("initialize").fileFinishedImporting("modules/applications
 
 export default function useGetApplicationFromBotUserId(arg0) {
   const _require = arg0;
-  let tmp;
-  const items = [_isNativeReflectConstruct];
-  const stateFromStores = _require(566).useStateFromStores(items, () => {
-    let tmp;
+  const items = [createUserWidgetFromServer];
+  const stateFromStores = _require(589).useStateFromStores(items, () => {
+    let tmp = closure_0;
+    let tmp2;
     if (null !== closure_0) {
-      const userProfile = outer1_2.getUserProfile(null != closure_0 ? closure_0 : outer1_3);
+      if (tmp == null) {
+        tmp = outer1_3;
+      }
+      const userProfile = outer1_2.getUserProfile(tmp);
       let application;
-      if (null != userProfile) {
+      if (userProfile != null) {
         application = userProfile.application;
       }
-      tmp = application;
+      tmp2 = application;
     }
-    return tmp;
+    return tmp2;
   });
-  if (null != stateFromStores) {
-    tmp = stateFromStores;
-  }
-  return tmp;
+  return stateFromStores;
 };

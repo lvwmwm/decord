@@ -1,60 +1,424 @@
-// Module ID: 15562
-// Function ID: 119522
+// Module ID: 15596
+// Function ID: 15597
 // Name: handleOneRecipientInDM
-// Dependencies: [57, 5, 31, 27, 1348, 12785, 4237, 1850, 8789, 653, 33, 4165, 689, 4175, 4376, 8893, 10855, 4133, 566, 15552, 675, 3866, 1212, 9094, 8801, 12212, 6672, 6026, 1273, 8790, 2]
+// Dependencies: [32, 5, 19, 17, 1372, 12807, 4261, 1874, 8813, 676, 21, 4189, 712, 4199, 4399, 8917, 10879, 4157, 589, 15586, 698, 3890, 1236, 9118, 8825, 12236, 6693, 6044, 1297, 8814, 2]
 // Exports: default
 
-// Module 15562 (handleOneRecipientInDM)
+// Module 15596 (handleOneRecipientInDM)
 import _slicedToArray from "_slicedToArray";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import result from "result";
-import get_ActivityIndicator from "getInviteURL";
-import closure_8 from "_isNativeReflectConstruct";
-import closure_9 from "_isNativeReflectConstruct";
-import closure_10 from "_isNativeReflectConstruct";
-import closure_11 from "_isNativeReflectConstruct";
+import performQuery from "performQuery";
+import getGroupDMRecipientLimit from "getGroupDMRecipientLimit";
+import get_ActivityIndicator from "ACTION_SHEET_HEIGHT_HALF";
+import ensureGuildLoaded from "ensureGuildLoaded";
+import closure_9 from "performQuery";
+import createRTCConnection from "createRTCConnection";
+import mergeGuildAvatar from "mergeGuildAvatar";
 import { UserRowModes } from "UserRowModes";
 import ME from "ME";
-import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import jsxProd from "dispatcher";
+import createCacheKey from "createCacheKey";
 
-let closure_13;
 let closure_14;
 let closure_15;
 let closure_16;
 let closure_17;
 let closure_18;
 let closure_6;
-let closure_7;
+let error;
+let map1;
 const require = arg1;
 function handleOneRecipientInDM() {
-  return _handleOneRecipientInDM(...arguments);
+  const self = this;
+  const apply = _handleOneRecipientInDM.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
 }
 function _handleOneRecipientInDM() {
-  // CreateGeneratorClosureLongIndex (0x67)
-  const obj = callback2(tmp);
-  return obj(...arguments);
+  const self = this;
+  const tmp = callback2((arg0, arg1) => {
+    let closure_0 = arg0;
+    let closure_1 = arg1;
+    let c4 = 0;
+    let c5 = 0;
+    return (function*(arg0, arg1) {
+      if (c5 === 2) {
+        c5 = 3;
+        HermesBuiltin.throwTypeError();
+      } else if (tmp4 === 3) {
+        if (arg0 === 1) {
+          throw arg1;
+        } else if (arg0 === 2) {
+          let obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
+        } else {
+          return { value: "HermesInternal", done: null };
+        }
+      } else {
+        try {
+          c5 = 2;
+          if (0 === c4) {
+            if (arg0 === 1) {
+              c5 = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              c5 = 3;
+              obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            } else {
+              let _slicedToArray = tmp5;
+              const table = tmp2;
+              let callback;
+              let obj5 = callback(outer1_2[13]);
+              const obj1 = { recipientIds: null, location: "New Group DM", onBeforeTransition: null };
+              obj1[0] = [];
+              obj1[2] = callback;
+              c4 = 1;
+              c5 = 1;
+              let obj2 = { value: null, done: false };
+              obj2[0] = obj5.openPrivateChannel(obj1);
+              return obj2;
+            }
+          } else if (1 === tmp5) {
+            if (arg0 === 1) {
+              c5 = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              c5 = 3;
+              const obj3 = { value: null, done: true };
+              obj3[0] = arg1;
+              return obj3;
+            } else {
+              callback = arg1;
+              obj2 = callback(table[13]);
+              c4 = 2;
+              c5 = 1;
+              const obj4 = { value: null, done: false };
+              obj4[0] = obj2.addRecipients(callback, closure_0, undefined);
+              return obj4;
+            }
+          } else if (arg0 === 1) {
+            c5 = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            c5 = 3;
+            obj5 = { value: null, done: true };
+            obj5[0] = arg1;
+            return obj5;
+          } else {
+            callback = arg1;
+            c5 = 3;
+            obj = { value: null, done: true };
+            obj[0] = arg1;
+            return obj;
+          }
+        } catch (tmp17) {
+          c5 = tmp;
+          throw tmp17;
+        }
+      }
+    })();
+  });
+  const _handleOneRecipientInDM = tmp;
+  const apply = tmp.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
 }
 function _handleInviteUsers() {
-  // CreateGeneratorClosureLongIndex (0x67)
-  const obj = callback2(tmp);
-  return obj(...arguments);
+  const self = this;
+  const tmp = callback2((arg0) => {
+    let closure_0 = arg0;
+    let closure_1 = arg1;
+    let closure_2 = arg2;
+    let c5 = 0;
+    let c6 = 0;
+    const iter = (function*(arg0) {
+      if (c6 === 2) {
+        c6 = 3;
+        HermesBuiltin.throwTypeError();
+      } else if (tmp4 === 3) {
+        if (arg0 === 1) {
+          throw arg1;
+        } else if (arg0 === 2) {
+          let obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
+        } else {
+          return { value: "HermesInternal", done: null };
+        }
+      } else {
+        try {
+          c6 = 2;
+          if (0 === c5) {
+            if (arg0 === 1) {
+              c6 = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              c6 = 3;
+              obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            } else {
+              const callback = tmp2;
+              let _slicedToArray = tmp5;
+              let arr;
+              let dependencyMap;
+              if (arr === undefined) {
+                const _Array = Array;
+                arr = Array.from(outer1_9.getSelectedUsers());
+              }
+              _slicedToArray = undefined;
+              c5 = 1;
+              c6 = 1;
+              return { value: "ct", done: null };
+            }
+          } else {
+            if (1 === tmp5) {
+              if (arg0 === 1) {
+                c6 = 3;
+                throw arg1;
+              } else if (arg0 === 2) {
+                c6 = 3;
+                let obj1 = { value: null, done: true };
+                obj1[0] = arg1;
+                return obj1;
+              } else {
+                if (null != lib) {
+                  if (store.getChannelId() !== lib.id) {
+                    if (lib.isDM()) {
+                      if (1 === arr.length) {
+                        c5 = 3;
+                        c6 = 1;
+                        let obj2 = { value: null, done: false };
+                        obj2[0] = callback2(arr, dependencyMap);
+                        return obj2;
+                      }
+                    }
+                    const obj13 = arr(4199);
+                    c5 = 2;
+                    c6 = 1;
+                    let obj3 = { value: null, done: false };
+                    obj3[0] = obj13.addRecipients(lib.id, arr, undefined, dependencyMap);
+                    return obj3;
+                  }
+                }
+                if (null != lib) {
+                  if (store.getChannelId() === lib.id) {
+                    if (lib.isDM()) {
+                      let obj10 = lib(4399);
+                      obj10.showGuardCallAlert(callback(function*() {
+                        if (dependencyMap === 2) {
+                          dependencyMap = 3;
+                          HermesBuiltin.throwTypeError();
+                        } else if (tmp3 === 3) {
+                          if (arg0 === 1) {
+                            throw arg1;
+                          } else if (arg0 === 2) {
+                            let obj = { value: null, done: true };
+                            obj[0] = arg1;
+                            return obj;
+                          } else {
+                            return { value: "HermesInternal", done: null };
+                          }
+                        } else {
+                          try {
+                            dependencyMap = 2;
+                            if (0 === v0) {
+                              if (arg0 === 1) {
+                                dependencyMap = 3;
+                                throw arg1;
+                              } else if (arg0 === 2) {
+                                dependencyMap = 3;
+                                obj = { value: null, done: true };
+                                obj[0] = arg1;
+                                return obj;
+                              } else {
+                                let closure_0 = tmp4;
+                                if (1 === v0.length) {
+                                  v0 = 2;
+                                  dependencyMap = 1;
+                                  const obj1 = { value: null, done: false };
+                                  obj1[0] = outer1_20(tmp33, dependencyMap);
+                                  return obj1;
+                                } else {
+                                  let obj5 = v0(4199);
+                                  v0 = 1;
+                                  dependencyMap = 1;
+                                  let obj2 = { value: null, done: false };
+                                  obj2[0] = obj5.addRecipients(outer1_0.id, tmp33, undefined, dependencyMap);
+                                  return obj2;
+                                }
+                              }
+                            } else {
+                              if (1 === tmp4) {
+                                if (arg0 === 1) {
+                                  dependencyMap = 3;
+                                  throw arg1;
+                                } else if (arg0 === 2) {
+                                  dependencyMap = 3;
+                                  const obj3 = { value: null, done: true };
+                                  obj3[0] = arg1;
+                                  return obj3;
+                                }
+                              } else if (2 === tmp4) {
+                                if (arg0 === 1) {
+                                  dependencyMap = 3;
+                                  throw arg1;
+                                } else if (arg0 === 2) {
+                                  dependencyMap = 3;
+                                  const obj4 = { value: null, done: true };
+                                  obj4[0] = arg1;
+                                  return obj4;
+                                }
+                              } else if (arg0 === 1) {
+                                dependencyMap = 3;
+                                throw arg1;
+                              } else if (arg0 === 2) {
+                                dependencyMap = 3;
+                                obj = { value: null, done: true };
+                                obj[0] = arg1;
+                                return obj;
+                              } else {
+                                const tmp8 = v0(8917);
+                                const call = tmp8.call;
+                                if (typeof call === "unknown") {
+                                  tmp8(false, true);
+                                } else {
+                                  call(tmp9, false, true);
+                                }
+                                v0(10879)(_slicedToArray);
+                                dependencyMap = 3;
+                                tmp9 = _slicedToArray;
+                              }
+                              _slicedToArray = arg1;
+                              obj2 = outer1_0(4399);
+                              v0 = 3;
+                              dependencyMap = 1;
+                              obj5 = { value: null, done: false };
+                              obj5[0] = obj2.monkeyPatchCall();
+                              return obj5;
+                            }
+                          } catch (tmp26) {
+                            dependencyMap = tmp;
+                            throw tmp26;
+                          }
+                        }
+                      }));
+                    } else if (lib.isGroupDM()) {
+                      let obj8 = arr(4199);
+                      c5 = 5;
+                      c6 = 1;
+                      let obj4 = { value: null, done: false };
+                      obj4[0] = obj8.addRecipients(lib.id, arr, undefined, dependencyMap);
+                      return obj4;
+                    }
+                  }
+                }
+                let obj5 = arr(4199);
+                obj5 = { recipientIds: null, location: "New Group DM", onBeforeTransition: null };
+                obj5[0] = arr;
+                obj5[2] = dependencyMap;
+                c5 = 4;
+                c6 = 1;
+                const obj6 = { value: null, done: false };
+                obj6[0] = obj5.openPrivateChannel(obj5);
+                return obj6;
+              }
+            } else {
+              if (2 === tmp5) {
+                if (arg0 === 1) {
+                  c6 = 3;
+                  throw arg1;
+                } else if (arg0 === 2) {
+                  c6 = 3;
+                  const obj7 = { value: null, done: true };
+                  obj7[0] = arg1;
+                  return obj7;
+                }
+              } else {
+                if (3 === tmp5) {
+                  if (arg0 === 1) {
+                    c6 = 3;
+                    throw arg1;
+                  } else if (arg0 === 2) {
+                    c6 = 3;
+                    obj8 = { value: null, done: true };
+                    obj8[0] = arg1;
+                    return obj8;
+                  }
+                } else if (4 === tmp5) {
+                  if (arg0 === 1) {
+                    c6 = 3;
+                    throw arg1;
+                  } else if (arg0 === 2) {
+                    c6 = 3;
+                    const obj9 = { value: null, done: true };
+                    obj9[0] = arg1;
+                    return obj9;
+                  } else {
+                    _slicedToArray = arg1;
+                  }
+                } else if (arg0 === 1) {
+                  c6 = 3;
+                  throw arg1;
+                } else if (arg0 !== 2) {
+                  _slicedToArray = arg1;
+                  obj = arr(8917);
+                  obj.ring(_slicedToArray, arr, "gdm_invite");
+                }
+                c6 = 3;
+                obj10 = { value: null, done: true };
+                obj10[0] = arg1;
+                return obj10;
+              }
+              _slicedToArray = arg1;
+            }
+            arr(4157).hideActionSheet(closure_16);
+            c6 = 3;
+            const obj12 = arr(4157);
+          }
+        } catch (tmp77) {
+          c6 = tmp;
+          throw tmp77;
+        }
+      }
+    })();
+    iter.next();
+    return iter;
+  });
+  const _handleInviteUsers = tmp;
+  const apply = tmp.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
 }
-({ ActivityIndicator: closure_6, View: closure_7 } = get_ActivityIndicator);
-({ InstantInviteSources: closure_13, AnalyticEvents: closure_14, AnalyticsSections: closure_15, NEW_GROUP_DM_POPOUT_ID: closure_16 } = ME);
+({ ActivityIndicator: closure_6, View: error } = get_ActivityIndicator);
+({ InstantInviteSources: map1, AnalyticEvents: closure_14, AnalyticsSections: closure_15, NEW_GROUP_DM_POPOUT_ID: closure_16 } = ME);
 ({ jsx: closure_17, jsxs: closure_18 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { color: require("_createForOfIteratorHelperLoose").colors.INTERACTIVE_TEXT_ACTIVE };
-_createForOfIteratorHelperLoose.button = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.container = { height: "100%", display: "flex" };
-_createForOfIteratorHelperLoose.instantInviteView = { flexShrink: 1, backgroundColor: require("_createForOfIteratorHelperLoose").colors.MOBILE_ACTIONSHEET_BACKGROUND };
-let obj1 = { flexShrink: 1, backgroundColor: require("_createForOfIteratorHelperLoose").colors.MOBILE_ACTIONSHEET_BACKGROUND };
-_createForOfIteratorHelperLoose.nameInputContainer = { paddingHorizontal: 16, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW };
-let obj3 = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWER, marginBottom: 8, height: 40, width: "100%" };
-_createForOfIteratorHelperLoose.nameInput = obj3;
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-let obj2 = { paddingHorizontal: 16, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW };
-let result = require("result").fileFinishedImporting("modules/main_tabs_v2/native/friends/screens/NewGroupDMScreen.tsx");
+createCacheKey = { button: null, container: null, instantInviteView: null, nameInputContainer: null, nameInput: null };
+createCacheKey = { color: require("Themes").colors.INTERACTIVE_TEXT_ACTIVE };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { height: "100%", display: "flex" };
+createCacheKey[2] = { flexShrink: 1, backgroundColor: require("Themes").colors.MOBILE_ACTIONSHEET_BACKGROUND };
+let obj1 = { flexShrink: 1, backgroundColor: require("Themes").colors.MOBILE_ACTIONSHEET_BACKGROUND };
+createCacheKey[3] = { paddingHorizontal: 16, backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW };
+let obj2 = { paddingHorizontal: 16, backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW };
+createCacheKey[4] = { backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOWER, marginBottom: 8, height: 40, width: "100%" };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let obj3 = { backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOWER, marginBottom: 8, height: 40, width: "100%" };
+let result = require("noop").fileFinishedImporting("modules/main_tabs_v2/native/friends/screens/NewGroupDMScreen.tsx");
 
 export default function NewGroupDMScreen(navigation) {
   let c15;
@@ -62,6 +426,7 @@ export default function NewGroupDMScreen(navigation) {
   let importDefault;
   let locationPage;
   navigation = navigation.navigation;
+  let _require = navigation;
   const params = navigation.route.params;
   ({ channelId: importDefault, locationPage } = params);
   let flag = params.allowNameEdit;
@@ -82,190 +447,503 @@ export default function NewGroupDMScreen(navigation) {
   callback = undefined;
   c15 = undefined;
   c16 = undefined;
-  const tmp = _createForOfIteratorHelperLoose();
+  const tmp = createCacheKey();
   callback = tmp;
-  let obj = navigation(locationPage[18]);
+  let obj = _require(locationPage[18]);
   let items = [first1];
   stateFromStores = obj.useStateFromStores(items, () => first1.getChannel(closure_1));
-  let obj2 = navigation(locationPage[18]);
+  let obj2 = _require(locationPage[18]);
   const items1 = [memo];
   stateFromStores1 = obj2.useStateFromStores(items1, () => memo.getCurrentUser());
-  const tmp3 = callback(stateFromStores1.useState([]), 2);
-  first = tmp3[0];
-  closure_7 = tmp3[1];
-  const tmp4 = callback(stateFromStores1.useState(false), 2);
-  first1 = tmp4[0];
-  closure_9 = tmp4[1];
-  const tmp6 = callback(stateFromStores1.useState(""), 2);
-  first2 = tmp6[0];
+  let obj3 = stateFromStores1;
+  let tmp6 = callback(stateFromStores1.useState([]), 2);
+  first = tmp6[0];
+  closure_7 = tmp6[1];
+  const tmp7 = callback(stateFromStores1.useState(false), 2);
+  first1 = tmp7[0];
+  closure_9 = tmp7[1];
+  const tmp9 = callback(stateFromStores1.useState(""), 2);
+  first2 = tmp9[0];
   const items2 = [stateFromStores];
   memo = stateFromStores1.useMemo(() => {
     let recipients;
-    if (null != stateFromStores) {
+    if (stateFromStores != null) {
       recipients = stateFromStores.recipients;
     }
-    if (null == recipients) {
+    if (recipients == null) {
       recipients = [];
     }
     return recipients;
   }, items2);
-  let num = 0;
-  if (null != memo.length) {
-    num = length;
+  let num = memo.length;
+  if (num == null) {
+    num = 0;
   }
   const sum = first.length + (num + 1);
   UserRowModes = sum;
-  const tmp9 = sum > importDefault(locationPage[19])(stateFromStores);
-  c13 = tmp9;
+  const tmp13 = sum > importDefault(locationPage[19])(stateFromStores);
+  c13 = tmp13;
   const items3 = [locationPage];
-  // CreateGeneratorClosureLongIndex (0x67)
-  const items4 = [stateFromStores, navigation, memo, first, first2];
-  callback = stateFromStores1.useCallback(stateFromStores(stateFromStores1.useEffect(() => {
+  const effect = obj3.useEffect(() => {
     let obj = outer1_1(locationPage[20]);
     obj = { type: _undefined.DM_INVITE, location: obj };
     obj = { page: locationPage };
     obj.track(callback.OPEN_POPOUT, obj);
-  }, items3)), items4);
-  const items5 = [stateFromStores, first1, navigation, sum, tmp9, memo, first, callback, tmp];
-  const layoutEffect = stateFromStores1.useLayoutEffect(() => {
-    if (null != stateFromStores) {
-      if (stateFromStores.isGroupDM()) {
-        let intl2 = navigation(locationPage[22]).intl;
-        let stringResult = intl2.string(navigation(locationPage[22]).t["LR+Ptf"]);
+  }, items3);
+  const items4 = [stateFromStores, navigation, memo, first, first2];
+  callback = obj3.useCallback(stateFromStores(function*() {
+    if (c5 === 2) {
+      c5 = 3;
+      HermesBuiltin.throwTypeError();
+    } else if (tmp6 === 3) {
+      if (arg0 === 1) {
+        throw arg1;
+      } else if (arg0 === 2) {
+        let obj = { value: null, done: true };
+        obj[0] = arg1;
+        return obj;
+      } else {
+        return { value: "HermesInternal", done: null };
       }
-      navigation = stringResult;
-      if (null != stateFromStores) {
-        stateFromStores.isGroupDM();
+    } else {
+      try {
+        c5 = 2;
+        if (0 === c4) {
+          if (arg0 === 1) {
+            c5 = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            c5 = 3;
+            obj = { value: null, done: true };
+            obj[0] = arg1;
+            return obj;
+          } else {
+            let closure_1 = tmp3;
+            let closure_0 = tmp7;
+            closure_0 = undefined;
+            outer1_9(true);
+            let c3 = 1;
+            const items = [];
+            HermesBuiltin.arraySpread(outer1_11, HermesBuiltin.arraySpread(outer1_6, 0));
+            c4 = 2;
+            c5 = 1;
+            let obj1 = { value: null, done: false };
+            obj1[0] = (function handleInviteUsers(c4, items, arg2) {
+              const self = this;
+              const apply = closure_22.apply;
+              if (typeof apply === "unknown") {
+                let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+              } else {
+                applyArgumentsResult = apply(self, arguments);
+              }
+              return applyArgumentsResult;
+            })(c4, items, () => {
+              parent = parent.getParent();
+              return parent.goBack();
+            });
+            return obj1;
+          }
+        } else if (1 === tmp7) {
+          c3 = 0;
+          let obj4 = outer1_1(outer1_2[21]);
+          const obj2 = { key: "GROUP_DM_ADD_ERROR", content: null };
+          const intl = outer1_0(outer1_2[22]).intl;
+          obj2[1] = intl.string(outer1_0(outer1_2[22]).t["N/9OFy"]);
+          obj4.open(obj2);
+          callback(false);
+          c5 = 3;
+          const obj3 = { value: null, done: true };
+          obj3[0] = undefined;
+          return obj3;
+        } else {
+          if (2 === tmp7) {
+            if (arg0 === 1) {
+              c5 = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              c3 = 0;
+              c5 = 3;
+              obj4 = { value: null, done: true };
+              obj4[0] = arg1;
+              return obj4;
+            } else {
+              closure_0 = arg1;
+              c3 = 0;
+              let tmp10 = null == c4;
+              if (tmp10) {
+                tmp10 = null != closure_0;
+              }
+              if (tmp10) {
+                tmp10 = "" !== createRTCConnection;
+              }
+              if (tmp10) {
+                obj1 = outer1_1(outer1_2[13]);
+                c4 = 3;
+                c5 = 1;
+                const obj5 = { value: null, done: false };
+                obj5[0] = obj1.setName(closure_0, createRTCConnection);
+                return obj5;
+              }
+            }
+          } else if (arg0 === 1) {
+            c5 = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            c5 = 3;
+            obj = { value: null, done: true };
+            obj[0] = arg1;
+            return obj;
+          }
+          c5 = 3;
+          return { value: "HermesInternal", done: null };
+        }
+      } catch (tmp37) {
+        let closure_2 = tmp37;
+        if (tmp4 === c3) {
+          c5 = tmp2;
+          throw tmp37;
+        } else {
+          c4 = tmp;
+        }
       }
-      const intl3 = navigation(locationPage[22]).intl;
-      let obj = { numMembers: c12, maxMemberLimit: outer1_1(locationPage[19])(stateFromStores) };
-      const formatToPlainStringResult = intl3.formatToPlainString(navigation(locationPage[22]).t.YUhnoy, obj);
-      let closure_1 = formatToPlainStringResult;
-      obj = {};
-      const _HermesInternal = HermesInternal;
-      obj.title = "" + stringResult + " (" + formatToPlainStringResult + ")";
-      obj.headerTitle = function headerTitle(arg0) {
+    }
+  }), items4);
+  const items5 = [stateFromStores, first1, navigation, sum, tmp13, memo, first, callback, tmp];
+  const layoutEffect = obj3.useLayoutEffect(() => {
+    let obj = stateFromStores;
+    let isGroupDMResult;
+    if (stateFromStores != null) {
+      isGroupDMResult = obj.isGroupDM();
+    }
+    let intl = options(locationPage[22]).intl;
+    let string = intl.string;
+    let t = options(locationPage[22]).t;
+    if (isGroupDMResult) {
+      let stringResult = string(t["LR+Ptf"]);
+    } else {
+      stringResult = string(t["3hF1W4"]);
+    }
+    options = stringResult;
+    if (obj != null) {
+      obj.isGroupDM();
+    }
+    const intl2 = options(locationPage[22]).intl;
+    obj = { numMembers: c12, maxMemberLimit: null };
+    obj[1] = outer1_1(locationPage[19])(obj);
+    const formatToPlainStringResult = intl2.formatToPlainString(options(locationPage[22]).t.YUhnoy, obj);
+    let closure_1 = formatToPlainStringResult;
+    obj = {
+      title: "" + stringResult + " (" + formatToPlainStringResult + ")",
+      headerTitle(arg0) {
         if (arg0 == null) {
-          HermesBuiltin.throwTypeError("Cannot destructure 'undefined' or 'null'.");
-          throw undefined;
+          HermesBuiltin.throwTypeError();
         } else {
           const merged = Object.assign(arg0, undefined);
           const obj = {};
           const merged1 = Object.assign(merged);
-          obj["title"] = closure_0;
-          obj["subtitle"] = closure_1;
+          obj.title = stringResult;
+          obj.subtitle = closure_1;
           let str = "mobile-text-heading-primary";
           if (outer1_13) {
             str = "text-feedback-critical";
           }
-          obj["color"] = str;
-          return outer2_17(navigation(locationPage[23]).GenericHeaderTitle, obj);
+          obj.color = str;
+          return outer2_17(stringResult(locationPage[23]).GenericHeaderTitle, obj);
         }
-      };
-      obj.headerRight = function headerRight(arg0) {
+      },
+      headerRight(arg0) {
         if (outer1_8) {
-          let obj = { color: outer1_3.button.color, size: "small" };
+          let obj = { color: null, size: "small" };
+          obj[0] = outer1_3.button.color;
           let result = outer2_17(first, obj);
         } else {
-          let isGroupDMResult = outer1_4;
-          if (null != outer1_4) {
-            isGroupDMResult = outer1_4.isGroupDM();
-            if (isGroupDMResult) {
-              const intl2 = navigation(locationPage[22]).intl;
-              // CreateGeneratorClosureLongIndex (0x67)
-              const obj3 = navigation(locationPage[23]);
-              obj = {};
-              const renderHeaderTextButton = obj3.getRenderHeaderTextButton(intl2.string(navigation(locationPage[22]).t.OYkgVk), stateFromStores(tmp));
-              const merged = Object.assign(arg0);
-              let tmp23 = outer1_13;
-              if (!outer1_13) {
-                let isGroupDMResult1;
-                if (null != outer1_4) {
-                  isGroupDMResult1 = outer1_4.isGroupDM();
-                }
-                if (isGroupDMResult1) {
-                  isGroupDMResult1 = outer1_6.length <= 0;
-                }
-                tmp23 = isGroupDMResult1;
-              }
-              obj["disabled"] = tmp23;
-              result = renderHeaderTextButton(obj);
-              const stringResult = intl2.string(navigation(locationPage[22]).t.OYkgVk);
-            }
+          obj = outer1_4;
+          let isGroupDMResult;
+          if (outer1_4 != null) {
+            isGroupDMResult = obj.isGroupDM();
           }
-          obj = navigation(locationPage[23]);
-          const intl = navigation(locationPage[22]).intl;
-          // CreateGeneratorClosureLongIndex (0x67)
-          const obj1 = {};
-          const renderHeaderTextButton1 = obj.getRenderHeaderTextButton(intl.string(navigation(locationPage[22]).t.CumH4u), stateFromStores(isGroupDMResult));
-          const merged1 = Object.assign(arg0);
-          obj1["disabled"] = outer1_13;
-          result = renderHeaderTextButton1(obj1);
-          const stringResult1 = intl.string(navigation(locationPage[22]).t.CumH4u);
+          const getRenderHeaderTextButton = stringResult(locationPage[23]).getRenderHeaderTextButton;
+          const intl = stringResult(locationPage[22]).intl;
+          const string = intl.string;
+          const t = stringResult(locationPage[22]).t;
+          if (isGroupDMResult) {
+            stringResult = string(t.OYkgVk);
+            obj = {};
+            const renderHeaderTextButton = getRenderHeaderTextButton(stringResult, stateFromStores(function*() {
+              if (c0 === 2) {
+                c0 = 3;
+                HermesBuiltin.throwTypeError();
+              } else if (tmp3 === 3) {
+                if (arg0 === 1) {
+                  throw arg1;
+                } else if (arg0 === 2) {
+                  let obj = { value: null, done: true };
+                  obj[0] = arg1;
+                  return obj;
+                } else {
+                  return { value: "HermesInternal", done: null };
+                }
+              } else {
+                try {
+                  c0 = 2;
+                  if (0 === c1) {
+                    if (arg0 === 1) {
+                      c0 = 3;
+                      throw arg1;
+                    } else if (arg0 === 2) {
+                      c0 = 3;
+                      obj = { value: null, done: true };
+                      obj[0] = arg1;
+                      return obj;
+                    } else {
+                      c1 = 1;
+                      c0 = 1;
+                      const obj1 = { value: null, done: false };
+                      obj1[0] = outer1_14();
+                      return obj1;
+                    }
+                  } else if (arg0 === 1) {
+                    c0 = 3;
+                    throw arg1;
+                  } else if (arg0 === 2) {
+                    c0 = 3;
+                    const obj2 = { value: null, done: true };
+                    obj2[0] = arg1;
+                    return obj2;
+                  } else {
+                    c0 = 3;
+                    obj = { value: null, done: true };
+                    obj[0] = arg1;
+                    return obj;
+                  }
+                } catch (tmp6) {
+                  c0 = tmp;
+                  throw tmp6;
+                }
+              }
+            }));
+            const merged = Object.assign(arg0);
+            let tmp25 = outer1_13;
+            if (!outer1_13) {
+              let isGroupDMResult1;
+              if (obj != null) {
+                isGroupDMResult1 = obj.isGroupDM();
+              }
+              if (isGroupDMResult1) {
+                isGroupDMResult1 = outer1_6.length <= 0;
+              }
+              tmp25 = isGroupDMResult1;
+            }
+            obj.disabled = tmp25;
+            result = renderHeaderTextButton(obj);
+          } else {
+            let obj1 = {};
+            const renderHeaderTextButton1 = getRenderHeaderTextButton(string(t.CumH4u), stateFromStores(function*() {
+              if (c0 === 2) {
+                c0 = 3;
+                HermesBuiltin.throwTypeError();
+              } else if (tmp3 === 3) {
+                if (arg0 === 1) {
+                  throw arg1;
+                } else if (arg0 === 2) {
+                  let obj = { value: null, done: true };
+                  obj[0] = arg1;
+                  return obj;
+                } else {
+                  return { value: "HermesInternal", done: null };
+                }
+              } else {
+                try {
+                  c0 = 2;
+                  if (0 === c1) {
+                    if (arg0 === 1) {
+                      c0 = 3;
+                      throw arg1;
+                    } else if (arg0 === 2) {
+                      c0 = 3;
+                      obj = { value: null, done: true };
+                      obj[0] = arg1;
+                      return obj;
+                    } else {
+                      c1 = 1;
+                      c0 = 1;
+                      const obj1 = { value: null, done: false };
+                      obj1[0] = outer1_14();
+                      return obj1;
+                    }
+                  } else if (arg0 === 1) {
+                    c0 = 3;
+                    throw arg1;
+                  } else if (arg0 === 2) {
+                    c0 = 3;
+                    const obj2 = { value: null, done: true };
+                    obj2[0] = arg1;
+                    return obj2;
+                  } else {
+                    c0 = 3;
+                    obj = { value: null, done: true };
+                    obj[0] = arg1;
+                    return obj;
+                  }
+                } catch (tmp6) {
+                  c0 = tmp;
+                  throw tmp6;
+                }
+              }
+            }));
+            const merged1 = Object.assign(arg0);
+            obj1.disabled = outer1_13;
+            result = renderHeaderTextButton1(obj1);
+            const stringResult1 = string(t.CumH4u);
+          }
+          const tmp6 = stringResult(locationPage[23]);
         }
         return result;
-      };
-      navigation.setOptions(obj);
-    }
-    let intl = navigation(locationPage[22]).intl;
-    stringResult = intl.string(navigation(locationPage[22]).t["3hF1W4"]);
+      }
+    };
+    options.setOptions(obj);
   }, items5);
-  const callback1 = stateFromStores1.useCallback((arg0) => {
+  const callback1 = obj3.useCallback((arg0) => {
     let closure_0 = arg0;
     callback((arr) => {
-      const index = arr.indexOf(user.id);
+      const index = arr.indexOf(id.id);
       const items = [...arr];
       if (-1 === index) {
-        items.push(user.id);
+        items.push(id.id);
       } else {
         items.splice(index, 1);
       }
       return items;
     });
   }, []);
-  [c15, c16] = callback(stateFromStores1.useState(false), 2);
-  obj = { style: tmp.container };
+  [c15, c16] = callback(obj3.useState(false), 2);
+  obj = { style: tmp.container, children: null };
   let isGroupDMResult;
-  const tmp13 = callback(stateFromStores1.useState(false), 2);
-  if (null != stateFromStores) {
+  const tmp15 = stateFromStores;
+  const tmp5 = callback;
+  const tmp5Result = callback(obj3.useState(false), 2);
+  if (stateFromStores != null) {
     isGroupDMResult = stateFromStores.isGroupDM();
   }
   if (isGroupDMResult) {
     isGroupDMResult = null != stateFromStores1;
   }
   if (isGroupDMResult) {
-    isGroupDMResult = sum < importDefault(locationPage[19])(stateFromStores);
+    isGroupDMResult = sum < tmp12(tmp3[19])(stateFromStores);
   }
   if (isGroupDMResult) {
-    obj = { style: tmp.instantInviteView };
-    let obj1 = {
-      onItemPressed: (() => {
-          // CreateGeneratorClosureLongIndex (0x67)
-          let closure_0 = stateFromStores(tmp);
-          return function() {
-            return callback(...arguments);
-          };
-        })()
+    obj = { style: null, children: null };
+    obj[0] = tmp.instantInviteView;
+    let obj1 = { onItemPressed: null };
+    _require = undefined;
+    _require = tmp15((arg0) => {
+      let closure_0 = arg0;
+      let c3 = 0;
+      let c4 = 0;
+      return (function*(arg0) {
+        if (c4 === 2) {
+          c4 = 3;
+          HermesBuiltin.throwTypeError();
+        } else if (tmp4 === 3) {
+          if (arg0 === 1) {
+            throw arg1;
+          } else if (arg0 === 2) {
+            let obj = { value: null, done: true };
+            obj[0] = arg1;
+            return obj;
+          } else {
+            return { value: "HermesInternal", done: null };
+          }
+        } else {
+          try {
+            c4 = 2;
+            if (0 === c3) {
+              if (arg0 === 1) {
+                c4 = 3;
+                throw arg1;
+              } else if (arg0 === 2) {
+                c4 = 3;
+                obj = { value: null, done: true };
+                obj[0] = arg1;
+                return obj;
+              } else {
+                let closure_2 = tmp5;
+                let closure_1 = tmp2;
+                closure_1 = undefined;
+                if (outer1_15) {
+                  c4 = 3;
+                } else {
+                  outer1_16(true);
+                  let obj1 = outer2_1(locationPage[26]);
+                  c3 = 1;
+                  c4 = 1;
+                  obj1 = { value: null, done: false };
+                  obj1[0] = obj1.mobileCreateInvite(c4, constants.GROUP_DM);
+                  return obj1;
+                }
+              }
+            } else if (arg0 === 1) {
+              c4 = 3;
+              throw arg1;
+            } else if (arg0 !== 2) {
+              closure_1 = arg1;
+              if (null != closure_1) {
+                const obj2 = { channel: null, code: null, message: null, location: null };
+                obj2[0] = c4;
+                obj2[1] = closure_1;
+                const intl = callback(locationPage[22]).intl;
+                const obj3 = { username: null, link: null };
+                obj3[0] = outer1_5.username;
+                obj3[1] = outer2_1(locationPage[27])(closure_1);
+                obj2[2] = intl.formatToPlainString(callback(locationPage[22]).t["+zWvOQ"], obj3);
+                obj2[3] = constants.GROUP_DM;
+                callback(obj2);
+              }
+              outer1_16(false);
+            }
+            c4 = 3;
+            obj = { value: null, done: true };
+            obj[0] = arg1;
+            return obj;
+          } catch (tmp15) {
+            c4 = tmp;
+            throw tmp15;
+          }
+        }
+      })();
+    });
+    obj1[0] = function() {
+      const self = this;
+      const apply = closure_0.apply;
+      if (typeof apply === "unknown") {
+        let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+      } else {
+        applyArgumentsResult = apply(self, arguments);
+      }
+      return applyArgumentsResult;
     };
-    obj.children = callback3(importDefault(locationPage[25]), obj1);
-    isGroupDMResult = callback3(closure_7, obj);
-    const tmp24 = importDefault(locationPage[25]);
+    obj[1] = callback3(tmp12(tmp3[25]), obj1);
+    isGroupDMResult = callback3(tmp22, obj);
+    const tmp12Result = tmp12(tmp3[25]);
   }
   const items6 = [isGroupDMResult, , ];
-  let tmp25 = null;
+  let tmp26 = null;
   if (flag) {
-    obj2 = { style: tmp.nameInputContainer };
-    let obj3 = { style: tmp.nameInput, value: first2, onChangeText: tmp6[1] };
-    let intl = navigation(locationPage[22]).intl;
-    obj3.placeholder = intl.string(navigation(locationPage[22]).t.KSVhrX);
-    obj2.children = callback3(navigation(locationPage[28]).TextInput, obj3);
-    tmp25 = callback3(closure_7, obj2);
+    obj2 = { style: null, children: null };
+    obj2[0] = tmp.nameInputContainer;
+    obj3 = { style: null, value: null, onChangeText: null, placeholder: null };
+    obj3[0] = tmp.nameInput;
+    obj3[1] = first2;
+    obj3[2] = tmp9[1];
+    let intl = tmp2(tmp3[22]).intl;
+    obj3[3] = intl.string(tmp2(tmp3[22]).t.KSVhrX);
+    obj2[1] = callback3(tmp2(tmp3[28]).TextInput, obj3);
+    tmp26 = callback3(tmp22, obj2);
   }
-  items6[1] = tmp25;
-  const tmp14 = importDefault(locationPage[24])();
-  const tmp15 = closure_18;
-  const tmp16 = closure_7;
+  items6[1] = tmp26;
+  const tmp20 = importDefault(locationPage[24])();
+  const tmp21 = closure_18;
   items6[2] = callback3(importDefault(locationPage[29]), { rowMode: UserRowModes.TOGGLE, onSelectUser: callback1, disabledUserIds: memo, selectedUserIds: first, withAffinitySuggestions: true, withAlphabeticalSections: false, disableGradient: true, disableStickySections: importDefault(locationPage[24])() });
-  obj.children = items6;
-  return tmp15(tmp16, obj);
+  obj[1] = items6;
+  return tmp21(closure_7, obj);
 };

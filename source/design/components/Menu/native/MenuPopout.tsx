@@ -1,18 +1,18 @@
-// Module ID: 13153
-// Function ID: 101337
+// Module ID: 13176
+// Function ID: 13177
 // Name: MenuPopout
-// Dependencies: [57, 31, 33, 9278, 4026, 9667, 13150, 13151, 13152, 2]
+// Dependencies: [32, 19, 21, 9302, 4050, 9689, 13173, 13174, 13175, 2]
 // Exports: MenuPopout
 
-// Module 13153 (MenuPopout)
+// Module 13176 (MenuPopout)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
+import noop from "noop";
 import jsxProd from "jsxProd";
 
-let closure_5;
+let c5;
 let closure_6;
 const require = arg1;
-({ jsx: closure_5, Fragment: closure_6 } = jsxProd);
+({ jsx: c5, Fragment: closure_6 } = jsxProd);
 const result = require("jsxProd").fileFinishedImporting("design/components/Menu/native/MenuPopout.tsx");
 
 export const MenuPopout = function MenuPopout(onRequestOpen) {
@@ -28,7 +28,7 @@ export const MenuPopout = function MenuPopout(onRequestOpen) {
   const align = onRequestOpen.align;
   const offset = onRequestOpen.offset;
   const offsetAnimated = onRequestOpen.offsetAnimated;
-  let uID;
+  key = undefined;
   let animatedRef;
   let first;
   let closure_10;
@@ -36,52 +36,44 @@ export const MenuPopout = function MenuPopout(onRequestOpen) {
   let memo;
   let callback1;
   let obj = menuItems(onRequestClose[3]);
-  uID = obj.useUID();
-  if (null != key) {
-    uID = key;
+  if (key == null) {
+    key = obj.useUID();
   }
   animatedRef = menuItems(onRequestClose[4]).useAnimatedRef();
-  const tmp3 = position(align.useState(false), 2);
-  first = tmp3[0];
-  closure_10 = tmp3[1];
-  const items = [uID, onRequestClose];
+  const tmp4 = position(align.useState(false), 2);
+  first = tmp4[0];
+  closure_10 = tmp4[1];
+  const items = [key, onRequestClose];
   const mapped = menuItems.map((label) => ({ name: label.label, label: label.label }));
   callback = align.useCallback(() => {
     callback(false);
-    if (null != onRequestClose) {
+    if (onRequestClose != null) {
       onRequestClose();
     }
-    onRequestOpen(onRequestClose[5]).hideNativeMenu(uID);
+    onRequestOpen(onRequestClose[5]).hideNativeMenu(key);
   }, items);
   const items1 = [animatedRef, callback, menuItems, position, align, offset, offsetAnimated];
   memo = align.useMemo(() => {
-    let obj = {
-      toggleButtonRef: animatedRef,
-      onClose: callback,
-      position,
-      align,
-      offset,
-      offsetAnimated,
-      children: menuItems.map((arg0, arg1) => {
-        let obj = {};
-        obj = { showIconFirst: true };
-        const merged = Object.assign(arg0);
-        obj.children = offset(menuItems(onRequestClose[8]).MenuItem, obj);
-        return offset(menuItems(onRequestClose[7]).MenuGroup, obj, "chat-context-menu-group-" + arg1);
-      })
-    };
+    let obj = { toggleButtonRef: animatedRef, onClose: callback, position, align, offset, offsetAnimated, children: null };
+    obj[6] = menuItems.map((arg0, arg1) => {
+      let obj = { children: null };
+      obj = { showIconFirst: true };
+      const merged = Object.assign(arg0);
+      obj[0] = callback2(callback(13175).MenuItem, obj);
+      return callback2(callback(13174).MenuGroup, obj, "chat-context-menu-group-" + arg1);
+    });
     return offset(menuItems(onRequestClose[6]).Menu, obj);
   }, items1);
-  const items2 = [memo, uID, onRequestOpen];
+  const items2 = [memo, key, onRequestOpen];
   callback1 = align.useCallback(() => {
     callback(true);
-    if (null != onRequestOpen) {
+    if (onRequestOpen != null) {
       onRequestOpen();
     }
-    onRequestOpen(onRequestClose[5]).showNativeMenu(uID, memo);
+    onRequestOpen(onRequestClose[5]).showNativeMenu(key, memo);
   }, items2);
   const items3 = [first, callback, callback1];
-  obj = {};
+  obj = { children: null };
   obj = {
     ref: animatedRef,
     onPress: align.useCallback(() => {
@@ -96,11 +88,14 @@ export const MenuPopout = function MenuPopout(onRequestOpen) {
     onAccessibilityAction(arg0) {
       const menuItems = arg0;
       const found = menuItems.find((label) => label.label === nativeEvent.nativeEvent.actionName);
-      if (!tmp) {
-        found.action();
+      if (found != null) {
+        const action = found.action;
+        if (action != null) {
+          action();
+        }
       }
     }
   };
-  obj.children = onRequestOpen.children(obj, { isShown: first });
+  obj[0] = onRequestOpen.children(obj, { isShown: first });
   return offset(offsetAnimated, obj);
 };

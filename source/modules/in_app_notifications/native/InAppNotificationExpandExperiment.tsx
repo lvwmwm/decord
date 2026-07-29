@@ -1,14 +1,15 @@
-// Module ID: 10256
-// Function ID: 79202
+// Module ID: 10277
+// Function ID: 10278
 // Name: useCanExpandInAppNotification
-// Dependencies: [1428, 2]
+// Dependencies: [1452, 2]
 // Exports: useCanExpandInAppNotification
 
-// Module 10256 (useCanExpandInAppNotification)
+// Module 10277 (useCanExpandInAppNotification)
 import ApexExperiment from "ApexExperiment";
 
-const obj = { name: "2026-05-in-app-notification-expand", kind: "user", defaultConfig: { canExpand: false, canReact: false }, variations: { [1]: { canExpand: true, canReact: true }, [2]: { canExpand: true, canReact: false } } };
-let closure_0 = ApexExperiment.createApexExperiment(obj);
+const obj = { 1: null, 2: { canExpand: true, canReact: true } };
+obj[2] = { canExpand: true, canReact: false };
+let closure_0 = ApexExperiment.createApexExperiment({ name: "2026-05-in-app-notification-expand", kind: "user", defaultConfig: { canExpand: false, canReact: false }, variations: obj });
 const result = require("set").fileFinishedImporting("modules/in_app_notifications/native/InAppNotificationExpandExperiment.tsx");
 
 export const useCanExpandInAppNotification = function useCanExpandInAppNotification(InAppNotificationContainer) {

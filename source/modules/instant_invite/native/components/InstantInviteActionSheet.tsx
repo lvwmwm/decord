@@ -1,64 +1,66 @@
-// Module ID: 8333
-// Function ID: 66781
+// Module ID: 8357
+// Function ID: 8358
 // Name: Loading
-// Dependencies: [57, 31, 27, 1353, 8325, 1838, 3793, 6003, 653, 33, 4165, 689, 8334, 1557, 5497, 5517, 5503, 566, 4151, 6026, 8324, 4133, 8335, 10074, 1282, 12205, 5221, 5220, 1212, 1273, 12206, 12210, 12212, 9215, 10065, 11785, 12244, 2]
+// Dependencies: [32, 19, 17, 1377, 8349, 1862, 3817, 6021, 676, 21, 4189, 712, 8358, 1581, 5515, 5535, 5521, 589, 4175, 6044, 8348, 4157, 8359, 10095, 1306, 12229, 5243, 5242, 1236, 1297, 12230, 12234, 12236, 9239, 10086, 11810, 12268, 2]
 // Exports: default
 
-// Module 8333 (Loading)
-import _slicedToArray from "_slicedToArray";
-import onCopy from "onCopy";
-import get_ActivityIndicator from "RedesignBottomSheetTitleHeaderBase";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_8 from "_isNativeReflectConstruct";
-import closure_9 from "_createForOfIteratorHelperLoose";
-import closure_10 from "_isNativeReflectConstruct";
+// Module 8357 (Loading)
+import module_12236 from "module_12236";
+import getInviteURL from "getInviteURL";
+import get_ActivityIndicator from "initialize";
+import handleStageInstanceCreateOrUpdate from "handleStageInstanceCreateOrUpdate";
+import updateWithLatestInvite from "updateWithLatestInvite";
+import createGuildRecordFromRust from "createGuildRecordFromRust";
+import getUncachedChannelPermissions from "getUncachedChannelPermissions";
 import { InviteTargetTypes } from "InviteSendStates";
 import { Permissions } from "ME";
-import jsxProd from "SearchField";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import jsxProd from "ACTION_SHEET_HEIGHT_HALF";
+import createCacheKey from "createCacheKey";
 
-let closure_13;
+let c5;
 let closure_14;
 let closure_15;
-let closure_5;
 let closure_6;
+let map1;
 const require = arg1;
 function Loading() {
-  const tmp = _createForOfIteratorHelperLoose();
+  let tmp2;
+  const tmp = createCacheKey();
   const items = [];
   let num = 0;
   do {
-    let tmp2 = callback2;
+    tmp2 = callback2;
     let tmp3 = importDefault;
     let tmp4 = dependencyMap;
-    let obj = { row: num };
-    let arr = items.push(callback2(importDefault(8334), obj, num));
+    let obj = { row: null };
+    obj[0] = num;
+    let arr = items.push(callback2(importDefault(8358), obj, num));
     num = num + 1;
   } while (num < 10);
-  obj = {};
+  obj = { children: null };
   obj = { style: tmp.placeholderHeader };
-  const items1 = [callback2(closure_5, obj), callback2(closure_5, { style: tmp.placeholderLabel }), items];
-  obj.children = items1;
+  const items1 = [tmp2(closure_5, obj), tmp2(closure_5, { style: tmp.placeholderLabel }), items];
+  obj[0] = items1;
   return callback3(closure_14, obj);
 }
-({ View: closure_5, ScrollView: closure_6 } = get_ActivityIndicator);
-({ jsx: closure_13, Fragment: closure_14, jsxs: closure_15 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { height: 16, width: "80%", margin: 16, marginBottom: 8, borderRadius: require("_createForOfIteratorHelperLoose").radii.sm, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_MOD_MUTED };
-_createForOfIteratorHelperLoose.placeholderHeader = _createForOfIteratorHelperLoose;
-let obj1 = { height: 16, width: "40%", margin: 16, borderRadius: require("_createForOfIteratorHelperLoose").radii.sm, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_MOD_MUTED };
-_createForOfIteratorHelperLoose.placeholderLabel = obj1;
-_createForOfIteratorHelperLoose.errorEmptyState = { backgroundColor: "transparent" };
-_createForOfIteratorHelperLoose.searchAndShareContainer = { borderTopWidth: 1, borderColor: require("_createForOfIteratorHelperLoose").colors.BORDER_SUBTLE, marginTop: require("_createForOfIteratorHelperLoose").space.PX_8, paddingVertical: require("_createForOfIteratorHelperLoose").space.PX_8, paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_12, flexDirection: "column", gap: require("_createForOfIteratorHelperLoose").space.PX_12 };
-let obj2 = { borderTopWidth: 1, borderColor: require("_createForOfIteratorHelperLoose").colors.BORDER_SUBTLE, marginTop: require("_createForOfIteratorHelperLoose").space.PX_8, paddingVertical: require("_createForOfIteratorHelperLoose").space.PX_8, paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_12, flexDirection: "column", gap: require("_createForOfIteratorHelperLoose").space.PX_12 };
-_createForOfIteratorHelperLoose.inviteAgeText = { paddingBottom: require("_createForOfIteratorHelperLoose").space.PX_8, paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_4 };
-_createForOfIteratorHelperLoose.shareApps = { paddingVertical: 0 };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-let obj3 = { paddingBottom: require("_createForOfIteratorHelperLoose").space.PX_8, paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_4 };
+({ View: c5, ScrollView: closure_6 } = get_ActivityIndicator);
+({ jsx: map1, Fragment: closure_14, jsxs: closure_15 } = jsxProd);
+createCacheKey = { placeholderHeader: null, placeholderLabel: null, errorEmptyState: null, searchAndShareContainer: null, inviteAgeText: null, shareApps: null };
+createCacheKey = { height: 16, width: "80%", margin: 16, marginBottom: 8, borderRadius: require("Themes").radii.sm, backgroundColor: require("Themes").colors.BACKGROUND_MOD_MUTED };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { height: 16, width: "40%", margin: 16, borderRadius: require("Themes").radii.sm, backgroundColor: require("Themes").colors.BACKGROUND_MOD_MUTED };
+createCacheKey[2] = { backgroundColor: "transparent" };
+let obj1 = { height: 16, width: "40%", margin: 16, borderRadius: require("Themes").radii.sm, backgroundColor: require("Themes").colors.BACKGROUND_MOD_MUTED };
+createCacheKey[3] = { borderTopWidth: 1, borderColor: require("Themes").colors.BORDER_SUBTLE, marginTop: require("Themes").space.PX_8, paddingVertical: require("Themes").space.PX_8, paddingHorizontal: require("Themes").space.PX_12, flexDirection: "column", gap: require("Themes").space.PX_12 };
+let obj2 = { borderTopWidth: 1, borderColor: require("Themes").colors.BORDER_SUBTLE, marginTop: require("Themes").space.PX_8, paddingVertical: require("Themes").space.PX_8, paddingHorizontal: require("Themes").space.PX_12, flexDirection: "column", gap: require("Themes").space.PX_12 };
+createCacheKey[4] = { paddingBottom: require("Themes").space.PX_8, paddingHorizontal: require("Themes").space.PX_4 };
+createCacheKey[5] = { paddingVertical: 0 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let obj3 = { paddingBottom: require("Themes").space.PX_8, paddingHorizontal: require("Themes").space.PX_4 };
 let result = require("get ActivityIndicator").fileFinishedImporting("modules/instant_invite/native/components/InstantInviteActionSheet.tsx");
 
 export default function InstantInviteActionSheet(channel) {
-  let _slicedToArray;
+  let module_12236;
   let code;
   let isFetchingRows;
   let rows;
@@ -66,12 +68,13 @@ export default function InstantInviteActionSheet(channel) {
   channel = channel.channel;
   const source = channel.source;
   const vanityURLCode = channel.vanityURLCode;
-  ({ guildScheduledEventId: _slicedToArray, targetApplicationId, code } = channel);
+  ({ guildScheduledEventId: module_12236, targetApplicationId, code } = channel);
+  let analyticsLocations;
   let stateFromStores;
   let str;
-  const tmp = _createForOfIteratorHelperLoose();
-  const analyticsLocations = source(vanityURLCode[14])(source(vanityURLCode[15]).INSTANT_INVITE_MODAL).analyticsLocations;
-  const tmp2 = source(vanityURLCode[14]);
+  const tmp = createCacheKey();
+  analyticsLocations = source(vanityURLCode[14])(source(vanityURLCode[15]).INSTANT_INVITE_MODAL).analyticsLocations;
+  const tmp4 = source(vanityURLCode[14]);
   if (null != targetApplicationId) {
     const items = [targetApplicationId];
     let items1 = items;
@@ -79,17 +82,17 @@ export default function InstantInviteActionSheet(channel) {
     items1 = [];
   }
   let name = callback(source(vanityURLCode[16])(items1), 1)[0];
-  let obj = channel(vanityURLCode[17]);
-  const items2 = [closure_10, closure_8, str];
+  let obj = channel(tmp3[17]);
+  const items2 = [getUncachedChannelPermissions, updateWithLatestInvite, str];
   stateFromStores = obj.useStateFromStores(items2, () => {
     if (null != code) {
       return code;
     } else {
       if (channel.isGuildStageVoice()) {
-        if (!outer1_10.can(outer1_12.CREATE_INSTANT_INVITE, channel)) {
-          const stageInstanceByChannel = str.getStageInstanceByChannel(channel.id);
+        if (!outer1_10.can(outer1_12.CREATE_INSTANT_INVITE, tmp16)) {
+          const stageInstanceByChannel = str.getStageInstanceByChannel(tmp16.id);
           let invite_code;
-          if (null != stageInstanceByChannel) {
+          if (stageInstanceByChannel != null) {
             invite_code = stageInstanceByChannel.invite_code;
           }
           if (null != invite_code) {
@@ -98,46 +101,49 @@ export default function InstantInviteActionSheet(channel) {
         }
       }
       if (null != vanityURLCode) {
-        if (null != _slicedToArray) {
-          let obj = { baseCode: vanityURLCode, guildScheduledEventId: _slicedToArray };
-          let inviteKeyFromExtraData = channel(vanityURLCode[18]).generateInviteKeyFromExtraData(obj);
+        let inviteKeyFromExtraData = tmp6;
+        if (null != module_12236) {
+          let obj = { baseCode: null, guildScheduledEventId: null };
+          obj[0] = tmp6;
+          obj[1] = tmp12;
+          inviteKeyFromExtraData = channel(vanityURLCode[18]).generateInviteKeyFromExtraData(obj);
           const obj3 = channel(vanityURLCode[18]);
-        } else {
-          inviteKeyFromExtraData = vanityURLCode;
         }
         return inviteKeyFromExtraData;
       } else {
-        let invite = outer1_8.getInvite();
-        if (null != invite) {
-          if (null != _slicedToArray) {
+        code = outer1_8.getInvite();
+        if (null != code) {
+          if (null != module_12236) {
             obj = channel(vanityURLCode[18]);
-            obj = { baseCode: invite.code };
-            invite = _slicedToArray;
-            obj.guildScheduledEventId = _slicedToArray;
-            code = obj.generateInviteKeyFromExtraData(obj);
+            obj = { baseCode: null, guildScheduledEventId: null };
+            code = code.code;
+            obj[0] = code;
+            obj[1] = tmp8;
+            let code2 = obj.generateInviteKeyFromExtraData(obj);
           } else {
-            code = invite.code;
+            code2 = code.code;
           }
         }
       }
     }
   });
-  let obj1 = channel(vanityURLCode[17]);
-  const items3 = [closure_8];
-  const stateFromStores1 = obj1.useStateFromStores(items3, () => outer1_8.getError());
-  let tmp6 = null;
+  let obj1 = channel(tmp3[17]);
+  const items3 = [updateWithLatestInvite];
+  const stateFromStores1 = obj1.useStateFromStores(items3, () => error.getError());
+  let tmp10 = null;
   if (null != stateFromStores) {
-    tmp6 = source(vanityURLCode[19])(stateFromStores);
+    tmp10 = tmp2(tmp3[19])(stateFromStores);
   }
   str = "";
-  if (null != tmp6) {
-    let obj2 = channel(vanityURLCode[20]);
-    str = obj2.getShareMessage(tmp6);
+  if (null != tmp10) {
+    str = tmp7(tmp3[20]).getShareMessage(tmp10);
+    const tmp7Result = tmp7(tmp3[20]);
   }
   let EMBEDDED_APPLICATION = null;
   if (null != targetApplicationId) {
     EMBEDDED_APPLICATION = InviteTargetTypes.EMBEDDED_APPLICATION;
   }
+  let obj3 = code;
   const items4 = [channel, analyticsLocations];
   const items5 = [channel, stateFromStores, str, source];
   callback = code.useCallback((userId) => {
@@ -149,7 +155,11 @@ export default function InstantInviteActionSheet(channel) {
   const items6 = [channel];
   const callback1 = code.useCallback((arg0) => {
     if (null != stateFromStores) {
-      const obj = { channel, code: stateFromStores, message: str, location: source };
+      const obj = { channel: null, code: null, message: null, location: null };
+      obj[0] = channel;
+      obj[1] = tmp;
+      obj[2] = str;
+      obj[3] = source;
       arg0(obj);
       const guildId = channel.getGuildId();
       const result = channel(vanityURLCode[23]).setHubProgressActionComplete(guildId, channel(vanityURLCode[24]).HubProgressStep.INVITE_USER);
@@ -166,113 +176,122 @@ export default function InstantInviteActionSheet(channel) {
   const items9 = [channel];
   const callback4 = code.useCallback(() => channel(vanityURLCode[20]).handleOpenShareSheet(stateFromStores, channel, str, source), items8);
   const callback5 = code.useCallback(() => channel(vanityURLCode[20]).handlePressSettings(channel), items9);
-  const tmp3 = source(vanityURLCode[16]);
+  const tmp5 = source(vanityURLCode[16]);
+  const tmp6 = callback;
   ({ rows, isFetchingRows } = source(vanityURLCode[25])(channel, source, EMBEDDED_APPLICATION, targetApplicationId));
   let tmp20 = null == stateFromStores;
   if (!tmp20) {
     tmp20 = 0 === rows.length && isFetchingRows;
     const tmp21 = 0 === rows.length && isFetchingRows;
   }
-  let tmp23 = null != stateFromStores;
-  if (tmp23) {
-    tmp23 = 0 === rows.length;
+  let tmp22 = null != stateFromStores;
+  if (tmp22) {
+    tmp22 = 0 === rows.length;
   }
-  if (tmp23) {
-    tmp23 = !isFetchingRows;
+  if (tmp22) {
+    tmp22 = !isFetchingRows;
   }
-  const first = callback(code.useState(tmp23), 1)[0];
-  obj = { value: analyticsLocations };
-  obj = { showGradient: null, scrollable: true, startExpanded: true };
-  let tmp27 = null != stateFromStores1;
-  if (!tmp27) {
-    tmp27 = !tmp20;
+  const first = tmp6(obj3.useState(tmp22), 1)[0];
+  obj = { value: analyticsLocations, children: null };
+  let tmp25 = null != stateFromStores1;
+  if (!tmp25) {
+    tmp25 = !tmp20;
   }
-  if (!tmp27) {
-    tmp27 = !first;
+  if (!tmp25) {
+    tmp25 = !first;
   }
-  obj.showGradient = tmp27;
-  obj1 = {};
+  obj = { showGradient: tmp25, scrollable: true, startExpanded: true, header: null, children: null };
   if (null != targetApplicationId) {
     if (null != name) {
-      const intl3 = channel(vanityURLCode[28]).intl;
-      obj2 = {};
+      const intl3 = tmp7(tmp3[28]).intl;
+      obj1 = { applicationName: null };
       name = name.name;
-      obj2.applicationName = name;
-      let formatToPlainStringResult = intl3.formatToPlainString(channel(vanityURLCode[28]).t.ZdK3dW, obj2);
+      obj1[0] = name;
+      let formatToPlainStringResult = intl3.formatToPlainString(tmp7(tmp3[28]).t.ZdK3dW, obj1);
     } else {
-      const intl2 = channel(vanityURLCode[28]).intl;
-      formatToPlainStringResult = intl2.string(channel(vanityURLCode[28]).t["OzOM/q"]);
+      const intl2 = tmp7(tmp3[28]).intl;
+      formatToPlainStringResult = intl2.string(tmp7(tmp3[28]).t["OzOM/q"]);
     }
   } else {
-    const intl = channel(vanityURLCode[28]).intl;
-    obj1.title = intl.string(channel(vanityURLCode[28]).t["f1+QIK"]);
-    obj.header = callback2(tmp29, obj1);
+    const intl = tmp7(tmp3[28]).intl;
+    let obj2 = { title: null };
+    obj2[0] = intl.string(tmp7(tmp3[28]).t["f1+QIK"]);
+    obj[3] = tmp24(tmp26, obj2);
     if (null != stateFromStores1) {
-      let obj3 = { style: tmp.errorEmptyState, Illustration: channel(vanityURLCode[30]).AppCrash, title: stateFromStores1 };
-      let tmp38Result = callback2(channel(vanityURLCode[29]).EmptyState, obj3);
+      obj3 = { style: null, Illustration: null, title: null };
+      obj3[0] = tmp.errorEmptyState;
+      obj3[1] = tmp7(tmp3[30]).AppCrash;
+      obj3[2] = stateFromStores1;
+      let tmp29Result = tmp24(tmp7(tmp3[29]).EmptyState, obj3);
     } else if (tmp20) {
-      tmp38Result = callback2(Loading, {});
+      tmp29Result = tmp24(Loading, {});
     } else if (first) {
-      const obj4 = {};
-      const obj5 = { paddingBottom: source(vanityURLCode[13])().bottom + 16 };
-      obj4.contentContainerStyle = obj5;
-      const obj6 = { link: tmp6, onCopy: callback3, onShare: callback4, onPressSettings: callback5 };
-      obj4.children = callback2(source(vanityURLCode[31]), obj6);
-      tmp38Result = callback2(stateFromStores, obj4);
+      const obj4 = { contentContainerStyle: null, children: null };
+      const obj5 = { paddingBottom: null };
+      obj5[0] = source(vanityURLCode[13])().bottom + 16;
+      obj4[0] = obj5;
+      const obj6 = { link: null, onCopy: null, onShare: null, onPressSettings: null };
+      obj6[0] = tmp10;
+      obj6[1] = callback3;
+      obj6[2] = callback4;
+      obj6[3] = callback5;
+      obj4[1] = tmp24(tmp2(tmp3[31]), obj6);
+      tmp29Result = tmp24(stateFromStores, obj4);
     } else {
-      const obj7 = {};
-      const obj8 = {};
-      const obj9 = { contentContainerStyle: tmp.shareApps, onItemPressed: callback1 };
-      const items10 = [callback2(source(vanityURLCode[32]), obj9), ];
-      const obj10 = { style: tmp.searchAndShareContainer };
-      const obj11 = { size: "md", isRound: true, onChange: channel(vanityURLCode[34]).searchInviteSuggestions };
+      const obj7 = { contentContainerStyle: null, onItemPressed: null };
+      obj7[0] = tmp.shareApps;
+      obj7[1] = callback1;
+      const items10 = [tmp24(tmp2(tmp3[32]), obj7), ];
+      const obj8 = { style: null, children: null };
+      obj8[0] = tmp.searchAndShareContainer;
+      const obj9 = { size: "md", isRound: true, onChange: null, placeholder: null };
+      obj9[2] = tmp7(tmp3[34]).searchInviteSuggestions;
       if (null != targetApplicationId) {
-        const intl5 = channel(vanityURLCode[28]).intl;
-        let stringResult = intl5.string(channel(vanityURLCode[28]).t.iI1gMg);
+        const intl5 = tmp7(tmp3[28]).intl;
+        let stringResult = intl5.string(tmp7(tmp3[28]).t.iI1gMg);
       } else {
-        const intl4 = channel(vanityURLCode[28]).intl;
-        const obj12 = {};
+        const intl4 = tmp7(tmp3[28]).intl;
         guild = guild.getGuild(channel.guild_id);
         name = undefined;
-        if (null != guild) {
+        if (guild != null) {
           name = guild.name;
         }
-        obj12.groupname = name;
-        stringResult = intl4.formatToPlainString(channel(vanityURLCode[28]).t["1UgGdm"], obj12);
+        const obj10 = { groupname: null };
+        obj10[0] = name;
+        stringResult = intl4.formatToPlainString(tmp7(tmp3[28]).t["1UgGdm"], obj10);
       }
-      obj11.placeholder = stringResult;
-      const items11 = [callback2(channel(vanityURLCode[33]).SearchField, obj11), ];
-      let tmp57 = !tmp56;
-      if (null == vanityURLCode) {
-        const obj13 = { style: tmp.inviteAgeText, channel, canEditInvite: null == code };
-        tmp57 = callback2(source(vanityURLCode[35]), obj13);
+      obj9[3] = stringResult;
+      const items11 = [tmp24(tmp7(tmp3[33]).SearchField, obj9), ];
+      let tmp24Result = null == vanityURLCode;
+      if (tmp24Result) {
+        const obj11 = { style: null, channel: null, canEditInvite: null };
+        obj11[0] = tmp.inviteAgeText;
+        obj11[1] = channel;
+        obj11[2] = null == code;
+        tmp24Result = tmp24(tmp2(tmp3[35]), obj11);
       }
-      items11[1] = tmp57;
-      obj10.children = items11;
-      items10[1] = closure_15(analyticsLocations, obj10);
-      obj8.children = items10;
-      const items12 = [closure_15(analyticsLocations, obj8), ];
-      const obj14 = { data: rows, code: stateFromStores };
-      let tmp65;
-      if (null != source) {
-        tmp65 = source;
-      }
-      obj14.source = tmp65;
-      obj14.onPressAvatar = callback;
-      obj14.onInviteSent = callback2;
-      items12[1] = callback2(source(vanityURLCode[36]), obj14);
-      obj7.children = items12;
-      tmp38Result = tmp38(closure_14, obj7);
-      const tmp39 = closure_14;
-      const tmp40 = analyticsLocations;
-      const tmp44 = closure_15;
-      const tmp45 = analyticsLocations;
-      const tmp46 = callback2;
-      const tmp61 = callback2;
-      const tmp64 = source(vanityURLCode[36]);
+      const obj12 = { children: null };
+      items11[1] = tmp24Result;
+      obj8[1] = items11;
+      items10[1] = closure_15(analyticsLocations, obj8);
+      obj12[0] = items10;
+      const items12 = [closure_15(analyticsLocations, obj12), ];
+      const obj13 = { data: null, code: null, source: null, onPressAvatar: null, onInviteSent: null };
+      obj13[0] = rows;
+      obj13[1] = stateFromStores;
+      const obj14 = { children: null };
+      obj13[2] = source;
+      obj13[3] = callback;
+      obj13[4] = callback2;
+      items12[1] = tmp24(tmp2(tmp3[36]), obj13);
+      obj14[0] = items12;
+      tmp29Result = tmp29(closure_14, obj14);
+      const tmp2Result = tmp2(tmp3[36]);
+      const tmp30 = closure_14;
+      const tmp38 = source;
     }
-    obj.children = tmp38Result;
-    obj.children = callback2(channel(vanityURLCode[26]).BottomSheet, obj);
-    return callback2(channel(vanityURLCode[14]).AnalyticsLocationProvider, obj);
+    obj[4] = tmp29Result;
+    obj[1] = tmp24(tmp7(tmp3[26]).BottomSheet, obj);
+    return tmp24(tmp7(tmp3[14]).AnalyticsLocationProvider, obj);
   }
 };

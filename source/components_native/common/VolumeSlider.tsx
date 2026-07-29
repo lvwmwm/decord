@@ -1,29 +1,27 @@
-// Module ID: 10748
-// Function ID: 83425
+// Module ID: 10772
+// Function ID: 10773
 // Name: VolumeSlider
-// Dependencies: [31, 27, 4226, 33, 477, 4165, 689, 3869, 10749, 7636, 4615, 1212, 4693, 2]
+// Dependencies: [19, 17, 4250, 21, 500, 4189, 712, 3893, 10773, 7659, 4637, 1236, 4715, 2]
 // Exports: default
 
-// Module 10748 (VolumeSlider)
-import "result";
+// Module 10772 (VolumeSlider)
+import "noop";
 import { View } from "get ActivityIndicator";
 import { MAX_EMBEDDED_VOLUME_PERCEPTUAL as closure_4 } from "DesktopSources";
 import jsxProd from "jsxProd";
 import set from "set";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 import set from "DesktopSources";
 
-let closure_5;
+let c5;
 let closure_6;
 const require = arg1;
-({ jsx: closure_5, jsxs: closure_6 } = jsxProd);
+({ jsx: c5, jsxs: closure_6 } = jsxProd);
 let num = 16;
 if (set.isAndroid()) {
   num = 0;
 }
-set = { marginRight: num };
-set = { marginLeft: num };
-let closure_7 = _createForOfIteratorHelperLoose.createStyles({ volumerSlider: { flexDirection: "row", alignItems: "center" }, leftIcon: set, rightIcon: set, volumerSliderNative: { flex: 1, marginVertical: -10, backgroundColor: "transparent" } });
+let closure_7 = createCacheKey.createStyles({ volumerSlider: { flexDirection: "row", alignItems: "center" }, leftIcon: { marginRight: num }, rightIcon: { marginLeft: num }, volumerSliderNative: { flex: 1, marginVertical: -10, backgroundColor: "transparent" } });
 const result = set.fileFinishedImporting("components_native/common/VolumeSlider.tsx");
 
 export default function VolumeSlider(maxTrackTintColor) {
@@ -33,53 +31,46 @@ export default function VolumeSlider(maxTrackTintColor) {
   let value;
   let PRIMARY_400 = maxTrackTintColor.maxTrackTintColor;
   if (PRIMARY_400 === undefined) {
-    PRIMARY_400 = importDefault(689).unsafe_rawColors.PRIMARY_400;
+    PRIMARY_400 = importDefault(712).unsafe_rawColors.PRIMARY_400;
   }
   ({ maxVolume, value } = maxTrackTintColor);
   if (maxVolume === undefined) {
     maxVolume = closure_4;
   }
   ({ onValueChange: require, onResponderGrant } = maxTrackTintColor);
-  let obj = { style: 0, maxTrackTintColor: 0, value: 0, maxVolume: 0, onValueChange: 0, onResponderGrant: 0 };
-  Object.setPrototypeOf(null);
-  const merged = Object.assign(maxTrackTintColor, obj);
-  const tmp5 = callback2();
-  let obj1 = require(3869) /* map */;
-  let token = obj1.useToken(importDefault(689).colors.BACKGROUND_BRAND);
-  const minTrackColor = merged.minTrackColor;
-  if (null != minTrackColor) {
-    token = minTrackColor;
+  const merged = Object.assign(maxTrackTintColor, Object.create(null));
+  const tmp4 = callback2();
+  let obj = require(3893) /* map */;
+  let minTrackColor = merged.minTrackColor;
+  if (minTrackColor == null) {
+    minTrackColor = obj.useToken(importDefault(712).colors.BACKGROUND_BRAND);
   }
-  obj = { style: items };
-  items = [tmp5.volumerSlider, maxTrackTintColor.style];
-  obj = { style: tmp5.leftIcon };
-  const items1 = [callback(require(10749) /* VoiceXIcon */.VoiceXIcon, obj), , ];
-  obj1 = { style: tmp5.volumerSliderNative };
-  const tmp10 = importDefault(7636);
-  const tmp7 = closure_6;
-  const tmp8 = View;
-  const tmp9 = callback;
-  obj1.value = require(4615) /* perceptualToAmplitude */.amplitudeToPerceptual(value);
-  obj1.minimumValue = 0;
-  obj1.maximumValue = maxVolume;
-  obj1.minimumTrackTintColor = token;
-  obj1.maximumTrackTintColor = PRIMARY_400;
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj1.accessibilityLabel = intl.string(require(1212) /* getSystemLocale */.t.xPHVBs);
-  obj1.onValueChange = function onValueChange(arg0) {
+  obj = { style: items, children: null };
+  items = [tmp4.volumerSlider, maxTrackTintColor.style];
+  obj = { style: tmp4.leftIcon };
+  const items1 = [callback(require(10773) /* VoiceXIcon */.VoiceXIcon, obj), , ];
+  const obj1 = { style: tmp4.volumerSliderNative, value: null, minimumValue: 0, maximumValue: null, minimumTrackTintColor: null, maximumTrackTintColor: null, accessibilityLabel: null, onValueChange: null, onResponderGrant: null };
+  let tmp5Result = tmp5(4637);
+  obj1[1] = tmp5Result.amplitudeToPerceptual(value);
+  obj1[3] = maxVolume;
+  obj1[4] = minTrackColor;
+  obj1[5] = PRIMARY_400;
+  const intl = tmp5(1236).intl;
+  obj1[6] = intl.string(require(1236) /* getSystemLocale */.t.xPHVBs);
+  obj1[7] = function onValueChange(arg0) {
     return callback(outer1_0(outer1_2[10]).perceptualToAmplitude(arg0));
   };
-  if (null == onResponderGrant) {
+  if (onResponderGrant == null) {
+    tmp5Result = tmp5(500);
     let fn;
-    if (obj7.isAndroid()) {
+    if (tmp5Result.isAndroid()) {
       fn = () => true;
     }
     onResponderGrant = fn;
-    obj7 = require(477) /* set */;
   }
-  obj1.onResponderGrant = onResponderGrant;
-  items1[1] = tmp9(tmp10, obj1);
-  items1[2] = callback(require(4693) /* VoiceNormalIcon */.VoiceNormalIcon, { style: tmp5.rightIcon });
-  obj.children = items1;
-  return tmp7(tmp8, obj);
+  obj1[8] = onResponderGrant;
+  items1[1] = callback(importDefault(7659), obj1);
+  items1[2] = callback(require(4715) /* VoiceNormalIcon */.VoiceNormalIcon, { style: tmp4.rightIcon });
+  obj[1] = items1;
+  return closure_6(View, obj);
 };

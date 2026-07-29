@@ -1,64 +1,64 @@
-// Module ID: 10257
-// Function ID: 79204
-// Name: useSetHeightOnLayout
-// Dependencies: [31, 27, 4157, 10241, 653, 33, 477, 689, 4165, 10258, 10259, 566, 10240, 1450, 4026, 10260, 1273, 10281, 4134, 6056, 3804, 1212, 4395, 4563, 5948, 3878, 4372, 4173, 10282, 1935, 10312, 4166, 10313, 10318, 2]
+// Module ID: 10278
+// Function ID: 10279
+// Dependencies: [19, 17, 4181, 10262, 676, 21, 500, 712, 4189, 10279, 10280, 589, 10261, 1474, 4050, 10281, 1297, 10302, 4158, 6075, 3828, 1236, 4418, 4586, 5967, 3902, 4395, 4197, 10303, 1959, 10333, 4190, 10334, 10339, 2]
 
-// Module 10257 (useSetHeightOnLayout)
-import importAllResult from "withTiming";
-import { View } from "transitionToChannel";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 10278
+import importAllResult from "checkReactionResponse";
+import { View } from "context";
+import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
 import set from "set";
 import { MessageEmbedTypes } from "ME";
-import jsxProd from "PX_12";
+import jsxProd from "getSystemLocale";
 import set from "set";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import set from "_isNativeReflectConstruct";
+import createCacheKey from "createCacheKey";
+import set from "maybeApplyNoTextColorForLightCustomTheme";
 
-let closure_11;
+let c9;
 let closure_12;
 let closure_6;
-let closure_7;
-let closure_8;
-let closure_9;
+let error;
+let metroImportAll;
+let unpackModuleId;
 const require = arg1;
-function useSetHeightOnLayout(expandedPreviewHeight) {
-  let closure_0 = expandedPreviewHeight;
-  const items = [expandedPreviewHeight];
-  return importAllResult.useCallback((nativeEvent) => {
-    const height = nativeEvent.nativeEvent.layout.height;
-    if (height > 0) {
-      const result = expandedPreviewHeight.set(height);
-    }
-  }, items);
-}
-({ DEFAULT_ANIMATION_TIMING: closure_6, IN_APP_NOTIFICATION_MAX_HEIGHT: closure_7, NOTIFICATION_PREVIEW_LINE_CLAMP: closure_8, RIGHT_ACCESSORY_LEFT_MARGIN: closure_9 } = set);
-({ jsx: closure_11, jsxs: closure_12 } = jsxProd);
+let c3 = importAllResult;
+({ DEFAULT_ANIMATION_TIMING: closure_6, IN_APP_NOTIFICATION_MAX_HEIGHT: error, NOTIFICATION_PREVIEW_LINE_CLAMP: metroImportAll, RIGHT_ACCESSORY_LEFT_MARGIN: c9 } = set);
+({ jsx: unpackModuleId, jsxs: closure_12 } = jsxProd);
+let c13 = 20;
 set = set.isAndroid();
-const PX_12 = require("_createForOfIteratorHelperLoose").space.PX_12;
-const PX_8 = require("_createForOfIteratorHelperLoose").space.PX_8;
-let closure_16 = _createForOfIteratorHelperLoose.createStyles({ newContainerRoleDot: { paddingRight: 4, paddingTop: 0 }, initialPreviewOverlay: { position: "absolute", top: 0, left: 0, right: 0, overflow: "hidden" }, expandedPreviewOverlay: { position: "absolute", top: 0, left: 0, right: 0 } });
-let closure_17 = importAllResult.memo((message) => callback(importDefault(10258), { message: message.message, lineClamp: closure_8, maxHeight: closure_7 }));
-let closure_18 = { code: "function MessageNotificationTsx1(){const{contentHeight,EXPANDED_MAX_HEIGHT,TRUNCATED_MESSAGE_HEIGHT_OFFSET,EXPANDED_SHORT_PREVIEW_PADDING}=this.__closure;const isGradientShown=contentHeight.get()>=EXPANDED_MAX_HEIGHT-TRUNCATED_MESSAGE_HEIGHT_OFFSET;const isShortPreview=contentHeight.get()>0&&!isGradientShown;return{paddingBottom:isShortPreview?EXPANDED_SHORT_PREVIEW_PADDING:0};}" };
-let closure_19 = { code: "function MessageNotificationTsx2(){const{IS_ANDROID,hasPreviewableMedia,hasTextContent,hasEmbedMedia,fadeProgress,ACCESSORY_EXIT_THRESHOLD}=this.__closure;if(IS_ANDROID&&hasPreviewableMedia&&hasTextContent&&!hasEmbedMedia){return{opacity:fadeProgress.get()};}if(!hasTextContent||hasEmbedMedia){return{opacity:fadeProgress.get(),transform:[{translateY:(1-fadeProgress.get())*ACCESSORY_EXIT_THRESHOLD}]};}return{opacity:1};}" };
-let closure_20 = importAllResult.memo((message) => {
+const PX_12 = require("Themes").space.PX_12;
+const PX_8 = require("Themes").space.PX_8;
+let closure_17 = createCacheKey.createStyles({ newContainerRoleDot: { paddingRight: 4, paddingTop: 0 }, initialPreviewOverlay: { position: "absolute", top: 0, left: 0, right: 0, overflow: "hidden" }, expandedPreviewOverlay: { position: "absolute", top: 0, left: 0, right: 0 } });
+let closure_18 = importAllResult.memo((message) => callback(importDefault(10279), { message: message.message, lineClamp: closure_8, maxHeight: closure_7 }));
+let closure_19 = { code: "function MessageNotificationTsx1(){const{contentHeight,EXPANDED_MAX_HEIGHT,TRUNCATED_MESSAGE_HEIGHT_OFFSET,EXPANDED_SHORT_PREVIEW_PADDING}=this.__closure;const isGradientShown=contentHeight.get()>=EXPANDED_MAX_HEIGHT-TRUNCATED_MESSAGE_HEIGHT_OFFSET;const isShortPreview=contentHeight.get()>0&&!isGradientShown;return{paddingBottom:isShortPreview?EXPANDED_SHORT_PREVIEW_PADDING:0};}" };
+let closure_20 = { code: "function MessageNotificationTsx2(){const{IS_ANDROID,hasPreviewableMedia,hasTextContent,hasEmbedMedia,fadeProgress,ACCESSORY_EXIT_THRESHOLD}=this.__closure;if(IS_ANDROID&&hasPreviewableMedia&&hasTextContent&&!hasEmbedMedia){return{opacity:fadeProgress.get()};}if(!hasTextContent||hasEmbedMedia){return{opacity:fadeProgress.get(),transform:[{translateY:(1-fadeProgress.get())*ACCESSORY_EXIT_THRESHOLD}]};}return{opacity:1};}" };
+let closure_21 = importAllResult.memo((message) => {
+  let expandedPreviewHeight;
+  let fadeProgress;
   let gradientColors;
   let gradientStyles;
   message = message.message;
-  const fadeProgress = message.fadeProgress;
+  let sharedValue = message;
+  ({ expandedPreviewHeight, fadeProgress } = message);
+  let hasPreviewableMedia;
+  let memo;
+  let c4;
+  let c5;
+  sharedValue = undefined;
   let tmp = callback3();
+  const tmp2 = hasPreviewableMedia;
   ({ gradientColors, gradientStyles } = fadeProgress(hasPreviewableMedia[10])());
-  let obj = message(hasPreviewableMedia[11]);
-  let items = [result];
-  const stateFromStores = obj.useStateFromStores(items, () => result.useReducedMotion);
-  let obj1 = message(hasPreviewableMedia[12]);
+  let obj = sharedValue(hasPreviewableMedia[11]);
+  let items = [c5];
+  const stateFromStores = obj.useStateFromStores(items, () => _undefined.useReducedMotion);
+  let obj1 = sharedValue(hasPreviewableMedia[12]);
   hasPreviewableMedia = obj1.useHasPreviewableMedia(message);
   const items1 = [message.embeds];
   memo = memo.useMemo(() => {
-    const embeds = message.embeds;
+    const embeds = sharedValue.embeds;
     return embeds.some((image) => {
       let tmp = null != image.image || null != image.thumbnail;
       if (!tmp) {
-        tmp = image.type === outer2_10.GIFV;
+        tmp = image.type === constants.GIFV;
       }
       return tmp;
     });
@@ -67,143 +67,163 @@ let closure_20 = importAllResult.memo((message) => {
   const memo1 = memo.useMemo(() => {
     let tmp = hasPreviewableMedia;
     if (!hasPreviewableMedia) {
-      tmp = null != message.poll;
+      tmp = null != sharedValue.poll;
     }
     if (!tmp) {
       tmp = memo;
     }
     return tmp;
   }, items2);
-  const View = tmp7;
-  result = 0.24 * fadeProgress(hasPreviewableMedia[13])({ ignoreKeyboard: true }).height;
-  const tmp2 = fadeProgress(hasPreviewableMedia[10])();
-  let obj2 = message(hasPreviewableMedia[14]);
-  const sharedValue = obj2.useSharedValue(0);
-  const tmp9 = useSetHeightOnLayout(message.expandedPreviewHeight);
-  let obj3 = message(hasPreviewableMedia[14]);
-  const fn = function u() {
-    const obj = {};
-    let num = 0;
+  c4 = tmp9;
+  const result = 0.24 * fadeProgress(hasPreviewableMedia[13])({ ignoreKeyboard: true }).height;
+  c5 = result;
+  sharedValue = expandedPreviewHeight;
+  const items3 = [expandedPreviewHeight];
+  const callback = memo.useCallback((nativeEvent) => {
+    const height = nativeEvent.nativeEvent.layout.height;
+    if (height > 0) {
+      const result = initialPreviewHeight.set(height);
+    }
+  }, items3);
+  let obj2 = sharedValue(hasPreviewableMedia[14]);
+  sharedValue = obj2.useSharedValue(0);
+  const items4 = [sharedValue];
+  const callback1 = memo.useCallback((nativeEvent) => {
+    const height = nativeEvent.nativeEvent.layout.height;
+    if (height > 0) {
+      const result = initialPreviewHeight.set(height);
+    }
+  }, items4);
+  let obj3 = sharedValue(hasPreviewableMedia[14]);
+  const fn = function h() {
+    let paddingBottom = 0;
     if (sharedValue.get() > 0) {
-      num = 0;
+      paddingBottom = 0;
       if (!tmp) {
-        num = outer1_14;
+        paddingBottom = outer1_15;
       }
     }
-    obj.paddingBottom = num;
-    return obj;
+    return { paddingBottom };
   };
   obj = { contentHeight: sharedValue, EXPANDED_MAX_HEIGHT: result, TRUNCATED_MESSAGE_HEIGHT_OFFSET: PX_8, EXPANDED_SHORT_PREVIEW_PADDING: PX_12 };
   fn.__closure = obj;
   fn.__workletHash = 4300216170219;
-  fn.__initData = closure_18;
+  fn.__initData = closure_19;
   const animatedStyle = obj3.useAnimatedStyle(fn);
-  const tmp11 = useSetHeightOnLayout(sharedValue);
-  const fn2 = function h() {
-    if (outer1_13) {
+  const tmp3 = fadeProgress(hasPreviewableMedia[10])();
+  const tmp4 = sharedValue;
+  const fn2 = function u() {
+    if (outer1_14) {
       if (hasPreviewableMedia) {
-        if (closure_4) {
+        if (c4) {
           if (!memo) {
-            let obj = { opacity: fadeProgress.get() };
+            let obj = { opacity: null };
+            obj[0] = fadeProgress.get();
             return obj;
           }
         }
       }
     }
-    if (closure_4) {
+    if (c4) {
       if (!memo) {
         obj = { opacity: 1 };
       }
     }
-    obj = { opacity: fadeProgress.get() };
-    const items = [{ translateY: (1 - fadeProgress.get()) * 20 }];
-    obj.transform = items;
+    obj = { opacity: fadeProgress.get(), transform: null };
+    const items = [{ translateY: (1 - fadeProgress.get()) * outer1_13 }];
+    obj[1] = items;
   };
-  obj = { IS_ANDROID: set, hasPreviewableMedia, hasTextContent: tmp7, hasEmbedMedia: memo, fadeProgress, ACCESSORY_EXIT_THRESHOLD: 20 };
+  obj = { IS_ANDROID: set, hasPreviewableMedia, hasTextContent: tmp9, hasEmbedMedia: memo, fadeProgress, ACCESSORY_EXIT_THRESHOLD: c13 };
   fn2.__closure = obj;
   fn2.__workletHash = 9879198032662;
-  fn2.__initData = closure_19;
-  const animatedStyle1 = message(hasPreviewableMedia[14]).useAnimatedStyle(fn2);
-  obj1 = {};
-  const items3 = [tmp.expandedPreviewOverlay, , ];
-  let tmp15 = null;
+  fn2.__initData = closure_20;
+  const animatedStyle1 = sharedValue(hasPreviewableMedia[14]).useAnimatedStyle(fn2);
+  const items5 = [tmp.expandedPreviewOverlay, , ];
+  let tmp17 = null;
   if (memo1) {
-    tmp15 = animatedStyle1;
+    tmp17 = animatedStyle1;
   }
-  items3[1] = tmp15;
-  items3[2] = animatedStyle;
-  obj1.style = items3;
-  obj1.onLayout = tmp9;
-  obj2 = { onLayout: tmp11 };
-  obj3 = { message };
+  obj1 = { style: items5, onLayout: callback, children: null };
+  items5[1] = tmp17;
+  items5[2] = animatedStyle;
+  obj2 = { onLayout: callback1, children: null };
+  obj3 = { message, lineClamp: null, maxHeight: null, gifAutoPlay: null, gradientStyles: null, gradientColors: null };
   let num;
   if (memo1) {
     num = 6;
   }
-  obj3.lineClamp = num;
-  obj3.maxHeight = result;
-  obj3.gifAutoPlay = !stateFromStores;
-  obj3.gradientStyles = gradientStyles;
-  obj3.gradientColors = gradientColors;
-  obj2.children = closure_11(message(hasPreviewableMedia[15]).NativeChannelRowPreview, obj3);
-  obj1.children = closure_11(View, obj2);
+  obj3[1] = num;
+  obj3[2] = result;
+  obj3[3] = !stateFromStores;
+  obj3[4] = gradientStyles;
+  obj3[5] = gradientColors;
+  obj2[1] = closure_11(tmp4(tmp2[15]).NativeChannelRowPreview, obj3);
+  obj1[2] = closure_11(c4, obj2);
   return closure_11(fadeProgress(hasPreviewableMedia[14]).View, obj1);
 });
-let closure_21 = { code: "function MessageNotificationTsx3(){const{shouldHandlePreviewableMediaExpand,fadeProgress,accessoryWidthSV}=this.__closure;return shouldHandlePreviewableMediaExpand?{opacity:Math.max(0,1-fadeProgress.get()*2),right:accessoryWidthSV.get()}:{opacity:Math.max(0,1-fadeProgress.get()*2)};}" };
-let closure_22 = importAllResult.memo((fadeProgress) => {
-  let initialPreviewContent;
+let closure_22 = { code: "function MessageNotificationTsx3(){const{shouldHandlePreviewableMediaExpand,fadeProgress,accessoryWidthSV}=this.__closure;return shouldHandlePreviewableMediaExpand?{opacity:Math.max(0,1-fadeProgress.get()*2),right:accessoryWidthSV.get()}:{opacity:Math.max(0,1-fadeProgress.get()*2)};}" };
+let closure_23 = importAllResult.memo((children) => {
+  let fadeProgress;
   let initialPreviewHeight;
-  fadeProgress = fadeProgress.fadeProgress;
-  const accessoryWidthSV = fadeProgress.accessoryWidthSV;
-  const shouldHandlePreviewableMediaExpand = fadeProgress.shouldHandlePreviewableMediaExpand;
-  ({ initialPreviewHeight, initialPreviewContent } = fadeProgress);
-  const tmp = callback3();
-  let obj = fadeProgress(shouldHandlePreviewableMediaExpand[14]);
-  const fn = function u() {
+  ({ initialPreviewHeight, fadeProgress } = children);
+  initialPreviewHeight = fadeProgress;
+  const accessoryWidthSV = children.accessoryWidthSV;
+  const shouldHandlePreviewableMediaExpand = children.shouldHandlePreviewableMediaExpand;
+  const items = [initialPreviewHeight];
+  const callback = importAllResult.useCallback((nativeEvent) => {
+    const height = nativeEvent.nativeEvent.layout.height;
+    if (height > 0) {
+      const result = initialPreviewHeight.set(height);
+    }
+  }, items);
+  let obj = initialPreviewHeight(shouldHandlePreviewableMediaExpand[14]);
+  const fn = function h() {
     if (shouldHandlePreviewableMediaExpand) {
-      let obj = {};
+      let obj = { opacity: null, right: null };
       const _Math2 = Math;
-      obj.opacity = Math.max(0, 1 - 2 * fadeProgress.get());
-      obj.right = accessoryWidthSV.get();
+      obj[0] = Math.max(0, 1 - 2 * initialPreviewHeight.get());
+      obj[1] = accessoryWidthSV.get();
     } else {
-      obj = {};
+      obj = { opacity: null };
       const _Math = Math;
-      obj.opacity = Math.max(0, 1 - 2 * fadeProgress.get());
+      obj[0] = Math.max(0, 1 - 2 * initialPreviewHeight.get());
     }
     return obj;
   };
   fn.__closure = { shouldHandlePreviewableMediaExpand, fadeProgress, accessoryWidthSV };
   fn.__workletHash = 15466459240148;
-  fn.__initData = closure_21;
+  fn.__initData = closure_22;
   const animatedStyle = obj.useAnimatedStyle(fn);
-  obj = { style: items };
-  items = [tmp.initialPreviewOverlay, animatedStyle];
-  obj.children = callback(View, { onLayout: useSetHeightOnLayout(initialPreviewHeight), children: initialPreviewContent });
+  obj = { style: items1, children: null };
+  items1 = [callback3().initialPreviewOverlay, animatedStyle];
+  obj[1] = callback(View, { onLayout: callback, children: children.initialPreviewContent });
   return callback(accessoryWidthSV(shouldHandlePreviewableMediaExpand[14]).View, obj);
 });
-let closure_23 = { code: "function MessageNotificationTsx4(){const{expandedPreviewHeight,EXPANDED_MAX_HEIGHT,expandedSV,notificationGestureY,initialPreviewHeight}=this.__closure;const maxExpandedHeight=Math.min(expandedPreviewHeight.get(),EXPANDED_MAX_HEIGHT);if(expandedSV.get()){return maxExpandedHeight;}const dragDistance=Math.max(0,notificationGestureY.get());const maxHeight=Math.max(maxExpandedHeight,initialPreviewHeight.get());return Math.min(initialPreviewHeight.get()+dragDistance,maxHeight);}" };
-let closure_24 = { code: "function MessageNotificationTsx5(){const{expandedSV,expandedPreviewHeight,EXPANDED_MAX_HEIGHT,initialPreviewHeight,notificationGestureY,ACCESSORY_EXIT_THRESHOLD,currentHeight}=this.__closure;if(expandedSV.get()){return 1;}const maxExpandedHeight=Math.min(expandedPreviewHeight.get(),EXPANDED_MAX_HEIGHT);const heightDifference=maxExpandedHeight-initialPreviewHeight.get();const dragDistance=Math.max(0,notificationGestureY.get());if(heightDifference<=0){return Math.min(1,dragDistance/ACCESSORY_EXIT_THRESHOLD);}return Math.min(1,(currentHeight.get()-initialPreviewHeight.get())/heightDifference);}" };
-let closure_25 = { code: "function MessageNotificationTsx6(){const{shouldHandlePreviewableMediaExpand,currentHeight,accessoryWidthSV}=this.__closure;return shouldHandlePreviewableMediaExpand?{overflow:'hidden',height:currentHeight.get(),marginRight:-accessoryWidthSV.get()}:{overflow:'hidden',height:currentHeight.get()};}" };
-let closure_26 = importAllResult.memo((initialPreviewContent) => {
+let closure_24 = { code: "function MessageNotificationTsx4(){const{expandedPreviewHeight,EXPANDED_MAX_HEIGHT,expandedSV,notificationGestureY,initialPreviewHeight}=this.__closure;const maxExpandedHeight=Math.min(expandedPreviewHeight.get(),EXPANDED_MAX_HEIGHT);if(expandedSV.get()){return maxExpandedHeight;}const dragDistance=Math.max(0,notificationGestureY.get());const maxHeight=Math.max(maxExpandedHeight,initialPreviewHeight.get());return Math.min(initialPreviewHeight.get()+dragDistance,maxHeight);}" };
+let closure_25 = { code: "function MessageNotificationTsx5(){const{expandedSV,expandedPreviewHeight,EXPANDED_MAX_HEIGHT,initialPreviewHeight,notificationGestureY,ACCESSORY_EXIT_THRESHOLD,currentHeight}=this.__closure;if(expandedSV.get()){return 1;}const maxExpandedHeight=Math.min(expandedPreviewHeight.get(),EXPANDED_MAX_HEIGHT);const heightDifference=maxExpandedHeight-initialPreviewHeight.get();const dragDistance=Math.max(0,notificationGestureY.get());if(heightDifference<=0){return Math.min(1,dragDistance/ACCESSORY_EXIT_THRESHOLD);}return Math.min(1,(currentHeight.get()-initialPreviewHeight.get())/heightDifference);}" };
+let closure_26 = { code: "function MessageNotificationTsx6(){const{shouldHandlePreviewableMediaExpand,currentHeight,accessoryWidthSV}=this.__closure;return shouldHandlePreviewableMediaExpand?{overflow:'hidden',height:currentHeight.get(),marginRight:-accessoryWidthSV.get()}:{overflow:'hidden',height:currentHeight.get()};}" };
+let closure_27 = importAllResult.memo((initialPreviewContent) => {
   let expandedSV;
   let message;
   ({ message, expandedSV } = initialPreviewContent);
   const notificationGestureY = initialPreviewContent.notificationGestureY;
   const initialPreviewHeight = initialPreviewContent.initialPreviewHeight;
   const accessoryWidthSV = initialPreviewContent.accessoryWidthSV;
+  let c4;
+  let sharedValue;
   let hasPreviewableMedia;
   let derivedValue;
   const result = 0.24 * notificationGestureY(initialPreviewHeight[13])({ ignoreKeyboard: true }).height;
-  const View = result;
+  c4 = result;
   let obj = expandedSV(initialPreviewHeight[14]);
-  const sharedValue = obj.useSharedValue(result);
-  let obj1 = expandedSV(initialPreviewHeight[12]);
+  sharedValue = obj.useSharedValue(result);
   hasPreviewableMedia = set;
   if (set) {
-    hasPreviewableMedia = obj1.useHasPreviewableMedia(message);
+    hasPreviewableMedia = obj2.useHasPreviewableMedia(message);
   }
-  const fn = function u() {
-    const bound = Math.min(sharedValue.get(), closure_4);
+  let tmp4Result = tmp4(tmp2[14]);
+  const fn = function h() {
+    const bound = Math.min(sharedValue.get(), c4);
     if (expandedSV.get()) {
       return bound;
     } else {
@@ -217,20 +237,20 @@ let closure_26 = importAllResult.memo((initialPreviewContent) => {
   };
   fn.__closure = { expandedPreviewHeight: sharedValue, EXPANDED_MAX_HEIGHT: result, expandedSV, notificationGestureY, initialPreviewHeight };
   fn.__workletHash = 10745028098653;
-  fn.__initData = closure_23;
-  derivedValue = expandedSV(initialPreviewHeight[14]).useDerivedValue(fn);
-  const obj3 = expandedSV(initialPreviewHeight[14]);
-  const fn2 = function h() {
+  fn.__initData = closure_24;
+  derivedValue = tmp4Result.useDerivedValue(fn);
+  tmp4Result = tmp4(tmp2[14]);
+  const fn2 = function u() {
     if (expandedSV.get()) {
       return 1;
     } else {
       const _Math = Math;
-      const bound = Math.min(sharedValue.get(), closure_4);
+      const bound = Math.min(sharedValue.get(), c4);
       const diff = bound - initialPreviewHeight.get();
       const _Math2 = Math;
       if (diff <= 0) {
         const _Math4 = Math;
-        let bound1 = Math.min(1, tmp8 / 20);
+        let bound1 = Math.min(1, tmp7 / outer1_13);
       } else {
         const _Math3 = Math;
         const value = derivedValue.get();
@@ -239,56 +259,66 @@ let closure_26 = importAllResult.memo((initialPreviewContent) => {
       return bound1;
     }
   };
-  fn2.__closure = { expandedSV, expandedPreviewHeight: sharedValue, EXPANDED_MAX_HEIGHT: result, initialPreviewHeight, notificationGestureY, ACCESSORY_EXIT_THRESHOLD: 20, currentHeight: derivedValue };
+  obj = { expandedSV, expandedPreviewHeight: sharedValue, EXPANDED_MAX_HEIGHT: result, initialPreviewHeight, notificationGestureY, ACCESSORY_EXIT_THRESHOLD: c13, currentHeight: derivedValue };
+  fn2.__closure = obj;
   fn2.__workletHash = 7693825745292;
-  fn2.__initData = closure_24;
-  const derivedValue1 = expandedSV(initialPreviewHeight[14]).useDerivedValue(fn2);
-  const obj4 = expandedSV(initialPreviewHeight[14]);
+  fn2.__initData = closure_25;
+  const derivedValue1 = tmp4Result.useDerivedValue(fn2);
+  obj2 = expandedSV(initialPreviewHeight[12]);
+  const tmp = notificationGestureY;
   const fn3 = function _() {
     if (hasPreviewableMedia) {
-      let obj = { overflow: "hidden", height: derivedValue.get(), marginRight: -accessoryWidthSV.get() };
+      let obj = { overflow: "hidden", height: null, marginRight: null };
+      obj[1] = derivedValue.get();
+      obj[2] = -accessoryWidthSV.get();
     } else {
-      obj = { overflow: "hidden", height: derivedValue.get() };
+      obj = { overflow: "hidden", height: null };
+      obj[1] = derivedValue.get();
     }
     return obj;
   };
-  obj = { shouldHandlePreviewableMediaExpand: hasPreviewableMedia, currentHeight: derivedValue, accessoryWidthSV };
-  fn3.__closure = obj;
+  fn3.__closure = { shouldHandlePreviewableMediaExpand: hasPreviewableMedia, currentHeight: derivedValue, accessoryWidthSV };
   fn3.__workletHash = 9399498954959;
-  fn3.__initData = closure_25;
+  fn3.__initData = closure_26;
   const animatedStyle = expandedSV(initialPreviewHeight[14]).useAnimatedStyle(fn3);
-  obj = { style: animatedStyle };
-  const items = [callback(closure_20, { message, expandedPreviewHeight: sharedValue, fadeProgress: derivedValue1 }), ];
-  obj1 = { initialPreviewHeight, fadeProgress: derivedValue1, initialPreviewContent: initialPreviewContent.initialPreviewContent, accessoryWidthSV, shouldHandlePreviewableMediaExpand: hasPreviewableMedia };
-  items[1] = callback(closure_22, obj1);
-  obj.children = items;
-  return callback2(notificationGestureY(initialPreviewHeight[14]).View, obj);
+  obj = { style: animatedStyle, children: null };
+  const items = [callback(closure_21, { message, expandedPreviewHeight: sharedValue, fadeProgress: derivedValue1 }), callback(closure_23, { initialPreviewHeight, fadeProgress: derivedValue1, initialPreviewContent: initialPreviewContent.initialPreviewContent, accessoryWidthSV, shouldHandlePreviewableMediaExpand: hasPreviewableMedia })];
+  obj[1] = items;
+  return callback2(tmp(initialPreviewHeight[14]).View, obj);
 });
-let closure_27 = { code: "function MessageNotificationTsx7(){const{isExpandableNotification,expandedSV,notificationGestureY,ACCESSORY_EXIT_THRESHOLD}=this.__closure;if(!isExpandableNotification){return 0;}if(expandedSV.get()){return 1;}const dragDistance=Math.max(0,notificationGestureY.get());return Math.min(1,dragDistance/ACCESSORY_EXIT_THRESHOLD);}" };
-let closure_28 = { code: "function MessageNotificationTsx8(){const{PREVIEW_SIZE,RIGHT_ACCESSORY_LEFT_MARGIN,accessoryExitProgressSV}=this.__closure;return(PREVIEW_SIZE+RIGHT_ACCESSORY_LEFT_MARGIN)*(1-accessoryExitProgressSV.get());}" };
-let closure_29 = { code: "function MessageNotificationTsx9(){const{isExpandableNotification,hasPreviewableMedia,accessoryWidthSV,PREVIEW_SIZE}=this.__closure;if(!isExpandableNotification||!hasPreviewableMedia){return{};}return{marginRight:accessoryWidthSV.get(),minHeight:PREVIEW_SIZE};}" };
-let closure_30 = { code: "function MessageNotificationTsx10(){const{withTiming,expandedSV,DEFAULT_ANIMATION_TIMING}=this.__closure;return{opacity:withTiming(expandedSV.get()?1:0,DEFAULT_ANIMATION_TIMING),maxHeight:withTiming(expandedSV.get()?60:0,DEFAULT_ANIMATION_TIMING)};}" };
+let closure_28 = { code: "function MessageNotificationTsx7(){const{isExpandableNotification,expandedSV,notificationGestureY,ACCESSORY_EXIT_THRESHOLD}=this.__closure;if(!isExpandableNotification){return 0;}if(expandedSV.get()){return 1;}const dragDistance=Math.max(0,notificationGestureY.get());return Math.min(1,dragDistance/ACCESSORY_EXIT_THRESHOLD);}" };
+let closure_29 = { code: "function MessageNotificationTsx8(){const{PREVIEW_SIZE,RIGHT_ACCESSORY_LEFT_MARGIN,accessoryExitProgressSV}=this.__closure;return(PREVIEW_SIZE+RIGHT_ACCESSORY_LEFT_MARGIN)*(1-accessoryExitProgressSV.get());}" };
+let closure_30 = { code: "function MessageNotificationTsx9(){const{isExpandableNotification,hasPreviewableMedia,accessoryWidthSV,PREVIEW_SIZE}=this.__closure;if(!isExpandableNotification||!hasPreviewableMedia){return{};}return{marginRight:accessoryWidthSV.get(),minHeight:PREVIEW_SIZE};}" };
+let closure_31 = { code: "function MessageNotificationTsx10(){const{withTiming,expandedSV,DEFAULT_ANIMATION_TIMING}=this.__closure;return{opacity:withTiming(expandedSV.get()?1:0,DEFAULT_ANIMATION_TIMING),maxHeight:withTiming(expandedSV.get()?60:0,DEFAULT_ANIMATION_TIMING)};}" };
 let result = set.fileFinishedImporting("modules/in_app_notifications/native/MessageNotification.tsx");
 
 export default importAllResult.memo(function MessageNotification(notification) {
-  let accessibilityActions;
-  let onAccessibilityAction;
-  let onAccessibilityExpand;
+  let c3;
+  let setConfirmation;
   notification = notification.notification;
+  let setExpanded = notification;
+  let setAutoDismissing;
+  let setActionTaken;
+  let importAllResult;
+  setConfirmation = undefined;
   let nullableMessageAuthor;
   let isExpanded;
   let expandedSV;
   let notificationGestureY;
   let handleDismissNotification;
   let isExpandableNotification;
-  let onReactionPress;
+  let callback;
   let hasPreviewableMedia;
   let derivedValue;
   let derivedValue1;
   const message = notification.message;
+  setAutoDismissing = message;
   const channel = notification.channel;
+  setActionTaken = channel;
   const parentChannel = notification.parentChannel;
+  importAllResult = parentChannel;
   const guild = notification.guild;
+  setConfirmation = guild;
   let tmp2 = 0 === message.content.length;
   if (tmp2) {
     tmp2 = null !== message.interaction;
@@ -303,110 +333,118 @@ export default importAllResult.memo(function MessageNotification(notification) {
     tmp2 = undefined !== message.activityInstance;
   }
   if (tmp2) {
-    let intl = notification(channel[21]).intl;
-    let obj = {};
-    let obj1 = notification(channel[22]);
+    let intl = setExpanded(setActionTaken[21]).intl;
+    let obj = setExpanded(setActionTaken[22]);
     const interaction = message.interaction;
     let user;
-    if (null != interaction) {
+    if (interaction != null) {
       user = interaction.user;
     }
-    obj.username = obj1.getUserAuthor(user, channel).nick;
-    message.content = intl.formatToPlainString(notification(channel[21]).t["7eikg1"], obj);
+    obj = { username: null };
+    obj[0] = obj.getUserAuthor(user, channel).nick;
+    message.content = intl.formatToPlainString(setExpanded(setActionTaken[21]).t["7eikg1"], obj);
   }
-  let obj2 = notification(channel[22]);
+  let obj2 = setExpanded(setActionTaken[22]);
   nullableMessageAuthor = obj2.useNullableMessageAuthor(message);
-  obj = { author: nullableMessageAuthor, containerStyles: callback3().newContainerRoleDot };
-  const tmp = callback3();
-  let obj4 = notification(channel[17]);
-  let inAppNotificationContext = obj4.useInAppNotificationContext();
+  let obj3 = setExpanded(setActionTaken[11]);
+  const items = [nullableMessageAuthor];
+  let colorString;
+  const stateFromStores = obj3.useStateFromStores(items, () => nullableMessageAuthor.roleStyle);
+  if (nullableMessageAuthor != null) {
+    colorString = nullableMessageAuthor.colorString;
+  }
+  let tmp15Result;
+  if ("dot" === stateFromStores) {
+    if (undefined !== colorString) {
+      obj = { color: null, colors: null, containerStyles: null };
+      obj[0] = colorString;
+      let colorStrings;
+      if (nullableMessageAuthor != null) {
+        colorStrings = nullableMessageAuthor.colorStrings;
+      }
+      obj[1] = colorStrings;
+      obj[2] = tmp.newContainerRoleDot;
+      tmp15Result = callback(tmp9(tmp10[16]).RoleDot, obj);
+      const tmp15 = callback;
+    }
+  }
+  let tmp9Result = tmp9(tmp10[17]);
+  const inAppNotificationContext = tmp9Result.useInAppNotificationContext();
   isExpanded = inAppNotificationContext.isExpanded;
   expandedSV = inAppNotificationContext.expandedSV;
   notificationGestureY = inAppNotificationContext.notificationGestureY;
   handleDismissNotification = inAppNotificationContext.handleDismissNotification;
   isExpandableNotification = inAppNotificationContext.isExpandableNotification;
-  const tmp12 = (function useExpandNotificationActions(isExpandableNotification) {
-    let parentChannel;
-    let setConfirmation;
-    function onAccessibilityExpand() {
-      setExpanded(!closure_3, "accessibility_expand");
-    }
-    let obj = notification(channel[17]);
-    const inAppNotificationContext = obj.useInAppNotificationContext();
-    const setExpanded = inAppNotificationContext.setExpanded;
-    const setAutoDismissing = inAppNotificationContext.setAutoDismissing;
-    const setActionTaken = inAppNotificationContext.setActionTaken;
-    ({ isExpanded: parentChannel, setConfirmation } = inAppNotificationContext);
-    obj = {
-      onReactionPress: parentChannel.useCallback((channel, reaction, burst) => {
-        let obj = notification(channel[18]);
-        const result = obj.triggerHapticFeedback(notification(channel[18]).HapticFeedbackTypes.IMPACT_LIGHT);
-        const obj2 = notification(channel[19]);
-        const obj3 = notification(channel[20]);
-        obj = { burst };
-        obj2.addReaction(channel.channel.id, channel.message.id, notification(channel[20]).toReactionEmoji(reaction), notification(channel[19]).ReactionLocations.IN_APP_NOTIFICATION, obj);
-        setActionTaken(true);
-        setExpanded(false);
-        obj = { type: "message", reaction };
-        const intl = notification(channel[21]).intl;
-        obj.message = intl.string(notification(channel[21]).t.UjTvrz);
-        setConfirmation(obj);
-        setAutoDismissing(true);
-      }, items),
-      onAccessibilityExpand
-    };
-    items = [setActionTaken, setExpanded, setAutoDismissing, setConfirmation];
-    let tmp2;
-    if (isExpandableNotification) {
-      obj = { name: "expand_toggle" };
-      let intl = notification(channel[21]).intl;
-      obj.label = intl.string(notification(channel[21]).t["PbxI/x"]);
-      const items1 = [obj];
-      tmp2 = items1;
-    }
-    obj.accessibilityActions = tmp2;
-    obj.onAccessibilityAction = function onAccessibilityAction(nativeEvent) {
-      if ("expand_toggle" === nativeEvent.nativeEvent.actionName) {
-        onAccessibilityExpand();
-      }
-    };
-    return obj;
-  })(isExpandableNotification);
-  onReactionPress = tmp12.onReactionPress;
-  ({ onAccessibilityAction, accessibilityActions, onAccessibilityExpand } = tmp12);
-  let obj5 = notification(channel[23]);
-  let items = [nullableMessageAuthor.nick, channel.id, message.content];
-  const isScreenReaderEnabled = obj5.useIsScreenReaderEnabled();
-  const effect = parentChannel.useEffect(() => {
-    const intl = notification(channel[21]).intl;
-    const obj = { userName: nullableMessageAuthor.nick, message: message(channel[24]).unparse(message.content, channel.id, true) };
-    const obj2 = message(channel[24]);
-    const AccessibilityAnnouncer = notification(channel[25]).AccessibilityAnnouncer;
-    AccessibilityAnnouncer.announce(intl.formatToPlainString(notification(channel[21]).t.Hjp1LH, obj));
-  }, items);
-  let items1 = [channel.id, message.id];
-  const items2 = [channel.id];
-  const callback = parentChannel.useCallback(() => {
-    message(channel[26]).popAll();
-    const obj = message(channel[26]);
-    notification(channel[27]).transitionToMessage(channel.id, message.id, { navigationReplace: true });
+  setExpanded = undefined;
+  setAutoDismissing = undefined;
+  setActionTaken = undefined;
+  importAllResult = undefined;
+  setConfirmation = undefined;
+  tmp9Result = tmp9(tmp10[17]);
+  const inAppNotificationContext1 = tmp9Result.useInAppNotificationContext();
+  setExpanded = inAppNotificationContext1.setExpanded;
+  setAutoDismissing = inAppNotificationContext1.setAutoDismissing;
+  setActionTaken = inAppNotificationContext1.setActionTaken;
+  ({ isExpanded: c3, setConfirmation } = inAppNotificationContext1);
+  let obj7 = importAllResult;
+  const items1 = [setActionTaken, setExpanded, setAutoDismissing, setConfirmation];
+  let tmp20;
+  callback = importAllResult.useCallback((channel, reaction, burst) => {
+    let obj = setExpanded(setActionTaken[18]);
+    const result = obj.triggerHapticFeedback(setExpanded(setActionTaken[18]).HapticFeedbackTypes.IMPACT_LIGHT);
+    const obj2 = setExpanded(setActionTaken[19]);
+    const obj3 = setExpanded(setActionTaken[20]);
+    obj = { burst };
+    obj2.addReaction(channel.channel.id, channel.message.id, setExpanded(setActionTaken[20]).toReactionEmoji(reaction), setExpanded(setActionTaken[19]).ReactionLocations.IN_APP_NOTIFICATION, obj);
+    setActionTaken(true);
+    setExpanded(false);
+    obj = { type: "message", reaction, message: null };
+    const intl = setExpanded(setActionTaken[21]).intl;
+    obj[2] = intl.string(setExpanded(setActionTaken[21]).t.UjTvrz);
+    setConfirmation(obj);
+    setAutoDismissing(true);
   }, items1);
-  const callback1 = parentChannel.useCallback(() => {
-    let obj = message(channel[26]);
-    obj = { channelId: channel.id };
-    return obj.pushLazy(notification(channel[29])(channel[28], channel.paths), obj, "in-app-notification-settings-modal");
-  }, items2);
-  let obj6 = notification(channel[12]);
-  hasPreviewableMedia = obj6.useHasPreviewableMedia(message);
-  let obj7 = notification(channel[14]);
-  const sharedValue = obj7.useSharedValue(expandedSV);
-  let obj8 = notification(channel[14]);
-  class U {
+  if (isExpandableNotification) {
+    const obj1 = { name: "expand_toggle", label: null };
+    const intl2 = tmp9(tmp10[21]).intl;
+    obj1[1] = intl2.string(tmp9(tmp10[21]).t["PbxI/x"]);
+    const items2 = [obj1];
+    tmp20 = items2;
+  }
+  tmp = callback3();
+  const items3 = [nullableMessageAuthor.nick, channel.id, message.content];
+  const isScreenReaderEnabled = setExpanded(setActionTaken[23]).useIsScreenReaderEnabled();
+  const effect = obj7.useEffect(() => {
+    const intl = setExpanded(setActionTaken[21]).intl;
+    const obj = { userName: nullableMessageAuthor.nick, message: null };
+    obj[1] = setAutoDismissing(setActionTaken[24]).unparse(setAutoDismissing.content, setActionTaken.id, true);
+    const obj2 = setAutoDismissing(setActionTaken[24]);
+    const AccessibilityAnnouncer = setExpanded(setActionTaken[25]).AccessibilityAnnouncer;
+    AccessibilityAnnouncer.announce(intl.formatToPlainString(setExpanded(setActionTaken[21]).t.Hjp1LH, obj));
+  }, items3);
+  const items4 = [channel.id, message.id];
+  const items5 = [channel.id];
+  const callback1 = obj7.useCallback(() => {
+    setAutoDismissing(setActionTaken[26]).popAll();
+    const obj = setAutoDismissing(setActionTaken[26]);
+    setExpanded(setActionTaken[27]).transitionToMessage(setActionTaken.id, setAutoDismissing.id, { navigationReplace: true });
+  }, items4);
+  const callback2 = obj7.useCallback(() => {
+    let obj = setAutoDismissing(setActionTaken[26]);
+    obj = { channelId: setActionTaken.id };
+    return obj.pushLazy(setExpanded(setActionTaken[29])(setActionTaken[28], setActionTaken.paths), obj, "in-app-notification-settings-modal");
+  }, items5);
+  const tmp9Result1 = setExpanded(setActionTaken[23]);
+  hasPreviewableMedia = setExpanded(setActionTaken[12]).useHasPreviewableMedia(message);
+  const tmp9Result2 = setExpanded(setActionTaken[12]);
+  const sharedValue = setExpanded(setActionTaken[14]).useSharedValue(expandedSV);
+  const tmp9Result3 = setExpanded(setActionTaken[14]);
+  class F {
     constructor() {
       if (isExpandableNotification) {
         tmp = expandedSV;
         if (expandedSV.get()) {
-          num5 = 1;
+          num4 = 1;
           return 1;
         } else {
           tmp2 = globalThis;
@@ -414,9 +452,9 @@ export default importAllResult.memo(function MessageNotification(notification) {
           tmp3 = notificationGestureY;
           num2 = 0;
           _Math2 = Math;
-          num3 = 20;
-          num4 = 1;
-          return Math.min(1, Math.max(0, notificationGestureY.get()) / 20);
+          tmp4 = c13;
+          num3 = 1;
+          return Math.min(1, Math.max(0, notificationGestureY.get()) / c13);
         }
       } else {
         num = 0;
@@ -424,140 +462,144 @@ export default importAllResult.memo(function MessageNotification(notification) {
       }
     }
   }
-  obj = { isExpandableNotification, expandedSV, notificationGestureY, ACCESSORY_EXIT_THRESHOLD: 20 };
-  U.__closure = obj;
-  U.__workletHash = 10189805207166;
-  U.__initData = closure_27;
-  derivedValue = obj8.useDerivedValue(U);
-  const tmp10 = (function useAccessoryLabelNode(author) {
-    author = author.author;
-    let obj = notification(channel[11]);
-    const items = [nullableMessageAuthor];
-    let colorString;
-    const stateFromStores = obj.useStateFromStores(items, () => nullableMessageAuthor.roleStyle);
-    if (null != author) {
-      colorString = author.colorString;
-    }
-    let tmp5Result;
-    if ("dot" === stateFromStores) {
-      if (undefined !== tmp3) {
-        obj = { color: tmp3 };
-        let colorStrings;
-        if (null != author) {
-          colorStrings = author.colorStrings;
+  obj2 = { isExpandableNotification, expandedSV, notificationGestureY, ACCESSORY_EXIT_THRESHOLD: derivedValue };
+  F.__closure = obj2;
+  F.__workletHash = 10189805207166;
+  F.__initData = closure_28;
+  derivedValue = setExpanded(setActionTaken[14]).useDerivedValue(F);
+  const tmp9Result4 = setExpanded(setActionTaken[14]);
+  const fn = function k() {
+    const sum = setExpanded(setActionTaken[30]).PREVIEW_SIZE + handleDismissNotification;
+    return sum * (1 - derivedValue.get());
+  };
+  obj3 = { PREVIEW_SIZE: tmp9(tmp10[30]).PREVIEW_SIZE, RIGHT_ACCESSORY_LEFT_MARGIN: handleDismissNotification, accessoryExitProgressSV: derivedValue };
+  fn.__closure = obj3;
+  fn.__workletHash = 12027019053130;
+  fn.__initData = closure_29;
+  derivedValue1 = setExpanded(setActionTaken[14]).useDerivedValue(fn);
+  const tmp9Result5 = setExpanded(setActionTaken[14]);
+  class U {
+    constructor() {
+      if (isExpandableNotification) {
+        tmp = c12;
+        if (c12) {
+          obj = { marginRight: null, minHeight: null };
+          tmp3 = useCallback;
+          obj[0] = useCallback.get();
+          tmp4 = setExpanded;
+          tmp5 = setActionTaken;
+          obj[1] = setExpanded(setActionTaken[30]).PREVIEW_SIZE;
+          tmp2 = obj;
         }
-        obj.colors = colorStrings;
-        obj.containerStyles = author.containerStyles;
-        tmp5Result = onReactionPress(notification(channel[16]).RoleDot, obj);
-        const tmp5 = onReactionPress;
+        return {};
       }
+      return;
     }
-    return tmp5Result;
-  })(obj);
+  }
+  const tmp9Result6 = setExpanded(setActionTaken[14]);
+  U.__closure = { isExpandableNotification, hasPreviewableMedia, accessoryWidthSV: derivedValue1, PREVIEW_SIZE: setExpanded(setActionTaken[30]).PREVIEW_SIZE };
+  U.__workletHash = 2118539495108;
+  U.__initData = closure_30;
+  const items6 = [channel, parentChannel, guild, nullableMessageAuthor, isExpanded, handleDismissNotification];
+  const animatedStyle = tmp9Result6.useAnimatedStyle(U);
+  const memo = obj7.useMemo(() => ({ type: "message", channel: setActionTaken, parentChannel: c3, guild: setConfirmation, author: nullableMessageAuthor, expanded: isExpanded, onDismiss: handleDismissNotification }), items6);
+  const tmp32 = callback(closure_18, { message });
+  let tmp31Result = tmp32;
+  if (isExpandableNotification) {
+    const obj5 = { message: null, expandedSV: null, notificationGestureY: null, initialPreviewContent: null, initialPreviewHeight: null, accessoryWidthSV: null };
+    obj5[0] = message;
+    obj5[1] = expandedSV;
+    obj5[2] = notificationGestureY;
+    obj5[3] = tmp32;
+    obj5[4] = sharedValue;
+    obj5[5] = derivedValue1;
+    tmp31Result = tmp31(closure_27, obj5);
+  }
+  const obj4 = { isExpandableNotification, hasPreviewableMedia, accessoryWidthSV: derivedValue1, PREVIEW_SIZE: setExpanded(setActionTaken[30]).PREVIEW_SIZE };
   class Z {
     constructor() {
-      sum = notification(channel[30]).PREVIEW_SIZE + handleDismissNotification;
-      return sum * (1 - c13.get());
-    }
-  }
-  obj1 = { PREVIEW_SIZE: notification(channel[30]).PREVIEW_SIZE, RIGHT_ACCESSORY_LEFT_MARGIN: handleDismissNotification, accessoryExitProgressSV: derivedValue };
-  Z.__closure = obj1;
-  Z.__workletHash = 12027019053130;
-  Z.__initData = closure_28;
-  derivedValue1 = notification(channel[14]).useDerivedValue(Z);
-  const obj11 = notification(channel[14]);
-  const fn = function j() {
-    if (isExpandableNotification) {
-      if (hasPreviewableMedia) {
-        const obj = { marginRight: derivedValue1.get(), minHeight: notification(channel[30]).PREVIEW_SIZE };
+      tmp = setExpanded;
+      tmp2 = setActionTaken;
+      obj = setExpanded(setActionTaken[31]);
+      obj2 = expandedSV;
+      num = 0;
+      if (expandedSV.get()) {
+        num = 1;
       }
-      return {};
+      obj = { opacity: obj.withTiming(num, isExpanded), maxHeight: null };
+      tmp3 = isExpanded;
+      tmpResult = tmp(tmp2[31]);
+      num2 = 0;
+      if (obj2.get()) {
+        num2 = 60;
+      }
+      obj[1] = tmpResult.withTiming(num2, tmp3);
+      return obj;
     }
-  };
-  obj2 = { isExpandableNotification, hasPreviewableMedia, accessoryWidthSV: derivedValue1, PREVIEW_SIZE: notification(channel[30]).PREVIEW_SIZE };
-  fn.__closure = obj2;
-  fn.__workletHash = 2118539495108;
-  fn.__initData = closure_29;
-  const items3 = [channel, parentChannel, guild, nullableMessageAuthor, isExpanded, handleDismissNotification];
-  const animatedStyle = notification(channel[14]).useAnimatedStyle(fn);
-  const memo = parentChannel.useMemo(() => ({ type: "message", channel, parentChannel, guild, author: nullableMessageAuthor, expanded: isExpanded, onDismiss: handleDismissNotification }), items3);
-  const tmp23 = onReactionPress(closure_17, { message });
-  let tmp24 = tmp23;
-  if (isExpandableNotification) {
-    let obj3 = { message, expandedSV, notificationGestureY, initialPreviewContent: tmp23, initialPreviewHeight: sharedValue, accessoryWidthSV: derivedValue1 };
-    tmp24 = onReactionPress(closure_26, obj3);
   }
-  const obj13 = notification(channel[14]);
-  const fn2 = function z() {
-    const obj = {};
-    let num = 0;
-    if (expandedSV.get()) {
-      num = 1;
-    }
-    obj.opacity = notification(channel[31]).withTiming(num, isExpanded);
-    const obj2 = notification(channel[31]);
-    let num2 = 0;
-    if (expandedSV.get()) {
-      num2 = 60;
-    }
-    obj.maxHeight = notification(channel[31]).withTiming(num2, isExpanded);
-    return obj;
-  };
-  obj4 = { withTiming: notification(channel[31]).withTiming, expandedSV, DEFAULT_ANIMATION_TIMING: isExpanded };
-  fn2.__closure = obj4;
-  fn2.__workletHash = 2035414692485;
-  fn2.__initData = closure_30;
-  const animatedStyle1 = notification(channel[14]).useAnimatedStyle(fn2);
-  obj5 = {};
-  obj6 = { user: message.author };
+  const tmp9Result7 = setExpanded(setActionTaken[14]);
+  Z.__closure = { withTiming: setExpanded(setActionTaken[31]).withTiming, expandedSV, DEFAULT_ANIMATION_TIMING: isExpanded };
+  Z.__workletHash = 2035414692485;
+  Z.__initData = closure_31;
+  const animatedStyle1 = tmp9Result7.useAnimatedStyle(Z);
+  obj7 = { user: message.author, guildId: null, size: null };
   const guild2 = notification.guild;
   let id;
-  if (null != guild2) {
+  if (guild2 != null) {
     id = guild2.id;
   }
-  obj6.guildId = id;
-  obj6.size = notification(channel[16]).AvatarSizes.NORMAL;
-  obj5.icon = onReactionPress(notification(channel[16]).Avatar, obj6);
-  obj5.accessoryLabelNode = tmp10;
-  obj5.bodyStyle = animatedStyle;
+  const obj8 = { icon: null, accessoryLabelNode: null, bodyStyle: null, rightAccessory: null, children: null, header: null, showDragHandle: null, onAccessibilityExpand: null, expandedContentVisible: null, notification: null, onPress: null, onSettingsPress: null, accessibilityActions: null, onAccessibilityAction: null, expandableContent: null };
+  obj7[1] = id;
+  obj7[2] = setExpanded(setActionTaken[16]).AvatarSizes.NORMAL;
+  obj8[0] = callback(setExpanded(setActionTaken[16]).Avatar, obj7);
+  obj8[1] = tmp15Result;
+  obj8[2] = animatedStyle;
   if (!isExpandableNotification) {
-    obj7 = { message };
-    let tmp34;
+    const obj9 = { message: null, accessoryExitProgressSV: null };
+    obj9[0] = message;
+    let tmp38;
     if (isExpandableNotification) {
-      tmp34 = derivedValue;
+      tmp38 = derivedValue;
     }
-    obj7.accessoryExitProgressSV = tmp34;
-    let tmp31Result = onReactionPress(notification(channel[30]).MediaPreviewRightAccessory, obj7);
-    const tmp31 = onReactionPress;
+    obj9[1] = tmp38;
+    tmp31Result = tmp31(tmp9(tmp10[30]).MediaPreviewRightAccessory, obj9);
   } else {
     tmp31Result = null;
   }
-  obj5.rightAccessory = tmp31Result;
-  obj5.children = tmp24;
-  obj5.header = memo;
+  obj8[3] = tmp31Result;
+  obj8[4] = tmp31Result;
+  obj8[5] = memo;
   if (isExpandableNotification) {
-    isExpandableNotification = !isExpanded || isScreenReaderEnabled;
-    const tmp35 = !isExpanded || isScreenReaderEnabled;
+    let tmp39 = !isExpanded;
+    if (isExpanded) {
+      tmp39 = isScreenReaderEnabled;
+    }
+    isExpandableNotification = tmp39;
   }
-  obj5.showDragHandle = isExpandableNotification;
-  obj5.onAccessibilityExpand = onAccessibilityExpand;
-  obj5.expandedContentVisible = isExpanded;
-  obj5.notification = notification;
-  obj5.onPress = callback;
-  obj5.onSettingsPress = callback1;
-  obj5.accessibilityActions = accessibilityActions;
-  obj5.onAccessibilityAction = onAccessibilityAction;
-  let tmp36;
+  obj8[6] = isExpandableNotification;
+  obj8[7] = function onAccessibilityExpand() {
+    setExpanded(!c3, "accessibility_expand");
+  };
+  obj8[8] = isExpanded;
+  obj8[9] = notification;
+  obj8[10] = callback1;
+  obj8[11] = callback2;
+  obj8[12] = tmp20;
+  obj8[13] = function onAccessibilityAction(nativeEvent) {
+    if ("expand_toggle" === nativeEvent.nativeEvent.actionName) {
+      setExpanded(!c3, "accessibility_expand");
+    }
+  };
+  let tmp31Result1;
   if (inAppNotificationContext.showReactionBar) {
-    obj8 = {
-      notification,
-      onReactionPress(MessageNotificationReactBar, MessageNotificationReactBar, MessageNotificationReactBar) {
-          return onReactionPress(notification, MessageNotificationReactBar, MessageNotificationReactBar);
-        },
-      animationStyle: animatedStyle1
+    const obj10 = { notification: null, onReactionPress: null, animationStyle: null };
+    obj10[0] = notification;
+    obj10[1] = function onReactionPress(arg0) {
+      return callback(setExpanded, arg0, arg1);
     };
-    tmp36 = onReactionPress(notification(channel[33]).MessageNotificationReactBar, obj8);
+    obj10[2] = animatedStyle1;
+    tmp31Result1 = tmp31(tmp9(tmp10[33]).MessageNotificationReactBar, obj10);
   }
-  obj5.expandableContent = tmp36;
-  return onReactionPress(notification(channel[32]).NotificationPressable, obj5);
+  obj8[14] = tmp31Result1;
+  return callback(setExpanded(setActionTaken[32]).NotificationPressable, obj8);
 });

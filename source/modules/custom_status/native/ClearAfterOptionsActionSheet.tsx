@@ -1,62 +1,64 @@
-// Module ID: 11957
-// Function ID: 92386
+// Module ID: 11981
+// Function ID: 11982
 // Name: ClearAfterOptionsActionSheet
-// Dependencies: [57, 31, 27, 11948, 33, 4165, 689, 5221, 5220, 1212, 7632, 7631, 11958, 4578, 4133, 2]
+// Dependencies: [32, 19, 17, 11972, 21, 4189, 712, 5243, 5242, 1236, 7655, 7654, 11982, 4600, 4157, 2]
 // Exports: default
 
-// Module 11957 (ClearAfterOptionsActionSheet)
+// Module 11981 (ClearAfterOptionsActionSheet)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
+import noop from "noop";
 import { View } from "get ActivityIndicator";
 import { ClearAfterOptions } from "StatusTypes";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_7;
-let closure_8;
+let error;
+let metroImportAll;
 const require = arg1;
-({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16 };
-_createForOfIteratorHelperLoose.content = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.buttonWrapper = { marginTop: require("_createForOfIteratorHelperLoose").space.PX_24, paddingBottom: require("_createForOfIteratorHelperLoose").space.PX_16 };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-let obj1 = { marginTop: require("_createForOfIteratorHelperLoose").space.PX_24, paddingBottom: require("_createForOfIteratorHelperLoose").space.PX_16 };
+({ jsx: error, jsxs: metroImportAll } = jsxProd);
+createCacheKey = { content: null, buttonWrapper: null };
+createCacheKey = { paddingHorizontal: require("Themes").space.PX_16 };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { marginTop: require("Themes").space.PX_24, paddingBottom: require("Themes").space.PX_16 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let obj1 = { marginTop: require("Themes").space.PX_24, paddingBottom: require("Themes").space.PX_16 };
 const result = require("get ActivityIndicator").fileFinishedImporting("modules/custom_status/native/ClearAfterOptionsActionSheet.tsx");
 
 export default function ClearAfterOptionsActionSheet(arg0) {
   let initialValue;
   let require;
   ({ initialValue, onChange: require } = arg0);
-  const tmp = _createForOfIteratorHelperLoose();
+  let closure_1;
+  const tmp = createCacheKey();
   const tmp2 = callback(React.useState(initialValue), 2);
-  let closure_1 = tmp2[0];
-  let obj = { contentStyles: tmp.content };
-  obj = {};
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj.title = intl.string(require(1212) /* getSystemLocale */.t["5XnRQ+"]);
-  obj.header = callback2(require(5220) /* RedesignBottomSheetTitleHeaderBase */.BottomSheetTitleHeader, obj);
-  obj = { onChange: tmp2[1] };
-  const intl2 = require(1212) /* getSystemLocale */.intl;
-  obj.title = intl2.string(require(1212) /* getSystemLocale */.t.E45wvP);
-  obj.defaultValue = initialValue;
-  obj.hasIcons = false;
-  obj.children = ClearAfterOptions.map((value) => {
-    const obj = { value, label: callback2(outer1_2[12])(value) };
-    return outer1_7(outer1_0(outer1_2[11]).TableRadioRow, obj, value);
+  closure_1 = tmp2[0];
+  let obj = { contentStyles: tmp.content, header: null, children: null };
+  obj = { title: null };
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj[0] = intl.string(require(1236) /* getSystemLocale */.t["5XnRQ+"]);
+  obj[1] = callback2(require(5242) /* RedesignBottomSheetTitleHeaderBase */.BottomSheetTitleHeader, obj);
+  obj = { onChange: tmp2[1], title: null, defaultValue: null, hasIcons: false, children: null };
+  const intl2 = require(1236) /* getSystemLocale */.intl;
+  obj[1] = intl2.string(require(1236) /* getSystemLocale */.t.E45wvP);
+  obj[2] = initialValue;
+  obj[4] = ClearAfterOptions.map((value) => {
+    const obj = { value, label: null };
+    obj[1] = callback2(11982)(value);
+    return callback3(callback(7654).TableRadioRow, obj, value);
   });
-  const items = [callback2(require(7632) /* context */.TableRadioGroup, obj), ];
-  const obj1 = { style: tmp.buttonWrapper };
+  const items = [callback2(require(7655) /* context */.TableRadioGroup, obj), ];
+  const obj1 = { style: tmp.buttonWrapper, children: null };
   const obj2 = {
     onPress() {
       callback(callback2);
       callback2(outer1_2[14]).hideActionSheet();
-    }
+    },
+    text: null
   };
-  const intl3 = require(1212) /* getSystemLocale */.intl;
-  obj2.text = intl3.string(require(1212) /* getSystemLocale */.t.TyCVIq);
-  obj1.children = callback2(require(4578) /* Button */.Button, obj2);
+  const intl3 = require(1236) /* getSystemLocale */.intl;
+  obj2[1] = intl3.string(require(1236) /* getSystemLocale */.t.TyCVIq);
+  obj1[1] = callback2(require(4600) /* Button */.Button, obj2);
   items[1] = callback2(View, obj1);
-  obj.children = items;
-  return callback3(require(5221) /* Background */.BottomSheet, obj);
+  obj[2] = items;
+  return callback3(require(5243) /* Background */.BottomSheet, obj);
 };

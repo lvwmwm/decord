@@ -1,12 +1,12 @@
-// Module ID: 8741
-// Function ID: 69166
+// Module ID: 8765
+// Function ID: 8766
 // Name: useSubscriptionSelection
-// Dependencies: [57, 31, 2]
+// Dependencies: [32, 19, 2]
 // Exports: default
 
-// Module 8741 (useSubscriptionSelection)
+// Module 8765 (useSubscriptionSelection)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
+import noop from "noop";
 
 const result = require("set").fileFinishedImporting("modules/payments/hooks/useSubscriptionSelection.tsx");
 

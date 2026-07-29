@@ -1,24 +1,24 @@
-// Module ID: 15955
-// Function ID: 123160
+// Module ID: 15990
+// Function ID: 15991
 // Name: VoicePanelSecondaryPIPContent
-// Dependencies: [31, 1347, 5668, 1348, 4190, 5670, 5669, 33, 4165, 10015, 15883, 566, 3783, 9891, 10442, 4026, 15811, 5550, 7656, 15835, 10633, 2]
+// Dependencies: [19, 1371, 5686, 1372, 4214, 5688, 5687, 21, 4189, 10037, 15918, 589, 3807, 9913, 10466, 4050, 15846, 5568, 7679, 15870, 10657, 2]
 // Exports: default
 
-// Module 15955 (VoicePanelSecondaryPIPContent)
-import result from "result";
-import closure_4 from "_createForOfIteratorHelperLoose";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_6 from "_isNativeReflectConstruct";
+// Module 15990 (VoicePanelSecondaryPIPContent)
+import FrameView from "FrameView";
+import participantFromServer from "participantFromServer";
+import map from "map";
+import ensureGuildLoaded from "ensureGuildLoaded";
 import { ActivityLayoutMode } from "items3";
 import { ActivityPanelModes } from "ActivityPanelModes";
 import { FrameLayoutModes } from "FrameLayoutModes";
-import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import { jsx } from "set";
+import createCacheKey from "createCacheKey";
 
 const require = arg1;
-let closure_11 = _createForOfIteratorHelperLoose.createStyles({ activityContainer: { flex: 1 } });
+let closure_11 = createCacheKey.createStyles({ activityContainer: { flex: 1 } });
 let closure_12 = { code: "function VoicePanelSecondaryPIPContentTsx1(){const{getActivityContainerPipStylesSpec,pipState,activePipOrientationLockState,windowDimensions}=this.__closure;const{width:width,height:height,shouldVerticallyCenter:shouldVerticallyCenter,shouldHorizontallyCenter:shouldHorizontallyCenter,marginLeft:marginLeft,marginTop:marginTop}=getActivityContainerPipStylesSpec({pipWidth:pipState.width,pipHeight:pipState.height,pipOrientationLockState:activePipOrientationLockState,isLandscape:windowDimensions.get().landscape});return{width:width,height:height,left:shouldHorizontallyCenter?'50%':'0%',top:shouldVerticallyCenter?'50%':'0%',marginLeft:marginLeft,marginTop:marginTop};}" };
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/voice_panel/native/pip/VoicePanelSecondaryPIPContent.tsx");
+const result = require("map").fileFinishedImporting("modules/voice_panel/native/pip/VoicePanelSecondaryPIPContent.tsx");
 
 export default function VoicePanelSecondaryPIPContent() {
   let connectedEmbeddedActivity;
@@ -27,62 +27,66 @@ export default function VoicePanelSecondaryPIPContent() {
   let framePipOrientationLockState;
   let panelMode;
   let pipOrientationLockState;
+  let tmp = size;
+  let obj = connectedEmbeddedActivityChannelId;
   const windowDimensions = width.useContext(size(connectedEmbeddedActivityChannelId[9])).windowDimensions;
-  let obj = windowDimensions(connectedEmbeddedActivityChannelId[10]);
-  size = obj.usePIPState();
-  let obj1 = windowDimensions(connectedEmbeddedActivityChannelId[11]);
+  let obj1 = windowDimensions(connectedEmbeddedActivityChannelId[10]);
+  size = obj1.usePIPState();
+  let obj2 = windowDimensions(connectedEmbeddedActivityChannelId[11]);
   const items = [height];
-  const stateFromStoresObject = obj1.useStateFromStoresObject(items, () => {
+  const stateFromStoresObject = obj2.useStateFromStoresObject(items, () => {
+    let obj = height;
     const connectedActivityLocation = height.getConnectedActivityLocation();
     const selfEmbeddedActivityForLocation = height.getSelfEmbeddedActivityForLocation(connectedActivityLocation);
     let applicationId;
-    if (null != selfEmbeddedActivityForLocation) {
+    if (selfEmbeddedActivityForLocation != null) {
       applicationId = selfEmbeddedActivityForLocation.applicationId;
     }
-    const obj = { connectedEmbeddedActivityChannelId: windowDimensions(connectedEmbeddedActivityChannelId[12]).getEmbeddedActivityLocationChannelId(connectedActivityLocation), connectedEmbeddedActivity: selfEmbeddedActivityForLocation };
+    obj = { connectedEmbeddedActivityChannelId: null, connectedEmbeddedActivity: null, pipOrientationLockState: null, panelMode: null };
+    obj[0] = windowDimensions(connectedEmbeddedActivityChannelId[12]).getEmbeddedActivityLocationChannelId(connectedActivityLocation);
+    obj[1] = selfEmbeddedActivityForLocation;
     let pipOrientationLockStateForApp;
     if (null != applicationId) {
-      pipOrientationLockStateForApp = height.getPipOrientationLockStateForApp(applicationId);
+      pipOrientationLockStateForApp = obj.getPipOrientationLockStateForApp(applicationId);
     }
-    obj.pipOrientationLockState = pipOrientationLockStateForApp;
-    obj.panelMode = height.getActivityPanelMode();
+    obj[2] = pipOrientationLockStateForApp;
+    obj[3] = obj.getActivityPanelMode();
     return obj;
   });
   connectedEmbeddedActivityChannelId = stateFromStoresObject.connectedEmbeddedActivityChannelId;
   ({ pipOrientationLockState, connectedEmbeddedActivity, panelMode } = stateFromStoresObject);
-  let obj2 = windowDimensions(connectedEmbeddedActivityChannelId[11]);
+  const tmp2 = windowDimensions;
+  const tmp3 = callback();
   const items1 = [pipOrientationLockState];
-  const stateFromStoresObject1 = obj2.useStateFromStoresObject(items1, () => {
+  const stateFromStoresObject1 = windowDimensions(connectedEmbeddedActivityChannelId[11]).useStateFromStoresObject(items1, () => {
+    let obj = pipOrientationLockState;
     const connectedFrame = pipOrientationLockState.getConnectedFrame();
     let applicationId;
-    if (null != connectedFrame) {
+    if (connectedFrame != null) {
       applicationId = connectedFrame.applicationId;
     }
-    const obj = { connectedFrame, framePanelMode: pipOrientationLockState.getActivityPanelMode() };
+    obj = { connectedFrame, framePanelMode: obj.getActivityPanelMode(), framePipOrientationLockState: null };
     let pipOrientationLockStateForApp;
     if (null != applicationId) {
-      pipOrientationLockStateForApp = pipOrientationLockState.getPipOrientationLockStateForApp(applicationId);
+      pipOrientationLockStateForApp = obj.getPipOrientationLockStateForApp(applicationId);
     }
-    obj.framePipOrientationLockState = pipOrientationLockStateForApp;
+    obj[2] = pipOrientationLockStateForApp;
     return obj;
   });
   ({ connectedFrame, framePanelMode, framePipOrientationLockState } = stateFromStoresObject1);
-  let obj3 = windowDimensions(connectedEmbeddedActivityChannelId[11]);
-  const items2 = [closure_6];
+  const obj4 = windowDimensions(connectedEmbeddedActivityChannelId[11]);
+  const items2 = [ensureGuildLoaded];
   width = size.width;
   height = size.height;
   const items3 = [width, height];
-  const stateFromStores = obj3.useStateFromStores(items2, () => outer1_6.getChannel(connectedEmbeddedActivityChannelId));
-  let tmp6 = null != connectedEmbeddedActivity;
-  const memo = width.useMemo(() => {
-    const obj = { width, height, position: "absolute", left: "50%", marginLeft: -1 * size(connectedEmbeddedActivityChannelId[13])(width / 2), top: "50%", marginTop: -1 * size(connectedEmbeddedActivityChannelId[13])(height / 2) };
-    return obj;
-  }, items3);
-  if (tmp6) {
-    tmp6 = !size(connectedEmbeddedActivityChannelId[14])(connectedEmbeddedActivityChannelId);
+  const stateFromStores = windowDimensions(connectedEmbeddedActivityChannelId[11]).useStateFromStores(items2, () => outer1_6.getChannel(connectedEmbeddedActivityChannelId));
+  let tmp8 = null != connectedEmbeddedActivity;
+  const memo = width.useMemo(() => ({ width, height, position: "absolute", left: "50%", marginLeft: -1 * size(connectedEmbeddedActivityChannelId[13])(width / 2), top: "50%", marginTop: -1 * size(connectedEmbeddedActivityChannelId[13])(height / 2) }), items3);
+  if (tmp8) {
+    tmp8 = !tmp(obj[14])(connectedEmbeddedActivityChannelId);
   }
-  if (tmp6) {
-    tmp6 = panelMode === ActivityPanelModes.PIP;
+  if (tmp8) {
+    tmp8 = panelMode === ActivityPanelModes.PIP;
   }
   let tmp10 = null != connectedFrame;
   if (tmp10) {
@@ -91,54 +95,56 @@ export default function VoicePanelSecondaryPIPContent() {
   if (tmp10) {
     pipOrientationLockState = framePipOrientationLockState;
   }
-  const tmp = callback();
+  const obj5 = windowDimensions(connectedEmbeddedActivityChannelId[11]);
   class P {
     constructor() {
-      obj = { pipWidth: closure_1.width, pipHeight: closure_1.height, pipOrientationLockState };
+      obj = { pipWidth: closure_1.width, pipHeight: closure_1.height, pipOrientationLockState, isLandscape: null };
       tmp = outer1_1(outer1_2[16]);
-      obj.isLandscape = windowDimensions.get().landscape;
+      obj[3] = windowDimensions.get().landscape;
       size = tmp(obj);
-      obj = { width: size.width, height: size.height };
+      obj = { width: size.width, height: size.height, left: null, top: null, marginLeft: null, marginTop: null };
       str = "0%";
       str2 = "0%";
       if (size.shouldHorizontallyCenter) {
         str2 = "50%";
       }
-      obj.left = str2;
+      obj[2] = str2;
       if (size.shouldVerticallyCenter) {
         str = "50%";
       }
-      obj.top = str;
-      ({ marginLeft: obj2.marginLeft, marginTop: obj2.marginTop } = size);
+      obj[3] = str;
+      ({ marginLeft: obj2[4], marginTop: obj2[5] } = size);
       return obj;
     }
   }
-  obj = { getActivityContainerPipStylesSpec: size(connectedEmbeddedActivityChannelId[16]), pipState: size, activePipOrientationLockState: pipOrientationLockState, windowDimensions };
+  obj = { getActivityContainerPipStylesSpec: tmp(obj[16]), pipState: size, activePipOrientationLockState: pipOrientationLockState, windowDimensions };
   P.__closure = obj;
   P.__workletHash = 12186082276755;
   P.__initData = closure_12;
-  const animatedStyle = windowDimensions(connectedEmbeddedActivityChannelId[15]).useAnimatedStyle(P);
-  if (!tmp6) {
+  const animatedStyle = tmp2(obj[15]).useAnimatedStyle(P);
+  if (!tmp8) {
     if (!tmp10) {
       return null;
     }
   }
-  obj = { style: memo, pointerEvents: "none" };
-  const obj5 = windowDimensions(connectedEmbeddedActivityChannelId[15]);
-  obj1 = { style: items4 };
-  items4 = [tmp.activityContainer, animatedStyle];
-  let tmp18 = size;
-  const tmp15 = size(connectedEmbeddedActivityChannelId[17]);
+  obj = { style: memo, pointerEvents: "none", children: null };
+  let tmpResult = tmp(obj[17]);
+  obj1 = { style: items4, children: null };
+  items4 = [tmp3.activityContainer, animatedStyle];
+  tmpResult = tmp(obj[18]);
   if (tmp10) {
-    tmp18 = tmp18(tmp19[19]);
-    obj2 = { layoutMode: FrameLayoutModes.PIP };
-    let tmp17Result = tmp17(tmp18, obj2);
+    tmp = tmp(obj[19]);
+    obj = { layoutMode: null };
+    obj[0] = FrameLayoutModes.PIP;
+    let tmp14Result = tmp14(tmp, obj);
   } else {
-    obj3 = { channel: stateFromStores, layoutMode: ActivityLayoutMode.PIP };
-    tmp17Result = tmp17(tmp18(tmp19[20]), obj3);
+    obj2 = { channel: null, layoutMode: null };
+    obj2[0] = stateFromStores;
+    obj2[1] = ActivityLayoutMode.PIP;
+    tmp14Result = tmp14(tmp(obj[20]), obj2);
   }
-  obj1.children = tmp17Result;
-  obj1 = tmp14(size(connectedEmbeddedActivityChannelId[18]), obj1);
-  obj.children = obj1;
-  <tmp15 style={memo} pointerEvents="none" />;
+  obj1[1] = tmp14Result;
+  obj1 = tmp14(tmpResult, obj1);
+  obj[2] = obj1;
+  tmp14Result = tmp14(tmpResult, obj);
 };

@@ -1,13 +1,14 @@
-// Module ID: 15860
-// Function ID: 122237
+// Module ID: 15895
+// Function ID: 15896
 // Name: apexExperiment
-// Dependencies: [1428, 2]
+// Dependencies: [1452, 2]
 
-// Module 15860 (apexExperiment)
+// Module 15895 (apexExperiment)
 import ApexExperiment from "ApexExperiment";
 
-const obj = { kind: "user", name: "2026-06-soundboard-frequently-used", defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } };
-const apexExperiment = ApexExperiment.createApexExperiment(obj);
+const obj = { 1: null };
+obj[1] = { enabled: true };
+const apexExperiment = ApexExperiment.createApexExperiment({ kind: "user", name: "2026-06-soundboard-frequently-used", defaultConfig: { enabled: false }, variations: obj });
 const result = require("set").fileFinishedImporting("modules/soundboard/SoundboardFrequentlyUsedExperiment.tsx");
 
 export default apexExperiment;

@@ -1,11 +1,11 @@
-// Module ID: 12412
-// Function ID: 96332
+// Module ID: 12434
+// Function ID: 12435
 // Name: useBuyNitroPlanSubLabelRenderer
-// Dependencies: [31, 1852, 33, 6638, 2]
+// Dependencies: [19, 1876, 21, 6659, 2]
 // Exports: useBuyNitroPlanSubLabelRenderer
 
-// Module 12412 (useBuyNitroPlanSubLabelRenderer)
-import result from "result";
+// Module 12434 (useBuyNitroPlanSubLabelRenderer)
+import noop from "noop";
 import { PRICE_PLACEHOLDER } from "GuildFeatures";
 import { jsx } from "jsxProd";
 
@@ -20,12 +20,12 @@ export const useBuyNitroPlanSubLabelRenderer = function useBuyNitroPlanSubLabelR
     if (!tmp) {
       if (!tmp2) {
         let value = priceStringByProductId.get(item.productId);
-        if (null == value) {
-          value = outer1_3;
+        if (value == null) {
+          value = closure_3;
         }
       }
       return value;
     }
-    value = outer1_4(outer1_0(outer1_1[3]), { planSelection, item });
+    value = callback2(callback(table[3]), { planSelection, item });
   }, []);
 };

@@ -1,57 +1,60 @@
-// Module ID: 11622
-// Function ID: 90184
+// Module ID: 11646
+// Function ID: 11647
 // Name: Tier3OverrideNotice
-// Dependencies: [27, 33, 4165, 689, 4161, 11623, 11624, 1212, 2231, 11627, 2]
+// Dependencies: [17, 21, 4189, 712, 4185, 11647, 11648, 1236, 2255, 11651, 2]
 // Exports: default
 
-// Module 11622 (Tier3OverrideNotice)
+// Module 11646 (Tier3OverrideNotice)
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_4;
-let closure_5;
+let c4;
+let c5;
 function Tier3OverrideNotice(children) {
-  return callback(View, { style: callback2().staffContainer, children: callback(require(4161) /* Text */.Text, { variant: "text-sm/medium", children: children.text }) });
+  return callback(View, { style: callback2().staffContainer, children: callback(require(4185) /* Text */.Text, { variant: "text-sm/medium", children: children.text }) });
 }
-({ jsx: closure_4, jsxs: closure_5 } = jsxProd);
-let obj = {};
-obj = { gap: require("_createForOfIteratorHelperLoose").space.PX_12, margin: require("_createForOfIteratorHelperLoose").space.PX_16 };
-obj.container = obj;
-obj.staffContainer = { padding: require("_createForOfIteratorHelperLoose").space.PX_12, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_MOD_SUBTLE, borderRadius: require("_createForOfIteratorHelperLoose").radii.md, borderWidth: 1, borderStyle: "solid", borderColor: require("_createForOfIteratorHelperLoose").colors.BORDER_SUBTLE };
-let closure_6 = _createForOfIteratorHelperLoose.createStyles(obj);
-let obj1 = { padding: require("_createForOfIteratorHelperLoose").space.PX_12, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_MOD_SUBTLE, borderRadius: require("_createForOfIteratorHelperLoose").radii.md, borderWidth: 1, borderStyle: "solid", borderColor: require("_createForOfIteratorHelperLoose").colors.BORDER_SUBTLE };
-const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/premium/powerups/native/GuildPowerupsNotificationContainer.tsx");
+({ jsx: c4, jsxs: c5 } = jsxProd);
+let obj = { container: null, staffContainer: null };
+obj = { gap: require("Themes").space.PX_12, margin: require("Themes").space.PX_16 };
+obj[0] = obj;
+obj[1] = { padding: require("Themes").space.PX_12, backgroundColor: require("Themes").colors.BACKGROUND_MOD_SUBTLE, borderRadius: require("Themes").radii.md, borderWidth: 1, borderStyle: "solid", borderColor: require("Themes").colors.BORDER_SUBTLE };
+let closure_6 = createCacheKey.createStyles(obj);
+let obj1 = { padding: require("Themes").space.PX_12, backgroundColor: require("Themes").colors.BACKGROUND_MOD_SUBTLE, borderRadius: require("Themes").radii.md, borderWidth: 1, borderStyle: "solid", borderColor: require("Themes").colors.BORDER_SUBTLE };
+const result = require("createCacheKey").fileFinishedImporting("modules/premium/powerups/native/GuildPowerupsNotificationContainer.tsx");
 
 export default function GuildPowerupsNotificationContainer(guildId) {
   guildId = guildId.guildId;
-  const tmp2 = importDefault(11623)(guildId);
-  const tmp3 = importDefault(11624)(guildId);
-  if (tmp2.shouldShow) {
-    let obj = { style: tmp.container };
-    obj = { variant: "eyebrow", color: "text-subtle" };
-    const intl = require(1212) /* getSystemLocale */.intl;
-    obj.children = intl.string(importDefault(2231)["3FRirU"]);
-    const items = [callback(require(4161) /* Text */.Text, obj), , ];
-    let shouldShow = tmp2.shouldShow;
+  const tmp4 = importDefault(11647)(guildId);
+  const tmp5 = importDefault(11648)(guildId);
+  if (tmp4.shouldShow) {
+    let obj = { style: null, children: null };
+    obj[0] = tmp.container;
+    obj = { variant: "eyebrow", color: "text-subtle", children: null };
+    const intl = require(1236) /* getSystemLocale */.intl;
+    obj[2] = intl.string(tmp2(2255)["3FRirU"]);
+    const items = [callback(require(4185) /* Text */.Text, obj), , ];
+    let shouldShow = tmp4.shouldShow;
     if (shouldShow) {
-      obj = { text: tmp2.text };
-      shouldShow = callback(Tier3OverrideNotice, obj);
+      obj = { text: null };
+      obj[0] = tmp4.text;
+      shouldShow = tmp9(Tier3OverrideNotice, obj);
     }
     items[1] = shouldShow;
-    let shouldShow2 = tmp3.shouldShow;
+    let shouldShow2 = tmp5.shouldShow;
     if (shouldShow2) {
-      const obj1 = { guildId };
-      ({ expiringPowerupNames: obj4.powerupNames, warnings: obj4.warnings } = tmp3);
-      shouldShow2 = callback(importDefault(11627), obj1);
+      const obj1 = { guildId: null, powerupNames: null, warnings: null };
+      obj1[0] = guildId;
+      ({ expiringPowerupNames: obj4[1], warnings: obj4[2] } = tmp5);
+      shouldShow2 = tmp9(tmp2(11651), obj1);
     }
     items[2] = shouldShow2;
-    obj.children = items;
-    let tmp5Result = closure_5(View, obj);
-    const tmp5 = closure_5;
-    const tmp6 = View;
+    obj[1] = items;
+    let tmp7Result = closure_5(View, obj);
+    const tmp7 = closure_5;
+    const tmp8 = View;
   } else {
-    tmp5Result = null;
+    tmp7Result = null;
   }
-  return tmp5Result;
+  return tmp7Result;
 };

@@ -1,36 +1,32 @@
-// Module ID: 15048
-// Function ID: 114559
+// Module ID: 15078
+// Function ID: 15079
 // Name: TypingIndicator
-// Dependencies: [31, 27, 33, 4165, 689, 4101, 4011, 1273, 2]
+// Dependencies: [19, 17, 21, 4189, 712, 4125, 4035, 1297, 2]
 // Exports: TypingIndicator
 
-// Module 15048 (TypingIndicator)
-import "result";
+// Module 15078 (TypingIndicator)
+import "noop";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
 const require = arg1;
-let closure_5 = _createForOfIteratorHelperLoose.createStyles((arg0) => {
-  let obj = {};
-  obj = { zIndex: 10, borderRadius: 17, borderWidth: 2, borderColor: importDefault(689).colors.BACKGROUND_BASE_LOW };
-  obj.ellipsisWrapper = obj;
-  obj = { borderRadius: 13, paddingVertical: 4, paddingStart: 4, paddingEnd: 2, marginRight: 0 };
-  const unsafe_rawColors = importDefault(689).unsafe_rawColors;
-  obj.backgroundColor = arg0 ? unsafe_rawColors.BRAND_200 : unsafe_rawColors.BRAND_500;
-  obj.ellipsis = obj;
-  const obj1 = { width: 4, height: 4 };
-  const unsafe_rawColors2 = importDefault(689).unsafe_rawColors;
-  obj1.backgroundColor = arg0 ? unsafe_rawColors2.BRAND_500 : unsafe_rawColors2.WHITE;
-  obj.ellipsisDot = obj1;
+let closure_5 = createCacheKey.createStyles((arg0) => {
+  let obj = { ellipsisWrapper: null, ellipsis: null, ellipsisDot: null };
+  obj = { zIndex: 10, borderRadius: 17, borderWidth: 2, borderColor: importDefault(712).colors.BACKGROUND_BASE_LOW };
+  obj[0] = obj;
+  const unsafe_rawColors = importDefault(712).unsafe_rawColors;
+  obj[1] = { borderRadius: 13, paddingVertical: 4, paddingStart: 4, paddingEnd: 2, marginRight: 0, backgroundColor: arg0 ? unsafe_rawColors.BRAND_200 : unsafe_rawColors.BRAND_500 };
+  const unsafe_rawColors2 = importDefault(712).unsafe_rawColors;
+  obj[2] = { width: 4, height: 4, backgroundColor: arg0 ? unsafe_rawColors2.BRAND_500 : unsafe_rawColors2.WHITE };
   return obj;
 });
 const result = require("jsxProd").fileFinishedImporting("modules/main_tabs_v2/native/shared_components/guild_channels/typing_indicators/TypingIndicator.tsx");
 
 export const TypingIndicator = function TypingIndicator(style) {
-  let obj = require(4011) /* AccessibilityAnnouncer */;
-  const tmp2 = callback(obj.isThemeLight(importDefault(4101)()));
-  obj = { style: items, children: jsx(require(1273) /* Button */.Ellipsis, obj) };
+  let obj = require(4035) /* AccessibilityAnnouncer */;
+  const tmp2 = callback(obj.isThemeLight(importDefault(4125)()));
+  obj = { style: items, children: jsx(require(1297) /* Button */.Ellipsis, obj) };
   items = [tmp2.ellipsisWrapper, style.style];
   obj = { style: items1, dotStyle: tmp2.ellipsisDot, disableScale: true };
   items1 = [tmp2.ellipsis];

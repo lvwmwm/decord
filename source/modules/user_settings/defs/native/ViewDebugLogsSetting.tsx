@@ -1,30 +1,30 @@
-// Module ID: 14497
-// Function ID: 110657
+// Module ID: 14522
+// Function ID: 14523
 // Name: ViewDebugLogsActionSheetRow
-// Dependencies: [31, 27, 33, 4133, 5535, 4372, 9084, 5533, 5220, 1212, 14498, 14500, 4129, 14503, 477, 10209, 14504, 10099, 12960, 3838, 2]
+// Dependencies: [19, 17, 21, 4157, 5553, 4395, 9108, 5551, 5242, 1236, 14523, 14525, 4153, 14528, 500, 10230, 14529, 10120, 12983, 3862, 2]
 
-// Module 14497 (ViewDebugLogsActionSheetRow)
-import { Suspense } from "result";
-import { Keyboard } from "get ActivityIndicator";
+// Module 14522 (ViewDebugLogsActionSheetRow)
+import { Suspense } from "explicitContentFromProto";
+import { Keyboard } from "createToggle";
 import jsxProd from "jsxProd";
 import createToggle from "createToggle";
 
-let closure_5;
+let c5;
 let closure_6;
 function ViewDebugLogsActionSheetRow(icon) {
   let dependencyMap;
   let importDefault;
   const title = icon.title;
   ({ screenKey: importDefault, render: dependencyMap } = icon);
-  return callback(title(5535).ActionSheetRow, {
+  return callback(title(5553).ActionSheetRow, {
     icon: icon.icon,
     label: title,
     onPress() {
       let obj = outer1_1(outer1_2[3]);
       obj.hideActionSheet(outer1_7);
       obj = {
-        default(defaultResult1, defaultResult2, date, sendMessageOptions) {
-          return outer2_5(outer2_1(outer2_2[6]), { title: outer1_0, render: outer1_2, screenKey: outer1_1 });
+        default() {
+          return outer1_5(outer1_1(outer1_2[6]), { title: closure_0, render: closure_2, screenKey: closure_1 });
         }
       };
       outer1_1(outer1_2[5]).pushLazy(Promise.resolve(obj));
@@ -32,57 +32,54 @@ function ViewDebugLogsActionSheetRow(icon) {
   });
 }
 function ViewDebugLogsActionSheet() {
-  let obj = {};
-  obj = {};
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj.title = intl.string(require(1212) /* getSystemLocale */.t.BUOCPi);
-  obj.header = callback(require(5220) /* RedesignBottomSheetTitleHeaderBase */.BottomSheetTitleHeader, obj);
-  obj = { hasIcons: true };
-  const obj1 = { icon: callback(require(14498) /* WrenchIcon */.WrenchIcon, {}) };
-  const intl2 = require(1212) /* getSystemLocale */.intl;
-  obj1.title = intl2.string(require(1212) /* getSystemLocale */.t.XpPGhL);
-  obj1.screenKey = "debugLogs";
-  obj1.render = function render() {
-    return outer1_5(outer1_1(outer1_2[11]), {});
+  let obj = { header: null, children: null };
+  obj = { title: null };
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj[0] = intl.string(require(1236) /* getSystemLocale */.t.BUOCPi);
+  obj[0] = callback(require(5242) /* RedesignBottomSheetTitleHeaderBase */.BottomSheetTitleHeader, obj);
+  obj = { icon: null, title: null, screenKey: "debugLogs", render: null };
+  obj[0] = callback(require(14523) /* WrenchIcon */.WrenchIcon, {});
+  const intl2 = require(1236) /* getSystemLocale */.intl;
+  obj[1] = intl2.string(require(1236) /* getSystemLocale */.t.XpPGhL);
+  obj[3] = function render() {
+    return callback2(callback(14525), {});
   };
-  const items = [callback(ViewDebugLogsActionSheetRow, obj1), , ];
-  const obj2 = { icon: callback(require(4129) /* ClockIcon */.ClockIcon, {}) };
-  const intl3 = require(1212) /* getSystemLocale */.intl;
-  obj2.title = intl3.string(require(1212) /* getSystemLocale */.t.b0nJvk);
-  obj2.screenKey = "startupTiming";
-  obj2.render = function render() {
-    return outer1_5(outer1_3, { children: outer1_5(outer1_1(outer1_2[13]), {}) });
+  const items = [callback(ViewDebugLogsActionSheetRow, obj), , ];
+  const obj1 = { icon: callback(require(4153) /* ClockIcon */.ClockIcon, {}), title: null, screenKey: "startupTiming", render: null };
+  const intl3 = require(1236) /* getSystemLocale */.intl;
+  obj1[1] = intl3.string(require(1236) /* getSystemLocale */.t.b0nJvk);
+  obj1[3] = function render() {
+    return callback2(closure_3, { children: callback2(callback(14528), {}) });
   };
-  items[1] = callback(ViewDebugLogsActionSheetRow, obj2);
-  let tmp3 = null;
-  if (obj6.isAndroid()) {
-    const obj3 = { icon: callback(require(10209) /* ChannelNotificationIcon */.ChannelNotificationIcon, {}) };
-    const intl4 = require(1212) /* getSystemLocale */.intl;
-    obj3.title = intl4.string(require(1212) /* getSystemLocale */.t.Ljj0ps);
-    obj3.screenKey = "pushNotificationLogs";
-    obj3.render = function render() {
-      return outer1_5(outer1_1(outer1_2[16]), {});
+  items[1] = callback(ViewDebugLogsActionSheetRow, obj1);
+  let tmpResult = null;
+  if (obj5.isAndroid()) {
+    const obj2 = { icon: null, title: null, screenKey: "pushNotificationLogs", render: null };
+    obj2[0] = tmp(tmp2(10230).ChannelNotificationIcon, {});
+    const intl4 = tmp2(1236).intl;
+    obj2[1] = intl4.string(tmp2(1236).t.Ljj0ps);
+    obj2[3] = function render() {
+      return callback2(callback(14529), {});
     };
-    tmp3 = callback(ViewDebugLogsActionSheetRow, obj3);
+    tmpResult = tmp(ViewDebugLogsActionSheetRow, obj2);
   }
-  items[2] = tmp3;
-  obj.children = items;
-  obj.children = closure_6(require(5535) /* ActionSheetRowIcon */.ActionSheetRow.Group, obj);
-  return callback(require(5533) /* ActionSheet */.ActionSheet, obj);
+  items[2] = tmpResult;
+  obj[1] = closure_6(require(5553) /* ActionSheetRowIcon */.ActionSheetRow.Group, { hasIcons: true, children: items });
+  return callback(require(5551) /* ActionSheet */.ActionSheet, obj);
 }
-({ jsx: closure_5, jsxs: closure_6 } = jsxProd);
+({ jsx: c5, jsxs: closure_6 } = jsxProd);
 ViewDebugLogsActionSheet = "ViewDebugLogsActionSheet";
 const pressable = createToggle.createPressable({
   useTitle() {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(require(1212) /* getSystemLocale */.t.BUOCPi);
+    const intl = require(1236) /* getSystemLocale */.intl;
+    return intl.string(require(1236) /* getSystemLocale */.t.BUOCPi);
   },
   parent: null,
   IconComponent: require("ChannelListMagnifyingGlassIcon").ChannelListMagnifyingGlassIcon,
   usePredicate: require("explicitContentFromProto").DeveloperMode.useSetting,
   onPress: function handleViewDebugLogsSettingPress() {
     Keyboard.dismiss();
-    let obj = importDefault(4133);
+    let obj = importDefault(4157);
     obj = { default: ViewDebugLogsActionSheet };
     obj.openLazy(Promise.resolve(obj), ViewDebugLogsActionSheet);
   },
@@ -90,15 +87,15 @@ const pressable = createToggle.createPressable({
 });
 let obj = {
   useTitle() {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(require(1212) /* getSystemLocale */.t.BUOCPi);
+    const intl = require(1236) /* getSystemLocale */.intl;
+    return intl.string(require(1236) /* getSystemLocale */.t.BUOCPi);
   },
   parent: null,
   IconComponent: require("ChannelListMagnifyingGlassIcon").ChannelListMagnifyingGlassIcon,
   usePredicate: require("explicitContentFromProto").DeveloperMode.useSetting,
   onPress: function handleViewDebugLogsSettingPress() {
     Keyboard.dismiss();
-    let obj = importDefault(4133);
+    let obj = importDefault(4157);
     obj = { default: ViewDebugLogsActionSheet };
     obj.openLazy(Promise.resolve(obj), ViewDebugLogsActionSheet);
   },

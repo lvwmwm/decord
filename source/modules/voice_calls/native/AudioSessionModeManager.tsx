@@ -1,46 +1,33 @@
-// Module ID: 16100
-// Function ID: 124352
-// Name: _isNativeReflectConstruct
-// Dependencies: [7, 6, 15, 17, 18, 27, 1347, 4989, 4184, 1194, 1348, 4212, 1907, 4181, 6307, 653, 477, 16101, 5112, 2]
+// Module ID: 16135
+// Function ID: 16136
+// Name: handleAVAudioSessionMode
+// Dependencies: [17, 1371, 5011, 4208, 1218, 1372, 4236, 1931, 4205, 6328, 676, 500, 16136, 5134, 2]
 
-// Module 16100 (_isNativeReflectConstruct)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import ME from "ME";
-import closure_5 from "_isNativeReflectConstruct";
-import AutomaticLifecycleManager from "AutomaticLifecycleManager";
-import closure_7 from "_createForOfIteratorHelperLoose";
-import closure_8 from "_isNativeReflectConstruct";
-import closure_9 from "_isNativeReflectConstruct";
-import closure_10 from "_isNativeReflectConstruct";
-import closure_11 from "_isNativeReflectConstruct";
-import closure_12 from "_isNativeReflectConstruct";
-import closure_13 from "_isNativeReflectConstruct";
-import closure_14 from "_isNativeReflectConstruct";
-import closure_15 from "_isNativeReflectConstruct";
+// Module 16135 (handleAVAudioSessionMode)
+import participantFromServer from "participantFromServer";
+import buildStageChannelUserRoles from "buildStageChannelUserRoles";
+import reset from "reset";
+import fetchFingerprint from "fetchFingerprint";
+import ensureGuildLoaded from "ensureGuildLoaded";
+import _detectH265HardwareDecode from "_detectH265HardwareDecode";
+import handleConnectionOpen from "handleConnectionOpen";
+import updateVoiceState from "updateVoiceState";
+import getState from "getState";
 import { AppStates } from "ME";
 import set from "set";
-import tmp2 from "AutomaticLifecycleManager";
-import set from "_possibleConstructorReturn";
+import "initialize";
+import set from "buildStageChannelUserRoles";
 
 const require = arg1;
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
-  }
-  const result = _isNativeReflectConstruct();
-}
 function handleAVAudioSessionMode() {
   channel = channel.getChannel(voiceChannelId.getVoiceChannelId());
   if (null == channel) {
     let VIDEO = VoiceEngine.AVAudioSessionMode.DEFAULT;
+    let obj2 = VoiceEngine;
   } else {
     let hasVideoResult = allActiveStreams.getAllActiveStreams().length > 0;
     if (!hasVideoResult) {
-      hasVideoResult = closure_14.hasVideo(channel.id);
+      hasVideoResult = updateVoiceState.hasVideo(channel.id);
     }
     if (!hasVideoResult) {
       hasVideoResult = videoEnabled.isVideoEnabled();
@@ -48,33 +35,50 @@ function handleAVAudioSessionMode() {
     if (!hasVideoResult) {
       if (null == currentEmbeddedActivity.getCurrentEmbeddedActivity()) {
         const AVAudioSessionMode = VoiceEngine.AVAudioSessionMode;
-        VIDEO = require(16101) /* _isNativeReflectConstruct */.shouldImmediatelyRequestVoicePermissions(id.getId(), channel.id) ? AVAudioSessionMode.VOICE : AVAudioSessionMode.LISTEN;
-        const obj = require(16101) /* _isNativeReflectConstruct */;
+        if (obj.shouldImmediatelyRequestVoicePermissions(id.getId(), channel.id)) {
+          VIDEO = AVAudioSessionMode.VOICE;
+          obj2 = tmp9;
+        } else {
+          VIDEO = AVAudioSessionMode.LISTEN;
+          obj2 = tmp9;
+        }
+        obj = require(16136) /* handleVoiceChannelSelect */;
       }
     }
     VIDEO = VoiceEngine.AVAudioSessionMode.VIDEO;
+    obj2 = VoiceEngine;
   }
   let tmp12 = VIDEO !== VIDEO;
   if (tmp12) {
     tmp12 = state.getState() === AppStates.ACTIVE;
   }
   if (tmp12) {
-    const result = VoiceEngine.setAVAudioSessionMode(VIDEO);
+    const result = obj2.setAVAudioSessionMode(VIDEO);
   }
 }
 if (set.isAndroid()) {
-  set = {
-    setAVAudioSessionMode(VIDEO) {
+  set = { setAVAudioSessionMode: null, AVAudioSessionMode: null };
+  set[0] = function setAVAudioSessionMode(VIDEO) {
 
-      },
-    AVAudioSessionMode: { VOICE: "AVAudioSessionModeVoiceChat", VIDEO: "AVAudioSessionModeVideoChat", LISTEN: "AVAudioSessionModeSpokenAudio", DEFAULT: "AVAudioSessionModeDefault" }
   };
+  set[1] = { VOICE: "AVAudioSessionModeVoiceChat", VIDEO: "AVAudioSessionModeVideoChat", LISTEN: "AVAudioSessionModeSpokenAudio", DEFAULT: "AVAudioSessionModeDefault" };
   let VoiceEngine = set;
 } else {
   VoiceEngine = require("get ActivityIndicator").NativeModules.VoiceEngine;
 }
 const VOICE = VoiceEngine.AVAudioSessionMode.VOICE;
-tmp2 = new tmp2();
+let prototype = function AudioSessionModeManager() {
+  const applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
+  const result = new Map().set(reset, handleAVAudioSessionMode);
+  const result1 = result.set(updateVoiceState, handleAVAudioSessionMode);
+  const result2 = result1.set(_detectH265HardwareDecode, handleAVAudioSessionMode);
+  const result3 = result2.set(buildStageChannelUserRoles, handleAVAudioSessionMode);
+  applyArgumentsResult.stores = result3.set(participantFromServer, handleAVAudioSessionMode);
+  return applyArgumentsResult;
+}.prototype;
+class prototype extends tmp2 {
+}
+prototype = new prototype();
 let result = set.fileFinishedImporting("modules/voice_calls/native/AudioSessionModeManager.tsx");
 
-export default tmp2;
+export default prototype;

@@ -1,10 +1,10 @@
-// Module ID: 7552
-// Function ID: 60599
+// Module ID: 7576
+// Function ID: 7577
 // Name: TrafficConeSpotIllustration
-// Dependencies: [33, 5119, 7553, 2]
+// Dependencies: [21, 5141, 7577, 2]
 // Exports: TrafficConeSpotIllustration
 
-// Module 7552 (TrafficConeSpotIllustration)
+// Module 7576 (TrafficConeSpotIllustration)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/TrafficConeSpotIllustration.native.tsx");
@@ -26,14 +26,15 @@ export const TrafficConeSpotIllustration = function TrafficConeSpotIllustration(
   if (num3 === undefined) {
     num3 = 1;
   }
-  let obj = { fadeDuration: 0 };
-  obj = { uri: importDefault(7553) };
-  obj.source = obj;
+  let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
+  obj = { uri: null };
+  obj[0] = importDefault(7577);
+  obj[1] = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
-  obj.style = items;
-  obj.accessible = accessible;
-  obj.accessibilityLabel = accessibilityLabel;
-  obj.resizeMode = resizeMode;
-  return jsx(importDefault(5119), { width: num * num3, height: num2 * num3 });
+  obj[2] = items;
+  obj[3] = accessible;
+  obj[4] = accessibilityLabel;
+  obj[5] = resizeMode;
+  return jsx(importDefault(5141), { width: num * num3, height: num2 * num3 });
 };

@@ -1,86 +1,66 @@
-// Module ID: 14142
-// Function ID: 108141
-// Name: MuxIntegration
-// Dependencies: [6, 7, 2]
+// Module ID: 14164
+// Function ID: 14165
+// Name: mapDiscordToMuxMetadata
+// Dependencies: [2]
 
-// Module 14142 (MuxIntegration)
-import _classCallCheck from "_classCallCheck";
-import _defineProperties from "_defineProperties";
-
-const tmp2 = (() => {
-  class MuxIntegration {
-    constructor() {
-      tmp = MuxIntegration(this, MuxIntegration);
-      return;
-    }
-  }
-  let obj = {
-    key: "mapDiscordToMuxMetadata",
-    value(contentMetadata, session_id) {
-      const self = this;
-      const obj = { env_key: "1qd16mdmdjasipqg3irobln4u", session_id, player_name: "discord", player_version: "1.0.0", video_id: contentMetadata.contentMetadata.contentId, video_title: contentMetadata.contentMetadata.title };
-      let durationMs = contentMetadata.contentMetadata.durationMs;
-      if (null == durationMs) {
-        let result;
-        if (null != contentMetadata.contentMetadata.durationSec) {
-          result = 1000 * contentMetadata.contentMetadata.durationSec;
-        }
-        durationMs = result;
-      }
-      obj.video_duration = durationMs;
-      obj.video_content_type = contentMetadata.contentMetadata.contentType;
-      obj.video_series = contentMetadata.contentMetadata.questId;
-      obj.video_producer = contentMetadata.contentMetadata.gameId;
-      const gameName = contentMetadata.contentMetadata.gameName;
-      let str = "Discord";
-      if (null != gameName) {
-        str = gameName;
-      }
-      obj.video_brand = str;
-      obj.video_cdn = "Cloudflare";
-      obj.video_stream_type = contentMetadata.contentMetadata.videoStreamType;
-      obj.view_client_application_name = self.getBuildChannel();
-      obj.view_client_application_version = self.getAppVersion();
-      const userContext = contentMetadata.userContext;
-      let userId;
-      if (null != userContext) {
-        userId = userContext.userId;
-      }
-      obj.viewer_user_id = userId;
-      const userContext2 = contentMetadata.userContext;
-      let userTier;
-      if (null != userContext2) {
-        userTier = userContext2.userTier;
-      }
-      obj.viewer_plan = userTier;
-      return obj;
-    }
-  };
-  const items = [obj, , ];
-  obj = {
-    key: "getAppVersion",
-    value() {
-      return "6089";
-    }
-  };
-  items[1] = obj;
-  obj = {
-    key: "getBuildChannel",
-    value() {
-      let RELEASE_CHANNEL;
-      if (null != GLOBAL_ENV) {
-        RELEASE_CHANNEL = GLOBAL_ENV.RELEASE_CHANNEL;
-      }
-      let str = "stable";
-      if (null != RELEASE_CHANNEL) {
-        str = RELEASE_CHANNEL;
-      }
-      return str;
-    }
-  };
-  items[2] = obj;
-  return callback(MuxIntegration, null, items);
-})();
+// Module 14164 (mapDiscordToMuxMetadata)
 let result = require("set").fileFinishedImporting("modules/video-qoe/integrations/MuxIntegration.tsx");
+const prototype = function MuxIntegration() {
+  return Object.create(new.target.prototype);
+}.prototype;
+prototype["mapDiscordToMuxMetadata"] = function mapDiscordToMuxMetadata(config, sessionId) {
+  const obj = { env_key: "1qd16mdmdjasipqg3irobln4u", session_id: sessionId, player_name: "discord", player_version: "1.0.0", video_id: config.contentMetadata.contentId, video_title: config.contentMetadata.title, video_duration: null, video_content_type: null, video_series: null, video_producer: null, video_brand: null, video_cdn: "Cloudflare", video_stream_type: null, view_client_application_name: null, view_client_application_version: null, viewer_user_id: null, viewer_plan: null };
+  let durationMs = config.contentMetadata.durationMs;
+  if (durationMs == null) {
+    let result;
+    if (null != config.contentMetadata.durationSec) {
+      result = 1000 * config.contentMetadata.durationSec;
+    }
+    durationMs = result;
+  }
+  obj[6] = durationMs;
+  obj[7] = config.contentMetadata.contentType;
+  obj[8] = config.contentMetadata.questId;
+  obj[9] = config.contentMetadata.gameId;
+  let str = config.contentMetadata.gameName;
+  if (str == null) {
+    str = "Discord";
+  }
+  obj[10] = str;
+  obj[12] = config.contentMetadata.videoStreamType;
+  obj[13] = this.getBuildChannel();
+  obj[14] = this.getAppVersion();
+  const userContext = config.userContext;
+  let userId;
+  if (userContext != null) {
+    userId = userContext.userId;
+  }
+  obj[15] = userId;
+  const userContext2 = config.userContext;
+  let userTier;
+  if (userContext2 != null) {
+    userTier = userContext2.userTier;
+  }
+  obj[16] = userTier;
+  return obj;
+};
+prototype["getAppVersion"] = function getAppVersion() {
+  return "6099";
+};
+prototype["getBuildChannel"] = function getBuildChannel() {
+  try {
+    const _window = window;
+    let str;
+    if (GLOBAL_ENV != null) {
+      str = GLOBAL_ENV.RELEASE_CHANNEL;
+    }
+    if (str == null) {
+      str = "stable";
+    }
+    return str;
+  } catch (err) {
+    return "stable";
+  }
+};
 
-export const MuxIntegration = tmp2;
+export const MuxIntegration = prototype;

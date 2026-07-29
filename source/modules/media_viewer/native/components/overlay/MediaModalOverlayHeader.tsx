@@ -1,32 +1,32 @@
-// Module ID: 12282
-// Function ID: 95752
+// Module ID: 12304
+// Function ID: 12305
 // Name: MediaModalOverlayHeader
-// Dependencies: [31, 27, 33, 4165, 5118, 12279, 8145, 9534, 4026, 5155, 12283, 1212, 5153, 1273, 689, 4161, 12284, 9275, 477, 12285, 8939, 2]
+// Dependencies: [19, 17, 21, 4189, 5140, 12301, 8169, 9558, 4050, 5177, 12305, 1236, 5175, 1297, 712, 4185, 12306, 9299, 500, 12307, 8963, 2]
 // Exports: MediaModalOverlayHeader
 
-// Module 12282 (MediaModalOverlayHeader)
-import "result";
-import get_ActivityIndicator from "get ActivityIndicator";
-import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+// Module 12304 (MediaModalOverlayHeader)
+import "MoreVerticalIcon";
+import get_ActivityIndicator from "ContextMenu";
+import jsxProd from "set";
+import createCacheKey from "createCacheKey";
 
-let closure_3;
-let closure_4;
-let closure_5;
+let c3;
+let c4;
+let c5;
 let closure_6;
 const require = arg1;
-({ StyleSheet: closure_3, View: closure_4 } = get_ActivityIndicator);
-({ jsx: closure_5, jsxs: closure_6 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { flex: 1, alignItems: "center", flexDirection: "row", height: require("NAV_BAR_HEIGHT").NAV_BAR_HEIGHT, paddingHorizontal: 6, justifyContent: "space-between" };
-_createForOfIteratorHelperLoose.navbarInner = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.navbarLeft = { flexShrink: 1, flexDirection: "row", marginRight: 8 };
-_createForOfIteratorHelperLoose.navbarRight = { flexShrink: 0, justifyContent: "flex-end", flexDirection: "row", gap: 8 };
-_createForOfIteratorHelperLoose.navbarName = { flexShrink: 1, alignItems: "center", height: 40, marginLeft: 8 };
-_createForOfIteratorHelperLoose.navbarNameInner = { borderRadius: 20, justifyContent: "center", alignItems: "center", backgroundColor: "rgba(0, 0, 0, 0.7)", flex: 1, flexDirection: "row", paddingHorizontal: 18 };
-_createForOfIteratorHelperLoose.navbarNameShrinkWrapper = { flexShrink: 1 };
-_createForOfIteratorHelperLoose.contextIcon = { width: 18, height: 18, marginRight: 6 };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+({ StyleSheet: c3, View: c4 } = get_ActivityIndicator);
+({ jsx: c5, jsxs: closure_6 } = jsxProd);
+createCacheKey = { navbarInner: null, navbarLeft: null, navbarRight: null, navbarName: null, navbarNameInner: null, navbarNameShrinkWrapper: null, contextIcon: null };
+createCacheKey = { flex: 1, alignItems: "center", flexDirection: "row", height: require("NAV_BAR_HEIGHT").NAV_BAR_HEIGHT, paddingHorizontal: 6, justifyContent: "space-between" };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { flexShrink: 1, flexDirection: "row", marginRight: 8 };
+createCacheKey[2] = { flexShrink: 0, justifyContent: "flex-end", flexDirection: "row", gap: 8 };
+createCacheKey[3] = { flexShrink: 1, alignItems: "center", height: 40, marginLeft: 8 };
+createCacheKey[4] = { borderRadius: 20, justifyContent: "center", alignItems: "center", backgroundColor: "rgba(0, 0, 0, 0.7)", flex: 1, flexDirection: "row", paddingHorizontal: 18 };
+createCacheKey[5] = { flexShrink: 1 };
+createCacheKey[6] = { width: 18, height: 18, marginRight: 6 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
 const result = require("jsxProd").fileFinishedImporting("modules/media_viewer/native/components/overlay/MediaModalOverlayHeader.tsx");
 
 export const MediaModalOverlayHeader = function MediaModalOverlayHeader(arg0) {
@@ -41,90 +41,91 @@ export const MediaModalOverlayHeader = function MediaModalOverlayHeader(arg0) {
   let source;
   ({ source, contextName, contextIcon } = arg0);
   ({ onClose, disableDownload, disableMediaOverlayButton, shareable, animationDriver, channelId } = arg0);
-  const tmp = _createForOfIteratorHelperLoose();
-  let obj = require(12279) /* useOverlayLayoutDriver */;
+  const tmp = createCacheKey();
+  let obj = require(12301) /* useOverlayLayoutDriver */;
   const headerLayoutAnimation = obj.useHeaderLayoutAnimation(animationDriver);
-  let obj1 = require(8145) /* useMediaShareActions */;
+  let obj1 = require(8169) /* useMediaShareActions */;
   const mediaShareActions = obj1.useMediaShareActions({ source, disableDownload, shareable });
-  obj = {};
+  const tmp7 = importDefault(9558)(channelId);
+  obj = { style: null, children: null };
   obj = {};
   let merged = Object.assign(absoluteFillObject.absoluteFillObject);
-  obj["bottom"] = undefined;
+  obj.bottom = undefined;
   const items = [obj, headerLayoutAnimation];
-  obj.style = items;
-  obj1 = { top: true, left: true, right: true, pointerEvents: "box-none" };
-  const obj2 = { style: tmp.navbarInner, pointerEvents: "box-none" };
-  const obj3 = { style: tmp.navbarLeft };
-  const obj4 = {};
-  let tmp4 = importDefault(9534)(channelId);
-  let intl = require(1212) /* getSystemLocale */.intl;
-  obj4.accessibilityLabel = intl.string(require(1212) /* getSystemLocale */.t.cpT0Cq);
-  obj4.icon = callback(require(5153) /* XSmallIcon */.XSmallIcon, { size: "md", color: "interactive-text-active" });
-  obj4.onPress = onClose;
-  const items1 = [callback(importDefault(12283), obj4), ];
-  let tmp11Result = null != contextName;
-  if (tmp11Result) {
-    const obj5 = { style: tmp.navbarName };
-    const obj6 = { style: tmp.navbarNameInner };
-    let tmp14 = null != contextIcon;
-    if (tmp14) {
-      const obj7 = { source: contextIcon, color: importDefault(689).unsafe_rawColors.PRIMARY_345, size: require(1273) /* Button */.Icon.Sizes.CUSTOM, style: tmp.contextIcon };
-      tmp14 = callback(require(1273) /* Button */.Icon, obj7);
+  obj[0] = items;
+  obj1 = { style: tmp.navbarInner, pointerEvents: "box-none", children: null };
+  const obj2 = { style: tmp.navbarLeft, children: null };
+  const obj3 = { accessibilityLabel: null, icon: null, onPress: null };
+  let intl = require(1236) /* getSystemLocale */.intl;
+  obj3[0] = intl.string(require(1236) /* getSystemLocale */.t.cpT0Cq);
+  obj3[1] = callback(require(5175) /* XSmallIcon */.XSmallIcon, { size: "md", color: "interactive-text-active" });
+  obj3[2] = onClose;
+  const items1 = [callback(importDefault(12305), obj3), ];
+  let tmp8Result = null != contextName;
+  if (tmp8Result) {
+    const obj4 = { style: null, children: null };
+    obj4[0] = tmp.navbarName;
+    const obj5 = { style: null, children: null };
+    obj5[0] = tmp.navbarNameInner;
+    tmp8Result = null != contextIcon;
+    if (tmp8Result) {
+      const obj6 = { source: null, color: null, size: null, style: null };
+      obj6[0] = contextIcon;
+      obj6[1] = tmp6(712).unsafe_rawColors.PRIMARY_345;
+      obj6[2] = tmp2(1297).Icon.Sizes.CUSTOM;
+      obj6[3] = tmp.contextIcon;
+      tmp8Result = tmp8(tmp2(1297).Icon, obj6);
     }
-    const items2 = [tmp14, ];
-    const obj8 = { style: tmp.navbarNameShrinkWrapper };
-    const obj9 = { accessibilityRole: "header", variant: "heading-md/medium", lineClamp: 1, ellipsizeMode: "tail", color: "text-overlay-light", children: contextName };
-    obj8.children = callback(require(4161) /* Text */.Text, obj9);
-    items2[1] = callback(closure_4, obj8);
-    obj6.children = items2;
-    obj5.children = closure_6(closure_4, obj6);
-    tmp11Result = callback(tmp12, obj5);
-    const tmp11 = callback;
-    const tmp13 = closure_6;
+    const items2 = [tmp8Result, ];
+    const obj7 = { style: null, children: null };
+    obj7[0] = tmp.navbarNameShrinkWrapper;
+    const obj8 = { accessibilityRole: "header", variant: "heading-md/medium", lineClamp: 1, ellipsizeMode: "tail", color: "text-overlay-light", children: null };
+    obj8[5] = contextName;
+    obj7[1] = tmp8(tmp2(4185).Text, obj8);
+    items2[1] = tmp8(tmp11, obj7);
+    obj5[1] = items2;
+    obj4[1] = tmp10(tmp11, obj5);
+    tmp8Result = tmp8(tmp11, obj4);
   }
-  items1[1] = tmp11Result;
-  obj3.children = items1;
-  const items3 = [closure_6(closure_4, obj3), ];
-  let tmp24Result = !tmp4;
-  if (tmp24Result) {
-    const obj10 = { style: tmp.navbarRight };
-    const obj11 = { source };
-    const items4 = [callback(importDefault(12284), obj11), ];
-    let tmp29 = null;
+  items1[1] = tmp8Result;
+  obj2[1] = items1;
+  const items3 = [closure_6(closure_4, obj2), ];
+  let tmp10Result = !tmp7;
+  if (!tmp7) {
+    const obj9 = { style: null, children: null };
+    obj9[0] = tmp.navbarRight;
+    const obj10 = { source: null };
+    obj10[0] = source;
+    const items4 = [tmp8(tmp6(12306), obj10), ];
+    let tmp8Result1 = null;
     if (!disableMediaOverlayButton) {
-      const obj12 = {
-        items: mediaShareActions,
-        children(ref) {
-              let obj = Object.create(null);
-              obj.ref = 0;
-              const merged = Object.assign(ref, obj);
-              obj = {};
-              const intl = outer1_0(outer1_2[11]).intl;
-              obj.accessibilityLabel = intl.string(outer1_0(outer1_2[11]).t.PdRCRg);
-              const tmp3 = outer1_5;
-              const tmp4 = outer1_1(outer1_2[10]);
-              if (obj2.isAndroid()) {
-                let tmp5Result = tmp5(tmp6(tmp7[19]).MoreVerticalIcon, { size: "md", color: "interactive-text-active" });
-              } else {
-                tmp5Result = tmp5(tmp6(tmp7[20]).MoreHorizontalIcon, { size: "md", color: "interactive-text-active" });
-              }
-              obj.icon = tmp5Result;
-              obj.ref = ref.ref;
-              const merged1 = Object.assign(merged);
-              return tmp3(tmp4, obj);
-            }
+      const obj11 = { items: null, children: null };
+      obj11[0] = mediaShareActions;
+      obj11[1] = function children(ref) {
+        const merged = Object.assign(ref, Object.create(null));
+        const obj = { accessibilityLabel: null, icon: null, ref: null };
+        const intl = callback(1236).intl;
+        obj[0] = intl.string(callback(1236).t.PdRCRg);
+        const tmp4 = callback2(12305);
+        if (obj2.isAndroid()) {
+          let tmp2Result = tmp2(tmp5(12307).MoreVerticalIcon, { size: "md", color: "interactive-text-active" });
+        } else {
+          tmp2Result = tmp2(tmp5(8963).MoreHorizontalIcon, { size: "md", color: "interactive-text-active" });
+        }
+        obj[1] = tmp2Result;
+        obj[2] = ref.ref;
+        const merged1 = Object.assign(merged);
+        return closure_5(tmp4, obj);
       };
-      tmp29 = callback(require(9275) /* ContextMenu */.ContextMenu, obj12);
+      tmp8Result1 = tmp8(tmp2(9299).ContextMenu, obj11);
     }
-    items4[1] = tmp29;
-    obj10.children = items4;
-    tmp24Result = closure_6(closure_4, obj10);
-    const tmp24 = closure_6;
-    const tmp25 = closure_4;
+    items4[1] = tmp8Result1;
+    obj9[1] = items4;
+    tmp10Result = tmp10(tmp11, obj9);
   }
-  items3[1] = tmp24Result;
-  obj2.children = items3;
-  obj1.children = closure_6(closure_4, obj2);
-  obj.children = callback(require(5155) /* SafeAreaPaddingView */.SafeAreaPaddingView, obj1);
-  return callback(importDefault(4026).View, obj);
+  const tmp12 = importDefault(12305);
+  items3[1] = tmp10Result;
+  obj1[2] = items3;
+  obj[1] = callback(require(5177) /* SafeAreaPaddingView */.SafeAreaPaddingView, { top: true, left: true, right: true, pointerEvents: "box-none", children: closure_6(closure_4, obj1) });
+  return callback(importDefault(4050).View, obj);
 };

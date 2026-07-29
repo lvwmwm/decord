@@ -1,30 +1,30 @@
-// Module ID: 16235
-// Function ID: 125681
+// Module ID: 16270
+// Function ID: 16271
 // Name: TouchableUploadAvatar
-// Dependencies: [31, 27, 33, 4165, 689, 12977, 4695, 1212, 5119, 1273, 11847, 2]
+// Dependencies: [19, 17, 21, 4189, 712, 13000, 4717, 1236, 5141, 1297, 11872, 2]
 // Exports: default
 
-// Module 16235 (TouchableUploadAvatar)
-import "result";
+// Module 16270 (TouchableUploadAvatar)
+import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_4;
-let closure_5;
+let c4;
+let c5;
 const require = arg1;
-({ jsx: closure_4, jsxs: closure_5 } = jsxProd);
-_createForOfIteratorHelperLoose = { avatarContainer: { display: "flex", paddingTop: 24 } };
-_createForOfIteratorHelperLoose = { tintColor: require("_createForOfIteratorHelperLoose").colors.INTERACTIVE_TEXT_DEFAULT, width: 96 };
-_createForOfIteratorHelperLoose.defaultLogoStyle = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.uploadedAvatarStyle = { width: 200, height: 200, borderRadius: 100, position: "relative" };
-let obj1 = { borderColor: require("_createForOfIteratorHelperLoose").colors.BORDER_MUTED, borderStyle: "dashed", borderWidth: 2, borderRadius: require("_createForOfIteratorHelperLoose").radii.round, width: 200, height: 200, justifyContent: "center", alignItems: "center", position: "relative", overflow: "visible" };
-_createForOfIteratorHelperLoose.avatarWrapper = obj1;
-let obj2 = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BRAND, borderRadius: require("_createForOfIteratorHelperLoose").radii.round, tintColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW, position: "absolute", right: 10, top: 10, width: 40, height: 40, flex: 1, justifyContent: "center" };
-_createForOfIteratorHelperLoose.uploadAvatarWrapper = obj2;
-_createForOfIteratorHelperLoose.uploadAvatarIcon = { tintColor: require("_createForOfIteratorHelperLoose").colors.WHITE, alignSelf: "center" };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-let obj3 = { tintColor: require("_createForOfIteratorHelperLoose").colors.WHITE, alignSelf: "center" };
+({ jsx: c4, jsxs: c5 } = jsxProd);
+createCacheKey = { avatarContainer: { display: "flex", paddingTop: 24 }, defaultLogoStyle: null, uploadedAvatarStyle: null, avatarWrapper: null, uploadAvatarWrapper: null, uploadAvatarIcon: null };
+createCacheKey = { tintColor: require("Themes").colors.INTERACTIVE_TEXT_DEFAULT, width: 96 };
+createCacheKey[1] = createCacheKey;
+createCacheKey[2] = { width: 200, height: 200, borderRadius: 100, position: "relative" };
+createCacheKey[3] = { borderColor: require("Themes").colors.BORDER_MUTED, borderStyle: "dashed", borderWidth: 2, borderRadius: require("Themes").radii.round, width: 200, height: 200, justifyContent: "center", alignItems: "center", position: "relative", overflow: "visible" };
+let obj1 = { borderColor: require("Themes").colors.BORDER_MUTED, borderStyle: "dashed", borderWidth: 2, borderRadius: require("Themes").radii.round, width: 200, height: 200, justifyContent: "center", alignItems: "center", position: "relative", overflow: "visible" };
+createCacheKey[4] = { backgroundColor: require("Themes").colors.BACKGROUND_BRAND, borderRadius: require("Themes").radii.round, tintColor: require("Themes").colors.BACKGROUND_BASE_LOW, position: "absolute", right: 10, top: 10, width: 40, height: 40, flex: 1, justifyContent: "center" };
+let obj2 = { backgroundColor: require("Themes").colors.BACKGROUND_BRAND, borderRadius: require("Themes").radii.round, tintColor: require("Themes").colors.BACKGROUND_BASE_LOW, position: "absolute", right: 10, top: 10, width: 40, height: 40, flex: 1, justifyContent: "center" };
+createCacheKey[5] = { tintColor: require("Themes").colors.WHITE, alignSelf: "center" };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let obj3 = { tintColor: require("Themes").colors.WHITE, alignSelf: "center" };
 const result = require("jsxProd").fileFinishedImporting("modules/avatar/native/components/TouchableUploadAvatar.tsx");
 
 export default function TouchableUploadAvatar(onSelectAvatar) {
@@ -34,9 +34,9 @@ export default function TouchableUploadAvatar(onSelectAvatar) {
   if (showPendingAvatar === undefined) {
     showPendingAvatar = false;
   }
-  const tmp = _createForOfIteratorHelperLoose();
+  const tmp = createCacheKey();
   if (!showPendingAvatar) {
-    let tmp3 = importDefault(12977);
+    let tmp3 = importDefault(13000);
   } else {
     tmp3 = avatarSource;
   }
@@ -44,20 +44,29 @@ export default function TouchableUploadAvatar(onSelectAvatar) {
     if (null != avatarSource) {
       let defaultLogoStyle = tmp.uploadedAvatarStyle;
     }
-    let obj = { style: tmp.avatarContainer };
-    obj = { onPress: onSelectAvatar.onSelectAvatar, accessibilityRole: "button" };
-    const intl = require(1212) /* getSystemLocale */.intl;
-    obj.accessibilityLabel = intl.string(require(1212) /* getSystemLocale */.t["70lEQe"]);
-    obj = { style: tmp.avatarWrapper };
-    const obj1 = { resizeMode: "contain", style: defaultLogoStyle, source: tmp3 };
-    const items = [callback(importDefault(5119), obj1), ];
-    const obj2 = { style: tmp.uploadAvatarWrapper };
-    const obj3 = { size: require(1273) /* Button */.Icon.Sizes.MEDIUM, source: importDefault(11847), style: tmp.uploadAvatarIcon };
-    obj2.children = callback(require(1273) /* Button */.Icon, obj3);
+    let obj = { style: null, children: null };
+    obj[0] = tmp.avatarContainer;
+    obj = { onPress: null, accessibilityRole: "button", accessibilityLabel: null, children: null };
+    obj[0] = onSelectAvatar.onSelectAvatar;
+    const intl = require(1236) /* getSystemLocale */.intl;
+    obj[2] = intl.string(require(1236) /* getSystemLocale */.t["70lEQe"]);
+    obj = { style: null, children: null };
+    obj[0] = tmp.avatarWrapper;
+    const obj1 = { resizeMode: "contain", style: null, source: null };
+    obj1[1] = defaultLogoStyle;
+    obj1[2] = tmp3;
+    const items = [callback(importDefault(5141), obj1), ];
+    const obj2 = { style: null, children: null };
+    obj2[0] = tmp.uploadAvatarWrapper;
+    const obj3 = { size: null, source: null, style: null };
+    obj3[0] = require(1297) /* Button */.Icon.Sizes.MEDIUM;
+    obj3[1] = importDefault(11872);
+    obj3[2] = tmp.uploadAvatarIcon;
+    obj2[1] = callback(require(1297) /* Button */.Icon, obj3);
     items[1] = callback(View, obj2);
-    obj.children = items;
-    obj.children = callback2(View, obj);
-    obj.children = callback(require(4695) /* PressableBase */.PressableOpacity, obj);
+    obj[1] = items;
+    obj[3] = callback2(View, obj);
+    obj[1] = callback(require(4717) /* PressableBase */.PressableOpacity, obj);
     return callback(View, obj);
   }
   defaultLogoStyle = tmp.defaultLogoStyle;

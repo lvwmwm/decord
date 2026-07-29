@@ -1,252 +1,11 @@
-// Module ID: 568
-// Function ID: 6873
-// Name: Store
-// Dependencies: [6, 7, 569, 570, 20, 44, 2]
+// Module ID: 591
+// Function ID: 592
+// Name: initialize
+// Dependencies: [592, 593, 10, 38, 2]
 
-// Module 568 (Store)
-import set from "set";
-import _defineProperties from "_defineProperties";
-
-const require = arg1;
-let closure_6 = [];
-let c7 = false;
-const tmp3 = (() => {
-  class Store {
-    constructor(arg0, arg1, arg2) {
-      obj = arg1;
-      self = this;
-      self = this;
-      tmp = outer1_4(this, self);
-      changeListeners = new Store(outer1_2[2]).ChangeListeners();
-      this._changeCallbacks = changeListeners;
-      changeListeners1 = new Store(outer1_2[2]).ChangeListeners();
-      this._reactChangeCallbacks = changeListeners1;
-      this._syncWiths = [];
-      this._isInitialized = false;
-      this.doEmitChanges = (arg0) => {
-        let hasAnyResult = self._changeCallbacks.hasAny();
-        if (!hasAnyResult) {
-          hasAnyResult = self._reactChangeCallbacks.hasAny();
-          const _reactChangeCallbacks = self._reactChangeCallbacks;
-        }
-        if (!hasAnyResult) {
-          hasAnyResult = self._syncWiths.length > 0;
-        }
-        if (hasAnyResult) {
-          outer2_1(outer2_2[3]).markChanged(self);
-          const obj = outer2_1(outer2_2[3]);
-          let isPaused = outer2_1(outer2_2[3]).getIsPaused();
-          if (isPaused) {
-            isPaused = null != self._mustEmitChanges;
-          }
-          if (isPaused) {
-            isPaused = self._mustEmitChanges(arg0);
-          }
-          if (isPaused) {
-            outer2_1(outer2_2[3]).resume(false);
-            const obj3 = outer2_1(outer2_2[3]);
-          }
-          const obj2 = outer2_1(outer2_2[3]);
-        }
-      };
-      this.addChangeListener = this._changeCallbacks.add;
-      this.removeChangeListener = this._changeCallbacks.remove;
-      this.addConditionalChangeListener = this._changeCallbacks.addConditional;
-      this.removeAllConditionalChangeListeners = this._changeCallbacks.removeAllConditional;
-      this.addReactChangeListener = this._reactChangeCallbacks.add;
-      this.removeReactChangeListener = this._reactChangeCallbacks.remove;
-      this._dispatcher = arg0;
-      _dispatcher = this._dispatcher;
-      this._dispatchToken = _dispatcher.createToken();
-      if (null == arg1) {
-        obj = {};
-      }
-      result = this.registerActionHandlers(obj, arg2);
-      arr = outer1_6.push(self);
-      if (outer1_7) {
-        initializeIfNeededResult = self.initializeIfNeeded();
-      }
-      return;
-    }
-  }
-  let obj = {
-    key: "registerActionHandlers",
-    value(arg0, arg1) {
-      const _dispatcher = this._dispatcher;
-      _dispatcher.register(this.getName(), arg0, this.doEmitChanges, arg1, this._dispatchToken);
-    }
-  };
-  let items = [obj, , , , , , , , ];
-  obj = {
-    key: "getName",
-    value() {
-      let name = this.constructor.displayName;
-      if (null == name) {
-        name = this.constructor.name;
-      }
-      return name;
-    }
-  };
-  items[1] = obj;
-  obj = {
-    key: "initializeIfNeeded",
-    value() {
-      const self = this;
-      if (!this._isInitialized) {
-        const _Date = Date;
-        const timestamp = Date.now();
-        self.initialize();
-        self._isInitialized = true;
-        const _Date2 = Date;
-        const diff = Date.now() - timestamp;
-        if (diff > 5) {
-          outer1_1(outer1_2[4]).mark("\u{1F9A5}", `${self.getName()}.initialize()`, diff);
-          const obj = outer1_1(outer1_2[4]);
-        }
-      }
-    }
-  };
-  items[2] = obj;
-  items[3] = {
-    key: "initialize",
-    value() {
-
-    }
-  };
-  items[4] = {
-    key: "syncWith",
-    value(arr) {
-      const self = this;
-      let closure_1 = arg1;
-      const items = [...arr];
-      this.waitFor.apply(items);
-      if (null != arg2) {
-        let c2 = 0;
-        function wrapper() {
-          if (changeSentinel !== obj.getChangeSentinel()) {
-            changeSentinel = outer2_1(outer2_2[3]).getChangeSentinel();
-            if (false !== callback()) {
-              self.emitChange();
-            }
-            const obj2 = outer2_1(outer2_2[3]);
-          }
-        }
-        let closure_3 = wrapper;
-        let num = 0;
-        if (null != arg2) {
-          num = arg2;
-        }
-        closure_3 = (function debounce(arg0, wrapper) {
-          let closure_0 = arg0;
-          let closure_1 = wrapper;
-          let c2 = null;
-          return 0 === arg0 ? (() => {
-            clearImmediate(immediate);
-            immediate = setImmediate(closure_1);
-          }) : (() => {
-            if (null == timeout) {
-              const _setTimeout = setTimeout;
-              timeout = setTimeout(() => {
-                outer1_1();
-                let closure_2 = null;
-              }, closure_0);
-            }
-          });
-        })(num, wrapper);
-        const item = arr.forEach((addChangeListener) => addChangeListener.addChangeListener(closure_3));
-      } else {
-        const item1 = arr.forEach((_syncWiths) => {
-          _syncWiths = _syncWiths._syncWiths;
-          _syncWiths.push({ func: closure_1, store: self });
-        });
-      }
-    }
-  };
-  items[5] = {
-    key: "waitFor",
-    value(arg0) {
-      const self = this;
-      const items = [...arguments];
-      const mapped = items.map((_dispatcher) => {
-        let dispatchToken = null;
-        outer2_1(outer2_2[5])(null != _dispatcher, "Store.waitFor(...) called with null Store at index " + arg1 + " for store " + self.getName());
-        if (null != _dispatcher._dispatcher) {
-          outer2_1(outer2_2[5])(_dispatcher._dispatcher === self._dispatcher, "Stores belong to two separate dispatchers.");
-          dispatchToken = _dispatcher.getDispatchToken();
-        }
-        return dispatchToken;
-      });
-      const _dispatcher = this._dispatcher;
-      let dispatchToken = this.getDispatchToken();
-      _dispatcher.addDependencies(dispatchToken, mapped.filter((arg0) => null != arg0));
-    }
-  };
-  items[6] = {
-    key: "emitChange",
-    value() {
-      outer1_1(outer1_2[3]).markChanged(this);
-    }
-  };
-  items[7] = {
-    key: "getDispatchToken",
-    value() {
-      return this._dispatchToken;
-    }
-  };
-  items[8] = {
-    key: "mustEmitChanges",
-    value() {
-      let fn = arg0;
-      if (arg0 === undefined) {
-        fn = function t() {
-          return true;
-        };
-      }
-      this._mustEmitChanges = fn;
-    }
-  };
-  const items1 = [
-    {
-      key: "initialize",
-      value() {
-        const outer1_7 = true;
-        const item = outer1_6.forEach((initializeIfNeeded) => initializeIfNeeded.initializeIfNeeded());
-        if (null != outer1_3) {
-          outer1_3();
-        }
-      }
-    },
-    {
-      key: "destroy",
-      value() {
-        outer1_6.length = 0;
-        outer1_1(outer1_2[3]).destroy();
-      }
-    },
-    {
-      key: "getAll",
-      value() {
-        return outer1_6;
-      }
-    },
-    {
-      key: "removeAllConditionalListeners",
-      value() {
-        const item = outer1_6.forEach((_changeCallbacks) => {
-          _changeCallbacks._changeCallbacks.removeAllConditional();
-        });
-      }
-    }
-  ];
-  return callback(Store, items, items1);
-})();
-tmp3.initialized = new Promise((arg0) => {
-  let closure_0 = arg0;
-  function t() {
-    callback();
-    const t = null;
-  }
-});
+// Module 591 (initialize)
+let closure_4 = [];
+let c5 = false;
 const promise = new Promise((arg0) => {
   let closure_0 = arg0;
   function t() {
@@ -254,6 +13,198 @@ const promise = new Promise((arg0) => {
     const t = null;
   }
 });
-let result = require("ChangeListeners").fileFinishedImporting("../discord_common/js/packages/flux/Store.tsx");
+let result = require("isTracing").fileFinishedImporting("../discord_common/js/packages/flux/Store.tsx");
+class Store {
+  constructor(arg0, arg1, arg2) {
+    obj = require;
+    obj = Object.create(new.target.prototype);
+    closure_0 = obj;
+    changeListeners = new require("has").ChangeListeners();
+    obj._changeCallbacks = changeListeners;
+    changeListeners1 = new require("has").ChangeListeners();
+    obj._reactChangeCallbacks = changeListeners1;
+    obj._syncWiths = [];
+    obj._isInitialized = false;
+    obj.doEmitChanges = function doEmitChanges(closure_0) {
+      let hasAnyResult = obj._changeCallbacks.hasAny();
+      if (!hasAnyResult) {
+        hasAnyResult = obj._reactChangeCallbacks.hasAny();
+        const _reactChangeCallbacks = obj._reactChangeCallbacks;
+      }
+      if (!hasAnyResult) {
+        hasAnyResult = obj._syncWiths.length > 0;
+      }
+      if (hasAnyResult) {
+        outer1_1(outer1_2[1]).markChanged(obj);
+        const obj2 = outer1_1(outer1_2[1]);
+        const tmp2 = outer1_1;
+        const tmp3 = outer1_2;
+        let isPaused = outer1_1(outer1_2[1]).getIsPaused();
+        if (isPaused) {
+          isPaused = null != obj._mustEmitChanges;
+        }
+        if (isPaused) {
+          isPaused = obj._mustEmitChanges(closure_0);
+        }
+        if (isPaused) {
+          tmp2(tmp3[1]).resume(false);
+          const tmp2Result = tmp2(tmp3[1]);
+        }
+        const obj3 = outer1_1(outer1_2[1]);
+      }
+    };
+    obj.addChangeListener = obj._changeCallbacks.add;
+    obj.removeChangeListener = obj._changeCallbacks.remove;
+    obj.addConditionalChangeListener = obj._changeCallbacks.addConditional;
+    obj.removeAllConditionalChangeListeners = obj._changeCallbacks.removeAllConditional;
+    obj.addReactChangeListener = obj._reactChangeCallbacks.add;
+    obj.removeReactChangeListener = obj._reactChangeCallbacks.remove;
+    obj._dispatcher = global;
+    _dispatcher = obj._dispatcher;
+    obj._dispatchToken = _dispatcher.createToken();
+    if (require == null) {
+      obj = {};
+    }
+    result = obj.registerActionHandlers(obj, importDefault);
+    arr = closure_4.push(obj);
+    if (c5) {
+      initializeIfNeededResult = obj.initializeIfNeeded();
+    }
+    return obj;
+  }
+}
+const prototype = Store.prototype;
+Store["initialize"] = function initialize() {
+  let c5 = true;
+  const item = arr.forEach((initializeIfNeeded) => initializeIfNeeded.initializeIfNeeded());
+  if (null != closure_3) {
+    if (typeof closure_3 !== "find") {
+      HermesBuiltin.throwTypeError();
+    }
+    require();
+    const outer1_3 = null;
+  }
+};
+Store["destroy"] = function destroy() {
+  closure_4.length = 0;
+  importDefault(593).destroy();
+};
+Store["getAll"] = function getAll() {
+  return closure_4;
+};
+Store["removeAllConditionalListeners"] = function removeAllConditionalListeners() {
+  const item = arr.forEach((_changeCallbacks) => {
+    _changeCallbacks._changeCallbacks.removeAllConditional();
+  });
+};
+prototype["registerActionHandlers"] = function registerActionHandlers(arg0, arg1) {
+  const _dispatcher = this._dispatcher;
+  _dispatcher.register(this.getName(), arg0, this.doEmitChanges, arg1, this._dispatchToken);
+};
+prototype["getName"] = function getName() {
+  let name = this.constructor.displayName;
+  if (name == null) {
+    name = this.constructor.name;
+  }
+  return name;
+};
+prototype["initializeIfNeeded"] = function initializeIfNeeded() {
+  const self = this;
+  if (!this._isInitialized) {
+    const _Date = Date;
+    const timestamp = Date.now();
+    self.initialize();
+    self._isInitialized = true;
+    const _Date2 = Date;
+    const diff = Date.now() - timestamp;
+    if (diff > 5) {
+      importDefault(10).mark("\u{1F9A5}", `${self.getName()}.initialize()`, diff);
+      const obj = importDefault(10);
+    }
+  }
+};
+prototype["initialize"] = function initialize() {
 
-export const Store = tmp3;
+};
+prototype["syncWith"] = function syncWith(items, handleUserSettingsProtoStoreChange) {
+  const self = this;
+  let wrapper = handleUserSettingsProtoStoreChange;
+  let num = arg2;
+  items = [...items];
+  this.waitFor.apply(items);
+  if (null != arg2) {
+    let c2 = 0;
+    wrapper = function wrapper() {
+      if (changeSentinel !== obj.getChangeSentinel()) {
+        changeSentinel = wrapper(_null[1]).getChangeSentinel();
+        if (false !== wrapper()) {
+          self.emitChange();
+        }
+        const tmpResult = wrapper(_null[1]);
+      }
+    };
+    let closure_0 = wrapper;
+    if (num == null) {
+      num = 0;
+    }
+    closure_0 = num;
+    c2 = null;
+    closure_0 = 0 === num ? (() => {
+      clearImmediate(immediate);
+      immediate = setImmediate(wrapper);
+    }) : (() => {
+      if (null == timeout) {
+        const _setTimeout = setTimeout;
+        timeout = setTimeout(() => {
+          try {
+            callback();
+            let c2 = null;
+          } catch (tmp4) {
+            c2 = null;
+            throw tmp4;
+          }
+        }, closure_0);
+      }
+    });
+    const item = items.forEach((addChangeListener) => addChangeListener.addChangeListener(closure_0));
+  } else {
+    const item1 = items.forEach((_syncWiths) => {
+      _syncWiths = _syncWiths._syncWiths;
+      _syncWiths.push({ func: wrapper, store: self });
+    });
+  }
+};
+prototype["waitFor"] = function waitFor() {
+  const self = this;
+  const items = [...arguments];
+  const mapped = items.map((_dispatcher) => {
+    let dispatchToken = null;
+    outer1_1(outer1_2[3])(null != _dispatcher, "Store.waitFor(...) called with null Store at index " + arg1 + " for store " + self.getName());
+    if (null != _dispatcher._dispatcher) {
+      outer1_1(outer1_2[3])(_dispatcher._dispatcher === self._dispatcher, "Stores belong to two separate dispatchers.");
+      dispatchToken = _dispatcher.getDispatchToken();
+    }
+    return dispatchToken;
+  });
+  const _dispatcher = this._dispatcher;
+  let dispatchToken = this.getDispatchToken();
+  _dispatcher.addDependencies(dispatchToken, mapped.filter((arg0) => null != arg0));
+};
+prototype["emitChange"] = function emitChange() {
+  importDefault(593).markChanged(this);
+};
+prototype["getDispatchToken"] = function getDispatchToken() {
+  return this._dispatchToken;
+};
+prototype["mustEmitChanges"] = function mustEmitChanges(arg0) {
+  let fn = arg0;
+  if (arg0 === undefined) {
+    fn = function t() {
+      return true;
+    };
+  }
+  this._mustEmitChanges = fn;
+};
+Store.initialized = promise;
+
+export { Store };

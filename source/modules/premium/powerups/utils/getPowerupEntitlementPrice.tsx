@@ -1,61 +1,61 @@
-// Module ID: 4074
-// Function ID: 33759
+// Module ID: 4098
+// Function ID: 4099
 // Name: getPowerupEntitlementPrice
 // Dependencies: [2]
 // Exports: default
 
-// Module 4074 (getPowerupEntitlementPrice)
+// Module 4098 (getPowerupEntitlementPrice)
 const result = require("set").fileFinishedImporting("modules/premium/powerups/utils/getPowerupEntitlementPrice.tsx");
 
 export default function getPowerupEntitlementPrice(tenant_metadata) {
   let guild_monetization;
-  if (null != tenant_metadata) {
+  if (tenant_metadata != null) {
     tenant_metadata = tenant_metadata.tenant_metadata;
-    if (null != tenant_metadata) {
+    if (tenant_metadata != null) {
       guild_monetization = tenant_metadata.guild_monetization;
     }
   }
-  if (null != tenant_metadata) {
+  if (tenant_metadata != null) {
     const sku = tenant_metadata.sku;
-    if (null != sku) {
+    if (sku != null) {
       const tenant_metadata2 = sku.tenant_metadata;
-      if (null != tenant_metadata2) {
+      if (tenant_metadata2 != null) {
         guild_monetization = tenant_metadata2.guild_monetization;
       }
     }
   }
   let boost_price;
-  if (null != guild_monetization) {
+  if (guild_monetization != null) {
     const game_server = guild_monetization.game_server;
-    if (null != game_server) {
+    if (game_server != null) {
       boost_price = game_server.boost_price;
     }
   }
-  if (null == boost_price) {
+  if (boost_price == null) {
     let boost_price1;
-    if (null != guild_monetization) {
+    if (guild_monetization != null) {
       const powerup = guild_monetization.powerup;
-      if (null != powerup) {
+      if (powerup != null) {
         boost_price1 = powerup.boost_price;
       }
     }
     boost_price = boost_price1;
   }
-  if (null == boost_price) {
+  if (boost_price == null) {
     let boost_price2;
-    if (null != guild_monetization) {
+    if (guild_monetization != null) {
       const game_server2 = guild_monetization.game_server;
-      if (null != game_server2) {
+      if (game_server2 != null) {
         boost_price2 = game_server2.boost_price;
       }
     }
     boost_price = boost_price2;
   }
-  if (null == boost_price) {
+  if (boost_price == null) {
     let boost_price3;
-    if (null != guild_monetization) {
+    if (guild_monetization != null) {
       const powerup2 = guild_monetization.powerup;
-      if (null != powerup2) {
+      if (powerup2 != null) {
         boost_price3 = powerup2.boost_price;
       }
     }

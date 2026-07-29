@@ -1,12 +1,12 @@
-// Module ID: 5888
-// Function ID: 51759
+// Module ID: 5906
+// Function ID: 5907
 // Name: importDefaultResult1
-// Dependencies: [5, 31, 4186, 653, 566, 664, 5889, 2]
+// Dependencies: [5, 19, 4210, 676, 589, 687, 5907, 2]
 // Exports: useGames
 
-// Module 5888 (importDefaultResult1)
-import result from "result";
-import importDefaultResult1 from "_isNativeReflectConstruct";
+// Module 5906 (importDefaultResult1)
+import noop from "noop";
+import importDefaultResult1 from "map";
 import initialize from "initialize";
 import importDefaultResult from "set";
 
@@ -14,42 +14,104 @@ const require = arg1;
 initialize = {
   getQueryId: require("ME").QueryIds.GAME,
   failureStaleAfter: 15 * require("set").Seconds.SECOND,
-  get(arg0) {
-    if (null == arg0) {
+  get(gameId) {
+    if (null == gameId) {
       return null;
-    } else if (importDefaultResult1.hasNoData(arg0)) {
-      let NO_DATA = require(566) /* initialize */.NO_DATA;
     } else {
-      const game = importDefaultResult1.getGame(arg0);
-      NO_DATA = null;
-      if (null != game) {
-        NO_DATA = game;
+      if (importDefaultResult1.hasNoData(gameId)) {
+        let NO_DATA = require(589) /* initialize */.NO_DATA;
+      } else {
+        NO_DATA = obj.getGame(gameId);
+        if (NO_DATA == null) {
+          NO_DATA = null;
+        }
+      }
+      obj = importDefaultResult1;
+    }
+  },
+  load: null,
+  getIsLoading: null,
+  getError: null
+};
+let closure_2 = require("set")((arg0) => {
+  let closure_0 = arg0;
+  let c2 = 0;
+  let c1 = 0;
+  return (function*(arg0) {
+    if (table === 2) {
+      table = 3;
+      HermesBuiltin.throwTypeError();
+    } else if (tmp3 === 3) {
+      if (arg0 === 1) {
+        throw arg1;
+      } else if (arg0 === 2) {
+        let obj = { value: null, done: true };
+        obj[0] = arg1;
+        return obj;
+      } else {
+        return { value: "HermesInternal", done: null };
+      }
+    } else {
+      try {
+        table = 2;
+        if (0 === c2) {
+          if (arg0 === 1) {
+            table = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            table = 3;
+            obj = { value: null, done: true };
+            obj[0] = arg1;
+            return obj;
+          } else if (null != callback) {
+            let obj1 = callback(table[6]);
+            const items = [tmp5];
+            c2 = 1;
+            table = 1;
+            obj1 = { value: null, done: false };
+            obj1[0] = obj1.fetchGamesWithSupplementalData(items);
+            return obj1;
+          }
+        } else if (arg0 === 1) {
+          table = 3;
+          throw arg1;
+        } else if (arg0 === 2) {
+          table = 3;
+          obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
+        }
+        table = 3;
+        return { value: "HermesInternal", done: null };
+      } catch (tmp9) {
+        table = tmp;
+        throw tmp9;
       }
     }
-  }
-};
-let closure_2 = require("set")(async (arg0) => {
-  if (null != arg0) {
-    const items = [arg0];
-    yield outer1_0(outer1_1[6]).fetchGamesWithSupplementalData(items);
-    const obj = outer1_0(outer1_1[6]);
-  }
+  })();
 });
-initialize.load = function() {
-  return callback(...arguments);
+initialize[3] = function() {
+  const self = this;
+  const apply = closure_2.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
 };
-initialize.getIsLoading = function getIsLoading(wishlistId) {
-  let isFetchingResult = null != wishlistId;
+initialize[4] = function getIsLoading(arg0) {
+  let isFetchingResult = null != arg0;
   if (isFetchingResult) {
-    isFetchingResult = importDefaultResult1.isFetching(wishlistId);
+    isFetchingResult = importDefaultResult1.isFetching(arg0);
   }
   return isFetchingResult;
 };
-initialize.getError = function getError(arg0) {
+initialize[5] = function getError(gameId) {
   let error = null;
-  if (null != arg0) {
+  if (null != gameId) {
     error = null;
-    if (importDefaultResult1.didFetchingFail(arg0)) {
+    if (importDefaultResult1.didFetchingFail(gameId)) {
       const _Error = Error;
       error = new Error("Failed to fetch game data");
     }
@@ -57,7 +119,7 @@ initialize.getError = function getError(arg0) {
   return error;
 };
 const fetchStore = initialize.createFetchStore(importDefaultResult1, initialize);
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/games/hooks/useGame.tsx");
+const result = require("map").fileFinishedImporting("modules/games/hooks/useGame.tsx");
 
 export const useGame = fetchStore;
 export const useGames = function useGames(memo) {

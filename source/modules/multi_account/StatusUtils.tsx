@@ -1,11 +1,15 @@
-// Module ID: 10236
-// Function ID: 79022
-// Name: isSameDate
-// Dependencies: [1212, 2]
+// Module ID: 10257
+// Function ID: 10258
+// Name: getStatusExpiryParts
+// Dependencies: [1236, 2]
 // Exports: getStatusExpiryParts
 
-// Module 10236 (isSameDate)
-function isSameDate(date, date1) {
+// Module 10257 (getStatusExpiryParts)
+const result = require("set").fileFinishedImporting("modules/multi_account/StatusUtils.tsx");
+
+export const getStatusExpiryParts = function getStatusExpiryParts(arg0) {
+  const date = new Date(Number(arg0));
+  const date1 = new Date();
   const fullYear = date.getFullYear();
   let tmp2 = fullYear === date1.getFullYear();
   if (tmp2) {
@@ -14,42 +18,39 @@ function isSameDate(date, date1) {
   }
   if (tmp2) {
     tmp2 = date.getDate() === date1.getDate();
-    date = date.getDate();
+    const date2 = date.getDate();
   }
-  return tmp2;
-}
-const result = require("set").fileFinishedImporting("modules/multi_account/StatusUtils.tsx");
-
-export const getStatusExpiryParts = function getStatusExpiryParts(arg0) {
-  const date = new Date(Number(arg0));
-  const date1 = new Date();
-  const date2 = new Date();
-  date2.setDate(date2.getDate() + 1);
-  const tmp3 = isSameDate(date, new Date());
-  const data = require(1212) /* getSystemLocale */.intl.data;
+  const date3 = new Date();
+  date3.setDate(date3.getDate() + 1);
+  const fullYear1 = date.getFullYear();
+  let tmp7 = fullYear1 === date3.getFullYear();
+  if (tmp7) {
+    const month1 = date.getMonth();
+    tmp7 = month1 === date3.getMonth();
+  }
+  if (tmp7) {
+    tmp7 = date.getDate() === date3.getDate();
+    const date4 = date.getDate();
+  }
+  const data = require(1236) /* getSystemLocale */.intl.data;
   const formatTimeResult = data.formatTime(date, { format: "short" });
-  let obj = {};
-  if (tmp3) {
-    obj.kind = "today";
-    const data4 = require(1212) /* getSystemLocale */.intl.data;
-    obj = { numeric: "auto" };
-    obj.dateString = data4.formatRelativeTime(0, "day", obj);
-    obj.timeString = formatTimeResult;
-    let tmp9 = obj;
-  } else if (tmp5) {
-    obj.kind = "tomorrow";
-    const data3 = require(1212) /* getSystemLocale */.intl.data;
-    const obj1 = { numeric: "auto" };
-    obj.dateString = data3.formatRelativeTime(1, "day", obj1);
-    obj.timeString = formatTimeResult;
-    tmp9 = obj;
+  if (tmp2) {
+    let obj = { kind: "today", dateString: null, timeString: null };
+    const data4 = tmp10(1236).intl.data;
+    obj[1] = data4.formatRelativeTime(0, "day", { numeric: "auto" });
+    obj[2] = formatTimeResult;
+    let obj1 = obj;
+  } else if (tmp7) {
+    obj = { kind: "tomorrow", dateString: null, timeString: null };
+    const data3 = tmp10(1236).intl.data;
+    obj[1] = data3.formatRelativeTime(1, "day", { numeric: "auto" });
+    obj[2] = formatTimeResult;
+    obj1 = obj;
   } else {
-    obj.kind = "date";
-    const data2 = require(1212) /* getSystemLocale */.intl.data;
-    const obj2 = { dateStyle: "short" };
-    obj.dateString = data2.formatDate(date, obj2);
-    obj.timeString = formatTimeResult;
-    tmp9 = obj;
+    obj1 = { kind: "date", dateString: null, timeString: null };
+    const data2 = tmp10(1236).intl.data;
+    obj1[1] = data2.formatDate(date, { dateStyle: "short" });
+    obj1[2] = formatTimeResult;
   }
-  return tmp9;
+  return obj1;
 };

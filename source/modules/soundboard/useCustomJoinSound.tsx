@@ -1,64 +1,81 @@
-// Module ID: 10758
-// Function ID: 83480
-// Name: _getCustomJoinSound
-// Dependencies: [1316, 4614, 566, 2]
+// Module ID: 10782
+// Function ID: 10783
+// Name: CustomSoundType
+// Dependencies: [1340, 4636, 589, 2]
 // Exports: getCustomJoinSound, useCustomJoinSound
 
-// Module 10758 (_getCustomJoinSound)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 10782 (CustomSoundType)
+import handleConnectionClosedOrResumed from "handleConnectionClosedOrResumed";
 import { CUSTOM_CALL_SOUND_GLOBAL_GUILD_ID as closure_3 } from "MAX_LENGTH_SOUND_NAME";
 
 const require = arg1;
-function _getCustomJoinSound(arg0, arg1) {
-  let joinSound;
-  if (null != arg1[arg0]) {
-    joinSound = tmp.joinSound;
-  }
-  let joinSound1;
-  if (null != arg1[closure_3]) {
-    joinSound1 = tmp3.joinSound;
-  }
-  if (null != joinSound) {
-    joinSound1 = joinSound;
-  }
-  if (null != joinSound1) {
-    const obj = {};
-    const merged = Object.assign(joinSound1);
-    if (null != joinSound) {
-      let GLOBAL = obj.GUILD;
-    } else {
-      GLOBAL = obj.GLOBAL;
-    }
-    obj["type"] = GLOBAL;
-  }
-}
 let obj = { GLOBAL: 0, [0]: "GLOBAL", GUILD: 1, [1]: "GUILD" };
 const result = require("initialize").fileFinishedImporting("modules/soundboard/useCustomJoinSound.tsx");
 
 export const CustomSoundType = obj;
 export const useCustomJoinSound = function useCustomJoinSound(arg0) {
   const _require = arg0;
-  const items = [_isNativeReflectConstruct];
-  return _require(566).useStateFromStores(items, () => {
+  const items = [handleConnectionClosedOrResumed];
+  return _require(589).useStateFromStores(items, () => {
     let guilds = outer1_2.settings.guilds;
     guilds = undefined;
-    if (null != guilds) {
+    if (guilds != null) {
       guilds = guilds.guilds;
     }
-    if (null == guilds) {
+    if (guilds == null) {
       guilds = {};
     }
-    return outer1_5(closure_0, guilds);
+    let joinSound;
+    if (guilds[closure_0] != null) {
+      joinSound = tmp.joinSound;
+    }
+    if (guilds[outer1_3] != null) {
+      joinSound = tmp3.joinSound;
+    }
+    let tmp4 = joinSound;
+    if (joinSound == null) {
+      tmp4 = joinSound;
+    }
+    if (null != tmp4) {
+      const obj = {};
+      const merged = Object.assign(tmp4);
+      if (null != joinSound) {
+        let GLOBAL = outer1_4.GUILD;
+      } else {
+        GLOBAL = outer1_4.GLOBAL;
+      }
+      obj.type = GLOBAL;
+    }
   });
 };
-export const getCustomJoinSound = function getCustomJoinSound(arg0) {
+export const getCustomJoinSound = function getCustomJoinSound(currentUser) {
   let guilds = settings.settings.guilds;
   guilds = undefined;
-  if (null != guilds) {
+  if (guilds != null) {
     guilds = guilds.guilds;
   }
-  if (null == guilds) {
+  if (guilds == null) {
     guilds = {};
   }
-  return _getCustomJoinSound(arg0, guilds);
+  let joinSound;
+  if (guilds[currentUser] != null) {
+    joinSound = tmp.joinSound;
+  }
+  if (guilds[closure_3] != null) {
+    joinSound = tmp3.joinSound;
+  }
+  let tmp4 = joinSound;
+  if (joinSound == null) {
+    tmp4 = joinSound;
+  }
+  if (null != tmp4) {
+    const obj = {};
+    const merged = Object.assign(tmp4);
+    if (null != joinSound) {
+      let GLOBAL = obj.GUILD;
+    } else {
+      GLOBAL = obj.GLOBAL;
+    }
+    obj.type = GLOBAL;
+  }
 };

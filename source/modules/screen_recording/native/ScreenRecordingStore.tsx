@@ -1,15 +1,15 @@
-// Module ID: 14820
-// Function ID: 112815
+// Module ID: 14846
+// Function ID: 14847
 // Name: useScreenRecordingStore
-// Dependencies: [621, 14821, 2]
+// Dependencies: [644, 14847, 2]
 
-// Module 14820 (useScreenRecordingStore)
+// Module 14846 (useScreenRecordingStore)
 import keys from "keys";
 
 let obj = keys.create((arg0, arg1) => {
   let closure_0 = arg0;
   let closure_1 = arg1;
-  let obj = {
+  return {
     isRecording: false,
     microphoneEnabled: false,
     isUploading: false,
@@ -20,19 +20,18 @@ let obj = keys.create((arg0, arg1) => {
     currentSurveyConfig: null,
     startRecording() {
       let flag = arg0;
-      let tmp = arg1;
-      let tmp2 = arg2;
       if (arg0 === undefined) {
         flag = false;
       }
-      if (tmp === undefined) {
+      let tmp = arg1;
+      if (arg1 === undefined) {
         tmp = null;
       }
-      if (tmp2 === undefined) {
+      let tmp2 = arg2;
+      if (arg2 === undefined) {
         tmp2 = null;
       }
-      const obj = { isRecording: true, microphoneEnabled: flag, currentSurveyId: tmp, currentSurveyConfig: tmp2, stepStartedTime: Date.now() };
-      return callback(obj);
+      return callback({ isRecording: true, microphoneEnabled: flag, currentSurveyId: tmp, currentSurveyConfig: tmp2, stepStartedTime: Date.now() });
     },
     stopRecording() {
       return callback({ isRecording: false, microphoneEnabled: false, currentStep: 0, stepStartedTime: null, isCompleted: false });
@@ -45,31 +44,30 @@ let obj = keys.create((arg0, arg1) => {
       const sum = tmp.currentStep + 1;
       const currentSurveyConfig = tmp.currentSurveyConfig;
       let steps;
-      if (null != currentSurveyConfig) {
+      if (currentSurveyConfig != null) {
         steps = currentSurveyConfig.steps;
       }
-      if (null == steps) {
+      if (steps == null) {
         steps = [];
       }
       if (sum >= steps.length) {
         let obj = { isCompleted: true };
       } else {
-        obj = { currentStep: sum };
+        obj = { currentStep: null, stepStartedTime: null };
+        obj[0] = sum;
         const _Date = Date;
-        obj.stepStartedTime = Date.now();
+        obj[1] = Date.now();
       }
       closure_0(obj);
     },
     resetActionSheet() {
-      const obj = { currentStep: 0, stepStartedTime: Date.now(), isCompleted: false };
-      return callback(obj);
+      return callback({ currentStep: 0, stepStartedTime: Date.now(), isCompleted: false });
     },
     completeActionSheet() {
-      callback(14821).handleStopAndSend();
+      callback(14847).handleStopAndSend();
       callback({ currentStep: 0, stepStartedTime: null, isCompleted: false });
     }
   };
-  return obj;
 });
 const result = require("set").fileFinishedImporting("modules/screen_recording/native/ScreenRecordingStore.tsx");
 

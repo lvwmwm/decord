@@ -1,78 +1,91 @@
-// Module ID: 13868
-// Function ID: 106168
+// Module ID: 13889
+// Function ID: 13890
 // Name: useIsHarvestRequestDisabled
-// Dependencies: [27, 1850, 7733, 653, 33, 677, 9202, 682, 566, 3778, 13869, 1212, 3747, 10099, 13871, 2]
-// Exports: fetchHarvestStatus
+// Dependencies: [17, 1874, 7756, 676, 21, 700, 9226, 705, 589, 3802, 13890, 1236, 3771, 10120, 13892, 2]
+// Exports: fetchHarvestStatus, useIsHarvestRequestDisabled
 
-// Module 13868 (useIsHarvestRequestDisabled)
+// Module 13889 (useIsHarvestRequestDisabled)
 import { ActivityIndicator } from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import mergeGuildAvatar from "mergeGuildAvatar";
 import ME from "ME";
 import { jsx } from "jsxProd";
-import useStoreWithEqualityFn from "useStoreWithEqualityFn";
+import identity from "identity";
 import createToggle from "createToggle";
 
+let UserSettingsSections;
+let c5;
 function useIsHarvestRequestDisabled() {
-  const items = [_isNativeReflectConstruct];
-  const stateFromStores = require(566) /* initialize */.useStateFromStores(items, () => outer1_4.getCurrentUser());
-  const obj = require(566) /* initialize */;
-  let harvestDisabledResult = callback((isRequesting) => isRequesting.isRequesting, require(3778) /* isIterable */.shallow);
-  let tmp4 = null == stateFromStores;
-  if (!tmp4) {
+  const items = [mergeGuildAvatar];
+  const stateFromStores = require(589) /* initialize */.useStateFromStores(items, () => currentUser.getCurrentUser());
+  const obj = require(589) /* initialize */;
+  const tmp = require;
+  let harvestDisabledResult = callback((isRequesting) => isRequesting.isRequesting, require(3802) /* isIterable */.shallow);
+  let tmp6 = null == stateFromStores;
+  if (!tmp6) {
     if (!harvestDisabledResult) {
-      harvestDisabledResult = require(13869) /* harvestDisabled */.harvestDisabled(tmp2, stateFromStores);
-      const obj2 = require(13869) /* harvestDisabled */;
+      harvestDisabledResult = tmp(13890).harvestDisabled(tmp4, stateFromStores);
+      const tmpResult = tmp(13890);
     }
-    tmp4 = harvestDisabledResult;
+    tmp6 = harvestDisabledResult;
   }
-  return tmp4;
+  return tmp6;
 }
-const REQUEST_DATA_LIMIT_DAYS = ME.REQUEST_DATA_LIMIT_DAYS;
-let closure_7 = useStoreWithEqualityFn.createWithEqualityFn(() => ({ isRequesting: false, harvestRequest: null }));
+({ REQUEST_DATA_LIMIT_DAYS: c5, UserSettingsSections } = ME);
+let closure_7 = identity.createWithEqualityFn(() => ({ isRequesting: false, harvestRequest: null }));
 obj = {
   useTitle() {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(require(1212) /* getSystemLocale */.t.XAHCgJ);
+    const intl = require(1236) /* getSystemLocale */.intl;
+    return intl.string(require(1236) /* getSystemLocale */.t.XAHCgJ);
   },
   parent: require("MobileSetting").MobileSetting.DATA_AND_PRIVACY,
   useTrailing: function useHarvestRequestSettingTrailing() {
     let tmp = null;
-    if ((function useIsRequestingHarvestState() {
-      return outer1_7((isRequesting) => isRequesting.isRequesting, outer1_0(outer1_2[9]).shallow);
-    })()) {
+    if (callback((isRequesting) => isRequesting.isRequesting, require(3802) /* isIterable */.shallow)) {
       tmp = <ActivityIndicator />;
     }
     return tmp;
   },
   useDescription: function useRequestYourDataSettingDescription() {
-    const tmp = (function useHarvestRequest() {
-      return outer1_7((harvestRequest) => harvestRequest.harvestRequest, outer1_0(outer1_2[9]).shallow);
-    })();
+    const tmp3 = callback((harvestRequest) => harvestRequest.harvestRequest, require(3802) /* isIterable */.shallow);
     currentUser = currentUser.getCurrentUser();
     if (null == currentUser) {
       return null;
     } else if (currentUser.isStaff()) {
-      const intl2 = require(1212) /* getSystemLocale */.intl;
-      return intl2.string(require(1212) /* getSystemLocale */.t.ZPQLH2);
-    } else if (null == tmp) {
+      const intl2 = tmp(1236).intl;
+      return intl2.string(tmp(1236).t.ZPQLH2);
+    } else if (null == tmp3) {
       return null;
     } else {
-      const addResult = importDefault(3747)(tmp.created_at).add(REQUEST_DATA_LIMIT_DAYS, "days");
+      const addResult = importDefault(3771)(tmp3.created_at).add(closure_5, "days");
       let formatToPlainStringResult = null;
-      if (!addResult.isBefore(importDefault(3747)())) {
-        const intl = require(1212) /* getSystemLocale */.intl;
-        const obj = { date: addResult.format("MMMM Do YYYY") };
-        formatToPlainStringResult = intl.formatToPlainString(require(1212) /* getSystemLocale */.t.RNDlV9, obj);
+      if (!addResult.isBefore(importDefault(3771)())) {
+        const intl = tmp(1236).intl;
+        const obj = { date: null };
+        obj[0] = addResult.format("MMMM Do YYYY");
+        formatToPlainStringResult = intl.formatToPlainString(tmp(1236).t.RNDlV9, obj);
       }
       return formatToPlainStringResult;
     }
   },
   useIsDisabled: useIsHarvestRequestDisabled,
   usePreNavigationAction() {
-    let closure_0 = useIsHarvestRequestDisabled();
+    const items = [mergeGuildAvatar];
+    const stateFromStores = require(589) /* initialize */.useStateFromStores(items, () => currentUser.getCurrentUser());
+    const obj = require(589) /* initialize */;
+    const tmp = require;
+    let harvestDisabledResult = callback((isRequesting) => isRequesting.isRequesting, require(3802) /* isIterable */.shallow);
+    let tmp6 = null == stateFromStores;
+    if (!tmp6) {
+      if (!harvestDisabledResult) {
+        harvestDisabledResult = tmp(13890).harvestDisabled(tmp4, stateFromStores);
+        const tmpResult = tmp(13890);
+      }
+      tmp6 = harvestDisabledResult;
+    }
+    require = tmp6;
     return (arg0) => {
       let flag = !closure_0;
-      if (flag) {
+      if (!closure_0) {
         arg0();
         flag = true;
       }
@@ -82,9 +95,9 @@ obj = {
   screen: obj
 };
 obj = {
-  route: ME.UserSettingsSections.REQUEST_DATA,
+  route: UserSettingsSections.REQUEST_DATA,
   getComponent() {
-    return require(13871).default;
+    return require(13892).default;
   }
 };
 const route = createToggle.createRoute(obj);
@@ -92,14 +105,14 @@ const result = require("MobileSetting").fileFinishedImporting("modules/user_sett
 
 export default route;
 export const fetchHarvestStatus = function fetchHarvestStatus() {
-  const harvestStatus = require(9202) /* saveProfileAndAccountRequest */.getHarvestStatus();
+  const harvestStatus = require(9226) /* saveProfileAndAccountRequest */.getHarvestStatus();
   harvestStatus.then((arg0) => {
-    let closure_0 = arg0;
-    outer1_0(outer1_2[7]).batchUpdates(() => {
-      outer2_7.setState({ isRequesting: false, harvestRequest: body.body });
+    const callback = arg0;
+    callback(705).batchUpdates(() => {
+      outer1_7.setState({ isRequesting: false, harvestRequest: body.body });
     });
   }, () => {
-    outer1_0(outer1_2[7]).batchUpdates(() => outer2_7.setState({ isRequesting: false }));
+    callback(705).batchUpdates(() => state.setState({ isRequesting: false }));
   });
 };
 export { useIsHarvestRequestDisabled };

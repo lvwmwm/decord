@@ -1,19 +1,19 @@
-// Module ID: 6734
-// Function ID: 59234
+// Module ID: 6755
+// Function ID: 6756
 // Name: parseMessageEmbedForProps
-// Dependencies: [1194, 6735, 653, 3747, 4352, 1212, 6736, 566, 2]
+// Dependencies: [1218, 6756, 676, 3771, 4377, 1236, 6757, 589, 2]
 // Exports: capitalizeText, getAppealSignalDisplayText, getClassificationExpiration, getClassificationRelativeIncidentTime, getRequestReviewErrorFromCode, getSpoilerFlagsForAttachment, isCurrentUserSuspended, isFlaggedContentEmpty, isGuildClassification, mapCtaToNativeData, parseMessageForProps, useIsSuspendedUser
 
-// Module 6734 (parseMessageEmbedForProps)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import SafetyHubLinks from "SafetyHubLinks";
+// Module 6755 (parseMessageEmbedForProps)
+import fetchFingerprint from "fetchFingerprint";
+import SafetyHubView from "SafetyHubView";
 import ME from "ME";
 
-let closure_4;
-let closure_5;
+let c4;
+let c5;
 let closure_6;
-let closure_7;
-let closure_8;
+let error;
+let metroImportAll;
 const require = arg1;
 function parseMessageEmbedForProps(fields) {
   if (null != fields.fields) {
@@ -22,48 +22,48 @@ function parseMessageEmbedForProps(fields) {
       arg0[rawName.rawName] = rawName.rawValue;
       return arg0;
     }, {});
-    const obj = {};
-    let str = "";
-    let str2 = "";
-    if (null != reduced[constants3.HEADER]) {
-      str2 = tmp3;
+    let str = reduced[constants3.HEADER];
+    if (str == null) {
+      str = "";
     }
-    obj.header = str2;
-    obj.icon = reduced[constants3.ICON_TYPE];
-    let tmp7 = str;
-    if (null != reduced[constants3.BODY]) {
-      tmp7 = tmp6;
+    const obj = { header: null, icon: null, body: null, ctas: null, timestamp: null, theme: null, learn_more_link: null, classification_id: null };
+    obj[0] = str;
+    obj[1] = reduced[constants3.ICON_TYPE];
+    let str2 = reduced[tmp2.BODY];
+    if (str2 == null) {
+      str2 = "";
     }
-    obj.body = tmp7;
-    if (null != reduced[constants3.CTAS]) {
-      str = tmp9;
+    obj[2] = str2;
+    let str3 = reduced[tmp2.CTAS];
+    if (str3 == null) {
+      str3 = "";
     }
-    const parts = str.split(",");
-    obj.ctas = parts.filter((arg0) => "" !== arg0);
-    let num = 0;
-    if (null != reduced[constants3.TIMESTAMP]) {
-      num = tmp12;
+    const parts = str3.split(",");
+    obj[3] = parts.filter((arg0) => "" !== arg0);
+    let num = reduced[tmp2.TIMESTAMP];
+    if (num == null) {
+      num = 0;
     }
-    obj.timestamp = parseFloat(num);
-    obj.theme = reduced[constants3.THEME];
-    obj.learn_more_link = reduced[constants3.LEARN_MORE_LINK];
-    obj.classification_id = reduced[constants3.CLASSIFICATION_ID];
+    obj[4] = parseFloat(num);
+    obj[5] = reduced[constants3.THEME];
+    obj[6] = reduced[constants3.LEARN_MORE_LINK];
+    obj[7] = reduced[constants3.CLASSIFICATION_ID];
     return obj;
   }
 }
-({ AppealIngestionSignal: closure_4, SafetySystemNotificationCtaType: closure_5, SafetySystemNotificationEmbedKeys: closure_6 } = SafetyHubLinks);
-({ AbortCodes: closure_7, MessageAttachmentFlags: closure_8 } = ME);
+({ AppealIngestionSignal: c4, SafetySystemNotificationCtaType: c5, SafetySystemNotificationEmbedKeys: closure_6 } = SafetyHubView);
+({ AbortCodes: error, MessageAttachmentFlags: metroImportAll } = ME);
 const result = require("ME").fileFinishedImporting("modules/safety_hub/SafetyHubUtils.tsx");
 
 export const getClassificationRelativeIncidentTime = function getClassificationRelativeIncidentTime(timestamp) {
-  return importDefault(3747)().to(importDefault(3747)(timestamp));
+  return importDefault(3771)().to(importDefault(3771)(timestamp));
 };
 export const getSpoilerFlagsForAttachment = function getSpoilerFlagsForAttachment(filename) {
   if (obj.isImageFile(filename.filename)) {
     let num = constants5.IS_SPOILER;
   } else {
     num = 0;
-    const obj2 = require(4352) /* urlMatchesFileExtension */;
+    const tmpResult = require(4377) /* urlMatchesFileExtension */;
   }
   return num;
 };
@@ -73,31 +73,31 @@ export const parseMessageForProps = function parseMessageForProps(message) {
 export { parseMessageEmbedForProps };
 export const mapCtaToNativeData = function mapCtaToNativeData(arg0, learn_more_link, classification_id) {
   if (constants2.LEARN_MORE_LINK === arg0) {
-    let obj = {};
-    const intl2 = require(1212) /* getSystemLocale */.intl;
-    obj.text = intl2.string(require(1212) /* getSystemLocale */.t["8/GdRB"]);
-    obj.type = constants2.LEARN_MORE_LINK;
-    let str2 = "";
-    if (null != learn_more_link) {
-      str2 = learn_more_link;
+    let str2 = learn_more_link;
+    let obj = { text: null, type: null, key: null };
+    const intl2 = require(1236) /* getSystemLocale */.intl;
+    obj[0] = intl2.string(require(1236) /* getSystemLocale */.t["8/GdRB"]);
+    obj[1] = tmp.LEARN_MORE_LINK;
+    if (learn_more_link == null) {
+      str2 = "";
     }
-    obj.key = str2;
+    obj[2] = str2;
     return obj;
-  } else if (constants2.POLICY_VIOLATION_DETAIL === arg0) {
-    obj = {};
-    const intl = require(1212) /* getSystemLocale */.intl;
-    obj.text = intl.string(require(1212) /* getSystemLocale */.t.QsqdXC);
-    obj.type = constants2.POLICY_VIOLATION_DETAIL;
-    let str = "";
-    if (null != classification_id) {
-      str = classification_id;
+  } else if (tmp.POLICY_VIOLATION_DETAIL === arg0) {
+    let str = classification_id;
+    obj = { text: null, type: null, key: null };
+    const intl = require(1236) /* getSystemLocale */.intl;
+    obj[0] = intl.string(require(1236) /* getSystemLocale */.t.QsqdXC);
+    obj[1] = tmp.POLICY_VIOLATION_DETAIL;
+    if (classification_id == null) {
+      str = "";
     }
-    obj.key = str;
+    obj[2] = str;
     return obj;
   }
 };
 export const isFlaggedContentEmpty = function isFlaggedContentEmpty(first) {
-  let tmp = first.type !== require(6736) /* ContentIdType */.ContentIdType.MESSAGE;
+  let tmp = first.type !== require(6757) /* ContentIdType */.ContentIdType.MESSAGE;
   if (!tmp) {
     let tmp2 = "" === first.content;
     if (tmp2) {
@@ -109,14 +109,14 @@ export const isFlaggedContentEmpty = function isFlaggedContentEmpty(first) {
 };
 export const getAppealSignalDisplayText = function getAppealSignalDisplayText(signal) {
   const obj = {};
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj[constants.DIDNT_VIOLATE_POLICY] = intl.string(require(1212) /* getSystemLocale */.t.mZffAi);
-  const intl2 = require(1212) /* getSystemLocale */.intl;
-  obj[constants.TOO_STRICT_UNFAIR] = intl2.string(require(1212) /* getSystemLocale */.t.wgZVAn);
-  const intl3 = require(1212) /* getSystemLocale */.intl;
-  obj[constants.DONT_AGREE_PENALTY] = intl3.string(require(1212) /* getSystemLocale */.t.eu8G4k);
-  const intl4 = require(1212) /* getSystemLocale */.intl;
-  obj[constants.SOMETHING_ELSE] = intl4.string(require(1212) /* getSystemLocale */.t.XU3s6r);
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj[constants.DIDNT_VIOLATE_POLICY] = intl.string(require(1236) /* getSystemLocale */.t.mZffAi);
+  const intl2 = require(1236) /* getSystemLocale */.intl;
+  obj[constants.TOO_STRICT_UNFAIR] = intl2.string(require(1236) /* getSystemLocale */.t.wgZVAn);
+  const intl3 = require(1236) /* getSystemLocale */.intl;
+  obj[constants.DONT_AGREE_PENALTY] = intl3.string(require(1236) /* getSystemLocale */.t.eu8G4k);
+  const intl4 = require(1236) /* getSystemLocale */.intl;
+  obj[constants.SOMETHING_ELSE] = intl4.string(require(1236) /* getSystemLocale */.t.XU3s6r);
   return obj[signal];
 };
 export const capitalizeText = function capitalizeText(description) {
@@ -139,13 +139,13 @@ export const capitalizeText = function capitalizeText(description) {
 export const isGuildClassification = function isGuildClassification(stateFromStores) {
   return null != stateFromStores && null != stateFromStores.guild_metadata;
 };
-export const getRequestReviewErrorFromCode = function getRequestReviewErrorFromCode(arg0) {
-  if (arg0 === constants4.DSA_APPEAL_REQUEST_DEFLECTION) {
-    const intl2 = require(1212) /* getSystemLocale */.intl;
-    let stringResult = intl2.string(require(1212) /* getSystemLocale */.t["0qyXXH"]);
+export const getRequestReviewErrorFromCode = function getRequestReviewErrorFromCode(code) {
+  if (code === constants4.DSA_APPEAL_REQUEST_DEFLECTION) {
+    const intl2 = require(1236) /* getSystemLocale */.intl;
+    let stringResult = intl2.string(require(1236) /* getSystemLocale */.t["0qyXXH"]);
   } else {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    stringResult = intl.string(require(1212) /* getSystemLocale */.t.aPmsx3);
+    const intl = require(1236) /* getSystemLocale */.intl;
+    stringResult = intl.string(require(1236) /* getSystemLocale */.t.aPmsx3);
   }
   return stringResult;
 };
@@ -154,14 +154,18 @@ export const getClassificationExpiration = function getClassificationExpiration(
   if (null == max_expiration_time) {
     return null;
   } else {
-    const _Date = Date;
-    const date = new Date(tmp);
-    return date;
+    try {
+      const _Date = Date;
+      const date = new Date(max_expiration_time);
+      return date;
+    } catch (err) {
+      return tmp;
+    }
   }
 };
 export const useIsSuspendedUser = function useIsSuspendedUser() {
-  const items = [_isNativeReflectConstruct];
-  return null != require(566) /* initialize */.useStateFromStores(items, () => outer1_3.getSuspendedUserToken());
+  const items = [fetchFingerprint];
+  return null != require(589) /* initialize */.useStateFromStores(items, () => suspendedUserToken.getSuspendedUserToken());
 };
 export const isCurrentUserSuspended = function isCurrentUserSuspended() {
   return null != suspendedUserToken.getSuspendedUserToken();

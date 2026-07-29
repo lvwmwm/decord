@@ -1,44 +1,16 @@
-// Module ID: 4081
-// Function ID: 33853
-// Name: getAPIEndpoint
-// Dependencies: [4082, 653, 1554, 477, 1443, 507, 1445, 4083, 2]
-// Exports: getBuildOverride, getBuildOverrideExperiments, getBuildOverrideMeta, isBuildOverrideLink, probablyHasBuildOverride, validateURL
+// Module ID: 4105
+// Function ID: 4106
+// Name: Version
+// Dependencies: [4106, 676, 1578, 500, 1467, 530, 1469, 4107, 2]
+// Exports: getAPIEndpoint, getBuildOverride, getBuildOverrideExperiments, getBuildOverrideMeta, isBuildOverrideLink, isManualBuildOverrideLink, manualOverrideLinkMeta, probablyHasBuildOverride, validateURL
 
-// Module 4081 (getAPIEndpoint)
+// Module 4105 (Version)
 import { BUILD_OVERRIDE_COOKIE_NAME as closure_4 } from "BUILD_OVERRIDE_TARGET_NAMES";
 import { PRIMARY_DOMAIN } from "ME";
 import getConstants from "getConstants";
 import set from "set";
 import set from "getConstants";
 
-function getAPIEndpoint(arg0) {
-  return "" + location.protocol + "//" + location.host + arg0;
-}
-function isManualBuildOverrideLink(value) {
-  let isMatch = null != value;
-  if (isMatch) {
-    isMatch = regExp1.test(value);
-  }
-  return isMatch;
-}
-function manualOverrideLinkMeta(url) {
-  const match = url.match(regExp1);
-  if (null != match) {
-    if (2 === match.length) {
-      let obj = require(477) /* set */;
-      obj = {};
-      obj = {};
-      const _HermesInternal = HermesInternal;
-      const obj1 = { type: "branch", id: match[1] };
-      obj["discord_" + obj.getNativePlatform()] = obj1;
-      obj.targetBuildOverride = obj;
-      obj.validForUserIds = [];
-      obj.expiresAt = "Mon, 1 Jan 2038 00:00:00 GMT";
-      return obj;
-    }
-  }
-  return null;
-}
 getConstants = getConstants.getConstants();
 if (set.isAndroid()) {
   let Version = getConstants.Version.split(" - ")[0];
@@ -49,6 +21,34 @@ if (set.isAndroid()) {
     Version = getConstants.Version;
   }
 }
+function getAPIEndpoint(c5) {
+  return "" + location.protocol + "//" + location.host + c5;
+}
+function isManualBuildOverrideLink(iter) {
+  let isMatch = null != iter;
+  if (isMatch) {
+    isMatch = regExp1.test(iter);
+  }
+  return isMatch;
+}
+function manualOverrideLinkMeta(str) {
+  const match = str.match(regExp1);
+  if (null != match) {
+    if (2 === match.length) {
+      let obj = require(500) /* set */;
+      obj = { targetBuildOverride: null, validForUserIds: null, expiresAt: "Mon, 1 Jan 2038 00:00:00 GMT" };
+      obj = {};
+      const _HermesInternal = HermesInternal;
+      const obj1 = { type: "branch", id: null };
+      obj1[1] = match[1];
+      obj["discord_" + obj.getNativePlatform()] = obj1;
+      obj[0] = obj;
+      obj[1] = [];
+      return obj;
+    }
+  }
+  return null;
+}
 const regExp = new RegExp("^https://(?:ptb\\.|canary\\.)?(discordapp|discord)\\.com/__development/link?[\\S]+$", "i");
 const regExp1 = new RegExp("^dev://branch/([\\w-./]+)$", "i");
 set = new Set(["canary.discord.com", "ptb.discord.com", "discord.com", "canary.discordapp.com", "ptb.discordapp.com", "discordapp.com"]);
@@ -57,29 +57,51 @@ const result = set.fileFinishedImporting("modules/build_overrides/BuildOverrideU
 
 export const APP_VERSION = Version;
 export { getAPIEndpoint };
-export const getBuildOverride = function getBuildOverride(code) {
-  let obj = importDefault(1443);
-  const safeParseWithQueryResult = obj.safeParseWithQuery(getAPIEndpoint("/__development/build_overrides"));
+export const getBuildOverride = function getBuildOverride() {
+  let obj = importDefault(1467);
+  const safeParseWithQueryResult = obj.safeParseWithQuery("" + location.protocol + "//" + location.host + "/__development/build_overrides");
   if (null == safeParseWithQueryResult) {
     let resolved = Promise.resolve(null);
   } else {
     safeParseWithQueryResult.search = null;
     if (Version) {
-      safeParseWithQueryResult.query.version = Version;
+      safeParseWithQueryResult.query.version = tmp3;
     }
-    const HTTP = require(507) /* _isNativeReflectConstruct */.HTTP;
-    obj = { url: importAll(1445).format(safeParseWithQueryResult), oldFormErrors: true, rejectWithError: false };
+    const HTTP = require(530) /* sendRequest */.HTTP;
+    obj = { url: null, oldFormErrors: true, rejectWithError: false };
+    obj[0] = importAll(1469).format(safeParseWithQueryResult);
     const value = HTTP.get(obj);
     resolved = value.then((body) => body.body || null, () => null);
-    const obj3 = importAll(1445);
+    const obj3 = importAll(1469);
   }
   return resolved;
 };
 export const getBuildOverrideMeta = function getBuildOverrideMeta(url) {
-  if (isManualBuildOverrideLink(url)) {
-    return Promise.resolve(manualOverrideLinkMeta(url));
+  let isMatch = null != url;
+  if (isMatch) {
+    isMatch = regExp1.test(url);
+  }
+  if (isMatch) {
+    const match = url.match(regExp1);
+    let tmp13 = null;
+    if (null != match) {
+      tmp13 = null;
+      if (2 === match.length) {
+        let obj = { targetBuildOverride: null, validForUserIds: null, expiresAt: "Mon, 1 Jan 2038 00:00:00 GMT" };
+        obj = {};
+        const _HermesInternal = HermesInternal;
+        const obj1 = { type: "branch", id: null };
+        obj1[1] = match[1];
+        obj["discord_" + require(500) /* set */.getNativePlatform()] = obj1;
+        obj[0] = obj;
+        obj[1] = [];
+        tmp13 = obj;
+        const obj4 = require(500) /* set */;
+      }
+    }
+    return Promise.resolve(tmp13);
   } else {
-    let obj = importDefault(1443);
+    obj = importDefault(1467);
     const safeParseWithQueryResult = obj.safeParseWithQuery(url);
     if (null == safeParseWithQueryResult) {
       let resolved = Promise.resolve(null);
@@ -87,15 +109,16 @@ export const getBuildOverrideMeta = function getBuildOverrideMeta(url) {
       safeParseWithQueryResult.search = null;
       safeParseWithQueryResult.query.meta = "true";
       if (Version) {
-        safeParseWithQueryResult.query.version = Version;
+        safeParseWithQueryResult.query.version = tmp16;
       }
       const _window = window;
       safeParseWithQueryResult.host = window.location.host;
-      const HTTP = require(507) /* _isNativeReflectConstruct */.HTTP;
-      obj = { url: importAll(1445).format(safeParseWithQueryResult), oldFormErrors: true, rejectWithError: false };
-      const value = HTTP.get(obj);
+      const HTTP = require(530) /* sendRequest */.HTTP;
+      let obj2 = { url: null, oldFormErrors: true, rejectWithError: false };
+      obj2 = importAll(1469);
+      obj2[0] = obj2.format(safeParseWithQueryResult);
+      const value = HTTP.get(obj2);
       resolved = value.then((body) => body.body || null, () => null);
-      const obj3 = importAll(1445);
     }
     return resolved;
   }
@@ -104,17 +127,24 @@ export const probablyHasBuildOverride = function probablyHasBuildOverride() {
   return -1 !== cookie.indexOf("" + closure_4 + "=");
 };
 export const getBuildOverrideExperiments = function getBuildOverrideExperiments() {
-  let obj = importDefault(4083);
-  const tmp = obj.parse(window.document.cookie)[closure_4];
-  if (null == tmp) {
-    obj = {};
-  } else {
-    const _JSON = JSON;
-    const _atob = atob;
-    const experiments = JSON.parse(atob(str.substring(str.indexOf(".") + 1))).$meta.experiments;
-    obj = null != experiments ? experiments : {};
+  try {
+    let experiments = importDefault(4107);
+    const _window = window;
+    const tmp5 = experiments.parse(window.document.cookie)[closure_4];
+    if (null == tmp5) {
+      experiments = {};
+    } else {
+      const _JSON = JSON;
+      const _atob = atob;
+      experiments = JSON.parse(atob(str.substring(str.indexOf(".") + 1))).$meta.experiments;
+      if (experiments == null) {
+        experiments = {};
+      }
+    }
+    return experiments;
+  } catch (err) {
+    return {};
   }
-  return obj;
 };
 export const isBuildOverrideLink = function isBuildOverrideLink(target) {
   let isMatch = null != target;
@@ -125,13 +155,18 @@ export const isBuildOverrideLink = function isBuildOverrideLink(target) {
 };
 export { isManualBuildOverrideLink };
 export { manualOverrideLinkMeta };
-export const validateURL = function validateURL(url) {
-  if (isManualBuildOverrideLink(url)) {
-    let obj = { payload: null, url };
+export const validateURL = function validateURL(target) {
+  let isMatch = null != target;
+  if (isMatch) {
+    isMatch = regExp1.test(target);
+  }
+  if (isMatch) {
+    let obj = { payload: null, url: null };
+    obj[1] = target;
     return obj;
   } else {
-    obj = importDefault(1443);
-    url = obj.safeParseWithQuery(url);
+    obj = importDefault(1467);
+    const url = obj.safeParseWithQuery(target);
     if (null == url) {
       return null;
     } else {
@@ -149,7 +184,9 @@ export const validateURL = function validateURL(url) {
               }
               continue;
             }
-            obj = { payload: url.query.s, url: importAll(1445).format(url) };
+            obj = { payload: null, url: null };
+            obj[0] = url.query.s;
+            obj[1] = importAll(1469).format(url);
             return obj;
           }
         }

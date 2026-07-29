@@ -1,31 +1,27 @@
-// Module ID: 6055
-// Function ID: 53956
-// Name: _isNativeReflectConstruct
-// Dependencies: [15, 17, 18, 6, 7, 3794, 1858, 1348, 1850, 6056, 566, 686, 2]
+// Module ID: 6073
+// Function ID: 6074
+// Name: reactionKey
+// Dependencies: [3818, 1882, 1372, 1874, 6074, 589, 6075, 709, 2]
 
-// Module 6055 (_isNativeReflectConstruct)
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_6 from "_isNativeReflectConstruct";
-import closure_7 from "_isNativeReflectConstruct";
-import closure_8 from "_isNativeReflectConstruct";
-import closure_9 from "_isNativeReflectConstruct";
-import closure_10 from "_isNativeReflectConstruct";
+// Module 6073 (reactionKey)
+import initialize from "initialize";
+import createdAt from "createdAt";
+import ensureGuildLoaded from "ensureGuildLoaded";
+import mergeGuildAvatar from "mergeGuildAvatar";
+import { Store } from "initialize";
 
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
+function reactionKey(arg0, arg1, item10022) {
+  let id;
+  let name;
+  ({ name, id } = arg1);
+  if (id == null) {
+    id = "";
   }
-  const result = _isNativeReflectConstruct();
+  return "" + arg0 + ":" + name + ":" + id + ":" + item10022;
 }
 function handleReaction(userId) {
   userId = userId.userId;
-  const ensureResult = closure_12.ensure(userId.messageId, userId.emoji, userId.reactionType);
+  const ensureResult = prototype.ensure(userId.messageId, userId.emoji, userId.reactionType);
   if ("MESSAGE_REACTION_ADD" === userId.type) {
     user = user.getUser(userId);
     if (null != user) {
@@ -37,107 +33,110 @@ function handleReaction(userId) {
     users.delete(userId);
   }
 }
-let closure_11 = {};
-let closure_12 = (() => {
-  class Reaction {
-    constructor() {
-      tmp = outer1_5(this, Reaction);
-      this.fetched = false;
-      map = new Map();
-      this.users = map;
-      return;
-    }
+let closure_6 = {};
+const items = [require("ReactionTypes").ReactionTypes.NORMAL, require("ReactionTypes").ReactionTypes.BURST];
+let prototype;
+prototype = function Reaction() {
+  const obj = Object.create(new.target.prototype);
+  obj.fetched = false;
+  obj.users = new Map();
+  return obj;
+}.prototype;
+prototype["ensure"] = function ensure(messageId, emoji, reactionType) {
+  let id;
+  let name;
+  ({ name, id } = emoji);
+  if (id == null) {
+    id = "";
   }
-  const items = [
-    {
-      key: "ensure",
-      value(arg0, arg1, arg2) {
-        let id;
-        let name;
-        ({ name, id } = arg1);
-        let str = "";
-        if (null != id) {
-          str = id;
-        }
-        const combined = "" + arg0 + ":" + name + ":" + str + ":" + arg2;
-        let tmp3 = outer1_11[combined];
-        if (null == tmp3) {
-          const prototype = Reaction.prototype;
-          tmp3 = new Reaction();
-        }
-        outer1_11[combined] = tmp3;
-        return tmp3;
-      }
+  const combined = "" + messageId + ":" + name + ":" + id + ":" + reactionType;
+  let tmp3 = dependencyMap[combined];
+  if (tmp3 == null) {
+    if (typeof prototype !== "find") {
+      HermesBuiltin.throwTypeError();
     }
-  ];
-  return callback2(Reaction, null, items);
-})();
-let tmp2 = ((Store) => {
-  class MessageReactionsStore {
-    constructor() {
-      self = this;
-      tmp = outer1_5(this, MessageReactionsStore);
-      obj = outer1_3(MessageReactionsStore);
-      tmp2 = outer1_2;
-      if (outer1_13()) {
-        tmp6 = globalThis;
-        _Reflect = Reflect;
-        tmp7 = outer1_3;
-        tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, outer1_3(self).constructor);
-      } else {
-        tmp3 = arguments;
-        tmp4 = arguments;
-        constructResult = obj(...arguments);
-      }
-      return tmp2(self, constructResult);
-    }
+    const obj = Object.create(prototype.prototype);
+    obj.fetched = false;
+    const _Map = Map;
+    const map = new Map();
+    obj.users = map;
+    tmp3 = obj;
+    const tmp4 = prototype;
   }
-  callback(MessageReactionsStore, Store);
-  let obj = {
-    key: "initialize",
-    value() {
-      this.waitFor(outer1_9, outer1_7, outer1_10);
-    }
-  };
-  const items = [obj, ];
-  obj = {
-    key: "getReactions",
-    value(channelId, messageId, emoji, limit, type) {
-      const ensureResult = outer1_12.ensure(messageId, emoji, type);
-      if (!ensureResult.fetched) {
-        const channel = outer1_9.getChannel(channelId);
-        let guildId = null;
-        if (null != channel) {
-          guildId = channel.getGuildId();
+  dependencyMap[combined] = tmp3;
+  return tmp3;
+};
+class MessageReactionsStore extends Store {
+}
+const prototype2 = MessageReactionsStore.prototype;
+prototype2["initialize"] = function initialize() {
+  this.waitFor(ensureGuildLoaded, initialize, mergeGuildAvatar);
+};
+prototype2["getKnownReactorIds"] = function getKnownReactorIds(arg0, arg1) {
+  const set = new Set();
+  const iter = arg1[Symbol.iterator]();
+  while (iter !== undefined) {
+    let tmp3 = items;
+    let tmp4 = items;
+    for (const item10022 of items) {
+      let tmp5 = dependencyMap;
+      let tmp6 = reactionKey;
+      let tmp7 = nextResult;
+      let tmp8 = dependencyMap[reactionKey(0, arg0, tmp2, item10022)];
+      if (null != tmp8) {
+        let tmp10 = tmp8;
+        let users = tmp9.users;
+        let keys = users.keys();
+        let tmp12 = keys;
+        let tmp13 = keys;
+        for (const item10037 of keys) {
+          let addResult = set.add(item10037);
+          continue;
         }
-        const obj = { channelId, messageId, emoji, limit, type };
-        const reactors = MessageReactionsStore(outer1_1[9]).getReactors(obj);
-        ensureResult.fetched = true;
-        const obj2 = MessageReactionsStore(outer1_1[9]);
       }
-      return ensureResult.users;
+      continue;
     }
-  };
-  items[1] = obj;
-  return callback2(MessageReactionsStore, items);
-})(require("initialize").Store);
-tmp2.displayName = "MessageReactionsStore";
-tmp2 = new tmp2(require("dispatcher"), {
+    continue;
+  }
+  return set;
+};
+prototype2["getReactions"] = function getReactions(channelId, messageId, emoji, closure_9, VOTE) {
+  const ensureResult = prototype.ensure(messageId, emoji, VOTE);
+  if (!ensureResult.fetched) {
+    channel = channel.getChannel(channelId);
+    let guildId = null;
+    if (null != channel) {
+      guildId = channel.getGuildId();
+    }
+    const obj = { channelId: null, messageId: null, emoji: null, limit: null, type: null };
+    obj[0] = channelId;
+    obj[1] = messageId;
+    obj[2] = emoji;
+    obj[3] = closure_9;
+    obj[4] = VOTE;
+    const reactors = importAll(6075).getReactors(obj);
+    ensureResult.fetched = true;
+    const obj2 = importAll(6075);
+  }
+  return ensureResult.users;
+};
+MessageReactionsStore.displayName = "MessageReactionsStore";
+const messageReactionsStore = new MessageReactionsStore(require("dispatcher"), {
   CONNECTION_OPEN: function handleConnectionOpen() {
-    let closure_11 = {};
+    let closure_6 = {};
   },
   MESSAGE_REACTION_ADD: handleReaction,
   MESSAGE_REACTION_REMOVE: handleReaction,
   MESSAGE_REACTION_ADD_USERS: function handleAddUserReactions(users) {
     users = users.users;
-    let closure_0 = closure_12.ensure(users.messageId, users.emoji, users.reactionType);
+    let closure_0;
+    closure_0 = prototype.ensure(users.messageId, users.emoji, users.reactionType);
     const item = users.forEach((id) => {
       users = users.users;
-      return users.set(id.id, new outer1_8(id));
+      return users.set(id.id, new outer1_3(id));
     });
   }
 });
-let result = require("_inherits").fileFinishedImporting("stores/MessageReactionsStore.tsx");
+let result = require("ensureGuildLoaded").fileFinishedImporting("stores/MessageReactionsStore.tsx");
 
-export default tmp2;
+export default messageReactionsStore;

@@ -1,10 +1,10 @@
-// Module ID: 9566
-// Function ID: 74471
+// Module ID: 9590
+// Function ID: 9591
 // Name: dismissKeyboard
-// Dependencies: [27, 2]
+// Dependencies: [17, 2]
 // Exports: dismissKeyboard
 
-// Module 9566 (dismissKeyboard)
+// Module 9590 (dismissKeyboard)
 import { Keyboard } from "get ActivityIndicator";
 
 const result = require("set").fileFinishedImporting("utils/native/KeyboardUtils.tsx");

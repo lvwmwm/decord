@@ -1,42 +1,42 @@
-// Module ID: 14740
-// Function ID: 112148
+// Module ID: 14766
+// Function ID: 14767
 // Name: get webauthn
-// Dependencies: [1212, 2]
+// Dependencies: [1236, 2]
 
-// Module 14740 (get webauthn)
+// Module 14766 (get webauthn)
 const obj = {};
 Object.defineProperty(obj, "webauthn", {
   get: () => {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(require(1212) /* getSystemLocale */.t.gTH4Dp);
+    const intl = require(1236) /* getSystemLocale */.intl;
+    return intl.string(require(1236) /* getSystemLocale */.t.gTH4Dp);
   },
   set: undefined
 });
 Object.defineProperty(obj, "totp", {
   get: () => {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(require(1212) /* getSystemLocale */.t.nXKmyf);
+    const intl = require(1236) /* getSystemLocale */.intl;
+    return intl.string(require(1236) /* getSystemLocale */.t.nXKmyf);
   },
   set: undefined
 });
 Object.defineProperty(obj, "sms", {
   get: () => {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(require(1212) /* getSystemLocale */.t.ZbVwZW);
+    const intl = require(1236) /* getSystemLocale */.intl;
+    return intl.string(require(1236) /* getSystemLocale */.t.ZbVwZW);
   },
   set: undefined
 });
 Object.defineProperty(obj, "password", {
   get: () => {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(require(1212) /* getSystemLocale */.t["8F6hKS"]);
+    const intl = require(1236) /* getSystemLocale */.intl;
+    return intl.string(require(1236) /* getSystemLocale */.t["8F6hKS"]);
   },
   set: undefined
 });
 Object.defineProperty(obj, "backup", {
   get: () => {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(require(1212) /* getSystemLocale */.t.vhSRKf);
+    const intl = require(1236) /* getSystemLocale */.intl;
+    return intl.string(require(1236) /* getSystemLocale */.t.vhSRKf);
   },
   set: undefined
 });

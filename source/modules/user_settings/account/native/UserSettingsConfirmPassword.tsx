@@ -1,39 +1,41 @@
-// Module ID: 9205
-// Function ID: 72045
+// Module ID: 9229
+// Function ID: 9230
 // Name: UserSettingsConfirmPasswordWrapped
-// Dependencies: [5, 57, 31, 27, 1850, 653, 33, 4165, 689, 6309, 566, 6485, 4064, 1184, 1212, 9206, 4161, 8971, 8975, 4578, 2]
+// Dependencies: [5, 32, 19, 17, 1874, 676, 21, 4189, 712, 6330, 589, 6506, 4088, 1208, 1236, 9230, 4185, 8995, 8999, 4600, 2]
 // Exports: UserSettingsConfirmPasswordWrapped
 
-// Module 9205 (UserSettingsConfirmPasswordWrapped)
+// Module 9229 (UserSettingsConfirmPasswordWrapped)
 import ME from "ME";
 import _slicedToArray from "_slicedToArray";
-import importAllResult from "result";
-import get_ActivityIndicator from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import importAllResult from "Button";
+import get_ActivityIndicator from "module_8995";
+import mergeGuildAvatar from "mergeGuildAvatar";
 import { UserSettingsSections } from "ME";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_10;
-let closure_11;
+let c10;
 let closure_6;
-let closure_7;
+let error;
+let unpackModuleId;
 const require = arg1;
-({ View: closure_6, ScrollView: closure_7 } = get_ActivityIndicator);
-({ jsx: closure_10, jsxs: closure_11 } = jsxProd);
-let obj = {};
-obj = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW };
-obj.background = obj;
-obj.container = { paddingVertical: 12, paddingHorizontal: 16 };
-obj.title = { textAlign: "center" };
-obj.prompt = { marginTop: 8, lineHeight: 18, textAlign: "center" };
-obj.input = { marginTop: 24 };
-_createForOfIteratorHelperLoose = { borderRadius: require("_createForOfIteratorHelperLoose").radii.lg };
-obj.redesignInput = _createForOfIteratorHelperLoose;
-obj.button = { marginTop: 16 };
-obj.hint = { color: require("_createForOfIteratorHelperLoose").unsafe_rawColors.RED_400 };
-let closure_12 = _createForOfIteratorHelperLoose.createStyles(obj);
-const forwardRefResult = importAllResult.forwardRef((arg0, arg1) => {
+let c5 = importAllResult;
+({ View: closure_6, ScrollView: error } = get_ActivityIndicator);
+({ jsx: c10, jsxs: unpackModuleId } = jsxProd);
+let obj = { background: null, container: null, title: null, prompt: null, input: null, redesignInput: null, button: null, hint: null };
+obj = { backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW };
+obj[0] = obj;
+obj[1] = { paddingVertical: 12, paddingHorizontal: 16 };
+obj[2] = { textAlign: "center" };
+obj[3] = { marginTop: 8, lineHeight: 18, textAlign: "center" };
+obj[4] = { marginTop: 24 };
+createCacheKey = { borderRadius: require("Themes").radii.lg };
+obj[5] = createCacheKey;
+obj[6] = { marginTop: 16 };
+obj[7] = { color: require("Themes").unsafe_rawColors.RED_400 };
+let closure_12 = createCacheKey.createStyles(obj);
+const forwardRefResult = importAllResult.forwardRef((arg0, ref) => {
+  let c3;
   let c5;
   let dependencyMap;
   let hideUnverifiedBanner;
@@ -42,6 +44,7 @@ const forwardRefResult = importAllResult.forwardRef((arg0, arg1) => {
   let parentLoading;
   let require;
   let style;
+  let tmp7;
   ({ onSubmit: require, onSuccess: importDefault, onError: dependencyMap, parentLoading } = arg0);
   if (parentLoading === undefined) {
     parentLoading = false;
@@ -50,107 +53,228 @@ const forwardRefResult = importAllResult.forwardRef((arg0, arg1) => {
   if (hideUnverifiedBanner === undefined) {
     hideUnverifiedBanner = false;
   }
-  let ME;
-  let first1;
-  function handleSubmit() {
-    return _handleSubmit(...arguments);
-  }
+  c3 = undefined;
+  let first;
   function _handleSubmit() {
-    // CreateGeneratorClosureLongIndex (0x67)
-    const obj = callback(tmp);
-    return obj(...arguments);
+    const self = this;
+    const tmp = _undefined(function*() {
+      if (v02 === 2) {
+        v02 = 3;
+        HermesBuiltin.throwTypeError();
+      } else if (tmp7 === 3) {
+        if (arg0 === 1) {
+          throw arg1;
+        } else if (arg0 === 2) {
+          let obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
+        } else {
+          return { value: "HermesInternal", done: null };
+        }
+      } else {
+        try {
+          v02 = 2;
+          if (0 === c4) {
+            if (arg0 === 1) {
+              v02 = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              v02 = 3;
+              obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            } else {
+              let lib = tmp4;
+              let closure_0 = tmp8;
+              closure_0 = undefined;
+              v0(true);
+              v0 = 2;
+              c4 = 3;
+              v02 = 1;
+              const obj1 = { value: null, done: false };
+              obj1[0] = outer1_0(c4);
+              return obj1;
+            }
+          } else if (1 === tmp8) {
+            v0 = 0;
+            v0(false);
+            throw callback;
+          } else {
+            if (2 === tmp8) {
+              v0 = 1;
+              lib = callback;
+              let obj3 = outer1_1(outer1_2[13]);
+              obj3.captureException(lib);
+              const intl = outer1_0(outer1_2[14]).intl;
+              if (lib.message !== intl.string(outer1_0(outer1_2[14]).t.N2yb9a)) {
+                const v6OrEarlierAPIError = new outer1_0(outer1_2[12]).V6OrEarlierAPIError(outer1_1);
+                v02(v6OrEarlierAPIError);
+              }
+              if (outer1_2 != null) {
+                outer1_2();
+              }
+            } else if (arg0 === 1) {
+              v02 = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              v0 = 0;
+              v0(false);
+              v02 = 3;
+              const obj2 = { value: null, done: true };
+              obj2[0] = arg1;
+              return obj2;
+            } else {
+              closure_0 = arg1;
+              if (null == closure_0) {
+                if (callback != null) {
+                  callback();
+                }
+                v0 = 0;
+                v0(false);
+                v02 = 3;
+                obj3 = { value: null, done: true };
+                obj3[0] = undefined;
+                return obj3;
+              } else {
+                if (closure_0.status < 400) {
+                  lib();
+                  v0 = 1;
+                }
+                const v6OrEarlierAPIError1 = new outer1_0(outer1_2[12]).V6OrEarlierAPIError(closure_0);
+                v02(v6OrEarlierAPIError1);
+                if (callback != null) {
+                  callback();
+                }
+                v0 = 0;
+                v0(false);
+                v02 = 3;
+                obj = { value: null, done: true };
+                obj[0] = undefined;
+                return obj;
+              }
+            }
+            v0 = 0;
+            v0(false);
+            v02 = 3;
+          }
+        } catch (tmp75) {
+          callback = tmp75;
+          if (tmp5 === v0) {
+            v02 = tmp3;
+            throw tmp75;
+          } else if (tmp2 === tmp77) {
+            c4 = tmp2;
+          } else {
+            c4 = tmp;
+          }
+        }
+      }
+    });
+    const _handleSubmit = tmp;
+    const apply = tmp.apply;
+    if (typeof apply === "unknown") {
+      let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+    } else {
+      applyArgumentsResult = apply(self, arguments);
+    }
+    return applyArgumentsResult;
   }
-  const tmp = callback2();
-  const imperativeHandle = importAllResult.useImperativeHandle(arg1, () => ({}));
-  let obj = require(566) /* initialize */;
-  const items = [_isNativeReflectConstruct];
-  const stateFromStores = obj.useStateFromStores(items, () => outer1_8.getCurrentUser());
-  const tmp4 = first1(undefined.useState(false), 2);
-  let first = tmp4[0];
-  ME = tmp4[1];
-  const tmp6 = first1(undefined.useState(""), 2);
-  first1 = tmp6[0];
-  [obj2, c5] = first1(undefined.useState(null), 2);
+  let tmp = callback2();
+  const imperativeHandle = importAllResult.useImperativeHandle(ref, () => ({}));
+  let obj = require(589) /* initialize */;
+  const items = [mergeGuildAvatar];
+  const stateFromStores = obj.useStateFromStores(items, () => currentUser.getCurrentUser());
+  [tmp7, c3] = first(undefined.useState(false), 2);
+  const tmp8 = first(undefined.useState(""), 2);
+  first = tmp8[0];
+  const tmp6 = first(undefined.useState(false), 2);
+  [obj2, c5] = first(undefined.useState(null), 2);
   const effect = importAllResult.useEffect(() => {
-    let obj = outer1_0(outer1_2[11]);
-    obj = { destinationPane: outer1_9.ACCOUNT_CONFIRM_PASSWORD };
+    let obj = callback(table[11]);
+    obj = { destinationPane: constants.ACCOUNT_CONFIRM_PASSWORD };
     const result = obj.trackUserSettingsPaneViewed(obj);
   }, []);
-  let tmp11Result = null;
+  let tmp13Result = null;
   if (null != stateFromStores) {
-    obj = { style: null, keyboardShouldPersistTaps: "handled", alwaysBounceVertical: false };
+    obj = { style: null, keyboardShouldPersistTaps: "handled", alwaysBounceVertical: false, children: null };
     const items1 = [tmp.background, style];
-    obj.style = items1;
-    let tmp13 = null;
+    obj[0] = items1;
+    let tmp15 = null;
     if (!hideUnverifiedBanner) {
-      tmp13 = callback(importDefault(9206), {});
+      tmp15 = callback(importDefault(9230), {});
     }
-    const items2 = [tmp13, ];
-    obj = { style: tmp.container };
-    const obj1 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary" };
-    const intl = require(1212) /* getSystemLocale */.intl;
-    obj1.children = intl.string(require(1212) /* getSystemLocale */.t["x+d9t3"]);
-    const items3 = [callback(require(4161) /* Text */.Text, obj1), , , , ];
-    obj2 = { style: tmp.prompt, variant: "text-sm/medium", color: "text-default" };
-    const intl2 = require(1212) /* getSystemLocale */.intl;
-    obj2.children = intl2.string(require(1212) /* getSystemLocale */.t.vaZmAx);
-    items3[1] = callback(require(4161) /* Text */.Text, obj2);
-    const obj3 = { style: null, textStyle: null, label: null, textContentType: "password", keyboardType: "default", secureTextEntry: true };
-    ({ input: obj7.style, redesignInput: obj7.textStyle } = tmp);
-    const intl3 = require(1212) /* getSystemLocale */.intl;
-    obj3.label = intl3.string(require(1212) /* getSystemLocale */.t["CIGa+7"]);
-    obj3.value = first1;
-    obj3.onChangeText = tmp6[1];
-    obj3.onSubmitEditing = handleSubmit;
+    function handleSubmit() {
+      const self = this;
+      const apply = _handleSubmit.apply;
+      if (typeof apply === "unknown") {
+        let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+      } else {
+        applyArgumentsResult = apply(self, arguments);
+      }
+      return applyArgumentsResult;
+    }
+    const items2 = [tmp15, ];
+    obj = { style: null, children: null };
+    obj[0] = tmp.container;
+    let obj1 = { style: null, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: null };
+    obj1[0] = tmp.title;
+    let intl = tmp3(1236).intl;
+    obj1[4] = intl.string(tmp3(1236).t["x+d9t3"]);
+    const items3 = [callback(tmp3(4185).Text, obj1), , , , ];
+    obj2 = { style: null, variant: "text-sm/medium", color: "text-default", children: null };
+    obj2[0] = tmp.prompt;
+    const intl2 = tmp3(1236).intl;
+    obj2[3] = intl2.string(tmp3(1236).t.vaZmAx);
+    items3[1] = callback(tmp3(4185).Text, obj2);
+    let obj3 = { style: null, textStyle: null, label: null, textContentType: "password", keyboardType: "default", secureTextEntry: true, value: null, onChangeText: null, onSubmitEditing: null, error: null, returnKeyType: "done", autoCapitalize: "none", autoFocus: true };
+    ({ input: obj7[0], redesignInput: obj7[1] } = tmp);
+    const intl3 = tmp3(1236).intl;
+    obj3[2] = intl3.string(tmp3(1236).t["CIGa+7"]);
+    obj3[6] = first;
+    obj3[7] = tmp8[1];
+    obj3[8] = handleSubmit;
     let fieldMessage;
-    if (null != obj1) {
+    if (obj1 != null) {
       fieldMessage = obj1.getFieldMessage("password");
     }
-    obj3.error = fieldMessage;
-    obj3.returnKeyType = "done";
-    obj3.autoCapitalize = "none";
-    obj3.autoFocus = true;
-    items3[2] = callback(importDefault(8971), obj3);
-    let tmp25 = null;
+    obj3[9] = fieldMessage;
+    items3[2] = callback(importDefault(8995), obj3);
+    let tmp19Result = null;
     if (null != obj1) {
-      tmp25 = null;
+      tmp19Result = null;
       if (null == obj1.getFieldMessage("password")) {
-        const obj4 = { style: tmp.hint, children: obj1.message };
-        tmp25 = callback(importDefault(8975), obj4);
+        const obj4 = { style: null, children: null };
+        obj4[0] = tmp.hint;
+        obj4[1] = obj1.message;
+        tmp19Result = tmp19(tmp20(8999), obj4);
       }
     }
-    items3[3] = tmp25;
-    const obj5 = { style: tmp.button };
-    const obj6 = { variant: "primary", size: "lg" };
-    const intl4 = require(1212) /* getSystemLocale */.intl;
-    obj6.text = intl4.string(require(1212) /* getSystemLocale */.t.i4jeWR);
-    obj6.onPress = handleSubmit;
-    if (!first) {
-      first = parentLoading;
-    }
-    obj6.loading = first;
-    obj5.children = callback(require(4578) /* Button */.Button, obj6);
+    items3[3] = tmp19Result;
+    const obj5 = { style: null, children: null };
+    obj5[0] = tmp.button;
+    const obj6 = { variant: "primary", size: "lg", text: null, onPress: null, loading: null };
+    const intl4 = tmp3(1236).intl;
+    obj6[2] = intl4.string(tmp3(1236).t.i4jeWR);
+    obj6[3] = handleSubmit;
+    obj6[4] = tmp7;
+    obj5[1] = callback(tmp3(4600).Button, obj6);
     items3[4] = callback(_handleSubmit, obj5);
-    obj.children = items3;
+    obj[1] = items3;
     items2[1] = closure_11(_handleSubmit, obj);
-    obj.children = items2;
-    tmp11Result = closure_11(closure_7, obj);
-    const tmp11 = closure_11;
-    const tmp12 = closure_7;
-    const tmp17 = closure_11;
-    const tmp18 = _handleSubmit;
-    const tmp19 = callback;
-    const tmp23 = importDefault(8971);
-    const tmp30 = _handleSubmit;
+    obj[3] = items2;
+    tmp13Result = tmp13(closure_7, obj);
+    const tmp14 = closure_7;
+    tmp20 = importDefault;
+    const tmp21 = importDefault(8995);
   }
-  return tmp11Result;
+  return tmp13Result;
 });
-const obj2 = { color: require("_createForOfIteratorHelperLoose").unsafe_rawColors.RED_400 };
-let result = require("result").fileFinishedImporting("modules/user_settings/account/native/UserSettingsConfirmPassword.tsx");
+let obj2 = { color: require("Themes").unsafe_rawColors.RED_400 };
+let result = require("noop").fileFinishedImporting("modules/user_settings/account/native/UserSettingsConfirmPassword.tsx");
 
 export default forwardRefResult;
 export const UserSettingsConfirmPasswordWrapped = function UserSettingsConfirmPasswordWrapped() {
-  let obj = require(6309) /* useSettingNavigationRoute */;
+  let obj = require(6330) /* useSettingNavigationRoute */;
   obj = {};
   const merged = Object.assign(obj.useSettingNavigationRoute().params);
   return callback(closure_13, obj);

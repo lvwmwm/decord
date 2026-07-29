@@ -1,37 +1,288 @@
-// Module ID: 16669
-// Function ID: 129859
+// Module ID: 16705
+// Function ID: 16706
 // Name: _getCurrentTask
-// Dependencies: [5, 653, 4977, 480, 4065, 2]
+// Dependencies: [5, 676, 4999, 503, 4089, 2]
 // Exports: completeTask, getCurrentTask, resendVerificationCode
 
-// Module 16669 (_getCurrentTask)
+// Module 16705 (_getCurrentTask)
 import set from "set";
 import { Endpoints } from "ME";
 
 const require = arg1;
 function _getCurrentTask() {
-  // CreateGeneratorClosureLongIndex (0x67)
-  const obj = callback(tmp);
-  return obj(...arguments);
+  const self = this;
+  const tmp = callback(function*() {
+    if (dependencyMap === 2) {
+      dependencyMap = 3;
+      HermesBuiltin.throwTypeError();
+    } else if (tmp3 === 3) {
+      if (arg0 === 1) {
+        throw arg1;
+      } else if (arg0 === 2) {
+        let obj = { value: null, done: true };
+        obj[0] = arg1;
+        return obj;
+      } else {
+        return { value: "HermesInternal", done: null };
+      }
+    } else {
+      try {
+        dependencyMap = 2;
+        if (0 === v0) {
+          if (arg0 === 1) {
+            dependencyMap = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            dependencyMap = 3;
+            obj = { value: null, done: true };
+            obj[0] = arg1;
+            return obj;
+          } else {
+            let closure_0 = tmp4;
+            closure_0 = undefined;
+            const obj1 = { url: null, trackedActionData: null, rejectWithError: true };
+            obj1[0] = outer1_4.SAFETY_FLOWS_TASK;
+            const obj2 = { event: null };
+            obj2[0] = outer1_0(503).NetworkActionNames.USER_VERIFY;
+            obj1[1] = obj2;
+            v0 = 1;
+            dependencyMap = 1;
+            const obj3 = { value: null, done: false };
+            obj3[0] = v0(4999).get(obj1);
+            return obj3;
+          }
+        } else if (arg0 === 1) {
+          dependencyMap = 3;
+          throw arg1;
+        } else if (arg0 === 2) {
+          dependencyMap = 3;
+          const obj4 = { value: null, done: true };
+          obj4[0] = arg1;
+          return obj4;
+        } else {
+          closure_0 = arg1;
+          let body = null;
+          if (204 !== closure_0.status) {
+            body = closure_0.body;
+          }
+          dependencyMap = 3;
+          obj = { value: null, done: true };
+          obj[0] = body;
+          return obj;
+        }
+      } catch (tmp10) {
+        dependencyMap = tmp;
+        throw tmp10;
+      }
+    }
+  });
+  const _getCurrentTask = tmp;
+  const apply = tmp.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
 }
 function _completeTask() {
-  // CreateGeneratorClosureLongIndex (0x67)
-  const obj = callback(tmp);
-  return obj(...arguments);
+  const self = this;
+  const tmp = callback((arg0) => {
+    let closure_0 = arg0;
+    let c2 = 0;
+    let c1 = 0;
+    return (function*(arg0, body) {
+      if (v0 === 2) {
+        v0 = 3;
+        HermesBuiltin.throwTypeError();
+      } else if (tmp3 === 3) {
+        if (arg0 === 1) {
+          throw body;
+        } else if (arg0 === 2) {
+          let obj = { value: null, done: true };
+          obj[0] = body;
+          return obj;
+        } else {
+          return { value: "HermesInternal", done: null };
+        }
+      } else {
+        try {
+          v0 = 2;
+          if (0 === dependencyMap) {
+            if (arg0 === 1) {
+              v0 = 3;
+              throw body;
+            } else if (arg0 === 2) {
+              v0 = 3;
+              obj = { value: null, done: true };
+              obj[0] = body;
+              return obj;
+            } else {
+              const obj1 = { url: null, body: null, trackedActionData: null, rejectWithError: true };
+              obj1[0] = outer1_4.SAFETY_FLOWS_TASK;
+              obj1[1] = callback;
+              const obj2 = { event: null };
+              obj2[0] = callback(503).NetworkActionNames.USER_VERIFY;
+              obj1[2] = obj2;
+              dependencyMap = 1;
+              v0 = 1;
+              const obj3 = { value: null, done: false };
+              obj3[0] = v0(4999).post(obj1);
+              return obj3;
+            }
+          } else if (arg0 === 1) {
+            v0 = 3;
+            throw body;
+          } else if (arg0 === 2) {
+            v0 = 3;
+            const obj4 = { value: null, done: true };
+            obj4[0] = body;
+            return obj4;
+          } else {
+            v0 = 3;
+            obj = { value: null, done: true };
+            obj[0] = body.body;
+            return obj;
+          }
+        } catch (tmp5) {
+          v0 = tmp;
+          throw tmp5;
+        }
+      }
+    })();
+  });
+  const _completeTask = tmp;
+  const apply = tmp.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
 }
 function _resendVerificationCode() {
-  // CreateGeneratorClosureLongIndex (0x67)
-  const obj = callback(tmp);
-  return obj(...arguments);
+  const self = this;
+  const tmp = callback((arg0) => {
+    let closure_0 = arg0;
+    let c5 = 0;
+    let c6 = 0;
+    let c4 = 0;
+    return (function*(arg0) {
+      if (c6 === 2) {
+        c6 = 3;
+        HermesBuiltin.throwTypeError();
+      } else if (tmp6 === 3) {
+        if (arg0 === 1) {
+          throw arg1;
+        } else if (arg0 === 2) {
+          let obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
+        } else {
+          return { value: "HermesInternal", done: null };
+        }
+      } else {
+        try {
+          c6 = 2;
+          if (0 === c5) {
+            if (arg0 === 1) {
+              c6 = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              c6 = 3;
+              obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            } else {
+              const table = tmp3;
+              const callback2 = tmp7;
+              let constants = 1;
+              let obj5 = outer1_1(outer1_2[2]);
+              const obj1 = { url: null, body: null, trackedActionData: null, rejectWithError: true };
+              obj1[0] = constants.SAFETY_FLOWS_RESEND_VERIFICATION_CODE;
+              const obj2 = { flow_id: null };
+              obj2[0] = callback;
+              obj1[1] = obj2;
+              const obj3 = { event: null };
+              obj3[0] = callback(outer1_2[3]).NetworkActionNames.USER_VERIFY;
+              obj1[2] = obj3;
+              c5 = 2;
+              c6 = 1;
+              const obj4 = { value: null, done: false };
+              obj4[0] = obj5.post(obj1);
+              return obj4;
+            }
+          } else if (1 === tmp7) {
+            constants = 0;
+            callback = set;
+            const tmp17 = new callback2(table[4])(callback);
+            throw tmp17;
+          } else if (arg0 === 1) {
+            c6 = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            constants = 0;
+            c6 = 3;
+            obj5 = { value: null, done: true };
+            obj5[0] = arg1;
+            return obj5;
+          } else {
+            constants = 0;
+            c6 = 3;
+            obj = { value: null, done: true };
+            obj[0] = arg1;
+            return obj;
+          }
+        } catch (tmp19) {
+          set = tmp19;
+          if (tmp4 === constants) {
+            c6 = tmp2;
+            throw tmp19;
+          } else {
+            c5 = tmp;
+          }
+        }
+      }
+    })();
+  });
+  const _resendVerificationCode = tmp;
+  const apply = tmp.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
 }
-const result = require("makeRequest").fileFinishedImporting("modules/safety_flows/SafetyFlowsActionCreators.tsx");
+const result = require("module_4999").fileFinishedImporting("modules/safety_flows/SafetyFlowsActionCreators.tsx");
 
 export const getCurrentTask = function getCurrentTask() {
-  return _getCurrentTask(...arguments);
+  const self = this;
+  const apply = _getCurrentTask.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
 };
 export const completeTask = function completeTask(arg0) {
-  return _completeTask(...arguments);
+  const self = this;
+  const apply = _completeTask.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
 };
-export const resendVerificationCode = function resendVerificationCode(arg0) {
-  return _resendVerificationCode(...arguments);
+export const resendVerificationCode = function resendVerificationCode(outer1_0) {
+  const self = this;
+  const apply = _resendVerificationCode.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
 };

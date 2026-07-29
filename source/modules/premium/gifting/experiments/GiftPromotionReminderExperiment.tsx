@@ -1,13 +1,14 @@
-// Module ID: 8784
-// Function ID: 69324
+// Module ID: 8808
+// Function ID: 8809
 // Name: apexExperiment
-// Dependencies: [1428, 2]
+// Dependencies: [1452, 2]
 
-// Module 8784 (apexExperiment)
+// Module 8808 (apexExperiment)
 import ApexExperiment from "ApexExperiment";
 
-const obj = { name: "2026-04-gift-promotion-reminder", kind: "user", defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } };
-const apexExperiment = ApexExperiment.createApexExperiment(obj);
+const obj = { 1: null };
+obj[1] = { enabled: true };
+const apexExperiment = ApexExperiment.createApexExperiment({ name: "2026-04-gift-promotion-reminder", kind: "user", defaultConfig: { enabled: false }, variations: obj });
 const result = require("set").fileFinishedImporting("modules/premium/gifting/experiments/GiftPromotionReminderExperiment.tsx");
 
 export default apexExperiment;

@@ -1,87 +1,91 @@
-// Module ID: 11832
-// Function ID: 91668
+// Module ID: 11857
+// Function ID: 11858
 // Name: GuildDirectoryEmpty
-// Dependencies: [31, 27, 1908, 653, 33, 4165, 689, 1557, 566, 10038, 11833, 1273, 1212, 4161, 7611, 10039, 11834, 8324, 11835, 2]
+// Dependencies: [19, 17, 1932, 676, 21, 4189, 712, 1581, 589, 10059, 11858, 1297, 1236, 4185, 7634, 10060, 11859, 8348, 11860, 2]
 // Exports: default
 
-// Module 11832 (GuildDirectoryEmpty)
-import "result";
-import get_ActivityIndicator from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 11857 (GuildDirectoryEmpty)
+import "set";
+import get_ActivityIndicator from "showInstantInviteActionSheet";
+import comparator from "comparator";
 import ME from "ME";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_3;
-let closure_4;
-let closure_7;
-let closure_8;
+let Fonts;
+let c3;
+let c4;
+let closure_6;
+let error;
+let metroImportAll;
 const require = arg1;
-({ Image: closure_3, ScrollView: closure_4 } = get_ActivityIndicator);
-const InstantInviteSources = ME.InstantInviteSources;
-({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { flex: 1, justifyContent: "flex-end", padding: 16, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW };
-_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.header = { marginBottom: 16, alignSelf: "center" };
-let obj1 = { fontFamily: ME.Fonts.PRIMARY_BOLD, color: require("_createForOfIteratorHelperLoose").colors.MOBILE_TEXT_HEADING_PRIMARY, fontSize: 24, textAlign: "center", marginBottom: 8, alignSelf: "center" };
-_createForOfIteratorHelperLoose.title = obj1;
-_createForOfIteratorHelperLoose.description = { textAlign: "center", alignSelf: "center", marginBottom: 24 };
-_createForOfIteratorHelperLoose.ctaContainer = { marginBottom: 8 };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/directory_channels/native/components/GuildDirectoryEmpty.tsx");
+({ Image: c3, ScrollView: c4 } = get_ActivityIndicator);
+({ InstantInviteSources: closure_6, Fonts } = ME);
+({ jsx: error, jsxs: metroImportAll } = jsxProd);
+createCacheKey = { container: null, header: null, title: null, description: null, ctaContainer: null };
+createCacheKey = { flex: 1, justifyContent: "flex-end", padding: 16, backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { marginBottom: 16, alignSelf: "center" };
+createCacheKey[2] = { fontFamily: Fonts.PRIMARY_BOLD, color: require("Themes").colors.MOBILE_TEXT_HEADING_PRIMARY, fontSize: 24, textAlign: "center", marginBottom: 8, alignSelf: "center" };
+createCacheKey[3] = { textAlign: "center", alignSelf: "center", marginBottom: 24 };
+createCacheKey[4] = { marginBottom: 8 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let obj1 = { fontFamily: Fonts.PRIMARY_BOLD, color: require("Themes").colors.MOBILE_TEXT_HEADING_PRIMARY, fontSize: 24, textAlign: "center", marginBottom: 8, alignSelf: "center" };
+const result = require("comparator").fileFinishedImporting("modules/directory_channels/native/components/GuildDirectoryEmpty.tsx");
 
 export default function GuildDirectoryEmpty(guild) {
   guild = guild.guild;
   const channel = guild.channel;
-  const tmp = _createForOfIteratorHelperLoose();
-  let obj = guild(566);
-  const items = [_isNativeReflectConstruct];
-  const dependencyMap = obj.useStateFromStores(items, () => outer1_5.getChannels(guild.id));
-  let obj1 = guild(10038);
-  obj = { contentContainerStyle: items1 };
+  let dependencyMap;
+  const tmp = createCacheKey();
+  let obj = guild(589);
+  const items = [comparator];
+  dependencyMap = obj.useStateFromStores(items, () => outer1_5.getChannels(guild.id));
+  let obj1 = guild(10059);
+  obj = { contentContainerStyle: items1, children: null };
   items1 = [tmp.container, ];
-  obj = { paddingBottom: channel(1557)().bottom + 16 };
+  obj = { paddingBottom: channel(1581)().bottom + 16 };
   items1[1] = obj;
-  obj1 = {};
+  obj1 = { source: null, style: null };
   const canCreateOrAddGuildInDirectory = obj1.useCanCreateOrAddGuildInDirectory(channel);
-  obj1.source = channel(11833);
-  obj1.style = tmp.header;
+  obj1[0] = channel(11858);
+  obj1[1] = tmp.header;
   const items2 = [callback(closure_3, obj1), , , , ];
-  const obj2 = { style: tmp.title, accessibilityRole: "header" };
-  const intl = guild(1212).intl;
-  obj2.children = intl.format(guild(1212).t.vyvrpC, { guildName: guild.name });
-  items2[1] = callback(guild(1273).LegacyText, obj2);
-  const obj4 = { style: tmp.description, variant: "text-sm/medium", color: "text-default" };
-  const intl2 = guild(1212).intl;
-  obj4.children = intl2.string(guild(1212).t.WypE0i);
-  items2[2] = callback(guild(4161).Text, obj4);
-  let tmp5 = null;
+  const obj2 = { style: tmp.title, accessibilityRole: "header", children: null };
+  const intl = guild(1236).intl;
+  obj2[2] = intl.format(guild(1236).t.vyvrpC, { guildName: guild.name });
+  items2[1] = callback(guild(1297).LegacyText, obj2);
+  const obj4 = { style: tmp.description, variant: "text-sm/medium", color: "text-default", children: null };
+  const intl2 = guild(1236).intl;
+  obj4[3] = intl2.string(guild(1236).t.WypE0i);
+  items2[2] = callback(guild(4185).Text, obj4);
+  let tmp8Result = null;
   if (canCreateOrAddGuildInDirectory) {
-    const obj5 = {
-      style: tmp.ctaContainer,
-      onPress() {
-          let obj = channel(10039);
-          obj = { directoryGuildName: guild.name, directoryGuildId: guild.id, directoryChannelId: channel.id };
-          return obj.open(obj);
-        },
-      iconSource: channel(11834)
+    const obj5 = { style: null, onPress: null, iconSource: null, title: null };
+    obj5[0] = tmp.ctaContainer;
+    obj5[1] = function onPress() {
+      let obj = channel(10060);
+      obj = { directoryGuildName: guild.name, directoryGuildId: guild.id, directoryChannelId: channel.id };
+      return obj.open(obj);
     };
-    const intl3 = guild(1212).intl;
-    obj5.title = intl3.string(guild(1212).t.hyK15i);
-    tmp5 = callback(guild(7611).FormCTA, obj5);
+    obj5[2] = tmp2(11859);
+    const intl3 = tmp4(1236).intl;
+    obj5[3] = intl3.string(tmp4(1236).t.hyK15i);
+    tmp8Result = tmp8(tmp4(7634).FormCTA, obj5);
   }
-  items2[3] = tmp5;
+  items2[3] = tmp8Result;
   const obj6 = {
     style: tmp.ctaContainer,
     onPress() {
-      return guild(8324).handleOpenInviteActionsheet(guild, channel.id, dependencyMap, outer1_6.HUB_EMPTY_STATE);
+      return guild(8348).handleOpenInviteActionsheet(guild, channel.id, dependencyMap, outer1_6.HUB_EMPTY_STATE);
     },
-    iconSource: channel(11835)
+    iconSource: null,
+    title: null
   };
-  const intl4 = guild(1212).intl;
-  obj6.title = intl4.string(guild(1212).t.L4bwJ9);
-  items2[4] = callback(guild(7611).FormCTA, obj6);
-  obj.children = items2;
+  obj6[2] = channel(11860);
+  const intl4 = tmp4(1236).intl;
+  obj6[3] = intl4.string(guild(1236).t.L4bwJ9);
+  items2[4] = callback(guild(7634).FormCTA, obj6);
+  obj[1] = items2;
   return closure_8(closure_4, obj);
 };

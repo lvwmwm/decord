@@ -1,10 +1,10 @@
-// Module ID: 6896
-// Function ID: 59615
+// Module ID: 6918
+// Function ID: 6919
 // Name: ChatControllersSpotIllustration
-// Dependencies: [33, 5119, 6897, 2]
+// Dependencies: [21, 5141, 6919, 2]
 // Exports: ChatControllersSpotIllustration
 
-// Module 6896 (ChatControllersSpotIllustration)
+// Module 6918 (ChatControllersSpotIllustration)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/ChatControllersSpotIllustration.native.tsx");
@@ -26,14 +26,15 @@ export const ChatControllersSpotIllustration = function ChatControllersSpotIllus
   if (num3 === undefined) {
     num3 = 1;
   }
-  let obj = { fadeDuration: 0 };
-  obj = { uri: importDefault(6897) };
-  obj.source = obj;
+  let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
+  obj = { uri: null };
+  obj[0] = importDefault(6919);
+  obj[1] = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
-  obj.style = items;
-  obj.accessible = accessible;
-  obj.accessibilityLabel = accessibilityLabel;
-  obj.resizeMode = resizeMode;
-  return jsx(importDefault(5119), { width: num * num3, height: num2 * num3 });
+  obj[2] = items;
+  obj[3] = accessible;
+  obj[4] = accessibilityLabel;
+  obj[5] = resizeMode;
+  return jsx(importDefault(5141), { width: num * num3, height: num2 * num3 });
 };

@@ -1,12 +1,12 @@
-// Module ID: 11
-// Function ID: 152
+// Module ID: 6
+// Function ID: 7
 // Name: checkLogForPII
 // Dependencies: [2]
 // Exports: checkLogForPII
 
-// Module 11 (checkLogForPII)
+// Module 6 (checkLogForPII)
 const result = require("set").fileFinishedImporting("../discord_common/js/packages/logger/LoggerPIIRestrictedObjects.tsx");
 
-export const checkLogForPII = function checkLogForPII(arg0, arg1) {
+export const checkLogForPII = function checkLogForPII(arg0) {
   const substr = [...arguments].slice();
 };

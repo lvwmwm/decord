@@ -1,40 +1,40 @@
-// Module ID: 4166
-// Function ID: 34493
-// Name: withTiming
-// Dependencies: [4167, 4168, 4026, 2]
+// Module ID: 4190
+// Function ID: 4191
+// Name: CONFIG_NEVER_ANIMATE_TIMING
+// Dependencies: [4191, 4192, 4050, 2]
+// Exports: withTiming
 
-// Module 4166 (withTiming)
-import { CONFIG_NEVER_ANIMATE_TIMING as closure_2 } from "CONFIG_NEVER_ANIMATE";
+// Module 4190 (CONFIG_NEVER_ANIMATE_TIMING)
+import { CONFIG_NEVER_ANIMATE_TIMING } from "CONFIG_NEVER_ANIMATE";
 
-let closure_3 = { code: "function withTiming_timingTsx1(toValue,config,shouldAnimate='respect-motion-settings',callback){const{accessibilityPreferencesSharedValue,CONFIG_NEVER_ANIMATE_TIMING,ReduceMotion,REAwithTiming}=this.__closure;const reducedMotionEnabled=accessibilityPreferencesSharedValue.get().reduceMotion;const animate=shouldAnimate==='animate-always'||shouldAnimate==='respect-motion-settings'&&!reducedMotionEnabled;const configForRea=!animate?CONFIG_NEVER_ANIMATE_TIMING:shouldAnimate==='animate-always'?{...(config!==null&&config!==void 0?config:{}),reduceMotion:ReduceMotion.Never}:config;return REAwithTiming(toValue,configForRea,callback);}" };
-const tmp2 = (() => {
-  export function withTiming(value, timingStandard, onComplete, fn) {
-    let str = onComplete;
-    if (onComplete === undefined) {
-      str = "respect-motion-settings";
-    }
-    const accessibilityPreferencesSharedValue = outer1_0(outer1_1[1]).accessibilityPreferencesSharedValue;
-    if ("animate-always" === str) {
-      let tmp4 = timingStandard;
-      if (tmp2) {
-        let obj = {};
-        obj = timingStandard;
-        if (null == timingStandard) {
-          obj = {};
-        }
-        const merged = Object.assign(obj);
-        obj["reduceMotion"] = outer1_0(outer1_1[2]).ReduceMotion.Never;
-        tmp4 = obj;
-      }
-      let tmp3 = tmp4;
-    } else {
-      tmp3 = outer1_2;
-    }
-    return outer1_0(outer1_1[2]).withTiming(value, tmp3, fn);
+function withTiming(value, timingStandard, fn, fn2) {
+  let str = fn;
+  if (fn === undefined) {
+    str = "respect-motion-settings";
   }
-  withTiming.__closure = { accessibilityPreferencesSharedValue: require(4168) /* mutable */.accessibilityPreferencesSharedValue, CONFIG_NEVER_ANIMATE_TIMING: closure_2, ReduceMotion: require(4026).ReduceMotion, REAwithTiming: require(4026).withTiming };
-  withTiming.__workletHash = 6710776253444;
-  withTiming.__initData = closure_3;
-  return withTiming;
-})();
-const result = require("module_4026").fileFinishedImporting("design/animation/reanimated/timing/timing.tsx");
+  const accessibilityPreferencesSharedValue = require(4192) /* mutable */.accessibilityPreferencesSharedValue;
+  if ("animate-always" === str) {
+    let tmp7 = timingStandard;
+    if (tmp4) {
+      let obj = timingStandard;
+      if (timingStandard == null) {
+        obj = {};
+      }
+      obj = {};
+      const merged = Object.assign(obj);
+      obj.reduceMotion = tmp(4050).ReduceMotion.Never;
+      tmp7 = obj;
+    }
+    let tmp5 = tmp7;
+  } else {
+    tmp5 = CONFIG_NEVER_ANIMATE_TIMING;
+  }
+  return require(4050).withTiming(value, tmp5, fn2);
+}
+withTiming.__closure = { accessibilityPreferencesSharedValue: require("mutable").accessibilityPreferencesSharedValue, CONFIG_NEVER_ANIMATE_TIMING, ReduceMotion: require("module_4050").ReduceMotion, REAwithTiming: require("module_4050").withTiming };
+withTiming.__workletHash = 6710776253444;
+withTiming.__initData = { code: "function withTiming_timingTsx1(toValue,config,shouldAnimate='respect-motion-settings',callback){const{accessibilityPreferencesSharedValue,CONFIG_NEVER_ANIMATE_TIMING,ReduceMotion,REAwithTiming}=this.__closure;const reducedMotionEnabled=accessibilityPreferencesSharedValue.get().reduceMotion;const animate=shouldAnimate==='animate-always'||shouldAnimate==='respect-motion-settings'&&!reducedMotionEnabled;const configForRea=!animate?CONFIG_NEVER_ANIMATE_TIMING:shouldAnimate==='animate-always'?{...(config!==null&&config!==void 0?config:{}),reduceMotion:ReduceMotion.Never}:config;return REAwithTiming(toValue,configForRea,callback);}" };
+let obj = { accessibilityPreferencesSharedValue: require("mutable").accessibilityPreferencesSharedValue, CONFIG_NEVER_ANIMATE_TIMING, ReduceMotion: require("module_4050").ReduceMotion, REAwithTiming: require("module_4050").withTiming };
+const result = require("module_4050").fileFinishedImporting("design/animation/reanimated/timing/timing.tsx");
+
+export { withTiming };

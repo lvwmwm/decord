@@ -1,105 +1,13 @@
-// Module ID: 5925
-// Function ID: 52393
-// Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 3802, 653, 3789, 566, 686, 2]
+// Module ID: 5944
+// Function ID: 5945
+// Name: recountRelationshipTypes
+// Dependencies: [3826, 676, 3813, 589, 709, 2]
 
-// Module 5925 (_isNativeReflectConstruct)
-import ME from "ME";
-import sortedInsert from "sortedInsert";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 5944 (recountRelationshipTypes)
+import upsertRelationship from "upsertRelationship";
 import { RelationshipTypes } from "ME";
+import { Store } from "initialize";
 
-function _isNativeReflectConstruct() {
-  let ME = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return ME;
-  }
-  const result = _isNativeReflectConstruct();
-}
-function _createForOfIteratorHelperLoose(iterable) {
-  let ME = iterable;
-  iterable = "undefined" !== typeof Symbol;
-  if (iterable) {
-    const _Symbol = Symbol;
-    iterable = iterable[Symbol.iterator];
-  }
-  if (!iterable) {
-    iterable = iterable[Symbol.iterator];
-  }
-  if (iterable) {
-    const iter = iterable.call(iterable);
-    const next = iter.next;
-    return next.bind(iter);
-  } else {
-    const _Array = Array;
-    let tmp = iterable;
-    if (!Array.isArray(iterable)) {
-      let tmp2;
-      if (iterable) {
-        if ("string" === typeof iterable) {
-          tmp2 = _arrayLikeToArray(iterable, undefined);
-        } else {
-          const toString = {}.toString;
-          const substr = toString.call(iterable).slice(8, -1);
-          let name = substr;
-          if (tmp3) {
-            name = iterable.constructor.name;
-          }
-          if ("Map" !== name) {
-            if ("Set" !== name) {
-              if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(iterable, undefined);
-              } else {
-                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
-              }
-            }
-            tmp2 = arr;
-          }
-          const _Array2 = Array;
-          arr = Array.from(iterable);
-          const callResult = toString.call(iterable);
-          tmp3 = "Object" === substr && iterable.constructor;
-        }
-      }
-      tmp = tmp2;
-      if (!tmp2) {
-        const _TypeError = TypeError;
-        const typeError = new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
-        throw typeError;
-      }
-    }
-    if (tmp) {
-      ME = tmp;
-    }
-    let c1 = 0;
-    return () => {
-      if (sortedInsert >= length.length) {
-        let obj = { done: true };
-      } else {
-        obj = { done: false };
-        sortedInsert = tmp3 + 1;
-        obj.value = length[+sortedInsert];
-      }
-      return obj;
-    };
-  }
-}
-function _arrayLikeToArray(arg0, arg1) {
-  let length;
-  if (tmp) {
-    length = arg0.length;
-  }
-  const ArrayResult = Array(length);
-  for (let num = 0; num < length; num = num + 1) {
-    ArrayResult[num] = arg0[num];
-  }
-  return ArrayResult;
-}
 function recountRelationshipTypes() {
   let c0 = 0;
   let c1 = 0;
@@ -109,211 +17,246 @@ function recountRelationshipTypes() {
     let id;
     let type;
     ({ type, id } = arg0);
-    if (type === outer1_6.FRIEND) {
-      _possibleConstructorReturn = _possibleConstructorReturn + 1;
-    } else if (type === outer1_6.PENDING_OUTGOING) {
-      sortedInsert = sortedInsert + 1;
-    } else if (type === outer1_6.PENDING_INCOMING) {
-      if (!outer1_5.isSpam(id)) {
-        if (!outer1_5.isIgnored(id)) {
-          ME = ME + 1;
+    if (type === constants.FRIEND) {
+      closure_2 = closure_2 + 1;
+    } else if (type === tmp.PENDING_OUTGOING) {
+      closure_1 = closure_1 + 1;
+    } else if (type === tmp.PENDING_INCOMING) {
+      if (!spam.isSpam(id)) {
+        if (!spam.isIgnored(id)) {
+          upsertRelationship = upsertRelationship + 1;
         }
       }
     }
   });
-  let closure_12 = c0;
-  let closure_13 = c1;
-  let closure_14 = c2;
+  let closure_7 = c0;
+  let closure_8 = c1;
+  let closure_9 = c2;
 }
-function upsert(id) {
-  const result = secondaryIndexMap.set(GAME_RELATIONSHIP_KEY(id.id, id.applicationId), id);
+function remove(arg0, arg1) {
+  if (typeof GAME_RELATIONSHIP_KEY !== "find") {
+    HermesBuiltin.throwTypeError();
+  }
+  secondaryIndexMap.delete("" + arg1 + "-" + arg0);
 }
-function remove(id, applicationId) {
-  secondaryIndexMap.delete(GAME_RELATIONSHIP_KEY(id, applicationId));
+function GAME_RELATIONSHIP_KEY(arg0, arg1) {
+
 }
-function GAME_RELATIONSHIP_KEY(id, applicationId) {
-  return "" + applicationId + "-" + id;
+function GameRelationshipIndexes_BY_APPLICATION_ID(nextResult) {
+  return "application-id-" + nextResult;
 }
-function GameRelationshipIndexes_BY_APPLICATION_ID(applicationId) {
-  return "application-id-" + applicationId;
+function GameRelationshipIndexes_BY_USER_ID(arg0) {
+
 }
-function GameRelationshipIndexes_BY_USER_ID(id) {
-  return "user-id-" + id;
+function GameRelationshipIndexes_BY_RELATIONSHIP_TYPE(arg0) {
+
 }
-function GameRelationshipIndexes_BY_RELATIONSHIP_TYPE(type) {
-  return "relationship-type-" + type;
-}
-const secondaryIndexMap = new require("sortedInsert").SecondaryIndexMap(function gameRelationshipsIndex(applicationId) {
+const secondaryIndexMap = new require("version").SecondaryIndexMap(function gameRelationshipsIndex(applicationId) {
   const items = [];
-  items.push(GameRelationshipIndexes_BY_APPLICATION_ID(applicationId.applicationId));
-  items.push(GameRelationshipIndexes_BY_USER_ID(applicationId.id));
-  items.push(GameRelationshipIndexes_BY_RELATIONSHIP_TYPE(applicationId.type));
+  if (typeof GameRelationshipIndexes_BY_APPLICATION_ID !== "find") {
+    HermesBuiltin.throwTypeError();
+  }
+  items.push("application-id-" + applicationId.applicationId);
+  if (typeof GameRelationshipIndexes_BY_USER_ID !== "find") {
+    HermesBuiltin.throwTypeError();
+  }
+  items.push("user-id-" + applicationId.id);
+  if (typeof GameRelationshipIndexes_BY_RELATIONSHIP_TYPE !== "find") {
+    HermesBuiltin.throwTypeError();
+  }
+  items.push("relationship-type-" + applicationId.type);
   return items;
 }, (since) => "" + since.since);
-let c12 = 0;
-let c13 = 0;
-let c14 = 0;
-let tmp3 = ((Store) => {
-  class GameRelationshipStore {
-    constructor() {
-      self = this;
-      tmp = GameRelationshipStore(this, GameRelationshipStore);
-      obj = outer1_3(GameRelationshipStore);
-      tmp2 = outer1_2;
-      if (outer1_15()) {
-        tmp6 = globalThis;
-        _Reflect = Reflect;
-        tmp7 = outer1_3;
-        tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, outer1_3(self).constructor);
-      } else {
-        tmp3 = arguments;
-        tmp4 = arguments;
-        constructResult = obj(...arguments);
-      }
-      return tmp2(self, constructResult);
-    }
+let c7 = 0;
+let c8 = 0;
+let c9 = 0;
+class GameRelationshipStore extends Store {
+}
+const prototype = GameRelationshipStore.prototype;
+prototype["initialize"] = function initialize() {
+  this.waitFor(upsertRelationship);
+};
+prototype["getPendingIncomingCount"] = function getPendingIncomingCount() {
+  return c7;
+};
+prototype["getPendingOutgoingCount"] = function getPendingOutgoingCount() {
+  return c8;
+};
+prototype["getGameFriendCount"] = function getGameFriendCount() {
+  return c9;
+};
+prototype["getGameFriendsForApplication"] = function getGameFriendsForApplication(arg0) {
+  if (typeof GameRelationshipIndexes_BY_APPLICATION_ID !== "find") {
+    HermesBuiltin.throwTypeError();
   }
-  callback2(GameRelationshipStore, Store);
-  let obj = {
-    key: "initialize",
-    value() {
-      this.waitFor(outer1_5);
-    }
-  };
-  const items = [obj, , , , , , , , , , , ];
-  obj = {
-    key: "getPendingIncomingCount",
-    value() {
-      return outer1_12;
-    }
-  };
-  items[1] = obj;
-  obj = {
-    key: "getPendingOutgoingCount",
-    value() {
-      return outer1_13;
-    }
-  };
-  items[2] = obj;
-  items[3] = {
-    key: "getGameFriendCount",
-    value() {
-      return outer1_14;
-    }
-  };
-  items[4] = {
-    key: "getGameFriendsForApplication",
-    value(arg0) {
-      const values = outer1_11.values(outer1_8(arg0), true);
-      return values.filter((type) => type.type === outer2_6.FRIEND);
-    }
-  };
-  items[5] = {
-    key: "getGameRelationshipsForUser",
-    value(arg0) {
-      return outer1_11.values(outer1_9(arg0), true);
-    }
-  };
-  items[6] = {
-    key: "getGameRelationshipsForUserByType",
-    value(arg0, arg1) {
-      let ME = arg1;
-      const gameRelationshipsForUser = this.getGameRelationshipsForUser(arg0);
-      return gameRelationshipsForUser.filter((type) => type.type === ME);
-    }
-  };
-  items[7] = {
-    key: "getGameFriendsForUser",
-    value(arg0) {
-      return this.getGameRelationshipsForUserByType(arg0, outer1_6.FRIEND);
-    }
-  };
-  items[8] = {
-    key: "getGameRelationshipCount",
-    value() {
-      return outer1_11.size();
-    }
-  };
-  items[9] = {
-    key: "getGameRelationships",
-    value() {
-      return outer1_11;
-    }
-  };
-  items[10] = {
-    key: "getGameRelationshipsByType",
-    value(arg0) {
-      return outer1_11.values(outer1_10(arg0), true);
-    }
-  };
-  items[11] = {
-    key: "getGameRelationshipsVersion",
-    value() {
-      return outer1_11.version;
-    }
-  };
-  return callback(GameRelationshipStore, items);
-})(require("initialize").Store);
-tmp3.displayName = "GameRelationshipStore";
-tmp3 = new tmp3(require("dispatcher"), {
+  const values = secondaryIndexMap.values("application-id-" + arg0, true);
+  return values.filter((type) => type.type === constants.FRIEND);
+};
+prototype["getGameRelationshipsForUser"] = function getGameRelationshipsForUser(upsertRelationship) {
+  if (typeof GameRelationshipIndexes_BY_USER_ID !== "find") {
+    HermesBuiltin.throwTypeError();
+  }
+  return secondaryIndexMap.values("user-id-" + upsertRelationship, true);
+};
+prototype["getGameRelationshipsForUserByType"] = function getGameRelationshipsForUserByType(upsertRelationship, FRIEND) {
+  upsertRelationship = FRIEND;
+  const gameRelationshipsForUser = this.getGameRelationshipsForUser(upsertRelationship);
+  return gameRelationshipsForUser.filter((type) => type.type === upsertRelationship);
+};
+prototype["getGameFriendsForUser"] = function getGameFriendsForUser(upsertRelationship) {
+  return this.getGameRelationshipsForUserByType(upsertRelationship, RelationshipTypes.FRIEND);
+};
+prototype["getGameRelationshipCount"] = function getGameRelationshipCount() {
+  return secondaryIndexMap.size();
+};
+prototype["getGameRelationships"] = function getGameRelationships() {
+  return secondaryIndexMap;
+};
+prototype["getGameRelationshipsByType"] = function getGameRelationshipsByType(PENDING_INCOMING) {
+  if (typeof GameRelationshipIndexes_BY_RELATIONSHIP_TYPE !== "find") {
+    HermesBuiltin.throwTypeError();
+  }
+  return secondaryIndexMap.values("relationship-type-" + PENDING_INCOMING, true);
+};
+prototype["getGameRelationshipsVersion"] = function getGameRelationshipsVersion() {
+  return secondaryIndexMap.version;
+};
+GameRelationshipStore.displayName = "GameRelationshipStore";
+const gameRelationshipStore = new GameRelationshipStore(require("dispatcher"), {
   CONNECTION_OPEN: function handleConnectionOpen(gameRelationships) {
     secondaryIndexMap.clear();
     gameRelationships = gameRelationships.gameRelationships;
     const item = gameRelationships.forEach((id) => {
-      outer1_19({ id: id.id, applicationId: id.application_id, type: id.type, since: id.since, dmAccessType: id.dm_access_type });
+      let applicationId;
+      const obj = { id: id.id, applicationId: id.application_id, type: id.type, since: id.since, dmAccessType: id.dm_access_type };
+      ({ id, applicationId } = obj);
+      if (typeof c2 !== "find") {
+        HermesBuiltin.throwTypeError();
+      }
+      const result = closure_6.set("" + applicationId + "-" + id, obj);
     });
-    recountRelationshipTypes();
+    let c0 = 0;
+    let c1 = 0;
+    let c2 = 0;
+    const values = secondaryIndexMap.values();
+    const item1 = values.forEach((arg0) => {
+      let id;
+      let type;
+      ({ type, id } = arg0);
+      if (type === constants.FRIEND) {
+        closure_2 = closure_2 + 1;
+      } else if (type === tmp.PENDING_OUTGOING) {
+        closure_1 = closure_1 + 1;
+      } else if (type === tmp.PENDING_INCOMING) {
+        if (!spam.isSpam(id)) {
+          if (!spam.isIgnored(id)) {
+            upsertRelationship = upsertRelationship + 1;
+          }
+        }
+      }
+    });
+    let closure_7 = c0;
+    let closure_8 = c1;
+    let closure_9 = c2;
   },
   GAME_RELATIONSHIP_ADD: function handleGameRelationshipAdd(gameRelationship) {
-    upsert(gameRelationship.gameRelationship);
-    recountRelationshipTypes();
+    let applicationId;
+    let id;
+    gameRelationship = gameRelationship.gameRelationship;
+    ({ id, applicationId } = gameRelationship);
+    if (typeof c2 !== "find") {
+      HermesBuiltin.throwTypeError();
+    }
+    const result = secondaryIndexMap.set("" + applicationId + "-" + id, gameRelationship);
+    let c0 = 0;
+    let c1 = 0;
+    c2 = 0;
+    const values = secondaryIndexMap.values();
+    const item = values.forEach((arg0) => {
+      let id;
+      let type;
+      ({ type, id } = arg0);
+      if (type === constants.FRIEND) {
+        closure_2 = closure_2 + 1;
+      } else if (type === tmp.PENDING_OUTGOING) {
+        closure_1 = closure_1 + 1;
+      } else if (type === tmp.PENDING_INCOMING) {
+        if (!spam.isSpam(id)) {
+          if (!spam.isIgnored(id)) {
+            upsertRelationship = upsertRelationship + 1;
+          }
+        }
+      }
+    });
+    let closure_7 = c0;
+    let closure_8 = c1;
+    let closure_9 = c2;
   },
-  GAME_RELATIONSHIP_REMOVE: function handleGameRelationshipRemove(userId) {
-    remove(userId.userId, userId.applicationId);
-    recountRelationshipTypes();
+  GAME_RELATIONSHIP_REMOVE: function handleGameRelationshipRemove(arg0) {
+    let applicationId;
+    let userId;
+    ({ userId, applicationId } = arg0);
+    if (typeof c2 !== "find") {
+      HermesBuiltin.throwTypeError();
+    }
+    secondaryIndexMap.delete("" + applicationId + "-" + userId);
+    let c0 = 0;
+    let c1 = 0;
+    c2 = 0;
+    const values = secondaryIndexMap.values();
+    const item = values.forEach((arg0) => {
+      let id;
+      let type;
+      ({ type, id } = arg0);
+      if (type === constants.FRIEND) {
+        closure_2 = closure_2 + 1;
+      } else if (type === tmp.PENDING_OUTGOING) {
+        closure_1 = closure_1 + 1;
+      } else if (type === tmp.PENDING_INCOMING) {
+        if (!spam.isSpam(id)) {
+          if (!spam.isIgnored(id)) {
+            upsertRelationship = upsertRelationship + 1;
+          }
+        }
+      }
+    });
+    let closure_7 = c0;
+    let closure_8 = c1;
+    let closure_9 = c2;
   },
   APPLICATIONS_FETCH_SUCCESS: function handleApplicationsFetchSuccess(unknownApplicationIds) {
-    let iter3;
     unknownApplicationIds = unknownApplicationIds.unknownApplicationIds;
     if (null != unknownApplicationIds) {
-      const tmp14 = _createForOfIteratorHelperLoose(unknownApplicationIds);
-      const iter5 = tmp14();
-      let iter4 = iter5;
-      if (!iter5.done) {
-        do {
-          let value = iter4.value;
-          let tmp = _createForOfIteratorHelperLoose;
-          let tmp2 = secondaryIndexMap;
-          let tmp3 = GameRelationshipIndexes_BY_APPLICATION_ID;
-          let tmp4 = _createForOfIteratorHelperLoose(secondaryIndexMap.values(GameRelationshipIndexes_BY_APPLICATION_ID(value)));
-          let iter = tmp4();
-          if (!iter.done) {
-            do {
-              value = iter.value;
-              let tmp5 = RelationshipTypes;
-              let tmp6 = value.type !== RelationshipTypes.PENDING_INCOMING;
-              if (tmp6) {
-                let tmp7 = RelationshipTypes;
-                tmp6 = value.type !== RelationshipTypes.PENDING_OUTGOING;
-              }
-              if (!tmp6) {
-                let tmp8 = remove;
-                let tmp9 = remove(value.id, value);
-              }
-              iter2 = tmp4();
-              iter = iter2;
-              let tmp10 = value;
-            } while (!iter2.done);
+      const iter = unknownApplicationIds[Symbol.iterator]();
+      const nextResult = iter.next();
+      while (iter !== undefined) {
+        let tmp5 = secondaryIndexMap;
+        let tmp6 = GameRelationshipIndexes_BY_APPLICATION_ID;
+        let tmp4 = nextResult;
+        let values = secondaryIndexMap.values(GameRelationshipIndexes_BY_APPLICATION_ID(nextResult));
+        let tmp8 = values;
+        let tmp9 = values;
+        for (const item10018 of values) {
+          let tmp10 = item10018;
+          let tmp12 = item10018.type !== RelationshipTypes.PENDING_INCOMING;
+          if (tmp12) {
+            let tmp13 = item10018;
+            tmp12 = tmp10.type !== tmp11.PENDING_OUTGOING;
           }
-          iter3 = tmp14();
-          iter4 = iter3;
-        } while (!iter3.done);
+          if (!tmp12) {
+            let tmp14 = remove;
+            let tmp15 = item10018;
+            let tmp16 = nextResult;
+            let tmp17 = remove(tmp10.id, tmp4);
+          }
+          continue;
+        }
+        continue;
       }
       recountRelationshipTypes();
     }
   }
 });
-let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/game_relationships/GameRelationshipStore.tsx");
+let result = require("version").fileFinishedImporting("modules/game_relationships/GameRelationshipStore.tsx");
 
-export default tmp3;
+export default gameRelationshipStore;

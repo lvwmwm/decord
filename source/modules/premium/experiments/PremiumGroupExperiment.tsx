@@ -1,14 +1,13 @@
-// Module ID: 11894
-// Function ID: 92015
+// Module ID: 11918
+// Function ID: 11919
 // Name: usePremiumGroupExperiment
-// Dependencies: [1428, 2]
+// Dependencies: [1452, 2]
 // Exports: default
 
-// Module 11894 (usePremiumGroupExperiment)
+// Module 11918 (usePremiumGroupExperiment)
 import ApexExperiment from "ApexExperiment";
 
-const obj = { name: "2025-12-katsudon", kind: "user", defaultConfig: { enabled: false }, variations: { [0]: { enabled: false }, [1]: { enabled: true } } };
-let closure_0 = ApexExperiment.createApexExperiment(obj);
+let closure_0 = ApexExperiment.createApexExperiment({ name: "2025-12-katsudon", kind: "user", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true } } });
 const result = require("set").fileFinishedImporting("modules/premium/experiments/PremiumGroupExperiment.tsx");
 
 export default function usePremiumGroupExperiment(location) {

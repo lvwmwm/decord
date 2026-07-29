@@ -1,29 +1,26 @@
-// Module ID: 11976
-// Function ID: 92514
+// Module ID: 12000
+// Function ID: 12001
 // Name: shouldShowActivityTimeBar
-// Dependencies: [653, 2]
+// Dependencies: [676, 2]
 // Exports: default
 
-// Module 11976 (shouldShowActivityTimeBar)
+// Module 12000 (shouldShowActivityTimeBar)
 import { ActivityTypes } from "ME";
 
 const result = require("set").fileFinishedImporting("modules/user_profile/utils/shouldShowActivityTimeBar.tsx");
 
 export default function shouldShowActivityTimeBar(type) {
-  let tmp = type.type === ActivityTypes.LISTENING;
-  if (!tmp) {
-    tmp = type.type === ActivityTypes.WATCHING;
-  }
-  if (tmp) {
+  let tmp2 = type.type === ActivityTypes.LISTENING || type.type === tmp.WATCHING;
+  if (tmp2) {
     const timestamps = type.timestamps;
     let start;
-    if (null != timestamps) {
+    if (timestamps != null) {
       start = timestamps.start;
     }
-    tmp = null != start;
+    tmp2 = null != start;
   }
-  if (tmp) {
-    tmp = null != type.timestamps.end;
+  if (tmp2) {
+    tmp2 = null != type.timestamps.end;
   }
-  return tmp;
+  return tmp2;
 };

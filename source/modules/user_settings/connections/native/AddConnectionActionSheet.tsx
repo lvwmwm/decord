@@ -1,29 +1,33 @@
-// Module ID: 13967
-// Function ID: 106725
+// Module ID: 13988
+// Function ID: 13989
 // Name: AddApplicationIdentityTableRow
-// Dependencies: [653, 4850, 33, 4165, 1273, 4101, 1557, 5741, 5503, 5221, 5220, 1212, 5223, 5198, 4133, 8941, 1392, 4011, 5500, 5497, 5517, 2]
+// Dependencies: [676, 4872, 21, 4189, 1297, 4125, 1581, 5759, 5521, 5243, 5242, 1236, 5245, 5220, 4157, 8965, 1416, 4035, 5518, 5515, 5535, 2]
 // Exports: default
 
-// Module 13967 (AddApplicationIdentityTableRow)
+// Module 13988 (AddApplicationIdentityTableRow)
 import { AnalyticsLocations } from "ME";
 import { getMigratedApplicationIdentityConnectionsScreenApplications as closure_4 } from "items1";
-import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import jsxProd from "set";
+import createCacheKey from "createCacheKey";
 import Button from "Button";
 
-let closure_5;
+let c5;
 let closure_6;
 function AddApplicationIdentityTableRow(application) {
+  let c0;
+  let canStartAuthorization;
   let end;
   let start;
   application = application.application;
+  let _require;
+  let analyticsLocations;
   ({ start, end } = application);
-  const tmp = analyticsLocations(5500)(application);
-  const startAuthorization = tmp.startAuthorization;
-  analyticsLocations = analyticsLocations(5497)(analyticsLocations(5517).ACTION_SHEET).analyticsLocations;
-  const tmp2 = analyticsLocations(5497);
-  let obj = startAuthorization(1273);
-  const iconSource = application.getIconSource(obj.getIconSize(startAuthorization(1273).IconSizes.LARGE));
+  ({ startAuthorization: c0, canStartAuthorization } = analyticsLocations(5518)(application));
+  const tmp2 = analyticsLocations(5518)(application);
+  analyticsLocations = analyticsLocations(5515)(analyticsLocations(5535).ACTION_SHEET).analyticsLocations;
+  const tmp3 = analyticsLocations(5515);
+  let obj = _require(1297);
+  const iconSource = application.getIconSource(obj.getIconSize(_require(1297).IconSizes.LARGE));
   obj = {
     start,
     end,
@@ -32,25 +36,30 @@ function AddApplicationIdentityTableRow(application) {
       let obj = analyticsLocations(outer1_2[14]);
       obj.hideActionSheet();
       obj = { analyticsLocations };
-      startAuthorization(obj);
-    }
+      _undefined(obj);
+    },
+    icon: null,
+    trailing: null,
+    disabled: null
   };
-  let tmp6 = null;
+  let tmp7Result = null;
   if (null != iconSource) {
-    obj = { source: iconSource, style: tmp3.icon, disableColor: true };
-    tmp6 = callback2(startAuthorization(1273).Icon, obj);
+    obj = { source: null, style: null, disableColor: true };
+    obj[0] = iconSource;
+    obj[1] = tmp4.icon;
+    tmp7Result = tmp7(tmp5(1297).Icon, obj);
   }
-  obj.icon = tmp6;
-  obj.trailing = callback2(startAuthorization(5198).TableRow.Arrow, {});
-  obj.disabled = !tmp.canStartAuthorization;
-  return callback2(startAuthorization(5198).TableRow, obj, application.id);
+  obj[4] = tmp7Result;
+  obj[5] = closure_5(_require(5220).TableRow.Arrow, {});
+  obj[6] = !canStartAuthorization;
+  return closure_5(_require(5220).TableRow, obj, application.id);
 }
-({ jsx: closure_5, jsxs: closure_6 } = jsxProd);
-let obj = { list: { paddingHorizontal: 16 } };
-obj = {};
-obj.borderRadius = Button.getIconSize(require("Button").Icon.Sizes.LARGE);
-obj.icon = obj;
-let closure_7 = _createForOfIteratorHelperLoose.createStyles(obj);
+({ jsx: c5, jsxs: closure_6 } = jsxProd);
+let obj = { list: { paddingHorizontal: 16 }, icon: null };
+obj = { borderRadius: null };
+obj[0] = Button.getIconSize(require("Button").Icon.Sizes.LARGE);
+obj[1] = obj;
+let closure_7 = createCacheKey.createStyles(obj);
 const result = require("jsxProd").fileFinishedImporting("modules/user_settings/connections/native/AddConnectionActionSheet.tsx");
 
 export default function AddConnectionActionSheet() {
@@ -66,53 +75,53 @@ export default function AddConnectionActionSheet() {
     return tmp;
   });
   let tmp = callback4();
-  let tmp2 = found(found1[8]);
+  const tmp2 = found(found1[8]);
   found1 = found(found1[8])(callback("AddConnectionActionSheet")).filter((arg0) => null != arg0);
-  obj = { scrollable: true, startExpanded: true };
-  obj = {};
+  obj = { scrollable: true, startExpanded: true, header: null, children: null };
+  obj = { title: null };
   const intl = _require(found1[11]).intl;
-  obj.title = intl.string(_require(found1[11]).t.Zhcj9X);
-  obj.header = callback2(_require(found1[10]).BottomSheetTitleHeader, obj);
-  const obj1 = { style: tmp.list, contentContainerStyle: { paddingBottom: found(found1[6])().bottom } };
+  obj[0] = intl.string(_require(found1[11]).t.Zhcj9X);
+  obj[2] = callback2(_require(found1[10]).BottomSheetTitleHeader, obj);
+  const obj1 = { style: tmp.list, contentContainerStyle: { paddingBottom: found(found1[6])().bottom }, children: null };
   const items = [
     found1.map((application) => {
-      const obj = { application, start: 0 === arg1 };
+      const obj = { application, start: 0 === arg1, end: null };
       let tmp3 = arg1 === found1.length - 1;
       if (tmp3) {
         tmp3 = 0 === found.length;
       }
-      obj.end = tmp3;
+      obj[2] = tmp3;
       return outer1_5(outer1_8, obj, application.id);
     }),
-    found.map((type) => {
-      type = type.type;
-      const icon = type.icon;
-      let obj = {};
-      let tmp2 = 0 === arg1;
-      if (tmp2) {
-        tmp2 = 0 === found1.length;
+    found.map((label) => {
+      const type = label.type;
+      const icon = label.icon;
+      let tmp4 = 0 === arg1;
+      if (tmp4) {
+        tmp4 = 0 === found1.length;
       }
-      obj.start = tmp2;
-      obj.end = arg1 === found.length - 1;
-      obj.label = type.name;
-      obj.onPress = function onPress() {
-        let obj = found(found1[14]);
-        obj.hideActionSheet();
-        obj = { platformType: type, location: outer2_3.USER_SETTINGS };
-        found(found1[15])(obj);
+      let obj = {
+        start: tmp4,
+        end: arg1 === found.length - 1,
+        label: label.name,
+        onPress() {
+          let obj = outer1_1(outer1_2[14]);
+          obj.hideActionSheet();
+          obj = { platformType: type, location: outer1_3.USER_SETTINGS };
+          outer1_1(outer1_2[15])(obj);
+        },
+        icon: null,
+        trailing: null
       };
-      obj = {};
-      const obj3 = callback(found1[16]);
-      const tmp = outer1_5;
-      const tmp4 = outer1_5;
-      obj.source = obj3.makeSource(callback(found1[17]).isThemeDark(type) ? icon.darkPNG : icon.lightPNG);
-      obj.disableColor = true;
-      obj.icon = tmp4(callback(found1[4]).Icon, obj);
-      obj.trailing = outer1_5(callback(found1[13]).TableRow.Arrow, {});
-      return tmp(callback(found1[13]).TableRow, obj, type);
+      let tmp2Result = tmp2(tmp3[16]);
+      tmp2Result = tmp2(tmp3[17]);
+      obj = { source: tmp2Result.makeSource(tmp2Result.isThemeDark(type) ? icon.darkPNG : icon.lightPNG), disableColor: true };
+      obj[4] = outer1_5(callback(found1[4]).Icon, obj);
+      obj[5] = outer1_5(callback(found1[13]).TableRow.Arrow, {});
+      return outer1_5(callback(found1[13]).TableRow, obj, type);
     })
   ];
-  obj1.children = items;
-  obj.children = callback3(_require(found1[12]).BottomSheetScrollView, obj1);
+  obj1[2] = items;
+  obj[3] = callback3(_require(found1[12]).BottomSheetScrollView, obj1);
   return callback2(_require(found1[9]).BottomSheet, obj);
 };

@@ -1,112 +1,231 @@
-// Module ID: 16266
-// Function ID: 125977
-// Name: _createForOfIteratorHelperLoose
-// Dependencies: [6, 7, 15, 17, 18, 4385, 1316, 1348, 7830, 653, 664, 561, 6162, 6161, 686, 5695, 5112, 2]
+// Module ID: 16301
+// Function ID: 16302
+// Name: onPostConnectionOpen
+// Dependencies: [4408, 1340, 1372, 7853, 676, 687, 5134, 584, 6180, 6179, 709, 5713, 2]
 
-// Module 16266 (_createForOfIteratorHelperLoose)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_4 from "_isNativeReflectConstruct";
-import trackInvite from "trackInvite";
-import set from "set";
-import _inherits from "_inherits";
-import closure_8 from "_isNativeReflectConstruct";
-import closure_9 from "_isNativeReflectConstruct";
-import closure_10 from "_isNativeReflectConstruct";
-import closure_11 from "_isNativeReflectConstruct";
+// Module 16301 (onPostConnectionOpen)
+import dropChannelIfEmpty from "dropChannelIfEmpty";
+import handleConnectionClosedOrResumed from "handleConnectionClosedOrResumed";
+import ensureGuildLoaded from "ensureGuildLoaded";
+import getCurrentTime from "getCurrentTime";
 import { MessageTypes } from "ME";
-import tmp2 from "AutomaticLifecycleManager";
+import "initialize";
 
-const require = arg1;
-function _createForOfIteratorHelperLoose(iterable) {
-  let closure_0 = iterable;
-  iterable = "undefined" !== typeof Symbol;
-  if (iterable) {
-    const _Symbol = Symbol;
-    iterable = iterable[Symbol.iterator];
+let require = arg1;
+let closure_8 = 10 * require("set").Millis.SECOND;
+let closure_9 = 5 * require("set").Millis.MINUTE;
+class GiftIntentReconcilingManager extends tmp2 {
+  constructor() {
+    applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
+    closure_0 = applyArgumentsResult;
+    applyArgumentsResult.actions = {
+      POST_CONNECTION_OPEN() {
+            return applyArgumentsResult.onPostConnectionOpen();
+          },
+      CHANNEL_SELECT(channelId) {
+            return applyArgumentsResult.onChannelSelect(channelId);
+          },
+      GIFT_INTENT_DISMISSALS_FETCH_SUCCESS(dismissals) {
+            return applyArgumentsResult.onReconcileSuccess(dismissals);
+          },
+      GIFT_INTENT_DISMISSALS_FETCH_FAILURE() {
+            return applyArgumentsResult.onReconcileSettled(false);
+          },
+      LOGOUT() {
+            return applyArgumentsResult.onLogout();
+          }
+    };
+    items = [, ];
+    items[0] = getCurrentTime;
+    items[1] = () => applyArgumentsResult.onPremiumGiftingIntentStoreChange();
+    items1 = [];
+    items1[0] = items;
+    map = new Map(items1);
+    applyArgumentsResult.stores = map;
+    tmp4 = new require("fails")(c8, c9);
+    applyArgumentsResult.reconcileBackoff = tmp4;
+    applyArgumentsResult.isReconciling = false;
+    applyArgumentsResult.heldGiftingPromptSystemMessage = false;
+    map1 = new Map();
+    applyArgumentsResult.lastReconciledDismissalAtMs = map1;
+    applyArgumentsResult.retryReconcileServerDismissals = function retryReconcileServerDismissals() {
+      if (applyArgumentsResult.isReconcileEligible("retryReconcileServerDismissals")) {
+        const result = applyArgumentsResult.attemptReconcileFetch();
+      }
+    };
+    return applyArgumentsResult;
   }
-  if (!iterable) {
-    iterable = iterable[Symbol.iterator];
+}
+const prototype = GiftIntentReconcilingManager.prototype;
+prototype["onPostConnectionOpen"] = function onPostConnectionOpen() {
+  const lastReconciledDismissalAtMs = this.lastReconciledDismissalAtMs;
+  lastReconciledDismissalAtMs.clear();
+  const result = this.sendGiftingPromptSystemMessagesIfEligible();
+};
+prototype["onPremiumGiftingIntentStoreChange"] = function onPremiumGiftingIntentStoreChange() {
+  const result = this.maybeReconcileServerDismissals();
+  const result1 = this.maybeRetryHeldGiftingPromptSystemMessage();
+};
+prototype["maybeReconcileServerDismissals"] = function maybeReconcileServerDismissals() {
+  const self = this;
+  if (this.isReconcileEligible("maybeReconcileServerDismissals")) {
+    if (!self.reconcileBackoff.pending) {
+      const result = self.attemptReconcileFetch();
+    }
   }
-  if (iterable) {
-    const iter = iterable.call(iterable);
-    const next = iter.next;
-    return next.bind(iter);
+};
+prototype["isReconcileEligible"] = function isReconcileEligible(maybeReconcileServerDismissals) {
+  let enabled = 0 !== store.getFriendAnniversaries().length;
+  if (enabled) {
+    const FriendshipAnniversaryBackendPersistenceExperiment = require(6180) /* apexExperiment */.FriendshipAnniversaryBackendPersistenceExperiment;
+    const obj = { location: null };
+    obj[0] = maybeReconcileServerDismissals;
+    enabled = FriendshipAnniversaryBackendPersistenceExperiment.getConfig(obj).enabled;
+  }
+  return enabled;
+};
+prototype["getServerDismissalTimestampMs"] = function getServerDismissalTimestampMs() {
+  const userContent = settings.settings.userContent;
+  let str;
+  if (userContent != null) {
+    str = userContent.lastGiftIntentDismissedAtMs;
+  }
+  if (str == null) {
+    str = "0";
+  }
+  return Number(str);
+};
+prototype["attemptReconcileFetch"] = function attemptReconcileFetch() {
+  const self = this;
+  const serverDismissalTimestampMs = this.getServerDismissalTimestampMs();
+  if (!tmp2) {
+    self.isReconciling = true;
+    const andReconcileGiftIntentDismissals = require(6179) /* fetchAndReconcileGiftIntentDismissals */.fetchAndReconcileGiftIntentDismissals(serverDismissalTimestampMs);
+    const obj = require(6179) /* fetchAndReconcileGiftIntentDismissals */;
+  }
+};
+prototype["onReconcileSuccess"] = function onReconcileSuccess(dismissals) {
+  this.onReconcileSettled(true);
+  const result = this.removeRemotelyDismissedGiftIntentCards(dismissals.dismissals);
+};
+prototype["onReconcileSettled"] = function onReconcileSettled(arg0) {
+  this.isReconciling = false;
+  const reconcileBackoff = this.reconcileBackoff;
+  if (arg0) {
+    reconcileBackoff.succeed();
   } else {
-    const _Array = Array;
-    let tmp = iterable;
-    if (!Array.isArray(iterable)) {
-      let tmp2;
-      if (iterable) {
-        if ("string" === typeof iterable) {
-          tmp2 = _arrayLikeToArray(iterable, undefined);
-        } else {
-          const toString = {}.toString;
-          const substr = toString.call(iterable).slice(8, -1);
-          let name = substr;
-          if (tmp3) {
-            name = iterable.constructor.name;
-          }
-          if ("Map" !== name) {
-            if ("Set" !== name) {
-              if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(iterable, undefined);
-              } else {
-                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+    reconcileBackoff.fail(tmp.retryReconcileServerDismissals);
+  }
+};
+prototype["removeRemotelyDismissedGiftIntentCards"] = function removeRemotelyDismissedGiftIntentCards(dismissals) {
+  const self = this;
+  const iter = dismissals[Symbol.iterator]();
+  const nextResult = iter.next();
+  while (iter !== undefined) {
+    let targetId = nextResult.targetId;
+    let tmp2 = targetId;
+    let dismissedAtMs = nextResult.dismissedAtMs;
+    let lastReconciledDismissalAtMs = self.lastReconciledDismissalAtMs;
+    let value = lastReconciledDismissalAtMs.get(targetId);
+    let tmp4 = value;
+    let lastReconciledDismissalAtMs2 = self.lastReconciledDismissalAtMs;
+    let num = value;
+    if (value == null) {
+      num = 0;
+    }
+    let tmp5 = dismissedAtMs;
+    let result = lastReconciledDismissalAtMs2.set(targetId, Math.max(num, dismissedAtMs));
+    let tmp7 = value;
+    if (null != tmp4) {
+      let tmp20 = dismissedAtMs;
+      let tmp21 = value;
+      if (dismissedAtMs > tmp4) {
+        let tmp22 = dMFromUserId;
+        let tmp23 = targetId;
+        dMFromUserId = dMFromUserId.getDMFromUserId(tmp2);
+        let tmp25 = dMFromUserId;
+        if (null != dMFromUserId) {
+          let tmp26 = messages;
+          let tmp27 = dMFromUserId;
+          messages = messages.getMessages(tmp25);
+          let tmp29 = messages;
+          let tmp8 = messages;
+          for (const item10031 of messages) {
+            let tmp9 = item10031;
+            let tmp10 = MessageTypes;
+            let tmp11 = item10031.type === MessageTypes.GIFTING_PROMPT;
+            if (tmp11) {
+              let tmp12 = item10031;
+              let giftingPrompt = tmp9.giftingPrompt;
+              let recipientUserId;
+              if (giftingPrompt != null) {
+                recipientUserId = giftingPrompt.recipientUserId;
               }
+              let tmp14 = targetId;
+              tmp11 = recipientUserId === tmp2;
             }
-            tmp2 = arr;
+            if (tmp11) {
+              let tmp15 = importDefault;
+              let tmp16 = dependencyMap;
+              let obj = importDefault(709);
+              obj = { type: "MESSAGE_DELETE", id: null, channelId: null };
+              let tmp17 = item10031;
+              obj[1] = tmp9.id;
+              let tmp18 = dMFromUserId;
+              obj[2] = tmp25;
+              let dispatchResult = obj.dispatch(obj);
+            }
+            continue;
           }
-          const _Array2 = Array;
-          arr = Array.from(iterable);
-          const callResult = toString.call(iterable);
-          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
-      tmp = tmp2;
-      if (!tmp2) {
-        const _TypeError = TypeError;
-        const typeError = new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
-        throw typeError;
-      }
     }
-    if (tmp) {
-      closure_0 = tmp;
+    continue;
+  }
+};
+prototype["onLogout"] = function onLogout() {
+  const reconcileBackoff = this.reconcileBackoff;
+  reconcileBackoff.cancel();
+  this.isReconciling = false;
+  this.heldGiftingPromptSystemMessage = false;
+  const lastReconciledDismissalAtMs = this.lastReconciledDismissalAtMs;
+  lastReconciledDismissalAtMs.clear();
+};
+prototype["maybeRetryHeldGiftingPromptSystemMessage"] = function maybeRetryHeldGiftingPromptSystemMessage() {
+  const self = this;
+  if (this.heldGiftingPromptSystemMessage) {
+    const lastKnownGiftIntentDismissedAtMs = store.getLastKnownGiftIntentDismissedAtMs();
+    if (lastKnownGiftIntentDismissedAtMs >= self.getServerDismissalTimestampMs()) {
+      self.heldGiftingPromptSystemMessage = false;
+      const result = self.sendGiftingPromptSystemMessagesIfEligible();
     }
-    let c1 = 0;
-    return () => {
-      if (closure_1 >= length.length) {
-        let obj = { done: true };
-      } else {
-        obj = { done: false };
-        closure_1 = tmp3 + 1;
-        obj.value = length[+closure_1];
-      }
-      return obj;
-    };
   }
-}
-function _arrayLikeToArray(arg0, arg1) {
-  let length;
-  if (tmp) {
-    length = arg0.length;
+};
+prototype["shouldHoldGiftingPromptSystemMessageForServerReconcile"] = function shouldHoldGiftingPromptSystemMessageForServerReconcile(location) {
+  const FriendshipAnniversaryBackendPersistenceExperiment = require(6180) /* apexExperiment */.FriendshipAnniversaryBackendPersistenceExperiment;
+  let enabled = FriendshipAnniversaryBackendPersistenceExperiment.getConfig({ location }).enabled;
+  if (enabled) {
+    const self = this;
+    const lastKnownGiftIntentDismissedAtMs = store.getLastKnownGiftIntentDismissedAtMs();
+    enabled = lastKnownGiftIntentDismissedAtMs < this.getServerDismissalTimestampMs();
   }
-  const ArrayResult = Array(length);
-  for (let num = 0; num < length; num = num + 1) {
-    ArrayResult[num] = arg0[num];
+  return enabled;
+};
+prototype["trySendGiftingPromptSystemMessage"] = function trySendGiftingPromptSystemMessage(id, FRIEND_ANNIVERSARY, closure_0, SEND_MESSAGE, maybeSendCard) {
+  if (this.shouldHoldGiftingPromptSystemMessageForServerReconcile(maybeSendCard)) {
+    this.heldGiftingPromptSystemMessage = true;
+    let flag = false;
+  } else {
+    let obj = importDefault(5713);
+    obj = { giftIntentType: null, recipientUserId: null, giftIntentSecondaryAction: null };
+    obj[0] = FRIEND_ANNIVERSARY;
+    obj[1] = closure_0;
+    obj[2] = SEND_MESSAGE;
+    const result = obj.sendGiftingPromptSystemMessage(id, obj);
+    flag = true;
   }
-  return ArrayResult;
-}
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
+  return flag;
+};
+let result = require("ensureGuildLoaded").fileFinishedImporting("modules/premium/gifting/shared/GiftIntentReconcilingManager.tsx");
 
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
-  }
-  const result = _isNativeReflectConstruct();
-}
-let closure_13 = 10 * require("set").Millis.SECOND;
-let closure_14 = 5 * require("set").Millis.MINUTE;
-let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/premium/gifting/shared/GiftIntentReconcilingManager.tsx");
-
-export default tmp2;
+export default GiftIntentReconcilingManager;

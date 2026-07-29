@@ -1,36 +1,36 @@
-// Module ID: 15121
-// Function ID: 115007
+// Module ID: 15154
+// Function ID: 15155
 // Name: useGuildHasLiveChannelNotice
-// Dependencies: [31, 4986, 1353, 4184, 1348, 3793, 4238, 15122, 1354, 482, 15123, 566, 8297, 15124, 4998, 4992, 2]
+// Dependencies: [19, 5008, 1377, 4208, 1372, 3817, 4262, 15155, 1378, 505, 15156, 589, 8321, 15157, 5020, 5014, 2]
 // Exports: useGuildHasLiveChannelNotice, useGuildLiveChannelNoticeInfo
 
-// Module 15121 (useGuildHasLiveChannelNotice)
-import result from "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_5 from "_isNativeReflectConstruct";
-import closure_6 from "_isNativeReflectConstruct";
-import closure_7 from "_isNativeReflectConstruct";
-import closure_8 from "_isNativeReflectConstruct";
-import closure_9 from "_isNativeReflectConstruct";
-import closure_10 from "_isNativeReflectConstruct";
+// Module 15154 (useGuildHasLiveChannelNotice)
+import noop from "noop";
+import getActiveStageChannelIds from "getActiveStageChannelIds";
+import handleStageInstanceCreateOrUpdate from "handleStageInstanceCreateOrUpdate";
+import reset from "reset";
+import ensureGuildLoaded from "ensureGuildLoaded";
+import getUncachedChannelPermissions from "getUncachedChannelPermissions";
+import getVoiceStatesForGuild from "getVoiceStatesForGuild";
+import initialize from "initialize";
 import { GuildScheduledEventEntityTypes as closure_11 } from "GUILD_EVENT_MAX_NAME_LENGTH";
 import { Permissions } from "sum";
 
 const require = arg1;
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/guild_scheduled_events/useGuildHasLiveChannelNotice.tsx");
+const result = require("handleStageInstanceCreateOrUpdate").fileFinishedImporting("modules/guild_scheduled_events/useGuildHasLiveChannelNotice.tsx");
 
 export const useGuildHasLiveChannelNotice = function useGuildHasLiveChannelNotice(id) {
   const first = stateFromStores(guildActiveEvent[10])(id)[0];
   id = undefined;
-  if (null != first) {
+  if (first != null) {
     id = first.id;
   }
   channel = channel.getChannel(id);
-  const items = [closure_5];
+  const items = [handleStageInstanceCreateOrUpdate];
   const items1 = [channel];
   stateFromStores = channel(guildActiveEvent[11]).useStateFromStores(items, () => {
     let id;
-    if (null != channel) {
+    if (channel != null) {
       id = channel.id;
     }
     return outer1_5.getStageInstanceByChannel(id);
@@ -38,24 +38,20 @@ export const useGuildHasLiveChannelNotice = function useGuildHasLiveChannelNotic
   let obj = channel(guildActiveEvent[11]);
   guildActiveEvent = channel(guildActiveEvent[12]).useGuildActiveEvent(id);
   const obj2 = channel(guildActiveEvent[12]);
-  const items2 = [closure_10];
+  const items2 = [initialize];
   const items3 = [stateFromStores, guildActiveEvent];
   const stateFromStoresObject = channel(guildActiveEvent[11]).useStateFromStoresObject(items2, () => {
-    let obj = {};
-    obj = {};
+    let obj = outer1_10;
     let id;
-    if (null != stateFromStores) {
+    if (stateFromStores != null) {
       id = stateFromStores.id;
     }
-    obj.stageId = id;
-    obj.isStageNoticeHidden = outer1_10.isLiveChannelNoticeHidden(obj);
-    obj = {};
+    obj = { isStageNoticeHidden: outer1_10.isLiveChannelNoticeHidden({ stageId: id }), isEventNoticeHidden: null };
     let id1;
-    if (null != guildActiveEvent) {
+    if (guildActiveEvent != null) {
       id1 = guildActiveEvent.id;
     }
-    obj.eventId = id1;
-    obj.isEventNoticeHidden = outer1_10.isLiveChannelNoticeHidden(obj);
+    obj[1] = obj.isLiveChannelNoticeHidden({ eventId: id1 });
     return obj;
   }, items3);
   const isStageNoticeHidden = stateFromStoresObject.isStageNoticeHidden;
@@ -66,11 +62,11 @@ export const useGuildHasLiveChannelNotice = function useGuildHasLiveChannelNotic
 export const useGuildLiveChannelNoticeInfo = function useGuildLiveChannelNoticeInfo(id) {
   activeEventOrStageInstanceChannel = activeEventOrStageInstanceChannel(stateFromStores2[13]).useActiveEventOrStageInstanceChannel(id);
   const obj = activeEventOrStageInstanceChannel(stateFromStores2[13]);
-  const items = [closure_8];
+  const items = [getUncachedChannelPermissions];
   const stateFromStores = activeEventOrStageInstanceChannel(stateFromStores2[11]).useStateFromStores(items, () => {
     let canResult = null != activeEventOrStageInstanceChannel;
     if (canResult) {
-      canResult = outer1_8.can(outer1_12.CONNECT, activeEventOrStageInstanceChannel);
+      canResult = outer1_8.can(outer1_12.CONNECT, tmp);
     }
     return canResult;
   });
@@ -81,59 +77,59 @@ export const useGuildLiveChannelNoticeInfo = function useGuildLiveChannelNoticeI
   const items2 = [activeEventOrStageInstanceChannel];
   const stateFromStores1 = activeEventOrStageInstanceChannel(stateFromStores2[11]).useStateFromStores(items1, () => {
     let id;
-    if (null != activeEventOrStageInstanceChannel) {
+    if (activeEventOrStageInstanceChannel != null) {
       id = activeEventOrStageInstanceChannel.id;
     }
     return entity_type.getStageInstanceByChannel(id);
   }, items2);
   const obj4 = activeEventOrStageInstanceChannel(stateFromStores2[11]);
   id = undefined;
-  if (null != activeEventOrStageInstanceChannel) {
+  if (activeEventOrStageInstanceChannel != null) {
     id = activeEventOrStageInstanceChannel.id;
   }
-  const tmp6 = activeEventOrStageInstanceChannel(stateFromStores2[14]).useActualStageSpeakerCount(id) > 0;
-  const obj5 = activeEventOrStageInstanceChannel(stateFromStores2[14]);
-  const items3 = [closure_9];
-  stateFromStores2 = activeEventOrStageInstanceChannel(stateFromStores2[11]).useStateFromStores(items3, () => {
-    let tmp = null != activeEventOrStageInstanceChannel;
-    if (tmp) {
-      tmp = outer1_9.getVoiceStatesForChannel(activeEventOrStageInstanceChannel).length > 0;
+  const tmp8 = activeEventOrStageInstanceChannel(stateFromStores2[14]).useActualStageSpeakerCount(id) > 0;
+  let tmpResult = tmp(tmp2[11]);
+  const items3 = [getVoiceStatesForGuild];
+  stateFromStores2 = tmpResult.useStateFromStores(items3, () => {
+    let tmp2 = null != activeEventOrStageInstanceChannel;
+    if (tmp2) {
+      tmp2 = outer1_9.getVoiceStatesForChannel(tmp).length > 0;
     }
-    return tmp;
+    return tmp2;
   });
   stateFromStores2 = false;
   if (null != activeEventOrStageInstanceChannel) {
     if (null != stateFromStores1) {
-      stateFromStores2 = tmp6;
-      let flag = tmp6;
+      stateFromStores2 = tmp8;
+      let flag = tmp8;
     }
+    tmpResult = tmp(tmp2[11]);
     const items4 = [stateFromStores4];
     const items5 = [activeEventOrStageInstanceChannel];
-    const stateFromStores3 = activeEventOrStageInstanceChannel(stateFromStores2[11]).useStateFromStores(items4, () => {
-      let tmp = null != activeEventOrStageInstanceChannel;
-      if (tmp) {
-        tmp = stateFromStores4.getParticipantCount(activeEventOrStageInstanceChannel.id, activeEventOrStageInstanceChannel(stateFromStores2[15]).StageChannelParticipantNamedIndex.AUDIENCE) > 0;
+    const stateFromStores3 = tmpResult.useStateFromStores(items4, () => {
+      let tmp2 = null != activeEventOrStageInstanceChannel;
+      if (tmp2) {
+        tmp2 = stateFromStores4.getParticipantCount(tmp.id, activeEventOrStageInstanceChannel(stateFromStores2[15]).StageChannelParticipantNamedIndex.AUDIENCE) > 0;
       }
-      return tmp;
+      return tmp2;
     }, items5);
-    const obj7 = activeEventOrStageInstanceChannel(stateFromStores2[11]);
-    const items6 = [closure_6];
-    stateFromStores4 = activeEventOrStageInstanceChannel(stateFromStores2[11]).useStateFromStores(items6, () => {
-      let tmp = null != activeEventOrStageInstanceChannel;
-      if (tmp) {
-        tmp = outer1_6.getAllApplicationStreamsForChannel(activeEventOrStageInstanceChannel.id).length > 0;
+    const items6 = [reset];
+    stateFromStores4 = tmp(tmp2[11]).useStateFromStores(items6, () => {
+      let tmp2 = null != activeEventOrStageInstanceChannel;
+      if (tmp2) {
+        tmp2 = outer1_6.getAllApplicationStreamsForChannel(tmp.id).length > 0;
       }
-      return tmp;
+      return tmp2;
     });
     entity_type = undefined;
-    if (null != guildActiveEvent) {
+    if (guildActiveEvent != null) {
       entity_type = guildActiveEvent.entity_type;
     }
     const items7 = [stateFromStores, entity_type, flag, stateFromStores3, stateFromStores4];
-    return stateFromStores3.useMemo(() => ({ hasButton: tmp, hasSpeakers: stateFromStores2, hasAudience: stateFromStores3, hasStream: stateFromStores4 }), items7);
+    return stateFromStores3.useMemo(() => ({ hasButton: entity_type === outer1_11.EXTERNAL || stateFromStores, hasSpeakers: stateFromStores2, hasAudience: stateFromStores3, hasStream: stateFromStores4 }), items7);
   }
   flag = false;
-  if (tmp8) {
+  if (tmp10) {
     flag = stateFromStores2;
   }
 };

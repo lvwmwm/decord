@@ -1,16 +1,59 @@
-// Module ID: 1848
-// Function ID: 20278
+// Module ID: 1872
+// Function ID: 1873
 // Name: _initLibdiscore
-// Dependencies: [5, 27, 1849, 2]
+// Dependencies: [5, 17, 1873, 2]
 // Exports: initLibdiscore, isLibdiscoreInitialized
 
-// Module 1848 (_initLibdiscore)
+// Module 1872 (_initLibdiscore)
 import asyncGeneratorStep from "asyncGeneratorStep";
 import { NativeModules } from "get ActivityIndicator";
 import importAllResult from "setTimeout";
 
-async function _initLibdiscore() {
-  return obj ? obj.resume() : undefined;
+function _initLibdiscore() {
+  const self = this;
+  const tmp = callback(function*() {
+    if (c0 === 2) {
+      c0 = 3;
+      HermesBuiltin.throwTypeError();
+    } else if (tmp3 === 3) {
+      if (arg0 === 1) {
+        throw arg1;
+      } else if (arg0 === 2) {
+        let obj = { value: null, done: true };
+        obj[0] = arg1;
+        return obj;
+      } else {
+        return { value: "HermesInternal", done: null };
+      }
+    } else {
+      try {
+        c0 = 2;
+        if (arg0 === 1) {
+          c0 = 3;
+          throw arg1;
+        } else if (arg0 === 2) {
+          c0 = 3;
+          obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
+        } else {
+          c0 = 3;
+          return { value: "HermesInternal", done: null };
+        }
+      } catch (tmp4) {
+        c0 = tmp;
+        throw tmp4;
+      }
+    }
+  });
+  const _initLibdiscore = tmp;
+  const apply = tmp.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
 }
 const result = require("setTimeout").registerTimerPolyfills();
 const result1 = require("setTimeout").fileFinishedImporting("../discord_common/js/packages/libdiscore/js_shim/js/initLibdiscore.native.tsx");
@@ -19,5 +62,12 @@ export const isLibdiscoreInitialized = function isLibdiscoreInitialized() {
   return undefined !== NativeModules.LibDiscoreModule;
 };
 export const initLibdiscore = function initLibdiscore() {
-  return _initLibdiscore(...arguments);
+  const self = this;
+  const apply = _initLibdiscore.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
 };

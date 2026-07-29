@@ -1,23 +1,24 @@
-// Module ID: 7645
-// Function ID: 60922
+// Module ID: 7668
+// Function ID: 7669
 // Name: CardSection
-// Dependencies: [31, 27, 653, 33, 4165, 5087, 689, 7646, 2]
+// Dependencies: [19, 17, 676, 21, 4189, 5109, 712, 7669, 2]
 // Exports: default
 
-// Module 7645 (CardSection)
-import "result";
+// Module 7668 (CardSection)
+import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 import importDefaultResult from "createTextStyle";
 
-let closure_3;
-let closure_4;
-({ jsx: closure_3, jsxs: closure_4 } = jsxProd);
-_createForOfIteratorHelperLoose = { container: { paddingTop: 16, paddingHorizontal: 16 }, title: require("createTextStyle")(require("ME").Fonts.DISPLAY_EXTRABOLD, require("_createForOfIteratorHelperLoose").colors.TEXT_SUBTLE, 12, { uppercase: true, marginBottom: 6 }) };
-_createForOfIteratorHelperLoose = { borderRadius: require("_createForOfIteratorHelperLoose").radii.xs, overflow: "hidden", backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWEST };
-_createForOfIteratorHelperLoose.card = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+let c3;
+let c4;
+({ jsx: c3, jsxs: c4 } = jsxProd);
+createCacheKey = { container: { paddingTop: 16, paddingHorizontal: 16 }, title: null, card: null };
+createCacheKey[1] = require("createTextStyle")(require("ME").Fonts.DISPLAY_EXTRABOLD, require("Themes").colors.TEXT_SUBTLE, 12, { uppercase: true, marginBottom: 6 });
+createCacheKey = { borderRadius: require("Themes").radii.xs, overflow: "hidden", backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOWEST };
+createCacheKey[2] = createCacheKey;
+createCacheKey = createCacheKey.createStyles(createCacheKey);
 const result = require("ME").fileFinishedImporting("design/void/CardSection/native/CardSection.tsx");
 
 export default function CardSection(arg0) {
@@ -31,17 +32,16 @@ export default function CardSection(arg0) {
   let titleStyle;
   ({ title, children, headerComponent } = arg0);
   ({ titleStyle, cardStyle, style, accessibilityRole, accessibilityLabel } = arg0);
-  const tmp = _createForOfIteratorHelperLoose();
-  let obj = { style: items, accessibilityRole, accessibilityLabel };
+  const tmp = createCacheKey();
+  let obj = { style: items, accessibilityRole, accessibilityLabel, children: null };
   items = [tmp.container, style];
   let tmp4 = null;
   if (null != title) {
-    obj = {};
+    obj = { style: null, accessibilityRole: "header", children: null };
     const items1 = [tmp.title, titleStyle];
-    obj.style = items1;
-    obj.accessibilityRole = "header";
-    obj.children = title;
-    tmp4 = callback(importDefault(7646), obj);
+    obj[0] = items1;
+    obj[2] = title;
+    tmp4 = callback(importDefault(7669), obj);
   }
   const items2 = [tmp4, , ];
   let tmp8 = null;
@@ -51,13 +51,13 @@ export default function CardSection(arg0) {
   items2[1] = tmp8;
   let tmp9 = null;
   if (null != children) {
-    obj = {};
+    obj = { style: null, children: null };
     const items3 = [tmp.card, cardStyle];
-    obj.style = items3;
-    obj.children = children;
-    tmp9 = callback(View, obj);
+    obj[0] = items3;
+    obj[1] = children;
+    tmp9 = callback(tmp3, obj);
   }
   items2[2] = tmp9;
-  obj.children = items2;
+  obj[3] = items2;
   return closure_4(View, obj);
 };

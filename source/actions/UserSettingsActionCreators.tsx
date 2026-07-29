@@ -1,208 +1,280 @@
-// Module ID: 6186
-// Function ID: 55216
-// Name: convertThemeToProto
-// Dependencies: [5, 3977, 1279, 1278, 653, 1281, 1331, 1282, 1313, 686, 3838, 2]
+// Module ID: 6206
+// Function ID: 6207
+// Name: saveGuildFolders
+// Dependencies: [5, 4001, 1303, 1302, 676, 1305, 1355, 1306, 1337, 709, 3862, 2]
 // Exports: saveClientTheme, saveGuildFolders
 
-// Module 6186 (convertThemeToProto)
+// Module 6206 (saveGuildFolders)
 import closure_3 from "SystemThemeState";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_5 from "_isNativeReflectConstruct";
-import closure_6 from "_isNativeReflectConstruct";
+import isSyncedModeThemesEnabled from "isSyncedModeThemesEnabled";
+import initialize from "initialize";
+import handleThemeChange from "handleThemeChange";
 import { ThemeTypes } from "ME";
 import SystemThemeState from "SystemThemeState";
 
 let SystemTheme;
-let closure_8;
+let metroImportAll;
 const require = arg1;
-function convertThemeToProto(arg0) {
-  if (ThemeTypes.DARK === arg0) {
-    return require(1282) /* _callSuper */.Theme.DARK;
-  } else if (ThemeTypes.LIGHT === arg0) {
-    return require(1282) /* _callSuper */.Theme.LIGHT;
-  } else if (ThemeTypes.DARKER === arg0) {
-    return require(1282) /* _callSuper */.Theme.DARKER;
-  } else if (ThemeTypes.MIDNIGHT === arg0) {
-    return require(1282) /* _callSuper */.Theme.MIDNIGHT;
-  } else {
-    return require(1282) /* _callSuper */.Theme.DARK;
-  }
-}
-function convertClientThemeSettingsToProto(backgroundGradientPresetId) {
-  let obj = {};
-  obj = undefined;
-  if (null != backgroundGradientPresetId.backgroundGradientPresetId) {
-    const UInt32Value = require(1313) /* _callSuper */.UInt32Value;
-    obj = { value: backgroundGradientPresetId.backgroundGradientPresetId };
-    obj = UInt32Value.create(obj);
-  }
-  obj.backgroundGradientPresetId = obj;
-  let tmp4;
-  if (null != backgroundGradientPresetId.customUserThemeSettings) {
-    const obj1 = { colors: backgroundGradientPresetId.customUserThemeSettings.colors, gradientColorStops: backgroundGradientPresetId.customUserThemeSettings.gradientColorStops, gradientAngle: backgroundGradientPresetId.customUserThemeSettings.gradientAngle, baseMix: backgroundGradientPresetId.customUserThemeSettings.baseMix };
-    tmp4 = obj1;
-  }
-  obj.customUserThemeSettings = tmp4;
-  return obj;
-}
-({ SystemTheme, SystemThemeState: closure_8 } = SystemThemeState);
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("actions/UserSettingsActionCreators.tsx");
+({ SystemTheme, SystemThemeState: metroImportAll } = SystemThemeState);
+const result = require("initialize").fileFinishedImporting("actions/UserSettingsActionCreators.tsx");
 
 export default {
   overrideLocale(locale) {
-    let obj = importDefault(686);
+    let obj = importDefault(709);
     obj = { type: "USER_SETTINGS_LOCALE_OVERRIDE", locale };
     obj.dispatch(obj);
   },
   updatedUnsyncedSettings(settings) {
-    let obj = importDefault(686);
+    let obj = importDefault(709);
     obj = { type: "UNSYNCED_USER_SETTINGS_UPDATE", settings };
     obj.dispatch(obj);
   },
   setShouldSyncTextSettings(shouldSync) {
-    let obj = importDefault(686);
-    obj = { type: "SELECTIVELY_SYNCED_USER_SETTINGS_UPDATE" };
-    obj = {};
-    const obj1 = { shouldSync };
+    let obj = importDefault(709);
+    obj = { shouldSync, settings: null };
     if (shouldSync) {
-      let obj2 = {};
+      obj = {};
     } else {
-      obj2 = {};
-      const InlineAttachmentMedia = require(3838) /* explicitContentFromProto */.InlineAttachmentMedia;
-      obj2.inlineAttachmentMedia = InlineAttachmentMedia.getSetting();
-      const InlineEmbedMedia = require(3838) /* explicitContentFromProto */.InlineEmbedMedia;
-      obj2.inlineEmbedMedia = InlineEmbedMedia.getSetting();
-      const RenderEmbeds = require(3838) /* explicitContentFromProto */.RenderEmbeds;
-      obj2.renderEmbeds = RenderEmbeds.getSetting();
-      const RenderReactions = require(3838) /* explicitContentFromProto */.RenderReactions;
-      obj2.renderReactions = RenderReactions.getSetting();
-      const AnimateEmoji = require(3838) /* explicitContentFromProto */.AnimateEmoji;
-      obj2.animateEmoji = AnimateEmoji.getSetting();
-      const AnimateStickers = require(3838) /* explicitContentFromProto */.AnimateStickers;
-      obj2.animateStickers = AnimateStickers.getSetting();
-      const GifAutoPlay = require(3838) /* explicitContentFromProto */.GifAutoPlay;
-      obj2.gifAutoPlay = GifAutoPlay.getSetting();
+      obj = { inlineAttachmentMedia: null, inlineEmbedMedia: null, renderEmbeds: null, renderReactions: null, animateEmoji: null, animateStickers: null, gifAutoPlay: null };
+      const InlineAttachmentMedia = require(3862) /* explicitContentFromProto */.InlineAttachmentMedia;
+      obj[0] = InlineAttachmentMedia.getSetting();
+      const InlineEmbedMedia = require(3862) /* explicitContentFromProto */.InlineEmbedMedia;
+      obj[1] = InlineEmbedMedia.getSetting();
+      const RenderEmbeds = require(3862) /* explicitContentFromProto */.RenderEmbeds;
+      obj[2] = RenderEmbeds.getSetting();
+      const RenderReactions = require(3862) /* explicitContentFromProto */.RenderReactions;
+      obj[3] = RenderReactions.getSetting();
+      const AnimateEmoji = require(3862) /* explicitContentFromProto */.AnimateEmoji;
+      obj[4] = AnimateEmoji.getSetting();
+      const AnimateStickers = require(3862) /* explicitContentFromProto */.AnimateStickers;
+      obj[5] = AnimateStickers.getSetting();
+      const GifAutoPlay = require(3862) /* explicitContentFromProto */.GifAutoPlay;
+      obj[6] = GifAutoPlay.getSetting();
     }
-    obj1.settings = obj2;
-    obj.text = obj1;
-    obj.changes = obj;
-    obj.dispatch(obj);
+    obj[1] = obj;
+    obj.dispatch({ type: "SELECTIVELY_SYNCED_USER_SETTINGS_UPDATE", changes: { text: obj } });
   },
   setShouldSyncAppearanceSettings(is_sync_enabled) {
     let closure_0 = is_sync_enabled;
-    return callback(async () => {
-      if (outer1_0) {
-        const PreloadedUserSettingsActionCreators = callback(outer2_2[6]).PreloadedUserSettingsActionCreators;
-        yield PreloadedUserSettingsActionCreators.updateAsync("appearance", (arg0) => {
-          arg0.theme = outer3_9(outer3_6.theme);
-          const obj = {};
-          const gradientPreset = outer3_4.gradientPreset;
-          let id;
-          if (null != gradientPreset) {
-            id = gradientPreset.id;
-          }
-          obj.backgroundGradientPresetId = id;
-          const ClientThemeSettings = callback(outer3_2[10]).ClientThemeSettings;
-          const setting = ClientThemeSettings.getSetting();
-          let prop;
-          if (null != setting) {
-            prop = setting.customUserThemeSettings;
-          }
-          obj.customUserThemeSettings = prop;
-          arg0.clientThemeSettings = outer3_10(obj);
-        }, closure_0(outer2_2[6]).UserSettingsDelay.INFREQUENT_USER_ACTION);
-      }
-      let obj = outer2_1(outer2_2[9]);
-      obj = { type: "SELECTIVELY_SYNCED_USER_SETTINGS_UPDATE" };
-      obj = {};
-      const obj1 = { shouldSync: outer1_0 };
-      if (outer1_0) {
-        let obj2 = {};
-      } else {
-        obj2 = { theme: outer2_6.theme };
-        const obj3 = {};
-        let gradientPreset = outer2_4.gradientPreset;
-        let id;
-        if (null != gradientPreset) {
-          id = gradientPreset.id;
+    return callback(function*() {
+      if (c3 === 2) {
+        c3 = 3;
+        HermesBuiltin.throwTypeError();
+      } else if (tmp6 === 3) {
+        if (arg0 === 1) {
+          throw arg1;
+        } else if (arg0 === 2) {
+          let obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
+        } else {
+          return { value: "HermesInternal", done: null };
         }
-        obj3.backgroundGradientPresetId = id;
-        obj2.clientThemeSettings = obj3;
-        const DeveloperMode = callback(outer2_2[10]).DeveloperMode;
-        obj2.developerMode = DeveloperMode.getSetting();
+      } else {
+        try {
+          c3 = 2;
+          if (0 === v0) {
+            if (arg0 === 1) {
+              c3 = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              c3 = 3;
+              obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            } else {
+              let closure_0 = tmp3;
+              if (outer1_0) {
+                let dependencyMap = 1;
+                const PreloadedUserSettingsActionCreators = outer1_0(1355).PreloadedUserSettingsActionCreators;
+                v0 = 2;
+                c3 = 1;
+                let obj1 = { value: null, done: false };
+                obj1[0] = PreloadedUserSettingsActionCreators.updateAsync("appearance", (arg0) => {
+                  theme = theme.theme;
+                  if (constants.DARK === theme) {
+                    let DARK = tmp3(1306).Theme.DARK;
+                    tmp3 = dependencyMap;
+                    let tmp4 = tmp3;
+                  } else if (tmp.LIGHT === theme) {
+                    DARK = tmp3(1306).Theme.LIGHT;
+                    tmp3 = dependencyMap;
+                    tmp4 = tmp3;
+                  } else if (tmp.DARKER === theme) {
+                    DARK = tmp3(1306).Theme.DARKER;
+                    tmp3 = dependencyMap;
+                    tmp4 = tmp3;
+                  } else if (tmp.MIDNIGHT === theme) {
+                    DARK = tmp3(1306).Theme.MIDNIGHT;
+                    tmp3 = dependencyMap;
+                    tmp4 = tmp3;
+                  } else {
+                    tmp3 = dependencyMap;
+                    DARK = tmp3(1306).Theme.DARK;
+                    tmp4 = tmp3;
+                  }
+                  arg0.theme = DARK;
+                  gradientPreset = gradientPreset.gradientPreset;
+                  let id;
+                  if (gradientPreset != null) {
+                    id = gradientPreset.id;
+                  }
+                  const ClientThemeSettings = tmp4(3862).ClientThemeSettings;
+                  const setting = ClientThemeSettings.getSetting();
+                  let prop;
+                  if (setting != null) {
+                    prop = setting.customUserThemeSettings;
+                  }
+                  let obj;
+                  if (null != id) {
+                    const UInt32Value = tmp4(1337).UInt32Value;
+                    obj = { value: null };
+                    obj[0] = id;
+                    obj = UInt32Value.create(obj);
+                  }
+                  obj = { backgroundGradientPresetId: obj, customUserThemeSettings: null };
+                  let tmp17;
+                  if (null != prop) {
+                    ({ colors: obj3[0], gradientColorStops: obj3[1], gradientAngle: obj3[2], baseMix: obj3[3] } = prop);
+                    tmp17 = { colors: null, gradientColorStops: null, gradientAngle: null, baseMix: null };
+                    const obj1 = { colors: null, gradientColorStops: null, gradientAngle: null, baseMix: null };
+                  }
+                  obj[1] = tmp17;
+                  arg0.clientThemeSettings = obj;
+                }, outer1_0(1355).UserSettingsDelay.INFREQUENT_USER_ACTION);
+                return obj1;
+              }
+            }
+          } else if (1 === tmp7) {
+            dependencyMap = 0;
+            c3 = 3;
+            return { value: "HermesInternal", done: null };
+          } else if (arg0 === 1) {
+            c3 = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            dependencyMap = 0;
+            c3 = 3;
+            obj = { value: null, done: true };
+            obj[0] = arg1;
+            return obj;
+          } else {
+            dependencyMap = 0;
+          }
+          obj1 = v0(709);
+          const obj2 = { shouldSync: null, settings: null };
+          obj2[0] = closure_0;
+          if (closure_0) {
+            let obj3 = {};
+          } else {
+            obj3 = { theme: null, clientThemeSettings: null, developerMode: null };
+            obj3[0] = outer1_6.theme;
+            let gradientPreset = outer1_4.gradientPreset;
+            let id;
+            if (gradientPreset != null) {
+              id = gradientPreset.id;
+            }
+            const obj4 = { backgroundGradientPresetId: null };
+            obj4[0] = id;
+            obj3[1] = obj4;
+            const DeveloperMode = outer1_0(3862).DeveloperMode;
+            obj3[2] = DeveloperMode.getSetting();
+          }
+          const obj5 = { type: "SELECTIVELY_SYNCED_USER_SETTINGS_UPDATE", changes: null };
+          const obj6 = { appearance: null };
+          obj2[1] = obj3;
+          obj6[0] = obj2;
+          obj5[1] = obj6;
+          obj1.dispatch(obj5);
+          c3 = 3;
+        } catch (tmp25) {
+          if (tmp4 === dependencyMap) {
+            c3 = tmp2;
+            throw tmp25;
+          } else {
+            v0 = tmp;
+          }
+        }
       }
-      obj1.settings = obj2;
-      obj.appearance = obj1;
-      obj.changes = obj;
-      obj.dispatch(obj);
     })();
   },
   applySettingsOverride(settings) {
-    let obj = importDefault(686);
+    let obj = importDefault(709);
     obj = { type: "USER_SETTINGS_OVERRIDE_APPLY", settings };
     obj.dispatch(obj);
   },
   clearSettingsOverride(gifAutoPlay, animateEmoji, animateStickers) {
     const items = [...arguments];
-    importDefault(686).dispatch({ type: "USER_SETTINGS_OVERRIDE_CLEAR", settings: items });
+    importDefault(709).dispatch({ type: "USER_SETTINGS_OVERRIDE_CLEAR", settings: items });
   },
   updateLocale(arg0) {
     const _require = arg0;
-    const PreloadedUserSettingsActionCreators = _require(1331).PreloadedUserSettingsActionCreators;
+    const PreloadedUserSettingsActionCreators = _require(1355).PreloadedUserSettingsActionCreators;
     return PreloadedUserSettingsActionCreators.updateAsync("localization", (arg0) => {
       const StringValue = callback(outer1_2[8]).StringValue;
       arg0.locale = StringValue.create({ value: callback });
-    }, _require(1331).UserSettingsDelay.INFREQUENT_USER_ACTION);
+    }, _require(1355).UserSettingsDelay.INFREQUENT_USER_ACTION);
   },
   updateTheme(theme) {
     const _require = theme;
-    let obj = importDefault(686);
+    let obj = importDefault(709);
     obj = { theme };
     obj.dispatch({ type: "SELECTIVELY_SYNCED_USER_SETTINGS_UPDATE", changes: { appearance: { settings: obj } } });
-    if (closure_5.shouldSync("appearance")) {
-      const PreloadedUserSettingsActionCreators = _require(1331).PreloadedUserSettingsActionCreators;
+    if (initialize.shouldSync("appearance")) {
+      const PreloadedUserSettingsActionCreators = _require(1355).PreloadedUserSettingsActionCreators;
       PreloadedUserSettingsActionCreators.updateAsync("appearance", (arg0) => {
-        arg0.theme = outer1_9(closure_0);
-      }, _require(1331).UserSettingsDelay.INFREQUENT_USER_ACTION);
+        if (outer1_7.DARK === theme) {
+          let DARK = theme(outer1_2[7]).Theme.DARK;
+        } else if (tmp2.LIGHT === tmp) {
+          DARK = theme(outer1_2[7]).Theme.LIGHT;
+        } else if (tmp2.DARKER === tmp) {
+          DARK = theme(outer1_2[7]).Theme.DARKER;
+        } else if (tmp2.MIDNIGHT === tmp) {
+          DARK = theme(outer1_2[7]).Theme.MIDNIGHT;
+        } else {
+          DARK = theme(outer1_2[7]).Theme.DARK;
+        }
+        arg0.theme = DARK;
+      }, _require(1355).UserSettingsDelay.INFREQUENT_USER_ACTION);
     }
   }
 };
 export const saveGuildFolders = function saveGuildFolders(compatibleGuildFolders) {
   const _require = compatibleGuildFolders;
-  const PreloadedUserSettingsActionCreators = _require(1331).PreloadedUserSettingsActionCreators;
+  const PreloadedUserSettingsActionCreators = _require(1355).PreloadedUserSettingsActionCreators;
   return PreloadedUserSettingsActionCreators.updateAsync("guildFolders", (arg0) => {
     arg0.folders = compatibleGuildFolders.map((guildIds) => {
-      const GuildFolder = callback(outer2_2[7]).GuildFolder;
+      const GuildFolder = callback(table[7]).GuildFolder;
       let obj = { guildIds: guildIds.guildIds };
       obj = GuildFolder.create(obj);
       if (null != guildIds.folderId) {
-        const Int64Value = callback(outer2_2[8]).Int64Value;
-        obj = {};
+        const Int64Value = tmp(tmp2[8]).Int64Value;
+        obj = { value: null };
         const _String = String;
-        obj.value = String(guildIds.folderId);
+        obj[0] = String(guildIds.folderId);
         obj.id = Int64Value.create(obj);
       }
       if (null != guildIds.folderColor) {
-        const UInt64Value = callback(outer2_2[8]).UInt64Value;
-        const obj1 = {};
+        const UInt64Value = tmp(tmp2[8]).UInt64Value;
+        const obj1 = { value: null };
         const _String2 = String;
-        obj1.value = String(guildIds.folderColor);
+        obj1[0] = String(guildIds.folderColor);
         obj.color = UInt64Value.create(obj1);
       }
-      let tmp8 = null != guildIds.folderName;
-      if (tmp8) {
-        tmp8 = "" !== guildIds.folderName;
+      let tmp6 = null != guildIds.folderName;
+      if (tmp6) {
+        tmp6 = "" !== guildIds.folderName;
       }
-      if (tmp8) {
-        const StringValue = callback(outer2_2[8]).StringValue;
-        const obj2 = {};
+      if (tmp6) {
+        const StringValue = tmp(tmp2[8]).StringValue;
+        const obj2 = { value: null };
         const _String3 = String;
-        obj2.value = String(guildIds.folderName);
+        obj2[0] = String(guildIds.folderName);
         obj.name = StringValue.create(obj2);
       }
       return obj;
     });
-  }, _require(1331).UserSettingsDelay.FREQUENT_USER_ACTION);
+  }, _require(1355).UserSettingsDelay.FREQUENT_USER_ACTION);
 };
 export const saveClientTheme = function saveClientTheme(backgroundGradientPresetId, INFREQUENT_USER_ACTION) {
   backgroundGradientPresetId = backgroundGradientPresetId.backgroundGradientPresetId;
@@ -217,27 +289,57 @@ export const saveClientTheme = function saveClientTheme(backgroundGradientPreset
     tmp5 = useSystemTheme;
   }
   let obj = customUserThemeSettings(theme[9]);
-  obj = { useSystemTheme: tmp5 };
-  obj.dispatch({ type: "UNSYNCED_USER_SETTINGS_UPDATE", settings: obj });
-  let obj2 = customUserThemeSettings(theme[9]);
-  obj = { type: "SELECTIVELY_SYNCED_USER_SETTINGS_UPDATE" };
-  const obj1 = {};
-  obj2 = {};
-  const obj3 = { clientThemeSettings: { backgroundGradientPresetId, customUserThemeSettings } };
-  let tmp7;
+  obj.dispatch({ type: "UNSYNCED_USER_SETTINGS_UPDATE", settings: { useSystemTheme: tmp5 } });
+  obj = { clientThemeSettings: { backgroundGradientPresetId, customUserThemeSettings }, theme: null };
+  let tmp8;
   if ("system" !== theme) {
-    tmp7 = theme;
+    tmp8 = theme;
   }
-  obj3.theme = tmp7;
-  obj2.settings = obj3;
-  obj1.appearance = obj2;
-  obj.changes = obj1;
-  obj2.dispatch(obj);
-  if (closure_5.shouldSync("appearance")) {
-    const PreloadedUserSettingsActionCreators = backgroundGradientPresetId(theme[6]).PreloadedUserSettingsActionCreators;
+  obj[1] = tmp8;
+  customUserThemeSettings(theme[9]).dispatch({ type: "SELECTIVELY_SYNCED_USER_SETTINGS_UPDATE", changes: { appearance: { settings: obj } } });
+  if (initialize.shouldSync("appearance")) {
+    const PreloadedUserSettingsActionCreators = backgroundGradientPresetId(tmp6[6]).PreloadedUserSettingsActionCreators;
     return PreloadedUserSettingsActionCreators.updateAsync("appearance", (arg0) => {
-      arg0.theme = outer1_9(theme);
-      arg0.clientThemeSettings = outer1_10({ backgroundGradientPresetId, customUserThemeSettings });
+      if (outer1_7.DARK === theme) {
+        let DARK = backgroundGradientPresetId(theme[7]).Theme.DARK;
+        let tmp4 = theme;
+        let tmp3 = backgroundGradientPresetId;
+      } else if (tmp2.LIGHT === tmp) {
+        DARK = backgroundGradientPresetId(theme[7]).Theme.LIGHT;
+        tmp4 = theme;
+        tmp3 = backgroundGradientPresetId;
+      } else if (tmp2.DARKER === tmp) {
+        DARK = backgroundGradientPresetId(theme[7]).Theme.DARKER;
+        tmp4 = theme;
+        tmp3 = backgroundGradientPresetId;
+      } else if (tmp2.MIDNIGHT === tmp) {
+        DARK = backgroundGradientPresetId(theme[7]).Theme.MIDNIGHT;
+        tmp4 = theme;
+        tmp3 = backgroundGradientPresetId;
+      } else {
+        tmp3 = backgroundGradientPresetId;
+        tmp4 = theme;
+        DARK = backgroundGradientPresetId(theme[7]).Theme.DARK;
+      }
+      arg0.theme = DARK;
+      let obj;
+      if (null != backgroundGradientPresetId) {
+        const UInt32Value = tmp3(tmp4[8]).UInt32Value;
+        obj = { value: null };
+        obj[0] = tmp13;
+        obj = UInt32Value.create(obj);
+      }
+      obj = { backgroundGradientPresetId: obj, customUserThemeSettings: null };
+      let tmp16;
+      if (null != customUserThemeSettings) {
+        ({ colors: obj3[0], gradientColorStops: obj3[1], gradientAngle: obj3[2], baseMix: obj3[3] } = tmp14);
+        tmp16 = { colors: null, gradientColorStops: null, gradientAngle: null, baseMix: null };
+        const obj1 = { colors: null, gradientColorStops: null, gradientAngle: null, baseMix: null };
+      }
+      obj[1] = tmp16;
+      arg0.clientThemeSettings = obj;
     }, INFREQUENT_USER_ACTION);
   }
+  const obj2 = customUserThemeSettings(theme[9]);
+  tmp6 = theme;
 };

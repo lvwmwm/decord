@@ -1,29 +1,29 @@
-// Module ID: 12423
-// Function ID: 96401
+// Module ID: 12445
+// Function ID: 12446
 // Name: PremiumReferralTrialPill
-// Dependencies: [27, 33, 4165, 689, 4161, 1212, 2]
+// Dependencies: [17, 21, 4189, 712, 4185, 1236, 2]
 // Exports: PremiumReferralTrialPill
 
-// Module 12423 (PremiumReferralTrialPill)
+// Module 12445 (PremiumReferralTrialPill)
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let obj = { pillParent: { display: "flex", alignItems: "center", flexDirection: "row", justifyContent: "center" }, pillParentExtraMargin: { display: "flex", alignItems: "center", flexDirection: "row", justifyContent: "center", marginTop: 36, marginBottom: 20 } };
-obj = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.WHITE, borderRadius: require("_createForOfIteratorHelperLoose").radii.round, alignItems: "center", justifyContent: "center", margin: 8, paddingHorizontal: 8, overflow: "visible" };
-obj.pillContainer = obj;
-obj.text = { color: "#AC46C3", paddingHorizontal: 1, paddingBottom: 2, textAlign: "center" };
-let closure_4 = _createForOfIteratorHelperLoose.createStyles(obj);
-const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/user_settings/premium/native/PremiumReferralTrialPill.tsx");
+let obj = { pillParent: { display: "flex", alignItems: "center", flexDirection: "row", justifyContent: "center" }, pillParentExtraMargin: { display: "flex", alignItems: "center", flexDirection: "row", justifyContent: "center", marginTop: 36, marginBottom: 20 }, pillContainer: null, text: null };
+obj = { backgroundColor: require("Themes").colors.WHITE, borderRadius: require("Themes").radii.round, alignItems: "center", justifyContent: "center", margin: 8, paddingHorizontal: 8, overflow: "visible" };
+obj[2] = obj;
+obj[3] = { color: "#AC46C3", paddingHorizontal: 1, paddingBottom: 2, textAlign: "center" };
+let closure_4 = createCacheKey.createStyles(obj);
+const result = require("createCacheKey").fileFinishedImporting("modules/user_settings/premium/native/PremiumReferralTrialPill.tsx");
 
 export const PremiumReferralTrialPill = (hasExtraMargin) => {
   const tmp = callback();
-  let obj = { style: hasExtraMargin.hasExtraMargin ? tmp.pillParentExtraMargin : tmp.pillParent };
-  obj = { style: tmp.pillContainer };
-  obj = { variant: "text-xs/bold", style: tmp.text };
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj.children = intl.string(require(1212) /* getSystemLocale */.t.Y1q7js).toUpperCase();
-  obj.children = jsx(require(4161) /* Text */.Text, { variant: "text-xs/bold", style: tmp.text });
-  obj.children = <View variant="text-xs/bold" style={tmp.text} />;
-  return <View variant="text-xs/bold" style={tmp.text} />;
+  let obj = { style: hasExtraMargin.hasExtraMargin ? tmp.pillParentExtraMargin : tmp.pillParent, children: null };
+  obj = { style: tmp.pillContainer, children: null };
+  obj = { variant: "text-xs/bold", style: tmp.text, children: null };
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj[2] = intl.string(require(1236) /* getSystemLocale */.t.Y1q7js).toUpperCase();
+  obj[1] = jsx(require(4185) /* Text */.Text, { variant: "text-xs/bold", style: tmp.text, children: null });
+  obj[1] = <View variant="text-xs/bold" style={tmp.text}>{null}</View>;
+  return <View variant="text-xs/bold" style={tmp.text}>{null}</View>;
 };

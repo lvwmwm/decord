@@ -1,43 +1,14 @@
-// Module ID: 10400
-// Function ID: 80130
-// Name: isKeyboardOverlappingAppEntry
-// Dependencies: [31, 1553, 477, 1569, 1570, 1453, 1571, 4026, 1819, 2]
+// Module ID: 10424
+// Function ID: 10425
+// Name: useSafeAreaBottomKeyboardInfoController
+// Dependencies: [19, 1577, 500, 1593, 1594, 1477, 1595, 4050, 1843, 2]
 // Exports: default
 
-// Module 10400 (isKeyboardOverlappingAppEntry)
-import result from "result";
+// Module 10424 (useSafeAreaBottomKeyboardInfoController)
+import noop from "noop";
 import isMetaQuest from "isMetaQuest";
 
 const require = arg1;
-function isKeyboardOverlappingAppEntry(appEntryKey) {
-  const _require = appEntryKey;
-  let tmp = !_require(477).isAndroid();
-  if (!tmp) {
-    let tmp4 = importDefault(1569).getImeInsets(false, appEntryKey) > 0;
-    if (!tmp4) {
-      const APP_ENTRY_KEYS = _require(1570).APP_ENTRY_KEYS;
-      tmp4 = !APP_ENTRY_KEYS.some((arg0) => {
-        let tmp = arg0 !== closure_0;
-        if (tmp) {
-          tmp = outer1_1(outer1_2[3]).getImeInsets(false, arg0) > 0;
-          const obj = outer1_1(outer1_2[3]);
-        }
-        return tmp;
-      }) && null;
-      const tmp7 = !APP_ENTRY_KEYS.some((arg0) => {
-        let tmp = arg0 !== closure_0;
-        if (tmp) {
-          tmp = outer1_1(outer1_2[3]).getImeInsets(false, arg0) > 0;
-          const obj = outer1_1(outer1_2[3]);
-        }
-        return tmp;
-      }) && null;
-    }
-    tmp = tmp4;
-    const obj2 = importDefault(1569);
-  }
-  return tmp;
-}
 isMetaQuest = isMetaQuest.isMetaQuest();
 let closure_5 = { code: "function useSafeAreaBottomKeyboardInfoControllerTsx1(e){const{runOnJS,KeyboardStateDebugging,IS_SYSTEM_KEYBOARD_EXTERNAL,keyboardOverlapsCurrentAppEntry,keyboardOpenedHeight}=this.__closure;runOnJS(KeyboardStateDebugging.keyboardControllerWorkletEvent)('onStart',e.height);if(IS_SYSTEM_KEYBOARD_EXTERNAL)return;if(e.height>0&&keyboardOverlapsCurrentAppEntry.get()){keyboardOpenedHeight.set(e.height);}}" };
 let closure_6 = { code: "function useSafeAreaBottomKeyboardInfoControllerTsx2(e){const{runOnJS,KeyboardStateDebugging,IS_SYSTEM_KEYBOARD_EXTERNAL,keyboardOverlapsCurrentAppEntry,keyboardOpenedHeight}=this.__closure;runOnJS(KeyboardStateDebugging.keyboardControllerWorkletEvent)('onEnd',e.height);if(IS_SYSTEM_KEYBOARD_EXTERNAL)return;if(e.height>0&&keyboardOverlapsCurrentAppEntry.get()){keyboardOpenedHeight.set(e.height);}}" };
@@ -48,47 +19,95 @@ export default function useSafeAreaBottomKeyboardInfoController() {
   appEntryKey = obj.useAppEntryKey();
   let num = 0;
   if (!isMetaQuest) {
-    const KeyboardController = appEntryKey(keyboardOpenOrOpening[6]).KeyboardController;
+    const KeyboardController = tmp(tmp2[6]).KeyboardController;
     const stateResult = KeyboardController.state();
-    let height;
-    if (null != stateResult) {
-      height = stateResult.height;
+    let num2;
+    if (stateResult != null) {
+      num2 = stateResult.height;
     }
-    let num3 = 0;
-    if (null != height) {
-      num3 = height;
+    if (num2 == null) {
+      num2 = 0;
     }
-    num = num3;
+    num = num2;
   }
   let tmp7 = 0 !== num;
   if (tmp7) {
-    tmp7 = true === isKeyboardOverlappingAppEntry(appEntryKey);
+    let tmpResult = tmp(tmp2[2]);
+    let isAndroidResult = tmpResult.isAndroid();
+    let tmp9 = !isAndroidResult;
+    if (isAndroidResult) {
+      let tmp11 = keyboardOpenedHeight(tmp2[3]).getImeInsets(false, appEntryKey) > 0;
+      if (!tmp11) {
+        let APP_ENTRY_KEYS = tmp(tmp2[4]).APP_ENTRY_KEYS;
+        let someResult = APP_ENTRY_KEYS.some((arg0) => {
+          let tmp = arg0 !== closure_0;
+          if (tmp) {
+            tmp = outer1_1(outer1_2[3]).getImeInsets(false, arg0) > 0;
+            const obj = outer1_1(outer1_2[3]);
+          }
+          return tmp;
+        });
+        let tmp13 = !someResult;
+        if (!someResult) {
+          tmp13 = null;
+        }
+        tmp11 = tmp13;
+      }
+      tmp9 = tmp11;
+      const obj3 = keyboardOpenedHeight(tmp2[3]);
+    }
+    tmp7 = true === tmp9;
   }
-  let num4 = 0;
+  let num3 = 0;
   if (tmp7) {
-    num4 = num;
+    num3 = num;
   }
-  let obj1 = appEntryKey(keyboardOpenOrOpening[7]);
-  const keyboardOpenedHeight = obj1.useSharedValue(num4);
+  tmpResult = tmp(tmp2[7]);
+  keyboardOpenedHeight = tmpResult.useSharedValue(num3);
   keyboardOpenOrOpening = appEntryKey(keyboardOpenOrOpening[7]).useSharedValue(tmp7);
-  const obj3 = appEntryKey(keyboardOpenOrOpening[7]);
+  const tmpResult1 = appEntryKey(keyboardOpenOrOpening[7]);
   const keyboardOverlapsCurrentAppEntry = appEntryKey(keyboardOpenOrOpening[7]).useSharedValue(tmp7);
   const items = [appEntryKey, keyboardOpenOrOpening, keyboardOpenedHeight, keyboardOverlapsCurrentAppEntry];
   const effect = keyboardOverlapsCurrentAppEntry.useEffect(() => {
     function handleKeyboardShow(height) {
       if (height > 0) {
-        const tmp3 = outer2_7(c0);
-        if (null != tmp3) {
-          const result = store2.set(tmp3);
+        const isAndroidResult = callback(store[2]).isAndroid();
+        let tmp5 = !isAndroidResult;
+        if (isAndroidResult) {
+          let tmp2 = lib(tmp17[3]).getImeInsets(false, tmp15) > 0;
+          if (!tmp2) {
+            const APP_ENTRY_KEYS = tmp16(tmp17[4]).APP_ENTRY_KEYS;
+            const someResult = APP_ENTRY_KEYS.some((arg0) => {
+              let tmp = arg0 !== closure_0;
+              if (tmp) {
+                tmp = outer1_1(outer1_2[3]).getImeInsets(false, arg0) > 0;
+                const obj = outer1_1(outer1_2[3]);
+              }
+              return tmp;
+            });
+            let tmp4 = !someResult;
+            if (!someResult) {
+              tmp4 = null;
+            }
+            tmp2 = tmp4;
+          }
+          tmp5 = tmp2;
+          let obj = lib(tmp17[3]);
         }
-        if (false !== tmp3) {
-          if (true === tmp3) {
+        if (null != tmp5) {
+          const result = store2.set(tmp5);
+        }
+        if (false !== tmp5) {
+          if (true === tmp5) {
             const result1 = store.set(true);
-            const result2 = closure_1.set(height);
+            const result2 = lib.set(height);
           }
         } else {
           const result3 = store.set(false);
         }
+        const obj2 = callback(store[2]);
+        tmp15 = closure_0;
+        tmp16 = callback;
       }
     }
     if (!outer1_4) {
@@ -106,7 +125,7 @@ export default function useSafeAreaBottomKeyboardInfoController() {
         handleKeyboardShow(height.height);
       });
       const KeyboardEvents3 = appEntryKey(keyboardOpenOrOpening[6]).KeyboardEvents;
-      let result = KeyboardEvents3.addListener("keyboardWillHide", () => {
+      let noop = KeyboardEvents3.addListener("keyboardWillHide", () => {
         const result = keyboardOpenedHeight(keyboardOpenOrOpening[8]).keyboardControllerKeyboardWillHide();
         if (store2.get()) {
           if (!c0) {
@@ -123,16 +142,16 @@ export default function useSafeAreaBottomKeyboardInfoController() {
         }
       });
       return () => {
-        closure_1.remove();
+        lib.remove();
         store.remove();
         store2.remove();
         closure_4.remove();
       };
     }
   }, items);
-  const obj4 = appEntryKey(keyboardOpenOrOpening[7]);
-  obj = {};
-  const fn = function b(height) {
+  const tmpResult2 = appEntryKey(keyboardOpenOrOpening[7]);
+  obj = { onStart: null, onEnd: null };
+  const fn = function s(height) {
     appEntryKey(keyboardOpenOrOpening[7]).runOnJS(keyboardOpenedHeight(keyboardOpenOrOpening[8]).keyboardControllerWorkletEvent)("onStart", height.height);
     if (!outer1_4) {
       let value = height.height > 0;
@@ -144,12 +163,12 @@ export default function useSafeAreaBottomKeyboardInfoController() {
       }
     }
   };
-  obj = { runOnJS: appEntryKey(keyboardOpenOrOpening[7]).runOnJS, KeyboardStateDebugging: keyboardOpenedHeight(keyboardOpenOrOpening[8]), IS_SYSTEM_KEYBOARD_EXTERNAL: isMetaQuest, keyboardOverlapsCurrentAppEntry, keyboardOpenedHeight };
+  obj = { runOnJS: tmp(tmp2[7]).runOnJS, KeyboardStateDebugging: keyboardOpenedHeight(tmp2[8]), IS_SYSTEM_KEYBOARD_EXTERNAL: tmp4, keyboardOverlapsCurrentAppEntry, keyboardOpenedHeight };
   fn.__closure = obj;
   fn.__workletHash = 11726427166555;
   fn.__initData = closure_5;
-  obj.onStart = fn;
-  const fn2 = function y(height) {
+  obj[0] = fn;
+  const fn2 = function l(height) {
     appEntryKey(keyboardOpenOrOpening[7]).runOnJS(keyboardOpenedHeight(keyboardOpenOrOpening[8]).keyboardControllerWorkletEvent)("onEnd", height.height);
     if (!outer1_4) {
       let value = height.height > 0;
@@ -161,12 +180,12 @@ export default function useSafeAreaBottomKeyboardInfoController() {
       }
     }
   };
-  obj1 = { runOnJS: appEntryKey(keyboardOpenOrOpening[7]).runOnJS, KeyboardStateDebugging: keyboardOpenedHeight(keyboardOpenOrOpening[8]), IS_SYSTEM_KEYBOARD_EXTERNAL: isMetaQuest, keyboardOverlapsCurrentAppEntry, keyboardOpenedHeight };
-  fn2.__closure = obj1;
+  const tmpResult3 = appEntryKey(keyboardOpenOrOpening[6]);
+  fn2.__closure = { runOnJS: appEntryKey(keyboardOpenOrOpening[7]).runOnJS, KeyboardStateDebugging: keyboardOpenedHeight(keyboardOpenOrOpening[8]), IS_SYSTEM_KEYBOARD_EXTERNAL: isMetaQuest, keyboardOverlapsCurrentAppEntry, keyboardOpenedHeight };
   fn2.__workletHash = 15110866363831;
   fn2.__initData = closure_6;
-  obj.onEnd = fn2;
-  appEntryKey(keyboardOpenOrOpening[6]).useKeyboardHandler(obj, []);
+  obj[1] = fn2;
+  tmpResult3.useKeyboardHandler(obj, []);
   return { keyboardOpenOrOpening, keyboardOpenedHeight, keyboardOverlapsCurrentAppEntry };
 };
 export const IS_SYSTEM_KEYBOARD_EXTERNAL = isMetaQuest;

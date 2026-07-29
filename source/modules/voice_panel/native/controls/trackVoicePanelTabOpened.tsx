@@ -1,22 +1,22 @@
-// Module ID: 15958
-// Function ID: 123213
+// Module ID: 15993
+// Function ID: 15994
 // Name: trackVoicePanelTabOpened
-// Dependencies: [4177, 653, 675, 2]
+// Dependencies: [4201, 676, 698, 2]
 // Exports: default
 
-// Module 15958 (trackVoicePanelTabOpened)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 15993 (trackVoicePanelTabOpened)
+import generateOldThreadCutoff from "generateOldThreadCutoff";
 import { AnalyticEvents } from "ME";
 
-const result = require("expandLocation").fileFinishedImporting("modules/voice_panel/native/controls/trackVoicePanelTabOpened.tsx");
+const result = require("expandEventProperties").fileFinishedImporting("modules/voice_panel/native/controls/trackVoicePanelTabOpened.tsx");
 
 export default function trackVoicePanelTabOpened(arg0, tab, source) {
-  let hasUnreadResult = _isNativeReflectConstruct.hasUnread(arg0);
+  let obj = generateOldThreadCutoff;
+  let hasUnreadResult = generateOldThreadCutoff.hasUnread(arg0);
   if (!hasUnreadResult) {
-    hasUnreadResult = _isNativeReflectConstruct.getMentionCount(arg0) > 0;
+    hasUnreadResult = obj.getMentionCount(arg0) > 0;
   }
-  let obj = importDefault(675);
   obj = { tab, source, is_chat_badged: hasUnreadResult };
-  obj.track(AnalyticEvents.VOICE_PANEL_TAB_OPENED, obj);
+  importDefault(698).track(AnalyticEvents.VOICE_PANEL_TAB_OPENED, obj);
 };
 export const VoicePanelTabAnalyticsSources = { STORE: "store", GESTURE: "gesture", PREJOIN_BUTTON: "prejoin button", CONNECTED_BUTTON: "connected button", VOICE_CONTROLS: "voice controls", HEADER_BUTTON: "header button" };

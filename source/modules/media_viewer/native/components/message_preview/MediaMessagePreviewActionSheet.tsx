@@ -1,15 +1,16 @@
-// Module ID: 12292
-// Function ID: 95824
-// Dependencies: [31, 33, 3838, 6043, 4133, 1198, 5525, 3865, 7669, 5533, 5535, 9926, 1212, 6755, 9417, 2]
+// Module ID: 12314
+// Function ID: 12315
+// Dependencies: [19, 21, 3862, 6061, 4157, 1222, 5543, 3889, 7692, 5551, 5553, 9948, 1236, 6776, 9441, 2]
 
-// Module 12292
-import importAllResult from "result";
+// Module 12314
+import importAllResult from "noop";
 import jsxProd from "jsxProd";
 
-let closure_4;
-let closure_5;
+let c4;
+let c5;
 const require = arg1;
-({ jsx: closure_4, jsxs: closure_5 } = jsxProd);
+let c3 = importAllResult;
+({ jsx: c4, jsxs: c5 } = jsxProd);
 const memoResult = importAllResult.memo(function MediaMessagePreviewActionSheet(channel) {
   let closeMediaModal;
   let user;
@@ -19,14 +20,15 @@ const memoResult = importAllResult.memo(function MediaMessagePreviewActionSheet(
   let callback;
   const DeveloperMode = channel(closeMediaModal[2]).DeveloperMode;
   let setting = DeveloperMode.useSetting();
-  let canReportUserResult = !user.isNonUserBot();
-  if (canReportUserResult) {
-    let obj = channel(closeMediaModal[3]);
-    canReportUserResult = obj.canReportUser(user);
+  const isNonUserBotResult = user.isNonUserBot();
+  let canReportUserResult = !isNonUserBotResult;
+  if (!isNonUserBotResult) {
+    let tmpResult = tmp(tmp2[3]);
+    canReportUserResult = tmpResult.canReportUser(user);
   }
   if (canReportUserResult) {
-    let obj1 = channel(closeMediaModal[3]);
-    canReportUserResult = obj1.canReportMessage(message);
+    tmpResult = tmp(tmp2[3]);
+    canReportUserResult = tmpResult.canReportMessage(message);
   }
   callback = callback.useCallback(() => {
     message(closeMediaModal[4]).hideActionSheet();
@@ -51,39 +53,37 @@ const memoResult = importAllResult.memo(function MediaMessagePreviewActionSheet(
     callback();
     const result = channel(closeMediaModal[8]).showReportModalForMessage(message, "mobile_media_message_preview_action_sheet");
   }, items2);
-  obj = {};
-  obj = { hasIcons: true };
-  obj1 = {};
-  const obj2 = { IconComponent: channel(closeMediaModal[11]).ChatArrowRightIcon };
-  obj1.icon = callback(channel(closeMediaModal[10]).ActionSheetRow.Icon, obj2);
-  const intl = channel(closeMediaModal[12]).intl;
-  obj1.label = intl.string(channel(closeMediaModal[12]).t["+TSRGD"]);
-  obj1.onPress = callback1;
-  const items3 = [callback(channel(closeMediaModal[10]).ActionSheetRow, obj1), , ];
+  let obj = { icon: null, label: null, onPress: null };
+  obj = { IconComponent: null };
+  obj[0] = channel(closeMediaModal[11]).ChatArrowRightIcon;
+  obj[0] = callback(channel(closeMediaModal[10]).ActionSheetRow.Icon, obj);
+  const intl = tmp(tmp2[12]).intl;
+  obj[1] = intl.string(channel(closeMediaModal[12]).t["+TSRGD"]);
+  obj[2] = callback1;
+  const items3 = [callback(channel(closeMediaModal[10]).ActionSheetRow, obj), , ];
   if (setting) {
-    const obj3 = {};
-    const obj4 = { IconComponent: channel(closeMediaModal[13]).IdIcon };
-    obj3.icon = callback(channel(closeMediaModal[10]).ActionSheetRow.Icon, obj4);
-    const intl2 = channel(closeMediaModal[12]).intl;
-    obj3.label = intl2.string(channel(closeMediaModal[12]).t.zBoHlf);
-    obj3.onPress = callback2;
-    setting = callback(channel(closeMediaModal[10]).ActionSheetRow, obj3);
+    const obj1 = { icon: null, label: null, onPress: null };
+    const obj2 = { IconComponent: null };
+    obj2[0] = tmp(tmp2[13]).IdIcon;
+    obj1[0] = tmp10(tmp(tmp2[10]).ActionSheetRow.Icon, obj2);
+    const intl2 = tmp(tmp2[12]).intl;
+    obj1[1] = intl2.string(tmp(tmp2[12]).t.zBoHlf);
+    obj1[2] = callback2;
+    setting = tmp10(tmp(tmp2[10]).ActionSheetRow, obj1);
   }
   items3[1] = setting;
   if (canReportUserResult) {
-    const obj5 = {};
-    const obj6 = { IconComponent: channel(closeMediaModal[14]).FlagIcon };
-    obj5.icon = callback(channel(closeMediaModal[10]).ActionSheetRow.Icon, obj6);
-    const intl3 = channel(closeMediaModal[12]).intl;
-    obj5.label = intl3.string(channel(closeMediaModal[12]).t["+78Pfm"]);
-    obj5.onPress = callback3;
-    obj5.variant = "danger";
-    canReportUserResult = callback(channel(closeMediaModal[10]).ActionSheetRow, obj5);
+    const obj3 = { icon: null, label: null, onPress: null, variant: "danger" };
+    const obj4 = { IconComponent: null };
+    obj4[0] = tmp(tmp2[14]).FlagIcon;
+    obj3[0] = tmp10(tmp(tmp2[10]).ActionSheetRow.Icon, obj4);
+    const intl3 = tmp(tmp2[12]).intl;
+    obj3[1] = intl3.string(tmp(tmp2[12]).t["+78Pfm"]);
+    obj3[2] = callback3;
+    canReportUserResult = tmp10(tmp(tmp2[10]).ActionSheetRow, obj3);
   }
   items3[2] = canReportUserResult;
-  obj.children = items3;
-  obj.children = closure_5(channel(closeMediaModal[10]).ActionSheetRow.Group, obj);
-  return callback(channel(closeMediaModal[9]).ActionSheet, obj);
+  return callback(channel(closeMediaModal[9]).ActionSheet, { children: closure_5(channel(closeMediaModal[10]).ActionSheetRow.Group, { hasIcons: true, children: items3 }) });
 });
 let result = require("explicitContentFromProto").fileFinishedImporting("modules/media_viewer/native/components/message_preview/MediaMessagePreviewActionSheet.tsx");
 

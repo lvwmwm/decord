@@ -1,31 +1,31 @@
-// Module ID: 15410
-// Function ID: 117335
+// Module ID: 15443
+// Function ID: 15444
 // Name: MembersFilterActionSheet
-// Dependencies: [31, 27, 4157, 1911, 8281, 33, 4165, 689, 566, 8280, 4133, 7631, 1273, 4161, 5533, 5220, 1212, 5223, 2]
+// Dependencies: [19, 17, 4181, 1935, 8305, 21, 4189, 712, 589, 8304, 4157, 7654, 1297, 4185, 5551, 5242, 1236, 5245, 2]
 // Exports: default
 
-// Module 15410 (MembersFilterActionSheet)
-import result from "result";
-import { View } from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_6 from "_createForOfIteratorHelperLoose";
-import closure_7 from "_isNativeReflectConstruct";
+// Module 15443 (MembersFilterActionSheet)
+import noop from "noop";
+import { View } from "BottomSheetModal";
+import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
+import createGuildRoleRecordFromRust from "createGuildRoleRecordFromRust";
+import handleFormInit from "handleFormInit";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_8;
-let closure_9;
+let c9;
+let metroImportAll;
 const require = arg1;
-({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { marginVertical: 8, borderRadius: require("_createForOfIteratorHelperLoose").radii.lg, overflow: "hidden" };
-_createForOfIteratorHelperLoose.listView = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.roleDot = { marginEnd: 4 };
-_createForOfIteratorHelperLoose.labelContainer = { flexDirection: "row" };
-_createForOfIteratorHelperLoose.label = { color: require("_createForOfIteratorHelperLoose").colors.INTERACTIVE_TEXT_DEFAULT };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-let obj1 = { color: require("_createForOfIteratorHelperLoose").colors.INTERACTIVE_TEXT_DEFAULT };
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/guild_settings/native/MembersFilterActionSheet.tsx");
+({ jsx: metroImportAll, jsxs: c9 } = jsxProd);
+createCacheKey = { listView: null, roleDot: null, labelContainer: null, label: null };
+createCacheKey = { marginVertical: 8, borderRadius: require("Themes").radii.lg, overflow: "hidden" };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { marginEnd: 4 };
+createCacheKey[2] = { flexDirection: "row" };
+createCacheKey[3] = { color: require("Themes").colors.INTERACTIVE_TEXT_DEFAULT };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let obj1 = { color: require("Themes").colors.INTERACTIVE_TEXT_DEFAULT };
+let result = require("maybeApplyNoTextColorForLightCustomTheme").fileFinishedImporting("modules/guild_settings/native/MembersFilterActionSheet.tsx");
 
 export default function MembersFilterActionSheet(onFilterRoleId) {
   let require;
@@ -38,10 +38,10 @@ export default function MembersFilterActionSheet(onFilterRoleId) {
   let React;
   let callback;
   let stateFromStores1;
-  const tmp2 = _createForOfIteratorHelperLoose();
+  const tmp2 = createCacheKey();
   React = tmp2;
   let obj = require(onFilterRoleId[8]);
-  let items = [closure_6];
+  let items = [createGuildRoleRecordFromRust];
   const stateFromStores = obj.useStateFromStores(items, () => outer1_6.getSortedRoles(id.id));
   const mapped = stateFromStores.map((id) => {
     const merged = Object.assign(id);
@@ -49,17 +49,18 @@ export default function MembersFilterActionSheet(onFilterRoleId) {
   });
   mapped.unshift(mapped.splice(mapped.length - 1, 1)[0]);
   let items1 = [onFilterRoleId, selectedRoleId];
-  callback = React.useCallback((roleId) => {
-    let obj = roleId;
-    if (roleId !== selectedRoleId) {
+  callback = React.useCallback((hideActionSheet) => {
+    if (hideActionSheet !== selectedRoleId) {
+      let hideActionSheetResult = onFilterRoleId;
       if (null != onFilterRoleId) {
-        onFilterRoleId(obj);
+        const result = hideActionSheetResult(hideActionSheet);
       } else {
-        const role = selectedRoleId(onFilterRoleId[9]).selectRole(obj);
-        const obj2 = selectedRoleId(onFilterRoleId[9]);
+        const role = selectedRoleId(onFilterRoleId[9]).selectRole(hideActionSheet);
+        const obj = selectedRoleId(onFilterRoleId[9]);
       }
-      obj = selectedRoleId(onFilterRoleId[10]);
-      obj.hideActionSheet("MembersFilter");
+      hideActionSheet = selectedRoleId(onFilterRoleId[10]).hideActionSheet;
+      hideActionSheetResult = hideActionSheet("MembersFilter");
+      const tmp9 = selectedRoleId(onFilterRoleId[10]);
     }
   }, items1);
   let obj1 = require(onFilterRoleId[8]);
@@ -68,45 +69,44 @@ export default function MembersFilterActionSheet(onFilterRoleId) {
   const items3 = [callback, stateFromStores1, selectedRoleId, tmp2];
   const callback1 = React.useCallback((item) => {
     item = item.item;
-    let obj = { value: item.id };
-    obj = { style: _undefined.labelContainer };
-    let tmp4 = "dot" === stateFromStores1;
-    if (tmp4) {
-      tmp4 = null != item.colorString;
+    let obj = { value: item.id, label: null, legacyCompat_onPress: null, legacyCompat_selected: null };
+    obj = { style: _undefined.labelContainer, children: null };
+    let tmpResult = "dot" === stateFromStores1;
+    if (tmpResult) {
+      tmpResult = null != item.colorString;
     }
-    if (tmp4) {
-      obj = { containerStyles: _undefined.roleDot };
-      ({ colorString: obj3.color, colorStrings: obj3.colors } = item);
-      tmp4 = outer1_8(outer1_0(onFilterRoleId[12]).RoleDot, obj);
+    if (tmpResult) {
+      obj = { containerStyles: null, color: null, colors: null };
+      obj[0] = tmp6.roleDot;
+      ({ colorString: obj3[1], colorStrings: obj3[2] } = item);
+      tmpResult = tmp(tmp2(tmp3[12]).RoleDot, obj);
     }
-    const items = [tmp4, ];
-    const obj1 = { variant: "text-md/medium" };
+    const items = [tmpResult, ];
     const items1 = [_undefined.label, ];
-    let tmp11 = null;
+    let tmp10 = null;
     if (null != item.colorString) {
-      tmp11 = null;
+      tmp10 = null;
       if ("username" === stateFromStores1) {
-        const obj2 = { color: item.colorString };
-        tmp11 = obj2;
+        const obj1 = { color: null };
+        obj1[0] = item.colorString;
+        tmp10 = obj1;
       }
     }
-    items1[1] = tmp11;
-    obj1.style = items1;
-    obj1.children = item.name;
-    items[1] = outer1_8(outer1_0(onFilterRoleId[13]).Text, obj1);
-    obj.children = items;
-    obj.label = outer1_9(callback, obj);
-    obj.legacyCompat_onPress = function legacyCompat_onPress() {
+    items1[1] = tmp10;
+    items[1] = outer1_8(outer1_0(onFilterRoleId[13]).Text, { variant: "text-md/medium", style: items1, children: item.name });
+    obj[1] = items;
+    obj[1] = outer1_9(callback, obj);
+    obj[2] = function legacyCompat_onPress() {
       return outer1_4(item.id);
     };
-    obj.legacyCompat_selected = item.id === selectedRoleId;
+    obj[3] = item.id === selectedRoleId;
     return outer1_8(outer1_0(onFilterRoleId[11]).TableRadioRow, obj);
   }, items3);
-  obj = { scrollable: true };
-  obj = {};
+  obj = { scrollable: true, header: null, children: null };
+  obj = { title: null };
   const intl = require(onFilterRoleId[16]).intl;
-  obj.title = intl.string(require(onFilterRoleId[16]).t.pEasFX);
-  obj.header = callback(require(onFilterRoleId[15]).BottomSheetTitleHeader, obj);
+  obj[0] = intl.string(require(onFilterRoleId[16]).t.pEasFX);
+  obj[1] = callback(require(onFilterRoleId[15]).BottomSheetTitleHeader, obj);
   obj1 = {
     data: mapped,
     keyExtractor(id) {
@@ -117,6 +117,6 @@ export default function MembersFilterActionSheet(onFilterRoleId) {
     initialNumToRender: 10,
     removeClippedSubviews: false
   };
-  obj.children = callback(require(onFilterRoleId[17]).BottomSheetFlatList, obj1);
+  obj[2] = callback(require(onFilterRoleId[17]).BottomSheetFlatList, obj1);
   return callback(require(onFilterRoleId[14]).ActionSheet, obj);
 };

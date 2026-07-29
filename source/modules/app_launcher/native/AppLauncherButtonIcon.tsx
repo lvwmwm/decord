@@ -1,11 +1,11 @@
-// Module ID: 11380
-// Function ID: 88254
+// Module ID: 11404
+// Function ID: 11405
 // Name: AppLauncherButtonIcon
-// Dependencies: [31, 27, 33, 4031, 1555, 10190, 6592, 2]
+// Dependencies: [19, 17, 21, 4055, 1579, 10211, 6613, 2]
 // Exports: AppLauncherButtonIcon
 
-// Module 11380 (AppLauncherButtonIcon)
-import "result";
+// Module 11404 (AppLauncherButtonIcon)
+import "noop";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
 
@@ -14,26 +14,24 @@ const result = require("jsxProd").fileFinishedImporting("modules/app_launcher/na
 
 export const AppLauncherButtonIcon = function AppLauncherButtonIcon(style) {
   style = style.style;
-  let obj = Object.create(null);
-  obj.style = 0;
-  const merged = Object.assign(style, obj);
-  obj = { style: { overflow: "hidden" } };
-  if (tmp3 === require(1555) /* KeyboardTypes */.KeyboardTypes.APP_LAUNCHER) {
+  const merged = Object.assign(style, Object.create(null));
+  let obj = { style: { overflow: "hidden" }, children: null };
+  if (tmp3 === require(1579) /* KeyboardTypes */.KeyboardTypes.APP_LAUNCHER) {
     obj = {};
     const merged1 = Object.assign(merged);
     const items = [style, ];
-    const obj1 = {};
-    const obj2 = { rotate: "45deg" };
-    const items1 = [obj2];
-    obj1.transform = items1;
-    items[1] = obj1;
-    obj["style"] = items;
-    let tmp12 = jsx(require(10190) /* PlusLargeIcon */.PlusLargeIcon, {});
+    obj = { transform: null };
+    const items1 = [{ rotate: "45deg" }];
+    obj[0] = items1;
+    items[1] = obj;
+    obj.style = items;
+    let tmp4Result = tmp4(tmp6(10211).PlusLargeIcon, obj);
   } else {
-    const obj3 = { style };
+    const obj1 = { style: null };
+    obj1[0] = style;
     const merged2 = Object.assign(merged);
-    tmp12 = jsx(require(6592) /* AppsIcon */.AppsIcon, { style });
+    tmp4Result = tmp4(tmp6(6613).AppsIcon, obj1);
   }
-  obj.children = tmp12;
-  return <View style={{ overflow: "hidden" }} />;
+  obj[1] = tmp4Result;
+  return <View style={{ overflow: "hidden" }}>{null}</View>;
 };

@@ -1,9 +1,9 @@
-// Module ID: 277
-// Function ID: 3435
+// Module ID: 14761
+// Function ID: 14762
 // Name: NativeStartupFlagsModule
-// Dependencies: [27, 2]
+// Dependencies: [17, 2]
 
-// Module 277 (NativeStartupFlagsModule)
+// Module 14761 (NativeStartupFlagsModule)
 import { TurboModuleRegistry } from "get ActivityIndicator";
 
 const value = TurboModuleRegistry.get("NativeStartupFlagsModule");

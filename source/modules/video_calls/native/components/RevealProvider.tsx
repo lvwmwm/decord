@@ -1,63 +1,61 @@
-// Module ID: 10485
-// Function ID: 81132
+// Module ID: 10509
+// Function ID: 10510
 // Name: useRevealProviderValue
-// Dependencies: [31, 3858, 4179, 10214, 33, 566, 10216, 10486, 477, 4101, 6658, 10492, 2]
+// Dependencies: [19, 3882, 4203, 10235, 21, 589, 10237, 10510, 500, 4125, 6679, 10516, 2]
 // Exports: default
 
-// Module 10485 (useRevealProviderValue)
-import importAllResult from "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_5 from "_isNativeReflectConstruct";
-import resetFocusTimer from "resetFocusTimer";
+// Module 10509 (useRevealProviderValue)
+import importAllResult from "noop";
+import setContent from "setContent";
+import set from "set";
+import VoiceChatDrawerState from "VoiceChatDrawerState";
 import jsxProd from "jsxProd";
 
-let closure_10;
-let closure_11;
+let c10;
+let c9;
 let closure_6;
-let closure_7;
-let closure_8;
-let closure_9;
+let error;
+let metroImportAll;
+let unpackModuleId;
 let require = arg1;
 function useRevealProviderValue(arg0, channel) {
   let tmp = arg0;
-  const items = [_isNativeReflectConstruct];
-  const stateFromStores = require(566) /* initialize */.useStateFromStores(items, () => null != outer1_4.getKey());
-  const obj = require(566) /* initialize */;
-  const tmp3 = importDefault(10216)(channel);
-  const tmp4 = callback2();
-  const items1 = [closure_5];
-  const stateFromStores1 = require(566) /* initialize */.useStateFromStores(items1, () => null != outer1_5.getAwaitingRemoteSessionInfo());
-  const obj2 = require(566) /* initialize */;
+  const items = [setContent];
+  const stateFromStores = require(589) /* initialize */.useStateFromStores(items, () => null != key.getKey());
+  const obj = require(589) /* initialize */;
+  const tmp2 = require;
+  const tmp5 = importDefault(10237)(channel);
+  const tmp6 = callback2();
+  const items1 = [set];
+  const stateFromStores1 = require(589) /* initialize */.useStateFromStores(items1, () => null != awaitingRemoteSessionInfo.getAwaitingRemoteSessionInfo());
+  const obj2 = require(589) /* initialize */;
   if (!arg0) {
     tmp = stateFromStores;
   }
   if (!tmp) {
-    tmp = tmp3;
+    tmp = tmp5;
   }
   if (!tmp) {
     tmp = null === channel;
   }
   if (!tmp) {
-    tmp = tmp4;
+    tmp = tmp6;
   }
   if (!tmp) {
     tmp = stateFromStores1;
   }
   require = tmp;
-  const tmp6 = importDefault(10486)(channel.id);
-  const tmp8 = !require(477) /* set */.isIOS();
-  let tmp9 = !tmp8;
-  if (!tmp8) {
-    tmp9 = tmp6;
-  }
-  importDefault = tmp9;
-  const items2 = [tmp, tmp9];
+  const tmp8 = importDefault(10510)(channel.id);
+  const tmp10 = tmp2(500).isIOS() && tmp8;
+  importDefault = tmp10;
+  const items2 = [tmp, tmp10];
   return importAllResult.useMemo(() => ({ reveal: closure_0, prefersDeferringSystemGestures: closure_1 }), items2);
 }
-({ useChannelCallStore: closure_6, focusTimeout: closure_7, resetFocusTimer: closure_8, useIsVoiceChatFocused: closure_9 } = resetFocusTimer);
-({ jsx: closure_10, jsxs: closure_11 } = jsxProd);
+let c3 = importAllResult;
+({ useChannelCallStore: closure_6, focusTimeout: error, resetFocusTimer: metroImportAll, useIsVoiceChatFocused: c9 } = VoiceChatDrawerState);
+({ jsx: c10, jsxs: unpackModuleId } = jsxProd);
 const context = importAllResult.createContext({ reveal: true });
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/video_calls/native/components/RevealProvider.tsx");
+const result = require("set").fileFinishedImporting("modules/video_calls/native/components/RevealProvider.tsx");
 
 export default function RevealProvider(showStatus) {
   let channel;
@@ -89,34 +87,25 @@ export default function RevealProvider(showStatus) {
   let str = "light-content";
   if (flag2) {
     str = "light-content";
-    if ("dark" !== tmp4) {
+    if ("dark" !== tmp6) {
       str = "dark-content";
     }
   }
-  let obj = { value: tmp2 };
-  obj = {};
-  let tmp8 = !reveal;
-  if (tmp8) {
-    tmp8 = !flag;
+  const obj = { value: tmp2, children: null };
+  let tmp10 = !reveal;
+  let tmp4Result = tmp4(6679);
+  if (!reveal) {
+    tmp10 = !flag;
   }
-  obj.hidden = tmp8;
-  obj.animated = true;
-  obj.barStyle = str;
-  const items1 = [closure_10(importDefault(6658), obj), children, ];
-  obj = {};
-  let tmp11 = !reveal;
-  const tmp5 = closure_11;
-  const tmp6 = closure_10;
-  const tmp7 = importDefault(6658);
-  const tmp9 = closure_10;
-  if (tmp11) {
-    tmp11 = !prefersDeferringSystemGestures;
+  const items1 = [closure_10(tmp4Result, { hidden: tmp10, animated: true, barStyle: str }), children, ];
+  let tmp12 = !reveal;
+  tmp4Result = tmp4(10516);
+  if (!reveal) {
+    tmp12 = !prefersDeferringSystemGestures;
   }
-  obj.prefersHidden = tmp11;
-  obj.prefersDeferringSystemGestures = prefersDeferringSystemGestures;
-  items1[2] = tmp9(importDefault(10492), obj);
-  obj.children = items1;
-  return tmp5(context.Provider, obj);
+  items1[2] = closure_10(tmp4Result, { prefersHidden: tmp12, prefersDeferringSystemGestures });
+  obj[1] = items1;
+  return closure_11(context.Provider, obj);
 };
 export const RevealContext = context;
 export { useRevealProviderValue };

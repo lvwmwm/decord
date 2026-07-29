@@ -1,45 +1,44 @@
-// Module ID: 10404
-// Function ID: 80154
+// Module ID: 10428
+// Function ID: 10429
 // Name: StickyWrapper
-// Dependencies: [31, 27, 33, 478, 2]
+// Dependencies: [19, 17, 21, 501, 2]
 // Exports: StickyWrapper
 
-// Module 10404 (StickyWrapper)
-import "result";
+// Module 10428 (StickyWrapper)
+import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
 
 let StyleSheet;
-let closure_2;
-let closure_3;
-let closure_4;
+let c3;
+let c4;
+let obj1;
 const require = arg1;
-({ StyleSheet, View: closure_2 } = get_ActivityIndicator);
-({ jsx: closure_3, jsxs: closure_4 } = jsxProd);
+({ StyleSheet, View: obj1 } = get_ActivityIndicator);
+({ jsx: c3, jsxs: c4 } = jsxProd);
 const styles = StyleSheet.create({ wrapper: { height: "100%", width: "100%" }, header: { zIndex: 1 }, androidHeader: { position: "absolute", top: 0, left: 0, right: 0 } });
 const result = require("jsxProd").fileFinishedImporting("design/components/Sticky/native/StickyWrapper.native.tsx");
 
 export const StickyWrapper = function StickyWrapper(header) {
   header = header.header;
-  let obj = { style: items, pointerEvents: header.pointerEvents };
-  items = [header.style, closure_5.wrapper];
-  let tmp4Result = null;
+  let obj = { style: items, pointerEvents: header.pointerEvents, children: null };
+  items = [header.style, wrapper.wrapper];
+  let tmp5Result = null;
   if (null != header) {
-    obj = {};
-    const items1 = [closure_5.header, ];
+    const items1 = [tmp3.header, ];
     let androidHeader;
-    if (obj3.isAndroid()) {
-      androidHeader = closure_5.androidHeader;
+    if (obj2.isAndroid()) {
+      androidHeader = tmp3.androidHeader;
     }
+    obj = { style: null, children: null };
     items1[1] = androidHeader;
-    obj.style = items1;
-    obj.children = header;
-    tmp4Result = closure_3(closure_2, obj);
-    obj3 = require(478) /* isWindows */;
-    const tmp4 = closure_3;
-    const tmp5 = closure_2;
+    obj[0] = items1;
+    obj[1] = header;
+    tmp5Result = closure_3(tmp2, obj);
+    obj2 = require(501) /* PlatformTypes */;
+    const tmp5 = closure_3;
   }
-  const items2 = [tmp4Result, header.children];
-  obj.children = items2;
+  const items2 = [tmp5Result, header.children];
+  obj[2] = items2;
   return closure_4(closure_2, obj);
 };

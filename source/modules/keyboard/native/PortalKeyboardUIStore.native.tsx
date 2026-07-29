@@ -1,14 +1,11 @@
-// Module ID: 4032
-// Function ID: 33260
-// Name: closePortalKeyboard
-// Dependencies: [4033, 4035, 491, 2]
-// Exports: closePortalKeyboardIfUnhandled, closePortalKeyboardRequest, handlePortalKeyboardOpen, isPortalKeyboardOpenForChannel, openPortalKeyboard, registerPortalKeyboardRenderer
+// Module ID: 4056
+// Function ID: 4057
+// Name: zustandStore
+// Dependencies: [4057, 4059, 514, 2]
+// Exports: closePortalKeyboard, closePortalKeyboardIfUnhandled, closePortalKeyboardRequest, handlePortalKeyboardOpen, isPortalKeyboardOpenForChannel, openPortalKeyboard, registerPortalKeyboardRenderer
 
-// Module 4032 (closePortalKeyboard)
-function closePortalKeyboard() {
-  zustandStore.setState({ state: require(4035) /* PortalKeyboardState */.PortalKeyboardState.CLOSED, keyboard: null });
-}
-const zustandStore = require("defaultStatesAreEqual").createZustandStore(() => ({ keyboard: null, state: require(4035) /* PortalKeyboardState */.PortalKeyboardState.EMPTY, renderers: [] }));
+// Module 4056 (zustandStore)
+const zustandStore = require("defaultStatesAreEqual").createZustandStore(() => ({ keyboard: null, state: require(4059) /* PortalKeyboardState */.PortalKeyboardState.EMPTY, renderers: [] }));
 const result = require("v1").fileFinishedImporting("modules/keyboard/native/PortalKeyboardUIStore.native.tsx");
 
 export const PortalKeyboardUIStore = { getField: zustandStore.getField, useField: zustandStore.useField };
@@ -18,126 +15,119 @@ export const isPortalKeyboardOpenForChannel = function isPortalKeyboardOpenForCh
   state = zustandStore.getState();
   ({ state, keyboard } = state);
   let channelId;
-  if (null != keyboard) {
+  if (keyboard != null) {
     channelId = keyboard.channelId;
   }
   let tmp3 = channelId === arg0;
   if (tmp3) {
-    let tmp6 = state === require(4035) /* PortalKeyboardState */.PortalKeyboardState.REQUEST_OPEN;
-    if (!tmp6) {
-      tmp6 = state === require(4035) /* PortalKeyboardState */.PortalKeyboardState.OPENING;
-    }
-    if (!tmp6) {
-      tmp6 = state === require(4035) /* PortalKeyboardState */.PortalKeyboardState.OPEN;
-    }
-    tmp3 = tmp6;
+    tmp3 = state === require(4059) /* PortalKeyboardState */.PortalKeyboardState.REQUEST_OPEN || state === require(4059) /* PortalKeyboardState */.PortalKeyboardState.OPENING || state === require(4059) /* PortalKeyboardState */.PortalKeyboardState.OPEN;
+    const tmp6 = state === require(4059) /* PortalKeyboardState */.PortalKeyboardState.REQUEST_OPEN || state === require(4059) /* PortalKeyboardState */.PortalKeyboardState.OPENING || state === require(4059) /* PortalKeyboardState */.PortalKeyboardState.OPEN;
   }
   return tmp3;
 };
-export const openPortalKeyboard = function openPortalKeyboard(type, closure_0, closure_1) {
+export const openPortalKeyboard = function openPortalKeyboard(type, closure_0, arg2) {
   let keyboard;
   let state;
+  let obj = zustandStore;
   state = zustandStore.getState();
   ({ state, keyboard } = state);
   type = undefined;
-  if (null != keyboard) {
+  if (keyboard != null) {
     type = keyboard.type;
   }
   let tmp3 = type === type;
   if (tmp3) {
     let channelId;
-    if (null != keyboard) {
+    if (keyboard != null) {
       channelId = keyboard.channelId;
     }
     tmp3 = channelId === closure_0;
   }
-  let tmp5 = state === require(4035) /* PortalKeyboardState */.PortalKeyboardState.REQUEST_OPEN;
-  if (!tmp5) {
-    tmp5 = state === require(4035) /* PortalKeyboardState */.PortalKeyboardState.OPENING;
-  }
-  if (!tmp5) {
-    tmp5 = state === require(4035) /* PortalKeyboardState */.PortalKeyboardState.OPEN;
-  }
   if (tmp3) {
-    tmp3 = tmp5;
+    tmp3 = tmp7;
   }
   if (!tmp3) {
-    let obj = {};
-    obj = { id: require(491) /* v1 */.v4(), type, channelId: closure_0, chatInputRef: closure_1 };
-    obj.keyboard = obj;
-    obj.state = require(4035) /* PortalKeyboardState */.PortalKeyboardState.REQUEST_OPEN;
-    zustandStore.setState(obj);
-    const obj3 = require(491) /* v1 */;
+    obj = { keyboard: null, state: null };
+    obj = { id: null, type: null, channelId: null, chatInputRef: null };
+    obj[0] = tmp5(514).v4();
+    obj[1] = type;
+    obj[2] = closure_0;
+    obj[3] = arg2;
+    obj[0] = obj;
+    obj[1] = tmp5(4059).PortalKeyboardState.REQUEST_OPEN;
+    obj.setState(obj);
+    const tmp5Result = tmp5(514);
   }
 };
 export const registerPortalKeyboardRenderer = function registerPortalKeyboardRenderer(id) {
   let closure_0 = id;
   zustandStore.setState((renderers) => {
     renderers = renderers.renderers;
-    let tmp = renderers;
+    let tmp2 = renderers;
     if (!renderers.includes(closure_0)) {
-      const obj = {};
+      const obj = { renderers: null };
       const items = [];
-      const arraySpreadResult = HermesBuiltin.arraySpread(renderers.renderers, 0);
-      items[arraySpreadResult] = closure_0;
-      const sum = arraySpreadResult + 1;
-      obj.renderers = items;
-      tmp = obj;
+      items[HermesBuiltin.arraySpread(renderers.renderers, 0)] = closure_0;
+      obj[0] = items;
+      tmp2 = obj;
     }
-    return tmp;
+    return tmp2;
   });
   return () => {
     outer1_2.setState((renderers) => {
       renderers = renderers.renderers;
-      return { renderers: renderers.filter((arg0) => arg0 !== outer2_0) };
+      return { renderers: renderers.filter((arg0) => arg0 !== closure_0) };
     });
   };
 };
-export const handlePortalKeyboardOpen = function handlePortalKeyboardOpen(outer1_1) {
-  let closure_0 = outer1_1;
+export const handlePortalKeyboardOpen = function handlePortalKeyboardOpen(id) {
+  let closure_0 = id;
   zustandStore.setState((keyboard) => {
     let tmp = keyboard;
     if (null != keyboard.keyboard) {
       tmp = keyboard;
-      if (keyboard.keyboard.handlerId !== outer1_1) {
-        let obj = {};
+      if (keyboard.keyboard.handlerId !== id) {
+        let obj = { keyboard: null, state: null };
         obj = {};
         const merged = Object.assign(keyboard.keyboard);
-        obj["handlerId"] = outer1_1;
-        obj.keyboard = obj;
-        obj.state = outer1_1(outer1_1[1]).PortalKeyboardState.OPEN;
+        obj.handlerId = tmp2;
+        obj[0] = obj;
+        obj[1] = id(outer1_1[1]).PortalKeyboardState.OPEN;
         tmp = obj;
       }
     }
     return tmp;
   });
 };
-export { closePortalKeyboard };
+export const closePortalKeyboard = function closePortalKeyboard() {
+  zustandStore.setState({ state: require(4059) /* PortalKeyboardState */.PortalKeyboardState.CLOSED, keyboard: null });
+};
 export const closePortalKeyboardIfUnhandled = function closePortalKeyboardIfUnhandled() {
+  let obj = zustandStore;
   const state = zustandStore.getState();
   const keyboard = state.keyboard;
   let tmp3 = null == keyboard;
   if (tmp3) {
-    tmp3 = tmp2 === require(4035) /* PortalKeyboardState */.PortalKeyboardState.CLOSED;
+    tmp3 = tmp2 === require(4059) /* PortalKeyboardState */.PortalKeyboardState.CLOSED;
   }
   if (!tmp3) {
     let handlerId;
-    if (null != keyboard) {
+    if (keyboard != null) {
       handlerId = keyboard.handlerId;
     }
     if (null == handlerId) {
-      closePortalKeyboard();
+      obj = { state: null, keyboard: null };
+      obj[0] = require(4059) /* PortalKeyboardState */.PortalKeyboardState.CLOSED;
+      obj.setState(obj);
     }
   }
 };
 export const closePortalKeyboardRequest = function closePortalKeyboardRequest() {
+  let obj = zustandStore;
   const field = zustandStore.getField("state");
-  let tmp2 = field !== require(4035) /* PortalKeyboardState */.PortalKeyboardState.CLOSED;
-  if (tmp2) {
-    tmp2 = field !== require(4035) /* PortalKeyboardState */.PortalKeyboardState.REQUEST_CLOSE;
-  }
-  if (tmp2) {
-    const obj = { state: require(4035) /* PortalKeyboardState */.PortalKeyboardState.REQUEST_CLOSE };
-    zustandStore.setState(obj);
+  if (tmp4) {
+    obj = { state: null };
+    obj[0] = tmp2(4059).PortalKeyboardState.REQUEST_CLOSE;
+    obj.setState(obj);
   }
 };

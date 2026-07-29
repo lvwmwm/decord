@@ -1,212 +1,177 @@
-// Module ID: 16302
-// Function ID: 126353
-// Name: _isNativeReflectConstruct
-// Dependencies: [7, 6, 15, 17, 18, 8281, 1194, 8325, 16303, 1342, 653, 4017, 4016, 4374, 9161, 16304, 16305, 16313, 16314, 16596, 16598, 5112, 2]
+// Module ID: 16337
+// Function ID: 16338
+// Name: handlePushedModal
+// Dependencies: [8305, 1218, 8349, 16338, 1366, 676, 4041, 4040, 4397, 9185, 16339, 16340, 16348, 5134, 16349, 16631, 16633, 2]
 
-// Module 16302 (_isNativeReflectConstruct)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_4 from "_isNativeReflectConstruct";
-import isEligibleForSafetyFlowsExperiment from "isEligibleForSafetyFlowsExperiment";
-import handleTouch from "handleTouch";
-import close from "close";
-import closure_8 from "_isNativeReflectConstruct";
-import closure_9 from "_isNativeReflectConstruct";
-import closure_10 from "_isNativeReflectConstruct";
-import closure_11 from "_isNativeReflectConstruct";
-import importDefaultResult from "_isNativeReflectConstruct";
+// Module 16337 (handlePushedModal)
+import handleFormInit from "handleFormInit";
+import fetchFingerprint from "fetchFingerprint";
+import updateWithLatestInvite from "updateWithLatestInvite";
+import FormStates from "FormStates";
+import importDefaultResult from "handleRequiredAction";
 import ME from "ME";
-import tmp4 from "AutomaticLifecycleManager";
+import "initialize";
 
 const require = arg1;
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
-  }
-  const result = _isNativeReflectConstruct();
-}
-function _createForOfIteratorHelperLoose(iterable) {
-  let closure_0 = iterable;
-  iterable = "undefined" !== typeof Symbol;
-  if (iterable) {
-    const _Symbol = Symbol;
-    iterable = iterable[Symbol.iterator];
-  }
-  if (!iterable) {
-    iterable = iterable[Symbol.iterator];
-  }
-  if (iterable) {
-    const iter = iterable.call(iterable);
-    const next = iter.next;
-    return next.bind(iter);
-  } else {
-    const _Array = Array;
-    let tmp = iterable;
-    if (!Array.isArray(iterable)) {
-      let tmp2;
-      if (iterable) {
-        if ("string" === typeof iterable) {
-          tmp2 = _arrayLikeToArray(iterable, undefined);
-        } else {
-          const toString = {}.toString;
-          const substr = toString.call(iterable).slice(8, -1);
-          let name = substr;
-          if (tmp3) {
-            name = iterable.constructor.name;
-          }
-          if ("Map" !== name) {
-            if ("Set" !== name) {
-              if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(iterable, undefined);
-              } else {
-                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
-              }
-            }
-            tmp2 = arr;
-          }
-          const _Array2 = Array;
-          arr = Array.from(iterable);
-          const callResult = toString.call(iterable);
-          tmp3 = "Object" === substr && iterable.constructor;
-        }
-      }
-      tmp = tmp2;
-      if (!tmp2) {
-        const _TypeError = TypeError;
-        const typeError = new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
-        throw typeError;
-      }
-    }
-    if (tmp) {
-      closure_0 = tmp;
-    }
-    let c1 = 0;
-    return () => {
-      if (closure_1 >= length.length) {
-        let obj = { done: true };
-      } else {
-        obj = { done: false };
-        closure_1 = tmp3 + 1;
-        obj.value = length[+closure_1];
-      }
-      return obj;
-    };
-  }
-}
-function _arrayLikeToArray(arg0, arg1) {
-  let length;
-  if (tmp) {
-    length = arg0.length;
-  }
-  const ArrayResult = Array(length);
-  for (let num = 0; num < length; num = num + 1) {
-    ArrayResult[num] = arg0[num];
-  }
-  return ArrayResult;
-}
 function handlePushedModal(key) {
-  let obj = require(4017) /* getRootNavigationRef */;
+  let obj = require(4041) /* getRootNavigationRef */;
   const rootNavigationRef = obj.getRootNavigationRef();
   if (null != rootNavigationRef) {
-    obj = { name: "modal", key: key.key };
-    obj = { modal: key };
-    obj.params = obj;
+    obj = { name: "modal", key: null, params: null };
+    obj[1] = key.key;
+    obj = { modal: null };
+    obj[0] = key;
+    obj[2] = obj;
     rootNavigationRef.navigate(obj);
   }
 }
 function handlePoppedModal() {
-  require(4016) /* _createForOfIteratorHelperLoose */.popModal();
+  require(4040) /* navigationToRootTabHelper */.popModal();
 }
 function pushFirstOpenModal(arg0, arg1) {
-  let value;
-  const tmp = _createForOfIteratorHelperLoose(arg0);
-  let iter = tmp();
-  if (!iter.done) {
-    while (true) {
-      value = iter.value;
-      let isOpenResult;
-      if (null != value) {
-        if (null != value.isOpen) {
-          let tmp3 = APP;
-          isOpenResult = value.isOpen(APP, arg1);
-        }
-      }
-      if (null == isOpenResult) {
-        break;
-      } else if (isOpenResult) {
-        break;
-      } else {
-        let iter2 = tmp();
-        iter = iter2;
+  const iter = arg0[Symbol.iterator]();
+  const nextResult = iter.next();
+  while (iter !== undefined) {
+    let key = nextResult;
+    let isOpenResult;
+    if (nextResult != null) {
+      let isOpen = nextResult.isOpen;
+      if (isOpen != null) {
+        let tmp3 = APP;
+        isOpenResult = isOpen(APP, arg1);
       }
     }
-    const store = value.store;
+    let tmp4 = key;
+    let component = key.getComponent();
+    let store = key.store;
     let getProps;
-    const component = value.getComponent();
-    if (null != store) {
+    if (store != null) {
       getProps = store.getProps;
     }
-    if ("function" === typeof getProps) {
-      const store2 = value.store;
+    if (typeof getProps === "find") {
+      let tmp7 = key;
+      let store2 = key.store;
       let props = store2.getProps();
     } else {
       props = {};
     }
-    const obj = { key: value.key };
-    handlePushedModal(importDefault(4374)(component, obj, props));
+    let tmp8 = handlePushedModal;
+    let tmp9 = importDefault;
+    let tmp10 = dependencyMap;
+    let tmp11 = component;
+    let obj = { key: null };
+    key = key.key;
+    obj[0] = key;
+    let num = 0;
+    component = handlePushedModal(importDefault(4397)(component, obj, props));
   }
 }
-function createPushModalHandler(arg0) {
+function createPushModalHandler(closure_15, closure_152) {
   let closure_0 = [...arguments];
   return () => {
-    outer1_22(closure_0);
+    outer1_12(closure_0);
   };
 }
+const error = importDefaultResult;
 const UserRequiredActions = ME.UserRequiredActions;
 const APP = ME.AppContext.APP;
-let obj = {
+const EMAIL_VERIFICATION_MODAL_OPEN = "EMAIL_VERIFICATION_MODAL_OPEN";
+let closure_15 = {
   key: "EMAIL_VERIFICATION_MODAL_OPEN",
   store: importDefaultResult,
   closable: false,
   center: true,
   isOpen(arg0, action) {
-    if (null == action) {
+    if (action == null) {
       action = importDefaultResult.getAction();
     }
-    let obj = importDefault(9161);
-    let result = obj.isFullScreenVerification(action);
+    let result = importDefault(9185).isFullScreenVerification(action);
     if (result) {
       result = null != token.getToken();
     }
     if (result) {
-      obj = { location: "modal-manager-verification" };
-      result = !require(16304) /* isEligibleForSafetyFlowsExperiment */.isEligibleForSafetyFlowsExperiment(obj);
-      const obj2 = require(16304) /* isEligibleForSafetyFlowsExperiment */;
+      result = !require(16339) /* isEligibleForSafetyFlowsExperiment */.isEligibleForSafetyFlowsExperiment({ location: "modal-manager-verification" });
+      const obj2 = require(16339) /* isEligibleForSafetyFlowsExperiment */;
     }
     return result;
   },
   getComponent() {
-    return require(16305) /* PhoneThenEmailInterstitial */.default;
+    return require(16340) /* PhoneThenEmailInterstitial */.default;
   }
 };
-obj = {
+const USER_REQUIRED_ACTION_UPDATE = "USER_REQUIRED_ACTION_UPDATE";
+let closure_17 = {
   key: "USER_REQUIRED_ACTION_UPDATE",
   store: importDefaultResult,
   center: true,
   isOpen(arg0, arg1) {
     let action = arg1;
-    if (null == arg1) {
+    if (arg1 == null) {
       action = importDefaultResult.getAction();
     }
     return action === UserRequiredActions.AGREEMENTS;
   },
   getComponent() {
-    return require(16313) /* handleTouch */.default;
+    return require(16348) /* handleTouch */.default;
   }
 };
-tmp4 = new tmp4();
-let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/main_tabs_v2/native/modal/DeprecatedModalManager.tsx");
+let prototype = function DeprecatedModalManager() {
+  const applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
+  obj = {
+    CONNECTION_OPEN_SUPPLEMENTAL: createPushModalHandler(closure_17, closure_15),
+    EMAIL_VERIFICATION_MODAL_OPEN: createPushModalHandler(closure_15),
+    USER_REQUIRED_ACTION_UPDATE(requiredAction) {
+      if (null == requiredAction.requiredAction) {
+        if (obj.isModalOpen(closure_16)) {
+          let tmp5Result = tmp5(4040);
+          tmp5Result.popModal(tmp7);
+        }
+        tmp5Result = tmp5(4040);
+        if (tmp5Result.isModalOpen(closure_14)) {
+          tmp5(4040).popModal(tmp9);
+          const tmp5Result1 = tmp5(4040);
+        }
+        obj = callback(4040);
+        tmp7 = closure_16;
+        tmp9 = closure_14;
+      } else {
+        const items = [closure_17, closure_15];
+        callback2(items, requiredAction.requiredAction);
+      }
+    },
+    GUILD_SETTINGS_OPEN: createPushModalHandler(obj),
+    NOTIFICATION_SETTINGS_MODAL_OPEN: createPushModalHandler(obj),
+    CREATE_INVITE_MODAL_OPEN: createPushModalHandler(obj1),
+    GUILD_SETTINGS_CLOSE: handlePoppedModal,
+    NOTIFICATION_SETTINGS_MODAL_CLOSE: handlePoppedModal,
+    PREMIUM_PAYMENT_MODAL_CLOSE: handlePoppedModal,
+    EMAIL_VERIFICATION_MODAL_CLOSE: handlePoppedModal,
+    CREATE_INVITE_MODAL_CLOSE: handlePoppedModal,
+    QUICKSWITCHER_HIDE: handlePoppedModal,
+    IFE_EXPERIMENT_SEARCH_MODAL_CLOSE: handlePoppedModal
+  };
+  obj = {
+    key: "GUILD_SETTINGS_OPEN",
+    store: handleFormInit,
+    closable: false,
+    getComponent() {
+      return callback(16349).default;
+    }
+  };
+  obj = {
+    key: "NOTIFICATION_SETTINGS_MODAL_OPEN",
+    store: FormStates,
+    closable: false,
+    getComponent() {
+      return callback(16631).default;
+    }
+  };
+  applyArgumentsResult.actions = obj;
+  return applyArgumentsResult;
+}.prototype;
+class prototype extends tmp4 {
+}
+prototype = new prototype();
+let result = require("updateWithLatestInvite").fileFinishedImporting("modules/main_tabs_v2/native/modal/DeprecatedModalManager.tsx");
 
-export default tmp4;
+export default prototype;

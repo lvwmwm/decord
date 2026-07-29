@@ -1,26 +1,28 @@
-// Module ID: 4563
-// Function ID: 39916
+// Module ID: 4586
+// Function ID: 4587
 // Name: SCREEN_READER_ENABLED_GETTER
-// Dependencies: [27, 587, 621, 682, 2]
+// Dependencies: [17, 595, 644, 705, 2]
 // Exports: addScreenReaderEnabledListener, getIsScreenReaderEnabled, useIsScreenReaderEnabled
 
-// Module 4563 (SCREEN_READER_ENABLED_GETTER)
+// Module 4586 (SCREEN_READER_ENABLED_GETTER)
 import { AccessibilityInfo } from "get ActivityIndicator";
 import keys from "keys";
 
 function SCREEN_READER_ENABLED_GETTER(screenReaderEnabled) {
   return screenReaderEnabled.screenReaderEnabled;
 }
-let closure_4 = keys.create((arg0) => {
+let screenReaderEnabled = "screenReaderEnabled";
+let closure_5 = keys.create((arg0) => {
   const _require = arg0;
   function updateScreenReaderEnabled(arg0) {
     const callback = arg0;
-    callback(updateScreenReaderEnabled[3]).batchUpdates(() => callback((screenReaderEnabled) => {
+    callback(outer1_1[3]).batchUpdates(() => callback((screenReaderEnabled) => {
       let tmp = screenReaderEnabled;
-      if (screenReaderEnabled.screenReaderEnabled !== outer1_0) {
-        const Storage = callback(updateScreenReaderEnabled[1]).Storage;
-        const result = Storage.set("screenReaderEnabled", outer1_0);
-        const obj = { screenReaderEnabled: outer1_0 };
+      if (screenReaderEnabled.screenReaderEnabled !== closure_0) {
+        const Storage = callback(outer2_1[1]).Storage;
+        const result = Storage.set(outer2_4, tmp2);
+        const obj = { screenReaderEnabled: null };
+        obj[0] = tmp2;
         tmp = obj;
       }
       return tmp;
@@ -28,14 +30,26 @@ let closure_4 = keys.create((arg0) => {
   }
   let result = AccessibilityInfo.isScreenReaderEnabled();
   result.then(updateScreenReaderEnabled).catch(() => {
-    updateScreenReaderEnabled(false);
+    let c0 = false;
+    callback(outer1_1[3]).batchUpdates(() => callback((screenReaderEnabled) => {
+      let tmp = screenReaderEnabled;
+      if (screenReaderEnabled.screenReaderEnabled !== closure_0) {
+        const Storage = callback(outer2_1[1]).Storage;
+        const result = Storage.set(outer2_4, tmp2);
+        const obj = { screenReaderEnabled: null };
+        obj[0] = tmp2;
+        tmp = obj;
+      }
+      return tmp;
+    }));
   });
   const listener = AccessibilityInfo.addEventListener("screenReaderChanged", updateScreenReaderEnabled);
-  let obj = {};
-  let Storage = _require(updateScreenReaderEnabled[1]).Storage;
-  const value = Storage.get("screenReaderEnabled");
-  obj.screenReaderEnabled = null != value && value;
-  return obj;
+  let Storage = _require(595).Storage;
+  screenReaderEnabled = Storage.get(screenReaderEnabled);
+  if (screenReaderEnabled == null) {
+    screenReaderEnabled = false;
+  }
+  return { screenReaderEnabled };
 });
 let result = require("keys").fileFinishedImporting("modules/a11y/native/useIsScreenReaderEnabled.native.tsx");
 

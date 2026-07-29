@@ -1,18 +1,18 @@
-// Module ID: 9043
-// Function ID: 71036
+// Module ID: 9067
+// Function ID: 9068
 // Name: ApplicationStreamActivityStatus
-// Dependencies: [31, 33, 1212, 9044, 9045, 9047, 2]
+// Dependencies: [19, 21, 1236, 9068, 9069, 9071, 2]
 // Exports: default
 
-// Module 9043 (ApplicationStreamActivityStatus)
-import "result";
+// Module 9067 (ApplicationStreamActivityStatus)
+import "noop";
 import jsxProd from "jsxProd";
 
-let closure_3;
-let closure_4;
-let closure_5;
+let c3;
+let c4;
+let c5;
 const require = arg1;
-({ jsx: closure_3, Fragment: closure_4, jsxs: closure_5 } = jsxProd);
+({ jsx: c3, Fragment: c4, jsxs: c5 } = jsxProd);
 const result = require("getSystemLocale").fileFinishedImporting("modules/activity_status/native/ApplicationStreamActivityStatus.tsx");
 
 export default function ApplicationStreamActivityStatus(hideText) {
@@ -36,39 +36,45 @@ export default function ApplicationStreamActivityStatus(hideText) {
     }
   }
   let name;
-  if (null != game) {
+  if (game != null) {
     name = game.name;
   }
   let tmp2 = null;
   if ("" !== name) {
     let name1;
-    if (null != game) {
+    if (game != null) {
       name1 = game.name;
     }
     tmp2 = name1;
   }
   if (null != tmp2) {
-    const intl2 = require(1212) /* getSystemLocale */.intl;
-    let obj = { name: tmp2 };
-    let formatResult = intl2.format(require(1212) /* getSystemLocale */.t["0wJXSh"], obj);
+    const intl2 = require(1236) /* getSystemLocale */.intl;
+    let obj = { name: null };
+    obj[0] = tmp2;
+    let formatResult = intl2.format(require(1236) /* getSystemLocale */.t["0wJXSh"], obj);
+    let tmp7 = require;
   } else {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    formatResult = intl.string(require(1212) /* getSystemLocale */.t.eXan7B);
+    const intl = require(1236) /* getSystemLocale */.intl;
+    formatResult = intl.string(require(1236) /* getSystemLocale */.t.eXan7B);
+    tmp7 = require;
   }
-  obj = {};
-  let tmp11 = !hideIcon;
-  if (tmp11) {
-    obj = { icon: require(9045) /* TvIcon */.TvIcon, style: iconStyle };
-    tmp11 = callback(importDefault(9044), obj);
-    const tmp15 = importDefault(9044);
+  let tmp12 = !hideIcon;
+  if (!hideIcon) {
+    obj = { icon: null, style: null };
+    obj[0] = tmp7(9069).TvIcon;
+    obj[1] = iconStyle;
+    tmp12 = callback(importDefault(9068), obj);
+    const tmp15 = importDefault(9068);
   }
-  const items = [tmp11, ];
-  let tmp17 = !flag;
-  if (tmp17) {
-    const obj1 = { style: textStyle, maxFontSizeMultiplier, children: formatResult };
-    tmp17 = callback(importDefault(9047), obj1);
+  const children = [tmp12, ];
+  let tmp16 = !flag;
+  if (!flag) {
+    obj = { style: null, maxFontSizeMultiplier: null, children: null };
+    obj[0] = textStyle;
+    obj[1] = maxFontSizeMultiplier;
+    obj[2] = formatResult;
+    tmp16 = callback(importDefault(9071), obj);
   }
-  items[1] = tmp17;
-  obj.children = items;
-  return closure_5(closure_4, obj);
+  children[1] = tmp16;
+  return closure_5(closure_4, { children });
 };

@@ -1,13 +1,14 @@
-// Module ID: 15554
-// Function ID: 119431
-// Dependencies: [31, 1348, 33, 5639, 1555, 11184, 7992, 15555, 15561, 2]
+// Module ID: 15588
+// Function ID: 15589
+// Dependencies: [19, 1372, 21, 5657, 1579, 11208, 8017, 15589, 15595, 2]
 
-// Module 15554
-import importAllResult from "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 15588
+import importAllResult from "noop";
+import ensureGuildLoaded from "ensureGuildLoaded";
 import { jsx } from "jsxProd";
 
 const require = arg1;
+let c3 = importAllResult;
 const memoResult = importAllResult.memo(function PortalKeyboardRendererComponent(item) {
   let chatInputRef;
   let cleanUp;
@@ -17,9 +18,11 @@ const memoResult = importAllResult.memo(function PortalKeyboardRendererComponent
   const channelId = item.channelId;
   ({ chatInputRef, type } = item);
   ({ state, cleanUp } = item);
+  let channel;
+  let memo;
   channel = channel.getChannel(channelId);
   const items = [channel, channelId];
-  const memo = importAllResult.useMemo(() => {
+  memo = importAllResult.useMemo(() => {
     if (channelId !== channelId(memo[3]).FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID) {
       let FAKE_PLACEHOLDER_PRIVATE_CHANNEL = channel;
     } else {
@@ -29,24 +32,38 @@ const memoResult = importAllResult.memo(function PortalKeyboardRendererComponent
   }, items);
   const items1 = [memo];
   const memo1 = importAllResult.useMemo(() => {
-    let tmp;
+    let tmp2;
     if (null != memo) {
-      const obj = { channel: memo, type: "channel" };
-      tmp = obj;
+      const obj = { channel: null, type: "channel" };
+      obj[0] = tmp;
+      tmp2 = obj;
     }
-    return tmp;
+    return tmp2;
   }, items1);
   if (null != memo) {
     if (undefined !== memo1) {
       if (channelId(memo[4]).KeyboardTypes.APP_LAUNCHER === type) {
-        let obj = { context: memo1, chatInputRef, onClose: cleanUp, transitionState: state, entrypoint: channelId(memo[6]).AppLauncherEntrypoint.TEXT };
-        return jsx(channel(memo[5]), { context: memo1, chatInputRef, onClose: cleanUp, transitionState: state, entrypoint: channelId(memo[6]).AppLauncherEntrypoint.TEXT });
-      } else if (channelId(memo[4]).KeyboardTypes.MEDIA === type) {
-        obj = { channel: memo, chatInputRef, onClose: cleanUp, transitionState: state };
-        return jsx(channel(memo[7]), { channel: memo, chatInputRef, onClose: cleanUp, transitionState: state });
-      } else if (channelId(memo[4]).KeyboardTypes.EXPRESSION === type) {
-        obj = { channel: memo, chatInputRef, onClose: cleanUp, transitionState: state };
-        return jsx(channel(memo[8]), { channel: memo, chatInputRef, onClose: cleanUp, transitionState: state });
+        let obj = { context: null, chatInputRef: null, onClose: null, transitionState: null, entrypoint: null };
+        obj[0] = memo1;
+        obj[1] = chatInputRef;
+        obj[2] = cleanUp;
+        obj[3] = state;
+        obj[4] = tmp11(tmp12[6]).AppLauncherEntrypoint.TEXT;
+        return jsx(channel(tmp12[5]), { context: null, chatInputRef: null, onClose: null, transitionState: null, entrypoint: null });
+      } else if (tmp11(tmp12[4]).KeyboardTypes.MEDIA === type) {
+        obj = { channel: null, chatInputRef: null, onClose: null, transitionState: null };
+        obj[0] = memo;
+        obj[1] = chatInputRef;
+        obj[2] = cleanUp;
+        obj[3] = state;
+        return jsx(channel(tmp12[7]), { channel: null, chatInputRef: null, onClose: null, transitionState: null });
+      } else if (tmp11(tmp12[4]).KeyboardTypes.EXPRESSION === type) {
+        obj = { channel: null, chatInputRef: null, onClose: null, transitionState: null };
+        obj[0] = memo;
+        obj[1] = chatInputRef;
+        obj[2] = cleanUp;
+        obj[3] = state;
+        return jsx(channel(tmp12[8]), { channel: null, chatInputRef: null, onClose: null, transitionState: null });
       } else {
         return null;
       }

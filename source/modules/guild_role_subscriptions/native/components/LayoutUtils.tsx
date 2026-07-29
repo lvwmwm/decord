@@ -1,18 +1,18 @@
-// Module ID: 9405
-// Function ID: 73225
+// Module ID: 9429
+// Function ID: 9430
 // Name: GappedList
-// Dependencies: [31, 33, 1273, 2]
+// Dependencies: [19, 21, 1297, 2]
 // Exports: GappedList
 
-// Module 9405 (GappedList)
-import result from "result";
+// Module 9429 (GappedList)
+import noop from "noop";
 import jsxProd from "jsxProd";
 
-let closure_3;
-let closure_4;
-let closure_5;
+let c3;
+let c4;
+let c5;
 const require = arg1;
-({ jsx: closure_3, Fragment: closure_4, jsxs: closure_5 } = jsxProd);
+({ jsx: c3, Fragment: c4, jsxs: c5 } = jsxProd);
 const result = require("Button").fileFinishedImporting("modules/guild_role_subscriptions/native/components/LayoutUtils.tsx");
 
 export const GappedList = function GappedList(gap) {
@@ -28,17 +28,18 @@ export const GappedList = function GappedList(gap) {
   Children = found.Children;
   return callback(closure_4, {
     children: Children.map(found, (arg0, arg1) => {
-      let obj = {};
       const items = [arg0, ];
       if (arg1 === found.length - 1) {
+        let obj = { children: null };
         items[1] = tmp3;
-        obj.children = items;
+        obj[0] = items;
         return tmp(tmp2, obj);
       } else if (null != renderGap) {
-        let tmp10 = renderGap();
+        let tmp4Result = tmp4();
       } else {
-        obj = { size: 2 };
-        tmp10 = outer1_3(num(renderGap[2]).Spacer, obj);
+        obj = { size: null };
+        obj[0] = num;
+        tmp4Result = outer1_3(num(renderGap[2]).Spacer, obj);
       }
     })
   });

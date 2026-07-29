@@ -1,39 +1,35 @@
-// Module ID: 14663
-// Function ID: 111658
+// Module ID: 14688
+// Function ID: 14689
 // Name: toggle
-// Dependencies: [31, 5775, 7733, 653, 6237, 13835, 6485, 1360, 10099, 1212, 2]
+// Dependencies: [19, 5793, 7756, 676, 6257, 13856, 6506, 1384, 10120, 1236, 2]
 
-// Module 14663 (toggle)
-import result from "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 14688 (toggle)
+import noop from "noop";
+import freshTeenActivityWithMap from "freshTeenActivityWithMap";
 import { FriendSourceFlags } from "ME";
 import createToggle from "createToggle";
 
 const require = arg1;
 createToggle = {
   useTitle() {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(require(1212) /* getSystemLocale */.t.mozb8f);
+    const intl = require(1236) /* getSystemLocale */.intl;
+    return intl.string(require(1236) /* getSystemLocale */.t.mozb8f);
   },
   parent: require("MobileSetting").MobileSetting.FAMILY_CENTER_PARENTAL_CONTROLS_SETTINGS,
   useValue: function useFriendRequestsMutualGuildsSettingValue() {
-    const selectedTeenId = controlledSetting(6237).useSelectedTeenId();
-    let tmp2;
-    if (null != selectedTeenId) {
-      tmp2 = selectedTeenId;
-    }
-    const ParentalControlledFriendSourceFlags = controlledSetting(13835).ParentalControlledFriendSourceFlags;
-    controlledSetting = ParentalControlledFriendSourceFlags.useControlledSetting(tmp2);
+    const selectedTeenId = controlledSetting(6257).useSelectedTeenId();
+    const ParentalControlledFriendSourceFlags = controlledSetting(13856).ParentalControlledFriendSourceFlags;
+    controlledSetting = ParentalControlledFriendSourceFlags.useControlledSetting(selectedTeenId);
     const items = [controlledSetting];
     return React.useMemo(() => controlledSetting(outer1_2[6]).computeFlags(controlledSetting), items).mutualGuilds;
   },
   onValueChange: function onFriendRequestsMutualGuildsSettingValueChange(arg0) {
     selectedTeenId = selectedTeenId.getSelectedTeenId();
     if (null != selectedTeenId) {
-      const ParentalControlledFriendSourceFlags = require(13835) /* result */.ParentalControlledFriendSourceFlags;
+      const ParentalControlledFriendSourceFlags = require(13856) /* result */.ParentalControlledFriendSourceFlags;
       const controlledSetting = ParentalControlledFriendSourceFlags.getControlledSetting(selectedTeenId);
-      const ParentalControlledFriendSourceFlags2 = require(13835) /* result */.ParentalControlledFriendSourceFlags;
-      const obj = importAll(1360);
+      const ParentalControlledFriendSourceFlags2 = require(13856) /* result */.ParentalControlledFriendSourceFlags;
+      const obj = importAll(1384);
       if (arg0) {
         let addFlagResult = obj.addFlag(controlledSetting, FriendSourceFlags.MUTUAL_GUILDS);
       } else {

@@ -1,39 +1,38 @@
-// Module ID: 13975
-// Function ID: 106816
+// Module ID: 13996
+// Function ID: 13997
 // Name: XboxTwoWayLinkUpsell
-// Dependencies: [31, 653, 33, 4165, 1921, 13976, 1212, 5119, 13977, 1334, 8907, 2]
+// Dependencies: [19, 676, 21, 4189, 1945, 13997, 1236, 5141, 13998, 1358, 8931, 2]
 // Exports: XboxTwoWayLinkUpsell
 
-// Module 13975 (XboxTwoWayLinkUpsell)
-import "result";
+// Module 13996 (XboxTwoWayLinkUpsell)
+import "noop";
 import ME from "ME";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_3;
-let closure_4;
+let c3;
+let c4;
 const require = arg1;
-({ HelpdeskArticles: closure_3, AnalyticsLocations: closure_4 } = ME);
-let closure_6 = _createForOfIteratorHelperLoose.createStyles({ upsellImage: { alignSelf: "center", width: 84, marginLeft: 16 } });
+({ HelpdeskArticles: c3, AnalyticsLocations: c4 } = ME);
+let closure_6 = createCacheKey.createStyles({ upsellImage: { alignSelf: "center", width: 84, marginLeft: 16 } });
 const result = require("jsxProd").fileFinishedImporting("modules/user_settings/connections/native/two_way_link/xbox/XboxTwoWayLinkUpsell.tsx");
 
 export const XboxTwoWayLinkUpsell = function XboxTwoWayLinkUpsell() {
-  let obj = importDefault(1921);
+  let obj = importDefault(1945);
   const articleURL = obj.getArticleURL(constants.XBOX_CONNECTION);
-  obj = {};
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj.title = intl.string(require(1212) /* getSystemLocale */.t["2okkZV"]);
-  const intl2 = require(1212) /* getSystemLocale */.intl;
-  obj.body = intl2.format(require(1212) /* getSystemLocale */.t.OnERSS, { help_article: articleURL });
-  obj = { style: callback().upsellImage };
+  obj = { title: null, body: null, img: null, newIndicatorDismissibleContent: null, onPress: null };
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj[0] = intl.string(require(1236) /* getSystemLocale */.t["2okkZV"]);
+  const intl2 = require(1236) /* getSystemLocale */.intl;
+  obj[1] = intl2.format(require(1236) /* getSystemLocale */.t.OnERSS, { help_article: articleURL });
+  obj = { style: callback().upsellImage, source: null, resizeMode: "contain" };
   const tmp = callback();
-  obj.source = importDefault(13977);
-  obj.resizeMode = "contain";
-  obj.img = jsx(importDefault(5119), { style: callback().upsellImage });
-  obj.newIndicatorDismissibleContent = require(1334) /* DismissibleContent */.DismissibleContent.XBOX_ONE_WAY_RECONNECT;
-  obj.onPress = function onPress() {
-    const items = [outer1_4.RELINK_UPSELL];
-    return outer1_1(outer1_2[10]).showModal(items);
+  obj[1] = importDefault(13998);
+  obj[2] = jsx(importDefault(5141), { style: callback().upsellImage, source: null, resizeMode: "contain" });
+  obj[3] = require(1358) /* DismissibleContent */.DismissibleContent.XBOX_ONE_WAY_RECONNECT;
+  obj[4] = function onPress() {
+    const items = [constants.RELINK_UPSELL];
+    return callback(table[10]).showModal(items);
   };
-  return jsx(require(13976) /* OneWayToTwoWayNewTag */.OneWayToTwoWayLinkUpsell, { style: callback().upsellImage });
+  return jsx(require(13997) /* OneWayToTwoWayNewTag */.OneWayToTwoWayLinkUpsell, { style: callback().upsellImage, source: null, resizeMode: "contain" });
 };

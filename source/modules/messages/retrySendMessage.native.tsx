@@ -1,64 +1,64 @@
-// Module ID: 9862
-// Function ID: 76303
+// Module ID: 9884
+// Function ID: 9885
 // Name: retrySendMessage
-// Dependencies: [4158, 5695, 7994, 4699, 6169, 2]
+// Dependencies: [4182, 5713, 8019, 4721, 6187, 2]
 // Exports: default
 
-// Module 9862 (retrySendMessage)
+// Module 9884 (retrySendMessage)
 import { MessageSendLocation } from "MESSAGE_GROUP_SPACING";
 
-let result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/messages/retrySendMessage.native.tsx");
+let result = require("_executeCommand").fileFinishedImporting("modules/messages/retrySendMessage.native.tsx");
 
 export default function retrySendMessage(id, id2, arr) {
   let content;
   let flags;
   let nonce;
   let tts;
-  let obj = arg3;
   const _require = id;
+  let obj = arg3;
   if (arg3 === undefined) {
     obj = {};
   }
-  importDefault(5695).deleteMessage(id.id, id2.id, true);
+  importDefault(5713).deleteMessage(id.id, id2.id, true);
   if (id2.isCommandType()) {
     if (tmp17) {
-      _require(7994).retryCommandMessage(id2, id, obj);
-      const obj6 = _require(7994);
+      _require(8019).retryCommandMessage(id2, id, obj);
+      const obj6 = _require(8019);
     }
     tmp17 = null != id2.interactionData && null != obj.applicationId;
   } else {
     const messageReference = id2.messageReference;
     let mapped;
     ({ content, tts, flags, nonce } = id2);
-    if (null != arr) {
+    if (arr != null) {
       mapped = arr.map((on) => {
         let fromJsonResult = on;
         if (null == on.on) {
-          const CloudUpload = guildId(outer1_2[3]).CloudUpload;
+          const CloudUpload = guildId(table[3]).CloudUpload;
           fromJsonResult = CloudUpload.fromJson(on);
         }
         return fromJsonResult;
       });
     }
-    const obj3 = importDefault(5695);
+    const tmpResult = importDefault(5713);
     id = id.id;
-    obj = { content, tts, invalidEmojis: [], validNonShortcutEmojis: [] };
+    obj = { content: null, tts: null, invalidEmojis: null, validNonShortcutEmojis: null };
+    obj[0] = content;
+    obj[1] = tts;
+    obj[2] = [];
+    obj[3] = [];
     obj = {};
     const merged = Object.assign(obj);
-    obj["nonce"] = nonce;
-    obj["flags"] = flags;
-    let tmp9;
-    if (null != messageReference) {
-      tmp9 = messageReference;
-    }
-    obj["messageReference"] = tmp9;
-    obj["location"] = MessageSendLocation.RETRY;
-    obj["attachmentsToUpload"] = mapped;
-    obj["onAttachmentUploadError"] = function onAttachmentUploadError(file, code, reason) {
+    obj.nonce = nonce;
+    obj.flags = flags;
+    obj.messageReference = messageReference;
+    obj.location = MessageSendLocation.RETRY;
+    obj.attachmentsToUpload = mapped;
+    obj.onAttachmentUploadError = function onAttachmentUploadError(file, code, reason) {
       let obj = guildId(outer1_2[4]);
       obj = { file, guildId: guildId.getGuildId(), analyticsLocations: [], code, reason };
       const result = obj.handleUploadMessageAttachmentsErrors(obj);
     };
-    obj3.sendMessage(id, obj, undefined, obj);
+    tmpResult.sendMessage(id, obj, undefined, obj);
   }
 };

@@ -1,67 +1,59 @@
-// Module ID: 15463
-// Function ID: 117871
+// Module ID: 15497
+// Function ID: 15498
 // Name: GuildChannelLabel
-// Dependencies: [31, 27, 9077, 33, 4165, 689, 4355, 15464, 4628, 15466, 15456, 2]
+// Dependencies: [19, 17, 9101, 21, 4189, 712, 4380, 15498, 4650, 15500, 15490, 2]
 
-// Module 15463 (GuildChannelLabel)
+// Module 15497 (GuildChannelLabel)
 import get_ActivityIndicator from "get ActivityIndicator";
 import { CHANNEL_LIST_SEARCH_LAYOUT as closure_5 } from "SearchAutocompleteSelectAnalyticsActions";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import importAllResult from "result";
+import createCacheKey from "createCacheKey";
+import importAllResult from "noop";
 
-let closure_3;
-let closure_4;
+let c3;
+let c4;
 const require = arg1;
 function GuildChannelLabel(channel) {
   channel = channel.channel;
-  let obj = { style: callback().content };
+  let obj = { style: callback().content, children: null };
   const tmp = callback();
-  const tmp2 = importDefault(4355)(channel);
+  const tmp2 = importDefault(4380)(channel);
   obj = { channel, layout: closure_5, name: tmp2 };
-  obj.children = require(15464) /* ChannelContentComponent */.renderChannelContent(obj);
+  obj[1] = require(15498) /* ChannelContentComponent */.renderChannelContent(obj);
   return <closure_4 channel={channel} layout={closure_5} name={tmp2} />;
 }
-({ Image: closure_3, View: closure_4 } = get_ActivityIndicator);
-let obj = { container: { paddingVertical: 10 }, content: { flexDirection: "row", alignItems: "center" }, iconContainer: { marginRight: 0 } };
-obj = { width: 20, height: 20, marginRight: 8, tintColor: require("_createForOfIteratorHelperLoose").colors.TEXT_MUTED };
-obj.simpleIcon = obj;
-let closure_7 = _createForOfIteratorHelperLoose.createStyles(obj);
-const memoResult = require("result").memo(function GuildChannelRow(channel) {
+({ Image: c3, View: c4 } = get_ActivityIndicator);
+let obj = { container: { paddingVertical: 10 }, content: { flexDirection: "row", alignItems: "center" }, iconContainer: { marginRight: 0 }, simpleIcon: null };
+obj = { width: 20, height: 20, marginRight: 8, tintColor: require("Themes").colors.TEXT_MUTED };
+obj[3] = obj;
+let closure_7 = createCacheKey.createStyles(obj);
+const memoResult = require("noop").memo(function GuildChannelRow(channel) {
   let extras;
-  let icon;
-  let iconWidth;
   let onPress;
   let subtitle;
   let trailing;
   let voiceStates;
   channel = channel.channel;
-  let obj = { channel: 0, subtitle: 0, trailing: 0, extras: 0, onPress: 0, voiceStates: 0 };
   ({ subtitle, trailing, extras, onPress, voiceStates } = channel);
-  Object.setPrototypeOf(null);
-  const merged = Object.assign(channel, obj);
-  const tmp3 = callback();
-  let obj1 = require(15466) /* LaunchpadChannelIcon */;
-  obj = { channel, unread: false, mentionCount: 0, voiceStates };
-  const channelAccessibilityProps = obj1.getChannelAccessibilityProps(obj);
+  const merged = Object.assign(channel, Object.create(null));
+  const tmp2 = callback();
+  let obj = require(15500) /* LaunchpadChannelIcon */;
+  const channelAccessibilityProps = obj.getChannelAccessibilityProps({ channel, unread: false, mentionCount: 0, voiceStates });
+  obj = { style: tmp2.simpleIcon, source: null };
+  obj[1] = require(4650) /* getChannelIcon */.getSimpleChannelIcon(channel);
+  const obj3 = require(4650) /* getChannelIcon */;
   obj = {};
-  obj1 = { style: tmp3.simpleIcon, source: require(4628) /* getThreadChannelIcon */.getSimpleChannelIcon(channel) };
-  obj.icon = <closure_3 style={tmp3.simpleIcon} source={require(4628) /* getThreadChannelIcon */.getSimpleChannelIcon(channel)} />;
-  obj.iconWidth = 32;
-  ({ icon, iconWidth } = obj);
-  const obj2 = {};
   const merged1 = Object.assign(channelAccessibilityProps);
   const merged2 = Object.assign(merged);
-  obj2["containerStyle"] = tmp3.container;
-  obj2["iconContainerStyle"] = tmp3.iconContainer;
-  obj2["icon"] = icon;
-  obj2["iconWidth"] = iconWidth;
-  obj2["label"] = <GuildChannelLabel channel={channel} />;
-  obj2["subLabel"] = subtitle;
-  obj2["onPress"] = onPress;
-  obj2["trailing"] = trailing;
-  obj2["extras"] = extras;
-  return jsx(require(15456) /* SearchListRow */.SearchListRow, {});
+  ({ container: obj4.containerStyle, iconContainer: obj4.iconContainerStyle } = tmp2);
+  obj.icon = <closure_3 />;
+  obj.iconWidth = 32;
+  obj.label = <GuildChannelLabel channel={channel} />;
+  obj.subLabel = subtitle;
+  obj.onPress = onPress;
+  obj.trailing = trailing;
+  obj.extras = extras;
+  return jsx(require(15490) /* SearchListRow */.SearchListRow, {});
 });
 const result = require("SearchAutocompleteSelectAnalyticsActions").fileFinishedImporting("modules/search/native/components/list/rows/GuildChannelRow.tsx");
 

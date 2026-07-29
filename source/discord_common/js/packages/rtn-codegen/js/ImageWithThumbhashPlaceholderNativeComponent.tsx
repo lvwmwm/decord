@@ -1,13 +1,13 @@
-// Module ID: 8630
-// Function ID: 68359
+// Module ID: 8654
+// Function ID: 8655
 // Name: __INTERNAL_VIEW_CONFIG
-// Dependencies: [42, 2]
+// Dependencies: [65, 2]
 
-// Module 8630 (__INTERNAL_VIEW_CONFIG)
-import get from "get";
+// Module 8654 (__INTERNAL_VIEW_CONFIG)
+import setRuntimeConfigProvider from "setRuntimeConfigProvider";
 
 const obj = { uiViewClassName: "DCDImageWithThumbhashPlaceholderView", validAttributes: { uri: true, placeholder: true, placeholderVersion: true, alt: true } };
-const value = get.get("DCDImageWithThumbhashPlaceholderView", () => obj);
+const value = setRuntimeConfigProvider.get("DCDImageWithThumbhashPlaceholderView", () => obj);
 const result = require("set").fileFinishedImporting("../discord_common/js/packages/rtn-codegen/js/ImageWithThumbhashPlaceholderNativeComponent.tsx");
 
 export default value;

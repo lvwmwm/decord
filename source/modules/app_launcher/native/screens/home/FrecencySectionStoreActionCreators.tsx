@@ -1,14 +1,14 @@
-// Module ID: 11205
-// Function ID: 86929
+// Module ID: 11229
+// Function ID: 11230
 // Name: setFrecencySectionSelection
-// Dependencies: [686, 2]
+// Dependencies: [709, 2]
 // Exports: setFrecencySectionSelection
 
-// Module 11205 (setFrecencySectionSelection)
+// Module 11229 (setFrecencySectionSelection)
 const result = require("set").fileFinishedImporting("modules/app_launcher/native/screens/home/FrecencySectionStoreActionCreators.tsx");
 
 export const setFrecencySectionSelection = function setFrecencySectionSelection(APPS) {
-  let obj = importDefault(686);
+  let obj = importDefault(709);
   obj = { type: "FRECENCY_SECTION_SET_SELECTION", selection: APPS };
   obj.dispatch(obj);
 };

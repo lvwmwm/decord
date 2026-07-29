@@ -1,434 +1,725 @@
-// Module ID: 13944
-// Function ID: 106576
-// Name: openTimePicker
-// Dependencies: [5, 57, 31, 27, 1850, 653, 33, 4133, 8229, 1935, 4165, 689, 1273, 4576, 4161, 1212, 2199, 1456, 6309, 10226, 624, 13945, 13946, 4124, 5536, 5537, 5198, 5155, 4578, 2]
+// Module ID: 13965
+// Function ID: 13966
+// Name: OverlappingSchedulesWarning
+// Dependencies: [5, 32, 19, 17, 1874, 676, 21, 4157, 8253, 1959, 4189, 712, 1297, 4598, 4185, 1236, 2223, 1480, 6330, 10247, 647, 13966, 13967, 4148, 5554, 5555, 5220, 5177, 4600, 2]
 // Exports: default
 
-// Module 13944 (openTimePicker)
+// Module 13965 (OverlappingSchedulesWarning)
 import ME from "ME";
 import _slicedToArray from "_slicedToArray";
-import result from "result";
-import get_ActivityIndicator from "SafeAreaPaddingView";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import setsEqual from "setsEqual";
+import get_ActivityIndicator from "useNavigation";
+import mergeGuildAvatar from "mergeGuildAvatar";
 import { UserSettingsSections } from "ME";
-import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import jsxProd from "useTimeValue";
+import createCacheKey from "createCacheKey";
 
-let closure_11;
 let closure_12;
 let closure_6;
-let closure_7;
-let closure_8;
+let error;
+let metroImportAll;
+let unpackModuleId;
 let require = arg1;
-function openTimePicker(arg0, title, hours) {
-  const _require = arg3;
-  let obj = importDefault(4133);
-  obj = { title, mode: "time" };
-  const tmp = _require(1935)(8229, dependencyMap.paths);
-  obj.startDate = new Date(2025, 0, 1, hours.hours, hours.minutes, 0, 0);
-  obj.onSubmit = function onSubmit(hours) {
-    return callback({ hours: hours.hours(), minutes: hours.minutes() });
-  };
-  obj.openLazy(tmp, arg0, obj);
-}
 function OverlappingSchedulesWarning(conflictingEntries) {
   conflictingEntries = conflictingEntries.conflictingEntries;
   let tmp = null;
   if (0 !== conflictingEntries.length) {
-    let obj = { messageType: require(1273) /* Button */.HelpMessageTypes.WARNING, borderRadius: importDefault(689).radii.md };
-    obj = { spacing: 8 };
-    obj = { variant: "text-sm/medium" };
-    const intl = require(1212) /* getSystemLocale */.intl;
-    obj.children = intl.string(importDefault(2199)["26A0Df"]);
-    const items = [callback2(require(4161) /* Text */.Text, obj), ];
-    const obj1 = {
-      spacing: 4,
-      children: conflictingEntries.map((dayLabel) => {
-          dayLabel = dayLabel.dayLabel;
-          const obj = { variant: "text-sm/medium", children: "" + dayLabel + "  " + dayLabel.timeRange };
-          return outer1_11(outer1_0(outer1_2[14]).Text, obj, dayLabel);
-        })
-    };
-    items[1] = callback2(require(4576) /* Stack */.Stack, obj1);
-    obj.children = items;
-    obj.children = callback3(require(4576) /* Stack */.Stack, obj);
-    tmp = callback2(require(1273) /* Button */.HelpMessage, obj);
+    let obj = { messageType: null, borderRadius: null, children: null };
+    obj[0] = require(1297) /* Button */.HelpMessageTypes.WARNING;
+    obj[1] = importDefault(712).radii.md;
+    obj = { spacing: 8, children: null };
+    obj = { variant: "text-sm/medium", children: null };
+    const intl = require(1236) /* getSystemLocale */.intl;
+    obj[1] = intl.string(importDefault(2223)["26A0Df"]);
+    const items = [callback2(require(4185) /* Text */.Text, obj), ];
+    const obj1 = { spacing: 4, children: null };
+    obj1[1] = conflictingEntries.map((dayLabel) => {
+      dayLabel = dayLabel.dayLabel;
+      const obj = { variant: "text-sm/medium", children: null };
+      obj[1] = "" + dayLabel + "  " + dayLabel.timeRange;
+      return callback2(callback(table[14]).Text, obj, dayLabel);
+    });
+    items[1] = callback2(require(4598) /* Stack */.Stack, obj1);
+    obj[1] = items;
+    obj[2] = callback3(require(4598) /* Stack */.Stack, obj);
+    tmp = callback2(require(1297) /* Button */.HelpMessage, obj);
   }
   return tmp;
 }
-({ View: closure_6, Pressable: closure_7, ScrollView: closure_8 } = get_ActivityIndicator);
-({ jsx: closure_11, jsxs: closure_12 } = jsxProd);
-_createForOfIteratorHelperLoose = { container: { flex: 1 } };
-_createForOfIteratorHelperLoose = { paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16, paddingTop: require("_createForOfIteratorHelperLoose").space.PX_24, gap: require("_createForOfIteratorHelperLoose").space.PX_24 };
-_createForOfIteratorHelperLoose.scrollContent = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.section = { gap: require("_createForOfIteratorHelperLoose").space.PX_8 };
-let obj1 = { gap: require("_createForOfIteratorHelperLoose").space.PX_8 };
-_createForOfIteratorHelperLoose.sectionHeader = { gap: require("_createForOfIteratorHelperLoose").space.PX_4 };
-let obj2 = { gap: require("_createForOfIteratorHelperLoose").space.PX_4 };
-_createForOfIteratorHelperLoose.daysContainer = { flexDirection: "row", gap: require("_createForOfIteratorHelperLoose").space.PX_8 };
-let obj4 = { flex: 1, aspectRatio: 1, borderRadius: require("_createForOfIteratorHelperLoose").radii.round, alignItems: "center", justifyContent: "center", backgroundColor: require("_createForOfIteratorHelperLoose").colors.REDESIGN_BUTTON_TERTIARY_BACKGROUND, borderWidth: 1, borderColor: "transparent" };
-_createForOfIteratorHelperLoose.dayButton = obj4;
-_createForOfIteratorHelperLoose.dayButtonSelected = { backgroundColor: "rgba(88, 101, 242, 0.16)", borderColor: "rgba(88, 101, 242, 1)" };
-let obj3 = { flexDirection: "row", gap: require("_createForOfIteratorHelperLoose").space.PX_8 };
-_createForOfIteratorHelperLoose.overlapWarningContent = { marginTop: require("_createForOfIteratorHelperLoose").space.PX_24 };
-let obj5 = { marginTop: require("_createForOfIteratorHelperLoose").space.PX_24 };
-_createForOfIteratorHelperLoose.footer = { paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16, paddingVertical: require("_createForOfIteratorHelperLoose").space.PX_16, gap: require("_createForOfIteratorHelperLoose").space.PX_8 };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-let obj6 = { paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16, paddingVertical: require("_createForOfIteratorHelperLoose").space.PX_16, gap: require("_createForOfIteratorHelperLoose").space.PX_8 };
-let result = require("result").fileFinishedImporting("modules/parent_tools/native/ScheduleDowntimeScreen.tsx");
+({ View: closure_6, Pressable: error, ScrollView: metroImportAll } = get_ActivityIndicator);
+({ jsx: unpackModuleId, jsxs: closure_12 } = jsxProd);
+createCacheKey = { container: { flex: 1 }, scrollContent: null, section: null, sectionHeader: null, daysContainer: null, dayButton: null, dayButtonSelected: null, overlapWarningContent: null, footer: null };
+createCacheKey = { paddingHorizontal: require("Themes").space.PX_16, paddingTop: require("Themes").space.PX_24, gap: require("Themes").space.PX_24 };
+createCacheKey[1] = createCacheKey;
+createCacheKey[2] = { gap: require("Themes").space.PX_8 };
+let obj1 = { gap: require("Themes").space.PX_8 };
+createCacheKey[3] = { gap: require("Themes").space.PX_4 };
+let obj2 = { gap: require("Themes").space.PX_4 };
+createCacheKey[4] = { flexDirection: "row", gap: require("Themes").space.PX_8 };
+let obj3 = { flexDirection: "row", gap: require("Themes").space.PX_8 };
+createCacheKey[5] = { flex: 1, aspectRatio: 1, borderRadius: require("Themes").radii.round, alignItems: "center", justifyContent: "center", backgroundColor: require("Themes").colors.REDESIGN_BUTTON_TERTIARY_BACKGROUND, borderWidth: 1, borderColor: "transparent" };
+createCacheKey[6] = { backgroundColor: "rgba(88, 101, 242, 0.16)", borderColor: "rgba(88, 101, 242, 1)" };
+let obj4 = { flex: 1, aspectRatio: 1, borderRadius: require("Themes").radii.round, alignItems: "center", justifyContent: "center", backgroundColor: require("Themes").colors.REDESIGN_BUTTON_TERTIARY_BACKGROUND, borderWidth: 1, borderColor: "transparent" };
+createCacheKey[7] = { marginTop: require("Themes").space.PX_24 };
+let obj5 = { marginTop: require("Themes").space.PX_24 };
+createCacheKey[8] = { paddingHorizontal: require("Themes").space.PX_16, paddingVertical: require("Themes").space.PX_16, gap: require("Themes").space.PX_8 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let obj6 = { paddingHorizontal: require("Themes").space.PX_16, paddingVertical: require("Themes").space.PX_16, gap: require("Themes").space.PX_8 };
+let result = require("noop").fileFinishedImporting("modules/parent_tools/native/ScheduleDowntimeScreen.tsx");
 
 export default function ScheduleDowntimeScreen() {
   function _handleSubmit() {
-    // CreateGeneratorClosureLongIndex (0x67)
-    const obj = dependencyMap(tmp);
-    return obj(...arguments);
+    const self = this;
+    const tmp = dependencyMap(function*() {
+      if (c4 === 2) {
+        c4 = 3;
+        HermesBuiltin.throwTypeError();
+      } else if (tmp6 === 3) {
+        if (arg0 === 1) {
+          throw arg1;
+        } else if (arg0 === 2) {
+          let obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
+        } else {
+          return { value: "HermesInternal", done: null };
+        }
+      } else {
+        try {
+          c4 = 2;
+          if (0 === navigation) {
+            if (arg0 === 1) {
+              c4 = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              c4 = 3;
+              obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            } else {
+              let closure_0 = tmp3;
+              if (null != outer1_5) {
+                outer1_17(true);
+                let c3 = 1;
+                const obj1 = { label: "", start_time: null, end_time: null, days: null, enabled: null };
+                let obj3 = outer1_0(outer1_2[19]);
+                obj1[1] = obj3.toTimeProto(outer1_10);
+                let obj4 = outer1_0(outer1_2[19]);
+                obj1[2] = obj4.toTimeProto(outer1_12);
+                const _Array = Array;
+                obj1[3] = Array.from(outer1_14);
+                obj1[4] = outer1_7;
+                if (outer1_6) {
+                  let ruleId;
+                  if (outer1_2 != null) {
+                    ruleId = tmp34.ruleId;
+                  }
+                  if (null != ruleId) {
+                    let tmp27Result = tmp27(tmp28[22]);
+                    navigation = 3;
+                    c4 = 1;
+                    const obj2 = { value: null, done: false };
+                    obj2[0] = tmp27Result.updateRestrictedScheduleRule(tmp46, tmp34.ruleId, obj1);
+                    return obj2;
+                  }
+                }
+                tmp27Result = tmp27(tmp28[22]);
+                navigation = 2;
+                c4 = 1;
+                obj3 = { value: null, done: false };
+                obj3[0] = tmp27Result.addRestrictedScheduleRule(tmp46, obj1);
+                return obj3;
+              } else {
+                c4 = 3;
+              }
+            }
+          } else if (1 === tmp7) {
+            c3 = 0;
+            callback(false);
+            throw closure_2;
+          } else {
+            if (2 === tmp7) {
+              if (arg0 === 1) {
+                c4 = 3;
+                throw arg1;
+              }
+            } else if (arg0 === 1) {
+              c4 = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              c3 = 0;
+              callback(false);
+              c4 = 3;
+              obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            }
+            navigation.goBack();
+            c3 = 0;
+            callback(false);
+          }
+          c3 = 0;
+          callback(false);
+          c4 = 3;
+          obj4 = { value: null, done: true };
+          obj4[0] = arg1;
+          return obj4;
+        } catch (tmp36) {
+          closure_2 = tmp36;
+          if (tmp4 === c3) {
+            c4 = tmp2;
+            throw tmp36;
+          } else {
+            navigation = tmp;
+          }
+        }
+      }
+    });
+    const _handleSubmit = tmp;
+    const apply = tmp.apply;
+    if (typeof apply === "unknown") {
+      let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+    } else {
+      applyArgumentsResult = apply(self, arguments);
+    }
+    return applyArgumentsResult;
   }
-  const tmp = _createForOfIteratorHelperLoose();
+  let tmp = createCacheKey();
   const require = tmp;
+  let stringResult = rule;
   let obj = require(rule[17]);
   const stackNavigation = obj.useStackNavigation();
   let obj1 = require(rule[18]);
   const params = obj1.useSettingNavigationRoute().params;
   rule = undefined;
-  if (null != params) {
+  if (params != null) {
     rule = params.rule;
   }
+  let obj2 = teenId;
   let callback = teenId.useMemo(() => tmp(rule[19]).getShortDayLabels("narrow"), []);
   const memo = teenId.useMemo(() => tmp(rule[19]).getShortDayLabels("short"), []);
   teenId = undefined;
-  if (null != params) {
+  if (params != null) {
     teenId = params.teenId;
   }
-  let closure_6 = tmp6;
-  let enabled;
-  if (null != rule) {
-    enabled = rule.enabled;
+  let closure_6 = tmp8;
+  let flag;
+  if (rule != null) {
+    flag = rule.enabled;
   }
-  const tmp10 = memo(teenId.useState(null == enabled || enabled), 2);
+  if (flag == null) {
+    flag = true;
+  }
+  const tmp10 = memo(obj2.useState(flag), 2);
   const first = tmp10[0];
   let closure_8 = tmp10[1];
-  let obj2 = require(rule[20]);
+  let tmp2Result = tmp2(stringResult[20]);
   let items = [stateFromStores];
-  stateFromStores = obj2.useStateFromStores(items, () => {
+  stateFromStores = tmp2Result.useStateFromStores(items, () => {
     if (null == teenId) {
       let items = [];
     } else {
-      const user = stateFromStores.getUser(teenId);
+      const user = stateFromStores.getUser(tmp);
       items = undefined;
-      if (null != user) {
+      if (user != null) {
         const restrictedSchedule = user.restrictedSchedule;
-        if (null != restrictedSchedule) {
+        if (restrictedSchedule != null) {
           items = restrictedSchedule.rules;
         }
       }
-      if (null == items) {
+      if (items == null) {
         items = [];
       }
     }
     return items;
   });
-  obj = {};
   let startTime;
-  if (null != rule) {
+  if (rule != null) {
     startTime = rule.startTime;
   }
-  let tmp15 = null;
+  let tmp16 = null;
   if (null != startTime) {
-    obj = { hours: rule.startTime.hours };
-    const minutes = rule.startTime.minutes;
-    let num = 0;
-    if (null != minutes) {
-      num = minutes;
+    obj = { hours: null, minutes: null, seconds: 0, nanos: 0 };
+    obj[0] = rule.startTime.hours;
+    let num = rule.startTime.minutes;
+    if (num == null) {
+      num = 0;
     }
-    obj.minutes = num;
-    obj.seconds = 0;
-    obj.nanos = 0;
-    tmp15 = obj;
+    obj[1] = num;
+    tmp16 = obj;
   }
-  obj.initial = tmp15;
-  obj.defaultValue = { hours: 22, minutes: 0 };
-  const tmp16 = memo(stackNavigation(rule[21])(obj), 2);
-  const first1 = tmp16[0];
-  const callback2 = tmp16[1];
-  obj1 = {};
+  let tmp9Result = tmp9(stackNavigation(stringResult[21])({ initial: tmp16, defaultValue: { hours: 22, minutes: 0 } }), 2);
+  const first1 = tmp9Result[0];
+  const callback2 = tmp9Result[1];
   let endTime;
-  const tmp13 = stackNavigation(rule[21]);
-  const tmp9 = null == enabled || enabled;
-  if (null != rule) {
+  let tmp13Result = tmp13(stringResult[21]);
+  if (rule != null) {
     endTime = rule.endTime;
   }
-  let tmp20 = null;
+  let tmp21 = null;
   if (null != endTime) {
-    obj2 = { hours: rule.endTime.hours };
-    const minutes2 = rule.endTime.minutes;
-    let num2 = 0;
-    if (null != minutes2) {
-      num2 = minutes2;
+    obj = { hours: null, minutes: null, seconds: 0, nanos: 0 };
+    obj[0] = rule.endTime.hours;
+    let num2 = rule.endTime.minutes;
+    if (num2 == null) {
+      num2 = 0;
     }
-    obj2.minutes = num2;
-    obj2.seconds = 0;
-    obj2.nanos = 0;
-    tmp20 = obj2;
+    obj[1] = num2;
+    tmp21 = obj;
   }
-  obj1.initial = tmp20;
-  obj1.defaultValue = { hours: 7, minutes: 0 };
-  const tmp21 = memo(stackNavigation(rule[21])(obj1), 2);
-  const first2 = tmp21[0];
-  _createForOfIteratorHelperLoose = tmp21[1];
+  tmp9Result = tmp9(tmp13Result({ initial: tmp21, defaultValue: { hours: 7, minutes: 0 } }), 2);
+  const first2 = tmp9Result[0];
+  createCacheKey = tmp9Result[1];
   let days;
-  if (null != rule) {
+  if (rule != null) {
     days = rule.days;
   }
-  const tmp18 = stackNavigation(rule[21]);
-  const tmp26 = memo(teenId.useState(new Set(days)), 2);
-  const first3 = tmp26[0];
-  let closure_15 = tmp26[1];
-  const tmp29 = memo(teenId.useState(false), 2);
-  let str = tmp29[0];
-  let closure_17 = tmp29[1];
+  const tmp14 = stackNavigation(stringResult[21]);
+  const tmp9Result1 = memo(obj2.useState(new Set(days)), 2);
+  const first3 = tmp9Result1[0];
+  let closure_15 = tmp9Result1[1];
+  const tmp9Result2 = memo(obj2.useState(false), 2);
+  const first4 = tmp9Result2[0];
+  let closure_17 = tmp9Result2[1];
   const items1 = [null != rule, , ];
   let ruleId;
-  if (null != rule) {
+  if (rule != null) {
     ruleId = rule.ruleId;
   }
   items1[1] = ruleId;
   items1[2] = stateFromStores;
-  const memo1 = teenId.useMemo(() => {
+  const memo1 = obj2.useMemo(() => {
     if (closure_6) {
       let ruleId;
-      if (null != rule) {
+      if (rule != null) {
         ruleId = rule.ruleId;
       }
       if (null != ruleId) {
-        let found = stateFromStores.filter((ruleId) => ruleId.ruleId !== outer1_2.ruleId);
+        let found = stateFromStores.filter((ruleId) => ruleId.ruleId !== ruleId.ruleId);
       }
       return found;
     }
     found = stateFromStores;
   }, items1);
   const items2 = [memo, memo1, first3];
-  const fn = () => tmp(rule[19]).computeOverlappingInfo(first3, memo1, memo);
-  const memo2 = teenId.useMemo(fn, items2);
-  // CreateGeneratorClosureLongIndex (0x67)
+  const memo2 = obj2.useMemo(() => tmp(rule[19]).computeOverlappingInfo(first3, memo1, memo), items2);
   const items3 = [teenId, , ];
   let ruleId1;
   let set = new Set(days);
-  if (null != rule) {
+  if (rule != null) {
     ruleId1 = rule.ruleId;
   }
   items3[1] = ruleId1;
   items3[2] = stackNavigation;
-  callback = teenId.useCallback(callback(fn), items3);
-  const items4 = [stackNavigation, null != rule, callback, str];
-  const layoutEffect = teenId.useLayoutEffect(() => {
-    if (closure_6) {
-      let obj = {
-        headerRight() {
-            let obj = { onPress: outer1_19, accessibilityRole: "button" };
-            const intl = callback(rule[15]).intl;
-            obj.accessibilityLabel = intl.string(callback(rule[15]).t.oyYWHE);
-            obj.hitSlop = 8;
-            obj.disabled = outer1_16;
-            obj = { color: stackNavigation(rule[11]).colors.ICON_FEEDBACK_CRITICAL, size: "md" };
-            obj.children = callback2(callback(rule[23]).TrashIcon, obj);
-            return callback2(first, obj);
+  callback = obj2.useCallback(callback(function*() {
+    if (c5 === 2) {
+      c5 = 3;
+      HermesBuiltin.throwTypeError();
+    } else if (tmp6 === 3) {
+      if (arg0 === 1) {
+        throw arg1;
+      } else if (arg0 === 2) {
+        let obj = { value: null, done: true };
+        obj[0] = arg1;
+        return obj;
+      } else {
+        return { value: "HermesInternal", done: null };
+      }
+    } else {
+      try {
+        c5 = 2;
+        if (0 === table) {
+          if (arg0 === 1) {
+            c5 = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            c5 = 3;
+            obj = { value: null, done: true };
+            obj[0] = arg1;
+            return obj;
+          } else {
+            const navigation = tmp3;
+            if (null != c5) {
+              let ruleId;
+              if (table != null) {
+                ruleId = tmp28.ruleId;
+              }
+              if (null != ruleId) {
+                outer1_17(true);
+                let c4 = 1;
+                let obj1 = outer1_0(table[22]);
+                table = 2;
+                c5 = 1;
+                obj1 = { value: null, done: false };
+                obj1[0] = obj1.deleteRestrictedScheduleRule(c5, tmp28.ruleId);
+                return obj1;
+              }
+            }
+            c5 = 3;
           }
+        } else if (1 === tmp7) {
+          c4 = 0;
+          outer1_17(false);
+          throw ME;
+        } else if (arg0 === 1) {
+          c5 = 3;
+          throw arg1;
+        } else if (arg0 !== 2) {
+          const user = outer1_9.getUser(c5);
+          let rules;
+          if (user != null) {
+            const restrictedSchedule = user.restrictedSchedule;
+            if (restrictedSchedule != null) {
+              rules = restrictedSchedule.rules;
+            }
+          }
+          let length = rules;
+          if (rules == null) {
+            length = [];
+          }
+          if (0 === length.length) {
+            navigation.navigate(outer1_10.FAMILY_CENTER);
+          } else {
+            navigation.goBack();
+          }
+          c4 = 0;
+          outer1_17(false);
+        }
+        c4 = 0;
+        outer1_17(false);
+        c5 = 3;
+        obj = { value: null, done: true };
+        obj[0] = arg1;
+        return obj;
+      } catch (tmp35) {
+        ME = tmp35;
+        if (tmp4 === c4) {
+          c5 = tmp2;
+          throw tmp35;
+        } else {
+          table = tmp;
+        }
+      }
+    }
+  }), items3);
+  const items4 = [stackNavigation, null != rule, callback, first4];
+  const layoutEffect = obj2.useLayoutEffect(() => {
+    if (closure_6) {
+      let obj = { headerRight: null };
+      obj[0] = function headerRight() {
+        let obj = { onPress: closure_19, accessibilityRole: "button", accessibilityLabel: null, hitSlop: 8, disabled: null, children: null };
+        const intl = outer1_0(outer1_2[15]).intl;
+        obj[2] = intl.string(outer1_0(outer1_2[15]).t.oyYWHE);
+        obj[4] = closure_16;
+        obj = { color: null, size: "md" };
+        obj[0] = outer1_1(outer1_2[11]).colors.ICON_FEEDBACK_CRITICAL;
+        obj[5] = outer1_11(outer1_0(outer1_2[23]).TrashIcon, obj);
+        return outer1_11(outer1_7, obj);
       };
       stackNavigation.setOptions(obj);
     }
   }, items4);
-  let obj7 = require(rule[19]);
-  const timeToMinutesResult = obj7.timeToMinutes(first1);
-  let obj8 = require(rule[19]);
-  const timeToMinutesResult1 = obj8.timeToMinutes(first2);
-  const obj3 = {};
-  let obj10 = require(rule[19]);
-  obj3.startTime = obj10.formatTime(first1);
-  let obj11 = require(rule[19]);
-  obj3.endTime = obj11.formatTime(first2);
-  obj3.timeHook = function timeHook(children) {
-    const obj = { variant: "text-sm/medium", color: "text-default", children };
-    return callback2(tmp(rule[14]).Text, obj, arg1);
+  tmp2Result = tmp2(stringResult[19]);
+  const timeToMinutesResult = tmp2Result.timeToMinutes(first1);
+  const tmp33 = callback(function*() {
+    if (c5 === 2) {
+      c5 = 3;
+      HermesBuiltin.throwTypeError();
+    } else if (tmp6 === 3) {
+      if (arg0 === 1) {
+        throw arg1;
+      } else if (arg0 === 2) {
+        let obj = { value: null, done: true };
+        obj[0] = arg1;
+        return obj;
+      } else {
+        return { value: "HermesInternal", done: null };
+      }
+    } else {
+      try {
+        c5 = 2;
+        if (0 === table) {
+          if (arg0 === 1) {
+            c5 = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            c5 = 3;
+            obj = { value: null, done: true };
+            obj[0] = arg1;
+            return obj;
+          } else {
+            const navigation = tmp3;
+            if (null != c5) {
+              let ruleId;
+              if (table != null) {
+                ruleId = tmp28.ruleId;
+              }
+              if (null != ruleId) {
+                outer1_17(true);
+                let c4 = 1;
+                let obj1 = outer1_0(table[22]);
+                table = 2;
+                c5 = 1;
+                obj1 = { value: null, done: false };
+                obj1[0] = obj1.deleteRestrictedScheduleRule(c5, tmp28.ruleId);
+                return obj1;
+              }
+            }
+            c5 = 3;
+          }
+        } else if (1 === tmp7) {
+          c4 = 0;
+          outer1_17(false);
+          throw ME;
+        } else if (arg0 === 1) {
+          c5 = 3;
+          throw arg1;
+        } else if (arg0 !== 2) {
+          const user = outer1_9.getUser(c5);
+          let rules;
+          if (user != null) {
+            const restrictedSchedule = user.restrictedSchedule;
+            if (restrictedSchedule != null) {
+              rules = restrictedSchedule.rules;
+            }
+          }
+          let length = rules;
+          if (rules == null) {
+            length = [];
+          }
+          if (0 === length.length) {
+            navigation.navigate(outer1_10.FAMILY_CENTER);
+          } else {
+            navigation.goBack();
+          }
+          c4 = 0;
+          outer1_17(false);
+        }
+        c4 = 0;
+        outer1_17(false);
+        c5 = 3;
+        obj = { value: null, done: true };
+        obj[0] = arg1;
+        return obj;
+      } catch (tmp35) {
+        ME = tmp35;
+        if (tmp4 === c4) {
+          c5 = tmp2;
+          throw tmp35;
+        } else {
+          table = tmp;
+        }
+      }
+    }
+  });
+  const timeToMinutesResult1 = require(stringResult[19]).timeToMinutes(first2);
+  obj1 = { startTime: null, endTime: null, timeHook: null };
+  const tmp2Result1 = require(stringResult[19]);
+  obj1[0] = require(stringResult[19]).formatTime(first1);
+  const tmp2Result2 = require(stringResult[19]);
+  obj1[1] = require(stringResult[19]).formatTime(first2);
+  obj1[2] = function timeHook(children) {
+    return callback2(tmp(rule[14]).Text, { variant: "text-sm/medium", color: "text-default", children }, arg1);
   };
   if (timeToMinutesResult > timeToMinutesResult1) {
-    const intl2 = require(rule[15]).intl;
-    let formatResult = intl2.format(stackNavigation(rule[16]).R87Y2K, obj3);
+    const intl2 = tmp2(stringResult[15]).intl;
+    let formatResult = intl2.format(tmp13(stringResult[16]).R87Y2K, obj1);
   } else {
-    let intl = require(rule[15]).intl;
-    formatResult = intl.format(stackNavigation(rule[16]).vX7xid, obj3);
+    let intl = tmp2(stringResult[15]).intl;
+    formatResult = intl.format(tmp13(stringResult[16]).vX7xid, obj1);
   }
-  let str2 = first3.size > 0 && timeToMinutesResult !== timeToMinutesResult1 && !str;
+  let tmp40 = first3.size > 0 && timeToMinutesResult !== timeToMinutesResult1 && !first4;
   if (null == teenId) {
     return null;
   } else {
-    const obj4 = { style: tmp.container };
-    const obj5 = {};
-    const obj6 = { style: tmp.scrollContent };
-    obj7 = { variant: "text-md/medium", color: "text-subtle" };
-    const intl3 = require(rule[15]).intl;
-    obj7.children = intl3.string(stackNavigation(rule[16]).AcJ4ke);
-    const items5 = [callback2(require(rule[14]).Text, obj7), , , ];
-    let tmp56 = tmp6;
-    if (tmp6) {
-      obj8 = { hasIcons: false };
-      const obj9 = {};
-      const intl4 = require(rule[15]).intl;
-      obj9.label = intl4.string(stackNavigation(rule[16])["30Owsd"]);
-      obj9.value = first;
-      obj9.onValueChange = function handleEnabledChange() {
+    obj2 = { style: null, children: null };
+    obj2[0] = tmp.container;
+    let obj3 = { style: null, children: null };
+    obj3[0] = tmp.scrollContent;
+    let obj4 = { variant: "text-md/medium", color: "text-subtle", children: null };
+    const intl3 = tmp2(stringResult[15]).intl;
+    obj4[2] = intl3.string(tmp13(stringResult[16]).AcJ4ke);
+    const items5 = [callback2(tmp2(stringResult[14]).Text, obj4), , , ];
+    let tmp43Result = tmp8;
+    if (tmp8) {
+      const obj5 = { hasIcons: false, children: null };
+      const obj6 = { label: null, value: null, onValueChange: null };
+      const intl4 = tmp2(stringResult[15]).intl;
+      obj6[0] = intl4.string(tmp13(stringResult[16])["30Owsd"]);
+      obj6[1] = first;
+      obj6[2] = function handleEnabledChange() {
         callback((arg0) => !arg0);
       };
-      obj8.children = callback2(require(rule[25]).TableSwitchRow, obj9);
-      tmp56 = callback2(require(rule[24]).TableRowGroup, obj8);
+      obj5[1] = tmp43(tmp2(stringResult[25]).TableSwitchRow, obj6);
+      tmp43Result = tmp43(tmp2(stringResult[24]).TableRowGroup, obj5);
     }
-    items5[1] = tmp56;
-    obj10 = { style: tmp.section };
-    obj11 = { variant: "text-sm/semibold", color: "text-subtle" };
-    const intl5 = require(rule[15]).intl;
-    obj11.children = intl5.string(stackNavigation(rule[16])["37z4a2"]);
-    const items6 = [callback2(require(rule[14]).Text, obj11), ];
-    const obj12 = { hasIcons: false };
-    const obj13 = {};
-    const intl6 = require(rule[15]).intl;
-    obj13.label = intl6.string(stackNavigation(rule[16]).DsXytO);
-    const obj14 = { variant: "text-md/normal" };
-    let obj23 = require(rule[19]);
-    obj14.children = obj23.formatTime(first1);
-    obj13.trailing = callback2(require(rule[14]).Text, obj14);
-    obj13.arrow = true;
-    obj13.onPress = function handleStartTimePress() {
+    items5[1] = tmp43Result;
+    const obj7 = { style: null, children: null };
+    obj7[0] = tmp.section;
+    const obj8 = { variant: "text-sm/semibold", color: "text-subtle", children: null };
+    const intl5 = tmp2(stringResult[15]).intl;
+    obj8[2] = intl5.string(tmp13(stringResult[16])["37z4a2"]);
+    const items6 = [callback2(tmp2(stringResult[14]).Text, obj8), ];
+    const obj9 = { hasIcons: false, children: null };
+    const obj10 = { label: null, trailing: null, arrow: true, onPress: null };
+    const intl6 = tmp2(stringResult[15]).intl;
+    obj10[0] = intl6.string(tmp13(stringResult[16]).DsXytO);
+    const obj11 = { variant: "text-md/normal", children: null };
+    obj11[1] = tmp2(stringResult[19]).formatTime(first1);
+    obj10[1] = callback2(tmp2(stringResult[14]).Text, obj11);
+    obj10[3] = function handleStartTimePress() {
       const intl = tmp(rule[15]).intl;
+      const f109575 = (first1) => {
+        callback(first1);
+        let obj = f109575(outer1_2[19]);
+        const result = (obj.timeToMinutes(first1) + 540) % 1440;
+        obj = { hours: Math.floor(result / 60), minutes: result % 60 };
+        callback2(obj);
+      };
+      let obj = stackNavigation(rule[7]);
+      obj = { title: intl.string(stackNavigation(rule[16])["8bLRt0"]), mode: "time", startDate: null, onSubmit: null };
+      const stringResult = intl.string(stackNavigation(rule[16])["8bLRt0"]);
+      const tmp2 = tmp(rule[9])(rule[8], rule.paths);
+      obj[2] = new Date(2025, 0, 1, first1.hours, first1.minutes, 0, 0);
+      obj[3] = function onSubmit(hours) {
+        return callback({ hours: hours.hours(), minutes: hours.minutes() });
+      };
+      obj.openLazy(tmp2, "ScheduleDowntimeStartTimePicker", obj);
     };
-    const items7 = [callback2(require(rule[26]).TableRow, obj13), ];
-    const obj15 = {};
-    const intl7 = require(rule[15]).intl;
-    obj15.label = intl7.string(stackNavigation(rule[16])["5SHDP6"]);
-    const obj16 = { variant: "text-md/normal" };
-    let obj26 = require(rule[19]);
-    obj16.children = obj26.formatTime(first2);
-    obj15.trailing = callback2(require(rule[14]).Text, obj16);
-    obj15.arrow = true;
-    obj15.onPress = function handleEndTimePress() {
+    const items7 = [callback2(tmp2(stringResult[26]).TableRow, obj10), ];
+    const obj12 = { label: null, trailing: null, arrow: true, onPress: null };
+    const intl7 = tmp2(stringResult[15]).intl;
+    obj12[0] = intl7.string(tmp13(stringResult[16])["5SHDP6"]);
+    const obj13 = { variant: "text-md/normal", children: null };
+    const tmp2Result4 = tmp2(stringResult[19]);
+    const tmp44 = closure_8;
+    obj13[1] = tmp2(stringResult[19]).formatTime(first2);
+    obj12[1] = callback2(tmp2(stringResult[14]).Text, obj13);
+    obj12[3] = function handleEndTimePress() {
       const intl = tmp(rule[15]).intl;
+      let obj = stackNavigation(rule[7]);
+      obj = { title: intl.string(stackNavigation(rule[16])["+JkWJV"]), mode: "time", startDate: null, onSubmit: null };
+      const stringResult = intl.string(stackNavigation(rule[16])["+JkWJV"]);
+      const tmp2 = closure_13(rule[9])(rule[8], rule.paths);
+      obj[2] = new Date(2025, 0, 1, first2.hours, first2.minutes, 0, 0);
+      obj[3] = function onSubmit(hours) {
+        return callback({ hours: hours.hours(), minutes: hours.minutes() });
+      };
+      obj.openLazy(tmp2, "ScheduleDowntimeEndTimePicker", obj);
     };
-    items7[1] = callback2(require(rule[26]).TableRow, obj15);
-    obj12.children = items7;
-    items6[1] = first2(require(rule[24]).TableRowGroup, obj12);
-    obj10.children = items6;
-    items5[2] = first2(closure_6, obj10);
-    const obj17 = { style: tmp.section };
-    const obj18 = { style: tmp.sectionHeader };
-    const obj19 = { variant: "text-sm/semibold", color: "text-subtle" };
-    const intl8 = require(rule[15]).intl;
-    obj19.children = intl8.string(stackNavigation(rule[16]).HaV0Sg);
-    const items8 = [callback2(require(rule[14]).Text, obj19), ];
-    const obj20 = { variant: "text-sm/normal", color: "text-muted", children: formatResult };
-    items8[1] = callback2(require(rule[14]).Text, obj20);
-    obj18.children = items8;
-    const items9 = [first2(closure_6, obj18), , ];
-    const obj21 = { style: tmp.daysContainer };
-    const DAYS_ORDERED = require(rule[19]).DAYS_ORDERED;
-    obj21.children = DAYS_ORDERED.map((arg0, arg1) => {
+    items7[1] = callback2(tmp2(stringResult[26]).TableRow, obj12);
+    obj9[1] = items7;
+    items6[1] = first2(tmp2(stringResult[24]).TableRowGroup, obj9);
+    obj7[1] = items6;
+    items5[2] = first2(closure_6, obj7);
+    const obj14 = { style: null, children: null };
+    obj14[0] = tmp.section;
+    const obj15 = { style: null, children: null };
+    obj15[0] = tmp.sectionHeader;
+    const obj16 = { variant: "text-sm/semibold", color: "text-subtle", children: null };
+    const intl8 = tmp2(stringResult[15]).intl;
+    obj16[2] = intl8.string(tmp13(stringResult[16]).HaV0Sg);
+    const items8 = [callback2(tmp2(stringResult[14]).Text, obj16), ];
+    const obj17 = { variant: "text-sm/normal", color: "text-muted", children: null };
+    obj17[2] = formatResult;
+    items8[1] = callback2(tmp2(stringResult[14]).Text, obj17);
+    obj15[1] = items8;
+    const items9 = [first2(closure_6, obj15), , ];
+    const obj18 = { style: null, children: null };
+    obj18[0] = tmp.daysContainer;
+    const DAYS_ORDERED = tmp2(stringResult[19]).DAYS_ORDERED;
+    obj18[1] = DAYS_ORDERED.map((arg0, arg1) => {
       const hasItem = first3.has(arg0);
-      let obj = {};
       const items = [arg0.dayButton, ];
       let dayButtonSelected = hasItem;
       if (hasItem) {
         dayButtonSelected = tmp.dayButtonSelected;
       }
-      items[1] = dayButtonSelected;
-      obj.style = items;
-      obj.onPress = function onPress() {
-        (function handleDayToggle(closure_0) {
-          outer2_15((items) => {
+      let obj = {
+        style: items,
+        onPress() {
+          outer1_15((items) => {
             const set = new Set(items);
             if (set.has(closure_0)) {
-              set.delete(closure_0);
+              set.delete(tmp);
             } else {
-              set.add(closure_0);
+              set.add(tmp);
             }
             return set;
           });
-        })(closure_0);
+        },
+        accessibilityRole: "button",
+        accessibilityState: { selected: hasItem },
+        accessibilityLabel: dependencyMap[arg1],
+        children: null
       };
-      obj.accessibilityRole = "button";
-      obj.accessibilityState = { selected: hasItem };
-      obj.accessibilityLabel = dependencyMap[arg1];
-      obj = { variant: "text-sm/semibold" };
+      items[1] = dayButtonSelected;
       let str = "text-muted";
       if (hasItem) {
         str = "control-secondary-text-default";
       }
-      obj.color = str;
-      obj.children = dependencyMap[arg1];
-      obj.children = closure_11(arg0(rule[14]).Text, obj);
+      obj = { variant: "text-sm/semibold", color: str, children: dependencyMap[arg1] };
+      obj[5] = closure_11(arg0(rule[14]).Text, obj);
       return closure_11(first, obj, arg0);
     });
-    items9[1] = callback2(closure_6, obj21);
-    let tmp78 = memo2.conflictingEntries.length > 0;
-    if (tmp78) {
-      const obj22 = { style: tmp.overlapWarningContent };
-      obj23 = { conflictingEntries: memo2.conflictingEntries };
-      obj22.children = callback2(closure_15, obj23);
-      tmp78 = callback2(closure_6, obj22);
+    items9[1] = callback2(closure_6, obj18);
+    tmp43Result = memo2.conflictingEntries.length > 0;
+    if (tmp43Result) {
+      const obj19 = { style: null, children: null };
+      obj19[0] = tmp.overlapWarningContent;
+      const obj20 = { conflictingEntries: null };
+      obj20[0] = memo2.conflictingEntries;
+      obj19[1] = tmp43(first3, obj20);
+      tmp43Result = tmp43(tmp42, obj19);
     }
-    items9[2] = tmp78;
-    obj17.children = items9;
-    items5[3] = first2(closure_6, obj17);
-    obj6.children = items5;
-    obj5.children = first2(closure_6, obj6);
-    const items10 = [callback2(closure_8, obj5), ];
-    let obj24 = { bottom: true };
-    let obj25 = { style: tmp.footer };
-    let stringResult = callback2;
-    let num15 = 28;
-    let Button = require(rule[28]).Button;
-    obj26 = {};
-    let intl9 = require(rule[15]).intl;
-    let intl10 = intl9.string;
-    const tmp91 = stackNavigation(rule[16]);
-    obj26.text = intl10(tmp6 ? tmp91.TDc9mW : tmp91.pvcruO);
-    obj26.onPress = function handleSubmit() {
-      return _handleSubmit(...arguments);
+    const obj21 = { children: null };
+    items9[2] = tmp43Result;
+    obj14[1] = items9;
+    items5[3] = first2(closure_6, obj14);
+    obj3[1] = items5;
+    obj21[0] = first2(closure_6, obj3);
+    const items10 = [callback2(tmp44, obj21), ];
+    let obj22 = { style: null, children: null };
+    obj22[0] = tmp.footer;
+    let Button = tmp2(stringResult[28]).Button;
+    let intl9 = tmp2(stringResult[15]).intl;
+    let string = intl9.string;
+    tmp13Result = tmp13(stringResult[16]);
+    const obj23 = { bottom: true, children: null };
+    const obj24 = { text: null, onPress: null, disabled: null, loading: null, variant: "primary", size: "lg" };
+    obj24[0] = string(tmp8 ? tmp13Result.TDc9mW : tmp13Result.pvcruO);
+    obj24[1] = function handleSubmit() {
+      const self = this;
+      const apply = _handleSubmit.apply;
+      if (typeof apply === "unknown") {
+        let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+      } else {
+        applyArgumentsResult = apply(self, arguments);
+      }
+      return applyArgumentsResult;
     };
-    obj26.disabled = !str2;
-    obj26.loading = str;
-    obj26.variant = "primary";
-    str2 = "lg";
-    obj26.size = "lg";
-    obj26 = [, ];
-    obj26[0] = stringResult(Button, obj26);
-    Button = callback2;
-    intl9 = require;
-    const obj27 = {};
-    intl10 = require(rule[15]).intl;
-    stringResult = intl10.string(require(rule[15]).t["ETE/oC"]);
-    obj27.text = stringResult;
-    obj27.onPress = function onPress() {
+    tmp40 = !tmp40;
+    obj24[2] = tmp40;
+    obj24[3] = first4;
+    const items11 = [callback2(Button, obj24), ];
+    const obj25 = { text: null, onPress: null, disabled: null, variant: "secondary", size: "lg" };
+    intl9 = tmp2(stringResult[15]).intl;
+    string = intl9.string;
+    stringResult = string(tmp2(stringResult[15]).t["ETE/oC"]);
+    obj25[0] = stringResult;
+    obj25[1] = function onPress() {
       return stackNavigation.goBack();
     };
-    obj27.disabled = str;
-    str = "secondary";
-    obj27.variant = "secondary";
-    obj27.size = "lg";
-    num15 = callback2(require(rule[num15]).Button, obj27);
-    obj26[1] = num15;
-    obj25.children = obj26;
-    obj25 = first2(closure_6, obj25);
-    obj24.children = obj25;
-    obj24 = callback2(require(rule[27]).SafeAreaPaddingView, obj24);
-    items10[1] = obj24;
-    obj4.children = items10;
-    first2(closure_6, obj4);
-    const stringResultResult = stringResult(Button, obj26);
-    const tmp47 = first2;
-    const tmp49 = callback2;
-    const tmp50 = closure_8;
-    const tmp51 = first2;
-    const tmp63 = closure_6;
-    const tmp73 = first2;
-    const tmp83 = callback2;
-    const tmp86 = first2;
-    const tmp87 = closure_6;
+    obj25[2] = first4;
+    Button = tmp43(tmp2(stringResult[28]).Button, obj25);
+    items11[1] = Button;
+    obj22[1] = items11;
+    obj22 = tmp41(tmp42, obj22);
+    obj23[1] = obj22;
+    tmp13Result = tmp43(tmp2(stringResult[27]).SafeAreaPaddingView, obj23);
+    items10[1] = tmp13Result;
+    obj2[1] = items10;
+    first2(closure_6, obj2);
+    const tmp2Result5 = tmp2(stringResult[19]);
   }
 };

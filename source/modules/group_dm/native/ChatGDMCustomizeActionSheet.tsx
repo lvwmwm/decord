@@ -1,27 +1,29 @@
-// Module ID: 9080
-// Function ID: 71216
+// Module ID: 9104
+// Function ID: 9105
 // Name: ChatGDMCustomizeActionSheet
-// Dependencies: [31, 33, 9081, 9084, 1212, 10164, 2]
+// Dependencies: [19, 21, 9105, 9108, 1236, 10185, 2]
 // Exports: default
 
-// Module 9080 (ChatGDMCustomizeActionSheet)
-import "result";
+// Module 9104 (ChatGDMCustomizeActionSheet)
+import "noop";
 import { jsx } from "jsxProd";
 
 const require = arg1;
 const result = require("useNavigatorConfirmChangesOnBack").fileFinishedImporting("modules/group_dm/native/ChatGDMCustomizeActionSheet.tsx");
 
 export default function ChatGDMCustomizeActionSheet(channelId) {
-  let dependencyMap;
-  let importDefault;
+  let c1;
+  let c2;
   channelId = channelId.channelId;
-  ({ onGoBack: importDefault, ref: dependencyMap } = importDefault(9081)());
-  const obj = { screenKey: "kick" };
-  const tmp = importDefault(9081)();
-  const intl = channelId(1212).intl;
-  obj.title = intl.string(channelId(1212).t["1r5E+m"]);
-  obj.render = function render() {
-    return outer1_3(outer1_1(outer1_2[5]), { ref: closure_2, onFinish: closure_1, channelId });
+  let importDefault;
+  let dependencyMap;
+  ({ onGoBack: c1, ref: c2 } = importDefault(9105)());
+  const obj = { screenKey: "kick", title: null, render: null };
+  const tmp = importDefault(9105)();
+  const intl = channelId(1236).intl;
+  obj[1] = intl.string(channelId(1236).t["1r5E+m"]);
+  obj[2] = function render() {
+    return outer1_3(_undefined(_undefined2[5]), { ref: _undefined2, onFinish: _undefined, channelId });
   };
-  return jsx(importDefault(9084), { screenKey: "kick" });
+  return jsx(importDefault(9108), { screenKey: "kick", title: null, render: null });
 };

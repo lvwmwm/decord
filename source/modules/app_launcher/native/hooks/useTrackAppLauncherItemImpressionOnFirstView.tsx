@@ -1,21 +1,21 @@
-// Module ID: 11250
-// Function ID: 87363
+// Module ID: 11274
+// Function ID: 11275
 // Name: useTrackAppLauncherItemImpressionOnFirstView
-// Dependencies: [31, 10900, 1457, 8402, 480, 2]
+// Dependencies: [19, 10924, 1481, 8426, 503, 2]
 // Exports: useTrackAppLauncherItemImpressionOnFirstView
 
-// Module 11250 (useTrackAppLauncherItemImpressionOnFirstView)
-import result from "result";
+// Module 11274 (useTrackAppLauncherItemImpressionOnFirstView)
+import noop from "noop";
 
 const require = arg1;
 const result = require("Link").fileFinishedImporting("modules/app_launcher/native/hooks/useTrackAppLauncherItemImpressionOnFirstView.tsx");
 
 export const useTrackAppLauncherItemImpressionOnFirstView = function useTrackAppLauncherItemImpressionOnFirstView() {
-  let obj = entrypoint(10900);
+  let obj = entrypoint(10924);
   entrypoint = obj.useAppLauncherContext().entrypoint;
   const dependencyMap = React.useRef(new Set());
   const set = new Set();
-  const focusEffect = entrypoint(1457).useFocusEffect(React.useCallback(() => {
+  const focusEffect = entrypoint(1481).useFocusEffect(React.useCallback(() => {
     const current = ref.current;
     current.clear();
   }, []));
@@ -34,9 +34,18 @@ export const useTrackAppLauncherItemImpressionOnFirstView = function useTrackApp
         const current2 = ref.current;
         current2.add(itemKey);
         let obj = entrypoint(ref[3]);
-        obj = { type: entrypoint(ref[4]).ImpressionTypes.VIEW, name: entrypoint(ref[4]).ImpressionNames.APP_LAUNCHER_ITEM };
-        obj = { source: entrypoint, section_name: sectionName, section_position: sectionPosition, section_overall_position: sectionOverallPosition, application_id: applicationId, command_id: commandId, application_flags: applicationFlags };
-        obj.properties = obj;
+        obj = { type: null, name: null, properties: null };
+        obj[0] = entrypoint(ref[4]).ImpressionTypes.VIEW;
+        obj[1] = entrypoint(ref[4]).ImpressionNames.APP_LAUNCHER_ITEM;
+        obj = { source: null, section_name: null, section_position: null, section_overall_position: null, application_id: null, command_id: null, application_flags: null };
+        obj[0] = entrypoint;
+        obj[1] = sectionName;
+        obj[2] = sectionPosition;
+        obj[3] = sectionOverallPosition;
+        obj[4] = applicationId;
+        obj[5] = commandId;
+        obj[6] = applicationFlags;
+        obj[2] = obj;
         obj.trackImpression(obj);
       }
     }, items)

@@ -1,72 +1,72 @@
-// Module ID: 12805
-// Function ID: 99580
+// Module ID: 12827
+// Function ID: 12828
 // Name: NUFChannelIllustration
-// Dependencies: [57, 31, 27, 33, 4165, 689, 1212, 12806, 12807, 4026, 4166, 12808, 12809, 12810, 12811, 5200, 4673, 4161, 2]
+// Dependencies: [32, 19, 17, 21, 4189, 712, 1236, 12828, 12829, 4050, 4190, 12830, 12831, 12832, 12833, 5222, 4695, 4185, 2]
 // Exports: default
 
-// Module 12805 (NUFChannelIllustration)
+// Module 12827 (NUFChannelIllustration)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
-import get_ActivityIndicator from "get ActivityIndicator";
+import noop from "noop";
+import get_ActivityIndicator from "Text";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_5;
+let c5;
 let closure_6;
-let closure_7;
-let closure_8;
+let error;
+let metroImportAll;
 let require = arg1;
-({ View: closure_5, Image: closure_6 } = get_ActivityIndicator);
-({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-_createForOfIteratorHelperLoose = { container: { width: "100%", maxWidth: 275, position: "relative", display: "flex", justifyContent: "center", alignItems: "center", marginTop: 24, marginBottom: 24 }, card: { padding: 0, width: "100%" } };
-_createForOfIteratorHelperLoose = { width: "90%", height: 12, borderTopLeftRadius: require("_createForOfIteratorHelperLoose").radii.lg, borderTopRightRadius: require("_createForOfIteratorHelperLoose").radii.lg, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWEST };
-_createForOfIteratorHelperLoose.cardBackground = _createForOfIteratorHelperLoose;
-let obj1 = { paddingVertical: 12, paddingHorizontal: 16, display: "flex", alignItems: "center", flexDirection: "row", borderBottomColor: require("_createForOfIteratorHelperLoose").colors.BORDER_SUBTLE, borderBottomWidth: 1 };
-_createForOfIteratorHelperLoose.header = obj1;
-_createForOfIteratorHelperLoose.content = { height: 150, paddingVertical: 8, paddingHorizontal: 16, display: "flex", justifyContent: "flex-end", overflow: "hidden" };
-_createForOfIteratorHelperLoose.message = { display: "flex", paddingVertical: 8, flexDirection: "row" };
-_createForOfIteratorHelperLoose.messageAvatar = { width: 40, height: 40, marginRight: 12 };
-_createForOfIteratorHelperLoose.messageContent = { display: "flex", flex: 1 };
-_createForOfIteratorHelperLoose.starMedium = { height: 25, width: 15 };
-_createForOfIteratorHelperLoose.starSmall = { height: 15, width: 10 };
-_createForOfIteratorHelperLoose.starGreen = { position: "absolute", top: 5, left: -28 };
-_createForOfIteratorHelperLoose.starBlue = { position: "absolute", top: -15, left: -10 };
-_createForOfIteratorHelperLoose.starPink = { position: "absolute", bottom: -18, right: -22 };
-_createForOfIteratorHelperLoose.starPurple = { position: "absolute", bottom: -30, right: -2 };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+({ View: c5, Image: closure_6 } = get_ActivityIndicator);
+({ jsx: error, jsxs: metroImportAll } = jsxProd);
+createCacheKey = { container: { width: "100%", maxWidth: 275, position: "relative", display: "flex", justifyContent: "center", alignItems: "center", marginTop: 24, marginBottom: 24 }, card: { padding: 0, width: "100%" }, cardBackground: null, header: null, content: null, message: null, messageAvatar: null, messageContent: null, starMedium: null, starSmall: null, starGreen: null, starBlue: null, starPink: null, starPurple: null };
+createCacheKey = { width: "90%", height: 12, borderTopLeftRadius: require("Themes").radii.lg, borderTopRightRadius: require("Themes").radii.lg, backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOWEST };
+createCacheKey[2] = createCacheKey;
+createCacheKey[3] = { paddingVertical: 12, paddingHorizontal: 16, display: "flex", alignItems: "center", flexDirection: "row", borderBottomColor: require("Themes").colors.BORDER_SUBTLE, borderBottomWidth: 1 };
+createCacheKey[4] = { height: 150, paddingVertical: 8, paddingHorizontal: 16, display: "flex", justifyContent: "flex-end", overflow: "hidden" };
+createCacheKey[5] = { display: "flex", paddingVertical: 8, flexDirection: "row" };
+createCacheKey[6] = { width: 40, height: 40, marginRight: 12 };
+createCacheKey[7] = { display: "flex", flex: 1 };
+createCacheKey[8] = { height: 25, width: 15 };
+createCacheKey[9] = { height: 15, width: 10 };
+createCacheKey[10] = { position: "absolute", top: 5, left: -28 };
+createCacheKey[11] = { position: "absolute", top: -15, left: -10 };
+createCacheKey[12] = { position: "absolute", bottom: -18, right: -22 };
+createCacheKey[13] = { position: "absolute", bottom: -30, right: -2 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
 let closure_10 = { code: "function NUFChannelIllustrationTsx1(){const{interpolate,messageListAnimation}=this.__closure;return{transform:[{translateY:interpolate(messageListAnimation.get(),[0,1],[50,0])}]};}" };
+let obj1 = { paddingVertical: 12, paddingHorizontal: 16, display: "flex", alignItems: "center", flexDirection: "row", borderBottomColor: require("Themes").colors.BORDER_SUBTLE, borderBottomWidth: 1 };
 let result = require("get ActivityIndicator").fileFinishedImporting("modules/nuf_channels/native/components/NUFChannelIllustration.tsx");
 
 export default function NUFChannelIllustration() {
-  const tmp = _createForOfIteratorHelperLoose();
+  const tmp = createCacheKey();
   const require = tmp;
   const tmp2 = sharedValue(sharedValue1.useState([]), 2);
   const first = tmp2[0];
   const dependencyMap = tmp2[1];
-  let obj = require(4026);
+  let obj = require(4050);
   sharedValue = obj.useSharedValue(0);
-  let obj1 = require(4026);
+  let obj1 = require(4050);
   sharedValue1 = obj1.useSharedValue(0);
   const effect = sharedValue1.useEffect(() => {
-    const timeout = setTimeout(() => outer1_2((arg0) => {
+    const timeout = setTimeout(() => callback((arg0) => {
       const items = [...arg0];
-      const intl = callback(1212).intl;
-      const obj = {};
-      const intl2 = callback(1212).intl;
-      obj.name = intl2.string(callback(1212).t["9m/HsX"]);
-      obj.avatar = first(12806);
-      obj.message = intl.string(callback(1212).t["5alrl0"]);
+      const intl = callback(1236).intl;
+      const obj = { name: null, avatar: null, message: null };
+      const intl2 = callback(1236).intl;
+      obj[0] = intl2.string(callback(1236).t["9m/HsX"]);
+      obj[1] = callback2(12828);
+      obj[2] = intl.string(callback(1236).t["5alrl0"]);
       items[tmp] = obj;
       return items;
     }), 500);
-    const timeout2 = setTimeout(() => outer1_2((arg0) => {
+    const timeout2 = setTimeout(() => callback((arg0) => {
       const items = [...arg0];
-      const intl = callback(1212).intl;
-      const obj = {};
-      const intl2 = callback(1212).intl;
-      obj.name = intl2.string(callback(1212).t["AW1kM+"]);
-      obj.avatar = first(12807);
-      obj.message = intl.string(callback(1212).t["5Oo+vS"]);
+      const intl = callback(1236).intl;
+      const obj = { name: null, avatar: null, message: null };
+      const intl2 = callback(1236).intl;
+      obj[0] = intl2.string(callback(1236).t["AW1kM+"]);
+      obj[1] = callback2(12829);
+      obj[2] = intl.string(callback(1236).t["5Oo+vS"]);
       items[tmp] = obj;
       return items;
     }), 2000);
@@ -78,80 +78,75 @@ export default function NUFChannelIllustration() {
   let items = [sharedValue1, first];
   const effect1 = sharedValue1.useEffect(() => {
     if (first.length >= 2) {
-      let obj = tmp(4166);
-      obj = { duration: 250 };
-      const result = sharedValue1.set(obj.withTiming(1, obj));
+      const result = sharedValue1.set(sharedValue1(4190).withTiming(1, { duration: 250 }));
+      const obj = sharedValue1(4190);
     }
   }, items);
   let items1 = [sharedValue, first];
   const effect2 = sharedValue1.useEffect(() => {
     const result = sharedValue.set(0);
-    const result1 = sharedValue.set(tmp(4166).withTiming(1, { duration: 200 }));
+    const result1 = sharedValue.set(tmp(4190).withTiming(1, { duration: 200 }));
   }, items1);
-  let obj2 = require(4026);
+  let obj2 = require(4050);
   const fn = function b() {
-    let obj = {};
-    obj = { translateY: tmp(4026).interpolate(sharedValue.get(), [0, 1], [50, 0]) };
+    let obj = { transform: null };
+    obj = { translateY: null };
+    obj[0] = tmp(4050).interpolate(sharedValue.get(), [0, 1], [50, 0]);
     const items = [obj];
-    obj.transform = items;
+    obj[0] = items;
     return obj;
   };
-  obj = { interpolate: require(4026).interpolate, messageListAnimation: sharedValue };
+  obj = { interpolate: require(4050).interpolate, messageListAnimation: sharedValue };
   fn.__closure = obj;
   fn.__workletHash = 1240710065054;
   fn.__initData = closure_10;
-  obj = { style: tmp.container };
-  obj1 = {};
+  obj = { style: tmp.container, children: null };
+  obj1 = { source: null, style: null };
   const animatedStyle = obj2.useAnimatedStyle(fn);
-  obj1.source = first(12808);
+  obj1[0] = first(12830);
   const items2 = [, ];
   ({ starSmall: arr4[0], starBlue: arr4[1] } = tmp);
-  obj1.style = items2;
+  obj1[1] = items2;
   const items3 = [callback(closure_6, obj1), , , , , ];
-  obj2 = { source: first(12809), style: items4 };
+  obj2 = { source: first(12831), style: items4 };
   items4 = [, ];
   ({ starMedium: arr6[0], starPink: arr6[1] } = tmp);
   items3[1] = callback(closure_6, obj2);
   const items5 = [, ];
   ({ starMedium: arr7[0], starGreen: arr7[1] } = tmp);
-  items3[2] = callback(closure_6, { source: first(12810), style: items5 });
-  const obj3 = { source: first(12810), style: items5 };
+  items3[2] = callback(closure_6, { source: first(12832), style: items5 });
+  const obj3 = { source: first(12832), style: items5 };
   const items6 = [, ];
   ({ starSmall: arr8[0], starPurple: arr8[1] } = tmp);
-  items3[3] = callback(closure_6, { source: first(12811), style: items6 });
+  items3[3] = callback(closure_6, { source: first(12833), style: items6 });
   items3[4] = callback(closure_5, { style: tmp.cardBackground });
-  const obj6 = { style: tmp.card, shadow: "low", border: "subtle" };
-  const obj7 = { style: tmp.header };
-  const items7 = [callback(require(4673) /* TextIcon */.TextIcon, { size: "sm" }), ];
-  const obj8 = { variant: "text-md/bold", allowFontScaling: false };
-  let intl = require(1212) /* getSystemLocale */.intl;
-  const items8 = [" ", intl.string(require(1212) /* getSystemLocale */.t.aLOLry)];
-  obj8.children = items8;
-  items7[1] = callback2(require(4161) /* Text */.Text, obj8);
-  obj7.children = items7;
+  const obj6 = { style: tmp.card, shadow: "low", border: "subtle", children: null };
+  const obj7 = { style: tmp.header, children: null };
+  const items7 = [callback(require(4695) /* TextIcon */.TextIcon, { size: "sm" }), ];
+  const obj8 = { variant: "text-md/bold", allowFontScaling: false, children: null };
+  let intl = require(1236) /* getSystemLocale */.intl;
+  const items8 = [" ", intl.string(require(1236) /* getSystemLocale */.t.aLOLry)];
+  obj8[2] = items8;
+  items7[1] = callback2(require(4185) /* Text */.Text, obj8);
+  obj7[1] = items7;
   const items9 = [callback2(closure_5, obj7), ];
-  const obj9 = { style: tmp.content };
-  const obj10 = {
-    style: animatedStyle,
-    children: first.map((avatar) => {
-      let obj = { style: tmp.message };
-      obj = { source: avatar.avatar, style: tmp.messageAvatar };
-      const items = [outer1_7(outer1_6, obj), ];
-      obj = { style: tmp.messageContent };
-      const obj1 = { variant: "text-md/semibold", allowFontScaling: false, children: avatar.name };
-      const items1 = [outer1_7(tmp(4161).Text, obj1), ];
-      const obj2 = { variant: "text-md/medium", allowFontScaling: false, children: avatar.message };
-      items1[1] = outer1_7(tmp(4161).Text, obj2);
-      obj.children = items1;
-      items[1] = outer1_8(outer1_5, obj);
-      obj.children = items;
-      return outer1_8(outer1_5, obj, avatar.message);
-    })
-  };
-  obj9.children = callback(first(4026).View, obj10);
+  const obj9 = { style: tmp.content, children: null };
+  const obj10 = { style: animatedStyle, children: null };
+  obj10[1] = first.map((children) => {
+    let obj = { style: tmp.message, children: null };
+    obj = { source: children.avatar, style: tmp.messageAvatar };
+    const items = [outer1_7(outer1_6, obj), ];
+    obj = { style: tmp.messageContent, children: null };
+    const items1 = [outer1_7(tmp(4185).Text, { variant: "text-md/semibold", allowFontScaling: false, children: children.name }), outer1_7(tmp(4185).Text, { variant: "text-md/medium", allowFontScaling: false, children: children.message })];
+    obj[1] = items1;
+    items[1] = outer1_8(outer1_5, obj);
+    obj[1] = items;
+    return outer1_8(outer1_5, obj, children.message);
+  });
+  obj9[1] = callback(first(4050).View, obj10);
   items9[1] = callback(closure_5, obj9);
-  obj6.children = items9;
-  items3[5] = callback2(require(5200) /* getCardBackgroundToken */.Card, obj6);
-  obj.children = items3;
+  obj6[3] = items9;
+  items3[5] = callback2(require(5222) /* PressableCard */.Card, obj6);
+  obj[1] = items3;
   return callback2(closure_5, obj);
 };

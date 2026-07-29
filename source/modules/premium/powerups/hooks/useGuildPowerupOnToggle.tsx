@@ -1,12 +1,12 @@
-// Module ID: 11602
-// Function ID: 90108
+// Module ID: 11626
+// Function ID: 11627
 // Name: useGuildPowerupOnToggle
-// Dependencies: [57, 31, 11556, 2]
+// Dependencies: [32, 19, 11580, 2]
 // Exports: default
 
-// Module 11602 (useGuildPowerupOnToggle)
+// Module 11626 (useGuildPowerupOnToggle)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
+import noop from "noop";
 
 const require = arg1;
 const result = require("guildPowerupsAckNotification").fileFinishedImporting("modules/premium/powerups/hooks/useGuildPowerupOnToggle.tsx");
@@ -17,36 +17,32 @@ export default function useGuildPowerupOnToggle(arg0, arg1) {
   let closure_0 = arg0;
   let closure_1 = arg1;
   [tmp2, _slicedToArray] = callback(React.useState(false), 2);
-  let tmp3 = callback(React.useState(undefined), 2);
+  const tmp3 = callback(React.useState(undefined), 2);
   React = tmp3[1];
-  let tmp = callback(React.useState(false), 2);
+  const tmp = callback(React.useState(false), 2);
   const items = [arg0, arg1];
   return {
     isLoading: tmp2,
     error: tmp3[0],
     onToggle: React.useCallback((arg0) => {
-      if (null == skuId) {
+      if (null == table) {
         return Promise.resolve();
       } else {
-        const tmp11 = callback(skuId[2]);
+        const tmp5 = callback(table[2]);
         callback2(true);
         callback3(undefined);
-        const tmp = arg0 ? tmp11.enablePowerupForGuild : tmp11.disablePowerupForGuild;
-        const tmpResult = arg0 ? tmp11.enablePowerupForGuild : tmp11.disablePowerupForGuild(callback, skuId.skuId);
-        return arg0 ? tmp11.enablePowerupForGuild : tmp11.disablePowerupForGuild(callback, skuId.skuId).catch((body) => {
+        const tmp6 = arg0 ? tmp5.enablePowerupForGuild : tmp5.disablePowerupForGuild;
+        const tmp6Result = arg0 ? tmp5.enablePowerupForGuild : tmp5.disablePowerupForGuild(callback, tmp.skuId);
+        return arg0 ? tmp5.enablePowerupForGuild : tmp5.disablePowerupForGuild(callback, tmp.skuId).catch((body) => {
           body = body.body;
           let message;
-          if (null != body) {
+          if (body != null) {
             message = body.message;
           }
-          let tmp3;
-          if (null != message) {
-            tmp3 = message;
-          }
-          outer1_3(tmp3);
+          noop(message);
           throw body;
         }).finally(() => {
-          outer1_2(false);
+          callback(false);
         });
       }
     }, items)

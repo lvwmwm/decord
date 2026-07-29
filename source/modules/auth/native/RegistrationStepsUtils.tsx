@@ -1,190 +1,402 @@
-// Module ID: 14833
-// Function ID: 112944
-// Name: getRegistrationSteps
-// Dependencies: [5, 31, 13772, 5624, 14834, 14835, 653, 33, 480, 14836, 14842, 14843, 14855, 14856, 14862, 9167, 14864, 14865, 9214, 9211, 14869, 14870, 14874, 14875, 1832, 14845, 4064, 9172, 14882, 2]
-// Exports: getAllAuthScreens, getNextRegistrationTransitionStep, handleNextOrSubmitRegistration
+// Module ID: 14859
+// Function ID: 14860
+// Name: headerTitle
+// Dependencies: [5, 19, 13793, 5642, 14860, 14861, 676, 21, 503, 14862, 14868, 14869, 14881, 14882, 14888, 9191, 14890, 14891, 9238, 9235, 14895, 14896, 14900, 14901, 1856, 14871, 4088, 9196, 14908, 2]
+// Exports: getAllAuthScreens, getNextRegistrationTransitionStep, getPreviousAuthState, getPreviousRegistrationTransitionStep, getRegistrationSteps, handleNextOrSubmitRegistration
 
-// Module 14833 (getRegistrationSteps)
+// Module 14859 (headerTitle)
 import closure_3 from "RegistrationTransitionActionTypes";
-import "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import "ChangePhoneReason";
+import isRateLimited from "isRateLimited";
 import { usePromoEmailConsentStore } from "setPromoEmailConsentState";
 import useRegistrationUIStore from "useRegistrationUIStore";
 import RegistrationTransitionActionTypes from "RegistrationTransitionActionTypes";
 import { AuthStates } from "ME";
-import { jsx } from "jsxProd";
+import { jsx } from "RegisterAgeGate";
 
-let closure_10;
-let closure_11;
+let c10;
+let c9;
 let closure_12;
-let closure_13;
 let closure_6;
-let closure_7;
-let closure_8;
-let closure_9;
+let error;
+let map1;
+let metroImportAll;
+let unpackModuleId;
 const require = arg1;
-function getRegistrationSteps() {
-  return items;
-}
 function headerTitle() {
   return null;
 }
-function getNextAuthState(WELCOME) {
-  const arr = getRegistrationSteps();
-  const index = arr.indexOf(WELCOME);
+function getNextAuthState(closure_0) {
+  const index = items.indexOf(closure_0);
   if (-1 !== index) {
     if (index !== arr.length - 1) {
       return arr[index + 1];
     }
   }
 }
-function getPreviousAuthState(AGE_GATE) {
-  const arr = getRegistrationSteps();
-  const index = arr.indexOf(AGE_GATE);
-  if (-1 !== index) {
-    if (0 !== index) {
-      return arr[index - 1];
-    }
-  }
-}
-function getPreviousRegistrationTransitionStep(AGE_GATE) {
-  const tmp = getPreviousAuthState(AGE_GATE);
-  if (null != tmp) {
-    return callback2(tmp);
-  }
-}
 function _handleNextOrSubmitRegistration() {
-  // CreateGeneratorClosureLongIndex (0x67)
-  const obj = callback(tmp);
-  return obj(...arguments);
+  const self = this;
+  const tmp = callback((arg0, arg1, arg2) => {
+    let closure_0 = arg0;
+    let closure_1 = arg1;
+    let closure_2 = arg2;
+    let c4 = 0;
+    let c3 = 0;
+    return (function*(arg0, arg1, arg2) {
+      if (c3 === 2) {
+        c3 = 3;
+        HermesBuiltin.throwTypeError();
+      } else if (tmp3 === 3) {
+        if (arg0 === 1) {
+          throw arg1;
+        } else if (arg0 === 2) {
+          let obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
+        } else {
+          return { value: "HermesInternal", done: null };
+        }
+      } else {
+        try {
+          c3 = 2;
+          if (0 === c4) {
+            if (arg0 === 1) {
+              c3 = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              c3 = 3;
+              obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            } else {
+              let arr = closure_1;
+              outer1_9();
+              const tmp21 = outer1_18(closure_0);
+              if (null != tmp21) {
+                const obj1 = { step: null, toStep: null, actionType: null };
+                obj1[0] = outer1_10(tmp16);
+                obj1[1] = outer1_10(tmp21);
+                obj1[2] = outer1_13.SUCCESS;
+                tmp17(obj1);
+                arr = arr.push(tmp21);
+              } else {
+                c4 = 1;
+                c3 = 1;
+                const obj2 = { value: null, done: false };
+                obj2[0] = outer1_20(tmp16, arr, tmp17);
+                return obj2;
+              }
+            }
+          } else if (arg0 === 1) {
+            c3 = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            c3 = 3;
+            obj = { value: null, done: true };
+            obj[0] = arg1;
+            return obj;
+          }
+          c3 = 3;
+          return { value: "HermesInternal", done: null };
+        } catch (tmp10) {
+          c3 = tmp;
+          throw tmp10;
+        }
+      }
+    })();
+  });
+  const _handleNextOrSubmitRegistration = tmp;
+  const apply = tmp.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
 }
 function handleRegistrationSubmit(AGE_GATE, closure_0, context) {
-  return _handleRegistrationSubmit(...arguments);
+  const self = this;
+  const apply = _handleRegistrationSubmit.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
 }
 function _handleRegistrationSubmit() {
-  // CreateGeneratorClosureLongIndex (0x67)
-  const obj = callback(tmp);
-  return obj(...arguments);
+  const self = this;
+  const tmp = callback((arg0, arg1, arg2) => {
+    let closure_0 = arg0;
+    let closure_1 = arg1;
+    let closure_2 = arg2;
+    let c7 = 0;
+    let c8 = 0;
+    let c6 = 0;
+    return (function*(arg0, arg1, arg2) {
+      if (state === 2) {
+        state = 3;
+        HermesBuiltin.throwTypeError();
+      } else if (tmp6 === 3) {
+        if (arg0 === 1) {
+          throw arg1;
+        } else if (arg0 === 2) {
+          let obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
+        } else {
+          return { value: "HermesInternal", done: null };
+        }
+      } else {
+        try {
+          state = 2;
+          if (0 === v02) {
+            if (arg0 === 1) {
+              state = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              state = 3;
+              obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            } else {
+              let authenticationErrorsFromAPIError = tmp3;
+              let obj1 = tmp7;
+              obj1 = undefined;
+              authenticationErrorsFromAPIError = undefined;
+              let closure_5;
+              const result = outer1_4.registrationUsernameSuggestion();
+              const registrationOptions = state.getState().registrationOptions;
+              let tmp37 = null;
+              if (!obj10.isNullOrEmpty(result)) {
+                tmp37 = registrationOptions.username === result;
+              }
+              obj1 = {};
+              const merged = Object.assign(registrationOptions);
+              obj1.usedUsernameSuggestion = tmp37;
+              state = outer1_5.getState();
+              if (state.required) {
+                obj1.promoEmailConsent = state;
+              }
+              v02(true);
+              v0({});
+              v0 = 1;
+              let obj3 = callback(14871);
+              v02 = 2;
+              state = 1;
+              const obj2 = { value: null, done: false };
+              obj2[0] = obj3.registerFull(obj1);
+              return obj2;
+            }
+          } else {
+            if (1 === tmp7) {
+              v0 = 0;
+              v0 = closure_5;
+              v02(false);
+              if (v0 instanceof callback(4088).APIError) {
+                obj1 = callback(9196);
+                authenticationErrorsFromAPIError = obj1.getAuthenticationErrorsFromAPIError(v0);
+                v0(authenticationErrorsFromAPIError);
+                closure_5 = callback3(callback);
+                if (null != closure_5) {
+                  callback2(14908)(callback2, dependencyMap, authenticationErrorsFromAPIError, closure_5);
+                }
+                state = 3;
+              } else {
+                state = 3;
+                return { value: "HermesInternal", done: null };
+              }
+            } else if (arg0 === 1) {
+              state = 3;
+              throw arg1;
+            } else if (arg0 !== 2) {
+              obj3 = { step: null, actionType: null, overrideRegistrationOptions: null };
+              obj3[0] = callback3(callback);
+              obj3[1] = constants2.SUCCESS;
+              obj3[2] = obj1;
+              dependencyMap(obj3);
+              const obj4 = { step: null, actionType: null, overrideRegistrationOptions: null };
+              obj4[0] = constants.REGISTER;
+              obj4[1] = constants2.SUCCESS;
+              obj4[2] = obj1;
+              dependencyMap(obj4);
+              v0 = 0;
+            }
+            v0 = 0;
+            state = 3;
+            obj = { value: null, done: true };
+            obj[0] = arg1;
+            return obj;
+          }
+        } catch (tmp49) {
+          closure_5 = tmp49;
+          if (tmp4 === v0) {
+            state = tmp2;
+            throw tmp49;
+          } else {
+            v02 = tmp;
+          }
+        }
+      }
+    })();
+  });
+  const _handleRegistrationSubmit = tmp;
+  const apply = tmp.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
 }
-({ setRegistrationErrors: closure_6, setSubmitting: closure_7, useRegistrationUIStore: closure_8, clearRegistrationErrorMessage: closure_9 } = useRegistrationUIStore);
-({ authStateToRegisterTransitionStep: closure_10, RegisterTransitionSteps: closure_11, RegistrationSteps: closure_12, RegistrationTransitionActionTypes: closure_13 } = RegistrationTransitionActionTypes);
+({ setRegistrationErrors: closure_6, setSubmitting: error, useRegistrationUIStore: metroImportAll, clearRegistrationErrorMessage: c9 } = useRegistrationUIStore);
+({ authStateToRegisterTransitionStep: c10, RegisterTransitionSteps: unpackModuleId, RegistrationSteps: closure_12, RegistrationTransitionActionTypes: map1 } = RegistrationTransitionActionTypes);
 const items = [, , , , ];
 ({ WELCOME: arr[0], REGISTER_IDENTITY: arr[1], REGISTER_DISPLAY_NAME: arr[2], REGISTER_ACCOUNT_INFORMATION: arr[3], AGE_GATE: arr[4] } = AuthStates);
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/auth/native/RegistrationStepsUtils.tsx");
+let result = require("isRateLimited").fileFinishedImporting("modules/auth/native/RegistrationStepsUtils.tsx");
 
-export { getRegistrationSteps };
+export function getRegistrationSteps() {
+  return items;
+}
 export const getAllAuthScreens = function getAllAuthScreens() {
   let obj = {};
   obj = {
     ignoreKeyboard: true,
     fullscreen: true,
-    impressionName: require(480) /* isThrottled */.ImpressionNames.USER_WELCOME,
+    impressionName: require(503) /* encodeProperties */.ImpressionNames.USER_WELCOME,
     headerTitle,
     headerShown: false,
     render() {
-      return outer1_15(outer1_1(outer1_2[9]), {});
+      return callback4(callback2(14862), {});
     }
   };
   obj[AuthStates.WELCOME] = obj;
-  obj = {
-    ignoreKeyboard: true,
-    fullscreen: true,
-    impressionName: require(480) /* isThrottled */.ImpressionNames.USER_REGISTRATION,
-    impressionProperties: { impression_group: require(480) /* isThrottled */.ImpressionGroups.USER_REGISTRATION_FLOW, step: constants.IDENTITY },
-    headerTitle,
-    headerLeft(arg0) {
-      const obj = {};
-      const merged = Object.assign(arg0);
-      obj["destinationStep"] = outer1_21(outer1_14.REGISTER_IDENTITY);
-      return outer1_15(outer1_0(outer1_2[10]).BackButtonWithTracking, obj);
-    },
-    render() {
-      return outer1_15(outer1_0(outer1_2[11]).RegisterIdentity, {});
+  obj = { ignoreKeyboard: true, fullscreen: true, impressionName: require(503) /* encodeProperties */.ImpressionNames.USER_REGISTRATION, impressionProperties: null, headerTitle: null, headerLeft: null, render: null };
+  obj[3] = { impression_group: require(503) /* encodeProperties */.ImpressionGroups.USER_REGISTRATION_FLOW, step: constants.IDENTITY };
+  obj[4] = headerTitle;
+  obj[5] = function headerLeft(arg0) {
+    const obj = {};
+    const merged = Object.assign(arg0);
+    const index = closure_16.indexOf(constants2.REGISTER_IDENTITY);
+    let tmp5;
+    if (-1 !== index) {
+      if (0 !== index) {
+        tmp5 = closure_16[index - 1];
+      }
     }
+    let tmp6;
+    if (null != tmp5) {
+      tmp6 = callback3(tmp5);
+    }
+    obj.destinationStep = tmp6;
+    return closure_15(callback(14868).BackButtonWithTracking, obj);
+  };
+  obj[6] = function render() {
+    return callback4(callback(14869).RegisterIdentity, {});
   };
   obj[AuthStates.REGISTER_IDENTITY] = obj;
-  const obj2 = { ignoreKeyboard: true, fullscreen: true, impressionName: require(480) /* isThrottled */.ImpressionNames.USER_REGISTRATION };
-  const obj1 = { impression_group: require(480) /* isThrottled */.ImpressionGroups.USER_REGISTRATION_FLOW, step: constants.IDENTITY };
-  obj2.impressionProperties = { impression_group: require(480) /* isThrottled */.ImpressionGroups.USER_REGISTRATION_FLOW, step: constants.DISPLAY_NAME };
-  obj2.headerTitle = headerTitle;
-  obj2.headerLeft = function headerLeft(arg0) {
+  const obj2 = { ignoreKeyboard: true, fullscreen: true, impressionName: require(503) /* encodeProperties */.ImpressionNames.USER_REGISTRATION, impressionProperties: null, headerTitle: null, headerLeft: null, render: null };
+  const obj1 = { impression_group: require(503) /* encodeProperties */.ImpressionGroups.USER_REGISTRATION_FLOW, step: constants.IDENTITY };
+  obj2[3] = { impression_group: require(503) /* encodeProperties */.ImpressionGroups.USER_REGISTRATION_FLOW, step: constants.DISPLAY_NAME };
+  obj2[4] = headerTitle;
+  obj2[5] = function headerLeft(arg0) {
     const obj = {};
     const merged = Object.assign(arg0);
-    obj["destinationStep"] = outer1_21(outer1_14.REGISTER_DISPLAY_NAME);
-    return outer1_15(outer1_0(outer1_2[10]).BackButtonWithTracking, obj);
+    const index = closure_16.indexOf(constants2.REGISTER_DISPLAY_NAME);
+    let tmp5;
+    if (-1 !== index) {
+      if (0 !== index) {
+        tmp5 = closure_16[index - 1];
+      }
+    }
+    let tmp6;
+    if (null != tmp5) {
+      tmp6 = callback3(tmp5);
+    }
+    obj.destinationStep = tmp6;
+    return closure_15(callback(14868).BackButtonWithTracking, obj);
   };
-  obj2.render = function render() {
-    return outer1_15(outer1_1(outer1_2[12]), {});
+  obj2[6] = function render() {
+    return callback4(callback2(14881), {});
   };
   obj[AuthStates.REGISTER_DISPLAY_NAME] = obj2;
-  const obj4 = { ignoreKeyboard: true, fullscreen: true, impressionName: require(480) /* isThrottled */.ImpressionNames.USER_REGISTRATION };
-  const obj3 = { impression_group: require(480) /* isThrottled */.ImpressionGroups.USER_REGISTRATION_FLOW, step: constants.DISPLAY_NAME };
-  obj4.impressionProperties = { impression_group: require(480) /* isThrottled */.ImpressionGroups.USER_REGISTRATION_FLOW, step: constants.ACCOUNT_INFORMATION };
-  obj4.headerTitle = headerTitle;
-  obj4.headerLeft = function headerLeft(arg0) {
+  const obj4 = { ignoreKeyboard: true, fullscreen: true, impressionName: require(503) /* encodeProperties */.ImpressionNames.USER_REGISTRATION, impressionProperties: null, headerTitle: null, headerLeft: null, render: null };
+  const obj3 = { impression_group: require(503) /* encodeProperties */.ImpressionGroups.USER_REGISTRATION_FLOW, step: constants.DISPLAY_NAME };
+  obj4[3] = { impression_group: require(503) /* encodeProperties */.ImpressionGroups.USER_REGISTRATION_FLOW, step: constants.ACCOUNT_INFORMATION };
+  obj4[4] = headerTitle;
+  obj4[5] = function headerLeft(arg0) {
     const obj = {};
     const merged = Object.assign(arg0);
-    obj["destinationStep"] = outer1_21(outer1_14.REGISTER_ACCOUNT_INFORMATION);
-    return outer1_15(outer1_0(outer1_2[10]).BackButtonWithTracking, obj);
+    const index = closure_16.indexOf(constants2.REGISTER_ACCOUNT_INFORMATION);
+    let tmp5;
+    if (-1 !== index) {
+      if (0 !== index) {
+        tmp5 = closure_16[index - 1];
+      }
+    }
+    let tmp6;
+    if (null != tmp5) {
+      tmp6 = callback3(tmp5);
+    }
+    obj.destinationStep = tmp6;
+    return closure_15(callback(14868).BackButtonWithTracking, obj);
   };
-  obj4.render = function render() {
-    return outer1_15(outer1_1(outer1_2[13]), {});
+  obj4[6] = function render() {
+    return callback4(callback2(14882), {});
   };
   obj[AuthStates.REGISTER_ACCOUNT_INFORMATION] = obj4;
-  const obj6 = { ignoreKeyboard: true, impressionName: require(480) /* isThrottled */.ImpressionNames.USER_VERIFY_PHONE };
-  const obj5 = { impression_group: require(480) /* isThrottled */.ImpressionGroups.USER_REGISTRATION_FLOW, step: constants.ACCOUNT_INFORMATION };
-  obj6.impressionProperties = { impression_group: require(480) /* isThrottled */.ImpressionGroups.USER_REGISTRATION_FLOW };
-  obj6.headerTitle = headerTitle;
-  obj6.headerLeft = function headerLeft(arg0) {
+  const obj6 = { ignoreKeyboard: true, impressionName: require(503) /* encodeProperties */.ImpressionNames.USER_VERIFY_PHONE, impressionProperties: null, headerTitle: null, headerLeft: null, render: null };
+  const obj5 = { impression_group: require(503) /* encodeProperties */.ImpressionGroups.USER_REGISTRATION_FLOW, step: constants.ACCOUNT_INFORMATION };
+  obj6[2] = { impression_group: require(503) /* encodeProperties */.ImpressionGroups.USER_REGISTRATION_FLOW };
+  obj6[3] = headerTitle;
+  obj6[4] = function headerLeft(arg0) {
     const obj = {};
     const merged = Object.assign(arg0);
-    obj["destinationStep"] = outer1_11.ACCOUNT_IDENTITY;
-    return outer1_15(outer1_0(outer1_2[10]).BackButtonWithTracking, obj);
+    obj.destinationStep = constants.ACCOUNT_IDENTITY;
+    return callback4(callback(14868).BackButtonWithTracking, obj);
   };
-  obj6.render = function render(arg0) {
+  obj6[5] = function render(arg0) {
     const merged = Object.assign(arg0);
-    return outer1_15(outer1_1(outer1_2[14]), {});
+    return callback4(callback2(14888), {});
   };
   obj[AuthStates.VERIFY_PHONE] = obj6;
-  const obj8 = { ignoreKeyboard: true, fullscreen: true, impressionName: require(480) /* isThrottled */.ImpressionNames.USER_LOGIN };
-  const obj7 = { impression_group: require(480) /* isThrottled */.ImpressionGroups.USER_REGISTRATION_FLOW };
-  obj8.impressionProperties = { impression_group: require(480) /* isThrottled */.ImpressionGroups.USER_LOGIN_FLOW };
-  obj8.headerTitle = headerTitle;
-  obj8.render = function render() {
-    return outer1_15(outer1_1(outer1_2[15]), {});
+  const obj8 = { ignoreKeyboard: true, fullscreen: true, impressionName: require(503) /* encodeProperties */.ImpressionNames.USER_LOGIN, impressionProperties: null, headerTitle: null, render: null };
+  const obj7 = { impression_group: require(503) /* encodeProperties */.ImpressionGroups.USER_REGISTRATION_FLOW };
+  obj8[3] = { impression_group: require(503) /* encodeProperties */.ImpressionGroups.USER_LOGIN_FLOW };
+  obj8[4] = headerTitle;
+  obj8[5] = function render() {
+    return callback4(callback2(9191), {});
   };
   obj[AuthStates.LOGIN] = obj8;
-  const obj10 = {
+  obj[AuthStates.MFA] = {
     fullscreen: true,
     ignoreKeyboard: true,
     headerTitle,
     headerShown: false,
     render() {
-      return outer1_15(outer1_1(outer1_2[16]), { inContainer: true });
+      return callback4(callback2(14890), { inContainer: true });
     }
   };
-  obj[AuthStates.MFA] = obj10;
-  const obj11 = {
+  obj[AuthStates.ACCOUNT_DISABLED_OR_DELETION_SCHEDULED] = {
     ignoreKeyboard: true,
     fullscreen: true,
     headerTitle,
     render(arg0) {
       const merged = Object.assign(arg0);
-      return outer1_15(outer1_1(outer1_2[17]), {});
+      return callback4(callback2(14891), {});
     }
   };
-  obj[AuthStates.ACCOUNT_DISABLED_OR_DELETION_SCHEDULED] = obj11;
   obj[AuthStates.COUNTRY_SELECT] = {
     ignoreKeyboard: true,
     headerTitle,
     render(arg0, arg1) {
       let closure_0 = arg1;
-      return outer1_15(outer1_1(outer1_2[18]), {
+      return callback4(callback2(9238), {
         onClose() {
           return arr.pop();
         },
         onCountrySelected(countryCode) {
-          return outer2_1(outer2_2[19]).setCountryCode(countryCode);
+          return callback(table[19]).setCountryCode(countryCode);
         }
       });
     }
@@ -194,65 +406,132 @@ export const getAllAuthScreens = function getAllAuthScreens() {
     headerTitle,
     render(arg0) {
       const merged = Object.assign(arg0);
-      return outer1_15(outer1_1(outer1_2[20]), {});
+      return callback4(callback2(14895), {});
     }
   };
-  const obj12 = {
+  const obj9 = { impression_group: require(503) /* encodeProperties */.ImpressionGroups.USER_LOGIN_FLOW };
+  obj[AuthStates.AGE_GATE] = {
     ignoreKeyboard: true,
     fullscreen: true,
-    impressionName: require(480) /* isThrottled */.ImpressionNames.USER_AGE_GATE,
+    impressionName: require(503) /* encodeProperties */.ImpressionNames.USER_AGE_GATE,
     headerTitle,
     headerLeft(arg0) {
       const obj = {};
       const merged = Object.assign(arg0);
-      obj["destinationStep"] = outer1_21(outer1_14.AGE_GATE);
-      return outer1_15(outer1_0(outer1_2[10]).BackButtonWithTracking, obj);
+      const index = closure_16.indexOf(constants2.AGE_GATE);
+      let tmp5;
+      if (-1 !== index) {
+        if (0 !== index) {
+          tmp5 = closure_16[index - 1];
+        }
+      }
+      let tmp6;
+      if (null != tmp5) {
+        tmp6 = callback3(tmp5);
+      }
+      obj.destinationStep = tmp6;
+      return closure_15(callback(14868).BackButtonWithTracking, obj);
     },
     render() {
-      return outer1_15(outer1_1(outer1_2[21]), {});
+      return callback4(callback2(14896), {});
     }
   };
-  obj[AuthStates.AGE_GATE] = obj12;
-  const obj13 = {
+  const obj10 = {
     ignoreKeyboard: true,
     fullscreen: true,
-    impressionName: require(480) /* isThrottled */.ImpressionNames.USER_AGE_GATE_UNDERAGE,
+    impressionName: require(503) /* encodeProperties */.ImpressionNames.USER_AGE_GATE,
+    headerTitle,
+    headerLeft(arg0) {
+      const obj = {};
+      const merged = Object.assign(arg0);
+      const index = closure_16.indexOf(constants2.AGE_GATE);
+      let tmp5;
+      if (-1 !== index) {
+        if (0 !== index) {
+          tmp5 = closure_16[index - 1];
+        }
+      }
+      let tmp6;
+      if (null != tmp5) {
+        tmp6 = callback3(tmp5);
+      }
+      obj.destinationStep = tmp6;
+      return closure_15(callback(14868).BackButtonWithTracking, obj);
+    },
+    render() {
+      return callback4(callback2(14896), {});
+    }
+  };
+  obj[AuthStates.AGE_GATE_UNDERAGE] = {
+    ignoreKeyboard: true,
+    fullscreen: true,
+    impressionName: require(503) /* encodeProperties */.ImpressionNames.USER_AGE_GATE_UNDERAGE,
     impressionProperties(existingUser) {
-      return { impression_group: outer1_0(outer1_2[8]).ImpressionGroups.USER_REGISTRATION_FLOW, existing_user: existingUser.existingUser };
+      return { impression_group: callback(503).ImpressionGroups.USER_REGISTRATION_FLOW, existing_user: existingUser.existingUser };
     },
     headerTitle,
     render(arg0, arg1) {
       let closure_0 = arg1;
       const merged = Object.assign(arg0);
-      return outer1_15(outer1_1(outer1_2[22]), {
+      return callback4(callback2(14900), {
         onClose() {
           return closure_0.popToTop();
         }
       });
     }
   };
-  obj[AuthStates.AGE_GATE_UNDERAGE] = obj13;
-  const obj14 = {
+  obj[AuthStates.COMPANION_REMOTE_AUTH] = {
     ignoreKeyboard: true,
     fullscreen: true,
     headerTitle,
     render() {
-      return outer1_15(outer1_0(outer1_2[23]).CompanionRemoteAuth, {});
+      return callback4(callback(14901).CompanionRemoteAuth, {});
     }
   };
-  obj[AuthStates.COMPANION_REMOTE_AUTH] = obj14;
   return obj;
 };
 export { getNextAuthState };
-export { getPreviousAuthState };
-export { getPreviousRegistrationTransitionStep };
-export const getNextRegistrationTransitionStep = function getNextRegistrationTransitionStep(closure_0) {
-  const tmp = getNextAuthState(closure_0);
-  if (null != tmp) {
-    return callback2(tmp);
+export const getPreviousAuthState = function getPreviousAuthState(arg0) {
+  const index = items.indexOf(arg0);
+  if (-1 !== index) {
+    if (0 !== index) {
+      return items[index - 1];
+    }
   }
 };
-export const handleNextOrSubmitRegistration = function handleNextOrSubmitRegistration(REGISTER_DISPLAY_NAME, arg1, arg2) {
-  return _handleNextOrSubmitRegistration(...arguments);
+export const getPreviousRegistrationTransitionStep = function getPreviousRegistrationTransitionStep(AGE_GATE) {
+  const index = items.indexOf(AGE_GATE);
+  let tmp3;
+  if (-1 !== index) {
+    if (0 !== index) {
+      tmp3 = tmp[index - 1];
+    }
+  }
+  if (null != tmp3) {
+    return callback2(tmp3);
+  }
+  tmp = items;
+};
+export const getNextRegistrationTransitionStep = function getNextRegistrationTransitionStep(closure_0) {
+  const index = items.indexOf(closure_0);
+  let tmp2;
+  if (-1 !== index) {
+    if (index !== arr.length - 1) {
+      tmp2 = arr[index + 1];
+    }
+  }
+  if (null != tmp2) {
+    return callback2(tmp2);
+  }
+};
+export const handleNextOrSubmitRegistration = function handleNextOrSubmitRegistration(REGISTER_DISPLAY_NAME, closure_0, outer1_4) {
+  const self = this;
+  const apply = _handleNextOrSubmitRegistration.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
 };
 export { handleRegistrationSubmit };

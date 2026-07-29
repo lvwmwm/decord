@@ -1,10 +1,10 @@
-// Module ID: 15030
-// Function ID: 114443
+// Module ID: 15060
+// Function ID: 15061
 // Name: isActivityTemporaryCustomStatus
-// Dependencies: [653, 2]
+// Dependencies: [676, 2]
 // Exports: isActivityTemporaryCustomStatus
 
-// Module 15030 (isActivityTemporaryCustomStatus)
+// Module 15060 (isActivityTemporaryCustomStatus)
 import { ActivityTypes } from "ME";
 
 const result = require("set").fileFinishedImporting("modules/custom_status/utils/isActivityTemporaryCustomStatus.tsx");
@@ -14,7 +14,7 @@ export const isActivityTemporaryCustomStatus = function isActivityTemporaryCusto
   if (tmp) {
     const timestamps = type.timestamps;
     let end;
-    if (null != timestamps) {
+    if (timestamps != null) {
       end = timestamps.end;
     }
     tmp = null != end;
@@ -22,7 +22,7 @@ export const isActivityTemporaryCustomStatus = function isActivityTemporaryCusto
   if (tmp) {
     const timestamps2 = type.timestamps;
     let end1;
-    if (null != timestamps2) {
+    if (timestamps2 != null) {
       end1 = timestamps2.end;
     }
     tmp = end1 > 0;

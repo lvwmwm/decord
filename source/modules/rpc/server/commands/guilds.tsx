@@ -1,24 +1,24 @@
-// Module ID: 13509
-// Function ID: 103686
-// Dependencies: [1391, 1838, 653, 8150, 10595, 10592, 2]
+// Module ID: 13532
+// Function ID: 13533
+// Dependencies: [1415, 1862, 676, 8174, 10629, 10626, 2]
 
-// Module 13509
-import { getGuildIconURL } from "isGuildOwner";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+// Module 13532
+import { getGuildIconURL } from "GuildNSFWContentLevel";
+import createGuildRecordFromRust from "createGuildRecordFromRust";
 import ME from "ME";
 
 let RPCCommands;
-let closure_4;
-({ RPCCommands, RPCErrors: closure_4 } = ME);
+let c4;
+({ RPCCommands, RPCErrors: c4 } = ME);
 let obj = {};
 obj = {
   scope: require("set").OAuth2Scopes.RPC,
   validation(string) {
-    let obj = importDefault(10595)(string);
-    obj = { guild_id: string.string() };
+    let obj = importDefault(10629)(string);
+    obj = { guild_id: string.string(), timeout: null };
     const requiredResult = obj.required();
     const numberResult = string.number();
-    obj.timeout = string.number().min(0).max(60);
+    obj[1] = string.number().min(0).max(60);
     return requiredResult.keys(obj);
   },
   handler(socket) {
@@ -33,28 +33,25 @@ obj = {
     }
     const storeWaitResult = server.storeWait(socket.socket, () => outer1_3.getGuild(closure_0), timeout);
     return server.storeWait(socket.socket, () => outer1_3.getGuild(closure_0), timeout).catch(() => {
-      let tmp = outer1_0(outer1_1[5]);
-      tmp = new tmp({ errorCode: outer1_4.GET_GUILD_TIMED_OUT }, "Request to get guild timed out.");
-      throw tmp;
+      throw new callback(table[5])({ errorCode: constants.GET_GUILD_TIMED_OUT }, "Request to get guild timed out.");
     }).then((vanityURLCode) => {
       if (null == vanityURLCode) {
-        let tmp6 = outer1_0(outer1_1[5]);
-        let obj = { errorCode: outer1_4.INVALID_GUILD };
+        let obj = { errorCode: null };
+        obj[0] = outer1_4.INVALID_GUILD;
         const _HermesInternal = HermesInternal;
-        const prototype = tmp6.prototype;
-        tmp6 = new tmp6(obj, "Invalid guild id: " + closure_0);
-        throw tmp6;
+        let tmp5 = outer1_0(outer1_1[5]);
+        tmp5 = new tmp5(obj, "Invalid guild id: " + closure_0);
+        throw tmp5;
       } else {
-        obj = {};
-        ({ id: obj.id, name: obj.name } = vanityURLCode);
-        const tmp2 = outer1_2(vanityURLCode, 128);
-        let tmp3 = null;
-        if (null != tmp2) {
-          tmp3 = tmp2;
+        obj = { id: null, name: null, icon_url: null, members: null, vanity_url_code: null };
+        ({ id: obj[0], name: obj[1] } = vanityURLCode);
+        let tmp2 = outer1_2(vanityURLCode, 128);
+        if (tmp2 == null) {
+          tmp2 = null;
         }
-        obj.icon_url = tmp3;
-        obj.members = [];
-        obj.vanity_url_code = vanityURLCode.vanityURLCode;
+        obj[2] = tmp2;
+        obj[3] = [];
+        obj[4] = vanityURLCode.vanityURLCode;
         return obj;
       }
     });
@@ -64,16 +61,15 @@ obj[RPCCommands.GET_GUILD] = obj;
 obj = {
   scope: require("set").OAuth2Scopes.RPC,
   handler() {
-    let obj = {};
+    let obj = { guilds: null };
     guildsArray = guildsArray.getGuildsArray();
-    obj.guilds = guildsArray.map((id) => {
-      const obj = { id: id.id, name: id.name };
-      const tmp = outer1_2(id, 128);
-      let tmp2 = null;
-      if (null != tmp) {
-        tmp2 = tmp;
+    obj[0] = guildsArray.map((id) => {
+      const obj = { id: id.id, name: id.name, icon_url: null };
+      let tmp = callback(id, 128);
+      if (tmp == null) {
+        tmp = null;
       }
-      obj.icon_url = tmp2;
+      obj[2] = tmp;
       return obj;
     });
     return obj;

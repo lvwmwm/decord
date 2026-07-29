@@ -1,14 +1,14 @@
-// Module ID: 11393
-// Function ID: 88387
+// Module ID: 11417
+// Function ID: 11418
 // Name: downsampleWaveform
-// Dependencies: [44, 2]
+// Dependencies: [38, 2]
 // Exports: default
 
-// Module 11393 (downsampleWaveform)
+// Module 11417 (downsampleWaveform)
 const result = require("set").fileFinishedImporting("modules/voice_messages/downsampleWaveform.tsx");
 
 export default function downsampleWaveform(arg0, arg1) {
-  importDefault(44)(arg0.length >= arg1, "Waveform smaller than samples");
+  importDefault(38)(arg0.length >= arg1, "Waveform smaller than samples");
   if (arg0.length === arg1) {
     return arg0;
   } else {
@@ -16,7 +16,8 @@ export default function downsampleWaveform(arg0, arg1) {
     let num5 = 0;
     while (items.length < arg1) {
       let _Math = Math;
-      let rounded = Math.round((items.length + 1) * tmp5);
+      let rounded = Math.round((items.length + 1) * tmp7);
+      let tmp3 = num5;
       let num = 0;
       let num2 = 0;
       if (num5 < rounded) {
@@ -24,24 +25,25 @@ export default function downsampleWaveform(arg0, arg1) {
         let num4 = 0;
         num = 0;
         num2 = 0;
-        if (num5 < arg0.length) {
-          let sum = num3 + arg0[num5];
-          let sum1 = num4 + 1;
-          num5 = num5 + 1;
-          num = sum;
-          num2 = sum1;
-          while (num5 < rounded) {
-            num3 = sum;
-            num4 = sum1;
-            num = sum;
-            num2 = sum1;
-            if (num5 >= arg0.length) {
+        if (tmp3 < arg0.length) {
+          let sum = num4 + arg0[tmp3];
+          let sum1 = num3 + 1;
+          let sum2 = tmp3 + 1;
+          num = sum1;
+          num2 = sum;
+          while (sum2 < rounded) {
+            num3 = sum1;
+            num4 = sum;
+            num = sum1;
+            num2 = sum;
+            tmp3 = sum2;
+            if (sum2 >= arg0.length) {
               break;
             }
           }
         }
       }
-      items[items.length] = num / num2;
+      items[items.length] = num2 / num;
       num5 = rounded;
     }
     return items;

@@ -1,29 +1,29 @@
-// Module ID: 4595
-// Function ID: 40075
+// Module ID: 4617
+// Function ID: 4618
 // Name: useMountEffect
-// Dependencies: [31, 2]
+// Dependencies: [19, 2]
 // Exports: default, useMountLayoutEffect, useUnmountEffect
 
-// Module 4595 (useMountEffect)
-import result from "result";
+// Module 4617 (useMountEffect)
+import noop from "noop";
 
 const result = require("set").fileFinishedImporting("../discord_common/js/shared/hooks/useMountEffect.tsx");
 
-export default function useMountEffect(arg0) {
-  React = React.useRef(arg0);
+export default function useMountEffect(stateFromStores) {
+  React = React.useRef(stateFromStores);
   const effect = React.useEffect(() => ref.current(), []);
 };
-export const useMountLayoutEffect = function useMountLayoutEffect(arg0) {
-  React = React.useRef(arg0);
+export const useMountLayoutEffect = function useMountLayoutEffect(stateFromStores) {
+  React = React.useRef(stateFromStores);
   const layoutEffect = React.useLayoutEffect(() => ref.current(), []);
 };
-export const useUnmountEffect = function useUnmountEffect(arg0) {
-  const React = arg0;
-  let closure_1 = React.useRef(arg0);
+export const useUnmountEffect = function useUnmountEffect(stateFromStores) {
+  const React = stateFromStores;
+  let closure_1 = React.useRef(stateFromStores);
   const effect = React.useEffect(() => {
-    closure_1.current = result;
+    closure_1.current = noop;
   });
   const effect1 = React.useEffect(() => () => {
-    outer1_1.current();
+    ref.current();
   }, []);
 };

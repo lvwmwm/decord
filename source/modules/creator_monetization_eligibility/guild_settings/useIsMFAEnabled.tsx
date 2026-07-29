@@ -1,29 +1,27 @@
-// Module ID: 16493
-// Function ID: 128542
+// Module ID: 16528
+// Function ID: 16529
 // Name: useIsMFAEnabled
-// Dependencies: [8281, 1850, 653, 624, 2]
+// Dependencies: [8305, 1874, 676, 647, 2]
 // Exports: useIsMFAEnabled
 
-// Module 16493 (useIsMFAEnabled)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_3 from "_isNativeReflectConstruct";
+// Module 16528 (useIsMFAEnabled)
+import handleFormInit from "handleFormInit";
+import mergeGuildAvatar from "mergeGuildAvatar";
 import { MFALevels } from "ME";
 
 const require = arg1;
 const result = require("ME").fileFinishedImporting("modules/creator_monetization_eligibility/guild_settings/useIsMFAEnabled.tsx");
 
 export const useIsMFAEnabled = function useIsMFAEnabled() {
+  let obj = require(647) /* defaultAreStatesEqual */;
+  const items = [mergeGuildAvatar];
+  const stateFromStores = obj.useStateFromStores(items, () => currentUser.getCurrentUser());
+  const items1 = [handleFormInit];
   let mfaEnabled;
-  let obj = require(624) /* defaultAreStatesEqual */;
-  const items = [closure_3];
-  const stateFromStores = obj.useStateFromStores(items, () => outer1_3.getCurrentUser());
-  const items1 = [_isNativeReflectConstruct];
-  obj = {};
-  const stateFromStores1 = require(624) /* defaultAreStatesEqual */.useStateFromStores(items1, () => outer1_2.getProps().mfaLevel);
-  if (null != stateFromStores) {
+  const stateFromStores1 = require(647) /* defaultAreStatesEqual */.useStateFromStores(items1, () => props.getProps().mfaLevel);
+  if (stateFromStores != null) {
     mfaEnabled = stateFromStores.mfaEnabled;
   }
-  obj.isUserMFAEnabled = true === mfaEnabled;
-  obj.isModerationMFAEnabled = stateFromStores1 === MFALevels.ELEVATED;
+  obj = { isUserMFAEnabled: true === mfaEnabled, isModerationMFAEnabled: stateFromStores1 === MFALevels.ELEVATED };
   return obj;
 };

@@ -1,8 +1,8 @@
 // Module ID: 214
-// Function ID: 2963
+// Function ID: 215
 // Name: Networking
-// Dependencies: [55]
+// Dependencies: [30]
 
 // Module 214 (Networking)
 
-export default require("requireModule").getEnforcing("Networking");
+export default require("get").getEnforcing("Networking");

@@ -1,23 +1,23 @@
-// Module ID: 10362
-// Function ID: 79897
+// Module ID: 10383
+// Function ID: 10384
 // Name: MessageNotificationDetachedContent
-// Dependencies: [31, 27, 10241, 33, 4165, 10281, 1212, 4026, 4166, 10363, 10364, 2]
+// Dependencies: [19, 17, 10262, 21, 4189, 10302, 1236, 10384, 1581, 4050, 4190, 10387, 10388, 2]
 // Exports: MessageNotificationDetachedContent
 
-// Module 10362 (MessageNotificationDetachedContent)
-import result from "result";
+// Module 10383 (MessageNotificationDetachedContent)
+import noop from "noop";
 import { Keyboard } from "get ActivityIndicator";
 import { DEFAULT_ANIMATION_TIMING } from "set";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
 let closure_6;
-let closure_7;
-let closure_8;
+let error;
+let metroImportAll;
 const require = arg1;
-({ jsx: closure_6, Fragment: closure_7, jsxs: closure_8 } = jsxProd);
-let closure_9 = _createForOfIteratorHelperLoose.createStyles({ expandFooterContainer: { position: "absolute", bottom: 4, left: 0, right: 0 } });
-let closure_10 = { code: "function MessageNotificationDetachedContentTsx1(){const{withTiming,expandedSV,DEFAULT_ANIMATION_TIMING}=this.__closure;return{opacity:withTiming(expandedSV.get()?1:0,DEFAULT_ANIMATION_TIMING),transform:[{scale:withTiming(expandedSV.get()?1:0.8,DEFAULT_ANIMATION_TIMING)}]};}" };
+({ jsx: closure_6, Fragment: error, jsxs: metroImportAll } = jsxProd);
+let closure_9 = createCacheKey.createStyles({ expandFooterContainer: { position: "absolute", left: 0, right: 0 } });
+let closure_10 = { code: "function MessageNotificationDetachedContentTsx1(){const{withTiming,expandedSV,DEFAULT_ANIMATION_TIMING,keyboardHeight,safeAreaBottom}=this.__closure;return{opacity:withTiming(expandedSV.get()?1:0,DEFAULT_ANIMATION_TIMING),transform:[{scale:withTiming(expandedSV.get()?1:0.8,DEFAULT_ANIMATION_TIMING)}],bottom:4+Math.max(keyboardHeight.get(),safeAreaBottom)};}" };
 const result = require("set").fileFinishedImporting("modules/in_app_notifications/native/MessageNotificationDetachedContent.tsx");
 
 export const MessageNotificationDetachedContent = function MessageNotificationDetachedContent(notification) {
@@ -25,12 +25,19 @@ export const MessageNotificationDetachedContent = function MessageNotificationDe
   let isExpanded;
   let setConfirmation;
   let showReplyInput;
+  let expandedSV;
+  let setActionTaken;
+  let setExpanded;
+  let setAutoDismissing;
+  setConfirmation = undefined;
+  let c5;
+  let bottom;
   let obj = expandedSV(setExpanded[5]);
   const inAppNotificationContext = obj.useInAppNotificationContext();
   expandedSV = inAppNotificationContext.expandedSV;
-  const setActionTaken = inAppNotificationContext.setActionTaken;
+  setActionTaken = inAppNotificationContext.setActionTaken;
   setExpanded = inAppNotificationContext.setExpanded;
-  const setAutoDismissing = inAppNotificationContext.setAutoDismissing;
+  setAutoDismissing = inAppNotificationContext.setAutoDismissing;
   ({ confirmation, setConfirmation } = inAppNotificationContext);
   let items = [setActionTaken, setExpanded, setAutoDismissing, setConfirmation];
   ({ isExpanded, showReplyInput } = inAppNotificationContext);
@@ -39,56 +46,58 @@ export const MessageNotificationDetachedContent = function MessageNotificationDe
     setActionTaken(true);
     setExpanded(false);
     setAutoDismissing(true);
-    const obj = { type: "message", reaction: null };
+    const obj = { type: "message", reaction: null, message: null };
     const intl = expandedSV(setExpanded[6]).intl;
-    obj.message = intl.string(expandedSV(setExpanded[6]).t["b/4dOF"]);
+    obj[2] = intl.string(expandedSV(setExpanded[6]).t["b/4dOF"]);
     setConfirmation(obj);
   }, items);
-  let obj1 = expandedSV(setExpanded[7]);
+  const tmp7 = setActionTaken(setExpanded[7])();
+  c5 = tmp7;
+  bottom = setActionTaken(setExpanded[8])().bottom;
+  let obj1 = expandedSV(setExpanded[9]);
   const fn = function _() {
-    let obj = {};
+    let obj = expandedSV(setExpanded[10]);
     let num = 0;
     if (expandedSV.get()) {
       num = 1;
     }
-    obj.opacity = expandedSV(setExpanded[8]).withTiming(num, outer1_5);
-    obj = {};
-    const obj2 = expandedSV(setExpanded[8]);
+    obj = { opacity: obj.withTiming(num, _undefined), transform: null, bottom: null };
     let num2 = 0.8;
     if (expandedSV.get()) {
       num2 = 1;
     }
-    obj.scale = expandedSV(setExpanded[8]).withTiming(num2, outer1_5);
+    obj = { scale: expandedSV(setExpanded[10]).withTiming(num2, _undefined) };
     const items = [obj];
-    obj.transform = items;
+    obj[1] = items;
+    obj[2] = 4 + Math.max(_undefined.get(), bottom);
     return obj;
   };
-  obj = { withTiming: expandedSV(setExpanded[8]).withTiming, expandedSV, DEFAULT_ANIMATION_TIMING };
+  obj = { withTiming: expandedSV(setExpanded[10]).withTiming, expandedSV, DEFAULT_ANIMATION_TIMING: c5, keyboardHeight: tmp7, safeAreaBottom: bottom };
   fn.__closure = obj;
-  fn.__workletHash = 16391347485958;
+  fn.__workletHash = 1331449062174;
   fn.__initData = closure_10;
-  obj = {};
-  let tmp7 = null;
+  let tmp11 = null;
   const animatedStyle = obj1.useAnimatedStyle(fn);
   if (null != confirmation) {
-    obj1 = {};
-    ({ message: obj5.message, reaction: obj5.reaction } = confirmation);
-    tmp7 = callback(expandedSV(setExpanded[9]).ConfirmationToast, obj1);
+    obj = { message: null, reaction: null };
+    ({ message: obj4[0], reaction: obj4[1] } = confirmation);
+    tmp11 = bottom(tmp2(tmp3[11]).ConfirmationToast, obj);
   }
-  const items1 = [tmp7, ];
-  let tmp11 = null;
+  const children = [tmp11, ];
+  let tmp13 = null;
   if (isExpanded) {
-    tmp11 = null;
+    tmp13 = null;
     if (showReplyInput) {
-      let obj2 = {};
+      obj1 = { style: null, children: null };
       const items2 = [tmp.expandFooterContainer, animatedStyle];
-      obj2.style = items2;
-      const obj3 = { notification: notification.notification, onMessageSent: callback };
-      obj2.children = callback(expandedSV(setExpanded[10]).MessageReplyInput, obj3);
-      tmp11 = callback(setActionTaken(setExpanded[7]).View, obj2);
+      obj1[0] = items2;
+      const obj2 = { notification: null, onMessageSent: null };
+      obj2[0] = notification.notification;
+      obj2[1] = callback;
+      obj1[1] = bottom(tmp2(tmp3[12]).MessageReplyInput, obj2);
+      tmp13 = bottom(setActionTaken(tmp3[9]).View, obj1);
     }
   }
-  items1[1] = tmp11;
-  obj.children = items1;
-  return closure_8(closure_7, obj);
+  children[1] = tmp13;
+  return closure_8(closure_7, { children });
 };

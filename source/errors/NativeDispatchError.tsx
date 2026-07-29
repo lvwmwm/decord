@@ -1,120 +1,114 @@
-// Module ID: 4067
-// Function ID: 33692
-// Name: NativeDispatchError
-// Dependencies: [6, 7, 4068, 1212, 4060, 2]
+// Module ID: 4091
+// Function ID: 4092
+// Name: displayMessage
+// Dependencies: [4092, 1236, 4084, 2]
 
-// Module 4067 (NativeDispatchError)
-import _classCallCheck from "_classCallCheck";
-import _defineProperties from "_defineProperties";
+// Module 4091 (displayMessage)
 import { DispatchErrorCodes } from "RPC_SCOPE_CONFIG";
 
-const require = arg1;
-const tmp2 = (() => {
-  class NativeDispatchError {
-    constructor(arg0) {
-      self = this;
-      tmp = outer1_2(this, NativeDispatchError);
-      this.raw = arg0;
-      if (null != arg0.code) {
-        self.code = arg0.code;
-      }
-      if (null != arg0.uuid) {
-        self.uuid = arg0.uuid;
-      }
-      if (null != arg0.application_id) {
-        self.applicationId = arg0.application_id;
-      }
-      if (null != arg0.branch_id) {
-        self.branchId = arg0.branch_id;
-      }
-      if (null != arg0.context) {
-        self.context = arg0.context;
-      } else {
-        self.context = {};
-      }
-      return;
+const result = require("formatSize").fileFinishedImporting("errors/NativeDispatchError.tsx");
+class NativeDispatchError {
+  constructor(arg0) {
+    obj = Object.create(new.target.prototype);
+    obj.raw = global;
+    if (null != global.code) {
+      obj.code = global.code;
     }
+    if (null != global.uuid) {
+      obj.uuid = global.uuid;
+    }
+    if (null != global.application_id) {
+      obj.applicationId = global.application_id;
+    }
+    if (null != global.branch_id) {
+      obj.branchId = global.branch_id;
+    }
+    if (null != global.context) {
+      obj.context = global.context;
+    } else {
+      obj.context = {};
+    }
+    return obj;
   }
-  const items = [
-    {
-      key: "displayMessage",
-      get() {
-        let available;
-        let required;
-        const self = this;
-        if (null == this.code) {
-          const intl14 = NativeDispatchError(outer1_1[3]).intl;
-          return intl14.string(NativeDispatchError(outer1_1[3]).t["5NMPSS"]);
-        } else {
-          const path = self.context.path;
-          const code = self.code;
-          if (outer1_4.DISK_LOW === code) {
-            ({ available, required } = self.context);
-            let obj4 = NativeDispatchError(outer1_1[4]);
-            let obj = { useKibibytes: true };
-            const formatSizeResult = obj4.formatSize(available, obj);
-            obj = { useKibibytes: true };
-            const obj7 = NativeDispatchError(outer1_1[4]);
-            const intl13 = NativeDispatchError(outer1_1[3]).intl;
-            const obj1 = { required: NativeDispatchError(outer1_1[4]).formatSize(required, obj), available: formatSizeResult };
-            return intl13.formatToPlainString(NativeDispatchError(outer1_1[3]).t["2DR5dl"], obj1);
-          } else if (outer1_4.POST_INSTALL_FAILED === code) {
-            const intl12 = NativeDispatchError(outer1_1[3]).intl;
-            const obj2 = { name: self.context.name };
-            return intl12.formatToPlainString(NativeDispatchError(outer1_1[3]).t.hP0B3A, obj2);
-          } else if (outer1_4.FILE_NAME_TOO_LONG === code) {
-            const intl11 = NativeDispatchError(outer1_1[3]).intl;
-            return intl11.string(NativeDispatchError(outer1_1[3]).t["FWht5+"]);
-          } else if (outer1_4.POST_INSTALL_CANCELLED === code) {
-            const intl10 = NativeDispatchError(outer1_1[3]).intl;
-            return intl10.string(NativeDispatchError(outer1_1[3]).t["9CNxFJ"]);
-          } else if (outer1_4.IO_PERMISSION_DENIED === code) {
-            const intl9 = NativeDispatchError(outer1_1[3]).intl;
-            return intl9.string(NativeDispatchError(outer1_1[3]).t["PJx5+Z"]);
-          } else if (outer1_4.NO_MANIFESTS === code) {
-            const intl8 = NativeDispatchError(outer1_1[3]).intl;
-            return intl8.string(NativeDispatchError(outer1_1[3]).t.gLM395);
-          } else if (outer1_4.NOT_ENTITLED === code) {
-            const intl7 = NativeDispatchError(outer1_1[3]).intl;
-            return intl7.string(NativeDispatchError(outer1_1[3]).t.TLCR43);
-          } else {
-            if (outer1_4.NOT_DIRECTORY !== code) {
-              if (outer1_4.DISK_PERMISSION_DENIED !== code) {
-                if (outer1_4.INVALID_DRIVE === code) {
-                  const intl5 = NativeDispatchError(outer1_1[3]).intl;
-                  const obj3 = { path };
-                  return intl5.formatToPlainString(NativeDispatchError(outer1_1[3]).t["08L2TG"], obj3);
-                } else if (outer1_4.APPLICATION_LOCK_FAILED === code) {
-                  const intl4 = NativeDispatchError(outer1_1[3]).intl;
-                  return intl4.string(NativeDispatchError(outer1_1[3]).t.RDYCUV);
-                } else if (outer1_4.DISK_FULL === code) {
-                  const intl3 = NativeDispatchError(outer1_1[3]).intl;
-                  return intl3.string(NativeDispatchError(outer1_1[3]).t.mojtDJ);
-                } else {
-                  if (outer1_4.API_ERROR !== code) {
-                    if (outer1_4.MAX_REQUEST_RETRIES_EXCEEDED !== code) {
-                      const intl = NativeDispatchError(outer1_1[3]).intl;
-                      obj = {};
-                      const _HermesInternal = HermesInternal;
-                      obj.code = "" + self.code;
-                      return intl.formatToPlainString(NativeDispatchError(outer1_1[3]).t.r477WB, obj);
-                    }
-                  }
-                  const intl2 = NativeDispatchError(outer1_1[3]).intl;
-                  return intl2.string(NativeDispatchError(outer1_1[3]).t.OXD41D);
+}
+Object.defineProperty(NativeDispatchError.prototype, "displayMessage", {
+  get: function displayMessage() {
+    let available;
+    let required;
+    const self = this;
+    if (null == this.code) {
+      const intl14 = require(1236) /* getSystemLocale */.intl;
+      return intl14.string(require(1236) /* getSystemLocale */.t["5NMPSS"]);
+    } else {
+      const path = self.context.path;
+      const code = self.code;
+      if (DispatchErrorCodes.DISK_LOW === code) {
+        ({ available, required } = self.context);
+        const obj5 = require(4084) /* formatSize */;
+        const formatSizeResult = require(4084) /* formatSize */.formatSize(available, { useKibibytes: true });
+        const obj6 = require(4084) /* formatSize */;
+        const intl13 = require(1236) /* getSystemLocale */.intl;
+        let obj = { required: null, available: null };
+        obj[0] = require(4084) /* formatSize */.formatSize(required, { useKibibytes: true });
+        obj[1] = formatSizeResult;
+        return intl13.formatToPlainString(require(1236) /* getSystemLocale */.t["2DR5dl"], obj);
+      } else if (tmp32.POST_INSTALL_FAILED === code) {
+        const intl12 = require(1236) /* getSystemLocale */.intl;
+        obj = { name: null };
+        obj[0] = self.context.name;
+        return intl12.formatToPlainString(require(1236) /* getSystemLocale */.t.hP0B3A, obj);
+      } else if (tmp32.FILE_NAME_TOO_LONG === code) {
+        const intl11 = require(1236) /* getSystemLocale */.intl;
+        return intl11.string(require(1236) /* getSystemLocale */.t["FWht5+"]);
+      } else if (tmp32.POST_INSTALL_CANCELLED === code) {
+        const intl10 = require(1236) /* getSystemLocale */.intl;
+        return intl10.string(require(1236) /* getSystemLocale */.t["9CNxFJ"]);
+      } else if (tmp32.IO_PERMISSION_DENIED === code) {
+        const intl9 = require(1236) /* getSystemLocale */.intl;
+        return intl9.string(require(1236) /* getSystemLocale */.t["PJx5+Z"]);
+      } else if (tmp32.NO_MANIFESTS === code) {
+        const intl8 = require(1236) /* getSystemLocale */.intl;
+        return intl8.string(require(1236) /* getSystemLocale */.t.gLM395);
+      } else if (tmp32.NOT_ENTITLED === code) {
+        const intl7 = require(1236) /* getSystemLocale */.intl;
+        return intl7.string(require(1236) /* getSystemLocale */.t.TLCR43);
+      } else {
+        if (tmp32.NOT_DIRECTORY !== code) {
+          if (tmp32.DISK_PERMISSION_DENIED !== code) {
+            if (tmp32.INVALID_DRIVE === code) {
+              const intl5 = require(1236) /* getSystemLocale */.intl;
+              const obj1 = { path: null };
+              obj1[0] = path;
+              return intl5.formatToPlainString(require(1236) /* getSystemLocale */.t["08L2TG"], obj1);
+            } else if (tmp32.APPLICATION_LOCK_FAILED === code) {
+              const intl4 = require(1236) /* getSystemLocale */.intl;
+              return intl4.string(require(1236) /* getSystemLocale */.t.RDYCUV);
+            } else if (tmp32.DISK_FULL === code) {
+              const intl3 = require(1236) /* getSystemLocale */.intl;
+              return intl3.string(require(1236) /* getSystemLocale */.t.mojtDJ);
+            } else {
+              if (tmp32.API_ERROR !== code) {
+                if (tmp32.MAX_REQUEST_RETRIES_EXCEEDED !== code) {
+                  const intl = require(1236) /* getSystemLocale */.intl;
+                  obj = { code: null };
+                  const _HermesInternal = HermesInternal;
+                  obj[0] = "" + self.code;
+                  return intl.formatToPlainString(require(1236) /* getSystemLocale */.t.r477WB, obj);
                 }
               }
+              const intl2 = require(1236) /* getSystemLocale */.intl;
+              return intl2.string(require(1236) /* getSystemLocale */.t.OXD41D);
             }
-            const intl6 = NativeDispatchError(outer1_1[3]).intl;
-            obj4 = { path };
-            return intl6.formatToPlainString(NativeDispatchError(outer1_1[3]).t.EjWbO6, obj4);
           }
         }
+        const intl6 = require(1236) /* getSystemLocale */.intl;
+        const obj2 = { path: null };
+        obj2[0] = path;
+        return intl6.formatToPlainString(require(1236) /* getSystemLocale */.t.EjWbO6, obj2);
       }
     }
-  ];
-  return callback(NativeDispatchError, items);
-})();
-const result = require("RPC_SCOPE_CONFIG").fileFinishedImporting("errors/NativeDispatchError.tsx");
+  },
+  set: undefined
+});
 
-export default tmp2;
+export default NativeDispatchError;

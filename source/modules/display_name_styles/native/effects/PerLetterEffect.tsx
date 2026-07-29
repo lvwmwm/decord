@@ -1,20 +1,20 @@
-// Module ID: 8363
-// Function ID: 66946
+// Module ID: 8387
+// Function ID: 8388
 // Name: PerLetterEffect
-// Dependencies: [31, 27, 33, 4165, 8364, 8365, 4161, 2]
+// Dependencies: [19, 17, 21, 4189, 8388, 8389, 4185, 2]
 // Exports: default
 
-// Module 8363 (PerLetterEffect)
-import result from "result";
+// Module 8387 (PerLetterEffect)
+import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_4;
-let closure_5;
+let c4;
+let c5;
 const require = arg1;
-({ View: closure_4, Text: closure_5 } = get_ActivityIndicator);
-let closure_7 = _createForOfIteratorHelperLoose.createStyles({ container: { overflow: "hidden" } });
+({ View: c4, Text: c5 } = get_ActivityIndicator);
+let closure_7 = createCacheKey.createStyles({ container: { overflow: "hidden" } });
 const result = require("jsxProd").fileFinishedImporting("modules/display_name_styles/native/effects/PerLetterEffect.tsx");
 
 export default function PerLetterEffect(name) {
@@ -23,48 +23,47 @@ export default function PerLetterEffect(name) {
   name = name.name;
   ({ textProps, colors } = name);
   const items = [name, colors];
-  let obj = { style: callback().container };
+  let obj = { style: callback().container, children: null };
   const memo = React.useMemo(() => {
     let closure_0 = colors(outer1_2[4])();
     let c1 = 0;
     let obj = name(outer1_2[5]);
-    return name(outer1_2[5]).splitGraphemes(closure_0).map((str) => {
+    return name(outer1_2[5]).splitGraphemes(closure_0).map((children) => {
       regex.lastIndex = 0;
-      const tmp = regex.test(str) || 0 === str.trim().length;
+      const tmp = regex.test(children) || 0 === children.trim().length;
       let tmp2;
       if (null != c1) {
-        if (c1.length > 0) {
+        if (arr.length > 0) {
           if (!tmp) {
-            tmp2 = c1[closure_1 % c1.length];
+            tmp2 = arr[closure_1 % arr.length];
           }
         }
       }
       if (!tmp) {
         closure_1 = closure_1 + 1;
       }
-      let obj = {};
-      let tmp9;
+      let tmp7;
       if (null != tmp2) {
-        obj = { color: tmp2 };
-        tmp9 = obj;
+        let obj = { color: null };
+        obj[0] = tmp2;
+        tmp7 = obj;
       }
-      obj.style = tmp9;
-      obj.children = str;
+      obj = { style: tmp7, children };
       return outer2_6(outer2_5, obj, arg1);
     });
   }, items);
   obj = {};
   const merged = Object.assign(textProps);
-  obj["textBreakStrategy"] = "simple";
-  obj["accessible"] = true;
-  const accessibilityLabel = textProps.accessibilityLabel;
-  if (null != accessibilityLabel) {
-    name = accessibilityLabel;
+  obj.textBreakStrategy = "simple";
+  obj.accessible = true;
+  let accessibilityLabel = textProps.accessibilityLabel;
+  if (accessibilityLabel == null) {
+    accessibilityLabel = name;
   }
-  obj["accessibilityLabel"] = name;
-  const items1 = [name.textStyle, { lineHeight: undefined }];
-  obj["style"] = items1;
-  obj["children"] = memo;
-  obj.children = jsx(name(4161).Text, {});
+  obj.accessibilityLabel = accessibilityLabel;
+  const items1 = [name.textStyle, { lineHeight: "r" }];
+  obj.style = items1;
+  obj.children = memo;
+  obj[1] = jsx(name(4185).Text, {});
   return <closure_4 />;
 };

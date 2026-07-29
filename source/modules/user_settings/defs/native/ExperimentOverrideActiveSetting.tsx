@@ -1,22 +1,15 @@
-// Module ID: 14518
-// Function ID: 110774
-// Name: useExperimentOverrideActiveCount
-// Dependencies: [4079, 1188, 33, 13612, 566, 13613, 13852, 10099, 13623, 2]
+// Module ID: 14543
+// Function ID: 14544
+// Name: pressable
+// Dependencies: [4103, 1212, 21, 13633, 589, 13634, 13873, 10120, 13644, 2]
 
-// Module 14518 (useExperimentOverrideActiveCount)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_3 from "_isNativeReflectConstruct";
+// Module 14543 (pressable)
+import getHash from "getHash";
+import initialize from "initialize";
 import { jsx } from "jsxProd";
 import createToggle from "createToggle";
 
 const require = arg1;
-function useExperimentOverrideActiveCount() {
-  const items = [_isNativeReflectConstruct];
-  const stateFromStores = require(566) /* initialize */.useStateFromStores(items, () => Object.keys(outer1_2.getAllExperimentOverrideDescriptors()).length);
-  const obj = require(566) /* initialize */;
-  const items1 = [closure_3];
-  return stateFromStores + require(566) /* initialize */.useStateFromStores(items1, () => Object.keys(outer1_3.getClientOverrides()).length);
-}
 createToggle = {
   useTitle() {
     return "Experiments Overrides Active";
@@ -24,16 +17,27 @@ createToggle = {
   parent: null,
   IconComponent: require("BeakerIcon").BeakerIcon,
   useDescription: function useExperimentOverrideActiveDescription() {
-    const obj = { label: "Experiments overridden: ", value: useExperimentOverrideActiveCount().toString() };
-    return jsx(require(13613) /* DevToolsContentSortButtons */.DevToolsContentSubLabel, { label: "Experiments overridden: ", value: useExperimentOverrideActiveCount().toString() });
+    let obj = require(589) /* initialize */;
+    const items = [getHash];
+    const stateFromStores = obj.useStateFromStores(items, () => Object.keys(allExperimentOverrideDescriptors.getAllExperimentOverrideDescriptors()).length);
+    const items1 = [initialize];
+    const obj2 = require(589) /* initialize */;
+    obj = { label: "Experiments overridden: ", value: null };
+    obj[1] = stateFromStores + require(589) /* initialize */.useStateFromStores(items1, () => Object.keys(clientOverrides.getClientOverrides()).length).toString();
+    return jsx(require(13634) /* DevToolsContentSortButtons */.DevToolsContentSubLabel, { label: "Experiments overridden: ", value: null });
   },
   usePredicate: function useHasExperimentOverrideActive() {
-    const staffOrDeveloperSettingPredicate = require(13852) /* useStaffOrDeveloperSettingPredicate */.useStaffOrDeveloperSettingPredicate();
-    const obj = require(13852) /* useStaffOrDeveloperSettingPredicate */;
-    return useExperimentOverrideActiveCount() > 0 && staffOrDeveloperSettingPredicate;
+    const staffOrDeveloperSettingPredicate = require(13873) /* useStaffOrDeveloperSettingPredicate */.useStaffOrDeveloperSettingPredicate();
+    const obj = require(13873) /* useStaffOrDeveloperSettingPredicate */;
+    const items = [getHash];
+    const stateFromStores = require(589) /* initialize */.useStateFromStores(items, () => Object.keys(allExperimentOverrideDescriptors.getAllExperimentOverrideDescriptors()).length);
+    const obj2 = require(589) /* initialize */;
+    const items1 = [initialize];
+    const obj3 = require(589) /* initialize */;
+    return stateFromStores + require(589) /* initialize */.useStateFromStores(items1, () => Object.keys(clientOverrides.getClientOverrides()).length) > 0 && staffOrDeveloperSettingPredicate;
   },
   onPress: function handleExperimentOverrideActivePress() {
-    require(13612) /* navigateToDevTools */.navigateToDevTools({ screenKey: "experiments" });
+    require(13633) /* navigateToDevTools */.navigateToDevTools({ screenKey: "experiments" });
   },
   withArrow: true
 };

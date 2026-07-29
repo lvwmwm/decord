@@ -1,68 +1,65 @@
-// Module ID: 14743
-// Function ID: 112174
+// Module ID: 14769
+// Function ID: 14770
 // Name: SelectScreen
-// Dependencies: [31, 27, 14740, 33, 4165, 5118, 7614, 9169, 1456, 5155, 4161, 1212, 2]
+// Dependencies: [19, 17, 14766, 21, 4189, 5140, 7637, 9193, 1480, 5177, 4185, 1236, 2]
 // Exports: default
 
-// Module 14743 (SelectScreen)
-import "result";
+// Module 14769 (SelectScreen)
+import "noop";
 import { View } from "get ActivityIndicator";
 import { SELECT_NAMES } from "get webauthn";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_5;
+let c5;
 let closure_6;
 const require = arg1;
-({ jsx: closure_5, jsxs: closure_6 } = jsxProd);
-let closure_7 = _createForOfIteratorHelperLoose.createStyles((arg0) => {
-  let obj = { container: { marginLeft: 16, marginRight: 16 } };
-  obj = { marginTop: null, marginLeft: 16, marginRight: 16, display: "flex", alignItems: "center" };
-  const NAV_BAR_HEIGHT = require(5118) /* NAV_BAR_HEIGHT */.NAV_BAR_HEIGHT;
+({ jsx: c5, jsxs: closure_6 } = jsxProd);
+let closure_7 = createCacheKey.createStyles((arg0) => {
+  const obj = { container: { marginLeft: 16, marginRight: 16 }, selectContainer: null };
+  const NAV_BAR_HEIGHT = require(5140) /* NAV_BAR_HEIGHT */.NAV_BAR_HEIGHT;
   if (arg0) {
     let diff = NAV_BAR_HEIGHT;
   } else {
-    diff = NAV_BAR_HEIGHT - require(5118) /* NAV_BAR_HEIGHT */.STATUS_BAR_HEIGHT;
+    diff = NAV_BAR_HEIGHT - require(5140) /* NAV_BAR_HEIGHT */.STATUS_BAR_HEIGHT;
   }
-  obj.marginTop = diff;
-  obj.selectContainer = obj;
+  obj[1] = { marginTop: diff, marginLeft: 16, marginRight: 16, display: "flex", alignItems: "center" };
   return obj;
 });
 const result = require("get webauthn").fileFinishedImporting("modules/mfa/native/screens/SelectScreen.tsx");
 
 export default function SelectScreen(mfaChallenge) {
   const _require = mfaChallenge;
-  const tmp = importDefault(9169)();
+  const tmp = importDefault(9193)();
   const tmp2 = callback3(tmp);
-  let obj = _require(1456);
+  let obj = _require(1480);
   importDefault = obj.useNavigation();
-  obj = { top: !tmp, style: tmp2.container };
-  obj = { style: tmp2.selectContainer };
-  const obj1 = { variant: "heading-xl/extrabold" };
-  const intl = _require(1212).intl;
-  obj1.children = intl.string(_require(1212).t.S9b9bX);
-  const items = [callback(_require(4161).Text, obj1), ];
-  const obj2 = { variant: "text-sm/medium" };
-  const intl2 = _require(1212).intl;
-  obj2.children = intl2.string(_require(1212).t.Jz1lXO);
-  items[1] = callback(_require(4161).Text, obj2);
-  obj.children = items;
+  obj = { top: !tmp, style: tmp2.container, children: null };
+  obj = { style: tmp2.selectContainer, children: null };
+  const obj1 = { variant: "heading-xl/extrabold", children: null };
+  const intl = _require(1236).intl;
+  obj1[1] = intl.string(_require(1236).t.S9b9bX);
+  const items = [callback(_require(4185).Text, obj1), ];
+  const obj2 = { variant: "text-sm/medium", children: null };
+  const intl2 = _require(1236).intl;
+  obj2[1] = intl2.string(_require(1236).t.Jz1lXO);
+  items[1] = callback(_require(4185).Text, obj2);
+  obj[1] = items;
   const items1 = [callback2(View, obj), ];
   const methods = mfaChallenge.mfaChallenge.methods;
   items1[1] = callback(View, {
     style: { marginTop: 16, gap: 8 },
-    children: methods.map((type) => (function getOptionButton(closure_0, type, closure_1) {
-      const callback = closure_0;
-      closure_1 = type;
+    children: methods.map((type) => {
+      let closure_1 = type;
       let closure_2 = closure_1;
-      return outer2_5(callback(outer2_2[6]).RowButton, {
-        label: outer2_4[type.type],
+      return outer1_5(mfaChallenge(outer1_2[6]).RowButton, {
+        label: outer1_4[type.type],
         onPress() {
 
         }
       }, type.type);
-    })(closure_0, type, closure_1))
+    })
   });
-  obj.children = items1;
-  return callback2(_require(5155).SafeAreaPaddingView, obj);
+  obj[2] = items1;
+  return callback2(_require(5177).SafeAreaPaddingView, obj);
 };

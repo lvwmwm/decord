@@ -1,57 +1,54 @@
-// Module ID: 14940
-// Function ID: 113840
-// Dependencies: [31, 3982, 653, 33, 14941, 1324, 14926, 566, 14928, 689, 1212, 14942, 4664, 2]
+// Module ID: 14966
+// Function ID: 14967
+// Dependencies: [19, 4006, 676, 21, 14967, 1348, 14952, 589, 14954, 712, 1236, 14968, 4686, 2]
 
-// Module 14940
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 14966
+import handleConnectionOpen from "handleConnectionOpen";
 import { ME } from "ME";
 import { jsx } from "jsxProd";
-import importAllResult from "result";
+import importAllResult from "noop";
 
 const require = arg1;
 let closure_6 = {
   onPress() {
-    importDefault(14941)(ME);
+    importDefault(14967)(ME);
   }
 };
-const memoResult = require("result").memo(function GuildsBarMessages() {
+const memoResult = require("noop").memo(function GuildsBarMessages() {
   let badge;
   let cutouts;
-  let obj = require(14926) /* UnreadIndicator */;
-  const tmp = importDefault(1324)("GuildsBarMessages");
+  const tmp3 = importDefault(1348)("GuildsBarMessages");
+  let obj = require(14952) /* UnreadIndicator */;
   const guildsBarAnimatedWrapperStyles = obj.useGuildsBarAnimatedWrapperStyles();
-  const items = [_isNativeReflectConstruct];
-  const stateFromStores = require(566) /* initialize */.useStateFromStores(items, () => {
-    const guildId = outer1_3.getGuildId();
+  const items = [handleConnectionOpen];
+  const stateFromStores = require(589) /* initialize */.useStateFromStores(items, () => {
+    guildId = guildId.getGuildId();
     let tmp2 = null == guildId;
     if (!tmp2) {
-      tmp2 = guildId === outer1_4;
+      tmp2 = guildId === closure_4;
     }
     return tmp2;
   });
-  const obj2 = require(566) /* initialize */;
-  ({ badge, cutouts } = importDefault(14928)({ mentionCount: 0 }));
-  const colors = importDefault(689).colors;
-  obj = { selected: stateFromStores };
-  let tmp8 = !tmp;
-  const tmp4 = importDefault(14928)({ mentionCount: 0 });
-  const tmp5 = stateFromStores ? colors.WHITE : colors.MOBILE_GUILDBAR_ICON_DEFAULT;
-  const tmp6 = jsx;
-  if (tmp8) {
-    tmp8 = !stateFromStores;
+  const obj2 = require(589) /* initialize */;
+  ({ badge, cutouts } = importDefault(14954)({ mentionCount: 0 }));
+  const colors = importDefault(712).colors;
+  obj = { selected: stateFromStores, circle: null, unread: false, styles: null, cutouts: null, config: null, overState: "y", label: "PRESS_VIEW_APP_COMMANDS", externalChildren: null, expandedChildren: -1, children: -1 };
+  let tmp11 = !tmp3;
+  const tmp7 = importDefault(14954)({ mentionCount: 0 });
+  const tmp8 = stateFromStores ? colors.WHITE : colors.MOBILE_GUILDBAR_ICON_DEFAULT;
+  if (!tmp3) {
+    tmp11 = !stateFromStores;
   }
-  obj.circle = tmp8;
-  obj.unread = false;
-  obj.styles = guildsBarAnimatedWrapperStyles;
-  obj.cutouts = cutouts;
-  obj.config = closure_6;
-  obj.overState = undefined;
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj.label = intl.string(require(1212) /* getSystemLocale */.t.YUU0RF);
-  obj.externalChildren = badge;
-  obj.expandedChildren = jsx(importDefault(14942), {});
-  obj.children = jsx(require(4664) /* ChatIcon */.ChatIcon, { color: tmp5 });
-  return tmp6(importDefault(14926), obj);
+  obj[1] = tmp11;
+  obj[3] = guildsBarAnimatedWrapperStyles;
+  obj[4] = cutouts;
+  obj[5] = closure_6;
+  const intl = tmp4(1236).intl;
+  obj[7] = intl.string(require(1236) /* getSystemLocale */.t.YUU0RF);
+  obj[8] = badge;
+  obj[9] = jsx(importDefault(14968), {});
+  obj[10] = jsx(require(4686) /* ChatIcon */.ChatIcon, { color: tmp8 });
+  return jsx(importDefault(14952), { selected: stateFromStores, circle: null, unread: false, styles: null, cutouts: null, config: null, overState: "y", label: "PRESS_VIEW_APP_COMMANDS", externalChildren: null, expandedChildren: -1, children: -1 });
 });
 const result = require("ME").fileFinishedImporting("modules/guilds_bar/native/GuildsBarMessages.tsx");
 

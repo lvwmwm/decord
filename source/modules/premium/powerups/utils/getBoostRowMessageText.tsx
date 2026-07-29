@@ -1,29 +1,29 @@
-// Module ID: 11654
-// Function ID: 90358
+// Module ID: 11678
+// Function ID: 11679
 // Name: getBoostRowMessageText
-// Dependencies: [1212, 2231, 11649, 2]
+// Dependencies: [1236, 2255, 11673, 2]
 // Exports: default
 
-// Module 11654 (getBoostRowMessageText)
+// Module 11678 (getBoostRowMessageText)
 const result = require("BOOST_EXPIRING_DISPLAY_WINDOW_DAYS").fileFinishedImporting("modules/premium/powerups/utils/getBoostRowMessageText.tsx");
 
 export default function getBoostRowMessageText(phase) {
   phase = phase.phase;
   if ("gave" === phase) {
-    const intl3 = require(1212) /* getSystemLocale */.intl;
-    return intl3.string(importDefault(2231).plwH8d);
+    const intl3 = require(1236) /* getSystemLocale */.intl;
+    return intl3.string(importDefault(2255).plwH8d);
   } else if ("expiring" === phase) {
-    const intl2 = require(1212) /* getSystemLocale */.intl;
-    const obj = {};
+    const intl2 = require(1236) /* getSystemLocale */.intl;
     let endsAt = phase.boost.endsAt;
-    if (null == endsAt) {
+    if (endsAt == null) {
       const _Date = Date;
-      endsAt = new Date(phase.sortKey + require(11649) /* BOOST_EXPIRING_DISPLAY_WINDOW_DAYS */.BOOST_EXPIRING_DISPLAY_WINDOW_MS);
+      endsAt = new Date(phase.sortKey + require(11673) /* BOOST_EXPIRING_DISPLAY_WINDOW_DAYS */.BOOST_EXPIRING_DISPLAY_WINDOW_MS);
     }
-    obj.date = endsAt;
-    return intl2.formatToPlainString(importDefault(2231).vct4l8, obj);
+    const obj = { date: null };
+    obj[0] = endsAt;
+    return intl2.formatToPlainString(importDefault(2255).vct4l8, obj);
   } else if ("expired" === phase) {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(importDefault(2231).hSXjlI);
+    const intl = require(1236) /* getSystemLocale */.intl;
+    return intl.string(importDefault(2255).hSXjlI);
   }
 };

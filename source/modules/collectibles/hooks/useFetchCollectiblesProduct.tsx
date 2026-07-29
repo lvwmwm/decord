@@ -1,92 +1,94 @@
-// Module ID: 8021
-// Function ID: 63739
+// Module ID: 8045
+// Function ID: 8046
 // Name: useFetchCollectiblesProduct
-// Dependencies: [57, 31, 4210, 5780, 653, 624, 1877, 5779, 2]
+// Dependencies: [32, 19, 4234, 5798, 676, 647, 1901, 5797, 2]
 // Exports: useFetchCollectiblesProduct
 
-// Module 8021 (useFetchCollectiblesProduct)
+// Module 8045 (useFetchCollectiblesProduct)
 import _slicedToArray from "_slicedToArray";
-import { useEffect } from "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_5 from "_isNativeReflectConstruct";
+import { useEffect } from "noop";
+import addSku from "addSku";
+import updateCategoriesAndProducts from "updateCategoriesAndProducts";
 import { SKUProductLines } from "ME";
 
 const require = arg1;
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/collectibles/hooks/useFetchCollectiblesProduct.tsx");
+const result = require("addSku").fileFinishedImporting("modules/collectibles/hooks/useFetchCollectiblesProduct.tsx");
 
 export const useFetchCollectiblesProduct = function useFetchCollectiblesProduct(skuId, arg1) {
   const _require = skuId;
   const dependencyMap = arg1;
-  let obj = _require(624);
-  let items = [_isNativeReflectConstruct];
+  let obj = _require(647);
+  let items = [addSku];
   const stateFromStores = obj.useStateFromStores(items, () => {
     let value = null;
     if (null != closure_0) {
-      value = tmp6.get(closure_0);
+      value = tmp8.get(tmp);
     }
     return value;
   });
-  let tmp2 = null != stateFromStores;
-  if (tmp2) {
-    tmp2 = stateFromStores.productLine !== SKUProductLines.COLLECTIBLES;
+  let tmp4 = null != stateFromStores;
+  if (tmp4) {
+    tmp4 = stateFromStores.productLine !== SKUProductLines.COLLECTIBLES;
   }
-  const callback = tmp2;
+  const callback = tmp4;
+  let tmpResult = tmp(647);
   const items1 = [stateFromStores1];
-  const tmp4 = callback(_require(624).useStateFromStoresArray(items1, () => {
+  const tmp6 = callback(tmpResult.useStateFromStoresArray(items1, () => {
     const items = [stateFromStores1.getProduct(closure_0), stateFromStores1.getProductFetch(closure_0)];
     return items;
   }), 2);
-  const first = tmp4[0];
-  _isNativeReflectConstruct = tmp6;
-  const obj2 = _require(624);
+  const first = tmp6[0];
+  addSku = tmp8;
+  tmpResult = tmp(647);
   const items2 = [stateFromStores1];
-  stateFromStores1 = _require(624).useStateFromStores(items2, () => stateFromStores1.isProductFetchBackedOff(closure_0));
-  let tmp8 = true === arg1;
-  if (tmp8) {
+  stateFromStores1 = tmpResult.useStateFromStores(items2, () => stateFromStores1.isProductFetchBackedOff(closure_0));
+  let tmp10 = true === arg1;
+  if (tmp10) {
     let type;
-    if (null != first) {
+    if (first != null) {
       type = first.type;
     }
-    tmp8 = type === _require(1877).CollectiblesItemType.BUNDLE;
+    tmp10 = type === tmp(1901).CollectiblesItemType.BUNDLE;
   }
-  if (tmp8) {
-    tmp8 = 0 === first.items.length;
+  if (tmp10) {
+    tmp10 = 0 === first.items.length;
   }
-  SKUProductLines = tmp8;
-  const items3 = [skuId, first, tmp2, tmp4[1], arg1, tmp8, stateFromStores1];
+  SKUProductLines = tmp10;
+  const items3 = [skuId, first, tmp4, tmp6[1], arg1, tmp10, stateFromStores1];
   first(() => {
-    let tmp = null == skuId;
-    if (!tmp) {
-      let tmp3 = null != first;
-      if (tmp3) {
-        tmp3 = !closure_6;
+    let tmp2 = null == skuId;
+    if (!tmp2) {
+      let tmp4 = null != first;
+      if (tmp4) {
+        tmp4 = !closure_6;
       }
-      tmp = tmp3;
+      tmp2 = tmp4;
     }
-    if (!tmp) {
-      tmp = _slicedToArray;
+    if (!tmp2) {
+      tmp2 = _slicedToArray;
     }
-    if (!tmp) {
+    if (!tmp2) {
       let state;
-      if (null != tmp6) {
-        state = tmp6.state;
+      if (tmp8 != null) {
+        state = tmp8.state;
       }
-      tmp = "fetching" === state;
+      tmp2 = "fetching" === state;
     }
-    if (!tmp) {
-      tmp = stateFromStores1;
+    if (!tmp2) {
+      tmp2 = stateFromStores1;
     }
-    if (!tmp) {
+    if (!tmp2) {
       let obj = skuId(table[7]);
-      obj = { includeBundles: table };
+      obj = { includeBundles: null };
+      obj[0] = table;
       const collectiblesProduct = obj.fetchCollectiblesProduct(skuId, obj);
     }
   }, items3);
-  obj = { product: first };
+  obj = { product: first, isFetching: null };
   let state;
-  if (null != tmp4[1]) {
-    state = tmp6.state;
+  if (tmp6[1] != null) {
+    state = tmp8.state;
   }
-  obj.isFetching = "fetching" === state;
+  obj[1] = "fetching" === state;
   return obj;
 };

@@ -1,60 +1,61 @@
-// Module ID: 15666
-// Function ID: 120652
-// Dependencies: [57, 31, 27, 33, 4165, 689, 8200, 1212, 15667, 15683, 8731, 8729, 10026, 2]
+// Module ID: 15701
+// Function ID: 15702
+// Dependencies: [32, 19, 17, 21, 4189, 712, 8224, 1236, 15702, 15718, 8755, 8753, 10048, 2]
 
-// Module 15666
+// Module 15701
 import _slicedToArray from "_slicedToArray";
-import importAllResult from "result";
+import importAllResult from "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
 let closure_6;
-let closure_7;
+let error;
 const require = arg1;
-({ jsx: closure_6, jsxs: closure_7 } = jsxProd);
+let c4 = importAllResult;
+({ jsx: closure_6, jsxs: error } = jsxProd);
 let closure_8 = { REQUEST: "REQUEST", SPAM: "SPAM" };
-let obj = {};
-obj = { flex: 1, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWER };
-obj.container = obj;
-obj.messageRequestContent = { flex: 1 };
-_createForOfIteratorHelperLoose = { minHeight: 32, paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16 };
-obj.tabContainer = _createForOfIteratorHelperLoose;
-let closure_9 = _createForOfIteratorHelperLoose.createStyles(obj);
+let obj = { container: null, messageRequestContent: null, tabContainer: null };
+obj = { flex: 1, backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOWER };
+obj[0] = obj;
+obj[1] = { flex: 1 };
+createCacheKey = { minHeight: 32, paddingHorizontal: require("Themes").space.PX_16 };
+obj[2] = createCacheKey;
+let closure_9 = createCacheKey.createStyles(obj);
 const memoResult = importAllResult.memo((navigation) => {
   navigation = navigation.navigation;
+  let importDefault;
   const tmp = callback4();
   const tmp2 = callback(importAllResult.useState(0), 2);
-  const importDefault = tmp2[1];
+  importDefault = tmp2[1];
   const items = [navigation];
   callback = importAllResult.useCallback((channelId) => navigation.push("preview", { channelId }), items);
   const callback1 = importAllResult.useCallback((nativeEvent) => {
     callback(nativeEvent.nativeEvent.layout.width);
   }, []);
-  let obj = navigation(8200);
-  obj = {};
-  obj = {};
-  const intl = navigation(1212).intl;
-  obj.label = intl.string(navigation(1212).t["7RFcXZ"]);
-  obj.id = constants.REQUEST;
-  obj.page = callback2(importDefault(15667), { goToMessageRequestPreview: callback });
+  let obj = navigation(8224);
+  obj = { items: null, pageWidth: null, defaultIndex: 0 };
+  obj = { label: null, id: null, page: null };
+  const intl = navigation(1236).intl;
+  obj[0] = intl.string(navigation(1236).t["7RFcXZ"]);
+  obj[1] = constants.REQUEST;
+  obj[2] = callback2(importDefault(15702), { goToMessageRequestPreview: callback });
   const items1 = [obj, ];
-  const obj1 = {};
-  const intl2 = navigation(1212).intl;
-  obj1.label = intl2.string(navigation(1212).t.ulKXHp);
-  obj1.id = constants.SPAM;
-  obj1.page = callback2(importDefault(15683), { goToMessageRequestPreview: callback });
+  const obj1 = { label: null, id: null, page: null };
+  const intl2 = navigation(1236).intl;
+  obj1[0] = intl2.string(navigation(1236).t.ulKXHp);
+  obj1[1] = constants.SPAM;
+  obj1[2] = callback2(importDefault(15718), { goToMessageRequestPreview: callback });
   items1[1] = obj1;
-  obj.items = items1;
-  obj.pageWidth = tmp2[0];
-  obj.defaultIndex = 0;
+  obj[0] = items1;
+  obj[1] = tmp2[0];
   const segmentedControlState = obj.useSegmentedControlState(obj);
-  const obj2 = { style: tmp.container };
-  const items2 = [callback2(View, { style: tmp.tabContainer, onLayout: callback1, children: callback2(navigation(8731).SegmentedControl, { state: segmentedControlState }) }), , ];
-  const obj3 = { style: tmp.tabContainer, onLayout: callback1, children: callback2(navigation(8731).SegmentedControl, { state: segmentedControlState }) };
-  items2[1] = callback2(View, { style: tmp.messageRequestContent, children: callback2(navigation(8729).SegmentedControlPages, { state: segmentedControlState }) });
-  items2[2] = callback2(navigation(10026).TTIFirstContentfulPaint, { label: "message_requests" });
-  obj2.children = items2;
+  const obj2 = { style: tmp.container, children: null };
+  const items2 = [callback2(View, { style: tmp.tabContainer, onLayout: callback1, children: callback2(navigation(8755).SegmentedControl, { state: segmentedControlState }) }), , ];
+  const obj3 = { style: tmp.tabContainer, onLayout: callback1, children: callback2(navigation(8755).SegmentedControl, { state: segmentedControlState }) };
+  items2[1] = callback2(View, { style: tmp.messageRequestContent, children: callback2(navigation(8753).SegmentedControlPages, { state: segmentedControlState }) });
+  items2[2] = callback2(navigation(10048).TTIFirstContentfulPaint, { label: "message_requests" });
+  obj2[1] = items2;
   return callback3(View, obj2);
 });
 const result = require("get ActivityIndicator").fileFinishedImporting("modules/main_tabs_v2/native/message_requests/screens/MessageRequestsScreenWithTabs.tsx");

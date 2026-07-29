@@ -1,103 +1,102 @@
-// Module ID: 6656
-// Function ID: 58654
+// Module ID: 6677
+// Function ID: 6678
 // Name: BuyNitroMarketingHeader
-// Dependencies: [31, 27, 6207, 33, 689, 4165, 4026, 4168, 4166, 4101, 6657, 477, 6658, 6654, 668, 5119, 6209, 6228, 4589, 1212, 6660, 4161, 6661, 6663, 2]
+// Dependencies: [19, 17, 6227, 21, 712, 4189, 4050, 4192, 4190, 4125, 6678, 500, 6679, 6675, 691, 5141, 6229, 6248, 4611, 1236, 6681, 4185, 6682, 6684, 2]
 // Exports: default
 
-// Module 6656 (BuyNitroMarketingHeader)
-import result from "result";
-import get_ActivityIndicator from "get ActivityIndicator";
+// Module 6677 (BuyNitroMarketingHeader)
+import getSystemLocale from "getSystemLocale";
+import get_ActivityIndicator from "registerAsset";
 import { Gradients } from "items";
-import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import jsxProd from "Text";
+import createCacheKey from "createCacheKey";
 
 let Platform;
-let closure_4;
-let closure_5;
-let closure_7;
-let closure_8;
+let c4;
+let c5;
+let error;
+let metroImportAll;
 const require = arg1;
-({ Platform, StyleSheet: closure_4, View: closure_5 } = get_ActivityIndicator);
-({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-let PX_8 = require("_createForOfIteratorHelperLoose").space.PX_8;
-const PX_12 = require("_createForOfIteratorHelperLoose").space.PX_12;
-let closure_11 = _createForOfIteratorHelperLoose.createStyles((arg0, arg1, arg2) => {
-  let obj = {};
-  obj = {};
+({ Platform, StyleSheet: c4, View: c5 } = get_ActivityIndicator);
+({ jsx: error, jsxs: metroImportAll } = jsxProd);
+let PX_8 = require("Themes").space.PX_8;
+const PX_12 = require("Themes").space.PX_12;
+let closure_11 = createCacheKey.createStyles((arg0, arg1, arg2) => {
   let num = 0;
   if (arg1) {
     num = 0;
     if (arg2) {
-      num = importDefault(689).space.PX_8;
+      num = tmp(712).space.PX_8;
     }
   }
-  obj.marginHorizontal = -importDefault(689).space.PX_16 + num;
+  let obj = { marginHorizontal: -importDefault(712).space.PX_16 + num, marginTop: null, marginBottom: null, overflow: null };
   let PX_8;
   if (arg1) {
     if (arg2) {
-      PX_8 = importDefault(689).space.PX_8;
+      PX_8 = tmp(712).space.PX_8;
     }
   }
-  obj.marginTop = PX_8;
-  obj.marginBottom = importDefault(689).space.PX_16;
+  obj[1] = PX_8;
+  obj[2] = importDefault(712).space.PX_16;
   let str;
   if (arg1) {
     if (arg2) {
       str = "hidden";
     }
   }
-  obj.overflow = str;
-  obj.banner = obj;
+  obj = { banner: obj, background: null, clouds: null, wumpus: null, wumpusImage: null, backButton: null, content: null, fade: null };
+  obj[3] = str;
   obj = {};
-  const merged = Object.assign(closure_4.absoluteFillObject);
+  const merged = Object.assign(absoluteFillObject.absoluteFillObject);
   if (!arg1) {
-    let num2 = 5 * -importDefault(689).space.PX_192;
+    let num2 = 5 * -tmp(712).space.PX_192;
   } else {
     num2 = 0;
   }
-  obj["top"] = num2;
-  obj["color"] = importDefault(689).colors.BACKGROUND_BASE_LOWER;
+  obj.top = num2;
+  obj.color = importDefault(712).colors.BACKGROUND_BASE_LOWER;
   let sm;
   if (arg1) {
     if (arg2) {
-      sm = importDefault(689).radii.sm;
+      sm = tmp(712).radii.sm;
     }
   }
-  obj["borderRadius"] = sm;
-  obj.background = obj;
-  const tmp = -importDefault(689).space.PX_16;
-  obj.clouds = { position: "absolute", top: -importDefault(689).space.PX_16, right: undefined, left: undefined, alignSelf: "center" };
-  const obj1 = { position: "absolute", top: -importDefault(689).space.PX_16, right: undefined, left: undefined, alignSelf: "center" };
-  obj.wumpus = { position: "absolute", top: arg0 + importDefault(689).space.PX_20, right: importDefault(689).space.PX_4 };
-  const obj3 = { height: importDefault(689).space.PX_80 + importDefault(689).space.PX_4 };
-  obj.wumpusImage = obj3;
-  const obj4 = { position: "absolute" };
+  obj.borderRadius = sm;
+  obj[1] = obj;
+  const tmp3 = -importDefault(712).space.PX_16;
+  const tmp5 = absoluteFillObject;
+  obj[2] = { position: "absolute", top: -importDefault(712).space.PX_16, right: "call", left: "space", alignSelf: 16125692492343535000000000000000000000000000000000000000000000000000000000000000000 };
+  const obj1 = { position: "absolute", top: -importDefault(712).space.PX_16, right: "call", left: "space", alignSelf: 16125692492343535000000000000000000000000000000000000000000000000000000000000000000 };
+  obj[3] = { position: "absolute", top: arg0 + importDefault(712).space.PX_20, right: importDefault(712).space.PX_4 };
+  const obj3 = { height: null };
+  obj3[0] = importDefault(712).space.PX_80 + importDefault(712).space.PX_4;
+  obj[4] = obj3;
   let num4 = 0;
   if (arg1) {
-    num4 = importDefault(689).space.PX_8;
+    num4 = tmp(712).space.PX_8;
   }
-  obj4.top = arg0 - num4;
+  const obj4 = { position: "absolute", top: arg0 - num4, left: null, transform: null };
   let num5 = 0;
   if (!arg1) {
-    num5 = importDefault(689).space.PX_8;
+    num5 = tmp(712).space.PX_8;
   }
-  obj4.left = importDefault(689).space.PX_8 + num5;
+  obj4[2] = importDefault(712).space.PX_8 + num5;
   const items = [{ scaleX: -1 }];
-  obj4.transform = items;
-  obj.backButton = obj4;
-  const obj5 = { alignItems: "center", gap: importDefault(689).space.PX_8 };
-  const sum = arg0 + importDefault(689).space.PX_80;
-  obj5.paddingTop = sum + importDefault(689).space.PX_4;
-  obj5.paddingHorizontal = importDefault(689).space.PX_16;
-  const space = importDefault(689).space;
-  obj5.paddingBottom = arg1 ? space.PX_24 : space.PX_32;
-  obj.content = obj5;
+  obj4[3] = items;
+  obj[5] = obj4;
+  const obj5 = { alignItems: "center", gap: importDefault(712).space.PX_8, paddingTop: null, paddingHorizontal: null, paddingBottom: null };
+  const sum = arg0 + tmp(712).space.PX_80;
+  obj5[2] = sum + importDefault(712).space.PX_4;
+  obj5[3] = importDefault(712).space.PX_16;
+  const space = tmp(712).space;
+  obj5[4] = arg1 ? space.PX_24 : space.PX_32;
+  obj[6] = obj5;
   const obj6 = {};
-  const merged1 = Object.assign(closure_4.absoluteFillObject);
-  obj6["height"] = importDefault(689).space.PX_96;
-  obj6["position"] = "absolute";
-  obj6["top"] = undefined;
-  obj.fade = obj6;
+  const merged1 = Object.assign(tmp5.absoluteFillObject);
+  obj6.height = importDefault(712).space.PX_96;
+  obj6.position = "absolute";
+  obj6.top = undefined;
+  obj[7] = obj6;
   return obj;
 });
 let closure_12 = { code: "function BuyNitroMarketingHeaderTsx1(){const{floatX,floatY}=this.__closure;return{transform:[{translateX:floatX.get()},{translateY:floatY.get()}]};}" };
@@ -105,184 +104,125 @@ let closure_13 = { code: "function BuyNitroMarketingHeaderTsx2(){const{cloudsOpa
 let result = require("items").fileFinishedImporting("modules/premium_marketing/native/BuyNitroMarketingHeader.tsx");
 
 export default function BuyNitroMarketingHeader(arg0) {
-  let cloudsPulseStyle;
   let onBackPress;
   let selectedTier;
   let topInset;
-  let wumpusFloatStyle;
   ({ topInset, onBackPress, selectedTier } = arg0);
-  const tmp2 = importDefault(4101)() === require(6657) /* items */.ThemeTypes.LIGHT;
-  let tmp3 = tmp2;
-  if (tmp2) {
-    let obj = require(477) /* set */;
-    tmp3 = !obj.isAndroid();
+  const tmp5 = sharedValue1(sharedValue2[9])() === sharedValue(sharedValue2[10]).ThemeTypes.LIGHT;
+  let tmp6 = tmp5;
+  if (tmp5) {
+    let tmp4Result = tmp4(tmp2[11]);
+    tmp6 = !tmp4Result.isAndroid();
   }
-  const tmp6 = callback3(topInset, tmp2, tmp3);
-  const color = tmp6.background.color;
-  const tmp = importDefault(4101)();
-  obj = { style: tmp6.banner };
-  ({ wumpusFloatStyle, cloudsPulseStyle } = (function useAnimatedStyles() {
-    let obj = outer1_0(outer1_2[6]);
-    const sharedValue = obj.useSharedValue(0);
-    const sharedValue1 = outer1_0(outer1_2[6]).useSharedValue(0);
-    const obj2 = outer1_0(outer1_2[6]);
-    const sharedValue2 = outer1_0(outer1_2[6]).useSharedValue(1);
-    let items = [sharedValue, sharedValue1, sharedValue2];
-    const effect = outer1_3.useEffect(() => {
-      const accessibilityPreferencesSharedValue = outer2_0(outer2_2[7]).accessibilityPreferencesSharedValue;
-      if (!accessibilityPreferencesSharedValue.get().reduceMotion) {
-        let obj = outer2_0(outer2_2[6]);
-        let obj1 = outer2_0(outer2_2[8]);
-        obj = { duration: 3400 };
-        const result = sharedValue.set(obj.withRepeat(obj1.withTiming(outer2_9, obj), -1, true));
-        const obj4 = outer2_0(outer2_2[6]);
-        obj = { duration: 2600 };
-        const result1 = sharedValue1.set(obj4.withRepeat(outer2_0(outer2_2[8]).withTiming(-outer2_10, obj), -1, true));
-        const obj5 = outer2_0(outer2_2[8]);
-        const obj7 = outer2_0(outer2_2[6]);
-        obj1 = { duration: 2800 };
-        const result2 = sharedValue2.set(obj7.withRepeat(outer2_0(outer2_2[8]).withTiming(0.6, obj1), -1, true));
-        const obj8 = outer2_0(outer2_2[8]);
-      }
-    }, items);
-    obj = {};
-    const obj3 = outer1_0(outer1_2[6]);
-    const fn = function s() {
-      let obj = {};
-      obj = { translateX: sharedValue.get() };
-      const items = [obj, ];
-      obj = { translateY: sharedValue1.get() };
-      items[1] = obj;
-      obj.transform = items;
-      return obj;
-    };
-    fn.__closure = { floatX: sharedValue, floatY: sharedValue1 };
-    fn.__workletHash = 17204816956621;
-    fn.__initData = outer1_12;
-    obj.wumpusFloatStyle = outer1_0(outer1_2[6]).useAnimatedStyle(fn);
-    let obj5 = outer1_0(outer1_2[6]);
-    const fn2 = function o() {
-      return { opacity: sharedValue2.get() };
-    };
-    fn2.__closure = { cloudsOpacity: sharedValue2 };
-    fn2.__workletHash = 10630022886341;
-    fn2.__initData = outer1_13;
-    obj.cloudsPulseStyle = outer1_0(outer1_2[6]).useAnimatedStyle(fn2);
+  const tmp7 = callback2(topInset, tmp5, tmp6);
+  const color = tmp7.background.color;
+  sharedValue = undefined;
+  sharedValue1 = undefined;
+  sharedValue2 = undefined;
+  tmp4Result = tmp4(tmp2[6]);
+  sharedValue = tmp4Result.useSharedValue(0);
+  const tmp3 = sharedValue1(sharedValue2[9])();
+  sharedValue1 = sharedValue(sharedValue2[6]).useSharedValue(0);
+  const tmp4Result1 = sharedValue(sharedValue2[6]);
+  sharedValue2 = sharedValue(sharedValue2[6]).useSharedValue(1);
+  let items = [sharedValue, sharedValue1, sharedValue2];
+  const effect = React.useEffect(() => {
+    const accessibilityPreferencesSharedValue = sharedValue(sharedValue2[7]).accessibilityPreferencesSharedValue;
+    if (!accessibilityPreferencesSharedValue.get().reduceMotion) {
+      let tmpResult = tmp(tmp2[6]);
+      tmpResult = tmp(tmp2[8]);
+      const result = sharedValue.set(tmpResult.withRepeat(tmpResult.withTiming(outer1_9, { duration: 3400 }), -1, true));
+      const tmpResult1 = tmp(tmp2[6]);
+      const result1 = sharedValue1.set(tmpResult1.withRepeat(tmp(tmp2[8]).withTiming(-outer1_10, { duration: 2600 }), -1, true));
+      const tmpResult2 = tmp(tmp2[8]);
+      const tmpResult3 = tmp(tmp2[6]);
+      const result2 = sharedValue2.set(tmpResult3.withRepeat(tmp(tmp2[8]).withTiming(0.6, { duration: 2800 }), -1, true));
+      const tmpResult4 = tmp(tmp2[8]);
+    }
+  }, items);
+  const tmp4Result2 = sharedValue(sharedValue2[6]);
+  const fn = function s() {
+    let obj = { transform: null };
+    obj = { translateX: sharedValue.get() };
+    const items = [obj, ];
+    obj = { translateY: sharedValue1.get() };
+    items[1] = obj;
+    obj[0] = items;
     return obj;
-  })());
-  let obj2 = require(477) /* set */;
-  let isAndroidResult = obj2.isAndroid();
+  };
+  fn.__closure = { floatX: sharedValue, floatY: sharedValue1 };
+  fn.__workletHash = 17204816956621;
+  fn.__initData = closure_12;
+  const animatedStyle = sharedValue(sharedValue2[6]).useAnimatedStyle(fn);
+  const tmp4Result3 = sharedValue(sharedValue2[6]);
+  const fn2 = function o() {
+    return { opacity: sharedValue2.get() };
+  };
+  fn2.__closure = { cloudsOpacity: sharedValue2 };
+  fn2.__workletHash = 10630022886341;
+  fn2.__initData = closure_13;
+  let obj = { style: tmp7.banner, children: null };
+  const animatedStyle1 = sharedValue(sharedValue2[6]).useAnimatedStyle(fn2);
+  const tmp4Result4 = sharedValue(sharedValue2[6]);
+  let isAndroidResult = sharedValue(sharedValue2[11]).isAndroid();
   if (isAndroidResult) {
-    obj = { barStyle: "light-content" };
-    isAndroidResult = callback(importDefault(6658), obj);
+    isAndroidResult = callback(tmp(tmp2[12]), { barStyle: "light-content" });
   }
-  let items = [isAndroidResult, , , , , , ];
-  let obj1 = { selectedTier, nitroColors: Gradients.PREMIUM_TIER_2, basicColors: Gradients.PREMIUM_TIER_0 };
-  const tmp7 = (function useAnimatedStyles() {
-    let obj = outer1_0(outer1_2[6]);
-    const sharedValue = obj.useSharedValue(0);
-    const sharedValue1 = outer1_0(outer1_2[6]).useSharedValue(0);
-    const obj2 = outer1_0(outer1_2[6]);
-    const sharedValue2 = outer1_0(outer1_2[6]).useSharedValue(1);
-    let items = [sharedValue, sharedValue1, sharedValue2];
-    const effect = outer1_3.useEffect(() => {
-      const accessibilityPreferencesSharedValue = outer2_0(outer2_2[7]).accessibilityPreferencesSharedValue;
-      if (!accessibilityPreferencesSharedValue.get().reduceMotion) {
-        let obj = outer2_0(outer2_2[6]);
-        let obj1 = outer2_0(outer2_2[8]);
-        obj = { duration: 3400 };
-        const result = sharedValue.set(obj.withRepeat(obj1.withTiming(outer2_9, obj), -1, true));
-        const obj4 = outer2_0(outer2_2[6]);
-        obj = { duration: 2600 };
-        const result1 = sharedValue1.set(obj4.withRepeat(outer2_0(outer2_2[8]).withTiming(-outer2_10, obj), -1, true));
-        const obj5 = outer2_0(outer2_2[8]);
-        const obj7 = outer2_0(outer2_2[6]);
-        obj1 = { duration: 2800 };
-        const result2 = sharedValue2.set(obj7.withRepeat(outer2_0(outer2_2[8]).withTiming(0.6, obj1), -1, true));
-        const obj8 = outer2_0(outer2_2[8]);
-      }
-    }, items);
-    obj = {};
-    const obj3 = outer1_0(outer1_2[6]);
-    const fn = function s() {
-      let obj = {};
-      obj = { translateX: sharedValue.get() };
-      const items = [obj, ];
-      obj = { translateY: sharedValue1.get() };
-      items[1] = obj;
-      obj.transform = items;
-      return obj;
-    };
-    fn.__closure = { floatX: sharedValue, floatY: sharedValue1 };
-    fn.__workletHash = 17204816956621;
-    fn.__initData = outer1_12;
-    obj.wumpusFloatStyle = outer1_0(outer1_2[6]).useAnimatedStyle(fn);
-    let obj5 = outer1_0(outer1_2[6]);
-    const fn2 = function o() {
-      return { opacity: sharedValue2.get() };
-    };
-    fn2.__closure = { cloudsOpacity: sharedValue2 };
-    fn2.__workletHash = 10630022886341;
-    fn2.__initData = outer1_13;
-    obj.cloudsPulseStyle = outer1_0(outer1_2[6]).useAnimatedStyle(fn2);
-    return obj;
-  })();
-  const tmp8 = callback2;
-  const tmp9 = closure_5;
-  obj1.start = require(668) /* keys */.HorizontalGradient.START;
-  obj1.end = require(668) /* keys */.HorizontalGradient.END;
-  obj1.style = tmp6.background;
-  items[1] = callback(importDefault(6654), obj1);
-  obj2 = { style: items1 };
-  items1 = [tmp6.clouds, cloudsPulseStyle];
-  let obj3 = {};
-  const tmp14 = importDefault(6654);
-  obj3.source = importDefault(6209);
-  obj3.resizeMode = "contain";
-  obj2.children = callback(importDefault(5119), obj3);
-  items[2] = callback(importDefault(4026).View, obj2);
-  let obj4 = { style: items2 };
-  items2 = [tmp6.wumpus, wumpusFloatStyle];
-  let obj5 = { style: tmp6.wumpusImage };
-  const tmp15 = importDefault(5119);
-  obj5.source = importDefault(6228);
-  obj5.resizeMode = "contain";
-  obj4.children = callback(importDefault(5119), obj5);
-  items[3] = callback(importDefault(4026).View, obj4);
-  let tmp17 = !tmp2;
-  if (!tmp2) {
-    const obj6 = { style: tmp6.fade };
+  const items1 = [isAndroidResult, , , , , , ];
+  obj = { selectedTier, nitroColors: Gradients.PREMIUM_TIER_2, basicColors: Gradients.PREMIUM_TIER_0, start: null, end: null, style: null };
+  let tmpResult = tmp(tmp2[13]);
+  obj[3] = sharedValue(sharedValue2[14]).HorizontalGradient.START;
+  obj[4] = sharedValue(sharedValue2[14]).HorizontalGradient.END;
+  obj[5] = tmp7.background;
+  items1[1] = callback(tmpResult, obj);
+  const obj1 = { style: items2, children: null };
+  items2 = [tmp7.clouds, animatedStyle1];
+  const obj2 = { source: null, resizeMode: "contain" };
+  tmpResult = tmp(tmp2[15]);
+  obj2[0] = sharedValue1(sharedValue2[16]);
+  obj1[1] = callback(tmpResult, obj2);
+  items1[2] = callback(sharedValue1(sharedValue2[6]).View, obj1);
+  const obj3 = { style: items3, children: null };
+  items3 = [tmp7.wumpus, animatedStyle];
+  const obj4 = { style: tmp7.wumpusImage, source: null, resizeMode: "contain" };
+  const tmp4Result5 = sharedValue(sharedValue2[11]);
+  obj4[1] = sharedValue1(sharedValue2[17]);
+  obj3[1] = callback(sharedValue1(sharedValue2[15]), obj4);
+  items1[3] = callback(sharedValue1(sharedValue2[6]).View, obj3);
+  let tmp18Result = !tmp5;
+  if (!tmp5) {
+    const obj5 = { style: null, colors: null, start: null, end: null };
+    obj5[0] = tmp7.fade;
     const _HermesInternal = HermesInternal;
-    const items3 = ["" + color + "00", color];
-    obj6.colors = items3;
-    obj6.start = require(668) /* keys */.VerticalGradient.START;
-    obj6.end = require(668) /* keys */.VerticalGradient.END;
-    tmp17 = callback(importDefault(4589), obj6);
-    const tmp21 = importDefault(4589);
+    const items4 = ["" + color + "00", color];
+    obj5[1] = items4;
+    obj5[2] = tmp4(tmp2[14]).VerticalGradient.START;
+    obj5[3] = tmp4(tmp2[14]).VerticalGradient.END;
+    tmp18Result = tmp18(tmp(tmp2[18]), obj5);
+    let tmpResult2 = tmp(tmp2[18]);
   }
-  items[4] = tmp17;
-  let obj7 = { style: tmp6.content };
-  let obj8 = { accessible: true, accessibilityRole: "header", accessibilityLabel: null, source: null, resizeMode: "contain" };
-  const tmp16 = importDefault(5119);
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj8.accessibilityLabel = intl.string(require(1212) /* getSystemLocale */.t.lpNrPu);
-  obj8.source = importDefault(6660);
-  const items4 = [callback(importDefault(5119), obj8), ];
-  const obj9 = { variant: "text-md/medium", color: "text-overlay-light" };
-  const intl2 = require(1212) /* getSystemLocale */.intl;
-  obj9.children = intl2.string(require(1212) /* getSystemLocale */.t.SD5MJW);
-  items4[1] = callback(require(4161) /* Text */.Text, obj9);
-  obj7.children = items4;
-  items[5] = callback2(closure_5, obj7);
-  const obj10 = { style: tmp6.backButton };
-  const obj11 = { variant: "secondary-overlay" };
-  const intl3 = require(1212) /* getSystemLocale */.intl;
-  obj11.accessibilityLabel = intl3.string(require(1212) /* getSystemLocale */.t["13/7kX"]);
-  obj11.icon = importDefault(6663);
-  obj11.size = "md";
-  obj11.onPress = onBackPress;
-  obj10.children = callback(require(6661) /* IconButton */.IconButton, obj11);
-  items[6] = callback(closure_5, obj10);
-  obj.children = items;
-  return tmp8(tmp9, obj);
+  items1[4] = tmp18Result;
+  const obj6 = { style: tmp7.content, children: null };
+  const obj7 = { accessible: true, accessibilityRole: "header", accessibilityLabel: null, source: null, resizeMode: "contain" };
+  let tmpResult1 = sharedValue1(sharedValue2[15]);
+  const intl = tmp4(tmp2[19]).intl;
+  obj7[2] = intl.string(sharedValue(sharedValue2[19]).t.lpNrPu);
+  obj7[3] = sharedValue1(sharedValue2[20]);
+  const items5 = [callback(sharedValue1(sharedValue2[15]), obj7), ];
+  const obj8 = { variant: "text-md/medium", color: "text-overlay-light", children: null };
+  const intl2 = tmp4(tmp2[19]).intl;
+  obj8[2] = intl2.string(sharedValue(sharedValue2[19]).t.SD5MJW);
+  items5[1] = callback(sharedValue(sharedValue2[21]).Text, obj8);
+  obj6[1] = items5;
+  items1[5] = closure_8(closure_5, obj6);
+  const obj9 = { style: tmp7.backButton, children: null };
+  const obj10 = { variant: "secondary-overlay", accessibilityLabel: null, icon: null, size: "md", onPress: null };
+  const intl3 = tmp4(tmp2[19]).intl;
+  obj10[1] = intl3.string(sharedValue(sharedValue2[19]).t["13/7kX"]);
+  obj10[2] = sharedValue1(sharedValue2[23]);
+  obj10[4] = onBackPress;
+  obj9[1] = callback(sharedValue(sharedValue2[22]).IconButton, obj10);
+  items1[6] = callback(closure_5, obj9);
+  obj[1] = items1;
+  return closure_8(closure_5, obj);
 };

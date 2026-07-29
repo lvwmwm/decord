@@ -1,39 +1,39 @@
-// Module ID: 13920
-// Function ID: 106466
+// Module ID: 13941
+// Function ID: 13942
 // Name: useScheduleTimeControlsRowProps
-// Dependencies: [33, 4161, 1212, 2199, 2]
+// Dependencies: [21, 4185, 1236, 2223, 2]
 // Exports: default
 
-// Module 13920 (useScheduleTimeControlsRowProps)
+// Module 13941 (useScheduleTimeControlsRowProps)
 import { jsx } from "jsxProd";
 
 const result = require("getSystemLocale").fileFinishedImporting("modules/parent_tools/hooks/useScheduleTimeControlsRowProps.tsx");
 
 export default function useScheduleTimeControlsRowProps(arr) {
   if (0 === arr.length) {
-    let obj = {};
-    obj = { variant: "text-xs/medium", color: "text-muted" };
-    const intl = require(1212) /* getSystemLocale */.intl;
-    obj.children = intl.string(importDefault(2199).fOBIZH);
-    obj.subLabel = jsx(require(4161) /* Text */.Text, { variant: "text-xs/medium", color: "text-muted" });
-    obj.trailing = undefined;
+    let obj = { subLabel: null, trailing: "r" };
+    obj = { variant: "text-xs/medium", color: "text-muted", children: null };
+    const intl = require(1236) /* getSystemLocale */.intl;
+    obj[2] = intl.string(importDefault(2223).fOBIZH);
+    obj[0] = jsx(require(4185) /* Text */.Text, { variant: "text-xs/medium", color: "text-muted", children: null });
     return obj;
   } else {
-    obj = {};
-    const intl2 = require(1212) /* getSystemLocale */.intl;
-    const obj1 = { count: arr.length };
-    obj.subLabel = intl2.formatToPlainString(importDefault(2199).XfwcpX, obj1);
-    const obj2 = { variant: "text-sm/medium", color: "text-muted" };
-    const intl3 = require(1212) /* getSystemLocale */.intl;
+    const obj1 = { subLabel: null, trailing: null };
+    const intl2 = require(1236) /* getSystemLocale */.intl;
+    const obj2 = { count: null };
+    obj2[0] = arr.length;
+    obj1[0] = intl2.formatToPlainString(importDefault(2223).XfwcpX, obj2);
+    const intl3 = require(1236) /* getSystemLocale */.intl;
     const string = intl3.string;
-    const tmp14 = importDefault(2199);
+    const tmp11 = importDefault(2223);
     if (someResult) {
-      let stringResult = string(tmp14["8vDHRq"]);
+      let stringResult = string(tmp11["8vDHRq"]);
     } else {
-      stringResult = string(tmp14["4z9fN+"]);
+      stringResult = string(tmp11["4z9fN+"]);
     }
-    obj2.children = stringResult;
-    obj.trailing = jsx(require(4161) /* Text */.Text, { variant: "text-sm/medium", color: "text-muted" });
-    return obj;
+    obj = { variant: "text-sm/medium", color: "text-muted", children: null };
+    obj[2] = stringResult;
+    obj1[1] = jsx(require(4185) /* Text */.Text, { variant: "text-sm/medium", color: "text-muted", children: null });
+    return obj1;
   }
 };

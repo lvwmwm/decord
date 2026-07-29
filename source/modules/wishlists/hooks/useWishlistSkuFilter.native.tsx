@@ -1,12 +1,12 @@
-// Module ID: 9730
-// Function ID: 75626
+// Module ID: 9752
+// Function ID: 9753
 // Name: useWishlistSkuFilter
-// Dependencies: [31, 5645, 653, 7865, 8666, 5648, 2]
+// Dependencies: [19, 5663, 676, 7888, 8690, 5666, 2]
 // Exports: useWishlistSkuFilter
 
-// Module 9730 (useWishlistSkuFilter)
-import result from "result";
-import { WishlistRecommendationReason as closure_3 } from "_isNativeReflectConstruct";
+// Module 9752 (useWishlistSkuFilter)
+import noop from "noop";
+import { WishlistRecommendationReason as closure_3 } from "fromServer";
 import { SKUProductLines } from "ME";
 
 const require = arg1;
@@ -17,34 +17,35 @@ export const useWishlistSkuFilter = function useWishlistSkuFilter(wishlistAndRec
   const skusToUserAndReason = wishlistAndRecommendations.skusToUserAndReason;
   const userId = wishlistAndRecommendations.userId;
   const numItems = wishlistAndRecommendations.numItems;
+  let isEligibleForSocialLayerStorefrontMobilePurchasing;
+  let memo;
   let obj = wishlistAndRecommendations(skusToUserAndReason[3]);
-  const isEligibleForSocialLayerStorefrontMobilePurchasing = obj.useIsEligibleForSocialLayerStorefrontMobilePurchasing({ location: "use_wishlist_sku_filter" });
+  isEligibleForSocialLayerStorefrontMobilePurchasing = obj.useIsEligibleForSocialLayerStorefrontMobilePurchasing({ location: "use_wishlist_sku_filter" });
   const items = [wishlistAndRecommendations, isEligibleForSocialLayerStorefrontMobilePurchasing];
-  const memo = userId.useMemo(() => wishlistAndRecommendations.filter((productLine) => {
-    const GIFTABLE_PRODUCT_LINES = wishlistAndRecommendations(skusToUserAndReason[4]).GIFTABLE_PRODUCT_LINES;
-    const tmp = !GIFTABLE_PRODUCT_LINES.has(productLine.productLine);
-    let tmp2 = !tmp;
-    if (!tmp) {
-      let tmp4 = productLine.productLine !== isEligibleForSocialLayerStorefrontMobilePurchasing.SOCIAL_LAYER_GAME_ITEM;
-      if (!tmp4) {
-        let result = outer1_4;
-        if (outer1_4) {
-          result = wishlistAndRecommendations(skusToUserAndReason[5]).isSlayerSkuAvailableOnThisPlatform(productLine);
-          const obj = wishlistAndRecommendations(skusToUserAndReason[5]);
+  memo = userId.useMemo(() => wishlistAndRecommendations.filter((productLine) => {
+    const GIFTABLE_PRODUCT_LINES = outer1_0(outer1_1[4]).GIFTABLE_PRODUCT_LINES;
+    let hasItem = GIFTABLE_PRODUCT_LINES.has(productLine.productLine);
+    if (hasItem) {
+      let tmp5 = productLine.productLine !== outer1_4.SOCIAL_LAYER_GAME_ITEM;
+      if (!tmp5) {
+        let result = closure_4;
+        if (closure_4) {
+          result = outer1_0(outer1_1[5]).isSlayerSkuAvailableOnThisPlatform(productLine);
+          const tmpResult = outer1_0(outer1_1[5]);
         }
-        tmp4 = result;
+        tmp5 = result;
       }
-      tmp2 = tmp4;
+      hasItem = tmp5;
     }
-    return tmp2;
+    return hasItem;
   }), items);
   obj = {
     totalUnownedWishlistItemCount: userId.useMemo(() => memo.filter((arg0) => {
-      let tmp = null != outer1_1[arg0.id];
-      if (tmp) {
-        tmp = outer1_1[arg0.id][outer1_2] === numItems.WISHLIST;
+      let tmp2 = null != table[arg0.id];
+      if (tmp2) {
+        tmp2 = tmp[arg0.id][noop] === outer1_3.WISHLIST;
       }
-      return tmp;
+      return tmp2;
     }).length, items1),
     slicedWishlistAndRecommendations: userId.useMemo(() => memo.slice(0, numItems), items2)
   };

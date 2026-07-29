@@ -1,12 +1,12 @@
-// Module ID: 12619
-// Function ID: 97540
+// Module ID: 12641
+// Function ID: 12642
 // Name: orderMarketablePerksForDisplay
-// Dependencies: [57, 4054, 4056, 2]
+// Dependencies: [32, 4078, 4080, 2]
 // Exports: default
 
-// Module 12619 (orderMarketablePerksForDisplay)
+// Module 12641 (orderMarketablePerksForDisplay)
 import _slicedToArray from "_slicedToArray";
-import { GAME_SERVER_POWERUP_SKU_ID as closure_3 } from "NewGamesCoachmarkContent";
+import { GAME_SERVER_POWERUP_SKU_ID as closure_3 } from "str11";
 
 const require = arg1;
 const result = require("VANITY_URL_POWERUP_SKU_ID").fileFinishedImporting("modules/premium/powerups/utils/orderMarketablePerksForDisplay.tsx");
@@ -14,11 +14,11 @@ const result = require("VANITY_URL_POWERUP_SKU_ID").fileFinishedImporting("modul
 export default function orderMarketablePerksForDisplay(arg0) {
   const items = [...arg0];
   const reversed = items.reverse();
-  const findIndexResult = reversed.findIndex((skuId) => skuId.skuId === outer1_0(outer1_1[2]).GUILD_POWERUP_GUILD_THEME_SKU_ID);
+  const findIndexResult = reversed.findIndex((skuId) => skuId.skuId === callback(table[2]).GUILD_POWERUP_GUILD_THEME_SKU_ID);
   if (findIndexResult > 0) {
     reversed.unshift(callback(reversed.splice(findIndexResult, 1), 1)[0]);
   }
-  const findIndexResult1 = reversed.findIndex((skuId) => skuId.skuId === outer1_3);
+  const findIndexResult1 = reversed.findIndex((skuId) => skuId.skuId === closure_3);
   if (-1 !== findIndexResult1) {
     if (findIndexResult1 !== reversed.length - 1) {
       reversed.push(callback(reversed.splice(findIndexResult1, 1), 1)[0]);

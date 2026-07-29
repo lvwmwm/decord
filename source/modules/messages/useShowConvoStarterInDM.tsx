@@ -1,22 +1,22 @@
-// Module ID: 11402
-// Function ID: 88429
+// Module ID: 11426
+// Function ID: 11427
 // Name: MAX_MESSAGES_ALLOWED_FOR_GREETING
-// Dependencies: [31, 5637, 4384, 3802, 1850, 653, 1355, 10407, 566, 2]
+// Dependencies: [19, 5655, 4407, 3826, 1874, 676, 1379, 10431, 589, 2]
 // Exports: useShowConvoStarterInDM
 
-// Module 11402 (MAX_MESSAGES_ALLOWED_FOR_GREETING)
-import { useRef } from "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_4 from "_isNativeReflectConstruct";
-import closure_5 from "_isNativeReflectConstruct";
-import closure_6 from "_isNativeReflectConstruct";
+// Module 11426 (MAX_MESSAGES_ALLOWED_FOR_GREETING)
+import { useRef } from "noop";
+import processChannel from "processChannel";
+import reinjectEphemerals from "reinjectEphemerals";
+import upsertRelationship from "upsertRelationship";
+import mergeGuildAvatar from "mergeGuildAvatar";
 import ME from "ME";
 import { ChannelFlags } from "set";
 
-let closure_7;
-let closure_8;
-({ RelationshipTypes: closure_7, UserFlags: closure_8 } = ME);
-let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/messages/useShowConvoStarterInDM.tsx");
+let error;
+let metroImportAll;
+({ RelationshipTypes: error, UserFlags: metroImportAll } = ME);
+let result = require("reinjectEphemerals").fileFinishedImporting("modules/messages/useShowConvoStarterInDM.tsx");
 
 export const MAX_MESSAGES_ALLOWED_FOR_GREETING = 25;
 export const useShowConvoStarterInDM = function useShowConvoStarterInDM(channel) {
@@ -28,56 +28,60 @@ export const useShowConvoStarterInDM = function useShowConvoStarterInDM(channel)
     const rawRecipients = channel.rawRecipients;
     tmp = !rawRecipients.some((bot) => bot.bot);
   }
-  let _isNativeReflectConstruct = tmp;
+  let processChannel = tmp;
   let recipientId = null;
   if (tmp) {
     recipientId = channel.getRecipientId();
   }
-  const strangerDangerWarning = _require(10407).useStrangerDangerWarning(channel.id);
+  const strangerDangerWarning = _require(10431).useStrangerDangerWarning(channel.id);
   const hasFlagResult = channel.hasFlag(ChannelFlags.HAS_ONLY_SYSTEM_MESSAGES);
-  const obj = _require(10407);
-  const items = [recipientId, _isNativeReflectConstruct, strangerDangerWarning, hasFlagResult];
+  const obj = _require(10431);
+  const items = [recipientId, processChannel, strangerDangerWarning, hasFlagResult];
   const items1 = [strangerDangerWarning, tmp, channel.id, recipientId, hasFlagResult];
-  return _require(566).useStateFromStores(items, () => {
-    if (ref2.current !== user.id) {
+  return _require(589).useStateFromStores(items, () => {
+    if (ref2.current !== id.id) {
       ref.current = false;
-      ref2.current = user.id;
+      tmp.current = tmp2.id;
     }
     if (null != strangerDangerWarning) {
       return false;
     } else if (tmp) {
-      if (tmp.isMessageRequest(user.id)) {
+      if (tmp.isMessageRequest(tmp2.id)) {
         return false;
       } else {
         if (null != recipientId) {
-          if (strangerDangerWarning.getRelationshipType(recipientId) === outer1_7.BLOCKED) {
+          if (strangerDangerWarning.getRelationshipType(tmp5) === outer1_7.BLOCKED) {
             return false;
           }
         }
         if (null != recipientId) {
-          user = hasFlagResult.getUser(recipientId);
+          const user = hasFlagResult.getUser(tmp5);
           if (null != user) {
             if (user.hasFlag(outer1_8.PROVISIONAL_ACCOUNT)) {
               return false;
             }
           }
         }
-        const messages = recipientId.getMessages(user.id);
-        let tmp16 = !messages.hasMoreBefore && !messages.hasMoreAfter;
-        if (tmp16) {
-          tmp16 = messages.length < 25;
+        const messages = recipientId.getMessages(tmp2.id);
+        const hasMoreBefore = messages.hasMoreBefore;
+        let tmp10 = !hasMoreBefore;
+        if (!hasMoreBefore) {
+          tmp10 = !messages.hasMoreAfter;
+        }
+        if (tmp10) {
+          tmp10 = messages.length < 25;
         }
         let current = messages.ready;
-        const result = recipientId.hasCurrentUserSentWaveBlockingMessage(user.id);
+        const result = recipientId.hasCurrentUserSentWaveBlockingMessage(tmp2.id);
         if (!current) {
           current = ref.current;
         }
         if (current) {
-          let tmp21 = closure_6;
-          if (!closure_6) {
-            tmp21 = tmp16;
+          let tmp13 = mergeGuildAvatar;
+          if (!mergeGuildAvatar) {
+            tmp13 = tmp10;
           }
-          current = tmp21;
+          current = tmp13;
         }
         if (current) {
           current = !result;

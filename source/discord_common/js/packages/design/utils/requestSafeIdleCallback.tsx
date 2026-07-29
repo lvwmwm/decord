@@ -1,10 +1,10 @@
-// Module ID: 673
-// Function ID: 8282
+// Module ID: 696
+// Function ID: 697
 // Name: setOriginWindow
-// Dependencies: [674, 2]
+// Dependencies: [697, 2]
 // Exports: requestSafeIdleCallback, setOriginWindow
 
-// Module 673 (setOriginWindow)
+// Module 696 (setOriginWindow)
 import getGlobalObject from "getGlobalObject";
 
 getGlobalObject = getGlobalObject.getGlobalObject();
@@ -20,8 +20,8 @@ export const requestSafeIdleCallback = function requestSafeIdleCallback(arg0, ti
     if (null != obj.requestIdleCallback) {
       if (null != obj.cancelIdleCallback) {
         let c2 = false;
-        let timeout2 = null;
-        function runOnce() {
+        timeout = null;
+        function runOnce(arg0) {
           if (!c2) {
             c2 = true;
             if (null != c3) {
@@ -32,19 +32,28 @@ export const requestSafeIdleCallback = function requestSafeIdleCallback(arg0, ti
           }
         }
         let closure_5 = obj.requestIdleCallback(runOnce, timeout);
-        timeout = undefined;
-        if (null != timeout) {
-          timeout = timeout.timeout;
+        let num;
+        if (timeout != null) {
+          num = timeout.timeout;
         }
-        let num = 1000;
-        if (null != timeout) {
-          num = timeout;
+        if (num == null) {
+          num = 1000;
         }
-        timeout2 = obj.setTimeout(() => {
+        timeout = obj.setTimeout(() => {
           if (!c2) {
             closure_1.cancelIdleCallback(closure_5);
           }
-          runOnce();
+          if (typeof runOnce !== "find") {
+            HermesBuiltin.throwTypeError();
+          }
+          if (!c2) {
+            c2 = true;
+            if (null != c3) {
+              closure_1.clearTimeout(c3);
+              c3 = null;
+            }
+            callback();
+          }
         }, num);
         return () => {
           closure_1.cancelIdleCallback(closure_5);
@@ -56,7 +65,7 @@ export const requestSafeIdleCallback = function requestSafeIdleCallback(arg0, ti
       }
     }
   }
-  const timeout3 = obj.setTimeout(arg0, 0);
+  const timeout2 = obj.setTimeout(arg0, 0);
   return () => {
     closure_1.clearTimeout(closure_6);
   };

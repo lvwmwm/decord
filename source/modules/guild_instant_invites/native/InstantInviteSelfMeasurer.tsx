@@ -1,15 +1,16 @@
-// Module ID: 15614
-// Function ID: 120115
-// Dependencies: [31, 27, 33, 4165, 10170, 2]
+// Module ID: 15649
+// Function ID: 15650
+// Dependencies: [19, 17, 21, 4189, 10191, 2]
 
-// Module 15614
-import importAllResult from "result";
+// Module 15649
+import importAllResult from "noop";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
 const require = arg1;
-let closure_6 = _createForOfIteratorHelperLoose.createStyles({ container: { position: "absolute", opacity: 0 } });
+let c3 = importAllResult;
+let closure_6 = createCacheKey.createStyles({ container: { position: "absolute", opacity: 0 } });
 const memoResult = importAllResult.memo(function InstantInviteSelfMeasurer(type) {
   let item;
   let onMeasured;
@@ -19,22 +20,33 @@ const memoResult = importAllResult.memo(function InstantInviteSelfMeasurer(type)
     str = "height";
   }
   const items = [onMeasured, str];
-  let obj = { style: null, onLayout: null, pointerEvents: "none", importantForAccessibility: "no-hide-descendants", accessibilityElementsHidden: true, accessible: false };
-  const items1 = [type.containerStyle, callback().container];
-  obj.style = items1;
-  obj.onLayout = importAllResult.useCallback((nativeEvent) => {
+  let obj = {
+    style: items1,
+    onLayout: importAllResult.useCallback((nativeEvent) => {
+      const layout = nativeEvent.nativeEvent.layout;
+      onMeasured("height" === str ? layout.height : layout.width);
+    }, items),
+    pointerEvents: "none",
+    importantForAccessibility: "no-hide-descendants",
+    accessibilityElementsHidden: true,
+    accessible: false,
+    children: null
+  };
+  items1 = [type.containerStyle, callback().container];
+  if ("invite" === item.type) {
+    obj = { invite: null };
+    obj[0] = item.data;
+    let tmp2Result = tmp2(str(10191), obj);
+  } else {
+    obj = { channel: null };
+    obj[0] = item.data;
+    tmp2Result = tmp2(onMeasured(10191).LinkedChannelInvite, obj);
+  }
+  obj[6] = tmp2Result;
+  return <View style={items1} onLayout={importAllResult.useCallback((nativeEvent) => {
     const layout = nativeEvent.nativeEvent.layout;
     onMeasured("height" === str ? layout.height : layout.width);
-  }, items);
-  if ("invite" === item.type) {
-    obj = { invite: item.data };
-    let tmp7 = jsx(str(10170), { invite: item.data });
-  } else {
-    obj = { channel: item.data };
-    tmp7 = jsx(onMeasured(10170).LinkedChannelInvite, { channel: item.data });
-  }
-  obj.children = tmp7;
-  return <View style={null} onLayout={null} pointerEvents="none" importantForAccessibility="no-hide-descendants" accessibilityElementsHidden accessible={false} />;
+  }, items)} pointerEvents="none" importantForAccessibility="no-hide-descendants" accessibilityElementsHidden accessible={false}>{null}</View>;
 });
 const result = require("jsxProd").fileFinishedImporting("modules/guild_instant_invites/native/InstantInviteSelfMeasurer.tsx");
 

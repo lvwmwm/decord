@@ -1,217 +1,68 @@
-// Module ID: 5946
-// Function ID: 52588
-// Name: _createForOfIteratorHelperLoose
-// Dependencies: [57, 6, 7, 15, 17, 18, 1348, 4384, 21, 566, 686, 2]
+// Module ID: 5965
+// Function ID: 5966
+// Name: getState
+// Dependencies: [32, 1372, 4407, 11, 589, 709, 2]
 
-// Module 5946 (_createForOfIteratorHelperLoose)
+// Module 5965 (getState)
 import _slicedToArray from "_slicedToArray";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_4 from "_isNativeReflectConstruct";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
-import closure_8 from "_isNativeReflectConstruct";
-import closure_9 from "_isNativeReflectConstruct";
+import ensureGuildLoaded from "ensureGuildLoaded";
+import reinjectEphemerals from "reinjectEphemerals";
+import { PersistedStore } from "initialize";
 
-function _createForOfIteratorHelperLoose(iterable) {
-  let closure_0 = iterable;
-  iterable = "undefined" !== typeof Symbol;
-  if (iterable) {
-    const _Symbol = Symbol;
-    iterable = iterable[Symbol.iterator];
-  }
-  if (!iterable) {
-    iterable = iterable[Symbol.iterator];
-  }
-  if (iterable) {
-    const iter = iterable.call(iterable);
-    const next = iter.next;
-    return next.bind(iter);
-  } else {
-    const _Array = Array;
-    let tmp = iterable;
-    if (!Array.isArray(iterable)) {
-      let tmp2;
-      if (iterable) {
-        if ("string" === typeof iterable) {
-          tmp2 = _arrayLikeToArray(iterable, undefined);
-        } else {
-          const toString = {}.toString;
-          const substr = toString.call(iterable).slice(8, -1);
-          let name = substr;
-          if (tmp3) {
-            name = iterable.constructor.name;
-          }
-          if ("Map" !== name) {
-            if ("Set" !== name) {
-              if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(iterable, undefined);
-              } else {
-                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
-              }
-            }
-            tmp2 = arr;
-          }
-          const _Array2 = Array;
-          arr = Array.from(iterable);
-          const callResult = toString.call(iterable);
-          tmp3 = "Object" === substr && iterable.constructor;
-        }
-      }
-      tmp = tmp2;
-      if (!tmp2) {
-        const _TypeError = TypeError;
-        const typeError = new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
-        throw typeError;
-      }
-    }
-    if (tmp) {
-      closure_0 = tmp;
-    }
-    let c1 = 0;
-    return () => {
-      if (closure_1 >= length.length) {
-        let obj = { done: true };
-      } else {
-        obj = { done: false };
-        closure_1 = tmp3 + 1;
-        obj.value = length[+closure_1];
-      }
-      return obj;
-    };
-  }
+let closure_5 = {};
+let closure_6 = {};
+let closure_7 = {};
+class PendingReplyStore extends PersistedStore {
 }
-function _arrayLikeToArray(arg0, arg1) {
-  let length;
-  if (tmp) {
-    length = arg0.length;
+const prototype = PendingReplyStore.prototype;
+prototype["getState"] = function getState() {
+  let tmp6;
+  let tmp7;
+  let obj = {};
+  const entries = importDefault(11).entries(closure_5);
+  const obj2 = importDefault(11);
+  while (tmp2 !== undefined) {
+    let tmp4 = callback;
+    let tmp5 = callback(tmp3, 2);
+    [tmp6, tmp7] = tmp5;
+    obj = { channelId: null, messageId: null, shouldMention: null, showMentionToggle: null };
+    obj[0] = tmp6;
+    obj[1] = tmp7.message.id;
+    ({ shouldMention: obj3[2], showMentionToggle: obj3[3] } = tmp7);
+    obj[tmp6] = obj;
+    continue;
   }
-  const ArrayResult = Array(length);
-  for (let num = 0; num < length; num = num + 1) {
-    ArrayResult[num] = arg0[num];
+  obj = {};
+  const merged = Object.assign(closure_6);
+  const merged1 = Object.assign(obj);
+  return obj;
+};
+prototype["initialize"] = function initialize(arg0) {
+  let obj = arg0;
+  this.waitFor(reinjectEphemerals, ensureGuildLoaded);
+  if (arg0 == null) {
+    obj = {};
   }
-  return ArrayResult;
-}
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
-  }
-  const result = _isNativeReflectConstruct();
-}
-function tryHydratePendingReply(channelId) {
-  if (null == channelId) {
-    return false;
-  } else if (null == dependencyMap2[channelId]) {
-    return false;
-  } else {
-    message = message.getMessage(channelId, tmp10.messageId);
-    channel = channel.getChannel(tmp10.channelId);
-    if (null != message) {
-      if (null != channel) {
-        const obj = { channel, message };
-        ({ shouldMention: obj.shouldMention, showMentionToggle: obj.showMentionToggle } = tmp10);
-        closure_10[channelId] = obj;
-        delete tmp[tmp2];
-      }
-    }
-    return false;
-  }
-}
-let closure_10 = {};
-let closure_11 = {};
-let closure_12 = {};
-let tmp2 = ((PersistedStore) => {
-  class PendingReplyStore {
-    constructor() {
-      self = this;
-      tmp = outer1_3(this, PendingReplyStore);
-      obj = outer1_6(PendingReplyStore);
-      tmp2 = outer1_5;
-      if (outer1_15()) {
-        tmp6 = globalThis;
-        _Reflect = Reflect;
-        tmp7 = outer1_6;
-        tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, outer1_6(self).constructor);
-      } else {
-        tmp3 = arguments;
-        tmp4 = arguments;
-        constructResult = obj(...arguments);
-      }
-      return tmp2(self, constructResult);
-    }
-  }
-  callback2(PendingReplyStore, PersistedStore);
-  let obj = {
-    key: "getState",
-    value() {
-      let done;
-      let obj = {};
-      const tmp = outer1_13(PendingReplyStore(outer1_1[8]).entries(outer1_10));
-      let iter = tmp();
-      if (!iter.done) {
-        do {
-          let tmp2 = outer1_2;
-          let tmp3 = outer1_2(iter.value, 2);
-          let first = tmp3[0];
-          let tmp5 = tmp3[1];
-          obj = { channelId: first, messageId: tmp5.message.id, shouldMention: tmp5.shouldMention, showMentionToggle: tmp5.showMentionToggle };
-          obj[first] = obj;
-          let iter2 = tmp();
-          iter = iter2;
-          done = iter2.done;
-        } while (!done);
-      }
-      obj = {};
-      const merged = Object.assign(outer1_11);
-      const merged1 = Object.assign(obj);
-      return obj;
-    }
-  };
-  const items = [obj, , , ];
-  obj = {
-    key: "initialize",
-    value(arg0) {
-      let obj = arg0;
-      this.waitFor(outer1_9, outer1_8);
-      if (null == arg0) {
-        obj = {};
-      }
-      const outer1_11 = obj;
-    }
-  };
-  items[1] = obj;
-  obj = {
-    key: "getPendingReply",
-    value(arg0) {
-      return outer1_10[arg0];
-    }
-  };
-  items[2] = obj;
-  items[3] = {
-    key: "getPendingReplyActionSource",
-    value(arg0) {
-      return outer1_12[arg0];
-    }
-  };
-  return callback(PendingReplyStore, items);
-})(require("initialize").PersistedStore);
-tmp2.displayName = "PendingReplyStore";
-tmp2.persistKey = "PendingReplyStore";
-let items = [
+};
+prototype["getPendingReply"] = function getPendingReply(id) {
+  return dependencyMap[id];
+};
+prototype["getPendingReplyActionSource"] = function getPendingReplyActionSource(message) {
+  return table[message];
+};
+PendingReplyStore.displayName = "PendingReplyStore";
+PendingReplyStore.persistKey = "PendingReplyStore";
+const items = [
   (arg0) => {
     let obj = arg0;
-    if (null == arg0) {
+    if (arg0 == null) {
       obj = {};
     }
     return obj;
   }
 ];
-tmp2.migrations = items;
-tmp2 = new tmp2(require("dispatcher"), {
+PendingReplyStore.migrations = items;
+const pendingReplyStore = new PendingReplyStore(require("dispatcher"), {
   CREATE_PENDING_REPLY: function handleCreatePendingReply(message) {
     let channel;
     let shouldMention;
@@ -223,9 +74,8 @@ tmp2 = new tmp2(require("dispatcher"), {
     if (flag === undefined) {
       flag = true;
     }
-    const obj = { channel, message: message.message, shouldMention, showMentionToggle: flag, mediaMention: message.mediaMention };
-    closure_10[channel.id] = obj;
-    closure_12[channel.id] = message.source;
+    closure_5[channel.id] = { channel, message: message.message, shouldMention, showMentionToggle: flag, mediaMention: message.mediaMention };
+    closure_7[channel.id] = message.source;
   },
   CREATE_SHALLOW_PENDING_REPLY: function handleCreateShallowPendingReply(messageId) {
     let channel;
@@ -238,8 +88,7 @@ tmp2 = new tmp2(require("dispatcher"), {
     if (flag === undefined) {
       flag = true;
     }
-    const obj = { channelId: channel.id, messageId: messageId.messageId, shouldMention, showMentionToggle: flag };
-    closure_11[channel.id] = obj;
+    closure_6[channel.id] = { channelId: channel.id, messageId: messageId.messageId, shouldMention, showMentionToggle: flag };
   },
   SET_PENDING_REPLY_SHOULD_MENTION: function handleSetPendingReplyShouldMention(arg0) {
     let channelId;
@@ -248,13 +97,13 @@ tmp2 = new tmp2(require("dispatcher"), {
     if (channelId in dependencyMap) {
       let obj = {};
       const merged = Object.assign(dependencyMap[channelId]);
-      obj["shouldMention"] = shouldMention;
+      obj.shouldMention = shouldMention;
       dependencyMap[channelId] = obj;
     }
     if (channelId in dependencyMap2) {
       obj = {};
       const merged1 = Object.assign(dependencyMap2[channelId]);
-      obj["shouldMention"] = shouldMention;
+      obj.shouldMention = shouldMention;
       dependencyMap2[channelId] = obj;
     }
   },
@@ -263,26 +112,26 @@ tmp2 = new tmp2(require("dispatcher"), {
     delete tmp[tmp2];
   },
   CONNECTION_OPEN: function handleConnectionOpen() {
-    const keys = importDefault(21).keys(closure_11);
-    const item = keys.forEach((channelId) => {
-      if (null == outer1_8.getChannel(channelId)) {
+    const keys = importDefault(11).keys(closure_6);
+    const item = keys.forEach((arg0) => {
+      if (null == channel.getChannel(arg0)) {
         delete tmp[tmp2];
       }
     });
   },
   LOGOUT: function handleLogout() {
-    let closure_10 = {};
-    let closure_11 = {};
-    let closure_12 = {};
+    let closure_5 = {};
+    let closure_6 = {};
+    let closure_7 = {};
   },
   MESSAGE_DELETE: function handleMessageDelete(arg0) {
     let channelId;
     let id;
     ({ id, channelId } = arg0);
     id = undefined;
-    if (null != dependencyMap[channelId]) {
+    if (dependencyMap[channelId] != null) {
       const message = tmp4.message;
-      if (null != message) {
+      if (message != null) {
         id = message.id;
       }
     }
@@ -291,7 +140,7 @@ tmp2 = new tmp2(require("dispatcher"), {
       delete tmp[tmp2];
     } else {
       let messageId;
-      if (null != dependencyMap2[channelId]) {
+      if (dependencyMap2[channelId] != null) {
         messageId = tmp7.messageId;
       }
       if (messageId !== id) {
@@ -303,12 +152,44 @@ tmp2 = new tmp2(require("dispatcher"), {
     }
   },
   CHANNEL_SELECT: function handleChannelSelect(channelId) {
-    tryHydratePendingReply(channelId.channelId);
+    channelId = channelId.channelId;
+    if (null != channelId) {
+      if (null != dependencyMap2[channelId]) {
+        const message = store2.getMessage(channelId, tmp4.messageId);
+        const channel = store.getChannel(tmp4.channelId);
+        if (null != message) {
+          if (null != channel) {
+            const obj = { channel: null, message: null, shouldMention: null, showMentionToggle: null };
+            obj[0] = channel;
+            obj[1] = message;
+            ({ shouldMention: obj[2], showMentionToggle: obj[3] } = tmp4);
+            closure_5[channelId] = obj;
+            delete tmp[tmp2];
+          }
+        }
+      }
+    }
   },
   LOAD_MESSAGES_SUCCESS: function handleLoadMessagesSuccess(channelId) {
-    tryHydratePendingReply(channelId.channelId);
+    channelId = channelId.channelId;
+    if (null != channelId) {
+      if (null != dependencyMap2[channelId]) {
+        const message = store2.getMessage(channelId, tmp4.messageId);
+        const channel = store.getChannel(tmp4.channelId);
+        if (null != message) {
+          if (null != channel) {
+            const obj = { channel: null, message: null, shouldMention: null, showMentionToggle: null };
+            obj[0] = channel;
+            obj[1] = message;
+            ({ shouldMention: obj[2], showMentionToggle: obj[3] } = tmp4);
+            closure_5[channelId] = obj;
+            delete tmp[tmp2];
+          }
+        }
+      }
+    }
   }
 });
-let result = require("_defineProperties").fileFinishedImporting("modules/replies/PendingReplyStore.tsx");
+const result = require("reinjectEphemerals").fileFinishedImporting("modules/replies/PendingReplyStore.tsx");
 
-export default tmp2;
+export default pendingReplyStore;

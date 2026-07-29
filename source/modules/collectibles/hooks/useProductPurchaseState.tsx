@@ -1,62 +1,72 @@
-// Module ID: 8686
-// Function ID: 68810
+// Module ID: 8710
+// Function ID: 8711
 // Name: getProductPurchaseState
-// Dependencies: [5796, 8687, 1877, 566, 2]
+// Dependencies: [5814, 8711, 1901, 589, 2]
 // Exports: useProductPurchaseState
 
-// Module 8686 (getProductPurchaseState)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 8710 (getProductPurchaseState)
+import map from "map";
 
 const require = arg1;
-function getProductPurchaseState(outer2_5, skuId) {
-  const _require = outer2_5;
-  let tmp = null != outer2_5.getPurchase(skuId.skuId);
+function getProductPurchaseState(outer1_5, skuId) {
+  const _require = outer1_5;
+  let tmp = null != outer1_5.getPurchase(skuId.skuId);
   let items = skuId.items;
-  if (null == items) {
+  if (items == null) {
     items = [];
   }
-  const tmp2Result = importDefault(8687)(items.map((skuId) => outer2_5.getPurchase(skuId.skuId)));
+  const tmp3Result = importDefault(8711)(items.map((skuId) => outer1_5.getPurchase(skuId.skuId)));
   let type;
-  if (null != skuId) {
+  if (skuId != null) {
     type = skuId.type;
   }
-  if (_require(1877).CollectiblesItemType.BUNDLE === type) {
-    let obj = {};
+  if (_require(1901).CollectiblesItemType.BUNDLE === type) {
     if (!tmp) {
-      tmp = items.length > 0 && tmp2Result.length === items.length;
-      const tmp6 = items.length > 0 && tmp2Result.length === items.length;
+      tmp = items.length > 0 && tmp3Result.length === items.length;
+      const tmp7 = items.length > 0 && tmp3Result.length === items.length;
     }
-    obj.isPurchased = tmp;
-    obj.isPartiallyOwnedBundle = tmp2Result.length > 0 && tmp2Result.length < items.length;
-    obj.isPartiallyOwnedVariantsGroup = false;
+    let obj = { isPurchased: null, isPartiallyOwnedBundle: null, isPartiallyOwnedVariantsGroup: false };
+    obj[0] = tmp;
+    obj[1] = tmp3Result.length > 0 && tmp3Result.length < items.length;
     return obj;
-  } else if (_require(1877).CollectiblesItemType.VARIANTS_GROUP === type) {
+  } else if (tmp5(1901).CollectiblesItemType.VARIANTS_GROUP === type) {
     const variants = skuId.variants;
     let everyResult;
-    if (null != variants) {
-      everyResult = variants.every((skuId) => null != outer2_5.getPurchase(skuId.skuId));
+    if (variants != null) {
+      everyResult = variants.every((skuId) => null != outer1_5.getPurchase(skuId.skuId));
     }
+    let flag = everyResult;
+    if (everyResult == null) {
+      flag = false;
+    }
+    obj = { isPurchased: null, isPartiallyOwnedBundle: false, isPartiallyOwnedVariantsGroup: null };
+    obj[0] = flag;
     const variants2 = skuId.variants;
-    let someResult;
-    if (null != variants2) {
-      someResult = variants2.some((skuId) => null != outer2_5.getPurchase(skuId.skuId));
+    let flag2;
+    if (variants2 != null) {
+      flag2 = variants2.some((skuId) => null != outer1_5.getPurchase(skuId.skuId));
     }
-    if (someResult) {
-      someResult = !everyResult;
+    if (flag2) {
+      flag2 = !everyResult;
     }
-    obj = { isPurchased: null != everyResult && everyResult, isPartiallyOwnedBundle: false, isPartiallyOwnedVariantsGroup: null != someResult && someResult };
+    if (flag2 == null) {
+      flag2 = false;
+    }
+    obj[2] = flag2;
     return obj;
   } else {
-    obj = { isPurchased: tmp, isPartiallyOwnedBundle: false, isPartiallyOwnedVariantsGroup: false };
+    obj = { isPurchased: null, isPartiallyOwnedBundle: false, isPartiallyOwnedVariantsGroup: false };
+    obj[0] = tmp;
     return obj;
   }
-  const tmp2 = importDefault(8687);
+  const tmp3 = importDefault(8711);
+  tmp5 = _require;
 }
 const result = require("CollectiblesItemType").fileFinishedImporting("modules/collectibles/hooks/useProductPurchaseState.tsx");
 
 export { getProductPurchaseState };
 export const useProductPurchaseState = function useProductPurchaseState(product) {
   const _require = product;
-  const items = [_isNativeReflectConstruct];
-  return _require(566).useStateFromStoresObject(items, () => outer1_4(outer1_3, closure_0));
+  const items = [map];
+  return _require(589).useStateFromStoresObject(items, () => outer1_4(outer1_3, closure_0));
 };

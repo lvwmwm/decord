@@ -1,11 +1,11 @@
-// Module ID: 5972
-// Function ID: 52967
+// Module ID: 5991
+// Function ID: 5992
 // Name: getQuestLogger
-// Dependencies: [683, 482, 3, 2]
+// Dependencies: [706, 505, 3, 2]
 // Exports: getQuestLogger
 
-// Module 5972 (getQuestLogger)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 5991 (getQuestLogger)
+import refreshSourceMapCookie from "refreshSourceMapCookie";
 import { NOOP } from "sum";
 
 const result = require("timestamp").fileFinishedImporting("modules/quests/lib/getQuestLogger.tsx");
@@ -20,7 +20,7 @@ export const getQuestLogger = function getQuestLogger(getQuestLogger) {
   ({ quest, location: _location } = obj);
   isLoggingQuestEvents = isLoggingQuestEvents.isLoggingQuestEvents;
   let questName;
-  if (null != quest) {
+  if (quest != null) {
     questName = quest.config.messages.questName;
   }
   let str = "";

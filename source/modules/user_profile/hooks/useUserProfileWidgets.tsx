@@ -1,44 +1,38 @@
-// Module ID: 12149
-// Function ID: 95045
+// Module ID: 12173
+// Function ID: 12174
 // Name: useUserProfileWidgets
-// Dependencies: [1194, 5878, 5883, 566, 2]
+// Dependencies: [1218, 5896, 5901, 589, 2]
 // Exports: default
 
-// Module 12149 (useUserProfileWidgets)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_3 from "_isNativeReflectConstruct";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+// Module 12173 (useUserProfileWidgets)
+import fetchFingerprint from "fetchFingerprint";
+import createUserWidgetFromServer from "createUserWidgetFromServer";
+import initialize from "initialize";
 
 const require = arg1;
-const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/user_profile/hooks/useUserProfileWidgets.tsx");
+const result = require("initialize").fileFinishedImporting("modules/user_profile/hooks/useUserProfileWidgets.tsx");
 
 export default function useUserProfileWidgets(arg0) {
   const _require = arg0;
-  const items = [_isNativeReflectConstruct];
+  const items = [fetchFingerprint];
   const items1 = [arg0];
-  const stateFromStores = _require(566).useStateFromStores(items, () => {
-    let tmp2 = null != closure_0;
-    if (tmp2) {
-      tmp2 = tmp === closure_0;
-    }
-    return tmp2;
-  }, items1);
-  const obj = _require(566);
-  const items2 = [_createForOfIteratorHelperLoose];
-  const stateFromStores1 = _require(566).useStateFromStores(items2, () => outer1_4.getPendingWidgets());
-  const obj2 = _require(566);
-  const items3 = [closure_3];
+  const stateFromStores = _require(589).useStateFromStores(items, () => null != closure_0 && outer1_2.getId() === closure_0, items1);
+  const obj = _require(589);
+  const items2 = [initialize];
+  const stateFromStores1 = _require(589).useStateFromStores(items2, () => pendingWidgets.getPendingWidgets());
+  const obj2 = _require(589);
+  const items3 = [createUserWidgetFromServer];
   const items4 = [arg0];
-  const stateFromStoresArray = _require(566).useStateFromStoresArray(items3, () => {
+  const stateFromStoresArray = _require(589).useStateFromStoresArray(items3, () => {
     if (null == closure_0) {
       return [];
     } else {
-      const userProfile = outer1_3.getUserProfile(closure_0);
+      const userProfile = outer1_3.getUserProfile(tmp);
       let widgets;
-      if (null != userProfile) {
+      if (userProfile != null) {
         widgets = userProfile.widgets;
       }
-      if (null == widgets) {
+      if (widgets == null) {
         widgets = [];
       }
       return widgets;

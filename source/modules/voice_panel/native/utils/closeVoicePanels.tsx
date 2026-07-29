@@ -1,15 +1,15 @@
-// Module ID: 5676
-// Function ID: 48338
+// Module ID: 5694
+// Function ID: 5695
 // Name: closeVoicePanels
-// Dependencies: [653, 1207, 2]
+// Dependencies: [676, 1231, 2]
 // Exports: default
 
-// Module 5676 (closeVoicePanels)
+// Module 5694 (closeVoicePanels)
 import { ComponentActions } from "ME";
 
 const result = require("set").fileFinishedImporting("modules/voice_panel/native/utils/closeVoicePanels.tsx");
 
 export default function closeVoicePanels() {
-  const ComponentDispatch = require(1207) /* reportDevtoolsEvent */.ComponentDispatch;
+  const ComponentDispatch = require(1231) /* ComponentDispatcher */.ComponentDispatch;
   ComponentDispatch.dispatch(ComponentActions.VOICE_PANEL_CLOSE);
 };

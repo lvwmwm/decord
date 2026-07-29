@@ -1,26 +1,24 @@
-// Module ID: 14906
-// Function ID: 113549
-// Name: computeMaxX
-// Dependencies: [653, 677, 4026, 3778, 2]
+// Module ID: 14932
+// Function ID: 14933
+// Name: withEqualityFn
+// Dependencies: [676, 700, 4050, 3802, 2]
+// Exports: computeMaxX
 
-// Module 14906 (computeMaxX)
+// Module 14932 (withEqualityFn)
 import { DM_WIDTH } from "ME";
-import useStoreWithEqualityFn from "useStoreWithEqualityFn";
+import identity from "identity";
 
-function computeMaxX(width, left) {
-  return width.width - left.left - left.right - DM_WIDTH - 8 + 8;
-}
-const withEqualityFn = useStoreWithEqualityFn.createWithEqualityFn((arg0, arg1) => {
+const withEqualityFn = identity.createWithEqualityFn((arg0, arg1) => {
   const _require = arg0;
   const dependencyMap = arg1;
-  let obj = { panelX: _require(4026).makeMutable(0) };
-  const obj2 = _require(4026);
-  obj.gestureState = _require(4026).makeMutable({ active: false, initialX: 0, initialY: 0, panelX: 0 });
-  obj.maxX = 0;
-  obj.lastInteractionAt = { current: 0 };
-  const obj3 = _require(4026);
-  obj.isPanelTouchActive = _require(4026).makeMutable(false);
-  obj.setPanelX = function setPanelX(arg0) {
+  let obj = { panelX: null, gestureState: null, maxX: 0, lastInteractionAt: null, isPanelTouchActive: null, setPanelX: null, updateMaxX: null, noteInteraction: null };
+  obj[0] = _require(4050).makeMutable(0);
+  const obj2 = _require(4050);
+  obj[1] = _require(4050).makeMutable({ active: false, initialX: 0, initialY: 0, panelX: 0 });
+  obj[3] = { current: 0 };
+  const obj3 = _require(4050);
+  obj[4] = _require(4050).makeMutable(false);
+  obj[5] = function setPanelX(arg0) {
     let gestureState;
     let panelX;
     ({ panelX, gestureState } = callback2());
@@ -31,18 +29,20 @@ const withEqualityFn = useStoreWithEqualityFn.createWithEqualityFn((arg0, arg1) 
     }
     const obj = {};
     const merged = Object.assign(gestureState.get());
-    obj["active"] = false;
+    obj.active = false;
     const result2 = gestureState.set(obj);
   };
-  obj.updateMaxX = function updateMaxX(arg0, arg1) {
-    callback({ maxX: outer1_3(arg0, arg1) });
+  obj[6] = function updateMaxX(width, left) {
+    callback({ maxX: width.width - left.left - left.right - outer1_2 - 8 + 8 });
   };
-  obj.noteInteraction = function noteInteraction(arg0, arg1) {
+  obj[7] = function noteInteraction(arg0, arg1) {
     callback2().lastInteractionAt.current = Date.now();
   };
   return obj;
 }, require("isIterable").shallow);
-let result = require("module_4026").fileFinishedImporting("modules/home_drawer/native/HomeDrawerStore.tsx");
+let result = require("module_4050").fileFinishedImporting("modules/home_drawer/native/HomeDrawerStore.tsx");
 
 export default withEqualityFn;
-export { computeMaxX };
+export const computeMaxX = function computeMaxX(width, left) {
+  return width.width - left.left - left.right - DM_WIDTH - 8 + 8;
+};

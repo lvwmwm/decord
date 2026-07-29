@@ -1,85 +1,66 @@
-// Module ID: 6659
-// Function ID: 58672
-// Name: StatusBarManager
-// Dependencies: [6, 7, 27, 22, 1569, 2]
+// Module ID: 6680
+// Function ID: 6681
+// Name: pushStackEntry
+// Dependencies: [17, 12, 1593, 2]
 
-// Module 6659 (StatusBarManager)
-import _classCallCheck from "_classCallCheck";
-import _defineProperties from "_defineProperties";
+// Module 6680 (pushStackEntry)
 import { StatusBar } from "get ActivityIndicator";
 
-let tmp2 = (() => {
-  class StatusBarManager {
-    constructor() {
-      tmp = outer1_2(this, StatusBarManager);
-      this.propsStack = [];
-      this.updateImmediate = null;
-      return;
-    }
+class StatusBarManager {
+  constructor() {
+    obj = Object.create(new.target.prototype);
+    obj[0] = [];
+    return obj;
   }
-  let obj = {
-    key: "pushStackEntry",
-    value(hidden) {
-      const obj = { hidden: hidden.hidden, barStyle: hidden.barStyle };
-      const propsStack = this.propsStack;
-      propsStack.push(obj);
-      this.updatePropsStack();
-      return obj;
-    }
-  };
-  let items = [obj, , , ];
-  obj = {
-    key: "popStackEntry",
-    value(arg0) {
-      const self = this;
-      let num = -1;
-      if (null != arg0) {
-        const propsStack = self.propsStack;
-        num = propsStack.indexOf(arg0);
-      }
-      if (-1 !== num) {
-        const propsStack1 = self.propsStack;
-        propsStack1.splice(num, 1);
-        self.updatePropsStack();
-      }
-    }
-  };
-  items[1] = obj;
-  obj = {
-    key: "replaceStackEntry",
-    value(arg0, hidden) {
-      const self = this;
-      const obj = { hidden: hidden.hidden, barStyle: hidden.barStyle };
-      let num = -1;
-      if (null != arg0) {
-        const propsStack = self.propsStack;
-        num = propsStack.indexOf(arg0);
-      }
-      if (-1 !== num) {
-        self.propsStack[num] = obj;
-      }
-      self.updatePropsStack();
-      return obj;
-    }
-  };
-  items[2] = obj;
-  items[3] = {
-    key: "updatePropsStack",
-    value() {
-      const self = this;
-      clearImmediate(this.updateImmediate);
-      this.updateImmediate = setImmediate(() => {
-        const items = [{ hidden: false, barStyle: "default" }, ...self.propsStack];
-        const applyResult = StatusBarManager(outer2_1[3]).merge.apply(items);
-        outer2_4.setBarStyle(applyResult.barStyle);
-        const tmp = StatusBarManager(outer2_1[3]);
-        StatusBarManager(outer2_1[4]).setStatusBarVisible(!applyResult.hidden);
-      });
-    }
-  };
-  return callback(StatusBarManager, items);
-})();
-tmp2 = new tmp2();
-const result = require("get ActivityIndicator").fileFinishedImporting("modules/status_bar/native/components/StatusBarManager.android.tsx");
+}
+const prototype = StatusBarManager.prototype;
+prototype["pushStackEntry"] = function pushStackEntry(hidden) {
+  const obj = { hidden: hidden.hidden, barStyle: hidden.barStyle };
+  const propsStack = this.propsStack;
+  propsStack.push(obj);
+  this.updatePropsStack();
+  return obj;
+};
+prototype["popStackEntry"] = function popStackEntry(arg0) {
+  const self = this;
+  let num = -1;
+  if (null != arg0) {
+    const propsStack = self.propsStack;
+    num = propsStack.indexOf(arg0);
+  }
+  if (-1 !== num) {
+    const propsStack1 = self.propsStack;
+    propsStack1.splice(num, 1);
+    self.updatePropsStack();
+  }
+};
+prototype["replaceStackEntry"] = function replaceStackEntry(arg0, hidden) {
+  const self = this;
+  const obj = { hidden: hidden.hidden, barStyle: hidden.barStyle };
+  let num = -1;
+  if (null != arg0) {
+    const propsStack = self.propsStack;
+    num = propsStack.indexOf(arg0);
+  }
+  if (-1 !== num) {
+    self.propsStack[num] = obj;
+  }
+  self.updatePropsStack();
+  return obj;
+};
+prototype["updatePropsStack"] = function updatePropsStack() {
+  const self = this;
+  clearImmediate(this.updateImmediate);
+  this.updateImmediate = setImmediate(() => {
+    const items = [{ hidden: false, barStyle: "default" }, ...self.propsStack];
+    const applyResult = self(outer1_1[1]).merge.apply(items);
+    outer1_2.setBarStyle(applyResult.barStyle);
+    const tmp = self(outer1_1[1]);
+    self(outer1_1[2]).setStatusBarVisible(!applyResult.hidden);
+  });
+};
+let obj = Object.create(StatusBarManager.prototype);
+obj[0] = [];
+const result = require("enforcing").fileFinishedImporting("modules/status_bar/native/components/StatusBarManager.android.tsx");
 
-export default tmp2;
+export default obj;

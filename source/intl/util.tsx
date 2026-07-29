@@ -1,26 +1,23 @@
-// Module ID: 1213
-// Function ID: 13924
-// Name: getLanguages
-// Dependencies: [31, 1214, 1250, 1272, 2]
-// Exports: getAvailableLocales, getNormalizedLocale, useSyncMessages
+// Module ID: 1237
+// Function ID: 1238
+// Name: getAvailableLocales
+// Dependencies: [19, 1238, 1274, 1296, 2]
+// Exports: getAvailableLocales, getLanguages, getNormalizedLocale, useSyncMessages
 
-// Module 1213 (getLanguages)
-import result from "result";
+// Module 1237 (getAvailableLocales)
+import noop from "noop";
 
 const require = arg1;
-function getLanguages() {
-  return require(1272) /* items */;
-}
-const result = require("module_1250").fileFinishedImporting("intl/util.tsx");
+const result = require("module_1274").fileFinishedImporting("intl/util.tsx");
 
 export const getAvailableLocales = function getAvailableLocales() {
-  _require = _require(1214).default;
-  const found = getLanguages().filter((enabled) => enabled.enabled);
+  _require = _require(1238).default;
+  const found = _require(1296).filter((enabled) => enabled.enabled);
   const mapped = found.map((code) => {
     code = code.code;
-    const obj = { value: code, name: code.name };
+    const obj = { value: code, name: code.name, localizedName: null };
     const obj2 = dependencyMap(outer1_1[2]);
-    obj.localizedName = dependencyMap[obj2.runtimeHashMessageKey(obj2, code)];
+    obj[2] = dependencyMap[obj2.runtimeHashMessageKey(obj2, code)];
     return obj;
   });
   return mapped.sort((name, name2) => {
@@ -37,42 +34,42 @@ export const getAvailableLocales = function getAvailableLocales() {
     return num;
   });
 };
-export { getLanguages };
-export const getNormalizedLocale = function getNormalizedLocale(systemLocale, arg1) {
-  let tmp = arg1;
-  const found = getLanguages().filter((enabled) => enabled.enabled);
+export const getLanguages = function getLanguages() {
+  return require(1296) /* items */;
+};
+export const getNormalizedLocale = function getNormalizedLocale(str, arg1) {
+  const found = parts(1296).filter((enabled) => enabled.enabled);
   const mapped = found.map((code) => code.code);
-  if (mapped.includes(systemLocale)) {
-    return systemLocale;
+  if (mapped.includes(str)) {
+    return str;
   } else {
-    const parts = systemLocale.split("-");
+    parts = str.split("-");
     const first = parts[0];
     if (mapped.includes(parts[0])) {
-      let tmp5 = first;
+      let found2 = first;
     } else {
       if ("zh" === first) {
         if (parts.length > 1) {
           if ("Hant" === parts[1]) {
-            const found1 = mapped.find((arg0) => "zh-TW" === arg0);
-            if (null != found1) {
-              tmp = found1;
+            let found1 = mapped.find((arg0) => "zh-TW" === arg0);
+            if (found1 == null) {
+              found1 = arg1;
             }
-            tmp5 = tmp;
+            found2 = found1;
           }
         }
       }
-      const found2 = mapped.find((arg0) => arg0.split("-")[0] === parts[0]);
-      tmp5 = tmp;
-      if (null != found2) {
-        tmp5 = found2;
+      found2 = mapped.find((arg0) => arg0.split("-")[0] === parts[0]);
+      if (found2 == null) {
+        found2 = arg1;
       }
     }
-    return tmp5;
+    return found2;
   }
-  const arr = getLanguages();
+  const arr = parts(1296);
 };
 export const useSyncMessages = function useSyncMessages(arg0, arg1) {
   let closure_0 = arg0;
   let closure_1 = arg1;
-  const syncExternalStore = result.useSyncExternalStore((arg0) => closure_0.onChange(arg0), () => closure_0.isLocaleLoaded(currentLocale.currentLocale));
+  const syncExternalStore = noop.useSyncExternalStore((arg0) => closure_0.onChange(arg0), () => closure_0.isLocaleLoaded(currentLocale.currentLocale));
 };

@@ -1,49 +1,38 @@
-// Module ID: 10602
-// Function ID: 82447
-// Name: BaseSocket
-// Dependencies: [6, 7, 653, 22, 10592, 2]
+// Module ID: 10636
+// Function ID: 10637
+// Name: checkRpcVersion
+// Dependencies: [676, 12, 10626, 2]
 
-// Module 10602 (BaseSocket)
-import _classCallCheck from "_classCallCheck";
-import _defineProperties from "_defineProperties";
+// Module 10636 (checkRpcVersion)
 import ME from "ME";
 
-let closure_4;
-let closure_5;
-({ RPC_VERSION: closure_4, RPCCloseCodes: closure_5 } = ME);
-const tmp3 = (() => {
-  class BaseSocket {
-    constructor(arg0, arg1, arg2) {
-      tmp = outer1_2(this, BaseSocket);
-      this.transport = arg0;
-      this.version = arg1;
-      this.encoding = arg2;
-      obj = BaseSocket(outer1_1[3]);
-      this.id = obj.uniqueId();
-      obj = { authing: false, scopes: null, accessToken: null };
-      obj.scopes = [];
-      date = new Date(0);
-      obj.expires = date;
-      this.authorization = obj;
-      this.application = { id: null, name: null, icon: null };
-      abortController = new AbortController();
-      this.abortController = abortController;
-      checkRpcVersionResult = this.checkRpcVersion(arg1);
-      return;
-    }
+let c3;
+let obj1;
+({ RPC_VERSION: obj1, RPCCloseCodes: c3 } = ME);
+const result = require("prototype").fileFinishedImporting("modules/rpc/transports/BaseSocket.tsx");
+class BaseSocket {
+  constructor(arg0, arg1, arg2) {
+    obj = Object.create(new.target.prototype);
+    obj2 = require("apply");
+    obj[0] = obj2.uniqueId();
+    obj = { authing: false, scopes: [], accessToken: null, expires: null };
+    date = new Date(0);
+    obj[3] = date;
+    obj[1] = obj;
+    obj[2] = { id: null, name: null, icon: null };
+    abortController = new AbortController();
+    obj[3] = abortController;
+    obj.transport = global;
+    obj.version = require;
+    obj.encoding = importDefault;
+    checkRpcVersionResult = obj.checkRpcVersion(require);
+    return obj;
   }
-  const items = [
-    {
-      key: "checkRpcVersion",
-      value(arg0) {
-        let tmp2 = BaseSocket(outer1_1[4]);
-        tmp2 = new tmp2({ closeCode: outer1_5.INVALID_VERSION }, "Invalid Version: " + arg0);
-        throw tmp2;
-      }
-    }
-  ];
-  return callback(BaseSocket, items);
-})();
-const result = require("ME").fileFinishedImporting("modules/rpc/transports/BaseSocket.tsx");
+}
+BaseSocket.prototype["checkRpcVersion"] = function checkRpcVersion(version) {
+  let tmp2 = importDefault(10626);
+  tmp2 = new tmp2({ closeCode: constants.INVALID_VERSION }, "Invalid Version: " + version);
+  throw tmp2;
+};
 
-export default tmp3;
+export default BaseSocket;

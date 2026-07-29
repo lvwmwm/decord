@@ -1,63 +1,65 @@
-// Module ID: 13904
-// Function ID: 106359
-// Name: useActionTotalsForDisplayType
-// Dependencies: [5775, 5776, 624, 5837, 5651, 2]
-// Exports: useActionsForDisplayType, useFormattedTotalForDisplayType, useHasActionForAnyDisplayType
+// Module ID: 13925
+// Function ID: 13926
+// Name: useActionsForDisplayType
+// Dependencies: [5793, 5794, 647, 5855, 5669, 2]
+// Exports: useActionTotalsForDisplayType, useActionsForDisplayType, useFormattedTotalForDisplayType, useHasActionForAnyDisplayType
 
-// Module 13904 (useActionTotalsForDisplayType)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 13925 (useActionsForDisplayType)
+import freshTeenActivityWithMap from "freshTeenActivityWithMap";
 import { TeenActionDisplayType } from "items";
 
 const require = arg1;
-function useActionTotalsForDisplayType(displayType) {
-  const _require = displayType;
-  const items = [_isNativeReflectConstruct];
-  return _require(624).useStateFromStores(items, () => outer1_2.getTotalForDisplayType(closure_0));
-}
 let result = require("defaultAreStatesEqual").fileFinishedImporting("modules/parent_tools/hooks/useFamilyCenterActivities.tsx");
 
 export const useActionsForDisplayType = function useActionsForDisplayType(displayType) {
   const _require = displayType;
-  const items = [_isNativeReflectConstruct];
-  return _require(624).useStateFromStoresArray(items, () => outer1_2.getActionsForDisplayType(closure_0));
+  const items = [freshTeenActivityWithMap];
+  return _require(647).useStateFromStoresArray(items, () => outer1_2.getActionsForDisplayType(closure_0));
 };
-export { useActionTotalsForDisplayType };
+export const useActionTotalsForDisplayType = function useActionTotalsForDisplayType(displayType) {
+  const _require = displayType;
+  const items = [freshTeenActivityWithMap];
+  return _require(647).useStateFromStores(items, () => outer1_2.getTotalForDisplayType(closure_0));
+};
 export const useHasActionForAnyDisplayType = function useHasActionForAnyDisplayType() {
-  const items = [_isNativeReflectConstruct];
-  return require(624) /* defaultAreStatesEqual */.useStateFromStores(items, () => {
-    const values = Object.values(outer1_3);
-    return values.some((arg0) => outer2_2.getTotalForDisplayType(arg0) > 0);
+  const items = [freshTeenActivityWithMap];
+  return require(647) /* defaultAreStatesEqual */.useStateFromStores(items, () => {
+    const values = Object.values(closure_3);
+    return values.some((closure_0) => totalForDisplayType.getTotalForDisplayType(closure_0) > 0);
   });
 };
 export const useFormattedTotalForDisplayType = function useFormattedTotalForDisplayType(displayType) {
-  const tmp = useActionTotalsForDisplayType(displayType);
-  let num = 0;
-  if (null != tmp) {
-    num = tmp;
+  const _require = displayType;
+  const items = [freshTeenActivityWithMap];
+  let num = _require(647).useStateFromStores(items, () => outer1_2.getTotalForDisplayType(closure_0));
+  if (num == null) {
+    num = 0;
   }
   if (displayType === TeenActionDisplayType.TOTAL_VOICE_MINUTES) {
-    return require(5837) /* getActivityTypeTextConfigs */.formatTotalTime(num);
-  } else if (displayType === TeenActionDisplayType.PURCHASES) {
-    const totalSpendAmount = store.getTotalSpendAmount();
-    const totalSpendCurrency = store.getTotalSpendCurrency();
+    let tmpResult = tmp(5855);
+    return tmpResult.formatTotalTime(num);
+  } else if (displayType === tmp3.PURCHASES) {
+    const totalSpendAmount = obj2.getTotalSpendAmount();
+    const totalSpendCurrency = obj2.getTotalSpendCurrency();
     let result = num;
     if (null != totalSpendAmount) {
       result = num;
       if (null != totalSpendCurrency) {
-        result = require(5651) /* formatSingleCurrencyPrice */.shortenAndFormatPrice(totalSpendAmount, totalSpendCurrency);
-        const obj2 = require(5651) /* formatSingleCurrencyPrice */;
+        tmpResult = tmp(5669);
+        result = tmpResult.shortenAndFormatPrice(totalSpendAmount, totalSpendCurrency);
       }
     }
     return result;
-  } else if (displayType === TeenActionDisplayType.GIFTS) {
-    const totalGiftValue = store.getTotalGiftValue();
+  } else if (displayType === tmp3.GIFTS) {
+    const totalGiftValue = obj2.getTotalGiftValue();
     let result1 = num;
     if (null != totalGiftValue) {
-      result1 = require(5651) /* formatSingleCurrencyPrice */.shortenAndFormatPrice(totalGiftValue.amount, totalGiftValue.currency);
-      const obj = require(5651) /* formatSingleCurrencyPrice */;
+      result1 = tmp(5669).shortenAndFormatPrice(totalGiftValue.amount, totalGiftValue.currency);
+      const tmpResult1 = tmp(5669);
     }
     return result1;
   } else {
     return num;
   }
+  const obj = _require(647);
 };

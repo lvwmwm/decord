@@ -1,224 +1,177 @@
-// Module ID: 10450
-// Function ID: 80571
-// Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 1348, 1838, 4237, 3802, 1907, 1850, 4986, 1353, 4982, 653, 3798, 9056, 4992, 4355, 4985, 636, 566, 686, 2]
+// Module ID: 10474
+// Function ID: 10475
+// Name: handleUpdateActivity
+// Dependencies: [1372, 1862, 4261, 3826, 1931, 1874, 5008, 1377, 5004, 676, 3822, 9080, 5014, 4380, 5007, 659, 589, 709, 2]
 
-// Module 10450 (_isNativeReflectConstruct)
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import calculateElevatedPermissions from "calculateElevatedPermissions";
-import sortKey from "sortKey";
-import computeDefaultGroupDmNameFromUserIds from "computeDefaultGroupDmNameFromUserIds";
-import closure_9 from "_isNativeReflectConstruct";
-import closure_10 from "_createForOfIteratorHelperLoose";
-import closure_11 from "_isNativeReflectConstruct";
-import closure_12 from "_isNativeReflectConstruct";
-import closure_13 from "_isNativeReflectConstruct";
-import closure_14 from "_isNativeReflectConstruct";
-import closure_15 from "_isNativeReflectConstruct";
-import closure_16 from "_isNativeReflectConstruct";
+// Module 10474 (handleUpdateActivity)
+import ensureGuildLoaded from "ensureGuildLoaded";
+import createGuildRecordFromRust from "createGuildRecordFromRust";
+import createRTCConnection from "createRTCConnection";
+import upsertRelationship from "upsertRelationship";
+import handleConnectionOpen from "handleConnectionOpen";
+import mergeGuildAvatar from "mergeGuildAvatar";
+import getActiveStageChannelIds from "getActiveStageChannelIds";
+import handleStageInstanceCreateOrUpdate from "handleStageInstanceCreateOrUpdate";
 import { STAGE_APPLICATION_ID } from "MAX_STAGE_TOPIC_LENGTH";
 import ME from "ME";
+import { Store } from "initialize";
 
-let closure_18;
-let closure_19;
-let closure_20;
-let closure_21;
+let closure_14;
+let closure_15;
+let closure_16;
+let map1;
 const require = arg1;
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
-  }
-  const result = _isNativeReflectConstruct();
-}
 function handleUpdateActivity() {
-  const tmp = (function buildActivity() {
-    const voiceChannelId = outer1_13.getVoiceChannelId();
-    if (null == voiceChannelId) {
-      return null;
-    } else {
-      const stageInstanceByChannel = outer1_16.getStageInstanceByChannel(voiceChannelId);
-      if (null == stageInstanceByChannel) {
-        return null;
-      } else {
-        const channel = outer1_9.getChannel(voiceChannelId);
-        if (null == channel) {
-          return null;
-        } else {
-          if (obj10.canEveryone(outer1_20.VIEW_CHANNEL, channel)) {
-            const guild = outer1_10.getGuild(channel.getGuildId());
-            if (null == guild) {
-              return null;
-            } else {
-              const features = guild.features;
-              if (features.has(outer1_19.DISCOVERABLE)) {
-                let obj = outer1_0(outer1_3[16]);
-                const result = obj.packStageChannelPartyId(channel, stageInstanceByChannel);
-                let id;
-                if (null != tmp) {
-                  const party = tmp.party;
-                  if (null != party) {
-                    id = party.id;
-                  }
+  voiceChannelId = voiceChannelId.getVoiceChannelId();
+  let tmp2 = null;
+  if (null != voiceChannelId) {
+    stageInstanceByChannel = stageInstanceByChannel.getStageInstanceByChannel(voiceChannelId);
+    tmp2 = null;
+    if (null != stageInstanceByChannel) {
+      channel = channel.getChannel(voiceChannelId);
+      tmp2 = null;
+      if (null != channel) {
+        let obj1 = importAll(3822);
+        tmp2 = null;
+        if (obj1.canEveryone(constants2.VIEW_CHANNEL, channel)) {
+          guild = guild.getGuild(channel.getGuildId());
+          tmp2 = null;
+          if (null != guild) {
+            const features = guild.features;
+            tmp2 = null;
+            if (features.has(constants.DISCOVERABLE)) {
+              let obj2 = require(9080) /* unpackStageChannelParty */;
+              const result = obj2.packStageChannelPartyId(channel, stageInstanceByChannel);
+              let id;
+              if (_null != null) {
+                const party = _null.party;
+                if (party != null) {
+                  id = party.id;
                 }
-                let tmp8 = null;
-                if (id === result) {
-                  tmp8 = tmp;
-                }
-                const mutableParticipants = outer1_15.getMutableParticipants(channel.id, outer1_0(outer1_3[17]).StageChannelParticipantNamedIndex.SPEAKER);
-                const length = mutableParticipants.filter((type) => type.type === outer2_0(outer2_3[17]).StageChannelParticipantTypes.STREAM).length;
-                const diff = mutableParticipants.length - length;
-                let size;
-                const diff1 = outer1_15.getParticipantCount(voiceChannelId) - length;
-                if (null != tmp8) {
-                  const party2 = tmp8.party;
-                  if (null != party2) {
-                    size = party2.size;
-                  }
-                }
-                let num3 = 0;
-                if (null != size) {
-                  num3 = tmp8.party.size[1];
-                }
-                obj = { application_id: outer1_17 };
-                let topic = stageInstanceByChannel.topic;
-                if (null == topic) {
-                  topic = channel.topic;
-                }
-                if (null == topic) {
-                  let obj2 = outer1_0(outer1_3[18]);
-                  topic = obj2.computeChannelName(channel, outer1_14, outer1_12);
-                }
-                obj.name = topic;
-                obj.type = outer1_0(outer1_3[19]).getStageHasMedia(channel.id) ? outer1_18.WATCHING : outer1_18.LISTENING;
-                obj = {};
-                let start;
-                if (null != tmp8) {
-                  const timestamps = tmp8.timestamps;
-                  if (null != timestamps) {
-                    start = timestamps.start;
-                  }
-                }
-                if (null == start) {
-                  const _Date = Date;
-                  const date = new Date();
-                  start = date.getTime();
-                }
-                obj.start = start;
-                obj.timestamps = obj;
-                const obj1 = {};
-                const icon = guild.icon;
-                let tmp29;
-                if (null != icon) {
-                  tmp29 = icon;
-                }
-                obj1.small_image = tmp29;
-                obj1.small_text = guild.name;
-                obj.assets = obj1;
-                obj2 = { id: result };
-                const items = [diff, ];
-                const _Math = Math;
-                items[1] = Math.max(diff1, num3);
-                obj2.size = items;
-                obj.party = obj2;
-                return obj;
-              } else {
-                return null;
               }
+              let tmp15 = null;
+              if (id === result) {
+                tmp15 = _null;
+              }
+              const mutableParticipants = store.getMutableParticipants(channel.id, tmp12(5014).StageChannelParticipantNamedIndex.SPEAKER);
+              const length = mutableParticipants.filter((type) => type.type === callback(table[12]).StageChannelParticipantTypes.STREAM).length;
+              const diff = mutableParticipants.length - length;
+              let size;
+              const diff1 = store.getParticipantCount(voiceChannelId) - length;
+              if (tmp15 != null) {
+                const party2 = tmp15.party;
+                if (party2 != null) {
+                  size = party2.size;
+                }
+              }
+              let num = 0;
+              if (null != size) {
+                num = tmp15.party.size[1];
+              }
+              let obj = { application_id: null, name: null, type: null, timestamps: null, assets: null, party: null };
+              obj[0] = STAGE_APPLICATION_ID;
+              let topic = stageInstanceByChannel.topic;
+              if (topic == null) {
+                topic = channel.topic;
+              }
+              if (topic == null) {
+                let tmp12Result = tmp12(4380);
+                topic = tmp12Result.computeChannelName(channel, mergeGuildAvatar, upsertRelationship);
+              }
+              obj[1] = topic;
+              tmp12Result = tmp12(5007);
+              obj[2] = tmp12Result.getStageHasMedia(channel.id) ? closure_13.WATCHING : closure_13.LISTENING;
+              let start;
+              if (tmp15 != null) {
+                const timestamps = tmp15.timestamps;
+                if (timestamps != null) {
+                  start = timestamps.start;
+                }
+              }
+              if (start == null) {
+                const _Date = Date;
+                const date = new Date();
+                start = date.getTime();
+              }
+              obj = { start: null };
+              obj[0] = start;
+              obj[3] = obj;
+              const icon = guild.icon;
+              obj1 = { small_image: null, small_text: null };
+              obj1[0] = icon;
+              obj1[1] = guild.name;
+              obj[4] = obj1;
+              obj2 = { id: null, size: null };
+              obj2[0] = result;
+              const items = [diff, ];
+              const _Math = Math;
+              items[1] = Math.max(diff1, num);
+              obj2[1] = items;
+              obj[5] = obj2;
+              tmp2 = obj;
             }
-          } else {
-            return null;
           }
-          obj10 = outer1_2(outer1_3[15]);
         }
       }
     }
-  })();
-  let flag = !importDefault(636)(tmp, c22);
-  if (flag) {
-    c22 = tmp;
+  }
+  const tmp30 = importDefault(659)(tmp2, _null);
+  let flag = !tmp30;
+  if (!tmp30) {
+    _null = tmp2;
     flag = true;
   }
   return flag;
 }
-({ ActivityTypes: closure_18, GuildFeatures: closure_19, Permissions: closure_20, RTCConnectionStates: closure_21 } = ME);
-let c22 = null;
-let tmp3 = ((Store) => {
-  class StageChannelSelfRichPresenceStore {
-    constructor() {
-      self = this;
-      tmp = outer1_4(this, StageChannelSelfRichPresenceStore);
-      obj = outer1_7(StageChannelSelfRichPresenceStore);
-      tmp2 = outer1_6;
-      if (outer1_23()) {
-        tmp6 = globalThis;
-        _Reflect = Reflect;
-        tmp7 = outer1_7;
-        tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, outer1_7(self).constructor);
-      } else {
-        tmp3 = arguments;
-        tmp4 = arguments;
-        constructResult = obj(...arguments);
-      }
-      return tmp2(self, constructResult);
-    }
-  }
-  callback2(StageChannelSelfRichPresenceStore, Store);
-  let obj = {
-    key: "initialize",
-    value() {
-      this.waitFor(outer1_9, outer1_10, outer1_11, outer1_13, outer1_15, outer1_16);
-    }
-  };
-  const items = [obj, ];
-  obj = {
-    key: "getActivity",
-    value() {
-      return outer1_22;
-    }
-  };
-  items[1] = obj;
-  return callback(StageChannelSelfRichPresenceStore, items);
-})(require("initialize").Store);
-tmp3.displayName = "StageChannelSelfRichPresenceStore";
-tmp3 = new tmp3(require("dispatcher"), {
+({ ActivityTypes: map1, GuildFeatures: closure_14, Permissions: closure_15, RTCConnectionStates: closure_16 } = ME);
+let c17 = null;
+class StageChannelSelfRichPresenceStore extends Store {
+}
+const prototype = StageChannelSelfRichPresenceStore.prototype;
+prototype["initialize"] = function initialize() {
+  this.waitFor(ensureGuildLoaded, createGuildRecordFromRust, createRTCConnection, handleConnectionOpen, getActiveStageChannelIds, handleStageInstanceCreateOrUpdate);
+};
+prototype["getActivity"] = function getActivity() {
+  return c17;
+};
+StageChannelSelfRichPresenceStore.displayName = "StageChannelSelfRichPresenceStore";
+const stageChannelSelfRichPresenceStore = new StageChannelSelfRichPresenceStore(require("dispatcher"), {
   CONNECTION_OPEN: handleUpdateActivity,
   STAGE_INSTANCE_CREATE: handleUpdateActivity,
   STAGE_INSTANCE_UPDATE: handleUpdateActivity,
   STAGE_INSTANCE_DELETE: handleUpdateActivity,
   VOICE_CHANNEL_SELECT: handleUpdateActivity,
   RTC_CONNECTION_STATE: function handleUpdateRTCConnection(state) {
-    let tmp;
-    if (null != _null) {
+    let num;
+    if (_null != null) {
       const party = _null.party;
-      if (null != party) {
+      if (party != null) {
         const size = party.size;
-        if (null != size) {
-          tmp = size[1];
+        if (size != null) {
+          num = size[1];
         }
       }
     }
-    let num2 = 0;
-    if (null != tmp) {
-      num2 = tmp;
+    if (num == null) {
+      num = 0;
     }
-    let tmp3 = !tmp2;
-    if (!(state.state !== constants.RTC_CONNECTED || num2 > 0)) {
-      tmp3 = handleUpdateActivity();
+    let tmp = state.state !== constants3.RTC_CONNECTED;
+    if (!tmp) {
+      tmp = num > 0;
     }
-    return tmp3;
+    let tmp2 = !tmp;
+    if (!tmp) {
+      tmp2 = handleUpdateActivity();
+    }
+    return tmp2;
   },
   VOICE_STATE_UPDATES: function handleVoiceStateUpdates(voiceStates) {
     voiceStates = voiceStates.voiceStates;
     let _require;
-    if (null != c22) {
-      const result = _require(9056).unpackStageChannelParty(c22);
+    if (null != c17) {
+      const result = _require(9080).unpackStageChannelParty(c17);
       _require = result;
-      const obj = _require(9056);
+      const obj = _require(9080);
       if (tmp5) {
         handleUpdateActivity();
       }
@@ -226,6 +179,6 @@ tmp3 = new tmp3(require("dispatcher"), {
     }
   }
 });
-let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/stage_channels/StageChannelSelfRichPresenceStore.tsx");
+let result = require("createRTCConnection").fileFinishedImporting("modules/stage_channels/StageChannelSelfRichPresenceStore.tsx");
 
-export default tmp3;
+export default stageChannelSelfRichPresenceStore;

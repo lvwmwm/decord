@@ -1,25 +1,25 @@
-// Module ID: 14404
-// Function ID: 110176
+// Module ID: 14426
+// Function ID: 14427
 // Name: toggle
-// Dependencies: [1280, 7733, 566, 6186, 10099, 1212, 2]
+// Dependencies: [1304, 7756, 589, 6206, 10120, 1236, 2]
 
-// Module 14404 (toggle)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 14426 (toggle)
+import CHANNEL_SIDEBAR_WIDTH from "CHANNEL_SIDEBAR_WIDTH";
 import createToggle from "createToggle";
 
 const require = arg1;
 createToggle = {
   useTitle() {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(require(1212) /* getSystemLocale */.t["99tBAC"]);
+    const intl = require(1236) /* getSystemLocale */.intl;
+    return intl.string(require(1236) /* getSystemLocale */.t["99tBAC"]);
   },
   parent: require("MobileSetting").MobileSetting.CHAT,
   useValue: function useSaveCameraUploadsToDeviceValue() {
-    const items = [_isNativeReflectConstruct];
-    return require(566) /* initialize */.useStateFromStores(items, () => outer1_3.saveCameraUploadsToDevice);
+    const items = [CHANNEL_SIDEBAR_WIDTH];
+    return require(589) /* initialize */.useStateFromStores(items, () => obj.saveCameraUploadsToDevice);
   },
   onValueChange: function onSaveCameraUploadsToDeviceValueChange(saveCameraUploadsToDevice) {
-    let obj = importDefault(6186);
+    let obj = importDefault(6206);
     obj = { saveCameraUploadsToDevice };
     const result = obj.updatedUnsyncedSettings(obj);
   }

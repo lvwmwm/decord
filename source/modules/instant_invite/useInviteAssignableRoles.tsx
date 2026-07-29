@@ -1,38 +1,36 @@
-// Module ID: 16602
-// Function ID: 129230
+// Module ID: 16637
+// Function ID: 16638
 // Name: useInviteAssignableRoles
-// Dependencies: [31, 1912, 1911, 3793, 1850, 653, 566, 3798, 2]
+// Dependencies: [19, 1936, 1935, 3817, 1874, 676, 589, 3822, 2]
 // Exports: default
 
-// Module 16602 (useInviteAssignableRoles)
-import result from "result";
+// Module 16637 (useInviteAssignableRoles)
+import noop from "noop";
 import { isEveryoneRole } from "GuildRoleRecordTypeTag";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_7 from "_isNativeReflectConstruct";
+import createGuildRoleRecordFromRust from "createGuildRoleRecordFromRust";
+import getUncachedChannelPermissions from "getUncachedChannelPermissions";
+import mergeGuildAvatar from "mergeGuildAvatar";
 import { Permissions } from "ME";
 
 const require = arg1;
-const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/instant_invite/useInviteAssignableRoles.tsx");
+const result = require("createGuildRoleRecordFromRust").fileFinishedImporting("modules/instant_invite/useInviteAssignableRoles.tsx");
 
 export default function useInviteAssignableRoles(arg0) {
   const _require = arg0;
-  const items = [_createForOfIteratorHelperLoose, closure_7, _isNativeReflectConstruct];
+  const items = [createGuildRoleRecordFromRust, mergeGuildAvatar, getUncachedChannelPermissions];
   const items1 = [arg0];
   const stateFromStoresObject = _require(currentUser[6]).useStateFromStoresObject(items, () => {
-    const obj = {};
-    if (null != id) {
-      let sortedRoles = outer1_5.getSortedRoles(id.id);
+    if (null != closure_0) {
+      let sortedRoles = outer1_5.getSortedRoles(tmp.id);
     } else {
       sortedRoles = [];
     }
-    obj.sortedRoles = sortedRoles;
-    obj.currentUser = outer1_7.getCurrentUser();
-    let canResult = null != id;
+    const obj = { sortedRoles, currentUser: outer1_7.getCurrentUser(), canManageRoles: null };
+    let canResult = null != tmp;
     if (canResult) {
-      canResult = outer1_6.can(outer1_8.MANAGE_ROLES, id);
+      canResult = outer1_6.can(outer1_8.MANAGE_ROLES, tmp);
     }
-    obj.canManageRoles = canResult;
+    obj[2] = canResult;
     return obj;
   }, items1);
   let sortedRoles = stateFromStoresObject.sortedRoles;
@@ -43,15 +41,17 @@ export default function useInviteAssignableRoles(arg0) {
     if (null != highestRole) {
       if (null != currentUser) {
         if (canManageRoles) {
-          highestRole = sortedRoles(currentUser[7]).getHighestRole(highestRole, currentUser.id);
+          highestRole = sortedRoles(currentUser[7]).getHighestRole(tmp, tmp2.id);
           return sortedRoles.filter((managed) => {
-            let tmp = !outer2_4(managed);
-            if (tmp) {
-              let tmp2 = !managed.managed;
-              if (tmp2) {
+            const tmp = outer2_4(managed);
+            let tmp2 = !tmp;
+            if (!tmp) {
+              managed = managed.managed;
+              let tmp3 = !managed;
+              if (!managed) {
                 const tags = managed.tags;
                 let guild_connections;
-                if (null != tags) {
+                if (tags != null) {
                   guild_connections = tags.guild_connections;
                 }
                 let isRoleHigherResult = undefined === guild_connections;
@@ -59,11 +59,11 @@ export default function useInviteAssignableRoles(arg0) {
                   const obj = sortedRoles(currentUser[7]);
                   isRoleHigherResult = obj.isRoleHigher(closure_0, outer1_2.id, closure_0, managed);
                 }
-                tmp2 = isRoleHigherResult;
+                tmp3 = isRoleHigherResult;
               }
-              tmp = tmp2;
+              tmp2 = tmp3;
             }
-            return tmp;
+            return tmp2;
           });
         }
       }

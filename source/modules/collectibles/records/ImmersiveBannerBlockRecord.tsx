@@ -1,44 +1,39 @@
-// Module ID: 5820
-// Function ID: 50893
-// Name: ImmersiveBannerBlockRecord
-// Dependencies: [6, 7, 5811, 2]
+// Module ID: 5838
+// Function ID: 5839
+// Name: fromServer
+// Dependencies: [5829, 2]
 
-// Module 5820 (ImmersiveBannerBlockRecord)
-import _classCallCheck from "_classCallCheck";
-import _defineProperties from "_defineProperties";
-
-const require = arg1;
-const tmp2 = (() => {
-  class ImmersiveBannerBlockRecord {
-    constructor(arg0) {
-      self = this;
-      tmp = outer1_2(this, ImmersiveBannerBlockRecord);
-      this.type = ImmersiveBannerBlockRecord(outer1_1[2]).ShopBlockType.IMMERSIVE_BANNER;
-      ({ title: this.title, body: this.body, help_center_url: this.helpCenterUrl, text_color: this.textColor } = arg0);
-      date = undefined;
-      if (null != arg0.end_time) {
-        tmp3 = globalThis;
-        _Date = Date;
-        prototype = Date.prototype;
-        tmp4 = new.target;
-        tmp5 = new.target;
-        date = new Date(arg0.end_time);
-      }
-      self.endTime = date;
-      ({ banner_url: self.bannerUrl, banner_animated_url: self.bannerAnimatedUrl } = arg0);
-      return;
-    }
+// Module 5838 (fromServer)
+let prototype;
+prototype = function ImmersiveBannerBlockRecord(end_time) {
+  const obj = Object.create(new.target.prototype);
+  obj.type = require(5829) /* ShopBlockType */.ShopBlockType.IMMERSIVE_BANNER;
+  ({ title: tmp.title, body: tmp.body, help_center_url: tmp.helpCenterUrl, text_color: tmp.textColor } = end_time);
+  let date;
+  if (null != end_time.end_time) {
+    const _Date = Date;
+    date = new Date(end_time.end_time);
   }
-  const items = [
-    {
-      key: "fromServer",
-      value(end_time) {
-        return new ImmersiveBannerBlockRecord(end_time);
-      }
-    }
-  ];
-  return callback(ImmersiveBannerBlockRecord, null, items);
-})();
-const result = require("ShopBlockType").fileFinishedImporting("modules/collectibles/records/ImmersiveBannerBlockRecord.tsx");
+  obj.endTime = date;
+  ({ banner_url: tmp.bannerUrl, banner_animated_url: tmp.bannerAnimatedUrl } = end_time);
+  return obj;
+}.prototype;
+prototype["fromServer"] = function fromServer(end_time) {
+  if (typeof prototype !== "find") {
+    HermesBuiltin.throwTypeError();
+  }
+  const obj = Object.create(prototype.prototype);
+  obj.type = require(5829) /* ShopBlockType */.ShopBlockType.IMMERSIVE_BANNER;
+  ({ title: tmp2.title, body: tmp2.body, help_center_url: tmp2.helpCenterUrl, text_color: tmp2.textColor } = end_time);
+  let date;
+  if (null != end_time.end_time) {
+    const _Date = Date;
+    date = new Date(end_time.end_time);
+  }
+  obj.endTime = date;
+  ({ banner_url: tmp2.bannerUrl, banner_animated_url: tmp2.bannerAnimatedUrl } = end_time);
+  return obj;
+};
+const result = require("set").fileFinishedImporting("modules/collectibles/records/ImmersiveBannerBlockRecord.tsx");
 
-export const ImmersiveBannerBlockRecord = tmp2;
+export const ImmersiveBannerBlockRecord = prototype;

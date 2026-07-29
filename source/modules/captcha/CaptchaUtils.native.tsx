@@ -1,9 +1,9 @@
-// Module ID: 16070
-// Function ID: 123963
-// Dependencies: [3858, 9448, 566, 4133, 16071, 1935, 9446, 2]
+// Module ID: 16105
+// Function ID: 16106
+// Dependencies: [3882, 9472, 589, 4157, 16106, 1959, 9470, 2]
 
-// Module 16070
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 16105
+import setContent from "setContent";
 import { CAPTCHA_MODAL_KEY } from "CAPTCHA_SERVE_VOLUME_DISTRIBUTION_AGGREGATION_WINDOW_MS";
 
 const require = arg1;
@@ -13,8 +13,8 @@ export default {
   showCaptcha(options) {
     let captchaService;
     let sitekey;
-    let obj = arg2;
     const _require = arg1;
+    let obj = arg2;
     if (arg2 === undefined) {
       obj = {};
     }
@@ -26,13 +26,13 @@ export default {
         return callback({ captcha_key, captcha_rqtoken });
       },
       close() {
-        return outer1_1(outer1_2[3]).hideActionSheet(outer1_4);
+        return callback2(table[3]).hideActionSheet(closure_4);
       }
     };
-    const obj2 = importDefault(4133);
+    const obj2 = importDefault(4157);
     const merged = Object.assign(obj);
     const merged1 = Object.assign(options.options);
-    obj2.openLazy(_require(1935)(16071, dependencyMap.paths), CAPTCHA_MODAL_KEY, obj);
+    obj2.openLazy(_require(1959)(16106, dependencyMap.paths), CAPTCHA_MODAL_KEY, obj);
   },
   showCaptchaAsync(nextResult1) {
     let c1;
@@ -59,10 +59,8 @@ export default {
           return callback({ captcha_key, captcha_rqtoken, captcha_session_id: outer1_3 });
         },
         onReject(arg0) {
-          if (arg0 === obj(9446).CaptchaError.CANCEL) {
-            const CaptchaCancelError = obj(9446).CaptchaCancelError;
-            const prototype2 = CaptchaCancelError.prototype;
-            const captchaCancelError = new CaptchaCancelError();
+          if (arg0 === obj(9470).CaptchaError.CANCEL) {
+            const captchaCancelError = new obj(9470).CaptchaCancelError();
             callback2(captchaCancelError);
           } else {
             const _Error = Error;
@@ -72,7 +70,7 @@ export default {
           }
         },
         close() {
-          return callback2(4133).hideActionSheet(c4);
+          return callback2(4157).hideActionSheet(closure_4);
         }
       };
       const merged = Object.assign(closure_0);
@@ -81,7 +79,7 @@ export default {
     });
   },
   useIsCaptchaModalOpen() {
-    const items = [_isNativeReflectConstruct];
-    return require(566) /* initialize */.useStateFromStores(items, () => outer1_3.getKey() === outer1_4);
+    const items = [setContent];
+    return require(589) /* initialize */.useStateFromStores(items, () => key.getKey() === closure_4);
   }
 };

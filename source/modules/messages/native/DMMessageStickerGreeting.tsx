@@ -1,218 +1,326 @@
-// Module ID: 11399
-// Function ID: 88408
+// Module ID: 11423
+// Function ID: 11424
 // Name: DMMessageStickerGreeting
-// Dependencies: [5, 57, 31, 27, 5070, 4384, 1850, 33, 4165, 689, 3976, 3869, 4009, 3866, 11400, 11401, 5695, 1212, 566, 663, 4004, 11402, 9598, 4026, 4166, 1273, 9597, 4589, 4695, 9613, 4161, 4578, 2]
+// Dependencies: [5, 32, 19, 17, 5092, 4407, 1874, 21, 4189, 712, 4000, 3893, 4033, 3890, 11424, 11425, 5713, 1236, 589, 686, 4028, 11426, 9620, 4050, 4190, 1297, 9619, 4611, 4717, 9635, 4185, 4600, 2]
 // Exports: default
 
-// Module 11399 (DMMessageStickerGreeting)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import _slicedToArray from "_slicedToArray";
-import Button from "Button";
-import { View } from "LinearGradient";
-import closure_7 from "_isNativeReflectConstruct";
-import closure_8 from "_isNativeReflectConstruct";
-import closure_9 from "_isNativeReflectConstruct";
-import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+// Module 11423 (DMMessageStickerGreeting)
+import reinjectEphemerals from "reinjectEphemerals";
+import set from "set";
+import closure_5 from "set";
+import { View } from "getSystemLocale";
+import loadSavedGuildStickers from "loadSavedGuildStickers";
+import closure_8 from "reinjectEphemerals";
+import mergeGuildAvatar from "mergeGuildAvatar";
+import jsxProd from "MAX_MESSAGES_ALLOWED_FOR_GREETING";
+import createCacheKey from "createCacheKey";
 
-let closure_10;
-let closure_11;
+let c10;
 let closure_12;
+let unpackModuleId;
 const require = arg1;
-({ jsx: closure_10, jsxs: closure_11, Fragment: closure_12 } = jsxProd);
-let closure_13 = _createForOfIteratorHelperLoose.createStyles((arg0) => {
+({ jsx: c10, jsxs: unpackModuleId, Fragment: closure_12 } = jsxProd);
+let closure_13 = createCacheKey.createStyles((arg0) => {
   let BACKGROUND_BASE_LOWER = arg0;
-  let obj = {};
-  obj = { backgroundColor: null, alignItems: "center", paddingHorizontal: 16, paddingBottom: 16, paddingTop: 8 };
-  if (null == arg0) {
-    BACKGROUND_BASE_LOWER = importDefault(689).colors.BACKGROUND_BASE_LOWER;
+  if (arg0 == null) {
+    BACKGROUND_BASE_LOWER = importDefault(712).colors.BACKGROUND_BASE_LOWER;
   }
-  obj.backgroundColor = BACKGROUND_BASE_LOWER;
-  obj.container = obj;
-  obj.stickerContainer = { paddingBottom: 16 };
-  obj = { flexDirection: "row", backgroundColor: importDefault(689).colors.BACKGROUND_BASE_LOWEST, justifyContent: "center", alignItems: "center", gap: 8, height: 48, paddingHorizontal: 16, borderRadius: importDefault(689).radii.xxl };
-  obj.toastContainer = obj;
-  obj.toastContent = { lineHeight: 20 };
-  obj.gradient = { position: "absolute", right: 0, left: 0, top: 0, height: 30 };
+  let obj = { container: { backgroundColor: BACKGROUND_BASE_LOWER, alignItems: "center", paddingHorizontal: 16, paddingBottom: 16, paddingTop: 8 }, stickerContainer: { paddingBottom: 16 }, toastContainer: null, toastContent: null, gradient: null };
+  obj = { flexDirection: "row", backgroundColor: importDefault(712).colors.BACKGROUND_BASE_LOWEST, justifyContent: "center", alignItems: "center", gap: 8, height: 48, paddingHorizontal: 16, borderRadius: importDefault(712).radii.xxl };
+  obj[2] = obj;
+  obj[3] = { lineHeight: 20 };
+  obj[4] = { position: "absolute", right: 0, left: 0, top: 0, height: 30 };
   return obj;
 });
-const END = require("colorToHex").GradientPercentage.END;
-let closure_15 = { code: "function DMMessageStickerGreetingTsx1(){const{styles,isRendered,hasInputText,hasMessages,HEIGHT_COMPACT,HEIGHT_FULL,withDelay,withTiming,STANDARD_EASING}=this.__closure;const gradientOverlayOffset=styles.gradient.height;const hasHeight=isRendered&&!hasInputText;const heightExpanded=(hasMessages?HEIGHT_COMPACT:HEIGHT_FULL)-1;const targetHeight=hasHeight?heightExpanded+gradientOverlayOffset:0;const targetMargin=hasHeight?-gradientOverlayOffset:0;function generateAnimationConfig(value){return withDelay(300,withTiming(value,{easing:STANDARD_EASING,duration:250}));}return{justifyContent:'flex-end',overflow:'hidden',marginTop:generateAnimationConfig(targetMargin),height:generateAnimationConfig(targetHeight)};}" };
-const result = require("result").fileFinishedImporting("modules/messages/native/DMMessageStickerGreeting.tsx");
+let c14 = "749054660769218631";
+const END = require("getGradientColorByPercentage").GradientPercentage.END;
+let closure_16 = { code: "function DMMessageStickerGreetingTsx1(){const{styles,isRendered,hasInputText,hasMessages,HEIGHT_COMPACT,HEIGHT_FULL,withDelay,withTiming,STANDARD_EASING}=this.__closure;const gradientOverlayOffset=styles.gradient.height;const hasHeight=isRendered&&!hasInputText;const heightExpanded=(hasMessages?HEIGHT_COMPACT:HEIGHT_FULL)-1;const targetHeight=hasHeight?heightExpanded+gradientOverlayOffset:0;const targetMargin=hasHeight?-gradientOverlayOffset:0;function generateAnimationConfig(value){return withDelay(300,withTiming(value,{easing:STANDARD_EASING,duration:250}));}return{justifyContent:'flex-end',overflow:'hidden',marginTop:generateAnimationConfig(targetMargin),height:generateAnimationConfig(targetHeight)};}" };
+const result = require("noop").fileFinishedImporting("modules/messages/native/DMMessageStickerGreeting.tsx");
 
 export default function DMMessageStickerGreeting(channel) {
+  let tmp17;
+  let tmp18;
   channel = channel.channel;
+  let _require = channel;
   const hasInputText = channel.hasInputText;
-  let showConvoStarterInDM;
-  let isRendered;
-  let obj = channel(str[10]);
-  str = callback2(obj.useGradientValue(END));
-  let obj1 = channel(str[18]);
-  let items = [closure_8];
+  let first = hasInputText;
+  let dependencyMap;
+  let first1;
+  let callback;
+  let React;
+  let Text = _require;
+  let tmp = dependencyMap;
+  let obj = _require(4000);
+  let toastContent = callback3(obj.useGradientValue(END));
+  dependencyMap = toastContent;
+  let obj1 = _require(589);
+  const items = [closure_8];
   const stateFromStores = obj1.useStateFromStores(items, () => {
-    const messages = outer1_8.getMessages(channel.id);
-    return messages.filter((type) => type.type !== channel(str[19]).MessageTypes.FRIEND_REQUEST_ACCEPTED).length > 0;
+    const messages = outer1_8.getMessages(_undefined.id);
+    return messages.filter((type) => type.type !== callback(table[19]).MessageTypes.FRIEND_REQUEST_ACCEPTED).length > 0;
   });
-  let obj2 = channel(str[18]);
-  let items1 = [closure_9];
-  const stateFromStores1 = obj2.useStateFromStores(items1, () => outer1_9.getUser(channel.getRecipientId()));
-  let obj3 = hasInputText(str[20]);
+  first1 = stateFromStores;
+  let obj2 = _require(589);
+  const items1 = [mergeGuildAvatar];
+  let tmp5 = first;
+  const stateFromStores1 = obj2.useStateFromStores(items1, () => outer1_9.getUser(_undefined.getRecipientId()));
+  let obj3 = first(4028);
   let name = obj3.useName(stateFromStores1);
-  let Text = null;
-  if (null == name) {
-    const intl = channel(str[17]).intl;
-    name = intl.string(channel(str[17]).t.y1Wu2f);
+  if (name == null) {
+    let intl = Text(1236).intl;
+    name = intl.string(Text(1236).t.y1Wu2f);
   }
-  const intl2 = channel(str[17]).intl;
-  obj = { username: name };
-  const formatToPlainStringResult = intl2.formatToPlainString(channel(str[17]).t.m0zYbV, obj);
-  let obj5 = channel(str[21]);
-  showConvoStarterInDM = obj5.useShowConvoStarterInDM(channel);
-  let obj6 = channel(str[18]);
-  const items2 = [closure_7];
+  const intl2 = Text(1236).intl;
+  const formatToPlainStringResult = intl2.formatToPlainString(Text(1236).t.m0zYbV, { username: name });
+  const showConvoStarterInDM = Text(11426).useShowConvoStarterInDM(channel);
+  callback = showConvoStarterInDM;
+  const TextResult = Text(11426);
+  const tmp2 = END;
+  const items2 = [loadSavedGuildStickers];
   const items3 = [showConvoStarterInDM];
-  const stateFromStores2 = obj6.useStateFromStores(items2, () => {
+  const stateFromStores2 = Text(589).useStateFromStores(items2, () => {
     let stickerById = null;
-    if (showConvoStarterInDM) {
-      stickerById = outer1_7.getStickerById("749054660769218631");
+    if (set) {
+      stickerById = outer1_7.getStickerById(outer1_14);
     }
     return stickerById;
   }, items3);
   const items4 = [showConvoStarterInDM];
-  let effect = isRendered.useEffect(() => {
-    if (showConvoStarterInDM) {
-      const stickerPack = channel(str[22]).fetchStickerPack("847199849233514549", true);
-      const obj = channel(str[22]);
+  const effect = React.useEffect(() => {
+    if (set) {
+      const stickerPack = _undefined(lib[22]).fetchStickerPack("847199849233514549", true);
+      const obj = _undefined(lib[22]);
     }
   }, items4);
-  let items7 = (function useHandleWavePress(channel) {
-    let closure_0 = channel;
-    const tmp2 = showConvoStarterInDM(isRendered.useState(null), 2);
-    const first = tmp2[0];
-    let closure_2 = tmp2[1];
-    const tmp4 = showConvoStarterInDM(isRendered.useState(false), 2);
-    const first1 = tmp4[0];
-    let _slicedToArray = tmp4[1];
-    const items = [channel.id];
-    const effect = isRendered.useEffect(() => {
-      callback(null);
-    }, items);
-    // CreateGeneratorClosureLongIndex (0x67)
-    const items1 = [first1, first, channel.id];
-    return isRendered.useCallback(stateFromStores(tmp), items1);
-  })(channel);
-  const tmp13 = (function useIsRendered() {
-    const tmp = showConvoStarterInDM(isRendered.useState(false), 2);
-    const channel = tmp2;
-    const items = [tmp[1]];
-    return {
-      isRendered: tmp[0],
-      setIsRendered: isRendered.useCallback(() => {
-        tmp2(true);
-      }, items)
-    };
-  })();
-  isRendered = tmp13.isRendered;
-  let obj7 = channel(str[23]);
-  class O {
-    constructor() {
-      generateAnimationConfig = function generateAnimationConfig(value) {
-        let obj = channel(str[23]);
-        obj = { easing: channel(str[25]).STANDARD_EASING, duration: 250 };
-        return obj.withDelay(300, channel(str[24]).withTiming(value, obj));
-      };
-      height = closure_2.gradient.height;
-      tmp = isRendered;
-      if (isRendered) {
-        tmp2 = hasInputText;
-        tmp = !hasInputText;
+  _require = channel;
+  first = undefined;
+  dependencyMap = undefined;
+  first1 = undefined;
+  callback = undefined;
+  const tmp11 = callback(React.useState(null), 2);
+  first = tmp11[0];
+  dependencyMap = tmp11[1];
+  const tmp13 = callback(React.useState(false), 2);
+  first1 = tmp13[0];
+  callback = tmp13[1];
+  const items5 = [channel.id];
+  const effect1 = React.useEffect(() => {
+    lib(null);
+  }, items5);
+  const items6 = [first1, first, channel.id];
+  callback = React.useCallback(first1(function*() {
+    if (c5 === 2) {
+      c5 = 3;
+      HermesBuiltin.throwTypeError();
+    } else if (tmp6 === 3) {
+      if (arg0 === 1) {
+        throw arg1;
+      } else if (arg0 === 2) {
+        let obj = { value: null, done: true };
+        obj[0] = arg1;
+        return obj;
+      } else {
+        return { value: "HermesInternal", done: null };
       }
-      num = 0;
-      if (tmp) {
-        tmp3 = useStateFromStores;
-        num2 = 180;
-        if (useStateFromStores) {
-          num2 = 72;
+    } else {
+      try {
+        c5 = 2;
+        let tmp7 = v0;
+        if (0 === v0) {
+          if (arg0 === 1) {
+            c5 = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            c5 = 3;
+            obj = { value: null, done: true };
+            obj[0] = arg1;
+            return obj;
+          } else {
+            let closure_1 = tmp3;
+            let showErrorToast = tmp7;
+            showErrorToast = function showErrorToast(intl) {
+              if (callback !== intl) {
+                tmp30(intl);
+              }
+              let obj = callback(tmp30[13]);
+              obj = { key: "HANDLE_WAVE_PRESS_TOAST", content: intl, icon: callback(tmp30[14]) };
+              obj.open(obj);
+            };
+            tmp7 = c3;
+            if (!c3) {
+              v0(true);
+              if (null !== outer1_1) {
+                v0(false);
+                showErrorToast(tmp26);
+                c5 = 3;
+                return { value: "HermesInternal", done: null };
+              } else {
+                c3 = 1;
+                const obj1 = { channelId: null, source: "In-channel greet" };
+                obj1[0] = outer1_0.id;
+                outer1_0(outer1_2[15]).trackWaveCtaClicked(obj1);
+                const obj5 = outer1_0(outer1_2[15]);
+                v0 = 2;
+                c5 = 1;
+                const obj2 = { value: null, done: false };
+                obj2[0] = outer1_1(outer1_2[16]).sendGreetMessage(outer1_0.id, outer1_14);
+                return obj2;
+              }
+            }
+          }
+        } else {
+          if (1 === tmp7) {
+            c3 = 0;
+            closure_1 = closure_2;
+            let ok = closure_1.ok;
+            if (!ok) {
+              ok = 429 !== closure_1.status;
+            }
+            if (!ok) {
+              const intl = outer1_0(outer1_2[17]).intl;
+              showErrorToast(intl.string(outer1_0(outer1_2[17]).t.Whhv4w));
+            }
+          } else if (arg0 === 1) {
+            c5 = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            c3 = 0;
+            c5 = 3;
+            obj = { value: null, done: true };
+            obj[0] = arg1;
+            return obj;
+          } else {
+            c3 = 0;
+          }
+          tmp7 = v0(false);
         }
-        num3 = 1;
-        num = num2 - 1 + height;
+        c5 = 3;
+      } catch (tmp30) {
+        closure_2 = tmp30;
+        if (tmp4 === c3) {
+          c5 = tmp2;
+          throw tmp30;
+        } else {
+          v0 = tmp;
+        }
       }
-      obj = { justifyContent: "flex-end", overflow: "hidden" };
-      num4 = 0;
-      if (tmp) {
-        num4 = -height;
-      }
-      obj.marginTop = generateAnimationConfig(num4);
-      obj.height = generateAnimationConfig(num);
-      return obj;
     }
+  }), items6);
+  _require = undefined;
+  const TextResult1 = Text(589);
+  [tmp17, tmp18] = callback(React.useState(false), 2);
+  _require = tmp18;
+  const items7 = [tmp18];
+  React = tmp17;
+  const callback1 = React.useCallback(() => {
+    _undefined(true);
+  }, items7);
+  const tmp16 = callback(React.useState(false), 2);
+  const fn = function w() {
+    const height = lib.gradient.height;
+    let tmp = c5;
+    if (c5) {
+      tmp = !first;
+    }
+    let num = 0;
+    if (tmp) {
+      let num2 = 180;
+      if (first1) {
+        num2 = 72;
+      }
+      num = num2 - 1 + height;
+    }
+    let num4 = 0;
+    if (tmp) {
+      num4 = -height;
+    }
+    let obj = { justifyContent: "flex-end", overflow: "hidden", marginTop: null, height: null };
+    const obj2 = _undefined(lib[23]);
+    obj = { easing: _undefined(lib[25]).STANDARD_EASING, duration: 250 };
+    obj[2] = obj2.withDelay(300, _undefined(lib[24]).withTiming(num4, obj));
+    const obj3 = _undefined(lib[24]);
+    const obj5 = _undefined(lib[23]);
+    obj = { easing: _undefined(lib[25]).STANDARD_EASING, duration: 250 };
+    obj[3] = obj5.withDelay(300, _undefined(lib[24]).withTiming(num, obj));
+    return obj;
+  };
+  obj = { styles: toastContent, isRendered: tmp17, hasInputText, hasMessages: stateFromStores, HEIGHT_COMPACT: 72, HEIGHT_FULL: 180, withDelay: Text(4050).withDelay, withTiming: Text(4190).withTiming, STANDARD_EASING: Text(1297).STANDARD_EASING };
+  fn.__closure = obj;
+  fn.__workletHash = 6327401707106;
+  fn.__initData = closure_16;
+  const animatedStyle = Text(4050).useAnimatedStyle(fn);
+  const TextResult2 = Text(4050);
+  let BACKGROUND_BASE_LOWER = Text(4000).useGradientValue(tmp2);
+  const TextResult3 = Text(4000);
+  if (BACKGROUND_BASE_LOWER == null) {
+    BACKGROUND_BASE_LOWER = tmp5(712).colors.BACKGROUND_BASE_LOWER;
   }
-  obj = { styles: str, isRendered, hasInputText, hasMessages: stateFromStores, HEIGHT_COMPACT: 72, HEIGHT_FULL: 180, withDelay: channel(str[23]).withDelay, withTiming: channel(str[24]).withTiming, STANDARD_EASING: channel(str[25]).STANDARD_EASING };
-  O.__closure = obj;
-  O.__workletHash = 6327401707106;
-  O.__initData = closure_15;
-  const animatedStyle = obj7.useAnimatedStyle(O);
-  let obj9 = channel(str[10]);
-  let BACKGROUND_BASE_LOWER = obj9.useGradientValue(END);
-  let obj10 = channel(str[11]);
-  if (Text == BACKGROUND_BASE_LOWER) {
-    BACKGROUND_BASE_LOWER = hasInputText(str[9]).colors.BACKGROUND_BASE_LOWER;
-  }
-  const token = obj10.useToken(BACKGROUND_BASE_LOWER);
-  const items5 = [channel(str[12]).hexWithOpacity(token, 0), token];
-  const obj12 = channel(str[12]);
-  const tmp7 = channel;
-  const tmp8 = str;
-  const shouldAnimateSticker = channel(str[26]).useShouldAnimateSticker(false);
+  const token = Text(3893).useToken(BACKGROUND_BASE_LOWER);
+  const TextResult4 = Text(3893);
+  const items8 = [Text(4033).hexWithOpacity(token, 0), token];
+  const TextResult5 = Text(4033);
+  const shouldAnimateSticker = Text(9619).useShouldAnimateSticker(false);
   if (!showConvoStarterInDM) {
     return null;
   } else {
-    obj1 = { style: animatedStyle, onLayout: tmp13.setIsRendered };
-    obj2 = { style: str.gradient, colors: items5 };
-    const items6 = [callback(hasInputText(str[27]), obj2), ];
-    obj3 = { style: str.container };
+    obj = { style: null, onLayout: null, children: null };
+    obj[0] = animatedStyle;
+    obj[1] = callback1;
+    obj1 = { style: null, colors: null };
+    obj1[0] = toastContent.gradient;
+    obj1[1] = items8;
+    const items9 = [callback2(tmp5(4611), obj1), ];
+    obj2 = { style: null, children: null };
+    obj2[0] = toastContent.container;
     if (stateFromStores) {
-      const obj4 = { style: str.toastContainer, accessibilityRole: "button" };
-      const intl3 = channel(str[17]).intl;
-      obj4.accessibilityLabel = intl3.string(channel(str[17]).t.pJObYI);
-      obj4.onPress = items7;
-      let tmp37 = null;
-      if (Text != stateFromStores2) {
-        obj5 = { sticker: stateFromStores2, size: 24, animated: shouldAnimateSticker };
-        tmp37 = callback(hasInputText(str[29]), obj5);
+      obj3 = { style: null, accessibilityRole: "button", accessibilityLabel: null, onPress: null, children: null };
+      obj3[0] = toastContent.toastContainer;
+      const intl3 = Text(1236).intl;
+      obj3[2] = intl3.string(Text(1236).t.pJObYI);
+      obj3[3] = callback;
+      let tmp24Result = null;
+      if (null != stateFromStores2) {
+        tmp5 = tmp5(9635);
+        const obj4 = { sticker: null, size: 24, animated: null };
+        obj4[0] = stateFromStores2;
+        obj4[2] = shouldAnimateSticker;
+        tmp24Result = tmp24(tmp5, obj4);
       }
-      items7 = [tmp37, ];
-      Text = channel(str[30]).Text;
-      obj6 = { style: str.toastContent };
-      str = "text-md/bold";
-      obj6.variant = "text-md/bold";
-      obj6.children = formatToPlainStringResult;
-      items7[1] = callback(Text, obj6);
-      obj4.children = items7;
-      let tmp24Result = tmp24(channel(str[28]).PressableOpacity, obj4);
+      callback = [tmp24Result, ];
+      Text = Text(4185).Text;
+      let obj5 = { style: null, variant: "text-md/bold", children: null };
+      toastContent = toastContent.toastContent;
+      obj5[0] = toastContent;
+      obj5[2] = formatToPlainStringResult;
+      tmp = tmp24(Text, obj5);
+      callback[1] = tmp;
+      obj3[4] = callback;
+      let tmp23Result = tmp23(Text(4717).PressableOpacity, obj3);
     } else {
-      obj7 = {};
-      let tmp26 = null;
-      if (Text != stateFromStores2) {
-        const obj8 = { style: `text-md/bold`.stickerContainer };
-        obj9 = { sticker: stateFromStores2, size: 100, animated: shouldAnimateSticker };
-        obj8.children = callback(hasInputText(str[29]), obj9);
-        tmp26 = callback(View, obj8);
+      tmp24Result = null;
+      if (null != stateFromStores2) {
+        const obj6 = { style: null, children: null };
+        obj6[0] = toastContent.stickerContainer;
+        const obj7 = { sticker: null, size: 100, animated: null };
+        obj7[0] = stateFromStores2;
+        obj7[2] = shouldAnimateSticker;
+        obj6[1] = tmp24(tmp5(9635), obj7);
+        tmp24Result = tmp24(tmp25, obj6);
       }
-      const items8 = [tmp26, ];
-      obj10 = { text: formatToPlainStringResult, onPress: items7, shrink: true };
-      items8[1] = callback(channel(str[31]).Button, obj10);
-      obj7.children = items8;
-      tmp24Result = tmp24(closure_12, obj7);
-      const tmp25 = closure_12;
+      const obj8 = { children: null };
+      const items10 = [tmp24Result, ];
+      const obj9 = { text: null, onPress: null, shrink: true };
+      obj9[0] = formatToPlainStringResult;
+      obj9[1] = callback;
+      items10[1] = tmp24(Text(4600).Button, obj9);
+      obj8[0] = items10;
+      tmp23Result = tmp23(closure_12, obj8);
+      const tmp26 = closure_12;
     }
-    obj3.children = tmp24Result;
-    obj3 = callback(View, obj3);
-    items6[1] = obj3;
-    obj1.children = items6;
-    closure_11(hasInputText(str[23]).View, obj1);
-    const tmp19 = closure_11;
-    const tmp22 = callback;
-    const tmp23 = View;
+    obj2[1] = tmp23Result;
+    obj2 = tmp24(tmp25, obj2);
+    items9[1] = obj2;
+    obj[2] = items9;
+    tmp23Result = tmp23(tmp5(4050).View, obj);
   }
 };

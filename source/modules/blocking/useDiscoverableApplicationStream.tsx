@@ -1,37 +1,37 @@
-// Module ID: 9040
-// Function ID: 71019
+// Module ID: 9064
+// Function ID: 9065
 // Name: getDiscoverableApplicationStream
-// Dependencies: [4184, 3802, 653, 566, 2]
+// Dependencies: [4208, 3826, 676, 589, 2]
 // Exports: default
 
-// Module 9040 (getDiscoverableApplicationStream)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_3 from "_isNativeReflectConstruct";
+// Module 9064 (getDiscoverableApplicationStream)
+import reset from "reset";
+import upsertRelationship from "upsertRelationship";
 import { RelationshipTypes } from "ME";
 
 const require = arg1;
-function getDiscoverableApplicationStream(id) {
+function getDiscoverableApplicationStream(arg0) {
   let obj;
   let obj2;
   let tmp = arg1;
   if (arg1 === undefined) {
-    const items = [_isNativeReflectConstruct, closure_3];
+    const items = [reset, upsertRelationship];
     tmp = items;
   }
   [obj, obj2] = tmp;
-  if (null != id) {
-    let NONE = obj2.getRelationshipType(id);
+  if (null != arg0) {
+    let NONE = obj2.getRelationshipType(arg0);
   } else {
     NONE = RelationshipTypes.NONE;
   }
   let anyDiscoverableStreamForUser = null;
-  if (null != id) {
-    anyDiscoverableStreamForUser = obj.getAnyDiscoverableStreamForUser(id);
+  if (null != arg0) {
+    anyDiscoverableStreamForUser = obj.getAnyDiscoverableStreamForUser(arg0);
   }
   let tmp6 = null;
   if (NONE !== RelationshipTypes.BLOCKED) {
     tmp6 = null;
-    if (null != id) {
+    if (null != arg0) {
       tmp6 = anyDiscoverableStreamForUser;
     }
   }
@@ -41,9 +41,9 @@ const result = require("ME").fileFinishedImporting("modules/blocking/useDiscover
 
 export default function useDiscoverableApplicationStream(arg0) {
   const _require = arg0;
-  let items = [_isNativeReflectConstruct, closure_3];
+  let items = [reset, upsertRelationship];
   const items1 = [arg0];
-  return _require(566).useStateFromStores(items, () => {
+  return _require(589).useStateFromStores(items, () => {
     const items = [outer1_2, outer1_3];
     return outer1_5(closure_0, items);
   }, items1);

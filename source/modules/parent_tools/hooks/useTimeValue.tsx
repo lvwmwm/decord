@@ -1,27 +1,27 @@
-// Module ID: 13945
-// Function ID: 106607
+// Module ID: 13966
+// Function ID: 13967
 // Name: useTimeValue
-// Dependencies: [31, 2, 10226]
+// Dependencies: [19, 2, 10247]
 // Exports: default
 
-// Module 13945 (useTimeValue)
-import result from "result";
+// Module 13966 (useTimeValue)
+import noop from "noop";
 
-const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/parent_tools/hooks/useTimeValue.tsx");
+const result = require("setsEqual").fileFinishedImporting("modules/parent_tools/hooks/useTimeValue.tsx");
 
 export default function useTimeValue(arg0) {
-  let result;
+  let noop;
   let closure_1;
-  ({ initial: result, defaultValue: closure_1 } = arg0);
+  ({ initial: noop, defaultValue: closure_1 } = arg0);
   return React.useState(() => {
-    if (null != result) {
-      const obj = {};
-      ({ hours: obj.hours, minutes: obj.minutes } = result);
-      let tmp = obj;
+    if (null != noop) {
+      const obj = { hours: null, minutes: null };
+      ({ hours: obj[0], minutes: obj[1] } = noop);
+      let tmp2 = obj;
     } else {
-      tmp = closure_1;
+      tmp2 = closure_1;
     }
-    return tmp;
+    return tmp2;
   });
 };
-export const timeToMinutes = require("_createForOfIteratorHelperLoose").timeToMinutes;
+export const timeToMinutes = require("setsEqual").timeToMinutes;

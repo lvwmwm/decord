@@ -1,28 +1,28 @@
-// Module ID: 11589
-// Function ID: 90062
+// Module ID: 11613
+// Function ID: 11614
 // Name: GuildPowerupsBoostGem
-// Dependencies: [27, 33, 4165, 689, 11590, 2]
+// Dependencies: [17, 21, 4189, 712, 11614, 2]
 // Exports: default
 
-// Module 11589 (GuildPowerupsBoostGem)
+// Module 11613 (GuildPowerupsBoostGem)
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let obj = {};
-obj = { width: 100, height: 100, borderRadius: require("_createForOfIteratorHelperLoose").radii.round, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SECONDARY_ALT, alignItems: "center", justifyContent: "center", alignSelf: "center" };
-obj.boostGemContainer = obj;
-let closure_4 = _createForOfIteratorHelperLoose.createStyles(obj);
-const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/premium/powerups/native/GuildPowerupsBoostGem.tsx");
+let obj = { boostGemContainer: null };
+obj = { width: 100, height: 100, borderRadius: require("Themes").radii.round, backgroundColor: require("Themes").colors.BACKGROUND_SECONDARY_ALT, alignItems: "center", justifyContent: "center", alignSelf: "center" };
+obj[0] = obj;
+let closure_4 = createCacheKey.createStyles(obj);
+const result = require("createCacheKey").fileFinishedImporting("modules/premium/powerups/native/GuildPowerupsBoostGem.tsx");
 
 export default function GuildPowerupsBoostGem(arg0) {
   let gemHeight;
   let gemWidth;
   let style;
   ({ style, gemWidth, gemHeight } = arg0);
-  const obj = {};
+  const obj = { style: null, children: null };
   const items = [callback().boostGemContainer, style];
-  obj.style = items;
-  obj.children = jsx(importDefault(11590), { width: gemWidth, height: gemHeight });
-  return <View />;
+  obj[0] = items;
+  obj[1] = jsx(importDefault(11614), { width: gemWidth, height: gemHeight });
+  return <View style={null}>{null}</View>;
 };

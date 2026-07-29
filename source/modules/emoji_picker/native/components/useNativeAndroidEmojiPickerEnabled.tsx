@@ -1,20 +1,20 @@
-// Module ID: 9331
-// Function ID: 72897
+// Module ID: 9355
+// Function ID: 9356
 // Name: useNativeAndroidEmojiPickerEnabled
-// Dependencies: [1194, 477, 1899, 2]
+// Dependencies: [1218, 500, 1923, 2]
 // Exports: default
 
-// Module 9331 (useNativeAndroidEmojiPickerEnabled)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 9355 (useNativeAndroidEmojiPickerEnabled)
+import fetchFingerprint from "fetchFingerprint";
 
 const require = arg1;
-const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/emoji_picker/native/components/useNativeAndroidEmojiPickerEnabled.tsx");
+const result = require("databaseName").fileFinishedImporting("modules/emoji_picker/native/components/useNativeAndroidEmojiPickerEnabled.tsx");
 
 export default function useNativeAndroidEmojiPickerEnabled() {
-  let isAndroidResult = require(477) /* set */.isAndroid();
+  let isAndroidResult = require(500) /* set */.isAndroid();
   if (isAndroidResult) {
-    isAndroidResult = null != importDefault(1899).database(id.getId());
-    const obj2 = importDefault(1899);
+    isAndroidResult = null != importDefault(1923).database(id.getId());
+    const obj2 = importDefault(1923);
   }
   return isAndroidResult;
 };

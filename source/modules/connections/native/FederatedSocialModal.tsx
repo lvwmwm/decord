@@ -1,108 +1,202 @@
-// Module ID: 8977
-// Function ID: 70738
+// Module ID: 9001
+// Function ID: 9002
 // Name: FederatedSocialModal
-// Dependencies: [5, 57, 31, 653, 33, 4165, 4849, 1212, 4973, 3862, 8978, 5155, 4161, 8971, 1273, 4578, 5121, 5552, 2]
+// Dependencies: [5, 32, 19, 676, 21, 4189, 4871, 1236, 4995, 3886, 9002, 5177, 4185, 8995, 1297, 4600, 5143, 5570, 2]
 // Exports: default
 
-// Module 8977 (FederatedSocialModal)
-import closure_3 from "_createForOfIteratorHelperLoose";
+// Module 9001 (FederatedSocialModal)
+import closure_3 from "createCacheKey";
 import _slicedToArray from "_slicedToArray";
-import result from "result";
+import noop from "noop";
 import { WebBrowserType } from "ME";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_7;
-let closure_8;
+let error;
+let metroImportAll;
 const require = arg1;
-({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-let closure_9 = _createForOfIteratorHelperLoose.createStyles({ container: { padding: 16 }, description: { textAlign: "center" }, input: { paddingHorizontal: 0, paddingVertical: 0, marginVertical: 16 } });
-const result = require("result").fileFinishedImporting("modules/connections/native/FederatedSocialModal.tsx");
+({ jsx: error, jsxs: metroImportAll } = jsxProd);
+let closure_9 = createCacheKey.createStyles({ container: { padding: 16 }, description: { textAlign: "center" }, input: { paddingHorizontal: 0, paddingVertical: 0, marginVertical: 16 } });
+const result = require("noop").fileFinishedImporting("modules/connections/native/FederatedSocialModal.tsx");
 
 export default function FederatedSocialModal(platformType) {
   const _require = platformType;
-  let screens = importDefault(4849);
+  let screens = importDefault(4871);
   let value = screens.get(platformType.platformType);
   let name;
-  if (null != value) {
+  if (value != null) {
     name = value.name;
   }
-  if (null == name) {
-    let intl = _require(1212).intl;
-    name = intl.string(_require(1212).t["bU/GZm"]);
+  if (name == null) {
+    let intl = _require(1236).intl;
+    name = intl.string(_require(1236).t["bU/GZm"]);
   }
-  screens = {};
-  let obj = {};
-  let intl2 = _require(1212).intl;
-  let obj1 = { serviceName: name };
-  obj.headerTitle = intl2.formatToPlainString(_require(1212).t["ImMhq+"], obj1);
-  obj.headerLeft = _require(5121).getHeaderBackButton(platformType.onClose);
-  obj.render = function render() {
-    return (function FederatedSocialModalScreen(closure_0) {
-      let closure_1;
-      let platformType;
-      ({ location: closure_0, successRedirect: closure_1, platformType } = closure_0);
-      const onClose = closure_0.onClose;
-      let first;
-      let result;
-      let closure_6;
-      function tryHandle() {
-        return _tryHandle(...arguments);
+  screens = { root: null };
+  let obj = { headerTitle: null, headerLeft: null, render: null };
+  let intl2 = _require(1236).intl;
+  obj[0] = intl2.formatToPlainString(_require(1236).t["ImMhq+"], { serviceName: name });
+  obj[1] = _require(5143).getHeaderBackButton(platformType.onClose);
+  obj[2] = function render() {
+    let closure_0;
+    let closure_1;
+    let platformType;
+    ({ location: closure_0, successRedirect: closure_1, platformType } = platformType);
+    const onClose = platformType.onClose;
+    let first;
+    let noop;
+    let closure_6;
+    function _tryHandle() {
+      const self = this;
+      const tmp = onClose(function*() {
+        if (v02 === 2) {
+          v02 = 3;
+          HermesBuiltin.throwTypeError();
+        } else if (tmp6 === 3) {
+          if (arg0 === 1) {
+            throw arg1;
+          } else if (arg0 === 2) {
+            let obj = { value: null, done: true };
+            obj[0] = arg1;
+            return obj;
+          } else {
+            return { value: "HermesInternal", done: null };
+          }
+        } else {
+          try {
+            v02 = 2;
+            if (0 === c4) {
+              if (arg0 === 1) {
+                v02 = 3;
+                throw arg1;
+              } else if (arg0 === 2) {
+                v02 = 3;
+                obj = { value: null, done: true };
+                obj[0] = arg1;
+                return obj;
+              } else {
+                let closure_1 = tmp3;
+                let body = tmp7;
+                body = undefined;
+                outer1_6(true);
+                v02(null);
+                let v0 = 1;
+                const obj1 = { location: null, successRedirect: null, handle: null };
+                obj1[0] = outer1_0;
+                obj1[1] = outer1_1;
+                obj1[2] = c4;
+                c4 = 2;
+                v02 = 1;
+                const obj2 = { value: null, done: false };
+                obj2[0] = outer1_1(outer1_2[8]).authorize(outer1_2, obj1);
+                return obj2;
+              }
+            } else {
+              if (1 === tmp7) {
+                v0 = 0;
+                const intl = outer1_0(outer1_2[7]).intl;
+                v02(intl.string(outer1_0(outer1_2[7]).t["7wbPNl"]));
+                callback(false);
+                v02 = 3;
+              } else if (arg0 === 1) {
+                v02 = 3;
+                throw arg1;
+              } else if (arg0 === 2) {
+                v0 = 0;
+                v02 = 3;
+                const obj3 = { value: null, done: true };
+                obj3[0] = arg1;
+                return obj3;
+              } else {
+                body = arg1.body;
+                let url;
+                if (body != null) {
+                  url = body.url;
+                }
+                if (null != url) {
+                  obj = outer1_1(outer1_2[9]);
+                  obj.openURLExternally(body.url, outer1_6.SAFARI);
+                  v0();
+                  v0 = 0;
+                }
+              }
+              const _Error = Error;
+              const error = new Error();
+              throw error;
+            }
+          } catch (tmp31) {
+            let closure_2 = tmp31;
+            if (tmp4 === v0) {
+              v02 = tmp2;
+              throw tmp31;
+            } else {
+              c4 = tmp;
+            }
+          }
+        }
+      });
+      const _tryHandle = tmp;
+      const apply = tmp.apply;
+      if (typeof apply === "unknown") {
+        let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+      } else {
+        applyArgumentsResult = apply(self, arguments);
       }
-      function _tryHandle() {
-        // CreateGeneratorClosureLongIndex (0x67)
-        const obj = outer3_3(tmp);
-        return obj(...arguments);
+      return applyArgumentsResult;
+    }
+    let tmp = outer1_9();
+    const tmp2 = outer1_4(outer1_5.useState(""), 2);
+    first = tmp2[0];
+    const tmp4 = outer1_4(outer1_5.useState(null), 2);
+    noop = tmp4[1];
+    const tmp5 = outer1_4(outer1_5.useState(false), 2);
+    closure_6 = tmp5[1];
+    let obj = outer1_1(outer1_2[6]);
+    const value = obj.get(platformType);
+    let name;
+    if (value != null) {
+      name = value.name;
+    }
+    if (name == null) {
+      let intl = platformType(tmp7[7]).intl;
+      name = intl.string(platformType(tmp7[7]).t["bU/GZm"]);
+    }
+    function tryHandle() {
+      const self = this;
+      const apply = _tryHandle.apply;
+      if (typeof apply === "unknown") {
+        let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+      } else {
+        applyArgumentsResult = apply(self, arguments);
       }
-      const tmp = outer2_9();
-      const tmp2 = outer2_4(outer2_5.useState(""), 2);
-      first = tmp2[0];
-      const tmp4 = outer2_4(outer2_5.useState(null), 2);
-      result = tmp4[1];
-      const tmp5 = outer2_4(outer2_5.useState(false), 2);
-      closure_6 = tmp5[1];
-      let obj = outer2_1(outer2_2[6]);
-      const value = obj.get(platformType);
-      let name;
-      if (null != value) {
-        name = value.name;
-      }
-      if (null == name) {
-        const intl = callback(outer2_2[7]).intl;
-        name = intl.string(callback(outer2_2[7]).t["bU/GZm"]);
-      }
-      let obj1 = callback(outer2_2[10]);
-      const exampleHandle = obj1.getExampleHandle(platformType);
-      let obj2 = callback(outer2_2[10]);
-      obj = { bottom: true, style: tmp.container };
-      obj = { variant: "text-md/normal", color: "text-default", style: tmp.description };
-      const intl2 = callback(outer2_2[7]).intl;
-      obj1 = { serviceName: name };
-      obj.children = intl2.formatToPlainString(callback(outer2_2[7]).t["7TByKh"], obj1);
-      const items = [outer2_7(callback(outer2_2[12]).Text, obj), , ];
-      obj2 = { autoFocus: true, style: tmp.input };
-      const validateHandleResult = obj2.validateHandle(first, platformType);
-      const intl3 = callback(outer2_2[7]).intl;
-      obj2.label = intl3.string(callback(outer2_2[7]).t.tZ9QFR);
-      obj2.placeholder = exampleHandle;
-      obj2.error = tmp4[0];
-      obj2.returnKeyType = "done";
-      obj2.onChangeText = tmp2[1];
-      obj2.onSubmitEditing = tryHandle;
-      obj2.clearButtonVisibility = callback(outer2_2[14]).ClearButtonVisibility.WITH_CONTENT;
-      obj2.autoCapitalize = "none";
-      obj2.autoComplete = "off";
-      obj2.autoCorrect = false;
-      items[1] = outer2_7(outer2_1(outer2_2[13]), obj2);
-      const obj3 = { loading: tmp5[0], disabled: !validateHandleResult };
-      const intl4 = callback(outer2_2[7]).intl;
-      obj3.text = intl4.string(callback(outer2_2[7]).t.PDTjLN);
-      obj3.onPress = tryHandle;
-      items[2] = outer2_7(callback(outer2_2[15]).Button, obj3);
-      obj.children = items;
-      return outer2_8(callback(outer2_2[11]).SafeAreaPaddingView, obj);
-    })(closure_0);
+      return applyArgumentsResult;
+    }
+    let obj1 = platformType(tmp7[10]);
+    const exampleHandle = obj1.getExampleHandle(platformType);
+    let obj2 = platformType(tmp7[10]);
+    obj = { bottom: true, style: tmp.container, children: null };
+    obj = { variant: "text-md/normal", color: "text-default", style: tmp.description, children: null };
+    const intl2 = platformType(tmp7[7]).intl;
+    obj[3] = intl2.formatToPlainString(platformType(outer1_2[7]).t["7TByKh"], { serviceName: name });
+    const items = [outer1_7(platformType(outer1_2[12]).Text, obj), , ];
+    obj1 = { autoFocus: true, style: tmp.input, label: null, placeholder: null, error: null, returnKeyType: "done", onChangeText: null, onSubmitEditing: null, clearButtonVisibility: null, autoCapitalize: "none", autoComplete: "off", autoCorrect: false };
+    const tmp6 = outer1_1;
+    const validateHandleResult = obj2.validateHandle(first, platformType);
+    const intl3 = platformType(tmp7[7]).intl;
+    obj1[2] = intl3.string(platformType(outer1_2[7]).t.tZ9QFR);
+    obj1[3] = exampleHandle;
+    obj1[4] = tmp4[0];
+    obj1[6] = tmp2[1];
+    obj1[7] = tryHandle;
+    obj1[8] = platformType(outer1_2[14]).ClearButtonVisibility.WITH_CONTENT;
+    items[1] = outer1_7(outer1_1(outer1_2[13]), obj1);
+    obj2 = { loading: tmp5[0], disabled: !validateHandleResult, text: null, onPress: null };
+    const intl4 = platformType(tmp7[7]).intl;
+    obj2[2] = intl4.string(platformType(outer1_2[7]).t.PDTjLN);
+    obj2[3] = tryHandle;
+    items[2] = outer1_7(platformType(outer1_2[15]).Button, obj2);
+    obj[2] = items;
+    return outer1_8(platformType(outer1_2[11]).SafeAreaPaddingView, obj);
   };
-  screens.root = obj;
-  return callback(_require(5552).Navigator, { initialRouteName: "root", screens });
+  screens[0] = obj;
+  return callback(_require(5570).Navigator, { initialRouteName: "root", screens });
 };

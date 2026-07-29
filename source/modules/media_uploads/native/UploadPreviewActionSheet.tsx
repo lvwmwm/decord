@@ -1,43 +1,46 @@
-// Module ID: 9649
-// Function ID: 75084
+// Module ID: 9671
+// Function ID: 9672
 // Name: UploadPreviewActionSheet
-// Dependencies: [57, 31, 27, 4503, 5222, 33, 4165, 689, 44, 4700, 1450, 1557, 4594, 4133, 4721, 9650, 3866, 6709, 4709, 9820, 9821, 5221, 5223, 4576, 4161, 477, 8118, 8079, 5536, 5198, 9822, 9824, 1212, 9068, 9828, 6168, 4679, 9830, 4578, 4124, 2]
+// Dependencies: [32, 19, 17, 4526, 5244, 21, 4189, 712, 38, 4722, 1474, 1581, 4616, 4157, 4743, 9672, 3890, 6730, 4731, 9842, 9843, 5243, 5245, 4598, 4185, 500, 8142, 8103, 5554, 5220, 9844, 9846, 1236, 9092, 9850, 6186, 4701, 9852, 4600, 4148, 2]
 // Exports: default
 
-// Module 9649 (UploadPreviewActionSheet)
-import _slicedToArray from "_slicedToArray";
-import module_9824 from "module_9824";
-import get_ActivityIndicator from "Caption";
-import { DraftType } from "_isNativeReflectConstruct";
+// Module 9671 (UploadPreviewActionSheet)
+import getSystemLocale from "getSystemLocale";
+import useCanSetThumbnail from "useCanSetThumbnail";
+import get_ActivityIndicator from "CircleErrorIcon";
+import { DraftType } from "handleChanged";
 import { ACTION_SHEET_MAX_WIDTH } from "ACTION_SHEET_START_HEIGHT_RATIO";
-import jsxProd from "TableCheckboxRow";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import jsxProd from "Background";
+import createCacheKey from "createCacheKey";
 
-let closure_10;
-let closure_5;
+let c10;
+let c5;
+let c9;
 let closure_6;
-let closure_9;
 const require = arg1;
-({ Image: closure_5, View: closure_6 } = get_ActivityIndicator);
-({ jsx: closure_9, jsxs: closure_10 } = jsxProd);
-_createForOfIteratorHelperLoose = { contentContainer: { padding: 16 } };
-_createForOfIteratorHelperLoose = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SURFACE_HIGH, padding: require("_createForOfIteratorHelperLoose").space.PX_8, borderRadius: require("_createForOfIteratorHelperLoose").radii.md, width: "100%" };
-_createForOfIteratorHelperLoose.imageWrap = _createForOfIteratorHelperLoose;
-let obj1 = { overflow: "hidden", alignSelf: "center", borderRadius: require("_createForOfIteratorHelperLoose").radii.md - require("_createForOfIteratorHelperLoose").space.PX_4 };
-_createForOfIteratorHelperLoose.imageContainer = obj1;
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+({ Image: c5, View: closure_6 } = get_ActivityIndicator);
+({ jsx: c9, jsxs: c10 } = jsxProd);
+createCacheKey = { contentContainer: { padding: 16 }, imageWrap: null, imageContainer: null };
+createCacheKey = { backgroundColor: require("Themes").colors.BACKGROUND_SURFACE_HIGH, padding: require("Themes").space.PX_8, borderRadius: require("Themes").radii.md, width: "100%" };
+createCacheKey[1] = createCacheKey;
+let obj1 = { overflow: "hidden", alignSelf: "center", borderRadius: null };
+obj1[2] = require("Themes").radii.md - require("Themes").space.PX_4;
+createCacheKey[2] = obj1;
+createCacheKey = createCacheKey.createStyles(createCacheKey);
 let result = require("get ActivityIndicator").fileFinishedImporting("modules/media_uploads/native/UploadPreviewActionSheet.tsx");
 
 export default function UploadPreviewActionSheet(onAdd) {
-  let module_9824;
+  let c11;
+  let useCanSetThumbnail;
   let disableAddDescription;
   let isImage;
   let isThumbnail;
+  let tmp18;
   onAdd = onAdd.onAdd;
   const onEdit = onAdd.onEdit;
   const onRemove = onAdd.onRemove;
   const channelId = onAdd.channelId;
-  ({ onClose: module_9824, disableAddDescription } = onAdd);
+  ({ onClose: useCanSetThumbnail, disableAddDescription } = onAdd);
   if (disableAddDescription === undefined) {
     disableAddDescription = false;
   }
@@ -48,8 +51,8 @@ export default function UploadPreviewActionSheet(onAdd) {
   let item;
   let spoiler;
   let width;
-  let _createForOfIteratorHelperLoose;
-  const tmp = _createForOfIteratorHelperLoose();
+  let createCacheKey;
+  const tmp = createCacheKey();
   c5 = tmp;
   id = upload.id;
   isVideo = upload.isVideo;
@@ -60,14 +63,16 @@ export default function UploadPreviewActionSheet(onAdd) {
   width = onEdit(onRemove[10])().width;
   const bottom = onEdit(onRemove[11])().bottom;
   onEdit(onRemove[12])(() => () => {
-    if (null != outer1_4) {
-      outer1_4();
+    if (useCanSetThumbnail != null) {
+      tmp();
     }
   });
+  let obj = React;
   const items = [width, item, tmp];
   const size = React.useMemo(() => {
-    const height = item.height;
-    let width = item.width;
+    let height;
+    let width;
+    ({ height, width } = item);
     width = Math.min(width, item) - 2 * _undefined.contentContainer.padding - 2 * _undefined.imageWrap.padding;
     if (null != height) {
       if (null != width) {
@@ -75,7 +80,9 @@ export default function UploadPreviewActionSheet(onAdd) {
           if (0 !== width) {
             const _Math = Math;
             const result = width / Math.max(width, height);
-            const obj = { width: width * result, height: height * result };
+            const obj = { width: null, height: null };
+            obj[0] = width * result;
+            obj[1] = height * result;
             return obj;
           }
         }
@@ -88,45 +95,49 @@ export default function UploadPreviewActionSheet(onAdd) {
   const items2 = [onAdd];
   const callback = React.useCallback(() => {
     onEdit(onRemove[13]).hideActionSheet();
-    if (null != onRemove) {
-      onRemove(id);
+    if (onRemove != null) {
+      tmp2(id);
     }
   }, items1);
   const items3 = [onEdit, item];
   const callback1 = React.useCallback(() => {
     onEdit(onRemove[13]).hideActionSheet();
-    if (null != onAdd) {
+    if (onAdd != null) {
       onAdd();
     }
   }, items2);
   const items4 = [isVideo, item];
   const callback2 = React.useCallback(() => {
+    let height;
+    let uri;
+    let width;
     let obj = onEdit(onRemove[13]);
     obj.hideActionSheet();
-    const width = item.width;
-    const height = item.height;
-    obj = { uri: item.uri, freeStyleCropEnabled: true };
+    ({ width, height, uri } = item);
+    obj = { uri, freeStyleCropEnabled: true, width: null, height: null };
     let tmp2;
     if (0 !== width) {
       tmp2 = width;
     }
-    obj.width = tmp2;
+    obj[2] = tmp2;
     let tmp3;
     if (0 !== height) {
       tmp3 = height;
     }
-    obj.height = tmp3;
+    obj[3] = tmp3;
     const obj2 = onEdit(onRemove[14]);
     const launchCropperResult = onEdit(onRemove[14]).launchCropper(obj);
     onEdit(onRemove[14]).launchCropper(obj).then((path) => {
-      if (null != outer1_1) {
-        outer1_1(onAdd(onRemove[15]).cropResultToUploadItem(path));
-        const obj = onAdd(onRemove[15]);
+      if (closure_1 != null) {
+        tmp(outer1_0(outer1_2[15]).cropResultToUploadItem(path));
+        const obj = outer1_0(outer1_2[15]);
       }
     }).catch((code) => {
       if ("E_PICKER_CANCELLED" !== code.code) {
-        let obj = onEdit(onRemove[16]);
-        obj = { key: "CROP_ERROR", IconComponent: onAdd(onRemove[17]).CircleErrorIcon, content: code.message };
+        let obj = callback2(3890);
+        obj = { key: "CROP_ERROR", IconComponent: null, content: null };
+        obj[1] = callback(6730).CircleErrorIcon;
+        obj[2] = code.message;
         obj.open(obj);
       }
     });
@@ -135,150 +146,158 @@ export default function UploadPreviewActionSheet(onAdd) {
     const obj = onAdd(onRemove[18]);
     return obj.getCaptionLabel(onAdd(onRemove[18]).getType(item.uri), isVideo, item);
   }, items4);
-  let tmp10 = isImage;
+  let tmp13 = isImage;
   if (isImage) {
-    tmp10 = !disableAddDescription;
+    tmp13 = !disableAddDescription;
   }
-  let tmp12 = onEdit(onRemove[19])(channelId, upload);
-  let tmp3 = onEdit(onRemove[8]);
-  const tmp14 = channelId(React.useState(undefined), 2);
-  const first = tmp14[0];
-  _createForOfIteratorHelperLoose = tmp14[1];
+  let tmp14 = !tmp2;
+  if (!(undefined !== isThumbnail && isThumbnail)) {
+    tmp14 = !onAdd.disableSpoiler;
+  }
+  let tmp22Result4 = tmp3(tmp4[19])(channelId, upload);
+  const tmp5 = onEdit(onRemove[8]);
+  const tmp16 = onEdit(onRemove[20])(channelId, upload);
+  [tmp18, c11] = channelId(obj.useState(undefined), 2);
   let sum2;
-  if (null != first) {
-    const sum = first + bottom;
-    const sum1 = sum + onEdit(onRemove[7]).space.PX_32;
-    sum2 = sum1 + onEdit(onRemove[7]).space.PX_16;
+  if (null != tmp18) {
+    const sum = tmp18 + bottom;
+    const sum1 = sum + tmp3(tmp4[7]).space.PX_32;
+    sum2 = sum1 + tmp3(tmp4[7]).space.PX_16;
   }
   if (isImage) {
     isImage = null != onEdit;
   }
-  let obj = { scrollable: true, startHeight: sum2 };
-  obj = {};
-  obj = { padding: onEdit(onRemove[7]).space.PX_16, paddingBottom: bottom };
-  obj.contentContainerStyle = obj;
-  const obj1 = {
+  obj = { scrollable: true, startHeight: sum2, children: null };
+  obj = { contentContainerStyle: null, children: null };
+  const obj1 = { padding: null, paddingBottom: null };
+  obj1[0] = onEdit(onRemove[7]).space.PX_16;
+  obj1[1] = bottom;
+  obj[0] = obj1;
+  let obj2 = {
     spacing: 16,
     onLayout(nativeEvent) {
-      callback(nativeEvent.nativeEvent.layout.height);
-    }
+      _undefined2(nativeEvent.nativeEvent.layout.height);
+    },
+    children: null
   };
   const items5 = [spoiler(onAdd(onRemove[24]).Text, { variant: "text-md/semibold", children: item.filename }), , , ];
-  const obj3 = { style: tmp.imageWrap };
-  const obj4 = { style: items6 };
+  const obj4 = { style: tmp.imageWrap, children: null };
+  const obj5 = { style: items6, children: null };
   items6 = [tmp.imageContainer, { width: size.width, height: size.height }];
-  let obj7 = onAdd(onRemove[25]);
-  if (obj7.isIOS()) {
+  const obj3 = { variant: "text-md/semibold", children: item.filename };
+  const tmp17 = channelId(obj.useState(undefined), 2);
+  if (tmp6Result.isIOS()) {
     if (isVideo) {
       const uri = item.uri;
       if (uri.startsWith("file://")) {
-        const obj5 = { style: null, source: null, muted: true, paused: true, preventsDisplaySleepDuringVideoPlayback: false };
-        ({ width: obj11.width, height: obj11.height } = size);
-        obj5.style = {};
-        obj7 = { uri: item.uri };
-        obj5.source = obj7;
-        let tmp24 = spoiler(onAdd(onRemove[26]).VideoComponent, obj5);
-        const obj6 = {};
+        const obj6 = { style: null, source: null, muted: true, paused: true, preventsDisplaySleepDuringVideoPlayback: false };
+        ({ width: obj12[0], height: obj12[1] } = size);
+        obj6[0] = { width: null, height: null };
+        const obj8 = { uri: null };
+        obj8[0] = item.uri;
+        obj6[1] = obj8;
+        let tmp22Result = tmp22(tmp6(tmp4[26]).VideoComponent, obj6);
+        const obj7 = { width: null, height: null };
       }
-      const items7 = [tmp24, ];
-      let tmp28 = null != memo;
-      if (tmp28) {
-        tmp28 = "" !== memo;
+      const items7 = [tmp22Result, ];
+      tmp22Result = null != memo;
+      if (tmp22Result) {
+        tmp22Result = "" !== memo;
       }
-      if (tmp28) {
-        const obj8 = { label: memo };
-        tmp28 = spoiler(onAdd(onRemove[27]).Caption, obj8);
+      if (tmp22Result) {
+        const obj9 = { label: null };
+        obj9[0] = memo;
+        tmp22Result = tmp22(tmp6(tmp4[27]).Caption, obj9);
       }
-      items7[1] = tmp28;
-      obj4.children = items7;
-      obj3.children = tmp22(tmp23, obj4);
-      items5[1] = tmp21(tmp23, obj3);
-      if (!tmp10) {
-        if (!tmp11) {
-          if (!tmp12) {
-            let tmp33Result = null;
+      items7[1] = tmp22Result;
+      obj5[1] = items7;
+      obj4[1] = tmp23(tmp24, obj5);
+      items5[1] = tmp22(tmp24, obj4);
+      if (!tmp13) {
+        if (!tmp14) {
+          if (!tmp22Result4) {
+            let tmp23Result = null;
           }
-          items5[2] = tmp33Result;
+          items5[2] = tmp23Result;
           if (null != onRemove) {
-            const obj9 = { icon: spoiler(onAdd(onRemove[39]).TrashIcon, { size: "sm", color: "control-primary-text-default" }) };
-            const intl6 = onAdd(onRemove[32]).intl;
-            obj9.text = intl6.string(onAdd(onRemove[32]).t["40jBO/"]);
-            obj9.onPress = callback;
-            obj9.variant = "destructive";
-            let tmp54 = spoiler(onAdd(onRemove[38]).Button, obj9);
+            const obj10 = { icon: null, text: null, onPress: null, variant: "destructive" };
+            obj10[0] = tmp22(tmp6(tmp4[39]).TrashIcon, { size: "sm", color: "control-primary-text-default" });
+            const intl6 = tmp6(tmp4[32]).intl;
+            obj10[1] = intl6.string(tmp6(tmp4[32]).t["40jBO/"]);
+            obj10[2] = callback;
+            let tmp22Result1 = tmp22(tmp6(tmp4[38]).Button, obj10);
           } else {
-            tmp54 = null;
+            tmp22Result1 = null;
             if (null != onAdd) {
-              const obj10 = { icon: spoiler(onAdd(onRemove[30]).ImageFileIcon, { size: "sm", color: "control-primary-text-default" }) };
-              const intl5 = onAdd(onRemove[32]).intl;
-              obj10.text = intl5.string(onAdd(onRemove[32]).t.s7oPyG);
-              obj10.onPress = callback1;
-              tmp54 = spoiler(onAdd(onRemove[38]).Button, obj10);
+              const obj11 = { icon: null, text: null, onPress: null };
+              obj11[0] = tmp22(tmp6(tmp4[30]).ImageFileIcon, { size: "sm", color: "control-primary-text-default" });
+              const intl5 = tmp6(tmp4[32]).intl;
+              obj11[1] = intl5.string(tmp6(tmp4[32]).t.s7oPyG);
+              obj11[2] = callback1;
+              tmp22Result1 = tmp22(tmp6(tmp4[38]).Button, obj11);
             }
           }
-          items5[3] = tmp54;
-          obj1.children = items5;
-          obj.children = tmp22(onAdd(onRemove[23]).Stack, obj1);
-          obj.children = tmp21(onAdd(onRemove[22]).BottomSheetScrollView, obj);
-          return tmp21(onAdd(onRemove[21]).BottomSheet, obj);
+          items5[3] = tmp22Result1;
+          obj2[2] = items5;
+          obj[1] = tmp23(tmp6(tmp4[23]).Stack, obj2);
+          obj[2] = tmp22(tmp6(tmp4[22]).BottomSheetScrollView, obj);
+          return tmp22(tmp6(tmp4[21]).BottomSheet, obj);
         }
       }
-      const obj11 = { hasIcons: true };
-      let tmp36 = null;
-      if (tmp10) {
-        const obj12 = {
-          icon: spoiler(onAdd(onRemove[30]).ImageFileIcon, {}),
-          onPress() {
-                  let obj = onEdit(onRemove[31]);
-                  obj = { source: item, channelId, id };
-                  return obj.open(obj);
-                }
+      let tmp22Result2 = null;
+      if (tmp13) {
+        const obj12 = { icon: null, onPress: null, label: null, arrow: true };
+        obj12[0] = tmp22(tmp6(tmp4[30]).ImageFileIcon, {});
+        obj12[1] = function onPress() {
+          let obj = onEdit(onRemove[31]);
+          obj = { source: item, channelId, id };
+          return obj.open(obj);
         };
-        const intl = onAdd(onRemove[32]).intl;
-        obj12.label = intl.string(onAdd(onRemove[32]).t["5S2AK+"]);
-        obj12.arrow = true;
-        tmp36 = spoiler(onAdd(onRemove[29]).TableRow, obj12);
+        const intl = tmp6(tmp4[32]).intl;
+        obj12[2] = intl.string(tmp6(tmp4[32]).t["5S2AK+"]);
+        tmp22Result2 = tmp22(tmp6(tmp4[29]).TableRow, obj12);
       }
-      const items8 = [tmp36, , , ];
-      let tmp40 = null;
-      if (tmp11) {
-        const obj13 = {
-          icon: spoiler(onAdd(onRemove[34]).SpoilerIcon, {}),
-          onPress() {
-                  let obj = onEdit(onRemove[13]);
-                  obj.hideActionSheet();
-                  obj = { spoiler: !spoiler };
-                  onEdit(onRemove[35]).update(channelId, id, isVideo.ChannelMessage, obj);
-                }
+      const items8 = [tmp22Result2, , , ];
+      let tmp22Result3 = null;
+      if (tmp14) {
+        const obj13 = { icon: null, onPress: null, label: null, checked: null };
+        obj13[0] = tmp22(tmp6(tmp4[34]).SpoilerIcon, {});
+        obj13[1] = function onPress() {
+          let obj = onEdit(onRemove[13]);
+          obj.hideActionSheet();
+          obj = { spoiler: !spoiler };
+          onEdit(onRemove[35]).update(channelId, id, isVideo.ChannelMessage, obj);
         };
-        const intl2 = onAdd(onRemove[32]).intl;
-        obj13.label = intl2.string(onAdd(onRemove[32]).t["gsI+xC"]);
-        obj13.checked = spoiler;
-        tmp40 = spoiler(onAdd(onRemove[33]).TableCheckboxRow, obj13);
+        const intl2 = tmp6(tmp4[32]).intl;
+        obj13[2] = intl2.string(tmp6(tmp4[32]).t["gsI+xC"]);
+        obj13[3] = spoiler;
+        tmp22Result3 = tmp22(tmp6(tmp4[33]).TableCheckboxRow, obj13);
       }
-      items8[1] = tmp40;
-      if (tmp12) {
-        const obj14 = { icon: spoiler(onAdd(onRemove[36]).ImageIcon, {}) };
-        const intl3 = onAdd(onRemove[32]).intl;
-        obj14.label = intl3.string(onAdd(onRemove[32]).t.ews2pj);
-        obj14.onPress = tmp13;
-        obj14.checked = tmp2;
-        tmp12 = spoiler(onAdd(onRemove[33]).TableCheckboxRow, obj14);
+      items8[1] = tmp22Result3;
+      if (tmp22Result4) {
+        const obj14 = { icon: null, label: null, onPress: null, checked: null };
+        obj14[0] = tmp22(tmp6(tmp4[36]).ImageIcon, {});
+        const intl3 = tmp6(tmp4[32]).intl;
+        obj14[1] = intl3.string(tmp6(tmp4[32]).t.ews2pj);
+        obj14[2] = tmp16;
+        obj14[3] = tmp2;
+        tmp22Result4 = tmp22(tmp6(tmp4[33]).TableCheckboxRow, obj14);
       }
-      items8[2] = tmp12;
-      let tmp47 = null;
+      items8[2] = tmp22Result4;
+      let tmp22Result5 = null;
       if (isImage) {
-        const obj15 = { icon: spoiler(onAdd(onRemove[37]).PencilSparkleIcon, {}), onPress: callback2 };
-        const intl4 = onAdd(onRemove[32]).intl;
-        obj15.label = intl4.string(onAdd(onRemove[32]).t.b0y3DL);
-        obj15.arrow = true;
-        tmp47 = spoiler(onAdd(onRemove[29]).TableRow, obj15);
+        const obj15 = { icon: null, onPress: null, label: null, arrow: true };
+        obj15[0] = tmp22(tmp6(tmp4[37]).PencilSparkleIcon, {});
+        obj15[1] = callback2;
+        const intl4 = tmp6(tmp4[32]).intl;
+        obj15[2] = intl4.string(tmp6(tmp4[32]).t.b0y3DL);
+        tmp22Result5 = tmp22(tmp6(tmp4[29]).TableRow, obj15);
       }
-      items8[3] = tmp47;
-      obj11.children = items8;
-      tmp33Result = width(onAdd(onRemove[28]).TableRowGroup, obj11);
-      const tmp33 = width;
+      const obj16 = { hasIcons: true, children: null };
+      items8[3] = tmp22Result5;
+      obj16[1] = items8;
+      tmp23Result = tmp23(tmp6(tmp4[28]).TableRowGroup, obj16);
     }
   }
-  tmp24 = spoiler(c5, { style: { width: size.width, height: size.height }, source: item });
+  tmp22Result = tmp22(c5, { style: { width: size.width, height: size.height }, source: item });
 };

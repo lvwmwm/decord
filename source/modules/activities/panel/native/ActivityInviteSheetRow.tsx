@@ -1,23 +1,23 @@
-// Module ID: 15820
-// Function ID: 121851
-// Dependencies: [31, 27, 1348, 1838, 1850, 6003, 33, 4165, 689, 566, 4355, 8326, 4695, 1273, 9430, 4004, 1212, 1392, 1832, 4161, 5198, 11783, 2]
+// Module ID: 15855
+// Function ID: 15856
+// Dependencies: [19, 17, 1372, 1862, 1874, 6021, 21, 4189, 712, 589, 4380, 8350, 4717, 1297, 9454, 4028, 1236, 1416, 1856, 4185, 5220, 11808, 2]
 
-// Module 15820
-import { View } from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_5 from "_createForOfIteratorHelperLoose";
-import closure_6 from "_isNativeReflectConstruct";
+// Module 15855
+import { View } from "getAvatarURL";
+import ensureGuildLoaded from "ensureGuildLoaded";
+import createGuildRecordFromRust from "createGuildRecordFromRust";
+import mergeGuildAvatar from "mergeGuildAvatar";
 import { InviteSendStates } from "InviteSendStates";
-import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import importAllResult from "result";
+import { jsx } from "module_11808";
+import createCacheKey from "createCacheKey";
+import importAllResult from "Text";
 
 const require = arg1;
-let obj = {};
-obj = { width: 32, height: 32, borderRadius: require("_createForOfIteratorHelperLoose").radii.lg, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW, alignItems: "center", justifyContent: "center", overflow: "hidden", marginTop: 0, marginRight: 10, borderColor: require("_createForOfIteratorHelperLoose").colors.BORDER_MUTED, borderStyle: "solid", borderWidth: 2 };
-obj.acronym = obj;
-let closure_9 = _createForOfIteratorHelperLoose.createStyles(obj);
-const memoResult = require("result").memo(function ActivityInviteSheetRow(row) {
+let obj = { acronym: null };
+obj = { width: 32, height: 32, borderRadius: require("Themes").radii.lg, backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW, alignItems: "center", justifyContent: "center", overflow: "hidden", marginTop: 0, marginRight: 10, borderColor: require("Themes").colors.BORDER_MUTED, borderStyle: "solid", borderWidth: 2 };
+obj[0] = obj;
+let closure_9 = createCacheKey.createStyles(obj);
+const memoResult = require("Text").memo(function ActivityInviteSheetRow(row) {
   let end;
   let error;
   let isSubmitting;
@@ -27,41 +27,36 @@ const memoResult = require("result").memo(function ActivityInviteSheetRow(row) {
   ({ onInviteSent: require, onPressAvatar } = row);
   row = row.row;
   const sendState = row.sendState;
-  function handlePress() {
-    callback(row);
-  }
+  let id;
   ({ end, error, isSubmitting, start } = row);
-  const id = row.item.id;
+  id = row.item.id;
   let obj = require(row[9]);
-  const items = [_isNativeReflectConstruct];
+  const items = [ensureGuildLoaded];
   const stateFromStores = obj.useStateFromStores(items, () => outer1_4.getChannel(id));
-  const tmp3 = onPressAvatar(row[10])(stateFromStores);
+  let str = onPressAvatar(row[10])(stateFromStores);
   const type = row.type;
   if (require(row[11]).RowTypes.DM !== type) {
-    if (require(row[11]).RowTypes.FRIEND !== type) {
-      if (require(row[11]).RowTypes.GROUP_DM === type) {
-        let tmp22 = null;
+    if (tmp2(tmp3[11]).RowTypes.FRIEND !== type) {
+      if (tmp2(tmp3[11]).RowTypes.GROUP_DM === type) {
+        let tmp19 = null;
         if (null != stateFromStores) {
-          obj = {};
-          let obj9 = onPressAvatar(row[17]);
-          let obj10 = onPressAvatar(row[17]);
-          obj = {};
-          ({ id: obj12.id, icon: obj12.icon, application_id: obj12.applicationId } = stateFromStores);
-          obj.size = 32;
-          obj.source = obj9.makeSource(obj10.getChannelIconURL(obj));
-          obj.size = require(row[13]).AvatarSizes.REFRESH_MEDIUM_32;
-          tmp22 = jsx(require(row[13]).Avatar, {});
+          obj = { source: null, size: null };
+          let tmp5Result = tmp5(tmp3[17]);
+          tmp5Result = tmp5(tmp3[17]);
+          obj = { id: null, icon: null, applicationId: null, size: 32 };
+          ({ id: obj12[0], icon: obj12[1], application_id: obj12[2] } = stateFromStores);
+          obj[0] = tmp5Result.makeSource(tmp5Result.getChannelIconURL(obj));
+          obj[1] = tmp2(tmp3[13]).AvatarSizes.REFRESH_MEDIUM_32;
+          tmp19 = jsx(tmp2(tmp3[13]).Avatar, { id: null, icon: null, applicationId: null, size: 32 });
         }
-        let str4 = "";
-        if (null != tmp3) {
-          str4 = tmp3;
+        if (str == null) {
+          str = "";
         }
-        let str2 = str4;
-        let tmp14 = tmp22;
-        let P;
-      } else if (require(row[11]).RowTypes.CHANNEL === type) {
+        let str2 = str;
+        let tmp14 = tmp19;
+      } else if (tmp2(tmp3[11]).RowTypes.CHANNEL === type) {
         let guild_id;
-        if (null != stateFromStores) {
+        if (stateFromStores != null) {
           guild_id = stateFromStores.guild_id;
         }
         let guild;
@@ -72,46 +67,55 @@ const memoResult = require("result").memo(function ActivityInviteSheetRow(row) {
           return null;
         } else {
           if (null != guild.icon) {
-            let obj1 = {};
-            let obj5 = onPressAvatar(row[17]);
-            let obj6 = onPressAvatar(row[17]);
-            const obj2 = {};
-            ({ id: obj8.id, icon: obj8.icon } = guild);
-            obj2.size = 32;
-            obj1.source = obj5.makeSource(obj6.getGuildIconURL(obj2));
-            obj1.size = require(row[13]).AvatarSizes.REFRESH_MEDIUM_32;
-            tmp14 = jsx(require(row[13]).Avatar, {});
+            const obj1 = { source: null, size: null };
+            const tmp5Result1 = tmp5(tmp3[17]);
+            ({ id: obj8[0], icon: obj8[1] } = guild);
+            obj1[0] = tmp5Result1.makeSource(tmp5(tmp3[17]).getGuildIconURL({ id: null, icon: null, size: 32 }));
+            obj1[1] = tmp2(tmp3[13]).AvatarSizes.REFRESH_MEDIUM_32;
+            tmp14 = jsx(tmp2(tmp3[13]).Avatar, { source: null, size: null });
+            const obj2 = { id: null, icon: null, size: 32 };
+            const tmp5Result2 = tmp5(tmp3[17]);
           } else {
-            obj1 = require(row[18]);
-            const obj3 = { style: tmp.acronym };
-            const acronym = obj1.getAcronym(guild.name);
-            const obj4 = { variant: "text-sm/bold", children: acronym };
-            obj3.children = jsx(require(row[19]).Text, { variant: "text-sm/bold", children: acronym });
-            tmp14 = <id style={tmp.acronym} />;
+            const obj3 = { style: null, children: null };
+            obj3[0] = tmp.acronym;
+            const acronym = tmp2(tmp3[18]).getAcronym(guild.name);
+            const obj4 = { variant: "text-sm/bold", children: null };
+            obj4[1] = acronym;
+            obj3[1] = jsx(tmp2(tmp3[19]).Text, { variant: "text-sm/bold", children: null });
+            tmp14 = <id style={null}>{null}</id>;
+            const tmp2Result = tmp2(tmp3[18]);
           }
           str2 = "";
-          if (null != tmp3) {
+          if (null != str) {
             const _HermesInternal = HermesInternal;
-            str2 = "#" + tmp3;
+            str2 = "#" + str;
           }
-          P = undefined;
         }
       } else {
         return null;
       }
     }
-    obj5 = { start, end, icon: tmp14, label: str2 };
-    obj6 = { sendState, onPressSend: handlePress };
-    obj5.trailing = jsx(onPressAvatar(row[21]), { sendState, onPressSend: handlePress });
-    obj5.onPress = handlePress;
-    let tmp42 = null != error || isSubmitting;
-    if (!tmp42) {
-      tmp42 = sendState === InviteSendStates.SENT;
+    function handlePress() {
+      callback(row);
     }
-    obj5.disabled = tmp42;
-    obj5.accessibilityActions = tmp33;
-    obj5.onAccessibilityAction = P;
-    return jsx(require(row[20]).TableRow, { start, end, icon: tmp14, label: str2 });
+    const obj5 = { start: null, end: null, icon: null, label: null, trailing: null, onPress: null, disabled: null, accessibilityActions: null, onAccessibilityAction: null };
+    obj5[0] = start;
+    obj5[1] = end;
+    obj5[2] = tmp14;
+    obj5[3] = str2;
+    const obj6 = { sendState: null, onPressSend: null };
+    obj6[0] = sendState;
+    obj6[1] = handlePress;
+    obj5[4] = jsx(tmp5(tmp3[21]), { sendState: null, onPressSend: null });
+    obj5[5] = handlePress;
+    let tmp30 = null != error || isSubmitting;
+    if (!tmp30) {
+      tmp30 = sendState === InviteSendStates.SENT;
+    }
+    obj5[6] = tmp30;
+    obj5[7] = tmp26;
+    obj5[8] = fn;
+    return jsx(tmp2(tmp3[20]).TableRow, { start: null, end: null, icon: null, label: null, trailing: null, onPress: null, disabled: null, accessibilityActions: null, onAccessibilityAction: null });
   }
   user = user.getUser(id);
   const obj7 = {
@@ -119,78 +123,57 @@ const memoResult = require("result").memo(function ActivityInviteSheetRow(row) {
     accessibilityElementsHidden: true,
     onPress(stopPropagation) {
       stopPropagation.stopPropagation();
-      if (null != onPressAvatar) {
-        onPressAvatar(id);
+      if (onPressAvatar != null) {
+        tmp2(id);
       }
     },
-    style: { padding: 8, margin: -8 }
+    style: { padding: 8, margin: -8 },
+    children: null
   };
-  const obj8 = {};
   let avatarSource;
-  if (null != user) {
+  if (user != null) {
     avatarSource = user.getAvatarSource(undefined);
   }
-  let tmp29 = null;
-  if (null != avatarSource) {
-    tmp29 = avatarSource;
+  if (avatarSource == null) {
+    avatarSource = null;
   }
-  obj8.source = tmp29;
-  obj8.size = require(row[13]).AvatarSizes.REFRESH_MEDIUM_32;
-  obj7.children = jsx(require(row[13]).Avatar, {});
+  const obj8 = { source: avatarSource, size: require(row[13]).AvatarSizes.REFRESH_MEDIUM_32 };
+  obj7[4] = jsx(require(row[13]).Avatar, { source: avatarSource, size: require(row[13]).AvatarSizes.REFRESH_MEDIUM_32 });
+  let tmp21Result = tmp21(tmp2(tmp3[12]).PressableOpacity, obj7);
+  const obj9 = { nick: null, user: null };
   tmp = callback();
-  obj9 = {};
-  const tmp27Result = jsx(require(row[12]).PressableOpacity, {
-    importantForAccessibility: "no-hide-descendants",
-    accessibilityElementsHidden: true,
-    onPress(stopPropagation) {
-      stopPropagation.stopPropagation();
-      if (null != onPressAvatar) {
-        onPressAvatar(id);
-      }
-    },
-    style: { padding: 8, margin: -8 }
-  });
-  const tmp31 = onPressAvatar(row[14]);
-  obj9.nick = onPressAvatar(row[15]).getGlobalName(user);
-  obj9.user = user;
-  tmp33 = undefined;
-  const obj17 = onPressAvatar(row[15]);
+  const tmp5Result3 = onPressAvatar(row[14]);
+  obj9[0] = onPressAvatar(row[15]).getGlobalName(user);
+  obj9[1] = user;
+  tmp26 = undefined;
+  tmp21Result = tmp21(tmp5Result3, obj9);
   if (null != onPressAvatar) {
-    obj10 = { name: "viewProfile" };
-    const intl = require(row[16]).intl;
-    const obj11 = {};
+    const intl = tmp2(tmp3[16]).intl;
     let tag;
-    if (null != user) {
+    if (user != null) {
       tag = user.tag;
     }
-    obj11.username = tag;
-    obj10.label = intl.formatToPlainString(require(row[16]).t.uCenkh, obj11);
+    const obj10 = { name: "viewProfile", label: null };
+    const obj11 = { username: null };
+    obj11[0] = tag;
+    obj10[1] = intl.formatToPlainString(tmp2(tmp3[16]).t.uCenkh, obj11);
     const items1 = [obj10];
-    tmp33 = items1;
+    tmp26 = items1;
   }
-  class P {
-    constructor(arg0) {
-      tmp = "viewProfile" === row.nativeEvent.actionName;
-      if (tmp) {
-        tmp2 = onPressAvatar;
-        tmp3 = null;
-        tmp = null !== onPressAvatar;
-      }
-      if (tmp) {
-        tmp4 = onPressAvatar;
-        tmp5 = null;
-        if (null != onPressAvatar) {
-          tmp6 = onPressAvatar;
-          tmp7 = id;
-          tmp8 = onPressAvatar(id);
-        }
-      }
-      return;
+  fn = function w(nativeEvent) {
+    let tmp = "viewProfile" === nativeEvent.nativeEvent.actionName;
+    if (tmp) {
+      tmp = null !== onPressAvatar;
     }
-  }
-  tmp14 = tmp27Result;
-  str2 = <tmp31 />;
+    if (tmp) {
+      if (onPressAvatar != null) {
+        tmp4(id);
+      }
+    }
+  };
+  str2 = tmp21Result;
+  tmp14 = tmp21Result;
 });
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/activities/panel/native/ActivityInviteSheetRow.tsx");
+const result = require("ensureGuildLoaded").fileFinishedImporting("modules/activities/panel/native/ActivityInviteSheetRow.tsx");
 
 export default memoResult;

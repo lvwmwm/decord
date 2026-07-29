@@ -1,28 +1,30 @@
-// Module ID: 9753
-// Function ID: 75831
+// Module ID: 9775
+// Function ID: 9776
 // Name: SocialLayerStorefrontWishlistItemCard
-// Dependencies: [31, 4202, 9751, 33, 4165, 689, 566, 8029, 5119, 8646, 2]
+// Dependencies: [19, 4226, 9773, 21, 4189, 712, 589, 8053, 5141, 8670, 2]
 // Exports: default
 
-// Module 9753 (SocialLayerStorefrontWishlistItemCard)
-import result from "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_5 from "_isNativeReflectConstruct";
+// Module 9775 (SocialLayerStorefrontWishlistItemCard)
+import noop from "noop";
+import addApplication from "addApplication";
+import initialize from "initialize";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
 let closure_6;
-let closure_7;
-let closure_8;
+let error;
+let metroImportAll;
 const require = arg1;
-({ jsx: closure_6, Fragment: closure_7, jsxs: closure_8 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { position: "absolute", top: require("_createForOfIteratorHelperLoose").space.PX_8, left: require("_createForOfIteratorHelperLoose").space.PX_8, width: 24, height: 24, borderRadius: require("_createForOfIteratorHelperLoose").radii.sm, zIndex: 1 };
-_createForOfIteratorHelperLoose.applicationIcon = _createForOfIteratorHelperLoose;
-const obj1 = { shadowColor: undefined, shadowOffset: { width: 0, height: 0 }, shadowOpacity: 0, shadowRadius: 0, elevation: 0, overflow: "visible", borderRadius: require("_createForOfIteratorHelperLoose").radii.none };
-_createForOfIteratorHelperLoose.nestedCard = obj1;
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/wishlists/native/SocialLayerStorefrontWishlistItemCard.tsx");
+({ jsx: closure_6, Fragment: error, jsxs: metroImportAll } = jsxProd);
+createCacheKey = { applicationIcon: null, nestedCard: null };
+createCacheKey = { position: "absolute", top: require("Themes").space.PX_8, left: require("Themes").space.PX_8, width: 24, height: 24, borderRadius: require("Themes").radii.sm, zIndex: 1 };
+createCacheKey[0] = createCacheKey;
+const obj1 = { shadowColor: "Array", shadowOffset: 0, shadowOpacity: 0, shadowRadius: 0, elevation: "visible", overflow: null, borderRadius: "\u{1F977}\u{1F3FD}" };
+obj1[1] = { width: 0, height: 0 };
+obj1[6] = require("Themes").radii.none;
+createCacheKey[1] = obj1;
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+const result = require("initialize").fileFinishedImporting("modules/wishlists/native/SocialLayerStorefrontWishlistItemCard.tsx");
 
 export default function SocialLayerStorefrontWishlistItemCard(sku) {
   sku = sku.sku;
@@ -32,66 +34,64 @@ export default function SocialLayerStorefrontWishlistItemCard(sku) {
   }
   const wishlistOwnerId = sku.wishlistOwnerId;
   const size = sku.size;
-  let obj = { sku: 0, isOwned: 0, source: 0, wishlistOwnerId: 0, size: 0 };
-  Object.setPrototypeOf(null);
-  const merged = Object.assign(sku, obj);
+  const merged = Object.assign(sku, Object.create(null));
   let applicationId;
   let stateFromStores1;
   let memo;
   let c6;
-  let items = [memo];
+  let obj = sku(size[6]);
+  const items = [memo];
   const items1 = [sku.id, wishlistOwnerId];
   applicationId = sku.applicationId;
-  const stateFromStores = sku(size[6]).useStateFromStores(items, () => {
+  const stateFromStores = obj.useStateFromStores(items, () => {
     let hasSentGiftResult = null != wishlistOwnerId;
     if (hasSentGiftResult) {
-      hasSentGiftResult = memo.hasSentGift(sku.id, wishlistOwnerId);
+      hasSentGiftResult = memo.hasSentGift(sku.id, tmp);
     }
     return hasSentGiftResult;
   }, items1);
-  const obj2 = sku(size[6]);
   const items2 = [stateFromStores1];
   const items3 = [applicationId];
   stateFromStores1 = sku(size[6]).useStateFromStores(items2, () => {
     let application = null;
     if (null != applicationId) {
-      application = stateFromStores1.getApplication(applicationId);
+      application = stateFromStores1.getApplication(tmp);
     }
     return application;
   }, items3);
   const items4 = [stateFromStores1];
   memo = applicationId.useMemo(() => {
     let iconSource;
-    if (null != stateFromStores1) {
+    if (stateFromStores1 != null) {
       iconSource = stateFromStores1.getIconSource(24);
     }
     return iconSource;
   }, items4);
-  const tmp6 = _createForOfIteratorHelperLoose();
-  c6 = tmp6;
+  const tmp5 = createCacheKey();
+  c6 = tmp5;
   const items5 = [sku, size, memo, , ];
-  ({ applicationIcon: arr6[3], nestedCard: arr6[4] } = tmp6);
+  ({ applicationIcon: arr6[3], nestedCard: arr6[4] } = tmp5);
   const callback = applicationId.useCallback(() => {
-    let obj = {};
-    obj = { sku, size, containerStyle: _undefined.nestedCard };
-    const items = [_undefined(wishlistOwnerId(size[7]), obj), ];
-    let tmp3 = null != memo;
-    if (tmp3) {
-      obj = { source: memo, style: _undefined.applicationIcon };
-      tmp3 = _undefined(wishlistOwnerId(size[8]), obj);
+    let obj = { sku, size, containerStyle: _undefined.nestedCard };
+    const children = [_undefined(wishlistOwnerId(size[7]), obj), ];
+    let tmp3Result = null != memo;
+    if (tmp3Result) {
+      obj = { source: null, style: null };
+      obj[0] = tmp7;
+      obj[1] = _undefined.applicationIcon;
+      tmp3Result = _undefined(wishlistOwnerId(size[8]), obj);
     }
-    items[1] = tmp3;
-    obj.children = items;
-    return outer1_8(outer1_7, obj);
+    children[1] = tmp3Result;
+    return outer1_8(outer1_7, { children });
   }, items5);
-  obj = { accessibilityLabel: sku.name, renderPreview: callback, source: sku.source };
-  const obj3 = sku(size[6]);
-  const tmp8 = c6;
+  obj = { accessibilityLabel: sku.name, renderPreview: callback, source: sku.source, isOwned: null, size: null };
+  const obj2 = sku(size[6]);
+  const tmp7 = c6;
   if (!flag) {
     flag = stateFromStores;
   }
-  obj.isOwned = flag;
-  obj.size = size;
+  obj[3] = flag;
+  obj[4] = size;
   const merged1 = Object.assign(merged);
-  return tmp8(wishlistOwnerId(size[9]), obj);
+  return tmp7(wishlistOwnerId(size[9]), obj);
 };

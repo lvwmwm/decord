@@ -1,309 +1,198 @@
-// Module ID: 4313
-// Function ID: 37567
-// Name: _createForOfIteratorHelperLoose
-// Dependencies: [6, 7, 4226, 2]
+// Module ID: 4299
+// Function ID: 4300
+// Name: getMaxSinkValue
+// Dependencies: [4250, 2]
 
-// Module 4313 (_createForOfIteratorHelperLoose)
-import _classCallCheck from "_classCallCheck";
-import _defineProperties from "_defineProperties";
+// Module 4299 (getMaxSinkValue)
 import DesktopSources from "DesktopSources";
 
-let closure_2;
-let closure_3;
-let closure_4;
-let closure_5;
-function _createForOfIteratorHelperLoose(iterable) {
-  let _classCallCheck = iterable;
-  iterable = "undefined" !== typeof Symbol;
-  if (iterable) {
-    const _Symbol = Symbol;
-    iterable = iterable[Symbol.iterator];
+let c0;
+let c3;
+let closure_1;
+let obj1;
+({ defaultVideoQualityOptions: c0, VIDEO_QUALITY_FRAMERATE: closure_1, VIDEO_QUALITY_FRAMERATE_MUTED_2: obj1, VIDEO_QUALITY_FRAMERATE_MUTED: c3 } = DesktopSources);
+let MediaSinkWantsLadder;
+class MediaSinkWantsLadder {
+  constructor() {
+    tmp = global;
+    if (global === undefined) {
+      tmp = __esModule;
+    }
+    ({ width, height } = tmp.videoBudget);
+    if (width > 0) {
+      if (height > 0) {
+        obj = Object.create(new.target.prototype);
+        obj.pixelBudget = width * height;
+        tmp3 = MediaSinkWantsLadder;
+        obj.ladder = MediaSinkWantsLadder.calculateLadder(obj.pixelBudget);
+        obj.orderedLadder = MediaSinkWantsLadder.calculateOrderedLadder(obj.ladder);
+        return obj;
+      }
+    }
+    error = new Error("Invalid argument");
+    throw error;
   }
-  if (!iterable) {
-    iterable = iterable[Symbol.iterator];
+}
+const prototype = MediaSinkWantsLadder.prototype;
+prototype["getMaxSinkValue"] = function getMaxSinkValue(videoParticipantCount, arg1) {
+  let pixelCount;
+  let wantValue2;
+  let num = arg1;
+  if (arg1 === undefined) {
+    num = 0;
   }
-  if (iterable) {
-    const iter = iterable.call(iterable);
-    const next = iter.next;
-    return next.bind(iter);
+  if (videoParticipantCount < 0) {
+    const _Error = Error;
+    const error = new Error("getMaxSinkValue: Requested " + videoParticipantCount);
+    throw error;
   } else {
-    const _Array = Array;
-    let tmp = iterable;
-    if (!Array.isArray(iterable)) {
-      let tmp2;
-      if (iterable) {
-        if ("string" === typeof iterable) {
-          tmp2 = _arrayLikeToArray(iterable, undefined);
-        } else {
-          const toString = {}.toString;
-          const substr = toString.call(iterable).slice(8, -1);
-          let name = substr;
-          if (tmp3) {
-            name = iterable.constructor.name;
-          }
-          if ("Map" !== name) {
-            if ("Set" !== name) {
-              if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(iterable, undefined);
-              } else {
-                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
-              }
-            }
-            tmp2 = arr;
-          }
-          const _Array2 = Array;
-          arr = Array.from(iterable);
-          const callResult = toString.call(iterable);
-          tmp3 = "Object" === substr && iterable.constructor;
+    let wantValue = this.orderedLadder[0].wantValue;
+    const orderedLadder = this.orderedLadder;
+    for (const item10015 of orderedLadder) {
+      ({ pixelCount, wantValue: wantValue2 } = item10015);
+      if (num > 0) {
+        let tmp4 = pixelCount;
+        if (num < pixelCount) {
+          wantValue = wantValue2;
+          let tmp7 = obj;
+          obj.return();
+          break;
         }
+        return wantValue;
       }
-      tmp = tmp2;
-      if (!tmp2) {
-        const _TypeError = TypeError;
-        const typeError = new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
-        throw typeError;
-      }
-    }
-    if (tmp) {
-      _classCallCheck = tmp;
-    }
-    let c1 = 0;
-    return () => {
-      if (_defineProperties >= length.length) {
-        let obj = { done: true };
+      let tmp5 = pixelCount;
+      if (pixelCount * arg0 > tmp.pixelBudget) {
+        let tmp6 = obj;
+        obj.return();
+        break;
       } else {
-        obj = { done: false };
-        _defineProperties = tmp3 + 1;
-        obj.value = length[+_defineProperties];
+        wantValue = wantValue2;
+        continue;
       }
-      return obj;
-    };
-  }
-}
-function _arrayLikeToArray(arg0, arg1) {
-  let length;
-  if (tmp) {
-    length = arg0.length;
-  }
-  const ArrayResult = Array(length);
-  for (let num = 0; num < length; num = num + 1) {
-    ArrayResult[num] = arg0[num];
-  }
-  return ArrayResult;
-}
-({ defaultVideoQualityOptions: closure_2, VIDEO_QUALITY_FRAMERATE: closure_3, VIDEO_QUALITY_FRAMERATE_MUTED_2: closure_4, VIDEO_QUALITY_FRAMERATE_MUTED: closure_5 } = DesktopSources);
-let tmp3 = (() => {
-  class MediaSinkWantsLadder {
-    constructor() {
-      tmp = arg0;
-      self = this;
-      if (arg0 === undefined) {
-        tmp = outer1_2;
-      }
-      tmp2 = MediaSinkWantsLadder(self, MediaSinkWantsLadder);
-      ({ width, height } = tmp.videoBudget);
-      if (width > 0) {
-        if (height > 0) {
-          self.pixelBudget = width * height;
-          tmp3 = MediaSinkWantsLadder;
-          self.ladder = MediaSinkWantsLadder.calculateLadder(self.pixelBudget);
-          self.orderedLadder = MediaSinkWantsLadder.calculateOrderedLadder(self.ladder);
-          return;
-        }
-      }
-      error = new Error("Invalid argument");
-      throw error;
+      break;
     }
   }
-  let obj = {
-    key: "getMaxSinkValue",
-    value(arg0) {
-      let pixelCount;
-      let wantValue;
-      let num = arg1;
-      const self = this;
-      if (arg1 === undefined) {
-        num = 0;
+};
+prototype["getResolution"] = function getResolution(arg0) {
+  let tmp2 = null;
+  for (const item10010 of tmp3) {
+    let tmp4 = item10010;
+    if (arg0 >= item10010.wantValue) {
+      tmp2 = item10010;
+      continue;
+    } else {
+      let tmp5 = obj;
+      obj.return();
+      break;
+    }
+    let first = tmp2;
+    if (tmp2 == null) {
+      first = tmp.orderedLadder[0];
+    }
+    let obj = { width: null, height: null, budgetPortion: null, mutedFramerate: null, framerate: null };
+    let tmp7 = first;
+    ({ width: obj2[0], height: obj2[1], budgetPortion: obj2[2], mutedFramerate: obj2[3], framerate: obj2[4] } = first);
+    return obj;
+  }
+};
+MediaSinkWantsLadder["calculateLadder"] = function calculateLadder(pixelBudget) {
+  let budgetPortion;
+  let height;
+  let width;
+  const set = new Set([0, 4, 8, 10]);
+  const items = [];
+  let num = 1;
+  do {
+    let result = 16 * num / 9;
+    let tmp2 = num;
+    if (set.has(result % 16)) {
+      if (set.has(num % 16)) {
+        let result1 = result * num;
+        let obj = { pixelCount: null, width: null, height: null, budgetPortion: null, wantValue: 0 };
+        obj[0] = result1;
+        obj[1] = result;
+        obj[2] = num;
+        obj[3] = result1 / pixelBudget;
+        let arr = items.push(obj);
       }
-      if (arg0 < 0) {
-        const _Error = Error;
-        const error = new Error("getMaxSinkValue: Requested " + arg0);
-        throw error;
+    }
+    num = num + 1;
+  } while (num < 4096);
+  let num2 = 100;
+  let num3 = 1;
+  let num4 = 0;
+  width = 0;
+  height = 0;
+  budgetPortion = 0;
+  const iter = items[Symbol.iterator]();
+  let tmp5 = num4;
+  do {
+    let tmp6 = items;
+    let nextResult = iter.next();
+    let tmp8 = iter;
+    while (iter !== undefined) {
+      let tmp9 = nextResult;
+      if (nextResult.pixelCount * num3 > pixelBudget) {
+        let tmp11 = iter;
+        iter.return();
+        break;
       } else {
-        const wantValue2 = self.orderedLadder[0].wantValue;
-        const tmp9 = outer1_6(self.orderedLadder);
-        const iter3 = tmp9();
-        let iter2 = iter3;
-        let tmp2 = wantValue2;
-        let tmp = wantValue2;
-        if (!iter3.done) {
-          while (true) {
-            ({ pixelCount, wantValue } = iter2.value);
-            if (num <= 0) {
-              tmp = tmp2;
-              if (pixelCount * arg0 > self.pixelBudget) {
-                break;
-              } else {
-                let iter = tmp9();
-                iter2 = iter;
-                tmp2 = wantValue;
-                tmp = wantValue;
-                if (iter.done) {
-                  break;
-                }
-              }
-            } else {
-              tmp = wantValue;
-              if (num < pixelCount) {
-                break;
-              }
-            }
-            break;
-          }
-        }
-        return tmp;
+        let tmp10 = nextResult;
+        ({ width, height, budgetPortion } = tmp9);
+        continue;
       }
+      continue;
     }
-  };
-  let items = [obj, ];
-  obj = {
-    key: "getResolution",
-    value(arg0) {
-      const tmp = outer1_6(this.orderedLadder);
-      const iter = tmp();
-      let iter2 = iter;
-      let tmp2 = null;
-      let first = null;
-      if (!iter.done) {
-        const value = iter2.value;
-        first = tmp2;
-        while (arg0 >= value.wantValue) {
-          let iter3 = tmp();
-          iter2 = iter3;
-          tmp2 = value;
-          first = value;
-          if (iter3.done) {
-            break;
-          }
-        }
-      }
-      const obj = {};
-      if (null == first) {
-        first = this.orderedLadder[0];
-      }
-      ({ width: obj.width, height: obj.height, budgetPortion: obj.budgetPortion, mutedFramerate: obj.mutedFramerate, framerate: obj.framerate } = first);
-      return obj;
+    let tmp12 = width;
+    let diff = num2;
+    if (tmp5 !== width) {
+      let tmp14 = MediaSinkWantsLadder;
+      obj = { width: null, height: null, budgetPortion: null, mutedFramerate: null, framerate: null };
+      let tmp15 = width;
+      obj[0] = width;
+      let tmp16 = height;
+      obj[1] = height;
+      let tmp17 = budgetPortion;
+      obj[2] = budgetPortion;
+      obj[3] = MediaSinkWantsLadder.getMutedFramerate(num2);
+      let tmp18 = closure_1;
+      obj[4] = closure_1;
+      {}[num2] = obj;
+      diff = num2 - 10;
+      tmp5 = width;
     }
-  };
-  items[1] = obj;
-  obj = {
-    key: "calculateLadder",
-    value(arg0) {
-      let budgetPortion;
-      let height;
-      let width;
-      const set = new Set([0, 4, 8, 10]);
-      const items = [];
-      let num = 1;
-      let num2 = 1;
-      do {
-        let result = 16 * num2 / 9;
-        if (set.has(result % 16)) {
-          if (set.has(num2 % 16)) {
-            let result1 = result * num2;
-            let obj = { pixelCount: result1, width: result, height: num2, budgetPortion: result1 / arg0, wantValue: 0 };
-            let arr = items.push(obj);
-          }
-        }
-        num2 = num2 + 1;
-      } while (num2 < 4096);
-      obj = {};
-      let num3 = 100;
-      let num4 = 0;
-      do {
-        let tmp4 = outer1_6;
-        let tmp5 = outer1_6(items);
-        let iter = tmp5();
-        let iter2 = iter;
-        width = 0;
-        height = 0;
-        budgetPortion = 0;
-        let num5 = 0;
-        let num6 = 0;
-        let num7 = 0;
-        if (!iter.done) {
-          let value = iter2.value;
-          num5 = width;
-          num6 = height;
-          num7 = budgetPortion;
-          let tmp6 = value;
-          while (value.pixelCount * num <= arg0) {
-            ({ width, height, budgetPortion } = value);
-            let iter3 = tmp5();
-            iter2 = iter3;
-            num5 = width;
-            num6 = height;
-            num7 = budgetPortion;
-            let tmp7 = value;
-            if (iter3.done) {
-              break;
-            }
-          }
-        }
-        let diff = num3;
-        if (num4 !== num5) {
-          let tmp9 = MediaSinkWantsLadder;
-          let obj1 = { width: num5, height: num6, budgetPortion: num7, mutedFramerate: MediaSinkWantsLadder.getMutedFramerate(num3) };
-          let tmp10 = outer1_3;
-          obj1.framerate = outer1_3;
-          obj[num3] = obj1;
-          diff = num3 - 10;
-          num4 = num5;
-        }
-        num = num + 1;
-        num3 = diff;
-      } while (num <= 25);
-      return obj;
+    num3 = num3 + 1;
+    num2 = diff;
+    num4 = tmp5;
+  } while (num3 <= 25);
+};
+MediaSinkWantsLadder["getMutedFramerate"] = function getMutedFramerate(arg0) {
+  return arg0 <= 20 ? closure_2 : closure_3;
+};
+MediaSinkWantsLadder["calculateOrderedLadder"] = function calculateOrderedLadder(ladder) {
+  const items = [];
+  const keys = Object.keys(ladder);
+  const mapped = keys.map((arg0) => Number(arg0));
+  const sorted = mapped.sort((arg0, arg1) => arg0 - arg1);
+  const iter = sorted[Symbol.iterator]();
+  const nextResult = iter.next();
+  while (iter !== undefined) {
+    let tmp3 = nextResult;
+    if (0 !== nextResult) {
+      let tmp4 = nextResult;
+      let size = ladder[tmp3];
+      let obj = { pixelCount: null, wantValue: null };
+      obj[0] = size.width * size.height;
+      obj[1] = tmp3;
+      let tmp5 = obj;
+      let tmp6 = size;
+      let merged = Object.assign(size);
+      let arr = items.push(obj);
     }
-  };
-  const items1 = [
-    obj,
-    {
-      key: "getMutedFramerate",
-      value(arg0) {
-        return arg0 <= 20 ? outer1_4 : outer1_5;
-      }
-    },
-    {
-      key: "calculateOrderedLadder",
-      value(arg0) {
-        let iter2;
-        const items = [];
-        const keys = Object.keys(arg0);
-        const mapped = keys.map((arg0) => Number(arg0));
-        const tmp = outer1_6(mapped.sort((arg0, arg1) => arg0 - arg1));
-        let iter = tmp();
-        if (!iter.done) {
-          do {
-            let value = iter.value;
-            if (0 !== value) {
-              let size = arg0[value];
-              let obj = { pixelCount: size.width * size.height, wantValue: value };
-              let tmp2 = obj;
-              let tmp3 = size;
-              let merged = Object.assign(size);
-              let arr = items.push(obj);
-            }
-            iter2 = tmp();
-            iter = iter2;
-          } while (!iter2.done);
-        }
-        return items;
-      }
-    }
-  ];
-  return callback(MediaSinkWantsLadder, items, items1);
-})();
-let result = require("DesktopSources").fileFinishedImporting("../discord_common/js/packages/media-engine/MediaSinkWantsLadder.tsx");
+    continue;
+  }
+  return items;
+};
+let result = require("set").fileFinishedImporting("../discord_common/js/packages/media-engine/MediaSinkWantsLadder.tsx");
 
-export const MediaSinkWantsLadder = tmp3;
+export { MediaSinkWantsLadder };

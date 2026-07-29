@@ -1,311 +1,290 @@
-// Module ID: 14294
-// Function ID: 109650
-// Name: _createForOfIteratorHelperLoose
-// Dependencies: [31, 482, 4098, 3979, 4010, 4009, 689, 1315, 3869, 1212, 2]
+// Module ID: 14316
+// Function ID: 14317
+// Name: getMaxColors
+// Dependencies: [19, 505, 4122, 4003, 4034, 4033, 712, 1339, 3893, 1236, 2]
 // Exports: convertThemesToAnimatedThemes, useLaunchWelcomeSystemTheme
 
-// Module 14294 (_createForOfIteratorHelperLoose)
-import result from "result";
+// Module 14316 (getMaxColors)
+import noop from "noop";
 import { ThemeTypes } from "sum";
 
 const require = arg1;
-function _createForOfIteratorHelperLoose(iterable) {
-  let closure_0 = iterable;
-  iterable = "undefined" !== typeof Symbol;
-  if (iterable) {
-    const _Symbol = Symbol;
-    iterable = iterable[Symbol.iterator];
-  }
-  if (!iterable) {
-    iterable = iterable[Symbol.iterator];
-  }
-  if (iterable) {
-    const iter = iterable.call(iterable);
-    const next = iter.next;
-    return next.bind(iter);
-  } else {
-    const _Array = Array;
-    let tmp = iterable;
-    if (!Array.isArray(iterable)) {
-      let tmp2;
-      if (iterable) {
-        if ("string" === typeof iterable) {
-          tmp2 = _arrayLikeToArray(iterable, undefined);
-        } else {
-          const toString = {}.toString;
-          const substr = toString.call(iterable).slice(8, -1);
-          let name = substr;
-          if (tmp3) {
-            name = iterable.constructor.name;
-          }
-          if ("Map" !== name) {
-            if ("Set" !== name) {
-              if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(iterable, undefined);
-              } else {
-                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
-              }
-            }
-            tmp2 = arr;
-          }
-          const _Array2 = Array;
-          arr = Array.from(iterable);
-          const callResult = toString.call(iterable);
-          tmp3 = "Object" === substr && iterable.constructor;
-        }
-      }
-      tmp = tmp2;
-      if (!tmp2) {
-        const _TypeError = TypeError;
-        const typeError = new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
-        throw typeError;
-      }
-    }
-    if (tmp) {
-      closure_0 = tmp;
-    }
-    let c1 = 0;
-    return () => {
-      if (closure_1 >= length.length) {
-        let obj = { done: true };
-      } else {
-        obj = { done: false };
-        closure_1 = tmp3 + 1;
-        obj.value = length[+closure_1];
-      }
-      return obj;
-    };
-  }
-}
-function _arrayLikeToArray(arg0, arg1) {
-  let length;
-  if (tmp) {
-    length = arg0.length;
-  }
-  const ArrayResult = Array(length);
-  for (let num = 0; num < length; num = num + 1) {
-    ArrayResult[num] = arg0[num];
-  }
-  return ArrayResult;
-}
 function getMaxColors() {
-  let iter3;
-  const tmp = _createForOfIteratorHelperLoose(require(4098) /* getCustomThemesName */.getAllMobileThemes());
-  const iter = tmp();
-  let iter2 = iter;
+  const allMobileThemes = require(4122) /* getCustomThemesName */.getAllMobileThemes();
   let num = 0;
-  let num2 = 0;
-  if (!iter.done) {
-    do {
-      let value = iter2.value;
-      let type = value.type;
-      let tmp2 = require;
-      let tmp3 = dependencyMap;
-      if (require(3979) /* ClientThemeType */.ClientThemeType.STANDARD_BACKGROUND_THEME === type) {
-        let _Math3 = Math;
-        let bound = Math.max(1, num);
+  const iter = allMobileThemes[Symbol.iterator]();
+  const nextResult = iter.next();
+  while (iter !== undefined) {
+    let tmp3 = nextResult;
+    let type = nextResult.type;
+    let tmp4 = require;
+    let tmp5 = require;
+    let tmp6 = dependencyMap;
+    let tmp7 = dependencyMap;
+    if (require(4003) /* ClientThemeType */.ClientThemeType.STANDARD_BACKGROUND_THEME === type) {
+      let _Math3 = Math;
+      let tmp14 = num;
+      num = Math.max(1, num);
+    } else {
+      let tmp15 = tmp4;
+      let tmp16 = tmp6;
+      if (tmp5(4003).ClientThemeType.BACKGROUND_GRADIENT_PRESET === type) {
+        let _Math2 = Math;
+        let tmp12 = nextResult;
+        let tmp13 = num;
+        num = Math.max(tmp3.colors.length, num);
       } else {
-        let tmp7 = require;
-        let tmp8 = dependencyMap;
-        if (require(3979) /* ClientThemeType */.ClientThemeType.BACKGROUND_GRADIENT_PRESET === type) {
-          let _Math2 = Math;
-          bound = Math.max(value.colors.length, num);
-        } else {
-          let tmp4 = require;
-          let tmp5 = dependencyMap;
-          bound = num;
-          if (require(3979) /* ClientThemeType */.ClientThemeType.CUSTOM_BACKGROUND_GRADIENT === type) {
-            let _Math = Math;
-            bound = Math.max(value.customThemeSettings.colors.length, num);
-          }
+        let tmp8 = tmp4;
+        let tmp9 = tmp6;
+        if (tmp5(4003).ClientThemeType.CUSTOM_BACKGROUND_GRADIENT === type) {
+          let _Math = Math;
+          let tmp10 = nextResult;
+          let tmp11 = num;
+          num = Math.max(tmp3.customThemeSettings.colors.length, num);
         }
       }
-      iter3 = tmp();
-      num = bound;
-      iter2 = iter3;
-      num2 = bound;
-    } while (!iter3.done);
+    }
+    continue;
   }
-  return num2;
+  return num;
 }
-function mix(arg0, PRIMARY_800) {
-  let b;
-  let g;
-  let r;
-  let tmp2 = importDefault(4010);
-  if ("light" !== arg0) {
-    tmp2 = new tmp2(0, 0, 0, arg2);
-  } else {
-    tmp2 = new tmp2(255, 255, 255, arg3);
+function convertBackgroundGradientToAnimatedTheme(theme, prop, prop1) {
+  let closure_0 = theme;
+  let closure_1 = prop;
+  let closure_2 = prop1;
+  let obj = { theme: theme.theme, name: theme.getName(), midpointPercentage: null, angle: null, colors: null };
+  let num = theme.midpointPercentage;
+  if (num == null) {
+    num = 50;
   }
-  const obj = require(4009) /* hexToRgb */;
-  ({ r, g, b } = require(4009) /* hexToRgb */.hexToRgb(PRIMARY_800));
-  let num8 = 0.2;
-  if ("light" !== arg0) {
-    num8 = 0.3;
+  obj[2] = num;
+  let num2 = theme.angle;
+  if (num2 == null) {
+    num2 = 0;
   }
-  const hexToRgbResult = require(4009) /* hexToRgb */.hexToRgb(PRIMARY_800);
-  let tmp10 = importDefault(4010);
-  tmp10 = new tmp10(r, g, b, num8);
-  const obj2 = require(4009) /* hexToRgb */;
-  return require(4009) /* hexToRgb */.mixColors(tmp2, tmp10).toHexString();
-}
-function padWithLast(mapped, maxColors) {
-  let num = maxColors;
-  if (maxColors === undefined) {
-    num = 5;
+  obj[3] = num2;
+  const colors = theme.colors;
+  const mapped = colors.map((stop) => {
+    let b;
+    let g;
+    let r;
+    let tmp6 = prop(prop1[4]);
+    if ("light" !== theme.theme) {
+      tmp6 = new tmp6(0, 0, 0, tmp3);
+    } else {
+      tmp6 = new tmp6(255, 255, 255, tmp4);
+    }
+    let obj = theme(tmp2[5]);
+    ({ r, g, b } = obj.hexToRgb(prop(prop1[6]).unsafe_rawColors[stop.token]));
+    let num8 = 0.2;
+    if ("light" !== theme.theme) {
+      num8 = 0.3;
+    }
+    obj = { hex: null, stop: null };
+    const hexToRgbResult = obj.hexToRgb(prop(prop1[6]).unsafe_rawColors[stop.token]);
+    const tmp = prop;
+    const tmp13 = theme;
+    const tmp13Result = theme(prop1[5]);
+    const tmp15 = new tmp(prop1[4])(r, g, b, num8);
+    obj[0] = tmp13Result.mixColors(tmp6, new tmp(prop1[4])(r, g, b, num8)).toHexString();
+    obj[1] = stop.stop;
+    return obj;
+  });
+  let num3 = getMaxColors();
+  if (num3 === undefined) {
+    num3 = 5;
   }
   const items = [];
-  for (let num2 = 0; num2 < num; num2 = num2 + 1) {
-    if (num2 < mapped.length) {
-      let arr = items.push(mapped[num2]);
+  for (let num4 = 0; num4 < num3; num4 = num4 + 1) {
+    let tmp = num4;
+    if (num4 < mapped.length) {
+      let arr = items.push(mapped[num4]);
     } else {
-      let obj = { hex: mapped[mapped.length - 1].hex, stop: 100 };
+      obj = { hex: null, stop: 100 };
+      obj[0] = mapped[mapped.length - 1].hex;
       arr = items.push(obj);
     }
   }
-  return items;
-}
-function convertBackgroundGradientToAnimatedTheme(value, prop, prop1) {
-  let closure_0 = value;
-  let closure_1 = prop;
-  let closure_2 = prop1;
-  const obj = { theme: value.theme, name: value.getName() };
-  const midpointPercentage = value.midpointPercentage;
-  let num = 50;
-  if (null != midpointPercentage) {
-    num = midpointPercentage;
-  }
-  obj.midpointPercentage = num;
-  const angle = value.angle;
-  let num2 = 0;
-  if (null != angle) {
-    num2 = angle;
-  }
-  obj.angle = num2;
-  const colors = value.colors;
-  const mapped = colors.map((stop) => ({ hex: outer1_8(value.theme, prop(prop1[6]).unsafe_rawColors[stop.token], prop, prop1), stop: stop.stop }));
-  obj.colors = padWithLast(mapped, getMaxColors());
+  obj[4] = items;
   return obj;
 }
-function convertStandardThemeToAnimatedTheme(value, items, BACKGROUND_SURFACE_HIGH) {
-  const theme = value.theme;
+function convertStandardThemeToAnimatedTheme(theme, items, BACKGROUND_SURFACE_HIGH) {
+  theme = theme.theme;
   let str = "light";
   if (ThemeTypes.LIGHT !== theme) {
     str = "dark";
-    if (ThemeTypes.DARK !== theme) {
+    if (tmp.DARK !== theme) {
       str = "darker";
-      if (ThemeTypes.DARKER !== theme) {
+      if (tmp.DARKER !== theme) {
         str = "midnight";
-        if (ThemeTypes.MIDNIGHT !== theme) {
+        if (tmp.MIDNIGHT !== theme) {
           str = "light";
         }
       }
     }
   }
-  const internal = importDefault(689).internal;
+  const internal = importDefault(712).internal;
   let obj = { enabledExperiments: items };
   const semanticColor = internal.resolveSemanticColor(str, BACKGROUND_SURFACE_HIGH, obj);
-  obj = { theme: value.theme, name: value.getName(), midpointPercentage: 50, angle: 0, colors: padWithLast(items, getMaxColors()) };
+  obj = { theme: theme.theme, name: theme.getName(), midpointPercentage: 50, angle: 0, colors: null };
   items = [{ hex: semanticColor, stop: 20 }, { hex: semanticColor, stop: 40 }, { hex: semanticColor, stop: 60 }, { hex: semanticColor, stop: 80 }, { hex: semanticColor, stop: 100 }];
+  let num = getMaxColors();
+  if (num === undefined) {
+    num = 5;
+  }
+  const items1 = [];
+  for (let num2 = 0; num2 < num; num2 = num2 + 1) {
+    let tmp3 = num2;
+    if (num2 < items.length) {
+      let arr = items1.push(items[num2]);
+    } else {
+      obj = { hex: null, stop: 100 };
+      obj[0] = items[items.length - 1].hex;
+      arr = items1.push(obj);
+    }
+  }
+  obj[4] = items1;
   return obj;
 }
-function convertCustomBackgroundGradientToAnimatedTheme(value, prop, prop1) {
-  let closure_0 = value;
+function convertCustomBackgroundGradientToAnimatedTheme(theme, prop, prop1) {
+  let closure_0 = theme;
   let closure_1 = prop;
   let closure_2 = prop1;
-  let obj = { theme: value.theme, name: value.getName(), midpointPercentage: 50 };
-  const gradientAngle = value.customThemeSettings.gradientAngle;
-  let num = 0;
-  if (null != gradientAngle) {
-    num = gradientAngle;
+  let obj = { theme: theme.theme, name: theme.getName(), midpointPercentage: 50, angle: null, colors: null };
+  let num = theme.customThemeSettings.gradientAngle;
+  if (num == null) {
+    num = 0;
   }
-  obj.angle = num;
-  const colors = value.customThemeSettings.colors;
-  const mapped = colors.map((arg0, arg1) => {
-    const obj = { hex: outer1_8(value.theme, arg0, closure_1, closure_2) };
-    let num = 0;
-    if (value.customThemeSettings.colors.length > 1) {
-      num = arg1 * (100 / (value.customThemeSettings.colors.length - 1));
+  obj[3] = num;
+  const colors = theme.customThemeSettings.colors;
+  const mapped = colors.map((PRIMARY_800) => {
+    let b;
+    let g;
+    let r;
+    let tmp7 = prop(prop1[4]);
+    if ("light" !== theme.theme) {
+      tmp7 = new tmp7(0, 0, 0, tmp2);
+      let tmp12 = tmp5;
+      let tmp13 = tmp6;
+    } else {
+      tmp7 = new tmp7(255, 255, 255, tmp3);
+      tmp12 = tmp5;
+      tmp13 = tmp6;
     }
-    obj.stop = num;
+    let obj = theme(tmp13[5]);
+    ({ r, g, b } = obj.hexToRgb(PRIMARY_800));
+    let num8 = 0.2;
+    if ("light" !== theme.theme) {
+      num8 = 0.3;
+    }
+    obj = { hex: null, stop: null };
+    const hexToRgbResult = obj.hexToRgb(PRIMARY_800);
+    const tmp16 = theme;
+    const tmp16Result = theme(tmp13[5]);
+    const tmp18 = new tmp12(tmp13[4])(r, g, b, num8);
+    obj[0] = tmp16Result.mixColors(tmp7, new tmp12(tmp13[4])(r, g, b, num8)).toHexString();
+    let num9 = 0;
+    if (theme.customThemeSettings.colors.length > 1) {
+      num9 = arg1 * (100 / (tmp.customThemeSettings.colors.length - 1));
+    }
+    obj[1] = num9;
     return obj;
   });
-  obj.colors = padWithLast(mapped, getMaxColors());
+  let num2 = getMaxColors();
+  if (num2 === undefined) {
+    num2 = 5;
+  }
+  const items = [];
+  for (let num3 = 0; num3 < num2; num3 = num3 + 1) {
+    let tmp = num3;
+    if (num3 < mapped.length) {
+      let arr = items.push(mapped[num3]);
+    } else {
+      obj = { hex: null, stop: 100 };
+      obj[0] = mapped[mapped.length - 1].hex;
+      arr = items.push(obj);
+    }
+  }
+  obj[4] = items;
   return obj;
 }
 const result = require("getCustomThemesName").fileFinishedImporting("modules/user_settings/appearance/native/SettingsAppearancePickerUtils.tsx");
 
 export const convertThemesToAnimatedThemes = function convertThemesToAnimatedThemes(arg0, prop, prop1, memo, BACKGROUND_SURFACE_HIGH) {
-  let iter2;
   let num = prop;
-  let num2 = prop1;
-  let items = memo;
   if (prop === undefined) {
     num = 0.7;
   }
-  if (num2 === undefined) {
+  let num2 = prop1;
+  if (prop1 === undefined) {
     num2 = 0.8;
   }
-  if (items === undefined) {
+  let items = memo;
+  if (memo === undefined) {
     items = [];
   }
   if (BACKGROUND_SURFACE_HIGH === undefined) {
-    BACKGROUND_SURFACE_HIGH = importDefault(689).colors.BACKGROUND_SURFACE_HIGH;
+    BACKGROUND_SURFACE_HIGH = importDefault(712).colors.BACKGROUND_SURFACE_HIGH;
   }
   const items1 = [];
-  const tmp3 = _createForOfIteratorHelperLoose(arg0);
-  let iter = tmp3();
-  if (!iter.done) {
-    do {
-      let value = iter.value;
-      let type = value.type;
-      let tmp4 = require;
-      let tmp5 = dependencyMap;
-      if (require(3979) /* ClientThemeType */.ClientThemeType.STANDARD_BACKGROUND_THEME === type) {
-        let tmp14 = convertStandardThemeToAnimatedTheme;
-        let arr = items1.push(convertStandardThemeToAnimatedTheme(value, items, BACKGROUND_SURFACE_HIGH));
+  const iter = arg0[Symbol.iterator]();
+  const nextResult = iter.next();
+  while (iter !== undefined) {
+    let tmp5 = nextResult;
+    let type = nextResult.type;
+    let tmp6 = require;
+    let tmp7 = dependencyMap;
+    let tmp8 = dependencyMap;
+    if (require(4003) /* ClientThemeType */.ClientThemeType.STANDARD_BACKGROUND_THEME === type) {
+      let tmp17 = convertStandardThemeToAnimatedTheme;
+      let tmp18 = nextResult;
+      let arr = items1.push(convertStandardThemeToAnimatedTheme(tmp5, items, BACKGROUND_SURFACE_HIGH));
+    } else {
+      let tmp9 = tmp7;
+      if (tmp6(4003).ClientThemeType.BACKGROUND_GRADIENT_PRESET === type) {
+        let tmp14 = convertBackgroundGradientToAnimatedTheme;
+        let tmp15 = nextResult;
+        arr = items1.push(convertBackgroundGradientToAnimatedTheme(tmp5, num, num2));
       } else {
-        let tmp6 = require;
-        let tmp7 = dependencyMap;
-        if (require(3979) /* ClientThemeType */.ClientThemeType.BACKGROUND_GRADIENT_PRESET === type) {
-          let tmp12 = convertBackgroundGradientToAnimatedTheme;
-          arr = items1.push(convertBackgroundGradientToAnimatedTheme(value, num, num2));
-        } else {
-          let tmp8 = require;
-          let tmp9 = dependencyMap;
-          if (require(3979) /* ClientThemeType */.ClientThemeType.CUSTOM_BACKGROUND_GRADIENT === type) {
-            let tmp10 = convertCustomBackgroundGradientToAnimatedTheme;
-            let arr1 = items1.push(convertCustomBackgroundGradientToAnimatedTheme(value, num, num2));
-          }
+        let tmp10 = tmp7;
+        if (tmp6(4003).ClientThemeType.CUSTOM_BACKGROUND_GRADIENT === type) {
+          let tmp11 = convertCustomBackgroundGradientToAnimatedTheme;
+          let tmp12 = nextResult;
+          let arr1 = items1.push(convertCustomBackgroundGradientToAnimatedTheme(tmp5, num, num2));
         }
       }
-      iter2 = tmp3();
-      iter = iter2;
-    } while (!iter2.done);
+    }
+    continue;
   }
   return items1;
 };
 export const useLaunchWelcomeSystemTheme = function useLaunchWelcomeSystemTheme() {
-  if (importDefault(1315)() === ThemeTypes.LIGHT) {
-    let DARKER = ThemeTypes.LIGHT;
-  } else {
-    DARKER = ThemeTypes.DARKER;
-  }
-  token = token(3869).useToken(importDefault(689).colors.BACKGROUND_BASE_LOW, DARKER);
+  let tmp = importDefault;
+  const tmp4 = importDefault(1339)() === ThemeTypes.LIGHT ? ThemeTypes.LIGHT : ThemeTypes.DARKER;
+  token = token(3893).useToken(tmp(712).colors.BACKGROUND_BASE_LOW, tmp4);
   let items = [token];
   return React.useMemo(() => {
-    let obj = { theme: "system", name: null, midpointPercentage: 50, angle: 0 };
+    let obj = { theme: "system", name: null, midpointPercentage: 50, angle: 0, colors: null };
     const intl = token(outer1_2[9]).intl;
-    obj.name = intl.string(token(outer1_2[9]).t.zlvNOj);
+    obj[1] = intl.string(token(outer1_2[9]).t.zlvNOj);
     obj = { hex: token, stop: 20 };
-    const items = [obj, , , , ];
-    obj = { hex: token, stop: 40 };
-    items[1] = obj;
-    items[2] = { hex: token, stop: 60 };
-    items[3] = { hex: token, stop: 80 };
-    items[4] = { hex: token, stop: 100 };
-    obj.colors = outer1_9(items, outer1_7());
+    const items = [obj, { hex: token, stop: 40 }, { hex: token, stop: 60 }, { hex: token, stop: 80 }, { hex: token, stop: 100 }];
+    let num = outer1_5();
+    if (num === undefined) {
+      num = 5;
+    }
+    const items1 = [];
+    for (let num2 = 0; num2 < num; num2 = num2 + 1) {
+      let tmp = num2;
+      if (num2 < items.length) {
+        let arr = items1.push(items[num2]);
+      } else {
+        obj = { hex: null, stop: 100 };
+        obj[0] = items[items.length - 1].hex;
+        arr = items1.push(obj);
+      }
+    }
+    obj[4] = items1;
     return obj;
   }, items);
 };

@@ -1,48 +1,44 @@
-// Module ID: 12043
-// Function ID: 92916
+// Module ID: 12067
+// Function ID: 12068
 // Name: UserProfileApplicationWidgetCard
-// Dependencies: [31, 27, 1922, 1194, 33, 4165, 689, 12044, 12045, 12135, 12136, 12137, 12138, 566, 12046, 1324, 5503, 5888, 8451, 8462, 12139, 12129, 5544, 5882, 11973, 4161, 1212, 2]
+// Dependencies: [19, 17, 1946, 1218, 21, 4189, 712, 12068, 12069, 12159, 12160, 12161, 12162, 589, 12070, 1348, 5521, 5906, 8475, 8486, 12163, 12153, 5562, 5900, 11997, 4185, 1236, 2]
 // Exports: default
 
-// Module 12043 (UserProfileApplicationWidgetCard)
-import result from "result";
-import get_ActivityIndicator from "set";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_8 from "_isNativeReflectConstruct";
-import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+// Module 12067 (UserProfileApplicationWidgetCard)
+import GameProfileEmbedAction from "GameProfileEmbedAction";
+import get_ActivityIndicator from "importDefaultResult1";
+import _getSystemLocale from "_getSystemLocale";
+import fetchFingerprint from "fetchFingerprint";
+import jsxProd from "ApplicationWidgetConfigSurface";
+import createCacheKey from "createCacheKey";
 
-let closure_10;
-let closure_4;
-let closure_5;
+let c10;
+let c4;
+let c5;
+let c9;
 let closure_6;
-let closure_9;
 const require = arg1;
-({ Image: closure_4, Pressable: closure_5, View: closure_6 } = get_ActivityIndicator);
-({ jsx: closure_9, jsxs: closure_10 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { width: 16, height: 16, borderRadius: require("_createForOfIteratorHelperLoose").radii.xs, overflow: "hidden" };
-_createForOfIteratorHelperLoose.appIcon = _createForOfIteratorHelperLoose;
-let obj1 = { flexDirection: "row", alignItems: "center", gap: require("_createForOfIteratorHelperLoose").space.PX_4 };
-_createForOfIteratorHelperLoose.header = obj1;
-_createForOfIteratorHelperLoose.divider = { borderBottomWidth: 1, borderBottomColor: require("_createForOfIteratorHelperLoose").colors.BORDER_SUBTLE, marginBottom: require("_createForOfIteratorHelperLoose").space.PX_24 };
-let obj3 = { flexDirection: "row", alignItems: "center", gap: require("_createForOfIteratorHelperLoose").space.PX_4 };
-_createForOfIteratorHelperLoose.stillSyncing = obj3;
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-let obj2 = { borderBottomWidth: 1, borderBottomColor: require("_createForOfIteratorHelperLoose").colors.BORDER_SUBTLE, marginBottom: require("_createForOfIteratorHelperLoose").space.PX_24 };
-let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/user_profile/native/UserProfileApplicationWidgetCard.tsx");
+({ Image: c4, Pressable: c5, View: closure_6 } = get_ActivityIndicator);
+({ jsx: c9, jsxs: c10 } = jsxProd);
+createCacheKey = { appIcon: null, header: null, divider: null, stillSyncing: null };
+createCacheKey = { width: 16, height: 16, borderRadius: require("Themes").radii.xs, overflow: "hidden" };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { flexDirection: "row", alignItems: "center", gap: require("Themes").space.PX_4 };
+let obj1 = { flexDirection: "row", alignItems: "center", gap: require("Themes").space.PX_4 };
+createCacheKey[2] = { borderBottomWidth: 1, borderBottomColor: require("Themes").colors.BORDER_SUBTLE, marginBottom: require("Themes").space.PX_24 };
+let obj2 = { borderBottomWidth: 1, borderBottomColor: require("Themes").colors.BORDER_SUBTLE, marginBottom: require("Themes").space.PX_24 };
+createCacheKey[3] = { flexDirection: "row", alignItems: "center", gap: require("Themes").space.PX_4 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let obj3 = { flexDirection: "row", alignItems: "center", gap: require("Themes").space.PX_4 };
+let result = require("_getSystemLocale").fileFinishedImporting("modules/user_profile/native/UserProfileApplicationWidgetCard.tsx");
 
 export default function UserProfileApplicationWidgetCard(userId) {
   let cardStyle;
   let hasIdentity;
-  let header;
   let isFirstWidget;
   let isLoading;
-  let layoutName;
-  let numberFormat;
   let resolutionContext;
-  let resolveFieldValue;
-  let topConfig;
+  let surfaceConfigs;
   let widget;
   userId = userId.userId;
   ({ widget, cardStyle, isFirstWidget } = userId);
@@ -51,180 +47,186 @@ export default function UserProfileApplicationWidgetCard(userId) {
   }
   let stateFromStores;
   let dependencyMap;
-  let tmp = _createForOfIteratorHelperLoose();
-  let obj = userId(566);
-  const items = [_isNativeReflectConstruct];
-  stateFromStores = obj.useStateFromStores(items, () => outer1_7.locale);
+  let tmp = createCacheKey();
+  let obj = userId(589);
+  const items = [_getSystemLocale];
+  stateFromStores = obj.useStateFromStores(items, () => locale.locale);
   const items1 = [stateFromStores];
   const memo = React.useMemo(() => userId(_undefined[14]).createCompactNumberFormat(stateFromStores), items1);
-  let obj1 = userId(566);
-  const items2 = [closure_8];
+  let obj1 = userId(589);
+  const items2 = [fetchFingerprint];
   const stateFromStores1 = obj1.useStateFromStores(items2, () => outer1_8.getId() === userId);
-  const tmp5 = stateFromStores(1324)("UserProfileCard");
-  let obj2 = userId(5503);
+  const tmp8 = stateFromStores(1348)("UserProfileCard");
+  let obj2 = userId(5521);
   const getOrFetchApplication = obj2.useGetOrFetchApplication(widget.applicationId);
   let iconURL;
-  if (null != getOrFetchApplication) {
+  if (getOrFetchApplication != null) {
     iconURL = getOrFetchApplication.getIconURL(16);
   }
-  let obj4 = userId(5888);
+  let tmp2Result = tmp2(5906);
   let canonicalGameId;
-  if (null != getOrFetchApplication) {
+  if (getOrFetchApplication != null) {
     canonicalGameId = getOrFetchApplication.getCanonicalGameId();
   }
-  const data = obj4.useGame(canonicalGameId).data;
-  obj = { location: "UserProfileApplicationWidgetCard" };
+  const data = tmp2Result.useGame(canonicalGameId).data;
   let id;
-  if (null != data) {
+  let tmp7Result = tmp7(8475);
+  if (data != null) {
     id = data.id;
   }
-  obj.applicationId = id;
-  obj.source = userId(8462).GameProfileSources.UserProfileApplicationWidget;
-  obj.sourceUserId = userId;
-  obj.trackEntryPointImpression = true;
-  const tmp8Result = stateFromStores(8451)(obj);
-  dependencyMap = tmp8Result;
-  const tmp11 = stateFromStores(12139)(userId, widget.applicationId);
-  const surfaceConfigs = tmp11.surfaceConfigs;
-  ({ resolutionContext, isLoading, hasIdentity } = tmp11);
-  const tmp12 = surfaceConfigs[userId(undefined, 12129).ApplicationWidgetConfigSurface.WIDGET_TOP];
-  const tmp13 = surfaceConfigs[userId(undefined, 12129).ApplicationWidgetConfigSurface.WIDGET_BOTTOM];
-  let tmp14 = null;
+  obj = { location: "UserProfileApplicationWidgetCard", applicationId: id, source: tmp2(8486).GameProfileSources.UserProfileApplicationWidget, sourceUserId: userId, trackEntryPointImpression: true, stackingBehavior: "stack" };
+  const tmp7ResultResult = tmp7Result(obj);
+  dependencyMap = tmp7ResultResult;
+  ({ surfaceConfigs, resolutionContext, isLoading, hasIdentity } = stateFromStores(12163)(userId, widget.applicationId));
+  const tmp15 = surfaceConfigs[userId(undefined, 12153).ApplicationWidgetConfigSurface.WIDGET_TOP];
+  const tmp16 = surfaceConfigs[userId(undefined, 12153).ApplicationWidgetConfigSurface.WIDGET_BOTTOM];
+  let tmp17 = null;
   if (null != iconURL) {
-    obj = {};
-    obj1 = { uri: iconURL };
-    obj.source = obj1;
-    obj.style = tmp.appIcon;
-    tmp14 = callback(closure_4, obj);
+    obj = { source: null, style: null };
+    obj1 = { uri: null };
+    obj1[0] = iconURL;
+    obj[0] = obj1;
+    obj[1] = tmp.appIcon;
+    tmp17 = callback(closure_4, obj);
   }
   if (stateFromStores1) {
     if (!isLoading) {
       if (!hasIdentity) {
-        obj2 = { style: cardStyle };
-        let obj9 = userId(5882);
-        obj2.title = obj9.getWidgetTitle(widget);
-        obj2.titleLeadingIcon = tmp14;
-        const obj3 = { style: tmp.stillSyncing };
-        obj4 = { size: "xs", color: stateFromStores(689).colors.TEXT_MUTED };
-        const items3 = [callback(userId(11973).HourglassIcon, obj4), ];
-        const obj5 = { variant: "text-sm/medium", color: "text-muted" };
-        const intl = userId(1212).intl;
-        obj5.children = intl.string(userId(1212).t.z5K4Uv);
-        items3[1] = callback(userId(4161).Text, obj5);
-        obj3.children = items3;
-        obj2.children = callback2(closure_6, obj3);
-        return callback(stateFromStores(5544), obj2);
+        obj2 = { style: null, title: null, titleLeadingIcon: null, children: null };
+        obj2[0] = cardStyle;
+        tmp7Result = tmp7(5562);
+        tmp2Result = tmp2(5900);
+        obj2[1] = tmp2Result.getWidgetTitle(widget);
+        obj2[2] = tmp17;
+        const obj3 = { style: null, children: null };
+        obj3[0] = tmp.stillSyncing;
+        const obj4 = { size: "xs", color: null };
+        obj4[1] = tmp7(712).colors.TEXT_MUTED;
+        const items3 = [callback(tmp2(11997).HourglassIcon, obj4), ];
+        const obj5 = { variant: "text-sm/medium", color: "text-muted", children: null };
+        const intl = tmp2(1236).intl;
+        obj5[2] = intl.string(tmp2(1236).t.z5K4Uv);
+        items3[1] = callback(tmp2(4185).Text, obj5);
+        obj3[1] = items3;
+        obj2[3] = callback2(closure_6, obj3);
+        return callback(tmp7Result, obj2);
       }
     }
   }
-  let obj13 = userId(12046);
-  const result = obj13.bindResolveFieldValue(resolutionContext);
+  const tmp14 = stateFromStores(12163)(userId, widget.applicationId);
+  const result = userId(12070).bindResolveFieldValue(resolutionContext);
   const obj6 = {
     style: tmp.header,
     onPress() {
       let tmp;
-      if (null != _undefined) {
+      if (_undefined != null) {
         tmp = _undefined();
       }
       return tmp;
     },
-    disabled: null == tmp8Result,
-    accessibilityRole: "button"
+    disabled: null == tmp7ResultResult,
+    accessibilityRole: "button",
+    accessibilityLabel: null,
+    children: null
   };
-  let obj15 = userId(5882);
-  obj6.accessibilityLabel = obj15.getWidgetTitle(widget);
-  const items4 = [tmp14, ];
-  const obj7 = {};
-  let str2 = "text-sm/semibold";
-  if (tmp5) {
-    str2 = "text-sm/medium";
-  }
-  obj7.variant = str2;
-  let str3 = "text-default";
-  if (tmp5) {
-    str3 = "text-strong";
-  }
-  obj7.color = str3;
-  obj7.lineClamp = 1;
-  const tmp25 = callback2;
   const tmp26 = closure_5;
-  const tmp27 = callback;
-  const tmp8 = stateFromStores(8451);
-  obj7.children = userId(5882).getWidgetTitle(widget);
-  items4[1] = tmp27(userId(4161).Text, obj7);
-  obj6.children = items4;
-  const obj8 = {};
-  let layout;
-  const obj18 = userId(5882);
-  if (null != tmp12) {
-    layout = tmp12.layout;
+  const tmp2Result1 = userId(12070);
+  obj6[4] = userId(5900).getWidgetTitle(widget);
+  const items4 = [tmp17, ];
+  let str = "text-sm/semibold";
+  if (tmp8) {
+    str = "text-sm/medium";
   }
-  obj8.layoutName = layout;
-  obj8.header = tmp25(tmp26, obj6);
-  obj8.topConfig = tmp12;
-  obj8.resolveFieldValue = result;
-  obj8.numberFormat = memo;
-  ({ layoutName, header, topConfig, resolveFieldValue, numberFormat } = obj8);
-  let tmp30 = null;
-  if (null != topConfig) {
-    if (userId(12044).ApplicationWidgetLayoutName.WIDGET_TOP_HERO === layoutName) {
-      obj9 = { header, topConfig, resolveFieldValue, numberFormat };
-      tmp30 = callback(stateFromStores(12045), obj9);
+  const obj7 = { variant: str, color: null, lineClamp: 1, children: null };
+  let str2 = "text-default";
+  if (tmp8) {
+    str2 = "text-strong";
+  }
+  obj7[1] = str2;
+  const tmp2Result2 = userId(5900);
+  obj7[3] = userId(5900).getWidgetTitle(widget);
+  items4[1] = callback(userId(4185).Text, obj7);
+  obj6[5] = items4;
+  let tmp25Result = tmp25(tmp26, obj6);
+  if (tmp15 != null) {
+    let layout = tmp15.layout;
+  }
+  let tmp27Result = null;
+  if (null != tmp15) {
+    if (tmp2(12068).ApplicationWidgetLayoutName.WIDGET_TOP_HERO === layout) {
+      const obj8 = { header: null, topConfig: null, resolveFieldValue: null, numberFormat: null };
+      obj8[0] = tmp25Result;
+      obj8[1] = tmp15;
+      obj8[2] = result;
+      obj8[3] = memo;
+      tmp27Result = tmp27(tmp7(12069), obj8);
     } else {
-      tmp30 = null;
-      if (userId(12044).ApplicationWidgetLayoutName.WIDGET_TOP_CONTAINED === layoutName) {
-        const obj10 = { header, topConfig, resolveFieldValue, numberFormat };
-        tmp30 = callback(stateFromStores(12135), obj10);
+      tmp27Result = null;
+      if (tmp2(12068).ApplicationWidgetLayoutName.WIDGET_TOP_CONTAINED === layout) {
+        const obj9 = { header: null, topConfig: null, resolveFieldValue: null, numberFormat: null };
+        obj9[0] = tmp25Result;
+        obj9[1] = tmp15;
+        obj9[2] = result;
+        obj9[3] = memo;
+        tmp27Result = tmp27(tmp7(12159), obj9);
       }
     }
   }
-  if (null != tmp13) {
-    layout = tmp13.layout;
+  if (tmp16 != null) {
+    const layout2 = tmp16.layout;
   }
-  let tmp41 = null;
-  if (null != tmp13) {
-    if (userId(12044).ApplicationWidgetLayoutName.WIDGET_BOTTOM_STATS === layout) {
-      const obj11 = { bottomConfig: tmp13, resolveFieldValue: result, numberFormat: memo };
-      tmp41 = callback(stateFromStores(12136), obj11);
-    } else if (userId(12044).ApplicationWidgetLayoutName.WIDGET_BOTTOM_PROGRESS === layout) {
-      const obj12 = { bottomConfig: tmp13, resolveFieldValue: result };
-      tmp41 = callback(stateFromStores(12137), obj12);
+  tmp27Result = null;
+  if (null != tmp16) {
+    if (tmp2(12068).ApplicationWidgetLayoutName.WIDGET_BOTTOM_STATS === layout2) {
+      const obj10 = { bottomConfig: null, resolveFieldValue: null, numberFormat: null };
+      obj10[0] = tmp16;
+      obj10[1] = result;
+      obj10[2] = memo;
+      tmp27Result = tmp27(tmp7(12160), obj10);
+    } else if (tmp2(12068).ApplicationWidgetLayoutName.WIDGET_BOTTOM_PROGRESS === layout2) {
+      const obj11 = { bottomConfig: null, resolveFieldValue: null };
+      obj11[0] = tmp16;
+      obj11[1] = result;
+      tmp27Result = tmp27(tmp7(12161), obj11);
     } else {
-      tmp41 = null;
-      if (userId(12044).ApplicationWidgetLayoutName.WIDGET_BOTTOM_COLLECTION === layout) {
-        obj13 = { bottomConfig: tmp13, resolveFieldValue: result };
-        tmp41 = callback(stateFromStores(12138), obj13);
+      tmp27Result = null;
+      if (tmp2(12068).ApplicationWidgetLayoutName.WIDGET_BOTTOM_COLLECTION === layout2) {
+        const obj12 = { bottomConfig: null, resolveFieldValue: null };
+        obj12[0] = tmp16;
+        obj12[1] = result;
+        tmp27Result = tmp27(tmp7(12162), obj12);
       }
     }
   }
-  let tmp53Result = null;
-  if (null != tmp30) {
-    tmp53Result = null;
-    if (null != tmp41) {
-      const obj14 = {};
+  tmp25Result = null;
+  if (null != tmp27Result) {
+    tmp25Result = null;
+    if (null != tmp27Result) {
       const items5 = [cardStyle, ];
       if (isFirstWidget) {
-        let layout1;
-        if (null != tmp12) {
-          layout1 = tmp12.layout;
+        layout = undefined;
+        if (tmp15 != null) {
+          layout = tmp15.layout;
         }
-        isFirstWidget = layout1 === userId(12044).ApplicationWidgetLayoutName.WIDGET_TOP_HERO;
+        isFirstWidget = layout === tmp2(12068).ApplicationWidgetLayoutName.WIDGET_TOP_HERO;
       }
       if (isFirstWidget) {
-        obj15 = { marginTop: userId(12045).HERO_IMAGE_UNCLIPPED_TOP_BLEED };
-        isFirstWidget = obj15;
+        const obj13 = { marginTop: null };
+        obj13[0] = tmp2(12069).HERO_IMAGE_UNCLIPPED_TOP_BLEED;
+        isFirstWidget = obj13;
       }
+      const obj14 = { style: null, children: null };
       items5[1] = isFirstWidget;
-      obj14.style = items5;
-      const items6 = [tmp30, , ];
-      const obj16 = { style: tmp.divider };
-      items6[1] = callback(closure_6, obj16);
-      items6[2] = tmp41;
-      obj14.children = items6;
-      tmp53Result = callback2(stateFromStores(5544), obj14);
-      const tmp53 = callback2;
-      const tmp56 = stateFromStores(5544);
+      obj14[0] = items5;
+      const items6 = [tmp27Result, , ];
+      const obj15 = { style: null };
+      obj15[0] = tmp.divider;
+      items6[1] = tmp27(closure_6, obj15);
+      items6[2] = tmp27Result;
+      obj14[1] = items6;
+      tmp25Result = tmp25(tmp7(5562), obj14);
+      const tmp7Result1 = tmp7(5562);
     }
   }
-  return tmp53Result;
+  return tmp25Result;
 };

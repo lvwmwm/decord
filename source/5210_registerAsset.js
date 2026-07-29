@@ -1,11 +1,10 @@
 // Module ID: 5210
-// Function ID: 45131
+// Function ID: 5211
 // Name: registerAsset
-// Dependencies: [1217]
+// Dependencies: [1241]
 
 // Module 5210 (registerAsset)
 import registerAsset from "registerAsset";
 
-const obj = { __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "c1eae5d24a46f9d36a9168ec38445f00", name: "DragIcon", type: "png" };
 
-export default registerAsset.registerAsset(obj);
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "166185917b52ede00e3e20d3f1f7faeb", name: "CheckmarkSmallIcon", type: "png" });

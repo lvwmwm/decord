@@ -1,119 +1,30 @@
-// Module ID: 15716
-// Function ID: 121018
-// Name: _createForOfIteratorHelperLoose
-// Dependencies: [6, 7, 15, 17, 18, 566, 686, 2]
+// Module ID: 15751
+// Function ID: 15752
+// Name: newMessageFromHistory
+// Dependencies: [5793, 10245, 1931, 4006, 4867, 5683, 676, 1379, 1236, 3259, 3862, 12613, 10271, 14477, 15752, 1222, 589, 709, 2]
+// Exports: turnSettled
 
-// Module 15716 (_createForOfIteratorHelperLoose)
-import dispatcher from "dispatcher";
-import closure_1 from "set";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
-import set from "_possibleConstructorReturn";
+// Module 15751 (newMessageFromHistory)
+import freshTeenActivityWithMap from "freshTeenActivityWithMap";
+import DesktopNotificationTypes from "DesktopNotificationTypes";
+import handleConnectionOpen from "handleConnectionOpen";
+import closure_6 from "handleConnectionOpen";
+import filterPlayingActivities from "filterPlayingActivities";
+import handleProjectUpsert from "handleProjectUpsert";
+import ME from "ME";
+import { StaticChannelRoute } from "set";
+import { Store } from "initialize";
+import set from "handleConnectionOpen";
 
-function _createForOfIteratorHelperLoose(iterable) {
-  let dispatcher = iterable;
-  iterable = "undefined" !== typeof Symbol;
-  if (iterable) {
-    const _Symbol = Symbol;
-    iterable = iterable[Symbol.iterator];
-  }
-  if (!iterable) {
-    iterable = iterable[Symbol.iterator];
-  }
-  if (iterable) {
-    const iter = iterable.call(iterable);
-    const next = iter.next;
-    return next.bind(iter);
-  } else {
-    const _Array = Array;
-    let tmp = iterable;
-    if (!Array.isArray(iterable)) {
-      let tmp2;
-      if (iterable) {
-        if ("string" === typeof iterable) {
-          tmp2 = _arrayLikeToArray(iterable, undefined);
-        } else {
-          const toString = {}.toString;
-          const substr = toString.call(iterable).slice(8, -1);
-          let name = substr;
-          if (tmp3) {
-            name = iterable.constructor.name;
-          }
-          if ("Map" !== name) {
-            if ("Set" !== name) {
-              if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(iterable, undefined);
-              } else {
-                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
-              }
-            }
-            tmp2 = arr;
-          }
-          const _Array2 = Array;
-          arr = Array.from(iterable);
-          const callResult = toString.call(iterable);
-          tmp3 = "Object" === substr && iterable.constructor;
-        }
-      }
-      tmp = tmp2;
-      if (!tmp2) {
-        const _TypeError = TypeError;
-        const typeError = new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
-        throw typeError;
-      }
-    }
-    if (tmp) {
-      dispatcher = tmp;
-    }
-    let c1 = 0;
-    return () => {
-      if (closure_1 >= length.length) {
-        let obj = { done: true };
-      } else {
-        obj = { done: false };
-        closure_1 = tmp3 + 1;
-        obj.value = length[+closure_1];
-      }
-      return obj;
-    };
-  }
-}
-function _arrayLikeToArray(arg0, arg1) {
-  let length;
-  if (tmp) {
-    length = arg0.length;
-  }
-  const ArrayResult = Array(length);
-  for (let num = 0; num < length; num = num + 1) {
-    ArrayResult[num] = arg0[num];
-  }
-  return ArrayResult;
-}
-function _isNativeReflectConstruct() {
-  let dispatcher = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return dispatcher;
-  }
-  const result = _isNativeReflectConstruct();
-}
-function turnSettled(content) {
-  let someResult = "" !== content.content;
-  if (!someResult) {
-    someResult = null != content.proposal;
-  }
-  if (!someResult) {
-    const steps = content.steps;
-    someResult = steps.some((kind) => outer1_5.has(kind.kind));
-  }
-  return someResult;
-}
-function newMessage(assistant, content, ts) {
-  const obj = { id: `m${tmp}`, role: assistant, content, steps: [] };
-  const sum = c13 + 1;
-  c13 = sum;
+let c10;
+let c9;
+let unpackModuleId;
+let require = arg1;
+function newMessageFromHistory(role) {
+  const ts = role.ts;
+  const obj = { id: `m${tmp}`, role: role.role, content: role.content, steps: [], created_at: null };
+  const sum = c22 + 1;
+  c22 = sum;
   if (null != ts) {
     const _Date2 = Date;
     let parsed = Date.parse(ts);
@@ -121,63 +32,206 @@ function newMessage(assistant, content, ts) {
     const _Date = Date;
     parsed = Date.now();
   }
-  obj.created_at = parsed;
-  return obj;
-}
-function newMessageFromHistory(role) {
-  const tmp = newMessage(role.role, role.content, role.ts);
+  obj[4] = parsed;
   if (null != role.kind) {
-    tmp.kind = role.kind;
+    obj.kind = role.kind;
   }
   if (null != role.proposal) {
-    tmp.proposal = role.proposal;
+    obj.proposal = role.proposal;
   }
-  return tmp;
+  return obj;
 }
-function patchLastAssistant(projectId, arg1) {
-  const value = map.get(projectId);
-  if (null != value) {
-    if (0 !== value.length) {
-      if ("assistant" === value[value.length - 1].role) {
-        const items = [];
-        const arraySpreadResult = HermesBuiltin.arraySpread(value.slice(0, -1), 0);
-        items[arraySpreadResult] = arg1(tmp);
-        const sum = arraySpreadResult + 1;
-        const result = map.set(projectId, items);
-      }
-    }
+function recordThinkingTransition(projectId) {
+  let tmp30;
+  let obj = map2;
+  let flag = map2.get(projectId);
+  if (flag == null) {
+    flag = false;
   }
-}
-function computeThinking(projectId) {
-  const value = map.get(projectId);
+  let value = map.get(projectId);
+  let flag2 = false;
   if (null != value) {
+    flag2 = false;
     if (0 !== value.length) {
       let tmp2 = "assistant" === tmp.role;
       if (tmp2) {
-        tmp2 = !turnSettled(tmp);
+        let someResult = "" !== tmp.content || null != tmp.proposal;
+        if (!someResult) {
+          const steps = tmp.steps;
+          someResult = steps.some((kind) => set.has(kind.kind));
+        }
+        tmp2 = !someResult;
       }
-      return tmp2;
+      flag2 = tmp2;
     }
   }
-  return false;
-}
-function recordThinkingTransition(projectId) {
-  const value = map2.get(projectId);
-  const tmp3 = computeThinking(projectId);
-  if (tmp2 !== tmp3) {
-    const result = map2.set(projectId, tmp3);
-    if (tmp3) {
-      obj.delete(projectId);
+  if (flag !== flag2) {
+    const result = obj.set(projectId, flag2);
+    if (flag2) {
+      map1.delete(projectId);
     } else {
-      const _Date = Date;
-      const result1 = obj.set(projectId, Date.now());
+      value = obj2.get(projectId);
+      let tmp4;
+      if (value != null) {
+        tmp4 = value[value.length - 1];
+      }
+      let role;
+      if (tmp4 != null) {
+        role = tmp4.role;
+      }
+      let tmp6 = "assistant" === role;
+      if (tmp6) {
+        let someResult1 = "" !== tmp4.content.trim() || null != tmp4.proposal;
+        if (!someResult1) {
+          const steps2 = tmp4.steps;
+          someResult1 = steps2.some((kind) => {
+            let hasItem = set.has(kind.kind);
+            if (hasItem) {
+              hasItem = "terminal_error" !== kind.kind;
+            }
+            return hasItem;
+          });
+        }
+        tmp6 = someResult1;
+        const str4 = tmp4.content;
+      }
+      if (tmp6) {
+        const _Date = Date;
+        const result1 = obj3.set(projectId, Date.now());
+      } else {
+        obj3.delete(projectId);
+      }
+      project = project.getProject(projectId);
+      if (null != project) {
+        let setting = desktopType.getDesktopType() === constants2.NEVER;
+        if (!setting) {
+          setting = status.getStatus() === constants.DND;
+        }
+        if (!setting) {
+          const FocusMode = require(3862) /* explicitContentFromProto */.FocusMode;
+          setting = FocusMode.getSetting();
+        }
+        if (!setting) {
+          setting = currentUserInRestrictedHours.isCurrentUserInRestrictedHours();
+        }
+        if (!setting) {
+          const isSoundDisabledResult = obj10.isSoundDisabled(message1);
+          guildId = guildId.getGuildId();
+          let guild_id = null;
+          if (null != guildId) {
+            guild_id = null;
+            if (obj4.getSelectedProjectId(guildId) === projectId) {
+              guild_id = guildId;
+            }
+          }
+          let isWindowFocusedResult = null != guild_id;
+          if (isWindowFocusedResult) {
+            isWindowFocusedResult = channelId.getChannelId() === StaticChannelRoute.VIBEGRATIONS;
+          }
+          if (isWindowFocusedResult) {
+            isWindowFocusedResult = importDefault(12613).isWindowFocused();
+            const obj5 = importDefault(12613);
+          }
+          if (guild_id == null) {
+            guild_id = project.guild_id;
+          }
+          if (guild_id == null) {
+            guild_id = project.preview_guild_id;
+          }
+          const value1 = obj2.get(projectId);
+          let content = null;
+          if (null != value1) {
+            content = null;
+            if (0 !== value1.length) {
+              content = null;
+              if ("assistant" === value1[value1.length - 1].role) {
+                if ("" !== str7.trim()) {
+                  content = tmp59.content;
+                } else if (null != tmp59.proposal) {
+                  content = tmp59.proposal.summary;
+                } else {
+                  let diff = tmp59.steps.length - 1;
+                  content = null;
+                  if (0 <= diff) {
+                    while (true) {
+                      tmp30 = tmp59.steps[diff];
+                      let tmp31 = diff;
+                      if ("error" !== tmp30.kind) {
+                        if ("terminal_error" !== tmp30.kind) {
+                          if ("preview_ready" === tmp30.kind) {
+                            let tmp33 = require;
+                            let tmp34 = dependencyMap;
+                            let intl = require(1236) /* getSystemLocale */.intl;
+                            let tmp35 = importDefault;
+                            content = intl.string(importDefault(3259)["78YNh7"]);
+                          } else {
+                            diff = diff - 1;
+                            content = null;
+                          }
+                        }
+                      }
+                      if (null != tmp30.message) {
+                        if ("" !== tmp30.message) {
+                          break;
+                        }
+                      }
+                    }
+                    content = tmp30.message;
+                  }
+                }
+                str7 = tmp59.content;
+              }
+            }
+          }
+          if (null != content) {
+            if (isWindowFocusedResult) {
+              if (!isSoundDisabledResult) {
+                require(10271) /* createSoundForPack */.playSound(tmp18, 0.4);
+                const obj9 = require(10271) /* createSoundForPack */;
+              }
+            } else {
+              let CHANNELResult = null;
+              if (null != guild_id) {
+                CHANNELResult = closure_9.CHANNEL(guild_id, StaticChannelRoute.VIBEGRATIONS, projectId);
+              }
+              require = CHANNELResult;
+              const obj6 = importDefault(14477);
+              const tmp42 = require(15752) /* registerAsset */;
+              const name = project.name;
+              obj = { tag: null, sound: null, volume: 0.4, fallbackDeepLink: null, onClick: null, isUserAvatar: false };
+              const _HermesInternal = HermesInternal;
+              obj[0] = "vibegrations-" + projectId;
+              let tmp44;
+              if (!isSoundDisabledResult) {
+                tmp44 = tmp18;
+              }
+              obj[1] = tmp44;
+              let notificationDeepLink;
+              if (null != CHANNELResult) {
+                notificationDeepLink = tmp39(12613).createNotificationDeepLink(CHANNELResult);
+                const tmp39Result = tmp39(12613);
+              }
+              obj[3] = notificationDeepLink;
+              let fn;
+              if (null != CHANNELResult) {
+                fn = () => CHANNELResult(outer1_2[15]).transitionTo(closure_0);
+              }
+              obj[4] = fn;
+              obj6.showNotification(tmp42, name, content, { notif_type: "VIBEGRATIONS_ASSISTANT_FINISHED" }, obj);
+              tmp39 = importDefault;
+            }
+          }
+        }
+        obj10 = desktopType;
+      }
+      obj4 = project;
     }
   }
 }
-function purgeProject(projectId) {
-  let deleteResult = map.delete(projectId);
-  const deleteResult1 = map1.delete(projectId);
-  const deleteResult2 = map2.delete(projectId);
+function purgeProject(arg0) {
+  let deleteResult = map.delete(arg0);
+  const deleteResult1 = map1.delete(arg0);
+  const deleteResult2 = map2.delete(arg0);
   if (!deleteResult) {
     deleteResult = deleteResult1;
   }
@@ -189,120 +243,112 @@ function purgeProject(projectId) {
   }
   return deleteResult;
 }
-let set = new Set(["preview_ready", "built", "error", "build_error", "healthcheck_failed"]);
+({ Routes: c9, StatusTypes: c10, DesktopNotificationTypes: unpackModuleId } = ME);
+const message1 = "message1";
+let set = new Set(["reply", "plan_proposed", "preview_ready", "terminal_error"]);
 const map = new Map();
 const map1 = new Map();
 const map2 = new Map();
 const map3 = new Map();
-let c10 = 0;
-let c11 = null;
-let closure_12 = [];
-let c13 = 0;
-let tmp7 = ((Store) => {
-  class VibegrationsChatStore {
-    constructor() {
-      self = this;
-      tmp = VibegrationsChatStore(this, VibegrationsChatStore);
-      obj = outer1_3(VibegrationsChatStore);
-      tmp2 = outer1_2;
-      if (outer1_16()) {
-        tmp6 = globalThis;
-        _Reflect = Reflect;
-        tmp7 = outer1_3;
-        tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, outer1_3(self).constructor);
-      } else {
-        tmp3 = arguments;
-        tmp4 = arguments;
-        constructResult = obj(...arguments);
+let c19 = 0;
+let c20 = null;
+let closure_21 = [];
+let c22 = 0;
+class VibegrationsChatStore extends Store {
+}
+const prototype = VibegrationsChatStore.prototype;
+prototype["initialize"] = function initialize() {
+  this.waitFor(freshTeenActivityWithMap, DesktopNotificationTypes, handleConnectionOpen, closure_6, filterPlayingActivities, handleProjectUpsert);
+};
+prototype["getMessages"] = function getMessages(arg0) {
+  let value = map.get(arg0);
+  if (value == null) {
+    value = closure_21;
+  }
+  return value;
+};
+prototype["isThinking"] = function isThinking(item10008) {
+  const value = map.get(item10008);
+  let flag = false;
+  if (null != value) {
+    flag = false;
+    if (0 !== value.length) {
+      let tmp2 = "assistant" === tmp.role;
+      if (tmp2) {
+        let someResult = "" !== tmp.content || null != tmp.proposal;
+        if (!someResult) {
+          const steps = tmp.steps;
+          someResult = steps.some((kind) => set.has(kind.kind));
+        }
+        tmp2 = !someResult;
       }
-      return tmp2(self, constructResult);
+      flag = tmp2;
     }
   }
-  callback2(VibegrationsChatStore, Store);
-  let obj = {
-    key: "getMessages",
-    value(arg0) {
-      let value = outer1_6.get(arg0);
-      if (null == value) {
-        value = outer1_12;
-      }
-      return value;
-    }
-  };
-  const items = [obj, , , , , , ];
-  obj = {
-    key: "isThinking",
-    value(arg0) {
-      return outer1_21(arg0);
-    }
-  };
-  items[1] = obj;
-  obj = {
-    key: "getFinishedAt",
-    value(arg0) {
-      let tmp = null;
-      if (!outer1_21(arg0)) {
-        const value = outer1_7.get(arg0);
-        let tmp4 = null;
-        if (null != value) {
-          tmp4 = value;
+  return flag;
+};
+prototype["getFinishedAt"] = function getFinishedAt(arg0) {
+  let value = map.get(arg0);
+  let flag = false;
+  if (null != value) {
+    flag = false;
+    if (0 !== value.length) {
+      let tmp2 = "assistant" === tmp.role;
+      if (tmp2) {
+        let someResult = "" !== tmp.content || null != tmp.proposal;
+        if (!someResult) {
+          const steps = tmp.steps;
+          someResult = steps.some((kind) => set.has(kind.kind));
         }
-        tmp = tmp4;
+        tmp2 = !someResult;
       }
-      return tmp;
+      flag = tmp2;
     }
-  };
-  items[2] = obj;
-  items[3] = {
-    key: "getProjectUsage",
-    value(arg0) {
-      const value = outer1_9.get(arg0);
-      let tmp2 = null;
-      if (null != value) {
-        tmp2 = value;
-      }
-      return tmp2;
+  }
+  let tmp4 = null;
+  if (!flag) {
+    value = map1.get(arg0);
+    if (value == null) {
+      value = null;
     }
-  };
-  items[4] = {
-    key: "getSidebarWidth",
-    value() {
-      return outer1_10;
+    tmp4 = value;
+  }
+  return tmp4;
+};
+prototype["getProjectUsage"] = function getProjectUsage(arg0) {
+  let value = map3.get(arg0);
+  if (value == null) {
+    value = null;
+  }
+  return value;
+};
+prototype["getSidebarWidth"] = function getSidebarWidth() {
+  return c19;
+};
+prototype["getBuilderPreviewApplicationId"] = function getBuilderPreviewApplicationId() {
+  return c20;
+};
+prototype["isAnyThinking"] = function isAnyThinking() {
+  const self = this;
+  const keys = map.keys();
+  for (const item10008 of keys) {
+    if (self.isThinking(item10008)) {
+      let tmp2 = obj;
+      obj.return();
+      let flag = true;
+      return true;
     }
-  };
-  items[5] = {
-    key: "getBuilderPreviewApplicationId",
-    value() {
-      return outer1_11;
-    }
-  };
-  items[6] = {
-    key: "isAnyThinking",
-    value() {
-      const self = this;
-      const tmp = outer1_14(outer1_6.keys());
-      let iter = tmp();
-      if (!iter.done) {
-        while (!self.isThinking(iter.value)) {
-          let iter2 = tmp();
-          iter = iter2;
-        }
-        return true;
-      }
-      return false;
-    }
-  };
-  return callback(VibegrationsChatStore, items);
-})(require("initialize").Store);
-tmp7 = new tmp7(require("dispatcher"), {
+  }
+  return false;
+};
+const vibegrationsChatStore = new VibegrationsChatStore(require("dispatcher"), {
   LOGOUT: function handleLogout() {
     if (0 === map.size) {
       if (0 === map1.size) {
         if (0 === map2.size) {
           if (0 === map3.size) {
-            if (0 === c10) {
-              if (null == c11) {
+            if (0 === c19) {
+              if (null == c20) {
                 return false;
               }
             }
@@ -314,8 +360,8 @@ tmp7 = new tmp7(require("dispatcher"), {
     map1.clear();
     map2.clear();
     map3.clear();
-    c10 = 0;
-    c11 = null;
+    c19 = 0;
+    c20 = null;
   },
   VIBEGRATIONS_CHAT_HISTORY_SET: function handleChatHistorySet(arg0) {
     let entries;
@@ -324,27 +370,43 @@ tmp7 = new tmp7(require("dispatcher"), {
     const result = map.set(projectId, entries.map(newMessageFromHistory));
     recordThinkingTransition(projectId);
   },
-  VIBEGRATIONS_CHAT_MESSAGE_APPEND: function handleChatMessageAppend(projectId) {
-    projectId = projectId.projectId;
+  VIBEGRATIONS_CHAT_MESSAGE_APPEND: function handleChatMessageAppend(content) {
+    const projectId = content.projectId;
+    let obj = map;
     let items = map.get(projectId);
-    if (null == items) {
+    if (items == null) {
       items = [];
     }
-    items = [...items, newMessage("user", projectId.content), newMessage("assistant", "")];
-    const result = map.set(projectId, items);
+    items = [...items];
+    obj = { id: `m${tmp2}`, role: "user", content: content.content, steps: [], created_at: Date.now() };
+    const sum = sum1 + 1;
+    sum1 = sum;
+    items[tmp] = obj;
+    obj = { id: `m${tmp3}`, role: "assistant", content: "", steps: [], created_at: Date.now() };
+    sum1 = sum1 + 1;
+    items[tmp + 1] = obj;
+    const result = obj.set(projectId, items);
     recordThinkingTransition(projectId);
   },
-  VIBEGRATIONS_CHAT_STEP_APPEND: function handleChatStepAppend(arg0) {
-    let dispatcher;
-    let projectId;
-    ({ projectId, step: dispatcher } = arg0);
-    patchLastAssistant(projectId, (steps) => {
-      const obj = {};
-      const merged = Object.assign(steps);
-      const items = [...steps.steps, dispatcher];
-      obj["steps"] = items;
-      return obj;
-    });
+  VIBEGRATIONS_CHAT_STEP_APPEND: function handleChatStepAppend(projectId) {
+    projectId = projectId.projectId;
+    let obj = map;
+    const value = map.get(projectId);
+    if (null != value) {
+      if (0 !== value.length) {
+        if ("assistant" === value[value.length - 1].role) {
+          const items = [];
+          obj = {};
+          const merged = Object.assign(tmp);
+          const items1 = [];
+          items1[HermesBuiltin.arraySpread(tmp.steps, 0)] = projectId.step;
+          obj.steps = items1;
+          items[HermesBuiltin.arraySpread(value.slice(0, -1), 0)] = obj;
+          const result = obj.set(projectId, items);
+          const arraySpreadResult = HermesBuiltin.arraySpread(value.slice(0, -1), 0);
+        }
+      }
+    }
     recordThinkingTransition(projectId);
   },
   VIBEGRATIONS_CHAT_USAGE_SET: function handleChatUsageSet(projectId) {
@@ -363,14 +425,24 @@ tmp7 = new tmp7(require("dispatcher"), {
     }
   },
   VIBEGRATIONS_CHAT_TURN_PATCH: function handleChatTurnPatch(arg0) {
-    let dispatcher;
+    let patch;
     let projectId;
-    ({ projectId, patch: dispatcher } = arg0);
-    patchLastAssistant(projectId, (arg0) => {
-      const merged = Object.assign(arg0);
-      const merged1 = Object.assign(dispatcher);
-      return {};
-    });
+    ({ projectId, patch } = arg0);
+    let obj = map;
+    const value = map.get(projectId);
+    if (null != value) {
+      if (0 !== value.length) {
+        if ("assistant" === value[value.length - 1].role) {
+          const items = [];
+          obj = {};
+          const merged = Object.assign(tmp);
+          const merged1 = Object.assign(patch);
+          items[HermesBuiltin.arraySpread(value.slice(0, -1), 0)] = obj;
+          const result = obj.set(projectId, items);
+          const arraySpreadResult = HermesBuiltin.arraySpread(value.slice(0, -1), 0);
+        }
+      }
+    }
     recordThinkingTransition(projectId);
   },
   VIBEGRATIONS_CHAT_CONN_STATE: function handleChatConnState(arg0) {
@@ -387,23 +459,41 @@ tmp7 = new tmp7(require("dispatcher"), {
       if (value.some((role) => {
         let tmp = "assistant" === role.role;
         if (tmp) {
-          tmp = !outer1_17(role);
+          let someResult = "" !== role.content;
+          if (!someResult) {
+            someResult = null != role.proposal;
+          }
+          if (!someResult) {
+            const steps = role.steps;
+            someResult = steps.some((kind) => set.has(kind.kind));
+          }
+          tmp = !someResult;
         }
         return tmp;
       })) {
         const result = map.set(projectId, value.map((role) => {
           let tmp = role;
           if ("assistant" === role.role) {
+            let someResult = "" !== role.content;
+            if (!someResult) {
+              someResult = null != role.proposal;
+            }
+            if (!someResult) {
+              const steps = role.steps;
+              someResult = steps.some((kind) => set.has(kind.kind));
+            }
             tmp = role;
-            if (!outer1_17(role)) {
-              const obj = {};
+            if (!someResult) {
+              let obj = {};
               const merged = Object.assign(role);
               const items = [];
-              const arraySpreadResult = HermesBuiltin.arraySpread(role.steps, 0);
-              items[arraySpreadResult] = { type: "step", kind: "error", message: "Connection lost" };
-              const sum = arraySpreadResult + 1;
-              obj["steps"] = items;
+              obj = { type: "step", kind: "terminal_error", message: null };
+              const intl = callback(1236).intl;
+              obj[2] = intl.string(callback2(3259)["wjWm+/"]);
+              items[HermesBuiltin.arraySpread(role.steps, 0)] = obj;
+              obj.steps = items;
               tmp = obj;
+              const arraySpreadResult = HermesBuiltin.arraySpread(role.steps, 0);
             }
           }
           return tmp;
@@ -414,40 +504,57 @@ tmp7 = new tmp7(require("dispatcher"), {
     return false;
   },
   VIBEGRATIONS_PROJECT_DELETE_SUCCESS: function handleProjectDeleteSuccess(projectId) {
-    if (!purgeProject(projectId.projectId)) {
+    projectId = projectId.projectId;
+    let deleteResult = map.delete(projectId);
+    const deleteResult1 = map1.delete(projectId);
+    const deleteResult2 = map2.delete(projectId);
+    if (!deleteResult) {
+      deleteResult = deleteResult1;
+    }
+    if (!deleteResult) {
+      deleteResult = deleteResult2;
+    }
+    if (!deleteResult) {
+      deleteResult = deleteResult3;
+    }
+    if (!deleteResult) {
       return false;
     }
+    deleteResult3 = map3.delete(projectId);
   },
   VIBEGRATIONS_PROJECTS_FETCH_SUCCESS: function handleProjectsFetchSuccess(projects) {
-    let iter3;
     projects = projects.projects;
     const items = [...map.keys(), ...map1.keys(), ...map2.keys(), ...map3.keys()];
     const set = new Set(projects.map((id) => id.id));
-    const tmp2 = _createForOfIteratorHelperLoose(new Set(items));
-    const iter = tmp2();
-    let iter2 = iter;
     let flag = false;
-    let flag2 = false;
-    if (!iter.done) {
-      do {
-        let value = iter2.value;
-        let tmp3 = !set.has(value);
-        if (tmp3) {
-          let tmp4 = purgeProject;
-          tmp3 = purgeProject(value);
-        }
-        if (tmp3) {
-          flag = true;
-        }
-        iter3 = tmp2();
-        iter2 = iter3;
-        flag2 = flag;
-      } while (!iter3.done);
+    for (const item10047 of set1) {
+      let tmp2 = item10047;
+      let hasItem = set.has(item10047);
+      let tmp4 = !hasItem;
+      if (!hasItem) {
+        let tmp5 = purgeProject;
+        let tmp6 = item10047;
+        tmp4 = purgeProject(tmp2);
+      }
+      if (tmp4) {
+        flag = true;
+      }
+      continue;
     }
-    return flag2 ? undefined : false;
+    return flag ? undefined : false;
   }
 });
 let result = set.fileFinishedImporting("modules/vibegrations/stores/VibegrationsChatStore.tsx");
 
-export default tmp7;
-export { turnSettled };
+export default vibegrationsChatStore;
+export const turnSettled = function turnSettled(content) {
+  let someResult = "" !== content.content;
+  if (!someResult) {
+    someResult = null != content.proposal;
+  }
+  if (!someResult) {
+    const steps = content.steps;
+    someResult = steps.some((kind) => set.has(kind.kind));
+  }
+  return someResult;
+};

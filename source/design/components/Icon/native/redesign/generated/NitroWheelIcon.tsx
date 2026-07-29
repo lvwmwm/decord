@@ -1,26 +1,26 @@
-// Module ID: 6606
-// Function ID: 58471
+// Module ID: 6627
+// Function ID: 6628
 // Name: NitroWheelIcon
-// Dependencies: [31, 33, 689, 3868, 6607, 2]
+// Dependencies: [19, 21, 712, 3892, 6628, 2]
 // Exports: NitroWheelIcon
 
-// Module 6606 (NitroWheelIcon)
-import "result";
+// Module 6627 (NitroWheelIcon)
+import "noop";
 import { jsx } from "jsxProd";
 
 const require = arg1;
-const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("design/components/Icon/native/redesign/generated/NitroWheelIcon.tsx");
+const result = require("Themes").fileFinishedImporting("design/components/Icon/native/redesign/generated/NitroWheelIcon.tsx");
 
 export const NitroWheelIcon = function NitroWheelIcon(color) {
   let INTERACTIVE_ICON_DEFAULT = color.color;
   if (INTERACTIVE_ICON_DEFAULT === undefined) {
-    INTERACTIVE_ICON_DEFAULT = importDefault(689).colors.INTERACTIVE_ICON_DEFAULT;
+    INTERACTIVE_ICON_DEFAULT = importDefault(712).colors.INTERACTIVE_ICON_DEFAULT;
   }
-  let obj = Object.create(null);
-  obj.style = 0;
-  obj.color = 0;
-  const merged = Object.assign(color, obj);
-  obj = { source: require(6607) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
+  const merged = Object.assign(color, Object.create(null));
+  const obj = { source: null, color: null, style: null };
+  obj[0] = require(6628) /* registerAsset */;
+  obj[1] = INTERACTIVE_ICON_DEFAULT;
+  obj[2] = color.style;
   const merged1 = Object.assign(merged);
-  return jsx(require(3868) /* BaseIconImage */.BaseIconImage, { source: require(6607) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(require(3892) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
 };

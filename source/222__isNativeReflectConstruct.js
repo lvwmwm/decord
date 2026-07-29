@@ -1,70 +1,78 @@
 // Module ID: 222
-// Function ID: 3076
+// Function ID: 223
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 44, 197]
+// Dependencies: [41, 42, 93, 95, 98, 38, 203]
 
 // Module 222 (_isNativeReflectConstruct)
-import Blob from "Blob";
-import _defineProperties from "_defineProperties";
+import _classCallCheck from "_classCallCheck";
 import _possibleConstructorReturn from "_possibleConstructorReturn";
 import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
+import importDefaultResult from "_createClass";
 
-const require = arg1;
+const File = arg1;
 function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
-  }
-  const result = _isNativeReflectConstruct();
-}
-
-export default ((arg0) => {
-  class File {
-    constructor(arg0, arg1, arg2) {
-      self = this;
-      tmp = outer1_2(this, File);
-      tmp3 = null != arg0;
-      tmp2 = File(outer1_1[5]);
-      if (tmp3) {
-        tmp3 = null != arg1;
-      }
-      tmp2Result = tmp2(tmp3, "Failed to construct `File`: Must pass both `parts` and `name` arguments.");
-      items = [, ];
-      items[0] = arg0;
-      items[1] = arg2;
-      obj = outer1_5(File);
-      tmp5 = outer1_4;
-      if (outer1_7()) {
-        tmp7 = globalThis;
-        _Reflect = Reflect;
-        tmp8 = outer1_5;
-        constructResult = Reflect.construct(obj, items, outer1_5(self).constructor);
-      } else {
-        constructResult = obj.apply(self, items);
-      }
-      tmp5Result = tmp5(self, constructResult);
-      tmp5Result.data.name = arg1;
-      return tmp5Result;
+  try {
+    const _Boolean = Boolean;
+    const call = valueOf.call;
+    const _Reflect = Reflect;
+    const _Boolean2 = Boolean;
+    if (typeof call === "unknown") {
+      let callResult = valueOf();
+    } else {
+      callResult = call(constructResult);
     }
+    let closure_0 = !callResult;
+    function _isNativeReflectConstruct() {
+      return closure_0;
+    }
+    return _isNativeReflectConstruct();
+  } catch (err) {
   }
-  callback2(File, arg0);
-  let obj = {
+}
+class File {
+  constructor(arg0, arg1, arg2) {
+    self = this;
+    tmp = File;
+    tmp2 = _isNativeReflectConstruct(this, File);
+    tmp4 = null != global;
+    tmp3 = require("module_38");
+    if (tmp4) {
+      tmp4 = null != arg1;
+    }
+    tmp3Result = tmp3(tmp4, "Failed to construct `File`: Must pass both `parts` and `name` arguments.");
+    items = [, ];
+    items[0] = global;
+    items[1] = importDefault;
+    tmp6 = __esModule;
+    obj = __esModule(tmp);
+    tmp7 = __esModule;
+    if (_isNativeReflectConstruct()) {
+      tmp9 = globalThis;
+      _Reflect = Reflect;
+      constructResult = Reflect.construct(obj, items, tmp6(self).constructor);
+    } else {
+      constructResult = obj.apply(self, items);
+    }
+    tmp7Result = tmp7(self, constructResult);
+    tmp7Result.data.name = arg1;
+    return tmp7Result;
+  }
+}
+require("_inherits")(File, require("Blob"));
+let items = [
+  {
     key: "name",
     get() {
-      File(outer1_1[5])(null != this.data.name, "Files must have a name set.");
+      File(38)(null != this.data.name, "Files must have a name set.");
       return this.data.name;
     }
-  };
-  let items = [obj, ];
-  obj = {
+  },
+  {
     key: "lastModified",
     get() {
       return this.data.lastModified || 0;
     }
-  };
-  items[1] = obj;
-  return callback(File, items);
-})(require("Blob"));
+  }
+];
+
+export default importDefaultResult(File, items);

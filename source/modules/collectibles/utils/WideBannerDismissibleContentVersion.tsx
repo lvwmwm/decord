@@ -1,37 +1,34 @@
-// Module ID: 13103
-// Function ID: 101163
+// Module ID: 13126
+// Function ID: 13127
 // Name: getWideBannerDismissibleContentVersion
-// Dependencies: [5826, 655, 5811, 2]
+// Dependencies: [5844, 678, 5829, 2]
 // Exports: getWideBannerDismissibleContentVersion
 
-// Module 13103 (getWideBannerDismissibleContentVersion)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 13126 (getWideBannerDismissibleContentVersion)
+import map from "map";
 import { CollectibleShopTab } from "items";
 
 const require = arg1;
 const result = require("ShopBlockType").fileFinishedImporting("modules/collectibles/utils/WideBannerDismissibleContentVersion.tsx");
 
 export const getWideBannerDismissibleContentVersion = function getWideBannerDismissibleContentVersion() {
-  let found;
   const items = [, , ];
   ({ HOME: arr[0], ORBS: arr[1], CATALOG: arr[2] } = CollectibleShopTab);
-  let num = 0;
-  if (0 < items.length) {
-    while (true) {
-      let tmp = shopBlocks;
-      shopBlocks = shopBlocks.getShopBlocks(items[num]);
-      found = shopBlocks.find((type) => type.type === outer1_0(outer1_1[2]).ShopBlockType.WIDE_BANNER);
-      let prop;
-      if (null != found) {
-        prop = found.dismissibleContentVersion;
-      }
-      if (null != prop) {
-        break;
-      } else {
-        num = num + 1;
-      }
+  const obj = items[Symbol.iterator]();
+  while (obj !== undefined) {
+    let tmp2 = shopBlocks;
+    shopBlocks = shopBlocks.getShopBlocks(tmp);
+    let found = shopBlocks.find((type) => type.type === callback(table[2]).ShopBlockType.WIDE_BANNER);
+    let tmp4 = found;
+    let prop;
+    if (found != null) {
+      prop = found.dismissibleContentVersion;
     }
-    return found.dismissibleContentVersion;
+    if (null != prop) {
+      let tmp6 = obj;
+      obj.return();
+      return found.dismissibleContentVersion;
+    }
   }
   return 0;
 };

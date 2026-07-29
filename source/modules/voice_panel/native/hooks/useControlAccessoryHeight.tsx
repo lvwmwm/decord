@@ -1,11 +1,11 @@
-// Module ID: 15990
-// Function ID: 123363
+// Module ID: 16025
+// Function ID: 16026
 // Name: useControlAccessoryHeight
-// Dependencies: [31, 10015, 1324, 15960, 4026, 15965, 15848, 15964, 2]
+// Dependencies: [19, 10037, 1348, 15995, 4050, 16000, 15883, 15999, 2]
 // Exports: default
 
-// Module 15990 (useControlAccessoryHeight)
-import result from "result";
+// Module 16025 (useControlAccessoryHeight)
+import noop from "noop";
 
 const require = arg1;
 let closure_4 = { code: "function useControlAccessoryHeightTsx1(){const{consoleStatusHeight,floatingCTAHeight}=this.__closure;return consoleStatusHeight.get()+floatingCTAHeight.get();}" };

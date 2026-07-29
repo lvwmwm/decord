@@ -1,36 +1,40 @@
-// Module ID: 9660
-// Function ID: 75183
+// Module ID: 9682
+// Function ID: 9683
 // Name: NativeModules
-// Dependencies: [57, 31, 27, 1451, 1552, 5222, 4379, 33, 4165, 689, 4026, 9661, 9664, 1453, 1557, 1450, 5118, 5223, 9423, 4722, 22, 9665, 9671, 9673, 9373, 9674, 4718, 7655, 1212, 2]
+// Dependencies: [32, 19, 17, 1475, 1576, 5244, 4402, 21, 4189, 712, 4050, 9683, 9686, 1477, 1581, 1474, 5140, 5245, 9447, 4744, 12, 9687, 9693, 9695, 9397, 9696, 4740, 7678, 1236, 2]
 
-// Module 9660 (NativeModules)
+// Module 9682 (NativeModules)
 import _slicedToArray from "_slicedToArray";
-import importAllResult from "result";
-import get_ActivityIndicator from "_isNativeReflectConstruct";
-import closure_6 from "_createForOfIteratorHelperLoose";
+import importAllResult from "isActionPickSupported";
+import get_ActivityIndicator from "BottomSheetModal";
+import getDimensionsStoreStateForEntry from "getDimensionsStoreStateForEntry";
 import { InAppCameraUsedCameraPreviewTypes as closure_7 } from "DRAG_HANDLE";
 import { ACTION_SHEET_START_HEIGHT_RATIO as closure_8 } from "ACTION_SHEET_START_HEIGHT_RATIO";
 import { NativePermissionStatus } from "NativePermissionStatus";
-import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import { jsx } from "NewCaption";
+import createCacheKey from "createCacheKey";
 
-let NativeEventEmitter;
-let NativeModules;
 const require = arg1;
-({ NativeEventEmitter, NativeModules } = get_ActivityIndicator);
-const nativeEventEmitter = new NativeEventEmitter(NativeModules.PhotoLibraryHelper);
-let obj = {};
-obj = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.MOBILE_KEYBOARD_PANEL_BACKGROUND, marginTop: 8, paddingTop: 8 };
-obj.listContainer = obj;
-let closure_12 = _createForOfIteratorHelperLoose.createStyles(obj);
+let c4 = importAllResult;
+const NativeModules = get_ActivityIndicator.NativeModules;
+const nativeEventEmitter = new get_ActivityIndicator.NativeEventEmitter(NativeModules.PhotoLibraryHelper);
+let obj = { listContainer: null };
+obj = { backgroundColor: require("Themes").colors.MOBILE_KEYBOARD_PANEL_BACKGROUND, marginTop: 8, paddingTop: 8 };
+obj[0] = obj;
+let closure_12 = createCacheKey.createStyles(obj);
 let closure_13 = { code: "function MediaKeyboardListTsx1(){const{animatedIndex}=this.__closure;return animatedIndex.get();}" };
 let closure_14 = { code: "function MediaKeyboardListTsx2(currentIndex){const{latch,runOnJS,setIsExpanded}=this.__closure;if(currentIndex>0.1&&!latch.get()){latch.set(true);runOnJS(setIsExpanded)(true);}}" };
 let closure_15 = { code: "function MediaKeyboardListTsx3(){const{animatedSnapPoints}=this.__closure;return animatedSnapPoints.get();}" };
 let closure_16 = { code: "function MediaKeyboardListTsx4(snapPoints,previous){const{cheapWorkletArrayShallowEqual,runOnJS,setBottomSheetState,windowHeight,computedStartHeight,maxDynamicContentSize}=this.__closure;var _snapPoints$,_snapPoints;if(cheapWorkletArrayShallowEqual(snapPoints,previous!==null&&previous!==void 0?previous:undefined))return;runOnJS(setBottomSheetState)({minimum:windowHeight-((_snapPoints$=snapPoints[0])!==null&&_snapPoints$!==void 0?_snapPoints$:computedStartHeight),maximum:windowHeight-((_snapPoints=snapPoints[snapPoints.length-1])!==null&&_snapPoints!==void 0?_snapPoints:maxDynamicContentSize)});}" };
 const memoResult = importAllResult.memo(function MediaKeyboardList(channel) {
+  let tmp21;
+  let tmp22;
   channel = channel.channel;
-  let draftType = channel.draftType;
+  let animatedIndex = channel;
+  const draftType = channel.draftType;
+  let importDefault = draftType;
   const onPressCamera = channel.onPressCamera;
+  let sharedValue = onPressCamera;
   const onAttachPress = channel.onAttachPress;
   const onPressItem = channel.onPressItem;
   const onLongPressItem = channel.onLongPressItem;
@@ -67,164 +71,152 @@ const memoResult = importAllResult.memo(function MediaKeyboardList(channel) {
   let width;
   let maximum;
   let closure_31;
+  let obj = onPressItem;
   ref = onPressItem.useRef(true);
   let items = [ref];
   const callback = onPressItem.useCallback((nativeEvent) => {
     ref.current = nativeEvent.nativeEvent.contentOffset.y < 100;
   }, items);
-  const tmp3 = onAttachPress(onPressItem.useState(null), 2);
-  first = tmp3[0];
-  closure_15 = tmp3[1];
-  let obj = draftType(onPressCamera[11]);
-  assets = obj.useAssets();
-  let obj1 = channel(onPressCamera[12]);
-  const mediaKeyboardItemsPerRow = obj1.useMediaKeyboardItemsPerRow();
+  const tmp4 = onAttachPress(onPressItem.useState(null), 2);
+  first = tmp4[0];
+  closure_15 = tmp4[1];
+  let obj1 = importDefault(sharedValue[11]);
+  assets = obj1.useAssets();
+  let obj2 = animatedIndex(sharedValue[12]);
+  const mediaKeyboardItemsPerRow = obj2.useMediaKeyboardItemsPerRow();
   itemsPerRow = mediaKeyboardItemsPerRow.itemsPerRow;
   itemsPageSizeRef = mediaKeyboardItemsPerRow.itemsPageSizeRef;
   const effect = onPressItem.useEffect(() => {
     const NativePermissionManager = onLongPressItem.NativePermissionManager;
     const photoAuthorization = NativePermissionManager.requestPhotoAuthorization();
     photoAuthorization.then((arg0) => {
-      outer1_15(arg0);
+      callback(arg0);
     });
   }, []);
   let items1 = [first, itemsPageSizeRef, extensions];
   const effect1 = onPressItem.useEffect(() => {
-    let addListenerResult;
-    let obj = draftType(onPressCamera[11]);
+    let obj = _undefined(sharedValue[11]);
     obj = { batchSize: itemsPageSizeRef.current, extensions };
     obj.refreshAssets(obj);
-    if (null != uploadLimit) {
+    let addListenerResult;
+    if (uploadLimit != null) {
       addListenerResult = uploadLimit.addListener("photoLibraryChanged", () => {
-        if (outer1_13.current) {
-          let obj = draftType(onPressCamera[11]);
-          obj = { batchSize: outer1_18.current, extensions: outer1_9 };
+        if (ref.current) {
+          let obj = outer1_1(outer1_2[11]);
+          obj = { batchSize: null, extensions: null };
+          obj[0] = ref2.current;
+          obj[1] = closure_9;
           obj.refreshAssets(obj);
         }
       });
     }
-    const channel = addListenerResult;
+    const animatedIndex = addListenerResult;
     return () => {
-      if (null != addListenerResult) {
-        addListenerResult.remove();
+      if (closure_0 != null) {
+        closure_0.remove();
       }
     };
   }, items1);
-  closure_19 = channel(onPressCamera[13]).useAppEntryKey();
-  height = draftType(onPressCamera[15])({ ignoreKeyboard: true }).height;
+  closure_19 = animatedIndex(sharedValue[13]).useAppEntryKey();
+  height = importDefault(sharedValue[15])({ ignoreKeyboard: true }).height;
   let result = height * includedUploadIds;
   c21 = result;
-  const diff = height - channel(onPressCamera[16]).NAV_BAR_HEIGHT_MULTILINE - draftType(onPressCamera[14])().top;
+  const diff = height - animatedIndex(sharedValue[16]).NAV_BAR_HEIGHT_MULTILINE - importDefault(sharedValue[14])().top;
   c22 = diff;
-  let obj3 = channel(onPressCamera[13]);
-  const bottomSheetInternal = channel(onPressCamera[17]).useBottomSheetInternal();
+  const obj4 = animatedIndex(sharedValue[13]);
+  const tmp3 = onAttachPress;
+  const bottomSheetInternal = animatedIndex(sharedValue[17]).useBottomSheetInternal();
   animatedSnapPoints = bottomSheetInternal.animatedSnapPoints;
-  const tmp12 = onAttachPress(onPressItem.useState({ minimum: result, maximum: diff }), 2);
-  const first1 = tmp12[0];
+  animatedIndex = bottomSheetInternal.animatedIndex;
+  const tmp16 = onAttachPress(onPressItem.useState({ minimum: result, maximum: diff }), 2);
+  const first1 = tmp16[0];
   maximum = first1.minimum;
-  c24 = tmp14;
-  const obj4 = channel(onPressCamera[17]);
-  class V {
+  c24 = tmp18;
+  const obj5 = animatedIndex(sharedValue[17]);
+  class G {
     constructor() {
       return animatedSnapPoints.get();
     }
   }
-  V.__closure = { animatedSnapPoints };
-  V.__workletHash = 7279123713809;
-  V.__initData = closure_15;
-  class G {
-    constructor(arg0, arg1) {
-      obj = channel(onPressCamera[18]);
-      tmp = undefined;
-      if (null != arg1) {
-        tmp = arg1;
+  G.__closure = { animatedSnapPoints };
+  G.__workletHash = 7279123713809;
+  G.__initData = closure_15;
+  const fn = function $(activeIndex) {
+    let obj = animatedIndex(sharedValue[18]);
+    if (!obj.cheapWorkletArrayShallowEqual(activeIndex, arg1)) {
+      let first = activeIndex[0];
+      const tmp2Result = animatedIndex(sharedValue[10]);
+      if (first == null) {
+        first = c21;
       }
-      if (!obj.cheapWorkletArrayShallowEqual(channel, tmp)) {
-        tmp2 = channel;
-        tmp3 = onPressCamera;
-        num = 10;
-        obj2 = channel(onPressCamera[10]);
-        tmp4 = c24;
-        obj = {};
-        num2 = 0;
-        first = channel[0];
-        runOnJSResult = obj2.runOnJS(c24);
-        tmp6 = height;
-        if (null == first) {
-          first = c21;
-        }
-        obj.minimum = tmp6 - first;
-        num3 = 1;
-        tmp9 = channel[channel.length - 1];
-        tmp8 = height;
-        if (null == tmp9) {
-          tmp9 = c22;
-        }
-        obj.maximum = tmp8 - tmp9;
-        tmp5Result = runOnJSResult(obj);
+      obj = { minimum: null, maximum: null };
+      obj[0] = height - first;
+      let tmp8 = activeIndex[activeIndex.length - 1];
+      if (tmp8 == null) {
+        tmp8 = c22;
       }
-      return;
+      obj[1] = height - tmp8;
+      animatedIndex(sharedValue[10]).runOnJS(c24)(obj);
+      const runOnJSResult = animatedIndex(sharedValue[10]).runOnJS(c24);
     }
-  }
-  obj = { cheapWorkletArrayShallowEqual: channel(onPressCamera[18]).cheapWorkletArrayShallowEqual, runOnJS: channel(onPressCamera[10]).runOnJS, setBottomSheetState: tmp14, windowHeight: height, computedStartHeight: result, maxDynamicContentSize: diff };
-  G.__closure = obj;
-  G.__workletHash = 4619753074319;
-  G.__initData = assets;
-  let animatedReaction = channel(onPressCamera[10]).useAnimatedReaction(V, G);
-  const tmp16 = (function useHasMediaKeyboardBottomSheetExpanded(animatedIndex) {
-    let closure_0 = animatedIndex;
-    let tmp = onAttachPress(onPressItem.useState(false), 2);
-    const draftType = tmp2;
-    let obj = channel(onPressCamera[10]);
-    const sharedValue = obj.useSharedValue(false);
-    const fn = function i() {
-      return animatedIndex.get();
-    };
-    fn.__closure = { animatedIndex };
-    fn.__workletHash = 8982138292467;
-    fn.__initData = ref;
-    const fn2 = function s(arg0) {
-      let tmp = arg0 > 0.1;
-      if (tmp) {
-        tmp = !sharedValue.get();
-      }
-      if (tmp) {
-        const result = sharedValue.set(true);
-        channel(onPressCamera[10]).runOnJS(closure_1)(true);
-        const obj = channel(onPressCamera[10]);
-      }
-    };
-    obj = { latch: sharedValue, runOnJS: channel(onPressCamera[10]).runOnJS, setIsExpanded: tmp2 };
-    fn2.__closure = obj;
-    fn2.__workletHash = 7990574449734;
-    fn2.__initData = first;
-    const animatedReaction = channel(onPressCamera[10]).useAnimatedReaction(fn, fn2);
-    return tmp[0];
-  })(bottomSheetInternal.animatedIndex);
-  const obj5 = channel(onPressCamera[10]);
+  };
+  obj = { cheapWorkletArrayShallowEqual: animatedIndex(sharedValue[18]).cheapWorkletArrayShallowEqual, runOnJS: animatedIndex(sharedValue[10]).runOnJS, setBottomSheetState: tmp18, windowHeight: height, computedStartHeight: result, maxDynamicContentSize: diff };
+  fn.__closure = obj;
+  fn.__workletHash = 4619753074319;
+  fn.__initData = assets;
+  const animatedReaction = animatedIndex(sharedValue[10]).useAnimatedReaction(G, fn);
+  importDefault = undefined;
+  sharedValue = undefined;
+  const obj6 = animatedIndex(sharedValue[10]);
+  [tmp21, tmp22] = onAttachPress(onPressItem.useState(false), 2);
+  importDefault = tmp22;
+  const tmp20 = onAttachPress(onPressItem.useState(false), 2);
+  sharedValue = animatedIndex(sharedValue[10]).useSharedValue(false);
+  const obj8 = animatedIndex(sharedValue[10]);
+  const fn2 = function i() {
+    return animatedIndex.get();
+  };
+  fn2.__closure = { animatedIndex };
+  fn2.__workletHash = 8982138292467;
+  fn2.__initData = ref;
+  const fn3 = function s(arg0) {
+    let tmp = arg0 > 0.1;
+    if (tmp) {
+      tmp = !sharedValue.get();
+    }
+    if (tmp) {
+      const result = sharedValue.set(true);
+      animatedIndex(sharedValue[10]).runOnJS(c1)(true);
+      const obj = animatedIndex(sharedValue[10]);
+    }
+  };
+  obj = { latch: sharedValue, runOnJS: animatedIndex(sharedValue[10]).runOnJS, setIsExpanded: tmp22 };
+  fn3.__closure = obj;
+  fn3.__workletHash = 7990574449734;
+  fn3.__initData = first;
+  const animatedReaction1 = animatedIndex(sharedValue[10]).useAnimatedReaction(fn2, fn3);
+  const obj9 = animatedIndex(sharedValue[10]);
   if (flag) {
-    flag = channel(onPressCamera[19]).isImageCaptureIntentSupported();
-    const obj7 = channel(onPressCamera[19]);
+    let tmp9Result = tmp9(tmp7[19]);
+    flag = tmp9Result.isImageCaptureIntentSupported();
   }
-  let length;
-  if (null != assets) {
-    length = assets.edges.length;
+  let num;
+  if (assets != null) {
+    num = assets.edges.length;
+  }
+  if (num == null) {
+    num = 0;
   }
   let num2 = 0;
-  if (null != length) {
-    num2 = length;
-  }
-  let num3 = 0;
   if (flag) {
-    num3 = 1;
+    num2 = 1;
   }
-  const sum = num2 + num3;
+  const sum = num + num2;
   c26 = sum;
   let items2 = [assets, itemsPerRow, flag];
-  memo = onPressItem.useMemo(() => {
+  memo = obj.useMemo(() => {
     if (flag) {
-      const obj = { type: "camera" };
-      const items = [obj];
+      const items = [{ type: "camera" }];
       let items1 = items;
     } else {
       items1 = [];
@@ -235,133 +227,124 @@ const memoResult = importAllResult.memo(function MediaKeyboardList(channel) {
       let arraySpreadResult = HermesBuiltin.arraySpread(items1, 0);
       arraySpreadResult = HermesBuiltin.arraySpread(Array(3 * itemsPerRow - items1.length).fill(null), arraySpreadResult);
       const ArrayResult = Array(3 * itemsPerRow - items1.length);
-      return draftType(onPressCamera[20]).chunk(items2, itemsPerRow);
+      return _undefined(sharedValue[20]).chunk(items2, itemsPerRow);
     } else {
       let edges;
-      if (null != assets) {
-        edges = assets.edges;
+      if (tmp != null) {
+        edges = tmp.edges;
       }
-      if (null == edges) {
+      if (edges == null) {
         edges = [];
       }
       const items3 = [];
       HermesBuiltin.arraySpread(edges, HermesBuiltin.arraySpread(items1, 0));
-      return draftType(onPressCamera[20]).chunk(items3, itemsPerRow);
+      return _undefined(sharedValue[20]).chunk(items3, itemsPerRow);
     }
   }, items2);
   let items3 = [onPressCamera];
-  callback1 = onPressItem.useCallback(() => {
-    onPressCamera(onManageLimited.CAMERA_BUTTON);
+  callback1 = obj.useCallback(() => {
+    sharedValue(onManageLimited.CAMERA_BUTTON);
   }, items3);
   const items4 = [itemsPageSizeRef, extensions];
   const items5 = [channel, draftType, callback1, onViewAll, onAttachPress, itemsPerRow, onPressItem, onLongPressItem, memo, includedUploadIds, flag2, uploadLimit, disableWhenReachedLimit, sum];
-  const callback2 = onPressItem.useCallback(() => {
-    let obj = draftType(onPressCamera[11]);
+  const callback2 = obj.useCallback(() => {
+    let obj = _undefined(sharedValue[11]);
     obj = { batchSize: itemsPageSizeRef.current, extensions };
     const nextAssetPage = obj.getNextAssetPage(obj);
   }, items4);
-  const callback3 = onPressItem.useCallback((arg0, rowIndex) => flag2(draftType(onPressCamera[21]), { draftType, rowIndex, totalNumItems: c26, channel, numPerRow: itemsPerRow, items: memo[rowIndex], onPressItem, onLongPressItem, includedUploadIds, uploadLimit, disableWhenReachedLimit, handleCameraPress: callback1, handleAttachPress: onAttachPress, handleViewAllPhotosPress: onViewAll, disabled: flag2 }, (function keyExtractor(arr, rowIndex) {
-    return arr.reduce((arg0, node) => {
-      if (null == node) {
-        return arg0;
+  const callback3 = obj.useCallback((arg0, rowIndex) => flag2(_undefined(sharedValue[21]), { draftType: _undefined, rowIndex, totalNumItems: c26, channel: animatedIndex, numPerRow: itemsPerRow, items: memo[rowIndex], onPressItem, onLongPressItem, includedUploadIds, uploadLimit, disableWhenReachedLimit, handleCameraPress: callback1, handleAttachPress: onAttachPress, handleViewAllPhotosPress: onViewAll, disabled: flag2 }, memo[rowIndex].reduce((arg0, node) => {
+    if (null == node) {
+      return arg0;
+    } else {
+      if (obj3.isMediaCameraNode(node)) {
+        const _HermesInternal4 = HermesInternal;
+        let combined = "" + arg0 + "-camera";
       } else {
-        if (obj3.isMediaCameraNode(node)) {
-          const _HermesInternal4 = HermesInternal;
-          let combined = "" + arg0 + "-camera";
+        let tmp6Result = tmp6(tmp7[21]);
+        if (tmp6Result.isAttachFilesNode(node)) {
+          const _HermesInternal3 = HermesInternal;
+          combined = "" + arg0 + "-attach";
         } else {
-          if (obj.isAttachFilesNode(node)) {
-            const _HermesInternal3 = HermesInternal;
-            combined = "" + arg0 + "-attach";
+          tmp6Result = tmp6(tmp7[21]);
+          if (tmp6Result.isViewAllPhotosNode(node)) {
+            const _HermesInternal2 = HermesInternal;
+            combined = "" + arg0 + "-view-all";
           } else {
-            if (obj2.isViewAllPhotosNode(node)) {
-              const _HermesInternal2 = HermesInternal;
-              combined = "" + arg0 + "-view-all";
-            } else {
-              const _HermesInternal = HermesInternal;
-              combined = "" + arg0 + "-" + node.node.image.uri;
-            }
-            obj2 = channel(onPressCamera[21]);
+            const _HermesInternal = HermesInternal;
+            combined = "" + arg0 + "-" + node.node.image.uri;
           }
-          obj = channel(onPressCamera[21]);
         }
-        obj3 = channel(onPressCamera[21]);
       }
-    }, rowIndex.toString());
-  })(memo[rowIndex], rowIndex)), items5);
-  width = draftType(onPressCamera[15])().width;
+      obj3 = callback(table[21]);
+    }
+  }, rowIndex.toString())), items5);
+  width = tmp6(tmp7[15])().width;
   const items6 = [width, itemsPerRow];
   const items7 = [onViewAll, flag2];
-  const memo1 = onPressItem.useMemo(() => {
-    const result = (width - (channel(onPressCamera[21]).PARENT_PADDING + channel(onPressCamera[21]).CHILD_PADDING * (itemsPerRow - 1))) / itemsPerRow;
-    return result + channel(onPressCamera[21]).SEPARATOR_SIZE;
+  const memo1 = obj.useMemo(() => {
+    const result = (width - (animatedIndex(sharedValue[21]).PARENT_PADDING + animatedIndex(sharedValue[21]).CHILD_PADDING * (itemsPerRow - 1))) / itemsPerRow;
+    return result + animatedIndex(sharedValue[21]).SEPARATOR_SIZE;
   }, items6);
-  const callback4 = onPressItem.useCallback(() => flag2(draftType(onPressCamera[22]), { disabled: flag2, onViewAll }), items7);
-  if (tmp16) {
+  const callback4 = obj.useCallback(() => flag2(_undefined(sharedValue[22]), { disabled: flag2, onViewAll }), items7);
+  if (tmp21) {
     maximum = first1.maximum;
   }
   const items8 = [maximum];
-  const memo2 = onPressItem.useMemo(() => ({ height: maximum }), items8);
-  const tmp29 = onAttachPress(onPressItem.useState(() => 32 + 36 * onViewAll.getState().byAppEntry[closure_19].fontScale), 2);
-  closure_31 = tmp29[1];
+  const memo2 = obj.useMemo(() => ({ height: maximum }), items8);
+  const tmp3Result = tmp3(obj.useState(() => 32 + 36 * onViewAll.getState().byAppEntry[closure_19].fontScale), 2);
+  closure_31 = tmp3Result[1];
   const items9 = [onManageLimited];
-  const callback5 = onPressItem.useCallback(() => flag2(draftType(onPressCamera[23]), { onPress: onManageLimited, onHeightChange: closure_31 }), items9);
-  const tmp17 = disableWhenReachedLimit();
-  const modalDismissGuardRefreshControl = channel(onPressCamera[24]).useModalDismissGuardRefreshControl();
-  const obj8 = channel(onPressCamera[24]);
-  obj = { photoPermissionStatus: first };
-  let tmp32 = null != assets;
-  if (tmp32) {
-    tmp32 = 0 === assets.edges.length;
+  const callback5 = obj.useCallback(() => flag2(_undefined(sharedValue[23]), { onPress: onManageLimited, onHeightChange: closure_31 }), items9);
+  tmp9Result = tmp9(tmp7[24]);
+  const modalDismissGuardRefreshControl = tmp9Result.useModalDismissGuardRefreshControl();
+  const tmp25 = disableWhenReachedLimit();
+  obj1 = { photoPermissionStatus: first, photosEmpty: null, showCameraButton: null, onPressCamera: null, onManageLimited: null, onPressPrivacySettings: null };
+  let tmp36 = null != assets;
+  if (tmp36) {
+    tmp36 = 0 === assets.edges.length;
   }
-  obj.photosEmpty = tmp32;
-  obj.showCameraButton = flag;
-  obj.onPressCamera = function onPressCamera() {
-    return onPressCamera(onManageLimited.TAKE_A_PHOTO_BUTTON);
+  obj1[1] = tmp36;
+  obj1[2] = flag;
+  obj1[3] = function onPressCamera() {
+    return sharedValue(onManageLimited.TAKE_A_PHOTO_BUTTON);
   };
-  obj.onManageLimited = onManageLimited;
-  obj.onPressPrivacySettings = draftType(onPressCamera[26]);
-  let mediaEmptyStateComponentOrNull = channel(onPressCamera[25]).getMediaEmptyStateComponentOrNull(obj);
+  obj1[4] = onManageLimited;
+  obj1[5] = importDefault(sharedValue[26]);
+  let mediaEmptyStateComponentOrNull = animatedIndex(sharedValue[25]).getMediaEmptyStateComponentOrNull(obj1);
   if (null == mediaEmptyStateComponentOrNull) {
-    obj1 = {};
-    let tmp34;
-    if (tmp28) {
-      tmp34 = callback5;
+    let tmp38;
+    if (first === extensions.LIMITED) {
+      tmp38 = callback5;
     }
-    obj1.renderHeader = tmp34;
-    let num4 = 0;
-    if (tmp28) {
-      num4 = tmp29[0];
+    obj2 = { renderHeader: null, headerSize: null, style: null, renderItem: null, sections: null, itemSize: null, inActionSheet: true, refreshControl: null, preserveScrollMomentum: true, automaticallyAdjustsScrollIndicatorInsets: false, keyboardDismissMode: "none", onEndReached: null, onScroll: null, endReachedThreshold: 400, accessibilityRole: "list", accessibilityLabel: null, showsVerticalScrollIndicator: false, footerSize: null, renderFooter: null, chunkBase: null, batchesToRender: null };
+    obj2[0] = tmp38;
+    let num3 = 0;
+    if (first === extensions.LIMITED) {
+      num3 = tmp3Result[0];
     }
-    obj1.headerSize = num4;
-    const items10 = [memo2, tmp17.listContainer];
-    obj1.style = items10;
-    obj1.renderItem = callback3;
+    obj2[1] = num3;
+    const items10 = [memo2, tmp25.listContainer];
+    obj2[2] = items10;
+    obj2[3] = callback3;
     const items11 = [memo.length];
-    obj1.sections = items11;
-    obj1.itemSize = memo1;
-    obj1.inActionSheet = true;
-    obj1.refreshControl = modalDismissGuardRefreshControl;
-    obj1.preserveScrollMomentum = true;
-    obj1.automaticallyAdjustsScrollIndicatorInsets = false;
-    obj1.keyboardDismissMode = "none";
-    obj1.onEndReached = callback2;
-    obj1.onScroll = callback;
-    obj1.endReachedThreshold = 400;
-    obj1.accessibilityRole = "list";
-    const intl = channel(onPressCamera[28]).intl;
-    obj1.accessibilityLabel = intl.string(channel(onPressCamera[28]).t.XONG6A);
-    obj1.showsVerticalScrollIndicator = false;
-    obj1.footerSize = channel(onPressCamera[22]).FOOTER_HEIGHT;
-    obj1.renderFooter = callback4;
-    obj1.chunkBase = maximum;
+    obj2[4] = items11;
+    obj2[5] = memo1;
+    obj2[7] = modalDismissGuardRefreshControl;
+    obj2[11] = callback2;
+    obj2[12] = callback;
+    const intl = tmp9(tmp7[28]).intl;
+    obj2[15] = intl.string(tmp9(tmp7[28]).t.XONG6A);
+    obj2[17] = tmp9(tmp7[22]).FOOTER_HEIGHT;
+    obj2[18] = callback4;
+    obj2[19] = maximum;
     let prop;
-    if (!tmp16) {
-      prop = channel(onPressCamera[27]).MINIMUM_BATCHES_TO_RENDER;
+    if (!tmp21) {
+      prop = tmp9(tmp7[27]).MINIMUM_BATCHES_TO_RENDER;
     }
-    obj1.batchesToRender = prop;
-    mediaEmptyStateComponentOrNull = flag2(draftType(onPressCamera[27]), obj1);
-    const tmp40 = flag2;
-    const tmp43 = draftType(onPressCamera[27]);
+    obj2[20] = prop;
+    mediaEmptyStateComponentOrNull = flag2(tmp6(tmp7[27]), obj2);
+    const tmp41 = flag2;
+    let tmp6Result = tmp6(tmp7[27]);
   }
   return mediaEmptyStateComponentOrNull;
 });

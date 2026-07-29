@@ -1,20 +1,20 @@
-// Module ID: 11963
-// Function ID: 92410
+// Module ID: 11987
+// Function ID: 11988
 // Name: UserProfileTextButtonGroup
-// Dependencies: [31, 27, 5545, 33, 4165, 1450, 2]
+// Dependencies: [19, 17, 5563, 21, 4189, 1474, 2]
 // Exports: default
 
-// Module 11963 (UserProfileTextButtonGroup)
-import "result";
+// Module 11987 (UserProfileTextButtonGroup)
+import "noop";
 import { View } from "get ActivityIndicator";
 import { PROFILE_SIDE_PADDING } from "ARBITRARY_LARGE_OFFSET";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_4;
-let closure_5;
-({ jsx: closure_4, jsxs: closure_5 } = jsxProd);
-let closure_6 = _createForOfIteratorHelperLoose.createStyles({ container: { flexDirection: "row", flexWrap: "wrap", gap: 12 }, buttonArea: { flexGrow: 1 } });
+let c4;
+let c5;
+({ jsx: c4, jsxs: c5 } = jsxProd);
+let closure_6 = createCacheKey.createStyles({ container: { flexDirection: "row", flexWrap: "wrap", gap: 12 }, buttonArea: { flexGrow: 1 } });
 let result = require("ARBITRARY_LARGE_OFFSET").fileFinishedImporting("modules/user_profile/native/UserProfileTextButtonGroup.tsx");
 
 export default function UserProfileTextButtonGroup(arg0) {
@@ -24,51 +24,54 @@ export default function UserProfileTextButtonGroup(arg0) {
   let style;
   ({ primaryButton, secondaryButton, maxWidth, style } = arg0);
   let items = callback3();
-  const width = importDefault(1450)().width;
+  const width = importDefault(1474)().width;
   let bound = width;
   if (null != maxWidth) {
     const _Math = Math;
     bound = Math.min(width, maxWidth);
   }
-  const result = (bound - 2 * PROFILE_SIDE_PADDING - 12) / 2;
+  const diff = bound - 2 * PROFILE_SIDE_PADDING;
   if (null == primaryButton) {
     if (null == secondaryButton) {
       return null;
     }
   }
   if (null == primaryButton) {
-    let obj = {};
+    let obj = { style: null, children: null };
     items = [, ];
     items[0] = items.container;
     items[1] = style;
-    obj.style = items;
-    obj.children = secondaryButton;
+    obj[0] = items;
+    obj[1] = secondaryButton;
     callback(View, obj);
   } else if (null == secondaryButton) {
-    obj = {};
+    obj = { style: null, children: null };
     const items1 = [items.container, style];
-    obj.style = items1;
-    obj.children = primaryButton;
+    obj[0] = items1;
+    obj[1] = primaryButton;
     callback(View, obj);
   } else {
-    obj = {};
+    const result = (diff - 12) / 2;
+    obj = { style: null, children: null };
     const items2 = [items.container, style];
-    obj.style = items2;
-    const obj1 = {};
+    obj[0] = items2;
+    const obj1 = { style: null, children: null };
     const items3 = [items.buttonArea, ];
-    const obj2 = { minWidth: result };
+    const obj2 = { minWidth: null };
+    obj2[0] = result;
     items3[1] = obj2;
-    obj1.style = items3;
-    obj1.children = primaryButton;
+    obj1[0] = items3;
+    obj1[1] = primaryButton;
     const items4 = [callback(View, obj1), ];
-    const obj3 = {};
+    const obj3 = { style: null, children: null };
     const items5 = [items.buttonArea, ];
-    const obj4 = { minWidth: result };
+    const obj4 = { minWidth: null };
+    obj4[0] = result;
     items5[1] = obj4;
-    obj3.style = items5;
-    obj3.children = secondaryButton;
+    obj3[0] = items5;
+    obj3[1] = secondaryButton;
     items4[1] = callback(View, obj3);
-    obj.children = items4;
+    obj[1] = items4;
     callback2(View, obj);
   }
 };

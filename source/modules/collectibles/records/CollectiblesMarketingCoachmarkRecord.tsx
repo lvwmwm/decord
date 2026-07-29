@@ -1,40 +1,28 @@
-// Module ID: 5806
-// Function ID: 50838
-// Name: CollectiblesMarketingCoachmarkRecord
-// Dependencies: [6, 7, 5804, 2]
+// Module ID: 5824
+// Function ID: 5825
+// Name: fromServer
+// Dependencies: [5822, 2]
 
-// Module 5806 (CollectiblesMarketingCoachmarkRecord)
-import _classCallCheck from "_classCallCheck";
-import _defineProperties from "_defineProperties";
-
-const require = arg1;
-const tmp2 = (() => {
-  class CollectiblesMarketingCoachmarkRecord {
-    constructor(arg0) {
-      tmp = outer1_2(this, CollectiblesMarketingCoachmarkRecord);
-      this.type = CollectiblesMarketingCoachmarkRecord(outer1_1[2]).CollectiblesMarketingType.COACHMARK;
-      ({ title: this.title, body: this.body, assetDark: this.assetDark, assetLight: this.assetLight, version: this.version, refTargetBackground: this.refTargetBackground, badgeIcon: this.badgeIcon, badgeText: this.badgeText, buttonLabel: this.buttonLabel } = arg0);
-      return;
-    }
+// Module 5824 (fromServer)
+let prototype;
+prototype = function CollectiblesMarketingCoachmarkRecord(arg0) {
+  const obj = Object.create(new.target.prototype);
+  obj.type = require(5822) /* CollectiblesMarketingType */.CollectiblesMarketingType.COACHMARK;
+  ({ title: tmp.title, body: tmp.body, assetDark: tmp.assetDark, assetLight: tmp.assetLight, version: tmp.version, refTargetBackground: tmp.refTargetBackground, badgeIcon: tmp.badgeIcon, badgeText: tmp.badgeText, buttonLabel: tmp.buttonLabel } = arg0);
+  return obj;
+}.prototype;
+prototype["fromServer"] = function fromServer(arg0) {
+  let obj = {};
+  const merged = Object.assign(arg0);
+  ({ asset_dark: obj.assetDark, asset_light: obj.assetLight, ref_target_background: obj.refTargetBackground, badge_icon: obj.badgeIcon, badge_text: obj.badgeText, button_label: obj.buttonLabel } = arg0);
+  if (typeof prototype !== "find") {
+    HermesBuiltin.throwTypeError();
   }
-  const items = [
-    {
-      key: "fromServer",
-      value(asset_dark) {
-        const obj = {};
-        const merged = Object.assign(asset_dark);
-        obj["assetDark"] = asset_dark.asset_dark;
-        obj["assetLight"] = asset_dark.asset_light;
-        obj["refTargetBackground"] = asset_dark.ref_target_background;
-        obj["badgeIcon"] = asset_dark.badge_icon;
-        obj["badgeText"] = asset_dark.badge_text;
-        obj["buttonLabel"] = asset_dark.button_label;
-        return new CollectiblesMarketingCoachmarkRecord(obj);
-      }
-    }
-  ];
-  return callback(CollectiblesMarketingCoachmarkRecord, null, items);
-})();
-const result = require("CollectiblesMarketingType").fileFinishedImporting("modules/collectibles/records/CollectiblesMarketingCoachmarkRecord.tsx");
+  obj = Object.create(prototype.prototype);
+  obj.type = require(5822) /* CollectiblesMarketingType */.CollectiblesMarketingType.COACHMARK;
+  ({ title: tmp3.title, body: tmp3.body, assetDark: tmp3.assetDark, assetLight: tmp3.assetLight, version: tmp3.version, refTargetBackground: tmp3.refTargetBackground, badgeIcon: tmp3.badgeIcon, badgeText: tmp3.badgeText, buttonLabel: tmp3.buttonLabel } = obj);
+  return obj;
+};
+const result = require("set").fileFinishedImporting("modules/collectibles/records/CollectiblesMarketingCoachmarkRecord.tsx");
 
-export const CollectiblesMarketingCoachmarkRecord = tmp2;
+export const CollectiblesMarketingCoachmarkRecord = prototype;

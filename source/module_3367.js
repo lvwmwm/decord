@@ -1,24 +1,36 @@
 // Module ID: 3367
-// Function ID: 26258
-// Dependencies: [1932, 1933]
+// Function ID: 3368
+// Dependencies: [1956, 1957]
 
 // Module 3367
-import result from "result";
+import buildMatchFn from "buildMatchFn";
+import buildMatchPatternFn from "buildMatchPatternFn";
 
-obj = { ordinalNumber: require("result")(obj), era: result.default({ matchPatterns: obj1, defaultMatchWidth: "wide", parsePatterns: { any: items }, defaultParseWidth: "any" }), quarter: result.default(obj2), month: result.default({ matchPatterns: obj4, defaultMatchWidth: "wide", parsePatterns: { narrow: items2, any: items3 }, defaultParseWidth: "any" }), day: result.default({ matchPatterns: obj5, defaultMatchWidth: "wide", parsePatterns: { narrow: items4, any: items5 }, defaultParseWidth: "any" }), dayPeriod: result.default({ matchPatterns: obj6, defaultMatchWidth: "wide", parsePatterns: { any: obj7 }, defaultParseWidth: "any" }) };
-obj = {
-  matchPattern: /^(\d+)(-?(е|я|й|ое|ье|ая|ья|ый|ой|ий|ый))?/i,
+if (!buildMatchFn) {
+  let obj = { default: null };
+  obj[0] = buildMatchFn;
+} else {
+  obj = buildMatchFn;
+}
+if (!buildMatchPatternFn) {
+  obj = { default: null };
+  obj[0] = buildMatchPatternFn;
+  let obj2 = obj;
+} else {
+  obj2 = buildMatchPatternFn;
+}
+obj2 = {
+  matchPattern: /^(\d+)\.?/i,
   parsePattern: /\d+/i,
-  valueCallback(replaced) {
-    return parseInt(replaced, 10);
+  valueCallback(joined) {
+    return parseInt(joined, 10);
   }
 };
-items = [/^д/i, /^н/i];
+const items = [/^f/i, /^e/i];
 const items1 = [/1/i, /2/i, /3/i, /4/i];
-items2 = [/^я/i, /^ф/i, /^м/i, /^а/i, /^м/i, /^и/i, /^и/i, /^а/i, /^с/i, /^о/i, /^н/i, /^я/i];
-items3 = [/^я/i, /^ф/i, /^мар/i, /^ап/i, /^ма[йя]/i, /^июн/i, /^июл/i, /^ав/i, /^с/i, /^о/i, /^н/i, /^д/i];
-items4 = [/^в/i, /^п/i, /^в/i, /^с/i, /^ч/i, /^п/i, /^с/i];
-items5 = [/^в[ос]/i, /^п[он]/i, /^в/i, /^ср/i, /^ч/i, /^п[ят]/i, /^с[уб]/i];
+const items2 = [/^j/i, /^f/i, /^m/i, /^a/i, /^m/i, /^j/i, /^j/i, /^a/i, /^s/i, /^o/i, /^n/i, /^d/i];
+const items3 = [/^ja/i, /^f/i, /^mar/i, /^ap/i, /^mai/i, /^jun/i, /^jul/i, /^aug/i, /^s/i, /^o/i, /^n/i, /^d/i];
+const items4 = [/^s/i, /^m/i, /^ti/i, /^o/i, /^to/i, /^f/i, /^l/i];
 
-export default obj;
+export default { ordinalNumber: obj2.default(obj2), era: obj.default({ matchPatterns: obj3, defaultMatchWidth: "wide", parsePatterns: { any: items }, defaultParseWidth: "any" }), quarter: obj.default(obj4), month: obj.default({ matchPatterns: obj6, defaultMatchWidth: "wide", parsePatterns: { narrow: items2, any: items3 }, defaultParseWidth: "any" }), day: obj.default({ matchPatterns: obj7, defaultMatchWidth: "wide", parsePatterns: { any: items4 }, defaultParseWidth: "any" }), dayPeriod: obj.default({ matchPatterns: obj8, defaultMatchWidth: "any", parsePatterns: { any: obj9 }, defaultParseWidth: "any" }) };
 export default exports.default;

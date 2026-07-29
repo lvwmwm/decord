@@ -1,67 +1,67 @@
-// Module ID: 14425
-// Function ID: 110270
+// Module ID: 14447
+// Function ID: 14448
 // Name: onChange
-// Dependencies: [7733, 3804, 3838, 1212, 1282, 10099, 2]
+// Dependencies: [7756, 3828, 3862, 1236, 1306, 10120, 2]
 // Exports: onChange
 
-// Module 14425 (onChange)
+// Module 14447 (onChange)
 import createToggle from "createToggle";
 
 function onChange(arg0) {
-  const obj = require(3804) /* getReactionEmojiName */;
-  const ReactionNotifications = require(3838) /* explicitContentFromProto */.ReactionNotifications;
+  const obj = require(3828) /* MAX_REACTIONS */;
+  const ReactionNotifications = require(3862) /* explicitContentFromProto */.ReactionNotifications;
   const result = obj.updateReactionNotificationsSetting(Number(arg0), ReactionNotifications.getSetting());
 }
 const radio = createToggle.createRadio({
   useTitle() {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(require(1212) /* getSystemLocale */.t.Rq0NFs);
+    const intl = require(1236) /* getSystemLocale */.intl;
+    return intl.string(require(1236) /* getSystemLocale */.t.Rq0NFs);
   },
   parent: require("MobileSetting").MobileSetting.NOTIFICATIONS,
   useValue: require("explicitContentFromProto").ReactionNotifications.useSetting,
   onValueChange: onChange,
   useOptions() {
-    let obj = {};
-    const intl = require(1212) /* getSystemLocale */.intl;
-    obj.label = intl.string(require(1212) /* getSystemLocale */.t["9x/RtT"]);
-    obj.value = require(1282) /* _callSuper */.ReactionNotificationType.NOTIFICATIONS_ENABLED;
+    let obj = { label: null, value: null };
+    const intl = require(1236) /* getSystemLocale */.intl;
+    obj[0] = intl.string(require(1236) /* getSystemLocale */.t["9x/RtT"]);
+    obj[1] = require(1306) /* create */.ReactionNotificationType.NOTIFICATIONS_ENABLED;
     const items = [obj, , ];
-    obj = {};
-    const intl2 = require(1212) /* getSystemLocale */.intl;
-    obj.label = intl2.string(require(1212) /* getSystemLocale */.t.fJAbQd);
-    obj.value = require(1282) /* _callSuper */.ReactionNotificationType.ONLY_DMS;
+    obj = { label: null, value: null };
+    const intl2 = require(1236) /* getSystemLocale */.intl;
+    obj[0] = intl2.string(require(1236) /* getSystemLocale */.t.fJAbQd);
+    obj[1] = require(1306) /* create */.ReactionNotificationType.ONLY_DMS;
     items[1] = obj;
-    obj = {};
-    const intl3 = require(1212) /* getSystemLocale */.intl;
-    obj.label = intl3.string(require(1212) /* getSystemLocale */.t["xu+UDU"]);
-    obj.value = require(1282) /* _callSuper */.ReactionNotificationType.NOTIFICATIONS_DISABLED;
+    obj = { label: null, value: null };
+    const intl3 = require(1236) /* getSystemLocale */.intl;
+    obj[0] = intl3.string(require(1236) /* getSystemLocale */.t["xu+UDU"]);
+    obj[1] = require(1306) /* create */.ReactionNotificationType.NOTIFICATIONS_DISABLED;
     items[2] = obj;
     return items;
   }
 });
 let obj = {
   useTitle() {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(require(1212) /* getSystemLocale */.t.Rq0NFs);
+    const intl = require(1236) /* getSystemLocale */.intl;
+    return intl.string(require(1236) /* getSystemLocale */.t.Rq0NFs);
   },
   parent: require("MobileSetting").MobileSetting.NOTIFICATIONS,
   useValue: require("explicitContentFromProto").ReactionNotifications.useSetting,
   onValueChange: onChange,
   useOptions() {
-    let obj = {};
-    const intl = require(1212) /* getSystemLocale */.intl;
-    obj.label = intl.string(require(1212) /* getSystemLocale */.t["9x/RtT"]);
-    obj.value = require(1282) /* _callSuper */.ReactionNotificationType.NOTIFICATIONS_ENABLED;
+    let obj = { label: null, value: null };
+    const intl = require(1236) /* getSystemLocale */.intl;
+    obj[0] = intl.string(require(1236) /* getSystemLocale */.t["9x/RtT"]);
+    obj[1] = require(1306) /* create */.ReactionNotificationType.NOTIFICATIONS_ENABLED;
     const items = [obj, , ];
-    obj = {};
-    const intl2 = require(1212) /* getSystemLocale */.intl;
-    obj.label = intl2.string(require(1212) /* getSystemLocale */.t.fJAbQd);
-    obj.value = require(1282) /* _callSuper */.ReactionNotificationType.ONLY_DMS;
+    obj = { label: null, value: null };
+    const intl2 = require(1236) /* getSystemLocale */.intl;
+    obj[0] = intl2.string(require(1236) /* getSystemLocale */.t.fJAbQd);
+    obj[1] = require(1306) /* create */.ReactionNotificationType.ONLY_DMS;
     items[1] = obj;
-    obj = {};
-    const intl3 = require(1212) /* getSystemLocale */.intl;
-    obj.label = intl3.string(require(1212) /* getSystemLocale */.t["xu+UDU"]);
-    obj.value = require(1282) /* _callSuper */.ReactionNotificationType.NOTIFICATIONS_DISABLED;
+    obj = { label: null, value: null };
+    const intl3 = require(1236) /* getSystemLocale */.intl;
+    obj[0] = intl3.string(require(1236) /* getSystemLocale */.t["xu+UDU"]);
+    obj[1] = require(1306) /* create */.ReactionNotificationType.NOTIFICATIONS_DISABLED;
     items[2] = obj;
     return items;
   }

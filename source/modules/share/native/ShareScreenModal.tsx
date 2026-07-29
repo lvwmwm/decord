@@ -1,103 +1,285 @@
-// Module ID: 13014
-// Function ID: 100765
+// Module ID: 13037
+// Function ID: 13038
 // Name: onClose
-// Dependencies: [5, 57, 31, 1348, 12966, 33, 3, 4372, 8173, 566, 4175, 669, 13015, 2]
+// Dependencies: [5, 32, 19, 1372, 12989, 21, 3, 4395, 8197, 589, 4199, 692, 13038, 2]
 // Exports: default
 
-// Module 13014 (onClose)
+// Module 13037 (onClose)
 import jsxProd from "jsxProd";
 import _slicedToArray from "_slicedToArray";
-import result from "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import noop from "noop";
+import ensureGuildLoaded from "ensureGuildLoaded";
 import { SHARE_SCREEN_MODAL_KEY } from "SHARE_SCREEN_MODAL_KEY";
 import { jsx } from "jsxProd";
-import importDefaultResult from "_isNativeReflectConstruct";
 
 let require = arg1;
 function onClose() {
-  importDefault(4372).popWithKey(SHARE_SCREEN_MODAL_KEY);
+  importDefault(4395).popWithKey(SHARE_SCREEN_MODAL_KEY);
 }
-importDefaultResult = new importDefaultResult("ShareScreenModal");
-const result = require("result").fileFinishedImporting("modules/share/native/ShareScreenModal.tsx");
+let c9 = new require("ensureGuildLoaded")("ShareScreenModal");
+const tmp2 = new require("ensureGuildLoaded")("ShareScreenModal");
+const result = require("noop").fileFinishedImporting("modules/share/native/ShareScreenModal.tsx");
 
 export default function ShareScreenModal(text) {
-  let SHARE_SCREEN_MODAL_KEY;
-  let tmp6;
   text = text.text;
   const require = text;
   const channelId = text.channelId;
   const shareId = text.shareId;
   const attachmentManifest = text.attachmentManifest;
-  let jsx;
-  const tmp = first(React.useState(null), 2);
+  let first;
+  let React;
+  let stateFromStores;
+  let closure_7;
+  let first1;
+  let obj = React;
+  let tmp = first(React.useState(null), 2);
   first = tmp[0];
   React = tmp[1];
-  const items = [shareId, attachmentManifest];
+  let items = [shareId, attachmentManifest];
   const effect = React.useEffect(() => {
     function _fetchAttachments() {
-      // CreateGeneratorClosureLongIndex (0x67)
-      const obj = attachmentManifest(tmp);
-      return obj(...arguments);
+      const self = this;
+      const tmp = attachmentManifest(function*() {
+        if (v0 === 2) {
+          v0 = 3;
+          HermesBuiltin.throwTypeError();
+        } else if (tmp6 === 3) {
+          if (arg0 === 1) {
+            throw arg1;
+          } else if (arg0 === 2) {
+            let obj = { value: null, done: true };
+            obj[0] = arg1;
+            return obj;
+          } else {
+            return { value: "HermesInternal", done: null };
+          }
+        } else {
+          try {
+            v0 = 2;
+            if (0 === c4) {
+              if (arg0 === 1) {
+                v0 = 3;
+                throw arg1;
+              } else if (arg0 === 2) {
+                v0 = 3;
+                obj = { value: null, done: true };
+                obj[0] = arg1;
+                return obj;
+              } else {
+                let closure_1 = tmp3;
+                let closure_0 = tmp7;
+                closure_0 = undefined;
+                if (undefined !== outer1_2) {
+                  if (undefined !== c3) {
+                    c3 = 1;
+                    let obj1 = outer2_1(outer2_2[8]);
+                    c4 = 2;
+                    v0 = 1;
+                    obj1 = { value: null, done: false };
+                    obj1[0] = obj1.sharedAttachments(tmp20, tmp21);
+                    return obj1;
+                  }
+                }
+              }
+            } else {
+              if (1 === tmp7) {
+                c3 = 0;
+                closure_1 = closure_2;
+                outer2_9.error("Error fetching attachments:", closure_1);
+              } else if (arg0 === 1) {
+                v0 = 3;
+                throw arg1;
+              } else if (arg0 !== 2) {
+                closure_0 = arg1;
+                v0(closure_0);
+                c3 = 0;
+              }
+              c3 = 0;
+              v0 = 3;
+              obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            }
+            v0 = 3;
+          } catch (tmp24) {
+            closure_2 = tmp24;
+            if (tmp4 === c3) {
+              v0 = tmp2;
+              throw tmp24;
+            } else {
+              c4 = tmp;
+            }
+          }
+        }
+      });
+      const _fetchAttachments = tmp;
+      const apply = tmp.apply;
+      if (typeof apply === "unknown") {
+        let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+      } else {
+        applyArgumentsResult = apply(self, arguments);
+      }
+      return applyArgumentsResult;
     }
     !(function fetchAttachments() {
-      return _fetchAttachments(...arguments);
+      const self = this;
+      const apply = _fetchAttachments.apply;
+      if (typeof apply === "unknown") {
+        let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+      } else {
+        applyArgumentsResult = apply(self, arguments);
+      }
+      return applyArgumentsResult;
     })();
   }, items);
-  let obj = require(shareId[9]);
   const items1 = [stateFromStores];
-  stateFromStores = obj.useStateFromStores(items1, () => stateFromStores.getChannel(channelId));
-  [tmp6, SHARE_SCREEN_MODAL_KEY] = first(React.useState(null), 2);
+  stateFromStores = require(shareId[9]).useStateFromStores(items1, () => stateFromStores.getChannel(channelId));
+  const tmp6 = first(React.useState(null), 2);
+  closure_7 = tmp6[1];
   const items2 = [channelId, stateFromStores];
   const effect1 = React.useEffect(() => {
     function _fetchChannel() {
-      // CreateGeneratorClosureLongIndex (0x67)
-      const obj = attachmentManifest(tmp);
-      return obj(...arguments);
+      const self = this;
+      const tmp = attachmentManifest(function*() {
+        if (c5 === 2) {
+          c5 = 3;
+          HermesBuiltin.throwTypeError();
+        } else if (tmp6 === 3) {
+          if (arg0 === 1) {
+            throw arg1;
+          } else if (arg0 === 2) {
+            let obj = { value: null, done: true };
+            obj[0] = arg1;
+            return obj;
+          } else {
+            return { value: "HermesInternal", done: null };
+          }
+        } else {
+          try {
+            c5 = 2;
+            if (0 === c4) {
+              if (arg0 === 1) {
+                c5 = 3;
+                throw arg1;
+              } else if (arg0 === 2) {
+                c5 = 3;
+                obj = { value: null, done: true };
+                obj[0] = arg1;
+                return obj;
+              } else {
+                let closure_1 = tmp3;
+                let closure_0 = tmp7;
+                closure_0 = undefined;
+                if (null != outer1_1) {
+                  if (null == outer1_6) {
+                    let c3 = 1;
+                    let obj1 = outer2_1(outer2_2[10]);
+                    c4 = 2;
+                    c5 = 1;
+                    obj1 = { value: null, done: false };
+                    obj1[0] = obj1.fetchChannel(tmp20);
+                    return obj1;
+                  }
+                }
+              }
+            } else {
+              if (1 === tmp7) {
+                c3 = 0;
+                closure_1 = closure_2;
+                outer2_9.error("Error fetching channel:", closure_1);
+              } else if (arg0 === 1) {
+                c5 = 3;
+                throw arg1;
+              } else if (arg0 !== 2) {
+                closure_0 = arg1;
+                outer1_7(closure_0);
+                c3 = 0;
+              }
+              c3 = 0;
+              c5 = 3;
+              obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            }
+            c5 = 3;
+          } catch (tmp24) {
+            closure_2 = tmp24;
+            if (tmp4 === c3) {
+              c5 = tmp2;
+              throw tmp24;
+            } else {
+              c4 = tmp;
+            }
+          }
+        }
+      });
+      const _fetchChannel = tmp;
+      const apply = tmp.apply;
+      if (typeof apply === "unknown") {
+        let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+      } else {
+        applyArgumentsResult = apply(self, arguments);
+      }
+      return applyArgumentsResult;
     }
     !(function fetchChannel() {
-      return _fetchChannel(...arguments);
+      const self = this;
+      const apply = _fetchChannel.apply;
+      if (typeof apply === "unknown") {
+        let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+      } else {
+        applyArgumentsResult = apply(self, arguments);
+      }
+      return applyArgumentsResult;
     })();
   }, items2);
-  jsx = tmp6;
-  const items3 = [text, first, channelId, tmp6];
-  const memo = React.useMemo(() => {
-    const obj = { text: closure_0, attachments: null != first ? first : [] };
-    if (null == _undefined) {
-      return obj;
-    } else if (_undefined.type !== text(shareId[11]).ChannelTypes.DM) {
-      obj.targetChannelId = channelId;
-      return obj;
-    } else {
-      let isArray = _undefined;
-      if (_undefined) {
-        isArray = "recipients" in tmp11;
-      }
-      if (isArray) {
-        const _Array = Array;
-        isArray = Array.isArray(tmp11.recipients);
-      }
-      if (isArray) {
-        obj.targetUserId = tmp3.recipients[0];
-      } else {
-        let tmp4 = tmp3;
-        if (tmp3) {
-          tmp4 = "recipient" in tmp3;
-        }
-        if (tmp4) {
-          tmp4 = "id" in tmp3.recipient;
-        }
-        if (tmp4) {
-          const recipient = _undefined.recipient;
-          let id;
-          if (null != recipient) {
-            id = recipient.id;
-          }
-          obj.targetUserId = id;
-        }
-      }
-      return obj;
+  first1 = stateFromStores;
+  if (stateFromStores == null) {
+    first1 = tmp6[0];
+  }
+  const items3 = [text, first, channelId, first1];
+  const memo = obj.useMemo(() => {
+    const obj = { text: closure_0, attachments: null };
+    let items = first;
+    if (first == null) {
+      items = [];
     }
+    obj[1] = items;
+    if (null != first1) {
+      if (tmp.type !== text(shareId[11]).ChannelTypes.DM) {
+        obj.targetChannelId = channelId;
+      } else {
+        let isArray = tmp;
+        if (tmp) {
+          isArray = "recipients" in tmp;
+        }
+        if (isArray) {
+          const _Array = Array;
+          isArray = Array.isArray(tmp.recipients);
+        }
+        if (isArray) {
+          obj.targetUserId = tmp.recipients[0];
+        } else {
+          let tmp4 = tmp;
+          if (tmp) {
+            tmp4 = "recipient" in tmp;
+          }
+          if (tmp4) {
+            tmp4 = "id" in tmp.recipient;
+          }
+          if (tmp4) {
+            const recipient = tmp.recipient;
+            let id;
+            if (recipient != null) {
+              id = recipient.id;
+            }
+            obj.targetUserId = id;
+          }
+        }
+      }
+    }
+    return obj;
   }, items3);
   obj = { sharedContent: memo, onClose };
-  return jsx(channelId(shareId[12]), { sharedContent: memo, onClose });
+  return first1(channelId(shareId[12]), obj);
 };

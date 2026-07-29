@@ -1,18 +1,18 @@
-// Module ID: 9729
-// Function ID: 75623
+// Module ID: 9751
+// Function ID: 9752
 // Name: useWishlistApplicationIds
-// Dependencies: [31, 653, 2]
+// Dependencies: [19, 676, 2]
 // Exports: useWishlistApplicationIds
 
-// Module 9729 (useWishlistApplicationIds)
-import result from "result";
+// Module 9751 (useWishlistApplicationIds)
+import noop from "noop";
 import { COLLECTIBLES_APPLICATION_ID as closure_1 } from "ME";
 
 const result = require("set").fileFinishedImporting("modules/wishlists/hooks/useWishlistApplicationIds.native.tsx");
 
 export const useWishlistApplicationIds = function useWishlistApplicationIds(userId) {
   return React.useMemo(() => {
-    const items = [outer1_1];
+    const items = [closure_1];
     return items;
   }, []);
 };

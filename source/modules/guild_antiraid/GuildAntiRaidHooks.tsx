@@ -1,211 +1,136 @@
-// Module ID: 10243
-// Function ID: 79075
-// Name: _createForOfIteratorHelperLoose
-// Dependencies: [1316, 1838, 3793, 3982, 1850, 10223, 7775, 653, 624, 21, 7774, 483, 3798, 10244, 2]
+// Module ID: 10264
+// Function ID: 10265
+// Name: getFirstGuildIncidentId
+// Dependencies: [1340, 1862, 3817, 4006, 1874, 10244, 7798, 676, 647, 11, 7797, 506, 3822, 10265, 2]
 // Exports: getDisabledActions, shouldShowRaidInAppNotification, shouldShowRaidNotificationNagbar, useDisabledActions, useFirstGuildIncidentId, useGuildIncidentsState, useShowAntiRaidInGuildNotifSettings
 
-// Module 10243 (_createForOfIteratorHelperLoose)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import closure_6 from "_isNativeReflectConstruct";
-import closure_7 from "_isNativeReflectConstruct";
-import closure_8 from "_isNativeReflectConstruct";
-import closure_9 from "_isNativeReflectConstruct";
+// Module 10264 (getFirstGuildIncidentId)
+import handleConnectionClosedOrResumed from "handleConnectionClosedOrResumed";
+import createGuildRecordFromRust from "createGuildRecordFromRust";
+import getUncachedChannelPermissions from "getUncachedChannelPermissions";
+import handleConnectionOpen from "handleConnectionOpen";
+import mergeGuildAvatar from "mergeGuildAvatar";
+import computeAlertSettings from "computeAlertSettings";
 import { IncidentAlertModeratorPermissions as closure_10 } from "GUILD_REPORT_RAID_MOBILE_KEY";
 import ME from "ME";
 
-let closure_11;
 let closure_12;
+let unpackModuleId;
 const require = arg1;
-function _createForOfIteratorHelperLoose(iterable) {
-  let closure_0 = iterable;
-  iterable = "undefined" !== typeof Symbol;
-  if (iterable) {
-    const _Symbol = Symbol;
-    iterable = iterable[Symbol.iterator];
-  }
-  if (!iterable) {
-    iterable = iterable[Symbol.iterator];
-  }
-  if (iterable) {
-    const iter = iterable.call(iterable);
-    const next = iter.next;
-    return next.bind(iter);
-  } else {
-    const _Array = Array;
-    let tmp = iterable;
-    if (!Array.isArray(iterable)) {
-      let tmp2;
-      if (iterable) {
-        if ("string" === typeof iterable) {
-          tmp2 = _arrayLikeToArray(iterable, undefined);
-        } else {
-          const toString = {}.toString;
-          const substr = toString.call(iterable).slice(8, -1);
-          let name = substr;
-          if (tmp3) {
-            name = iterable.constructor.name;
-          }
-          if ("Map" !== name) {
-            if ("Set" !== name) {
-              if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(iterable, undefined);
-              } else {
-                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
-              }
-            }
-            tmp2 = arr;
-          }
-          const _Array2 = Array;
-          arr = Array.from(iterable);
-          const callResult = toString.call(iterable);
-          tmp3 = "Object" === substr && iterable.constructor;
-        }
-      }
-      tmp = tmp2;
-      if (!tmp2) {
-        const _TypeError = TypeError;
-        const typeError = new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
-        throw typeError;
-      }
-    }
-    if (tmp) {
-      closure_0 = tmp;
-    }
-    let c1 = 0;
-    return () => {
-      if (closure_1 >= length.length) {
-        let obj = { done: true };
-      } else {
-        obj = { done: false };
-        closure_1 = tmp3 + 1;
-        obj.value = length[+closure_1];
-      }
-      return obj;
-    };
-  }
-}
-function _arrayLikeToArray(arg0, arg1) {
-  let length;
-  if (tmp) {
-    length = arg0.length;
-  }
-  const ArrayResult = Array(length);
-  for (let num = 0; num < length; num = num + 1) {
-    ArrayResult[num] = arg0[num];
-  }
-  return ArrayResult;
-}
 function getFirstGuildIncidentId(guildId) {
-  let value;
   currentUser = currentUser.getCurrentUser();
   const incidentsByGuild = store3.getIncidentsByGuild();
-  let obj = importDefault(21);
+  let obj = importDefault(11);
   const keys = obj.keys(incidentsByGuild);
-  const tmp3 = _createForOfIteratorHelperLoose(keys.map((guildId) => outer1_5.getGuild(guildId)));
-  const iter = tmp3();
-  let iter2 = iter;
-  if (!iter.done) {
-    while (true) {
-      value = iter2.value;
-      if (null != value) {
-        let tmp14 = incidentsByGuild[value.id];
-        let tmp15 = tmp14;
-        if (null != tmp14) {
-          let tmp16 = require;
-          let tmp17 = dependencyMap;
-          let obj7 = require(7774) /* hasDetectedRaid */;
-          if (obj7.hasDetectedActivity(tmp14)) {
-            let tmp7 = require;
-            let tmp8 = dependencyMap;
-            let obj3 = require(7774) /* hasDetectedRaid */;
-            if (!obj3.isUnderLockdown(tmp14)) {
-              let tmp10 = importAll;
-              let tmp11 = dependencyMap;
-              let obj4 = importAll(483);
-              let obj5 = importAll(3798);
-              obj = { user: currentUser, context: value, checkElevated: false };
-              let tmp12 = closure_10;
-              let tmp13 = tmp14;
-              if (obj4.hasAny(obj5.computePermissions(obj), closure_10)) {
-                break;
-              }
-            } else {
-              let tmp9 = tmp14;
+  const mapped = keys.map((arg0) => guild.getGuild(arg0));
+  const iter = mapped[Symbol.iterator]();
+  const nextResult = iter.next();
+  while (iter !== undefined) {
+    let tmp5 = nextResult;
+    if (null != nextResult) {
+      let tmp16 = nextResult;
+      let tmp17 = incidentsByGuild[tmp5.id];
+      let tmp18 = tmp17;
+      if (null != tmp17) {
+        let tmp19 = require;
+        let tmp20 = dependencyMap;
+        let tmp21 = dependencyMap;
+        let obj7 = require(7797) /* DATE_CONFIG */;
+        let tmp22 = tmp17;
+        if (obj7.hasDetectedActivity(tmp18)) {
+          let tmp8 = tmp20;
+          let tmp19Result = tmp19(7797);
+          let tmp9 = tmp17;
+          if (!tmp19Result.isUnderLockdown(tmp18)) {
+            let tmp11 = importAll;
+            let tmp12 = tmp20;
+            let obj4 = importAll(506);
+            let obj5 = importAll(3822);
+            obj = { user: null, context: null, checkElevated: false };
+            obj[0] = currentUser;
+            let tmp13 = nextResult;
+            obj[1] = tmp5;
+            let tmp14 = closure_10;
+            if (obj4.hasAny(obj5.computePermissions(obj), closure_10)) {
+              let tmp15 = iter;
+              iter.return();
+              return nextResult.id;
             }
           } else {
-            let tmp4 = require;
-            let tmp5 = dependencyMap;
-            let obj2 = require(7774) /* hasDetectedRaid */;
-            let tmp6 = tmp14;
+            let tmp10 = nextResult;
           }
+        } else {
+          let tmp6 = tmp20;
+          tmp19Result = tmp19(7797);
+          let tmp7 = tmp17;
         }
       }
-      let iter3 = tmp3();
-      iter2 = iter3;
     }
-    return value.id;
+    continue;
   }
   return null;
 }
-({ EMPTY_STRING_SNOWFLAKE_ID: closure_11, GuildFeatures: closure_12 } = ME);
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/guild_antiraid/GuildAntiRaidHooks.tsx");
+({ EMPTY_STRING_SNOWFLAKE_ID: unpackModuleId, GuildFeatures: closure_12 } = ME);
+const result = require("getUncachedChannelPermissions").fileFinishedImporting("modules/guild_antiraid/GuildAntiRaidHooks.tsx");
 
 export const useFirstGuildIncidentId = function useFirstGuildIncidentId() {
-  let value;
-  let obj = stateFromStores1(624);
-  const items = [closure_8];
-  const stateFromStores = obj.useStateFromStores(items, () => outer1_8.getCurrentUser());
-  const items1 = [closure_9];
-  stateFromStores1 = stateFromStores1(624).useStateFromStores(items1, () => outer1_9.getIncidentsByGuild());
-  const obj2 = stateFromStores1(624);
-  const items2 = [_createForOfIteratorHelperLoose];
-  const tmp3 = _createForOfIteratorHelperLoose(stateFromStores1(624).useStateFromStoresArray(items2, () => {
+  let obj = stateFromStores1(647);
+  const items = [mergeGuildAvatar];
+  const stateFromStores = obj.useStateFromStores(items, () => currentUser.getCurrentUser());
+  const items1 = [computeAlertSettings];
+  stateFromStores1 = stateFromStores1(647).useStateFromStores(items1, () => incidentsByGuild.getIncidentsByGuild());
+  const obj2 = stateFromStores1(647);
+  const items2 = [createGuildRecordFromRust];
+  const stateFromStoresArray = stateFromStores1(647).useStateFromStoresArray(items2, () => {
     const keys = outer1_1(outer1_3[9]).keys(stateFromStores1);
-    return keys.map((guildId) => outer2_5.getGuild(guildId));
-  }));
-  const iter = tmp3();
-  let iter2 = iter;
-  if (!iter.done) {
-    while (true) {
-      value = iter2.value;
-      if (null != value) {
-        let tmp11 = stateFromStores1[value.id];
-        let tmp12 = tmp11;
-        if (null != tmp11) {
-          let tmp13 = stateFromStores1;
-          let tmp14 = dependencyMap;
-          let obj8 = stateFromStores1(7774);
-          if (obj8.hasDetectedActivity(tmp11)) {
-            let tmp7 = importAll;
-            let tmp8 = dependencyMap;
-            let obj5 = importAll(483);
-            let obj6 = importAll(3798);
-            obj = { user: stateFromStores, context: value, checkElevated: false };
-            let tmp9 = closure_10;
-            let tmp10 = tmp11;
-            if (obj5.hasAny(obj6.computePermissions(obj), closure_10)) {
-              break;
-            }
-          } else {
-            let tmp4 = stateFromStores1;
-            let tmp5 = dependencyMap;
-            let obj4 = stateFromStores1(7774);
-            let tmp6 = tmp11;
+    return keys.map((arg0) => guild.getGuild(arg0));
+  });
+  const iter = stateFromStoresArray[Symbol.iterator]();
+  const nextResult = iter.next();
+  while (iter !== undefined) {
+    let tmp5 = nextResult;
+    if (null != nextResult) {
+      let tmp14 = nextResult;
+      let tmp15 = stateFromStores1[tmp5.id];
+      let tmp16 = tmp15;
+      if (null != tmp15) {
+        let tmp19 = dependencyMap;
+        let tmp20 = dependencyMap;
+        let tmp17 = stateFromStores1;
+        let tmp18 = stateFromStores1;
+        let obj8 = stateFromStores1(7797);
+        let tmp21 = tmp15;
+        if (obj8.hasDetectedActivity(tmp16)) {
+          let tmp9 = importAll;
+          let tmp10 = tmp19;
+          let obj5 = importAll(506);
+          let obj6 = importAll(3822);
+          obj = { user: null, context: null, checkElevated: false };
+          obj[0] = stateFromStores;
+          let tmp11 = nextResult;
+          obj[1] = tmp5;
+          let tmp12 = closure_10;
+          if (obj5.hasAny(obj6.computePermissions(obj), closure_10)) {
+            let tmp13 = iter;
+            iter.return();
+            return nextResult.id;
           }
+        } else {
+          let tmp6 = tmp17;
+          let tmp7 = tmp19;
+          let tmp18Result = tmp18(7797);
+          let tmp8 = tmp15;
         }
       }
-      let iter3 = tmp3();
-      iter2 = iter3;
     }
-    return value.id;
+    continue;
   }
   return null;
 };
 export const useGuildIncidentsState = function useGuildIncidentsState(id) {
   const _require = id;
-  let obj = _require(624);
-  const items = [_createForOfIteratorHelperLoose, closure_6];
+  let obj = _require(647);
+  const items = [createGuildRecordFromRust, getUncachedChannelPermissions];
   const stateFromStores = obj.useStateFromStores(items, () => {
     const guild = outer1_5.getGuild(closure_0);
     if (null == guild) {
@@ -220,27 +145,27 @@ export const useGuildIncidentsState = function useGuildIncidentsState(id) {
       return hasAnyResult;
     }
   });
-  const items1 = [closure_9];
-  const stateFromStores1 = _require(624).useStateFromStores(items1, () => {
+  const items1 = [computeAlertSettings];
+  const stateFromStores1 = _require(647).useStateFromStores(items1, () => {
     let guildIncident = null;
     if (null != closure_0) {
-      guildIncident = outer1_9.getGuildIncident(closure_0);
+      guildIncident = outer1_9.getGuildIncident(tmp);
     }
     return guildIncident;
   });
-  obj = { shouldShowIncidentActions: stateFromStores, incidentData: stateFromStores1 };
+  obj = { shouldShowIncidentActions: stateFromStores, incidentData: stateFromStores1, isUnderLockdown: null };
   let isUnderLockdownResult = null != stateFromStores1;
   if (isUnderLockdownResult) {
-    isUnderLockdownResult = _require(7774).isUnderLockdown(stateFromStores1);
-    const obj4 = _require(7774);
+    isUnderLockdownResult = _require(7797).isUnderLockdown(stateFromStores1);
+    const tmpResult = _require(7797);
   }
-  obj.isUnderLockdown = isUnderLockdownResult;
+  obj[2] = isUnderLockdownResult;
   return obj;
 };
 export const shouldShowRaidNotificationNagbar = function shouldShowRaidNotificationNagbar() {
   const guildId = getFirstGuildIncidentId(store2.getGuildId());
   let guildsProto = store.getGuildsProto();
-  if (null == guildsProto) {
+  if (guildsProto == null) {
     guildsProto = {};
   }
   let tmp2 = null;
@@ -253,7 +178,7 @@ export const shouldShowRaidNotificationNagbar = function shouldShowRaidNotificat
 export const shouldShowRaidInAppNotification = function shouldShowRaidInAppNotification() {
   const guildId = getFirstGuildIncidentId(store2.getGuildId());
   let guildsProto = store.getGuildsProto();
-  if (null == guildsProto) {
+  if (guildsProto == null) {
     guildsProto = {};
   }
   let tmp2 = null;
@@ -266,8 +191,8 @@ export const shouldShowRaidInAppNotification = function shouldShowRaidInAppNotif
   }
   let isUnderLockdownResult = null != guildIncident;
   if (isUnderLockdownResult) {
-    isUnderLockdownResult = require(7774) /* hasDetectedRaid */.isUnderLockdown(guildIncident);
-    const obj2 = require(7774) /* hasDetectedRaid */;
+    isUnderLockdownResult = require(7797) /* DATE_CONFIG */.isUnderLockdown(guildIncident);
+    const obj2 = require(7797) /* DATE_CONFIG */;
   }
   const show = null != guildId && !isUnderLockdownResult && !(null != tmp2 && tmp2.disableRaidAlertNag);
   return { show, guildId };
@@ -277,15 +202,14 @@ export const getDisabledActions = function getDisabledActions(id) {
     return { dmsDisabled: false, invitesDisabled: false };
   } else {
     const guildIncident = store3.getGuildIncident(id.id);
-    const obj = {};
     let hasItem;
-    if (null != id) {
+    if (id != null) {
       const features = id.features;
       hasItem = features.has(constants.INVITES_DISABLED);
     }
     if (!hasItem) {
       let invitesDisabledUntil;
-      if (null != guildIncident) {
+      if (guildIncident != null) {
         invitesDisabledUntil = guildIncident.invitesDisabledUntil;
       }
       let tmp4 = null != invitesDisabledUntil;
@@ -298,9 +222,10 @@ export const getDisabledActions = function getDisabledActions(id) {
       }
       hasItem = tmp4;
     }
-    obj.invitesDisabled = hasItem;
+    const obj = { invitesDisabled: null, dmsDisabled: null };
+    obj[0] = hasItem;
     let dmsDisabledUntil;
-    if (null != guildIncident) {
+    if (guildIncident != null) {
       dmsDisabledUntil = guildIncident.dmsDisabledUntil;
     }
     let tmp15 = null != dmsDisabledUntil;
@@ -311,34 +236,33 @@ export const getDisabledActions = function getDisabledActions(id) {
       const date3 = new Date();
       tmp15 = date2 > date3;
     }
-    obj.dmsDisabled = tmp15;
+    obj[1] = tmp15;
     return obj;
   }
 };
 export const useDisabledActions = function useDisabledActions(id) {
   id = undefined;
-  if (null != id) {
+  if (id != null) {
     id = id.id;
   }
-  if (null == id) {
+  if (id == null) {
     id = closure_11;
   }
-  let obj = id(624);
-  const items = [closure_9];
+  let obj = id(647);
+  const items = [computeAlertSettings];
   const items1 = [id];
   const stateFromStores = obj.useStateFromStores(items, () => outer1_9.getGuildIncident(id), items1);
   if (null == id) {
     obj = { dmsDisabled: false, invitesDisabled: false };
   } else {
-    obj = {};
     let hasItem;
-    if (null != id) {
+    if (id != null) {
       const features = id.features;
       hasItem = features.has(constants.INVITES_DISABLED);
     }
     if (!hasItem) {
       let invitesDisabledUntil;
-      if (null != stateFromStores) {
+      if (stateFromStores != null) {
         invitesDisabledUntil = stateFromStores.invitesDisabledUntil;
       }
       let tmp6 = null != invitesDisabledUntil;
@@ -351,9 +275,10 @@ export const useDisabledActions = function useDisabledActions(id) {
       }
       hasItem = tmp6;
     }
-    obj.invitesDisabled = hasItem;
+    obj = { invitesDisabled: null, dmsDisabled: null };
+    obj[0] = hasItem;
     let dmsDisabledUntil;
-    if (null != stateFromStores) {
+    if (stateFromStores != null) {
       dmsDisabledUntil = stateFromStores.dmsDisabledUntil;
     }
     let tmp17 = null != dmsDisabledUntil;
@@ -364,14 +289,14 @@ export const useDisabledActions = function useDisabledActions(id) {
       const date3 = new Date();
       tmp17 = date2 > date3;
     }
-    obj.dmsDisabled = tmp17;
+    obj[1] = tmp17;
   }
   return obj;
 };
 export const useShowAntiRaidInGuildNotifSettings = function useShowAntiRaidInGuildNotifSettings(arg0) {
   const _require = arg0;
-  const items = [closure_6, _createForOfIteratorHelperLoose];
-  return _require(624).useStateFromStores(items, () => {
+  const items = [getUncachedChannelPermissions, createGuildRecordFromRust];
+  return _require(647).useStateFromStores(items, () => {
     const guild = outer1_5.getGuild(callback);
     return callback(outer1_3[13]).canReportRaid(guild, outer1_6);
   });

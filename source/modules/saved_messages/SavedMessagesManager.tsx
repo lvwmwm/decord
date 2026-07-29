@@ -1,27 +1,31 @@
-// Module ID: 16276
-// Function ID: 126088
-// Name: _isNativeReflectConstruct
-// Dependencies: [7, 6, 15, 17, 18, 9532, 9913, 5112, 2]
+// Module ID: 16311
+// Function ID: 16312
+// Name: prototype
+// Dependencies: [9556, 9935, 5134, 2]
 
-// Module 16276 (_isNativeReflectConstruct)
-import AutomaticLifecycleManager from "AutomaticLifecycleManager";
-import _upsertSavedMessage from "_upsertSavedMessage";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
-import tmp2 from "AutomaticLifecycleManager";
+// Module 16311 (prototype)
+import "initialize";
 
-const require = arg1;
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
-  }
-  const result = _isNativeReflectConstruct();
+let require = arg1;
+let prototype = function SavedMessagesManager() {
+  const applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
+  const require = applyArgumentsResult;
+  applyArgumentsResult.actions = {
+    POST_CONNECTION_OPEN() {
+      return applyArgumentsResult.handlePostConnectionOpen();
+    }
+  };
+  applyArgumentsResult.handlePostConnectionOpen = function handlePostConnectionOpen() {
+    if (obj.getConfig({ location: "saved_messages_manager" }).enabled) {
+      const andUpdateSavedMessages = applyArgumentsResult(table[1]).fetchAndUpdateSavedMessages();
+      const obj2 = applyArgumentsResult(table[1]);
+    }
+  };
+  return applyArgumentsResult;
+}.prototype;
+class prototype extends tmp2 {
 }
-tmp2 = new tmp2();
-let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/saved_messages/SavedMessagesManager.tsx");
+prototype = new prototype();
+const result = require("initialize").fileFinishedImporting("modules/saved_messages/SavedMessagesManager.tsx");
 
-export default tmp2;
+export default prototype;

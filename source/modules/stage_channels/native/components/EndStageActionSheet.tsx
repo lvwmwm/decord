@@ -1,65 +1,67 @@
-// Module ID: 12394
-// Function ID: 96245
+// Module ID: 12416
+// Function ID: 12417
 // Name: EndStageActionSheet
-// Dependencies: [31, 27, 4982, 653, 33, 4165, 689, 4133, 8807, 7609, 1273, 1212, 4161, 4578, 6694, 2]
+// Dependencies: [19, 17, 5004, 676, 21, 4189, 712, 4157, 8831, 7632, 1297, 1236, 4185, 4600, 6715, 2]
 // Exports: default
 
-// Module 12394 (EndStageActionSheet)
-import "result";
+// Module 12416 (EndStageActionSheet)
+import "noop";
 import { View } from "get ActivityIndicator";
 import { EXPLICIT_END_STAGE_SHEET_KEY as closure_4 } from "MAX_STAGE_TOPIC_LENGTH";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_5;
+let c5;
 let closure_6;
 const require = arg1;
-({ jsx: closure_5, jsxs: closure_6 } = jsxProd);
-_createForOfIteratorHelperLoose = { container: { paddingVertical: 24, paddingHorizontal: 16, alignItems: "center" } };
-_createForOfIteratorHelperLoose = { fontSize: 24, fontFamily: require("ME").Fonts.PRIMARY_BOLD, textAlign: "center", color: require("_createForOfIteratorHelperLoose").colors.MOBILE_TEXT_HEADING_PRIMARY };
-_createForOfIteratorHelperLoose.title = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.subtitle = { marginTop: 8, textAlign: "center" };
-_createForOfIteratorHelperLoose.cancelButton = { marginTop: 24, alignSelf: "stretch" };
-_createForOfIteratorHelperLoose.confirmButton = { marginTop: 8, alignSelf: "stretch" };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+({ jsx: c5, jsxs: closure_6 } = jsxProd);
+createCacheKey = { container: { paddingVertical: 24, paddingHorizontal: 16, alignItems: "center" }, title: null, subtitle: null, cancelButton: null, confirmButton: null };
+createCacheKey = { fontSize: 24, fontFamily: require("ME").Fonts.PRIMARY_BOLD, textAlign: "center", color: require("Themes").colors.MOBILE_TEXT_HEADING_PRIMARY };
+createCacheKey[1] = createCacheKey;
+createCacheKey[2] = { marginTop: 8, textAlign: "center" };
+createCacheKey[3] = { marginTop: 24, alignSelf: "stretch" };
+createCacheKey[4] = { marginTop: 8, alignSelf: "stretch" };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
 const result = require("MAX_STAGE_TOPIC_LENGTH").fileFinishedImporting("modules/stage_channels/native/components/EndStageActionSheet.tsx");
 
 export default function EndStageActionSheet(channel) {
   channel = channel.channel;
-  function handleClose(arg0) {
-    handleClose(outer1_2[7]).hideActionSheet(outer1_4);
-    const obj = handleClose(outer1_2[7]);
+  const tmp = createCacheKey();
+  let obj = { children: null };
+  obj = { style: tmp.container, children: null };
+  obj = { style: tmp.title, accessibilityRole: "header", children: null };
+  const intl = channel(1236).intl;
+  obj[2] = intl.string(channel(1236).t.pADdJu);
+  const items = [callback(channel(1297).LegacyText, obj), , , ];
+  const obj1 = { style: tmp.subtitle, variant: "text-md/medium", color: "text-default", children: null };
+  const intl2 = channel(1236).intl;
+  obj1[3] = intl2.string(channel(1236).t.mT7jwN);
+  items[1] = callback(channel(4185).Text, obj1);
+  let obj2 = { style: tmp.cancelButton, children: null };
+  const obj3 = { variant: "secondary", text: null, onPress: null };
+  const intl3 = channel(1236).intl;
+  obj3[1] = intl3.string(channel(1236).t.xTwqz2);
+  obj3[2] = function handleClose() {
+    outer1_1(outer1_2[7]).hideActionSheet(outer1_4);
+    const obj = outer1_1(outer1_2[7]);
     channel(outer1_2[8]).handleDisconnect(channel);
-  }
-  const tmp = _createForOfIteratorHelperLoose();
-  let obj = {};
-  obj = { style: tmp.container };
-  obj = { style: tmp.title, accessibilityRole: "header" };
-  const intl = channel(1212).intl;
-  obj.children = intl.string(channel(1212).t.pADdJu);
-  const items = [callback(channel(1273).LegacyText, obj), , , ];
-  const obj1 = { style: tmp.subtitle, variant: "text-md/medium", color: "text-default" };
-  const intl2 = channel(1212).intl;
-  obj1.children = intl2.string(channel(1212).t.mT7jwN);
-  items[1] = callback(channel(4161).Text, obj1);
-  const obj2 = { style: tmp.cancelButton };
-  const obj3 = { variant: "secondary" };
-  const intl3 = channel(1212).intl;
-  obj3.text = intl3.string(channel(1212).t.xTwqz2);
-  obj3.onPress = handleClose;
-  obj2.children = callback(channel(4578).Button, obj3);
-  items[2] = callback(View, obj2);
-  const obj4 = { style: tmp.confirmButton };
-  const obj5 = { variant: "destructive" };
-  const intl4 = channel(1212).intl;
-  obj5.text = intl4.string(channel(1212).t.wnWqGg);
-  obj5.onPress = function onPress() {
-    channel(outer1_2[14]).endStage(channel);
-    handleClose();
   };
-  obj4.children = callback(channel(4578).Button, obj5);
+  obj2[1] = callback(channel(4600).Button, obj3);
+  items[2] = callback(View, obj2);
+  const obj4 = { style: tmp.confirmButton, children: null };
+  const obj5 = { variant: "destructive", text: null, onPress: null };
+  const intl4 = channel(1236).intl;
+  obj5[1] = intl4.string(channel(1236).t.wnWqGg);
+  obj5[2] = function onPress() {
+    channel(outer1_2[14]).endStage(channel);
+    const obj = channel(outer1_2[14]);
+    outer1_1(outer1_2[7]).hideActionSheet(outer1_4);
+    const obj2 = outer1_1(outer1_2[7]);
+    channel(outer1_2[8]).handleDisconnect(channel);
+  };
+  obj4[1] = callback(channel(4600).Button, obj5);
   items[3] = callback(View, obj4);
-  obj.children = items;
-  obj.children = callback2(View, obj);
-  return callback(handleClose(7609), obj);
+  obj[1] = items;
+  obj[0] = callback2(View, obj);
+  return callback(importDefault(7632), obj);
 };

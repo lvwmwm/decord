@@ -1,59 +1,84 @@
 // Module ID: 8571
-// Function ID: 68005
+// Function ID: 8572
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 31, 8523]
+// Dependencies: [41, 42, 93, 95, 98, 19, 21, 8572, 8569, 8570]
 
 // Module 8571 (_isNativeReflectConstruct)
-import pickNotNil from "pickNotNil";
-import _defineProperties from "_defineProperties";
+import _classCallCheck from "_classCallCheck";
 import _possibleConstructorReturn from "_possibleConstructorReturn";
 import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
+import importDefaultResult from "_createClass";
+import "noop";
+import { jsx } from "jsxProd";
 
-const require = arg1;
+const FeColorMatrix = arg1;
 function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
+  try {
+    const _Boolean = Boolean;
+    const call = valueOf.call;
+    const _Reflect = Reflect;
+    const _Boolean2 = Boolean;
+    if (typeof call === "unknown") {
+      let callResult = valueOf();
+    } else {
+      callResult = call(constructResult);
+    }
+    let closure_0 = !callResult;
+    function _isNativeReflectConstruct() {
+      return closure_0;
+    }
+    return _isNativeReflectConstruct();
+  } catch (err) {
   }
-  const result = _isNativeReflectConstruct();
 }
-const tmp2 = ((Component) => {
-  class FeSpotLight {
-    constructor() {
-      self = this;
-      tmp = outer1_2(this, FeSpotLight);
-      obj = outer1_5(FeSpotLight);
-      tmp2 = outer1_4;
-      if (outer1_7()) {
-        tmp6 = globalThis;
-        _Reflect = Reflect;
-        tmp7 = outer1_5;
-        tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, outer1_5(self).constructor);
-      } else {
-        tmp3 = arguments;
-        tmp4 = arguments;
-        constructResult = obj(...arguments);
-      }
-      return tmp2(self, constructResult);
+class FeColorMatrix {
+  constructor() {
+    self = this;
+    tmp = _isNativeReflectConstruct(this, FeColorMatrix);
+    tmp2 = __esModule;
+    obj = __esModule(FeColorMatrix);
+    tmp3 = __esModule;
+    if (_isNativeReflectConstruct()) {
+      tmp7 = globalThis;
+      _Reflect = Reflect;
+      tmp8 = arguments;
+      constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
+    } else {
+      tmp4 = arguments;
+      tmp5 = arguments;
+      constructResult = obj(...arguments);
     }
+    return tmp3(self, constructResult);
   }
-  callback2(FeSpotLight, Component);
-  const items = [
-    {
-      key: "render",
-      value: function render() {
-        const result = FeSpotLight(outer1_1[6]).warnUnimplementedFilter();
-        return null;
+}
+require("_inherits")(FeColorMatrix, require("_isNativeReflectConstruct"));
+let obj = {
+  key: "render",
+  value: function render() {
+    const self = this;
+    const obj = {
+      ref(arg0) {
+        return self.refMethod(arg0);
       }
-    }
-  ];
-  return callback(FeSpotLight, items);
-})(require("result").Component);
-tmp2.displayName = "FeSpotLight";
-tmp2.defaultProps = {};
+    };
+    const tmp = importDefault(8572);
+    const merged = Object.assign(self(8569).extractFilter(this.props));
+    const obj2 = self(8569);
+    const merged1 = Object.assign(self(8569).extractIn(this.props));
+    const obj3 = self(8569);
+    const merged2 = Object.assign(self(8569).extractFeColorMatrix(this.props));
+    return <tmp ref={function ref(arg0) {
+      return self.refMethod(arg0);
+    }} />;
+  }
+};
+const items = [obj];
+const importDefaultResultResult = importDefaultResult(FeColorMatrix, items);
+importDefaultResultResult.displayName = "FeColorMatrix";
+obj = {};
+let merged = Object.assign(importDefaultResultResult.defaultPrimitiveProps);
+obj.type = "matrix";
+obj.values = "";
+importDefaultResultResult.defaultProps = obj;
 
-export default tmp2;
+export default importDefaultResultResult;

@@ -1,24 +1,22 @@
-// Module ID: 9278
-// Function ID: 72526
+// Module ID: 9302
+// Function ID: 9303
 // Name: uid
-// Dependencies: [4373, 5485, 2]
-// Exports: UID
+// Dependencies: [4396, 5503, 2]
+// Exports: UID, uid, useUID
 
-// Module 9278 (uid)
-function uid() {
+// Module 9302 (uid)
+const result = require("set").fileFinishedImporting("modules/core/web/UID.tsx");
+
+export const uid = function uid() {
   let str = arg0;
   if (arg0 === undefined) {
     str = "uid_";
   }
-  return importDefault(4373)(str);
-}
-function useUID() {
-  return importDefault(5485)(() => outer1_2());
-}
-const result = require("set").fileFinishedImporting("modules/core/web/UID.tsx");
-
-export { uid };
-export { useUID };
+  return importDefault(4396)(str);
+};
+export const useUID = function useUID() {
+  return importDefault(5503)(() => callback(table[0])("uid_"));
+};
 export const UID = function UID(children) {
-  return children.children(useUID());
+  return children.children(importDefault(5503)(() => callback(table[0])("uid_")));
 };

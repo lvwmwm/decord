@@ -1,20 +1,20 @@
-// Module ID: 3237
-// Function ID: 25826
+// Module ID: 3261
+// Function ID: 3262
 // Name: messagesProxy
-// Dependencies: [1215, 3238, 1250, 2]
+// Dependencies: [1239, 3262, 1274, 2]
 
-// Module 3237 (messagesProxy)
-import module_1250 from "module_1250";
-import module_1250 from "module_1250";
+// Module 3261 (messagesProxy)
+import module_1274 from "module_1274";
+import module_1274 from "module_1274";
 
-const loader = module_1250.createLoader({
+const loader = module_1274.createLoader({
   () => {
-    const jsonAsset = require(1215) /* loadJsonAsset */.loadJsonAsset(require(3238) /* registerAsset */);
+    const jsonAsset = require(1239) /* loadJsonAsset */.loadJsonAsset(require(3262) /* registerAsset */);
     return jsonAsset.then((arg0) => ({ default: arg0 }));
   }
 }, "en-US");
-const messagesProxy = module_1250.makeMessagesProxy(loader);
-const result = require("module_1250").fileFinishedImporting("modules/custom_typing_indicator/intl/CustomTypingIndicator.messages.js");
+const messagesProxy = module_1274.makeMessagesProxy(loader);
+const result = require("module_1274").fileFinishedImporting("modules/custom_typing_indicator/intl/CustomTypingIndicator.messages.js");
 
 export default messagesProxy;
 export const messagesLoader = loader;

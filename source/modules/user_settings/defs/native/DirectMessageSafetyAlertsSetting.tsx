@@ -1,16 +1,16 @@
-// Module ID: 13844
-// Function ID: 105999
+// Module ID: 13865
+// Function ID: 13866
 // Name: toggle
-// Dependencies: [7733, 11044, 10109, 10111, 10099, 1212, 10110, 13845, 2]
+// Dependencies: [7756, 11068, 10130, 10132, 10120, 1236, 10131, 13866, 2]
 
-// Module 13844 (toggle)
+// Module 13865 (toggle)
 import { MobileSetting } from "MobileSetting";
 import createToggle from "createToggle";
 
 const toggle = createToggle.createToggle({
   useTitle() {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(require(1212) /* getSystemLocale */.t.qFsx5q);
+    const intl = require(1236) /* getSystemLocale */.intl;
+    return intl.string(require(1236) /* getSystemLocale */.t.qFsx5q);
   },
   parent() {
     return MobileSetting.CONTENT_AND_SOCIAL;
@@ -18,25 +18,27 @@ const toggle = createToggle.createToggle({
   useValue: require("useSafetyAlertsSettingOrDefault").useSafetyAlertsSettingOrDefault,
   onValueChange: require("updateDmSafetyAlertsSetting").updateDmSafetyAlertsSetting,
   usePredicate: function useHasDmSafetyAlertsSetting() {
-    const tmp = importDefault(11044)();
-    const isEligibleForInappropriateConversationWarning = require(10109) /* InappropriateConversationExperiment */.useIsEligibleForInappropriateConversationWarning({ location: "user_settings_mobile_redesign" });
-    const obj = require(10109) /* InappropriateConversationExperiment */;
-    const tmp2 = null == tmp || tmp;
-    let tmp5 = !tmp2;
-    const isEligibleForInappropriateConversationDefaultOn = require(10111) /* InappropriateConversationsDefaultOn */.useIsEligibleForInappropriateConversationDefaultOn({ location: "user_settings_mobile_redesign" });
-    if (tmp5) {
-      tmp5 = isEligibleForInappropriateConversationWarning;
+    let flag = importDefault(11068)();
+    if (flag == null) {
+      flag = true;
     }
-    if (tmp5) {
-      tmp5 = !isEligibleForInappropriateConversationDefaultOn;
+    const isEligibleForInappropriateConversationWarning = require(10130) /* InappropriateConversationExperiment */.useIsEligibleForInappropriateConversationWarning({ location: "user_settings_mobile_redesign" });
+    const obj = require(10130) /* InappropriateConversationExperiment */;
+    let tmp4 = !flag;
+    const isEligibleForInappropriateConversationDefaultOn = require(10132) /* InappropriateConversationsDefaultOn */.useIsEligibleForInappropriateConversationDefaultOn({ location: "user_settings_mobile_redesign" });
+    if (!flag) {
+      tmp4 = isEligibleForInappropriateConversationWarning;
     }
-    return tmp5;
+    if (tmp4) {
+      tmp4 = !isEligibleForInappropriateConversationDefaultOn;
+    }
+    return tmp4;
   }
 });
 let obj = {
   useTitle() {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(require(1212) /* getSystemLocale */.t.qFsx5q);
+    const intl = require(1236) /* getSystemLocale */.intl;
+    return intl.string(require(1236) /* getSystemLocale */.t.qFsx5q);
   },
   parent() {
     return MobileSetting.CONTENT_AND_SOCIAL;
@@ -44,19 +46,21 @@ let obj = {
   useValue: require("useSafetyAlertsSettingOrDefault").useSafetyAlertsSettingOrDefault,
   onValueChange: require("updateDmSafetyAlertsSetting").updateDmSafetyAlertsSetting,
   usePredicate: function useHasDmSafetyAlertsSetting() {
-    const tmp = importDefault(11044)();
-    const isEligibleForInappropriateConversationWarning = require(10109) /* InappropriateConversationExperiment */.useIsEligibleForInappropriateConversationWarning({ location: "user_settings_mobile_redesign" });
-    const obj = require(10109) /* InappropriateConversationExperiment */;
-    const tmp2 = null == tmp || tmp;
-    let tmp5 = !tmp2;
-    const isEligibleForInappropriateConversationDefaultOn = require(10111) /* InappropriateConversationsDefaultOn */.useIsEligibleForInappropriateConversationDefaultOn({ location: "user_settings_mobile_redesign" });
-    if (tmp5) {
-      tmp5 = isEligibleForInappropriateConversationWarning;
+    let flag = importDefault(11068)();
+    if (flag == null) {
+      flag = true;
     }
-    if (tmp5) {
-      tmp5 = !isEligibleForInappropriateConversationDefaultOn;
+    const isEligibleForInappropriateConversationWarning = require(10130) /* InappropriateConversationExperiment */.useIsEligibleForInappropriateConversationWarning({ location: "user_settings_mobile_redesign" });
+    const obj = require(10130) /* InappropriateConversationExperiment */;
+    let tmp4 = !flag;
+    const isEligibleForInappropriateConversationDefaultOn = require(10132) /* InappropriateConversationsDefaultOn */.useIsEligibleForInappropriateConversationDefaultOn({ location: "user_settings_mobile_redesign" });
+    if (!flag) {
+      tmp4 = isEligibleForInappropriateConversationWarning;
     }
-    return tmp5;
+    if (tmp4) {
+      tmp4 = !isEligibleForInappropriateConversationDefaultOn;
+    }
+    return tmp4;
   }
 };
 const result = require("InappropriateConversationExperiment").fileFinishedImporting("modules/user_settings/defs/native/DirectMessageSafetyAlertsSetting.tsx");

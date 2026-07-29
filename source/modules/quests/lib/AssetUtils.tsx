@@ -1,91 +1,65 @@
-// Module ID: 9455
-// Function ID: 73614
+// Module ID: 9479
+// Function ID: 9480
 // Name: resolveAsset
-// Dependencies: [5011, 653, 9456, 9457, 9458, 9459, 9460, 5971, 9467, 9468, 5018, 1443, 1825, 2]
-// Exports: getDevicePixelScaledDimensions, getQuestAsset, getScaledFirstFrameImageUrl, getScaledImageUrl, resolveAdCreativeCdnUrl, resolveOptionalAdCreativeCdnUrl
+// Dependencies: [5033, 676, 9480, 9481, 9482, 9483, 9484, 5990, 9491, 9492, 5040, 1467, 1849, 2]
+// Exports: buildUrl, getDevicePixelScaledDimensions, getQuestAsset, getScaledFirstFrameImageUrl, getScaledImageUrl, resolveAdCreativeCdnUrl, resolveOptionalAdCreativeCdnUrl
 
-// Module 9455 (resolveAsset)
+// Module 9479 (resolveAsset)
 import QuestsExperimentLocations from "QuestsExperimentLocations";
 import { MEDIA_PROXY_MAX_TARGET_RESOLUTION as closure_5 } from "ME";
 
 let TIER_1;
 let TIER_2;
 let TIER_3;
-let closure_3;
-let closure_4;
-function resolveAsset(id, questBarHeroVideo, theme) {
-  const tmp2 = getMimetype(questBarHeroVideo);
-  const obj = { url: buildUrl(id, questBarHeroVideo, theme), mimetype: tmp2 };
-  let hasItem = null != tmp2;
-  if (hasItem) {
-    hasItem = items.includes(tmp2);
-  }
-  obj.isAnimated = hasItem;
-  return obj;
-}
-function getVideoOrDefaultAsset(arg0, asset) {
-  return asset;
-}
-function buildUrl(id, questBarHeroVideo, theme) {
-  let str = questBarHeroVideo;
+let TIER_4;
+let c3;
+let c4;
+function resolveAsset(id, questBarHeroVideo) {
   if (questBarHeroVideo.startsWith("blob:")) {
-    const parts = str.split("?", 1);
-    const atResult = parts.at(0);
-    if (null != atResult) {
-      str = atResult;
+    const parts = questBarHeroVideo.split("?", 1);
+    let atResult = parts.at(0);
+    if (atResult == null) {
+      atResult = questBarHeroVideo;
     }
-    return str;
+    let combined = atResult;
+  } else if (questBarHeroVideo.includes("/")) {
+    const _HermesInternal3 = HermesInternal;
+    combined = "" + closure_3 + questBarHeroVideo;
   } else {
-    if (str.includes("/")) {
-      const _HermesInternal3 = HermesInternal;
-      let combined = "" + closure_3 + str;
-    } else {
-      theme = undefined;
-      if (null != theme) {
-        theme = theme.theme;
-      }
-      let str4 = "";
-      if (null != theme) {
-        const _HermesInternal = HermesInternal;
-        str4 = "/" + theme.theme;
-      }
-      const _HermesInternal2 = HermesInternal;
-      combined = "" + tmp + id + str4 + "/" + str;
+    let theme;
+    if (arg2 != null) {
+      theme = arg2.theme;
     }
-    return combined;
-  }
-}
-function resolveCdnUrl(hero_video) {
-  let combined = hero_video;
-  if (!hero_video.startsWith("http://")) {
-    combined = hero_video;
-    if (!hero_video.startsWith("https://")) {
-      combined = hero_video;
-      if (!hero_video.startsWith("blob:")) {
-        const _HermesInternal = HermesInternal;
-        combined = "" + closure_3 + hero_video;
-      }
+    let str3 = "";
+    if (null != theme) {
+      const _HermesInternal = HermesInternal;
+      str3 = "/" + arg2.theme;
     }
+    const _HermesInternal2 = HermesInternal;
+    combined = "" + tmp + id + str3 + "/" + questBarHeroVideo;
   }
-  return combined;
+  const tmp16 = getMimetype(questBarHeroVideo);
+  const obj = { url: combined, mimetype: tmp16, isAnimated: null };
+  let hasItem = null != tmp16;
+  if (hasItem) {
+    hasItem = items.includes(tmp16);
+  }
+  obj[2] = hasItem;
+  return obj;
 }
 function getMimetype(questBarHeroVideo) {
   const startsWithResult = questBarHeroVideo.startsWith("blob:");
-  const toURLSafeResult = importDefault(1443).toURLSafe(questBarHeroVideo);
+  const toURLSafeResult = importDefault(1467).toURLSafe(questBarHeroVideo);
   if (startsWithResult) {
     let value;
     if (!tmp3) {
       const searchParams2 = toURLSafeResult.searchParams;
       value = searchParams2.get("mimetype");
     }
-    let tmp9;
-    if (null != value) {
-      tmp9 = value;
-    }
     let decodeURIComponentResult = null;
-    if (null != tmp9) {
+    if (null != value) {
       const _decodeURIComponent = decodeURIComponent;
-      decodeURIComponentResult = decodeURIComponent(tmp9);
+      decodeURIComponentResult = decodeURIComponent(value);
     }
     return decodeURIComponentResult;
   } else {
@@ -93,55 +67,22 @@ function getMimetype(questBarHeroVideo) {
     if (!tmp3) {
       const searchParams = toURLSafeResult.searchParams;
       const str2 = searchParams.get("format");
-      if (null != str2) {
+      if (str2 != null) {
         formatted = str2.toLowerCase();
       }
     }
-    if (null == formatted) {
+    if (formatted == null) {
       const match = tmp3.exec(questBarHeroVideo);
       let formatted1;
-      if (null != match) {
-        if (null != match[1]) {
+      if (match != null) {
+        if (match[1] != null) {
           formatted1 = str3.toLowerCase();
         }
       }
-      formatted = formatted1;
     }
-    if ("webm" === formatted) {
-      return "video/webm";
-    } else if ("mp4" === formatted) {
-      return "video/mp4";
-    } else if ("webp" === formatted) {
-      return "image/webp";
-    } else {
-      if ("jpg" !== formatted) {
-        if ("jpeg" !== formatted) {
-          if ("png" === formatted) {
-            return "image/png";
-          } else if ("gif" === formatted) {
-            return "image/gif";
-          } else if ("svg" === formatted) {
-            return "image/svg+xml";
-          } else if ("txt" === formatted) {
-            return "text/plain";
-          } else if ("vtt" === formatted) {
-            return "text/vtt";
-          } else if ("ts" === formatted) {
-            return "video/mp2t";
-          } else if ("m3u8" === formatted) {
-            return "application/x-mpegURL";
-          } else {
-            return null;
-          }
-        }
-      }
-      return "image/jpeg";
-    }
+    return "application/x-mpegURL";
   }
-  const obj = importDefault(1443);
-}
-function safeMediaProxyDimension(height) {
-  return Math.min(Math.ceil(height), closure_5);
+  const obj = importDefault(1467);
 }
 function getAssetUrlWithMediaProxyQueryParams(assetUrl, arg1) {
   let size = arg1;
@@ -151,7 +92,7 @@ function getAssetUrlWithMediaProxyQueryParams(assetUrl, arg1) {
   if (assetUrl.startsWith("blob:")) {
     return assetUrl;
   } else {
-    let str = importDefault(1443).toURLSafe(assetUrl);
+    let str = importDefault(1467).toURLSafe(assetUrl);
     str = assetUrl;
     if (null != str) {
       if (null != size.format) {
@@ -160,13 +101,17 @@ function getAssetUrlWithMediaProxyQueryParams(assetUrl, arg1) {
       }
       if (null != size.width) {
         const searchParams2 = str.searchParams;
+        const _Math = Math;
+        const _Math2 = Math;
         const _HermesInternal = HermesInternal;
-        const result1 = searchParams2.set("width", "" + safeMediaProxyDimension(size.width));
+        const result1 = searchParams2.set("width", "" + Math.min(Math.ceil(size.width), closure_5));
       }
       if (null != size.height) {
         const searchParams3 = str.searchParams;
+        const _Math3 = Math;
+        const _Math4 = Math;
         const _HermesInternal2 = HermesInternal;
-        const result2 = searchParams3.set("height", "" + safeMediaProxyDimension(size.height));
+        const result2 = searchParams3.set("height", "" + Math.min(Math.ceil(size.height), closure_5));
       }
       str = str.toString();
     }
@@ -177,25 +122,29 @@ function convertVideoToFirstFrameImageWithMediaProxy(assetUrl, width) {
   if (assetUrl.startsWith("blob:")) {
     return assetUrl;
   } else {
-    let str = importDefault(1443).toURLSafe(assetUrl);
+    let str = importDefault(1467).toURLSafe(assetUrl);
     str = null;
     if (null != str) {
       const searchParams = str.searchParams;
       const result = searchParams.set("format", "webp");
       if (null != width) {
         const searchParams2 = str.searchParams;
+        const _Math = Math;
+        const _Math2 = Math;
         const _HermesInternal = HermesInternal;
-        const result1 = searchParams2.set("width", "" + safeMediaProxyDimension(width.width));
+        const result1 = searchParams2.set("width", "" + Math.min(Math.ceil(width.width), closure_5));
         const searchParams3 = str.searchParams;
+        const _Math3 = Math;
+        const _Math4 = Math;
         const _HermesInternal2 = HermesInternal;
-        const result2 = searchParams3.set("height", "" + safeMediaProxyDimension(width.height));
+        const result2 = searchParams3.set("height", "" + Math.min(Math.ceil(width.height), closure_5));
       }
       str = str.toString();
     }
     return str;
   }
 }
-({ CDN_URL_BASE: closure_3, QUESTS_CDN_URL_BASE: closure_4 } = QuestsExperimentLocations);
+({ CDN_URL_BASE: c3, QUESTS_CDN_URL_BASE: c4 } = QuestsExperimentLocations);
 const tmp3 = /\.([a-zA-Z0-9]+)$/;
 let closure_6 = tmp3;
 const items = ["video/mp4", "video/webm"];
@@ -203,9 +152,9 @@ let obj = { HERO: "hero", HERO_IMAGE: "hero_image", HERO_VIDEO: "hero_video", QU
 obj = { VIDEO: "video", VIDEO_LOW_RES: "videoLowRes", VIDEO_HLS: "videoHls" };
 obj = { VIDEO: "url", THUMBNAIL: "thumbnail", CAPTION: "caption", TRANSCRIPT: "transcript" };
 let obj1 = { TIER_1: 1, [1]: "TIER_1", TIER_2: 2, [2]: "TIER_2", TIER_3: 3, [3]: "TIER_3", TIER_4: 4, [4]: "TIER_4" };
-let closure_9 = { [obj.VIDEO_PLAYER_VIDEO]: { variant: obj.VIDEO, property: obj.VIDEO }, [obj.VIDEO_PLAYER_VIDEO_LOW_RES]: { variant: obj.VIDEO_LOW_RES, property: obj.VIDEO }, [obj.VIDEO_PLAYER_VIDEO_HLS]: { variant: obj.VIDEO_HLS, property: obj.VIDEO }, [obj.VIDEO_PLAYER_THUMBNAIL]: { variant: obj.VIDEO, property: obj.THUMBNAIL }, [obj.VIDEO_PLAYER_CAPTION]: { variant: obj.VIDEO, property: obj.CAPTION }, [obj.VIDEO_PLAYER_TRANSCRIPT]: { variant: obj.VIDEO, property: obj.TRANSCRIPT } };
-const obj8 = { [TIER_1]: require("metadata"), [TIER_2]: require("metadata"), [TIER_3]: require("metadata"), [obj1.TIER_4]: require("metadata") };
-({ TIER_1, TIER_2, TIER_3 } = obj1);
+let closure_10 = { [obj.VIDEO_PLAYER_VIDEO]: { variant: obj.VIDEO, property: obj.VIDEO }, [obj.VIDEO_PLAYER_VIDEO_LOW_RES]: { variant: obj.VIDEO_LOW_RES, property: obj.VIDEO }, [obj.VIDEO_PLAYER_VIDEO_HLS]: { variant: obj.VIDEO_HLS, property: obj.VIDEO }, [obj.VIDEO_PLAYER_THUMBNAIL]: { variant: obj.VIDEO, property: obj.THUMBNAIL }, [obj.VIDEO_PLAYER_CAPTION]: { variant: obj.VIDEO, property: obj.CAPTION }, [obj.VIDEO_PLAYER_TRANSCRIPT]: { variant: obj.VIDEO, property: obj.TRANSCRIPT } };
+const obj8 = { [TIER_1]: require("metadata"), [TIER_2]: require("metadata"), [TIER_3]: require("metadata"), [TIER_4]: require("metadata") };
+({ TIER_1, TIER_2, TIER_3, TIER_4 } = obj1);
 let result = require("metadata").fileFinishedImporting("modules/quests/lib/AssetUtils.tsx");
 
 export const EXTENSION_RE = tmp3;
@@ -218,141 +167,138 @@ export const getQuestAsset = function getQuestAsset(quest, VIDEO_PLAYER_TRANSCRI
   let assetVideo;
   if (obj.HERO === VIDEO_PLAYER_TRANSCRIPT) {
     const heroVideo2 = quest.config.assets.heroVideo;
-    const hero = quest.config.assets.hero;
-    getVideoOrDefaultAsset(undefined, hero);
+    asset = quest.config.assets.hero;
     flag = false;
-    let logotype = hero;
     let flag2 = false;
-  } else if (obj.HERO_IMAGE === VIDEO_PLAYER_TRANSCRIPT) {
-    logotype = quest.config.assets.hero;
+  } else if (tmp.HERO_IMAGE === VIDEO_PLAYER_TRANSCRIPT) {
+    asset = quest.config.assets.hero;
     flag = false;
     flag2 = false;
-  } else if (obj.HERO_VIDEO === VIDEO_PLAYER_TRANSCRIPT) {
+  } else if (tmp.HERO_VIDEO === VIDEO_PLAYER_TRANSCRIPT) {
     const heroVideo = quest.config.assets.heroVideo;
     flag = false;
-    logotype = heroVideo;
     flag2 = false;
+    asset = heroVideo;
     if (null == heroVideo) {
       return null;
     }
-  } else if (obj.QUEST_BAR_HERO === VIDEO_PLAYER_TRANSCRIPT) {
+  } else if (tmp.QUEST_BAR_HERO === VIDEO_PLAYER_TRANSCRIPT) {
     const questBarHeroVideo2 = quest.config.assets.questBarHeroVideo;
-    const questBarHero = quest.config.assets.questBarHero;
-    getVideoOrDefaultAsset(undefined, questBarHero);
+    asset = quest.config.assets.questBarHero;
     flag = false;
-    logotype = questBarHero;
     flag2 = false;
-  } else if (obj.QUEST_BAR_HERO_VIDEO === VIDEO_PLAYER_TRANSCRIPT) {
+  } else if (tmp.QUEST_BAR_HERO_VIDEO === VIDEO_PLAYER_TRANSCRIPT) {
     const questBarHeroVideo = quest.config.assets.questBarHeroVideo;
     flag = false;
-    logotype = questBarHeroVideo;
     flag2 = false;
+    asset = questBarHeroVideo;
     if (null == questBarHeroVideo) {
       return null;
     }
-  } else if (obj.QUEST_BAR_HERO_IMAGE === VIDEO_PLAYER_TRANSCRIPT) {
-    logotype = quest.config.assets.questBarHero;
+  } else if (tmp.QUEST_BAR_HERO_IMAGE === VIDEO_PLAYER_TRANSCRIPT) {
+    asset = quest.config.assets.questBarHero;
     flag = false;
     flag2 = false;
-  } else if (obj.REWARD === VIDEO_PLAYER_TRANSCRIPT) {
-    let obj1 = require(9460) /* getCollectiblesQuestReward */;
+  } else if (tmp.REWARD === VIDEO_PLAYER_TRANSCRIPT) {
+    let obj1 = require(9484) /* _getDefaultRewardName */;
     const questPrimaryReward = obj1.getQuestPrimaryReward(quest);
-    if (questPrimaryReward.type === require(5971) /* QuestRewardTypes */.QuestRewardTypes.VIRTUAL_CURRENCY) {
-      let tmp30;
+    if (questPrimaryReward.type === require(5990) /* QuestRewardTypes */.QuestRewardTypes.VIRTUAL_CURRENCY) {
+      let tmp25;
       if (null != arg4) {
-        tmp30 = obj8[arg4];
+        tmp25 = obj8[arg4];
       }
-      if (null != tmp30) {
-        obj = { url: tmp30, mimetype: "video/webm", isAnimated: true };
+      if (null != tmp25) {
+        obj = { url: null, mimetype: "video/webm", isAnimated: true };
+        obj[0] = tmp25;
         obj1 = obj;
       } else if (flag) {
-        obj = { url: importDefault(9467), mimetype: "video/mp4", isAnimated: true };
+        obj = { url: null, mimetype: "video/mp4", isAnimated: true };
+        obj[0] = importDefault(9491);
         obj1 = obj;
       } else {
-        obj1 = { url: importDefault(9468), mimetype: "video/webm", isAnimated: true };
+        obj1 = { url: null, mimetype: "video/webm", isAnimated: true };
+        obj1[0] = importDefault(9492);
       }
       return obj1;
     } else {
       ({ assetVideo, asset } = questPrimaryReward);
-      getVideoOrDefaultAsset(undefined, asset);
       flag = false;
-      logotype = asset;
       flag2 = false;
     }
-  } else if (obj.REWARD_IMAGE === VIDEO_PLAYER_TRANSCRIPT) {
-    obj = require(9460) /* getCollectiblesQuestReward */;
+  } else if (tmp.REWARD_IMAGE === VIDEO_PLAYER_TRANSCRIPT) {
+    obj = require(9484) /* _getDefaultRewardName */;
     const questPrimaryReward1 = obj.getQuestPrimaryReward(quest);
-    if (questPrimaryReward1.type === require(5971) /* QuestRewardTypes */.QuestRewardTypes.VIRTUAL_CURRENCY) {
+    if (questPrimaryReward1.type === require(5990) /* QuestRewardTypes */.QuestRewardTypes.VIRTUAL_CURRENCY) {
       return null;
     } else {
-      logotype = questPrimaryReward1.asset;
+      asset = questPrimaryReward1.asset;
       flag = false;
       flag2 = false;
     }
-  } else if (obj.GAME_TILE === VIDEO_PLAYER_TRANSCRIPT) {
+  } else if (tmp.GAME_TILE === VIDEO_PLAYER_TRANSCRIPT) {
     if ("dark" === DARK) {
       if (null != quest.config.assets.gameTileDark) {
-        logotype = quest.config.assets.gameTileDark;
+        asset = quest.config.assets.gameTileDark;
         flag = false;
         flag2 = false;
       }
     }
     if ("light" === DARK) {
       if (null != quest.config.assets.gameTileLight) {
-        logotype = quest.config.assets.gameTileLight;
+        asset = quest.config.assets.gameTileLight;
         flag = false;
         flag2 = false;
       }
     }
-    logotype = quest.config.assets.gameTile;
-    flag = true;
-    flag2 = false;
-  } else if (obj.LOGO_TYPE === VIDEO_PLAYER_TRANSCRIPT) {
+    asset = quest.config.assets.gameTile;
+    flag = false;
+    flag2 = true;
+  } else if (tmp.LOGO_TYPE === VIDEO_PLAYER_TRANSCRIPT) {
     if ("dark" === DARK) {
       if (null != quest.config.assets.logotypeDark) {
-        logotype = quest.config.assets.logotypeDark;
+        asset = quest.config.assets.logotypeDark;
         flag = false;
         flag2 = false;
       }
     }
     if ("light" === DARK) {
       if (null != quest.config.assets.logotypeLight) {
-        logotype = quest.config.assets.logotypeLight;
+        asset = quest.config.assets.logotypeLight;
         flag = false;
         flag2 = false;
       }
     }
-    logotype = quest.config.assets.logotype;
-    flag = true;
-    flag2 = false;
-  } else if (obj.COSPONSOR_LOGO_TYPE === VIDEO_PLAYER_TRANSCRIPT) {
+    asset = quest.config.assets.logotype;
+    flag = false;
+    flag2 = true;
+  } else if (tmp.COSPONSOR_LOGO_TYPE === VIDEO_PLAYER_TRANSCRIPT) {
     if (null == quest.config.cosponsorMetadata) {
       return null;
     } else {
       if ("dark" === DARK) {
         if (null != quest.config.cosponsorMetadata.logotypeDark) {
-          logotype = quest.config.cosponsorMetadata.logotypeDark;
+          asset = quest.config.cosponsorMetadata.logotypeDark;
           flag = false;
           flag2 = false;
         }
       }
       if ("light" === DARK) {
         if (null != quest.config.cosponsorMetadata.logotypeLight) {
-          logotype = quest.config.cosponsorMetadata.logotypeLight;
+          asset = quest.config.cosponsorMetadata.logotypeLight;
           flag = false;
           flag2 = false;
         }
       }
-      logotype = quest.config.cosponsorMetadata.logotype;
-      flag = true;
-      flag2 = false;
+      asset = quest.config.cosponsorMetadata.logotype;
+      flag = false;
+      flag2 = true;
     }
   } else {
-    if (obj.VIDEO_PLAYER_VIDEO !== VIDEO_PLAYER_TRANSCRIPT) {
-      if (obj.VIDEO_PLAYER_VIDEO_LOW_RES !== VIDEO_PLAYER_TRANSCRIPT) {
-        if (obj.VIDEO_PLAYER_VIDEO_HLS !== VIDEO_PLAYER_TRANSCRIPT) {
-          if (obj.VIDEO_PLAYER_THUMBNAIL !== VIDEO_PLAYER_TRANSCRIPT) {
-            if (obj.VIDEO_PLAYER_CAPTION !== VIDEO_PLAYER_TRANSCRIPT) {
+    if (tmp.VIDEO_PLAYER_VIDEO !== VIDEO_PLAYER_TRANSCRIPT) {
+      if (tmp.VIDEO_PLAYER_VIDEO_LOW_RES !== VIDEO_PLAYER_TRANSCRIPT) {
+        if (tmp.VIDEO_PLAYER_VIDEO_HLS !== VIDEO_PLAYER_TRANSCRIPT) {
+          if (tmp.VIDEO_PLAYER_THUMBNAIL !== VIDEO_PLAYER_TRANSCRIPT) {
+            if (tmp.VIDEO_PLAYER_CAPTION !== VIDEO_PLAYER_TRANSCRIPT) {
               flag = false;
               flag2 = false;
             }
@@ -361,54 +307,105 @@ export const getQuestAsset = function getQuestAsset(quest, VIDEO_PLAYER_TRANSCRI
       }
     }
     if ("taskConfigV2" in quest.config) {
-      const FirstPartyQuestTaskTypes = require(5018) /* set */.FirstPartyQuestTaskTypes;
-      const tmp9 = quest.config.taskConfigV2.tasks[flag ? FirstPartyQuestTaskTypes.WATCH_VIDEO_ON_MOBILE : FirstPartyQuestTaskTypes.WATCH_VIDEO];
-      let tmp13;
-      if (null != tmp9) {
-        if (null != tmp9.assets[tmp11.variant]) {
-          tmp13 = tmp14[tmp11.property];
+      const FirstPartyQuestTaskTypes = require(5040) /* set */.FirstPartyQuestTaskTypes;
+      const tmp5 = quest.config.taskConfigV2.tasks[flag ? FirstPartyQuestTaskTypes.WATCH_VIDEO_ON_MOBILE : FirstPartyQuestTaskTypes.WATCH_VIDEO];
+      let tmp9;
+      if (tmp5 != null) {
+        if (tmp5.assets[tmp7.variant] != null) {
+          tmp9 = tmp10[tmp7.property];
         }
       }
-      flag = false;
-      flag2 = true;
-      logotype = tmp13;
-      if (null == tmp13) {
+      flag = true;
+      flag2 = false;
+      asset = tmp9;
+      if (null == tmp9) {
         return null;
       }
     } else {
       return null;
     }
   }
-  const obj2 = {};
-  let tmp43;
-  if (flag) {
-    tmp43 = DARK;
+  let tmp32;
+  if (flag2) {
+    tmp32 = DARK;
   }
-  obj2.theme = tmp43;
-  const tmp42Result = resolveAsset(quest.id, logotype, obj2);
-  if (!flag2) {
-    let tmp45 = tmp42Result;
+  const tmp31Result = resolveAsset(quest.id, asset, { theme: tmp32 });
+  if (!flag) {
+    let tmp34 = tmp31Result;
   } else {
-    tmp45 = null;
+    tmp34 = null;
   }
-  return tmp45;
+  return tmp34;
 };
-export { buildUrl };
+export const buildUrl = function buildUrl(arg0, str, theme) {
+  if (str.startsWith("blob:")) {
+    const parts = str.split("?", 1);
+    let atResult = parts.at(0);
+    if (atResult == null) {
+      atResult = str;
+    }
+    return atResult;
+  } else {
+    if (str.includes("/")) {
+      const _HermesInternal3 = HermesInternal;
+      let combined = "" + closure_3 + str;
+    } else {
+      theme = undefined;
+      if (theme != null) {
+        theme = theme.theme;
+      }
+      let str3 = "";
+      if (null != theme) {
+        const _HermesInternal = HermesInternal;
+        str3 = "/" + theme.theme;
+      }
+      const _HermesInternal2 = HermesInternal;
+      combined = "" + tmp + arg0 + str3 + "/" + str;
+    }
+    return combined;
+  }
+};
 export const resolveOptionalAdCreativeCdnUrl = function resolveOptionalAdCreativeCdnUrl(hero_video) {
   if (null != hero_video) {
-    return resolveCdnUrl(hero_video);
+    let combined = hero_video;
+    if (!hero_video.startsWith("http://")) {
+      combined = hero_video;
+      if (!hero_video.startsWith("https://")) {
+        combined = hero_video;
+        if (!hero_video.startsWith("blob:")) {
+          const _HermesInternal = HermesInternal;
+          combined = "" + closure_3 + hero_video;
+        }
+      }
+    }
+    return combined;
   }
 };
 export const resolveAdCreativeCdnUrl = function resolveAdCreativeCdnUrl(hero_image) {
-  return resolveCdnUrl(hero_image);
+  let combined = hero_image;
+  if (!hero_image.startsWith("http://")) {
+    combined = hero_image;
+    if (!hero_image.startsWith("https://")) {
+      combined = hero_image;
+      if (!hero_image.startsWith("blob:")) {
+        const _HermesInternal = HermesInternal;
+        combined = "" + closure_3 + hero_image;
+      }
+    }
+  }
+  return combined;
 };
 export { getMimetype };
-export const getDevicePixelScaledDimensions = function getDevicePixelScaledDimensions(width, height) {
-  const tmp = importDefault(1825)();
+export const getDevicePixelScaledDimensions = function getDevicePixelScaledDimensions(arg0, arg1) {
+  const tmp = importDefault(1849)();
   if (tmp < 3) {
-    let obj = { width, height };
+    let obj = { width: null, height: null };
+    obj[0] = arg0;
+    obj[1] = arg1;
   } else {
-    obj = { width: width * tmp, height: height * tmp };
+    obj = { width: null, height: null };
+    obj[0] = arg0 * tmp;
+    obj[1] = arg1 * tmp;
   }
   return obj;
 };
@@ -418,7 +415,7 @@ export const getScaledImageUrl = function getScaledImageUrl(arg0) {
   let height;
   let width;
   ({ assetUrl, width, height } = arg0);
-  const tmp = importDefault(1825)();
+  const tmp = importDefault(1849)();
   return getAssetUrlWithMediaProxyQueryParams(assetUrl, { width: width * tmp, height: height * tmp, format: "webp" });
 };
 export { convertVideoToFirstFrameImageWithMediaProxy };
@@ -427,6 +424,6 @@ export const getScaledFirstFrameImageUrl = function getScaledFirstFrameImageUrl(
   let height;
   let width;
   ({ assetUrl, width, height } = arg0);
-  const tmp = importDefault(1825)();
+  const tmp = importDefault(1849)();
   return convertVideoToFirstFrameImageWithMediaProxy(assetUrl, { width: width * tmp, height: height * tmp });
 };

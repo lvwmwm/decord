@@ -1,23 +1,23 @@
-// Module ID: 12683
-// Function ID: 97978
+// Module ID: 12705
+// Function ID: 12706
 // Name: prettyPrintTrace_
-// Dependencies: [29, 1850, 653, 20, 14, 675, 2]
+// Dependencies: [109, 1874, 676, 10, 9, 698, 2]
 // Exports: createResumeAnalytics, getConnectionPath, getReadyPayloadByteSizeAnalytics, logGatewayConnected, logReadyPayloadReceived, logResumeAnalytics, reportDevtoolsEvent
 
-// Module 12683 (prettyPrintTrace_)
+// Module 12705 (prettyPrintTrace_)
 import _objectWithoutProperties from "_objectWithoutProperties";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import mergeGuildAvatar from "mergeGuildAvatar";
 import ME from "ME";
 
-let closure_7;
-let closure_8;
+let error;
+let metroImportAll;
 function prettyPrintTrace_(calls, arg1) {
   let length;
   if (null == calls) {
     return "";
   } else {
-    let num = 0;
     let str3 = "";
+    let num = 0;
     let str4 = "";
     if (0 < calls.length) {
       do {
@@ -55,10 +55,72 @@ function eachTraceCall(calls, arg1) {
     }
   }
 }
-function getReadyPayloadSizeAnalytics(guilds) {
-  guilds = guilds.guilds;
-  let c0 = 0;
-  let c1 = 0;
+let closure_2 = ["guilds", "merged_presences", "merged_members", "read_state", "private_channels", "user_guild_settings", "user_settings", "user_settings_proto", "experiments", "guild_experiments", "relationships", "users"];
+let closure_3 = ["features"];
+let closure_4 = ["threads", "guild_scheduled_events"];
+({ AnalyticEvents: error, ChannelTypes: metroImportAll } = ME);
+let result = require("ME").fileFinishedImporting("modules/gateway/GatewaySocketAnalytics.tsx");
+
+export function reportDevtoolsEvent() {
+
+}
+export const logReadyPayloadReceived = function logReadyPayloadReceived(socket, data, nowResult, compressionAnalytics, readyPayloadByteSizeAnalytics) {
+  const tmp = (function getReadyPayloadTraceAnalytics(data) {
+    const obj = {};
+    try {
+      const _JSON = JSON;
+      const parsed = JSON.parse(tmp);
+      let startsWithResult = null != parsed[0];
+      if (startsWithResult) {
+        startsWithResult = "" !== tmp4[0];
+      }
+      if (startsWithResult) {
+        startsWithResult = typeof tmp4[0] === "y";
+      }
+      if (startsWithResult) {
+        const first = tmp4[0];
+        startsWithResult = first.startsWith("gateway-");
+      }
+      if (startsWithResult) {
+        let num = 0;
+        if (typeof tmp4[1] !== "window") {
+          num = 0;
+          if ("micros" in tmp4[1]) {
+            let _Math = Math;
+            num = Math.floor(tmp4[1].micros / 1000);
+          }
+        }
+        obj.identify_total_server_duration_ms = num;
+      }
+      callback(parsed, (arg0, arg1) => {
+        if ("start_session" === arg0) {
+          const _Math2 = Math;
+          obj.identify_api_duration_ms = Math.floor(arg1 / 1000);
+        } else if ("guilds_connect" === arg0) {
+          const _Math = Math;
+          obj.identify_guilds_duration_ms = Math.floor(arg1 / 1000);
+        }
+      });
+      return obj;
+    } catch (err) {
+    }
+  })(data);
+  if (null != compressionAnalytics) {
+    let obj = importDefault(10);
+    let _Math = Math;
+    obj.addDetail("payload_size(kb)", Math.round(compressionAnalytics.uncompressed_byte_size / 1024));
+  }
+  let num2 = tmp.identify_total_server_duration_ms;
+  if (num2 == null) {
+    num2 = 0;
+  }
+  importDefault(10).addDetail("server_time(ms)", num2);
+  obj = {};
+  const merged = Object.assign(compressionAnalytics);
+  const merged1 = Object.assign(tmp);
+  const guilds = data.guilds;
+  importDefault = 0;
+  const dependencyMap = 0;
   let item = guilds.forEach((unavailable) => {
     if (!unavailable.unavailable) {
       if ("partial" === unavailable.data_mode) {
@@ -68,127 +130,108 @@ function getReadyPayloadSizeAnalytics(guilds) {
       }
       if (tmp2) {
         const item = channels.forEach((type) => {
-          outer1_1 = outer1_1 + 1;
-          if (type.type === outer2_8.GUILD_CATEGORY) {
-            outer1_0 = outer1_0 + 1;
+          closure_1 = closure_1 + 1;
+          if (type.type === outer1_8.GUILD_CATEGORY) {
+            closure_0 = closure_0 + 1;
           }
         });
       }
       tmp2 = null != channels && null != channels.forEach;
     }
   });
-  return { num_guilds: guilds.length, num_guild_channels: c1, num_guild_category_channels: c0 };
-}
-let closure_2 = ["guilds", "merged_presences", "merged_members", "read_state", "private_channels", "user_guild_settings", "user_settings", "user_settings_proto", "experiments", "guild_experiments", "relationships", "users"];
-let closure_3 = ["features"];
-let closure_4 = ["threads", "guild_scheduled_events"];
-({ AnalyticEvents: closure_7, ChannelTypes: closure_8 } = ME);
-let result = require("ME").fileFinishedImporting("modules/gateway/GatewaySocketAnalytics.tsx");
-
-export function reportDevtoolsEvent() {
-
-}
-export const logReadyPayloadReceived = function logReadyPayloadReceived(socket, data, nowResult, compressionAnalytics, readyPayloadByteSizeAnalytics) {
-  const tmp = (function getReadyPayloadTraceAnalytics(_trace) {
-    const obj = {};
-    const parsed = JSON.parse(_trace._trace);
-    let tmp4 = tmp3;
-    if (null != parsed[0]) {
-      tmp4 = "" !== tmp2[0];
-    }
-    let tmp6 = tmp4;
-    if (tmp4) {
-      tmp6 = "string" === typeof tmp2[0];
-    }
-    let startsWithResult = tmp6;
-    if (tmp6) {
-      const first = tmp2[0];
-      startsWithResult = first.startsWith("gateway-");
-    }
-    if (startsWithResult) {
-      let num2 = 0;
-      if ("object" === typeof tmp2[1]) {
-        num2 = 0;
-        if ("micros" in tmp2[1]) {
-          let _Math = Math;
-          num2 = Math.floor(tmp2[1].micros / 1000);
-        }
-      }
-      obj.identify_total_server_duration_ms = num2;
-    }
-    outer1_10(parsed, (arg0, arg1) => {
-      if ("start_session" === arg0) {
-        const _Math2 = Math;
-        obj.identify_api_duration_ms = Math.floor(arg1 / 1000);
-      } else if ("guilds_connect" === arg0) {
-        const _Math = Math;
-        obj.identify_guilds_duration_ms = Math.floor(arg1 / 1000);
-      }
-    });
-  })(data);
-  if (null != compressionAnalytics) {
-    let obj = importDefault(20);
-    let _Math = Math;
-    obj.addDetail("payload_size(kb)", Math.round(compressionAnalytics.uncompressed_byte_size / 1024));
-  }
-  const identify_total_server_duration_ms = tmp.identify_total_server_duration_ms;
-  let num3 = 0;
-  if (null != identify_total_server_duration_ms) {
-    num3 = identify_total_server_duration_ms;
-  }
-  importDefault(20).addDetail("server_time(ms)", num3);
-  obj = {};
-  const merged = Object.assign(compressionAnalytics);
-  const merged1 = Object.assign(tmp);
-  const merged2 = Object.assign(getReadyPayloadSizeAnalytics(data));
+  obj = { num_guilds: guilds.length, num_guild_channels: dependencyMap, num_guild_category_channels: importDefault };
+  const merged2 = Object.assign(obj);
   const merged3 = Object.assign(readyPayloadByteSizeAnalytics);
-  obj["duration_ms_since_identify_start"] = nowResult - socket.identifyStartTime;
-  obj["duration_ms_since_connection_start"] = nowResult - socket.connectionStartTime;
-  obj["duration_ms_since_emit_start"] = Date.now() - nowResult;
-  obj["is_reconnect"] = socket.hasConnectedOnce;
-  obj["is_fast_connect"] = socket.isFastConnect;
-  obj["did_force_clear_guild_hashes"] = socket.didForceClearGuildHashes;
-  obj["identify_uncompressed_byte_size"] = socket.identifyUncompressedByteSize;
-  obj["identify_compressed_byte_size"] = socket.identifyCompressedByteSize;
-  const hadCacheAtStartup = socket.analytics.hadCacheAtStartup;
-  obj["had_cache_at_startup"] = null != hadCacheAtStartup && hadCacheAtStartup;
-  const usedCacheAtStartup = socket.analytics.usedCacheAtStartup;
-  obj["used_cache_at_startup"] = null != usedCacheAtStartup && usedCacheAtStartup;
-  const obj2 = importDefault(20);
-  const tmp11 = null != hadCacheAtStartup && hadCacheAtStartup;
-  const tmp12 = null != usedCacheAtStartup && usedCacheAtStartup;
-  const result = importDefault(14).attachReadyPayloadProperties(obj);
-  const obj4 = importDefault(14);
-  importDefault(675).track(constants.READY_PAYLOAD_RECEIVED, obj, { logEventProperties: true });
+  obj.duration_ms_since_identify_start = nowResult - socket.identifyStartTime;
+  obj.duration_ms_since_connection_start = nowResult - socket.connectionStartTime;
+  obj.duration_ms_since_emit_start = Date.now() - nowResult;
+  ({ hasConnectedOnce: obj3.is_reconnect, isFastConnect: obj3.is_fast_connect, didForceClearGuildHashes: obj3.did_force_clear_guild_hashes, identifyUncompressedByteSize: obj3.identify_uncompressed_byte_size, identifyCompressedByteSize: obj3.identify_compressed_byte_size } = socket);
+  let flag = socket.analytics.hadCacheAtStartup;
+  if (flag == null) {
+    flag = false;
+  }
+  obj.had_cache_at_startup = flag;
+  let flag2 = socket.analytics.usedCacheAtStartup;
+  if (flag2 == null) {
+    flag2 = false;
+  }
+  obj.used_cache_at_startup = flag2;
+  let tmp6Result = tmp6(9);
+  const result = tmp6Result.attachReadyPayloadProperties(obj);
+  tmp6Result = tmp6(698);
+  tmp6Result.track(constants.READY_PAYLOAD_RECEIVED, obj, { logEventProperties: true });
 };
 export const getConnectionPath = function getConnectionPath(_trace) {
-  _trace = _trace._trace;
-  let first;
-  if (null != _trace) {
-    first = tmp[0];
-  }
-  let tmp4 = null;
-  if (null != first) {
-    const _JSON = JSON;
-    tmp4 = prettyPrintTrace_(JSON.parse(first), "");
-  }
-  if (null != tmp4) {
-    return tmp4;
-  } else {
-    while (true) {
-      let tmp7 = _trace;
-      let tmp8 = null;
-      let str2 = "???";
-      if (null == _trace._trace) {
-        break;
-      } else {
-        let _trace2 = _trace._trace;
-        let str3 = " -> ";
-        str2 = _trace2.join(" -> ");
-        break;
-      }
-      return str2;
+  try {
+    _trace = _trace._trace;
+    let first;
+    if (_trace != null) {
+      first = _trace[0];
     }
+    const tmp3 = (function prettyPrintTrace(first) {
+      let tmp = null;
+      if (null != first) {
+        const _JSON = JSON;
+        const parsed = JSON.parse(first);
+        let str2 = "";
+        if (null != parsed) {
+          let num5 = 0;
+          let str7 = "";
+          let str8 = "";
+          if (0 < parsed.length) {
+            do {
+              let sum = num5 + 1;
+              let _HermesInternal = HermesInternal;
+              let str9 = "\n";
+              let str10 = "";
+              let str11 = ": ";
+              let calls = parsed[sum].calls;
+              let tmp5 = num5;
+              let str12 = "";
+              let text = `${"\n" + "" + arr[num5] + ": " + arr[tmp3].micros / 1000}`;
+              if (null != calls) {
+                let num6 = 0;
+                let str13 = "";
+                let str14 = "";
+                if (0 < calls.length) {
+                  do {
+                    let sum1 = num6 + 1;
+                    let _HermesInternal2 = HermesInternal;
+                    let str15 = "\n";
+                    let str16 = "|  ";
+                    let str17 = ": ";
+                    let tmp8 = callback;
+                    let text1 = `${"\n" + "|  " + arr2[num6] + ": " + arr2[tmp6].micros / 1000}`;
+                    str13 = `${"\n" + "|  " + arr2[num6] + ": " + arr2[tmp6].micros / 1000}${closure_9(arr2[tmp6].calls, "|  |  ")}`;
+                    num6 = num6 + 2;
+                    str14 = str13;
+                    length = calls.length;
+                  } while (num6 < length);
+                }
+                str12 = str14;
+              }
+              str7 = text + str12;
+              num5 = num5 + 2;
+              str8 = str7;
+            } while (num5 < parsed.length);
+          }
+          str2 = str8;
+        }
+        tmp = str2;
+      }
+      return tmp;
+    })(first);
+    if (null != tmp3) {
+      return tmp3;
+    } else {
+      let str = "???";
+      if (null != _trace._trace) {
+        const _trace2 = _trace._trace;
+        str = _trace2.join(" -> ");
+      }
+      return str;
+    }
+  } catch (err) {
   }
 };
 export const getReadyPayloadByteSizeAnalytics = function getReadyPayloadByteSizeAnalytics(data) {
@@ -226,7 +269,7 @@ export const getReadyPayloadByteSizeAnalytics = function getReadyPayloadByteSize
       partial_updates = unavailable;
       if (!unavailable.unavailable) {
         let properties = partial_updates.properties;
-        if (null == properties) {
+        if (properties == null) {
           properties = {};
         }
         ({ threads, guild_scheduled_events } = partial_updates);
@@ -264,75 +307,73 @@ export const getReadyPayloadByteSizeAnalytics = function getReadyPayloadByteSize
         const tmp6 = items5(partial_updates, items4);
       }
     });
-    obj = {};
     let friends;
-    if (null != merged_presences) {
+    if (merged_presences != null) {
       friends = merged_presences.friends;
     }
-    if (null == friends) {
+    if (friends == null) {
       friends = [];
     }
-    obj.presences_size = JSON.stringify(friends).length;
+    obj = { presences_size: null, users_size: null, read_states_size: null, private_channels_size: null, user_settings_size: null, experiments_size: null, user_guild_settings_size: null, relationships_size: null, remaining_data_size: null, guild_channels_size: null, guild_members_size: null, guild_presences_size: null, guild_roles_size: null, guild_emojis_size: null, guild_threads_size: null, guild_stickers_size: null, guild_events_size: null, guild_features_size: null, guild_remaining_data_size: null, size_metrics_duration_ms: null };
+    obj[0] = JSON.stringify(friends).length;
     const _JSON = JSON;
-    obj.users_size = JSON.stringify(users).length;
+    obj[1] = JSON.stringify(users).length;
     const _JSON2 = JSON;
-    obj.read_states_size = JSON.stringify(read_state).length;
+    obj[2] = JSON.stringify(read_state).length;
     const _JSON3 = JSON;
-    obj.private_channels_size = JSON.stringify(private_channels).length;
-    let str = "";
-    let str2 = "";
-    if (null != user_settings) {
-      str2 = user_settings;
+    obj[3] = JSON.stringify(private_channels).length;
+    if (user_settings == null) {
+      user_settings = "";
     }
-    if (null != user_settings_proto) {
-      str = user_settings_proto;
+    if (user_settings_proto == null) {
+      user_settings_proto = "";
     }
-    obj.user_settings_size = JSON.stringify(str2).length + str.length;
-    if (null == experiments) {
+    obj[4] = JSON.stringify(user_settings).length + user_settings_proto.length;
+    if (experiments == null) {
       experiments = [];
     }
-    if (null == guild_experiments) {
+    if (guild_experiments == null) {
       guild_experiments = [];
     }
-    obj.experiments_size = JSON.stringify(experiments).length + JSON.stringify(guild_experiments).length;
+    obj[5] = JSON.stringify(experiments).length + JSON.stringify(guild_experiments).length;
     const _JSON4 = JSON;
-    obj.user_guild_settings_size = JSON.stringify(user_guild_settings).length;
+    obj[6] = JSON.stringify(user_guild_settings).length;
     const _JSON5 = JSON;
-    obj.relationships_size = JSON.stringify(relationships).length;
-    if (null == obj) {
+    obj[7] = JSON.stringify(relationships).length;
+    if (obj == null) {
       obj = {};
     }
-    obj.remaining_data_size = JSON.stringify(obj).length;
+    obj[8] = JSON.stringify(obj).length;
     const _JSON6 = JSON;
-    obj.guild_channels_size = JSON.stringify(items).length;
-    if (null == merged_members) {
+    obj[9] = JSON.stringify(items).length;
+    if (merged_members == null) {
       merged_members = [];
     }
-    obj.guild_members_size = JSON.stringify(merged_members).length;
+    obj[10] = JSON.stringify(merged_members).length;
     guilds = undefined;
-    if (null != merged_presences) {
+    if (merged_presences != null) {
       guilds = merged_presences.guilds;
     }
-    if (null == guilds) {
+    if (guilds == null) {
       guilds = [];
     }
-    obj.guild_presences_size = JSON.stringify(guilds).length;
+    obj[11] = JSON.stringify(guilds).length;
     const _JSON7 = JSON;
-    obj.guild_roles_size = JSON.stringify(items1).length;
+    obj[12] = JSON.stringify(items1).length;
     const _JSON8 = JSON;
-    obj.guild_emojis_size = JSON.stringify(items2).length;
+    obj[13] = JSON.stringify(items2).length;
     const _JSON9 = JSON;
-    obj.guild_threads_size = JSON.stringify(items3).length;
+    obj[14] = JSON.stringify(items3).length;
     const _JSON10 = JSON;
-    obj.guild_stickers_size = JSON.stringify(items4).length;
+    obj[15] = JSON.stringify(items4).length;
     const _JSON11 = JSON;
-    obj.guild_events_size = JSON.stringify(items6).length;
+    obj[16] = JSON.stringify(items6).length;
     const _JSON12 = JSON;
-    obj.guild_features_size = JSON.stringify(items5).length;
+    obj[17] = JSON.stringify(items5).length;
     const _JSON13 = JSON;
-    obj.guild_remaining_data_size = JSON.stringify(items7).length;
+    obj[18] = JSON.stringify(items7).length;
     const _Date = Date;
-    obj.size_metrics_duration_ms = Date.now() - timestamp;
+    obj[19] = Date.now() - timestamp;
     return obj;
   }
 };
@@ -341,44 +382,44 @@ export const logGatewayConnected = function logGatewayConnected(gatewayUrl) {
   let now;
   let socket;
   ({ socket, altGateway, now } = gatewayUrl);
-  let obj = importDefault(675);
+  let obj = importDefault(698);
   obj = { num_failed_connect_attempts: socket.failedConnectAttempts, gateway_url: gatewayUrl.gatewayUrl, assigned_to_alt_gateway: altGateway.isAssignedToAltGateway(), did_fall_back_from_alt_gateway: altGateway.getDidFallBack(), is_reconnect: socket.hasConnectedOnce, is_fast_connect: socket.isFastConnect, duration_ms_since_first_connect_attempt: now - socket.firstConnectAttemptStartTime, duration_ms_since_connect_attempt_start: now - socket.connectionStartTime };
   obj.track(constants.GATEWAY_CONNECTED, obj, { logEventProperties: true });
 };
 export const createResumeAnalytics = function createResumeAnalytics(arg0) {
-  const obj = { connectTime: null, numEvents: 0, largestWaitTime: 0, dispatchTime: 0, totalWaitTime: 0, initialWaitTime: 0 };
-  let num = 0;
-  if (null != arg0) {
-    num = arg0;
+  let num = arg0;
+  if (arg0 == null) {
+    num = 0;
   }
-  obj.connectTime = num;
-  obj.startTime = performance.now();
-  obj.lastUpdateTime = performance.now();
-  return obj;
+  return { connectTime: num, numEvents: 0, largestWaitTime: 0, dispatchTime: 0, totalWaitTime: 0, initialWaitTime: 0, startTime: performance.now(), lastUpdateTime: performance.now() };
 };
 export const logResumeAnalytics = function logResumeAnalytics(resumeAnalytics) {
   currentUser = currentUser.getCurrentUser();
-  let tmp = null == currentUser || !currentUser.isStaff();
-  if (tmp) {
-    const _Math = Math;
-    tmp = Math.random() < 0.5;
+  let isStaffResult;
+  if (currentUser != null) {
+    isStaffResult = currentUser.isStaff();
   }
-  if (!tmp) {
-    let obj = { connect_time_ms: resumeAnalytics.connectTime };
+  let tmp2 = !isStaffResult;
+  if (!isStaffResult) {
+    const _Math = Math;
+    tmp2 = Math.random() < 0.5;
+  }
+  if (!tmp2) {
+    const obj = { connect_time_ms: null, resume_time_ms: null, num_events: null, largest_wait_time_ms: null, initial_wait_time_ms: null, total_wait_time_ms: null, total_dispatch_time_ms: null };
+    obj[0] = resumeAnalytics.connectTime;
     const _Math2 = Math;
     const _performance = performance;
-    obj.resume_time_ms = Math.floor(performance.now() - resumeAnalytics.startTime);
-    obj.num_events = resumeAnalytics.numEvents;
+    obj[1] = Math.floor(performance.now() - resumeAnalytics.startTime);
+    obj[2] = resumeAnalytics.numEvents;
     const _Math3 = Math;
-    obj.largest_wait_time_ms = Math.floor(resumeAnalytics.largestWaitTime);
+    obj[3] = Math.floor(resumeAnalytics.largestWaitTime);
     const _Math4 = Math;
-    obj.initial_wait_time_ms = Math.floor(resumeAnalytics.initialWaitTime);
+    obj[4] = Math.floor(resumeAnalytics.initialWaitTime);
     const _Math5 = Math;
-    obj.total_wait_time_ms = Math.floor(resumeAnalytics.totalWaitTime);
+    obj[5] = Math.floor(resumeAnalytics.totalWaitTime);
     const _Math6 = Math;
-    obj.total_dispatch_time_ms = Math.floor(resumeAnalytics.dispatchTime);
-    obj = { logEventProperties: true };
-    importDefault(675).track(constants.CONNECTION_RESUMED, obj, obj);
-    const obj2 = importDefault(675);
+    obj[6] = Math.floor(resumeAnalytics.dispatchTime);
+    importDefault(698).track(constants.CONNECTION_RESUMED, obj, { logEventProperties: true });
+    const obj2 = importDefault(698);
   }
 };

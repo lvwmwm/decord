@@ -1,31 +1,141 @@
-// Module ID: 6194
-// Function ID: 55399
-// Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 1859, 1852, 2]
+// Module ID: 6214
+// Function ID: 6215
+// Name: createFromServer
+// Dependencies: [1883, 1876, 2]
 
-// Module 6194 (_isNativeReflectConstruct)
-import closure_0 from "GuildFeatures";
-import set from "set";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
+// Module 6214 (createFromServer)
+import "toJS";
 import GuildFeatures from "GuildFeatures";
-import importDefaultResult from "Record";
-import tmp4 from "Record";
 
 let DiscountUserUsageLimitIntervalTypes;
 let SubscriptionIntervalTypes;
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
-  }
-  const result = _isNativeReflectConstruct();
-}
 ({ SubscriptionIntervalTypes, DiscountUserUsageLimitIntervalTypes } = GuildFeatures);
-let closure_5 = { [DiscountUserUsageLimitIntervalTypes.DAY]: SubscriptionIntervalTypes.DAY, [DiscountUserUsageLimitIntervalTypes.WEEK]: SubscriptionIntervalTypes.DAY, [DiscountUserUsageLimitIntervalTypes.MONTH]: SubscriptionIntervalTypes.MONTH, [DiscountUserUsageLimitIntervalTypes.YEAR]: SubscriptionIntervalTypes.YEAR };
-let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/user_offers/records/UserDiscountOfferRecord.tsx");
+let closure_0 = { [DiscountUserUsageLimitIntervalTypes.DAY]: SubscriptionIntervalTypes.DAY, [DiscountUserUsageLimitIntervalTypes.WEEK]: SubscriptionIntervalTypes.DAY, [DiscountUserUsageLimitIntervalTypes.MONTH]: SubscriptionIntervalTypes.MONTH, [DiscountUserUsageLimitIntervalTypes.YEAR]: SubscriptionIntervalTypes.YEAR };
+let UserDiscountOfferRecord;
+class UserDiscountOfferRecord extends tmp2 {
+  constructor(arg0) {
+    tmp = new UserDiscountOfferRecord(new.target, new.target, global);
+    // ThrowIfThisInitialized (0x7c)
+    ({ id: tmp.id, discountId: tmp.discountId, discount: tmp.discount, userId: tmp.userId, appliedAt } = global);
+    if (appliedAt == null) {
+      appliedAt = null;
+    }
+    tmp.appliedAt = appliedAt;
+    deletedAt = global.deletedAt;
+    if (deletedAt == null) {
+      deletedAt = null;
+    }
+    tmp.deletedAt = deletedAt;
+    expiresAt = global.expiresAt;
+    if (expiresAt == null) {
+      expiresAt = null;
+    }
+    tmp.expiresAt = expiresAt;
+    return tmp;
+  }
+}
+const prototype = UserDiscountOfferRecord.prototype;
+UserDiscountOfferRecord["createFromServer"] = function createFromServer(discount) {
+  let discount_id;
+  let id;
+  ({ id, discount_id } = discount);
+  const obj = { id: discount.discount.id, planIds: discount.discount.plan_ids, userUsageLimitInterval: discount.discount.user_usage_limit_interval, userUsageLimitIntervalCount: discount.discount.user_usage_limit_interval_count, userUsageLimit: discount.discount.user_usage_limit, amount: discount.discount.amount };
+  const user_id = discount.user_id;
+  let date = null;
+  if (null != discount.applied_at) {
+    let _Date = Date;
+    date = new Date(discount.applied_at);
+  }
+  let date1 = null;
+  if (null != discount.deleted_at) {
+    let _Date2 = Date;
+    _Date = new.target;
+    date1 = new Date(discount.deleted_at);
+  }
+  let date2 = null;
+  if (null != discount.expires_at) {
+    _Date2 = Date;
+    _Date = new.target;
+    date2 = new Date(discount.expires_at);
+  }
+  if (typeof UserDiscountOfferRecord !== "find") {
+    HermesBuiltin.throwTypeError();
+  }
+  const tmp12 = new UserDiscountOfferRecord(str, _Date2, _Date, UserDiscountOfferRecord, new.target, id, discount_id, obj, user_id, date);
+  // ThrowIfThisInitialized (0x7c)
+  tmp12.id = id;
+  tmp12.discountId = discount_id;
+  tmp12.discount = obj;
+  tmp12.userId = user_id;
+  if (date == null) {
+    date = null;
+  }
+  tmp12.appliedAt = date;
+  if (date1 == null) {
+    date1 = null;
+  }
+  tmp12.deletedAt = date1;
+  if (date2 == null) {
+    date2 = null;
+  }
+  tmp12.expiresAt = date2;
+  return tmp12;
+};
+prototype["hasExpired"] = function hasExpired() {
+  let tmp2 = null != this.expiresAt;
+  if (tmp2) {
+    const _Date = Date;
+    const expiresAt = tmp.expiresAt;
+    const timestamp = Date.now();
+    tmp2 = timestamp > expiresAt.getTime();
+  }
+  return tmp2;
+};
+prototype["isApplied"] = function isApplied() {
+  return null != this.appliedAt;
+};
+prototype["isDeleted"] = function isDeleted() {
+  return null != this.deletedAt;
+};
+prototype["hasAcknowledged"] = function hasAcknowledged() {
+  return null != this.expiresAt;
+};
+prototype["getFullIntervalCount"] = function getFullIntervalCount() {
+  let num = 0;
+  if (null != this.discount) {
+    num = this.discount.userUsageLimit;
+  }
+  return num;
+};
+prototype["getDiscountInterval"] = function getDiscountInterval() {
+  return this.discount.userUsageLimitInterval;
+};
+prototype["getApplicableSubscriptionInterval"] = function getApplicableSubscriptionInterval() {
+  return table[this.getDiscountInterval(this)];
+};
+prototype["getIsMultiIntervalDiscount"] = function getIsMultiIntervalDiscount() {
+  return this.getFullIntervalCount() > 1;
+};
+prototype["getApproximateDiscountAmountOff"] = function getApproximateDiscountAmountOff(arg0) {
+  const discount = this.discount;
+  let amount;
+  if (discount != null) {
+    amount = discount.amount;
+  }
+  if (null == amount) {
+    return null;
+  } else {
+    const _parseFloat = parseFloat;
+    const parsed = parseFloat(this.discount.amount);
+    const _Number = Number;
+    let rounded = null;
+    if (!Number.isNaN(parsed)) {
+      const _Math = Math;
+      rounded = Math.round(arg0 * (1 - parsed / 100));
+    }
+    return rounded;
+  }
+};
+const result = require("set").fileFinishedImporting("modules/user_offers/records/UserDiscountOfferRecord.tsx");
 
-export default tmp4;
+export default UserDiscountOfferRecord;

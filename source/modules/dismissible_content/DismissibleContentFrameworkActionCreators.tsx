@@ -1,37 +1,37 @@
-// Module ID: 13104
-// Function ID: 101166
+// Module ID: 13127
+// Function ID: 13128
 // Name: handleDCShownToUser
-// Dependencies: [686, 2]
+// Dependencies: [709, 2]
 // Exports: handleDCDismissed, handleDCShownToUser, overrideDCFLastDCDismissed, overrideDismissibleContentFramework, overrideNewUserMinAgeRequired, resetDismissibleContentFrameworkStore
 
-// Module 13104 (handleDCShownToUser)
+// Module 13127 (handleDCShownToUser)
 const result = require("set").fileFinishedImporting("modules/dismissible_content/DismissibleContentFrameworkActionCreators.tsx");
 
 export const handleDCShownToUser = function handleDCShownToUser(dismissibleContent, guildId) {
-  let obj = importDefault(686);
+  let obj = importDefault(709);
   obj = { type: "DCF_HANDLE_DC_SHOWN", dismissibleContent, guildId };
   obj.dispatch(obj);
 };
 export const handleDCDismissed = function handleDCDismissed(dismissibleContent, guildId) {
-  let obj = importDefault(686);
+  let obj = importDefault(709);
   obj = { type: "DCF_HANDLE_DC_DISMISSED", dismissibleContent, guildId };
   obj.dispatch(obj);
 };
 export const resetDismissibleContentFrameworkStore = function resetDismissibleContentFrameworkStore() {
-  importDefault(686).dispatch({ type: "DCF_RESET" });
+  importDefault(709).dispatch({ type: "DCF_RESET" });
 };
 export const overrideDismissibleContentFramework = function overrideDismissibleContentFramework(value) {
-  let obj = importDefault(686);
+  let obj = importDefault(709);
   obj = { type: "DCF_DAILY_CAP_OVERRIDE", value };
   obj.dispatch(obj);
 };
 export const overrideNewUserMinAgeRequired = function overrideNewUserMinAgeRequired(value) {
-  let obj = importDefault(686);
+  let obj = importDefault(709);
   obj = { type: "DCF_NEW_USER_MIN_AGE_REQUIRED_OVERRIDE", value };
   obj.dispatch(obj);
 };
 export const overrideDCFLastDCDismissed = function overrideDCFLastDCDismissed(dismissibleContent, guildId) {
-  let obj = importDefault(686);
+  let obj = importDefault(709);
   obj = { type: "DCF_OVERRIDE_LAST_DC_DISMISSED", dismissibleContent, guildId };
   obj.dispatch(obj);
 };

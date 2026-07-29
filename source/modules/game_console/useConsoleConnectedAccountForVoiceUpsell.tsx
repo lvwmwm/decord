@@ -1,54 +1,48 @@
-// Module ID: 15914
-// Function ID: 122715
+// Module ID: 15949
+// Function ID: 15950
 // Name: useConsoleConnectedAccountForVoiceUpsell
-// Dependencies: [4847, 4845, 4179, 8921, 653, 566, 15915, 2]
+// Dependencies: [4869, 4867, 4203, 8945, 676, 589, 15950, 2]
 // Exports: default
 
-// Module 15914 (useConsoleConnectedAccountForVoiceUpsell)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_4 from "_isNativeReflectConstruct";
-import closure_5 from "_isNativeReflectConstruct";
+// Module 15949 (useConsoleConnectedAccountForVoiceUpsell)
+import set from "set";
+import filterPlayingActivities from "filterPlayingActivities";
+import closure_5 from "set";
 import { CONSOLE_VOICE_PLATFORMS } from "XBOX_URL_BASE";
 import { ActivityTypes } from "ME";
 
 const require = arg1;
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/game_console/useConsoleConnectedAccountForVoiceUpsell.tsx");
+const result = require("set").fileFinishedImporting("modules/game_console/useConsoleConnectedAccountForVoiceUpsell.tsx");
 
 export default function useConsoleConnectedAccountForVoiceUpsell() {
-  const items = [closure_4];
-  const stateFromStores = found(566).useStateFromStores(items, () => outer1_4.getActivities(true));
+  const items = [filterPlayingActivities];
+  const stateFromStores = found(589).useStateFromStores(items, () => activities.getActivities(true));
   found = stateFromStores.filter((platform) => {
     platform = platform.platform;
-    let hasItem = platform.type === outer1_7.PLAYING;
+    let hasItem = platform.type === constants.PLAYING;
     if (hasItem) {
       hasItem = null != platform;
     }
     if (hasItem) {
-      hasItem = outer1_6.has(platform);
+      hasItem = set.has(platform);
     }
     return hasItem;
   });
-  const obj = found(566);
+  const obj = found(589);
   const items1 = [closure_5];
-  const stateFromStores1 = found(566).useStateFromStores(items1, () => {
-    let tmp = null != outer1_5.getAwaitingRemoteSessionInfo();
-    if (!tmp) {
-      tmp = null != outer1_5.getRemoteSessionId();
-    }
-    return tmp;
-  });
-  const obj2 = found(566);
-  const items2 = [_isNativeReflectConstruct];
-  const stateFromStores2 = found(566).useStateFromStores(items2, () => {
+  const stateFromStores1 = found(589).useStateFromStores(items1, () => null != awaitingRemoteSessionInfo.getAwaitingRemoteSessionInfo() || null != awaitingRemoteSessionInfo.getRemoteSessionId());
+  const obj2 = found(589);
+  const items2 = [set];
+  const stateFromStores2 = found(589).useStateFromStores(items2, () => {
     const mapped = found.map((platform) => {
       platform = platform.platform;
       if (null == platform) {
         return null;
       } else {
-        const tmp3 = outer2_1(outer2_2[6])(platform);
+        const tmp3 = callback(table[6])(platform);
         let account = null;
         if (null != tmp3) {
-          account = outer2_3.getAccount(null, tmp3);
+          account = account.getAccount(null, tmp3);
         }
         return account;
       }

@@ -1,29 +1,78 @@
-// Module ID: 16170
-// Function ID: 125148
-// Name: _isNativeReflectConstruct
-// Dependencies: [7, 6, 15, 17, 18, 3982, 3983, 4506, 3985, 9124, 9132, 5112, 2]
+// Module ID: 16205
+// Function ID: 16206
+// Name: prototype
+// Dependencies: [4006, 4007, 5134, 4529, 4009, 9148, 9156, 2]
 
-// Module 16170 (_isNativeReflectConstruct)
-import module_4506 from "module_4506";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
-import closure_8 from "_isNativeReflectConstruct";
-import closure_9 from "_isNativeReflectConstruct";
-import tmp2 from "AutomaticLifecycleManager";
+// Module 16205 (prototype)
+import handleConnectionOpen from "handleConnectionOpen";
+import handleGatewayJoinRequestUpdate from "handleGatewayJoinRequestUpdate";
+import "initialize";
 
-const require = arg1;
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
-  }
-  const result = _isNativeReflectConstruct();
+let require = arg1;
+let prototype = function MemberVerificationApplicationManager() {
+  const applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
+  const require = applyArgumentsResult;
+  applyArgumentsResult.isShowingAlert = false;
+  applyArgumentsResult.actions = {
+    POST_CONNECTION_OPEN() {
+      return applyArgumentsResult.showApplicationApprovedAlert();
+    },
+    GUILD_JOIN_REQUEST_UPDATE() {
+      return applyArgumentsResult.showApplicationApprovedAlert();
+    },
+    CHANNEL_SELECT() {
+      return applyArgumentsResult.showApplicationApprovedAlert();
+    }
+  };
+  applyArgumentsResult.showApplicationApprovedAlert = function showApplicationApprovedAlert() {
+    const guildId = outer1_3.getGuildId();
+    if (null == guildId) {
+      if (guildId.isShowingAlert) {
+        outer1_1(outer1_2[3]).close();
+        tmp11.isShowingAlert = false;
+        const obj3 = outer1_1(outer1_2[3]);
+      }
+    } else {
+      const request = outer1_4.getRequest(guildId);
+      let applicationStatus;
+      if (request != null) {
+        applicationStatus = request.applicationStatus;
+      }
+      if (applicationStatus === applyArgumentsResult(outer1_2[4]).GuildJoinRequestApplicationStatuses.APPROVED) {
+        if (guildId.isShowingAlert) {
+          let lastSeen;
+          if (request != null) {
+            lastSeen = request.lastSeen;
+          }
+          if (null !== lastSeen) {
+            outer1_1(tmp4[3]).close();
+            tmp17.isShowingAlert = false;
+            const obj2 = outer1_1(tmp4[3]);
+          }
+        }
+        let tmp6 = tmp17.isShowingAlert || null == request;
+        if (!tmp6) {
+          let lastSeen1;
+          if (request != null) {
+            lastSeen1 = request.lastSeen;
+          }
+          tmp6 = null !== lastSeen1;
+        }
+        if (!tmp6) {
+          let result = applyArgumentsResult(tmp4[5]).openMemberVerificationSuccessAlert(guildId, () => {
+            const result = request(outer1_2[6]).ackUserGuildJoinRequest(guildId, request.joinRequestId);
+          });
+          tmp17.isShowingAlert = true;
+          const tmp3Result = applyArgumentsResult(tmp4[5]);
+        }
+      }
+    }
+  };
+  return applyArgumentsResult;
+}.prototype;
+class prototype extends tmp2 {
 }
-tmp2 = new tmp2();
-let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/guild_member_verification/native/components/MemberVerificationApplicationManager.tsx");
+prototype = new prototype();
+let result = require("initialize").fileFinishedImporting("modules/guild_member_verification/native/components/MemberVerificationApplicationManager.tsx");
 
-export default tmp2;
+export default prototype;

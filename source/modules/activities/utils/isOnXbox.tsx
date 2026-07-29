@@ -1,10 +1,10 @@
-// Module ID: 11969
-// Function ID: 92492
+// Module ID: 11993
+// Function ID: 11994
 // Name: isOnXbox
-// Dependencies: [4190, 653, 2]
+// Dependencies: [4214, 676, 2]
 // Exports: default
 
-// Module 11969 (isOnXbox)
+// Module 11993 (isOnXbox)
 import { XBOX_ACTIVITY_APPLICATION_ID as closure_0 } from "items3";
 import { ActivityGamePlatforms } from "ME";
 
@@ -12,13 +12,13 @@ const result = require("set").fileFinishedImporting("modules/activities/utils/is
 
 export default function isOnXbox(application_id) {
   application_id = undefined;
-  if (null != application_id) {
+  if (application_id != null) {
     application_id = application_id.application_id;
   }
   let tmp2 = application_id === closure_0;
   if (!tmp2) {
     let platform;
-    if (null != application_id) {
+    if (application_id != null) {
       platform = application_id.platform;
     }
     tmp2 = platform === ActivityGamePlatforms.XBOX;

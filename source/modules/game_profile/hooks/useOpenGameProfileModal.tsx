@@ -1,15 +1,15 @@
-// Module ID: 8451
-// Function ID: 67301
+// Module ID: 8475
+// Function ID: 8476
 // Name: useOpenGameProfileModal
-// Dependencies: [8452, 8456, 2]
+// Dependencies: [8476, 8480, 2]
 // Exports: default
 
-// Module 8451 (useOpenGameProfileModal)
+// Module 8475 (useOpenGameProfileModal)
 const result = require("set").fileFinishedImporting("modules/game_profile/hooks/useOpenGameProfileModal.tsx");
 
 export default function useOpenGameProfileModal(arg0) {
-  let obj = arg1;
   const importDefault = arg0;
+  let obj = arg1;
   if (arg1 === undefined) {
     obj = {};
   }
@@ -23,19 +23,19 @@ export default function useOpenGameProfileModal(arg0) {
   if (tmp.shouldOpenGameProfile) {
     if (null != gameId) {
       fn = (stopPropagation) => {
-        if (null != stopPropagation) {
+        if (stopPropagation != null) {
           stopPropagation.stopPropagation();
         }
-        if (null != stopPropagation) {
+        if (stopPropagation != null) {
           stopPropagation.preventDefault();
         }
         let obj = callback(onOpened[1]);
         obj = {};
         const merged = Object.assign(callback);
-        obj["gameId"] = gameId;
-        obj["gameProfileModalChecks"] = c2;
+        obj.gameId = gameId;
+        obj.gameProfileModalChecks = c2;
         obj.openGameProfileModal(obj);
-        if (null != onOpened) {
+        if (onOpened != null) {
           onOpened();
         }
       };

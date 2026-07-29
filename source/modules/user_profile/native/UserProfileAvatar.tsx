@@ -1,45 +1,43 @@
-// Module ID: 8080
-// Function ID: 64063
+// Module ID: 8104
+// Function ID: 8105
 // Name: OpenableUserProfileAvatar
-// Dependencies: [31, 27, 8081, 5545, 33, 8055, 7951, 8083, 8090, 1212, 2]
+// Dependencies: [19, 17, 8105, 5563, 21, 8079, 7976, 8107, 8114, 1236, 2]
 // Exports: OpenableUserProfileAvatar
 
-// Module 8080 (OpenableUserProfileAvatar)
-import importAllResult from "result";
+// Module 8104 (OpenableUserProfileAvatar)
+import importAllResult from "noop";
 import { View } from "get ActivityIndicator";
 import { TrackUserProfileActions } from "USER_PROFILE_TOOLTIP_DELAY";
 import { AVATAR_SIZE_VARIANT } from "ARBITRARY_LARGE_OFFSET";
 import jsxProd from "jsxProd";
 
-let closure_7;
-let closure_8;
-let closure_9;
+let c9;
+let error;
+let metroImportAll;
 const require = arg1;
-({ jsx: closure_7, Fragment: closure_8, jsxs: closure_9 } = jsxProd);
+let c3 = importAllResult;
+({ jsx: error, Fragment: metroImportAll, jsxs: c9 } = jsxProd);
 const forwardRefResult = importAllResult.forwardRef((backgroundColor, ref) => {
   let size = backgroundColor.size;
   if (size === undefined) {
     size = AVATAR_SIZE_VARIANT;
   }
-  let obj = Object.create(null);
-  obj.backgroundColor = 0;
-  obj.size = 0;
-  const merged = Object.assign(backgroundColor, obj);
-  const tmp3 = importDefault(8055)();
-  obj = {};
+  const merged = Object.assign(backgroundColor, Object.create(null));
+  const tmp2 = importDefault(8079)();
+  let obj = { children: null };
   const items = [, , ];
-  ({ avatarBackground: arr[0], avatarPosition: arr[1] } = tmp3);
+  ({ avatarBackground: arr[0], avatarPosition: arr[1] } = tmp2);
   items[2] = { backgroundColor: backgroundColor.backgroundColor };
   const items1 = [callback(View, { style: items }), ];
-  obj = { ref, style: items2 };
+  obj = { ref, style: items2, size };
   items2 = [, ];
-  ({ avatar: arr3[0], avatarPosition: arr3[1] } = tmp3);
-  obj.size = size;
+  ({ avatar: arr3[0], avatarPosition: arr3[1] } = tmp2);
   const merged1 = Object.assign(merged);
-  items1[1] = callback(importDefault(7951), obj);
-  obj.children = items1;
+  items1[1] = callback(importDefault(7976), obj);
+  obj[0] = items1;
   return callback2(closure_8, obj);
 });
+let c10 = forwardRefResult;
 const result = require("USER_PROFILE_TOOLTIP_DELAY").fileFinishedImporting("modules/user_profile/native/UserProfileAvatar.tsx");
 
 export default forwardRefResult;
@@ -50,37 +48,36 @@ export const OpenableUserProfileAvatar = function OpenableUserProfileAvatar(anim
   }
   const user = animate.user;
   const guildId = animate.guildId;
-  let obj = { animate: 0, user: 0, guildId: 0 };
-  Object.setPrototypeOf(null);
-  const merged = Object.assign(animate, obj);
+  const merged = Object.assign(animate, Object.create(null));
   let ref;
   let trackUserProfileAction;
+  let obj = ref;
   ref = ref.useRef(null);
   trackUserProfileAction = flag(guildId[7]).useUserProfileAnalyticsContext().trackUserProfileAction;
-  const tmp4 = null != user.avatar || user.hasAvatarForGuild(guildId);
+  const tmp5 = null != user.avatar || user.hasAvatarForGuild(guildId);
   const items = [flag, guildId, trackUserProfileAction, user];
   obj = { ref };
-  const callback = ref.useCallback(() => {
+  const callback = obj.useCallback(() => {
     let obj = { action: outer1_5.VIEW_AVATAR };
     trackUserProfileAction(obj);
     obj = { user, guildId, animate: flag, originViewOrOriginLayout: ref.current };
     user(guildId[8])(obj);
   }, items);
   const merged1 = Object.assign(merged);
-  obj["animate"] = flag;
-  obj["user"] = user;
-  obj["guildId"] = guildId;
-  let tmp9;
-  if (tmp4) {
-    tmp9 = callback;
+  obj.animate = flag;
+  obj.user = user;
+  obj.guildId = guildId;
+  let tmp10;
+  if (tmp5) {
+    tmp10 = callback;
   }
-  obj["onPress"] = tmp9;
-  if (tmp4) {
-    const intl = flag(guildId[9]).intl;
-    let accessibilityLabel = intl.string(flag(guildId[9]).t.xB7MI3);
+  obj.onPress = tmp10;
+  if (tmp5) {
+    const intl = tmp3(tmp4[9]).intl;
+    let accessibilityLabel = intl.string(tmp3(tmp4[9]).t.xB7MI3);
   } else {
     accessibilityLabel = merged.accessibilityLabel;
   }
-  obj["accessibilityLabel"] = accessibilityLabel;
+  obj.accessibilityLabel = accessibilityLabel;
   return closure_7(closure_10, obj);
 };

@@ -1,21 +1,21 @@
-// Module ID: 15156
-// Function ID: 115241
+// Module ID: 15189
+// Function ID: 15190
 // Name: updateGuildPremiumSubscriptionCount
-// Dependencies: [686, 2]
+// Dependencies: [709, 2]
 // Exports: resetGuildPremiumSubscriptionCount, updateGuildPremiumSubscriptionCount
 
-// Module 15156 (updateGuildPremiumSubscriptionCount)
+// Module 15189 (updateGuildPremiumSubscriptionCount)
 const result = require("set").fileFinishedImporting("modules/guild_boosting/GuildBoostingProgressBarActionCreators.tsx");
 
 export const updateGuildPremiumSubscriptionCount = function updateGuildPremiumSubscriptionCount(guildId, arg1) {
   const importDefault = guildId;
   const dependencyMap = arg1;
-  importDefault(686).wait(() => {
+  importDefault(709).wait(() => {
     let obj = guildId(table[0]);
     obj = { type: "APPLIED_GUILD_BOOST_COUNT_UPDATE", guildId, premiumCount: table };
     obj.dispatch(obj);
   });
 };
 export const resetGuildPremiumSubscriptionCount = function resetGuildPremiumSubscriptionCount() {
-  importDefault(686).dispatch({ type: "APPLIED_GUILD_BOOST_COUNT_RESET" });
+  importDefault(709).dispatch({ type: "APPLIED_GUILD_BOOST_COUNT_RESET" });
 };

@@ -1,11 +1,11 @@
-// Module ID: 7681
-// Function ID: 61343
+// Module ID: 7704
+// Function ID: 7705
 // Name: SettingsUpsellsConfigRegistry
-// Dependencies: [31, 7670, 7682, 7683, 7684, 1327, 2]
+// Dependencies: [19, 7693, 7705, 7706, 7707, 1351, 2]
 // Exports: useIarReportSettingsUpsells, useSettingsUpsellsConfigs
 
-// Module 7681 (SettingsUpsellsConfigRegistry)
-import result from "result";
+// Module 7704 (SettingsUpsellsConfigRegistry)
+import noop from "noop";
 
 const require = arg1;
 const obj = {};
@@ -21,28 +21,27 @@ export const useIarReportSettingsUpsells = function useIarReportSettingsUpsells(
   return React.useMemo(() => {
     let tmp = null;
     if (null != closure_0) {
-      tmp = (function getIarReportSubtypeUpsells(closure_0) {
-        const items = [];
-        const entries = Object.entries(outer2_3);
-        const item = entries.forEach((arg0) => {
-          let tmp;
-          let tmp2;
-          [tmp, tmp2] = arg0;
-          let hasItem = null == tmp2.eligibleReportSubtypes;
-          if (!hasItem) {
-            const eligibleReportSubtypes = tmp2.eligibleReportSubtypes;
-            hasItem = eligibleReportSubtypes.includes(closure_0);
-          }
-          if (hasItem) {
-            items.push(tmp);
-          }
-        });
-        let tmp2 = null;
-        if (0 !== items.length) {
-          tmp2 = items;
+      const items = [];
+      const _Object = Object;
+      const entries = Object.entries(outer1_3);
+      const item = entries.forEach((arg0) => {
+        let tmp;
+        let tmp2;
+        [tmp, tmp2] = arg0;
+        let hasItem = null == tmp2.eligibleReportSubtypes;
+        if (!hasItem) {
+          const eligibleReportSubtypes = tmp2.eligibleReportSubtypes;
+          hasItem = eligibleReportSubtypes.includes(closure_0);
         }
-        return tmp2;
-      })(closure_0);
+        if (hasItem) {
+          items.push(tmp);
+        }
+      });
+      let tmp5 = null;
+      if (0 !== items.length) {
+        tmp5 = items;
+      }
+      tmp = tmp5;
     }
     return tmp;
   }, items);
@@ -52,27 +51,27 @@ export const useSettingsUpsellsConfigs = function useSettingsUpsellsConfigs(sett
   let closure_1 = type;
   const items = [settingsUpsells, type];
   return React.useMemo(() => {
-    const mapped = settingsUpsells.map((arg0) => (function getSettingsUpsellsConfig(arg0, outer1_1) {
+    const mapped = settingsUpsells.map((arg0) => {
       let eligibleChannelTypes;
       let predicate;
-      ({ predicate, eligibleChannelTypes } = outer3_3[arg0]);
-      let tmp2 = null == predicate;
-      if (!tmp2) {
+      ({ predicate, eligibleChannelTypes } = outer1_3[arg0]);
+      let tmp3 = null == predicate;
+      if (!tmp3) {
         let predicateResult;
-        if (null != predicate) {
+        if (predicate != null) {
           predicateResult = predicate();
         }
-        tmp2 = true === predicateResult;
+        tmp3 = true === predicateResult;
       }
-      if (tmp2) {
-        tmp2 = tmp4;
+      if (tmp3) {
+        tmp3 = tmp5;
       }
-      let tmp5 = null;
-      if (tmp2) {
-        tmp5 = tmp;
+      let tmp6 = null;
+      if (tmp3) {
+        tmp6 = tmp2;
       }
-      return tmp5;
-    })(arg0, outer1_1));
+      return tmp6;
+    });
     return mapped.filter(settingsUpsells(type[5]).isNotNullish);
   }, items);
 };

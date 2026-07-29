@@ -1,25 +1,26 @@
-// Module ID: 15822
-// Function ID: 121860
+// Module ID: 15857
+// Function ID: 15858
 // Name: QuestActivityButtonInner
-// Dependencies: [31, 27, 4157, 5966, 15823, 5011, 33, 4026, 8507, 4165, 689, 10468, 566, 4372, 15824, 1935, 4133, 15825, 4166, 5488, 14134, 15826, 14005, 1212, 10478, 2]
+// Dependencies: [19, 17, 4181, 5985, 15858, 5033, 21, 4050, 8531, 4189, 712, 10492, 589, 4395, 15859, 1959, 4157, 15860, 4190, 5506, 14156, 15861, 14026, 1236, 10502, 2]
 
-// Module 15822 (QuestActivityButtonInner)
-import importAllResult from "result";
-import { View } from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_6 from "_isNativeReflectConstruct";
-import closure_7 from "_isNativeReflectConstruct";
+// Module 15857 (QuestActivityButtonInner)
+import importAllResult from "play";
+import { View } from "contextMenuButton";
+import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
+import initializeState from "initializeState";
+import set from "set";
 import { QuestVariants } from "QuestsExperimentLocations";
-import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import importDefaultResult from "module_4026";
+import jsxProd from "module_15861";
+import createCacheKey from "createCacheKey";
+import importDefaultResult from "module_4050";
 
-let closure_10;
-let closure_9;
+let c10;
+let c9;
 const require = arg1;
 function QuestActivityButtonInner(quest) {
   let userStatus;
   quest = quest.quest;
+  let stateFromStores;
   let dependencyMap;
   let num;
   let c4;
@@ -27,14 +28,15 @@ function QuestActivityButtonInner(quest) {
   let sharedValue1;
   let ref;
   let c8;
-  let obj = quest(10468);
-  let obj1 = quest(566);
+  let obj = quest(10492);
+  let obj1 = quest(589);
   let items = [sharedValue];
-  const stateFromStores = obj1.useStateFromStores(items, () => sharedValue.useReducedMotion);
+  stateFromStores = obj1.useStateFromStores(items, () => sharedValue.useReducedMotion);
+  let obj2 = num;
   const items1 = [, ];
   ({ id: arr2[0], userStatus } = quest);
   let enrolledAt;
-  if (null != userStatus) {
+  if (userStatus != null) {
     enrolledAt = userStatus.enrolledAt;
   }
   items1[1] = enrolledAt;
@@ -44,22 +46,24 @@ function QuestActivityButtonInner(quest) {
   const callback = num.useCallback(() => {
     const userStatus = quest.userStatus;
     let enrolledAt;
-    if (null != userStatus) {
+    if (userStatus != null) {
       enrolledAt = userStatus.enrolledAt;
     }
     if (null == enrolledAt) {
-      let obj = { questId: quest.id };
-      stateFromStores(_undefined[13]).pushLazy(quest(_undefined[15])(_undefined[14], _undefined.paths), obj, outer1_16);
+      let obj = { questId: null };
+      obj[0] = tmp.id;
+      stateFromStores(_undefined[13]).pushLazy(quest(_undefined[15])(_undefined[14], _undefined.paths), obj, outer1_17);
       const obj3 = stateFromStores(_undefined[13]);
     } else {
       obj = stateFromStores(_undefined[16]);
-      obj = { questId: quest.id };
+      obj = { questId: null };
+      obj[0] = tmp.id;
       obj.openLazy(quest(_undefined[15])(_undefined[17], _undefined.paths), "QuestProgressBottomSheet", obj);
     }
   }, items1);
-  if (null != quest) {
+  if (quest != null) {
     const userStatus2 = quest.userStatus;
-    if (null != userStatus2) {
+    if (userStatus2 != null) {
       enrolledAt1 = userStatus2.enrolledAt;
     }
   }
@@ -68,200 +72,198 @@ function QuestActivityButtonInner(quest) {
     num = obj.useQuestCompletionDetails(quest).completedRatio;
   }
   let enrolledAt2;
-  if (null != quest) {
+  if (quest != null) {
     const userStatus3 = quest.userStatus;
-    if (null != userStatus3) {
+    if (userStatus3 != null) {
       enrolledAt2 = userStatus3.enrolledAt;
     }
   }
-  let tmp8 = null != enrolledAt2;
-  if (tmp8) {
+  let tmp9 = null != enrolledAt2;
+  if (tmp9) {
     let completedAt;
-    if (null != quest) {
+    if (quest != null) {
       const userStatus4 = quest.userStatus;
-      if (null != userStatus4) {
+      if (userStatus4 != null) {
         completedAt = userStatus4.completedAt;
       }
     }
-    tmp8 = null != completedAt;
+    tmp9 = null != completedAt;
   }
-  c4 = tmp8;
-  let obj2 = quest(4026);
-  sharedValue = obj2.useSharedValue(num);
-  let obj3 = quest(4026);
+  c4 = tmp9;
+  let tmpResult = tmp(4050);
+  sharedValue = tmpResult.useSharedValue(num);
+  tmpResult = tmp(4050);
   let num2 = 0;
-  if (tmp8) {
+  if (tmp9) {
     num2 = 1;
   }
-  sharedValue1 = obj3.useSharedValue(num2);
-  ref = num.useRef(null);
-  const tmp13 = callback3();
-  c8 = tmp13;
-  let obj4 = quest(4026);
-  class I {
-    constructor() {
-      obj = { shadowOpacity: c6.get() };
-      return obj;
-    }
-  }
-  I.__closure = { glowOpacity: sharedValue1 };
-  I.__workletHash = 4459043613798;
-  I.__initData = closure_14;
-  const items2 = [tmp13.confetti];
-  const animatedStyle = obj4.useAnimatedStyle(I);
-  const memo = num.useMemo(() => {
+  sharedValue1 = tmpResult.useSharedValue(num2);
+  ref = obj2.useRef(null);
+  const tmp14 = callback3();
+  c8 = tmp14;
+  const fn = function u() {
+    return { shadowOpacity: sharedValue1.get() };
+  };
+  fn.__closure = { glowOpacity: sharedValue1 };
+  fn.__workletHash = 4459043613798;
+  fn.__initData = closure_14;
+  const items2 = [tmp14.confetti];
+  const animatedStyle = quest(4050).useAnimatedStyle(fn);
+  const memo = obj2.useMemo(() => {
     const obj = {};
     const merged = Object.assign(_undefined2.confetti);
-    obj["width"] = outer1_11;
-    obj["height"] = outer1_11;
+    obj.width = outer1_11;
+    obj.height = outer1_11;
     const items = [{ scale: 1.6 }];
-    obj["transform"] = items;
+    obj.transform = items;
     return obj;
   }, items2);
-  let obj5 = quest(4026);
-  class E {
-    constructor() {
-      obj = { strokeDashoffset: c2 - c2 * c5.get() };
-      return obj;
-    }
-  }
-  E.__closure = { circumference: result, animatedProgress: sharedValue };
-  E.__workletHash = 3373122453897;
-  E.__initData = closure_15;
+  const tmpResult1 = quest(4050);
+  const fn2 = function l() {
+    return { strokeDashoffset: c2 - c2 * sharedValue.get() };
+  };
+  fn2.__closure = { circumference: result, animatedProgress: sharedValue };
+  fn2.__workletHash = 3373122453897;
+  fn2.__initData = closure_15;
   const items3 = [sharedValue, num, stateFromStores];
-  const animatedProps = obj5.useAnimatedProps(E);
-  const effect = num.useEffect(() => {
-    let obj = quest(_undefined[18]);
-    obj = {};
+  const animatedProps = quest(4050).useAnimatedProps(fn2);
+  const effect = obj2.useEffect(() => {
     let num = 500;
     if (stateFromStores) {
       num = 0;
     }
-    obj.duration = num;
-    const result = sharedValue.set(obj.withTiming(num, obj));
+    const result = sharedValue.set(quest(_undefined[18]).withTiming(num, { duration: num }));
     return () => {
-      quest(table[7]).cancelAnimation(outer1_5);
+      outer1_0(outer1_2[7]).cancelAnimation(maybeApplyNoTextColorForLightCustomTheme);
     };
   }, items3);
-  const items4 = [sharedValue1, tmp8, stateFromStores];
-  const effect1 = num.useEffect(() => {
+  const items4 = [sharedValue1, tmp9, stateFromStores];
+  const effect1 = obj2.useEffect(() => {
     if (!stateFromStores) {
       if (c4) {
-        let obj = quest(_undefined[18]);
-        obj = { duration: 500 };
-        const result = sharedValue1.set(obj.withTiming(1, obj));
+        const result = sharedValue1.set(quest(_undefined[18]).withTiming(1, { duration: 500 }));
         const current = ref.current;
-        if (null != current) {
+        if (current != null) {
           current.play();
         }
+        const obj = quest(_undefined[18]);
       }
     }
     const result1 = sharedValue1.set(0);
     const current2 = ref.current;
-    if (null != current2) {
+    if (current2 != null) {
       current2.reset();
     }
   }, items4);
-  obj = { style: items5, pointerEvents: "box-none" };
+  obj = { style: items5, pointerEvents: "box-none", children: null };
   items5 = [, , ];
-  ({ container: arr6[0], completionGlow: arr6[1] } = tmp13);
+  ({ container: arr6[0], completionGlow: arr6[1] } = tmp14);
   items5[2] = animatedStyle;
-  obj = { style: memo, pointerEvents: "none" };
-  obj1 = { ref, source: quest(14134), autoPlay: false, loop: false };
-  obj.children = callback(stateFromStores(5488), obj1);
+  obj = { style: memo, pointerEvents: "none", children: null };
+  obj1 = { ref, source: null, autoPlay: false, loop: false };
+  const tmpResult2 = quest(4050);
+  obj1[1] = quest(14156);
+  obj[2] = callback(stateFromStores(5506), obj1);
   const items6 = [callback(c4, obj), , , ];
-  obj2 = { style: tmp13.buttonWrapper };
-  obj3 = {};
-  const tmp19 = stateFromStores(5488);
-  obj3.icon = stateFromStores(14005);
-  obj3.onPress = callback;
-  const intl = quest(1212).intl;
-  obj3.accessibilityLabel = intl.string(quest(1212).t.JALI2K);
-  obj2.children = callback(stateFromStores(15826), obj3);
+  obj2 = { style: tmp14.buttonWrapper, children: null };
+  let obj3 = { icon: null, onPress: null, accessibilityLabel: null };
+  const tmp20 = stateFromStores(5506);
+  obj3[0] = stateFromStores(14026);
+  obj3[1] = callback;
+  const intl = tmp(1236).intl;
+  obj3[2] = intl.string(quest(1236).t.JALI2K);
+  obj2[1] = callback(stateFromStores(15861), obj3);
   items6[1] = callback(c4, obj2);
-  obj4 = { pointerEvents: "none", style: tmp13.canvas };
-  obj5 = { height: c11, width: c11 };
-  const obj6 = { cx: 16, cy: 16, r: 14.3, fill: "none", stroke: stateFromStores(689).unsafe_rawColors.OPACITY_32, strokeWidth: 3.4, strokeDasharray: result };
-  obj5.children = callback(quest(8507).Circle, obj6);
-  obj4.children = callback(quest(8507).Svg, obj5);
+  const obj4 = { pointerEvents: "none", style: tmp14.canvas, children: null };
+  const obj5 = { height: c11, width: c11, children: null };
+  const obj6 = { cx: 16, cy: 16, r: 14.3, fill: "none", stroke: null, strokeWidth: 3.4, strokeDasharray: null };
+  obj6[4] = stateFromStores(712).unsafe_rawColors.OPACITY_32;
+  obj6[6] = result;
+  obj5[2] = callback(quest(8531).Circle, obj6);
+  obj4[2] = callback(quest(8531).Svg, obj5);
   items6[2] = callback(c4, obj4);
-  const obj7 = { pointerEvents: "none", style: tmp13.canvas };
-  const obj8 = { height: c11, width: c11 };
-  const obj9 = { cx: 16, cy: 16, r: 14.3, fill: "none", stroke: tmp13.progressPath.color, strokeWidth: 3.4, strokeDasharray: result, animatedProps };
-  obj8.children = callback(closure_12, obj9);
-  obj7.children = callback(quest(8507).Svg, obj8);
+  const obj7 = { pointerEvents: "none", style: tmp14.canvas, children: null };
+  const obj8 = { height: c11, width: c11, children: null };
+  obj8[2] = callback(closure_12, { cx: 16, cy: 16, r: 14.3, fill: "none", stroke: tmp14.progressPath.color, strokeWidth: 3.4, strokeDasharray: result, animatedProps });
+  obj7[2] = callback(quest(8531).Svg, obj8);
   items6[3] = callback(c4, obj7);
-  obj.children = items6;
-  return callback2(stateFromStores(4026).View, obj);
+  obj[2] = items6;
+  return callback2(stateFromStores(4050).View, obj);
 }
-({ jsx: closure_9, jsxs: closure_10 } = jsxProd);
+let c3 = importAllResult;
+({ jsx: c9, jsxs: c10 } = jsxProd);
 let c11 = 32;
-let closure_12 = require("module_4026").createAnimatedComponent(require("inlineStyles").Circle);
-obj = { container: { position: "relative", width: 32, height: 32, justifyContent: "center", alignItems: "center" }, completionGlow: obj, canvas: { position: "absolute", transform: items } };
-obj = { shadowOffset: { width: 0, height: 0 }, shadowRadius: 12, shadowOpacity: 0, elevation: 4, shadowColor: "#30C77399" };
+let closure_12 = require("module_4050").createAnimatedComponent(require("inlineStyles").Circle);
+let obj = { container: { position: "relative", width: 32, height: 32, justifyContent: "center", alignItems: "center" }, completionGlow: { shadowOffset: { width: 0, height: 0 }, shadowRadius: 12, shadowOpacity: 0, elevation: 4, shadowColor: "#30C77399" }, canvas: { position: "absolute", transform: items }, progressPath: null, buttonWrapper: null, confetti: null };
 items = [{ rotate: "-90deg" }];
-obj.progressPath = { color: require("_createForOfIteratorHelperLoose").colors.STATUS_POSITIVE };
-obj.buttonWrapper = { position: "absolute", borderRadius: 16, overflow: "hidden" };
-obj.confetti = { position: "absolute" };
-let closure_13 = _createForOfIteratorHelperLoose.createStyles(obj);
+obj = { color: require("Themes").colors.STATUS_POSITIVE };
+obj[3] = obj;
+obj[4] = { position: "absolute", borderRadius: 16, overflow: "hidden" };
+obj[5] = { position: "absolute" };
+let closure_13 = createCacheKey.createStyles(obj);
 let closure_14 = { code: "function QuestActivityButtonTsx1(){const{glowOpacity}=this.__closure;return{shadowOpacity:glowOpacity.get()};}" };
 let closure_15 = { code: "function QuestActivityButtonTsx2(){const{circumference,animatedProgress}=this.__closure;return{strokeDashoffset:circumference-circumference*animatedProgress.get()};}" };
 const QUEST_ACTIVITY_UNENROLLED_MODAL_KEY = "QUEST_ACTIVITY_UNENROLLED_MODAL_KEY";
-let obj1 = { color: require("_createForOfIteratorHelperLoose").colors.STATUS_POSITIVE };
 const memoResult = importAllResult.memo(function QuestActivityButton(applicationId) {
   applicationId = applicationId.applicationId;
+  let stateFromStores;
+  let stateFromStores1;
+  let memo;
+  let stateFromStores2;
   let obj = applicationId(stateFromStores1[12]);
-  const items = [closure_6];
-  const stateFromStores = obj.useStateFromStores(items, () => outer1_6.quests);
-  const items1 = [closure_7];
-  stateFromStores1 = applicationId(stateFromStores1[12]).useStateFromStores(items1, () => outer1_7.getState().autoEnroll);
+  const items = [initializeState];
+  stateFromStores = obj.useStateFromStores(items, () => quests.quests);
+  const items1 = [set];
+  stateFromStores1 = applicationId(stateFromStores1[12]).useStateFromStores(items1, () => state.getState().autoEnroll);
   const items2 = [stateFromStores, applicationId];
   memo = memo.useMemo(() => {
     const eligibleQuestsForApplicationId = applicationId(stateFromStores1[24]).getEligibleQuestsForApplicationId(stateFromStores, applicationId, true);
     return eligibleQuestsForApplicationId.find((config) => {
       const features = config.config.features;
-      return features.includes(outer2_8.MOBILE_ACTIVITY_QUEST);
+      return features.includes(constants.MOBILE_ACTIVITY_QUEST);
     });
   }, items2);
   const obj2 = applicationId(stateFromStores1[12]);
-  const items3 = [closure_7];
-  const stateFromStores2 = applicationId(stateFromStores1[12]).useStateFromStores(items3, () => {
+  const items3 = [set];
+  stateFromStores2 = applicationId(stateFromStores1[12]).useStateFromStores(items3, () => {
     let id;
-    if (null != memo) {
+    if (memo != null) {
       id = memo.id;
     }
     return outer1_7.isDismissed(id);
   });
   const items4 = [memo, stateFromStores1, stateFromStores2];
   const effect = memo.useEffect(() => {
-    let tmp = null == memo;
-    if (!tmp) {
-      const userStatus = memo.userStatus;
+    let tmp2 = null == memo;
+    if (!tmp2) {
+      const userStatus = tmp.userStatus;
       let enrolledAt;
-      if (null != userStatus) {
+      if (userStatus != null) {
         enrolledAt = userStatus.enrolledAt;
       }
-      tmp = null != enrolledAt;
+      tmp2 = null != enrolledAt;
     }
-    if (!tmp) {
-      tmp = stateFromStores1;
+    if (!tmp2) {
+      tmp2 = stateFromStores1;
     }
-    if (!tmp) {
-      tmp = stateFromStores2;
+    if (!tmp2) {
+      tmp2 = stateFromStores2;
     }
-    if (!tmp) {
+    if (!tmp2) {
       let obj = stateFromStores(stateFromStores1[13]);
-      obj = { questId: memo.id };
-      obj.pushLazy(applicationId(stateFromStores1[15])(stateFromStores1[14], stateFromStores1.paths), obj, outer1_16);
+      obj = { questId: null };
+      obj[0] = tmp.id;
+      obj.pushLazy(applicationId(stateFromStores1[15])(stateFromStores1[14], stateFromStores1.paths), obj, outer1_17);
     }
   }, items4);
   let tmp6 = null;
   if (null != memo) {
-    obj = { quest: memo };
+    obj = { quest: null };
+    obj[0] = memo;
     tmp6 = callback(QuestActivityButtonInner, obj);
   }
   return tmp6;
 });
-let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/frames/panel/native/QuestActivityButton.tsx");
+let result = require("maybeApplyNoTextColorForLightCustomTheme").fileFinishedImporting("modules/frames/panel/native/QuestActivityButton.tsx");
 
 export default memoResult;

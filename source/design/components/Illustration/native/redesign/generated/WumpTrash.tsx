@@ -1,37 +1,54 @@
-// Module ID: 14866
-// Function ID: 113251
+// Module ID: 14892
+// Function ID: 14893
 // Name: getWumpTrashSource
-// Dependencies: [31, 27, 33, 6517, 14867, 14868, 4011, 2]
-// Exports: WumpTrash
+// Dependencies: [19, 17, 21, 6538, 14893, 14894, 4035, 2]
+// Exports: WumpTrash, getWumpTrashSource, useWumpTrashSource
 
-// Module 14866 (getWumpTrashSource)
-import "result";
+// Module 14892 (getWumpTrashSource)
+import "noop";
 import { Image } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
 
 const require = arg1;
-function getWumpTrashSource(theme) {
-  let obj = require(6517) /* getIllustrationSource */;
+const result = require("jsxProd").fileFinishedImporting("design/components/Illustration/native/redesign/generated/WumpTrash.tsx");
+
+export const getWumpTrashSource = function getWumpTrashSource(theme) {
+  let obj = require(6538) /* getIllustrationSource */;
   obj = {
     dark() {
-      return outer1_0(outer1_1[4]);
+      return callback(14893);
     },
     darker() {
-      return outer1_0(outer1_1[5]);
+      return callback(14894);
     }
   };
   return obj.getIllustrationSource(theme, obj);
-}
-function useWumpTrashSource() {
-  return getWumpTrashSource(require(4011) /* AccessibilityAnnouncer */.useThemeContext().theme);
-}
-const result = require("jsxProd").fileFinishedImporting("design/components/Illustration/native/redesign/generated/WumpTrash.tsx");
-
-export { getWumpTrashSource };
-export { useWumpTrashSource };
+};
+export const useWumpTrashSource = function useWumpTrashSource() {
+  let obj = require(4035) /* AccessibilityAnnouncer */;
+  obj = {
+    dark() {
+      return callback(14893);
+    },
+    darker() {
+      return callback(14894);
+    }
+  };
+  return require(6538) /* getIllustrationSource */.getIllustrationSource(obj.useThemeContext().theme, obj);
+};
 export const WumpTrash = function WumpTrash(arg0) {
-  const obj = {};
+  let obj = require(4035) /* AccessibilityAnnouncer */;
+  obj = {
+    dark() {
+      return callback(14893);
+    },
+    darker() {
+      return callback(14894);
+    }
+  };
+  obj = {};
+  const illustrationSource = require(6538) /* getIllustrationSource */.getIllustrationSource(obj.useThemeContext().theme, obj);
   const merged = Object.assign(arg0);
-  obj["source"] = useWumpTrashSource();
+  obj.source = illustrationSource;
   return <Image />;
 };

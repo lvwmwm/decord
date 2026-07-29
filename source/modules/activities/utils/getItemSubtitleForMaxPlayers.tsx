@@ -1,20 +1,21 @@
-// Module ID: 11299
-// Function ID: 87658
+// Module ID: 11323
+// Function ID: 11324
 // Name: getItemSubtitleForMaxPlayers
-// Dependencies: [1212, 2]
+// Dependencies: [1236, 2]
 // Exports: default, getItemSubtitleForMaxPlayersShort, getItemSubtitleForMaxPlayersShorter
 
-// Module 11299 (getItemSubtitleForMaxPlayers)
+// Module 11323 (getItemSubtitleForMaxPlayers)
 const result = require("set").fileFinishedImporting("modules/activities/utils/getItemSubtitleForMaxPlayers.tsx");
 
-export default function getItemSubtitleForMaxPlayers(count) {
-  if (count > 0) {
-    const intl2 = require(1212) /* getSystemLocale */.intl;
-    const obj = { count };
-    let formatToPlainStringResult = intl2.formatToPlainString(require(1212) /* getSystemLocale */.t["p/YmkR"], obj);
+export default function getItemSubtitleForMaxPlayers(arg0) {
+  if (arg0 > 0) {
+    const intl2 = require(1236) /* getSystemLocale */.intl;
+    const obj = { count: null };
+    obj[0] = arg0;
+    let formatToPlainStringResult = intl2.formatToPlainString(require(1236) /* getSystemLocale */.t["p/YmkR"], obj);
   } else {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    formatToPlainStringResult = intl.string(require(1212) /* getSystemLocale */.t.s1vQIL);
+    const intl = require(1236) /* getSystemLocale */.intl;
+    formatToPlainStringResult = intl.string(require(1236) /* getSystemLocale */.t.s1vQIL);
   }
   return formatToPlainStringResult;
 };
@@ -23,8 +24,8 @@ export const getItemSubtitleForMaxPlayersShort = function getItemSubtitleForMaxP
     const _HermesInternal = HermesInternal;
     let combined = "1 - " + arg0;
   } else {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    combined = intl.string(require(1212) /* getSystemLocale */.t.zMNEiF);
+    const intl = require(1236) /* getSystemLocale */.intl;
+    combined = intl.string(require(1236) /* getSystemLocale */.t.zMNEiF);
   }
   return combined;
 };
@@ -33,8 +34,8 @@ export const getItemSubtitleForMaxPlayersShorter = function getItemSubtitleForMa
     const _HermesInternal = HermesInternal;
     let combined = "1-" + arg0;
   } else {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    combined = intl.string(require(1212) /* getSystemLocale */.t.zMNEiF);
+    const intl = require(1236) /* getSystemLocale */.intl;
+    combined = intl.string(require(1236) /* getSystemLocale */.t.zMNEiF);
   }
   return combined;
 };

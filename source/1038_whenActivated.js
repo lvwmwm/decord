@@ -1,0 +1,22 @@
+// Module ID: 1038
+// Function ID: 1039
+// Name: whenActivated
+// Dependencies: [1039]
+
+// Module 1038 (whenActivated)
+const require = arg1;
+const dependencyMap = arg6;
+Object.defineProperty(arg5, Symbol.toStringTag, { value: "Module" });
+arg5.whenActivated = (arg0) => {
+  const _require = arg0;
+  const _document = _require(1039).WINDOW.document;
+  let prerendering;
+  if (_document != null) {
+    prerendering = _document.prerendering;
+  }
+  if (prerendering) {
+    const listener = globalThis.addEventListener("prerenderingchange", () => callback(), true);
+  } else {
+    arg0();
+  }
+};

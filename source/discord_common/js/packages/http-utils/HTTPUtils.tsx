@@ -1,88 +1,26 @@
-// Module ID: 507
-// Function ID: 6456
-// Name: _isNativeReflectConstruct
-// Dependencies: [7, 6, 15, 17, 18, 162, 4, 508, 561, 562, 563, 2, 564, 565]
-// Exports: getAPIBaseURL, rejectWithMigratedError, setAwaitOnline, setRejectWithMigratedError, setRequestPatch
+// Module ID: 530
+// Function ID: 531
+// Name: sendRequest
+// Dependencies: [4, 531, 584, 585, 586, 2, 587, 588]
+// Exports: getAPIBaseURL, getRateLimitFloorMs, isRateLimitedStatus, makeRateLimitedResponse, parseRetryAfter, rejectWithMigratedError, setAwaitOnline, setRejectWithMigratedError, setRequestPatch
 
-// Module 507 (_isNativeReflectConstruct)
-import _createForOfIteratorHelper from "_createForOfIteratorHelper";
-import log from "log";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
-import set from "_possibleConstructorReturn";
+// Module 530 (sendRequest)
+import set from "fails";
 
-const require = arg1;
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
-  }
-  const result = _isNativeReflectConstruct();
-}
-function isRateLimitedStatus(status) {
-  return set1.has(status);
-}
-function parseRetryAfter(retry_after, retry_after) {
-  let prop;
-  if (null != retry_after) {
-    prop = retry_after["retry-after"];
-  }
-  if (null == prop) {
-    let prop1;
-    if (null != retry_after) {
-      prop1 = retry_after["Retry-After"];
-    }
-    prop = prop1;
-  }
-  if ("string" === typeof prop) {
-    const _parseInt = parseInt;
-    const parsed = parseInt(prop, 10);
-    const _Number = Number;
-    if (Number.isFinite(parsed)) {
-      if (parsed > 0) {
-        return parsed;
-      }
-    }
-  }
-  if (null != retry_after) {
-    if ("object" === typeof retry_after) {
-      retry_after = retry_after.retry_after;
-      if ("number" === typeof retry_after) {
-        const _Number2 = Number;
-        if (Number.isFinite(retry_after)) {
-          if (retry_after > 0) {
-            return retry_after;
-          }
-        }
-      }
-    }
-  }
-}
-function getRateLimitFloorMs(headers, body) {
-  const tmp = parseRetryAfter(headers, body);
-  let num = 5;
-  if (null != tmp) {
-    num = tmp;
-  }
-  return 1000 * num;
-}
 function sendRequest(arg0, url) {
   let closure_0 = arg0;
   const importDefault = url;
   const dependencyMap = arg2;
-  let _createForOfIteratorHelper = arg3;
-  let log = arg4;
-  const promise = importDefault(508)[arg0](url.url);
+  let closure_3 = arg3;
+  let closure_4 = arg4;
+  const promise = importDefault(531)[arg0](url.url);
   if (null != url.onRequestCreated) {
     url.onRequestCreated(promise);
   }
   if (null != url.query) {
     let query = url.query;
     let tmp3 = query;
-    if ("object" === typeof query) {
+    if (typeof query !== "window") {
       let obj = {};
       let merged = Object.assign(query);
       const _Object = Object;
@@ -110,36 +48,36 @@ function sendRequest(arg0, url) {
     const result1 = promise.set("X-Audit-Log-Reason", encodeURIComponent(url.reason));
   }
   const attachments = url.attachments;
-  if (null != attachments) {
+  if (attachments != null) {
     const item = attachments.forEach((name) => {
       promise.attach(name.name, name.file, name.filename);
     });
   }
   const fields = url.fields;
-  if (null != fields) {
+  if (fields != null) {
     const item1 = fields.forEach((name) => {
       promise.field(name.name, name.value);
     });
   }
   if (null != url.context) {
-    const tmp18 = encodeProperties(url.context);
-    if (null != tmp18) {
-      const result2 = promise.set("X-Context-Properties", tmp18);
+    const tmp13 = encodeProperties(url.context);
+    if (null != tmp13) {
+      const result2 = promise.set("X-Context-Properties", tmp13);
     }
   }
-  let tmp20 = null != url.retried;
-  if (tmp20) {
-    tmp20 = 0 !== url.retried;
+  let tmp15 = null != url.retried;
+  if (tmp15) {
+    tmp15 = 0 !== url.retried;
   }
-  if (tmp20) {
+  if (tmp15) {
     const _HermesInternal = HermesInternal;
     const result3 = promise.set("X-Failed-Requests", "" + url.retried);
   }
-  let tmp23 = null != url.timeout;
-  if (tmp23) {
-    tmp23 = 0 !== url.timeout;
+  let tmp18 = null != url.timeout;
+  if (tmp18) {
+    tmp18 = 0 !== url.timeout;
   }
-  if (tmp23) {
+  if (tmp18) {
     promise.timeout(url.timeout);
   }
   if (url.binary) {
@@ -147,217 +85,306 @@ function sendRequest(arg0, url) {
   }
   if (null != url.onRequestProgress) {
     promise.on("progress", (arg0) => {
-      if (null != url.onRequestProgress) {
-        url.onRequestProgress(arg0);
+      const onRequestProgress = url.onRequestProgress;
+      if (onRequestProgress != null) {
+        onRequestProgress(arg0);
       }
     });
   }
   function retry() {
-    if (null != url.backoff) {
-      let backoff = url.backoff;
-    } else {
-      const tmp4 = url(561);
-      const prototype = tmp4.prototype;
-      backoff = new tmp4();
-    }
-    url.backoff = backoff;
-    let num2 = 0;
-    if (null != url.retried) {
-      num2 = url.retried;
-    }
-    url.retried = num2 + 1;
-    const backoff2 = url.backoff;
-    backoff2.fail(() => outer2_14(outer1_1.url).then(() => {
-      outer3_20(outer2_0, outer2_1, outer2_2, outer2_3, outer2_4);
-    }));
+
   }
   let prepareRequestResult;
-  if (null != c13) {
-    if (null != obj2.prepareRequest) {
-      prepareRequestResult = obj2.prepareRequest(promise);
+  if (c10 != null) {
+    const prepareRequest = c10.prepareRequest;
+    if (prepareRequest != null) {
+      prepareRequestResult = prepareRequest(promise);
     }
   }
-  const logger = prepareRequestResult;
   promise.ok((status) => null != status.status);
   promise.then((ok) => {
+    let body;
+    let headers;
     if (null != url.retries) {
-      url.retries = +url.retries - 1;
-      if (+url.retries > 0) {
-        if (outer1_9.has(ok.status)) {
-          return retry();
-        }
-      }
-    }
-    let obj = { ok: ok.ok, headers: ok.headers, body: ok.body, text: ok.text, status: ok.status, retryAfter: outer1_18(ok.headers, ok.body) };
-    outer1_22(url, obj);
-    let c0 = false;
-    function interceptRetry(arg0, arg1) {
-      let obj = {};
-      const merged = Object.assign(outer1_1);
-      obj = {};
-      const merged1 = Object.assign(outer1_1.headers);
-      const merged2 = Object.assign(arg0);
-      obj["headers"] = obj;
-      obj["interceptResponse"] = arg1;
-      let c0 = true;
-      outer2_20(c0, obj, outer1_2, outer1_3, outer1_4);
-    }
-    function interceptCancel(err) {
-      if (!c0) {
-        outer1_3(err);
-        if (null != outer1_4) {
-          const obj = { ok: false, hasErr: true, err };
-          outer1_4(obj);
-        }
-      }
-    }
-    let interceptResponseResult;
-    if (null != url) {
-      if (null != url.interceptResponse) {
-        interceptResponseResult = url.interceptResponse(ok, interceptRetry, interceptCancel);
-      }
-    }
-    if (true !== interceptResponseResult) {
-      let interceptResponseResult1;
-      if (null != outer1_13) {
-        if (null != obj5.interceptResponse) {
-          interceptResponseResult1 = obj5.interceptResponse(ok, interceptRetry, interceptCancel, closure_8);
-        }
-      }
-      if (true !== interceptResponseResult1) {
-        if (ok.ok) {
-          dependencyMap(obj);
-        } else {
-          if (url.oldFormErrors) {
-            let code;
-            if (null != obj) {
-              const body = obj.body;
-              if (null != body) {
-                code = body.code;
-              }
-            }
-            if (code === callback(562).INVALID_FORM_BODY_ERROR_CODE) {
-              const errors = obj.body.errors;
-              if (null != errors) {
-                obj.body = callback(563).convertSkemaError(errors);
-                const obj2 = callback(563);
-              }
-            }
+      tmp.retries = +tmp.retries - 1;
+      if (+tmp.retries > 0) {
+        if (set.has(ok.status)) {
+          if (typeof retry !== "find") {
+            HermesBuiltin.throwTypeError();
           }
-          if (url.rejectWithError) {
-            obj = { method: c0, url: url.url };
-            ({ ok: obj3.ok, status: obj3.status, body: obj3.body, text: obj3.text, headers: obj3.headers, retryAfter: obj3.retryAfter } = obj);
-            const prototype = outer1_11.prototype;
-            const tmp29 = new outer1_11(obj);
-            callback2(tmp29);
+          if (null != tmp.backoff) {
+            let backoff = tmp.backoff;
           } else {
-            callback2(obj);
+            backoff = new url(584)();
+          }
+          tmp.backoff = backoff;
+          let num5 = 0;
+          if (null != tmp.retried) {
+            num5 = tmp.retried;
+          }
+          tmp.retried = num5 + 1;
+          const backoff2 = tmp.backoff;
+          backoff2.fail(() => outer1_11(url.url).then(() => {
+            outer1_7(closure_0, closure_1, closure_2, closure_3, closure_4);
+          }));
+        }
+      }
+    }
+    let obj = { ok: ok.ok, headers: ok.headers, body: ok.body, text: ok.text, status: ok.status, retryAfter: null };
+    ({ headers, body } = ok);
+    let prop;
+    if (headers != null) {
+      prop = headers["retry-after"];
+    }
+    if (prop == null) {
+      let prop1;
+      if (headers != null) {
+        prop1 = headers["Retry-After"];
+      }
+      prop = prop1;
+    }
+    if (typeof prop !== "init") {
+      const _parseInt = parseInt;
+      let parsed = parseInt(prop, 10);
+      const _Number = Number;
+      obj[5] = parsed;
+      outer1_9(tmp, obj);
+      let c0 = false;
+      function interceptRetry(arg0, interceptResponse) {
+        let obj = {};
+        const merged = Object.assign(outer1_1);
+        obj = {};
+        const merged1 = Object.assign(outer1_1.headers);
+        const merged2 = Object.assign(arg0);
+        obj.headers = obj;
+        obj.interceptResponse = interceptResponse;
+        let c0 = true;
+        retry(c0, obj, outer1_2, outer1_3, outer1_4);
+      }
+      function interceptCancel(arg0) {
+        if (!c0) {
+          outer1_3(arg0);
+          if (outer1_4 != null) {
+            const obj = { ok: false, hasErr: true, err: null };
+            obj[2] = arg0;
+            tmp4(obj);
           }
         }
-        if (null != callback3) {
-          obj = { hasErr: false };
-          let merged = Object.assign(obj);
-          callback3(obj);
+      }
+      let interceptResponseResult;
+      if (tmp != null) {
+        const interceptResponse = tmp.interceptResponse;
+        if (interceptResponse != null) {
+          interceptResponseResult = interceptResponse(ok, interceptRetry, interceptCancel);
+        }
+      }
+      if (true !== interceptResponseResult) {
+        let interceptResponse2Result;
+        if (outer1_10 != null) {
+          const interceptResponse2 = tmp43.interceptResponse;
+          if (interceptResponse2 != null) {
+            interceptResponse2Result = interceptResponse2(ok, interceptRetry, interceptCancel, closure_8);
+          }
+        }
+        if (true !== interceptResponse2Result) {
+          if (ok.ok) {
+            dependencyMap(obj);
+          } else {
+            if (tmp.oldFormErrors) {
+              const body2 = obj.body;
+              let code;
+              if (body2 != null) {
+                code = body2.code;
+              }
+              if (code === callback(585).INVALID_FORM_BODY_ERROR_CODE) {
+                const errors = obj.body.errors;
+                if (null != errors) {
+                  obj.body = tmp17(586).convertSkemaError(errors);
+                  const tmp17Result = tmp17(586);
+                }
+              }
+              tmp17 = callback;
+            }
+            if (tmp.rejectWithError) {
+              obj = { method: null, url: null, ok: null, status: null, body: null, text: null, headers: null, retryAfter: null };
+              obj[0] = c0;
+              obj[1] = tmp.url;
+              ({ ok: obj3[2], status: obj3[3], body: obj3[4], text: obj3[5], headers: obj3[6], retryAfter: obj3[7] } = obj);
+              callback2(new obj(obj));
+            } else {
+              callback2(obj);
+            }
+          }
+          if (null != set) {
+            obj = { hasErr: false };
+            let merged = Object.assign(obj);
+            tmp30(obj);
+          }
+        }
+      }
+    }
+    if (null != body) {
+      if (typeof body !== "window") {
+        const retry_after = body.retry_after;
+        if (typeof retry_after !== "os") {
+          const _Number2 = Number;
+          if (Number.isFinite(retry_after)) {
+            if (retry_after > 0) {
+              parsed = retry_after;
+            }
+          }
         }
       }
     }
   }, (code) => {
     if (null != url.retries) {
-      url.retries = +url.retries - 1;
-      if (+url.retries > 0) {
+      tmp.retries = +tmp.retries - 1;
+      if (+tmp.retries > 0) {
         if ("ABORTED" !== code.code) {
-          retry();
+          if (typeof retry !== "find") {
+            HermesBuiltin.throwTypeError();
+          }
+          if (null != tmp.backoff) {
+            let backoff = tmp.backoff;
+          } else {
+            backoff = new url(584)();
+          }
+          tmp.backoff = backoff;
+          let num2 = 0;
+          if (null != tmp.retried) {
+            num2 = tmp.retried;
+          }
+          tmp.retried = num2 + 1;
+          const backoff2 = tmp.backoff;
+          backoff2.fail(() => outer1_11(url.url).then(() => {
+            outer1_7(closure_0, closure_1, closure_2, closure_3, closure_4);
+          }));
         }
       }
     }
-    outer1_22(url);
+    outer1_9(url);
     callback2(code);
-    if (null != callback3) {
-      const obj = { ok: false, hasErr: true, err: code };
-      callback3(obj);
+    if (null != closure_4) {
+      const obj = { ok: false, hasErr: true, err: null };
+      obj[2] = code;
+      tmp5(obj);
     }
   });
   const signal = url.signal;
-  if (null != signal) {
-    if (signal.aborted) {
-      promise.abort();
-    }
+  let aborted;
+  if (signal != null) {
+    aborted = signal.aborted;
   }
-  const signal2 = url.signal;
-  if (null != signal2) {
-    obj = { once: true };
-    const listener = signal2.addEventListener("abort", () => promise.abort(), obj);
-  }
-}
-function rateLimitExpirationHandler(url) {
-  const value = map.get(url);
-  if (null != value) {
-    const queue = value.queue;
-    const arr = queue.shift();
-    if (null == arr) {
-      logger.verbose("rateLimitExpirationHandler: removing key for", url);
-      map.delete(url);
-    } else {
-      logger.verbose("rateLimitExpirationHandler: moving to next record for ", url);
-      arr();
-    }
+  if (aborted) {
+    promise.abort();
   } else {
-    logger.verbose("rateLimitExpirationHandler: rate limit for", url, "expired, but record was already removed");
+    const signal2 = url.signal;
+    if (signal2 != null) {
+      const listener = signal2.addEventListener("abort", () => promise.abort(), { once: true });
+    }
   }
 }
 function cleanupRequestEntry(url, status) {
+  let body;
+  let headers;
   let closure_0 = url;
-  const value = map.get(url.url);
+  let obj = map;
+  let value = map.get(url.url);
   if (null != status) {
-    if (isRateLimitedStatus(status.status)) {
+    if (set1.has(status.status)) {
       let backoff;
-      if (null != value) {
+      if (value != null) {
         backoff = value.backoff;
       }
-      if (null == backoff) {
-        const tmp12 = importDefault(561);
-        const prototype = tmp12.prototype;
-        backoff = new tmp12(1000, 60000);
+      if (backoff == null) {
+        backoff = new importDefault(584)(1000, 60000);
       }
-      const failResult = backoff.fail(undefined, getRateLimitFloorMs(status.headers, status.body));
-      const _Date2 = Date;
-      const sum = Date.now() + failResult;
-      if (null != value) {
-        if (value.retryAfterTimestamp >= sum) {
-          logger.verbose("cleanupRequestEntry: already has rate limit for ", url.url);
+      ({ headers, body } = status);
+      let prop;
+      if (headers != null) {
+        prop = headers["retry-after"];
+      }
+      if (prop == null) {
+        let prop1;
+        if (headers != null) {
+          prop1 = headers["Retry-After"];
+        }
+        prop = prop1;
+      }
+      if (typeof prop !== "init") {
+        const _parseInt = parseInt;
+        let num4 = parseInt(prop, 10);
+        const _Number = Number;
+        if (num4 == null) {
+          num4 = 5;
+        }
+        const failResult = backoff.fail(undefined, 1000 * num4);
+        const _Date2 = Date;
+        const sum = Date.now() + failResult;
+        if (null != value) {
+          if (value.retryAfterTimestamp >= sum) {
+            logger.verbose("cleanupRequestEntry: already has rate limit for ", url.url);
+          }
+        }
+        if (null != value) {
+          logger.verbose("cleanupRequestEntry: extending rate limit for ", url.url);
+          const _clearTimeout = clearTimeout;
+          clearTimeout(value.timeoutId);
+        }
+        const _HermesInternal = HermesInternal;
+        logger.verbose("cleanupRequestEntry: rate limit for " + url.url + " retry after " + failResult + "ms");
+        const _setTimeout = setTimeout;
+        let queue;
+        const timerId = setTimeout(() => {
+          url = url.url;
+          const value = outer1_8.get(url);
+          if (null != value) {
+            const queue = value.queue;
+            const arr = queue.shift();
+            if (null == arr) {
+              outer1_3.verbose("rateLimitExpirationHandler: removing key for", url);
+              outer1_8.delete(url);
+            } else {
+              outer1_3.verbose("rateLimitExpirationHandler: moving to next record for ", url);
+              arr();
+            }
+          } else {
+            outer1_3.verbose("rateLimitExpirationHandler: rate limit for", url, "expired, but record was already removed");
+          }
+        }, failResult);
+        if (value != null) {
+          queue = value.queue;
+        }
+        if (queue == null) {
+          queue = [];
+        }
+        obj = { queue: null, retryAfterTimestamp: null, latestErrorMessage: null, status: null, timeoutId: null, backoff: null };
+        obj[0] = queue;
+        obj[1] = sum;
+        const body2 = status.body;
+        let message;
+        if (body2 != null) {
+          message = body2.message;
+        }
+        obj[2] = String(message);
+        obj[3] = status.status;
+        obj[4] = timerId;
+        obj[5] = backoff;
+        const result = obj.set(url.url, obj);
+      }
+      if (null != body) {
+        if (typeof body !== "window") {
+          const retry_after = body.retry_after;
+          if (typeof retry_after !== "os") {
+            const _Number2 = Number;
+            if (Number.isFinite(retry_after)) {
+              if (retry_after > 0) {
+                num4 = retry_after;
+              }
+            }
+          }
         }
       }
-      if (null != value) {
-        logger.verbose("cleanupRequestEntry: extending rate limit for ", url.url);
-        const _clearTimeout = clearTimeout;
-        clearTimeout(value.timeoutId);
-      }
-      const _HermesInternal = HermesInternal;
-      logger.verbose("cleanupRequestEntry: rate limit for " + url.url + " retry after " + failResult + "ms");
-      const _setTimeout = setTimeout;
-      const obj = {};
-      let queue;
-      const timerId = setTimeout(() => {
-        outer1_21(url.url);
-      }, failResult);
-      if (null != value) {
-        queue = value.queue;
-      }
-      if (null == queue) {
-        queue = [];
-      }
-      obj.queue = queue;
-      obj.retryAfterTimestamp = sum;
-      const body = status.body;
-      let message;
-      if (null != body) {
-        message = body.message;
-      }
-      obj.latestErrorMessage = String(message);
-      obj.status = status.status;
-      obj.timeoutId = timerId;
-      obj.backoff = backoff;
-      const result = map.set(url.url, obj);
     }
   }
   let tmp3 = null != value;
@@ -367,7 +394,188 @@ function cleanupRequestEntry(url, status) {
   }
   if (tmp3) {
     logger.verbose("cleanupRequestEntry: rate limit for ", url.url, "expired");
-    rateLimitExpirationHandler(url.url);
+    url = url.url;
+    value = obj.get(url);
+    if (null != value) {
+      const queue1 = value.queue;
+      let arr = queue1.shift();
+      if (null == arr) {
+        obj2.verbose("rateLimitExpirationHandler: removing key for", url);
+        obj.delete(url);
+      } else {
+        obj2.verbose("rateLimitExpirationHandler: moving to next record for ", url);
+        arr();
+      }
+    } else {
+      obj2.verbose("rateLimitExpirationHandler: rate limit for", url, "expired, but record was already removed");
+    }
+  }
+}
+function makeRequest(arg0, arg1, arg2) {
+  let closure_0 = arg0;
+  let closure_1 = arg1;
+  let closure_2 = arg2;
+  return new Promise((serializer, bindResult) => {
+    if (typeof obj !== "init") {
+      obj = { url: null, rejectWithError: false };
+      obj[0] = tmp;
+    }
+    const value = outer1_8.get(obj.url);
+    if (null != value) {
+      if (obj.failImmediatelyWhenRateLimited) {
+        const _Date = Date;
+        const _Math = Math;
+        obj = { status: null, body: null };
+        obj[0] = value.status;
+        obj = { message: null, retry_after: null };
+        obj[0] = value.latestErrorMessage;
+        obj[1] = Math.round((value.retryAfterTimestamp - Date.now()) / 1000);
+        obj[1] = obj;
+        bindResult(obj);
+        if (null != closure_2) {
+          const obj1 = { ok: true, hasErr: false, status: null, body: null, text: "", headers: null };
+          ({ status: obj3[2], body: obj3[3] } = obj);
+          obj1[5] = {};
+          closure_2(obj1);
+        }
+      }
+    }
+    if (null != value) {
+      outer1_3.verbose("makeRequest: queueing request for ", obj.url);
+      const queue = value.queue;
+      queue.push(outer1_7.bind(null, closure_0, obj, serializer, bindResult, closure_2));
+    } else {
+      outer1_7(closure_0, obj, serializer, bindResult, closure_2);
+    }
+  });
+}
+function encodeProperties(arg0) {
+  try {
+    const _Buffer = Buffer;
+    const _JSON = JSON;
+    return Buffer.from(JSON.stringify(arg0)).toString("base64");
+  } catch (err) {
+    return null;
+  }
+}
+const logger = new require("convertSkemaError").Logger("HTTPUtils");
+let set = new Set([502, 504, 507, 598, 599, 522, 523, 524]);
+const set1 = new Set([429, 503]);
+class HTTPResponseError extends Error {
+  constructor(arg0) {
+    ({ method, url, status } = global);
+    ({ ok, body, text, headers, retryAfter } = global);
+    substr = [...arguments].slice();
+    replaced = url.replace(/\d+/g, "xxx");
+    items = ["" + method.toUpperCase() + " " + replaced + " [" + status + "]", ...substr];
+    applyWithNewTargetResult = HermesBuiltin.applyWithNewTarget(items, new.target, new.target);
+    // ThrowIfThisInitialized (0x7c)
+    applyWithNewTargetResult.name = "HTTPResponseError";
+    applyWithNewTargetResult.method = method;
+    applyWithNewTargetResult.url = url;
+    applyWithNewTargetResult.ok = ok;
+    applyWithNewTargetResult.status = status;
+    applyWithNewTargetResult.body = body;
+    applyWithNewTargetResult.text = text;
+    applyWithNewTargetResult.headers = headers;
+    applyWithNewTargetResult.retryAfter = retryAfter;
+    return applyWithNewTargetResult;
+  }
+}
+const map = new Map();
+let bindResult = makeRequest.bind(null, "get");
+let bindResult1 = makeRequest.bind(null, "post");
+let bindResult2 = makeRequest.bind(null, "put");
+let bindResult3 = makeRequest.bind(null, "patch");
+let noop = makeRequest.bind(null, "del");
+if (global.isServerRendering) {
+  noop = function noop() {
+    return Promise.resolve({ ok: true, status: 200, headers: {}, body: null, text: "" });
+  };
+  bindResult3 = noop;
+  bindResult2 = noop;
+  bindResult1 = noop;
+  bindResult = noop;
+}
+let c10 = null;
+function awaitOnline() {
+  return Promise.resolve();
+}
+function migratedRejectEnabled() {
+  return true;
+}
+function isRateLimitedStatus(arg0) {
+  return set1.has(arg0);
+}
+function parseRetryAfter(retry_after, retry_after) {
+  let prop;
+  if (retry_after != null) {
+    prop = retry_after["retry-after"];
+  }
+  if (prop == null) {
+    let prop1;
+    if (retry_after != null) {
+      prop1 = retry_after["Retry-After"];
+    }
+    prop = prop1;
+  }
+  if (typeof prop !== "init") {
+    const _parseInt = parseInt;
+    const parsed = parseInt(prop, 10);
+    const _Number = Number;
+    if (Number.isFinite(parsed)) {
+      if (parsed > 0) {
+        return parsed;
+      }
+    }
+  }
+  if (null != retry_after) {
+    if (typeof retry_after !== "window") {
+      retry_after = retry_after.retry_after;
+      if (typeof retry_after !== "os") {
+        const _Number2 = Number;
+        if (Number.isFinite(retry_after)) {
+          if (retry_after > 0) {
+            return retry_after;
+          }
+        }
+      }
+    }
+  }
+}
+function getRateLimitFloorMs(retry_after, retry_after) {
+  let prop;
+  if (retry_after != null) {
+    prop = retry_after["retry-after"];
+  }
+  if (prop == null) {
+    let prop1;
+    if (retry_after != null) {
+      prop1 = retry_after["Retry-After"];
+    }
+    prop = prop1;
+  }
+  if (typeof prop !== "init") {
+    const _parseInt = parseInt;
+    let num2 = parseInt(prop, 10);
+    const _Number = Number;
+    if (num2 == null) {
+      num2 = 5;
+    }
+    return 1000 * num2;
+  }
+  if (null != retry_after) {
+    if (typeof retry_after !== "window") {
+      retry_after = retry_after.retry_after;
+      if (typeof retry_after !== "os") {
+        const _Number2 = Number;
+        if (Number.isFinite(retry_after)) {
+          if (retry_after > 0) {
+            num2 = retry_after;
+          }
+        }
+      }
+    }
   }
 }
 function makeRateLimitedResponse(status, message, retry_after) {
@@ -375,125 +583,25 @@ function makeRateLimitedResponse(status, message, retry_after) {
   obj = { message, retry_after };
   return obj;
 }
-function makeRequest(arg0, arg1, arg2) {
-  let closure_0 = arg0;
-  let closure_1 = arg1;
-  let closure_2 = arg2;
-  return new Promise((bindResult1, bindResult) => {
-    if ("string" === typeof obj) {
-      obj = {};
-      obj.url = obj;
-      obj.rejectWithError = false;
-    }
-    const value = outer1_12.get(obj.url);
-    if (null != value) {
-      if (obj.failImmediatelyWhenRateLimited) {
-        const _Date = Date;
-        const _Math = Math;
-        const tmp26 = outer1_23(value.status, value.latestErrorMessage, Math.round((value.retryAfterTimestamp - Date.now()) / 1000));
-        bindResult(tmp26);
-        if (null != closure_2) {
-          obj = { ok: true, hasErr: false, status: null, body: null, text: "" };
-          ({ status: obj2.status, body: obj2.body } = tmp26);
-          obj.headers = {};
-          closure_2(obj);
-        }
-      }
-    }
-    if (null != value) {
-      outer1_8.verbose("makeRequest: queueing request for ", obj.url);
-      const queue = value.queue;
-      queue.push(outer1_20.bind(null, closure_0, obj, bindResult1, bindResult, closure_2));
-    } else {
-      outer1_20(closure_0, obj, bindResult1, bindResult, closure_2);
-    }
-  });
-}
-function encodeProperties(arg0) {
-  return Buffer.from(JSON.stringify(arg0)).toString("base64");
-}
-let logger = new require("_inherits").Logger("HTTPUtils");
-let set = new Set([502, 504, 507, 598, 599, 522, 523, 524]);
-const set1 = new Set([429, 503]);
-const tmp6 = ((arg0) => {
-  class HTTPResponseError {
-    constructor(arg0, arg1) {
-      self = this;
-      ({ method, url, status } = arg0);
-      ({ ok, body, text, headers, retryAfter } = arg0);
-      substr = [...arguments].slice();
-      tmp2 = outer1_4(this, HTTPResponseError);
-      replaced = url.replace(/\d+/g, "xxx");
-      items = ["" + method.toUpperCase() + " " + replaced + " [" + status + "]", ...substr];
-      obj = outer1_6(HTTPResponseError);
-      tmp4 = outer1_5;
-      if (outer1_16()) {
-        _Reflect = Reflect;
-        tmp6 = outer1_6;
-        constructResult = Reflect.construct(obj, items, outer1_6(self).constructor);
-      } else {
-        constructResult = obj.apply(self, items);
-      }
-      tmp4Result = tmp4(self, constructResult);
-      tmp4Result.name = "HTTPResponseError";
-      tmp4Result.method = method;
-      tmp4Result.url = url;
-      tmp4Result.ok = ok;
-      tmp4Result.status = status;
-      tmp4Result.body = body;
-      tmp4Result.text = text;
-      tmp4Result.headers = headers;
-      tmp4Result.retryAfter = retryAfter;
-      return tmp4Result;
-    }
-  }
-  callback2(HTTPResponseError, arg0);
-  return callback(HTTPResponseError);
-})(require("_wrapNativeSuper")(Error));
-let closure_11 = tmp6;
-const map = new Map();
-let noop = makeRequest.bind(null, "get");
-let bindResult = makeRequest.bind(null, "post");
-let bindResult1 = makeRequest.bind(null, "put");
-let bindResult2 = makeRequest.bind(null, "patch");
-let bindResult3 = makeRequest.bind(null, "del");
-let obj = { get: noop, post: bindResult, put: bindResult1, patch: bindResult2, del: bindResult3 };
-if (global.isServerRendering) {
-  noop = function noop() {
-    const obj = { ok: true, status: 200, headers: {}, body: null, text: "" };
-    return Promise.resolve(obj);
-  };
-  bindResult = noop;
-  bindResult1 = noop;
-  bindResult2 = noop;
-  bindResult3 = noop;
-}
-let c13 = null;
-function awaitOnline() {
-  return Promise.resolve();
-}
-function migratedRejectEnabled() {
-  return true;
-}
 let result = set.fileFinishedImporting("../discord_common/js/packages/http-utils/HTTPUtils.tsx");
 
-export const INVALID_FORM_BODY_ERROR_CODE = require("_isNativeReflectConstruct").INVALID_FORM_BODY_ERROR_CODE;
+export const INVALID_FORM_BODY_ERROR_CODE = require("convertStringArrayToSkemaErrorItems").INVALID_FORM_BODY_ERROR_CODE;
 export const convertSkemaError = require("convertSkemaError").convertSkemaError;
 export const stringifyErrors = require("stringifyErrors").stringifyErrors;
-export const V6OrEarlierAPIError = require("APIError").APIError;
-export const V8APIError = require("_isNativeReflectConstruct").APIError;
+export const V6OrEarlierAPIError = require("getFieldMessage").APIError;
+export const V8APIError = require("convertStringArrayToSkemaErrorItems").APIError;
 export { isRateLimitedStatus };
 export const DEFAULT_RATE_LIMIT_RETRY_AFTER_SECS = 5;
-export const HTTPResponseError = tmp6;
+export { HTTPResponseError };
 export { parseRetryAfter };
 export { getRateLimitFloorMs };
 export { makeRateLimitedResponse };
-export const get = noop;
-export const post = bindResult;
-export const put = bindResult1;
-export const patch = bindResult2;
-export const del = bindResult3;
-export const HTTP = obj;
+export const get = bindResult;
+export const post = bindResult1;
+export const put = bindResult2;
+export const patch = bindResult3;
+export const del = noop;
+export const HTTP = { get: bindResult, post: bindResult1, put: bindResult2, patch: bindResult3, del: noop };
 export const getAPIBaseURL = function getAPIBaseURL(arg0) {
   let flag = arg0;
   if (arg0 === undefined) {
@@ -509,13 +617,13 @@ export const getAPIBaseURL = function getAPIBaseURL(arg0) {
   return text + str;
 };
 export function setRequestPatch(ApexExperiment) {
-  let closure_13 = ApexExperiment;
+  let closure_10 = ApexExperiment;
 }
 export function setAwaitOnline(arg0) {
-  let closure_14 = arg0;
+  let closure_11 = arg0;
 }
 export function setRejectWithMigratedError(arg0) {
-  let closure_15 = arg0;
+  let closure_12 = arg0;
 }
 export const rejectWithMigratedError = function rejectWithMigratedError() {
   return migratedRejectEnabled();

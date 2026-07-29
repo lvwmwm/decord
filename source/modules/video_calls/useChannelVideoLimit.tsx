@@ -1,12 +1,12 @@
-// Module ID: 8813
-// Function ID: 69573
+// Module ID: 8837
+// Function ID: 8838
 // Name: useChannelVideoLimit
-// Dependencies: [1838, 4238, 653, 566, 2]
+// Dependencies: [1862, 4262, 676, 589, 2]
 // Exports: default, getChannelVideoLimit
 
-// Module 8813 (useChannelVideoLimit)
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 8837 (useChannelVideoLimit)
+import createGuildRecordFromRust from "createGuildRecordFromRust";
+import getVoiceStatesForGuild from "getVoiceStatesForGuild";
 import { ChannelTypes } from "ME";
 
 const require = arg1;
@@ -14,30 +14,40 @@ let result = require("ME").fileFinishedImporting("modules/video_calls/useChannel
 
 export default function useChannelVideoLimit(arg0) {
   const _require = arg0;
-  const items = [_isNativeReflectConstruct, _createForOfIteratorHelperLoose];
+  const items = [getVoiceStatesForGuild, createGuildRecordFromRust];
   const items1 = [arg0];
-  return _require(566).useStateFromStoresObject(items, () => {
+  return _require(589).useStateFromStoresObject(items, () => {
     const result = outer1_3.countVoiceStatesForChannel(guildId.id);
     const guild = outer1_2.getGuild(guildId.getGuildId());
     if (null == guild) {
       let obj = { reachedLimit: false, limit: -1 };
     } else if (guildId.type === outer1_4.GUILD_STAGE_VOICE) {
-      obj = { reachedLimit: result > guild.maxStageVideoChannelUsers, limit: guild.maxStageVideoChannelUsers };
+      obj = { reachedLimit: null, limit: null };
+      obj[0] = result > guild.maxStageVideoChannelUsers;
+      obj[1] = guild.maxStageVideoChannelUsers;
     } else {
-      obj = { reachedLimit: guild.maxVideoChannelUsers > 0 && result > guild.maxVideoChannelUsers, limit: guild.maxVideoChannelUsers };
+      obj = { reachedLimit: null, limit: null };
+      obj[0] = guild.maxVideoChannelUsers > 0 && result > guild.maxVideoChannelUsers;
+      obj[1] = guild.maxVideoChannelUsers;
+      const tmp5 = guild.maxVideoChannelUsers > 0 && result > guild.maxVideoChannelUsers;
     }
     return obj;
   }, items1);
 };
 export const getChannelVideoLimit = function getChannelVideoLimit(channel) {
-  const result = _isNativeReflectConstruct.countVoiceStatesForChannel(channel.id);
+  const result = getVoiceStatesForGuild.countVoiceStatesForChannel(channel.id);
   guild = guild.getGuild(channel.getGuildId());
   if (null == guild) {
     let obj = { reachedLimit: false, limit: -1 };
   } else if (channel.type === ChannelTypes.GUILD_STAGE_VOICE) {
-    obj = { reachedLimit: result > guild.maxStageVideoChannelUsers, limit: guild.maxStageVideoChannelUsers };
+    obj = { reachedLimit: null, limit: null };
+    obj[0] = result > guild.maxStageVideoChannelUsers;
+    obj[1] = guild.maxStageVideoChannelUsers;
   } else {
-    obj = { reachedLimit: guild.maxVideoChannelUsers > 0 && result > guild.maxVideoChannelUsers, limit: guild.maxVideoChannelUsers };
+    obj = { reachedLimit: null, limit: null };
+    obj[0] = guild.maxVideoChannelUsers > 0 && result > guild.maxVideoChannelUsers;
+    obj[1] = guild.maxVideoChannelUsers;
+    const tmp4 = guild.maxVideoChannelUsers > 0 && result > guild.maxVideoChannelUsers;
   }
   return obj;
 };

@@ -1,14 +1,14 @@
-// Module ID: 5940
-// Function ID: 52512
+// Module ID: 5959
+// Function ID: 5960
 // Name: ttiRecorded
-// Dependencies: [686, 2]
+// Dependencies: [709, 2]
 // Exports: ttiRecorded
 
-// Module 5940 (ttiRecorded)
+// Module 5959 (ttiRecorded)
 const result = require("set").fileFinishedImporting("modules/tti_analytics/native/PerformanceAnalyticsActionCreators.tsx");
 
-export const ttiRecorded = function ttiRecorded(diff) {
-  let obj = importDefault(686);
-  obj = { type: "TTI_RECORDED", tti: diff };
+export const ttiRecorded = function ttiRecorded(closure_5) {
+  let obj = importDefault(709);
+  obj = { type: "TTI_RECORDED", tti: closure_5 };
   obj.dispatch(obj);
 };

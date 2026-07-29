@@ -1,48 +1,51 @@
-// Module ID: 12415
-// Function ID: 96354
-// Dependencies: [31, 1850, 3817, 5831, 1852, 33, 4165, 689, 566, 1390, 6537, 2]
+// Module ID: 12437
+// Function ID: 12438
+// Dependencies: [19, 1874, 3841, 5849, 1876, 21, 4189, 712, 589, 1414, 6558, 2]
 
-// Module 12415
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_4 from "_isNativeReflectConstruct";
-import closure_5 from "_isNativeReflectConstruct";
+// Module 12437
+import mergeGuildAvatar from "mergeGuildAvatar";
+import reset from "reset";
+import addEntitlement from "addEntitlement";
 import { PREMIUM_SUBSCRIPTION_APPLICATION as closure_6 } from "GuildFeatures";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import importAllResult from "result";
+import createCacheKey from "createCacheKey";
+import importAllResult from "noop";
 
 const require = arg1;
-let obj = {};
-obj = { borderRadius: require("_createForOfIteratorHelperLoose").modules.mobile.TABLE_ROW_BORDER_RADIUS };
-obj.creditList = obj;
-let closure_8 = _createForOfIteratorHelperLoose.createStyles(obj);
-const memoResult = require("result").memo(function BuyNitroAccountCredit() {
-  let obj = require(566) /* initialize */;
-  const items = [closure_5];
+let obj = { creditList: null };
+obj = { borderRadius: require("Themes").modules.mobile.TABLE_ROW_BORDER_RADIUS };
+obj[0] = obj;
+let closure_8 = createCacheKey.createStyles(obj);
+const memoResult = require("noop").memo(function BuyNitroAccountCredit() {
+  let obj = require(589) /* initialize */;
+  const items = [addEntitlement];
   const stateFromStores = obj.useStateFromStores(items, () => {
-    let forApplication = outer1_5.getForApplication(outer1_6);
-    if (null == forApplication) {
+    forApplication = forApplication.getForApplication(closure_6);
+    if (forApplication == null) {
       const _Set = Set;
       forApplication = new Set();
     }
     return forApplication;
-  }, [], require(1390) /* _createForOfIteratorHelperLoose */.areSetsEqual);
+  }, [], require(1414) /* areSetsEqual */.areSetsEqual);
   const tmp = callback();
-  const items1 = [closure_4];
-  const stateFromStores1 = require(566) /* initialize */.useStateFromStores(items1, () => outer1_4.getPremiumTypeSubscription());
-  const obj2 = require(566) /* initialize */;
-  const items2 = [_isNativeReflectConstruct];
-  const stateFromStores2 = require(566) /* initialize */.useStateFromStores(items2, () => {
-    const currentUser = outer1_3.getCurrentUser();
-    let result;
-    if (null != currentUser) {
-      result = currentUser.isPremiumWithPremiumGroup();
+  const items1 = [reset];
+  const stateFromStores1 = require(589) /* initialize */.useStateFromStores(items1, () => premiumTypeSubscription.getPremiumTypeSubscription());
+  const obj2 = require(589) /* initialize */;
+  const items2 = [mergeGuildAvatar];
+  const stateFromStores2 = require(589) /* initialize */.useStateFromStores(items2, () => {
+    currentUser = currentUser.getCurrentUser();
+    let flag;
+    if (currentUser != null) {
+      flag = currentUser.isPremiumWithPremiumGroup();
     }
-    return null != result && result;
+    if (flag == null) {
+      flag = false;
+    }
+    return flag;
   });
   obj = { creditListContainerStyle: tmp.creditList, currentSubscription: stateFromStores1, entitlements: stateFromStores, hasPremiumGroup: stateFromStores2 };
-  return jsx(importDefault(6537), { creditListContainerStyle: tmp.creditList, currentSubscription: stateFromStores1, entitlements: stateFromStores, hasPremiumGroup: stateFromStores2 });
+  return jsx(importDefault(6558), { creditListContainerStyle: tmp.creditList, currentSubscription: stateFromStores1, entitlements: stateFromStores, hasPremiumGroup: stateFromStores2 });
 });
-let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/premium_marketing/native/components/BuyNitroAccountCredit.tsx");
+const result = require("reset").fileFinishedImporting("modules/premium_marketing/native/components/BuyNitroAccountCredit.tsx");
 
 export default memoResult;

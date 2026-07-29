@@ -1,97 +1,94 @@
-// Module ID: 11191
-// Function ID: 86809
+// Module ID: 11215
+// Function ID: 11216
 // Name: useActivityShelfItemsSorting
-// Dependencies: [31, 1331, 7993, 477, 1882, 2]
+// Dependencies: [19, 1355, 8018, 500, 1906, 2]
 // Exports: default
 
-// Module 11191 (useActivityShelfItemsSorting)
-import result from "result";
+// Module 11215 (useActivityShelfItemsSorting)
+import noop from "noop";
 
 const require = arg1;
 const result = require("getPlatform").fileFinishedImporting("modules/activities/useActivityShelfItemsSorting.tsx");
 
 export default function useActivityShelfItemsSorting(arg0) {
   const _require = arg0;
-  const FrecencyUserSettingsActionCreators = _require(1331).FrecencyUserSettingsActionCreators;
+  const FrecencyUserSettingsActionCreators = _require(1355).FrecencyUserSettingsActionCreators;
   const ifNecessary = FrecencyUserSettingsActionCreators.loadIfNecessary();
   let items = [arg0];
   return React.useMemo(() => {
     let items = [];
-    let item = items.forEach((application) => items.push(application.application.id));
+    let items2 = items;
+    const item = items2.forEach((application) => items2.push(application.application.id));
     const items1 = [...items];
     const sorted = items1.sort((arg0, arg1) => {
-      const items = arg0;
+      const items2 = arg0;
       let closure_1 = arg1;
       let num = 1;
-      if (findIndexResult < items.findIndex((arg0) => arg0 === closure_1)) {
+      if (findIndexResult < items2.findIndex((arg0) => arg0 === closure_1)) {
         num = -1;
       }
       return num;
     });
-    return (function applySorting(items, items1) {
-      items = [...items];
-      let c1 = 0;
-      const item = items1.forEach((arg0) => {
-        let items = arg0;
-        const findIndexResult = items.findIndex((application) => application.application.id === items);
-        if (-1 !== findIndexResult) {
-          items.splice(findIndexResult, 1);
-          items = [];
-          let arraySpreadResult = HermesBuiltin.arraySpread(items.slice(0, closure_1), 0);
-          items[arraySpreadResult] = items[findIndexResult];
-          const sum = arraySpreadResult + 1;
-          arraySpreadResult = HermesBuiltin.arraySpread(items.slice(closure_1), sum);
-          closure_1 = closure_1 + 1;
-        }
-      });
-      const mapped = items.map((arg0, arg1) => {
-        const items = [arg0, arg1];
-        return items;
-      });
-      const found = mapped.filter((arg0) => {
-        let tmp;
-        [tmp] = arg0;
-        const embeddedActivityConfig = tmp.application.embeddedActivityConfig;
-        let label_type;
-        if (null != embeddedActivityConfig) {
-          const obj = items(outer3_2[3]);
-          const tmp7 = embeddedActivityConfig.client_platform_config[outer3_1(outer3_2[2])(undefined, obj.getOS(obj))];
-          if (null != tmp7) {
-            label_type = tmp7.label_type;
-          }
-          const tmp5 = outer3_1(outer3_2[2]);
-        }
-        let tmp8 = null != label_type;
-        if (tmp8) {
-          let tmp11 = label_type === items(outer3_2[4]).EmbeddedActivityLabelTypes.NEW;
-          if (!tmp11) {
-            tmp11 = label_type === items(outer3_2[4]).EmbeddedActivityLabelTypes.UPDATED;
-          }
-          tmp8 = tmp11;
-        }
-        return tmp8;
-      });
-      const item1 = found.forEach((arg0) => {
-        let tmp;
-        let tmp2;
-        [tmp, tmp2] = arg0;
-        let diff = tmp2;
-        if (null != tmp.application.embeddedActivityConfig) {
-          diff = tmp2;
-          if (null != tmp.application.embeddedActivityConfig.shelf_rank) {
-            diff = tmp.application.embeddedActivityConfig.shelf_rank - 1;
-          }
-        }
-        if (diff < tmp2) {
-          items.splice(tmp2, 1);
-          items = [];
-          let arraySpreadResult = HermesBuiltin.arraySpread(items.slice(0, diff), 0);
-          items[arraySpreadResult] = items[tmp2];
-          const sum = arraySpreadResult + 1;
-          arraySpreadResult = HermesBuiltin.arraySpread(items.slice(diff), sum);
-        }
-      });
+    items2 = undefined;
+    let c1;
+    items2 = [...items2];
+    c1 = 0;
+    const item1 = items1.forEach((arg0) => {
+      let items = arg0;
+      const findIndexResult = items.findIndex((application) => application.application.id === items);
+      if (-1 !== findIndexResult) {
+        items.splice(findIndexResult, 1);
+        items = [];
+        let arraySpreadResult = HermesBuiltin.arraySpread(items.slice(0, closure_1), 0);
+        items[arraySpreadResult] = items[findIndexResult];
+        arraySpreadResult = HermesBuiltin.arraySpread(items.slice(closure_1), arraySpreadResult + 1);
+        closure_1 = closure_1 + 1;
+      }
+    });
+    const mapped = items2.map((arg0, arg1) => {
+      const items = [arg0, arg1];
       return items;
-    })(items, items1);
+    });
+    const found = mapped.filter((arg0) => {
+      let tmp;
+      [tmp] = arg0;
+      const embeddedActivityConfig = tmp.application.embeddedActivityConfig;
+      let label_type;
+      if (embeddedActivityConfig != null) {
+        const obj = items2(500);
+        const tmp7 = embeddedActivityConfig.client_platform_config[v0(8018)(undefined, obj.getOS(obj))];
+        if (tmp7 != null) {
+          label_type = tmp7.label_type;
+        }
+        const tmp5 = v0(8018);
+      }
+      let tmp8 = null != label_type;
+      if (tmp8) {
+        tmp8 = label_type === items2(1906).EmbeddedActivityLabelTypes.NEW || label_type === items2(1906).EmbeddedActivityLabelTypes.UPDATED;
+        const tmp11 = label_type === items2(1906).EmbeddedActivityLabelTypes.NEW || label_type === items2(1906).EmbeddedActivityLabelTypes.UPDATED;
+        const tmp9 = items2;
+      }
+      return tmp8;
+    });
+    const item2 = found.forEach((arg0) => {
+      let tmp;
+      let tmp2;
+      [tmp, tmp2] = arg0;
+      let diff = tmp2;
+      if (null != tmp.application.embeddedActivityConfig) {
+        diff = tmp2;
+        if (null != tmp.application.embeddedActivityConfig.shelf_rank) {
+          diff = tmp.application.embeddedActivityConfig.shelf_rank - 1;
+        }
+      }
+      if (diff < tmp2) {
+        items.splice(tmp2, 1);
+        items = [];
+        let arraySpreadResult = HermesBuiltin.arraySpread(items.slice(0, diff), 0);
+        items[arraySpreadResult] = items[tmp2];
+        arraySpreadResult = HermesBuiltin.arraySpread(items.slice(diff), arraySpreadResult + 1);
+      }
+    });
+    return items2;
   }, items);
 };

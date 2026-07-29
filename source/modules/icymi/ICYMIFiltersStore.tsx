@@ -1,98 +1,45 @@
-// Module ID: 8158
-// Function ID: 64824
-// Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 6138, 566, 686, 2]
+// Module ID: 8182
+// Function ID: 8183
+// Name: initialize
+// Dependencies: [589, 6156, 709, 2]
 
-// Module 8158 (_isNativeReflectConstruct)
-import initialize from "initialize";
-import dispatcher from "dispatcher";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
+// Module 8182 (initialize)
+import { DeviceSettingsStore } from "initialize";
 
 const require = arg1;
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
-  }
-  const result = _isNativeReflectConstruct();
+let closure_2 = {};
+class ICYMIFiltersStore extends DeviceSettingsStore {
 }
-let closure_7 = {};
-let tmp2 = ((DeviceSettingsStore) => {
-  class ICYMIFiltersStore {
-    constructor() {
-      self = this;
-      tmp = outer1_2(this, ICYMIFiltersStore);
-      obj = outer1_5(ICYMIFiltersStore);
-      tmp2 = outer1_4;
-      if (outer1_8()) {
-        tmp6 = globalThis;
-        _Reflect = Reflect;
-        tmp7 = outer1_5;
-        tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, outer1_5(self).constructor);
-      } else {
-        tmp3 = arguments;
-        tmp4 = arguments;
-        constructResult = obj(...arguments);
-      }
-      return tmp2(self, constructResult);
-    }
+const prototype = ICYMIFiltersStore.prototype;
+prototype["initialize"] = function initialize(arg0) {
+  let obj = arg0;
+  if (arg0 == null) {
+    obj = {};
   }
-  callback2(ICYMIFiltersStore, DeviceSettingsStore);
-  let obj = {
-    key: "initialize",
-    value(arg0) {
-      let obj = arg0;
-      if (null == arg0) {
-        obj = {};
-      }
-      const outer1_7 = obj;
-    }
-  };
-  const items = [obj, , , , ];
-  obj = {
-    key: "filterStaffContent",
-    value() {
-      return true === outer1_7.filterStaffContent;
-    }
-  };
-  items[1] = obj;
-  obj = {
-    key: "getDoubleTapBehavior",
-    value() {
-      let DEFAULT = outer1_7.doubleTapBehavior;
-      if (null == DEFAULT) {
-        DEFAULT = ICYMIFiltersStore(outer1_1[5]).GravityICYMIDoubleTapBehavior.DEFAULT;
-      }
-      return DEFAULT;
-    }
-  };
-  items[2] = obj;
-  items[3] = {
-    key: "getState",
-    value() {
-      return outer1_7;
-    }
-  };
-  items[4] = {
-    key: "getUserAgnosticState",
-    value() {
-      return outer1_7;
-    }
-  };
-  return callback(ICYMIFiltersStore, items);
-})(require("initialize").DeviceSettingsStore);
-tmp2.displayName = "ICYMIFiltersStore";
-tmp2.persistKey = "ICYMIFiltersStore";
-tmp2 = new tmp2(require("dispatcher"), {
+};
+prototype["filterStaffContent"] = function filterStaffContent() {
+  return true === closure_2.filterStaffContent;
+};
+prototype["getDoubleTapBehavior"] = function getDoubleTapBehavior() {
+  let DEFAULT = closure_2.doubleTapBehavior;
+  if (DEFAULT == null) {
+    DEFAULT = require(6156) /* MessageEmbedTypes */.GravityICYMIDoubleTapBehavior.DEFAULT;
+  }
+  return DEFAULT;
+};
+prototype["getState"] = function getState() {
+  return closure_2;
+};
+prototype["getUserAgnosticState"] = function getUserAgnosticState() {
+  return closure_2;
+};
+ICYMIFiltersStore.displayName = "ICYMIFiltersStore";
+ICYMIFiltersStore.persistKey = "ICYMIFiltersStore";
+const iCYMIFiltersStore = new ICYMIFiltersStore(require("dispatcher"), {
   SET_ICYMI_FILTERS: function handleFilters(filters) {
     filters = filters.filters;
   }
 });
-let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/icymi/ICYMIFiltersStore.tsx");
+const result = require("dispatcher").fileFinishedImporting("modules/icymi/ICYMIFiltersStore.tsx");
 
-export default tmp2;
+export default iCYMIFiltersStore;

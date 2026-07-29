@@ -1,25 +1,26 @@
-// Module ID: 10221
-// Function ID: 78802
+// Module ID: 10242
+// Function ID: 10243
 // Name: Notifications
-// Dependencies: [31, 10222, 33, 566, 10255, 2]
+// Dependencies: [19, 10243, 21, 589, 10276, 2]
 // Exports: default
 
-// Module 10221 (Notifications)
-import "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 10242 (Notifications)
+import "noop";
+import handleAlertMessage from "handleAlertMessage";
 import { jsx } from "jsxProd";
 
 const require = arg1;
 const result = require("jsxProd").fileFinishedImporting("components_native/common/Notifications.tsx");
 
 export default function Notifications() {
-  let obj = require(566) /* initialize */;
-  const items = [_isNativeReflectConstruct];
-  const stateFromStores = obj.useStateFromStores(items, () => outer1_3.getCurrentNotification());
-  let tmp2 = null;
+  let obj = require(589) /* initialize */;
+  const items = [handleAlertMessage];
+  const stateFromStores = obj.useStateFromStores(items, () => currentNotification.getCurrentNotification());
+  let tmp3 = null;
   if (null != stateFromStores) {
-    obj = { notification: stateFromStores };
-    tmp2 = jsx(importDefault(10255), { notification: stateFromStores }, stateFromStores.key);
+    obj = { notification: null };
+    obj[0] = stateFromStores;
+    tmp3 = jsx(importDefault(10276), { notification: null }, stateFromStores.key);
   }
-  return tmp2;
+  return tmp3;
 };

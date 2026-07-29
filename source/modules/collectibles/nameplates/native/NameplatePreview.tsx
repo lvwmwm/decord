@@ -1,45 +1,40 @@
-// Module ID: 9801
-// Function ID: 76053
+// Module ID: 9823
+// Function ID: 9824
 // Name: NameplatePreview
-// Dependencies: [31, 27, 4157, 1918, 33, 4165, 689, 1874, 9062, 7912, 566, 4004, 4396, 1273, 8046, 8356, 8357, 4161, 2]
+// Dependencies: [19, 17, 4181, 1942, 21, 4189, 712, 1898, 9086, 7937, 589, 4028, 4419, 1297, 8070, 8380, 8381, 4185, 2]
 // Exports: NameplatePreview
 
-// Module 9801 (NameplatePreview)
-import result from "result";
-import { View } from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_6 from "_isNativeReflectConstruct";
+// Module 9823 (NameplatePreview)
+import noop from "noop";
+import { View } from "Text";
+import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
+import trackCommunicationDisabled from "trackCommunicationDisabled";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_7;
-let closure_8;
+let error;
+let metroImportAll;
 const require = arg1;
-({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-let closure_9 = _createForOfIteratorHelperLoose.createStyles((arg0) => {
-  let obj = {};
-  obj = { borderRadius: null, padding: null, flexDirection: "row", alignItems: "center", width: "100%" };
+({ jsx: error, jsxs: metroImportAll } = jsxProd);
+let closure_9 = createCacheKey.createStyles((arg0) => {
   let num = 0;
   if (arg0) {
-    num = importDefault(689).radii.sm;
+    num = importDefault(712).radii.sm;
   }
-  obj.borderRadius = num;
-  obj.padding = importDefault(689).space.PX_8;
-  obj.backgroundColor = importDefault(689).colors.BACKGROUND_BASE_LOWEST;
-  obj.container = obj;
-  obj = {};
-  let num3 = 0;
+  let obj = { container: null, nameplate: null, avatar: null, content: null };
+  obj = { borderRadius: num, padding: importDefault(712).space.PX_8, flexDirection: "row", alignItems: "center", width: "100%", backgroundColor: importDefault(712).colors.BACKGROUND_BASE_LOWEST };
+  obj[0] = obj;
+  let num2 = 0;
   if (arg0) {
-    num3 = importDefault(689).radii.sm;
+    num2 = tmp3(712).radii.sm;
   }
-  obj.borderRadius = num3;
-  obj.nameplate = obj;
-  obj.avatar = { borderRadius: importDefault(689).radii.round, marginRight: importDefault(689).space.PX_8 };
-  const obj1 = { borderRadius: importDefault(689).radii.round, marginRight: importDefault(689).space.PX_8 };
-  obj.content = { flex: 1, paddingRight: importDefault(689).space.PX_40 };
+  obj[1] = { borderRadius: num2 };
+  obj = { borderRadius: tmp3(712).radii.round, marginRight: tmp3(712).space.PX_8 };
+  obj[2] = obj;
+  obj[3] = { flex: 1, paddingRight: importDefault(712).space.PX_40 };
   return obj;
 });
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/collectibles/nameplates/native/NameplatePreview.tsx");
+const result = require("maybeApplyNoTextColorForLightCustomTheme").fileFinishedImporting("modules/collectibles/nameplates/native/NameplatePreview.tsx");
 
 export const NameplatePreview = function NameplatePreview(aria_hidden) {
   let nameplate;
@@ -64,80 +59,89 @@ export const NameplatePreview = function NameplatePreview(aria_hidden) {
   const tmp = callback2(flag);
   dependencyMap = tmp;
   if (null != nameplate) {
-    let obj = user(1874);
+    let obj = user(1898);
     nameplateData = obj.getNameplateData(nameplate);
   }
-  let obj1 = user(9062);
+  let obj1 = user(9086);
   const avatarDecoration = obj1.useAvatarDecoration(user, guildId);
-  const pendingAvatarDecoration = guildId(7912)({ guildId }).pendingAvatarDecoration;
-  let obj2 = user(566);
-  const items = [_isNativeReflectConstruct];
-  stateFromStores = obj2.useStateFromStores(items, () => outer1_5.useReducedMotion);
-  let obj3 = user(566);
-  const items1 = [closure_6];
+  const pendingAvatarDecoration = guildId(7937)({ guildId }).pendingAvatarDecoration;
+  let obj2 = user(589);
+  const items = [maybeApplyNoTextColorForLightCustomTheme];
+  stateFromStores = obj2.useStateFromStores(items, () => useReducedMotion.useReducedMotion);
+  let obj3 = user(589);
+  const items1 = [trackCommunicationDisabled];
   const stateFromStores1 = obj3.useStateFromStores(items1, () => {
     let member = null;
     if (null != guildId) {
       member = null;
       if (null != user) {
-        member = outer1_6.getMember(guildId, user.id);
+        member = outer1_6.getMember(tmp, tmp3.id);
       }
     }
     return member;
   });
-  let obj4 = guildId(4004);
+  let obj4 = guildId(4028);
   const name = obj4.useName(user);
-  if (null == pendingGlobalName) {
-    let tmp8 = name;
+  if (pendingGlobalName == null) {
+    let tmp11 = name;
     if (null != guildId) {
       let nick;
-      if (null != stateFromStores1) {
+      if (stateFromStores1 != null) {
         nick = stateFromStores1.nick;
       }
-      tmp8 = name;
+      tmp11 = name;
       if (null != nick) {
         let nick1;
-        if (null != stateFromStores1) {
+        if (stateFromStores1 != null) {
           nick1 = stateFromStores1.nick;
         }
-        tmp8 = nick1;
+        tmp11 = nick1;
       }
     }
-    pendingGlobalName = tmp8;
+    pendingGlobalName = tmp11;
   }
-  let tmp11 = avatarDecoration;
+  let tmp14 = avatarDecoration;
   if (undefined !== pendingAvatarDecoration) {
-    tmp11 = pendingAvatarDecoration;
+    tmp14 = pendingAvatarDecoration;
   }
-  c4 = tmp11;
+  c4 = tmp14;
   obj = { userId: user.id, guildId, pendingDisplayNameStyles };
-  const tmp12 = guildId(4396)(obj);
-  const items2 = [tmp.avatar, user, guildId, tmp11, stateFromStores];
-  obj = { style: tmp.container, "aria-hidden": aria_hidden["aria-hidden"] };
+  const tmp15 = guildId(4419)(obj);
+  const items2 = [tmp.avatar, user, guildId, tmp14, stateFromStores];
+  obj = { style: tmp.container, "aria-hidden": aria_hidden["aria-hidden"], children: null };
   const memo = stateFromStores.useMemo(() => {
-    const obj = { style: _undefined.avatar, user, guildId, size: user(_undefined[13]).AvatarSizes.NORMAL, avatarDecoration: c4, animate: !stateFromStores, autoStatusCutout: true, "aria-hidden": true };
+    const obj = { style: _undefined.avatar, user, guildId, size: null, avatarDecoration: null, animate: null, autoStatusCutout: true, "aria-hidden": true };
+    obj[3] = user(_undefined[13]).AvatarSizes.NORMAL;
+    obj[4] = c4;
+    obj[5] = !stateFromStores;
     return outer1_7(user(_undefined[13]).Avatar, obj);
   }, items2);
   obj1 = { nameplate: nameplateData, style: tmp.nameplate, fullOpacity: true, animate: flag2 };
-  const items3 = [callback(guildId(8046), obj1), , ];
+  const items3 = [callback(guildId(8070), obj1), , ];
   obj2 = { style: tmp.avatar, children: memo };
   items3[1] = callback(c4, obj2);
-  obj3 = { style: tmp.content };
-  let tmp16 = null != tmp12;
-  if (tmp16) {
-    obj4 = { userId: user.id, guildId, userName: pendingGlobalName, variant: "text-md/semibold", effectDisplayType: user(8357).EffectDisplayType.STATIC, lineClamp: 1, pendingDisplayNameStyles };
-    tmp16 = callback(guildId(8356), obj4);
-    const tmp20 = guildId(8356);
+  obj3 = { style: tmp.content, children: null };
+  let tmp19Result = null != tmp15;
+  if (tmp19Result) {
+    obj4 = { userId: null, guildId: null, userName: null, variant: "text-md/semibold", effectDisplayType: null, lineClamp: 1, pendingDisplayNameStyles: null };
+    obj4[0] = user.id;
+    obj4[1] = guildId;
+    obj4[2] = pendingGlobalName;
+    obj4[4] = tmp4(8381).EffectDisplayType.STATIC;
+    obj4[6] = pendingDisplayNameStyles;
+    tmp19Result = tmp19(tmp7(8380), obj4);
+    const tmp7Result = tmp7(8380);
   }
-  const items4 = [tmp16, ];
-  let tmp22 = null == tmp12;
-  if (tmp22) {
-    const obj5 = { lineClamp: 1, variant: "text-md/semibold", color: "mobile-text-heading-primary", children: pendingGlobalName };
-    tmp22 = callback(user(4161).Text, obj5);
+  const items4 = [tmp19Result, ];
+  tmp19Result = null == tmp15;
+  if (tmp19Result) {
+    const obj5 = { lineClamp: 1, variant: "text-md/semibold", color: "mobile-text-heading-primary", children: null };
+    obj5[3] = pendingGlobalName;
+    tmp19Result = tmp19(tmp4(4185).Text, obj5);
   }
-  items4[1] = tmp22;
-  obj3.children = items4;
+  items4[1] = tmp19Result;
+  obj3[1] = items4;
   items3[2] = closure_8(c4, obj3);
-  obj.children = items3;
+  obj[2] = items3;
   return closure_8(c4, obj);
 };

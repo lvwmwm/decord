@@ -1,17 +1,17 @@
-// Module ID: 7944
-// Function ID: 63087
+// Module ID: 7969
+// Function ID: 7970
 // Name: CutoutableAvatarDecoration
-// Dependencies: [31, 27, 4157, 33, 624, 1392, 477, 7945, 6188, 5119, 2]
+// Dependencies: [19, 17, 4181, 21, 647, 1416, 500, 7970, 6208, 5141, 2]
 // Exports: default
 
-// Module 7944 (CutoutableAvatarDecoration)
-import result from "result";
+// Module 7969 (CutoutableAvatarDecoration)
+import noop from "noop";
 import { View } from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
 import { jsx } from "jsxProd";
 
 const require = arg1;
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/collectibles/native/components/CutoutableAvatarDecoration.tsx");
+const result = require("maybeApplyNoTextColorForLightCustomTheme").fileFinishedImporting("modules/collectibles/native/components/CutoutableAvatarDecoration.tsx");
 
 export default function CutoutableAvatarDecoration(size) {
   let avatarDecorationUrl;
@@ -22,10 +22,12 @@ export default function CutoutableAvatarDecoration(size) {
   const avatarDecoration = size.avatarDecoration;
   const decorationStyle = size.decorationStyle;
   const animate = size.animate;
-  let cutout = size.cutout;
+  let nativeCutouts = size.cutout;
+  let stateFromStores;
+  let tmp2 = decorationStyle;
   let obj = size(decorationStyle[4]);
-  let items = [_isNativeReflectConstruct];
-  const stateFromStores = obj.useStateFromStores(items, () => outer1_5.useReducedMotion);
+  let items = [maybeApplyNoTextColorForLightCustomTheme];
+  stateFromStores = obj.useStateFromStores(items, () => useReducedMotion.useReducedMotion);
   const items1 = [animate, size, avatarDecoration, decorationStyle, stateFromStores];
   const memo = animate.useMemo(() => {
     let tmp = animate;
@@ -38,50 +40,61 @@ export default function CutoutableAvatarDecoration(size) {
     let obj = size(decorationStyle[5]);
     obj = { avatarDecoration, canAnimate: tmp, size };
     const avatarDecorationURL = obj.getAvatarDecorationURL(obj);
-    obj = { avatarDecorationUrl: avatarDecorationURL, sizeStyle: obj1, style: items };
+    obj = { avatarDecorationUrl: avatarDecorationURL, sizeStyle: obj1, style: items, shouldAnimate: tmp, source: null };
     items = [{ width: size, height: size }, decorationStyle];
-    obj.shouldAnimate = tmp;
-    const obj3 = {};
-    let str = "";
-    if (null != avatarDecorationURL) {
-      str = avatarDecorationURL;
+    let str = avatarDecorationURL;
+    if (avatarDecorationURL == null) {
+      str = "";
     }
-    obj3.uri = str;
-    obj.source = obj3;
+    obj[4] = { uri: str };
     return obj;
   }, items1);
   ({ avatarDecorationUrl, style, sizeStyle, source } = memo);
-  let tmp4 = null;
+  let tmp6 = null;
   if (null != avatarDecoration) {
-    tmp4 = null;
+    tmp6 = null;
     if (null != avatarDecorationUrl) {
-      let obj1 = size(decorationStyle[6]);
-      if (!obj1.isAndroid()) {
-        if (null != cutout) {
-          obj = { style, cutouts: cutout.nativeCutouts };
-          obj = { source, style: sizeStyle };
-          obj.children = jsx(avatarDecoration(decorationStyle[9]), { source, style: sizeStyle });
-          let tmp10 = jsx(avatarDecoration(decorationStyle[7]), { source, style: sizeStyle });
-          const tmp14 = avatarDecoration(decorationStyle[7]);
+      if (!tmpResult.isAndroid()) {
+        if (null != nativeCutouts) {
+          obj = { style: null, cutouts: null, children: null };
+          obj[0] = style;
+          obj[1] = nativeCutouts.nativeCutouts;
+          obj = { source: null, style: null };
+          obj[0] = source;
+          obj[1] = sizeStyle;
+          obj[2] = jsx(avatarDecoration(tmp2[9]), { source: null, style: null });
+          let tmp9 = jsx(avatarDecoration(tmp2[7]), { source: null, style: null });
+          const tmp12 = avatarDecoration(tmp2[7]);
         } else {
-          obj1 = { source, style };
-          tmp10 = jsx(avatarDecoration(decorationStyle[9]), { source, style });
+          const obj1 = { source: null, style: null };
+          obj1[0] = source;
+          obj1[1] = style;
+          tmp9 = jsx(avatarDecoration(tmp2[9]), { source: null, style: null });
         }
       }
-      if (null != cutout) {
-        const obj2 = { style, cutouts: cutout.nativeCutouts };
-        let obj3 = { url: avatarDecorationUrl, style: sizeStyle };
-        cutout = jsx(avatarDecoration(decorationStyle[8]), { url: avatarDecorationUrl, style: sizeStyle });
-        obj2.children = cutout;
-        let tmp19 = jsx(avatarDecoration(decorationStyle[7]), { style, cutouts: cutout.nativeCutouts });
-        const tmp23 = avatarDecoration(decorationStyle[7]);
+      if (null != nativeCutouts) {
+        const obj2 = { style: null, cutouts: null, children: null };
+        obj2[0] = style;
+        nativeCutouts = nativeCutouts.nativeCutouts;
+        obj2[1] = nativeCutouts;
+        const obj3 = { url: null, style: null };
+        obj3[0] = avatarDecorationUrl;
+        obj3[1] = sizeStyle;
+        tmp2 = jsx(avatarDecoration(tmp2[8]), { url: null, style: null });
+        obj2[2] = tmp2;
+        let tmp16 = jsx(avatarDecoration(tmp2[7]), { style: null, cutouts: null, children: null });
+        const tmp19 = avatarDecoration(tmp2[7]);
       } else {
-        const obj4 = { style, pointerEvents: "none" };
-        const obj5 = { url: avatarDecorationUrl, style: sizeStyle };
-        obj4.children = jsx(avatarDecoration(decorationStyle[8]), { url: avatarDecorationUrl, style: sizeStyle });
-        tmp19 = <stateFromStores style={style} pointerEvents="none" />;
+        const obj4 = { style: null, pointerEvents: "none", children: null };
+        obj4[0] = style;
+        const obj5 = { url: null, style: null };
+        obj5[0] = avatarDecorationUrl;
+        obj5[1] = sizeStyle;
+        obj4[2] = jsx(avatarDecoration(tmp2[8]), { url: null, style: null });
+        tmp16 = <stateFromStores style={null} pointerEvents="none">{null}</stateFromStores>;
       }
+      tmpResult = size(tmp2[6]);
     }
   }
-  return tmp4;
+  return tmp6;
 };

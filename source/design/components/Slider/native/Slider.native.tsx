@@ -1,29 +1,29 @@
-// Module ID: 13198
-// Function ID: 101477
+// Module ID: 13221
+// Function ID: 13222
 // Name: Slider
-// Dependencies: [31, 27, 33, 4165, 689, 4134, 4135, 7636, 2]
+// Dependencies: [19, 17, 21, 4189, 712, 4158, 4159, 7659, 2]
 // Exports: Slider
 
-// Module 13198 (Slider)
-import result from "result";
+// Module 13221 (Slider)
+import noop from "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_5;
+let c5;
 let closure_6;
 const require = arg1;
-({ jsx: closure_5, jsxs: closure_6 } = jsxProd);
-_createForOfIteratorHelperLoose = { container: { flex: 1, flexDirection: "row", alignItems: "center" }, slider: { flex: 1 } };
-_createForOfIteratorHelperLoose = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.REDESIGN_INPUT_CONTROL_SELECTED };
-_createForOfIteratorHelperLoose.minimumTrackTintColor = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.maximumTrackTintColor = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.SLIDER_TRACK_BACKGROUND };
-let obj1 = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.SLIDER_TRACK_BACKGROUND };
-_createForOfIteratorHelperLoose.startIcon = { marginRight: require("_createForOfIteratorHelperLoose").space.PX_8 };
-let obj2 = { marginRight: require("_createForOfIteratorHelperLoose").space.PX_8 };
-_createForOfIteratorHelperLoose.endIcon = { marginLeft: require("_createForOfIteratorHelperLoose").space.PX_8 };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-const obj3 = { marginLeft: require("_createForOfIteratorHelperLoose").space.PX_8 };
+({ jsx: c5, jsxs: closure_6 } = jsxProd);
+createCacheKey = { container: { flex: 1, flexDirection: "row", alignItems: "center" }, slider: { flex: 1 }, minimumTrackTintColor: null, maximumTrackTintColor: null, startIcon: null, endIcon: null };
+createCacheKey = { backgroundColor: require("Themes").colors.REDESIGN_INPUT_CONTROL_SELECTED };
+createCacheKey[2] = createCacheKey;
+createCacheKey[3] = { backgroundColor: require("Themes").colors.SLIDER_TRACK_BACKGROUND };
+let obj1 = { backgroundColor: require("Themes").colors.SLIDER_TRACK_BACKGROUND };
+createCacheKey[4] = { marginRight: require("Themes").space.PX_8 };
+const obj2 = { marginRight: require("Themes").space.PX_8 };
+createCacheKey[5] = { marginLeft: require("Themes").space.PX_8 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+const obj3 = { marginLeft: require("Themes").space.PX_8 };
 let result = require("jsxProd").fileFinishedImporting("design/components/Slider/native/Slider.native.tsx");
 
 export const Slider = function Slider(step) {
@@ -32,43 +32,45 @@ export const Slider = function Slider(step) {
   let startIcon;
   ({ startIcon, endIcon, onValueChange } = step);
   step = step.step;
-  let obj = { startIcon: 0, endIcon: 0, style: 0, onValueChange: 0, step: 0 };
-  Object.setPrototypeOf(null);
-  const merged = Object.assign(step, obj);
-  const tmp3 = _createForOfIteratorHelperLoose();
+  const merged = Object.assign(step, Object.create(null));
+  const tmp2 = createCacheKey();
   const items = [step, onValueChange];
-  obj = { style: tmp3.container };
-  let tmp7 = null;
+  let obj = { style: tmp2.container, children: null };
+  let tmp6 = null;
   const callback = React.useCallback((arg0) => {
     if (null != step) {
       const result = onValueChange(outer1_2[5]).triggerHapticFeedback(step(outer1_2[6]).IMPACT_LIGHT);
       const obj = onValueChange(outer1_2[5]);
     }
-    if (null != onValueChange) {
-      onValueChange(arg0);
+    if (onValueChange != null) {
+      tmp5(arg0);
     }
   }, items);
   if (null != startIcon) {
-    obj = { style: tmp3.startIcon, children: startIcon };
-    tmp7 = callback(View, obj);
+    obj = { style: null, children: null };
+    obj[0] = tmp2.startIcon;
+    obj[1] = startIcon;
+    tmp6 = callback(tmp5, obj);
   }
-  const items1 = [tmp7, , ];
-  const obj1 = {};
+  const items1 = [tmp6, , ];
+  obj = {};
   const merged1 = Object.assign(merged);
-  const items2 = [tmp3.slider, step.style];
-  obj1["style"] = items2;
-  obj1["step"] = step;
-  obj1["onValueChange"] = callback;
-  obj1["minimumTrackTintColor"] = tmp3.minimumTrackTintColor.backgroundColor;
-  obj1["maximumTrackTintColor"] = tmp3.maximumTrackTintColor.backgroundColor;
-  obj1["tapToSeek"] = true;
-  items1[1] = callback(step(7636), obj1);
-  let tmp12 = null;
+  const items2 = [tmp2.slider, step.style];
+  obj.style = items2;
+  obj.step = step;
+  obj.onValueChange = callback;
+  obj.minimumTrackTintColor = tmp2.minimumTrackTintColor.backgroundColor;
+  obj.maximumTrackTintColor = tmp2.maximumTrackTintColor.backgroundColor;
+  obj.tapToSeek = true;
+  items1[1] = callback(step(7659), obj);
+  let tmp8Result = null;
   if (null != endIcon) {
-    const obj2 = { style: tmp3.endIcon, children: endIcon };
-    tmp12 = callback(View, obj2);
+    const obj1 = { style: null, children: null };
+    obj1[0] = tmp2.endIcon;
+    obj1[1] = endIcon;
+    tmp8Result = callback(tmp5, obj1);
   }
-  items1[2] = tmp12;
-  obj.children = items1;
+  items1[2] = tmp8Result;
+  obj[1] = items1;
   return closure_6(View, obj);
 };

@@ -1,10 +1,10 @@
-// Module ID: 10896
-// Function ID: 84511
+// Module ID: 10920
+// Function ID: 10921
 // Name: getChannelDetailsButtons
-// Dependencies: [9076, 669, 2]
+// Dependencies: [9100, 692, 2]
 // Exports: getChannelDetailsButtons, navigateToChannelDetailsScreen
 
-// Module 10896 (getChannelDetailsButtons)
+// Module 10920 (getChannelDetailsButtons)
 import { ChannelDetailsButtonTypes } from "ChannelDetailsNavigatorScreens";
 
 const result = require("set").fileFinishedImporting("modules/main_tabs_v2/native/sidebar/details/ChannelDetailsUtils.tsx");
@@ -14,7 +14,7 @@ export const getChannelDetailsButtons = function getChannelDetailsButtons(channe
   if (stateFromStores === undefined) {
     flag = false;
   }
-  if (channel.type === require(669) /* set */.ChannelTypes.GUILD_DIRECTORY) {
+  if (channel.type === require(692) /* set */.ChannelTypes.GUILD_DIRECTORY) {
     let items = [];
   } else {
     items = [, , ];
@@ -22,10 +22,10 @@ export const getChannelDetailsButtons = function getChannelDetailsButtons(channe
   }
   let found = items;
   if (flag) {
-    found = items.filter((arg0) => arg0 !== outer1_2.MUTE);
+    found = items.filter((arg0) => arg0 !== constants.MUTE);
   }
   return found;
 };
-export const navigateToChannelDetailsScreen = function navigateToChannelDetailsScreen(navigate, screen, channelId, source) {
-  navigate.navigate("sidebar", { screen, channelId, source });
+export const navigateToChannelDetailsScreen = function navigateToChannelDetailsScreen(closure_4, PERMISSIONS, closure_0, source) {
+  closure_4.navigate("sidebar", { screen: PERMISSIONS, channelId: closure_0, source });
 };

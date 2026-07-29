@@ -1,113 +1,21 @@
-// Module ID: 12774
-// Function ID: 99242
-// Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 4185, 1316, 1194, 4197, 4200, 4237, 1907, 653, 664, 587, 4209, 10459, 4050, 4335, 566, 686, 2]
+// Module ID: 12796
+// Function ID: 12797
+// Name: stopActivity
+// Dependencies: [4209, 1340, 1218, 4221, 4224, 4261, 1931, 676, 687, 595, 4233, 10483, 4074, 4359, 589, 709, 2]
 
-// Module 12774 (_isNativeReflectConstruct)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_4 from "_isNativeReflectConstruct";
-import convertToTransitionState from "convertToTransitionState";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import normalizePath from "normalizePath";
-import closure_8 from "_isNativeReflectConstruct";
-import closure_9 from "_isNativeReflectConstruct";
-import closure_10 from "_isNativeReflectConstruct";
-import closure_11 from "_isNativeReflectConstruct";
-import closure_12 from "_isNativeReflectConstruct";
-import closure_13 from "_isNativeReflectConstruct";
-import closure_14 from "_isNativeReflectConstruct";
+// Module 12796 (stopActivity)
+import initialize from "initialize";
+import handleConnectionClosedOrResumed from "handleConnectionClosedOrResumed";
+import fetchFingerprint from "fetchFingerprint";
+import gameFromServer from "gameFromServer";
+import setLibraryApplications from "setLibraryApplications";
+import createRTCConnection from "createRTCConnection";
+import handleConnectionOpen from "handleConnectionOpen";
 import { Distributors } from "ME";
 import { Storage } from "Storage";
+import { Store } from "initialize";
 
 const require = arg1;
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
-  }
-  const result = _isNativeReflectConstruct();
-}
-function _createForOfIteratorHelperLoose(iterable) {
-  let closure_0 = iterable;
-  iterable = "undefined" !== typeof Symbol;
-  if (iterable) {
-    const _Symbol = Symbol;
-    iterable = iterable[Symbol.iterator];
-  }
-  if (!iterable) {
-    iterable = iterable[Symbol.iterator];
-  }
-  if (iterable) {
-    const iter = iterable.call(iterable);
-    const next = iter.next;
-    return next.bind(iter);
-  } else {
-    const _Array = Array;
-    let tmp = iterable;
-    if (!Array.isArray(iterable)) {
-      let tmp2;
-      if (iterable) {
-        if ("string" === typeof iterable) {
-          tmp2 = _arrayLikeToArray(iterable, undefined);
-        } else {
-          const toString = {}.toString;
-          const substr = toString.call(iterable).slice(8, -1);
-          let name = substr;
-          if (tmp3) {
-            name = iterable.constructor.name;
-          }
-          if ("Map" !== name) {
-            if ("Set" !== name) {
-              if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(iterable, undefined);
-              } else {
-                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
-              }
-            }
-            tmp2 = arr;
-          }
-          const _Array2 = Array;
-          arr = Array.from(iterable);
-          const callResult = toString.call(iterable);
-          tmp3 = "Object" === substr && iterable.constructor;
-        }
-      }
-      tmp = tmp2;
-      if (!tmp2) {
-        const _TypeError = TypeError;
-        const typeError = new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
-        throw typeError;
-      }
-    }
-    if (tmp) {
-      closure_0 = tmp;
-    }
-    let c1 = 0;
-    return () => {
-      if (closure_1 >= length.length) {
-        let obj = { done: true };
-      } else {
-        obj = { done: false };
-        closure_1 = tmp3 + 1;
-        obj.value = length[+closure_1];
-      }
-      return obj;
-    };
-  }
-}
-function _arrayLikeToArray(arg0, arg1) {
-  let length;
-  if (tmp) {
-    length = arg0.length;
-  }
-  const ArrayResult = Array(length);
-  for (let num = 0; num < length; num = num + 1) {
-    ArrayResult[num] = arg0[num];
-  }
-  return ArrayResult;
-}
 function stopActivity(applicationId, flag) {
   if (flag === undefined) {
     flag = true;
@@ -120,13 +28,13 @@ function stopActivity(applicationId, flag) {
     applicationId = applicationId.applicationId;
     delete tmp3[tmp2];
   }
-  delete tmp2[tmp];
-  const Storage = require(587) /* Storage */.Storage;
+  delete tmp3[tmp];
+  const Storage = require(595) /* Storage */.Storage;
   const result = Storage.set(ActivityTrackingStore, obj);
 }
 function updateActivity(applicationId) {
-  let flag = arg1;
   const _require = applicationId;
+  let flag = arg1;
   if (arg1 === undefined) {
     flag = false;
   }
@@ -135,189 +43,146 @@ function updateActivity(applicationId) {
   if (null != applicationId.updatedAt) {
     num = timestamp - applicationId.updatedAt;
   }
-  if (num > closure_17 + closure_18) {
+  if (num > closure_12 + closure_13) {
     num = 0;
   }
-  let obj = _require(4209);
-  const result = obj.shouldShareApplicationActivity(applicationId.applicationId, closure_12);
+  let obj = _require(4233);
+  const result = obj.shouldShareApplicationActivity(applicationId.applicationId, setLibraryApplications);
   voiceChannelId = voiceChannelId.getVoiceChannelId();
   sessionId = sessionId.getSessionId();
   mediaSessionId = mediaSessionId.getMediaSessionId();
-  obj = { applicationId: applicationId.applicationId };
+  obj = { applicationId: applicationId.applicationId, distributor: null, shareActivity: null, token: null, duration: null, closed: null, exePath: null, voiceChannelId: null, sessionId: null, mediaSessionId: null };
   if (applicationId.isDiscordApplication) {
     let distributor = Distributors.DISCORD;
   } else {
     distributor = applicationId.distributor;
   }
-  obj.distributor = distributor;
-  obj.shareActivity = result;
-  obj.token = applicationId.token;
-  obj.duration = Math.floor(num / 1000);
-  obj.closed = flag;
-  obj.exePath = applicationId.exePath;
-  obj.voiceChannelId = voiceChannelId;
-  obj.sessionId = sessionId;
-  obj.mediaSessionId = mediaSessionId;
-  importDefault(10459).updateActivity(obj);
+  obj[1] = distributor;
+  obj[2] = result;
+  obj[3] = applicationId.token;
+  obj[4] = Math.floor(num / 1000);
+  obj[5] = flag;
+  obj[6] = applicationId.exePath;
+  obj[7] = voiceChannelId;
+  obj[8] = sessionId;
+  obj[9] = mediaSessionId;
+  importDefault(10483).updateActivity(obj);
   applicationId.updatedAt = timestamp;
   if (null == dependencyMap[applicationId.applicationId]) {
-    const Interval = _require(4050).Interval;
-    const prototype = Interval.prototype;
-    const interval = new Interval();
-    dependencyMap[applicationId.applicationId] = interval;
-    interval.start(closure_17, () => {
-      outer1_26(closure_0);
+    const interval = new tmp3(4074).Interval();
+    tmp11[applicationId.applicationId] = interval;
+    interval.start(closure_12, () => {
+      outer1_18(closure_0);
     });
   }
   if (!flag) {
     obj[applicationId.applicationId] = applicationId;
-    const Storage = _require(587).Storage;
+    const Storage = tmp3(595).Storage;
     const result1 = Storage.set(ActivityTrackingStore, obj);
   }
 }
 function handleRunningGamesChange(flag) {
-  let iter3;
   let obj;
   if (flag === undefined) {
     flag = true;
   }
   visibleRunningGames = visibleRunningGames.getVisibleRunningGames();
   const set = new Set();
-  const tmp2 = _createForOfIteratorHelperLoose(visibleRunningGames);
-  const iter = tmp2();
-  let iter2 = iter;
-  if (!iter.done) {
-    do {
-      let value = iter2.value;
-      let tmp4 = closure_11;
-      let findGameResult = closure_11.findGame(value);
-      let tmp6 = tmp3;
-      if (null != findGameResult) {
-        let addResult = set.add(findGameResult.id);
-        let tmp16 = obj;
-        if (!(findGameResult.id in obj)) {
-          obj = { applicationId: findGameResult.id };
-          let _Date = Date;
-          let tmp7 = updateActivity;
-          obj.updatedAt = Date.now();
-          obj.distributor = value.distributor;
-          let tmp8 = require;
-          let tmp9 = dependencyMap;
-          let obj3 = require(4335) /* normalizePath */;
-          let exePath = value.exePath;
-          let str = "";
-          if (null != exePath) {
-            str = exePath;
-          }
-          obj.exePath = obj3.removeExecutablePathPrefix(str);
-          let tmp7Result = tmp7(obj);
-          tmp3 = exePath;
+  const iter = visibleRunningGames[Symbol.iterator]();
+  const nextResult = iter.next();
+  while (iter !== undefined) {
+    let tmp3 = nextResult;
+    let tmp4 = gameFromServer;
+    let findGameResult = gameFromServer.findGame(nextResult);
+    let tmp6 = findGameResult;
+    if (null != findGameResult) {
+      let tmp19 = findGameResult;
+      let addResult = set.add(tmp6.id);
+      let tmp21 = obj;
+      if (!(tmp6.id in obj)) {
+        obj = { applicationId: null, updatedAt: null, distributor: null, exePath: null };
+        let tmp8 = findGameResult;
+        obj[0] = tmp6.id;
+        let _Date = Date;
+        let tmp7 = updateActivity;
+        obj[1] = Date.now();
+        let tmp9 = nextResult;
+        obj[2] = tmp3.distributor;
+        let tmp10 = require;
+        let tmp11 = dependencyMap;
+        let obj3 = require(4359) /* removeExecutablePathPrefix */;
+        let str = tmp3.exePath;
+        if (str == null) {
+          str = "";
         }
-        tmp6 = tmp3;
+        obj[3] = obj3.removeExecutablePathPrefix(str);
+        let tmp7Result = tmp7(obj);
       }
-      iter3 = tmp2();
-      tmp3 = tmp6;
-      iter2 = iter3;
-    } while (!iter3.done);
+    }
+    continue;
   }
   const keys = Object.keys(obj);
-  for (let num = 0; num < keys.length; num = num + 1) {
-    let tmp11 = keys[num];
-    if (!set.has(tmp11)) {
-      let tmp12 = stopActivity;
-      let tmp13 = obj;
-      let tmp14 = stopActivity(obj[tmp11], flag);
+  for (const item10052 of keys) {
+    let tmp14 = item10052;
+    if (!set.has(item10052)) {
+      let tmp15 = stopActivity;
+      let tmp16 = obj;
+      let tmp17 = item10052;
+      let tmp18 = stopActivity(obj[tmp14], flag);
     }
+    continue;
   }
 }
 function handleLogout() {
-  let length;
   const keys = Object.keys(obj);
-  let num = 0;
-  if (0 < keys.length) {
-    do {
-      let tmp = stopActivity;
-      let tmp2 = obj;
-      let tmp3 = stopActivity(obj[keys[num]]);
-      num = num + 1;
-      length = keys.length;
-    } while (num < length);
+  while (tmp2 !== undefined) {
+    let tmp4 = stopActivity;
+    let tmp5 = obj;
+    let tmp6 = stopActivity(obj[tmp3]);
+    continue;
   }
-  let c21 = false;
+  let c16 = false;
 }
 const ActivityTrackingStore = "ActivityTrackingStore";
-let closure_17 = 30 * require("set").Millis.MINUTE;
-let closure_18 = 5 * require("set").Millis.MINUTE;
+let closure_12 = 30 * require("set").Millis.MINUTE;
+let closure_13 = 5 * require("set").Millis.MINUTE;
 let obj = Storage.get("ActivityTrackingStore");
-if (null == obj) {
+if (obj == null) {
   obj = {};
 }
-let closure_20 = {};
-let c21 = false;
-let tmp2 = ((Store) => {
-  class ActivityTrackingStore {
-    constructor() {
-      self = this;
-      tmp = outer1_3(this, ActivityTrackingStore);
-      obj = outer1_6(ActivityTrackingStore);
-      tmp2 = outer1_5;
-      if (outer1_22()) {
-        tmp6 = globalThis;
-        _Reflect = Reflect;
-        tmp7 = outer1_6;
-        tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, outer1_6(self).constructor);
-      } else {
-        tmp3 = arguments;
-        tmp4 = arguments;
-        constructResult = obj(...arguments);
-      }
-      return tmp2(self, constructResult);
-    }
-  }
-  callback2(ActivityTrackingStore, Store);
-  let obj = {
-    key: "initialize",
-    value() {
-      this.waitFor(outer1_10, outer1_11, outer1_12, outer1_13, outer1_8, outer1_14, outer1_9);
-      const items = [outer1_9];
-      this.syncWith(items, outer1_27);
-    }
-  };
-  let items = [obj, ];
-  obj = {
-    key: "getActivities",
-    value() {
-      return outer1_19;
-    }
-  };
-  items[1] = obj;
-  return callback(ActivityTrackingStore, items);
-})(require("initialize").Store);
-tmp2.displayName = "ActivityTrackingStore";
+let closure_15 = {};
+let c16 = false;
+class ActivityTrackingStore extends Store {
+}
+const prototype = ActivityTrackingStore.prototype;
+prototype["initialize"] = function initialize() {
+  this.waitFor(fetchFingerprint, gameFromServer, setLibraryApplications, createRTCConnection, initialize, handleConnectionOpen, handleConnectionClosedOrResumed);
+  const items = [handleConnectionClosedOrResumed];
+  this.syncWith(items, handleRunningGamesChange);
+};
+prototype["getActivities"] = function getActivities() {
+  return obj;
+};
+ActivityTrackingStore.displayName = "ActivityTrackingStore";
 obj = {
   RUNNING_GAMES_CHANGE() {
     handleRunningGamesChange();
   },
   CONNECTION_OPEN: function handleConnectionOpen() {
-    let length;
-    if (c21) {
+    if (c16) {
       return false;
     } else {
       const _Object = Object;
       const keys = Object.keys(obj);
-      let num = 0;
-      if (0 < keys.length) {
-        do {
-          let tmp3 = updateActivity;
-          let tmp4 = obj;
-          let tmp5 = updateActivity(obj[keys[num]]);
-          num = num + 1;
-          length = keys.length;
-        } while (num < length);
+      const tmp5 = keys[Symbol.iterator]();
+      while (tmp5 !== undefined) {
+        let tmp9 = updateActivity;
+        let tmp10 = obj;
+        let tmp11 = updateActivity(obj[tmp7]);
+        continue;
       }
       handleRunningGamesChange(false);
-      c21 = true;
+      c16 = true;
     }
   },
   CONNECTION_CLOSED: function handleConnectionClosed(code) {
@@ -330,23 +195,23 @@ obj = {
     if (null == obj[arg0.applicationId]) {
       return false;
     } else {
-      tmp2.token = tmp;
-      const Storage = require(587) /* Storage */.Storage;
-      const result = Storage.set(ActivityTrackingStore, obj);
+      tmp3.token = tmp;
+      const Storage = require(595) /* Storage */.Storage;
+      const result = Storage.set(ActivityTrackingStore, tmp2);
     }
   },
   ACTIVITY_UPDATE_FAIL: function handleActivityUpdateFail(arg0) {
     if (null == obj[arg0.applicationId]) {
       return false;
     } else {
-      tmp.token = null;
-      tmp.updatedAt = null;
-      const Storage = require(587) /* Storage */.Storage;
-      const result = Storage.set(ActivityTrackingStore, obj);
+      tmp2.token = null;
+      tmp2.updatedAt = null;
+      const Storage = require(595) /* Storage */.Storage;
+      const result = Storage.set(ActivityTrackingStore, tmp);
     }
   }
 };
-tmp2 = new tmp2(require("dispatcher"), obj);
-let result = require("_possibleConstructorReturn").fileFinishedImporting("stores/ActivityTrackingStore.tsx");
+const activityTrackingStore = new ActivityTrackingStore(require("dispatcher"), obj);
+let result = require("fetchFingerprint").fileFinishedImporting("stores/ActivityTrackingStore.tsx");
 
-export default tmp2;
+export default activityTrackingStore;

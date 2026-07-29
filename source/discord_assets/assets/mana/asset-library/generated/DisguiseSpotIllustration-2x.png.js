@@ -1,9 +1,9 @@
-// Module ID: 6973
-// Function ID: 59731
+// Module ID: 6993
+// Function ID: 6994
 // Name: metadata
 // Dependencies: [2]
 
-// Module 6973 (metadata)
+// Module 6993 (metadata)
 const result = require("set").fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/DisguiseSpotIllustration-2x.png.js");
 
 export default "https://cdn.discordapp.com/assets/content/772e1c5481189f4080d25330ba6f571b384f0ff11c338d9369bf1c7c92394ad1.png";

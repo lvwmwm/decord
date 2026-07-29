@@ -1,41 +1,43 @@
-// Module ID: 14688
-// Function ID: 111798
+// Module ID: 14713
+// Function ID: 14714
 // Name: SettingSearchBar
-// Dependencies: [31, 27, 13659, 33, 4165, 689, 1820, 6487, 9215, 2]
+// Dependencies: [19, 17, 13680, 21, 4189, 712, 1844, 6508, 9239, 2]
 // Exports: default
 
-// Module 14688 (SettingSearchBar)
-import result from "result";
+// Module 14713 (SettingSearchBar)
+import noop from "noop";
 import { View } from "get ActivityIndicator";
 import zustandStore from "zustandStore";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
 const require = arg1;
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { marginTop: require("_createForOfIteratorHelperLoose").modules.mobile.SETTINGS_PADDING_TOP };
-_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+createCacheKey = { container: null };
+createCacheKey = { marginTop: require("Themes").modules.mobile.SETTINGS_PADDING_TOP };
+createCacheKey[0] = createCacheKey;
+createCacheKey = createCacheKey.createStyles(createCacheKey);
 let result = require("zustandStore").fileFinishedImporting("modules/settings/native/search/SettingSearchBar.tsx");
 
 export default function SettingSearchBar() {
-  const tmp = _createForOfIteratorHelperLoose();
+  const tmp = createCacheKey();
   const callback = React.useCallback(() => {
-    outer1_4.setState({ isActive: false, query: "", isFocused: false });
-    const result = outer1_0(outer1_1[6]).dismissGlobalKeyboard();
+    store.setState({ isActive: false, query: "", isFocused: false });
+    const result = callback(1844).dismissGlobalKeyboard();
   }, []);
   const callback1 = React.useCallback(() => {
-    const result = outer1_0(outer1_1[7]).trackSettingSearchInputFocused();
-    outer1_4.setState({ isActive: true, isFocused: true });
+    const result = callback(6508).trackSettingSearchInputFocused();
+    store.setState({ isActive: true, isFocused: true });
   }, []);
   const callback2 = React.useCallback(() => {
-    outer1_4.setState({ isFocused: false });
+    store.setState({ isFocused: false });
   }, []);
-  let obj = { style: tmp.container };
+  let obj = { style: tmp.container, children: null };
   const callback3 = React.useCallback((query) => {
-    outer1_4.setState({ query });
+    store.setState({ query });
   }, []);
-  obj = { ref: React.useRef(null), size: "md", onFocus: callback1, onBlur: callback2, onClear: callback, defaultValue: field.getField("query"), onChange: callback3 };
-  obj.children = jsx(require(9215) /* SearchField */.SearchField, { ref: React.useRef(null), size: "md", onFocus: callback1, onBlur: callback2, onClear: callback, defaultValue: field.getField("query"), onChange: callback3 });
-  return <View ref={React.useRef(null)} size="md" onFocus={callback1} onBlur={callback2} onClear={callback} defaultValue={field.getField("query")} onChange={callback3} />;
+  obj = { ref: React.useRef(null), size: "md", onFocus: callback1, onBlur: callback2, onClear: callback, defaultValue: null, onChange: null };
+  obj[5] = field.getField("query");
+  obj[6] = callback3;
+  obj[1] = jsx(require(9239) /* SearchField */.SearchField, { ref: React.useRef(null), size: "md", onFocus: callback1, onBlur: callback2, onClear: callback, defaultValue: null, onChange: null });
+  return <View ref={React.useRef(null)} size="md" onFocus={callback1} onBlur={callback2} onClear={callback} defaultValue={null} onChange={null} />;
 };

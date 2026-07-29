@@ -1,32 +1,32 @@
-// Module ID: 10634
-// Function ID: 82715
+// Module ID: 10658
+// Function ID: 10659
 // Name: doesOrientationMatchLockState
-// Dependencies: [4190, 2]
+// Dependencies: [4214, 2]
 // Exports: default
 
-// Module 10634 (doesOrientationMatchLockState)
+// Module 10658 (doesOrientationMatchLockState)
 import { OrientationLockState } from "items3";
 
 const result = require("set").fileFinishedImporting("modules/activities/native/doesOrientationMatchLockState.tsx");
 
 export default function doesOrientationMatchLockState(arg0, arg1) {
-  let tmp = arg0;
-  let tmp2 = null == arg1;
-  if (!tmp2) {
-    tmp2 = arg1 === OrientationLockState.UNLOCKED;
+  let tmp = null == arg1;
+  if (!tmp) {
+    tmp = arg1 === OrientationLockState.UNLOCKED;
   }
-  if (!tmp2) {
-    let tmp4 = !tmp;
-    if (tmp4) {
+  let tmp3 = arg0;
+  if (!tmp) {
+    let tmp4 = !tmp3;
+    if (!tmp3) {
       tmp4 = arg1 === OrientationLockState.PORTRAIT;
     }
-    tmp2 = tmp4;
+    tmp = tmp4;
   }
-  if (!tmp2) {
-    if (tmp) {
-      tmp = arg1 === OrientationLockState.LANDSCAPE;
+  if (!tmp) {
+    if (tmp3) {
+      tmp3 = arg1 === OrientationLockState.LANDSCAPE;
     }
-    tmp2 = tmp;
+    tmp = tmp3;
   }
-  return tmp2;
+  return tmp;
 };

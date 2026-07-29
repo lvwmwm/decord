@@ -1,13 +1,17 @@
 // Module ID: 3581
-// Function ID: 27660
+// Function ID: 3582
 // Name: _typeof
-// Dependencies: [3552, 3553, 3550]
+// Dependencies: [3576, 3574]
 
 // Module 3581 (_typeof)
+import { Parser } from "Parser";
+
+let _createSuperInternal = require;
+let closure_1 = dependencyMap;
 function _typeof(arg0) {
-  if ("function" === typeof Symbol) {
+  if (typeof Symbol !== "_") {
     let _Symbol = Symbol;
-    if ("symbol" === typeof Symbol.iterator) {
+    if (typeof Symbol.iterator === "e") {
       function _typeof(arg0) {
         return typeof arg0;
       }
@@ -17,94 +21,27 @@ function _typeof(arg0) {
   _typeof = function _typeof(arg0) {
     if (arg0) {
       const _Symbol = Symbol;
-      if ("function" === typeof Symbol) {
-        const _Symbol2 = Symbol;
+      if (typeof Symbol !== "_") {
+        const _Symbol3 = Symbol;
         if (arg0.constructor === Symbol) {
-          const _Symbol3 = Symbol;
-          let str2 = "symbol";
+          const _Symbol2 = Symbol;
+          let str = "symbol";
         }
-        return str2;
+        return str;
       }
     }
-    str2 = typeof arg0;
+    str = typeof arg0;
   };
 }
-function _defineProperties(arg0, arg1) {
-  for (let num = 0; num < arg1.length; num = num + 1) {
-    let tmp = arg1[num];
-    tmp.enumerable = tmp.enumerable || false;
-    tmp.configurable = true;
-    if ("value" in tmp) {
-      tmp.writable = true;
-    }
-    let _Object = Object;
-    let definePropertyResult = Object.defineProperty(arg0, tmp.key, tmp);
+function _setPrototypeOf(QuarterParser, Parser) {
+  let _setPrototypeOf = Object.setPrototypeOf;
+  if (!_setPrototypeOf) {
+    _setPrototypeOf = function _setPrototypeOf(QuarterParser, Parser) {
+      QuarterParser.__proto__ = Parser;
+      return QuarterParser;
+    };
   }
-}
-function _setPrototypeOf(arg0, arg1) {
-  const tmp = Object.setPrototypeOf || (function _setPrototypeOf(arg0, arg1) {
-    arg0.__proto__ = arg1;
-    return arg0;
-  });
-  const _setPrototypeOf = tmp;
-  return tmp(arg0, arg1);
-}
-function _createSuper(arg0) {
-  let closure_0 = arg0;
-  let closure_1 = (function _isNativeReflectConstruct() {
-    if ("undefined" !== typeof Reflect) {
-      const _Reflect3 = Reflect;
-      if (Reflect.construct) {
-        const _Reflect = Reflect;
-        if (Reflect.construct.sham) {
-          return false;
-        } else {
-          const _Proxy = Proxy;
-          if ("function" === typeof Proxy) {
-            return true;
-          } else {
-            const _Boolean = Boolean;
-            const _Reflect2 = Reflect;
-            const _Boolean2 = Boolean;
-            valueOf.call(Reflect.construct(Boolean, [], () => {
-
-            }));
-            return true;
-          }
-        }
-      }
-    }
-    return false;
-  })();
-  return function _createSuperInternal() {
-    const self = this;
-    const obj = outer1_7(closure_0);
-    if (closure_1) {
-      const _Reflect = Reflect;
-      let constructResult = Reflect.construct(obj, arguments, outer1_7(self).constructor);
-    } else {
-      constructResult = obj(...arguments);
-    }
-    if (!constructResult) {
-      outer1_6(self);
-      let tmp8 = self;
-    } else {
-      tmp8 = constructResult;
-      if ("object" !== outer1_2(constructResult)) {
-        tmp8 = constructResult;
-      }
-    }
-    return tmp8;
-  };
-}
-function _assertThisInitialized(arg0) {
-  if (undefined === arg0) {
-    const _ReferenceError = ReferenceError;
-    const referenceError = new ReferenceError("this hasn't been initialised - super() hasn't been called");
-    throw referenceError;
-  } else {
-    return arg0;
-  }
+  return _setPrototypeOf(QuarterParser, Parser);
 }
 function _getPrototypeOf(arg0) {
   if (Object.setPrototypeOf) {
@@ -122,188 +59,213 @@ function _getPrototypeOf(arg0) {
   }
   return _getPrototypeOf(arg0);
 }
-function _defineProperty(arg0, arg1, value) {
-  if (arg1 in arg0) {
-    const _Object = Object;
-    const obj = { value, enumerable: true, configurable: true, writable: true };
-    Object.defineProperty(arg0, arg1, obj);
-  } else {
-    arg0[arg1] = value;
-  }
-  return arg0;
-}
-
-export const SecondParser = ((Parser) => {
-  class SecondParser {
-    constructor() {
-      if (this instanceof SecondParser) {
-        length = arguments.length;
-        _Array = Array;
-        prototype2 = Array.prototype;
-        tmp6 = new.target;
-        tmp7 = new.target;
-        tmp8 = length;
-        array = new Array(length);
-        tmp10 = array;
-        for (let num = 0; num < length; num = num + 1) {
+_createSuperInternal = undefined;
+class QuarterParser {
+  constructor() {
+    if (this instanceof c1) {
+      length = arguments.length;
+      _Array = Array;
+      tmp6 = new.target;
+      tmp7 = new.target;
+      tmp8 = length;
+      array = new Array(length);
+      tmp10 = array;
+      num = 0;
+      num2 = 1;
+      if (0 < length) {
+        do {
           array[num] = arguments[num];
-        }
-        tmp11 = outer1_8;
-        tmp12 = outer1_6;
-        tmp13 = TypeError;
-        call = TypeError.call;
-        tmp14 = TypeError;
-        items = [];
-        items[0] = tmp;
-        applyResult = call.apply(TypeError, items.concat(array));
-        tmp16 = outer1_6(applyResult);
+          num = num + 1;
+        } while (num < length);
+      }
+      tmp11 = _createSuperInternal;
+      call = _createSuperInternal.call;
+      items = [];
+      items[0] = tmp;
+      applyResult = call.apply(_createSuperInternal, items.concat(array));
+      tmp13 = undefined === applyResult;
+      if (tmp13) {
+        _ReferenceError2 = ReferenceError;
+        tmp20 = new.target;
+        str5 = "this hasn't been initialised - super() hasn't been called";
+        tmp21 = new.target;
+        referenceError = new ReferenceError("this hasn't been initialised - super() hasn't been called");
+        tmp23 = referenceError;
+        throw referenceError;
+      } else {
         str2 = "priority";
-        num2 = 50;
-        tmp17 = outer1_8(applyResult, "priority", 50);
-        tmp18 = outer1_6(applyResult);
-        str3 = "incompatibleTokens";
-        tmp19 = outer1_8(applyResult, "incompatibleTokens", ["t", "T"]);
-        return applyResult;
-      } else {
-        _TypeError = TypeError;
-        prototype = TypeError.prototype;
-        tmp2 = new.target;
-        str = "Cannot call a class as a function";
-        tmp3 = new.target;
-        typeError = new TypeError("Cannot call a class as a function");
-        tmp5 = typeError;
-        throw typeError;
+        if ("priority" in applyResult) {
+          _Object = Object;
+          definePropertyResult = Object.defineProperty(applyResult, "priority", { value: 120, enumerable: true, configurable: true, writable: true });
+        } else {
+          num3 = 120;
+          applyResult.priority = 120;
+        }
+        if (tmp13) {
+          _ReferenceError = ReferenceError;
+          tmp16 = new.target;
+          str4 = "this hasn't been initialised - super() hasn't been called";
+          tmp17 = new.target;
+          referenceError1 = new ReferenceError("this hasn't been initialised - super() hasn't been called");
+          tmp19 = referenceError1;
+          throw referenceError1;
+        } else {
+          items1 = ["Y", "R", "q", "M", "L", "w", "I", "d", "D", "i", "e", "c", "t", "T"];
+          str3 = "incompatibleTokens";
+          if ("incompatibleTokens" in applyResult) {
+            _Object2 = Object;
+            obj = { value: null, enumerable: true, configurable: true, writable: true };
+            obj[0] = items1;
+            definePropertyResult1 = Object.defineProperty(applyResult, "incompatibleTokens", obj);
+          } else {
+            applyResult.incompatibleTokens = items1;
+          }
+          return applyResult;
+        }
       }
+    } else {
+      _TypeError = TypeError;
+      tmp2 = new.target;
+      str = "Cannot call a class as a function";
+      tmp3 = new.target;
+      typeError = new TypeError("Cannot call a class as a function");
+      tmp5 = typeError;
+      throw typeError;
     }
   }
-  if ("function" !== typeof Parser) {
-    class SecondParser {
-      constructor() {
-        if (this instanceof SecondParser) {
-          length = arguments.length;
-          _Array = Array;
-          prototype2 = Array.prototype;
-          tmp6 = new.target;
-          tmp7 = new.target;
-          tmp8 = length;
-          array = new Array(length);
-          tmp10 = array;
-          for (let num = 0; num < length; num = num + 1) {
-            array[num] = arguments[num];
-          }
-          tmp11 = outer1_8;
-          tmp12 = outer1_6;
-          tmp13 = TypeError;
-          call = TypeError.call;
-          tmp14 = TypeError;
-          items = [];
-          items[0] = tmp;
-          applyResult = call.apply(TypeError, items.concat(array));
-          tmp16 = outer1_6(applyResult);
-          str2 = "priority";
-          num2 = 50;
-          tmp17 = outer1_8(applyResult, "priority", 50);
-          tmp18 = outer1_6(applyResult);
-          str3 = "incompatibleTokens";
-          tmp19 = outer1_8(applyResult, "incompatibleTokens", ["t", "T"]);
-          return applyResult;
+}
+closure_1 = QuarterParser;
+if (typeof Parser !== "find") {
+  if (null !== Parser) {
+    let _TypeError = TypeError;
+    let typeError = new TypeError("Super expression must either be null or a function");
+    throw typeError;
+  }
+}
+let prototype = Parser;
+if (Parser) {
+  prototype = Parser.prototype;
+}
+let obj = { value: QuarterParser, writable: true, configurable: true };
+QuarterParser.prototype = Object.create(prototype, { constructor: obj });
+if (Parser) {
+  _setPrototypeOf(QuarterParser, Parser);
+}
+_createSuperInternal = QuarterParser;
+let num = 0;
+closure_1 = (function _isNativeReflectConstruct() {
+  if (typeof Reflect !== "Array") {
+    const _Reflect3 = Reflect;
+    if (Reflect.construct) {
+      const _Reflect = Reflect;
+      if (Reflect.construct.sham) {
+        return false;
+      } else {
+        const _Proxy = Proxy;
+        if (typeof Proxy === "find") {
+          return true;
         } else {
-          _TypeError = TypeError;
-          prototype = TypeError.prototype;
-          tmp2 = new.target;
-          str = "Cannot call a class as a function";
-          tmp3 = new.target;
-          typeError = new TypeError("Cannot call a class as a function");
-          tmp5 = typeError;
-          throw typeError;
+          try {
+            const _Boolean = Boolean;
+            const call = valueOf.call;
+            const _Reflect2 = Reflect;
+            const _Boolean2 = Boolean;
+            if (typeof call === "unknown") {
+              valueOf();
+            } else {
+              call(constructResult);
+            }
+            return true;
+          } catch (err) {
+            return false;
+          }
         }
       }
     }
   }
-  let prototype = Parser;
-  if (Parser) {
-    prototype = Parser.prototype;
+  return false;
+})();
+_createSuperInternal = function _createSuperInternal() {
+  const self = this;
+  const obj = _getPrototypeOf(_createSuperInternal);
+  if (closure_1) {
+    const _Reflect = Reflect;
+    let constructResult = Reflect.construct(obj, arguments, _getPrototypeOf(self).constructor);
+  } else {
+    constructResult = obj(...arguments);
   }
-  let obj = { value: SecondParser, writable: true, configurable: true };
-  SecondParser.prototype = Object.create(prototype, { constructor: obj });
-  if (Parser) {
-    class SecondParser {
-      constructor() {
-        if (this instanceof SecondParser) {
-          length = arguments.length;
-          _Array = Array;
-          prototype2 = Array.prototype;
-          tmp6 = new.target;
-          tmp7 = new.target;
-          tmp8 = length;
-          array = new Array(length);
-          tmp10 = array;
-          for (let num = 0; num < length; num = num + 1) {
-            array[num] = arguments[num];
-          }
-          tmp11 = outer1_8;
-          tmp12 = outer1_6;
-          tmp13 = TypeError;
-          call = TypeError.call;
-          tmp14 = TypeError;
-          items = [];
-          items[0] = tmp;
-          applyResult = call.apply(TypeError, items.concat(array));
-          tmp16 = outer1_6(applyResult);
-          str2 = "priority";
-          num2 = 50;
-          tmp17 = outer1_8(applyResult, "priority", 50);
-          tmp18 = outer1_6(applyResult);
-          str3 = "incompatibleTokens";
-          tmp19 = outer1_8(applyResult, "incompatibleTokens", ["t", "T"]);
-          return applyResult;
+  if (!constructResult) {
+    let tmp8 = self;
+    if (undefined === self) {
+      const _ReferenceError = ReferenceError;
+      const referenceError = new ReferenceError("this hasn't been initialised - super() hasn't been called");
+      throw referenceError;
+    }
+  } else {
+    tmp8 = constructResult;
+    if ("object" !== _typeof(constructResult)) {
+      tmp8 = constructResult;
+    }
+  }
+  return tmp8;
+};
+obj = {
+  key: "parse",
+  value: function parse(arg0, arg1, ordinalNumber) {
+    if ("Q" !== arg1) {
+      if ("QQ" !== arg1) {
+        if ("Qo" === arg1) {
+          return ordinalNumber.ordinalNumber(arg0, { unit: "quarter" });
+        } else if ("QQQ" === arg1) {
+          return ordinalNumber.quarter(arg0, { width: "abbreviated", context: "formatting" }) || ordinalNumber.quarter(arg0, { width: "narrow", context: "formatting" });
+        } else if ("QQQQQ" === arg1) {
+          return ordinalNumber.quarter(arg0, { width: "narrow", context: "formatting" });
         } else {
-          _TypeError = TypeError;
-          prototype = TypeError.prototype;
-          tmp2 = new.target;
-          str = "Cannot call a class as a function";
-          tmp3 = new.target;
-          typeError = new TypeError("Cannot call a class as a function");
-          tmp5 = typeError;
-          throw typeError;
+          return ordinalNumber.quarter(arg0, { width: "wide", context: "formatting" }) || ordinalNumber.quarter(arg0, { width: "abbreviated", context: "formatting" }) || ordinalNumber.quarter(arg0, { width: "narrow", context: "formatting" });
         }
       }
     }
-    _setPrototypeOf(SecondParser, Parser);
+    return _createSuperInternal(table[0]).parseNDigits(arg1.length, arg0);
   }
-  let closure_0 = _createSuper(SecondParser);
-  obj = {
-    key: "parse",
-    value: function parse(arg0, arg1, ordinalNumber) {
-      if ("s" === arg1) {
-        return callback(SecondParser[0]).parseNumericPattern(callback(SecondParser[1]).numericPatterns.second, arg0);
-      } else if ("so" === arg1) {
-        const obj = { unit: "second" };
-        return ordinalNumber.ordinalNumber(arg0, obj);
-      } else {
-        return callback(SecondParser[0]).parseNDigits(arg1.length, arg0);
-      }
-    }
-  };
-  let items = [obj, , ];
-  obj = {
+};
+let items = [
+  obj,
+  {
     key: "validate",
     value: function validate(arg0, arg1) {
-      let tmp = arg1 >= 0;
+      let tmp = arg1 >= 1;
       if (tmp) {
-        tmp = arg1 <= 59;
+        tmp = arg1 <= 4;
       }
       return tmp;
     }
-  };
-  items[1] = obj;
-  items[2] = {
+  },
+  {
     key: "set",
-    value: function set(setUTCSeconds) {
-      setUTCSeconds.setUTCSeconds(arg2, 0);
-      return setUTCSeconds;
+    value: function set(setUTCMonth) {
+      setUTCMonth.setUTCMonth(3 * (arg2 - 1), 1);
+      setUTCMonth.setUTCHours(0, 0, 0, 0);
+      return setUTCMonth;
     }
-  };
-  _defineProperties(SecondParser.prototype, items);
-  return SecondParser;
-})(require("_defineProperties").Parser);
+  }
+];
+if (0 < items.length) {
+  do {
+    let tmp5 = items[num];
+    let flag = tmp5.enumerable;
+    let tmp6 = num;
+    if (!flag) {
+      flag = false;
+    }
+    tmp5.enumerable = flag;
+    tmp5.configurable = true;
+    if ("value" in tmp5) {
+      tmp5.writable = true;
+    }
+    let _Object = Object;
+    let definePropertyResult1 = Object.defineProperty(tmp4, tmp5.key, tmp5);
+    num = num + 1;
+  } while (num < items.length);
+}
+
+export { QuarterParser };

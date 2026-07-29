@@ -1,39 +1,133 @@
-// Module ID: 15166
-// Function ID: 115277
+// Module ID: 15199
+// Function ID: 15200
 // Name: _handleVoiceChannelPress
-// Dependencies: [5, 31, 27, 5762, 3793, 4177, 4360, 4238, 10263, 653, 33, 689, 4654, 9117, 1935, 4376, 8297, 15165, 15167, 10218, 566, 15158, 9042, 4155, 7712, 8292, 675, 15159, 15071, 9073, 1212, 4347, 15082, 15076, 11209, 2]
+// Dependencies: [5, 19, 17, 5780, 3817, 4201, 4385, 4262, 10284, 676, 21, 712, 4676, 9141, 1959, 4399, 8321, 15198, 15200, 10239, 589, 15191, 9066, 4179, 7735, 8316, 698, 15192, 15104, 9097, 1236, 4372, 15115, 15109, 11233, 2]
 
-// Module 15166 (_handleVoiceChannelPress)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import importAllResult from "_createForOfIteratorHelperLoose";
-import { View } from "LimitAndDurationInfo";
-import closure_6 from "_isNativeReflectConstruct";
-import closure_7 from "_isNativeReflectConstruct";
-import closure_8 from "_isNativeReflectConstruct";
-import closure_9 from "_isNativeReflectConstruct";
-import closure_10 from "_isNativeReflectConstruct";
-import { NO_VOICE_STATES } from "_isNativeReflectConstruct";
+// Module 15199 (_handleVoiceChannelPress)
+import generateOldThreadCutoff from "generateOldThreadCutoff";
+import importAllResult from "useIsConnectedToVoiceChannel";
+import { View } from "useStartTime";
+import handleConnectionOpen from "handleConnectionOpen";
+import getUncachedChannelPermissions from "getUncachedChannelPermissions";
+import closure_8 from "generateOldThreadCutoff";
+import updateUserGuildSettingsInternal from "updateUserGuildSettingsInternal";
+import getVoiceStatesForGuild from "getVoiceStatesForGuild";
+import { NO_VOICE_STATES } from "getVoiceStatesForGuild";
 import ME from "ME";
-import { jsx } from "AudienceItem";
+import { jsx } from "getChannelSubtitleData";
 
 let closure_12;
-let closure_13;
+let map1;
 const require = arg1;
 function _handleVoiceChannelPress() {
-  // CreateGeneratorClosureLongIndex (0x67)
-  const obj = callback(tmp);
-  return obj(...arguments);
+  const self = this;
+  const tmp = callback((arg0) => {
+    let closure_0 = arg0;
+    let c2 = 0;
+    let c3 = 0;
+    return (function*(arg0, openMemberVerificationModal) {
+      if (c3 === 2) {
+        c3 = 3;
+        HermesBuiltin.throwTypeError();
+      } else if (tmp3 === 3) {
+        if (arg0 === 1) {
+          throw openMemberVerificationModal;
+        } else if (arg0 === 2) {
+          let obj = { value: null, done: true };
+          obj[0] = openMemberVerificationModal;
+          return obj;
+        } else {
+          return { value: "HermesInternal", done: null };
+        }
+      } else {
+        try {
+          c3 = 2;
+          if (0 === paths) {
+            if (arg0 === 1) {
+              c3 = 3;
+              throw openMemberVerificationModal;
+            } else if (arg0 === 2) {
+              c3 = 3;
+              obj = { value: null, done: true };
+              obj[0] = openMemberVerificationModal;
+              return obj;
+            } else {
+              let guildId = tmp4;
+              guildId = undefined;
+              guildId = guildId.getGuildId();
+              if (null != guildId) {
+                let obj3 = guildId(paths[12]);
+                if (obj3.shouldShowMembershipVerificationGate(guildId)) {
+                  paths = 1;
+                  c3 = 1;
+                  const obj1 = { value: null, done: false };
+                  obj1[0] = tmp10(tmp11[14])(tmp11[13], tmp11.paths);
+                  return obj1;
+                }
+                tmp10 = guildId;
+              }
+              paths = 2;
+              c3 = 1;
+              const obj2 = { value: null, done: false };
+              obj2[0] = guildId(paths[14])(paths[15], paths.paths);
+              return obj2;
+            }
+          } else if (1 === tmp4) {
+            if (arg0 === 1) {
+              c3 = 3;
+              throw openMemberVerificationModal;
+            } else if (arg0 === 2) {
+              c3 = 3;
+              obj3 = { value: null, done: true };
+              obj3[0] = openMemberVerificationModal;
+              return obj3;
+            } else {
+              c3 = 3;
+              const obj4 = { value: null, done: true };
+              obj4[0] = openMemberVerificationModal.openMemberVerificationModal(guildId);
+              return obj4;
+            }
+          } else if (arg0 === 1) {
+            c3 = 3;
+            throw openMemberVerificationModal;
+          } else if (arg0 === 2) {
+            c3 = 3;
+            obj = { value: null, done: true };
+            obj[0] = openMemberVerificationModal;
+            return obj;
+          } else {
+            openMemberVerificationModal.openGuildVoiceModal(guildId, "Channel List");
+            c3 = 3;
+            return { value: "HermesInternal", done: null };
+          }
+        } catch (tmp14) {
+          c3 = tmp;
+          throw tmp14;
+        }
+      }
+    })();
+  });
+  const _handleVoiceChannelPress = tmp;
+  const apply = tmp.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
 }
-({ AnalyticEvents: closure_12, Permissions: closure_13 } = ME);
-let obj = {};
-obj = { flexDirection: "row", alignItems: "center", gap: require("_createForOfIteratorHelperLoose").space.PX_8, maxHeight: 1 };
-obj.channelInfo = obj;
-obj.voiceStates = { marginLeft: 36, marginTop: -4, marginBottom: 2 };
-obj.voiceStatesCollapsed = { marginLeft: 16 };
-obj.container = { marginVertical: require("hairlineWidth").CHANNEL_MARGIN_VERTICAL, marginHorizontal: 8, borderRadius: require("_createForOfIteratorHelperLoose").radii.md };
-let closure_16 = importAllResult.memo((channel) => {
+let c4 = importAllResult;
+({ AnalyticEvents: closure_12, Permissions: map1 } = ME);
+let obj = { channelInfo: null, voiceStates: null, voiceStatesCollapsed: null, container: null };
+obj = { flexDirection: "row", alignItems: "center", gap: require("Themes").space.PX_8, maxHeight: 1 };
+obj[0] = obj;
+obj[1] = { marginLeft: 36, marginTop: -4, marginBottom: 2 };
+obj[2] = { marginLeft: 16 };
+obj[3] = { marginVertical: require("hairlineWidth").CHANNEL_MARGIN_VERTICAL, marginHorizontal: 8, borderRadius: require("Themes").radii.md };
+let closure_17 = importAllResult.memo((channel) => {
   let collapsed;
   let embeddedActivitiesCount;
+  let hasUnread;
   let locked;
   let mentionCount;
   let resolvedUnreadSetting;
@@ -44,24 +138,23 @@ let closure_16 = importAllResult.memo((channel) => {
   ({ selected, collapsed, subtitle } = channel);
   let gameMentionsAsPlainText;
   ({ locked, voiceStates, embeddedActivitiesCount } = channel);
-  let obj = channel(8297);
+  let obj = channel(8321);
   const activeEvent = obj.useActiveEvent(channel.id);
-  let obj1 = channel(15165);
+  let obj1 = channel(15198);
   const startTime = obj1.useStartTime(channel);
-  let obj2 = channel(15167);
+  let obj2 = channel(15200);
   const ensureSyncedChannelVoiceStates = obj2.useEnsureSyncedChannelVoiceStates(channel.id, voiceStates);
-  let obj3 = channel(10218);
+  let obj3 = channel(10239);
   const isConnectedToVoiceChannel = obj3.useIsConnectedToVoiceChannel(channel);
-  let obj4 = channel(566);
-  const items = [closure_8, closure_9];
+  let obj4 = channel(589);
+  const items = [closure_8, updateUserGuildSettingsInternal];
   const items1 = [channel];
   const stateFromStoresObject = obj4.useStateFromStoresObject(items, () => ({ hasUnread: outer1_8.hasUnread(channel.id), mentionCount: outer1_8.getMentionCount(channel.id), resolvedUnreadSetting: outer1_9.resolveUnreadSetting(channel) }), items1);
-  let hasUnread = stateFromStoresObject.hasUnread;
-  ({ mentionCount, resolvedUnreadSetting } = stateFromStoresObject);
-  let obj5 = channel(15158);
+  ({ hasUnread, mentionCount, resolvedUnreadSetting } = stateFromStoresObject);
+  let obj5 = channel(15191);
   const channelSubtitleData = obj5.getChannelSubtitleData(subtitle);
   let type;
-  if (null != subtitle) {
+  if (subtitle != null) {
     type = subtitle.type;
   }
   let text = null;
@@ -71,18 +164,25 @@ let closure_16 = importAllResult.memo((channel) => {
       text = subtitle.text;
     }
   }
-  let obj6 = channel(9042);
-  gameMentionsAsPlainText = obj6.useGameMentionsAsPlainText(text);
+  let tmpResult = tmp(9066);
+  gameMentionsAsPlainText = tmpResult.useGameMentionsAsPlainText(text);
   let result = null;
   if (null != gameMentionsAsPlainText) {
-    let obj7 = gameMentionsAsPlainText(4155);
-    obj = { channelId: channel.id, linkVariant: "text-xs/medium" };
+    let obj7 = gameMentionsAsPlainText(4179);
+    obj = { channelId: null, linkVariant: "text-xs/medium" };
+    obj[0] = channel.id;
     result = obj7.parseVoiceChannelStatus(gameMentionsAsPlainText, true, obj);
   }
-  let tmp12;
-  if (!obj10.shouldSkipAccessibilityLabels()) {
-    obj = { channel, unread: hasUnread, mentionCount, voiceStates: ensureSyncedChannelVoiceStates, embeddedActivitiesCount };
-    tmp12 = gameMentionsAsPlainText(8292)(obj);
+  tmpResult = tmp(7735);
+  let tmp13;
+  if (!tmpResult.shouldSkipAccessibilityLabels()) {
+    obj = { channel: null, unread: null, mentionCount: null, voiceStates: null, embeddedActivitiesCount: null };
+    obj[0] = channel;
+    obj[1] = hasUnread;
+    obj[2] = mentionCount;
+    obj[3] = ensureSyncedChannelVoiceStates;
+    obj[4] = embeddedActivitiesCount;
+    tmp13 = gameMentionsAsPlainText(8316)(obj);
   }
   const items2 = [, , ];
   ({ id: arr4[0], guild_id: arr4[1] } = channel);
@@ -90,24 +190,29 @@ let closure_16 = importAllResult.memo((channel) => {
   const effect = importAllResult.useEffect(() => {
     if (null !== gameMentionsAsPlainText) {
       let obj = gameMentionsAsPlainText(outer1_2[26]);
-      obj = {};
-      ({ guild_id: obj2.guild_id, id: obj2.channel_id } = channel);
+      obj = { guild_id: null, channel_id: null };
+      ({ guild_id: obj2[0], id: obj2[1] } = channel);
       obj.track(outer1_12.VOICE_CHANNEL_TOPIC_VIEWED, obj);
     }
   }, items2);
-  if (null == result) {
+  if (result == null) {
     subtitle = undefined;
-    if (null != channelSubtitleData) {
+    if (channelSubtitleData != null) {
       subtitle = channelSubtitleData.subtitle;
     }
     result = subtitle;
   }
-  obj10 = channel(7712);
-  const tmp17 = jsx;
   obj1 = {
     onPress() {
       return (function handleVoiceChannelPress(channel) {
-        return outer2_17(...arguments);
+        const self = this;
+        const apply = closure_16.apply;
+        if (typeof apply === "unknown") {
+          let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+        } else {
+          applyArgumentsResult = apply(self, arguments);
+        }
+        return applyArgumentsResult;
       })(channel);
     },
     onLongPress() {
@@ -116,48 +221,95 @@ let closure_16 = importAllResult.memo((channel) => {
     style: obj.container,
     accessible: true,
     accessibilityRole: "button",
-    accessibilityLabel: tmp12
+    accessibilityLabel: tmp13,
+    accessibilityHint: null,
+    channel: null,
+    selected: null,
+    locked: null,
+    unread: null,
+    resolvedUnreadSetting: null,
+    subtitle: null,
+    isChannelLive: null,
+    channelInfo: null,
+    children: null
   };
-  const tmp18 = jsx(gameMentionsAsPlainText(15159), { channel, isChannelSelected: selected, isChannelCollapsed: collapsed, voiceStates: ensureSyncedChannelVoiceStates, enableConnectedUserLimit: true, enableActivities: true });
-  const intl = channel(1212).intl;
-  obj1.accessibilityHint = intl.string(channel(1212).t["9C444m"]);
-  obj1.channel = channel;
-  obj1.selected = selected;
-  obj1.locked = locked;
+  const tmp19 = jsx(gameMentionsAsPlainText(15192), { channel, isChannelSelected: selected, isChannelCollapsed: collapsed, voiceStates: ensureSyncedChannelVoiceStates, enableConnectedUserLimit: true, enableActivities: true });
+  const intl = tmp(1236).intl;
+  obj1[6] = intl.string(channel(1236).t["9C444m"]);
+  obj1[7] = channel;
+  obj1[8] = selected;
+  obj1[9] = locked;
   if (hasUnread) {
     hasUnread = isConnectedToVoiceChannel;
   }
-  obj1.unread = hasUnread;
-  obj1.resolvedUnreadSetting = resolvedUnreadSetting;
-  obj1.subtitle = result;
-  obj1.isChannelLive = null != activeEvent || null != startTime;
-  obj1.channelInfo = tmp18;
-  let tmp20 = null;
+  obj1[10] = hasUnread;
+  obj1[11] = resolvedUnreadSetting;
+  obj1[12] = result;
+  obj1[13] = null != activeEvent || null != startTime;
+  obj1[14] = tmp19;
+  let tmp17Result = null;
   if (0 !== ensureSyncedChannelVoiceStates.length) {
     if (collapsed) {
-      obj2 = { channels: null, selectedChannelId: null, selectedVoiceChannelId: null };
+      obj2 = { channels: null, selectedChannelId: null, selectedVoiceChannelId: null, voiceStates: null };
       const items3 = [channel];
-      obj2.channels = items3;
+      obj2[0] = items3;
       obj3 = {};
       obj3[channel.id] = ensureSyncedChannelVoiceStates;
-      obj2.voiceStates = obj3;
-      obj4 = { style: obj.voiceStatesCollapsed };
-      const summarizedVoiceUsers = channel(4347).computeSummarizedVoiceUsers(obj2);
-      obj5 = { users: summarizedVoiceUsers, max: 8, guildId: channel.guild_id, renderIcon: false };
-      obj4.children = jsx(gameMentionsAsPlainText(15082), { users: summarizedVoiceUsers, max: 8, guildId: channel.guild_id, renderIcon: false });
-      tmp20 = <View style={obj.voiceStatesCollapsed} />;
-      const obj15 = channel(4347);
+      obj2[3] = obj3;
+      obj4 = { style: null, children: null };
+      obj4[0] = tmp21.voiceStatesCollapsed;
+      const summarizedVoiceUsers = tmp(4372).computeSummarizedVoiceUsers(obj2);
+      obj5 = { users: null, max: 8, guildId: null, renderIcon: false };
+      obj5[0] = summarizedVoiceUsers;
+      obj5[2] = channel.guild_id;
+      obj4[1] = tmp17(tmp18(15115), obj5);
+      tmp17Result = tmp17(View, obj4);
+      const tmpResult1 = tmp(4372);
     } else {
-      obj6 = { style: obj.voiceStates };
-      obj7 = { channel, collapsed, voiceStates: ensureSyncedChannelVoiceStates };
-      obj6.children = jsx(gameMentionsAsPlainText(15076), { channel, collapsed, voiceStates: ensureSyncedChannelVoiceStates });
-      tmp20 = <View style={obj.voiceStates} />;
+      const obj6 = { style: null, children: null };
+      obj6[0] = tmp21.voiceStates;
+      obj7 = { channel: null, collapsed: null, voiceStates: null };
+      obj7[0] = channel;
+      obj7[1] = collapsed;
+      obj7[2] = ensureSyncedChannelVoiceStates;
+      obj6[1] = tmp17(tmp18(15109), obj7);
+      tmp17Result = tmp17(View, obj6);
     }
   }
-  obj1.children = tmp20;
-  return tmp17(gameMentionsAsPlainText(15071), obj1);
+  obj1[15] = tmp17Result;
+  return jsx(gameMentionsAsPlainText(15104), {
+    onPress() {
+      return (function handleVoiceChannelPress(channel) {
+        const self = this;
+        const apply = closure_16.apply;
+        if (typeof apply === "unknown") {
+          let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+        } else {
+          applyArgumentsResult = apply(self, arguments);
+        }
+        return applyArgumentsResult;
+      })(channel);
+    },
+    onLongPress() {
+      const result = channel(outer1_2[29]).openChannelLongPressActionSheet(channel.id);
+    },
+    style: obj.container,
+    accessible: true,
+    accessibilityRole: "button",
+    accessibilityLabel: tmp13,
+    accessibilityHint: null,
+    channel: null,
+    selected: null,
+    locked: null,
+    unread: null,
+    resolvedUnreadSetting: null,
+    subtitle: null,
+    isChannelLive: null,
+    channelInfo: null,
+    children: null
+  });
 });
-let obj1 = { marginVertical: require("hairlineWidth").CHANNEL_MARGIN_VERTICAL, marginHorizontal: 8, borderRadius: require("_createForOfIteratorHelperLoose").radii.md };
+let obj1 = { marginVertical: require("hairlineWidth").CHANNEL_MARGIN_VERTICAL, marginHorizontal: 8, borderRadius: require("Themes").radii.md };
 const memoResult = importAllResult.memo((channel) => {
   let bypassLimit;
   let collapsed;
@@ -166,35 +318,34 @@ const memoResult = importAllResult.memo((channel) => {
   let subtitle;
   channel = channel.channel;
   ({ selected, subtitle } = channel);
-  let obj = channel(566);
-  const items = [closure_10];
+  let obj = channel(589);
+  const items = [getVoiceStatesForGuild];
   const items1 = [channel.guild_id];
   const stateFromStores = obj.useStateFromStores(items, () => outer1_10.getVoiceStates(channel.guild_id), items1);
-  const arr3 = importDefault(11209)(channel);
-  const items2 = [closure_7, closure_6];
-  const stateFromStoresObject = channel(566).useStateFromStoresObject(items2, () => ({ locked: !outer1_7.can(outer1_13.CONNECT, channel), bypassLimit: outer1_7.can(outer1_13.MOVE_MEMBERS, channel), collapsed: outer1_6.isCollapsed(channel.id) }));
-  obj = { channel };
-  let length;
+  const arr3 = importDefault(11233)(channel);
+  const items2 = [getUncachedChannelPermissions, handleConnectionOpen];
+  const stateFromStoresObject = channel(589).useStateFromStoresObject(items2, () => ({ locked: !outer1_7.can(outer1_13.CONNECT, channel), bypassLimit: outer1_7.can(outer1_13.MOVE_MEMBERS, channel), collapsed: outer1_6.isCollapsed(channel.id) }));
+  obj = { channel, embeddedActivitiesCount: null, collapsed: null, voiceStates: null, selected: null, locked: null, bypassLimit: null, subtitle: null };
+  let num;
   ({ locked, bypassLimit, collapsed } = stateFromStoresObject);
-  if (null != arr3) {
-    length = arr3.length;
+  if (arr3 != null) {
+    num = arr3.length;
   }
-  let num = 0;
-  if (null != length) {
-    num = length;
+  if (num == null) {
+    num = 0;
   }
-  obj.embeddedActivitiesCount = num;
-  obj.collapsed = collapsed;
-  let tmp6 = stateFromStores[channel.id];
-  if (null == tmp6) {
-    tmp6 = NO_VOICE_STATES;
+  obj[1] = num;
+  obj[2] = collapsed;
+  let tmp5 = stateFromStores[channel.id];
+  if (tmp5 == null) {
+    tmp5 = NO_VOICE_STATES;
   }
-  obj.voiceStates = tmp6;
-  obj.selected = selected;
-  obj.locked = locked;
-  obj.bypassLimit = bypassLimit;
-  obj.subtitle = subtitle;
-  return <closure_16 channel={channel} />;
+  obj[3] = tmp5;
+  obj[4] = selected;
+  obj[5] = locked;
+  obj[6] = bypassLimit;
+  obj[7] = subtitle;
+  return <closure_17 channel={channel} embeddedActivitiesCount={null} collapsed={null} voiceStates={null} selected={null} locked={null} bypassLimit={null} subtitle={null} />;
 });
 let result = require("get ActivityIndicator").fileFinishedImporting("modules/channel_list_v2/native/items/VoiceChannel.tsx");
 

@@ -1,18 +1,18 @@
-// Module ID: 11890
-// Function ID: 91999
+// Module ID: 11914
+// Function ID: 11915
 // Name: UnlockWithNitroButton
-// Dependencies: [31, 5654, 5796, 655, 33, 566, 5657, 8736, 1212, 4579, 4161, 6606, 2]
+// Dependencies: [19, 5672, 5814, 678, 21, 589, 5675, 8760, 1236, 4601, 4185, 6627, 2]
 // Exports: UnlockWithNitroButton
 
-// Module 11890 (UnlockWithNitroButton)
-import "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_4 from "_isNativeReflectConstruct";
+// Module 11914 (UnlockWithNitroButton)
+import "noop";
+import updateProduct from "updateProduct";
+import map from "map";
 import { ShopCtaEnum } from "items";
 import { jsx } from "jsxProd";
 
 const require = arg1;
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/collectibles/native/UnlockWithNitroButton.tsx");
+const result = require("map").fileFinishedImporting("modules/collectibles/native/UnlockWithNitroButton.tsx");
 
 export const UnlockWithNitroButton = function UnlockWithNitroButton(shouldShrink) {
   let require;
@@ -23,47 +23,45 @@ export const UnlockWithNitroButton = function UnlockWithNitroButton(shouldShrink
   }
   ({ onTrackPress: require, text } = shouldShrink);
   let importDefault;
-  let obj = require(566) /* initialize */;
-  const items = [closure_4, _isNativeReflectConstruct];
+  let obj = require(589) /* initialize */;
+  const items = [map, updateProduct];
   const stateFromStores = obj.useStateFromStores(items, () => {
-    let isPurchasingProductResult = null != outer1_4.isClaiming;
+    let isPurchasingProductResult = null != isClaiming.isClaiming;
     if (!isPurchasingProductResult) {
-      isPurchasingProductResult = outer1_3.isPurchasingProduct(outer1_0(outer1_2[6]).ProductIds.GENERIC_CONSUMABLE);
+      isPurchasingProductResult = purchasingProduct.isPurchasingProduct(callback(table[6]).ProductIds.GENERIC_CONSUMABLE);
     }
     return isPurchasingProductResult;
   });
-  importDefault = importDefault(8736)();
-  if (null == text) {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    text = intl.string(require(1212) /* getSystemLocale */.t.sEAnVH);
+  importDefault = importDefault(8760)();
+  if (text == null) {
+    const intl = tmp(1236).intl;
+    text = intl.string(tmp(1236).t.sEAnVH);
   }
-  obj = {};
-  let tmp5;
+  let tmp4Result;
   if (flag) {
-    obj = { variant: "text-xs/semibold", color: "text-overlay-light", allowFontScaling: false, children: text };
-    tmp5 = jsx(require(4161) /* Text */.Text, { variant: "text-xs/semibold", color: "text-overlay-light", allowFontScaling: false, children: text });
+    obj = { variant: "text-xs/semibold", color: "text-overlay-light", allowFontScaling: false, children: null };
+    obj[3] = text;
+    tmp4Result = tmp4(tmp(4185).Text, obj);
   }
-  obj.textElement = tmp5;
-  let tmp9;
+  obj = { textElement: tmp4Result, text: null, accessibilityLabel: null, variant: "primary", size: null, grow: true, icon: null, onPress: null, disabled: null };
+  let tmp6;
   if (!flag) {
-    tmp9 = text;
+    tmp6 = text;
   }
-  obj.text = tmp9;
-  obj.accessibilityLabel = text;
-  obj.variant = "primary";
+  obj[1] = tmp6;
+  obj[2] = text;
   let str = "md";
   if (flag) {
     str = "sm";
   }
-  obj.size = str;
-  obj.grow = true;
-  obj.icon = jsx(require(6606) /* NitroWheelIcon */.NitroWheelIcon, { size: "sm", color: "white" });
-  obj.onPress = function onPress() {
-    if (null != callback) {
-      callback(outer1_5.UNLOCK_WITH_NITRO);
+  obj[4] = str;
+  obj[6] = jsx(require(6627) /* NitroWheelIcon */.NitroWheelIcon, { size: "sm", color: "white" });
+  obj[7] = function onPress() {
+    if (closure_0 != null) {
+      tmp(outer1_5.UNLOCK_WITH_NITRO);
     }
     callback2();
   };
-  obj.disabled = stateFromStores;
-  return jsx(require(4579) /* CollapsingText */.BaseTextButton, {});
+  obj[8] = stateFromStores;
+  return jsx(require(4601) /* CollapsingText */.BaseTextButton, { textElement: tmp4Result, text: null, accessibilityLabel: null, variant: "primary", size: null, grow: true, icon: null, onPress: null, disabled: null });
 };

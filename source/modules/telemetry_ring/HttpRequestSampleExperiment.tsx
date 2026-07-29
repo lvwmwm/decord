@@ -1,14 +1,15 @@
-// Module ID: 16068
-// Function ID: 123959
+// Module ID: 16103
+// Function ID: 16104
 // Name: apexExperiment
-// Dependencies: [1428, 2]
+// Dependencies: [1452, 2]
 // Exports: getHttpRequestSampleRate
 
-// Module 16068 (apexExperiment)
+// Module 16103 (apexExperiment)
 import ApexExperiment from "ApexExperiment";
 
-const obj = { kind: "user", name: "2026-04-http-request-sample", defaultConfig: { sampleRate: 0 }, variations: { [1]: { sampleRate: 0.0001 } } };
-const apexExperiment = ApexExperiment.createApexExperiment(obj);
+const obj = { 1: null };
+obj[1] = { sampleRate: 0.0001 };
+const apexExperiment = ApexExperiment.createApexExperiment({ kind: "user", name: "2026-04-http-request-sample", defaultConfig: { sampleRate: 0 }, variations: obj });
 const result = require("set").fileFinishedImporting("modules/telemetry_ring/HttpRequestSampleExperiment.tsx");
 
 export default apexExperiment;

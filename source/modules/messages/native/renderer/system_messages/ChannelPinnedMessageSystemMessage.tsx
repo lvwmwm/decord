@@ -1,52 +1,51 @@
-// Module ID: 7742
-// Function ID: 61651
+// Module ID: 7765
+// Function ID: 7766
 // Name: createChannelPinnedMessageSystemMessage
-// Dependencies: [7720, 7722, 1212, 7723, 7726, 2]
+// Dependencies: [7743, 7745, 1236, 7746, 7749, 2]
 // Exports: createChannelPinnedMessageSystemMessage
 
-// Module 7742 (createChannelPinnedMessageSystemMessage)
+// Module 7765 (createChannelPinnedMessageSystemMessage)
 const result = require("getSystemLocale").fileFinishedImporting("modules/messages/native/renderer/system_messages/ChannelPinnedMessageSystemMessage.tsx");
 
 export const createChannelPinnedMessageSystemMessage = function createChannelPinnedMessageSystemMessage(roleStyle) {
   const message = roleStyle.message;
-  let obj = require(7720) /* getMessageAuthorWithProcessedColor */;
+  let obj = require(7743) /* getMessageAuthorWithProcessedColor */;
   const messageAuthorWithProcessedColor = obj.getMessageAuthorWithProcessedColor(message);
-  obj = { username: messageAuthorWithProcessedColor.nick, usernameOnClick: importDefault(7722)({ message, author: messageAuthorWithProcessedColor, roleStyle: roleStyle.roleStyle }), pinsOnClick: obj };
+  obj = { username: messageAuthorWithProcessedColor.nick, usernameOnClick: importDefault(7745)({ message, author: messageAuthorWithProcessedColor, roleStyle: roleStyle.roleStyle }), pinsOnClick: obj };
   obj = { action: "bindOpenPins", messageChannelId: message.channel_id, medium: true };
   const messageReference = message.messageReference;
   if (null != messageReference) {
-    const intl2 = require(1212) /* getSystemLocale */.intl;
+    const intl2 = tmp(1236).intl;
     const obj1 = {};
     const merged = Object.assign(obj);
-    const obj2 = { action: "bindJumpToMessage" };
-    ({ channel_id: obj5.targetChannelId, message_id: obj5.targetMessageId } = messageReference);
-    obj2.medium = true;
-    obj1["messageOnClick"] = obj2;
-    let formatToPartsResult = intl2.formatToParts(require(1212) /* getSystemLocale */.t["7mvRNF"], obj1);
+    ({ channel_id: obj5[1], message_id: obj5[2] } = messageReference);
+    obj1.messageOnClick = { action: "bindJumpToMessage", targetChannelId: null, targetMessageId: null, medium: true };
+    let formatToPartsResult = intl2.formatToParts(tmp(1236).t["7mvRNF"], obj1);
+    const obj2 = { action: "bindJumpToMessage", targetChannelId: null, targetMessageId: null, medium: true };
   } else {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    formatToPartsResult = intl.formatToParts(require(1212) /* getSystemLocale */.t["6TrHq2"], obj);
+    const intl = tmp(1236).intl;
+    formatToPartsResult = intl.formatToParts(tmp(1236).t["6TrHq2"], obj);
   }
-  const tmp10 = importDefault(7723)(roleStyle);
-  let accessibilityActions = tmp10.accessibilityActions;
-  if (null == accessibilityActions) {
+  const tmp9 = importDefault(7746)(roleStyle);
+  let accessibilityActions = tmp9.accessibilityActions;
+  if (accessibilityActions == null) {
     accessibilityActions = [];
   }
   const items = [...accessibilityActions];
-  const obj3 = {};
-  const intl3 = require(1212) /* getSystemLocale */.intl;
-  obj3.label = intl3.string(require(1212) /* getSystemLocale */.t["mp1N/2"]);
-  obj3.name = require(7726) /* getQuickReactionLabel */.MessageAccessibilityAction.OPEN_PINS;
+  const obj3 = { label: null, name: null };
+  const intl3 = tmp(1236).intl;
+  obj3[0] = intl3.string(require(1236) /* getSystemLocale */.t["mp1N/2"]);
+  obj3[1] = require(7749) /* MessageAccessibilityAction */.MessageAccessibilityAction.OPEN_PINS;
   items.push(obj3);
   if (null != messageReference) {
-    const obj4 = {};
-    const intl4 = require(1212) /* getSystemLocale */.intl;
-    obj4.label = intl4.string(require(1212) /* getSystemLocale */.t["+TSRGD"]);
-    obj4.name = require(7726) /* getQuickReactionLabel */.MessageAccessibilityAction.JUMP_TO_MESSAGE;
+    const obj4 = { label: null, name: null };
+    const intl4 = tmp(1236).intl;
+    obj4[0] = intl4.string(tmp(1236).t["+TSRGD"]);
+    obj4[1] = tmp(7749).MessageAccessibilityAction.JUMP_TO_MESSAGE;
     items.push(obj4);
   }
   const obj5 = { content: formatToPartsResult };
-  const merged1 = Object.assign(tmp10);
-  obj5["accessibilityActions"] = items;
+  const merged1 = Object.assign(tmp9);
+  obj5.accessibilityActions = items;
   return obj5;
 };

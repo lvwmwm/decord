@@ -1,27 +1,39 @@
 // Module ID: 3331
-// Function ID: 26164
-// Dependencies: [1932, 1933]
+// Function ID: 3332
+// Dependencies: [1956, 1957]
 
 // Module 3331
-import result from "result";
+import buildMatchFn from "buildMatchFn";
+import buildMatchPatternFn from "buildMatchPatternFn";
 
-obj = { ordinalNumber: require("result")(obj), era: result.default({ matchPatterns: obj1, defaultMatchWidth: "wide", parsePatterns: { wide: items, any: items1 }, defaultParseWidth: "any" }), quarter: result.default(obj2), month: result.default({ matchPatterns: obj4, defaultMatchWidth: "wide", parsePatterns: { narrow: items4, any: items5 }, defaultParseWidth: "any" }), day: result.default({ matchPatterns: obj5, defaultMatchWidth: "wide", parsePatterns: { narrow: items6, wide: items7, any: items8 }, defaultParseWidth: "any" }), dayPeriod: result.default({ matchPatterns: obj6, defaultMatchWidth: "any", parsePatterns: { narrow: obj7, any: obj8 }, defaultParseWidth: "any" }) };
-obj = {
-  matchPattern: /^(\d+)(-oji)?/i,
+if (!buildMatchFn) {
+  let obj = { default: null };
+  obj[0] = buildMatchFn;
+} else {
+  obj = buildMatchFn;
+}
+if (!buildMatchPatternFn) {
+  obj = { default: null };
+  obj[0] = buildMatchPatternFn;
+  let obj2 = obj;
+} else {
+  obj2 = buildMatchPatternFn;
+}
+obj2 = {
+  matchPattern: /^(\d+)\.?/i,
   parsePattern: /\d+/i,
-  valueCallback(replaced) {
-    return parseInt(replaced, 10);
+  valueCallback(joined) {
+    return parseInt(joined, 10);
   }
 };
-items = [/prieš/i, /(po|mūsų)/i];
-items1 = [/^pr/i, /^(po|m)/i];
-const items2 = [/1/i, /2/i, /3/i, /4/i];
-const items3 = [/I$/i, /II$/i, /III/i, /IV/i];
-items4 = [/^s/i, /^v/i, /^k/i, /^b/i, /^g/i, /^b/i, /^l/i, /^r/i, /^r/i, /^s/i, /^l/i, /^g/i];
-items5 = [/^saus/i, /^vas/i, /^kov/i, /^bal/i, /^geg/i, /^birž/i, /^liep/i, /^rugp/i, /^rugs/i, /^spal/i, /^lapkr/i, /^gruod/i];
-items6 = [/^s/i, /^p/i, /^a/i, /^t/i, /^k/i, /^p/i, /^š/i];
-items7 = [/^se/i, /^pi/i, /^an/i, /^tr/i, /^ke/i, /^pe/i, /^še/i];
-items8 = [/^sk/i, /^pr/i, /^an/i, /^tr/i, /^kt/i, /^pn/i, /^št/i];
+const items = [/ie/i, /isz/i];
+const items1 = [/^(i\.?\s?e\.?|b\s?ce)/i, /^(i\.?\s?sz\.?|c\s?e)/i];
+const items2 = [/előtt/i, /(szerint|i. sz.)/i];
+const items3 = [/1|I$/i, /2|II$/i, /3|III/i, /4|IV/i];
+const items4 = [/^j/i, /^f/i, /^m/i, /^a|á/i, /^m/i, /^j/i, /^j/i, /^a/i, /^s|sz/i, /^o/i, /^n/i, /^d/i];
+const items5 = [/^ja/i, /^f/i, /^már/i, /^áp/i, /^máj/i, /^jún/i, /^júl/i, /^au/i, /^s/i, /^o/i, /^n/i, /^d/i];
+const items6 = [/^v/i, /^h/i, /^k/i, /^sz/i, /^c/i, /^p/i, /^sz/i];
+const items7 = [/^v/i, /^h/i, /^k/i, /^sze/i, /^c/i, /^p/i, /^szo/i];
 
-export default obj;
+export default { ordinalNumber: obj2.default(obj2), era: obj.default({ matchPatterns: obj3, defaultMatchWidth: "wide", parsePatterns: { narrow: items, abbreviated: items1, any: items2 }, defaultParseWidth: "any" }), quarter: obj.default(obj4), month: obj.default({ matchPatterns: obj6, defaultMatchWidth: "wide", parsePatterns: { narrow: items4, any: items5 }, defaultParseWidth: "any" }), day: obj.default({ matchPatterns: obj7, defaultMatchWidth: "wide", parsePatterns: { narrow: items6, any: items7 }, defaultParseWidth: "any" }), dayPeriod: obj.default({ matchPatterns: obj8, defaultMatchWidth: "any", parsePatterns: { any: obj9 }, defaultParseWidth: "any" }) };
 export default exports.default;

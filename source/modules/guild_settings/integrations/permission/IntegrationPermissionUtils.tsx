@@ -1,52 +1,55 @@
-// Module ID: 5685
-// Function ID: 48613
-// Name: toPermissionKey
-// Dependencies: [57, 1882, 5686, 2]
-// Exports: commandName, commandPermissionChannels, commandPermissionMembersRoles, keyPermissions
+// Module ID: 5703
+// Function ID: 5704
+// Name: commandPermissions
+// Dependencies: [32, 1906, 5704, 2]
+// Exports: commandName, commandPermissionChannels, commandPermissionMembersRoles, keyPermissions, toPermissionKey
 
-// Module 5685 (toPermissionKey)
+// Module 5703 (commandPermissions)
 import _slicedToArray from "_slicedToArray";
 
 const require = arg1;
-function toPermissionKey(value, ROLE) {
-  return "" + value + ":" + ROLE;
-}
 function commandPermissions(arg0, items) {
-  let tmp3;
-  let tmp4;
+  let tmp6;
+  let tmp7;
   const obj = {};
   const entries = Object.entries(arg0);
-  for (let num = 0; num < entries.length; num = num + 1) {
-    let tmp = callback;
-    let tmp2 = callback(entries[num], 2);
-    [tmp3, tmp4] = tmp2;
-    if (items.includes(tmp4.type)) {
-      obj[tmp3] = tmp4;
+  while (tmp2 !== undefined) {
+    let tmp4 = callback;
+    let tmp5 = callback(tmp3, 2);
+    [tmp6, tmp7] = tmp5;
+    let tmp8 = tmp7;
+    if (items.includes(tmp7.type)) {
+      let tmp9 = tmp6;
+      let tmp10 = tmp7;
+      obj[tmp6] = tmp8;
     }
+    continue;
   }
   return obj;
 }
 const result = require("ApplicationCommandSectionType").fileFinishedImporting("modules/guild_settings/integrations/permission/IntegrationPermissionUtils.tsx");
 
-export const commandName = function commandName(arg0, arg1) {
+export const commandName = function commandName(arg0) {
   let text = arg1;
-  if (arg0 === require(1882) /* PermissionOverwriteType */.ApplicationCommandType.CHAT) {
+  if (arg0 === require(1906) /* PermissionOverwriteType */.ApplicationCommandType.CHAT) {
     text = `/${arg1}`;
   }
   return text;
 };
 export const commandPermissionChannels = function commandPermissionChannels(arg0) {
-  const items = [require(5686) /* ApplicationCommandSectionType */.ApplicationCommandPermissionType.CHANNEL];
+  const items = [require(5704) /* ApplicationCommandSectionType */.ApplicationCommandPermissionType.CHANNEL];
   return commandPermissions(arg0, items);
 };
 export const commandPermissionMembersRoles = function commandPermissionMembersRoles(arg0) {
-  const items = [require(5686) /* ApplicationCommandSectionType */.ApplicationCommandPermissionType.ROLE, require(5686) /* ApplicationCommandSectionType */.ApplicationCommandPermissionType.USER];
+  const items = [require(5704) /* ApplicationCommandSectionType */.ApplicationCommandPermissionType.ROLE, require(5704) /* ApplicationCommandSectionType */.ApplicationCommandPermissionType.USER];
   return commandPermissions(arg0, items);
 };
-export { toPermissionKey };
+export const toPermissionKey = function toPermissionKey(allChannelsSentinelResult, CHANNEL) {
+  return "" + allChannelsSentinelResult + ":" + CHANNEL;
+};
 export const keyPermissions = function keyPermissions(permissions) {
   return Object.fromEntries(permissions.map((id) => {
-    const items = [outer1_3(id.id, id.type), id];
+    const items = ["" + id.id + ":" + id.type, id];
     return items;
   }));
 };

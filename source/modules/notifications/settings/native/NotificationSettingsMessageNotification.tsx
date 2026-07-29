@@ -1,126 +1,107 @@
-// Module ID: 10298
-// Function ID: 79478
+// Module ID: 10319
+// Function ID: 10320
 // Name: NotificationSettingsMessageNotification
-// Dependencies: [31, 27, 33, 4165, 689, 10299, 4161, 1212, 4695, 10300, 10297, 4133, 10302, 1935, 10291, 10304, 2]
+// Dependencies: [19, 17, 21, 4189, 712, 10320, 4185, 1236, 4717, 10321, 10318, 4157, 10323, 1959, 10312, 10325, 2]
 // Exports: NotificationSettingsChannelMessageNotification, NotificationSettingsGuildMessageNotification
 
-// Module 10298 (NotificationSettingsMessageNotification)
-import "result";
+// Module 10319 (NotificationSettingsMessageNotification)
+import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_4;
-let closure_5;
+let c4;
+let c5;
 const require = arg1;
 class NotificationSettingsMessageNotification {
   constructor(arg0) {
     closure_0 = global;
-    tmp = c6();
+    tmp = jsxs();
+    tmp2 = closure_0;
+    tmp3 = closure_2;
     obj = require("getPushNotificationSelectOptions");
     pushNotificationSelectOptions = obj.getPushNotificationSelectOptions();
     found = pushNotificationSelectOptions.find((value) => value.value === onPress.setting);
-    obj = { style: global.style };
-    obj1 = { style: tmp.header };
-    tmp3 = jsxs;
-    tmp4 = View;
     tmp5 = jsxs;
     tmp6 = View;
-    obj2 = { variant: "text-sm/semibold", color: "text-default" };
-    obj2.style = tmp.headerTitle;
+    obj = { style: global.style, children: null };
+    obj1 = { style: tmp.header, children: null };
+    tmp7 = jsx;
+    obj2 = { variant: "text-sm/semibold", color: "text-default", style: tmp.headerTitle, children: null };
     intl = require("getSystemLocale").intl;
-    obj2.children = intl.string(require("getSystemLocale").t["1m22ZB"]);
+    obj2[3] = intl.string(require("getSystemLocale").t["1m22ZB"]);
     items = [, ];
     items[0] = jsx(require("Text").Text, obj2);
-    tmp7 = jsx;
-    obj3 = { variant: "text-xs/semibold", color: "text-default" };
     if ("guild" === global.context) {
-      tmp11 = closure_0;
-      tmp12 = closure_2;
       intl3 = require("getSystemLocale").intl;
       stringResult = intl3.string(require("getSystemLocale").t["4bP2ZZ"]);
     } else {
-      tmp8 = closure_0;
-      tmp9 = closure_2;
       intl2 = require("getSystemLocale").intl;
       stringResult = intl2.string(require("getSystemLocale").t["R1j5+4"]);
     }
-    obj3.children = stringResult;
-    items[1] = tmp7(require("Text").Text, obj3);
-    obj1.children = items;
+    items[1] = tmp7(require("Text").Text, { variant: "text-xs/semibold", color: "text-default", children: stringResult });
+    obj1[1] = items;
     items1 = [, ];
     items1[0] = tmp5(tmp6, obj1);
-    tmp13 = jsx;
-    obj4 = { onPress: global.onCustomize, activeOpacity: 0.6 };
-    obj5 = { style: tmp.card };
-    tmp14 = jsxs;
-    tmp15 = View;
-    obj6 = { notificationSetting: global.setting };
+    obj3 = { onPress: global.onCustomize, activeOpacity: 0.6, children: null };
+    obj4 = { style: tmp.card, children: null };
+    obj5 = { notificationSetting: global.setting };
     items2 = [, , ];
-    items2[0] = jsx(require("NotificationSettingsMockMessage"), obj6);
-    tmp16 = jsx;
-    obj7 = { variant: "text-sm/medium", style: tmp.label };
-    label = undefined;
-    if (null != found) {
-      label = found.label;
+    items2[0] = tmp7(require("NotificationSettingsMockMessage"), obj5);
+    obj6 = { variant: "text-sm/medium", style: tmp.label, children: null };
+    str = undefined;
+    if (found != null) {
+      str = found.label;
     }
-    str = "unset";
-    if (null != label) {
-      str = label;
+    if (str == null) {
+      str = "unset";
     }
-    obj7.children = str;
-    items2[1] = tmp16(require("Text").Text, obj7);
-    obj8 = { onPress: global.onCustomize };
-    obj9 = { variant: "text-sm/semibold", style: null, color: "text-brand" };
-    obj9.style = tmp.cta;
+    obj6[2] = str;
+    items2[1] = tmp7(require("Text").Text, obj6);
+    obj7 = { onPress: global.onCustomize, children: null };
+    obj8 = { variant: "text-sm/semibold", style: tmp.cta, color: "text-brand", children: null };
     intl4 = require("getSystemLocale").intl;
-    obj9.children = intl4.string(require("getSystemLocale").t.yxiV9W);
-    obj8.children = jsx(require("Text").Text, obj9);
-    items2[2] = jsx(require("PressableBase").PressableOpacity, obj8);
-    obj5.children = items2;
-    obj4.children = tmp14(tmp15, obj5);
-    items1[1] = tmp13(require("PressableBase").PressableOpacity, obj4);
-    obj.children = items1;
-    return tmp3(tmp4, obj);
+    obj8[3] = intl4.string(require("getSystemLocale").t.yxiV9W);
+    obj7[1] = tmp7(require("Text").Text, obj8);
+    items2[2] = tmp7(require("PressableBase").PressableOpacity, obj7);
+    obj4[1] = items2;
+    obj3[2] = tmp5(tmp6, obj4);
+    items1[1] = tmp7(require("PressableBase").PressableOpacity, obj3);
+    obj[1] = items1;
+    return tmp5(tmp6, obj);
   }
 }
-({ jsx: closure_4, jsxs: closure_5 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWEST, borderColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_MOD_SUBTLE, borderRadius: 20, borderWidth: 1, padding: 14 };
-_createForOfIteratorHelperLoose.card = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.cta = { textAlign: "center", marginTop: 4 };
-_createForOfIteratorHelperLoose.label = { textAlign: "center", marginTop: 8 };
-_createForOfIteratorHelperLoose.header = { marginBottom: 8 };
-_createForOfIteratorHelperLoose.headerTitle = { marginBottom: 4 };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+({ jsx: c4, jsxs: c5 } = jsxProd);
+createCacheKey = { card: null, cta: null, label: null, header: null, headerTitle: null };
+createCacheKey = { backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOWEST, borderColor: require("Themes").colors.BACKGROUND_MOD_SUBTLE, borderRadius: 20, borderWidth: 1, padding: 14 };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { textAlign: "center", marginTop: 4 };
+createCacheKey[2] = { textAlign: "center", marginTop: 8 };
+createCacheKey[3] = { marginBottom: 8 };
+createCacheKey[4] = { marginBottom: 4 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
 const result = require("jsxProd").fileFinishedImporting("modules/notifications/settings/native/NotificationSettingsMessageNotification.tsx");
 
 export default NotificationSettingsMessageNotification;
 export const NotificationSettingsGuildMessageNotification = function NotificationSettingsGuildMessageNotification(style) {
   const _require = style;
-  let obj = {
-    context: "guild",
-    style: style.style,
-    setting: _require(10297).useGuildPresetSettings(style.guildId).notification,
-    onCustomize() {
-      let obj = outer1_1(outer1_2[11]);
-      obj = { guildId: style.guildId };
-      obj.openLazy(style(outer1_2[13])(outer1_2[12], outer1_2.paths), "MessageNotificationGuildActionSheet", obj);
-    }
+  let obj = { context: "guild", style: style.style, setting: null, onCustomize: null };
+  obj[2] = _require(10318).useGuildPresetSettings(style.guildId).notification;
+  obj[3] = function onCustomize() {
+    let obj = outer1_1(outer1_2[11]);
+    obj = { guildId: style.guildId };
+    obj.openLazy(style(outer1_2[13])(outer1_2[12], outer1_2.paths), "MessageNotificationGuildActionSheet", obj);
   };
   return callback(NotificationSettingsMessageNotification, obj);
 };
 export const NotificationSettingsChannelMessageNotification = function NotificationSettingsChannelMessageNotification(style) {
   const _require = style;
-  let obj = {
-    context: "channel",
-    style: style.style,
-    setting: _require(10291).useChannelPresetSettings(style.channel).notification,
-    onCustomize() {
-      let obj = outer1_1(outer1_2[11]);
-      obj = { channel: style.channel };
-      obj.openLazy(style(outer1_2[13])(outer1_2[15], outer1_2.paths), "MessageNotificationChannelActionSheet", obj);
-    }
+  let obj = { context: "channel", style: style.style, setting: null, onCustomize: null };
+  obj[2] = _require(10312).useChannelPresetSettings(style.channel).notification;
+  obj[3] = function onCustomize() {
+    let obj = outer1_1(outer1_2[11]);
+    obj = { channel: style.channel };
+    obj.openLazy(style(outer1_2[13])(outer1_2[15], outer1_2.paths), "MessageNotificationChannelActionSheet", obj);
   };
   return callback(NotificationSettingsMessageNotification, obj);
 };

@@ -1,209 +1,246 @@
-// Module ID: 4510
-// Function ID: 39661
+// Module ID: 4533
+// Function ID: 4534
 // Name: getAlertModalItemKey
-// Dependencies: [5, 57, 830, 31, 27, 482, 33, 4165, 689, 4511, 4507, 4026, 1820, 4512, 4559, 682, 4566, 1212, 3884, 1557, 4574, 1450, 4575, 4576, 4161, 4577, 4578, 2]
+// Dependencies: [5, 32, 853, 19, 17, 505, 21, 4189, 712, 4534, 4530, 4050, 1844, 4535, 4582, 705, 4588, 1236, 3908, 1581, 4596, 1474, 4597, 4598, 4185, 4599, 4600, 2]
 // Exports: showConfirmModal, useDismissModalCallback
 
-// Module 4510 (getAlertModalItemKey)
+// Module 4533 (getAlertModalItemKey)
 import sum from "sum";
 import _slicedToArray from "_slicedToArray";
 import _toArray from "_toArray";
-import importAllResult from "result";
-import get_ActivityIndicator from "set";
-import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import importAllResult from "useSafeAreaInsets";
+import get_ActivityIndicator from "getSystemLocale";
+import jsxProd from "useWindowDimensions";
+import createCacheKey from "createCacheKey";
 import context3 from "asyncGeneratorStep";
 
-let closure_10;
-let closure_11;
+let c10;
+let c9;
 let closure_12;
-let closure_7;
-let closure_8;
-let closure_9;
-let require = arg1;
+let error;
+let metroImportAll;
+let unpackModuleId;
+const require = arg1;
 function getAlertModalItemKey(key) {
   return key.key;
 }
 function dismissTopAlert() {
-  let useAlertStore = _require(4507).useAlertStore;
-  const arr = callback2(useAlertStore.getState().alerts);
+  const useAlertStore = _require(4530).useAlertStore;
+  const arr = callback3(useAlertStore.getState().alerts);
   const first = arr[0];
   _require = arr.slice(1);
-  let tmp2 = null != first;
-  if (tmp2) {
-    tmp2 = false === first.dismissable;
+  let tmp4 = null != first;
+  if (tmp4) {
+    tmp4 = false === first.dismissable;
   }
-  if (!tmp2) {
+  if (!tmp4) {
+    let tmpResult = tmp(4530);
     let key;
-    if (null != first) {
+    if (first != null) {
       key = first.key;
     }
-    _require(4507).dismissAlert(key);
-    const obj = _require(4507);
-    _require(682).batchUpdates(() => {
+    tmpResult.dismissAlert(key);
+    tmpResult = tmp(705);
+    tmpResult.batchUpdates(() => {
       const useAlertStore = callback(outer1_2[10]).useAlertStore;
       return useAlertStore.setState({ alerts: callback });
     });
-    const obj2 = _require(682);
   }
 }
 function AlertModalBackdrop() {
   const context = importAllResult.useContext(closure_16);
-  const tmp2 = callback(useSharedAnimationState(), 2);
+  const tmp2 = callback2(useSharedAnimationState(), 2);
   let first = tmp2[0];
   const dependencyMap = tmp4;
-  let obj = context(4507);
+  let obj = context(4530);
   const alertStore = obj.useAlertStore((arg0) => {
     const first = arg0.alerts[0];
     let dismissable;
-    if (null != first) {
+    if (first != null) {
       dismissable = first.dismissable;
     }
     return false !== dismissable;
   });
-  const fn = function t() {
-    return {
-      opacity: outer1_23(tmp4.get(), (arg0) => {
-        let tmp = true === arg0;
-        if (tmp) {
-          tmp = 0 === outer1_2.get();
-        }
-        if (tmp) {
-          const value = outer1_1.get();
-          tmp = value === context(4511).TransitionStates.YEETED;
-        }
-        if (tmp) {
-          context(4026).runOnJS(outer1_0)();
-          const obj = context(4026);
-        }
-      })
+  let fn = function t() {
+    let value = tmp4.get();
+    if (typeof outer1_26 !== "find") {
+      HermesBuiltin.throwTypeError();
+    }
+    let obj = { opacity: null };
+    const fn = (arg0) => {
+      let tmp = true === arg0;
+      if (tmp) {
+        tmp = 0 === closure_2.get();
+      }
+      if (tmp) {
+        const value = closure_1.get();
+        tmp = value === outer1_0(outer1_2[9]).TransitionStates.YEETED;
+      }
+      if (tmp) {
+        outer1_0(outer1_2[11]).runOnJS(closure_0)();
+        const obj = outer1_0(outer1_2[11]);
+      }
     };
+    obj[0] = context(tmp4[25]).withSpring(value, outer1_14, "animate-always", fn);
+    return obj;
   };
-  obj = { withAlertModalSpring: closure_23, sharedVisible: tmp4, sharedTransitionState: first, TransitionStates: context(4511).TransitionStates, runOnJS: context(4026).runOnJS, cleanUp: context };
+  obj = { withAlertModalSpring, sharedVisible: tmp4, sharedTransitionState: first, TransitionStates: context(4534).TransitionStates, runOnJS: context(4050).runOnJS, cleanUp: context };
   fn.__closure = obj;
   fn.__workletHash = 4470729133936;
-  fn.__initData = closure_20;
-  const animatedStyle = context(4026).useAnimatedStyle(fn);
-  obj = { blur: "strong", style: animatedStyle };
-  let tmp8 = null;
+  fn.__initData = closure_22;
+  const animatedStyle = context(4050).useAnimatedStyle(fn);
+  obj = { blur: "strong", style: animatedStyle, onDismiss: null, accessibilityLabel: null };
+  let tmp10 = null;
   if (alertStore) {
-    tmp8 = dismissTopAlert;
+    tmp10 = dismissTopAlert;
   }
-  obj.onDismiss = tmp8;
-  const intl = context(1212).intl;
-  obj.accessibilityLabel = intl.string(context(1212).t.Xkfav5);
-  return closure_10(context(4566).Backdrop, obj);
+  obj[2] = tmp10;
+  const intl = tmp5(1236).intl;
+  obj[3] = intl.string(context(1236).t.Xkfav5);
+  return closure_10(context(4588).Backdrop, obj);
 }
 class AlertModal {
   constructor(arg0) {
     ({ content, actions } = global);
+    c0 = undefined;
+    c1 = undefined;
+    c2 = undefined;
+    enabled = undefined;
+    c4 = undefined;
+    useSharedValue = undefined;
+    c6 = undefined;
+    c7 = undefined;
+    top = undefined;
+    bottom = undefined;
+    height = undefined;
     ({ header, title, extraContent } = global);
-    context = Object.useContext(createContext);
-    closure_0 = context;
-    context1 = Object.useContext(createContext);
-    closure_1 = context1;
-    tmp3 = c13();
-    context2 = Object.useContext(c19);
-    closure_2 = context2;
-    enabled = Object.useContext(require("context").AccessibilityPreferencesContext).reducedMotion.enabled;
-    ref = Object.useRef(null);
+    context = c6.useContext(createContext);
+    c0 = context;
+    context1 = c6.useContext(createContext);
+    c1 = context1;
+    tmp3 = Fragment();
+    context2 = c6.useContext(createContext);
+    c2 = context2;
+    tmp5 = c0;
+    tmp6 = c2;
+    enabled = c6.useContext(require("context").AccessibilityPreferencesContext).reducedMotion.enabled;
+    ref = c6.useRef(null);
     c4 = ref;
-    obj = require("module_4026");
+    obj = require("module_4050");
     sharedValue = obj.useSharedValue(context1);
-    c5 = sharedValue;
-    tmp7 = c4(useSharedAnimationState(), 2);
-    first = tmp7[0];
-    Object = first;
-    tmp9 = tmp7[1];
-    View = tmp9;
+    useSharedValue = sharedValue;
+    tmp9 = c4(useSharedAnimationState(), 2);
+    first = tmp9[0];
+    c6 = first;
+    tmp11 = tmp9[1];
+    c7 = tmp11;
     rect = require("useSafeAreaInsets")();
     top = rect.top;
     bottom = rect.bottom;
     items = [];
     items[0] = context1;
-    effect = Object.useEffect(() => {
+    effect = c6.useEffect(() => {
       if (0 === context1) {
         let obj = context(context2[20]);
-        obj = { ref, delay: 300 };
+        obj = { ref: null, delay: 300 };
+        obj[0] = ref;
         const result = obj.setAccessibilityFocus(obj);
       }
     }, items);
     height = require("useWindowDimensions")().height;
-    obj2 = require("module_4026");
+    obj2 = require("module_4050");
     class B {
       constructor() {
         diff = height - 32;
-        obj = { position: "absolute" };
+        tmp3 = outer1_26;
+        obj = c7;
         result = 2 * Math.max(top, bottom);
-        obj.opacity = outer1_23(closure_7.get(), (arg0) => {
+        value = c7.get();
+        if (typeof outer1_26 !== "find") {
+          str4 = "Trying to call a non-function";
+          throwTypeErrorResult = HermesBuiltin.throwTypeError();
+        }
+        obj = { position: "absolute", opacity: null, zIndex: null, height: null, maxHeight: null, transform: null };
+        tmp5 = c0;
+        tmp6 = c2;
+        fn = (arg0) => {
           let tmp = true === arg0;
           if (tmp) {
-            tmp = 0 === outer1_7.get();
+            tmp = 0 === closure_7.get();
           }
           if (tmp) {
-            const value = outer1_6.get();
-            tmp = value === context(context2[9]).TransitionStates.YEETED;
+            const value = closure_6.get();
+            tmp = value === outer1_0(outer1_2[9]).TransitionStates.YEETED;
           }
           if (tmp) {
-            context(context2[11]).runOnJS(outer1_0)();
-            const obj = context(context2[11]);
+            outer1_0(outer1_2[11]).runOnJS(closure_0)();
+            const obj = outer1_0(outer1_2[11]);
           }
-        });
-        obj.zIndex = 10 - _toArray.get();
+        };
+        obj3 = require("CONFIG_NEVER_ANIMATE");
+        tmp7 = outer1_14;
+        obj[1] = obj3.withSpring(value, outer1_14, "animate-always", fn);
+        obj4 = useSharedValue;
+        obj[2] = 10 - useSharedValue.get();
         str = "auto";
-        if (_toArray.get() > 0) {
-          tmp3 = closure_2;
-          str = closure_2.get();
+        if (useSharedValue.get() > 0) {
+          tmp8 = c2;
+          str = c2.get();
         }
-        obj.height = str;
-        obj.maxHeight = diff - result;
+        obj[3] = str;
+        obj[4] = diff - result;
         if (enabled) {
           items = [];
         } else {
-          obj = {};
-          tmp5 = closure_7;
-          tmp4 = outer1_23;
           num = 0.7;
           num2 = 1;
-          if (1 === closure_7.get()) {
-            tmp6 = _toArray;
+          if (1 === obj.get()) {
             num3 = 0.1;
-            num = 1 - 0.1 * _toArray.get();
+            num = 1 - 0.1 * obj4.get();
           }
-          obj.scale = tmp4(num);
+          if (typeof tmp3 !== "find") {
+            str5 = "Trying to call a non-function";
+            throwTypeErrorResult1 = HermesBuiltin.throwTypeError();
+          }
+          obj1 = { scale: null };
+          tmp5Result = require("CONFIG_NEVER_ANIMATE");
+          tmp9 = tmp5Result;
+          tmp10 = num;
+          tmp11 = tmp7;
+          str2 = "animate-always";
+          obj1[0] = tmp5Result.withSpring(num, tmp7, "animate-always", undefined);
           items = [, ];
-          items[0] = obj;
-          obj1 = {};
-          tmp8 = closure_7;
-          tmp7 = outer1_23;
-          if (1 === closure_7.get()) {
-            items1 = [0];
-            num5 = -20;
-            items1[1] = -20;
-            num6 = -34;
-            items1[2] = -34;
-            tmp11 = _toArray;
-            result1 = items1[_toArray.get(_toArray)];
-            tmp13 = null;
-            if (null == result1) {
-              tmp14 = closure_7;
-              num7 = -12;
-              result1 = -12 * closure_7.get();
+          items[0] = obj1;
+          if (1 === obj.get()) {
+            result1 = [0, -20, -34][obj4.get(obj4)];
+            tmp14 = null;
+            if (result1 == null) {
+              num5 = -12;
+              result1 = -12 * obj.get();
             }
             diff1 = result1;
           } else {
-            tmp9 = _toArray;
             num4 = 50;
-            diff1 = 50 - 50 * _toArray.get();
+            diff1 = 50 - 50 * obj4.get();
           }
-          obj1.translateY = tmp7(diff1);
-          items[1] = obj1;
+          if (typeof tmp3 !== "find") {
+            str6 = "Trying to call a non-function";
+            throwTypeErrorResult2 = HermesBuiltin.throwTypeError();
+          }
+          obj2 = { translateY: null };
+          tmp5Result1 = require("CONFIG_NEVER_ANIMATE");
+          tmp15 = tmp5Result1;
+          tmp16 = diff1;
+          tmp17 = tmp7;
+          str3 = "animate-always";
+          obj2[0] = tmp5Result1.withSpring(diff1, tmp7, "animate-always", undefined);
+          items[1] = obj2;
         }
-        obj.transform = items;
+        obj[5] = items;
         return obj;
       }
     }
-    obj = { sharedVisible: tmp9, sharedTransitionState: first, TransitionStates: require("_createForOfIteratorHelperLoose").TransitionStates, runOnJS: require("module_4026").runOnJS, cleanUp: context, windowHeight: height, ALERT_MODAL_MARGIN: 16, safeAreaTop: top, safeAreaBottom: bottom, withAlertModalSpring: f39693, sharedIndex: sharedValue, sharedTopHeight: context2, useReducedMotion: enabled };
+    obj = { sharedVisible: tmp11, sharedTransitionState: first, TransitionStates: require("wrapChildrenDefault").TransitionStates, runOnJS: require("module_4050").runOnJS, cleanUp: context, windowHeight: height, ALERT_MODAL_MARGIN: 16, safeAreaTop: top, safeAreaBottom: bottom, withAlertModalSpring, sharedIndex: sharedValue, sharedTopHeight: context2, useReducedMotion: enabled };
     B.__closure = obj;
     B.__workletHash = 655123755546;
     B.__initData = memo;
@@ -211,119 +248,131 @@ class AlertModal {
     items1[0] = context1;
     items1[1] = sharedValue;
     animatedStyle = obj2.useAnimatedStyle(B);
-    layoutEffect = Object.useLayoutEffect(() => {
+    layoutEffect = c6.useLayoutEffect(() => {
       const result = sharedValue.set(context1);
     }, items1);
-    tmp13 = require("useBackPressHandler")(() => {
-      outer1_27();
+    tmp15 = require("useBackPressHandler")(() => {
+      let useAlertStore = context(context2[10]).useAlertStore;
+      const arr = sharedValue(useAlertStore.getState().alerts);
+      const first = arr[0];
+      context = arr.slice(1);
+      let tmp4 = null != first;
+      if (tmp4) {
+        tmp4 = false === first.dismissable;
+      }
+      if (!tmp4) {
+        let tmpResult = tmp(tmp2[10]);
+        let key;
+        if (first != null) {
+          key = first.key;
+        }
+        tmpResult.dismissAlert(key);
+        tmpResult = tmp(tmp2[15]);
+        tmpResult.batchUpdates(() => {
+          const useAlertStore = callback(outer1_2[10]).useAlertStore;
+          return useAlertStore.setState({ alerts: callback });
+        });
+      }
       return true;
     });
-    tmp14 = height;
-    obj1 = {};
+    tmp16 = height;
     str = "no-hide-descendants";
     if (0 === context1) {
       str = "auto";
     }
-    obj1.importantForAccessibility = str;
-    obj1.accessibilityElementsHidden = 0 !== context1;
+    obj1 = {
+      importantForAccessibility: str,
+      accessibilityElementsHidden: 0 !== context1,
+      style: items2,
+      onLayout(nativeEvent) {
+            const result = context2.set(nativeEvent.nativeEvent.layout.height);
+          },
+      children: null
+    };
     items2 = [, ];
     items2[0] = tmp3.content;
     items2[1] = animatedStyle;
-    obj1.style = items2;
-    obj1.onLayout = function onLayout(nativeEvent) {
-      const result = context2.set(nativeEvent.nativeEvent.layout.height);
-    };
-    obj2 = { alwaysBounceVertical: false };
-    obj3 = { style: tmp3.overflow };
-    tmp15 = height;
-    tmp16 = bottom;
-    tmp17 = height;
-    tmp18 = View;
+    obj2 = { style: tmp3.overflow, children: null };
     tmp19 = jsxs;
-    obj4 = { spacing: 24 };
+    tmp17 = bottom;
+    tmp18 = c7;
     items3 = [, , , ];
     items3[0] = header;
-    tmp20 = jsxs;
-    obj5 = { spacing: 8, style: items4 };
+    obj3 = { spacing: 8, style: items4, children: null };
     items4 = [];
     items4[0] = tmp3.body;
-    obj6 = { ref: null, variant: "heading-lg/bold", accessibilityRole: "header", color: "mobile-text-heading-primary" };
-    obj6.ref = ref;
-    obj6.children = title;
     items5 = [, ];
-    items5[0] = height(require("Text").Text, obj6);
-    tmp21 = null;
+    items5[0] = tmp16(require("Text").Text, { ref, variant: "heading-lg/bold", accessibilityRole: "header", color: "mobile-text-heading-primary", children: title });
+    tmp16Result = null;
     if (null != content) {
       str2 = "";
-      tmp21 = null;
+      tmp16Result = null;
       if ("" !== content) {
-        tmp22 = height;
-        tmp23 = closure_0;
-        tmp24 = closure_2;
-        obj7 = { variant: "text-md/medium", color: "text-default" };
-        obj7.style = tmp3.contentText;
-        obj7.children = content;
-        tmp21 = height(require("Text").Text, obj7);
+        obj4 = { variant: "text-md/medium", color: "text-default", style: null, children: null };
+        obj4[2] = tmp3.contentText;
+        obj4[3] = content;
+        tmp16Result = tmp16(require("Text").Text, obj4);
       }
     }
-    items5[1] = tmp21;
-    obj5.children = items5;
-    items3[1] = tmp20(require("Stack").Stack, obj5);
+    items5[1] = tmp16Result;
+    obj3[2] = items5;
+    items3[1] = tmp19(require("Stack").Stack, obj3);
     items3[2] = extraContent;
-    tmp25 = null;
+    tmp16Result1 = null;
     if (null != actions) {
-      tmp26 = height;
-      tmp27 = AlertActions;
-      obj8 = {};
-      obj8.children = actions;
-      tmp25 = height(AlertActions, obj8);
+      tmp22 = AlertActions;
+      obj5 = { children: null };
+      obj5[0] = actions;
+      tmp16Result1 = tmp16(AlertActions, obj5);
     }
-    items3[3] = tmp25;
-    obj4.children = items3;
-    obj3.children = tmp19(require("Stack").Stack, obj4);
-    obj2.children = tmp17(tmp18, obj3);
-    obj1.children = tmp15(tmp16, obj2);
-    return tmp14(require("module_4026").View, obj1);
+    obj6 = { alwaysBounceVertical: false, children: null };
+    items3[3] = tmp16Result1;
+    obj2[1] = tmp19(require("Stack").Stack, { spacing: 24, children: items3 });
+    obj6[1] = tmp16(tmp18, obj2);
+    obj1[4] = tmp16(tmp17, obj6);
+    return tmp16(require("module_4050").View, obj1);
   }
 }
 function useSharedAnimationState() {
+  let obj = importAllResult;
   const context = importAllResult.useContext(closure_15);
   const context1 = importAllResult.useContext(closure_16);
-  let obj = context(sharedValue[11]);
   let num = 0;
   if (context === context(sharedValue[9]).TransitionStates.MOUNTED) {
     num = 1;
   }
-  sharedValue = obj.useSharedValue(num);
-  const sharedValue1 = context(sharedValue[11]).useSharedValue(context);
+  sharedValue = context(sharedValue[11]).useSharedValue(num);
+  let tmp3Result = tmp3(tmp4[11]);
+  const sharedValue1 = tmp3Result.useSharedValue(context);
   const items = [sharedValue, context, sharedValue1];
-  const layoutEffect = importAllResult.useLayoutEffect(() => {
+  const layoutEffect = obj.useLayoutEffect(() => {
     const result = sharedValue1.set(context);
   }, items);
-  const obj2 = context(sharedValue[11]);
+  tmp3Result = tmp3(tmp4[11]);
   const fn = function n() {
     return sharedValue1.get();
   };
   fn.__closure = { sharedTransitionState: sharedValue1 };
   fn.__workletHash = 14603144870585;
-  fn.__initData = closure_24;
+  fn.__initData = closure_27;
   const fn2 = function t(arg0) {
     if (arg0 === context(sharedValue[9]).TransitionStates.YEETED) {
       if (1 === sharedValue.get()) {
-        const result = sharedValue.set(0);
+        const result = obj.set(0);
       } else {
         context(sharedValue[11]).runOnJS(context1)();
-        const obj = context(sharedValue[11]);
+        const tmpResult = context(sharedValue[11]);
       }
+      obj = sharedValue;
     } else {
       const result1 = sharedValue.set(1);
     }
   };
-  obj = { TransitionStates: context(sharedValue[9]).TransitionStates, sharedVisible: sharedValue, runOnJS: context(sharedValue[11]).runOnJS, cleanUp: context1 };
+  obj = { TransitionStates: tmp3(tmp4[9]).TransitionStates, sharedVisible: sharedValue, runOnJS: tmp3(tmp4[11]).runOnJS, cleanUp: context1 };
   fn2.__closure = obj;
   fn2.__workletHash = 9486923983340;
-  fn2.__initData = closure_25;
-  const animatedReaction = context(sharedValue[11]).useAnimatedReaction(fn, fn2);
+  fn2.__initData = closure_28;
+  const animatedReaction = tmp3Result.useAnimatedReaction(fn, fn2);
   const items1 = [sharedValue1, sharedValue];
   return items1;
 }
@@ -334,133 +383,199 @@ class AlertActions {
 }
 class AlertActionButton {
   constructor(arg0) {
-    ({ onPress, loading } = global);
-    obj = Object.create(null);
-    obj.onPress = 0;
-    obj.loading = 0;
-    merged = Object.assign(global, obj);
-    tmp3 = c4(Object.useState(false), 2);
-    first = tmp3[0];
-    c1 = tmp3[1];
-    c2 = Object.useContext(c18);
-    tmp5 = jsx;
+    ({ onPress: f103915, loading } = global);
+    merged = Object.assign(global, Object.create(null));
+    useState = undefined;
+    useState = undefined;
+    tmp2 = _slicedToArray(defineProperty.useState(false), 2);
+    useState = tmp2[1];
+    useState = defineProperty.useContext(c18);
+    tmp3 = jsx;
     obj = {};
     merged1 = Object.assign(merged);
-    obj["grow"] = true;
-    if (null != loading) {
-      first = loading;
+    obj.grow = true;
+    if (loading == null) {
+      loading = tmp2[0];
     }
-    obj["loading"] = first;
-    obj["onPress"] = (() => {
-      let closure_0 = outer1_3(async (arg0) => {
-        let tmp;
-        if (null != callback) {
-          tmp = callback(arg0);
-        }
-        if (null != tmp) {
-          if (tmp4 instanceof Promise) {
-            outer2_1(true);
-            yield tmp4;
+    obj.loading = loading;
+    f103915 = undefined;
+    f103915 = sum((arg0) => {
+      let closure_0 = arg0;
+      let c2 = 0;
+      let c4 = 0;
+      let c3 = 0;
+      return (function*(arg0) {
+        if (c4 === 2) {
+          c4 = 3;
+          HermesBuiltin.throwTypeError();
+        } else if (tmp6 === 3) {
+          if (arg0 === 1) {
+            throw arg1;
+          } else if (arg0 === 2) {
+            let obj = { value: null, done: true };
+            obj[0] = arg1;
+            return obj;
+          } else {
+            return { value: "HermesInternal", done: null };
+          }
+        } else {
+          try {
+            c4 = 2;
+            if (0 === c2) {
+              if (arg0 === 1) {
+                c4 = 3;
+                throw arg1;
+              } else if (arg0 === 2) {
+                c4 = 3;
+                obj = { value: null, done: true };
+                obj[0] = arg1;
+                return obj;
+              } else {
+                let closure_1 = tmp3;
+                let tmp11;
+                if (callback != null) {
+                  tmp11 = callback(callback);
+                }
+                if (null != tmp11) {
+                  if (tmp11 instanceof Promise) {
+                    outer1_1(true);
+                    let c3 = 1;
+                    c2 = 2;
+                    c4 = 1;
+                    const obj1 = { value: null, done: false };
+                    obj1[0] = tmp11;
+                    return obj1;
+                  }
+                }
+                let obj2 = callback(table[10]);
+                obj2.dismissAlert(c2);
+                c4 = 3;
+              }
+            } else if (1 === tmp7) {
+              c3 = 0;
+              outer1_1(false);
+              c4 = 3;
+              obj2 = { value: null, done: true };
+              obj2[0] = undefined;
+              return obj2;
+            } else if (arg0 === 1) {
+              c4 = 3;
+              throw arg1;
+            } else if (arg0 !== 2) {
+              c3 = 0;
+            }
+            c3 = 0;
+            c4 = 3;
+            obj = { value: null, done: true };
+            obj[0] = arg1;
+            return obj;
+          } catch (tmp19) {
+            if (tmp4 === c3) {
+              c4 = tmp2;
+              throw tmp19;
+            } else {
+              c2 = tmp;
+            }
           }
         }
-        outer3_0(table[10]).dismissAlert(outer2_2);
-      });
-      return function() {
-        return callback(...arguments);
-      };
-    })();
-    return tmp5(require("Button").Button, obj);
+      })();
+    });
+    obj.onPress = function() {
+      const self = this;
+      const apply = closure_0.apply;
+      if (typeof apply === "unknown") {
+        let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+      } else {
+        applyArgumentsResult = apply(self, arguments);
+      }
+      return applyArgumentsResult;
+    };
+    return tmp3(require("Button").Button, obj);
   }
 }
-({ View: closure_7, StyleSheet: closure_8, ScrollView: closure_9 } = get_ActivityIndicator);
-({ jsx: closure_10, jsxs: closure_11, Fragment: closure_12 } = jsxProd);
-let obj = { root: { flex: 1, position: "relative", justifyContent: "center", alignItems: "center", paddingHorizontal: 16 } };
-obj = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.MOBILE_ALERT_BACKGROUND_DEFAULT, margin: 16, width: "100%", maxWidth: 400, height: "100%", borderRadius: require("_createForOfIteratorHelperLoose").radii.xl, borderWidth: 1, borderColor: require("_createForOfIteratorHelperLoose").colors.BORDER_SUBTLE };
-let merged = Object.assign(require("_createForOfIteratorHelperLoose").shadows.SHADOW_TOP_HIGH);
-obj.content = obj;
-obj.overflow = { width: "100%", height: "100%", overflow: "hidden", padding: 24, position: "relative" };
-obj.body = { alignItems: "center" };
-obj.contentText = { textAlign: "center" };
-let closure_13 = _createForOfIteratorHelperLoose.createStyles(obj);
-let closure_14 = { overshootClamping: true, damping: 35, stiffness: 450, mass: 0.5, restDisplacementThreshold: 0.001 };
-let context = importAllResult.createContext(require("_createForOfIteratorHelperLoose").TransitionStates.YEETED);
+({ View: error, StyleSheet: metroImportAll, ScrollView: c9 } = get_ActivityIndicator);
+({ jsx: c10, jsxs: unpackModuleId, Fragment: closure_12 } = jsxProd);
+let obj = { root: { flex: 1, position: "relative", justifyContent: "center", alignItems: "center", paddingHorizontal: 16 }, content: null, overflow: null, body: null, contentText: null };
+obj = { backgroundColor: require("Themes").colors.MOBILE_ALERT_BACKGROUND_DEFAULT, margin: 16, width: "100%", maxWidth: 400, height: "100%", borderRadius: require("Themes").radii.xl, borderWidth: 1, borderColor: require("Themes").colors.BORDER_SUBTLE };
+let merged = Object.assign(require("Themes").shadows.SHADOW_TOP_HIGH);
+obj[1] = obj;
+obj[2] = { width: "100%", height: "100%", overflow: "hidden", padding: 24, position: "relative" };
+obj[3] = { alignItems: "center" };
+obj[4] = { textAlign: "center" };
+let closure_13 = createCacheKey.createStyles(obj);
+createCacheKey = { overshootClamping: true, damping: 35, stiffness: 450, mass: 0.5, restDisplacementThreshold: 0.001 };
+let context = importAllResult.createContext(require("wrapChildrenDefault").TransitionStates.YEETED);
 let context2 = importAllResult.createContext(require("sum").NOOP);
 const context4 = importAllResult.createContext("");
 const context5 = importAllResult.createContext(null);
-let closure_20 = { code: "function AlertModalNativeTsx1(){const{withAlertModalSpring,sharedVisible,sharedTransitionState,TransitionStates,runOnJS,cleanUp}=this.__closure;return{opacity:withAlertModalSpring(sharedVisible.get(),function(finished){if(finished===true&&sharedVisible.get()===0&&sharedTransitionState.get()===TransitionStates.YEETED){runOnJS(cleanUp)();}})};}" };
-let closure_21 = { code: "function AlertModalNativeTsx2(){const{sharedVisible,sharedTransitionState,TransitionStates,runOnJS,cleanUp,windowHeight,ALERT_MODAL_MARGIN,safeAreaTop,safeAreaBottom,withAlertModalSpring,sharedIndex,sharedTopHeight,useReducedMotion}=this.__closure;var _CARD_OFFSETS$sharedI;function onComplete(finished){if(finished===true&&sharedVisible.get()===0&&sharedTransitionState.get()===TransitionStates.YEETED){runOnJS(cleanUp)();}}const CARD_OFFSETS=[0,-20,-34];const maxHeight=windowHeight-ALERT_MODAL_MARGIN*2-Math.max(safeAreaTop,safeAreaBottom)*2;return{position:'absolute',opacity:withAlertModalSpring(sharedVisible.get(),onComplete),zIndex:10-sharedIndex.get(),height:sharedIndex.get()>0?sharedTopHeight.get():'auto',maxHeight:maxHeight,transform:useReducedMotion?[]:[{scale:withAlertModalSpring(sharedVisible.get()===1?1-sharedIndex.get()*0.1:0.7)},{translateY:withAlertModalSpring(sharedVisible.get()===1?(_CARD_OFFSETS$sharedI=CARD_OFFSETS[sharedIndex.get()])!==null&&_CARD_OFFSETS$sharedI!==void 0?_CARD_OFFSETS$sharedI:sharedVisible.get()*-12:50-sharedIndex.get()*50)}]};}" };
-let closure_22 = { code: "function withAlertModalSpring_AlertModalNativeTsx3(value,callback){const{withSpring,MODAL_SPRING}=this.__closure;return withSpring(value,MODAL_SPRING,'animate-always',callback);}" };
-let closure_23 = (() => {
-  function withAlertModalSpring(value, fn) {
-    return outer1_0(outer1_2[25]).withSpring(value, outer1_14, "animate-always", fn);
-  }
-  withAlertModalSpring.__closure = { withSpring: require(4577) /* withSpring */.withSpring, MODAL_SPRING: closure_14 };
-  withAlertModalSpring.__workletHash = 15556562210180;
-  withAlertModalSpring.__initData = closure_22;
-  return withAlertModalSpring;
-})();
-let closure_24 = { code: "function AlertModalNativeTsx4(){const{sharedTransitionState}=this.__closure;return sharedTransitionState.get();}" };
-let closure_25 = { code: "function AlertModalNativeTsx5(transitionState){const{TransitionStates,sharedVisible,runOnJS,cleanUp}=this.__closure;if(transitionState===TransitionStates.YEETED){if(sharedVisible.get()===1){sharedVisible.set(0);}else{runOnJS(cleanUp)();}}else{sharedVisible.set(1);}}" };
+let closure_22 = { code: "function AlertModalNativeTsx1(){const{withAlertModalSpring,sharedVisible,sharedTransitionState,TransitionStates,runOnJS,cleanUp}=this.__closure;return{opacity:withAlertModalSpring(sharedVisible.get(),function(finished){if(finished===true&&sharedVisible.get()===0&&sharedTransitionState.get()===TransitionStates.YEETED){runOnJS(cleanUp)();}})};}" };
+let closure_24 = { code: "function AlertModalNativeTsx2(){const{sharedVisible,sharedTransitionState,TransitionStates,runOnJS,cleanUp,windowHeight,ALERT_MODAL_MARGIN,safeAreaTop,safeAreaBottom,withAlertModalSpring,sharedIndex,sharedTopHeight,useReducedMotion}=this.__closure;var _CARD_OFFSETS$sharedI;function onComplete(finished){if(finished===true&&sharedVisible.get()===0&&sharedTransitionState.get()===TransitionStates.YEETED){runOnJS(cleanUp)();}}const CARD_OFFSETS=[0,-20,-34];const maxHeight=windowHeight-ALERT_MODAL_MARGIN*2-Math.max(safeAreaTop,safeAreaBottom)*2;return{position:'absolute',opacity:withAlertModalSpring(sharedVisible.get(),onComplete),zIndex:10-sharedIndex.get(),height:sharedIndex.get()>0?sharedTopHeight.get():'auto',maxHeight:maxHeight,transform:useReducedMotion?[]:[{scale:withAlertModalSpring(sharedVisible.get()===1?1-sharedIndex.get()*0.1:0.7)},{translateY:withAlertModalSpring(sharedVisible.get()===1?(_CARD_OFFSETS$sharedI=CARD_OFFSETS[sharedIndex.get()])!==null&&_CARD_OFFSETS$sharedI!==void 0?_CARD_OFFSETS$sharedI:sharedVisible.get()*-12:50-sharedIndex.get()*50)}]};}" };
+function withAlertModalSpring(value, fn2) {
+  return require(4599) /* CONFIG_NEVER_ANIMATE */.withSpring(value, createCacheKey, "animate-always", fn2);
+}
+let obj2 = { withSpring: null, MODAL_SPRING: null };
+obj2[0] = require("CONFIG_NEVER_ANIMATE").withSpring;
+obj2[1] = createCacheKey;
+withAlertModalSpring.__closure = obj2;
+withAlertModalSpring.__workletHash = 15556562210180;
+withAlertModalSpring.__initData = { code: "function withAlertModalSpring_AlertModalNativeTsx3(value,callback){const{withSpring,MODAL_SPRING}=this.__closure;return withSpring(value,MODAL_SPRING,'animate-always',callback);}" };
+let closure_27 = { code: "function AlertModalNativeTsx4(){const{sharedTransitionState}=this.__closure;return sharedTransitionState.get();}" };
+let closure_28 = { code: "function AlertModalNativeTsx5(transitionState){const{TransitionStates,sharedVisible,runOnJS,cleanUp}=this.__closure;if(transitionState===TransitionStates.YEETED){if(sharedVisible.get()===1){sharedVisible.set(0);}else{runOnJS(cleanUp)();}}else{sharedVisible.set(1);}}" };
 const memoResult = importAllResult.memo(() => {
-  let tmp = callback5();
-  const require = tmp;
-  let obj = require(4507) /* useAlertStore */;
+  const tmp = callback6();
+  let items = tmp;
+  let obj = items(items[10]);
   const alertStore = obj.useAlertStore((alerts) => alerts.alerts);
-  const sharedValue = require(4026).useSharedValue(0);
-  const tmp4 = (function createTransitionGroupItems(alertStore) {
-    if (0 === alertStore.length) {
-      return [];
-    } else {
-      const items = [{ type: "backdrop", key: "backdrop" }];
-      const substr = alertStore.slice(0, 3);
-      const item = substr.forEach((alert, index) => {
-        items.push({ type: "alert", alert, key: alert.key, index });
-      });
-      return items;
-    }
-  })(alertStore);
-  const dependencyMap = tmp4;
-  let items = [tmp4];
+  const sharedValue = items(items[11]).useSharedValue(0);
+  items = undefined;
+  if (0 === alertStore.length) {
+    items = [];
+  } else {
+    items = [{ type: "backdrop", key: "backdrop" }];
+    const substr = alertStore.slice(0, 3);
+    const item = substr.forEach((alert, index) => {
+      items.push({ type: "alert", alert, key: alert.key, index });
+    });
+  }
+  const items1 = [items];
   const layoutEffect = importAllResult.useLayoutEffect(() => {
-    if (tmp4.length > 0) {
-      const result = tmp(tmp4[12]).dismissGlobalKeyboard();
-      const obj = tmp(tmp4[12]);
+    if (items.length > 0) {
+      const result = items(items[12]).dismissGlobalKeyboard();
+      const obj = items(items[12]);
     }
-  }, items);
-  const items1 = [tmp];
-  const items2 = [sharedValue];
-  const callback = importAllResult.useCallback((children) => {
-    let obj = { style: outer1_8.absoluteFillObject };
-    const tmp = sharedValue(tmp4[13]);
-    obj = { onDismiss: outer1_27 };
-    obj = { style: tmp.root, pointerEvents: "box-none", children };
-    obj.children = outer1_10(outer1_7, obj);
-    obj.children = outer1_10(tmp(tmp4[14]).Dialog, obj);
-    return outer1_10(tmp, obj);
   }, items1);
+  const items2 = [tmp];
+  const items3 = [sharedValue];
+  const callback = importAllResult.useCallback((children) => {
+    let obj = { style: outer1_8.absoluteFillObject, children: null };
+    obj = { onDismiss: outer1_21, children: null };
+    obj = { style: items.root, pointerEvents: "box-none", children };
+    obj[1] = outer1_10(outer1_7, obj);
+    obj[1] = outer1_10(items(items[14]).Dialog, obj);
+    return outer1_10(sharedValue(items[13]), obj);
+  }, items2);
   const callback1 = importAllResult.useCallback((value, type, value2, value3) => {
     if ("alert" === type.type) {
       let node = type.alert.node;
     } else {
-      node = outer1_10(outer1_28, {});
+      node = outer1_10(outer1_23, {});
     }
     let num = -1;
     if ("alert" === type.type) {
       num = type.index;
     }
-    let obj = { value: sharedValue };
-    obj = { value: value3 };
-    obj = { value: value2 };
-    const obj1 = { value: num };
-    const obj3 = { fallback: null, children: node };
-    obj1.children = outer1_10(outer1_18.Provider, { value, children: outer1_10(outer1_6.Suspense, obj3) });
-    obj.children = outer1_10(outer1_17.Provider, obj1);
-    obj.children = outer1_10(outer1_15.Provider, obj);
-    obj.children = outer1_10(outer1_16.Provider, obj);
+    let obj = { value: sharedValue, children: null };
+    obj = { value: value3, children: null };
+    obj = { value: value2, children: null };
+    const obj1 = { value: num, children: null };
+    obj1[1] = outer1_10(outer1_18.Provider, { value, children: outer1_10(outer1_6.Suspense, { fallback: null, children: node }) });
+    obj[1] = outer1_10(outer1_17.Provider, obj1);
+    obj[1] = outer1_10(outer1_15.Provider, obj);
+    obj[1] = outer1_10(outer1_16.Provider, obj);
     return outer1_10(outer1_19.Provider, obj, value);
-  }, items2);
-  obj = { wrapChildren: callback, items: tmp4, renderItem: callback1, getItemKey: getAlertModalItemKey };
-  return callback3(require(4511) /* _createForOfIteratorHelperLoose */.TransitionGroup, obj);
+  }, items3);
+  obj = { wrapChildren: callback, items, renderItem: callback1, getItemKey: getAlertModalItemKey };
+  return callback4(items(items[9]).TransitionGroup, obj);
 });
 let result = require("_toArray").fileFinishedImporting("design/components/AlertModal/native/AlertModal.native.tsx");
 
@@ -490,22 +605,19 @@ export const showConfirmModal = function showConfirmModal(arg0) {
   ({ key, cancelText } = arg0);
   ({ title, content, confirmText } = arg0);
   if (cancelText === undefined) {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    cancelText = intl.string(require(1212) /* getSystemLocale */.t["ETE/oC"]);
+    const intl = require(1236) /* getSystemLocale */.intl;
+    cancelText = intl.string(require(1236) /* getSystemLocale */.t["ETE/oC"]);
   }
   ({ variant, extraContent } = arg0);
   if (variant === undefined) {
     variant = "destructive";
   }
   ({ onConfirm, onCancel, onCloseCallback, dismissable } = arg0);
-  let obj = require(4507) /* useAlertStore */;
-  obj = { title, content, extraContent };
-  obj = {};
-  const obj1 = { variant, text: confirmText, onPress: onConfirm };
-  const items = [callback3(AlertActionButton, obj1), ];
-  const obj2 = { variant: "secondary", text: cancelText, onPress: onCancel };
-  items[1] = callback3(AlertActionButton, obj2);
-  obj.children = items;
-  obj.actions = callback4(closure_12, obj);
-  obj.openAlert(key, callback3(AlertModal, obj), onCloseCallback, { dismissable });
+  let obj = require(4530) /* useAlertStore */;
+  obj = { title, content, extraContent, actions: null };
+  obj = { children: null };
+  const items = [callback4(AlertActionButton, { variant, text: confirmText, onPress: onConfirm }), callback4(AlertActionButton, { variant: "secondary", text: cancelText, onPress: onCancel })];
+  obj[0] = items;
+  obj[3] = callback5(closure_12, obj);
+  obj.openAlert(key, callback4(AlertModal, obj), onCloseCallback, { dismissable });
 };

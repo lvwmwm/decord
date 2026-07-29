@@ -1,28 +1,66 @@
 // Module ID: 8593
-// Function ID: 68113
+// Function ID: 8594
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 31, 33, 8515, 8585, 8594, 8520, 8531]
+// Dependencies: [41, 42, 93, 95, 98, 19, 8547]
 
 // Module 8593 (_isNativeReflectConstruct)
-import jsxProd from "jsxProd";
-import appendTransformProps from "appendTransformProps";
+import _classCallCheck from "_classCallCheck";
 import _possibleConstructorReturn from "_possibleConstructorReturn";
 import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
-import "result";
-import { jsx } from "jsxProd";
-import tmp3 from "_isNativeReflectConstruct";
+import importDefaultResult from "_createClass";
 
+const FePointLight = arg1;
 function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
+  try {
+    const _Boolean = Boolean;
+    const call = valueOf.call;
+    const _Reflect = Reflect;
+    const _Boolean2 = Boolean;
+    if (typeof call === "unknown") {
+      let callResult = valueOf();
+    } else {
+      callResult = call(constructResult);
+    }
+    let closure_0 = !callResult;
+    function _isNativeReflectConstruct() {
+      return closure_0;
+    }
+    return _isNativeReflectConstruct();
+  } catch (err) {
   }
-  const result = _isNativeReflectConstruct();
 }
-tmp3.displayName = "Pattern";
-tmp3.defaultProps = { x: "0%", y: "0%", width: "100%", height: "100%" };
+class FePointLight {
+  constructor() {
+    self = this;
+    tmp = _isNativeReflectConstruct(this, FePointLight);
+    tmp2 = __esModule;
+    obj = __esModule(FePointLight);
+    tmp3 = __esModule;
+    if (_isNativeReflectConstruct()) {
+      tmp7 = globalThis;
+      _Reflect = Reflect;
+      tmp8 = arguments;
+      constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
+    } else {
+      tmp4 = arguments;
+      tmp5 = arguments;
+      constructResult = obj(...arguments);
+    }
+    return tmp3(self, constructResult);
+  }
+}
+require("_inherits")(FePointLight, require("noop").Component);
+const items = [
+  {
+    key: "render",
+    value: function render() {
+      const result = FePointLight(8547).warnUnimplementedFilter();
+      return null;
+    }
+  }
+];
+const importDefaultResultResult = importDefaultResult(FePointLight, items);
+importDefaultResultResult.displayName = "FePointLight";
+importDefaultResultResult.defaultProps = {};
 
-export default tmp3;
+export default importDefaultResultResult;

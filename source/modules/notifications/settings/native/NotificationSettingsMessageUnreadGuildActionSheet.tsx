@@ -1,12 +1,12 @@
-// Module ID: 10308
-// Function ID: 79514
+// Module ID: 10329
+// Function ID: 10330
 // Name: NotificationSettingsMessageUnreadGuildActionSheet
-// Dependencies: [31, 4360, 653, 4361, 662, 33, 10297, 10309, 1212, 5113, 10292, 5108, 2]
+// Dependencies: [19, 4385, 676, 4386, 685, 21, 10318, 10330, 1236, 5135, 10313, 5130, 2]
 // Exports: default
 
-// Module 10308 (NotificationSettingsMessageUnreadGuildActionSheet)
-import "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 10329 (NotificationSettingsMessageUnreadGuildActionSheet)
+import "noop";
+import updateUserGuildSettingsInternal from "updateUserGuildSettingsInternal";
 import { UserNotificationSettings } from "ME";
 import { UnreadSetting } from "ReadStateTypes";
 import { GuildNotificationSettingsFlags as closure_6 } from "MAX_FAVORITES";
@@ -19,29 +19,44 @@ export default function NotificationSettingsMessageUnreadGuildActionSheet(guildI
   let notification;
   let unread;
   const _require = guildId;
-  let obj = _require(10297);
+  let obj = _require(10318);
   const guildPresetSettings = obj.useGuildPresetSettings(guildId.guildId);
   ({ unread, notification } = guildPresetSettings);
-  obj = {};
   let stringResult;
   if (notification === UserNotificationSettings.ALL_MESSAGES) {
-    const intl = _require(1212).intl;
-    stringResult = intl.string(_require(1212).t.eP8yWU);
+    const intl = tmp(1236).intl;
+    stringResult = intl.string(tmp(1236).t.eP8yWU);
   }
-  obj.disabledMentionOnlyWithReason = stringResult;
-  obj.value = unread;
-  obj.onChange = function onChange(ONLY_MENTIONS) {
-    const guildFlags = outer1_3.getGuildFlags(guildId.guildId);
-    let obj = outer1_1(outer1_2[9]);
-    obj = {};
-    if (ONLY_MENTIONS === outer1_5.ALL_MESSAGES) {
-      let UNREADS_ONLY_MENTIONS = outer1_6.UNREADS_ALL_MESSAGES;
-    } else {
-      UNREADS_ONLY_MENTIONS = outer1_6.UNREADS_ONLY_MENTIONS;
+  obj = {
+    disabledMentionOnlyWithReason: stringResult,
+    value: unread,
+    onChange(ONLY_MENTIONS) {
+      const guildFlags = outer1_3.getGuildFlags(guildId.guildId);
+      let obj = outer1_1(outer1_2[9]);
+      if (ONLY_MENTIONS === outer1_5.ALL_MESSAGES) {
+        let UNREADS_ONLY_MENTIONS = outer1_6.UNREADS_ALL_MESSAGES;
+      } else {
+        UNREADS_ONLY_MENTIONS = outer1_6.UNREADS_ONLY_MENTIONS;
+      }
+      obj = { flags: guildId(outer1_2[10]).withGuildUnreadFlags(guildFlags, UNREADS_ONLY_MENTIONS) };
+      const NotificationLabel = guildId(outer1_2[11]).NotificationLabel;
+      const result = obj.updateGuildNotificationSettings(guildId.guildId, obj, NotificationLabel.unreads(ONLY_MENTIONS));
     }
-    obj.flags = guildId(outer1_2[10]).withGuildUnreadFlags(guildFlags, UNREADS_ONLY_MENTIONS);
-    const NotificationLabel = guildId(outer1_2[11]).NotificationLabel;
-    const result = obj.updateGuildNotificationSettings(guildId.guildId, obj, NotificationLabel.unreads(ONLY_MENTIONS));
   };
-  return jsx(importDefault(10309), {});
+  return jsx(importDefault(10330), {
+    disabledMentionOnlyWithReason: stringResult,
+    value: unread,
+    onChange(ONLY_MENTIONS) {
+      const guildFlags = outer1_3.getGuildFlags(guildId.guildId);
+      let obj = outer1_1(outer1_2[9]);
+      if (ONLY_MENTIONS === outer1_5.ALL_MESSAGES) {
+        let UNREADS_ONLY_MENTIONS = outer1_6.UNREADS_ALL_MESSAGES;
+      } else {
+        UNREADS_ONLY_MENTIONS = outer1_6.UNREADS_ONLY_MENTIONS;
+      }
+      obj = { flags: guildId(outer1_2[10]).withGuildUnreadFlags(guildFlags, UNREADS_ONLY_MENTIONS) };
+      const NotificationLabel = guildId(outer1_2[11]).NotificationLabel;
+      const result = obj.updateGuildNotificationSettings(guildId.guildId, obj, NotificationLabel.unreads(ONLY_MENTIONS));
+    }
+  });
 };

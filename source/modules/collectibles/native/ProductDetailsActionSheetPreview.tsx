@@ -1,23 +1,23 @@
-// Module ID: 8717
-// Function ID: 69005
+// Module ID: 8741
+// Function ID: 8742
 // Name: BundleProductPreview
-// Dependencies: [57, 31, 27, 655, 33, 4165, 689, 1877, 8050, 8718, 8022, 1212, 8720, 8200, 8729, 8731, 2]
+// Dependencies: [32, 19, 17, 678, 21, 4189, 712, 1901, 8074, 8742, 8046, 1236, 8744, 8224, 8753, 8755, 2]
 // Exports: default
 
-// Module 8717 (BundleProductPreview)
+// Module 8741 (BundleProductPreview)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
+import noop from "noop";
 import { View } from "get ActivityIndicator";
 import { ShopCtaEnum } from "items";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_10;
-let closure_11;
-let closure_4;
-let closure_5;
+let c10;
+let c4;
+let c5;
 let closure_6;
-let closure_7;
+let error;
+let unpackModuleId;
 let require = arg1;
 function BundleProductPreview(onActiveItemTypeChange) {
   let handlePreviewPress;
@@ -26,17 +26,29 @@ function BundleProductPreview(onActiveItemTypeChange) {
   let product;
   let width;
   ({ product, width, handlePreviewPress, onTrackPress, onActiveItemChange } = onActiveItemTypeChange);
-  let obj = require(8050) /* useCollectiblesMobileFlexibleBundlesExperiment */;
+  let obj = require(8074) /* useCollectiblesMobileFlexibleBundlesExperiment */;
   if (obj.useCollectiblesMobileFlexibleBundlesExperiment("ProductDetailsActionSheetPreview").enabled) {
-    obj = { product, width, handlePreviewPress, onTrackPress, onActiveItemChange };
-    let tmp2Result = tmp2(importDefault(8718), obj);
+    obj = { product: null, width: null, handlePreviewPress: null, onTrackPress: null, onActiveItemChange: null };
+    obj[0] = product;
+    obj[1] = width;
+    obj[2] = handlePreviewPress;
+    obj[3] = onTrackPress;
+    obj[4] = onActiveItemChange;
+    let tmp3Result = tmp3(importDefault(8742), obj);
   } else {
-    obj = { style: tmp.previewDivider };
-    const obj1 = { product, width, handlePreviewPress, onTrackPress, onActiveItemChange, onActiveItemTypeChange: onActiveItemTypeChange.onActiveItemTypeChange };
-    obj.children = callback4(BundlePreview, obj1);
-    tmp2Result = tmp2(View, obj);
+    obj = { style: null, children: null };
+    obj[0] = tmp.previewDivider;
+    const obj1 = { product: null, width: null, handlePreviewPress: null, onTrackPress: null, onActiveItemChange: null, onActiveItemTypeChange: null };
+    obj1[0] = product;
+    obj1[1] = width;
+    obj1[2] = handlePreviewPress;
+    obj1[3] = onTrackPress;
+    obj1[4] = onActiveItemChange;
+    obj1[5] = onActiveItemTypeChange.onActiveItemTypeChange;
+    obj[1] = tmp3(BundlePreview, obj1);
+    tmp3Result = tmp3(View, obj);
   }
-  return tmp2Result;
+  return tmp3Result;
 }
 function BundlePreview(product) {
   product = product.product;
@@ -46,63 +58,74 @@ function BundlePreview(product) {
   const onTrackPress = product.onTrackPress;
   const onActiveItemChange = product.onActiveItemChange;
   const onActiveItemTypeChange = product.onActiveItemTypeChange;
+  let shopProductItems;
+  let first;
+  let closure_8;
+  let c9;
+  let callback4;
   let obj = require(handlePreviewPress[10]);
-  const shopProductItems = obj.useShopProductItems(product);
-  const tmp2 = onTrackPress(first(0), 2);
+  shopProductItems = obj.useShopProductItems(product);
+  let tmp2 = onTrackPress(first(0), 2);
   first = tmp2[0];
-  let closure_8 = tmp2[1];
+  closure_8 = tmp2[1];
   let items = [product, width, handlePreviewPress, shopProductItems, onTrackPress, first];
   const tmp4 = shopProductItems(() => {
-    let tmp = null;
+    let tmp2 = null;
     if (null != shopProductItems.firstProfileEffect) {
-      let obj = {};
+      let obj = { label: null, id: "profile", page: null };
       const intl = product(handlePreviewPress[11]).intl;
-      obj.label = intl.string(product(handlePreviewPress[11]).t["s+YSgo"]);
-      obj.id = "profile";
-      obj = { profileEffect: shopProductItems.firstProfileEffect, profileEffectRestartKey: first, width, handlePreviewPress, onTrackPress };
-      obj.page = dependencyMap(product(handlePreviewPress[12]).ProfileEffectPreview, obj);
-      tmp = obj;
+      obj[0] = intl.string(product(handlePreviewPress[11]).t["s+YSgo"]);
+      obj = { profileEffect: null, profileEffectRestartKey: null, width: null, handlePreviewPress: null, onTrackPress: null };
+      obj[0] = tmp.firstProfileEffect;
+      obj[1] = first;
+      obj[2] = width;
+      obj[3] = handlePreviewPress;
+      obj[4] = onTrackPress;
+      obj[2] = dependencyMap(product(handlePreviewPress[12]).ProfileEffectPreview, obj);
+      tmp2 = obj;
     }
-    const items = [tmp, , ];
-    let tmp10 = null;
+    const items = [tmp2, , ];
+    let tmp14 = null;
     if (null != shopProductItems.firstAvatarDecoration) {
-      obj = {};
+      obj = { label: null, id: "decoration", page: null };
       const intl2 = product(handlePreviewPress[11]).intl;
-      obj.label = intl2.string(product(handlePreviewPress[11]).t.aVCcr8);
-      obj.id = "decoration";
-      const obj1 = { product: closure_0, handlePreviewPress, onTrackPress };
-      obj.page = dependencyMap(product(handlePreviewPress[12]).AvatarDecorationPreview, obj1);
-      tmp10 = obj;
+      obj[0] = intl2.string(product(handlePreviewPress[11]).t.aVCcr8);
+      const obj1 = { product: null, handlePreviewPress: null, onTrackPress: null };
+      obj1[0] = closure_0;
+      obj1[1] = handlePreviewPress;
+      obj1[2] = onTrackPress;
+      obj[2] = dependencyMap(product(handlePreviewPress[12]).AvatarDecorationPreview, obj1);
+      tmp14 = obj;
     }
-    items[1] = tmp10;
-    let tmp17 = null;
+    items[1] = tmp14;
+    let tmp25 = null;
     if (null != shopProductItems.firstNameplate) {
-      const obj2 = {};
+      const obj2 = { label: null, id: "nameplate", page: null };
       const intl3 = product(handlePreviewPress[11]).intl;
-      obj2.label = intl3.string(product(handlePreviewPress[11]).t.HNnSVZ);
-      obj2.id = "nameplate";
-      const obj3 = { product: closure_0 };
-      obj2.page = dependencyMap(product(handlePreviewPress[12]).NameplatePreview, obj3);
-      tmp17 = obj2;
+      obj2[0] = intl3.string(product(handlePreviewPress[11]).t.HNnSVZ);
+      const obj3 = { product: null };
+      obj3[0] = closure_0;
+      obj2[2] = dependencyMap(product(handlePreviewPress[12]).NameplatePreview, obj3);
+      tmp25 = obj2;
     }
-    items[2] = tmp17;
+    items[2] = tmp25;
     return items.filter((arg0) => null != arg0);
   }, items);
-  const ShopCtaEnum = tmp4;
+  c9 = tmp4;
   const items1 = [shopProductItems];
-  const callback4 = shopProductItems(() => ({ profile: shopProductItems.firstProfileEffect, decoration: shopProductItems.firstAvatarDecoration, nameplate: shopProductItems.firstNameplate }), items1);
+  callback4 = shopProductItems(() => ({ profile: shopProductItems.firstProfileEffect, decoration: shopProductItems.firstAvatarDecoration, nameplate: shopProductItems.firstNameplate }), items1);
   const items2 = [shopProductItems, onActiveItemChange];
   onActiveItemTypeChange(() => {
     let firstNameplate = shopProductItems.firstProfileEffect;
-    if (null == firstNameplate) {
-      firstNameplate = shopProductItems.firstAvatarDecoration;
+    if (firstNameplate == null) {
+      firstNameplate = tmp.firstAvatarDecoration;
     }
-    if (null == firstNameplate) {
-      firstNameplate = shopProductItems.firstNameplate;
+    if (firstNameplate == null) {
+      firstNameplate = tmp.firstNameplate;
     }
     if (null != firstNameplate) {
-      if (null != onActiveItemChange) {
-        onActiveItemChange(firstNameplate);
+      if (onActiveItemChange != null) {
+        tmp2(firstNameplate);
       }
     }
   }, items2);
@@ -113,18 +136,18 @@ function BundlePreview(product) {
     defaultIndex: 0,
     onPageChange(arg0) {
       let id;
-      if (null != tmp4[arg0]) {
+      if (_undefined[arg0] != null) {
         id = tmp.id;
       }
       if (null != id) {
         if (null != outer1_13[id]) {
-          if (null != onActiveItemTypeChange) {
+          if (onActiveItemTypeChange != null) {
             onActiveItemTypeChange(tmp4);
           }
         }
         if (null != dependencyMap[id]) {
-          if (null != onActiveItemChange) {
-            onActiveItemChange(tmp9);
+          if (onActiveItemChange != null) {
+            onActiveItemChange(tmp7);
           }
         }
       }
@@ -134,68 +157,84 @@ function BundlePreview(product) {
     },
     onSetActiveIndex(arg0) {
       let id;
-      if (null != tmp4[arg0]) {
+      if (_undefined[arg0] != null) {
         id = tmp.id;
       }
       if ("profile" === id) {
-        if (null != onTrackPress) {
-          onTrackPress(tmp4.BUNDLE_VIEW_PROFILE_EFFECT);
+        if (onTrackPress != null) {
+          tmp9(_undefined.BUNDLE_VIEW_PROFILE_EFFECT);
         }
       } else if ("decoration" === id) {
-        if (null != onTrackPress) {
-          onTrackPress(tmp4.BUNDLE_VIEW_AVATAR_DECORATION);
+        if (onTrackPress != null) {
+          tmp6(_undefined.BUNDLE_VIEW_AVATAR_DECORATION);
         }
       } else if ("nameplate" === id) {
-        if (null != onTrackPress) {
-          onTrackPress(onTrackPress.BUNDLE_VIEW_NAMEPLATE);
+        if (onTrackPress != null) {
+          tmp3(_undefined.BUNDLE_VIEW_NAMEPLATE);
         }
       }
     }
   };
   const segmentedControlState = obj1.useSegmentedControlState(obj);
-  obj = {};
+  obj = { children: null };
   const items3 = [callback4(require(handlePreviewPress[14]).SegmentedControlPages, { state: segmentedControlState }), ];
-  obj1 = { style: { paddingHorizontal: width(handlePreviewPress[6]).space.PX_16, paddingTop: width(handlePreviewPress[6]).space.PX_12 }, children: callback4(require(handlePreviewPress[15]).SegmentedControl, { state: segmentedControlState, variant: "default" }) };
+  obj1 = { style: null, children: null };
+  obj1[0] = { paddingHorizontal: width(handlePreviewPress[6]).space.PX_16, paddingTop: width(handlePreviewPress[6]).space.PX_12 };
+  obj1[1] = callback4(require(handlePreviewPress[15]).SegmentedControl, { state: segmentedControlState, variant: "default" });
   items3[1] = callback4(closure_8, obj1);
-  obj.children = items3;
+  obj[0] = items3;
   return callback5(closure_8, obj);
 }
-({ useCallback: closure_4, useEffect: closure_5, useMemo: closure_6, useState: closure_7 } = result);
-({ jsx: closure_10, jsxs: closure_11 } = jsxProd);
-_createForOfIteratorHelperLoose = { previewContainer: { flex: 1 } };
-_createForOfIteratorHelperLoose = { borderBottomColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_MOD_SUBTLE, borderBottomWidth: 1, paddingBottom: require("_createForOfIteratorHelperLoose").space.PX_16, flex: 1 };
-_createForOfIteratorHelperLoose.previewDivider = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+({ useCallback: c4, useEffect: c5, useMemo: closure_6, useState: error } = noop);
+({ jsx: c10, jsxs: unpackModuleId } = jsxProd);
+createCacheKey = { previewContainer: { flex: 1 }, previewDivider: null };
+createCacheKey = { borderBottomColor: require("Themes").colors.BACKGROUND_MOD_SUBTLE, borderBottomWidth: 1, paddingBottom: require("Themes").space.PX_16, flex: 1 };
+createCacheKey[1] = createCacheKey;
+createCacheKey = createCacheKey.createStyles(createCacheKey);
 let obj1 = { profile: require("CollectiblesItemType").CollectiblesItemType.PROFILE_EFFECT, decoration: require("CollectiblesItemType").CollectiblesItemType.AVATAR_DECORATION, nameplate: require("CollectiblesItemType").CollectiblesItemType.NAMEPLATE };
-result = require("get ActivityIndicator").fileFinishedImporting("modules/collectibles/native/ProductDetailsActionSheetPreview.tsx");
+const result = require("get ActivityIndicator").fileFinishedImporting("modules/collectibles/native/ProductDetailsActionSheetPreview.tsx");
 
 export default function ProductDetailsActionSheetPreview(arg0) {
+  let c0;
   let handlePreviewPress;
   let onBundleActiveItemChange;
   let onBundleActiveItemTypeChange;
   let onTrackPress;
   let product;
+  let tmp3;
   ({ product, handlePreviewPress, onTrackPress } = arg0);
+  let _require;
   ({ onBundleActiveItemTypeChange, onBundleActiveItemChange } = arg0);
-  const tmp = _createForOfIteratorHelperLoose();
+  const tmp = createCacheKey();
+  [tmp3, c0] = callback(callback3(0), 2);
   const tmp2 = callback(callback3(0), 2);
-  const first = tmp2[0];
-  const _require = tmp2[1];
   let obj = {
     style: tmp.previewContainer,
     onLayout: callback2((nativeEvent) => {
-      callback(nativeEvent.nativeEvent.layout.width);
-    }, [])
+      _undefined(nativeEvent.nativeEvent.layout.width);
+    }, []),
+    children: null
   };
-  if (product.type === _require(1877).CollectiblesItemType.BUNDLE) {
-    obj = { product, width: first, handlePreviewPress, onTrackPress, onActiveItemChange: onBundleActiveItemChange, onActiveItemTypeChange: onBundleActiveItemTypeChange };
-    let tmp12 = callback4(BundleProductPreview, obj);
+  if (product.type === _require(1901).CollectiblesItemType.BUNDLE) {
+    obj = { product: null, width: null, handlePreviewPress: null, onTrackPress: null, onActiveItemChange: null, onActiveItemTypeChange: null };
+    obj[0] = product;
+    obj[1] = tmp3;
+    obj[2] = handlePreviewPress;
+    obj[3] = onTrackPress;
+    obj[4] = onBundleActiveItemChange;
+    obj[5] = onBundleActiveItemTypeChange;
+    let tmp7Result = tmp7(BundleProductPreview, obj);
   } else {
-    obj = { style: tmp.previewDivider };
-    const obj1 = { product, width: first, handlePreviewPress, onTrackPress };
-    obj.children = callback4(_require(8720).IndividualProductPreview, obj1);
-    tmp12 = callback4(View, obj);
+    obj = { style: null, children: null };
+    obj[0] = tmp.previewDivider;
+    const obj1 = { product: null, width: null, handlePreviewPress: null, onTrackPress: null };
+    obj1[0] = product;
+    obj1[1] = tmp3;
+    obj1[2] = handlePreviewPress;
+    obj1[3] = onTrackPress;
+    obj[1] = tmp7(_require(8744).IndividualProductPreview, obj1);
+    tmp7Result = tmp7(tmp8, obj);
   }
-  obj.children = tmp12;
-  return callback4(View, obj);
+  obj[2] = tmp7Result;
+  return closure_10(View, obj);
 };

@@ -1,10 +1,10 @@
-// Module ID: 655
-// Function ID: 8023
+// Module ID: 678
+// Function ID: 679
 // Name: items
-// Dependencies: [656, 657, 658, 659, 2]
+// Dependencies: [679, 680, 681, 682, 2]
 // Exports: isExternalProduct, isFractionalPremiumSku, isIndexPageTab, shouldAddTabToUrl
 
-// Module 655 (items)
+// Module 678 (items)
 import set from "CollectibleSearchSortType";
 
 let obj = { HOME: "home", CATALOG: "catalog", ORBS: "orbs", AVATAR_DECORATIONS: "avatar-decorations", PROFILE_EFFECTS: "profile-effects", NAMEPLATES: "nameplates", PROFILE_FRAMES: "profile-frames", BUNDLES: "bundles", COLLABS: "collabs", OFFER_ELIGIBLE: "offer-eligible", LAYOUT: "layout", COLLECTION_INDEX: "collection-index", GAME_SHOPS: "game-shops", GAME_SERVERS: "game-servers" };
@@ -62,7 +62,7 @@ export const SHOP_ALL_PAGE_SIZE = 5;
 export const ShopPurchaseType = { FIAT: 0, [0]: "FIAT", ORB: 1, [1]: "ORB", PREMIUM_PURCHASE: 2, [2]: "PREMIUM_PURCHASE", PROMOTIONAL: 3, [3]: "PROMOTIONAL", TENURE_REWARD: 4, [4]: "TENURE_REWARD", GIFT: 5, [5]: "GIFT" };
 export const EXTERNAL_PRODUCT_SKU_IDS = obj;
 export const isFractionalPremiumSku = function isFractionalPremiumSku(arg0) {
-  const ALL = require(656) /* set */.FractionalPremiumSKUsSets.ALL;
+  const ALL = require(679) /* set */.FractionalPremiumSKUsSets.ALL;
   return ALL.has(arg0);
 };
 export const isExternalProduct = function isExternalProduct(arg0) {

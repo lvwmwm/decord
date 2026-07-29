@@ -1,19 +1,113 @@
-// Module ID: 15324
-// Function ID: 116636
+// Module ID: 15357
+// Function ID: 15358
 // Name: useICYMIReloadHandler
-// Dependencies: [5, 31, 8170, 8161, 2]
+// Dependencies: [5, 19, 8194, 8185, 2]
 // Exports: useICYMIReloadHandler
 
-// Module 15324 (useICYMIReloadHandler)
+// Module 15357 (useICYMIReloadHandler)
 import asyncGeneratorStep from "asyncGeneratorStep";
-import result from "result";
+import noop from "noop";
 
 const require = arg1;
-const result = require("listItemToType").fileFinishedImporting("modules/icymi/useICYMIReloadHandler.tsx");
+const result = require("DEFAULT_UX_VARIATION").fileFinishedImporting("modules/icymi/useICYMIReloadHandler.tsx");
 
 export const useICYMIReloadHandler = function useICYMIReloadHandler(showDot) {
   let closure_0 = showDot;
-  // CreateGeneratorClosureLongIndex (0x67)
   const items = [showDot];
-  return React.useCallback(callback(tmp), items);
+  return React.useCallback(callback(function*() {
+    if (dependencyMap === 2) {
+      dependencyMap = 3;
+      HermesBuiltin.throwTypeError();
+    } else if (tmp4 === 3) {
+      if (arg0 === 1) {
+        throw arg1;
+      } else if (arg0 === 2) {
+        let obj = { value: null, done: true };
+        obj[0] = arg1;
+        return obj;
+      } else {
+        return { value: "HermesInternal", done: null };
+      }
+    } else {
+      try {
+        dependencyMap = 2;
+        if (0 === v0) {
+          if (arg0 === 1) {
+            dependencyMap = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            dependencyMap = 3;
+            obj = { value: null, done: true };
+            obj[0] = arg1;
+            return obj;
+          } else {
+            let closure_0 = tmp2;
+            const ICYMIAnalytics = outer1_0(8194).ICYMIAnalytics;
+            let str = "NoDotShown";
+            if (outer1_0) {
+              str = "DotShown";
+            }
+            const obj1 = { variant: null, homeSessionId: "gravity_refresh" };
+            obj1[0] = str;
+            ICYMIAnalytics.trackFeedShown(obj1);
+            v0 = 1;
+            dependencyMap = 1;
+            let obj2 = { value: null, done: false };
+            obj2[0] = v0(8185).fetchDehydrated({ isReloading: true });
+            return obj2;
+          }
+        } else if (1 === tmp5) {
+          if (arg0 === 1) {
+            dependencyMap = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            dependencyMap = 3;
+            const obj3 = { value: null, done: true };
+            obj3[0] = arg1;
+            return obj3;
+          } else {
+            let obj5 = v0(8185);
+            v0 = 2;
+            dependencyMap = 1;
+            const obj4 = { value: null, done: false };
+            obj4[0] = obj5.reloadICYMITab();
+            return obj4;
+          }
+        } else if (2 === tmp5) {
+          if (arg0 === 1) {
+            dependencyMap = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            dependencyMap = 3;
+            obj5 = { value: null, done: true };
+            obj5[0] = arg1;
+            return obj5;
+          } else {
+            obj2 = v0(8185);
+            v0 = 3;
+            dependencyMap = 1;
+            const obj6 = { value: null, done: false };
+            obj6[0] = obj2.getGuildChannelScores();
+            return obj6;
+          }
+        } else if (arg0 === 1) {
+          dependencyMap = 3;
+          throw arg1;
+        } else if (arg0 === 2) {
+          dependencyMap = 3;
+          const obj7 = { value: null, done: true };
+          obj7[0] = arg1;
+          return obj7;
+        } else {
+          obj = v0(8185);
+          const recommendedGuilds = obj.getRecommendedGuilds();
+          dependencyMap = 3;
+          return { value: "HermesInternal", done: null };
+        }
+      } catch (tmp19) {
+        dependencyMap = tmp;
+        throw tmp19;
+      }
+    }
+  }), items);
 };

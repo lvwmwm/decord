@@ -1,204 +1,457 @@
-// Module ID: 6694
-// Function ID: 58985
+// Module ID: 6715
+// Function ID: 6716
 // Name: audienceAckRequestToSpeak
-// Dependencies: [5, 1907, 4181, 653, 6695, 44, 4359, 6696, 507, 6700, 4349, 4990, 5083, 1882, 3798, 483, 4175, 6689, 6702, 2]
-// Exports: editStage, endStage, inviteUserToStage, moveSelfToAudience, moveUserToAudience, removeUserFromChannel, setEveryoneRolePermissionAllowed, startStage, toggleRequestToSpeak
+// Dependencies: [5, 1931, 4205, 676, 6716, 38, 4384, 6717, 530, 6721, 4374, 5012, 5105, 1906, 3822, 506, 4199, 6710, 6723, 2]
+// Exports: editStage, endStage, inviteUserToStage, moveSelfToAudience, moveUserToAudience, removeUserFromChannel, setEveryoneRolePermissionAllowed, setUserSuppress, startStage, toggleRequestToSpeak
 
-// Module 6694 (audienceAckRequestToSpeak)
-import invariant from "invariant";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_6 from "_isNativeReflectConstruct";
+// Module 6715 (audienceAckRequestToSpeak)
+import module_38 from "module_38";
+import handleConnectionOpen from "handleConnectionOpen";
+import updateVoiceState from "updateVoiceState";
 import ME from "ME";
 import { SafetyToastType } from "SafetyToastType";
 
-let closure_7;
-let closure_8;
-let closure_9;
+let c9;
+let error;
+let metroImportAll;
 const require = arg1;
-function audienceAckRequestToSpeak(channel, c1) {
+function audienceAckRequestToSpeak(channel, suppress) {
   let flag = arg2;
   if (arg2 === undefined) {
     flag = false;
   }
   let guildId;
-  if (null != channel) {
+  if (channel != null) {
     guildId = channel.getGuildId();
   }
-  importDefault(44)(null != guildId, "This channel cannot be guildless.");
+  let result = dependencyMap;
+  importDefault(38)(null != guildId, "This channel cannot be guildless.");
+  let obj = require;
   voiceStateForChannel = voiceStateForChannel.getVoiceStateForChannel(channel.id);
-  let obj = require(4349) /* getAudienceRequestToSpeakState */;
-  const audienceRequestToSpeakState = obj.getAudienceRequestToSpeakState(voiceStateForChannel);
-  if (!c1) {
-    let obj1 = require(4990) /* useIsStageSpeakingDisabledForCurrentUser */;
-    if (obj1.shouldAgeVerifyToSpeakForCurrentUser()) {
+  let obj1 = require(4374) /* useAudienceRequestToSpeakState */;
+  const audienceRequestToSpeakState = obj1.getAudienceRequestToSpeakState(voiceStateForChannel);
+  if (!suppress) {
+    let objResult = obj(5012);
+    if (objResult.shouldAgeVerifyToSpeakForCurrentUser()) {
       return Promise.resolve();
     }
   }
-  if (!tmp8) {
-    let obj2 = require(4359) /* _createForOfIteratorHelperLoose */;
+  if (!tmp7) {
+    objResult = obj(4384);
     obj = {};
-    const merged = Object.assign(require(6696) /* fillChunk */.getStageChannelMetadata(channel));
-    obj2.trackWithMetadata(constants.PROMOTED_TO_SPEAKER, obj);
-    const obj5 = require(6696) /* fillChunk */;
+    const merged = Object.assign(obj(6717).getStageChannelMetadata(channel));
+    objResult.trackWithMetadata(constants.PROMOTED_TO_SPEAKER, obj);
+    const objResult1 = obj(6717);
   }
-  const HTTP = require(507) /* _isNativeReflectConstruct */.HTTP;
-  obj = { url: closure_9.UPDATE_VOICE_STATE(guildId) };
-  obj1 = { suppress: c1, request_to_speak_timestamp: null, channel_id: channel.id };
+  const HTTP = obj(530).HTTP;
+  obj = { url: closure_9.UPDATE_VOICE_STATE(guildId), body: null, rejectWithError: null };
+  obj1 = { suppress, request_to_speak_timestamp: null, channel_id: channel.id };
   if (flag) {
-    obj2 = { silent: flag };
+    const obj2 = { silent: null };
+    obj2[0] = flag;
     let obj3 = obj2;
   } else {
     obj3 = {};
   }
   const merged1 = Object.assign(obj3);
-  obj.body = obj1;
-  obj1 = require(507) /* _isNativeReflectConstruct */;
-  obj.rejectWithError = obj1.rejectWithMigratedError();
+  obj[1] = obj1;
+  obj = obj(530);
+  result = obj.rejectWithMigratedError();
+  obj[2] = result;
   HTTP.patch(obj);
 }
-function setUserSuppress(closure_0, id, suppress) {
-  const guildId = closure_0.getGuildId();
-  importDefault(44)(null != guildId, "This channel cannot be guildless.");
-  const HTTP = require(507) /* _isNativeReflectConstruct */.HTTP;
-  obj = { url: closure_9.UPDATE_VOICE_STATE(guildId, id), body: obj };
-  obj = { suppress, channel_id: closure_0.id, rejectWithError: require(507) /* _isNativeReflectConstruct */.rejectWithMigratedError() };
-  const obj3 = require(507) /* _isNativeReflectConstruct */;
-  return HTTP.patch(obj).catch((code) => {
-    if (code.code === outer1_7.STAGE_CHANNEL_USER_NOT_ALLOWED_TO_SPEAK) {
-      outer1_1(outer1_3[9]).showFailedToast(outer1_10.GENERIC_ERROR);
-      const obj = outer1_1(outer1_3[9]);
-    }
-    return code;
+function _startStage() {
+  const self = this;
+  const tmp = callback((arg0, arg1, arg2, arg3) => {
+    let closure_0 = arg0;
+    let closure_1 = arg1;
+    let closure_2 = arg2;
+    let closure_3 = arg3;
+    let c6 = 0;
+    let c7 = 0;
+    return (function*(arg0, arg1, arg2, arg3) {
+      if (c7 === 2) {
+        c7 = 3;
+        HermesBuiltin.throwTypeError();
+      } else if (tmp5 === 3) {
+        if (arg0 === 1) {
+          throw arg1;
+        } else if (arg0 === 2) {
+          let obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
+        } else {
+          return { value: "HermesInternal", done: null };
+        }
+      } else {
+        try {
+          c7 = 2;
+          if (0 === c6) {
+            if (arg0 === 1) {
+              c7 = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              c7 = 3;
+              obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            } else {
+              let handleConnectionOpen = tmp2;
+              let module_38 = tmp3;
+              let closure_1;
+              if ("" !== closure_1) {
+                if (outer1_5.getVoiceChannelId() !== tmp28.id) {
+                  let obj2 = callback(6710);
+                  obj2.connectToStage(tmp28);
+                }
+                const obj4 = callback(6723);
+                c6 = 1;
+                c7 = 1;
+                const obj1 = { value: null, done: false };
+                obj1[0] = obj4.startStageInstance(tmp28.id, tmp29, tmp30, tmp31);
+                return obj1;
+              } else {
+                c7 = 3;
+                return { value: "HermesInternal", done: null };
+              }
+            }
+          } else if (arg0 === 1) {
+            c7 = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            c7 = 3;
+            obj2 = { value: null, done: true };
+            obj2[0] = arg1;
+            return obj2;
+          } else {
+            closure_1 = arg1;
+            callback2(callback, false, true);
+            c7 = 3;
+            obj = { value: null, done: true };
+            obj[0] = closure_1;
+            return obj;
+          }
+        } catch (tmp22) {
+          c7 = tmp;
+          throw tmp22;
+        }
+      }
+    })();
   });
-}
-async function _startStage(arg0, arg1, arg2, arg3, arg4) {
-  if ("" !== arg1) {
-    if (outer2_5.getVoiceChannelId() !== arg0.id) {
-      outer2_0(outer2_3[17]).connectToStage(arg0);
-      const obj = outer2_0(outer2_3[17]);
-    }
-    const obj2 = outer2_0(outer2_3[18]);
-    outer2_11(arg0, false, true);
-    return yield obj2.startStageInstance(arg0.id, arg1, arg2, arg3);
+  const _startStage = tmp;
+  const apply = tmp.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
   }
+  return applyArgumentsResult;
 }
-async function _editStage(arg0, arg1, arg2, arg3) {
-  if ("" !== arg1) {
-    return yield outer2_0(outer2_3[18]).updateStageInstance(arg0.id, arg1, arg2);
+function _editStage() {
+  const self = this;
+  const tmp = callback((arg0, arg1, arg2) => {
+    let closure_0 = arg0;
+    let closure_1 = arg1;
+    let closure_2 = arg2;
+    let c4 = 0;
+    let c3 = 0;
+    return (function*(arg0, arg1, arg2) {
+      if (table === 2) {
+        table = 3;
+        HermesBuiltin.throwTypeError();
+      } else if (tmp3 === 3) {
+        if (arg0 === 1) {
+          throw arg1;
+        } else if (arg0 === 2) {
+          let obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
+        } else {
+          return { value: "HermesInternal", done: null };
+        }
+      } else {
+        try {
+          table = 2;
+          if (0 === c4) {
+            if (arg0 === 1) {
+              table = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              table = 3;
+              obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            } else if ("" !== closure_1) {
+              let obj2 = callback(table[18]);
+              c4 = 1;
+              table = 1;
+              const obj1 = { value: null, done: false };
+              obj1[0] = obj2.updateStageInstance(tmp5.id, tmp6, tmp7);
+              return obj1;
+            } else {
+              table = 3;
+              return { value: "HermesInternal", done: null };
+            }
+          } else if (arg0 === 1) {
+            table = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            table = 3;
+            obj2 = { value: null, done: true };
+            obj2[0] = arg1;
+            return obj2;
+          } else {
+            table = 3;
+            obj = { value: null, done: true };
+            obj[0] = arg1;
+            return obj;
+          }
+        } catch (tmp10) {
+          table = tmp;
+          throw tmp10;
+        }
+      }
+    })();
+  });
+  const _editStage = tmp;
+  const apply = tmp.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
   }
+  return applyArgumentsResult;
 }
-async function _endStage(arg0, arg1) {
-  yield outer2_0(outer2_3[18]).endStageInstance(arg0.id);
+function _endStage() {
+  const self = this;
+  const tmp = callback((arg0) => {
+    let closure_0 = arg0;
+    let c2 = 0;
+    let c1 = 0;
+    return (function*(arg0) {
+      if (c1 === 2) {
+        c1 = 3;
+        HermesBuiltin.throwTypeError();
+      } else if (tmp3 === 3) {
+        if (arg0 === 1) {
+          throw arg1;
+        } else if (arg0 === 2) {
+          let obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
+        } else {
+          return { value: "HermesInternal", done: null };
+        }
+      } else {
+        try {
+          c1 = 2;
+          if (0 === c2) {
+            if (arg0 === 1) {
+              c1 = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              c1 = 3;
+              obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            } else {
+              let obj1 = lib(outer1_3[18]);
+              c2 = 1;
+              c1 = 1;
+              obj1 = { value: null, done: false };
+              obj1[0] = obj1.endStageInstance(lib.id);
+              return obj1;
+            }
+          } else if (arg0 === 1) {
+            c1 = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            c1 = 3;
+            obj = { value: null, done: true };
+            obj[0] = arg1;
+            return obj;
+          } else {
+            c1 = 3;
+            return { value: "HermesInternal", done: null };
+          }
+        } catch (tmp8) {
+          c1 = tmp;
+          throw tmp8;
+        }
+      }
+    })();
+  });
+  const _endStage = tmp;
+  const apply = tmp.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
 }
-({ AbortCodes: closure_7, AnalyticEvents: closure_8, Endpoints: closure_9 } = ME);
-let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/stage_channels/StageChannelActionCreators.tsx");
+({ AbortCodes: error, AnalyticEvents: metroImportAll, Endpoints: c9 } = ME);
+let result = require("updateVoiceState").fileFinishedImporting("modules/stage_channels/StageChannelActionCreators.tsx");
 
-export const toggleRequestToSpeak = function toggleRequestToSpeak(closure_0, arg1) {
-  const guildId = closure_0.getGuildId();
-  importDefault(44)(null != guildId, "This channel cannot be guildless.");
+export const toggleRequestToSpeak = function toggleRequestToSpeak(channel_id, arg1) {
+  const guildId = channel_id.getGuildId();
+  importDefault(38)(null != guildId, "This channel cannot be guildless.");
   if (arg1) {
-    let obj = require(4359) /* _createForOfIteratorHelperLoose */;
+    let obj = require(4384) /* collectGuildAnalyticsMetadata */;
     obj = {};
-    const merged = Object.assign(require(6696) /* fillChunk */.getStageChannelMetadata(closure_0));
+    const merged = Object.assign(require(6717) /* fillChunk */.getStageChannelMetadata(channel_id));
     obj.trackWithMetadata(constants.REQUEST_TO_SPEAK_INITIATED, obj);
-    const obj3 = require(6696) /* fillChunk */;
+    const obj3 = require(6717) /* fillChunk */;
   }
-  const HTTP = require(507) /* _isNativeReflectConstruct */.HTTP;
-  obj = { url: closure_9.UPDATE_VOICE_STATE(guildId) };
-  const obj1 = {};
+  const HTTP = require(530) /* sendRequest */.HTTP;
+  obj = { url: closure_9.UPDATE_VOICE_STATE(guildId), body: null, rejectWithError: null };
   let toISOStringResult = null;
   if (arg1) {
     const _Date = Date;
     const date = new Date();
     toISOStringResult = date.toISOString();
   }
-  obj1.request_to_speak_timestamp = toISOStringResult;
-  obj1.channel_id = closure_0.id;
-  obj.body = obj1;
-  obj.rejectWithError = require(507) /* _isNativeReflectConstruct */.rejectWithMigratedError();
+  obj[1] = { request_to_speak_timestamp: toISOStringResult, channel_id: channel_id.id };
+  obj[2] = require(530) /* sendRequest */.rejectWithMigratedError();
   return HTTP.patch(obj);
 };
 export const inviteUserToStage = function inviteUserToStage(voiceChannel, id) {
   const guildId = voiceChannel.getGuildId();
-  importDefault(44)(null != guildId, "This channel cannot be guildless.");
-  const HTTP = require(507) /* _isNativeReflectConstruct */.HTTP;
-  let obj = { url: closure_9.UPDATE_VOICE_STATE(guildId, id) };
-  obj = { suppress: false, request_to_speak_timestamp: new Date().toISOString(), channel_id: voiceChannel.id };
-  obj.body = obj;
+  importDefault(38)(null != guildId, "This channel cannot be guildless.");
+  const HTTP = require(530) /* sendRequest */.HTTP;
+  let obj = { url: closure_9.UPDATE_VOICE_STATE(guildId, id), body: null, rejectWithError: null };
+  obj = { suppress: false, request_to_speak_timestamp: null, channel_id: null };
+  obj[1] = new Date().toISOString();
+  obj[2] = voiceChannel.id;
+  obj[1] = obj;
   const date = new Date();
-  obj.rejectWithError = require(507) /* _isNativeReflectConstruct */.rejectWithMigratedError();
-  const obj4 = require(507) /* _isNativeReflectConstruct */;
+  obj[2] = require(530) /* sendRequest */.rejectWithMigratedError();
+  const obj4 = require(530) /* sendRequest */;
   return HTTP.patch(obj).catch((code) => {
-    if (code.code === outer1_7.STAGE_CHANNEL_USER_NOT_ALLOWED_TO_SPEAK) {
-      outer1_1(outer1_3[9]).showFailedToast(outer1_10.GENERIC_ERROR);
-      const obj = outer1_1(outer1_3[9]);
+    if (code.code === constants.STAGE_CHANNEL_USER_NOT_ALLOWED_TO_SPEAK) {
+      callback(table[9]).showFailedToast(constants2.GENERIC_ERROR);
+      const obj = callback(table[9]);
     }
     return code;
   });
 };
 export { audienceAckRequestToSpeak };
-export const moveSelfToAudience = function moveSelfToAudience(getGuildId) {
+export const moveSelfToAudience = function moveSelfToAudience(channel_id) {
   let guildId;
-  if (null != getGuildId) {
-    guildId = getGuildId.getGuildId();
+  if (channel_id != null) {
+    guildId = channel_id.getGuildId();
   }
-  importDefault(44)(null != guildId, "This channel cannot be guildless.");
-  const HTTP = require(507) /* _isNativeReflectConstruct */.HTTP;
-  let obj = { url: closure_9.UPDATE_VOICE_STATE(guildId) };
-  obj = { suppress: true, channel_id: getGuildId.id, self_video: false, self_stream: false };
-  obj.body = obj;
-  obj.rejectWithError = require(507) /* _isNativeReflectConstruct */.rejectWithMigratedError();
+  importDefault(38)(null != guildId, "This channel cannot be guildless.");
+  const HTTP = require(530) /* sendRequest */.HTTP;
+  obj = { url: closure_9.UPDATE_VOICE_STATE(guildId), body: obj, rejectWithError: null };
+  obj = { suppress: true, channel_id: channel_id.id, self_video: false, self_stream: false };
+  obj[2] = require(530) /* sendRequest */.rejectWithMigratedError();
   return HTTP.patch(obj);
 };
-export { setUserSuppress };
+export const setUserSuppress = function setUserSuppress(closure_0, id, suppress) {
+  const guildId = closure_0.getGuildId();
+  importDefault(38)(null != guildId, "This channel cannot be guildless.");
+  const HTTP = require(530) /* sendRequest */.HTTP;
+  obj = { url: closure_9.UPDATE_VOICE_STATE(guildId, id), body: obj, rejectWithError: null };
+  obj = { suppress, channel_id: closure_0.id };
+  obj[2] = require(530) /* sendRequest */.rejectWithMigratedError();
+  const obj3 = require(530) /* sendRequest */;
+  return HTTP.patch(obj).catch((code) => {
+    if (code.code === constants.STAGE_CHANNEL_USER_NOT_ALLOWED_TO_SPEAK) {
+      callback(table[9]).showFailedToast(constants2.GENERIC_ERROR);
+      const obj = callback(table[9]);
+    }
+    return code;
+  });
+};
 export const moveUserToAudience = function moveUserToAudience(user, voiceChannel) {
   if (null != voiceChannel) {
     if (null != user) {
       const guildId = voiceChannel.getGuildId();
-      importDefault(44)(null != guildId, "This channel cannot be guildless.");
-      setUserSuppress(voiceChannel, user.id, true);
-      const HTTP = require(507) /* _isNativeReflectConstruct */.HTTP;
-      let obj = { url: closure_9.UPDATE_VOICE_STATE(guildId, user.id) };
-      obj = { suppress: true, channel_id: voiceChannel.id, self_video: false, self_stream: false };
-      obj.body = obj;
-      obj.rejectWithError = require(507) /* _isNativeReflectConstruct */.rejectWithMigratedError();
-      return HTTP.patch(obj);
+      importDefault(38)(null != guildId, "This channel cannot be guildless.");
+      const guildId1 = voiceChannel.getGuildId();
+      importDefault(38)(null != guildId1, "This channel cannot be guildless.");
+      const HTTP = require(530) /* sendRequest */.HTTP;
+      let obj = { url: null, body: null, rejectWithError: null };
+      obj[0] = closure_9.UPDATE_VOICE_STATE(guildId1, user.id);
+      obj = { suppress: true, channel_id: null };
+      obj[1] = voiceChannel.id;
+      obj[1] = obj;
+      obj[2] = require(530) /* sendRequest */.rejectWithMigratedError();
+      const obj3 = require(530) /* sendRequest */;
+      HTTP.patch(obj).catch((code) => {
+        if (code.code === constants.STAGE_CHANNEL_USER_NOT_ALLOWED_TO_SPEAK) {
+          callback(table[9]).showFailedToast(constants2.GENERIC_ERROR);
+          const obj = callback(table[9]);
+        }
+        return code;
+      });
+      const HTTP2 = require(530) /* sendRequest */.HTTP;
+      obj = { url: null, body: null, rejectWithError: null };
+      obj[0] = closure_9.UPDATE_VOICE_STATE(guildId, user.id);
+      const obj1 = { suppress: true, channel_id: null, self_video: false, self_stream: false };
+      obj1[1] = voiceChannel.id;
+      obj[1] = obj1;
+      const patchResult = HTTP.patch(obj);
+      obj[2] = require(530) /* sendRequest */.rejectWithMigratedError();
+      return HTTP2.patch(obj);
     }
   }
 };
 export const removeUserFromChannel = function removeUserFromChannel(id, getGuildId) {
   let guildId;
-  if (null != getGuildId) {
+  if (getGuildId != null) {
     guildId = getGuildId.getGuildId();
   }
   if (tmp2) {
-    importDefault(5083).setChannel(guildId, id.id, null);
-    const obj = importDefault(5083);
+    importDefault(5105).setChannel(guildId, id.id, null);
+    const obj = importDefault(5105);
   }
 };
-export const setEveryoneRolePermissionAllowed = function setEveryoneRolePermissionAllowed(stateFromStores, REQUEST_TO_SPEAK, arg2) {
-  const guildId = stateFromStores.getGuildId();
-  importDefault(44)(null != guildId, "Channel cannot be guildless");
-  const obj = { id: guildId, type: require(1882) /* PermissionOverwriteType */.PermissionOverwriteType.ROLE, allow: importAll(3798).NONE, deny: importAll(3798).NONE };
-  const merged = Object.assign(stateFromStores.permissionOverwrites[guildId]);
-  const obj2 = importAll(483);
+export const setEveryoneRolePermissionAllowed = function setEveryoneRolePermissionAllowed(getGuildId, REQUEST_TO_SPEAK, arg2) {
+  const guildId = getGuildId.getGuildId();
+  importDefault(38)(null != guildId, "Channel cannot be guildless");
+  const obj = { id: guildId, type: require(1906) /* PermissionOverwriteType */.PermissionOverwriteType.ROLE, allow: importAll(3822).NONE, deny: importAll(3822).NONE };
+  const merged = Object.assign(getGuildId.permissionOverwrites[guildId]);
+  const obj2 = importAll(506);
   if (arg2) {
     obj.allow = obj2.add(obj.allow, REQUEST_TO_SPEAK);
-    let tmp4Result = tmp4(483);
-    obj.deny = tmp4Result.remove(obj.deny, REQUEST_TO_SPEAK);
+    let tmp5Result = tmp5(506);
+    obj.deny = tmp5Result.remove(obj.deny, REQUEST_TO_SPEAK);
   } else {
     obj.allow = obj2.remove(obj.allow, REQUEST_TO_SPEAK);
-    tmp4Result = tmp4(483);
-    obj.deny = tmp4Result.add(obj.deny, REQUEST_TO_SPEAK);
+    tmp5Result = tmp5(506);
+    obj.deny = tmp5Result.add(obj.deny, REQUEST_TO_SPEAK);
   }
-  const result = importDefault(4175).updatePermissionOverwrite(stateFromStores.id, obj);
+  const result = importDefault(4199).updatePermissionOverwrite(getGuildId.id, obj);
 };
-export const startStage = function startStage(outer2_0, outer2_2, GUILD_ONLY, arg3) {
-  return _startStage(...arguments);
+export const startStage = function startStage(outer1_0, arg1, GUILD_ONLY, outer1_11) {
+  const self = this;
+  const apply = _startStage.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
 };
-export const editStage = function editStage(outer2_0, outer2_2, GUILD_ONLY) {
-  return _editStage(...arguments);
+export const editStage = function editStage(outer1_0, arg1, GUILD_ONLY) {
+  const self = this;
+  const apply = _editStage.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
 };
 export const endStage = function endStage(channel) {
-  return _endStage(...arguments);
+  const self = this;
+  const apply = _endStage.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
 };

@@ -1,22 +1,26 @@
-// Module ID: 11849
-// Function ID: 91822
-// Name: getSelectedSpecialNavigationPath
-// Dependencies: [653, 3993, 2]
-// Exports: useSelectedSpecialNavigationPath
+// Module ID: 11874
+// Function ID: 11875
+// Name: SpecialNavigationPath
+// Dependencies: [676, 4017, 2]
+// Exports: getSelectedSpecialNavigationPath, useSelectedSpecialNavigationPath
 
-// Module 11849 (getSelectedSpecialNavigationPath)
+// Module 11874 (SpecialNavigationPath)
 import { Routes } from "ME";
 
-function getSelectedSpecialNavigationPath(pathname) {
-  if (pathname.pathname === Routes.FRIENDS) {
-    return obj.FRIENDS;
-  }
-}
-const obj = { FRIENDS: 0, [0]: "FRIENDS" };
+let obj = { FRIENDS: 0, [0]: "FRIENDS" };
 const result = require("set").fileFinishedImporting("modules/navbars/native/NavigationPathUtils.tsx");
 
 export const SpecialNavigationPath = obj;
-export { getSelectedSpecialNavigationPath };
+export const getSelectedSpecialNavigationPath = function getSelectedSpecialNavigationPath(pathname) {
+  if (pathname.pathname === Routes.FRIENDS) {
+    return obj.FRIENDS;
+  }
+};
 export const useSelectedSpecialNavigationPath = function useSelectedSpecialNavigationPath() {
-  return getSelectedSpecialNavigationPath(require(3993) /* _extends */.useLocation());
+  const obj = require(4017) /* _extends */;
+  let FRIENDS;
+  if (obj.useLocation().pathname === Routes.FRIENDS) {
+    FRIENDS = obj.FRIENDS;
+  }
+  return FRIENDS;
 };

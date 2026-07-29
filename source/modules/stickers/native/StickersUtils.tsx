@@ -1,20 +1,20 @@
-// Module ID: 9600
-// Function ID: 74768
+// Module ID: 9622
+// Function ID: 9623
 // Name: useStickerCategories
-// Dependencies: [31, 27, 1838, 1850, 9601, 653, 1314, 9597, 4834, 9602, 9603, 1555, 2]
+// Dependencies: [19, 17, 1862, 1874, 9623, 676, 1338, 9619, 4856, 9624, 9625, 1579, 2]
 // Exports: dropPreloadedSticker, openStickerPickerToPackId, preloadSticker, useStickerCategories
 
-// Module 9600 (useStickerCategories)
-import result from "result";
+// Module 9622 (useStickerCategories)
+import noop from "noop";
 import { NativeModules } from "get ActivityIndicator";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import createGuildRecordFromRust from "createGuildRecordFromRust";
+import mergeGuildAvatar from "mergeGuildAvatar";
 import { useStickerPickerStore } from "useStickerPickerStore";
 import { GuildNSFWContentLevel } from "ME";
 import { ExpressionPickerViewType } from "ExpressionPickerViewType";
 
 const require = arg1;
-const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/stickers/native/StickersUtils.tsx");
+const result = require("createGuildRecordFromRust").fileFinishedImporting("modules/stickers/native/StickersUtils.tsx");
 
 export const useStickerCategories = function useStickerCategories(channel) {
   stickerPackCategories = stickerPackCategories(guilds[7]).useStickerPackCategories(channel);
@@ -24,11 +24,11 @@ export const useStickerCategories = function useStickerCategories(channel) {
   return React.useMemo(() => {
     const found = stickerPackCategories.filter((stickers) => stickers.stickers.length > 0);
     const found1 = found.filter((type) => {
-      let tmp2 = type.type !== stickerPackCategories(guilds[8]).StickerCategoryTypes.GUILD;
+      let tmp2 = type.type !== outer1_0(outer1_2[8]).StickerCategoryTypes.GUILD;
       if (!tmp2) {
-        let nsfwAllowed = null != outer1_1;
-        if (nsfwAllowed) {
-          nsfwAllowed = outer1_1.nsfwAllowed;
+        let nsfwAllowed;
+        if (lib != null) {
+          nsfwAllowed = lib.nsfwAllowed;
         }
         tmp2 = nsfwAllowed;
       }
@@ -36,28 +36,25 @@ export const useStickerCategories = function useStickerCategories(channel) {
         tmp2 = null == tmp;
       }
       if (!tmp2) {
-        let tmp8 = tmp.nsfwLevel !== outer2_8.AGE_RESTRICTED;
-        if (tmp8) {
-          tmp8 = tmp.nsfwLevel !== outer2_8.EXPLICIT;
-        }
-        tmp2 = tmp8;
+        tmp2 = tmp.nsfwLevel !== outer1_8.AGE_RESTRICTED && tmp.nsfwLevel !== tmp6.EXPLICIT;
+        const tmp7 = tmp.nsfwLevel !== outer1_8.AGE_RESTRICTED && tmp.nsfwLevel !== tmp6.EXPLICIT;
       }
       return tmp2;
     });
     return found1.map((type) => {
-      if (type.type !== stickerPackCategories(guilds[8]).StickerCategoryTypes.FAVORITE) {
-        if (type.type !== stickerPackCategories(guilds[8]).StickerCategoryTypes.RECENT) {
+      if (type.type !== callback(4856).StickerCategoryTypes.FAVORITE) {
+        if (type.type !== tmp(4856).StickerCategoryTypes.RECENT) {
           return type;
         }
       }
-      if (type.type === stickerPackCategories(guilds[8]).StickerCategoryTypes.FAVORITE) {
-        let tmp5 = currentUser(guilds[9]);
+      if (type.type === callback(4856).StickerCategoryTypes.FAVORITE) {
+        let tmp4 = lib(9624);
       } else {
-        tmp5 = currentUser(guilds[10]);
+        tmp4 = lib(9625);
       }
       const obj = {};
       const merged = Object.assign(type);
-      obj["icon"] = tmp5;
+      obj.icon = tmp4;
       return obj;
     });
   }, items);
@@ -70,14 +67,16 @@ export const dropPreloadedSticker = function dropPreloadedSticker(arg0) {
   const NativeLottieUtils = NativeModules.NativeLottieUtils;
   NativeLottieUtils.dropPreload(arg0);
 };
-export const openStickerPickerToPackId = function openStickerPickerToPackId(outer1_1, outer1_3) {
-  let closure_0 = outer1_1;
+export const openStickerPickerToPackId = function openStickerPickerToPackId(arg0, pack_id) {
+  let closure_0 = arg0;
   const state = useStickerPickerStore.getState();
-  state.setPackToScrollTo(outer1_3);
+  state.setPackToScrollTo(pack_id);
   const timerId = setTimeout(() => {
-    const current = outer1_1.current;
-    if (null != current) {
-      const obj = { type: outer1_1(outer1_2[11]).KeyboardTypes.EXPRESSION, context: outer1_9.STICKER };
+    const current = ref.current;
+    if (current != null) {
+      const obj = { type: null, context: null };
+      obj[0] = ref(outer1_2[11]).KeyboardTypes.EXPRESSION;
+      obj[1] = outer1_9.STICKER;
       current.openCustomKeyboard(obj);
     }
   }, 1);

@@ -1,27 +1,10 @@
-// Module ID: 10266
-// Function ID: 79291
-// Name: isObject
+// Module ID: 10287
+// Function ID: 10288
+// Name: merge
 // Dependencies: [2]
 
-// Module 10266 (isObject)
-function isObject(arg0) {
-  if ("object" === typeof arg0) {
-    if (null !== arg0) {
-      const _Object = Object;
-      if ("function" === typeof Object.getPrototypeOf) {
-        const _Object3 = Object;
-        const prototypeOf = Object.getPrototypeOf(arg0);
-        const _Object4 = Object;
-        return prototypeOf === Object.prototype || null === prototypeOf;
-      } else {
-        const _Object2 = Object;
-        return "[object Object]" === toString.call(arg0);
-      }
-    }
-  }
-  return false;
-}
-function merge(arg0) {
+// Module 10287 (merge)
+function merge() {
   let items = [...arguments];
   return items.reduce((arg0, arg1) => {
     let closure_0 = arg0;
@@ -31,38 +14,73 @@ function merge(arg0) {
       const typeError = new TypeError("Arguments provided to ts-deepmerge must be objects, not arrays.");
       throw typeError;
     } else {
-      const _Object = Object;
+      let _Object = Object;
       const keys = Object.keys(arg1);
       const item = keys.forEach((arg0) => {
-        let _Array3;
-        let _Set;
         const items = ["__proto__", "constructor", "prototype"];
         if (!items.includes(arg0)) {
           let tmp = globalThis;
           const _Array = Array;
-          if (Array.isArray(dependencyMap[arg0])) {
+          if (Array.isArray(lib[arg0])) {
             const _Array2 = Array;
-            if (Array.isArray(dependencyMap2[arg0])) {
-              if (outer2_2.options.mergeArrays) {
-                ({ Array: _Array3, Set: _Set } = tmp);
-                const prototype = _Set.prototype;
+            let tmp3 = dependencyMap;
+            if (Array.isArray(dependencyMap[arg0])) {
+              if (lib.options.mergeArrays) {
+                const _Array3 = tmp.Array;
                 tmp = new.target;
-                _Set = new _Set(dependencyMap[arg0].concat(dependencyMap2[arg0]));
-                let fromResult = _Array3.from(_Set);
-                const obj = dependencyMap[arg0];
+                const set = new tmp.Set(tmp2[arg0].concat(tmp3[arg0]));
+                tmp3 = set;
+                let fromResult = _Array3.from(set);
+                const obj = tmp2[arg0];
               } else {
-                fromResult = dependencyMap2[arg0];
+                fromResult = tmp3[arg0];
               }
-              dependencyMap[arg0] = fromResult;
-              const tmp13 = dependencyMap;
+              tmp2[arg0] = fromResult;
             }
           }
-          if (outer2_1(dependencyMap[arg0])) {
-            if (outer2_1(dependencyMap2[arg0])) {
-              dependencyMap[arg0] = outer2_2(dependencyMap[arg0], dependencyMap2[arg0]);
+          let flag = false;
+          if (typeof lib[arg0] !== "window") {
+            flag = false;
+            if (null !== tmp4) {
+              const _Object = Object;
+              if (typeof Object.getPrototypeOf === "find") {
+                const _Object2 = Object;
+                const prototypeOf = Object.getPrototypeOf(tmp4);
+                const _Object3 = Object;
+                flag = prototypeOf === Object.prototype || null === prototypeOf;
+                const tmp6 = prototypeOf === Object.prototype || null === prototypeOf;
+              } else {
+                const _Object7 = Object;
+                const call = toString.call;
+                flag = "[object Object]" === (typeof call === "unknown" ? toString() : call(tmp4));
+              }
             }
           }
-          dependencyMap[arg0] = dependencyMap2[arg0];
+          if (flag) {
+            let flag2 = false;
+            if (typeof dependencyMap[arg0] !== "window") {
+              flag2 = false;
+              if (null !== tmp8) {
+                const _Object4 = Object;
+                if (typeof Object.getPrototypeOf === "find") {
+                  const _Object5 = Object;
+                  const prototypeOf1 = Object.getPrototypeOf(tmp8);
+                  const _Object6 = Object;
+                  flag2 = prototypeOf1 === Object.prototype || null === prototypeOf1;
+                  const tmp10 = prototypeOf1 === Object.prototype || null === prototypeOf1;
+                } else {
+                  const _Object8 = Object;
+                  const call2 = toString2.call;
+                  flag2 = "[object Object]" === (typeof call2 === "unknown" ? toString2() : call2(tmp8));
+                }
+              }
+            }
+            if (flag2) {
+              tmp2[arg0] = lib(tmp2[arg0], tmp7[arg0]);
+            }
+            tmp7 = dependencyMap;
+          }
+          lib[arg0] = dependencyMap[arg0];
         }
       });
       return arg0;
@@ -71,7 +89,7 @@ function merge(arg0) {
 }
 let obj = { mergeArrays: true };
 merge.options = obj;
-merge.withOptions = (arg0, arg1) => {
+merge.withOptions = (arg0) => {
   const substr = [...arguments].slice();
   const obj = { mergeArrays: true };
   const merged = Object.assign(arg0);

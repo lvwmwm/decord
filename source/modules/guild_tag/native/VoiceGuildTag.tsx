@@ -1,41 +1,37 @@
-// Module ID: 15080
-// Function ID: 114783
-// Name: num2
-// Dependencies: [31, 27, 1850, 7701, 33, 477, 4165, 689, 566, 7917, 8428, 4161, 2]
+// Module ID: 15113
+// Function ID: 15114
+// Name: VoiceGuildTagChiplet
+// Dependencies: [19, 17, 1874, 7724, 21, 500, 4189, 712, 589, 7942, 8452, 4185, 2]
 // Exports: default
 
-// Module 15080 (num2)
-import "result";
+// Module 15113 (VoiceGuildTagChiplet)
+import "noop";
 import { View } from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import mergeGuildAvatar from "mergeGuildAvatar";
 import { GuildTagBadgeSize } from "items";
 import jsxProd from "jsxProd";
 import set from "set";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 import set from "set";
-import set from "_isNativeReflectConstruct";
+import set from "mergeGuildAvatar";
 
-let closure_5;
+let c5;
 let closure_6;
 const require = arg1;
-({ jsx: closure_5, jsxs: closure_6 } = jsxProd);
+({ jsx: c5, jsxs: closure_6 } = jsxProd);
 let num = 10;
 if (set.isAndroid()) {
   num = 14;
 }
-set = { gapContainer: set };
-set = { height: num };
-_createForOfIteratorHelperLoose = { alignItems: "center", justifyContent: "center", flexDirection: "row", backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_MOD_STRONG, borderRadius: 4, paddingHorizontal: 4, marginVertical: null, height: 16, gap: 2 };
+set = { gapContainer: { height: num }, tagContainer: null, tag: null };
+set = { alignItems: "center", justifyContent: "center", flexDirection: "row", backgroundColor: require("Themes").colors.BACKGROUND_MOD_STRONG, borderRadius: 4, paddingHorizontal: 4, marginVertical: (num - 16) / 2, height: 16, gap: 2 };
 let num2 = 16;
-_createForOfIteratorHelperLoose.marginVertical = (num - 16) / 2;
-set.tagContainer = _createForOfIteratorHelperLoose;
-let obj2 = {};
+set[1] = set;
 if (set.isAndroid()) {
   num2 = 13;
 }
-obj2.lineHeight = num2;
-set.tag = obj2;
-set = _createForOfIteratorHelperLoose.createStyles(set);
+set[2] = { lineHeight: num2 };
+set = createCacheKey.createStyles(set);
 const result = set.fileFinishedImporting("modules/guild_tag/native/VoiceGuildTag.tsx");
 
 export default function VoiceGuildTagChiplet(userId) {
@@ -43,32 +39,36 @@ export default function VoiceGuildTagChiplet(userId) {
   let tag;
   userId = userId.userId;
   const tmp = set();
-  let obj = userId(566);
-  const items = [_isNativeReflectConstruct];
+  let obj = userId(589);
+  const items = [mergeGuildAvatar];
   const items1 = [userId];
   const stateFromStores = obj.useStateFromStores(items, () => outer1_3.getUser(userId), items1);
-  let obj1 = userId(7917);
+  let obj1 = userId(7942);
   let primaryGuild;
-  if (null != stateFromStores) {
+  if (stateFromStores != null) {
     primaryGuild = stateFromStores.primaryGuild;
   }
   const userPrimaryGuild = obj1.getUserPrimaryGuild(primaryGuild);
   ({ tag, guildId } = userPrimaryGuild);
   if (null != guildId) {
     if (null != tag) {
-      let obj2 = userId(7917);
-      obj = { style: tmp.gapContainer };
-      obj = { style: tmp.tagContainer };
-      const guildTagBadgeUrl = obj2.getGuildTagBadgeUrl(guildId, tmp5, GuildTagBadgeSize.SIZE_12);
-      obj1 = {};
-      obj2 = { uri: guildTagBadgeUrl };
-      obj1.source = obj2;
-      obj1.size = GuildTagBadgeSize.SIZE_12;
-      const items2 = [callback(userId(8428).GuildTagBadge, obj1), ];
-      const obj3 = { variant: "text-xs/semibold", color: "text-default", style: tmp.tag, children: tag };
-      items2[1] = callback(userId(4161).Text, obj3);
-      obj.children = items2;
-      obj.children = callback2(View, obj);
+      obj = { style: null, children: null };
+      obj[0] = tmp.gapContainer;
+      obj = { style: null, children: null };
+      obj[0] = tmp.tagContainer;
+      const guildTagBadgeUrl = tmp2(7942).getGuildTagBadgeUrl(guildId, tmp7, GuildTagBadgeSize.SIZE_12);
+      obj1 = { source: null, size: null };
+      const obj2 = { uri: null };
+      obj2[0] = guildTagBadgeUrl;
+      obj1[0] = obj2;
+      obj1[1] = GuildTagBadgeSize.SIZE_12;
+      const items2 = [callback(tmp2(8452).GuildTagBadge, obj1), ];
+      const obj3 = { variant: "text-xs/semibold", color: "text-default", style: null, children: null };
+      obj3[2] = tmp.tag;
+      obj3[3] = tag;
+      items2[1] = callback(tmp2(4185).Text, obj3);
+      obj[1] = items2;
+      obj[1] = callback2(View, obj);
       return callback(View, obj);
     }
   }

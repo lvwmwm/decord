@@ -1,246 +1,351 @@
-// Module ID: 6076
-// Function ID: 54331
+// Module ID: 6094
+// Function ID: 6095
 // Name: getURL
-// Dependencies: [57, 5, 27, 3807, 4145, 477, 22, 1392, 6077, 1447, 4009, 6116, 6121, 2]
+// Dependencies: [32, 5, 17, 3831, 4169, 500, 12, 1416, 6095, 1471, 4033, 6134, 6139, 2]
 
-// Module 6076 (getURL)
+// Module 6094 (getURL)
 import _slicedToArray from "_slicedToArray";
 import set from "set";
 import get_ActivityIndicator from "get ActivityIndicator";
-import createText from "createText";
+import defaultImageSrcGenerator from "defaultImageSrcGenerator";
 import importDefaultResult from "set";
 
-let closure_5;
+let c5;
 let closure_6;
 const require = arg1;
-function getURL(outer1_6) {
-  if (null == outer1_6) {
+function getURL(name) {
+  if (null == name) {
     convert = convert.convert;
     const _HermesInternal = HermesInternal;
-    let str = "asset:/emoji-" + convert.toCodePoint(outer1_6) + ".png";
+    let str = "asset:/emoji-" + convert.toCodePoint(name) + ".png";
   } else {
     str = "";
-    const obj = require(477) /* set */;
+    const obj = require(500) /* set */;
   }
   return str;
 }
-async function _getEmojiColors(arg0, arg1) {
-  const id = arg0.id;
-  if (null != id) {
-    let obj = outer2_1(outer2_2[7]);
-    obj = { id, size: 32, animated: false };
-    let emojiURL = obj.getEmojiURL(obj);
-  } else {
-    emojiURL = outer2_8(tmp);
-  }
-  if ("" === emojiURL) {
-    const ImageManager = outer2_5.ImageManager;
-    const _HermesInternal = HermesInternal;
-    emojiURL = "data:image/png;base64," + yield ImageManager.getEmojiBase64(arg0.name, outer2_0(outer2_2[8]).EMOJI_IN_ANIMATION_SIZE);
-  }
-  const arr = yield outer2_0(outer2_2[9]).getPaletteForAvatar(emojiURL);
-  let mapped;
-  if (null != arr) {
-    mapped = arr.map((arg0) => {
-      let tmp2;
-      let tmp3;
-      let tmp4;
-      [tmp2, tmp3, tmp4] = outer3_3(arg0, 3);
-      const tmp = outer3_3(arg0, 3);
-      return outer3_0(outer3_2[10]).rgbToHex(tmp2, tmp3, tmp4);
-    });
-  }
-  return mapped;
-}
-({ NativeModules: closure_5, processColor: closure_6 } = get_ActivityIndicator);
-let obj = {
-  getURL: require("set").makeMemoizer(getURL),
-  filterUnsupportedEmojis(emojis) {
-    let found = emojis;
-    if (!obj.isAndroid()) {
-      found = importDefault(22).filter(emojis, (unicodeVersion) => {
-        unicodeVersion = unicodeVersion.unicodeVersion;
-        const systemVersionMajor = outer1_0(outer1_2[4]).getSystemVersionMajor();
-        const obj = outer1_0(outer1_2[4]);
-        const systemVersionMinor = outer1_0(outer1_2[4]).getSystemVersionMinor();
-        let flag = true;
-        if (unicodeVersion > 8) {
-          if (9 === unicodeVersion) {
-            let tmp21 = systemVersionMajor > 10;
-            if (!tmp21) {
-              let tmp22 = 10 === systemVersionMajor;
-              if (tmp22) {
-                tmp22 = systemVersionMinor >= 2;
+function _getEmojiColors() {
+  const self = this;
+  let tmp = callback((arg0) => {
+    let closure_0 = arg0;
+    let c3 = 0;
+    let c4 = 0;
+    return (function*(arg0) {
+      if (c4 === 2) {
+        c4 = 3;
+        HermesBuiltin.throwTypeError();
+      } else if (tmp4 === 3) {
+        if (arg0 === 1) {
+          throw arg1;
+        } else if (arg0 === 2) {
+          let obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
+        } else {
+          return { value: "HermesInternal", done: null };
+        }
+      } else {
+        try {
+          c4 = 2;
+          if (0 === c3) {
+            if (arg0 === 1) {
+              c4 = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              c4 = 3;
+              obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            } else {
+              const table = tmp5;
+              let closure_1 = tmp2;
+              let emojiURL;
+              closure_1 = undefined;
+              const id = emojiURL.id;
+              if (null != id) {
+                let obj3 = outer1_1(outer1_2[7]);
+                const obj1 = { id: null, size: 32, animated: false };
+                obj1[0] = id;
+                emojiURL = obj3.getEmojiURL(obj1);
+              } else {
+                emojiURL = outer1_8(tmp32);
               }
-              tmp21 = tmp22;
-            }
-            flag = tmp21;
-          } else if (10 === unicodeVersion) {
-            let tmp19 = systemVersionMajor > 11;
-            if (!tmp19) {
-              let tmp20 = 11 === systemVersionMajor;
-              if (tmp20) {
-                tmp20 = systemVersionMinor >= 1;
+              if ("" === emojiURL) {
+                const ImageManager = outer1_5.ImageManager;
+                c3 = 1;
+                c4 = 1;
+                const obj2 = { value: null, done: false };
+                obj2[0] = ImageManager.getEmojiBase64(tmp31.name, callback(outer1_2[8]).EMOJI_IN_ANIMATION_SIZE);
+                return obj2;
+              } else {
+                const paletteForAvatar = emojiURL(table[9]).getPaletteForAvatar(emojiURL);
+                c3 = 2;
+                c4 = 1;
+                const obj6 = emojiURL(table[9]);
               }
-              tmp19 = tmp20;
+              tmp31 = emojiURL;
             }
-            flag = tmp19;
-          } else if (11 === unicodeVersion) {
-            let tmp17 = systemVersionMajor > 12;
-            if (!tmp17) {
-              let tmp18 = 12 === systemVersionMajor;
-              if (tmp18) {
-                tmp18 = systemVersionMinor >= 1;
-              }
-              tmp17 = tmp18;
+          } else if (1 === tmp5) {
+            if (arg0 === 1) {
+              c4 = 3;
+              throw arg1;
+            } else if (arg0 !== 2) {
+              const _HermesInternal = HermesInternal;
+              callback = "data:image/png;base64," + arg1;
             }
-            flag = tmp17;
+          } else if (arg0 === 1) {
+            c4 = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            c4 = 3;
+            obj3 = { value: null, done: true };
+            obj3[0] = arg1;
+            return obj3;
           } else {
-            if (12 !== unicodeVersion) {
-              if (12.1 !== unicodeVersion) {
-                if (13 === unicodeVersion) {
-                  let tmp13 = systemVersionMajor > 14;
-                  if (!tmp13) {
-                    let tmp14 = 14 === systemVersionMajor;
-                    if (tmp14) {
-                      tmp14 = systemVersionMinor >= 2;
+            closure_1 = arg1;
+            let mapped;
+            if (closure_1 != null) {
+              mapped = closure_1.map((arg0) => {
+                let tmp2;
+                let tmp3;
+                let tmp4;
+                [tmp2, tmp3, tmp4] = v2(arg0, 3);
+                const tmp = v2(arg0, 3);
+                return emojiURL(tmp5[10]).rgbToHex(tmp2, tmp3, tmp4);
+              });
+            }
+            c4 = 3;
+            obj = { value: null, done: true };
+            obj[0] = mapped;
+            return obj;
+          }
+          c4 = 3;
+          const obj4 = { value: null, done: true };
+          obj4[0] = arg1;
+          return obj4;
+        } catch (tmp25) {
+          c4 = tmp;
+          throw tmp25;
+        }
+      }
+    })();
+  });
+  const _getEmojiColors = tmp;
+  const apply = tmp.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
+}
+({ NativeModules: c5, processColor: closure_6 } = get_ActivityIndicator);
+let obj = { getURL: null, filterUnsupportedEmojis: null, applyPlatformToThemedEmojiColorPalette: null, getEmojiColors: null, triggerFullscreenAnimation: null };
+obj[0] = require("set").makeMemoizer(getURL);
+obj[1] = function filterUnsupportedEmojis(emojis) {
+  let found = emojis;
+  if (!obj.isAndroid()) {
+    found = importDefault(12).filter(emojis, (unicodeVersion) => {
+      unicodeVersion = unicodeVersion.unicodeVersion;
+      const systemVersionMajor = callback(4169).getSystemVersionMajor();
+      const obj = callback(4169);
+      const systemVersionMinor = callback(4169).getSystemVersionMinor();
+      let flag = true;
+      if (unicodeVersion > 8) {
+        if (9 === unicodeVersion) {
+          let tmp21 = systemVersionMajor > 10;
+          if (!tmp21) {
+            let tmp22 = 10 === systemVersionMajor;
+            if (tmp22) {
+              tmp22 = systemVersionMinor >= 2;
+            }
+            tmp21 = tmp22;
+          }
+          flag = tmp21;
+        } else if (10 === unicodeVersion) {
+          let tmp19 = systemVersionMajor > 11;
+          if (!tmp19) {
+            let tmp20 = 11 === systemVersionMajor;
+            if (tmp20) {
+              tmp20 = systemVersionMinor >= 1;
+            }
+            tmp19 = tmp20;
+          }
+          flag = tmp19;
+        } else if (11 === unicodeVersion) {
+          let tmp17 = systemVersionMajor > 12;
+          if (!tmp17) {
+            let tmp18 = 12 === systemVersionMajor;
+            if (tmp18) {
+              tmp18 = systemVersionMinor >= 1;
+            }
+            tmp17 = tmp18;
+          }
+          flag = tmp17;
+        } else {
+          if (12 !== unicodeVersion) {
+            if (12.1 !== unicodeVersion) {
+              if (13 === unicodeVersion) {
+                let tmp13 = systemVersionMajor > 14;
+                if (!tmp13) {
+                  let tmp14 = 14 === systemVersionMajor;
+                  if (tmp14) {
+                    tmp14 = systemVersionMinor >= 2;
+                  }
+                  tmp13 = tmp14;
+                }
+                flag = tmp13;
+              } else if (13.1 === unicodeVersion) {
+                let tmp11 = systemVersionMajor > 14;
+                if (!tmp11) {
+                  let tmp12 = 14 === systemVersionMajor;
+                  if (tmp12) {
+                    tmp12 = systemVersionMinor >= 5;
+                  }
+                  tmp11 = tmp12;
+                }
+                flag = tmp11;
+              } else if (14 === unicodeVersion) {
+                let tmp9 = systemVersionMajor > 15;
+                if (!tmp9) {
+                  let tmp10 = 15 === systemVersionMajor;
+                  if (tmp10) {
+                    tmp10 = systemVersionMinor >= 4;
+                  }
+                  tmp9 = tmp10;
+                }
+                flag = tmp9;
+              } else if (15 === unicodeVersion) {
+                let tmp7 = systemVersionMajor > 16;
+                if (!tmp7) {
+                  let tmp8 = 16 === systemVersionMajor;
+                  if (tmp8) {
+                    tmp8 = systemVersionMinor >= 4;
+                  }
+                  tmp7 = tmp8;
+                }
+                flag = tmp7;
+              } else if (15.1 === unicodeVersion) {
+                let tmp5 = systemVersionMajor > 17;
+                if (!tmp5) {
+                  let tmp6 = 17 === systemVersionMajor;
+                  if (tmp6) {
+                    tmp6 = systemVersionMinor >= 4;
+                  }
+                  tmp5 = tmp6;
+                }
+                flag = tmp5;
+              } else {
+                flag = false;
+                if (16 === unicodeVersion) {
+                  let tmp4 = systemVersionMajor > 18;
+                  if (!tmp4) {
+                    let tmp3 = 18 === systemVersionMajor;
+                    if (tmp3) {
+                      tmp3 = systemVersionMinor >= 4;
                     }
-                    tmp13 = tmp14;
+                    tmp4 = tmp3;
                   }
-                  flag = tmp13;
-                } else if (13.1 === unicodeVersion) {
-                  let tmp11 = systemVersionMajor > 14;
-                  if (!tmp11) {
-                    let tmp12 = 14 === systemVersionMajor;
-                    if (tmp12) {
-                      tmp12 = systemVersionMinor >= 5;
-                    }
-                    tmp11 = tmp12;
-                  }
-                  flag = tmp11;
-                } else if (14 === unicodeVersion) {
-                  let tmp9 = systemVersionMajor > 15;
-                  if (!tmp9) {
-                    tmp9 = 15 === systemVersionMajor && systemVersionMinor >= 4;
-                    const tmp10 = 15 === systemVersionMajor && systemVersionMinor >= 4;
-                  }
-                  flag = tmp9;
-                } else if (15 === unicodeVersion) {
-                  let tmp7 = systemVersionMajor > 16;
-                  if (!tmp7) {
-                    tmp7 = 16 === systemVersionMajor && systemVersionMinor >= 4;
-                    const tmp8 = 16 === systemVersionMajor && systemVersionMinor >= 4;
-                  }
-                  flag = tmp7;
-                } else if (15.1 === unicodeVersion) {
-                  let tmp5 = systemVersionMajor > 17;
-                  if (!tmp5) {
-                    tmp5 = 17 === systemVersionMajor && systemVersionMinor >= 4;
-                    const tmp6 = 17 === systemVersionMajor && systemVersionMinor >= 4;
-                  }
-                  flag = tmp5;
-                } else {
-                  flag = false;
-                  if (16 === unicodeVersion) {
-                    let tmp4 = systemVersionMajor > 18;
-                    if (!tmp4) {
-                      tmp4 = 18 === systemVersionMajor && systemVersionMinor >= 4;
-                      const tmp3 = 18 === systemVersionMajor && systemVersionMinor >= 4;
-                    }
-                    flag = tmp4;
-                  }
+                  flag = tmp4;
                 }
               }
             }
-            let tmp15 = systemVersionMajor > 13;
-            if (!tmp15) {
-              let tmp16 = 13 === systemVersionMajor;
-              if (tmp16) {
-                tmp16 = systemVersionMinor >= 2;
-              }
-              tmp15 = tmp16;
-            }
-            flag = tmp15;
           }
+          let tmp15 = systemVersionMajor > 13;
+          if (!tmp15) {
+            let tmp16 = 13 === systemVersionMajor;
+            if (tmp16) {
+              tmp16 = systemVersionMinor >= 2;
+            }
+            tmp15 = tmp16;
+          }
+          flag = tmp15;
         }
-        return flag;
-      });
-      const arr = importDefault(22);
-    }
-    return found;
-  },
-  applyPlatformToThemedEmojiColorPalette(arg0) {
-    let DARK;
-    let LIGHT;
-    let palette;
-    let shouldProcessMobileColors;
-    ({ palette, shouldProcessMobileColors } = arg0);
-    if (shouldProcessMobileColors === undefined) {
-      shouldProcessMobileColors = false;
-    }
-    if (shouldProcessMobileColors) {
-      if (null != palette) {
-        ({ LIGHT, DARK } = palette);
-        let obj = {};
-        obj = {};
-        let accentColor;
-        if (null != LIGHT) {
-          accentColor = LIGHT.accentColor;
-        }
-        obj.accentColor = closure_6(accentColor);
-        let backgroundColor;
-        if (null != LIGHT) {
-          backgroundColor = LIGHT.backgroundColor;
-        }
-        obj.backgroundColor = closure_6(backgroundColor);
-        let highlightColor;
-        if (null != LIGHT) {
-          highlightColor = LIGHT.highlightColor;
-        }
-        obj.highlightColor = closure_6(highlightColor);
-        let opacity;
-        if (null != LIGHT) {
-          opacity = LIGHT.opacity;
-        }
-        obj.opacity = opacity;
-        obj.LIGHT = obj;
-        obj = {};
-        let accentColor1;
-        if (null != DARK) {
-          accentColor1 = DARK.accentColor;
-        }
-        obj.accentColor = closure_6(accentColor1);
-        let backgroundColor1;
-        if (null != DARK) {
-          backgroundColor1 = DARK.backgroundColor;
-        }
-        obj.backgroundColor = closure_6(backgroundColor1);
-        let highlightColor1;
-        if (null != DARK) {
-          highlightColor1 = DARK.highlightColor;
-        }
-        obj.highlightColor = closure_6(highlightColor1);
-        let opacity1;
-        if (null != DARK) {
-          opacity1 = DARK.opacity;
-        }
-        obj.opacity = opacity1;
-        obj.DARK = obj;
-        return obj;
       }
-    }
-    return palette;
-  },
-  getEmojiColors() {
-    return _getEmojiColors(...arguments);
-  },
-  triggerFullscreenAnimation(arg0) {
-    let channelId;
-    let emoji;
-    let messageId;
-    ({ channelId, messageId, emoji } = arg0);
-    const result = require(6116) /* onDismiss */.openBurstReactionFirstSendActionSheet({ channelId, messageId, emoji });
+      return flag;
+    });
+    const arr = importDefault(12);
   }
+  return found;
+};
+obj[2] = function applyPlatformToThemedEmojiColorPalette(arg0) {
+  let DARK;
+  let LIGHT;
+  let palette;
+  let shouldProcessMobileColors;
+  ({ palette, shouldProcessMobileColors } = arg0);
+  if (shouldProcessMobileColors === undefined) {
+    shouldProcessMobileColors = false;
+  }
+  if (shouldProcessMobileColors) {
+    if (null != palette) {
+      ({ LIGHT, DARK } = palette);
+      let accentColor;
+      if (LIGHT != null) {
+        accentColor = LIGHT.accentColor;
+      }
+      let obj = { accentColor: null, backgroundColor: null, highlightColor: null, opacity: null };
+      obj[0] = closure_6(accentColor);
+      let backgroundColor;
+      if (LIGHT != null) {
+        backgroundColor = LIGHT.backgroundColor;
+      }
+      obj[1] = closure_6(backgroundColor);
+      let highlightColor;
+      if (LIGHT != null) {
+        highlightColor = LIGHT.highlightColor;
+      }
+      obj[2] = closure_6(highlightColor);
+      let opacity;
+      if (LIGHT != null) {
+        opacity = LIGHT.opacity;
+      }
+      obj = { LIGHT: null, DARK: null };
+      obj[3] = opacity;
+      obj[0] = obj;
+      let accentColor1;
+      if (DARK != null) {
+        accentColor1 = DARK.accentColor;
+      }
+      obj = { accentColor: null, backgroundColor: null, highlightColor: null, opacity: null };
+      obj[0] = closure_6(accentColor1);
+      let backgroundColor1;
+      if (DARK != null) {
+        backgroundColor1 = DARK.backgroundColor;
+      }
+      obj[1] = closure_6(backgroundColor1);
+      let highlightColor1;
+      if (DARK != null) {
+        highlightColor1 = DARK.highlightColor;
+      }
+      obj[2] = closure_6(highlightColor1);
+      let opacity1;
+      if (DARK != null) {
+        opacity1 = DARK.opacity;
+      }
+      obj[3] = opacity1;
+      obj[1] = obj;
+      return obj;
+    }
+  }
+  return palette;
+};
+obj[3] = function getEmojiColors() {
+  const self = this;
+  const apply = _getEmojiColors.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
+};
+obj[4] = function triggerFullscreenAnimation(arg0) {
+  let channelId;
+  let emoji;
+  let messageId;
+  ({ channelId, messageId, emoji } = arg0);
+  const result = require(6134) /* onDismiss */.openBurstReactionFirstSendActionSheet({ channelId, messageId, emoji });
 };
 let result = require("get ActivityIndicator").fileFinishedImporting("utils/EmojiUtilsPlatformed.native.tsx");
 

@@ -1,15 +1,15 @@
-// Module ID: 9662
-// Function ID: 75224
+// Module ID: 9684
+// Function ID: 9685
 // Name: getDeviceMediaPhotos
-// Dependencies: [27, 3, 1184, 477, 9663, 2]
+// Dependencies: [17, 3, 1208, 500, 9685, 2]
 // Exports: default
 
-// Module 9662 (getDeviceMediaPhotos)
+// Module 9684 (getDeviceMediaPhotos)
 import { NativeModules } from "get ActivityIndicator";
-import importDefaultResult from "set";
 
-importDefaultResult = new importDefaultResult("DeviceMedia.tsx");
-const result = require("isNonEmptyString").fileFinishedImporting("modules/device/native/getDeviceMediaPhotos.tsx");
+let c4 = new require("set")("DeviceMedia.tsx");
+const tmp2 = new require("set")("DeviceMedia.tsx");
+const result = require("module_1208").fileFinishedImporting("modules/device/native/getDeviceMediaPhotos.tsx");
 
 export default function getDeviceMediaPhotos(arg0) {
   let batchSize;
@@ -23,22 +23,29 @@ export default function getDeviceMediaPhotos(arg0) {
   ({ endCursor, lastAssetIndex, lastNodeImageUri } = arg0);
   if (onError === undefined) {
     onError = function u(arg0) {
-      outer1_4.log("CameraRollUtils -- Failed to get photos with error " + arg0);
-      outer1_1(outer1_2[2]).captureException(arg0, { tags: { source: "DEVICE_MEDIA" } });
+      logger.log("CameraRollUtils -- Failed to get photos with error " + arg0);
+      callback(table[2]).captureException(arg0, { tags: { source: "DEVICE_MEDIA" } });
     };
   }
-  let obj = require(477) /* set */;
+  let obj = require(500) /* set */;
   if (obj.isIOS()) {
-    if (null != importDefault(9663)) {
-      obj = { first: batchSize, groupTypes: "Recents", assetType: "All", after: endCursor, extensions };
-      const photos = importDefault(9663).getPhotos(obj);
-      const obj3 = importDefault(9663);
+    const obj3 = importDefault(9685);
+    if (obj3 != null) {
+      obj = { first: null, groupTypes: "Recents", assetType: "All", after: null, extensions: null };
+      obj[0] = batchSize;
+      obj[3] = endCursor;
+      obj[4] = extensions;
+      const photos = obj3.getPhotos(obj);
       photos.then(onFetched).catch(onError);
       const nextPromise = photos.then(onFetched);
     }
   } else {
     const CameraRollUtils = NativeModules.CameraRollUtils;
-    obj = { first: batchSize, assetType: "All", after: lastNodeImageUri, offset: lastAssetIndex, extensions };
+    obj = { first: null, assetType: "All", after: null, offset: null, extensions: null };
+    obj[0] = batchSize;
+    obj[2] = lastNodeImageUri;
+    obj[3] = lastAssetIndex;
+    obj[4] = extensions;
     const photos1 = CameraRollUtils.getPhotos(obj);
     photos1.then(onFetched).catch(onError);
     const nextPromise1 = photos1.then(onFetched);

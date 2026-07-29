@@ -1,73 +1,74 @@
-// Module ID: 9627
-// Function ID: 74909
+// Module ID: 9649
+// Function ID: 9650
 // Name: EmptyStateSticker
-// Dependencies: [57, 31, 27, 5070, 3841, 653, 1852, 33, 4165, 9597, 9613, 5497, 5517, 566, 675, 4161, 1212, 4695, 4134, 4135, 4578, 5119, 9353, 9621, 2]
+// Dependencies: [32, 19, 17, 5092, 3865, 676, 1876, 21, 4189, 9619, 9635, 5515, 5535, 589, 698, 4185, 1236, 4717, 4158, 4159, 4600, 5141, 9377, 9643, 2]
 // Exports: default
 
-// Module 9627 (EmptyStateSticker)
+// Module 9649 (EmptyStateSticker)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
-import { View } from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import IMPACT_LIGHT from "IMPACT_LIGHT";
+import { View } from "PressableBase";
+import loadSavedGuildStickers from "loadSavedGuildStickers";
 import { EMPTY_STATE_STICKERS } from "STICKER_PICKER_TAB_PANEL_ID";
 import ME from "ME";
 import { PremiumUpsellTypes } from "GuildFeatures";
-import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import jsxProd from "preload";
+import createCacheKey from "createCacheKey";
 
-let closure_11;
+let c9;
 let closure_12;
-let closure_8;
-let closure_9;
+let metroImportAll;
+let unpackModuleId;
 let require = arg1;
 function EmptyStateSticker(sticker) {
   sticker = sticker.sticker;
-  const animated = require(9597) /* _createForOfIteratorHelperLoose */.useShouldAnimateSticker(sticker.isFocused);
+  const animated = require(9619) /* useStickerPackCategories */.useShouldAnimateSticker(sticker.isFocused);
   let id;
-  const obj = require(9597) /* _createForOfIteratorHelperLoose */;
+  const obj = require(9619) /* useStickerPackCategories */;
   const tmp2 = closure_11;
-  if (null != sticker) {
+  if (sticker != null) {
     id = sticker.id;
   }
-  return tmp2(importDefault(9613), { sticker, size: 60, animated }, id);
+  return tmp2(importDefault(9635), { sticker, size: 60, animated }, id);
 }
-({ AnalyticEvents: closure_8, AnalyticsSections: closure_9 } = ME);
-({ jsx: closure_11, jsxs: closure_12 } = jsxProd);
-let closure_13 = _createForOfIteratorHelperLoose.createStyles({ header: { marginBottom: 8, textAlign: "center" }, blurb: { lineHeight: 18, textAlign: "center", marginBottom: 12 }, premiumButton: { marginTop: 20, alignSelf: "center", paddingLeft: 5, paddingRight: 10, flexGrow: 0 }, nitroWheel: { width: 32 }, stickersRow: { flexDirection: "row", alignSelf: "center" }, sticker: { paddingHorizontal: 2 } });
+({ AnalyticEvents: metroImportAll, AnalyticsSections: c9 } = ME);
+({ jsx: unpackModuleId, jsxs: closure_12 } = jsxProd);
+let closure_13 = createCacheKey.createStyles({ header: { marginBottom: 8, textAlign: "center" }, blurb: { lineHeight: 18, textAlign: "center", marginBottom: 12 }, premiumButton: { marginTop: 20, alignSelf: "center", paddingLeft: 5, paddingRight: 10, flexGrow: 0 }, nitroWheel: { width: 32 }, stickersRow: { flexDirection: "row", alignSelf: "center" }, sticker: { paddingHorizontal: 2 } });
 let result = require("get ActivityIndicator").fileFinishedImporting("modules/stickers/native/StickerPickerEmptyState.tsx");
 
 export default function _default() {
+  let _slicedToArray;
+  let dependencyMap;
   let tmp = callback4();
   const require = tmp;
-  let obj = require(9597) /* _createForOfIteratorHelperLoose */;
+  let obj = require(9619) /* useStickerPackCategories */;
   const fetchStickerPacks = obj.useFetchStickerPacks();
-  analyticsLocations = analyticsLocations(5497)(analyticsLocations(5517).EMPTY_STATE).analyticsLocations;
-  let obj1 = require(566) /* initialize */;
-  const items = [_isNativeReflectConstruct];
+  analyticsLocations = analyticsLocations(5515)(analyticsLocations(5535).EMPTY_STATE).analyticsLocations;
+  let obj1 = require(589) /* initialize */;
+  const items = [loadSavedGuildStickers];
   const stateFromStoresArray = obj1.useStateFromStoresArray(items, () => {
-    const mapped = outer1_7.map((arg0) => outer2_6.getStickerById(arg0));
+    const mapped = closure_7.map((arg0) => stickerById.getStickerById(arg0));
     return mapped.filter((arg0) => null != arg0);
   });
-  const tmp4 = callback(React.useState(null), 2);
-  const dependencyMap = tmp4[0];
-  callback = tmp4[1];
+  const tmp3 = analyticsLocations(5515);
+  [dependencyMap, _slicedToArray] = callback(React.useState(null), 2);
   const items1 = [analyticsLocations];
   const effect = React.useEffect(() => {
-    let obj = analyticsLocations(675);
+    let obj = analyticsLocations(outer1_2[14]);
     obj = { type: outer1_10.EMPTY_STICKER_PICKER_UPSELL, source: obj, location_stack: analyticsLocations };
     obj = { section: outer1_9.EMPTY_STICKER_PICKER_UPSELL };
     obj.track(outer1_8.PREMIUM_UPSELL_VIEWED, obj);
   }, items1);
-  obj = {};
-  obj = { style: tmp.header, accessibilityRole: "header", variant: "heading-lg/extrabold", color: "mobile-text-heading-primary" };
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj.children = intl.string(require(1212) /* getSystemLocale */.t.HEm04J);
-  const items2 = [callback2(require(4161) /* Text */.Text, obj), , , ];
-  obj1 = { style: tmp.blurb, variant: "text-sm/medium", color: "text-default" };
-  const intl2 = require(1212) /* getSystemLocale */.intl;
-  obj1.children = intl2.string(require(1212) /* getSystemLocale */.t.FnNud4);
-  items2[1] = callback2(require(4161) /* Text */.Text, obj1);
-  const tmp3 = analyticsLocations(5497);
+  obj = { children: null };
+  obj = { style: tmp.header, accessibilityRole: "header", variant: "heading-lg/extrabold", color: "mobile-text-heading-primary", children: null };
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj[4] = intl.string(require(1236) /* getSystemLocale */.t.HEm04J);
+  const items2 = [callback2(require(4185) /* Text */.Text, obj), , , ];
+  obj1 = { style: tmp.blurb, variant: "text-sm/medium", color: "text-default", children: null };
+  const intl2 = require(1236) /* getSystemLocale */.intl;
+  obj1[3] = intl2.string(require(1236) /* getSystemLocale */.t.FnNud4);
+  items2[1] = callback2(require(4185) /* Text */.Text, obj1);
+  const tmp4 = callback(React.useState(null), 2);
   items2[2] = callback2(View, {
     style: tmp.stickersRow,
     children: stateFromStoresArray.map((id) => {
@@ -76,23 +77,24 @@ export default function _default() {
       let obj = {
         accessible: false,
         onLongPress() {
-          const result = id(4134).triggerHapticFeedback(analyticsLocations(4135).IMPACT_LIGHT);
+          const result = id(outer2_2[18]).triggerHapticFeedback(analyticsLocations(outer2_2[19]).IMPACT_LIGHT);
           outer1_3(id.id);
         },
-        style: tmp.sticker
+        style: tmp.sticker,
+        children: null
       };
-      obj = { sticker: id, isFocused: dependencyMap === id.id };
-      obj.children = outer1_11(outer1_14, obj);
+      obj = { sticker: id, isFocused: closure_2 === id.id };
+      obj[3] = outer1_11(outer1_14, obj);
       id = undefined;
-      if (null != id) {
+      if (id != null) {
         id = id.id;
       }
-      return tmp(tmp(4695).PressableOpacity, obj, id);
+      return tmp(tmp(outer1_2[17]).PressableOpacity, obj, id);
     })
   });
-  const obj3 = { style: tmp.premiumButton };
-  const obj4 = {};
-  const obj5 = {};
+  const obj3 = { style: tmp.premiumButton, children: null };
+  const obj4 = { icon: null, text: null, variant: "active", size: "sm", onPress: null };
+  const obj5 = { source: null, style: null, resizeMode: "contain" };
   const obj2 = {
     style: tmp.stickersRow,
     children: stateFromStoresArray.map((id) => {
@@ -101,33 +103,31 @@ export default function _default() {
       let obj = {
         accessible: false,
         onLongPress() {
-          const result = id(4134).triggerHapticFeedback(analyticsLocations(4135).IMPACT_LIGHT);
+          const result = id(outer2_2[18]).triggerHapticFeedback(analyticsLocations(outer2_2[19]).IMPACT_LIGHT);
           outer1_3(id.id);
         },
-        style: tmp.sticker
+        style: tmp.sticker,
+        children: null
       };
-      obj = { sticker: id, isFocused: dependencyMap === id.id };
-      obj.children = outer1_11(outer1_14, obj);
+      obj = { sticker: id, isFocused: closure_2 === id.id };
+      obj[3] = outer1_11(outer1_14, obj);
       id = undefined;
-      if (null != id) {
+      if (id != null) {
         id = id.id;
       }
-      return tmp(tmp(4695).PressableOpacity, obj, id);
+      return tmp(tmp(outer1_2[17]).PressableOpacity, obj, id);
     })
   };
-  obj5.source = analyticsLocations(9353);
-  obj5.style = tmp.nitroWheel;
-  obj5.resizeMode = "contain";
-  obj4.icon = callback2(analyticsLocations(5119), obj5);
-  const intl3 = require(1212) /* getSystemLocale */.intl;
-  obj4.text = intl3.string(require(1212) /* getSystemLocale */.t.pj0XBN);
-  obj4.variant = "active";
-  obj4.size = "sm";
-  obj4.onPress = function onPress() {
-    return analyticsLocations(9621)({ section: outer1_9.EXPRESSION_PICKER });
+  obj5[0] = analyticsLocations(9377);
+  obj5[1] = tmp.nitroWheel;
+  obj4[0] = callback2(analyticsLocations(5141), obj5);
+  const intl3 = require(1236) /* getSystemLocale */.intl;
+  obj4[1] = intl3.string(require(1236) /* getSystemLocale */.t.pj0XBN);
+  obj4[4] = function onPress() {
+    return analyticsLocations(table[23])({ section: constants.EXPRESSION_PICKER });
   };
-  obj3.children = callback2(require(4578) /* Button */.Button, obj4);
+  obj3[1] = callback2(require(4600) /* Button */.Button, obj4);
   items2[3] = callback2(View, obj3);
-  obj.children = items2;
+  obj[0] = items2;
   return callback3(View, obj);
 };

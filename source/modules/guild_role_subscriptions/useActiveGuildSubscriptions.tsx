@@ -1,12 +1,12 @@
-// Module ID: 14206
-// Function ID: 109046
+// Module ID: 14228
+// Function ID: 14229
 // Name: useActiveGuildSubscriptions
-// Dependencies: [31, 3817, 14200, 14201, 566, 4486, 2]
+// Dependencies: [19, 3841, 14222, 14223, 589, 4509, 2]
 // Exports: default
 
-// Module 14206 (useActiveGuildSubscriptions)
-import result from "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 14228 (useActiveGuildSubscriptions)
+import noop from "noop";
+import reset from "reset";
 import { UserGuildRoleSubscriptionRelationship as closure_6 } from "MAX_SUBSCRIPTION_TIERS";
 
 const require = arg1;
@@ -24,46 +24,44 @@ export default function useActiveGuildSubscriptions() {
   }
   let importDefault;
   let closure_2;
-  const tmp = importDefault(14201)() === constants.SUBSCRIBED;
+  const tmp = importDefault(14223)() === constants.SUBSCRIBED;
   importDefault = tmp;
-  const items = [_isNativeReflectConstruct];
-  let stateFromStores = flag(566).useStateFromStores(items, () => outer1_5.getActiveGuildSubscriptions());
+  const items = [reset];
+  let stateFromStores = flag(589).useStateFromStores(items, () => activeGuildSubscriptions.getActiveGuildSubscriptions());
   closure_2 = React.useRef(false);
   const items1 = [flag, tmp];
   const effect = React.useEffect(() => {
-    let ensureFresh;
-    let hasRoleSubscriptions;
-    const obj = { ensureFresh: flag, hasRoleSubscriptions: c1, hasFetched: ref.current };
-    const hasFetched = obj.hasFetched;
-    ({ ensureFresh, hasRoleSubscriptions } = obj);
+    const current = ref.current;
     const activeGuildSubscriptions = outer1_5.getActiveGuildSubscriptions();
-    let length;
-    if (null != activeGuildSubscriptions) {
-      length = activeGuildSubscriptions.length;
+    let num;
+    if (activeGuildSubscriptions != null) {
+      num = activeGuildSubscriptions.length;
     }
-    let num = 0;
-    if (null != length) {
-      num = length;
+    if (num == null) {
+      num = 0;
     }
-    let tmp3 = !tmp2;
-    if (0 !== num || !hasRoleSubscriptions) {
-      tmp3 = !(!ensureFresh || hasFetched);
-      const tmp4 = !ensureFresh || hasFetched;
-    }
-    if (!tmp3) {
-      let tmp5 = !hasFetched;
-      if (tmp5) {
-        tmp5 = !outer1_5.hasFetchedSubscriptions();
+    let tmp5 = !tmp4;
+    if (0 !== num || !c1) {
+      let tmp6 = !tmp;
+      if (tmp) {
+        tmp6 = current;
       }
-      tmp3 = tmp5;
+      tmp5 = !tmp6;
     }
-    if (tmp3) {
+    if (!tmp5) {
+      let tmp7 = !current;
+      if (!current) {
+        tmp7 = !outer1_5.hasFetchedSubscriptions();
+      }
+      tmp5 = tmp7;
+    }
+    if (tmp5) {
       ref.current = true;
       const subscriptions = ref(outer1_3[5]).fetchSubscriptions();
       const obj2 = ref(outer1_3[5]);
     }
   }, items1);
-  if (null == stateFromStores) {
+  if (stateFromStores == null) {
     stateFromStores = closure_7;
   }
   return stateFromStores;

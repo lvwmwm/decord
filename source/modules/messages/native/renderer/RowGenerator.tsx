@@ -1,74 +1,63 @@
-// Module ID: 7690
-// Function ID: 61387
-// Name: RowManager
-// Dependencies: [6, 7, 1278, 7691, 7692, 22, 7693, 7695, 12371, 12372, 1327, 2]
+// Module ID: 7713
+// Function ID: 7714
+// Name: setOptions
+// Dependencies: [1302, 7714, 7715, 12, 7716, 7718, 12393, 12394, 1351, 2]
 
-// Module 7690 (RowManager)
-import generateBlockedGroupRowData from "generateBlockedGroupRowData";
-import generateMessageRowData from "generateMessageRowData";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 7713 (setOptions)
+import handleThemeChange from "handleThemeChange";
 import Changeset from "Changeset";
 
+let c4;
+let c5;
 let closure_6;
-let closure_7;
-let closure_8;
 const require = arg1;
-({ RowType: closure_6, SeparatorType: closure_7, LoadingType: closure_8 } = Changeset);
+({ RowType: c4, SeparatorType: c5, LoadingType: closure_6 } = Changeset);
 let obj = { constrainedWidth: 0, animatingStickerMessageId: null, forcedTheme: null, shouldObscureSpoiler: true, shouldDisableInteractiveComponents: true };
 const merged = Object.assign(require("UserOption").DEFAULT_OPTIONS);
-const tmp4 = (() => {
-  class RowManager {
-    constructor() {
-      tmp = outer1_3(this, RowManager);
-      this.options = outer1_9;
-      return;
-    }
+class RowManager {
+  constructor() {
+    obj = Object.create(new.target.prototype);
+    obj[0] = LoadingType;
+    return obj;
   }
-  let obj = {
-    key: "setOptions",
-    value(arg0) {
-      this.options = outer1_1(outer1_2[5]).merge({}, outer1_9, this.options, arg0);
-    }
-  };
-  const items = [obj, ];
-  obj = {
-    key: "generate",
-    value(rowType) {
-      const self = this;
-      rowType = rowType.rowType;
-      let theme = this.options.forcedTheme;
-      if (null == theme) {
-        theme = outer1_5.theme;
-      }
-      if (outer1_6.BLOCKED_GROUP !== rowType) {
-        if (outer1_6.IGNORED_GROUP !== rowType) {
-          if (outer1_6.SUSPENDED_USER_GROUP !== rowType) {
-            if (outer1_6.MESSAGE === rowType) {
-              return RowManager(outer1_2[7]).generateMessageRowData(rowType, self.options, theme);
-            } else {
-              if (outer1_7.DAY !== rowType) {
-                if (outer1_7.UNREAD !== rowType) {
-                  if (outer1_7.SUMMARY !== rowType) {
-                    if (outer1_8.LOAD_BEFORE !== rowType) {
-                      if (outer1_8.LOAD_AFTER !== rowType) {
-                        RowManager(outer1_2[10]).assertNever(rowType);
-                      }
-                    }
-                    return RowManager(outer1_2[9]).generateLoadingRowData(rowType, theme);
+}
+const prototype = RowManager.prototype;
+prototype["setOptions"] = function setOptions(arg0) {
+  const obj = importDefault(12);
+  this.options = obj.merge({}, obj, this.options, arg0);
+};
+prototype["generate"] = function generate(rowType) {
+  const self = this;
+  rowType = rowType.rowType;
+  let theme = this.options.forcedTheme;
+  if (theme == null) {
+    theme = theme.theme;
+  }
+  if (constants.BLOCKED_GROUP !== rowType) {
+    if (tmp2.IGNORED_GROUP !== rowType) {
+      if (tmp2.SUSPENDED_USER_GROUP !== rowType) {
+        if (tmp2.MESSAGE === rowType) {
+          return require(7718) /* generateMessageRowData */.generateMessageRowData(rowType, self.options, theme);
+        } else {
+          if (constants2.DAY !== rowType) {
+            if (tmp12.UNREAD !== rowType) {
+              if (tmp12.SUMMARY !== rowType) {
+                if (constants3.LOAD_BEFORE !== rowType) {
+                  if (constants3.LOAD_AFTER !== rowType) {
+                    require(1351) /* isDiscordFrontendDevelopment */.assertNever(rowType);
                   }
                 }
+                return require(12394) /* generateLoadingRowData */.generateLoadingRowData(rowType, theme);
               }
-              return RowManager(outer1_2[8]).generateSeparatorRowData(rowType, theme);
             }
           }
+          return require(12393) /* generateSeparatorRowData */.generateSeparatorRowData(rowType, theme);
         }
       }
-      return RowManager(outer1_2[6]).generateBlockedGroupRowData(rowType, theme, self);
     }
-  };
-  items[1] = obj;
-  return callback(RowManager, items);
-})();
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/messages/native/renderer/RowGenerator.tsx");
+  }
+  return require(7716) /* generateBlockedGroupRowData */.generateBlockedGroupRowData(rowType, theme, self);
+};
+const result = require("UserOption").fileFinishedImporting("modules/messages/native/renderer/RowGenerator.tsx");
 
-export default tmp4;
+export default RowManager;

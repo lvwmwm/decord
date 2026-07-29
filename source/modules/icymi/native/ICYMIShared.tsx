@@ -1,25 +1,23 @@
-// Module ID: 15328
-// Function ID: 116657
+// Module ID: 15361
+// Function ID: 15362
 // Name: Separator
-// Dependencies: [31, 27, 6048, 1348, 1918, 3793, 1850, 653, 33, 6138, 11925, 4679, 9847, 15257, 5104, 5661, 5617, 5695, 4097, 15289, 477, 689, 1273, 7945, 5548, 4584, 4695, 4161, 5908, 15329, 8939, 566, 4354, 8161, 8335, 4686, 8160, 15053, 8303, 1212, 15290, 4101, 3869, 4009, 4026, 4166, 4175, 4664, 5547, 4155, 2]
-// Exports: AnnouncementContentPost, GuildEventPost, MessageContentPost, SimplePost, ThreadAsComments, navigateToPost
+// Dependencies: [19, 17, 6066, 1372, 1942, 3817, 1874, 676, 21, 6156, 11949, 4701, 9869, 15290, 5126, 5679, 5635, 5713, 4121, 15322, 500, 712, 1297, 7970, 5566, 4606, 4717, 4185, 5927, 15362, 8963, 589, 4379, 8185, 8359, 4708, 8184, 15083, 8327, 1236, 15323, 4125, 3893, 4033, 4050, 4190, 4199, 4686, 5565, 4179, 2]
+// Exports: AnnouncementContentPost, GuildEventPost, MessageContentPost, SimplePost, ThreadAsComments, navigateToPost, truncateUsername
 
-// Module 15328 (Separator)
-import initialize from "initialize";
-import { View } from "Text";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_6 from "_isNativeReflectConstruct";
-import closure_7 from "_isNativeReflectConstruct";
-import closure_8 from "_isNativeReflectConstruct";
-import closure_9 from "_isNativeReflectConstruct";
+// Module 15361 (Separator)
+import closure_3 from "createICYMIStyles";
+import { View } from "trackInvite";
+import updateState from "updateState";
+import ensureGuildLoaded from "ensureGuildLoaded";
+import trackCommunicationDisabled from "trackCommunicationDisabled";
+import getUncachedChannelPermissions from "getUncachedChannelPermissions";
+import mergeGuildAvatar from "mergeGuildAvatar";
 import ME from "ME";
-import jsxProd from "module_8161";
+import jsxProd from "Themes";
 import createICYMIStyles from "createICYMIStyles";
 
-let closure_10;
-let closure_11;
+let c10;
 let closure_12;
-let closure_13;
 let closure_14;
 let closure_15;
 let closure_16;
@@ -27,208 +25,173 @@ let closure_17;
 let closure_18;
 let closure_19;
 let closure_20;
+let map1;
+let unpackModuleId;
 const require = arg1;
 class Separator {
   constructor() {
-    obj = { style: f116664().separator };
+    obj = { style: f61447().separator };
     return jsx(View, obj);
   }
 }
-function truncateUsername(arr) {
-  let combined = arr;
-  if (arr.length > 20) {
-    const _HermesInternal = HermesInternal;
-    combined = "" + arr.slice(0, 17) + "...";
-  }
-  return combined;
-}
 function CutoutGuildIconWithUser(guild) {
   guild = guild.guild;
-  let obj = { guild };
-  obj = { animate: true, style: callback3().authorIcon, guildId: guild.id, user: guild.author, size: require(1273) /* Button */.AvatarSizes.XSMALL };
-  obj.icon = callback(require(1273) /* Button */.Avatar, obj);
+  let obj = { guild, icon: null };
+  obj = { animate: true, style: callback3().authorIcon, guildId: guild.id, user: guild.author, size: null };
+  obj[4] = require(1297) /* Button */.AvatarSizes.XSMALL;
+  obj[1] = callback(require(1297) /* Button */.Avatar, obj);
   return callback(CutoutGuildIcon, obj);
 }
 class CutoutGuildIcon {
   constructor(arg0) {
-    obj = { style: { width: 40, height: 40 } };
+    obj = { style: { width: 40, height: 40 }, children: null };
     ({ guild, icon } = global);
-    obj = {};
+    obj = { cutouts: null, children: null };
     obj1 = { shape: null, x: 16, y: 14, size: 32 };
     tmp = require("SolidCutout");
-    obj1.shape = require("SolidCutout").CutoutShape.Circle;
+    obj1[0] = require("SolidCutout").CutoutShape.Circle;
     items = [];
     items[0] = obj1;
-    obj.cutouts = items;
-    obj2 = { guild };
-    tmp2 = require("makeSizeStyle");
-    obj2.size = require("makeSizeStyle").GuildIconSizes.NORMAL;
-    obj.children = jsx(tmp2, obj2);
+    obj[0] = items;
+    obj2 = { guild, size: null };
+    tmp2 = require("GuildIconSizes");
+    obj2[1] = require("GuildIconSizes").GuildIconSizes.NORMAL;
+    obj[1] = jsx(tmp2, obj2);
     items1 = [, ];
     items1[0] = jsx(tmp, obj);
     items1[1] = icon;
-    obj.children = items1;
+    obj[1] = items1;
     return jsxs(View, obj);
   }
 }
 class GuildContentPost {
   constructor(arg0) {
     guild = global.guild;
-    ({ channel, id, type } = global);
-    ({ timestamp, hideTimestamp, children, avatar, title, subtitle, onHeaderPress, onHeaderLongPress, disableInteractions } = global);
-    tmp = f116664();
+    ({ channel, hideTimestamp, id, type } = global);
+    ({ timestamp, children, avatar, title, subtitle, onHeaderPress, onHeaderLongPress, disableInteractions } = global);
+    tmp = f61447();
+    tmp2 = guild;
+    tmp3 = id;
     obj = require("getFontScale");
-    obj = {};
+    tmp5 = jsxs;
+    tmp7 = jsx;
     fontScale = obj.useFontScale();
-    tmp3 = jsxs;
-    tmp4 = Fragment;
-    tmp5 = jsx;
-    obj1 = { onPress: onHeaderPress, onLongPress: onHeaderLongPress, style: tmp.content };
-    obj2 = { style: fontScale > 1.8 ? tmp.channelNameAndAccessoryLarge : tmp.channelNameAndAccessory };
-    obj3 = { style: tmp.header };
+    tmp6 = Fragment;
+    obj = { onPress: onHeaderPress, onLongPress: onHeaderLongPress, style: tmp.content, children: null };
+    tmp8 = View;
+    obj1 = { style: fontScale > 1.8 ? tmp.channelNameAndAccessoryLarge : tmp.channelNameAndAccessory, children: null };
+    obj2 = { style: tmp.header, children: null };
     items = [, ];
     items[0] = avatar;
-    obj4 = { style: tmp.headerInfo };
-    obj5 = { style: tmp.title };
-    obj6 = { style: tmp.titleLeft };
+    obj3 = { style: tmp.headerInfo, children: null };
+    obj4 = { style: tmp.title, children: null };
+    obj5 = { style: tmp.titleLeft, children: null };
     items1 = [, ];
     items1[0] = title;
-    tmp16 = !hideTimestamp;
-    tmp6 = jsx;
-    tmp7 = View;
-    tmp8 = jsxs;
-    tmp9 = View;
-    tmp10 = jsxs;
-    tmp11 = View;
-    tmp12 = jsxs;
-    tmp13 = View;
-    tmp14 = jsxs;
-    tmp15 = View;
-    if (tmp16) {
-      tmp17 = jsx;
-      tmp18 = guild;
-      tmp19 = id;
-      num = 27;
-      obj7 = { lineClamp: 1, variant: "text-xs/normal", color: "text-muted" };
-      num2 = 28;
-      obj10 = require("getRelativeTimestamp");
-      obj7.children = obj10.getRelativeTimestamp(timestamp);
-      tmp16 = jsx(require("Text").Text, obj7);
+    tmp7Result = !hideTimestamp;
+    if (!hideTimestamp) {
+      obj6 = { lineClamp: 1, variant: "text-xs/normal", color: "text-muted", children: null };
+      tmp2Result = require("getRelativeTimestamp");
+      obj6[3] = tmp2Result.getRelativeTimestamp(timestamp);
+      tmp7Result = tmp7(require("Text").Text, obj6);
     }
-    items1[1] = tmp16;
-    obj6.children = items1;
+    items1[1] = tmp7Result;
+    obj5[1] = items1;
     items2 = [, ];
-    items2[0] = tmp14(tmp15, obj6);
-    tmp20 = null;
+    items2[0] = tmp5(tmp8, obj5);
+    tmp7Result1 = null;
     if (!disableInteractions) {
-      tmp20 = null;
+      tmp7Result1 = null;
       if (null != guild) {
-        tmp21 = jsx;
-        tmp22 = guild;
-        tmp23 = id;
-        obj8 = {};
-        obj8.onPress = function onPress() {
-          let id;
+        obj7 = { onPress: null, style: null, hitSlop: 8, children: null };
+        obj7[0] = function onPress() {
           let obj = guild(outer1_2[29]);
-          obj = { guildId: guild.id };
+          obj = { guildId: guild.id, channelId: null, id: null, type: null };
+          let id;
           if (null != id) {
             id = id.id;
           }
-          obj.channelId = id;
-          obj.id = closure_2;
-          obj.type = initialize;
+          obj[1] = id;
+          obj[2] = closure_2;
+          obj[3] = closure_3;
           return obj.openDetailsActionSheet(obj);
         };
-        obj8.style = tmp.subtitleTrailing;
-        num3 = 8;
-        obj8.hitSlop = 8;
-        tmp24 = jsx;
-        num4 = 30;
-        obj9 = {};
-        tmp25 = channel;
-        num5 = 21;
-        obj9.color = require("_createForOfIteratorHelperLoose").colors.ICON_MUTED;
-        str = "sm";
-        obj9.size = "sm";
-        obj8.children = jsx(require("MoreHorizontalIcon").MoreHorizontalIcon, obj9);
-        tmp20 = jsx(require("PressableBase").PressableOpacity, obj8);
+        obj7[1] = tmp.subtitleTrailing;
+        obj8 = { color: null, size: "sm" };
+        tmp11 = channel;
+        obj8[0] = require("Themes").colors.ICON_MUTED;
+        obj7[3] = tmp7(require("MoreHorizontalIcon").MoreHorizontalIcon, obj8);
+        tmp7Result1 = tmp7(require("PressableBase").PressableOpacity, obj7);
       }
     }
-    items2[1] = tmp20;
-    obj5.children = items2;
+    obj9 = { children: null };
+    items2[1] = tmp7Result1;
+    obj4[1] = items2;
     items3 = [, ];
-    items3[0] = tmp12(tmp13, obj5);
-    obj10 = { style: tmp.subTitleContainer, children: jsx(View, obj11) };
+    items3[0] = tmp5(tmp8, obj4);
+    obj10 = { style: tmp.subTitleContainer, children: tmp7(tmp8, obj11) };
     obj11 = { style: tmp.subtitle, children: subtitle };
-    items3[1] = jsx(View, obj10);
-    obj4.children = items3;
-    items[1] = tmp10(tmp11, obj4);
-    obj3.children = items;
-    obj2.children = tmp8(tmp9, obj3);
-    obj1.children = tmp6(tmp7, obj2);
+    items3[1] = tmp7(tmp8, obj10);
+    obj3[1] = items3;
+    items[1] = tmp5(tmp8, obj3);
+    obj2[1] = items;
+    obj1[1] = tmp5(tmp8, obj2);
+    obj[3] = tmp7(tmp8, obj1);
     items4 = [, ];
-    items4[0] = tmp5(require("PressableBase").PressableHighlight, obj1);
+    items4[0] = tmp7(require("PressableBase").PressableHighlight, obj);
     items4[1] = children;
-    obj.children = items4;
-    return tmp3(tmp4, obj);
+    obj9[0] = items4;
+    return tmp5(tmp6, obj9);
   }
 }
-({ AnalyticsObjects: closure_10, AnalyticsObjectTypes: closure_11, AnalyticsPages: closure_12, DEFAULT_ROLE_COLOR_HEX: closure_13, MAX_MESSAGES_FOR_JUMP: closure_14, MessageFlags: closure_15, Permissions: closure_16, Routes: closure_17 } = ME);
+({ AnalyticsObjects: c10, AnalyticsObjectTypes: unpackModuleId, AnalyticsPages: closure_12, DEFAULT_ROLE_COLOR_HEX: map1, MAX_MESSAGES_FOR_JUMP: closure_14, MessageFlags: closure_15, Permissions: closure_16, Routes: closure_17 } = ME);
 ({ jsx: closure_18, jsxs: closure_19, Fragment: closure_20 } = jsxProd);
-let closure_21 = createICYMIStyles.createICYMIStyles((margin) => {
-  let obj = {};
-  obj = { flex: 1, marginTop: null, overflow: "hidden" };
-  let obj2 = require(477) /* set */;
+let closure_21 = createICYMIStyles.createICYMIStyles((paddingBottom) => {
+  let obj = require(500) /* set */;
   let num = 0;
-  if (obj2.isAndroid()) {
+  if (obj.isAndroid()) {
     num = -2;
   }
-  obj.marginTop = num;
-  obj.simplePostContent = obj;
-  obj = { flex: 1, marginTop: null, overflow: "hidden" };
-  let obj4 = require(477) /* set */;
+  obj = { simplePostContent: { flex: 1, marginTop: num, overflow: "hidden" }, content: null, insetIconWrapper: null, authorIcon: null, moreDetailsIcon: null, channelNameAndAccessory: null, channelNameAndAccessoryLarge: null, header: null, headerInfo: null, title: null, titleLeft: null, subTitleContainer: null, subtitle: null, genContentSubtitle: null, genContentSubtitleChannel: null, subtitleTrailing: null, separator: null, eventsSubtitle: null, comments: null, recentCommentText: null, commentCount: null, commentsIcon: null, chevron: null };
   let num2 = 0;
-  if (obj4.isAndroid()) {
+  if (tmpResult.isAndroid()) {
     num2 = -2;
   }
-  obj.marginTop = num2;
-  obj.paddingTop = margin.margin;
-  obj.content = obj;
-  const obj1 = { position: "absolute", right: -4, bottom: -2, padding: 4, borderRadius: importDefault(689).radii.round, backgroundColor: importDefault(689).colors.REDESIGN_BUTTON_TERTIARY_BACKGROUND };
-  obj.insetIconWrapper = obj1;
-  obj.authorIcon = { position: "absolute", right: -4, bottom: -2 };
-  obj2 = { tintColor: importDefault(689).colors.TEXT_MUTED };
-  obj.moreDetailsIcon = obj2;
-  ({ margin: obj8.paddingBottom, margin: obj8.marginHorizontal } = margin);
-  obj.channelNameAndAccessory = { flexDirection: "row", justifyContent: "space-between", alignItems: "center" };
-  obj4 = { flexDirection: "column", paddingBottom: margin.margin, marginHorizontal: margin.margin };
-  obj.channelNameAndAccessoryLarge = obj4;
-  obj.header = { flexDirection: "row", flexGrow: 1 };
-  const obj5 = { flexGrow: 1, flexShrink: 1, marginLeft: margin.margin };
-  obj.headerInfo = obj5;
-  obj.title = { flexDirection: "row", alignItems: "center", justifyContent: "space-between", marginBottom: 2 };
-  obj.titleLeft = { flexShrink: 1, flexGrow: 0, flexDirection: "row", alignItems: "center", gap: 6 };
-  const obj6 = { flexDirection: "row", justifyContent: "space-between", borderRadius: importDefault(689).radii.sm };
-  obj.subTitleContainer = obj6;
-  obj.subtitle = { flexShrink: 1, flexGrow: 0, width: "100%" };
-  const obj7 = { flexDirection: "row", alignItems: "center", gap: importDefault(689).space.PX_4 };
-  obj.genContentSubtitle = obj7;
-  obj.genContentSubtitleChannel = { flexDirection: "row", alignItems: "center", gap: 2, flex: 1 };
-  obj.subtitleTrailing = { paddingVertical: 1 };
-  const obj8 = { height: 1, width: "100%", backgroundColor: importDefault(689).colors.BORDER_SUBTLE };
-  obj.separator = obj8;
-  obj.eventsSubtitle = { flexDirection: "row", alignItems: "center" };
-  const obj9 = { padding: 8, backgroundColor: importDefault(689).colors.REDESIGN_BUTTON_TERTIARY_BACKGROUND, borderRadius: importDefault(689).radii.md, display: "flex", flexDirection: "row", alignItems: "center", gap: 8 };
-  obj.comments = obj9;
-  obj.recentCommentText = { flexGrow: 1, flexShrink: 1, marginRight: 12 };
-  obj.commentCount = { display: "flex", flexDirection: "row", alignItems: "center", gap: 2, justifySelf: "end" };
-  const obj10 = { width: 20, height: 20, tintColor: importDefault(689).colors.INTERACTIVE_TEXT_DEFAULT };
-  obj.commentsIcon = obj10;
-  obj.chevron = { tintColor: importDefault(689).colors.TEXT_MUTED };
+  obj[1] = { flex: 1, marginTop: num2, overflow: "hidden", paddingTop: paddingBottom.margin };
+  obj = { position: "absolute", right: -4, bottom: -2, padding: 4, borderRadius: importDefault(712).radii.round, backgroundColor: importDefault(712).colors.REDESIGN_BUTTON_TERTIARY_BACKGROUND };
+  obj[2] = obj;
+  obj[3] = { position: "absolute", right: -4, bottom: -2 };
+  const tmp = require;
+  tmpResult = require(500) /* set */;
+  obj[4] = { tintColor: importDefault(712).colors.TEXT_MUTED };
+  obj[5] = { flexDirection: "row", justifyContent: "space-between", alignItems: "center", paddingBottom: paddingBottom.margin, marginHorizontal: paddingBottom.margin };
+  obj[6] = { flexDirection: "column", paddingBottom: paddingBottom.margin, marginHorizontal: paddingBottom.margin };
+  obj[7] = { flexDirection: "row", flexGrow: 1 };
+  obj[8] = { flexGrow: 1, flexShrink: 1, marginLeft: paddingBottom.margin };
+  obj[9] = { flexDirection: "row", alignItems: "center", justifyContent: "space-between", marginBottom: 2 };
+  obj[10] = { flexShrink: 1, flexGrow: 0, flexDirection: "row", alignItems: "center", gap: 6 };
+  const obj1 = { tintColor: importDefault(712).colors.TEXT_MUTED };
+  obj[11] = { flexDirection: "row", justifyContent: "space-between", borderRadius: importDefault(712).radii.sm };
+  obj[12] = { flexShrink: 1, flexGrow: 0, width: "100%" };
+  const obj2 = { flexDirection: "row", justifyContent: "space-between", borderRadius: importDefault(712).radii.sm };
+  obj[13] = { flexDirection: "row", alignItems: "center", gap: importDefault(712).space.PX_4 };
+  obj[14] = { flexDirection: "row", alignItems: "center", gap: 2, flex: 1 };
+  obj[15] = { paddingVertical: 1 };
+  const obj3 = { flexDirection: "row", alignItems: "center", gap: importDefault(712).space.PX_4 };
+  obj[16] = { height: 1, width: "100%", backgroundColor: importDefault(712).colors.BORDER_SUBTLE };
+  obj[17] = { flexDirection: "row", alignItems: "center" };
+  const obj4 = { height: 1, width: "100%", backgroundColor: importDefault(712).colors.BORDER_SUBTLE };
+  obj[18] = { padding: 8, backgroundColor: importDefault(712).colors.REDESIGN_BUTTON_TERTIARY_BACKGROUND, borderRadius: importDefault(712).radii.md, display: "flex", flexDirection: "row", alignItems: "center", gap: 8 };
+  obj[19] = { flexGrow: 1, flexShrink: 1, marginRight: 12 };
+  obj[20] = { display: "flex", flexDirection: "row", alignItems: "center", gap: 2, justifySelf: "end" };
+  const obj5 = { padding: 8, backgroundColor: importDefault(712).colors.REDESIGN_BUTTON_TERTIARY_BACKGROUND, borderRadius: importDefault(712).radii.md, display: "flex", flexDirection: "row", alignItems: "center", gap: 8 };
+  obj[21] = { width: 20, height: 20, tintColor: importDefault(712).colors.INTERACTIVE_TEXT_DEFAULT };
+  const obj6 = { width: 20, height: 20, tintColor: importDefault(712).colors.INTERACTIVE_TEXT_DEFAULT };
+  obj[22] = { tintColor: importDefault(712).colors.TEXT_MUTED };
   return obj;
 });
-let closure_22 = { code: "function ICYMISharedTsx1(){const{interpolateColor,progress,bgColor,bgColorHighlighted}=this.__closure;return{backgroundColor:interpolateColor(progress.get(),[0,1],[bgColor,bgColorHighlighted])};}" };
-let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/icymi/native/ICYMIShared.tsx");
+let closure_26 = { code: "function ICYMISharedTsx1(){const{interpolateColor,progress,bgColor,bgColorHighlighted}=this.__closure;return{backgroundColor:interpolateColor(progress.get(),[0,1],[bgColor,bgColorHighlighted])};}" };
+let result = require("updateState").fileFinishedImporting("modules/icymi/native/ICYMIShared.tsx");
 
 export const navigateToPost = function navigateToPost(id, id2, id3) {
   const _require = id;
@@ -238,20 +201,27 @@ export const navigateToPost = function navigateToPost(id, id2, id3) {
     obj = { page: outer1_12.ICYMI, object: outer1_10.ACK_MESSAGE_VIEWED, objectType: outer1_11.ACK_SEMI_AUTOMATIC };
     obj.ack(id, obj, true, true, closure_1);
   }, 1500);
-  importDefault(5661)(closure_17.CHANNEL(id2, id, id3), { openChannel: true, navigationReplace: false });
+  importDefault(5679)(closure_17.CHANNEL(id2, id, id3), { openChannel: true, navigationReplace: false });
   if (null != id3) {
-    _require(5617).runAfterInteractions(() => {
+    _require(5635).runAfterInteractions(() => {
       let obj = id3(outer1_2[17]);
-      obj = { channelId: id, limit: outer1_14 };
+      obj = { channelId: id, limit: outer1_14, jump: null };
       obj = { messageId: id3, flash: true, jumpType: id(outer1_2[18]).JumpType.ANIMATED };
-      obj.jump = obj;
+      obj[2] = obj;
       const messages = obj.fetchMessages(obj);
     }, 150);
-    let obj = _require(5617);
+    let obj = _require(5635);
   }
 };
 export { Separator };
-export { truncateUsername };
+export const truncateUsername = function truncateUsername(arr) {
+  let combined = arr;
+  if (arr.length > 20) {
+    const _HermesInternal = HermesInternal;
+    combined = "" + arr.slice(0, 17) + "...";
+  }
+  return combined;
+};
 export { CutoutGuildIcon };
 export { GuildContentPost };
 export const AnnouncementContentPost = function AnnouncementContentPost(guild) {
@@ -266,19 +236,19 @@ export const AnnouncementContentPost = function AnnouncementContentPost(guild) {
   const id = guild.id;
   ({ timestamp, children, mentioned, onHeaderPress, onHeaderLongPress } = guild);
   let obj = guild(author[31]);
-  const items = [closure_7];
+  const items = [trackCommunicationDisabled];
   const stateFromStores = obj.useStateFromStores(items, () => outer1_7.getMember(guild.id, author.id));
   let colorString;
-  if (null != stateFromStores) {
+  if (stateFromStores != null) {
     colorString = stateFromStores.colorString;
   }
-  if (null == colorString) {
+  if (colorString == null) {
     colorString = closure_13;
   }
-  let obj1 = guild(author[32]);
+  let tmp2Result = tmp2(tmp3[32]);
+  const name = tmp2Result.useName(guild.id, channel.id, author);
   const items1 = [author.id, channel.id, id];
-  const name = obj1.useName(guild.id, channel.id, author);
-  obj = { guild, channel, timestamp };
+  obj = { guild, channel, timestamp, avatar: null, title: null, subtitle: null, onHeaderPress: null, onHeaderLongPress: null, id: null, type: "announcement", children: null };
   const callback = id.useCallback(() => {
     let obj = channel(author[33]);
     obj.itemInteracted(id, "announcement", "open_profile");
@@ -287,25 +257,29 @@ export const AnnouncementContentPost = function AnnouncementContentPost(guild) {
     obj = { userId: author.id, channelId: channel.id };
     channel(author[34])(obj);
   }, items1);
-  obj.avatar = callback(CutoutGuildIconWithUser, { guild, author });
+  obj[3] = callback(CutoutGuildIconWithUser, { guild, author });
   obj = { style: { maxWidth: 225 }, lineClamp: 1, variant: "text-sm/medium", color: "text-muted", children: guild.name };
-  obj.title = callback(guild(author[27]).Text, obj, channel.id);
-  obj1 = { lineClamp: 2, variant: "text-md/normal", color: "text-default", style: callback3().subtitle };
-  const obj2 = { variant: "text-md/semibold", onPress: callback, style: obj3 };
-  obj3 = { color: colorString };
-  obj2.children = `${truncateUsername(tmp4)} `;
+  obj[4] = callback(guild(author[27]).Text, obj, channel.id);
+  const obj1 = { lineClamp: 2, variant: "text-md/normal", color: "text-default", style: callback3().subtitle, children: null };
+  const obj2 = { variant: "text-md/semibold", onPress: callback, style: { color: colorString }, children: null };
+  let combined = name;
+  if (name.length > 20) {
+    const _HermesInternal = HermesInternal;
+    combined = "" + name.slice(0, 17) + "...";
+  }
+  obj2[3] = `${tmp10} `;
   const items2 = [callback(guild(author[27]).Text, obj2), , ];
-  const obj4 = { size: "sm", color: channel(author[21]).colors.TEXT_SUBTLE };
-  items2[1] = callback(guild(author[35]).AnnouncementsIcon, obj4);
-  guild(author[36]);
-  items2[2] = ` ${tmp7(guild(author[9]).ContentType.ANNOUNCEMENT, mentioned)}`;
-  obj1.children = items2;
-  obj.subtitle = callback2(guild(author[27]).Text, obj1);
-  obj.onHeaderPress = onHeaderPress;
-  obj.onHeaderLongPress = onHeaderLongPress;
-  obj.id = id;
-  obj.type = "announcement";
-  obj.children = children;
+  const obj3 = { size: "sm", color: null };
+  obj3[1] = channel(author[21]).colors.TEXT_SUBTLE;
+  items2[1] = callback(guild(author[35]).AnnouncementsIcon, obj3);
+  tmp2Result = tmp2(tmp3[36]);
+  items2[2] = ` ${tmp13(guild(author[9]).ContentType.ANNOUNCEMENT, mentioned)}`;
+  obj1[4] = items2;
+  obj[5] = closure_19(guild(author[27]).Text, obj1);
+  obj[6] = onHeaderPress;
+  obj[7] = onHeaderLongPress;
+  obj[8] = id;
+  obj[10] = children;
   return callback(GuildContentPost, obj);
 };
 export const GuildEventPost = function GuildEventPost(guild) {
@@ -320,7 +294,7 @@ export const GuildEventPost = function GuildEventPost(guild) {
   let stateFromStores1;
   ({ children, onHeaderPress } = guild);
   creator_id = event.host_id;
-  if (null == creator_id) {
+  if (creator_id == null) {
     creator_id = event.creator_id;
   }
   let obj = guild(event[37]);
@@ -331,27 +305,27 @@ export const GuildEventPost = function GuildEventPost(guild) {
     items1 = [];
   }
   const ensureHydratedUsers = obj.useEnsureHydratedUsers(event.guild_id, items1);
-  let obj1 = guild(event[31]);
-  const items2 = [closure_9];
-  stateFromStores = obj1.useStateFromStores(items2, () => outer1_9.getUser(creator_id));
-  let obj2 = guild(event[31]);
-  const items3 = [closure_7];
-  stateFromStores1 = obj2.useStateFromStores(items3, () => {
+  let tmp2Result = tmp2(tmp3[31]);
+  const items2 = [mergeGuildAvatar];
+  stateFromStores = tmp2Result.useStateFromStores(items2, () => outer1_9.getUser(creator_id));
+  tmp2Result = tmp2(tmp3[31]);
+  const items3 = [trackCommunicationDisabled];
+  stateFromStores1 = tmp2Result.useStateFromStores(items3, () => {
     let member = null;
     if (null != creator_id) {
-      member = outer1_7.getMember(guild.id, creator_id);
+      member = outer1_7.getMember(guild.id, tmp);
     }
     return member;
   });
   const items4 = [stateFromStores, , , , ];
   let id;
-  if (null != channel) {
+  if (channel != null) {
     id = channel.id;
   }
   items4[1] = id;
   items4[2] = event.id;
   let highestRoleId;
-  if (null != stateFromStores1) {
+  if (stateFromStores1 != null) {
     highestRoleId = stateFromStores1.highestRoleId;
   }
   items4[3] = highestRoleId;
@@ -361,77 +335,92 @@ export const GuildEventPost = function GuildEventPost(guild) {
     if (null != stateFromStores) {
       let obj = channel(event[33]);
       obj.itemInteracted(event.id, type, "open_profile");
-      obj = { itemId: event.id, itemType: "guild_event", actionParameters: { actionGestureType: "press", actionTargetElement: "item_header", actionIntentType: "open", actionDestinationType: "user" } };
+      obj = { itemId: null, itemType: "guild_event", actionParameters: null };
+      obj[0] = event.id;
+      obj[2] = { actionGestureType: "press", actionTargetElement: "item_header", actionIntentType: "open", actionDestinationType: "user" };
       channel(event[33]).feedItemActioned(obj);
-      obj = { userId: stateFromStores.id };
+      obj = { userId: null, roleId: null, channelId: null };
+      obj[0] = tmp.id;
       let highestRoleId;
       const obj2 = channel(event[33]);
-      if (null != stateFromStores1) {
+      if (stateFromStores1 != null) {
         highestRoleId = stateFromStores1.highestRoleId;
       }
-      obj.roleId = highestRoleId;
+      obj[1] = highestRoleId;
       let id;
-      if (null != channel) {
+      if (channel != null) {
         id = channel.id;
       }
-      obj.channelId = id;
+      obj[2] = id;
       channel(event[34])(obj);
-      const tmp13 = channel(event[34]);
+      const tmp11 = channel(event[34]);
     }
   }, items4);
-  if (null != stateFromStores1) {
+  if (stateFromStores1 != null) {
     colorString = stateFromStores1.colorString;
   }
-  if (null == colorString) {
+  if (colorString == null) {
     colorString = closure_13;
   }
-  obj = { guild, channel, timestamp: 0, hideTimestamp: true };
+  obj = { guild, channel, timestamp: 0, hideTimestamp: true, avatar: null, title: null, subtitle: null, id: null, type: null, onHeaderPress: null, children: null };
   if (null != stateFromStores) {
-    obj = { guild, author: stateFromStores };
-    let tmp18 = callback(CutoutGuildIconWithUser, obj);
+    obj = { guild: null, author: null };
+    obj[0] = guild;
+    obj[1] = stateFromStores;
+    let tmp13Result = tmp13(CutoutGuildIconWithUser, obj);
   } else {
-    obj1 = { guild, size: guild(event[24]).GuildIconSizes.NORMAL };
-    tmp18 = callback(channel(event[24]), obj1);
-    const tmp16 = channel(event[24]);
+    const obj1 = { guild: null, size: null };
+    obj1[0] = guild;
+    obj1[1] = tmp2(tmp3[24]).GuildIconSizes.NORMAL;
+    tmp13Result = tmp13(channel(tmp3[24]), obj1);
+    const tmp16 = channel(tmp3[24]);
   }
-  obj.avatar = tmp18;
-  obj2 = { style: { maxWidth: 225 }, lineClamp: 1, variant: "text-sm/medium", color: "text-muted", children: guild.name };
-  obj.title = callback(guild(event[27]).Text, obj2, event.id);
-  const obj3 = { lineClamp: 2, variant: "text-md/normal", color: "text-default", style: callback3().subtitle };
+  obj[4] = tmp13Result;
+  obj[5] = closure_18(guild(event[27]).Text, { style: { maxWidth: 225 }, lineClamp: 1, variant: "text-sm/medium", color: "text-muted", children: guild.name }, event.id);
+  const obj3 = { lineClamp: 2, variant: "text-md/normal", color: "text-default", style: callback3().subtitle, children: null };
   if (null != stateFromStores) {
-    const obj4 = {};
-    const obj5 = { variant: "text-md/semibold", onPress: callback };
-    const obj6 = { color: colorString };
-    obj5.style = obj6;
-    obj5.children = `${truncateUsername(tmp3.username)} `;
-    const items5 = [callback(guild(event[27]).Text, obj5), , ];
-    const obj7 = { size: "sm", color: channel(event[21]).colors.TEXT_SUBTLE };
-    items5[1] = callback(guild(event[38]).CalendarIcon, obj7);
-    const intl = guild(event[39]).intl;
-    const string = intl.string;
-    let t = guild(event[39]).t;
-    if (tmp10) {
-      t = string(t["42OrO4"]);
-      let text = ` ${t}`;
-    } else {
-      text = ` ${string(t.Vu15se)}`;
+    const obj4 = { variant: "text-md/semibold", onPress: null, style: null, children: null };
+    obj4[1] = callback;
+    const obj5 = { color: null };
+    obj5[0] = colorString;
+    obj4[2] = obj5;
+    const username = stateFromStores.username;
+    let combined = username;
+    if (username.length > 20) {
+      const _HermesInternal = HermesInternal;
+      combined = "" + username.slice(0, 17) + "...";
     }
+    obj4[3] = `${tmp22} `;
+    const items5 = [tmp13(tmp2(tmp3[27]).Text, obj4), , ];
+    const obj6 = { size: "sm", color: null };
+    obj6[1] = channel(tmp3[21]).colors.TEXT_SUBTLE;
+    items5[1] = tmp13(tmp2(tmp3[38]).CalendarIcon, obj6);
+    const intl = tmp2(tmp3[39]).intl;
+    const string = intl.string;
+    let t = tmp2(tmp3[39]).t;
+    if (tmp12) {
+      let text = ` ${string(obj12["42OrO4"])}`;
+    } else {
+      text = ` ${string(obj12.Vu15se)}`;
+    }
+    t = { children: null };
     items5[2] = text;
-    obj4.children = items5;
+    t[0] = items5;
   } else {
-    const obj8 = {};
-    const obj9 = { size: "sm", color: channel(event[21]).colors.TEXT_SUBTLE };
-    const items6 = [callback(guild(event[38]).CalendarIcon, obj9), ];
-    const intl2 = guild(event[39]).intl;
-    items6[1] = ` ${tmp39(guild(event[39]).t.T7MIsc)}`;
-    obj8.children = items6;
-    obj3.children = tmp23(tmp24, obj8);
-    obj.subtitle = callback(tmp22, obj3);
-    obj.id = event.id;
-    obj.type = type;
-    obj.onHeaderPress = onHeaderPress;
-    obj.children = children;
-    return callback(GuildContentPost, obj);
+    const obj7 = { children: null };
+    const obj8 = { size: "sm", color: null };
+    obj8[1] = channel(tmp3[21]).colors.TEXT_SUBTLE;
+    const items6 = [tmp13(tmp2(tmp3[38]).CalendarIcon, obj8), ];
+    const intl2 = tmp2(tmp3[39]).intl;
+    items6[1] = ` ${tmp28(tmp2(tmp3[39]).t.T7MIsc)}`;
+    obj7[0] = items6;
+    obj3[4] = tmp20(tmp21, obj7);
+    obj[6] = tmp13(tmp19, obj3);
+    obj[7] = event.id;
+    obj[8] = type;
+    obj[9] = onHeaderPress;
+    obj[10] = children;
+    return tmp13(GuildContentPost, obj);
   }
 };
 export const MessageContentPost = function MessageContentPost(guild) {
@@ -445,32 +434,33 @@ export const MessageContentPost = function MessageContentPost(guild) {
   const message = guild.message;
   const id = guild.id;
   const type = guild.type;
+  let obj = message;
   const items = [channel, message];
   ({ timestamp, children, onHeaderPress, onHeaderLongPress } = guild);
   const memo = message.useMemo(() => guild(author[36]).determineContentType(channel, message), items);
-  let obj = guild(author[31]);
-  const items1 = [closure_7];
-  const stateFromStores = obj.useStateFromStores(items1, () => outer1_7.getMember(guild.id, author.id));
+  let obj1 = guild(author[31]);
+  const items1 = [trackCommunicationDisabled];
+  const stateFromStores = obj1.useStateFromStores(items1, () => outer1_7.getMember(guild.id, author.id));
   let colorString;
-  if (null != stateFromStores) {
+  if (stateFromStores != null) {
     colorString = stateFromStores.colorString;
   }
-  if (null == colorString) {
+  if (colorString == null) {
     colorString = closure_13;
   }
-  let obj1 = guild(author[32]);
-  const name = obj1.useName(guild.id, channel.id, author);
+  let tmp2Result = tmp2(tmp3[32]);
+  const name = tmp2Result.useName(guild.id, channel.id, author);
   if (guild(author[9]).ContentType.POPULAR_MESSAGE === memo) {
-    let LightbulbIcon = guild(author[10]).FireIcon;
-  } else if (guild(author[9]).ContentType.IMAGE === memo) {
-    LightbulbIcon = guild(author[11]).ImageIcon;
-  } else if (guild(author[9]).ContentType.VIDEO === memo) {
-    LightbulbIcon = guild(author[12]).CirclePlayIcon;
+    let LightbulbIcon = tmp2(tmp3[10]).FireIcon;
+  } else if (tmp2(tmp3[9]).ContentType.IMAGE === memo) {
+    LightbulbIcon = tmp2(tmp3[11]).ImageIcon;
+  } else if (tmp2(tmp3[9]).ContentType.VIDEO === memo) {
+    LightbulbIcon = tmp2(tmp3[12]).CirclePlayIcon;
   } else {
-    LightbulbIcon = guild(author[13]).LightbulbIcon;
+    LightbulbIcon = tmp2(tmp3[13]).LightbulbIcon;
   }
   const items2 = [author.id, channel.id, id, type];
-  const callback = message.useCallback(() => {
+  const callback = obj.useCallback(() => {
     let obj = channel(author[33]);
     obj.itemInteracted(id, type, "open_profile");
     obj = { itemId: id, itemType: "message", actionParameters: { actionGestureType: "press", actionTargetElement: "item_header", actionIntentType: "open", actionDestinationType: "user" } };
@@ -478,23 +468,28 @@ export const MessageContentPost = function MessageContentPost(guild) {
     obj = { userId: author.id, channelId: channel.id };
     channel(author[34])(obj);
   }, items2);
-  obj = { guild, channel, timestamp, avatar: callback(CutoutGuildIconWithUser, { guild, author }) };
+  obj = { guild, channel, timestamp, avatar: null, title: null, subtitle: null, onHeaderPress: null, onHeaderLongPress: null, id: null, type: null, children: null };
+  obj[3] = callback(CutoutGuildIconWithUser, { guild, author });
   obj = { style: { maxWidth: 225 }, lineClamp: 1, variant: "text-sm/medium", color: "text-default", children: guild.name };
-  obj.title = callback(guild(author[27]).Text, obj, channel.id);
-  obj1 = { lineClamp: 2, variant: "text-md/normal", color: "text-default", style: { marginRight: message.useContext(guild(author[40]).ICYMIContext).margin } };
-  const obj2 = { style: obj3, onPress: callback, variant: "text-md/semibold" };
-  obj3 = { color: colorString };
-  obj2.children = `${truncateUsername(tmp6)} `;
+  obj[4] = callback(guild(author[27]).Text, obj, channel.id);
+  obj1 = { lineClamp: 2, variant: "text-md/normal", color: "text-default", style: { marginRight: obj.useContext(tmp2(tmp3[40]).ICYMIContext).margin }, children: null };
+  const obj2 = { style: { color: colorString }, onPress: callback, variant: "text-md/semibold", children: null };
+  let combined = name;
+  if (name.length > 20) {
+    const _HermesInternal = HermesInternal;
+    combined = "" + name.slice(0, 17) + "...";
+  }
+  obj2[3] = `${tmp10} `;
   const items3 = [callback(guild(author[27]).Text, obj2), callback(LightbulbIcon, { size: "sm", color: channel(author[21]).colors.TEXT_SUBTLE }), ];
-  guild(author[36]);
+  tmp2Result = tmp2(tmp3[36]);
   items3[2] = ` ${obj9.contentTypeToText(tmp)}`;
-  obj1.children = items3;
-  obj.subtitle = callback2(guild(author[27]).Text, obj1);
-  obj.onHeaderPress = onHeaderPress;
-  obj.onHeaderLongPress = onHeaderLongPress;
-  obj.id = id;
-  obj.type = type;
-  obj.children = children;
+  obj1[4] = items3;
+  obj[5] = closure_19(guild(author[27]).Text, obj1);
+  obj[6] = onHeaderPress;
+  obj[7] = onHeaderLongPress;
+  obj[8] = id;
+  obj[9] = type;
+  obj[10] = children;
   return callback(GuildContentPost, obj);
 };
 export const SimplePost = function SimplePost(arg0) {
@@ -509,211 +504,182 @@ export const SimplePost = function SimplePost(arg0) {
   let dependencyMap;
   let sharedValue;
   const tmp = callback3();
-  let obj = highlight(3869);
-  token = obj.useToken(token(689).colors.MESSAGE_HIGHLIGHT_BACKGROUND_DEFAULT, token(4101)());
-  let obj1 = highlight(4009);
-  const hexWithOpacityResult = obj1.hexWithOpacity(token(689).unsafe_rawColors.BRAND_360, 0.25);
+  let obj = highlight(3893);
+  token = obj.useToken(token(712).colors.MESSAGE_HIGHLIGHT_BACKGROUND_DEFAULT, token(4125)());
+  let obj1 = highlight(4033);
+  const hexWithOpacityResult = obj1.hexWithOpacity(token(712).unsafe_rawColors.BRAND_360, 0.25);
   dependencyMap = hexWithOpacityResult;
-  let obj2 = highlight(4026);
+  let obj2 = highlight(4050);
   sharedValue = obj2.useSharedValue(0);
-  const tmp2 = token(4101)();
+  const tmp2 = token;
+  const tmp4 = token(4125)();
   const fn = function c() {
-    const obj = {};
+    const obj = { backgroundColor: null };
     const items = [token, _undefined];
-    obj.backgroundColor = highlight(_undefined[44]).interpolateColor(sharedValue.get(), [0, 1], items);
+    obj[0] = highlight(_undefined[44]).interpolateColor(sharedValue.get(), [0, 1], items);
     return obj;
   };
-  obj = { interpolateColor: highlight(4026).interpolateColor, progress: sharedValue, bgColor: token, bgColorHighlighted: hexWithOpacityResult };
+  obj = { interpolateColor: highlight(4050).interpolateColor, progress: sharedValue, bgColor: token, bgColorHighlighted: hexWithOpacityResult };
   fn.__closure = obj;
   fn.__workletHash = 11116019021445;
-  fn.__initData = closure_22;
+  fn.__initData = closure_26;
   let items = [highlight, sharedValue];
-  const animatedStyle = highlight(4026).useAnimatedStyle(fn);
+  const animatedStyle = highlight(4050).useAnimatedStyle(fn);
   const effect = sharedValue.useEffect(() => {
     if (highlight) {
-      let obj = highlight(_undefined[44]);
-      obj = { duration: 500 };
+      const obj = highlight(_undefined[44]);
       const obj2 = highlight(_undefined[45]);
-      const withTimingResult = highlight(_undefined[45]).withTiming(1, obj);
-      const obj4 = highlight(_undefined[44]);
-      obj = { duration: 350 };
-      const result = sharedValue.set(obj.withSequence(withTimingResult, obj4.withDelay(500, highlight(_undefined[45]).withTiming(0, obj))));
-      const obj5 = highlight(_undefined[45]);
+      const withTimingResult = highlight(_undefined[45]).withTiming(1, { duration: 500 });
+      const obj3 = highlight(_undefined[44]);
+      const result = sharedValue.set(obj.withSequence(withTimingResult, obj3.withDelay(500, highlight(_undefined[45]).withTiming(0, { duration: 350 }))));
+      const obj4 = highlight(_undefined[45]);
     }
   }, items);
-  obj = {};
+  obj = { children: null };
   if (highlight) {
-    obj1 = {};
+    obj1 = { style: null, children: null };
     const items1 = [tmp.simplePostContent, animatedStyle];
-    obj1.style = items1;
-    obj1.children = children;
-    const items2 = [tmp10(token(4026).View, obj1), ];
-    let tmp18 = null;
+    obj1[0] = items1;
+    obj1[1] = children;
+    const items2 = [tmp12(tmp2(4050).View, obj1), ];
+    let tmp12Result = null;
     if (!hideDivider) {
-      tmp18 = callback(Separator, {});
+      tmp12Result = tmp12(Separator, {});
     }
-    items2[1] = tmp18;
-    obj.children = items2;
-    let tmp15 = obj;
+    items2[1] = tmp12Result;
+    obj[0] = items2;
+    let tmp16 = obj;
   } else {
-    obj2 = { style: tmp.simplePostContent, children };
-    const items3 = [tmp10(View, obj2), ];
-    let tmp12 = null;
+    obj2 = { style: null, children: null };
+    obj2[0] = tmp.simplePostContent;
+    obj2[1] = children;
+    const items3 = [tmp12(View, obj2), ];
+    tmp12Result = null;
     if (!hideDivider) {
-      tmp12 = callback(Separator, {});
+      tmp12Result = tmp12(Separator, {});
     }
-    items3[1] = tmp12;
-    obj.children = items3;
-    tmp15 = obj;
+    items3[1] = tmp12Result;
+    obj[0] = items3;
+    tmp16 = obj;
   }
-  return closure_19(closure_20, tmp15);
+  return closure_19(closure_20, tmp16);
 };
-export const ThreadAsComments = function ThreadAsComments(parentMessage) {
+export const ThreadAsComments = function ThreadAsComments(arg0) {
+  let guild;
   let inForum;
   let messageCount;
   let mostRecentMessage;
   let onPress;
+  let parentMessage;
   let style;
   let thread;
-  parentMessage = parentMessage.parentMessage;
-  ({ onPress, style, inForum } = parentMessage);
-  let tmp = callback3();
-  ({ thread, messageCount, mostRecentMessage } = (function useThread(guild, parentMessage, arg2) {
-    let messageCount;
-    let mostRecentMessage;
-    let thread;
-    let closure_0 = guild;
-    let closure_1 = parentMessage;
-    let closure_2 = arg2;
-    const items = [outer1_6, outer1_5];
-    const stateFromStoresObject = parentMessage(outer1_2[31]).useStateFromStoresObject(items, () => {
-      const obj = { thread: outer2_6.getChannel(parentMessage.id) };
-      const count = outer2_5.getCount(parentMessage.id);
-      let num = 0;
-      if (null != count) {
-        num = count;
-      }
-      obj.messageCount = num;
-      obj.mostRecentMessage = outer2_5.getMostRecentMessage(parentMessage.id);
-      return obj;
-    });
-    const items1 = [guild.id, arg2, parentMessage];
-    ({ thread, messageCount, mostRecentMessage } = stateFromStoresObject);
-    const effect = outer1_3.useEffect(() => {
-      let tmp = parentMessage.hasFlag(outer2_15.HAS_THREAD) || closure_2;
-      if (tmp) {
-        tmp = null == outer2_5.getMostRecentMessage(parentMessage.id);
-      }
-      if (tmp) {
-        let obj = outer2_1(outer2_2[46]);
-        obj.preload(guild.id, parentMessage.id);
-        obj = { channelId: parentMessage.id, isPreload: true, limit: 25 };
-        const messages = outer2_1(outer2_2[17]).fetchMessages(obj);
-        const obj2 = outer2_1(outer2_2[17]);
-      }
-    }, items1);
-    return { thread, messageCount, mostRecentMessage };
-  })(parentMessage.guild, parentMessage, null != inForum && inForum));
-  let obj = parentMessage(566);
-  let items = [closure_8];
-  if (obj.useStateFromStores(items, () => outer1_8.canWithPartialContext(outer1_16.VIEW_CHANNEL, { channelId: parentMessage.id }))) {
+  ({ guild, parentMessage } = arg0);
+  guild = parentMessage;
+  ({ onPress, style, inForum } = arg0);
+  const tmp = callback3();
+  if (inForum == null) {
+    inForum = false;
+  }
+  let obj = guild(inForum[31]);
+  const items = [ensureGuildLoaded, updateState];
+  const stateFromStoresObject = obj.useStateFromStoresObject(items, () => {
+    const obj = { thread: outer1_6.getChannel(parentMessage.id), messageCount: null, mostRecentMessage: null };
+    let num = outer1_5.getCount(parentMessage.id);
+    if (num == null) {
+      num = 0;
+    }
+    obj[1] = num;
+    obj[2] = outer1_5.getMostRecentMessage(parentMessage.id);
+    return obj;
+  });
+  ({ thread, messageCount, mostRecentMessage } = stateFromStoresObject);
+  const items1 = [guild.id, inForum, parentMessage];
+  const effect = React.useEffect(() => {
+    let tmp2 = parentMessage.hasFlag(outer1_15.HAS_THREAD) || inForum;
+    if (tmp2) {
+      tmp2 = null == outer1_5.getMostRecentMessage(tmp.id);
+    }
+    if (tmp2) {
+      let obj = parentMessage(inForum[46]);
+      obj.preload(guild.id, tmp.id);
+      obj = { channelId: null, isPreload: true, limit: 25 };
+      obj[0] = tmp.id;
+      const messages = parentMessage(inForum[17]).fetchMessages(obj);
+      const obj2 = parentMessage(inForum[17]);
+    }
+  }, items1);
+  let obj1 = guild(inForum[31]);
+  const items2 = [getUncachedChannelPermissions];
+  if (obj1.useStateFromStores(items2, () => outer1_8.canWithPartialContext(outer1_16.VIEW_CHANNEL, { channelId: guild.id }))) {
     if (null != thread) {
       if (null != mostRecentMessage) {
         let str = "99+";
         if (messageCount <= 99) {
           str = messageCount;
         }
-        obj = {};
-        let items1 = [tmp.comments, style];
-        obj.style = items1;
-        obj.onPress = onPress;
-        obj = {};
+        obj = { style: null, onPress: null, children: null };
+        const items3 = [tmp.comments, style];
+        obj[0] = items3;
+        obj[1] = onPress;
         let author;
-        if (null != mostRecentMessage) {
+        if (mostRecentMessage != null) {
           author = mostRecentMessage.author;
         }
-        obj.user = author;
-        obj.guildId = thread.guild_id;
-        obj.size = parentMessage(1273).AvatarSizes.XSMALL;
-        const items2 = [callback(parentMessage(1273).Avatar, obj), , ];
-        const obj1 = { variant: "text-sm/semibold", lineClamp: 1, style: tmp.recentCommentText };
+        obj = { user: null, guildId: null, size: null };
+        obj[0] = author;
+        obj[1] = thread.guild_id;
+        obj[2] = tmp2(tmp3[22]).AvatarSizes.XSMALL;
+        const items4 = [callback(tmp2(tmp3[22]).Avatar, obj), , ];
+        obj1 = { variant: "text-sm/semibold", lineClamp: 1, style: null, children: null };
+        obj1[2] = tmp.recentCommentText;
         if (mostRecentMessage.content.length > 0) {
-          let obj4 = importDefault(4155);
-          let parseInlineReplyResult = obj4.parseInlineReply(mostRecentMessage.content, true);
+          let obj5 = parentMessage(tmp3[49]);
+          let parseInlineReplyResult = obj5.parseInlineReply(mostRecentMessage.content, true);
         } else {
-          const intl = parentMessage(1212).intl;
-          parseInlineReplyResult = intl.string(parentMessage(1212).t["6kp9H2"]);
+          const intl = tmp2(tmp3[39]).intl;
+          parseInlineReplyResult = intl.string(tmp2(tmp3[39]).t["6kp9H2"]);
         }
-        obj1.children = parseInlineReplyResult;
-        items2[1] = callback(parentMessage(4161).Text, obj1);
-        let obj2 = { style: tmp.commentCount };
-        const obj3 = { style: tmp.commentsIcon };
-        const items3 = [callback(parentMessage(4664).ChatIcon, obj3), , ];
-        obj4 = { variant: "text-sm/bold", color: "interactive-text-default", children: str };
-        items3[1] = callback(parentMessage(4161).Text, obj4);
-        const obj5 = { style: tmp.chevron, size: "xxs" };
-        items3[2] = callback(parentMessage(5547).ChevronSmallRightIcon, obj5);
-        obj2.children = items3;
-        items2[2] = callback2(View, obj2);
-        obj.children = items2;
-        return callback2(parentMessage(4695).PressableHighlight, obj);
+        obj1[3] = parseInlineReplyResult;
+        items4[1] = callback(tmp2(tmp3[27]).Text, obj1);
+        let obj2 = { style: null, children: null };
+        obj2[0] = tmp.commentCount;
+        const obj3 = { style: null };
+        obj3[0] = tmp.commentsIcon;
+        const items5 = [callback(tmp2(tmp3[47]).ChatIcon, obj3), , ];
+        const obj4 = { variant: "text-sm/bold", color: "interactive-text-default", children: null };
+        obj4[2] = str;
+        items5[1] = callback(tmp2(tmp3[27]).Text, obj4);
+        obj5 = { style: null, size: "xxs" };
+        obj5[0] = tmp.chevron;
+        items5[2] = callback(tmp2(tmp3[48]).ChevronSmallRightIcon, obj5);
+        obj2[1] = items5;
+        items4[2] = callback2(View, obj2);
+        obj[2] = items4;
+        return callback2(tmp2(tmp3[26]).PressableHighlight, obj);
       }
     }
-    const obj6 = {};
-    const items4 = [tmp.comments, style];
-    obj6.style = items4;
-    obj6.onPress = onPress;
-    const obj7 = { variant: "text-md/semibold", color: "text-muted", lineClamp: 1, style: tmp.recentCommentText };
-    const intl2 = parentMessage(1212).intl;
-    obj7.children = intl2.string(parentMessage(1212).t.VMWjXW);
-    const items5 = [callback(parentMessage(4161).Text, obj7), ];
-    const obj8 = { style: tmp.commentCount };
-    const obj9 = { style: tmp.commentsIcon };
-    const items6 = [callback(parentMessage(4664).ChatIcon, obj9), ];
-    const obj10 = { style: tmp.chevron, size: "xxs" };
-    items6[1] = callback(parentMessage(5547).ChevronSmallRightIcon, obj10);
-    obj8.children = items6;
-    items5[1] = callback2(View, obj8);
-    obj6.children = items5;
-    return callback2(parentMessage(4695).PressableHighlight, obj6);
+    const obj6 = { style: null, onPress: null, children: null };
+    const items6 = [tmp.comments, style];
+    obj6[0] = items6;
+    obj6[1] = onPress;
+    const obj7 = { variant: "text-md/semibold", color: "text-muted", lineClamp: 1, style: null, children: null };
+    obj7[3] = tmp.recentCommentText;
+    const intl2 = tmp2(tmp3[39]).intl;
+    obj7[4] = intl2.string(tmp2(tmp3[39]).t.VMWjXW);
+    const items7 = [callback(tmp2(tmp3[27]).Text, obj7), ];
+    const obj8 = { style: null, children: null };
+    obj8[0] = tmp.commentCount;
+    const obj9 = { style: null };
+    obj9[0] = tmp.commentsIcon;
+    const items8 = [callback(tmp2(tmp3[47]).ChatIcon, obj9), ];
+    const obj10 = { style: null, size: "xxs" };
+    obj10[0] = tmp.chevron;
+    items8[1] = callback(tmp2(tmp3[48]).ChevronSmallRightIcon, obj10);
+    obj8[1] = items8;
+    items7[1] = callback2(View, obj8);
+    obj6[2] = items7;
+    return callback2(tmp2(tmp3[26]).PressableHighlight, obj6);
   } else {
     return null;
   }
-  const tmp2 = null != inForum && inForum;
-  const tmp3 = (function useThread(guild, parentMessage, arg2) {
-    let messageCount;
-    let mostRecentMessage;
-    let thread;
-    let closure_0 = guild;
-    let closure_1 = parentMessage;
-    let closure_2 = arg2;
-    const items = [outer1_6, outer1_5];
-    const stateFromStoresObject = parentMessage(outer1_2[31]).useStateFromStoresObject(items, () => {
-      const obj = { thread: outer2_6.getChannel(parentMessage.id) };
-      const count = outer2_5.getCount(parentMessage.id);
-      let num = 0;
-      if (null != count) {
-        num = count;
-      }
-      obj.messageCount = num;
-      obj.mostRecentMessage = outer2_5.getMostRecentMessage(parentMessage.id);
-      return obj;
-    });
-    const items1 = [guild.id, arg2, parentMessage];
-    ({ thread, messageCount, mostRecentMessage } = stateFromStoresObject);
-    const effect = outer1_3.useEffect(() => {
-      let tmp = parentMessage.hasFlag(outer2_15.HAS_THREAD) || closure_2;
-      if (tmp) {
-        tmp = null == outer2_5.getMostRecentMessage(parentMessage.id);
-      }
-      if (tmp) {
-        let obj = outer2_1(outer2_2[46]);
-        obj.preload(guild.id, parentMessage.id);
-        obj = { channelId: parentMessage.id, isPreload: true, limit: 25 };
-        const messages = outer2_1(outer2_2[17]).fetchMessages(obj);
-        const obj2 = outer2_1(outer2_2[17]);
-      }
-    }, items1);
-    return { thread, messageCount, mostRecentMessage };
-  })(parentMessage.guild, parentMessage, null != inForum && inForum);
 };

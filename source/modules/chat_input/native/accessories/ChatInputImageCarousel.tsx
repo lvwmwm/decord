@@ -1,45 +1,49 @@
-// Module ID: 11370
-// Function ID: 88205
-// Dependencies: [31, 6073, 4503, 4502, 9286, 33, 566, 9646, 2]
+// Module ID: 11394
+// Function ID: 11395
+// Dependencies: [19, 6091, 4526, 4525, 9310, 21, 589, 9668, 2]
 
-// Module 11370
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import { DraftType } from "_isNativeReflectConstruct";
-import closure_5 from "_isNativeReflectConstruct";
-import { useChatShowingAutoComplete as closure_6 } from "getChatInputContainerHeight";
+// Module 11394
+import handleInit from "handleInit";
+import { DraftType } from "handleChanged";
+import map from "map";
+import { useChatShowingAutoComplete as closure_6 } from "updateChatInputContainerHeight";
 import { jsx } from "jsxProd";
-import importAllResult from "result";
+import importAllResult from "noop";
 
 const require = arg1;
-const memoResult = require("result").memo(function ChatInputImageCarousel(canUpload) {
+const memoResult = require("noop").memo(function ChatInputImageCarousel(canUpload) {
   canUpload = canUpload.canUpload;
   const channelId = canUpload.channelId;
+  let dependencyMap;
   let tmp = callback(canUpload.screenIndex);
-  const dependencyMap = tmp;
-  let obj = canUpload(566);
-  const items = [closure_5, _isNativeReflectConstruct];
+  dependencyMap = tmp;
+  let obj = canUpload(589);
+  const items = [map, handleInit];
   const items1 = [channelId, canUpload, tmp];
   const stateFromStores = obj.useStateFromStores(items, () => {
     let tmp = null;
-    if (!closure_2) {
+    if (!c2) {
       let uploads = null;
       if (canUpload) {
         uploads = null;
         if (null == outer1_3.getActiveCommand(channelId)) {
-          uploads = outer1_5.getUploads(channelId, outer1_4.ChannelMessage);
+          uploads = outer1_5.getUploads(tmp5, outer1_4.ChannelMessage);
         }
+        tmp5 = channelId;
       }
       tmp = uploads;
     }
     return tmp;
   }, items1);
-  let tmp3 = null;
+  let tmp4 = null;
   if (null != stateFromStores) {
-    obj = { attachments: stateFromStores, channelId };
-    tmp3 = jsx(channelId(9646), { attachments: stateFromStores, channelId });
+    obj = { attachments: null, channelId: null };
+    obj[0] = stateFromStores;
+    obj[1] = channelId;
+    tmp4 = jsx(channelId(9668), { attachments: null, channelId: null });
   }
-  return tmp3;
+  return tmp4;
 });
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/chat_input/native/accessories/ChatInputImageCarousel.tsx");
+const result = require("handleChanged").fileFinishedImporting("modules/chat_input/native/accessories/ChatInputImageCarousel.tsx");
 
 export default memoResult;

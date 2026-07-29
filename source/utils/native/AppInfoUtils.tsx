@@ -1,10 +1,10 @@
-// Module ID: 16111
-// Function ID: 124491
+// Module ID: 16146
+// Function ID: 16147
 // Name: getAppMajorVersion
-// Dependencies: [1554, 2]
+// Dependencies: [1578, 2]
 // Exports: getAppMajorVersion
 
-// Module 16111 (getAppMajorVersion)
+// Module 16146 (getAppMajorVersion)
 import getConstants from "getConstants";
 
 getConstants = getConstants.getConstants();
@@ -14,7 +14,7 @@ export const getAppMajorVersion = function getAppMajorVersion() {
   if (undefined === getConstants) {
     return -1;
   } else {
-    const parts = getConstants.Version.split(".");
+    const parts = tmp.Version.split(".");
     let num = -1;
     if (2 === parts.length) {
       const _Number = Number;

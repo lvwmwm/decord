@@ -1,10 +1,10 @@
-// Module ID: 10138
-// Function ID: 78380
+// Module ID: 10159
+// Function ID: 10160
 // Name: LOCATION_CONTEXT_MOBILE
-// Dependencies: [1212, 2]
+// Dependencies: [1236, 2]
 // Exports: getInappropriateConversationsSafetyTips, getSafetyToolsActionSheetKey, getStrangerDangerSafetyTips
 
-// Module 10138 (LOCATION_CONTEXT_MOBILE)
+// Module 10159 (LOCATION_CONTEXT_MOBILE)
 const result = require("set").fileFinishedImporting("modules/self_mod/Constants.tsx");
 
 export const LOCATION_CONTEXT_MOBILE = "SAFETY_WARNING_BANNER_MOBILE";
@@ -33,21 +33,21 @@ export const getSafetyToolsActionSheetKey = function getSafetyToolsActionSheetKe
   return "SAFETY_TOOLS_ACTION_SHEET_" + arg0;
 };
 export const getStrangerDangerSafetyTips = function getStrangerDangerSafetyTips() {
-  const intl = require(1212) /* getSystemLocale */.intl;
-  const items = [intl.string(require(1212) /* getSystemLocale */.t["26fDv4"]), , ];
-  const intl2 = require(1212) /* getSystemLocale */.intl;
-  items[1] = intl2.string(require(1212) /* getSystemLocale */.t.togDfk);
-  const intl3 = require(1212) /* getSystemLocale */.intl;
-  items[2] = intl3.string(require(1212) /* getSystemLocale */.t.O4Ljca);
+  const intl = require(1236) /* getSystemLocale */.intl;
+  const items = [intl.string(require(1236) /* getSystemLocale */.t["26fDv4"]), , ];
+  const intl2 = require(1236) /* getSystemLocale */.intl;
+  items[1] = intl2.string(require(1236) /* getSystemLocale */.t.togDfk);
+  const intl3 = require(1236) /* getSystemLocale */.intl;
+  items[2] = intl3.string(require(1236) /* getSystemLocale */.t.O4Ljca);
   return items;
 };
 export const getInappropriateConversationsSafetyTips = function getInappropriateConversationsSafetyTips() {
-  const intl = require(1212) /* getSystemLocale */.intl;
-  const items = [intl.string(require(1212) /* getSystemLocale */.t.bCWw8l), , ];
-  const intl2 = require(1212) /* getSystemLocale */.intl;
-  items[1] = intl2.string(require(1212) /* getSystemLocale */.t.mzSucz);
-  const intl3 = require(1212) /* getSystemLocale */.intl;
-  items[2] = intl3.string(require(1212) /* getSystemLocale */.t.ZkmC7s);
+  const intl = require(1236) /* getSystemLocale */.intl;
+  const items = [intl.string(require(1236) /* getSystemLocale */.t.bCWw8l), , ];
+  const intl2 = require(1236) /* getSystemLocale */.intl;
+  items[1] = intl2.string(require(1236) /* getSystemLocale */.t.mzSucz);
+  const intl3 = require(1236) /* getSystemLocale */.intl;
+  items[2] = intl3.string(require(1236) /* getSystemLocale */.t.ZkmC7s);
   return items;
 };
 export const SAFETY_TOOLS_IGNORED_USER_TOAST_KEY = "SAFETY_TOOLS_IGNORED_USER_CONFIRMED";

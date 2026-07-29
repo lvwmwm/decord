@@ -1,16 +1,16 @@
-// Module ID: 4656
-// Function ID: 40427
+// Module ID: 4678
+// Function ID: 4679
 // Name: items
-// Dependencies: [3985, 2]
+// Dependencies: [4009, 2]
 
-// Module 4656 (items)
+// Module 4678 (items)
 import set from "set";
 
-const items = [{ field_type: require("isTermsFormField").VerificationFormFieldTypes.VERIFICATION }];
-const items1 = [require("isTermsFormField").VerificationFormFieldTypes.TERMS];
+const items = [{ field_type: require("MAX_RESULTS_PER_PAGE").VerificationFormFieldTypes.VERIFICATION }];
+const items1 = [require("MAX_RESULTS_PER_PAGE").VerificationFormFieldTypes.TERMS];
 let set = new Set(items1);
-const items2 = [require("isTermsFormField").VerificationFormFieldTypes.MULTIPLE_CHOICE, require("isTermsFormField").VerificationFormFieldTypes.TEXT_INPUT, require("isTermsFormField").VerificationFormFieldTypes.PARAGRAPH];
-const obj = { field_type: require("isTermsFormField").VerificationFormFieldTypes.VERIFICATION };
+const items2 = [require("MAX_RESULTS_PER_PAGE").VerificationFormFieldTypes.MULTIPLE_CHOICE, require("MAX_RESULTS_PER_PAGE").VerificationFormFieldTypes.TEXT_INPUT, require("MAX_RESULTS_PER_PAGE").VerificationFormFieldTypes.PARAGRAPH];
+const obj = { field_type: require("MAX_RESULTS_PER_PAGE").VerificationFormFieldTypes.VERIFICATION };
 const result = set.fileFinishedImporting("modules/guild_member_verification/MemberVerificationConstants.tsx");
 
 export const REQUIRED_FORM_FIELDS = items;

@@ -1,47 +1,50 @@
-// Module ID: 11340
-// Function ID: 88005
+// Module ID: 11364
+// Function ID: 11365
 // Name: AppLauncherChannelOption
-// Dependencies: [57, 31, 1348, 33, 566, 4355, 11329, 11341, 4133, 11341, 1935, 2]
+// Dependencies: [32, 19, 1372, 21, 589, 4380, 11353, 11365, 4157, 11365, 1959, 2]
 // Exports: default
 
-// Module 11340 (AppLauncherChannelOption)
+// Module 11364 (AppLauncherChannelOption)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import noop from "noop";
+import ensureGuildLoaded from "ensureGuildLoaded";
 import { jsx } from "jsxProd";
 
 const require = arg1;
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/app_launcher/native/options/channel/AppLauncherChannelOption.tsx");
+const result = require("ensureGuildLoaded").fileFinishedImporting("modules/app_launcher/native/options/channel/AppLauncherChannelOption.tsx");
 
 export default function AppLauncherChannelOption(option) {
   let autoFocus;
   let _slicedToArray;
-  let result;
-  let _isNativeReflectConstruct;
+  let noop;
+  let ensureGuildLoaded;
   let hasError;
   let importDefault;
   let onChannelPress;
   let style;
   option = option.option;
   ({ initialValue: importDefault, onChannelPress } = option);
-  ({ onActionSheetDismiss: _slicedToArray, channel: result, onPress: _isNativeReflectConstruct } = option);
+  ({ onActionSheetDismiss: _slicedToArray, channel: noop, onPress: ensureGuildLoaded } = option);
+  let first;
+  let closure_7;
+  let stateFromStores;
   ({ style, autoFocus, hasError } = option);
   let tmp = callback(React.useState(() => {
     let channelId = null;
     if (null != closure_1) {
       channelId = null;
-      if ("channelMention" === closure_1.type) {
-        channelId = closure_1.channelId;
+      if ("channelMention" === tmp.type) {
+        channelId = tmp.channelId;
       }
     }
     return channelId;
   }), 2);
-  const first = tmp[0];
-  let closure_7 = tmp[1];
+  first = tmp[0];
+  closure_7 = tmp[1];
   let obj = option(onChannelPress[4]);
-  const items = [_isNativeReflectConstruct];
+  const items = [ensureGuildLoaded];
   const items1 = [first];
-  const stateFromStores = obj.useStateFromStores(items, () => outer1_5.getChannel(first), items1);
+  stateFromStores = obj.useStateFromStores(items, () => outer1_5.getChannel(first), items1);
   const items2 = [onChannelPress, first, stateFromStores];
   const effect = React.useEffect(() => {
     let tmp = null != first;
@@ -49,41 +52,41 @@ export default function AppLauncherChannelOption(option) {
       tmp = null == stateFromStores;
     }
     if (tmp) {
-      callback2(null);
-      const obj = { channel: null };
-      onChannelPress(obj);
+      callback(null);
+      onChannelPress({ channel: null });
     }
   }, items2);
-  obj = { style, option, hasError, selected: null != stateFromStores };
-  let tmp8;
-  const tmp5 = importDefault(onChannelPress[5])(stateFromStores);
-  const tmp6 = first;
+  obj = { style, option, hasError, selected: null != stateFromStores, selectedItemName: null, leading: null, onPress: null, autoFocus: null };
+  let tmp10;
+  const tmp3 = option;
+  const tmp4 = onChannelPress;
+  const tmp7 = importDefault(onChannelPress[5])(stateFromStores);
   if (null != stateFromStores) {
-    tmp8 = tmp5;
+    tmp10 = tmp7;
   }
-  obj.selectedItemName = tmp8;
-  obj.leading = first(option(onChannelPress[7]).ChannelIcon, { channel: stateFromStores });
-  obj.onPress = function onPress() {
-    if (null != callback) {
-      callback();
+  obj[4] = tmp10;
+  obj[5] = first(tmp3(tmp4[7]).ChannelIcon, { channel: stateFromStores });
+  obj[6] = function onPress() {
+    if (ensureGuildLoaded != null) {
+      tmp();
     }
     let obj = outer1_1(onChannelPress[8]);
     obj = {
       option,
-      channel: result,
+      channel: noop,
       onChannelPress(channel) {
         channel = channel.channel;
         let id;
-        if (null != channel) {
+        if (channel != null) {
           id = channel.id;
         }
-        outer1_7(id);
-        outer1_2({ channel });
+        closure_7(id);
+        callback({ channel });
       },
       onActionSheetDismiss: _slicedToArray
     };
     obj.openLazy(option(onChannelPress[10])(onChannelPress[9], onChannelPress.paths), option(onChannelPress[7]).APP_LAUNCHER_CHANNEL_LIST_ACTION_SHEET_KEY, obj);
   };
-  obj.autoFocus = autoFocus;
-  return tmp6(importDefault(onChannelPress[6]), obj);
+  obj[7] = autoFocus;
+  return first(importDefault(onChannelPress[6]), obj);
 };

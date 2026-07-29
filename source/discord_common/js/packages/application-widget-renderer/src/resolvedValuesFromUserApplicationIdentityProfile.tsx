@@ -1,92 +1,13 @@
-// Module ID: 12131
-// Function ID: 94889
-// Name: _createForOfIteratorHelperLoose
-// Dependencies: [57, 12049, 12132, 2]
+// Module ID: 12155
+// Function ID: 12156
+// Name: isVisualUnfurledMedia
+// Dependencies: [32, 12073, 12156, 2]
 // Exports: default
 
-// Module 12131 (_createForOfIteratorHelperLoose)
+// Module 12155 (isVisualUnfurledMedia)
 import _slicedToArray from "_slicedToArray";
 
 const require = arg1;
-function _createForOfIteratorHelperLoose(iterable) {
-  let closure_0 = iterable;
-  iterable = "undefined" !== typeof Symbol;
-  if (iterable) {
-    const _Symbol = Symbol;
-    iterable = iterable[Symbol.iterator];
-  }
-  if (!iterable) {
-    iterable = iterable[Symbol.iterator];
-  }
-  if (iterable) {
-    const iter = iterable.call(iterable);
-    const next = iter.next;
-    return next.bind(iter);
-  } else {
-    const _Array = Array;
-    let tmp = iterable;
-    if (!Array.isArray(iterable)) {
-      let tmp2;
-      if (iterable) {
-        if ("string" === typeof iterable) {
-          tmp2 = _arrayLikeToArray(iterable, undefined);
-        } else {
-          const toString = {}.toString;
-          const substr = toString.call(iterable).slice(8, -1);
-          let name = substr;
-          if (tmp3) {
-            name = iterable.constructor.name;
-          }
-          if ("Map" !== name) {
-            if ("Set" !== name) {
-              if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(iterable, undefined);
-              } else {
-                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
-              }
-            }
-            tmp2 = arr;
-          }
-          const _Array2 = Array;
-          arr = Array.from(iterable);
-          const callResult = toString.call(iterable);
-          tmp3 = "Object" === substr && iterable.constructor;
-        }
-      }
-      tmp = tmp2;
-      if (!tmp2) {
-        const _TypeError = TypeError;
-        const typeError = new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
-        throw typeError;
-      }
-    }
-    if (tmp) {
-      closure_0 = tmp;
-    }
-    let c1 = 0;
-    return () => {
-      if (closure_1 >= length.length) {
-        let obj = { done: true };
-      } else {
-        obj = { done: false };
-        closure_1 = tmp3 + 1;
-        obj.value = length[+closure_1];
-      }
-      return obj;
-    };
-  }
-}
-function _arrayLikeToArray(arg0, arg1) {
-  let length;
-  if (tmp) {
-    length = arg0.length;
-  }
-  const ArrayResult = Array(length);
-  for (let num = 0; num < length; num = num + 1) {
-    ArrayResult[num] = arg0[num];
-  }
-  return ArrayResult;
-}
 function isVisualUnfurledMedia(value) {
   let tmp = null != value.width;
   if (tmp) {
@@ -100,20 +21,12 @@ function isVisualUnfurledMedia(value) {
   }
   return tmp;
 }
-function resolvedValuesFromProfileTopLevel(username) {
-  let obj = {};
-  if (null != username.username) {
-    obj = { type: require(12049) /* resolveFieldValue */.ResolvedValueType.STRING, value: username.username };
-    obj.username = obj;
-  }
-  return obj;
-}
 function resolvedValuesFromPrimary(data) {
-  let tmp4;
-  let tmp5;
+  let tmp7;
+  let tmp8;
   data = data.data;
   let primary;
-  if (null != data) {
+  if (data != null) {
     primary = data.primary;
   }
   let obj = {};
@@ -122,117 +35,139 @@ function resolvedValuesFromPrimary(data) {
   } else {
     const _Object = Object;
     const entries = Object.entries(primary);
-    for (let num = 0; num < entries.length; num = num + 1) {
-      let tmp2 = callback;
-      let tmp3 = callback(entries[num], 2);
-      [tmp4, tmp5] = tmp3;
-      let tmp6 = typeof tmp5;
-      if ("string" === tmp6) {
-        obj = {};
-        let tmp12 = require;
-        let tmp13 = dependencyMap;
-        obj.type = require(12049) /* resolveFieldValue */.ResolvedValueType.STRING;
-        obj.value = tmp5;
-        obj[tmp4] = obj;
-      } else if ("number" === tmp6) {
-        obj = {};
-        let tmp10 = require;
-        let tmp11 = dependencyMap;
-        obj.type = require(12049) /* resolveFieldValue */.ResolvedValueType.NUMBER;
-        obj.value = tmp5;
-        obj[tmp4] = obj;
-      } else if ("object" === tmp6) {
-        if ("url" in tmp5) {
-          if ("proxy_url" in tmp5) {
-            if ("loading_state" in tmp5) {
-              let tmp7 = isVisualUnfurledMedia;
-              if (isVisualUnfurledMedia(tmp5)) {
-                let obj1 = {};
-                let tmp8 = require;
-                let tmp9 = dependencyMap;
-                obj1.type = require(12049) /* resolveFieldValue */.ResolvedValueType.MEDIA;
-                let obj2 = {};
-                ({ proxy_url: obj3.url, width: obj3.width, height: obj3.height } = tmp5);
-                obj1.media = obj2;
-                obj[tmp4] = obj1;
+    const tmp29 = entries[Symbol.iterator]();
+    while (tmp29 !== undefined) {
+      let tmp5 = callback;
+      let tmp6 = callback(tmp3, 2);
+      [tmp7, tmp8] = tmp6;
+      let tmp9 = tmp8;
+      if (typeof tmp8 === "y") {
+        let tmp22 = tmp7;
+        obj = { type: null, value: null };
+        let tmp23 = require;
+        let tmp24 = dependencyMap;
+        obj[0] = require(12073) /* resolveFieldValue */.ResolvedValueType.STRING;
+        let tmp25 = tmp8;
+        obj[1] = tmp9;
+        obj[tmp7] = obj;
+      } else {
+        let tmp30 = tmp8;
+        if (typeof tmp9 === "Object") {
+          let tmp18 = tmp7;
+          obj = { type: null, value: null };
+          let tmp19 = require;
+          let tmp20 = dependencyMap;
+          obj[0] = require(12073) /* resolveFieldValue */.ResolvedValueType.NUMBER;
+          let tmp21 = tmp8;
+          obj[1] = tmp9;
+          obj[tmp7] = obj;
+        } else {
+          let tmp31 = tmp8;
+          if (typeof tmp9 !== "window") {
+            let tmp32 = tmp8;
+            if ("url" in tmp9) {
+              let tmp10 = tmp8;
+              if ("proxy_url" in tmp9) {
+                let tmp11 = tmp8;
+                if ("loading_state" in tmp9) {
+                  let tmp12 = isVisualUnfurledMedia;
+                  let tmp13 = tmp8;
+                  if (isVisualUnfurledMedia(tmp9)) {
+                    let tmp14 = tmp7;
+                    let obj1 = { type: null, media: null };
+                    let tmp15 = require;
+                    let tmp16 = dependencyMap;
+                    obj1[0] = require(12073) /* resolveFieldValue */.ResolvedValueType.MEDIA;
+                    let obj2 = { url: null, width: null, height: null };
+                    let tmp17 = tmp8;
+                    ({ proxy_url: obj3[0], width: obj3[1], height: obj3[2] } = tmp9);
+                    obj1[1] = obj2;
+                    obj[tmp7] = obj1;
+                  }
+                  continue;
+                }
               }
             }
           }
         }
       }
+      continue;
     }
     return obj;
   }
 }
 function resolvedValuesFromDynamic(data) {
-  let iter2;
   data = data.data;
   let dynamic;
-  if (null != data) {
+  if (data != null) {
     dynamic = data.dynamic;
   }
   let obj = {};
   if (null == dynamic) {
     return obj;
   } else {
-    const tmp11 = _createForOfIteratorHelperLoose(dynamic);
-    let iter3 = tmp11();
-    if (!iter3.done) {
-      do {
-        let iter = iter3.value;
-        let tmp2 = require;
-        let tmp3 = dependencyMap;
-        if (iter.type === require(12132) /* ProfileDataDynamicType */.ProfileDataDynamicType.STRING) {
-          obj = {};
-          let tmp8 = require;
-          let tmp9 = dependencyMap;
-          obj.type = require(12049) /* resolveFieldValue */.ResolvedValueType.STRING;
-          obj.value = iter.value;
+    const iter2 = dynamic[Symbol.iterator]();
+    const nextResult = iter2.next();
+    while (iter2 !== undefined) {
+      let iter = nextResult;
+      let tmp5 = require;
+      let tmp6 = dependencyMap;
+      if (nextResult.type === require(12156) /* ProfileDataDynamicType */.ProfileDataDynamicType.STRING) {
+        let tmp9 = nextResult;
+        obj = { type: null, value: null };
+        obj[0] = tmp5(12073).ResolvedValueType.STRING;
+        obj[1] = iter.value;
+        obj[iter.name] = obj;
+      } else {
+        let tmp11 = nextResult;
+        if (iter.type === tmp5(12156).ProfileDataDynamicType.NUMBER) {
+          let tmp8 = nextResult;
+          obj = { type: null, value: null };
+          obj[0] = tmp5(12073).ResolvedValueType.NUMBER;
+          obj[1] = iter.value;
           obj[iter.name] = obj;
         } else {
-          let tmp12 = require;
-          let tmp13 = dependencyMap;
-          if (iter.type === require(12132) /* ProfileDataDynamicType */.ProfileDataDynamicType.NUMBER) {
-            obj = {};
-            let tmp6 = require;
-            let tmp7 = dependencyMap;
-            obj.type = require(12049) /* resolveFieldValue */.ResolvedValueType.NUMBER;
-            obj.value = iter.value;
-            obj[iter.name] = obj;
-          } else {
-            let tmp14 = require;
-            let tmp15 = dependencyMap;
-            if (iter.type === require(12132) /* ProfileDataDynamicType */.ProfileDataDynamicType.MEDIA) {
-              let tmp16 = isVisualUnfurledMedia;
-              if (isVisualUnfurledMedia(iter.value)) {
-                let obj1 = {};
-                let tmp4 = require;
-                let tmp5 = dependencyMap;
-                obj1.type = require(12049) /* resolveFieldValue */.ResolvedValueType.MEDIA;
-                let obj2 = { url: iter.value.proxy_url, width: iter.value.width, height: iter.value.height };
-                obj1.media = obj2;
-                obj[iter.name] = obj1;
-              }
+          let tmp12 = nextResult;
+          if (iter.type === tmp5(12156).ProfileDataDynamicType.MEDIA) {
+            let tmp13 = isVisualUnfurledMedia;
+            let tmp14 = nextResult;
+            if (isVisualUnfurledMedia(iter.value)) {
+              let tmp7 = nextResult;
+              let obj1 = { type: null, media: null };
+              obj1[0] = tmp5(12073).ResolvedValueType.MEDIA;
+              let obj2 = { url: null, width: null, height: null };
+              obj2[0] = iter.value.proxy_url;
+              obj2[1] = iter.value.width;
+              obj2[2] = iter.value.height;
+              obj1[1] = obj2;
+              obj[iter.name] = obj1;
             }
+            continue;
           }
         }
-        iter2 = tmp11();
-        iter3 = iter2;
-      } while (!iter2.done);
+      }
+      continue;
     }
     return obj;
   }
 }
 const result = require("ProfileDataDynamicType").fileFinishedImporting("../discord_common/js/packages/application-widget-renderer/src/resolvedValuesFromUserApplicationIdentityProfile.tsx");
 
-export default function resolvedValuesFromUserApplicationIdentityProfile(username) {
-  if (null == username) {
+export default function resolvedValuesFromUserApplicationIdentityProfile(profile) {
+  if (null == profile) {
     let obj = {};
   } else {
     obj = {};
-    const merged = Object.assign(resolvedValuesFromProfileTopLevel(username));
-    const merged1 = Object.assign(resolvedValuesFromPrimary(username));
-    const merged2 = Object.assign(resolvedValuesFromDynamic(username));
+    if (null != profile.username) {
+      obj = { type: null, value: null };
+      obj[0] = require(12073) /* resolveFieldValue */.ResolvedValueType.STRING;
+      obj[1] = profile.username;
+      obj.username = obj;
+    }
+    obj = {};
+    const merged = Object.assign(obj);
+    const merged1 = Object.assign(resolvedValuesFromPrimary(profile));
+    const merged2 = Object.assign(resolvedValuesFromDynamic(profile));
   }
   return obj;
 };

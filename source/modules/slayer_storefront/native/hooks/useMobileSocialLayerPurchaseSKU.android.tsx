@@ -1,56 +1,54 @@
-// Module ID: 9737
-// Function ID: 75704
+// Module ID: 9759
+// Function ID: 9760
 // Name: useMobileSocialLayerPurchaseSKU
-// Dependencies: [31, 653, 6279, 9738, 2]
+// Dependencies: [19, 676, 6300, 9760, 2]
 // Exports: default
 
-// Module 9737 (useMobileSocialLayerPurchaseSKU)
-import result from "result";
+// Module 9759 (useMobileSocialLayerPurchaseSKU)
+import noop from "noop";
 import { PriceSetAssignmentPurchaseTypes as closure_4 } from "ME";
 
 const require = arg1;
-const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/slayer_storefront/native/hooks/useMobileSocialLayerPurchaseSKU.android.tsx");
+const result = require("getPlanIdForProduct").fileFinishedImporting("modules/slayer_storefront/native/hooks/useMobileSocialLayerPurchaseSKU.android.tsx");
 
 export default function useMobileSocialLayerPurchaseSKU(sku) {
   sku = sku.sku;
-  let obj = Object.create(null);
-  obj.sku = 0;
-  const merged = Object.assign(sku, obj);
+  const merged = Object.assign(sku, Object.create(null));
   let c0;
   const giftParams = merged.giftParams;
   let isGift;
-  if (null != giftParams) {
+  if (giftParams != null) {
     isGift = giftParams.isGift;
   }
-  if (null != isGift) {
+  if (isGift != null) {
     if (isGift) {
       let DEFAULT = constants.GIFT;
     }
     let googleSkuIds;
-    if (null != sku) {
+    if (sku != null) {
       googleSkuIds = sku.googleSkuIds;
     }
-    if (null == googleSkuIds) {
+    if (googleSkuIds == null) {
       googleSkuIds = {};
     }
-    let tmp6 = null;
-    if (null != googleSkuIds[DEFAULT]) {
-      tmp6 = tmp5;
+    let tmp4 = googleSkuIds[DEFAULT];
+    if (tmp4 == null) {
+      tmp4 = null;
     }
-    c0 = tmp6;
-    let items = [tmp6];
+    c0 = tmp4;
+    let items = [tmp4];
     const effect = React.useEffect(() => {
       if (null != _undefined) {
-        const items = [_undefined];
+        const items = [tmp];
         const inAppSkus = _undefined(outer1_2[2]).loadInAppSkus(items);
         const obj = _undefined(outer1_2[2]);
       }
     }, items);
-    obj = {};
+    let obj = {};
     const merged1 = Object.assign(merged);
-    obj["platformSkuId"] = tmp6;
-    obj["isFreeForStaffSelfPurchase"] = false;
-    return importDefault(9738)(obj);
+    obj.platformSkuId = tmp4;
+    obj.isFreeForStaffSelfPurchase = false;
+    return importDefault(9760)(obj);
   }
   DEFAULT = constants.DEFAULT;
 };

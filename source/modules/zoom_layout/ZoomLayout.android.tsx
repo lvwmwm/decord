@@ -1,16 +1,17 @@
-// Module ID: 10539
-// Function ID: 81537
-// Dependencies: [31, 27, 33, 10540, 2]
+// Module ID: 10563
+// Function ID: 10564
+// Dependencies: [19, 17, 21, 10564, 2]
 
-// Module 10539
-import importAllResult from "result";
+// Module 10563
+import importAllResult from "noop";
 import { PixelRatio } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
 
 const require = arg1;
-const forwardRefResult = importAllResult.forwardRef((arg0, arg1) => {
-  const ref = importAllResult.useRef(null);
-  const imperativeHandle = importAllResult.useImperativeHandle(arg1, () => ({
+let c3 = importAllResult;
+const forwardRefResult = importAllResult.forwardRef((arg0, ref) => {
+  ref = importAllResult.useRef(null);
+  const imperativeHandle = importAllResult.useImperativeHandle(ref, () => ({
     zoomTo(scale) {
       let x;
       let y;
@@ -23,12 +24,12 @@ const forwardRefResult = importAllResult.forwardRef((arg0, arg1) => {
       if (flag === undefined) {
         flag = true;
       }
-      if (null != outer1_0.current) {
-        const value = outer2_4.get();
+      if (null != ref.current) {
+        const value = outer1_4.get();
         const result = x * value;
         const result1 = y * value;
-        const Commands = ref(outer2_2[3]).Commands;
-        Commands.zoomTo(outer1_0.current, result / num - result, result1 / num - result1, num, flag);
+        const Commands = outer1_0(outer1_2[3]).Commands;
+        Commands.zoomTo(tmp.current, result / num - result, result1 / num - result1, num, flag);
       }
     },
     unzoom() {
@@ -40,16 +41,16 @@ const forwardRefResult = importAllResult.forwardRef((arg0, arg1) => {
       if (flag === undefined) {
         flag = true;
       }
-      if (null != outer1_0.current) {
-        const Commands = ref(outer2_2[3]).Commands;
-        Commands.unzoom(outer1_0.current, flag);
+      if (null != ref.current) {
+        const Commands = outer1_0(outer1_2[3]).Commands;
+        Commands.unzoom(tmp.current, flag);
       }
     }
   }));
   let obj = {};
   const merged = Object.assign(arg0);
-  obj["ref"] = ref;
-  return jsx(importDefault(10540), {});
+  obj.ref = ref;
+  return jsx(importDefault(10564), {});
 });
 let result = require("jsxProd").fileFinishedImporting("modules/zoom_layout/ZoomLayout.android.tsx");
 

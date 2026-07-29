@@ -1,94 +1,15 @@
-// Module ID: 14037
-// Function ID: 107253
-// Name: _createForOfIteratorHelperLoose
-// Dependencies: [31, 4257, 653, 10472, 491, 10476, 5983, 5994, 14023, 14038, 5849, 5854, 2]
+// Module ID: 14059
+// Function ID: 14060
+// Name: useBountiesModalVideoAnalytics
+// Dependencies: [19, 4281, 676, 10496, 514, 10500, 6002, 6013, 14045, 14060, 5867, 5872, 2]
 // Exports: useBountiesModalVideoAnalytics
 
-// Module 14037 (_createForOfIteratorHelperLoose)
-import result from "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 14059 (useBountiesModalVideoAnalytics)
+import noop from "noop";
+import handleConnectionInfoChange from "handleConnectionInfoChange";
 import { AnalyticEvents } from "ME";
 
 const require = arg1;
-function _createForOfIteratorHelperLoose(iterable) {
-  let closure_0 = iterable;
-  iterable = "undefined" !== typeof Symbol;
-  if (iterable) {
-    const _Symbol = Symbol;
-    iterable = iterable[Symbol.iterator];
-  }
-  if (!iterable) {
-    iterable = iterable[Symbol.iterator];
-  }
-  if (iterable) {
-    const iter = iterable.call(iterable);
-    const next = iter.next;
-    return next.bind(iter);
-  } else {
-    const _Array = Array;
-    let tmp = iterable;
-    if (!Array.isArray(iterable)) {
-      let tmp2;
-      if (iterable) {
-        if ("string" === typeof iterable) {
-          tmp2 = _arrayLikeToArray(iterable, undefined);
-        } else {
-          const toString = {}.toString;
-          const substr = toString.call(iterable).slice(8, -1);
-          let name = substr;
-          if (tmp3) {
-            name = iterable.constructor.name;
-          }
-          if ("Map" !== name) {
-            if ("Set" !== name) {
-              if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(iterable, undefined);
-              } else {
-                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
-              }
-            }
-            tmp2 = arr;
-          }
-          const _Array2 = Array;
-          arr = Array.from(iterable);
-          const callResult = toString.call(iterable);
-          tmp3 = "Object" === substr && iterable.constructor;
-        }
-      }
-      tmp = tmp2;
-      if (!tmp2) {
-        const _TypeError = TypeError;
-        const typeError = new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
-        throw typeError;
-      }
-    }
-    if (tmp) {
-      closure_0 = tmp;
-    }
-    let c1 = 0;
-    return () => {
-      if (closure_1 >= length.length) {
-        let obj = { done: true };
-      } else {
-        obj = { done: false };
-        closure_1 = tmp3 + 1;
-        obj.value = length[+closure_1];
-      }
-      return obj;
-    };
-  }
-}
-function _arrayLikeToArray(arg0, arg1) {
-  let length;
-  if (tmp) {
-    length = arg0.length;
-  }
-  const ArrayResult = Array(length);
-  for (let num = 0; num < length; num = num + 1) {
-    ArrayResult[num] = arg0[num];
-  }
-  return ArrayResult;
-}
 let closure_6 = [25, 50, 75];
 let result = require("ME").fileFinishedImporting("modules/quests/native/BountiesModal/useBountiesModalVideoAnalytics.tsx");
 
@@ -154,69 +75,66 @@ export const useBountiesModalVideoAnalytics = function useBountiesModalVideoAnal
   questImpressionId = obj.useQuestImpressionId();
   memo = num2.useMemo(() => bountyId(rewardDurationMs[4]).v4(), []);
   const set = new Set();
-  if (tmp5) {
+  if (tmp4) {
     set.add("start");
   }
   if (1000 * num2 >= rewardDurationMs) {
     set.add("threshold");
   }
   closure_11 = num2.useRef(set);
-  closure_12 = num2.useRef(false);
-  closure_13 = num2.useRef(num);
-  closure_14 = num2.useRef(num3);
-  closure_15 = num2.useRef(null);
-  closure_16 = num2.useRef(null);
-  closure_17 = num2.useRef(false);
-  closure_18 = num2.useRef(false);
-  closure_19 = num2.useRef(null);
-  closure_20 = num2.useRef(null);
-  closure_21 = num2.useRef(-1);
-  closure_22 = num2.useRef({ bitrateBps: null, width: null, height: null, levelIndex: null });
-  callback = num2.useCallback(() => {
-    if (null != closure_19.current) {
+  closure_12 = obj2.useRef(false);
+  closure_13 = obj2.useRef(num);
+  closure_14 = obj2.useRef(num3);
+  closure_15 = obj2.useRef(null);
+  closure_16 = obj2.useRef(null);
+  closure_17 = obj2.useRef(false);
+  closure_18 = obj2.useRef(false);
+  closure_19 = obj2.useRef(null);
+  closure_20 = obj2.useRef(null);
+  closure_21 = obj2.useRef(-1);
+  closure_22 = obj2.useRef({ bitrateBps: null, width: null, height: null, levelIndex: null });
+  callback = obj2.useCallback(() => {
+    if (null != ref7.current) {
       const _clearTimeout = clearTimeout;
-      clearTimeout(closure_19.current);
-      closure_19.current = null;
+      clearTimeout(tmp.current);
+      tmp.current = null;
     }
   }, []);
   const items = [flag, str, prop, rewardDurationMs];
-  memo1 = num2.useMemo(() => ({ was_preloaded: flag, startup_path: str, vertical_scrolling_position: prop, reward_timer_seconds: rewardDurationMs / 1000 }), items);
-  callback1 = num2.useCallback(() => {
+  memo1 = obj2.useMemo(() => ({ was_preloaded: flag, startup_path: str, vertical_scrolling_position: prop, reward_timer_seconds: rewardDurationMs / 1000 }), items);
+  callback1 = obj2.useCallback(() => {
     const current = closure_22.current;
     return { hls_level_index: current.levelIndex, hls_segment_res_width: current.width, hls_segment_res_height: current.height };
   }, []);
   const items1 = [num2, num3];
-  callback2 = num2.useCallback((current) => {
-    let iter;
-    let tmp = current;
+  callback2 = obj2.useCallback((current) => {
     if (!ref.current) {
-      ref.current = true;
-      if (tmp <= 0) {
-        tmp = num3;
+      let tmp2 = current;
+      tmp.current = true;
+      if (current <= 0) {
+        tmp2 = num3;
       }
-      if (tmp > 0) {
-        const result = bountyId(rewardDurationMs[5]).formatVideoProgressRatio(num2, tmp);
-        const tmp11 = prop(str);
-        let iter2 = tmp11();
-        if (!iter2.done) {
-          do {
-            let value = iter2.value;
-            if (result >= value / 100) {
-              let tmp3 = closure_11;
-              current = closure_11.current;
-              let _HermesInternal = HermesInternal;
-              let addResult = current.add("p" + value);
-            }
-            iter = tmp11();
-            iter2 = iter;
-          } while (!iter.done);
+      if (tmp2 > 0) {
+        const result = bountyId(rewardDurationMs[5]).formatVideoProgressRatio(num2, tmp2);
+        const iter = str[Symbol.iterator]();
+        const nextResult = iter.next();
+        while (iter !== undefined) {
+          if (result >= nextResult / 100) {
+            let tmp7 = closure_11;
+            current = closure_11.current;
+            let tmp8 = nextResult;
+            let _HermesInternal = HermesInternal;
+            let addResult = current.add("p" + tmp6);
+          }
+          continue;
         }
         const obj = bountyId(rewardDurationMs[5]);
+        const tmp14 = str;
       }
     }
   }, items1);
   const items2 = [bountyId, memo, questImpressionId, sourceQuestContent, rewardDurationMs];
-  callback3 = num2.useCallback((arg0) => {
+  callback3 = obj2.useCallback((arg0) => {
     let progress;
     let thresholdMet;
     let videoTimestampSeconds;
@@ -227,7 +145,7 @@ export const useBountiesModalVideoAnalytics = function useBountiesModalVideoAnal
     obj.trackAdContentEvent(obj);
   }, items2);
   const items3 = [callback3];
-  callback4 = num2.useCallback(() => {
+  callback4 = obj2.useCallback(() => {
     const current = closure_11.current;
     if (!current.has("start")) {
       const current2 = closure_11.current;
@@ -236,7 +154,7 @@ export const useBountiesModalVideoAnalytics = function useBountiesModalVideoAnal
     }
   }, items3);
   const items4 = [callback3, rewardDurationMs];
-  callback5 = num2.useCallback((arg0, current) => {
+  callback5 = obj2.useCallback((arg0, current) => {
     current = closure_11.current;
     if (!current.has("threshold")) {
       const current2 = closure_11.current;
@@ -244,59 +162,61 @@ export const useBountiesModalVideoAnalytics = function useBountiesModalVideoAnal
       const _Math = Math;
       const bound = Math.max(rewardDurationMs / 1000, arg0);
       let obj = bountyId(rewardDurationMs[5]);
-      obj = { videoTimestampSeconds: bound };
-      obj.progress = obj.formatVideoProgressRatio(bound, current);
-      obj.thresholdMet = true;
+      obj = { videoTimestampSeconds: null, progress: null, thresholdMet: true };
+      obj[0] = bound;
+      obj[1] = obj.formatVideoProgressRatio(bound, current);
       callback3(obj);
     }
   }, items4);
   const items5 = [callback3];
-  callback6 = num2.useCallback((arg0, arg1) => {
+  callback6 = obj2.useCallback((arg0, arg1) => {
     const current = closure_11.current;
     if (!current.has("end")) {
       const current2 = closure_11.current;
       current2.add("end");
       const _Math = Math;
-      const obj = { videoTimestampSeconds: Math.max(arg0, arg1), progress: 1, thresholdMet: true };
+      const obj = { videoTimestampSeconds: null, progress: 1, thresholdMet: true };
+      obj[0] = Math.max(arg0, arg1);
       callback3(obj);
     }
   }, items5);
   const items6 = [callback3, rewardDurationMs];
-  callback7 = num2.useCallback((videoTimestampSeconds, current) => {
-    let iter;
+  callback7 = obj2.useCallback((bound, current) => {
     if (current > 0) {
-      const result = bountyId(rewardDurationMs[5]).formatVideoProgressRatio(videoTimestampSeconds, current);
-      const tmp13 = prop(str);
-      let iter2 = tmp13();
-      if (!iter2.done) {
-        do {
-          let value = iter2.value;
-          let _HermesInternal = HermesInternal;
-          let combined = "p" + value;
-          let tmp2 = closure_11;
-          current = closure_11.current;
-          if (!current.has(combined)) {
-            if (result >= value / 100) {
-              let tmp3 = closure_11;
-              let current2 = closure_11.current;
-              let addResult = current2.add(combined);
-              let tmp5 = callback3;
-              let obj = { videoTimestampSeconds, progress: result };
-              let tmp6 = rewardDurationMs;
-              obj.thresholdMet = 1000 * videoTimestampSeconds >= rewardDurationMs;
-              let tmp7 = callback3(obj);
-            }
+      const result = bountyId(rewardDurationMs[5]).formatVideoProgressRatio(bound, current);
+      const iter = str[Symbol.iterator]();
+      const nextResult = iter.next();
+      while (iter !== undefined) {
+        let _HermesInternal = HermesInternal;
+        let tmp4 = nextResult;
+        let combined = "p" + nextResult;
+        current = closure_11.current;
+        let tmp6 = combined;
+        let tmp7 = closure_11;
+        if (!current.has(combined)) {
+          let tmp8 = nextResult;
+          if (result >= tmp4 / 100) {
+            let current2 = tmp7.current;
+            let tmp9 = combined;
+            let addResult = current2.add(tmp6);
+            let tmp11 = callback3;
+            let obj = { videoTimestampSeconds: null, progress: null, thresholdMet: null };
+            obj[0] = bound;
+            obj[1] = result;
+            let tmp12 = rewardDurationMs;
+            obj[2] = 1000 * bound >= rewardDurationMs;
+            let tmp13 = callback3(obj);
           }
-          iter = tmp13();
-          iter2 = iter;
-        } while (!iter.done);
+        }
+        continue;
       }
       const obj2 = bountyId(rewardDurationMs[5]);
+      const tmp18 = str;
     }
   }, items6);
   const items7 = [callback2, callback4, callback5, callback7, rewardDurationMs];
   const items8 = [callback2, callback4, callback5, callback7, callback6];
-  const callback8 = num2.useCallback((arg0, current, current2) => {
+  const callback8 = obj2.useCallback((arg0, current, current2) => {
     closure_13.current = current2;
     closure_14.current = current;
     callback2(current);
@@ -309,7 +229,7 @@ export const useBountiesModalVideoAnalytics = function useBountiesModalVideoAnal
     callback7(arg0, current);
   }, items7);
   const items9 = [bountyId, memo, questImpressionId, sourceQuestContent, rewardDurationMs];
-  const callback9 = num2.useCallback((arg0, current, current2) => {
+  const callback9 = obj2.useCallback((arg0, current, current2) => {
     closure_13.current = current2;
     closure_14.current = current;
     callback2(current);
@@ -321,7 +241,7 @@ export const useBountiesModalVideoAnalytics = function useBountiesModalVideoAnal
     callback6(arg0, current);
   }, items8);
   const items10 = [bountyId, memo, questImpressionId, sourceQuestContent, rewardDurationMs];
-  const callback10 = num2.useCallback((loop_count) => {
+  const callback10 = obj2.useCallback((loop_count) => {
     closure_13.current = 0;
     let obj = bountyId(rewardDurationMs[6]);
     obj = { adContentId: bountyId, adCreativeType: bountyId(rewardDurationMs[7]).AdCreativeType.BOUNTY, event: flag.AD_VIDEO_LOOPED, properties: obj, sourceQuestContent };
@@ -329,79 +249,105 @@ export const useBountiesModalVideoAnalytics = function useBountiesModalVideoAnal
     obj.trackAdContentEvent(obj);
   }, items9);
   const items11 = [bountyId, memo, questImpressionId, sourceQuestContent, rewardDurationMs];
-  const callback11 = num2.useCallback((video_timestamp_seconds) => {
+  const callback11 = obj2.useCallback((arg0, arg1) => {
     if (arg1 === bountyId(rewardDurationMs[8]).PlaybackTriggerSource.USER_INTERACTION) {
-      let obj = bountyId(rewardDurationMs[6]);
-      obj = { adContentId: bountyId, adCreativeType: bountyId(rewardDurationMs[7]).AdCreativeType.BOUNTY, event: flag.AD_VIDEO_PAUSED };
-      obj = { video_timestamp_seconds, video_session_id: memo, impression_id: questImpressionId, reward_timer_seconds: rewardDurationMs / 1000 };
-      obj.properties = obj;
-      obj.sourceQuestContent = sourceQuestContent;
-      obj.trackAdContentEvent(obj);
+      let obj = { adContentId: null, adCreativeType: null, event: null, properties: null, sourceQuestContent: null };
+      obj[0] = bountyId;
+      obj[1] = tmp(tmp2[7]).AdCreativeType.BOUNTY;
+      obj[2] = flag.AD_VIDEO_PAUSED;
+      obj = { video_timestamp_seconds: null, video_session_id: null, impression_id: null, reward_timer_seconds: null };
+      obj[0] = arg0;
+      obj[1] = memo;
+      obj[2] = questImpressionId;
+      obj[3] = rewardDurationMs / 1000;
+      obj[3] = obj;
+      obj[4] = sourceQuestContent;
+      tmp(tmp2[6]).trackAdContentEvent(obj);
+      const tmpResult = tmp(tmp2[6]);
     }
   }, items10);
   const items12 = [bountyId, memo, questImpressionId, sourceQuestContent, rewardDurationMs];
-  const callback12 = num2.useCallback((video_timestamp_seconds) => {
+  const callback12 = obj2.useCallback((arg0, arg1) => {
     if (arg1 === bountyId(rewardDurationMs[8]).PlaybackTriggerSource.USER_INTERACTION) {
-      let obj = bountyId(rewardDurationMs[6]);
-      obj = { adContentId: bountyId, adCreativeType: bountyId(rewardDurationMs[7]).AdCreativeType.BOUNTY, event: flag.AD_VIDEO_RESUMED };
-      obj = { video_timestamp_seconds, video_session_id: memo, impression_id: questImpressionId, reward_timer_seconds: rewardDurationMs / 1000 };
-      obj.properties = obj;
-      obj.sourceQuestContent = sourceQuestContent;
-      obj.trackAdContentEvent(obj);
+      let obj = { adContentId: null, adCreativeType: null, event: null, properties: null, sourceQuestContent: null };
+      obj[0] = bountyId;
+      obj[1] = tmp(tmp2[7]).AdCreativeType.BOUNTY;
+      obj[2] = flag.AD_VIDEO_RESUMED;
+      obj = { video_timestamp_seconds: null, video_session_id: null, impression_id: null, reward_timer_seconds: null };
+      obj[0] = arg0;
+      obj[1] = memo;
+      obj[2] = questImpressionId;
+      obj[3] = rewardDurationMs / 1000;
+      obj[3] = obj;
+      obj[4] = sourceQuestContent;
+      tmp(tmp2[6]).trackAdContentEvent(obj);
+      const tmpResult = tmp(tmp2[6]);
     }
   }, items11);
   const items13 = [bountyId, memo, questImpressionId, callback1, memo1, sourceQuestContent];
-  const callback13 = num2.useCallback((error) => {
+  const callback13 = obj2.useCallback((error) => {
     let obj = bountyId(rewardDurationMs[6]);
-    obj = { adContentId: bountyId, adCreativeType: bountyId(rewardDurationMs[7]).AdCreativeType.BOUNTY, event: flag.AD_VIDEO_ERROR };
-    obj = { video_progress: bountyId(rewardDurationMs[5]).formatVideoProgressRatio(ref2.current, ref3.current), video_error_type: null, network_connection_speed: null, video_session_id: memo };
+    obj = { adContentId: bountyId, adCreativeType: bountyId(rewardDurationMs[7]).AdCreativeType.BOUNTY, event: flag.AD_VIDEO_ERROR, properties: null, sourceQuestContent: null };
+    obj = { video_progress: null, video_error_type: null, network_connection_speed: null, video_session_id: null, video_error_code: null, video_error_message: null, video_network_state: null, impression_id: null, reward_timer_seconds: null };
+    obj[0] = bountyId(rewardDurationMs[5]).formatVideoProgressRatio(ref2.current, ref3.current);
+    obj[3] = memo;
     let code;
-    if (null != error) {
+    if (error != null) {
       code = error.error.code;
     }
-    obj.video_error_code = code;
+    obj[4] = code;
     let localizedDescription;
-    if (null != error) {
+    if (error != null) {
       localizedDescription = error.error.localizedDescription;
     }
-    if (null == localizedDescription) {
+    if (localizedDescription == null) {
       let errorString;
-      if (null != error) {
+      if (error != null) {
         errorString = error.error.errorString;
       }
       localizedDescription = errorString;
     }
-    obj.video_error_message = localizedDescription;
-    obj.video_network_state = null;
-    obj.impression_id = questImpressionId;
-    obj.reward_timer_seconds = rewardDurationMs / 1000;
-    obj.properties = obj;
-    obj.sourceQuestContent = sourceQuestContent;
+    obj[5] = localizedDescription;
+    obj[7] = questImpressionId;
+    obj[8] = rewardDurationMs / 1000;
+    obj[3] = obj;
+    obj[4] = sourceQuestContent;
     obj.trackAdContentEvent(obj);
     const obj4 = bountyId(rewardDurationMs[5]);
-    if (obj5.isSourceError(error)) {
-      const obj1 = { name: bountyId(rewardDurationMs[11]).MetricEvents.QUEST_VIDEO_ERROR, tags: ["error_type:SOURCE_ERROR"] };
-      sourceQuestContent(rewardDurationMs[10]).increment(obj1);
-      const obj6 = sourceQuestContent(rewardDurationMs[10]);
+    if (tmpResult.isSourceError(error)) {
+      const obj1 = { name: null, tags: null };
+      obj1[0] = tmp(tmp2[11]).MetricEvents.QUEST_VIDEO_ERROR;
+      obj1[1] = ["error_type:SOURCE_ERROR"];
+      sourceQuestContent(tmp2[10]).increment(obj1);
+      const obj6 = sourceQuestContent(tmp2[10]);
     }
   }, items12);
-  callback14 = num2.useCallback(() => {
-    if (null != ref7.current) {
+  callback14 = obj2.useCallback(() => {
+    if (null != ref8.current) {
       const _Date = Date;
-      ref7.current = null;
-      const diff = Date.now() - ref7.current;
+      tmp.current = null;
+      const diff = Date.now() - tmp.current;
       let obj = bountyId(rewardDurationMs[6]);
-      obj = { adContentId: bountyId, adCreativeType: bountyId(rewardDurationMs[7]).AdCreativeType.BOUNTY, event: flag.AD_VIDEO_BUFFERING_ENDED };
-      obj = { video_session_id: memo, impression_id: questImpressionId, duration: diff, network_connection_speed: num3.getEffectiveConnectionSpeed(), buffer_index: ref8.current, video_bitrate_bps: closure_22.current.bitrateBps };
+      obj = { adContentId: null, adCreativeType: null, event: null, properties: null, sourceQuestContent: null };
+      obj[0] = bountyId;
+      obj[1] = bountyId(rewardDurationMs[7]).AdCreativeType.BOUNTY;
+      obj[2] = flag.AD_VIDEO_BUFFERING_ENDED;
+      obj = { video_session_id: null, impression_id: null, duration: null, network_connection_speed: null, buffer_index: null, video_bitrate_bps: null };
+      obj[0] = memo;
+      obj[1] = questImpressionId;
+      obj[2] = diff;
+      obj[3] = num3.getEffectiveConnectionSpeed();
+      obj[4] = ref9.current;
+      obj[5] = closure_22.current.bitrateBps;
       const merged = Object.assign(callback1());
       const merged1 = Object.assign(memo1);
-      obj.properties = obj;
-      obj.sourceQuestContent = sourceQuestContent;
+      obj[3] = obj;
+      obj[4] = sourceQuestContent;
       obj.trackAdContentEvent(obj);
     }
   }, items13);
   const items14 = [bountyId, memo, questImpressionId, callback, callback1, memo1, sourceQuestContent];
-  callback15 = num2.useCallback(() => {
+  callback15 = obj2.useCallback(() => {
     let current = ref5.current;
     if (!current) {
       current = null == ref4.current;
@@ -413,17 +359,25 @@ export const useBountiesModalVideoAnalytics = function useBountiesModalVideoAnal
       ref5.current = true;
       callback();
       let obj = bountyId(rewardDurationMs[6]);
-      obj = { adContentId: bountyId, adCreativeType: bountyId(rewardDurationMs[7]).AdCreativeType.BOUNTY, event: true.AD_VIDEO_TIME_TO_FIRST_FRAME };
-      obj = { video_session_id: memo, impression_id: questImpressionId, duration_ms: closure_16.current - ref4.current, network_connection_speed: num3.getEffectiveConnectionSpeed(), startup_bitrate_bps: closure_22.current.bitrateBps };
+      obj = { adContentId: null, adCreativeType: null, event: null, properties: null, sourceQuestContent: null };
+      obj[0] = bountyId;
+      obj[1] = bountyId(rewardDurationMs[7]).AdCreativeType.BOUNTY;
+      obj[2] = true.AD_VIDEO_TIME_TO_FIRST_FRAME;
+      obj = { video_session_id: null, impression_id: null, duration_ms: null, network_connection_speed: null, startup_bitrate_bps: null };
+      obj[0] = memo;
+      obj[1] = questImpressionId;
+      obj[2] = closure_16.current - ref4.current;
+      obj[3] = num3.getEffectiveConnectionSpeed();
+      obj[4] = closure_22.current.bitrateBps;
       const merged = Object.assign(callback1());
       const merged1 = Object.assign(memo1);
-      obj.properties = obj;
-      obj.sourceQuestContent = sourceQuestContent;
+      obj[3] = obj;
+      obj[4] = sourceQuestContent;
       obj.trackAdContentEvent(obj);
     }
   }, items14);
   const items15 = [callback15];
-  callback16 = num2.useCallback(() => {
+  callback16 = obj2.useCallback(() => {
     let current = ref5.current;
     if (!current) {
       current = null == ref4.current;
@@ -433,11 +387,11 @@ export const useBountiesModalVideoAnalytics = function useBountiesModalVideoAnal
     }
     if (!current) {
       if (null == closure_22.current.bitrateBps) {
-        if (null == closure_19.current) {
+        if (null == ref7.current) {
           const _setTimeout = setTimeout;
-          closure_19.current = setTimeout(() => {
-            outer1_19.current = null;
-            outer1_33();
+          tmp9.current = setTimeout(() => {
+            closure_19.current = null;
+            callback();
           }, 500);
         }
       } else {
@@ -446,19 +400,19 @@ export const useBountiesModalVideoAnalytics = function useBountiesModalVideoAnal
     }
   }, items15);
   const items16 = [callback, callback14, callback15];
-  const effect = num2.useEffect(() => () => {
-    if (null != outer1_19.current) {
-      outer1_33();
+  const effect = obj2.useEffect(() => () => {
+    if (null != ref.current) {
+      callback3();
     }
-    outer1_23();
-    outer1_32();
+    callback();
+    callback2();
   }, items16);
   const items17 = [flag2, callback16, callback, callback14, callback15];
-  const effect1 = num2.useEffect(() => {
+  const effect1 = obj2.useEffect(() => {
     if (flag2) {
       callback16();
     } else {
-      if (null != closure_19.current) {
+      if (null != ref7.current) {
         callback15();
       }
       callback();
@@ -472,7 +426,7 @@ export const useBountiesModalVideoAnalytics = function useBountiesModalVideoAnal
     handleVideoPausedAnalytics: callback11,
     handleVideoResumedAnalytics: callback12,
     handleVideoErrorAnalytics: callback13,
-    handleLoadStartAnalytics: num2.useCallback(() => {
+    handleLoadStartAnalytics: obj2.useCallback(() => {
       callback14();
       callback();
       closure_15.current = Date.now();
@@ -481,81 +435,87 @@ export const useBountiesModalVideoAnalytics = function useBountiesModalVideoAnal
       closure_18.current = false;
       closure_22.current = { bitrateBps: null, width: null, height: null, levelIndex: null };
     }, items18),
-    handleVideoTracksAnalytics: num2.useCallback((arg0) => {
-      closure_22.current = (function getSelectedTrackInfo(arg0) {
-        let selectedVideoTrackId;
-        let videoTracks;
-        ({ videoTracks, selectedVideoTrackId } = arg0);
-        if (0 === videoTracks.length) {
-          return { bitrateBps: null, width: null, height: null, levelIndex: null };
-        } else {
-          let num = -1;
-          if (null != selectedVideoTrackId) {
-            num = -1;
-            if (selectedVideoTrackId.length > 0) {
-              num = videoTracks.findIndex((trackId) => trackId.trackId === selectedVideoTrackId);
-            }
+    handleVideoTracksAnalytics: obj2.useCallback((arg0) => {
+      let selectedVideoTrackId;
+      let videoTracks;
+      ({ videoTracks, selectedVideoTrackId } = arg0);
+      if (0 === videoTracks.length) {
+        let obj = { bitrateBps: null, width: null, height: null, levelIndex: null };
+      } else {
+        let num = -1;
+        if (null != selectedVideoTrackId) {
+          num = -1;
+          if (selectedVideoTrackId.length > 0) {
+            num = videoTracks.findIndex((trackId) => trackId.trackId === selectedVideoTrackId);
           }
-          const size = num >= 0 ? videoTracks[num] : videoTracks[0];
-          const obj = {};
-          let bitrate = null;
-          if (size.bitrate > 0) {
-            bitrate = size.bitrate;
-          }
-          obj.bitrateBps = bitrate;
-          let width = null;
-          if (size.width > 0) {
-            width = size.width;
-          }
-          obj.width = width;
-          let height = null;
-          if (size.height > 0) {
-            height = size.height;
-          }
-          obj.height = height;
-          let tmp4 = null;
-          if (num >= 0) {
-            tmp4 = num;
-          }
-          obj.levelIndex = tmp4;
-          return obj;
         }
-      })(arg0);
-      let tmp = flag2;
+        const size = num >= 0 ? videoTracks[num] : videoTracks[0];
+        let bitrate = null;
+        if (size.bitrate > 0) {
+          bitrate = size.bitrate;
+        }
+        obj = { bitrateBps: null, width: null, height: null, levelIndex: null };
+        obj[0] = bitrate;
+        let width = null;
+        if (size.width > 0) {
+          width = size.width;
+        }
+        obj[1] = width;
+        let height = null;
+        if (size.height > 0) {
+          height = size.height;
+        }
+        obj[2] = height;
+        let tmp5 = null;
+        if (num >= 0) {
+          tmp5 = num;
+        }
+        obj[3] = tmp5;
+      }
+      closure_22.current = obj;
+      let tmp6 = flag2;
       if (flag2) {
-        tmp = null != closure_16.current;
+        tmp6 = null != closure_16.current;
       }
-      if (tmp) {
-        tmp = null != closure_22.current.bitrateBps;
+      if (tmp6) {
+        tmp6 = null != tmp.current.bitrateBps;
       }
-      if (tmp) {
+      if (tmp6) {
         callback15();
       }
     }, items19),
-    handleReadyForDisplayAnalytics: num2.useCallback(() => {
+    handleReadyForDisplayAnalytics: obj2.useCallback(() => {
       closure_18.current = true;
       if (null == closure_16.current) {
         const _Date = Date;
-        closure_16.current = Date.now();
+        tmp.current = Date.now();
       }
       if (flag2) {
         callback16();
       }
     }, items20),
-    handleBufferAnalytics: num2.useCallback((arg0) => {
+    handleBufferAnalytics: obj2.useCallback((arg0) => {
       if (ref6.current) {
         if (flag2) {
           if (arg0) {
             const _Date = Date;
             closure_20.current = Date.now();
-            ref8.current = ref8.current + 1;
+            ref9.current = ref9.current + 1;
             let obj = bountyId(rewardDurationMs[6]);
-            obj = { adContentId: bountyId, adCreativeType: bountyId(rewardDurationMs[7]).AdCreativeType.BOUNTY, event: flag.AD_VIDEO_BUFFERING_STARTED };
-            obj = { video_session_id: memo, impression_id: questImpressionId, network_connection_speed: 7.getEffectiveConnectionSpeed(), buffer_index: ref8.current, video_bitrate_bps: closure_22.current.bitrateBps };
+            obj = { adContentId: null, adCreativeType: null, event: null, properties: null, sourceQuestContent: null };
+            obj[0] = bountyId;
+            obj[1] = bountyId(rewardDurationMs[7]).AdCreativeType.BOUNTY;
+            obj[2] = flag.AD_VIDEO_BUFFERING_STARTED;
+            obj = { video_session_id: null, impression_id: null, network_connection_speed: null, buffer_index: null, video_bitrate_bps: null };
+            obj[0] = memo;
+            obj[1] = questImpressionId;
+            obj[2] = num3.getEffectiveConnectionSpeed();
+            obj[3] = ref9.current;
+            obj[4] = closure_22.current.bitrateBps;
             const merged = Object.assign(callback1());
             const merged1 = Object.assign(memo1);
-            obj.properties = obj;
-            obj.sourceQuestContent = sourceQuestContent;
+            obj[3] = obj;
+            obj[4] = sourceQuestContent;
             obj.trackAdContentEvent(obj);
           } else {
             callback14();

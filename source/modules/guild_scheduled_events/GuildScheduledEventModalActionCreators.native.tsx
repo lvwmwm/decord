@@ -1,11 +1,11 @@
-// Module ID: 8193
-// Function ID: 65506
+// Module ID: 8217
+// Function ID: 8218
 // Name: openGuildEventDetails
-// Dependencies: [5, 1354, 8194, 4133, 8195, 1935, 8186, 12255, 2]
+// Dependencies: [5, 1378, 8218, 4157, 8219, 1959, 8210, 12279, 2]
 // Exports: openEndEventModal, transitionToEventDetailsFromInvite
 
-// Module 8193 (openGuildEventDetails)
-import maybeLoadBundle from "maybeLoadBundle";
+// Module 8217 (openGuildEventDetails)
+import asyncRequireImpl from "asyncRequireImpl";
 import { EXPLICIT_END_EVENT_SHEET_KEY as closure_4 } from "GUILD_EVENT_MAX_NAME_LENGTH";
 import { GUILD_EVENT_INFO_ACTION_SHEET_KEY as closure_5 } from "CREATE_GUILD_EVENT_MODAL_KEY";
 
@@ -17,37 +17,109 @@ function openGuildEventDetails(arg0) {
   let recurrenceId;
   ({ event, recurrenceId } = arg0);
   ({ eventId, onClose } = arg0);
-  let obj = importDefault(4133);
-  obj = { eventId, event, onCloseActionSheet: onClose };
-  if (null == recurrenceId) {
-    recurrenceId = require(8186) /* getNextBucketedTime */.getNextRecurrenceIdInEvent(event);
-    const obj3 = require(8186) /* getNextBucketedTime */;
+  let obj = importDefault(4157);
+  obj = { eventId, event, onCloseActionSheet: onClose, recurrenceId: null };
+  if (recurrenceId == null) {
+    recurrenceId = require(8210) /* getRRule */.getNextRecurrenceIdInEvent(event);
+    const tmp2Result = require(8210) /* getRRule */;
   }
-  let tmp5;
-  if (null != recurrenceId) {
-    tmp5 = recurrenceId;
-  }
-  obj.recurrenceId = tmp5;
-  obj.openLazy(require(1935) /* maybeLoadBundle */(8195, dependencyMap.paths), closure_5, obj, "stack");
+  obj[3] = recurrenceId;
+  obj.openLazy(require(1959) /* asyncRequireImpl */(8219, dependencyMap.paths), closure_5, obj, "stack");
 }
-async function _transitionToEventDetailsFromInvite(arg0, arg1, arg2) {
-  yield Promise.resolve();
-  const obj = { eventId: arg0.id, event: arg0 };
-  let recurrenceId;
-  if (null != arg1) {
-    recurrenceId = arg1.recurrenceId;
+function _transitionToEventDetailsFromInvite() {
+  const self = this;
+  const tmp = callback((arg0, arg1) => {
+    let closure_0 = arg0;
+    let closure_1 = arg1;
+    let c4 = 0;
+    let c5 = 0;
+    return (function*(arg0, arg1) {
+      if (c5 === 2) {
+        c5 = 3;
+        HermesBuiltin.throwTypeError();
+      } else if (tmp4 === 3) {
+        if (arg0 === 1) {
+          throw arg1;
+        } else if (arg0 === 2) {
+          let obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
+        } else {
+          return { value: "HermesInternal", done: null };
+        }
+      } else {
+        try {
+          c5 = 2;
+          if (0 === c4) {
+            if (arg0 === 1) {
+              c5 = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              c5 = 3;
+              obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            } else {
+              let asyncRequireImpl = tmp5;
+              let closure_2 = tmp2;
+              c4 = 1;
+              c5 = 1;
+              const obj1 = { value: null, done: false };
+              obj1[0] = Promise.resolve();
+              return obj1;
+            }
+          } else if (arg0 === 1) {
+            c5 = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            c5 = 3;
+            const obj2 = { value: null, done: true };
+            obj2[0] = arg1;
+            return obj2;
+          } else {
+            obj = { eventId: null, event: null, recurrenceId: null };
+            obj[0] = id.id;
+            obj[1] = id;
+            let recurrenceId;
+            if (recurrenceId != null) {
+              recurrenceId = recurrenceId.recurrenceId;
+            }
+            obj[2] = recurrenceId;
+            closure_6(obj);
+            c5 = 3;
+            return { value: "HermesInternal", done: null };
+          }
+        } catch (tmp17) {
+          c5 = tmp;
+          throw tmp17;
+        }
+      }
+    })();
+  });
+  const _transitionToEventDetailsFromInvite = tmp;
+  const apply = tmp.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
   }
-  obj.recurrenceId = recurrenceId;
-  outer2_6(obj);
+  return applyArgumentsResult;
 }
 const result = require("CREATE_GUILD_EVENT_MODAL_KEY").fileFinishedImporting("modules/guild_scheduled_events/GuildScheduledEventModalActionCreators.native.tsx");
 
 export { openGuildEventDetails };
 export const transitionToEventDetailsFromInvite = function transitionToEventDetailsFromInvite() {
-  return _transitionToEventDetailsFromInvite(...arguments);
+  const self = this;
+  const apply = _transitionToEventDetailsFromInvite.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
 };
 export const openEndEventModal = function openEndEventModal(channel) {
-  let obj = importDefault(4133);
+  let obj = importDefault(4157);
   obj = { channel };
-  obj.openLazy(require(1935) /* maybeLoadBundle */(12255, dependencyMap.paths), closure_4, obj);
+  obj.openLazy(require(1959) /* asyncRequireImpl */(12279, dependencyMap.paths), closure_4, obj);
 };

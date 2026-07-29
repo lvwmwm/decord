@@ -1,39 +1,39 @@
-// Module ID: 11690
-// Function ID: 90563
+// Module ID: 11714
+// Function ID: 11715
 // Name: UserProfileConfirmCancelFriendRequest
-// Dependencies: [31, 33, 4510, 1212, 4510, 2]
+// Dependencies: [19, 21, 4533, 1236, 4533, 2]
 // Exports: default
 
-// Module 11690 (UserProfileConfirmCancelFriendRequest)
-import "result";
+// Module 11714 (UserProfileConfirmCancelFriendRequest)
+import "noop";
 import jsxProd from "jsxProd";
 
-let closure_2;
-let closure_3;
+let c3;
+let obj1;
 const require = arg1;
-({ jsx: closure_2, jsxs: closure_3 } = jsxProd);
+({ jsx: obj1, jsxs: c3 } = jsxProd);
 const result = require("getAlertModalItemKey").fileFinishedImporting("modules/user_profile/native/UserProfileConfirmCancelFriendRequest.tsx");
 
 export default function UserProfileConfirmCancelFriendRequest(arg0) {
   let onConfirm;
   let userDisplayName;
   ({ userDisplayName, onConfirm } = arg0);
-  let obj = {};
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj.title = intl.string(require(1212) /* getSystemLocale */.t["bTfA//"]);
-  const intl2 = require(1212) /* getSystemLocale */.intl;
-  obj.content = intl2.formatToPlainString(require(1212) /* getSystemLocale */.t["72FwjH"], { name: userDisplayName });
-  obj = {};
-  obj = { variant: "destructive" };
-  const intl3 = require(1212) /* getSystemLocale */.intl;
-  obj.text = intl3.string(require(1212) /* getSystemLocale */.t["bTfA//"]);
-  obj.onPress = onConfirm;
-  const items = [callback(require(4510) /* getAlertModalItemKey */.AlertActionButton, obj, "cancel-friend-request"), ];
-  const obj1 = { variant: "secondary" };
-  const intl4 = require(1212) /* getSystemLocale */.intl;
-  obj1.text = intl4.string(require(1212) /* getSystemLocale */.t["eN6+rI"]);
-  items[1] = callback(require(4510) /* getAlertModalItemKey */.AlertActionButton, obj1, "nevermind");
-  obj.children = items;
-  obj.actions = callback2(require(4510) /* getAlertModalItemKey */.AlertActions, obj);
-  return callback(require(4510) /* getAlertModalItemKey */.AlertModal, obj);
+  let obj = { title: null, content: null, actions: null };
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj[0] = intl.string(require(1236) /* getSystemLocale */.t["bTfA//"]);
+  const intl2 = require(1236) /* getSystemLocale */.intl;
+  obj[1] = intl2.formatToPlainString(require(1236) /* getSystemLocale */.t["72FwjH"], { name: userDisplayName });
+  obj = { children: null };
+  obj = { variant: "destructive", text: null, onPress: null };
+  const intl3 = require(1236) /* getSystemLocale */.intl;
+  obj[1] = intl3.string(require(1236) /* getSystemLocale */.t["bTfA//"]);
+  obj[2] = onConfirm;
+  const items = [callback(require(4533) /* getAlertModalItemKey */.AlertActionButton, obj, "cancel-friend-request"), ];
+  const obj1 = { variant: "secondary", text: null };
+  const intl4 = require(1236) /* getSystemLocale */.intl;
+  obj1[1] = intl4.string(require(1236) /* getSystemLocale */.t["eN6+rI"]);
+  items[1] = callback(require(4533) /* getAlertModalItemKey */.AlertActionButton, obj1, "nevermind");
+  obj[0] = items;
+  obj[2] = callback2(require(4533) /* getAlertModalItemKey */.AlertActions, obj);
+  return callback(require(4533) /* getAlertModalItemKey */.AlertModal, obj);
 };

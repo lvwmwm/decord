@@ -1,51 +1,35 @@
-// Module ID: 8100
-// Function ID: 64288
+// Module ID: 8124
+// Function ID: 8125
 // Name: nativeEventEmitter
-// Dependencies: [6, 7, 27, 621, 682, 2]
+// Dependencies: [17, 644, 705, 2]
 
-// Module 8100 (nativeEventEmitter)
-import _classCallCheck from "_classCallCheck";
-import _defineProperties from "_defineProperties";
+// Module 8124 (nativeEventEmitter)
 import get_ActivityIndicator from "get ActivityIndicator";
 import keys from "keys";
 
-const require = arg1;
-keys = keys.create(() => ({ isMuted: false }));
-const nativeEventEmitter = new get_ActivityIndicator.NativeEventEmitter(get_ActivityIndicator.NativeModules.MediaPlayerManager);
-let tmp5 = (() => {
-  class MediaPlayerMuteManager {
-    constructor() {
-      tmp = outer1_2(this, MediaPlayerMuteManager);
-      this.muteSubscription = undefined;
-      return;
-    }
+let NativeEventEmitter;
+let NativeModules;
+({ NativeEventEmitter, NativeModules } = get_ActivityIndicator);
+const obj = keys.create(() => ({ isMuted: false }));
+const nativeEventEmitter = new NativeEventEmitter(NativeModules.MediaPlayerManager);
+class MediaPlayerMuteManager {
+}
+const prototype = MediaPlayerMuteManager.prototype;
+prototype["initialize"] = function initialize() {
+  this.muteSubscription = nativeEventEmitter.addListener("MediaPlayerMuteStateChanged", (isMuted) => {
+    isMuted = isMuted.isMuted;
+    isMuted(table[2]).batchUpdates(() => {
+      outer1_2.setState({ isMuted });
+    });
+  });
+};
+prototype["terminate"] = function terminate() {
+  const muteSubscription = this.muteSubscription;
+  if (muteSubscription != null) {
+    muteSubscription.remove();
   }
-  let obj = {
-    key: "initialize",
-    value() {
-      this.muteSubscription = outer1_5.addListener("MediaPlayerMuteStateChanged", (isMuted) => {
-        isMuted = isMuted.isMuted;
-        MediaPlayerMuteManager(outer2_1[4]).batchUpdates(() => {
-          outer3_4.setState({ isMuted });
-        });
-      });
-    }
-  };
-  const items = [obj, ];
-  obj = {
-    key: "terminate",
-    value() {
-      const muteSubscription = this.muteSubscription;
-      if (null != muteSubscription) {
-        muteSubscription.remove();
-      }
-    }
-  };
-  items[1] = obj;
-  return callback(MediaPlayerMuteManager, items);
-})();
-tmp5 = new tmp5();
-const result = require("get ActivityIndicator").fileFinishedImporting("modules/media_viewer/native/MediaPlayerMuteManager.tsx");
+};
+const result = require("batchUpdates").fileFinishedImporting("modules/media_viewer/native/MediaPlayerMuteManager.tsx");
 
-export default tmp5;
-export const useMediaPlayerMutedStore = keys;
+export default Object.create(MediaPlayerMuteManager.prototype);
+export const useMediaPlayerMutedStore = obj;

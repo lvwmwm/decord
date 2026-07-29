@@ -1,18 +1,18 @@
-// Module ID: 10388
-// Function ID: 80052
+// Module ID: 10412
+// Function ID: 10413
 // Name: setPushToTalkState
-// Dependencies: [4212, 4226, 686, 2]
+// Dependencies: [4236, 4250, 709, 2]
 // Exports: setPushToTalkState
 
-// Module 10388 (setPushToTalkState)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 10412 (setPushToTalkState)
+import _detectH265HardwareDecode from "_detectH265HardwareDecode";
 import { MediaEngineContextTypes } from "DesktopSources";
 
 const result = require("dispatcher").fileFinishedImporting("modules/media_engine/MediaEngineActionCreators.tsx");
 
 export const setPushToTalkState = function setPushToTalkState(isActive, arg1) {
-  let flag = arg1;
   const importDefault = isActive;
+  let flag = arg1;
   if (arg1 === undefined) {
     flag = false;
   }

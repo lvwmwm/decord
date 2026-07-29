@@ -1,12 +1,12 @@
-// Module ID: 8887
-// Function ID: 70199
+// Module ID: 8911
+// Function ID: 8912
 // Name: useIsSecureFramesUIEnabled
-// Dependencies: [1348, 4237, 8870, 566, 2]
+// Dependencies: [1372, 4261, 8894, 589, 2]
 // Exports: useIsSecureFramesUIEnabled
 
-// Module 8887 (useIsSecureFramesUIEnabled)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_3 from "_isNativeReflectConstruct";
+// Module 8911 (useIsSecureFramesUIEnabled)
+import ensureGuildLoaded from "ensureGuildLoaded";
+import createRTCConnection from "createRTCConnection";
 import { END_TO_END_ENCRYPTION_DISABLED as closure_4 } from "SECURE_FRAMES_LINKING_BOTTOM_SHEET_KEY";
 
 const require = arg1;
@@ -14,16 +14,12 @@ const result = require("SECURE_FRAMES_LINKING_BOTTOM_SHEET_KEY").fileFinishedImp
 
 export const useIsSecureFramesUIEnabled = function useIsSecureFramesUIEnabled(channelId) {
   channelId = channelId.channelId;
-  let items = [closure_3, _isNativeReflectConstruct];
-  let items1 = [channelId];
-  return channelId(566).useStateFromStores(items, () => {
+  let items = [createRTCConnection, ensureGuildLoaded];
+  const items1 = [channelId];
+  return channelId(589).useStateFromStores(items, () => {
     let obj;
     let obj2;
-    let items = [outer1_3, outer1_2];
-    if (items === undefined) {
-      const items1 = [outer1_3, outer1_2];
-      items = items1;
-    }
+    const items = [outer1_3, outer1_2];
     [obj, obj2] = items;
     let flag = false;
     if (null != channelId) {
@@ -36,14 +32,14 @@ export const useIsSecureFramesUIEnabled = function useIsSecureFramesUIEnabled(ch
           if (!channel.isGuildStageVoice()) {
             const secureFramesState = obj.getSecureFramesState();
             let version;
-            if (null != secureFramesState) {
+            if (secureFramesState != null) {
               version = secureFramesState.version;
             }
-            let tmp6 = null != version;
-            if (tmp6) {
-              tmp6 = version !== outer1_4;
+            let tmp4 = null != version;
+            if (tmp4) {
+              tmp4 = version !== outer1_4;
             }
-            flag = tmp6;
+            flag = tmp4;
           }
         }
       }

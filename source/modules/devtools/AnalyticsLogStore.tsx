@@ -1,113 +1,71 @@
-// Module ID: 13440
-// Function ID: 102964
-// Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 1194, 5985, 490, 491, 566, 686, 2]
+// Module ID: 13463
+// Function ID: 13464
+// Name: initialize
+// Dependencies: [1218, 6004, 513, 514, 589, 709, 2]
 
-// Module 13440 (_isNativeReflectConstruct)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import extractId from "extractId";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
-import closure_7 from "_isNativeReflectConstruct";
-import closure_8 from "_isNativeReflectConstruct";
+// Module 13463 (initialize)
+import fetchFingerprint from "fetchFingerprint";
+import init from "init";
+import { Store } from "initialize";
 
 const require = arg1;
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
-  }
-  const result = _isNativeReflectConstruct();
+let c4 = 0;
+let closure_5 = [];
+let c6 = 0;
+let closure_7 = [];
+let c8 = false;
+class AnalyticsLogStore extends Store {
 }
-function resolveFingerprint(arg0) {
-  if (null != arg0) {
-    let extractIdResult = require(490) /* extractId */.extractId(arg0);
-    const obj = require(490) /* extractId */;
-  } else {
-    extractIdResult = id.getId();
-  }
-  return extractIdResult;
-}
-let c9 = 0;
-let closure_10 = [];
-let c11 = 0;
-let closure_12 = [];
-let c13 = false;
-let tmp2 = ((Store) => {
-  class AnalyticsLogStore {
-    constructor() {
-      self = this;
-      tmp = outer1_2(this, AnalyticsLogStore);
-      obj = outer1_5(AnalyticsLogStore);
-      tmp2 = outer1_4;
-      if (outer1_14()) {
-        tmp6 = globalThis;
-        _Reflect = Reflect;
-        tmp7 = outer1_5;
-        tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, outer1_5(self).constructor);
+const prototype = AnalyticsLogStore.prototype;
+prototype["initialize"] = function initialize() {
+  this.waitFor(fetchFingerprint, init);
+};
+Object.defineProperty(prototype, "loggedEvents", {
+  get: function loggedEvents() {
+    return closure_5;
+  },
+  set: undefined
+});
+Object.defineProperty(prototype, "loggedEventsVersion", {
+  get: function loggedEventsVersion() {
+    return c6;
+  },
+  set: undefined
+});
+Object.defineProperty(prototype, "loggedTriggers", {
+  get: function loggedTriggers() {
+    return closure_7;
+  },
+  set: undefined
+});
+Object.defineProperty(prototype, "trackTriggers", {
+  get: function trackTriggers() {
+    return c8;
+  },
+  set: undefined
+});
+AnalyticsLogStore.displayName = "AnalyticsLogStore";
+const analyticsLogStore = new AnalyticsLogStore(require("dispatcher"), {
+  TRACK: function handleTrack(fingerprint) {
+    fingerprint = fingerprint.fingerprint;
+    if (init.isDeveloper) {
+      const obj = { key: null, event: null, properties: null, fingerprint: null, timestamp: null };
+      let closure_4 = str + 1;
+      obj[0] = +closure_4.toString();
+      obj[1] = tmp;
+      obj[2] = tmp2;
+      if (null != fingerprint) {
+        let extractIdResult = require(513) /* extractId */.extractId(fingerprint);
+        const obj2 = require(513) /* extractId */;
       } else {
-        tmp3 = arguments;
-        tmp4 = arguments;
-        constructResult = obj(...arguments);
+        extractIdResult = id.getId();
       }
-      return tmp2(self, constructResult);
-    }
-  }
-  callback2(AnalyticsLogStore, Store);
-  let obj = {
-    key: "initialize",
-    value() {
-      this.waitFor(outer1_7, outer1_8);
-    }
-  };
-  const items = [obj, , , , ];
-  obj = {
-    key: "loggedEvents",
-    get() {
-      return outer1_10;
-    }
-  };
-  items[1] = obj;
-  obj = {
-    key: "loggedEventsVersion",
-    get() {
-      return outer1_11;
-    }
-  };
-  items[2] = obj;
-  items[3] = {
-    key: "loggedTriggers",
-    get() {
-      return outer1_12;
-    }
-  };
-  items[4] = {
-    key: "trackTriggers",
-    get() {
-      return outer1_13;
-    }
-  };
-  return callback(AnalyticsLogStore, items);
-})(require("initialize").Store);
-tmp2.displayName = "AnalyticsLogStore";
-tmp2 = new tmp2(require("dispatcher"), {
-  TRACK: function handleTrack(arg0) {
-    if (closure_8.isDeveloper) {
-      const obj = {};
-      let closure_9 = str + 1;
-      obj.key = +closure_9.toString();
-      obj.event = tmp;
-      obj.properties = tmp2;
-      obj.fingerprint = resolveFingerprint(tmp3);
+      obj[3] = extractIdResult;
       const _Date = Date;
       const date = new Date();
-      obj.timestamp = date;
+      obj[4] = date;
       arr = arr.push(obj);
-      closure_11 = closure_11 + 1;
+      closure_6 = closure_6 + 1;
       if (arr.length > 500) {
         const _Math = Math;
         arr = arr.slice(-Math.floor(250));
@@ -121,22 +79,28 @@ tmp2 = new tmp2(require("dispatcher"), {
     let experimentId;
     let exposureType;
     let previouslyTracked;
-    let isDeveloper = closure_8.isDeveloper;
+    let isDeveloper = init.isDeveloper;
     ({ experimentId, descriptor, exposureType, excluded, location: _location, previouslyTracked } = arg0);
     if (isDeveloper) {
-      isDeveloper = c13;
+      isDeveloper = c8;
     }
     if (isDeveloper) {
       const items = [];
+      const obj = { key: null, experimentId: null, descriptor: null, exposureType: null, excluded: null, location: null, previouslyTracked: null, timestamp: null };
       const arraySpreadResult = HermesBuiltin.arraySpread(items, 0);
-      const obj = { key: require(491) /* v1 */.v4(), experimentId, descriptor, exposureType, excluded, location: _location, previouslyTracked };
+      obj[0] = require(514) /* v1 */.v4();
+      obj[1] = experimentId;
+      obj[2] = descriptor;
+      obj[3] = exposureType;
+      obj[4] = excluded;
+      obj[5] = _location;
+      obj[6] = previouslyTracked;
       const _Date = Date;
       const date = new Date();
-      obj.timestamp = date;
+      obj[7] = date;
       items[arraySpreadResult] = obj;
-      const sum = arraySpreadResult + 1;
       isDeveloper = items.length > 500;
-      const obj2 = require(491) /* v1 */;
+      const obj2 = require(514) /* v1 */;
     }
     if (isDeveloper) {
       items.shift();
@@ -146,11 +110,11 @@ tmp2 = new tmp2(require("dispatcher"), {
     enabled = enabled.enabled;
   },
   ANALYTICS_LOG_CLEAR: function handleAnalyticsLogClear() {
-    let closure_10 = [];
-    closure_11 = closure_11 + 1;
-    let closure_12 = [];
+    let closure_5 = [];
+    closure_6 = closure_6 + 1;
+    let closure_7 = [];
   }
 });
-let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/devtools/AnalyticsLogStore.tsx");
+const result = require("extractId").fileFinishedImporting("modules/devtools/AnalyticsLogStore.tsx");
 
-export default tmp2;
+export default analyticsLogStore;

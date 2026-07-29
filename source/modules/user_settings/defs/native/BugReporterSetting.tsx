@@ -1,30 +1,29 @@
-// Module ID: 14513
-// Function ID: 110754
+// Module ID: 14538
+// Function ID: 14539
 // Name: useBugReporterExperimentSettingPredicate
-// Dependencies: [10323, 4372, 10324, 1935, 10338, 10099, 1212, 14514, 2]
+// Dependencies: [10344, 4395, 10345, 1959, 10359, 10120, 1236, 14539, 2]
 // Exports: useBugReporterExperimentSettingPredicate
 
-// Module 14513 (useBugReporterExperimentSettingPredicate)
+// Module 14538 (useBugReporterExperimentSettingPredicate)
 import zustandStore from "zustandStore";
 import createToggle from "createToggle";
 
 const require = arg1;
 function useBugReporterExperimentSettingPredicate() {
-  return importDefault(10338).useConfig({ location: "native-settings" }).hasBugReporterAccess;
+  return importDefault(10359).useConfig({ location: "native-settings" }).hasBugReporterAccess;
 }
 createToggle = {
   useTitle() {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(require(1212) /* getSystemLocale */.t["/tZh0A"]);
+    const intl = require(1236) /* getSystemLocale */.intl;
+    return intl.string(require(1236) /* getSystemLocale */.t["/tZh0A"]);
   },
   parent: null,
   IconComponent: require("BugIcon").BugIcon,
   onPress: function handleBugReporterSettingPress() {
-    if (!store.getField("isReportOpen")) {
-      const obj = { isReportOpen: true };
-      store.setState(obj);
-      importDefault(4372).pushLazy(require(1935) /* maybeLoadBundle */(10324, dependencyMap.paths));
-      const obj2 = importDefault(4372);
+    if (!field.getField("isReportOpen")) {
+      field.setState({ isReportOpen: true });
+      importDefault(4395).pushLazy(require(1959) /* asyncRequireImpl */(10345, dependencyMap.paths));
+      const obj2 = importDefault(4395);
     }
   },
   withArrow: true,

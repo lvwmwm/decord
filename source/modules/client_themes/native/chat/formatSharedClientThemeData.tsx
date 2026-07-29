@@ -1,10 +1,10 @@
-// Module ID: 7980
-// Function ID: 63339
+// Module ID: 8005
+// Function ID: 8006
 // Name: formatSharedClientThemeData
-// Dependencies: [27, 6607, 1212, 2397, 2]
+// Dependencies: [17, 6628, 1236, 2421, 2]
 // Exports: formatSharedClientThemeData
 
-// Module 7980 (formatSharedClientThemeData)
+// Module 8005 (formatSharedClientThemeData)
 import { Image } from "get ActivityIndicator";
 
 const result = require("getSystemLocale").fileFinishedImporting("modules/client_themes/native/chat/formatSharedClientThemeData.tsx");
@@ -12,23 +12,22 @@ const result = require("getSystemLocale").fileFinishedImporting("modules/client_
 export const formatSharedClientThemeData = function formatSharedClientThemeData(message, ensureAvatarSourceResult, nick) {
   const sharedClientTheme = message.sharedClientTheme;
   if (undefined !== sharedClientTheme) {
-    let obj = {};
-    ({ colors: obj.colors, gradient_angle: obj.gradientAngle } = sharedClientTheme);
-    obj.createdBy = nick;
+    const obj = { colors: null, gradientAngle: null, createdBy: null, createdByAvatarUrl: null, nitroWheelIconUrl: null, previewLabel: null, previewHeading: null, createdByLabel: null };
+    ({ colors: obj[0], gradient_angle: obj[1] } = sharedClientTheme);
+    obj[2] = nick;
     let str2 = "";
     if (undefined !== ensureAvatarSourceResult.uri) {
       str2 = ensureAvatarSourceResult.uri;
     }
-    obj.createdByAvatarUrl = str2;
-    obj.nitroWheelIconUrl = Image.resolveAssetSource(importDefault(6607)).uri;
-    const intl = require(1212) /* getSystemLocale */.intl;
-    obj.previewLabel = intl.string(require(1212) /* getSystemLocale */.t.SKNnqq);
-    const intl2 = require(1212) /* getSystemLocale */.intl;
-    obj.previewHeading = intl2.string(importDefault(2397).yl1iMm);
-    const intl3 = require(1212) /* getSystemLocale */.intl;
-    obj = { username: "__USERNAME__" };
+    obj[3] = str2;
+    obj[4] = Image.resolveAssetSource(importDefault(6628)).uri;
+    const intl = require(1236) /* getSystemLocale */.intl;
+    obj[5] = intl.string(require(1236) /* getSystemLocale */.t.SKNnqq);
+    const intl2 = require(1236) /* getSystemLocale */.intl;
+    obj[6] = intl2.string(importDefault(2421).yl1iMm);
+    const intl3 = require(1236) /* getSystemLocale */.intl;
     const _HermesInternal = HermesInternal;
-    obj.createdByLabel = "" + intl3.format(importDefault(2397).fQPSEf, obj);
+    obj[7] = "" + intl3.format(importDefault(2421).fQPSEf, { username: "__USERNAME__" });
     return obj;
   }
 };

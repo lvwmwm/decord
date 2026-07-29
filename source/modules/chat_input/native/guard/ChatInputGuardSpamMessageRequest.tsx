@@ -1,80 +1,83 @@
-// Module ID: 11517
-// Function ID: 89512
-// Dependencies: [31, 1850, 33, 1456, 566, 11518, 11510, 3866, 1212, 9148, 11516, 4173, 2]
+// Module ID: 11541
+// Function ID: 11542
+// Dependencies: [19, 1874, 21, 1480, 589, 11542, 11534, 3890, 1236, 9172, 11540, 4197, 2]
 
-// Module 11517
-import importAllResult from "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 11541
+import importAllResult from "noop";
+import mergeGuildAvatar from "mergeGuildAvatar";
 import { jsx } from "jsxProd";
 
 const require = arg1;
+let c3 = importAllResult;
 const memoResult = importAllResult.memo(function ChatInputGuardSpamMessageRequest(channel) {
-  let closure_3;
-  let _isNativeReflectConstruct;
+  let c3;
+  let c4;
   let isOptimisticRejected;
   let isRejectLoading;
   let isUserProfileLoading;
   channel = channel.channel;
-  let obj = channel(1456);
-  const navigation = obj.useNavigation();
-  const items = [_isNativeReflectConstruct];
-  const stateFromStores = channel(566).useStateFromStores(items, () => outer1_4.getUser(channel.getRecipientId()));
-  const obj2 = channel(566);
-  const dependencyMap = channel(11518).useLongestChannelMessageBeforeReply(channel.id, channel.getRecipientId());
+  let navigation;
+  let dependencyMap;
+  c4 = undefined;
+  let obj = channel(1480);
+  navigation = obj.useNavigation();
+  const items = [c4];
+  const stateFromStores = channel(589).useStateFromStores(items, () => _undefined2.getUser(channel.getRecipientId()));
+  const obj2 = channel(589);
+  dependencyMap = channel(11542).useLongestChannelMessageBeforeReply(channel.id, channel.getRecipientId());
   const items1 = [navigation];
   const callback = importAllResult.useCallback(() => {
     navigation.pop();
   }, items1);
-  const obj3 = channel(11518);
+  const obj3 = channel(11542);
   obj = {
     user: stateFromStores,
     onError() {
-      let obj = navigation(3866);
-      obj = { key: "MESSAGE_REQUEST_REQUEST_ERROR_ALERT_TITLE" };
-      const intl = channel(1212).intl;
-      obj.content = intl.string(channel(1212).t["EDYbS+"]);
-      obj.icon = navigation(9148);
+      let obj = navigation(3890);
+      obj = { key: "MESSAGE_REQUEST_REQUEST_ERROR_ALERT_TITLE", content: null, icon: null };
+      const intl = channel(1236).intl;
+      obj[1] = intl.string(channel(1236).t["EDYbS+"]);
+      obj[2] = navigation(9172);
       obj.open(obj);
     },
     onRejectSuccess: callback
   };
-  const messageRequestActions = channel(11510).useMessageRequestActions(obj);
-  ({ rejectMessageRequest: closure_3, isRejectLoading, isUserProfileLoading, isOptimisticRejected, markAsNotSpam: _isNativeReflectConstruct } = messageRequestActions);
-  let tmp5 = isRejectLoading;
+  const messageRequestActions = channel(11534).useMessageRequestActions(obj);
+  ({ rejectMessageRequest: c3, isRejectLoading, isUserProfileLoading, isOptimisticRejected, markAsNotSpam: c4 } = messageRequestActions);
+  let tmp7 = isRejectLoading;
   if (!isRejectLoading) {
-    tmp5 = isUserProfileLoading;
+    tmp7 = isUserProfileLoading;
   }
-  if (!tmp5) {
-    tmp5 = isOptimisticRejected;
+  if (!tmp7) {
+    tmp7 = isOptimisticRejected;
   }
-  obj = { type: "button-action" };
-  const obj4 = channel(11510);
-  const tmp6 = jsx;
-  let intl = channel(1212).intl;
-  obj.message = intl.string(channel(1212).t.fS08qB);
-  const intl2 = channel(1212).intl;
-  obj.subtext = intl2.string(channel(1212).t["8U5OXE"]);
-  const intl3 = channel(1212).intl;
-  obj.buttonPrimaryText = intl3.string(channel(1212).t.cpT0Cq);
-  obj.buttonPrimaryOnPress = function buttonPrimaryOnPress(stopPropagation) {
+  obj = { type: "button-action", message: null, subtext: null, buttonPrimaryText: null, buttonPrimaryOnPress: null, buttonPrimaryDisabled: null, buttonPrimaryLoading: null, buttonPrimaryVariant: "destructive", buttonSecondaryText: null, buttonSecondaryOnPress: null, buttonSecondaryDisabled: null, buttonSecondaryLoading: null };
+  const obj4 = channel(11534);
+  const tmp8 = jsx;
+  let intl = tmp(1236).intl;
+  obj[1] = intl.string(channel(1236).t.fS08qB);
+  const intl2 = tmp(1236).intl;
+  obj[2] = intl2.string(channel(1236).t["8U5OXE"]);
+  const intl3 = tmp(1236).intl;
+  obj[3] = intl3.string(channel(1236).t.cpT0Cq);
+  obj[4] = function buttonPrimaryOnPress(stopPropagation) {
     stopPropagation.stopPropagation();
-    callback(channel.id);
+    _undefined(channel.id);
   };
-  obj.buttonPrimaryDisabled = tmp5;
+  obj[5] = tmp7;
   if (!isRejectLoading) {
     isRejectLoading = isOptimisticRejected;
   }
-  obj.buttonPrimaryLoading = isRejectLoading;
-  obj.buttonPrimaryVariant = "destructive";
-  const intl4 = channel(1212).intl;
-  obj.buttonSecondaryText = intl4.string(channel(1212).t.olZgw5);
-  obj.buttonSecondaryOnPress = function buttonSecondaryOnPress(stopPropagation) {
+  obj[6] = isRejectLoading;
+  const intl4 = tmp(1236).intl;
+  obj[8] = intl4.string(channel(1236).t.olZgw5);
+  obj[9] = function buttonSecondaryOnPress(stopPropagation) {
     stopPropagation.stopPropagation();
-    callback2(channel, closure_2, () => channel(table[11]).transitionToChannel(outer1_0.id, { navigationReplace: true }));
+    _undefined2(channel, closure_2, () => outer1_0(outer1_2[11]).transitionToChannel(id.id, { navigationReplace: true }));
   };
-  obj.buttonSecondaryDisabled = tmp5;
-  obj.buttonSecondaryLoading = isUserProfileLoading;
-  return tmp6(navigation(11516), obj);
+  obj[10] = tmp7;
+  obj[11] = isUserProfileLoading;
+  return tmp8(navigation(11540), obj);
 });
 const result = require("jsxProd").fileFinishedImporting("modules/chat_input/native/guard/ChatInputGuardSpamMessageRequest.tsx");
 

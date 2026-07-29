@@ -1,37 +1,51 @@
-// Module ID: 9031
-// Function ID: 70956
-// Name: isVideoMode
-// Dependencies: [4184, 1348, 4212, 1907, 4181, 566, 2]
-// Exports: default
+// Module ID: 9055
+// Function ID: 9056
+// Name: useIsVideoMode
+// Dependencies: [4208, 1372, 4236, 1931, 4205, 589, 2]
+// Exports: default, isVideoMode
 
-// Module 9031 (isVideoMode)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_3 from "_isNativeReflectConstruct";
-import closure_4 from "_isNativeReflectConstruct";
-import closure_5 from "_isNativeReflectConstruct";
-import closure_6 from "_isNativeReflectConstruct";
+// Module 9055 (useIsVideoMode)
+import reset from "reset";
+import ensureGuildLoaded from "ensureGuildLoaded";
+import _detectH265HardwareDecode from "_detectH265HardwareDecode";
+import handleConnectionOpen from "handleConnectionOpen";
+import updateVoiceState from "updateVoiceState";
 
 const require = arg1;
-function isVideoMode(outer1_9, outer1_11, outer1_8, outer1_12, outer1_10) {
-  let obj = outer1_9;
-  let obj2 = outer1_11;
-  let obj3 = outer1_8;
-  let obj4 = outer1_12;
-  let obj5 = outer1_10;
-  if (outer1_9 === undefined) {
-    obj = closure_3;
+const result = require("_detectH265HardwareDecode").fileFinishedImporting("modules/video_calls/native/useIsVideoMode.tsx");
+
+export default function useIsVideoMode() {
+  const items = [ensureGuildLoaded, handleConnectionOpen, _detectH265HardwareDecode, updateVoiceState, reset];
+  return require(589) /* initialize */.useStateFromStores(items, () => {
+    channel = channel.getChannel(voiceChannelId.getVoiceChannelId());
+    let tmp2 = null != channel;
+    if (tmp2) {
+      tmp2 = reset.getAllActiveStreams().length > 0 || updateVoiceState.hasVideo(channel.id) || _detectH265HardwareDecode.isVideoEnabled();
+      const tmp3 = reset.getAllActiveStreams().length > 0 || updateVoiceState.hasVideo(channel.id) || _detectH265HardwareDecode.isVideoEnabled();
+    }
+    return tmp2;
+  });
+};
+export const isVideoMode = function isVideoMode(closure_9, closure_11, closure_8, closure_12, closure_10) {
+  let obj = closure_9;
+  if (closure_9 === undefined) {
+    obj = ensureGuildLoaded;
   }
-  if (obj2 === undefined) {
-    obj2 = closure_5;
+  let obj2 = closure_11;
+  if (closure_11 === undefined) {
+    obj2 = handleConnectionOpen;
   }
-  if (obj3 === undefined) {
-    obj3 = _isNativeReflectConstruct;
+  let obj3 = closure_8;
+  if (closure_8 === undefined) {
+    obj3 = reset;
   }
-  if (obj4 === undefined) {
-    obj4 = closure_6;
+  let obj4 = closure_12;
+  if (closure_12 === undefined) {
+    obj4 = updateVoiceState;
   }
-  if (obj5 === undefined) {
-    obj5 = closure_4;
+  let obj5 = closure_10;
+  if (closure_10 === undefined) {
+    obj5 = _detectH265HardwareDecode;
   }
   const channel = obj.getChannel(obj2.getVoiceChannelId());
   let tmp2 = null != channel;
@@ -40,11 +54,4 @@ function isVideoMode(outer1_9, outer1_11, outer1_8, outer1_12, outer1_10) {
     const tmp3 = obj3.getAllActiveStreams().length > 0 || obj4.hasVideo(channel.id) || obj5.isVideoEnabled();
   }
   return tmp2;
-}
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/video_calls/native/useIsVideoMode.tsx");
-
-export default function useIsVideoMode() {
-  const items = [closure_3, closure_5, closure_4, closure_6, _isNativeReflectConstruct];
-  return require(566) /* initialize */.useStateFromStores(items, () => outer1_7(outer1_3, outer1_5, outer1_2, outer1_6, outer1_4));
 };
-export { isVideoMode };

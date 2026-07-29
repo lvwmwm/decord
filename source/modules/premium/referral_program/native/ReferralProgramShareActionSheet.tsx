@@ -1,68 +1,73 @@
-// Module ID: 12453
-// Function ID: 96478
+// Module ID: 12475
+// Function ID: 12476
 // Name: mapToUser
-// Dependencies: [5, 57, 31, 27, 1850, 6192, 653, 33, 4165, 689, 566, 12454, 44, 1327, 8793, 12455, 1212, 3878, 12456, 5497, 5517, 675, 6193, 4133, 12457, 1935, 3865, 5220, 4161, 5119, 12458, 12459, 8794, 5619, 4578, 5221, 8265, 8796, 2]
+// Dependencies: [5, 32, 19, 17, 1874, 6212, 676, 21, 4189, 712, 589, 12476, 38, 1351, 8817, 12477, 1236, 3902, 12478, 5515, 5535, 698, 6213, 4157, 12479, 1959, 3889, 5242, 4185, 5141, 12480, 12481, 8818, 5637, 4600, 5243, 8289, 8820, 2]
 // Exports: default
 
-// Module 12453 (mapToUser)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import _slicedToArray from "_slicedToArray";
-import metadata from "metadata";
-import { View } from "RedesignBottomSheetTitleHeaderBase";
-import closure_7 from "_isNativeReflectConstruct";
-import closure_8 from "_isNativeReflectConstruct";
+// Module 12475 (mapToUser)
+import emitChanges from "emitChanges";
+import UserFlashListActions from "UserFlashListActions";
+import context from "context";
+import { View } from "AccessibilityAnnouncer";
+import mergeGuildAvatar from "mergeGuildAvatar";
+import closure_8 from "emitChanges";
 import { AnalyticEvents } from "ME";
-import jsxProd from "ActivityIndicator";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import jsxProd from "expandEventProperties";
+import createCacheKey from "createCacheKey";
 
-let closure_10;
-let closure_11;
+let c10;
+let unpackModuleId;
 const require = arg1;
 function mapToUser(arg0) {
   const items = [arg0, user.getUser(arg0)];
   return items;
 }
-({ jsx: closure_10, jsxs: closure_11 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16, paddingBottom: require("_createForOfIteratorHelperLoose").space.PX_24 };
-_createForOfIteratorHelperLoose.searchBarContainer = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.searchBarRowContainer = { paddingTop: require("_createForOfIteratorHelperLoose").space.PX_8 };
-let obj1 = { paddingTop: require("_createForOfIteratorHelperLoose").space.PX_8 };
-_createForOfIteratorHelperLoose.header = { height: require("_createForOfIteratorHelperLoose").space.PX_64 };
-let obj2 = { height: require("_createForOfIteratorHelperLoose").space.PX_64 };
-_createForOfIteratorHelperLoose.subtitle = { textAlign: "center", paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16, paddingBottom: require("_createForOfIteratorHelperLoose").space.PX_8 };
-_createForOfIteratorHelperLoose.centeredContainer = { alignItems: "center" };
-let obj4 = { height: 200, width: 180, marginVertical: require("_createForOfIteratorHelperLoose").space.PX_16 };
-_createForOfIteratorHelperLoose.errorImage = obj4;
-let obj5 = { height: 200, width: 240, marginTop: require("_createForOfIteratorHelperLoose").space.PX_16 };
-_createForOfIteratorHelperLoose.emptyImage = obj5;
-let obj3 = { textAlign: "center", paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16, paddingBottom: require("_createForOfIteratorHelperLoose").space.PX_8 };
-_createForOfIteratorHelperLoose.footer = { paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16, paddingBottom: require("_createForOfIteratorHelperLoose").space.PX_48 };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-let obj6 = { paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16, paddingBottom: require("_createForOfIteratorHelperLoose").space.PX_48 };
-const result = require("result").fileFinishedImporting("modules/premium/referral_program/native/ReferralProgramShareActionSheet.tsx");
+({ jsx: c10, jsxs: unpackModuleId } = jsxProd);
+createCacheKey = { searchBarContainer: null, searchBarRowContainer: null, header: null, subtitle: null, centeredContainer: null, errorImage: null, emptyImage: null, footer: null };
+createCacheKey = { paddingHorizontal: require("Themes").space.PX_16, paddingBottom: require("Themes").space.PX_24 };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { paddingTop: require("Themes").space.PX_8 };
+let obj1 = { paddingTop: require("Themes").space.PX_8 };
+createCacheKey[2] = { height: require("Themes").space.PX_64 };
+let obj2 = { height: require("Themes").space.PX_64 };
+createCacheKey[3] = { textAlign: "center", paddingHorizontal: require("Themes").space.PX_16, paddingBottom: require("Themes").space.PX_8 };
+createCacheKey[4] = { alignItems: "center" };
+let obj3 = { textAlign: "center", paddingHorizontal: require("Themes").space.PX_16, paddingBottom: require("Themes").space.PX_8 };
+createCacheKey[5] = { height: 200, width: 180, marginVertical: require("Themes").space.PX_16 };
+let obj4 = { height: 200, width: 180, marginVertical: require("Themes").space.PX_16 };
+createCacheKey[6] = { height: 200, width: 240, marginTop: require("Themes").space.PX_16 };
+let obj5 = { height: 200, width: 240, marginTop: require("Themes").space.PX_16 };
+createCacheKey[7] = { paddingHorizontal: require("Themes").space.PX_16, paddingBottom: require("Themes").space.PX_48 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let obj6 = { paddingHorizontal: require("Themes").space.PX_16, paddingBottom: require("Themes").space.PX_48 };
+const result = require("noop").fileFinishedImporting("modules/premium/referral_program/native/ReferralProgramShareActionSheet.tsx");
 
 export default function ReferralProgramShareActionSheet() {
-  let _slicedToArray;
+  let UserFlashListActions;
   let headerSize;
   let renderHeader;
+  let str;
+  let tmp11;
   let tmp7;
   let tmp = memo2();
+  let obj = memo;
   const ref = memo.useRef(null);
-  let obj = ref(first[10]);
+  let _require = ref;
+  let obj1 = _require(first[10]);
   let items = [fetchUsers];
-  const stateFromStores = obj.useStateFromStores(items, () => fetchUsers.getReferralsRemaining());
-  const tmp4 = callback(memo.useState(""), 2);
-  const tmp5 = callback(memo.useState([]), 2);
-  first = tmp5[0];
-  let _isNativeReflectConstruct = tmp5[1];
-  const arr3 = stateFromStores(first[11])(tmp4[0], 400);
-  [tmp7, _slicedToArray] = callback(memo.useState(false), 2);
+  const stateFromStores = obj1.useStateFromStores(items, () => fetchUsers.getReferralsRemaining());
+  [str, tmp7] = callback2(memo.useState(""), 2);
+  const tmp8 = callback2(memo.useState([]), 2);
+  first = tmp8[0];
+  let callback = tmp8[1];
+  const arr3 = stateFromStores(first[11])(str, 400);
+  const tmp6 = callback2(memo.useState(""), 2);
+  [tmp11, UserFlashListActions] = callback2(memo.useState(false), 2);
   stateFromStores(first[12])(null != stateFromStores, "Referrals remaining should not be null");
   const items1 = [first];
   memo = memo.useMemo(() => {
     let mapped;
-    if (null != first) {
+    if (first != null) {
       mapped = first.map(callback);
     }
     return new Map(mapped);
@@ -72,22 +77,22 @@ export default function ReferralProgramShareActionSheet() {
     const found = Array.from(memo.values()).filter(ref(first[13]).isNotNullish);
     return found.map(stateFromStores(first[14]));
   }, items2);
-  const items3 = [tmp4[0]];
+  const items3 = [str];
   const layoutEffect = memo.useLayoutEffect(() => {
     const current = ref.current;
-    if (null != current) {
+    if (current != null) {
       current.scrollToTop(false);
     }
   }, items3);
-  let obj1 = ref(first[15]);
-  const referralProgramEligibleUsers = obj1.useReferralProgramEligibleUsers({ searchQuery: arr3, selectedUsers: memo, limit: 15 });
+  let obj2 = _require(first[15]);
+  const referralProgramEligibleUsers = obj2.useReferralProgramEligibleUsers({ searchQuery: arr3, selectedUsers: memo, limit: 15 });
   const eligibleUsers = referralProgramEligibleUsers.eligibleUsers;
   fetchUsers = referralProgramEligibleUsers.fetchUsers;
   const isFetching = referralProgramEligibleUsers.isFetching;
   const hasError = referralProgramEligibleUsers.hasError;
   const resendUsers = referralProgramEligibleUsers.resendUsers;
   const items4 = [first, resendUsers];
-  memo2 = memo.useMemo(() => first.filter((arg0) => !outer1_11.has(arg0)), items4);
+  memo2 = memo.useMemo(() => first.filter((arg0) => !set.has(arg0)), items4);
   const items5 = [isFetching, hasError, eligibleUsers];
   const memo3 = memo.useMemo(() => {
     let tmp = isFetching;
@@ -99,15 +104,15 @@ export default function ReferralProgramShareActionSheet() {
     }
     return tmp;
   }, items5);
-  let intl = ref(first[16]).intl;
-  const tmp6 = callback(memo.useState(false), 2);
+  let intl = _require(first[16]).intl;
+  const tmp10 = callback2(memo.useState(false), 2);
   callback = memo.useCallback((arg0) => {
     let closure_0 = arg0;
     callback((arr) => {
-      const index = arr.indexOf(user.id);
+      const index = arr.indexOf(id.id);
       const items = [...arr];
       if (-1 === index) {
-        items.push(user.id);
+        items.push(id.id);
       } else {
         items.splice(index, 1);
       }
@@ -122,7 +127,8 @@ export default function ReferralProgramShareActionSheet() {
       callback(user);
       const AccessibilityAnnouncer = ref(first[17]).AccessibilityAnnouncer;
       const intl = ref(first[16]).intl;
-      const obj = { text: tmp.text };
+      const obj = { text: null };
+      obj[0] = tmp.text;
       AccessibilityAnnouncer.announce(intl.formatToPlainString(ref(first[16]).t.srlxB8, obj));
     }
   }, items6);
@@ -131,24 +137,113 @@ export default function ReferralProgramShareActionSheet() {
     return items;
   }, items7);
   const items8 = [eligibleUsers, callback, first, resendUsers, stateFromStores, memo2];
-  const callback2 = memo.useCallback(() => ({ type: "section", props: { hideTitle: true } }), []);
+  callback2 = memo.useCallback(() => ({ type: "section", props: { hideTitle: true } }), []);
   const callback3 = memo.useCallback((arg0, row) => {
     let obj = ref(first[18]);
     obj = { eligibleUsers, row, selectedUserIds: first, resendUsers, referralsRemaining: stateFromStores, selectedNotResendUsers: memo2, onSelectUser: callback };
     return obj.buildReferralUserRow(obj);
   }, items8);
-  let stringResult = intl.string(ref(first[16]).t.DXgoi2);
+  let stringResult = intl.string(_require(first[16]).t.DXgoi2);
   const analyticsLocations = stateFromStores(first[19])(stateFromStores(first[20]).PREMIUM_MARKETING_REFERALL_PROGRAM_SHARE_MODAL).analyticsLocations;
+  _require = undefined;
+  _require = callback((arg0) => {
+    let closure_0 = arg0;
+    let c4 = 0;
+    let c5 = 0;
+    let c3 = 0;
+    return (function*(arg0) {
+      if (c5 === 2) {
+        c5 = 3;
+        HermesBuiltin.throwTypeError();
+      } else if (tmp6 === 3) {
+        if (arg0 === 1) {
+          throw arg1;
+        } else if (arg0 === 2) {
+          let obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
+        } else {
+          return { value: "HermesInternal", done: null };
+        }
+      } else {
+        try {
+          c5 = 2;
+          if (0 === v0) {
+            if (arg0 === 1) {
+              c5 = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              c5 = 3;
+              obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            } else {
+              let closure_2 = tmp3;
+              let closure_1 = tmp7;
+              closure_1 = undefined;
+              let c3 = 1;
+              v0(true);
+              let obj1 = { location_stack: null };
+              obj1[0] = outer1_14;
+              stateFromStores(first[21]).track(isFetching.REFERRAL_PROGRAM_SHARE_CTA_CLICKED, obj1);
+              const obj8 = stateFromStores(first[21]);
+              v0 = 2;
+              c5 = 1;
+              const obj2 = { value: null, done: false };
+              obj2[0] = lib(first[22]).createReferralTrials(lib.map((id) => id.id));
+              return obj2;
+            }
+          } else {
+            if (1 === tmp7) {
+              c3 = 0;
+              v0(false);
+              obj1 = lib(first[26]);
+              const intl = lib(first[16]).intl;
+              obj1.presentError(intl.string(lib(first[16]).t.R0RpRX));
+              c5 = 3;
+            } else if (arg0 === 1) {
+              c5 = 3;
+              throw arg1;
+            } else if (arg0 !== 2) {
+              closure_1 = arg1;
+              v0(false);
+              const obj3 = { selectedUsers: null, trialCreationResult: null };
+              obj3[0] = lib;
+              obj3[1] = closure_1;
+              stateFromStores(first[23]).openLazy(lib(first[25])(first[24], first.paths), "referral-program-share-action-sheet", obj3);
+              c3 = 0;
+              const obj6 = stateFromStores(first[23]);
+            }
+            c3 = 0;
+            c5 = 3;
+            obj = { value: null, done: true };
+            obj[0] = arg1;
+            return obj;
+          }
+        } catch (tmp18) {
+          if (tmp4 === c3) {
+            c5 = tmp2;
+            throw tmp18;
+          } else {
+            v0 = tmp;
+          }
+        }
+      }
+    })();
+  });
   const items9 = [analyticsLocations];
-  let closure_15 = memo.useCallback((() => {
-    // CreateGeneratorClosureLongIndex (0x67)
-    let closure_0 = callback(tmp);
-    return function() {
-      return callback(...arguments);
-    };
-  })(), items9);
+  let closure_15 = memo.useCallback(function() {
+    const self = this;
+    const apply = closure_0.apply;
+    if (typeof apply === "unknown") {
+      let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+    } else {
+      applyArgumentsResult = apply(self, arguments);
+    }
+    return applyArgumentsResult;
+  }, items9);
   const items10 = [stateFromStores];
-  obj = { style: tmp.header };
+  obj = { style: tmp.header, children: null };
   const memo5 = memo.useMemo(() => {
     if (0 === stateFromStores) {
       const intl2 = ref(first[16]).intl;
@@ -159,98 +254,102 @@ export default function ReferralProgramShareActionSheet() {
     }
     return stringResult;
   }, items10);
-  const items11 = [hasError(ref(first[27]).BottomSheetTitleHeader, { title: memo5 }), ];
+  const items11 = [hasError(_require(first[27]).BottomSheetTitleHeader, { title: memo5 }), ];
   obj = { variant: "text-xs/medium", color: "text-default", lineClamp: 2, style: tmp.subtitle, children: stringResult };
-  items11[1] = hasError(ref(first[28]).Text, obj);
-  obj.children = items11;
+  items11[1] = hasError(_require(first[28]).Text, obj);
+  obj[1] = items11;
   if (hasError) {
-    obj1 = { style: tmp.centeredContainer };
-    const obj2 = {};
-    const obj3 = { uri: stateFromStores(first[30]) };
-    obj2.source = obj3;
-    obj2.resizeMode = "contain";
-    obj2.style = tmp.errorImage;
-    const items12 = [hasError(stateFromStores(first[29]), obj2), , ];
-    const obj4 = { variant: "heading-xl/bold", style: tmp.subtitle };
-    const intl4 = ref(first[16]).intl;
-    obj4.children = intl4.string(ref(first[16]).t.a9HOKg);
-    items12[1] = hasError(ref(first[28]).Text, obj4);
-    const obj5 = { variant: "text-md/medium", color: "text-default", style: tmp.subtitle };
-    const intl5 = ref(first[16]).intl;
-    obj5.children = intl5.string(ref(first[16]).t.JjjeZb);
-    items12[2] = hasError(ref(first[28]).Text, obj5);
-    obj1.children = items12;
-    let tmp25 = resendUsers(memo1, obj1);
-    const tmp38 = stateFromStores(first[29]);
+    obj1 = { style: null, children: null };
+    obj1[0] = tmp.centeredContainer;
+    obj2 = { source: null, resizeMode: "contain", style: null };
+    let obj3 = { uri: null };
+    let tmp9Result = tmp9(tmp4[29]);
+    obj3[0] = tmp9(tmp4[30]);
+    obj2[0] = obj3;
+    obj2[2] = tmp.errorImage;
+    const items12 = [tmp29(tmp9Result, obj2), , ];
+    const obj4 = { variant: "heading-xl/bold", style: null, children: null };
+    obj4[1] = tmp.subtitle;
+    const intl4 = tmp3(tmp4[16]).intl;
+    obj4[2] = intl4.string(tmp3(tmp4[16]).t.a9HOKg);
+    items12[1] = tmp29(tmp3(tmp4[28]).Text, obj4);
+    const obj5 = { variant: "text-md/medium", color: "text-default", style: null, children: null };
+    obj5[2] = tmp.subtitle;
+    const intl5 = tmp3(tmp4[16]).intl;
+    obj5[3] = intl5.string(tmp3(tmp4[16]).t.JjjeZb);
+    items12[2] = tmp29(tmp3(tmp4[28]).Text, obj5);
+    obj1[1] = items12;
+    let tmp27Result = tmp27(tmp28, obj1);
   } else {
-    tmp25 = tmp23;
-    if (tmp24) {
-      const obj6 = { style: tmp.centeredContainer };
-      const obj7 = {};
-      const obj8 = { uri: stateFromStores(first[31]) };
-      obj7.source = obj8;
-      obj7.resizeMode = "contain";
-      obj7.style = tmp.emptyImage;
-      const items13 = [hasError(stateFromStores(first[29]), obj7), , ];
-      const obj9 = { variant: "heading-xl/bold", style: tmp.subtitle };
-      let intl2 = ref(first[16]).intl;
-      obj9.children = intl2.string(ref(first[16]).t["PFp+aJ"]);
-      items13[1] = hasError(ref(first[28]).Text, obj9);
-      const obj10 = { variant: "text-md/medium", color: "text-default", style: tmp.subtitle };
-      const intl3 = ref(first[16]).intl;
-      obj10.children = intl3.string(ref(first[16]).t.eBIGB4);
-      items13[2] = hasError(ref(first[28]).Text, obj10);
-      obj6.children = items13;
-      tmp25 = resendUsers(memo1, obj6);
-      const tmp31 = stateFromStores(first[29]);
+    tmp27Result = tmp30;
+    if (tmp31) {
+      let obj6 = { style: null, children: null };
+      obj6[0] = tmp.centeredContainer;
+      const obj7 = { source: null, resizeMode: "contain", style: null };
+      let obj8 = { uri: null };
+      tmp9Result = tmp9(tmp4[29]);
+      obj8[0] = tmp9(tmp4[31]);
+      obj7[0] = obj8;
+      obj7[2] = tmp.emptyImage;
+      const items13 = [tmp29(tmp9Result, obj7), , ];
+      const obj9 = { variant: "heading-xl/bold", style: null, children: null };
+      obj9[1] = tmp.subtitle;
+      let intl2 = tmp3(tmp4[16]).intl;
+      obj9[2] = intl2.string(tmp3(tmp4[16]).t["PFp+aJ"]);
+      items13[1] = tmp29(tmp3(tmp4[28]).Text, obj9);
+      const obj10 = { variant: "text-md/medium", color: "text-default", style: null, children: null };
+      obj10[2] = tmp.subtitle;
+      const intl3 = tmp3(tmp4[16]).intl;
+      obj10[3] = intl3.string(tmp3(tmp4[16]).t.eBIGB4);
+      items13[2] = tmp29(tmp3(tmp4[28]).Text, obj10);
+      obj6[1] = items13;
+      tmp27Result = tmp27(tmp28, obj6);
     }
-    tmp24 = 0 === eligibleUsers.length && arr3.length > 0;
+    tmp31 = 0 === eligibleUsers.length && arr3.length > 0;
   }
-  const tmp21 = stateFromStores(first[19]);
-  let obj14 = ref(first[32]);
-  const obj11 = { actions: [] };
+  const tmp25 = stateFromStores(first[19]);
+  const tmp35 = str.trim().length > 0;
+  const obj11 = { actions: [], style: null };
   let prop;
-  if (!tmp40) {
+  if (!tmp35) {
     prop = tmp.searchBarRowContainer;
   }
-  obj11.style = prop;
-  const userListActionsProps = obj14.useUserListActionsProps(obj11);
+  obj11[1] = prop;
+  const userListActionsProps = _require(first[32]).useUserListActionsProps(obj11);
   const items14 = [fetchUsers];
   ({ renderHeader, headerSize } = userListActionsProps);
-  const callback4 = memo.useCallback((nativeEvent) => {
+  const callback4 = obj.useCallback((nativeEvent) => {
     if (nativeEvent.nativeEvent.contentOffset.y + nativeEvent.nativeEvent.layoutMeasurement.height >= nativeEvent.nativeEvent.contentSize.height - 150) {
       fetchUsers();
     }
   }, items14);
-  const obj12 = { style: items15 };
+  const obj12 = { style: items15, children: null };
   items15 = [tmp.footer];
-  tmp40 = tmp4[0].trim().length > 0;
-  const obj13 = { size: "lg" };
-  const intl6 = ref(first[16]).intl;
-  obj13.text = intl6.string(ref(first[16]).t.ItpQxk);
-  obj13.onPress = function onPress() {
+  let tmp29Result = tmp29(tmp3(tmp4[33]).ActivityIndicator, {});
+  const obj13 = { size: "lg", text: null, onPress: null, loading: null, disabled: null };
+  const intl6 = tmp3(tmp4[16]).intl;
+  obj13[1] = intl6.string(_require(first[16]).t.ItpQxk);
+  obj13[2] = function onPress() {
     callback2(Array.from(memo.values()));
   };
-  obj13.loading = tmp7;
-  obj13.disabled = tmp7;
-  obj12.children = hasError(ref(first[34]).Button, obj13);
-  const tmp45 = hasError(ref(first[33]).ActivityIndicator, {});
-  const tmp46 = memo1;
-  obj14 = { scrollable: true, startExpanded: true, header: tmp25, footer: hasError(memo1, obj12) };
-  const obj15 = { style: tmp.searchBarContainer };
-  const obj16 = { onChangeText: tmp4[1], onRemove: callback1, tags: memo1 };
-  const tmp44Result = hasError(memo1, obj12);
-  const tmp48 = resendUsers;
-  const intl7 = ref(first[16]).intl;
-  obj16.placeholder = intl7.string(ref(first[16]).t.Kd5RaI);
-  obj15.children = hasError(stateFromStores(first[36]), obj16);
+  obj13[3] = tmp11;
+  obj13[4] = tmp11;
+  obj12[1] = hasError(_require(first[34]).Button, obj13);
+  tmp29Result = tmp29(tmp28, obj12);
+  const obj14 = { scrollable: true, startExpanded: true, header: tmp27Result, footer: tmp29Result, children: null };
+  const obj15 = { style: tmp.searchBarContainer, children: null };
+  const obj16 = { onChangeText: tmp7, onRemove: callback1, tags: memo1, placeholder: null };
+  const tmp3Result = _require(first[32]);
+  const intl7 = tmp3(tmp4[16]).intl;
+  obj16[3] = intl7.string(_require(first[16]).t.Kd5RaI);
+  obj15[1] = hasError(stateFromStores(first[36]), obj16);
   const items16 = [hasError(memo1, obj15), , ];
-  let tmp50 = null;
+  let tmp42 = null;
   if (memo3) {
-    tmp50 = tmp45;
+    tmp42 = tmp29Result;
   }
-  items16[1] = tmp50;
-  items16[2] = hasError(ref(first[37]).UsersFastList, { ref, inActionSheet: true, sections: memo4, getItemProps: callback3, getSectionProps: callback2, renderListHeader: renderHeader, listHeaderSize: headerSize, insetEnd: 80, onScroll: callback4 });
-  obj14.children = items16;
-  return tmp48(ref(first[35]).BottomSheet, obj14);
+  items16[1] = tmp42;
+  items16[2] = hasError(_require(first[37]).UsersFastList, { ref, inActionSheet: true, sections: memo4, getItemProps: callback3, getSectionProps: callback2, renderListHeader: renderHeader, listHeaderSize: headerSize, insetEnd: 80, onScroll: callback4 });
+  obj14[4] = items16;
+  return resendUsers(_require(first[35]).BottomSheet, obj14);
 };

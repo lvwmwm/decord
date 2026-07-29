@@ -1,27 +1,25 @@
-// Module ID: 12772
-// Function ID: 99224
-// Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 6667, 5112, 2]
+// Module ID: 12794
+// Function ID: 12795
+// Name: onPostConnectionOpen
+// Dependencies: [5134, 6688, 2]
 
-// Module 12772 (_isNativeReflectConstruct)
-import AutomaticLifecycleManager from "AutomaticLifecycleManager";
-import set from "set";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
-import tmp2 from "AutomaticLifecycleManager";
+// Module 12794 (onPostConnectionOpen)
+import "initialize";
 
 const require = arg1;
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
+class SocialLayerStorefrontConfigManager extends tmp2 {
+  constructor() {
+    applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
+    obj = { POST_CONNECTION_OPEN: onPostConnectionOpen.bind(applyArgumentsResult) };
+    onPostConnectionOpen = applyArgumentsResult.onPostConnectionOpen;
+    applyArgumentsResult.actions = obj;
+    return applyArgumentsResult;
   }
-  const result = _isNativeReflectConstruct();
 }
-tmp2 = new tmp2();
-let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/slayer_storefront/SocialLayerStorefrontConfigManager.tsx");
+SocialLayerStorefrontConfigManager.prototype["onPostConnectionOpen"] = function onPostConnectionOpen() {
+  const socialLayerStorefrontConfig = require(6688) /* _fetchSocialLayerStorefront */.fetchSocialLayerStorefrontConfig();
+};
+const socialLayerStorefrontConfigManager = new SocialLayerStorefrontConfigManager();
+const result = require("set").fileFinishedImporting("modules/slayer_storefront/SocialLayerStorefrontConfigManager.tsx");
 
-export default tmp2;
+export default socialLayerStorefrontConfigManager;

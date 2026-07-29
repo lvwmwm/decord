@@ -1,66 +1,69 @@
-// Module ID: 13699
-// Function ID: 105082
+// Module ID: 13720
+// Function ID: 13721
 // Name: COLLECTIBLES_PREVIEW_SIZE
-// Dependencies: [31, 27, 1918, 5545, 482, 33, 4165, 689, 566, 7952, 7918, 8021, 7910, 1212, 13696, 7944, 1273, 7940, 2]
+// Dependencies: [19, 17, 1942, 5563, 505, 21, 4189, 712, 589, 7977, 7943, 8045, 7935, 1236, 13717, 7969, 1297, 7965, 2]
 // Exports: default
 
-// Module 13699 (COLLECTIBLES_PREVIEW_SIZE)
-import result from "result";
-import get_ActivityIndicator from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 13720 (COLLECTIBLES_PREVIEW_SIZE)
+import noop from "noop";
+import get_ActivityIndicator from "registerAsset";
+import trackCommunicationDisabled from "trackCommunicationDisabled";
 import { COLLECTIBLES_PREVIEW_SIZE } from "ARBITRARY_LARGE_OFFSET";
 import { NOOP } from "sum";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_4;
-let closure_5;
+let c4;
+let c5;
 const require = arg1;
-({ ActivityIndicator: closure_4, View: closure_5 } = get_ActivityIndicator);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { position: "relative", height: COLLECTIBLES_PREVIEW_SIZE, width: COLLECTIBLES_PREVIEW_SIZE, justifyContent: "center", alignItems: "center", backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_MOD_MUTED, borderRadius: require("_createForOfIteratorHelperLoose").radii.xs, overflow: "hidden" };
-_createForOfIteratorHelperLoose.previewContainer = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.noneIcon = { tintColor: require("_createForOfIteratorHelperLoose").colors.TEXT_SUBTLE };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-let obj1 = { tintColor: require("_createForOfIteratorHelperLoose").colors.TEXT_SUBTLE };
-let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/user_profile/native/UserProfileAvatarDecorationEditButton.tsx");
+({ ActivityIndicator: c4, View: c5 } = get_ActivityIndicator);
+createCacheKey = { previewContainer: null, noneIcon: null };
+createCacheKey = { position: "relative", height: COLLECTIBLES_PREVIEW_SIZE, width: COLLECTIBLES_PREVIEW_SIZE, justifyContent: "center", alignItems: "center", backgroundColor: require("Themes").colors.BACKGROUND_MOD_MUTED, borderRadius: require("Themes").radii.xs, overflow: "hidden" };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { tintColor: require("Themes").colors.TEXT_SUBTLE };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let obj1 = { tintColor: require("Themes").colors.TEXT_SUBTLE };
+let result = require("trackCommunicationDisabled").fileFinishedImporting("modules/user_profile/native/UserProfileAvatarDecorationEditButton.tsx");
 
 export default function UserProfileAvatarDecorationEditButton(user) {
+  let isFetching;
   let isTryItOut;
   let pendingAvatarDecoration;
+  let product;
   user = user.user;
   const guildId = user.guildId;
   ({ pendingAvatarDecoration, isTryItOut } = user);
+  let React;
   let userAvatarDecoration;
-  const tmp = _createForOfIteratorHelperLoose();
-  const React = tmp2;
+  const tmp = createCacheKey();
+  React = tmp2;
   let obj = user(isTryItOut[8]);
-  const items = [_isNativeReflectConstruct];
+  const items = [trackCommunicationDisabled];
   const stateFromStores = obj.useStateFromStores(items, () => {
     let member = null;
-    if (result) {
+    if (c3) {
       member = outer1_6.getMember(guildId, user.id);
     }
     return member;
   });
   let obj1 = user(isTryItOut[10]);
-  obj = { pendingValue: pendingAvatarDecoration, userValue: user.avatarDecoration };
+  obj = { pendingValue: pendingAvatarDecoration, userValue: user.avatarDecoration, guildValue: null, guildId: null };
   let avatarDecoration;
-  if (null != stateFromStores) {
+  if (stateFromStores != null) {
     avatarDecoration = stateFromStores.avatarDecoration;
   }
-  obj.guildValue = avatarDecoration;
-  obj.guildId = guildId;
-  const tmp4Result = guildId(isTryItOut[9])(obj1.getProfilePreviewValue(obj));
-  let obj3 = user(isTryItOut[11]);
+  obj[2] = avatarDecoration;
+  obj[3] = guildId;
+  const tmp7Result = guildId(isTryItOut[9])(obj1.getProfilePreviewValue(obj));
+  let tmp3Result = tmp3(tmp4[11]);
   let skuId;
-  if (null != tmp4Result) {
-    skuId = tmp4Result.skuId;
+  if (tmp7Result != null) {
+    skuId = tmp7Result.skuId;
   }
-  const fetchCollectiblesProduct = obj3.useFetchCollectiblesProduct(skuId);
-  const product = fetchCollectiblesProduct.product;
-  let obj4 = user(isTryItOut[10]);
-  userAvatarDecoration = obj4.useUserAvatarDecoration({ user, guildId });
+  const fetchCollectiblesProduct = tmp3Result.useFetchCollectiblesProduct(skuId);
+  ({ product, isFetching } = fetchCollectiblesProduct);
+  tmp3Result = tmp3(tmp4[10]);
+  userAvatarDecoration = tmp3Result.useUserAvatarDecoration({ user, guildId });
   if (undefined !== pendingAvatarDecoration) {
     userAvatarDecoration = pendingAvatarDecoration;
   }
@@ -71,53 +74,57 @@ export default function UserProfileAvatarDecorationEditButton(user) {
     obj = { user, guildId, currentAvatarDecoration: userAvatarDecoration, isTryItOut };
     const result = obj.openAvatarDecorationActionSheet(obj);
   }, items1);
-  if (null != product) {
+  if (product != null) {
     name = product.name;
   }
-  if (null == name) {
-    const intl = user(isTryItOut[13]).intl;
-    name = intl.string(user(isTryItOut[13]).t.PoWNfe);
+  if (name == null) {
+    const intl = tmp3(tmp4[13]).intl;
+    name = intl.string(tmp3(tmp4[13]).t.PoWNfe);
   }
   let formatToPlainStringResult = name;
   if (null != guildId) {
     formatToPlainStringResult = name;
     if (null == userAvatarDecoration) {
-      const intl2 = user(isTryItOut[13]).intl;
-      obj = { label: name };
-      formatToPlainStringResult = intl2.formatToPlainString(user(isTryItOut[13]).t.ep5D4i, obj);
+      const intl2 = tmp3(tmp4[13]).intl;
+      obj = { label: null };
+      obj[0] = name;
+      formatToPlainStringResult = intl2.formatToPlainString(tmp3(tmp4[13]).t.ep5D4i, obj);
     }
   }
-  if (fetchCollectiblesProduct.isFetching) {
-    obj1 = {};
-    const intl4 = user(isTryItOut[13]).intl;
-    obj1.label = intl4.string(user(isTryItOut[13]).t["7v0T9P"]);
-    const intl5 = user(isTryItOut[13]).intl;
-    obj1.buttonText = intl5.string(user(isTryItOut[13]).t.MKDeyL);
-    obj1.onPress = NOOP;
-    obj1.leading = <userAvatarDecoration animating size="large" />;
-    obj1.loading = true;
-    obj1.disabled = true;
-    obj1.hideArrow = true;
+  if (isFetching) {
+    obj1 = { label: null, buttonText: null, onPress: null, leading: null, loading: true, disabled: true, hideArrow: true };
+    const intl4 = tmp3(tmp4[13]).intl;
+    obj1[0] = intl4.string(tmp3(tmp4[13]).t["7v0T9P"]);
+    const intl5 = tmp3(tmp4[13]).intl;
+    obj1[1] = intl5.string(tmp3(tmp4[13]).t.MKDeyL);
+    obj1[2] = NOOP;
+    obj1[3] = tmp16(userAvatarDecoration, { animating: true, size: "large" });
     let obj2 = obj1;
   } else {
-    obj2 = {};
-    const intl3 = user(isTryItOut[13]).intl;
-    obj2.label = intl3.string(user(isTryItOut[13]).t["7v0T9P"]);
-    obj2.buttonText = formatToPlainStringResult;
-    obj3 = { text: formatToPlainStringResult };
-    obj2.accessibilityValue = obj3;
-    obj2.onPress = callback;
+    obj2 = { label: null, buttonText: null, accessibilityValue: null, onPress: null, leading: null };
+    const intl3 = tmp3(tmp4[13]).intl;
+    obj2[0] = intl3.string(tmp3(tmp4[13]).t["7v0T9P"]);
+    obj2[1] = formatToPlainStringResult;
+    const obj3 = { text: null };
+    obj3[0] = formatToPlainStringResult;
+    obj2[2] = obj3;
+    obj2[3] = callback;
     if (null != product) {
-      obj4 = { style: tmp.previewContainer };
-      const obj5 = { avatarDecoration: tmp4Result, size: COLLECTIBLES_PREVIEW_SIZE - 2 * guildId(isTryItOut[7]).space.PX_4, animate: false };
-      obj4.children = jsx(guildId(isTryItOut[15]), { avatarDecoration: tmp4Result, size: COLLECTIBLES_PREVIEW_SIZE - 2 * guildId(isTryItOut[7]).space.PX_4, animate: false });
-      let tmp24 = <closure_5 style={tmp.previewContainer} />;
-      const tmp29 = guildId(isTryItOut[15]);
+      const obj4 = { style: null, children: null };
+      obj4[0] = tmp.previewContainer;
+      const obj5 = { avatarDecoration: null, size: null, animate: false };
+      obj5[0] = tmp7Result;
+      obj5[1] = COLLECTIBLES_PREVIEW_SIZE - 2 * tmp6(tmp4[7]).space.PX_4;
+      obj4[1] = tmp16(tmp6(tmp4[15]), obj5);
+      let tmp16Result = tmp16(closure_5, obj4);
+      const tmp6Result = tmp6(tmp4[15]);
     } else {
-      const obj6 = { source: guildId(isTryItOut[17]), style: tmp.noneIcon };
-      tmp24 = jsx(user(isTryItOut[16]).Icon, { source: guildId(isTryItOut[17]), style: tmp.noneIcon });
+      const obj6 = { source: null, style: null };
+      obj6[0] = tmp6(tmp4[17]);
+      obj6[1] = tmp.noneIcon;
+      tmp16Result = tmp16(tmp3(tmp4[16]).Icon, obj6);
     }
-    obj2.leading = tmp24;
+    obj2[4] = tmp16Result;
   }
   return jsx(user(isTryItOut[14]).UserProfileEditFormButton, obj2);
 };

@@ -1,134 +1,290 @@
-// Module ID: 9919
-// Function ID: 76666
+// Module ID: 9941
+// Function ID: 9942
 // Name: ForLaterDeletedMessageCard
-// Dependencies: [5, 31, 27, 3793, 653, 33, 4165, 689, 5200, 6709, 4161, 1212, 6661, 4125, 9911, 9920, 4372, 675, 9530, 3747, 9921, 566, 9922, 9928, 9929, 9930, 2]
+// Dependencies: [5, 19, 17, 3817, 676, 21, 4189, 712, 5222, 6730, 4185, 1236, 6682, 4149, 9933, 9942, 4395, 698, 9554, 3771, 9943, 589, 9944, 9950, 9951, 9952, 2]
 
-// Module 9919 (ForLaterDeletedMessageCard)
+// Module 9941 (ForLaterDeletedMessageCard)
 import closure_3 from "jsxProd";
-import importAllResult from "result";
-import { View } from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import importAllResult from "t";
+import { View } from "expandEventProperties";
+import getUncachedChannelPermissions from "getUncachedChannelPermissions";
 import ME from "ME";
-import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import jsxProd from "initialize";
+import createCacheKey from "createCacheKey";
 
-let closure_10;
-let closure_11;
-let closure_7;
-let closure_8;
-let closure_9;
+let c10;
+let c9;
+let error;
+let metroImportAll;
+let unpackModuleId;
 const require = arg1;
 class ForLaterDeletedMessageCard {
   constructor(arg0) {
     savedMessage = global.savedMessage;
-    tmp = c12();
+    tmp = jsxs();
+    tmp3 = savedMessage;
+    tmp4 = closure_2;
     tmp2 = jsxs;
-    obj = { variant: "primary", border: "subtle", shadow: "none" };
+    obj = { variant: "primary", border: "subtle", shadow: "none", style: items, children: null };
     items = [, ];
     ({ card: arr[0], deletedCard: arr[1] } = tmp);
-    obj.style = items;
-    obj = { size: "xs" };
-    obj.color = require("_createForOfIteratorHelperLoose").colors.ICON_MUTED;
+    tmp5 = jsx;
+    obj = { size: "xs", color: null };
+    tmp6 = closure_1;
+    obj[1] = require("Themes").colors.ICON_MUTED;
     items1 = [, , ];
     items1[0] = jsx(require("CircleErrorIcon").CircleErrorIcon, obj);
-    tmp3 = jsx;
-    obj1 = { variant: "text-md/semibold", color: "mobile-text-heading-primary" };
-    obj1.style = tmp.deletedText;
+    obj1 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", style: tmp.deletedText, children: null };
     if (null != savedMessage.saveData.dueAt) {
-      tmp7 = savedMessage;
-      tmp8 = closure_2;
-      num2 = 11;
       intl2 = require("getSystemLocale").intl;
       stringResult = intl2.string(require("getSystemLocale").t["wuQm+j"]);
     } else {
-      tmp4 = savedMessage;
-      tmp5 = closure_2;
-      num = 11;
       intl = require("getSystemLocale").intl;
       stringResult = intl.string(require("getSystemLocale").t.o572Fe);
     }
-    obj1.children = stringResult;
-    items1[1] = tmp3(require("Text").Text, obj1);
-    obj2 = { style: tmp.deletedActionButton };
-    obj3 = { variant: "secondary", accessibilityLabel: null, size: "sm" };
+    obj1[3] = stringResult;
+    items1[1] = tmp5(require("Text").Text, obj1);
+    obj2 = { style: tmp.deletedActionButton, children: null };
+    obj3 = { variant: "secondary", accessibilityLabel: null, size: "sm", icon: null, onPress: null };
     intl3 = require("getSystemLocale").intl;
-    obj3.accessibilityLabel = intl3.string(require("getSystemLocale").t.SvXS1Z);
-    obj3.icon = require("registerAsset");
-    obj3.onPress = function onPress() {
+    obj3[1] = intl3.string(require("getSystemLocale").t.SvXS1Z);
+    obj3[3] = require("registerAsset");
+    obj3[4] = function onPress() {
       return savedMessage(outer1_2[14]).removeSavedMessage(savedMessage.saveData);
     };
-    obj2.children = jsx(require("IconButton").IconButton, obj3);
-    items1[2] = jsx(View, obj2);
-    obj.children = items1;
-    return tmp2(require("getCardBackgroundToken").Card, obj);
+    obj2[1] = tmp5(require("IconButton").IconButton, obj3);
+    items1[2] = tmp5(View, obj2);
+    obj[4] = items1;
+    return tmp2(require("PressableCard").Card, obj);
   }
 }
-({ AnalyticEvents: closure_7, ChannelTypes: closure_8, Permissions: closure_9 } = ME);
-({ jsx: closure_10, jsxs: closure_11 } = jsxProd);
-let obj = { card: { gap: 16, marginBottom: 16 } };
-obj = { marginHorizontal: -16, height: 1, alignSelf: "stretch", backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_MOD_MUTED };
-obj.cardDivider = obj;
-_createForOfIteratorHelperLoose = { marginHorizontal: -16, marginTop: -9, marginBottom: -16, borderBottomLeftRadius: require("_createForOfIteratorHelperLoose").modules.mobile.CARD_DEFAULT_RADIUS, borderBottomRightRadius: require("_createForOfIteratorHelperLoose").modules.mobile.CARD_DEFAULT_RADIUS, overflow: "hidden" };
-obj.messagePreview = _createForOfIteratorHelperLoose;
-obj.deletedCard = { flexDirection: "row", alignItems: "center", gap: 8 };
-obj.deletedText = { flex: 1 };
-obj.deletedActionButton = { marginLeft: "auto" };
-let closure_12 = _createForOfIteratorHelperLoose.createStyles(obj);
+let c4 = importAllResult;
+({ AnalyticEvents: error, ChannelTypes: metroImportAll, Permissions: c9 } = ME);
+({ jsx: c10, jsxs: unpackModuleId } = jsxProd);
+let obj = { card: { gap: 16, marginBottom: 16 }, cardDivider: null, messagePreview: null, deletedCard: null, deletedText: null, deletedActionButton: null };
+obj = { marginHorizontal: -16, height: 1, alignSelf: "stretch", backgroundColor: require("Themes").colors.BACKGROUND_MOD_MUTED };
+obj[1] = obj;
+createCacheKey = { marginHorizontal: -16, marginTop: -9, marginBottom: -16, borderBottomLeftRadius: require("Themes").modules.mobile.CARD_DEFAULT_RADIUS, borderBottomRightRadius: require("Themes").modules.mobile.CARD_DEFAULT_RADIUS, overflow: "hidden" };
+obj[2] = createCacheKey;
+obj[3] = { flexDirection: "row", alignItems: "center", gap: 8 };
+obj[4] = { flex: 1 };
+obj[5] = { marginLeft: "auto" };
+let closure_12 = createCacheKey.createStyles(obj);
 const memoResult = importAllResult.memo(function ForLaterMessageCard(savedMessage) {
   savedMessage = savedMessage.savedMessage;
-  const tmp = callback3();
-  const useSavedMessageChannel = savedMessage(9920).useSavedMessageChannel;
-  const savedMessageChannel = useSavedMessageChannel(savedMessage);
-  // CreateGeneratorClosureLongIndex (0x67)
+  let savedMessageChannel;
+  let tmp = callback3();
+  let obj = savedMessage(9942);
+  savedMessageChannel = obj.useSavedMessageChannel(savedMessage);
   const items = [savedMessage, savedMessageChannel];
-  callback = importAllResult.useCallback(callback(useSavedMessageChannel), items);
-  let obj = savedMessage(566);
-  const items1 = [_isNativeReflectConstruct];
+  callback = importAllResult.useCallback(callback(function*() {
+    if (message === 2) {
+      message = 3;
+      HermesBuiltin.throwTypeError();
+    } else if (tmp3 === 3) {
+      if (arg0 === 1) {
+        throw arg1;
+      } else if (arg0 === 2) {
+        let obj = { value: null, done: true };
+        obj[0] = arg1;
+        return obj;
+      } else {
+        return { value: "HermesInternal", done: null };
+      }
+    } else {
+      try {
+        message = 2;
+        if (0 === v0) {
+          if (arg0 === 1) {
+            message = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            message = 3;
+            obj = { value: null, done: true };
+            obj[0] = arg1;
+            return obj;
+          } else {
+            function jumpTo() {
+              const self = this;
+              const apply = c0.apply;
+              if (typeof apply === "unknown") {
+                let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+              } else {
+                applyArgumentsResult = apply(self, arguments);
+              }
+              return applyArgumentsResult;
+            }
+            message = function _jumpTo() {
+              const self = this;
+              const tmp = outer2_3(function*() {
+                if (c2 === 2) {
+                  c2 = 3;
+                  HermesBuiltin.throwTypeError();
+                } else if (tmp3 === 3) {
+                  if (arg0 === 1) {
+                    throw arg1;
+                  } else if (arg0 === 2) {
+                    let obj = { value: null, done: true };
+                    obj[0] = arg1;
+                    return obj;
+                  } else {
+                    return { value: "HermesInternal", done: null };
+                  }
+                } else {
+                  try {
+                    c2 = 2;
+                    if (0 === c1) {
+                      if (arg0 === 1) {
+                        c2 = 3;
+                        throw arg1;
+                      } else if (arg0 === 2) {
+                        c2 = 3;
+                        obj = { value: null, done: true };
+                        obj[0] = arg1;
+                        return obj;
+                      } else {
+                        const callback = tmp4;
+                        let obj2 = callback(outer2_2[15]);
+                        c1 = 1;
+                        c2 = 1;
+                        const obj1 = { value: null, done: false };
+                        obj1[0] = obj2.savedMessageJumpToMessage(outer1_0, c1);
+                        return obj1;
+                      }
+                    } else if (arg0 === 1) {
+                      c2 = 3;
+                      throw arg1;
+                    } else if (arg0 === 2) {
+                      c2 = 3;
+                      obj2 = { value: null, done: true };
+                      obj2[0] = arg1;
+                      return obj2;
+                    } else {
+                      let arr = outer2_1(outer2_2[16]);
+                      arr = arr.pop();
+                      const obj3 = { channel_id: null, message_id: null, message_author_id: null, type: null, due_duration: null };
+                      obj3[0] = outer1_0.saveData.channelId;
+                      obj3[1] = outer1_0.saveData.messageId;
+                      const message = outer1_0.message;
+                      let id;
+                      if (message != null) {
+                        id = message.author.id;
+                      }
+                      obj3[2] = id;
+                      if (null != outer1_0.saveData.dueAt) {
+                        let BOOKMARK = callback(outer2_2[18]).SavedMessageSortTypes.REMINDER;
+                      } else {
+                        BOOKMARK = callback(outer2_2[18]).SavedMessageSortTypes.BOOKMARK;
+                      }
+                      obj3[3] = BOOKMARK;
+                      let diffResult;
+                      if (null != outer1_0.saveData.dueAt) {
+                        obj = outer2_1(outer2_2[19])();
+                        diffResult = obj.diff(outer1_0.saveData.dueAt);
+                      }
+                      obj3[4] = diffResult;
+                      outer2_1(outer2_2[17]).track(outer2_7.FOR_LATER_SAVED_MESSAGE_JUMP, obj3);
+                      c2 = 3;
+                      return { value: "HermesInternal", done: null };
+                    }
+                  } catch (tmp26) {
+                    c2 = tmp;
+                    throw tmp26;
+                  }
+                }
+              });
+              let c0 = tmp;
+              const apply = tmp.apply;
+              if (typeof apply === "unknown") {
+                let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+              } else {
+                applyArgumentsResult = apply(self, arguments);
+              }
+              return applyArgumentsResult;
+            };
+            if (v0(outer1_2[20])(message.message, jumpTo)) {
+              v0 = 1;
+              message = 1;
+              let obj1 = { value: null, done: false };
+              obj1[0] = jumpTo();
+              return obj1;
+            }
+          }
+        } else if (arg0 === 1) {
+          message = 3;
+          throw arg1;
+        } else if (arg0 === 2) {
+          message = 3;
+          obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
+        }
+        message = 3;
+        return { value: "HermesInternal", done: null };
+      } catch (tmp8) {
+        message = tmp;
+        throw tmp8;
+      }
+    }
+  }), items);
+  let obj1 = savedMessage(589);
+  const items1 = [getUncachedChannelPermissions];
   if (null != savedMessage.message) {
     if (null != savedMessageChannel) {
-      if (obj.useStateFromStores(items1, () => {
+      if (obj1.useStateFromStores(items1, () => {
         let type;
-        if (null != savedMessageChannel) {
-          type = savedMessageChannel.type;
+        if (savedMessageChannel != null) {
+          type = obj.type;
         }
-        let tmp3 = type === outer1_8.UNKNOWN;
-        if (!tmp3) {
-          let tmp5 = null == savedMessageChannel;
-          if (!tmp5) {
-            tmp5 = !savedMessageChannel.isPrivate();
+        let tmp2 = type === outer1_8.UNKNOWN;
+        if (!tmp2) {
+          let isPrivateResult;
+          if (obj != null) {
+            isPrivateResult = obj.isPrivate();
           }
-          let canResult = !tmp5;
-          if (tmp5) {
-            canResult = outer1_6.can(outer1_9.VIEW_CHANNEL, savedMessageChannel);
+          let canResult = isPrivateResult;
+          if (!canResult) {
+            canResult = outer1_6.can(outer1_9.VIEW_CHANNEL, obj);
           }
-          tmp3 = canResult;
+          tmp2 = canResult;
         }
-        return tmp3;
+        return tmp2;
       })) {
-        obj = { savedMessage, jumpToMessage: callback };
-        const tmp8 = callback2(savedMessageChannel(9922), obj);
-        obj = { variant: "primary", border: "subtle", shadow: "none", style: tmp.card, onPress: callback };
-        let tmp12 = null;
+        obj = { savedMessage: null, jumpToMessage: null };
+        obj[0] = savedMessage;
+        obj[1] = callback;
+        const tmp8 = callback2(savedMessageChannel(9944), obj);
+        obj = { variant: "primary", border: "subtle", shadow: "none", style: null, onPress: null, children: null };
+        obj[3] = tmp.card;
+        obj[4] = callback;
+        let tmp6Result = null;
         if (null != savedMessage.saveData.dueAt) {
-          const obj1 = { savedMessage, throttledNow: savedMessage.throttledNow, actions: tmp8 };
-          tmp12 = callback2(savedMessage(9928).ForLaterCardReminderHeader, obj1);
+          obj1 = { savedMessage: null, throttledNow: null, actions: null };
+          obj1[0] = savedMessage;
+          obj1[1] = savedMessage.throttledNow;
+          obj1[2] = tmp8;
+          tmp6Result = tmp6(tmp2(9950).ForLaterCardReminderHeader, obj1);
         }
-        const items2 = [tmp12, , , ];
-        const obj2 = { channel: savedMessageChannel };
-        let tmp19 = null;
+        const items2 = [tmp6Result, , , ];
+        let obj2 = { channel: null, actions: null };
+        obj2[0] = savedMessageChannel;
+        let tmp12 = null;
         if (null == savedMessage.saveData.dueAt) {
-          tmp19 = tmp8;
+          tmp12 = tmp8;
         }
-        obj2.actions = tmp19;
-        items2[1] = callback2(savedMessage(9929).ForLaterCardHeader, obj2);
-        const obj3 = { style: tmp.cardDivider };
+        obj2[1] = tmp12;
+        items2[1] = callback2(tmp2(9951).ForLaterCardHeader, obj2);
+        let obj3 = { style: null };
+        obj3[0] = tmp.cardDivider;
         items2[2] = callback2(View, obj3);
-        const obj4 = { style: tmp.messagePreview };
-        const obj5 = { message: savedMessage.message, lineClamp: 2, maxHeight: 250 };
-        obj4.children = callback2(savedMessage(9930).ForLaterMessageRow, obj5);
+        const obj4 = { style: null, children: null };
+        obj4[0] = tmp.messagePreview;
+        const obj5 = { message: null, lineClamp: 2, maxHeight: 250 };
+        obj5[0] = savedMessage.message;
+        obj4[1] = callback2(tmp2(9952).ForLaterMessageRow, obj5);
         items2[3] = callback2(View, obj4);
-        obj.children = items2;
-        return closure_11(savedMessage(5200).Card, obj);
+        obj[5] = items2;
+        return closure_11(tmp2(5222).Card, obj);
       }
     }
   }

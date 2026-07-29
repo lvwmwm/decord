@@ -1,43 +1,42 @@
-// Module ID: 16601
-// Function ID: 129227
+// Module ID: 16636
+// Function ID: 16637
 // Name: useInviteApplicationBypassInfo
-// Dependencies: [3793, 653, 566, 2]
+// Dependencies: [3817, 676, 589, 2]
 // Exports: useInviteApplicationBypassInfo
 
-// Module 16601 (useInviteApplicationBypassInfo)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 16636 (useInviteApplicationBypassInfo)
+import getUncachedChannelPermissions from "getUncachedChannelPermissions";
 import ME from "ME";
 
-let closure_3;
-let closure_4;
+let c3;
+let c4;
 const require = arg1;
-({ GuildFeatures: closure_3, Permissions: closure_4 } = ME);
+({ GuildFeatures: c3, Permissions: c4 } = ME);
 const result = require("initialize").fileFinishedImporting("modules/instant_invite/useInviteApplicationBypassInfo.tsx");
 
 export const useInviteApplicationBypassInfo = function useInviteApplicationBypassInfo(guild) {
   const _require = guild;
-  let obj = _require(566);
-  const items = [_isNativeReflectConstruct];
+  const items = [getUncachedChannelPermissions];
   const items1 = [guild];
-  let tmp2 = null == guild;
-  const stateFromStores = obj.useStateFromStores(items, () => outer1_2.can(outer1_4.KICK_MEMBERS, closure_0), items1);
-  if (!tmp2) {
+  let hasItem;
+  const stateFromStores = _require(589).useStateFromStores(items, () => outer1_2.can(outer1_4.KICK_MEMBERS, closure_0), items1);
+  if (guild != null) {
     const features = guild.features;
-    tmp2 = !features.has(constants.MEMBER_VERIFICATION_MANUAL_APPROVAL);
+    hasItem = features.has(constants.MEMBER_VERIFICATION_MANUAL_APPROVAL);
   }
-  if (!tmp2) {
-    tmp2 = null == guild;
+  let tmp4 = !hasItem;
+  if (hasItem) {
+    let hasItem1;
+    if (guild != null) {
+      const features2 = guild.features;
+      hasItem1 = features2.has(constants.MEMBER_VERIFICATION_GATE_ENABLED);
+    }
+    tmp4 = !hasItem1;
   }
-  if (!tmp2) {
-    const features2 = guild.features;
-    tmp2 = !features2.has(constants.MEMBER_VERIFICATION_GATE_ENABLED);
+  const isManualApprovalGuild = !tmp4;
+  let canCreateApplicationBypassInvites = isManualApprovalGuild;
+  if (isManualApprovalGuild) {
+    canCreateApplicationBypassInvites = stateFromStores;
   }
-  obj = {};
-  let tmp6 = tmp5;
-  if (!tmp2) {
-    tmp6 = stateFromStores;
-  }
-  obj.canCreateApplicationBypassInvites = tmp6;
-  obj.isManualApprovalGuild = !tmp2;
-  return obj;
+  return { canCreateApplicationBypassInvites, isManualApprovalGuild };
 };

@@ -1,41 +1,41 @@
-// Module ID: 15847
-// Function ID: 122129
+// Module ID: 15882
+// Function ID: 15883
 // Name: trackActivityThermalStateNoticeShown
-// Dependencies: [1348, 4237, 1347, 653, 3783, 675, 2]
+// Dependencies: [1372, 4261, 1371, 676, 3807, 698, 2]
 // Exports: trackActivityThermalStateNoticeShown
 
-// Module 15847 (trackActivityThermalStateNoticeShown)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_4 from "_isNativeReflectConstruct";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+// Module 15882 (trackActivityThermalStateNoticeShown)
+import ensureGuildLoaded from "ensureGuildLoaded";
+import createRTCConnection from "createRTCConnection";
+import participantFromServer from "participantFromServer";
 import { AnalyticEvents } from "ME";
 
 const require = arg1;
-const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/activities/trackActivityThermalStateNoticeShown.tsx");
+const result = require("participantFromServer").fileFinishedImporting("modules/activities/trackActivityThermalStateNoticeShown.tsx");
 
 export const trackActivityThermalStateNoticeShown = function trackActivityThermalStateNoticeShown() {
   currentEmbeddedActivity = currentEmbeddedActivity.getCurrentEmbeddedActivity();
-  let obj = require(3783) /* getEmbeddedActivityLocationChannelId */;
+  let obj = require(3807) /* getEmbeddedActivityLocationChannelId */;
   let _location;
-  if (null != currentEmbeddedActivity) {
+  if (currentEmbeddedActivity != null) {
     _location = currentEmbeddedActivity.location;
   }
   const embeddedActivityLocationChannelId = obj.getEmbeddedActivityLocationChannelId(_location);
   basicChannel = basicChannel.getBasicChannel(embeddedActivityLocationChannelId);
   let compositeInstanceId;
-  if (null != currentEmbeddedActivity) {
+  if (currentEmbeddedActivity != null) {
     compositeInstanceId = currentEmbeddedActivity.compositeInstanceId;
   }
   let applicationId;
-  if (null != currentEmbeddedActivity) {
+  if (currentEmbeddedActivity != null) {
     applicationId = currentEmbeddedActivity.applicationId;
   }
-  obj = { channel_id: embeddedActivityLocationChannelId, application_id: applicationId, activity_session_id: compositeInstanceId };
+  obj = { channel_id: embeddedActivityLocationChannelId, application_id: applicationId, activity_session_id: compositeInstanceId, guild_id: null, media_session_id: null };
   let guild_id;
-  if (null != basicChannel) {
+  if (basicChannel != null) {
     guild_id = basicChannel.guild_id;
   }
-  obj.guild_id = guild_id;
-  obj.media_session_id = mediaSessionId.getMediaSessionId();
-  importDefault(675).track(AnalyticEvents.ACTIVITY_THERMAL_STATE_NOTICE_SHOWN, obj);
+  obj[3] = guild_id;
+  obj[4] = mediaSessionId.getMediaSessionId();
+  importDefault(698).track(AnalyticEvents.ACTIVITY_THERMAL_STATE_NOTICE_SHOWN, obj);
 };

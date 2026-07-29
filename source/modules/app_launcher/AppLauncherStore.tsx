@@ -1,139 +1,78 @@
-// Module ID: 7991
-// Function ID: 63396
-// Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 7992, 566, 686, 2]
+// Module ID: 8016
+// Function ID: 8017
+// Name: handleDismissWithDismissed
+// Dependencies: [8017, 589, 709, 2]
 
-// Module 7991 (_isNativeReflectConstruct)
-import initialize from "initialize";
-import dispatcher from "dispatcher";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
+// Module 8016 (handleDismissWithDismissed)
+import { Store } from "initialize";
 
 const require = arg1;
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
-  }
-  const result = _isNativeReflectConstruct();
-}
-function handleDismiss(closeReason) {
-  let DISMISSED = closeReason.closeReason;
+function handleDismissWithDismissed() {
+  let DISMISSED = require(8017) /* AppLauncherEntrypoint */.AppLauncherCloseReason.DISMISSED;
   if (DISMISSED === undefined) {
-    DISMISSED = require(7992) /* AppLauncherEntrypoint */.AppLauncherCloseReason.DISMISSED;
+    DISMISSED = tmp(8017).AppLauncherCloseReason.DISMISSED;
   }
   obj.show = false;
-  obj.entrypoint = require(7992) /* AppLauncherEntrypoint */.AppLauncherEntrypoint.NONE;
+  obj.entrypoint = require(8017) /* AppLauncherEntrypoint */.AppLauncherEntrypoint.NONE;
   obj.closeReason = DISMISSED;
   obj.initialState = undefined;
   obj.activeChannelId = null;
-  return true;
-}
-function handleDismissWithDismissed() {
-  handleDismiss({ closeReason: require(7992) /* AppLauncherEntrypoint */.AppLauncherCloseReason.DISMISSED });
 }
 function handleSetActiveCommand() {
-  handleDismiss({ closeReason: require(7992) /* AppLauncherEntrypoint */.AppLauncherCloseReason.COMMAND });
-}
-let obj = { show: false, entrypoint: require("AppLauncherEntrypoint").AppLauncherEntrypoint.NONE, lastShownEntrypoint: require("AppLauncherEntrypoint").AppLauncherEntrypoint.NONE, activeViewType: null, activeChannelId: null, closeReason: require("AppLauncherEntrypoint").AppLauncherCloseReason.DISMISSED, initialState: undefined };
-let tmp2 = ((Store) => {
-  class AppLauncherStore {
-    constructor() {
-      self = this;
-      tmp = outer1_2(this, AppLauncherStore);
-      obj = outer1_5(AppLauncherStore);
-      tmp2 = outer1_4;
-      if (outer1_8()) {
-        tmp6 = globalThis;
-        _Reflect = Reflect;
-        tmp7 = outer1_5;
-        tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, outer1_5(self).constructor);
-      } else {
-        tmp3 = arguments;
-        tmp4 = arguments;
-        constructResult = obj(...arguments);
-      }
-      return tmp2(self, constructResult);
-    }
+  let DISMISSED = require(8017) /* AppLauncherEntrypoint */.AppLauncherCloseReason.COMMAND;
+  if (DISMISSED === undefined) {
+    DISMISSED = tmp(8017).AppLauncherCloseReason.DISMISSED;
   }
-  callback2(AppLauncherStore, Store);
-  let obj = {
-    key: "initialize",
-    value() {
+  obj.show = false;
+  obj.entrypoint = require(8017) /* AppLauncherEntrypoint */.AppLauncherEntrypoint.NONE;
+  obj.closeReason = DISMISSED;
+  obj.initialState = undefined;
+  obj.activeChannelId = null;
+}
+let obj = { show: false, entrypoint: require("AppLauncherEntrypoint").AppLauncherEntrypoint.NONE, lastShownEntrypoint: require("AppLauncherEntrypoint").AppLauncherEntrypoint.NONE, activeViewType: null, activeChannelId: null, closeReason: require("AppLauncherEntrypoint").AppLauncherCloseReason.DISMISSED, initialState: "Boolean" };
+class AppLauncherStore extends Store {
+}
+const prototype = AppLauncherStore.prototype;
+prototype["initialize"] = function initialize() {
 
-    }
-  };
-  const items = [obj, , , , , , , , ];
-  obj = {
-    key: "shouldShowPopup",
-    value() {
-      let show = outer1_7.show;
-      if (show) {
-        show = outer1_7.entrypoint === AppLauncherStore(outer1_1[5]).AppLauncherEntrypoint.TEXT;
-      }
-      return show;
-    }
-  };
-  items[1] = obj;
-  obj = {
-    key: "shouldShowModal",
-    value() {
-      let show = outer1_7.show;
-      if (show) {
-        show = outer1_7.entrypoint === AppLauncherStore(outer1_1[5]).AppLauncherEntrypoint.VOICE;
-      }
-      return show;
-    }
-  };
-  items[2] = obj;
-  items[3] = {
-    key: "entrypoint",
-    value() {
-      return outer1_7.entrypoint;
-    }
-  };
-  items[4] = {
-    key: "lastShownEntrypoint",
-    value() {
-      return outer1_7.lastShownEntrypoint;
-    }
-  };
-  items[5] = {
-    key: "activeViewType",
-    value() {
-      return outer1_7.activeViewType;
-    }
-  };
-  items[6] = {
-    key: "activeChannelId",
-    value() {
-      const activeChannelId = outer1_7.activeChannelId;
-      let tmp = null;
-      if (null != activeChannelId) {
-        tmp = activeChannelId;
-      }
-      return tmp;
-    }
-  };
-  items[7] = {
-    key: "closeReason",
-    value() {
-      return outer1_7.closeReason;
-    }
-  };
-  items[8] = {
-    key: "initialState",
-    value() {
-      return outer1_7.initialState;
-    }
-  };
-  return callback(AppLauncherStore, items);
-})(require("initialize").Store);
-tmp2.displayName = "AppLauncherStore";
+};
+prototype["shouldShowPopup"] = function shouldShowPopup() {
+  let show = obj.show;
+  if (show) {
+    show = obj.entrypoint === require(8017) /* AppLauncherEntrypoint */.AppLauncherEntrypoint.TEXT;
+  }
+  return show;
+};
+prototype["shouldShowModal"] = function shouldShowModal() {
+  let show = obj.show;
+  if (show) {
+    show = obj.entrypoint === require(8017) /* AppLauncherEntrypoint */.AppLauncherEntrypoint.VOICE;
+  }
+  return show;
+};
+prototype["entrypoint"] = function entrypoint(arg0) {
+  return obj.entrypoint;
+};
+prototype["lastShownEntrypoint"] = function lastShownEntrypoint() {
+  return obj.lastShownEntrypoint;
+};
+prototype["activeViewType"] = function activeViewType() {
+  return obj.activeViewType;
+};
+prototype["activeChannelId"] = function activeChannelId() {
+  let activeChannelId = obj.activeChannelId;
+  if (activeChannelId == null) {
+    activeChannelId = null;
+  }
+  return activeChannelId;
+};
+prototype["closeReason"] = function closeReason() {
+  return obj.closeReason;
+};
+prototype["initialState"] = function initialState(arg0) {
+  return obj.initialState;
+};
+AppLauncherStore.displayName = "AppLauncherStore";
 obj = {
   APP_LAUNCHER_SHOW: function handleShow(entrypoint) {
     let activeChannelId;
@@ -144,20 +83,31 @@ obj = {
     obj.entrypoint = entrypoint;
     obj.lastShownEntrypoint = entrypoint;
     ({ activeViewType, initialState, activeChannelId } = entrypoint);
-    obj.closeReason = require(7992) /* AppLauncherEntrypoint */.AppLauncherCloseReason.DISMISSED;
+    obj.closeReason = require(8017) /* AppLauncherEntrypoint */.AppLauncherCloseReason.DISMISSED;
     obj.activeViewType = activeViewType;
     obj.activeChannelId = activeChannelId;
     obj.initialState = initialState;
     return true;
   },
-  APP_LAUNCHER_DISMISS: handleDismiss,
+  APP_LAUNCHER_DISMISS: function handleDismiss(closeReason) {
+    let DISMISSED = closeReason.closeReason;
+    if (DISMISSED === undefined) {
+      DISMISSED = require(8017) /* AppLauncherEntrypoint */.AppLauncherCloseReason.DISMISSED;
+    }
+    obj.show = false;
+    obj.entrypoint = require(8017) /* AppLauncherEntrypoint */.AppLauncherEntrypoint.NONE;
+    obj.closeReason = DISMISSED;
+    obj.initialState = undefined;
+    obj.activeChannelId = null;
+    return true;
+  },
   CONNECTION_OPEN: handleDismissWithDismissed,
   LOGOUT: handleDismissWithDismissed,
   CHANNEL_SELECT: handleDismissWithDismissed,
   APPLICATION_COMMAND_SET_ACTIVE_COMMAND: handleSetActiveCommand,
   APP_LAUNCHER_SET_ACTIVE_COMMAND: handleSetActiveCommand
 };
-tmp2 = new tmp2(require("dispatcher"), obj);
-let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/app_launcher/AppLauncherStore.tsx");
+const appLauncherStore = new AppLauncherStore(require("dispatcher"), obj);
+const result = require("dispatcher").fileFinishedImporting("modules/app_launcher/AppLauncherStore.tsx");
 
-export default tmp2;
+export default appLauncherStore;

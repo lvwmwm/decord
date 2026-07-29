@@ -1,109 +1,130 @@
-// Module ID: 5174
-// Function ID: 44709
-// Name: LanguageDetector
-// Dependencies: [6, 7, 5175, 2]
+// Module ID: 5196
+// Function ID: 5197
+// Name: language
+// Dependencies: [5197, 2]
 
-// Module 5174 (LanguageDetector)
-import _classCallCheck from "_classCallCheck";
-import _defineProperties from "_defineProperties";
-
-const tmp2 = (() => {
-  class LanguageDetector {
-    constructor(arg0, arg1) {
-      tmp = outer1_2(this, LanguageDetector);
-      this._shouldProcess = false;
-      this._processing = false;
-      this._minimumTimeRemaining = 5;
-      this._language = arg0;
-      this._languageHint = arg0;
-      this._onChange = arg1;
-      tmp2 = arg1(arg0);
-      return;
+// Module 5196 (language)
+const result = require("set").fileFinishedImporting("lib/spellcheck/LanguageDetector.tsx");
+class LanguageDetector {
+  constructor(arg0, arg1) {
+    obj = Object.create(new.target.prototype);
+    obj._language = global;
+    obj._languageHint = global;
+    obj._onChange = require;
+    tmp2 = require(global);
+    return obj;
+  }
+}
+const prototype = LanguageDetector.prototype;
+Object.defineProperty(prototype, "language", {
+  get: function language() {
+    return this._language;
+  },
+  set: undefined
+});
+Object.defineProperty(prototype, "language", {
+  get: undefined,
+  set: function language(_language) {
+    const self = this;
+    if (this._language !== _language) {
+      self._language = _language;
+      self._onChange(_language);
     }
   }
-  let obj = {
-    key: "language",
-    get() {
-      return this._language;
-    },
-    set(_language) {
-      const self = this;
-      if (this._language !== _language) {
-        self._language = _language;
-        self._onChange(_language);
-      }
-    }
-  };
-  const items = [obj, , , ];
-  obj = {
-    key: "languageHint",
-    set(_languageHint) {
-      this._languageHint = _languageHint;
-    }
-  };
-  items[1] = obj;
-  obj = {
-    key: "process",
-    value(arg0) {
-      const self = this;
-      let closure_1 = arg0;
-      if (!this._processing) {
-        tmp._processing = true;
-        requestIdleCallback((timeRemaining) => {
-          const _self = timeRemaining;
-          if (timeRemaining.timeRemaining() <= _self._minimumTimeRemaining) {
-            _self._processEnd();
-          } else {
-            if (arr.length > 256) {
-              arr = arr.slice(0, 256);
-            }
-            (function detectLanguage(closure_1, _languageHint) {
-              let closure_0 = closure_1;
-              closure_1 = _languageHint;
-              let obj = LanguageDetector(outer3_1[2]);
-              return LanguageDetector(outer3_1[2]).ensureModule("discord_spellcheck").then(() => {
-                let cld = LanguageDetector(outer4_1[2]).requireModule("discord_spellcheck").cld;
-                const obj = LanguageDetector(outer4_1[2]);
-                return new Promise(() => { ... });
-              });
-            })(arr, _self._languageHint).then((language) => {
-              timeRemaining.language = language;
-              timeRemaining._processEnd(timeRemaining.didTimeout);
-            }, () => {
-              timeRemaining._processEnd(timeRemaining.didTimeout);
+});
+Object.defineProperty(prototype, "languageHint", {
+  get: undefined,
+  set: function languageHint(_languageHint) {
+    this._languageHint = _languageHint;
+  }
+});
+prototype["process"] = function process(arg0) {
+  const self = this;
+  let closure_0 = arg0;
+  if (!this._processing) {
+    tmp._processing = true;
+    requestIdleCallback((timeRemaining) => {
+      let arr = timeRemaining;
+      if (timeRemaining.timeRemaining() <= _languageHint._minimumTimeRemaining) {
+        obj._processEnd();
+      } else {
+        if (arr.length > 256) {
+          arr = arr.slice(0, 256);
+        }
+        _languageHint = obj._languageHint;
+        const obj2 = arr(self[0]);
+        const ensureModuleResult = arr(self[0]).ensureModule("discord_spellcheck");
+        arr(self[0]).ensureModule("discord_spellcheck").then(() => {
+          let cld = lib(_languageHint[0]).requireModule("discord_spellcheck").cld;
+          const obj = lib(_languageHint[0]);
+          return new Promise((arg0, arg1) => {
+            const cld = arg0;
+            let closure_1 = arg1;
+            cld.detect(cld, { httpHint: outer1_1, encodingHint: "UTF8" }, (message, reliable) => {
+              if (null != message) {
+                const _Error2 = Error;
+                const error = new Error(message.message);
+                callback2(error);
+              } else {
+                if (reliable.reliable) {
+                  if (reliable.languages[0].percent >= 90) {
+                    if (reliable.languages[0].score >= 500) {
+                      callback(reliable.languages[0].code);
+                    }
+                  }
+                }
+                const _Error = Error;
+                const error1 = new Error("Not enough reliable text.");
+                callback2(error1);
+              }
             });
-            const promise = (function detectLanguage(closure_1, _languageHint) {
-              let closure_0 = closure_1;
-              closure_1 = _languageHint;
-              let obj = LanguageDetector(outer3_1[2]);
-              return LanguageDetector(outer3_1[2]).ensureModule("discord_spellcheck").then(() => {
-                let cld = LanguageDetector(outer4_1[2]).requireModule("discord_spellcheck").cld;
-                const obj = LanguageDetector(outer4_1[2]);
-                return new Promise(() => { ... });
-              });
-            })(arr, _self._languageHint);
-          }
+          });
+        }).then((language) => {
+          _languageHint.language = language;
+          _languageHint._processEnd(lib.didTimeout);
+        }, () => {
+          _languageHint._processEnd(lib.didTimeout);
+        });
+        const nextPromise = arr(self[0]).ensureModule("discord_spellcheck").then(() => {
+          let cld = lib(_languageHint[0]).requireModule("discord_spellcheck").cld;
+          const obj = lib(_languageHint[0]);
+          return new Promise((arg0, arg1) => {
+            const cld = arg0;
+            let closure_1 = arg1;
+            cld.detect(cld, { httpHint: outer1_1, encodingHint: "UTF8" }, (message, reliable) => {
+              if (null != message) {
+                const _Error2 = Error;
+                const error = new Error(message.message);
+                callback2(error);
+              } else {
+                if (reliable.reliable) {
+                  if (reliable.languages[0].percent >= 90) {
+                    if (reliable.languages[0].score >= 500) {
+                      callback(reliable.languages[0].code);
+                    }
+                  }
+                }
+                const _Error = Error;
+                const error1 = new Error("Not enough reliable text.");
+                callback2(error1);
+              }
+            });
+          });
         });
       }
-    }
-  };
-  items[2] = obj;
-  items[3] = {
-    key: "_processEnd",
-    value() {
-      let flag = arg0;
-      const self = this;
-      if (arg0 === undefined) {
-        flag = false;
-      }
-      self._processing = false;
-      if (flag) {
-        self._minimumTimeRemaining = self._minimumTimeRemaining + 1;
-      }
-    }
-  };
-  return callback(LanguageDetector, items);
-})();
-const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("lib/spellcheck/LanguageDetector.tsx");
+    });
+  }
+};
+prototype["_processEnd"] = function _processEnd(didTimeout) {
+  let flag = didTimeout;
+  if (didTimeout === undefined) {
+    flag = false;
+  }
+  const self = this;
+  this._processing = false;
+  if (flag) {
+    self._minimumTimeRemaining = self._minimumTimeRemaining + 1;
+  }
+};
 
-export default tmp2;
+export default LanguageDetector;

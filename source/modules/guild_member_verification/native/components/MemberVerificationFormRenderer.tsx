@@ -1,20 +1,20 @@
-// Module ID: 9149
-// Function ID: 71735
+// Module ID: 9173
+// Function ID: 9174
 // Name: MemberVerificationFormRenderer
-// Dependencies: [31, 27, 33, 4165, 3985, 9150, 9151, 9240, 9241, 9242, 2]
+// Dependencies: [19, 17, 21, 4189, 4009, 9174, 9175, 9264, 9265, 9266, 2]
 // Exports: default
 
-// Module 9149 (MemberVerificationFormRenderer)
-import "result";
+// Module 9173 (MemberVerificationFormRenderer)
+import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_3;
-let closure_4;
+let c3;
+let c4;
 const require = arg1;
-({ Keyboard: closure_3, View: closure_4 } = get_ActivityIndicator);
-let closure_6 = _createForOfIteratorHelperLoose.createStyles({ container: { flex: 1, flexDirection: "column", alignItems: "stretch", paddingHorizontal: 0 } });
+({ Keyboard: c3, View: c4 } = get_ActivityIndicator);
+let closure_6 = createCacheKey.createStyles({ container: { flex: 1, flexDirection: "column", alignItems: "stretch", paddingHorizontal: 0 } });
 const result = require("jsxProd").fileFinishedImporting("modules/guild_member_verification/native/components/MemberVerificationFormRenderer.tsx");
 
 export default function MemberVerificationFormRenderer(arg0) {
@@ -23,56 +23,56 @@ export default function MemberVerificationFormRenderer(arg0) {
   let importDefault;
   let require;
   ({ rulesChannelId: require, formFields, onChange: importDefault, verification: dependencyMap } = arg0);
-  let obj = { style: callback().container };
+  let obj = { style: callback().container, children: null };
   let mapped;
-  if (null != formFields) {
-    mapped = formFields.map((field_type) => (function renderFormField(field_type, arg1, arg2) {
+  if (formFields != null) {
+    mapped = formFields.map((field_type) => {
+      const combined = "verification-field-" + arg1;
       let closure_0 = arg1;
       field_type = field_type.field_type;
-      if (outer2_0(outer2_2[4]).VerificationFormFieldTypes.TERMS === field_type) {
-        let obj = {
-          field: field_type,
-          rulesChannelId: outer1_0,
-          onChange(arg0) {
-              outer2_1(closure_0, arg0);
-              outer3_3.dismiss();
-            }
+      if (outer1_0(outer1_2[4]).VerificationFormFieldTypes.TERMS === field_type) {
+        let obj = { field: null, rulesChannelId: null, onChange: null };
+        obj[0] = field_type;
+        obj[1] = closure_0;
+        obj[2] = function onChange(arg0) {
+          outer1_1(closure_0, arg0);
+          outer2_3.dismiss();
         };
-        return outer2_5(outer2_1(outer2_2[5]), obj, arg2);
-      } else if (outer2_0(outer2_2[4]).VerificationFormFieldTypes.VERIFICATION === field_type) {
-        obj = { verification: outer1_2, field: field_type };
-        return outer2_5(outer2_1(outer2_2[6]), obj, arg2);
-      } else if (outer2_0(outer2_2[4]).VerificationFormFieldTypes.TEXT_INPUT === field_type) {
-        const obj1 = {
-          field: field_type,
-          onChange(arg0) {
-              return outer2_1(closure_0, arg0);
-            }
+        let tmp4 = outer1_5(outer1_1(tmp3[5]), obj, combined);
+      } else if (tmp2(tmp3[4]).VerificationFormFieldTypes.VERIFICATION === field_type) {
+        obj = { verification: null, field: null };
+        obj[0] = closure_2;
+        obj[1] = field_type;
+        tmp4 = outer1_5(outer1_1(tmp3[6]), obj, combined);
+      } else if (tmp2(tmp3[4]).VerificationFormFieldTypes.TEXT_INPUT === field_type) {
+        const obj1 = { field: null, onChange: null };
+        obj1[0] = field_type;
+        obj1[1] = function onChange(arg0) {
+          return outer1_1(closure_0, arg0);
         };
-        return outer2_5(outer2_1(outer2_2[7]), obj1, arg2);
-      } else if (outer2_0(outer2_2[4]).VerificationFormFieldTypes.PARAGRAPH === field_type) {
-        const obj2 = {
-          field: field_type,
-          onChange(arg0) {
-              return outer2_1(closure_0, arg0);
-            }
+        tmp4 = outer1_5(outer1_1(tmp3[7]), obj1, combined);
+      } else if (tmp2(tmp3[4]).VerificationFormFieldTypes.PARAGRAPH === field_type) {
+        obj = { field: null, onChange: null };
+        obj[0] = field_type;
+        obj[1] = function onChange(arg0) {
+          return outer1_1(closure_0, arg0);
         };
-        return outer2_5(outer2_1(outer2_2[8]), obj2, arg2);
-      } else if (outer2_0(outer2_2[4]).VerificationFormFieldTypes.MULTIPLE_CHOICE === field_type) {
-        obj = {
-          field: field_type,
-          hasIcons: false,
-          onChange(arg0) {
-              outer2_1(closure_0, arg0);
-              outer3_3.dismiss();
-            }
-        };
-        return outer2_5(outer2_1(outer2_2[9]), obj, arg2);
+        tmp4 = outer1_5(outer1_1(tmp3[8]), obj, combined);
       } else {
-        return null;
+        tmp4 = null;
+        if (tmp2(tmp3[4]).VerificationFormFieldTypes.MULTIPLE_CHOICE === field_type) {
+          const obj2 = { field: null, hasIcons: false, onChange: null };
+          obj2[0] = field_type;
+          obj2[2] = function onChange(arg0) {
+            outer1_1(closure_0, arg0);
+            outer2_3.dismiss();
+          };
+          tmp4 = outer1_5(outer1_1(tmp3[9]), obj2, combined);
+        }
       }
-    })(field_type, arg1, "verification-field-" + arg1));
+      return tmp4;
+    });
   }
-  obj.children = mapped;
-  return <closure_4 style={callback().container} />;
+  obj[1] = mapped;
+  return <closure_4 style={callback().container}>{null}</closure_4>;
 };

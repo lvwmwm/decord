@@ -1,167 +1,247 @@
-// Module ID: 11731
-// Function ID: 90849
+// Module ID: 11756
+// Function ID: 11757
 // Name: GuildDirectoryNicknameUpsell
-// Dependencies: [5, 57, 31, 27, 1838, 11720, 33, 4165, 5118, 689, 566, 5193, 5114, 4064, 5548, 4161, 1212, 8971, 1273, 4578, 11721, 11730, 5121, 5552, 5485, 2]
+// Dependencies: [5, 32, 19, 17, 1862, 11745, 21, 4189, 5140, 712, 589, 5215, 5136, 4088, 5566, 4185, 1236, 8995, 1297, 4600, 11746, 11755, 5143, 5570, 5503, 2]
 // Exports: default
 
-// Module 11731 (GuildDirectoryNicknameUpsell)
+// Module 11756 (GuildDirectoryNicknameUpsell)
 import GuildPrompts from "GuildPrompts";
 import _slicedToArray from "_slicedToArray";
-import result from "result";
-import get_ActivityIndicator from "get ActivityIndicator";
-import closure_8 from "_createForOfIteratorHelperLoose";
+import Button from "Button";
+import get_ActivityIndicator from "module_8995";
+import createGuildRecordFromRust from "createGuildRecordFromRust";
 import { GuildPrompts } from "GuildPrompts";
-import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import jsxProd from "module_11755";
+import createCacheKey from "createCacheKey";
 
-let closure_10;
-let closure_11;
+let c10;
 let closure_6;
-let closure_7;
+let error;
+let unpackModuleId;
 const require = arg1;
 function GuildDirectoryNicknameUpsell(arg0) {
+  let c2;
   let importDefault;
+  let obj2;
   let require;
   ({ guildId: require, handleClose: importDefault } = arg0);
   let dependencyMap;
-  let first1;
+  let first;
+  let ref;
   function _handleSubmit() {
-    // CreateGeneratorClosureLongIndex (0x67)
-    const obj = first1(tmp);
-    return obj(...arguments);
+    const self = this;
+    const tmp = first(function*() {
+      if (c5 === 2) {
+        c5 = 3;
+        HermesBuiltin.throwTypeError();
+      } else if (tmp6 === 3) {
+        if (arg0 === 1) {
+          throw arg1;
+        } else if (arg0 === 2) {
+          let obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
+        } else {
+          return { value: "HermesInternal", done: null };
+        }
+      } else {
+        try {
+          c5 = 2;
+          if (0 === c4) {
+            if (arg0 === 1) {
+              c5 = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              c5 = 3;
+              obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            } else {
+              const callback = tmp3;
+              let closure_0 = tmp7;
+              outer1_2(null);
+              const obj1 = { nick: null };
+              obj1[0] = c3;
+              c3 = 1;
+              let obj2 = outer1_0(outer1_2[12]);
+              c4 = 2;
+              c5 = 1;
+              obj2 = { value: null, done: false };
+              obj2[0] = obj2.updateGuildSelfMember(outer1_0, obj1);
+              return obj2;
+            }
+          } else {
+            if (1 === tmp7) {
+              c3 = 0;
+              closure_0 = callback2;
+              const aPIError = new outer1_0(outer1_2[13]).APIError(closure_0);
+              callback2(aPIError);
+              c5 = 3;
+            } else if (arg0 === 1) {
+              c5 = 3;
+              throw arg1;
+            } else if (arg0 !== 2) {
+              callback();
+              c3 = 0;
+            }
+            c3 = 0;
+            c5 = 3;
+            obj = { value: null, done: true };
+            obj[0] = arg1;
+            return obj;
+          }
+        } catch (tmp30) {
+          callback2 = tmp30;
+          if (tmp4 === c3) {
+            c5 = tmp2;
+            throw tmp30;
+          } else {
+            c4 = tmp;
+          }
+        }
+      }
+    });
+    const _handleSubmit = tmp;
+    const apply = tmp.apply;
+    if (typeof apply === "unknown") {
+      let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+    } else {
+      applyArgumentsResult = apply(self, arguments);
+    }
+    return applyArgumentsResult;
   }
-  const tmp = _createForOfIteratorHelperLoose();
-  let obj = require(566) /* initialize */;
-  const items = [closure_8];
+  let tmp = createCacheKey();
+  let obj = require(589) /* initialize */;
+  const items = [createGuildRecordFromRust];
   const stateFromStores = obj.useStateFromStores(items, () => outer1_8.getGuild(closure_0));
-  const insets = importDefault(5193)().insets;
-  const tmp3 = ref(_handleSubmit.useState(null), 2);
-  const first = tmp3[0];
-  dependencyMap = tmp3[1];
-  const tmp4 = ref(_handleSubmit.useState(""), 2);
-  first1 = tmp4[0];
+  const insets = importDefault(5215)().insets;
+  [obj2, c2] = ref(_handleSubmit.useState(null), 2);
+  const tmp7 = ref(_handleSubmit.useState(""), 2);
+  first = tmp7[0];
   ref = _handleSubmit.useRef(null);
-  obj = { ref };
+  obj = { ref, contentContainerStyle: null, children: null };
   const items1 = [tmp.container, ];
-  obj = { paddingBottom: insets.bottom + importDefault(689).space.PX_16, paddingTop: insets.top };
+  obj = { paddingBottom: insets.bottom + importDefault(712).space.PX_16, paddingTop: insets.top };
   items1[1] = obj;
-  obj.contentContainerStyle = items1;
-  const obj1 = { style: tmp.guildIcon, guild: stateFromStores, size: require(5548) /* makeSizeStyle */.GuildIconSizes.XLARGE };
-  const items2 = [callback(importDefault(5548), obj1), , , , ];
-  const obj2 = { style: tmp.header };
-  const obj3 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary" };
-  const intl = require(1212) /* getSystemLocale */.intl;
-  const obj4 = {};
+  obj[1] = items1;
+  let obj1 = { style: tmp.guildIcon, guild: stateFromStores, size: null };
+  const tmp11 = closure_7;
+  const tmp5 = importDefault;
+  const tmp6 = ref(_handleSubmit.useState(null), 2);
+  obj1[2] = require(5566) /* GuildIconSizes */.GuildIconSizes.XLARGE;
+  const items2 = [callback(importDefault(5566), obj1), , , , ];
+  obj2 = { style: tmp.header, children: null };
+  const obj3 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: null };
+  const intl = require(1236) /* getSystemLocale */.intl;
   let name;
-  if (null != stateFromStores) {
+  if (stateFromStores != null) {
     name = stateFromStores.name;
   }
-  obj4.guildName = name;
-  obj3.children = intl.format(require(1212) /* getSystemLocale */.t["d+6kzl"], obj4);
-  const items3 = [callback(require(4161) /* Text */.Text, obj3), ];
-  const obj5 = { style: tmp.description, variant: "text-sm/medium", color: "text-default" };
-  const intl2 = require(1212) /* getSystemLocale */.intl;
-  obj5.children = intl2.string(require(1212) /* getSystemLocale */.t.b3L8yx);
-  items3[1] = callback(require(4161) /* Text */.Text, obj5);
-  obj2.children = items3;
+  obj3[4] = intl.format(require(1236) /* getSystemLocale */.t["d+6kzl"], { guildName: name });
+  const items3 = [callback(require(4185) /* Text */.Text, obj3), ];
+  const obj4 = { style: tmp.description, variant: "text-sm/medium", color: "text-default", children: null };
+  const intl2 = tmp2(1236).intl;
+  obj4[3] = intl2.string(require(1236) /* getSystemLocale */.t.b3L8yx);
+  items3[1] = callback(require(4185) /* Text */.Text, obj4);
+  obj2[1] = items3;
   items2[1] = closure_11(closure_6, obj2);
-  const obj6 = {};
-  const tmp10 = closure_11;
-  const tmp11 = closure_6;
-  const tmp12 = callback;
-  const tmp14 = callback;
-  const tmp7 = closure_11;
-  const tmp8 = closure_7;
-  const tmp9 = importDefault(5548);
-  const intl3 = require(1212) /* getSystemLocale */.intl;
-  obj6.label = intl3.string(require(1212) /* getSystemLocale */.t.ilDlmW);
-  const intl4 = require(1212) /* getSystemLocale */.intl;
-  obj6.placeholder = intl4.string(require(1212) /* getSystemLocale */.t.RfWvWI);
-  obj6.value = first1;
-  obj6.onChangeText = tmp4[1];
-  ({ input: obj10.style, redesignTextInput: obj10.textStyle } = tmp);
-  obj6.clearButtonVisibility = require(1273) /* Button */.ClearButtonVisibility.WITH_CONTENT;
+  const obj5 = { label: null, placeholder: null, value: null, onChangeText: null, style: null, textStyle: null, clearButtonVisibility: null, error: null, onFocus: null, onBlur: null };
+  const tmp13 = importDefault(5566);
+  const intl3 = tmp2(1236).intl;
+  obj5[0] = intl3.string(require(1236) /* getSystemLocale */.t.ilDlmW);
+  const intl4 = tmp2(1236).intl;
+  obj5[1] = intl4.string(require(1236) /* getSystemLocale */.t.RfWvWI);
+  obj5[2] = first;
+  obj5[3] = tmp7[1];
+  ({ input: obj9[4], redesignTextInput: obj9[5] } = tmp);
+  obj5[6] = require(1297) /* Button */.ClearButtonVisibility.WITH_CONTENT;
   let firstFieldErrorMessage;
-  if (null != first) {
-    firstFieldErrorMessage = first.getFirstFieldErrorMessage("name");
+  if (obj1 != null) {
+    firstFieldErrorMessage = obj1.getFirstFieldErrorMessage("name");
   }
-  obj6.error = firstFieldErrorMessage;
-  obj6.onFocus = function onFocus() {
+  obj5[7] = firstFieldErrorMessage;
+  obj5[8] = function onFocus() {
     const timerId = setTimeout(() => {
-      const current = outer1_4.current;
-      if (null != current) {
+      const current = ref.current;
+      if (current != null) {
         current.scrollToEnd();
       }
     }, 100);
   };
-  obj6.onBlur = function onBlur() {
+  obj5[9] = function onBlur() {
     const timerId = setTimeout(() => {
-      const current = outer1_4.current;
-      if (null != current) {
+      const current = ref.current;
+      if (current != null) {
         current.scrollToEnd();
       }
     }, 100);
   };
-  items2[2] = tmp14(importDefault(8971), obj6);
+  items2[2] = callback(tmp5(8995), obj5);
   items2[3] = callback(closure_6, { style: tmp.redesignGrowSpacing });
-  const obj8 = { style: tmp.redesignButtonContainer };
-  const obj9 = { size: "lg" };
-  const intl5 = require(1212) /* getSystemLocale */.intl;
-  obj9.text = intl5.string(require(1212) /* getSystemLocale */.t.Np4yXU);
-  obj9.onPress = function handleSubmit() {
-    return _handleSubmit(...arguments);
+  const obj7 = { style: tmp.redesignButtonContainer, children: null };
+  const obj8 = { size: "lg", text: null, onPress: null };
+  const intl5 = tmp2(1236).intl;
+  obj8[1] = intl5.string(require(1236) /* getSystemLocale */.t.Np4yXU);
+  obj8[2] = function handleSubmit() {
+    const self = this;
+    const apply = _handleSubmit.apply;
+    if (typeof apply === "unknown") {
+      let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+    } else {
+      applyArgumentsResult = apply(self, arguments);
+    }
+    return applyArgumentsResult;
   };
-  obj8.children = callback(require(4578) /* Button */.Button, obj9);
-  items2[4] = callback(closure_6, obj8);
-  obj.children = items2;
-  return tmp7(tmp8, obj);
+  obj7[1] = callback(require(4600) /* Button */.Button, obj8);
+  items2[4] = callback(closure_6, obj7);
+  obj[2] = items2;
+  return closure_11(tmp11, obj);
 }
-({ View: closure_6, ScrollView: closure_7 } = get_ActivityIndicator);
-({ jsx: closure_10, jsxs: closure_11 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { flex: 1, flexGrow: 2, marginTop: require("NAV_BAR_HEIGHT").NAV_BAR_HEIGHT };
-_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.guildIcon = { alignSelf: "center", marginTop: 16 };
-_createForOfIteratorHelperLoose.title = { marginBottom: 8, textAlign: "center" };
-_createForOfIteratorHelperLoose.description = { textAlign: "center" };
-_createForOfIteratorHelperLoose.header = { alignItems: "center", justifyContent: "center", padding: 16 };
-_createForOfIteratorHelperLoose.input = { marginHorizontal: 16 };
-_createForOfIteratorHelperLoose.redesignTextInput = { borderRadius: require("_createForOfIteratorHelperLoose").radii.lg };
-let obj1 = { borderRadius: require("_createForOfIteratorHelperLoose").radii.lg };
-_createForOfIteratorHelperLoose.redesignGrowSpacing = { flexGrow: 2, minHeight: require("_createForOfIteratorHelperLoose").space.PX_24 };
-let obj2 = { flexGrow: 2, minHeight: require("_createForOfIteratorHelperLoose").space.PX_24 };
-_createForOfIteratorHelperLoose.redesignButtonContainer = { paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16 };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-let obj3 = { paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16 };
-const result = require("result").fileFinishedImporting("modules/directory_channels/native/components/GuildDirectoryNicknameUpsellModal.tsx");
+({ View: closure_6, ScrollView: error } = get_ActivityIndicator);
+({ jsx: c10, jsxs: unpackModuleId } = jsxProd);
+createCacheKey = { container: null, guildIcon: null, title: null, description: null, header: null, input: null, redesignTextInput: null, redesignGrowSpacing: null, redesignButtonContainer: null };
+createCacheKey = { flex: 1, flexGrow: 2, marginTop: require("NAV_BAR_HEIGHT").NAV_BAR_HEIGHT };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { alignSelf: "center", marginTop: 16 };
+createCacheKey[2] = { marginBottom: 8, textAlign: "center" };
+createCacheKey[3] = { textAlign: "center" };
+createCacheKey[4] = { alignItems: "center", justifyContent: "center", padding: 16 };
+createCacheKey[5] = { marginHorizontal: 16 };
+createCacheKey[6] = { borderRadius: require("Themes").radii.lg };
+let obj1 = { borderRadius: require("Themes").radii.lg };
+createCacheKey[7] = { flexGrow: 2, minHeight: require("Themes").space.PX_24 };
+let obj2 = { flexGrow: 2, minHeight: require("Themes").space.PX_24 };
+createCacheKey[8] = { paddingHorizontal: require("Themes").space.PX_16 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+const UPSELL_SCREEN_KEY = "UPSELL_SCREEN_KEY";
+let obj3 = { paddingHorizontal: require("Themes").space.PX_16 };
+const result = require("noop").fileFinishedImporting("modules/directory_channels/native/components/GuildDirectoryNicknameUpsellModal.tsx");
 
 export default function GuildDirectoryNicknameUpsellModal(arg0) {
   const _require = arg0;
-  let obj = {
-    screens: importDefault(5485)(() => (function getScreens(closure_0) {
-      let closure_1;
-      ({ guildId: closure_0, onHide: closure_1 } = closure_0);
-      function handleClose() {
-        outer3_1(outer3_2[20]).viewPrompt(outer3_9.REAL_NAME_PROMPT, closure_0);
-        callback();
-        const obj = outer3_1(outer3_2[20]);
-        outer3_1(outer3_2[21]).close();
-      }
-      let obj = {};
-      obj = {
-        fullscreen: true,
-        headerLeft: callback(outer2_2[22]).getHeaderCloseButton(handleClose),
-        headerTitle() {
-          return null;
-        },
-        render() {
-          return outer3_10(outer3_13, { guildId: closure_0, handleClose });
-        }
-      };
-      obj["UPSELL_SCREEN_KEY"] = obj;
-      return obj;
-    })(closure_0)),
-    initialRouteName: "UPSELL_SCREEN_KEY"
-  };
-  return callback(_require(5552).Navigator, obj);
+  let obj = { screens: null, initialRouteName: null };
+  obj[0] = importDefault(5503)(() => {
+    let closure_0;
+    let closure_1;
+    ({ guildId: closure_0, onHide: closure_1 } = callback);
+    function handleClose() {
+      outer1_1(handleClose[20]).viewPrompt(outer1_9.REAL_NAME_PROMPT, closure_0);
+      callback();
+      const obj = outer1_1(handleClose[20]);
+      outer1_1(handleClose[21]).close();
+    }
+    let obj = {};
+    obj = { fullscreen: true, headerLeft: null, headerTitle: null, render: null };
+    obj[1] = callback(outer1_2[22]).getHeaderCloseButton(handleClose);
+    obj[2] = function headerTitle() {
+      return null;
+    };
+    obj[3] = function render() {
+      return outer1_10(outer1_13, { guildId: closure_0, handleClose });
+    };
+    obj[outer1_14] = obj;
+    return obj;
+  });
+  obj[1] = UPSELL_SCREEN_KEY;
+  return callback(_require(5570).Navigator, obj);
 };

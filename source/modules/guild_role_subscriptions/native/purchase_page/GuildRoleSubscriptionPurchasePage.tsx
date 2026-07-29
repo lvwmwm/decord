@@ -1,103 +1,104 @@
-// Module ID: 15372
-// Function ID: 117114
+// Module ID: 15405
+// Function ID: 15406
 // Name: Separator
-// Dependencies: [31, 27, 1278, 1348, 1838, 653, 33, 4165, 689, 4161, 1212, 1273, 10713, 14205, 14207, 14208, 624, 15373, 4355, 15375, 15376, 15377, 4628, 5119, 5548, 15378, 9405, 15380, 15381, 3862, 15382, 2]
+// Dependencies: [19, 17, 1302, 1372, 1862, 676, 21, 4189, 712, 4185, 1236, 1297, 10737, 14227, 14229, 14230, 647, 15406, 4380, 15408, 15409, 15410, 4650, 5141, 5566, 15411, 9429, 15413, 15414, 3886, 15415, 2]
 // Exports: default
 
-// Module 15372 (Separator)
-import "set";
-import get_ActivityIndicator from "registerAsset";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_9 from "_isNativeReflectConstruct";
-import closure_10 from "_createForOfIteratorHelperLoose";
+// Module 15405 (Separator)
+import "registerAsset";
+import get_ActivityIndicator from "useTrackRoleSubscriptionUpsellAnalytics";
+import handleThemeChange from "handleThemeChange";
+import ensureGuildLoaded from "ensureGuildLoaded";
+import createGuildRecordFromRust from "createGuildRecordFromRust";
 import ME from "ME";
-import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import jsxProd from "getCoverImageURI";
+import createCacheKey from "createCacheKey";
 
-let closure_11;
+let c4;
+let c5;
 let closure_12;
-let closure_13;
 let closure_14;
 let closure_15;
 let closure_16;
-let closure_4;
-let closure_5;
 let closure_6;
-let closure_7;
+let error;
+let map1;
+let unpackModuleId;
 const require = arg1;
 function Separator() {
-  return callback(closure_6, { style: _createForOfIteratorHelperLoose().separator });
+  return callback(closure_6, { style: createCacheKey().separator });
 }
 function LegalDisclaimer() {
-  let obj = { variant: "text-xs/normal", color: "text-muted" };
-  const intl = require(1212) /* getSystemLocale */.intl;
+  let obj = { variant: "text-xs/normal", color: "text-muted", children: null };
+  const intl = require(1236) /* getSystemLocale */.intl;
   obj = { termsURL: constants3.TERMS, paidURL: constants3.PAID_TERMS };
-  obj.children = intl.format(require(1212) /* getSystemLocale */.t.FSPTDI, obj);
-  return callback(require(4161) /* Text */.Text, obj);
+  obj[2] = intl.format(require(1236) /* getSystemLocale */.t.FSPTDI, obj);
+  return callback(require(4185) /* Text */.Text, obj);
 }
 function SocialBadge(onPress) {
   let iconSource;
   let text;
   onPress = onPress.onPress;
   ({ iconSource, text } = onPress);
-  const tmp = _createForOfIteratorHelperLoose();
-  let tmp2 = null != onPress;
-  let obj = { style: tmp.socialBadge };
+  const tmp = createCacheKey();
+  let tmp5Result = null != onPress;
+  let obj = { style: tmp.socialBadge, activeOpacity: null, onPress: null, children: null };
   let num = 1;
-  if (tmp2) {
+  if (tmp5Result) {
     num = 0.5;
   }
-  obj.activeOpacity = num;
-  obj.onPress = onPress;
+  obj[1] = num;
+  obj[2] = onPress;
   obj = { source: iconSource, style: tmp.socialBadgeIcon, resizeMode: "contain", disableColor: true };
-  const items = [callback(require(1273) /* Button */.Icon, obj), , ];
-  obj = { variant: "text-sm/medium", color: "text-default", children: text };
-  items[1] = callback(require(4161) /* Text */.Text, obj);
-  if (tmp2) {
-    const obj1 = { source: importDefault(10713), style: tmp.socialBadgeArrow };
-    tmp2 = callback(require(1273) /* Button */.Icon, obj1);
+  const items = [callback(require(1297) /* Button */.Icon, obj), callback(require(4185) /* Text */.Text, { variant: "text-sm/medium", color: "text-default", children: text }), ];
+  if (tmp5Result) {
+    obj = { source: null, style: null };
+    obj[0] = importDefault(10737);
+    obj[1] = tmp.socialBadgeArrow;
+    tmp5Result = callback(require(1297) /* Button */.Icon, obj);
   }
-  items[2] = tmp2;
-  obj.children = items;
+  items[2] = tmp5Result;
+  obj[3] = items;
   return closure_15(closure_5, obj);
 }
-({ ActivityIndicator: closure_4, TouchableOpacity: closure_5, View: closure_6, ScrollView: closure_7 } = get_ActivityIndicator);
-({ AnalyticsLocations: closure_11, GuildFeatures: closure_12, MarketingURLs: closure_13 } = ME);
+({ ActivityIndicator: c4, TouchableOpacity: c5, View: closure_6, ScrollView: error } = get_ActivityIndicator);
+({ AnalyticsLocations: unpackModuleId, GuildFeatures: closure_12, MarketingURLs: map1 } = ME);
 ({ jsx: closure_14, jsxs: closure_15, Fragment: closure_16 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { flex: 1, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SURFACE_HIGH };
-_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.heroImage = { aspectRatio: 4, width: "100%" };
-let obj1 = { borderWidth: 3, borderRadius: require("_createForOfIteratorHelperLoose").radii.md, alignSelf: "flex-start", top: -35, left: 16, borderColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW, position: "absolute" };
-_createForOfIteratorHelperLoose.guildIconContainer = obj1;
-_createForOfIteratorHelperLoose.guildIcon = { borderRadius: require("_createForOfIteratorHelperLoose").radii.sm };
-let obj3 = { flex: 1, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SURFACE_HIGH, paddingTop: 47, paddingHorizontal: 16, borderTopLeftRadius: require("_createForOfIteratorHelperLoose").radii.md, borderTopRightRadius: require("_createForOfIteratorHelperLoose").radii.md, marginTop: -15 };
-_createForOfIteratorHelperLoose.contentCard = obj3;
-_createForOfIteratorHelperLoose.loadingContainer = { flex: 1, justifyContent: "center", alignItems: "center", paddingBottom: 40 };
-_createForOfIteratorHelperLoose.socialContainer = { flexDirection: "row" };
-let obj4 = { flexDirection: "row", backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW, borderRadius: require("_createForOfIteratorHelperLoose").radii.xl, paddingVertical: 4, paddingHorizontal: 8, alignItems: "center" };
-_createForOfIteratorHelperLoose.socialBadge = obj4;
-_createForOfIteratorHelperLoose.socialBadgeIcon = { height: 24, marginRight: 6 };
-let obj5 = { height: 24, marginLeft: 6, tintColor: require("_createForOfIteratorHelperLoose").colors.INTERACTIVE_TEXT_DEFAULT };
-_createForOfIteratorHelperLoose.socialBadgeArrow = obj5;
-let obj6 = { width: "100%", height: 1, backgroundColor: require("_createForOfIteratorHelperLoose").colors.INTERACTIVE_BACKGROUND_HOVER, marginVertical: 24 };
-_createForOfIteratorHelperLoose.separator = obj6;
-_createForOfIteratorHelperLoose.moneyBirbPlaceholder = { marginVertical: 64, alignSelf: "center", backgroundColor: "transparent" };
-_createForOfIteratorHelperLoose.gatedChannel = { flexDirection: "row", alignItems: "center", marginBottom: -4 };
-let obj2 = { borderRadius: require("_createForOfIteratorHelperLoose").radii.sm };
-_createForOfIteratorHelperLoose.gatedChannelIcon = { tintColor: require("_createForOfIteratorHelperLoose").colors.TEXT_DEFAULT };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-let obj7 = { tintColor: require("_createForOfIteratorHelperLoose").colors.TEXT_DEFAULT };
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/guild_role_subscriptions/native/purchase_page/GuildRoleSubscriptionPurchasePage.tsx");
+createCacheKey = { container: null, heroImage: null, guildIconContainer: null, guildIcon: null, contentCard: null, loadingContainer: null, socialContainer: null, socialBadge: null, socialBadgeIcon: null, socialBadgeArrow: null, separator: null, moneyBirbPlaceholder: null, gatedChannel: null, gatedChannelIcon: null };
+createCacheKey = { flex: 1, backgroundColor: require("Themes").colors.BACKGROUND_SURFACE_HIGH };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { aspectRatio: 4, width: "100%" };
+createCacheKey[2] = { borderWidth: 3, borderRadius: require("Themes").radii.md, alignSelf: "flex-start", top: -35, left: 16, borderColor: require("Themes").colors.BACKGROUND_BASE_LOW, position: "absolute" };
+let obj1 = { borderWidth: 3, borderRadius: require("Themes").radii.md, alignSelf: "flex-start", top: -35, left: 16, borderColor: require("Themes").colors.BACKGROUND_BASE_LOW, position: "absolute" };
+createCacheKey[3] = { borderRadius: require("Themes").radii.sm };
+let obj2 = { borderRadius: require("Themes").radii.sm };
+createCacheKey[4] = { flex: 1, backgroundColor: require("Themes").colors.BACKGROUND_SURFACE_HIGH, paddingTop: 47, paddingHorizontal: 16, borderTopLeftRadius: require("Themes").radii.md, borderTopRightRadius: require("Themes").radii.md, marginTop: -15 };
+createCacheKey[5] = { flex: 1, justifyContent: "center", alignItems: "center", paddingBottom: 40 };
+createCacheKey[6] = { flexDirection: "row" };
+let obj3 = { flex: 1, backgroundColor: require("Themes").colors.BACKGROUND_SURFACE_HIGH, paddingTop: 47, paddingHorizontal: 16, borderTopLeftRadius: require("Themes").radii.md, borderTopRightRadius: require("Themes").radii.md, marginTop: -15 };
+createCacheKey[7] = { flexDirection: "row", backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW, borderRadius: require("Themes").radii.xl, paddingVertical: 4, paddingHorizontal: 8, alignItems: "center" };
+createCacheKey[8] = { height: 24, marginRight: 6 };
+let obj4 = { flexDirection: "row", backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW, borderRadius: require("Themes").radii.xl, paddingVertical: 4, paddingHorizontal: 8, alignItems: "center" };
+createCacheKey[9] = { height: 24, marginLeft: 6, tintColor: require("Themes").colors.INTERACTIVE_TEXT_DEFAULT };
+let obj5 = { height: 24, marginLeft: 6, tintColor: require("Themes").colors.INTERACTIVE_TEXT_DEFAULT };
+createCacheKey[10] = { width: "100%", height: 1, backgroundColor: require("Themes").colors.INTERACTIVE_BACKGROUND_HOVER, marginVertical: 24 };
+createCacheKey[11] = { marginVertical: 64, alignSelf: "center", backgroundColor: "transparent" };
+createCacheKey[12] = { flexDirection: "row", alignItems: "center", marginBottom: -4 };
+let obj6 = { width: "100%", height: 1, backgroundColor: require("Themes").colors.INTERACTIVE_BACKGROUND_HOVER, marginVertical: 24 };
+createCacheKey[13] = { tintColor: require("Themes").colors.TEXT_DEFAULT };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let obj7 = { tintColor: require("Themes").colors.TEXT_DEFAULT };
+const result = require("handleThemeChange").fileFinishedImporting("modules/guild_role_subscriptions/native/purchase_page/GuildRoleSubscriptionPurchasePage.tsx");
 
 export default function GuildRoleSubscriptionPurchasePage(guildId) {
   guildId = guildId.guildId;
   const gatedChannelId = guildId.gatedChannelId;
+  let importAll;
   let stateFromStores1;
   let closure_4;
   let store_page_trailer_url;
-  const tmp = _createForOfIteratorHelperLoose();
-  const importAll = tmp;
+  const tmp = createCacheKey();
+  importAll = tmp;
   gatedChannelId(stateFromStores1[13])({ forceRestore: true });
   let obj = guildId(stateFromStores1[14]);
   const first = obj.useGroupListingsForGuild(guildId)[0];
@@ -106,11 +107,11 @@ export default function GuildRoleSubscriptionPurchasePage(guildId) {
   let obj2 = guildId(stateFromStores1[14]);
   const subscriptionsSettings = obj2.useSubscriptionsSettings(guildId);
   let obj3 = guildId(stateFromStores1[16]);
-  let items = [closure_10];
+  let items = [createGuildRecordFromRust];
   const stateFromStores = obj3.useStateFromStores(items, () => outer1_10.getGuild(guildId));
   let obj4 = guildId(stateFromStores1[14]);
   let id;
-  if (null != first) {
+  if (first != null) {
     id = first.id;
   }
   const subscriptionListingsForGroup = obj4.useSubscriptionListingsForGroup(id, { includeUnpublished: false });
@@ -120,135 +121,143 @@ export default function GuildRoleSubscriptionPurchasePage(guildId) {
   } else {
     ROLE_SUBSCRIPTIONS_TAB = constants.ROLE_SUBSCRIPTIONS_TAB;
   }
-  obj = { guildId };
+  obj = { guildId, groupListingId: null, location: null, relevantSubscriptionListingIds: null };
   let id1;
-  if (null != first) {
+  let tmp2Result = tmp2(tmp3[17]);
+  if (first != null) {
     id1 = first.id;
   }
-  obj.groupListingId = id1;
-  obj.location = ROLE_SUBSCRIPTIONS_TAB;
-  obj.relevantSubscriptionListingIds = mapped;
-  gatedChannelId(stateFromStores1[17])(obj);
-  let obj6 = guildId(stateFromStores1[16]);
-  const items1 = [closure_9];
+  obj[1] = id1;
+  obj[2] = ROLE_SUBSCRIPTIONS_TAB;
+  obj[3] = mapped;
+  tmp2Result(obj);
+  let tmp5Result = tmp5(tmp3[16]);
+  const items1 = [ensureGuildLoaded];
   const items2 = [gatedChannelId];
-  stateFromStores1 = obj6.useStateFromStores(items1, () => outer1_9.getChannel(gatedChannelId), items2);
-  closure_4 = gatedChannelId(stateFromStores1[18])(stateFromStores1);
-  let obj7 = guildId(stateFromStores1[16]);
-  const items3 = [_isNativeReflectConstruct];
+  stateFromStores1 = tmp5Result.useStateFromStores(items1, () => outer1_9.getChannel(gatedChannelId), items2);
+  closure_4 = tmp2(tmp3[18])(stateFromStores1);
+  tmp5Result = tmp5(tmp3[16]);
+  [][0] = handleThemeChange;
   if (groupListingsFetchContext) {
     if (null != subscriptionsSettings) {
       if (null != stateFromStores) {
         if (null != first) {
           const features = stateFromStores.features;
-          const coverImageURI = importAll(stateFromStores1[21]).getCoverImageURI(subscriptionsSettings);
-          const hasItem = features.has(constants2.PARTNERED);
+          const coverImageURI = importAll(tmp3[21]).getCoverImageURI(subscriptionsSettings);
+          let hasItem = features.has(constants2.PARTNERED);
           store_page_trailer_url = subscriptionsSettings.store_page_trailer_url;
           if (null != gatedChannelId) {
             if (null != stateFromStores1) {
-              const intl2 = guildId(stateFromStores1[10]).intl;
-              obj = {
-                unlockHook() {
-                              let obj = { style: tmp.gatedChannel };
-                              const items = [outer1_14(guildId(stateFromStores1[11]).Spacer, { size: 3 }), , , ];
-                              obj = { size: guildId(stateFromStores1[11]).Icon.Sizes.SMALL_20, style: tmp.gatedChannelIcon, source: guildId(stateFromStores1[22]).getChannelIcon(stateFromStores1) };
-                              items[1] = outer1_14(guildId(stateFromStores1[11]).Icon, obj);
-                              items[2] = outer1_14(guildId(stateFromStores1[11]).Spacer, { size: 3 });
-                              obj = { variant: "text-xs/semibold", color: "text-default", children: closure_4 };
-                              items[3] = outer1_14(guildId(stateFromStores1[9]).Text, obj);
-                              obj.children = items;
-                              return outer1_15(outer1_6, obj);
-                            }
+              const intl2 = tmp5(tmp3[10]).intl;
+              obj = { unlockHook: null };
+              obj[0] = function unlockHook() {
+                let obj = { style: _undefined.gatedChannel, children: null };
+                const items = [outer1_14(guildId(stateFromStores1[11]).Spacer, { size: 3 }), , , ];
+                obj = { size: null, style: null, source: null };
+                obj[0] = guildId(stateFromStores1[11]).Icon.Sizes.SMALL_20;
+                obj[1] = _undefined.gatedChannelIcon;
+                obj[2] = guildId(stateFromStores1[22]).getChannelIcon(stateFromStores1);
+                items[1] = outer1_14(guildId(stateFromStores1[11]).Icon, obj);
+                items[2] = outer1_14(guildId(stateFromStores1[11]).Spacer, { size: 3 });
+                obj = { variant: "text-xs/semibold", color: "text-default", children: closure_4 };
+                items[3] = outer1_14(guildId(stateFromStores1[9]).Text, obj);
+                obj[1] = items;
+                return outer1_15(outer1_6, obj);
               };
-              let formatResult = intl2.format(guildId(stateFromStores1[10]).t.A1L1hU, obj);
+              let formatResult = intl2.format(tmp5(tmp3[10]).t.A1L1hU, obj);
             }
-            obj1 = { style: tmp.container };
-            obj2 = { right: 1 };
-            obj1.scrollIndicatorInsets = obj2;
-            obj3 = { source: coverImageURI, style: tmp.heroImage };
-            const items4 = [callback(gatedChannelId(stateFromStores1[23]), obj3), , ];
-            obj4 = { style: tmp.contentCard };
-            const obj5 = { style: tmp.guildIconContainer };
-            obj6 = { size: guildId(stateFromStores1[24]).GuildIconSizes.XLARGE, guild: stateFromStores, style: tmp.guildIcon };
-            obj5.children = callback(gatedChannelId(stateFromStores1[24]), obj6);
-            const items5 = [callback(closure_6, obj5), , , , , , , , , , ];
-            obj7 = { variant: "heading-xl/bold", color: "mobile-text-heading-primary" };
-            const intl3 = guildId(stateFromStores1[10]).intl;
-            const obj8 = { serverName: stateFromStores.name };
-            obj7.children = intl3.format(guildId(stateFromStores1[10]).t.mqCkpl, obj8);
-            items5[1] = callback(guildId(stateFromStores1[9]).Text, obj7);
-            const obj9 = { size: 8 };
-            items5[2] = callback(guildId(stateFromStores1[11]).Spacer, obj9);
-            const obj10 = { variant: "text-sm/normal", color: "text-default", lineClamp: 3, children: subscriptionsSettings.description };
-            items5[3] = callback(guildId(stateFromStores1[25]).TruncatedText, obj10);
-            let tmp38Result = hasItem;
+            obj1 = { style: null, scrollIndicatorInsets: null, children: null };
+            obj1[0] = tmp.container;
+            obj1[1] = { right: 1 };
+            obj2 = { source: null, style: null };
+            obj2[0] = coverImageURI;
+            obj2[1] = tmp.heroImage;
+            const items3 = [callback(tmp2(tmp3[23]), obj2), , ];
+            obj3 = { style: null, children: null };
+            obj3[0] = tmp.contentCard;
+            obj4 = { style: null, children: null };
+            obj4[0] = tmp.guildIconContainer;
+            const obj5 = { size: null, guild: null, style: null };
+            tmp2Result = tmp2(tmp3[24]);
+            obj5[0] = tmp5(tmp3[24]).GuildIconSizes.XLARGE;
+            obj5[1] = stateFromStores;
+            obj5[2] = tmp.guildIcon;
+            obj4[1] = callback(tmp2Result, obj5);
+            const items4 = [callback(closure_6, obj4), , , , , , , , , , ];
+            const obj6 = { variant: "heading-xl/bold", color: "mobile-text-heading-primary", children: null };
+            const intl3 = tmp5(tmp3[10]).intl;
+            const obj7 = { serverName: null };
+            obj7[0] = stateFromStores.name;
+            obj6[2] = intl3.format(tmp5(tmp3[10]).t.mqCkpl, obj7);
+            items4[1] = callback(tmp5(tmp3[9]).Text, obj6);
+            items4[2] = callback(tmp5(tmp3[11]).Spacer, { size: 8 });
+            const obj8 = { variant: "text-sm/normal", color: "text-default", lineClamp: 3, children: null };
+            obj8[3] = subscriptionsSettings.description;
+            items4[3] = callback(tmp5(tmp3[25]).TruncatedText, obj8);
+            let tmp20Result = hasItem;
             if (!hasItem) {
-              tmp38Result = null != store_page_trailer_url;
+              tmp20Result = null != store_page_trailer_url;
             }
-            if (tmp38Result) {
-              const obj11 = {};
-              const obj12 = { size: 24 };
-              const items6 = [callback(guildId(stateFromStores1[11]).Spacer, obj12), ];
-              const obj13 = { style: tmp.socialContainer };
-              const obj14 = { gap: 8 };
-              let tmp46 = hasItem;
+            if (tmp20Result) {
+              const items5 = [tmp22(tmp5(tmp3[11]).Spacer, { size: 24 }), ];
+              const obj9 = { style: null, children: null };
+              obj9[0] = tmp.socialContainer;
               if (hasItem) {
-                const obj15 = { iconSource: gatedChannelId(stateFromStores1[27]) };
-                const intl4 = guildId(stateFromStores1[10]).intl;
-                obj15.text = intl4.string(guildId(stateFromStores1[10]).t["2MhjUV"]);
-                tmp46 = callback(SocialBadge, obj15);
+                const obj10 = { iconSource: null, text: null };
+                obj10[0] = tmp2(tmp3[27]);
+                const intl4 = tmp5(tmp3[10]).intl;
+                obj10[1] = intl4.string(tmp5(tmp3[10]).t["2MhjUV"]);
+                hasItem = tmp22(SocialBadge, obj10);
               }
-              const items7 = [tmp46, ];
-              let tmp52 = null != store_page_trailer_url;
-              if (tmp52) {
-                const obj16 = { iconSource: gatedChannelId(stateFromStores1[28]) };
-                const intl5 = guildId(stateFromStores1[10]).intl;
-                obj16.text = intl5.string(guildId(stateFromStores1[10]).t["4PGeGA"]);
-                obj16.onPress = function onPress() {
+              const items6 = [hasItem, ];
+              let tmp22Result = null != store_page_trailer_url;
+              if (tmp22Result) {
+                const obj11 = { iconSource: null, text: null, onPress: null };
+                obj11[0] = tmp2(tmp3[28]);
+                const intl5 = tmp5(tmp3[10]).intl;
+                obj11[1] = intl5.string(tmp5(tmp3[10]).t["4PGeGA"]);
+                obj11[2] = function onPress() {
                   return gatedChannelId(stateFromStores1[29]).openURL(store_page_trailer_url);
                 };
-                tmp52 = callback(SocialBadge, obj16);
+                tmp22Result = tmp22(SocialBadge, obj11);
               }
-              items7[1] = tmp52;
-              obj14.children = items7;
-              obj13.children = closure_15(guildId(stateFromStores1[26]).GappedList, obj14);
-              items6[1] = callback(closure_6, obj13);
-              obj11.children = items6;
-              tmp38Result = closure_15(closure_16, obj11);
-              const tmp38 = closure_15;
-              const tmp39 = closure_16;
-              const tmp43 = callback;
-              const tmp44 = closure_6;
-              const tmp45 = closure_15;
+              const obj12 = { children: null };
+              const obj13 = { gap: 8, children: null };
+              items6[1] = tmp22Result;
+              obj13[1] = items6;
+              obj9[1] = tmp20(tmp5(tmp3[26]).GappedList, obj13);
+              items5[1] = tmp22(tmp23, obj9);
+              obj12[0] = items5;
+              tmp20Result = tmp20(closure_16, obj12);
+              const tmp26 = closure_16;
             }
-            items5[4] = tmp38Result;
-            const obj17 = { size: 16 };
-            items5[5] = callback(guildId(stateFromStores1[11]).Spacer, obj17);
-            items5[6] = callback(LegalDisclaimer, {});
-            items5[7] = callback(Separator, {});
-            const obj18 = { variant: "text-xs/semibold", color: "text-muted" };
-            const obj19 = { textTransform: "uppercase" };
-            obj18.style = obj19;
-            obj18.children = formatResult;
-            items5[8] = callback(guildId(stateFromStores1[9]).Text, obj18);
-            const obj20 = { size: 24 };
-            items5[9] = callback(guildId(stateFromStores1[11]).Spacer, obj20);
-            const obj21 = { gap: 16, children: mapped.map((listingId) => outer1_14(gatedChannelId(stateFromStores1[30]), { listingId, guildId }, listingId)) };
-            items5[10] = callback(guildId(stateFromStores1[26]).GappedList, obj21);
-            obj4.children = items5;
-            items4[1] = closure_15(closure_6, obj4);
-            const obj22 = { source: tmp16, style: tmp.moneyBirbPlaceholder };
-            items4[2] = callback(gatedChannelId(stateFromStores1[23]), obj22);
-            obj1.children = items4;
+            items4[4] = tmp20Result;
+            items4[5] = callback(tmp5(tmp3[11]).Spacer, { size: 16 });
+            items4[6] = callback(LegalDisclaimer, {});
+            items4[7] = callback(Separator, {});
+            const obj14 = { variant: "text-xs/semibold", color: "text-muted", style: null, children: null };
+            obj14[2] = { textTransform: "uppercase" };
+            obj14[3] = formatResult;
+            items4[8] = callback(tmp5(tmp3[9]).Text, obj14);
+            items4[9] = callback(tmp5(tmp3[11]).Spacer, { size: 24 });
+            const obj15 = { gap: 16, children: null };
+            obj15[1] = mapped.map((listingId) => outer1_14(gatedChannelId(stateFromStores1[30]), { listingId, guildId }, listingId));
+            items4[10] = callback(tmp5(tmp3[26]).GappedList, obj15);
+            obj3[1] = items4;
+            items3[1] = closure_15(closure_6, obj3);
+            const obj16 = { source: null, style: null };
+            obj16[0] = tmp18;
+            obj16[1] = tmp.moneyBirbPlaceholder;
+            items3[2] = callback(tmp2(tmp3[23]), obj16);
+            obj1[2] = items3;
             return closure_15(closure_7, obj1);
           }
-          const intl = guildId(stateFromStores1[10]).intl;
-          formatResult = intl.string(guildId(stateFromStores1[10]).t["mPHb1/"]);
-          const obj33 = importAll(stateFromStores1[21]);
+          const intl = tmp5(tmp3[10]).intl;
+          formatResult = intl.string(tmp5(tmp3[10]).t["mPHb1/"]);
+          const obj26 = importAll(tmp3[21]);
         }
       }
     }
   }
-  const tmp10 = gatedChannelId(stateFromStores1[17]);
   return callback(closure_6, { style: tmp.loadingContainer, children: callback(closure_4, { size: "large" }) });
 };

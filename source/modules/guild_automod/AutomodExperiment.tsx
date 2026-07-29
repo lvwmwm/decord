@@ -1,16 +1,13 @@
-// Module ID: 10246
-// Function ID: 79109
-// Name: items
-// Dependencies: [4077, 2]
+// Module ID: 10267
+// Function ID: 10268
+// Name: experiment
+// Dependencies: [4101, 2]
 
-// Module 10246 (items)
+// Module 10267 (experiment)
 import createExperiment from "createExperiment";
 
-let obj = { kind: "guild", id: "2022-12_mention_raid_limit", label: "Automod Mention Raid Limit", defaultConfig: { enabled: false } };
-obj = { id: 1, label: "Automod Mention Raid Limit", config: { enabled: true } };
-const items = [obj];
-obj.treatments = items;
-const experiment = createExperiment.createExperiment(obj);
+const items = [{ id: 1, label: "Automod Mention Raid Limit", config: { enabled: true } }];
+const experiment = createExperiment.createExperiment({ kind: "guild", id: "2022-12_mention_raid_limit", label: "Automod Mention Raid Limit", defaultConfig: { enabled: false }, treatments: items });
 const result = require("set").fileFinishedImporting("modules/guild_automod/AutomodExperiment.tsx");
 
 export const AutomodMentionRaidLimit = experiment;

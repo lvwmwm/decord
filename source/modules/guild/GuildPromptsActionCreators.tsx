@@ -1,14 +1,14 @@
-// Module ID: 11721
-// Function ID: 90769
+// Module ID: 11746
+// Function ID: 11747
 // Name: viewPrompt
-// Dependencies: [686, 2]
+// Dependencies: [709, 2]
 // Exports: viewPrompt
 
-// Module 11721 (viewPrompt)
+// Module 11746 (viewPrompt)
 function viewPrompt(REAL_NAME_PROMPT, closure_0) {
   const importDefault = REAL_NAME_PROMPT;
   const dependencyMap = closure_0;
-  importDefault(686).wait(() => {
+  importDefault(709).wait(() => {
     let obj = REAL_NAME_PROMPT(table[0]);
     obj = { type: "GUILD_PROMPT_VIEWED", prompt: REAL_NAME_PROMPT, guildId: table };
     obj.dispatch(obj);

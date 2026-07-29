@@ -1,183 +1,127 @@
-// Module ID: 15249
-// Function ID: 115958
-// Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 57, 5903, 664, 5907, 21, 566, 686, 2]
+// Module ID: 15282
+// Function ID: 15283
+// Name: handleLoadFinished
+// Dependencies: [32, 5922, 687, 589, 5926, 11, 709, 2]
 
-// Module 15249 (_isNativeReflectConstruct)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import set from "set";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
+// Module 15282 (handleLoadFinished)
 import _slicedToArray from "_slicedToArray";
-import closure_9 from "_isNativeReflectConstruct";
+import findOrCreateMessageRecord from "findOrCreateMessageRecord";
+import { PersistedStore } from "initialize";
 
 const require = arg1;
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
-  }
-  const result = _isNativeReflectConstruct();
-}
 function handleLoadFinished() {
-  obj.hasNewMentions = false;
-  obj.isDataStale = false;
-  obj.isRefreshing = false;
+  closure_6.hasNewMentions = false;
+  closure_6.isDataStale = false;
+  closure_6.isRefreshing = false;
 }
-let closure_10 = 90 * require("set").Millis.DAY;
-let obj = { tab: null, localItemAcks: {}, hasNewMentions: false, isDataStale: false, isRefreshing: false };
-let tmp2 = ((PersistedStore) => {
-  class NotificationCenterStore {
-    constructor() {
-      self = this;
-      tmp = outer1_3(this, NotificationCenterStore);
-      obj = outer1_6(NotificationCenterStore);
-      tmp2 = outer1_5;
-      if (outer1_12()) {
-        tmp6 = globalThis;
-        _Reflect = Reflect;
-        tmp7 = outer1_6;
-        tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, outer1_6(self).constructor);
-      } else {
-        tmp3 = arguments;
-        tmp4 = arguments;
-        constructResult = obj(...arguments);
-      }
-      return tmp2(self, constructResult);
+let closure_5 = 90 * require("set").Millis.DAY;
+let closure_6 = { tab: null, localItemAcks: {}, hasNewMentions: false, isDataStale: false, isRefreshing: false };
+class NotificationCenterStore extends PersistedStore {
+}
+const prototype = NotificationCenterStore.prototype;
+prototype["initialize"] = function initialize(localItemAcks) {
+  this.waitFor(findOrCreateMessageRecord);
+  if (null != localItemAcks) {
+    let closure_6 = localItemAcks;
+    localItemAcks = localItemAcks.localItemAcks;
+    if (localItemAcks == null) {
+      localItemAcks = {};
     }
+    localItemAcks.localItemAcks = (function purge(localItemAcks) {
+      let tmp6;
+      let tmp7;
+      const obj = {};
+      const entries = Object.entries(localItemAcks);
+      while (tmp2 !== undefined) {
+        let tmp4 = callback;
+        let tmp5 = callback(tmp3, 2);
+        [tmp6, tmp7] = tmp5;
+        let _Date = Date;
+        let tmp8 = tmp7;
+        let tmp9 = closure_5;
+        if (Date.now() - tmp7 < closure_5) {
+          let tmp10 = tmp6;
+          let tmp11 = tmp7;
+          obj[tmp6] = tmp8;
+        }
+        continue;
+      }
+      return obj;
+    })(localItemAcks);
+    closure_6.isDataStale = true;
   }
-  callback2(NotificationCenterStore, PersistedStore);
-  let obj = {
-    key: "initialize",
-    value(localItemAcks) {
-      this.waitFor(outer1_9);
-      if (null != localItemAcks) {
-        const outer1_11 = localItemAcks;
-        localItemAcks = localItemAcks.localItemAcks;
-        if (null == localItemAcks) {
-          localItemAcks = {};
-        }
-        const obj = {};
-        const _Object = Object;
-        const entries = Object.entries(localItemAcks);
-        for (let num4 = 0; num4 < entries.length; num4 = num4 + 1) {
-          let tmp3 = outer1_8;
-          let tmp4 = outer1_8(entries[num4], 2);
-          let tmp5 = tmp4[1];
-          let _Date = Date;
-          let tmp6 = outer1_10;
-          if (Date.now() - tmp5 < outer1_10) {
-            obj[tmp4[0]] = tmp5;
-          }
-        }
-        localItemAcks.localItemAcks = obj;
-        outer1_11.isDataStale = true;
-      }
+};
+prototype["getState"] = function getState() {
+  return closure_6;
+};
+prototype["getTab"] = function getTab() {
+  let ForYou = closure_6.tab;
+  if (ForYou == null) {
+    ForYou = require(5926) /* NotificationCenterScenes */.NotificationCenterTabs.ForYou;
+  }
+  return ForYou;
+};
+prototype["isLocalItemAcked"] = function isLocalItemAcked(addResult) {
+  let tmp = null != addResult.local_id;
+  if (tmp) {
+    let tmp3 = null != closure_6.localItemAcks[addResult.local_id];
+    if (!tmp3) {
+      tmp3 = importDefault(11).age(addResult.id) > closure_5;
+      const obj = importDefault(11);
     }
-  };
-  const items = [obj, , , , , , , ];
-  obj = {
-    key: "getState",
-    value() {
-      return outer1_11;
-    }
-  };
-  items[1] = obj;
-  obj = {
-    key: "getTab",
-    value() {
-      let ForYou = outer1_11.tab;
-      if (null == ForYou) {
-        ForYou = NotificationCenterStore(outer1_2[8]).NotificationCenterTabs.ForYou;
-      }
-      return ForYou;
-    }
-  };
-  items[2] = obj;
-  items[3] = {
-    key: "isLocalItemAcked",
-    value(local_id) {
-      let tmp = null != local_id.local_id;
-      if (tmp) {
-        let tmp3 = null != outer1_11.localItemAcks[local_id.local_id];
-        if (!tmp3) {
-          tmp3 = outer1_1(outer1_2[9]).age(local_id.id) > outer1_10;
-          const obj = outer1_1(outer1_2[9]);
-        }
-        tmp = tmp3;
-      }
-      return tmp;
-    }
-  };
-  items[4] = {
-    key: "hasNewMentions",
-    value() {
-      return outer1_11.hasNewMentions;
-    }
-  };
-  items[5] = {
-    key: "isDataStale",
-    value() {
-      return outer1_11.isDataStale;
-    }
-  };
-  items[6] = {
-    key: "isRefreshing",
-    value() {
-      return outer1_11.isRefreshing;
-    }
-  };
-  items[7] = {
-    key: "shouldReload",
-    value() {
-      let isRefreshing = outer1_11.hasNewMentions;
-      if (!isRefreshing) {
-        isRefreshing = outer1_11.isDataStale;
-      }
-      if (!isRefreshing) {
-        isRefreshing = outer1_11.isRefreshing;
-      }
-      return isRefreshing;
-    }
-  };
-  return callback(NotificationCenterStore, items);
-})(require("initialize").PersistedStore);
-tmp2.displayName = "NotificationCenterStore";
-tmp2.persistKey = "NotificationCenterStore";
-obj = {
+    tmp = tmp3;
+  }
+  return tmp;
+};
+prototype["hasNewMentions"] = function hasNewMentions() {
+  return closure_6.hasNewMentions;
+};
+prototype["isDataStale"] = function isDataStale() {
+  return closure_6.isDataStale;
+};
+prototype["isRefreshing"] = function isRefreshing() {
+  return closure_6.isRefreshing;
+};
+prototype["shouldReload"] = function shouldReload() {
+  let isRefreshing = closure_6.hasNewMentions;
+  if (!isRefreshing) {
+    isRefreshing = closure_6.isDataStale;
+  }
+  if (!isRefreshing) {
+    isRefreshing = closure_6.isRefreshing;
+  }
+  return isRefreshing;
+};
+NotificationCenterStore.displayName = "NotificationCenterStore";
+NotificationCenterStore.persistKey = "NotificationCenterStore";
+const notificationCenterStore = new NotificationCenterStore(require("dispatcher"), {
   MESSAGE_CREATE: function handleMessageCreate(message) {
-    if (closure_9.hasMention(message.message.id)) {
-      obj.hasNewMentions = true;
+    if (findOrCreateMessageRecord.hasMention(message.message.id)) {
+      closure_6.hasNewMentions = true;
     }
   },
   NOTIFICATION_CENTER_SET_TAB: function handleSetTab(tab) {
     const obj = {};
     const merged = Object.assign(obj);
-    obj["tab"] = tab.tab;
+    obj.tab = tab.tab;
   },
   NOTIFICATION_CENTER_ITEMS_LOCAL_ACK: function handleAck(localIds) {
     localIds = localIds.localIds;
     const item = localIds.forEach((arg0) => {
       let obj = {};
-      const merged = Object.assign(outer1_11);
+      const merged = Object.assign(obj);
       obj = {};
-      const merged1 = Object.assign(outer1_11.localItemAcks);
+      const merged1 = Object.assign(obj.localItemAcks);
       obj[arg0] = Date.now();
-      obj["localItemAcks"] = obj;
-      outer1_11 = obj;
+      obj.localItemAcks = obj;
     });
   },
   NOTIFICATION_CENTER_REFRESH: function handleRefreshData() {
-    obj.isRefreshing = true;
+    closure_6.isRefreshing = true;
   },
   LOAD_NOTIFICATION_CENTER_ITEMS_FAILURE: handleLoadFinished,
   LOAD_NOTIFICATION_CENTER_ITEMS_SUCCESS: handleLoadFinished
-};
-tmp2 = new tmp2(require("dispatcher"), obj);
-let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/notification_center/NotificationCenterStore.tsx");
+});
+const result = require("set").fileFinishedImporting("modules/notification_center/NotificationCenterStore.tsx");
 
-export default tmp2;
+export default notificationCenterStore;

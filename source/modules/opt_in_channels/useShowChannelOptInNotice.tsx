@@ -1,11 +1,11 @@
-// Module ID: 10440
-// Function ID: 80372
+// Module ID: 10464
+// Function ID: 10465
 // Name: useShowChannelOptInNotice
-// Dependencies: [4360, 653, 1355, 5771, 566, 5640, 2]
+// Dependencies: [4385, 676, 1379, 5789, 589, 5658, 2]
 // Exports: default
 
-// Module 10440 (useShowChannelOptInNotice)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 10464 (useShowChannelOptInNotice)
+import updateUserGuildSettingsInternal from "updateUserGuildSettingsInternal";
 import { NULL_STRING_GUILD_ID } from "ME";
 import { ChannelFlags } from "set";
 
@@ -15,28 +15,28 @@ let result = require("set").fileFinishedImporting("modules/opt_in_channels/useSh
 export default function useShowChannelOptInNotice(getGuildId) {
   const _require = getGuildId;
   let guildId;
-  if (null != getGuildId) {
+  if (getGuildId != null) {
     guildId = getGuildId.getGuildId();
   }
-  let optInEnabledForGuild = _require(5771).useOptInEnabledForGuild(null != guildId ? getGuildId.guild_id : NULL_STRING_GUILD_ID);
-  const obj = _require(5771);
-  const items = [_isNativeReflectConstruct];
-  const stateFromStores = _require(566).useStateFromStores(items, () => {
+  let optInEnabledForGuild = _require(5789).useOptInEnabledForGuild(null != guildId ? getGuildId.guild_id : NULL_STRING_GUILD_ID);
+  let tmpResult = tmp(589);
+  const items = [updateUserGuildSettingsInternal];
+  const stateFromStores = tmpResult.useStateFromStores(items, () => {
     let result = null != closure_0;
     if (result) {
-      result = outer1_2.isChannelRecordOrParentOptedIn(closure_0);
+      result = outer1_2.isChannelRecordOrParentOptedIn(tmp);
     }
     return result;
   });
-  const obj2 = _require(566);
+  tmpResult = tmp(5658);
   let guild_id;
-  if (null != getGuildId) {
+  if (getGuildId != null) {
     guild_id = getGuildId.guild_id;
   }
-  if (null == guild_id) {
+  if (guild_id == null) {
     guild_id = NULL_STRING_GUILD_ID;
   }
-  let canSeeOnboardingHome = _require(5640).useCanSeeOnboardingHome(guild_id);
+  let canSeeOnboardingHome = tmpResult.useCanSeeOnboardingHome(guild_id);
   if (null == getGuildId) {
     return false;
   } else {
@@ -54,5 +54,5 @@ export default function useShowChannelOptInNotice(getGuildId) {
     }
     return optInEnabledForGuild;
   }
-  const obj3 = _require(5640);
+  const obj = _require(5789);
 };

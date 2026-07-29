@@ -1,12 +1,12 @@
-// Module ID: 11367
-// Function ID: 88198
+// Module ID: 11391
+// Function ID: 11392
 // Name: getApplicationCommandsIconSource
-// Dependencies: [4503, 4502, 4601, 1392, 11368, 11369, 5686, 1831, 9648, 6168, 2]
+// Dependencies: [4526, 4525, 4623, 1416, 11392, 11393, 5704, 1855, 9670, 6186, 2]
 // Exports: getApplicationCommandsIconSource, openCommandAttachmentPreview
 
-// Module 11367 (getApplicationCommandsIconSource)
-import { DraftType } from "_isNativeReflectConstruct";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 11391 (getApplicationCommandsIconSource)
+import { DraftType } from "handleChanged";
+import map from "map";
 import { BuiltInSectionId } from "TRUE_OPTION_NAME";
 
 let result = require("TRUE_OPTION_NAME").fileFinishedImporting("modules/application_commands/native/ApplicationCommandUtils.tsx");
@@ -18,24 +18,23 @@ export const getApplicationCommandsIconSource = function getApplicationCommandsI
   } else {
     const id = section.id;
     if (BuiltInSectionId.BUILT_IN === id) {
-      return importDefault(1392).makeSource(importDefault(11368));
-    } else if (BuiltInSectionId.FRECENCY === id) {
-      return importDefault(1392).makeSource(importDefault(11369));
+      return importDefault(1416).makeSource(importDefault(11392));
+    } else if (tmp10.FRECENCY === id) {
+      return importDefault(1416).makeSource(importDefault(11393));
     } else {
-      if (section.type === require(5686) /* ApplicationCommandSectionType */.ApplicationCommandSectionType.APPLICATION) {
-        let obj = importDefault(1392);
-        obj = {};
-        ({ id: obj2.id, icon: obj2.icon, application } = section);
+      if (section.type === require(5704) /* ApplicationCommandSectionType */.ApplicationCommandSectionType.APPLICATION) {
+        let obj = importDefault(1416);
+        obj = { id: null, icon: null, bot: null, botIconFirst: true, guildMember: null };
+        ({ id: obj2[0], icon: obj2[1], application } = section);
         let bot;
-        if (null != application) {
+        if (application != null) {
           bot = application.bot;
         }
-        obj.bot = bot;
-        obj.botIconFirst = true;
-        obj.guildMember = stateFromStores;
+        obj[2] = bot;
+        obj[4] = stateFromStores;
         let applicationIconSource = obj.getApplicationIconSource(obj);
       } else {
-        applicationIconSource = importDefault(1831);
+        applicationIconSource = importDefault(1855);
       }
       return applicationIconSource;
     }
@@ -47,32 +46,28 @@ export const openCommandAttachmentPreview = function openCommandAttachmentPrevie
   const dependencyMap = name;
   upload = upload.getUpload(channelId, name, upload.SlashCommand);
   if (null != upload) {
-    let obj = {
-      channelId,
-      disableSpoiler: true,
-      onClose: fn,
-      onRemove() {
-          let obj = channelId(name[9]);
-          obj.remove(channelId, upload.id, upload.SlashCommand);
-          let found;
-          if (null != applicationCommandManager) {
-            const activeCommand = applicationCommandManager.props.activeCommand;
-            if (null != activeCommand) {
-              const options = activeCommand.options;
-              if (null != options) {
-                found = options.find((name) => name.name === outer1_2);
-              }
-            }
+    const obj = { channelId: null, disableSpoiler: true, onClose: null, onRemove: null, upload: null };
+    obj[0] = channelId;
+    obj[2] = fn;
+    obj[3] = function onRemove() {
+      channelId(name[9]).remove(channelId, upload.id, upload.SlashCommand);
+      let found;
+      if (closure_0 != null) {
+        const activeCommand = obj2.props.activeCommand;
+        if (activeCommand != null) {
+          const options = activeCommand.options;
+          if (options != null) {
+            found = options.find((name) => name.name === closure_2);
           }
-          if (null != found) {
-            if (null != applicationCommandManager) {
-              obj = { displayText: "" };
-              const result = applicationCommandManager.insertOrJumpCommandOption(found, undefined, false, obj);
-            }
-          }
-        },
-      upload
+        }
+      }
+      if (null != found) {
+        if (obj2 != null) {
+          const result = obj2.insertOrJumpCommandOption(found, undefined, false, { displayText: "" });
+        }
+      }
     };
-    importDefault(9648)(obj);
+    obj[4] = upload;
+    importDefault(9670)(obj);
   }
 };

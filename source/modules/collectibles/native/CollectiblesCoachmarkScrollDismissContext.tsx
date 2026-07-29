@@ -1,19 +1,20 @@
-// Module ID: 14589
-// Function ID: 111271
+// Module ID: 14614
+// Function ID: 14615
 // Name: useCollectiblesCoachmarkScrollDismissContext
-// Dependencies: [31, 482, 33, 2]
+// Dependencies: [19, 505, 21, 2]
 // Exports: CollectiblesCoachmarkScrollDismissProvider, useCollectiblesCoachmarkScrollDismissContext
 
-// Module 14589 (useCollectiblesCoachmarkScrollDismissContext)
-import importAllResult from "result";
+// Module 14614 (useCollectiblesCoachmarkScrollDismissContext)
+import importAllResult from "noop";
 import { NOOP } from "sum";
 import { jsx } from "jsxProd";
 
+let c0 = importAllResult;
 const context = importAllResult.createContext({
   registerDismiss(arg0) {
     return NOOP;
   },
-  handleDismissCoachmarkOnScroll: undefined
+  handleDismissCoachmarkOnScroll: "r"
 });
 const result = require("jsxProd").fileFinishedImporting("modules/collectibles/native/CollectiblesCoachmarkScrollDismissContext.tsx");
 
@@ -21,32 +22,36 @@ export const useCollectiblesCoachmarkScrollDismissContext = function useCollecti
   return importAllResult.useContext(closure_3);
 };
 export const CollectiblesCoachmarkScrollDismissProvider = function CollectiblesCoachmarkScrollDismissProvider(children) {
+  let importAllResult;
+  let closure_1;
+  let callback;
+  let callback1;
   importAllResult = importAllResult.useRef(null);
-  let closure_1 = importAllResult.useRef(null);
-  const callback = importAllResult.useCallback((current) => {
+  closure_1 = importAllResult.useRef(null);
+  callback = importAllResult.useCallback((current) => {
     let closure_0 = current;
     closure_0.current = current;
     closure_1.current = null;
     return () => {
       if (ref.current === ref) {
-        ref.current = null;
+        tmp.current = null;
         outer1_1.current = null;
       }
     };
   }, []);
-  const callback1 = importAllResult.useCallback((nativeEvent) => {
+  callback1 = importAllResult.useCallback((nativeEvent) => {
     const current = ref.current;
     if (null != current) {
       const contentOffset = nativeEvent.nativeEvent.contentOffset;
       if (null != ref2.current) {
         const _Math = Math;
-        if (Math.abs(contentOffset.x - ref2.current) >= 16) {
-          ref.current = null;
-          ref2.current = null;
+        if (Math.abs(contentOffset.x - tmp3.current) >= 16) {
+          tmp.current = null;
+          tmp3.current = null;
           current();
         }
       } else {
-        ref2.current = contentOffset.x;
+        tmp3.current = contentOffset.x;
       }
     }
   }, []);

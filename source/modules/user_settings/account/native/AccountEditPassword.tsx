@@ -1,20 +1,22 @@
-// Module ID: 13786
-// Function ID: 105650
-// Dependencies: [31, 27, 33, 4165, 689, 13787, 2]
+// Module ID: 13807
+// Function ID: 13808
+// Dependencies: [19, 17, 21, 4189, 712, 13808, 2]
 
-// Module 13786
+// Module 13807
 import get_ActivityIndicator from "get ActivityIndicator";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import importAllResult from "result";
+import createCacheKey from "createCacheKey";
+import importAllResult from "noop";
 
-const View = get_ActivityIndicator.View;
-let obj = {};
-obj = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW };
-const merged = Object.assign(get_ActivityIndicator.StyleSheet.absoluteFillObject);
-obj.container = obj;
-let closure_4 = _createForOfIteratorHelperLoose.createStyles(obj);
-const memoResult = require("result").memo(() => <View style={callback().container}>{jsx(importDefault(13787), {})}</View>);
+let StyleSheet;
+let obj1;
+({ View: obj1, StyleSheet } = get_ActivityIndicator);
+let obj = { container: null };
+obj = { backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW };
+const merged = Object.assign(StyleSheet.absoluteFillObject);
+obj[0] = obj;
+let closure_4 = createCacheKey.createStyles(obj);
+const memoResult = require("noop").memo(() => <closure_2 style={callback().container}>{jsx(importDefault(13808), {})}</closure_2>);
 const result = require("jsxProd").fileFinishedImporting("modules/user_settings/account/native/AccountEditPassword.tsx");
 
 export default memoResult;

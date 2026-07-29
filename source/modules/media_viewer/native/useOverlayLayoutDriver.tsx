@@ -1,11 +1,11 @@
-// Module ID: 12279
-// Function ID: 95727
+// Module ID: 12301
+// Function ID: 12302
 // Name: useOverlayLayoutDriver
-// Dependencies: [31, 4026, 8113, 4166, 1273, 2]
+// Dependencies: [19, 4050, 8137, 4190, 1297, 2]
 // Exports: useFooterLayoutAnimation, useHeaderLayoutAnimation, useOverlayLayoutDriver
 
-// Module 12279 (useOverlayLayoutDriver)
-import result from "result";
+// Module 12301 (useOverlayLayoutDriver)
+import noop from "noop";
 
 const require = arg1;
 let closure_3 = { code: "function useOverlayLayoutDriverTsx1(){const{interpolate,animationDriver}=this.__closure;return{transform:[{translateY:interpolate(animationDriver.get(),[0,0.75,1],[-50,-50,0])}],opacity:interpolate(animationDriver.get(),[0,0.75,1],[0,0,1])};}" };
@@ -13,9 +13,9 @@ let closure_4 = { code: "function useOverlayLayoutDriverTsx2(){const{interpolate
 let result = require("MediaViewerDimensionsProvider").fileFinishedImporting("modules/media_viewer/native/useOverlayLayoutDriver.tsx");
 
 export const useOverlayLayoutDriver = function useOverlayLayoutDriver() {
-  sharedValue = sharedValue(4026).useSharedValue(0);
-  let obj = sharedValue(4026);
-  const mediaViewerDimensions = sharedValue(8113).useMediaViewerDimensions();
+  sharedValue = sharedValue(4050).useSharedValue(0);
+  let obj = sharedValue(4050);
+  const mediaViewerDimensions = sharedValue(8137).useMediaViewerDimensions();
   const items = [sharedValue, , ];
   ({ height: arr[1], width: arr[2] } = mediaViewerDimensions);
   const effect = React.useEffect(() => {
@@ -27,19 +27,18 @@ export const useOverlayLayoutDriver = function useOverlayLayoutDriver() {
 };
 export const useHeaderLayoutAnimation = function useHeaderLayoutAnimation(animationDriver) {
   const _require = animationDriver;
-  let obj = _require(4026);
+  let obj = _require(4050);
   const fn = function o() {
-    let obj = {};
-    obj = {};
-    const items = [-50, -50, 0];
-    obj.translateY = animationDriver(outer1_1[1]).interpolate(animationDriver.get(), [0, 0.75, 1], items);
-    const items1 = [obj];
-    obj.transform = items1;
+    let obj = { transform: null, opacity: null };
+    obj = { translateY: null };
+    obj[0] = animationDriver(outer1_1[1]).interpolate(animationDriver.get(), [0, 0.75, 1], [-50, -50, 0]);
+    const items = [obj];
+    obj[0] = items;
     const obj3 = animationDriver(outer1_1[1]);
-    obj.opacity = animationDriver(outer1_1[1]).interpolate(animationDriver.get(), [0, 0.75, 1], [0, 0, 1]);
+    obj[1] = animationDriver(outer1_1[1]).interpolate(animationDriver.get(), [0, 0.75, 1], [0, 0, 1]);
     return obj;
   };
-  obj = { interpolate: _require(4026).interpolate, animationDriver };
+  obj = { interpolate: _require(4050).interpolate, animationDriver };
   fn.__closure = obj;
   fn.__workletHash = 13622939479876;
   fn.__initData = closure_3;
@@ -47,17 +46,18 @@ export const useHeaderLayoutAnimation = function useHeaderLayoutAnimation(animat
 };
 export const useFooterLayoutAnimation = function useFooterLayoutAnimation(overlayLayoutDriver) {
   const _require = overlayLayoutDriver;
-  let obj = _require(4026);
+  let obj = _require(4050);
   const fn = function n() {
-    let obj = {};
-    obj = { translateY: overlayLayoutDriver(outer1_1[1]).interpolate(overlayLayoutDriver.get(), [0, 0.75, 1], [50, 50, 0]) };
+    let obj = { transform: null, opacity: null };
+    obj = { translateY: null };
+    obj[0] = overlayLayoutDriver(outer1_1[1]).interpolate(overlayLayoutDriver.get(), [0, 0.75, 1], [50, 50, 0]);
     const items = [obj];
-    obj.transform = items;
+    obj[0] = items;
     const obj3 = overlayLayoutDriver(outer1_1[1]);
-    obj.opacity = overlayLayoutDriver(outer1_1[1]).interpolate(overlayLayoutDriver.get(), [0, 0.75, 1], [0, 0, 1]);
+    obj[1] = overlayLayoutDriver(outer1_1[1]).interpolate(overlayLayoutDriver.get(), [0, 0.75, 1], [0, 0, 1]);
     return obj;
   };
-  obj = { interpolate: _require(4026).interpolate, animationDriver: overlayLayoutDriver };
+  obj = { interpolate: _require(4050).interpolate, animationDriver: overlayLayoutDriver };
   fn.__closure = obj;
   fn.__workletHash = 15220711492711;
   fn.__initData = closure_4;

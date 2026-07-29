@@ -1,21 +1,22 @@
-// Module ID: 6748
-// Function ID: 59333
+// Module ID: 6769
+// Function ID: 6770
 // Name: AgeVerifyScreen
-// Dependencies: [31, 6727, 33, 6734, 4016, 4382, 6738, 4165, 689, 4372, 6731, 1212, 5552, 2]
+// Dependencies: [19, 6748, 21, 6755, 4040, 4405, 6759, 4189, 712, 4395, 6752, 1236, 5570, 2]
 // Exports: default
 
-// Module 6748 (AgeVerifyScreen)
-import result from "result";
+// Module 6769 (AgeVerifyScreen)
+import noop from "noop";
 import { AGE_VERIFICATION_MODAL_KEY as closure_4 } from "set";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
 const require = arg1;
-function AgeVerifyScreen(onComplete) {
-  onComplete = onComplete.onComplete;
-  const onClose = onComplete.onClose;
-  let obj = onComplete(isSuspendedUser[3]);
-  isSuspendedUser = obj.useIsSuspendedUser();
+function AgeVerifyScreen(uri) {
+  const onComplete = uri.onComplete;
+  const onClose = uri.onClose;
+  let isSuspendedUser;
+  let callback;
+  isSuspendedUser = onComplete(isSuspendedUser[3]).useIsSuspendedUser();
   const items = [onComplete, onClose];
   callback = callback.useCallback(() => {
     onComplete();
@@ -27,76 +28,78 @@ function AgeVerifyScreen(onComplete) {
       callback();
     }
   }, items1);
+  const obj = onComplete(isSuspendedUser[3]);
   const watchAgeVerificationStatusChange = onComplete(isSuspendedUser[5]).useWatchAgeVerificationStatusChange(callback1);
   const items2 = [callback, isSuspendedUser];
-  const callback2 = callback.useCallback((nativeEvent) => {
+  const onMessage = callback.useCallback((nativeEvent) => {
     if (null != nativeEvent.nativeEvent.data) {
-      if ("string" === typeof tmp.nativeEvent.data) {
-        const _JSON = JSON;
-        let data = JSON.parse(nativeEvent.nativeEvent.data);
-      } else {
-        data = tmp.nativeEvent.data;
-      }
-      let tmp6 = isSuspendedUser;
-      if (isSuspendedUser) {
-        let eventType;
-        if (null != tmp4) {
-          eventType = data.eventType;
+      try {
+        if (typeof nativeEvent.nativeEvent.data === "y") {
+          const _JSON = JSON;
+          let data = JSON.parse(nativeEvent.nativeEvent.data);
+        } else {
+          data = nativeEvent.nativeEvent.data;
         }
-        tmp6 = "Verification.Result" === eventType;
-      }
-      if (tmp6) {
-        callback();
+        let tmp3 = isSuspendedUser;
+        if (isSuspendedUser) {
+          let eventType;
+          if (data != null) {
+            eventType = data.eventType;
+          }
+          tmp3 = "Verification.Result" === eventType;
+        }
+        if (tmp3) {
+          callback();
+        }
+      } catch (err) {
       }
     }
   }, items2);
-  obj = { allowsInlineMediaPlayback: true, javaScriptEnabled: true, source: { uri: onComplete.webviewUrl }, onMessage: callback2, injectedJavaScript: "\n  window.addEventListener('message', function(event) {\n    window.ReactNativeWebView.postMessage(event.data);\n  }, true);\n" };
-  return jsx(onClose(isSuspendedUser[6]), { allowsInlineMediaPlayback: true, javaScriptEnabled: true, source: { uri: onComplete.webviewUrl }, onMessage: callback2, injectedJavaScript: "\n  window.addEventListener('message', function(event) {\n    window.ReactNativeWebView.postMessage(event.data);\n  }, true);\n" });
-}
-function getScreens(headerStyle, arg1, arg2, arg3, headerTitle) {
-  let closure_0 = arg1;
-  let closure_1 = arg2;
-  let closure_2 = arg3;
-  function handleClose() {
-    dependencyMap();
-    let arr = callback2(4372);
-    arr = arr.pop();
-  }
-  return {
-    [closure_6.VERIFY_AGE]: {
-      headerStyle: headerStyle.headerStyle,
-      headerTitle,
-      headerLeft() {
-        const obj = { onPress: handleClose };
-        const intl = callback(1212).intl;
-        obj.text = intl.string(callback(1212).t.cpT0Cq);
-        return outer1_5(callback(6731).HeaderActionButton, obj);
-      },
-      render() {
-        return outer1_5(outer1_8, { webviewUrl: closure_0, onComplete: closure_1, onClose: handleClose });
-      }
-    }
-  };
+  return jsx(onClose(isSuspendedUser[6]), { allowsInlineMediaPlayback: true, javaScriptEnabled: true, source: { uri: uri.webviewUrl }, onMessage, injectedJavaScript: "\n  window.addEventListener('message', function(event) {\n    window.ReactNativeWebView.postMessage(event.data);\n  }, true);\n" });
 }
 let closure_6 = { VERIFY_AGE: "VERIFY_AGE" };
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWER };
-_createForOfIteratorHelperLoose.headerStyle = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+createCacheKey = { headerStyle: null };
+createCacheKey = { backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOWER };
+createCacheKey[0] = createCacheKey;
+createCacheKey = createCacheKey.createStyles(createCacheKey);
 const result = require("jsxProd").fileFinishedImporting("modules/age_assurance/native/AgeVerificationModal.tsx");
 
 export default function AgeVerificationModal(webviewUrl) {
   webviewUrl = webviewUrl.webviewUrl;
   const onComplete = webviewUrl.onComplete;
   const onClose = webviewUrl.onClose;
-  const tmp = _createForOfIteratorHelperLoose();
-  const React = tmp;
-  const intl = webviewUrl(onClose[11]).intl;
+  let React;
+  let c4;
+  const tmp = createCacheKey();
+  React = tmp;
+  let intl = webviewUrl(onClose[11]).intl;
   const stringResult = intl.string(webviewUrl(onClose[11]).t.wJVyYR);
+  c4 = stringResult;
   const items = [tmp, webviewUrl, onComplete, onClose, stringResult];
-  const memo = React.useMemo(() => outer1_9(result, webviewUrl, onComplete, onClose, closure_4), items);
-  const obj = { screens: memo, initialRouteName: constants.VERIFY_AGE };
+  const memo = React.useMemo(() => {
+    function handleClose() {
+      dependencyMap();
+      let arr = callback2(4395);
+      arr = arr.pop();
+    }
+    return {
+      [outer1_6.VERIFY_AGE]: {
+        headerStyle: handleClose.headerStyle,
+        headerTitle: c4,
+        headerLeft() {
+          const obj = { onPress: handleClose, text: null };
+          const intl = callback(1236).intl;
+          obj[1] = intl.string(callback(1236).t.cpT0Cq);
+          return outer1_5(callback(6752).HeaderActionButton, obj);
+        },
+        render() {
+          return outer1_5(outer1_7, { webviewUrl: closure_0, onComplete: closure_1, onClose: handleClose });
+        }
+      }
+    };
+  }, items);
+  let obj = { screens: memo, initialRouteName: constants.VERIFY_AGE, headerBackTitle: null };
   const intl2 = webviewUrl(onClose[11]).intl;
-  obj.headerBackTitle = intl2.string(webviewUrl(onClose[11]).t["13/7kX"]);
-  return jsx(webviewUrl(onClose[12]).Navigator, { screens: memo, initialRouteName: constants.VERIFY_AGE });
+  obj[2] = intl2.string(webviewUrl(onClose[11]).t["13/7kX"]);
+  return jsx(webviewUrl(onClose[12]).Navigator, { screens: memo, initialRouteName: constants.VERIFY_AGE, headerBackTitle: null });
 };

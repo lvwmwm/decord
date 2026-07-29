@@ -1,52 +1,50 @@
-// Module ID: 10807
-// Function ID: 83729
+// Module ID: 10831
+// Function ID: 10832
 // Name: open
-// Dependencies: [10806, 686, 8818, 3776, 2]
+// Dependencies: [10830, 709, 8842, 3800, 2]
 // Exports: chooseReplayPath, close, open, openReplay, setSection, setShouldRecordNextConnection, setSimulcastDebugOverride
 
-// Module 10807 (open)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 10831 (open)
+import updateStats from "updateStats";
 
 const result = require("trackVoiceAndVideoDebuggingSettingsUpdated").fileFinishedImporting("actions/RTCDebugActionCreators.tsx");
 
 export const open = function open(section) {
-  let obj = importDefault(686);
+  let obj = importDefault(709);
   obj = { type: "RTC_DEBUG_MODAL_OPEN", section };
   obj.dispatch(obj);
-  importDefault(686).dispatch({ type: "RTC_DEBUG_POPOUT_WINDOW_OPEN" });
+  importDefault(709).dispatch({ type: "RTC_DEBUG_POPOUT_WINDOW_OPEN" });
 };
 export const close = function close() {
-  importDefault(686).dispatch({ type: "RTC_DEBUG_MODAL_CLOSE" });
+  importDefault(709).dispatch({ type: "RTC_DEBUG_MODAL_CLOSE" });
 };
 export const openReplay = function openReplay() {
-  importDefault(686).dispatch({ type: "RTC_DEBUG_MODAL_OPEN_REPLAY" });
+  importDefault(709).dispatch({ type: "RTC_DEBUG_MODAL_OPEN_REPLAY" });
 };
 export const setSection = function setSection(section) {
-  let obj = importDefault(686);
+  let obj = importDefault(709);
   obj = { type: "RTC_DEBUG_MODAL_SET_SECTION", section };
   obj.dispatch(obj);
 };
 export const setShouldRecordNextConnection = function setShouldRecordNextConnection(value) {
-  importDefault(8818)("connection_replay_log_enabled", value, _isNativeReflectConstruct.shouldRecordNextConnection());
-  let obj = importDefault(686);
+  importDefault(8842)("connection_replay_log_enabled", value, updateStats.shouldRecordNextConnection());
+  let obj = importDefault(709);
   obj = { type: "RTC_DEBUG_SET_RECORDING_FLAG", value };
   obj.dispatch(obj);
 };
 export const setSimulcastDebugOverride = function setSimulcastDebugOverride(userId, context, quality) {
-  let obj = importDefault(686);
+  let obj = importDefault(709);
   obj = { type: "RTC_DEBUG_SET_SIMULCAST_OVERRIDE", userId, context, quality };
   obj.dispatch(obj);
 };
 export const chooseReplayPath = function chooseReplayPath() {
-  const fileManager = importDefault(3776).fileManager;
+  const fileManager = importDefault(3800).fileManager;
   const items = [{ name: "All Files", extensions: ["*"] }];
   fileManager.showOpenDialog({ filters: items }).then((arg0) => {
     let str = "";
     if (0 !== arg0.length) {
       str = arg0[0];
     }
-    let obj = outer1_0(outer1_1[1]);
-    obj = { type: "RTC_DEBUG_MODAL_OPEN_REPLAY_AT_PATH", path: str };
-    obj.dispatch(obj);
+    callback(table[1]).dispatch({ type: "RTC_DEBUG_MODAL_OPEN_REPLAY_AT_PATH", path: str });
   });
 };

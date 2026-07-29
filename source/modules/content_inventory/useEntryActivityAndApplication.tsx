@@ -1,24 +1,24 @@
-// Module ID: 11967
-// Function ID: 92468
+// Module ID: 11991
+// Function ID: 11992
 // Name: useEntryActivityAndApplication
-// Dependencies: [57, 1347, 11968, 566, 5503, 2]
+// Dependencies: [32, 1371, 11992, 589, 5521, 2]
 // Exports: default
 
-// Module 11967 (useEntryActivityAndApplication)
+// Module 11991 (useEntryActivityAndApplication)
 import _slicedToArray from "_slicedToArray";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import participantFromServer from "participantFromServer";
+import entryToKey from "entryToKey";
 
 const require = arg1;
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/content_inventory/useEntryActivityAndApplication.tsx");
+const result = require("entryToKey").fileFinishedImporting("modules/content_inventory/useEntryActivityAndApplication.tsx");
 
 export default function useEntryActivityAndApplication(extra) {
   const _require = extra;
-  let obj = _require(566);
-  const items = [_isNativeReflectConstruct];
+  let obj = _require(589);
+  const items = [entryToKey];
   const stateFromStores = obj.useStateFromStores(items, () => outer1_5.getMatchingActivity(closure_0));
   let application_id;
-  if (null != stateFromStores) {
+  if (stateFromStores != null) {
     application_id = stateFromStores.application_id;
   }
   const items1 = [application_id, ];
@@ -27,24 +27,25 @@ export default function useEntryActivityAndApplication(extra) {
     application_id1 = extra.extra.application_id;
   }
   items1[1] = application_id1;
-  const tmp5 = callback(first(5503)(items1), 2);
-  first = tmp5[0];
-  obj = { activity: stateFromStores };
-  const tmp2 = first(5503);
-  const items2 = [_createForOfIteratorHelperLoose];
-  obj.embeddedActivity = _require(566).useStateFromStores(items2, () => {
+  const tmp7 = callback(first(5521)(items1), 2);
+  first = tmp7[0];
+  obj = { activity: stateFromStores, embeddedActivity: null, anyMatchingApplication: null, activityApplication: null, fallbackApplication: null };
+  const tmp = _require;
+  const tmp4 = first(5521);
+  const items2 = [participantFromServer];
+  obj[1] = _require(589).useStateFromStores(items2, () => {
     let id;
-    if (null != first) {
+    if (first != null) {
       id = first.id;
     }
     return outer1_4.getEmbeddedActivityForUserId(extra.author_id, id);
   });
-  let tmp8 = tmp7;
-  if (null != first) {
-    tmp8 = first;
+  let tmp10 = first;
+  if (first == null) {
+    tmp10 = tmp9;
   }
-  obj.anyMatchingApplication = tmp8;
-  obj.activityApplication = first;
-  obj.fallbackApplication = tmp5[1];
+  obj[2] = tmp10;
+  obj[3] = first;
+  obj[4] = tmp7[1];
   return obj;
 };

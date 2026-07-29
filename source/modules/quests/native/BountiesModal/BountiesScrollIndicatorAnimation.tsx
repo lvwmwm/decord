@@ -1,36 +1,37 @@
-// Module ID: 14043
-// Function ID: 107323
+// Module ID: 14065
+// Function ID: 14066
 // Name: BountiesScrollIndicatorAnimation
-// Dependencies: [57, 31, 27, 33, 4165, 3869, 689, 3877, 2]
+// Dependencies: [32, 19, 17, 21, 4189, 3893, 712, 3901, 2]
 // Exports: default
 
-// Module 14043 (BountiesScrollIndicatorAnimation)
+// Module 14065 (BountiesScrollIndicatorAnimation)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
+import noop from "noop";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
 const require = arg1;
-let closure_7 = _createForOfIteratorHelperLoose.createStyles(() => ({ container: { width: 80, height: 80 } }));
+let closure_7 = createCacheKey.createStyles(() => ({ container: { width: 80, height: 80 } }));
 const result = require("get ActivityIndicator").fileFinishedImporting("modules/quests/native/BountiesModal/BountiesScrollIndicatorAnimation.tsx");
 
 export default function BountiesScrollIndicatorAnimation(startAnimation) {
-  let tmp4;
-  let tmp5;
+  let tmp6;
+  let tmp7;
   const visible = startAnimation.visible;
-  let obj = require(3869) /* map */;
-  const token = obj.useToken(importDefault(689).colors.TEXT_DEFAULT);
+  let obj = require(3893) /* map */;
+  const token = obj.useToken(importDefault(712).colors.TEXT_DEFAULT);
   const tmp = callback2();
-  [tmp4, tmp5] = callback(React.useState(0), 2);
-  const tmp6 = callback(React.useState(visible), 2);
-  if (visible !== tmp6[0]) {
-    tmp6[1](visible);
+  const tmp2 = require;
+  [tmp6, tmp7] = callback(React.useState(0), 2);
+  const tmp8 = callback(React.useState(visible), 2);
+  if (visible !== tmp8[0]) {
+    tmp8[1](visible);
     if (visible) {
-      tmp5((arg0) => arg0 + 1);
+      tmp7((arg0) => arg0 + 1);
     }
   }
-  obj = { style: tmp.container, children: jsx(require(3877) /* ManaContext */.BountiesScrollIndicatorRive, obj, tmp4) };
-  obj = { stateMachine: "State Machine 1", fit: "contain", dataBinding: { color: token, startAnimation: !startAnimation.isFadingInContent } };
-  return <View stateMachine="State Machine 1" fit="contain" dataBinding={{ color: token, startAnimation: !arg0.isFadingInContent }} />;
+  obj = { style: tmp.container, children: jsx(tmp2(3901).BountiesScrollIndicatorRive, { stateMachine: "State Machine 1", fit: "contain", dataBinding: obj }, tmp6) };
+  obj = { color: token, startAnimation: !startAnimation.isFadingInContent };
+  return <View color={token} startAnimation={!arg0.isFadingInContent} />;
 };

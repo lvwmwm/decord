@@ -1,24 +1,24 @@
-// Module ID: 9859
-// Function ID: 76259
+// Module ID: 9881
+// Function ID: 9882
 // Name: LongPressMessageChatItemPreview
-// Dependencies: [33, 4165, 689, 7690, 9266, 2]
+// Dependencies: [21, 4189, 712, 7713, 9290, 2]
 // Exports: default
 
-// Module 9859 (LongPressMessageChatItemPreview)
+// Module 9881 (LongPressMessageChatItemPreview)
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import importDefaultResult from "RowManager";
+import createCacheKey from "createCacheKey";
 
-let obj = {};
-obj = { maxHeight: 2 * require("_createForOfIteratorHelperLoose").space.PX_80 };
-obj.chatItem = obj;
-let closure_3 = _createForOfIteratorHelperLoose.createStyles(obj);
-importDefaultResult = new importDefaultResult();
-const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/messages/native/long_press/LongPressMessageChatItemPreview.tsx");
+let obj = { chatItem: null };
+obj = { maxHeight: 2 * require("Themes").space.PX_80 };
+obj[0] = obj;
+let closure_3 = createCacheKey.createStyles(obj);
+let c4 = new require("setOptions")();
+const tmp2 = new require("setOptions")();
+const result = require("Themes").fileFinishedImporting("modules/messages/native/long_press/LongPressMessageChatItemPreview.tsx");
 
 export default function LongPressMessageChatItemPreview(message) {
-  const obj = { rowGenerator: closure_4, message: message.message, maxHeight: callback().chatItem.maxHeight };
+  const obj = { rowGenerator: closure_4, message: message.message, maxHeight: callback().chatItem.maxHeight, backgroundColor: null };
   const tmp = callback();
-  obj.backgroundColor = importDefault(689).colors.MOBILE_ALERT_BACKGROUND_DEFAULT;
-  return jsx(importDefault(9266), { rowGenerator: closure_4, message: message.message, maxHeight: callback().chatItem.maxHeight });
+  obj[3] = importDefault(712).colors.MOBILE_ALERT_BACKGROUND_DEFAULT;
+  return jsx(importDefault(9290), { rowGenerator: closure_4, message: message.message, maxHeight: callback().chatItem.maxHeight, backgroundColor: null });
 };

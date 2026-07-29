@@ -1,22 +1,22 @@
-// Module ID: 8916
-// Function ID: 70338
+// Module ID: 8940
+// Function ID: 8941
 // Name: XboxLinkPreConnect
-// Dependencies: [31, 8909, 653, 33, 4165, 1456, 8917, 8918, 1212, 2]
+// Dependencies: [19, 8933, 676, 21, 4189, 1480, 8941, 8942, 1236, 2]
 // Exports: default
 
-// Module 8916 (XboxLinkPreConnect)
-import result from "result";
+// Module 8940 (XboxLinkPreConnect)
+import noop from "noop";
 import { XboxLinkModalScenes } from "XboxLinkModalScenes";
 import { PlatformTypes } from "ME";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
 const require = arg1;
-let closure_7 = _createForOfIteratorHelperLoose.createStyles({ image: { width: 231, height: 160 } });
+let closure_7 = createCacheKey.createStyles({ image: { width: 231, height: 160 } });
 const result = require("ME").fileFinishedImporting("modules/user_settings/connections/native/two_way_link/xbox/XboxLinkPreConnect.tsx");
 
 export default function XboxLinkPreConnect() {
-  let obj = navigation(1456);
+  let obj = navigation(1480);
   navigation = obj.useNavigation();
   const items = [navigation];
   const items1 = [navigation];
@@ -26,11 +26,11 @@ export default function XboxLinkPreConnect() {
   const callback1 = React.useCallback(() => {
     navigation.push(outer1_4.ERROR);
   }, items1);
-  const memo = React.useMemo(() => ({ uri: outer1_1(outer1_2[6]) }), []);
-  obj = { platformType: PlatformTypes.XBOX, onError: callback1, onNext: callback, img: memo, imgStyle: callback().image };
-  const intl = navigation(1212).intl;
-  obj.title = intl.string(navigation(1212).t["e/z3na"]);
-  const intl2 = navigation(1212).intl;
-  obj.body = intl2.string(navigation(1212).t["7tXu0i"]);
-  return jsx(navigation(8918).TwoWayLinkPreConnect, { platformType: PlatformTypes.XBOX, onError: callback1, onNext: callback, img: memo, imgStyle: callback().image });
+  const memo = React.useMemo(() => ({ uri: callback(table[6]) }), []);
+  obj = { platformType: PlatformTypes.XBOX, onError: callback1, onNext: callback, img: memo, imgStyle: callback().image, title: null, body: null };
+  const intl = navigation(1236).intl;
+  obj[5] = intl.string(navigation(1236).t["e/z3na"]);
+  const intl2 = navigation(1236).intl;
+  obj[6] = intl2.string(navigation(1236).t["7tXu0i"]);
+  return jsx(navigation(8942).TwoWayLinkPreConnect, { platformType: PlatformTypes.XBOX, onError: callback1, onNext: callback, img: memo, imgStyle: callback().image, title: null, body: null });
 };

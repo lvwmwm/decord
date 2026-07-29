@@ -1,26 +1,26 @@
-// Module ID: 9691
-// Function ID: 75359
+// Module ID: 9713
+// Function ID: 9714
 // Name: GiftingBadgeProgressBanner
-// Dependencies: [31, 27, 33, 4165, 689, 5497, 8402, 480, 9684, 4161, 1212, 2295, 2]
+// Dependencies: [19, 17, 21, 4189, 712, 5515, 8426, 503, 9706, 4185, 1236, 2319, 2]
 // Exports: default
 
-// Module 9691 (GiftingBadgeProgressBanner)
-import "result";
+// Module 9713 (GiftingBadgeProgressBanner)
+import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_4;
-let closure_5;
+let c4;
+let c5;
 const require = arg1;
-({ jsx: closure_4, jsxs: closure_5 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { flexDirection: "row", alignItems: "center", padding: require("_createForOfIteratorHelperLoose").space.PX_8, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SURFACE_HIGH, borderRadius: require("_createForOfIteratorHelperLoose").radii.sm, borderWidth: 1, borderStyle: "solid", borderColor: require("_createForOfIteratorHelperLoose").colors.BORDER_MUTED };
-const merged = Object.assign(require("_createForOfIteratorHelperLoose").shadows.SHADOW_LOW);
-_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
-let obj1 = { alignItems: "center", justifyContent: "center", padding: require("_createForOfIteratorHelperLoose").space.PX_8, marginInlineEnd: require("_createForOfIteratorHelperLoose").space.PX_8 };
-_createForOfIteratorHelperLoose.iconContainer = obj1;
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+({ jsx: c4, jsxs: c5 } = jsxProd);
+createCacheKey = { container: null, iconContainer: null };
+createCacheKey = { flexDirection: "row", alignItems: "center", padding: require("Themes").space.PX_8, backgroundColor: require("Themes").colors.BACKGROUND_SURFACE_HIGH, borderRadius: require("Themes").radii.sm, borderWidth: 1, borderStyle: "solid", borderColor: require("Themes").colors.BORDER_MUTED };
+const merged = Object.assign(require("Themes").shadows.SHADOW_LOW);
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { alignItems: "center", justifyContent: "center", padding: require("Themes").space.PX_8, marginInlineEnd: require("Themes").space.PX_8 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let obj1 = { alignItems: "center", justifyContent: "center", padding: require("Themes").space.PX_8, marginInlineEnd: require("Themes").space.PX_8 };
 const result = require("jsxProd").fileFinishedImporting("modules/premium/gifting/native/views/GiftingBadgeProgressBanner.tsx");
 
 export default function GiftingBadgeProgressBanner(arg0) {
@@ -29,32 +29,33 @@ export default function GiftingBadgeProgressBanner(arg0) {
   let nextTierIcon;
   let nextTierName;
   ({ giftsToNextTier, nextTierName, nextTierIcon, analyticsLocation } = arg0);
-  const tmp = _createForOfIteratorHelperLoose();
+  const tmp = createCacheKey();
   if (null != analyticsLocation) {
     const items = [analyticsLocation];
     let items1 = items;
   } else {
     items1 = [];
   }
-  let obj = {};
-  const tmp2 = importDefault(5497);
-  obj.name = require(480) /* isThrottled */.ImpressionNames.GIFTING_BADGE_PROGRESS_BANNER;
-  obj.type = require(480) /* isThrottled */.ImpressionTypes.VIEW;
-  obj.properties = { gifts_to_next_tier: giftsToNextTier, next_tier: nextTierName, location_stack: tmp2(...items1).analyticsLocations };
-  importDefault(8402)(obj, { trackOnInitialLoad: true });
-  obj = { style: tmp.container };
-  obj = { style: tmp.iconContainer };
-  let tmp8 = null != nextTierIcon;
-  if (tmp8) {
-    const obj1 = { icon: nextTierIcon, size: 24 };
-    tmp8 = callback(importDefault(9684), obj1);
+  let obj = { name: null, type: null, properties: null };
+  const tmp4 = importDefault(5515);
+  obj[0] = require(503) /* encodeProperties */.ImpressionNames.GIFTING_BADGE_PROGRESS_BANNER;
+  obj[1] = require(503) /* encodeProperties */.ImpressionTypes.VIEW;
+  obj[2] = { gifts_to_next_tier: giftsToNextTier, next_tier: nextTierName, location_stack: tmp4(...items1).analyticsLocations };
+  importDefault(8426)(obj, { trackOnInitialLoad: true });
+  obj = { style: tmp.container, children: null };
+  obj = { style: tmp.iconContainer, children: null };
+  let tmp10Result = null != nextTierIcon;
+  if (tmp10Result) {
+    const obj1 = { icon: null, size: 24 };
+    obj1[0] = nextTierIcon;
+    tmp10Result = tmp10(tmp2(9706), obj1);
   }
-  obj.children = tmp8;
-  const items2 = [callback(View, obj), ];
-  const obj2 = { variant: "text-md/semibold" };
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj2.children = intl.formatToPlainString(importDefault(2295)["0+xfd9"], { giftsRemaining: giftsToNextTier, nextTier: nextTierName });
-  items2[1] = callback(require(4161) /* Text */.Text, obj2);
-  obj.children = items2;
+  obj[1] = tmp10Result;
+  const items2 = [closure_4(View, obj), ];
+  const obj2 = { variant: "text-md/semibold", children: null };
+  const intl = tmp6(1236).intl;
+  obj2[1] = intl.formatToPlainString(importDefault(2319)["0+xfd9"], { giftsRemaining: giftsToNextTier, nextTier: nextTierName });
+  items2[1] = closure_4(require(4185) /* Text */.Text, obj2);
+  obj[1] = items2;
   return closure_5(View, obj);
 };

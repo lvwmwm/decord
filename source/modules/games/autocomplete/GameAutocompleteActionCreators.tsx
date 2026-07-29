@@ -1,44 +1,146 @@
-// Module ID: 6153
-// Function ID: 55063
+// Module ID: 6171
+// Function ID: 6172
 // Name: _fetchGameAutocomplete
-// Dependencies: [5, 6142, 653, 6143, 686, 507, 2]
+// Dependencies: [5, 6160, 676, 6161, 709, 530, 2]
 // Exports: fetchGameAutocomplete
 
-// Module 6153 (_fetchGameAutocomplete)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_4 from "_isNativeReflectConstruct";
+// Module 6171 (_fetchGameAutocomplete)
+import sendRequest from "sendRequest";
+import set from "set";
 import { Endpoints } from "ME";
 
 const require = arg1;
-async function _fetchGameAutocomplete(arg0, arg1) {
-  let obj = outer2_0(outer2_2[3]);
-  const result = obj.normalizeGameAutocompleteQuery(arg0);
-  if (null != result) {
-    const shouldSuppressFetchResult = outer2_4.shouldSuppressFetch(tmp2);
-    const dispatch = outer2_1(outer2_2[4]).dispatch;
-    if (shouldSuppressFetchResult) {
-      obj = { type: "GAME_AUTOCOMPLETE_FETCH_SUCCESS", query: result, results: [] };
-      dispatch(obj);
-    } else {
-      obj = { type: "GAME_AUTOCOMPLETE_FETCH", query: tmp2 };
-      dispatch(obj);
-      const HTTP = outer2_0(outer2_2[5]).HTTP;
-      const obj1 = { url: outer2_5.GAMES_AUTOCOMPLETE };
-      const obj2 = { q: tmp2 };
-      obj1.query = obj2;
-      obj1.rejectWithError = false;
-      const body = yield HTTP.get(obj1).body;
-      const mapped = null != body ? body : [].map((id) => ({ id: String(id.id), name: id.name, icon: id.icon }));
-      const obj3 = { type: "GAME_AUTOCOMPLETE_FETCH_SUCCESS", query: tmp2, results: mapped };
-      outer2_1(outer2_2[4]).dispatch(obj3);
-      const arr = null != body ? body : [];
-      const obj5 = outer2_1(outer2_2[4]);
-    }
-    const tmp21 = outer2_1(outer2_2[4]);
+function _fetchGameAutocomplete() {
+  const self = this;
+  const tmp = callback((arg0) => {
+    let closure_0 = arg0;
+    let c6 = 0;
+    let c7 = 0;
+    let c5 = 0;
+    return (function*(arg0, body) {
+      if (c7 === 2) {
+        c7 = 3;
+        HermesBuiltin.throwTypeError();
+      } else if (tmp6 === 3) {
+        if (arg0 === 1) {
+          throw body;
+        } else if (arg0 === 2) {
+          let obj = { value: null, done: true };
+          obj[0] = body;
+          return obj;
+        } else {
+          return { value: "HermesInternal", done: null };
+        }
+      } else {
+        try {
+          c7 = 2;
+          if (0 === c6) {
+            if (arg0 === 1) {
+              c7 = 3;
+              throw body;
+            } else if (arg0 === 2) {
+              c7 = 3;
+              obj = { value: null, done: true };
+              obj[0] = body;
+              return obj;
+            } else {
+              let sendRequest = tmp3;
+              let dependencyMap = tmp7;
+              let c0;
+              let lib;
+              const result = callback(outer1_2[3]).normalizeGameAutocompleteQuery(c0);
+              c0 = result;
+              if (null != result) {
+                const shouldSuppressFetchResult = outer1_4.shouldSuppressFetch(result);
+                const dispatch = outer1_1(outer1_2[4]).dispatch;
+                if (shouldSuppressFetchResult) {
+                  const obj1 = { type: "GAME_AUTOCOMPLETE_FETCH_SUCCESS", query: null, results: null };
+                  obj1[1] = result;
+                  obj1[2] = [];
+                  dispatch(obj1);
+                } else {
+                  const obj2 = { type: "GAME_AUTOCOMPLETE_FETCH", query: null };
+                  obj2[1] = result;
+                  dispatch(obj2);
+                  let constants = 1;
+                  const HTTP = tmp39(outer1_2[5]).HTTP;
+                  let obj3 = { url: null, query: null, rejectWithError: false };
+                  obj3[0] = constants.GAMES_AUTOCOMPLETE;
+                  const obj4 = { q: null };
+                  obj4[0] = result;
+                  obj3[1] = obj4;
+                  c6 = 2;
+                  c7 = 1;
+                  const obj5 = { value: null, done: false };
+                  obj5[0] = HTTP.get(obj3);
+                  return obj5;
+                }
+                const tmp46 = outer1_1(outer1_2[4]);
+              }
+              c7 = 3;
+              const obj13 = callback(outer1_2[3]);
+              tmp39 = callback;
+            }
+          } else if (1 === tmp7) {
+            constants = 0;
+            dependencyMap = set;
+            obj3 = lib(709);
+            const obj6 = { type: "GAME_AUTOCOMPLETE_FETCH_FAILURE", query: null };
+            obj6[1] = c0;
+            obj3.dispatch(obj6);
+            throw dependencyMap;
+          } else if (arg0 === 1) {
+            c7 = 3;
+            throw body;
+          } else if (arg0 !== 2) {
+            body = body.body;
+            lib = body;
+            if (body == null) {
+              lib = [];
+            }
+            lib = lib.map((id) => ({ id: String(id.id), name: id.name, icon: id.icon }));
+            obj = lib(709);
+            const obj7 = { type: "GAME_AUTOCOMPLETE_FETCH_SUCCESS", query: null, results: null };
+            obj7[1] = c0;
+            obj7[2] = lib;
+            obj.dispatch(obj7);
+            constants = 0;
+          }
+          constants = 0;
+          c7 = 3;
+          const obj8 = { value: null, done: true };
+          obj8[0] = body;
+          return obj8;
+        } catch (tmp29) {
+          set = tmp29;
+          if (tmp4 === constants) {
+            c7 = tmp2;
+            throw tmp29;
+          } else {
+            c6 = tmp;
+          }
+        }
+      }
+    })();
+  });
+  const _fetchGameAutocomplete = tmp;
+  const apply = tmp.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
   }
+  return applyArgumentsResult;
 }
 let result = require("ME").fileFinishedImporting("modules/games/autocomplete/GameAutocompleteActionCreators.tsx");
 
 export const fetchGameAutocomplete = function fetchGameAutocomplete(arg0) {
-  return _fetchGameAutocomplete(...arguments);
+  const self = this;
+  const apply = _fetchGameAutocomplete.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
 };

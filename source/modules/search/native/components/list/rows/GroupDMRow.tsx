@@ -1,15 +1,15 @@
-// Module ID: 15457
-// Function ID: 117820
+// Module ID: 15491
+// Function ID: 15492
 // Name: GroupDMRow
-// Dependencies: [31, 33, 4355, 9070, 1273, 9071, 4161, 15456, 2]
+// Dependencies: [19, 21, 4380, 9094, 1297, 9095, 4185, 15490, 2]
 // Exports: default
 
-// Module 15457 (GroupDMRow)
-import result from "result";
+// Module 15491 (GroupDMRow)
+import noop from "noop";
 import { jsx } from "jsxProd";
 
 const require = arg1;
-const result = require("computeDefaultGroupDmNameFromUserIds").fileFinishedImporting("modules/search/native/components/list/rows/GroupDMRow.tsx");
+const result = require("computeChannelName").fileFinishedImporting("modules/search/native/components/list/rows/GroupDMRow.tsx");
 
 export default function GroupDMRow(channel) {
   let accessibilityActions;
@@ -18,36 +18,35 @@ export default function GroupDMRow(channel) {
   channel = channel.channel;
   const onPress = channel.onPress;
   ({ trailing, onAccessibilityAction, accessibilityActions } = channel);
-  const tmp = onPress(4355)(channel);
+  let str = onPress(4380)(channel);
   const items = [channel.id, onPress];
   const callback = React.useCallback(() => {
     onPress(channel.id);
   }, items);
-  let obj = { size: channel(1273).AvatarSizes.LARGE_48, channel };
-  const tmp3 = onPress(9070);
-  const tmp4 = jsx(onPress(9070), { size: channel(1273).AvatarSizes.LARGE_48, channel });
-  const recipientsLabel = channel(9071).useRecipientsLabel(channel);
-  let tmp6;
+  let obj = { size: null, channel: null };
+  obj[0] = channel(1297).AvatarSizes.LARGE_48;
+  obj[1] = channel;
+  const tmp4 = onPress(9094);
+  const tmp6 = jsx(onPress(9094), { size: null, channel: null });
+  const recipientsLabel = channel(9095).useRecipientsLabel(channel);
+  let tmp3Result;
   if (null != recipientsLabel) {
-    obj = { variant: "text-xs/medium", color: "text-muted", lineClamp: 1, children: recipientsLabel };
-    tmp6 = jsx(channel(4161).Text, { variant: "text-xs/medium", color: "text-muted", lineClamp: 1, children: recipientsLabel });
+    obj = { variant: "text-xs/medium", color: "text-muted", lineClamp: 1, children: null };
+    obj[3] = recipientsLabel;
+    tmp3Result = tmp3(tmp5(4185).Text, obj);
   }
-  obj = {};
-  let str = "";
-  let str2 = "";
-  if (null != tmp) {
-    str2 = tmp;
+  let str2 = str;
+  if (str == null) {
+    str2 = "";
   }
-  obj.label = str2;
-  obj.icon = tmp4;
-  obj.onPress = callback;
-  if (null != tmp) {
-    str = tmp;
+  obj = { label: str2, icon: tmp6, onPress: callback, accessibilityLabel: null, subLabel: null, trailing: null, accessibilityActions: null, onAccessibilityAction: null };
+  if (str == null) {
+    str = "";
   }
-  obj.accessibilityLabel = str;
-  obj.subLabel = tmp6;
-  obj.trailing = trailing;
-  obj.accessibilityActions = accessibilityActions;
-  obj.onAccessibilityAction = onAccessibilityAction;
-  return jsx(channel(15456).SearchListRow, {});
+  obj[3] = str;
+  obj[4] = tmp3Result;
+  obj[5] = trailing;
+  obj[6] = accessibilityActions;
+  obj[7] = onAccessibilityAction;
+  return jsx(channel(15490).SearchListRow, { label: str2, icon: tmp6, onPress: callback, accessibilityLabel: null, subLabel: null, trailing: null, accessibilityActions: null, onAccessibilityAction: null });
 };

@@ -1,35 +1,36 @@
-// Module ID: 8737
-// Function ID: 69149
+// Module ID: 8761
+// Function ID: 8762
 // Name: useProductDisableState
-// Dependencies: [3817, 566, 656, 1212, 2]
+// Dependencies: [3841, 589, 679, 1236, 2]
 // Exports: useProductDisableState
 
-// Module 8737 (useProductDisableState)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 8761 (useProductDisableState)
+import reset from "reset";
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/collectibles/hooks/useProductDisableState.tsx");
 
 export const useProductDisableState = function useProductDisableState(skuId) {
-  let obj = require(566) /* initialize */;
-  const items = [_isNativeReflectConstruct];
+  let obj = require(589) /* initialize */;
+  const items = [reset];
   const stateFromStores = obj.useStateFromStores(items, () => {
-    const premiumSubscription = outer1_2.getPremiumSubscription();
+    premiumSubscription = premiumSubscription.getPremiumSubscription();
     let prop;
-    if (null != premiumSubscription) {
+    if (premiumSubscription != null) {
       prop = premiumSubscription.isPurchasedExternally;
     }
     return true === prop;
   });
-  const ALL = require(656) /* set */.FractionalPremiumSKUsSets.ALL;
+  const ALL = require(679) /* set */.FractionalPremiumSKUsSets.ALL;
   if (ALL.has(skuId)) {
-    obj = { isDisabled: stateFromStores };
+    obj = { isDisabled: null, disabledReason: null };
+    obj[0] = stateFromStores;
     let stringResult = null;
     if (stateFromStores) {
-      const intl = require(1212) /* getSystemLocale */.intl;
-      stringResult = intl.string(require(1212) /* getSystemLocale */.t.NbveHD);
+      const intl = tmp(1236).intl;
+      stringResult = intl.string(tmp(1236).t.NbveHD);
     }
-    obj.disabledReason = stringResult;
+    obj[1] = stringResult;
   } else {
     obj = { isDisabled: false, disabledReason: null };
   }

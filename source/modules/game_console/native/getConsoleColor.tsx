@@ -1,14 +1,14 @@
-// Module ID: 15963
-// Function ID: 123231
+// Module ID: 15998
+// Function ID: 15999
 // Name: getConsoleColor
-// Dependencies: [653, 689, 2]
+// Dependencies: [676, 712, 2]
 // Exports: default
 
-// Module 15963 (getConsoleColor)
+// Module 15998 (getConsoleColor)
 let PLAYSTATION;
 let PLAYSTATION_STAGING;
 let XBOX;
-const obj = { [XBOX]: require("_createForOfIteratorHelperLoose").unsafe_rawColors.PLATFORM_XBOX, [PLAYSTATION]: require("_createForOfIteratorHelperLoose").unsafe_rawColors.PLATFORM_PLAYSTATION, [PLAYSTATION_STAGING]: require("_createForOfIteratorHelperLoose").unsafe_rawColors.PLATFORM_PLAYSTATION };
+const obj = { [XBOX]: require("Themes").unsafe_rawColors.PLATFORM_XBOX, [PLAYSTATION]: require("Themes").unsafe_rawColors.PLATFORM_PLAYSTATION, [PLAYSTATION_STAGING]: require("Themes").unsafe_rawColors.PLATFORM_PLAYSTATION };
 ({ XBOX, PLAYSTATION, PLAYSTATION_STAGING } = require("ME").PlatformTypes);
 const result = require("set").fileFinishedImporting("modules/game_console/native/getConsoleColor.tsx");
 

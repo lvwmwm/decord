@@ -1,30 +1,30 @@
-// Module ID: 8299
-// Function ID: 66493
+// Module ID: 8323
+// Function ID: 8324
 // Name: getNextShownUpcomingEventNoticeType
-// Dependencies: [1354, 3747, 21, 2]
+// Dependencies: [1378, 3771, 11, 2]
 // Exports: getNextShownUpcomingEventNoticeType
 
-// Module 8299 (getNextShownUpcomingEventNoticeType)
+// Module 8323 (getNextShownUpcomingEventNoticeType)
 import GUILD_EVENT_MAX_NAME_LENGTH from "GUILD_EVENT_MAX_NAME_LENGTH";
 
-let closure_2;
-let closure_3;
-let closure_4;
-let closure_5;
-({ UpcomingGuildEventNoticeTypes: closure_2, NEW_EVENT_WINDOW_MILLISECONDS: closure_3, EVENT_STARTING_SOON_WINDOW_MILLISECONDS: closure_4, ACKED_RECENTLY_WINDOW_DAYS: closure_5 } = GUILD_EVENT_MAX_NAME_LENGTH);
+let c3;
+let c4;
+let c5;
+let obj1;
+({ UpcomingGuildEventNoticeTypes: obj1, NEW_EVENT_WINDOW_MILLISECONDS: c3, EVENT_STARTING_SOON_WINDOW_MILLISECONDS: c4, ACKED_RECENTLY_WINDOW_DAYS: c5 } = GUILD_EVENT_MAX_NAME_LENGTH);
 const result = require("DISCORD_EPOCH").fileFinishedImporting("modules/guild_scheduled_events/GuildScheduledEventUtils.tsx");
 
-export const getNextShownUpcomingEventNoticeType = function getNextShownUpcomingEventNoticeType(guildScheduledEvent, arg1, arg2, arg3) {
-  let obj = importDefault(3747)();
+export const getNextShownUpcomingEventNoticeType = function getNextShownUpcomingEventNoticeType(guildScheduledEvent, arg1, arg2, flag) {
+  const obj = importDefault(3771)();
   const time = new Date(guildScheduledEvent.scheduled_start_time).getTime();
-  obj = { start: time - closure_4, end: time };
-  if (obj.isBetween(obj.start, obj.end)) {
+  const diff = time - closure_4;
+  if (obj.isBetween(diff, time)) {
     if (null != arg1) {
-      const obj5 = importDefault(3747)(arg1);
-      const isBetweenResult = obj5.isBetween(obj.start, obj.end);
+      const obj4 = tmp(3771)(arg1);
+      const isBetweenResult = obj4.isBetween(diff, time);
       let EVENT_STARTING_SOON;
       if (!isBetweenResult) {
-        if (!obj5.isBetween(obj6.subtract(closure_5, "days"), time)) {
+        if (!obj4.isBetween(obj5.subtract(closure_5, "days"), time)) {
           EVENT_STARTING_SOON = constants.EVENT_STARTING_SOON;
         }
       }
@@ -33,14 +33,14 @@ export const getNextShownUpcomingEventNoticeType = function getNextShownUpcoming
       return constants.EVENT_STARTING_SOON;
     }
   } else {
-    const extractTimestampResult = importDefault(21).extractTimestamp(guildScheduledEvent.id);
-    let tmp6 = extractTimestampResult;
-    if (null != arg2) {
-      tmp6 = arg2;
+    let tmp5 = arg2;
+    const extractTimestampResult = tmp(11).extractTimestamp(guildScheduledEvent.id);
+    if (arg2 == null) {
+      tmp5 = extractTimestampResult;
     }
-    if (obj.isBetween(extractTimestampResult, Math.min(tmp6 + closure_3, time))) {
+    if (obj.isBetween(extractTimestampResult, Math.min(tmp5 + closure_3, time))) {
       if (null == arg1) {
-        if (!arg3) {
+        if (!flag) {
           return constants.NEW_EVENT;
         }
       }

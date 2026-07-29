@@ -1,151 +1,141 @@
-// Module ID: 8195
-// Function ID: 65515
+// Module ID: 8219
+// Function ID: 8220
 // Name: GuildScheduledEventDetailsActionSheet
-// Dependencies: [57, 31, 27, 1838, 5761, 1354, 33, 4165, 689, 1212, 5497, 5517, 566, 8196, 8198, 8199, 8197, 1557, 8200, 8201, 8731, 5221, 5223, 12251, 12252, 2]
+// Dependencies: [32, 19, 17, 1862, 5779, 1378, 21, 4189, 712, 1236, 5515, 5535, 589, 8220, 8222, 8223, 8221, 1581, 8224, 8225, 8755, 5243, 5245, 12275, 12276, 2]
 // Exports: default
 
-// Module 8195 (GuildScheduledEventDetailsActionSheet)
+// Module 8219 (GuildScheduledEventDetailsActionSheet)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
-import { View } from "get ActivityIndicator";
-import closure_6 from "_createForOfIteratorHelperLoose";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import usePrimaryActionButtonType from "usePrimaryActionButtonType";
+import { View } from "useSafeAreaInsets";
+import createGuildRecordFromRust from "createGuildRecordFromRust";
+import scheduledEventSort from "scheduledEventSort";
 import GUILD_EVENT_MAX_NAME_LENGTH from "GUILD_EVENT_MAX_NAME_LENGTH";
-import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import jsxProd from "Background";
+import createCacheKey from "createCacheKey";
 
-let closure_10;
-let closure_11;
-let closure_8;
-let closure_9;
+let c10;
+let c9;
+let metroImportAll;
+let unpackModuleId;
 const require = arg1;
-({ EventDetailSections: closure_8, MAX_RSVP_USER_DISPLAY_COUNT: closure_9 } = GUILD_EVENT_MAX_NAME_LENGTH);
-({ jsx: closure_10, jsxs: closure_11 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_12 };
-_createForOfIteratorHelperLoose.segmentedControl = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.header = { flexDirection: "column" };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+({ EventDetailSections: metroImportAll, MAX_RSVP_USER_DISPLAY_COUNT: c9 } = GUILD_EVENT_MAX_NAME_LENGTH);
+({ jsx: c10, jsxs: unpackModuleId } = jsxProd);
+createCacheKey = { segmentedControl: null, header: null };
+createCacheKey = { paddingHorizontal: require("Themes").space.PX_12 };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { flexDirection: "column" };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
 const result = require("get ActivityIndicator").fileFinishedImporting("modules/guild_scheduled_events/native/components/GuildScheduledEventDetailsActionSheet.tsx");
 
 export default function GuildScheduledEventDetailsActionSheet(eventId) {
   let c5;
   let c6;
+  let c7;
   let error;
   let loading;
-  let tmp14;
-  let tmp16;
+  let tmp18;
+  let tmp20;
+  let tmp22;
   eventId = eventId.eventId;
   const event = eventId.event;
   const onCloseActionSheet = eventId.onCloseActionSheet;
+  let stateFromStores;
   let callback;
   let React;
   c5 = undefined;
   c6 = undefined;
-  let _isNativeReflectConstruct;
+  c7 = undefined;
   let items4;
-  let tmp = _createForOfIteratorHelperLoose();
-  const tmp3 = callback(React.useState(eventId.recurrenceId), 2);
-  const first = tmp3[0];
-  let obj = eventId(stateFromStores[12]);
-  let items = [_isNativeReflectConstruct];
+  let tmp = createCacheKey();
+  let obj = React;
+  const tmp6 = callback(React.useState(eventId.recurrenceId), 2);
+  const first = tmp6[0];
+  let obj1 = eventId(stateFromStores[12]);
+  let items = [c7];
   const items1 = [eventId, event];
-  stateFromStores = obj.useStateFromStores(items, () => {
-    guildScheduledEvent = guildScheduledEvent.getGuildScheduledEvent(eventId);
-    if (null == guildScheduledEvent) {
+  stateFromStores = obj1.useStateFromStores(items, () => {
+    let guildScheduledEvent = _undefined4.getGuildScheduledEvent(eventId);
+    if (guildScheduledEvent == null) {
       guildScheduledEvent = event;
     }
     return guildScheduledEvent;
   }, items1);
-  let obj1 = eventId(stateFromStores[12]);
+  let obj2 = eventId(stateFromStores[12]);
   const items2 = [c6];
   let id;
-  const stateFromStores1 = obj1.useStateFromStores(items2, () => {
+  const stateFromStores1 = obj2.useStateFromStores(items2, () => {
     let guild_id;
-    if (null != stateFromStores) {
+    if (stateFromStores != null) {
       guild_id = stateFromStores.guild_id;
     }
     return null != _undefined3.getGuild(guild_id);
   });
-  if (null != stateFromStores) {
+  if (stateFromStores != null) {
     id = stateFromStores.id;
   }
   let guild_id;
-  let tmp2 = event(stateFromStores[10]);
-  if (null != stateFromStores) {
+  let tmp4 = event(stateFromStores[10]);
+  if (stateFromStores != null) {
     guild_id = stateFromStores.guild_id;
   }
-  const tmp8Result = event(stateFromStores[13])(guild_id, id, first);
-  callback = tmp8Result;
-  const tmp11 = event(stateFromStores[14])(id, first);
-  React = tmp11;
-  const items3 = [tmp11, tmp8Result];
-  const memo = React.useMemo(() => {
-    let tmp2 = length >= outer1_9;
-    if (tmp2) {
-      tmp2 = tmp > outer1_9;
-    }
+  const tmp2ResultResult = event(stateFromStores[13])(guild_id, id, first);
+  callback = tmp2ResultResult;
+  const tmp15 = event(stateFromStores[14])(id, first);
+  React = tmp15;
+  const items3 = [tmp15, tmp2ResultResult];
+  const memo = obj.useMemo(() => {
     let num = 0;
     if (tmp2) {
       const _Math = Math;
       num = Math.max(tmp - length, 0);
     }
+    let tmp4 = arr;
     if (num > 0) {
-      if (_undefined.length > 0) {
+      tmp4 = arr;
+      if (arr.length > 0) {
         const items = [];
-        const arraySpreadResult = HermesBuiltin.arraySpread(_undefined, 0);
-        const obj = { count: num };
-        items[arraySpreadResult] = obj;
-        const sum = arraySpreadResult + 1;
-        let tmp6 = items;
+        const obj = { count: null };
+        obj[0] = num;
+        items[HermesBuiltin.arraySpread(arr, 0)] = obj;
+        tmp4 = items;
       }
-      return tmp6;
     }
-    tmp6 = _undefined;
+    return tmp4;
   }, items3);
-  const tmp8 = event(stateFromStores[13]);
-  [c5, tmp14] = callback(event(stateFromStores[15])(() => {
+  let tmp5Result = tmp5(tmp2(tmp3[15])(() => {
     let id;
-    if (null != stateFromStores) {
-      id = stateFromStores.id;
+    if (stateFromStores != null) {
+      id = tmp.id;
     }
     let guild_id;
-    if (null != stateFromStores) {
-      guild_id = stateFromStores.guild_id;
+    if (stateFromStores != null) {
+      guild_id = tmp.guild_id;
     }
     return event(stateFromStores[16]).getGuildEventUsers(id, null, guild_id);
   }), 2);
-  ({ loading, error } = tmp14);
-  const tmp13 = callback(event(stateFromStores[15])(() => {
-    let id;
-    if (null != stateFromStores) {
-      id = stateFromStores.id;
-    }
-    let guild_id;
-    if (null != stateFromStores) {
-      guild_id = stateFromStores.guild_id;
-    }
-    return event(stateFromStores[16]).getGuildEventUsers(id, null, guild_id);
-  }), 2);
-  [tmp16, c6] = callback(React.useState(0), 2);
-  const tmp17 = callback(React.useState(0), 2);
-  _isNativeReflectConstruct = tmp17[1];
-  const bottom = event(stateFromStores[17])().bottom;
-  callback = React.useCallback((nativeEvent) => {
-    guildScheduledEvent(nativeEvent.nativeEvent.layout.height);
+  [c5, tmp18] = tmp5Result;
+  ({ loading, error } = tmp18);
+  tmp5Result = tmp5(obj.useState(0), 2);
+  [tmp20, c6] = tmp5Result;
+  const tmp2Result = event(stateFromStores[13]);
+  [tmp22, c7] = callback(obj.useState(0), 2);
+  const bottom = tmp2(tmp3[17])().bottom;
+  callback = obj.useCallback((nativeEvent) => {
+    _undefined4(nativeEvent.nativeEvent.layout.height);
   }, []);
   items4 = [];
   items4[0] = items4.EVENT_INFO;
-  const callback1 = React.useCallback(() => {
+  const callback1 = obj.useCallback(() => {
 
   }, []);
   if (stateFromStores1) {
-    items4.push(items4.RSVP_LIST);
+    items4.push(tmp25.RSVP_LIST);
   }
   eventId(stateFromStores[18]);
   obj = {
     pageWidth: 0,
-    defaultIndex: tmp16,
+    defaultIndex: tmp20,
     onSetActiveIndex(arg0) {
       let tmp = arg0 < items4.length;
       if (tmp) {
@@ -159,53 +149,68 @@ export default function GuildScheduledEventDetailsActionSheet(eventId) {
     items: items4.map((arg0) => {
       if (items4.EVENT_INFO === arg0) {
         const intl3 = eventId(stateFromStores[9]).intl;
-        let stringResult = intl3.string(eventId(stateFromStores[9]).t.iW6Xuo);
-      } else if (items4.RSVP_LIST === arg0) {
+        let id = intl3.string(eventId(stateFromStores[9]).t.iW6Xuo);
+      } else if (tmp2.RSVP_LIST === arg0) {
         const intl2 = eventId(stateFromStores[9]).intl;
-        let obj = { userCount: tmp };
-        stringResult = intl2.formatToPlainString(eventId(stateFromStores[9]).t["ZrTT/N"], obj);
+        const obj = { userCount: null };
+        obj[0] = tmp;
+        id = intl2.formatToPlainString(eventId(stateFromStores[9]).t["ZrTT/N"], obj);
       } else {
         const intl = eventId(stateFromStores[9]).intl;
-        stringResult = intl.string(eventId(stateFromStores[9]).t.iW6Xuo);
+        id = intl.string(eventId(stateFromStores[9]).t.iW6Xuo);
       }
-      obj = { id: stringResult, label: stringResult, page: null };
-      return obj;
+      return { id, label: id, page: null };
     })
   };
   if (null == stateFromStores) {
     return null;
   } else {
-    obj = { style: tmp.header, onLayout: callback1 };
-    obj1 = { event: stateFromStores };
-    const items5 = [callback2(eventId(stateFromStores[19]).GuildEventCardImageHeader, obj1), ];
-    let tmp28 = null;
+    obj = { style: null, onLayout: null, children: null };
+    obj[0] = tmp.header;
+    obj[1] = callback1;
+    obj1 = { event: null };
+    obj1[0] = stateFromStores;
+    const items5 = [callback2(tmp8(tmp3[19]).GuildEventCardImageHeader, obj1), ];
+    let tmp35Result = null;
     if (items4.length > 1) {
-      const obj2 = { style: tmp.segmentedControl };
-      const obj3 = { state: tmp23 };
-      obj2.children = callback2(eventId(stateFromStores[20]).SegmentedControl, obj3);
-      tmp28 = callback2(c5, obj2);
+      obj2 = { style: null, children: null };
+      obj2[0] = tmp.segmentedControl;
+      const obj3 = { state: null };
+      obj3[0] = tmp28;
+      obj2[1] = tmp35(tmp8(tmp3[20]).SegmentedControl, obj3);
+      tmp35Result = tmp35(tmp34, obj2);
     }
-    items5[1] = tmp28;
-    obj.children = items5;
-    if (tmp16 < items4.length) {
-      let EVENT_INFO = items4[tmp16];
+    items5[1] = tmp35Result;
+    obj[2] = items5;
+    const obj4 = { value: null, children: null };
+    obj4[0] = tmp4(event(stateFromStores[11]).GUILD_EVENT_MODAL).analyticsLocations;
+    const obj5 = { scrollable: true, startExpanded: true, onDismiss: null, header: null, children: null };
+    obj5[2] = onCloseActionSheet;
+    obj5[3] = closure_11(c5, obj);
+    if (tmp31 === tmp25.EVENT_INFO) {
+      const obj6 = { children: null };
+      const obj7 = { guildEvent: null, safeBottomPadding: null, onCloseActionSheet: null, onLayout: null, recurrenceId: null, onRecurrencePress: null };
+      obj7[0] = stateFromStores;
+      obj7[1] = bottom;
+      obj7[2] = onCloseActionSheet;
+      obj7[3] = callback;
+      obj7[4] = first;
+      obj7[5] = tmp6[1];
+      obj6[0] = tmp35(tmp2(tmp3[23]), obj7);
+      tmp35Result = tmp35(tmp8(tmp3[22]).BottomSheetScrollView, obj6);
     } else {
-      EVENT_INFO = items4.EVENT_INFO;
+      const obj8 = { userListItems: null, guildId: null, loading: null, error: null, contentHeight: null, safeBottomPadding: null };
+      obj8[0] = memo;
+      obj8[1] = stateFromStores.guild_id;
+      obj8[2] = loading;
+      obj8[3] = error;
+      obj8[4] = tmp22 - bottom;
+      obj8[5] = bottom;
+      tmp35Result = tmp35(tmp2(tmp3[24]), obj8);
     }
-    const obj4 = { value: tmp2(event(stateFromStores[11]).GUILD_EVENT_MODAL).analyticsLocations };
-    const obj5 = { scrollable: true, startExpanded: true, onDismiss: onCloseActionSheet, header: closure_11(c5, obj) };
-    if (EVENT_INFO === items4.EVENT_INFO) {
-      const obj6 = {};
-      const obj7 = { guildEvent: stateFromStores, safeBottomPadding: bottom, onCloseActionSheet, onLayout: callback, recurrenceId: first, onRecurrencePress: tmp3[1] };
-      obj6.children = callback2(event(stateFromStores[23]), obj7);
-      let tmp38 = callback2(eventId(stateFromStores[22]).BottomSheetScrollView, obj6);
-    } else {
-      const obj8 = { userListItems: memo, guildId: stateFromStores.guild_id, loading, error, contentHeight: tmp17[0] - bottom, safeBottomPadding: bottom };
-      tmp38 = callback2(event(stateFromStores[24]), obj8);
-    }
-    obj5.children = tmp38;
-    obj4.children = callback2(eventId(stateFromStores[21]).BottomSheet, obj5);
-    return callback2(eventId(stateFromStores[10]).AnalyticsLocationProvider, obj4);
+    obj5[4] = tmp35Result;
+    obj4[1] = callback2(tmp8(tmp3[21]).BottomSheet, obj5);
+    return callback2(tmp8(tmp3[10]).AnalyticsLocationProvider, obj4);
   }
-  const tmp15 = callback(React.useState(0), 2);
+  const tmp5Result1 = callback(obj.useState(0), 2);
 };

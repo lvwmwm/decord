@@ -1,120 +1,102 @@
-// Module ID: 4335
-// Function ID: 37780
-// Name: normalizePath
-// Dependencies: [4197, 4336, 477, 2]
-// Exports: getRunningGameAnalytics, isVerifiedGameExecutable
+// Module ID: 4359
+// Function ID: 4360
+// Name: removeExecutablePathPrefix
+// Dependencies: [4221, 4360, 500, 2]
+// Exports: getRunningGameAnalytics, isVerifiedGameExecutable, removeExecutablePathPrefix
 
-// Module 4335 (normalizePath)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 4359 (removeExecutablePathPrefix)
+import gameFromServer from "gameFromServer";
 
 const require = arg1;
-function normalizePath(str) {
-  const formatted = str.toLowerCase();
-  let substr = formatted;
-  if (formatted.endsWith("/")) {
-    substr = formatted.slice(0, -1);
-  }
-  return substr;
-}
-function removeExecutablePathPrefix(exePath) {
-  const parts = normalizePath(exePath).split("/");
-  const substr = parts.slice(-2);
-  return substr.join("/");
-}
 const result = require("set").fileFinishedImporting("modules/game_detection/GameAnalyticsUtils.tsx");
 
-export { removeExecutablePathPrefix };
+export const removeExecutablePathPrefix = function removeExecutablePathPrefix(exePath) {
+  const formatted = exePath.toLowerCase();
+  let str = formatted;
+  if (formatted.endsWith("/")) {
+    str = formatted.slice(0, -1);
+  }
+  const parts = str.split("/");
+  const substr = parts.slice(-2);
+  return substr.join("/");
+};
 export const getRunningGameAnalytics = function getRunningGameAnalytics(streamApplication) {
   if (null == streamApplication) {
-    let obj = { gameName: undefined, gameId: undefined, exe: undefined, distributor: undefined, sku: undefined, gameMetadata: undefined, rawExePath: undefined };
-    return obj;
+    return { gameName: "Array", gameId: "call", exe: "Map", distributor: "variant", sku: "sa", gameMetadata: "o", rawExePath: "isArray" };
   } else {
-    const tmp = "exePath" in streamApplication ? streamApplication.exePath : streamApplication.exe;
-    obj = {};
+    const str = "exePath" in streamApplication ? streamApplication.exePath : streamApplication.exe;
     let id = streamApplication.id;
-    let tmp2;
-    if (null != id) {
-      tmp2 = id;
-    }
-    obj.id = tmp2;
+    let obj = { id: null, name: null, exePath: null, cmdLine: null, lastFocused: 0 };
+    obj[0] = id;
     const name = streamApplication.name;
-    let tmp3;
-    if (null != name) {
-      tmp3 = name;
+    obj[1] = name;
+    let str2 = str;
+    if (str == null) {
+      str2 = "";
     }
-    obj.name = tmp3;
-    let str = "";
-    let str2 = "";
-    if (null != tmp) {
-      str2 = tmp;
+    obj[2] = str2;
+    let str3 = str;
+    if (str == null) {
+      str3 = "";
     }
-    obj.exePath = str2;
-    if (null != tmp) {
-      str = tmp;
-    }
-    obj.cmdLine = str;
-    obj.lastFocused = 0;
-    const findGameResult = _isNativeReflectConstruct.findGame(obj);
-    obj = {};
+    obj[3] = str3;
+    const findGameResult = gameFromServer.findGame(obj);
     const name2 = streamApplication.name;
-    let tmp6;
-    if (null != name2) {
-      tmp6 = name2;
-    }
-    obj.gameName = tmp6;
+    obj = { gameName: null, gameId: null, exe: null, distributor: null, sku: null, gameMetadata: null, rawExePath: null };
+    obj[0] = name2;
     let id2 = streamApplication.id;
-    if (null == id2) {
+    if (id2 == null) {
       id = undefined;
-      if (null != findGameResult) {
+      if (findGameResult != null) {
         id = findGameResult.id;
       }
       id2 = id;
     }
-    let tmp8;
-    if (null != id2) {
-      tmp8 = id2;
+    obj[1] = id2;
+    let joined;
+    if (null != str) {
+      const formatted = str.toLowerCase();
+      let str5 = formatted;
+      if (formatted.endsWith("/")) {
+        str5 = formatted.slice(0, -1);
+      }
+      const parts = str5.split("/");
+      const substr = parts.slice(-2);
+      joined = substr.join("/");
     }
-    obj.gameId = tmp8;
-    let tmp9;
-    if (null != tmp) {
-      tmp9 = removeExecutablePathPrefix(tmp);
-    }
-    obj.exe = tmp9;
+    obj[2] = joined;
     const distributor = streamApplication.distributor;
-    let tmp11;
-    if (null != distributor) {
-      tmp11 = distributor;
-    }
-    obj.distributor = tmp11;
+    obj[3] = distributor;
     const sku = streamApplication.sku;
-    let tmp12;
-    if (null != sku) {
-      tmp12 = sku;
-    }
-    obj.sku = tmp12;
+    obj[4] = sku;
     let subgameMetadata;
     if (null != streamApplication) {
-      subgameMetadata = require(4336) /* hasSubgameInfoChanged */.getSubgameMetadata(streamApplication);
-      const obj3 = require(4336) /* hasSubgameInfoChanged */;
+      subgameMetadata = require(4360) /* _openRobloxURLWithRootPlaceId */.getSubgameMetadata(streamApplication);
+      const obj4 = require(4360) /* _openRobloxURLWithRootPlaceId */;
     }
-    obj.gameMetadata = subgameMetadata;
-    obj.rawExePath = tmp;
+    obj[5] = subgameMetadata;
+    obj[6] = str;
     return obj;
   }
 };
-export const isVerifiedGameExecutable = function isVerifiedGameExecutable(arg0, arr) {
-  if (null != arg0) {
+export const isVerifiedGameExecutable = function isVerifiedGameExecutable(str, arr) {
+  if (null != str) {
     if (null != arr) {
-      const _require = normalizePath(arg0);
-      const dependencyMap = _require(477).getPlatformName();
+      const formatted = str.toLowerCase();
+      let substr = formatted;
+      if (formatted.endsWith("/")) {
+        substr = formatted.slice(0, -1);
+      }
+      const dependencyMap = substr(500).getPlatformName();
       return arr.some((os) => {
         let tmp = os.os === closure_1;
         if (tmp) {
           let endsWithResult;
-          if (null != closure_0) {
-            endsWithResult = closure_0.endsWith(os.name);
+          if (substr != null) {
+            endsWithResult = obj.endsWith(os.name);
           }
           tmp = endsWithResult;
+          obj = substr;
         }
         return tmp;
       });

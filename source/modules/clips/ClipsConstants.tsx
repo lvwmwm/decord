@@ -1,12 +1,10 @@
-// Module ID: 4219
-// Function ID: 36135
+// Module ID: 4243
+// Function ID: 4244
 // Name: result
-// Dependencies: [664, 3, 2]
+// Dependencies: [687, 3, 2]
 // Exports: CLIP_NAME_TEMPLATE
 
-// Module 4219 (result)
-import importDefaultResult from "timestamp";
-
+// Module 4243 (result)
 const obj = {};
 const result = 30 * require("set").Millis.SECOND;
 obj.SECONDS_30 = result;
@@ -18,9 +16,9 @@ const result1 = 2 * require("set").Millis.MINUTE;
 obj.MINUTES_2 = result1;
 obj[result1] = "MINUTES_2";
 const result2 = 6 * require("set").Millis.SECOND;
-importDefaultResult = new importDefaultResult("Clips");
 const result3 = 60 * require("set").Millis.SECOND;
 const result4 = 14 * require("set").Millis.DAY;
+const tmp5 = new require("timestamp")("Clips");
 const result5 = require("set").fileFinishedImporting("modules/clips/ClipsConstants.tsx");
 
 export const ClipsLengthSettings = obj;
@@ -30,7 +28,7 @@ export const ClipsUserEducationType = { Error: 0, [0]: "Error", Disabled: 1, [1]
 export const DEFAULT_SAVE_CLIP_KEYBIND = "alt+c";
 export const DEFAULT_SAVE_SCREENSHOT_KEYBIND = "f12";
 export const CLIPS_TOAST_DURATION = result2;
-export const ClipsLogger = importDefaultResult;
+export const ClipsLogger = tmp5;
 export const CURRENT_CLIP_METADATA_VERSION = 6;
 export const CLIPS_HARDWARE_CLASSIFICATION_VERSION = 2;
 export const WINDOWS_HARDWARE_MINIMUM_GPU_REGEX = /(NVIDIA GeForce GTX (98|10|16).*|Radeon RX 5(500|600|).*|Radeon RX5.*)/;

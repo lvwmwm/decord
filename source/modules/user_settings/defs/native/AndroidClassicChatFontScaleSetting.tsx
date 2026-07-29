@@ -1,47 +1,47 @@
-// Module ID: 14310
-// Function ID: 109735
+// Module ID: 14332
+// Function ID: 14333
 // Name: toggle
-// Dependencies: [14258, 7733, 3778, 682, 1212, 10099, 477, 2]
+// Dependencies: [14280, 7756, 3802, 705, 1236, 10120, 500, 2]
 
-// Module 14310 (toggle)
-import { useFontScaleStore } from "customFontScale";
+// Module 14332 (toggle)
+import { useFontScaleStore } from "DEFAULT_FONT_SCALE_STORE_STATE";
 import createToggle from "createToggle";
 
 const toggle = createToggle.createToggle({
   useTitle() {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(require(1212) /* getSystemLocale */.t.gFob3e);
+    const intl = require(1236) /* getSystemLocale */.intl;
+    return intl.string(require(1236) /* getSystemLocale */.t.gFob3e);
   },
   parent: require("MobileSetting").MobileSetting.APPEARANCE,
   useValue: function useClassicChatFontScaleValue() {
-    return useFontScaleStore((isClassicChatFontScaleEnabled) => isClassicChatFontScaleEnabled.isClassicChatFontScaleEnabled, require(3778) /* isIterable */.shallow);
+    return useFontScaleStore((isClassicChatFontScaleEnabled) => isClassicChatFontScaleEnabled.isClassicChatFontScaleEnabled, require(3802) /* isIterable */.shallow);
   },
   onValueChange: function onClassicChatFontScaleChange(arg0) {
     const _require = arg0;
-    return _require(682).batchUpdates(() => outer1_2.setState({ isClassicChatFontScaleEnabled: closure_0 }));
+    return _require(705).batchUpdates(() => outer1_2.setState({ isClassicChatFontScaleEnabled: closure_0 }));
   },
   useDescription: function useClassicChatFontScaleDescription() {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(require(1212) /* getSystemLocale */.t.OU3q8a);
+    const intl = require(1236) /* getSystemLocale */.intl;
+    return intl.string(require(1236) /* getSystemLocale */.t.OU3q8a);
   },
   usePredicate: require("set").isAndroid
 });
 const obj = {
   useTitle() {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(require(1212) /* getSystemLocale */.t.gFob3e);
+    const intl = require(1236) /* getSystemLocale */.intl;
+    return intl.string(require(1236) /* getSystemLocale */.t.gFob3e);
   },
   parent: require("MobileSetting").MobileSetting.APPEARANCE,
   useValue: function useClassicChatFontScaleValue() {
-    return useFontScaleStore((isClassicChatFontScaleEnabled) => isClassicChatFontScaleEnabled.isClassicChatFontScaleEnabled, require(3778) /* isIterable */.shallow);
+    return useFontScaleStore((isClassicChatFontScaleEnabled) => isClassicChatFontScaleEnabled.isClassicChatFontScaleEnabled, require(3802) /* isIterable */.shallow);
   },
   onValueChange: function onClassicChatFontScaleChange(arg0) {
     const _require = arg0;
-    return _require(682).batchUpdates(() => outer1_2.setState({ isClassicChatFontScaleEnabled: closure_0 }));
+    return _require(705).batchUpdates(() => outer1_2.setState({ isClassicChatFontScaleEnabled: closure_0 }));
   },
   useDescription: function useClassicChatFontScaleDescription() {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(require(1212) /* getSystemLocale */.t.OU3q8a);
+    const intl = require(1236) /* getSystemLocale */.intl;
+    return intl.string(require(1236) /* getSystemLocale */.t.OU3q8a);
   },
   usePredicate: require("set").isAndroid
 };

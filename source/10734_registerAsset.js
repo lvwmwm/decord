@@ -1,11 +1,10 @@
 // Module ID: 10734
-// Function ID: 83356
+// Function ID: 10735
 // Name: registerAsset
-// Dependencies: [1217]
+// Dependencies: [1241]
 
 // Module 10734 (registerAsset)
 import registerAsset from "registerAsset";
 
-const obj = { __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "f32d9237628628dc39ab04879ac15862", name: "ScreenArrowIcon", type: "png" };
 
-export default registerAsset.registerAsset(obj);
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "f9f36b748bcc7c6393cf056bc860ba1e", name: "HandRequestSpeakIcon", type: "png" });

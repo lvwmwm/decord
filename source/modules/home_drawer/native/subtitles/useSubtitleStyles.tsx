@@ -1,12 +1,12 @@
-// Module ID: 14958
-// Function ID: 113952
+// Module ID: 14984
+// Function ID: 14985
 // Name: styles
-// Dependencies: [4165, 2]
+// Dependencies: [4189, 2]
 
-// Module 14958 (styles)
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+// Module 14984 (styles)
+import createCacheKey from "createCacheKey";
 
-const styles = _createForOfIteratorHelperLoose.createStyles({ subtitleRow: { flexDirection: "row", alignItems: "center" }, subtitleText: { flexShrink: 1 }, channelIcon: { marginRight: 2 }, unreadChannelIcon: { marginLeft: 2, marginRight: 2 } });
+const styles = createCacheKey.createStyles({ subtitleRow: { flexDirection: "row", alignItems: "center" }, subtitleText: { flexShrink: 1 }, channelIcon: { marginRight: 2 }, unreadChannelIcon: { marginLeft: 2, marginRight: 2 } });
 const result = require("set").fileFinishedImporting("modules/home_drawer/native/subtitles/useSubtitleStyles.tsx");
 
 export const useSubtitleStyles = styles;

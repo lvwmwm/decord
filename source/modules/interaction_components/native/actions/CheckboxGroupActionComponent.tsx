@@ -1,9 +1,9 @@
-// Module ID: 16190
-// Function ID: 125314
-// Dependencies: [31, 33, 7868, 5536, 9068, 2]
+// Module ID: 16225
+// Function ID: 16226
+// Dependencies: [19, 21, 7891, 5554, 9092, 2]
 
-// Module 16190
-import importAllResult from "result";
+// Module 16225
+import importAllResult from "noop";
 import { jsx } from "jsxProd";
 
 const require = arg1;
@@ -11,64 +11,57 @@ const memoResult = importAllResult.memo((type) => {
   type = type.type;
   const options = type.options;
   const maxValues = type.maxValues;
+  let obj = maxValues;
   let items = [options];
   const memo = maxValues.useMemo(() => {
     const found = options.filter((arg0) => arg0.default);
     return found.map((value) => value.value);
   }, items);
-  let obj = type(options[2]);
-  let tmp;
+  let tmp3;
   if (memo.length > 0) {
-    obj = { type, values: memo };
-    tmp = obj;
+    obj = { type: null, values: null };
+    obj[0] = type;
+    obj[1] = memo;
+    tmp3 = obj;
   }
-  const componentState = obj.useComponentState(type, tmp);
+  const componentState = type(options[2]).useComponentState(type, tmp3);
   const state = componentState.state;
   const executeStateUpdate = componentState.executeStateUpdate;
   const items1 = [state, type];
-  let closure_5 = maxValues.useMemo(() => {
+  let closure_5 = obj.useMemo(() => {
     let type;
-    if (null != state) {
-      type = state.type;
+    if (state != null) {
+      type = tmp.type;
     }
-    if (type === type) {
-      let items = state.values;
-    } else {
-      items = [];
-    }
-    return items;
+    return type === type ? state.values : [];
   }, items1);
-  obj = {
-    hasIcons: false,
-    children: options.map((label) => {
-      const hasItem = closure_5.includes(label.value);
-      let obj = {
-        label: label.label,
-        subLabel: label.description,
-        checked: hasItem,
-        onPress: (arg0) => {
-          if (arg0) {
-            const items = [];
-            const arraySpreadResult = HermesBuiltin.arraySpread(arr, 0);
-            items[arraySpreadResult] = closure_0;
-            const sum = arraySpreadResult + 1;
-            let found = items;
-          } else {
-            found = arr.filter((arg0) => arg0 !== outer1_0);
-          }
-          const obj = { type: value, values: found };
-          outer1_4(obj);
+  obj = { hasIcons: false, children: null };
+  obj[1] = options.map((label) => {
+    const hasItem = closure_5.includes(label.value);
+    const obj = {
+      label: label.label,
+      subLabel: label.description,
+      checked: hasItem,
+      onPress: (arg0) => {
+        if (arg0) {
+          const items = [];
+          items[HermesBuiltin.arraySpread(arr, 0)] = closure_0;
+          let found = items;
+        } else {
+          found = arr.filter((arg0) => arg0 !== closure_0);
         }
-      };
-      const type = label.value;
-      let tmp3 = closure_5.length >= maxValues;
-      if (tmp3) {
-        tmp3 = !hasItem;
-      }
-      obj.disabled = tmp3;
-      return state(type(options[4]).TableCheckboxRow, obj, label.value);
-    })
-  };
+        outer1_4({ type: value, values: found });
+      },
+      disabled: null
+    };
+    const type = label.value;
+    let tmp3 = closure_5.length >= maxValues;
+    if (tmp3) {
+      tmp3 = !hasItem;
+    }
+    obj[4] = tmp3;
+    return state(type(options[4]).TableCheckboxRow, obj, label.value);
+  });
   return state(type(options[3]).TableRowGroup, obj);
 });
 const result = require("isInteractionComponent").fileFinishedImporting("modules/interaction_components/native/actions/CheckboxGroupActionComponent.tsx");

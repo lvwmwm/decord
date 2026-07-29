@@ -1,12 +1,12 @@
-// Module ID: 16555
-// Function ID: 128859
+// Module ID: 16590
+// Function ID: 16591
 // Name: items
-// Dependencies: [31, 5026, 566, 5031, 2]
+// Dependencies: [19, 5048, 589, 5053, 2]
 // Exports: default
 
-// Module 16555 (items)
-import result from "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 16590 (items)
+import noop from "noop";
+import getEmojiToGroupId from "getEmojiToGroupId";
 
 const require = arg1;
 let items = [];
@@ -14,7 +14,7 @@ const result = require("initialize").fileFinishedImporting("modules/guild_role_s
 
 export default function useRoleSubscriptionEmojis(arg0) {
   const _require = arg0;
-  const items = [_isNativeReflectConstruct];
+  const items = [getEmojiToGroupId];
   const items1 = [arg0];
   stateFromStores = _require(stateFromStores[2]).useStateFromStores(items, () => outer1_3.getGuildEmoji(closure_0), items1);
   const items2 = [stateFromStores, arg0];
@@ -22,7 +22,7 @@ export default function useRoleSubscriptionEmojis(arg0) {
     if (null == stateFromStores) {
       let found = outer1_4;
     } else {
-      found = stateFromStores.filter((roles) => callback(stateFromStores[3]).isRoleSubscriptionEmoji(roles, outer1_0));
+      found = stateFromStores.filter((roles) => outer1_0(outer1_1[3]).isRoleSubscriptionEmoji(roles, closure_0));
     }
     return found;
   }, items2);

@@ -1,99 +1,20 @@
-// Module ID: 10461
-// Function ID: 80686
-// Name: _createForOfIteratorHelperLoose
-// Dependencies: [57, 31, 27, 9475, 9286, 4504, 1838, 4252, 566, 22, 620, 5498, 1327, 6002, 10462, 9285, 10463, 2]
+// Module ID: 10485
+// Function ID: 10486
+// Name: useMessageAuthorActivities
+// Dependencies: [32, 19, 17, 9499, 9310, 4527, 1862, 4276, 589, 12, 643, 5516, 1351, 6020, 10486, 9309, 10487, 2]
 // Exports: useChatUpdatesQueue, useFetchMessageApplications, useFetchVoiceChannelInviteStartTimes, useMessageAuthorActivities, useMessagesLifecycle, useMessagesState, useScrollState
 
-// Module 10461 (_createForOfIteratorHelperLoose)
+// Module 10485 (useMessageAuthorActivities)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
-import { findNodeHandle } from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import { updateShouldShowJumpToPresentButton as closure_7 } from "getChatInputContainerHeight";
-import closure_8 from "_isNativeReflectConstruct";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import closure_10 from "_isNativeReflectConstruct";
+import noop from "noop";
+import { findNodeHandle } from "set";
+import _toTimestampMs from "_toTimestampMs";
+import { updateShouldShowJumpToPresentButton as closure_7 } from "updateChatInputContainerHeight";
+import handleConnectionOpen from "handleConnectionOpen";
+import createGuildRecordFromRust from "createGuildRecordFromRust";
+import sortActivity from "sortActivity";
 
 const require = arg1;
-function _createForOfIteratorHelperLoose(iterable) {
-  let closure_0 = iterable;
-  iterable = "undefined" !== typeof Symbol;
-  if (iterable) {
-    const _Symbol = Symbol;
-    iterable = iterable[Symbol.iterator];
-  }
-  if (!iterable) {
-    iterable = iterable[Symbol.iterator];
-  }
-  if (iterable) {
-    const iter = iterable.call(iterable);
-    const next = iter.next;
-    return next.bind(iter);
-  } else {
-    const _Array = Array;
-    let tmp = iterable;
-    if (!Array.isArray(iterable)) {
-      let tmp2;
-      if (iterable) {
-        if ("string" === typeof iterable) {
-          tmp2 = _arrayLikeToArray(iterable, undefined);
-        } else {
-          const toString = {}.toString;
-          const substr = toString.call(iterable).slice(8, -1);
-          let name = substr;
-          if (tmp3) {
-            name = iterable.constructor.name;
-          }
-          if ("Map" !== name) {
-            if ("Set" !== name) {
-              if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(iterable, undefined);
-              } else {
-                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
-              }
-            }
-            tmp2 = arr;
-          }
-          const _Array2 = Array;
-          arr = Array.from(iterable);
-          const callResult = toString.call(iterable);
-          tmp3 = "Object" === substr && iterable.constructor;
-        }
-      }
-      tmp = tmp2;
-      if (!tmp2) {
-        const _TypeError = TypeError;
-        const typeError = new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
-        throw typeError;
-      }
-    }
-    if (tmp) {
-      closure_0 = tmp;
-    }
-    let c1 = 0;
-    return () => {
-      if (closure_1 >= length.length) {
-        let obj = { done: true };
-      } else {
-        obj = { done: false };
-        closure_1 = tmp3 + 1;
-        obj.value = length[+closure_1];
-      }
-      return obj;
-    };
-  }
-}
-function _arrayLikeToArray(arg0, arg1) {
-  let length;
-  if (tmp) {
-    length = arg0.length;
-  }
-  const ArrayResult = Array(length);
-  for (let num = 0; num < length; num = num + 1) {
-    ArrayResult[num] = arg0[num];
-  }
-  return ArrayResult;
-}
 let result = require("get ActivityIndicator").fileFinishedImporting("modules/messages/native/MessagesHooks.tsx");
 
 export const useMessageAuthorActivities = function useMessageAuthorActivities(arg0) {
@@ -108,9 +29,9 @@ export const useMessageAuthorActivities = function useMessageAuthorActivities(ar
     });
     return obj;
   }, items);
-  const items1 = [closure_10];
+  const items1 = [sortActivity];
   const items2 = [memo];
-  return _require(566).useStateFromStoresObject(items1, () => memo(outer1_2[9]).mapValues(memo, (arg0, arg1) => outer2_10.getPrimaryActivity(arg1)), items2);
+  return _require(589).useStateFromStoresObject(items1, () => memo(outer1_2[9]).mapValues(memo, (arg0, arg1) => primaryActivity.getPrimaryActivity(arg1)), items2);
 };
 export const useFetchMessageApplications = function useFetchMessageApplications(arg0) {
   let closure_0 = arg0;
@@ -128,112 +49,102 @@ export const useFetchMessageApplications = function useFetchMessageApplications(
   const items1 = [memo];
   const effect = React.useEffect(() => {
     if (!obj.areArraysShallowEqual(memo, ref.current)) {
-      const obj2 = memo(ref[11]);
-      const found = memo(ref[9])(memo).filter(callback(ref[12]).isNotNullish);
-      const arr = memo(ref[9])(memo);
+      const obj2 = memo(tmp2[11]);
+      const found = memo(tmp2[9])(tmp3).filter(callback(tmp2[12]).isNotNullish);
+      const arr = memo(tmp2[9])(tmp3);
       const applications = obj2.fetchApplications(found.uniq().value(), false);
-      ref.current = memo;
+      ref.current = tmp3;
       const iter = found.uniq();
     }
   }, items1);
 };
 export const useFetchVoiceChannelInviteStartTimes = function useFetchVoiceChannelInviteStartTimes(stateFromStores4) {
   const _require = stateFromStores4;
-  const items = [_createForOfIteratorHelperLoose, closure_8];
+  const items = [createGuildRecordFromRust, handleConnectionOpen];
   const items1 = [stateFromStores4];
-  const stateFromStoresObject = _require(566).useStateFromStoresObject(items, () => {
-    let iter3;
+  const stateFromStoresObject = _require(589).useStateFromStoresObject(items, () => {
     const obj = {};
-    const tmp = outer1_11(stateFromStores4.values());
-    const iter = tmp();
-    let iter2 = iter;
-    if (!iter.done) {
-      do {
-        let value = iter2.value;
-        let tmp3 = tmp2;
-        if (null != value.guild) {
-          let tmp4 = stateFromStores4;
-          let tmp5 = outer1_2;
-          let obj2 = stateFromStores4(outer1_2[13]);
-          tmp3 = tmp2;
-          if (obj2.isVoiceChannelInvite(value)) {
-            let id = value.guild.id;
-            let tmp6 = outer1_9;
-            let tmp7 = null != outer1_9.getGuild(id);
-            if (tmp7) {
-              let tmp8 = outer1_8;
-              tmp7 = !outer1_8.isUnavailable(id);
-            }
-            obj[id] = tmp7;
-            tmp3 = id;
+    const values = stateFromStores4.values();
+    const iter = values[Symbol.iterator]();
+    const nextResult = iter.next();
+    while (iter !== undefined) {
+      let tmp3 = nextResult;
+      if (null != nextResult.guild) {
+        let tmp4 = stateFromStores4;
+        let tmp5 = outer1_2;
+        let obj2 = stateFromStores4(outer1_2[13]);
+        let tmp6 = nextResult;
+        if (obj2.isVoiceChannelInvite(tmp3)) {
+          let tmp7 = nextResult;
+          let id = tmp3.guild.id;
+          let tmp9 = outer1_9;
+          let tmp8 = id;
+          let tmp10 = null != outer1_9.getGuild(id);
+          if (tmp10) {
+            let tmp11 = outer1_8;
+            let tmp12 = id;
+            tmp10 = !outer1_8.isUnavailable(tmp8);
           }
+          obj[id] = tmp10;
         }
-        iter3 = tmp();
-        tmp2 = tmp3;
-        iter2 = iter3;
-      } while (!iter3.done);
+      }
+      continue;
     }
     return obj;
   }, items1);
   const items2 = [stateFromStores4, stateFromStoresObject];
   const effect = React.useEffect(() => {
-    let iter3;
-    const tmp = outer1_11(stateFromStores4.values());
-    const iter = tmp();
-    let iter2 = iter;
-    if (!iter.done) {
-      do {
-        let value = iter2.value;
-        let tmp3 = tmp2;
-        if (null != value.guild) {
-          let tmp4 = stateFromStores4;
-          let tmp5 = outer1_2;
-          let obj = stateFromStores4(outer1_2[13]);
-          tmp3 = tmp2;
-          if (obj.isVoiceChannelInvite(value)) {
-            let id = value.guild.id;
-            let tmp6 = stateFromStoresObject;
-            let result = true !== stateFromStoresObject[id];
-            if (!result) {
-              let tmp8 = outer1_6;
-              result = outer1_6.hasRequestedStartTimes(id);
-            }
-            tmp3 = id;
-            if (!result) {
-              let tmp9 = stateFromStores4;
-              let tmp10 = outer1_2;
-              let obj2 = stateFromStores4(outer1_2[14]);
-              let channelInfo = obj2.fetchChannelInfo(id);
-              tmp3 = id;
-            }
+    const values = stateFromStores4.values();
+    const iter = values[Symbol.iterator]();
+    const nextResult = iter.next();
+    while (iter !== undefined) {
+      let tmp3 = nextResult;
+      if (null != nextResult.guild) {
+        let tmp4 = stateFromStores4;
+        let tmp5 = outer1_2;
+        let obj = stateFromStores4(outer1_2[13]);
+        let tmp6 = nextResult;
+        if (obj.isVoiceChannelInvite(tmp3)) {
+          let tmp7 = nextResult;
+          let id = tmp3.guild.id;
+          let tmp8 = id;
+          let tmp9 = stateFromStoresObject;
+          let result = true !== stateFromStoresObject[id];
+          if (!result) {
+            let tmp11 = outer1_6;
+            let tmp12 = id;
+            result = outer1_6.hasRequestedStartTimes(tmp8);
+          }
+          if (!result) {
+            let tmp4Result = tmp4(tmp5[14]);
+            let tmp13 = id;
+            let channelInfo = tmp4Result.fetchChannelInfo(tmp8);
           }
         }
-        iter3 = tmp();
-        tmp2 = tmp3;
-        iter2 = iter3;
-      } while (!iter3.done);
+      }
+      continue;
     }
   }, items2);
 };
 export const useMessagesLifecycle = function useMessagesLifecycle(screenIndex) {
   let channelId;
-  let _isNativeReflectConstruct;
+  let _toTimestampMs;
   let dependencyMap;
   let findNodeHandle;
   let importDefault;
   let require;
   ({ messages: require, isMessagesReady: importDefault, oldestUnreadMessageId: dependencyMap, channelId } = screenIndex);
   screenIndex = screenIndex.screenIndex;
-  ({ updateRows: findNodeHandle, scrollToMessageId: _isNativeReflectConstruct } = screenIndex);
+  ({ updateRows: findNodeHandle, scrollToMessageId: _toTimestampMs } = screenIndex);
   const effect = screenIndex.useEffect(() => {
     let obj = outer1_0(outer1_2[15]);
-    obj = { messages: closure_0, isMessagesReady: closure_1, oldestUnreadMessageId: closure_2, channelId, screenIndex, updateRows: closure_5, scrollToMessageId: _isNativeReflectConstruct };
+    obj = { messages: closure_0, isMessagesReady: closure_1, oldestUnreadMessageId: closure_2, channelId, screenIndex, updateRows: closure_5, scrollToMessageId: _toTimestampMs };
     obj.syncMessageDisplay(obj);
     outer1_0(outer1_2[15]).recordTimings(channelId, closure_0);
   }, []);
   const items = [channelId, screenIndex];
   const effect1 = screenIndex.useEffect(() => () => {
-    outer2_7(outer1_3, outer1_4, false);
+    outer1_7(_slicedToArray, noop, false);
   }, items);
 };
 export const useScrollState = function useScrollState() {
@@ -256,22 +167,18 @@ export const useChatUpdatesQueue = function useChatUpdatesQueue(ref5, callback) 
   let closure_0 = ref5;
   let closure_1 = callback;
   const items = [ref5, callback];
-  const memo = React.useMemo(() => {
-    let tmp = callback(memo[16]);
-    tmp = new tmp(() => {
-      let tmp = null;
-      if (null !== outer1_0.current) {
-        tmp = outer2_5(outer1_0.current);
-      }
-      return tmp;
-    }, (arg0) => {
-      outer1_1(arg0);
-    });
-    return tmp;
-  }, items);
+  const memo = React.useMemo(() => new callback(memo[16])(() => {
+    let tmp2 = null;
+    if (null !== ref.current) {
+      tmp2 = outer1_5(tmp.current);
+    }
+    return tmp2;
+  }, (arg0) => {
+    callback(arg0);
+  }), items);
   const items1 = [memo];
   const effect = React.useEffect(() => () => {
-    outer1_2.cleanup();
+    closure_2.cleanup();
   }, items1);
   return memo;
 };

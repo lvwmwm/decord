@@ -1,12 +1,12 @@
-// Module ID: 11270
-// Function ID: 87502
+// Module ID: 11294
+// Function ID: 11295
 // Name: useSortApplicationsViaFrecency
-// Dependencies: [31, 5680, 662, 1331, 566, 21, 5684, 2]
+// Dependencies: [19, 5698, 685, 1355, 589, 11, 5702, 2]
 // Exports: useSortApplicationsViaFrecency
 
-// Module 11270 (useSortApplicationsViaFrecency)
-import result from "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 11294 (useSortApplicationsViaFrecency)
+import noop from "noop";
+import handleUserSettingsProtoStoreChange from "handleUserSettingsProtoStoreChange";
 import { UserSettingsTypes } from "MAX_FAVORITES";
 
 const require = arg1;
@@ -29,11 +29,14 @@ export const useSortApplicationsViaFrecency = function useSortApplicationsViaFre
           let closure_0 = arg0;
           const obj = {};
           const merged = Object.assign(arg0);
-          let someResult;
-          if (null != outer1_1) {
-            someResult = outer1_1.some((application) => application.application.id === id.id);
+          let flag;
+          if (closure_1 != null) {
+            flag = closure_1.some((application) => application.application.id === id.id);
           }
-          obj["isUserApp"] = null != someResult && someResult;
+          if (flag == null) {
+            flag = false;
+          }
+          obj.isUserApp = flag;
           return obj;
         });
       }
@@ -44,46 +47,45 @@ export const useSortApplicationsViaFrecency = function useSortApplicationsViaFre
   const items2 = [found, stateFromStoresArray];
   memo1 = memo.useMemo(() => {
     let found;
-    if (null != stateFromStoresArray) {
-      found = stateFromStoresArray.filter((arg0) => {
+    if (closure_1 != null) {
+      found = closure_1.filter((arg0) => {
         let closure_0 = arg0;
-        return !outer1_0.some((id) => id.id === application.application.id);
+        return !closure_0.some((id) => id.id === application.application.id);
       });
     }
     return found;
   }, items2);
   const items3 = [memo, stateFromStores, memo1];
   const memo2 = memo.useMemo(() => {
-    if (null != memo1) {
-      const item = memo1.forEach((id) => {
-        let obj = callback2(stateFromStores[5]);
-        if (null == outer1_2.getEntry(id.application.id)) {
-          obj = { timestamp: extractTimestampResult };
-          outer1_2.track(id.application.id, obj);
+    if (memo1 != null) {
+      const item = arr.forEach((id) => {
+        let obj = outer1_1(outer1_2[5]);
+        if (null == store.getEntry(id.application.id)) {
+          obj = { timestamp: null };
+          obj[0] = extractTimestampResult;
+          store.track(id.application.id, obj);
         }
       });
     }
     stateFromStores.compute();
     let mapped;
-    if (null != memo1) {
-      mapped = memo1.map((application) => callback(stateFromStores[6]).getApplicationCommandSection(application.application, true));
+    if (memo1 != null) {
+      mapped = arr.map((application) => callback(store[6]).getApplicationCommandSection(application.application, true));
     }
-    if (null == mapped) {
+    if (mapped == null) {
       mapped = [];
     }
     const items = [...memo];
     const items1 = [...mapped];
     items.push.apply(items1);
     const sorted = items.sort((id, id2) => {
-      const score = outer1_2.getScore(id2.id);
-      let num = 0;
-      if (null != score) {
-        num = score;
+      let num = store.getScore(id2.id);
+      if (num == null) {
+        num = 0;
       }
-      const score1 = outer1_2.getScore(id.id);
-      let num2 = 0;
-      if (null != score1) {
-        num2 = score1;
+      let num2 = store.getScore(id.id);
+      if (num2 == null) {
+        num2 = 0;
       }
       let diff = num - num2;
       if (0 === diff) {
@@ -96,8 +98,8 @@ export const useSortApplicationsViaFrecency = function useSortApplicationsViaFre
   }, items3);
   const items4 = [memo2, memo, stateFromStores, stateFromStoresArray];
   return memo.useMemo(() => {
-    if (null != stateFromStoresArray) {
-      const item = stateFromStoresArray.forEach((id) => {
+    if (closure_1 != null) {
+      const item = closure_1.forEach((id) => {
         const extractTimestampResult = callback(stateFromStores[5]).extractTimestamp(id.id);
         let tmp2 = null == callback;
         if (!tmp2) {
@@ -112,10 +114,10 @@ export const useSortApplicationsViaFrecency = function useSortApplicationsViaFre
     const item1 = memo.forEach((id) => {
       const entry = str.getEntry(id.id);
       let recentUses;
-      if (null != entry) {
+      if (entry != null) {
         recentUses = entry.recentUses;
       }
-      if (null == recentUses) {
+      if (recentUses == null) {
         recentUses = [];
       }
       const items = [...recentUses];
@@ -129,16 +131,15 @@ export const useSortApplicationsViaFrecency = function useSortApplicationsViaFre
         closure_1 = applyResult;
       }
     });
-    let id;
-    if (null != lib) {
+    let str;
+    if (lib != null) {
       const application = lib.application;
-      if (null != application) {
-        id = application.id;
+      if (application != null) {
+        str = application.id;
       }
     }
-    let str = "";
-    if (null != id) {
-      str = id;
+    if (str == null) {
+      str = "";
     }
     let items = [...memo2.filter((id) => id.id === str), ...memo2.filter((id) => id.id !== str)];
     return items;

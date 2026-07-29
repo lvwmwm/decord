@@ -1,11 +1,10 @@
 // Module ID: 2910
-// Function ID: 24873
+// Function ID: 2911
 // Name: registerAsset
-// Dependencies: [1217]
+// Dependencies: [1241]
 
 // Module 2910 (registerAsset)
 import registerAsset from "registerAsset";
 
-const obj = { __packager_asset: true, httpServerLocation: "/assets/modules/hangout_window", scales: [1], hash: "0ffaf58e78768b3ade273f3634f7892a", name: "HangoutWindow.compiled.messages", type: "jsona" };
 
-export default registerAsset.registerAsset(obj);
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9oYW5nb3V0X3dpbmRvdw==", scales: [1], hash: "15ecd2e7ffabce291b5b5bc1ee81296d", name: "es-419.messages.15ecd2e7ffabce291b5b5bc1ee81296d.compiled.messages", type: "jsona" });

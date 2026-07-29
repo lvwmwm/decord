@@ -1,35 +1,118 @@
-// Module ID: 16167
-// Function ID: 125112
-// Name: _isNativeReflectConstruct
-// Dependencies: [57, 6, 7, 15, 17, 18, 4079, 1188, 1194, 1348, 4212, 4237, 16158, 8814, 16159, 16168, 5112, 2]
+// Module ID: 16202
+// Function ID: 16203
+// Name: _initialize
+// Dependencies: [32, 4103, 1212, 1218, 1372, 4236, 4261, 16193, 5134, 8838, 16194, 16203, 2]
 
-// Module 16167 (_isNativeReflectConstruct)
+// Module 16202 (_initialize)
 import _slicedToArray from "_slicedToArray";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_5 from "_isNativeReflectConstruct";
-import getSpatialAudioPointFromGuildRoomPosition from "getSpatialAudioPointFromGuildRoomPosition";
-import set from "set";
-import _inherits from "_inherits";
-import closure_9 from "_isNativeReflectConstruct";
-import closure_10 from "_isNativeReflectConstruct";
-import closure_11 from "_isNativeReflectConstruct";
-import closure_12 from "_isNativeReflectConstruct";
-import closure_13 from "_isNativeReflectConstruct";
-import closure_14 from "_isNativeReflectConstruct";
-import closure_15 from "_isNativeReflectConstruct";
-import tmp2 from "AutomaticLifecycleManager";
+import getHash from "getHash";
+import initialize from "initialize";
+import fetchFingerprint from "fetchFingerprint";
+import ensureGuildLoaded from "ensureGuildLoaded";
+import _detectH265HardwareDecode from "_detectH265HardwareDecode";
+import createRTCConnection from "createRTCConnection";
+import handleSelectedChannelStoreChange from "handleSelectedChannelStoreChange";
+import "initialize";
 
-const require = arg1;
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
+let require = arg1;
+class GuildRoomSpatialAudioManager extends tmp2 {
+  constructor() {
+    applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
+    closure_0 = applyArgumentsResult;
+    applyArgumentsResult.actions = {
+      AUDIO_SET_AUDIO_MIXER_SETTINGS() {
+            return applyArgumentsResult.apply();
+          },
+      RTC_CONNECTION_STATE() {
+            return applyArgumentsResult.apply();
+          },
+      RTC_CONNECTION_USERS_MERGED() {
+            return applyArgumentsResult.apply();
+          },
+      MEDIA_SESSION_JOINED() {
+            return applyArgumentsResult.apply();
+          },
+      GUILD_ROOM_CONNECT() {
+            return applyArgumentsResult.apply();
+          },
+      GUILD_ROOM_UPDATE() {
+            return applyArgumentsResult.apply();
+          },
+      GUILD_ROOM_LOCAL_UPDATE() {
+            return applyArgumentsResult.apply();
+          },
+      GUILD_ROOM_DISCONNECT() {
+            return applyArgumentsResult.apply();
+          }
+    };
+    applyArgumentsResult.reapplyForExperimentUpdate = function reapplyForExperimentUpdate() {
+      const audioMixerSettings = outer1_8.getAudioMixerSettings();
+      const result = outer1_1(outer1_2[9]).setAudioMixerSettings(audioMixerSettings);
+      applyArgumentsResult.apply();
+    };
+    return applyArgumentsResult;
   }
-  const result = _isNativeReflectConstruct();
 }
-tmp2 = new tmp2();
-let result = require("_defineProperties").fileFinishedImporting("modules/guild_rooms/GuildRoomSpatialAudioManager.tsx");
+const prototype = GuildRoomSpatialAudioManager.prototype;
+prototype["_initialize"] = function _initialize() {
+  const result = new Map().set(getHash, this.reapplyForExperimentUpdate);
+  this.stores = result.set(initialize, this.reapplyForExperimentUpdate);
+};
+prototype["_terminate"] = function _terminate() {
 
-export default tmp2;
+};
+prototype["isLivingRoomAvailable"] = function isLivingRoomAvailable() {
+  const guildId = store.getGuildId();
+  let interactionsEnabled = null != guildId;
+  if (interactionsEnabled) {
+    let obj = importDefault(16194);
+    obj = { guildId: null, location: "GuildRoomSpatialAudioManager" };
+    obj[0] = guildId;
+    interactionsEnabled = obj.getCurrentConfig(obj, { autoTrackExposure: false }).interactionsEnabled;
+  }
+  return interactionsEnabled;
+};
+prototype["apply"] = function apply() {
+  let obj = audioMixerSettings;
+  if (audioMixerSettings.getAudioMixerSettings().enabled) {
+    const channelId = store.getChannelId();
+    if (null != channelId) {
+      const self = this;
+      if (this.isLivingRoomAvailable()) {
+        channel = channel.getChannel(channelId);
+        let isGuildStageVoiceResult;
+        if (channel != null) {
+          isGuildStageVoiceResult = channel.isGuildStageVoice();
+        }
+        if (!isGuildStageVoiceResult) {
+          obj = { users: null, currentUserId: null, channelId: null };
+          obj[0] = roomUsers.getRoomUsers(channelId);
+          obj[1] = id.getId();
+          obj[2] = channelId;
+          _require = _require(16203).computeLivingRoomWorldPoints(obj);
+          const mediaEngine = obj.getMediaEngine();
+          mediaEngine.eachConnection((setUserPosition) => {
+            let tmp6;
+            let tmp7;
+            const entries = Object.entries(callback);
+            while (tmp2 !== undefined) {
+              let tmp4 = outer1_3;
+              let tmp5 = outer1_3(tmp3, 2);
+              let tmp8 = callback;
+              let tmp9 = outer1_2;
+              [tmp6, tmp7] = tmp5;
+              let obj = callback(outer1_2[11]);
+              let setUserPositionResult = setUserPosition.setUserPosition(tmp6, obj.livingRoomWorldPointToMediaEnginePoint(tmp7));
+              continue;
+            }
+          });
+          const obj3 = _require(16203);
+        }
+      }
+    }
+  }
+};
+const guildRoomSpatialAudioManager = new GuildRoomSpatialAudioManager();
+let result = require("initialize").fileFinishedImporting("modules/guild_rooms/GuildRoomSpatialAudioManager.tsx");
+
+export default guildRoomSpatialAudioManager;

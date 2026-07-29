@@ -1,19 +1,20 @@
-// Module ID: 10765
-// Function ID: 83515
+// Module ID: 10789
+// Function ID: 10790
 // Name: set
-// Dependencies: [477, 10766, 2]
+// Dependencies: [500, 10790, 2]
 // Exports: default
 
-// Module 10765 (set)
+// Module 10789 (set)
 import set from "set";
 
+const deep_noise_suppression = "deep_noise_suppression";
 let set = new Set(["voice_isolation", "wide_spectrum"]);
 const result = set.fileFinishedImporting("modules/noise_cancellation/getEffectiveNoiseCancellation.tsx");
 
 export default function getEffectiveNoiseCancellation(arg0, arg1) {
-  let obj = require(477) /* set */;
   if (!obj.isIOS()) {
-    if (!obj2.isMac()) {
+    let tmpResult = tmp(500);
+    if (!tmpResult.isMac()) {
       let tmp3 = arg0;
       if (arg0) {
         let tmp5 = null == arg1;
@@ -21,16 +22,15 @@ export default function getEffectiveNoiseCancellation(arg0, arg1) {
           tmp5 = "" === arg1;
         }
         if (!tmp5) {
-          tmp5 = !require(477) /* set */.isWindows();
-          const obj3 = require(477) /* set */;
+          tmpResult = tmp(500);
+          tmp5 = !tmpResult.isWindows();
         }
         if (!tmp5) {
-          tmp5 = arg1 !== "deep_noise_suppression";
+          tmp5 = arg1 !== deep_noise_suppression;
         }
         if (!tmp5) {
-          obj = { location: "setNoiseCancellation" };
-          tmp5 = !require(10766) /* getWindowsAudioEffectsExperimentConfig */.getWindowsAudioEffectsExperimentConfig(obj).preferSystemEffects;
-          const obj4 = require(10766) /* getWindowsAudioEffectsExperimentConfig */;
+          tmp5 = !tmp(10790).getWindowsAudioEffectsExperimentConfig({ location: "setNoiseCancellation" }).preferSystemEffects;
+          const tmpResult1 = tmp(10790);
         }
         if (tmp5) {
           tmp5 = arg0;
@@ -40,6 +40,11 @@ export default function getEffectiveNoiseCancellation(arg0, arg1) {
     }
     return tmp3;
   }
-  tmp3 = !set.has(arg1) && arg0;
+  const hasItem = set.has(arg1);
+  let tmp8 = !hasItem;
+  if (!hasItem) {
+    tmp8 = arg0;
+  }
+  tmp3 = tmp8;
 };
 export const WINDOWS_NOISE_SUPPRESSION_EFFECT = "deep_noise_suppression";

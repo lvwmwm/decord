@@ -1,9 +1,9 @@
-// Module ID: 7906
-// Function ID: 62842
+// Module ID: 7931
+// Function ID: 7932
 // Name: metadata
 // Dependencies: [2]
 
-// Module 7906 (metadata)
+// Module 7931 (metadata)
 const result = require("set").fileFinishedImporting("../discord_assets/assets/checkpoint/card-cassette.png.js");
 
 export default "https://cdn.discordapp.com/assets/content/63e156d9534821fc67f772dace48c7add4186191274c63bebbd0895ee9a1d4d5.png";

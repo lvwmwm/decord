@@ -1,65 +1,66 @@
-// Module ID: 7757
-// Function ID: 61726
+// Module ID: 7780
+// Function ID: 7781
 // Name: transform
-// Dependencies: [31, 3841, 4501, 7758, 1212, 3838, 7712, 2]
+// Dependencies: [19, 3865, 4524, 7781, 1236, 3862, 7735, 2]
 // Exports: default, transformSticker
 
-// Module 7757 (transform)
-import result from "result";
+// Module 7780 (transform)
+import noop from "noop";
 import { StickerAnimationSettings } from "STICKER_PICKER_TAB_PANEL_ID";
 
 const require = arg1;
 function transform(id, isPreview) {
   let obj = {};
   const merged = Object.assign(id);
-  id = id.id;
-  let str = "";
-  let str2 = "";
-  if (null != id) {
-    str2 = id;
+  let str = id.id;
+  if (str == null) {
+    str = "";
   }
-  obj["asset"] = str2;
+  obj.asset = str;
   obj = { isPreview: !isPreview };
-  const stickerAssetUrl = require(4501) /* getStickerPackPreviewSticker */.getStickerAssetUrl(id, obj);
-  if (null != stickerAssetUrl) {
-    str = stickerAssetUrl;
+  let str2 = require(4524) /* getStickerExtensionFromFormatType */.getStickerAssetUrl(id, obj);
+  if (str2 == null) {
+    str2 = "";
   }
-  obj["url"] = str;
-  const NativeLottieRenderMode = require(7758) /* NativeLottieView */.NativeLottieRenderMode;
-  obj["renderMode"] = isPreview ? NativeLottieRenderMode.LOOP : NativeLottieRenderMode.STILL;
-  const intl = require(1212) /* getSystemLocale */.intl;
+  obj.url = str2;
+  const NativeLottieRenderMode = tmp2(7781).NativeLottieRenderMode;
+  obj.renderMode = isPreview ? NativeLottieRenderMode.LOOP : NativeLottieRenderMode.STILL;
+  const intl = tmp2(1236).intl;
   if (arg2) {
-    let stringResult = intl.string(tmp3(1212).t["fT+Yjp"]);
+    let stringResult = intl.string(tmp2(1236).t["fT+Yjp"]);
   } else {
-    obj = { stickerName: id.name };
-    stringResult = intl.formatToPlainString(tmp3(1212).t.rk6pOw, obj);
+    obj = { stickerName: null };
+    obj[0] = id.name;
+    stringResult = intl.formatToPlainString(tmp2(1236).t.rk6pOw, obj);
   }
-  obj["accessibilityLabel"] = stringResult;
-  const intl2 = require(1212) /* getSystemLocale */.intl;
-  obj["accessibilityHint"] = intl2.string(require(1212) /* getSystemLocale */.t.GCEruV);
+  obj.accessibilityLabel = stringResult;
+  const intl2 = tmp2(1236).intl;
+  obj.accessibilityHint = intl2.string(require(1236) /* getSystemLocale */.t.GCEruV);
   return obj;
 }
-let result = require("getStickerPackPreviewSticker").fileFinishedImporting("modules/messages/native/renderer/system_messages/transformSticker.tsx");
+let result = require("getStickerExtensionFromFormatType").fileFinishedImporting("modules/messages/native/renderer/system_messages/transformSticker.tsx");
 
 export default function useTransformedSticker(sticker) {
   sticker = sticker.sticker;
   const isStickerReplyEnabled = sticker.isStickerReplyEnabled;
+  let React;
+  let StickerAnimationSettings;
   const AnimateStickers = sticker(isStickerReplyEnabled[5]).AnimateStickers;
   let tmp = AnimateStickers.useSetting() === StickerAnimationSettings.ALWAYS_ANIMATE;
-  const React = tmp;
+  React = tmp;
   const result = sticker(isStickerReplyEnabled[6]).shouldSkipAccessibilityLabels();
   StickerAnimationSettings = result;
   const items = [tmp, isStickerReplyEnabled, result, sticker];
   return React.useMemo(() => {
     let tmp;
     if (isStickerReplyEnabled) {
-      tmp = outer1_4(sticker, result, closure_3);
+      tmp = outer1_4(sticker, c2, c3);
     }
     return tmp;
   }, items);
 };
-export const transformSticker = function transformSticker(arg0) {
-  const AnimateStickers = require(3838) /* explicitContentFromProto */.AnimateStickers;
+export const transformSticker = function transformSticker(tmp5Result1) {
+  const AnimateStickers = require(3862) /* explicitContentFromProto */.AnimateStickers;
   const setting = AnimateStickers.getSetting();
-  return transform(arg0, setting === StickerAnimationSettings.ALWAYS_ANIMATE, require(7712) /* apexExperiment */.shouldSkipAccessibilityLabels());
+  return transform(tmp5Result1, setting === StickerAnimationSettings.ALWAYS_ANIMATE, require(7735) /* apexExperiment */.shouldSkipAccessibilityLabels());
 };

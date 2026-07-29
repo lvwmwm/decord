@@ -1,10 +1,10 @@
-// Module ID: 5735
-// Function ID: 49619
+// Module ID: 5753
+// Function ID: 5754
 // Name: result
-// Dependencies: [664, 2]
+// Dependencies: [687, 2]
 // Exports: createMemberSearchCursor
 
-// Module 5735 (result)
+// Module 5753 (result)
 const result = 2 * require("set").Millis.DAY;
 const result1 = require("set").fileFinishedImporting("modules/guild_mod_dash_member_safety/MemberSafetyElasticSearchQueryTypes.tsx");
 
@@ -13,11 +13,11 @@ export const createMemberSearchCursor = function createMemberSearchCursor(joined
   joinedAt = joinedAt.joinedAt;
   let tmp2 = null;
   if (null != joinedAt) {
-    const obj = {};
+    const obj = { guild_joined_at: null, user_id: null };
     const _Date = Date;
     const date = new Date(joinedAt);
-    obj.guild_joined_at = date.getTime();
-    obj.user_id = tmp;
+    obj[0] = date.getTime();
+    obj[1] = tmp;
     tmp2 = obj;
   }
   return tmp2;

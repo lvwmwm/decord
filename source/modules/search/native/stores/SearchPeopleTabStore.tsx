@@ -1,253 +1,197 @@
-// Module ID: 11440
-// Function ID: 88746
-// Name: _isNativeReflectConstruct
-// Dependencies: [15, 17, 18, 6, 7, 1348, 5077, 22, 11441, 8791, 1212, 566, 686, 2]
+// Module ID: 11464
+// Function ID: 11465
+// Name: teardown
+// Dependencies: [1372, 5099, 12, 11465, 8815, 1236, 589, 709, 2]
 
-// Module 11440 (_isNativeReflectConstruct)
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import apply from "apply";
-import closure_8 from "_isNativeReflectConstruct";
-import closure_9 from "_isNativeReflectConstruct";
+// Module 11464 (teardown)
+import ensureGuildLoaded from "ensureGuildLoaded";
+import handleChannelSelect from "handleChannelSelect";
+import { Store } from "initialize";
 
 const require = arg1;
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
+let closure_5 = [];
+class PeopleSearchManager {
+  constructor() {
+    obj = Object.create(new.target.prototype);
+    closure_0 = obj;
+    obj.count = null;
+    obj.searchQueryString = "";
+    obj.groupDMs = [];
+    obj.userIndexes = {};
+    obj.results = [];
+    userSearch = new require("_toPropertyKey").UserSearch(() => obj.processResults());
+    obj.userSearch = userSearch;
+    userSearch = obj.userSearch;
+    subscription = userSearch.subscribe(() => obj.processResults(), true);
+    return obj;
   }
-  const result = _isNativeReflectConstruct();
 }
-let closure_10 = [];
-let closure_11 = (() => {
-  class PeopleSearchManager {
-    constructor() {
-      self = this;
-      tmp = outer1_6(this, self);
-      this.count = null;
-      this.searchQueryString = "";
-      this.groupDMs = [];
-      this.userIndexes = {};
-      this.results = [];
-      userSearch = new PeopleSearchManager(outer1_2[9]).UserSearch(() => self.processResults());
-      this.userSearch = userSearch;
-      userSearch = this.userSearch;
-      subscription = userSearch.subscribe(() => self.processResults(), true);
-      return;
-    }
-  }
-  let obj = {
-    key: "teardown",
-    value() {
-      const userSearch = this.userSearch;
-      userSearch.unsubscribe();
-    }
-  };
-  let items = [obj, , , , ];
-  obj = {
-    key: "search",
-    value(str) {
-      const self = this;
-      let trimmed = str.toLowerCase().trim();
-      this.searchQueryString = trimmed;
-      if ("" !== trimmed) {
-        let userSearch = self.userSearch;
-        self.userIndexes = userSearch.filter(trimmed);
-        userSearch = self.userSearch;
-        const response = userSearch.fetch(trimmed, true);
-        self.groupDMs = (function searchGroupDMs(trimmed) {
-          trimmed = trimmed.toLocaleLowerCase().trim();
-          if (0 === trimmed.length) {
-            let items = [];
-          } else {
-            const obj = outer2_1(outer2_2[7]);
-            const values = outer2_1(outer2_2[7]).chain(outer2_8.getMutablePrivateChannels()).values();
-            const found = values.filter(PeopleSearchManager(outer2_2[8]).filterGroupDMs);
-            const mapped = found.map((id) => {
-              const items = [id, PeopleSearchManager(outer3_2[8]).matchGroupDM(id, trimmed), outer3_9.getScoreWithoutFetchingLatest(id.id)];
-              return items;
-            });
-            const found1 = mapped.filter((arg0) => {
-              let tmp;
-              [, tmp] = arg0;
-              return tmp > 0;
-            });
-            const sorted = found1.sort((arg0, arg1) => {
-              let diff = arg1[1] - arg0[1];
-              if (0 === diff) {
-                diff = arg1[2] - arg0[2];
-              }
-              return diff;
-            });
-            const chainResult = outer2_1(outer2_2[7]).chain(outer2_8.getMutablePrivateChannels());
-            items = sorted.map((arg0) => {
-              let tmp;
-              [tmp] = arg0;
-              return tmp;
-            }).value();
-            const iter = sorted.map((arg0) => {
-              let tmp;
-              [tmp] = arg0;
-              return tmp;
-            });
-          }
-          return items;
-        })(trimmed);
-      }
-      self.processResults();
-    }
-  };
-  items[1] = obj;
-  obj = {
-    key: "processResults",
-    value() {
-      const self = this;
-      const userSearch = this.userSearch;
-      this.userIndexes = userSearch.filter(this.searchQueryString);
-      let obj = PeopleSearchManager(outer1_2[9]);
-      obj = { data: this.userIndexes, withGuildMembers: true, withAffinitySuggestions: true, withFriends: true, withFriendSuggestions: false, withFriendRequests: false, withFriendRequestsIncoming: false, withFriendRequestsOutgoing: false, excludeCurrentUser: true };
-      const result = obj.parseUserSearchResults(obj);
-      let arr3 = result;
-      if (this.groupDMs.length > 0) {
-        arr3 = result;
-        if ("" !== self.searchQueryString) {
-          obj = {};
-          let intl = PeopleSearchManager(outer1_2[10]).intl;
-          obj.title = intl.string(PeopleSearchManager(outer1_2[10]).t.qGlQrW);
-          obj.items = self.groupDMs;
-          const findIndexResult = result.findIndex((title) => {
-            const intl = PeopleSearchManager(outer2_2[10]).intl;
-            return title.title === intl.string(PeopleSearchManager(outer2_2[10]).t.y29JXs);
-          });
-          if (-1 === findIndexResult) {
-            const items = [];
-            let arraySpreadResult = HermesBuiltin.arraySpread(result, 0);
-            items[arraySpreadResult] = obj;
-            const sum = arraySpreadResult + 1;
-            arr3 = items;
-          } else {
-            const items1 = [];
-            arraySpreadResult = HermesBuiltin.arraySpread(result.slice(0, findIndexResult), 0);
-            items1[arraySpreadResult] = obj;
-            const sum1 = arraySpreadResult + 1;
-            HermesBuiltin.arraySpread(result.slice(findIndexResult), sum1);
-            arr3 = items1;
-          }
+const prototype = PeopleSearchManager.prototype;
+prototype["teardown"] = function teardown() {
+  const userSearch = this.userSearch;
+  userSearch.unsubscribe();
+};
+prototype["search"] = function search(str) {
+  const self = this;
+  const trimmed = str.toLowerCase().trim();
+  this.searchQueryString = trimmed;
+  if ("" === trimmed) {
+    self.processResults();
+  } else {
+    let userSearch = self.userSearch;
+    self.userIndexes = userSearch.filter(trimmed);
+    userSearch = self.userSearch;
+    const response = userSearch.fetch(trimmed, true);
+    let trimmed1;
+    trimmed1 = trimmed.toLocaleLowerCase().trim();
+    if (0 === trimmed1.length) {
+      let items = [];
+    } else {
+      const obj2 = importDefault(12);
+      const values = importDefault(12).chain(mutablePrivateChannels.getMutablePrivateChannels()).values();
+      const found = values.filter(trimmed1(11465).filterGroupDMs);
+      const mapped = found.map((id) => {
+        const items = [id, trimmed1(outer1_2[3]).matchGroupDM(id, trimmed1), outer1_4.getScoreWithoutFetchingLatest(id.id)];
+        return items;
+      });
+      const found1 = mapped.filter((arg0) => {
+        let tmp;
+        [, tmp] = arg0;
+        return tmp > 0;
+      });
+      const sorted = found1.sort((arg0, arg1) => {
+        let diff = arg1[1] - arg0[1];
+        if (0 === diff) {
+          diff = arg1[2] - arg0[2];
         }
-      }
-      if (self.searchQueryString.length > 0) {
-        self.count = arr3.reduce((arg0, items) => arg0 + items.items.length, 0);
+        return diff;
+      });
+      const chainResult = importDefault(12).chain(mutablePrivateChannels.getMutablePrivateChannels());
+      items = sorted.map((arg0) => {
+        let tmp;
+        [tmp] = arg0;
+        return tmp;
+      }).value();
+      const iter = sorted.map((arg0) => {
+        let tmp;
+        [tmp] = arg0;
+        return tmp;
+      });
+    }
+    self.groupDMs = items;
+    const str2 = trimmed.toLocaleLowerCase();
+  }
+};
+prototype["processResults"] = function processResults() {
+  const self = this;
+  const userSearch = this.userSearch;
+  this.userIndexes = userSearch.filter(this.searchQueryString);
+  let obj = require(8815) /* _toPropertyKey */;
+  obj = { data: this.userIndexes, withGuildMembers: true, withAffinitySuggestions: true, withFriends: true, withFriendSuggestions: false, withFriendRequests: false, withFriendRequestsIncoming: false, withFriendRequestsOutgoing: false, excludeCurrentUser: true };
+  const result = obj.parseUserSearchResults(obj);
+  let arr3 = result;
+  if (this.groupDMs.length > 0) {
+    arr3 = result;
+    if ("" !== self.searchQueryString) {
+      obj = { title: null, items: null };
+      let intl = tmp(1236).intl;
+      obj[0] = intl.string(tmp(1236).t.qGlQrW);
+      obj[1] = self.groupDMs;
+      const findIndexResult = result.findIndex((title) => {
+        const intl = callback(1236).intl;
+        return title.title === intl.string(callback(1236).t.y29JXs);
+      });
+      if (-1 === findIndexResult) {
+        const items = [];
+        items[HermesBuiltin.arraySpread(result, 0)] = obj;
+        arr3 = items;
       } else {
-        self.count = null;
+        const items1 = [];
+        let arraySpreadResult = HermesBuiltin.arraySpread(result.slice(0, findIndexResult), 0);
+        items1[arraySpreadResult] = obj;
+        arraySpreadResult = HermesBuiltin.arraySpread(result.slice(findIndexResult), arraySpreadResult + 1);
+        arr3 = items1;
       }
-      self.results = arr3;
-      outer1_13.emitChange();
-    }
-  };
-  items[2] = obj;
-  items[3] = {
-    key: "getResults",
-    value() {
-      return this.results;
-    }
-  };
-  items[4] = {
-    key: "getCount",
-    value() {
-      return this.count;
-    }
-  };
-  return callback2(PeopleSearchManager, items);
-})();
-const map = new Map();
-let tmp3 = ((Store) => {
-  class SearchPeopleTabStoreImpl {
-    constructor() {
-      self = this;
-      tmp = outer1_6(this, SearchPeopleTabStoreImpl);
-      obj = outer1_4(SearchPeopleTabStoreImpl);
-      tmp2 = outer1_3;
-      if (outer1_14()) {
-        tmp6 = globalThis;
-        _Reflect = Reflect;
-        tmp7 = outer1_4;
-        tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, outer1_4(self).constructor);
-      } else {
-        tmp3 = arguments;
-        tmp4 = arguments;
-        constructResult = obj(...arguments);
-      }
-      return tmp2(self, constructResult);
     }
   }
-  callback(SearchPeopleTabStoreImpl, Store);
-  let obj = {
-    key: "initialize",
-    value() {
-      this.waitFor(outer1_8, outer1_9);
-    }
-  };
-  const items = [obj, , ];
-  obj = {
-    key: "getResults",
-    value(arg0) {
-      const value = outer1_12.get(arg0);
-      let results;
-      if (null != value) {
-        results = value.getResults();
-      }
-      if (null == results) {
-        results = outer1_10;
-      }
-      return results;
-    }
-  };
-  items[1] = obj;
-  obj = {
-    key: "getCount",
-    value(arg0) {
-      const value = outer1_12.get(arg0);
-      let count;
-      if (null != value) {
-        count = value.getCount();
-      }
-      let tmp2 = null;
-      if (null != count) {
-        tmp2 = count;
-      }
-      return tmp2;
-    }
-  };
-  items[2] = obj;
-  return callback2(SearchPeopleTabStoreImpl, items);
-})(require("initialize").Store);
-tmp3.displayName = "SearchPeopleTabStore";
-tmp3 = new tmp3(require("dispatcher"), {
+  if (self.searchQueryString.length > 0) {
+    self.count = arr3.reduce((arg0, items) => arg0 + items.items.length, 0);
+  } else {
+    self.count = null;
+  }
+  self.results = arr3;
+  searchPeopleTabStoreImpl.emitChange();
+};
+prototype["getResults"] = function getResults() {
+  return this.results;
+};
+prototype["getCount"] = function getCount() {
+  return this.count;
+};
+const map = new Map();
+class SearchPeopleTabStoreImpl extends Store {
+}
+const prototype2 = SearchPeopleTabStoreImpl.prototype;
+prototype2["initialize"] = function initialize() {
+  this.waitFor(ensureGuildLoaded, handleChannelSelect);
+};
+prototype2["getResults"] = function getResults(arg0) {
+  const value = map.get(arg0);
+  let results;
+  if (value != null) {
+    results = value.getResults();
+  }
+  if (results == null) {
+    results = closure_5;
+  }
+  return results;
+};
+prototype2["getCount"] = function getCount(arg0) {
+  const value = map.get(arg0);
+  let count;
+  if (value != null) {
+    count = value.getCount();
+  }
+  if (count == null) {
+    count = null;
+  }
+  return count;
+};
+SearchPeopleTabStoreImpl.displayName = "SearchPeopleTabStore";
+const searchPeopleTabStoreImpl = new SearchPeopleTabStoreImpl(require("dispatcher"), {
   SEARCH_PEOPLE_TAB_SEARCH: function handleSearchPeopleTabSearch(id) {
     id = id.id;
+    let obj = map;
     let value = map.get(id);
-    if (null == value) {
-      const prototype = ctor.prototype;
-      value = new ctor();
+    if (value == null) {
+      if (typeof PeopleSearchManager !== "find") {
+        HermesBuiltin.throwTypeError();
+      }
+      obj = Object.create(PeopleSearchManager.prototype);
+      obj.count = null;
+      obj.searchQueryString = "";
+      obj.groupDMs = [];
+      obj.userIndexes = {};
+      obj.results = [];
+      let userSearch = new obj(8815).UserSearch(() => obj.processResults());
+      obj.userSearch = userSearch;
+      userSearch = obj.userSearch;
+      const subscription = userSearch.subscribe(() => obj.processResults(), true);
+      value = obj;
+      const tmp11 = PeopleSearchManager;
     }
-    const result = map.set(id, value);
+    const result = obj.set(id, value);
     value.search(id.searchQueryString);
   },
   SEARCH_PEOPLE_TAB_CLEANUP: function handleSearchPeopleTabCleanup(id) {
     id = id.id;
     const value = map.get(id);
-    if (null != value) {
+    if (value != null) {
       value.teardown();
     }
     map.delete(id);
   }
 });
-let closure_13 = tmp3;
-let result = require("_inherits").fileFinishedImporting("modules/search/native/stores/SearchPeopleTabStore.tsx");
+let result = require("apply").fileFinishedImporting("modules/search/native/stores/SearchPeopleTabStore.tsx");
 
-export default tmp3;
+export default searchPeopleTabStoreImpl;

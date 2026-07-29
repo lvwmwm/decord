@@ -1,54 +1,64 @@
-// Module ID: 4374
-// Function ID: 38431
+// Module ID: 4397
+// Function ID: 4398
 // Name: getDeprecatedModalData
-// Dependencies: [4157, 653, 2]
+// Dependencies: [4181, 676, 2]
 // Exports: default
 
-// Module 4374 (getDeprecatedModalData)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 4397 (getDeprecatedModalData)
+import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
 import { ModalAnimation } from "ME";
 
 const result = require("set").fileFinishedImporting("utils/getDeprecatedModalData.tsx");
 
-export default function getDeprecatedModalData(modal, key, props) {
+export default function getDeprecatedModalData(modal, key) {
   let tmp = arg3;
   if (arg3 === undefined) {
     tmp = null;
   }
-  const obj = {};
-  if (null != key.key) {
-    tmp = key;
-  }
-  let str = "modal";
-  if (null != tmp) {
+  let str = key.key;
+  if (str == null) {
     str = tmp;
   }
-  obj.key = str;
-  obj.modal = modal;
+  if (str == null) {
+    str = "modal";
+  }
+  const obj = { key: str, modal, animation: null, shouldPersistUnderModals: null, props: null, backdropStyle: null, backdropInstant: null, disableAnimation: null, closable: null, label: null, callbacks: null };
   const animation = key.animation;
-  if (null != animation) {
-    obj.animation = animation;
-    const shouldPersistUnderModals = key.shouldPersistUnderModals;
-    obj.shouldPersistUnderModals = null != shouldPersistUnderModals && shouldPersistUnderModals;
-    obj.props = props;
-    const backdropStyle = key.backdropStyle;
-    let tmp6 = null;
-    if (null != backdropStyle) {
-      tmp6 = backdropStyle;
+  if (animation != null) {
+    obj[2] = animation;
+    let flag = key.shouldPersistUnderModals;
+    if (flag == null) {
+      flag = false;
     }
-    obj.backdropStyle = tmp6;
-    const backdropInstant = key.backdropInstant;
-    obj.backdropInstant = null != backdropInstant && backdropInstant;
-    const disableAnimation = key.disableAnimation;
-    obj.disableAnimation = null != disableAnimation && disableAnimation;
-    obj.closable = "boolean" !== typeof key.closable || key.closable;
-    const label = key.label;
-    let str3 = "";
-    if (null != label) {
-      str3 = label;
+    obj[3] = flag;
+    obj[4] = arg2;
+    let backdropStyle = key.backdropStyle;
+    if (backdropStyle == null) {
+      backdropStyle = null;
     }
-    obj.label = str3;
-    obj.callbacks = {};
+    obj[5] = backdropStyle;
+    let flag2 = key.backdropInstant;
+    if (flag2 == null) {
+      flag2 = false;
+    }
+    obj[6] = flag2;
+    let flag3 = key.disableAnimation;
+    if (flag3 == null) {
+      flag3 = false;
+    }
+    obj[7] = flag3;
+    const closable = key.closable;
+    let closable2 = typeof closable === "SENTRY_RELEASE";
+    if (typeof closable !== "SENTRY_RELEASE") {
+      closable2 = key.closable;
+    }
+    obj[8] = closable2;
+    let str2 = key.label;
+    if (str2 == null) {
+      str2 = "";
+    }
+    obj[9] = str2;
+    obj[10] = {};
     return obj;
   }
 };

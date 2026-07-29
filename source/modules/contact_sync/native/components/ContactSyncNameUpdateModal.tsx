@@ -1,67 +1,164 @@
-// Module ID: 13855
-// Function ID: 106068
+// Module ID: 13876
+// Function ID: 13877
 // Name: onClose
-// Dependencies: [5, 57, 31, 27, 11744, 33, 4372, 4165, 689, 5118, 11746, 11750, 3866, 1212, 9148, 11763, 5121, 5552, 2]
+// Dependencies: [5, 32, 19, 17, 11769, 21, 4395, 4189, 712, 5140, 11771, 11775, 3890, 1236, 9172, 11788, 5143, 5570, 2]
 // Exports: default
 
-// Module 13855 (onClose)
+// Module 13876 (onClose)
 import jsxProd from "jsxProd";
 import _slicedToArray from "_slicedToArray";
-import result from "result";
-import { View } from "get ActivityIndicator";
+import noop from "noop";
+import { View } from "NavigationStack";
 import { ContactSyncScenes } from "ContactSyncLandingPage";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 import HeaderBackImage from "HeaderBackImage";
 
 const require = arg1;
 function onClose() {
-  let arr = importDefault(4372);
+  let arr = importDefault(4395);
   arr = arr.pop();
 }
 function ContactSyncNameInputScreen() {
   function onNext(arg0) {
-    return _onNext(...arguments);
+    const self = this;
+    const apply = _onNext.apply;
+    if (typeof apply === "unknown") {
+      let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+    } else {
+      applyArgumentsResult = apply(self, arguments);
+    }
+    return applyArgumentsResult;
   }
   function _onNext() {
-    // CreateGeneratorClosureLongIndex (0x67)
-    const obj = outer1_3(tmp);
-    return obj(...arguments);
+    const self = this;
+    const tmp = outer1_3((arg0) => {
+      let closure_0 = arg0;
+      let c2 = 0;
+      let c4 = 0;
+      let c3 = 0;
+      return (function*(arg0) {
+        if (c4 === 2) {
+          c4 = 3;
+          HermesBuiltin.throwTypeError();
+        } else if (tmp6 === 3) {
+          if (arg0 === 1) {
+            throw arg1;
+          } else if (arg0 === 2) {
+            let obj = { value: null, done: true };
+            obj[0] = arg1;
+            return obj;
+          } else {
+            return { value: "HermesInternal", done: null };
+          }
+        } else {
+          try {
+            c4 = 2;
+            if (0 === dependencyMap) {
+              if (arg0 === 1) {
+                c4 = 3;
+                throw arg1;
+              } else if (arg0 === 2) {
+                c4 = 3;
+                obj = { value: null, done: true };
+                obj[0] = arg1;
+                return obj;
+              } else {
+                let closure_1 = tmp3;
+                callback(true);
+                let c3 = 1;
+                dependencyMap = 2;
+                c4 = 1;
+                let obj1 = { value: null, done: false };
+                obj1[0] = outer1_1(11775).updateName(callback);
+                return obj1;
+              }
+            } else {
+              if (1 === tmp7) {
+                c3 = 0;
+                obj1 = outer1_1(3890);
+                const obj2 = { key: "ERROR_GENERIC_TITLE", content: null, icon: null };
+                const intl = callback(1236).intl;
+                obj2[1] = intl.string(callback(1236).t.R0RpRX);
+                obj2[2] = outer1_1(9172);
+                obj1.open(obj2);
+                callback(false);
+                c4 = 3;
+              } else if (arg0 === 1) {
+                c4 = 3;
+                throw arg1;
+              } else if (arg0 !== 2) {
+                callback(false);
+                outer1_9();
+                c3 = 0;
+              }
+              c3 = 0;
+              c4 = 3;
+              obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            }
+          } catch (tmp29) {
+            if (tmp4 === c3) {
+              c4 = tmp2;
+              throw tmp29;
+            } else {
+              dependencyMap = tmp;
+            }
+          }
+        }
+      })();
+    });
+    const _onNext = tmp;
+    const apply = tmp.apply;
+    if (typeof apply === "unknown") {
+      let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+    } else {
+      applyArgumentsResult = apply(self, arguments);
+    }
+    return applyArgumentsResult;
   }
   let obj = _require(_onNext[10]);
   const contactSyncAccount = obj.useContactSyncAccount();
   const tmp3 = callback(React.useState(false), 2);
   _require = tmp3[1];
-  obj = { style: _createForOfIteratorHelperLoose().container };
+  obj = { style: createCacheKey().container, children: null };
   obj = {
     onNext,
     onRemoveName(arg0) {
       return onNext(null);
     },
-    loading: tmp3[0]
+    loading: tmp3[0],
+    initialName: null
   };
-  let name;
-  const tmp = _createForOfIteratorHelperLoose();
-  const tmp4 = jsx;
+  let str;
+  let tmp = createCacheKey();
   const tmp5 = View;
-  const tmp6 = jsx;
-  if (null != contactSyncAccount) {
-    name = contactSyncAccount.name;
+  if (contactSyncAccount != null) {
+    str = contactSyncAccount.name;
   }
-  let str = "";
-  if (null != name) {
-    str = name;
+  if (str == null) {
+    str = "";
   }
-  obj.initialName = str;
-  obj.children = tmp6(onNext(_onNext[15]), obj);
-  return tmp4(tmp5, obj);
+  obj[3] = str;
+  obj[1] = jsx(onNext(_onNext[15]), {
+    onNext,
+    onRemoveName(arg0) {
+      return onNext(null);
+    },
+    loading: tmp3[0],
+    initialName: null
+  });
+  return <tmp5 onNext={onNext} onRemoveName={function onRemoveName(arg0) {
+    return onNext(null);
+  }} loading={tmp3[0]} initialName={null} />;
 }
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { flex: 1, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW, justifyContent: "center", paddingTop: require("NAV_BAR_HEIGHT").NAV_BAR_HEIGHT + 32 };
-_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-const obj1 = {};
-const obj2 = {
+createCacheKey = { container: null };
+createCacheKey = { flex: 1, backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW, justifyContent: "center", paddingTop: require("NAV_BAR_HEIGHT").NAV_BAR_HEIGHT + 32 };
+createCacheKey[0] = createCacheKey;
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let obj1 = {};
+let obj2 = {
   render() {
     return <ContactSyncNameInputScreen />;
   },
@@ -70,10 +167,10 @@ const obj2 = {
   headerLeft: null,
   title: ""
 };
-obj2.headerLeft = HeaderBackImage.getHeaderCloseButton(onClose);
+obj2[3] = HeaderBackImage.getHeaderCloseButton(onClose);
 obj1[ContactSyncScenes.NAME_INPUT] = obj2;
-const result = require("result").fileFinishedImporting("modules/contact_sync/native/components/ContactSyncNameUpdateModal.tsx");
+const result = require("noop").fileFinishedImporting("modules/contact_sync/native/components/ContactSyncNameUpdateModal.tsx");
 
 export default function ContactSyncNameUpdateModal() {
-  return jsx(require(5552) /* NavigationStack */.Navigator, { initialRouteName: ContactSyncScenes.NAME_INPUT, screens: obj1 });
+  return jsx(require(5570) /* NavigationStack */.Navigator, { initialRouteName: ContactSyncScenes.NAME_INPUT, screens: obj1 });
 };

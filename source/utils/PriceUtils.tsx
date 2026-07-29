@@ -1,44 +1,44 @@
-// Module ID: 5651
-// Function ID: 48008
+// Module ID: 5669
+// Function ID: 5670
 // Name: formatSingleCurrencyPrice
-// Dependencies: [1922, 3813, 1852, 482, 477, 5652, 5654, 5656, 1212, 3811, 2]
-// Exports: formatPercent, formatSubscriptionPlanRate, shortenAndFormatPrice
+// Dependencies: [1946, 3837, 1876, 505, 500, 5670, 5672, 5674, 1236, 3835, 2]
+// Exports: formatDualPriceForBG, formatPercent, formatSubscriptionPlanRate, maybeShortenPrice, shortenAndFormatPrice
 
-// Module 5651 (formatSingleCurrencyPrice)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_3 from "_isNativeReflectConstruct";
+// Module 5669 (formatSingleCurrencyPrice)
+import _getSystemLocale from "_getSystemLocale";
+import handlePaymentSourceCreateEnd from "handlePaymentSourceCreateEnd";
 import { SubscriptionIntervalTypes } from "GuildFeatures";
 import { CurrencyCodes } from "sum";
 
 const require = arg1;
 function formatSingleCurrencyPrice(result, BGN, localeOverride) {
-  let obj = {};
-  obj = localeOverride;
-  if (null == localeOverride) {
+  let obj = localeOverride;
+  if (localeOverride == null) {
     obj = {};
   }
+  obj = {};
   const merged = Object.assign(obj);
   localeOverride = undefined;
-  if (null != localeOverride) {
+  if (localeOverride != null) {
     localeOverride = localeOverride.localeOverride;
   }
-  if (null == localeOverride) {
-    localeOverride = _isNativeReflectConstruct.locale;
+  if (localeOverride == null) {
+    localeOverride = _getSystemLocale.locale;
   }
   let isWindowsResult = "en-US" === localeOverride;
   let hasItem = isWindowsResult;
   if (isWindowsResult) {
-    hasItem = closure_6.includes(_isNativeReflectConstruct.systemLocale);
+    hasItem = closure_6.includes(_getSystemLocale.systemLocale);
   }
   if (hasItem) {
     obj.currencyDisplay = "code";
   }
   if (isWindowsResult) {
-    isWindowsResult = require(477) /* set */.isWindows();
-    const obj3 = require(477) /* set */;
+    isWindowsResult = require(500) /* set */.isWindows();
+    const obj3 = require(500) /* set */;
   }
   if (isWindowsResult) {
-    isWindowsResult = "en-GB" === _isNativeReflectConstruct.systemLocale;
+    isWindowsResult = "en-GB" === _getSystemLocale.systemLocale;
   }
   if (isWindowsResult) {
     obj.currencyDisplay = "code";
@@ -46,66 +46,69 @@ function formatSingleCurrencyPrice(result, BGN, localeOverride) {
   if (tmp11) {
     obj.minimumFractionDigits = 0;
   }
-  return require(5652) /* CurrencyCodes */.formatPrice(result, BGN, localeOverride, obj);
-}
-function formatDualPriceForBG(result, localeOverride) {
-  return "" + formatSingleCurrencyPrice(result, CurrencyCodes.EUR, localeOverride) + " (" + formatSingleCurrencyPrice(1.95583 * result, CurrencyCodes.BGN, localeOverride) + ")";
+  return require(5670) /* CurrencyCodes */.formatPrice(result, BGN, localeOverride, obj);
 }
 function formatPrice(amount, currency, localeOverride, localeOverride) {
   const timestamp = Date.now();
   let flag = false;
   if (timestamp < date.getTime()) {
-    const platformName = require(477) /* set */.getPlatformName();
+    const platformName = require(500) /* set */.getPlatformName();
     if ("android" === platformName) {
-      let ipCountryCode = require(5654) /* _isNativeReflectConstruct */.default.getUserCountry();
-      const _default2 = require(5654) /* _isNativeReflectConstruct */.default;
+      let ipCountryCode = tmp2(5672).default.getUserCountry();
+      const _default2 = tmp2(5672).default;
     } else if ("ios" === platformName) {
-      const storeFront = require(5656) /* _isNativeReflectConstruct */.default.getStoreFront();
+      const storeFront = tmp2(5674).default.getStoreFront();
       let country;
-      if (null != storeFront) {
+      if (storeFront != null) {
         country = storeFront.country;
       }
       ipCountryCode = country;
-      const _default = require(5656) /* _isNativeReflectConstruct */.default;
+      const _default = tmp2(5674).default;
     } else {
       ipCountryCode = ipCountryCode.ipCountryCode;
     }
-    let tmp13 = "BG" === ipCountryCode;
-    if (tmp13) {
+    let tmp9 = "BG" === ipCountryCode;
+    if (tmp9) {
       let formatted;
-      if (null != currency) {
+      if (currency != null) {
         formatted = currency.toLowerCase();
       }
-      tmp13 = formatted === CurrencyCodes.EUR;
+      tmp9 = formatted === CurrencyCodes.EUR;
     }
-    flag = tmp13;
-    const obj2 = require(477) /* set */;
+    flag = tmp9;
+    const obj2 = require(500) /* set */;
   }
   if (flag) {
-    let tmp18 = formatDualPriceForBG(amount, localeOverride);
+    const tmp13Result = tmp13(amount, CurrencyCodes.EUR, localeOverride);
+    const _HermesInternal = HermesInternal;
+    let combined = "" + tmp13Result + " (" + tmp13(1.95583 * amount, CurrencyCodes.BGN, localeOverride) + ")";
   } else {
-    tmp18 = formatSingleCurrencyPrice(amount, currency, localeOverride);
+    combined = tmp13(amount, currency, localeOverride);
   }
-  return tmp18;
+  return combined;
 }
 function formatRate(priceString, interval, intervalCount) {
   if (interval === SubscriptionIntervalTypes.YEAR) {
-    const intl3 = require(1212) /* getSystemLocale */.intl;
-    let obj = { price: priceString };
-    return intl3.formatToPlainString(require(1212) /* getSystemLocale */.t["rS8FA+"], obj);
+    const intl3 = require(1236) /* getSystemLocale */.intl;
+    let obj = { price: null };
+    obj[0] = priceString;
+    return intl3.formatToPlainString(require(1236) /* getSystemLocale */.t["rS8FA+"], obj);
   } else {
-    if (interval === SubscriptionIntervalTypes.MONTH) {
+    if (interval === tmp.MONTH) {
       if (1 === intervalCount) {
-        const intl2 = require(1212) /* getSystemLocale */.intl;
-        obj = { price: priceString };
-        return intl2.formatToPlainString(require(1212) /* getSystemLocale */.t.AbOLNu, obj);
+        const intl2 = require(1236) /* getSystemLocale */.intl;
+        obj = { price: null };
+        obj[0] = priceString;
+        return intl2.formatToPlainString(require(1236) /* getSystemLocale */.t.AbOLNu, obj);
       }
     }
-    if (interval === SubscriptionIntervalTypes.MONTH) {
+    if (interval === tmp.MONTH) {
       if (intervalCount > 1) {
-        const intl = require(1212) /* getSystemLocale */.intl;
-        obj = { price: priceString, intervalCount };
-        return intl.formatToPlainString(require(1212) /* getSystemLocale */.t["Qc+9ww"], obj);
+        const intl = require(1236) /* getSystemLocale */.intl;
+        obj = { price: null, intervalCount: null };
+        obj[0] = priceString;
+        obj[1] = intervalCount;
+        return intl.formatToPlainString(require(1236) /* getSystemLocale */.t["Qc+9ww"], obj);
       }
     }
     const _Error = Error;
@@ -114,28 +117,34 @@ function formatRate(priceString, interval, intervalCount) {
     throw error;
   }
 }
-function maybeShortenPrice(str) {
-  let replaced = str;
-  if (str.length > 5) {
-    replaced = str.replace(/\.00(?=[\s)]|$)/g, "");
-  }
-  return replaced;
-}
 let closure_6 = Object.freeze(["en-CA", "en-AU", "en-NZ"]);
 const result = require("GuildFeatures").fileFinishedImporting("utils/PriceUtils.tsx");
 
 export { formatSingleCurrencyPrice };
-export { formatDualPriceForBG };
+export const formatDualPriceForBG = function formatDualPriceForBG(result, localeOverride) {
+  return "" + formatSingleCurrencyPrice(result, CurrencyCodes.EUR, localeOverride) + " (" + formatSingleCurrencyPrice(1.95583 * result, CurrencyCodes.BGN, localeOverride) + ")";
+};
 export { formatPrice };
 export { formatRate };
 export const formatPercent = function formatPercent(arg0, arg1) {
   return Intl.NumberFormat(arg0, { style: "percent", minimumFractionDigits: 0 }).format(arg1);
 };
 export const formatSubscriptionPlanRate = function formatSubscriptionPlanRate(interval_count) {
-  const price = require(3811) /* _createForOfIteratorHelperLoose */.getPrice(interval_count.id);
+  const price = require(3835) /* getPremiumPlanItem */.getPrice(interval_count.id);
   return formatRate(formatPrice(price.amount, price.currency), interval_count.interval, "interval_count" in interval_count ? interval_count.interval_count : interval_count.intervalCount);
 };
-export { maybeShortenPrice };
+export const maybeShortenPrice = function maybeShortenPrice(str) {
+  let replaced = str;
+  if (str.length > 5) {
+    replaced = str.replace(/\.00(?=[\s)]|$)/g, "");
+  }
+  return replaced;
+};
 export const shortenAndFormatPrice = function shortenAndFormatPrice(amount, currency, localeOverride) {
-  return maybeShortenPrice(formatPrice(amount, currency, localeOverride));
+  const arr = formatPrice(amount, currency, localeOverride);
+  let replaced = arr;
+  if (arr.length > 5) {
+    replaced = arr.replace(/\.00(?=[\s)]|$)/g, "");
+  }
+  return replaced;
 };

@@ -1,18 +1,20 @@
-// Module ID: 10171
-// Function ID: 78570
+// Module ID: 10192
+// Function ID: 10193
 // Name: canUnlinkLobbyChannel
-// Dependencies: [3793, 653, 566, 2]
-// Exports: useCanUnlinkLobbyChannel
+// Dependencies: [3817, 676, 589, 2]
+// Exports: canUnlinkLobbyChannel, useCanUnlinkLobbyChannel
 
-// Module 10171 (canUnlinkLobbyChannel)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 10192 (canUnlinkLobbyChannel)
+import getUncachedChannelPermissions from "getUncachedChannelPermissions";
 import { Permissions } from "ME";
 
 const require = arg1;
-function canUnlinkLobbyChannel(channel, closure_0) {
+const result = require("initialize").fileFinishedImporting("modules/lobbies/LobbyUtils.tsx");
+
+export const canUnlinkLobbyChannel = function canUnlinkLobbyChannel(channel, closure_0) {
   let obj = closure_0;
   if (closure_0 === undefined) {
-    obj = _isNativeReflectConstruct;
+    obj = getUncachedChannelPermissions;
   }
   let tmp = null != channel;
   if (tmp) {
@@ -29,12 +31,27 @@ function canUnlinkLobbyChannel(channel, closure_0) {
     tmp = canResult;
   }
   return tmp;
-}
-const result = require("initialize").fileFinishedImporting("modules/lobbies/LobbyUtils.tsx");
-
-export { canUnlinkLobbyChannel };
+};
 export const useCanUnlinkLobbyChannel = function useCanUnlinkLobbyChannel(channel) {
   const _require = channel;
-  const items = [_isNativeReflectConstruct];
-  return _require(566).useStateFromStores(items, () => outer1_4(closure_0, outer1_2));
+  const items = [getUncachedChannelPermissions];
+  return _require(589).useStateFromStores(items, () => {
+    if (outer1_2 !== undefined) {
+      let tmp3 = null != tmp;
+      if (tmp3) {
+        let canResult = null != tmp.linkedLobby;
+        if (canResult) {
+          canResult = obj.can(outer1_3.MANAGE_CHANNELS, tmp);
+        }
+        if (canResult) {
+          canResult = obj.can(outer1_3.VIEW_CHANNEL, tmp);
+        }
+        if (canResult) {
+          canResult = obj.can(outer1_3.SEND_MESSAGES, tmp);
+        }
+        tmp3 = canResult;
+      }
+      return tmp3;
+    }
+  });
 };

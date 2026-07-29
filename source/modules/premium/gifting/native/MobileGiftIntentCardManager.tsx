@@ -1,36 +1,102 @@
-// Module ID: 16265
-// Function ID: 125962
-// Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 5926, 1348, 4384, 1907, 7830, 1852, 669, 3838, 6161, 8402, 480, 4050, 7833, 8792, 16266, 2]
+// Module ID: 16300
+// Function ID: 16301
+// Name: isChannelEligible
+// Dependencies: [5945, 1372, 4407, 1931, 7853, 1876, 16301, 692, 3862, 6179, 8426, 503, 4074, 7856, 8816, 2]
 
-// Module 16265 (_isNativeReflectConstruct)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_4 from "_isNativeReflectConstruct";
-import isThrottled from "isThrottled";
-import apexExperiment from "apexExperiment";
-import fetchUserAffinitiesV2 from "fetchUserAffinitiesV2";
-import closure_8 from "_isNativeReflectConstruct";
-import closure_9 from "_isNativeReflectConstruct";
-import closure_10 from "_isNativeReflectConstruct";
-import closure_11 from "_isNativeReflectConstruct";
-import closure_12 from "_isNativeReflectConstruct";
+// Module 16300 (isChannelEligible)
+import recomputeAffinities from "recomputeAffinities";
+import ensureGuildLoaded from "ensureGuildLoaded";
+import reinjectEphemerals from "reinjectEphemerals";
+import handleConnectionOpen from "handleConnectionOpen";
+import getCurrentTime from "getCurrentTime";
 import GuildFeatures from "GuildFeatures";
-import tmp3 from "_createForOfIteratorHelperLoose";
+import "onPostConnectionOpen";
 
-let closure_13;
-let closure_14;
+let c9;
+let metroImportAll;
 const require = arg1;
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
-  }
-  const result = _isNativeReflectConstruct();
+({ GiftIntentSecondaryAction: metroImportAll, GiftIntentType: c9 } = GuildFeatures);
+class MobileGiftIntentCardManager extends tmp3 {
 }
-({ GiftIntentSecondaryAction: closure_13, GiftIntentType: closure_14 } = GuildFeatures);
-tmp3 = new tmp3();
-let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/premium/gifting/native/MobileGiftIntentCardManager.tsx");
+const prototype = MobileGiftIntentCardManager.prototype;
+prototype["isChannelEligible"] = function isChannelEligible(channel) {
+  return channel.type === require(692) /* set */.ChannelTypes.DM;
+};
+prototype["maybeSendCard"] = function maybeSendCard(id, closure_0) {
+  let self = this;
+  self = this;
+  let closure_1 = id;
+  const _require = closure_0;
+  const EnableFriendAnniversaryNotifications = _require(self[8]).EnableFriendAnniversaryNotifications;
+  if (EnableFriendAnniversaryNotifications.getSetting()) {
+    if (!getCurrentTime.isGiftIntentMessageInCooldown(closure_0)) {
+      if (id === store.getChannelId()) {
+        if (ready.isReady(id)) {
+          if (self.trySendGiftingPromptSystemMessage(id, constants2.FRIEND_ANNIVERSARY, closure_0, constants.SEND_MESSAGE, "maybeSendCard")) {
+            let tmpResult = tmp(tmp2[9]);
+            const result = tmpResult.logMessageGiftIntentShown(closure_0);
+            userAffinity = userAffinity.getUserAffinity(closure_0);
+            tmpResult = tmp(tmp2[10]);
+            let obj = { name: null, type: null, properties: null };
+            obj[0] = tmp(tmp2[11]).ImpressionNames.GIFT_INTENT_UNREAD_NOTIFICATION;
+            obj[1] = tmp(tmp2[11]).ImpressionTypes.VIEW;
+            obj = { gift_intent_type: null, dm_affinity: null, channel_id: null };
+            obj[0] = tmp6.FRIEND_ANNIVERSARY;
+            let dmProbability;
+            if (userAffinity != null) {
+              dmProbability = userAffinity.dmProbability;
+            }
+            obj[1] = dmProbability;
+            obj[2] = id;
+            obj[2] = obj;
+            tmpResult.trackImpression(obj);
+          }
+          tmp6 = constants2;
+        } else {
+          obj5.whenReady(id, () => {
+            if (outer1_6.getChannelId() === closure_1) {
+              self.maybeSendCard(tmp, closure_0);
+            }
+          });
+        }
+        obj5 = ready;
+      }
+    }
+  }
+};
+prototype["sendCardInSelectedChannelIfEligible"] = function sendCardInSelectedChannelIfEligible(channelId) {
+  let self = this;
+  self = this;
+  channel = channel.getChannel(channelId);
+  if (null != channel) {
+    if (self.isChannelEligible(channel)) {
+      const _Set = Set;
+      const set = new Set(channel.recipients);
+      const friendAnniversaries = getCurrentTime.getFriendAnniversaries();
+      const found = friendAnniversaries.find((arg0) => set.has(arg0));
+      if (null != found) {
+        const delayedCall = new found(set[12]).DelayedCall(1000, () => {
+          self.maybeSendCard(channel.id, found);
+        });
+        delayedCall.delay();
+      }
+    }
+  }
+};
+prototype["maybeFetchUserAffinities"] = function maybeFetchUserAffinities() {
+  if (obj.getConfig({ location: "MobileGiftIntentCardManager" }).enabled) {
+    const userAffinitiesV2 = require(8816) /* fetchUserAffinitiesV2 */.fetchUserAffinitiesV2();
+    const obj2 = require(8816) /* fetchUserAffinitiesV2 */;
+  }
+};
+prototype["onChannelSelect"] = function onChannelSelect(channelId) {
+  const result = this.sendCardInSelectedChannelIfEligible(channelId.channelId);
+};
+prototype["sendGiftingPromptSystemMessagesIfEligible"] = function sendGiftingPromptSystemMessagesIfEligible() {
+  const result = this.maybeFetchUserAffinities();
+  const result1 = this.sendCardInSelectedChannelIfEligible(store.getChannelId());
+};
+const mobileGiftIntentCardManager = new MobileGiftIntentCardManager();
+let result = require("reinjectEphemerals").fileFinishedImporting("modules/premium/gifting/native/MobileGiftIntentCardManager.tsx");
 
-export default tmp3;
+export default mobileGiftIntentCardManager;

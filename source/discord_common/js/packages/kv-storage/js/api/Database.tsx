@@ -1,373 +1,346 @@
-// Module ID: 1891
-// Function ID: 21102
-// Name: _createForOfIteratorHelperLoose
-// Dependencies: [5, 6, 7, 1890, 1892, 20, 1893, 2]
+// Module ID: 1915
+// Function ID: 1916
+// Name: open
+// Dependencies: [5, 1916, 1914, 1917, 10, 2]
 
-// Module 1891 (_createForOfIteratorHelperLoose)
-import AppStartPerformance from "AppStartPerformance";
-import Host from "Host";
+// Module 1915 (open)
 import set from "set";
 
 const require = arg1;
-function _createForOfIteratorHelperLoose(iterable) {
-  let closure_0 = iterable;
-  iterable = "undefined" !== typeof Symbol;
-  if (iterable) {
-    const _Symbol = Symbol;
-    iterable = iterable[Symbol.iterator];
-  }
-  if (!iterable) {
-    iterable = iterable[Symbol.iterator];
-  }
-  if (iterable) {
-    const iter = iterable.call(iterable);
-    const next = iter.next;
-    return next.bind(iter);
-  } else {
-    const _Array = Array;
-    let tmp = iterable;
-    if (!Array.isArray(iterable)) {
-      let tmp2;
-      if (iterable) {
-        if ("string" === typeof iterable) {
-          tmp2 = _arrayLikeToArray(iterable, undefined);
-        } else {
-          const toString = {}.toString;
-          const substr = toString.call(iterable).slice(8, -1);
-          let name = substr;
-          if (tmp3) {
-            name = iterable.constructor.name;
-          }
-          if ("Map" !== name) {
-            if ("Set" !== name) {
-              if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(iterable, undefined);
-              } else {
-                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
-              }
-            }
-            tmp2 = arr;
-          }
-          const _Array2 = Array;
-          arr = Array.from(iterable);
-          const callResult = toString.call(iterable);
-          tmp3 = "Object" === substr && iterable.constructor;
-        }
+let Database;
+class Database {
+  constructor(arg0) {
+    obj = Object.create(new.target.prototype);
+    closure_0 = obj;
+    obj.raw = global;
+    obj.name = global.name;
+    obj.lastState = require("TableId").DatabaseState.Open;
+    obj.handle = global.handle;
+    Runtime = require("logger").Runtime;
+    obj.databaseStateCallback = Runtime.addDatabaseStateCallback((arg0, lastState) => {
+      if (obj.handle === arg0) {
+        tmp.lastState = lastState;
       }
-      tmp = tmp2;
-      if (!tmp2) {
-        const _TypeError = TypeError;
-        const typeError = new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
-        throw typeError;
-      }
-    }
-    if (tmp) {
-      closure_0 = tmp;
-    }
-    let c1 = 0;
-    return () => {
-      if (closure_1 >= length.length) {
-        let obj = { done: true };
-      } else {
-        obj = { done: false };
-        closure_1 = tmp3 + 1;
-        obj.value = length[+closure_1];
-      }
-      return obj;
-    };
+    });
+    return obj;
   }
 }
-function _arrayLikeToArray(arg0, arg1) {
-  let length;
-  if (tmp) {
-    length = arg0.length;
-  }
-  const ArrayResult = Array(length);
-  for (let num = 0; num < length; num = num + 1) {
-    ArrayResult[num] = arg0[num];
-  }
-  return ArrayResult;
-}
-let tmp3 = (() => {
-  class DatabaseTransaction {
-    constructor(arg0) {
-      tmp = outer1_4(this, DatabaseTransaction);
-      this.database = arg0;
-      this.operations = [];
-      return;
-    }
-  }
-  let obj = {
-    key: "add",
-    value(arg0) {
-      const operations = this.operations;
-      operations.push(arg0);
-    }
-  };
-  const items = [obj, , ];
-  obj = {
-    key: "complete",
-    value() {
-      let done;
-      const tmp = outer1_7(this.operations);
-      let iter = tmp();
-      if (!iter.done) {
-        do {
-          iter.value.handle = 0;
-          let iter2 = tmp();
-          iter = iter2;
-          done = iter2.done;
-        } while (!done);
-      }
-      return this.operations;
-    }
-  };
-  items[1] = obj;
-  obj = {
-    key: "toString",
-    value() {
-      return "[DatabaseTransaction " + this.database.handle + ": " + this.operations.length + " ops]";
-    }
-  };
-  items[2] = obj;
-  return callback2(DatabaseTransaction, items);
-})();
-let closure_6 = tmp3;
-let tmp2 = (() => {
-  class Database {
-    constructor(arg0) {
-      self = this;
-      tmp = outer1_4(this, Database);
-      this.raw = arg0;
-      this.name = arg0.name;
-      this.lastState = f21126(Database[3]).DatabaseState.Open;
-      this.handle = arg0.handle;
-      Runtime = f21126(Database[4]).Runtime;
-      this.databaseStateCallback = Runtime.addDatabaseStateCallback((arg0, lastState) => {
-        if (self.handle === arg0) {
-          self.lastState = lastState;
-        }
-      });
-      return;
-    }
-  }
-  let obj = {
-    key: "close",
-    value() {
-      const self = this;
-      this.lastState = callback(Database[3]).DatabaseState.Closed;
-      const raw = this.raw;
-      if (null != raw) {
-        raw.close();
-      }
-      self.raw = null;
-      const Runtime = callback(Database[4]).Runtime;
-      const result = Runtime.removeCompletionCallback(self.databaseStateCallback);
-    }
-  };
-  const items = [obj, , , , , , , , , , ];
-  obj = {
-    key: "disable",
-    value(reason) {
-      const self = this;
-      if (null == this.raw) {
-        let resolved = Promise.resolve();
+const prototype = Database.prototype;
+Database["open"] = function open(arg0, arg1) {
+  let closure_0 = arg0;
+  let closure_1 = arg1;
+  return callback(function*() {
+    if (table === 2) {
+      table = 3;
+      HermesBuiltin.throwTypeError();
+    } else if (tmp3 === 3) {
+      if (arg0 === 1) {
+        throw arg1;
+      } else if (arg0 === 2) {
+        let obj = { value: null, done: true };
+        obj[0] = arg1;
+        return obj;
       } else {
-        self.lastState = callback(Database[3]).DatabaseState.Disabled;
-        const obj = { type: "db.disable", handle: 0, reason };
-        resolved = self.execute(obj);
+        return { value: "HermesInternal", done: null };
       }
-      return resolved;
-    }
-  };
-  items[1] = obj;
-  obj = {
-    key: "execute",
-    value(table) {
-      let type = arg1;
-      const self = this;
-      const callback2 = table;
-      let closure_2 = arg1;
-      if (null == this.raw) {
-        const _Error = Error;
-        const _HermesInternal2 = HermesInternal;
-        const error = new Error("database is no longer open (database: " + tmp);
-        throw error;
-      } else {
-        if ("key" in table) {
-          table = table.key[0];
-        } else {
-          table = table.table;
-        }
-        function callback() {
-          const Runtime = _self(Database[4]).Runtime;
-          if (null != closure_2) {
-            let type = closure_2;
+    } else {
+      try {
+        table = 2;
+        if (0 === c1) {
+          if (arg0 === 1) {
+            table = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            table = 3;
+            obj = { value: null, done: true };
+            obj[0] = arg1;
+            return obj;
           } else {
-            type = table.type;
+            let closure_0 = outer1_5;
+            const Host = outer1_0(table[1]).Host;
+            c1 = 1;
+            table = 1;
+            const obj1 = { value: null, done: false };
+            obj1[0] = Host.open(outer1_0, c1);
+            return obj1;
           }
-          return Runtime.executeAsync(type, (arg0) => {
-            const raw = outer1_0.raw;
-            const obj = {};
-            const merged = Object.assign(outer1_1);
-            obj["handle"] = 0;
-            raw.execute(arg0, obj);
-          });
-        }
-        if (null === type) {
-          let callbackResult = callback();
+        } else if (arg0 === 1) {
+          table = 3;
+          throw arg1;
+        } else if (arg0 === 2) {
+          table = 3;
+          const obj2 = { value: null, done: true };
+          obj2[0] = arg1;
+          return obj2;
         } else {
-          if (null == type) {
-            type = table.type;
-          }
-          let str2 = "";
-          if (null != table) {
-            str2 = table;
-          }
-          const _HermesInternal = HermesInternal;
-          callbackResult = callback2(Database[5]).timeAsync("\u{1F4BE}", "" + type + " " + str2, callback);
-          let obj = callback2(Database[5]);
+          table = 3;
+          obj = { value: null, done: true };
+          obj[0] = new closure_0(arg1);
+          return obj;
         }
-        return callbackResult;
+      } catch (tmp13) {
+        table = tmp;
+        throw tmp13;
       }
     }
-  };
-  items[2] = obj;
-  items[3] = {
-    key: "executeSync",
-    value(table) {
-      const self = this;
-      const callback2 = table;
-      if (null == this.raw) {
-        const _Error = Error;
-        const _HermesInternal2 = HermesInternal;
-        const error = new Error("database is no longer open (database: " + tmp);
-        throw error;
-      } else {
-        if ("key" in table) {
-          table = table.key[0];
-        } else {
-          table = table.table;
+  })();
+};
+Database["openSyncUnsafe"] = function openSyncUnsafe(arg0, arg1) {
+  const Host = obj(1916).Host;
+  const openSyncUnsafeResult = Host.openSyncUnsafe(arg0, arg1);
+  if (typeof Database !== "find") {
+    HermesBuiltin.throwTypeError();
+  }
+  obj = Object.create(Database.prototype);
+  obj.raw = openSyncUnsafeResult;
+  obj.name = openSyncUnsafeResult.name;
+  obj.lastState = obj(1914).DatabaseState.Open;
+  obj.handle = openSyncUnsafeResult.handle;
+  const Runtime = tmp2(1917).Runtime;
+  obj.databaseStateCallback = Runtime.addDatabaseStateCallback((arg0, lastState) => {
+    if (obj.handle === arg0) {
+      tmp.lastState = lastState;
+    }
+  });
+  return obj;
+};
+Database["delete"] = function delete(arg0) {
+  const Host = require(1916) /* open */.Host;
+  return Host.delete(arg0);
+};
+prototype["close"] = function close() {
+  const self = this;
+  this.lastState = require(1914) /* TableId */.DatabaseState.Closed;
+  const raw = this.raw;
+  if (raw != null) {
+    raw.close();
+  }
+  self.raw = null;
+  const Runtime = require(1917) /* logger */.Runtime;
+  const result = Runtime.removeCompletionCallback(self.databaseStateCallback);
+};
+prototype["disable"] = function disable(arg0) {
+  const self = this;
+  if (null == this.raw) {
+    let resolved = Promise.resolve();
+  } else {
+    self.lastState = require(1914) /* TableId */.DatabaseState.Disabled;
+    const obj = { type: "db.disable", handle: 0, reason: null };
+    obj[2] = arg0;
+    resolved = self.execute(obj);
+  }
+  return resolved;
+};
+prototype["execute"] = function execute(table) {
+  const self = this;
+  const importDefault = table;
+  let type = arg1;
+  const _require = arg1;
+  if (null == this.raw) {
+    const _Error = Error;
+    const _HermesInternal2 = HermesInternal;
+    const error = new Error("database is no longer open (database: " + tmp);
+    throw error;
+  } else {
+    if ("key" in table) {
+      let str = table.key[0];
+    } else {
+      str = table.table;
+    }
+    if (null === type) {
+      let Runtime = _require(self[3]).Runtime;
+      if (type == null) {
+        type = table.type;
+      }
+      let executeAsyncResult = Runtime.executeAsync(type, (arg0) => {
+        raw = raw.raw;
+        const obj = {};
+        const merged = Object.assign(closure_1);
+        obj.handle = 0;
+        raw.execute(arg0, obj);
+      });
+    } else {
+      let type2 = type;
+      if (type == null) {
+        type2 = table.type;
+      }
+      if (str == null) {
+        str = "";
+      }
+      const _HermesInternal = HermesInternal;
+      function callback() {
+        const Runtime = callback(self[3]).Runtime;
+        let type = callback;
+        if (callback == null) {
+          type = table.type;
         }
-        let str = "";
-        if (null != table) {
-          str = table;
-        }
-        const _HermesInternal = HermesInternal;
-        return callback2(Database[5]).time("\u{1F4BE}", "SYNC: " + table.type + " " + str, () => {
-          const raw = self.raw;
+        return Runtime.executeAsync(type, (arg0) => {
+          raw = raw.raw;
           const obj = {};
           const merged = Object.assign(closure_1);
-          obj["handle"] = 0;
-          return raw.execute(null, obj, { synchronous: true });
+          obj.handle = 0;
+          raw.execute(arg0, obj);
         });
       }
+      executeAsyncResult = importDefault(self[4]).timeAsync("\u{1F4BE}", "" + type2 + " " + str, callback);
+      let obj = importDefault(self[4]);
     }
-  };
-  items[4] = {
-    key: "fullVacuum",
-    value() {
-      return this.execute({ type: "db.vacuum", handle: 0, complete: true });
-    }
-  };
-  items[5] = {
-    key: "fsInfo",
-    value() {
-      return this.execute({ type: "db.fs_info", handle: 0 });
-    }
-  };
-  items[6] = {
-    key: "incrementalVacuum",
-    value() {
-      return this.execute({ type: "db.vacuum", handle: 0, complete: false });
-    }
-  };
-  items[7] = {
-    key: "instantaneousState",
-    value() {
-      const self = this;
-      if (null == this.raw) {
-        let Closed = callback(Database[3]).DatabaseState.Closed;
-      } else {
-        const obj = { type: "db.state" };
-        Closed = self.executeSync(obj);
-        self.lastState = Closed;
-      }
-      return Closed;
-    }
-  };
-  const obj6 = { key: "instantaneousStateAsync" };
-  let closure_1 = callback(async function() {
-    const self = this;
-    if (null == self.raw) {
-      let Closed = callback(Database[3]).DatabaseState.Closed;
+    return executeAsyncResult;
+  }
+};
+prototype["executeSync"] = function executeSync(table) {
+  const self = this;
+  let closure_0 = table;
+  if (null == this.raw) {
+    const _Error = Error;
+    const _HermesInternal2 = HermesInternal;
+    const error = new Error("database is no longer open (database: " + tmp);
+    throw error;
+  } else {
+    if ("key" in table) {
+      let str = table.key[0];
     } else {
-      const obj = { type: "db.state" };
-      const tmp = yield self.execute(obj);
-      self.lastState = tmp;
-      Closed = tmp;
+      str = table.table;
     }
-    return Closed;
-  });
-  obj6.value = function instantaneousStateAsync() {
-    return callback2(...arguments);
-  };
-  items[8] = obj6;
-  items[9] = {
-    key: "state",
-    value() {
-      return this.lastState;
+    if (str == null) {
+      str = "";
     }
-  };
-  items[10] = {
-    key: "transaction",
-    value(arg0, arg1) {
-      const self = this;
-      let closure_1 = arg1;
-      const tmp = new outer1_6(this);
-      const Database = tmp;
-      const resolved = Promise.resolve(arg0(tmp));
-      return resolved.then(() => {
-        if (tmp.operations.length > 0) {
-          const obj = { type: "db.transaction", operations: tmp.complete() };
-          let executeResult = self.execute(obj, closure_1);
-        } else {
-          executeResult = Promise.resolve();
+    const _HermesInternal = HermesInternal;
+    return self(10).time("\u{1F4BE}", "SYNC: " + table.type + " " + str, () => {
+      const raw = self.raw;
+      const obj = {};
+      const merged = Object.assign(closure_0);
+      obj.handle = 0;
+      return raw.execute(null, obj, { synchronous: true });
+    });
+  }
+};
+prototype["fullVacuum"] = function fullVacuum() {
+  return this.execute({ type: "db.vacuum", handle: 0, complete: true });
+};
+prototype["fsInfo"] = function fsInfo() {
+  return this.execute({ type: "db.fs_info", handle: 0 });
+};
+prototype["incrementalVacuum"] = function incrementalVacuum() {
+  return this.execute({ type: "db.vacuum", handle: 0, complete: false });
+};
+prototype["instantaneousState"] = function instantaneousState() {
+  const self = this;
+  if (null == this.raw) {
+    let Closed = require(1914) /* TableId */.DatabaseState.Closed;
+  } else {
+    Closed = self.executeSync({ type: "db.state" });
+    self.lastState = Closed;
+  }
+  return Closed;
+};
+prototype["instantaneousStateAsync"] = function instantaneousStateAsync() {
+  const self = this;
+  return callback(function*() {
+    if (table === 2) {
+      table = 3;
+      HermesBuiltin.throwTypeError();
+    } else if (tmp3 === 3) {
+      if (arg0 === 1) {
+        throw arg1;
+      } else if (arg0 === 2) {
+        let obj = { value: null, done: true };
+        obj[0] = arg1;
+        return obj;
+      } else {
+        return { value: "HermesInternal", done: null };
+      }
+    } else {
+      try {
+        table = 2;
+        if (0 === c1) {
+          if (arg0 === 1) {
+            table = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            table = 3;
+            obj = { value: null, done: true };
+            obj[0] = arg1;
+            return obj;
+          } else {
+            const obj5 = outer1_0;
+            if (null == outer1_0.raw) {
+              const Closed = outer1_0(table[2]).DatabaseState.Closed;
+              table = 3;
+            } else {
+              c1 = 1;
+              table = 1;
+              const obj1 = { value: null, done: false };
+              obj1[0] = obj5.execute({ type: "db.state" });
+              return obj1;
+            }
+          }
+        } else if (arg0 === 1) {
+          table = 3;
+          throw arg1;
+        } else if (arg0 !== 2) {
+          obj5.lastState = arg1;
         }
-        return executeResult;
-      });
+        table = 3;
+        obj = { value: null, done: true };
+        obj[0] = arg1;
+        return obj;
+      } catch (tmp9) {
+        table = tmp;
+        throw tmp9;
+      }
     }
-  };
-  const obj9 = { key: "open" };
-  let closure_0 = callback(async (arg0, arg1) => {
-    let tmp = outer1_2;
-    const Host = callback(Database[6]).Host;
-    tmp = new tmp(yield Host.open(arg0, arg1));
-    return tmp;
+  })();
+};
+prototype["state"] = function state() {
+  return this.lastState;
+};
+prototype["transaction"] = function transaction(arg0, arg1) {
+  const self = this;
+  let closure_1 = arg1;
+  if (typeof DatabaseTransaction !== "find") {
+    HermesBuiltin.throwTypeError();
+  }
+  let obj = Object.create(DatabaseTransaction.prototype);
+  obj.database = this;
+  obj.operations = [];
+  const resolved = Promise.resolve(arg0(obj));
+  return resolved.then(() => {
+    if (obj.operations.length > 0) {
+      obj = { type: "db.transaction", operations: null };
+      obj[1] = obj.complete();
+      let executeResult = self.execute(obj, closure_1);
+    } else {
+      executeResult = Promise.resolve();
+    }
+    return executeResult;
   });
-  obj9.value = function open() {
-    return callback(...arguments);
-  };
-  const items1 = [
-    obj9,
-    {
-      key: "openSyncUnsafe",
-      value(arg0, arg1) {
-        const Host = callback(Database[6]).Host;
-        return new Database(Host.openSyncUnsafe(arg0, arg1));
-      }
-    },
-    {
-      key: "delete",
-      value(arg0) {
-        const Host = callback(Database[6]).Host;
-        return Host.delete(arg0);
-      }
-    }
-  ];
-  return callback2(Database, items, items1);
-})();
-let result = require("_defineProperties").fileFinishedImporting("../discord_common/js/packages/kv-storage/js/api/Database.tsx");
+};
+class DatabaseTransaction {
+  constructor(arg0) {
+    obj = Object.create(new.target.prototype);
+    obj.database = global;
+    obj.operations = [];
+    return obj;
+  }
+}
+const prototype2 = DatabaseTransaction.prototype;
+prototype2["add"] = function add(arg0) {
+  const operations = this.operations;
+  operations.push(arg0);
+};
+prototype2["complete"] = function complete() {
+  const iter = this.operations[Symbol.iterator]();
+  while (iter !== undefined) {
+    iter.next().handle = 0;
+    continue;
+  }
+  return this.operations;
+};
+prototype2["toString"] = function toString() {
+  return "[DatabaseTransaction " + this.database.handle + ": " + this.operations.length + " ops]";
+};
+let result = require("TableId").fileFinishedImporting("../discord_common/js/packages/kv-storage/js/api/Database.tsx");
 
-export const Database = tmp2;
-export const DatabaseTransaction = tmp3;
+export { Database };
+export { DatabaseTransaction };

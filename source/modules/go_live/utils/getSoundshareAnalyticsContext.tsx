@@ -1,11 +1,11 @@
-// Module ID: 4341
-// Function ID: 37822
+// Module ID: 4365
+// Function ID: 4366
 // Name: getSoundshareAnalyticsContext
-// Dependencies: [4185, 2]
+// Dependencies: [4209, 2]
 // Exports: default
 
-// Module 4341 (getSoundshareAnalyticsContext)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 4365 (getSoundshareAnalyticsContext)
+import initialize from "initialize";
 
 const result = require("set").fileFinishedImporting("modules/go_live/utils/getSoundshareAnalyticsContext.tsx");
 
@@ -19,17 +19,20 @@ export default function getSoundshareAnalyticsContext(sourcePid) {
     if (null != sourcePid) {
       gameForPID = gameForPID.getGameForPID(sourcePid);
       let name;
-      if (null != gameForPID) {
+      if (gameForPID != null) {
         name = gameForPID.name;
       }
       let id;
-      if (null != gameForPID) {
+      if (gameForPID != null) {
         id = gameForPID.id;
       }
-      tmp2 = id;
-      tmp = name;
+      tmp = id;
+      tmp2 = name;
     }
-    const obj = { soundshare_session: sourcePid.soundshareSession, share_game_name: tmp, share_game_id: tmp2 };
+    const obj = { soundshare_session: null, share_game_name: null, share_game_id: null };
+    obj[0] = sourcePid.soundshareSession;
+    obj[1] = tmp2;
+    obj[2] = tmp;
     return obj;
   }
 };

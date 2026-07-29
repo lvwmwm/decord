@@ -1,69 +1,70 @@
-// Module ID: 9162
-// Function ID: 71818
+// Module ID: 9186
+// Function ID: 9187
 // Name: ConfirmEmailChangeStart
-// Dependencies: [5, 57, 31, 27, 1850, 33, 4165, 1456, 566, 9163, 668, 4065, 3866, 1212, 9164, 4161, 4578, 2]
+// Dependencies: [5, 32, 19, 17, 1874, 21, 4189, 1480, 589, 9187, 691, 4089, 3890, 1236, 9188, 4185, 4600, 2]
 // Exports: default
 
-// Module 9162 (ConfirmEmailChangeStart)
+// Module 9186 (ConfirmEmailChangeStart)
 import closure_3 from "jsxProd";
 import _slicedToArray from "_slicedToArray";
-import result from "result";
-import get_ActivityIndicator from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import noop from "noop";
+import get_ActivityIndicator from "set";
+import mergeGuildAvatar from "mergeGuildAvatar";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_10;
-let closure_11;
+let c10;
 let closure_6;
-let closure_7;
-let closure_8;
+let error;
+let metroImportAll;
+let unpackModuleId;
 let require = arg1;
-({ View: closure_6, Image: closure_7, ScrollView: closure_8 } = get_ActivityIndicator);
-({ jsx: closure_10, jsxs: closure_11 } = jsxProd);
-let closure_12 = _createForOfIteratorHelperLoose.createStyles({ container: { flex: 1, padding: 16, alignItems: "center", justifyContent: "center" }, image: { height: 190, width: 220, resizeMode: "contain" }, title: { marginTop: 16, textAlign: "center" }, body: { marginTop: 8, lineHeight: 18, textAlign: "center" }, button: { marginTop: 16, width: "100%" } });
-const result = require("result").fileFinishedImporting("modules/verification/native/components/ConfirmEmailChangeStart.tsx");
+({ View: closure_6, Image: error, ScrollView: metroImportAll } = get_ActivityIndicator);
+({ jsx: c10, jsxs: unpackModuleId } = jsxProd);
+let closure_12 = createCacheKey.createStyles({ container: { flex: 1, padding: 16, alignItems: "center", justifyContent: "center" }, image: { height: 190, width: 220, resizeMode: "contain" }, title: { marginTop: 16, textAlign: "center" }, body: { marginTop: 8, lineHeight: 18, textAlign: "center" }, button: { marginTop: 16, width: "100%" } });
+const result = require("noop").fileFinishedImporting("modules/verification/native/components/ConfirmEmailChangeStart.tsx");
 
 export default function ConfirmEmailChangeStart() {
   const tmp = callback4();
   const require = tmp;
-  let obj = require(1456) /* useNavigation */;
+  let obj = require(1480) /* useNavigation */;
   const navigation = obj.useNavigation();
-  let obj1 = require(566) /* initialize */;
-  const items = [_isNativeReflectConstruct];
-  const stateFromStores = obj1.useStateFromStores(items, () => outer1_9.getCurrentUser());
-  const tmp4 = callback(React.useState(false), 2);
-  const dependencyMap = tmp4[1];
-  // CreateGeneratorClosureLongIndex (0x67)
+  let obj1 = require(589) /* initialize */;
+  const items = [mergeGuildAvatar];
+  const stateFromStores = obj1.useStateFromStores(items, () => currentUser.getCurrentUser());
+  const tmp6 = callback(React.useState(false), 2);
+  const dependencyMap = tmp6[1];
   [][0] = navigation;
   if (null == stateFromStores) {
     return null;
   } else {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    obj = { oldEmail: stateFromStores.email };
-    obj = { keyboardShouldPersistTaps: "handled", alwaysBounceVertical: false };
-    obj1 = { style: tmp.container };
-    const obj2 = { style: tmp.image, source: navigation(9164) };
+    const intl = tmp2(1236).intl;
+    obj = { oldEmail: null };
+    obj[0] = stateFromStores.email;
+    obj = { keyboardShouldPersistTaps: "handled", alwaysBounceVertical: false, children: null };
+    obj1 = { style: null, children: null };
+    obj1[0] = tmp.container;
+    let obj2 = { style: null, source: null };
+    obj2[0] = tmp.image;
+    obj2[1] = navigation(9188);
     const items1 = [callback2(closure_7, obj2), , , ];
-    const obj3 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary" };
-    const intl2 = require(1212) /* getSystemLocale */.intl;
-    obj3.children = intl2.string(require(1212) /* getSystemLocale */.t.dQ71Wa);
-    items1[1] = callback2(require(4161) /* Text */.Text, obj3);
-    items1[2] = intl.format(require(1212) /* getSystemLocale */.t.oMFSgi, obj).map((children) => {
-      const obj = { style: tmp.body, variant: "text-sm/medium", color: "text-default", children };
-      return outer1_10(tmp(table[15]).Text, obj, arg1);
-    });
-    const obj4 = { style: tmp.button };
-    const obj5 = {};
-    const intl3 = require(1212) /* getSystemLocale */.intl;
-    obj5.text = intl3.string(require(1212) /* getSystemLocale */.t.rXV81H);
-    obj5.onPress = tmp5;
-    obj5.loading = tmp4[0];
-    obj5.grow = true;
-    obj4.children = callback2(require(4578) /* Button */.Button, obj5);
+    const obj3 = { style: null, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: null };
+    obj3[0] = tmp.title;
+    const intl2 = tmp2(1236).intl;
+    obj3[4] = intl2.string(tmp2(1236).t.dQ71Wa);
+    items1[1] = callback2(tmp2(4185).Text, obj3);
+    items1[2] = intl.format(tmp2(1236).t.oMFSgi, obj).map((children) => outer1_10(tmp(table[15]).Text, { style: tmp.body, variant: "text-sm/medium", color: "text-default", children }, arg1));
+    const obj4 = { style: null, children: null };
+    obj4[0] = tmp.button;
+    const obj5 = { text: null, onPress: null, loading: null, grow: true };
+    const intl3 = tmp2(1236).intl;
+    obj5[0] = intl3.string(tmp2(1236).t.rXV81H);
+    obj5[1] = tmp7;
+    obj5[2] = tmp6[0];
+    obj4[1] = callback2(tmp2(4600).Button, obj5);
     items1[3] = callback2(closure_6, obj4);
-    obj1.children = items1;
-    obj.children = callback3(closure_6, obj1);
+    obj1[1] = items1;
+    obj[2] = callback3(closure_6, obj1);
     return callback2(closure_8, obj);
   }
 };

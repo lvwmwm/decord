@@ -1,45 +1,32 @@
-// Module ID: 5957
-// Function ID: 52742
+// Module ID: 5976
+// Function ID: 5977
 // Name: extractActivityBookmarkParams
-// Dependencies: [1443, 2]
+// Dependencies: [1467, 2]
 // Exports: extractActivityBookmarkParams
 
-// Module 5957 (extractActivityBookmarkParams)
+// Module 5976 (extractActivityBookmarkParams)
 const result = require("set").fileFinishedImporting("modules/applications/message_embed/utils/activityBookmarkUtils.tsx");
 
 export const extractActivityBookmarkParams = function extractActivityBookmarkParams(url) {
-  let obj = importDefault(1443);
+  let obj = importDefault(1467);
   const toURLSafeResult = obj.toURLSafe(url);
-  obj = {};
   let value;
-  if (null != toURLSafeResult) {
+  if (toURLSafeResult != null) {
     const searchParams = toURLSafeResult.searchParams;
     value = searchParams.get("referrer_id");
   }
-  let tmp3;
-  if (null != value) {
-    tmp3 = value;
-  }
-  obj.referrerId = tmp3;
+  obj = { referrerId: value, customId: null, linkId: null };
   value = undefined;
-  if (null != toURLSafeResult) {
+  if (toURLSafeResult != null) {
     const searchParams2 = toURLSafeResult.searchParams;
     value = searchParams2.get("custom_id");
   }
-  let tmp5;
-  if (null != value) {
-    tmp5 = value;
-  }
-  obj.customId = tmp5;
+  obj[1] = value;
   let value1;
-  if (null != toURLSafeResult) {
+  if (toURLSafeResult != null) {
     const searchParams3 = toURLSafeResult.searchParams;
     value1 = searchParams3.get("link_id");
   }
-  let tmp7;
-  if (null != value1) {
-    tmp7 = value1;
-  }
-  obj.linkId = tmp7;
+  obj[2] = value1;
   return obj;
 };

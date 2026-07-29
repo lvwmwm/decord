@@ -1,12 +1,12 @@
-// Module ID: 4015
-// Function ID: 33125
+// Module ID: 4039
+// Function ID: 4040
 // Name: getGuildIdFromNavigationState
-// Dependencies: [57, 31, 653, 4016, 4017, 4046, 4047, 2]
+// Dependencies: [32, 19, 676, 4040, 4041, 4070, 4071, 2]
 // Exports: default
 
-// Module 4015 (getGuildIdFromNavigationState)
+// Module 4039 (getGuildIdFromNavigationState)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
+import noop from "noop";
 import { ME } from "ME";
 
 const require = arg1;
@@ -15,15 +15,15 @@ function getGuildIdFromNavigationState(routes) {
     routes = routes.routes;
     if (null != routes) {
       let guildId;
-      if (null != routes[routes.index]) {
+      if (routes[routes.index] != null) {
         const params = tmp.params;
-        if (null != params) {
+        if (params != null) {
           guildId = params.guildId;
         }
       }
       if (null == guildId) {
         let state;
-        if (null != tmp) {
+        if (tmp != null) {
           state = tmp.state;
         }
         guildId = getGuildIdFromNavigationState(state);
@@ -34,37 +34,119 @@ function getGuildIdFromNavigationState(routes) {
   }
 }
 function getActiveGuildThemeGuildIdSnapshot() {
-  const rootNavigationRef = require(4017) /* getRootNavigationRef */.getRootNavigationRef();
+  const rootNavigationRef = require(4041) /* getRootNavigationRef */.getRootNavigationRef();
   if (null != rootNavigationRef) {
     if (rootNavigationRef.isReady()) {
-      let tmp = (function getGuildIdFromRootNavigationState(rootState) {
-        const tmp = outer1_6(rootState);
-        if (null != tmp) {
-          return tmp;
-        } else {
-          let found;
-          if (null != rootState) {
-            const routes = rootState.routes;
-            if (null != routes) {
-              const mapped = routes.map(outer1_0(outer1_2[3]).coerceMainRoute);
-              found = mapped.find((arg0) => null != arg0);
+      const rootState = rootNavigationRef.getRootState();
+      let tmp4;
+      if (null != rootState) {
+        let routes = rootState.routes;
+        if (null != routes) {
+          let guildId;
+          if (routes[rootState.index] != null) {
+            const params = tmp5.params;
+            if (params != null) {
+              guildId = params.guildId;
             }
           }
-          let state;
-          if (null != found) {
-            state = found.state;
+          if (null == guildId) {
+            let state;
+            if (tmp5 != null) {
+              state = tmp5.state;
+            }
+            let tmp8;
+            if (null != state) {
+              const routes2 = state.routes;
+              if (null != routes2) {
+                let guildId1;
+                if (routes2[state.index] != null) {
+                  const params2 = tmp9.params;
+                  if (params2 != null) {
+                    guildId1 = params2.guildId;
+                  }
+                }
+                if (null == guildId1) {
+                  let state1;
+                  if (tmp9 != null) {
+                    state1 = tmp9.state;
+                  }
+                  guildId1 = getGuildIdFromNavigationState(state1);
+                  const tmp11 = getGuildIdFromNavigationState;
+                }
+                tmp8 = guildId1;
+              }
+            }
+            guildId = tmp8;
           }
-          return outer1_6(state);
-        }
-      })(rootNavigationRef.getRootState());
-      let tmp2 = null;
-      if (null != tmp) {
-        tmp2 = null;
-        if (tmp !== ME) {
-          tmp2 = tmp;
+          tmp4 = guildId;
         }
       }
-      return tmp2;
+      if (null == tmp4) {
+        let found;
+        if (rootState != null) {
+          routes = rootState.routes;
+          if (routes != null) {
+            const mapped = routes.map(require(4040) /* navigationToRootTabHelper */.coerceMainRoute);
+            found = mapped.find((arg0) => null != arg0);
+          }
+        }
+        let state2;
+        if (found != null) {
+          state2 = found.state;
+        }
+        let tmp15;
+        if (null != state2) {
+          const routes3 = state2.routes;
+          if (null != routes3) {
+            let guildId2;
+            if (routes3[state2.index] != null) {
+              const params3 = tmp16.params;
+              if (params3 != null) {
+                guildId2 = params3.guildId;
+              }
+            }
+            if (null == guildId2) {
+              let state3;
+              if (tmp16 != null) {
+                state3 = tmp16.state;
+              }
+              let tmp19;
+              if (null != state3) {
+                const routes4 = state3.routes;
+                if (null != routes4) {
+                  let guildId3;
+                  if (routes4[state3.index] != null) {
+                    const params4 = tmp20.params;
+                    if (params4 != null) {
+                      guildId3 = params4.guildId;
+                    }
+                  }
+                  if (null == guildId3) {
+                    let state4;
+                    if (tmp20 != null) {
+                      state4 = tmp20.state;
+                    }
+                    guildId3 = getGuildIdFromNavigationState(state4);
+                    const tmp22 = getGuildIdFromNavigationState;
+                  }
+                  tmp19 = guildId3;
+                }
+              }
+              guildId2 = tmp19;
+            }
+            tmp15 = guildId2;
+          }
+        }
+        tmp4 = tmp15;
+      }
+      let tmp24 = null;
+      if (null != tmp4) {
+        tmp24 = null;
+        if (tmp4 !== ME) {
+          tmp24 = tmp4;
+        }
+      }
+      return tmp24;
     }
   }
   return null;
@@ -72,30 +154,28 @@ function getActiveGuildThemeGuildIdSnapshot() {
 const result = require("ME").fileFinishedImporting("modules/guild_themes/native/useRoutedActiveGuildTheme.tsx");
 
 export default function useRoutedActiveGuildTheme() {
-  const tmp = (function useRoutedActiveGuildThemeGuildId() {
-    const context = outer1_4.useContext(outer1_1(outer1_2[5]));
-    const tmp2 = outer1_3(outer1_4.useState(outer1_7), 2);
-    let first = tmp2[0];
-    let closure_0 = tmp2[1];
-    const effect = outer1_4.useEffect(() => {
+  let require;
+  let tmp4;
+  const context = React.useContext(importDefault(4070));
+  [tmp4, require] = callback(React.useState(getActiveGuildThemeGuildIdSnapshot), 2);
+  const effect = React.useEffect(() => {
+    const rootNavigationRef = outer1_0(outer1_2[4]).getRootNavigationRef();
+    if (null != rootNavigationRef) {
       function handleStateChange() {
-        outer1_0(outer3_7());
+        callback(outer1_7());
       }
-      const rootNavigationRef = outer2_0(outer2_2[4]).getRootNavigationRef();
-      if (null != rootNavigationRef) {
-        handleStateChange();
-        return rootNavigationRef.addListener("state", handleStateChange);
-      }
-      const obj = outer2_0(outer2_2[4]);
-    }, []);
-    if (undefined !== context) {
-      let tmp6 = null;
-      if (context !== outer1_5) {
-        tmp6 = context;
-      }
-      first = tmp6;
+      callback(outer1_7());
+      return rootNavigationRef.addListener("state", handleStateChange);
     }
-    return first;
-  })();
-  return require(4047) /* resolveRenderableGuildThemeSettings */.useActiveGuildThemeForGuildId(tmp);
+    const obj = outer1_0(outer1_2[4]);
+  }, []);
+  if (undefined !== context) {
+    let tmp7 = null;
+    if (context !== ME) {
+      tmp7 = context;
+    }
+    tmp4 = tmp7;
+  }
+  const tmp3 = callback(React.useState(getActiveGuildThemeGuildIdSnapshot), 2);
+  return require(4071) /* resolveSavedActiveGuildTheme */.useActiveGuildThemeForGuildId(tmp4);
 };

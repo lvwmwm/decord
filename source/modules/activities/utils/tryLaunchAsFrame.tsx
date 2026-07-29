@@ -1,11 +1,11 @@
-// Module ID: 10614
-// Function ID: 82574
+// Module ID: 10637
+// Function ID: 10638
 // Name: tryLaunchAsFrame
-// Dependencies: [4202, 10481, 5675, 2]
+// Dependencies: [4226, 10505, 5693, 2]
 // Exports: tryLaunchAsFrame
 
-// Module 10614 (tryLaunchAsFrame)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 10637 (tryLaunchAsFrame)
+import addApplication from "addApplication";
 
 const require = arg1;
 const result = require("_launchFrameOnNative").fileFinishedImporting("modules/activities/utils/tryLaunchAsFrame.tsx");
@@ -15,15 +15,16 @@ export const tryLaunchAsFrame = function tryLaunchAsFrame(applicationId) {
   application = application.getApplication(applicationId);
   let tmp2 = null == application;
   if (!tmp2) {
-    let obj = require(10481) /* canLaunchFrame */;
+    let obj = require(10505) /* canLaunchFrame */;
     tmp2 = !obj.canLaunchFrame(application);
   }
   let flag = !tmp2;
   if (!tmp2) {
-    obj = { applicationId };
-    importDefault(5675).launchFrame(obj);
+    obj = { applicationId: null };
+    obj[0] = applicationId;
+    importDefault(5693).launchFrame(obj);
     flag = true;
-    const obj2 = importDefault(5675);
+    const obj2 = importDefault(5693);
   }
   return flag;
 };

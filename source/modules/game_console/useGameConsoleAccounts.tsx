@@ -1,20 +1,20 @@
-// Module ID: 8904
-// Function ID: 70293
+// Module ID: 8928
+// Function ID: 8929
 // Name: useGameConsoleAccounts
-// Dependencies: [4847, 653, 566, 1327, 2]
+// Dependencies: [4869, 676, 589, 1351, 2]
 // Exports: default
 
-// Module 8904 (useGameConsoleAccounts)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 8928 (useGameConsoleAccounts)
+import set from "set";
 import { PlatformTypes } from "ME";
 
 const require = arg1;
 const result = require("initialize").fileFinishedImporting("modules/game_console/useGameConsoleAccounts.tsx");
 
 export default function useGameConsoleAccounts() {
-  let items = [_isNativeReflectConstruct];
-  return require(566) /* initialize */.useStateFromStoresArray(items, () => {
-    const items = [outer1_2.getAccount(null, outer1_3.XBOX), outer1_2.getAccount(null, outer1_3.PLAYSTATION), outer1_2.getAccount(null, outer1_3.PLAYSTATION_STAGING)];
-    return items.filter(outer1_0(outer1_1[3]).isNotNullish);
+  let items = [set];
+  return require(589) /* initialize */.useStateFromStoresArray(items, () => {
+    const items = [store.getAccount(null, constants.XBOX), store.getAccount(null, constants.PLAYSTATION), store.getAccount(null, constants.PLAYSTATION_STAGING)];
+    return items.filter(callback(table[3]).isNotNullish);
   });
 };

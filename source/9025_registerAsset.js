@@ -1,11 +1,10 @@
 // Module ID: 9025
-// Function ID: 70937
+// Function ID: 9026
 // Name: registerAsset
-// Dependencies: [1217]
+// Dependencies: [1241]
 
 // Module 9025 (registerAsset)
 import registerAsset from "registerAsset";
 
-const obj = { __packager_asset: true, httpServerLocation: "/assets/modules/game_console/images", width: 126, height: 118, scales: [2, 3], hash: "02b1067b85b45dd047c8c944ed8c1d6e", name: "devices_not_found", type: "png" };
 
-export default registerAsset.registerAsset(obj);
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "9efbede8b87c94f401364acf34876922", name: "HammerIcon", type: "png" });

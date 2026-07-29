@@ -1,10 +1,10 @@
-// Module ID: 9541
-// Function ID: 74269
+// Module ID: 9565
+// Function ID: 9566
 // Name: createPendingReply
-// Dependencies: [686, 2]
+// Dependencies: [709, 2]
 // Exports: createPendingReply, createShallowPendingReply, deletePendingReply, setPendingReplyShouldMention
 
-// Module 9541 (createPendingReply)
+// Module 9565 (createPendingReply)
 const result = require("set").fileFinishedImporting("modules/replies/PendingReplyActionCreators.tsx");
 
 export const createPendingReply = function createPendingReply(arg0) {
@@ -15,7 +15,7 @@ export const createPendingReply = function createPendingReply(arg0) {
   let showMentionToggle;
   let source;
   ({ message, channel, shouldMention, showMentionToggle, source, mediaMention } = arg0);
-  importDefault(686).dispatch({ type: "CREATE_PENDING_REPLY", message, channel, shouldMention, showMentionToggle, source, mediaMention });
+  importDefault(709).dispatch({ type: "CREATE_PENDING_REPLY", message, channel, shouldMention, showMentionToggle, source, mediaMention });
 };
 export const createShallowPendingReply = function createShallowPendingReply(arg0) {
   let channel;
@@ -23,15 +23,15 @@ export const createShallowPendingReply = function createShallowPendingReply(arg0
   let shouldMention;
   let showMentionToggle;
   ({ messageId, channel, shouldMention, showMentionToggle } = arg0);
-  return importDefault(686).dispatch({ type: "CREATE_SHALLOW_PENDING_REPLY", messageId, channel, shouldMention, showMentionToggle });
+  return importDefault(709).dispatch({ type: "CREATE_SHALLOW_PENDING_REPLY", messageId, channel, shouldMention, showMentionToggle });
 };
 export const setPendingReplyShouldMention = function setPendingReplyShouldMention(id, shouldMention) {
-  let obj = importDefault(686);
+  let obj = importDefault(709);
   obj = { type: "SET_PENDING_REPLY_SHOULD_MENTION", channelId: id, shouldMention };
   obj.dispatch(obj);
 };
 export const deletePendingReply = function deletePendingReply(id) {
-  let obj = importDefault(686);
+  let obj = importDefault(709);
   obj = { type: "DELETE_PENDING_REPLY", channelId: id };
   obj.dispatch(obj);
 };

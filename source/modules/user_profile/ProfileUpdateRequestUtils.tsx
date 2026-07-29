@@ -1,104 +1,102 @@
-// Module ID: 9776
-// Function ID: 75962
+// Module ID: 9798
+// Function ID: 9799
 // Name: getProfileChangesForUpdateRequest
-// Dependencies: [7927, 9777, 1877, 2]
+// Dependencies: [7952, 9799, 1901, 2]
 // Exports: getAccountUpdateForUpdateRequest, getGuildMemberChangesForUpdateRequest, getPrimaryGuildChangesForUpdateRequest, getProfileChangesForUpdateRequest
 
-// Module 9776 (getProfileChangesForUpdateRequest)
+// Module 9798 (getProfileChangesForUpdateRequest)
 const result = require("CollectiblesItemType").fileFinishedImporting("modules/user_profile/ProfileUpdateRequestUtils.tsx");
 
-export const getProfileChangesForUpdateRequest = function getProfileChangesForUpdateRequest(pendingBanner, id) {
+export const getProfileChangesForUpdateRequest = function getProfileChangesForUpdateRequest(outer1_0, id) {
+  let pendingProfileEffect;
+  let pendingProfileFrame;
   let obj = {};
-  if (undefined !== pendingBanner.pendingBanner) {
-    obj.banner = pendingBanner.pendingBanner;
-    if (null !== pendingBanner.pendingBanner) {
-      const pendingBannerOriginalMd5 = pendingBanner.pendingBannerOriginalMd5;
-      let tmp2 = null;
-      if (null != pendingBannerOriginalMd5) {
-        tmp2 = pendingBannerOriginalMd5;
+  if (undefined !== outer1_0.pendingBanner) {
+    obj.banner = outer1_0.pendingBanner;
+    if (null !== outer1_0.pendingBanner) {
+      let prop = outer1_0.pendingBannerOriginalMd5;
+      if (prop == null) {
+        prop = null;
       }
-      obj.bannerOriginalMd5 = tmp2;
+      obj.bannerOriginalMd5 = prop;
     }
   }
-  if (null != pendingBanner.pendingBio) {
-    obj.bio = pendingBanner.pendingBio;
+  if (null != outer1_0.pendingBio) {
+    obj.bio = outer1_0.pendingBio;
   }
-  if (null != pendingBanner.pendingPronouns) {
-    obj.pronouns = pendingBanner.pendingPronouns;
+  if (null != outer1_0.pendingPronouns) {
+    obj.pronouns = outer1_0.pendingPronouns;
   }
-  if (undefined !== pendingBanner.pendingAccentColor) {
-    obj.accent_color = pendingBanner.pendingAccentColor;
+  if (undefined !== outer1_0.pendingAccentColor) {
+    obj.accent_color = outer1_0.pendingAccentColor;
   }
-  if (undefined !== pendingBanner.pendingThemeColors) {
-    obj.theme_colors = pendingBanner.pendingThemeColors;
+  if (undefined !== outer1_0.pendingThemeColors) {
+    obj.theme_colors = outer1_0.pendingThemeColors;
   }
-  const tmp3 = (function getCollectiblesChangesForUpdateRequest(pendingBanner, id) {
-    let pendingProfileEffect;
-    let pendingProfileFrame;
-    ({ pendingProfileEffect, pendingProfileFrame } = pendingBanner);
-    if (undefined === pendingProfileEffect) {
-      if (undefined === pendingProfileFrame) {
-        return {};
-      }
+  ({ pendingProfileEffect, pendingProfileFrame } = outer1_0);
+  if (undefined === pendingProfileEffect) {
+    if (undefined === pendingProfileFrame) {
+      obj = {};
     }
-    const tmp = outer1_1(outer1_2[1])(id);
-    let collectibles;
-    if (null != tmp) {
-      collectibles = tmp.collectibles;
+    if (undefined !== obj.collectibles_sku_ids) {
+      obj.collectibles_sku_ids = obj.collectibles_sku_ids;
     }
-    if (null == collectibles) {
-      collectibles = [];
-    }
-    const items = [...collectibles];
-    if (undefined !== pendingProfileEffect) {
-      const found = items.filter((type) => type.type !== outer2_0(outer2_2[2]).CollectiblesItemType.PROFILE_EFFECT);
-      let arr3 = found;
-      if (null !== pendingProfileEffect) {
-        let obj = { skuId: pendingProfileEffect.skuId, type: outer1_0(outer1_2[2]).CollectiblesItemType.PROFILE_EFFECT };
-        found.push(obj);
-        arr3 = found;
-      }
-    }
-    let arr5 = arr3;
-    if (undefined !== pendingProfileFrame) {
-      const found1 = arr3.filter((type) => type.type !== outer2_0(outer2_2[2]).CollectiblesItemType.PROFILE_FRAME);
-      arr5 = found1;
-      if (null !== pendingProfileFrame) {
-        found1.push(pendingProfileFrame);
-        arr5 = found1;
-      }
-    }
-    obj = { collectibles_sku_ids: arr5.map((skuId) => skuId.skuId) };
     return obj;
-  })(pendingBanner, id);
-  if (undefined !== tmp3.collectibles_sku_ids) {
-    obj.collectibles_sku_ids = tmp3.collectibles_sku_ids;
   }
-  return obj;
+  const tmp4 = importDefault(9799)(id);
+  let collectibles;
+  if (tmp4 != null) {
+    collectibles = tmp4.collectibles;
+  }
+  if (collectibles == null) {
+    collectibles = [];
+  }
+  const items = [...collectibles];
+  if (undefined !== pendingProfileEffect) {
+    const found = items.filter((type) => type.type !== callback(1901).CollectiblesItemType.PROFILE_EFFECT);
+    let arr3 = found;
+    if (null !== pendingProfileEffect) {
+      obj = { skuId: null, type: null };
+      obj[0] = pendingProfileEffect.skuId;
+      obj[1] = require(1901) /* CollectiblesItemType */.CollectiblesItemType.PROFILE_EFFECT;
+      found.push(obj);
+      arr3 = found;
+    }
+  }
+  let arr5 = arr3;
+  if (undefined !== pendingProfileFrame) {
+    const found1 = arr3.filter((type) => type.type !== callback(1901).CollectiblesItemType.PROFILE_FRAME);
+    arr5 = found1;
+    if (null !== pendingProfileFrame) {
+      found1.push(pendingProfileFrame);
+      arr5 = found1;
+    }
+  }
+  obj = { collectibles_sku_ids: arr5.map((skuId) => skuId.skuId) };
 };
-export const getAccountUpdateForUpdateRequest = function getAccountUpdateForUpdateRequest(pendingGlobalName) {
+export const getAccountUpdateForUpdateRequest = function getAccountUpdateForUpdateRequest(outer1_0) {
   const obj = {};
-  if (undefined !== pendingGlobalName.pendingGlobalName) {
-    obj.globalName = pendingGlobalName.pendingGlobalName;
+  if (undefined !== outer1_0.pendingGlobalName) {
+    obj.globalName = outer1_0.pendingGlobalName;
   }
-  if (undefined !== pendingGlobalName.pendingNameplate) {
-    obj.nameplate = pendingGlobalName.pendingNameplate;
+  if (undefined !== outer1_0.pendingNameplate) {
+    obj.nameplate = outer1_0.pendingNameplate;
   }
-  if (undefined !== pendingGlobalName.pendingAvatar) {
-    const pendingAvatar = pendingGlobalName.pendingAvatar;
+  if (undefined !== outer1_0.pendingAvatar) {
+    const pendingAvatar = outer1_0.pendingAvatar;
     if (null === pendingAvatar) {
       obj.avatar = null;
-    } else if (pendingAvatar.assetOrigin === require(7927) /* AssetOriginTypes */.AssetOriginTypes.ARCHIVED_ASSET) {
+    } else if (pendingAvatar.assetOrigin === require(7952) /* AssetOriginTypes */.AssetOriginTypes.ARCHIVED_ASSET) {
       obj.avatarId = pendingAvatar.originalAsset.id;
     } else {
       ({ imageUri: obj.avatar, description: obj.avatarDescription, originalMd5: obj.avatarOriginalMd5 } = pendingAvatar);
     }
   }
-  if (undefined !== pendingGlobalName.pendingAvatarDecoration) {
-    obj.avatarDecoration = pendingGlobalName.pendingAvatarDecoration;
+  if (undefined !== outer1_0.pendingAvatarDecoration) {
+    obj.avatarDecoration = outer1_0.pendingAvatarDecoration;
   }
-  if (undefined !== pendingGlobalName.pendingDisplayNameStyles) {
-    obj.displayNameStyles = pendingGlobalName.pendingDisplayNameStyles;
+  if (undefined !== outer1_0.pendingDisplayNameStyles) {
+    obj.displayNameStyles = outer1_0.pendingDisplayNameStyles;
   }
   return obj;
 };
@@ -108,17 +106,16 @@ export const getGuildMemberChangesForUpdateRequest = function getGuildMemberChan
     pendingAvatar = pendingAvatar.pendingAvatar;
     if (null === pendingAvatar) {
       obj.avatar = null;
-    } else if (pendingAvatar.assetOrigin === require(7927) /* AssetOriginTypes */.AssetOriginTypes.ARCHIVED_ASSET) {
+    } else if (pendingAvatar.assetOrigin === require(7952) /* AssetOriginTypes */.AssetOriginTypes.ARCHIVED_ASSET) {
       obj.avatarId = pendingAvatar.originalAsset.id;
     } else {
       ({ imageUri: obj.avatar, description: obj.avatarDescription, originalMd5: obj.avatarOriginalMd5 } = pendingAvatar);
     }
   }
   if (undefined !== pendingAvatar.pendingNickname) {
-    const pendingNickname = pendingAvatar.pendingNickname;
-    let str = "";
-    if (null != pendingNickname) {
-      str = pendingNickname;
+    let str = pendingAvatar.pendingNickname;
+    if (str == null) {
+      str = "";
     }
     obj.nick = str;
   }
@@ -133,10 +130,10 @@ export const getGuildMemberChangesForUpdateRequest = function getGuildMemberChan
   }
   return obj;
 };
-export const getPrimaryGuildChangesForUpdateRequest = function getPrimaryGuildChangesForUpdateRequest(pendingPrimaryGuildId) {
+export const getPrimaryGuildChangesForUpdateRequest = function getPrimaryGuildChangesForUpdateRequest(outer1_0) {
   const obj = {};
-  if (undefined !== pendingPrimaryGuildId.pendingPrimaryGuildId) {
-    obj.primaryGuildId = pendingPrimaryGuildId.pendingPrimaryGuildId;
+  if (undefined !== outer1_0.pendingPrimaryGuildId) {
+    obj.primaryGuildId = outer1_0.pendingPrimaryGuildId;
   }
   return obj;
 };

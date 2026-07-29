@@ -1,11 +1,11 @@
-// Module ID: 7630
-// Function ID: 60864
+// Module ID: 7653
+// Function ID: 7654
 // Name: FormRadioRow
-// Dependencies: [31, 33, 5197, 3883, 7631, 5191, 5214, 2]
+// Dependencies: [19, 21, 5219, 3907, 7654, 5213, 5236, 2]
 // Exports: default
 
-// Module 7630 (FormRadioRow)
-import result from "result";
+// Module 7653 (FormRadioRow)
+import noop from "noop";
 import { jsx } from "jsxProd";
 
 const require = arg1;
@@ -23,38 +23,42 @@ export default function FormRadioRow(arg0) {
     align = "left";
   }
   ({ leading, onPress } = arg0);
-  let obj = { selected: 0, align: 0, leading: 0, value: 0, onPress: 0, style: 0 };
   ({ value, style } = arg0);
-  Object.setPrototypeOf(null);
-  const merged = Object.assign(arg0, obj);
-  const context = React.useContext(require(5197) /* context */.RedesignCompatContext);
-  let obj1 = require(3883) /* useCheckboxA11yNative */;
-  const radioA11yNative = obj1.useRadioA11yNative({ selected });
+  const merged = Object.assign(arg0, Object.create(null));
+  const context = React.useContext(require(5219) /* context */.RedesignCompatContext);
+  let obj = require(3907) /* useCheckboxA11yNative */;
+  const radioA11yNative = obj.useRadioA11yNative({ selected });
   if (context) {
-    obj = { icon: leading, value, legacyCompat_selected: selected, legacyCompat_onPress: onPress };
+    obj = { icon: null, value: null, legacyCompat_selected: null, legacyCompat_onPress: null };
+    obj[0] = leading;
+    obj[1] = value;
+    obj[2] = selected;
+    obj[3] = onPress;
     const merged1 = Object.assign(merged);
-    let tmp7Result = tmp7(require(7631) /* TableRadioRow */.TableRadioRow, obj);
+    let tmp8Result = tmp8(require(7654) /* TableRadioRow */.TableRadioRow, obj);
   } else {
     obj = {};
     const merged2 = Object.assign(merged);
-    obj["style"] = style;
-    obj["onPress"] = onPress;
-    obj["accessibilityRole"] = tmp5;
-    obj["accessibilityState"] = tmp6;
-    let tmp14 = null;
+    obj.style = style;
+    obj.onPress = onPress;
+    obj.accessibilityRole = tmp6;
+    obj.accessibilityState = tmp7;
+    tmp8Result = null;
     if ("right" === align) {
-      obj1 = { selected };
-      tmp14 = jsx(importDefault(5214), { selected });
+      const obj1 = { selected: null };
+      obj1[0] = selected;
+      tmp8Result = tmp8(tmp9(5236), obj1);
     }
-    obj["trailing"] = tmp14;
-    let tmp18 = leading;
+    obj.trailing = tmp8Result;
+    let tmp8Result1 = leading;
     if ("left" === align) {
-      const obj2 = { selected };
-      tmp18 = jsx(importDefault(5214), { selected });
+      const obj2 = { selected: null };
+      obj2[0] = selected;
+      tmp8Result1 = tmp8(tmp9(5236), obj2);
     }
-    obj["leading"] = tmp18;
-    tmp7Result = tmp7(importDefault(5191), obj);
-    const tmp10 = importDefault(5191);
+    obj.leading = tmp8Result1;
+    tmp8Result = tmp8(importDefault(5213), obj);
+    const tmp10 = importDefault(5213);
   }
-  return tmp7Result;
+  return tmp8Result;
 };

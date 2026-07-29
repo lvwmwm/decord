@@ -1,29 +1,29 @@
-// Module ID: 7988
-// Function ID: 63355
+// Module ID: 8013
+// Function ID: 8014
 // Name: canViewInteractionInfo
-// Dependencies: [1882, 2]
+// Dependencies: [1906, 2]
 // Exports: canViewInteractionInfo, isPrimaryEntryPointCommandMessage
 
-// Module 7988 (canViewInteractionInfo)
+// Module 8013 (canViewInteractionInfo)
 const result = require("set").fileFinishedImporting("modules/applications/ApplicationInteractionInfoUtils.tsx");
 
 export const canViewInteractionInfo = function canViewInteractionInfo(message) {
   return null != message.interactionMetadata;
 };
-export const isPrimaryEntryPointCommandMessage = function isPrimaryEntryPointCommandMessage(message) {
-  const interactionMetadata = message.interactionMetadata;
+export const isPrimaryEntryPointCommandMessage = function isPrimaryEntryPointCommandMessage(interactionMetadata) {
+  interactionMetadata = interactionMetadata.interactionMetadata;
   let type;
-  if (null != interactionMetadata) {
+  if (interactionMetadata != null) {
     type = interactionMetadata.type;
   }
-  let tmp2 = type === require(1882) /* PermissionOverwriteType */.InteractionTypes.APPLICATION_COMMAND;
-  if (tmp2) {
-    const interactionMetadata2 = message.interactionMetadata;
+  let tmp4 = type === require(1906) /* PermissionOverwriteType */.InteractionTypes.APPLICATION_COMMAND;
+  if (tmp4) {
+    const interactionMetadata2 = interactionMetadata.interactionMetadata;
     let command_type;
-    if (null != interactionMetadata2) {
+    if (interactionMetadata2 != null) {
       command_type = interactionMetadata2.command_type;
     }
-    tmp2 = command_type === require(1882) /* PermissionOverwriteType */.ApplicationCommandType.PRIMARY_ENTRY_POINT;
+    tmp4 = command_type === require(1906) /* PermissionOverwriteType */.ApplicationCommandType.PRIMARY_ENTRY_POINT;
   }
-  return tmp2;
+  return tmp4;
 };

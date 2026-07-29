@@ -1,15 +1,15 @@
-// Module ID: 15769
-// Function ID: 121506
+// Module ID: 15804
+// Function ID: 15805
 // Name: items
-// Dependencies: [31, 27, 33, 15768, 2]
+// Dependencies: [19, 17, 21, 15803, 2]
 // Exports: default
 
-// Module 15769 (items)
-import "result";
+// Module 15804 (items)
+import "noop";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
 
-const items = [require("items")().layout.margin, { flex: 1, flexDirection: "row", alignItems: "center" }];
+const items = [require("getLayoutStyle")().layout.margin, { flex: 1, flexDirection: "row", alignItems: "center" }];
 const result = require("jsxProd").fileFinishedImporting("modules/launchpad/native/shared/renderChannelPressableWrapper.tsx");
 
 export default function renderChannelPressableWrapper(children) {

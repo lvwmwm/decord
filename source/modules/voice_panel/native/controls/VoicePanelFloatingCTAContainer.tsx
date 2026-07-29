@@ -1,30 +1,30 @@
-// Module ID: 15964
-// Function ID: 123233
+// Module ID: 15999
+// Function ID: 16000
 // Name: FloatingCTA
-// Dependencies: [57, 31, 1348, 10016, 10019, 482, 33, 1324, 689, 4165, 4576, 7614, 3877, 10015, 15852, 8418, 624, 15848, 4026, 11409, 4511, 9891, 4577, 7656, 9642, 2]
+// Dependencies: [32, 19, 1372, 10038, 10041, 505, 21, 1348, 712, 4189, 4598, 7637, 3901, 10037, 15887, 8442, 647, 15883, 4050, 11433, 4534, 9913, 4599, 7679, 9664, 2]
 // Exports: getFloatingCTATotalViewHeight, renderVoicePanelFloatingCTA
 
-// Module 15964 (FloatingCTA)
+// Module 15999 (FloatingCTA)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import VOICE_PANEL_DRAWER_MAX_WIDTH from "VOICE_PANEL_DRAWER_MAX_WIDTH";
+import ensureGuildLoaded from "ensureGuildLoaded";
 import VoicePanelModes from "VoicePanelModes";
 import { CALL_TILE_GUTTER } from "CARD_SIZE";
 import { ThemeTypes } from "sum";
-import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import { jsx } from "t";
+import createCacheKey from "createCacheKey";
 
+let MODE_CHANGE_PHYSICS;
+let closure_6;
 const require = arg1;
 function FloatingCTA(trailing) {
   trailing = trailing.trailing;
-  let obj = Object.create(null);
-  obj.trailing = 0;
-  const merged = Object.assign(trailing, obj);
-  obj = {};
+  const merged = Object.assign(trailing, Object.create(null));
+  let obj = { children: null };
   obj = { experimental_withBlurBackground: true, arrow: null == trailing, trailing };
   const merged1 = Object.assign(merged);
-  obj.children = jsx(require(7614) /* RowButtonWrapper */.RowButton, { experimental_withBlurBackground: true, arrow: null == trailing, trailing });
-  return jsx(require(4576) /* Stack */.Stack, { experimental_withBlurBackground: true, arrow: null == trailing, trailing });
+  obj[0] = jsx(require(7637) /* RowButtonWrapper */.RowButton, { experimental_withBlurBackground: true, arrow: null == trailing, trailing });
+  return jsx(require(4598) /* Stack */.Stack, { experimental_withBlurBackground: true, arrow: null == trailing, trailing });
 }
 class VoicePanelFloatingCTAContainer {
   constructor(arg0) {
@@ -34,20 +34,28 @@ class VoicePanelFloatingCTAContainer {
     state = global.state;
     cleanUp = global.cleanUp;
     gestureState = global.gestureState;
-    tmp = useStateFromStores();
+    windowDimensions = undefined;
+    channelId = undefined;
+    safeArea = undefined;
+    useGetDismissibleContent = undefined;
+    c10 = undefined;
+    useMemo = undefined;
+    tmp = c10();
+    tmp2 = accessoryHeights;
+    tmp3 = controlsSpecs;
     context = cleanUp.useContext(require("dismissPanel"));
     windowDimensions = context.windowDimensions;
     channelId = context.channelId;
     safeArea = context.safeArea;
-    tmp3 = require("useChannelFloatingCTAContent")(channelId);
-    obj = require("useGetVisibleContent");
-    first = state(obj.useGetDismissibleContent(tmp3), 1)[0];
-    c9 = first;
+    tmp5 = require("useChannelFloatingCTAContent")(channelId);
+    obj = require("canShowTimeRecurringContent");
+    first = state(obj.useGetDismissibleContent(tmp5), 1)[0];
+    useGetDismissibleContent = first;
     obj2 = require("defaultAreStatesEqual");
     items = [];
     items[0] = gestureState;
     stateFromStores = obj2.useStateFromStores(items, () => gestureState.getChannel(channelId));
-    useStateFromStores = stateFromStores;
+    c10 = stateFromStores;
     items1 = [, ];
     items1[0] = first;
     items1[1] = stateFromStores;
@@ -59,120 +67,116 @@ class VoicePanelFloatingCTAContainer {
     useMemo = memo;
     obj3 = require("useFloatingCTAProps");
     floatingCTAProps = obj3.useFloatingCTAProps(stateFromStores);
-    obj4 = require("module_4026");
+    obj4 = require("module_4050");
     class A {
       constructor() {
-        obj = require("getControlsDefaultWidth");
+        tmp = wrapperSpecs;
+        tmp2 = controlsSpecs;
+        obj = require("VOICE_PANEL_DRAWER_MAX_WIDTH");
         controlsDefaultWidth = obj.getControlsDefaultWidth(windowDimensions.get().width, safeArea.get().left, safeArea.get().right);
+        tmp4 = state;
         num = 1;
-        if (state === require("_createForOfIteratorHelperLoose").TransitionStates.YEETED) {
+        if (state === require("wrapChildrenDefault").TransitionStates.YEETED) {
           num = 0;
         }
-        obj = { bottom: controlsSpecs.get().height + 16, width: controlsDefaultWidth, marginLeft: -1 * require("t")(controlsDefaultWidth / 2) };
-        obj3 = require("withSpring");
+        obj = { bottom: controlsSpecs.get().height + 16, width: controlsDefaultWidth, marginLeft: -1 * require("t")(controlsDefaultWidth / 2), opacity: null, transform: null };
+        tmpResult = require("CONFIG_NEVER_ANIMATE");
         fn = function t(arg0) {
           let tmp = arg0;
           if (arg0) {
-            tmp = outer1_3 === wrapperSpecs(controlsSpecs[20]).TransitionStates.YEETED;
+            tmp = _slicedToArray === outer1_0(outer1_2[20]).TransitionStates.YEETED;
           }
           if (tmp) {
-            wrapperSpecs(controlsSpecs[18]).runOnJS(outer1_4)();
-            const obj = wrapperSpecs(controlsSpecs[18]);
+            outer1_0(outer1_2[18]).runOnJS(VOICE_PANEL_DRAWER_MAX_WIDTH)();
+            const obj = outer1_0(outer1_2[18]);
           }
         };
-        obj1 = { state, TransitionStates: require("_createForOfIteratorHelperLoose").TransitionStates, runOnJS: require("module_4026").runOnJS, cleanUp };
+        obj1 = { state: tmp4, TransitionStates: require("wrapChildrenDefault").TransitionStates, runOnJS: require("module_4050").runOnJS, cleanUp };
         fn.__closure = obj1;
         fn.__workletHash = 7334460639890;
-        fn.__initData = outer1_13;
-        obj.opacity = obj3.withSpring(num, useMemo, "respect-motion-settings", fn);
-        obj2 = {};
-        obj6 = require("withSpring");
-        obj2.translateX = obj6.withSpring(wrapperSpecs.get().x, windowDimensions);
+        fn.__initData = outer1_14;
+        obj[3] = tmpResult.withSpring(num, outer1_12, "respect-motion-settings", fn);
+        obj2 = { translateX: null };
+        tmpResult1 = require("CONFIG_NEVER_ANIMATE");
+        obj7 = wrapperSpecs;
+        tmp5 = windowDimensions;
+        obj2[0] = tmpResult1.withSpring(wrapperSpecs.get().x, windowDimensions);
         items = [, ];
         items[0] = obj2;
-        obj3 = {};
-        obj8 = require("withSpring");
+        tmpResult2 = require("CONFIG_NEVER_ANIMATE");
         if (wrapperSpecs.get().hidden) {
-          tmp5 = wrapperSpecs;
           tmp6 = channelId;
           tmp8 = accessoryHeights;
-          sum = wrapperSpecs.get().height + channelId;
+          sum = obj7.get().height + channelId;
           y = sum + accessoryHeights.get();
         } else {
-          tmp2 = gestureState;
+          obj9 = gestureState;
           if (gestureState.get().active) {
-            tmp3 = gestureState;
           }
-          tmp4 = wrapperSpecs;
-          y = wrapperSpecs.get().y;
+          y = obj7.get().y;
         }
-        obj3.translateY = obj8.withSpring(y, windowDimensions);
+        obj3 = { translateY: tmpResult2.withSpring(y, tmp5) };
         items[1] = obj3;
-        obj.transform = items;
+        obj[4] = items;
         return obj;
       }
     }
-    obj = { getControlsDefaultWidth: require("getControlsDefaultWidth").getControlsDefaultWidth, windowDimensions, safeArea, state, TransitionStates: require("_createForOfIteratorHelperLoose").TransitionStates, controlsSpecs, roundToNearestPixel: require("t"), withSpring: require("withSpring").withSpring, OPACITY_CHANGE_PHYSICS: useMemo, runOnJS: require("module_4026").runOnJS, cleanUp, wrapperSpecs, UI_SHOW_HIDE_PHYSICS: windowDimensions, gestureState, CALL_TILE_GUTTER: channelId, accessoryHeights };
+    obj = { getControlsDefaultWidth: require("VOICE_PANEL_DRAWER_MAX_WIDTH").getControlsDefaultWidth, windowDimensions, safeArea, state, TransitionStates: require("wrapChildrenDefault").TransitionStates, controlsSpecs, roundToNearestPixel: require("t"), withSpring: require("CONFIG_NEVER_ANIMATE").withSpring, OPACITY_CHANGE_PHYSICS: jsx, runOnJS: require("module_4050").runOnJS, cleanUp, wrapperSpecs, UI_SHOW_HIDE_PHYSICS: windowDimensions, gestureState, CALL_TILE_GUTTER: channelId, accessoryHeights };
     A.__closure = obj;
     A.__workletHash = 3338259366067;
-    A.__initData = c12;
+    A.__initData = jsx;
+    tmp11 = useGetDismissibleContent;
     animatedStyle = obj4.useAnimatedStyle(A);
-    tmp9 = c9;
-    obj1 = { style: items2 };
+    obj1 = { style: items2, children: null };
     items2 = [, ];
     items2[0] = tmp.container;
     items2[1] = animatedStyle;
-    tmp10 = require("module_7656");
+    tmp12 = require("module_7679");
     if (null != memo) {
-      tmp17 = c9;
-      tmp18 = accessoryHeights;
-      tmp19 = controlsSpecs;
-      num = 24;
-      obj2 = {};
-      obj2.contentTypes = tmp3;
-      obj2.children = function children() {
+      obj2 = { contentTypes: null, children: null };
+      obj2[0] = tmp5;
+      obj2[1] = function children() {
         const merged = Object.assign(memo);
-        return first(outer1_14, {});
+        return first(memo, {});
       };
-      tmp11 = c9(require("SelectedDismissibleContent"), obj2);
+      tmp11Result = tmp11(require("SelectedDismissibleContent"), obj2);
     } else {
-      tmp11 = null;
+      tmp11Result = null;
       if (null != floatingCTAProps) {
-        tmp12 = c9;
-        tmp13 = FloatingCTA;
+        tmp14 = useMemo;
         obj3 = {};
-        tmp14 = obj3;
-        tmp15 = floatingCTAProps;
+        tmp15 = obj3;
+        tmp16 = floatingCTAProps;
         merged = Object.assign(floatingCTAProps);
-        tmp11 = c9(FloatingCTA, obj3);
+        tmp11Result = tmp11(useMemo, obj3);
       }
     }
-    obj1.children = tmp11;
-    return tmp9(tmp10, obj1);
+    obj1[1] = tmp11Result;
+    return tmp11(tmp12, obj1);
   }
 }
-const UI_SHOW_HIDE_PHYSICS = VoicePanelModes.UI_SHOW_HIDE_PHYSICS;
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { zIndex: 1, position: "absolute", bottom: 0, left: "50%", overflow: "hidden", alignItems: "center", borderRadius: require("_createForOfIteratorHelperLoose").radii.lg };
-_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+({ UI_SHOW_HIDE_PHYSICS: closure_6, MODE_CHANGE_PHYSICS } = VoicePanelModes);
+createCacheKey = { container: null };
+createCacheKey = { zIndex: 1, position: "absolute", bottom: 0, left: "50%", overflow: "hidden", alignItems: "center", borderRadius: require("Themes").radii.lg };
+createCacheKey[0] = createCacheKey;
+createCacheKey = createCacheKey.createStyles(createCacheKey);
 let obj1 = {};
-let merged = Object.assign(VoicePanelModes.MODE_CHANGE_PHYSICS);
-obj1["overshootClamping"] = true;
-let closure_12 = { code: "function VoicePanelFloatingCTAContainerTsx1(){const{getControlsDefaultWidth,windowDimensions,safeArea,state,TransitionStates,controlsSpecs,roundToNearestPixel,withSpring,OPACITY_CHANGE_PHYSICS,runOnJS,cleanUp,wrapperSpecs,UI_SHOW_HIDE_PHYSICS,gestureState,CALL_TILE_GUTTER,accessoryHeights}=this.__closure;const width=getControlsDefaultWidth(windowDimensions.get().width,safeArea.get().left,safeArea.get().right);const opacity=state===TransitionStates.YEETED?0:1;return{bottom:controlsSpecs.get().height+16,width:width,marginLeft:roundToNearestPixel(width/2)*-1,opacity:withSpring(opacity,OPACITY_CHANGE_PHYSICS,'respect-motion-settings',function(finished){if(finished&&state===TransitionStates.YEETED){runOnJS(cleanUp)();}}),transform:[{translateX:withSpring(wrapperSpecs.get().x,UI_SHOW_HIDE_PHYSICS)},{translateY:withSpring(wrapperSpecs.get().hidden||gestureState.get().active&&!gestureState.get().requiresPop?wrapperSpecs.get().height+CALL_TILE_GUTTER+accessoryHeights.get():wrapperSpecs.get().y,UI_SHOW_HIDE_PHYSICS)}]};}" };
-let closure_13 = { code: "function VoicePanelFloatingCTAContainerTsx2(finished){const{state,TransitionStates,runOnJS,cleanUp}=this.__closure;if(finished&&state===TransitionStates.YEETED){runOnJS(cleanUp)();}}" };
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/voice_panel/native/controls/VoicePanelFloatingCTAContainer.tsx");
+let merged = Object.assign(MODE_CHANGE_PHYSICS);
+obj1.overshootClamping = true;
+let closure_13 = { code: "function VoicePanelFloatingCTAContainerTsx1(){const{getControlsDefaultWidth,windowDimensions,safeArea,state,TransitionStates,controlsSpecs,roundToNearestPixel,withSpring,OPACITY_CHANGE_PHYSICS,runOnJS,cleanUp,wrapperSpecs,UI_SHOW_HIDE_PHYSICS,gestureState,CALL_TILE_GUTTER,accessoryHeights}=this.__closure;const width=getControlsDefaultWidth(windowDimensions.get().width,safeArea.get().left,safeArea.get().right);const opacity=state===TransitionStates.YEETED?0:1;return{bottom:controlsSpecs.get().height+16,width:width,marginLeft:roundToNearestPixel(width/2)*-1,opacity:withSpring(opacity,OPACITY_CHANGE_PHYSICS,'respect-motion-settings',function(finished){if(finished&&state===TransitionStates.YEETED){runOnJS(cleanUp)();}}),transform:[{translateX:withSpring(wrapperSpecs.get().x,UI_SHOW_HIDE_PHYSICS)},{translateY:withSpring(wrapperSpecs.get().hidden||gestureState.get().active&&!gestureState.get().requiresPop?wrapperSpecs.get().height+CALL_TILE_GUTTER+accessoryHeights.get():wrapperSpecs.get().y,UI_SHOW_HIDE_PHYSICS)}]};}" };
+let closure_14 = { code: "function VoicePanelFloatingCTAContainerTsx2(finished){const{state,TransitionStates,runOnJS,cleanUp}=this.__closure;if(finished&&state===TransitionStates.YEETED){runOnJS(cleanUp)();}}" };
+const result = require("ensureGuildLoaded").fileFinishedImporting("modules/voice_panel/native/controls/VoicePanelFloatingCTAContainer.tsx");
 
 export default VoicePanelFloatingCTAContainer;
 export const getFloatingCTATotalViewHeight = function getFloatingCTATotalViewHeight(chatInputFloating) {
-  return require(1324) /* useIsMobileVisualRefreshExperimentEnabled */.resolveRefreshToken(importDefault(689).modules.mobile.TABLE_ROW_HEIGHT, chatInputFloating) + 16;
+  return require(1348) /* useIsMobileVisualRefreshExperimentEnabled */.resolveRefreshToken(importDefault(712).modules.mobile.TABLE_ROW_HEIGHT, chatInputFloating) + 16;
 };
-export const renderVoicePanelFloatingCTA = function renderVoicePanelFloatingCTA(arg0, arg1, arg2, arg3) {
-  let obj = { theme: ThemeTypes.DARK };
+export const renderVoicePanelFloatingCTA = function renderVoicePanelFloatingCTA(arg0, arg1, state, cleanUp) {
+  let obj = { theme: ThemeTypes.DARK, children: null };
   obj = {};
   const merged = Object.assign(arg1);
-  obj["state"] = arg2;
-  obj["cleanUp"] = arg3;
-  obj.children = <VoicePanelFloatingCTAContainer />;
-  return jsx(require(3877) /* ManaContext */.ThemeContextProvider, {}, arg0);
+  obj.state = state;
+  obj.cleanUp = cleanUp;
+  obj[1] = <VoicePanelFloatingCTAContainer />;
+  return jsx(require(3901) /* ManaContext */.ThemeContextProvider, {}, arg0);
 };

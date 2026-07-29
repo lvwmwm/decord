@@ -1,28 +1,29 @@
-// Module ID: 15973
-// Function ID: 123310
+// Module ID: 16008
+// Function ID: 16009
 // Name: VoicePanelNoJoinPermissionsAlert
-// Dependencies: [31, 33, 4510, 4510, 15974, 1212, 2]
+// Dependencies: [19, 21, 4533, 4533, 16009, 1236, 2]
 // Exports: default
 
-// Module 15973 (VoicePanelNoJoinPermissionsAlert)
-import "result";
+// Module 16008 (VoicePanelNoJoinPermissionsAlert)
+import "noop";
 import { jsx } from "jsxProd";
 
 const require = arg1;
 const result = require("getAlertModalItemKey").fileFinishedImporting("modules/voice_panel/native/alerts/VoicePanelNoJoinPermissionsAlert.tsx");
 
 export default function VoicePanelNoJoinPermissionsAlert() {
-  let obj = require(4510) /* getAlertModalItemKey */;
-  obj = { header: jsx(importDefault(15974), {}) };
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj.title = intl.string(require(1212) /* getSystemLocale */.t["7/2/3M"]);
-  const intl2 = require(1212) /* getSystemLocale */.intl;
-  obj.content = intl2.string(require(1212) /* getSystemLocale */.t.xsenup);
-  obj = { variant: "secondary" };
-  const intl3 = require(1212) /* getSystemLocale */.intl;
-  obj.text = intl3.string(require(1212) /* getSystemLocale */.t["NX+WJN"]);
-  obj.onPress = obj.useDismissModalCallback();
-  obj.actions = jsx(require(4510) /* getAlertModalItemKey */.AlertActionButton, { variant: "secondary" });
-  return jsx(require(4510) /* getAlertModalItemKey */.AlertModal, { variant: "secondary" });
+  let obj = require(4533) /* getAlertModalItemKey */;
+  obj = { header: null, title: null, content: null, actions: null };
+  obj[0] = jsx(importDefault(16009), {});
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj[1] = intl.string(require(1236) /* getSystemLocale */.t["7/2/3M"]);
+  const intl2 = require(1236) /* getSystemLocale */.intl;
+  obj[2] = intl2.string(require(1236) /* getSystemLocale */.t.xsenup);
+  obj = { variant: "secondary", text: null, onPress: null };
+  const intl3 = require(1236) /* getSystemLocale */.intl;
+  obj[1] = intl3.string(require(1236) /* getSystemLocale */.t["NX+WJN"]);
+  obj[2] = obj.useDismissModalCallback();
+  obj[3] = jsx(require(4533) /* getAlertModalItemKey */.AlertActionButton, { variant: "secondary", text: null, onPress: null });
+  return jsx(require(4533) /* getAlertModalItemKey */.AlertModal, { variant: "secondary", text: null, onPress: null });
 };
 export const VOICE_PANEL_NO_JOIN_PERMS_KEY = "voice-panel-no-join-perms";

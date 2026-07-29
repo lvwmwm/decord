@@ -1,259 +1,531 @@
-// Module ID: 16547
-// Function ID: 128780
-// Name: getComponentPropsForScreen
-// Dependencies: [57, 31, 16534, 14200, 33, 4165, 44, 6731, 7676, 1212, 16548, 16533, 16549, 16569, 16572, 16574, 1557, 4372, 5485, 5552, 16576, 2]
+// Module ID: 16582
+// Function ID: 16583
+// Name: orderify
+// Dependencies: [32, 19, 16569, 14222, 21, 4189, 38, 6752, 7699, 1236, 16583, 16568, 16584, 16604, 16607, 16609, 1581, 4395, 5503, 5570, 16611, 2]
 // Exports: default
 
-// Module 16547 (getComponentPropsForScreen)
+// Module 16582 (orderify)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import NavigationStack from "NavigationStack";
+import usePriceTiers from "usePriceTiers";
 import { GuildRoleSubscriptionsTierScenes as closure_7 } from "MAX_SUBSCRIPTION_TIERS";
-import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import jsxProd from "set";
+import createCacheKey from "createCacheKey";
 
-let closure_10;
-let closure_5;
+let c10;
+let c5;
+let c9;
 let closure_6;
-let closure_8;
-let closure_9;
+let metroImportAll;
 const require = arg1;
-function getComponentPropsForScreen(arg0, arg1, arg2) {
-  let obj = arg1[arg0];
-  let runtimeProps;
-  importDefault(44)(null != obj, "Props not provided in screen map for scene " + arg0);
-  if (null != obj.getRuntimeProps) {
-    runtimeProps = obj.getRuntimeProps();
-  }
-  if (null == runtimeProps) {
-    runtimeProps = {};
-  }
-  obj = {};
-  const merged = Object.assign(arg2);
-  const merged1 = Object.assign(obj);
-  const merged2 = Object.assign(runtimeProps);
-  let extraProps = obj.extraProps;
-  if (null == extraProps) {
-    extraProps = [];
-  }
-  const merged3 = Object.assign(extraProps);
-  return obj;
-}
-function getScreenPropsForScene(arg0, arg1) {
-  if (null == arg1) {
-    return {};
-  } else {
-    let obj = arg1[arg0];
-    if (null == obj) {
-      obj = {};
-    }
-    return obj;
-  }
-}
-function getHeaderRight(arg0, arg1) {
-  let closure_0 = arg0;
-  let closure_1 = arg1;
-  return () => {
-    const obj = {
-      source: callback2(outer1_2[8]),
-      onPress() {
-        return outer1_1(outer1_0);
-      }
-    };
-    const intl = callback(outer1_2[9]).intl;
-    obj.accessibilityLabel = intl.string(callback(outer1_2[9]).t.cpT0Cq);
-    return outer1_8(callback(outer1_2[7]).HeaderActionButton, obj);
-  };
-}
-function buildInitialRouteStack(arg0, arg1) {
-  importDefault(44)(arg0.length > 0, "At least one step must be provided to RoleTierEditScenesModal");
-  if (null == arg1) {
-    let obj = { name: arg0[0] };
-    const items = [obj];
-    return items;
-  } else {
-    const items1 = [];
-    let num = 0;
-    if (0 < arg0.length) {
-      obj = { name: arg0[num] };
-      items1.push(obj);
-      while (arg0[num] !== arg1) {
-        num = num + 1;
-        if (num >= arg0.length) {
-          break;
-        }
-      }
-    }
-    return items1;
-  }
-}
-function orderify(scene) {
+function orderify(arg0, arg1) {
   const sum = arg1 + 1;
-  if ("string" === typeof scene) {
-    let obj = { stepNumber: sum, scene };
+  if (typeof arg0 === "y") {
+    let obj = { stepNumber: null, scene: null };
+    obj[0] = sum;
+    obj[1] = arg0;
   } else {
     obj = {};
-    const merged = Object.assign(scene);
-    obj["stepNumber"] = sum;
+    const merged = Object.assign(arg0);
+    obj.stepNumber = sum;
   }
   return obj;
 }
-function buildScreenMap(arg0, arg1) {
-  let stepScreenPropsMap;
-  let steps;
-  ({ steps, stepScreenPropsMap } = arg0);
-  let obj = Object.create(null);
-  let num = 0;
-  obj.steps = 0;
-  obj.stepScreenPropsMap = 0;
-  let merged = Object.assign(arg0, obj);
-  obj = {};
-  const mapped = steps.map(orderify);
-  if (0 < steps.length) {
-    do {
-      let tmp5 = mapped[num + 1];
-      let scene;
-      if (null != tmp5) {
-        scene = tmp5.scene;
-      }
-      let tmp7 = null;
-      if (null != scene) {
-        tmp7 = scene;
-      }
-      obj = {};
-      let tmp8 = obj;
-      let merged1 = Object.assign(mapped[num]);
-      obj["nextStep"] = tmp7;
-      obj["stepsCount"] = tmp4;
-      obj[mapped[num].scene] = obj;
-      num = num + 1;
-    } while (num < steps.length);
+({ useCurrentTierEditScene: c5, useResetTierEditState: closure_6 } = usePriceTiers);
+({ jsx: metroImportAll, Fragment: c9, jsxs: c10 } = jsxProd);
+let closure_11 = createCacheKey.createStyles({ stepsIndicator: { position: "absolute", alignSelf: "center", height: 48 } });
+const result = require("usePriceTiers").fileFinishedImporting("modules/guild_role_subscriptions/native/components/RoleTierEditScenesModal.tsx");
+
+export default function RoleTierEditScenesModal(modalKey) {
+  let NavigationStack;
+  let closure_5;
+  let initialStack;
+  let screens;
+  const _require = modalKey;
+  function handleClose(arg0) {
+
   }
-  return (function getScreens(arg0, merged, arg2, stepScreenPropsMap) {
-    let closure_0 = arg0;
-    let closure_1 = merged;
-    let obj = {
+  modalKey = modalKey.modalKey;
+  const steps = modalKey.steps;
+  const onClose = modalKey.onClose;
+  let tmp = callback4();
+  [NavigationStack, closure_5] = onClose(callback(), 2);
+  callback2 = callback2();
+  let tmp3 = onClose(React.useState(0), 2);
+  let closure_7 = tmp3[1];
+  let items = [modalKey];
+  const callback3 = React.useCallback(() => {
+    modalKey(steps[17]).popWithKey(modalKey);
+  }, items);
+  let items1 = [steps];
+  const memo = React.useMemo(() => steps.map((scene) => {
+    if (typeof scene !== "y") {
+      scene = scene.scene;
+    }
+    return scene;
+  }), items1);
+  const tmp2 = onClose(callback(), 2);
+  let obj = { children: null };
+  ({ screens, initialStack } = modalKey(steps[18])(() => {
+    let stepScreenPropsMap;
+    let steps;
+    let sum;
+    ({ steps, stepScreenPropsMap } = DETAILS);
+    let obj = {};
+    let merged = Object.assign(DETAILS, Object.create(null));
+    const mapped = steps.map(outer1_12);
+    let num = 0;
+    if (0 < steps.length) {
+      do {
+        sum = num + 1;
+        let tmp6 = mapped[sum];
+        let tmp7 = num;
+        let scene;
+        if (tmp6 != null) {
+          scene = tmp6.scene;
+        }
+        if (scene == null) {
+          scene = null;
+        }
+        obj = {};
+        let tmp9 = obj;
+        let merged1 = Object.assign(mapped[num]);
+        obj.nextStep = scene;
+        obj.stepsCount = tmp4;
+        obj[mapped[num].scene] = obj;
+        num = sum;
+      } while (sum < steps.length);
+    }
+    DETAILS = obj;
+    obj = {
       fullscreen: true,
       headerTitle() {
         return null;
       }
     };
-    obj = {};
-    obj = {};
-    merged = Object.assign(obj);
-    obj["headerRight"] = outer1_14(outer1_7.GATING, arg2);
-    const merged1 = Object.assign(outer1_13(outer1_7.GATING, stepScreenPropsMap));
-    obj["render"] = function render() {
-      const obj = {};
-      const tmp = outer2_12(outer2_7.GATING, closure_0, closure_1);
-      const merged = Object.assign(tmp);
-      return outer2_8(outer2_1(outer2_2[10]), obj);
-    };
-    obj[outer1_7.GATING] = obj;
     const obj1 = {};
-    const merged2 = Object.assign(obj);
-    obj1["headerRight"] = outer1_14(outer1_7.GROUP, arg2);
-    const merged3 = Object.assign(outer1_13(outer1_7.GROUP, stepScreenPropsMap));
-    obj1["render"] = function render() {
-      const obj = {};
-      const tmp = outer2_12(outer2_7.GROUP, closure_0, closure_1);
-      const merged = Object.assign(tmp);
-      return outer2_8(outer2_1(outer2_2[11]), obj);
+    let merged2 = Object.assign(obj);
+    DETAILS = lib.GATING;
+    merged = tmp;
+    obj1.headerRight = () => {
+      const obj = { source: null, onPress: null, accessibilityLabel: null };
+      obj[0] = merged(outer1_2[8]);
+      obj[1] = function onPress() {
+        if (_slicedToArray != null) {
+          tmp2(tmp);
+        }
+        callback2();
+        callback();
+      };
+      const intl = DETAILS(outer1_2[9]).intl;
+      obj[2] = intl.string(DETAILS(outer1_2[9]).t.cpT0Cq);
+      return outer1_8(DETAILS(outer1_2[7]).HeaderActionButton, obj);
     };
-    obj[outer1_7.GROUP] = obj1;
-    const obj2 = {};
-    const merged4 = Object.assign(obj);
-    obj2["headerRight"] = outer1_14(outer1_7.CHANNEL_BENEFITS, arg2);
-    const merged5 = Object.assign(outer1_13(outer1_7.CHANNEL_BENEFITS, stepScreenPropsMap));
-    obj2["render"] = function render() {
-      const merged = Object.assign(outer2_12(outer2_7.CHANNEL_BENEFITS, closure_0, closure_1));
-      return outer2_8(outer2_0(outer2_2[12]).GuildRoleSubscriptionTierChannelBenefitsModal, {});
-    };
-    obj[outer1_7.CHANNEL_BENEFITS] = obj2;
+    if (null == stepScreenPropsMap) {
+      let obj2 = {};
+    } else {
+      obj2 = stepScreenPropsMap[tmp13];
+      if (obj2 == null) {
+        obj2 = {};
+      }
+    }
     const obj3 = {};
-    const merged6 = Object.assign(obj);
-    obj3["headerRight"] = outer1_14(outer1_7.INTANGIBLE_BENEFITS, arg2);
-    const merged7 = Object.assign(outer1_13(outer1_7.INTANGIBLE_BENEFITS, stepScreenPropsMap));
-    obj3["render"] = function render() {
-      const merged = Object.assign(outer2_12(outer2_7.INTANGIBLE_BENEFITS, closure_0, closure_1));
-      return outer2_8(outer2_0(outer2_2[12]).GuildRoleSubscriptionTierIntangibleBenefitsModal, {});
+    let merged3 = Object.assign(obj2);
+    obj1.render = function render() {
+      const GATING = outer1_7.GATING;
+      merged(outer1_2[6])(null != DETAILS[GATING], "Props not provided in screen map for scene " + GATING);
+      const getRuntimeProps = tmp2.getRuntimeProps;
+      let runtimeProps;
+      if (getRuntimeProps != null) {
+        runtimeProps = getRuntimeProps();
+      }
+      if (runtimeProps == null) {
+        runtimeProps = {};
+      }
+      let obj = {};
+      merged = Object.assign(merged);
+      const merged1 = Object.assign(tmp2);
+      const merged2 = Object.assign(runtimeProps);
+      let extraProps = tmp2.extraProps;
+      if (extraProps == null) {
+        extraProps = [];
+      }
+      const merged3 = Object.assign(extraProps);
+      obj = {};
+      const tmp = merged;
+      const tmp3 = merged;
+      const tmp4 = outer1_2;
+      const tmp5 = merged(outer1_2[6]);
+      const tmp6 = null != DETAILS[GATING];
+      const merged4 = Object.assign(obj);
+      return outer1_8(merged(outer1_2[10]), obj);
     };
-    obj[outer1_7.INTANGIBLE_BENEFITS] = obj3;
+    obj3[lib.GATING] = obj1;
     const obj4 = {};
-    const merged8 = Object.assign(obj);
-    obj4["headerRight"] = outer1_14(outer1_7.CONFIRMATION, arg2);
-    const merged9 = Object.assign(outer1_13(outer1_7.CONFIRMATION, stepScreenPropsMap));
-    obj4["render"] = function render() {
-      const obj = {};
-      const tmp = outer2_12(outer2_7.CONFIRMATION, closure_0, closure_1);
-      const merged = Object.assign(tmp);
-      return outer2_8(outer2_1(outer2_2[13]), obj);
+    let merged4 = Object.assign(obj);
+    DETAILS = tmp11.GROUP;
+    merged = tmp;
+    obj4.headerRight = () => {
+      const obj = { source: null, onPress: null, accessibilityLabel: null };
+      obj[0] = merged(outer1_2[8]);
+      obj[1] = function onPress() {
+        if (_slicedToArray != null) {
+          tmp2(tmp);
+        }
+        callback2();
+        callback();
+      };
+      const intl = DETAILS(outer1_2[9]).intl;
+      obj[2] = intl.string(DETAILS(outer1_2[9]).t.cpT0Cq);
+      return outer1_8(DETAILS(outer1_2[7]).HeaderActionButton, obj);
     };
-    obj[outer1_7.CONFIRMATION] = obj4;
-    const obj5 = {};
-    const merged10 = Object.assign(obj);
-    obj5["headerRight"] = outer1_14(outer1_7.DESIGN, arg2);
-    const merged11 = Object.assign(outer1_13(outer1_7.DESIGN, stepScreenPropsMap));
-    obj5["render"] = function render() {
-      const obj = {};
-      const tmp = outer2_12(outer2_7.DESIGN, closure_0, closure_1);
-      const merged = Object.assign(tmp);
-      return outer2_8(outer2_1(outer2_2[14]), obj);
+    if (null == stepScreenPropsMap) {
+      let obj5 = {};
+    } else {
+      obj5 = stepScreenPropsMap[tmp16];
+      if (obj5 == null) {
+        obj5 = {};
+      }
+    }
+    const merged5 = Object.assign(obj5);
+    obj4.render = function render() {
+      const GROUP = outer1_7.GROUP;
+      merged(outer1_2[6])(null != DETAILS[GROUP], "Props not provided in screen map for scene " + GROUP);
+      const getRuntimeProps = tmp2.getRuntimeProps;
+      let runtimeProps;
+      if (getRuntimeProps != null) {
+        runtimeProps = getRuntimeProps();
+      }
+      if (runtimeProps == null) {
+        runtimeProps = {};
+      }
+      let obj = {};
+      merged = Object.assign(merged);
+      const merged1 = Object.assign(tmp2);
+      const merged2 = Object.assign(runtimeProps);
+      let extraProps = tmp2.extraProps;
+      if (extraProps == null) {
+        extraProps = [];
+      }
+      const merged3 = Object.assign(extraProps);
+      obj = {};
+      const tmp = merged;
+      const tmp3 = merged;
+      const tmp4 = outer1_2;
+      const tmp5 = merged(outer1_2[6]);
+      const tmp6 = null != DETAILS[GROUP];
+      const merged4 = Object.assign(obj);
+      return outer1_8(merged(outer1_2[11]), obj);
     };
-    obj[outer1_7.DESIGN] = obj5;
+    obj3[lib.GROUP] = obj4;
     const obj6 = {};
-    const merged12 = Object.assign(obj);
-    obj6["headerRight"] = outer1_14(outer1_7.DETAILS, arg2);
-    const merged13 = Object.assign(outer1_13(outer1_7.DETAILS, stepScreenPropsMap));
-    obj6["render"] = function render() {
-      const obj = {};
-      const tmp = outer2_12(outer2_7.DETAILS, closure_0, closure_1);
-      const merged = Object.assign(tmp);
-      return outer2_8(outer2_1(outer2_2[15]), obj);
+    const merged6 = Object.assign(obj);
+    DETAILS = tmp11.CHANNEL_BENEFITS;
+    merged = tmp;
+    obj6.headerRight = () => {
+      const obj = { source: null, onPress: null, accessibilityLabel: null };
+      obj[0] = merged(outer1_2[8]);
+      obj[1] = function onPress() {
+        if (_slicedToArray != null) {
+          tmp2(tmp);
+        }
+        callback2();
+        callback();
+      };
+      const intl = DETAILS(outer1_2[9]).intl;
+      obj[2] = intl.string(DETAILS(outer1_2[9]).t.cpT0Cq);
+      return outer1_8(DETAILS(outer1_2[7]).HeaderActionButton, obj);
     };
-    obj[outer1_7.DETAILS] = obj6;
-    return obj;
-  })(obj, merged, arg1, stepScreenPropsMap);
-}
-({ useCurrentTierEditScene: closure_5, useResetTierEditState: closure_6 } = _createForOfIteratorHelperLoose);
-({ jsx: closure_8, Fragment: closure_9, jsxs: closure_10 } = jsxProd);
-let closure_11 = _createForOfIteratorHelperLoose.createStyles({ stepsIndicator: { position: "absolute", alignSelf: "center", height: 48 } });
-const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/guild_role_subscriptions/native/components/RoleTierEditScenesModal.tsx");
-
-export default function RoleTierEditScenesModal(modalKey) {
-  let initialStack;
-  let screens;
-  const _require = modalKey;
-  function handleClose(memo, arg1) {
-    if (null != onClose) {
-      onClose(memo);
+    if (null == stepScreenPropsMap) {
+      let obj7 = {};
+    } else {
+      obj7 = stepScreenPropsMap[tmp19];
+      if (obj7 == null) {
+        obj7 = {};
+      }
     }
-    callback4();
-    callback2();
-  }
-  modalKey = modalKey.modalKey;
-  const steps = modalKey.steps;
-  const onClose = modalKey.onClose;
-  const tmp2 = onClose(callback(), 2);
-  const React = tmp2[0];
-  callback = tmp2[1];
-  callback2 = callback2();
-  const tmp3 = onClose(React.useState(0), 2);
-  let closure_7 = tmp3[1];
-  const items = [modalKey];
-  const callback3 = React.useCallback(() => {
-    modalKey(steps[17]).popWithKey(modalKey);
-  }, items);
-  const items1 = [steps];
-  const memo = React.useMemo(() => steps.map((scene) => {
-    if ("string" !== typeof scene) {
-      scene = scene.scene;
+    const merged7 = Object.assign(obj7);
+    obj6.render = function render() {
+      const CHANNEL_BENEFITS = outer1_7.CHANNEL_BENEFITS;
+      merged(outer1_2[6])(null != DETAILS[CHANNEL_BENEFITS], "Props not provided in screen map for scene " + CHANNEL_BENEFITS);
+      const getRuntimeProps = tmp2.getRuntimeProps;
+      let runtimeProps;
+      if (getRuntimeProps != null) {
+        runtimeProps = getRuntimeProps();
+      }
+      if (runtimeProps == null) {
+        runtimeProps = {};
+      }
+      let obj = {};
+      merged = Object.assign(merged);
+      const merged1 = Object.assign(tmp2);
+      const merged2 = Object.assign(runtimeProps);
+      let extraProps = tmp2.extraProps;
+      if (extraProps == null) {
+        extraProps = [];
+      }
+      const merged3 = Object.assign(extraProps);
+      obj = {};
+      const merged4 = Object.assign(obj);
+      return outer1_8(DETAILS(outer1_2[12]).GuildRoleSubscriptionTierChannelBenefitsModal, obj);
+    };
+    obj3[lib.CHANNEL_BENEFITS] = obj6;
+    const obj8 = {};
+    const merged8 = Object.assign(obj);
+    DETAILS = tmp11.INTANGIBLE_BENEFITS;
+    merged = tmp;
+    obj8.headerRight = () => {
+      const obj = { source: null, onPress: null, accessibilityLabel: null };
+      obj[0] = merged(outer1_2[8]);
+      obj[1] = function onPress() {
+        if (_slicedToArray != null) {
+          tmp2(tmp);
+        }
+        callback2();
+        callback();
+      };
+      const intl = DETAILS(outer1_2[9]).intl;
+      obj[2] = intl.string(DETAILS(outer1_2[9]).t.cpT0Cq);
+      return outer1_8(DETAILS(outer1_2[7]).HeaderActionButton, obj);
+    };
+    if (null == stepScreenPropsMap) {
+      let obj9 = {};
+    } else {
+      obj9 = stepScreenPropsMap[tmp22];
+      if (obj9 == null) {
+        obj9 = {};
+      }
     }
-    return scene;
-  }), items1);
-  const tmp = callback4();
-  let obj = {};
-  ({ screens, initialStack } = modalKey(steps[18])(() => ({ screens: outer1_17(closure_0, handleClose), initialStack: outer1_15(memo, result) })));
+    const merged9 = Object.assign(obj9);
+    obj8.render = function render() {
+      const INTANGIBLE_BENEFITS = outer1_7.INTANGIBLE_BENEFITS;
+      merged(outer1_2[6])(null != DETAILS[INTANGIBLE_BENEFITS], "Props not provided in screen map for scene " + INTANGIBLE_BENEFITS);
+      const getRuntimeProps = tmp2.getRuntimeProps;
+      let runtimeProps;
+      if (getRuntimeProps != null) {
+        runtimeProps = getRuntimeProps();
+      }
+      if (runtimeProps == null) {
+        runtimeProps = {};
+      }
+      let obj = {};
+      merged = Object.assign(merged);
+      const merged1 = Object.assign(tmp2);
+      const merged2 = Object.assign(runtimeProps);
+      let extraProps = tmp2.extraProps;
+      if (extraProps == null) {
+        extraProps = [];
+      }
+      const merged3 = Object.assign(extraProps);
+      obj = {};
+      const merged4 = Object.assign(obj);
+      return outer1_8(DETAILS(outer1_2[12]).GuildRoleSubscriptionTierIntangibleBenefitsModal, obj);
+    };
+    obj3[lib.INTANGIBLE_BENEFITS] = obj8;
+    const obj10 = {};
+    const merged10 = Object.assign(obj);
+    DETAILS = tmp11.CONFIRMATION;
+    merged = tmp;
+    obj10.headerRight = () => {
+      const obj = { source: null, onPress: null, accessibilityLabel: null };
+      obj[0] = merged(outer1_2[8]);
+      obj[1] = function onPress() {
+        if (_slicedToArray != null) {
+          tmp2(tmp);
+        }
+        callback2();
+        callback();
+      };
+      const intl = DETAILS(outer1_2[9]).intl;
+      obj[2] = intl.string(DETAILS(outer1_2[9]).t.cpT0Cq);
+      return outer1_8(DETAILS(outer1_2[7]).HeaderActionButton, obj);
+    };
+    if (null == stepScreenPropsMap) {
+      let obj11 = {};
+    } else {
+      obj11 = stepScreenPropsMap[tmp25];
+      if (obj11 == null) {
+        obj11 = {};
+      }
+    }
+    const merged11 = Object.assign(obj11);
+    obj10.render = function render() {
+      const CONFIRMATION = outer1_7.CONFIRMATION;
+      merged(outer1_2[6])(null != DETAILS[CONFIRMATION], "Props not provided in screen map for scene " + CONFIRMATION);
+      const getRuntimeProps = tmp2.getRuntimeProps;
+      let runtimeProps;
+      if (getRuntimeProps != null) {
+        runtimeProps = getRuntimeProps();
+      }
+      if (runtimeProps == null) {
+        runtimeProps = {};
+      }
+      let obj = {};
+      merged = Object.assign(merged);
+      const merged1 = Object.assign(tmp2);
+      const merged2 = Object.assign(runtimeProps);
+      let extraProps = tmp2.extraProps;
+      if (extraProps == null) {
+        extraProps = [];
+      }
+      const merged3 = Object.assign(extraProps);
+      obj = {};
+      const tmp = merged;
+      const tmp3 = merged;
+      const tmp4 = outer1_2;
+      const tmp5 = merged(outer1_2[6]);
+      const tmp6 = null != DETAILS[CONFIRMATION];
+      const merged4 = Object.assign(obj);
+      return outer1_8(merged(outer1_2[13]), obj);
+    };
+    obj3[lib.CONFIRMATION] = obj10;
+    const obj12 = {};
+    const merged12 = Object.assign(obj);
+    DETAILS = tmp11.DESIGN;
+    merged = tmp;
+    obj12.headerRight = () => {
+      const obj = { source: null, onPress: null, accessibilityLabel: null };
+      obj[0] = merged(outer1_2[8]);
+      obj[1] = function onPress() {
+        if (_slicedToArray != null) {
+          tmp2(tmp);
+        }
+        callback2();
+        callback();
+      };
+      const intl = DETAILS(outer1_2[9]).intl;
+      obj[2] = intl.string(DETAILS(outer1_2[9]).t.cpT0Cq);
+      return outer1_8(DETAILS(outer1_2[7]).HeaderActionButton, obj);
+    };
+    if (null == stepScreenPropsMap) {
+      let obj13 = {};
+    } else {
+      obj13 = stepScreenPropsMap[tmp28];
+      if (obj13 == null) {
+        obj13 = {};
+      }
+    }
+    const merged13 = Object.assign(obj13);
+    obj12.render = function render() {
+      const DESIGN = outer1_7.DESIGN;
+      merged(outer1_2[6])(null != DETAILS[DESIGN], "Props not provided in screen map for scene " + DESIGN);
+      const getRuntimeProps = tmp2.getRuntimeProps;
+      let runtimeProps;
+      if (getRuntimeProps != null) {
+        runtimeProps = getRuntimeProps();
+      }
+      if (runtimeProps == null) {
+        runtimeProps = {};
+      }
+      let obj = {};
+      merged = Object.assign(merged);
+      const merged1 = Object.assign(tmp2);
+      const merged2 = Object.assign(runtimeProps);
+      let extraProps = tmp2.extraProps;
+      if (extraProps == null) {
+        extraProps = [];
+      }
+      const merged3 = Object.assign(extraProps);
+      obj = {};
+      const tmp = merged;
+      const tmp3 = merged;
+      const tmp4 = outer1_2;
+      const tmp5 = merged(outer1_2[6]);
+      const tmp6 = null != DETAILS[DESIGN];
+      const merged4 = Object.assign(obj);
+      return outer1_8(merged(outer1_2[14]), obj);
+    };
+    obj3[lib.DESIGN] = obj12;
+    const obj14 = {};
+    const merged14 = Object.assign(obj);
+    DETAILS = tmp11.DETAILS;
+    merged = tmp;
+    obj14.headerRight = () => {
+      const obj = { source: null, onPress: null, accessibilityLabel: null };
+      obj[0] = merged(outer1_2[8]);
+      obj[1] = function onPress() {
+        if (_slicedToArray != null) {
+          tmp2(tmp);
+        }
+        callback2();
+        callback();
+      };
+      const intl = DETAILS(outer1_2[9]).intl;
+      obj[2] = intl.string(DETAILS(outer1_2[9]).t.cpT0Cq);
+      return outer1_8(DETAILS(outer1_2[7]).HeaderActionButton, obj);
+    };
+    if (null == stepScreenPropsMap) {
+      let obj15 = {};
+    } else {
+      obj15 = stepScreenPropsMap[tmp31];
+      if (obj15 == null) {
+        obj15 = {};
+      }
+    }
+    const obj16 = { screens: null, initialStack: null };
+    const merged15 = Object.assign(obj15);
+    obj14.render = function render() {
+      const DETAILS = outer1_7.DETAILS;
+      merged(outer1_2[6])(null != DETAILS[DETAILS], "Props not provided in screen map for scene " + DETAILS);
+      const getRuntimeProps = tmp2.getRuntimeProps;
+      let runtimeProps;
+      if (getRuntimeProps != null) {
+        runtimeProps = getRuntimeProps();
+      }
+      if (runtimeProps == null) {
+        runtimeProps = {};
+      }
+      let obj = {};
+      merged = Object.assign(merged);
+      const merged1 = Object.assign(tmp2);
+      const merged2 = Object.assign(runtimeProps);
+      let extraProps = tmp2.extraProps;
+      if (extraProps == null) {
+        extraProps = [];
+      }
+      const merged3 = Object.assign(extraProps);
+      obj = {};
+      const tmp = merged;
+      const tmp3 = merged;
+      const tmp4 = outer1_2;
+      const tmp5 = merged(outer1_2[6]);
+      const tmp6 = null != DETAILS[DETAILS];
+      const merged4 = Object.assign(obj);
+      return outer1_8(merged(outer1_2[15]), obj);
+    };
+    obj3[lib.DETAILS] = obj14;
+    obj16[0] = obj3;
+    let arr = memo;
+    modalKey(steps[6])(memo.length > 0, "At least one step must be provided to RoleTierEditScenesModal");
+    if (null == NavigationStack) {
+      const obj17 = { name: null };
+      obj17[0] = arr[0];
+      const items = [obj17];
+      let tmp35 = items;
+    } else {
+      const items1 = [];
+      let num2 = 0;
+      tmp35 = items1;
+      if (0 < arr.length) {
+        const obj18 = { name: null };
+        obj18[0] = arr[num2];
+        arr = items1.push(obj18);
+        tmp35 = items1;
+        while (arr[num2] !== NavigationStack) {
+          num2 = num2 + 1;
+          tmp35 = items1;
+          if (num2 < arr.length) {
+            continue;
+          } else {
+            break;
+          }
+          break;
+        }
+      }
+    }
+    obj16[1] = tmp35;
+    return obj16;
+  }));
   obj = {
     screens,
     initialRouteStack: initialStack,
@@ -263,17 +535,18 @@ export default function RoleTierEditScenesModal(modalKey) {
         callback(name);
         const findIndexResult = memo.findIndex((arg0) => arg0 === name);
         if (findIndexResult >= 0) {
-          callback3(findIndexResult);
+          lib(findIndexResult);
         }
       }
-    }
+    },
+    headerBackTitle: null
   };
-  const intl = _require(steps[9]).intl;
-  obj.headerBackTitle = intl.string(_require(steps[9]).t["13/7kX"]);
+  let intl = _require(steps[9]).intl;
+  obj[3] = intl.string(_require(steps[9]).t["13/7kX"]);
   const items2 = [callback3(_require(steps[19]).Navigator, obj), ];
   obj = { style: items3, current: tmp3[0] + 1, total: memo.length };
   items3 = [tmp.stepsIndicator, { top: modalKey(steps[16])().top }];
   items2[1] = callback3(modalKey(steps[20]), obj);
-  obj.children = items2;
-  return handleClose(memo, obj);
+  obj[0] = items2;
+  return memo(handleClose, obj);
 };

@@ -1,34 +1,34 @@
-// Module ID: 6143
-// Function ID: 54816
+// Module ID: 6161
+// Function ID: 6162
 // Name: GAME_AUTOCOMPLETE_MAX_QUERY_LENGTH
-// Dependencies: [5881, 2]
+// Dependencies: [5899, 2]
 // Exports: isGameAutocompleteResultAllowedInGameWidgets, normalizeGameAutocompleteQuery, shouldSuppressAutocompleteFetch
 
-// Module 6143 (GAME_AUTOCOMPLETE_MAX_QUERY_LENGTH)
+// Module 6161 (GAME_AUTOCOMPLETE_MAX_QUERY_LENGTH)
 const result = require("set").fileFinishedImporting("modules/games/autocomplete/GameAutocompleteUtils.tsx");
 
 export const GAME_AUTOCOMPLETE_MAX_QUERY_LENGTH = 100;
 export const MIN_TRUSTED_EMPTY_PREFIX_LENGTH = 7;
 export const shouldSuppressAutocompleteFetch = function shouldSuppressAutocompleteFetch(result, arg1) {
   let diff = result.length - 1;
-  if (diff >= 1) {
+  if (1 <= diff) {
     const arr = arg1(result.slice(0, diff));
     while (null == arr) {
       diff = diff - 1;
     }
-    let tmp4 = !tmp3;
-    if (arr.length <= 0) {
-      tmp4 = diff >= 7;
+    let tmp3 = arr.length <= 0;
+    if (tmp3) {
+      tmp3 = diff >= 7;
     }
-    return tmp4;
+    return tmp3;
   }
   return false;
 };
-export const normalizeGameAutocompleteQuery = function normalizeGameAutocompleteQuery(query) {
-  if (null == query) {
+export const normalizeGameAutocompleteQuery = function normalizeGameAutocompleteQuery(c0) {
+  if (null == c0) {
     return null;
   } else {
-    const formatted = query.trim().toLowerCase();
+    const formatted = c0.trim().toLowerCase();
     const replaced = formatted.replaceAll("_", " ");
     const substr = replaced.slice(0, 100);
     let tmp = null;
@@ -39,6 +39,6 @@ export const normalizeGameAutocompleteQuery = function normalizeGameAutocomplete
   }
 };
 export const isGameAutocompleteResultAllowedInGameWidgets = function isGameAutocompleteResultAllowedInGameWidgets(id) {
-  const GAME_WIDGET_BANNED_APPLICATION_IDS = require(5881) /* GAME_WIDGET_LIMITS_BY_TYPE */.GAME_WIDGET_BANNED_APPLICATION_IDS;
+  const GAME_WIDGET_BANNED_APPLICATION_IDS = require(5899) /* GAME_WIDGET_LIMITS_BY_TYPE */.GAME_WIDGET_BANNED_APPLICATION_IDS;
   return !GAME_WIDGET_BANNED_APPLICATION_IDS.has(id.id);
 };

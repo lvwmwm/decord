@@ -1,26 +1,26 @@
-// Module ID: 8913
-// Function ID: 70331
+// Module ID: 8937
+// Function ID: 8938
 // Name: TwoWayLinkLanding
-// Dependencies: [31, 27, 4847, 33, 4165, 8914, 566, 4161, 5198, 1212, 5155, 4576, 4578, 2]
+// Dependencies: [19, 17, 4869, 21, 4189, 8938, 589, 4185, 5220, 1236, 5177, 4598, 4600, 2]
 // Exports: TwoWayLinkLanding
 
-// Module 8913 (TwoWayLinkLanding)
-import "result";
+// Module 8937 (TwoWayLinkLanding)
+import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import set from "set";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_2;
-let closure_3;
-let closure_4;
+let c3;
+let c4;
 let closure_6;
-let closure_7;
+let error;
+let obj1;
 const require = arg1;
-({ Image: closure_2, View: closure_3, ScrollView: closure_4 } = get_ActivityIndicator);
-({ jsx: closure_6, jsxs: closure_7 } = jsxProd);
-let closure_8 = _createForOfIteratorHelperLoose.createStyles({ image: { marginBottom: 32 }, valueProps: { marginTop: 24, maxWidth: "100%" } });
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/user_settings/connections/native/two_way_link/TwoWayLinkLanding.tsx");
+({ Image: obj1, View: c3, ScrollView: c4 } = get_ActivityIndicator);
+({ jsx: closure_6, jsxs: error } = jsxProd);
+let closure_8 = createCacheKey.createStyles({ image: { marginBottom: 32 }, valueProps: { marginTop: 24, maxWidth: "100%" } });
+const result = require("set").fileFinishedImporting("modules/user_settings/connections/native/two_way_link/TwoWayLinkLanding.tsx");
 
 export const TwoWayLinkLanding = function TwoWayLinkLanding(learnMoreLink) {
   let body;
@@ -34,32 +34,30 @@ export const TwoWayLinkLanding = function TwoWayLinkLanding(learnMoreLink) {
   ({ platformType: require, imgStyle, headerConnect, headerReconnect, valueProps } = learnMoreLink);
   learnMoreLink = learnMoreLink.learnMoreLink;
   ({ img, body, onNext } = learnMoreLink);
-  const tmp = callback2();
+  const tmp = callback();
   let obj = require(valueProps[5]);
   const twoWayLinkStyles = obj.useTwoWayLinkStyles();
   let obj1 = require(valueProps[6]);
-  const items = [_isNativeReflectConstruct];
-  obj = { style: twoWayLinkStyles.container };
-  obj = { alwaysBounceVertical: false };
-  obj1 = { style: twoWayLinkStyles.content };
-  const obj2 = { source: img };
+  const items = [set];
+  obj = { style: twoWayLinkStyles.container, children: null };
+  obj = { style: twoWayLinkStyles.content, children: null };
+  obj1 = { source: img, style: null };
   const items1 = [tmp.image, ];
-  let tmp9 = null != imgStyle;
   const stateFromStores = obj1.useStateFromStores(items, () => {
     const account = outer1_5.getAccount(null, closure_0);
     let twoWayLink;
-    if (null != account) {
+    if (account != null) {
       twoWayLink = account.twoWayLink;
     }
     return false === twoWayLink;
   });
-  if (tmp9) {
-    tmp9 = imgStyle;
+  if (imgStyle == null) {
+    imgStyle = false;
   }
-  items1[1] = tmp9;
-  obj2.style = items1;
-  const items2 = [callback(closure_2, obj2), , , ];
-  const obj3 = { variant: "heading-xl/bold", color: "mobile-text-heading-primary", style: twoWayLinkStyles.title, accessibilityRole: "header" };
+  items1[1] = imgStyle;
+  obj1[1] = items1;
+  const items2 = [closure_6(closure_2, obj1), , , ];
+  const obj2 = { variant: "heading-xl/bold", color: "mobile-text-heading-primary", style: twoWayLinkStyles.title, accessibilityRole: "header", children: null };
   let tmp11 = headerConnect;
   if (stateFromStores) {
     tmp11 = headerConnect;
@@ -67,46 +65,45 @@ export const TwoWayLinkLanding = function TwoWayLinkLanding(learnMoreLink) {
       tmp11 = headerReconnect;
     }
   }
-  obj3.children = tmp11;
-  items2[1] = callback(require(valueProps[7]).Text, obj3);
-  const obj4 = { variant: "text-md/medium", color: "text-default", style: twoWayLinkStyles.body, children: body };
-  items2[2] = callback(require(valueProps[7]).Text, obj4);
-  items2[3] = callback(closure_3, {
+  obj2[4] = tmp11;
+  items2[1] = closure_6(require(valueProps[7]).Text, obj2);
+  items2[2] = closure_6(require(valueProps[7]).Text, { variant: "text-md/medium", color: "text-default", style: twoWayLinkStyles.body, children: body });
+  items2[3] = closure_6(closure_3, {
     style: tmp.valueProps,
     children: valueProps.map((label) => {
       let icon;
       let subLabel;
       label = label.label;
       ({ subLabel, icon } = label);
-      let obj = { start: 0 === arg1, end: arg1 === valueProps.length - 1, subLabel };
-      obj = { variant: "text-sm/normal", color: "mobile-text-heading-primary", children: label };
-      obj.label = outer1_6(outer1_0(valueProps[7]).Text, obj);
-      obj.icon = outer1_6(outer1_0(valueProps[8]).TableRow.Icon, { IconComponent: icon });
+      const obj = { start: 0 === arg1, end: arg1 === valueProps.length - 1, subLabel, label: null, icon: null };
+      obj[3] = outer1_6(outer1_0(valueProps[7]).Text, { variant: "text-sm/normal", color: "mobile-text-heading-primary", children: label });
+      obj[4] = outer1_6(outer1_0(valueProps[8]).TableRow.Icon, { IconComponent: icon });
       return outer1_6(outer1_0(valueProps[8]).TableRow, obj, label);
     })
   });
-  obj1.children = items2;
-  const items3 = [closure_7(closure_3, obj1), ];
-  let tmp12 = null;
+  obj[1] = items2;
+  const items3 = [closure_7(closure_3, obj), ];
+  let tmp9Result = null;
   if (null != learnMoreLink) {
-    const obj6 = { variant: "text-md/normal", color: "text-default", style: twoWayLinkStyles.body };
-    const intl = require(valueProps[9]).intl;
-    const obj7 = { helpCenterLink: learnMoreLink };
-    obj6.children = intl.format(require(valueProps[9]).t["/l3n+1"], obj7);
-    tmp12 = callback(require(valueProps[7]).Text, obj6);
+    const obj5 = { variant: "text-md/normal", color: "text-default", style: null, children: null };
+    obj5[2] = twoWayLinkStyles.body;
+    const intl = tmp2(tmp3[9]).intl;
+    const obj6 = { helpCenterLink: null };
+    obj6[0] = learnMoreLink;
+    obj5[3] = intl.format(tmp2(tmp3[9]).t["/l3n+1"], obj6);
+    tmp9Result = tmp9(tmp2(tmp3[7]).Text, obj5);
   }
-  items3[1] = tmp12;
-  obj.children = items3;
-  const items4 = [closure_7(closure_4, obj), ];
-  const obj8 = { bottom: true, style: twoWayLinkStyles.footerContainer };
-  const obj9 = { spacing: 8, direction: "vertical", style: twoWayLinkStyles.footerButton };
-  const obj10 = { variant: "primary", size: "lg" };
-  const intl2 = require(valueProps[9]).intl;
-  obj10.text = intl2.string(require(valueProps[9]).t.LhlgY9);
-  obj10.onPress = onNext;
-  obj9.children = callback(require(valueProps[12]).Button, obj10);
-  obj8.children = callback(require(valueProps[11]).Stack, obj9);
-  items4[1] = callback(require(valueProps[10]).SafeAreaPaddingView, obj8);
-  obj.children = items4;
+  items3[1] = tmp9Result;
+  const items4 = [closure_7(closure_4, { alwaysBounceVertical: false, children: items3 }), ];
+  const obj7 = { bottom: true, style: twoWayLinkStyles.footerContainer, children: null };
+  const obj8 = { spacing: 8, direction: "vertical", style: twoWayLinkStyles.footerButton, children: null };
+  const obj9 = { variant: "primary", size: "lg", text: null, onPress: null };
+  const intl2 = tmp2(tmp3[9]).intl;
+  obj9[2] = intl2.string(require(valueProps[9]).t.LhlgY9);
+  obj9[3] = onNext;
+  obj8[3] = closure_6(require(valueProps[12]).Button, obj9);
+  obj7[2] = closure_6(require(valueProps[11]).Stack, obj8);
+  items4[1] = closure_6(require(valueProps[10]).SafeAreaPaddingView, obj7);
+  obj[1] = items4;
   return closure_7(closure_3, obj);
 };

@@ -1,24 +1,24 @@
-// Module ID: 13690
-// Function ID: 105041
+// Module ID: 13711
+// Function ID: 13712
 // Name: EditIcon
-// Dependencies: [31, 27, 33, 4165, 689, 9078, 2]
+// Dependencies: [19, 17, 21, 4189, 712, 9102, 2]
 // Exports: default
 
-// Module 13690 (EditIcon)
-import result from "result";
+// Module 13711 (EditIcon)
+import noop from "noop";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
 const require = arg1;
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { alignItems: "center", justifyContent: "center", backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SURFACE_HIGH };
-_createForOfIteratorHelperLoose.editIcon = _createForOfIteratorHelperLoose;
-const obj1 = { width: 24, height: 24, borderRadius: require("_createForOfIteratorHelperLoose").radii.md };
-_createForOfIteratorHelperLoose.xs = obj1;
-const obj2 = { width: 32, height: 32, borderRadius: require("_createForOfIteratorHelperLoose").radii.lg };
-_createForOfIteratorHelperLoose.sm = obj2;
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+createCacheKey = { editIcon: null, xs: null, sm: null };
+createCacheKey = { alignItems: "center", justifyContent: "center", backgroundColor: require("Themes").colors.BACKGROUND_SURFACE_HIGH };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { width: 24, height: 24, borderRadius: require("Themes").radii.md };
+const obj1 = { width: 24, height: 24, borderRadius: require("Themes").radii.md };
+createCacheKey[2] = { width: 32, height: 32, borderRadius: require("Themes").radii.lg };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+const obj2 = { width: 32, height: 32, borderRadius: require("Themes").radii.lg };
 const result = require("jsxProd").fileFinishedImporting("modules/profile_customization/native/EditIcon.tsx");
 
 export default function EditIcon(style) {
@@ -28,25 +28,11 @@ export default function EditIcon(style) {
     str = "xs";
   }
   let React;
-  const tmp = _createForOfIteratorHelperLoose();
+  const tmp = createCacheKey();
   React = tmp;
-  let items = [tmp, style, str];
-  obj = {
-    style: React.useMemo(() => {
-      const obj = {};
-      const items = [_undefined.editIcon, , ];
-      if ("sm" === str) {
-        let xs = _undefined.sm;
-      } else {
-        xs = _undefined.xs;
-      }
-      items[1] = xs;
-      items[2] = style;
-      obj.iconContainerStyle = items;
-      return obj;
-    }, items).iconContainerStyle,
-    children: jsx(style(str[5]).PencilIcon, obj)
-  };
-  obj = { size: str };
-  return <View size={str} />;
+  const items = [tmp, style, str];
+  return <View style={React.useMemo(() => {
+    const iconContainerStyle = [_undefined.editIcon, "sm" === str ? _undefined.sm : _undefined.xs, style];
+    return { iconContainerStyle };
+  }, items).iconContainerStyle}>{jsx(style(str[5]).PencilIcon, { size: str })}</View>;
 };

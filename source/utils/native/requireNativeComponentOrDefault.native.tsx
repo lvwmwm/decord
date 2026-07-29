@@ -1,19 +1,19 @@
-// Module ID: 4571
-// Function ID: 39952
+// Module ID: 4593
+// Function ID: 4594
 // Name: map
-// Dependencies: [27, 3, 2]
+// Dependencies: [17, 3, 2]
 // Exports: default
 
-// Module 4571 (map)
+// Module 4593 (map)
 import get_ActivityIndicator from "get ActivityIndicator";
-import importDefaultResult from "timestamp";
 
-let closure_0;
+let c0;
 let closure_1;
-let closure_2;
-({ requireNativeComponent: closure_0, UIManager: closure_1, View: closure_2 } = get_ActivityIndicator);
-importDefaultResult = new importDefaultResult("RequireNativeComponentOrDefault");
+let obj1;
+({ requireNativeComponent: c0, UIManager: closure_1, View: obj1 } = get_ActivityIndicator);
+let c3 = new require("timestamp")("RequireNativeComponentOrDefault");
 const map = new Map();
+const tmp3 = new require("timestamp")("RequireNativeComponentOrDefault");
 let result = require("set").fileFinishedImporting("utils/native/requireNativeComponentOrDefault.native.tsx");
 
 export default function requireNativeComponentOrDefault(warnWhenMissing) {
@@ -30,17 +30,17 @@ export default function requireNativeComponentOrDefault(warnWhenMissing) {
   }
   if (closure_1.hasViewManagerConfig(componentName)) {
     if (!map.has(componentName)) {
-      if (null == componentFoundInstance) {
+      if (componentFoundInstance == null) {
         componentFoundInstance = callback(componentName);
       }
-      const result = map.set(componentName, componentFoundInstance);
+      const result = obj.set(componentName, componentFoundInstance);
     }
-    let value = map.get(componentName);
+    let value = obj.get(componentName);
   } else {
     value = componentMissingFallbackInstance;
     if (flag) {
       const _HermesInternal = HermesInternal;
-      importDefaultResult.warn("" + componentName + " not found, you are likely on a branch override without the native code.");
+      globalThis.warn("" + componentName + " not found, you are likely on a branch override without the native code.");
       value = componentMissingFallbackInstance;
     }
   }

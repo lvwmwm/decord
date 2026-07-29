@@ -1,10 +1,10 @@
-// Module ID: 6017
-// Function ID: 53368
+// Module ID: 6035
+// Function ID: 6036
 // Name: DeviceState
-// Dependencies: [6018, 2, 6019]
+// Dependencies: [6036, 2, 6037]
 // Exports: logDeviceState
 
-// Module 6017 (DeviceState)
+// Module 6035 (DeviceState)
 const result = require("ThermalState").fileFinishedImporting("modules/device/DeviceState.tsx");
 
 export const DeviceState = require("ThermalState").DeviceState;
@@ -12,22 +12,22 @@ export const ThermalState = require("ThermalState").ThermalState;
 export const getDeviceState = require("_getDeviceState").getDeviceState;
 export const logDeviceState = function logDeviceState(thermalState) {
   if (null !== thermalState) {
-    const logger2 = require(6018) /* _getDeviceState */.logger;
+    const logger2 = require(6036) /* _getDeviceState */.logger;
     logger2.info("Device State Information:");
-    const logger3 = require(6018) /* _getDeviceState */.logger;
+    const logger3 = require(6036) /* _getDeviceState */.logger;
     const _HermesInternal = HermesInternal;
     logger3.info("- Thermal State: " + thermalState.thermalState);
-    const logger4 = require(6018) /* _getDeviceState */.logger;
+    const logger4 = require(6036) /* _getDeviceState */.logger;
     const _HermesInternal2 = HermesInternal;
     logger4.info("- Battery Level: " + 100 * thermalState.batteryLevel + "%");
-    const logger5 = require(6018) /* _getDeviceState */.logger;
+    const logger5 = require(6036) /* _getDeviceState */.logger;
     let str6 = "Disabled";
     if (thermalState.isLowPowerMode) {
       str6 = "Enabled";
     }
     logger5.info(`- Low Power Mode: ${str6}`);
   } else {
-    const logger = require(6018) /* _getDeviceState */.logger;
+    const logger = require(6036) /* _getDeviceState */.logger;
     logger.info("Device state not available");
   }
 };

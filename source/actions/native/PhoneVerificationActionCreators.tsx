@@ -1,16 +1,16 @@
-// Module ID: 9233
-// Function ID: 72205
+// Module ID: 9257
+// Function ID: 9258
 // Name: dispatcher
-// Dependencies: [686, 2]
+// Dependencies: [709, 2]
 
-// Module 9233 (dispatcher)
+// Module 9257 (dispatcher)
 const result = require("set").fileFinishedImporting("actions/native/PhoneVerificationActionCreators.tsx");
 
 export default {
   openCountrySelector() {
-    importDefault(686).dispatch({ type: "VERIFICATION_OPEN_COUNTRY_SELECTOR" });
+    importDefault(709).dispatch({ type: "VERIFICATION_OPEN_COUNTRY_SELECTOR" });
   },
   setCountrySelectorClosed() {
-    importDefault(686).dispatch({ type: "VERIFICATION_CLOSE_COUNTRY_SELECTOR" });
+    importDefault(709).dispatch({ type: "VERIFICATION_CLOSE_COUNTRY_SELECTOR" });
   }
 };

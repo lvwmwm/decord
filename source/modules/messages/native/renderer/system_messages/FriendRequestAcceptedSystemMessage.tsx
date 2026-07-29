@@ -1,12 +1,12 @@
-// Module ID: 7826
-// Function ID: 61954
+// Module ID: 7849
+// Function ID: 7850
 // Name: createFriendRequestAcceptedSystemMessage
-// Dependencies: [1348, 1850, 7720, 7722, 4165, 689, 1212, 7706, 7827, 7723, 2]
+// Dependencies: [1372, 1874, 7743, 7745, 4189, 712, 1236, 7729, 7850, 7746, 2]
 // Exports: createFriendRequestAcceptedSystemMessage
 
-// Module 7826 (createFriendRequestAcceptedSystemMessage)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_4 from "_isNativeReflectConstruct";
+// Module 7849 (createFriendRequestAcceptedSystemMessage)
+import ensureGuildLoaded from "ensureGuildLoaded";
+import mergeGuildAvatar from "mergeGuildAvatar";
 
 const require = arg1;
 const result = require("getMessageAuthorWithProcessedColor").fileFinishedImporting("modules/messages/native/renderer/system_messages/FriendRequestAcceptedSystemMessage.tsx");
@@ -21,50 +21,59 @@ export const createFriendRequestAcceptedSystemMessage = function createFriendReq
       const currentUser = authStore.getCurrentUser();
       if (null != user) {
         if (null != currentUser) {
-          let str5 = require(7720) /* getMessageAuthorWithProcessedColor */.getUserAuthorWithProcessedColor(user, channel);
-          let obj = { userId: recipientId, message, author: str5, roleStyle: message.roleStyle };
-          obj = { username: str5.nick };
-          obj.usernameOnClick = importDefault(7722)(obj);
-          const content = message.content;
+          let colorString = require(7743) /* getMessageAuthorWithProcessedColor */.getUserAuthorWithProcessedColor(user, channel);
+          let obj = { userId: null, message: null, author: null, roleStyle: null };
+          obj[0] = recipientId;
+          obj[1] = message;
+          obj[2] = colorString;
+          obj[3] = message.roleStyle;
+          obj = { username: null, usernameOnClick: null };
+          obj[0] = colorString.nick;
+          obj[1] = importDefault(7745)(obj);
+          let content = message.content;
           if (null != content) {
             if ("" !== content) {
-              let obj1 = require(4165) /* _createForOfIteratorHelperLoose */;
-              obj1 = { baseTextColor: importDefault(689).colors.TEXT_SUBTLE };
-              const intl2 = require(1212) /* getSystemLocale */.intl;
+              let tmp15Result = tmp15(4189);
+              const obj1 = { baseTextColor: null };
+              obj1[0] = tmp17(712).colors.TEXT_SUBTLE;
+              const intl2 = tmp15(1236).intl;
               const formatToParts2 = intl2.formatToParts;
-              let t = require(1212) /* getSystemLocale */.t;
-              if (tmp29) {
+              let t = tmp15(1236).t;
+              if (tmp18) {
                 t = {};
-                const merged = Object.assign(obj);
-                t["note"] = content;
-                obj = { colorString: str5.colorString };
-                str5 = "formattedNote";
-                t["formattedNote"] = obj;
+                obj = Object.assign(obj);
+                t.note = content;
+                content = { colorString: null };
+                colorString = colorString.colorString;
+                content[0] = colorString;
+                t.formattedNote = content;
                 let formatToParts2Result = formatToParts2(t["6pQebO"], t);
               } else {
                 const obj2 = {};
-                const merged1 = Object.assign(obj);
-                obj2["note"] = content;
-                const obj3 = { colorString: `formattedNote`.colorString };
-                obj2["formattedNote"] = obj3;
+                const merged = Object.assign(obj);
+                obj2.note = content;
+                const obj3 = { colorString: null };
+                obj3[0] = colorString.colorString;
+                obj2.formattedNote = obj3;
                 formatToParts2Result = formatToParts2(t.bNrwDM, obj2);
               }
-              const baseTextColor = obj1.createNativeStyleProperties(obj1)(message.theme).baseTextColor;
+              const baseTextColor = tmp15Result.createNativeStyleProperties(obj1)(message.theme).baseTextColor;
             }
           }
-          const intl = require(1212) /* getSystemLocale */.intl;
+          const intl = tmp15(1236).intl;
           const formatToParts = intl.formatToParts;
-          t = require(1212) /* getSystemLocale */.t;
+          t = tmp15(1236).t;
           if (message.author.id === currentUser.id) {
             let formatToPartsResult = formatToParts(t.REfFZs, obj);
           } else {
             formatToPartsResult = formatToParts(t.hyPOTm, obj);
           }
-          const obj4 = { content: formatToPartsResult };
-          const obj10 = require(7720) /* getMessageAuthorWithProcessedColor */;
-          obj4.iconUrl = require(7706) /* frozen */.getAssetUriForEmbed(importDefault(7827));
-          obj4.textColor = undefined;
-          const merged2 = Object.assign(importDefault(7723)(message));
+          const obj4 = { content: null, iconUrl: null, textColor: null };
+          obj4[0] = formatToPartsResult;
+          tmp15Result = tmp15(7729);
+          obj4[1] = tmp15Result.getAssetUriForEmbed(importDefault(7850));
+          obj4[2] = undefined;
+          const merged1 = Object.assign(tmp17(7746)(message));
           return obj4;
         }
       }

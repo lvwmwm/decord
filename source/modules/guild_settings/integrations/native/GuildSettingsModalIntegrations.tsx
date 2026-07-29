@@ -1,190 +1,195 @@
-// Module ID: 16359
-// Function ID: 127215
+// Module ID: 16394
+// Function ID: 16395
 // Name: PlatformTypes
-// Dependencies: [31, 27, 3793, 8281, 653, 33, 4165, 689, 3869, 1456, 566, 4101, 16323, 7611, 4576, 5536, 5198, 1212, 15527, 15631, 13618, 4849, 1392, 4011, 5483, 2]
+// Dependencies: [19, 17, 3817, 8305, 676, 21, 4189, 712, 3893, 1480, 589, 4125, 16358, 7634, 4598, 5554, 5220, 1236, 15561, 15666, 13639, 4871, 1416, 4035, 5501, 2]
 // Exports: default
 
-// Module 16359 (PlatformTypes)
-import "result";
-import { Image } from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_5 from "_isNativeReflectConstruct";
+// Module 16394 (PlatformTypes)
+import "ChannelsFollowedIcon";
+import { Image } from "getSystemLocale";
+import getUncachedChannelPermissions from "getUncachedChannelPermissions";
+import handleFormInit from "handleFormInit";
 import ME from "ME";
-import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import jsxProd from "getPlatformUserUrl";
+import createCacheKey from "createCacheKey";
 
 let PlatformTypes;
+let c9;
 let closure_6;
-let closure_7;
-let closure_8;
-let closure_9;
-let require = arg1;
+let error;
+let metroImportAll;
+const require = arg1;
 ({ GuildSettingsSections: closure_6, PlatformTypes } = ME);
-({ jsx: closure_7, jsxs: closure_8, Fragment: closure_9 } = jsxProd);
+({ jsx: error, jsxs: metroImportAll, Fragment: c9 } = jsxProd);
 let items = [, ];
 ({ TWITCH: arr[0], YOUTUBE: arr[1] } = PlatformTypes);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { flex: 1, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWER };
-_createForOfIteratorHelperLoose.screenContainer = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.screenContent = { paddingTop: require("_createForOfIteratorHelperLoose").space.PX_16 };
-_createForOfIteratorHelperLoose.platformIcon = { width: 24, height: 24 };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-let obj1 = { paddingTop: require("_createForOfIteratorHelperLoose").space.PX_16 };
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/guild_settings/integrations/native/GuildSettingsModalIntegrations.tsx");
+createCacheKey = { screenContainer: null, screenContent: null, platformIcon: null };
+createCacheKey = { flex: 1, backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOWER };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { paddingTop: require("Themes").space.PX_16 };
+createCacheKey[2] = { width: 24, height: 24 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let obj1 = { paddingTop: require("Themes").space.PX_16 };
+const result = require("getUncachedChannelPermissions").fileFinishedImporting("modules/guild_settings/integrations/native/GuildSettingsModalIntegrations.tsx");
 
 export default function GuildSettingsModalIntegrations(contentContainerStyle) {
   let canManageGuild;
   let canManageWebhooks;
+  let _require;
+  let importDefault;
+  let stateFromStores;
+  let closure_3;
   let found;
-  let obj = require(stateFromStores[8]);
+  let obj = _require(stateFromStores[8]);
   const token = obj.useToken(importDefault(stateFromStores[7]).modules.mobile.TABLE_ROW_PADDING);
-  let tmp2 = _createForOfIteratorHelperLoose();
-  require = tmp2;
-  let obj1 = require(stateFromStores[9]);
+  const tmp5 = createCacheKey();
+  _require = tmp5;
+  let obj1 = _require(stateFromStores[9]);
   importDefault = obj1.useNavigation();
-  let obj2 = require(stateFromStores[10]);
-  const items = [closure_5];
-  stateFromStores = obj2.useStateFromStores(items, () => outer1_5.getGuild(), []);
-  let obj3 = require(stateFromStores[10]);
+  let obj2 = _require(stateFromStores[10]);
+  const items = [handleFormInit];
+  stateFromStores = obj2.useStateFromStores(items, () => store.getGuild(), []);
+  let obj3 = _require(stateFromStores[10]);
   const items1 = [found];
   const stateFromStoresObject = obj3.useStateFromStoresObject(items1, () => {
     if (null == stateFromStores) {
       let guildPermissionProps = { canManageWebhooks: false, canManageGuild: false };
     } else {
-      guildPermissionProps = found.getGuildPermissionProps(stateFromStores);
+      guildPermissionProps = found.getGuildPermissionProps(tmp);
     }
     return guildPermissionProps;
   });
   ({ canManageWebhooks, canManageGuild } = stateFromStoresObject);
-  let closure_3 = importDefault(stateFromStores[11])();
-  let obj4 = require(stateFromStores[10]);
-  const items2 = [closure_5];
-  const stateFromStores1 = obj4.useStateFromStores(items2, () => outer1_5.getProps().integrations);
+  closure_3 = importDefault(stateFromStores[11])();
+  let obj4 = _require(stateFromStores[10]);
+  const items2 = [handleFormInit];
+  const stateFromStores1 = obj4.useStateFromStores(items2, () => store.getProps().integrations);
   found = undefined;
-  if (null != stateFromStores1) {
-    found = stateFromStores1.filter((type) => outer1_10.includes(type.type));
+  if (stateFromStores1 != null) {
+    found = stateFromStores1.filter((type) => closure_10.includes(type.type));
   }
-  let obj5 = require(stateFromStores[12]);
   let id;
-  if (null != stateFromStores) {
+  if (stateFromStores != null) {
     id = stateFromStores.id;
   }
-  let tmp7 = obj5.useChannelsAllowedToUnlink(id).length > 0;
+  let tmp15Result = _require(stateFromStores[12]).useChannelsAllowedToUnlink(id).length > 0;
   if (canManageGuild) {
-    let length;
-    if (null != found) {
-      length = found.length;
+    let num;
+    if (found != null) {
+      num = found.length;
     }
-    let num = 0;
-    if (null != length) {
-      num = length;
+    if (num == null) {
+      num = 0;
     }
     canManageGuild = num > 0;
   }
-  let tmp9 = null;
+  let tmp11 = null;
   if (null != stateFromStores) {
     if (!canManageWebhooks) {
-      if (!tmp7) {
-        let tmp11Result = null;
+      if (!tmp15Result) {
+        let tmp13Result = null;
       }
-      tmp9 = tmp11Result;
+      tmp11 = tmp13Result;
     }
-    obj = {};
-    obj = { style: tmp2.screenContainer };
-    const items3 = [tmp2.screenContent, contentContainerStyle.contentContainerStyle];
-    obj.contentContainerStyle = items3;
-    obj1 = {};
-    obj2 = { paddingHorizontal: token };
-    obj1.style = obj2;
-    obj1.spacing = importDefault(stateFromStores[7]).space.PX_24;
-    obj3 = { hasIcons: true };
-    let tmp17 = canManageWebhooks;
+    obj = { style: null, contentContainerStyle: null, children: null };
+    obj[0] = tmp5.screenContainer;
+    const items3 = [tmp5.screenContent, contentContainerStyle.contentContainerStyle];
+    obj[1] = items3;
+    obj = { style: null, spacing: null, children: null };
+    obj1 = { paddingHorizontal: null };
+    obj1[0] = token;
+    obj[0] = obj1;
+    obj[1] = importDefault(tmp2[7]).space.PX_24;
+    tmp15Result = canManageWebhooks;
     if (canManageWebhooks) {
-      obj4 = {};
-      let intl = require(stateFromStores[17]).intl;
-      obj4.label = intl.string(require(stateFromStores[17]).t.jp25Id);
-      const intl2 = require(stateFromStores[17]).intl;
-      obj4.subLabel = intl2.string(require(stateFromStores[17]).t.mKIOkI);
-      obj4.icon = callback(require(stateFromStores[18]).WebhookIcon, {});
-      obj4.arrow = true;
-      obj4.onPress = function onPress() {
+      obj2 = { label: null, subLabel: null, icon: null, arrow: true, onPress: null };
+      let intl = tmp(tmp2[17]).intl;
+      obj2[0] = intl.string(tmp(tmp2[17]).t.jp25Id);
+      const intl2 = tmp(tmp2[17]).intl;
+      obj2[1] = intl2.string(tmp(tmp2[17]).t.mKIOkI);
+      obj2[2] = tmp15(tmp(tmp2[18]).WebhookIcon, {});
+      obj2[4] = function onPress() {
         return arr.push(outer1_6.WEBHOOKS);
       };
-      tmp17 = callback(require(stateFromStores[16]).TableRow, obj4);
+      tmp15Result = tmp15(tmp(tmp2[16]).TableRow, obj2);
     }
-    const items4 = [tmp17, , , ];
+    const items4 = [tmp15Result, , , ];
     if (canManageWebhooks) {
-      obj5 = {};
-      const intl3 = require(stateFromStores[17]).intl;
-      obj5.label = intl3.string(require(stateFromStores[17]).t.OrV60r);
-      const intl4 = require(stateFromStores[17]).intl;
-      obj5.subLabel = intl4.string(require(stateFromStores[17]).t.rQREJl);
-      obj5.icon = callback(require(stateFromStores[19]).ChannelsFollowedIcon, {});
-      obj5.arrow = true;
-      obj5.onPress = function onPress() {
+      obj3 = { label: null, subLabel: null, icon: null, arrow: true, onPress: null };
+      const intl3 = tmp(tmp2[17]).intl;
+      obj3[0] = intl3.string(tmp(tmp2[17]).t.OrV60r);
+      const intl4 = tmp(tmp2[17]).intl;
+      obj3[1] = intl4.string(tmp(tmp2[17]).t.rQREJl);
+      obj3[2] = tmp15(tmp(tmp2[19]).ChannelsFollowedIcon, {});
+      obj3[4] = function onPress() {
         return arr.push(outer1_6.CHANNELS_FOLLOWED);
       };
-      canManageWebhooks = callback(require(stateFromStores[16]).TableRow, obj5);
+      canManageWebhooks = tmp15(tmp(tmp2[16]).TableRow, obj3);
     }
     items4[1] = canManageWebhooks;
-    if (tmp7) {
-      const obj6 = {};
-      const intl5 = require(stateFromStores[17]).intl;
-      obj6.label = intl5.string(require(stateFromStores[17]).t.tqtDXC);
-      const intl6 = require(stateFromStores[17]).intl;
-      obj6.subLabel = intl6.string(require(stateFromStores[17]).t.v8819e);
-      obj6.icon = callback(require(stateFromStores[20]).RefreshIcon, {});
-      obj6.arrow = true;
-      obj6.onPress = function onPress() {
+    if (tmp15Result) {
+      obj4 = { label: null, subLabel: null, icon: null, arrow: true, onPress: null };
+      const intl5 = tmp(tmp2[17]).intl;
+      obj4[0] = intl5.string(tmp(tmp2[17]).t.tqtDXC);
+      const intl6 = tmp(tmp2[17]).intl;
+      obj4[1] = intl6.string(tmp(tmp2[17]).t.v8819e);
+      obj4[2] = tmp15(tmp(tmp2[20]).RefreshIcon, {});
+      obj4[4] = function onPress() {
         return arr.push(outer1_6.LOBBIES_LINKED);
       };
-      tmp7 = callback(require(stateFromStores[16]).TableRow, obj6);
+      tmp15Result = tmp15(tmp(tmp2[16]).TableRow, obj4);
     }
-    items4[2] = tmp7;
+    items4[2] = tmp15Result;
     if (canManageGuild) {
       canManageGuild = items.map((arg0) => {
-        let tmp2 = arg0;
-        if (null != found) {
-          if (found.some((type) => type.type === closure_0)) {
-            tmp2 = stateFromStores;
-            let obj = arr(stateFromStores[21]);
-            const value = obj.get(arg0);
-            if (null == value) {
-              return null;
-            } else {
-              obj = { label: value.name };
-              const intl = tmp2(stateFromStores[17]).intl;
-              obj = { platformName: value.name };
-              obj.subLabel = intl.formatToPlainString(tmp2(stateFromStores[17]).t.VXU4EU, obj);
-              let flag = {};
-              const obj4 = tmp2(stateFromStores[22]);
-              const tmp8 = closure_3;
-              const icon = value.icon;
-              flag.source = obj4.makeSource(tmp2(stateFromStores[23]).isThemeDark(closure_3) ? icon.darkPNG : icon.lightPNG);
-              flag.style = tmp2.platformIcon;
-              obj.icon = outer1_7(tmp8, flag);
-              flag = true;
-              obj.arrow = true;
-              obj.onPress = function onPress() {
-                return outer1_1.push(outer2_6.INTEGRATION_PLATFORM, { platformType: closure_0 });
-              };
-              outer1_7(tmp2(stateFromStores[16]).TableRow, obj, arg0);
-              const obj5 = tmp2(stateFromStores[23]);
-            }
-          }
+        const _undefined = arg0;
+        let obj = found;
+        let someResult;
+        if (found != null) {
+          someResult = obj.some((type) => type.type === closure_0);
         }
-        return null;
+        if (someResult) {
+          let obj1 = arr(stateFromStores[21]);
+          const value = obj1.get(arg0);
+          if (null == value) {
+            return null;
+          } else {
+            obj = { label: null, subLabel: null, icon: null, arrow: true, onPress: null };
+            obj[0] = value.name;
+            const intl = _undefined(tmp3[17]).intl;
+            obj = { platformName: null };
+            obj[0] = value.name;
+            obj[1] = intl.formatToPlainString(_undefined(tmp3[17]).t.VXU4EU, obj);
+            const obj5 = _undefined(tmp3[22]);
+            const tmp8 = closure_3;
+            let icon = value.icon;
+            obj1 = { source: null, style: null };
+            obj1[0] = obj5.makeSource(_undefined(tmp3[23]).isThemeDark(closure_3) ? icon.darkPNG : icon.lightPNG);
+            obj1[1] = _undefined.platformIcon;
+            icon = tmp6(tmp8, obj1);
+            obj[2] = icon;
+            obj[4] = function onPress() {
+              return outer1_1.push(outer2_6.INTEGRATION_PLATFORM, { platformType: closure_0 });
+            };
+            outer1_7(_undefined(tmp3[16]).TableRow, obj, arg0);
+            const obj6 = _undefined(tmp3[23]);
+          }
+        } else {
+          return null;
+        }
       });
     }
+    let obj5 = { children: null };
+    let obj6 = { hasIcons: true, children: null };
     items4[3] = canManageGuild;
-    obj3.children = items4;
-    obj1.children = closure_8(require(stateFromStores[15]).TableRowGroup, obj3);
-    obj.children = callback(require(stateFromStores[14]).Stack, obj1);
-    const items5 = [callback(require(stateFromStores[13]).Form, obj), callback(require(stateFromStores[24]).NavScrim, {})];
-    obj.children = items5;
-    tmp11Result = tmp11(closure_9, obj);
-    const tmp12 = closure_9;
+    obj6[1] = items4;
+    obj[2] = closure_8(tmp(tmp2[15]).TableRowGroup, obj6);
+    obj[2] = closure_7(tmp(tmp2[14]).Stack, obj);
+    const items5 = [closure_7(tmp(tmp2[13]).Form, obj), closure_7(tmp(tmp2[24]).NavScrim, {})];
+    obj5[0] = items5;
+    tmp13Result = tmp13(closure_9, obj5);
+    const tmp14 = closure_9;
   }
-  return tmp9;
+  return tmp11;
 };
 export const SUPPORTED_SETTINGS_INTEGRATION_PLATFORMS = items;

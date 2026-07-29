@@ -1,41 +1,41 @@
-// Module ID: 11962
-// Function ID: 92407
+// Module ID: 11986
+// Function ID: 11987
 // Name: useIsUserProfileObfuscated
-// Dependencies: [5878, 566, 2]
+// Dependencies: [5896, 589, 2]
 // Exports: default
 
-// Module 11962 (useIsUserProfileObfuscated)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 11986 (useIsUserProfileObfuscated)
+import createUserWidgetFromServer from "createUserWidgetFromServer";
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/user_profile/hooks/useIsUserProfileObfuscated.tsx");
 
 export default function useIsUserProfileObfuscated(flags) {
   const _require = flags;
-  const items = [_isNativeReflectConstruct];
-  const stateFromStores = _require(566).useStateFromStores(items, () => outer1_2.getUserProfile(id.id));
+  const items = [createUserWidgetFromServer];
+  const stateFromStores = _require(589).useStateFromStores(items, () => outer1_2.getUserProfile(id.id));
   let bio;
-  if (null != stateFromStores) {
+  if (stateFromStores != null) {
     bio = stateFromStores.bio;
   }
   let tmp3 = "" === bio;
   if (tmp3) {
     let pronouns;
-    if (null != stateFromStores) {
+    if (stateFromStores != null) {
       pronouns = stateFromStores.pronouns;
     }
     tmp3 = "" === pronouns;
   }
   if (tmp3) {
     let banner;
-    if (null != stateFromStores) {
+    if (stateFromStores != null) {
       banner = stateFromStores.banner;
     }
     tmp3 = undefined === banner;
   }
   if (tmp3) {
     let accentColor;
-    if (null != stateFromStores) {
+    if (stateFromStores != null) {
       accentColor = stateFromStores.accentColor;
     }
     tmp3 = undefined === accentColor;
@@ -45,15 +45,15 @@ export default function useIsUserProfileObfuscated(flags) {
   }
   if (tmp3) {
     let badges;
-    if (null != stateFromStores) {
+    if (stateFromStores != null) {
       badges = stateFromStores.badges;
     }
     let tmp8 = null == badges;
     if (!tmp8) {
       let length;
-      if (null != stateFromStores) {
+      if (stateFromStores != null) {
         const badges1 = stateFromStores.badges;
-        if (null != badges1) {
+        if (badges1 != null) {
           length = badges1.length;
         }
       }

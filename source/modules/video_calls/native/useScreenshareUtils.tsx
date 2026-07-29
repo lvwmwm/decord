@@ -1,52 +1,177 @@
-// Module ID: 10721
-// Function ID: 83295
-// Name: handleCloseScreenshare
-// Dependencies: [31, 27, 4184, 653, 4145, 6024, 4214, 8807, 4344, 4229, 8814, 8828, 10722, 10717, 1553, 10733, 10734, 10735, 10736, 10728, 566, 5497, 1212, 2]
-// Exports: default, tryStartScreenShare
+// Module ID: 10745
+// Function ID: 10746
+// Name: stopScreenshare
+// Dependencies: [19, 17, 4208, 676, 4169, 6042, 4238, 8831, 4369, 4253, 8838, 8852, 10746, 10741, 1577, 10757, 10758, 10759, 10760, 10752, 589, 5515, 1236, 2]
+// Exports: default, getOSRequirement, getStreamPressHandler, handleCloseScreenshare, tryStartScreenShare
 
-// Module 10721 (handleCloseScreenshare)
-import result from "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 10745 (stopScreenshare)
+import apexExperiment from "apexExperiment";
+import reset from "reset";
 import { ApplicationStreamStates } from "ME";
-import getSystemVersion from "getSystemVersion";
+import DCDDeviceManager from "DCDDeviceManager";
 
 const require = arg1;
-function handleCloseScreenshare() {
-  currentUserActiveStream = currentUserActiveStream.getCurrentUserActiveStream();
-  if (null != currentUserActiveStream) {
-    const obj = require(4344) /* isVoiceChannelFull */;
-    obj.stopStream(require(4229) /* isStreamKey */.encodeStreamKey(currentUserActiveStream));
-    const obj2 = require(4229) /* isStreamKey */;
-  }
-  importDefault(8814).setGoLiveSource(null);
-}
 function stopScreenshare() {
-  const voiceEngine = require(4214) /* assertInjected */.getVoiceEngine();
+  const voiceEngine = require(4238) /* inject */.getVoiceEngine();
   voiceEngine.stopBroadcast();
-  handleCloseScreenshare();
+  const currentUserActiveStream = authStore.getCurrentUserActiveStream();
+  if (null != currentUserActiveStream) {
+    let tmpResult = tmp(4369);
+    tmpResult = tmp(4253);
+    tmpResult.stopStream(tmpResult.encodeStreamKey(currentUserActiveStream));
+  }
+  const obj = require(4238) /* inject */;
+  importDefault(8838).setGoLiveSource(null);
 }
 function startStream() {
   if ("android" === obj.getVoiceEngine().platform) {
-    (function startAndroidScreenshare() {
-      let result = outer1_1(outer1_2[5]).isForegroundServiceRunning((arg0) => {
-        if (arg0) {
-          let tmpResult = tmp(tmp2[6]);
-          const voiceEngine = tmpResult.getVoiceEngine();
-          voiceEngine.startBroadcast();
-        } else {
-          tmpResult = tmp(tmp2[7]);
-          const result = tmpResult.showScreenshareDisabledAlert();
-        }
-      });
-    })();
+    const result = importDefault(6042).isForegroundServiceRunning((arg0) => {
+      if (arg0) {
+        let tmpResult = tmp(tmp2[6]);
+        const voiceEngine = tmpResult.getVoiceEngine();
+        voiceEngine.startBroadcast();
+      } else {
+        tmpResult = tmp(tmp2[7]);
+        const result = tmpResult.showScreenshareDisabledAlert();
+      }
+    });
+    const obj2 = importDefault(6042);
   } else {
     BroadcastUploadManager.showPicker();
   }
 }
-function getOSRequirement() {
-  return getSystemVersion >= 12;
-}
-function getStreamPressHandler(analyticsLocations) {
+DCDDeviceManager = DCDDeviceManager.getSystemVersionMajor();
+const BroadcastUploadManager = require("registerAsset").NativeModules.BroadcastUploadManager;
+let result = require("reset").fileFinishedImporting("modules/video_calls/native/useScreenshareUtils.tsx");
+
+export default function useScreenshareUtils(arg0) {
+  const _require = arg0;
+  let tmp = importDefault(10741)(arg0);
+  importDefault = tmp;
+  const dependencyMap = tmp2;
+  const showMobileGoLiveUpsell = importDefault(10752).useConfig({ location: "useScreenshareUtils" }).showMobileGoLiveUpsell;
+  let obj = importDefault(10752);
+  const items = [stateFromStores];
+  stateFromStores = _require(589).useStateFromStores(items, () => stateFromStores.getCurrentUserActiveStream());
+  const analyticsLocations = importDefault(5515)().analyticsLocations;
+  const items1 = [stateFromStores, arg0, tmp, DCDDeviceManager >= 12, showMobileGoLiveUpsell, analyticsLocations];
+  return showMobileGoLiveUpsell.useMemo(() => {
+    let tmp = null != stateFromStores;
+    if (tmp) {
+      tmp = stateFromStores.state === analyticsLocations.ACTIVE;
+    }
+    let tmp4 = closure_1;
+    if (closure_1) {
+      tmp4 = tmp2;
+    }
+    let obj = { isFeatureEnabled: tmp4, isActive: tmp, text: null, onPress: null, imgSource: null };
+    if (!showMobileGoLiveUpsell) {
+      if (tmp) {
+        const intl = callback(tmp2[22]).intl;
+        let stringResult = intl.string(callback(tmp2[22]).t.CpkXwZ);
+      }
+      obj[2] = stringResult;
+      let flag = tmp5;
+      if (tmp5 === undefined) {
+        flag = false;
+      }
+      closure_1 = analyticsLocations;
+      if (tmp12) {
+        if (closure_1) {
+          if (flag) {
+            class S {
+              constructor() {
+                obj = closure_0(outer1_2[12]);
+                return obj.showMobileGoLiveActionSheet(closure_1);
+              }
+            }
+          } else {
+            class S {
+              constructor() {
+                obj = closure_0(outer1_2[12]);
+                return obj.showMobileGoLiveActionSheet(closure_1);
+              }
+            }
+            if (tmp) {
+              class S {
+                constructor() {
+                  obj = closure_0(outer1_2[12]);
+                  return obj.showMobileGoLiveActionSheet(closure_1);
+                }
+              }
+            }
+          }
+        } else {
+          class S {
+            constructor() {
+              obj = closure_0(outer1_2[12]);
+              return obj.showMobileGoLiveActionSheet(closure_1);
+            }
+          }
+          const S = callback(tmp2[7]).showScreenshareDisabledAlert;
+        }
+      } else {
+        class S {
+          constructor() {
+            obj = closure_0(outer1_2[11]);
+            obj = { type: closure_0(outer1_2[11]).AVError.SCREENSHARE_OS_NOT_SUPPORTED, channelId: closure_0.id };
+            reportAVErrorResult = obj.reportAVError(obj);
+            obj3 = closure_0(outer1_2[7]);
+            result = obj3.showMinOSScreenshareRequirementAlert();
+            return;
+          }
+        }
+      }
+      obj[3] = S;
+      if (obj2.isMetaQuest()) {
+        class S {
+          constructor() {
+            obj = closure_0(outer1_2[11]);
+            obj = { type: closure_0(outer1_2[11]).AVError.SCREENSHARE_OS_NOT_SUPPORTED, channelId: closure_0.id };
+            reportAVErrorResult = obj.reportAVError(obj);
+            obj3 = closure_0(outer1_2[7]);
+            result = obj3.showMinOSScreenshareRequirementAlert();
+            return;
+          }
+        }
+      } else {
+        class S {
+          constructor() {
+            obj = closure_0(outer1_2[11]);
+            obj = { type: closure_0(outer1_2[11]).AVError.SCREENSHARE_OS_NOT_SUPPORTED, channelId: closure_0.id };
+            reportAVErrorResult = obj.reportAVError(obj);
+            obj3 = closure_0(outer1_2[7]);
+            result = obj3.showMinOSScreenshareRequirementAlert();
+            return;
+          }
+        }
+        obj[4] = tmp17(tmp18);
+        return obj;
+      }
+      obj2 = callback(tmp2[14]);
+      tmp12 = tmp2;
+      const tmp13 = analyticsLocations;
+      tmp17 = closure_1;
+    }
+    const intl2 = callback(tmp2[22]).intl;
+    stringResult = intl2.string(callback(tmp2[22]).t.fjBNo1);
+  }, items1);
+};
+export const handleCloseScreenshare = function handleCloseScreenshare() {
+  const currentUserActiveStream = authStore.getCurrentUserActiveStream();
+  if (null != currentUserActiveStream) {
+    const obj = require(4369) /* watchStream */;
+    obj.stopStream(require(4253) /* isStreamKey */.encodeStreamKey(currentUserActiveStream));
+    const obj2 = require(4253) /* isStreamKey */;
+  }
+  importDefault(8838).setGoLiveSource(null);
+};
+export { stopScreenshare };
+export { startStream };
+export const getOSRequirement = function getOSRequirement() {
+  return DCDDeviceManager >= 12;
+};
+export const getStreamPressHandler = function getStreamPressHandler(analyticsLocations) {
   let hasPermission;
   let isActive;
   let osRequirement;
@@ -63,22 +188,22 @@ function getStreamPressHandler(analyticsLocations) {
       if (showMobileGoLiveUpsell) {
         class S {
           constructor() {
-            obj = channel(outer1_2[12]);
-            return obj.showMobileGoLiveActionSheet(analyticsLocations);
+            obj = closure_0(outer1_2[12]);
+            return obj.showMobileGoLiveActionSheet(closure_1);
           }
         }
       } else {
         class S {
           constructor() {
-            obj = channel(outer1_2[12]);
-            return obj.showMobileGoLiveActionSheet(analyticsLocations);
+            obj = closure_0(outer1_2[12]);
+            return obj.showMobileGoLiveActionSheet(closure_1);
           }
         }
         if (isActive) {
           class S {
             constructor() {
-              obj = channel(outer1_2[12]);
-              return obj.showMobileGoLiveActionSheet(analyticsLocations);
+              obj = closure_0(outer1_2[12]);
+              return obj.showMobileGoLiveActionSheet(closure_1);
             }
           }
         }
@@ -86,100 +211,48 @@ function getStreamPressHandler(analyticsLocations) {
     } else {
       class S {
         constructor() {
-          obj = channel(outer1_2[12]);
-          return obj.showMobileGoLiveActionSheet(analyticsLocations);
+          obj = closure_0(outer1_2[12]);
+          return obj.showMobileGoLiveActionSheet(closure_1);
         }
       }
-      const S = require(8807) /* _handleToggleVideo */.showScreenshareDisabledAlert;
+      const S = require(8831) /* _handleToggleVideo */.showScreenshareDisabledAlert;
     }
   } else {
     class S {
       constructor() {
-        obj = channel(outer1_2[11]);
-        obj = { type: channel(outer1_2[11]).AVError.SCREENSHARE_OS_NOT_SUPPORTED, channelId: channel.id };
+        obj = closure_0(outer1_2[11]);
+        obj = { type: closure_0(outer1_2[11]).AVError.SCREENSHARE_OS_NOT_SUPPORTED, channelId: closure_0.id };
         reportAVErrorResult = obj.reportAVError(obj);
-        obj3 = channel(outer1_2[7]);
+        obj3 = closure_0(outer1_2[7]);
         result = obj3.showMinOSScreenshareRequirementAlert();
         return;
       }
     }
   }
   return S;
-}
-function getShareIcon(arg0, arg1) {
-  if (obj.isMetaQuest()) {
-    if (arg0) {
-      let tmp5 = 10733;
-    } else {
-      tmp5 = 10734;
-    }
-    tmp(tmp5);
-  } else {
-    if (arg1) {
-      let tmp4 = 10735;
-    } else if (arg0) {
-      tmp4 = 10736;
-    } else {
-      tmp4 = 10735;
-    }
-    return tmp(tmp4);
-  }
-}
-getSystemVersion = getSystemVersion.getSystemVersionMajor();
-const BroadcastUploadManager = require("get ActivityIndicator").NativeModules.BroadcastUploadManager;
-let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/video_calls/native/useScreenshareUtils.tsx");
-
-export default function useScreenshareUtils(arg0) {
-  const _require = arg0;
-  let tmp = importDefault(10717)(arg0);
-  importDefault = tmp;
-  const tmp2 = getOSRequirement();
-  const dependencyMap = tmp2;
-  const showMobileGoLiveUpsell = importDefault(10728).useConfig({ location: "useScreenshareUtils" }).showMobileGoLiveUpsell;
-  let obj = importDefault(10728);
-  const items = [stateFromStores];
-  stateFromStores = _require(566).useStateFromStores(items, () => stateFromStores.getCurrentUserActiveStream());
-  const analyticsLocations = importDefault(5497)().analyticsLocations;
-  const items1 = [stateFromStores, arg0, tmp, tmp2, showMobileGoLiveUpsell, analyticsLocations];
-  return showMobileGoLiveUpsell.useMemo(() => {
-    let tmp = null != stateFromStores;
-    if (tmp) {
-      tmp = stateFromStores.state === analyticsLocations.ACTIVE;
-    }
-    let obj = {};
-    let tmp4 = closure_1;
-    if (closure_1) {
-      tmp4 = tmp2;
-    }
-    obj.isFeatureEnabled = tmp4;
-    obj.isActive = tmp;
-    if (!showMobileGoLiveUpsell) {
-      if (tmp) {
-        const intl = callback(tmp2[22]).intl;
-        let stringResult = intl.string(callback(tmp2[22]).t.CpkXwZ);
-      }
-      obj.text = stringResult;
-      obj = { channel: callback, hasPermission: closure_1, isActive: tmp, osRequirement: tmp2, showMobileGoLiveUpsell, analyticsLocations };
-      obj.onPress = outer1_12(obj);
-      obj.imgSource = outer1_13(tmp, showMobileGoLiveUpsell);
-      return obj;
-    }
-    const intl2 = callback(tmp2[22]).intl;
-    stringResult = intl2.string(callback(tmp2[22]).t.fjBNo1);
-  }, items1);
 };
-export { handleCloseScreenshare };
-export { stopScreenshare };
-export { startStream };
-export { getOSRequirement };
-export { getStreamPressHandler };
 export const tryStartScreenShare = function tryStartScreenShare(channel) {
-  let videoPermission = getOSRequirement();
+  let videoPermission = DCDDeviceManager >= 12;
   if (videoPermission) {
-    videoPermission = require(10717) /* useHasVideoPermission */.getVideoPermission(channel);
-    const obj = require(10717) /* useHasVideoPermission */;
+    videoPermission = require(10741) /* useHasVideoPermission */.getVideoPermission(channel);
+    const obj = require(10741) /* useHasVideoPermission */;
   }
   if (videoPermission) {
-    startStream();
+    if ("android" === obj2.getVoiceEngine().platform) {
+      let result = importDefault(6042).isForegroundServiceRunning((arg0) => {
+        if (arg0) {
+          let tmpResult = tmp(tmp2[6]);
+          const voiceEngine = tmpResult.getVoiceEngine();
+          voiceEngine.startBroadcast();
+        } else {
+          tmpResult = tmp(tmp2[7]);
+          const result = tmpResult.showScreenshareDisabledAlert();
+        }
+      });
+      const obj3 = importDefault(6042);
+    } else {
+      BroadcastUploadManager.showPicker();
+    }
+    obj2 = require(4238) /* inject */;
   }
 };

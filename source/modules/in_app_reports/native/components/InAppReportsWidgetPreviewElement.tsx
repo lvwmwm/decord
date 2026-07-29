@@ -1,46 +1,50 @@
-// Module ID: 12374
-// Function ID: 96164
+// Module ID: 12396
+// Function ID: 12397
 // Name: WidgetPreview
-// Dependencies: [31, 27, 33, 4165, 689, 8055, 5880, 4161, 1212, 12034, 2]
+// Dependencies: [19, 17, 21, 4189, 712, 8079, 5898, 4185, 1236, 12058, 2]
 // Exports: default
 
-// Module 12374 (WidgetPreview)
-import "result";
+// Module 12396 (WidgetPreview)
+import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_4;
-let closure_5;
+let c4;
+let c5;
 const require = arg1;
-({ jsx: closure_4, jsxs: closure_5 } = jsxProd);
-_createForOfIteratorHelperLoose = { container: { alignSelf: "stretch", marginHorizontal: 16, marginBottom: 16 }, title: { lineHeight: 16, marginBottom: 8 } };
-_createForOfIteratorHelperLoose = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.USER_PROFILE_CONTAINER_BACKGROUND };
-_createForOfIteratorHelperLoose.card = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+({ jsx: c4, jsxs: c5 } = jsxProd);
+createCacheKey = { container: { alignSelf: "stretch", marginHorizontal: 16, marginBottom: 16 }, title: { lineHeight: 16, marginBottom: 8 }, card: null };
+createCacheKey = { backgroundColor: require("Themes").colors.USER_PROFILE_CONTAINER_BACKGROUND };
+createCacheKey[2] = createCacheKey;
+createCacheKey = createCacheKey.createStyles(createCacheKey);
 const result = require("jsxProd").fileFinishedImporting("modules/in_app_reports/native/components/InAppReportsWidgetPreviewElement.tsx");
 
 export default function WidgetPreview(widget) {
   widget = widget.widget;
-  const tmp = _createForOfIteratorHelperLoose();
-  let obj = require(5880) /* items */;
-  let tmp3 = null;
+  const tmp = createCacheKey();
+  let obj = require(5898) /* items */;
+  let tmp5 = null;
   if (obj.isGameWidget(widget)) {
-    tmp3 = null;
+    tmp5 = null;
     if (0 !== widget.games.length) {
-      obj = { style: tmp.container };
-      obj = { style: tmp.title, accessibilityRole: "header", variant: "text-xs/bold" };
-      const intl = require(1212) /* getSystemLocale */.intl;
-      obj.children = intl.string(require(1212) /* getSystemLocale */.t.SpsnDY).toUpperCase();
-      const items = [callback(require(4161) /* Text */.Text, obj), ];
-      const obj1 = { userId: widget.userId, widget, disableInteraction: true };
-      const items1 = [tmp2.card, tmp.card];
-      obj1.cardStyle = items1;
-      items[1] = callback(require(12034) /* useGamePress */.WidgetSection, obj1);
-      obj.children = items;
-      tmp3 = callback2(View, obj);
-      const str = intl.string(require(1212) /* getSystemLocale */.t.SpsnDY);
+      obj = { style: null, children: null };
+      obj[0] = tmp.container;
+      obj = { style: null, accessibilityRole: "header", variant: "text-xs/bold", children: null };
+      obj[0] = tmp.title;
+      const intl = tmp4(1236).intl;
+      obj[3] = intl.string(tmp4(1236).t.SpsnDY).toUpperCase();
+      const items = [callback(tmp4(4185).Text, obj), ];
+      const obj1 = { userId: null, widget: null, disableInteraction: true, cardStyle: null };
+      obj1[0] = widget.userId;
+      obj1[1] = widget;
+      const items1 = [tmp3.card, tmp.card];
+      obj1[3] = items1;
+      items[1] = callback(tmp4(12058).WidgetSection, obj1);
+      obj[1] = items;
+      tmp5 = callback2(View, obj);
+      const str = intl.string(tmp4(1236).t.SpsnDY);
     }
   }
-  return tmp3;
+  return tmp5;
 };

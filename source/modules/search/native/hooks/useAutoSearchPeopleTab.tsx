@@ -1,12 +1,12 @@
-// Module ID: 15523
-// Function ID: 119134
+// Module ID: 15557
+// Function ID: 15558
 // Name: useAutoSearchPeopleTab
-// Dependencies: [31, 10081, 11429, 8792, 11436, 22, 11428, 2]
+// Dependencies: [19, 10102, 11453, 8816, 11460, 12, 11452, 2]
 // Exports: useAutoSearchPeopleTab
 
-// Module 15523 (useAutoSearchPeopleTab)
-import result from "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 15557 (useAutoSearchPeopleTab)
+import noop from "noop";
+import prototype from "prototype";
 import { SEARCH_TEXT_INPUT_DEBOUNCE_TIME as closure_5 } from "SEARCH_TEXT_INPUT_DEBOUNCE_TIME";
 
 const require = arg1;
@@ -29,9 +29,9 @@ export const useAutoSearchPeopleTab = function useAutoSearchPeopleTab(searchCont
     if (!callback) {
       let obj = searchContext(outer1_2[5]);
       const debounceResult = searchContext(outer1_2[5]).debounce((searchQueryString) => {
-        if (!outer2_4.isAutocompleteVisible(outer1_0)) {
-          callback(outer2_2[4]).searchPeopleTab(outer1_0, searchQueryString);
-          const obj = callback(outer2_2[4]);
+        if (!outer1_4.isAutocompleteVisible(closure_0)) {
+          outer1_1(outer1_2[4]).searchPeopleTab(closure_0, searchQueryString);
+          const obj = outer1_1(outer1_2[4]);
         }
       }, outer1_5);
       return callback(outer1_2[6]).subscribeTextInputValue(searchContext, debounceResult);
@@ -39,6 +39,6 @@ export const useAutoSearchPeopleTab = function useAutoSearchPeopleTab(searchCont
   }, items1);
   const items2 = [searchContext];
   const effect2 = React.useEffect(() => () => {
-    callback(outer2_2[4]).cleanupPeopleTab(outer1_0);
+    outer1_1(outer1_2[4]).cleanupPeopleTab(closure_0);
   }, items2);
 };

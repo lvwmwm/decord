@@ -1,136 +1,159 @@
-// Module ID: 4717
-// Function ID: 40922
-// Name: _createForOfIteratorHelperLoose
-// Dependencies: [6, 7, 15, 17, 18, 5, 31, 27, 4379, 33, 477, 1553, 3, 4718, 4720, 1935, 4507, 1212, 4714, 2]
+// Module ID: 4739
+// Function ID: 4740
+// Name: combineStatuses
+// Dependencies: [5, 19, 17, 4402, 21, 500, 1577, 4736, 3, 4740, 4742, 1959, 4530, 1236, 2]
 
-// Module 4717 (_createForOfIteratorHelperLoose)
-import result from "result";
-import getActivityIndicator from "get ActivityIndicator";
-import maybeLoadBundle from "maybeLoadBundle";
-import getSystemLocale from "getSystemLocale";
-import NativePermissionBaseUtils from "NativePermissionBaseUtils";
-import asyncGeneratorStep from "asyncGeneratorStep";
-import closure_9 from "result";
+// Module 4739 (combineStatuses)
+import closure_3 from "set";
+import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import NativePermissionStatus from "NativePermissionStatus";
 import { jsx } from "jsxProd";
 import set from "set";
 import isMetaQuest from "isMetaQuest";
+import { NativePermissionBaseUtils } from "requestAuthorization";
 import set from "set";
 import set from "set";
-import set from "_possibleConstructorReturn";
+import set from "get ActivityIndicator";
 
 let NativePermissionTypes;
-let closure_11;
+let closure_6;
 const require = arg1;
-function _createForOfIteratorHelperLoose(iterable) {
-  let closure_0 = iterable;
-  iterable = "undefined" !== typeof Symbol;
-  if (iterable) {
-    const _Symbol = Symbol;
-    iterable = iterable[Symbol.iterator];
-  }
-  if (!iterable) {
-    iterable = iterable[Symbol.iterator];
-  }
-  if (iterable) {
-    const iter = iterable.call(iterable);
-    const next = iter.next;
-    return next.bind(iter);
+function combineStatuses(items) {
+  const self = this;
+  const apply = _combineStatuses.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
   } else {
-    const _Array = Array;
-    let tmp = iterable;
-    if (!Array.isArray(iterable)) {
-      let tmp2;
-      if (iterable) {
-        if ("string" === typeof iterable) {
-          tmp2 = _arrayLikeToArray(iterable, undefined);
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
+}
+function _combineStatuses() {
+  const self = this;
+  const tmp = callback((arg0) => {
+    let closure_0 = arg0;
+    let c7 = 0;
+    let c8 = 0;
+    let c6 = 0;
+    return (function*(arg0) {
+      if (c8 === 2) {
+        c8 = 3;
+        HermesBuiltin.throwTypeError();
+      } else if (tmp4 === 3) {
+        if (arg0 === 1) {
+          throw arg1;
+        } else if (arg0 === 2) {
+          let obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
         } else {
-          const toString = {}.toString;
-          const substr = toString.call(iterable).slice(8, -1);
-          let name = substr;
-          if (tmp3) {
-            name = iterable.constructor.name;
-          }
-          if ("Map" !== name) {
-            if ("Set" !== name) {
-              if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(iterable, undefined);
-              } else {
-                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
-              }
+          return { value: "HermesInternal", done: null };
+        }
+      } else {
+        while (true) {
+          let num = 2;
+          c8 = 2;
+          if (0 === c7) {
+            if (arg0 === 1) {
+              let num8 = 3;
+              c8 = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              let num7 = 3;
+              c8 = 3;
+              obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            } else {
+              let noop = tmp;
+              let closure_3 = tmp2;
+              let tmp28 = dependencyMap;
+              dependencyMap = undefined;
+              let closure_1;
+              let closure_2 = dependencyMap;
+              let tmp29 = dependencyMap;
+              closure_2 = dependencyMap;
+              closure_1 = dependencyMap[Symbol.iterator]();
             }
-            tmp2 = arr;
+          } else if (1 === tmp5) {
+            let tmp14 = closure_5;
+            let tmp15 = closure_5;
+            let constants = 0;
+            let tmp16 = closure_1;
+            closure_1.return();
+            throw closure_5;
+          } else if (arg0 === 1) {
+            let num4 = 3;
+            c8 = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            constants = 0;
+            let tmp13 = closure_1;
+            closure_1.return();
+            let num3 = 3;
+            c8 = 3;
+            let obj1 = { value: null, done: true };
+            obj1[0] = arg1;
+            return obj1;
+          } else {
+            let tmp6 = closure_3;
+            let tmp7 = noop;
+            closure_1 = arg1;
+            let tmp8 = closure_1;
+            let tmp9 = constants;
+            if (closure_1 !== constants.AUTHORIZED) {
+              let tmp10 = closure_3;
+              constants = 0;
+              let tmp12 = closure_1;
+              let tmp11 = closure_1;
+              closure_1.return();
+              let num2 = 3;
+              c8 = 3;
+              obj = { value: null, done: true };
+              obj[0] = tmp11;
+              return obj;
+            } else {
+              constants = 0;
+            }
           }
-          const _Array2 = Array;
-          arr = Array.from(iterable);
-          const callResult = toString.call(iterable);
-          tmp3 = "Object" === substr && iterable.constructor;
+          let tmp17 = closure_2;
+          let tmp18 = closure_1;
+          if (closure_1 === undefined) {
+            let tmp22 = noop;
+            let tmp23 = constants;
+            let num6 = 3;
+            c8 = 3;
+            let obj2 = { value: null, done: true };
+            obj2[0] = constants.AUTHORIZED;
+            return obj2;
+          } else {
+            let tmp20 = closure_3;
+            constants = 1;
+            dependencyMap = tmp19;
+            let tmp21 = dependencyMap;
+            c7 = 2;
+            let num5 = 1;
+            c8 = 1;
+            let obj3 = { value: null, done: false };
+            obj3[0] = dependencyMap();
+            return obj3;
+          }
         }
       }
-      tmp = tmp2;
-      if (!tmp2) {
-        const _TypeError = TypeError;
-        const typeError = new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
-        throw typeError;
-      }
-    }
-    if (tmp) {
-      closure_0 = tmp;
-    }
-    let c1 = 0;
-    return () => {
-      if (closure_1 >= length.length) {
-        let obj = { done: true };
-      } else {
-        obj = { done: false };
-        closure_1 = tmp3 + 1;
-        obj.value = length[+closure_1];
-      }
-      return obj;
-    };
+    })();
+  });
+  const _combineStatuses = tmp;
+  const apply = tmp.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
   }
-}
-function _arrayLikeToArray(arg0, arg1) {
-  let length;
-  if (tmp) {
-    length = arg0.length;
-  }
-  const ArrayResult = Array(length);
-  for (let num = 0; num < length; num = num + 1) {
-    ArrayResult[num] = arg0[num];
-  }
-  return ArrayResult;
-}
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
-  }
-  const result = _isNativeReflectConstruct();
-}
-function combineStatuses(items) {
-  return _combineStatuses(...arguments);
-}
-async function _combineStatuses(arg0, arg1) {
-  const tmp = outer2_15(arg0);
-  if (!iter.done) {
-    while (true) {
-      let tmp4 = outer2_11;
-      if (tmp3 !== outer2_11.AUTHORIZED) {
-        break;
-      } else {
-        let iter2 = tmp();
-        let tmp2 = iter2;
-      }
-    }
-  }
-  return outer2_11.AUTHORIZED;
+  return applyArgumentsResult;
 }
 const NativeModules = get_ActivityIndicator.NativeModules;
-({ NativePermissionTypes, NativePermissionStatus: closure_11 } = NativePermissionStatus);
+({ NativePermissionTypes, NativePermissionStatus: closure_6 } = NativePermissionStatus);
 set = set.isAndroid();
 if (set) {
   set = get_ActivityIndicator.Platform.constants.Version <= 28;
@@ -166,90 +189,47 @@ if (isMetaQuest) {
   items9 = [NativePermissionManager2.hasCameraAuthorization];
 }
 HermesBuiltin.arraySpread(items9, tmp8);
-let tmp10 = ((NativePermissionBaseUtils) => {
-  class NativePermissionIOSUtils {
-    constructor() {
-      self = this;
-      tmp = outer1_3(this, NativePermissionIOSUtils);
-      obj = outer1_6(NativePermissionIOSUtils);
-      tmp2 = outer1_5;
-      if (outer1_17()) {
-        tmp6 = globalThis;
-        _Reflect = Reflect;
-        tmp7 = outer1_6;
-        tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, outer1_6(self).constructor);
-      } else {
-        tmp3 = arguments;
-        tmp4 = arguments;
-        constructResult = obj(...arguments);
-      }
-      return tmp2(self, constructResult);
-    }
+let NativePermissionIOSUtils;
+class NativePermissionIOSUtils extends NativePermissionBaseUtils {
+}
+const prototype = NativePermissionIOSUtils.prototype;
+prototype["requestPermissionCore"] = function requestPermissionCore(arg0, arg1) {
+  return this.performRequest(NativePermissionIOSUtils.requestPermissionLookup, arg0, arg1);
+};
+prototype["hasPermissionCore"] = function hasPermissionCore(arg0, arg1) {
+  return this.performRequest(NativePermissionIOSUtils.hasPermissionLookup, arg0, arg1);
+};
+prototype["performRequest"] = function performRequest(hasPermissionLookup, arg1, arg2) {
+  if (null == hasPermissionLookup[arg1]) {
+    const obj = new importDefault(3)("NativePermissionUtils");
+    const _HermesInternal = HermesInternal;
+    obj.error("Unable to locate permission type " + arg1);
+    let resolved = Promise.resolve(false);
+  } else {
+    const self = this;
+    resolved = this.requestAuthorization(arg1, tmp, arg2);
   }
-  callback2(NativePermissionIOSUtils, NativePermissionBaseUtils);
-  let obj = {
-    key: "requestPermissionCore",
-    value(arg0, arg1) {
-      return this.performRequest(NativePermissionIOSUtils.requestPermissionLookup, arg0, arg1);
-    }
-  };
-  const items = [obj, , , , , ];
-  obj = {
-    key: "hasPermissionCore",
-    value(arg0, arg1) {
-      return this.performRequest(NativePermissionIOSUtils.hasPermissionLookup, arg0, arg1);
-    }
-  };
-  items[1] = obj;
-  obj = {
-    key: "performRequest",
-    value(arg0, arg1, arg2) {
-      const self = this;
-      if (null == arg0[arg1]) {
-        let tmp6 = outer1_1(outer1_2[12]);
-        const prototype = tmp6.prototype;
-        tmp6 = new tmp6("NativePermissionUtils");
-        const _HermesInternal = HermesInternal;
-        tmp6.error("Unable to locate permission type " + arg1);
-        let resolved = Promise.resolve(false);
-      } else {
-        resolved = self.requestAuthorization(arg1, tmp, arg2);
-      }
-      return resolved;
-    }
-  };
-  items[2] = obj;
-  items[3] = {
-    key: "didHavePermission",
-    value(arg0) {
-      const storage = this.storage;
-      return storage.hasPermission(arg0);
-    }
-  };
-  items[4] = {
-    key: "openSettings",
-    value() {
-      outer1_1(outer1_2[13])();
-    }
-  };
-  items[5] = {
-    key: "openAlertModal",
-    value(arg0) {
-      let body;
-      let onConfirm;
-      ({ body, onConfirm } = arg0);
-      let obj = NativePermissionIOSUtils(outer1_2[16]);
-      obj = {};
-      const intl = NativePermissionIOSUtils(outer1_2[17]).intl;
-      obj.title = intl.string(NativePermissionIOSUtils(outer1_2[17]).t.sMFVrS);
-      obj.body = body;
-      obj.onConfirm = onConfirm;
-      obj.openAlert("permission-denied", outer1_12(outer1_9.lazy(() => NativePermissionIOSUtils(outer2_2[15])(outer2_2[14], outer2_2.paths)), obj));
-    }
-  };
-  return callback(NativePermissionIOSUtils, items);
-})(require("NativePermissionBaseUtils").NativePermissionBaseUtils);
+  return resolved;
+};
+prototype["didHavePermission"] = function didHavePermission(arg0) {
+  const storage = this.storage;
+  return storage.hasPermission(arg0);
+};
+prototype["openSettings"] = function openSettings() {
+  importDefault(4740)();
+};
+prototype["openAlertModal"] = function openAlertModal(arg0) {
+  let body;
+  let onConfirm;
+  ({ body, onConfirm } = arg0);
+  let obj = require(4530) /* useAlertStore */;
+  obj = { title: null, body: null, onConfirm: null };
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj[0] = intl.string(require(1236) /* getSystemLocale */.t.sMFVrS);
+  obj[1] = body;
+  obj[2] = onConfirm;
+  obj.openAlert("permission-denied", jsx(React.lazy(() => callback(paths[11])(paths[10], paths.paths)), { title: null, body: null, onConfirm: null }));
+};
 set = { [NativePermissionTypes.CAMERA]: () => combineStatuses(items2), [NativePermissionTypes.HEADSET_CAMERA]: NativeModules.NativePermissionManager.requestHeadsetCameraAuthorization };
 if (set.isAndroid()) {
   let fn = () => {
@@ -263,7 +243,7 @@ set[NativePermissionTypes.AUDIO] = fn;
 set[NativePermissionTypes.PHOTOS] = NativeModules.NativePermissionManager.requestPhotoAuthorization;
 set[NativePermissionTypes.CONTACTS] = NativeModules.NativePermissionManager.requestContactsAuthorization;
 set[NativePermissionTypes.INPUT_MONITORING] = () => Promise.resolve(constants.AUTHORIZED);
-tmp10.requestPermissionLookup = set;
+NativePermissionIOSUtils.requestPermissionLookup = set;
 set = { [NativePermissionTypes.CAMERA]: () => combineStatuses(items7), [NativePermissionTypes.HEADSET_CAMERA]: NativeModules.NativePermissionManager.hasHeadsetCameraAuthorization };
 if (set.isAndroid()) {
   let fn2 = () => {
@@ -275,8 +255,8 @@ if (set.isAndroid()) {
 }
 set[NativePermissionTypes.AUDIO] = fn2;
 set[NativePermissionTypes.INPUT_MONITORING] = () => Promise.resolve(constants.AUTHORIZED);
-tmp10.hasPermissionLookup = set;
-tmp10 = new tmp10();
-let result = set.fileFinishedImporting("modules/native_permissions/mobile/NativePermissionUtils.native.tsx");
+NativePermissionIOSUtils.hasPermissionLookup = set;
+const nativePermissionIOSUtils = new NativePermissionIOSUtils();
+const result = set.fileFinishedImporting("modules/native_permissions/mobile/NativePermissionUtils.native.tsx");
 
-export default tmp10;
+export default nativePermissionIOSUtils;

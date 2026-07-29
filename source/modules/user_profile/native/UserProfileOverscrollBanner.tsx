@@ -1,20 +1,20 @@
-// Module ID: 8353
-// Function ID: 66901
+// Module ID: 8377
+// Function ID: 8378
 // Name: UserProfileOverscrollBanner
-// Dependencies: [31, 27, 33, 4026, 8354, 8077, 477, 2]
+// Dependencies: [19, 17, 21, 4050, 8378, 8101, 500, 2]
 // Exports: default
 
-// Module 8353 (UserProfileOverscrollBanner)
-import "result";
+// Module 8377 (UserProfileOverscrollBanner)
+import "noop";
 import { StyleSheet } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
-import module_8354 from "module_8354";
-import importDefaultResult from "module_4026";
+import module_8378 from "module_8378";
+import importDefaultResult from "module_4050";
 
-let closure_4;
-let closure_5;
+let c4;
+let c5;
 const require = arg1;
-({ jsx: closure_4, jsxs: closure_5 } = jsxProd);
+({ jsx: c4, jsxs: c5 } = jsxProd);
 const result = require("jsxProd").fileFinishedImporting("modules/user_profile/native/UserProfileOverscrollBanner.tsx");
 
 export default function UserProfileOverscrollBanner(arg0) {
@@ -23,25 +23,26 @@ export default function UserProfileOverscrollBanner(arg0) {
   let blurAnimatedProps;
   let privateBanner;
   let showBlur;
-  let obj = { bannerAnimatedStyle: 0, bannerImageAnimatedStyle: 0, blurAnimatedProps: 0, showBlur: 0, privateBanner: 0 };
   ({ bannerAnimatedStyle, bannerImageAnimatedStyle, blurAnimatedProps, showBlur, privateBanner } = arg0);
-  Object.setPrototypeOf(null);
-  const merged = Object.assign(arg0, obj);
-  obj = { style: bannerAnimatedStyle };
+  const merged = Object.assign(arg0, Object.create(null));
+  let obj = { style: bannerAnimatedStyle, children: null };
   const items = [privateBanner, ];
-  obj = { style: bannerImageAnimatedStyle };
+  obj = { style: bannerImageAnimatedStyle, children: null };
+  obj = {};
   const merged1 = Object.assign(merged);
-  const items1 = [callback(importDefault(8077), {}), ];
-  const obj1 = {};
-  const tmp4 = importDefault(8077);
-  let tmp6 = require(477) /* set */.isIOS() && showBlur;
-  if (tmp6) {
-    const obj2 = { animatedProps: blurAnimatedProps, style: StyleSheet.absoluteFillObject };
-    tmp6 = callback(module_8354, obj2);
+  const items1 = [callback(importDefault(8101), obj), ];
+  const tmp3 = callback;
+  const tmp4 = importDefault(8101);
+  let tmp3Result = require(500) /* set */.isIOS() && showBlur;
+  if (tmp3Result) {
+    const obj1 = { animatedProps: null, style: null };
+    obj1[0] = blurAnimatedProps;
+    obj1[1] = StyleSheet.absoluteFillObject;
+    tmp3Result = tmp3(module_8378, obj1);
   }
-  items1[1] = tmp6;
-  obj.children = items1;
-  items[1] = closure_5(importDefault(4026).View, obj);
-  obj.children = items;
-  return closure_5(importDefault(4026).View, obj);
+  items1[1] = tmp3Result;
+  obj[1] = items1;
+  items[1] = closure_5(importDefault(4050).View, obj);
+  obj[1] = items;
+  return closure_5(importDefault(4050).View, obj);
 };

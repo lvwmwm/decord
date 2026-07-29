@@ -1,11 +1,11 @@
-// Module ID: 10637
-// Function ID: 82723
+// Module ID: 10661
+// Function ID: 10662
 // Name: useDispatchOpenActivity
-// Dependencies: [31, 686, 2]
+// Dependencies: [19, 709, 2]
 // Exports: default
 
-// Module 10637 (useDispatchOpenActivity)
-import result from "result";
+// Module 10661 (useDispatchOpenActivity)
+import noop from "noop";
 
 const result = require("set").fileFinishedImporting("modules/activities/useDispatchOpenActivity.tsx");
 
@@ -13,18 +13,20 @@ export default function useDispatchOpenActivity(connectedEmbeddedActivity) {
   connectedEmbeddedActivity = connectedEmbeddedActivity.connectedEmbeddedActivity;
   let applicationId;
   applicationId = undefined;
-  if (null != connectedEmbeddedActivity) {
+  if (connectedEmbeddedActivity != null) {
     applicationId = connectedEmbeddedActivity.applicationId;
   }
   const items = [applicationId, connectedEmbeddedActivity];
   const effect = React.useEffect(() => {
-    let tmp = null != connectedEmbeddedActivity;
-    if (tmp) {
-      tmp = null != applicationId;
+    let tmp2 = null != connectedEmbeddedActivity;
+    if (tmp2) {
+      tmp2 = null != applicationId;
     }
-    if (tmp) {
+    if (tmp2) {
       let obj = connectedEmbeddedActivity(applicationId[1]);
-      obj = { type: "EMBEDDED_ACTIVITY_OPEN", location: connectedEmbeddedActivity.location, applicationId };
+      obj = { type: "EMBEDDED_ACTIVITY_OPEN", location: null, applicationId: null };
+      obj[1] = connectedEmbeddedActivity.location;
+      obj[2] = applicationId;
       obj.dispatch(obj);
     }
   }, items);

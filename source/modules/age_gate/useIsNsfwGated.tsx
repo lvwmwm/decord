@@ -1,12 +1,12 @@
-// Module ID: 9108
-// Function ID: 71366
+// Module ID: 9132
+// Function ID: 9133
 // Name: useIsNsfwGated
-// Dependencies: [4381, 1850, 566, 2]
+// Dependencies: [4404, 1874, 589, 2]
 // Exports: default
 
-// Module 9108 (useIsNsfwGated)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_3 from "_isNativeReflectConstruct";
+// Module 9132 (useIsNsfwGated)
+import initialize from "initialize";
+import mergeGuildAvatar from "mergeGuildAvatar";
 
 const require = arg1;
 const result = require("initialize").fileFinishedImporting("modules/age_gate/useIsNsfwGated.tsx");
@@ -14,23 +14,24 @@ const result = require("initialize").fileFinishedImporting("modules/age_gate/use
 export default function useIsNsfwGated(nsfw) {
   const _require = nsfw;
   nsfw = nsfw.nsfw;
-  const items = [closure_3];
-  const obj = _require(566);
-  const tmp = false === _require(566).useStateFromStores(items, () => {
-    const currentUser = outer1_3.getCurrentUser();
+  const items = [mergeGuildAvatar];
+  const stateFromStores = _require(589).useStateFromStores(items, () => {
+    currentUser = currentUser.getCurrentUser();
     let nsfwAllowed;
-    if (null != currentUser) {
+    if (currentUser != null) {
       nsfwAllowed = currentUser.nsfwAllowed;
     }
     return nsfwAllowed;
   });
-  const items1 = [_isNativeReflectConstruct];
-  let tmp2 = !_require(566).useStateFromStores(items1, () => outer1_2.didAgree(nsfw.guild_id));
+  const obj = _require(589);
+  const items1 = [initialize];
+  const stateFromStores1 = _require(589).useStateFromStores(items1, () => outer1_2.didAgree(nsfw.guild_id));
+  let tmp3 = !stateFromStores1;
   if (nsfw) {
-    if (!tmp2) {
-      tmp2 = tmp;
+    if (stateFromStores1) {
+      tmp3 = false === stateFromStores;
     }
-    nsfw = tmp2;
+    nsfw = tmp3;
   }
   return nsfw;
 };

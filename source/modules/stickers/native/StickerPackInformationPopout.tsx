@@ -1,89 +1,93 @@
-// Module ID: 9611
-// Function ID: 74813
-// Name: generateListData
-// Dependencies: [31, 27, 33, 4165, 689, 4501, 1212, 4161, 4695, 2]
+// Module ID: 9633
+// Function ID: 9634
+// Name: StickerPackInformationPopout
+// Dependencies: [19, 17, 21, 4189, 712, 4524, 1236, 4185, 4717, 2]
 // Exports: default, doesStickerPackHavePopoutInformation
 
-// Module 9611 (generateListData)
-import "result";
+// Module 9633 (StickerPackInformationPopout)
+import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_2;
-let closure_3;
-let closure_4;
-let closure_5;
-let require = arg1;
-function generateListData(stickerPack) {
-  const items = [];
-  let obj = require(4501) /* getStickerPackPreviewSticker */;
-  if (obj.isStickerPackAnimated(stickerPack)) {
-    obj = { key: "animated" };
-    const intl = require(1212) /* getSystemLocale */.intl;
-    obj.description = intl.string(require(1212) /* getSystemLocale */.t.W11rMa);
-    items.push(obj);
-  }
-  return items;
-}
-({ View: closure_2, FlatList: closure_3 } = get_ActivityIndicator);
-({ jsx: closure_4, jsxs: closure_5 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW, width: "90%", marginHorizontal: "5%", padding: 16, borderRadius: require("_createForOfIteratorHelperLoose").radii.xs, shadowColor: require("_createForOfIteratorHelperLoose").colors.BLACK, shadowOffset: { width: 2, height: 2 }, shadowOpacity: 0.25, shadowRadius: 5 };
-_createForOfIteratorHelperLoose.informationContainer = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.headerContainer = { flexDirection: "row", justifyContent: "space-between", marginBottom: 8 };
-_createForOfIteratorHelperLoose.informationHeader = { lineHeight: 20 };
-_createForOfIteratorHelperLoose.informationContentContainer = { flexDirection: "row" };
-_createForOfIteratorHelperLoose.informationContent = { lineHeight: 20 };
-_createForOfIteratorHelperLoose.informationContentDescription = { flex: 1, marginLeft: 5 };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+let c3;
+let c4;
+let c5;
+let obj1;
+const require = arg1;
+({ View: obj1, FlatList: c3 } = get_ActivityIndicator);
+({ jsx: c4, jsxs: c5 } = jsxProd);
+createCacheKey = { informationContainer: null, headerContainer: null, informationHeader: null, informationContentContainer: null, informationContent: null, informationContentDescription: null };
+createCacheKey = { backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW, width: "90%", marginHorizontal: "5%", padding: 16, borderRadius: require("Themes").radii.xs, shadowColor: require("Themes").colors.BLACK, shadowOffset: { width: 2, height: 2 }, shadowOpacity: 0.25, shadowRadius: 5 };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { flexDirection: "row", justifyContent: "space-between", marginBottom: 8 };
+createCacheKey[2] = { lineHeight: 20 };
+createCacheKey[3] = { flexDirection: "row" };
+createCacheKey[4] = { lineHeight: 20 };
+createCacheKey[5] = { flex: 1, marginLeft: 5 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
 const result = require("jsxProd").fileFinishedImporting("modules/stickers/native/StickerPackInformationPopout.tsx");
 
 export default function StickerPackInformationPopout(stickerPack) {
   let onClose;
   let style;
   stickerPack = stickerPack.stickerPack;
+  let _require;
   ({ onClose, style } = stickerPack);
-  const tmp = _createForOfIteratorHelperLoose();
-  const require = tmp;
-  let obj = { style: items };
-  items = [tmp.informationContainer, style];
-  obj = { style: tmp.headerContainer };
-  obj = { style: tmp.informationHeader, variant: "text-md/semibold", color: "mobile-text-heading-primary" };
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj.children = intl.format(require(1212) /* getSystemLocale */.t.XDm6yN, { stickerPackName: stickerPack.name });
-  let items1 = [callback(require(4161) /* Text */.Text, obj), ];
-  const obj2 = { onPress: onClose, accessibilityRole: "button" };
-  const intl2 = require(1212) /* getSystemLocale */.intl;
-  obj2.accessibilityLabel = intl2.string(require(1212) /* getSystemLocale */.t.cpT0Cq);
-  const obj3 = { variant: "text-md/bold", color: "text-brand" };
-  const intl3 = require(1212) /* getSystemLocale */.intl;
-  obj3.children = intl3.string(require(1212) /* getSystemLocale */.t.cpT0Cq);
-  obj2.children = callback(require(4161) /* Text */.Text, obj3);
-  items1[1] = callback(require(4695) /* PressableBase */.PressableOpacity, obj2);
-  obj.children = items1;
-  const items2 = [callback2(closure_2, obj), ];
-  const obj1 = { stickerPackName: stickerPack.name };
-  const tmp2 = generateListData(stickerPack);
-  items2[1] = callback(closure_3, {
-    data: generateListData(stickerPack),
-    renderItem(item) {
-      let obj = { style: tmp.informationContentContainer };
-      obj = { style: tmp.informationContent, variant: "text-md/medium", color: "text-default", children: "\u2022" };
-      const items = [outer1_4(tmp(outer1_1[7]).Text, obj), ];
-      obj = { style: null, variant: "text-md/medium", color: "text-default" };
-      const items1 = [, ];
-      ({ informationContent: arr2[0], informationContentDescription: arr2[1] } = tmp);
-      obj.style = items1;
-      obj.children = item.item.description;
-      items[1] = outer1_4(tmp(outer1_1[7]).Text, obj);
-      obj.children = items;
-      return outer1_5(outer1_2, obj);
-    }
-  });
-  obj.children = items2;
+  const tmp = createCacheKey();
+  _require = tmp;
+  let items = [];
+  let obj = _require(4524);
+  if (obj.isStickerPackAnimated(stickerPack)) {
+    obj = { key: "animated", description: null };
+    const intl = tmp2(1236).intl;
+    obj[1] = intl.string(tmp2(1236).t.W11rMa);
+    items.push(obj);
+  }
+  obj = { style: items1, children: null };
+  items1 = [tmp.informationContainer, style];
+  const obj1 = { style: tmp.headerContainer, children: null };
+  const obj2 = { style: tmp.informationHeader, variant: "text-md/semibold", color: "mobile-text-heading-primary", children: null };
+  const intl2 = tmp2(1236).intl;
+  obj2[3] = intl2.format(_require(1236).t.XDm6yN, { stickerPackName: stickerPack.name });
+  const items2 = [callback(_require(4185).Text, obj2), ];
+  const obj4 = { onPress: onClose, accessibilityRole: "button", accessibilityLabel: null, children: null };
+  const intl3 = tmp2(1236).intl;
+  obj4[2] = intl3.string(_require(1236).t.cpT0Cq);
+  const obj5 = { variant: "text-md/bold", color: "text-brand", children: null };
+  const intl4 = tmp2(1236).intl;
+  obj5[2] = intl4.string(_require(1236).t.cpT0Cq);
+  obj4[3] = callback(_require(4185).Text, obj5);
+  items2[1] = callback(_require(4717).PressableOpacity, obj4);
+  obj1[1] = items2;
+  const items3 = [
+    callback2(closure_2, obj1),
+    callback(closure_3, {
+      data: items,
+      renderItem(children) {
+        let obj = { style: _undefined.informationContentContainer, children: null };
+        obj = { style: _undefined.informationContent, variant: "text-md/medium", color: "text-default", children: "\u2022" };
+        const items = [outer1_4(_undefined(outer1_1[7]).Text, obj), ];
+        obj = { style: items1, variant: "text-md/medium", color: "text-default", children: children.item.description };
+        items1 = [, ];
+        ({ informationContent: arr2[0], informationContentDescription: arr2[1] } = _undefined);
+        items[1] = outer1_4(_undefined(outer1_1[7]).Text, obj);
+        obj[1] = items;
+        return outer1_5(outer1_2, obj);
+      }
+    })
+  ];
+  obj[1] = items3;
   return callback2(closure_2, obj);
 };
 export const doesStickerPackHavePopoutInformation = function doesStickerPackHavePopoutInformation(stickerPack) {
-  return generateListData(stickerPack).length > 0;
+  const items = [];
+  let obj = require(4524) /* getStickerExtensionFromFormatType */;
+  if (obj.isStickerPackAnimated(stickerPack)) {
+    obj = { key: "animated", description: null };
+    const intl = tmp(1236).intl;
+    obj[1] = intl.string(tmp(1236).t.W11rMa);
+    items.push(obj);
+  }
+  return items.length > 0;
 };

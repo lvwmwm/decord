@@ -1,74 +1,74 @@
-// Module ID: 14656
-// Function ID: 111627
+// Module ID: 14681
+// Function ID: 14682
 // Name: toggle
-// Dependencies: [7733, 10099, 1212, 3838, 2]
+// Dependencies: [7756, 10120, 1236, 3862, 2]
 
-// Module 14656 (toggle)
+// Module 14681 (toggle)
 import createToggle from "createToggle";
 
 const toggle = createToggle.createToggle({
   useTitle() {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(require(1212) /* getSystemLocale */.t["4qhAjx"]);
+    const intl = require(1236) /* getSystemLocale */.intl;
+    return intl.string(require(1236) /* getSystemLocale */.t["4qhAjx"]);
   },
   parent: require("MobileSetting").MobileSetting.CHAT,
   useValue() {
-    const DoubleTapReactionEmoji = require(3838) /* explicitContentFromProto */.DoubleTapReactionEmoji;
+    const DoubleTapReactionEmoji = require(3862) /* explicitContentFromProto */.DoubleTapReactionEmoji;
     return !DoubleTapReactionEmoji.useSetting().disableDoubleTap;
   },
   onValueChange(disableDoubleTap) {
-    const DoubleTapReactionEmoji = require(3838) /* explicitContentFromProto */.DoubleTapReactionEmoji;
+    const DoubleTapReactionEmoji = require(3862) /* explicitContentFromProto */.DoubleTapReactionEmoji;
     const setting = DoubleTapReactionEmoji.getSetting();
-    const DoubleTapReactionEmoji2 = require(3838) /* explicitContentFromProto */.DoubleTapReactionEmoji;
-    const obj = { disableDoubleTap: !disableDoubleTap };
+    const DoubleTapReactionEmoji2 = require(3862) /* explicitContentFromProto */.DoubleTapReactionEmoji;
+    const obj = { disableDoubleTap: !disableDoubleTap, emojiId: null, emojiName: null, animated: null };
     let emojiId;
-    if (null != setting) {
+    if (setting != null) {
       emojiId = setting.emojiId;
     }
-    obj.emojiId = emojiId;
+    obj[1] = emojiId;
     let emojiName;
-    if (null != setting) {
+    if (setting != null) {
       emojiName = setting.emojiName;
     }
-    obj.emojiName = emojiName;
+    obj[2] = emojiName;
     let animated;
-    if (null != setting) {
+    if (setting != null) {
       animated = setting.animated;
     }
-    obj.animated = animated;
+    obj[3] = animated;
     DoubleTapReactionEmoji2.updateSetting(obj);
   }
 });
 let obj = {
   useTitle() {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(require(1212) /* getSystemLocale */.t["4qhAjx"]);
+    const intl = require(1236) /* getSystemLocale */.intl;
+    return intl.string(require(1236) /* getSystemLocale */.t["4qhAjx"]);
   },
   parent: require("MobileSetting").MobileSetting.CHAT,
   useValue() {
-    const DoubleTapReactionEmoji = require(3838) /* explicitContentFromProto */.DoubleTapReactionEmoji;
+    const DoubleTapReactionEmoji = require(3862) /* explicitContentFromProto */.DoubleTapReactionEmoji;
     return !DoubleTapReactionEmoji.useSetting().disableDoubleTap;
   },
   onValueChange(disableDoubleTap) {
-    const DoubleTapReactionEmoji = require(3838) /* explicitContentFromProto */.DoubleTapReactionEmoji;
+    const DoubleTapReactionEmoji = require(3862) /* explicitContentFromProto */.DoubleTapReactionEmoji;
     const setting = DoubleTapReactionEmoji.getSetting();
-    const DoubleTapReactionEmoji2 = require(3838) /* explicitContentFromProto */.DoubleTapReactionEmoji;
-    const obj = { disableDoubleTap: !disableDoubleTap };
+    const DoubleTapReactionEmoji2 = require(3862) /* explicitContentFromProto */.DoubleTapReactionEmoji;
+    const obj = { disableDoubleTap: !disableDoubleTap, emojiId: null, emojiName: null, animated: null };
     let emojiId;
-    if (null != setting) {
+    if (setting != null) {
       emojiId = setting.emojiId;
     }
-    obj.emojiId = emojiId;
+    obj[1] = emojiId;
     let emojiName;
-    if (null != setting) {
+    if (setting != null) {
       emojiName = setting.emojiName;
     }
-    obj.emojiName = emojiName;
+    obj[2] = emojiName;
     let animated;
-    if (null != setting) {
+    if (setting != null) {
       animated = setting.animated;
     }
-    obj.animated = animated;
+    obj[3] = animated;
     DoubleTapReactionEmoji2.updateSetting(obj);
   }
 };

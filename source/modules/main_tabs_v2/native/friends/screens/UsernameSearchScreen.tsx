@@ -1,68 +1,69 @@
-// Module ID: 15570
-// Function ID: 119654
+// Module ID: 15604
+// Function ID: 15605
 // Name: UsernameSearchScreen
-// Dependencies: [31, 27, 653, 33, 4165, 689, 675, 5193, 4563, 8800, 477, 5620, 4697, 12970, 1212, 2]
+// Dependencies: [19, 17, 676, 21, 4189, 712, 698, 5215, 4586, 8824, 500, 5638, 4719, 12993, 1236, 2]
 // Exports: default
 
-// Module 15570 (UsernameSearchScreen)
-import result from "result";
+// Module 15604 (UsernameSearchScreen)
+import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import ME from "ME";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_4;
-let closure_5;
+let c4;
+let c5;
+let c9;
 let closure_6;
-let closure_7;
-let closure_8;
-let closure_9;
+let error;
+let metroImportAll;
 const require = arg1;
-({ ScrollView: closure_4, View: closure_5 } = get_ActivityIndicator);
-({ AnalyticEvents: closure_6, AnalyticsSections: closure_7 } = ME);
-({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { flex: 1, backgroundColor: require("_createForOfIteratorHelperLoose").colors.MOBILE_ACTIONSHEET_BACKGROUND };
-_createForOfIteratorHelperLoose.background = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.content = { flex: 1, backgroundColor: require("_createForOfIteratorHelperLoose").colors.MOBILE_ACTIONSHEET_BACKGROUND };
-let obj1 = { flex: 1, backgroundColor: require("_createForOfIteratorHelperLoose").colors.MOBILE_ACTIONSHEET_BACKGROUND };
-_createForOfIteratorHelperLoose.iosPaddingThemeAdjust = { paddingTop: require("_createForOfIteratorHelperLoose").space.PX_40 };
-let obj2 = { paddingTop: require("_createForOfIteratorHelperLoose").space.PX_40 };
-_createForOfIteratorHelperLoose.container = { flexGrow: 1, backgroundColor: require("_createForOfIteratorHelperLoose").colors.MOBILE_ACTIONSHEET_BACKGROUND, paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16 };
-const obj4 = { marginTop: require("_createForOfIteratorHelperLoose").space.PX_16, backgroundColor: "transparent", paddingHorizontal: 0 };
-_createForOfIteratorHelperLoose.inputContainer = obj4;
-_createForOfIteratorHelperLoose.headerText = { textTransform: "none" };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-let obj3 = { flexGrow: 1, backgroundColor: require("_createForOfIteratorHelperLoose").colors.MOBILE_ACTIONSHEET_BACKGROUND, paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16 };
+({ ScrollView: c4, View: c5 } = get_ActivityIndicator);
+({ AnalyticEvents: closure_6, AnalyticsSections: error } = ME);
+({ jsx: metroImportAll, jsxs: c9 } = jsxProd);
+createCacheKey = { background: null, content: null, iosPaddingThemeAdjust: null, container: null, inputContainer: null, headerText: null };
+createCacheKey = { flex: 1, backgroundColor: require("Themes").colors.MOBILE_ACTIONSHEET_BACKGROUND };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { flex: 1, backgroundColor: require("Themes").colors.MOBILE_ACTIONSHEET_BACKGROUND };
+let obj1 = { flex: 1, backgroundColor: require("Themes").colors.MOBILE_ACTIONSHEET_BACKGROUND };
+createCacheKey[2] = { paddingTop: require("Themes").space.PX_40 };
+const obj2 = { paddingTop: require("Themes").space.PX_40 };
+createCacheKey[3] = { flexGrow: 1, backgroundColor: require("Themes").colors.MOBILE_ACTIONSHEET_BACKGROUND, paddingHorizontal: require("Themes").space.PX_16 };
+let obj3 = { flexGrow: 1, backgroundColor: require("Themes").colors.MOBILE_ACTIONSHEET_BACKGROUND, paddingHorizontal: require("Themes").space.PX_16 };
+createCacheKey[4] = { marginTop: require("Themes").space.PX_16, backgroundColor: "transparent", paddingHorizontal: 0 };
+createCacheKey[5] = { textTransform: "none" };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+const obj4 = { marginTop: require("Themes").space.PX_16, backgroundColor: "transparent", paddingHorizontal: 0 };
 const result = require("ME").fileFinishedImporting("modules/main_tabs_v2/native/friends/screens/UsernameSearchScreen.tsx");
 
 export default function UsernameSearchScreen(navigation) {
   navigation = navigation.navigation;
-  const tmp = _createForOfIteratorHelperLoose();
+  let ref;
+  const tmp = createCacheKey();
   const effect = React.useEffect(() => {
-    let obj = ref(outer1_2[6]);
-    obj = { friend_add_type: outer1_7.FRIENDS_ADD_BY_USERNAME_MODAL };
-    obj.track(outer1_6.FRIEND_ADD_VIEWED, obj);
+    let obj = ref(table[6]);
+    obj = { friend_add_type: constants2.FRIENDS_ADD_BY_USERNAME_MODAL };
+    obj.track(constants.FRIEND_ADD_VIEWED, obj);
   }, []);
-  const insets = ref(5193)().insets;
+  const insets = ref(5215)().insets;
   ref = React.useRef(null);
   const items = [navigation];
   const effect1 = React.useEffect(() => navigation.addListener("transitionEnd", (data) => {
     let closing = data.data.closing;
     if (!closing) {
-      closing = navigation(outer2_2[8]).getIsScreenReaderEnabled();
-      const obj = navigation(outer2_2[8]);
+      closing = outer1_0(outer1_2[8]).getIsScreenReaderEnabled();
+      const obj = outer1_0(outer1_2[8]);
     }
     if (!closing) {
-      const current = outer1_1.current;
-      if (null != current) {
+      const current = ref.current;
+      if (current != null) {
         current.focus();
       }
     }
   }), items);
-  let obj = navigation(8800);
+  let obj = navigation(8824);
   const clientThemesOverride = obj.useClientThemesOverride();
-  let obj1 = navigation(477);
+  let obj1 = navigation(500);
   let prop = null;
   if (obj1.isIOS()) {
     prop = null;
@@ -73,24 +74,23 @@ export default function UsernameSearchScreen(navigation) {
       }
     }
   }
-  obj = { style: tmp.background };
-  obj = { style: items1 };
+  obj = { style: tmp.background, children: null };
+  obj = { style: items1, children: null };
   items1 = [tmp.content, clientThemesOverride];
-  const items2 = [callback(ref(4697), { absolute: true }), ];
-  obj1 = { alwaysBounceVertical: false, keyboardShouldPersistTaps: "handled" };
-  const items3 = [tmp.container, prop, ];
-  const tmp7 = ref(5620);
-  items3[2] = { paddingBottom: insets.bottom + ref(689).space.PX_16 };
-  obj1.contentContainerStyle = items3;
-  const obj3 = { style: tmp.inputContainer, autoFocusInput: false };
-  const obj2 = { paddingBottom: insets.bottom + ref(689).space.PX_16 };
-  const intl = navigation(1212).intl;
-  obj3.headerText = intl.string(navigation(1212).t.YEOwDM);
-  obj3.headerTextStyle = tmp.headerText;
-  obj3.ref = ref;
-  obj1.children = callback(ref(12970), obj3);
+  let tmp3Result = tmp3(5638);
+  const items2 = [callback(ref(4719), { absolute: true }), ];
+  obj1 = { alwaysBounceVertical: false, keyboardShouldPersistTaps: "handled", contentContainerStyle: null, children: null };
+  const items3 = [tmp.container, prop, { paddingBottom: insets.bottom + ref(712).space.PX_16 }];
+  obj1[2] = items3;
+  const obj3 = { style: tmp.inputContainer, autoFocusInput: false, headerText: null, headerTextStyle: null, ref: null };
+  tmp3Result = tmp3(12993);
+  const intl = tmp7(1236).intl;
+  obj3[2] = intl.string(navigation(1236).t.YEOwDM);
+  obj3[3] = tmp.headerText;
+  obj3[4] = ref;
+  obj1[3] = callback(tmp3Result, obj3);
   items2[1] = callback(closure_4, obj1);
-  obj.children = items2;
-  obj.children = callback2(tmp7, obj);
+  obj[1] = items2;
+  obj[1] = callback2(tmp3Result, obj);
   return callback(closure_5, obj);
 };

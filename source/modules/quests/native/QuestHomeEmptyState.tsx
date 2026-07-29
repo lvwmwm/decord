@@ -1,33 +1,33 @@
-// Module ID: 14067
-// Function ID: 107441
+// Module ID: 14089
+// Function ID: 14090
 // Name: QuestHomeEmptyState
-// Dependencies: [31, 27, 653, 33, 4165, 689, 1212, 3869, 4019, 5155, 477, 4161, 14068, 4589, 2]
+// Dependencies: [19, 17, 676, 21, 4189, 712, 1236, 3893, 4043, 5177, 500, 4185, 14090, 4611, 2]
 // Exports: default
 
-// Module 14067 (QuestHomeEmptyState)
-import "result";
+// Module 14089 (QuestHomeEmptyState)
+import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { VerticalGradient } from "ME";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_3;
-let closure_4;
+let c3;
+let c4;
 let closure_6;
-let closure_7;
-let closure_8;
+let error;
+let metroImportAll;
 const require = arg1;
-({ View: closure_3, ImageBackground: closure_4 } = get_ActivityIndicator);
-({ jsx: closure_6, jsxs: closure_7, Fragment: closure_8 } = jsxProd);
-_createForOfIteratorHelperLoose = { container: { flex: 1 }, emptyStateContainer: { justifyContent: "center", alignItems: "center", flex: 1 } };
-_createForOfIteratorHelperLoose = { top: -55, paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_32 };
-_createForOfIteratorHelperLoose.emptyStateContentContainer = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.emptyStateContentTitle = { textAlign: "center" };
-_createForOfIteratorHelperLoose.emptyStateContentDescription = { textAlign: "center", marginTop: 4 };
-_createForOfIteratorHelperLoose.emptyImage = { flex: 1, width: "100%", aspectRatio: 1.6375545851528384, minWidth: "100%", position: "absolute", bottom: 0, zIndex: -1 };
-_createForOfIteratorHelperLoose.gradient = { height: 22, width: "100%", position: "absolute", bottom: 0 };
-_createForOfIteratorHelperLoose.actionWrapper = { marginTop: 16, alignSelf: "center" };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+({ View: c3, ImageBackground: c4 } = get_ActivityIndicator);
+({ jsx: closure_6, jsxs: error, Fragment: metroImportAll } = jsxProd);
+createCacheKey = { container: { flex: 1 }, emptyStateContainer: { justifyContent: "center", alignItems: "center", flex: 1 }, emptyStateContentContainer: null, emptyStateContentTitle: null, emptyStateContentDescription: null, emptyImage: null, gradient: null, actionWrapper: null };
+createCacheKey = { top: -55, paddingHorizontal: require("Themes").space.PX_32 };
+createCacheKey[2] = createCacheKey;
+createCacheKey[3] = { textAlign: "center" };
+createCacheKey[4] = { textAlign: "center", marginTop: 4 };
+createCacheKey[5] = { flex: 1, width: "100%", aspectRatio: 1.6375545851528384, minWidth: "100%", position: "absolute", bottom: 0, zIndex: -1 };
+createCacheKey[6] = { height: 22, width: "100%", position: "absolute", bottom: 0 };
+createCacheKey[7] = { marginTop: 16, alignSelf: "center" };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
 const result = require("ME").fileFinishedImporting("modules/quests/native/QuestHomeEmptyState.tsx");
 
 export default function QuestHomeEmptyState(subtitle) {
@@ -35,52 +35,54 @@ export default function QuestHomeEmptyState(subtitle) {
   let title;
   ({ action, title } = subtitle);
   if (title === undefined) {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    title = intl.string(require(1212) /* getSystemLocale */.t.SdlRnK);
+    const intl = require(1236) /* getSystemLocale */.intl;
+    title = intl.string(require(1236) /* getSystemLocale */.t.SdlRnK);
   }
   subtitle = subtitle.subtitle;
   if (subtitle === undefined) {
-    const intl2 = require(1212) /* getSystemLocale */.intl;
-    subtitle = intl2.string(require(1212) /* getSystemLocale */.t["R7mv+G"]);
+    const intl2 = require(1236) /* getSystemLocale */.intl;
+    subtitle = intl2.string(require(1236) /* getSystemLocale */.t["R7mv+G"]);
   }
-  const tmp5 = _createForOfIteratorHelperLoose();
-  let obj = require(3869) /* map */;
-  const token = obj.useToken(importDefault(689).colors.BACKGROUND_BASE_LOWER);
-  obj = {};
-  let obj2 = require(477) /* set */;
-  obj.bottom = obj2.isAndroid();
-  obj.style = tmp5.container;
-  obj = { style: tmp5.container };
-  const obj1 = { style: tmp5.emptyStateContainer };
-  obj2 = { style: tmp5.emptyStateContentContainer };
-  const obj3 = { variant: "heading-xl/bold", color: "mobile-text-heading-primary", style: tmp5.emptyStateContentTitle, children: title };
-  const items = [callback(require(4161) /* Text */.Text, obj3), , ];
-  const obj4 = { variant: "text-md/normal", color: "text-default", style: tmp5.emptyStateContentDescription, children: subtitle };
-  items[1] = callback(require(4161) /* Text */.Text, obj4);
-  let tmp10 = null != action;
-  if (tmp10) {
-    const obj5 = { style: tmp5.actionWrapper, children: action };
-    tmp10 = callback(closure_3, obj5);
+  const tmp5 = createCacheKey();
+  let obj = require(3893) /* map */;
+  const token = obj.useToken(importDefault(712).colors.BACKGROUND_BASE_LOWER);
+  obj = { bottom: null, style: null, children: null };
+  let obj2 = require(500) /* set */;
+  obj[0] = obj2.isAndroid();
+  obj[1] = tmp5.container;
+  obj = { style: tmp5.container, children: null };
+  const obj1 = { style: tmp5.emptyStateContainer, children: null };
+  obj2 = { style: tmp5.emptyStateContentContainer, children: null };
+  const items = [callback(require(4185) /* Text */.Text, { variant: "heading-xl/bold", color: "mobile-text-heading-primary", style: tmp5.emptyStateContentTitle, children: title }), callback(require(4185) /* Text */.Text, { variant: "text-md/normal", color: "text-default", style: tmp5.emptyStateContentDescription, children: subtitle }), ];
+  let tmp9Result = null != action;
+  if (tmp9Result) {
+    const obj5 = { style: null, children: null };
+    obj5[0] = tmp5.actionWrapper;
+    obj5[1] = action;
+    tmp9Result = tmp9(tmp10, obj5);
   }
-  items[2] = tmp10;
-  obj2.children = items;
-  const items1 = [callback2(closure_3, obj2), ];
-  let tmp13 = null;
-  if (!importDefault(4019)().isChatLockedOpen) {
-    const obj6 = {};
-    const obj7 = { style: tmp5.emptyImage, source: importDefault(14068), resizeMode: "cover" };
-    const items2 = [callback(closure_4, obj7), ];
-    const obj8 = { style: tmp5.gradient };
-    ({ END: obj12.end, START: obj12.start } = VerticalGradient);
+  items[2] = tmp9Result;
+  obj2[1] = items;
+  const items1 = [closure_7(closure_3, obj2), ];
+  let tmp11Result = null;
+  if (!importDefault(4043)().isChatLockedOpen) {
+    const obj6 = { children: null };
+    const obj7 = { style: null, source: null, resizeMode: "cover" };
+    obj7[0] = tmp5.emptyImage;
+    obj7[1] = tmp7(14090);
+    const items2 = [tmp9(closure_4, obj7), ];
+    const obj8 = { style: null, end: null, start: null, colors: null };
+    obj8[0] = tmp5.gradient;
+    ({ END: obj12[1], START: obj12[2] } = VerticalGradient);
     const items3 = ["rgba(0, 0, 0, 0)", token];
-    obj8.colors = items3;
-    items2[1] = callback(importDefault(4589), obj8);
-    obj6.children = items2;
-    tmp13 = callback2(closure_8, obj6);
+    obj8[3] = items3;
+    items2[1] = tmp9(tmp7(4611), obj8);
+    obj6[0] = items2;
+    tmp11Result = tmp11(closure_8, obj6);
   }
-  items1[1] = tmp13;
-  obj1.children = items1;
-  obj.children = callback2(closure_3, obj1);
-  obj.children = callback(closure_3, obj);
-  return callback(require(5155) /* SafeAreaPaddingView */.SafeAreaPaddingView, obj);
+  items1[1] = tmp11Result;
+  obj1[1] = items1;
+  obj[1] = closure_7(closure_3, obj1);
+  obj[2] = callback(closure_3, obj);
+  return callback(require(5177) /* SafeAreaPaddingView */.SafeAreaPaddingView, obj);
 };

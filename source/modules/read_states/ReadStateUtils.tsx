@@ -1,28 +1,28 @@
-// Module ID: 6157
-// Function ID: 55075
+// Module ID: 6175
+// Function ID: 6176
 // Name: getHasImportantUnread
-// Dependencies: [4177, 4360, 4361, 566, 2]
+// Dependencies: [4201, 4385, 4386, 589, 2]
 // Exports: getHasImportantUnread, useHasImportantUnread
 
-// Module 6157 (getHasImportantUnread)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_3 from "_isNativeReflectConstruct";
+// Module 6175 (getHasImportantUnread)
+import generateOldThreadCutoff from "generateOldThreadCutoff";
+import updateUserGuildSettingsInternal from "updateUserGuildSettingsInternal";
 import { UnreadSetting } from "ReadStateTypes";
 
 const require = arg1;
 const result = require("ReadStateTypes").fileFinishedImporting("modules/read_states/ReadStateUtils.tsx");
 
 export const getHasImportantUnread = function getHasImportantUnread(channel) {
-  let hasUnreadResult = _isNativeReflectConstruct.hasUnread(channel.id);
+  let hasUnreadResult = generateOldThreadCutoff.hasUnread(channel.id);
   if (hasUnreadResult) {
-    hasUnreadResult = closure_3.resolveUnreadSetting(channel) === UnreadSetting.ALL_MESSAGES;
+    hasUnreadResult = updateUserGuildSettingsInternal.resolveUnreadSetting(channel) === UnreadSetting.ALL_MESSAGES;
   }
   return hasUnreadResult;
 };
 export const useHasImportantUnread = function useHasImportantUnread(arg0) {
   const _require = arg0;
-  const items = [_isNativeReflectConstruct, closure_3];
-  return _require(566).useStateFromStores(items, () => {
+  const items = [generateOldThreadCutoff, updateUserGuildSettingsInternal];
+  return _require(589).useStateFromStores(items, () => {
     let hasUnreadResult = outer1_2.hasUnread(id.id);
     if (hasUnreadResult) {
       hasUnreadResult = outer1_3.resolveUnreadSetting(id) === outer1_4.ALL_MESSAGES;

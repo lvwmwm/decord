@@ -1,111 +1,115 @@
-// Module ID: 12464
-// Function ID: 96548
+// Module ID: 12486
+// Function ID: 12487
 // Name: useGiftCardMobileConsumptionHalfsheet
-// Dependencies: [57, 31, 12465, 3814, 1345, 482, 12466, 566, 1334, 8417, 4486, 686, 12467, 1935, 4133, 2]
+// Dependencies: [32, 19, 12487, 3838, 1369, 505, 12488, 589, 1358, 8441, 4509, 709, 12489, 1959, 4157, 2]
 // Exports: useGiftCardMobileConsumptionHalfsheet
 
-// Module 12464 (useGiftCardMobileConsumptionHalfsheet)
+// Module 12486 (useGiftCardMobileConsumptionHalfsheet)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_6 from "_isNativeReflectConstruct";
+import noop from "noop";
+import set from "set";
+import handlePaymentSourceUpdate from "handlePaymentSourceUpdate";
 import { ContentDismissActionType } from "ContentDismissActionType";
 import { PaymentSourceTypes } from "sum";
 
 const require = arg1;
+const GiftCardMobileConsumptionActionSheet = "GiftCardMobileConsumptionActionSheet";
 let obj = { Idle: "idle", Opening: "opening", Opened: "opened" };
 const Idle = obj.Idle;
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/checkout/native/useGiftCardMobileConsumptionHalfsheet.tsx");
+const result = require("set").fileFinishedImporting("modules/checkout/native/useGiftCardMobileConsumptionHalfsheet.tsx");
 
 export const useGiftCardMobileConsumptionHalfsheet = function useGiftCardMobileConsumptionHalfsheet() {
-  enabled = enabled(12466).useGiftCardsExperimentConfig({ location: "useGiftCardMobileConsumptionHalfsheet" }).enabled;
-  let obj = enabled(12466);
+  enabled = enabled(12488).useGiftCardsExperimentConfig({ location: "useGiftCardMobileConsumptionHalfsheet" }).enabled;
+  let obj = enabled(12488);
+  let tmp = enabled;
   let items = [callback];
   let items1 = [enabled];
-  const stateFromStores = enabled(566).useStateFromStores(items, () => {
+  const stateFromStores = enabled(589).useStateFromStores(items, () => {
     if (enabled) {
       const _Object = Object;
       const values = Object.values(callback.paymentSources);
-      let num = 0;
-      if (0 < values.length) {
-        while (values[num].type !== outer1_8.TDS_WALLET) {
-          num = num + 1;
+      for (const item10013 of values) {
+        let tmp7 = item10013;
+        let tmp8 = outer1_8;
+        if (item10013.type === outer1_8.TDS_WALLET) {
+          let tmp9 = obj;
+          obj.return();
+          return item10013.id;
         }
-        return values[num].id;
       }
       return null;
     } else {
       return null;
     }
   }, items1);
-  let obj2 = enabled(566);
-  const items2 = [_isNativeReflectConstruct];
+  let obj2 = enabled(589);
+  const items2 = [set];
   const items3 = [stateFromStores];
-  const stateFromStores1 = enabled(566).useStateFromStores(items2, () => {
+  const stateFromStores1 = enabled(589).useStateFromStores(items2, () => {
     let balance = null;
     if (null != stateFromStores) {
-      balance = ref.getBalance(stateFromStores);
+      balance = ref.getBalance(tmp);
     }
     return balance;
   }, items3);
-  const obj3 = enabled(566);
-  const items4 = [_isNativeReflectConstruct];
+  const obj3 = enabled(589);
+  const items4 = [set];
   const items5 = [stateFromStores];
-  let tmp4 = enabled;
-  const stateFromStores2 = enabled(566).useStateFromStores(items4, () => {
+  let tmp6 = enabled;
+  const stateFromStores2 = enabled(589).useStateFromStores(items4, () => {
     let isFetching = null != stateFromStores;
     if (isFetching) {
-      isFetching = ref.getIsFetching(stateFromStores);
+      isFetching = ref.getIsFetching(tmp);
     }
     return isFetching;
   }, items5);
   if (enabled) {
-    tmp4 = null != stateFromStores;
+    tmp6 = null != stateFromStores;
   }
-  if (tmp4) {
-    tmp4 = !stateFromStores2;
+  if (tmp6) {
+    tmp6 = !stateFromStores2;
   }
-  if (tmp4) {
-    tmp4 = null != stateFromStores1;
+  if (tmp6) {
+    tmp6 = null != stateFromStores1;
   }
-  if (tmp4) {
-    tmp4 = stateFromStores1.amount > 0;
+  if (tmp6) {
+    tmp6 = stateFromStores1.amount > 0;
   }
-  const dependencyMap = tmp4;
-  const items6 = [tmp4];
+  const dependencyMap = tmp6;
+  const items6 = [tmp6];
   const memo = React.useMemo(() => {
-    if (tmp4) {
-      const items = [enabled(tmp4[8]).DismissibleContent.GIFT_CARD_MOBILE_CONSUMPTION_UNAVAILABLE_HALFSHEET];
+    if (tmp6) {
+      const items = [enabled(tmp6[8]).DismissibleContent.GIFT_CARD_MOBILE_CONSUMPTION_UNAVAILABLE_HALFSHEET];
       let items1 = items;
     } else {
       items1 = [];
     }
     return items1;
   }, items6);
-  const obj4 = enabled(566);
-  const tmp8 = first(enabled(8417).useSelectedDismissibleContent(memo, undefined, true), 2);
-  first = tmp8[0];
-  React = tmp10;
-  _isNativeReflectConstruct = React.useRef(tmp10);
-  const items7 = [tmp8[1]];
+  const obj4 = enabled(589);
+  const tmp10 = first(tmp(8441).useSelectedDismissibleContent(memo, undefined, true), 2);
+  first = tmp10[0];
+  React = tmp12;
+  set = React.useRef(tmp12);
+  const items7 = [tmp10[1]];
   const effect = React.useEffect(() => {
-    _isNativeReflectConstruct.current = result;
+    set.current = noop;
   }, items7);
-  callback = React.useCallback((arg0) => {
-    ref.current(arg0);
+  callback = React.useCallback((AUTO_DISMISS) => {
+    ref.current(AUTO_DISMISS);
   }, []);
   const items8 = [enabled];
   const effect1 = React.useEffect(() => {
     if (enabled) {
-      const paymentSources = enabled(tmp4[10]).fetchPaymentSources();
-      const obj = enabled(tmp4[10]);
+      const paymentSources = enabled(tmp6[10]).fetchPaymentSources();
+      const obj = enabled(tmp6[10]);
     }
   }, items8);
   const items9 = [stateFromStores];
   const effect2 = React.useEffect(() => {
     if (null != stateFromStores) {
-      const walletInformation = enabled(tmp4[10]).fetchWalletInformation(stateFromStores);
-      const obj = enabled(tmp4[10]);
+      const walletInformation = enabled(tmp6[10]).fetchWalletInformation(tmp);
+      const obj = enabled(tmp6[10]);
     }
   }, items9);
   const items10 = [first, callback];
@@ -113,36 +117,37 @@ export const useGiftCardMobileConsumptionHalfsheet = function useGiftCardMobileC
     function handleShow(key) {
       let tmp = c0;
       if (!c0) {
-        tmp = key.key !== "GiftCardMobileConsumptionActionSheet";
+        tmp = key.key !== outer1_9;
       }
       if (!tmp) {
-        const outer2_10 = outer2_9.Opened;
+        const outer1_11 = outer1_10.Opened;
       }
     }
-    if (first === enabled(tmp4[8]).DismissibleContent.GIFT_CARD_MOBILE_CONSUMPTION_UNAVAILABLE_HALFSHEET) {
-      if (outer1_10 === outer1_9.Idle) {
-        outer1_10 = outer1_9.Opening;
+    if (first === enabled(tmp6[8]).DismissibleContent.GIFT_CARD_MOBILE_CONSUMPTION_UNAVAILABLE_HALFSHEET) {
+      if (outer1_11 === outer1_10.Idle) {
+        outer1_11 = outer1_10.Opening;
         let c0 = false;
-        let obj = stateFromStores(tmp4[11]);
+        let obj = stateFromStores(tmp2[11]);
         const subscription = obj.subscribe("SHOW_ACTION_SHEET", handleShow);
-        const promise = enabled(stateFromStores[13])(stateFromStores[12], stateFromStores.paths);
+        const promise = enabled(tmp2[13])(tmp2[12], tmp2.paths);
         promise.catch(() => {
           let tmp = c0;
           if (!c0) {
-            tmp = outer2_10 !== outer2_9.Opening;
+            tmp = outer1_11 !== outer1_10.Opening;
           }
           if (!tmp) {
-            outer2_10 = outer2_9.Idle;
+            outer1_11 = outer1_10.Idle;
           }
         });
-        const obj2 = stateFromStores(stateFromStores[14]);
-        obj = { markAsDismissed: callback };
-        obj2.openLazy(promise, "GiftCardMobileConsumptionActionSheet", obj, "stack");
+        const obj2 = stateFromStores(tmp2[14]);
+        obj = { markAsDismissed: null };
+        obj[0] = callback;
+        obj2.openLazy(promise, outer1_9, obj, "stack");
         return () => {
           let c0 = true;
-          stateFromStores(table[11]).unsubscribe("SHOW_ACTION_SHEET", handleShow);
-          if (outer2_10 === outer2_9.Opening) {
-            outer2_10 = outer2_9.Idle;
+          handleShow(outer1_2[11]).unsubscribe("SHOW_ACTION_SHEET", handleShow);
+          if (outer1_11 === outer1_10.Opening) {
+            outer1_11 = outer1_10.Idle;
           }
         };
       }
@@ -151,15 +156,16 @@ export const useGiftCardMobileConsumptionHalfsheet = function useGiftCardMobileC
   const items11 = [first];
   const effect4 = React.useEffect(() => {
     function handleHide(key) {
-      if (key.key === "GiftCardMobileConsumptionActionSheet") {
-        outer1_5.current(outer2_7.USER_DISMISS);
+      if (key.key === outer1_9) {
+        ref.current(outer1_7.USER_DISMISS);
       }
     }
-    if (first === enabled(tmp4[8]).DismissibleContent.GIFT_CARD_MOBILE_CONSUMPTION_UNAVAILABLE_HALFSHEET) {
-      const subscription = stateFromStores(tmp4[11]).subscribe("HIDE_ACTION_SHEET", handleHide);
+    if (first === enabled(tmp6[8]).DismissibleContent.GIFT_CARD_MOBILE_CONSUMPTION_UNAVAILABLE_HALFSHEET) {
+      const subscription = stateFromStores(tmp[11]).subscribe("HIDE_ACTION_SHEET", handleHide);
       return () => {
         stateFromStores(table[11]).unsubscribe("HIDE_ACTION_SHEET", handleHide);
       };
     }
+    tmp = tmp6;
   }, items11);
 };

@@ -1,10 +1,10 @@
-// Module ID: 14517
-// Function ID: 110765
+// Module ID: 14542
+// Function ID: 14543
 // Name: pressable
-// Dependencies: [13436, 33, 13021, 566, 3747, 13852, 4115, 13618, 10099, 2]
+// Dependencies: [13459, 21, 13044, 589, 3771, 13873, 4139, 13639, 10120, 2]
 
-// Module 14517 (pressable)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 14542 (pressable)
+import checkForNewerBuild from "checkForNewerBuild";
 import { jsx } from "jsxProd";
 import createToggle from "createToggle";
 
@@ -15,27 +15,27 @@ createToggle = {
   },
   parent: null,
   IconComponent: function InstallNativeUpdateIcon() {
-    const items = [_isNativeReflectConstruct];
-    if (obj.useStateFromStores(items, () => null !== outer1_4.latestFetchedBuild().newBuild)) {
-      let RefreshIcon = tmp2(4115).DownloadIcon;
+    const items = [checkForNewerBuild];
+    if (obj.useStateFromStores(items, () => null !== checkForNewerBuild.latestFetchedBuild().newBuild)) {
+      let RefreshIcon = tmp(4139).DownloadIcon;
     } else {
-      RefreshIcon = tmp2(13618).RefreshIcon;
+      RefreshIcon = tmp(13639).RefreshIcon;
     }
     return <RefreshIcon />;
   },
   useDescription: function useInternalBuildUpdateDescription() {
-    const items = [_isNativeReflectConstruct];
-    const stateFromStores = require(566) /* initialize */.useStateFromStores(items, () => {
-      const newBuild = outer1_4.latestFetchedBuild().newBuild;
+    const items = [checkForNewerBuild];
+    const stateFromStores = require(589) /* initialize */.useStateFromStores(items, () => {
+      const newBuild = checkForNewerBuild.latestFetchedBuild().newBuild;
       let build;
-      if (null != newBuild) {
+      if (newBuild != null) {
         build = newBuild.build;
       }
       return build;
     });
-    const obj = require(566) /* initialize */;
-    const items1 = [_isNativeReflectConstruct];
-    const stateFromStores1 = require(566) /* initialize */.useStateFromStores(items1, () => outer1_4.latestFetchedBuild().lastCheck);
+    const obj = require(589) /* initialize */;
+    const items1 = [checkForNewerBuild];
+    const stateFromStores1 = require(589) /* initialize */.useStateFromStores(items1, () => checkForNewerBuild.latestFetchedBuild().lastCheck);
     if (null != stateFromStores) {
       const _HermesInternal2 = HermesInternal;
       let str = "Open build " + stateFromStores + " installer in a browser";
@@ -43,23 +43,23 @@ createToggle = {
       str = "Never refreshed";
       if (null != stateFromStores1) {
         const _HermesInternal = HermesInternal;
-        str = "Last refreshed " + importDefault(3747)(stateFromStores1).fromNow();
-        const obj3 = importDefault(3747)(stateFromStores1);
+        str = "Last refreshed " + importDefault(3771)(stateFromStores1).fromNow();
+        const obj3 = importDefault(3771)(stateFromStores1);
       }
     }
     return str;
   },
   usePredicate: function useHasInternalBuildUpdateSetting() {
-    const obj = require(13852) /* useStaffOrDeveloperSettingPredicate */;
-    return _isNativeReflectConstruct.hasUpdatesConfigured && require(13852) /* useStaffOrDeveloperSettingPredicate */.useStaffOrDeveloperSettingPredicate();
+    const obj = require(13873) /* useStaffOrDeveloperSettingPredicate */;
+    return checkForNewerBuild.hasUpdatesConfigured && require(13873) /* useStaffOrDeveloperSettingPredicate */.useStaffOrDeveloperSettingPredicate();
   },
   onPress: function handleInstallNativeUpdateSettingPress() {
-    const newBuild = _isNativeReflectConstruct.latestFetchedBuild().newBuild;
+    const newBuild = checkForNewerBuild.latestFetchedBuild().newBuild;
     if (null !== newBuild) {
-      importAll(13021).openBuildInstaller(newBuild);
-      const obj = importAll(13021);
+      importAll(13044).openBuildInstaller(newBuild);
+      const obj2 = importAll(13044);
     } else {
-      _isNativeReflectConstruct.checkForNewerBuild();
+      checkForNewerBuild.checkForNewerBuild();
     }
   },
   withArrow: true

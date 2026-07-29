@@ -1,49 +1,54 @@
-// Module ID: 14088
-// Function ID: 107665
+// Module ID: 14110
+// Function ID: 14111
 // Name: QuestHomeOrbShopRewardCard
-// Dependencies: [31, 27, 1850, 33, 4165, 8636, 689, 566, 3811, 5791, 8702, 8688, 8691, 2]
+// Dependencies: [19, 17, 1874, 21, 4189, 8660, 712, 589, 3835, 5809, 8726, 8712, 8715, 2]
 // Exports: default
 
-// Module 14088 (QuestHomeOrbShopRewardCard)
-import result from "result";
+// Module 14110 (QuestHomeOrbShopRewardCard)
+import noop from "noop";
 import { View } from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import mergeGuildAvatar from "mergeGuildAvatar";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
 let closure_6;
-let closure_7;
+let error;
 let require = arg1;
-({ jsx: closure_6, jsxs: closure_7 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { width: require("CollectiblesShopCardInternalV2").COLLECTIBLES_SHOP_CARD_WIDTH, height: require("CollectiblesShopCardInternalV2").COLLECTIBLES_SHOP_CARD_HEIGHT, overflow: "hidden", backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW, borderWidth: 1, borderColor: require("_createForOfIteratorHelperLoose").colors.BORDER_SUBTLE, borderRadius: require("_createForOfIteratorHelperLoose").radii.sm };
-_createForOfIteratorHelperLoose.card = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/quests/native/QuestHomeOrbShopRewardCard.tsx");
+({ jsx: closure_6, jsxs: error } = jsxProd);
+createCacheKey = { card: null };
+createCacheKey = { width: require("CollectiblesShopCardInternalV2").COLLECTIBLES_SHOP_CARD_WIDTH, height: require("CollectiblesShopCardInternalV2").COLLECTIBLES_SHOP_CARD_HEIGHT, overflow: "hidden", backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW, borderWidth: 1, borderColor: require("Themes").colors.BORDER_SUBTLE, borderRadius: require("Themes").radii.sm };
+createCacheKey[0] = createCacheKey;
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+const result = require("mergeGuildAvatar").fileFinishedImporting("modules/quests/native/QuestHomeOrbShopRewardCard.tsx");
 
 export default function QuestHomeOrbShopRewardCard(product) {
   product = product.product;
   const require = product;
-  let obj = require(566) /* initialize */;
-  const items = [_isNativeReflectConstruct];
-  const stateFromStores = obj.useStateFromStores(items, () => stateFromStores(outer1_2[8]).canUseShopDiscounts(outer1_5.getCurrentUser()));
+  let stateFromStores;
+  let obj = require(589) /* initialize */;
+  const items = [mergeGuildAvatar];
+  stateFromStores = obj.useStateFromStores(items, () => stateFromStores(table[8]).canUseShopDiscounts(currentUser.getCurrentUser()));
   const items1 = [product, stateFromStores];
   const memo = React.useMemo(() => {
     let obj = product(outer1_2[9]);
     obj = { product: closure_0, hasShopDiscount: stateFromStores };
     return obj.getProductOrbPrice(obj);
   }, items1);
-  require(8702) /* getProductName */;
-  let tmp6 = null;
+  require(8726) /* getProductName */;
+  let tmp7 = null;
   if (null != memo) {
-    obj = { style: tmp.card, accessible: true, accessibilityRole: "text", accessibilityLabel: tmp5 };
-    obj = { product, isPurchased: false, solidBackground: true };
-    const items2 = [callback(stateFromStores(8688), obj), ];
-    const obj1 = { product, collectibleProductState: null, hidePrice: true };
-    items2[1] = callback(stateFromStores(8691), obj1);
-    obj.children = items2;
-    tmp6 = callback2(View, obj);
+    obj = { style: null, accessible: true, accessibilityRole: "text", accessibilityLabel: null, children: null };
+    obj[0] = tmp.card;
+    obj[3] = tmp6;
+    obj = { product: null, isPurchased: false, solidBackground: true };
+    obj[0] = product;
+    const items2 = [callback(stateFromStores(8712), obj), ];
+    const obj1 = { product: null, collectibleProductState: null, hidePrice: true };
+    obj1[0] = product;
+    items2[1] = callback(stateFromStores(8715), obj1);
+    obj[4] = items2;
+    tmp7 = callback2(View, obj);
   }
-  return tmp6;
+  return tmp7;
 };
 export const QUEST_HOME_ORB_SHOP_REWARD_CARD_HEIGHT = require("CollectiblesShopCardInternalV2").COLLECTIBLES_SHOP_CARD_HEIGHT;

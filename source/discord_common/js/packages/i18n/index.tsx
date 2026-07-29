@@ -1,14 +1,14 @@
-// Module ID: 16014
-// Function ID: 123638
+// Module ID: 16049
+// Function ID: 16050
 // Name: getMessage
-// Dependencies: [16015, 2, 16057]
+// Dependencies: [16050, 2, 16093]
 
-// Module 16014 (getMessage)
-const result = require("setUpdateRules").fileFinishedImporting("../discord_common/js/packages/i18n/index.tsx");
+// Module 16049 (getMessage)
+const result = require("format").fileFinishedImporting("../discord_common/js/packages/i18n/index.tsx");
 
-export { I18N as default } from "_callSuper";
-export const getMessage = require("setUpdateRules").getMessage;
-export const setUpdateRules = require("setUpdateRules").setUpdateRules;
-export const FormattedMessage = require("setUpdateRules").FormattedMessage;
-export const I18N = require("_callSuper").I18N;
-export const getSystemLocale = require("_callSuper").getSystemLocale;
+export { I18N as default } from "getMessages";
+export const getMessage = require("format").getMessage;
+export const setUpdateRules = require("format").setUpdateRules;
+export const FormattedMessage = require("format").FormattedMessage;
+export const I18N = require("getMessages").I18N;
+export const getSystemLocale = require("getMessages").getSystemLocale;

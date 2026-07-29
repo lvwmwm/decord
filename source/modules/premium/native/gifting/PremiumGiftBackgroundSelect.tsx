@@ -1,19 +1,19 @@
-// Module ID: 8753
-// Function ID: 69229
+// Module ID: 8777
+// Function ID: 8778
 // Name: GiftBackgroundSelect
-// Dependencies: [57, 31, 27, 33, 4026, 4165, 689, 1450, 4166, 1273, 8754, 8780, 2]
+// Dependencies: [32, 19, 17, 21, 4050, 4189, 712, 1474, 4190, 1297, 8778, 8804, 2]
 // Exports: default
 
-// Module 8753 (GiftBackgroundSelect)
+// Module 8777 (GiftBackgroundSelect)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
+import noop from "noop";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import importDefaultResult from "module_4026";
+import createCacheKey from "createCacheKey";
+import importDefaultResult from "module_4050";
 
-let closure_5;
+let c5;
 let closure_6;
-let closure_7;
+let error;
 const require = arg1;
 class GiftBackgroundSelect {
   constructor(arg0) {
@@ -21,94 +21,94 @@ class GiftBackgroundSelect {
     if (flag === undefined) {
       flag = true;
     }
-    c0 = undefined;
+    useState = undefined;
     c1 = undefined;
     c2 = undefined;
-    tmp = c9();
-    tmp2 = _slicedToArray(result.useState(), 2);
+    tmp = createAnimatedComponent();
+    tmp2 = _slicedToArray(noop.useState(), 2);
     first = tmp2[0];
-    c0 = first;
+    useState = first;
     c1 = tmp2[1];
-    obj = require("module_4026");
+    obj = require("module_4050");
     sharedValue = obj.useSharedValue(false);
     c2 = sharedValue;
     items = [, ];
     items[0] = first;
     items[1] = sharedValue;
-    effect = result.useEffect(() => {
+    effect = noop.useEffect(() => {
       const result = sharedValue.set(null != first);
     }, items);
-    obj2 = require("module_4026");
+    obj2 = require("module_4050");
     class N {
       constructor() {
-        obj = {};
-        obj2 = require("withTiming");
+        tmp = useState;
+        tmp2 = c2;
+        obj = require("CONFIG_NEVER_ANIMATE_TIMING");
         num = 0;
         if (c2.get()) {
           num = 1;
         }
-        obj = { easing: require("Button").STANDARD_EASING, duration: 100 };
-        obj.opacity = obj2.withTiming(num, obj);
+        obj = { opacity: null };
+        obj1 = { easing: require("Button").STANDARD_EASING, duration: 100 };
+        obj[0] = obj.withTiming(num, obj1);
         return obj;
       }
     }
-    obj = { STANDARD_EASING: require("Button").STANDARD_EASING, withTiming: require("withTiming").withTiming, visibility: sharedValue };
+    obj = { STANDARD_EASING: require("Button").STANDARD_EASING, withTiming: require("CONFIG_NEVER_ANIMATE_TIMING").withTiming, visibility: sharedValue };
     N.__closure = obj;
     N.__workletHash = 5743780040676;
-    N.__initData = c10;
-    obj1 = {};
+    N.__initData = createAnimatedComponent;
     animatedStyle = obj2.useAnimatedStyle(N);
     tmp7 = jsxs;
     tmp8 = Fragment;
-    obj2 = { giftStyle: global.giftStyle };
-    obj2.withConsistentHeight = flag;
+    tmp9 = jsx;
     items1 = [, ];
-    items1[0] = jsx(require("PremiumGiftBackgroundAnimation"), obj2);
-    obj3 = {
+    items1[0] = jsx(require("PremiumGiftBackgroundAnimation"), { giftStyle: global.giftStyle, withConsistentHeight: flag });
+    obj1 = {
       onContentSizeChange(arg0) {
             if (null == first) {
               callback(arg0);
             }
-          }
+          },
+      contentContainerStyle: null,
+      style: null,
+      horizontal: true,
+      showsHorizontalScrollIndicator: false
     };
     items2 = [, ];
     items2[0] = tmp.contentContainer;
-    tmp11 = null != first;
-    tmp9 = jsx;
+    obj2 = null != first;
     tmp10 = createAnimatedComponent;
-    if (tmp11) {
-      tmp11 = first < require("useWindowDimensions")().width;
+    if (obj2) {
+      obj2 = first < require("useWindowDimensions")().width;
     }
-    if (tmp11) {
-      obj4 = {};
-      obj4.flex = 1;
-      tmp11 = obj4;
+    if (obj2) {
+      obj2 = { flex: 1 };
     }
-    items2[1] = tmp11;
-    obj3.contentContainerStyle = items2;
+    obj3 = { children: null };
+    items2[1] = obj2;
+    obj1[1] = items2;
     items3 = [, ];
     items3[0] = tmp.scrollView;
     items3[1] = animatedStyle;
-    obj3.style = items3;
-    obj3.horizontal = true;
-    obj3.showsHorizontalScrollIndicator = false;
-    items1[1] = tmp9(tmp10, obj3);
-    obj1.children = items1;
-    return tmp7(tmp8, obj1);
+    obj1[2] = items3;
+    items1[1] = tmp9(tmp10, obj1);
+    obj3[0] = items1;
+    return tmp7(tmp8, obj3);
   }
 }
-({ jsx: closure_5, Fragment: closure_6, jsxs: closure_7 } = jsxProd);
-let closure_8 = require("module_4026").createAnimatedComponent(require("get ActivityIndicator").ScrollView);
-let obj = {};
-obj = { flex: 1, marginTop: require("_createForOfIteratorHelperLoose").space.PX_24 };
-obj.scrollView = obj;
-obj.contentContainer = { justifyContent: "center" };
-let closure_9 = _createForOfIteratorHelperLoose.createStyles(obj);
+({ jsx: c5, Fragment: closure_6, jsxs: error } = jsxProd);
+let closure_8 = require("module_4050").createAnimatedComponent(require("get ActivityIndicator").ScrollView);
+let obj = { scrollView: null, contentContainer: null };
+obj = { flex: 1, marginTop: require("Themes").space.PX_24 };
+obj[0] = obj;
+obj[1] = { justifyContent: "center" };
+let closure_9 = createCacheKey.createStyles(obj);
 let closure_10 = { code: "function PremiumGiftBackgroundSelectTsx1(){const{STANDARD_EASING,withTiming,visibility}=this.__closure;const animationSettings={easing:STANDARD_EASING,duration:100};return{opacity:withTiming(visibility.get()?1:0,animationSettings)};}" };
 let result = require("get ActivityIndicator").fileFinishedImporting("modules/premium/native/gifting/PremiumGiftBackgroundSelect.tsx");
 
 export default function PremiumGiftBackgroundSelect() {
-  let obj = require(8780) /* importDefaultResult1 */;
+  let obj = require(8804) /* NativeGiftContextProvider */;
   const nativeGiftContext = obj.useNativeGiftContext();
   obj = { giftStyle: nativeGiftContext.giftStyle, setGiftStyle: nativeGiftContext.setGiftStyle };
   return callback2(GiftBackgroundSelect, obj);

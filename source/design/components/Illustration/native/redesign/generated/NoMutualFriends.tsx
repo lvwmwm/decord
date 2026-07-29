@@ -1,40 +1,63 @@
-// Module ID: 11681
-// Function ID: 90512
+// Module ID: 11705
+// Function ID: 11706
 // Name: getNoMutualFriendsSource
-// Dependencies: [31, 27, 33, 6517, 11682, 11683, 11684, 4011, 2]
-// Exports: NoMutualFriends
+// Dependencies: [19, 17, 21, 6538, 11706, 11707, 11708, 4035, 2]
+// Exports: NoMutualFriends, getNoMutualFriendsSource, useNoMutualFriendsSource
 
-// Module 11681 (getNoMutualFriendsSource)
-import "result";
+// Module 11705 (getNoMutualFriendsSource)
+import "noop";
 import { Image } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
 
 const require = arg1;
-function getNoMutualFriendsSource(theme) {
-  let obj = require(6517) /* getIllustrationSource */;
+const result = require("jsxProd").fileFinishedImporting("design/components/Illustration/native/redesign/generated/NoMutualFriends.tsx");
+
+export const getNoMutualFriendsSource = function getNoMutualFriendsSource(theme) {
+  let obj = require(6538) /* getIllustrationSource */;
   obj = {
     dark() {
-      return outer1_0(outer1_1[4]);
+      return callback(11706);
     },
     darker() {
-      return outer1_0(outer1_1[5]);
+      return callback(11707);
     },
     light() {
-      return outer1_0(outer1_1[6]);
+      return callback(11708);
     }
   };
   return obj.getIllustrationSource(theme, obj);
-}
-function useNoMutualFriendsSource() {
-  return getNoMutualFriendsSource(require(4011) /* AccessibilityAnnouncer */.useThemeContext().theme);
-}
-const result = require("jsxProd").fileFinishedImporting("design/components/Illustration/native/redesign/generated/NoMutualFriends.tsx");
-
-export { getNoMutualFriendsSource };
-export { useNoMutualFriendsSource };
+};
+export const useNoMutualFriendsSource = function useNoMutualFriendsSource() {
+  let obj = require(4035) /* AccessibilityAnnouncer */;
+  obj = {
+    dark() {
+      return callback(11706);
+    },
+    darker() {
+      return callback(11707);
+    },
+    light() {
+      return callback(11708);
+    }
+  };
+  return require(6538) /* getIllustrationSource */.getIllustrationSource(obj.useThemeContext().theme, obj);
+};
 export const NoMutualFriends = function NoMutualFriends(arg0) {
-  const obj = {};
+  let obj = require(4035) /* AccessibilityAnnouncer */;
+  obj = {
+    dark() {
+      return callback(11706);
+    },
+    darker() {
+      return callback(11707);
+    },
+    light() {
+      return callback(11708);
+    }
+  };
+  obj = {};
+  const illustrationSource = require(6538) /* getIllustrationSource */.getIllustrationSource(obj.useThemeContext().theme, obj);
   const merged = Object.assign(arg0);
-  obj["source"] = useNoMutualFriendsSource();
+  obj.source = illustrationSource;
   return <Image />;
 };

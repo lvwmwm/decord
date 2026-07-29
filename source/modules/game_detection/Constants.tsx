@@ -1,22 +1,22 @@
-// Module ID: 11921
-// Function ID: 92138
-// Name: detectableCDNUrl
-// Dependencies: [653, 2]
+// Module ID: 11945
+// Function ID: 11946
+// Name: GAMES_DETECTABLE
+// Dependencies: [676, 2]
 
-// Module 11921 (detectableCDNUrl)
+// Module 11945 (GAMES_DETECTABLE)
 import { Endpoints } from "ME";
 
-function detectableCDNUrl(arg0, GAMES_DETECTABLE) {
-  let combined = GAMES_DETECTABLE;
-  if (null != CDN_HOST) {
-    const _HermesInternal = HermesInternal;
-    combined = "https://" + CDN_HOST + arg0;
-  }
-  return combined;
+let GAMES_DETECTABLE = Endpoints.GAMES_DETECTABLE;
+if (null != CDN_HOST) {
+  const _HermesInternal = HermesInternal;
+  GAMES_DETECTABLE = "https://" + CDN_HOST + "/detectables/games.json";
 }
-const detectableCDNUrlResult = detectableCDNUrl("/detectables/games.json", Endpoints.GAMES_DETECTABLE);
-const detectableCDNUrlResult1 = detectableCDNUrl("/detectables/non-games.json", Endpoints.NON_GAMES_DETECTABLE);
+let NON_GAMES_DETECTABLE = Endpoints.NON_GAMES_DETECTABLE;
+if (null != CDN_HOST) {
+  const _HermesInternal2 = HermesInternal;
+  NON_GAMES_DETECTABLE = "https://" + CDN_HOST + "/detectables/non-games.json";
+}
 const result = require("set").fileFinishedImporting("modules/game_detection/Constants.tsx");
 
-export const DETECTABLE_GAMES_CDN_URL = detectableCDNUrlResult;
-export const DETECTABLE_NON_GAMES_CDN_URL = detectableCDNUrlResult1;
+export const DETECTABLE_GAMES_CDN_URL = GAMES_DETECTABLE;
+export const DETECTABLE_NON_GAMES_CDN_URL = NON_GAMES_DETECTABLE;

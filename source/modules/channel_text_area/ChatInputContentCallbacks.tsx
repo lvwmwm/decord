@@ -1,16 +1,20 @@
-// Module ID: 11148
-// Function ID: 86551
-// Name: areMemberGroupsHydrated
-// Dependencies: [57, 31, 6037, 6053, 6040, 6164, 22, 2]
-// Exports: useHereMentionCallback
+// Module ID: 11172
+// Function ID: 11173
+// Name: tryUpdateSubscriptionForHereMention
+// Dependencies: [32, 19, 6055, 6071, 6058, 6182, 12, 2]
+// Exports: tryUpdateSubscriptionForHereMention, useHereMentionCallback
 
-// Module 11148 (areMemberGroupsHydrated)
+// Module 11172 (tryUpdateSubscriptionForHereMention)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import noop from "noop";
+import getMemberListId from "getMemberListId";
 
 const require = arg1;
-function areMemberGroupsHydrated(groups) {
+let c6 = "@here";
+const result = require("getMemberListId").fileFinishedImporting("modules/channel_text_area/ChatInputContentCallbacks.tsx");
+
+export const tryUpdateSubscriptionForHereMention = function tryUpdateSubscriptionForHereMention(arr, maxMessageLength, guild_id, id) {
+  const groups = props.getProps(guild_id, id).groups;
   let tmp = groups.length > 1;
   if (!tmp) {
     let tmp2 = 1 === groups.length;
@@ -19,58 +23,82 @@ function areMemberGroupsHydrated(groups) {
     }
     tmp = !tmp2;
   }
-  return tmp;
-}
-function tryUpdateSubscriptionForHereMention(arr, maxMessageLength, guild_id, id) {
-  const tmp = areMemberGroupsHydrated(props.getProps(guild_id, id).groups);
-  let tmp2 = tmp;
-  if (!tmp) {
-    let tmp3 = arr.length < 5;
-    if (!tmp3) {
-      tmp3 = arr.length > maxMessageLength;
+  let tmp3 = tmp;
+  if (!tmp3) {
+    let tmp5 = arr.length < 5;
+    if (!tmp5) {
+      tmp5 = arr.length > maxMessageLength;
     }
-    let tmp5 = !tmp3;
-    if (!tmp3) {
+    let tmp7 = !tmp5;
+    if (!tmp5) {
       let flag = -1 !== arr.indexOf(c6);
       if (flag) {
-        require(6053) /* subscribeChannel */.subscribeChannel(guild_id, id, require(6040) /* serializeChannelRanges */.DEFAULT_RANGES);
+        require(6071) /* subscribeMembers */.subscribeChannel(guild_id, id, require(6058) /* reset */.DEFAULT_RANGES);
         flag = true;
-        const obj = require(6053) /* subscribeChannel */;
+        const obj = require(6071) /* subscribeMembers */;
       }
-      tmp5 = flag;
+      tmp7 = flag;
     }
-    tmp2 = tmp5;
+    tmp3 = tmp7;
   }
-  return tmp2;
-}
-let c6 = "@here";
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/channel_text_area/ChatInputContentCallbacks.tsx");
-
-export { tryUpdateSubscriptionForHereMention };
+  return tmp3;
+};
 export const useHereMentionCallback = function useHereMentionCallback(arg0, arg1, arg2) {
   let closure_0 = arg0;
   const importDefault = arg1;
   const dependencyMap = arg2;
-  const tmp = importDefault(6164)();
+  let tmp = importDefault(6182)();
   const callback = tmp;
-  const tmp2 = callback(first.useState(false), 2);
+  let tmp2 = callback(first.useState(false), 2);
   first = tmp2[0];
-  let _isNativeReflectConstruct = tmp2[1];
+  let getMemberListId = tmp2[1];
   const items = [tmp, arg1, arg2];
-  const memo = first.useMemo(() => callback(table[6]).debounce((arg0) => {
-    if (outer2_8(arg0, outer1_3, outer1_1, outer1_2)) {
-      outer1_5(true);
+  const memo = first.useMemo(() => callback(table[6]).debounce((arr) => {
+    const groups = outer1_5.getProps(closure_1, closure_2).groups;
+    let tmp4 = groups.length > 1;
+    if (!tmp4) {
+      let tmp5 = 1 === groups.length;
+      if (tmp5) {
+        tmp5 = "unknown" === groups[0].id;
+      }
+      tmp4 = !tmp5;
+    }
+    let tmp6 = tmp4;
+    if (!tmp6) {
+      let tmp9 = !tmp8;
+      if (!(arr.length < 5 || arr.length > _slicedToArray)) {
+        let flag = -1 !== arr.indexOf(outer1_6);
+        if (flag) {
+          outer1_0(outer1_2[3]).subscribeChannel(closure_1, closure_2, outer1_0(outer1_2[4]).DEFAULT_RANGES);
+          flag = true;
+          const obj = outer1_0(outer1_2[3]);
+        }
+        tmp9 = flag;
+      }
+      tmp6 = tmp9;
+    }
+    if (tmp6) {
+      callback(true);
     }
   }, 200, { maxWait: 500 }), items);
   const items1 = [first, memo, arg0, arg1, arg2];
   const effect = first.useEffect(() => {
+    const groups = props.getProps(closure_1, closure_2).groups;
     if (null != closure_1) {
-      if (!outer1_7(tmp)) {
+      let tmp = groups.length > 1;
+      if (!tmp) {
+        let tmp2 = 1 === groups.length;
+        if (tmp2) {
+          tmp2 = "unknown" === groups[0].id;
+        }
+        tmp = !tmp2;
+      }
+      if (!tmp) {
         if (!first) {
           closure_0.addListener("text-changed", memo);
           return () => {
-            outer1_0.removeListener("text-changed", outer1_6);
-            outer1_6.cancel();
+            closure_0.removeListener("text-changed", closure_6);
+            closure_6.cancel();
           };
         }
       }

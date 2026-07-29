@@ -1,9 +1,9 @@
-// Module ID: 671
-// Function ID: 8280
+// Module ID: 694
+// Function ID: 695
 // Name: MessageReferenceTypes
 // Dependencies: [2]
 
-// Module 671 (MessageReferenceTypes)
+// Module 694 (MessageReferenceTypes)
 const result = require("set").fileFinishedImporting("../discord_common/js/shared/shared-constants/MessageReferenceTypes.tsx");
 
 export const MessageReferenceTypes = { DEFAULT: 0, [0]: "DEFAULT", FORWARD: 1, [1]: "FORWARD" };

@@ -1,29 +1,29 @@
-// Module ID: 13146
-// Function ID: 101312
+// Module ID: 13169
+// Function ID: 13170
 // Name: EmptyState
-// Dependencies: [31, 27, 33, 4165, 689, 4011, 4161, 2]
+// Dependencies: [19, 17, 21, 4189, 712, 4035, 4185, 2]
 // Exports: default
 
-// Module 13146 (EmptyState)
-import "result";
+// Module 13169 (EmptyState)
+import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_2;
-let closure_3;
-let closure_4;
-let closure_5;
+let c3;
+let c4;
+let c5;
+let obj1;
 const require = arg1;
-({ View: closure_2, Image: closure_3 } = get_ActivityIndicator);
-({ jsx: closure_4, jsxs: closure_5 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { flex: 1, justifyContent: "center", alignItems: "center", paddingHorizontal: 36, paddingBottom: 80, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWER };
-_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.emptyImage = { flex: 1, maxWidth: 300, maxHeight: 200 };
-_createForOfIteratorHelperLoose.emptyTitle = { marginTop: 20, textTransform: "uppercase" };
-_createForOfIteratorHelperLoose.emptyBody = { textAlign: "center", marginTop: 8 };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+({ View: obj1, Image: c3 } = get_ActivityIndicator);
+({ jsx: c4, jsxs: c5 } = jsxProd);
+createCacheKey = { container: null, emptyImage: null, emptyTitle: null, emptyBody: null };
+createCacheKey = { flex: 1, justifyContent: "center", alignItems: "center", paddingHorizontal: 36, paddingBottom: 80, backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOWER };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { flex: 1, maxWidth: 300, maxHeight: 200 };
+createCacheKey[2] = { marginTop: 20, textTransform: "uppercase" };
+createCacheKey[3] = { textAlign: "center", marginTop: 8 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
 const result = require("jsxProd").fileFinishedImporting("design/void/EmptyState/native/EmptyState.tsx");
 
 export default function EmptyState(Illustration) {
@@ -31,51 +31,51 @@ export default function EmptyState(Illustration) {
   let bodyStyle;
   let children;
   let title;
-  const tmp = _createForOfIteratorHelperLoose();
-  require(4011) /* AccessibilityAnnouncer */;
+  const tmp = createCacheKey();
+  require(4035) /* AccessibilityAnnouncer */;
   if (null != Illustration.Illustration) {
-    let obj = { accessible: false, importantForAccessibility: "no", accessibilityRole: "none", resizeMode: "contain" };
+    let obj = { accessible: false, importantForAccessibility: "no", accessibilityRole: "none", resizeMode: "contain", style: null };
     const items = [tmp.emptyImage, Illustration.imageStyle];
-    obj.style = items;
-    let tmp6Result = callback(Illustration.Illustration, obj);
+    obj[4] = items;
+    let tmp8Result = callback(Illustration.Illustration, obj);
   } else {
-    tmp6Result = null;
-    if (tmp4) {
-      obj = { resizeMode: "contain" };
-      let obj1 = require(4011) /* AccessibilityAnnouncer */;
-      obj.source = obj1.isThemeLight(tmp3) ? Illustration.lightSource : Illustration.darkSource;
+    tmp8Result = null;
+    if (tmp6) {
+      obj = { resizeMode: "contain", source: null, style: null };
+      obj[1] = tmp2(4035).isThemeLight(tmp5) ? Illustration.lightSource : Illustration.darkSource;
       const items1 = [tmp.emptyImage, Illustration.imageStyle];
-      obj.style = items1;
-      tmp6Result = callback(closure_3, obj);
-      const tmp6 = callback;
-      const tmp7 = closure_3;
+      obj[2] = items1;
+      tmp8Result = callback(closure_3, obj);
+      const tmp2Result = tmp2(4035);
+      const tmp8 = callback;
+      const tmp9 = closure_3;
     }
-    tmp4 = null != Illustration.lightSource && null != Illustration.darkSource;
+    tmp6 = null != Illustration.lightSource && null != Illustration.darkSource;
   }
   ({ body, title } = Illustration);
-  obj = { style: items2, accessible: true };
+  const obj1 = { style: items2, accessible: true, children: null };
   items2 = [tmp.container, Illustration.style];
-  const items3 = [tmp6Result, , , ];
+  const items3 = [tmp8Result, , , ];
   let tmp14 = null;
   ({ children, bodyStyle } = Illustration);
   if (null != title) {
-    obj1 = { variant: "heading-lg/semibold", color: "mobile-text-heading-primary", maxFontSizeMultiplier: 2 };
+    const obj2 = { variant: "heading-lg/semibold", color: "mobile-text-heading-primary", maxFontSizeMultiplier: 2, style: null, children: null };
     const items4 = [tmp.emptyTitle, tmp11];
-    obj1.style = items4;
-    obj1.children = title;
-    tmp14 = callback(require(4161) /* Text */.Text, obj1);
+    obj2[3] = items4;
+    obj2[4] = title;
+    tmp14 = callback(tmp2(4185).Text, obj2);
   }
   items3[1] = tmp14;
-  let tmp18 = null;
+  let tmp16 = null;
   if (null != body) {
-    const obj2 = { variant: "text-md/medium", color: "text-muted", maxFontSizeMultiplier: 2 };
+    const obj3 = { variant: "text-md/medium", color: "text-muted", maxFontSizeMultiplier: 2, style: null, children: null };
     const items5 = [tmp.emptyBody, bodyStyle];
-    obj2.style = items5;
-    obj2.children = body;
-    tmp18 = callback(require(4161) /* Text */.Text, obj2);
+    obj3[3] = items5;
+    obj3[4] = body;
+    tmp16 = callback(tmp2(4185).Text, obj3);
   }
-  items3[2] = tmp18;
+  items3[2] = tmp16;
   items3[3] = children;
-  obj.children = items3;
-  return closure_5(closure_2, obj);
+  obj1[2] = items3;
+  return closure_5(closure_2, obj1);
 };

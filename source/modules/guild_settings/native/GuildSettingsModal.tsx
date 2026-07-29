@@ -1,410 +1,457 @@
-// Module ID: 16314
-// Function ID: 126483
+// Module ID: 16349
+// Function ID: 16350
 // Name: close
-// Dependencies: [57, 31, 1838, 8281, 653, 33, 16315, 8280, 480, 1212, 5121, 16316, 16329, 16333, 16334, 16344, 16359, 16360, 16372, 16384, 16386, 15633, 15642, 16394, 16398, 16400, 15644, 16401, 16406, 16407, 16427, 16447, 16451, 16454, 11003, 11016, 11018, 16455, 16460, 16461, 16483, 16523, 16524, 16540, 16579, 16583, 16584, 16587, 16595, 1557, 5485, 566, 5552, 2]
+// Dependencies: [32, 19, 1862, 8305, 676, 21, 16350, 8304, 503, 1236, 5143, 16351, 16364, 16368, 16369, 16379, 16394, 16395, 16407, 16419, 16421, 15668, 15677, 16429, 16433, 16435, 15679, 16436, 16441, 16442, 16462, 16482, 16486, 16489, 11027, 11040, 11042, 16490, 16495, 16496, 16518, 16558, 16559, 16575, 16614, 16618, 16619, 16622, 16630, 1581, 5503, 589, 5570, 2]
 // Exports: default
 
-// Module 16314 (close)
-import _slicedToArray from "_slicedToArray";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import closure_6 from "_isNativeReflectConstruct";
+// Module 16349 (close)
+import InvitesDisabledRow from "InvitesDisabledRow";
+import GuildSettingsModalServerTag from "GuildSettingsModalServerTag";
+import createGuildRecordFromRust from "createGuildRecordFromRust";
+import handleFormInit from "handleFormInit";
 import ME from "ME";
-import { jsx } from "module_16454";
+import { jsx } from "WebhookItem";
 
-let closure_7;
-let closure_8;
+let error;
+let metroImportAll;
 const require = arg1;
 function close() {
-  importDefault(16315).terminate();
-  const obj = importDefault(16315);
-  importDefault(8280).close();
+  importDefault(16350).terminate();
+  const obj = importDefault(16350);
+  importDefault(8304).close();
 }
-({ GuildSettingsSections: closure_7, WebhookTypes: closure_8 } = ME);
-const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/guild_settings/native/GuildSettingsModal.tsx");
+({ GuildSettingsSections: error, WebhookTypes: metroImportAll } = ME);
+const result = require("createGuildRecordFromRust").fileFinishedImporting("modules/guild_settings/native/GuildSettingsModal.tsx");
 
 export default function GuildSettingsModal() {
-  const bottom = importDefault(stateFromStores[49])().bottom;
-  let tmp = importDefault(stateFromStores[50])(() => outer1_6.getGuildId());
-  importDefault = tmp;
+  let bottom = importDefault(stateFromStores[49])().bottom;
+  let tmp2 = importDefault(stateFromStores[50])(() => store.getGuildId());
+  importDefault = tmp2;
   let obj = bottom(stateFromStores[51]);
-  const items = [_createForOfIteratorHelperLoose];
+  const items = [createGuildRecordFromRust];
   stateFromStores = obj.useStateFromStores(items, () => outer1_5.getGuild(closure_1));
-  const items1 = [bottom, tmp];
+  const items1 = [bottom, tmp2];
   const memo = React.useMemo(() => {
-    let tmp;
-    if (null != closure_1) {
-      tmp = (function getScreens(closure_1, bottom) {
-        let closure_0 = closure_1;
-        let obj = { paddingBottom: 16 + bottom };
-        closure_1 = { contentContainerStyle: obj };
-        obj = {};
-        obj = { impressionName: bottom(stateFromStores[8]).ImpressionNames.GUILD_SETTINGS_LANDING };
-        const intl = bottom(stateFromStores[9]).intl;
-        obj.title = intl.string(bottom(stateFromStores[9]).t["154/bL"]);
-        let obj3 = bottom(stateFromStores[10]);
-        obj.headerLeft = obj3.getHeaderCloseButton(outer2_10);
-        obj.render = function render() {
-          const merged = Object.assign(callback);
-          return outer3_9(callback(stateFromStores[11]), { guildId: closure_0 });
-        };
-        obj[outer2_7.LANDING] = obj;
-        const obj1 = { impressionName: bottom(stateFromStores[8]).ImpressionNames.GUILD_SETTINGS_OVERVIEW };
-        const intl2 = bottom(stateFromStores[9]).intl;
-        obj1.title = intl2.string(bottom(stateFromStores[9]).t["/dp6yY"]);
-        obj1.render = function render() {
-          const merged = Object.assign(callback);
-          return outer3_9(callback(stateFromStores[12]), {});
-        };
-        obj[outer2_7.OVERVIEW] = obj1;
-        const obj2 = { impressionName: bottom(stateFromStores[8]).ImpressionNames.GUILD_SETTINGS_MODERATION };
-        const intl3 = bottom(stateFromStores[9]).intl;
-        obj2.title = intl3.string(bottom(stateFromStores[9]).t["5tbTdV"]);
-        obj2.render = function render() {
-          const merged = Object.assign(callback);
-          return outer3_9(callback(stateFromStores[13]), {});
-        };
-        obj[outer2_7.MODERATION] = obj2;
-        obj3 = { impressionName: bottom(stateFromStores[8]).ImpressionNames.GUILD_SETTINGS_AUDIT_LOG };
-        const intl4 = bottom(stateFromStores[9]).intl;
-        obj3.title = intl4.string(bottom(stateFromStores[9]).t.SPWLyT);
-        obj3.postponeRender = true;
-        obj3.render = function render() {
-          const merged = Object.assign(callback);
-          return outer3_9(callback(stateFromStores[14]), { guildId: closure_0 });
-        };
-        obj[outer2_7.AUDIT_LOG] = obj3;
-        const obj4 = {};
-        const intl5 = bottom(stateFromStores[9]).intl;
-        obj4.title = intl5.string(bottom(stateFromStores[9]).t.pEasFX);
-        obj4.render = function render(arg0) {
-          const merged = Object.assign(arg0);
-          const merged1 = Object.assign(callback);
-          return outer3_9(callback(stateFromStores[15]), { guildId: closure_0 });
-        };
-        obj[outer2_7.AUDIT_LOG_FILTER] = obj4;
-        const obj5 = { impressionName: bottom(stateFromStores[8]).ImpressionNames.GUILD_SETTINGS_INTEGRATION };
-        const intl6 = bottom(stateFromStores[9]).intl;
-        obj5.title = intl6.string(bottom(stateFromStores[9]).t.CIsNZw);
-        obj5.render = function render() {
-          const merged = Object.assign(callback);
-          return outer3_9(callback(stateFromStores[16]), {});
-        };
-        obj[outer2_7.INTEGRATIONS] = obj5;
-        const obj6 = { impressionName: bottom(stateFromStores[8]).ImpressionNames.GUILD_SETTINGS_EMOJI };
-        const intl7 = bottom(stateFromStores[9]).intl;
-        obj6.title = intl7.string(bottom(stateFromStores[9]).t.sMOuuS);
-        obj6.postponeRender = true;
-        obj6.render = function render() {
-          const merged = Object.assign(callback);
-          return outer3_9(callback(stateFromStores[17]), { guildId: closure_0 });
-        };
-        obj[outer2_7.EMOJI] = obj6;
-        const obj7 = { impressionName: bottom(stateFromStores[8]).ImpressionNames.GUILD_SETTINGS_STICKERS };
-        const intl8 = bottom(stateFromStores[9]).intl;
-        obj7.title = intl8.string(bottom(stateFromStores[9]).t.R5nQkS);
-        obj7.postponeRender = true;
-        obj7.render = function render() {
-          const merged = Object.assign(callback);
-          return outer3_9(callback(stateFromStores[18]), { guildId: closure_0 });
-        };
-        obj[outer2_7.STICKERS] = obj7;
-        const obj8 = { impressionName: bottom(stateFromStores[8]).ImpressionNames.GUILD_SETTINGS_TAG };
-        const intl9 = bottom(stateFromStores[9]).intl;
-        obj8.title = intl9.string(bottom(stateFromStores[9]).t["2QmKZ2"]);
-        obj8.render = function render() {
-          const merged = Object.assign(callback);
-          return outer3_9(callback(stateFromStores[19]), { guildId: closure_0 });
-        };
-        obj[outer2_7.TAG] = obj8;
-        const obj9 = {};
-        const intl10 = bottom(stateFromStores[9]).intl;
-        obj9.title = intl10.string(bottom(stateFromStores[9]).t.r4R7mm);
-        obj9.render = function render() {
-          const merged = Object.assign(callback);
-          return outer3_9(callback(stateFromStores[20]), { guildId: closure_0 });
-        };
-        obj[outer2_7.TAG_CUSTOMIZE] = obj9;
-        const obj10 = { impressionName: bottom(stateFromStores[8]).ImpressionNames.GUILD_SETTINGS_WEBHOOKS };
-        const intl11 = bottom(stateFromStores[9]).intl;
-        obj10.title = intl11.string(bottom(stateFromStores[9]).t.jp25Id);
-        obj10.render = function render() {
-          const merged = Object.assign(callback);
-          return outer3_9(callback(stateFromStores[21]), { guildId: closure_0, webhookType: outer3_8.INCOMING });
-        };
-        obj[outer2_7.WEBHOOKS] = obj10;
-        const obj11 = {};
-        const intl12 = bottom(stateFromStores[9]).intl;
-        obj11.title = intl12.string(bottom(stateFromStores[9]).t["6SE3L3"]);
-        obj11.render = function render(arg0) {
-          const merged = Object.assign(arg0);
-          const merged1 = Object.assign(callback);
-          return outer3_9(callback(stateFromStores[22]), {});
-        };
-        obj[outer2_7.EDIT_WEBHOOK] = obj11;
-        const obj12 = { impressionName: bottom(stateFromStores[8]).ImpressionNames.GUILD_SETTINGS_WEBHOOKS };
-        const intl13 = bottom(stateFromStores[9]).intl;
-        obj12.title = intl13.string(bottom(stateFromStores[9]).t.OrV60r);
-        obj12.render = function render() {
-          const merged = Object.assign(callback);
-          return outer3_9(callback(stateFromStores[21]), { guildId: closure_0, webhookType: outer3_8.CHANNEL_FOLLOWER });
-        };
-        obj[outer2_7.CHANNELS_FOLLOWED] = obj12;
-        const obj13 = { impressionName: bottom(stateFromStores[8]).ImpressionNames.GUILD_SETTINGS_INTEGRATION };
-        const intl14 = bottom(stateFromStores[9]).intl;
-        obj13.title = intl14.string(bottom(stateFromStores[9]).t.sE5hSZ);
-        obj13.render = function render(arg0) {
-          const merged = Object.assign(arg0);
-          const merged1 = Object.assign(callback);
-          return outer3_9(callback(stateFromStores[23]), {});
-        };
-        obj[outer2_7.INTEGRATION_SETTINGS] = obj13;
-        const obj14 = {};
-        const intl15 = bottom(stateFromStores[9]).intl;
-        obj14.title = intl15.string(bottom(stateFromStores[9]).t.CIsNZw);
-        obj14.render = function render(arg0) {
-          const obj = {};
-          const merged = Object.assign(arg0);
-          obj["closeGuildSettings"] = outer3_10;
-          const merged1 = Object.assign(callback);
-          return outer3_9(callback(stateFromStores[24]), obj);
-        };
-        obj[outer2_7.INTEGRATION_PLATFORM] = obj14;
-        const obj15 = {};
-        const intl16 = bottom(stateFromStores[9]).intl;
-        obj15.title = intl16.string(bottom(stateFromStores[9]).t.tqtDXC);
-        obj15.render = function render() {
-          const merged = Object.assign(callback);
-          return outer3_9(callback(stateFromStores[25]), { guildId: closure_0 });
-        };
-        obj[outer2_7.LOBBIES_LINKED] = obj15;
-        const obj16 = {};
-        const intl17 = bottom(stateFromStores[9]).intl;
-        obj16.title = intl17.string(bottom(stateFromStores[9]).t.OJknhi);
-        obj16.render = function render(arg0) {
-          const merged = Object.assign(arg0);
-          const merged1 = Object.assign(callback);
-          return outer3_9(callback(stateFromStores[26]), {});
-        };
-        obj[outer2_7.EDIT_LINKED_LOBBY] = obj16;
-        const obj17 = { impressionName: bottom(stateFromStores[8]).ImpressionNames.GUILD_SETTINGS_CHANNELS };
-        const intl18 = bottom(stateFromStores[9]).intl;
-        obj17.title = intl18.string(bottom(stateFromStores[9]).t.OGiMXJ);
-        obj17.postponeRender = true;
-        obj17.render = function render() {
-          const merged = Object.assign(callback);
-          return outer3_9(callback(stateFromStores[27]), { guildId: closure_0 });
-        };
-        obj[outer2_7.CHANNELS] = obj17;
-        const obj18 = { impressionName: bottom(stateFromStores[8]).ImpressionNames.GUILD_SETTINGS_SECURITY };
-        const intl19 = bottom(stateFromStores[9]).intl;
-        obj18.title = intl19.string(bottom(stateFromStores[9]).t.Am9YHi);
-        obj18.render = function render() {
-          const merged = Object.assign(callback);
-          return outer3_9(callback(stateFromStores[28]), { guildId: closure_0 });
-        };
-        obj[outer2_7.SECURITY] = obj18;
-        const obj19 = { impressionName: bottom(stateFromStores[8]).ImpressionNames.GUILD_SETTINGS_ROLES };
-        const intl20 = bottom(stateFromStores[9]).intl;
-        obj19.title = intl20.string(bottom(stateFromStores[9]).t["LPJmL/"]);
-        obj19.render = function render() {
-          const merged = Object.assign(callback);
-          return outer3_9(callback(stateFromStores[29]), { guildId: closure_0 });
-        };
-        obj[outer2_7.ROLES] = obj19;
-        const obj20 = {};
-        const intl21 = bottom(stateFromStores[9]).intl;
-        obj20.title = intl21.string(bottom(stateFromStores[9]).t["LPJmL/"]);
-        obj20.render = function render(arg0) {
-          const merged = Object.assign(arg0);
-          const merged1 = Object.assign(callback);
-          return outer3_9(callback(stateFromStores[30]), { guildId: closure_0 });
-        };
-        obj[outer2_7.ROLE_EDIT_REFRESH] = obj20;
-        const obj21 = {};
-        const intl22 = bottom(stateFromStores[9]).intl;
-        obj21.title = intl22.string(bottom(stateFromStores[9]).t["5XZKy/"]);
-        obj21.render = function render() {
-          const merged = Object.assign(callback);
-          return outer3_9(callback(stateFromStores[31]), { guildId: closure_0 });
-        };
-        obj[outer2_7.VANITY_URL] = obj21;
-        const obj22 = { impressionName: bottom(stateFromStores[8]).ImpressionNames.GUILD_SETTINGS_INVITES };
-        const intl23 = bottom(stateFromStores[9]).intl;
-        obj22.title = intl23.string(bottom(stateFromStores[9]).t.ngRFjZ);
-        obj22.postponeRender = true;
-        obj22.render = function render() {
-          const merged = Object.assign(callback);
-          return outer3_9(callback(stateFromStores[32]), { guildId: closure_0 });
-        };
-        obj[outer2_7.INSTANT_INVITES] = obj22;
-        const obj23 = { impressionName: bottom(stateFromStores[8]).ImpressionNames.GUILD_SETTINGS_MEMBERS };
-        const intl24 = bottom(stateFromStores[9]).intl;
-        obj23.title = intl24.string(bottom(stateFromStores[9]).t["9Oq93m"]);
-        obj23.postponeRender = true;
-        obj23.render = function render() {
-          const merged = Object.assign(callback);
-          return outer3_9(callback(stateFromStores[33]), { guildId: closure_0 });
-        };
-        obj[outer2_7.MEMBERS] = obj23;
-        obj[outer2_7.MEMBER_EDIT] = {
-          render(arg0) {
-            const merged = Object.assign(arg0);
-            const merged1 = Object.assign(closure_1);
-            return outer3_9(bottom(stateFromStores[34]).GuildSettingsModalMemberEditScene, { guildId: closure_0 });
-          }
-        };
-        obj[outer2_7.MEMBER_KICK] = {
-          headerTitle() {
-            return null;
-          },
-          render(arg0) {
-            const merged = Object.assign(arg0);
-            const merged1 = Object.assign(callback);
-            return outer3_9(callback(stateFromStores[35]), { guildId: closure_0 });
-          }
-        };
-        obj[outer2_7.MEMBER_BAN] = {
-          headerTitle() {
-            return null;
-          },
-          render(arg0) {
-            const merged = Object.assign(arg0);
-            const merged1 = Object.assign(callback);
-            return outer3_9(callback(stateFromStores[36]), { guildId: closure_0 });
-          }
-        };
-        const obj24 = { impressionName: bottom(stateFromStores[8]).ImpressionNames.GUILD_SETTINGS_BANS };
-        const intl25 = bottom(stateFromStores[9]).intl;
-        obj24.title = intl25.string(bottom(stateFromStores[9]).t.ZbeITS);
-        obj24.postponeRender = true;
-        obj24.render = function render() {
-          const merged = Object.assign(callback);
-          return outer3_9(callback(stateFromStores[37]), { guildId: closure_0 });
-        };
-        obj[outer2_7.BANS] = obj24;
-        const obj25 = { impressionName: bottom(stateFromStores[8]).ImpressionNames.GUILD_SETTINGS_COMMUNITY_OVERVIEW };
-        const intl26 = bottom(stateFromStores[9]).intl;
-        obj25.title = intl26.string(bottom(stateFromStores[9]).t.nRtNqn);
-        obj25.postponeRender = true;
-        obj25.render = function render(arg0) {
-          const obj = {};
-          const merged = Object.assign(arg0);
-          obj["guildId"] = closure_0;
-          return outer3_9(callback(stateFromStores[38]), obj);
-        };
-        obj[outer2_7.COMMUNITY] = obj25;
-        const obj26 = { impressionName: bottom(stateFromStores[8]).ImpressionNames.GUILD_SETTINGS_COMMUNITY_WELCOME };
-        const intl27 = bottom(stateFromStores[9]).intl;
-        obj26.title = intl27.string(bottom(stateFromStores[9]).t.ElKTeb);
-        obj26.render = function render(arg0) {
-          const merged = Object.assign(arg0);
-          const merged1 = Object.assign(callback);
-          return outer3_9(callback(stateFromStores[39]), { guildId: closure_0 });
-        };
-        obj[outer2_7.COMMUNITY_INTRO] = obj26;
-        const obj27 = {};
-        const intl28 = bottom(stateFromStores[9]).intl;
-        obj27.title = intl28.string(bottom(stateFromStores[9]).t["KzCF/6"]);
-        obj27.render = function render() {
-          return outer3_9(callback(stateFromStores[40]), { guildId: closure_0 });
-        };
-        obj[outer2_7.ROLE_SUBSCRIPTIONS] = obj27;
-        const obj28 = {};
-        const intl29 = bottom(stateFromStores[9]).intl;
-        obj28.title = intl29.string(bottom(stateFromStores[9]).t["KzCF/6"]);
-        obj28.render = function render() {
-          return outer3_9(callback(stateFromStores[41]), { guildId: closure_0 });
-        };
-        obj[outer2_7.ROLE_SUBSCRIPTIONS_ENABLE_MONETIZATION] = obj28;
-        const obj29 = {};
-        const intl30 = bottom(stateFromStores[9]).intl;
-        obj29.title = intl30.string(bottom(stateFromStores[9]).t["/CfKoD"]);
-        obj29.render = function render() {
-          return outer3_9(callback(stateFromStores[42]), { guildId: closure_0 });
-        };
-        obj[outer2_7.ROLE_SUBSCRIPTIONS_BASIC] = obj29;
-        const obj30 = {};
-        const intl31 = bottom(stateFromStores[9]).intl;
-        obj30.title = intl31.string(bottom(stateFromStores[9]).t.pXbGYc);
-        obj30.render = function render() {
-          return outer3_9(callback(stateFromStores[43]), { guildId: closure_0 });
-        };
-        obj[outer2_7.ROLE_SUBSCRIPTIONS_TIERS] = obj30;
-        const obj31 = {};
-        const intl32 = bottom(stateFromStores[9]).intl;
-        obj31.title = intl32.string(bottom(stateFromStores[9]).t["KzCF/6"]);
-        obj31.render = function render(arg0) {
-          const obj = {};
-          const merged = Object.assign(arg0);
-          obj["guildId"] = closure_0;
-          return outer3_9(callback(stateFromStores[44]), obj);
-        };
-        obj[outer2_7.ROLE_SUBSCRIPTIONS_TIER_EDIT] = obj31;
-        const obj32 = {};
-        const intl33 = bottom(stateFromStores[9]).intl;
-        obj32.title = intl33.string(bottom(stateFromStores[9]).t.p2Rsdl);
-        obj32.render = function render() {
-          return outer3_9(callback(stateFromStores[45]), { guildId: closure_0 });
-        };
-        obj[outer2_7.ROLE_SUBSCRIPTIONS_PAYMENTS] = obj32;
-        const obj33 = {};
-        const intl34 = bottom(stateFromStores[9]).intl;
-        obj33.title = intl34.string(bottom(stateFromStores[9]).t.C5Dbwn);
-        obj33.render = function render() {
-          return outer3_9(callback(stateFromStores[46]), { guildId: closure_0 });
-        };
-        obj[outer2_7.ROLE_SUBSCRIPTIONS_EMOJIS] = obj33;
-        const obj34 = {};
-        const intl35 = bottom(stateFromStores[9]).intl;
-        obj34.title = intl35.string(bottom(stateFromStores[9]).t["KzCF/6"]);
-        obj34.render = function render(arg0) {
-          const obj = {};
-          const merged = Object.assign(arg0);
-          obj["guildId"] = closure_0;
-          return outer3_9(callback(stateFromStores[47]), obj);
-        };
-        obj[outer2_7.ROLE_SUBSCRIPTIONS_TIER_TEMPLATE_SELECTION] = obj34;
-        const obj35 = {};
-        const intl36 = bottom(stateFromStores[9]).intl;
-        obj35.title = intl36.string(bottom(stateFromStores[9]).t.xHEzFh);
-        obj35.render = function render() {
-          return outer3_9(callback(stateFromStores[48]), { guildId: closure_0 });
-        };
-        obj[outer2_7.OFFICIAL_MESSAGES] = obj35;
-        return obj;
-      })(closure_1, bottom);
+    let tmp2;
+    if (null != obj) {
+      const bottom = tmp;
+      obj = { contentContainerStyle: null };
+      obj = { paddingBottom: null };
+      obj[0] = 16 + bottom;
+      obj[0] = obj;
+      obj = {};
+      const obj1 = { impressionName: null, title: null, headerLeft: null, render: null };
+      obj1[0] = bottom(stateFromStores[8]).ImpressionNames.GUILD_SETTINGS_LANDING;
+      const intl = bottom(stateFromStores[9]).intl;
+      obj1[1] = intl.string(bottom(stateFromStores[9]).t["154/bL"]);
+      let obj4 = bottom(stateFromStores[10]);
+      obj1[2] = obj4.getHeaderCloseButton(outer1_10);
+      obj1[3] = function render() {
+        const obj = { guildId: closure_0 };
+        const merged = Object.assign(obj);
+        return outer1_9(obj(outer1_2[11]), obj);
+      };
+      obj[outer1_7.LANDING] = obj1;
+      const obj2 = { impressionName: null, title: null, render: null };
+      obj2[0] = bottom(stateFromStores[8]).ImpressionNames.GUILD_SETTINGS_OVERVIEW;
+      const intl2 = bottom(stateFromStores[9]).intl;
+      obj2[1] = intl2.string(bottom(stateFromStores[9]).t["/dp6yY"]);
+      obj2[2] = function render() {
+        const obj = {};
+        const merged = Object.assign(obj);
+        return outer1_9(obj(outer1_2[12]), obj);
+      };
+      obj[outer1_7.OVERVIEW] = obj2;
+      const obj3 = { impressionName: null, title: null, render: null };
+      obj3[0] = bottom(stateFromStores[8]).ImpressionNames.GUILD_SETTINGS_MODERATION;
+      const intl3 = bottom(stateFromStores[9]).intl;
+      obj3[1] = intl3.string(bottom(stateFromStores[9]).t["5tbTdV"]);
+      obj3[2] = function render() {
+        const obj = {};
+        const merged = Object.assign(obj);
+        return outer1_9(obj(outer1_2[13]), obj);
+      };
+      obj[outer1_7.MODERATION] = obj3;
+      obj4 = { impressionName: null, title: null, postponeRender: true, render: null };
+      obj4[0] = bottom(stateFromStores[8]).ImpressionNames.GUILD_SETTINGS_AUDIT_LOG;
+      const intl4 = bottom(stateFromStores[9]).intl;
+      obj4[1] = intl4.string(bottom(stateFromStores[9]).t.SPWLyT);
+      obj4[3] = function render() {
+        const obj = { guildId: closure_0 };
+        const merged = Object.assign(obj);
+        return outer1_9(obj(outer1_2[14]), obj);
+      };
+      obj[outer1_7.AUDIT_LOG] = obj4;
+      const obj5 = { title: null, render: null };
+      const intl5 = bottom(stateFromStores[9]).intl;
+      obj5[0] = intl5.string(bottom(stateFromStores[9]).t.pEasFX);
+      obj5[1] = function render(arg0) {
+        const obj = { guildId: closure_0 };
+        const merged = Object.assign(arg0);
+        const merged1 = Object.assign(obj);
+        return outer1_9(obj(outer1_2[15]), obj);
+      };
+      obj[outer1_7.AUDIT_LOG_FILTER] = obj5;
+      const obj6 = { impressionName: null, title: null, render: null };
+      obj6[0] = bottom(stateFromStores[8]).ImpressionNames.GUILD_SETTINGS_INTEGRATION;
+      const intl6 = bottom(stateFromStores[9]).intl;
+      obj6[1] = intl6.string(bottom(stateFromStores[9]).t.CIsNZw);
+      obj6[2] = function render() {
+        const obj = {};
+        const merged = Object.assign(obj);
+        return outer1_9(obj(outer1_2[16]), obj);
+      };
+      obj[outer1_7.INTEGRATIONS] = obj6;
+      const obj7 = { impressionName: null, title: null, postponeRender: true, render: null };
+      obj7[0] = bottom(stateFromStores[8]).ImpressionNames.GUILD_SETTINGS_EMOJI;
+      const intl7 = bottom(stateFromStores[9]).intl;
+      obj7[1] = intl7.string(bottom(stateFromStores[9]).t.sMOuuS);
+      obj7[3] = function render() {
+        const obj = { guildId: closure_0 };
+        const merged = Object.assign(obj);
+        return outer1_9(obj(outer1_2[17]), obj);
+      };
+      obj[outer1_7.EMOJI] = obj7;
+      const obj8 = { impressionName: null, title: null, postponeRender: true, render: null };
+      obj8[0] = bottom(stateFromStores[8]).ImpressionNames.GUILD_SETTINGS_STICKERS;
+      const intl8 = bottom(stateFromStores[9]).intl;
+      obj8[1] = intl8.string(bottom(stateFromStores[9]).t.R5nQkS);
+      obj8[3] = function render() {
+        const obj = { guildId: closure_0 };
+        const merged = Object.assign(obj);
+        return outer1_9(obj(outer1_2[18]), obj);
+      };
+      obj[outer1_7.STICKERS] = obj8;
+      const obj9 = { impressionName: null, title: null, render: null };
+      obj9[0] = bottom(stateFromStores[8]).ImpressionNames.GUILD_SETTINGS_TAG;
+      const intl9 = bottom(stateFromStores[9]).intl;
+      obj9[1] = intl9.string(bottom(stateFromStores[9]).t["2QmKZ2"]);
+      obj9[2] = function render() {
+        const obj = { guildId: closure_0 };
+        const merged = Object.assign(obj);
+        return outer1_9(obj(outer1_2[19]), obj);
+      };
+      obj[outer1_7.TAG] = obj9;
+      const obj10 = { title: null, render: null };
+      const intl10 = bottom(stateFromStores[9]).intl;
+      obj10[0] = intl10.string(bottom(stateFromStores[9]).t.r4R7mm);
+      obj10[1] = function render() {
+        const obj = { guildId: closure_0 };
+        const merged = Object.assign(obj);
+        return outer1_9(obj(outer1_2[20]), obj);
+      };
+      obj[outer1_7.TAG_CUSTOMIZE] = obj10;
+      const obj11 = { impressionName: null, title: null, render: null };
+      obj11[0] = bottom(stateFromStores[8]).ImpressionNames.GUILD_SETTINGS_WEBHOOKS;
+      const intl11 = bottom(stateFromStores[9]).intl;
+      obj11[1] = intl11.string(bottom(stateFromStores[9]).t.jp25Id);
+      obj11[2] = function render() {
+        const obj = { guildId: closure_0, webhookType: outer1_8.INCOMING };
+        const merged = Object.assign(obj);
+        return outer1_9(obj(outer1_2[21]), obj);
+      };
+      obj[outer1_7.WEBHOOKS] = obj11;
+      const obj12 = { title: null, render: null };
+      const intl12 = bottom(stateFromStores[9]).intl;
+      obj12[0] = intl12.string(bottom(stateFromStores[9]).t["6SE3L3"]);
+      obj12[1] = function render(arg0) {
+        const obj = {};
+        const merged = Object.assign(arg0);
+        const merged1 = Object.assign(obj);
+        return outer1_9(obj(outer1_2[22]), obj);
+      };
+      obj[outer1_7.EDIT_WEBHOOK] = obj12;
+      const obj13 = { impressionName: null, title: null, render: null };
+      obj13[0] = bottom(stateFromStores[8]).ImpressionNames.GUILD_SETTINGS_WEBHOOKS;
+      const intl13 = bottom(stateFromStores[9]).intl;
+      obj13[1] = intl13.string(bottom(stateFromStores[9]).t.OrV60r);
+      obj13[2] = function render() {
+        const obj = { guildId: closure_0, webhookType: outer1_8.CHANNEL_FOLLOWER };
+        const merged = Object.assign(obj);
+        return outer1_9(obj(outer1_2[21]), obj);
+      };
+      obj[outer1_7.CHANNELS_FOLLOWED] = obj13;
+      const obj14 = { impressionName: null, title: null, render: null };
+      obj14[0] = bottom(stateFromStores[8]).ImpressionNames.GUILD_SETTINGS_INTEGRATION;
+      const intl14 = bottom(stateFromStores[9]).intl;
+      obj14[1] = intl14.string(bottom(stateFromStores[9]).t.sE5hSZ);
+      obj14[2] = function render(arg0) {
+        const obj = {};
+        const merged = Object.assign(arg0);
+        const merged1 = Object.assign(obj);
+        return outer1_9(obj(outer1_2[23]), obj);
+      };
+      obj[outer1_7.INTEGRATION_SETTINGS] = obj14;
+      const obj15 = { title: null, render: null };
+      const intl15 = bottom(stateFromStores[9]).intl;
+      obj15[0] = intl15.string(bottom(stateFromStores[9]).t.CIsNZw);
+      obj15[1] = function render(arg0) {
+        const obj = {};
+        const merged = Object.assign(arg0);
+        obj.closeGuildSettings = outer1_10;
+        const merged1 = Object.assign(obj);
+        return outer1_9(obj(outer1_2[24]), obj);
+      };
+      obj[outer1_7.INTEGRATION_PLATFORM] = obj15;
+      const obj16 = { title: null, render: null };
+      const intl16 = bottom(stateFromStores[9]).intl;
+      obj16[0] = intl16.string(bottom(stateFromStores[9]).t.tqtDXC);
+      obj16[1] = function render() {
+        const obj = { guildId: closure_0 };
+        const merged = Object.assign(obj);
+        return outer1_9(obj(outer1_2[25]), obj);
+      };
+      obj[outer1_7.LOBBIES_LINKED] = obj16;
+      const obj17 = { title: null, render: null };
+      const intl17 = bottom(stateFromStores[9]).intl;
+      obj17[0] = intl17.string(bottom(stateFromStores[9]).t.OJknhi);
+      obj17[1] = function render(arg0) {
+        const obj = {};
+        const merged = Object.assign(arg0);
+        const merged1 = Object.assign(obj);
+        return outer1_9(obj(outer1_2[26]), obj);
+      };
+      obj[outer1_7.EDIT_LINKED_LOBBY] = obj17;
+      const obj18 = { impressionName: null, title: null, postponeRender: true, render: null };
+      obj18[0] = bottom(stateFromStores[8]).ImpressionNames.GUILD_SETTINGS_CHANNELS;
+      const intl18 = bottom(stateFromStores[9]).intl;
+      obj18[1] = intl18.string(bottom(stateFromStores[9]).t.OGiMXJ);
+      obj18[3] = function render() {
+        const obj = { guildId: closure_0 };
+        const merged = Object.assign(obj);
+        return outer1_9(obj(outer1_2[27]), obj);
+      };
+      obj[outer1_7.CHANNELS] = obj18;
+      const obj19 = { impressionName: null, title: null, render: null };
+      obj19[0] = bottom(stateFromStores[8]).ImpressionNames.GUILD_SETTINGS_SECURITY;
+      const intl19 = bottom(stateFromStores[9]).intl;
+      obj19[1] = intl19.string(bottom(stateFromStores[9]).t.Am9YHi);
+      obj19[2] = function render() {
+        const obj = { guildId: closure_0 };
+        const merged = Object.assign(obj);
+        return outer1_9(obj(outer1_2[28]), obj);
+      };
+      obj[outer1_7.SECURITY] = obj19;
+      const obj20 = { impressionName: null, title: null, render: null };
+      obj20[0] = bottom(stateFromStores[8]).ImpressionNames.GUILD_SETTINGS_ROLES;
+      const intl20 = bottom(stateFromStores[9]).intl;
+      obj20[1] = intl20.string(bottom(stateFromStores[9]).t["LPJmL/"]);
+      obj20[2] = function render() {
+        const obj = { guildId: closure_0 };
+        const merged = Object.assign(obj);
+        return outer1_9(obj(outer1_2[29]), obj);
+      };
+      obj[outer1_7.ROLES] = obj20;
+      const obj21 = { title: null, render: null };
+      const intl21 = bottom(stateFromStores[9]).intl;
+      obj21[0] = intl21.string(bottom(stateFromStores[9]).t["LPJmL/"]);
+      obj21[1] = function render(arg0) {
+        const obj = { guildId: closure_0 };
+        const merged = Object.assign(arg0);
+        const merged1 = Object.assign(obj);
+        return outer1_9(obj(outer1_2[30]), obj);
+      };
+      obj[outer1_7.ROLE_EDIT_REFRESH] = obj21;
+      const obj22 = { title: null, render: null };
+      const intl22 = bottom(stateFromStores[9]).intl;
+      obj22[0] = intl22.string(bottom(stateFromStores[9]).t["5XZKy/"]);
+      obj22[1] = function render() {
+        const obj = { guildId: closure_0 };
+        const merged = Object.assign(obj);
+        return outer1_9(obj(outer1_2[31]), obj);
+      };
+      obj[outer1_7.VANITY_URL] = obj22;
+      const obj23 = { impressionName: null, title: null, postponeRender: true, render: null };
+      obj23[0] = bottom(stateFromStores[8]).ImpressionNames.GUILD_SETTINGS_INVITES;
+      const intl23 = bottom(stateFromStores[9]).intl;
+      obj23[1] = intl23.string(bottom(stateFromStores[9]).t.ngRFjZ);
+      obj23[3] = function render() {
+        const obj = { guildId: closure_0 };
+        const merged = Object.assign(obj);
+        return outer1_9(obj(outer1_2[32]), obj);
+      };
+      obj[outer1_7.INSTANT_INVITES] = obj23;
+      const obj24 = { impressionName: null, title: null, postponeRender: true, render: null };
+      obj24[0] = bottom(stateFromStores[8]).ImpressionNames.GUILD_SETTINGS_MEMBERS;
+      const intl24 = bottom(stateFromStores[9]).intl;
+      obj24[1] = intl24.string(bottom(stateFromStores[9]).t["9Oq93m"]);
+      obj24[3] = function render() {
+        const obj = { guildId: closure_0 };
+        const merged = Object.assign(obj);
+        return outer1_9(obj(outer1_2[33]), obj);
+      };
+      obj[outer1_7.MEMBERS] = obj24;
+      const obj25 = { render: null };
+      obj25[0] = function render(arg0) {
+        const obj = { guildId: tmp };
+        const merged = Object.assign(arg0);
+        const merged1 = Object.assign(obj);
+        return outer1_9(tmp(outer1_2[34]).GuildSettingsModalMemberEditScene, obj);
+      };
+      obj[outer1_7.MEMBER_EDIT] = obj25;
+      const obj26 = { headerTitle: null, render: null };
+      obj26[0] = function headerTitle() {
+        return null;
+      };
+      obj26[1] = function render(arg0) {
+        const obj = { guildId: closure_0 };
+        const merged = Object.assign(arg0);
+        const merged1 = Object.assign(obj);
+        return outer1_9(obj(outer1_2[35]), obj);
+      };
+      obj[outer1_7.MEMBER_KICK] = obj26;
+      const obj27 = { headerTitle: null, render: null };
+      obj27[0] = function headerTitle() {
+        return null;
+      };
+      obj27[1] = function render(arg0) {
+        const obj = { guildId: closure_0 };
+        const merged = Object.assign(arg0);
+        const merged1 = Object.assign(obj);
+        return outer1_9(obj(outer1_2[36]), obj);
+      };
+      obj[outer1_7.MEMBER_BAN] = obj27;
+      const obj28 = { impressionName: null, title: null, postponeRender: true, render: null };
+      obj28[0] = bottom(stateFromStores[8]).ImpressionNames.GUILD_SETTINGS_BANS;
+      const intl25 = bottom(stateFromStores[9]).intl;
+      obj28[1] = intl25.string(bottom(stateFromStores[9]).t.ZbeITS);
+      obj28[3] = function render() {
+        const obj = { guildId: closure_0 };
+        const merged = Object.assign(obj);
+        return outer1_9(obj(outer1_2[37]), obj);
+      };
+      obj[outer1_7.BANS] = obj28;
+      const obj29 = { impressionName: null, title: null, postponeRender: true, render: null };
+      obj29[0] = bottom(stateFromStores[8]).ImpressionNames.GUILD_SETTINGS_COMMUNITY_OVERVIEW;
+      const intl26 = bottom(stateFromStores[9]).intl;
+      obj29[1] = intl26.string(bottom(stateFromStores[9]).t.nRtNqn);
+      obj29[3] = function render(arg0) {
+        const obj = {};
+        const merged = Object.assign(arg0);
+        obj.guildId = closure_0;
+        return outer1_9(obj(outer1_2[38]), obj);
+      };
+      obj[outer1_7.COMMUNITY] = obj29;
+      const obj30 = { impressionName: null, title: null, render: null };
+      obj30[0] = bottom(stateFromStores[8]).ImpressionNames.GUILD_SETTINGS_COMMUNITY_WELCOME;
+      const intl27 = bottom(stateFromStores[9]).intl;
+      obj30[1] = intl27.string(bottom(stateFromStores[9]).t.ElKTeb);
+      obj30[2] = function render(arg0) {
+        const obj = { guildId: closure_0 };
+        const merged = Object.assign(arg0);
+        const merged1 = Object.assign(obj);
+        return outer1_9(obj(outer1_2[39]), obj);
+      };
+      obj[outer1_7.COMMUNITY_INTRO] = obj30;
+      const obj31 = { title: null, render: null };
+      const intl28 = bottom(stateFromStores[9]).intl;
+      obj31[0] = intl28.string(bottom(stateFromStores[9]).t["KzCF/6"]);
+      obj31[1] = function render() {
+        const obj = { guildId: closure_0 };
+        return outer1_9(obj(outer1_2[40]), obj);
+      };
+      obj[outer1_7.ROLE_SUBSCRIPTIONS] = obj31;
+      const obj32 = { title: null, render: null };
+      const intl29 = bottom(stateFromStores[9]).intl;
+      obj32[0] = intl29.string(bottom(stateFromStores[9]).t["KzCF/6"]);
+      obj32[1] = function render() {
+        const obj = { guildId: closure_0 };
+        return outer1_9(obj(outer1_2[41]), obj);
+      };
+      obj[outer1_7.ROLE_SUBSCRIPTIONS_ENABLE_MONETIZATION] = obj32;
+      const obj33 = { title: null, render: null };
+      const intl30 = bottom(stateFromStores[9]).intl;
+      obj33[0] = intl30.string(bottom(stateFromStores[9]).t["/CfKoD"]);
+      obj33[1] = function render() {
+        const obj = { guildId: closure_0 };
+        return outer1_9(obj(outer1_2[42]), obj);
+      };
+      obj[outer1_7.ROLE_SUBSCRIPTIONS_BASIC] = obj33;
+      const obj34 = { title: null, render: null };
+      const intl31 = bottom(stateFromStores[9]).intl;
+      obj34[0] = intl31.string(bottom(stateFromStores[9]).t.pXbGYc);
+      obj34[1] = function render() {
+        const obj = { guildId: closure_0 };
+        return outer1_9(obj(outer1_2[43]), obj);
+      };
+      obj[outer1_7.ROLE_SUBSCRIPTIONS_TIERS] = obj34;
+      const obj35 = { title: null, render: null };
+      const intl32 = bottom(stateFromStores[9]).intl;
+      obj35[0] = intl32.string(bottom(stateFromStores[9]).t["KzCF/6"]);
+      obj35[1] = function render(arg0) {
+        const obj = {};
+        const merged = Object.assign(arg0);
+        obj.guildId = closure_0;
+        return outer1_9(obj(outer1_2[44]), obj);
+      };
+      obj[outer1_7.ROLE_SUBSCRIPTIONS_TIER_EDIT] = obj35;
+      const obj36 = { title: null, render: null };
+      const intl33 = bottom(stateFromStores[9]).intl;
+      obj36[0] = intl33.string(bottom(stateFromStores[9]).t.p2Rsdl);
+      obj36[1] = function render() {
+        const obj = { guildId: closure_0 };
+        return outer1_9(obj(outer1_2[45]), obj);
+      };
+      obj[outer1_7.ROLE_SUBSCRIPTIONS_PAYMENTS] = obj36;
+      const obj37 = { title: null, render: null };
+      const intl34 = bottom(stateFromStores[9]).intl;
+      obj37[0] = intl34.string(bottom(stateFromStores[9]).t.C5Dbwn);
+      obj37[1] = function render() {
+        const obj = { guildId: closure_0 };
+        return outer1_9(obj(outer1_2[46]), obj);
+      };
+      obj[outer1_7.ROLE_SUBSCRIPTIONS_EMOJIS] = obj37;
+      const obj38 = { title: null, render: null };
+      const intl35 = bottom(stateFromStores[9]).intl;
+      obj38[0] = intl35.string(bottom(stateFromStores[9]).t["KzCF/6"]);
+      obj38[1] = function render(arg0) {
+        const obj = {};
+        const merged = Object.assign(arg0);
+        obj.guildId = closure_0;
+        return outer1_9(obj(outer1_2[47]), obj);
+      };
+      obj[outer1_7.ROLE_SUBSCRIPTIONS_TIER_TEMPLATE_SELECTION] = obj38;
+      const obj39 = { title: null, render: null };
+      const intl36 = bottom(stateFromStores[9]).intl;
+      obj39[0] = intl36.string(bottom(stateFromStores[9]).t.xHEzFh);
+      obj39[1] = function render() {
+        const obj = { guildId: closure_0 };
+        return outer1_9(obj(outer1_2[48]), obj);
+      };
+      obj[outer1_7.OFFICIAL_MESSAGES] = obj39;
+      tmp2 = obj;
     }
-    return tmp;
+    return tmp2;
   }, items1);
-  const items2 = [stateFromStores, tmp];
+  const items2 = [stateFromStores, tmp2];
   const effect = React.useEffect(() => {
-    tmp = null != tmp;
+    let tmp = null != tmp2;
     if (tmp) {
       tmp = null != stateFromStores;
     }
     if (!tmp) {
-      tmp(stateFromStores[7]).close();
-      const obj = tmp(stateFromStores[7]);
+      tmp2(stateFromStores[7]).close();
+      const obj = tmp2(stateFromStores[7]);
     }
   }, items2);
-  const first = callback(React.useState(() => outer1_6.getSavedRouteState()), 1)[0];
-  let tmp8Result = null;
+  const first = callback(React.useState(() => store.getSavedRouteState()), 1)[0];
+  let tmp10Result = null;
   if (null != memo) {
-    obj = { onWillFocus: tmp6 };
+    obj = { onWillFocus: null, initialRouteName: null, initialRouteState: null, screens: null };
+    obj[0] = tmp8;
     let LANDING;
     if (null == first) {
       LANDING = constants.LANDING;
     }
-    obj.initialRouteName = LANDING;
+    obj[1] = LANDING;
     let tmp13;
     if (null != first) {
       tmp13 = first;
     }
-    obj.initialRouteState = tmp13;
-    obj.screens = memo;
-    tmp8Result = jsx(bottom(stateFromStores[52]).Navigator, { onWillFocus: tmp6 });
-    const tmp8 = jsx;
+    obj[2] = tmp13;
+    obj[3] = memo;
+    tmp10Result = jsx(bottom(stateFromStores[52]).Navigator, { onWillFocus: null, initialRouteName: null, initialRouteState: null, screens: null });
+    const tmp10 = jsx;
   }
-  return tmp8Result;
+  return tmp10Result;
 };

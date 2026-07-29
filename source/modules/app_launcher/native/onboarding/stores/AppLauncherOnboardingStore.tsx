@@ -1,94 +1,48 @@
-// Module ID: 11195
-// Function ID: 86853
-// Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 1850, 21, 11193, 5686, 566, 686, 2]
+// Module ID: 11219
+// Function ID: 11220
+// Name: initialize
+// Dependencies: [1874, 11, 11217, 5704, 589, 709, 2]
 
-// Module 11195 (_isNativeReflectConstruct)
-import DISCORD_EPOCH from "DISCORD_EPOCH";
-import result from "result";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 11219 (initialize)
+import mergeGuildAvatar from "mergeGuildAvatar";
+import { Store } from "initialize";
 
 const require = arg1;
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
-  }
-  const result = _isNativeReflectConstruct();
+class AppLauncherOnboardingStore extends Store {
 }
-let tmp2 = ((Store) => {
-  class AppLauncherOnboardingStore {
-    constructor() {
-      self = this;
-      tmp = outer1_5(this, AppLauncherOnboardingStore);
-      obj = outer1_8(AppLauncherOnboardingStore);
-      tmp2 = outer1_7;
-      if (outer1_11()) {
-        tmp6 = globalThis;
-        _Reflect = Reflect;
-        tmp7 = outer1_8;
-        tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, outer1_8(self).constructor);
-      } else {
-        tmp3 = arguments;
-        tmp4 = arguments;
-        constructResult = obj(...arguments);
-      }
-      return tmp2(self, constructResult);
-    }
-  }
-  callback2(AppLauncherOnboardingStore, Store);
-  let obj = {
-    key: "initialize",
-    value() {
-      this.waitFor(outer1_10);
-    }
-  };
-  const items = [obj, , ];
-  obj = {
-    key: "getRecentMessageMetadata",
-    value() {
-      return outer1_3;
-    }
-  };
-  items[1] = obj;
-  obj = {
-    key: "getRecentApplicationCommandMetadata",
-    value() {
-      return outer1_4;
-    }
-  };
-  items[2] = obj;
-  return callback(AppLauncherOnboardingStore, items);
-})(require("initialize").Store);
-tmp2.displayName = "AppLauncherOnboardingStore";
-tmp2 = new tmp2(require("dispatcher"), {
+const prototype = AppLauncherOnboardingStore.prototype;
+prototype["initialize"] = function initialize() {
+  this.waitFor(mergeGuildAvatar);
+};
+prototype["getRecentMessageMetadata"] = function getRecentMessageMetadata() {
+  return closure_3;
+};
+prototype["getRecentApplicationCommandMetadata"] = function getRecentApplicationCommandMetadata() {
+  return closure_4;
+};
+AppLauncherOnboardingStore.displayName = "AppLauncherOnboardingStore";
+const appLauncherOnboardingStore = new AppLauncherOnboardingStore(require("dispatcher"), {
   APPLICATION_COMMAND_USED: function handleApplicationCommandUsed(context) {
     let command;
     let commandOrigin;
     context = context.context;
     ({ command, commandOrigin } = context);
-    let tmp = commandOrigin !== require(5686) /* ApplicationCommandSectionType */.CommandOrigin.APPLICATION_LAUNCHER;
+    let tmp = commandOrigin !== require(5704) /* ApplicationCommandSectionType */.CommandOrigin.APPLICATION_LAUNCHER;
     if (tmp) {
       tmp = null != context.channel;
     }
     if (tmp) {
-      const obj = {};
+      const obj = { timeMs: null, applicationId: null, guildId: null, channelId: null };
       const _Date = Date;
-      obj.timeMs = Date.now();
-      obj.applicationId = command.applicationId;
+      obj[0] = Date.now();
+      obj[1] = command.applicationId;
       const guild = context.guild;
       let id;
-      if (null != guild) {
+      if (guild != null) {
         id = guild.id;
       }
-      obj.guildId = id;
-      obj.channelId = context.channel.id;
+      obj[2] = id;
+      obj[3] = context.channel.id;
     }
   },
   MESSAGE_CREATE: function handleMessageCreate(message) {
@@ -101,12 +55,15 @@ tmp2 = new tmp2(require("dispatcher"), {
       if (null != currentUser.id) {
         if (null != message.author) {
           if (currentUser.id === message.author.id) {
-            let obj = importDefault(21);
+            let obj = importDefault(11);
             const extractTimestampResult = obj.extractTimestamp(message.id);
             const _Date = Date;
             const timestamp = Date.now();
-            if (timestamp <= extractTimestampResult + require(11193) /* result */.RECENT_MESSAGE_MS) {
-              obj = { timeMs: extractTimestampResult, guildId, channelId };
+            if (timestamp <= extractTimestampResult + require(11217) /* result */.RECENT_MESSAGE_MS) {
+              obj = { timeMs: null, guildId: null, channelId: null };
+              obj[0] = extractTimestampResult;
+              obj[1] = guildId;
+              obj[2] = channelId;
             }
           }
         }
@@ -114,6 +71,6 @@ tmp2 = new tmp2(require("dispatcher"), {
     }
   }
 });
-let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/app_launcher/native/onboarding/stores/AppLauncherOnboardingStore.tsx");
+const result = require("result").fileFinishedImporting("modules/app_launcher/native/onboarding/stores/AppLauncherOnboardingStore.tsx");
 
-export default tmp2;
+export default appLauncherOnboardingStore;

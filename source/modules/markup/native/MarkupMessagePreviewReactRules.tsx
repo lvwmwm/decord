@@ -1,23 +1,23 @@
-// Module ID: 10262
-// Function ID: 79263
+// Module ID: 10283
+// Function ID: 10284
 // Name: defaultReactFn
-// Dependencies: [31, 10263, 33, 4160, 9969, 10264, 5546, 4598, 4600, 10269, 5119, 478, 10270, 10271, 1273, 4029, 9655, 4647, 10272, 2]
+// Dependencies: [19, 10284, 21, 4184, 9991, 10285, 5564, 4620, 4622, 10290, 5141, 501, 10291, 10292, 1297, 4053, 9677, 4669, 10293, 2]
 // Exports: default
 
-// Module 10262 (defaultReactFn)
-import "result";
+// Module 10283 (defaultReactFn)
+import "set";
 import { MUTED_OPACITY_CONTENT } from "hairlineWidth";
 import jsxProd from "jsxProd";
 
-let closure_4;
-let closure_5;
+let c4;
+let c5;
 const require = arg1;
 function defaultReactFn(content, output, state) {
-  if ("string" === typeof content.content) {
+  if (typeof content.content === "y") {
     content = content.content;
   } else {
-    content = require(9969) /* smartOutput */.smartOutput(content, output, state);
-    const obj = require(9969) /* smartOutput */;
+    content = require(9991) /* smartOutput */.smartOutput(content, output, state);
+    const obj = require(9991) /* smartOutput */;
   }
   return content;
 }
@@ -33,54 +33,54 @@ function createMessagePreviewReactRules(iconColor) {
   obj = { react: defaultReactFn };
   obj = {};
   const merged = Object.assign(importDefault(customEmojiSize[8]).RULES[iconColor(undefined, customEmojiSize[7]).AST_KEY.STRIKETHROUGH]);
-  obj["react"] = defaultReactFn;
+  obj.react = defaultReactFn;
   obj[iconColor(customEmojiSize[7]).AST_KEY.STRIKETHROUGH] = obj;
   let obj1 = {};
   const merged1 = Object.assign(importDefault(customEmojiSize[8]).RULES[iconColor(undefined, customEmojiSize[7]).AST_KEY.UNDERLINE]);
-  obj1["react"] = defaultReactFn;
+  obj1.react = defaultReactFn;
   obj[iconColor(customEmojiSize[7]).AST_KEY.UNDERLINE] = obj1;
   let obj2 = {};
   const merged2 = Object.assign(importDefault(customEmojiSize[8]).RULES[iconColor(undefined, customEmojiSize[7]).AST_KEY.ITALICS]);
-  obj2["react"] = defaultReactFn;
+  obj2.react = defaultReactFn;
   obj[iconColor(customEmojiSize[7]).AST_KEY.ITALICS] = obj2;
-  let obj3 = {};
+  const obj3 = {};
   const merged3 = Object.assign(importDefault(customEmojiSize[8]).RULES[iconColor(undefined, customEmojiSize[7]).AST_KEY.STRONG]);
-  obj3["react"] = defaultReactFn;
+  obj3.react = defaultReactFn;
   obj[iconColor(customEmojiSize[7]).AST_KEY.STRONG] = obj3;
-  let obj4 = {};
+  const obj4 = {};
   const merged4 = Object.assign(importDefault(customEmojiSize[8]).RULES[iconColor(undefined, customEmojiSize[7]).AST_KEY.LINK]);
-  obj4["react"] = defaultReactFn;
+  obj4.react = defaultReactFn;
   obj[iconColor(customEmojiSize[7]).AST_KEY.LINK] = obj4;
   const obj5 = {};
   const merged5 = Object.assign(importDefault(customEmojiSize[8]).RULES[iconColor(undefined, customEmojiSize[7]).AST_KEY.URL]);
-  obj5["react"] = defaultReactFn;
+  obj5.react = defaultReactFn;
   obj[iconColor(customEmojiSize[7]).AST_KEY.URL] = obj5;
   const obj6 = {};
   const merged6 = Object.assign(importDefault(customEmojiSize[8]).RULES[iconColor(undefined, customEmojiSize[7]).AST_KEY.AUTOLINK]);
-  obj6["react"] = defaultReactFn;
+  obj6.react = defaultReactFn;
   obj[iconColor(customEmojiSize[7]).AST_KEY.AUTOLINK] = obj6;
   const obj7 = {};
   const merged7 = Object.assign(importDefault(customEmojiSize[8]).RULES[iconColor(undefined, customEmojiSize[7]).AST_KEY.LINE_BREAK]);
-  obj7["react"] = function react() {
+  obj7.react = function react() {
     return "\n";
   };
   obj[iconColor(customEmojiSize[7]).AST_KEY.LINE_BREAK] = obj7;
   obj[iconColor(customEmojiSize[7]).AST_KEY.HIGHLIGHT] = {
     react(node, output, key) {
-      const obj = {};
-      const tmp = outer1_1(customEmojiSize[9]);
-      obj.children = iconColor(customEmojiSize[4]).smartOutput(node, output, key);
-      return outer1_4(tmp, obj, key.key);
+      const obj = { children: null };
+      const tmp = callback(customEmojiSize[9]);
+      obj[0] = iconColor(customEmojiSize[4]).smartOutput(node, output, key);
+      return callback2(tmp, obj, key.key);
     }
   };
   const obj8 = {};
   const merged8 = Object.assign(importDefault(customEmojiSize[8]).RULES[iconColor(undefined, customEmojiSize[7]).AST_KEY.BLOCK_QUOTE]);
-  obj8["react"] = defaultReactFn;
+  obj8.react = defaultReactFn;
   obj[iconColor(customEmojiSize[7]).AST_KEY.BLOCK_QUOTE] = obj8;
   const obj9 = {};
   const merged9 = Object.assign(importDefault(customEmojiSize[8]).RULES[iconColor(undefined, customEmojiSize[7]).AST_KEY.PARAGRAPH]);
-  obj9["order"] = 600;
-  obj9["react"] = defaultReactFn;
+  obj9.order = 600;
+  obj9.react = defaultReactFn;
   obj[iconColor(customEmojiSize[7]).AST_KEY.PARAGRAPH] = obj9;
   obj[iconColor(customEmojiSize[7]).AST_KEY.EMOJI] = {
     react(surrogate) {
@@ -92,30 +92,29 @@ function createMessagePreviewReactRules(iconColor) {
       if (src.src) {
         let obj = iconColor(customEmojiSize[5]);
         const sizeStyle = obj.makeSizeStyle(customEmojiSize);
-        obj = {};
-        const items = [sizeStyle, , , ];
-        obj = { resizeMode: "contain" };
-        items[1] = obj;
-        let obj3 = iconColor(customEmojiSize[11]);
-        let isAndroidResult = obj3.isAndroid();
+        const items = [sizeStyle, { resizeMode: "contain" }, , ];
+        let obj1 = iconColor(customEmojiSize[11]);
+        let isAndroidResult = obj1.isAndroid();
         if (isAndroidResult) {
-          const obj1 = {};
-          const obj2 = { translateY: 3 };
-          const items1 = [obj2];
-          obj1.transform = items1;
-          isAndroidResult = obj1;
+          obj = { transform: null };
+          const items1 = [{ translateY: 3 }];
+          obj[0] = items1;
+          isAndroidResult = obj;
         }
         items[2] = isAndroidResult;
         muted = muted.muted;
         if (muted) {
-          obj3 = { opacity: outer1_3 };
-          muted = obj3;
+          obj = { opacity: null };
+          obj[0] = outer1_3;
+          muted = obj;
         }
+        obj1 = { style: null, source: null };
         items[3] = muted;
-        obj.style = items;
-        const obj4 = { uri: src.src };
-        obj.source = obj4;
-        return outer1_4(outer1_1(customEmojiSize[10]), obj, muted.key);
+        obj1[0] = items;
+        const obj2 = { uri: null };
+        obj2[0] = src.src;
+        obj1[1] = obj2;
+        return outer1_4(outer1_1(customEmojiSize[10]), obj1, muted.key);
       } else {
         return src.alt;
       }
@@ -123,10 +122,10 @@ function createMessagePreviewReactRules(iconColor) {
   };
   obj[iconColor(customEmojiSize[7]).AST_KEY.SPOILER] = {
     react(node, output, muted) {
-      const obj = { disableReveal: true, muted: muted.muted };
-      const tmp = outer1_1(customEmojiSize[12]);
-      obj.children = iconColor(customEmojiSize[4]).smartOutput(node, output, muted);
-      return outer1_4(tmp, obj, muted.key);
+      const obj = { disableReveal: true, muted: muted.muted, children: null };
+      const tmp = callback(customEmojiSize[12]);
+      obj[2] = iconColor(customEmojiSize[4]).smartOutput(node, output, muted);
+      return callback2(tmp, obj, muted.key);
     }
   };
   obj[iconColor(customEmojiSize[7]).AST_KEY.STATIC_ROUTE_LINK] = {
@@ -134,85 +133,86 @@ function createMessagePreviewReactRules(iconColor) {
       let smartOutputResult = null;
       if (obj.isStaticRouteIconType(channelId.channelId)) {
         smartOutputResult = iconColor(customEmojiSize[4]).smartOutput(channelId, output, state);
-        const obj2 = iconColor(customEmojiSize[4]);
+        const tmpResult = iconColor(customEmojiSize[4]);
       }
       return smartOutputResult;
     }
   };
   const obj10 = {};
   const merged10 = Object.assign(importDefault(customEmojiSize[8]).RULES[iconColor(undefined, customEmojiSize[7]).AST_KEY.INLINE_CODE]);
-  obj10["react"] = defaultReactFn;
+  obj10.react = defaultReactFn;
   obj[iconColor(customEmojiSize[7]).AST_KEY.INLINE_CODE] = obj10;
   const obj11 = {};
   const merged11 = Object.assign(importDefault(customEmojiSize[8]).RULES[iconColor(undefined, customEmojiSize[7]).AST_KEY.CODE_BLOCK]);
-  obj11["parse"] = function parse(arg0, arg1, arg2) {
-    const parsed = outer1_1(customEmojiSize[8]).RULES[iconColor(undefined, customEmojiSize[7]).AST_KEY.CODE_BLOCK].parse(arg0, arg1, arg2);
+  obj11.parse = function parse(arg0, arg1, arg2) {
+    const parsed = callback(customEmojiSize[8]).RULES[iconColor(undefined, customEmojiSize[7]).AST_KEY.CODE_BLOCK].parse(arg0, arg1, arg2);
     if ("ansi" === str.toLowerCase()) {
       const content = parsed.content;
-      parsed.content = content.replaceAll(outer1_6, "");
+      parsed.content = content.replaceAll(closure_6, "");
     }
     return parsed;
   };
-  obj11["react"] = defaultReactFn;
+  obj11.react = defaultReactFn;
   obj[iconColor(customEmojiSize[7]).AST_KEY.CODE_BLOCK] = obj11;
   const obj12 = {};
   const merged12 = Object.assign(importDefault(customEmojiSize[8]).RULES[iconColor(undefined, customEmojiSize[7]).AST_KEY.MENTION]);
-  obj12["react"] = defaultReactFn;
+  obj12.react = defaultReactFn;
   obj[iconColor(customEmojiSize[7]).AST_KEY.MENTION] = obj12;
   const obj13 = {};
   const merged13 = Object.assign(importDefault(customEmojiSize[8]).RULES[iconColor(undefined, customEmojiSize[7]).AST_KEY.CHANNEL_MENTION]);
-  obj13["react"] = iconColor(customEmojiSize[13]).inlineChannelMentionReact;
+  obj13.react = iconColor(customEmojiSize[13]).inlineChannelMentionReact;
   obj[iconColor(customEmojiSize[7]).AST_KEY.CHANNEL_MENTION] = obj13;
   const obj14 = {};
   const merged14 = Object.assign(importDefault(customEmojiSize[8]).RULES[iconColor(undefined, customEmojiSize[7]).AST_KEY.ATTACHMENT_LINK]);
-  obj14["react"] = function react(node, output, key) {
-    let obj = {};
+  obj14.react = function react(node, output, key) {
+    let obj = iconColor(customEmojiSize[15]);
     let str = "\u{1F4CE} ";
-    if (!obj2.isFabric()) {
-      obj = { color: iconColor, size: closure_1 };
-      str = outer1_4(iconColor(customEmojiSize[16]).AttachmentIcon, obj);
+    if (!obj.isFabric()) {
+      obj = { color: null, size: null };
+      obj[0] = iconColor;
+      obj[1] = closure_1;
+      str = outer1_4(tmp2(tmp3[16]).AttachmentIcon, obj);
     }
-    const items = [str, ];
-    obj2 = iconColor(customEmojiSize[15]);
-    const tmp = outer1_5;
-    items[1] = iconColor(customEmojiSize[4]).smartOutput(node, output, key);
-    obj.children = items;
-    return tmp(iconColor(customEmojiSize[14]).LegacyText, obj, key.key);
+    obj = { children: null };
+    const items = [str, iconColor(customEmojiSize[4]).smartOutput(node, output, key)];
+    obj[0] = items;
+    return outer1_5(iconColor(customEmojiSize[14]).LegacyText, obj, key.key);
   };
   obj[iconColor(customEmojiSize[7]).AST_KEY.ATTACHMENT_LINK] = obj14;
   const obj15 = {};
   const merged15 = Object.assign(importDefault(customEmojiSize[8]).RULES[iconColor(undefined, customEmojiSize[7]).AST_KEY.SOUNDBOARD]);
-  obj15["react"] = defaultReactFn;
+  obj15.react = defaultReactFn;
   obj[iconColor(customEmojiSize[7]).AST_KEY.SOUNDBOARD] = obj15;
   obj[iconColor(customEmojiSize[7]).AST_KEY.GUILD] = { react: defaultReactFn };
-  const obj16 = {};
-  let obj19 = iconColor(customEmojiSize[13]);
-  let obj20 = iconColor(customEmojiSize[15]);
+  let obj18 = iconColor(customEmojiSize[13]);
+  let obj19 = iconColor(customEmojiSize[15]);
   let str = "\u{1F4AC}";
-  if (!obj20.isFabric()) {
-    const obj17 = { source: importDefault(customEmojiSize[17]), size: iconColor.channelIconSize, themedColor: iconColor };
-    str = callback(iconColor(customEmojiSize[14]).ThemedIcon, obj17);
+  if (!obj19.isFabric()) {
+    const obj16 = { source: null, size: null, themedColor: null };
+    obj16[0] = tmp4(tmp2[17]);
+    obj16[1] = iconColor.channelIconSize;
+    obj16[2] = iconColor;
+    str = callback(tmp(tmp2[14]).ThemedIcon, obj16);
   }
-  obj16.react = obj19.createInlineChannelReact(str);
-  obj[iconColor(customEmojiSize[7]).AST_KEY.CHANNEL] = obj16;
-  const obj18 = {};
-  const merged16 = Object.assign(importDefault(customEmojiSize[8]).RULES[iconColor(undefined, customEmojiSize[7]).AST_KEY.COMMAND_MENTION]);
-  obj18["react"] = function react(node, output, key) {
-    const obj = {};
+  obj[iconColor(customEmojiSize[7]).AST_KEY.CHANNEL] = { react: obj18.createInlineChannelReact(str) };
+  obj18 = {};
+  const merged16 = Object.assign(tmp4(tmp2[8]).RULES[tmp(undefined, tmp2[7]).AST_KEY.COMMAND_MENTION]);
+  obj18.react = function react(node, output, key) {
+    const obj = { children: null };
     const items = ["/", iconColor(customEmojiSize[4]).smartOutput(node, output, key)];
-    obj.children = items;
-    return outer1_5(iconColor(customEmojiSize[14]).LegacyText, obj, key.key);
+    obj[0] = items;
+    return callback3(iconColor(customEmojiSize[14]).LegacyText, obj, key.key);
   };
   obj[iconColor(customEmojiSize[7]).AST_KEY.COMMAND_MENTION] = obj18;
   obj19 = {};
-  const merged17 = Object.assign(importDefault(customEmojiSize[8]).RULES[iconColor(undefined, customEmojiSize[7]).AST_KEY.TIMESTAMP]);
-  obj19["react"] = function react(node, arg1, key) {
-    return outer1_4(outer1_1(customEmojiSize[18]), { node, style: null }, key.key);
+  const merged17 = Object.assign(tmp4(tmp2[8]).RULES[tmp(undefined, tmp2[7]).AST_KEY.TIMESTAMP]);
+  obj19.react = function react(node, arg1, key) {
+    return callback2(callback(customEmojiSize[18]), { node, style: null }, key.key);
   };
   obj[iconColor(customEmojiSize[7]).AST_KEY.TIMESTAMP] = obj19;
-  obj20 = {};
-  const merged18 = Object.assign(importDefault(customEmojiSize[8]).RULES[iconColor(undefined, customEmojiSize[7]).AST_KEY.LIST]);
-  obj20["react"] = function react(arg0, output, state) {
+  const obj20 = {};
+  const merged18 = Object.assign(tmp4(tmp2[8]).RULES[tmp(undefined, tmp2[7]).AST_KEY.LIST]);
+  obj20.react = function react(arg0, output, state) {
     const first = arg0.items[0];
     let first1 = first;
     if (Array.isArray(first)) {
@@ -230,25 +230,24 @@ function createMessagePreviewReactRules(iconColor) {
   obj[iconColor(customEmojiSize[7]).AST_KEY.SUBTEXT] = { react: defaultReactFn };
   return obj;
 }
-({ jsx: closure_4, jsxs: closure_5 } = jsxProd);
-const regExp = new RegExp(require("_createForOfIteratorHelperLoose").ANSI_CONTROL_SEQUENCE_RE, "g");
+({ jsx: c4, jsxs: c5 } = jsxProd);
+const regExp = new RegExp(require("regExp").ANSI_CONTROL_SEQUENCE_RE, "g");
 const result = require("jsxProd").fileFinishedImporting("modules/markup/native/MarkupMessagePreviewReactRules.tsx");
 
 export default function createChannelListMessagePreviewReactRules(layout, iconColor) {
-  let obj = require(10264) /* getLayoutStyles */;
+  let obj = require(10285) /* getLayoutStyles */;
   const layoutStyles = obj.getLayoutStyles(layout);
   let bound = arg2;
   if (null != arg3) {
     const _Math = Math;
     bound = Math.min(arg2, arg3);
   }
-  obj = { iconColor, iconSize: layoutStyles.messagePreview.messageTypeIconSizeNew, channelIconSize: layoutStyles.messagePreview.messageTypeIconSize };
-  const tmp5 = require(5546) /* ICON_SIZE */.ICON_SIZE[layoutStyles.messagePreview.messageTypeIconSizeNew];
-  let num = 0;
-  if (null != tmp5) {
-    num = tmp5;
+  obj = { iconColor, iconSize: layoutStyles.messagePreview.messageTypeIconSizeNew, channelIconSize: layoutStyles.messagePreview.messageTypeIconSize, customEmojiSize: null };
+  let num = require(5564) /* ICON_SIZE */.ICON_SIZE[layoutStyles.messagePreview.messageTypeIconSizeNew];
+  if (num == null) {
+    num = 0;
   }
-  obj.customEmojiSize = num * bound;
+  obj[3] = num * bound;
   return createMessagePreviewReactRules(obj);
 };
 export { createMessagePreviewReactRules };

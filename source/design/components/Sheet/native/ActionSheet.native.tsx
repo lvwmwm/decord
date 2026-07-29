@@ -1,27 +1,25 @@
-// Module ID: 5533
-// Function ID: 47040
+// Module ID: 5551
+// Function ID: 5552
 // Name: ActionSheet
-// Dependencies: [31, 33, 4165, 689, 5221, 2]
+// Dependencies: [19, 21, 4189, 712, 5243, 2]
 
-// Module 5533 (ActionSheet)
+// Module 5551 (ActionSheet)
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import importAllResult from "result";
+import createCacheKey from "createCacheKey";
+import importAllResult from "noop";
 
 const require = arg1;
-let obj = {};
-obj = { paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16 };
-obj.content = obj;
-obj.body = { gap: 24 };
-let closure_3 = _createForOfIteratorHelperLoose.createStyles(obj);
-const forwardRefResult = require("result").forwardRef((arg0, ref) => {
-  const tmp = callback();
+let obj = { content: null, body: null };
+obj = { paddingHorizontal: require("Themes").space.PX_16 };
+obj[0] = obj;
+obj[1] = { gap: 24 };
+let closure_3 = createCacheKey.createStyles(obj);
+const forwardRefResult = require("noop").forwardRef((arg0, ref) => {
   const obj = { ref };
   const merged = Object.assign(arg0);
-  obj["contentStyles"] = tmp.content;
-  obj["bodyStyles"] = tmp.body;
-  return jsx(require(5221) /* Background */.BottomSheet, { ref });
+  ({ content: obj.contentStyles, body: obj.bodyStyles } = callback());
+  return jsx(require(5243) /* Background */.BottomSheet, { ref });
 });
-const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("design/components/Sheet/native/ActionSheet.native.tsx");
+const result = require("createCacheKey").fileFinishedImporting("design/components/Sheet/native/ActionSheet.native.tsx");
 
 export const ActionSheet = forwardRefResult;

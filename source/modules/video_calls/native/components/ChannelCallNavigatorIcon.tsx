@@ -1,35 +1,35 @@
-// Module ID: 10698
-// Function ID: 83216
+// Module ID: 10722
+// Function ID: 10723
 // Name: ChannelCallNavigatorIcon
-// Dependencies: [31, 27, 10214, 653, 33, 4165, 689, 4695, 4011, 4568, 1273, 2]
+// Dependencies: [19, 17, 10235, 676, 21, 4189, 712, 4717, 4035, 4590, 1297, 2]
 // Exports: default
 
-// Module 10698 (ChannelCallNavigatorIcon)
-import "result";
+// Module 10722 (ChannelCallNavigatorIcon)
+import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
-import { resetFocusTimer } from "resetFocusTimer";
+import { resetFocusTimer } from "VoiceChatDrawerState";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_3;
-let closure_4;
+let c3;
+let c4;
 let closure_6;
-let closure_7;
+let error;
 const require = arg1;
-({ View: closure_3, StyleSheet: closure_4 } = get_ActivityIndicator);
-({ jsx: closure_6, jsxs: closure_7 } = jsxProd);
-_createForOfIteratorHelperLoose = { pressableContainer: { marginHorizontal: 4 } };
-_createForOfIteratorHelperLoose = { borderRadius: require("_createForOfIteratorHelperLoose").radii.lg };
-_createForOfIteratorHelperLoose.pressable = _createForOfIteratorHelperLoose;
-let obj1 = { flexDirection: "row", height: 32, width: 32, borderRadius: require("_createForOfIteratorHelperLoose").radii.lg, alignItems: "center", justifyContent: "center", overflow: "hidden", backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW };
-_createForOfIteratorHelperLoose.container = obj1;
-let obj2 = { marginLeft: 4, fontSize: 14, fontFamily: require("ME").Fonts.PRIMARY_SEMIBOLD, color: require("_createForOfIteratorHelperLoose").colors.WHITE };
-_createForOfIteratorHelperLoose.text = obj2;
-_createForOfIteratorHelperLoose.disabled = { opacity: 0.5 };
-_createForOfIteratorHelperLoose.iconColor = { color: require("_createForOfIteratorHelperLoose").colors.ICON_SUBTLE };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-let obj3 = { color: require("_createForOfIteratorHelperLoose").colors.ICON_SUBTLE };
-const result = require("resetFocusTimer").fileFinishedImporting("modules/video_calls/native/components/ChannelCallNavigatorIcon.tsx");
+({ View: c3, StyleSheet: c4 } = get_ActivityIndicator);
+({ jsx: closure_6, jsxs: error } = jsxProd);
+createCacheKey = { pressableContainer: { marginHorizontal: 4 }, pressable: null, container: null, text: null, disabled: null, iconColor: null };
+createCacheKey = { borderRadius: require("Themes").radii.lg };
+createCacheKey[1] = createCacheKey;
+createCacheKey[2] = { flexDirection: "row", height: 32, width: 32, borderRadius: require("Themes").radii.lg, alignItems: "center", justifyContent: "center", overflow: "hidden", backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW };
+let obj1 = { flexDirection: "row", height: 32, width: 32, borderRadius: require("Themes").radii.lg, alignItems: "center", justifyContent: "center", overflow: "hidden", backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW };
+createCacheKey[3] = { marginLeft: 4, fontSize: 14, fontFamily: require("ME").Fonts.PRIMARY_SEMIBOLD, color: require("Themes").colors.WHITE };
+createCacheKey[4] = { opacity: 0.5 };
+let obj2 = { marginLeft: 4, fontSize: 14, fontFamily: require("ME").Fonts.PRIMARY_SEMIBOLD, color: require("Themes").colors.WHITE };
+createCacheKey[5] = { color: require("Themes").colors.ICON_SUBTLE };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let obj3 = { color: require("Themes").colors.ICON_SUBTLE };
+const result = require("VoiceChatDrawerState").fileFinishedImporting("modules/video_calls/native/components/ChannelCallNavigatorIcon.tsx");
 
 export default function ChannelCallNavigatorIcon(disableBackground) {
   let accessibilityLabel;
@@ -49,8 +49,8 @@ export default function ChannelCallNavigatorIcon(disableBackground) {
     flag = true;
   }
   const IconComponent = disableBackground.IconComponent;
-  const tmp = _createForOfIteratorHelperLoose();
-  let obj = { style: tmp.pressableContainer };
+  const tmp = createCacheKey();
+  let obj = { style: tmp.pressableContainer, children: null };
   obj = {
     accessibilityRole: "button",
     accessibilityLabel,
@@ -58,48 +58,54 @@ export default function ChannelCallNavigatorIcon(disableBackground) {
     style: tmp.pressable,
     onPress() {
       if (null != outer1_5) {
-        outer1_5();
+        tmp();
       }
       callback();
-    }
+    },
+    children: null
   };
-  obj = {};
   const items = [tmp.container, disableBackground.containerStyle, ];
   if (disabled) {
     disabled = tmp.disabled;
   }
+  obj = { style: items, children: null };
   items[2] = disabled;
-  obj.style = items;
-  let obj3 = require(4011) /* AccessibilityAnnouncer */;
-  let tmp5 = null;
-  if (obj3.isThemeDark(theme)) {
-    tmp5 = null;
+  let tmp2Result = null;
+  if (tmp5Result.isThemeDark(theme)) {
+    tmp2Result = null;
     if (!flag) {
-      const obj1 = { blurTheme: "dark", style: absoluteFill.absoluteFill };
-      tmp5 = callback(importDefault(4568), obj1);
+      const obj1 = { blurTheme: "dark", style: null };
+      obj1[1] = absoluteFill.absoluteFill;
+      tmp2Result = tmp2(importDefault(4590), obj1);
     }
   }
-  const items1 = [tmp5, , ];
+  const items1 = [tmp2Result, , ];
   if (null != IconComponent) {
-    const obj2 = { color: tmp.iconColor.color, size: "sm" };
-    let tmp13 = callback(IconComponent, obj2);
+    const obj2 = { color: null, size: "sm" };
+    obj2[0] = tmp.iconColor.color;
+    tmp2Result = tmp2(IconComponent, obj2);
   } else {
-    obj3 = { source, color: tmp.iconColor.color, size: require(1273) /* Button */.Icon.Sizes.SMALL_20 };
-    tmp13 = callback(require(1273) /* Button */.Icon, obj3);
+    const obj3 = { source: null, color: null, size: null };
+    obj3[0] = source;
+    obj3[1] = tmp.iconColor.color;
+    obj3[2] = tmp5(1297).Icon.Sizes.SMALL_20;
+    tmp2Result = tmp2(tmp5(1297).Icon, obj3);
   }
-  items1[1] = tmp13;
-  let tmp15 = null != membersCount;
-  if (tmp15) {
-    tmp15 = membersCount > 0;
+  items1[1] = tmp2Result;
+  let tmp2Result1 = null != membersCount;
+  if (tmp2Result1) {
+    tmp2Result1 = membersCount > 0;
   }
-  if (tmp15) {
-    const obj4 = { style: tmp.text, children: membersCount };
-    tmp15 = callback(require(1273) /* Button */.LegacyText, obj4);
+  if (tmp2Result1) {
+    const obj4 = { style: null, children: null };
+    obj4[0] = tmp.text;
+    obj4[1] = membersCount;
+    tmp2Result1 = tmp2(tmp5(1297).LegacyText, obj4);
   }
-  items1[2] = tmp15;
-  obj.children = items1;
+  items1[2] = tmp2Result1;
+  obj[1] = items1;
   const items2 = [closure_7(closure_3, obj), children];
-  obj.children = items2;
-  obj.children = closure_7(require(4695) /* PressableBase */.PressableOpacity, obj);
-  return callback(closure_3, obj);
+  obj[5] = items2;
+  obj[1] = closure_7(require(4717) /* PressableBase */.PressableOpacity, obj);
+  return closure_6(closure_3, obj);
 };

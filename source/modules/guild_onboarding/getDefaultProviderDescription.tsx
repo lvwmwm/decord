@@ -1,20 +1,20 @@
-// Module ID: 5514
-// Function ID: 46923
+// Module ID: 5532
+// Function ID: 5533
 // Name: getDefaultProviderDescription
-// Dependencies: [653, 1212, 2]
+// Dependencies: [676, 1236, 2]
 // Exports: default
 
-// Module 5514 (getDefaultProviderDescription)
+// Module 5532 (getDefaultProviderDescription)
 import { PlatformTypes } from "ME";
 
 const result = require("set").fileFinishedImporting("modules/guild_onboarding/getDefaultProviderDescription.tsx");
 
 export default function getDefaultProviderDescription(arg0) {
   if (PlatformTypes.TWITCH === arg0) {
-    const intl2 = require(1212) /* getSystemLocale */.intl;
-    return intl2.string(require(1212) /* getSystemLocale */.t["D/wRWb"]);
-  } else if (PlatformTypes.YOUTUBE === arg0) {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(require(1212) /* getSystemLocale */.t.TC0upt);
+    const intl2 = require(1236) /* getSystemLocale */.intl;
+    return intl2.string(require(1236) /* getSystemLocale */.t["D/wRWb"]);
+  } else if (tmp.YOUTUBE === arg0) {
+    const intl = require(1236) /* getSystemLocale */.intl;
+    return intl.string(require(1236) /* getSystemLocale */.t.TC0upt);
   }
 };

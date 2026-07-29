@@ -1,29 +1,30 @@
-// Module ID: 8043
-// Function ID: 63899
+// Module ID: 8067
+// Function ID: 8068
 // Name: AvatarDecorationSampleV2
-// Dependencies: [31, 27, 33, 4165, 689, 44, 1877, 8044, 7944, 2]
+// Dependencies: [19, 17, 21, 4189, 712, 38, 1901, 8068, 7969, 2]
 // Exports: default
 
-// Module 8043 (AvatarDecorationSampleV2)
-import "result";
+// Module 8067 (AvatarDecorationSampleV2)
+import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_3;
-let closure_4;
-let closure_5;
+let c3;
+let c4;
+let c5;
 let closure_6;
-let closure_7;
+let error;
 const require = arg1;
-({ Image: closure_3, View: closure_4 } = get_ActivityIndicator);
-({ jsx: closure_5, Fragment: closure_6, jsxs: closure_7 } = jsxProd);
-let closure_8 = _createForOfIteratorHelperLoose.createStyles((arg0) => {
-  let obj = {};
-  obj = { position: "absolute", height: arg0 * 0.8333333333333334, width: arg0 * 0.8333333333333334, borderRadius: arg0 * 0.8333333333333334 / 2, opacity: 0.8, backgroundColor: importDefault(689).colors.BACKGROUND_BASE_LOWER };
-  obj.avatar = obj;
-  obj.solidAvatar = { opacity: 1 };
-  obj.avatarDecoration = { position: "absolute" };
+({ Image: c3, View: c4 } = get_ActivityIndicator);
+({ jsx: c5, Fragment: closure_6, jsxs: error } = jsxProd);
+let c8 = 0.8333333333333334;
+let closure_9 = createCacheKey.createStyles((arg0) => {
+  let obj = { avatar: null, solidAvatar: null, avatarDecoration: null };
+  obj = { position: "absolute", height: arg0 * c8, width: arg0 * c8, borderRadius: arg0 * c8 / 2, opacity: 0.8, backgroundColor: importDefault(712).colors.BACKGROUND_BASE_LOWER };
+  obj[0] = obj;
+  obj[1] = { opacity: 1 };
+  obj[2] = { position: "absolute" };
   return obj;
 });
 const result = require("jsxProd").fileFinishedImporting("modules/collectibles/native/AvatarDecorationSampleV2.tsx");
@@ -36,10 +37,8 @@ export default function AvatarDecorationSampleV2(arg0) {
   let threeTierBundle;
   ({ item, size, avatarSource } = arg0);
   ({ animate, threeTierBundle } = arg0);
-  const tmp = callback2(size);
-  importDefault(44)(item.type === require(1877) /* CollectiblesItemType */.CollectiblesItemType.AVATAR_DECORATION, "Item must be Avatar Decoration");
-  let obj = {};
-  obj = {};
+  const tmp = callback(size);
+  importDefault(38)(item.type === require(1901) /* CollectiblesItemType */.CollectiblesItemType.AVATAR_DECORATION, "Item must be Avatar Decoration");
   const items = [tmp.avatar, ];
   let solidAvatar = null != avatarSource;
   if (!solidAvatar) {
@@ -48,18 +47,17 @@ export default function AvatarDecorationSampleV2(arg0) {
   if (solidAvatar) {
     solidAvatar = tmp.solidAvatar;
   }
+  let obj = { style: items, resizeMode: "contain", source: null, accessible: false };
   items[1] = solidAvatar;
-  obj.style = items;
-  obj.resizeMode = "contain";
   if (null == avatarSource) {
-    avatarSource = importDefault(8044);
+    avatarSource = tmp2(8068);
   }
-  obj.source = avatarSource;
-  obj.accessible = false;
-  const items1 = [callback(closure_3, obj), ];
-  obj = { style: tmp.avatarDecoration, accessibilityLabel: item.label, children: callback(importDefault(7944), { avatarDecoration: item, size, animate }) };
-  items1[1] = callback(closure_4, obj);
-  obj.children = items1;
+  obj = { children: null };
+  obj[2] = avatarSource;
+  const items1 = [closure_5(closure_3, obj), ];
+  obj = { style: tmp.avatarDecoration, accessibilityLabel: item.label, children: tmp8(tmp2(7969), { avatarDecoration: item, size, animate }) };
+  items1[1] = closure_5(closure_4, obj);
+  obj[0] = items1;
   return closure_7(closure_6, obj);
 };
 export const avatarPlaceholderSizeRatio = 0.8333333333333334;

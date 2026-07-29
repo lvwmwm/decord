@@ -1,107 +1,104 @@
-// Module ID: 13112
-// Function ID: 101206
-// Name: getIcon
-// Dependencies: [31, 27, 33, 4165, 689, 665, 6709, 4121, 6715, 4126, 4161, 2]
+// Module ID: 13135
+// Function ID: 13136
+// Name: HelpMessage
+// Dependencies: [19, 17, 21, 4189, 712, 688, 6730, 4145, 6736, 4150, 4185, 2]
 // Exports: default
 
-// Module 13112 (getIcon)
-import "result";
+// Module 13135 (HelpMessage)
+import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import pad2 from "pad2";
-import pad2 from "pad2";
-import pad2 from "pad2";
-import pad2 from "pad2";
-import pad2 from "pad2";
-import pad2 from "pad2";
-import pad2 from "pad2";
-import pad2 from "pad2";
+import createCacheKey from "createCacheKey";
+import int2hslRaw from "int2hslRaw";
+import int2hslRaw from "int2hslRaw";
+import int2hslRaw from "int2hslRaw";
+import int2hslRaw from "int2hslRaw";
+import int2hslRaw from "int2hslRaw";
+import int2hslRaw from "int2hslRaw";
+import int2hslRaw from "int2hslRaw";
+import int2hslRaw from "int2hslRaw";
 
-let closure_4;
-let closure_5;
+let c4;
+let c5;
 const require = arg1;
-function getIcon(arg0) {
-  if (pad2.WARNING === arg0) {
-    let obj = { color: importDefault(689).unsafe_rawColors.YELLOW_300 };
-    return callback(require(6709) /* CircleErrorIcon */.CircleErrorIcon, obj);
-  } else if (pad2.INFO === arg0) {
-    obj = { color: importDefault(689).unsafe_rawColors.BLUE_345 };
-    return callback(require(4121) /* CircleInformationIcon */.CircleInformationIcon, obj);
-  } else if (pad2.ERROR === arg0) {
-    const obj1 = { color: importDefault(689).unsafe_rawColors.RED_400 };
-    return callback(require(6715) /* CircleXIcon */.CircleXIcon, obj1);
-  } else if (pad2.SUCCESS === arg0) {
-    obj = { color: importDefault(689).unsafe_rawColors.GREEN_400 };
-    return callback(require(4126) /* CircleCheckIcon */.CircleCheckIcon, obj);
-  }
-}
-function useContainerStyle(messageType, warningContainer) {
-  if (pad2.WARNING === messageType) {
-    return warningContainer.warningContainer;
-  } else if (pad2.INFO === messageType) {
-    return warningContainer.infoContainer;
-  } else if (pad2.ERROR === messageType) {
-    return warningContainer.errorContainer;
-  } else {
-    return pad2.SUCCESS === messageType ? warningContainer.successContainer : undefined;
-  }
-}
-({ jsx: closure_4, jsxs: closure_5 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { padding: require("_createForOfIteratorHelperLoose").space.PX_8, borderWidth: 1, borderStyle: "solid", gap: require("_createForOfIteratorHelperLoose").space.PX_8 };
-_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.row = { display: "flex", flexDirection: "row", alignItems: "center" };
-_createForOfIteratorHelperLoose.content = { flex: 1, marginLeft: require("_createForOfIteratorHelperLoose").space.PX_8 };
-const obj2 = {};
-obj2.backgroundColor = pad2.int2rgba(pad2.hex2int(require("_createForOfIteratorHelperLoose").unsafe_rawColors.YELLOW_300), 0.1);
-obj2.borderColor = require("_createForOfIteratorHelperLoose").unsafe_rawColors.YELLOW_300;
-_createForOfIteratorHelperLoose.warningContainer = obj2;
-const obj3 = {};
-obj3.backgroundColor = pad2.int2rgba(pad2.hex2int(require("_createForOfIteratorHelperLoose").unsafe_rawColors.BLUE_345), 0.1);
-obj3.borderColor = require("_createForOfIteratorHelperLoose").unsafe_rawColors.BLUE_345;
-_createForOfIteratorHelperLoose.infoContainer = obj3;
-const obj4 = {};
-obj4.backgroundColor = pad2.int2rgba(pad2.hex2int(require("_createForOfIteratorHelperLoose").unsafe_rawColors.RED_400), 0.1);
-obj4.borderColor = require("_createForOfIteratorHelperLoose").unsafe_rawColors.RED_400;
-_createForOfIteratorHelperLoose.errorContainer = obj4;
-pad2 = {};
-pad2.backgroundColor = pad2.int2rgba(pad2.hex2int(require("_createForOfIteratorHelperLoose").unsafe_rawColors.GREEN_400), 0.1);
-pad2.borderColor = require("_createForOfIteratorHelperLoose").unsafe_rawColors.GREEN_400;
-_createForOfIteratorHelperLoose.successContainer = pad2;
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-pad2 = { WARNING: 0, [0]: "WARNING", INFO: 1, [1]: "INFO", ERROR: 2, [2]: "ERROR", SUCCESS: 3, [3]: "SUCCESS" };
-let obj1 = { flex: 1, marginLeft: require("_createForOfIteratorHelperLoose").space.PX_8 };
+({ jsx: c4, jsxs: c5 } = jsxProd);
+createCacheKey = { container: null, row: null, content: null, warningContainer: null, infoContainer: null, errorContainer: null, successContainer: null };
+createCacheKey = { padding: require("Themes").space.PX_8, borderWidth: 1, borderStyle: "solid", gap: require("Themes").space.PX_8 };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { display: "flex", flexDirection: "row", alignItems: "center" };
+createCacheKey[2] = { flex: 1, marginLeft: require("Themes").space.PX_8 };
+let obj2 = { backgroundColor: null, borderColor: null };
+obj2[0] = int2hslRaw.int2rgba(int2hslRaw.hex2int(require("Themes").unsafe_rawColors.YELLOW_300), 0.1);
+obj2[1] = require("Themes").unsafe_rawColors.YELLOW_300;
+createCacheKey[3] = obj2;
+let obj3 = { backgroundColor: null, borderColor: null };
+obj3[0] = int2hslRaw.int2rgba(int2hslRaw.hex2int(require("Themes").unsafe_rawColors.BLUE_345), 0.1);
+obj3[1] = require("Themes").unsafe_rawColors.BLUE_345;
+createCacheKey[4] = obj3;
+const obj4 = { backgroundColor: null, borderColor: null };
+obj4[0] = int2hslRaw.int2rgba(int2hslRaw.hex2int(require("Themes").unsafe_rawColors.RED_400), 0.1);
+obj4[1] = require("Themes").unsafe_rawColors.RED_400;
+createCacheKey[5] = obj4;
+int2hslRaw = { backgroundColor: null, borderColor: null };
+int2hslRaw[0] = int2hslRaw.int2rgba(int2hslRaw.hex2int(require("Themes").unsafe_rawColors.GREEN_400), 0.1);
+int2hslRaw[1] = require("Themes").unsafe_rawColors.GREEN_400;
+createCacheKey[6] = int2hslRaw;
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+int2hslRaw = { WARNING: 0, [0]: "WARNING", INFO: 1, [1]: "INFO", ERROR: 2, [2]: "ERROR", SUCCESS: 3, [3]: "SUCCESS" };
+let obj1 = { flex: 1, marginLeft: require("Themes").space.PX_8 };
 const result = require("jsxProd").fileFinishedImporting("design/void/HelpMessage/native/HelpMessage.tsx");
 
-export default function HelpMessage(textColor) {
+export default function HelpMessage(children) {
   let messageType;
   let textVariant;
-  ({ messageType, textVariant } = textColor);
+  ({ messageType, textVariant } = children);
   if (textVariant === undefined) {
     textVariant = "text-sm/medium";
   }
-  let str = textColor.textColor;
+  let str = children.textColor;
   if (str === undefined) {
     str = "text-default";
   }
-  let xs = textColor.borderRadius;
+  let xs = children.borderRadius;
   if (xs === undefined) {
-    xs = importDefault(689).radii.xs;
+    xs = importDefault(712).radii.xs;
   }
-  const tmp3 = _createForOfIteratorHelperLoose();
-  let obj = {};
-  const items = [tmp3.container, useContainerStyle(messageType, tmp3), ];
-  obj = { borderRadius: xs };
-  items[2] = obj;
-  obj.style = items;
-  obj = { style: tmp3.row };
-  const items1 = [getIcon(messageType), ];
-  const obj1 = { style: tmp3.content, color: str, variant: textVariant, children: textColor.children };
-  items1[1] = callback(require(4161) /* Text */.Text, obj1);
-  obj.children = items1;
-  const items2 = [callback2(View, obj), textColor.button];
-  obj.children = items2;
-  return callback2(View, obj);
+  const tmp3 = createCacheKey();
+  const items = [tmp3.container, , ];
+  if (int2hslRaw.WARNING === messageType) {
+    let successContainer = tmp3.warningContainer;
+  } else if (tmp6.INFO === messageType) {
+    successContainer = tmp3.infoContainer;
+  } else if (tmp6.ERROR === messageType) {
+    successContainer = tmp3.errorContainer;
+  } else if (tmp6.SUCCESS === messageType) {
+    successContainer = tmp3.successContainer;
+  }
+  let obj = { style: items, children: null };
+  items[1] = successContainer;
+  items[2] = { borderRadius: xs };
+  obj = { style: tmp3.row, children: null };
+  if (int2hslRaw.WARNING === messageType) {
+    obj = { color: null };
+    obj[0] = importDefault(712).unsafe_rawColors.YELLOW_300;
+    let tmp7 = callback(require(6730) /* CircleErrorIcon */.CircleErrorIcon, obj);
+  } else if (tmp6.INFO === messageType) {
+    const obj1 = { color: null };
+    obj1[0] = importDefault(712).unsafe_rawColors.BLUE_345;
+    tmp7 = callback(require(4145) /* CircleInformationIcon */.CircleInformationIcon, obj1);
+  } else if (tmp6.ERROR === messageType) {
+    const obj2 = { color: null };
+    obj2[0] = importDefault(712).unsafe_rawColors.RED_400;
+    tmp7 = callback(require(6736) /* CircleXIcon */.CircleXIcon, obj2);
+  } else if (tmp6.SUCCESS === messageType) {
+    const obj3 = { color: null };
+    obj3[0] = importDefault(712).unsafe_rawColors.GREEN_400;
+    tmp7 = callback(require(4150) /* CircleCheckIcon */.CircleCheckIcon, obj3);
+  }
+  const items1 = [tmp7, callback(require(4185) /* Text */.Text, { style: tmp3.content, color: str, variant: textVariant, children: children.children })];
+  obj[1] = items1;
+  const items2 = [closure_5(View, obj), children.button];
+  obj[1] = items2;
+  return closure_5(View, obj);
 };
-export const HelpMessageTypes = pad2;
+export const HelpMessageTypes = int2hslRaw;

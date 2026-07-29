@@ -1,16 +1,16 @@
-// Module ID: 12189
-// Function ID: 95318
-// Dependencies: [31, 27, 12185, 6003, 33, 12184, 11783, 5548, 4161, 1212, 5198, 2]
+// Module ID: 12213
+// Function ID: 12214
+// Dependencies: [19, 17, 12209, 6021, 21, 12208, 11808, 5566, 4185, 1236, 5220, 2]
 
-// Module 12189
+// Module 12213
 import { View } from "get ActivityIndicator";
 import { useGuildInviteSendStates } from "setSendState";
 import { InviteSendStates } from "InviteSendStates";
 import { jsx } from "jsxProd";
-import importAllResult from "result";
+import importAllResult from "noop";
 
 const require = arg1;
-const memoResult = require("result").memo(function GuildInviteRow(arg0) {
+const memoResult = require("noop").memo(function GuildInviteRow(arg0) {
   let end;
   let importDefault;
   let require;
@@ -25,32 +25,31 @@ const memoResult = require("result").memo(function GuildInviteRow(arg0) {
   ({ start, end } = arg0);
   const tmp = useGuildInviteSendStates((arg0) => {
     let tmp2;
-    if (null != arg0[closure_0]) {
+    if (arg0[closure_0] != null) {
       tmp2 = tmp[guild.id];
     }
     return tmp2;
   });
-  let obj = { importantForAccessibility: "no-hide-descendants", accessibilityElementsHidden: true };
-  obj = { guild };
-  let tmp2 = jsx(importDefault(guild[6]), { sendState: tmp, onPressSend: handlePress });
-  obj.size = require(guild[7]).GuildIconSizes.SMALL;
-  obj.children = jsx(importDefault(guild[7]), { guild });
-  const tmp3 = importDefault(guild[7]);
-  obj = { variant: "text-xs/medium", color: "text-default" };
+  let obj = { importantForAccessibility: "no-hide-descendants", accessibilityElementsHidden: true, children: null };
+  obj = { guild, size: null };
+  let tmp2 = jsx;
+  const tmp3 = guild;
+  const tmp4 = jsx(importDefault(guild[6]), { sendState: tmp, onPressSend: handlePress });
+  obj[1] = require(guild[7]).GuildIconSizes.SMALL;
+  obj[2] = jsx(importDefault(guild[7]), { guild, size: null });
+  const tmp5 = importDefault(guild[7]);
+  const tmp6 = require;
+  obj = { variant: "text-xs/medium", color: "text-default", children: null };
   const intl = require(guild[9]).intl;
-  obj.children = intl.format(require(guild[9]).t.zRl6XR, { count: row.memberCount });
-  let tmp6 = tmp === InviteSendStates.SENDING;
+  obj[2] = intl.format(require(guild[9]).t.zRl6XR, { count: row.memberCount });
+  let tmp9 = tmp === InviteSendStates.SENDING;
   const obj1 = { count: row.memberCount };
-  const tmp4 = <View variant="text-xs/medium" color="text-default" />;
-  if (!tmp6) {
-    tmp6 = tmp === InviteSendStates.SENT;
+  const tmp7 = <View variant="text-xs/medium" color="text-default">{null}</View>;
+  if (!tmp9) {
+    tmp9 = tmp === InviteSendStates.SENT;
   }
-  const obj2 = { icon: tmp4, label: guild.name, trailing: tmp2, subLabel: jsx(require(guild[8]).Text, { variant: "text-xs/medium", color: "text-default" }), onPress: handlePress, disabled: tmp6 };
-  const obj3 = { disabled: tmp6 };
-  obj2.accessibilityState = obj3;
-  obj2.start = start;
-  obj2.end = end;
-  return jsx(require(guild[10]).TableRow, { icon: tmp4, label: guild.name, trailing: tmp2, subLabel: jsx(require(guild[8]).Text, { variant: "text-xs/medium", color: "text-default" }), onPress: handlePress, disabled: tmp6 });
+  const tmp8 = jsx(require(guild[8]).Text, { variant: "text-xs/medium", color: "text-default", children: null });
+  return tmp2(tmp6(tmp3[10]).TableRow, { icon: tmp7, label: guild.name, trailing: tmp4, subLabel: jsx(require(guild[8]).Text, { variant: "text-xs/medium", color: "text-default", children: null }), onPress: handlePress, disabled: tmp9, accessibilityState: { disabled: tmp9 }, start, end });
 });
 const result = require("setSendState").fileFinishedImporting("modules/instant_invite/native/action_sheet/invite_to_guilds/GuildInviteRow.tsx");
 

@@ -1,254 +1,189 @@
-// Module ID: 15875
-// Function ID: 122362
-// Name: _createForOfIteratorHelperLoose
-// Dependencies: [57, 31, 1347, 4178, 5668, 1348, 4987, 10016, 5670, 15828, 566, 3783, 7989, 9423, 15876, 572, 15877, 15878, 15880, 2]
+// Module ID: 15910
+// Function ID: 15911
+// Name: useControllerPIPState
+// Dependencies: [32, 19, 1371, 4202, 5686, 1372, 5009, 10038, 5688, 15863, 589, 3807, 8014, 9447, 15911, 635, 15912, 15913, 15915, 2]
 // Exports: useControllerPIPState
 
-// Module 15875 (_createForOfIteratorHelperLoose)
+// Module 15910 (useControllerPIPState)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_7 from "_isNativeReflectConstruct";
-import closure_8 from "_isNativeReflectConstruct";
-import closure_9 from "_isNativeReflectConstruct";
+import set from "set";
+import participantFromServer from "participantFromServer";
+import getParticipants from "getParticipants";
+import map from "map";
+import ensureGuildLoaded from "ensureGuildLoaded";
+import anyoneHasFlagInContext from "anyoneHasFlagInContext";
 import { VoicePanelModes } from "VoicePanelModes";
 import { ActivityPanelModes } from "ActivityPanelModes";
 
 const require = arg1;
-function _createForOfIteratorHelperLoose(iterable) {
-  let closure_0 = iterable;
-  iterable = "undefined" !== typeof Symbol;
-  if (iterable) {
-    const _Symbol = Symbol;
-    iterable = iterable[Symbol.iterator];
-  }
-  if (!iterable) {
-    iterable = iterable[Symbol.iterator];
-  }
-  if (iterable) {
-    const iter = iterable.call(iterable);
-    const next = iter.next;
-    return next.bind(iter);
-  } else {
-    const _Array = Array;
-    let tmp = iterable;
-    if (!Array.isArray(iterable)) {
-      let tmp2;
-      if (iterable) {
-        if ("string" === typeof iterable) {
-          tmp2 = _arrayLikeToArray(iterable, undefined);
-        } else {
-          const toString = {}.toString;
-          const substr = toString.call(iterable).slice(8, -1);
-          let name = substr;
-          if (tmp3) {
-            name = iterable.constructor.name;
-          }
-          if ("Map" !== name) {
-            if ("Set" !== name) {
-              if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(iterable, undefined);
-              } else {
-                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
-              }
-            }
-            tmp2 = arr;
-          }
-          const _Array2 = Array;
-          arr = Array.from(iterable);
-          const callResult = toString.call(iterable);
-          tmp3 = "Object" === substr && iterable.constructor;
-        }
-      }
-      tmp = tmp2;
-      if (!tmp2) {
-        const _TypeError = TypeError;
-        const typeError = new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
-        throw typeError;
-      }
-    }
-    if (tmp) {
-      closure_0 = tmp;
-    }
-    let c1 = 0;
-    return () => {
-      if (closure_1 >= length.length) {
-        let obj = { done: true };
-      } else {
-        obj = { done: false };
-        closure_1 = tmp3 + 1;
-        obj.value = length[+closure_1];
-      }
-      return obj;
-    };
-  }
-}
-function _arrayLikeToArray(arg0, arg1) {
-  let length;
-  if (tmp) {
-    length = arg0.length;
-  }
-  const ArrayResult = Array(length);
-  for (let num = 0; num < length; num = num + 1) {
-    ArrayResult[num] = arg0[num];
-  }
-  return ArrayResult;
-}
-let result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/voice_panel/native/pip/useControllerPIPState.tsx");
+let result = require("participantFromServer").fileFinishedImporting("modules/voice_panel/native/pip/useControllerPIPState.tsx");
 
 export const useControllerPIPState = function useControllerPIPState(channelId) {
-  let closure_7;
+  let c7;
   let connected;
   let dimensions;
   let focusedId;
   let participant;
-  let tmp10;
+  let tmp14;
   channelId = channelId.channelId;
+  let obj = channelId;
   ({ connected, focusedId } = channelId);
-  let layoutManager = channelId.layoutManager;
-  let mode = channelId.mode;
-  let obj = { id: undefined, mode: undefined, width: 0, height: 0, containerHeight: 0, showSecondaryPIP: false };
-  const ref = React.useRef(obj);
-  let tmp2 = first(React.useState(undefined), 2);
+  let ref = focusedId;
+  const layoutManager = channelId.layoutManager;
+  let dependencyMap = layoutManager;
+  const mode = channelId.mode;
+  let first;
+  let React;
+  let participantFromServer;
+  let first1;
+  c7 = undefined;
+  obj = React;
+  ref = React.useRef({ id: "dispatch", mode: "isArray", width: false, height: "linear", containerHeight: true, showSecondaryPIP: true });
+  const tmp2 = first(React.useState(undefined), 2);
   first = tmp2[0];
   React = tmp2[1];
-  let _createForOfIteratorHelperLoose = React.useRef(first);
+  participantFromServer = React.useRef(first);
   const insertionEffect = React.useInsertionEffect(() => {
-    _createForOfIteratorHelperLoose.current = first;
+    participantFromServer.current = first;
   });
-  const tmp5 = (function useShowSecondaryPIP(channelId) {
-    channelId = channelId.channelId;
-    const mode = channelId.mode;
-    const tmp = focusedId(layoutManager[9])(channelId);
-    layoutManager = tmp;
-    const items = [_createForOfIteratorHelperLoose, outer1_7, outer1_8];
-    const items1 = [channelId, tmp, mode];
-    return channelId(layoutManager[10]).useStateFromStores(items, () => {
-      const channel = outer2_8.getChannel(channelId);
-      if (null != channel) {
-        if (channel.isVocal()) {
-          if (!closure_2) {
-            return false;
-          }
-        }
-      }
-      const connectedFrame = outer2_7.getConnectedFrame();
-      if (null != connectedFrame) {
-        if (tmp3 === outer2_11.PIP) {
-          return true;
-        }
-      }
-      const connectedActivityLocation = store.getConnectedActivityLocation();
-      if (null == connectedActivityLocation) {
+  obj = channelId;
+  ref = mode;
+  dependencyMap = undefined;
+  const tmp7 = ref(15863)(channelId);
+  dependencyMap = tmp7;
+  let items = [participantFromServer, c7, ensureGuildLoaded];
+  const items1 = [channelId, tmp7, mode];
+  const stateFromStores = obj(589).useStateFromStores(items, () => {
+    const channel = outer1_8.getChannel(obj);
+    let isVocalResult;
+    if (channel != null) {
+      isVocalResult = channel.isVocal();
+    }
+    if (isVocalResult) {
+      if (!closure_2) {
         return false;
-      } else {
-        const embeddedActivityLocationChannelId = channelId(layoutManager[11]).getEmbeddedActivityLocationChannelId(connectedActivityLocation);
-        const channel1 = outer2_8.getChannel(embeddedActivityLocationChannelId);
-        let result = null != channel1;
-        const activityPanelMode = store.getActivityPanelMode();
-        if (result) {
-          result = channelId(layoutManager[12]).isActivityInTextSupportedForChannel(channel1);
-          const obj2 = channelId(layoutManager[12]);
-        }
-        if (result) {
-          result = embeddedActivityLocationChannelId !== channelId;
-        }
-        let tmp13 = activityPanelMode === outer2_11.PIP;
-        if (tmp13) {
-          let tmp16 = mode === outer2_10.PIP;
-          if (!tmp16) {
-            tmp16 = embeddedActivityLocationChannelId !== channelId;
-          }
-          tmp13 = tmp16;
-        }
-        if (result) {
-          result = tmp13;
-        }
-        return result;
       }
-    }, items1);
-  })({ channelId, mode });
-  const tmp6 = focusedId(layoutManager[14])(channelId);
-  const first1 = first(React.useState(() => focusedId(layoutManager[15])((arg0) => arg0(), 1000, { leading: true })), 1)[0];
-  let items = [first1];
-  const layoutEffect = React.useLayoutEffect(() => () => outer1_6.cancel(), items);
-  [tmp10, closure_7] = first(React.useState(() => layoutManager.getTargetDimensions(focusedId)), 2);
-  obj = { connected, mode, focusedId, participantTargetDimensions: tmp10, selfHasVideo: tmp6, showSecondaryPIP: tmp5 };
-  const tmp9 = first(React.useState(() => layoutManager.getTargetDimensions(focusedId)), 2);
-  ({ participant, dimensions } = focusedId(layoutManager[16])(channelId, layoutManager, focusedId, first, obj));
+    }
+    const connectedFrame = _undefined.getConnectedFrame();
+    if (null != connectedFrame) {
+      if (tmp5 === outer1_11.PIP) {
+        return true;
+      }
+    }
+    connectedActivityLocation = connectedActivityLocation.getConnectedActivityLocation();
+    if (null == connectedActivityLocation) {
+      return false;
+    } else {
+      const embeddedActivityLocationChannelId = obj(closure_2[11]).getEmbeddedActivityLocationChannelId(connectedActivityLocation);
+      const channel1 = obj.getChannel(embeddedActivityLocationChannelId);
+      let result = null != channel1;
+      const activityPanelMode = obj3.getActivityPanelMode();
+      if (result) {
+        result = obj(closure_2[12]).isActivityInTextSupportedForChannel(channel1);
+        const tmp15Result = obj(closure_2[12]);
+      }
+      if (result) {
+        result = embeddedActivityLocationChannelId !== tmp;
+      }
+      let tmp11 = activityPanelMode === outer1_11.PIP;
+      if (tmp11) {
+        tmp11 = ref === outer1_10.PIP || embeddedActivityLocationChannelId !== tmp;
+        const tmp14 = ref === outer1_10.PIP || embeddedActivityLocationChannelId !== tmp;
+      }
+      if (result) {
+        result = tmp11;
+      }
+      return result;
+    }
+    obj3 = connectedActivityLocation;
+  }, items1);
+  const tmp10 = ref(15911)(channelId);
+  first1 = first(React.useState(() => ref(closure_2[15])((arg0) => arg0(), 1000, { leading: true })), 1)[0];
+  const items2 = [first1];
+  const layoutEffect = React.useLayoutEffect(() => () => getParticipants.cancel(), items2);
+  const obj2 = obj(589);
+  let tmp5 = ref;
+  [tmp14, c7] = first(React.useState(() => closure_2.getTargetDimensions(ref)), 2);
+  obj = { connected, mode, focusedId, participantTargetDimensions: tmp14, selfHasVideo: tmp10, showSecondaryPIP: stateFromStores };
+  const tmp13 = first(React.useState(() => closure_2.getTargetDimensions(ref)), 2);
+  ({ participant, dimensions } = ref(15912)(channelId, layoutManager, focusedId, first, obj));
   obj = {};
   const merged = Object.assign(ref.current);
   const merged1 = Object.assign(dimensions);
   let id;
-  if (null != participant) {
+  if (participant != null) {
     id = participant.id;
   }
-  obj["id"] = id;
-  obj["showSecondaryPIP"] = tmp5;
-  const tmp11 = focusedId(layoutManager[16])(channelId, layoutManager, focusedId, first, obj);
-  obj["mode"] = channelId(layoutManager[17]).getPIPMode({ channelId, connected, manuallyFocusedId: focusedId, mode, selfHasVideo: tmp6 });
-  let items1 = [channelId, first1];
-  const obj4 = channelId(layoutManager[17]);
-  let effect = React.useEffect(() => {
+  obj.id = id;
+  obj.showSecondaryPIP = stateFromStores;
+  let tmp8Result = tmp8(15913);
+  obj.mode = tmp8Result.getPIPMode({ channelId, connected, manuallyFocusedId: focusedId, mode, selfHasVideo: tmp10 });
+  dependencyMap = undefined;
+  tmp8Result = tmp8(9447);
+  let result = tmp8Result.cheapWorkletShallowEqual(obj, ref.current);
+  dependencyMap = !result;
+  const effect = obj.useEffect(() => {
+    if (closure_2) {
+      ref.current = obj;
+    }
+  });
+  if (result) {
+    obj = ref.current;
+  }
+  const items3 = [channelId, first1];
+  const effect1 = obj.useEffect(() => {
     const items = [outer1_9, first1];
-    let batchedStoreListener = new channelId(layoutManager[10]).BatchedStoreListener(items, () => {
-      const tmp = outer2_12(outer2_9.getSpeakers());
-      const iter = tmp();
-      let iter2 = iter;
-      let tmp2;
-      if (!iter.done) {
-        const value = iter2.value;
-        tmp2 = value;
-        while (null == first1.getParticipant(batchedStoreListener, value)) {
-          let iter3 = tmp();
-          iter2 = iter3;
-          if (iter3.done) {
-            break;
+    let batchedStoreListener = new obj(closure_2[10]).BatchedStoreListener(items, () => {
+      const tmp = (() => {
+        const speakers = outer1_9.getSpeakers();
+        const iter = speakers[Symbol.iterator]();
+        const nextResult = iter.next();
+        while (iter !== undefined) {
+          let tmp3 = nextResult;
+          let tmp4 = outer1_6;
+          let tmp5 = closure_0;
+          if (null != outer1_6.getParticipant(closure_0, nextResult)) {
+            let tmp6 = iter;
+            iter.return();
+            return nextResult;
           }
         }
+      })();
+      const batchedStoreListener = tmp;
+      let tmp3 = tmp !== ref.current;
+      if (tmp3) {
+        tmp3 = null != tmp;
       }
-      batchedStoreListener = tmp2;
-      if (tmp5) {
-        if (null == outer1_5.current) {
-          outer1_4(tmp2);
+      if (tmp3) {
+        if (null == ref.current) {
+          callback(tmp);
         } else {
-          outer1_6(() => outer2_4(closure_0));
+          callback2(() => outer1_4(closure_0));
         }
       }
     });
     batchedStoreListener.attach("pipstate-change-listeners-" + batchedStoreListener);
     return () => batchedStoreListener.detach();
-  }, items1);
-  const items2 = [focusedId, layoutManager, tmp10];
-  const effect1 = React.useEffect(() => {
-    function updateParticipantDimensions() {
-      outer1_7((safeAreaState) => {
-        let targetDimensions = outer2_2.getTargetDimensions(outer2_1);
+  }, items3);
+  const items4 = [focusedId, layoutManager, tmp14];
+  const effect2 = obj.useEffect(() => {
+    _undefined((safeAreaState) => {
+      targetDimensions = targetDimensions.getTargetDimensions(closure_1);
+      if (obj.cheapWorkletShallowEqual(safeAreaState, targetDimensions)) {
+        targetDimensions = safeAreaState;
+      }
+      return targetDimensions;
+    });
+    return closure_2.subscribeFromItem(function updateParticipantDimensions() {
+      callback((safeAreaState) => {
+        targetDimensions = targetDimensions.getTargetDimensions(closure_1);
         if (obj.cheapWorkletShallowEqual(safeAreaState, targetDimensions)) {
           targetDimensions = safeAreaState;
         }
         return targetDimensions;
       });
-    }
-    const result = updateParticipantDimensions();
-    return layoutManager.subscribeFromItem(updateParticipantDimensions);
-  }, items2);
-  focusedId(layoutManager[18])(channelId, layoutManager, focusedId);
-  return (function useCachedPipState(safeAreaState, ref) {
-    let current = safeAreaState;
-    let closure_0 = safeAreaState;
-    let closure_1 = ref;
-    const tmp = !channelId(layoutManager[13]).cheapWorkletShallowEqual(safeAreaState, ref.current);
-    layoutManager = tmp;
-    const effect = React.useEffect(() => {
-      if (closure_2) {
-        closure_1.current = closure_0;
-      }
     });
-    if (!tmp) {
-      current = ref.current;
-    }
-    return current;
-  })(obj, ref);
+  }, items4);
+  tmp5(15915)(channelId, layoutManager, focusedId);
+  return obj;
 };

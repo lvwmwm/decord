@@ -1,35 +1,29 @@
-// Module ID: 11149
-// Function ID: 86559
-// Name: executeCommand
-// Dependencies: [57, 5026, 4384, 653, 3838, 6163, 3864, 6056, 3804, 5695, 4359, 2]
+// Module ID: 11173
+// Function ID: 11174
+// Name: action
+// Dependencies: [32, 5048, 4407, 676, 3862, 6181, 3888, 6075, 3828, 5713, 4384, 2]
 // Exports: handleLegacyCommands
 
-// Module 11149 (executeCommand)
+// Module 11173 (action)
 import _slicedToArray from "_slicedToArray";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_5 from "_isNativeReflectConstruct";
+import getEmojiToGroupId from "getEmojiToGroupId";
+import reinjectEphemerals from "reinjectEphemerals";
 import ME from "ME";
 import importDefaultResult from "t";
 import importDefaultResult1 from "t";
 
 let closure_6;
-let closure_7;
-let closure_8;
+let error;
+let metroImportAll;
 const require = arg1;
-function executeCommand(command, action) {
-  let obj = importDefault(4359);
-  obj = { command };
-  obj.trackWithMetadata(constants.SLASH_COMMAND_USED, obj);
-  return action.action(arg2, arg3);
-}
-({ AnalyticEvents: closure_6, MARKDOWN_SPOILER_WRAPPER: closure_7, ME: closure_8 } = ME);
+({ AnalyticEvents: closure_6, MARKDOWN_SPOILER_WRAPPER: error, ME: metroImportAll } = ME);
 const re9 = /\\([*?+/])/g;
-obj = { tts: obj, me: obj, tableflip: obj1, unflip: obj2, shrug: obj3, nick: obj4 };
+obj = { tts: obj, me: obj, tableflip: obj1, unflip: obj2, shrug: obj3, nick: obj4, reaction: null, searchReplace: null, spoiler: null };
 obj = {
   action() {
-    const obj = {};
-    const EnableTTSCommand = require(3838) /* explicitContentFromProto */.EnableTTSCommand;
-    obj.tts = EnableTTSCommand.getSetting();
+    const obj = { tts: null };
+    const EnableTTSCommand = require(3862) /* explicitContentFromProto */.EnableTTSCommand;
+    obj[0] = EnableTTSCommand.getSetting();
     return obj;
   }
 };
@@ -38,48 +32,50 @@ obj = {
     return { content: "_" + arg0 + "_" };
   }
 };
-const obj5 = {
-  match: require("t").anyScopeRegex(/^\+:(.+?): *$/),
-  action(str, channel) {
-    channel = channel.channel;
-    if (!channel.isEdit) {
-      if (store.hasPresent(channel.id)) {
-        const messages = store.getMessages(channel.id);
-        const lastResult = messages.last();
-        if (null != lastResult) {
-          if (null != lastResult.id) {
-            disambiguatedEmojiContext = disambiguatedEmojiContext.getDisambiguatedEmojiContext(channel.guild_id);
-            const trimmed = str.trim();
-            const byName = disambiguatedEmojiContext.getByName(trimmed.slice(2, -1));
-            if (null != byName) {
-              const obj2 = require(6056) /* checkReactionResponse */;
-              obj2.addReaction(channel.id, lastResult.id, require(3804) /* getReactionEmojiName */.toReactionEmoji(byName));
-              const obj = { content: "" };
-              return obj;
-            }
+const obj5 = { match: null, action: null };
+obj5[0] = require("t").anyScopeRegex(/^\+:(.+?): *$/);
+obj5[1] = function action(str, channel) {
+  channel = channel.channel;
+  if (!channel.isEdit) {
+    if (reinjectEphemerals.hasPresent(channel.id)) {
+      const messages = obj.getMessages(channel.id);
+      const lastResult = messages.last();
+      if (null != lastResult) {
+        if (null != lastResult.id) {
+          disambiguatedEmojiContext = disambiguatedEmojiContext.getDisambiguatedEmojiContext(channel.guild_id);
+          const trimmed = str.trim();
+          const byName = disambiguatedEmojiContext.getByName(trimmed.slice(2, -1));
+          if (null != byName) {
+            const obj3 = require(6075) /* checkReactionResponse */;
+            obj3.addReaction(channel.id, lastResult.id, require(3828) /* MAX_REACTIONS */.toReactionEmoji(byName));
+            return { content: "" };
           }
         }
       }
     }
+    obj = reinjectEphemerals;
   }
 };
-obj.reaction = obj5;
-const obj6 = {};
+obj[6] = obj5;
+const obj6 = { match: null, action: null };
 obj1 = {
   action(arg0) {
-    const obj = { content: "" + arg0 + " (\u256F\u00B0\u25A1\u00B0)\u256F\uFE35 \u253B\u2501\u253B".trim() };
+    const obj = { content: null };
+    obj[0] = "" + arg0 + " (\u256F\u00B0\u25A1\u00B0)\u256F\uFE35 \u253B\u2501\u253B".trim();
     return obj;
   }
 };
 obj2 = {
   action(arg0) {
-    const obj = { content: "" + arg0 + " \u252C\u2500\u252C\u30CE( \u00BA _ \u00BA\u30CE)".trim() };
+    const obj = { content: null };
+    obj[0] = "" + arg0 + " \u252C\u2500\u252C\u30CE( \u00BA _ \u00BA\u30CE)".trim();
     return obj;
   }
 };
 obj3 = {
   action(arg0) {
-    const obj = { content: "" + arg0 + " \u00AF\\_(\u30C4)_/\u00AF".trim() };
+    const obj = { content: null };
+    obj[0] = "" + arg0 + " \u00AF\\_(\u30C4)_/\u00AF".trim();
     return obj;
   }
 };
@@ -87,36 +83,36 @@ obj4 = {
   action(arg0, channel) {
     channel = channel.channel;
     if (null != channel.guild_id) {
-      let obj = importDefault(6163);
+      const obj = importDefault(6181);
       obj.changeNickname(channel.guild_id, channel.id, closure_8, arg0);
-      obj = { content: "" };
-      return obj;
+      return { content: "" };
     }
   }
 };
-obj6.match = require("t").anyScopeRegex(/^s\/([^\/\\]*(?:\\.[^\/\\]*)*)\/([^\/\\]*(?:\\.[^\/\\]*)*)(?:\/([g]*))?$/);
-obj6.action = function action(str, channel) {
+obj6[0] = require("t").anyScopeRegex(/^s\/([^\/\\]*(?:\\.[^\/\\]*)*)\/([^\/\\]*(?:\\.[^\/\\]*)*)(?:\/([g]*))?$/);
+obj6[1] = function action(str, channel) {
+  let str2;
+  let str3;
   channel = channel.channel;
   if (!channel.isEdit) {
-    const lastEditableMessage = store.getLastEditableMessage(channel.id);
+    const lastEditableMessage = reinjectEphemerals.getLastEditableMessage(channel.id);
     if (null != lastEditableMessage) {
       if (null != lastEditableMessage.id) {
         const self = this;
         let match = str.match(this.match.regex);
-        if (null == match) {
+        if (match == null) {
           match = [];
         }
-        const tmp5 = callback(Array.from(match), 4);
-        const first = tmp5[0];
+        [r10014, str, str2, str3] = callback(Array.from(match), 4);
         let parts;
-        if (null != tmp5[3]) {
+        if (str3 != null) {
           parts = str3.split("");
         }
-        if (null == parts) {
+        if (parts == null) {
           parts = [];
         }
-        const replaced = tmp5[1].replace(closure_9, (arg0, arg1) => arg1);
-        const replaced1 = tmp5[2].replace(closure_9, (arg0, arg1) => arg1);
+        const replaced = str.replace(closure_9, (arg0, arg1) => arg1);
+        const replaced1 = str2.replace(closure_9, (arg0, arg1) => arg1);
         if (parts.includes("g")) {
           let str7 = str6.replaceAll(replaced, replaced1);
         } else {
@@ -124,61 +120,61 @@ obj6.action = function action(str, channel) {
         }
         if (null == str7) {
           if (0 === lastEditableMessage.attachments.length) {
-            let obj = importDefault(5695);
+            let obj = importDefault(5713);
             obj.deleteMessage(channel.id, lastEditableMessage.id);
           }
-          obj = { content: "" };
-          return obj;
+          return { content: "" };
         }
         if (str7 !== lastEditableMessage.content) {
-          let obj1 = importDefault(5695);
-          obj = { content: str7 };
-          obj1.editMessage(channel.id, lastEditableMessage.id, obj);
+          obj = { content: null };
+          obj[0] = str7;
+          importDefault(5713).editMessage(channel.id, lastEditableMessage.id, obj);
+          const obj2 = importDefault(5713);
         }
-        str = tmp5[1];
-        const str2 = tmp5[2];
+        const tmp5 = callback(Array.from(match), 4);
       }
     }
-    obj1 = { content: "" };
-    return obj1;
+    return { content: "" };
   }
 };
-obj.searchReplace = obj6;
-obj.spoiler = {
+obj[7] = obj6;
+obj[8] = {
   action(arg0) {
-    const obj = { content: callback2(arg0).trim() };
+    const obj = { content: null };
+    obj[0] = callback2(arg0).trim();
     return obj;
   }
 };
 Object.setPrototypeOf(obj, null);
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/messages/LegacyCommands.tsx");
+const result = require("reinjectEphemerals").fileFinishedImporting("modules/messages/LegacyCommands.tsx");
 
 export const COMMANDS = obj;
 export const handleLegacyCommands = function handleLegacyCommands(text, arg1) {
-  for (const key10006 in obj) {
-    let tmp9 = obj;
-    let str = obj[key10006];
+  for (const key10005 in obj) {
+    let tmp7 = key10005;
+    let tmp8 = obj;
+    let str = obj[key10005];
     if (null == str.match) {
       continue;
     } else {
       let regex = str.match.regex;
-      let tmp = regex;
-      if (null == regex) {
+      let isMatch;
+      if (regex != null) {
+        isMatch = regex.test(arg0);
+      }
+      if (!isMatch) {
         continue;
       } else {
-        let tmp2 = regex;
-        if (!regex.test(arg0)) {
-          continue;
-        } else {
-          let tmp3 = executeCommand;
-          let tmp4 = arg1;
-          let tmp5 = key10006;
-          let tmp6 = str;
-          let tmp7 = arg0;
-          return executeCommand(tmp8, str, arg0, arg1);
-        }
+        let tmp2 = arg1;
+        let tmp3 = importDefault;
+        let tmp4 = dependencyMap;
+        let obj = importDefault(4384);
+        let tmp5 = constants;
+        obj = { command: null };
+        obj[0] = key10005;
+        let trackWithMetadataResult = obj.trackWithMetadata(constants.SLASH_COMMAND_USED, obj);
+        return str.action(arg0, arg1);
       }
-      continue;
     }
     continue;
   }

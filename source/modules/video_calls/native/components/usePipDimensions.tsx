@@ -1,13 +1,14 @@
-// Module ID: 10500
-// Function ID: 81313
+// Module ID: 10524
+// Function ID: 10525
 // Name: usePipDimensions
-// Dependencies: [31, 10501, 1450, 8143, 2]
+// Dependencies: [19, 10525, 1474, 8167, 2]
 // Exports: default
 
-// Module 10500 (usePipDimensions)
-import result from "result";
+// Module 10524 (usePipDimensions)
+import noop from "noop";
 
 const require = arg1;
+let c4 = 0.5625;
 const result = require("useWindowDimensions").fileFinishedImporting("modules/video_calls/native/components/usePipDimensions.tsx");
 
 export default function usePipDimensions(channelId) {
@@ -24,55 +25,54 @@ export default function usePipDimensions(channelId) {
   height = size.height;
   const items = [height, width, forcedOrientation, isViewingActivity];
   return height.useMemo(() => {
-    let tmp = width > height;
-    let tmp2 = forcedOrientation === forcedOrientation(width[3]).OrientationType.LANDSCAPE;
-    if (!tmp2) {
-      let tmp3 = tmp;
-      if (tmp) {
-        tmp3 = forcedOrientation !== forcedOrientation(width[3]).OrientationType.PORTRAIT;
+    let tmp3 = width > height;
+    let tmp7 = forcedOrientation === forcedOrientation(width[3]).OrientationType.LANDSCAPE;
+    if (!tmp7) {
+      let tmp8 = tmp3;
+      if (tmp3) {
+        tmp8 = forcedOrientation !== forcedOrientation(width[3]).OrientationType.PORTRAIT;
       }
-      tmp2 = tmp3;
+      tmp7 = tmp8;
     }
-    let num = 96;
-    let num2 = 96;
+    height = 96;
+    width = 96;
     if (!isViewingActivity) {
-      if (!tmp) {
-        if (!tmp2) {
+      if (!tmp3) {
+        if (!tmp7) {
           const _Math = Math;
-          const bound = Math.min(0.25 * height, 300);
-          num = bound * 0.5625;
-          num2 = bound;
+          const bound = Math.min(0.25 * tmp2, 300);
+          width = bound * outer1_4;
+          height = bound;
         }
       }
-      if (!tmp) {
-        if (tmp2) {
+      if (!tmp3) {
+        if (tmp7) {
           const _Math2 = Math;
-          const bound1 = Math.min(0.5 * width, 400);
-          num2 = bound1 * 0.5625;
-          num = bound1;
+          const bound1 = Math.min(0.5 * tmp, 400);
+          height = bound1 * outer1_4;
+          width = bound1;
         }
       }
-      if (tmp) {
-        if (tmp2) {
+      if (tmp3) {
+        if (tmp7) {
           const _Math4 = Math;
-          const bound2 = Math.min(0.25 * width, 400);
-          num2 = bound2 * 0.5625;
-          num = bound2;
+          const bound2 = Math.min(0.25 * tmp, 400);
+          height = bound2 * outer1_4;
+          width = bound2;
         }
       }
-      if (tmp) {
-        tmp = !tmp2;
+      if (tmp3) {
+        tmp3 = !tmp7;
       }
-      num = 1;
-      num2 = 1;
-      if (tmp) {
+      height = 1;
+      width = 1;
+      if (tmp3) {
         const _Math3 = Math;
-        const bound3 = Math.min(0.5 * height, 300);
-        num = bound3 * 0.5625;
-        num2 = bound3;
+        const bound3 = Math.min(0.5 * tmp2, 300);
+        width = bound3 * outer1_4;
+        height = bound3;
       }
     }
-    const obj = { height: num2, width: num };
-    return obj;
+    return { height, width };
   }, items);
 };

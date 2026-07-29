@@ -1,10 +1,10 @@
-// Module ID: 1860
-// Function ID: 20528
+// Module ID: 1884
+// Function ID: 1885
 // Name: isUserPrimaryGuildEqual
 // Dependencies: [2]
 // Exports: ensureUserPrimaryGuild, isUserPrimaryGuildEqual
 
-// Module 1860 (isUserPrimaryGuildEqual)
+// Module 1884 (isUserPrimaryGuildEqual)
 const result = require("set").fileFinishedImporting("modules/guild_tag/PrimaryGuildUtils.tsx");
 
 export const isUserPrimaryGuildEqual = function isUserPrimaryGuildEqual(primaryGuild, primary_guild) {
@@ -22,8 +22,8 @@ export const ensureUserPrimaryGuild = function ensureUserPrimaryGuild(primary_gu
   } else if ("identityGuildId" in primary_guild) {
     return primary_guild;
   } else {
-    const obj = {};
-    ({ identity_guild_id: obj.identityGuildId, identity_enabled: obj.identityEnabled, tag: obj.tag, badge: obj.badge } = primary_guild);
+    const obj = { identityGuildId: null, identityEnabled: null, tag: null, badge: null };
+    ({ identity_guild_id: obj[0], identity_enabled: obj[1], tag: obj[2], badge: obj[3] } = primary_guild);
     return obj;
   }
 };

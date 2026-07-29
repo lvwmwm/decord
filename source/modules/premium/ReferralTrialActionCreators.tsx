@@ -1,268 +1,577 @@
-// Module ID: 6193
-// Function ID: 55369
-// Name: _createForOfIteratorHelperLoose
-// Dependencies: [5, 6, 7, 1858, 1907, 653, 507, 686, 1184, 5695, 2]
+// Module ID: 6213
+// Function ID: 6214
+// Name: _fetchReferralEligibleUsers
+// Dependencies: [5, 1882, 1931, 676, 530, 709, 1208, 5713, 2]
 // Exports: createReferralTrial, createReferralTrials, fetchReferralEligibleUsers, fetchReferralsRemaining, resolveReferralTrialOffer
 
-// Module 6193 (_createForOfIteratorHelperLoose)
-import closure_3 from "ME";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 6213 (_fetchReferralEligibleUsers)
 import dispatcher from "dispatcher";
-import closure_6 from "_isNativeReflectConstruct";
-import closure_7 from "_isNativeReflectConstruct";
+import createdAt from "createdAt";
+import handleConnectionOpen from "handleConnectionOpen";
 import ME from "ME";
 
-let closure_8;
-let closure_9;
+let closure_6;
+let error;
 const require = arg1;
-function _createForOfIteratorHelperLoose(iterable) {
-  let closure_0 = iterable;
-  iterable = "undefined" !== typeof Symbol;
-  if (iterable) {
-    const _Symbol = Symbol;
-    iterable = iterable[Symbol.iterator];
-  }
-  if (!iterable) {
-    iterable = iterable[Symbol.iterator];
-  }
-  if (iterable) {
-    const iter = iterable.call(iterable);
-    const next = iter.next;
-    return next.bind(iter);
-  } else {
-    const _Array = Array;
-    let tmp = iterable;
-    if (!Array.isArray(iterable)) {
-      let tmp2;
-      if (iterable) {
-        if ("string" === typeof iterable) {
-          tmp2 = _arrayLikeToArray(iterable, undefined);
+function _fetchReferralEligibleUsers() {
+  const self = this;
+  const tmp = callback((arg0, arg1, arg2) => {
+    let closure_0 = arg0;
+    let closure_1 = arg1;
+    let closure_2 = arg2;
+    let c6 = 0;
+    let c7 = 0;
+    return (function*(arg0, body) {
+      if (constants === 2) {
+        constants = 3;
+        HermesBuiltin.throwTypeError();
+      } else if (tmp4 === 3) {
+        if (arg0 === 1) {
+          throw body;
+        } else if (arg0 === 2) {
+          let obj = { value: null, done: true };
+          obj[0] = body;
+          return obj;
         } else {
-          const toString = {}.toString;
-          const substr = toString.call(iterable).slice(8, -1);
-          let name = substr;
-          if (tmp3) {
-            name = iterable.constructor.name;
-          }
-          if ("Map" !== name) {
-            if ("Set" !== name) {
-              if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(iterable, undefined);
+          return { value: "HermesInternal", done: null };
+        }
+      } else {
+        try {
+          constants = 2;
+          if (0 === c6) {
+            if (arg0 === 1) {
+              constants = 3;
+              throw body;
+            } else if (arg0 === 2) {
+              constants = 3;
+              obj = { value: null, done: true };
+              obj[0] = body;
+              return obj;
+            } else {
+              let c5 = 0;
+              let obj7 = tmp2;
+              let json;
+              body = undefined;
+              let users;
+              let next_index;
+              obj7 = undefined;
+              const _JSON = JSON;
+              const obj1 = { index: null, searchQuery: null };
+              obj1[0] = json;
+              obj1[1] = body;
+              json = JSON.stringify(obj1);
+              if (outer1_9.has(json)) {
+                constants = 3;
+                const obj2 = { value: null, done: true };
+                obj2[0] = outer1_9.get(json);
+                return obj2;
               } else {
-                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                const HTTP = callback(table[4]).HTTP;
+                const obj3 = { url: null, body: null, oldFormErrors: true, rejectWithError: false };
+                obj3[0] = constants.GET_REFERRAL_ELIGIBLE_USERS;
+                const obj4 = { index: null, limit: null, search_query: null };
+                obj4[0] = tmp28;
+                next_index = tmp30;
+                if (tmp30 == null) {
+                  next_index = 10;
+                }
+                obj4[1] = next_index;
+                obj4[2] = tmp29;
+                obj3[1] = obj4;
+                c6 = 1;
+                constants = 1;
+                const obj5 = { value: null, done: false };
+                obj5[0] = HTTP.post(obj3);
+                return obj5;
+              }
+              tmp28 = json;
+              tmp29 = body;
+            }
+          } else if (arg0 === 1) {
+            constants = 3;
+            throw body;
+          } else if (arg0 === 2) {
+            constants = 3;
+            const obj6 = { value: null, done: true };
+            obj6[0] = body;
+            return obj6;
+          } else {
+            body = body.body;
+            users = body.users;
+            next_index = body.next_index;
+            obj7 = { users: null, nextIndex: null };
+            obj7[0] = users.map((arg0) => new obj7(arg0));
+            obj7[1] = next_index;
+            const result = closure_9.set(json, obj7);
+            constants = 3;
+            obj = { value: null, done: true };
+            obj[0] = obj7;
+            return obj;
+          }
+        } catch (tmp12) {
+          constants = tmp;
+          throw tmp12;
+        }
+      }
+    })();
+  });
+  const _fetchReferralEligibleUsers = tmp;
+  const apply = tmp.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
+}
+function _createReferralTrials() {
+  const self = this;
+  const tmp = callback((arg0) => {
+    let closure_0 = arg0;
+    let c8 = 0;
+    let c9 = 0;
+    let c7 = 0;
+    return (function*(arg0, body) {
+      if (c9 === 2) {
+        c9 = 3;
+        HermesBuiltin.throwTypeError();
+      } else if (tmp4 === 3) {
+        if (arg0 === 1) {
+          throw body;
+        } else if (arg0 === 2) {
+          let obj = { value: null, done: true };
+          obj[0] = body;
+          return obj;
+        } else {
+          return { value: "HermesInternal", done: null };
+        }
+      } else {
+        while (true) {
+          let num = 2;
+          c9 = 2;
+          let tmp5 = constants;
+          if (0 === constants) {
+            if (arg0 === 1) {
+              let num7 = 3;
+              c9 = 3;
+              throw body;
+            } else if (arg0 === 2) {
+              let num6 = 3;
+              c9 = 3;
+              obj = { value: null, done: true };
+              obj[0] = body;
+              return obj;
+            } else {
+              let handleConnectionOpen = tmp;
+              let createdAt = tmp2;
+              let tmp56 = arr;
+              let store;
+              let dependencyMap;
+              let dispatcher;
+              arr = [];
+              let _Map = Map;
+              let tmp57 = new.target;
+              let tmp58 = new.target;
+              let map = new Map();
+              let tmp60 = map;
+              store = map;
+              dependencyMap = arr;
+              let tmp61 = arr;
+              dependencyMap = arr;
+              store = arr[Symbol.iterator]();
+            }
+          } else if (1 === tmp5) {
+            let tmp32 = closure_6;
+            let tmp33 = closure_6;
+            let c7 = 0;
+            let tmp34 = store;
+            store.return();
+            throw closure_6;
+          } else {
+            if (2 === tmp5) {
+              let tmp20 = createdAt;
+              let tmp21 = handleConnectionOpen;
+              let tmp22 = closure_6;
+              let tmp23 = closure_6;
+              c7 = 1;
+              createdAt = closure_6;
+              let tmp24 = store;
+              let tmp25 = dependencyMap;
+              let obj1 = store(1208);
+              let tmp26 = createdAt;
+              let captureExceptionResult = obj1.captureException(createdAt);
+              let tmp28 = store;
+              let tmp29 = dependencyMap;
+              let tmp30 = constants;
+              let result = store.set(dependencyMap, constants.FAIL);
+            } else if (arg0 === 1) {
+              let num3 = 3;
+              c9 = 3;
+              throw body;
+            } else if (arg0 === 2) {
+              c7 = 0;
+              let tmp19 = store;
+              store.return();
+              let num2 = 3;
+              c9 = 3;
+              obj = { value: null, done: true };
+              obj[0] = body;
+              return obj;
+            } else {
+              body = body.body;
+              dispatcher = body;
+              if (body == null) {
+                dispatcher = null;
+              }
+              let tmp6 = createdAt;
+              let tmp7 = dispatcher;
+              let tmp8 = dispatcher;
+              if (null != dispatcher) {
+                let tmp9 = createdAt;
+                let tmp10 = arr;
+                let tmp11 = dispatcher;
+                arr = arr.push(dispatcher);
+              }
+              let tmp13 = createdAt;
+              let tmp14 = handleConnectionOpen;
+              let tmp15 = store;
+              let tmp16 = dependencyMap;
+              let tmp17 = constants;
+              let result1 = store.set(dependencyMap, constants.SUCCESS);
+              c7 = 1;
+            }
+            c7 = 0;
+          }
+          let tmp35 = dependencyMap;
+          let tmp36 = store;
+          if (store === undefined) {
+            let tmp44 = createdAt;
+            let tmp45 = handleConnectionOpen;
+            let tmp46 = store;
+            let tmp47 = dependencyMap;
+            let obj4 = store(709);
+            obj1 = { type: "CREATE_REFERRALS_SUCCESS", userTrialOffers: null };
+            let tmp48 = arr;
+            obj1[1] = arr;
+            let dispatchResult = obj4.dispatch(obj1);
+            let num5 = 3;
+            c9 = 3;
+            let obj2 = { value: null, done: true };
+            obj2[0] = store;
+            return obj2;
+          } else {
+            let tmp38 = createdAt;
+            dependencyMap = tmp37;
+            let tmp39 = handleConnectionOpen;
+            c7 = 2;
+            let tmp40 = arr;
+            let tmp41 = dependencyMap;
+            let HTTP = arr(530).HTTP;
+            let obj3 = { url: null, oldFormErrors: true, rejectWithError: true };
+            let tmp42 = c7;
+            let tmp43 = dependencyMap;
+            obj3[0] = c7.CREATE_REFERRAL(dependencyMap);
+            constants = 3;
+            let num4 = 1;
+            c9 = 1;
+            obj4 = { value: null, done: false };
+            obj4[0] = HTTP.post(obj3);
+            return obj4;
+          }
+        }
+      }
+    })();
+  });
+  const _createReferralTrials = tmp;
+  const apply = tmp.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
+}
+function _createReferralTrial() {
+  const self = this;
+  const tmp = callback((arg0) => {
+    let closure_0 = arg0;
+    let c6 = 0;
+    let c7 = 0;
+    let c5 = 0;
+    return (function*(arg0, body) {
+      if (c7 === 2) {
+        c7 = 3;
+        HermesBuiltin.throwTypeError();
+      } else if (tmp6 === 3) {
+        if (arg0 === 1) {
+          throw body;
+        } else if (arg0 === 2) {
+          let obj = { value: null, done: true };
+          obj[0] = body;
+          return obj;
+        } else {
+          return { value: "HermesInternal", done: null };
+        }
+      } else {
+        try {
+          c7 = 2;
+          if (0 === constants) {
+            if (arg0 === 1) {
+              c7 = 3;
+              throw body;
+            } else if (arg0 === 2) {
+              c7 = 3;
+              obj = { value: null, done: true };
+              obj[0] = body;
+              return obj;
+            } else {
+              let dispatcher = tmp3;
+              let closure_2 = tmp7;
+              let callback;
+              let callback2;
+              let currentlySelectedChannelId = 1;
+              const HTTP = callback(outer1_2[4]).HTTP;
+              const obj1 = { url: null, oldFormErrors: true, rejectWithError: false };
+              obj1[0] = c7.CREATE_REFERRAL(callback);
+              constants = 2;
+              c7 = 1;
+              const obj2 = { value: null, done: false };
+              obj2[0] = HTTP.post(obj1);
+              return obj2;
+            }
+          } else if (1 === tmp7) {
+            currentlySelectedChannelId = 0;
+            closure_2 = createdAt;
+            let obj5 = callback2(closure_2[5]);
+            obj5.dispatch({ type: "BILLING_CREATE_REFERRAL_FAIL" });
+            if (closure_2.body.code === constants.INVALID_MESSAGE_SEND_USER) {
+              callback2 = currentlySelectedChannelId.getCurrentlySelectedChannelId();
+              if (null != callback2) {
+                let obj6 = callback2(closure_2[7]);
+                obj6.sendClydeError(callback2, closure_2.body.code);
               }
             }
-            tmp2 = arr;
+            c7 = 3;
+            return { value: "HermesInternal", done: null };
+          } else if (arg0 === 1) {
+            c7 = 3;
+            throw body;
+          } else if (arg0 === 2) {
+            currentlySelectedChannelId = 0;
+            c7 = 3;
+            const obj3 = { value: null, done: true };
+            obj3[0] = body;
+            return obj3;
+          } else {
+            body = body.body;
+            callback2 = body;
+            if (body == null) {
+              callback2 = null;
+            }
+            callback = callback2;
+            obj = callback2(closure_2[5]);
+            const obj4 = { type: "BILLING_CREATE_REFERRAL_SUCCESS", userTrialOffer: null };
+            obj4[1] = callback;
+            obj.dispatch(obj4);
+            obj5 = { userTrialOffer: null };
+            obj5[0] = callback;
+            currentlySelectedChannelId = 0;
+            c7 = 3;
+            obj6 = { value: null, done: true };
+            obj6[0] = obj5;
+            return obj6;
           }
-          const _Array2 = Array;
-          arr = Array.from(iterable);
-          const callResult = toString.call(iterable);
-          tmp3 = "Object" === substr && iterable.constructor;
+        } catch (tmp40) {
+          createdAt = tmp40;
+          if (tmp4 === currentlySelectedChannelId) {
+            c7 = tmp2;
+            throw tmp40;
+          } else {
+            constants = tmp;
+          }
         }
       }
-      tmp = tmp2;
-      if (!tmp2) {
-        const _TypeError = TypeError;
-        const typeError = new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
-        throw typeError;
-      }
-    }
-    if (tmp) {
-      closure_0 = tmp;
-    }
-    let c1 = 0;
-    return () => {
-      if (closure_1 >= length.length) {
-        let obj = { done: true };
-      } else {
-        obj = { done: false };
-        closure_1 = tmp3 + 1;
-        obj.value = length[+closure_1];
-      }
-      return obj;
-    };
-  }
-}
-function _arrayLikeToArray(arg0, arg1) {
-  let length;
-  if (tmp) {
-    length = arg0.length;
-  }
-  const ArrayResult = Array(length);
-  for (let num = 0; num < length; num = num + 1) {
-    ArrayResult[num] = arg0[num];
-  }
-  return ArrayResult;
-}
-async function _fetchReferralEligibleUsers(arg0, arg1, arg2, arg3) {
-  let obj = { index: arg0, searchQuery: arg1 };
-  const json = JSON.stringify(obj);
-  if (outer2_11.has(json)) {
-    return outer2_11.get(json);
+    })();
+  });
+  const _createReferralTrial = tmp;
+  const apply = tmp.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
   } else {
-    const HTTP = outer2_0(outer2_2[6]).HTTP;
-    obj = { url: outer2_9.GET_REFERRAL_ELIGIBLE_USERS };
-    obj = { index: arg0 };
-    let num2 = 10;
-    if (null != arg2) {
-      num2 = arg2;
-    }
-    obj.limit = num2;
-    obj.search_query = arg1;
-    obj.body = obj;
-    obj.oldFormErrors = true;
-    obj.rejectWithError = false;
-    const body = yield HTTP.post(obj).body;
-    const users = body.users;
-    const obj1 = { users: users.map((arg0) => new outer3_6(arg0)), nextIndex: body.next_index };
-    const result = outer2_11.set(json, obj1);
-    return obj1;
+    applyArgumentsResult = apply(self, arguments);
   }
+  return applyArgumentsResult;
 }
-async function _createReferralTrials(arg0, arg1) {
-  const items = [];
-  const map = new Map();
-  let obj = map;
-  const tmp2 = outer2_12(arg0);
-  const iter = tmp2();
-  let iter2 = iter;
-  if (!iter.done) {
-    const value = iter2.value;
-    const HTTP = outer2_0(outer2_2[6]).HTTP;
-    obj = { url: outer2_9.CREATE_REFERRAL(value), oldFormErrors: true, rejectWithError: true };
-    while (true) {
-      let body = yield tmp6(obj).body;
-      let tmp9 = body;
-      let tmp10 = null;
-      if (null != body) {
-        tmp10 = body;
-      }
-      if (null != tmp10) {
-        let tmp12 = items;
-        let tmp13 = tmp10;
-        let arr = items.push(tmp11);
-      }
-      let tmp15 = map;
-      let tmp16 = value;
-      let tmp17 = outer2_10;
-      let result = obj.set(value, outer2_10.SUCCESS);
-      while (true) {
-        let tmp19 = tmp2;
-        let iter3 = tmp2();
-        iter2 = iter3;
-        if (!iter3.done) {
-          break;
+function _resolveReferralTrialOffer() {
+  const self = this;
+  const tmp = callback((arg0) => {
+    let closure_0 = arg0;
+    let c6 = 0;
+    let c7 = 0;
+    let c5 = 0;
+    return (function*(arg0, body) {
+      if (c7 === 2) {
+        c7 = 3;
+        HermesBuiltin.throwTypeError();
+      } else if (tmp6 === 3) {
+        if (arg0 === 1) {
+          throw body;
+        } else if (arg0 === 2) {
+          let obj = { value: null, done: true };
+          obj[0] = body;
+          return obj;
         } else {
-          break label0;
+          return { value: "HermesInternal", done: null };
+        }
+      } else {
+        try {
+          c7 = 2;
+          if (0 === c6) {
+            if (arg0 === 1) {
+              c7 = 3;
+              throw body;
+            } else if (arg0 === 2) {
+              c7 = 3;
+              obj = { value: null, done: true };
+              obj[0] = body;
+              return obj;
+            } else {
+              let dispatcher = tmp3;
+              const dependencyMap = tmp7;
+              let callback2;
+              let c5 = 1;
+              const HTTP = callback(outer1_2[4]).HTTP;
+              const obj1 = { url: null, oldFormErrors: true, rejectWithError: false };
+              obj1[0] = c7.REFERRAL_OFFER_ID_RESOLVE(callback);
+              c6 = 2;
+              c7 = 1;
+              const obj2 = { value: null, done: false };
+              obj2[0] = HTTP.get(obj1);
+              return obj2;
+            }
+          } else if (1 === tmp7) {
+            c5 = 0;
+            let obj5 = callback2(709);
+            const obj3 = { type: "BILLING_REFERRAL_RESOLVE_FAIL", userTrialOfferId: null };
+            obj3[1] = callback;
+            obj5.dispatch(obj3);
+            c7 = 3;
+            return { value: "HermesInternal", done: null };
+          } else if (arg0 === 1) {
+            c7 = 3;
+            throw body;
+          } else if (arg0 === 2) {
+            c5 = 0;
+            c7 = 3;
+            const obj4 = { value: null, done: true };
+            obj4[0] = body;
+            return obj4;
+          } else {
+            body = body.body;
+            callback2 = body;
+            if (body == null) {
+              callback2 = null;
+            }
+            obj = callback2(709);
+            obj5 = { type: "BILLING_REFERRAL_RESOLVE_SUCCESS", userTrialOffer: null };
+            obj5[1] = callback2;
+            obj.dispatch(obj5);
+            const obj6 = { userTrialOffer: null };
+            obj6[0] = callback2;
+            c5 = 0;
+            c7 = 3;
+            const obj7 = { value: null, done: true };
+            obj7[0] = obj6;
+            return obj7;
+          }
+        } catch (tmp27) {
+          let createdAt = tmp27;
+          if (tmp4 === c5) {
+            c7 = tmp2;
+            throw tmp27;
+          } else {
+            c6 = tmp;
+          }
         }
       }
-    }
+    })();
+  });
+  const _resolveReferralTrialOffer = tmp;
+  const apply = tmp.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
   }
-  outer2_1(outer2_2[7]).dispatch({ type: "CREATE_REFERRALS_SUCCESS", userTrialOffers: items });
-  return map;
+  return applyArgumentsResult;
 }
-async function _createReferralTrial(arg0, arg1) {
-  const HTTP = outer2_0(outer2_2[6]).HTTP;
-  let obj = { url: outer2_9.CREATE_REFERRAL(arg0), oldFormErrors: true, rejectWithError: false };
-  const body = yield HTTP.post(obj).body;
-  let tmp = null;
-  if (null != body) {
-    tmp = body;
-  }
-  obj = { type: "BILLING_CREATE_REFERRAL_SUCCESS", userTrialOffer: tmp };
-  outer2_1(outer2_2[7]).dispatch(obj);
-  obj = { userTrialOffer: tmp };
-  return obj;
-}
-async function _resolveReferralTrialOffer(arg0, arg1) {
-  const HTTP = outer2_0(outer2_2[6]).HTTP;
-  let obj = { url: outer2_9.REFERRAL_OFFER_ID_RESOLVE(arg0), oldFormErrors: true, rejectWithError: false };
-  const body = yield HTTP.get(obj).body;
-  let tmp = null;
-  if (null != body) {
-    tmp = body;
-  }
-  obj = { type: "BILLING_REFERRAL_RESOLVE_SUCCESS", userTrialOffer: tmp };
-  outer2_1(outer2_2[7]).dispatch(obj);
-  obj = { userTrialOffer: tmp };
-  return obj;
-}
-({ AbortCodes: closure_8, Endpoints: closure_9 } = ME);
+({ AbortCodes: closure_6, Endpoints: error } = ME);
 let obj = { SUCCESS: 1, [1]: "SUCCESS", FAIL: 2, [2]: "FAIL" };
-let tmp3 = (() => {
-  class EligibleUserCache {
-    constructor() {
-      tmp = outer1_4(this, EligibleUserCache);
-      map = new Map();
-      this.cache = map;
-      this.expiration = Date.now() + 600000;
-      return;
-    }
+class EligibleUserCache {
+  constructor() {
+    obj = Object.create(new.target.prototype);
+    map = new Map();
+    obj.cache = map;
+    obj.expiration = Date.now() + 600000;
+    return obj;
   }
-  let obj = {
-    key: "set",
-    value(arg0, arg1) {
-      const cache = this.cache;
-      const result = cache.set(arg0, arg1);
-    }
-  };
-  const items = [obj, , , ];
-  obj = {
-    key: "get",
-    value(arg0) {
-      this._checkExpiration();
-      const cache = this.cache;
-      return cache.get(arg0);
-    }
-  };
-  items[1] = obj;
-  obj = {
-    key: "has",
-    value(arg0) {
-      this._checkExpiration();
-      const cache = this.cache;
-      return cache.has(arg0);
-    }
-  };
-  items[2] = obj;
-  items[3] = {
-    key: "_checkExpiration",
-    value() {
-      if (this.expiration < Date.now()) {
-        const cache = this.cache;
-        cache.clear();
-      }
-    }
-  };
-  return callback2(EligibleUserCache, items);
-})();
-tmp3 = new tmp3();
-let closure_11 = tmp3;
-let result = require("_defineProperties").fileFinishedImporting("modules/premium/ReferralTrialActionCreators.tsx");
+}
+const prototype = EligibleUserCache.prototype;
+prototype["set"] = function set(arg0, arg1) {
+  const cache = this.cache;
+  const result = cache.set(arg0, arg1);
+};
+prototype["get"] = function get(arg0) {
+  this._checkExpiration();
+  const cache = this.cache;
+  return cache.get(arg0);
+};
+prototype["has"] = function has(arg0) {
+  this._checkExpiration();
+  const cache = this.cache;
+  return cache.has(arg0);
+};
+prototype["_checkExpiration"] = function _checkExpiration() {
+  if (this.expiration < Date.now()) {
+    const cache = this.cache;
+    cache.clear();
+  }
+};
+obj = Object.create(EligibleUserCache.prototype);
+obj.cache = new Map();
+obj.expiration = Date.now() + 600000;
+let map = new Map();
+let result = require("handleConnectionOpen").fileFinishedImporting("modules/premium/ReferralTrialActionCreators.tsx");
 
 export const ReferralOfferStatus = { REDEEMED: 1, [1]: "REDEEMED", PENDING: 2, [2]: "PENDING", CONVERTED: 3, [3]: "CONVERTED" };
 export const CreateReferralStatus = obj;
-export const fetchReferralEligibleUsers = function fetchReferralEligibleUsers(arg0, outer2_0, arg2) {
-  return _fetchReferralEligibleUsers(...arguments);
+export const fetchReferralEligibleUsers = function fetchReferralEligibleUsers(closure_0, closure_02, closure_1) {
+  const self = this;
+  const apply = _fetchReferralEligibleUsers.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
 };
 export const fetchReferralsRemaining = function fetchReferralsRemaining() {
-  let obj = importDefault(686);
+  let obj = importDefault(709);
   obj.dispatch({ type: "BILLING_REFERRALS_REMAINING_FETCH_START" });
-  const HTTP = require(507) /* _isNativeReflectConstruct */.HTTP;
+  const HTTP = require(530) /* sendRequest */.HTTP;
   obj = { url: constants.GET_REFERRALS_REMAINING, oldFormErrors: true, rejectWithError: false };
   const value = HTTP.get(obj);
   return value.then((body) => {
     const map = new Map();
     if (null != body.body) {
       if (null != body.body.recipient_status) {
-        for (const key10015 in arg0.body.recipient_status) {
-          let tmp7 = key10015;
-          let result = map.set(key10015, arg0.body.recipient_status[key10015]);
+        for (const key10014 in arg0.body.recipient_status) {
+          let tmp4 = key10014;
+          let result = map.set(key10014, arg0.body.recipient_status[key10014]);
           continue;
         }
       }
     }
-    const obj = { type: "BILLING_REFERRALS_REMAINING_FETCH_SUCCESS" };
     let num = 0;
     if (null != body.body) {
       num = 0;
@@ -270,59 +579,80 @@ export const fetchReferralsRemaining = function fetchReferralsRemaining() {
         num = body.body.referrals_remaining;
       }
     }
-    obj.referrals_remaining = num;
+    const obj = { type: "BILLING_REFERRALS_REMAINING_FETCH_SUCCESS", referrals_remaining: num, sent_user_ids: null, refresh_at: null, recipient_status: null, has_eligible_friends: null, reminder_state_id: null };
     if (null != body.body) {
       if (null != body.body.sent_user_ids) {
         const sent_user_ids = body.body.sent_user_ids;
       }
-      obj.sent_user_ids = [];
+      obj[2] = [];
       body = body.body;
       let refresh_at;
-      if (null != body) {
+      if (body != null) {
         refresh_at = body.refresh_at;
       }
-      let tmp2 = null;
-      if (null != refresh_at) {
-        tmp2 = refresh_at;
+      if (refresh_at == null) {
+        refresh_at = null;
       }
-      obj.refresh_at = tmp2;
-      obj.recipient_status = map;
+      obj[3] = refresh_at;
+      obj[4] = map;
       const body2 = body.body;
-      let has_eligible_friends;
-      if (null != body2) {
-        has_eligible_friends = body2.has_eligible_friends;
+      let flag;
+      if (body2 != null) {
+        flag = body2.has_eligible_friends;
       }
-      obj.has_eligible_friends = null != has_eligible_friends && has_eligible_friends;
+      if (flag == null) {
+        flag = false;
+      }
+      obj[5] = flag;
       const body3 = body.body;
       let reminder_state_id;
-      if (null != body3) {
+      if (body3 != null) {
         reminder_state_id = body3.reminder_state_id;
       }
-      let tmp5 = null;
-      if (null != reminder_state_id) {
-        tmp5 = reminder_state_id;
+      if (reminder_state_id == null) {
+        reminder_state_id = null;
       }
-      obj.reminder_state_id = tmp5;
+      obj[6] = reminder_state_id;
       obj2.dispatch(obj);
     }
   }, (status) => {
     status = undefined;
-    if (null != status) {
+    if (status != null) {
       status = status.status;
     }
     if (404 !== status) {
-      let obj = outer1_1(outer1_2[7]);
-      obj = { type: "BILLING_REFERRALS_REMAINING_FETCH_FAIL" };
-      obj.dispatch(obj);
+      callback(709).dispatch({ type: "BILLING_REFERRALS_REMAINING_FETCH_FAIL" });
+      const obj = callback(709);
     }
   });
 };
-export const createReferralTrials = function createReferralTrials(arg0) {
-  return _createReferralTrials(...arguments);
+export const createReferralTrials = function createReferralTrials(closure_0) {
+  const self = this;
+  const apply = _createReferralTrials.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
 };
 export const createReferralTrial = function createReferralTrial() {
-  return _createReferralTrial(...arguments);
+  const self = this;
+  const apply = _createReferralTrial.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
 };
 export const resolveReferralTrialOffer = function resolveReferralTrialOffer(content) {
-  return _resolveReferralTrialOffer(...arguments);
+  const self = this;
+  const apply = _resolveReferralTrialOffer.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
 };

@@ -1,42 +1,43 @@
-// Module ID: 5181
-// Function ID: 45016
+// Module ID: 5203
+// Function ID: 5204
 // Name: useGuildRoleMemberCounts
-// Dependencies: [31, 5182, 566, 5183, 2]
+// Dependencies: [19, 5204, 589, 5205, 2]
 // Exports: default
 
-// Module 5181 (useGuildRoleMemberCounts)
-import result from "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 5203 (useGuildRoleMemberCounts)
+import noop from "noop";
+import getRoleMemberCount from "getRoleMemberCount";
 
 const require = arg1;
 let closure_5 = {};
 const result = require("initialize").fileFinishedImporting("modules/guild_role_subscriptions/useGuildRoleMemberCounts.tsx");
 
 export default function useGuildRoleMemberCounts(arg0) {
-  let num = arg1;
   const _require = arg0;
+  let num = arg1;
   if (arg1 === undefined) {
     num = 0;
   }
-  const items = [_isNativeReflectConstruct];
+  const items = [getRoleMemberCount];
   const items1 = [arg0, num];
-  const stateFromStores = _require(566).useStateFromStores(items, () => outer1_4.getRoleMemberCount(closure_0));
+  const stateFromStores = _require(589).useStateFromStores(items, () => outer1_4.getRoleMemberCount(closure_0));
   const effect = React.useEffect(() => {
     if (null != closure_0) {
-      let tmp2 = null != tmp13;
-      if (tmp2) {
-        tmp2 = num > 0;
+      let tmp4 = null != tmp3;
+      if (tmp4) {
+        tmp4 = num > 0;
       }
-      if (tmp2) {
+      if (tmp4) {
         const _Date = Date;
-        tmp2 = Date.now() - tmp13 < num;
+        tmp4 = Date.now() - tmp3 < num;
       }
-      if (!tmp2) {
+      if (!tmp4) {
         const _Date2 = Date;
-        outer1_5[closure_0] = Date.now();
-        const memberCounts = num(outer1_2[3]).fetchMemberCounts(closure_0);
+        tmp2[tmp] = Date.now();
+        const memberCounts = num(outer1_2[3]).fetchMemberCounts(tmp);
         const obj = num(outer1_2[3]);
       }
+      tmp2 = outer1_5;
     }
   }, items1);
   return stateFromStores;

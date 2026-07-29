@@ -1,17 +1,17 @@
-// Module ID: 14791
-// Function ID: 112587
+// Module ID: 14817
+// Function ID: 14818
 // Name: __INTERNAL_VIEW_CONFIG
-// Dependencies: [110, 42, 2]
+// Dependencies: [106, 65, 2]
 
-// Module 14791 (__INTERNAL_VIEW_CONFIG)
+// Module 14817 (__INTERNAL_VIEW_CONFIG)
 import weakSet from "weakSet";
-import get from "get";
+import setRuntimeConfigProvider from "setRuntimeConfigProvider";
 
-let obj = { uiViewClassName: "TextDisplayComponentView", directEventTypes: { topTapLink: { registrationName: "onTapLink" }, topLongPressLink: { registrationName: "onLongPressLink" }, topTapAttachmentLink: { registrationName: "onTapAttachmentLink" }, topLongPressAttachmentLink: { registrationName: "onLongPressAttachmentLink" }, topTapMention: { registrationName: "onTapMention" }, topTapTimestamp: { registrationName: "onTapTimestamp" }, topTapInlineCode: { registrationName: "onTapInlineCode" }, topTapEmoji: { registrationName: "onTapEmoji" } } };
+let obj = { uiViewClassName: "TextDisplayComponentView", directEventTypes: { topTapLink: { registrationName: "onTapLink" }, topLongPressLink: { registrationName: "onLongPressLink" }, topTapAttachmentLink: { registrationName: "onTapAttachmentLink" }, topLongPressAttachmentLink: { registrationName: "onLongPressAttachmentLink" }, topTapMention: { registrationName: "onTapMention" }, topTapTimestamp: { registrationName: "onTapTimestamp" }, topTapInlineCode: { registrationName: "onTapInlineCode" }, topTapEmoji: { registrationName: "onTapEmoji" } }, validAttributes: null };
 obj = { model: true, markdownTextRenderOptions: true };
 const merged = Object.assign(weakSet.ConditionallyIgnoredEventHandlers({ onTapLink: true, onLongPressLink: true, onTapAttachmentLink: true, onLongPressAttachmentLink: true, onTapMention: true, onTapTimestamp: true, onTapInlineCode: true, onTapEmoji: true }));
-obj.validAttributes = obj;
-const value = get.get("TextDisplayComponentView", () => obj);
+obj[2] = obj;
+const value = setRuntimeConfigProvider.get("TextDisplayComponentView", () => obj);
 const result = require("set").fileFinishedImporting("../discord_common/js/packages/rtn-codegen/js/TextDisplayComponentViewNativeComponent.tsx");
 
 export default value;

@@ -1,57 +1,58 @@
-// Module ID: 10435
-// Function ID: 80349
+// Module ID: 10459
+// Function ID: 10460
 // Name: UnreadSettingNoticeConnected
-// Dependencies: [31, 27, 662, 33, 4165, 689, 10436, 4161, 1212, 4695, 10437, 2]
+// Dependencies: [19, 17, 685, 21, 4189, 712, 10460, 4185, 1236, 4717, 10461, 2]
 // Exports: default
 
-// Module 10435 (UnreadSettingNoticeConnected)
-import "result";
+// Module 10459 (UnreadSettingNoticeConnected)
+import "noop";
 import { View } from "get ActivityIndicator";
 import { ChannelNotificationSettingsFlags as closure_4 } from "MAX_FAVORITES";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_5;
+let c5;
 let closure_6;
 const require = arg1;
-({ jsx: closure_5, jsxs: closure_6 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { display: "flex", flexDirection: "row", paddingVertical: require("_createForOfIteratorHelperLoose").space.PX_12, paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16, borderBottomWidth: 1, borderBottomColor: require("_createForOfIteratorHelperLoose").colors.BORDER_SUBTLE, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW };
-const merged = Object.assign(require("_createForOfIteratorHelperLoose").shadows.SHADOW_LOW);
-_createForOfIteratorHelperLoose.content = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.informations = { flex: 1 };
-_createForOfIteratorHelperLoose.actions = { display: "flex", flexDirection: "row", alignItems: "center", marginLeft: 16 };
-_createForOfIteratorHelperLoose.inlineTextWithIcon = { display: "flex", flexDirection: "row", alignItems: "center" };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+({ jsx: c5, jsxs: closure_6 } = jsxProd);
+createCacheKey = { content: null, informations: null, actions: null, inlineTextWithIcon: null };
+createCacheKey = { display: "flex", flexDirection: "row", paddingVertical: require("Themes").space.PX_12, paddingHorizontal: require("Themes").space.PX_16, borderBottomWidth: 1, borderBottomColor: require("Themes").colors.BORDER_SUBTLE, backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW };
+const merged = Object.assign(require("Themes").shadows.SHADOW_LOW);
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { flex: 1 };
+createCacheKey[2] = { display: "flex", flexDirection: "row", alignItems: "center", marginLeft: 16 };
+createCacheKey[3] = { display: "flex", flexDirection: "row", alignItems: "center" };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
 const result = require("MAX_FAVORITES").fileFinishedImporting("modules/notifications/settings_unread_notice/native/UnreadSettingNotice.tsx");
 
 export default function UnreadSettingNoticeConnected(channel) {
   const _require = channel;
-  const tmp = _createForOfIteratorHelperLoose();
-  let obj = { style: tmp.content };
+  const tmp = createCacheKey();
+  let obj = { style: tmp.content, children: null };
   obj = { id: channel.channel.id };
-  const items = [callback(importDefault(10436), obj), , ];
-  obj = { style: tmp.informations };
-  const obj1 = { variant: "text-md/semibold" };
-  const intl = _require(1212).intl;
-  obj1.children = intl.string(_require(1212).t.i4xQ5o);
-  obj.children = callback(_require(4161).Text, obj1);
+  const items = [callback(importDefault(10460), obj), , ];
+  obj = { style: tmp.informations, children: null };
+  const obj1 = { variant: "text-md/semibold", children: null };
+  const intl = _require(1236).intl;
+  obj1[1] = intl.string(_require(1236).t.i4xQ5o);
+  obj[1] = callback(_require(4185).Text, obj1);
   items[1] = callback(View, obj);
-  const obj2 = { style: tmp.actions };
+  const obj2 = { style: tmp.actions, children: null };
   const obj3 = {
     accessibilityRole: "button",
     style: tmp.inlineTextWithIcon,
     onPress() {
       outer1_1(outer1_2[10])(channel.channel.guild_id, channel.channel.id, outer1_4.UNREADS_ONLY_MENTIONS);
       channel.clearUnreadsNotice();
-    }
+    },
+    children: null
   };
-  const obj4 = { variant: "text-xs/medium", color: "text-link" };
-  const intl2 = _require(1212).intl;
-  obj4.children = intl2.string(_require(1212).t.KyUKhT);
-  obj3.children = callback(_require(4161).Text, obj4);
-  obj2.children = callback(_require(4695).PressableOpacity, obj3);
+  const obj4 = { variant: "text-xs/medium", color: "text-link", children: null };
+  const intl2 = _require(1236).intl;
+  obj4[2] = intl2.string(_require(1236).t.KyUKhT);
+  obj3[3] = callback(_require(4185).Text, obj4);
+  obj2[1] = callback(_require(4717).PressableOpacity, obj3);
   items[2] = callback(View, obj2);
-  obj.children = items;
+  obj[1] = items;
   return callback2(View, obj);
 };

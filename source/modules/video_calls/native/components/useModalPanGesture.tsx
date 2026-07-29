@@ -1,15 +1,15 @@
-// Module ID: 10854
-// Function ID: 84021
+// Module ID: 10878
+// Function ID: 10879
 // Name: useModalPanGesture
-// Dependencies: [4026, 5251, 4577, 4372, 2]
+// Dependencies: [4050, 5273, 4599, 4395, 2]
 // Exports: default
 
-// Module 10854 (useModalPanGesture)
+// Module 10878 (useModalPanGesture)
 let closure_3 = { code: "function useModalPanGestureTsx1({velocityY:velocityY}){const{translateY,thresholdTranslate,thresholdVelocity,withSpring,height,runOnJS,ModalActionCreators,onClose,onEnd}=this.__closure;const config={damping:15,mass:1,stiffness:250,overshootClamping:true,restSpeedThreshold:0.001,restDisplacementThreshold:0.001,velocity:velocityY};if(translateY.get()>=thresholdTranslate||velocityY>=thresholdVelocity){translateY.set(withSpring(height,config,'respect-motion-settings',function(){runOnJS(ModalActionCreators.pop)();}));if(onClose!=null){runOnJS(onClose)();}}else{translateY.set(withSpring(0,config));}if(onEnd!=null){runOnJS(onEnd)();}}" };
 let closure_4 = { code: "function useModalPanGestureTsx2({translationY:translationY}){const{translateY,interpolate,start,maxTranslate,Extrapolate}=this.__closure;translateY.set(interpolate(start.get().y+translationY,[0,maxTranslate],[0,maxTranslate],Extrapolate.CLAMP));}" };
 let closure_5 = { code: "function useModalPanGestureTsx3(){const{onStart,runOnJS,start,translateY}=this.__closure;if(onStart!=null){runOnJS(onStart)();}start.set({y:translateY.get()});}" };
 let closure_6 = { code: "function useModalPanGestureTsx4(){const{runOnJS,ModalActionCreators}=this.__closure;runOnJS(ModalActionCreators.pop)();}" };
-let result = require("withSpring").fileFinishedImporting("modules/video_calls/native/components/useModalPanGesture.tsx");
+let result = require("CONFIG_NEVER_ANIMATE").fileFinishedImporting("modules/video_calls/native/components/useModalPanGesture.tsx");
 
 export default function useModalPanGesture(thresholdVelocity) {
   let num = thresholdVelocity.thresholdVelocity;
@@ -31,12 +31,10 @@ export default function useModalPanGesture(thresholdVelocity) {
   class J {
     constructor() {
       if (null != onStart) {
-        tmp = c0;
-        tmp2 = thresholdTranslate;
-        num = 0;
+        tmp2 = c0;
+        tmp3 = thresholdTranslate;
         obj = c0(thresholdTranslate[0]);
-        tmp3 = onStart;
-        tmp4 = obj.runOnJS(onStart)();
+        tmp4 = obj.runOnJS(tmp)();
       }
       obj = { y: translateY.get() };
       result = c8.set(obj);
@@ -62,56 +60,49 @@ export default function useModalPanGesture(thresholdVelocity) {
   class O {
     constructor(arg0) {
       velocityY = thresholdVelocity.velocityY;
-      obj = { damping: 15, mass: 1, stiffness: 250, overshootClamping: true, restSpeedThreshold: 0.001, restDisplacementThreshold: 0.001 };
-      obj.velocity = velocityY;
+      obj = { damping: 15, mass: 1, stiffness: 250, overshootClamping: true, restSpeedThreshold: 0.001, restDisplacementThreshold: 0.001, velocity: velocityY };
+      obj2 = translateY;
       if (translateY.get() < thresholdTranslate) {
         tmp = c0;
         if (velocityY < c0) {
-          tmp2 = translateY;
-          tmp3 = c0;
-          tmp4 = thresholdTranslate;
-          num = 2;
-          obj2 = c0(thresholdTranslate[2]);
-          num2 = 0;
-          result = translateY.set(obj2.withSpring(0, obj));
+          tmp2 = c0;
+          tmp3 = thresholdTranslate;
+          obj3 = c0(thresholdTranslate[2]);
+          num = 0;
+          result = obj2.set(obj3.withSpring(0, obj));
         }
-        tmp11 = onEnd;
-        tmp12 = null;
+        tmp11 = null;
         if (null != onEnd) {
-          tmp13 = c0;
-          tmp14 = thresholdTranslate;
-          num3 = 0;
-          obj6 = c0(thresholdTranslate[0]);
-          tmp15 = onEnd;
-          tmp16 = obj6.runOnJS(onEnd)();
+          tmp12 = c0;
+          tmp13 = thresholdTranslate;
+          obj7 = c0(thresholdTranslate[0]);
+          tmp14 = obj7.runOnJS(tmp10)();
         }
         return;
       }
-      obj3 = c0(thresholdTranslate[2]);
+      obj4 = c0(thresholdTranslate[2]);
       fn = function n() {
-        num(thresholdTranslate[0]).runOnJS(maxTranslate(thresholdTranslate[3]).pop)();
+        callback(4050).runOnJS(callback2(4395).pop)();
       };
       obj = { runOnJS: c0(thresholdTranslate[0]).runOnJS, ModalActionCreators: maxTranslate(thresholdTranslate[3]) };
       fn.__closure = obj;
       fn.__workletHash = 14223008059411;
       fn.__initData = onEnd;
-      result1 = translateY.set(obj3.withSpring(height, obj, "respect-motion-settings", fn));
+      result1 = obj2.set(obj4.withSpring(height, obj, "respect-motion-settings", fn));
       if (null != onClose) {
         tmp7 = c0;
         tmp8 = thresholdTranslate;
-        obj5 = c0(thresholdTranslate[0]);
-        tmp9 = onClose;
-        tmp10 = obj5.runOnJS(onClose)();
+        obj6 = c0(thresholdTranslate[0]);
+        tmp9 = obj6.runOnJS(tmp6)();
       }
       return;
     }
   }
-  const obj1 = { translateY, thresholdTranslate, thresholdVelocity: num, withSpring: num(thresholdTranslate[2]).withSpring, height, runOnJS: num(thresholdTranslate[0]).runOnJS, ModalActionCreators: maxTranslate(thresholdTranslate[3]), onClose, onEnd };
-  O.__closure = obj1;
+  const onUpdateResult = Gesture.Pan().enabled(thresholdVelocity.gestureEnabled).onStart(J).onUpdate(fn);
+  O.__closure = { translateY, thresholdTranslate, thresholdVelocity: num, withSpring: num(thresholdTranslate[2]).withSpring, height, runOnJS: num(thresholdTranslate[0]).runOnJS, ModalActionCreators: maxTranslate(thresholdTranslate[3]), onClose, onEnd };
   O.__workletHash = 16881029664873;
   O.__initData = height;
-  const onUpdateResult = Gesture.Pan().enabled(thresholdVelocity.gestureEnabled).onStart(J).onUpdate(fn);
-  const onEndResult = Gesture.Pan().enabled(thresholdVelocity.gestureEnabled).onStart(J).onUpdate(fn).onEnd(O);
-  let items = [-5, 15];
-  return Gesture.Pan().enabled(thresholdVelocity.gestureEnabled).onStart(J).onUpdate(fn).onEnd(O).failOffsetY(-0.01).activeOffsetY(items);
+  const obj1 = { translateY, thresholdTranslate, thresholdVelocity: num, withSpring: num(thresholdTranslate[2]).withSpring, height, runOnJS: num(thresholdTranslate[0]).runOnJS, ModalActionCreators: maxTranslate(thresholdTranslate[3]), onClose, onEnd };
+  const onEndResult = onUpdateResult.onEnd(O);
+  return onUpdateResult.onEnd(O).failOffsetY(-0.01).activeOffsetY([-5, 15]);
 };

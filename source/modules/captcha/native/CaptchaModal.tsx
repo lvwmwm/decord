@@ -1,44 +1,39 @@
-// Module ID: 16071
-// Function ID: 123974
+// Module ID: 16106
+// Function ID: 16107
 // Name: CaptchaModal
-// Dependencies: [31, 27, 14834, 14835, 33, 4165, 9169, 1508, 16072, 5221, 4576, 6763, 4161, 1212, 4578, 9446, 16073, 14842, 2]
+// Dependencies: [19, 17, 14860, 14861, 21, 4189, 9193, 1532, 16107, 5243, 4598, 6785, 4185, 1236, 4600, 9470, 16108, 14868, 2]
 // Exports: default
 
-// Module 16071 (CaptchaModal)
-import result from "result";
-import get_ActivityIndicator from "get ActivityIndicator";
+// Module 16106 (CaptchaModal)
+import noop from "noop";
+import get_ActivityIndicator from "trackRegTransition";
 import { doesRegistrationHaveIdentityType as closure_6 } from "useRegistrationUIStore";
 import RegistrationTransitionActionTypes from "RegistrationTransitionActionTypes";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_10;
-let closure_4;
-let closure_5;
-let closure_7;
-let closure_8;
-let closure_9;
+let c10;
+let c4;
+let c5;
+let c9;
+let error;
+let metroImportAll;
 const require = arg1;
-({ Keyboard: closure_4, View: closure_5 } = get_ActivityIndicator);
-({ RegisterTransitionSteps: closure_7, RegistrationTransitionActionTypes: closure_8 } = RegistrationTransitionActionTypes);
-({ jsx: closure_9, jsxs: closure_10 } = jsxProd);
-let closure_11 = _createForOfIteratorHelperLoose.createStyles((arg0) => {
-  let obj = {};
-  obj = { alignItems: "center", paddingVertical: 8 };
-  let num = 8;
+({ Keyboard: c4, View: c5 } = get_ActivityIndicator);
+({ RegisterTransitionSteps: error, RegistrationTransitionActionTypes: metroImportAll } = RegistrationTransitionActionTypes);
+({ jsx: c9, jsxs: c10 } = jsxProd);
+let closure_11 = createCacheKey.createStyles((arg0) => {
+  let paddingHorizontal = 8;
   if (arg0) {
-    num = 32;
+    paddingHorizontal = 32;
   }
-  obj.paddingHorizontal = num;
-  obj.contentContainer = obj;
-  obj.description = { paddingBottom: 12, paddingTop: 4 };
-  return obj;
+  return { contentContainer: { alignItems: "center", paddingVertical: 8, paddingHorizontal }, description: { paddingBottom: 12, paddingTop: 4 } };
 });
 let result = require("useRegistrationUIStore").fileFinishedImporting("modules/captcha/native/CaptchaModal.tsx");
 
 export default function CaptchaModal(arg0) {
   let bodyText;
-  let result;
+  let noop;
   let closure_4;
   let closure_5;
   let closure_6;
@@ -48,15 +43,17 @@ export default function CaptchaModal(arg0) {
   let onReject;
   let require;
   ({ onCaptchaVerify: require, onReject } = arg0);
-  ({ close: dependencyMap, sitekey: result, captchaService: closure_4, headerText, bodyText, rqdata: closure_5, rqtoken: closure_6, userflow: closure_7 } = arg0);
-  let tmp = callback2(onReject(9169)());
-  const tmp2 = onReject(1508)();
-  let closure_8 = tmp2;
-  const items = [tmp2];
+  ({ close: dependencyMap, sitekey: noop, captchaService: closure_4, headerText, bodyText, rqdata: closure_5, rqtoken: closure_6, userflow: closure_7 } = arg0);
+  let c8;
+  let callback;
+  const tmp2 = callback2(onReject(9193)());
+  const tmp3 = onReject(1532)();
+  c8 = tmp3;
+  const items = [tmp3];
   const memo = React.useMemo(() => {
-    const first = tmp2.getState().routes[0];
+    const first = _undefined.getState().routes[0];
     let name;
-    if (null != first) {
+    if (first != null) {
       name = first.name;
     }
     let str = "Guild Join Captcha";
@@ -68,70 +65,74 @@ export default function CaptchaModal(arg0) {
     }
     return str;
   }, items);
-  const callback = onReject(16072)({ onReject, analyticsType: memo });
+  callback = onReject(16107)({ onReject, analyticsType: memo });
   const effect = React.useEffect(() => {
-    outer1_4.dismiss();
+    closure_4.dismiss();
   }, []);
-  let obj = { startHeight: 900, startExpanded: true };
-  obj = { style: tmp.contentContainer, spacing: 12 };
-  const items1 = [callback(require(6763) /* AccountAgeTier10LargeBadge */.DisguiseSpotIllustration, { scale: 0.5 }), , ];
-  obj = {};
-  const obj1 = { variant: "heading-xl/bold", accessibilityRole: "header" };
-  if (null == headerText) {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    headerText = intl.string(require(1212) /* getSystemLocale */.t.FpoiHe);
+  let obj = { style: tmp2.contentContainer, spacing: 12, children: null };
+  const items1 = [callback(require(6785) /* AccountAgeTier10LargeBadge */.DisguiseSpotIllustration, { scale: 0.5 }), , ];
+  if (headerText == null) {
+    const intl = tmp7(1236).intl;
+    headerText = intl.string(tmp7(1236).t.FpoiHe);
   }
-  obj1.children = headerText;
-  const items2 = [callback(require(4161) /* Text */.Text, obj1), ];
-  let obj2 = { variant: "text-md/medium", color: "text-subtle", style: tmp.description };
-  if (null == bodyText) {
-    const intl2 = require(1212) /* getSystemLocale */.intl;
-    bodyText = intl2.string(require(1212) /* getSystemLocale */.t["/CidxO"]);
+  const items2 = [callback(require(4185) /* Text */.Text, { variant: "heading-xl/bold", accessibilityRole: "header", children: headerText }), ];
+  obj = { variant: "text-md/medium", color: "text-subtle", style: tmp2.description, children: null };
+  if (bodyText == null) {
+    const intl2 = tmp7(1236).intl;
+    bodyText = intl2.string(tmp7(1236).t["/CidxO"]);
   }
-  obj2.children = bodyText;
-  items2[1] = callback(require(4161) /* Text */.Text, obj2);
-  obj.children = items2;
-  items1[1] = closure_10(closure_5, obj);
-  let obj3 = {
+  obj = { startHeight: 900, startExpanded: true, children: null };
+  const obj1 = { children: null };
+  obj[3] = bodyText;
+  items2[1] = callback(require(4185) /* Text */.Text, obj);
+  obj1[0] = items2;
+  items1[1] = closure_10(closure_5, obj1);
+  let obj2 = {
     grow: true,
     onPress() {
       callback2();
       callback();
       const result = outer1_0(outer1_2[15]).emitCaptchaDistributionMetric(closure_7);
       let obj = outer1_0(outer1_2[15]);
-      const obj2 = onReject(outer1_2[16]);
-      const showCaptchaResult = onReject(outer1_2[16]).showCaptcha(closure_4, result, closure_5);
-      onReject(outer1_2[16]).showCaptcha(closure_4, result, closure_5).then((arg0) => {
-        let tmp = "auth" === outer1_8.getState().routes[0].name;
+      let obj2 = onReject(outer1_2[16]);
+      const showCaptchaResult = onReject(outer1_2[16]).showCaptcha(closure_4, noop, closure_5);
+      onReject(outer1_2[16]).showCaptcha(closure_4, noop, closure_5).then((arg0) => {
+        let obj = state;
+        let tmp = "auth" === state.getState().routes[0].name;
         if (tmp) {
-          tmp = outer2_6();
+          tmp = outer1_6();
         }
         if (tmp) {
-          let obj = outer2_0(outer2_2[17]);
-          obj = { step: outer2_7.CAPTCHA, actionType: constants.SUBMITTED };
-          obj.trackRegTransition(obj);
+          obj = { step: null, actionType: null };
+          obj[0] = outer1_7.CAPTCHA;
+          obj[1] = outer1_8.SUBMITTED;
+          outer1_0(outer1_2[17]).trackRegTransition(obj);
+          const obj2 = outer1_0(outer1_2[17]);
         }
-        outer1_0(arg0, outer1_6);
-        let tmp9 = "auth" === outer1_8.getState().routes[0].name;
+        callback(arg0, closure_6);
+        let tmp9 = "auth" === obj.getState().routes[0].name;
         if (tmp9) {
-          tmp9 = outer2_6();
+          tmp9 = outer1_6();
         }
         if (tmp9) {
-          obj = { step: outer2_7.CAPTCHA, actionType: constants.SUCCESS };
-          outer2_0(outer2_2[17]).trackRegTransition(obj);
-          const obj3 = outer2_0(outer2_2[17]);
+          obj = { step: null, actionType: null };
+          obj[0] = outer1_7.CAPTCHA;
+          obj[1] = outer1_8.SUCCESS;
+          outer1_0(outer1_2[17]).trackRegTransition(obj);
+          const obj4 = outer1_0(outer1_2[17]);
         }
       }).catch((arg0) => {
-        if (null != outer1_1) {
-          outer1_1(arg0);
+        if (closure_1 != null) {
+          tmp(arg0);
         }
       });
-    }
+    },
+    text: null
   };
-  const intl3 = require(1212) /* getSystemLocale */.intl;
-  obj3.text = intl3.string(require(1212) /* getSystemLocale */.t["cY+Oob"]);
-  items1[2] = callback(require(4578) /* Button */.Button, obj3);
-  obj.children = items1;
-  obj.children = closure_10(require(4576) /* Stack */.Stack, obj);
-  return callback(require(5221) /* Background */.BottomSheet, obj);
+  const intl3 = tmp7(1236).intl;
+  obj2[2] = intl3.string(require(1236) /* getSystemLocale */.t["cY+Oob"]);
+  items1[2] = callback(require(4600) /* Button */.Button, obj2);
+  obj[2] = items1;
+  obj[2] = closure_10(require(4598) /* Stack */.Stack, obj);
+  return callback(require(5243) /* Background */.BottomSheet, obj);
 };

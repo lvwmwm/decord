@@ -1,137 +1,15 @@
-// Module ID: 8085
-// Function ID: 64106
-// Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 1850, 664, 8086, 561, 8088, 566, 686, 2]
+// Module ID: 8109
+// Function ID: 8110
+// Name: map
+// Dependencies: [1874, 687, 8110, 584, 8112, 589, 709, 2]
+// Exports: getObtainedAtFromBadge, getSingleRequirementThreshold
 
-// Module 8085 (_isNativeReflectConstruct)
-import closure_3 from "set";
-import closure_4 from "set";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import set from "_possibleConstructorReturn";
+// Module 8109 (map)
+import mergeGuildAvatar from "mergeGuildAvatar";
+import { Store } from "initialize";
+import set from "set";
 
 const require = arg1;
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
-  }
-  const result = _isNativeReflectConstruct();
-}
-function _createForOfIteratorHelperLoose(iterable) {
-  let closure_0 = iterable;
-  iterable = "undefined" !== typeof Symbol;
-  if (iterable) {
-    const _Symbol = Symbol;
-    iterable = iterable[Symbol.iterator];
-  }
-  if (!iterable) {
-    iterable = iterable[Symbol.iterator];
-  }
-  if (iterable) {
-    const iter = iterable.call(iterable);
-    const next = iter.next;
-    return next.bind(iter);
-  } else {
-    const _Array = Array;
-    let tmp = iterable;
-    if (!Array.isArray(iterable)) {
-      let tmp2;
-      if (iterable) {
-        if ("string" === typeof iterable) {
-          tmp2 = _arrayLikeToArray(iterable, undefined);
-        } else {
-          const toString = {}.toString;
-          const substr = toString.call(iterable).slice(8, -1);
-          let name = substr;
-          if (tmp3) {
-            name = iterable.constructor.name;
-          }
-          if ("Map" !== name) {
-            if ("Set" !== name) {
-              if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(iterable, undefined);
-              } else {
-                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
-              }
-            }
-            tmp2 = arr;
-          }
-          const _Array2 = Array;
-          arr = Array.from(iterable);
-          const callResult = toString.call(iterable);
-          tmp3 = "Object" === substr && iterable.constructor;
-        }
-      }
-      tmp = tmp2;
-      if (!tmp2) {
-        const _TypeError = TypeError;
-        const typeError = new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
-        throw typeError;
-      }
-    }
-    if (tmp) {
-      closure_0 = tmp;
-    }
-    let c1 = 0;
-    return () => {
-      if (closure_1 >= length.length) {
-        let obj = { done: true };
-      } else {
-        obj = { done: false };
-        closure_1 = tmp3 + 1;
-        obj.value = length[+closure_1];
-      }
-      return obj;
-    };
-  }
-}
-function _arrayLikeToArray(arg0, arg1) {
-  let length;
-  if (tmp) {
-    length = arg0.length;
-  }
-  const ArrayResult = Array(length);
-  for (let num = 0; num < length; num = num + 1) {
-    ArrayResult[num] = arg0[num];
-  }
-  return ArrayResult;
-}
-function getSingleRequirementThreshold(arg0) {
-  let threshold;
-  if (null != arg0) {
-    const first = arg0.requirements[0];
-    if (null != first) {
-      threshold = first.threshold;
-    }
-  }
-  let num2 = 0;
-  if (null != threshold) {
-    num2 = threshold;
-  }
-  return num2;
-}
-function getObtainedAtFromBadge(current_tier) {
-  if (null != current_tier) {
-    let obtained_at;
-    if (null != current_tier.current_tier) {
-      const tier_obtained_at = current_tier.tier_obtained_at;
-      let tmp2;
-      if (null != tier_obtained_at) {
-        tmp2 = tier_obtained_at[current_tier.current_tier];
-      }
-      obtained_at = tmp2;
-    }
-    if (null == obtained_at) {
-      obtained_at = current_tier.obtained_at;
-    }
-    return obtained_at;
-  }
-}
 const HOUR = require("set").Millis.HOUR;
 let map = new Map();
 let set = new Set();
@@ -139,193 +17,162 @@ let set1 = new Set();
 let map1 = new Map();
 const map2 = new Map();
 const map3 = new Map();
-let tmp8 = ((Store) => {
-  class BadgeDirectoryStore {
-    constructor() {
-      self = this;
-      tmp = outer1_3(this, BadgeDirectoryStore);
-      obj = outer1_6(BadgeDirectoryStore);
-      tmp2 = outer1_5;
-      if (outer1_16()) {
-        tmp6 = globalThis;
-        _Reflect = Reflect;
-        tmp7 = outer1_6;
-        tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, outer1_6(self).constructor);
-      } else {
-        tmp3 = arguments;
-        tmp4 = arguments;
-        constructResult = obj(...arguments);
-      }
-      return tmp2(self, constructResult);
+class BadgeDirectoryStore extends Store {
+}
+const prototype = BadgeDirectoryStore.prototype;
+prototype["initialize"] = function initialize() {
+  this.waitFor(mergeGuildAvatar);
+};
+prototype["getBadges"] = function getBadges(arg0) {
+  let tmp = arg0;
+  if (arg0 == null) {
+    const currentUser = authStore.getCurrentUser();
+    let id;
+    if (currentUser != null) {
+      id = currentUser.id;
+    }
+    tmp = id;
+  }
+  if (null == tmp) {
+    return [];
+  } else {
+    const value = map.get(tmp);
+    if (null != value) {
+      const _Array = Array;
+      let items = Array.from(value.values());
+    } else {
+      items = [];
+    }
+    return items;
+  }
+};
+prototype["hasCatalogFor"] = function hasCatalogFor(arg0) {
+  return set.has(arg0);
+};
+prototype["isCatalogStaleFor"] = function isCatalogStaleFor(arg0) {
+  const value = map1.get(arg0);
+  let tmp2 = null == value;
+  if (!tmp2) {
+    const _Date = Date;
+    tmp2 = Date.now() - value >= HOUR;
+  }
+  return tmp2;
+};
+prototype["hasCatalogFetchErrorFor"] = function hasCatalogFetchErrorFor(arg0) {
+  let tmp = arg0;
+  if (arg0 == null) {
+    const currentUser = authStore.getCurrentUser();
+    let id;
+    if (currentUser != null) {
+      id = currentUser.id;
+    }
+    tmp = id;
+  }
+  let hasItem = null != tmp;
+  if (hasItem) {
+    hasItem = set1.has(tmp);
+  }
+  return hasItem;
+};
+prototype["getBadgeById"] = function getBadgeById(GIFTING, userId) {
+  let tmp = userId;
+  if (userId == null) {
+    const currentUser = authStore.getCurrentUser();
+    let id;
+    if (currentUser != null) {
+      id = currentUser.id;
+    }
+    tmp = id;
+  }
+  let tmp5;
+  if (null != tmp) {
+    let value = map.get(tmp);
+    value = undefined;
+    if (value != null) {
+      value = value.get(GIFTING);
+    }
+    tmp5 = value;
+  }
+  return tmp5;
+};
+prototype["getSingleRequirementProgress"] = function getSingleRequirementProgress(GIFTING, userId) {
+  const badgeById = this.getBadgeById(GIFTING, userId);
+  let progress;
+  if (badgeById != null) {
+    progress = badgeById.progress;
+  }
+  if (null != progress) {
+    if (0 !== progress.length) {
+      return progress[0];
     }
   }
-  callback2(BadgeDirectoryStore, Store);
-  let obj = {
-    key: "initialize",
-    value() {
-      this.waitFor(outer1_8);
+};
+prototype["getCurrentTier"] = function getCurrentTier(GIFTING, userId) {
+  const badgeById = this.getBadgeById(GIFTING, userId);
+  let current_tier;
+  if (badgeById != null) {
+    current_tier = badgeById.current_tier;
+  }
+  if (null != current_tier) {
+    const tiers = badgeById.tiers;
+    return tiers.find((key) => key.key === badgeById.current_tier);
+  }
+};
+prototype["getObtainedAt"] = function getObtainedAt(GIFTING, userId) {
+  const badgeById = this.getBadgeById(GIFTING, userId);
+  let tmp2;
+  if (null != badgeById) {
+    let obtained_at;
+    if (null != badgeById.current_tier) {
+      const tier_obtained_at = badgeById.tier_obtained_at;
+      let tmp4;
+      if (tier_obtained_at != null) {
+        tmp4 = tier_obtained_at[badgeById.current_tier];
+      }
+      obtained_at = tmp4;
     }
-  };
-  let items = [obj, , , , , , , , , , ];
-  obj = {
-    key: "getBadges",
-    value(arg0) {
-      let tmp = arg0;
-      if (null == arg0) {
-        const currentUser = outer1_8.getCurrentUser();
-        let id;
-        if (null != currentUser) {
-          id = currentUser.id;
-        }
-        tmp = id;
-      }
-      if (null == tmp) {
-        return [];
-      } else {
-        const value = outer1_10.get(tmp);
-        if (null != value) {
-          const _Array = Array;
-          let items = Array.from(value.values());
-        } else {
-          items = [];
-        }
-        return items;
-      }
+    if (obtained_at == null) {
+      obtained_at = badgeById.obtained_at;
     }
-  };
-  items[1] = obj;
-  obj = {
-    key: "hasCatalogFor",
-    value(arg0) {
-      return outer1_11.has(arg0);
-    }
-  };
-  items[2] = obj;
-  items[3] = {
-    key: "isCatalogStaleFor",
-    value(arg0) {
-      const value = outer1_13.get(arg0);
-      let tmp2 = null == value;
-      if (!tmp2) {
-        const _Date = Date;
-        tmp2 = Date.now() - value >= outer1_9;
-      }
-      return tmp2;
-    }
-  };
-  items[4] = {
-    key: "hasCatalogFetchErrorFor",
-    value(arg0) {
-      let tmp = arg0;
-      if (null == arg0) {
-        const currentUser = outer1_8.getCurrentUser();
-        let id;
-        if (null != currentUser) {
-          id = currentUser.id;
-        }
-        tmp = id;
-      }
-      let hasItem = null != tmp;
-      if (hasItem) {
-        hasItem = outer1_12.has(tmp);
-      }
-      return hasItem;
-    }
-  };
-  items[5] = {
-    key: "getBadgeById",
-    value(arg0, arg1) {
-      let tmp = arg1;
-      if (null == arg1) {
-        const currentUser = outer1_8.getCurrentUser();
-        let id;
-        if (null != currentUser) {
-          id = currentUser.id;
-        }
-        tmp = id;
-      }
-      let tmp5;
-      if (null != tmp) {
-        let value = outer1_10.get(tmp);
-        value = undefined;
-        if (null != value) {
-          value = value.get(arg0);
-        }
-        tmp5 = value;
-      }
-      return tmp5;
-    }
-  };
-  items[6] = {
-    key: "getSingleRequirementProgress",
-    value(arg0, arg1) {
-      const badgeById = this.getBadgeById(arg0, arg1);
-      let progress;
-      if (null != badgeById) {
-        progress = badgeById.progress;
-      }
-      if (null != progress) {
-        if (0 !== progress.length) {
-          return progress[0];
+    tmp2 = obtained_at;
+  }
+  return tmp2;
+};
+prototype["getNextTier"] = function getNextTier(GIFTING, userId) {
+  const badgeById = this.getBadgeById(GIFTING, userId);
+  let next_tier;
+  if (badgeById != null) {
+    next_tier = badgeById.next_tier;
+  }
+  if (null != next_tier) {
+    const tiers = badgeById.tiers;
+    return tiers.find((key) => key.key === badgeById.next_tier);
+  }
+};
+prototype["getRemainingToNextTier"] = function getRemainingToNextTier(GIFTING, userId) {
+  const nextTier = this.getNextTier(GIFTING, userId);
+  const singleRequirementProgress = this.getSingleRequirementProgress(GIFTING, userId);
+  let num = 0;
+  if (null != nextTier) {
+    num = 0;
+    if (null != singleRequirementProgress) {
+      let num2;
+      if (nextTier != null) {
+        const first = nextTier.requirements[0];
+        if (first != null) {
+          num2 = first.threshold;
         }
       }
-    }
-  };
-  items[7] = {
-    key: "getCurrentTier",
-    value(arg0, arg1) {
-      const badgeById = this.getBadgeById(arg0, arg1);
-      let current_tier;
-      if (null != badgeById) {
-        current_tier = badgeById.current_tier;
+      if (num2 == null) {
+        num2 = 0;
       }
-      if (null != current_tier) {
-        const tiers = badgeById.tiers;
-        return tiers.find((key) => key.key === badgeById.current_tier);
-      }
+      num = Math.max(0, num2 - singleRequirementProgress.current);
     }
-  };
-  items[8] = {
-    key: "getObtainedAt",
-    value(arg0, arg1) {
-      return outer1_20(this.getBadgeById(arg0, arg1));
-    }
-  };
-  items[9] = {
-    key: "getNextTier",
-    value(arg0, arg1) {
-      const badgeById = this.getBadgeById(arg0, arg1);
-      let next_tier;
-      if (null != badgeById) {
-        next_tier = badgeById.next_tier;
-      }
-      if (null != next_tier) {
-        const tiers = badgeById.tiers;
-        return tiers.find((key) => key.key === badgeById.next_tier);
-      }
-    }
-  };
-  items[10] = {
-    key: "getRemainingToNextTier",
-    value(GIFTING) {
-      const nextTier = this.getNextTier(GIFTING, arg1);
-      const singleRequirementProgress = this.getSingleRequirementProgress(GIFTING, arg1);
-      let num = 0;
-      if (null != nextTier) {
-        num = 0;
-        if (null != singleRequirementProgress) {
-          const _Math = Math;
-          num = Math.max(0, outer1_19(nextTier) - singleRequirementProgress.current);
-        }
-      }
-      return num;
-    }
-  };
-  return callback(BadgeDirectoryStore, items);
-})(require("initialize").Store);
-tmp8.displayName = "BadgeDirectoryStore";
-tmp8 = new tmp8(require("dispatcher"), {
+  }
+  return num;
+};
+BadgeDirectoryStore.displayName = "BadgeDirectoryStore";
+const badgeDirectoryStore = new BadgeDirectoryStore(require("dispatcher"), {
   BADGE_DIRECTORY_FETCH_START: function handleFetchStart(userId) {
     set = new Set(set);
     set.delete(userId.userId);
@@ -343,14 +190,14 @@ tmp8 = new tmp8(require("dispatcher"), {
       const items = [badge_id.badge_id, badge_id];
       return items;
     }));
-    closure_11 = new Set(closure_11).add(userId);
+    closure_6 = new Set(closure_6).add(userId);
     set1 = new Set(set1);
     set1.delete(userId);
-    const set = new Set(closure_11);
-    closure_13 = new Map(closure_13).set(userId, Date.now());
+    const set = new Set(closure_6);
+    closure_8 = new Map(closure_8).set(userId, Date.now());
   },
   BADGE_DIRECTORY_FETCH_FAILURE: function handleFetchFailure(userId) {
-    closure_12 = new Set(closure_12).add(userId.userId);
+    closure_7 = new Set(closure_7).add(userId.userId);
   },
   BADGE_FETCH_SUCCESS: function handleBadgeFetchSuccess(arg0) {
     let badge;
@@ -358,7 +205,7 @@ tmp8 = new tmp8(require("dispatcher"), {
     ({ userId, badge } = arg0);
     map = new Map(map);
     map = map.get(userId);
-    if (null == map) {
+    if (map == null) {
       const _Map = Map;
       map = new Map();
     }
@@ -367,68 +214,57 @@ tmp8 = new tmp8(require("dispatcher"), {
     const result1 = map.set(userId, map1);
   },
   USER_PROFILE_FETCH_SUCCESS: function handleUserProfileFetchSuccess(userProfile) {
-    let iter3;
     userProfile = userProfile.userProfile;
     const id = userProfile.user.id;
     if (set.has(id)) {
       let badges = userProfile.badges;
-      if (null == badges) {
+      if (badges == null) {
         badges = [];
       }
+      let num = 0;
       let value = map.get(id);
       let items;
-      if (null != value) {
+      if (value != null) {
         items = value.values();
       }
-      if (null == items) {
+      if (items == null) {
         items = [];
       }
-      const tmp2Result = _createForOfIteratorHelperLoose(items);
-      const iter = tmp2Result();
-      let iter2 = iter;
-      let num = 0;
-      let num2 = 0;
-      if (!iter.done) {
-        do {
-          let sum = num;
-          if (iter2.value.owned) {
-            sum = num + 1;
-          }
-          iter3 = tmp2Result();
-          num = sum;
-          iter2 = iter3;
-          num2 = sum;
-        } while (!iter3.done);
+      for (const item10025 of items) {
+        if (item10025.owned) {
+          let tmp5 = num;
+          num = num + 1;
+        }
+        continue;
       }
-      if (badges.filter((id) => null != outer1_0(outer1_2[7]).resolveProfileBadgeId(id.id)).length !== num2) {
-        value = map3.get(id);
-        let num3 = 0;
-        if (null != value) {
-          num3 = value;
+      if (badges.filter((id) => null != callback(table[2]).resolveProfileBadgeId(id.id)).length !== num) {
+        let num2 = map3.get(id);
+        if (num2 == null) {
+          num2 = 0;
         }
         const _Date = Date;
-        if (Date.now() >= num3) {
-          let value1 = map2.get(id);
-          if (null == value1) {
-            const tmp15 = importDefault(561);
-            const prototype = tmp15.prototype;
-            value1 = new tmp15(importDefault(664).Millis.MINUTE, HOUR, true);
+        if (Date.now() >= num2) {
+          value = map2.get(id);
+          if (value == null) {
+            value = new importDefault(584)(importDefault(687).Millis.MINUTE, HOUR, true);
+            const tmp13 = importDefault(584);
           }
-          const result = map2.set(id, value1);
+          const result = map2.set(id, value);
           const _Date2 = Date;
           const timestamp = Date.now();
-          const result1 = map3.set(id, timestamp + value1.fail());
-          const badgeDirectory = require(8088) /* urlUserId */.fetchBadgeDirectory(id);
-          const obj4 = require(8088) /* urlUserId */;
+          const result1 = obj3.set(id, timestamp + value.fail());
+          const badgeDirectory = require(8112) /* urlUserId */.fetchBadgeDirectory(id);
+          const obj5 = require(8112) /* urlUserId */;
+          const obj6 = map2;
         }
+        obj3 = map3;
       } else {
-        const value2 = map2.get(id);
-        if (null != value2) {
-          value2.succeed();
+        const value1 = map2.get(id);
+        if (value1 != null) {
+          value1.succeed();
         }
         map3.delete(id);
       }
-      const tmp2 = _createForOfIteratorHelperLoose;
     }
     return false;
   },
@@ -443,6 +279,34 @@ tmp8 = new tmp8(require("dispatcher"), {
 });
 let result = set.fileFinishedImporting("modules/badges/BadgeDirectoryStore.tsx");
 
-export default tmp8;
-export { getSingleRequirementThreshold };
-export { getObtainedAtFromBadge };
+export default badgeDirectoryStore;
+export const getSingleRequirementThreshold = function getSingleRequirementThreshold(arg0) {
+  let num;
+  if (arg0 != null) {
+    const first = arg0.requirements[0];
+    if (first != null) {
+      num = first.threshold;
+    }
+  }
+  if (num == null) {
+    num = 0;
+  }
+  return num;
+};
+export const getObtainedAtFromBadge = function getObtainedAtFromBadge(current_tier) {
+  if (null != current_tier) {
+    let obtained_at;
+    if (null != current_tier.current_tier) {
+      const tier_obtained_at = current_tier.tier_obtained_at;
+      let tmp2;
+      if (tier_obtained_at != null) {
+        tmp2 = tier_obtained_at[current_tier.current_tier];
+      }
+      obtained_at = tmp2;
+    }
+    if (obtained_at == null) {
+      obtained_at = current_tier.obtained_at;
+    }
+    return obtained_at;
+  }
+};

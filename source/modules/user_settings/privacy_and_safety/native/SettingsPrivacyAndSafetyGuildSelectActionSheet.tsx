@@ -1,173 +1,141 @@
-// Module ID: 14637
-// Function ID: 111522
-// Name: getAllServersSearchableSelectOption
-// Dependencies: [57, 31, 1838, 5005, 14636, 33, 4165, 689, 4394, 1387, 1212, 566, 4133, 10988, 13661, 5548, 5009, 2]
+// Module ID: 14662
+// Function ID: 14663
+// Name: SettingsPrivacyAndSafetyGuildSelectActionSheet
+// Dependencies: [32, 19, 1862, 5027, 14661, 21, 4189, 712, 4417, 1411, 1236, 589, 4157, 11012, 13682, 5566, 5031, 2]
 // Exports: default
 
-// Module 14637 (getAllServersSearchableSelectOption)
+// Module 14662 (SettingsPrivacyAndSafetyGuildSelectActionSheet)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
-import closure_5 from "_createForOfIteratorHelperLoose";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import noop from "noop";
+import createGuildRecordFromRust from "createGuildRecordFromRust";
+import insertUnsortedGuilds from "insertUnsortedGuilds";
 import GUILD_SELECT_ALL_SERVERS_OPTION_ID from "GUILD_SELECT_ALL_SERVERS_OPTION_ID";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_7;
-let closure_8;
-let closure_9;
+let c9;
+let error;
+let metroImportAll;
 const require = arg1;
-function getAllServersSearchableSelectOption() {
-  let obj = { type: require(4394) /* ActionComponentState */.SelectOptionType.GUILD };
-  obj = { id: closure_7 };
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj.name = intl.string(require(1212) /* getSystemLocale */.t["32u1Dx"]);
-  obj.guild = require(1387) /* fromGuildPropertiesWithAdditionalFields */.dangerouslyConstructGuildRecordFromUntypedObject(obj);
-  const intl2 = require(1212) /* getSystemLocale */.intl;
-  obj.label = intl2.string(require(1212) /* getSystemLocale */.t["32u1Dx"]);
-  obj.value = closure_7;
-  return obj;
-}
-({ GUILD_SELECT_ALL_SERVERS_OPTION_ID: closure_7, setSelectedGuildId: closure_8, useUserSafetySettingsSelectedGuildStore: closure_9 } = GUILD_SELECT_ALL_SERVERS_OPTION_ID);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { marginRight: require("_createForOfIteratorHelperLoose").space.PX_12 };
-_createForOfIteratorHelperLoose.iconContainer = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/user_settings/privacy_and_safety/native/SettingsPrivacyAndSafetyGuildSelectActionSheet.tsx");
+({ GUILD_SELECT_ALL_SERVERS_OPTION_ID: error, setSelectedGuildId: metroImportAll, useUserSafetySettingsSelectedGuildStore: c9 } = GUILD_SELECT_ALL_SERVERS_OPTION_ID);
+createCacheKey = { iconContainer: null };
+createCacheKey = { marginRight: require("Themes").space.PX_12 };
+createCacheKey[0] = createCacheKey;
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+const result = require("createGuildRecordFromRust").fileFinishedImporting("modules/user_settings/privacy_and_safety/native/SettingsPrivacyAndSafetyGuildSelectActionSheet.tsx");
 
 export default function SettingsPrivacyAndSafetyGuildSelectActionSheet() {
-  function submitSelection(result, arg1) {
-    return tmp4(callback[12]).hideActionSheet();
+  let obj = React;
+  const tmp2 = callback(React.useState(""), 2);
+  let selectedGuildId;
+  selectedGuildId = callback2().selectedGuildId;
+  let obj1 = selectedGuildId(callback[11]);
+  let items = [createGuildRecordFromRust];
+  const stateFromStores = obj1.useStateFromStores(items, () => outer1_5.getGuild(selectedGuildId));
+  if (selectedGuildId !== closure_7) {
+    if (null != stateFromStores) {
+      obj = { type: null, guild: null, label: null, value: null };
+      obj[0] = tmp3(tmp4[8]).SelectOptionType.GUILD;
+      obj[1] = stateFromStores;
+      ({ name: obj3[2], id: obj3[3] } = stateFromStores);
+    }
+    obj = { maxValues: 1, minValues: 1, placeholder: null };
+    function submitSelection() {
+      obj = obj(callback[12]);
+      return obj.hideActionSheet();
+    }
+    const intl3 = tmp3(tmp4[10]).intl;
+    obj[2] = intl3.string(tmp3(tmp4[10]).t["ZImm/x"]);
+    callback = obj.useCallback((arg0) => {
+      let obj = { type: selectedGuildId(callback[8]).SelectOptionType.GUILD, guild: null, label: null, value: null };
+      obj = { id: closure_7, name: null };
+      const intl = selectedGuildId(callback[10]).intl;
+      obj[1] = intl.string(selectedGuildId(callback[10]).t["32u1Dx"]);
+      obj[1] = selectedGuildId(callback[9]).dangerouslyConstructGuildRecordFromUntypedObject(obj);
+      const intl2 = selectedGuildId(callback[10]).intl;
+      obj[2] = intl2.string(selectedGuildId(callback[10]).t["32u1Dx"]);
+      obj[3] = closure_7;
+      const items = [obj];
+      if (0 === arg0.length) {
+        flattenedGuildIds = flattenedGuildIds.getFlattenedGuildIds();
+        let reduced = flattenedGuildIds.reduce((arr) => {
+          guild = guild.getGuild(arg1);
+          if (null != guild) {
+            const obj = { type: null, value: null, label: null, guild: null };
+            obj[0] = callback(4417).SelectOptionType.GUILD;
+            ({ id: obj[1], name: obj[2] } = guild);
+            obj[3] = guild;
+            arr.push(obj);
+          }
+          return arr;
+        }, items);
+      } else {
+        obj = { query: null };
+        obj[0] = arg0;
+        const obj4 = obj(callback[16]);
+        reduced = obj(callback[16]).queryGuilds(obj).map((record) => {
+          record = record.record;
+          return { type: callback(4417).SelectOptionType.GUILD, value: record.id, label: record.name, guild: record };
+        });
+        const queryGuildsResult = obj(callback[16]).queryGuilds(obj);
+      }
+      return reduced;
+    }, []);
+    const items1 = [tmp2[0], callback];
+    const memo = obj.useMemo(() => callback(selectedGuildId), items1);
+    obj1 = { onPressOptionItem: null, renderHeaderIcon: null, renderIcon: null, iconContainerStyle: null, selectionActionComponent: null, options: null, selectedCount: 1, selectedOptions: null, isSelected: null, submitSelection: null, onQueryChange: null, itemAccessibilityLabel: null, allowEmpty: false, expanded: true };
+    obj1[0] = function onPressOptionItem(arg0, guild) {
+      callback(guild.guild.id);
+      obj = obj(callback[12]);
+      obj.hideActionSheet();
+    };
+    obj1[1] = function renderHeaderIcon(value) {
+      if (value.value === closure_7) {
+        let tmp6 = callback2(selectedGuildId(callback[14]).GuildSelectDefaultIcon, { size: "xs" });
+      } else {
+        const obj = { guild: null, size: null };
+        obj[0] = value.guild;
+        obj[1] = selectedGuildId(callback[15]).GuildIconSizes.XSMALL;
+        tmp6 = callback2(obj(callback[15]), obj);
+        const tmp4 = obj(callback[15]);
+      }
+      return tmp6;
+    };
+    obj1[2] = function renderIcon(value) {
+      if (value.value === closure_7) {
+        let tmp6 = callback2(selectedGuildId(callback[14]).GuildSelectDefaultIcon, {});
+      } else {
+        const obj = { guild: null, size: null };
+        obj[0] = value.guild;
+        obj[1] = selectedGuildId(callback[15]).GuildIconSizes.SMALL_32;
+        tmp6 = callback2(obj(callback[15]), obj);
+        const tmp4 = obj(callback[15]);
+      }
+      return tmp6;
+    };
+    obj1[3] = tmp.iconContainer;
+    obj1[4] = obj;
+    obj1[5] = memo;
+    const items2 = [obj];
+    obj1[7] = items2;
+    obj1[8] = function isSelected(value) {
+      return value.value === obj.value;
+    };
+    obj1[9] = submitSelection;
+    obj1[10] = tmp2[1];
+    obj1[11] = function itemAccessibilityLabel(label) {
+      return label.label;
+    };
+    return jsx(obj(tmp4[13]), { onPressOptionItem: null, renderHeaderIcon: null, renderIcon: null, iconContainerStyle: null, selectionActionComponent: null, options: null, selectedCount: 1, selectedOptions: null, isSelected: null, submitSelection: null, onQueryChange: null, itemAccessibilityLabel: null, allowEmpty: false, expanded: true });
   }
-  const tmp2 = submitSelection(React.useState(""), 2);
-  const first = tmp2[0];
-  let tmp4 = (function useSelectedSearchableGuildOption() {
-    const selectedGuildId = outer1_9().selectedGuildId;
-    let obj = first(callback[11]);
-    const items = [outer1_5];
-    const stateFromStores = obj.useStateFromStores(items, () => outer2_5.getGuild(selectedGuildId));
-    if (selectedGuildId !== outer1_7) {
-      if (null != stateFromStores) {
-        obj = { type: first(callback[8]).SelectOptionType.GUILD, guild: stateFromStores };
-        ({ name: obj2.label, id: obj2.value } = stateFromStores);
-      }
-      return obj;
-    }
-    obj = outer1_12();
-  })();
-  const importDefault = tmp4;
-  let obj = { maxValues: 1, minValues: 1 };
-  const intl = first(callback[10]).intl;
-  obj.placeholder = intl.string(first(callback[10]).t["ZImm/x"]);
-  callback = React.useCallback((query) => (function queryGuilds(query) {
-    function guildRecordToGuildSearchableSelectOption(id) {
-      return { type: first(callback[8]).SelectOptionType.GUILD, value: id.id, label: id.name, guild: id };
-    }
-    const items = [outer2_12()];
-    if (0 === query.length) {
-      const flattenedGuildIds = outer2_6.getFlattenedGuildIds();
-      return flattenedGuildIds.reduce((arr, guildId) => {
-        const guild = outer3_5.getGuild(guildId);
-        if (null != guild) {
-          arr.push(guildRecordToGuildSearchableSelectOption(guild));
-        }
-        return arr;
-      }, items);
-    } else {
-      let obj = callback(callback[16]);
-      obj = { query };
-      return obj.queryGuilds(obj).map((record) => guildRecordToGuildSearchableSelectOption(record.record));
-    }
-  })(query), []);
-  let items = [first, callback];
-  const memo = React.useMemo(() => callback(first), items);
-  obj = {
-    onPressOptionItem(arg0, guild) {
-      outer1_8(guild.guild.id);
-      submitSelection();
-    },
-    renderHeaderIcon(value) {
-      if (value.value === outer1_7) {
-        let obj = { size: "xs" };
-        let tmp6 = outer1_10(first(callback[14]).GuildSelectDefaultIcon, obj);
-      } else {
-        obj = { guild: value.guild };
-        tmp4 = tmp4(callback[15]);
-        obj.size = first(callback[15]).GuildIconSizes.XSMALL;
-        tmp6 = outer1_10(tmp4, obj);
-      }
-      return tmp6;
-    },
-    renderIcon(value) {
-      if (value.value === outer1_7) {
-        let tmp6 = outer1_10(first(callback[14]).GuildSelectDefaultIcon, {});
-      } else {
-        const obj = { guild: value.guild };
-        tmp4 = tmp4(callback[15]);
-        obj.size = first(callback[15]).GuildIconSizes.SMALL_32;
-        tmp6 = outer1_10(tmp4, obj);
-      }
-      return tmp6;
-    },
-    iconContainerStyle: _createForOfIteratorHelperLoose().iconContainer,
-    selectionActionComponent: obj,
-    options: memo,
-    selectedCount: 1,
-    selectedOptions: items1,
-    isSelected(value) {
-      return value.value === tmp4.value;
-    },
-    submitSelection,
-    onQueryChange: tmp2[1],
-    itemAccessibilityLabel(label) {
-      return label.label;
-    },
-    allowEmpty: false,
-    expanded: true
-  };
-  items1 = [tmp4];
-  return jsx(importDefault(callback[13]), {
-    onPressOptionItem(arg0, guild) {
-      outer1_8(guild.guild.id);
-      submitSelection();
-    },
-    renderHeaderIcon(value) {
-      if (value.value === outer1_7) {
-        let obj = { size: "xs" };
-        let tmp6 = outer1_10(first(callback[14]).GuildSelectDefaultIcon, obj);
-      } else {
-        obj = { guild: value.guild };
-        tmp4 = tmp4(callback[15]);
-        obj.size = first(callback[15]).GuildIconSizes.XSMALL;
-        tmp6 = outer1_10(tmp4, obj);
-      }
-      return tmp6;
-    },
-    renderIcon(value) {
-      if (value.value === outer1_7) {
-        let tmp6 = outer1_10(first(callback[14]).GuildSelectDefaultIcon, {});
-      } else {
-        const obj = { guild: value.guild };
-        tmp4 = tmp4(callback[15]);
-        obj.size = first(callback[15]).GuildIconSizes.SMALL_32;
-        tmp6 = outer1_10(tmp4, obj);
-      }
-      return tmp6;
-    },
-    iconContainerStyle: _createForOfIteratorHelperLoose().iconContainer,
-    selectionActionComponent: obj,
-    options: memo,
-    selectedCount: 1,
-    selectedOptions: items1,
-    isSelected(value) {
-      return value.value === tmp4.value;
-    },
-    submitSelection,
-    onQueryChange: tmp2[1],
-    itemAccessibilityLabel(label) {
-      return label.label;
-    },
-    allowEmpty: false,
-    expanded: true
-  });
+  const obj2 = { type: selectedGuildId(callback[8]).SelectOptionType.GUILD, guild: null, label: null, value: null };
+  tmp = createCacheKey();
+  const obj3 = { id: closure_7, name: null };
+  let intl = tmp3(tmp4[10]).intl;
+  obj3[1] = intl.string(selectedGuildId(callback[10]).t["32u1Dx"]);
+  obj2[1] = selectedGuildId(callback[9]).dangerouslyConstructGuildRecordFromUntypedObject(obj3);
+  let intl2 = tmp3(tmp4[10]).intl;
+  obj2[2] = intl2.string(selectedGuildId(callback[10]).t["32u1Dx"]);
+  obj2[3] = closure_7;
+  obj = obj2;
 };

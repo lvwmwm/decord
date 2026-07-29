@@ -1,54 +1,61 @@
-// Module ID: 10603
-// Function ID: 82451
+// Module ID: 10615
+// Function ID: 10616
 // Name: NativeModules
-// Dependencies: [27, 477, 10604, 4145, 621, 682, 2]
+// Dependencies: [17, 500, 10616, 4169, 644, 705, 2]
 
-// Module 10603 (NativeModules)
+// Module 10615 (NativeModules)
 import get_ActivityIndicator from "get ActivityIndicator";
 import set from "set";
 import keys from "keys";
 import set from "enforcing";
 
-let NativeEventEmitter;
-let NativeModules;
-({ NativeEventEmitter, NativeModules } = get_ActivityIndicator);
+const NativeModules = get_ActivityIndicator.NativeModules;
 if (set.isAndroid()) {
   let DCDDeviceThermalStateManager = require("enforcing");
 } else {
   DCDDeviceThermalStateManager = NativeModules.DCDDeviceThermalStateManager;
 }
-const nativeEventEmitter = new NativeEventEmitter(DCDDeviceThermalStateManager);
+const nativeEventEmitter = new get_ActivityIndicator.NativeEventEmitter(DCDDeviceThermalStateManager);
 let closure_5 = keys.create((arg0) => {
   const _require = arg0;
-  function updateThermalState(state) {
-    const callback = state;
-    callback(outer1_2[5]).batchUpdates(() => state((rawThermalState) => {
-      let tmp = rawThermalState;
-      if (rawThermalState.rawThermalState !== outer1_0) {
-        const obj = { rawThermalState: outer1_0 };
-        tmp = obj;
-      }
-      return tmp;
-    }));
-  }
-  let obj = _require(477);
+  let thermalState = dependencyMap;
   if (obj.isAndroid()) {
-    if (obj2.getSystemVersionMajor() >= 29) {
-      let resolved = Promise.resolve(updateThermalState(10604).getThermalState());
-      const obj3 = updateThermalState(10604);
+    if (tmpResult.getSystemVersionMajor() >= 29) {
+      thermalState = importDefault(10616).getThermalState();
+      let resolved = Promise.resolve(thermalState);
+      const obj3 = importDefault(10616);
     } else {
       resolved = Promise.resolve(undefined);
     }
-    obj2 = _require(4145);
+    tmpResult = _require(4169);
   } else {
     const DCDDeviceThermalStateManager = NativeModules.DCDDeviceThermalStateManager;
-    const thermalState = DCDDeviceThermalStateManager.getThermalState();
-    thermalState.then(updateThermalState);
-    nativeEventEmitter.addListener("DeviceThermalStateDidChange", (state) => {
-      updateThermalState(state.state);
+    const thermalState1 = DCDDeviceThermalStateManager.getThermalState();
+    thermalState1.then(function updateThermalState(arg0) {
+      const callback = arg0;
+      callback(outer1_2[5]).batchUpdates(() => state((rawThermalState) => {
+        let tmp = rawThermalState;
+        if (rawThermalState.rawThermalState !== closure_0) {
+          const obj = { rawThermalState: null };
+          obj[0] = tmp2;
+          tmp = obj;
+        }
+        return tmp;
+      }));
     });
-    obj = { rawThermalState: undefined };
-    return obj;
+    nativeEventEmitter.addListener("DeviceThermalStateDidChange", (state) => {
+      state = state.state;
+      callback(outer1_2[5]).batchUpdates(() => state((rawThermalState) => {
+        let tmp = rawThermalState;
+        if (rawThermalState.rawThermalState !== closure_0) {
+          const obj = { rawThermalState: null };
+          obj[0] = tmp2;
+          tmp = obj;
+        }
+        return tmp;
+      }));
+    });
+    return { rawThermalState: "r" };
   }
 });
 const result = set.fileFinishedImporting("modules/device/ThermalUtils.native.tsx");

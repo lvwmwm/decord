@@ -1,53 +1,57 @@
-// Module ID: 9463
-// Function ID: 73677
+// Module ID: 9487
+// Function ID: 9488
 // Name: items
-// Dependencies: [3811, 1866, 1868, 5794, 2]
+// Dependencies: [3835, 1890, 1892, 5812, 2]
 // Exports: getQuestOrbMultiplierSource, shouldReceiveQuestOrbMultiplier
 
-// Module 9463 (items)
+// Module 9487 (items)
 let obj = { UPSELL: "UPSELL", NITRO: "NITRO", CREPE: "CREPE", INELIGIBLE: "INELIGIBLE" };
 obj = { NITRO: "nitro", CREPE: "crepe" };
 const items = [, ];
 ({ CREPE: arr[0], NITRO: arr[1] } = obj);
-const result = require("_callSuper").fileFinishedImporting("modules/quests/utils/QuestOrbMultiplierUtils.tsx");
+const result = require("create").fileFinishedImporting("modules/quests/utils/QuestOrbMultiplierUtils.tsx");
 
 export const QuestOrbMultiplierEligibilityType = obj;
 export const QuestOrbMultiplierSource = obj;
-export const shouldReceiveQuestOrbMultiplier = function shouldReceiveQuestOrbMultiplier(orbMultiplierEligibility) {
-  return items.includes(orbMultiplierEligibility);
+export const shouldReceiveQuestOrbMultiplier = function shouldReceiveQuestOrbMultiplier(questOrbMultiplierEligibilityForUser) {
+  return items.includes(questOrbMultiplierEligibilityForUser);
 };
 export const getQuestOrbMultiplierSource = function getQuestOrbMultiplierSource(perks) {
-  const obj = importDefault(3811);
+  const obj = importDefault(3835);
   if (obj.canUseMoreQuestOrbs(perks)) {
-    if (obj2.canUseQuestOrbMultiplier(perks)) {
+    if (tmpResult.canUseQuestOrbMultiplier(perks)) {
       return obj.NITRO;
     } else {
       perks = undefined;
-      if (null != perks) {
+      if (perks != null) {
         perks = perks.perks;
       }
-      const perkSource = require(1866) /* parseServerPerkConfigKind */.getPerkSource(perks, require(1868) /* _callSuper */.Perk.MORE_QUEST_ORBS);
-      if (null != perkSource) {
-        if (perkSource.includes(require(1868) /* _callSuper */.PerkSource.SOURCE_NITRO)) {
-          let NITRO = obj.NITRO;
-        }
-        return NITRO;
+      const perkSource = require(1890) /* parseServerPerkConfigKind */.getPerkSource(perks, tmp4(1892).Perk.MORE_QUEST_ORBS);
+      let hasItem;
+      if (perkSource != null) {
+        hasItem = perkSource.includes(tmp4(1892).PerkSource.SOURCE_NITRO);
       }
-      const obj3 = require(1866) /* parseServerPerkConfigKind */;
-      NITRO = null;
-      if (obj5.getIsCrepeEnabled("getQuestOrbMultiplierSource")) {
+      if (hasItem) {
+        let NITRO = obj.NITRO;
+      } else {
         NITRO = null;
-        if (null != perkSource) {
+        if (tmp4Result.getIsCrepeEnabled("getQuestOrbMultiplierSource")) {
+          let hasItem1;
+          if (perkSource != null) {
+            hasItem1 = perkSource.includes(tmp4(1892).PerkSource.SOURCE_THIRDPARTY_CROISSANT);
+          }
           NITRO = null;
-          if (perkSource.includes(require(1868) /* _callSuper */.PerkSource.SOURCE_THIRDPARTY_CROISSANT)) {
+          if (hasItem1) {
             NITRO = obj.CREPE;
           }
         }
+        tmp4Result = tmp4(5812);
       }
-      obj5 = require(5794) /* apexExperiment */;
+      return NITRO;
     }
-    obj2 = importDefault(3811);
+    tmpResult = tmp(3835);
   } else {
     return null;
   }
+  tmp = importDefault;
 };

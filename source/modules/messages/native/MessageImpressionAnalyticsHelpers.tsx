@@ -1,144 +1,66 @@
-// Module ID: 9471
-// Function ID: 73705
-// Name: _createForOfIteratorHelperLoose
-// Dependencies: [31, 4150, 4238, 653, 5954, 6003, 9472, 6028, 4154, 6002, 9473, 9474, 4151, 2]
+// Module ID: 9495
+// Function ID: 9496
+// Name: getVoiceInviteEmbedRenderInfo
+// Dependencies: [19, 4174, 4262, 676, 5973, 6021, 9496, 6046, 4178, 6020, 9497, 9498, 4175, 2]
 // Exports: handleAnnouncementMessageViewTracking, handleOfficialMessageViewTracking, handleRichPresenceInviteEmbedViewTracking, handleVoiceInviteEmbedViewTracking, useShouldTrackAnnouncementMessageViews, useShouldTrackOfficialMessageViews, useShouldTrackRichPresenceInviteEmbedViews, useShouldTrackVoiceInviteEmbedViews
 
-// Module 9471 (_createForOfIteratorHelperLoose)
-import result from "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_5 from "_isNativeReflectConstruct";
+// Module 9495 (getVoiceInviteEmbedRenderInfo)
+import noop from "noop";
+import updateInvite from "updateInvite";
+import getVoiceStatesForGuild from "getVoiceStatesForGuild";
 import ME from "ME";
 import { LinkType } from "LinkType";
 import { InviteTypes } from "InviteSendStates";
 
+let c9;
 let closure_6;
-let closure_7;
-let closure_8;
-let closure_9;
+let error;
+let metroImportAll;
 const require = arg1;
-function _createForOfIteratorHelperLoose(iterable) {
-  let closure_0 = iterable;
-  iterable = "undefined" !== typeof Symbol;
-  if (iterable) {
-    const _Symbol = Symbol;
-    iterable = iterable[Symbol.iterator];
-  }
-  if (!iterable) {
-    iterable = iterable[Symbol.iterator];
-  }
-  if (iterable) {
-    const iter = iterable.call(iterable);
-    const next = iter.next;
-    return next.bind(iter);
-  } else {
-    const _Array = Array;
-    let tmp = iterable;
-    if (!Array.isArray(iterable)) {
-      let tmp2;
-      if (iterable) {
-        if ("string" === typeof iterable) {
-          tmp2 = _arrayLikeToArray(iterable, undefined);
-        } else {
-          const toString = {}.toString;
-          const substr = toString.call(iterable).slice(8, -1);
-          let name = substr;
-          if (tmp3) {
-            name = iterable.constructor.name;
-          }
-          if ("Map" !== name) {
-            if ("Set" !== name) {
-              if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(iterable, undefined);
-              } else {
-                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
-              }
-            }
-            tmp2 = arr;
-          }
-          const _Array2 = Array;
-          arr = Array.from(iterable);
-          const callResult = toString.call(iterable);
-          tmp3 = "Object" === substr && iterable.constructor;
-        }
-      }
-      tmp = tmp2;
-      if (!tmp2) {
-        const _TypeError = TypeError;
-        const typeError = new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
-        throw typeError;
-      }
-    }
-    if (tmp) {
-      closure_0 = tmp;
-    }
-    let c1 = 0;
-    return () => {
-      if (closure_1 >= length.length) {
-        let obj = { done: true };
-      } else {
-        obj = { done: false };
-        closure_1 = tmp3 + 1;
-        obj.value = length[+closure_1];
-      }
-      return obj;
-    };
-  }
-}
-function _arrayLikeToArray(arg0, arg1) {
-  let length;
-  if (tmp) {
-    length = arg0.length;
-  }
-  const ArrayResult = Array(length);
-  for (let num = 0; num < length; num = num + 1) {
-    ArrayResult[num] = arg0[num];
-  }
-  return ArrayResult;
-}
 function getVoiceInviteEmbedRenderInfo(state) {
   if (state.state !== constants2.RESOLVING) {
-    if (state.state !== constants2.EXPIRED) {
-      if (state.state !== constants2.BANNED) {
-        if (state.state !== constants2.ERROR) {
+    if (state.state !== tmp.EXPIRED) {
+      if (state.state !== tmp.BANNED) {
+        if (state.state !== tmp.ERROR) {
           if (obj5.getInviteType(state) !== InviteTypes.GUILD) {
             return null;
           } else {
-            const guildInviteExtendedType = require(6002) /* isGroupDMInvite */.getGuildInviteExtendedType(state);
-            if (guildInviteExtendedType !== require(6002) /* isGroupDMInvite */.GuildInviteExtendedType.VOICE_CHANNEL) {
+            let tmp7Result = tmp7(6020);
+            const guildInviteExtendedType = tmp7Result.getGuildInviteExtendedType(state);
+            if (guildInviteExtendedType !== tmp7(6020).GuildInviteExtendedType.VOICE_CHANNEL) {
               return null;
             } else {
               const guild = state.guild;
               let id;
-              if (null != guild) {
+              if (guild != null) {
                 id = guild.id;
               }
-              let tmp2 = null;
+              let tmp4 = null;
               if (null != id) {
-                let obj = {};
-                obj = { guildId: id, location: "mobile_invite_embed_impression" };
-                let enabled = require(9473) /* items */.getVoiceChannelListInviteExperiment(obj).enabled;
+                tmp7Result = tmp7(9497);
+                let obj = { guildId: null, location: "mobile_invite_embed_impression" };
+                obj[0] = id;
+                let enabled = tmp7Result.getVoiceChannelListInviteExperiment(obj).enabled;
                 if (enabled) {
-                  enabled = require(9474) /* resolveVoiceChannelListInviteEmbedData */.canShowVoiceChannelListInviteEmbed(state);
-                  const obj4 = require(9474) /* resolveVoiceChannelListInviteEmbedData */;
+                  enabled = tmp7(9498).canShowVoiceChannelListInviteEmbed(state);
+                  const tmp7Result1 = tmp7(9498);
                 }
-                obj.treatmentRendered = enabled;
-                tmp2 = obj;
-                const obj2 = require(9473) /* items */;
+                obj = { treatmentRendered: null };
+                obj[0] = enabled;
+                tmp4 = obj;
               }
-              return tmp2;
+              return tmp4;
             }
-            const obj6 = require(6002) /* isGroupDMInvite */;
           }
-          obj5 = require(6002) /* isGroupDMInvite */;
+          obj5 = require(6020) /* InviteTypes */;
         }
       }
     }
   }
   return null;
 }
-({ ChannelTypes: closure_6, GuildFeatures: closure_7, InviteStates: closure_8, MessageFlags: closure_9 } = ME);
-let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/messages/native/MessageImpressionAnalyticsHelpers.tsx");
+({ ChannelTypes: closure_6, GuildFeatures: error, InviteStates: metroImportAll, MessageFlags: c9 } = ME);
+let result = require("getVoiceStatesForGuild").fileFinishedImporting("modules/messages/native/MessageImpressionAnalyticsHelpers.tsx");
 
 export const useShouldTrackAnnouncementMessageViews = function useShouldTrackAnnouncementMessageViews(messages) {
   let channel;
@@ -146,31 +68,33 @@ export const useShouldTrackAnnouncementMessageViews = function useShouldTrackAnn
   ({ guild, channel } = messages);
   messages = messages.messages;
   const isMessagesReady = messages.isMessagesReady;
-  let React;
-  let hasItem;
-  if (null != guild) {
+  let flag;
+  flag = undefined;
+  if (guild != null) {
     const features = guild.features;
-    if (null != features) {
-      hasItem = features.has(constants.COMMUNITY);
+    if (features != null) {
+      flag = features.has(constants.COMMUNITY);
     }
   }
-  React = tmp3;
+  if (flag == null) {
+    flag = false;
+  }
   const items = [, , , , ];
   ({ type: arr[0], guild_id: arr[1] } = channel);
-  items[2] = null != hasItem && hasItem;
+  items[2] = flag;
   items[3] = isMessagesReady;
   items[4] = messages;
-  return React.useMemo(() => {
-    let tmp = channel.type === outer1_6.GUILD_ANNOUNCEMENT && c3;
+  return flag.useMemo(() => {
+    let tmp = channel.type === outer1_6.GUILD_ANNOUNCEMENT && flag;
     let someResult = isMessagesReady;
     if (isMessagesReady) {
       someResult = messages.some((messageReference) => {
         let hasFlagResult = null != messageReference.messageReference && null != messageReference.webhookId;
         if (hasFlagResult) {
-          hasFlagResult = messageReference.hasFlag(outer2_9.IS_CROSSPOST);
+          hasFlagResult = messageReference.hasFlag(outer1_9.IS_CROSSPOST);
         }
         if (hasFlagResult) {
-          hasFlagResult = null != outer1_0.guild_id;
+          hasFlagResult = null != guild_id.guild_id;
         }
         return hasFlagResult;
       });
@@ -203,7 +127,7 @@ export const handleAnnouncementMessageViewTracking = function handleAnnouncement
         message = message.message;
         const messageReference = message.messageReference;
         let guild_id;
-        if (null != messageReference) {
+        if (messageReference != null) {
           guild_id = messageReference.guild_id;
         }
         let hasFlagResult = null != guild_id && null != message.webhookId;
@@ -211,28 +135,36 @@ export const handleAnnouncementMessageViewTracking = function handleAnnouncement
           hasFlagResult = message.hasFlag(outer1_9.IS_CROSSPOST);
         }
         if (!message.hasFlag(outer1_9.EPHEMERAL)) {
+          let id = type;
           if (hasFlagResult) {
             if (null != message.messageReference) {
-              let id = message.messageReference.channel_id;
+              let id2 = message.messageReference.channel_id;
             }
             if (hasFlagResult) {
               const messageReference2 = message.messageReference;
               let guild_id1;
-              if (null != messageReference2) {
+              if (messageReference2 != null) {
                 guild_id1 = messageReference2.guild_id;
               }
               if (null != guild_id1) {
                 guild_id = message.messageReference.guild_id;
               }
               if (!hasFlagResult) {
-                const obj = { type: guildId(items[6]).MessageViewTrackingType.ANNOUNCEMENT, messageId: message.id, channelId: user.id, guildId, sourceChannelId: id, sourceGuildId: guild_id };
+                const obj = { type: null, messageId: null, channelId: null, guildId: null, sourceChannelId: null, sourceGuildId: null };
+                obj[0] = guildId(items[6]).MessageViewTrackingType.ANNOUNCEMENT;
+                obj[1] = message.id;
+                id = id.id;
+                obj[2] = id;
+                obj[3] = guildId;
+                obj[4] = id2;
+                obj[5] = guild_id;
                 message = items.push(obj);
               }
               const message_id = message.messageReference.message_id;
             }
             guild_id = guildId;
           }
-          id = user.id;
+          id2 = id.id;
         }
       });
       const result = importDefault(items[6]).handleMessageListVisibilityChange(items, _require(items[6]).MessageViewTrackingType.ANNOUNCEMENT);
@@ -258,7 +190,13 @@ export const handleRichPresenceInviteEmbedViewTracking = function handleRichPres
         hasFlagResult = null == message.application;
       }
       if (!hasFlagResult) {
-        const obj = { type: guildId(items[6]).MessageViewTrackingType.APP_EMBED, messageId: message.id, channelId: id.id, guildId, applicationId: message.application.id, linkType: outer1_10.RICH_PRESENCE_INVITE };
+        const obj = { type: null, messageId: null, channelId: null, guildId: null, applicationId: null, linkType: null };
+        obj[0] = guildId(items[6]).MessageViewTrackingType.APP_EMBED;
+        obj[1] = message.id;
+        obj[2] = id.id;
+        obj[3] = guildId;
+        obj[4] = message.application.id;
+        obj[5] = outer1_10.RICH_PRESENCE_INVITE;
         items.push(obj);
       }
     });
@@ -271,16 +209,15 @@ export const useShouldTrackOfficialMessageViews = function useShouldTrackOfficia
   let messages;
   ({ guild, messages } = isMessagesReady);
   isMessagesReady = isMessagesReady.isMessagesReady;
-  let id;
   let isGuildOfficialMessagesEnabled;
-  if (null != guild) {
+  let id;
+  if (guild != null) {
     id = guild.id;
   }
-  let tmp2 = null;
-  if (null != id) {
-    tmp2 = id;
+  if (id == null) {
+    id = null;
   }
-  isGuildOfficialMessagesEnabled = messages(isGuildOfficialMessagesEnabled[7]).useIsGuildOfficialMessagesEnabled(tmp2, "useShouldTrackOfficialMessageViews");
+  isGuildOfficialMessagesEnabled = messages(isGuildOfficialMessagesEnabled[7]).useIsGuildOfficialMessagesEnabled(id, "useShouldTrackOfficialMessageViews");
   const items = [isGuildOfficialMessagesEnabled, isMessagesReady, messages];
   return React.useMemo(() => {
     let someResult = isGuildOfficialMessagesEnabled;
@@ -288,7 +225,7 @@ export const useShouldTrackOfficialMessageViews = function useShouldTrackOfficia
       someResult = isMessagesReady;
     }
     if (someResult) {
-      someResult = messages.some((hasFlag) => hasFlag.hasFlag(outer2_9.IS_GUILD_OFFICIAL));
+      someResult = messages.some((hasFlag) => hasFlag.hasFlag(constants.IS_GUILD_OFFICIAL));
     }
     return someResult;
   }, items);
@@ -301,12 +238,17 @@ export const handleOfficialMessageViewTracking = function handleOfficialMessageV
       const items = [];
       const item = arr.forEach((message) => {
         message = message.message;
-        let hasFlagResult = !message.hasFlag(outer1_9.EPHEMERAL);
-        if (hasFlagResult) {
-          hasFlagResult = message.hasFlag(outer1_9.IS_GUILD_OFFICIAL);
+        const hasFlagResult = message.hasFlag(outer1_9.EPHEMERAL);
+        let hasFlagResult1 = !hasFlagResult;
+        if (!hasFlagResult) {
+          hasFlagResult1 = message.hasFlag(outer1_9.IS_GUILD_OFFICIAL);
         }
-        if (hasFlagResult) {
-          const obj = { type: guildId(items[6]).MessageViewTrackingType.OFFICIAL_MESSAGE, messageId: message.id, channelId: id.id, guildId };
+        if (hasFlagResult1) {
+          const obj = { type: null, messageId: null, channelId: null, guildId: null };
+          obj[0] = guildId(items[6]).MessageViewTrackingType.OFFICIAL_MESSAGE;
+          obj[1] = message.id;
+          obj[2] = id.id;
+          obj[3] = guildId;
           items.push(obj);
         }
       });
@@ -324,7 +266,7 @@ export const useShouldTrackVoiceInviteEmbedViews = function useShouldTrackVoiceI
     if (isMessagesReady) {
       someResult = messages.some((codedLinks) => {
         codedLinks = codedLinks.codedLinks;
-        return codedLinks.some((type) => type.type === messages(outer3_2[8]).CodedLinkType.INVITE);
+        return codedLinks.some((type) => type.type === callback(table[8]).CodedLinkType.INVITE);
       });
     }
     return someResult;
@@ -336,125 +278,88 @@ export const handleVoiceInviteEmbedViewTracking = function handleVoiceInviteEmbe
   if (shouldTrackVoiceInviteEmbedViews) {
     const items = [];
     const item = arr.forEach((message) => {
-      let iter3;
       message = message.message;
       if (!message.hasFlag(outer1_9.EPHEMERAL)) {
-        const tmp2 = outer1_12(message.codedLinks);
-        const iter = tmp2();
-        let iter2 = iter;
-        if (!iter.done) {
-          do {
-            let value = iter2.value;
-            let tmp13 = guildId;
-            let tmp14 = items;
-            let tmp15 = tmp4;
-            let tmp16 = tmp5;
-            let tmp17 = tmp6;
-            let tmp18 = tmp7;
-            let tmp19 = tmp8;
-            let tmp20 = tmp9;
-            let tmp21 = tmp10;
-            let tmp22 = tmp11;
-            let tmp23 = tmp12;
-            if (value.type === guildId(items[8]).CodedLinkType.INVITE) {
-              let tmp39 = outer1_4;
-              let invite = outer1_4.getInvite(value.code);
-              tmp15 = tmp4;
-              tmp16 = tmp5;
-              tmp17 = tmp6;
-              tmp18 = tmp7;
-              tmp19 = tmp8;
-              tmp20 = tmp9;
-              tmp21 = tmp10;
-              tmp22 = tmp11;
-              tmp23 = tmp12;
-              let tmp41 = invite;
-              if (null != invite) {
-                let tmp42 = outer1_14;
-                let tmp43 = outer1_14(invite);
-                tmp15 = tmp4;
-                tmp16 = tmp5;
-                tmp17 = tmp6;
-                tmp18 = tmp7;
-                tmp19 = tmp8;
-                let tmp44 = invite;
-                tmp21 = tmp10;
-                tmp22 = tmp11;
-                tmp23 = tmp12;
-                tmp20 = tmp43;
-                if (null != tmp43) {
-                  let channel = invite.channel;
-                  let id;
-                  if (null != channel) {
-                    id = channel.id;
-                  }
-                  let tmp25 = null;
-                  if (null != id) {
-                    tmp25 = id;
-                  }
-                  let guild = invite.guild;
-                  let id1;
-                  if (null != guild) {
-                    id1 = guild.id;
-                  }
-                  let tmp27 = null;
-                  if (null != id1) {
-                    tmp27 = id1;
-                  }
-                  let someResult = null != tmp25 && null != tmp27;
-                  if (someResult) {
-                    let tmp29 = outer1_5;
-                    let voiceStatesForChannelAlt = outer1_5.getVoiceStatesForChannelAlt(tmp25, tmp27);
-                    someResult = voiceStatesForChannelAlt.some((voiceState) => voiceState.voiceState.selfStream);
-                  }
-                  let obj = {};
-                  let tmp31 = guildId;
-                  let tmp32 = items;
-                  let tmp30 = items;
-                  obj.type = guildId(items[6]).MessageViewTrackingType.VOICE_INVITE_EMBED;
-                  obj.messageId = message.id;
-                  let tmp33 = id;
-                  obj.channelId = id.id;
-                  let tmp34 = guildId;
-                  obj.guildId = guildId;
-                  obj.inviteCode = value.code;
-                  obj.inviteGuildId = tmp27;
-                  obj.inviteChannelId = tmp25;
-                  let obj3 = guildId(items[12]);
-                  let inviteInstanceId = obj3.getInviteInstanceId(value.code, message.id);
-                  let tmp36 = null;
-                  if (null != inviteInstanceId) {
-                    tmp36 = inviteInstanceId;
-                  }
-                  obj.inviteInstanceId = tmp36;
-                  obj.treatmentRendered = tmp43.treatmentRendered;
-                  obj.hasActiveStream = someResult;
-                  let arr = items.push(obj);
-                  tmp15 = id;
-                  tmp16 = channel;
-                  tmp17 = id1;
-                  tmp18 = guild;
-                  tmp19 = inviteInstanceId;
-                  let tmp38 = invite;
-                  tmp20 = tmp43;
-                  tmp21 = tmp25;
-                  tmp22 = tmp27;
-                  tmp23 = someResult;
+        const codedLinks = message.codedLinks;
+        const iter = codedLinks[Symbol.iterator]();
+        const nextResult = iter.next();
+        while (iter !== undefined) {
+          let tmp6 = nextResult;
+          let tmp7 = guildId;
+          let tmp8 = items;
+          if (nextResult.type === guildId(items[8]).CodedLinkType.INVITE) {
+            let tmp31 = outer1_4;
+            let tmp32 = nextResult;
+            let invite = outer1_4.getInvite(tmp6.code);
+            let tmp34 = invite;
+            if (null != invite) {
+              let tmp35 = outer1_12;
+              let tmp36 = invite;
+              let tmp37 = outer1_12(tmp34);
+              if (null != tmp37) {
+                let tmp39 = invite;
+                let channel = tmp34.channel;
+                let id;
+                if (channel != null) {
+                  id = channel.id;
                 }
+                if (id == null) {
+                  id = null;
+                }
+                let tmp10 = id;
+                let tmp11 = invite;
+                let guild = tmp34.guild;
+                let id1;
+                if (guild != null) {
+                  id1 = guild.id;
+                }
+                if (id1 == null) {
+                  id1 = null;
+                }
+                let tmp13 = id1;
+                let tmp14 = id;
+                let someResult = null != tmp10;
+                if (someResult) {
+                  let tmp16 = id1;
+                  someResult = null != tmp13;
+                }
+                if (someResult) {
+                  let tmp17 = outer1_5;
+                  let tmp18 = id;
+                  let tmp19 = id1;
+                  let voiceStatesForChannelAlt = outer1_5.getVoiceStatesForChannelAlt(tmp10, tmp13);
+                  someResult = voiceStatesForChannelAlt.some((voiceState) => voiceState.voiceState.selfStream);
+                }
+                let obj = { type: null, messageId: null, channelId: null, guildId: null, inviteCode: null, inviteGuildId: null, inviteChannelId: null, inviteInstanceId: null, treatmentRendered: null, hasActiveStream: null };
+                let tmp20 = someResult;
+                let tmp21 = items;
+                obj[0] = tmp7(tmp8[6]).MessageViewTrackingType.VOICE_INVITE_EMBED;
+                obj[1] = message.id;
+                let tmp22 = id;
+                obj[2] = id.id;
+                let tmp23 = guildId;
+                obj[3] = guildId;
+                let tmp24 = nextResult;
+                obj[4] = tmp6.code;
+                let tmp25 = id1;
+                obj[5] = tmp13;
+                let tmp26 = id;
+                obj[6] = tmp10;
+                let tmp7Result = tmp7(tmp8[12]);
+                let inviteInstanceId = tmp7Result.getInviteInstanceId(tmp6.code, message.id);
+                if (inviteInstanceId == null) {
+                  inviteInstanceId = null;
+                }
+                obj[7] = inviteInstanceId;
+                let tmp28 = tmp37;
+                obj[8] = tmp38.treatmentRendered;
+                let tmp29 = someResult;
+                obj[9] = tmp20;
+                let arr = items.push(obj);
               }
             }
-            iter3 = tmp2();
-            tmp4 = tmp15;
-            tmp5 = tmp16;
-            tmp6 = tmp17;
-            tmp7 = tmp18;
-            tmp8 = tmp19;
-            tmp9 = tmp20;
-            tmp10 = tmp21;
-            tmp11 = tmp22;
-            tmp12 = tmp23;
-            iter2 = iter3;
-          } while (!iter3.done);
+          }
+          continue;
         }
       }
     });

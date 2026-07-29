@@ -1,32 +1,75 @@
-// Module ID: 16236
-// Function ID: 125683
-// Name: _isNativeReflectConstruct
-// Dependencies: [7, 6, 15, 17, 18, 11743, 6674, 8324, 16237, 4372, 16239, 1935, 16238, 477, 4016, 5112, 2]
+// Module ID: 16271
+// Function ID: 16272
+// Name: prototype
+// Dependencies: [11768, 6695, 5134, 8348, 16272, 4395, 16274, 1959, 16273, 500, 4040, 2]
 
-// Module 16236 (_isNativeReflectConstruct)
-import showInstantInviteActionSheet from "showInstantInviteActionSheet";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import AutomaticLifecycleManager from "AutomaticLifecycleManager";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
-import initialValues from "initialValues";
-import closure_10 from "_isNativeReflectConstruct";
-import tmp3 from "AutomaticLifecycleManager";
+// Module 16271 (prototype)
+import ContactSyncModes from "ContactSyncModes";
+import initialize from "initialize";
+import "initialize";
 
-let closure_8;
-let closure_9;
-const require = arg1;
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
-  }
-  const result = _isNativeReflectConstruct();
+let c3;
+let c4;
+({ initialize: c3, ContactSyncModes: c4 } = ContactSyncModes);
+let prototype = function RedesignNewUserManager() {
+  const applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
+  const require = applyArgumentsResult;
+  applyArgumentsResult._onboardingStepIndex = -1;
+  applyArgumentsResult._lastShownStepIndex = -1;
+  applyArgumentsResult.actions = {
+    POST_CONNECTION_OPEN() {
+      return applyArgumentsResult.handleConnectionOpen();
+    },
+    ONBOARDING_START() {
+      return applyArgumentsResult.handleOnboardingStart();
+    }
+  };
+  applyArgumentsResult.startOnboarding = function startOnboarding() {
+    callback(applyArgumentsResult(table[3]).hasDeferredInvite() ? closure_4.ONBOARDING_INVITE : closure_4.ONBOARDING);
+    let obj = applyArgumentsResult(table[3]);
+    const tmp = applyArgumentsResult;
+    const tmp2 = table;
+    const nextOnboardingStep = applyArgumentsResult(table[4]).getNextOnboardingStep(false, -1, -1);
+    nextOnboardingStep.then((arg0) => {
+      let lastShownStepIndex;
+      let onboardingStepIndex;
+      ({ lastShownStepIndex, onboardingStepIndex } = arg0);
+      let obj = callback(table[4]);
+      const keyForOnboardingStep = obj.getKeyForOnboardingStep(onboardingStepIndex);
+      if (null != keyForOnboardingStep) {
+        const obj3 = callback2(tmp2[5]);
+        const tmp11 = tmp(tmp2[7])(tmp2[6], tmp2.paths);
+        obj = { initialRouteName: null, initialOnboardingStepIndex: null };
+        obj[0] = keyForOnboardingStep;
+        obj[1] = onboardingStepIndex;
+        const NEW_USER_MODAL_KEY = tmp(tmp2[8]).NEW_USER_MODAL_KEY;
+        let str = "card";
+        if (tmpResult.isAndroid()) {
+          str = "transparentModal";
+        }
+        obj = { fullScreenGestureEnabled: false, presentation: null, animation: "slide_from_bottom" };
+        obj[1] = str;
+        obj3.pushLazy(tmp11, obj, NEW_USER_MODAL_KEY, obj);
+        tmpResult = tmp(tmp2[9]);
+      }
+    });
+  };
+  applyArgumentsResult.handleOnboardingStart = function handleOnboardingStart() {
+    applyArgumentsResult.startOnboarding();
+  };
+  applyArgumentsResult.handleConnectionOpen = function handleConnectionOpen() {
+    if (null != outer1_5.getType()) {
+      if (!obj.isModalOpen()) {
+        applyArgumentsResult.startOnboarding();
+      }
+      obj = applyArgumentsResult(outer1_2[10]);
+    }
+  };
+  return applyArgumentsResult;
+}.prototype;
+class prototype extends tmp3 {
 }
-({ initialize: closure_8, ContactSyncModes: closure_9 } = initialValues);
-tmp3 = new tmp3();
-let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/nuf/native/RedesignNewUserManager.tsx");
+prototype = new prototype();
+const result = require("initialize").fileFinishedImporting("modules/nuf/native/RedesignNewUserManager.tsx");
 
-export default tmp3;
+export default prototype;

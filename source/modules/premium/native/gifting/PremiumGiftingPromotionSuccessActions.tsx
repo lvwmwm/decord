@@ -1,74 +1,84 @@
-// Module ID: 9767
-// Function ID: 75905
+// Module ID: 9789
+// Function ID: 9790
 // Name: PremiumGiftingPromotionSuccessActions
-// Dependencies: [31, 27, 5785, 1875, 1850, 33, 4165, 689, 566, 8780, 1456, 8747, 8021, 9678, 9768, 8046, 1874, 1273, 9762, 4578, 1212, 2]
+// Dependencies: [19, 17, 5803, 1899, 1874, 21, 4189, 712, 589, 8804, 1480, 8771, 8045, 9700, 9790, 8070, 1898, 1297, 9784, 4600, 1236, 2]
 // Exports: default
 
-// Module 9767 (PremiumGiftingPromotionSuccessActions)
-import result from "result";
-import { View } from "get ActivityIndicator";
-import { isAvatarDecorationRecord } from "_isNativeReflectConstruct";
-import { isNameplateRecord } from "_isNativeReflectConstruct";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+// Module 9789 (PremiumGiftingPromotionSuccessActions)
+import Button from "Button";
+import { View } from "Button";
+import { isAvatarDecorationRecord } from "fromServer";
+import { isNameplateRecord } from "fromServer";
+import mergeGuildAvatar from "mergeGuildAvatar";
+import jsxProd from "set";
+import createCacheKey from "createCacheKey";
 
-let closure_8;
-let closure_9;
+let c9;
+let metroImportAll;
 const require = arg1;
-({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { flexDirection: "column", alignItems: "center", gap: require("_createForOfIteratorHelperLoose").space.PX_16 };
-_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
-let obj1 = { width: 234, height: 40, flexDirection: "row", alignItems: "center", position: "relative", borderRadius: require("_createForOfIteratorHelperLoose").radii.sm, overflow: "hidden" };
-_createForOfIteratorHelperLoose.nameplateContainer = obj1;
-let obj2 = { position: "absolute", left: 0, right: 0, top: 0, bottom: 0, borderRadius: require("_createForOfIteratorHelperLoose").radii.sm, overflow: "hidden" };
-_createForOfIteratorHelperLoose.nameplateWrapper = obj2;
-_createForOfIteratorHelperLoose.singleAvatarContainer = { flexDirection: "row", paddingRight: 15, justifyContent: "center", alignItems: "center", marginLeft: 5 };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/premium/native/gifting/PremiumGiftingPromotionSuccessActions.tsx");
+({ jsx: metroImportAll, jsxs: c9 } = jsxProd);
+createCacheKey = { container: null, nameplateContainer: null, nameplateWrapper: null, singleAvatarContainer: null };
+createCacheKey = { flexDirection: "column", alignItems: "center", gap: require("Themes").space.PX_16 };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { width: 234, height: 40, flexDirection: "row", alignItems: "center", position: "relative", borderRadius: require("Themes").radii.sm, overflow: "hidden" };
+let obj1 = { width: 234, height: 40, flexDirection: "row", alignItems: "center", position: "relative", borderRadius: require("Themes").radii.sm, overflow: "hidden" };
+createCacheKey[2] = { position: "absolute", left: 0, right: 0, top: 0, bottom: 0, borderRadius: require("Themes").radii.sm, overflow: "hidden" };
+createCacheKey[3] = { flexDirection: "row", paddingRight: 15, justifyContent: "center", alignItems: "center", marginLeft: 5 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let obj2 = { position: "absolute", left: 0, right: 0, top: 0, bottom: 0, borderRadius: require("Themes").radii.sm, overflow: "hidden" };
+const result = require("fromServer").fileFinishedImporting("modules/premium/native/gifting/PremiumGiftingPromotionSuccessActions.tsx");
 
 export default function PremiumGiftingPromotionSuccessActions(purchase) {
   purchase = purchase.purchase;
-  let tmp = _createForOfIteratorHelperLoose();
+  let onClose;
+  let prePurchaseGiftingBadgeProgress;
+  let navigation;
+  let enabled;
+  let c4;
+  let callback;
+  let tmp = createCacheKey();
   let obj = onClose(navigation[8]);
-  const items = [_isNativeReflectConstruct];
-  const stateFromStores = obj.useStateFromStores(items, () => outer1_7.getCurrentUser());
+  const items = [mergeGuildAvatar];
+  const stateFromStores = obj.useStateFromStores(items, () => currentUser.getCurrentUser());
   let obj1 = onClose(navigation[9]);
   const nativeGiftContext = obj1.useNativeGiftContext();
   onClose = nativeGiftContext.onClose;
-  const prePurchaseGiftingBadgeProgress = nativeGiftContext.prePurchaseGiftingBadgeProgress;
+  prePurchaseGiftingBadgeProgress = nativeGiftContext.prePurchaseGiftingBadgeProgress;
   let obj2 = onClose(navigation[10]);
   navigation = obj2.useNavigation();
   const GiftingBadgeExperiment = onClose(navigation[11]).GiftingBadgeExperiment;
-  const enabled = GiftingBadgeExperiment.useConfig({ location: "PremiumGiftingPromotionSuccessActions" }).enabled;
+  enabled = GiftingBadgeExperiment.useConfig({ location: "PremiumGiftingPromotionSuccessActions" }).enabled;
   let obj3 = onClose(navigation[12]);
   const fetchCollectiblesProduct = obj3.useFetchCollectiblesProduct(purchase.skuId);
   const product = fetchCollectiblesProduct.product;
-  const View = product;
+  c4 = product;
   const items1 = [enabled, prePurchaseGiftingBadgeProgress, navigation];
-  const callback = enabled.useCallback(() => {
+  callback = enabled.useCallback(() => {
     let tmp = enabled;
     if (enabled) {
       tmp = null != prePurchaseGiftingBadgeProgress;
     }
     if (tmp) {
-      const obj = { currentProgress: prePurchaseGiftingBadgeProgress };
+      const obj = { currentProgress: null };
+      obj[0] = prePurchaseGiftingBadgeProgress;
       navigation.navigate(onClose(navigation[13]).PremiumGiftScreens.GIFTING_BADGE, obj);
     }
   }, items1);
   const items2 = [product, onClose, callback, enabled, prePurchaseGiftingBadgeProgress, navigation];
   const first = purchase.items[0];
-  obj = { style: tmp.container };
+  obj = { style: tmp.container, children: null };
   const callback1 = enabled.useCallback(() => {
-    if (null != closure_4) {
-      let obj = { product: closure_4, onCancel: callback };
+    if (null != c4) {
+      let obj = { product: null, onCancel: null };
+      obj[0] = tmp;
+      obj[1] = callback;
       prePurchaseGiftingBadgeProgress(navigation[14]).open(obj);
       const obj2 = prePurchaseGiftingBadgeProgress(navigation[14]);
     } else {
       if (enabled) {
         if (null != prePurchaseGiftingBadgeProgress) {
-          obj = { currentProgress: prePurchaseGiftingBadgeProgress };
+          obj = { currentProgress: null };
+          obj[0] = tmp3;
           navigation.navigate(onClose(navigation[13]).PremiumGiftScreens.GIFTING_BADGE, obj);
         }
       }
@@ -76,32 +86,39 @@ export default function PremiumGiftingPromotionSuccessActions(purchase) {
     }
   }, items2);
   if (isNameplateRecord(first)) {
-    obj = { style: tmp.nameplateContainer };
-    obj1 = { style: tmp.nameplateWrapper };
+    obj = { style: null, children: null };
+    obj[0] = tmp.nameplateContainer;
+    obj1 = { style: null, children: null };
+    obj1[0] = tmp.nameplateWrapper;
     obj2 = { nameplate: null, fullOpacity: true, animate: true };
-    const tmp23 = prePurchaseGiftingBadgeProgress(navigation[15]);
-    obj2.nameplate = onClose(navigation[16]).getNameplateData(first);
-    obj1.children = callback(tmp23, obj2);
-    const items3 = [callback(View, obj1), ];
-    obj3 = { style: tmp.singleAvatarContainer };
-    const obj4 = { user: stateFromStores, guildId: undefined, size: onClose(navigation[17]).AvatarSizes.SMALL, "aria-hidden": true };
-    obj3.children = callback(onClose(navigation[17]).Avatar, obj4);
-    items3[1] = callback(View, obj3);
-    obj.children = items3;
-    let tmp12 = callback2(View, obj);
-    const obj10 = onClose(navigation[16]);
+    const tmp20 = prePurchaseGiftingBadgeProgress(tmp3[15]);
+    obj2[0] = tmp2(tmp3[16]).getNameplateData(first);
+    obj1[1] = callback(tmp20, obj2);
+    const items3 = [callback(tmp12, obj1), ];
+    obj3 = { style: null, children: null };
+    obj3[0] = tmp.singleAvatarContainer;
+    const obj4 = { user: null, guildId: "Array", size: true, "aria-hidden": null };
+    obj4[0] = stateFromStores;
+    obj4[2] = tmp2(tmp3[17]).AvatarSizes.SMALL;
+    obj3[1] = callback(tmp2(tmp3[17]).Avatar, obj4);
+    items3[1] = callback(tmp12, obj3);
+    obj[1] = items3;
+    let tmp11Result = tmp11(tmp12, obj);
+    const tmp2Result = tmp2(tmp3[16]);
   } else if (callback(first)) {
-    const obj5 = { size: onClose(navigation[17]).AvatarSizes.LARGE, asset: first.asset };
-    tmp12 = callback(prePurchaseGiftingBadgeProgress(navigation[18]), obj5);
-    const tmp16 = prePurchaseGiftingBadgeProgress(navigation[18]);
+    const obj5 = { size: null, asset: null };
+    obj5[0] = tmp2(tmp3[17]).AvatarSizes.LARGE;
+    obj5[1] = first.asset;
+    tmp11Result = callback(prePurchaseGiftingBadgeProgress(tmp3[18]), obj5);
+    const tmp17 = prePurchaseGiftingBadgeProgress(tmp3[18]);
   }
-  const items4 = [tmp12, ];
-  const obj6 = { grow: true };
-  const intl = onClose(navigation[20]).intl;
-  obj6.text = intl.string(onClose(navigation[20]).t.kMYVwv);
-  obj6.loading = fetchCollectiblesProduct.isFetching;
-  obj6.onPress = callback1;
+  const items4 = [tmp11Result, ];
+  const obj6 = { grow: true, text: null, loading: null, onPress: null };
+  const intl = tmp2(tmp3[20]).intl;
+  obj6[1] = intl.string(onClose(navigation[20]).t.kMYVwv);
+  obj6[2] = fetchCollectiblesProduct.isFetching;
+  obj6[3] = callback1;
   items4[1] = callback(onClose(navigation[19]).Button, obj6);
-  obj.children = items4;
-  return callback2(View, obj);
+  obj[1] = items4;
+  return closure_9(c4, obj);
 };

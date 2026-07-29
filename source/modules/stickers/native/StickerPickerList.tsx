@@ -1,46 +1,49 @@
-// Module ID: 9628
-// Function ID: 74919
-// Dependencies: [57, 31, 27, 5070, 9601, 9565, 33, 4165, 689, 1273, 9629, 4161, 1212, 4834, 9374, 9330, 566, 9630, 9612, 22, 8799, 9631, 9217, 5196, 2]
+// Module ID: 9650
+// Function ID: 9651
+// Dependencies: [32, 19, 17, 5092, 9623, 9589, 21, 4189, 712, 1297, 9651, 4185, 1236, 4856, 9398, 9354, 589, 9652, 9634, 12, 8823, 9653, 9241, 5218, 2]
 
-// Module 9628
+// Module 9650
 import _slicedToArray from "_slicedToArray";
-import importAllResult from "result";
-import { View } from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import importAllResult from "apply";
+import { View } from "useStickerPickerListData";
+import loadSavedGuildStickers from "loadSavedGuildStickers";
 import { useStickerPickerStore } from "useStickerPickerStore";
 import PADDING_HORIZONTAL from "PADDING_HORIZONTAL";
-import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import jsxProd from "module_9653";
+import createCacheKey from "createCacheKey";
 
-let closure_10;
-let closure_11;
+let c10;
+let c9;
 let closure_12;
-let closure_8;
-let closure_9;
+let metroImportAll;
+let unpackModuleId;
 const require = arg1;
-({ STICKER_SCROLL_LOAD_DELAY_MS: closure_8, STICKER_SCROLL_LOAD_DELAY_AFTER_HEIGHT_CHANGE_MS: closure_9, STICKER_SIZE: closure_10 } = PADDING_HORIZONTAL);
-({ jsx: closure_11, jsxs: closure_12 } = jsxProd);
-let obj = {};
-obj = { color: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_MOD_MUTED };
-obj.listPlaceholder = obj;
-_createForOfIteratorHelperLoose = { justifyContent: "center", overflow: "hidden", backgroundColor: require("_createForOfIteratorHelperLoose").colors.MOBILE_ACTIONSHEET_BACKGROUND };
-obj.section = _createForOfIteratorHelperLoose;
-obj.sectionSticker = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.MOBILE_EXPRESSION_PICKER_BACKGROUND_DEFAULT };
-const obj3 = { flexDirection: "row", alignItems: "center", justifyContent: "center", borderRadius: require("_createForOfIteratorHelperLoose").radii.sm, marginLeft: 12, marginRight: 12, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_MOD_NORMAL };
-obj.nsfwContainer = obj3;
-obj.nsfwText = { marginLeft: 4, textAlign: "center" };
-let closure_13 = _createForOfIteratorHelperLoose.createStyles(obj);
+let c4 = importAllResult;
+({ STICKER_SCROLL_LOAD_DELAY_MS: metroImportAll, STICKER_SCROLL_LOAD_DELAY_AFTER_HEIGHT_CHANGE_MS: c9, STICKER_SIZE: c10 } = PADDING_HORIZONTAL);
+({ jsx: unpackModuleId, jsxs: closure_12 } = jsxProd);
+let obj = { listPlaceholder: null, section: null, sectionSticker: null, nsfwContainer: null, nsfwText: null };
+obj = { color: require("Themes").colors.BACKGROUND_MOD_MUTED };
+obj[0] = obj;
+createCacheKey = { justifyContent: "center", overflow: "hidden", backgroundColor: require("Themes").colors.MOBILE_ACTIONSHEET_BACKGROUND };
+obj[1] = createCacheKey;
+obj[2] = { backgroundColor: require("Themes").colors.MOBILE_EXPRESSION_PICKER_BACKGROUND_DEFAULT };
+const obj2 = { backgroundColor: require("Themes").colors.MOBILE_EXPRESSION_PICKER_BACKGROUND_DEFAULT };
+obj[3] = { flexDirection: "row", alignItems: "center", justifyContent: "center", borderRadius: require("Themes").radii.sm, marginLeft: 12, marginRight: 12, backgroundColor: require("Themes").colors.BACKGROUND_MOD_NORMAL };
+obj[4] = { marginLeft: 4, textAlign: "center" };
+let closure_13 = createCacheKey.createStyles(obj);
 let closure_14 = importAllResult.memo((height) => {
   const tmp = callback3();
-  let obj = { style: items };
+  let obj = { style: items, children: null };
   items = [tmp.nsfwContainer, { height: height.height }];
-  obj = { source: importDefault(9629), size: require(1273) /* Button */.Icon.Sizes.SMALL };
-  const items1 = [callback(require(1273) /* Button */.Icon, obj), ];
-  obj = { style: tmp.nsfwText, variant: "text-sm/normal", color: "interactive-text-active" };
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj.children = intl.string(require(1212) /* getSystemLocale */.t.uy25Qz);
-  items1[1] = callback(require(4161) /* Text */.Text, obj);
-  obj.children = items1;
+  obj = { source: null, size: null };
+  obj[0] = importDefault(9651);
+  obj[1] = require(1297) /* Button */.Icon.Sizes.SMALL;
+  const items1 = [callback(require(1297) /* Button */.Icon, obj), ];
+  obj = { style: tmp.nsfwText, variant: "text-sm/normal", color: "interactive-text-active", children: null };
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj[3] = intl.string(require(1236) /* getSystemLocale */.t.uy25Qz);
+  items1[1] = callback(require(4185) /* Text */.Text, obj);
+  obj[1] = items1;
   return callback2(View, obj);
 });
 let closure_15 = importAllResult.memo((arg0) => {
@@ -48,18 +51,17 @@ let closure_15 = importAllResult.memo((arg0) => {
   let label;
   let sectionStyle;
   ({ height, label, sectionStyle } = arg0);
-  let obj = {};
+  const obj = { style: null, children: null };
   const items = [callback3().section, sectionStyle, { height }];
-  obj.style = items;
-  obj = { lineClamp: 1, color: "interactive-text-default", variant: "heading-sm/semibold", children: label };
-  obj.children = callback(require(4161) /* Text */.Text, obj);
+  obj[0] = items;
+  obj[1] = callback(require(4185) /* Text */.Text, { lineClamp: 1, color: "interactive-text-default", variant: "heading-sm/semibold", children: label });
   return callback(View, obj);
 });
 let closure_16 = importAllResult.memo((height) => {
   const style = { height: height.height };
   return callback(View, { style });
 });
-const obj2 = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.MOBILE_EXPRESSION_PICKER_BACKGROUND_DEFAULT };
+const obj3 = { flexDirection: "row", alignItems: "center", justifyContent: "center", borderRadius: require("Themes").radii.sm, marginLeft: 12, marginRight: 12, backgroundColor: require("Themes").colors.BACKGROUND_MOD_NORMAL };
 const memoResult = importAllResult.memo((bottomSheetRef) => {
   let onPressSticker;
   let searchResults;
@@ -104,21 +106,20 @@ const memoResult = importAllResult.memo((bottomSheetRef) => {
   let packToScrollToIndex;
   let setCategory;
   ref = onLongPressStickerDetail.useRef(null);
-  const tmp2 = callback3();
-  c8 = tmp2;
-  const tmp3 = onPressSticker(onLongPressStickerDetail.useState(null), 2);
-  first = tmp3[0];
-  closure_10 = tmp3[1];
+  const tmp4 = callback3();
+  c8 = tmp4;
+  const tmp5 = onPressSticker(onLongPressStickerDetail.useState(null), 2);
+  first = tmp5[0];
+  closure_10 = tmp5[1];
   let obj = bottomSheetRef(setCategoryIndex[14]);
   const isPortalKeyboardInModal = obj.useIsPortalKeyboardInModal();
-  const tmp6 = bottomSheetIndex(setCategoryIndex[15])(flag);
-  callback = tmp6;
-  let obj1 = bottomSheetRef(setCategoryIndex[16]);
+  const tmp11 = bottomSheetIndex(setCategoryIndex[15])(flag);
+  callback = tmp11;
   const items1 = [flag];
-  stateFromStores = obj1.useStateFromStores(items1, () => flag.hasLoadedStickerPacks);
-  const tmp8 = ref((setPackToScrollTo) => setPackToScrollTo.setPackToScrollTo);
-  callback3 = tmp8;
-  const items2 = [setCategoryIndex, tmp8, bottomSheetRef];
+  stateFromStores = bottomSheetRef(setCategoryIndex[16]).useStateFromStores(items1, () => flag.hasLoadedStickerPacks);
+  const tmp13 = ref((setPackToScrollTo) => setPackToScrollTo.setPackToScrollTo);
+  callback3 = tmp13;
+  const items2 = [setCategoryIndex, tmp13, bottomSheetRef];
   memo = onLongPressStickerDetail.useMemo(() => {
     function scrollToCancel() {
       return clearTimeout(ref.scrollTo);
@@ -130,20 +131,21 @@ const memoResult = importAllResult.memo((bottomSheetRef) => {
         let expand;
         index = index.index;
         ({ delay, expand } = index);
-        scrollToCancel();
+        clearTimeout(index.scrollTo);
         if (expand) {
           let current = ref.current;
-          if (null != current) {
+          if (current != null) {
             current.expandActionSheet();
           }
         }
         index.scrollTo = setTimeout(() => {
-          const current = outer2_7.current;
-          if (null != current) {
-            const obj = { section: index, item: 0, animated: true };
+          const current = outer1_7.current;
+          if (current != null) {
+            const obj = { section: null, item: 0, animated: true };
+            obj[0] = index;
             current.scrollToLocation(obj);
           }
-          outer2_13(null);
+          outer1_13(null);
         }, delay);
         outer1_2(index);
       },
@@ -152,36 +154,39 @@ const memoResult = importAllResult.memo((bottomSheetRef) => {
       }
     };
   }, items2);
-  obj = { channel, containerWidth: tmp6, searchResults, stickerFormats };
-  const tmp10 = bottomSheetIndex(setCategoryIndex[17])(obj);
-  sectionHeights = tmp10.sectionHeights;
-  sectionSize = tmp10.sectionSize;
-  sectionFooterSize = tmp10.sectionFooterSize;
-  sectionLabels = tmp10.sectionLabels;
-  rowsBySection = tmp10.rowsBySection;
-  rowHeight = tmp10.rowHeight;
-  rowSize = tmp10.rowSize;
-  packToScrollToIndex = tmp10.packToScrollToIndex;
+  let tmp15 = bottomSheetIndex(setCategoryIndex[17])({ channel, containerWidth: tmp11, searchResults, stickerFormats });
+  sectionHeights = tmp15.sectionHeights;
+  sectionSize = tmp15.sectionSize;
+  sectionFooterSize = tmp15.sectionFooterSize;
+  sectionLabels = tmp15.sectionLabels;
+  rowsBySection = tmp15.rowsBySection;
+  rowHeight = tmp15.rowHeight;
+  rowSize = tmp15.rowSize;
+  packToScrollToIndex = tmp15.packToScrollToIndex;
   const items3 = [flag, bottomSheetIndex, stateFromStores, packToScrollToIndex, memo];
   const effect = onLongPressStickerDetail.useEffect(() => {
-    if (tmp) {
+    if (tmp2) {
       if (flag) {
         if (bottomSheetIndex.get() < 1) {
-          let obj = { index: packToScrollToIndex, delay: first, expand: true };
+          let obj = { index: null, delay: null, expand: true };
+          obj[0] = tmp;
+          obj[1] = first;
           memo.scroll(obj);
         }
       }
-      obj = { index: packToScrollToIndex, delay: c8 };
+      obj = { index: null, delay: null };
+      obj[0] = tmp;
+      obj[1] = c8;
       memo.scroll(obj);
     }
     return () => {
-      outer1_14.cancel();
+      closure_14.cancel();
     };
   }, items3);
-  const items4 = [sectionLabels, sectionSize, tmp2.sectionSticker];
+  const items4 = [sectionLabels, sectionSize, tmp4.sectionSticker];
   const items5 = [sectionFooterSize];
   callback = onLongPressStickerDetail.useCallback((arg0) => _undefined2(sectionHeights, { label: sectionLabels[arg0], sectionStyle: _undefined.sectionSticker, height: sectionSize }), items4);
-  const items6 = [channel, tmp6, first, onLongPressStickerDetail, onPressSticker, rowHeight, rowSize, rowsBySection];
+  const items6 = [channel, tmp11, first, onLongPressStickerDetail, onPressSticker, rowHeight, rowSize, rowsBySection];
   const callback1 = onLongPressStickerDetail.useCallback(() => _undefined2(sectionSize, { height: sectionFooterSize }), items5);
   const items7 = [setCategoryIndex, sectionHeights];
   const callback2 = onLongPressStickerDetail.useCallback((arg0, arg1) => {
@@ -190,39 +195,49 @@ const memoResult = importAllResult.memo((bottomSheetRef) => {
     } else {
       const type = tmp.type;
       if (bottomSheetRef(setCategoryIndex[17]).StickerPickerSectionType.STICKERS === type) {
-        let obj = { containerWidth: _undefined2, stickers: tmp.stickersByRow[arg1], rowSize, onPressSticker, onLongPressStickerDetail, focusedSticker: first, setFocusedSticker: closure_10, channel };
-        return _undefined2(bottomSheetIndex(setCategoryIndex[18]), obj);
-      } else if (bottomSheetRef(setCategoryIndex[17]).StickerPickerSectionType.NSFW === type) {
-        obj = { height: rowHeight };
+        let obj = { containerWidth: null, stickers: null, rowSize: null, onPressSticker: null, onLongPressStickerDetail: null, focusedSticker: null, setFocusedSticker: null, channel: null };
+        obj[0] = _undefined2;
+        obj[1] = tmp.stickersByRow[arg1];
+        obj[2] = rowSize;
+        obj[3] = onPressSticker;
+        obj[4] = onLongPressStickerDetail;
+        obj[5] = first;
+        obj[6] = closure_10;
+        obj[7] = channel;
+        return _undefined2(bottomSheetIndex(tmp16[18]), obj);
+      } else if (tmp15(tmp16[17]).StickerPickerSectionType.NSFW === type) {
+        obj = { height: null };
+        obj[0] = rowHeight;
         return _undefined2(memo, obj);
       } else {
         return null;
       }
+      tmp15 = bottomSheetRef;
     }
   }, items6);
   const memo1 = onLongPressStickerDetail.useMemo(() => {
     let obj = bottomSheetIndex(setCategoryIndex[19]);
     const debounceResult = obj.debounce((arg0) => {
       let num = 0;
-      if (0 < outer1_15.length) {
-        let num2 = 0;
+      if (0 < closure_15.length) {
         let num3 = 0;
+        let num4 = 0;
         num = 0;
-        if (arg0 >= outer1_15[0]) {
-          const sum = num2 + 1;
-          num3 = num3 + 1;
+        if (arg0 >= tmp[0]) {
+          const sum = num4 + 1;
+          const sum1 = num3 + 1;
           num = sum;
-          while (num3 < outer1_15.length) {
-            let tmp4 = outer1_15;
-            num2 = sum;
+          while (sum1 < closure_15.length) {
+            num3 = sum1;
+            num4 = sum;
             num = sum;
-            if (arg0 < outer1_15[num3]) {
+            if (arg0 < closure_15[sum1]) {
               break;
             }
           }
         }
       }
-      outer1_2(num);
+      callback(num);
     }, 100);
     const bottomSheetRef = debounceResult;
     obj = {
@@ -234,55 +249,53 @@ const memoResult = importAllResult.memo((bottomSheetRef) => {
     return obj;
   }, items7);
   setCategory = memo1.setCategory;
-  const items8 = [tmp2, rowSize];
+  const items8 = [tmp4, rowSize];
   const items9 = [setCategory];
   const memo2 = onLongPressStickerDetail.useMemo(() => {
-    let obj = {};
+    let obj = { sectionHeader: null, sectionItem: null };
     obj = { type: bottomSheetRef(setCategoryIndex[20]).FastestListPropsPlaceholderType.SHAPE, colorHex: _undefined.listPlaceholder.color, shape: "rect", borderRadius: bottomSheetIndex(setCategoryIndex[8]).radii.md, paddingVertical: bottomSheetIndex(setCategoryIndex[8]).space.PX_4 };
-    obj.sectionHeader = obj;
+    obj[0] = obj;
     obj = { type: bottomSheetRef(setCategoryIndex[20]).FastestListPropsPlaceholderType.SHAPE, colorHex: _undefined.listPlaceholder.color, shape: "circle", shapeCount: rowSize, width: closure_10, height: closure_10 };
-    obj.sectionItem = obj;
+    obj[1] = obj;
     return obj;
   }, items8);
-  const effect1 = onLongPressStickerDetail.useEffect(() => () => outer1_23.cancel(), items9);
+  const effect1 = onLongPressStickerDetail.useEffect(() => () => closure_23.cancel(), items9);
   const items10 = [memo];
   const effect2 = onLongPressStickerDetail.useEffect(() => () => {
-    outer1_14.cancel();
+    closure_14.cancel();
   }, items10);
   let length;
-  if (null != searchResults) {
+  if (searchResults != null) {
     length = searchResults.length;
   }
   if (0 === length) {
-    obj = { inActionSheet: true, insetTop: num2, insetBottom: num };
-    let tmp23 = callback(bottomSheetIndex(setCategoryIndex[21]), obj);
+    obj = { inActionSheet: true, insetTop: null, insetBottom: null };
+    obj[1] = num2;
+    obj[2] = num;
+    let tmp26 = callback(tmp10(tmp8[21]), obj);
   } else {
-    obj1 = {};
-    const intl = bottomSheetRef(setCategoryIndex[12]).intl;
-    obj1.accessibilityLabel = intl.string(bottomSheetRef(setCategoryIndex[12]).t.nf1s3u);
-    const tmp29 = bottomSheetIndex(setCategoryIndex[22]);
-    obj1.estimatedListSize = bottomSheetRef(setCategoryIndex[23]).getCustomKeyboardHeight();
-    obj1.inActionSheet = true;
-    obj1.preventNativeModalDismiss = isPortalKeyboardInModal;
-    obj1.insetEnd = num;
-    obj1.insetStart = num2;
-    obj1.itemSize = rowHeight;
-    obj1.keyboardShouldPersistTaps = "always";
-    obj1.listId = "sticker-picker-list";
-    obj1.onScroll = memo1.onScroll;
-    obj1.placeholderConfig = memo2;
-    obj1.renderItem = callback2;
-    obj1.renderSectionHeader = callback;
-    obj1.renderSectionFooter = callback1;
-    obj1.ref = ref;
-    obj1.scrollReporting = "callbacks";
-    obj1.sections = tmp10.sections;
-    obj1.sectionHeaderSize = sectionSize;
-    obj1.sectionFooterSize = sectionFooterSize;
-    tmp23 = callback(tmp29, obj1);
-    const obj6 = bottomSheetRef(setCategoryIndex[23]);
+    obj = { accessibilityLabel: null, estimatedListSize: null, inActionSheet: true, preventNativeModalDismiss: null, insetEnd: null, insetStart: null, itemSize: null, keyboardShouldPersistTaps: "always", listId: "sticker-picker-list", onScroll: null, placeholderConfig: null, renderItem: null, renderSectionHeader: null, renderSectionFooter: null, ref: null, scrollReporting: "callbacks", sections: null, sectionHeaderSize: null, sectionFooterSize: null };
+    const intl = tmp7(tmp8[12]).intl;
+    obj[0] = intl.string(tmp7(tmp8[12]).t.nf1s3u);
+    const tmp10Result = tmp10(tmp8[22]);
+    obj[1] = tmp7(tmp8[23]).getCustomKeyboardHeight();
+    obj[3] = isPortalKeyboardInModal;
+    obj[4] = num;
+    obj[5] = num2;
+    obj[6] = rowHeight;
+    obj[9] = memo1.onScroll;
+    obj[10] = memo2;
+    obj[11] = callback2;
+    obj[12] = callback;
+    obj[13] = callback1;
+    obj[14] = ref;
+    obj[16] = tmp15.sections;
+    obj[17] = sectionSize;
+    obj[18] = sectionFooterSize;
+    tmp26 = callback(tmp10Result, obj);
+    const tmp7Result = tmp7(tmp8[23]);
   }
-  return tmp23;
+  return tmp26;
 });
 const result = require("get ActivityIndicator").fileFinishedImporting("modules/stickers/native/StickerPickerList.tsx");
 

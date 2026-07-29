@@ -1,42 +1,48 @@
-// Module ID: 3821
-// Function ID: 29637
+// Module ID: 3845
+// Function ID: 3846
 // Name: coalesceInvoiceItems
-// Dependencies: [22, 2]
+// Dependencies: [12, 2]
 // Exports: coalesceInvoiceItems, createInvoiceItemFromServer
 
-// Module 3821 (coalesceInvoiceItems)
+// Module 3845 (coalesceInvoiceItems)
 const result = require("set").fileFinishedImporting("modules/premium/PremiumSubscriptionInvoiceItem.tsx");
 
 export const coalesceInvoiceItems = function coalesceInvoiceItems(arr) {
   const items = [];
   const set = new Set();
   const mapped = arr.map((subscriptionPlanId) => {
-    let tmp;
-    let arr = items;
-    let num = 0;
-    if (0 < items.length) {
-      while (true) {
-        tmp = arr[num];
-        if (tmp.subscriptionPlanId === subscriptionPlanId.subscriptionPlanId) {
-          if (tmp.subscriptionPlanPrice === subscriptionPlanId.subscriptionPlanPrice) {
-            if (tmp.amount === subscriptionPlanId.amount) {
-              let tmp2 = items;
-              let tmp3 = set;
-              let obj = items(set[0]);
-              if (obj.isEqual(tmp.discounts, subscriptionPlanId.discounts)) {
-                break;
-              }
+    for (const item10009 of items) {
+      let tmp = item10009;
+      let tmp2 = arg0;
+      let tmp3 = item10009;
+      if (item10009.subscriptionPlanId === arg0.subscriptionPlanId) {
+        let tmp4 = item10009;
+        let tmp5 = arg0;
+        if (tmp3.subscriptionPlanPrice === tmp2.subscriptionPlanPrice) {
+          let tmp6 = item10009;
+          let tmp7 = arg0;
+          if (tmp3.amount === tmp2.amount) {
+            let tmp8 = items;
+            let tmp9 = set;
+            let obj2 = items(set[0]);
+            let tmp10 = item10009;
+            let tmp11 = arg0;
+            if (obj2.isEqual(tmp3.discounts, tmp2.discounts)) {
+              let tmp12 = set;
+              let tmp13 = item10009;
+              let addResult = set.add(tmp.subscriptionPlanId);
+              tmp.quantity = tmp.quantity + arg0.quantity;
+              let tmp15 = obj;
+              obj.return();
             }
           }
         }
-        num = num + 1;
       }
-      set.add(tmp.subscriptionPlanId);
-      tmp.quantity = tmp.quantity + subscriptionPlanId.quantity;
+      continue;
     }
-    obj = {};
+    const obj = {};
     const merged = Object.assign(subscriptionPlanId);
-    arr = items.push(obj);
+    items.push(obj);
   });
   return items.map((subscriptionPlanId) => {
     let obj = {};
@@ -47,7 +53,7 @@ export const coalesceInvoiceItems = function coalesceInvoiceItems(arr) {
       obj.discounts = discounts.map((amount) => {
         const obj = {};
         const merged = Object.assign(amount);
-        obj["amount"] = amount.amount * obj.quantity;
+        obj.amount = amount.amount * obj.quantity;
         return obj;
       });
       if (null != obj.tax) {

@@ -1,52 +1,50 @@
-// Module ID: 12379
-// Function ID: 96177
+// Module ID: 12401
+// Function ID: 12402
 // Name: Breadcrumbs
-// Dependencies: [31, 27, 33, 4165, 689, 22, 4161, 7672, 1212, 2299, 2]
+// Dependencies: [19, 17, 21, 4189, 712, 12, 4185, 7695, 1236, 2323, 2]
 // Exports: default
 
-// Module 12379 (Breadcrumbs)
-import "result";
+// Module 12401 (Breadcrumbs)
+import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_4;
-let closure_5;
-let require = arg1;
-({ jsx: closure_4, jsxs: closure_5 } = jsxProd);
-_createForOfIteratorHelperLoose = { container: { flex: 0, alignSelf: "stretch", marginBottom: 16, paddingHorizontal: 16 }, title: { lineHeight: 16, marginBottom: 8 }, breadCrumbItemContainer: { flexDirection: "row", justifyContent: "flex-start", marginBottom: 8, marginEnd: 32, overflow: "visible" } };
-_createForOfIteratorHelperLoose = { marginStart: 2, marginTop: 8, width: 4, height: 4, borderRadius: 2, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BRAND };
-_createForOfIteratorHelperLoose.breadCrumbDot = _createForOfIteratorHelperLoose;
-let obj1 = { position: "absolute", width: 2, top: 10, bottom: -12, left: 3, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWEST };
-_createForOfIteratorHelperLoose.breadCrumbBar = obj1;
-_createForOfIteratorHelperLoose.breadCrumbText = { marginStart: 8, lineHeight: 20 };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+let c4;
+let c5;
+const require = arg1;
+({ jsx: c4, jsxs: c5 } = jsxProd);
+createCacheKey = { container: { flex: 0, alignSelf: "stretch", marginBottom: 16, paddingHorizontal: 16 }, title: { lineHeight: 16, marginBottom: 8 }, breadCrumbItemContainer: { flexDirection: "row", justifyContent: "flex-start", marginBottom: 8, marginEnd: 32, overflow: "visible" }, breadCrumbDot: null, breadCrumbBar: null, breadCrumbText: null };
+createCacheKey = { marginStart: 2, marginTop: 8, width: 4, height: 4, borderRadius: 2, backgroundColor: require("Themes").colors.BACKGROUND_BRAND };
+createCacheKey[3] = createCacheKey;
+createCacheKey[4] = { position: "absolute", width: 2, top: 10, bottom: -12, left: 3, backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOWEST };
+createCacheKey[5] = { marginStart: 8, lineHeight: 20 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+const obj1 = { position: "absolute", width: 2, top: 10, bottom: -12, left: 3, backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOWEST };
 const result = require("jsxProd").fileFinishedImporting("modules/in_app_reports/native/components/InAppReportsBreadCrumbs.tsx");
 
 export default function Breadcrumbs(element) {
   element = element.element;
-  let obj = Object.create(null);
-  obj.element = 0;
-  obj.menuName = 0;
+  let _require;
   let found;
-  const merged = Object.assign(element, obj);
-  let tmp3 = _createForOfIteratorHelperLoose();
-  const require = tmp3;
+  const merged = Object.assign(element, Object.create(null));
+  const tmp2 = createCacheKey();
+  _require = tmp2;
   if (null != element) {
     if ("breadcrumbs" === element.type) {
-      obj = found(22);
+      let obj = found(12);
       found = obj.flatMap(merged.history, (destination) => {
         let tmp;
         [tmp] = destination.destination;
         const multiSelect = destination.multiSelect;
-        const items = [null, null];
         let state;
-        if (null != multiSelect) {
+        if (multiSelect != null) {
           state = multiSelect.state;
         }
-        if (null == state) {
+        if (state == null) {
           state = {};
         }
+        const items = [null, null];
         const values = Object.values(state);
         if (values.length > 0) {
           items[0] = values.join(", ");
@@ -59,57 +57,59 @@ export default function Breadcrumbs(element) {
       if (0 === found.length) {
         return null;
       } else {
-        obj = { style: tmp3.container };
-        let map = require(4161) /* Text */.Text;
-        let obj1 = { style: tmp3.title, accessibilityRole: "header", variant: "text-xs/bold" };
-        const REPORT_TO_MOD = require(7672) /* set */.ReportMenuTypeSets.REPORT_TO_MOD;
+        obj = { style: null, children: null };
+        obj[0] = tmp2.container;
+        let map = _require(4185).Text;
+        obj = { style: null, accessibilityRole: "header", variant: "text-xs/bold", children: null };
+        obj[0] = tmp2.title;
+        const REPORT_TO_MOD = _require(7695).ReportMenuTypeSets.REPORT_TO_MOD;
         const hasItem = REPORT_TO_MOD.has(element.menuName);
-        const intl = require(1212) /* getSystemLocale */.intl;
+        const intl = _require(1236).intl;
         const string = intl.string;
         if (hasItem) {
-          let stringResult = string(found(2299)["6mx/DP"]);
+          let stringResult = string(_6mx_DP);
         } else {
-          stringResult = string(tmp17(1212).t["+3V9Tp"]);
+          stringResult = string(tmp11(1236).t["+3V9Tp"]);
         }
-        obj1.children = stringResult;
-        obj1 = [, ];
-        obj1[0] = closure_4(map, obj1);
+        obj[3] = stringResult;
+        obj = [, ];
+        obj[0] = closure_4(map, obj);
         map = found.map;
-        obj1[1] = map((children) => {
-          let obj = { style: tmp3.breadCrumbItemContainer };
-          tmp3 = null;
+        obj[1] = map((children) => {
+          let obj = { style: _undefined.breadCrumbItemContainer, children: null };
+          let tmp4 = null;
           if (arg1 !== found.length - 1) {
-            obj = { style: tmp3.breadCrumbBar };
-            tmp3 = outer1_4(outer1_3, obj);
+            obj = { style: null };
+            obj[0] = tmp3.breadCrumbBar;
+            tmp4 = outer1_4(tmp2, obj);
           }
-          const items = [tmp3, , ];
+          const items = [tmp4, , ];
           obj = { style: tmp3.breadCrumbDot };
           items[1] = outer1_4(outer1_3, obj);
-          const obj1 = { lineClamp: 2, ellipsizeMode: "tail", style: tmp3.breadCrumbText, variant: "text-md/medium", children };
-          items[2] = outer1_4(tmp3(outer1_2[6]).Text, obj1);
-          obj.children = items;
+          items[2] = outer1_4(_undefined(outer1_2[6]).Text, { lineClamp: 2, ellipsizeMode: "tail", style: _undefined.breadCrumbText, variant: "text-md/medium", children });
+          obj[1] = items;
           return outer1_5(outer1_3, obj, "" + children + "+" + arg1);
         });
-        obj.children = obj1;
+        obj[1] = obj;
         closure_5(View, obj);
-        const tmp11 = closure_5;
-        const tmp12 = View;
-        const tmp13 = closure_4;
-        const tmp13Result = closure_4(map, obj1);
-        tmp17 = require;
+        const tmp10 = closure_4;
+        const tmp10Result = closure_4(map, obj);
+        tmp11 = _require;
+        const tmp8 = closure_5;
+        const tmp9 = View;
       }
       const flatMapResult = obj.flatMap(merged.history, (destination) => {
         let tmp;
         [tmp] = destination.destination;
         const multiSelect = destination.multiSelect;
-        const items = [null, null];
         let state;
-        if (null != multiSelect) {
+        if (multiSelect != null) {
           state = multiSelect.state;
         }
-        if (null == state) {
+        if (state == null) {
           state = {};
         }
+        const items = [null, null];
         const values = Object.values(state);
         if (values.length > 0) {
           items[0] = values.join(", ");
@@ -119,6 +119,7 @@ export default function Breadcrumbs(element) {
         }
         return items;
       });
+      tmp6 = found;
     }
   }
   return null;

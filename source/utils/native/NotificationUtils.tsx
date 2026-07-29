@@ -1,19 +1,19 @@
-// Module ID: 11489
-// Function ID: 89199
-// Dependencies: [5, 27, 11480, 653, 11483, 675, 10670, 10250, 2]
+// Module ID: 11513
+// Function ID: 11514
+// Dependencies: [5, 17, 11504, 676, 11507, 698, 10694, 10271, 2]
 
-// Module 11489
-import expandLocation from "expandLocation";
+// Module 11513
+import expandEventProperties from "expandEventProperties";
 import { NativeModules } from "get ActivityIndicator";
-import { PermissionStateType } from "_isNativeReflectConstruct";
+import { PermissionStateType } from "set";
 import { AnalyticEvents } from "ME";
 
 const require = arg1;
-let result = require("_isNativeReflectConstruct").fileFinishedImporting("utils/native/NotificationUtils.tsx");
+let result = require("set").fileFinishedImporting("utils/native/NotificationUtils.tsx");
 
 export default {
   hasPermission() {
-    return importDefault(10670).requestPermissions((badge) => {
+    return importDefault(10694).requestPermissions((badge) => {
       let _alert;
       let sound;
       ({ alert: _alert, sound } = badge);
@@ -28,11 +28,11 @@ export default {
   },
   requestPermission(arg0) {
     const _require = arg0;
-    let result = _require(11483).setPushPermissionState(PermissionStateType.REQUESTED);
-    let obj = _require(11483);
-    importDefault(675).track(AnalyticEvents.PERMISSIONS_REQUESTED, { type: "notification" });
-    const obj2 = importDefault(675);
-    const permissions = importDefault(10670).requestPermissions();
+    let result = _require(11507).setPushPermissionState(PermissionStateType.REQUESTED);
+    let obj = _require(11507);
+    importDefault(698).track(AnalyticEvents.PERMISSIONS_REQUESTED, { type: "notification" });
+    const obj2 = importDefault(698);
+    const permissions = importDefault(10694).requestPermissions();
     permissions.then((sound) => {
       let _alert;
       let badge;
@@ -43,32 +43,62 @@ export default {
       if (!_alert) {
         _alert = badge;
       }
-      let obj = outer1_1(outer1_2[5]);
-      obj = { type: "notification" };
       let str = "denied";
       if (_alert) {
         str = "accepted";
       }
-      obj.action = str;
-      obj.track(outer1_6.PERMISSIONS_ACKED, obj);
+      outer1_1(outer1_2[5]).track(outer1_6.PERMISSIONS_ACKED, { type: "notification", action: str });
       const NativePermissionManager = outer1_4.NativePermissionManager;
       const notificationAuthorizationStatus = NativePermissionManager.getNotificationAuthorizationStatus();
-      notificationAuthorizationStatus.then((authorizationStatus) => {
-        if (null != authorizationStatus) {
-          const result = callback(outer2_2[4]).updateNotificationAuthorizationStatus(authorizationStatus);
-          const obj = callback(outer2_2[4]);
+      notificationAuthorizationStatus.then((closure_0) => {
+        if (null != closure_0) {
+          const result = callback(table[4]).updateNotificationAuthorizationStatus(closure_0);
+          const obj = callback(table[4]);
         }
       });
       if (null != _alert) {
-        if (null != callback) {
+        if (callback != null) {
           callback(_alert);
         }
       }
     });
   },
   showNotification() {
-    // CreateGeneratorClosureLongIndex (0x67)
-    return callback(tmp)();
+    return callback(function*() {
+      if (c0 === 2) {
+        c0 = 3;
+        HermesBuiltin.throwTypeError();
+      } else if (tmp3 === 3) {
+        if (arg0 === 1) {
+          throw arg1;
+        } else if (arg0 === 2) {
+          let obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
+        } else {
+          return { value: "HermesInternal", done: null };
+        }
+      } else {
+        try {
+          c0 = 2;
+          if (arg0 === 1) {
+            c0 = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            c0 = 3;
+            obj = { value: null, done: true };
+            obj[0] = arg1;
+            return obj;
+          } else {
+            c0 = 3;
+            return { value: "HermesInternal", done: null };
+          }
+        } catch (tmp4) {
+          c0 = tmp;
+          throw tmp4;
+        }
+      }
+    })();
   },
   shouldRequestNotification: true,
   playNotificationSound(arg0) {
@@ -76,6 +106,6 @@ export default {
     if (arg1 === undefined) {
       num = 1;
     }
-    require(10250) /* createSound */.playSound(arg0, num, undefined, arg2);
+    require(10271) /* createSoundForPack */.playSound(arg0, num, undefined, arg2);
   }
 };

@@ -1,23 +1,23 @@
-// Module ID: 9892
-// Function ID: 76526
+// Module ID: 9914
+// Function ID: 9915
 // Name: NoResults
-// Dependencies: [31, 27, 33, 4165, 4161, 2]
+// Dependencies: [19, 17, 21, 4189, 4185, 2]
 // Exports: default
 
-// Module 9892 (NoResults)
-import "result";
+// Module 9914 (NoResults)
+import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_2;
-let closure_3;
-let closure_4;
-let closure_5;
+let c3;
+let c4;
+let c5;
+let obj1;
 const require = arg1;
-({ View: closure_2, ScrollView: closure_3 } = get_ActivityIndicator);
-({ jsx: closure_4, jsxs: closure_5 } = jsxProd);
-let closure_6 = _createForOfIteratorHelperLoose.createStyles({ headerContainer: { paddingHorizontal: 16 }, container: { flex: 1, alignItems: "center", justifyContent: "center", paddingHorizontal: 16, paddingBottom: 16, paddingTop: 32 }, image: { marginBottom: 12 }, textContainer: { justifyContent: "center", alignItems: "center" }, text: { textAlign: "center", marginTop: 4 }, fullHeightContentContainer: { paddingBottom: 0, paddingTop: 0 }, fullHeightScrollContent: { flexGrow: 1 } });
+({ View: obj1, ScrollView: c3 } = get_ActivityIndicator);
+({ jsx: c4, jsxs: c5 } = jsxProd);
+let closure_6 = createCacheKey.createStyles({ headerContainer: { paddingHorizontal: 16 }, container: { flex: 1, alignItems: "center", justifyContent: "center", paddingHorizontal: 16, paddingBottom: 16, paddingTop: 32 }, image: { marginBottom: 12 }, textContainer: { justifyContent: "center", alignItems: "center" }, text: { textAlign: "center", marginTop: 4 }, fullHeightContentContainer: { paddingBottom: 0, paddingTop: 0 }, fullHeightScrollContent: { flexGrow: 1 } });
 const result = require("jsxProd").fileFinishedImporting("modules/main_tabs_v2/native/shared_components/user_list/NoResults.tsx");
 
 export default function NoResults(illustration) {
@@ -33,40 +33,42 @@ export default function NoResults(illustration) {
   }
   illustration = illustration.illustration;
   const tmp = callback2();
-  let obj = { style: items, alwaysBounceVertical: false };
+  let obj = { style: items, alwaysBounceVertical: false, contentContainerStyle: null, children: null };
   items = [tmp.headerContainer];
   let fullHeightScrollContent = fullHeight;
   if (fullHeight) {
     fullHeightScrollContent = tmp.fullHeightScrollContent;
   }
-  obj.contentContainerStyle = fullHeightScrollContent;
-  obj = {};
+  obj[2] = fullHeightScrollContent;
   const items1 = [tmp.container, , ];
   if (fullHeight) {
     fullHeight = tmp.fullHeightContentContainer;
   }
+  obj = { style: items1, children: null };
   items1[1] = fullHeight;
   items1[2] = containerStyle;
-  obj.style = items1;
-  let tmp6 = null != illustration;
-  if (tmp6) {
-    obj = { style: tmp.image, children: callback(illustration, {}) };
-    tmp6 = callback(closure_2, obj);
+  let tmp5 = null != illustration;
+  if (tmp5) {
+    obj = { style: null, children: null };
+    obj[0] = tmp.image;
+    obj[1] = callback(illustration, {});
+    tmp5 = callback(tmp4, obj);
   }
-  const items2 = [tmp6, ];
-  const obj1 = { style: tmp.textContainer };
-  const obj2 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", style: tmp.text, children: title };
-  const items3 = [callback(require(4161) /* Text */.Text, obj2), ];
-  let tmp11 = null;
+  const items2 = [tmp5, ];
+  const obj1 = { style: tmp.textContainer, children: null };
+  const items3 = [callback(require(4185) /* Text */.Text, { variant: "text-md/semibold", color: "mobile-text-heading-primary", style: tmp.text, children: title }), ];
+  let tmp7Result = null;
   if (null != subtitle) {
-    const obj3 = { variant: "text-xs/medium", color: "interactive-text-default", style: tmp.text, children: subtitle };
-    tmp11 = callback(require(4161) /* Text */.Text, obj3);
+    const obj3 = { variant: "text-xs/medium", color: "interactive-text-default", style: null, children: null };
+    obj3[2] = tmp.text;
+    obj3[3] = subtitle;
+    tmp7Result = callback(require(4185) /* Text */.Text, obj3);
   }
-  items3[1] = tmp11;
-  obj1.children = items3;
+  items3[1] = tmp7Result;
+  obj1[1] = items3;
   items2[1] = closure_5(closure_2, obj1);
-  obj.children = items2;
+  obj[1] = items2;
   const items4 = [closure_5(closure_2, obj), children];
-  obj.children = items4;
+  obj[3] = items4;
   return closure_5(closure_3, obj);
 };

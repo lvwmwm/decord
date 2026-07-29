@@ -1,18 +1,18 @@
-// Module ID: 15441
-// Function ID: 117627
+// Module ID: 15474
+// Function ID: 15475
 // Name: SearchFreezeContainer
-// Dependencies: [31, 27, 10081, 33, 4165, 15359, 566, 15442, 15525, 2]
+// Dependencies: [19, 17, 10102, 21, 4189, 15392, 589, 15475, 15559, 2]
 
-// Module 15441 (SearchFreezeContainer)
+// Module 15474 (SearchFreezeContainer)
 import { View } from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import prototype from "prototype";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import importAllResult from "result";
+import createCacheKey from "createCacheKey";
+import importAllResult from "noop";
 
-let closure_5;
+let c5;
 let closure_6;
-let closure_7;
+let error;
 const require = arg1;
 function SearchFreezeContainer(visible) {
   let children;
@@ -20,27 +20,28 @@ function SearchFreezeContainer(visible) {
   visible = visible.visible;
   ({ children, containerStyle } = visible);
   const tmp = callback3();
-  let obj = { manualFreeze: !visible, placeholder: null };
+  let obj = { manualFreeze: !visible, placeholder: null, children: null };
+  const items = [containerStyle, ];
   obj = { style: items, "aria-hidden": !visible, children };
-  items = [containerStyle, visible ? tmp.visible : tmp.hidden];
-  obj.children = callback(View, obj);
-  return callback(importDefault(15359), obj);
+  items[1] = visible ? tmp.visible : tmp.hidden;
+  obj[2] = closure_5(View, obj);
+  return closure_5(importDefault(15392), obj);
 }
-({ jsx: closure_5, Fragment: closure_6, jsxs: closure_7 } = jsxProd);
-let closure_8 = _createForOfIteratorHelperLoose.createStyles({ hidden: { opacity: 0 }, visible: { flex: 1 } });
-const memoResult = require("result").memo((width) => {
+({ jsx: c5, Fragment: closure_6, jsxs: error } = jsxProd);
+let closure_8 = createCacheKey.createStyles({ hidden: { opacity: 0 }, visible: { flex: 1 } });
+const memoResult = require("noop").memo((width) => {
   const searchContext = width.searchContext;
   const containerStyle = width.containerStyle;
-  let obj = searchContext(566);
-  const items = [_isNativeReflectConstruct];
+  let obj = searchContext(589);
+  const items = [prototype];
   const items1 = [searchContext];
   const stateFromStores = obj.useStateFromStores(items, () => outer1_4.isAutocompleteVisible(searchContext), items1);
-  obj = {};
-  obj = { visible: !stateFromStores, containerStyle, children: callback(importDefault(15442), { searchContext, width: width.width }) };
-  const items2 = [callback(SearchFreezeContainer, obj), callback(SearchFreezeContainer, { visible: stateFromStores, containerStyle, children: callback(importDefault(15525), { searchContext }) })];
-  obj.children = items2;
+  obj = { children: null };
+  obj = { visible: !stateFromStores, containerStyle, children: callback(importDefault(15475), { searchContext, width: width.width }) };
+  const items2 = [callback(SearchFreezeContainer, obj), callback(SearchFreezeContainer, { visible: stateFromStores, containerStyle, children: callback(importDefault(15559), { searchContext }) })];
+  obj[0] = items2;
   return callback2(closure_6, obj);
 });
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/search/native/components/layout/SearchScreenLayout.tsx");
+const result = require("prototype").fileFinishedImporting("modules/search/native/components/layout/SearchScreenLayout.tsx");
 
 export default memoResult;

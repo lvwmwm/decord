@@ -1,26 +1,26 @@
-// Module ID: 15179
-// Function ID: 115384
+// Module ID: 15212
+// Function ID: 15213
 // Name: GenericUpsellActionSheet
-// Dependencies: [31, 27, 1345, 33, 4165, 689, 7928, 5221, 5119, 5481, 4161, 1273, 4578, 2]
+// Dependencies: [19, 17, 1369, 21, 4189, 712, 7953, 5243, 5141, 5499, 4185, 1297, 4600, 2]
 // Exports: default
 
-// Module 15179 (GenericUpsellActionSheet)
-import "result";
+// Module 15212 (GenericUpsellActionSheet)
+import "noop";
 import { View } from "get ActivityIndicator";
 import { ContentDismissActionType } from "ContentDismissActionType";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_5;
+let c5;
 let closure_6;
 const require = arg1;
-({ jsx: closure_5, jsxs: closure_6 } = jsxProd);
-_createForOfIteratorHelperLoose = { image: { width: "100%" } };
-_createForOfIteratorHelperLoose = { paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16, marginBottom: require("_createForOfIteratorHelperLoose").space.PX_16 };
-_createForOfIteratorHelperLoose.content = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.description = { marginBottom: require("_createForOfIteratorHelperLoose").space.PX_16, flex: 1 };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-const obj1 = { marginBottom: require("_createForOfIteratorHelperLoose").space.PX_16, flex: 1 };
+({ jsx: c5, jsxs: closure_6 } = jsxProd);
+createCacheKey = { image: { width: "100%" }, content: null, description: null };
+createCacheKey = { paddingHorizontal: require("Themes").space.PX_16, marginBottom: require("Themes").space.PX_16 };
+createCacheKey[1] = createCacheKey;
+createCacheKey[2] = { marginBottom: require("Themes").space.PX_16, flex: 1 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+const obj1 = { marginBottom: require("Themes").space.PX_16, flex: 1 };
 const result = require("ContentDismissActionType").fileFinishedImporting("modules/guild_role_subscriptions/native/feature_education/GenericUpsellActionSheet.tsx");
 
 export default function GenericUpsellActionSheet(markAsDismissed) {
@@ -33,8 +33,8 @@ export default function GenericUpsellActionSheet(markAsDismissed) {
   let onCTAPress;
   markAsDismissed = markAsDismissed.markAsDismissed;
   ({ imageSource, header, body, onCTAPress, cta } = markAsDismissed);
-  const tmp = _createForOfIteratorHelperLoose();
-  let obj = markAsDismissed(7928);
+  const tmp = createCacheKey();
+  let obj = markAsDismissed(7953);
   bottomSheetRef = obj.useBottomSheetRef();
   ({ bottomSheetRef, bottomSheetClose } = bottomSheetRef);
   obj = {
@@ -43,20 +43,17 @@ export default function GenericUpsellActionSheet(markAsDismissed) {
     onDismiss() {
       return markAsDismissed(outer1_4.UNKNOWN);
     },
-    handleDisabled: true
+    handleDisabled: true,
+    header: null,
+    children: null
   };
-  obj = {};
-  const items = [callback(importDefault(5119), { source: imageSource, style: tmp.image }), callback(markAsDismissed(5481).ActionSheetHeaderBar, { variant: "floating", onPress: bottomSheetClose })];
-  obj.children = items;
-  obj.header = callback2(View, obj);
-  const obj2 = { style: tmp.content };
-  const obj3 = { accessibilityRole: "header", variant: "heading-xl/medium", color: "mobile-text-heading-primary", children: header };
-  const items1 = [callback(markAsDismissed(4161).Text, obj3), callback(markAsDismissed(1273).Spacer, { size: 12 }), , ];
-  const obj4 = { style: tmp.description, variant: "text-sm/medium", color: "text-default", children: body };
-  items1[2] = callback(markAsDismissed(4161).Text, obj4);
-  const obj5 = { variant: "primary", grow: true, onPress: onCTAPress, text: cta };
-  items1[3] = callback(markAsDismissed(4578).Button, obj5);
-  obj2.children = items1;
-  obj.children = callback2(View, obj2);
-  return callback(markAsDismissed(5221).BottomSheet, obj);
+  obj = { children: null };
+  const items = [callback(importDefault(5141), { source: imageSource, style: tmp.image }), callback(markAsDismissed(5499).ActionSheetHeaderBar, { variant: "floating", onPress: bottomSheetClose })];
+  obj[0] = items;
+  obj[4] = callback2(View, obj);
+  const obj2 = { style: tmp.content, children: null };
+  const items1 = [callback(markAsDismissed(4185).Text, { accessibilityRole: "header", variant: "heading-xl/medium", color: "mobile-text-heading-primary", children: header }), callback(markAsDismissed(1297).Spacer, { size: 12 }), callback(markAsDismissed(4185).Text, { style: tmp.description, variant: "text-sm/medium", color: "text-default", children: body }), callback(markAsDismissed(4600).Button, { variant: "primary", grow: true, onPress: onCTAPress, text: cta })];
+  obj2[1] = items1;
+  obj[5] = callback2(View, obj2);
+  return callback(markAsDismissed(5243).BottomSheet, obj);
 };

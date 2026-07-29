@@ -1,129 +1,131 @@
-// Module ID: 14817
-// Function ID: 112782
-// Dependencies: [57, 31, 27, 4569, 33, 4165, 689, 14814, 4009, 7611, 5538, 14816, 13674, 665, 2]
+// Module ID: 14843
+// Function ID: 14844
+// Dependencies: [32, 19, 17, 4591, 21, 4189, 712, 14840, 4033, 7634, 5556, 14842, 13695, 688, 2]
 
-// Module 14817
+// Module 14843
 import _slicedToArray from "_slicedToArray";
-import importAllResult from "result";
+import importAllResult from "noop";
 import { View } from "get ActivityIndicator";
 import useVisualEffectViewOverrides from "useVisualEffectViewOverrides";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_10;
+let c10;
+let c9;
 let closure_6;
-let closure_7;
-let closure_8;
-let closure_9;
+let error;
+let metroImportAll;
 const require = arg1;
-({ getVisualEffectViewOverrides: closure_6, setVisualEffectViewOverides: closure_7 } = useVisualEffectViewOverrides);
-({ jsx: closure_8, Fragment: closure_9, jsxs: closure_10 } = jsxProd);
-let obj = {};
-obj = { width: require("_createForOfIteratorHelperLoose").space.PX_32, height: require("_createForOfIteratorHelperLoose").space.PX_32, backgroundColor: require("_createForOfIteratorHelperLoose").unsafe_rawColors.PRIMARY_700, borderRadius: require("_createForOfIteratorHelperLoose").radii.sm };
-obj.tintColor = obj;
-let closure_11 = _createForOfIteratorHelperLoose.createStyles(obj);
+let c4 = importAllResult;
+({ getVisualEffectViewOverrides: closure_6, setVisualEffectViewOverides: error } = useVisualEffectViewOverrides);
+({ jsx: metroImportAll, Fragment: c9, jsxs: c10 } = jsxProd);
+let obj = { tintColor: null };
+obj = { width: require("Themes").space.PX_32, height: require("Themes").space.PX_32, backgroundColor: require("Themes").unsafe_rawColors.PRIMARY_700, borderRadius: require("Themes").radii.sm };
+obj[0] = obj;
+let closure_11 = createCacheKey.createStyles(obj);
 const memoResult = importAllResult.memo(function VEVOOPropBlurTintRgba() {
-  let obj = _require(14814);
+  let require;
+  let tmp7;
+  let obj = require(14840) /* VisualEffectViewOverrideOverlay_ */;
   const visualEffectViewOverrideSharedStyles = obj.useVisualEffectViewOverrideSharedStyles();
-  const tmp4 = first2(importAllResult.useState(false), 2);
-  const first = tmp4[0];
-  _require = tmp4[1];
-  const blurTintRgbaOverrideHex = callback().blurTintRgbaOverrideHex;
-  let str = "black";
-  if (null != blurTintRgbaOverrideHex) {
-    str = blurTintRgbaOverrideHex;
-  }
-  const tmp6 = first2(importAllResult.useState(str), 2);
-  const first1 = tmp6[0];
-  const dependencyMap = tmp6[1];
-  const tmp8 = first2(importAllResult.useState(callback().blurTintRgbaOverrideOpacity), 2);
-  first2 = tmp8[0];
+  let obj1 = importAllResult;
   let tmp = callback3();
-  let closure_5 = importAllResult.useCallback((colorHex, opacity) => {
-    if (null != colorHex) {
-      dependencyMap(colorHex);
+  [tmp7, require] = first1(importAllResult.useState(false), 2);
+  let str = callback().blurTintRgbaOverrideHex;
+  if (str == null) {
+    str = "black";
+  }
+  let tmp5Result = tmp5(importAllResult.useState(str), 2);
+  const first = tmp5Result[0];
+  const dependencyMap = tmp5Result[1];
+  tmp5Result = tmp5(obj1.useState(callback().blurTintRgbaOverrideOpacity), 2);
+  first1 = tmp5Result[0];
+  const tmp6 = first1(importAllResult.useState(false), 2);
+  const tmp8 = callback;
+  let closure_5 = obj1.useCallback((blurTintRgbaOverrideHex, blurTintRgbaOverrideOpacity) => {
+    if (null != blurTintRgbaOverrideHex) {
+      dependencyMap(blurTintRgbaOverrideHex);
     }
-    if (null != opacity) {
-      callback2(opacity);
+    if (null != blurTintRgbaOverrideOpacity) {
+      callback2(blurTintRgbaOverrideOpacity);
     }
     let hexToRgbaStringResult;
-    if (null != colorHex) {
-      if (null != opacity) {
-        let obj = callback(4009);
-        hexToRgbaStringResult = obj.hexToRgbaString(colorHex, opacity);
+    if (null != blurTintRgbaOverrideHex) {
+      if (null != blurTintRgbaOverrideOpacity) {
+        let obj = outer1_0(4033);
+        hexToRgbaStringResult = obj.hexToRgbaString(blurTintRgbaOverrideHex, blurTintRgbaOverrideOpacity);
       }
     }
     obj = {};
     const merged = Object.assign(outer1_6());
-    obj["blurTintRgbaOverrideOpacity"] = opacity;
-    obj["blurTintRgbaOverrideHex"] = colorHex;
-    obj["blurTintRgbaOverride"] = hexToRgbaStringResult;
+    obj.blurTintRgbaOverrideOpacity = blurTintRgbaOverrideOpacity;
+    obj.blurTintRgbaOverrideHex = blurTintRgbaOverrideHex;
+    obj.blurTintRgbaOverride = hexToRgbaStringResult;
     if (null == hexToRgbaStringResult) {
       obj = {};
       const merged1 = Object.assign(obj);
-      obj["blurTintRgbaOverride"] = "rgba(0, 0, 0, 0)";
+      obj.blurTintRgbaOverride = "rgba(0, 0, 0, 0)";
       outer1_7(obj);
       const _setTimeout = setTimeout;
       const timerId = setTimeout(() => {
-        outer2_7(obj);
+        outer1_7(obj);
       });
     } else {
       outer1_7(obj);
     }
   }, []);
-  obj = { style: items, labelStyle: visualEffectViewOverrideSharedStyles.zeroHeight, leadingStyle: visualEffectViewOverrideSharedStyles.enabledSwitchStyle };
+  obj = { style: items, labelStyle: visualEffectViewOverrideSharedStyles.zeroHeight, leadingStyle: visualEffectViewOverrideSharedStyles.enabledSwitchStyle, leading: null, subLabel: null, disabled: null, onPress: null };
   items = [visualEffectViewOverrideSharedStyles.zeroPaddingVertical];
   obj = {
-    value: first,
+    value: tmp7,
     onValueChange(arg0) {
       callback(arg0);
       if (arg0) {
-        tmp2(first1, first2);
+        tmp2(first, first1);
       } else {
         tmp2(undefined, undefined);
       }
     }
   };
-  obj.leading = callback2(_require(5538).FormSwitch, obj);
-  const obj1 = {};
-  const obj2 = { style: visualEffectViewOverrideSharedStyles.zeroPadding, label: "Blur Tint" };
-  const items1 = [tmp.tintColor, { backgroundColor: first1 }];
-  obj2.trailing = callback2(closure_5, { style: items1 });
-  const items2 = [callback2(_require(7611).FormRow, obj2), ];
-  const obj3 = { style: visualEffectViewOverrideSharedStyles.zeroPaddingHorizontal, disabled: !first };
-  let toFixedResult;
-  if (null != first2) {
-    toFixedResult = first2.toFixed(3);
+  obj[3] = callback2(require(5556) /* FormSwitch */.FormSwitch, obj);
+  obj1 = { style: visualEffectViewOverrideSharedStyles.zeroPadding, label: "Blur Tint", trailing: null };
+  const items1 = [tmp.tintColor, { backgroundColor: first }];
+  obj1[2] = callback2(closure_5, { style: items1 });
+  const items2 = [callback2(require(7634) /* Form */.FormRow, obj1), ];
+  const obj2 = { style: visualEffectViewOverrideSharedStyles.zeroPaddingHorizontal, disabled: !tmp7, label: null, subLabel: null };
+  let str2;
+  if (first1 != null) {
+    str2 = first1.toFixed(3);
   }
-  let str2 = "";
-  if (null != toFixedResult) {
-    str2 = toFixedResult;
+  if (str2 == null) {
+    str2 = "";
   }
-  obj3.label = "Blur Tint Opacity " + str2;
-  const ref = tmp8[1].useRef(first2);
-  const tmp11 = closure_10;
-  const tmp12 = closure_9;
-  obj3.subLabel = callback2(first1(14816), {
-    disabled: !first,
-    initialValue: tmp8[1].useRef(first2),
+  const obj3 = { children: null };
+  obj2[2] = "Blur Tint Opacity " + str2;
+  const ref = obj1.useRef(first1);
+  const tmp14 = closure_10;
+  const tmp15 = closure_9;
+  obj2[3] = callback2(first(14842), {
+    disabled: !tmp7,
+    initialValue: obj1.useRef(first1),
     onValueChange(arg0) {
-      callback3(first1, arg0);
+      callback3(first, arg0);
     }
   });
-  items2[1] = callback2(_require(7611).FormRow, obj3);
-  obj1.children = items2;
-  obj.subLabel = tmp11(tmp12, obj1);
-  obj.disabled = !first;
-  obj.onPress = function onPress() {
-    const obj = {};
-    const tmp = first1(13674);
-    obj.color = callback(665).hex2int(first1);
-    obj.onSelect = function onSelect(color) {
-      outer1_5(callback(table[13]).int2hex(color), outer1_3);
+  items2[1] = callback2(require(7634) /* Form */.FormRow, obj2);
+  obj3[0] = items2;
+  obj[4] = tmp14(tmp15, obj3);
+  obj[5] = !tmp7;
+  obj[6] = function onPress() {
+    const obj = { color: null, onSelect: null };
+    const tmp = first(13695);
+    obj[0] = outer1_0(688).hex2int(first);
+    obj[1] = function onSelect(color) {
+      callback(outer1_0(outer1_2[13]).int2hex(color), _slicedToArray);
     };
     tmp(obj);
   };
-  return callback2(_require(7611).FormRow, obj);
+  return callback2(require(7634) /* Form */.FormRow, obj);
 });
 const result = require("get ActivityIndicator").fileFinishedImporting("modules/visual_effect_view/native/overrides/VEVOOPropBlurTintRgba.tsx");
 

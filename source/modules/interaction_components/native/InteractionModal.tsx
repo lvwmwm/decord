@@ -1,140 +1,132 @@
-// Module ID: 16181
-// Function ID: 125222
+// Module ID: 16216
+// Function ID: 16217
 // Name: onClose
-// Dependencies: [31, 27, 13439, 33, 4165, 689, 4372, 16182, 5193, 1273, 1392, 4161, 4695, 1212, 5153, 7868, 16183, 4578, 2]
+// Dependencies: [19, 17, 13462, 21, 4189, 712, 4395, 16217, 5215, 1297, 1416, 4185, 4717, 1236, 5175, 7891, 16218, 4600, 2]
 // Exports: openInteractionModal
 
-// Module 16181 (onClose)
-import "result";
-import get_ActivityIndicator from "get ActivityIndicator";
-import { InteractionModalState } from "_isNativeReflectConstruct";
+// Module 16216 (onClose)
+import "noop";
+import get_ActivityIndicator from "Button";
+import { InteractionModalState } from "getModalState";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_3;
-let closure_4;
+let c3;
+let c4;
 let closure_6;
-let closure_7;
+let error;
 const require = arg1;
 function onClose() {
-  return importDefault(4372).popWithKey(interaction_modal);
+  return importDefault(4395).popWithKey(interaction_modal);
 }
 class InteractionModal {
   constructor(arg0) {
-    tmp = c9();
-    obj = require("useApplicationInfo");
+    tmp = interaction_modal();
+    tmp2 = closure_0;
+    tmp3 = closure_2;
+    obj = require("getData");
     modalState = obj.useModalState(global, onClose);
     error = modalState.error;
     ({ components, applicationIconURL, applicationName, submissionState, validators, validationErrors, setValidationErrors, onSubmit } = modalState);
     insets = require("useSafeAreaInsetsKeyboardAware")({ includeKeyboardHeight: true }).insets;
-    obj = { style: items };
+    tmp5 = jsxs;
+    tmp6 = View;
+    obj = { style: items, children: null };
     items = [, ];
     items[0] = tmp.modal;
     items[1] = { paddingTop: insets.top, paddingBottom: insets.bottom };
-    obj1 = { style: tmp.header };
-    tmp3 = jsxs;
-    tmp4 = View;
-    obj2 = { style: tmp.icon };
+    obj1 = { style: tmp.header, children: null };
+    tmp7 = jsx;
+    obj2 = { style: tmp.icon, source: null, size: null };
     obj5 = require("getAvatarURL");
-    obj2.source = obj5.makeSource(applicationIconURL);
-    obj2.size = require("Button").AvatarSizes.SMALL;
+    obj2[1] = obj5.makeSource(applicationIconURL);
+    obj2[2] = require("Button").AvatarSizes.SMALL;
     items1 = [, , ];
     items1[0] = jsx(require("Button").Avatar, obj2);
-    obj3 = { style: tmp.titleView, children: jsx(require("Text").Text, obj4) };
-    obj4 = { variant: "heading-xl/semibold", color: "mobile-text-heading-primary" };
-    obj4.children = global.title;
+    obj3 = { style: tmp.titleView, children: jsx(require("Text").Text, { variant: "heading-xl/semibold", color: "mobile-text-heading-primary", children: global.title }) };
     items1[1] = jsx(View, obj3);
-    obj5 = { accessibilityRole: "button" };
+    obj4 = { accessibilityRole: "button", accessibilityLabel: null, onPress: null, style: null, children: null };
     intl = require("getSystemLocale").intl;
-    obj5.accessibilityLabel = intl.string(require("getSystemLocale").t.cpT0Cq);
-    obj5.onPress = onClose;
-    obj5.style = tmp.closeButton;
-    obj6 = { color: tmp.closeIcon.color };
-    obj5.children = jsx(require("XSmallIcon").XSmallIcon, obj6);
-    items1[2] = jsx(require("PressableBase").PressableOpacity, obj5);
-    obj1.children = items1;
+    obj4[1] = intl.string(require("getSystemLocale").t.cpT0Cq);
+    obj4[2] = onClose;
+    obj4[3] = tmp.closeButton;
+    obj5 = { color: tmp.closeIcon.color };
+    obj4[4] = jsx(require("XSmallIcon").XSmallIcon, obj5);
+    items1[2] = jsx(require("PressableBase").PressableOpacity, obj4);
+    obj1[1] = items1;
     items2 = [, ];
     items2[0] = jsxs(View, obj1);
-    obj7 = { style: tmp.scroll, contentContainerStyle: tmp.modalContent, keyboardShouldPersistTaps: "handled" };
-    obj8 = {};
-    tmp9 = null;
-    tmp5 = jsxs;
-    tmp6 = ScrollView;
-    tmp7 = jsxs;
-    tmp8 = View;
+    obj6 = { style: tmp.scroll, contentContainerStyle: tmp.modalContent, keyboardShouldPersistTaps: "handled", children: null };
+    tmp7Result = null;
+    tmp8 = ScrollView;
     if (null != error) {
       str = "";
-      tmp9 = null;
+      tmp7Result = null;
       if ("" !== error) {
-        tmp10 = jsx;
-        tmp11 = View;
-        obj9 = {};
-        obj9.style = tmp.error;
-        tmp12 = jsx;
-        tmp13 = closure_0;
-        tmp14 = closure_2;
-        obj10 = {};
-        obj10.messageType = require("Button").HelpMessageTypes.ERROR;
-        obj10.children = error;
-        obj9.children = jsx(require("Button").HelpMessage, obj10);
-        tmp9 = jsx(View, obj9);
+        obj7 = { style: null, children: null };
+        obj7[0] = tmp.error;
+        obj8 = { messageType: null, children: null };
+        obj8[0] = require("Button").HelpMessageTypes.ERROR;
+        obj8[1] = error;
+        obj7[1] = tmp7(require("Button").HelpMessage, obj8);
+        tmp7Result = tmp7(tmp6, obj7);
       }
     }
+    obj9 = { children: null };
     items3 = [, ];
-    items3[0] = tmp9;
-    obj11 = {};
-    obj11.messageType = require("Button").HelpMessageTypes.WARNING;
+    items3[0] = tmp7Result;
+    obj10 = { messageType: null, children: null };
+    obj10[0] = require("Button").HelpMessageTypes.WARNING;
     intl2 = require("getSystemLocale").intl;
-    obj11.children = intl2.format(require("getSystemLocale").t["dSTy/w"], { applicationName });
-    items3[1] = jsx(require("Button").HelpMessage, obj11);
-    obj8.children = items3;
+    obj10[1] = intl2.format(require("getSystemLocale").t["dSTy/w"], { applicationName });
+    items3[1] = tmp7(require("Button").HelpMessage, obj10);
+    obj9[0] = items3;
     items4 = [, , ];
-    items4[0] = tmp7(tmp8, obj8);
-    obj12 = { modal: global, validators, validationErrors, setValidationErrors };
-    obj16 = require("renderComponents");
-    obj12.children = obj16.renderComponents(components);
-    items4[1] = jsx(require("isInteractionComponent").ComponentStateContextProvider, obj12);
-    obj13 = { style: tmp.footer };
-    obj14 = {};
+    items4[0] = tmp5(tmp6, obj9);
+    obj11 = { modal: global, validators, validationErrors, setValidationErrors, children: null };
+    tmp2Result = require("renderComponents");
+    obj11[4] = tmp2Result.renderComponents(components);
+    items4[1] = tmp7(require("isInteractionComponent").ComponentStateContextProvider, obj11);
+    obj12 = { style: tmp.footer, children: null };
+    obj13 = { text: null, loading: null, size: "lg", onPress: null };
     intl3 = require("getSystemLocale").intl;
-    obj14.text = intl3.string(require("getSystemLocale").t.geKm7t);
-    obj14.loading = submissionState === InteractionModalState.IN_FLIGHT;
-    obj14.size = "lg";
-    obj14.onPress = onSubmit;
-    obj13.children = jsx(require("Button").Button, obj14);
-    items4[2] = jsx(View, obj13);
-    obj7.children = items4;
-    items2[1] = tmp5(tmp6, obj7);
-    obj.children = items2;
-    return tmp3(tmp4, obj);
+    obj13[0] = intl3.string(require("getSystemLocale").t.geKm7t);
+    obj13[1] = submissionState === InteractionModalState.IN_FLIGHT;
+    obj13[3] = onSubmit;
+    obj12[1] = tmp7(require("Button").Button, obj13);
+    items4[2] = tmp7(tmp6, obj12);
+    obj6[3] = items4;
+    items2[1] = tmp5(tmp8, obj6);
+    obj[1] = items2;
+    return tmp5(tmp6, obj);
   }
 }
-({ View: closure_3, ScrollView: closure_4 } = get_ActivityIndicator);
-({ jsx: closure_6, jsxs: closure_7 } = jsxProd);
+({ View: c3, ScrollView: c4 } = get_ActivityIndicator);
+({ jsx: closure_6, jsxs: error } = jsxProd);
 const interaction_modal = "interaction_modal";
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW, flex: 1 };
-_createForOfIteratorHelperLoose.modal = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.scroll = { flex: 1 };
-_createForOfIteratorHelperLoose.modalContent = { flexGrow: 1, paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16, gap: require("_createForOfIteratorHelperLoose").space.PX_16 };
-let obj1 = { flexGrow: 1, paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16, gap: require("_createForOfIteratorHelperLoose").space.PX_16 };
-_createForOfIteratorHelperLoose.header = { flexDirection: "row", marginBottom: require("_createForOfIteratorHelperLoose").space.PX_16, paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16 };
-_createForOfIteratorHelperLoose.titleView = { flex: 1 };
-let obj2 = { flexDirection: "row", marginBottom: require("_createForOfIteratorHelperLoose").space.PX_16, paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16 };
-_createForOfIteratorHelperLoose.icon = { marginRight: require("_createForOfIteratorHelperLoose").space.PX_8 };
-let obj3 = { marginRight: require("_createForOfIteratorHelperLoose").space.PX_8 };
-_createForOfIteratorHelperLoose.footer = { marginTop: "auto", marginBottom: require("_createForOfIteratorHelperLoose").space.PX_16 };
-_createForOfIteratorHelperLoose.closeButton = { marginLeft: "auto" };
-let obj4 = { marginTop: "auto", marginBottom: require("_createForOfIteratorHelperLoose").space.PX_16 };
-_createForOfIteratorHelperLoose.closeIcon = { color: require("_createForOfIteratorHelperLoose").colors.TEXT_MUTED };
-let obj5 = { color: require("_createForOfIteratorHelperLoose").colors.TEXT_MUTED };
-_createForOfIteratorHelperLoose.error = { marginBottom: require("_createForOfIteratorHelperLoose").space.PX_16 };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-let obj6 = { marginBottom: require("_createForOfIteratorHelperLoose").space.PX_16 };
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/interaction_components/native/InteractionModal.tsx");
+createCacheKey = { modal: null, scroll: null, modalContent: null, header: null, titleView: null, icon: null, footer: null, closeButton: null, closeIcon: null, error: null };
+createCacheKey = { backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW, flex: 1 };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { flex: 1 };
+createCacheKey[2] = { flexGrow: 1, paddingHorizontal: require("Themes").space.PX_16, gap: require("Themes").space.PX_16 };
+let obj1 = { flexGrow: 1, paddingHorizontal: require("Themes").space.PX_16, gap: require("Themes").space.PX_16 };
+createCacheKey[3] = { flexDirection: "row", marginBottom: require("Themes").space.PX_16, paddingHorizontal: require("Themes").space.PX_16 };
+createCacheKey[4] = { flex: 1 };
+let obj2 = { flexDirection: "row", marginBottom: require("Themes").space.PX_16, paddingHorizontal: require("Themes").space.PX_16 };
+createCacheKey[5] = { marginRight: require("Themes").space.PX_8 };
+let obj3 = { marginRight: require("Themes").space.PX_8 };
+createCacheKey[6] = { marginTop: "auto", marginBottom: require("Themes").space.PX_16 };
+createCacheKey[7] = { marginLeft: "auto" };
+let obj4 = { marginTop: "auto", marginBottom: require("Themes").space.PX_16 };
+createCacheKey[8] = { color: require("Themes").colors.TEXT_MUTED };
+let obj5 = { color: require("Themes").colors.TEXT_MUTED };
+createCacheKey[9] = { marginBottom: require("Themes").space.PX_16 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let obj6 = { marginBottom: require("Themes").space.PX_16 };
+const result = require("getModalState").fileFinishedImporting("modules/interaction_components/native/InteractionModal.tsx");
 
 export default InteractionModal;
-export const openInteractionModal = function openInteractionModal(application) {
-  let arr = importDefault(4372);
-  arr = arr.push(InteractionModal, application, interaction_modal);
+export const openInteractionModal = function openInteractionModal(closure_0) {
+  let arr = importDefault(4395);
+  arr = arr.push(InteractionModal, closure_0, interaction_modal);
 };

@@ -1,13 +1,12 @@
-// Module ID: 3884
-// Function ID: 32168
+// Module ID: 3908
+// Function ID: 3909
 // Name: context
-// Dependencies: [31, 2]
+// Dependencies: [19, 2]
 
-// Module 3884 (context)
-import importAllResult from "result";
+// Module 3908 (context)
+import importAllResult from "noop";
 
-const obj = { reducedMotion: { enabled: false, rawValue: "no-preference" }, prefersCrossfades: false, forcedColors: { enabled: false, rawValue: "none" }, alwaysShowLinkDecorations: false, highContrastModeEnabled: false, keyboardModeEnabled: true, switchIconsEnabled: false };
-const context = require("result").createContext(obj);
+const context = require("noop").createContext({ reducedMotion: { enabled: false, rawValue: "no-preference" }, prefersCrossfades: false, forcedColors: { enabled: false, rawValue: "none" }, alwaysShowLinkDecorations: false, highContrastModeEnabled: false, keyboardModeEnabled: true, switchIconsEnabled: false });
 const result = require("set").fileFinishedImporting("../discord_common/js/packages/design/components/AccessibilityPreferencesContext/AccessibilityPreferencesContext.tsx");
 
 export const AccessibilityPreferencesContext = context;

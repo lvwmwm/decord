@@ -1,32 +1,25 @@
-// Module ID: 5805
-// Function ID: 50834
-// Name: CollectiblesMarketingBannerRecord
-// Dependencies: [6, 7, 5804, 2]
+// Module ID: 5823
+// Function ID: 5824
+// Name: fromServer
+// Dependencies: [5822, 2]
 
-// Module 5805 (CollectiblesMarketingBannerRecord)
-import _classCallCheck from "_classCallCheck";
-import _defineProperties from "_defineProperties";
-
-const require = arg1;
-const tmp2 = (() => {
-  class CollectiblesMarketingBannerRecord {
-    constructor(arg0) {
-      tmp = outer1_2(this, CollectiblesMarketingBannerRecord);
-      this.type = CollectiblesMarketingBannerRecord(outer1_1[2]).CollectiblesMarketingType.BANNER;
-      ({ title: this.title, body: this.body, asset: this.asset, popout_asset: this.popoutAsset, version: this.version, revert_text_color: this.revertTextColor } = arg0);
-      return;
-    }
+// Module 5823 (fromServer)
+let prototype;
+prototype = function CollectiblesMarketingBannerRecord(arg0) {
+  const obj = Object.create(new.target.prototype);
+  obj.type = require(5822) /* CollectiblesMarketingType */.CollectiblesMarketingType.BANNER;
+  ({ title: tmp.title, body: tmp.body, asset: tmp.asset, popout_asset: tmp.popoutAsset, version: tmp.version, revert_text_color: tmp.revertTextColor } = arg0);
+  return obj;
+}.prototype;
+prototype["fromServer"] = function fromServer(arg0) {
+  if (typeof prototype !== "find") {
+    HermesBuiltin.throwTypeError();
   }
-  const items = [
-    {
-      key: "fromServer",
-      value(arg0) {
-        return new CollectiblesMarketingBannerRecord(arg0);
-      }
-    }
-  ];
-  return callback(CollectiblesMarketingBannerRecord, null, items);
-})();
-const result = require("CollectiblesMarketingType").fileFinishedImporting("modules/collectibles/records/CollectiblesMarketingBannerRecord.tsx");
+  const obj = Object.create(prototype.prototype);
+  obj.type = require(5822) /* CollectiblesMarketingType */.CollectiblesMarketingType.BANNER;
+  ({ title: tmp2.title, body: tmp2.body, asset: tmp2.asset, popout_asset: tmp2.popoutAsset, version: tmp2.version, revert_text_color: tmp2.revertTextColor } = arg0);
+  return obj;
+};
+const result = require("set").fileFinishedImporting("modules/collectibles/records/CollectiblesMarketingBannerRecord.tsx");
 
-export const CollectiblesMarketingBannerRecord = tmp2;
+export const CollectiblesMarketingBannerRecord = prototype;

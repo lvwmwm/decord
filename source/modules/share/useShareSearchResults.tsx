@@ -1,39 +1,35 @@
-// Module ID: 9884
-// Function ID: 76469
+// Module ID: 9906
+// Function ID: 9907
 // Name: makeAutocompleterSearchParams
-// Dependencies: [57, 31, 4843, 1194, 5077, 6158, 9885, 566, 9888, 9581, 6140, 2]
-// Exports: useShareSearchResults
+// Dependencies: [32, 19, 4865, 1218, 5099, 6176, 9907, 589, 9910, 9602, 6158, 2]
+// Exports: makeAutocompleterSearchParams, useShareSearchResults
 
-// Module 9884 (makeAutocompleterSearchParams)
+// Module 9906 (makeAutocompleterSearchParams)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_6 from "_isNativeReflectConstruct";
-import closure_7 from "_isNativeReflectConstruct";
+import noop from "noop";
+import _handleConnectionOpen from "_handleConnectionOpen";
+import fetchFingerprint from "fetchFingerprint";
+import handleChannelSelect from "handleChannelSelect";
 import { ALLOWED_TYPES } from "ALLOWED_TYPES";
 
 const require = arg1;
-function makeAutocompleterSearchParams(arg0) {
-  let obj = require(9885) /* getQuickSwitcherOptions */;
-  const quickSwitcherOptions = obj.getQuickSwitcherOptions(arg0);
-  const queryMode = quickSwitcherOptions.queryMode;
-  let tmp2 = ALLOWED_TYPES;
+const result = require("_handleConnectionOpen").fileFinishedImporting("modules/share/useShareSearchResults.tsx");
+
+export const makeAutocompleterSearchParams = function makeAutocompleterSearchParams(arg0) {
+  const query = require(9907) /* trackClose */.getQuickSwitcherOptions(arg0);
+  let queryMode = query.queryMode;
+  let resultTypes = ALLOWED_TYPES;
   let hasItem = null != queryMode;
   if (hasItem) {
-    hasItem = ALLOWED_TYPES.includes(queryMode);
+    hasItem = resultTypes.includes(queryMode);
   }
-  let tmp5 = null;
+  queryMode = null;
   if (hasItem) {
     const items = [queryMode];
-    tmp2 = items;
-    tmp5 = queryMode;
+    resultTypes = items;
   }
-  obj = { query: quickSwitcherOptions.query, queryMode: tmp5, resultTypes: tmp2 };
-  return obj;
-}
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/share/useShareSearchResults.tsx");
-
-export { makeAutocompleterSearchParams };
+  return { query: query.query, queryMode, resultTypes };
+};
 export const useShareSearchResults = function useShareSearchResults(targetDestination) {
   targetDestination = targetDestination.targetDestination;
   const selectedDestinations = targetDestination.selectedDestinations;
@@ -49,7 +45,7 @@ export const useShareSearchResults = function useShareSearchResults(targetDestin
   let results;
   let first;
   let c10;
-  let queryMode;
+  let queryMode2;
   let ref;
   let ref1;
   let current;
@@ -61,49 +57,77 @@ export const useShareSearchResults = function useShareSearchResults(targetDestin
   stateFromStores = obj.useStateFromStores(items, () => search.getId());
   const items1 = [stateFromStores];
   const memo = flag.useMemo(() => {
-    let obj = {};
+    let obj = { searchOptions: null };
     obj = { blacklist: null, frecencyBoosters: true, userFilters: null };
     const items = ["user:" + stateFromStores];
-    obj.blacklist = new Set(items);
-    obj.searchOptions = obj;
+    obj[0] = new Set(items);
+    obj[0] = obj;
     return obj;
   }, items1);
-  const tmp3 = selectedDestinations(originDestination[8])(memo);
-  search = tmp3.search;
-  query = tmp3.query;
-  results = tmp3.results;
-  const tmp4 = channelFilter(flag.useState(first("")), 2);
-  first = tmp4[0];
-  c10 = tmp6;
-  const items2 = [tmp4[1]];
-  queryMode = first.queryMode;
-  const callback = flag.useCallback((arg0) => _undefined(first(arg0)), items2);
-  ref = flag.useRef(null);
-  ref1 = flag.useRef(selectedDestinations);
+  const tmp5 = selectedDestinations(originDestination[8])(memo);
+  search = tmp5.search;
+  query = tmp5.query;
+  results = tmp5.results;
+  const quickSwitcherOptions = targetDestination(originDestination[6]).getQuickSwitcherOptions("");
+  let queryMode = quickSwitcherOptions.queryMode;
+  let obj4 = results;
+  let hasItem = null != queryMode;
+  if (hasItem) {
+    hasItem = obj4.includes(queryMode);
+  }
+  let tmp8 = null;
+  if (hasItem) {
+    const items2 = [queryMode];
+    tmp8 = queryMode;
+    obj4 = items2;
+  }
+  const tmp9 = channelFilter(flag.useState({ query: quickSwitcherOptions.query, queryMode: tmp8, resultTypes: obj4 }), 2);
+  first = tmp9[0];
+  c10 = tmp11;
+  const items3 = [tmp9[1]];
+  queryMode2 = first.queryMode;
+  const callback = obj2.useCallback((arg0) => {
+    const query = targetDestination(originDestination[6]).getQuickSwitcherOptions(arg0);
+    let queryMode = query.queryMode;
+    let resultTypes = results;
+    let hasItem = null != queryMode;
+    if (hasItem) {
+      hasItem = resultTypes.includes(queryMode);
+    }
+    queryMode = null;
+    if (hasItem) {
+      const items = [queryMode];
+      resultTypes = items;
+    }
+    return c10({ query: query.query, queryMode, resultTypes });
+  }, items3);
+  ref = obj2.useRef(null);
+  ref1 = obj2.useRef(selectedDestinations);
   current = selectedDestinations;
   if (query === ref.current) {
     current = ref1.current;
   }
-  const items3 = [query, selectedDestinations];
-  const effect = flag.useEffect(() => {
+  const items4 = [query, selectedDestinations];
+  const effect = obj2.useEffect(() => {
     if (query !== ref.current) {
       ref1.current = selectedDestinations;
     }
     ref.current = query;
-  }, items3);
-  const items4 = [search, first];
-  const layoutEffect = flag.useLayoutEffect(() => {
-    search({ query: first.query, resultTypes: first.resultTypes });
   }, items4);
-  const frecencySettings = targetDestination(originDestination[9]).useFrecencySettings();
-  const obj2 = targetDestination(originDestination[9]);
-  const items5 = [query];
-  stateFromStores1 = targetDestination(originDestination[7]).useStateFromStores(items5, () => query.getFrequentlyWithoutFetchingLatest());
-  const obj3 = targetDestination(originDestination[7]);
-  const items6 = [stateFromStores];
-  stateFromStores2 = targetDestination(originDestination[7]).useStateFromStores(items6, () => stateFromStores.isConnected());
-  c17 = tmp15;
-  obj = { results: flag.useMemo(() => selectedDestinations(originDestination[10])({ results, hasQuery: c17, queryMode, targetDestination, frequentChannels: stateFromStores1, selectedDestinations, pinnedDestinations: current, originDestination, channelFilter, includeMissingDMs: flag, isConnected: stateFromStores2 }), items7), updateSearchText: callback };
-  items7 = [results, "" !== query, queryMode, targetDestination, stateFromStores1, selectedDestinations, current, originDestination, channelFilter, flag, stateFromStores2];
+  const items5 = [search, first];
+  const layoutEffect = obj2.useLayoutEffect(() => {
+    search({ query: first.query, resultTypes: first.resultTypes });
+  }, items5);
+  let tmpResult = tmp(tmp2[9]);
+  const frecencySettings = tmpResult.useFrecencySettings();
+  tmpResult = tmp(tmp2[7]);
+  const items6 = [query];
+  stateFromStores1 = tmpResult.useStateFromStores(items6, () => query.getFrequentlyWithoutFetchingLatest());
+  const obj3 = targetDestination(originDestination[6]);
+  const items7 = [stateFromStores];
+  stateFromStores2 = targetDestination(originDestination[7]).useStateFromStores(items7, () => stateFromStores.isConnected());
+  c17 = tmp20;
+  obj = { results: obj2.useMemo(() => selectedDestinations(originDestination[10])({ results, hasQuery: c17, queryMode: queryMode2, targetDestination, frequentChannels: stateFromStores1, selectedDestinations, pinnedDestinations: current, originDestination, channelFilter, includeMissingDMs: flag, isConnected: stateFromStores2 }), items8), updateSearchText: callback };
+  items8 = [results, "" !== query, queryMode2, targetDestination, stateFromStores1, selectedDestinations, current, originDestination, channelFilter, flag, stateFromStores2];
   return obj;
 };

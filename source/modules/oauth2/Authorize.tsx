@@ -1,118 +1,94 @@
-// Module ID: 8925
-// Function ID: 70427
+// Module ID: 8949
+// Function ID: 8950
 // Name: filterScopes
-// Dependencies: [1348, 3982, 653, 8926, 8150, 5023, 3798, 483, 2]
+// Dependencies: [1372, 4006, 676, 8950, 8174, 5045, 3822, 506, 2]
 // Exports: filterScopes, parseOAuth2AuthorizeProps
 
-// Module 8925 (filterScopes)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_4 from "_isNativeReflectConstruct";
+// Module 8949 (filterScopes)
+import ensureGuildLoaded from "ensureGuildLoaded";
+import handleConnectionOpen from "handleConnectionOpen";
 import ME from "ME";
 
-let closure_5;
+let c5;
 let closure_6;
-let closure_7;
+let error;
 const require = arg1;
-({ EMPTY_NUX_SERVER: closure_5, FAVORITES: closure_6, ME: closure_7 } = ME);
+({ EMPTY_NUX_SERVER: c5, FAVORITES: closure_6, ME: error } = ME);
 const result = require("ME").fileFinishedImporting("modules/oauth2/Authorize.tsx");
 
 export const filterScopes = function filterScopes(items) {
   const found = items.filter((arg0) => {
-    const RemovedScopes = outer1_0(outer1_2[3]).RemovedScopes;
+    const RemovedScopes = callback(table[3]).RemovedScopes;
     return !RemovedScopes.includes(arg0);
   });
-  let hasItem = found.includes(require(8150) /* set */.OAuth2Scopes.BOT);
+  let hasItem = found.includes(require(8174) /* set */.OAuth2Scopes.BOT);
   if (hasItem) {
-    hasItem = !found.includes(require(8150) /* set */.OAuth2Scopes.APPLICATIONS_COMMANDS);
+    hasItem = !found.includes(tmp(8174).OAuth2Scopes.APPLICATIONS_COMMANDS);
   }
   if (hasItem) {
-    found.push(require(8150) /* set */.OAuth2Scopes.APPLICATIONS_COMMANDS);
+    found.push(tmp(8174).OAuth2Scopes.APPLICATIONS_COMMANDS);
   }
   return found;
 };
 export const parseOAuth2AuthorizeProps = function parseOAuth2AuthorizeProps(query) {
   let channel_id;
   let guild_id;
-  let obj = require(5023) /* encode */;
+  let obj = require(5045) /* keysSorter */;
   const parsed = obj.parse(query, { arrayFormat: "bracket" });
-  const NONE = importAll(3798).NONE;
-  importAll(483);
-  while (true) {
-    let tmp6 = parsed;
+  const NONE = importAll(3822).NONE;
+  try {
+    let str2 = "0";
+    if (null != parsed.permissions) {
+      str2 = "0";
+      if ("" !== parsed.permissions) {
+        str2 = parsed.permissions;
+      }
+    }
     ({ channel_id, guild_id } = parsed);
-    let tmp7 = guild_id;
-    let tmp8 = null;
-    if (null != guild_id) {
-      let guild_id2 = guild_id;
-    } else {
-      let tmp9 = channel;
-      let tmp10 = channel_id;
+    const tmp3Result = importAll(506);
+    if (guild_id == null) {
       channel = channel.getChannel(channel_id);
-      let tmp12 = channel;
-      if (null != channel) {
-        guild_id2 = channel.guild_id;
+      guild_id = undefined;
+      if (channel != null) {
+        guild_id = channel.guild_id;
       }
     }
-    let tmp13 = guild_id2;
-    if (null != guild_id2) {
-      let guildId = guild_id2;
-    } else {
-      let tmp14 = guildId;
-      guildId = guildId.getGuildId();
+    if (guild_id == null) {
+      guild_id = guildId.getGuildId();
     }
-    let tmp16 = closure_7;
-    let items = [closure_7, , ];
-    let tmp17 = closure_6;
-    items[1] = closure_6;
-    let tmp18 = closure_5;
-    items[2] = closure_5;
-    let tmp19 = guildId;
-    let tmp20;
-    if (!items.includes(guildId)) {
-      let tmp21;
-      if (null != guildId) {
-        tmp21 = guildId;
+    let str4 = parsed.client_id;
+    const deserializeResult = importAll(506).deserialize(str2);
+    if (str4 == null) {
+      str4 = "";
+    }
+    obj = { clientId: null, scopes: null, responseType: null, redirectUri: null, codeChallenge: null, codeChallengeMethod: null, state: null, permissions: null, channelId: null, guildId: null, prompt: null, disableGuildSelect: null, integrationType: null, nonce: null };
+    obj[0] = str4;
+    let str5 = parsed.scope;
+    if (str5 == null) {
+      str5 = "";
+    }
+    const tmp11 = (function sanitizeOAuthGuild(guild_id) {
+      const items = [closure_7, closure_6, closure_5];
+      if (!items.includes(guild_id)) {
+        return tmp;
       }
-      tmp20 = tmp21;
-    }
-    let tmp22 = tmp20;
-    obj = {};
-    let tmp23 = parsed;
-    let client_id = parsed.client_id;
-    let tmp24 = client_id;
-    let str3 = "";
-    let str4 = "";
-    if (null != client_id) {
-      str4 = client_id;
-    }
-    obj.clientId = str4;
-    let tmp25 = parsed;
-    let scope = parsed.scope;
-    let tmp26 = scope;
-    if (null != scope) {
-      str3 = scope;
-    }
-    let str5 = " ";
-    let str6 = str3.replace(/\+/g, " ");
-    let parts = str6.split(" ");
-    obj.scopes = parts.filter((arg0) => arg0.length > 0);
-    let tmp27 = parsed;
-    ({ response_type: obj2.responseType, redirect_uri: obj2.redirectUri, code_challenge: obj2.codeChallenge, code_challenge_method: obj2.codeChallengeMethod, state: obj2.state } = parsed);
-    obj.permissions = tmp5;
-    obj.channelId = channel_id;
-    obj.guildId = tmp20;
-    obj.prompt = parsed.prompt;
-    let str7 = "true";
-    obj.disableGuildSelect = "true" === parsed.disable_guild_select;
+    })(guild_id);
+    const parts = str5.replace(/\+/g, " ").split(" ");
+    obj[1] = parts.filter((arg0) => arg0.length > 0);
+    ({ response_type: obj3[2], redirect_uri: obj3[3], code_challenge: obj3[4], code_challenge_method: obj3[5], state: obj3[6] } = parsed);
+    obj[7] = deserializeResult;
+    obj[8] = channel_id;
+    obj[9] = tmp11;
+    obj[10] = parsed.prompt;
+    obj[11] = "true" === parsed.disable_guild_select;
     let NumberResult;
     if (null != parsed.integration_type) {
-      let tmp29 = globalThis;
-      let _Number = Number;
-      let tmp30 = parsed;
+      const _Number = Number;
       NumberResult = Number(parsed.integration_type);
     }
-    obj.integrationType = NumberResult;
-    obj.nonce = parsed.nonce;
+    obj[12] = NumberResult;
+    obj[13] = parsed.nonce;
     return obj;
+  } catch (err) {
   }
 };

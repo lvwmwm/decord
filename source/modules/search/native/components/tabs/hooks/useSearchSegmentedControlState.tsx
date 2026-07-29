@@ -1,11 +1,11 @@
-// Module ID: 15518
-// Function ID: 119094
+// Module ID: 15552
+// Function ID: 15553
 // Name: useSearchSegmentedControlState
-// Dependencies: [31, 4026, 8200, 2]
+// Dependencies: [19, 4050, 8224, 2]
 // Exports: useSearchSegmentedControlState
 
-// Module 15518 (useSearchSegmentedControlState)
-import result from "result";
+// Module 15552 (useSearchSegmentedControlState)
+import noop from "noop";
 
 const require = arg1;
 let closure_3 = { code: "function useSearchSegmentedControlStateTsx1(){const{visibleTabsStateful}=this.__closure;return visibleTabsStateful;}" };
@@ -21,9 +21,15 @@ export const useSearchSegmentedControlState = function useSearchSegmentedControl
   let width;
   visibleTabs = visibleTabs.visibleTabs;
   const onSelectedTabChange = visibleTabs.onSelectedTabChange;
+  let sharedValue;
+  let derivedValue;
+  let segmentedControlState;
+  let activeIndex;
+  let setActiveIndex;
+  let derivedValue1;
   ({ items, width } = visibleTabs);
   let obj = visibleTabs(onSelectedTabChange[1]);
-  const sharedValue = obj.useSharedValue(visibleTabs[0]);
+  sharedValue = obj.useSharedValue(visibleTabs[0]);
   class T {
     constructor() {
       return visibleTabs;
@@ -34,9 +40,9 @@ export const useSearchSegmentedControlState = function useSearchSegmentedControl
   T.__initData = derivedValue;
   derivedValue = visibleTabs(onSelectedTabChange[1]).useDerivedValue(T);
   const obj2 = visibleTabs(onSelectedTabChange[1]);
-  const segmentedControlState = visibleTabs(onSelectedTabChange[2]).useSegmentedControlState({ items, defaultIndex: 0, pageWidth: width });
-  const activeIndex = segmentedControlState.activeIndex;
-  const setActiveIndex = segmentedControlState.setActiveIndex;
+  segmentedControlState = visibleTabs(onSelectedTabChange[2]).useSegmentedControlState({ items, defaultIndex: 0, pageWidth: width });
+  activeIndex = segmentedControlState.activeIndex;
+  setActiveIndex = segmentedControlState.setActiveIndex;
   const obj3 = visibleTabs(onSelectedTabChange[2]);
   const fn = function x() {
     const value = derivedValue.get();
@@ -45,7 +51,7 @@ export const useSearchSegmentedControlState = function useSearchSegmentedControl
   fn.__closure = { visibleTabs: derivedValue, activeIndex };
   fn.__workletHash = 6189329624535;
   fn.__initData = segmentedControlState;
-  const derivedValue1 = visibleTabs(onSelectedTabChange[1]).useDerivedValue(fn);
+  derivedValue1 = visibleTabs(onSelectedTabChange[1]).useDerivedValue(fn);
   const obj4 = visibleTabs(onSelectedTabChange[1]);
   const fn2 = function f() {
     return derivedValue.get();
@@ -72,7 +78,7 @@ export const useSearchSegmentedControlState = function useSearchSegmentedControl
   const obj5 = visibleTabs(onSelectedTabChange[1]);
   class C {
     constructor() {
-      return closure_7.get();
+      return c7.get();
     }
   }
   C.__closure = { selectedTab: derivedValue1 };
@@ -81,11 +87,10 @@ export const useSearchSegmentedControlState = function useSearchSegmentedControl
   class I {
     constructor(arg0) {
       if (null != visibleTabs) {
-        tmp = result;
-        result = result.set(visibleTabs);
+        tmp = c2;
+        result = c2.set(visibleTabs);
         tmp3 = visibleTabs;
         tmp4 = onSelectedTabChange;
-        num = 1;
         obj = visibleTabs(onSelectedTabChange[1]);
         tmp5 = onSelectedTabChange;
         tmp6 = obj.runOnJS(onSelectedTabChange)(visibleTabs);

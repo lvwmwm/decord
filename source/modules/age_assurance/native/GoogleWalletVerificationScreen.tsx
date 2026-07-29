@@ -1,60 +1,237 @@
-// Module ID: 7592
-// Function ID: 60659
+// Module ID: 7616
+// Function ID: 7617
 // Name: GoogleWalletVerificationScreen
-// Dependencies: [5, 57, 31, 27, 33, 1456, 4382, 6759, 5849, 5854, 1212, 2717, 6761, 6762, 4576, 4161, 5000, 4578, 6728, 2]
+// Dependencies: [5, 32, 19, 17, 21, 1480, 4405, 6781, 5867, 5872, 1236, 2741, 6783, 6784, 4598, 4185, 5022, 4600, 6749, 2]
 // Exports: default
 
-// Module 7592 (GoogleWalletVerificationScreen)
+// Module 7616 (GoogleWalletVerificationScreen)
 import useNavigation from "useNavigation";
 import _slicedToArray from "_slicedToArray";
-import result from "result";
-import { ActivityIndicator } from "get ActivityIndicator";
+import set from "set";
+import { ActivityIndicator } from "Button";
 import jsxProd from "jsxProd";
 
-let closure_7;
-let closure_8;
+let error;
+let metroImportAll;
 const require = arg1;
-({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
+({ jsx: error, jsxs: metroImportAll } = jsxProd);
 let closure_9 = { NOT_AVAILABLE: "not_available", FAILED: "credential_error" };
-let result = require("result").fileFinishedImporting("modules/age_assurance/native/GoogleWalletVerificationScreen.tsx");
+let result = require("noop").fileFinishedImporting("modules/age_assurance/native/GoogleWalletVerificationScreen.tsx");
 
 export default function GoogleWalletVerificationScreen(modalSessionId) {
+  let c2;
+  let tmp5;
   modalSessionId = modalSessionId.modalSessionId;
-  let obj = modalSessionId(1456);
-  let navigation = obj.useNavigation();
-  const tmp2 = callback1(React.useState({ type: "loading" }), 2);
-  const first = tmp2[0];
-  const dependencyMap = tmp2[1];
-  let obj1 = modalSessionId(4382);
+  let navigation;
+  let dependencyMap;
+  let callback;
+  let callback1;
+  let React;
+  let obj = modalSessionId(1480);
+  navigation = obj.useNavigation();
+  [tmp5, c2] = callback1(React.useState({ type: "loading" }), 2);
+  let obj1 = modalSessionId(4405);
   const watchAgeVerificationStatusChange = obj1.useWatchAgeVerificationStatusChange(modalSessionId.onClose);
-  const items = [navigation];
-  const callback = React.useCallback(() => {
+  let items = [navigation];
+  callback = React.useCallback(() => {
     navigation.goBack();
   }, items);
   const items1 = [callback];
-  callback1 = React.useCallback(callback(async () => {
-    const obj = modalSessionId(6759);
-    const obj2 = modalSessionId(6759);
-    const tmp = yield modalSessionId(6759).getGoogleWalletCredential(yield obj.requestGoogleWalletVerification().request_json);
-    yield modalSessionId(6759).verifyGoogleWalletCredential(tmp);
+  callback1 = React.useCallback(callback(function*() {
+    if (c5 === 2) {
+      c5 = 3;
+      HermesBuiltin.throwTypeError();
+    } else if (tmp6 === 3) {
+      if (arg0 === 1) {
+        throw arg1;
+      } else if (arg0 === 2) {
+        let obj = { value: null, done: true };
+        obj[0] = arg1;
+        return obj;
+      } else {
+        return { value: "HermesInternal", done: null };
+      }
+    } else {
+      try {
+        c5 = 2;
+        if (0 === c4) {
+          if (arg0 === 1) {
+            c5 = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            c5 = 3;
+            obj = { value: null, done: true };
+            obj[0] = arg1;
+            return obj;
+          } else {
+            let closure_1 = tmp3;
+            let request_json = tmp7;
+            request_json = undefined;
+            closure_1 = undefined;
+            let lib;
+            let v0;
+            v0 = 1;
+            c4 = 2;
+            c5 = 1;
+            let obj1 = { value: null, done: false };
+            obj1[0] = outer1_0(outer1_2[7]).requestGoogleWalletVerification();
+            return obj1;
+          }
+        } else {
+          if (1 === tmp7) {
+            v0 = 0;
+            let code;
+            if (lib != null) {
+              code = lib.code;
+            }
+            if ("CANCELLED" === code) {
+              let obj11 = outer1_1(outer1_2[8]);
+              const obj2 = { name: null, tags: null };
+              obj2[0] = outer1_0(outer1_2[9]).MetricEvents.GOOGLE_WALLET_VERIFICATION_FAILED;
+              obj2[1] = ["reason:user_cancelled"];
+              obj11.increment(obj2);
+              v0();
+              c5 = 3;
+              const obj3 = { value: null, done: true };
+              obj3[0] = undefined;
+              return obj3;
+            } else {
+              let reason;
+              if (lib != null) {
+                const body = lib.body;
+                if (body != null) {
+                  reason = body.reason;
+                }
+              }
+              if ("unsupported_issuing_country" === reason) {
+                let obj7 = outer1_1(outer1_2[8]);
+                let obj4 = { name: null, tags: null };
+                obj4[0] = outer1_0(outer1_2[9]).MetricEvents.GOOGLE_WALLET_VERIFICATION_FAILED;
+                obj4[1] = ["reason:unsupported_issuing_country"];
+                obj7.increment(obj4);
+                const obj5 = { type: "error", message: null };
+                const intl = outer1_0(outer1_2[10]).intl;
+                obj5[1] = intl.string(outer1_1(outer1_2[11]).Pf5xUq);
+                lib(obj5);
+                c5 = 3;
+                const obj6 = { value: null, done: true };
+                obj6[0] = undefined;
+                return obj6;
+              } else {
+                v0 = (function getFailureReason(closure_2) {
+                  let status;
+                  if (closure_2 != null) {
+                    status = closure_2.status;
+                  }
+                  let str = "rate_limited";
+                  if (429 !== status) {
+                    let code;
+                    if (closure_2 != null) {
+                      code = closure_2.code;
+                    }
+                    let str3 = "unknown";
+                    if (null != code) {
+                      str3 = "unknown";
+                      if (closure_2.code in closure_9) {
+                        str3 = tmp3[closure_2.code];
+                      }
+                    }
+                    str = str3;
+                  }
+                  return str;
+                })(lib);
+                obj7 = { name: null, tags: null };
+                obj7[0] = outer1_0(outer1_2[9]).MetricEvents.GOOGLE_WALLET_VERIFICATION_FAILED;
+                const _HermesInternal = HermesInternal;
+                const items = ["reason:" + v0];
+                obj7[1] = items;
+                outer1_1(outer1_2[8]).increment(obj7);
+                const obj8 = { type: "error", message: null };
+                const intl2 = outer1_0(outer1_2[10]).intl;
+                obj8[1] = intl2.string(outer1_1(outer1_2[11])["+pwfOA"]);
+                lib(obj8);
+                c5 = 3;
+                const obj19 = outer1_1(outer1_2[8]);
+              }
+            }
+          } else if (2 === tmp7) {
+            if (arg0 === 1) {
+              c5 = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              v0 = 0;
+              c5 = 3;
+              const obj9 = { value: null, done: true };
+              obj9[0] = arg1;
+              return obj9;
+            } else {
+              request_json = arg1.request_json;
+              obj4 = outer1_0(outer1_2[7]);
+              c4 = 3;
+              c5 = 1;
+              const obj10 = { value: null, done: false };
+              obj10[0] = obj4.getGoogleWalletCredential(request_json);
+              return obj10;
+            }
+          } else if (3 === tmp7) {
+            if (arg0 === 1) {
+              c5 = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              v0 = 0;
+              c5 = 3;
+              obj11 = { value: null, done: true };
+              obj11[0] = arg1;
+              return obj11;
+            } else {
+              closure_1 = arg1;
+              obj1 = outer1_0(outer1_2[7]);
+              c4 = 4;
+              c5 = 1;
+              const obj12 = { value: null, done: false };
+              obj12[0] = obj1.verifyGoogleWalletCredential(closure_1);
+              return obj12;
+            }
+          } else if (arg0 === 1) {
+            c5 = 3;
+            throw arg1;
+          } else if (arg0 !== 2) {
+            v0 = 0;
+          }
+          v0 = 0;
+          c5 = 3;
+          obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
+        }
+      } catch (tmp45) {
+        lib = tmp45;
+        if (tmp4 === v0) {
+          c5 = tmp2;
+          throw tmp45;
+        } else {
+          c4 = tmp;
+        }
+      }
+    }
   }), items1);
   React = React.useRef(false);
   const items2 = [navigation, callback1];
   const effect = React.useEffect(() => {
     let closure_0 = navigation.addListener("transitionEnd", (data) => {
-      let current = outer1_5.current;
+      let current = ref.current;
       if (!current) {
         current = true === data.data.closing;
       }
       if (!current) {
-        outer1_5.current = true;
-        outer1_4();
+        ref.current = true;
+        callback2();
       }
     });
     navigation = setTimeout(() => {
-      if (!outer1_5.current) {
-        outer1_5.current = true;
-        outer1_4();
+      if (!ref.current) {
+        tmp.current = true;
+        callback2();
       }
     }, 1000);
     return () => {
@@ -62,40 +239,40 @@ export default function GoogleWalletVerificationScreen(modalSessionId) {
       clearTimeout(closure_1);
     };
   }, items2);
-  if ("loading" === first.type) {
-    obj = {};
-    obj = {};
-    obj1 = { align: "center", justify: "center", spacing: 16 };
-    let obj2 = { size: "large" };
-    const items3 = [callback(ActivityIndicator, obj2), ];
-    const obj3 = { variant: "text-md/medium", color: "text-strong" };
-    const intl = modalSessionId(1212).intl;
-    obj3.children = intl.string(navigation(2717).MlFuBI);
-    items3[1] = callback(modalSessionId(4161).Text, obj3);
-    obj1.children = items3;
-    obj.children = callback2(modalSessionId(4576).Stack, obj1);
-    obj.children = callback(modalSessionId(6762).ModalContent, obj);
-    let tmp14 = callback(modalSessionId(6761).ModalScreen, obj);
+  if ("loading" === tmp5.type) {
+    obj = { children: null };
+    obj = { children: null };
+    obj1 = { align: "center", justify: "center", spacing: 16, children: null };
+    const items3 = [callback(ActivityIndicator, { size: "large" }), ];
+    let obj2 = { variant: "text-md/medium", color: "text-strong", children: null };
+    let intl = tmp(1236).intl;
+    obj2[2] = intl.string(navigation(2741).MlFuBI);
+    items3[1] = callback(tmp(4185).Text, obj2);
+    obj1[3] = items3;
+    obj[0] = callback2(tmp(4598).Stack, obj1);
+    obj[0] = callback(tmp(6784).ModalContent, obj);
+    let tmp14 = callback(tmp(6783).ModalScreen, obj);
   } else {
-    const obj4 = {};
-    const obj5 = {};
-    const obj6 = { align: "center", justify: "center", spacing: 16 };
-    const obj7 = { variant: "text-md/medium", color: "text-strong", children: first.message };
-    const items4 = [callback(modalSessionId(4161).Text, obj7), ];
-    const obj8 = {};
-    const obj9 = { variant: "primary", size: "lg" };
-    const intl2 = modalSessionId(1212).intl;
-    obj9.text = intl2.string(navigation(2717).fEUKEv);
-    obj9.onPress = function onPress() {
-      const result = modalSessionId(6728).trackAgeVerificationModalClicked(modalSessionId, modalSessionId(6728).AgeVerificationModalVersion.EXPRESSIVE_PRIMARY, modalSessionId(6728).AgeVerificationModalCta.METHOD_SELECT);
+    let obj3 = { children: null };
+    let obj4 = { children: null };
+    let obj5 = { align: "center", justify: "center", spacing: 16, children: null };
+    let obj6 = { variant: "text-md/medium", color: "text-strong", children: null };
+    obj6[2] = tmp5.message;
+    const items4 = [callback(tmp(4185).Text, obj6), ];
+    let obj7 = { children: null };
+    let obj8 = { variant: "primary", size: "lg", text: null, onPress: null };
+    let intl2 = tmp(1236).intl;
+    obj8[2] = intl2.string(navigation(2741).fEUKEv);
+    obj8[3] = function onPress() {
+      const result = modalSessionId(_undefined[18]).trackAgeVerificationModalClicked(modalSessionId, modalSessionId(_undefined[18]).AgeVerificationModalVersion.EXPRESSIVE_PRIMARY, modalSessionId(_undefined[18]).AgeVerificationModalCta.METHOD_SELECT);
       callback();
     };
-    obj8.children = callback(modalSessionId(4578).Button, obj9);
-    items4[1] = callback(modalSessionId(5000).ButtonGroup, obj8);
-    obj6.children = items4;
-    obj5.children = callback2(modalSessionId(4576).Stack, obj6);
-    obj4.children = callback(modalSessionId(6762).ModalContent, obj5);
-    tmp14 = callback(modalSessionId(6761).ModalScreen, obj4);
+    obj7[0] = callback(tmp(4600).Button, obj8);
+    items4[1] = callback(tmp(5022).ButtonGroup, obj7);
+    obj5[3] = items4;
+    obj4[0] = callback2(tmp(4598).Stack, obj5);
+    obj3[0] = callback(tmp(6784).ModalContent, obj4);
+    tmp14 = callback(tmp(6783).ModalScreen, obj3);
   }
   return tmp14;
 };

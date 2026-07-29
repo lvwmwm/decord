@@ -1,47 +1,50 @@
-// Module ID: 15052
-// Function ID: 114586
+// Module ID: 15082
+// Function ID: 15083
 // Name: HAPPENING_NOW_CONTENT_HEIGHT
-// Dependencies: [31, 27, 1922, 1850, 14289, 653, 33, 4165, 689, 1273, 7945, 566, 15053, 8186, 8196, 675, 8193, 1392, 12246, 14290, 4681, 4161, 1827, 1212, 2]
+// Dependencies: [19, 17, 1946, 1874, 14311, 676, 21, 4189, 712, 1297, 7970, 589, 15083, 8210, 8220, 698, 8217, 1416, 12270, 14312, 4703, 4185, 1851, 1236, 2]
 
-// Module 15052 (HAPPENING_NOW_CONTENT_HEIGHT)
-import importAllResult from "result";
-import get_ActivityIndicator from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_7 from "_isNativeReflectConstruct";
+// Module 15082 (HAPPENING_NOW_CONTENT_HEIGHT)
+import importAllResult from "HAPPENING_NOW_CARD_MARGIN_RIGHT";
+import get_ActivityIndicator from "getAvatarURL";
+import _getSystemLocale from "_getSystemLocale";
+import mergeGuildAvatar from "mergeGuildAvatar";
 import HAPPENING_NOW_PANELS_CONTAINER_PADDING from "HAPPENING_NOW_PANELS_CONTAINER_PADDING";
 import { AnalyticEvents } from "ME";
-import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import jsxProd from "Text";
+import createCacheKey from "createCacheKey";
 
-let closure_10;
+let HAPPENING_NOW_EVENT_BANNER_WIDTH;
+let c10;
+let c4;
+let c5;
+let c9;
 let closure_12;
-let closure_13;
-let closure_4;
-let closure_5;
-let closure_9;
+let map1;
 const require = arg1;
-({ View: closure_4, Image: closure_5 } = get_ActivityIndicator);
+let c3 = importAllResult;
+({ View: c4, Image: c5 } = get_ActivityIndicator);
 const HAPPENING_NOW_CONTENT_HEIGHT = HAPPENING_NOW_PANELS_CONTAINER_PADDING.HAPPENING_NOW_CONTENT_HEIGHT;
-({ HappeningNowCardTrackingType: closure_9, HAPPENING_NOW_CARD_HEIGHT: closure_10 } = HAPPENING_NOW_PANELS_CONTAINER_PADDING);
-({ jsx: closure_12, jsxs: closure_13 } = jsxProd);
-let obj = { info: { alignSelf: "center", flexShrink: 1, marginLeft: 12, gap: 2 } };
-obj = { alignSelf: "center", justifyContent: "center", flexShrink: 1, flexGrow: 1, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_MOD_MUTED, height: HAPPENING_NOW_CONTENT_HEIGHT, gap: 2, marginRight: -4, paddingLeft: 8, paddingRight: 8, borderTopRightRadius: require("_createForOfIteratorHelperLoose").radii.sm, borderBottomRightRadius: require("_createForOfIteratorHelperLoose").radii.sm };
-obj.infoNoImage = obj;
-_createForOfIteratorHelperLoose = { borderTopRightRadius: require("_createForOfIteratorHelperLoose").radii.sm, borderBottomRightRadius: require("_createForOfIteratorHelperLoose").radii.sm, alignSelf: "center", width: HAPPENING_NOW_PANELS_CONTAINER_PADDING.HAPPENING_NOW_EVENT_BANNER_WIDTH, height: HAPPENING_NOW_CONTENT_HEIGHT };
-obj.decorationImage = _createForOfIteratorHelperLoose;
-obj.dottedLineContainer = { flexDirection: "column", gap: 4, position: "absolute", right: 0, top: 0, bottom: 0, overflow: "hidden" };
-let obj2 = { width: 2, height: 2, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_MOD_STRONG, opacity: 0.8 };
-obj.shortDottedLineSegment = obj2;
-let obj3 = { width: 2, height: 4, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_MOD_STRONG, opacity: 0.8 };
-obj.dottedLineSegment = obj3;
-obj.interestedUsersContainer = { justifyContent: "center", alignItems: "center" };
-obj.interestedUsersIcon = { tintColor: require("_createForOfIteratorHelperLoose").colors.TEXT_SUBTLE };
-let obj5 = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_MOD_SUBTLE, flexDirection: "column", justifyContent: "space-between", alignItems: "center", height: HAPPENING_NOW_CONTENT_HEIGHT, padding: 6, borderTopLeftRadius: require("_createForOfIteratorHelperLoose").radii.sm, borderBottomLeftRadius: require("_createForOfIteratorHelperLoose").radii.sm };
-obj.ticketContainer = obj5;
-const obj6 = { width: require("Button").AVATAR_SIZE_MAP[require("Button").AvatarSizes.XSMALL_20] };
-obj.avatarContainer = obj6;
-let closure_14 = _createForOfIteratorHelperLoose.createStyles(obj);
-let obj4 = { tintColor: require("_createForOfIteratorHelperLoose").colors.TEXT_SUBTLE };
+({ HappeningNowCardTrackingType: c9, HAPPENING_NOW_CARD_HEIGHT: c10, HAPPENING_NOW_EVENT_BANNER_WIDTH } = HAPPENING_NOW_PANELS_CONTAINER_PADDING);
+({ jsx: closure_12, jsxs: map1 } = jsxProd);
+let obj = { info: { alignSelf: "center", flexShrink: 1, marginLeft: 12, gap: 2 }, infoNoImage: null, decorationImage: null, dottedLineContainer: null, shortDottedLineSegment: null, dottedLineSegment: null, interestedUsersContainer: null, interestedUsersIcon: null, ticketContainer: null, avatarContainer: null };
+obj = { alignSelf: "center", justifyContent: "center", flexShrink: 1, flexGrow: 1, backgroundColor: require("Themes").colors.BACKGROUND_MOD_MUTED, height: HAPPENING_NOW_CONTENT_HEIGHT, gap: 2, marginRight: -4, paddingLeft: 8, paddingRight: 8, borderTopRightRadius: require("Themes").radii.sm, borderBottomRightRadius: require("Themes").radii.sm };
+obj[1] = obj;
+createCacheKey = { borderTopRightRadius: require("Themes").radii.sm, borderBottomRightRadius: require("Themes").radii.sm, alignSelf: "center", width: HAPPENING_NOW_EVENT_BANNER_WIDTH, height: HAPPENING_NOW_CONTENT_HEIGHT };
+obj[2] = createCacheKey;
+obj[3] = { flexDirection: "column", gap: 4, position: "absolute", right: 0, top: 0, bottom: 0, overflow: "hidden" };
+obj[4] = { width: 2, height: 2, backgroundColor: require("Themes").colors.BACKGROUND_MOD_STRONG, opacity: 0.8 };
+let obj2 = { width: 2, height: 2, backgroundColor: require("Themes").colors.BACKGROUND_MOD_STRONG, opacity: 0.8 };
+obj[5] = { width: 2, height: 4, backgroundColor: require("Themes").colors.BACKGROUND_MOD_STRONG, opacity: 0.8 };
+obj[6] = { justifyContent: "center", alignItems: "center" };
+let obj3 = { width: 2, height: 4, backgroundColor: require("Themes").colors.BACKGROUND_MOD_STRONG, opacity: 0.8 };
+obj[7] = { tintColor: require("Themes").colors.TEXT_SUBTLE };
+let obj4 = { tintColor: require("Themes").colors.TEXT_SUBTLE };
+obj[8] = { backgroundColor: require("Themes").colors.BACKGROUND_MOD_SUBTLE, flexDirection: "column", justifyContent: "space-between", alignItems: "center", height: HAPPENING_NOW_CONTENT_HEIGHT, padding: 6, borderTopLeftRadius: require("Themes").radii.sm, borderBottomLeftRadius: require("Themes").radii.sm };
+const obj6 = { width: null };
+obj6[0] = require("Button").AVATAR_SIZE_MAP[require("Button").AvatarSizes.XSMALL_20];
+obj[9] = obj6;
+let closure_14 = createCacheKey.createStyles(obj);
+let obj5 = { backgroundColor: require("Themes").colors.BACKGROUND_MOD_SUBTLE, flexDirection: "column", justifyContent: "space-between", alignItems: "center", height: HAPPENING_NOW_CONTENT_HEIGHT, padding: 6, borderTopLeftRadius: require("Themes").radii.sm, borderBottomLeftRadius: require("Themes").radii.sm };
 let items = [{ shape: require("SolidCutout").CutoutShape.Circle, x: -8, y: HAPPENING_NOW_CONTENT_HEIGHT / 2 - 8, size: 16 }];
 let closure_16 = importAllResult.memo(() => {
   const tmp = callback2();
@@ -49,10 +52,12 @@ let closure_16 = importAllResult.memo(() => {
   let num = 0;
   if (0 <= HAPPENING_NOW_CONTENT_HEIGHT) {
     do {
-      let obj = { style: 0 === num ? tmp.shortDottedLineSegment : tmp.dottedLineSegment };
+      let tmp2 = num;
+      let obj = { style: null };
+      obj[0] = 0 === num ? tmp.shortDottedLineSegment : tmp.dottedLineSegment;
       let arr = items.push(callback(closure_4, obj, num));
       num = num + 8;
-      let tmp3 = HAPPENING_NOW_CONTENT_HEIGHT;
+      let tmp4 = HAPPENING_NOW_CONTENT_HEIGHT;
     } while (num <= HAPPENING_NOW_CONTENT_HEIGHT);
   }
   return items;
@@ -68,138 +73,147 @@ const memoResult = importAllResult.memo((event) => {
     panelVariant = false;
   }
   let creator_id;
-  let tmp = callback2();
+  const tmp = callback2();
   let obj = event(creator_id[11]);
-  let items = [_isNativeReflectConstruct];
+  let items = [_getSystemLocale];
   creator_id = event.host_id;
-  const stateFromStores = obj.useStateFromStores(items, () => outer1_6.locale);
-  if (null == creator_id) {
+  const stateFromStores = obj.useStateFromStores(items, () => locale.locale);
+  if (creator_id == null) {
     creator_id = event.creator_id;
   }
-  let obj1 = event(creator_id[12]);
+  let tmp2Result = tmp2(tmp3[12]);
   if (null != creator_id) {
     const items1 = [creator_id];
     let items2 = items1;
   } else {
     items2 = [];
   }
-  const ensureHydratedUsers = obj1.useEnsureHydratedUsers(event.guild_id, items2);
-  let obj2 = event(creator_id[11]);
-  const items3 = [closure_7];
-  const stateFromStores1 = obj2.useStateFromStores(items3, () => outer1_7.getUser(creator_id));
+  const ensureHydratedUsers = tmp2Result.useEnsureHydratedUsers(event.guild_id, items2);
+  tmp2Result = tmp2(tmp3[11]);
+  const items3 = [mergeGuildAvatar];
+  const stateFromStores1 = tmp2Result.useStateFromStores(items3, () => outer1_7.getUser(creator_id));
   let nextRecurrenceIdInEvent = null;
   if (null != event) {
-    let obj3 = event(creator_id[13]);
-    nextRecurrenceIdInEvent = obj3.getNextRecurrenceIdInEvent(event);
+    nextRecurrenceIdInEvent = tmp2(tmp3[13]).getNextRecurrenceIdInEvent(event);
+    const tmp2Result1 = tmp2(tmp3[13]);
   }
-  const tmp8 = index(creator_id[14])(event.guild_id, event.id, nextRecurrenceIdInEvent);
+  const tmp9 = index(creator_id[14])(event.guild_id, event.id, nextRecurrenceIdInEvent);
   const items4 = [event, index, creator_id];
   let source = null;
   const callback = importAllResult.useCallback(() => {
     let obj = index(creator_id[15]);
-    obj = { order: index, guild_id: event.guild_id, type: outer1_9.GUILD_EVENT_CARD };
-    let tmp = null;
+    obj = { order: index, guild_id: event.guild_id, type: outer1_9.GUILD_EVENT_CARD, highlighted_user_ids: null, destination_channel_id: null };
+    let tmp4 = null;
     if (null != creator_id) {
-      const items = [creator_id];
-      tmp = items;
+      const items = [tmp3];
+      tmp4 = items;
     }
-    obj.highlighted_user_ids = tmp;
-    obj.destination_channel_id = event.channel_id;
+    obj[3] = tmp4;
+    obj[4] = event.channel_id;
     obj.track(outer1_11.ACTIVITY_CARD_CLICKED, obj);
-    obj = { eventId: event.id, event };
+    obj = { eventId: tmp2.id, event: tmp2 };
     const result = event(creator_id[16]).openGuildEventDetails(obj);
   }, items4);
   if (null != event.image) {
-    let obj4 = event(creator_id[17]);
-    source = obj4.makeSource(index(creator_id[18])(event, 200));
+    source = tmp2(tmp3[17]).makeSource(tmp8(tmp3[18])(event, 200));
+    const tmp2Result2 = tmp2(tmp3[17]);
   }
-  let obj5 = event(creator_id[13]);
-  let startDateTimeString = obj5.getEventTimeData(event.scheduled_start_time).startDateTimeString;
+  let startDateTimeString = event(creator_id[13]).getEventTimeData(event.scheduled_start_time).startDateTimeString;
   const items5 = [];
-  let num5 = 0;
+  let num2 = 0;
   if (0 < closure_10) {
     do {
-      let tmp14 = callback;
-      let tmp15 = closure_4;
-      obj = { style: tmp.dottedLineSegment };
-      let arr = items5.push(callback(closure_4, obj, num5));
-      num5 = num5 + 8;
-      let tmp17 = closure_10;
-    } while (num5 < closure_10);
+      let tmp12 = callback;
+      let tmp13 = closure_4;
+      obj = { style: null };
+      obj[0] = tmp.dottedLineSegment;
+      let arr = items5.push(callback(closure_4, obj, num2));
+      num2 = num2 + 8;
+      let tmp15 = closure_10;
+    } while (num2 < closure_10);
   }
-  obj = { onPress: callback };
+  obj = { onPress: callback, width: null, panelVariant: null, children: null };
   let str = "stretchy";
+  const tmp17 = index;
+  const tmp2Result3 = event(creator_id[13]);
+  tmp8 = index;
   if (event.fullwidth) {
     str = "full";
   }
-  obj.width = str;
-  obj.panelVariant = panelVariant;
-  obj1 = { cutouts: items };
-  obj2 = { style: tmp.ticketContainer };
-  obj3 = { style: tmp.avatarContainer };
-  let tmp24 = null != stateFromStores1;
-  const tmp18 = closure_13;
+  obj[1] = str;
+  obj[2] = panelVariant;
+  const obj1 = { cutouts: items, children: null };
+  const obj2 = { style: tmp.ticketContainer, children: null };
+  const obj3 = { style: tmp.avatarContainer, children: null };
+  let tmp22Result = null != stateFromStores1;
   const tmp19 = index(creator_id[19]);
-  if (tmp24) {
-    obj4 = { user: stateFromStores1, avatarDecoration: stateFromStores1.avatarDecoration, guildId: event.guild_id, size: event(creator_id[9]).AvatarSizes.XSMALL_20 };
-    tmp24 = callback(event(creator_id[9]).Avatar, obj4);
+  if (tmp22Result) {
+    const obj4 = { user: null, avatarDecoration: null, guildId: null, size: null };
+    obj4[0] = stateFromStores1;
+    obj4[1] = stateFromStores1.avatarDecoration;
+    obj4[2] = event.guild_id;
+    obj4[3] = event(tmp18[9]).AvatarSizes.XSMALL_20;
+    tmp22Result = tmp22(event(tmp18[9]).Avatar, obj4);
   }
-  obj3.children = tmp24;
+  obj3[1] = tmp22Result;
   const items6 = [callback(closure_4, obj3), ];
-  obj5 = { style: tmp.interestedUsersContainer };
+  const obj5 = { style: tmp.interestedUsersContainer, children: null };
   const items7 = [callback(event(creator_id[20]).GroupIcon, { style: tmp.interestedUsersIcon, size: "xxs" }), ];
-  let tmp30 = tmp8 > 0;
-  if (tmp30) {
-    const obj7 = { color: "mobile-text-heading-primary", variant: "text-xs/semibold", children: event(creator_id[22]).humanizeValue(tmp8, stateFromStores) };
-    tmp30 = callback(event(creator_id[21]).Text, obj7);
-    const obj16 = event(creator_id[22]);
+  tmp22Result = tmp9 > 0;
+  if (tmp22Result) {
+    const obj7 = { color: "mobile-text-heading-primary", variant: "text-xs/semibold", children: null };
+    obj7[2] = tmp25(tmp18[22]).humanizeValue(tmp9, stateFromStores);
+    tmp22Result = tmp22(tmp25(tmp18[21]).Text, obj7);
+    const tmp25Result = tmp25(tmp18[22]);
   }
-  items7[1] = tmp30;
-  obj5.children = items7;
+  items7[1] = tmp22Result;
+  obj5[1] = items7;
   items6[1] = closure_13(closure_4, obj5);
-  obj2.children = items6;
+  obj2[1] = items6;
   const items8 = [closure_13(closure_4, obj2), ];
-  let tmp34 = null == source;
-  if (tmp34) {
-    const obj8 = { style: tmp.dottedLineContainer, children: callback(closure_16, {}) };
-    tmp34 = callback(closure_4, obj8);
+  let tmp22Result1 = null == source;
+  if (tmp22Result1) {
+    const obj8 = { style: null, children: null };
+    obj8[0] = tmp.dottedLineContainer;
+    obj8[1] = tmp22(closure_16, {});
+    tmp22Result1 = tmp22(tmp21, obj8);
   }
-  items8[1] = tmp34;
-  obj1.children = items8;
-  const items9 = [closure_13(index(creator_id[10]), obj1), , ];
-  let tmp38 = null != source;
-  if (tmp38) {
-    const obj9 = { style: tmp.decorationImage, source, resizeMode: "cover" };
-    tmp38 = callback(closure_5, obj9);
+  items8[1] = tmp22Result1;
+  obj1[1] = items8;
+  const items9 = [closure_13(tmp17(creator_id[10]), obj1), , ];
+  let tmp22Result2 = null != source;
+  if (tmp22Result2) {
+    const obj9 = { style: null, source: null, resizeMode: "cover" };
+    obj9[0] = tmp.decorationImage;
+    obj9[1] = source;
+    tmp22Result2 = tmp22(closure_5, obj9);
   }
-  items9[1] = tmp38;
-  const obj10 = { style: null == source ? tmp.infoNoImage : tmp.info };
-  const obj11 = { lineClamp: 3, noMargin: true, children: event.name };
-  const items10 = [callback(event(creator_id[19]).HappeningNowCardHeader, obj11), ];
-  const obj12 = {};
+  items9[1] = tmp22Result2;
+  const obj10 = { style: null == source ? tmp.infoNoImage : tmp.info, children: null };
+  const items10 = [callback(event(creator_id[19]).HappeningNowCardHeader, { lineClamp: 3, noMargin: true, children: event.name }), ];
+  let str2;
+  if (isLive) {
+    str2 = "text-feedback-positive";
+  }
+  const obj12 = { color: str2, variant: null, children: null };
   let str3;
   if (isLive) {
-    str3 = "text-feedback-positive";
+    str3 = "text-xs/bold";
   }
-  obj12.color = str3;
-  let str4;
+  obj12[1] = str3;
   if (isLive) {
-    str4 = "text-xs/bold";
-  }
-  obj12.variant = str4;
-  if (isLive) {
-    const intl = event(creator_id[23]).intl;
+    const intl = tmp25(tmp18[23]).intl;
     const _HermesInternal = HermesInternal;
-    startDateTimeString = "\u00B7 " + intl.string(event(creator_id[23]).t.dI3q4h).toUpperCase();
-    const str5 = intl.string(event(creator_id[23]).t.dI3q4h);
+    startDateTimeString = "\u00B7 " + intl.string(tmp25(tmp18[23]).t.dI3q4h).toUpperCase();
+    const str4 = intl.string(tmp25(tmp18[23]).t.dI3q4h);
   }
-  obj12.children = startDateTimeString;
+  obj12[2] = startDateTimeString;
   items10[1] = callback(event(creator_id[19]).HappeningNowCardSubtitle, obj12);
-  obj10.children = items10;
+  obj10[1] = items10;
   items9[2] = closure_13(closure_4, obj10);
-  obj.children = items9;
-  return tmp18(tmp19, obj);
+  obj[3] = items9;
+  return closure_13(tmp19, obj);
 });
-let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/main_tabs_v2/native/shared_components/happening_now/HappeningNowCardEvent.tsx");
+let result = require("_getSystemLocale").fileFinishedImporting("modules/main_tabs_v2/native/shared_components/happening_now/HappeningNowCardEvent.tsx");
 
 export default memoResult;

@@ -1,11 +1,11 @@
-// Module ID: 8108
-// Function ID: 64323
+// Module ID: 8132
+// Function ID: 8133
 // Name: MediaModalSheetWrapper
-// Dependencies: [31, 653, 33, 5479, 4133, 8109, 2]
+// Dependencies: [19, 676, 21, 5497, 4157, 8133, 2]
 // Exports: default
 
-// Module 8108 (MediaModalSheetWrapper)
-import result from "result";
+// Module 8132 (MediaModalSheetWrapper)
+import noop from "noop";
 import { MEDIA_MODAL_KEY } from "ME";
 import { jsx } from "jsxProd";
 
@@ -13,29 +13,28 @@ const result = require("jsxProd").fileFinishedImporting("modules/media_viewer/na
 
 export default function MediaModalSheetWrapper(onCloseCallback) {
   onCloseCallback = onCloseCallback.onCloseCallback;
-  let obj = Object.create(null);
-  obj.onCloseCallback = 0;
-  const merged = Object.assign(onCloseCallback, obj);
+  const merged = Object.assign(onCloseCallback, Object.create(null));
+  let context;
   context = React.useContext(onCloseCallback(context[3]));
   const items = [context];
   const effect = React.useEffect(() => {
     let transitionState;
-    if (null != context) {
-      transitionState = context.transitionState;
+    if (context != null) {
+      transitionState = obj.transitionState;
     }
     if ("exiting" === transitionState) {
-      context.onLeave();
+      obj.onLeave();
     }
   }, items);
   const items1 = [onCloseCallback];
   const callback = React.useCallback(() => {
-    if (null != onCloseCallback) {
-      onCloseCallback();
+    if (onCloseCallback != null) {
+      tmp();
     }
     onCloseCallback(context[4]).hideActionSheet(outer1_3);
   }, items1);
-  obj = {};
+  const obj = {};
   const merged1 = Object.assign(merged);
-  obj["onClose"] = callback;
+  obj.onClose = callback;
   return jsx(onCloseCallback(context[5]), {});
 };

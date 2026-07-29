@@ -1,28 +1,31 @@
-// Module ID: 16278
-// Function ID: 126109
-// Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 1923, 10082, 5112, 2]
+// Module ID: 16313
+// Function ID: 16314
+// Name: _initialize
+// Dependencies: [1947, 5134, 10103, 2]
 
-// Module 16278 (_isNativeReflectConstruct)
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import AutomaticLifecycleManager from "AutomaticLifecycleManager";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
-import { subscribeToIntlLoadingSuccess as closure_7 } from "_setAppLocale";
-import tmp2 from "AutomaticLifecycleManager";
+// Module 16313 (_initialize)
+import { subscribeToIntlLoadingSuccess as closure_2 } from "_setAppLocale";
+import "initialize";
 
-const require = arg1;
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
+class SearchTokensManager extends tmp2 {
+  constructor() {
+    applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
+    obj = { USER_SETTINGS_PROTO_UPDATE: require("SearchTokenTypes").refreshSearchTokens, POST_CONNECTION_OPEN: require("SearchTokenTypes").refreshSearchTokens };
+    applyArgumentsResult.actions = obj;
+    return applyArgumentsResult;
   }
-  const result = _isNativeReflectConstruct();
 }
-tmp2 = new tmp2();
-let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/search/managers/SearchTokensManager.tsx");
+const prototype = SearchTokensManager.prototype;
+prototype["_initialize"] = function _initialize() {
+  this._unsubscribeIntlLoadingStore = callback(require(10103) /* SearchTokenTypes */.refreshSearchTokens);
+};
+prototype["_terminate"] = function _terminate() {
+  const _unsubscribeIntlLoadingStore = this._unsubscribeIntlLoadingStore;
+  if (_unsubscribeIntlLoadingStore != null) {
+    const result = _unsubscribeIntlLoadingStore();
+  }
+};
+const searchTokensManager = new SearchTokensManager();
+let result = require("SearchTokenTypes").fileFinishedImporting("modules/search/managers/SearchTokensManager.tsx");
 
-export default tmp2;
+export default searchTokensManager;

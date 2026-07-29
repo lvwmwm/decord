@@ -1,21 +1,21 @@
-// Module ID: 5194
-// Function ID: 45080
+// Module ID: 5216
+// Function ID: 5217
 // Name: getKeyboardDuration
-// Dependencies: [1453, 477, 1454, 2]
+// Dependencies: [1477, 500, 1478, 2]
 // Exports: getKeyboardDuration
 
-// Module 5194 (getKeyboardDuration)
-const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/keyboard/native/useKeyboardDuration.tsx");
+// Module 5216 (getKeyboardDuration)
+const result = require("computeEntryState").fileFinishedImporting("modules/keyboard/native/useKeyboardDuration.tsx");
 
 export const getKeyboardDuration = function getKeyboardDuration() {
   let DEFAULT_APP_ENTRY_KEY = arg0;
   if (arg0 === undefined) {
-    DEFAULT_APP_ENTRY_KEY = require(1453) /* context */.DEFAULT_APP_ENTRY_KEY;
+    DEFAULT_APP_ENTRY_KEY = require(1477) /* context */.DEFAULT_APP_ENTRY_KEY;
   }
-  let num2 = 300;
+  let num = 300;
   if (!obj.isAndroid()) {
-    num2 = importDefault(1454).getState().byAppEntry[DEFAULT_APP_ENTRY_KEY].keyboardDuration;
-    const obj2 = importDefault(1454);
+    num = importDefault(1478).getState().byAppEntry[DEFAULT_APP_ENTRY_KEY].keyboardDuration;
+    const obj2 = importDefault(1478);
   }
-  return num2;
+  return num;
 };

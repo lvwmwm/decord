@@ -1,33 +1,33 @@
-// Module ID: 11028
-// Function ID: 85558
+// Module ID: 11052
+// Function ID: 11053
 // Name: getPromiseableActionHandlers
-// Dependencies: [31, 11029, 33, 4372, 11033, 1935, 4506, 11036, 2]
+// Dependencies: [19, 11053, 21, 4395, 11057, 1959, 4529, 11060, 2]
 // Exports: getPromiseableActionHandlers, openAutomodProfileQuarantineAlert, openConfirmRemoveMentionRaid, openRaidResolveModal, openSubmitFeedback
 
-// Module 11028 (getPromiseableActionHandlers)
-import "result";
+// Module 11052 (getPromiseableActionHandlers)
+import "noop";
 import AutomodEventType from "AutomodEventType";
 import { jsx } from "jsxProd";
 
-let closure_3;
-let closure_4;
+let c3;
+let c4;
 const require = arg1;
-({ AutomodActionType: closure_3, SUBMIT_FEEDBACK_MODAL_KEY: closure_4 } = AutomodEventType);
+({ AutomodActionType: c3, SUBMIT_FEEDBACK_MODAL_KEY: c4 } = AutomodEventType);
 const result = require("jsxProd").fileFinishedImporting("modules/guild_automod/GuildAutomodActionActionCreators.native.tsx");
 
 export const getPromiseableActionHandlers = function getPromiseableActionHandlers() {
   return { [closure_3.BLOCK_MESSAGE]: null, [closure_3.FLAG_TO_CHANNEL]: null, [closure_3.USER_COMMUNICATION_DISABLED]: null };
 };
 export const openSubmitFeedback = function openSubmitFeedback(messageId, content, decisionId, channel) {
-  let obj = importDefault(4372);
+  let obj = importDefault(4395);
   obj = {
     onCloseModal() {
-      outer1_1(outer1_2[3]).popWithKey(outer1_4);
+      callback(table[3]).popWithKey(closure_4);
     },
     automodDecision: obj
   };
   obj = { messageId, messageContent: content, decisionId, channel };
-  obj.pushLazy(require(1935) /* maybeLoadBundle */(11033, dependencyMap.paths), obj, closure_4);
+  obj.pushLazy(require(1959) /* asyncRequireImpl */(11057, dependencyMap.paths), obj, closure_4);
 };
 export function openRaidResolveModal() {
 
@@ -37,7 +37,7 @@ export function openConfirmRemoveMentionRaid(arg0) {
 }
 export const openAutomodProfileQuarantineAlert = function openAutomodProfileQuarantineAlert(guildId) {
   let closure_0 = guildId;
-  let obj = importDefault(4506);
+  let obj = importDefault(4529);
   obj = {
     importer() {
       return guildId(outer1_2[5])(outer1_2[7], outer1_2.paths).then((arg0) => {
@@ -45,8 +45,8 @@ export const openAutomodProfileQuarantineAlert = function openAutomodProfileQuar
         return (arg0) => {
           const obj = {};
           const merged = Object.assign(arg0);
-          obj["guildId"] = outer2_0;
-          return outer3_5(closure_0, obj);
+          obj.guildId = closure_0;
+          return outer2_5(closure_0, obj);
         };
       });
     }

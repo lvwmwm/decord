@@ -1,11 +1,11 @@
-// Module ID: 5931
-// Function ID: 52485
+// Module ID: 5950
+// Function ID: 5951
 // Name: maybeDispatchDevOnlyDummyFriendSuggestions
-// Dependencies: [1850, 2]
+// Dependencies: [1874, 2]
 // Exports: default
 
-// Module 5931 (maybeDispatchDevOnlyDummyFriendSuggestions)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 5950 (maybeDispatchDevOnlyDummyFriendSuggestions)
+import mergeGuildAvatar from "mergeGuildAvatar";
 
 const result = require("set").fileFinishedImporting("modules/friend_suggestions/maybeDispatchDevOnlyDummyFriendSuggestions.tsx");
 

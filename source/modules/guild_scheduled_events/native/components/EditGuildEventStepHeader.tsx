@@ -1,37 +1,39 @@
-// Module ID: 8278
-// Function ID: 66200
+// Module ID: 8302
+// Function ID: 8303
 // Name: EditGuildEventStepHeader
-// Dependencies: [31, 27, 33, 4165, 4161, 2]
+// Dependencies: [19, 17, 21, 4189, 4185, 2]
 // Exports: default
 
-// Module 8278 (EditGuildEventStepHeader)
-import "result";
+// Module 8302 (EditGuildEventStepHeader)
+import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_3;
-let closure_4;
+let c3;
+let c4;
 const require = arg1;
-({ jsx: closure_3, jsxs: closure_4 } = jsxProd);
-let closure_5 = _createForOfIteratorHelperLoose.createStyles({ header: { alignItems: "center", paddingBottom: 24 }, headerTitle: { marginTop: 8, marginBottom: 8 }, headerSubtitle: { textAlign: "center" } });
+({ jsx: c3, jsxs: c4 } = jsxProd);
+let closure_5 = createCacheKey.createStyles({ header: { alignItems: "center", paddingBottom: 24 }, headerTitle: { marginTop: 8, marginBottom: 8 }, headerSubtitle: { textAlign: "center" } });
 const result = require("jsxProd").fileFinishedImporting("modules/guild_scheduled_events/native/components/EditGuildEventStepHeader.tsx");
 
-export default function EditGuildEventStepHeader(subtitle) {
-  subtitle = subtitle.subtitle;
+export default function EditGuildEventStepHeader(children) {
+  const subtitle = children.subtitle;
   const tmp = callback2();
-  let obj = { style: tmp.header };
-  obj = { style: tmp.headerTitle, accessibilityRole: "header", variant: "heading-xl/semibold", color: "mobile-text-heading-primary", children: subtitle.title };
-  const items = [callback(require(4161) /* Text */.Text, obj), ];
-  let tmp4 = null;
+  let obj = { style: tmp.header, children: null };
+  obj = { style: tmp.headerTitle, accessibilityRole: "header", variant: "heading-xl/semibold", color: "mobile-text-heading-primary", children: children.title };
+  const items = [callback(require(4185) /* Text */.Text, obj), ];
+  let tmp4Result = null;
   if (null != subtitle) {
-    tmp4 = null;
+    tmp4Result = null;
     if ("" !== subtitle) {
-      obj = { style: tmp.headerSubtitle, variant: "text-sm/medium", color: "text-default", children: subtitle };
-      tmp4 = callback(require(4161) /* Text */.Text, obj);
+      obj = { style: null, variant: "text-sm/medium", color: "text-default", children: null };
+      obj[0] = tmp.headerSubtitle;
+      obj[3] = subtitle;
+      tmp4Result = callback(require(4185) /* Text */.Text, obj);
     }
   }
-  items[1] = tmp4;
-  obj.children = items;
+  items[1] = tmp4Result;
+  obj[1] = items;
   return closure_4(View, obj);
 };

@@ -1,11 +1,11 @@
-// Module ID: 7803
-// Function ID: 61840
+// Module ID: 7826
+// Function ID: 7827
 // Name: createInGameMessageNuxSystemMessage
-// Dependencies: [4202, 653, 7713, 7720, 7722, 1921, 1212, 7723, 2]
+// Dependencies: [4226, 676, 7736, 7743, 7745, 1945, 1236, 7746, 2]
 // Exports: createInGameMessageNuxSystemMessage
 
-// Module 7803 (createInGameMessageNuxSystemMessage)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 7826 (createInGameMessageNuxSystemMessage)
+import addApplication from "addApplication";
 import { HelpdeskArticles } from "ME";
 
 const require = arg1;
@@ -16,28 +16,33 @@ export const createInGameMessageNuxSystemMessage = function createInGameMessageN
   let theme;
   message = message.message;
   ({ theme, roleStyle } = message);
-  const applicationId = message.applicationId;
-  let str = "";
-  if (null != applicationId) {
-    str = applicationId;
+  let str = message.applicationId;
+  if (str == null) {
+    str = "";
   }
   application = application.getApplication(str);
   if (null == application) {
     return null;
   } else {
-    let obj = require(7720) /* getMessageAuthorWithProcessedColor */;
+    let obj = require(7743) /* getMessageAuthorWithProcessedColor */;
     const messageAuthorWithProcessedColor = obj.getMessageAuthorWithProcessedColor(message);
-    obj = { username: messageAuthorWithProcessedColor.nick };
-    obj = { message, author: messageAuthorWithProcessedColor, roleStyle };
-    obj.usernameOnClick = importDefault(7722)(obj);
-    obj.gameName = application.name;
-    const obj1 = { action: "bindOpenUrl", url: importDefault(1921).getArticleURL(HelpdeskArticles.SOCIAL_LAYER_CONNECTIONS), linkColor: tmp.linkColor, medium: true };
-    obj.urlOnClick = obj1;
-    const obj2 = {};
-    const intl = require(1212) /* getSystemLocale */.intl;
-    obj2.content = intl.formatToParts(require(1212) /* getSystemLocale */.t["92erOB"], obj);
-    const merged = Object.assign(importDefault(7723)(message));
+    obj = { username: null, usernameOnClick: null, gameName: null, urlOnClick: null };
+    obj[0] = messageAuthorWithProcessedColor.nick;
+    obj = { message: null, author: null, roleStyle: null };
+    obj[0] = message;
+    obj[1] = messageAuthorWithProcessedColor;
+    obj[2] = roleStyle;
+    obj[1] = tmp(7745)(obj);
+    obj[2] = application.name;
+    const obj1 = { action: "bindOpenUrl", url: null, linkColor: null, medium: true };
+    obj1[1] = tmp(1945).getArticleURL(HelpdeskArticles.SOCIAL_LAYER_CONNECTIONS);
+    obj1[2] = tmp3.linkColor;
+    obj[3] = obj1;
+    const obj2 = { content: null };
+    const intl = require(1236) /* getSystemLocale */.intl;
+    obj2[0] = intl.formatToParts(require(1236) /* getSystemLocale */.t["92erOB"], obj);
+    const merged = Object.assign(tmp(7746)(message));
     return obj2;
   }
-  tmp = importDefault(7713)(theme);
+  tmp3 = importDefault(7736)(theme);
 };

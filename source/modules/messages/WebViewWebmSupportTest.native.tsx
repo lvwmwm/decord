@@ -1,43 +1,45 @@
-// Module ID: 4353
-// Function ID: 37966
+// Module ID: 4378
+// Function ID: 4379
 // Name: isIOSWithWebM
-// Dependencies: [477, 4145, 2]
+// Dependencies: [500, 4169, 2]
 // Exports: isIOSWithWebM
 
-// Module 4353 (isIOSWithWebM)
+// Module 4378 (isIOSWithWebM)
+const ARM64_ = "ARM64_";
 const result = require("set").fileFinishedImporting("modules/messages/WebViewWebmSupportTest.native.tsx");
 
 export const isIOSWithWebM = function isIOSWithWebM() {
   if (obj.isIOS()) {
-    const str = require(4145) /* getSystemVersion */.getSocName();
+    const str = tmp(4169).getSocName();
     let tmp4 = null == str;
     if (!tmp4) {
-      tmp4 = !str.startsWith("ARM64_");
+      tmp4 = !str.startsWith(ARM64_);
     }
     if (!tmp4) {
-      const str3 = str.substring(6);
-      let tmp5 = "T" !== str3[0];
-      if (tmp5) {
-        tmp5 = "S" !== str3[0];
+      const str2 = str.substring(6);
+      let tmp6 = "T" !== str2[0];
+      if (tmp6) {
+        tmp6 = "S" !== str2[0];
       }
-      if (!tmp5) {
-        const substr = str3.substring(1);
-        let tmp7 = "7" !== substr[0];
-        if (tmp7) {
-          let tmp8 = "8" !== substr[0];
-          if (!tmp8) {
+      if (!tmp6) {
+        const substr = str2.substring(1);
+        let tmp8 = "7" !== substr[0];
+        if (tmp8) {
+          let tmp9 = "8" !== substr[0];
+          if (!tmp9) {
             const _parseInt = parseInt;
-            tmp8 = parseInt(substr, 10) >= 8101;
+            tmp9 = parseInt(substr, 10) >= 8101;
           }
-          tmp7 = tmp8;
+          tmp8 = tmp9;
         }
-        tmp5 = tmp7;
+        tmp6 = tmp8;
       }
-      tmp4 = tmp5;
+      tmp4 = tmp6;
     }
     return tmp4;
   } else {
     return false;
   }
-  obj = require(477) /* set */;
+  obj = require(500) /* set */;
+  tmp = require;
 };

@@ -1,24 +1,25 @@
-// Module ID: 7955
-// Function ID: 63138
+// Module ID: 7980
+// Function ID: 7981
 // Name: useDominantRGBFromImage
-// Dependencies: [57, 31, 27, 653, 33, 4165, 22, 7956, 7957, 4009, 689, 1324, 7958, 7963, 7959, 1273, 4589, 2]
+// Dependencies: [32, 19, 17, 676, 21, 4189, 12, 7981, 7982, 4033, 712, 1348, 7983, 7988, 7984, 1297, 4611, 2]
+// Exports: useDominantColorFromImage
 
-// Module 7955 (useDominantRGBFromImage)
+// Module 7980 (useDominantRGBFromImage)
 import _slicedToArray from "_slicedToArray";
-import importAllResult from "result";
-import get_ActivityIndicator from "get ActivityIndicator";
+import importAllResult from "noop";
+import get_ActivityIndicator from "set";
 import ME from "ME";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import importDefaultResult from "apply";
+import createCacheKey from "createCacheKey";
+import importDefaultResult from "useDisplayProfile";
 
-let closure_10;
-let closure_11;
-let closure_5;
+let c10;
+let c5;
+let c9;
 let closure_6;
-let closure_7;
-let closure_8;
-let closure_9;
+let error;
+let metroImportAll;
+let unpackModuleId;
 const require = arg1;
 function useDominantRGBFromImage(arg0, arg1) {
   const _require = arg0;
@@ -28,59 +29,58 @@ function useDominantRGBFromImage(arg0, arg1) {
     first = arg1[0];
     tmp = first;
   }
-  let tmp3 = first(7956)();
-  const dependencyMap = tmp3;
+  const tmp5 = first(7981)();
+  const dependencyMap = tmp5;
   let hexToRgbResult;
   if (null != arg0) {
-    hexToRgbResult = first(7957).cachedDominantColors[arg0];
+    hexToRgbResult = tmp3(7982).cachedDominantColors[arg0];
   }
-  if (null == hexToRgbResult) {
-    hexToRgbResult = _require(4009).hexToRgb(first(689).unsafe_rawColors.PRIMARY_800);
-    let obj = _require(4009);
+  if (hexToRgbResult == null) {
+    hexToRgbResult = _require(4033).hexToRgb(tmp3(712).unsafe_rawColors.PRIMARY_800);
+    const obj2 = _require(4033);
   }
-  const tmp11 = callback(importAllResult.useState(hexToRgbResult), 2);
-  callback = tmp11[1];
-  const items = [tmp, arg0, tmp3];
+  const tmp8 = callback(importAllResult.useState(hexToRgbResult), 2);
+  callback = tmp8[1];
+  const items = [tmp, arg0, tmp5];
   const effect = importAllResult.useEffect(() => {
-    let tmp = null != first;
-    if (tmp) {
-      tmp = null != closure_0;
+    let tmp2 = null != first;
+    if (tmp2) {
+      tmp2 = null != closure_0;
     }
-    if (tmp) {
-      if (null == first(first[8]).cachedDominantColors[closure_0]) {
-        if ("number" === typeof first) {
-          const ImageManager2 = outer1_6.ImageManager;
-          let dominantColorsLocalAsset = ImageManager2.getDominantColorsLocalAsset(outer1_7.resolveAssetSource(first));
-        } else {
+    if (tmp2) {
+      if (null == first(tmp5[8]).cachedDominantColors[closure_0]) {
+        if (typeof tmp === "Object") {
           const ImageManager = outer1_6.ImageManager;
-          dominantColorsLocalAsset = ImageManager.getDominantColors(outer1_7.resolveAssetSource(first));
+          let dominantColorsLocalAsset = ImageManager.getDominantColorsLocalAsset(outer1_7.resolveAssetSource(tmp));
+        } else {
+          const ImageManager2 = outer1_6.ImageManager;
+          dominantColorsLocalAsset = ImageManager2.getDominantColors(outer1_7.resolveAssetSource(tmp));
         }
         dominantColorsLocalAsset.then((arg0) => {
-          if (outer1_2()) {
-            const tmp3 = callback(arg0[0], 3);
-            const obj = { r: tmp3[0], g: tmp3[1], b: tmp3[2] };
-            outer1_3(obj);
-            first(table[8]).cachedDominantColors[outer1_0] = obj;
+          if (callback()) {
+            const obj = { r: null, g: null, b: null };
+            [obj[0], obj[1], obj[2]] = outer1_3(arg0[0], 3);
+            callback2(obj);
+            outer1_1(outer1_2[8]).cachedDominantColors[closure_0] = obj;
+            const tmp3 = outer1_3(arg0[0], 3);
           }
         }).catch(outer1_9);
         const nextPromise = dominantColorsLocalAsset.then((arg0) => {
-          if (outer1_2()) {
-            const tmp3 = callback(arg0[0], 3);
-            const obj = { r: tmp3[0], g: tmp3[1], b: tmp3[2] };
-            outer1_3(obj);
-            first(table[8]).cachedDominantColors[outer1_0] = obj;
+          if (callback()) {
+            const obj = { r: null, g: null, b: null };
+            [obj[0], obj[1], obj[2]] = outer1_3(arg0[0], 3);
+            callback2(obj);
+            outer1_1(outer1_2[8]).cachedDominantColors[closure_0] = obj;
+            const tmp3 = outer1_3(arg0[0], 3);
           }
         });
       } else {
-        callback(first(tmp3[8]).cachedDominantColors[closure_0]);
+        callback(tmp4(tmp5[8]).cachedDominantColors[tmp6]);
       }
+      tmp4 = first;
     }
   }, items);
-  return tmp11[0];
-}
-function useDominantColorFromImage(arg0, arg1) {
-  const tmp = useDominantRGBFromImage(arg0, arg1);
-  return "rgb(" + tmp.r + ", " + tmp.g + ", " + tmp.b + ")";
+  return tmp8[0];
 }
 class VideoBackground {
   constructor(arg0) {
@@ -90,168 +90,165 @@ class VideoBackground {
     }
     ({ user, guildId } = global);
     renderVideoDetails = global.renderVideoDetails;
-    obj = { style: 0, url: 0, isStageCall: 0, avatarStyle: 0, user: 0, guildId: 0, renderVideoDetails: 0 };
-    setPrototypeOfResult = Object.setPrototypeOf(null);
-    merged = Object.assign(global, obj);
+    merged = Object.assign(global, Object.create(null));
     c1 = undefined;
     id = undefined;
-    tmp3 = c12();
-    tmp4 = f63145(url);
-    tmp5 = useDominantColorFromImage(url, tmp4);
-    tmp6 = require("useIsMobileVisualRefreshExperimentEnabled")("VideoBackground-native");
-    c1 = tmp6;
+    tmp2 = jsxs();
+    tmp3 = f42901(url);
+    tmp4 = useDominantRGBFromImage(url, tmp3);
+    combined = "rgb(" + tmp4.r + ", " + tmp4.g + ", " + tmp4.b + ")";
+    tmp6 = c1;
+    tmp7 = id;
+    tmp8 = require("useIsMobileVisualRefreshExperimentEnabled")("VideoBackground-native");
+    c1 = tmp8;
     id = undefined;
-    if (null != user) {
+    if (user != null) {
       id = user.id;
     }
-    if (null == id) {
+    if (id == null) {
       id = EMPTY_STRING_SNOWFLAKE_ID;
     }
-    tmp8 = require("useDisplayProfile")(id, guildId);
+    tmp10 = require("useDisplayProfile")(id, guildId);
     first = undefined;
-    if (null != tmp8) {
-      themeColors = tmp8.themeColors;
-      if (null != themeColors) {
+    if (tmp10 != null) {
+      themeColors = tmp10.themeColors;
+      if (themeColors != null) {
         first = themeColors[0];
       }
     }
-    tmp10 = null;
-    if (null != first) {
-      tmp10 = first;
+    if (first == null) {
+      first = null;
     }
-    tmp11 = undefined;
-    if (null != tmp8) {
-      themeColors2 = tmp8.themeColors;
-      if (null != themeColors2) {
-        num = 1;
-        tmp11 = themeColors2[1];
+    tmp12 = undefined;
+    if (tmp10 != null) {
+      themeColors2 = tmp10.themeColors;
+      if (themeColors2 != null) {
+        tmp12 = themeColors2[1];
       }
     }
-    tmp12 = null;
-    if (null != tmp11) {
-      tmp12 = tmp11;
+    if (tmp12 == null) {
+      tmp12 = null;
     }
-    tmp13 = tmp6;
-    if (tmp6) {
-      tmp13 = null != tmp10;
+    tmp13 = tmp8;
+    if (tmp8) {
+      tmp13 = null != first;
     }
     if (tmp13) {
       tmp13 = null != tmp12;
     }
-    obj2 = require("rgbToHex");
-    tmp14 = null;
-    if (tmp13) {
-      tmp14 = tmp10;
-    }
+    tmp14 = guildId;
+    obj = require("rgbToHex");
     tmp15 = null;
     if (tmp13) {
-      tmp15 = tmp12;
+      tmp15 = first;
     }
-    videoTileGradientColors = obj2.useVideoTileGradientColors(tmp14, tmp15);
+    tmp16 = null;
+    if (tmp13) {
+      tmp16 = tmp12;
+    }
+    videoTileGradientColors = obj.useVideoTileGradientColors(tmp15, tmp16);
     items = [, , ];
-    items[0] = tmp6;
+    items[0] = tmp8;
     items[1] = id;
     items[2] = guildId;
-    effect = defineProperty.useEffect(() => {
-      if (tmp) {
-        const obj = { guildId, dispatchWait: true };
+    effect = __esModule.useEffect(() => {
+      let tmp2 = id !== outer1_8;
+      if (tmp2) {
+        tmp2 = _undefined;
+      }
+      if (tmp2) {
+        const obj = { guildId: null, dispatchWait: true };
+        obj[0] = guildId;
         _undefined(id[14])(id, undefined, obj);
       }
     }, items);
-    if (null == tmp4) {
+    if (null == tmp3) {
       return null;
     } else {
       renderVideoDetailsResult = undefined;
-      if (null != renderVideoDetails) {
+      if (renderVideoDetails != null) {
         renderVideoDetailsResult = renderVideoDetails();
       }
-      tmp19 = null;
-      if (null != renderVideoDetailsResult) {
-        tmp19 = renderVideoDetailsResult;
+      if (renderVideoDetailsResult == null) {
+        renderVideoDetailsResult = null;
       }
       items1 = [, , , ];
       items1[0] = global.style;
-      items1[1] = tmp3.videoBackground;
+      items1[1] = tmp2.videoBackground;
       tmp20 = null;
       if (!tmp13) {
-        obj = {};
-        obj.backgroundColor = tmp5;
+        obj = { backgroundColor: null };
+        obj[0] = combined;
         tmp20 = obj;
       }
       items1[2] = tmp20;
       videoDetailsSpacer = null;
-      if (null != tmp19) {
-        videoDetailsSpacer = tmp3.videoDetailsSpacer;
+      if (null != renderVideoDetailsResult) {
+        videoDetailsSpacer = tmp2.videoDetailsSpacer;
       }
       items1[3] = videoDetailsSpacer;
       tmp22 = null;
       if (isStageCall) {
         tmp22 = null;
         if (!tmp13) {
-          obj1 = {};
-          obj1.backgroundColor = tmp5;
+          obj1 = { backgroundColor: null };
+          obj1[0] = combined;
           tmp22 = obj1;
         }
       }
       tmp23 = jsx;
-      tmp24 = guildId;
-      tmp25 = id;
-      num2 = 15;
-      obj2 = {};
-      obj2.source = tmp4;
-      tmp26 = obj2;
-      tmp27 = merged;
+      obj2 = { source: null };
+      obj2[0] = tmp3;
+      tmp24 = obj2;
+      tmp25 = merged;
       merged1 = Object.assign(merged);
       items2 = [, ];
       items2[0] = global.avatarStyle;
       items2[1] = tmp22;
-      str = "avatarStyle";
-      obj2["avatarStyle"] = items2;
-      str2 = "isStageCall";
-      obj2["isStageCall"] = isStageCall;
-      tmp29 = jsx(require("Button").Avatar, obj2);
+      obj2.avatarStyle = items2;
+      obj2.isStageCall = isStageCall;
+      tmp27 = jsx(require("Button").Avatar, obj2);
       if (null != videoTileGradientColors) {
-        tmp33 = jsxs;
-        tmp34 = c1;
-        tmp35 = id;
-        num3 = 16;
-        obj3 = {};
-        obj3.colors = videoTileGradientColors;
-        obj3.start = { x: 0, y: 0 };
-        obj3.end = { x: 0, y: 1 };
-        obj3.style = items1;
+        tmp31 = jsxs;
+        obj3 = { colors: null, start: null, end: null, style: null, children: null };
+        obj3[0] = videoTileGradientColors;
+        obj3[1] = { x: 0, y: 0 };
+        obj3[2] = { x: 0, y: 1 };
+        obj3[3] = items1;
         items3 = [, ];
-        items3[0] = tmp29;
-        items3[1] = tmp19;
-        obj3.children = items3;
-        tmp32 = jsxs(require("LinearGradient"), obj3);
+        items3[0] = tmp27;
+        items3[1] = renderVideoDetailsResult;
+        obj3[4] = items3;
+        tmp30 = jsxs(require("LinearGradient"), obj3);
       } else {
-        tmp30 = jsxs;
-        tmp31 = View;
-        obj4 = {};
-        obj4.style = items1;
+        tmp28 = jsxs;
+        tmp29 = View;
+        obj4 = { style: null, children: null };
+        obj4[0] = items1;
         items4 = [, ];
-        items4[0] = tmp29;
-        items4[1] = tmp19;
-        obj4.children = items4;
-        tmp32 = jsxs(View, obj4);
+        items4[0] = tmp27;
+        items4[1] = renderVideoDetailsResult;
+        obj4[1] = items4;
+        tmp30 = jsxs(View, obj4);
       }
-      return tmp32;
+      return tmp30;
     }
   }
 }
-({ View: closure_5, NativeModules: closure_6, Image: closure_7 } = get_ActivityIndicator);
-({ EMPTY_STRING_SNOWFLAKE_ID: closure_8, NOOP: closure_9 } = ME);
-({ jsx: closure_10, jsxs: closure_11 } = jsxProd);
-let closure_12 = _createForOfIteratorHelperLoose.createStyles({ videoBackground: { alignItems: "center" }, videoDetailsSpacer: { paddingTop: 12 } });
-const memoizeResult = require("apply").memoize((uri) => {
+let c4 = importAllResult;
+({ View: c5, NativeModules: closure_6, Image: error } = get_ActivityIndicator);
+({ EMPTY_STRING_SNOWFLAKE_ID: metroImportAll, NOOP: c9 } = ME);
+({ jsx: c10, jsxs: unpackModuleId } = jsxProd);
+let closure_12 = createCacheKey.createStyles({ videoBackground: { alignItems: "center" }, videoDetailsSpacer: { paddingTop: 12 } });
+const memoizeResult = require("useDisplayProfile").memoize((arg0) => {
   let tmp = null;
-  if (null != uri) {
+  if (null != arg0) {
     tmp = null;
-    if ("" !== uri) {
-      let tmp2 = uri;
-      if ("number" !== typeof uri) {
-        const obj = { uri };
+    if ("" !== arg0) {
+      let tmp2 = arg0;
+      if (typeof arg0 !== "Object") {
+        const obj = { uri: null };
+        obj[0] = arg0;
         tmp2 = obj;
       }
       tmp = tmp2;
@@ -267,4 +264,7 @@ export default memoResult;
 export const AvatarSizes = require("Button").AvatarSizes;
 export const memoizedImageSource = memoizeResult;
 export { useDominantRGBFromImage };
-export { useDominantColorFromImage };
+export const useDominantColorFromImage = function useDominantColorFromImage(arg0, arg1) {
+  const tmp = useDominantRGBFromImage(arg0, arg1);
+  return "rgb(" + tmp.r + ", " + tmp.g + ", " + tmp.b + ")";
+};

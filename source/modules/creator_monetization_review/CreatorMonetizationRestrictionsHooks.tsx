@@ -1,78 +1,83 @@
-// Module ID: 12594
-// Function ID: 97261
-// Name: useCreatorMonetizationRestrictions
-// Dependencies: [31, 3787, 1838, 653, 12595, 12596, 566, 3786, 2]
+// Module ID: 12616
+// Function ID: 12617
+// Name: useShouldHideGuildPurchaseEntryPoints
+// Dependencies: [19, 3811, 1862, 676, 12617, 12618, 589, 3810, 2]
 // Exports: useIsMonetizationReapplicationDisabled, useShouldHideGuildPurchaseEntryPoints, useShouldRestrictUpdatingCreatorMonetizationSettings
 
-// Module 12594 (useCreatorMonetizationRestrictions)
-import result from "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import { FetchState } from "_isNativeReflectConstruct";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+// Module 12616 (useShouldHideGuildPurchaseEntryPoints)
+import noop from "noop";
+import makeGroupListingIndexSubscriptionListingTag from "makeGroupListingIndexSubscriptionListingTag";
+import { FetchState } from "makeGroupListingIndexSubscriptionListingTag";
+import createGuildRecordFromRust from "createGuildRecordFromRust";
 import ME from "ME";
 
-let closure_8;
-let closure_9;
+let c9;
+let metroImportAll;
 const require = arg1;
-function useCreatorMonetizationRestrictions(has) {
-  const _require = has;
-  const tmp = importDefault(12595)();
-  importDefault = tmp;
-  const items = [has, tmp];
+({ EMPTY_STRING_SNOWFLAKE_ID: metroImportAll, GuildFeatures: c9 } = ME);
+let result = require("createGuildRecordFromRust").fileFinishedImporting("modules/creator_monetization_review/CreatorMonetizationRestrictionsHooks.tsx");
+
+export const useShouldHideGuildPurchaseEntryPoints = function useShouldHideGuildPurchaseEntryPoints(id2) {
+  let has = id2;
+  let obj = has(589);
+  const items = [createGuildRecordFromRust];
+  const items1 = [id2];
+  has = obj.useStateFromStores(items, () => outer1_7.getGuild(has), items1);
+  let importDefault;
+  let id;
+  const tmp3 = importDefault(12617)();
+  importDefault = tmp3;
+  const items2 = [has, tmp3];
   const effect = React.useEffect(() => {
-    let hasItem = null != has;
+    let hasItem = null != stateFromStores;
     if (hasItem) {
-      const features = has.features;
+      const features = tmp.features;
       hasItem = features.has(outer1_9.CREATOR_MONETIZABLE_RESTRICTED);
     }
     if (hasItem) {
-      hasItem = outer1_5.getMonetizationRestrictionsFetchState(has.id) === outer1_6.NOT_FETCHED;
+      hasItem = outer1_5.getMonetizationRestrictionsFetchState(tmp.id) === outer1_6.NOT_FETCHED;
     }
     if (hasItem) {
       let obj = id(outer1_3[5]);
-      obj = { signal: closure_1 };
-      const monetizationRestrictions = obj.fetchMonetizationRestrictions(has.id, obj);
+      obj = { signal: null };
+      obj[0] = c1;
+      const monetizationRestrictions = obj.fetchMonetizationRestrictions(tmp.id, obj);
     }
-  }, items);
-  let id;
-  if (null != has) {
+  }, items2);
+  id = undefined;
+  if (has != null) {
     id = has.id;
   }
-  let obj = {};
-  const items1 = [_isNativeReflectConstruct];
-  obj.restrictions = _require(566).useStateFromStoresArray(items1, () => {
-    let monetizationRestrictions = outer1_5.getMonetizationRestrictions(null != id ? id : outer1_8);
-    if (null == monetizationRestrictions) {
+  let tmpResult = tmp(589);
+  const items3 = [makeGroupListingIndexSubscriptionListingTag];
+  const stateFromStoresArray = tmpResult.useStateFromStoresArray(items3, () => {
+    let tmp2 = id;
+    if (id == null) {
+      tmp2 = outer1_8;
+    }
+    let monetizationRestrictions = outer1_5.getMonetizationRestrictions(tmp2);
+    if (monetizationRestrictions == null) {
       monetizationRestrictions = [];
     }
     return monetizationRestrictions;
   });
-  const obj2 = _require(566);
-  const items2 = [_isNativeReflectConstruct];
-  obj.restrictionsLoading = _require(566).useStateFromStores(items2, () => outer1_5.getMonetizationRestrictionsFetchState(null != id ? id : outer1_8) === outer1_6.FETCHING);
-  return obj;
-}
-({ EMPTY_STRING_SNOWFLAKE_ID: closure_8, GuildFeatures: closure_9 } = ME);
-let result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/creator_monetization_review/CreatorMonetizationRestrictionsHooks.tsx");
-
-export const useShouldHideGuildPurchaseEntryPoints = function useShouldHideGuildPurchaseEntryPoints(id2) {
-  const _require = id2;
-  let obj = _require(566);
-  const items = [_createForOfIteratorHelperLoose];
-  const items1 = [id2];
-  let has = obj.useStateFromStores(items, () => outer1_7.getGuild(closure_0), items1);
-  const tmp = useCreatorMonetizationRestrictions(has);
-  const restrictionsLoading = tmp.restrictionsLoading;
-  obj = {};
-  let tmp2 = null;
+  tmpResult = tmp(589);
+  const items4 = [makeGroupListingIndexSubscriptionListingTag];
+  const stateFromStores = tmpResult.useStateFromStores(items4, () => {
+    let tmp2 = id;
+    if (id == null) {
+      tmp2 = outer1_8;
+    }
+    return outer1_5.getMonetizationRestrictionsFetchState(tmp2) === outer1_6.FETCHING;
+  });
   let hasItem;
-  if (null != has) {
+  if (has != null) {
     const features = has.features;
     hasItem = features.has(constants.CREATOR_MONETIZABLE);
   }
   if (!hasItem) {
     let hasItem1;
-    if (tmp2 != has) {
+    if (has != null) {
       const features2 = has.features;
       hasItem1 = features2.has(constants.CREATOR_MONETIZABLE_PROVISIONAL);
     }
@@ -80,75 +85,166 @@ export const useShouldHideGuildPurchaseEntryPoints = function useShouldHideGuild
   }
   if (!hasItem) {
     let hasItem2;
-    if (tmp2 != has) {
+    if (has != null) {
       const features3 = has.features;
       hasItem2 = features3.has(constants.SOCIAL_LAYER_STOREFRONT);
     }
     hasItem = hasItem2;
   }
   if (!hasItem) {
-    obj.shouldHideGuildPurchaseEntryPoints = tmp9;
-    obj.restrictionsLoading = restrictionsLoading;
+    obj = { shouldHideGuildPurchaseEntryPoints: null, restrictionsLoading: null };
+    obj[0] = tmp14;
+    obj[1] = stateFromStores;
     return obj;
-  } else if (restrictionsLoading) {
-    let hasItem3;
-    if (tmp2 != has) {
+  } else if (stateFromStores) {
+    let flag;
+    if (has != null) {
       const features4 = has.features;
       has = features4.has;
-      hasItem3 = has(constants.CREATOR_MONETIZABLE_RESTRICTED);
+      flag = has(constants.CREATOR_MONETIZABLE_RESTRICTED);
     }
-    tmp2 = tmp2 == hasItem3 || hasItem3;
-    let result = tmp2;
+    if (flag == null) {
+      flag = true;
+    }
+    let result = flag;
   } else {
-    result = _require(3786).isRestrictedFromShowingGuildPurchaseEntryPoints(tmp.restrictions);
-    const obj3 = _require(3786);
+    result = tmp(3810).isRestrictedFromShowingGuildPurchaseEntryPoints(stateFromStoresArray);
+    const tmpResult1 = tmp(3810);
   }
 };
 export const useShouldRestrictUpdatingCreatorMonetizationSettings = function useShouldRestrictUpdatingCreatorMonetizationSettings(guildId) {
-  const _require = guildId;
-  let obj = _require(566);
-  const items = [_createForOfIteratorHelperLoose];
+  let stateFromStores = guildId;
+  let obj = stateFromStores(589);
+  const items = [createGuildRecordFromRust];
   const items1 = [guildId];
-  const stateFromStores = obj.useStateFromStores(items, () => outer1_7.getGuild(closure_0), items1);
-  const restrictionsLoading = useCreatorMonetizationRestrictions(stateFromStores).restrictionsLoading;
-  if (restrictionsLoading) {
-    let hasItem;
-    if (null != stateFromStores) {
-      const features = stateFromStores.features;
-      hasItem = features.has(constants.CREATOR_MONETIZABLE_RESTRICTED);
+  stateFromStores = obj.useStateFromStores(items, () => outer1_7.getGuild(stateFromStores), items1);
+  let importDefault;
+  let id;
+  const tmp4 = importDefault(12617)();
+  importDefault = tmp4;
+  const items2 = [stateFromStores, tmp4];
+  const effect = React.useEffect(() => {
+    let hasItem = null != stateFromStores;
+    if (hasItem) {
+      const features = tmp.features;
+      hasItem = features.has(outer1_9.CREATOR_MONETIZABLE_RESTRICTED);
     }
-    let result = null == hasItem || hasItem;
-    const tmp10 = null == hasItem || hasItem;
+    if (hasItem) {
+      hasItem = outer1_5.getMonetizationRestrictionsFetchState(tmp.id) === outer1_6.NOT_FETCHED;
+    }
+    if (hasItem) {
+      let obj = id(outer1_3[5]);
+      obj = { signal: null };
+      obj[0] = c1;
+      const monetizationRestrictions = obj.fetchMonetizationRestrictions(tmp.id, obj);
+    }
+  }, items2);
+  id = undefined;
+  if (stateFromStores != null) {
+    id = stateFromStores.id;
+  }
+  let tmpResult = tmp(589);
+  const items3 = [makeGroupListingIndexSubscriptionListingTag];
+  const stateFromStoresArray = tmpResult.useStateFromStoresArray(items3, () => {
+    let tmp2 = id;
+    if (id == null) {
+      tmp2 = outer1_8;
+    }
+    let monetizationRestrictions = outer1_5.getMonetizationRestrictions(tmp2);
+    if (monetizationRestrictions == null) {
+      monetizationRestrictions = [];
+    }
+    return monetizationRestrictions;
+  });
+  tmpResult = tmp(589);
+  const items4 = [makeGroupListingIndexSubscriptionListingTag];
+  const stateFromStores1 = tmpResult.useStateFromStores(items4, () => {
+    let tmp2 = id;
+    if (id == null) {
+      tmp2 = outer1_8;
+    }
+    return outer1_5.getMonetizationRestrictionsFetchState(tmp2) === outer1_6.FETCHING;
+  });
+  if (stateFromStores1) {
+    let flag;
+    if (stateFromStores != null) {
+      const features = stateFromStores.features;
+      flag = features.has(constants.CREATOR_MONETIZABLE_RESTRICTED);
+    }
+    if (flag == null) {
+      flag = true;
+    }
+    let result = flag;
   } else {
-    result = _require(3786).isRestrictedFromUpdatingCreatorMonetizationSettings(tmp3);
-    const obj2 = _require(3786);
+    result = tmp(3810).isRestrictedFromUpdatingCreatorMonetizationSettings(stateFromStoresArray);
+    const tmpResult1 = tmp(3810);
   }
-  let tmp11 = null == stateFromStores;
-  if (!tmp11) {
+  if (stateFromStores != null) {
     const features2 = stateFromStores.features;
-    tmp11 = !features2.has(constants.CREATOR_MONETIZABLE_PENDING_NEW_OWNER_ONBOARDING);
+    const hasItem = features2.has(constants.CREATOR_MONETIZABLE_PENDING_NEW_OWNER_ONBOARDING);
   }
-  obj = {};
   let tmp13 = result;
   if (!result) {
-    tmp13 = !tmp11;
+    tmp13 = hasItem;
   }
-  obj.shouldRestrictUpdatingCreatorMonetizationSettings = tmp13;
-  obj.allowSelfRemoveMonetization = !result;
-  obj.restrictionsLoading = restrictionsLoading;
+  obj = { shouldRestrictUpdatingCreatorMonetizationSettings: tmp13, allowSelfRemoveMonetization: !result, restrictionsLoading: stateFromStores1 };
   return obj;
 };
 export const useIsMonetizationReapplicationDisabled = function useIsMonetizationReapplicationDisabled(id2) {
-  let restrictions;
-  let restrictionsLoading;
-  const _require = id2;
-  let obj = _require(566);
-  const items = [_createForOfIteratorHelperLoose];
+  let stateFromStores = id2;
+  let obj = stateFromStores(589);
+  const items = [createGuildRecordFromRust];
   const items1 = [id2];
-  obj = {};
-  ({ restrictions, restrictionsLoading } = useCreatorMonetizationRestrictions(obj.useStateFromStores(items, () => outer1_7.getGuild(closure_0), items1)));
-  const tmp = useCreatorMonetizationRestrictions(obj.useStateFromStores(items, () => outer1_7.getGuild(closure_0), items1));
-  obj.isMonetizationReapplicationDisabled = _require(3786).isRestrictedFromMonetizationReapplication(restrictions);
-  obj.restrictionsLoading = restrictionsLoading;
+  stateFromStores = obj.useStateFromStores(items, () => outer1_7.getGuild(stateFromStores), items1);
+  let importDefault;
+  let id;
+  const tmp4 = importDefault(12617)();
+  importDefault = tmp4;
+  const items2 = [stateFromStores, tmp4];
+  const effect = React.useEffect(() => {
+    let hasItem = null != stateFromStores;
+    if (hasItem) {
+      const features = tmp.features;
+      hasItem = features.has(outer1_9.CREATOR_MONETIZABLE_RESTRICTED);
+    }
+    if (hasItem) {
+      hasItem = outer1_5.getMonetizationRestrictionsFetchState(tmp.id) === outer1_6.NOT_FETCHED;
+    }
+    if (hasItem) {
+      let obj = id(outer1_3[5]);
+      obj = { signal: null };
+      obj[0] = c1;
+      const monetizationRestrictions = obj.fetchMonetizationRestrictions(tmp.id, obj);
+    }
+  }, items2);
+  id = undefined;
+  if (stateFromStores != null) {
+    id = stateFromStores.id;
+  }
+  let tmpResult = tmp(589);
+  const items3 = [makeGroupListingIndexSubscriptionListingTag];
+  const stateFromStoresArray = tmpResult.useStateFromStoresArray(items3, () => {
+    let tmp2 = id;
+    if (id == null) {
+      tmp2 = outer1_8;
+    }
+    let monetizationRestrictions = outer1_5.getMonetizationRestrictions(tmp2);
+    if (monetizationRestrictions == null) {
+      monetizationRestrictions = [];
+    }
+    return monetizationRestrictions;
+  });
+  tmpResult = tmp(589);
+  const items4 = [makeGroupListingIndexSubscriptionListingTag];
+  obj = { isMonetizationReapplicationDisabled: null, restrictionsLoading: null };
+  const stateFromStores1 = tmpResult.useStateFromStores(items4, () => {
+    let tmp2 = id;
+    if (id == null) {
+      tmp2 = outer1_8;
+    }
+    return outer1_5.getMonetizationRestrictionsFetchState(tmp2) === outer1_6.FETCHING;
+  });
+  obj[0] = stateFromStores(3810).isRestrictedFromMonetizationReapplication(stateFromStoresArray);
+  obj[1] = stateFromStores1;
   return obj;
 };

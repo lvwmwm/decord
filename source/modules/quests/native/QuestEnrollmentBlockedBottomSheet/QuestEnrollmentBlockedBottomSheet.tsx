@@ -1,64 +1,66 @@
-// Module ID: 14169
-// Function ID: 108775
+// Module ID: 14191
+// Function ID: 14192
 // Name: QuestEnrollmentBlockedBottomSheet
-// Dependencies: [31, 27, 5966, 33, 4165, 689, 566, 10946, 5014, 6214, 5221, 4161, 1212, 2]
+// Dependencies: [19, 17, 5985, 21, 4189, 712, 589, 10970, 5036, 6234, 5243, 4185, 1236, 2]
 // Exports: default
 
-// Module 14169 (QuestEnrollmentBlockedBottomSheet)
-import "result";
+// Module 14191 (QuestEnrollmentBlockedBottomSheet)
+import "noop";
 import { View } from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import initializeState from "initializeState";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
 const require = arg1;
 function QuestEnrollmentBlockedBottomSheet(questEnrollmentBlockedUntil) {
   let minutes;
   let seconds;
   questEnrollmentBlockedUntil = questEnrollmentBlockedUntil.questEnrollmentBlockedUntil;
-  const tmp = _createForOfIteratorHelperLoose();
+  const tmp = createCacheKey();
   let date = questEnrollmentBlockedUntil;
-  if (null == questEnrollmentBlockedUntil) {
+  if (questEnrollmentBlockedUntil == null) {
     const _Date = Date;
     date = new Date();
   }
-  const tmp2Result = importDefault(6214)(date);
-  ({ minutes, seconds } = tmp2Result);
-  const tmp2 = importDefault(6214);
-  const padStartResult = String(tmp2Result.hours).padStart(2, "0");
-  const StringResult = String(tmp2Result.hours);
+  const tmp3Result = importDefault(6234)(date);
+  ({ minutes, seconds } = tmp3Result);
+  const tmp3 = importDefault(6234);
+  const padStartResult = String(tmp3Result.hours).padStart(2, "0");
+  const StringResult = String(tmp3Result.hours);
   const padStartResult1 = String(minutes).padStart(2, "0");
   const StringResult1 = String(minutes);
   const padStartResult2 = String(seconds).padStart(2, "0");
-  let tmp11 = null;
+  let tmp12 = null;
   if (null != questEnrollmentBlockedUntil) {
-    let obj = { header: null, footer: null, startExpanded: true };
-    obj = { style: tmp.heading };
-    const obj1 = { variant: "heading-xl/bold" };
-    const intl = require(1212) /* getSystemLocale */.intl;
-    obj1.children = intl.string(require(1212) /* getSystemLocale */.t["XEHDT/"]);
-    obj.children = jsx(require(4161) /* Text */.Text, { variant: "heading-xl/bold" });
-    obj.header = <View style={tmp.heading} />;
-    const obj2 = { style: tmp.container };
-    const obj3 = { variant: "text-md/normal" };
-    const intl2 = require(1212) /* getSystemLocale */.intl;
-    const obj4 = {};
+    let obj = { header: null, footer: null, startExpanded: true, children: null };
+    obj = { style: null, children: null };
+    obj[0] = tmp.heading;
+    const obj1 = { variant: "heading-xl/bold", children: null };
+    const intl = require(1236) /* getSystemLocale */.intl;
+    obj1[1] = intl.string(require(1236) /* getSystemLocale */.t["XEHDT/"]);
+    obj[1] = jsx(require(4185) /* Text */.Text, { variant: "heading-xl/bold", children: null });
+    obj[0] = <View style={null}>{null}</View>;
+    const obj2 = { style: null, children: null };
+    obj2[0] = tmp.container;
+    const obj3 = { variant: "text-md/normal", children: null };
+    const intl2 = require(1236) /* getSystemLocale */.intl;
+    const obj4 = { countdownString: null };
     const _HermesInternal = HermesInternal;
-    obj4.countdownString = "" + padStartResult + ":" + padStartResult1 + ":" + padStartResult2;
-    obj3.children = intl2.formatToPlainString(require(1212) /* getSystemLocale */.t["+5XVH+"], obj4);
-    obj2.children = jsx(require(4161) /* Text */.Text, { variant: "text-md/normal" });
-    obj.children = <View style={tmp.container} />;
-    tmp11 = jsx(require(5221) /* Background */.BottomSheet, { style: tmp.heading });
+    obj4[0] = "" + padStartResult + ":" + padStartResult1 + ":" + padStartResult2;
+    obj3[1] = intl2.formatToPlainString(require(1236) /* getSystemLocale */.t["+5XVH+"], obj4);
+    obj2[1] = jsx(require(4185) /* Text */.Text, { variant: "text-md/normal", children: null });
+    obj[3] = <View style={null}>{null}</View>;
+    tmp12 = jsx(require(5243) /* Background */.BottomSheet, { style: null, children: null });
   }
-  return tmp11;
+  return tmp12;
 }
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { display: "flex", justifyContent: "center", alignItems: "center", paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16, paddingTop: require("_createForOfIteratorHelperLoose").space.PX_16, gap: require("_createForOfIteratorHelperLoose").space.PX_24 };
-_createForOfIteratorHelperLoose.heading = _createForOfIteratorHelperLoose;
-let obj1 = { display: "flex", justifyContent: "center", alignItems: "center", paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16, paddingBottom: require("_createForOfIteratorHelperLoose").space.PX_32 };
-_createForOfIteratorHelperLoose.container = obj1;
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/quests/native/QuestEnrollmentBlockedBottomSheet/QuestEnrollmentBlockedBottomSheet.tsx");
+createCacheKey = { heading: null, container: null };
+createCacheKey = { display: "flex", justifyContent: "center", alignItems: "center", paddingHorizontal: require("Themes").space.PX_16, paddingTop: require("Themes").space.PX_16, gap: require("Themes").space.PX_24 };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { display: "flex", justifyContent: "center", alignItems: "center", paddingHorizontal: require("Themes").space.PX_16, paddingBottom: require("Themes").space.PX_32 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let obj1 = { display: "flex", justifyContent: "center", alignItems: "center", paddingHorizontal: require("Themes").space.PX_16, paddingBottom: require("Themes").space.PX_32 };
+const result = require("initializeState").fileFinishedImporting("modules/quests/native/QuestEnrollmentBlockedBottomSheet/QuestEnrollmentBlockedBottomSheet.tsx");
 
 export default function QuestEnrollmentBlockedBottomSheetConnected(questContentPosition) {
   let importDefault;
@@ -66,30 +68,19 @@ export default function QuestEnrollmentBlockedBottomSheetConnected(questContentP
   let sourceQuestContent;
   ({ questId: require, questEnrollmentBlockedUntil: importDefault, sourceQuestContent } = questContentPosition);
   let obj = require(sourceQuestContent[6]);
-  const items = [_isNativeReflectConstruct];
+  const items = [initializeState];
   const stateFromStores = obj.useStateFromStores(items, () => outer1_4.getQuest(closure_0));
-  let tmp2 = null;
+  let tmp4 = null;
   if (null != stateFromStores) {
-    obj = {
-      overrideVisibility: true,
-      questOrQuests: stateFromStores,
-      questContent: require(sourceQuestContent[8]).QuestContent.QUEST_ENROLLMENT_BLOCKED_BOTTOM_SHEET,
-      questContentPosition: questContentPosition.questContentPosition,
-      sourceQuestContent,
-      children() {
-          return outer1_5(outer1_7, { questId: closure_0, questEnrollmentBlockedUntil: closure_1, sourceQuestContent });
-        }
+    obj = { overrideVisibility: true, questOrQuests: null, questContent: null, questContentPosition: null, sourceQuestContent: null, children: null };
+    obj[1] = stateFromStores;
+    obj[2] = tmp(tmp2[8]).QuestContent.QUEST_ENROLLMENT_BLOCKED_BOTTOM_SHEET;
+    obj[3] = questContentPosition.questContentPosition;
+    obj[4] = sourceQuestContent;
+    obj[5] = function children() {
+      return outer1_5(outer1_7, { questId: closure_0, questEnrollmentBlockedUntil: closure_1, sourceQuestContent });
     };
-    tmp2 = jsx(require(sourceQuestContent[7]).QuestContentImpressionTrackerNative, {
-      overrideVisibility: true,
-      questOrQuests: stateFromStores,
-      questContent: require(sourceQuestContent[8]).QuestContent.QUEST_ENROLLMENT_BLOCKED_BOTTOM_SHEET,
-      questContentPosition: questContentPosition.questContentPosition,
-      sourceQuestContent,
-      children() {
-          return outer1_5(outer1_7, { questId: closure_0, questEnrollmentBlockedUntil: closure_1, sourceQuestContent });
-        }
-    });
+    tmp4 = jsx(tmp(tmp2[7]).QuestContentImpressionTrackerNative, { overrideVisibility: true, questOrQuests: null, questContent: null, questContentPosition: null, sourceQuestContent: null, children: null });
   }
-  return tmp2;
+  return tmp4;
 };

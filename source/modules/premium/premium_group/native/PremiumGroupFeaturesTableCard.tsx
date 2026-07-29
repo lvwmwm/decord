@@ -1,42 +1,42 @@
-// Module ID: 12493
-// Function ID: 96716
+// Module ID: 12515
+// Function ID: 12516
 // Name: BetaPill
-// Dependencies: [27, 6207, 33, 4165, 689, 4161, 1212, 12494, 1273, 4589, 4009, 9301, 2]
+// Dependencies: [17, 6227, 21, 4189, 712, 4185, 1236, 12516, 1297, 4611, 4033, 9325, 2]
 // Exports: default
 
-// Module 12493 (BetaPill)
+// Module 12515 (BetaPill)
 import { View } from "get ActivityIndicator";
 import { Gradients } from "items";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_5;
+let c5;
 let closure_6;
 class BetaPill {
   constructor() {
-    tmp = c7();
-    obj = { style: tmp.betaPill };
-    obj = { variant: "text-xs/bold", style: tmp.betaText };
+    tmp = jsxs();
+    obj = { style: tmp.betaPill, children: null };
+    obj = { variant: "text-xs/bold", style: tmp.betaText, children: null };
     intl = require("getSystemLocale").intl;
-    obj.children = intl.string(require("getSystemLocale").t.oW0eUd);
-    obj.children = jsx(require("Text").Text, obj);
+    obj[2] = intl.string(require("getSystemLocale").t.oW0eUd);
+    obj[1] = jsx(require("Text").Text, obj);
     return jsx(View, obj);
   }
 }
-({ jsx: closure_5, jsxs: closure_6 } = jsxProd);
-let obj = {};
-obj = { padding: 16, borderRadius: require("_createForOfIteratorHelperLoose").radii.sm - 2, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SURFACE_HIGH, display: "flex", alignItems: "flex-start" };
-obj.premiumGroupCard = obj;
-obj.headerContainer = { display: "flex", flexDirection: "row", alignItems: "center", gap: 8, marginBottom: 4 };
-let obj1 = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.WHITE, borderRadius: require("_createForOfIteratorHelperLoose").radii.round, alignItems: "center", justifyContent: "center", paddingHorizontal: 8, paddingBottom: 2 };
-obj.betaPill = obj1;
-let obj2 = { color: require("_createForOfIteratorHelperLoose").colors.BLACK, textAlign: "center", textTransform: "uppercase" };
-obj.betaText = obj2;
-obj.title = { color: require("_createForOfIteratorHelperLoose").colors.TEXT_DEFAULT, marginBottom: 16 };
-const obj3 = { color: require("_createForOfIteratorHelperLoose").colors.TEXT_DEFAULT, marginBottom: 16 };
-obj.description = { color: require("_createForOfIteratorHelperLoose").colors.TEXT_DEFAULT };
-let closure_7 = _createForOfIteratorHelperLoose.createStyles(obj);
-let obj4 = { color: require("_createForOfIteratorHelperLoose").colors.TEXT_DEFAULT };
+({ jsx: c5, jsxs: closure_6 } = jsxProd);
+let obj = { premiumGroupCard: null, headerContainer: null, betaPill: null, betaText: null, title: null, description: null };
+obj = { padding: 16, borderRadius: require("Themes").radii.sm - 2, backgroundColor: require("Themes").colors.BACKGROUND_SURFACE_HIGH, display: "flex", alignItems: "flex-start" };
+obj[0] = obj;
+obj[1] = { display: "flex", flexDirection: "row", alignItems: "center", gap: 8, marginBottom: 4 };
+obj[2] = { backgroundColor: require("Themes").colors.WHITE, borderRadius: require("Themes").radii.round, alignItems: "center", justifyContent: "center", paddingHorizontal: 8, paddingBottom: 2 };
+let obj1 = { backgroundColor: require("Themes").colors.WHITE, borderRadius: require("Themes").radii.round, alignItems: "center", justifyContent: "center", paddingHorizontal: 8, paddingBottom: 2 };
+obj[3] = { color: require("Themes").colors.BLACK, textAlign: "center", textTransform: "uppercase" };
+let obj2 = { color: require("Themes").colors.BLACK, textAlign: "center", textTransform: "uppercase" };
+obj[4] = { color: require("Themes").colors.TEXT_DEFAULT, marginBottom: 16 };
+const obj3 = { color: require("Themes").colors.TEXT_DEFAULT, marginBottom: 16 };
+obj[5] = { color: require("Themes").colors.TEXT_DEFAULT };
+let closure_7 = createCacheKey.createStyles(obj);
+let obj4 = { color: require("Themes").colors.TEXT_DEFAULT };
 const result = require("jsxProd").fileFinishedImporting("modules/premium/premium_group/native/PremiumGroupFeaturesTableCard.tsx");
 
 export default function PremiumGroupFeaturesTableCard(arg0) {
@@ -46,33 +46,44 @@ export default function PremiumGroupFeaturesTableCard(arg0) {
   let subheaderString;
   ({ style, premiumGroupRole } = arg0);
   const tmp = callback3();
-  const tmp2 = importDefault(12494)(premiumGroupRole, false);
-  if (null == tmp2) {
+  const tmp4 = importDefault(12516)(premiumGroupRole, false);
+  if (null == tmp4) {
     return null;
   } else {
-    ({ subheaderString, bodyString } = tmp2);
-    let obj = { borderWidth: 2, direction: require(1273) /* Button */.GradientBorder.Direction.HORIZONTAL, colors: Gradients.PREMIUM_TIER_2, borderRadius: importDefault(689).radii.sm, style };
-    obj = { start: { x: 0, y: 0 }, end: { x: 1, y: 0 } };
-    let obj2 = require(4009) /* hexToRgb */;
+    ({ subheaderString, bodyString } = tmp4);
+    let obj = { borderWidth: 2, direction: null, colors: null, borderRadius: null, style: null, children: null };
+    obj[1] = require(1297) /* Button */.GradientBorder.Direction.HORIZONTAL;
+    obj[2] = Gradients.PREMIUM_TIER_2;
+    obj[3] = tmp2(712).radii.sm;
+    obj[4] = style;
+    obj = { start: null, end: null, colors: null, locations: null, style: null, children: null };
+    obj[0] = { x: 0, y: 0 };
+    obj[1] = { x: 1, y: 0 };
+    let obj2 = require(4033) /* hexToRgba */;
     const items = [obj2.hexWithOpacity("#8547C6", 0.15), , ];
-    const tmp9 = importDefault(4589);
-    items[1] = require(4009) /* hexToRgb */.hexWithOpacity("#B845C1", 0.15);
-    const obj4 = require(4009) /* hexToRgb */;
-    items[2] = require(4009) /* hexToRgb */.hexWithOpacity("#AB5D8A", 0.15);
-    obj.colors = items;
-    obj.locations = [0, 0.4996, 0.9593];
-    obj.style = tmp.premiumGroupCard;
-    obj = { style: tmp.headerContainer };
-    const items1 = [callback(importDefault(9301), { width: 181, height: 16 }), callback(BetaPill, {})];
-    obj.children = items1;
+    const tmp2Result = tmp2(4611);
+    items[1] = require(4033) /* hexToRgba */.hexWithOpacity("#B845C1", 0.15);
+    const obj4 = require(4033) /* hexToRgba */;
+    items[2] = require(4033) /* hexToRgba */.hexWithOpacity("#AB5D8A", 0.15);
+    obj[2] = items;
+    obj[3] = [0, 0.4996, 0.9593];
+    obj[4] = tmp.premiumGroupCard;
+    obj = { style: null, children: null };
+    obj[0] = tmp.headerContainer;
+    const items1 = [callback(tmp2(9325), { width: 181, height: 16 }), callback(BetaPill, {})];
+    obj[1] = items1;
     const items2 = [callback2(View, obj), , ];
-    const obj1 = { variant: "text-sm/normal", style: tmp.title, children: subheaderString };
-    items2[1] = callback(require(4161) /* Text */.Text, obj1);
-    obj2 = { variant: "text-sm/normal", style: tmp.description, children: bodyString };
-    items2[2] = callback(require(4161) /* Text */.Text, obj2);
-    obj.children = items2;
-    obj.children = callback2(tmp9, obj);
-    return callback(require(1273) /* Button */.GradientBorder, obj);
+    const obj1 = { variant: "text-sm/normal", style: null, children: null };
+    obj1[1] = tmp.title;
+    obj1[2] = subheaderString;
+    items2[1] = callback(require(4185) /* Text */.Text, obj1);
+    obj2 = { variant: "text-sm/normal", style: null, children: null };
+    obj2[1] = tmp.description;
+    obj2[2] = bodyString;
+    items2[2] = callback(require(4185) /* Text */.Text, obj2);
+    obj[5] = items2;
+    obj[5] = callback2(tmp2Result, obj);
+    return callback(require(1297) /* Button */.GradientBorder, obj);
   }
 };
 export { BetaPill };

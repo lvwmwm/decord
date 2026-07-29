@@ -1,37 +1,38 @@
-// Module ID: 10915
-// Function ID: 84566
-// Dependencies: [4503, 6131, 686, 2]
+// Module ID: 10939
+// Function ID: 10940
+// Dependencies: [4526, 6149, 709, 2]
 
-// Module 10915
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import { DraftType } from "_isNativeReflectConstruct";
-import closure_4 from "_isNativeReflectConstruct";
+// Module 10939
+import handleChanged from "handleChanged";
+import { DraftType } from "handleChanged";
+import initialize from "initialize";
 
 const result = require("dispatcher").fileFinishedImporting("actions/native/UploadActionCreators.tsx");
 
 export default {
   restoreFailedUpload(messageId, file) {
-    let obj = importDefault(686);
+    let obj = importDefault(709);
     obj = { type: "UPLOAD_RESTORE_FAILED_UPLOAD", messageId, file };
     obj.dispatch(obj);
   },
   cancel(channelId, file) {
-    let obj = importDefault(686);
+    let obj = importDefault(709);
     obj = { type: "UPLOAD_CANCEL_REQUEST", channelId, file };
     obj.dispatch(obj);
     messageForFile = messageForFile.getMessageForFile(file.id);
     if (null != messageForFile) {
       if ("" === draft.getDraft(messageForFile.channel_id, DraftType.ChannelMessage)) {
-        obj = { type: "DRAFT_SAVE" };
-        ({ channel_id: obj4.channelId, content: obj4.draft } = messageForFile);
-        obj.draftType = DraftType.ChannelMessage;
-        importDefault(686).dispatch(obj);
-        const obj3 = importDefault(686);
+        obj = { type: "DRAFT_SAVE", channelId: null, draft: null, draftType: null };
+        ({ channel_id: obj4[1], content: obj4[2] } = messageForFile);
+        obj[3] = tmp6.ChannelMessage;
+        importDefault(709).dispatch(obj);
+        const tmpResult = importDefault(709);
       }
+      tmp6 = DraftType;
     }
   },
   cancelUploadItem(found, itemId) {
-    let obj = importDefault(686);
+    let obj = importDefault(709);
     obj = { type: "UPLOAD_ITEM_CANCEL_REQUEST", file: found, itemId };
     obj.dispatch(obj);
   }

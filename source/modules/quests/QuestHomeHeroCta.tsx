@@ -1,25 +1,27 @@
-// Module ID: 9470
-// Function ID: 73703
+// Module ID: 9494
+// Function ID: 9495
 // Name: questHomeHeroCtaFromServer
 // Dependencies: [2]
 // Exports: questHomeHeroCtaFromServer
 
-// Module 9470 (questHomeHeroCtaFromServer)
+// Module 9494 (questHomeHeroCtaFromServer)
 const result = require("set").fileFinishedImporting("modules/quests/QuestHomeHeroCta.tsx");
 
 export const questHomeHeroCtaFromServer = function questHomeHeroCtaFromServer(cta) {
-  let obj = { url: cta.url, buttonLabel: cta.button_label };
+  let obj = { url: cta.url, buttonLabel: cta.button_label, android: null, ios: null };
   let tmp;
   if (null != cta.android) {
-    obj = { androidAppId: cta.android.android_app_id };
+    obj = { androidAppId: null };
+    obj[0] = cta.android.android_app_id;
     tmp = obj;
   }
-  obj.android = tmp;
+  obj[2] = tmp;
   let tmp2;
   if (null != cta.ios) {
-    obj = { iosAppId: cta.ios.ios_app_id };
+    obj = { iosAppId: null };
+    obj[0] = cta.ios.ios_app_id;
     tmp2 = obj;
   }
-  obj.ios = tmp2;
+  obj[3] = tmp2;
   return obj;
 };

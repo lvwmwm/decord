@@ -1,129 +1,18 @@
-// Module ID: 12749
-// Function ID: 98932
-// Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 1348, 1918, 1838, 3802, 1850, 653, 4386, 1360, 566, 686, 2]
+// Module ID: 12771
+// Function ID: 12772
+// Name: updateGuildState
+// Dependencies: [1372, 1942, 1862, 3826, 1874, 676, 4409, 1384, 589, 709, 2]
 
-// Module 12749 (_isNativeReflectConstruct)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import set from "set";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
-import closure_7 from "_isNativeReflectConstruct";
-import closure_8 from "_isNativeReflectConstruct";
-import closure_9 from "_createForOfIteratorHelperLoose";
-import closure_10 from "_isNativeReflectConstruct";
-import closure_11 from "_isNativeReflectConstruct";
+// Module 12771 (updateGuildState)
+import ensureGuildLoaded from "ensureGuildLoaded";
+import trackCommunicationDisabled from "trackCommunicationDisabled";
+import createGuildRecordFromRust from "createGuildRecordFromRust";
+import upsertRelationship from "upsertRelationship";
+import mergeGuildAvatar from "mergeGuildAvatar";
 import { MessageFlags } from "ME";
+import { Store } from "initialize";
 
-const require = arg1;
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
-  }
-  const result = _isNativeReflectConstruct();
-}
-function _createForOfIteratorHelperLoose(iterable) {
-  let closure_0 = iterable;
-  iterable = "undefined" !== typeof Symbol;
-  if (iterable) {
-    const _Symbol = Symbol;
-    iterable = iterable[Symbol.iterator];
-  }
-  if (!iterable) {
-    iterable = iterable[Symbol.iterator];
-  }
-  if (iterable) {
-    const iter = iterable.call(iterable);
-    const next = iter.next;
-    return next.bind(iter);
-  } else {
-    const _Array = Array;
-    let tmp = iterable;
-    if (!Array.isArray(iterable)) {
-      let tmp2;
-      if (iterable) {
-        if ("string" === typeof iterable) {
-          tmp2 = _arrayLikeToArray(iterable, undefined);
-        } else {
-          const toString = {}.toString;
-          const substr = toString.call(iterable).slice(8, -1);
-          let name = substr;
-          if (tmp3) {
-            name = iterable.constructor.name;
-          }
-          if ("Map" !== name) {
-            if ("Set" !== name) {
-              if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(iterable, undefined);
-              } else {
-                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
-              }
-            }
-            tmp2 = arr;
-          }
-          const _Array2 = Array;
-          arr = Array.from(iterable);
-          const callResult = toString.call(iterable);
-          tmp3 = "Object" === substr && iterable.constructor;
-        }
-      }
-      tmp = tmp2;
-      if (!tmp2) {
-        const _TypeError = TypeError;
-        const typeError = new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
-        throw typeError;
-      }
-    }
-    if (tmp) {
-      closure_0 = tmp;
-    }
-    let c1 = 0;
-    return () => {
-      if (closure_1 >= length.length) {
-        let obj = { done: true };
-      } else {
-        obj = { done: false };
-        closure_1 = tmp3 + 1;
-        obj.value = length[+closure_1];
-      }
-      return obj;
-    };
-  }
-}
-function _arrayLikeToArray(arg0, arg1) {
-  let length;
-  if (tmp) {
-    length = arg0.length;
-  }
-  const ArrayResult = Array(length);
-  for (let num = 0; num < length; num = num + 1) {
-    ArrayResult[num] = arg0[num];
-  }
-  return ArrayResult;
-}
-function findMessage(channelId, messageId) {
-  const channel = store.getChannel(channelId);
-  let guildId;
-  if (null != channel) {
-    guildId = channel.getGuildId();
-  }
-  if (null == guildId) {
-    return null;
-  } else if (null == dependencyMap[guildId]) {
-    return null;
-  } else {
-    let tmp6 = null;
-    if (null != tmp3.messages[messageId]) {
-      const obj = { guildId, message: tmp5 };
-      tmp6 = obj;
-    }
-    return tmp6;
-  }
-}
+let require = arg1;
 function updateGuildState(guildId, arg1) {
   if (null != obj[guildId]) {
     obj = {};
@@ -134,32 +23,7 @@ function updateGuildState(guildId, arg1) {
     obj[guildId] = obj;
   }
 }
-function prependRecord(guildId, messageRecord) {
-  let closure_0 = messageRecord;
-  updateGuildState(guildId, (ids) => {
-    let obj = {};
-    const items = [messageRecord.id, ...ids.ids];
-    obj.ids = items;
-    obj = {};
-    const merged = Object.assign(ids.messages);
-    obj[messageRecord.id] = messageRecord;
-    obj.messages = obj;
-    return obj;
-  });
-}
-function updateMessage(guildId) {
-  let closure_0 = arg1;
-  updateGuildState(guildId, (messages) => {
-    let obj = {};
-    obj = {};
-    const merged = Object.assign(messages.messages);
-    obj[id.id] = id;
-    obj.messages = obj;
-    return obj;
-  });
-}
 function handleChannelDelete(channel) {
-  let iter;
   channel = channel.channel;
   let items;
   let obj;
@@ -171,27 +35,25 @@ function handleChannelDelete(channel) {
   } else {
     items = [];
     obj = {};
-    const merged = Object.assign(tmp9.messages);
-    const tmp13 = _createForOfIteratorHelperLoose(tmp9.ids);
-    let iter2 = tmp13();
-    if (!iter2.done) {
-      do {
-        let value = iter2.value;
-        let tmp3 = tmp9.messages[value];
-        let channel_id;
-        if (null != tmp3) {
-          channel_id = tmp3.channel_id;
-        }
-        if (channel_id === channel.id) {
-          delete tmp2[tmp];
-        } else {
-          let arr = items.push(value);
-        }
-        iter = tmp13();
-        iter2 = iter;
-      } while (!iter.done);
+    const merged = Object.assign(tmp13.messages);
+    const ids = tmp13.ids;
+    for (const item10007 of ids) {
+      let tmp5 = tmp13.messages[item10007];
+      let channel_id;
+      let tmp4 = item10007;
+      if (tmp5 != null) {
+        channel_id = tmp5.channel_id;
+      }
+      if (channel_id === channel.id) {
+        let tmp9 = item10007;
+        delete tmp[tmp2];
+      } else {
+        let tmp7 = item10007;
+        let arr = items.push(tmp4);
+      }
+      continue;
     }
-    if (items.length === tmp9.ids.length) {
+    if (items.length === tmp13.ids.length) {
       return false;
     } else {
       updateGuildState(guild_id, () => {
@@ -203,186 +65,146 @@ function handleChannelDelete(channel) {
 }
 function handleRelationshipUpdate() {
   let obj = {};
-  const keys = Object.keys(obj);
-  let num = 0;
   let flag = false;
-  let flag2 = false;
-  if (0 < keys.length) {
-    do {
-      let tmp3 = keys[num];
-      let tmp4 = obj;
-      let tmp5 = obj[tmp3];
-      let tmp6 = _createForOfIteratorHelperLoose;
-      let tmp7 = _createForOfIteratorHelperLoose(tmp5.ids);
-      let iter = tmp7();
-      let tmp8 = tmp;
-      let tmp9 = tmp2;
-      let iter2 = iter;
-      let tmp10 = null;
-      let tmp11 = null;
-      if (!iter.done) {
-        do {
-          let value = iter2.value;
-          let obj1 = tmp5.messages[value];
-          let tmp12 = tmp10;
-          if (null != obj1) {
-            let tmp22 = closure_10;
-            let isBlockedForMessageResult = closure_10.isBlockedForMessage(obj1);
-            let tmp24 = closure_10;
-            let isIgnoredForMessageResult = closure_10.isIgnoredForMessage(obj1);
-            let tmp13 = obj1.blocked === isBlockedForMessageResult && obj1.ignored === isIgnoredForMessageResult;
-            tmp12 = tmp10;
-            tmp8 = isBlockedForMessageResult;
-            tmp9 = isIgnoredForMessageResult;
-            if (!tmp13) {
-              let tmp14 = tmp10;
-              if (null == tmp10) {
-                obj = {};
-                let tmp15 = obj;
-                let merged = Object.assign(tmp5.messages);
-                tmp14 = obj;
-              }
-              obj = { blocked: isBlockedForMessageResult, ignored: isIgnoredForMessageResult };
-              tmp14[value] = obj1.merge(obj);
-              tmp12 = tmp14;
-              tmp8 = isBlockedForMessageResult;
-              tmp9 = isIgnoredForMessageResult;
-            }
+  const keys = Object.keys(obj);
+  const iter = keys[Symbol.iterator]();
+  const nextResult = iter.next();
+  while (iter !== undefined) {
+    let tmp3 = nextResult;
+    let tmp4 = obj;
+    let tmp5 = obj[nextResult];
+    let tmp6 = tmp5;
+    let tmp7 = null;
+    let ids = tmp5.ids;
+    let tmp8 = ids;
+    let tmp9 = ids;
+    for (const item10031 of ids) {
+      let tmp11 = tmp5;
+      let tmp12 = tmp6.messages[item10031];
+      let obj1 = tmp12;
+      if (null != tmp12) {
+        let tmp33 = upsertRelationship;
+        let tmp34 = tmp12;
+        let isBlockedForMessageResult = upsertRelationship.isBlockedForMessage(obj1);
+        let tmp36 = isBlockedForMessageResult;
+        let isIgnoredForMessageResult = upsertRelationship.isIgnoredForMessage(obj1);
+        let tmp15 = obj1.blocked === isBlockedForMessageResult;
+        if (tmp15) {
+          let tmp13 = tmp12;
+          let tmp14 = isIgnoredForMessageResult;
+          tmp15 = obj1.ignored === isIgnoredForMessageResult;
+        }
+        if (!tmp15) {
+          let tmp16 = tmp7;
+          if (null == tmp7) {
+            obj = {};
+            let tmp17 = tmp5;
+            let tmp18 = obj;
+            let merged = Object.assign(tmp6.messages);
+            tmp7 = obj;
           }
-          iter3 = tmp7();
-          tmp10 = tmp12;
-          iter2 = iter3;
-          tmp11 = tmp12;
-          let tmp17 = value;
-          let tmp18 = obj1;
-          tmp = tmp8;
-          tmp2 = tmp9;
-        } while (!iter3.done);
+          let tmp20 = tmp7;
+          let tmp21 = item10031;
+          let tmp22 = tmp12;
+          obj = { blocked: null, ignored: null };
+          let tmp23 = isBlockedForMessageResult;
+          obj[0] = tmp36;
+          let tmp24 = isIgnoredForMessageResult;
+          obj[1] = isIgnoredForMessageResult;
+          tmp7[tmp10] = obj1.merge(obj);
+        }
       }
-      if (null == tmp11) {
-        obj[tmp3] = tmp5;
-        let flag3 = flag;
-      } else {
-        obj1 = {};
-        let tmp19 = obj1;
-        let tmp20 = tmp5;
-        let merged1 = Object.assign(tmp5);
-        obj1["messages"] = tmp11;
-        obj[tmp3] = obj1;
-        flag3 = true;
-      }
-      num = num + 1;
-      flag = flag3;
-      flag2 = flag3;
-    } while (num < keys.length);
+      continue;
+    }
+    let tmp25 = tmp7;
+    if (null == tmp7) {
+      let tmp31 = nextResult;
+      let tmp32 = tmp5;
+      obj[tmp3] = tmp6;
+    } else {
+      let tmp26 = nextResult;
+      obj1 = {};
+      let tmp27 = tmp5;
+      let tmp28 = obj1;
+      let merged1 = Object.assign(tmp6);
+      let tmp30 = tmp7;
+      obj1.messages = tmp7;
+      obj[tmp3] = obj1;
+      flag = true;
+    }
+    continue;
   }
-  if (!flag2) {
+  if (!flag) {
     return false;
   }
 }
-let closure_13 = {};
-let tmp2 = ((Store) => {
-  class GuildOfficialMessagesStore {
-    constructor() {
-      self = this;
-      tmp = outer1_2(this, GuildOfficialMessagesStore);
-      obj = outer1_5(GuildOfficialMessagesStore);
-      tmp2 = outer1_4;
-      if (outer1_14()) {
-        tmp6 = globalThis;
-        _Reflect = Reflect;
-        tmp7 = outer1_5;
-        tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, outer1_5(self).constructor);
-      } else {
-        tmp3 = arguments;
-        tmp4 = arguments;
-        constructResult = obj(...arguments);
-      }
-      return tmp2(self, constructResult);
-    }
+let closure_8 = {};
+class GuildOfficialMessagesStore extends Store {
+}
+const prototype = GuildOfficialMessagesStore.prototype;
+prototype["initialize"] = function initialize() {
+  this.waitFor(ensureGuildLoaded, trackCommunicationDisabled, createGuildRecordFromRust, upsertRelationship, mergeGuildAvatar);
+};
+prototype["getState"] = function getState(arg0) {
+  return dependencyMap[arg0];
+};
+prototype["getMessage"] = function getMessage(arg0, arg1) {
+  let tmp2;
+  if (dependencyMap[arg0] != null) {
+    tmp2 = tmp.messages[arg1];
   }
-  callback2(GuildOfficialMessagesStore, Store);
-  let obj = {
-    key: "initialize",
-    value() {
-      this.waitFor(outer1_7, outer1_8, outer1_9, outer1_10, outer1_11);
-    }
-  };
-  let items = [obj, , , , , , ];
-  obj = {
-    key: "getState",
-    value(arg0) {
-      return outer1_13[arg0];
-    }
-  };
-  items[1] = obj;
-  obj = {
-    key: "getMessage",
-    value(arg0, arg1) {
-      let tmp2;
-      if (null != outer1_13[arg0]) {
-        tmp2 = tmp.messages[arg1];
-      }
-      return tmp2;
-    }
-  };
-  items[2] = obj;
-  items[3] = {
-    key: "getMessages",
-    value(arg0) {
-      const GuildOfficialMessagesStore = tmp;
-      if (null == outer1_13[arg0]) {
-        let items = [];
-      } else {
-        const ids = tmp.ids;
-        const mapped = ids.map((arg0) => tmp.messages[arg0]);
-        items = mapped.filter((arg0) => null != arg0);
-      }
-      return items;
-    }
-  };
-  items[4] = {
-    key: "isLoading",
-    value(arg0) {
-      let loading;
-      if (null != outer1_13[arg0]) {
-        loading = tmp.loading;
-      }
-      return null != loading && loading;
-    }
-  };
-  items[5] = {
-    key: "isLoaded",
-    value(arg0) {
-      let loaded;
-      if (null != outer1_13[arg0]) {
-        loaded = tmp.loaded;
-      }
-      return null != loaded && loaded;
-    }
-  };
-  items[6] = {
-    key: "hasMore",
-    value(arg0) {
-      let hasMore;
-      if (null != outer1_13[arg0]) {
-        hasMore = tmp.hasMore;
-      }
-      return null != hasMore && hasMore;
-    }
-  };
-  return callback(GuildOfficialMessagesStore, items);
-})(require("initialize").Store);
-tmp2.displayName = "GuildOfficialMessagesStore";
-tmp2 = new tmp2(require("dispatcher"), {
+  return tmp2;
+};
+prototype["getMessages"] = function getMessages(arg0) {
+  const require = tmp;
+  if (null == dependencyMap[arg0]) {
+    let items = [];
+  } else {
+    const ids = tmp.ids;
+    const mapped = ids.map((arg0) => tmp.messages[arg0]);
+    items = mapped.filter((arg0) => null != arg0);
+  }
+  return items;
+};
+prototype["isLoading"] = function isLoading(arg0) {
+  let flag;
+  if (dependencyMap[arg0] != null) {
+    flag = tmp.loading;
+  }
+  if (flag == null) {
+    flag = false;
+  }
+  return flag;
+};
+prototype["isLoaded"] = function isLoaded(arg0) {
+  let flag;
+  if (dependencyMap[arg0] != null) {
+    flag = tmp.loaded;
+  }
+  if (flag == null) {
+    flag = false;
+  }
+  return flag;
+};
+prototype["hasMore"] = function hasMore(arg0) {
+  let flag;
+  if (dependencyMap[arg0] != null) {
+    flag = tmp.hasMore;
+  }
+  if (flag == null) {
+    flag = false;
+  }
+  return flag;
+};
+GuildOfficialMessagesStore.displayName = "GuildOfficialMessagesStore";
+const guildOfficialMessagesStore = new GuildOfficialMessagesStore(require("dispatcher"), {
   CONNECTION_OPEN: function handleConnectionOpen() {
-    let closure_13 = {};
+    let closure_8 = {};
   },
   LOAD_OFFICIAL_MESSAGES: function handleLoadOfficialMessages(guildId) {
     guildId = guildId.guildId;
     let loading;
-    if (null != obj[guildId]) {
+    if (obj[guildId] != null) {
       loading = tmp.loading;
     }
     if (true === loading) {
@@ -395,69 +217,69 @@ tmp2 = new tmp2(require("dispatcher"), {
         const merged = Object.assign(obj);
         obj = {};
         const merged1 = Object.assign(tmp);
-        obj["loading"] = true;
+        obj.loading = true;
         obj[guildId] = obj;
       }
     } else {
       obj = {};
       const merged2 = Object.assign(obj);
-      const obj1 = { ids: [], messages: {}, hasMore: false, loading: true, loaded: false, error: false };
+      const obj1 = { ids: null, messages: null, hasMore: false, loading: true, loaded: false, error: false };
+      obj1[0] = [];
+      obj1[1] = {};
       obj[guildId] = obj1;
     }
   },
   LOAD_OFFICIAL_MESSAGES_SUCCESS: function handleLoadOfficialMessagesSuccess(arg0) {
-    let _isNativeReflectConstruct;
+    let ensureGuildLoaded;
     let dependencyMap;
     let guildId;
     let require;
-    ({ guildId, messages: require, hasMore: dependencyMap, before: _isNativeReflectConstruct } = arg0);
-    if (null == dependencyMap[guildId]) {
+    ({ guildId, messages: require, hasMore: dependencyMap, before: ensureGuildLoaded } = arg0);
+    if (null == obj[guildId]) {
       return false;
-    } else {
-      updateGuildState(guildId, (ids) => {
-        let iter2;
-        if (null != _isNativeReflectConstruct) {
+    } else if (null != obj[guildId]) {
+      obj = {};
+      const fn = (arg0) => {
+        let tmp = arg0;
+        if (null != ensureGuildLoaded) {
           const items = [];
-          HermesBuiltin.arraySpread(ids.ids, 0);
-          let items1 = items;
+          HermesBuiltin.arraySpread(tmp.ids, 0);
         } else {
-          items1 = [];
+          const items1 = [];
         }
-        if (null != _isNativeReflectConstruct) {
+        if (null != ensureGuildLoaded) {
           let obj = {};
-          const merged = Object.assign(ids.messages);
+          const merged = Object.assign(tmp.messages);
         } else {
           obj = {};
         }
-        const tmp5 = outer1_15(closure_0);
-        let iter = tmp5();
-        if (!iter.done) {
-          do {
-            let tmp6 = outer1_0;
-            let tmp7 = outer1_1;
-            let obj3 = outer1_0(outer1_1[11]);
-            let messageRecord = obj3.createMessageRecord(iter.value);
-            if (null == obj[messageRecord.id]) {
-              let arr = items1.push(messageRecord.id);
-            }
-            obj[messageRecord.id] = messageRecord;
-            iter2 = tmp5();
-            iter = iter2;
-          } while (!iter2.done);
-        }
-        obj = { ids: items1, messages: null, hasMore: null, loading: false, loaded: true, error: false };
-        obj.messages = obj;
-        obj.hasMore = closure_1;
-        return obj;
-      });
+        tmp = dependencyMap[Symbol.iterator]();
+      };
+      let merged = Object.assign(obj);
+      obj = {};
+      const merged1 = Object.assign(tmp2);
+      const merged2 = Object.assign(fn(tmp2));
+      obj[guildId] = obj;
     }
   },
   LOAD_OFFICIAL_MESSAGES_FAILURE: function handleLoadOfficialMessagesFailure(guildId) {
     guildId = guildId.guildId;
-    if (null == dependencyMap[guildId]) {
+    if (null == obj[guildId]) {
       return false;
     } else {
-      updateGuildState(guildId, null != tmp ? (() => ({ loading: false })) : (() => ({ loading: false, error: true })));
+      if (null != tmp) {
+        let fn = () => ({ loading: false });
+      } else {
+        fn = (arg0) => ({ loading: false, error: true });
+      }
+      if (null != obj[guildId]) {
+        obj = {};
+        const merged = Object.assign(obj);
+        obj = {};
+        const merged1 = Object.assign(tmp3);
+        const merged2 = Object.assign(fn(tmp3));
+        obj[guildId] = obj;
+      }
     }
   },
   GUILD_DELETE: function handleGuildDelete(guild) {
@@ -480,23 +302,39 @@ tmp2 = new tmp2(require("dispatcher"), {
     if (!optimistic.optimistic) {
       if (!optimistic.isPushNotification) {
         if (null != guildId) {
-          const flags = message.flags;
-          let num = 0;
-          if (null != flags) {
-            num = flags;
+          let num = message.flags;
+          if (num == null) {
+            num = 0;
           }
-          if (obj2.hasFlag(num, MessageFlags.IS_GUILD_OFFICIAL)) {
+          if (obj6.hasFlag(num, MessageFlags.IS_GUILD_OFFICIAL)) {
             let tmp5 = null != tmp4;
             if (tmp5) {
               if (null == tmp4.messages[message.id]) {
-                prependRecord(guildId, require(4386) /* createMinimalMessageRecord */.createMessageRecord(message));
-                const obj = require(4386) /* createMinimalMessageRecord */;
+                const messageRecord = tmp23(4409).createMessageRecord(message);
+                if (null != obj[guildId]) {
+                  obj = {};
+                  const merged = Object.assign(obj);
+                  obj = {};
+                  const merged1 = Object.assign(tmp9);
+                  const obj1 = { ids: null, messages: null };
+                  const items = [messageRecord.id];
+                  HermesBuiltin.arraySpread(tmp9.ids, 1);
+                  obj1[0] = items;
+                  const obj2 = {};
+                  const merged2 = Object.assign(tmp9.messages);
+                  obj2[messageRecord.id] = messageRecord;
+                  obj1[1] = obj2;
+                  const merged3 = Object.assign(obj1);
+                  obj[guildId] = obj;
+                }
+                const tmp23Result = tmp23(4409);
               }
               tmp5 = tmp6;
             }
             return tmp5;
           }
-          obj2 = require(1360) /* hasFlag */;
+          obj6 = require(1384) /* hasFlag */;
+          tmp23 = require;
         }
         return false;
       }
@@ -511,49 +349,101 @@ tmp2 = new tmp2(require("dispatcher"), {
     } else {
       const channel = store.getChannel(message.channel_id);
       let guildId;
-      if (null != channel) {
+      if (channel != null) {
         guildId = channel.getGuildId();
       }
       if (null == guildId) {
         return false;
-      } else if (null == dependencyMap[guildId]) {
+      } else if (null == obj11[guildId]) {
         return false;
       } else if (null == message.author) {
-        if (null != tmp22) {
-          updateMessage(guildId, id(4386).updateMessageRecord(tmp22, message));
-          const obj3 = id(4386);
+        if (null != tmp42) {
+          let obj5 = id(4409);
+          const updateMessageRecordResult = obj5.updateMessageRecord(tmp42, message);
+          if (null != obj11[guildId]) {
+            let obj = {};
+            const merged = Object.assign(obj11);
+            obj = {};
+            const merged1 = Object.assign(tmp27);
+            const obj1 = { messages: null };
+            const obj2 = {};
+            const merged2 = Object.assign(tmp27.messages);
+            obj2[updateMessageRecordResult.id] = updateMessageRecordResult;
+            obj1[0] = obj2;
+            const merged3 = Object.assign(obj1);
+            obj[guildId] = obj;
+            obj11 = obj;
+          }
         }
-        return null != tmp22;
+        return null != tmp42;
       } else {
-        const flags = message.flags;
-        let num = 0;
-        if (null != flags) {
-          num = flags;
+        obj11 = id(1384);
+        let num = message.flags;
+        if (num == null) {
+          num = 0;
         }
-        const hasFlagResult = id(1360).hasFlag(num, MessageFlags.IS_GUILD_OFFICIAL);
+        const hasFlagResult = obj11.hasFlag(num, MessageFlags.IS_GUILD_OFFICIAL);
         if (hasFlagResult) {
-          if (null == tmp22) {
-            prependRecord(guildId, id(4386).createMessageRecord(message));
-            const obj2 = id(4386);
+          if (null == tmp42) {
+            let tmp43Result = tmp43(4409);
+            const messageRecord = tmp43Result.createMessageRecord(message);
+            if (null != obj11[guildId]) {
+              const obj3 = {};
+              const merged4 = Object.assign(obj11);
+              const obj4 = {};
+              const merged5 = Object.assign(tmp8);
+              obj5 = { ids: null, messages: null };
+              const items = [messageRecord.id];
+              HermesBuiltin.arraySpread(tmp8.ids, 1);
+              obj5[0] = items;
+              const obj6 = {};
+              const merged6 = Object.assign(tmp8.messages);
+              obj6[messageRecord.id] = messageRecord;
+              obj5[1] = obj6;
+              const merged7 = Object.assign(obj5);
+              obj3[guildId] = obj4;
+              obj11 = obj3;
+            }
           }
         }
         if (!hasFlagResult) {
-          if (null != tmp22) {
+          if (null != tmp42) {
             id = message.id;
-            updateGuildState(guildId, (messages) => {
-              let obj = {};
-              const merged = Object.assign(messages.messages);
+            if (null != obj11[guildId]) {
+              const obj7 = {};
+              const merged8 = Object.assign(obj11);
+              const obj8 = {};
+              const merged9 = Object.assign(tmp46);
+              const obj9 = {};
+              const merged10 = Object.assign(tmp46.messages);
               delete tmp2[tmp];
-              obj = { ids: ids.filter((arg0) => arg0 !== outer1_0), messages: obj };
-              ids = messages.ids;
-              return obj;
-            });
+              const obj10 = { ids: null, messages: null };
+              const ids = tmp46.ids;
+              obj10[0] = ids.filter((arg0) => arg0 !== id);
+              obj10[1] = obj9;
+              const merged11 = Object.assign(obj10);
+              obj7[guildId] = obj8;
+              obj11 = obj7;
+            }
           }
         }
         if (hasFlagResult) {
-          if (null != tmp22) {
-            updateMessage(guildId, id(4386).updateMessageRecord(tmp22, message));
-            let obj = id(4386);
+          if (null != tmp42) {
+            tmp43Result = tmp43(4409);
+            const updateMessageRecordResult1 = tmp43Result.updateMessageRecord(tmp42, message);
+            if (null != obj11[guildId]) {
+              obj11 = {};
+              const merged12 = Object.assign(obj11);
+              const obj12 = {};
+              const merged13 = Object.assign(tmp60);
+              const obj13 = { messages: null };
+              const obj14 = {};
+              const merged14 = Object.assign(tmp60.messages);
+              obj14[updateMessageRecordResult1.id] = updateMessageRecordResult1;
+              obj13[0] = obj14;
+              const merged15 = Object.assign(obj13);
+              obj11[guildId] = obj12;
+            }
           }
         }
         return false;
@@ -572,7 +462,7 @@ tmp2 = new tmp2(require("dispatcher"), {
     ({ channelId, messageId, userId, optimistic } = arg0);
     const currentUser = authStore.getCurrentUser();
     let id;
-    if (null != currentUser) {
+    if (currentUser != null) {
       id = currentUser.id;
     }
     if (optimistic) {
@@ -580,12 +470,44 @@ tmp2 = new tmp2(require("dispatcher"), {
         return false;
       }
     }
-    const tmp4 = findMessage(channelId, messageId);
-    if (null == tmp4) {
+    const channel = store.getChannel(channelId);
+    let guildId;
+    if (channel != null) {
+      guildId = channel.getGuildId();
+    }
+    let tmp5 = null;
+    if (null != guildId) {
+      tmp5 = null;
+      if (null != obj[guildId]) {
+        let tmp9 = null;
+        if (null != tmp7.messages[messageId]) {
+          obj = { guildId: null, message: null };
+          obj[0] = guildId;
+          obj[1] = tmp8;
+          tmp9 = obj;
+        }
+        tmp5 = tmp9;
+      }
+    }
+    if (null == tmp5) {
       return false;
     } else {
-      const message = tmp4.message;
-      updateMessage(tmp4.guildId, message.addReaction(emoji, tmp3, colors, reactionType));
+      const message = tmp5.message;
+      const addReactionResult = message.addReaction(emoji, tmp3, colors, reactionType);
+      guildId = tmp5.guildId;
+      if (null != obj[guildId]) {
+        obj = {};
+        const merged = Object.assign(obj);
+        const obj1 = {};
+        const merged1 = Object.assign(tmp28);
+        const obj2 = { messages: null };
+        const obj3 = {};
+        const merged2 = Object.assign(tmp28.messages);
+        obj3[addReactionResult.id] = addReactionResult;
+        obj2[0] = obj3;
+        const merged3 = Object.assign(obj2);
+        obj[guildId] = obj1;
+      }
     }
   },
   MESSAGE_REACTION_REMOVE: function handleMessageReactionRemove(arg0) {
@@ -598,7 +520,7 @@ tmp2 = new tmp2(require("dispatcher"), {
     ({ channelId, messageId, userId, emoji, optimistic, reactionType } = arg0);
     const currentUser = authStore.getCurrentUser();
     let id;
-    if (null != currentUser) {
+    if (currentUser != null) {
       id = currentUser.id;
     }
     if (optimistic) {
@@ -606,59 +528,164 @@ tmp2 = new tmp2(require("dispatcher"), {
         return false;
       }
     }
-    const tmp4 = findMessage(channelId, messageId);
-    if (null == tmp4) {
+    const channel = store.getChannel(channelId);
+    let guildId;
+    if (channel != null) {
+      guildId = channel.getGuildId();
+    }
+    let tmp5 = null;
+    if (null != guildId) {
+      tmp5 = null;
+      if (null != obj[guildId]) {
+        let tmp9 = null;
+        if (null != tmp7.messages[messageId]) {
+          obj = { guildId: null, message: null };
+          obj[0] = guildId;
+          obj[1] = tmp8;
+          tmp9 = obj;
+        }
+        tmp5 = tmp9;
+      }
+    }
+    if (null == tmp5) {
       return false;
     } else {
-      const message = tmp4.message;
-      updateMessage(tmp4.guildId, message.removeReaction(emoji, tmp3, reactionType));
+      const message = tmp5.message;
+      const removeReactionResult = message.removeReaction(emoji, tmp3, reactionType);
+      guildId = tmp5.guildId;
+      if (null != obj[guildId]) {
+        obj = {};
+        const merged = Object.assign(obj);
+        const obj1 = {};
+        const merged1 = Object.assign(tmp12);
+        const obj2 = { messages: null };
+        const obj3 = {};
+        const merged2 = Object.assign(tmp12.messages);
+        obj3[removeReactionResult.id] = removeReactionResult;
+        obj2[0] = obj3;
+        const merged3 = Object.assign(obj2);
+        obj[guildId] = obj1;
+      }
     }
   },
   MESSAGE_REACTION_REMOVE_ALL: function handleMessageReactionRemoveAll(channelId) {
-    const tmp = findMessage(channelId.channelId, channelId.messageId);
-    if (null == tmp) {
+    const channel = store.getChannel(channelId.channelId);
+    let guildId;
+    if (channel != null) {
+      guildId = channel.getGuildId();
+    }
+    let tmp2 = null;
+    if (null != guildId) {
+      tmp2 = null;
+      if (null != obj[guildId]) {
+        let tmp6 = null;
+        if (null != tmp4.messages[channelId.messageId]) {
+          obj = { guildId: null, message: null };
+          obj[0] = guildId;
+          obj[1] = tmp5;
+          tmp6 = obj;
+        }
+        tmp2 = tmp6;
+      }
+    }
+    if (null == tmp2) {
       return false;
     } else {
-      const message = tmp.message;
-      updateMessage(tmp.guildId, message.set("reactions", []));
+      const message = tmp2.message;
+      const result = message.set("reactions", []);
+      guildId = tmp2.guildId;
+      if (null != obj[guildId]) {
+        obj = {};
+        const merged = Object.assign(obj);
+        const obj1 = {};
+        const merged1 = Object.assign(tmp20);
+        const obj2 = { messages: null };
+        const obj3 = {};
+        const merged2 = Object.assign(tmp20.messages);
+        obj3[result.id] = result;
+        obj2[0] = obj3;
+        const merged3 = Object.assign(obj2);
+        obj[guildId] = obj1;
+      }
     }
   },
   MESSAGE_REACTION_REMOVE_EMOJI: function handleMessageReactionRemoveEmoji(channelId) {
-    const tmp = findMessage(channelId.channelId, channelId.messageId);
-    if (null == tmp) {
+    let emoji;
+    let messageId;
+    ({ messageId, emoji } = channelId);
+    const channel = store.getChannel(channelId.channelId);
+    let guildId;
+    if (channel != null) {
+      guildId = channel.getGuildId();
+    }
+    let tmp2 = null;
+    if (null != guildId) {
+      tmp2 = null;
+      if (null != obj[guildId]) {
+        let tmp6 = null;
+        if (null != tmp4.messages[messageId]) {
+          obj = { guildId: null, message: null };
+          obj[0] = guildId;
+          obj[1] = tmp5;
+          tmp6 = obj;
+        }
+        tmp2 = tmp6;
+      }
+    }
+    if (null == tmp2) {
       return false;
     } else {
-      const message = tmp.message;
-      updateMessage(tmp.guildId, message.removeReactionsForEmoji(channelId.emoji));
+      const message = tmp2.message;
+      const result = message.removeReactionsForEmoji(emoji);
+      guildId = tmp2.guildId;
+      if (null != obj[guildId]) {
+        obj = {};
+        const merged = Object.assign(obj);
+        const obj1 = {};
+        const merged1 = Object.assign(tmp9);
+        const obj2 = { messages: null };
+        const obj3 = {};
+        const merged2 = Object.assign(tmp9.messages);
+        obj3[result.id] = result;
+        obj2[0] = obj3;
+        const merged3 = Object.assign(obj2);
+        obj[guildId] = obj1;
+      }
     }
   },
   MESSAGE_DELETE: function handleMessageDelete(id) {
     id = id.id;
     const guildId = id.guildId;
-    let tmp = null != guildId;
-    if (tmp) {
-      let tmp4;
-      if (null != dependencyMap[guildId]) {
-        tmp4 = tmp3.messages[id];
+    let tmp3 = null != guildId;
+    if (tmp3) {
+      let tmp6;
+      if (obj[guildId] != null) {
+        tmp6 = tmp5.messages[id];
       }
-      if (null != tmp4) {
-        updateGuildState(guildId, (messages) => {
-          let obj = {};
-          const merged = Object.assign(messages.messages);
+      if (null != tmp6) {
+        if (null != obj[guildId]) {
+          obj = {};
+          const merged = Object.assign(obj);
+          obj = {};
+          const merged1 = Object.assign(tmp9);
+          obj = {};
+          const merged2 = Object.assign(tmp9.messages);
           delete tmp2[tmp];
-          obj = { ids: ids.filter((arg0) => arg0 !== outer1_0), messages: obj };
-          ids = messages.ids;
-          return obj;
-        });
+          const obj1 = { ids: null, messages: null };
+          const ids = tmp9.ids;
+          obj1[0] = ids.filter((arg0) => arg0 !== id);
+          obj1[1] = obj;
+          const merged3 = Object.assign(obj1);
+          obj[guildId] = obj;
+        }
       }
-      tmp = tmp5;
+      tmp3 = tmp7;
     }
-    return tmp;
+    return tmp3;
   },
   MESSAGE_DELETE_BULK: function handleMessageDeleteBulk(arg0) {
     let guildId;
     let ids;
-    let iter2;
     ({ ids, guildId } = arg0);
     let set;
     let found;
@@ -670,23 +697,21 @@ tmp2 = new tmp2(require("dispatcher"), {
     } else {
       const _Set = Set;
       set = new Set(ids);
-      ids = tmp10.ids;
+      ids = tmp12.ids;
       found = ids.filter((arg0) => !set.has(arg0));
-      if (found.length === tmp10.ids.length) {
+      if (found.length === tmp12.ids.length) {
         return false;
       } else {
         obj = {};
-        const merged = Object.assign(tmp10.messages);
-        const tmp6 = _createForOfIteratorHelperLoose(tmp10.ids);
-        let iter = tmp6();
-        if (!iter.done) {
-          do {
-            if (set.has(iter.value)) {
-              delete tmp2[tmp];
-            }
-            iter2 = tmp6();
-            iter = iter2;
-          } while (!iter2.done);
+        const merged = Object.assign(tmp12.messages);
+        const ids2 = tmp12.ids;
+        for (const item10014 of ids2) {
+          let tmp7 = item10014;
+          if (set.has(item10014)) {
+            let tmp8 = item10014;
+            delete tmp[tmp2];
+          }
+          continue;
         }
         updateGuildState(guildId, () => {
           obj = { ids: found, messages: obj };
@@ -699,6 +724,6 @@ tmp2 = new tmp2(require("dispatcher"), {
   RELATIONSHIP_REMOVE: handleRelationshipUpdate,
   RELATIONSHIP_UPDATE: handleRelationshipUpdate
 });
-let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/messages/GuildOfficialMessagesStore.tsx");
+let result = require("createGuildRecordFromRust").fileFinishedImporting("modules/messages/GuildOfficialMessagesStore.tsx");
 
-export default tmp2;
+export default guildOfficialMessagesStore;

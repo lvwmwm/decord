@@ -1,9 +1,9 @@
-// Module ID: 4132
-// Function ID: 34058
+// Module ID: 4156
+// Function ID: 4157
 // Name: enforcing
-// Dependencies: [27, 2]
+// Dependencies: [17, 2]
 
-// Module 4132 (enforcing)
+// Module 4156 (enforcing)
 import { TurboModuleRegistry } from "get ActivityIndicator";
 
 const enforcing = TurboModuleRegistry.getEnforcing("NativeBrowserManagerModule");

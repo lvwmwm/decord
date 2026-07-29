@@ -1,22 +1,24 @@
-// Module ID: 15915
-// Function ID: 122723
+// Module ID: 15950
+// Function ID: 15951
 // Name: activityPlatformToConnectedAccountType
-// Dependencies: [653, 2]
+// Dependencies: [676, 2]
 // Exports: default
 
-// Module 15915 (activityPlatformToConnectedAccountType)
+// Module 15950 (activityPlatformToConnectedAccountType)
 import ME from "ME";
 
-({ ActivityGamePlatforms: closure_0, PlatformTypes: closure_1 } = ME);
+let c0;
+let closure_1;
+({ ActivityGamePlatforms: c0, PlatformTypes: closure_1 } = ME);
 const result = require("set").fileFinishedImporting("modules/game_console/activityPlatformToConnectedAccountType.tsx");
 
 export default function activityPlatformToConnectedAccountType(arg0) {
-  if (closure_0.PS4 !== arg0) {
-    if (closure_0.PS5 !== arg0) {
-      if (closure_0.XBOX === arg0) {
-        return closure_1.XBOX;
+  if (PS4.PS4 !== arg0) {
+    if (tmp.PS5 !== arg0) {
+      if (tmp.XBOX === arg0) {
+        return constants.XBOX;
       }
     }
   }
-  return closure_1.PLAYSTATION;
+  return constants.PLAYSTATION;
 };

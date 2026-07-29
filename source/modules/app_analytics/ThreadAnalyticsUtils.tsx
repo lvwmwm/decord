@@ -1,18 +1,18 @@
-// Module ID: 6067
-// Function ID: 54237
+// Module ID: 6085
+// Function ID: 6086
 // Name: collectThreadMetadata
-// Dependencies: [6063, 6048, 1352, 3793, 653, 1198, 21, 2]
+// Dependencies: [6081, 6066, 1376, 3817, 676, 1222, 11, 2]
 // Exports: collectThreadMetadata
 
-// Module 6067 (collectThreadMetadata)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_4 from "_isNativeReflectConstruct";
-import { THREAD_CHANNEL_TYPES } from "_callSuper";
-import closure_6 from "_isNativeReflectConstruct";
+// Module 6085 (collectThreadMetadata)
+import updateFromGuild from "updateFromGuild";
+import updateState from "updateState";
+import { THREAD_CHANNEL_TYPES } from "createChannelRecord";
+import getUncachedChannelPermissions from "getUncachedChannelPermissions";
 import { Permissions } from "ME";
 
 const require = arg1;
-const result = require("_callSuper").fileFinishedImporting("modules/app_analytics/ThreadAnalyticsUtils.tsx");
+const result = require("createChannelRecord").fileFinishedImporting("modules/app_analytics/ThreadAnalyticsUtils.tsx");
 
 export const collectThreadMetadata = function collectThreadMetadata(channel, arg1) {
   let flag = arg1;
@@ -23,42 +23,44 @@ export const collectThreadMetadata = function collectThreadMetadata(channel, arg
   if (null != channel) {
     tmp = null;
     if (THREAD_CHANNEL_TYPES.has(channel.type)) {
-      const obj = {};
       let lastRouteChangeSource;
       if (flag) {
-        lastRouteChangeSource = require(1198) /* shouldNavigate */.getLastRouteChangeSource();
-        const obj2 = require(1198) /* shouldNavigate */;
+        let obj = require(1222) /* transitionTo */;
+        lastRouteChangeSource = obj.getLastRouteChangeSource();
       }
-      obj.location = lastRouteChangeSource;
-      obj.thread_approximate_member_count = memberCount.getMemberCount(channel.id);
-      obj.thread_approximate_message_count = count.getCount(channel.id);
+      obj = { location: null, thread_approximate_member_count: null, thread_approximate_message_count: null, thread_archived: null, thread_locked: null, thread_auto_archive_duration_minutes: null, thread_approximate_creation_date: null, can_send_message: null, parent_channel_type: null };
+      obj[0] = lastRouteChangeSource;
+      obj[1] = memberCount.getMemberCount(channel.id);
+      obj[2] = count.getCount(channel.id);
       const threadMetadata = channel.threadMetadata;
       let archived;
-      if (null != threadMetadata) {
+      if (threadMetadata != null) {
         archived = threadMetadata.archived;
       }
-      obj.thread_archived = true === archived;
+      obj[3] = true === archived;
       const threadMetadata2 = channel.threadMetadata;
-      let locked;
-      if (null != threadMetadata2) {
-        locked = threadMetadata2.locked;
+      let flag3;
+      if (threadMetadata2 != null) {
+        flag3 = threadMetadata2.locked;
       }
-      obj.thread_locked = null != locked && locked;
+      if (flag3 == null) {
+        flag3 = false;
+      }
+      obj[4] = flag3;
       const threadMetadata3 = channel.threadMetadata;
-      let autoArchiveDuration;
-      if (null != threadMetadata3) {
-        autoArchiveDuration = threadMetadata3.autoArchiveDuration;
+      let num;
+      if (threadMetadata3 != null) {
+        num = threadMetadata3.autoArchiveDuration;
       }
-      let num2 = 0;
-      if (null != autoArchiveDuration) {
-        num2 = autoArchiveDuration;
+      if (num == null) {
+        num = 0;
       }
-      obj.thread_auto_archive_duration_minutes = num2;
-      obj.thread_approximate_creation_date = importDefault(21).extractTimestamp(channel.id);
-      obj.can_send_message = closure_6.can(Permissions.SEND_MESSAGES, channel);
-      obj.parent_channel_type = channel.parentChannelThreadType;
+      obj[5] = num;
+      obj[6] = importDefault(11).extractTimestamp(channel.id);
+      obj[7] = getUncachedChannelPermissions.can(Permissions.SEND_MESSAGES, channel);
+      obj[8] = channel.parentChannelThreadType;
       tmp = obj;
-      const obj3 = importDefault(21);
+      const obj3 = importDefault(11);
     }
   }
   return tmp;

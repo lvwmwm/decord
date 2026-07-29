@@ -1,15 +1,15 @@
-// Module ID: 3840
-// Function ID: 31496
+// Module ID: 3864
+// Function ID: 3865
 // Name: items
-// Dependencies: [1282, 2]
+// Dependencies: [1306, 2]
 
-// Module 3840 (items)
+// Module 3864 (items)
 const obj = { DISABLED: 0, [0]: "DISABLED", NON_FRIENDS: 1, [1]: "NON_FRIENDS", FRIENDS_AND_NON_FRIENDS: 2, [2]: "FRIENDS_AND_NON_FRIENDS" };
-const items = [obj.DISABLED, require("_callSuper").DmSpamFilterV2.DISABLED];
+const items = [obj.DISABLED, require("create").DmSpamFilterV2.DISABLED];
 const items1 = [items, , ];
-const items2 = [obj.NON_FRIENDS, require("_callSuper").DmSpamFilterV2.NON_FRIENDS];
+const items2 = [obj.NON_FRIENDS, require("create").DmSpamFilterV2.NON_FRIENDS];
 items1[1] = items2;
-const items3 = [obj.FRIENDS_AND_NON_FRIENDS, require("_callSuper").DmSpamFilterV2.FRIENDS_AND_NON_FRIENDS];
+const items3 = [obj.FRIENDS_AND_NON_FRIENDS, require("create").DmSpamFilterV2.FRIENDS_AND_NON_FRIENDS];
 items1[2] = items3;
 const map = new Map(items1);
 const result = require("set").fileFinishedImporting("modules/user_settings/privacy_and_safety/DMSafetyConstants.tsx");

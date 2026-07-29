@@ -1,123 +1,129 @@
-// Module ID: 9096
-// Function ID: 71309
+// Module ID: 9120
+// Function ID: 9121
 // Name: PressableNavigatorBackIcon
-// Dependencies: [31, 27, 1348, 5902, 1907, 33, 4165, 1273, 689, 1324, 566, 3976, 9097, 4695, 1212, 9098, 9099, 2]
+// Dependencies: [19, 17, 1372, 5921, 1931, 21, 4189, 1297, 712, 1348, 589, 4000, 9121, 4717, 1236, 9122, 9123, 2]
 
-// Module 9096 (PressableNavigatorBackIcon)
-import importAllResult from "result";
-import get_ActivityIndicator from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_7 from "_isNativeReflectConstruct";
-import closure_8 from "_isNativeReflectConstruct";
+// Module 9120 (PressableNavigatorBackIcon)
+import importAllResult from "noop";
+import get_ActivityIndicator from "set";
+import ensureGuildLoaded from "ensureGuildLoaded";
+import updateGuildUnreadSentinel from "updateGuildUnreadSentinel";
+import handleConnectionOpen from "handleConnectionOpen";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_10;
-let closure_4;
-let closure_5;
-let closure_9;
+let c10;
+let c4;
+let c5;
+let c9;
 const require = arg1;
-({ View: closure_4, Image: closure_5 } = get_ActivityIndicator);
-({ jsx: closure_9, jsxs: closure_10 } = jsxProd);
-let closure_11 = _createForOfIteratorHelperLoose.createStyles((arg0) => {
-  let obj = {};
-  obj = { position: "absolute", minWidth: require(1273) /* Button */.BADGE_SIZE, height: require(1273) /* Button */.BADGE_SIZE, top: 10, left: 8, flexShrink: 0, flexGrow: 1, zIndex: 100 };
-  obj.maskWrapper = obj;
-  obj = { backgroundColor: importDefault(689).colors.PANEL_BG };
-  obj.maskStroke = obj;
-  const obj1 = { padding: 8, zIndex: 100, width: 40, height: 40, borderRadius: 20 };
-  obj.actionButtonPressable = obj1;
-  const obj2 = {};
-  const colors = importDefault(689).colors;
-  obj2.tintColor = arg0 ? colors.ICON_SUBTLE : colors.INTERACTIVE_TEXT_DEFAULT;
-  obj.actionButtonIcon = obj2;
+let c3 = importAllResult;
+({ View: c4, Image: c5 } = get_ActivityIndicator);
+({ jsx: c9, jsxs: c10 } = jsxProd);
+let closure_11 = createCacheKey.createStyles((arg0) => {
+  let obj = { maskWrapper: null, maskStroke: null, actionButtonPressable: null, actionButtonIcon: null };
+  obj = { position: "absolute", minWidth: require(1297) /* Button */.BADGE_SIZE, height: require(1297) /* Button */.BADGE_SIZE, top: 10, left: 8, flexShrink: 0, flexGrow: 1, zIndex: 100 };
+  obj[0] = obj;
+  obj = { backgroundColor: importDefault(712).colors.PANEL_BG };
+  obj[1] = obj;
+  const obj1 = { padding: 8, zIndex: 100, width: 40, height: null, borderRadius: 20 };
+  obj1[3] = 40;
+  obj[2] = obj1;
+  const colors = importDefault(712).colors;
+  obj[3] = { tintColor: arg0 ? colors.ICON_SUBTLE : colors.INTERACTIVE_TEXT_DEFAULT };
   return obj;
 });
 const forwardRefResult = importAllResult.forwardRef((navigation, ref) => {
   navigation = navigation.navigation;
   const onPress = navigation.onPress;
-  let obj = Object.create(null);
-  obj.navigation = 0;
-  obj.onPress = 0;
-  const merged = Object.assign(navigation, obj);
-  const tmp3 = callback2(onPress(stateFromStores[9])("PressableNavigatorBackIcon"));
-  obj = navigation(stateFromStores[10]);
-  const items = [closure_7, closure_8, _isNativeReflectConstruct];
+  const merged = Object.assign(navigation, Object.create(null));
+  let stateFromStores;
+  const tmp4 = callback(onPress(stateFromStores[9])("PressableNavigatorBackIcon"));
+  let obj = navigation(stateFromStores[10]);
+  const items = [updateGuildUnreadSentinel, handleConnectionOpen, ensureGuildLoaded];
   stateFromStores = obj.useStateFromStores(items, () => {
-    const totalMentionCount = outer1_7.getTotalMentionCount();
-    const currentlySelectedChannelId = outer1_8.getCurrentlySelectedChannelId();
+    totalMentionCount = totalMentionCount.getTotalMentionCount();
+    currentlySelectedChannelId = currentlySelectedChannelId.getCurrentlySelectedChannelId();
     if (null == currentlySelectedChannelId) {
       return totalMentionCount;
     } else {
-      const channel = outer1_6.getChannel(currentlySelectedChannelId);
+      channel = channel.getChannel(currentlySelectedChannelId);
       let guild_id;
-      if (null != channel) {
+      if (channel != null) {
         guild_id = channel.guild_id;
       }
-      let tmp6 = null;
-      if (null != guild_id) {
-        tmp6 = guild_id;
+      if (guild_id == null) {
+        guild_id = null;
       }
-      return totalMentionCount - outer1_7.getHighImportanceMentionCountForChannel(tmp6, currentlySelectedChannelId);
+      return totalMentionCount - obj.getHighImportanceMentionCountForChannel(guild_id, currentlySelectedChannelId);
     }
+    obj = totalMentionCount;
   });
+  let obj1 = importAllResult;
   const items1 = [stateFromStores];
   const memo = importAllResult.useMemo(() => {
     if (stateFromStores >= 10) {
-      if (stateFromStores < 100) {
-        let obj = { minWidth: navigation(stateFromStores[7]).BADGE_SIZE + 8 };
+      if (tmp < 100) {
+        let obj = { minWidth: null };
+        obj[0] = navigation(stateFromStores[7]).BADGE_SIZE + 8;
       } else {
-        obj = { minWidth: navigation(stateFromStores[7]).BADGE_SIZE + 12 };
+        obj = { minWidth: null };
+        obj[0] = navigation(stateFromStores[7]).BADGE_SIZE + 12;
       }
       return obj;
     }
   }, items1);
-  let obj1 = navigation(stateFromStores[11]);
-  let backgroundColor = obj1.useGradientValue(navigation(stateFromStores[11]).GradientPercentage.START);
+  let obj2 = navigation(stateFromStores[11]);
+  let backgroundColor = obj2.useGradientValue(navigation(stateFromStores[11]).GradientPercentage.START);
   if (null == backgroundColor) {
-    backgroundColor = tmp3.maskStroke.backgroundColor;
+    backgroundColor = tmp4.maskStroke.backgroundColor;
   }
   const items2 = [navigation, onPress];
-  const callback = importAllResult.useCallback(() => {
+  callback = obj1.useCallback(() => {
     if (null == onPress) {
-      if (null != navigation) {
-        navigation.goBack();
+      if (navigation != null) {
+        obj.goBack();
       }
+      obj = navigation;
     } else {
-      onPress();
+      tmp();
     }
   }, items2);
-  obj = {};
-  obj1 = { ref };
+  obj = { ref };
   const merged1 = Object.assign(merged);
-  obj1["accessibilityRole"] = "button";
+  obj.accessibilityRole = "button";
   if (stateFromStores > 0) {
-    const intl2 = navigation(stateFromStores[14]).intl;
-    const obj2 = { mentionCount: stateFromStores };
-    let formatToPlainStringResult = intl2.formatToPlainString(navigation(stateFromStores[14]).t.vxFYaM, obj2);
+    const intl2 = tmp5(tmp3[14]).intl;
+    obj = { mentionCount: null };
+    obj[0] = stateFromStores;
+    let formatToPlainStringResult = intl2.formatToPlainString(tmp5(tmp3[14]).t.vxFYaM, obj);
   } else {
-    const intl = navigation(stateFromStores[14]).intl;
-    formatToPlainStringResult = intl.string(navigation(stateFromStores[14]).t["13/7kX"]);
+    const intl = tmp5(tmp3[14]).intl;
+    formatToPlainStringResult = intl.string(tmp5(tmp3[14]).t["13/7kX"]);
   }
-  obj1["accessibilityLabel"] = formatToPlainStringResult;
-  obj1["onPress"] = callback;
-  obj1["style"] = tmp3.actionButtonPressable;
-  const obj3 = {};
-  const tmp8 = onPress(stateFromStores[12]);
-  const items3 = [callback(closure_5, { source: onPress(stateFromStores[15]), style: obj5 }), ];
-  let tmp17 = null;
+  obj.accessibilityLabel = formatToPlainStringResult;
+  obj.onPress = callback;
+  obj.style = tmp4.actionButtonPressable;
+  obj1 = { source: tmp2(tmp3[15]), style: obj2 };
+  obj2 = { tintColor: tmp4.actionButtonIcon.tintColor };
+  const items3 = [closure_9(closure_5, obj1), ];
+  let tmp9Result = null;
   if (stateFromStores > 0) {
-    const obj6 = { style: tmp3.maskWrapper };
-    const obj7 = { value: stateFromStores, maxValue: 99, backgroundColor, unread: false, style: memo };
-    obj6.children = callback(onPress(stateFromStores[16]), obj7);
-    tmp17 = callback(closure_4, obj6);
+    const obj3 = { style: null, children: null };
+    obj3[0] = tmp4.maskWrapper;
+    const obj4 = { value: null, maxValue: 99, backgroundColor: null, unread: false, style: null };
+    obj4[0] = stateFromStores;
+    obj4[2] = backgroundColor;
+    obj4[4] = memo;
+    obj3[1] = tmp9(tmp2(tmp3[16]), obj4);
+    tmp9Result = tmp9(tmp14, obj3);
   }
-  items3[1] = tmp17;
-  obj3.children = items3;
-  obj1["children"] = closure_10(closure_4, obj3);
-  obj.children = callback(navigation(stateFromStores[13]).PressableOpacity, obj1);
-  return callback(tmp8, obj);
+  const obj5 = { children: null };
+  items3[1] = tmp9Result;
+  obj.children = closure_10(closure_4, { children: items3 });
+  obj5[0] = closure_9(navigation(stateFromStores[13]).PressableOpacity, obj);
+  return closure_9(onPress(stateFromStores[12]), obj5);
 });
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/main_tabs_v2/native/shared_components/navigator/PressableNavigatorBackIcon.tsx");
+const result = require("ensureGuildLoaded").fileFinishedImporting("modules/main_tabs_v2/native/shared_components/navigator/PressableNavigatorBackIcon.tsx");
 
 export const PressableNavigatorBackIcon = forwardRefResult;

@@ -1,45 +1,45 @@
-// Module ID: 15962
-// Function ID: 123229
+// Module ID: 15997
+// Function ID: 15998
 // Name: getConsoleConnectingText
-// Dependencies: [653, 1212, 2]
+// Dependencies: [676, 1236, 2]
 // Exports: getConsoleConnectingText
 
-// Module 15962 (getConsoleConnectingText)
+// Module 15997 (getConsoleConnectingText)
 import { PlatformTypes } from "ME";
 
 const result = require("set").fileFinishedImporting("modules/game_console/native/getConsoleConnectingText.tsx");
 
 export const getConsoleConnectingText = function getConsoleConnectingText(stateFromStores1, stateFromStores, arg2) {
   let type;
-  if (null != stateFromStores) {
+  if (stateFromStores != null) {
     type = stateFromStores.type;
   }
-  if (null == type) {
+  if (type == null) {
     let os;
-    if (null != stateFromStores1) {
+    if (stateFromStores1 != null) {
       os = stateFromStores1.clientInfo.os;
     }
     type = os;
   }
   if (type === PlatformTypes.XBOX) {
     if (arg2) {
-      const intl4 = require(1212) /* getSystemLocale */.intl;
-      let str2 = intl4.format(require(1212) /* getSystemLocale */.t["ynEs/Y"], {});
+      const intl4 = require(1236) /* getSystemLocale */.intl;
+      let str2 = intl4.format(require(1236) /* getSystemLocale */.t["ynEs/Y"], {});
     } else {
       str2 = "Xbox";
-      if (tmp3) {
-        const intl3 = require(1212) /* getSystemLocale */.intl;
-        str2 = intl3.string(require(1212) /* getSystemLocale */.t.UjA4HX);
+      if (tmp4) {
+        const intl3 = require(1236) /* getSystemLocale */.intl;
+        str2 = intl3.string(require(1236) /* getSystemLocale */.t.UjA4HX);
       }
     }
   } else if (arg2) {
-    const intl2 = require(1212) /* getSystemLocale */.intl;
-    let str = intl2.format(require(1212) /* getSystemLocale */.t.TZ17Bg, {});
+    const intl2 = require(1236) /* getSystemLocale */.intl;
+    let str = intl2.format(require(1236) /* getSystemLocale */.t.TZ17Bg, {});
   } else {
     str = "PS5";
-    if (tmp3) {
-      const intl = require(1212) /* getSystemLocale */.intl;
-      str = intl.string(require(1212) /* getSystemLocale */.t.QCw1oW);
+    if (tmp4) {
+      const intl = require(1236) /* getSystemLocale */.intl;
+      str = intl.string(require(1236) /* getSystemLocale */.t.QCw1oW);
     }
   }
 };

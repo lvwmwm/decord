@@ -1,147 +1,111 @@
-// Module ID: 8281
-// Function ID: 66267
-// Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 1388, 8257, 1352, 1391, 6676, 1858, 1838, 1850, 653, 8282, 7794, 21, 8283, 507, 686, 8285, 1387, 8286, 3747, 8287, 22, 587, 566, 2]
+// Module ID: 8305
+// Function ID: 8306
+// Name: handleFormInit
+// Dependencies: [1412, 8281, 1376, 1415, 6697, 1882, 1862, 1874, 676, 8306, 7817, 11, 8307, 530, 709, 8309, 1411, 8310, 3771, 8311, 589, 12, 595, 2]
 
-// Module 8281 (_isNativeReflectConstruct)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import _callSuper from "_callSuper";
-import closure_5 from "PUBLIC_SUCCESS_MODAL_SEEN_KEY";
-import canUseMobileServerTagSettings from "canUseMobileServerTagSettings";
-import closure_7 from "_isNativeReflectConstruct";
-import { set } from "constructInPlace";
-import closure_9 from "_isNativeReflectConstruct";
-import { createChannelRecordFromInvite as closure_10 } from "_callSuper";
-import { getGuildEveryoneRoleId } from "isGuildOwner";
-import closure_12 from "_isNativeReflectConstruct";
-import closure_13 from "_isNativeReflectConstruct";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import closure_15 from "_isNativeReflectConstruct";
+// Module 8305 (handleFormInit)
+import { set } from "isValueEqual";
+import handleUpdateStart from "handleUpdateStart";
+import { createChannelRecordFromInvite as closure_15 } from "createChannelRecord";
+import { getGuildEveryoneRoleId } from "GuildNSFWContentLevel";
+import createFromServer from "createFromServer";
+import createdAt from "createdAt";
+import createGuildRecordFromRust from "createGuildRecordFromRust";
+import mergeGuildAvatar from "mergeGuildAvatar";
 import ME from "ME";
 import { DEFAULT_DISCOVERY_CATEGORY_ID } from "DEFAULT_DISCOVERY_CATEGORY_ID";
 import PUBLIC_SUCCESS_MODAL_SEEN_KEY from "PUBLIC_SUCCESS_MODAL_SEEN_KEY";
-import set from "_possibleConstructorReturn";
+import { Store } from "initialize";
+import set from "createChannelRecord";
 
-let closure_18;
-let closure_19;
-let closure_20;
-let closure_21;
 let closure_23;
 let closure_24;
-const require = arg1;
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
-  }
-  const result = _isNativeReflectConstruct();
-}
-function syncGuild(guildId) {
-  if (null != guild) {
-    if (null != guild) {
-      if (guild.id === guildId) {
-        guild = store2.getGuild(guildId);
-        let flag = null != guild;
-        if (flag) {
-          if (guild === guild) {
-            flag = true;
-          } else {
-            flag = true;
-          }
-        }
-        return flag;
-      }
-    }
-  }
-  return false;
-}
+let closure_25;
+let closure_26;
+let closure_28;
+let closure_29;
 function handleFormInit(location) {
   let guildId;
   let section;
   let subsection;
   ({ guildId, section, subsection } = location);
-  const guild = store2.getGuild(guildId);
+  let guild = store2.getGuild(guildId);
   if (null == guild) {
-    handleFormClose();
+    let c35 = false;
+    let OPEN = FormStates.CLOSED;
+    guild = null;
+    guild = null;
+    let c39 = false;
+    let closure_41 = false;
+    let closure_43 = null;
+    let c45 = null;
+    let c46 = 0;
+    let c53 = null;
+    let c56 = null;
+    let c57 = null;
+    let c3 = null;
+    let c4 = null;
+    let c5 = null;
+    let mfaLevel = MFALevels.NONE;
+    let closure_44 = {};
+    let obj2;
   } else {
     const profile = store.getProfile(guildId);
-    let closure_45 = c44;
-    let closure_47 = c46;
-    const OPEN = FormStates.OPEN;
-    let closure_41 = {};
-    let c42 = null;
-    let closure_32 = importDefault(21).castGuildIdAsEveryoneGuildRoleId(guildId);
-    const mfaLevel = guild.mfaLevel;
-    let closure_56 = obj;
-    let c34 = null;
-    let closure_48 = {};
+    closure_41 = c40;
+    closure_43 = c42;
+    OPEN = FormStates.OPEN;
+    let closure_37 = {};
+    let c38 = null;
+    let closure_10 = importDefault(11).castGuildIdAsEveryoneGuildRoleId(guildId);
+    mfaLevel = guild.mfaLevel;
+    let closure_52 = obj;
+    let c12 = null;
+    closure_44 = {};
     location = location.location;
     if (section === constants.TAG) {
-      obj = require(8283) /* canUseMobileServerTagSettings */;
+      obj = require(8307) /* canUseMobileServerTagSettings */;
       if (!obj.canUseMobileServerTagSettings(guildId)) {
-        let obj2;
+        obj2 = undefined;
       }
     }
     if (null != section) {
-      obj = { key: "landing", name: constants.LANDING };
+      obj = { key: "landing", name: null };
+      obj[1] = tmp16.LANDING;
       const items = [obj];
-      if (section === constants.TAG_CUSTOMIZE) {
-        obj = { key: constants.TAG, name: constants.TAG };
+      if (section === tmp16.TAG_CUSTOMIZE) {
+        obj = { key: null, name: null };
+        ({ TAG: obj2[0], TAG: obj2[1] } = tmp16);
         items.push(obj);
       }
-      const obj1 = { key: section, name: section };
+      const obj1 = { key: null, name: null };
+      obj1[0] = section;
+      obj1[1] = section;
       items.push(obj1);
-      obj2 = { type: "stack", routes: items };
+      obj2 = { type: "stack", routes: null };
+      obj2[1] = items;
     }
-    const obj5 = importDefault(21);
+    const obj5 = importDefault(11);
   }
-}
-function handleFormClose() {
-  let c39 = false;
-  const CLOSED = FormStates.CLOSED;
-  let c29 = null;
-  let c28 = null;
-  let c43 = false;
-  let c45 = false;
-  let c47 = null;
-  let c49 = null;
-  let c50 = 0;
-  let c57 = null;
-  let c60 = null;
-  let c61 = null;
-  let c25 = null;
-  let c26 = null;
-  let c27 = null;
-  const NONE = MFALevels.NONE;
-  let closure_48 = {};
-  let c33;
 }
 function _createInvite(code) {
-  let tmp = closure_12;
-  const obj = { code: code.code, temporary: code.temporary, revoked: code.revoked };
+  const obj = { code: code.code, temporary: code.temporary, revoked: code.revoked, inviter: null, channel: null, guild: null, uses: null, maxUses: null, maxAge: null, createdAt: null, flags: null, roles: null };
   let tmp2 = null;
+  let tmp = createFromServer;
   if (null != code.inviter) {
-    const prototype = ctor.prototype;
-    tmp2 = new ctor(code.inviter);
+    tmp2 = new createdAt(code.inviter);
   }
-  obj.inviter = tmp2;
-  obj.channel = callback3(code.channel);
+  obj[3] = tmp2;
+  obj[4] = callback(code.channel);
   let fromInviteGuildResult = null;
   if (null != code.guild) {
-    fromInviteGuildResult = require(1387) /* fromGuildPropertiesWithAdditionalFields */.fromInviteGuild(code.guild);
-    const obj2 = require(1387) /* fromGuildPropertiesWithAdditionalFields */;
+    fromInviteGuildResult = require(1411) /* fromGuildPropertiesWithAdditionalFields */.fromInviteGuild(code.guild);
+    const obj2 = require(1411) /* fromGuildPropertiesWithAdditionalFields */;
   }
-  obj.guild = fromInviteGuildResult;
-  ({ uses: obj.uses, max_uses: obj.maxUses, max_age: obj.maxAge } = code);
+  obj[5] = fromInviteGuildResult;
+  ({ uses: obj[6], max_uses: obj[7], max_age: obj[8] } = code);
   const created_at = code.created_at;
-  let tmp10;
-  if (null != created_at) {
-    tmp10 = created_at;
-  }
-  obj.createdAt = importDefault(3747)(tmp10);
-  ({ flags: obj.flags, roles: obj.roles } = code);
+  obj[9] = importDefault(3771)(created_at);
+  ({ flags: obj[10], roles: obj[11] } = code);
   tmp = new tmp(obj);
   return tmp;
 }
@@ -151,22 +115,22 @@ function handleIntegrationsUpdate(type) {
     tmp = CLOSED === FormStates.OPEN;
   }
   if (tmp) {
-    let tmp4 = "GUILD_INTEGRATIONS_UPDATE" !== type.type;
-    if (!tmp4) {
-      tmp4 = type.guildId === user.id;
+    let tmp5 = "GUILD_INTEGRATIONS_UPDATE" !== type.type;
+    if (!tmp5) {
+      tmp5 = type.guildId === user.id;
     }
-    if (tmp4) {
-      const guildIntegrationsApplications = require(8287) /* _fetchGuildIntegrationsApplications */.fetchGuildIntegrationsApplications(user.id);
-      const obj = require(8287) /* _fetchGuildIntegrationsApplications */;
+    if (tmp5) {
+      const guildIntegrationsApplications = require(8311) /* _fetchGuildIntegrationsApplications */.fetchGuildIntegrationsApplications(user.id);
+      const obj = require(8311) /* _fetchGuildIntegrationsApplications */;
     }
-    tmp = tmp4;
+    tmp = tmp5;
   }
   return tmp;
 }
 function handleProfileUpdateStart(arg0) {
   if (null != user) {
     if (user.id === tmp) {
-      let c42 = null;
+      let c38 = null;
     }
   }
   return false;
@@ -174,307 +138,241 @@ function handleProfileUpdateStart(arg0) {
 function handleProfileApiUpdateFailure(arg0) {
   if (null != user) {
     if (user.id === tmp) {
-      let c42 = tmp2;
+      let c38 = tmp2;
     }
   }
   return false;
 }
 const FormStates = ME.FormStates;
 const MFALevels = ME.MFALevels;
-({ GuildSettingsSections: closure_18, GuildSettingsSubsections: closure_19, Endpoints: closure_20, GuildFeatures: closure_21 } = ME);
-({ PUBLIC_SUCCESS_MODAL_SEEN_KEY: closure_23, CREATE_NEW_CHANNEL_VALUE: closure_24 } = PUBLIC_SUCCESS_MODAL_SEEN_KEY);
-let closure_35 = ["name", "description", "icon", "splash", "banner", "homeHeader", "afkChannelId", "afkTimeout", "systemChannelId", "verificationLevel", "defaultMessageNotifications", "explicitContentFilter", "features", "systemChannelFlags", "preferredLocale", "rulesChannelId", "safetyAlertsChannelId", "ownerConfiguredContentLevel", "discoverySplash", "publicUpdatesChannelId", "premiumProgressBarEnabled", "officialMessageColor", "verificationRoleId"];
-let closure_36 = ["brandColorPrimary", "description", "icon", "name", "traits", "visibility", "gameApplicationIds", "customBanner", "tag", "badge", "badgeColorPrimary", "badgeColorSecondary"];
+({ GuildSettingsSections: closure_23, GuildSettingsSubsections: closure_24, Endpoints: closure_25, GuildFeatures: closure_26 } = ME);
+({ PUBLIC_SUCCESS_MODAL_SEEN_KEY: closure_28, CREATE_NEW_CHANNEL_VALUE: closure_29 } = PUBLIC_SUCCESS_MODAL_SEEN_KEY);
+let c30 = true;
+let closure_31 = ["name", "description", "icon", "splash", "banner", "homeHeader", "afkChannelId", "afkTimeout", "systemChannelId", "verificationLevel", "defaultMessageNotifications", "explicitContentFilter", "features", "systemChannelFlags", "preferredLocale", "rulesChannelId", "safetyAlertsChannelId", "ownerConfiguredContentLevel", "discoverySplash", "publicUpdatesChannelId", "premiumProgressBarEnabled", "officialMessageColor", "verificationRoleId"];
+let closure_32 = ["brandColorPrimary", "description", "icon", "name", "traits", "visibility", "gameApplicationIds", "customBanner", "tag", "badge", "badgeColorPrimary", "badgeColorSecondary"];
 set = new Set(["icon", "splash", "banner", "discoverySplash", "homeHeader"]);
-let closure_38 = { icon: "iconOriginalMd5", banner: "bannerOriginalMd5", splash: "splashOriginalMd5", discoverySplash: "discoverySplashOriginalMd5" };
-let c39 = false;
+let closure_34 = { icon: "iconOriginalMd5", banner: "bannerOriginalMd5", splash: "splashOriginalMd5", discoverySplash: "discoverySplashOriginalMd5" };
+let c35 = false;
 let CLOSED = FormStates.CLOSED;
-let closure_41 = {};
+let closure_37 = {};
+let c38 = null;
+let c39 = false;
+let c40 = false;
+let c41 = false;
 let c42 = null;
-let c43 = false;
-let c44 = false;
-let c45 = false;
-let c46 = null;
-let c47 = null;
-let closure_48 = {};
-let c49 = null;
-let c50 = 0;
+let c43 = null;
+let closure_44 = {};
+let c45 = null;
+let c46 = 0;
 let NONE = MFALevels.NONE;
-let c52 = null;
+let c48 = null;
 let obj = { primaryCategoryId: DEFAULT_DISCOVERY_CATEGORY_ID, secondaryCategoryIds: [], keywords: [], emojiDiscoverabilityEnabled: true, partnerActionedTimestamp: null, partnerApplicationTimestamp: null, isPublished: false, reasonsToJoin: [], socialLinks: [], about: "" };
-let c54 = false;
+let c50 = false;
+let c53 = null;
+let c54 = 0;
+let c55 = null;
+let c56 = null;
 let c57 = null;
-let c58 = 0;
-let c59 = null;
-let c60 = null;
-let c61 = null;
-let tmp5 = ((Store) => {
-  class GuildSettingsStore {
-    constructor() {
-      self = this;
-      tmp = outer1_3(this, GuildSettingsStore);
-      obj = outer1_6(GuildSettingsStore);
-      tmp2 = outer1_5;
-      if (outer1_62()) {
-        tmp6 = globalThis;
-        _Reflect = Reflect;
-        tmp7 = outer1_6;
-        tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, outer1_6(self).constructor);
-      } else {
-        tmp3 = arguments;
-        tmp4 = arguments;
-        constructResult = obj(...arguments);
-      }
-      return tmp2(self, constructResult);
+class GuildSettingsStore extends Store {
+}
+const prototype = GuildSettingsStore.prototype;
+prototype["initialize"] = function initialize() {
+  this.waitFor(createGuildRecordFromRust, handleUpdateStart, mergeGuildAvatar);
+};
+prototype["getMetadata"] = function getMetadata() {
+  return obj;
+};
+prototype["widgetHasChanges"] = function widgetHasChanges() {
+  let tmp = false !== c39;
+  if (tmp) {
+    let tmp4 = c41 !== c40;
+    if (!tmp4) {
+      tmp4 = c43 !== c42;
     }
+    tmp = tmp4;
   }
-  callback2(GuildSettingsStore, Store);
-  let obj = {
-    key: "initialize",
-    value() {
-      this.waitFor(outer1_14, outer1_9, outer1_15);
-    }
-  };
-  let items = [obj, , , , , , , , , , , , , , , , , , , , , , ];
-  obj = {
-    key: "getMetadata",
-    value() {
-      return outer1_56;
-    }
-  };
-  items[1] = obj;
-  obj = {
-    key: "widgetHasChanges",
-    value() {
-      let tmp = false !== outer1_43;
-      if (tmp) {
-        let tmp4 = outer1_45 !== outer1_44;
-        if (!tmp4) {
-          tmp4 = outer1_47 !== outer1_46;
-        }
-        tmp = tmp4;
-      }
-      return tmp;
-    }
-  };
-  items[2] = obj;
-  items[3] = {
-    key: "hasChanges",
-    value() {
-      const self = this;
-      let widgetHasChangesResult = !outer1_1(outer1_2[25]).isEqual(outer1_29, outer1_28);
-      if (!widgetHasChangesResult) {
-        widgetHasChangesResult = !outer1_1(outer1_2[25]).isEqual(outer1_56, outer1_55);
-        const obj2 = outer1_1(outer1_2[25]);
-      }
-      if (!widgetHasChangesResult) {
-        widgetHasChangesResult = !outer1_1(outer1_2[25]).isEqual(outer1_31, outer1_30);
-        const obj3 = outer1_1(outer1_2[25]);
-      }
-      if (!widgetHasChangesResult) {
-        widgetHasChangesResult = self.widgetHasChanges();
-      }
-      return widgetHasChangesResult;
-    }
-  };
-  items[4] = {
-    key: "isOpen",
-    value() {
-      return outer1_39;
-    }
-  };
-  items[5] = {
-    key: "getSavedRouteState",
-    value() {
-      return outer1_33;
-    }
-  };
-  items[6] = {
-    key: "getSection",
-    value() {
-      return outer1_25;
-    }
-  };
-  items[7] = {
-    key: "showNotice",
-    value() {
-      return this.hasChanges();
-    }
-  };
-  items[8] = {
-    key: "getGuildId",
-    value() {
-      let id = null;
-      if (null != outer1_29) {
-        id = outer1_29.id;
-      }
-      return id;
-    }
-  };
-  items[9] = {
-    key: "showPublicSuccessModal",
-    value() {
-      const Storage = GuildSettingsStore(outer1_2[26]).Storage;
-      return !Storage.get(outer1_23);
-    }
-  };
-  items[10] = {
-    key: "getGuild",
-    value() {
-      return outer1_29;
-    }
-  };
-  items[11] = {
-    key: "getPendingOriginalMd5s",
-    value() {
-      return outer1_48;
-    }
-  };
-  items[12] = {
-    key: "getGuildProfile",
-    value() {
-      return outer1_31;
-    }
-  };
-  items[13] = {
-    key: "getWidget",
-    value() {
-      return { enabled: outer1_45, channelId: outer1_47 };
-    }
-  };
-  items[14] = {
-    key: "isSubmitting",
-    value() {
-      return outer1_40 === outer1_16.SUBMITTING;
-    }
-  };
-  items[15] = {
-    key: "isGuildMetadataLoaded",
-    value() {
-      return outer1_54;
-    }
-  };
-  items[16] = {
-    key: "getErrors",
-    value() {
-      return outer1_41;
-    }
-  };
-  items[17] = {
-    key: "getError",
-    value(arg0) {
-      let tmp2 = null;
-      if (null != outer1_41[arg0]) {
-        tmp2 = tmp;
-      }
-      return tmp2;
-    }
-  };
-  items[18] = {
-    key: "getProfileError",
-    value() {
-      return outer1_42;
-    }
-  };
-  items[19] = {
-    key: "getSelectedRoleId",
-    value() {
-      return outer1_32;
-    }
-  };
-  items[20] = {
-    key: "getSlug",
-    value() {
-      return outer1_34;
-    }
-  };
-  items[21] = {
-    key: "getBans",
-    value() {
-      const items = [outer1_57, outer1_58];
-      return items;
-    }
-  };
-  items[22] = {
-    key: "getProps",
-    value() {
-      return { submitting: this.isSubmitting(), integrations: outer1_61, section: outer1_25, subsection: outer1_26, errors: outer1_41, guild: outer1_29, bans: outer1_57, bansVersion: outer1_58, invites: outer1_60, selectedRoleId: outer1_32, fetchedEmbed: outer1_43, embedEnabled: outer1_45, embedChannelId: outer1_47, mfaLevel: outer1_51, searchQuery: outer1_27, vanityURLCode: outer1_49, vanityURLUses: outer1_50, originalGuild: outer1_28, hasChanges: this.hasChanges(), guildMetadata: outer1_56, analyticsLocation: outer1_52, isGuildMetadataLoaded: outer1_54, originalProfile: outer1_30, profile: outer1_31 };
-    }
-  };
-  return callback(GuildSettingsStore, items);
-})(require("initialize").Store);
-tmp5.displayName = "GuildSettingsStore";
+  return tmp;
+};
+prototype["hasChanges"] = function hasChanges() {
+  const obj = importDefault(12);
+  const isEqualResult = obj.isEqual(closure_7, closure_6);
+  let widgetHasChangesResult = !isEqualResult;
+  if (isEqualResult) {
+    let tmpResult = tmp(12);
+    widgetHasChangesResult = !tmpResult.isEqual(obj, obj);
+  }
+  if (!widgetHasChangesResult) {
+    tmpResult = tmp(12);
+    widgetHasChangesResult = !tmpResult.isEqual(closure_9, closure_8);
+  }
+  if (!widgetHasChangesResult) {
+    const self = this;
+    widgetHasChangesResult = this.widgetHasChanges();
+  }
+  return widgetHasChangesResult;
+};
+prototype["isOpen"] = function isOpen() {
+  return c35;
+};
+prototype["getSavedRouteState"] = function getSavedRouteState() {
+  return closure_11;
+};
+prototype["getSection"] = function getSection() {
+  return closure_3;
+};
+prototype["showNotice"] = function showNotice() {
+  return this.hasChanges();
+};
+prototype["getGuildId"] = function getGuildId() {
+  let id = null;
+  if (null != user) {
+    id = user.id;
+  }
+  return id;
+};
+prototype["showPublicSuccessModal"] = function showPublicSuccessModal() {
+  const Storage = require(595) /* Storage */.Storage;
+  return !Storage.get(closure_28);
+};
+prototype["getGuild"] = function getGuild() {
+  return closure_7;
+};
+prototype["getPendingOriginalMd5s"] = function getPendingOriginalMd5s() {
+  return closure_44;
+};
+prototype["getGuildProfile"] = function getGuildProfile() {
+  return closure_9;
+};
+prototype["getWidget"] = function getWidget() {
+  return { enabled: c41, channelId: c43 };
+};
+prototype["isSubmitting"] = function isSubmitting() {
+  return CLOSED === FormStates.SUBMITTING;
+};
+prototype["isGuildMetadataLoaded"] = function isGuildMetadataLoaded() {
+  return c50;
+};
+prototype["getErrors"] = function getErrors() {
+  return closure_37;
+};
+prototype["getError"] = function getError(arg0) {
+  let tmp = table2[arg0];
+  if (tmp == null) {
+    tmp = null;
+  }
+  return tmp;
+};
+prototype["getProfileError"] = function getProfileError() {
+  return c38;
+};
+prototype["getSelectedRoleId"] = function getSelectedRoleId() {
+  return closure_10;
+};
+prototype["getSlug"] = function getSlug() {
+  return closure_12;
+};
+prototype["getBans"] = function getBans() {
+  const items = [c53, c54];
+  return items;
+};
+prototype["getProps"] = function getProps() {
+  obj = { submitting: this.isSubmitting(), integrations: c57, section: closure_3, subsection: closure_4, errors: closure_37, guild: closure_7, bans: c53, bansVersion: c54, invites: c56, selectedRoleId: closure_10, fetchedEmbed: c39, embedEnabled: c41, embedChannelId: c43, mfaLevel: NONE, searchQuery: closure_5, vanityURLCode: c45, vanityURLUses: c46, originalGuild: closure_6, hasChanges: this.hasChanges(), guildMetadata: obj, analyticsLocation: c48, isGuildMetadataLoaded: c50, originalProfile: closure_8, profile: closure_9 };
+  return obj;
+};
+GuildSettingsStore.displayName = "GuildSettingsStore";
 obj = {
   GUILD_SETTINGS_INIT: handleFormInit,
   GUILD_SETTINGS_OPEN: function handleFormOpen(arg0) {
-    let c39 = true;
+    let c35 = true;
     handleFormInit(arg0);
   },
-  GUILD_SETTINGS_CLOSE: handleFormClose,
+  GUILD_SETTINGS_CLOSE: function handleFormClose() {
+    let c35 = false;
+    const CLOSED = FormStates.CLOSED;
+    let c7 = null;
+    let c6 = null;
+    let c39 = false;
+    let c41 = false;
+    let c43 = null;
+    let c45 = null;
+    let c46 = 0;
+    let c53 = null;
+    let c56 = null;
+    let c57 = null;
+    let c3 = null;
+    let c4 = null;
+    let c5 = null;
+    const NONE = MFALevels.NONE;
+    let closure_44 = {};
+    let c11;
+  },
   GUILD_SETTINGS_UPDATE: function handleUpdate(arg0) {
     let closure_0 = arg0;
-    if (null == closure_29) {
+    if (null == closure_7) {
       return false;
     } else {
-      const item = closure_35.forEach((arg0) => {
-        let hasOwnPropertyResult = null != outer1_29;
+      const item = closure_31.forEach((key10009) => {
+        let hasOwnPropertyResult = null != outer1_7;
         if (hasOwnPropertyResult) {
-          hasOwnPropertyResult = closure_0.hasOwnProperty(arg0);
+          hasOwnPropertyResult = closure_0.hasOwnProperty(key10009);
         }
         if (hasOwnPropertyResult) {
-          let tmp7 = null;
-          if (null != closure_0[arg0]) {
-            tmp7 = tmp6;
+          let tmp6 = closure_0[key10009];
+          if (tmp6 == null) {
+            tmp6 = null;
           }
-          outer1_29 = outer1_8(outer1_29, arg0, tmp7);
-          const tmp3 = outer1_8;
-          const tmp4 = outer1_29;
+          outer1_7 = outer1_13(outer1_7, key10009, tmp6);
+          const tmp3 = outer1_13;
+          const tmp4 = outer1_7;
         }
       });
       const _Object = Object;
       const keys = Object.keys(table);
-      for (let num = 0; num < keys.length; num = num + 1) {
-        let tmp3 = keys[num];
-        if (arg0.hasOwnProperty(tmp3)) {
-          let tmp4 = table;
-          let tmp5 = arg0[table[tmp3]];
-          if (null != tmp5) {
-            let tmp8 = closure_48;
-            closure_48[tmp3] = tmp5;
-            let tmp9 = tmp5;
+      for (const item10007 of keys) {
+        let tmp4 = item10007;
+        if (arg0.hasOwnProperty(item10007)) {
+          let tmp5 = table;
+          let tmp6 = item10007;
+          let tmp7 = arg0[table[tmp4]];
+          if (null != tmp7) {
+            let tmp11 = closure_44;
+            let tmp12 = item10007;
+            let tmp13 = tmp7;
+            closure_44[tmp4] = tmp8;
           } else {
-            let tmp6 = closure_48;
-            delete tmp[tmp2];
-            let tmp7 = tmp5;
+            let tmp9 = closure_44;
+            let tmp10 = item10007;
+            delete tmp2[tmp];
           }
         }
+        continue;
       }
       (function validateUpdate() {
-        let closure_0 = outer1_29;
-        if (null == outer1_29) {
+        let closure_0 = closure_7;
+        if (null == closure_7) {
           return false;
-        } else if (!outer1_35.some((arg0) => table[arg0] !== outer2_28[arg0])) {
-          outer1_29 = outer1_28;
+        } else if (!closure_31.some((arg0) => table[arg0] !== outer1_6[arg0])) {
+          closure_7 = closure_6;
         }
       })();
     }
   },
   GUILD_SETTINGS_PROFILE_UPDATE: function handleSettingsProfileUpdate(arg0) {
     let closure_0 = arg0;
-    if (null != closure_31) {
+    if (null != closure_9) {
       if (null != user) {
         if (user.id === tmp) {
-          const item = closure_36.forEach((arg0) => {
-            if (null != outer1_31) {
-              if (closure_0.hasOwnProperty(arg0)) {
-                if (undefined !== closure_0[arg0]) {
+          const item = closure_32.forEach((key10009) => {
+            if (null != outer1_9) {
+              if (closure_0.hasOwnProperty(key10009)) {
+                if (undefined !== tmp2[key10009]) {
                   const obj = {};
-                  const merged = Object.assign(outer1_31);
-                  obj[arg0] = tmp3;
-                  outer1_31 = obj;
+                  const merged = Object.assign(outer1_9);
+                  obj[key10009] = tmp3;
+                  outer1_9 = obj;
                 }
               }
+              tmp2 = closure_0;
             }
           });
         }
@@ -483,8 +381,8 @@ obj = {
     return false;
   },
   GUILD_SETTINGS_CANCEL_CHANGES: function handleCancelChanges(guildId) {
-    let closure_41 = {};
-    let closure_48 = {};
+    let closure_37 = {};
+    let closure_44 = {};
     const guild = store2.getGuild(guildId.guildId);
   },
   GUILD_SETTINGS_SAVE_ROUTE_STACK: function handleSaveRouteStack(state) {
@@ -493,75 +391,92 @@ obj = {
   },
   GUILD_SETTINGS_SUBMIT: function handleFormSubmit() {
     const SUBMITTING = FormStates.SUBMITTING;
-    let closure_41 = {};
+    let closure_37 = {};
   },
   GUILD_SETTINGS_SUBMIT_SUCCESS: function handleSubmitSuccess(guild) {
     const OPEN = FormStates.OPEN;
-    let closure_48 = {};
+    let closure_44 = {};
     let tmp = null != guild.guild;
     if (tmp) {
-      tmp = null != fromGuildResult;
+      tmp = null != user;
     }
     if (tmp) {
-      tmp = fromGuildResult.id === guild.guild.id;
+      tmp = user.id === guild.guild.id;
     }
     if (tmp) {
-      fromGuildResult = require(1387) /* fromGuildPropertiesWithAdditionalFields */.fromGuild(guild.guild, fromGuildResult);
-      const obj = require(1387) /* fromGuildPropertiesWithAdditionalFields */;
+      fromGuildResult = require(1411) /* fromGuildPropertiesWithAdditionalFields */.fromGuild(guild.guild, fromGuildResult);
+      user = fromGuildResult;
+      const obj = require(1411) /* fromGuildPropertiesWithAdditionalFields */;
     }
   },
   GUILD_SETTINGS_SUBMIT_FAILURE: function handleFormSubmitFailure(errors) {
     const OPEN = FormStates.OPEN;
-    if (null == defaultGuildSettingsSection) {
-      defaultGuildSettingsSection = require(8286) /* getDefaultGuildSettingsSection */.getDefaultGuildSettingsSection();
-      const obj = require(8286) /* getDefaultGuildSettingsSection */;
+    if (defaultGuildSettingsSection == null) {
+      defaultGuildSettingsSection = require(8310) /* getDefaultGuildSettingsSection */.getDefaultGuildSettingsSection();
+      const obj = require(8310) /* getDefaultGuildSettingsSection */;
     }
-    let c26 = null;
+    let c4 = null;
     errors = errors.errors;
-    if (null == errors) {
+    if (errors == null) {
       errors = {};
     }
   },
   GUILD_SETTINGS_SET_SECTION: function handleSetSection(section) {
-    let closure_25;
-    let closure_26;
+    let closure_3;
+    let closure_4;
     if (null == user) {
       return false;
     } else {
-      ({ section: closure_25, subsection: closure_26 } = section);
-      if (closure_25 !== constants.INSTANT_INVITES) {
-        if (closure_25 !== constants.INVITES) {
-          if (closure_25 !== constants.INTEGRATIONS) {
-            if (closure_25 !== constants.ROLES) {
-              if (closure_25 === constants.MEMBERS) {
-                let c32 = getGuildEveryoneRoleId(user);
-              } else if (closure_25 === constants.VANITY_URL) {
-                let obj = require(8285) /* fetchVanityUrl */;
-                const vanityUrl = obj.fetchVanityUrl(user.id);
-              } else if (closure_25 === constants.SAFETY) {
-                obj = { type: "GUILD_SETTINGS_SAFETY_SET_SUBSECTION" };
-                if (null == closure_26) {
+      ({ section: closure_3, subsection: closure_4 } = section);
+      if (closure_3 !== constants.INSTANT_INVITES) {
+        if (closure_3 !== tmp27.INVITES) {
+          if (closure_3 !== tmp27.INTEGRATIONS) {
+            if (closure_3 !== tmp27.ROLES) {
+              if (closure_3 === tmp27.MEMBERS) {
+                let c10 = getGuildEveryoneRoleId(user);
+              } else if (closure_3 === tmp27.VANITY_URL) {
+                const vanityUrl = require(8309) /* fetchVanityUrl */.fetchVanityUrl(user.id);
+                const obj2 = require(8309) /* fetchVanityUrl */;
+              } else if (closure_3 === tmp27.SAFETY) {
+                if (null == closure_4) {
                   let SAFETY_OVERVIEW = constants2.SAFETY_OVERVIEW;
                 } else {
-                  SAFETY_OVERVIEW = closure_26;
+                  SAFETY_OVERVIEW = closure_4;
                 }
-                obj.subsection = SAFETY_OVERVIEW;
-                importDefault(686).dispatch(obj);
-                const obj3 = importDefault(686);
+                let obj = { type: "GUILD_SETTINGS_SAFETY_SET_SUBSECTION", subsection: null };
+                obj[1] = SAFETY_OVERVIEW;
+                importDefault(709).dispatch(obj);
+                const obj5 = importDefault(709);
               }
             }
           }
-          c32 = null;
-          if (tmp17 !== section.section) {
-            return handleIntegrationsUpdate(section);
+          c10 = null;
+          if (tmp25 !== section.section) {
+            let tmp12 = null != user;
+            if (tmp12) {
+              tmp12 = CLOSED === FormStates.OPEN;
+            }
+            if (tmp12) {
+              let tmp13 = "GUILD_INTEGRATIONS_UPDATE" !== section.type;
+              if (!tmp13) {
+                tmp13 = section.guildId === user.id;
+              }
+              if (tmp13) {
+                const guildIntegrationsApplications = require(8311) /* _fetchGuildIntegrationsApplications */.fetchGuildIntegrationsApplications(user.id);
+                const obj3 = require(8311) /* _fetchGuildIntegrationsApplications */;
+              }
+              tmp12 = tmp13;
+            }
+            return tmp12;
           }
         }
       }
-      const HTTP = require(507) /* _isNativeReflectConstruct */.HTTP;
-      obj = { url: closure_20.GUILD_INSTANT_INVITES(user.id), oldFormErrors: true, rejectWithError: true };
+      const HTTP = require(530) /* sendRequest */.HTTP;
+      obj = { url: null, oldFormErrors: true, rejectWithError: true };
+      obj[0] = closure_25.GUILD_INSTANT_INVITES(user.id);
       const value = HTTP.get(obj);
       value.then((body) => {
-        let obj = outer1_1(outer1_2[19]);
+        let obj = callback(table[14]);
         obj = { type: "GUILD_SETTINGS_LOADED_INVITES", invites: body.body };
         obj.dispatch(obj);
       });
@@ -572,13 +487,13 @@ obj = {
   },
   GUILD_SETTINGS_LOADED_BANS: function handleLoadedBans(bans) {
     bans = bans.bans;
-    let closure_57 = bans.reduce((set, user) => {
+    let closure_53 = bans.reduce((set, user) => {
       if (tmp) {
         const result = set.set(user.user.id, user);
       }
       return set;
     }, new Map());
-    closure_58 = closure_58 + 1;
+    closure_54 = closure_54 + 1;
   },
   GUILD_SETTINGS_LOADED_BANS_BATCH: function handleLoadedBansBatch(arg0) {
     let bans;
@@ -586,40 +501,38 @@ obj = {
     ({ bans, guildId } = arg0);
     let tmp = guildId === guildId;
     if (tmp) {
-      tmp = null != closure_57;
+      tmp = null != closure_53;
     }
     if (!tmp) {
       const _Map = Map;
       const map = new Map();
-      closure_57 = map;
+      closure_53 = map;
     }
-    closure_57 = bans.reduce((set, user) => {
+    closure_53 = bans.reduce((set, user) => {
       if (tmp) {
         const result = set.set(user.user.id, user);
       }
       return set;
-    }, closure_57);
-    closure_58 = closure_58 + 1;
+    }, closure_53);
+    closure_54 = closure_54 + 1;
   },
   GUILD_SETTINGS_LOADED_INVITES: function handleLoadedInvites(invites) {
     invites = invites.invites;
-    let closure_60 = invites.reduce((arg0, code) => {
-      arg0[code.code] = outer1_66(code);
+    let closure_56 = invites.reduce((arg0, code) => {
+      arg0[code.code] = callback(code);
       return arg0;
     }, {});
   },
   GUILD_SETTINGS_SET_WIDGET: function handleSetEmbed(enabled) {
-    let c43 = true;
+    let c39 = true;
     enabled = enabled.enabled;
     const channelId = enabled.channelId;
   },
   GUILD_SETTINGS_SET_VANITY_URL: function handleSetVanityURL(code) {
     code = code.code;
-    let tmp = null;
-    if (null != code) {
-      tmp = code;
+    if (code == null) {
+      code = null;
     }
-    let c49 = tmp;
     const uses = code.uses;
   },
   GUILD_SETTINGS_SET_MFA_SUCCESS: function handleSetMFALevelSuccess(level) {
@@ -627,11 +540,9 @@ obj = {
   },
   GUILD_SETTINGS_ROLE_SELECT: function handleRoleSelect(roleId) {
     roleId = roleId.roleId;
-    let tmp = null;
-    if (null != roleId) {
-      tmp = roleId;
+    if (roleId == null) {
+      roleId = null;
     }
-    let closure_32 = tmp;
   },
   GUILD_SETTINGS_LOADED_INTEGRATIONS: function handleLoadedIntegrations(integrations) {
     integrations = integrations.integrations;
@@ -641,9 +552,7 @@ obj = {
       if (tmp === user.id) {
         const _Set = Set;
         const items = [];
-        const arraySpreadResult = HermesBuiltin.arraySpread(user.features, 0);
-        items[arraySpreadResult] = constants3.PIN_PERMISSION_MIGRATION_COMPLETE;
-        const sum = arraySpreadResult + 1;
+        items[HermesBuiltin.arraySpread(user.features, 0)] = constants3.PIN_PERMISSION_MIGRATION_COMPLETE;
         const set = new Set(items);
         user = set(user, "features", set);
       }
@@ -655,9 +564,7 @@ obj = {
       if (tmp === user.id) {
         const _Set = Set;
         const items = [];
-        const arraySpreadResult = HermesBuiltin.arraySpread(user.features, 0);
-        items[arraySpreadResult] = constants3.BYPASS_SLOWMODE_PERMISSION_MIGRATION_COMPLETE;
-        const sum = arraySpreadResult + 1;
+        items[HermesBuiltin.arraySpread(user.features, 0)] = constants3.BYPASS_SLOWMODE_PERMISSION_MIGRATION_COMPLETE;
         const set = new Set(items);
         user = set(user, "features", set);
       }
@@ -673,9 +580,10 @@ obj = {
         tmp4 = user.id === tmp;
       }
       if (tmp4) {
-        const obj = { user, reason: null };
+        const obj = { user: null, reason: null };
+        obj[0] = user;
         const result = _null.set(user.id, obj);
-        closure_58 = +closure_58 + 1;
+        closure_54 = +closure_54 + 1;
       }
       tmp2 = tmp4;
     }
@@ -690,26 +598,76 @@ obj = {
       }
       if (tmp5) {
         _null.delete(tmp.id);
-        closure_58 = +closure_58 + 1;
+        closure_54 = +closure_54 + 1;
       }
       tmp3 = tmp5;
     }
     return tmp3;
   },
   GUILD_ROLE_CREATE: function handleRoleCreate(guildId) {
-    if (!syncGuild(guildId.guildId)) {
-      return false;
+    guildId = guildId.guildId;
+    let flag = false;
+    if (null != guild) {
+      flag = false;
+      if (null != guild) {
+        flag = false;
+        if (guild.id === guildId) {
+          guild = store2.getGuild(guildId);
+          let flag2 = null != guild;
+          if (flag2) {
+            if (guild !== guild) {
+              flag2 = true;
+            }
+          }
+          flag2 = true;
+        }
+      }
     }
+    return flag ? undefined : false;
   },
   GUILD_ROLE_UPDATE: function handleRoleUpdate(guildId) {
-    if (!syncGuild(guildId.guildId)) {
-      return false;
+    guildId = guildId.guildId;
+    let flag = false;
+    if (null != guild) {
+      flag = false;
+      if (null != guild) {
+        flag = false;
+        if (guild.id === guildId) {
+          guild = store2.getGuild(guildId);
+          let flag2 = null != guild;
+          if (flag2) {
+            if (guild !== guild) {
+              flag2 = true;
+            }
+          }
+          flag2 = true;
+        }
+      }
     }
+    return flag ? undefined : false;
   },
   GUILD_ROLE_DELETE: function handleRoleDelete(guildId) {
-    if (syncGuild(guildId.guildId)) {
-      if (c32 === guildId.roleId) {
-        c32 = null;
+    guildId = guildId.guildId;
+    let flag = false;
+    if (null != guild) {
+      flag = false;
+      if (null != guild) {
+        flag = false;
+        if (guild.id === guildId) {
+          guild = store2.getGuild(guildId);
+          let flag2 = null != guild;
+          if (flag2) {
+            if (guild !== guild) {
+              flag2 = true;
+            }
+          }
+          flag2 = true;
+        }
+      }
+    }
+    if (flag) {
+      if (c10 === guildId.roleId) {
+        c10 = null;
       }
     } else {
       return false;
@@ -723,30 +681,30 @@ obj = {
           return false;
         } else {
           const profile = store.getProfile(user.id);
-          let result = closure_25 === constants.PROFILE;
+          let result = closure_3 === constants.PROFILE;
           if (!result) {
-            result = closure_25 === constants.TAG;
+            result = closure_3 === tmp23.TAG;
           }
           if (!result) {
-            obj = guild(obj[17]);
-            result = obj.isServerTagDraftDirty(closure_31, profile);
+            obj = guild(obj[12]);
+            result = obj.isServerTagDraftDirty(closure_9, profile);
           }
           if (!result) {
-            closure_31 = profile;
+            closure_9 = profile;
           }
-          if (closure_25 === constants.PROFILE) {
+          if (closure_3 === constants.PROFILE) {
             user = guild;
           } else {
             obj = {};
             const merged = Object.assign(user);
-            const item = closure_35.forEach((arg0) => {
-              if (!outer1_37.has(arg0)) {
+            const item = closure_31.forEach((arg0) => {
+              if (!outer1_33.has(arg0)) {
                 let tmp = "rulesChannelId" !== arg0;
                 if (tmp) {
                   tmp = "publicUpdatesChannelId" !== arg0;
                 }
                 if (!tmp) {
-                  tmp = obj[arg0] !== outer1_24;
+                  tmp = obj[arg0] !== outer1_29;
                 }
                 if (tmp) {
                   tmp = "features" !== arg0;
@@ -757,8 +715,8 @@ obj = {
                   } else {
                     tmp7 = guild[arg0];
                   }
-                  closure_1 = outer1_8(closure_1, arg0, tmp7);
-                  const tmp4 = outer1_8;
+                  closure_1 = outer1_13(closure_1, arg0, tmp7);
+                  const tmp4 = outer1_13;
                   const tmp5 = closure_1;
                 }
               }
@@ -773,7 +731,24 @@ obj = {
   GUILD_DELETE: function handleGuildDelete(guild) {
     if (null != user) {
       if (user.id === guild.guild.id) {
-        handleFormClose();
+        let c35 = false;
+        const CLOSED = FormStates.CLOSED;
+        user = null;
+        let c6 = null;
+        let c39 = false;
+        let c41 = false;
+        let c43 = null;
+        let c45 = null;
+        let c46 = 0;
+        let c53 = null;
+        let c56 = null;
+        let c57 = null;
+        let c3 = null;
+        let c4 = null;
+        let c5 = null;
+        const NONE = MFALevels.NONE;
+        let closure_44 = {};
+        let c11;
       }
     }
     return false;
@@ -781,14 +756,15 @@ obj = {
   GUILD_PROFILE_FETCH_SUCCESS: function handleProfileFetch(profile) {
     profile = profile.profile;
     let id;
-    if (null != user) {
+    if (user != null) {
       id = user.id;
     }
     let tmp2 = profile.id === id;
     if (tmp2) {
-      const tmp7 = !require(8283) /* canUseMobileServerTagSettings */.isServerTagDraftDirty(profile, profile);
-      tmp2 = tmp7;
-      const obj = require(8283) /* canUseMobileServerTagSettings */;
+      const result = require(8307) /* canUseMobileServerTagSettings */.isServerTagDraftDirty(profile, profile);
+      tmp2 = !result;
+      const obj = require(8307) /* canUseMobileServerTagSettings */;
+      const tmp8 = !result;
     }
     return tmp2;
   },
@@ -796,23 +772,39 @@ obj = {
   GUILD_PROFILE_UPDATE_SUCCESS: function handleProfileApiUpdate(profile) {
     profile = profile.profile;
     let id;
-    if (null != profile) {
+    if (profile != null) {
       id = profile.id;
     }
     let tmp2 = null != id;
     if (tmp2) {
-      const tmp5 = syncGuild(profile.id);
-      if (tmp5) {
-        let id1;
-        if (null != user) {
-          id1 = user.id;
-        }
-        if (profile.id === id1) {
-          let c42 = null;
+      id = profile.id;
+      let flag = false;
+      if (null != guild) {
+        flag = false;
+        if (null != guild) {
+          flag = false;
+          if (guild.id === id) {
+            guild = store2.getGuild(id);
+            let flag2 = null != guild;
+            if (flag2) {
+              if (guild !== guild) {
+                flag2 = true;
+              }
+            }
+            flag2 = true;
+          }
         }
       }
-      tmp2 = tmp5;
-      const tmp6 = tmp5;
+      if (flag) {
+        let id1;
+        if (guild != null) {
+          id1 = guild.id;
+        }
+        if (profile.id === id1) {
+          let c38 = null;
+        }
+      }
+      tmp2 = tmp12;
     }
     return tmp2;
   },
@@ -821,24 +813,40 @@ obj = {
   GUILD_PROFILE_UPDATE_VISIBILITY_SUCCESS: function handleProfileApiUpdateVisibility(guildId) {
     guildId = guildId.guildId;
     let id;
-    if (null != profile) {
+    if (profile != null) {
       id = profile.id;
     }
     let tmp2 = null != id;
     if (tmp2) {
-      const tmp5 = syncGuild(profile.id);
-      if (tmp5) {
+      id = profile.id;
+      let flag = false;
+      if (null != guild) {
+        flag = false;
+        if (null != guild) {
+          flag = false;
+          if (guild.id === id) {
+            guild = store2.getGuild(id);
+            let flag2 = null != guild;
+            if (flag2) {
+              if (guild !== guild) {
+                flag2 = true;
+              }
+            }
+            flag2 = true;
+          }
+        }
+      }
+      if (flag) {
         let id1;
-        if (null != user) {
-          id1 = user.id;
+        if (guild != null) {
+          id1 = guild.id;
         }
         if (guildId === id1) {
           profile = store.getProfile(guildId);
-          let c42 = null;
+          let c38 = null;
         }
       }
-      tmp2 = tmp5;
-      const tmp6 = tmp5;
+      tmp2 = tmp12;
     }
     return tmp2;
   },
@@ -862,67 +870,66 @@ obj = {
       tmp2 = tmp === user.id;
     }
     if (tmp2) {
-      if (false === c54) {
-        c54 = true;
+      if (false === c50) {
+        c50 = true;
       }
-      const obj = {};
       let primaryCategoryId = metadata.primaryCategoryId;
-      if (null == primaryCategoryId) {
+      if (primaryCategoryId == null) {
         primaryCategoryId = DEFAULT_DISCOVERY_CATEGORY_ID;
       }
-      obj.primaryCategoryId = primaryCategoryId;
+      const obj = { primaryCategoryId: null, secondaryCategoryIds: null, keywords: null, emojiDiscoverabilityEnabled: null, partnerActionedTimestamp: null, partnerApplicationTimestamp: null, isPublished: null, reasonsToJoin: null, socialLinks: null, about: null };
+      obj[0] = primaryCategoryId;
       let secondaryCategoryIds = metadata.secondaryCategoryIds;
-      if (null == secondaryCategoryIds) {
+      if (secondaryCategoryIds == null) {
         secondaryCategoryIds = [];
       }
-      obj.secondaryCategoryIds = secondaryCategoryIds;
+      obj[1] = secondaryCategoryIds;
       let keywords = metadata.keywords;
-      if (null == keywords) {
+      if (keywords == null) {
         keywords = [];
       }
-      obj.keywords = keywords;
-      const emojiDiscoverabilityEnabled = metadata.emojiDiscoverabilityEnabled;
-      let flag3 = true;
-      if (null != emojiDiscoverabilityEnabled) {
-        flag3 = emojiDiscoverabilityEnabled;
+      obj[2] = keywords;
+      let emojiDiscoverabilityEnabled = metadata.emojiDiscoverabilityEnabled;
+      if (emojiDiscoverabilityEnabled == null) {
+        emojiDiscoverabilityEnabled = c30;
       }
-      obj.emojiDiscoverabilityEnabled = flag3;
-      const partnerActionedTimestamp = metadata.partnerActionedTimestamp;
-      let tmp5 = null;
-      if (null != partnerActionedTimestamp) {
-        tmp5 = partnerActionedTimestamp;
+      obj[3] = emojiDiscoverabilityEnabled;
+      let prop = metadata.partnerActionedTimestamp;
+      if (prop == null) {
+        prop = null;
       }
-      obj.partnerActionedTimestamp = tmp5;
-      const partnerApplicationTimestamp = metadata.partnerApplicationTimestamp;
-      let tmp6 = null;
-      if (null != partnerApplicationTimestamp) {
-        tmp6 = partnerApplicationTimestamp;
+      obj[4] = prop;
+      let prop1 = metadata.partnerApplicationTimestamp;
+      if (prop1 == null) {
+        prop1 = null;
       }
-      obj.partnerApplicationTimestamp = tmp6;
-      const isPublished = metadata.isPublished;
-      obj.isPublished = null != isPublished && isPublished;
+      obj[5] = prop1;
+      let flag3 = metadata.isPublished;
+      if (flag3 == null) {
+        flag3 = false;
+      }
+      obj[6] = flag3;
       let reasonsToJoin = metadata.reasonsToJoin;
-      if (null == reasonsToJoin) {
+      if (reasonsToJoin == null) {
         reasonsToJoin = [];
       }
-      obj.reasonsToJoin = reasonsToJoin;
+      obj[7] = reasonsToJoin;
       let socialLinks = metadata.socialLinks;
-      if (null == socialLinks) {
+      if (socialLinks == null) {
         socialLinks = [];
       }
-      obj.socialLinks = socialLinks;
-      const about = metadata.about;
-      let str = "";
-      if (null != about) {
-        str = about;
+      obj[8] = socialLinks;
+      let str = metadata.about;
+      if (str == null) {
+        str = "";
       }
-      obj.about = str;
-      let closure_41 = {};
+      obj[9] = str;
+      let closure_37 = {};
     }
   },
   GUILD_DISCOVERY_METADATA_FETCH_FAIL: function handleGuildMetadataFetchFail() {
-    let closure_56 = obj;
-    let closure_55 = obj;
+    let closure_52 = obj;
+    let closure_51 = obj;
   },
   GUILD_DISCOVERY_CATEGORY_ADD: function handleGuildCategoryAdd(categoryId) {
     categoryId = categoryId.categoryId;
@@ -934,17 +941,13 @@ obj = {
       let obj = {};
       const merged = Object.assign(obj);
       const items = [];
-      let arraySpreadResult = HermesBuiltin.arraySpread(obj.secondaryCategoryIds, 0);
-      items[arraySpreadResult] = categoryId;
-      const sum = arraySpreadResult + 1;
-      obj["secondaryCategoryIds"] = items;
+      items[HermesBuiltin.arraySpread(obj.secondaryCategoryIds, 0)] = categoryId;
+      obj.secondaryCategoryIds = items;
       obj = {};
       const merged1 = Object.assign(obj);
       const items1 = [];
-      arraySpreadResult = HermesBuiltin.arraySpread(obj.secondaryCategoryIds, 0);
-      items1[arraySpreadResult] = categoryId;
-      const sum1 = arraySpreadResult + 1;
-      obj["secondaryCategoryIds"] = items1;
+      items1[HermesBuiltin.arraySpread(obj.secondaryCategoryIds, 0)] = categoryId;
+      obj.secondaryCategoryIds = items1;
     }
   },
   GUILD_DISCOVERY_CATEGORY_DELETE: function handleGuildCategoryDelete(categoryId) {
@@ -959,7 +962,7 @@ obj = {
           items.splice(index, 1);
           obj = {};
           const merged = Object.assign(obj);
-          obj["secondaryCategoryIds"] = items;
+          obj.secondaryCategoryIds = items;
         }
         const secondaryCategoryIds1 = obj.secondaryCategoryIds;
         const index1 = secondaryCategoryIds1.indexOf(categoryId);
@@ -969,7 +972,7 @@ obj = {
           items1.splice(index1, 1);
           obj = {};
           const merged1 = Object.assign(obj);
-          obj["secondaryCategoryIds"] = items1;
+          obj.secondaryCategoryIds = items1;
         }
       }
     }
@@ -981,7 +984,7 @@ obj = {
       tmp2 = tmp === user.id;
     }
     if (tmp2) {
-      if (null == errors) {
+      if (errors == null) {
         errors = {};
       }
     }
@@ -1005,31 +1008,31 @@ obj = {
       if (null == primaryCategoryId) {
         primaryCategoryId = obj.primaryCategoryId;
       }
-      obj["primaryCategoryId"] = primaryCategoryId;
+      obj.primaryCategoryId = primaryCategoryId;
       if (null == keywords) {
         keywords = obj.keywords;
       }
-      obj["keywords"] = keywords;
-      if (null == emojiDiscoverabilityEnabled) {
+      obj.keywords = keywords;
+      if (emojiDiscoverabilityEnabled == null) {
         emojiDiscoverabilityEnabled = obj.emojiDiscoverabilityEnabled;
       }
-      obj["emojiDiscoverabilityEnabled"] = emojiDiscoverabilityEnabled;
-      if (null == isPublished) {
+      obj.emojiDiscoverabilityEnabled = emojiDiscoverabilityEnabled;
+      if (isPublished == null) {
         isPublished = obj.isPublished;
       }
-      obj["isPublished"] = isPublished;
+      obj.isPublished = isPublished;
       if (null == reasonsToJoin) {
         reasonsToJoin = obj.reasonsToJoin;
       }
-      obj["reasonsToJoin"] = reasonsToJoin;
+      obj.reasonsToJoin = reasonsToJoin;
       if (null == socialLinks) {
         socialLinks = obj.socialLinks;
       }
-      obj["socialLinks"] = socialLinks;
+      obj.socialLinks = socialLinks;
       if (null == about) {
         about = obj.about;
       }
-      obj["about"] = about;
+      obj.about = about;
     }
   },
   GUILD_UPDATE_DISCOVERY_METADATA_FAIL: function handleGuildUpdateMetadataFail(errors) {
@@ -1039,7 +1042,7 @@ obj = {
       tmp2 = tmp === user.id;
     }
     if (tmp2) {
-      if (null == errors) {
+      if (errors == null) {
         errors = {};
       }
     }
@@ -1049,24 +1052,23 @@ obj = {
   },
   GUILD_DISCOVERY_SLUG_FETCH_FAIL: function handleGuildDiscoverySlugFetchFail(arg0) {
     if (arg0 == null) {
-      HermesBuiltin.throwTypeError("Cannot destructure 'undefined' or 'null'.");
-      throw undefined;
+      HermesBuiltin.throwTypeError();
     } else {
-      let c34 = null;
+      let c12 = null;
     }
   },
   GUILD_SETTINGS_WIDGET_UPDATE: function handleWidgetUpdate(arg0) {
     if (null != user) {
       if (user.id === tmp) {
-        let c45 = tmp2;
-        let c47 = tmp3;
+        let c41 = tmp2;
+        let c43 = tmp3;
       }
     }
     return false;
   }
 };
-tmp5 = new tmp5(require("dispatcher"), obj);
+const guildSettingsStore = new GuildSettingsStore(require("dispatcher"), obj);
 let result = set.fileFinishedImporting("modules/guild_settings/GuildSettingsStore.tsx");
 
-export default tmp5;
+export default guildSettingsStore;
 export const EMPTY_METADATA = obj;

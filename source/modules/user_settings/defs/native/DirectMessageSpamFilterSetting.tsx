@@ -1,35 +1,35 @@
-// Module ID: 13846
-// Function ID: 106006
+// Module ID: 13867
+// Function ID: 13868
 // Name: radio
-// Dependencies: [31, 7733, 13847, 3838, 10099, 1212, 13849, 2]
+// Dependencies: [19, 7756, 13868, 3862, 10120, 1236, 13870, 2]
 
-// Module 13846 (radio)
-import result from "result";
+// Module 13867 (radio)
+import noop from "noop";
 import createToggle from "createToggle";
 
 const require = arg1;
 createToggle = {
   useTitle() {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(require(1212) /* getSystemLocale */.t.tiCXaH);
+    const intl = require(1236) /* getSystemLocale */.intl;
+    return intl.string(require(1236) /* getSystemLocale */.t.tiCXaH);
   },
   parent: require("MobileSetting").MobileSetting.CONTENT_AND_SOCIAL_DISCORD,
   useOptions: function useDmSpamFilterSettingOptions() {
     return React.useMemo(() => {
-      const dmSpamOptions = outer1_0(outer1_1[2]).generateDmSpamOptions();
+      const dmSpamOptions = callback(table[2]).generateDmSpamOptions();
       return dmSpamOptions.map((value) => ({ value: value.value, label: value.name, subLabel: value.desc }));
     }, []);
   },
   useValue: require("useDerivedDmSpamFilterSettingValue").useDerivedDmSpamFilterSettingValue,
   onValueChange: function onDmSpamFilterSettingValueChange(arg0) {
-    const DmSpamFilterV2 = require(3838) /* explicitContentFromProto */.DmSpamFilterV2;
+    const DmSpamFilterV2 = require(3862) /* explicitContentFromProto */.DmSpamFilterV2;
     DmSpamFilterV2.updateSetting(Number(arg0));
   },
   useSearchTerms() {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    const items = [intl.string(require(1212) /* getSystemLocale */.t.H9XOl3), ];
-    const intl2 = require(1212) /* getSystemLocale */.intl;
-    items[1] = intl2.string(require(1212) /* getSystemLocale */.t.k4W40P);
+    const intl = require(1236) /* getSystemLocale */.intl;
+    const items = [intl.string(require(1236) /* getSystemLocale */.t.H9XOl3), ];
+    const intl2 = require(1236) /* getSystemLocale */.intl;
+    items[1] = intl2.string(require(1236) /* getSystemLocale */.t.k4W40P);
     return items;
   }
 };

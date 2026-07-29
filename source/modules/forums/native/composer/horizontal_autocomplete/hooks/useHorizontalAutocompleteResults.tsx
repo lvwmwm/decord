@@ -1,40 +1,52 @@
-// Module ID: 9636
-// Function ID: 74984
+// Module ID: 9658
+// Function ID: 9659
 // Name: useHorizontalAutocompleteResults
-// Dependencies: [57, 31, 653, 9637, 668, 566, 2]
+// Dependencies: [32, 19, 676, 9659, 691, 589, 2]
 // Exports: useHorizontalAutocompleteResults
 
-// Module 9636 (useHorizontalAutocompleteResults)
+// Module 9658 (useHorizontalAutocompleteResults)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
+import noop from "noop";
 import ME from "ME";
 
-let closure_4;
-let closure_5;
+let c4;
+let c5;
 const require = arg1;
-({ AutoCompleteResultTypes: closure_4, ChannelTypes: closure_5 } = ME);
+({ AutoCompleteResultTypes: c4, ChannelTypes: c5 } = ME);
 const result = require("ME").fileFinishedImporting("modules/forums/native/composer/horizontal_autocomplete/hooks/useHorizontalAutocompleteResults.tsx");
 
 export const useHorizontalAutocompleteResults = function useHorizontalAutocompleteResults(channel) {
   channel = channel.channel;
   const selection = channel.selection;
   const text = channel.text;
-  let tmp = text(first.useState([]), 2);
+  let callback = text;
+  let first;
+  let closure_4;
+  let memo;
+  let text2;
+  let selectionStart;
+  let selectionEnd;
+  let closure_9;
+  let autocompleteType;
+  let query;
+  let queryOptions;
+  callback = undefined;
+  let tmp = callback(first.useState([]), 2);
   first = tmp[0];
-  let closure_4 = tmp[1];
+  closure_4 = tmp[1];
   let items = [channel];
-  const memo = first.useMemo(() => channel(selection[3]).getAutocompleteOptions(channel, false, false), items);
+  memo = first.useMemo(() => channel(selection[3]).getAutocompleteOptions(channel, false, false), items);
   let obj = { text, selectionStart: selection.start, selectionEnd: selection.end };
-  let tmp4 = text(first.useState(obj), 2);
+  const tmp4 = callback(first.useState(obj), 2);
   const first1 = tmp4[0];
-  const text2 = first1.text;
-  const selectionStart = first1.selectionStart;
-  const selectionEnd = first1.selectionEnd;
-  let closure_9 = tmp4[1];
+  text2 = first1.text;
+  selectionStart = first1.selectionStart;
+  selectionEnd = first1.selectionEnd;
+  closure_9 = tmp4[1];
   const items1 = [text, selection];
   const effect = first.useEffect(() => {
     const timeout = setTimeout(() => {
-      outer1_9({ text: outer1_2, selectionStart: outer1_1.start, selectionEnd: outer1_1.end });
+      callback({ text: _slicedToArray, selectionStart: closure_1.start, selectionEnd: closure_1.end });
     }, 16);
     return () => {
       clearTimeout(closure_0);
@@ -42,33 +54,34 @@ export const useHorizontalAutocompleteResults = function useHorizontalAutocomple
   }, items1);
   const items2 = [selectionStart, selectionEnd, text2, memo];
   const memo1 = first.useMemo(() => {
+    let tmp11;
+    let tmp12;
     let tmp13;
-    let tmp14;
-    let tmp15;
     let tmp = selectionStart;
-    let diff = selectionStart;
+    let _slicedToArray = selectionStart;
     if (null != text2) {
       if (0 !== text2.trim().length) {
         while (true) {
           let tmp2 = channel;
           let tmp3 = selection;
           let WHITESPACE_RE = channel(selection[4]).WHITESPACE_RE;
-          let tmp4 = text2;
+          let arr = text2;
+          let tmp5 = tmp;
+          let tmp6 = tmp15;
+          let found = tmp16;
           if (0 === tmp) {
-            let tmp7 = selectionEnd;
-            let tmp8 = tmp;
-            let tmp6 = text2;
-            if (null != selectionEnd) {
-              tmp8 = selectionEnd;
+            let tmp8 = selectionEnd;
+            if (selectionEnd == null) {
+              tmp8 = tmp;
             }
-            let substr = text2.slice(tmp, tmp8);
+            let substr = arr.slice(tmp, tmp8);
             let closure_0 = substr[0];
-            let str = substr.slice(1);
-            let formatted = str.toLowerCase();
+            let str2 = substr.slice(1);
+            let formatted = str2.toLowerCase();
             let _Object = Object;
             let tmp10 = memo;
             let keys = Object.keys(memo);
-            let found = keys.find((arg0) => {
+            found = keys.find((arg0) => {
               let matchesResult = undefined !== closure_0;
               if (matchesResult) {
                 matchesResult = undefined !== formatted;
@@ -78,61 +91,65 @@ export const useHorizontalAutocompleteResults = function useHorizontalAutocomple
               }
               return matchesResult;
             });
-            let tmp12 = formatted;
-            tmp13 = formatted;
-            tmp14 = tmp;
-            tmp15 = found;
+            tmp6 = formatted;
+            tmp11 = tmp;
+            tmp12 = formatted;
+            tmp13 = found;
             if (null != found) {
               break;
             }
           }
-          diff = tmp - 1;
+          let diff = tmp - 1;
+          _slicedToArray = diff;
+          tmp15 = tmp6;
+          tmp16 = found;
           tmp = diff;
-          tmp15 = found;
-          tmp13 = tmp12;
-          tmp14 = diff;
+          tmp12 = tmp6;
+          tmp13 = found;
+          tmp11 = diff;
           if (diff < 0) {
             break;
           }
         }
-        let obj = { query: tmp13, autocompleteType: tmp15, autocompleteSelectionStart: tmp14 };
-        obj = { includeEmojiPremiumUpsell: false };
+        let obj = { query: null, autocompleteType: null, autocompleteSelectionStart: null, queryOptions: null };
+        obj[0] = tmp12;
+        obj[1] = tmp13;
+        obj[2] = tmp11;
+        obj = { includeEmojiPremiumUpsell: false, channelTypes: null };
         const items = [, , , ];
-        ({ GUILD_FORUM: arr3[0], GUILD_MEDIA: arr3[1], GUILD_TEXT: arr3[2], GUILD_ANNOUNCEMENT: arr3[3] } = memo);
-        obj.channelTypes = items;
-        obj.queryOptions = obj;
+        ({ GUILD_FORUM: arr4[0], GUILD_MEDIA: arr4[1], GUILD_TEXT: arr4[2], GUILD_ANNOUNCEMENT: arr4[3] } = memo);
+        obj[1] = items;
+        obj[3] = obj;
         return obj;
       }
     }
     return { query: null, autocompleteType: null, autocompleteSelectionStart: null };
   }, items2);
-  const autocompleteType = memo1.autocompleteType;
-  const query = memo1.query;
-  const queryOptions = memo1.queryOptions;
+  autocompleteType = memo1.autocompleteType;
+  query = memo1.query;
+  queryOptions = memo1.queryOptions;
   const items3 = [autocompleteType, query, queryOptions, memo];
-  const callback = first.useCallback((arg0) => {
+  callback = first.useCallback((arg0) => {
     if (null != autocompleteType) {
       if (null != query) {
-        callback(memo[autocompleteType].queryResults(query, queryOptions, arg0));
-        const obj = memo[autocompleteType];
+        callback(memo[tmp].queryResults(tmp2, queryOptions, arg0));
+        const obj = memo[tmp];
       }
     }
     callback([]);
   }, items3);
   const items4 = [autocompleteType, callback, memo];
   const effect1 = first.useEffect(() => {
-    let tmp = null;
+    let tmp2 = null;
     if (null != autocompleteType) {
       let stores;
-      if (null != memo) {
-        stores = memo[autocompleteType].stores;
+      if (memo != null) {
+        stores = memo[tmp].stores;
       }
-      tmp = stores;
+      tmp2 = stores;
     }
-    if (null != tmp) {
-      const BatchedStoreListener = channel(selection[5]).BatchedStoreListener;
-      const prototype = BatchedStoreListener.prototype;
-      const batchedStoreListener = new BatchedStoreListener(tmp, () => outer1_13(false));
+    if (null != tmp2) {
+      const batchedStoreListener = new channel(selection[5]).BatchedStoreListener(tmp2, () => callback(false));
       batchedStoreListener.attach("useHorizontalAutocompleteResults");
       return () => batchedStoreListener.detach();
     }
@@ -144,17 +161,7 @@ export const useHorizontalAutocompleteResults = function useHorizontalAutocomple
   obj = {
     results: first.useMemo(() => first.filter((type) => {
       type = type.type;
-      let tmp = type === constants.USER;
-      if (!tmp) {
-        tmp = type === constants.ROLE;
-      }
-      if (!tmp) {
-        tmp = type === constants.CHANNEL;
-      }
-      if (!tmp) {
-        tmp = type === constants.EMOJI;
-      }
-      return tmp;
+      return type === constants.USER || type === constants.ROLE || type === constants.CHANNEL || type === constants.EMOJI;
     }), items6),
     autocompleteSelectionStart: memo1.autocompleteSelectionStart,
     query

@@ -1,36 +1,40 @@
-// Module ID: 9251
-// Function ID: 72360
+// Module ID: 9275
+// Function ID: 9276
 // Name: overrideSurvey
-// Dependencies: [9250, 653, 686, 675, 4977, 480, 1361, 507, 2]
+// Dependencies: [9274, 676, 709, 698, 4999, 503, 1385, 530, 2]
 // Exports: overrideSurvey, surveyFetch, surveyHide, surveySeen
 
-// Module 9251 (overrideSurvey)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import { SURVEY_REFETCH_INTERVAL } from "_isNativeReflectConstruct";
+// Module 9275 (overrideSurvey)
+import fetchSurveyIfNeeded from "fetchSurveyIfNeeded";
+import { SURVEY_REFETCH_INTERVAL } from "fetchSurveyIfNeeded";
 import ME from "ME";
 
-let closure_5;
+let c5;
 let closure_6;
-let closure_7;
+let error;
 const require = arg1;
-({ AnalyticEvents: closure_5, NoticeTypes: closure_6, Endpoints: closure_7 } = ME);
+({ AnalyticEvents: c5, NoticeTypes: closure_6, Endpoints: error } = ME);
 const result = require("dispatcher").fileFinishedImporting("actions/SurveyActionCreators.tsx");
 
-export const overrideSurvey = function overrideSurvey(first) {
-  let obj = importDefault(686);
-  obj = { type: "SURVEY_OVERRIDE", id: first };
+export const overrideSurvey = function overrideSurvey(id) {
+  let obj = importDefault(709);
+  obj = { type: "SURVEY_OVERRIDE", id };
   obj.dispatch(obj);
 };
-export const surveyHide = function surveyHide(key, dismissed) {
-  let obj = importDefault(686);
+export const surveyHide = function surveyHide(key, arg1) {
+  let obj = importDefault(709);
   obj = { type: "SURVEY_HIDE", key };
   obj.dispatch(obj);
-  const track = importDefault(675).track;
-  if (dismissed) {
-    obj = { notice_type: constants.SURVEY, survey_id: key, dismissed };
+  const track = importDefault(698).track;
+  if (arg1) {
+    obj = { notice_type: null, survey_id: null, dismissed: null };
+    obj[0] = constants.SURVEY;
+    obj[1] = key;
+    obj[2] = arg1;
     track(tmp3.APP_NOTICE_CLOSED, obj);
   } else {
-    const obj1 = { notice_type: constants.SURVEY };
+    const obj1 = { notice_type: null };
+    obj1[0] = constants.SURVEY;
     track(tmp3.APP_NOTICE_PRIMARY_CTA_OPENED, obj1);
   }
 };
@@ -42,53 +46,47 @@ export const surveyFetch = function surveyFetch(surveyOverride, disable_auto_see
   if (null != disable_auto_seen) {
     obj.disable_auto_seen = disable_auto_seen;
   }
-  obj = { url: closure_7.USER_SURVEY, query: obj };
+  obj = { url: closure_7.USER_SURVEY, query: obj, trackedActionData: null, rejectWithError: null };
   obj = {
-    event: require(480) /* isThrottled */.NetworkActionNames.USER_SURVEY_FETCH,
+    event: require(503) /* encodeProperties */.NetworkActionNames.USER_SURVEY_FETCH,
     properties(body) {
       let survey;
-      if (null != body) {
+      if (body != null) {
         body = body.body;
-        if (null != body) {
+        if (body != null) {
           survey = body.survey;
         }
       }
-      let obj = outer1_0(outer1_2[6]);
-      obj = {};
       let key;
-      if (null != survey) {
+      if (survey != null) {
         key = survey.key;
       }
-      obj.key = key;
-      return obj.exact(obj);
+      return callback(1385).exact({ key });
     }
   };
-  obj.trackedActionData = obj;
-  const obj2 = importDefault(4977);
-  obj.rejectWithError = require(507) /* _isNativeReflectConstruct */.rejectWithMigratedError();
+  obj[2] = obj;
+  const obj2 = importDefault(4999);
+  obj[3] = require(530) /* sendRequest */.rejectWithMigratedError();
   const value = obj2.get(obj);
   return value.then((body) => {
-    let obj = outer1_1(outer1_2[2]);
-    obj = { type: "SURVEY_FETCHED" };
     let survey;
-    if (null != body) {
+    if (body != null) {
       body = body.body;
-      if (null != body) {
+      if (body != null) {
         survey = body.survey;
       }
     }
-    obj.survey = survey;
-    obj.dispatch(obj);
+    callback2(709).dispatch({ type: "SURVEY_FETCHED", survey });
     let survey1;
-    if (null != body) {
+    if (body != null) {
       const body2 = body.body;
-      if (null != body2) {
+      if (body2 != null) {
         survey1 = body2.survey;
       }
     }
     return survey1;
   }, () => {
-    outer1_1(outer1_2[2]).dispatch({ type: "SURVEY_FETCHED", survey: null });
+    callback2(709).dispatch({ type: "SURVEY_FETCHED", survey: null });
   });
 };
 export const surveySeen = function surveySeen(key) {
@@ -99,13 +97,13 @@ export const surveySeen = function surveySeen(key) {
       const _Date = Date;
     }
   }
-  let obj = importDefault(686);
+  let obj = importDefault(709);
   obj = { type: "SURVEY_SEEN", key };
   obj.dispatch(obj);
-  obj = { url: closure_7.USER_SURVEY_SEEN(key) };
-  const obj3 = importDefault(4977);
-  obj.trackedActionData = {
-    event: _require(480).NetworkActionNames.USER_SURVEY_SEEN,
+  obj = { url: closure_7.USER_SURVEY_SEEN(key), trackedActionData: null, rejectWithError: null };
+  const obj3 = importDefault(4999);
+  obj[1] = {
+    event: _require(503).NetworkActionNames.USER_SURVEY_SEEN,
     properties() {
       let obj = key(outer1_2[6]);
       obj = { key };
@@ -113,13 +111,13 @@ export const surveySeen = function surveySeen(key) {
     }
   };
   const obj1 = {
-    event: _require(480).NetworkActionNames.USER_SURVEY_SEEN,
+    event: _require(503).NetworkActionNames.USER_SURVEY_SEEN,
     properties() {
       let obj = key(outer1_2[6]);
       obj = { key };
       return obj.exact(obj);
     }
   };
-  obj.rejectWithError = _require(507).rejectWithMigratedError();
+  obj[2] = _require(530).rejectWithMigratedError();
   return obj3.post(obj);
 };

@@ -1,189 +1,143 @@
-// Module ID: 10826
-// Function ID: 83840
-// Name: _callSuper
-// Dependencies: [6, 7, 15, 17, 18, 31, 27, 1278, 33, 4165, 689, 4011, 10827, 10828, 3877, 1212, 4695, 10829, 566, 2]
+// Module ID: 10850
+// Function ID: 10851
+// Name: render
+// Dependencies: [19, 17, 1302, 21, 4189, 712, 3901, 4035, 10851, 10852, 1236, 4717, 10853, 589, 2]
 // Exports: default
 
-// Module 10826 (_callSuper)
-import getActivityIndicator from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import getSystemLocale from "getSystemLocale";
-import useFetchStreamPreview from "useFetchStreamPreview";
-import initialize from "initialize";
-import importAllResult from "result";
+// Module 10850 (render)
+import importAllResult from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
-import closure_10 from "_isNativeReflectConstruct";
+import handleThemeChange from "handleThemeChange";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
+import createCacheKey from "createCacheKey";
 
-let closure_11;
-let closure_12;
-let closure_8;
-let closure_9;
-const require = arg1;
-function _callSuper(arg0, arg1, arg2) {
-  let items = arg2;
-  const obj = callback2(arg1);
-  if (_isNativeReflectConstruct()) {
-    if (!items) {
-      items = [];
-    }
-    let constructResult = Reflect.construct(obj, items, callback2(arg0).constructor);
+let StyleSheet;
+let c3;
+let c4;
+let closure_6;
+let error;
+let require = arg1;
+({ Image: c3, View: c4, StyleSheet } = get_ActivityIndicator);
+({ jsx: closure_6, jsxs: error } = jsxProd);
+createCacheKey = { wrapper: null, text: null, fallbackImage: null };
+createCacheKey = {};
+let merged = Object.assign(StyleSheet.absoluteFillObject);
+createCacheKey.alignItems = "center";
+createCacheKey.justifyContent = "center";
+createCacheKey.paddingLeft = 20;
+createCacheKey.paddingRight = 20;
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { textAlign: "center", fontSize: 14, lineHeight: 18, marginTop: 16, color: require("Themes").colors.TEXT_MUTED };
+createCacheKey[2] = { width: "100%" };
+createCacheKey = createCacheKey.createLegacyClassComponentStyles(createCacheKey);
+const PureComponent = importAllResult.PureComponent;
+class DefaultFallback extends PureComponent {
+}
+DefaultFallback.prototype["render"] = function render() {
+  const tmp = createCacheKey(this.context);
+  let obj = { style: tmp.wrapper, children: null };
+  obj = { resizeMode: "contain", style: tmp.fallbackImage, source: null };
+  if (obj3.isThemeDark(this.props.theme)) {
+    let tmp6Result = tmp6(10851);
   } else {
-    constructResult = obj.apply(arg0, items);
+    tmp6Result = tmp6(10852);
   }
-  return getSystemLocale(arg0, constructResult);
+  obj[2] = tmp6Result;
+  obj[1] = closure_6(closure_3, obj);
+  return closure_6(closure_4, obj);
+};
+DefaultFallback.contextType = require("ManaContext").ThemeContext;
+const obj2 = { touchable: null, imageContainer: null, image: null };
+const obj3 = { flex: 1, width: "100%", height: "View", aspectRatio: true, backgroundColor: true };
+obj3[4] = require("Themes").colors.BACKGROUND_BASE_LOWEST;
+obj2[0] = obj3;
+createCacheKey = { flex: 1, backgroundColor: require("Themes").unsafe_rawColors.BLACK };
+obj2[1] = createCacheKey;
+obj2[2] = { flex: 1 };
+let closure_10 = createCacheKey.createLegacyClassComponentStyles(obj2);
+const PureComponent2 = importAllResult.PureComponent;
+class StreamPreview extends PureComponent2 {
+  constructor() {
+    applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
+    closure_0 = applyArgumentsResult;
+    applyArgumentsResult.state = { isImageLoaded: false, isImageErrored: false };
+    applyArgumentsResult.handleLoadStart = function handleLoadStart() {
+      applyArgumentsResult.setState({ isImageLoaded: false, isImageErrored: false });
+    };
+    applyArgumentsResult.handleLoad = function handleLoad() {
+      applyArgumentsResult.setState({ isImageLoaded: true });
+    };
+    applyArgumentsResult.handleError = function handleError() {
+      applyArgumentsResult.setState({ isImageErrored: true });
+    };
+    return applyArgumentsResult;
+  }
 }
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
-  }
-  const result = _isNativeReflectConstruct();
-}
-({ Image: closure_8, View: closure_9 } = get_ActivityIndicator);
-({ jsx: closure_11, jsxs: closure_12 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = {};
-let merged = Object.assign(get_ActivityIndicator.StyleSheet.absoluteFillObject);
-_createForOfIteratorHelperLoose["alignItems"] = "center";
-_createForOfIteratorHelperLoose["justifyContent"] = "center";
-_createForOfIteratorHelperLoose["paddingLeft"] = 20;
-_createForOfIteratorHelperLoose["paddingRight"] = 20;
-_createForOfIteratorHelperLoose.wrapper = _createForOfIteratorHelperLoose;
-let obj1 = { textAlign: "center", fontSize: 14, lineHeight: 18, marginTop: 16, color: require("_createForOfIteratorHelperLoose").colors.TEXT_MUTED };
-_createForOfIteratorHelperLoose.text = obj1;
-_createForOfIteratorHelperLoose.fallbackImage = { width: "100%" };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createLegacyClassComponentStyles(_createForOfIteratorHelperLoose);
-const tmp6 = ((PureComponent) => {
-  class DefaultFallback {
-    constructor() {
-      tmp = outer1_3(this, DefaultFallback);
-      return outer1_17(this, DefaultFallback, arguments);
-    }
-  }
-  callback3(DefaultFallback, PureComponent);
-  const items = [
-    {
-      key: "render",
-      value() {
-        const tmp = outer1_13(this.context);
-        let obj = { style: tmp.wrapper };
-        obj = { resizeMode: "contain", style: tmp.fallbackImage };
-        if (obj3.isThemeDark(this.props.theme)) {
-          let tmp5Result = tmp5(tmp6[12]);
-        } else {
-          tmp5Result = tmp5(tmp6[13]);
-        }
-        obj.source = tmp5Result;
-        obj.children = outer1_11(outer1_8, obj);
-        return outer1_11(outer1_9, obj);
-      }
-    }
-  ];
-  return callback(DefaultFallback, items);
-})(importAllResult.PureComponent);
-let closure_14 = tmp6;
-tmp6.contextType = require("ManaContext").ThemeContext;
-const obj2 = {};
-const obj3 = { flex: 1, width: "100%", height: undefined, aspectRatio: 1.7777777777777777, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWEST };
-obj2.touchable = obj3;
-_createForOfIteratorHelperLoose = { flex: 1, backgroundColor: require("_createForOfIteratorHelperLoose").unsafe_rawColors.BLACK };
-obj2.imageContainer = _createForOfIteratorHelperLoose;
-obj2.image = { flex: 1 };
-let closure_15 = _createForOfIteratorHelperLoose.createLegacyClassComponentStyles(obj2);
-const tmp7 = ((PureComponent) => {
-  class StreamPreview {
-    constructor(arg0) {
-      items = [...arguments];
-      tmp = outer1_3(this, StreamPreview);
-      items1 = [...items];
-      tmp2 = outer1_17(this, StreamPreview, items1);
-      StreamPreview = tmp2;
-      tmp2.state = { isImageLoaded: false, isImageErrored: false };
-      tmp2.handleLoadStart = () => {
-        tmp2.setState({ isImageLoaded: false, isImageErrored: false });
-      };
-      tmp2.handleLoad = () => {
-        tmp2.setState({ isImageLoaded: true });
-      };
-      tmp2.handleError = () => {
-        tmp2.setState({ isImageErrored: true });
-      };
-      return tmp2;
-    }
-  }
-  callback3(StreamPreview, PureComponent);
-  let items = [
-    {
-      key: "render",
-      value() {
-        let isFetching;
-        let renderFallback;
-        let theme;
-        let url;
-        const tmp = outer1_15(this.context);
-        ({ url, isFetching, renderFallback, theme } = this.props);
-        if (null != url) {
-          if (!isFetching) {
-            if (!this.state.isImageErrored) {
-              if (!tmp7) {
-                let renderFallbackResult;
-                if (null != renderFallback) {
-                  renderFallbackResult = renderFallback(true, theme);
-                }
-                let tmp8 = renderFallbackResult;
-              }
-              let obj = { resizeMode: "contain", style: tmp.image };
-              obj = { uri: url, cache: "force-cache" };
-              obj.source = obj;
-              ({ handleLoadStart: obj.onLoadStart, handleLoad: obj.onLoad, handleError: obj.onError } = this);
-              const tmp12 = outer1_11(outer1_8, obj);
-            }
-            obj = { accessibilityRole: "button", accessibilityLabel: tmp2, activeOpacity: 0.6 };
-            const items = [tmp.touchable, tmp3];
-            obj.style = items;
-            obj.disabled = tmp6;
-            obj.onPress = tmp5;
-            const obj1 = { style: tmp.imageContainer };
-            const items1 = [tmp8, tmp12];
-            obj1.children = items1;
-            const items2 = [outer1_12(outer1_9, obj1), tmp4];
-            obj.children = items2;
-            return outer1_12(StreamPreview(outer1_2[16]).PressableOpacity, obj);
+StreamPreview.prototype["render"] = function render() {
+  let isFetching;
+  let renderFallback;
+  let theme;
+  let url;
+  const tmp = callback3(this.context);
+  ({ url, isFetching, renderFallback, theme } = this.props);
+  if (null != url) {
+    if (!isFetching) {
+      if (!this.state.isImageErrored) {
+        if (!tmp7) {
+          let renderFallbackResult;
+          if (renderFallback != null) {
+            renderFallbackResult = renderFallback(true, theme);
           }
+          let tmp8 = renderFallbackResult;
         }
-        let renderFallbackResult1;
-        if (null != renderFallback) {
-          renderFallbackResult1 = renderFallback(isFetching, theme);
-        }
-        tmp8 = renderFallbackResult1;
+        let obj = { resizeMode: "contain", style: null, source: null, onLoadStart: null, onLoad: null, onError: null };
+        obj[1] = tmp.image;
+        obj = { uri: null, cache: "force-cache" };
+        obj[0] = url;
+        obj[2] = obj;
+        ({ handleLoadStart: obj[3], handleLoad: obj[4], handleError: obj[5] } = this);
+        const tmp12 = callback(closure_3, obj);
       }
+      obj = { accessibilityRole: "button", accessibilityLabel: null, activeOpacity: 0.6, style: null, disabled: null, onPress: null, children: null };
+      obj[1] = tmp2;
+      const items = [tmp.touchable, tmp3];
+      obj[3] = items;
+      obj[4] = tmp6;
+      obj[5] = tmp5;
+      const obj1 = { style: null, children: null };
+      obj1[0] = tmp.imageContainer;
+      const items1 = [tmp8, tmp12];
+      obj1[1] = items1;
+      const items2 = [callback2(closure_4, obj1), tmp4];
+      obj[6] = items2;
+      return callback2(require(4717) /* PressableBase */.PressableOpacity, obj);
     }
-  ];
-  return callback(StreamPreview, items);
-})(importAllResult.PureComponent);
-let closure_16 = tmp7;
-tmp7.contextType = require("ManaContext").ThemeContext;
-tmp7.defaultProps = {
+  }
+  let renderFallbackResult1;
+  if (renderFallback != null) {
+    renderFallbackResult1 = renderFallback(isFetching, theme);
+  }
+  tmp8 = renderFallbackResult1;
+};
+StreamPreview.contextType = require("ManaContext").ThemeContext;
+StreamPreview.defaultProps = {
   renderFallback: function defaultRenderFallback(arg0, theme) {
-    const obj = { theme };
-    const intl = require(1212) /* getSystemLocale */.intl;
+    const obj = { theme, caption: null };
+    const intl = require(1236) /* getSystemLocale */.intl;
     const string = intl.string;
-    const t = require(1212) /* getSystemLocale */.t;
+    const t = require(1236) /* getSystemLocale */.t;
     if (arg0) {
       let stringResult = string(t.NQ7H8V);
     } else {
       stringResult = string(t.uQZTBV);
     }
-    obj.caption = stringResult;
-    return closure_11(closure_14, obj);
+    obj[1] = stringResult;
+    return closure_6(DefaultFallback, obj);
   }
 };
-let result = require("_possibleConstructorReturn").fileFinishedImporting("components_native/StreamPreview.tsx");
+let obj1 = { textAlign: "center", fontSize: 14, lineHeight: 18, marginTop: 16, color: require("Themes").colors.TEXT_MUTED };
+const result = require("handleThemeChange").fileFinishedImporting("components_native/StreamPreview.tsx");
 
 export default function ConnectedStreamPreview(stream) {
   let channelId;
@@ -192,14 +146,14 @@ export default function ConnectedStreamPreview(stream) {
   let ownerId;
   let previewUrl;
   ({ guildId, channelId, ownerId } = stream.stream);
-  ({ previewUrl, isLoading } = importDefault(10829)(guildId, channelId, ownerId));
-  let obj = require(566) /* initialize */;
-  const items = [closure_10];
+  ({ previewUrl, isLoading } = importDefault(10853)(guildId, channelId, ownerId));
+  let obj = require(589) /* initialize */;
+  const items = [handleThemeChange];
   obj = {};
-  const stateFromStores = obj.useStateFromStores(items, () => outer1_10.theme);
+  const stateFromStores = obj.useStateFromStores(items, () => theme.theme);
   const merged = Object.assign(stream);
-  obj["url"] = previewUrl;
-  obj["isFetching"] = isLoading;
-  obj["theme"] = stateFromStores;
-  return callback4(closure_16, obj);
+  obj.url = previewUrl;
+  obj.isFetching = isLoading;
+  obj.theme = stateFromStores;
+  return callback(StreamPreview, obj);
 };

@@ -1,107 +1,95 @@
-// Module ID: 16291
-// Function ID: 126256
-// Name: _createForOfIteratorHelperLoose
-// Dependencies: [6, 7, 15, 17, 18, 1194, 1348, 566, 686, 9111, 5112, 2]
+// Module ID: 16326
+// Function ID: 16327
+// Name: handleChannelDelete
+// Dependencies: [1218, 1372, 5134, 589, 709, 9135, 2]
 
-// Module 16291 (_createForOfIteratorHelperLoose)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import initialize from "initialize";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
-import closure_7 from "_isNativeReflectConstruct";
-import closure_8 from "_isNativeReflectConstruct";
-import tmp2 from "AutomaticLifecycleManager";
+// Module 16326 (handleChannelDelete)
+import fetchFingerprint from "fetchFingerprint";
+import ensureGuildLoaded from "ensureGuildLoaded";
+import "initialize";
 
-function _createForOfIteratorHelperLoose(iterable) {
-  let closure_0 = iterable;
-  iterable = "undefined" !== typeof Symbol;
-  if (iterable) {
-    const _Symbol = Symbol;
-    iterable = iterable[Symbol.iterator];
+class ThreadManager extends tmp2 {
+  constructor() {
+    applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
+    applyArgumentsResult.actions = { CHANNEL_DELETE: applyArgumentsResult.handleChannelDelete, MESSAGE_CREATE: applyArgumentsResult.handleMessageCreate, GUILD_DELETE: applyArgumentsResult.handleGuildDelete };
+    return applyArgumentsResult;
   }
-  if (!iterable) {
-    iterable = iterable[Symbol.iterator];
-  }
-  if (iterable) {
-    const iter = iterable.call(iterable);
-    const next = iter.next;
-    return next.bind(iter);
-  } else {
-    const _Array = Array;
-    let tmp = iterable;
-    if (!Array.isArray(iterable)) {
-      let tmp2;
-      if (iterable) {
-        if ("string" === typeof iterable) {
-          tmp2 = _arrayLikeToArray(iterable, undefined);
-        } else {
-          const toString = {}.toString;
-          const substr = toString.call(iterable).slice(8, -1);
-          let name = substr;
-          if (tmp3) {
-            name = iterable.constructor.name;
-          }
-          if ("Map" !== name) {
-            if ("Set" !== name) {
-              if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(iterable, undefined);
-              } else {
-                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
-              }
-            }
-            tmp2 = arr;
-          }
-          const _Array2 = Array;
-          arr = Array.from(iterable);
-          const callResult = toString.call(iterable);
-          tmp3 = "Object" === substr && iterable.constructor;
+}
+const prototype = ThreadManager.prototype;
+prototype["handleChannelDelete"] = function handleChannelDelete(channel) {
+  channel = channel.channel;
+  let allThreadsForParent;
+  if (null != channel.guild_id) {
+    allThreadsForParent = store.getAllThreadsForParent(channel.id);
+    if (allThreadsForParent.length > 0) {
+      const Emitter = allThreadsForParent(589).Emitter;
+      Emitter.batched(() => {
+        for (const item10005 of allThreadsForParent) {
+          let tmp = allThreadsForParent;
+          let tmp2 = outer1_1;
+          let obj = allThreadsForParent(outer1_1[4]);
+          obj = { type: "THREAD_DELETE", channel: null };
+          obj[1] = item10005;
+          let dispatchResult = obj.dispatch(obj);
+          continue;
         }
+      });
+    }
+  }
+};
+prototype["handleMessageCreate"] = function handleMessageCreate(channelId) {
+  const channel = store.getChannel(channelId.channelId);
+  const author = channelId.message.author;
+  let id;
+  if (author != null) {
+    id = author.id;
+  }
+  if (id === id.getId()) {
+    let isActiveThreadResult;
+    if (channel != null) {
+      isActiveThreadResult = channel.isActiveThread();
+    }
+    if (isActiveThreadResult) {
+      const threadMetadata = channel.threadMetadata;
+      let num;
+      if (threadMetadata != null) {
+        num = threadMetadata.archiveTimestamp;
       }
-      tmp = tmp2;
-      if (!tmp2) {
-        const _TypeError = TypeError;
-        const typeError = new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
-        throw typeError;
+      if (num == null) {
+        num = 0;
+      }
+      const date = new Date(num);
+      const _Date = Date;
+      const time = date.getTime();
+      if (Date.now() - time < 5000) {
+        importDefault(9135).resort(channel.parent_id);
+        const obj3 = importDefault(9135);
       }
     }
-    if (tmp) {
-      closure_0 = tmp;
+  }
+};
+prototype["handleGuildDelete"] = function handleGuildDelete(guild) {
+  guild = guild.guild;
+  let allThreadsForGuild;
+  if (!guild.unavailable) {
+    allThreadsForGuild = store.getAllThreadsForGuild(guild.id);
+    if (0 !== allThreadsForGuild.length) {
+      const Emitter = allThreadsForGuild(589).Emitter;
+      Emitter.batched(() => {
+        for (const item10005 of allThreadsForGuild) {
+          let tmp = allThreadsForGuild;
+          let tmp2 = outer1_1;
+          let obj = allThreadsForGuild(outer1_1[4]);
+          obj = { type: "THREAD_DELETE", channel: null };
+          obj[1] = item10005;
+          let dispatchResult = obj.dispatch(obj);
+          continue;
+        }
+      });
     }
-    let c1 = 0;
-    return () => {
-      if (closure_1 >= length.length) {
-        let obj = { done: true };
-      } else {
-        obj = { done: false };
-        closure_1 = tmp3 + 1;
-        obj.value = length[+closure_1];
-      }
-      return obj;
-    };
   }
-}
-function _arrayLikeToArray(arg0, arg1) {
-  let length;
-  if (tmp) {
-    length = arg0.length;
-  }
-  const ArrayResult = Array(length);
-  for (let num = 0; num < length; num = num + 1) {
-    ArrayResult[num] = arg0[num];
-  }
-  return ArrayResult;
-}
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
+};
+const threadManager = new ThreadManager();
+const result = require("initialize").fileFinishedImporting("modules/threads/ThreadManager.tsx");
 
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
-  }
-  const result = _isNativeReflectConstruct();
-}
-tmp2 = new tmp2();
-let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/threads/ThreadManager.tsx");
-
-export default tmp2;
+export default threadManager;

@@ -1,25 +1,28 @@
-// Module ID: 15521
-// Function ID: 119121
+// Module ID: 15555
+// Function ID: 15556
 // Name: useAutoSearchGuildChannelTab
-// Dependencies: [31, 11429, 10082, 11436, 22, 11428, 2]
+// Dependencies: [19, 11453, 10103, 11460, 12, 11452, 2]
 // Exports: useAutoSearchGuildChannelTab
 
-// Module 15521 (useAutoSearchGuildChannelTab)
-import result from "result";
+// Module 15555 (useAutoSearchGuildChannelTab)
+import noop from "noop";
 import { SEARCH_TEXT_INPUT_DEBOUNCE_TIME as closure_4 } from "SEARCH_TEXT_INPUT_DEBOUNCE_TIME";
 
 const require = arg1;
-let result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/search/native/hooks/useAutoSearchGuildChannelTab.tsx");
+let result = require("SearchTokenTypes").fileFinishedImporting("modules/search/native/hooks/useAutoSearchGuildChannelTab.tsx");
 
 export const useAutoSearchGuildChannelTab = function useAutoSearchGuildChannelTab(searchContext, arg1) {
   let closure_0 = searchContext;
   let closure_1 = arg1;
   const items = [searchContext];
-  const callback = React.useCallback((searchQueryString) => {
+  const callback = React.useCallback((arg0) => {
     let obj = searchContext(callback[2]);
     const guildIdFromSearchContext = obj.getGuildIdFromSearchContext(searchContext);
     if (null != guildIdFromSearchContext) {
-      obj = { searchContext, searchQueryString, guildId: guildIdFromSearchContext };
+      obj = { searchContext: null, searchQueryString: null, guildId: null };
+      obj[0] = searchContext;
+      obj[1] = arg0;
+      obj[2] = guildIdFromSearchContext;
       const result = callback(callback[3]).searchGuildChannelTab(obj);
       const obj2 = callback(callback[3]);
     }
@@ -40,6 +43,6 @@ export const useAutoSearchGuildChannelTab = function useAutoSearchGuildChannelTa
   }, items2);
   const items3 = [searchContext];
   const effect2 = React.useEffect(() => () => {
-    const result = callback(callback[3]).cleanupGuildChannelTab(outer1_0);
+    const result = outer1_1(outer1_2[3]).cleanupGuildChannelTab(closure_0);
   }, items3);
 };

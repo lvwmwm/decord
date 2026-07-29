@@ -1,10 +1,10 @@
-// Module ID: 16139
-// Function ID: 124781
+// Module ID: 16177
+// Function ID: 16178
 // Name: trackActivityProblem
-// Dependencies: [653, 675, 2]
+// Dependencies: [676, 698, 2]
 // Exports: default
 
-// Module 16139 (trackActivityProblem)
+// Module 16177 (trackActivityProblem)
 import { AnalyticEvents } from "ME";
 
 const result = require("set").fileFinishedImporting("modules/activities/trackActivityProblem.tsx");
@@ -27,32 +27,32 @@ export default function trackActivityProblem(arg0) {
   if (rating === undefined) {
     rating = null;
   }
-  let obj = importDefault(675);
-  obj = { reason: problem };
+  let obj = importDefault(698);
+  obj = { reason: problem, guild_id: null, channel_id: null, application_id: null, application_name: null, location: null, rating: null, feedback: null, embedded_activity_location_kind: null, rtc_connection_id: null, media_session_id: null };
   let guildId;
-  if (null != channel) {
+  if (channel != null) {
     guildId = channel.getGuildId();
   }
-  obj.guild_id = guildId;
+  obj[1] = guildId;
   let id;
-  if (null != channel) {
+  if (channel != null) {
     id = channel.id;
   }
-  obj.channel_id = id;
+  obj[2] = id;
   let id1;
-  if (null != activityApplication) {
+  if (activityApplication != null) {
     id1 = activityApplication.id;
   }
-  obj.application_id = id1;
+  obj[3] = id1;
   let name;
-  if (null != activityApplication) {
+  if (activityApplication != null) {
     name = activityApplication.name;
   }
-  obj.application_name = name;
-  obj.location = _location;
-  obj.rating = rating;
-  obj.feedback = feedback;
-  obj.embedded_activity_location_kind = embeddedActivityLocation.kind;
-  ({ rtc_connection_id: obj2.rtc_connection_id, media_session_id: obj2.media_session_id } = analyticsData);
+  obj[4] = name;
+  obj[5] = _location;
+  obj[6] = rating;
+  obj[7] = feedback;
+  obj[8] = embeddedActivityLocation.kind;
+  ({ rtc_connection_id: obj2[9], media_session_id: obj2[10] } = analyticsData);
   obj.track(AnalyticEvents.ACTIVITY_REPORT_PROBLEM, obj);
 };

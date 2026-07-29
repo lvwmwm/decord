@@ -1,32 +1,32 @@
-// Module ID: 14112
-// Function ID: 107859
+// Module ID: 14134
+// Function ID: 14135
 // Name: QuestDisclosureModalInner
-// Dependencies: [27, 653, 33, 4165, 689, 3838, 8980, 1212, 8996, 10991, 8911, 6763, 4161, 9465, 5200, 1921, 4578, 2]
+// Dependencies: [17, 676, 21, 4189, 712, 3862, 9004, 1236, 9020, 11015, 8935, 6785, 4185, 9489, 5222, 1945, 4600, 2]
 // Exports: default
 
-// Module 14112 (QuestDisclosureModalInner)
-import { View } from "get ActivityIndicator";
+// Module 14134 (QuestDisclosureModalInner)
+import { View } from "set";
 import { HelpdeskArticles } from "ME";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_5;
+let c5;
 let closure_6;
-({ jsx: closure_5, jsxs: closure_6 } = jsxProd);
-let obj = {};
-obj = { flex: 1, padding: require("_createForOfIteratorHelperLoose").space.PX_24, gap: require("_createForOfIteratorHelperLoose").space.PX_16, maxWidth: 480 };
-obj.container = obj;
-obj.illustration = { alignSelf: "center", marginBottom: require("_createForOfIteratorHelperLoose").space.PX_8 };
-let obj1 = { alignSelf: "center", marginBottom: require("_createForOfIteratorHelperLoose").space.PX_8 };
-obj.closeButton = { marginTop: "auto", paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_8, marginBottom: require("_createForOfIteratorHelperLoose").space.PX_24 };
-obj.targetList = { padding: 0 };
-let obj3 = { flexDirection: "row", flexWrap: "nowrap", alignItems: "center", paddingLeft: require("_createForOfIteratorHelperLoose").space.PX_16, gap: require("_createForOfIteratorHelperLoose").space.PX_16 };
-obj.targetItem = obj3;
-obj.lastTargetItem = { borderBottomWidth: 0 };
-let obj4 = { flex: 1, paddingVertical: require("_createForOfIteratorHelperLoose").space.PX_12, borderBottomWidth: 1, borderBottomColor: require("_createForOfIteratorHelperLoose").colors.BORDER_SUBTLE };
-obj.disclosureText = obj4;
-let closure_7 = _createForOfIteratorHelperLoose.createStyles(obj);
-let obj2 = { marginTop: "auto", paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_8, marginBottom: require("_createForOfIteratorHelperLoose").space.PX_24 };
+({ jsx: c5, jsxs: closure_6 } = jsxProd);
+let obj = { container: null, illustration: null, closeButton: null, targetList: null, targetItem: null, lastTargetItem: null, disclosureText: null };
+obj = { flex: 1, padding: require("Themes").space.PX_24, gap: require("Themes").space.PX_16, maxWidth: 480 };
+obj[0] = obj;
+obj[1] = { alignSelf: "center", marginBottom: require("Themes").space.PX_8 };
+let obj1 = { alignSelf: "center", marginBottom: require("Themes").space.PX_8 };
+obj[2] = { marginTop: "auto", paddingHorizontal: require("Themes").space.PX_8, marginBottom: require("Themes").space.PX_24 };
+obj[3] = { padding: 0 };
+let obj2 = { marginTop: "auto", paddingHorizontal: require("Themes").space.PX_8, marginBottom: require("Themes").space.PX_24 };
+obj[4] = { flexDirection: "row", flexWrap: "nowrap", alignItems: "center", paddingLeft: require("Themes").space.PX_16, gap: require("Themes").space.PX_16 };
+obj[5] = { borderBottomWidth: 0 };
+let obj3 = { flexDirection: "row", flexWrap: "nowrap", alignItems: "center", paddingLeft: require("Themes").space.PX_16, gap: require("Themes").space.PX_16 };
+obj[6] = { flex: 1, paddingVertical: require("Themes").space.PX_12, borderBottomWidth: 1, borderBottomColor: require("Themes").colors.BORDER_SUBTLE };
+let closure_7 = createCacheKey.createStyles(obj);
+let obj4 = { flex: 1, paddingVertical: require("Themes").space.PX_12, borderBottomWidth: 1, borderBottomColor: require("Themes").colors.BORDER_SUBTLE };
 const result = require("jsxProd").fileFinishedImporting("modules/quests/native/QuestDisclosureModal/QuestDisclosureModalInner.tsx");
 
 export default function QuestDisclosureModalInner(isTargetedDisclosure) {
@@ -36,86 +36,79 @@ export default function QuestDisclosureModalInner(isTargetedDisclosure) {
   let isVideoQuest;
   let onClose;
   isTargetedDisclosure = isTargetedDisclosure.isTargetedDisclosure;
+  let _require;
   let items1;
   ({ gamePublisher, gameTitle, isVideoQuest, onClose, cosponsorName } = isTargetedDisclosure);
-  const tmp = callback2();
-  const require = tmp;
-  const DropsOptedOut = require(3838) /* explicitContentFromProto */.DropsOptedOut;
+  const tmp = callback();
+  _require = tmp;
+  const DropsOptedOut = _require(3862).DropsOptedOut;
   const setting = DropsOptedOut.useSetting();
-  let obj = {};
+  let obj = { icon: null, text: null };
   if (setting) {
-    obj = { size: "xs" };
-    obj.icon = tmp3(tmp4(8980).ServerIcon, obj);
-    const intl4 = tmp4(1212).intl;
-    obj.text = intl4.string(tmp4(1212).t["2bL0wT"]);
+    obj[0] = tmp5(tmp2(9004).ServerIcon, { size: "xs" });
+    const intl4 = tmp2(1236).intl;
+    obj[1] = intl4.string(tmp2(1236).t["2bL0wT"]);
     let items = [obj];
+    let tmp6 = tmp5;
     items1 = items;
   } else {
-    obj = { size: "xs" };
-    obj.icon = tmp3(tmp4(8996).GlobeEarthIcon, obj);
-    const intl = tmp4(1212).intl;
-    obj.text = intl.string(tmp4(1212).t.xQSdPv);
+    obj[0] = tmp5(tmp2(9020).GlobeEarthIcon, { size: "xs" });
+    const intl = tmp2(1236).intl;
+    obj[1] = intl.string(tmp2(1236).t.xQSdPv);
     items1 = [obj, , ];
-    const obj1 = {};
-    const obj2 = { size: "xs" };
-    obj1.icon = tmp3(tmp4(10991).UserIcon, obj2);
-    const intl2 = tmp4(1212).intl;
-    obj1.text = intl2.string(tmp4(1212).t.mYt7hQ);
-    items1[1] = obj1;
-    const obj3 = {};
-    const obj4 = { size: "xs" };
-    obj3.icon = tmp3(tmp4(8911).GameControllerIcon, obj4);
-    const intl3 = tmp4(1212).intl;
-    obj3.text = intl3.string(tmp4(1212).t.XAsWxQ);
-    items1[2] = obj3;
+    obj = { icon: null, text: null };
+    obj[0] = tmp5(tmp2(11015).UserIcon, { size: "xs" });
+    const intl2 = tmp2(1236).intl;
+    obj[1] = intl2.string(tmp2(1236).t.mYt7hQ);
+    items1[1] = obj;
+    obj = { icon: null, text: null };
+    obj[0] = tmp5(tmp2(8935).GameControllerIcon, { size: "xs" });
+    const intl3 = tmp2(1236).intl;
+    obj[1] = intl3.string(tmp2(1236).t.XAsWxQ);
+    items1[2] = obj;
+    tmp6 = tmp5;
   }
-  const obj5 = { style: tmp.container };
-  const items2 = [callback(View, { style: tmp.illustration, children: callback(require(6763) /* AccountAgeTier10LargeBadge */.WumpusCouchSpotIllustration, {}) }), , , , ];
-  const obj7 = { variant: "text-md/normal", color: "mobile-text-heading-primary" };
-  let obj10 = require(9465) /* getQuestUrl */;
-  const obj8 = { gamePublisher, gameTitle, isTargetedDisclosure, isContextualDisclosure: setting, cosponsorName, isVideoQuest };
-  obj7.children = obj10.getDisclosureText(obj8);
-  items2[1] = callback(require(4161) /* Text */.Text, obj7);
+  const obj1 = { style: tmp.container, children: null };
+  const items2 = [tmp6(View, { style: tmp.illustration, children: tmp6(_require(6785).WumpusCouchSpotIllustration, {}) }), , , , ];
+  const obj3 = { variant: "text-md/normal", color: "mobile-text-heading-primary", children: null };
+  const obj2 = { style: tmp.illustration, children: tmp6(_require(6785).WumpusCouchSpotIllustration, {}) };
+  const tmp7 = closure_6;
+  obj3[2] = _require(9489).getDisclosureText({ gamePublisher, gameTitle, isTargetedDisclosure, isContextualDisclosure: setting, cosponsorName, isVideoQuest });
+  items2[1] = tmp6(_require(4185).Text, obj3);
   if (isTargetedDisclosure) {
-    const obj9 = {
-      radius: 16,
-      style: tmp.targetList,
-      children: items1.map((children) => {
-          let obj = { style: tmp.targetItem };
-          const items = [children.icon, ];
-          obj = {};
-          const items1 = [tmp.disclosureText, ];
-          let lastTargetItem = arg1 === items1.length - 1;
-          if (lastTargetItem) {
-            lastTargetItem = tmp.lastTargetItem;
-          }
-          items1[1] = lastTargetItem;
-          obj.style = items1;
-          obj.children = outer1_5(outer1_6(outer1_2[12]).Text, { variant: "text-md/semibold", children: children.text });
-          items[1] = outer1_5(outer1_3, obj);
-          obj.children = items;
-          return outer1_6(outer1_3, obj, arg1);
-        })
-    };
-    isTargetedDisclosure = callback(require(5200) /* getCardBackgroundToken */.Card, obj9);
+    const obj4 = { radius: 16, style: null, children: null };
+    obj4[1] = tmp.targetList;
+    obj4[2] = items1.map((children) => {
+      let obj = { style: _undefined.targetItem, children: null };
+      const items = [children.icon, ];
+      const items1 = [_undefined.disclosureText, ];
+      let lastTargetItem = arg1 === items1.length - 1;
+      if (lastTargetItem) {
+        lastTargetItem = _undefined.lastTargetItem;
+      }
+      obj = { style: items1, children: tmp3(_undefined(outer1_2[12]).Text, { variant: "text-md/semibold", children: children.text }) };
+      items1[1] = lastTargetItem;
+      items[1] = outer1_5(outer1_3, obj);
+      obj[1] = items;
+      return outer1_6(outer1_3, obj, arg1);
+    });
+    isTargetedDisclosure = tmp6(tmp2(5222).Card, obj4);
   }
   items2[2] = isTargetedDisclosure;
-  obj10 = { variant: "text-md/medium", color: "mobile-text-heading-primary" };
-  const intl5 = require(1212) /* getSystemLocale */.intl;
-  const obj11 = {};
-  const obj6 = { style: tmp.illustration, children: callback(require(6763) /* AccountAgeTier10LargeBadge */.WumpusCouchSpotIllustration, {}) };
-  const tmp6 = closure_6;
-  const tmp7 = View;
-  obj11.privacySettingsUrl = items1(1921).getArticleURL(HelpdeskArticles.QUESTS_PRIVACY_CONTROLS);
-  obj10.children = intl5.format(require(1212) /* getSystemLocale */.t.tzq9Wa, obj11);
-  items2[3] = callback(require(4161) /* Text */.Text, obj10);
-  const obj12 = { style: tmp.closeButton };
-  const obj13 = { variant: "primary", grow: true, size: "lg" };
-  const intl6 = require(1212) /* getSystemLocale */.intl;
-  obj13.text = intl6.string(require(1212) /* getSystemLocale */.t.cpT0Cq);
-  obj13.onPress = onClose;
-  obj12.children = callback(require(4578) /* Button */.Button, obj13);
-  items2[4] = callback(View, obj12);
-  obj5.children = items2;
-  return tmp6(tmp7, obj5);
+  const obj5 = { variant: "text-md/medium", color: "mobile-text-heading-primary", children: null };
+  const intl5 = tmp2(1236).intl;
+  const obj6 = { privacySettingsUrl: null };
+  const tmp2Result = _require(9489);
+  obj6[0] = items1(1945).getArticleURL(HelpdeskArticles.QUESTS_PRIVACY_CONTROLS);
+  obj5[2] = intl5.format(_require(1236).t.tzq9Wa, obj6);
+  items2[3] = tmp6(_require(4185).Text, obj5);
+  const obj7 = { style: tmp.closeButton, children: null };
+  const obj8 = { variant: "primary", grow: true, size: "lg", text: null, onPress: null };
+  const intl6 = tmp2(1236).intl;
+  obj8[3] = intl6.string(_require(1236).t.cpT0Cq);
+  obj8[4] = onClose;
+  obj7[1] = tmp6(_require(4600).Button, obj8);
+  items2[4] = tmp6(View, obj7);
+  obj1[1] = items2;
+  return tmp7(View, obj1);
 };

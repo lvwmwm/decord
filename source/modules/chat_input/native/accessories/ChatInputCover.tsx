@@ -1,19 +1,19 @@
-// Module ID: 11389
-// Function ID: 88306
+// Module ID: 11413
+// Function ID: 11414
 // Name: ChatInputCover
-// Dependencies: [31, 27, 33, 4563, 1555, 2]
+// Dependencies: [19, 17, 21, 4586, 1579, 2]
 
-// Module 11389 (ChatInputCover)
-import importAllResult from "result";
+// Module 11413 (ChatInputCover)
+import importAllResult from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { jsx } from "jsxProd";
 
-let closure_3;
-let closure_4;
-let closure_5;
+let c3;
+let c4;
+let c5;
 const require = arg1;
-({ StyleSheet: closure_3, TouchableWithoutFeedback: closure_4, View: closure_5 } = get_ActivityIndicator);
-const forwardRefResult = importAllResult.forwardRef((enabled) => {
+({ StyleSheet: c3, TouchableWithoutFeedback: c4, View: c5 } = get_ActivityIndicator);
+const forwardRefResult = importAllResult.forwardRef((enabled, ref) => {
   let flag = enabled.enabled;
   if (flag === undefined) {
     flag = true;
@@ -28,42 +28,45 @@ const forwardRefResult = importAllResult.forwardRef((enabled) => {
     imperativeHandle() {
       return {
         focused(controlsSpecs, arg1) {
-          let tmp = outer2_0;
-          if (outer2_0) {
+          let tmp = closure_0;
+          if (closure_0) {
             tmp = controlsSpecs;
           }
           if (tmp) {
-            tmp = outer2_1 !== flag(keyboardType[4]).KeyboardTypes.SYSTEM;
+            tmp = closure_1 !== outer1_0(outer1_1[4]).KeyboardTypes.SYSTEM;
           }
           if (tmp) {
-            tmp = outer2_3;
+            tmp = closure_3;
           }
           if (tmp) {
-            const obj = { type: flag(keyboardType[4]).KeyboardTypes.SYSTEM };
-            outer2_2(obj);
+            const obj = { type: null };
+            obj[0] = outer1_0(outer1_1[4]).KeyboardTypes.SYSTEM;
+            callback(obj);
           }
         }
       };
     },
     openSystemKeyboard() {
-      outer1_2({ type: flag(keyboardType[4]).KeyboardTypes.SYSTEM });
+      callback({ type: outer1_0(outer1_1[4]).KeyboardTypes.SYSTEM });
     }
   }), items);
-  const imperativeHandle = onSelectKeyboard.useImperativeHandle(arg1, memo.imperativeHandle);
-  let tmp4 = null;
+  const imperativeHandle = onSelectKeyboard.useImperativeHandle(ref, memo.imperativeHandle);
+  let tmp6 = null;
   if (flag) {
-    tmp4 = null;
+    tmp6 = null;
     if (keyboardType !== flag(keyboardType[4]).KeyboardTypes.SYSTEM) {
-      tmp4 = null;
+      tmp6 = null;
       if (!isScreenReaderEnabled) {
-        obj = { accessible: false, accessibilityRole: "none", onPress: memo.openSystemKeyboard };
-        obj = { style: isScreenReaderEnabled.absoluteFill };
-        obj.children = <closure_5 style={isScreenReaderEnabled.absoluteFill} />;
-        tmp4 = <closure_4 style={isScreenReaderEnabled.absoluteFill} />;
+        obj = { accessible: false, accessibilityRole: "none", onPress: null, children: null };
+        obj[2] = memo.openSystemKeyboard;
+        obj = { style: null };
+        obj[0] = isScreenReaderEnabled.absoluteFill;
+        obj[3] = <closure_5 style={null} />;
+        tmp6 = <closure_4 style={null} />;
       }
     }
   }
-  return tmp4;
+  return tmp6;
 });
 forwardRefResult.displayName = "ChatInputCover";
 const memoResult = importAllResult.memo(forwardRefResult);

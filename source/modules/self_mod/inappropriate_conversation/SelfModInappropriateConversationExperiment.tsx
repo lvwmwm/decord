@@ -1,13 +1,12 @@
-// Module ID: 10109
-// Function ID: 78200
+// Module ID: 10130
+// Function ID: 10131
 // Name: InappropriateConversationExperiment
-// Dependencies: [1325, 2]
+// Dependencies: [1349, 2]
 // Exports: isEligibleForInappropriateConversationWarning, useIsEligibleForInappropriateConversationWarning
 
-// Module 10109 (InappropriateConversationExperiment)
-const obj = { name: "2026-04-inappropriate-conversations-prescan", kind: "user", defaultConfig: { enabled: false }, variations: { [0]: { enabled: false }, [1]: { enabled: true } } };
-const tmp2 = require("getUnitId")(obj);
-let closure_0 = tmp2;
+// Module 10130 (InappropriateConversationExperiment)
+const tmp2 = require("getUnitId")({ name: "2026-04-inappropriate-conversations-prescan", kind: "user", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true } } });
+let c0 = tmp2;
 const result = require("set").fileFinishedImporting("modules/self_mod/inappropriate_conversation/SelfModInappropriateConversationExperiment.tsx");
 
 export const InappropriateConversationExperiment = tmp2;

@@ -1,22 +1,21 @@
-// Module ID: 10655
-// Function ID: 82872
+// Module ID: 10679
+// Function ID: 10680
 // Name: useModeratorOverlayChannelState
-// Dependencies: [677, 682, 3778, 2]
+// Dependencies: [700, 705, 3802, 2]
 // Exports: useModeratorOverlayChannelState
 
-// Module 10655 (useModeratorOverlayChannelState)
-import useStoreWithEqualityFn from "useStoreWithEqualityFn";
+// Module 10679 (useModeratorOverlayChannelState)
+import identity from "identity";
 
-let closure_2 = useStoreWithEqualityFn.createWithEqualityFn((arg0, arg1) => {
+let closure_2 = identity.createWithEqualityFn((arg0, arg1) => {
   let closure_0 = arg0;
   let closure_1 = arg1;
-  const obj = {
-    overlayDismissedChannelIds: new Set(),
-    dismissOverlay(arg0) {
-      const overlayDismissedChannelIds = dependencyMap().overlayDismissedChannelIds;
-      overlayDismissedChannelIds.add(arg0);
-      callback(682).batchUpdates(() => overlayDismissedChannelIds({ overlayDismissedChannelIds }));
-    }
+  const obj = { overlayDismissedChannelIds: null, dismissOverlay: null };
+  obj[0] = new Set();
+  obj[1] = function dismissOverlay(arg0) {
+    const overlayDismissedChannelIds = dependencyMap().overlayDismissedChannelIds;
+    overlayDismissedChannelIds.add(arg0);
+    callback(705).batchUpdates(() => overlayDismissedChannelIds({ overlayDismissedChannelIds }));
   };
   return obj;
 });
@@ -24,7 +23,7 @@ const result = require("isIterable").fileFinishedImporting("modules/stage_channe
 
 export const useModeratorOverlayChannelState = function useModeratorOverlayChannelState(id) {
   const _require = id;
-  const dependencyMap = callback((dismissOverlay) => dismissOverlay.dismissOverlay, _require(3778).shallow);
-  const items = [!callback((overlayDismissedChannelIds) => overlayDismissedChannelIds.overlayDismissedChannelIds, _require(3778).shallow).has(id), () => callback(closure_0)];
+  const dependencyMap = callback((dismissOverlay) => dismissOverlay.dismissOverlay, _require(3802).shallow);
+  const items = [!callback((overlayDismissedChannelIds) => overlayDismissedChannelIds.overlayDismissedChannelIds, _require(3802).shallow).has(id), () => callback(closure_0)];
   return items;
 };

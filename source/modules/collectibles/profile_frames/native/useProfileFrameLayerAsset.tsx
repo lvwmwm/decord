@@ -1,18 +1,18 @@
-// Module ID: 8075
-// Function ID: 64041
+// Module ID: 8099
+// Function ID: 8100
 // Name: map
-// Dependencies: [57, 31, 27, 1830, 2]
+// Dependencies: [32, 19, 17, 1854, 2]
 // Exports: default
 
-// Module 8075 (map)
+// Module 8099 (map)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
+import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 
-let closure_4;
-let closure_5;
+let c4;
+let c5;
 const require = arg1;
-({ Image: closure_4, PixelRatio: closure_5 } = get_ActivityIndicator);
+({ Image: c4, PixelRatio: c5 } = get_ActivityIndicator);
 const map = new Map();
 let result = require("get ActivityIndicator").fileFinishedImporting("modules/collectibles/profile_frames/native/useProfileFrameLayerAsset.tsx");
 
@@ -20,25 +20,27 @@ export default function useProfileFrameLayerAsset(width) {
   let layer;
   let skuId;
   width = width.width;
+  let collectiblesItemAssetUrl;
+  let dependencyMap;
   ({ skuId, layer } = width);
-  let obj = collectiblesItemAssetUrl(1830);
-  obj = { skuId, assetFormat: collectiblesItemAssetUrl(1830).CollectiblesItemAssetFormat.STATIC, assetId: layer.id };
+  let obj = collectiblesItemAssetUrl(1854);
+  obj = { skuId, assetFormat: collectiblesItemAssetUrl(1854).CollectiblesItemAssetFormat.STATIC, assetId: layer.id };
   collectiblesItemAssetUrl = obj.getCollectiblesItemAssetUrl(obj);
-  const dependencyMap = callback(React.useReducer((arg0) => arg0 + 1, 0), 2)[1];
+  dependencyMap = callback(React.useReducer((arg0) => arg0 + 1, 0), 2)[1];
   const items = [collectiblesItemAssetUrl];
   const effect = React.useEffect(() => {
     let hasItem = null == collectiblesItemAssetUrl;
     if (!hasItem) {
-      hasItem = "" === collectiblesItemAssetUrl;
+      hasItem = "" === tmp;
     }
     if (!hasItem) {
-      hasItem = outer1_6.has(collectiblesItemAssetUrl);
+      hasItem = outer1_6.has(tmp);
     }
     if (!hasItem) {
-      const size = outer1_4.getSize(collectiblesItemAssetUrl, (arg0, arg1) => {
+      const size = outer1_4.getSize(tmp, (arg0, arg1) => {
         if (arg0 > 0) {
-          const result = outer2_6.set(outer1_0, arg1 / arg0);
-          outer1_1();
+          const result = outer1_6.set(closure_0, arg1 / arg0);
+          callback();
         }
       }, () => {
 
@@ -49,21 +51,20 @@ export default function useProfileFrameLayerAsset(width) {
   if (null != collectiblesItemAssetUrl) {
     value = map.get(collectiblesItemAssetUrl);
   }
-  let num = 0;
+  let imageHeight = 0;
   if (null != value) {
-    num = value * width;
+    imageHeight = value * width;
   }
-  let combined = null;
+  let assetUrl = null;
   if (null != collectiblesItemAssetUrl) {
-    combined = null;
+    assetUrl = null;
     if (null != value) {
       const _Math = Math;
       const rounded = Math.round(width * closure_5.get());
       const _Math2 = Math;
       const _HermesInternal = HermesInternal;
-      combined = "" + collectiblesItemAssetUrl + "?width=" + rounded + "&height=" + Math.round(rounded * value);
+      assetUrl = "" + collectiblesItemAssetUrl + "?width=" + rounded + "&height=" + Math.round(rounded * value);
     }
   }
-  obj = { assetUrl: combined, imageHeight: num };
-  return obj;
+  return { assetUrl, imageHeight };
 };

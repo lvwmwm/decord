@@ -1,43 +1,42 @@
-// Module ID: 8042
-// Function ID: 63895
+// Module ID: 8066
+// Function ID: 8067
 // Name: useProfileEffect
-// Dependencies: [31, 5780, 5796, 5786, 566, 5779, 2]
+// Dependencies: [19, 5798, 5814, 5804, 589, 5797, 2]
 // Exports: default
 
-// Module 8042 (useProfileEffect)
-import result from "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_4 from "_isNativeReflectConstruct";
-import { isProfileEffectRecord } from "_isNativeReflectConstruct";
+// Module 8066 (useProfileEffect)
+import noop from "noop";
+import updateCategoriesAndProducts from "updateCategoriesAndProducts";
+import map from "map";
+import { isProfileEffectRecord } from "fromServer";
 
 const require = arg1;
-let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/collectibles/profile_effects/useProfileEffect.tsx");
+let result = require("map").fileFinishedImporting("modules/collectibles/profile_effects/useProfileEffect.tsx");
 
 export default function useProfileEffect(arg0) {
   const _require = arg0;
-  const items = [_isNativeReflectConstruct, closure_4];
-  const stateFromStores = _require(566).useStateFromStores(items, () => {
+  const items = [updateCategoriesAndProducts, map];
+  const stateFromStores = _require(589).useStateFromStores(items, () => {
     if (null != closure_0) {
-      const product = outer1_3.getProduct(closure_0);
+      const product = outer1_3.getProduct(tmp);
       let first;
-      if (null != product) {
+      if (product != null) {
         first = product.items[0];
       }
-      if (tmp4(first)) {
+      if (outer1_5(first)) {
         return product.items[0];
       } else {
-        const purchase = outer1_4.getPurchase(closure_0);
+        const purchase = outer1_4.getPurchase(tmp);
         let first1;
-        if (null != purchase) {
+        if (purchase != null) {
           first1 = purchase.items[0];
         }
         let first2;
-        if (outer1_5(first1)) {
+        if (tmp4(first1)) {
           first2 = purchase.items[0];
         }
         return first2;
       }
-      tmp4 = outer1_5;
     }
   });
   const dependencyMap = tmp2;

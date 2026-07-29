@@ -1,24 +1,24 @@
-// Module ID: 13625
-// Function ID: 104650
+// Module ID: 13646
+// Function ID: 13647
 // Name: DevToolsLoggingFlagsScreen
-// Dependencies: [27, 683, 33, 4165, 689, 566, 5536, 5537, 685, 2]
+// Dependencies: [17, 706, 21, 4189, 712, 589, 5554, 5555, 708, 2]
 // Exports: default
 
-// Module 13625 (DevToolsLoggingFlagsScreen)
+// Module 13646 (DevToolsLoggingFlagsScreen)
 import { ScrollView } from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import refreshSourceMapCookie from "refreshSourceMapCookie";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_4;
-let closure_5;
-({ jsx: closure_4, jsxs: closure_5 } = jsxProd);
-let obj = {};
-obj = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW };
-obj.container = obj;
-obj.content = { padding: require("_createForOfIteratorHelperLoose").space.PX_16 };
-let closure_6 = _createForOfIteratorHelperLoose.createStyles(obj);
-let obj1 = { padding: require("_createForOfIteratorHelperLoose").space.PX_16 };
+let c4;
+let c5;
+({ jsx: c4, jsxs: c5 } = jsxProd);
+let obj = { container: null, content: null };
+obj = { backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW };
+obj[0] = obj;
+obj[1] = { padding: require("Themes").space.PX_16 };
+let closure_6 = createCacheKey.createStyles(obj);
+const obj1 = { padding: require("Themes").space.PX_16 };
 const result = require("jsxProd").fileFinishedImporting("modules/devtools/native/components/screens/DevToolsLoggingFlagsScreen.tsx");
 
 export default function DevToolsLoggingFlagsScreen() {
@@ -26,46 +26,45 @@ export default function DevToolsLoggingFlagsScreen() {
   let isLoggingGatewayEvents;
   let isTracingRequests;
   const tmp = callback3();
-  let obj = require(566) /* initialize */;
-  const items = [_isNativeReflectConstruct];
-  const stateFromStoresObject = obj.useStateFromStoresObject(items, () => ({ isLoggingGatewayEvents: outer1_3.isLoggingGatewayEvents, isLoggingAnalyticsEvents: outer1_3.isLoggingAnalyticsEvents, isTracingRequests: outer1_3.isTracingRequests }));
-  obj = { style: tmp.container, contentContainerStyle: tmp.content };
+  let obj = require(589) /* initialize */;
+  const items = [refreshSourceMapCookie];
+  const stateFromStoresObject = obj.useStateFromStoresObject(items, () => ({ isLoggingGatewayEvents: refreshSourceMapCookie.isLoggingGatewayEvents, isLoggingAnalyticsEvents: refreshSourceMapCookie.isLoggingAnalyticsEvents, isTracingRequests: refreshSourceMapCookie.isTracingRequests }));
+  obj = { style: tmp.container, contentContainerStyle: tmp.content, children: null };
   ({ isLoggingGatewayEvents, isLoggingAnalyticsEvents, isTracingRequests } = stateFromStoresObject);
-  obj = { title: "Logging", hasIcons: false };
-  const obj1 = {
-    label: "Gateway Events",
-    subLabel: "Logs all gateway events to console, including content. Enable verbose logs to see them.",
-    value: isLoggingGatewayEvents,
-    onValueChange(logGatewayEvents) {
-      let obj = outer1_0(outer1_1[8]);
-      obj = { logGatewayEvents };
-      return obj.setDeveloperOptionSettings(obj);
-    }
-  };
-  const items1 = [callback(require(5537) /* TableSwitchRow */.TableSwitchRow, obj1), , ];
-  const obj2 = {
-    label: "Analytics Events",
-    subLabel: "Logs all analytics events to the developer console.",
-    value: isLoggingAnalyticsEvents,
-    onValueChange(logAnalyticsEvents) {
-      let obj = outer1_0(outer1_1[8]);
-      obj = { logAnalyticsEvents };
-      return obj.setDeveloperOptionSettings(obj);
-    }
-  };
-  items1[1] = callback(require(5537) /* TableSwitchRow */.TableSwitchRow, obj2);
-  const obj3 = {
-    label: "Tracing Requests",
-    subLabel: "Force trace all client requests with APM.",
-    value: isTracingRequests,
-    onValueChange(trace) {
-      let obj = outer1_0(outer1_1[8]);
-      obj = { trace };
-      return obj.setDeveloperOptionSettings(obj);
-    }
-  };
-  items1[2] = callback(require(5537) /* TableSwitchRow */.TableSwitchRow, obj3);
-  obj.children = items1;
-  obj.children = callback2(require(5536) /* TableRowGroupTitle */.TableRowGroup, obj);
+  obj = { title: "Logging", hasIcons: false, children: null };
+  const items1 = [
+    callback(require(5555) /* TableSwitchRow */.TableSwitchRow, {
+      label: "Gateway Events",
+      subLabel: "Logs all gateway events to console, including content. Enable verbose logs to see them.",
+      value: isLoggingGatewayEvents,
+      onValueChange(logGatewayEvents) {
+        let obj = callback(708);
+        obj = { logGatewayEvents };
+        return obj.setDeveloperOptionSettings(obj);
+      }
+    }),
+    callback(require(5555) /* TableSwitchRow */.TableSwitchRow, {
+      label: "Analytics Events",
+      subLabel: "Logs all analytics events to the developer console.",
+      value: isLoggingAnalyticsEvents,
+      onValueChange(logAnalyticsEvents) {
+        let obj = callback(708);
+        obj = { logAnalyticsEvents };
+        return obj.setDeveloperOptionSettings(obj);
+      }
+    }),
+    callback(require(5555) /* TableSwitchRow */.TableSwitchRow, {
+      label: "Tracing Requests",
+      subLabel: "Force trace all client requests with APM.",
+      value: isTracingRequests,
+      onValueChange(trace) {
+        let obj = callback(708);
+        obj = { trace };
+        return obj.setDeveloperOptionSettings(obj);
+      }
+    })
+  ];
+  obj[2] = items1;
+  obj[2] = callback2(require(5554) /* TableRowGroupTitle */.TableRowGroup, obj);
   return callback(ScrollView, obj);
 };

@@ -1,49 +1,56 @@
-// Module ID: 13694
-// Function ID: 105054
+// Module ID: 13715
+// Function ID: 13716
 // Name: DisplayNameStylesColorSwatch
-// Dependencies: [27, 33, 4165, 689, 1863, 13695, 4589, 665, 2]
+// Dependencies: [17, 21, 4189, 712, 1887, 13716, 4611, 688, 2]
 // Exports: default
 
-// Module 13694 (DisplayNameStylesColorSwatch)
+// Module 13715 (DisplayNameStylesColorSwatch)
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let obj = {};
-obj = { width: 24, height: 24, borderRadius: require("_createForOfIteratorHelperLoose").radii.xs };
-obj.colorSwatch = obj;
-obj.gummySwatch = { flexDirection: "row", overflow: "hidden" };
-let closure_5 = _createForOfIteratorHelperLoose.createStyles(obj);
-const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/display_name_styles/native/DisplayNameStylesColorSwatch.tsx");
+let obj = { colorSwatch: null, gummySwatch: null };
+obj = { width: 24, height: 24, borderRadius: require("Themes").radii.xs };
+obj[0] = obj;
+obj[1] = { flexDirection: "row", overflow: "hidden" };
+let closure_5 = createCacheKey.createStyles(obj);
+const result = require("createCacheKey").fileFinishedImporting("modules/display_name_styles/native/DisplayNameStylesColorSwatch.tsx");
 
 export default function DisplayNameStylesColorSwatch(colors) {
   colors = colors.colors;
   const tmp = callback();
-  if (colors.effectId === require(1863) /* DisplayNameEffect */.DisplayNameEffect.GUMMY) {
+  if (colors.effectId === require(1887) /* DisplayNameEffect */.DisplayNameEffect.GUMMY) {
     if (colors.length > 0) {
-      let obj = {};
+      let obj = { style: null, children: null };
       const items = [, ];
       ({ colorSwatch: arr3[0], gummySwatch: arr3[1] } = tmp);
-      obj.style = items;
-      obj = { colors };
-      obj.children = jsx(importDefault(13695), { colors });
-      return <View colors={colors} />;
+      obj[0] = items;
+      obj = { colors: null };
+      obj[0] = colors;
+      obj[1] = jsx(importDefault(13716), { colors: null });
+      return <View colors={null} />;
     }
   }
   if (colors.length >= 2) {
-    const obj1 = { colors: colors.map((color) => outer1_0(outer1_2[7]).int2hex(color)), start: { x: 0, y: 0 }, end: { x: 1, y: 0 }, style: tmp.colorSwatch };
-    return jsx(importDefault(4589), { colors: colors.map((color) => outer1_0(outer1_2[7]).int2hex(color)), start: { x: 0, y: 0 }, end: { x: 1, y: 0 }, style: tmp.colorSwatch });
+    const obj1 = { colors: null, start: null, end: null, style: null };
+    obj1[0] = colors.map((color) => callback(table[7]).int2hex(color));
+    obj1[1] = { x: 0, y: 0 };
+    obj1[2] = { x: 1, y: 0 };
+    obj1[3] = tmp.colorSwatch;
+    return jsx(importDefault(4611), { colors: null, start: null, end: null, style: null });
   } else {
     let str = "#000000";
     if (colors.length > 0) {
-      obj = require(665) /* pad2 */;
-      str = obj.int2hex(colors[0]);
+      str = tmp2(688).int2hex(colors[0]);
+      const tmp2Result = tmp2(688);
     }
-    const obj2 = {};
+    const obj2 = { style: null };
     const items1 = [tmp.colorSwatch, ];
-    const obj3 = { backgroundColor: str };
+    const obj3 = { backgroundColor: null };
+    obj3[0] = str;
     items1[1] = obj3;
-    obj2.style = items1;
-    return <View />;
+    obj2[0] = items1;
+    return <View style={null} />;
   }
+  tmp2 = require;
 };

@@ -1,58 +1,56 @@
-// Module ID: 5195
-// Function ID: 45082
-// Name: DeprecatedLayoutAnimation
-// Dependencies: [27, 4157, 477, 2]
-// Exports: DeprecatedLayoutAnimationKeyboard
+// Module ID: 5217
+// Function ID: 5218
+// Name: LayoutAnimation
+// Dependencies: [17, 4181, 500, 2]
+// Exports: DeprecatedLayoutAnimation, DeprecatedLayoutAnimationKeyboard
 
-// Module 5195 (DeprecatedLayoutAnimation)
+// Module 5217 (LayoutAnimation)
 import get_ActivityIndicator from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
 import obj from "module_150";
 import obj from "module_150";
 
 let LayoutAnimation;
-let closure_2;
-class DeprecatedLayoutAnimation {
-  constructor(arg0) {
-    useReducedMotion = _isNativeReflectConstruct.useReducedMotion;
-    if (!useReducedMotion) {
-      tmp = closure_0;
-      tmp2 = closure_1;
-      num = 2;
-      obj = require("set");
-      useReducedMotion = obj.isAndroid();
-    }
-    if (!useReducedMotion) {
-      tmp3 = null;
-      if (null != global) {
-        tmp6 = LayoutAnimation;
-        configureNextResult = LayoutAnimation.configureNext(global);
-      } else {
-        tmp4 = LayoutAnimation;
-        easeInEaseOutResult = LayoutAnimation.easeInEaseOut();
-      }
-    }
-    return;
-  }
-}
-({ Keyboard: closure_2, LayoutAnimation } = get_ActivityIndicator);
+let obj1;
+({ Keyboard: obj1, LayoutAnimation } = get_ActivityIndicator);
 const result = require("set").fileFinishedImporting("modules/animations/native/DeprecatedLayoutAnimation.tsx");
 
 export const CONFIG_GUILD_FOLDER_OPACITY = obj;
 export const CONFIG_GUILD_FOLDER_SCALEXY = obj;
-export { DeprecatedLayoutAnimation };
+export const DeprecatedLayoutAnimation = function DeprecatedLayoutAnimation(duration) {
+  let useReducedMotion = maybeApplyNoTextColorForLightCustomTheme.useReducedMotion;
+  if (!useReducedMotion) {
+    useReducedMotion = require(500) /* set */.isAndroid();
+    const obj = require(500) /* set */;
+  }
+  if (!useReducedMotion) {
+    if (null != duration) {
+      LayoutAnimation.configureNext(duration);
+    } else {
+      LayoutAnimation.easeInEaseOut();
+    }
+  }
+};
 export const DeprecatedLayoutAnimationKeyboard = function DeprecatedLayoutAnimationKeyboard(keyboardDuration) {
   let flag = arg1;
   if (arg1 === undefined) {
     flag = false;
   }
   if (flag) {
-    let obj = require(477) /* set */;
+    let obj = require(500) /* set */;
     if (!obj.isAndroid()) {
-      obj = { duration: keyboardDuration };
+      obj = { duration: null };
+      obj[0] = keyboardDuration;
       return closure_2.scheduleLayoutAnimation(obj);
     }
   }
   obj = { duration: keyboardDuration, update: obj1 };
-  DeprecatedLayoutAnimation(obj);
+  let useReducedMotion = maybeApplyNoTextColorForLightCustomTheme.useReducedMotion;
+  if (!useReducedMotion) {
+    useReducedMotion = require(500) /* set */.isAndroid();
+    const obj6 = require(500) /* set */;
+  }
+  if (!useReducedMotion) {
+    LayoutAnimation.configureNext(obj);
+  }
 };

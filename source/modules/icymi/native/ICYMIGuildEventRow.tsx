@@ -1,229 +1,232 @@
-// Module ID: 15353
-// Function ID: 116968
+// Module ID: 15386
+// Function ID: 15387
 // Name: ICYMIGuildEventRow
-// Dependencies: [31, 27, 5761, 1348, 1838, 33, 15289, 689, 8192, 1212, 8186, 4355, 8189, 8291, 8161, 8193, 6669, 8196, 15330, 21, 4161, 8293, 4681, 1273, 566, 2]
+// Dependencies: [19, 17, 5779, 1372, 1862, 21, 15322, 712, 8216, 1236, 8210, 4380, 8213, 8315, 8185, 8217, 6690, 8220, 15363, 11, 4185, 8317, 4703, 1297, 589, 2]
 // Exports: default
 
-// Module 15353 (ICYMIGuildEventRow)
-import result from "result";
-import get_ActivityIndicator from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_8 from "_isNativeReflectConstruct";
-import closure_9 from "_isNativeReflectConstruct";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import jsxProd from "jsxProd";
+// Module 15386 (ICYMIGuildEventRow)
+import DISCORD_EPOCH from "DISCORD_EPOCH";
+import get_ActivityIndicator from "useGuildScheduledEventUserCount";
+import scheduledEventSort from "scheduledEventSort";
+import closure_8 from "scheduledEventSort";
+import ensureGuildLoaded from "ensureGuildLoaded";
+import createGuildRecordFromRust from "createGuildRecordFromRust";
+import jsxProd from "guildEventDetailsParser";
 import createICYMIStyles from "createICYMIStyles";
 
-let closure_11;
+let c4;
+let c5;
 let closure_12;
-let closure_4;
-let closure_5;
 let closure_6;
-let closure_7;
+let error;
+let unpackModuleId;
 const require = arg1;
 function ICYMIGuildEventRow(event) {
   let channel;
   let guild;
   event = event.event;
   ({ channel, guild } = event);
+  let dependencyMap;
   let React;
-  const tmp = callback5();
-  const tmp2 = guild(8192)(event, null);
-  const tmp3 = callback2(event);
-  const dependencyMap = tmp3;
+  const tmp = callback4();
+  const tmp4 = guild(8216)(event, null);
+  const tmp5 = callback2(event);
+  dependencyMap = tmp5;
   let toISOStringResult;
-  if (null != tmp2) {
-    const startTime = tmp2.startTime;
+  if (tmp4 != null) {
+    const startTime = tmp4.startTime;
     toISOStringResult = startTime.toISOString();
   }
   React = toISOStringResult;
-  const items = [toISOStringResult, tmp3];
-  const tmp5 = guild(4355)(channel);
-  let obj = event(8189);
-  let locationFromEvent = obj.getLocationFromEvent(event);
-  if (null != tmp5) {
-    locationFromEvent = tmp5;
+  let obj = React;
+  const items = [toISOStringResult, tmp5];
+  let locationFromEvent = tmp2(4380)(channel);
+  let obj1 = event(8213);
+  if (locationFromEvent == null) {
+    locationFromEvent = obj1.getLocationFromEvent(event);
   }
-  let obj1 = event(8291);
-  const eventLocationIconSource = obj1.getEventLocationIconSource(event, channel, true);
-  let obj2 = event(8291);
-  const eventLocationIconComponent = obj2.getEventLocationIconComponent(event, channel, true);
-  let obj3 = event(8186);
+  let tmp8Result = tmp8(8315);
+  const eventLocationIconSource = tmp8Result.getEventLocationIconSource(event, channel, true);
+  tmp8Result = tmp8(8315);
+  const eventLocationIconComponent = tmp8Result.getEventLocationIconComponent(event, channel, true);
   const items1 = [event];
-  const nextRecurrenceIdInEvent = obj3.getNextRecurrenceIdInEvent(event);
+  const nextRecurrenceIdInEvent = event(8210).getNextRecurrenceIdInEvent(event);
   const items2 = [guild.id, event.id];
-  const callback = React.useCallback(() => {
-    let obj = guild(tmp3[14]);
+  const callback = obj.useCallback(() => {
+    let obj = guild(_undefined[14]);
     obj.itemInteracted(event.id, "guild_event", "press_event");
     obj = { itemId: event.id, itemType: "guild_event", actionParameters: { actionGestureType: "press", actionTargetElement: "item_body", actionIntentType: "navigate", actionDestinationType: "event" } };
-    guild(tmp3[14]).feedItemActioned(obj);
-    const obj2 = guild(tmp3[14]);
+    guild(_undefined[14]).feedItemActioned(obj);
+    const obj2 = guild(_undefined[14]);
     obj = { eventId: event.id, event };
-    const result = event(tmp3[15]).openGuildEventDetails(obj);
+    const result = event(_undefined[15]).openGuildEventDetails(obj);
   }, items1);
-  const callback1 = React.useCallback(() => {
-    let obj = guild(tmp3[14]);
+  const callback1 = obj.useCallback(() => {
+    let obj = guild(_undefined[14]);
     obj.itemInteracted(event.id, "guild_event", "press_event");
     obj = { itemId: event.id, itemType: "guild_event", actionParameters: { actionGestureType: "press", actionTargetElement: "item_header", actionIntentType: "navigate", actionDestinationType: "guild" } };
-    guild(tmp3[14]).feedItemActioned(obj);
-    const obj2 = guild(tmp3[14]);
-    event(tmp3[16]).transitionToGuild(guild.id);
+    guild(_undefined[14]).feedItemActioned(obj);
+    const obj2 = guild(_undefined[14]);
+    event(_undefined[16]).transitionToGuild(guild.id);
   }, items2);
   let title = null != event.description;
   if (title) {
     title = event.description.length > 0;
   }
   let guild_id;
-  if (null != event) {
+  let tmp2Result = tmp2(8220);
+  if (event != null) {
     guild_id = event.guild_id;
   }
   let id;
-  if (null != event) {
+  if (event != null) {
     id = event.id;
   }
-  const tmp12 = guild(8196);
-  obj = {};
-  const tmp12Result = guild(8196)(guild_id, id, nextRecurrenceIdInEvent);
-  const tmp16 = callback3;
-  let intl = event(1212).intl;
-  obj.actionLabel = intl.string(event(1212).t["6pFsLQ"]);
-  obj.id = event.id;
-  obj.interactionType = "guild_event";
+  const tmp8Result1 = event(8210);
+  obj = { actionLabel: null, id: null, interactionType: "guild_event", channelId: null, guildId: null, timestamp: null, onHeaderPress: null, onHeaderLongPress: null, children: null };
+  tmp2Result = tmp2(15363);
+  let intl = tmp8(1236).intl;
+  obj[0] = intl.string(event(1236).t["6pFsLQ"]);
+  obj[1] = event.id;
   let id1;
-  if (null != channel) {
+  if (channel != null) {
     id1 = channel.id;
   }
-  obj.channelId = id1;
-  obj.guildId = guild.id;
-  let obj5 = guild(21);
-  obj.timestamp = obj5.extractTimestamp(event.id);
-  obj.onHeaderPress = callback1;
-  obj.onHeaderLongPress = callback1;
-  obj = { onPress: callback, style: tmp.container };
-  obj1 = { style: tmp.timeAndUserPillContainer };
-  obj2 = { variant: "text-sm/semibold" };
+  obj[3] = id1;
+  obj[4] = guild.id;
+  const tmp2ResultResult = tmp2Result(guild_id, id, nextRecurrenceIdInEvent);
+  obj[5] = guild(11).extractTimestamp(event.id);
+  obj[6] = callback1;
+  obj[7] = callback1;
+  obj = { onPress: callback, style: tmp.container, children: null };
+  obj1 = { style: tmp.timeAndUserPillContainer, children: null };
   let str = "text-brand";
-  if (tmp3) {
+  if (tmp5) {
     str = "status-positive";
   }
-  obj2.color = str;
-  obj2.children = React.useMemo(() => {
-    if (closure_2) {
-      const obj = {};
-      const intl = tmp(tmp2[9]).intl;
-      obj.startDateTimeString = intl.string(tmp(tmp2[9]).t.TxqPQR);
-      let eventTimeData = obj;
-    } else {
-      eventTimeData = tmp(tmp2[10]).getEventTimeData(c3);
-      const tmpResult = tmp(tmp2[10]);
-    }
-    return eventTimeData;
-  }, items).startDateTimeString;
-  obj1.children = callback3(event(4161).Text, obj2);
-  const items3 = [callback3(closure_5, obj1), , , , ];
-  obj3 = {};
+  obj1[1] = closure_11(event(4185).Text, {
+    variant: "text-sm/semibold",
+    color: str,
+    children: React.useMemo(() => {
+      if (_undefined) {
+        const obj = { startDateTimeString: null };
+        const intl = tmp(tmp2[9]).intl;
+        obj[0] = intl.string(event(_undefined[9]).t.TxqPQR);
+        let eventTimeData = obj;
+      } else {
+        eventTimeData = tmp(tmp2[10]).getEventTimeData(c3);
+        const tmpResult = tmp(tmp2[10]);
+      }
+      return eventTimeData;
+    }, items).startDateTimeString
+  });
+  const items3 = [closure_11(closure_5, obj1), , , , ];
   if (title) {
     title = tmp.title;
   }
-  obj3.style = title;
-  obj3.variant = "text-lg/semibold";
-  obj3.children = event.name;
-  items3[1] = callback3(event(4161).Text, obj3);
-  let tmp25 = null != event.description;
-  if (tmp25) {
-    tmp25 = event.description.length > 0;
+  items3[1] = closure_11(event(4185).Text, { style: title, variant: "text-lg/semibold", children: event.name });
+  let tmp18Result = null != event.description;
+  if (tmp18Result) {
+    tmp18Result = event.description.length > 0;
   }
-  if (tmp25) {
-    const obj4 = { variant: "text-md/normal", color: "text-subtle", lineClamp: 5 };
-    let obj11 = event(8293);
-    obj5 = { guildId: guild.id };
-    obj4.children = obj11.guildEventDetailsParser(event.description, true, obj5);
-    tmp25 = callback3(event(4161).Text, obj4);
+  if (tmp18Result) {
+    const obj3 = { variant: "text-md/normal", color: "text-subtle", lineClamp: 5, children: null };
+    const obj4 = { guildId: null };
+    obj4[0] = guild.id;
+    obj3[3] = tmp8(8317).guildEventDetailsParser(event.description, true, obj4);
+    tmp18Result = tmp18(tmp8(4185).Text, obj3);
+    const tmp8Result2 = tmp8(8317);
   }
-  items3[2] = tmp25;
-  items3[3] = callback3(closure_5, { style: tmp.separator });
-  const obj7 = { style: tmp.infoContainer };
-  const obj8 = { style: tmp.locationContainer };
-  const items4 = [callback3(event(4681).GroupIcon, { size: "xs", style: tmp.eventsChannelIcon }), ];
-  const obj10 = { lineClamp: 1, variant: "text-xs/normal", color: "text-muted" };
-  const intl2 = event(1212).intl;
-  obj10.children = intl2.format(event(1212).t["+DLsD8"], { count: tmp12Result });
-  items4[1] = callback3(event(4161).Text, obj10);
-  obj8.children = items4;
-  const items5 = [callback4(closure_5, obj8), ];
-  obj11 = { style: tmp.locationContainer };
+  items3[2] = tmp18Result;
+  items3[3] = closure_11(closure_5, { style: tmp.separator });
+  const obj6 = { style: tmp.infoContainer, children: null };
+  const obj7 = { style: tmp.locationContainer, children: null };
+  const items4 = [closure_11(event(4703).GroupIcon, { size: "xs", style: tmp.eventsChannelIcon }), ];
+  const obj9 = { lineClamp: 1, variant: "text-xs/normal", color: "text-muted", children: null };
+  const intl2 = tmp8(1236).intl;
+  obj9[3] = intl2.format(event(1236).t["+DLsD8"], { count: tmp2ResultResult });
+  items4[1] = closure_11(event(4185).Text, obj9);
+  obj7[1] = items4;
+  const items5 = [closure_12(closure_5, obj7), ];
+  const obj10 = { style: tmp.locationContainer, children: null };
   if (null != eventLocationIconComponent) {
-    const obj12 = { size: "xs", style: tmp.eventsChannelIcon };
-    let tmp33 = callback3(eventLocationIconComponent, obj12);
+    const obj11 = { size: "xs", style: null };
+    obj11[1] = tmp.eventsChannelIcon;
+    tmp18Result = tmp18(eventLocationIconComponent, obj11);
   } else {
-    tmp33 = null != eventLocationIconSource;
-    if (tmp33) {
-      const obj13 = { source: eventLocationIconSource, size: event(1273).Icon.Sizes.EXTRA_SMALL, style: tmp.eventsChannelIcon, disableColor: true };
-      tmp33 = callback3(event(1273).Icon, obj13);
+    tmp18Result = null != eventLocationIconSource;
+    if (tmp18Result) {
+      const obj12 = { source: null, size: null, style: null, disableColor: true };
+      obj12[0] = eventLocationIconSource;
+      obj12[1] = tmp8(1297).Icon.Sizes.EXTRA_SMALL;
+      obj12[2] = tmp.eventsChannelIcon;
+      tmp18Result = tmp18(tmp8(1297).Icon, obj12);
     }
   }
-  const items6 = [tmp33, ];
-  const obj14 = { lineClamp: 2, variant: "text-xs/normal", color: "text-muted" };
+  const items6 = [tmp18Result, ];
   let result = null;
   if (null != locationFromEvent) {
-    result = event(8293).guildEventDetailsParser(locationFromEvent, true);
-    const obj23 = event(8293);
+    result = tmp8(8317).guildEventDetailsParser(locationFromEvent, true);
+    const tmp8Result3 = tmp8(8317);
   }
-  obj14.children = result;
-  items6[1] = callback3(event(4161).Text, obj14);
-  obj11.children = items6;
-  items5[1] = callback4(closure_5, obj11);
-  obj7.children = items5;
-  items3[4] = callback4(closure_5, obj7);
-  obj.children = items3;
-  obj.children = callback4(closure_4, obj);
-  return tmp16(guild(15330), obj);
+  items6[1] = closure_11(event(4185).Text, { lineClamp: 2, variant: "text-xs/normal", color: "text-muted", children: result });
+  obj10[1] = items6;
+  items5[1] = closure_12(closure_5, obj10);
+  obj6[1] = items5;
+  items3[4] = closure_12(closure_5, obj6);
+  obj[2] = items3;
+  obj[8] = closure_12(closure_4, obj);
+  return closure_11(tmp2Result, obj);
 }
-({ Pressable: closure_4, View: closure_5 } = get_ActivityIndicator);
-({ isGuildEventEnded: closure_6, isGuildScheduledEventActive: closure_7 } = _isNativeReflectConstruct);
-({ jsx: closure_11, jsxs: closure_12 } = jsxProd);
+({ Pressable: c4, View: c5 } = get_ActivityIndicator);
+({ isGuildEventEnded: closure_6, isGuildScheduledEventActive: error } = scheduledEventSort);
+({ jsx: unpackModuleId, jsxs: closure_12 } = jsxProd);
 let closure_13 = createICYMIStyles.createICYMIStyles((margin) => {
-  obj = { container: obj };
+  obj = { container: obj, card: null, title: null, timeAndUserPillContainer: null, separator: null, eventsChannelIcon: null, infoContainer: null, locationContainer: null };
   obj = { marginHorizontal: margin.margin, marginBottom: margin.margin, marginLeft: margin.margin + margin.inset };
-  obj = { marginTop: importDefault(689).space.PX_12 };
-  obj.card = obj;
-  obj.title = { marginBottom: importDefault(689).space.PX_4 };
-  const obj2 = { flexDirection: "row", alignItems: "center", marginBottom: importDefault(689).space.PX_8, justifyContent: "space-between" };
-  obj.timeAndUserPillContainer = obj2;
-  const obj3 = { height: 1, width: "100%", backgroundColor: importDefault(689).colors.BORDER_SUBTLE, marginVertical: importDefault(689).space.PX_12 };
-  obj.separator = obj3;
-  const obj1 = { marginBottom: importDefault(689).space.PX_4 };
-  obj.eventsChannelIcon = { tintColor: importDefault(689).colors.INTERACTIVE_TEXT_DEFAULT };
-  const obj4 = { tintColor: importDefault(689).colors.INTERACTIVE_TEXT_DEFAULT };
-  obj.infoContainer = { gap: importDefault(689).space.PX_4 };
-  const obj6 = { alignItems: "center", flexDirection: "row", gap: importDefault(689).space.PX_8 };
-  obj.locationContainer = obj6;
+  obj = { marginTop: importDefault(712).space.PX_12 };
+  obj[1] = obj;
+  obj[2] = { marginBottom: importDefault(712).space.PX_4 };
+  const obj1 = { marginBottom: importDefault(712).space.PX_4 };
+  obj[3] = { flexDirection: "row", alignItems: "center", marginBottom: importDefault(712).space.PX_8, justifyContent: "space-between" };
+  const obj2 = { flexDirection: "row", alignItems: "center", marginBottom: importDefault(712).space.PX_8, justifyContent: "space-between" };
+  obj[4] = { height: 1, width: "100%", backgroundColor: importDefault(712).colors.BORDER_SUBTLE, marginVertical: importDefault(712).space.PX_12 };
+  const obj3 = { height: 1, width: "100%", backgroundColor: importDefault(712).colors.BORDER_SUBTLE, marginVertical: importDefault(712).space.PX_12 };
+  obj[5] = { tintColor: importDefault(712).colors.INTERACTIVE_TEXT_DEFAULT };
+  const obj4 = { tintColor: importDefault(712).colors.INTERACTIVE_TEXT_DEFAULT };
+  obj[6] = { gap: importDefault(712).space.PX_4 };
+  const obj5 = { gap: importDefault(712).space.PX_4 };
+  obj[7] = { alignItems: "center", flexDirection: "row", gap: importDefault(712).space.PX_8 };
   return obj;
 });
-let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/icymi/native/ICYMIGuildEventRow.tsx");
+let result = require("scheduledEventSort").fileFinishedImporting("modules/icymi/native/ICYMIGuildEventRow.tsx");
 
 export default function ICYMIGuildEventRowWrapper(eventId) {
   eventId = eventId.eventId;
-  let obj = eventId(566);
+  let stateFromStores;
+  let obj = eventId(589);
   const items = [closure_8];
-  const stateFromStores = obj.useStateFromStores(items, () => outer1_8.getGuildScheduledEvent(eventId));
-  const items1 = [_createForOfIteratorHelperLoose];
-  const stateFromStores1 = eventId(566).useStateFromStores(items1, () => {
+  stateFromStores = obj.useStateFromStores(items, () => outer1_8.getGuildScheduledEvent(eventId));
+  const items1 = [createGuildRecordFromRust];
+  const stateFromStores1 = eventId(589).useStateFromStores(items1, () => {
     let guild_id;
-    if (null != stateFromStores) {
+    if (stateFromStores != null) {
       guild_id = stateFromStores.guild_id;
     }
     return outer1_10.getGuild(guild_id);
   });
-  eventId(566);
-  [][0] = closure_9;
+  eventId(589);
+  [][0] = ensureGuildLoaded;
   let tmp5 = null;
   if (null != stateFromStores) {
     tmp5 = null;
     if (null != stateFromStores1) {
       tmp5 = null;
       if (!callback(stateFromStores)) {
-        obj = { event: stateFromStores, channel: tmp4, guild: stateFromStores1 };
+        obj = { event: null, channel: null, guild: null };
+        obj[0] = stateFromStores;
+        obj[1] = tmp4;
+        obj[2] = stateFromStores1;
         tmp5 = callback3(ICYMIGuildEventRow, obj);
       }
     }

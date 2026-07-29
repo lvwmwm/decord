@@ -1,10 +1,10 @@
-// Module ID: 12469
-// Function ID: 96592
+// Module ID: 12491
+// Function ID: 12492
 // Name: roundFPCountdownUnits
-// Dependencies: [1212, 6214, 3835, 1184, 2]
+// Dependencies: [1236, 6234, 3859, 1208, 2]
 // Exports: default
 
-// Module 12469 (roundFPCountdownUnits)
+// Module 12491 (roundFPCountdownUnits)
 function roundFPCountdownUnits(arg0) {
   let obj = {};
   const merged = Object.assign(arg0);
@@ -21,13 +21,13 @@ function roundFPCountdownUnits(arg0) {
     obj.hours = 0;
   }
   if (obj.days > 0) {
-    obj = { days: null, hours: 0, minutes: 0, seconds: 0 };
     if (obj.hours > 0) {
       let days = obj.days + 1;
     } else {
       days = obj.days;
     }
-    obj.days = days;
+    obj = { days: null, hours: 0, minutes: 0, seconds: 0 };
+    obj[0] = days;
     return obj;
   } else if (obj.hours > 0) {
     if (obj.minutes > 45) {
@@ -38,7 +38,8 @@ function roundFPCountdownUnits(arg0) {
     if (hours > 11) {
       obj = { days: 1, hours: 0, minutes: 0, seconds: 0 };
     } else {
-      obj = { days: 0, hours, minutes: 0, seconds: 0 };
+      obj = { days: 0, hours: null, minutes: 0, seconds: 0 };
+      obj[1] = hours;
     }
     return obj;
   } else if (obj.minutes > 0) {
@@ -46,13 +47,13 @@ function roundFPCountdownUnits(arg0) {
     if (obj.minutes > 45) {
       num5 = 1;
     }
-    const obj1 = { days: 0, hours: num5 };
+    const obj1 = { days: 0, hours: null, minutes: null, seconds: 0 };
+    obj1[1] = num5;
     let num7 = 0;
     if (1 !== num5) {
       num7 = obj.minutes;
     }
-    obj1.minutes = num7;
-    obj1.seconds = 0;
+    obj1[2] = num7;
     return obj1;
   } else {
     let obj2 = obj;
@@ -67,29 +68,40 @@ const result = require("resetCache").fileFinishedImporting("modules/billing/hook
 
 export default function useFPDurationLeft(toDate) {
   if (obj.SHORT_TIME_LEFT === arg1) {
-    obj = { days: require(1212) /* getSystemLocale */.t["/wnvqA"], hours: require(1212) /* getSystemLocale */.t.Jsq0XN, minutes: require(1212) /* getSystemLocale */.t["SBd+Bs"] };
-    let tmp8 = obj;
-  } else if (obj.LONG_TIME_LEFT === arg1) {
-    obj = { days: require(1212) /* getSystemLocale */.t.UD5nn5, hours: require(1212) /* getSystemLocale */.t.Hg8Fee, minutes: require(1212) /* getSystemLocale */.t.XSbQZZ };
-    tmp8 = obj;
-  } else if (obj.ENDS_IN === arg1) {
-    const obj1 = { days: require(1212) /* getSystemLocale */.t.rLqNad, hours: require(1212) /* getSystemLocale */.t.d1LvCA, minutes: require(1212) /* getSystemLocale */.t.Z2LX7K };
-    tmp8 = obj1;
-  } else if (obj.CREDITS_ENDS_IN === arg1) {
-    const obj2 = { days: require(1212) /* getSystemLocale */.t.xQ3zuN, hours: require(1212) /* getSystemLocale */.t.SFU7QN, minutes: require(1212) /* getSystemLocale */.t.Y4FNdL };
-    tmp8 = obj2;
-  } else if (obj.SHORT_TIME === arg1) {
-    obj = { days: require(1212) /* getSystemLocale */.t.fYmirx, hours: require(1212) /* getSystemLocale */.t["C3RO+g"], minutes: require(1212) /* getSystemLocale */.t.r77oHc };
-    tmp8 = obj;
+    obj = { days: null, hours: null, minutes: null };
+    obj[0] = require(1236) /* getSystemLocale */.t["/wnvqA"];
+    obj[1] = require(1236) /* getSystemLocale */.t.Jsq0XN;
+    obj[2] = require(1236) /* getSystemLocale */.t["SBd+Bs"];
+  } else if (tmp.LONG_TIME_LEFT === arg1) {
+    obj = { days: null, hours: null, minutes: null };
+    obj[0] = require(1236) /* getSystemLocale */.t.UD5nn5;
+    obj[1] = require(1236) /* getSystemLocale */.t.Hg8Fee;
+    obj[2] = require(1236) /* getSystemLocale */.t.XSbQZZ;
   } else {
-    const _Error = Error;
-    const _HermesInternal = HermesInternal;
-    const error = new Error("Unknown messageType (" + arg1 + ") when rendering time left");
-    throw error;
+    if (tmp.ENDS_IN === arg1) {
+      const obj1 = { days: null, hours: null, minutes: null };
+      obj1[0] = require(1236) /* getSystemLocale */.t.rLqNad;
+      obj1[1] = require(1236) /* getSystemLocale */.t.d1LvCA;
+      obj1[2] = require(1236) /* getSystemLocale */.t.Z2LX7K;
+    } else if (tmp.CREDITS_ENDS_IN !== arg1) {
+      if (tmp.SHORT_TIME === arg1) {
+        obj = { days: null, hours: null, minutes: null };
+        obj[0] = require(1236) /* getSystemLocale */.t.fYmirx;
+        obj[1] = require(1236) /* getSystemLocale */.t["C3RO+g"];
+        obj[2] = require(1236) /* getSystemLocale */.t.r77oHc;
+      } else {
+        const _Error = Error;
+        const _HermesInternal = HermesInternal;
+        const error = new Error("Unknown messageType (" + arg1 + ") when rendering time left");
+        throw error;
+      }
+    }
+    const obj2 = { days: null, hours: null, minutes: null };
+    obj2[0] = require(1236) /* getSystemLocale */.t.xQ3zuN;
+    obj2[1] = require(1236) /* getSystemLocale */.t.SFU7QN;
+    obj2[2] = require(1236) /* getSystemLocale */.t.Y4FNdL;
   }
-  const tmp17 = importDefault(6214);
-  const tmp18 = roundFPCountdownUnits(importDefault(6214)(toDate.toDate(), 60000));
-  require(3835) /* resetCache */.unitsAsStrings(tmp18, tmp8);
+  roundFPCountdownUnits(importDefault(6234)(toDate.toDate(), 60000));
 };
 export const CountDownMessageTypes = obj;
 export { roundFPCountdownUnits };

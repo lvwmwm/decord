@@ -1,11 +1,11 @@
-// Module ID: 9373
-// Function ID: 73059
+// Module ID: 9397
+// Function ID: 9398
 // Name: noop
-// Dependencies: [31, 27, 33, 9374, 477, 2]
+// Dependencies: [19, 17, 21, 9398, 500, 2]
 // Exports: useModalDismissGuardRefreshControl
 
-// Module 9373 (noop)
-import result from "result";
+// Module 9397 (noop)
+import noop from "noop";
 import { RefreshControl } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
 
@@ -16,14 +16,15 @@ function noop() {
 const result = require("jsxProd").fileFinishedImporting("modules/keyboard/native/useModalDismissGuardRefreshControl.tsx");
 
 export const useModalDismissGuardRefreshControl = function useModalDismissGuardRefreshControl() {
-  isPortalKeyboardInModal = isPortalKeyboardInModal(9374).useIsPortalKeyboardInModal();
+  isPortalKeyboardInModal = isPortalKeyboardInModal(9398).useIsPortalKeyboardInModal();
   const items = [isPortalKeyboardInModal];
   return React.useMemo(() => {
     let tmp;
     if (isPortalKeyboardInModal) {
       let obj = isPortalKeyboardInModal(outer1_1[4]);
       if (obj.isIOS()) {
-        obj = { refreshing: false, onRefresh: outer1_5, tintColor: "transparent" };
+        obj = { refreshing: false, onRefresh: null, tintColor: "transparent" };
+        obj[1] = outer1_5;
         tmp = outer1_4(outer1_3, obj);
       }
     }

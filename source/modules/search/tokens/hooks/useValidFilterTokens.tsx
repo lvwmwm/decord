@@ -1,29 +1,29 @@
-// Module ID: 15439
-// Function ID: 117617
+// Module ID: 15472
+// Function ID: 15473
 // Name: useValidOrderedFilterTokens
-// Dependencies: [4005, 566, 10087, 1390, 2]
+// Dependencies: [4029, 589, 10108, 1414, 2]
 // Exports: useValidFilterTokens, useValidOrderedFilterTokens
 
-// Module 15439 (useValidOrderedFilterTokens)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 15472 (useValidOrderedFilterTokens)
+import initialize from "initialize";
 
 const require = arg1;
-const result = require("isFromUserFilterSupported").fileFinishedImporting("modules/search/tokens/hooks/useValidFilterTokens.tsx");
+const result = require("getValidOrderedFilterTokens").fileFinishedImporting("modules/search/tokens/hooks/useValidFilterTokens.tsx");
 
 export const useValidOrderedFilterTokens = function useValidOrderedFilterTokens(searchContext) {
   const _require = searchContext;
-  let items = [_isNativeReflectConstruct];
-  return _require(566).useStateFromStoresArray(items, () => {
+  let items = [initialize];
+  return _require(589).useStateFromStoresArray(items, () => {
     const items = [outer1_2];
     return searchContext(outer1_1[2]).getValidOrderedFilterTokens(searchContext, items);
   });
 };
 export const useValidFilterTokens = function useValidFilterTokens(searchContext) {
   const _require = searchContext;
-  let items = [_isNativeReflectConstruct];
+  let items = [initialize];
   const items1 = [searchContext];
-  return _require(566).useStateFromStores(items, () => {
+  return _require(589).useStateFromStores(items, () => {
     const items = [outer1_2];
     return searchContext(outer1_1[2]).getValidFilterTokens(searchContext, items);
-  }, items1, _require(1390).areSetsEqual);
+  }, items1, _require(1414).areSetsEqual);
 };

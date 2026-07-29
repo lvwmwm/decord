@@ -1,88 +1,86 @@
-// Module ID: 13919
-// Function ID: 106460
+// Module ID: 13940
+// Function ID: 13941
 // Name: getSpendingLimitDisplayState
-// Dependencies: [1316, 5775, 1852, 566, 13837, 5651, 5652, 1212, 2199, 2]
+// Dependencies: [1340, 5793, 1876, 589, 13858, 5669, 5670, 1236, 2223, 2]
 // Exports: useSpendingLimitDisplayState, useSpendingLimitFromUserSettings
 
-// Module 13919 (getSpendingLimitDisplayState)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_4 from "_isNativeReflectConstruct";
+// Module 13940 (getSpendingLimitDisplayState)
+import handleConnectionClosedOrResumed from "handleConnectionClosedOrResumed";
+import freshTeenActivityWithMap from "freshTeenActivityWithMap";
 import { SubscriptionIntervalTypes } from "GuildFeatures";
 
 const require = arg1;
 function getSpendingLimitDisplayState(amount) {
   if (null == amount) {
-    let obj = { kind: "off" };
-    return obj;
+    return { kind: "off" };
   } else if (0 === amount.amount) {
-    obj = { kind: "blocked" };
-    return obj;
+    return { kind: "blocked" };
   } else {
     const currency = amount.currency;
-    const obj8 = require(5651) /* formatSingleCurrencyPrice */;
-    const formatRateResult = obj8.formatRate(require(5651) /* formatSingleCurrencyPrice */.formatPrice(amount.amount, currency), SubscriptionIntervalTypes.MONTH, 1);
+    const obj6 = require(5669) /* formatSingleCurrencyPrice */;
+    const formatRateResult = obj6.formatRate(require(5669) /* formatSingleCurrencyPrice */.formatPrice(amount.amount, currency), SubscriptionIntervalTypes.MONTH, 1);
     if (arg1 >= amount.amount) {
-      const obj1 = { kind: "spent", monthlyText: formatRateResult };
-      return obj1;
+      let obj = { kind: "spent", monthlyText: null };
+      obj[1] = formatRateResult;
+      return obj;
     } else {
-      const tmp12 = require(5652) /* CurrencyCodes */.CurrencyExponents[amount.currency];
-      let num = 2;
-      if (null != tmp12) {
-        num = tmp12;
+      let num = tmp5(5670).CurrencyExponents[amount.currency];
+      if (num == null) {
+        num = 2;
       }
       const diff = amount.amount - arg1;
       if (diff <= 10 * 10 ** num) {
-        const obj2 = { kind: "close-to-limit", monthlyText: formatRateResult };
-        const intl = require(1212) /* getSystemLocale */.intl;
-        let obj3 = {};
-        obj3 = require(5651) /* formatSingleCurrencyPrice */;
-        obj3.amount = obj3.formatPrice(diff, currency);
-        obj2.remainingText = intl.formatToPlainString(importDefault(2199)["+Q+bU1"], obj3);
-        obj = obj2;
+        obj = { kind: "close-to-limit", monthlyText: null, remainingText: null };
+        obj[1] = formatRateResult;
+        const intl = tmp5(1236).intl;
+        const obj1 = { amount: null };
+        obj1[0] = tmp5(5669).formatPrice(diff, currency);
+        obj[2] = intl.formatToPlainString(importDefault(2223)["+Q+bU1"], obj1);
+        const tmp5Result = tmp5(5669);
       } else {
-        obj = { kind: "on", monthlyText: formatRateResult };
+        obj = { kind: "on", monthlyText: null };
+        obj[1] = formatRateResult;
       }
       return obj;
     }
-    const obj9 = require(5651) /* formatSingleCurrencyPrice */;
+    const obj7 = require(5669) /* formatSingleCurrencyPrice */;
   }
 }
 const result = require("GuildFeatures").fileFinishedImporting("modules/parent_tools/SpendingLimitDisplay.tsx");
 
 export const useSpendingLimitFromUserSettings = function useSpendingLimitFromUserSettings() {
-  const items = [_isNativeReflectConstruct];
-  return require(566) /* initialize */.useStateFromStores(items, () => {
-    const safetySettings = outer1_3.settings.safetySettings;
+  const items = [handleConnectionClosedOrResumed];
+  return require(589) /* initialize */.useStateFromStores(items, () => {
+    const safetySettings = settings.settings.safetySettings;
     let oneTimePurchaseLimit;
-    if (null != safetySettings) {
+    if (safetySettings != null) {
       const spendingLimitSettings = safetySettings.spendingLimitSettings;
-      if (null != spendingLimitSettings) {
+      if (spendingLimitSettings != null) {
         oneTimePurchaseLimit = spendingLimitSettings.oneTimePurchaseLimit;
       }
     }
     let tmp2 = null;
     if (null != oneTimePurchaseLimit) {
-      const obj = {};
+      const obj = { amount: null, currency: null };
       const _Number = Number;
-      obj.amount = Number(oneTimePurchaseLimit.amount);
-      obj.currency = oneTimePurchaseLimit.currency;
+      obj[0] = Number(oneTimePurchaseLimit.amount);
+      obj[1] = oneTimePurchaseLimit.currency;
       tmp2 = obj;
     }
     return tmp2;
-  }, undefined, require(13837) /* spendingLimitEqual */.spendingLimitEqual);
+  }, undefined, require(13858) /* spendingLimitEqual */.spendingLimitEqual);
 };
 export const CLOSE_TO_LIMIT_THRESHOLD_MAJOR_UNITS = 10;
 export { getSpendingLimitDisplayState };
 export const useSpendingLimitDisplayState = function useSpendingLimitDisplayState(cap) {
-  const items = [closure_4];
-  const stateFromStores = require(566) /* initialize */.useStateFromStores(items, () => outer1_4.getMonthlyPurchases());
-  let total_amount;
-  if (null != stateFromStores) {
-    total_amount = stateFromStores.total_amount;
+  const items = [freshTeenActivityWithMap];
+  const stateFromStores = require(589) /* initialize */.useStateFromStores(items, () => monthlyPurchases.getMonthlyPurchases());
+  let num;
+  if (stateFromStores != null) {
+    num = stateFromStores.total_amount;
   }
-  let num = 0;
-  if (null != total_amount) {
-    num = total_amount;
+  if (num == null) {
+    num = 0;
   }
   return getSpendingLimitDisplayState(cap, num);
 };

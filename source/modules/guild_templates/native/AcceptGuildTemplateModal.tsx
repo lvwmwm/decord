@@ -1,35 +1,41 @@
-// Module ID: 10962
-// Function ID: 85009
+// Module ID: 10986
+// Function ID: 10987
 // Name: ConnectedAcceptGuildTemplate
-// Dependencies: [5, 57, 31, 5697, 653, 33, 4165, 5118, 566, 5082, 10963, 5155, 10964, 4709, 10967, 10961, 5121, 5552, 2]
+// Dependencies: [5, 32, 19, 5715, 676, 21, 4189, 5140, 589, 5104, 10987, 5177, 10988, 4731, 10991, 10985, 5143, 5570, 2]
 // Exports: default
 
-// Module 10962 (ConnectedAcceptGuildTemplate)
+// Module 10986 (ConnectedAcceptGuildTemplate)
 import jsxProd from "jsxProd";
 import _slicedToArray from "_slicedToArray";
-import result from "result";
-import closure_7 from "_createForOfIteratorHelperLoose";
+import noop from "noop";
+import handleGuildTemplateResolveSuccess from "handleGuildTemplateResolveSuccess";
 import { UPLOAD_MEDIUM_SIZE } from "ME";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
 const require = arg1;
 function ConnectedAcceptGuildTemplate(code) {
   code = code.code;
-  let obj = code(566);
-  const items = [closure_7];
-  const stateFromStores = obj.useStateFromStores(items, () => outer1_7.getGuildTemplate(code));
-  const tmp2 = _createForOfIteratorHelperLoose();
-  const tmp4 = callback(React.useState(first(5082).getGuildNameSuggestion()), 2);
-  first = tmp4[0];
-  const dependencyMap = tmp4[1];
-  const tmp6 = callback(React.useState(null), 2);
-  const first1 = tmp6[0];
-  callback = tmp6[1];
-  const tmp8 = callback(React.useState(null), 2);
-  React = tmp8[1];
-  stateFromStores(10963)(stateFromStores);
-  obj = { top: true, style: tmp2.container };
+  let stateFromStores;
+  let first;
+  let dependencyMap;
+  let first1;
+  let callback;
+  let React;
+  let obj = code(589);
+  const items = [handleGuildTemplateResolveSuccess];
+  stateFromStores = obj.useStateFromStores(items, () => outer1_7.getGuildTemplate(code));
+  const tmp = createCacheKey();
+  const tmp3 = callback(React.useState(first(5104).getGuildNameSuggestion()), 2);
+  first = tmp3[0];
+  dependencyMap = tmp3[1];
+  const tmp5 = callback(React.useState(null), 2);
+  first1 = tmp5[0];
+  callback = tmp5[1];
+  const tmp7 = callback(React.useState(null), 2);
+  React = tmp7[1];
+  stateFromStores(10987)(stateFromStores);
+  obj = { top: true, style: tmp.container, children: null };
   obj = {
     code,
     guildTemplate: stateFromStores,
@@ -38,19 +44,80 @@ function ConnectedAcceptGuildTemplate(code) {
       return dependencyMap(arg0);
     },
     icon: first1,
-    errors: tmp8[0]
+    errors: tmp7[0],
+    chooseIcon: null,
+    createServer: null
   };
-  // CreateGeneratorClosureLongIndex (0x67)
-  const obj2 = first(5082);
-  obj.chooseIcon = first1(tmp);
-  obj.createServer = function createServer() {
+  let obj2 = first(5104);
+  obj[6] = first1(function*() {
+    if (table === 2) {
+      table = 3;
+      HermesBuiltin.throwTypeError();
+    } else if (tmp4 === 3) {
+      if (arg0 === 1) {
+        throw arg1;
+      } else if (arg0 === 2) {
+        let obj = { value: null, done: true };
+        obj[0] = arg1;
+        return obj;
+      } else {
+        return { value: "HermesInternal", done: null };
+      }
+    } else {
+      try {
+        table = 2;
+        if (0 === c2) {
+          if (arg0 === 1) {
+            table = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            table = 3;
+            obj = { value: null, done: true };
+            obj[0] = arg1;
+            return obj;
+          } else {
+            let closure_1 = tmp5;
+            let base64 = tmp2;
+            base64 = undefined;
+            let obj1 = outer1_1(table[13]);
+            obj1 = { size: null };
+            obj1[0] = outer1_8;
+            c2 = 1;
+            table = 1;
+            const obj2 = { value: null, done: false };
+            obj2[0] = obj1.openImagePicker(obj1);
+            return obj2;
+          }
+        } else if (arg0 === 1) {
+          table = 3;
+          throw arg1;
+        } else if (arg0 === 2) {
+          table = 3;
+          obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
+        } else {
+          base64 = arg1.base64;
+          if (null != base64) {
+            callback(base64);
+          }
+          table = 3;
+          return { value: "HermesInternal", done: null };
+        }
+      } catch (tmp17) {
+        table = tmp;
+        throw tmp17;
+      }
+    }
+  });
+  obj[7] = function createServer() {
     if (null != stateFromStores) {
-      const obj = stateFromStores(10967);
-      stateFromStores(10967).acceptGuildTemplate(stateFromStores.code, first, first1).then(() => stateFromStores(table[15]).hideModal(), (arg0) => outer1_6(arg0));
-      const acceptGuildTemplateResult = stateFromStores(10967).acceptGuildTemplate(stateFromStores.code, first, first1);
+      const obj = stateFromStores(10991);
+      stateFromStores(10991).acceptGuildTemplate(tmp.code, first, first1).then(() => callback(table[15]).hideModal(), (arg0) => callback2(arg0));
+      const acceptGuildTemplateResult = stateFromStores(10991).acceptGuildTemplate(tmp.code, first, first1);
     }
   };
-  obj.children = jsx(stateFromStores(10964), {
+  obj[2] = jsx(stateFromStores(10988), {
     code,
     guildTemplate: stateFromStores,
     name: first,
@@ -58,9 +125,11 @@ function ConnectedAcceptGuildTemplate(code) {
       return dependencyMap(arg0);
     },
     icon: first1,
-    errors: tmp8[0]
+    errors: tmp7[0],
+    chooseIcon: null,
+    createServer: null
   });
-  return jsx(code(5155).SafeAreaPaddingView, {
+  return jsx(code(5177).SafeAreaPaddingView, {
     code,
     guildTemplate: stateFromStores,
     name: first,
@@ -68,32 +137,33 @@ function ConnectedAcceptGuildTemplate(code) {
       return dependencyMap(arg0);
     },
     icon: first1,
-    errors: tmp8[0]
+    errors: tmp7[0],
+    chooseIcon: null,
+    createServer: null
   });
 }
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { marginTop: require("NAV_BAR_HEIGHT").NAV_BAR_HEIGHT };
-_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-const result = require("result").fileFinishedImporting("modules/guild_templates/native/AcceptGuildTemplateModal.tsx");
+createCacheKey = { container: null };
+createCacheKey = { marginTop: require("NAV_BAR_HEIGHT").NAV_BAR_HEIGHT };
+createCacheKey[0] = createCacheKey;
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+const ACCEPT_GUILD_TEMPLATE = "ACCEPT_GUILD_TEMPLATE";
+const result = require("noop").fileFinishedImporting("modules/guild_templates/native/AcceptGuildTemplateModal.tsx");
 
 export default function AcceptGuildTemplateModal(code) {
   code = code.code;
   const items = [code];
-  const screens = React.useMemo(() => (function getScreens(arg0) {
-    let closure_0 = arg0;
-    let obj = {};
-    obj = {
-      title: "",
-      fullscreen: true,
-      headerLeft: code(outer2_3[16]).getHeaderCloseButton(() => outer3_1(outer3_3[15]).hideModal()),
-      render() {
-        const merged = Object.assign(closure_0);
-        return outer3_9(outer3_11, {});
-      }
+  const memo = React.useMemo(() => {
+    obj = { code: obj };
+    obj = {};
+    obj = { title: "", fullscreen: true, headerLeft: null, render: null };
+    obj[2] = code(outer1_3[16]).getHeaderCloseButton(() => callback(table[15]).hideModal());
+    obj[3] = function render() {
+      const obj = {};
+      const merged = Object.assign(obj);
+      return outer1_9(outer1_11, obj);
     };
-    obj["ACCEPT_GUILD_TEMPLATE"] = obj;
+    obj[outer1_12] = obj;
     return obj;
-  })({ code }), items);
-  return jsx(code(5552).Navigator, { initialRouteName: "ACCEPT_GUILD_TEMPLATE", screens });
+  }, items);
+  return jsx(code(5570).Navigator, { initialRouteName: ACCEPT_GUILD_TEMPLATE, screens: memo });
 };

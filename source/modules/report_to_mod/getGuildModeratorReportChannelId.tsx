@@ -1,21 +1,20 @@
-// Module ID: 5772
-// Function ID: 50176
+// Module ID: 5790
+// Function ID: 5791
 // Name: getGuildModeratorReportChannelId
 // Dependencies: [2]
 // Exports: default
 
-// Module 5772 (getGuildModeratorReportChannelId)
+// Module 5790 (getGuildModeratorReportChannelId)
 const result = require("set").fileFinishedImporting("modules/report_to_mod/getGuildModeratorReportChannelId.tsx");
 
 export default function getGuildModeratorReportChannelId(moderatorReporting) {
   moderatorReporting = moderatorReporting.moderatorReporting;
   let prop;
-  if (null != moderatorReporting) {
+  if (moderatorReporting != null) {
     prop = moderatorReporting.moderatorReportChannelId;
   }
-  let tmp2 = null;
-  if (null != prop) {
-    tmp2 = prop;
+  if (prop == null) {
+    prop = null;
   }
-  return tmp2;
+  return prop;
 };

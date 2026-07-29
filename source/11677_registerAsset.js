@@ -1,11 +1,10 @@
 // Module ID: 11677
-// Function ID: 90496
+// Function ID: 11678
 // Name: registerAsset
-// Dependencies: [1217]
+// Dependencies: [1241]
 
 // Module 11677 (registerAsset)
 import registerAsset from "registerAsset";
 
-const obj = { __packager_asset: true, httpServerLocation: "/assets/design/components/Illustration/native/redesign/generated/images", width: 240, height: 130, scales: [2, 3], hash: "bf9007773f0fafb040422c6eba8b56d6", name: "no_mutual_servers_darker", type: "png" };
 
-export default registerAsset.registerAsset(obj);
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "6d4db4a3fed6b7fb2e0e3b8c9618b2e3", name: "BoostGemSlashIcon", type: "png" });

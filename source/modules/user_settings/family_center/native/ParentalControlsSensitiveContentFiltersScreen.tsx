@@ -1,11 +1,11 @@
-// Module ID: 14658
-// Function ID: 111634
+// Module ID: 14683
+// Function ID: 14684
 // Name: UserSettingsSensitiveContentFilters
-// Dependencies: [31, 7733, 33, 1212, 10099, 13657, 2]
+// Dependencies: [19, 7756, 21, 1236, 10120, 13678, 2]
 // Exports: default
 
-// Module 14658 (UserSettingsSensitiveContentFilters)
-import result from "result";
+// Module 14683 (UserSettingsSensitiveContentFilters)
+import noop from "noop";
 import { MobileSetting } from "MobileSetting";
 import { jsx } from "jsxProd";
 
@@ -14,28 +14,28 @@ const result = require("jsxProd").fileFinishedImporting("modules/user_settings/f
 
 export default function UserSettingsSensitiveContentFilters() {
   const node = React.useMemo(() => {
-    let obj = outer1_0(outer1_2[4]);
-    obj = {};
-    obj = {};
-    const intl = outer1_0(outer1_2[3]).intl;
-    obj.label = intl.string(outer1_0(outer1_2[3]).t.GYpoAq);
+    let obj = callback(10120);
+    obj = { sections: null };
+    obj = { label: null, settings: null, subLabel: null };
+    const intl = callback(1236).intl;
+    obj[0] = intl.string(callback(1236).t.GYpoAq);
     const items = [, ];
-    ({ PARENTAL_CONTROLS_EXPLICIT_MEDIA_FILTERS_FRIENDS_DMS: arr[0], PARENTAL_CONTROLS_EXPLICIT_MEDIA_FILTERS_NON_FRIENDS_DMS: arr[1] } = outer1_4);
-    obj.settings = items;
-    const intl2 = outer1_0(outer1_2[3]).intl;
-    obj.subLabel = intl2.string(outer1_0(outer1_2[3]).t.Wnojv1);
+    ({ PARENTAL_CONTROLS_EXPLICIT_MEDIA_FILTERS_FRIENDS_DMS: arr[0], PARENTAL_CONTROLS_EXPLICIT_MEDIA_FILTERS_NON_FRIENDS_DMS: arr[1] } = closure_4);
+    obj[1] = items;
+    const intl2 = callback(1236).intl;
+    obj[2] = intl2.string(callback(1236).t.Wnojv1);
     const items1 = [obj, ];
-    const obj1 = {};
-    const intl3 = outer1_0(outer1_2[3]).intl;
-    obj1.label = intl3.string(outer1_0(outer1_2[3]).t["16/3Bi"]);
+    const obj1 = { label: null, settings: null, subLabel: null };
+    const intl3 = callback(1236).intl;
+    obj1[0] = intl3.string(callback(1236).t["16/3Bi"]);
     const items2 = [, ];
-    ({ PARENTAL_CONTROLS_GORE_MEDIA_FILTERS_FRIENDS_DMS: arr3[0], PARENTAL_CONTROLS_GORE_MEDIA_FILTERS_NON_FRIENDS_DMS: arr3[1] } = outer1_4);
-    obj1.settings = items2;
-    const intl4 = outer1_0(outer1_2[3]).intl;
-    obj1.subLabel = intl4.string(outer1_0(outer1_2[3]).t.XgH9eh);
+    ({ PARENTAL_CONTROLS_GORE_MEDIA_FILTERS_FRIENDS_DMS: arr3[0], PARENTAL_CONTROLS_GORE_MEDIA_FILTERS_NON_FRIENDS_DMS: arr3[1] } = closure_4);
+    obj1[1] = items2;
+    const intl4 = callback(1236).intl;
+    obj1[2] = intl4.string(callback(1236).t.XgH9eh);
     items1[1] = obj1;
-    obj.sections = items1;
+    obj[0] = items1;
     return obj.createList(obj);
   }, []);
-  return jsx(importDefault(13657), { node });
+  return jsx(importDefault(13678), { node });
 };

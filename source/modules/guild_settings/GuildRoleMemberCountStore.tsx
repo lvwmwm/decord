@@ -1,83 +1,41 @@
-// Module ID: 5182
-// Function ID: 45020
-// Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 566, 686, 2]
+// Module ID: 5204
+// Function ID: 5205
+// Name: getRoleMemberCount
+// Dependencies: [589, 709, 2]
 
-// Module 5182 (_isNativeReflectConstruct)
-import dispatcher from "dispatcher";
-import set from "set";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
+// Module 5204 (getRoleMemberCount)
+import { Store } from "initialize";
 
-function _isNativeReflectConstruct() {
-  let dispatcher = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return dispatcher;
-  }
-  const result = _isNativeReflectConstruct();
+let closure_0 = {};
+let closure_1 = {};
+class GuildRoleMemberCountStore extends Store {
 }
-let closure_5 = {};
-let closure_6 = {};
-let tmp2 = ((Store) => {
-  class GuildRoleMemberCountStore {
-    constructor() {
-      self = this;
-      tmp = GuildRoleMemberCountStore(this, GuildRoleMemberCountStore);
-      obj = outer1_3(GuildRoleMemberCountStore);
-      tmp2 = outer1_2;
-      if (outer1_7()) {
-        tmp6 = globalThis;
-        _Reflect = Reflect;
-        tmp7 = outer1_3;
-        tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, outer1_3(self).constructor);
-      } else {
-        tmp3 = arguments;
-        tmp4 = arguments;
-        constructResult = obj(...arguments);
-      }
-      return tmp2(self, constructResult);
-    }
+const prototype = GuildRoleMemberCountStore.prototype;
+prototype["getRoleMemberCount"] = function getRoleMemberCount(id) {
+  let tmp = null;
+  if (null != id) {
+    tmp = dependencyMap[id];
   }
-  callback2(GuildRoleMemberCountStore, Store);
-  let obj = {
-    key: "getRoleMemberCount",
-    value(arg0) {
-      let tmp = null;
-      if (null != arg0) {
-        tmp = outer1_5[arg0];
-      }
-      return tmp;
+  return tmp;
+};
+prototype["shouldFetch"] = function shouldFetch(arg0) {
+  if (null == arg0) {
+    return false;
+  } else {
+    let tmp3 = null == tmp2;
+    if (!tmp3) {
+      const _Date = Date;
+      tmp3 = Date.now() - tmp2 > 120000;
     }
-  };
-  const items = [obj, ];
-  obj = {
-    key: "shouldFetch",
-    value(arg0) {
-      if (null == arg0) {
-        return false;
-      } else {
-        let tmp3 = null == tmp2;
-        if (!tmp3) {
-          const _Date = Date;
-          tmp3 = Date.now() - tmp2 > 120000;
-        }
-        return tmp3;
-      }
-    }
-  };
-  items[1] = obj;
-  return callback(GuildRoleMemberCountStore, items);
-})(require("initialize").Store);
-tmp2.displayName = "GuildRoleMemberCountStore";
-tmp2 = new tmp2(require("dispatcher"), {
+    return tmp3;
+  }
+};
+GuildRoleMemberCountStore.displayName = "GuildRoleMemberCountStore";
+const guildRoleMemberCountStore = new GuildRoleMemberCountStore(require("dispatcher"), {
   GUILD_ROLE_MEMBER_COUNT_FETCH_SUCCESS: function handleGuildRoleMemberCountFetchSuccess(guildId) {
     guildId = guildId.guildId;
-    closure_5[guildId] = guildId.roleMemberCount;
-    closure_6[guildId] = Date.now();
+    closure_0[guildId] = guildId.roleMemberCount;
+    closure_1[guildId] = Date.now();
   },
   GUILD_ROLE_MEMBER_COUNT_UPDATE: function handleGuildRoleMemberCountUpdate(arg0) {
     if (null == dependencyMap[arg0.guildId]) {
@@ -123,7 +81,7 @@ tmp2 = new tmp2(require("dispatcher"), {
   GUILD_ROLE_CREATE: function handleGuildRoleCreate(guildId) {
     guildId = guildId.guildId;
     if (null == dependencyMap[guildId]) {
-      dependencyMap[guildId] = {};
+      tmp[guildId] = {};
     }
     dependencyMap[guildId][guildId.role.id] = 0;
   },
@@ -133,6 +91,6 @@ tmp2 = new tmp2(require("dispatcher"), {
     delete tmp2[tmp];
   }
 });
-let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/guild_settings/GuildRoleMemberCountStore.tsx");
+const result = require("set").fileFinishedImporting("modules/guild_settings/GuildRoleMemberCountStore.tsx");
 
-export default tmp2;
+export default guildRoleMemberCountStore;

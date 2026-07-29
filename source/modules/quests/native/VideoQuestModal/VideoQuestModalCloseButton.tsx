@@ -1,10 +1,10 @@
-// Module ID: 14151
-// Function ID: 108665
+// Module ID: 14173
+// Function ID: 14174
 // Name: VideoQuestModalCloseButton
-// Dependencies: [33, 689, 4695, 1212, 5153, 2]
+// Dependencies: [21, 712, 4717, 1236, 5175, 2]
 // Exports: default
 
-// Module 14151 (VideoQuestModalCloseButton)
+// Module 14173 (VideoQuestModalCloseButton)
 import { jsx } from "jsxProd";
 
 const result = require("PressableBase").fileFinishedImporting("modules/quests/native/VideoQuestModal/VideoQuestModalCloseButton.tsx");
@@ -12,15 +12,14 @@ const result = require("PressableBase").fileFinishedImporting("modules/quests/na
 export default function VideoQuestModalCloseButton(iconColor) {
   let MOBILE_TEXT_HEADING_PRIMARY = iconColor.iconColor;
   if (MOBILE_TEXT_HEADING_PRIMARY === undefined) {
-    MOBILE_TEXT_HEADING_PRIMARY = importDefault(689).colors.MOBILE_TEXT_HEADING_PRIMARY;
+    MOBILE_TEXT_HEADING_PRIMARY = importDefault(712).colors.MOBILE_TEXT_HEADING_PRIMARY;
   }
-  let obj = { accessibilityLabel: null, accessibilityRole: "button", hitSlop: 12 };
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj.accessibilityLabel = intl.string(require(1212) /* getSystemLocale */.t.cpT0Cq);
-  obj.onPress = iconColor.onClose;
+  const obj = { accessibilityLabel: null, accessibilityRole: "button", hitSlop: 12, onPress: null, style: null, children: null };
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj[0] = intl.string(require(1236) /* getSystemLocale */.t.cpT0Cq);
+  obj[3] = iconColor.onClose;
   const items = [{ flexShrink: 0, minWidth: 24, minHeight: 24 }, iconColor.style];
-  obj.style = items;
-  obj = { color: MOBILE_TEXT_HEADING_PRIMARY };
-  obj.children = jsx(require(5153) /* XSmallIcon */.XSmallIcon, { color: MOBILE_TEXT_HEADING_PRIMARY });
-  return jsx(require(4695) /* PressableBase */.PressableOpacity, { color: MOBILE_TEXT_HEADING_PRIMARY });
+  obj[4] = items;
+  obj[5] = jsx(require(5175) /* XSmallIcon */.XSmallIcon, { color: MOBILE_TEXT_HEADING_PRIMARY });
+  return jsx(require(4717) /* PressableBase */.PressableOpacity, { accessibilityLabel: null, accessibilityRole: "button", hitSlop: 12, onPress: null, style: null, children: null });
 };

@@ -1,28 +1,28 @@
-// Module ID: 16392
-// Function ID: 127450
+// Module ID: 16427
+// Function ID: 16428
 // Name: GuildSettingsServerTagColorGrid
-// Dependencies: [31, 27, 7701, 33, 689, 4165, 1212, 4576, 4161, 16390, 16393, 13030, 13618, 14343, 2]
+// Dependencies: [19, 17, 7724, 21, 712, 4189, 1236, 4598, 4185, 16425, 16428, 13053, 13639, 14365, 2]
 // Exports: default
 
-// Module 16392 (GuildSettingsServerTagColorGrid)
-import "result";
+// Module 16427 (GuildSettingsServerTagColorGrid)
+import "noop";
 import { View } from "get ActivityIndicator";
 import items from "items";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_4;
-let closure_5;
+let c4;
+let c5;
 let closure_6;
-let closure_7;
-let closure_8;
+let error;
+let metroImportAll;
 const require = arg1;
-({ GUILD_TAG_BADGE_PALETTE_PRESETS: closure_4, GUILD_TAG_BADGE_NUM_CUSTOMIZABLE_COLORS: closure_5, GuildTagBadgeSize: closure_6 } = items);
-({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-_createForOfIteratorHelperLoose = { grid: _createForOfIteratorHelperLoose };
-_createForOfIteratorHelperLoose = { flexDirection: "row", flexWrap: "wrap", gap: require("_createForOfIteratorHelperLoose").space.PX_8, defaultIcon: { position: "absolute", right: require("_createForOfIteratorHelperLoose").space.PX_4, bottom: require("_createForOfIteratorHelperLoose").space.PX_4 } };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-let obj1 = { position: "absolute", right: require("_createForOfIteratorHelperLoose").space.PX_4, bottom: require("_createForOfIteratorHelperLoose").space.PX_4 };
+({ GUILD_TAG_BADGE_PALETTE_PRESETS: c4, GUILD_TAG_BADGE_NUM_CUSTOMIZABLE_COLORS: c5, GuildTagBadgeSize: closure_6 } = items);
+({ jsx: error, jsxs: metroImportAll } = jsxProd);
+createCacheKey = { grid: { flexDirection: "row", flexWrap: "wrap", gap: require("Themes").space.PX_8 }, defaultIcon: null };
+createCacheKey = { position: "absolute", right: require("Themes").space.PX_4, bottom: require("Themes").space.PX_4 };
+createCacheKey[1] = createCacheKey;
+createCacheKey = createCacheKey.createStyles(createCacheKey);
 const result = require("items").fileFinishedImporting("modules/guild_settings/native/GuildSettingsServerTagColorGrid.tsx");
 
 export default function GuildSettingsServerTagColorGrid(badge) {
@@ -32,8 +32,9 @@ export default function GuildSettingsServerTagColorGrid(badge) {
   let primary = badge.primaryColor;
   let secondary = badge.secondaryColor;
   ({ onSelectColor: View, cellSize } = badge);
-  let tmp = _createForOfIteratorHelperLoose();
-  const table = tmp2;
+  let table;
+  let tmp = createCacheKey();
+  table = tmp2;
   let tmp3 = null == primary;
   if (tmp3) {
     let tmp4 = !tmp2;
@@ -47,8 +48,8 @@ export default function GuildSettingsServerTagColorGrid(badge) {
     everyResult = cellSize.every((primary) => {
       let tmp = primary.primary !== primary;
       if (!tmp) {
-        let tmp2 = closure_5;
-        if (closure_5) {
+        let tmp2 = c5;
+        if (c5) {
           tmp2 = primary.secondary !== secondary;
         }
         tmp = tmp2;
@@ -60,89 +61,97 @@ export default function GuildSettingsServerTagColorGrid(badge) {
   const formatToPlainString = intl.formatToPlainString;
   const t = badge(secondary[6]).t;
   if (table[badge] >= 2) {
-    let obj = {};
-    if (null == primary) {
+    if (primary == null) {
       primary = cellSize[0].primary;
     }
-    obj.primaryColor = primary;
-    if (null == secondary) {
+    let obj = { primaryColor: null, secondaryColor: null };
+    obj[0] = primary;
+    if (secondary == null) {
       secondary = cellSize[0].secondary;
     }
-    obj.secondaryColor = secondary;
+    obj[1] = secondary;
     let formatToPlainStringResult = formatToPlainString(t.hr4D2X, obj);
+    let tmp11 = tmp8;
+    let tmp12 = tmp7;
   } else {
-    obj = {};
     let primary2 = primary;
-    if (null == primary) {
+    if (primary == null) {
       primary2 = cellSize[0].primary;
     }
-    obj.color = primary2;
+    obj = { color: null };
+    obj[0] = primary2;
     formatToPlainStringResult = formatToPlainString(t["7BFCRR"], obj);
+    tmp11 = tmp8;
+    tmp12 = tmp7;
   }
-  obj = { spacing: primary(secondary[4]).space.PX_8 };
-  const obj1 = { variant: "text-md/medium", color: "text-subtle", accessibilityRole: "header" };
-  const intl2 = badge(secondary[6]).intl;
-  obj1.children = intl2.string(badge(secondary[6]).t["Fg/TNW"]);
-  const items = [callback(badge(secondary[8]).Text, obj1), ];
-  let obj2 = { accessibilityRole: "radiogroup", style: tmp.grid };
+  obj = { spacing: null, children: null };
+  obj[0] = primary(tmp11[4]).space.PX_8;
+  const obj1 = { variant: "text-md/medium", color: "text-subtle", accessibilityRole: "header", children: null };
+  const intl2 = tmp12(tmp11[6]).intl;
+  obj1[3] = intl2.string(tmp12(tmp11[6]).t["Fg/TNW"]);
+  const items = [callback(tmp12(tmp11[8]).Text, obj1), ];
+  let obj2 = { accessibilityRole: "radiogroup", style: tmp.grid, children: null };
   const items1 = [
     cellSize.map((primary) => {
       let closure_0 = primary;
-      let obj = { size: cellSize };
-      let tmp3 = primary.primary === primary;
-      if (tmp3) {
-        let tmp5 = !closure_5;
-        if (closure_5) {
-          tmp5 = primary.secondary === secondary;
+      let obj = { size: cellSize, selected: null, accessibilityLabel: null, onPress: null, children: null };
+      let tmp5 = primary.primary === primary;
+      if (tmp5) {
+        let tmp7 = !c5;
+        if (c5) {
+          tmp7 = primary.secondary === secondary;
         }
-        tmp3 = tmp5;
+        tmp5 = tmp7;
       }
-      obj.selected = tmp3;
-      if (closure_5) {
-        let guildTagPalettePresetColorLabel = primary(secondary[10])(primary.primary, primary.secondary);
+      obj[1] = tmp5;
+      if (c5) {
+        let guildTagPalettePresetColorLabel = primary(tmp3[10])(primary.primary, primary.secondary);
       } else {
-        guildTagPalettePresetColorLabel = badge(secondary[10]).getGuildTagPalettePresetColorLabel(primary.primary);
-        const obj2 = badge(secondary[10]);
+        guildTagPalettePresetColorLabel = badge(tmp3[10]).getGuildTagPalettePresetColorLabel(primary.primary);
+        const obj2 = badge(tmp3[10]);
       }
-      obj.accessibilityLabel = guildTagPalettePresetColorLabel;
-      obj.onPress = function onPress() {
+      obj[2] = guildTagPalettePresetColorLabel;
+      obj[3] = function onPress() {
         let secondary = null;
         if (outer1_5) {
           secondary = primary.secondary;
         }
         return outer1_3(primary.primary, secondary);
       };
-      obj = { badge: closure_0, width: outer1_6.SIZE_32, height: outer1_6.SIZE_32, primaryTintColor: primary.primary };
+      obj = { badge: closure_0, width: outer1_6.SIZE_32, height: outer1_6.SIZE_32, primaryTintColor: primary.primary, secondaryTintColor: null };
       secondary = undefined;
-      if (closure_5) {
+      if (c5) {
         secondary = primary.secondary;
       }
-      obj.secondaryTintColor = secondary;
-      obj.children = outer1_7(badge(secondary[11]).GuildBadge, obj);
+      obj[4] = secondary;
+      obj[4] = outer1_7(badge(secondary[11]).GuildBadge, obj);
       return outer1_7(primary(secondary[9]), obj, "" + primary.primary + primary.secondary);
     }),
   ,
 
   ];
-  const obj3 = { size: cellSize, selected: tmp3 };
-  const intl3 = badge(secondary[6]).intl;
-  obj3.accessibilityLabel = intl3.string(badge(secondary[6]).t.S6N0gC);
-  obj3.onPress = function onPress() {
+  const obj3 = { size: cellSize, selected: tmp3, accessibilityLabel: null, onPress: null, children: null };
+  const intl3 = tmp12(tmp11[6]).intl;
+  obj3[2] = intl3.string(tmp12(tmp11[6]).t.S6N0gC);
+  obj3[3] = function onPress() {
     return callback(null, null);
   };
-  const items2 = [callback(badge(secondary[11]).GuildBadge, { badge, width: closure_6.SIZE_32, height: closure_6.SIZE_32 }), ];
-  const obj5 = { size: "xs", color: primary(secondary[4]).colors.ICON_DEFAULT, style: tmp.defaultIcon };
-  items2[1] = callback(badge(secondary[12]).RefreshIcon, obj5);
-  obj3.children = items2;
-  items1[1] = callback2(primary(secondary[9]), obj3);
-  const obj6 = { size: cellSize, selected: everyResult, accessibilityRole: "button", accessibilityLabel: formatToPlainStringResult, onPress: badge.onPressEyedropper };
+  const items2 = [callback(tmp12(tmp11[11]).GuildBadge, { badge, width: closure_6.SIZE_32, height: closure_6.SIZE_32 }), ];
+  const obj5 = { size: "xs", color: null, style: null };
+  obj5[1] = primary(tmp11[4]).colors.ICON_DEFAULT;
+  obj5[2] = tmp.defaultIcon;
+  items2[1] = callback(tmp12(tmp11[12]).RefreshIcon, obj5);
+  obj3[4] = items2;
+  items1[1] = callback2(primary(tmp11[9]), obj3);
+  const obj6 = { size: cellSize, selected: everyResult, accessibilityRole: "button", accessibilityLabel: formatToPlainStringResult, onPress: badge.onPressEyedropper, children: null };
   const obj4 = { badge, width: closure_6.SIZE_32, height: closure_6.SIZE_32 };
-  const tmp11 = primary(secondary[9]);
-  const obj7 = { size: "sm", color: primary(secondary[4]).colors.ICON_DEFAULT };
-  obj6.children = callback(badge(secondary[13]).EyeDropperIcon, obj7);
-  items1[2] = callback(primary(secondary[9]), obj6);
-  obj2.children = items1;
+  const tmp15 = primary(tmp11[9]);
+  const obj7 = { size: "sm", color: null };
+  obj7[1] = primary(tmp11[4]).colors.ICON_DEFAULT;
+  obj6[5] = callback(tmp12(tmp11[13]).EyeDropperIcon, obj7);
+  items1[2] = callback(primary(tmp11[9]), obj6);
+  obj2[2] = items1;
   items[1] = callback2(View, obj2);
-  obj.children = items;
-  return callback2(badge(secondary[7]).Stack, obj);
+  obj[1] = items;
+  return callback2(tmp12(tmp11[7]).Stack, obj);
 };

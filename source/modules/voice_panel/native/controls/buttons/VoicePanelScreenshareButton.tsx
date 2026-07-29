@@ -1,64 +1,69 @@
-// Module ID: 15986
-// Function ID: 123354
+// Module ID: 16021
+// Function ID: 16022
 // Name: MobilePhoneShareIcon
-// Dependencies: [31, 27, 1348, 653, 33, 1553, 11598, 15987, 4165, 689, 10015, 15970, 566, 44, 10721, 675, 1324, 15971, 1212, 5550, 2]
+// Dependencies: [19, 17, 1372, 676, 21, 1577, 11622, 16022, 4189, 712, 10037, 16005, 589, 38, 10745, 698, 1348, 16006, 1236, 5568, 2]
 // Exports: default
 
-// Module 15986 (MobilePhoneShareIcon)
-import result from "result";
-import { Image } from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 16021 (MobilePhoneShareIcon)
+import set from "set";
+import { Image } from "AnimatedButtonWrapper";
+import ensureGuildLoaded from "ensureGuildLoaded";
 import { AnalyticEvents } from "ME";
 import jsxProd from "jsxProd";
 import isMetaQuest from "isMetaQuest";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_7;
-let closure_8;
+let error;
+let metroImportAll;
 const require = arg1;
-({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
+({ jsx: error, jsxs: metroImportAll } = jsxProd);
 if (isMetaQuest.isMetaQuest()) {
   let MobilePhoneShareIcon = require("ScreenArrowIcon").ScreenArrowIcon;
 } else {
   MobilePhoneShareIcon = require("MobilePhoneShareIcon").MobilePhoneShareIcon;
 }
-isMetaQuest = {};
-isMetaQuest = { width: "100%", height: "100%", borderRadius: require("_createForOfIteratorHelperLoose").radii.round };
-isMetaQuest.circle = isMetaQuest;
-isMetaQuest.iconContainer = { position: "absolute", justifyContent: "center", alignItems: "center", width: "100%", height: "100%" };
-isMetaQuest.icon = { width: 24, height: 24 };
-isMetaQuest = _createForOfIteratorHelperLoose.createStyles(isMetaQuest);
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/voice_panel/native/controls/buttons/VoicePanelScreenshareButton.tsx");
+isMetaQuest = { circle: null, iconContainer: null, icon: null };
+isMetaQuest = { width: "100%", height: "100%", borderRadius: require("Themes").radii.round };
+isMetaQuest[0] = isMetaQuest;
+isMetaQuest[1] = { position: "absolute", justifyContent: "center", alignItems: "center", width: "100%", height: "100%" };
+isMetaQuest[2] = { width: 24, height: 24 };
+isMetaQuest = createCacheKey.createStyles(isMetaQuest);
+const result = require("ensureGuildLoaded").fileFinishedImporting("modules/voice_panel/native/controls/buttons/VoicePanelScreenshareButton.tsx");
 
 export default function ScreenshareButton(arg0) {
   let props;
   let wrapperSpecs;
+  let channelId;
+  let isActive;
+  let isFeatureEnabled;
+  let onPress;
   ({ props, wrapperSpecs } = arg0);
-  const channelId = onPress.useContext(isActive(isFeatureEnabled[10])).channelId;
-  const tmp = isMetaQuest();
+  channelId = onPress.useContext(isActive(isFeatureEnabled[10])).channelId;
+  const tmp3 = isMetaQuest();
   let obj = channelId(isFeatureEnabled[11]);
   const voicePanelButtonStyles = obj.useVoicePanelButtonStyles(wrapperSpecs);
   let obj1 = channelId(isFeatureEnabled[12]);
-  const items = [_isNativeReflectConstruct];
+  const items = [ensureGuildLoaded];
   const stateFromStores = obj1.useStateFromStores(items, () => outer1_5.getChannel(channelId));
   isActive(isFeatureEnabled[13])(null != stateFromStores, "null channel in VoicePanelScreenshareButton");
-  const tmp5 = isActive(isFeatureEnabled[14])(stateFromStores);
-  isActive = tmp5.isActive;
-  isFeatureEnabled = tmp5.isFeatureEnabled;
-  onPress = tmp5.onPress;
+  const tmp8 = isActive(isFeatureEnabled[14])(stateFromStores);
+  isActive = tmp8.isActive;
+  isFeatureEnabled = tmp8.isFeatureEnabled;
+  onPress = tmp8.onPress;
   const items1 = [isActive, isFeatureEnabled, onPress];
   const callback = onPress.useCallback(() => {
     if (isFeatureEnabled) {
       let obj = isActive(isFeatureEnabled[15]);
-      obj = { source: "connected button", was_active: isActive };
+      obj = { source: "connected button", was_active: null };
+      obj[1] = isActive;
       obj.track(outer1_6.VOICE_PANEL_SCREENSHARE_BUTTON_TAPPED, obj);
       onPress();
     }
   }, items1);
-  if (!isFeatureEnabled) {
-    let color = voicePanelButtonStyles.iconFillMuted.color;
+  if (isFeatureEnabled) {
+    let color = voicePanelButtonStyles.iconFill.color;
   } else {
-    color = voicePanelButtonStyles.iconFill.color;
+    color = voicePanelButtonStyles.iconFillMuted.color;
   }
   if (isActive) {
     let backgroundColor = voicePanelButtonStyles.iconBgSelected.backgroundColor;
@@ -68,43 +73,42 @@ export default function ScreenshareButton(arg0) {
   if (isActive) {
     color = voicePanelButtonStyles.iconFillSelected.color;
   }
-  obj = { onPress: callback, disabled: tmp7, props };
-  const tmp8 = isActive(isFeatureEnabled[16])("ScreenshareButton");
-  const tmp9 = closure_8;
-  const intl = channelId(isFeatureEnabled[18]).intl;
+  obj = { onPress: callback, disabled: !isFeatureEnabled, props, accessibilityLabel: null, style: null, children: null };
+  let tmpResult = tmp(tmp2[17]);
+  const intl = tmp4(tmp2[18]).intl;
   const string = intl.string;
-  const t = channelId(isFeatureEnabled[18]).t;
+  const t = tmp4(tmp2[18]).t;
   if (isActive) {
     let stringResult = string(t.CpkXwZ);
   } else {
     stringResult = string(t.fjBNo1);
   }
-  obj.accessibilityLabel = stringResult;
+  obj[3] = stringResult;
   let iconBgSelected;
   if (isActive) {
     iconBgSelected = voicePanelButtonStyles.iconBgSelected;
   }
-  obj.style = iconBgSelected;
-  const items2 = [tmp.circle, ];
-  obj = { backgroundColor };
-  items2[1] = obj;
+  obj[4] = iconBgSelected;
+  const items2 = [tmp3.circle, { backgroundColor }];
   const items3 = [callback(isActive(isFeatureEnabled[19]), { style: items2 }), ];
-  obj1 = { style: tmp.iconContainer };
-  const tmp10 = isActive(isFeatureEnabled[17]);
-  const tmp13 = callback;
-  if (tmp8) {
-    const obj2 = { color };
-    let tmp15Result = tmp15(MobilePhoneShareIcon, obj2);
+  obj = { style: tmp3.iconContainer, children: null };
+  tmpResult = tmp(tmp2[19]);
+  if (tmp11) {
+    obj1 = { color: null };
+    obj1[0] = color;
+    let tmp16Result = tmp16(MobilePhoneShareIcon, obj1);
   } else {
-    const obj3 = { source: tmp5.imgSource };
-    const items4 = [tmp.icon, ];
-    const obj4 = { tintColor: color };
-    items4[1] = obj4;
-    obj3.style = items4;
-    tmp15Result = tmp15(Image, obj3);
+    const obj2 = { source: null, style: null };
+    obj2[0] = tmp8.imgSource;
+    const items4 = [tmp3.icon, ];
+    const obj3 = { tintColor: null };
+    obj3[0] = color;
+    items4[1] = obj3;
+    obj2[1] = items4;
+    tmp16Result = tmp16(Image, obj2);
   }
-  obj1.children = tmp15Result;
-  items3[1] = tmp13(isActive(isFeatureEnabled[19]), obj1);
-  obj.children = items3;
-  return tmp9(tmp10, obj);
+  obj[1] = tmp16Result;
+  items3[1] = callback(tmpResult, obj);
+  obj[5] = items3;
+  return closure_8(tmpResult, obj);
 };

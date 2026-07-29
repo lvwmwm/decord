@@ -1,31 +1,33 @@
-// Module ID: 16704
-// Function ID: 130198
+// Module ID: 16740
+// Function ID: 16741
 // Name: NativeReactAssetModule
-// Dependencies: [27, 477, 16705, 16706, 2]
+// Dependencies: [17, 500, 16741, 16742, 2]
 // Exports: default
 
-// Module 16704 (NativeReactAssetModule)
+// Module 16740 (NativeReactAssetModule)
 import get_ActivityIndicator from "get ActivityIndicator";
 import set from "set";
 import set from "enforcing";
 
-const Image = get_ActivityIndicator.Image;
+let NativeModules;
+let obj1;
+({ Image: obj1, NativeModules } = get_ActivityIndicator);
 if (set.isAndroid()) {
   let NativeReactAssetModule = require("enforcing");
 } else {
-  NativeReactAssetModule = get_ActivityIndicator.NativeModules.NativeReactAssetModule;
+  NativeReactAssetModule = NativeModules.NativeReactAssetModule;
 }
 const result = set.fileFinishedImporting("modules/react_asset/native/reactAssetProvider.tsx");
 
 export default function reactAssetProvider() {
   return new Promise((arg0) => {
     let closure_0 = arg0;
-    outer1_3.keysRequest((arr) => {
-      const NATIVE_REQUIRED_ASSETS = outer2_0(outer2_1[3]).NATIVE_REQUIRED_ASSETS;
-      outer2_3.valuesResult(arr.map((arg0) => {
+    closure_3.keysRequest((arr) => {
+      const NATIVE_REQUIRED_ASSETS = callback(outer1_1[3]).NATIVE_REQUIRED_ASSETS;
+      outer1_3.valuesResult(arr.map((arg0) => {
         let str = "";
         if (null != NATIVE_REQUIRED_ASSETS[arg0]) {
-          str = outer3_2.resolveAssetSource(NATIVE_REQUIRED_ASSETS[arg0]).uri;
+          str = outer1_2.resolveAssetSource(tmp[arg0]).uri;
         }
         return str;
       }));

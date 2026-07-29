@@ -1,260 +1,485 @@
-// Module ID: 12750
-// Function ID: 98981
-// Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 11484, 653, 3, 25, 684, 675, 566, 686, 2]
+// Module ID: 12772
+// Function ID: 12773
+// Name: initialize
+// Dependencies: [11508, 676, 3, 15, 707, 698, 589, 709, 2]
 
-// Module 12750 (_isNativeReflectConstruct)
-import ME from "ME";
-import timestamp from "timestamp";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 12772 (initialize)
+import initialize from "initialize";
 import { AnalyticEvents } from "ME";
-import importDefaultResult from "_getPrototypeOf";
+import { Store } from "initialize";
 
 const require = arg1;
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
-  }
-  const result = _isNativeReflectConstruct();
-}
-function getFastConnectUserId() {
-  return require(25) /* prepareIdentify */.getLastFastConnectIdentifyUserId();
-}
-function getBaseSwitchAnalytics(id) {
-  const obj = { from_user_id: c13, to_user_id: c14, actual_user_id: id, fast_connect_user_id: getFastConnectUserId() };
-  const users = authStore.getUsers();
-  obj.linked_user_ids = users.map((id) => id.id);
-  obj.has_ever_connected = c17;
-  obj.switch_origin = c15;
-  return obj;
-}
-function isDiagnosticsEnabled() {
-  let flag = c16;
-  if (c16) {
-    flag = true;
-  }
-  return flag;
-}
-importDefaultResult = new importDefaultResult("MultiAccountSwitchStore");
-let c12 = null;
-let c13 = null;
+let closure_6 = new require("createFastConnectSocket")("MultiAccountSwitchStore");
+let c7 = null;
+let c8 = null;
+let c9 = null;
+let c10 = null;
+let c11 = false;
+let c12 = false;
+let c13 = false;
 let c14 = null;
-let c15 = null;
-let c16 = false;
-let c17 = false;
-let c18 = false;
-let c19 = null;
-let tmp4 = ((Store) => {
-  class MultiAccountSwitchStore {
-    constructor() {
-      self = this;
-      tmp = outer1_4(this, MultiAccountSwitchStore);
-      obj = outer1_7(MultiAccountSwitchStore);
-      tmp2 = outer1_6;
-      if (outer1_20()) {
-        tmp6 = globalThis;
-        _Reflect = Reflect;
-        tmp7 = outer1_7;
-        tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, outer1_7(self).constructor);
-      } else {
-        tmp3 = arguments;
-        tmp4 = arguments;
-        constructResult = obj(...arguments);
-      }
-      return tmp2(self, constructResult);
-    }
-  }
-  callback2(MultiAccountSwitchStore, Store);
-  let obj = {
-    key: "initialize",
-    value() {
-      this.waitFor(outer1_9);
-    }
-  };
-  const items = [obj, , ];
-  obj = {
-    key: "getIsSwitchingAccount",
-    value() {
-      return outer1_16;
-    }
-  };
-  items[1] = obj;
-  obj = {
-    key: "getSwitchResult",
-    value() {
-      return outer1_19;
-    }
-  };
-  items[2] = obj;
-  return callback(MultiAccountSwitchStore, items);
-})(require("initialize").Store);
-tmp4.displayName = "MultiAccountSwitchStore";
-tmp4 = new tmp4(require("dispatcher"), {
+class MultiAccountSwitchStore extends Store {
+}
+const prototype = MultiAccountSwitchStore.prototype;
+prototype["initialize"] = function initialize() {
+  this.waitFor(initialize);
+};
+prototype["getIsSwitchingAccount"] = function getIsSwitchingAccount() {
+  return c11;
+};
+prototype["getSwitchResult"] = function getSwitchResult() {
+  return c14;
+};
+MultiAccountSwitchStore.displayName = "MultiAccountSwitchStore";
+const multiAccountSwitchStore = new MultiAccountSwitchStore(require("dispatcher"), {
   MULTI_ACCOUNT_SWITCH_START: function handleSwitchStart(arg0) {
-    let c14;
-    let c15;
-    ({ targetUserId: c14, location: c15 } = arg0);
+    let c10;
+    let c9;
+    ({ targetUserId: c9, location: c10 } = arg0);
   },
   MULTI_ACCOUNT_SWITCH_TIMEOUT: function handleSwitchTimeout() {
-    let obj = importDefault(675);
-    obj = { from_user_id: c13, to_user_id: c14 };
+    let obj = importDefault(698);
+    obj = { from_user_id: c8, to_user_id: c9, linked_user_ids: null, has_ever_connected: null, switch_origin: null };
     const users = authStore.getUsers();
-    obj.linked_user_ids = users.map((id) => id.id);
-    obj.has_ever_connected = c17;
-    obj.switch_origin = c15;
+    obj[2] = users.map((id) => id.id);
+    obj[3] = c12;
+    obj[4] = c10;
     obj.track(AnalyticEvents.MULTI_ACCOUNT_SWITCH_TIMEOUT, obj);
     return false;
   },
   LOGOUT: function handleLogout(isSwitchingAccount) {
     isSwitchingAccount = isSwitchingAccount.isSwitchingAccount;
     if (isSwitchingAccount.isSwitchingAccount) {
-      let closure_13 = c12;
+      let closure_8 = c7;
       let goHomeAfterSwitching = isSwitchingAccount.goHomeAfterSwitching;
-      let obj = { current_user_id: c12, expected_user_id: c14, fast_connect_user_id: getFastConnectUserId(), switch_origin: c15 };
-      importDefaultResult.log("logout from account switch", obj);
+      let obj = { current_user_id: null, expected_user_id: null, fast_connect_user_id: null, switch_origin: null };
+      obj[0] = c7;
+      obj[1] = c9;
+      obj[2] = require(15) /* createFastConnectSocket */.getLastFastConnectIdentifyUserId();
+      obj[3] = c10;
+      tmp2.log("logout from account switch", obj);
+      const obj3 = require(15) /* createFastConnectSocket */;
     } else {
       goHomeAfterSwitching = false;
-      obj = importAll(684);
-      obj.removeToken(c12);
+      obj = importAll(707);
+      obj.removeToken(c7);
     }
   },
   CONNECTION_OPEN: function handleConnectionOpen(user) {
     user = user.user;
-    if (c16) {
+    if (c11) {
       let id = user.id;
-      if (isDiagnosticsEnabled()) {
-        let obj = importAll(684);
+      let flag = c11;
+      if (c11) {
+        flag = true;
+      }
+      if (flag) {
+        let obj = importAll(707);
         let token = obj.getToken(id);
-        const token1 = importAll(684).getToken();
-        let tmp10 = null != c14;
-        if (tmp10) {
-          tmp10 = id !== c14;
+        let obj1 = importAll(707);
+        const token1 = obj1.getToken();
+        let tmp8 = null != c9;
+        if (tmp8) {
+          tmp8 = id !== c9;
         }
         if (null != token && null != token1 && token !== token1) {
           obj = {};
-          let merged = Object.assign(getBaseSwitchAnalytics(id));
-          obj["user_token_exists"] = null != token;
-          obj["main_token_exists"] = null != token1;
-          obj["is_token_mismatch"] = tmp12;
-          obj["is_user_mismatch"] = tmp10;
-          importDefaultResult.log("Token mismatch on account switch connection open", obj);
-          importDefault(675).track(AnalyticEvents.MULTI_ACCOUNT_SWITCH_READY_MISMATCH, obj);
-          const obj4 = importDefault(675);
+          obj = { from_user_id: null, to_user_id: null, actual_user_id: null, fast_connect_user_id: null, linked_user_ids: null, has_ever_connected: null, switch_origin: null };
+          obj[0] = c8;
+          obj[1] = c9;
+          obj[2] = id;
+          let obj4 = id(15);
+          obj[3] = obj4.getLastFastConnectIdentifyUserId();
+          let users = authStore.getUsers();
+          obj[4] = users.map((id) => id.id);
+          obj[5] = c12;
+          obj[6] = c10;
+          let merged = Object.assign(obj);
+          obj.user_token_exists = null != token;
+          obj.main_token_exists = null != token1;
+          obj.is_token_mismatch = tmp10;
+          obj.is_user_mismatch = tmp8;
+          tmp2.log("Token mismatch on account switch connection open", obj);
+          map(698).track(AnalyticEvents.MULTI_ACCOUNT_SWITCH_READY_MISMATCH, obj);
+          const obj6 = map(698);
         }
-        let obj2 = importAll(684);
       }
-      let tmp23 = c13 !== user.id;
-      const tmp25 = getBaseSwitchAnalytics(user.id);
-      let track = importDefault(675).track;
-      obj = AnalyticEvents;
-      if (tmp23) {
-        track(obj.MULTI_ACCOUNT_SWITCH_SUCCESS, tmp25);
-        if (isDiagnosticsEnabled()) {
-          track = importDefaultResult;
-          importDefaultResult.log("Account switch success", tmp25);
+      let tmp26 = c8 !== user.id;
+      obj1 = { from_user_id: null, to_user_id: null, actual_user_id: null, fast_connect_user_id: null, linked_user_ids: null, has_ever_connected: null, switch_origin: null };
+      obj1[0] = c8;
+      obj1[1] = c9;
+      obj1[2] = user.id;
+      obj1[3] = id(15).getLastFastConnectIdentifyUserId();
+      const users1 = authStore.getUsers();
+      obj1[4] = users1.map((id) => id.id);
+      obj1[5] = c12;
+      obj1[6] = c10;
+      let tmp35 = map(698);
+      const track = tmp35.track;
+      let obj2 = AnalyticEvents;
+      if (tmp26) {
+        track(obj2.MULTI_ACCOUNT_SWITCH_SUCCESS, obj1);
+        let flag3 = c11;
+        if (c11) {
+          flag3 = true;
+        }
+        if (flag3) {
+          tmp35 = tmp2;
+          tmp2.log("Account switch success", obj1);
         }
       } else {
-        track(obj.MULTI_ACCOUNT_SWITCH_FAILURE, tmp25);
-        if (isDiagnosticsEnabled()) {
-          importDefaultResult.log("Account switch failure", tmp25);
+        track(obj2.MULTI_ACCOUNT_SWITCH_FAILURE, obj1);
+        let flag2 = c11;
+        if (c11) {
+          flag2 = true;
+        }
+        if (flag2) {
+          tmp2.log("Account switch failure", obj1);
         }
       }
-      obj = { success: tmp23 };
-      tmp23 = c18;
-      obj.navigateHome = c18;
-      let c19 = obj;
-      const tmp28 = importDefault(675);
+      obj2 = { success: null, navigateHome: null };
+      obj2[0] = tmp26;
+      tmp26 = c13;
+      obj2[1] = c13;
+      let c14 = obj2;
+      const obj8 = id(15);
     } else {
-      c19 = null;
-      const token2 = importAll(684).getToken();
-      let tmp40 = null != token2;
-      if (tmp40) {
-        tmp40 = "" !== token2;
+      c14 = null;
+      const token2 = importAll(707).getToken();
+      let tmp45 = null != token2;
+      if (tmp45) {
+        tmp45 = "" !== token2;
       }
-      if (tmp40) {
-        (function checkTokenCollisionIntroducedAtWrite(id, token2) {
-          let closure_0 = id;
-          let closure_1 = token2;
-          if (outer1_23()) {
-            const users = outer1_9.getUsers();
-            const mapped = users.map((id) => id.id);
-            const found = mapped.filter((arg0) => {
-              let tmp = arg0 !== closure_0;
-              if (tmp) {
-                tmp = outer2_2(outer2_3[9]).getToken(arg0) === closure_1;
-                const obj = outer2_2(outer2_3[9]);
+      if (tmp45) {
+        const id2 = user.id;
+        id = id2;
+        map = token2;
+        let flag4 = c11;
+        if (c11) {
+          flag4 = true;
+        }
+        if (flag4) {
+          const users2 = authStore.getUsers();
+          const mapped = users2.map((id) => id.id);
+          const found = mapped.filter((arg0) => {
+            let tmp = arg0 !== id;
+            if (tmp) {
+              tmp = outer1_2(outer1_3[4]).getToken(arg0) === map;
+              const obj = outer1_2(outer1_3[4]);
+            }
+            return tmp;
+          });
+          if (0 !== found.length) {
+            let tmp41Result = tmp41(707);
+            let tmp46 = tmp41Result.getToken(id2) === token2;
+            let obj3 = {};
+            obj4 = { from_user_id: null, to_user_id: null, actual_user_id: null, fast_connect_user_id: null, linked_user_ids: null, has_ever_connected: null, switch_origin: null };
+            obj4[0] = c8;
+            obj4[1] = c9;
+            obj4[2] = id2;
+            obj4[3] = id(15).getLastFastConnectIdentifyUserId();
+            const users3 = obj11.getUsers();
+            obj4[4] = users3.map((id) => id.id);
+            obj4[5] = c12;
+            obj4[6] = c10;
+            const merged1 = Object.assign(obj4);
+            obj3.colliding_user_ids = found;
+            if (!tmp46) {
+              tmp46 = tmp60;
+            }
+            obj3.is_already_corrupted = tmp46;
+            tmp2.log("setToken about to introduce per-user token collision", obj3);
+            const obj17 = id(15);
+            tmp60 = found.length >= 2;
+            map(698).track(AnalyticEvents.MULTI_ACCOUNT_SWITCH_TOKEN_COLLISION_WRITE, obj3);
+            const obj12 = map(698);
+          }
+          obj11 = authStore;
+        }
+        tmp41Result = tmp41(707);
+        tmp41Result.setToken(token2, user.id);
+      }
+      id = user.id;
+      map = undefined;
+      let flag5 = c11;
+      if (c11) {
+        flag5 = true;
+      }
+      if (flag5) {
+        const _Map = Map;
+        map = new Map();
+        const users4 = authStore.getUsers();
+        const item = users4.forEach((id) => {
+          id = id.id;
+          const token = outer1_2(outer1_3[4]).getToken(id);
+          if (null != token) {
+            if ("" !== token) {
+              let items = map.get(token);
+              if (items == null) {
+                items = [];
               }
-              return tmp;
-            });
-            if (0 !== found.length) {
-              let tmp2 = outer1_2(outer1_3[9]).getToken(id) === token2;
-              let obj = {};
-              const merged = Object.assign(outer1_22(id));
-              obj["colliding_user_ids"] = found;
-              if (!tmp2) {
-                tmp2 = tmp11;
-              }
-              obj["is_already_corrupted"] = tmp2;
-              outer1_11.log("setToken about to introduce per-user token collision", obj);
-              obj = outer1_1(outer1_3[10]);
-              obj.track(outer1_10.MULTI_ACCOUNT_SWITCH_TOKEN_COLLISION_WRITE, obj);
-              const obj2 = outer1_2(outer1_3[9]);
-              tmp11 = found.length >= 2;
+              items.push(id);
+              const result = map.set(token, items);
+              const obj2 = map;
             }
           }
-        })(user.id, token2);
-        importAll(684).setToken(token2, user.id);
-        const obj7 = importAll(684);
+        });
+        const item1 = map.forEach((colliding_user_ids) => {
+          if (colliding_user_ids.length >= 2) {
+            let obj = {};
+            obj = { from_user_id: null, to_user_id: null, actual_user_id: null, fast_connect_user_id: null, linked_user_ids: null, has_ever_connected: null, switch_origin: null };
+            obj[0] = c8;
+            obj[1] = c9;
+            obj[2] = id;
+            obj[3] = id(outer1_3[3]).getLastFastConnectIdentifyUserId();
+            const users = outer1_4.getUsers();
+            obj[4] = users.map((id) => id.id);
+            obj[5] = c12;
+            obj[6] = c10;
+            const merged = Object.assign(obj);
+            obj.colliding_user_ids = colliding_user_ids;
+            outer1_6.log("Per-user token collision detected", obj);
+            const obj3 = id(outer1_3[3]);
+            map(outer1_3[5]).track(outer1_5.MULTI_ACCOUNT_SWITCH_TOKEN_COLLISION, obj);
+            const obj4 = map(outer1_3[5]);
+          }
+        });
       }
-      (function checkGeneralTokenCollision(id) {
-        let closure_0 = id;
-        if (outer1_23()) {
-          const _Map = Map;
-          const map = new Map();
-          const users = outer1_9.getUsers();
-          const item = users.forEach((id) => {
-            id = id.id;
-            const token = outer2_2(outer2_3[9]).getToken(id);
-            if (null != token) {
-              if ("" !== token) {
-                let items = map.get(token);
-                if (null == items) {
-                  items = [];
-                }
-                items.push(id);
-                const result = map.set(token, items);
-              }
-            }
-          });
-          const item1 = map.forEach((arg0) => {
-            if (arg0.length >= 2) {
-              const obj = {};
-              const merged = Object.assign(outer2_22(closure_0));
-              obj["colliding_user_ids"] = arg0;
-              outer2_11.log("Per-user token collision detected", obj);
-              outer2_1(outer2_3[10]).track(outer2_10.MULTI_ACCOUNT_SWITCH_TOKEN_COLLISION, obj);
-              const obj2 = outer2_1(outer2_3[10]);
-            }
-          });
-        }
-      })(user.id);
-      c13 = null;
-      c14 = null;
-      let c15 = null;
-      c16 = false;
-      c18 = false;
-      let c17 = true;
+      c8 = null;
+      c9 = null;
+      c10 = null;
+      c11 = false;
+      c13 = false;
+      c12 = true;
       id = user.id;
     }
   }
 });
-let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/multi_account/MultiAccountSwitchStore.tsx");
+let obj = {
+  MULTI_ACCOUNT_SWITCH_START: function handleSwitchStart(arg0) {
+    let c10;
+    let c9;
+    ({ targetUserId: c9, location: c10 } = arg0);
+  },
+  MULTI_ACCOUNT_SWITCH_TIMEOUT: function handleSwitchTimeout() {
+    let obj = importDefault(698);
+    obj = { from_user_id: c8, to_user_id: c9, linked_user_ids: null, has_ever_connected: null, switch_origin: null };
+    const users = authStore.getUsers();
+    obj[2] = users.map((id) => id.id);
+    obj[3] = c12;
+    obj[4] = c10;
+    obj.track(AnalyticEvents.MULTI_ACCOUNT_SWITCH_TIMEOUT, obj);
+    return false;
+  },
+  LOGOUT: function handleLogout(isSwitchingAccount) {
+    isSwitchingAccount = isSwitchingAccount.isSwitchingAccount;
+    if (isSwitchingAccount.isSwitchingAccount) {
+      let closure_8 = c7;
+      let goHomeAfterSwitching = isSwitchingAccount.goHomeAfterSwitching;
+      let obj = { current_user_id: null, expected_user_id: null, fast_connect_user_id: null, switch_origin: null };
+      obj[0] = c7;
+      obj[1] = c9;
+      obj[2] = require(15) /* createFastConnectSocket */.getLastFastConnectIdentifyUserId();
+      obj[3] = c10;
+      tmp2.log("logout from account switch", obj);
+      const obj3 = require(15) /* createFastConnectSocket */;
+    } else {
+      goHomeAfterSwitching = false;
+      obj = importAll(707);
+      obj.removeToken(c7);
+    }
+  },
+  CONNECTION_OPEN: function handleConnectionOpen(user) {
+    user = user.user;
+    if (c11) {
+      let id = user.id;
+      let flag = c11;
+      if (c11) {
+        flag = true;
+      }
+      if (flag) {
+        let obj = importAll(707);
+        let token = obj.getToken(id);
+        let obj1 = importAll(707);
+        const token1 = obj1.getToken();
+        let tmp8 = null != c9;
+        if (tmp8) {
+          tmp8 = id !== c9;
+        }
+        if (null != token && null != token1 && token !== token1) {
+          obj = {};
+          obj = { from_user_id: null, to_user_id: null, actual_user_id: null, fast_connect_user_id: null, linked_user_ids: null, has_ever_connected: null, switch_origin: null };
+          obj[0] = c8;
+          obj[1] = c9;
+          obj[2] = id;
+          let obj4 = id(15);
+          obj[3] = obj4.getLastFastConnectIdentifyUserId();
+          let users = authStore.getUsers();
+          obj[4] = users.map((id) => id.id);
+          obj[5] = c12;
+          obj[6] = c10;
+          let merged = Object.assign(obj);
+          obj.user_token_exists = null != token;
+          obj.main_token_exists = null != token1;
+          obj.is_token_mismatch = tmp10;
+          obj.is_user_mismatch = tmp8;
+          tmp2.log("Token mismatch on account switch connection open", obj);
+          map(698).track(AnalyticEvents.MULTI_ACCOUNT_SWITCH_READY_MISMATCH, obj);
+          const obj6 = map(698);
+        }
+      }
+      let tmp26 = c8 !== user.id;
+      obj1 = { from_user_id: null, to_user_id: null, actual_user_id: null, fast_connect_user_id: null, linked_user_ids: null, has_ever_connected: null, switch_origin: null };
+      obj1[0] = c8;
+      obj1[1] = c9;
+      obj1[2] = user.id;
+      obj1[3] = id(15).getLastFastConnectIdentifyUserId();
+      const users1 = authStore.getUsers();
+      obj1[4] = users1.map((id) => id.id);
+      obj1[5] = c12;
+      obj1[6] = c10;
+      let tmp35 = map(698);
+      const track = tmp35.track;
+      let obj2 = AnalyticEvents;
+      if (tmp26) {
+        track(obj2.MULTI_ACCOUNT_SWITCH_SUCCESS, obj1);
+        let flag3 = c11;
+        if (c11) {
+          flag3 = true;
+        }
+        if (flag3) {
+          tmp35 = tmp2;
+          tmp2.log("Account switch success", obj1);
+        }
+      } else {
+        track(obj2.MULTI_ACCOUNT_SWITCH_FAILURE, obj1);
+        let flag2 = c11;
+        if (c11) {
+          flag2 = true;
+        }
+        if (flag2) {
+          tmp2.log("Account switch failure", obj1);
+        }
+      }
+      obj2 = { success: null, navigateHome: null };
+      obj2[0] = tmp26;
+      tmp26 = c13;
+      obj2[1] = c13;
+      let c14 = obj2;
+      const obj8 = id(15);
+    } else {
+      c14 = null;
+      const token2 = importAll(707).getToken();
+      let tmp45 = null != token2;
+      if (tmp45) {
+        tmp45 = "" !== token2;
+      }
+      if (tmp45) {
+        const id2 = user.id;
+        id = id2;
+        map = token2;
+        let flag4 = c11;
+        if (c11) {
+          flag4 = true;
+        }
+        if (flag4) {
+          const users2 = authStore.getUsers();
+          const mapped = users2.map((id) => id.id);
+          const found = mapped.filter((arg0) => {
+            let tmp = arg0 !== id;
+            if (tmp) {
+              tmp = outer1_2(outer1_3[4]).getToken(arg0) === map;
+              const obj = outer1_2(outer1_3[4]);
+            }
+            return tmp;
+          });
+          if (0 !== found.length) {
+            let tmp41Result = tmp41(707);
+            let tmp46 = tmp41Result.getToken(id2) === token2;
+            let obj3 = {};
+            obj4 = { from_user_id: null, to_user_id: null, actual_user_id: null, fast_connect_user_id: null, linked_user_ids: null, has_ever_connected: null, switch_origin: null };
+            obj4[0] = c8;
+            obj4[1] = c9;
+            obj4[2] = id2;
+            obj4[3] = id(15).getLastFastConnectIdentifyUserId();
+            const users3 = obj11.getUsers();
+            obj4[4] = users3.map((id) => id.id);
+            obj4[5] = c12;
+            obj4[6] = c10;
+            const merged1 = Object.assign(obj4);
+            obj3.colliding_user_ids = found;
+            if (!tmp46) {
+              tmp46 = tmp60;
+            }
+            obj3.is_already_corrupted = tmp46;
+            tmp2.log("setToken about to introduce per-user token collision", obj3);
+            const obj17 = id(15);
+            tmp60 = found.length >= 2;
+            map(698).track(AnalyticEvents.MULTI_ACCOUNT_SWITCH_TOKEN_COLLISION_WRITE, obj3);
+            const obj12 = map(698);
+          }
+          obj11 = authStore;
+        }
+        tmp41Result = tmp41(707);
+        tmp41Result.setToken(token2, user.id);
+      }
+      id = user.id;
+      map = undefined;
+      let flag5 = c11;
+      if (c11) {
+        flag5 = true;
+      }
+      if (flag5) {
+        const _Map = Map;
+        map = new Map();
+        const users4 = authStore.getUsers();
+        const item = users4.forEach((id) => {
+          id = id.id;
+          const token = outer1_2(outer1_3[4]).getToken(id);
+          if (null != token) {
+            if ("" !== token) {
+              let items = map.get(token);
+              if (items == null) {
+                items = [];
+              }
+              items.push(id);
+              const result = map.set(token, items);
+              const obj2 = map;
+            }
+          }
+        });
+        const item1 = map.forEach((colliding_user_ids) => {
+          if (colliding_user_ids.length >= 2) {
+            let obj = {};
+            obj = { from_user_id: null, to_user_id: null, actual_user_id: null, fast_connect_user_id: null, linked_user_ids: null, has_ever_connected: null, switch_origin: null };
+            obj[0] = c8;
+            obj[1] = c9;
+            obj[2] = id;
+            obj[3] = id(outer1_3[3]).getLastFastConnectIdentifyUserId();
+            const users = outer1_4.getUsers();
+            obj[4] = users.map((id) => id.id);
+            obj[5] = c12;
+            obj[6] = c10;
+            const merged = Object.assign(obj);
+            obj.colliding_user_ids = colliding_user_ids;
+            outer1_6.log("Per-user token collision detected", obj);
+            const obj3 = id(outer1_3[3]);
+            map(outer1_3[5]).track(outer1_5.MULTI_ACCOUNT_SWITCH_TOKEN_COLLISION, obj);
+            const obj4 = map(outer1_3[5]);
+          }
+        });
+      }
+      c8 = null;
+      c9 = null;
+      c10 = null;
+      c11 = false;
+      c13 = false;
+      c12 = true;
+      id = user.id;
+    }
+  }
+};
+const tmp2 = new require("createFastConnectSocket")("MultiAccountSwitchStore");
+let result = require("timestamp").fileFinishedImporting("modules/multi_account/MultiAccountSwitchStore.tsx");
 
-export default tmp4;
+export default multiAccountSwitchStore;

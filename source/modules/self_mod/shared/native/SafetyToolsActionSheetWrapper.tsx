@@ -1,12 +1,12 @@
-// Module ID: 10145
-// Function ID: 78432
+// Module ID: 10166
+// Function ID: 10167
 // Name: SafetyToolsActionSheetWrapper
-// Dependencies: [31, 1348, 33, 566, 5221, 10146, 2]
+// Dependencies: [19, 1372, 21, 589, 5243, 10167, 2]
 // Exports: default
 
-// Module 10145 (SafetyToolsActionSheetWrapper)
-import result from "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 10166 (SafetyToolsActionSheetWrapper)
+import noop from "noop";
+import ensureGuildLoaded from "ensureGuildLoaded";
 import { jsx } from "jsxProd";
 
 const require = arg1;
@@ -21,9 +21,10 @@ export default function SafetyToolsActionSheetWrapper(channelId) {
   let warningType;
   channelId = channelId.channelId;
   const onClose = channelId.onClose;
+  let stateFromStores;
   ({ headerTitle, hasHeaderBack, warningId, warningType, recipientId, children } = channelId);
   let obj = channelId(stateFromStores[3]);
-  const items = [_isNativeReflectConstruct];
+  const items = [ensureGuildLoaded];
   stateFromStores = obj.useStateFromStores(items, () => outer1_4.getChannel(channelId));
   const items1 = [stateFromStores, onClose];
   const effect = React.useEffect(() => {
@@ -31,13 +32,19 @@ export default function SafetyToolsActionSheetWrapper(channelId) {
       onClose();
     }
   }, items1);
-  let tmp3 = null;
+  let tmp5 = null;
   if (null != stateFromStores) {
-    obj = { showGradient: true, startExpanded: true };
-    obj = { recipientId, warningId, warningType, hasBackButton: hasHeaderBack, title: headerTitle, channelId };
-    obj.header = jsx(onClose(stateFromStores[5]), { recipientId, warningId, warningType, hasBackButton: hasHeaderBack, title: headerTitle, channelId });
-    obj.children = children;
-    tmp3 = jsx(channelId(stateFromStores[4]).BottomSheet, { recipientId, warningId, warningType, hasBackButton: hasHeaderBack, title: headerTitle, channelId });
+    obj = { showGradient: true, startExpanded: true, header: null, children: null };
+    obj = { recipientId: null, warningId: null, warningType: null, hasBackButton: null, title: null, channelId: null };
+    obj[0] = recipientId;
+    obj[1] = warningId;
+    obj[2] = warningType;
+    obj[3] = hasHeaderBack;
+    obj[4] = headerTitle;
+    obj[5] = channelId;
+    obj[2] = jsx(onClose(tmp2[5]), { recipientId: null, warningId: null, warningType: null, hasBackButton: null, title: null, channelId: null });
+    obj[3] = children;
+    tmp5 = jsx(channelId(tmp2[4]).BottomSheet, { recipientId: null, warningId: null, warningType: null, hasBackButton: null, title: null, channelId: null });
   }
-  return tmp3;
+  return tmp5;
 };

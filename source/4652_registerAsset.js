@@ -1,11 +1,10 @@
 // Module ID: 4652
-// Function ID: 40414
+// Function ID: 4653
 // Name: registerAsset
-// Dependencies: [1217]
+// Dependencies: [1241]
 
 // Module 4652 (registerAsset)
 import registerAsset from "registerAsset";
 
-const obj = { __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "e0b397599eccc0f5f356f4e50a046d1d", name: "ImageWarningIcon", type: "png" };
 
-export default registerAsset.registerAsset(obj);
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "f5152f59510615cd9a196a52f24801ee", name: "ThreadIcon", type: "png" });

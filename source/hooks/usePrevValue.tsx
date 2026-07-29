@@ -1,11 +1,11 @@
-// Module ID: 8308
-// Function ID: 66527
+// Module ID: 8332
+// Function ID: 8333
 // Name: usePrevValue
-// Dependencies: [31, 2]
+// Dependencies: [19, 2]
 // Exports: default
 
-// Module 8308 (usePrevValue)
-import { useRef } from "result";
+// Module 8332 (usePrevValue)
+import { useRef } from "noop";
 
 const result = require("set").fileFinishedImporting("hooks/usePrevValue.tsx");
 

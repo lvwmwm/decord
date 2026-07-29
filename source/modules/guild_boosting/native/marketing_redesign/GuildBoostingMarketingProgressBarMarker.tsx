@@ -1,21 +1,24 @@
-// Module ID: 12624
-// Function ID: 97560
+// Module ID: 12646
+// Function ID: 12647
 // Name: ProgressBarMarkerInnerContent
-// Dependencies: [31, 27, 653, 33, 12625, 12626, 12627, 4165, 689, 4101, 4026, 4577, 11652, 4009, 4011, 9986, 4161, 4057, 2]
+// Dependencies: [19, 17, 676, 21, 12647, 12648, 12649, 4189, 712, 4125, 4050, 4599, 11676, 4033, 4035, 10008, 4185, 4081, 2]
 // Exports: default
 
-// Module 12624 (ProgressBarMarkerInnerContent)
-import result from "result";
-import get_ActivityIndicator from "get ActivityIndicator";
+// Module 12646 (ProgressBarMarkerInnerContent)
+import noop from "noop";
+import get_ActivityIndicator from "getGuildTierFromGuild";
 import { BoostedGuildTiers } from "ME";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
+import createCacheKey from "createCacheKey";
 
-let closure_4;
-let closure_5;
-let closure_7;
-let closure_8;
+let TIER_1;
+let TIER_2;
+let TIER_3;
+let c4;
+let c5;
+let error;
+let metroImportAll;
 const require = arg1;
 function ProgressBarMarkerInnerContent(arg0) {
   let isCurrentTier;
@@ -24,13 +27,16 @@ function ProgressBarMarkerInnerContent(arg0) {
   let isTierUnlocked;
   let tier;
   let useReducedMotion;
-  ({ tier, isTierUnlocked } = arg0);
+  ({ tier, isTierUnlocked, useReducedMotion } = arg0);
+  let sharedValue;
   isTierUnlocked = undefined;
-  ({ isTierAnimated, isCurrentTier, useReducedMotion, isDisabled } = arg0);
-  const tmp = callback2();
-  let obj = sharedValue(4026);
+  ({ isTierAnimated, isCurrentTier, isDisabled } = arg0);
+  const tmp = callback();
+  let obj = isTierUnlocked;
+  let items3 = dependencyMap;
+  let obj1 = sharedValue(4050);
   let num = 1;
-  sharedValue = obj.useSharedValue(1);
+  sharedValue = obj1.useSharedValue(1);
   if (isTierUnlocked) {
     isTierUnlocked = isTierAnimated;
   }
@@ -42,12 +48,12 @@ function ProgressBarMarkerInnerContent(arg0) {
       const obj = sharedValue(outer1_2[11]);
     }
   }, items);
-  sharedValue(4026);
+  let tmp3Result = tmp3(4050);
   const fn = function y() {
-    let obj = {};
+    let obj = { transform: null };
     obj = { scale: sharedValue.get() };
     const items = [obj];
-    obj.transform = items;
+    obj[0] = items;
     return obj;
   };
   fn.__closure = { scale: sharedValue };
@@ -59,70 +65,78 @@ function ProgressBarMarkerInnerContent(arg0) {
         return null;
       }
     }
-    obj = {};
+    obj = { style: null, children: null };
     const items1 = [tmp.progressBarMarkerInnerCircle];
-    obj.style = items1;
-    let View = isTierUnlocked(4026).View;
-    obj = {};
-    const items2 = [tmp.progressBarMarkerInnerCircleBackground, !useReducedMotion && isTierUnlocked && tmp6, ];
-    const obj1 = {};
+    obj[0] = items1;
+    let View = obj(4050).View;
+    const items2 = [tmp.progressBarMarkerInnerCircleBackground, , ];
+    let tmp16 = !useReducedMotion;
+    if (!useReducedMotion) {
+      tmp16 = isTierUnlocked;
+    }
+    if (tmp16) {
+      tmp16 = tmp7;
+    }
+    items2[1] = tmp16;
     if (isTierUnlocked) {
-      let PREMIUM_PERK_PINK = isTierUnlocked(689).unsafe_rawColors.PREMIUM_PERK_PINK;
+      let PREMIUM_PERK_PINK = obj(712).unsafe_rawColors.PREMIUM_PERK_PINK;
     } else {
-      const obj6 = sharedValue(4009);
-      if (obj7.isThemeDark(tmp2)) {
+      tmp3Result = tmp3(4033);
+      if (tmp3Result1.isThemeDark(tmp2)) {
         num = 0.5;
       }
-      PREMIUM_PERK_PINK = obj6.hexWithOpacity(isTierUnlocked(689).unsafe_rawColors.WHITE, num);
-      obj7 = sharedValue(4011);
+      PREMIUM_PERK_PINK = tmp3Result.hexWithOpacity(obj(712).unsafe_rawColors.WHITE, num);
+      tmp3Result1 = tmp3(4035);
     }
-    obj1.backgroundColor = PREMIUM_PERK_PINK;
-    items2[2] = obj1;
-    obj.style = items2;
+    obj = { style: null };
+    obj = { backgroundColor: null };
+    obj[0] = PREMIUM_PERK_PINK;
+    items2[2] = obj;
+    obj[0] = items2;
     View = closure_7(View, obj);
-    obj = [View, null];
-    obj.children = obj;
+    items3 = [View, null];
+    obj[1] = items3;
     closure_8(closure_4, obj);
-    const tmp16 = closure_8;
-    const tmp17 = closure_4;
-    const tmp18 = closure_7;
+    const tmp13 = closure_8;
+    const tmp14 = closure_4;
+    const tmp15 = closure_7;
   } else if (isDisabled) {
-    let tmp27Result = tmp27(sharedValue(11652).BoostGemSlashIcon, { size: "xxs", color: "currentColor" });
+    let tmp18Result = tmp18(tmp3(11676).BoostGemSlashIcon, { size: "xxs", color: "currentColor" });
   } else {
-    const obj2 = { source: obj[tier] };
-    const items3 = [isTierUnlocked ? tmp.progressBarMarkerInnerCircleIconUnlocked : tmp.progressBarMarkerInnerCircleIcon, ];
-    const obj3 = {};
-    const unsafe_rawColors = isTierUnlocked(689).unsafe_rawColors;
-    obj3.tintColor = isTierUnlocked ? unsafe_rawColors.WHITE : unsafe_rawColors.PREMIUM_PERK_PINK;
-    items3[1] = obj3;
-    obj2.style = items3;
-    tmp27Result = tmp27(closure_5, obj2);
-    const tmp7 = closure_5;
+    obj1 = { source: null, style: null };
+    obj1[0] = obj[tier];
+    const items4 = [isTierUnlocked ? tmp.progressBarMarkerInnerCircleIconUnlocked : tmp.progressBarMarkerInnerCircleIcon, ];
+    const unsafe_rawColors = obj(712).unsafe_rawColors;
+    const obj2 = { tintColor: null };
+    obj2[0] = isTierUnlocked ? unsafe_rawColors.WHITE : unsafe_rawColors.PREMIUM_PERK_PINK;
+    items4[1] = obj2;
+    obj1[1] = items4;
+    tmp18Result = tmp18(closure_5, obj1);
+    const tmp8 = closure_5;
   }
 }
-({ View: closure_4, Image: closure_5 } = get_ActivityIndicator);
-({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
+({ View: c4, Image: c5 } = get_ActivityIndicator);
+({ jsx: error, jsxs: metroImportAll } = jsxProd);
 let obj = { [BoostedGuildTiers.NONE]: 0, [BoostedGuildTiers.TIER_1]: 0.3333333333333333, [BoostedGuildTiers.TIER_2]: 0.6666666666666666, [BoostedGuildTiers.TIER_3]: 1 };
-obj = { [BoostedGuildTiers.TIER_1]: require("registerAsset"), [BoostedGuildTiers.TIER_2]: require("registerAsset"), [BoostedGuildTiers.TIER_3]: require("registerAsset") };
-obj = { progressBarMarkerInnerCircle: { width: 17.5, height: 17.5, display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center" }, progressBarMarkerInnerCircleBackground: { width: "100%", height: "100%", borderRadius: 17.5, position: "absolute" }, progressBarMarkerInnerCircleIcon: { width: 16, height: 16 } };
-let obj1 = { width: "95%", height: "95%", tintColor: require("_createForOfIteratorHelperLoose").colors.WHITE };
-obj.progressBarMarkerInnerCircleIconUnlocked = obj1;
-let closure_11 = _createForOfIteratorHelperLoose.createStyles(obj);
+obj = { [TIER_1]: require("registerAsset"), [TIER_2]: require("registerAsset"), [TIER_3]: require("registerAsset") };
+({ TIER_1, TIER_2, TIER_3 } = BoostedGuildTiers);
+obj = { progressBarMarkerInnerCircle: { width: 17.5, height: 17.5, display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center" }, progressBarMarkerInnerCircleBackground: { width: "100%", height: "100%", borderRadius: 17.5, position: "absolute" }, progressBarMarkerInnerCircleIcon: { width: 16, height: 16 }, progressBarMarkerInnerCircleIconUnlocked: null };
+obj[3] = { width: "95%", height: "95%", tintColor: require("Themes").colors.WHITE };
+let closure_11 = createCacheKey.createStyles(obj);
 let closure_12 = { stiffness: 50, damping: 5 };
 let closure_13 = { code: "function GuildBoostingMarketingProgressBarMarkerTsx1(){const{scale}=this.__closure;return{transform:[{scale:scale.get()}]};}" };
-_createForOfIteratorHelperLoose = { progressBarMarker: obj3, progressBarMarkerBackground: { width: "100%", height: "100%", position: "absolute", borderRadius: 28 } };
-obj3 = { height: 28, width: 28, position: "absolute", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", transform: null, zIndex: 1 };
-let items = [{ translateX: -14 }];
-obj3.transform = items;
-let obj4 = { width: 75, position: "absolute", top: "100%", paddingTop: 8, color: require("_createForOfIteratorHelperLoose").colors.MOBILE_TEXT_HEADING_PRIMARY, display: "flex", alignItems: "center", flexDirection: "row", justifyContent: "center", textAlign: "center" };
-_createForOfIteratorHelperLoose.progressBarMarkerLabel = obj4;
+createCacheKey = { progressBarMarker: { height: 28, width: 28, position: "absolute", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", transform: items, zIndex: 1 }, progressBarMarkerBackground: { width: "100%", height: "100%", position: "absolute", borderRadius: 28 }, progressBarMarkerLabel: null, progressBarMarkerLabelWithIcon: null, progressBarMarkerLabelLocked: null, progressBarMarkerUnlockedIcon: null };
+items = [{ translateX: -14 }];
+let obj1 = { width: "95%", height: "95%", tintColor: require("Themes").colors.WHITE };
+createCacheKey[2] = { width: 75, position: "absolute", top: "100%", paddingTop: 8, color: require("Themes").colors.MOBILE_TEXT_HEADING_PRIMARY, display: "flex", alignItems: "center", flexDirection: "row", justifyContent: "center", textAlign: "center" };
 let items1 = [{ translateX: -7 }];
-_createForOfIteratorHelperLoose.progressBarMarkerLabelWithIcon = { transform: items1 };
-_createForOfIteratorHelperLoose.progressBarMarkerLabelLocked = { opacity: 0.4 };
-_createForOfIteratorHelperLoose = { height: 12, width: 12, marginRight: 2, tintColor: require("_createForOfIteratorHelperLoose").colors.MOBILE_TEXT_HEADING_PRIMARY };
-_createForOfIteratorHelperLoose.progressBarMarkerUnlockedIcon = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-let closure_15 = { code: "function GuildBoostingMarketingProgressBarMarkerTsx2(){const{scale}=this.__closure;return{transform:[{scale:scale.get()}]};}" };
+createCacheKey[3] = { transform: items1 };
+createCacheKey[4] = { opacity: 0.4 };
+let obj3 = { width: 75, position: "absolute", top: "100%", paddingTop: 8, color: require("Themes").colors.MOBILE_TEXT_HEADING_PRIMARY, display: "flex", alignItems: "center", flexDirection: "row", justifyContent: "center", textAlign: "center" };
+createCacheKey[5] = { height: 12, width: 12, marginRight: 2, tintColor: require("Themes").colors.MOBILE_TEXT_HEADING_PRIMARY };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let closure_16 = { code: "function GuildBoostingMarketingProgressBarMarkerTsx2(){const{scale}=this.__closure;return{transform:[{scale:scale.get()}]};}" };
+let obj4 = { height: 12, width: 12, marginRight: 2, tintColor: require("Themes").colors.MOBILE_TEXT_HEADING_PRIMARY };
 let result = require("ME").fileFinishedImporting("modules/guild_boosting/native/marketing_redesign/GuildBoostingMarketingProgressBarMarker.tsx");
 
 export default function ProgressBarMarker(arg0) {
@@ -132,22 +146,24 @@ export default function ProgressBarMarker(arg0) {
   let tier;
   let useReducedMotion;
   ({ guild, tier, useReducedMotion } = arg0);
+  let sharedValue;
+  let importDefault;
   let dependencyMap;
   ({ revealedTier, isDisabled } = arg0);
-  let tmp = _createForOfIteratorHelperLoose();
-  let obj = sharedValue(4026);
+  let tmp = createCacheKey();
+  let obj = sharedValue(4050);
   sharedValue = obj.useSharedValue(1);
-  const importDefault = tmp4;
-  let tmp7 = tmp6;
+  importDefault = tmp7;
+  let tmp15Result = tmp9;
   if (guild.premiumTier >= tier) {
-    tmp7 = tmp5;
+    tmp15Result = tmp8;
   }
-  dependencyMap = tmp7;
-  let items = [tmp7, sharedValue, tier === guild.premiumTier];
+  dependencyMap = tmp15Result;
+  let items = [tmp15Result, sharedValue, tier === guild.premiumTier];
   const effect = React.useEffect(() => {
     let tmp = _undefined;
     if (_undefined) {
-      tmp = closure_1;
+      tmp = c1;
     }
     if (tmp) {
       const result = sharedValue.set(0);
@@ -155,94 +171,98 @@ export default function ProgressBarMarker(arg0) {
       const obj = sharedValue(_undefined[11]);
     }
   }, items);
-  let obj1 = sharedValue(4026);
+  let tmp5Result = tmp5(4050);
   class P {
     constructor() {
-      obj = {};
-      obj = { scale: closure_0.get() };
+      obj = { transform: null };
+      obj = { scale: c0.get() };
       items = [];
       items[0] = obj;
-      obj.transform = items;
+      obj[0] = items;
       return obj;
     }
   }
   P.__closure = { scale: sharedValue };
   P.__workletHash = 6884434326805;
-  P.__initData = closure_15;
-  obj = { style: items1 };
+  P.__initData = closure_16;
+  obj = { style: items1, children: null };
   items1 = [tmp.progressBarMarker, ];
   obj = { left: `${100 * obj[tier]}%` };
   items1[1] = obj;
-  const animatedStyle = obj1.useAnimatedStyle(P);
-  obj1 = {};
+  const animatedStyle = tmp5Result.useAnimatedStyle(P);
   const items2 = [tmp.progressBarMarkerBackground, , ];
-  let tmp13 = !useReducedMotion;
-  if (tmp13) {
-    tmp13 = animatedStyle;
+  let tmp16 = !useReducedMotion;
+  if (!useReducedMotion) {
+    tmp16 = animatedStyle;
   }
-  items2[1] = tmp13;
-  const obj2 = {};
+  items2[1] = tmp16;
   if (tier === guild.premiumTier) {
-    if (tmp7) {
-      let PREMIUM_PERK_PINK = importDefault(689).unsafe_rawColors.PREMIUM_PERK_PINK;
+    if (tmp15Result) {
+      let PREMIUM_PERK_PINK = tmp2(712).unsafe_rawColors.PREMIUM_PERK_PINK;
     }
-    obj2.backgroundColor = PREMIUM_PERK_PINK;
+    const obj1 = { style: null };
+    const obj2 = { backgroundColor: null };
+    obj2[0] = PREMIUM_PERK_PINK;
     items2[2] = obj2;
-    obj1.style = items2;
-    const items3 = [tmp12(importDefault(4026).View, obj1), , ];
-    const obj3 = { tier, isDisabled, isTierUnlocked: tmp6, isTierAnimated: tmp5, isCurrentTier: tmp4, useReducedMotion };
-    items3[1] = callback(ProgressBarMarkerInnerContent, obj3);
-    const obj4 = {};
+    obj1[0] = items2;
+    const items3 = [tmp15(tmp2(4050).View, obj1), , ];
+    const obj3 = { tier: null, isDisabled: null, isTierUnlocked: null, isTierAnimated: null, isCurrentTier: null, useReducedMotion: null };
+    obj3[0] = tier;
+    obj3[1] = isDisabled;
+    obj3[2] = tmp9;
+    obj3[3] = tmp8;
+    obj3[4] = tmp7;
+    obj3[5] = useReducedMotion;
+    items3[1] = tmp15(ProgressBarMarkerInnerContent, obj3);
     const items4 = [tmp.progressBarMarkerLabel, , ];
-    let progressBarMarkerLabelLocked = !tmp7;
-    if (!tmp7) {
+    let progressBarMarkerLabelLocked = !tmp15Result;
+    if (!tmp15Result) {
       progressBarMarkerLabelLocked = tmp.progressBarMarkerLabelLocked;
     }
     items4[1] = progressBarMarkerLabelLocked;
-    let progressBarMarkerLabelWithIcon = tmp7;
-    if (tmp7) {
+    let progressBarMarkerLabelWithIcon = tmp15Result;
+    if (tmp15Result) {
       progressBarMarkerLabelWithIcon = tier !== BoostedGuildTiers.NONE;
     }
     if (progressBarMarkerLabelWithIcon) {
       progressBarMarkerLabelWithIcon = tmp.progressBarMarkerLabelWithIcon;
     }
+    const obj4 = { style: null, children: null };
     items4[2] = progressBarMarkerLabelWithIcon;
-    obj4.style = items4;
-    if (tmp7) {
-      tmp7 = tier !== BoostedGuildTiers.NONE;
+    obj4[0] = items4;
+    if (tmp15Result) {
+      tmp15Result = tier !== BoostedGuildTiers.NONE;
     }
-    if (tmp7) {
-      const obj5 = { source: importDefault(9986), style: tmp.progressBarMarkerUnlockedIcon };
-      tmp7 = callback(closure_5, obj5);
+    if (tmp15Result) {
+      const obj5 = { source: null, style: null };
+      obj5[0] = tmp2(10008);
+      obj5[1] = tmp.progressBarMarkerUnlockedIcon;
+      tmp15Result = tmp15(closure_5, obj5);
     }
-    const items5 = [tmp7, ];
+    const items5 = [tmp15Result, ];
+    const obj6 = { variant: "text-xs/medium", children: null };
     class P {
       constructor() {
-        obj = {};
-        obj = { scale: closure_0.get() };
+        obj = { transform: null };
+        obj = { scale: c0.get() };
         items = [];
         items[0] = obj;
-        obj.transform = items;
+        obj[0] = items;
         return obj;
       }
     }
-    let obj6 = { variant: "text-xs/medium" };
-    const obj7 = { useLevels: false };
-    obj6.children = sharedValue(4057).getTierName(tier, obj7);
-    items5[1] = callback(sharedValue(4161).Text, obj6);
-    obj4.children = items5;
-    items3[2] = closure_8(closure_4, obj4);
-    obj.children = items3;
-    return tmp10(tmp11, obj);
+    obj6[1] = obj12.getTierName(tier, { useLevels: false });
+    items5[1] = tmp15(tmp5(4185).Text, obj6);
+    obj4[1] = items5;
+    items3[2] = tmp13(tmp14, obj4);
+    obj[1] = items3;
+    return tmp13(tmp14, obj);
   }
-  obj6 = sharedValue(4011);
-  tmp10 = closure_8;
-  tmp11 = closure_4;
-  tmp12 = callback;
-  const tmp2 = importDefault(4101)();
-  const isThemeDarkResult = obj6.isThemeDark(importDefault(4101)());
-  const hexWithOpacity = sharedValue(4009).hexWithOpacity;
-  const unsafe_rawColors = importDefault(689).unsafe_rawColors;
+  tmp5Result = tmp5(4035);
+  const tmp4 = importDefault(4125)();
+  const isThemeDarkResult = tmp5Result.isThemeDark(importDefault(4125)());
+  const hexWithOpacity = sharedValue(4033).hexWithOpacity;
+  const unsafe_rawColors = tmp2(712).unsafe_rawColors;
   if (isThemeDarkResult) {
     PREMIUM_PERK_PINK = hexWithOpacity(unsafe_rawColors.WHITE, 0.4);
   } else {

@@ -1,86 +1,131 @@
-// Module ID: 12853
-// Function ID: 99926
-// Name: round
-// Dependencies: [6, 7, 4257, 653, 4241, 2]
+// Module ID: 12875
+// Function ID: 12876
+// Name: _initStats
+// Dependencies: [4281, 676, 4265, 2]
 
-// Module 12853 (round)
-import _classCallCheck from "_classCallCheck";
-import _defineProperties from "_defineProperties";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 12875 (_initStats)
+import handleConnectionInfoChange from "handleConnectionInfoChange";
 import ME from "ME";
 
-let closure_5;
-let closure_6;
+let c3;
+let c4;
 const require = arg1;
-function round(arg0) {
-  let num = arg1;
-  if (arg1 === undefined) {
-    num = 0;
+({ NetworkConnectionTypes: c3, NetworkConnectionSpeeds: c4 } = ME);
+let result = require("sleep").fileFinishedImporting("lib/NetworkQuality.tsx");
+class NetworkQuality {
+  constructor() {
+    obj = Object.create(new.target.prototype);
+    obj._networkStats = obj._initStats();
+    obj2 = require("sleep");
+    obj._lastSampleTimestamp = obj2.now();
+    return obj;
   }
-  if (null != arg0) {
-    const _Math = Math;
-    num = Math.round(arg0);
-  }
-  return num;
 }
-({ NetworkConnectionTypes: closure_5, NetworkConnectionSpeeds: closure_6 } = ME);
-const tmp3 = (() => {
-  class NetworkQuality {
-    constructor() {
-      tmp = outer1_2(this, NetworkQuality);
-      this._networkStats = this._initStats();
-      obj = NetworkQuality(outer1_1[4]);
-      this._lastSampleTimestamp = obj.now();
-      return;
-    }
+const prototype = NetworkQuality.prototype;
+prototype["_initStats"] = function _initStats() {
+  const obj = { effectiveConnectionSpeedBuckets: {}, connectionTypeBuckets: {} };
+  let values = Object.values(closure_3);
+  const item = values.forEach((arg0) => {
+    obj.connectionTypeBuckets[arg0] = 0;
+  });
+  values = Object.values(closure_4);
+  const item1 = values.forEach((arg0) => {
+    obj.effectiveConnectionSpeedBuckets[arg0] = 0;
+  });
+  return obj;
+};
+prototype["getStats"] = function getStats() {
+  const _networkStats = this._networkStats;
+  let num = 0;
+  if (null != _networkStats.connectionTypeBuckets[constants.WIFI]) {
+    const _Math = Math;
+    num = Math.round(tmp2);
   }
-  let obj = {
-    key: "_initStats",
-    value() {
-      const obj = { effectiveConnectionSpeedBuckets: {}, connectionTypeBuckets: {} };
-      let values = Object.values(outer1_5);
-      const item = values.forEach((arg0) => {
-        obj.connectionTypeBuckets[arg0] = 0;
-      });
-      values = Object.values(outer1_6);
-      const item1 = values.forEach((arg0) => {
-        obj.effectiveConnectionSpeedBuckets[arg0] = 0;
-      });
-      return obj;
-    }
-  };
-  const items = [obj, , ];
-  obj = {
-    key: "getStats",
-    value() {
-      const _networkStats = this._networkStats;
-      return { duration_connection_type_wifi: outer1_7(_networkStats.connectionTypeBuckets[outer1_5.WIFI]), duration_connection_type_cellular: outer1_7(_networkStats.connectionTypeBuckets[outer1_5.CELLULAR]), duration_connection_type_ethernet: outer1_7(_networkStats.connectionTypeBuckets[outer1_5.ETHERNET]), duration_connection_type_bluetooth: outer1_7(_networkStats.connectionTypeBuckets[outer1_5.BLUETOOTH]), duration_connection_type_other: outer1_7(_networkStats.connectionTypeBuckets[outer1_5.OTHER]), duration_connection_type_unknown: outer1_7(_networkStats.connectionTypeBuckets[outer1_5.UNKNOWN]), duration_connection_type_none: outer1_7(_networkStats.connectionTypeBuckets[outer1_5.NONE]), duration_effective_connection_speed_2g: outer1_7(_networkStats.effectiveConnectionSpeedBuckets[outer1_6.TWO_G]), duration_effective_connection_speed_3g: outer1_7(_networkStats.effectiveConnectionSpeedBuckets[outer1_6.THREE_G]), duration_effective_connection_speed_4g: outer1_7(_networkStats.effectiveConnectionSpeedBuckets[outer1_6.FOUR_G]), duration_effective_connection_speed_5g: outer1_7(_networkStats.effectiveConnectionSpeedBuckets[outer1_6.FIVE_G]), duration_effective_connection_speed_unknown: outer1_7(_networkStats.effectiveConnectionSpeedBuckets[outer1_6.UNKNOWN]) };
-    }
-  };
-  items[1] = obj;
-  obj = {
-    key: "incrementNetworkStats",
-    value(_lastSampleTimestamp) {
-      const self = this;
-      const result = (_lastSampleTimestamp - this._lastSampleTimestamp) / 1000;
-      let TWO_G = outer1_4.getEffectiveConnectionSpeed();
-      if (TWO_G === outer1_6.SLOW_TWO_G) {
-        TWO_G = outer1_6.TWO_G;
-      }
-      let WIFI = outer1_4.getType();
-      if (WIFI === outer1_5.WIMAX) {
-        WIFI = outer1_5.WIFI;
-      }
-      const effectiveConnectionSpeedBuckets = self._networkStats.effectiveConnectionSpeedBuckets;
-      effectiveConnectionSpeedBuckets[TWO_G] = effectiveConnectionSpeedBuckets[TWO_G] + result;
-      const connectionTypeBuckets = self._networkStats.connectionTypeBuckets;
-      connectionTypeBuckets[WIFI] = connectionTypeBuckets[WIFI] + result;
-      self._lastSampleTimestamp = _lastSampleTimestamp;
-    }
-  };
-  items[2] = obj;
-  return callback(NetworkQuality, items);
-})();
-let result = require("_isNativeReflectConstruct").fileFinishedImporting("lib/NetworkQuality.tsx");
+  const obj = { duration_connection_type_wifi: num, duration_connection_type_cellular: null, duration_connection_type_ethernet: null, duration_connection_type_bluetooth: null, duration_connection_type_other: null, duration_connection_type_unknown: null, duration_connection_type_none: null, duration_effective_connection_speed_2g: null, duration_effective_connection_speed_3g: null, duration_effective_connection_speed_4g: null, duration_effective_connection_speed_5g: null, duration_effective_connection_speed_unknown: null };
+  let num2 = 0;
+  if (null != _networkStats.connectionTypeBuckets[constants.CELLULAR]) {
+    const _Math2 = Math;
+    num2 = Math.round(tmp4);
+  }
+  obj[1] = num2;
+  let num3 = 0;
+  if (null != _networkStats.connectionTypeBuckets[constants.ETHERNET]) {
+    const _Math3 = Math;
+    num3 = Math.round(tmp6);
+  }
+  obj[2] = num3;
+  let num4 = 0;
+  if (null != _networkStats.connectionTypeBuckets[constants.BLUETOOTH]) {
+    const _Math4 = Math;
+    num4 = Math.round(tmp8);
+  }
+  obj[3] = num4;
+  let num5 = 0;
+  if (null != _networkStats.connectionTypeBuckets[constants.OTHER]) {
+    const _Math5 = Math;
+    num5 = Math.round(tmp10);
+  }
+  obj[4] = num5;
+  let num6 = 0;
+  if (null != _networkStats.connectionTypeBuckets[constants.UNKNOWN]) {
+    const _Math6 = Math;
+    num6 = Math.round(tmp12);
+  }
+  obj[5] = num6;
+  let num7 = 0;
+  if (null != _networkStats.connectionTypeBuckets[constants.NONE]) {
+    const _Math7 = Math;
+    num7 = Math.round(tmp14);
+  }
+  obj[6] = num7;
+  let num8 = 0;
+  if (null != _networkStats.effectiveConnectionSpeedBuckets[constants2.TWO_G]) {
+    const _Math8 = Math;
+    num8 = Math.round(tmp17);
+  }
+  obj[7] = num8;
+  let num9 = 0;
+  if (null != _networkStats.effectiveConnectionSpeedBuckets[constants2.THREE_G]) {
+    const _Math9 = Math;
+    num9 = Math.round(tmp19);
+  }
+  obj[8] = num9;
+  let num10 = 0;
+  if (null != _networkStats.effectiveConnectionSpeedBuckets[constants2.FOUR_G]) {
+    const _Math10 = Math;
+    num10 = Math.round(tmp21);
+  }
+  obj[9] = num10;
+  let num11 = 0;
+  if (null != _networkStats.effectiveConnectionSpeedBuckets[constants2.FIVE_G]) {
+    const _Math11 = Math;
+    num11 = Math.round(tmp23);
+  }
+  obj[10] = num11;
+  let num12 = 0;
+  if (null != _networkStats.effectiveConnectionSpeedBuckets[constants2.UNKNOWN]) {
+    const _Math12 = Math;
+    num12 = Math.round(tmp25);
+  }
+  obj[11] = num12;
+  return obj;
+};
+prototype["incrementNetworkStats"] = function incrementNetworkStats(nowResult) {
+  const self = this;
+  const result = (nowResult - this._lastSampleTimestamp) / 1000;
+  let TWO_G = effectiveConnectionSpeed.getEffectiveConnectionSpeed();
+  if (TWO_G === constants2.SLOW_TWO_G) {
+    TWO_G = constants2.TWO_G;
+  }
+  let WIFI = effectiveConnectionSpeed.getType();
+  if (WIFI === constants.WIMAX) {
+    WIFI = constants.WIFI;
+  }
+  const effectiveConnectionSpeedBuckets = self._networkStats.effectiveConnectionSpeedBuckets;
+  effectiveConnectionSpeedBuckets[TWO_G] = effectiveConnectionSpeedBuckets[TWO_G] + result;
+  const connectionTypeBuckets = self._networkStats.connectionTypeBuckets;
+  connectionTypeBuckets[WIFI] = connectionTypeBuckets[WIFI] + result;
+  self._lastSampleTimestamp = nowResult;
+};
 
-export default tmp3;
+export default NetworkQuality;

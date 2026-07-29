@@ -1,11 +1,11 @@
-// Module ID: 11698
-// Function ID: 90585
+// Module ID: 11722
+// Function ID: 11723
 // Name: useProvisionalAccountExplanationText
-// Dependencies: [31, 653, 11699, 1212, 1921, 2]
+// Dependencies: [19, 676, 11723, 1236, 1945, 2]
 // Exports: useProvisionalAccountExplanationText
 
-// Module 11698 (useProvisionalAccountExplanationText)
-import result from "result";
+// Module 11722 (useProvisionalAccountExplanationText)
+import noop from "noop";
 import { HelpdeskArticles } from "ME";
 
 const require = arg1;
@@ -13,25 +13,26 @@ const result = require("useProvisionalAccountApplication").fileFinishedImporting
 
 export const useProvisionalAccountExplanationText = function useProvisionalAccountExplanationText(renderApplicationName) {
   renderApplicationName = renderApplicationName.renderApplicationName;
-  const tmp = importDefault(11699)(renderApplicationName.userId);
+  let importDefault;
+  const tmp = importDefault(11723)(renderApplicationName.userId);
   importDefault = tmp;
   const items = [tmp, renderApplicationName];
   return React.useMemo(() => {
-    if (null != tmp) {
-      const intl2 = renderApplicationName(outer1_2[3]).intl;
-      let obj = {
-        helpdeskArticle: tmp(outer1_2[4]).getArticleURL(outer1_4.SLAYER_PROVISIONAL_ACCOUNTS),
-        applicationName() {
-            return outer1_0(outer1_1);
-          }
-      };
-      let formatResult = intl2.format(renderApplicationName(outer1_2[3]).t.rSUACb, obj);
-      const obj4 = tmp(outer1_2[4]);
-    } else {
+    if (null != _undefined) {
       const intl = renderApplicationName(outer1_2[3]).intl;
-      obj = { helpdeskArticle: renderApplicationName(outer1_2[4]).getArticleURL(outer1_4.SLAYER_PROVISIONAL_ACCOUNTS) };
-      formatResult = intl.format(renderApplicationName(outer1_2[3]).t["q+N8L6"], obj);
-      const obj2 = renderApplicationName(outer1_2[4]);
+      let obj = { helpdeskArticle: null, applicationName: null };
+      obj[0] = _undefined(outer1_2[4]).getArticleURL(outer1_4.SLAYER_PROVISIONAL_ACCOUNTS);
+      obj[1] = function applicationName() {
+        return callback(closure_1);
+      };
+      let formatResult = intl.format(renderApplicationName(outer1_2[3]).t.rSUACb, obj);
+      const obj2 = _undefined(outer1_2[4]);
+    } else {
+      const intl2 = renderApplicationName(outer1_2[3]).intl;
+      obj = { helpdeskArticle: null };
+      obj[0] = _undefined(outer1_2[4]).getArticleURL(outer1_4.SLAYER_PROVISIONAL_ACCOUNTS);
+      formatResult = intl2.format(renderApplicationName(outer1_2[3]).t["q+N8L6"], obj);
+      const obj4 = _undefined(outer1_2[4]);
     }
     return formatResult;
   }, items);

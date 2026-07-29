@@ -1,26 +1,26 @@
-// Module ID: 14343
-// Function ID: 110007
+// Module ID: 14365
+// Function ID: 14366
 // Name: EyeDropperIcon
-// Dependencies: [31, 33, 689, 3868, 14344, 2]
+// Dependencies: [19, 21, 712, 3892, 14366, 2]
 // Exports: EyeDropperIcon
 
-// Module 14343 (EyeDropperIcon)
-import "result";
+// Module 14365 (EyeDropperIcon)
+import "noop";
 import { jsx } from "jsxProd";
 
 const require = arg1;
-const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("design/components/Icon/native/redesign/generated/EyeDropperIcon.tsx");
+const result = require("Themes").fileFinishedImporting("design/components/Icon/native/redesign/generated/EyeDropperIcon.tsx");
 
 export const EyeDropperIcon = function EyeDropperIcon(color) {
   let INTERACTIVE_ICON_DEFAULT = color.color;
   if (INTERACTIVE_ICON_DEFAULT === undefined) {
-    INTERACTIVE_ICON_DEFAULT = importDefault(689).colors.INTERACTIVE_ICON_DEFAULT;
+    INTERACTIVE_ICON_DEFAULT = importDefault(712).colors.INTERACTIVE_ICON_DEFAULT;
   }
-  let obj = Object.create(null);
-  obj.style = 0;
-  obj.color = 0;
-  const merged = Object.assign(color, obj);
-  obj = { source: require(14344) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
+  const merged = Object.assign(color, Object.create(null));
+  const obj = { source: null, color: null, style: null };
+  obj[0] = require(14366) /* registerAsset */;
+  obj[1] = INTERACTIVE_ICON_DEFAULT;
+  obj[2] = color.style;
   const merged1 = Object.assign(merged);
-  return jsx(require(3868) /* BaseIconImage */.BaseIconImage, { source: require(14344) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(require(3892) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
 };

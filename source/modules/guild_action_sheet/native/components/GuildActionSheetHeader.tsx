@@ -1,36 +1,37 @@
-// Module ID: 13082
-// Function ID: 101048
+// Module ID: 13105
+// Function ID: 13106
 // Name: CommunityPill
-// Dependencies: [31, 27, 13083, 1838, 6036, 653, 33, 4165, 689, 478, 1212, 8444, 8438, 8996, 8447, 4695, 3866, 1273, 4161, 6540, 566, 1387, 13084, 13085, 1450, 5548, 1392, 1426, 8800, 3869, 5119, 8440, 10125, 2]
+// Dependencies: [19, 17, 13106, 1862, 6054, 676, 21, 4189, 712, 501, 1236, 8468, 8462, 9020, 8471, 4717, 3890, 1297, 4185, 6561, 589, 1411, 13107, 13108, 1474, 5566, 1416, 1450, 8824, 3893, 5141, 8464, 10146, 2]
 // Exports: default
 
-// Module 13082 (CommunityPill)
-import GuildBadgeV2 from "GuildBadgeV2";
-import get_ActivityIndicator from "isAttachmentLadderEnabled";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_7 from "_createForOfIteratorHelperLoose";
-import closure_8 from "_isNativeReflectConstruct";
+// Module 13105 (CommunityPill)
+import useIsWindowLarge from "useIsWindowLarge";
+import get_ActivityIndicator from "Button";
+import initialize from "initialize";
+import createGuildRecordFromRust from "createGuildRecordFromRust";
+import handleConnectionOpenOrResumed from "handleConnectionOpenOrResumed";
 import { GuildFeatures } from "ME";
-import jsxProd from "set";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import isWindows from "isWindows";
+import jsxProd from "fromGuildPropertiesWithAdditionalFields";
+import createCacheKey from "createCacheKey";
+import PlatformTypes from "PlatformTypes";
 
-let closure_10;
-let closure_11;
-let closure_4;
-let closure_5;
+let c10;
+let c4;
+let c5;
+let unpackModuleId;
 const require = arg1;
 function CommunityPill(guildVisibility) {
   let GlobeEarthIcon;
-  const tmp = _createForOfIteratorHelperLoose();
-  const intl = GlobeEarthIcon(1212).intl;
-  let importDefault = intl.string(GlobeEarthIcon(1212).t.TME4LJ);
-  let tmp2 = importDefault(8444);
-  if (guildVisibility.guildVisibility === GlobeEarthIcon(8438).GuildVisibility.PUBLIC) {
-    const intl2 = GlobeEarthIcon(1212).intl;
-    importDefault = intl2.string(GlobeEarthIcon(1212).t.op2cJ6);
-    GlobeEarthIcon = GlobeEarthIcon(8996).GlobeEarthIcon;
-    tmp2 = importDefault(8447);
+  let importDefault;
+  const tmp = createCacheKey();
+  const intl = GlobeEarthIcon(1236).intl;
+  importDefault = intl.string(GlobeEarthIcon(1236).t.TME4LJ);
+  let tmp4Result = importDefault(8468);
+  if (guildVisibility.guildVisibility === GlobeEarthIcon(8462).GuildVisibility.PUBLIC) {
+    const intl2 = tmp2(1236).intl;
+    importDefault = intl2.string(tmp2(1236).t.op2cJ6);
+    GlobeEarthIcon = tmp2(9020).GlobeEarthIcon;
+    tmp4Result = importDefault(8471);
   }
   let obj = {
     style: tmp.communityPill,
@@ -39,57 +40,61 @@ function CommunityPill(guildVisibility) {
       let obj = callback(outer1_2[16]);
       obj = { key: "SERVER_BADGE_DESCRIPTION_INVITE_ONLY", content: callback, IconComponent: GlobeEarthIcon };
       obj.open(obj);
-    }
+    },
+    children: null
   };
-  obj = { style: tmp.communityPillIcon, source: tmp2, disableColor: true };
-  const items = [callback(GlobeEarthIcon(1273).Icon, obj), ];
-  obj = { variant: "text-xs/medium", color: "text-default", style: tmp.communityPillText };
-  const intl3 = GlobeEarthIcon(1212).intl;
-  obj.children = intl3.string(GlobeEarthIcon(1212).t.K7iRig);
-  items[1] = callback(GlobeEarthIcon(4161).Text, obj);
-  obj.children = items;
-  return callback2(GlobeEarthIcon(4695).PressableOpacity, obj);
+  obj = { style: tmp.communityPillIcon, source: tmp4Result, disableColor: true };
+  const items = [callback(GlobeEarthIcon(1297).Icon, obj), ];
+  obj = { variant: "text-xs/medium", color: "text-default", style: tmp.communityPillText, children: null };
+  const intl3 = tmp2(1236).intl;
+  obj[3] = intl3.string(GlobeEarthIcon(1236).t.K7iRig);
+  items[1] = callback(GlobeEarthIcon(4185).Text, obj);
+  obj[3] = items;
+  return callback2(GlobeEarthIcon(4717).PressableOpacity, obj);
 }
-({ View: closure_4, Image: closure_5 } = get_ActivityIndicator);
-({ jsx: closure_10, jsxs: closure_11 } = jsxProd);
-_createForOfIteratorHelperLoose = { content: { padding: 16 }, avatar: { borderRadius: 14.117647058823529, height: 60, width: 60 } };
-_createForOfIteratorHelperLoose = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.MOBILE_ACTIONSHEET_BACKGROUND };
-_createForOfIteratorHelperLoose.headerContainer = _createForOfIteratorHelperLoose;
-let obj1 = { height: 68, width: 68, marginBottom: 12, marginLeft: -4, padding: 4, borderRadius: 16, alignContent: "center", justifyContent: "center", backgroundColor: require("_createForOfIteratorHelperLoose").colors.MOBILE_ACTIONSHEET_BACKGROUND };
-_createForOfIteratorHelperLoose.avatarBackground = obj1;
-_createForOfIteratorHelperLoose.description = { marginTop: 8 };
-_createForOfIteratorHelperLoose.memberInfo = { marginTop: 16, flexDirection: "row", alignItems: "center", flexWrap: "wrap", gap: 16 };
-_createForOfIteratorHelperLoose.nameRow = { flexDirection: "row", alignItems: "center", marginTop: 8 };
-let obj2 = { flexDirection: "row", alignItems: "center", backgroundColor: require("_createForOfIteratorHelperLoose").colors.INTERACTIVE_BACKGROUND_HOVER, paddingTop: 4, paddingRight: 8, paddingBottom: 4, paddingLeft: 6, borderRadius: require("_createForOfIteratorHelperLoose").radii.round };
-_createForOfIteratorHelperLoose.communityPill = obj2;
-_createForOfIteratorHelperLoose.communityPillIcon = { width: 16, height: 16, marginRight: 6 };
-let obj3 = {};
+({ View: c4, Image: c5 } = get_ActivityIndicator);
+({ jsx: c10, jsxs: unpackModuleId } = jsxProd);
+createCacheKey = { content: { padding: 16 }, avatar: { borderRadius: 14.117647058823529, height: 60, width: 60 }, headerContainer: null, avatarBackground: null, description: null, memberInfo: null, nameRow: null, communityPill: null, communityPillIcon: null, communityPillText: null, guildBanner: null };
+createCacheKey = { backgroundColor: require("Themes").colors.MOBILE_ACTIONSHEET_BACKGROUND };
+createCacheKey[2] = createCacheKey;
+createCacheKey[3] = { height: 68, width: 68, marginBottom: 12, marginLeft: -4, padding: 4, borderRadius: 16, alignContent: "center", justifyContent: "center", backgroundColor: require("Themes").colors.MOBILE_ACTIONSHEET_BACKGROUND };
+createCacheKey[4] = { marginTop: 8 };
+createCacheKey[5] = { marginTop: 16, flexDirection: "row", alignItems: "center", flexWrap: "wrap", gap: 16 };
+createCacheKey[6] = { flexDirection: "row", alignItems: "center", marginTop: 8 };
+let obj1 = { height: 68, width: 68, marginBottom: 12, marginLeft: -4, padding: 4, borderRadius: 16, alignContent: "center", justifyContent: "center", backgroundColor: require("Themes").colors.MOBILE_ACTIONSHEET_BACKGROUND };
+createCacheKey[7] = { flexDirection: "row", alignItems: "center", backgroundColor: require("Themes").colors.INTERACTIVE_BACKGROUND_HOVER, paddingTop: 4, paddingRight: 8, paddingBottom: 4, paddingLeft: 6, borderRadius: require("Themes").radii.round };
+createCacheKey[8] = { width: 16, height: 16, marginRight: 6 };
 let num;
-if (isWindows.isAndroid()) {
+if (PlatformTypes.isAndroid()) {
   num = 14;
 }
-obj3.lineHeight = num;
-_createForOfIteratorHelperLoose.communityPillText = obj3;
-_createForOfIteratorHelperLoose.guildBanner = { position: "absolute", left: "50%", top: 0 };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/guild_action_sheet/native/components/GuildActionSheetHeader.tsx");
+createCacheKey[9] = { lineHeight: num };
+createCacheKey[10] = { position: "absolute", left: "50%", top: 0 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let obj2 = { flexDirection: "row", alignItems: "center", backgroundColor: require("Themes").colors.INTERACTIVE_BACKGROUND_HOVER, paddingTop: 4, paddingRight: 8, paddingBottom: 4, paddingLeft: 6, borderRadius: require("Themes").radii.round };
+let result = require("initialize").fileFinishedImporting("modules/guild_action_sheet/native/components/GuildActionSheetHeader.tsx");
 
 export default function GuildActionSheetHeader(guild) {
+  let description;
   let memberCount;
+  let name;
   let onlineCount;
   guild = guild.guild;
+  let importDefault;
+  let stateFromStores;
   let width;
   let c4;
-  const tmp = _createForOfIteratorHelperLoose();
-  const importDefault = tmp;
-  const tmp2 = importDefault(stateFromStores[19])();
+  const tmp = createCacheKey();
+  importDefault = tmp;
+  const tmp4 = importDefault(stateFromStores[19])();
   let obj = guild(stateFromStores[20]);
-  const items = [closure_8];
+  const items = [handleConnectionOpenOrResumed];
   stateFromStores = obj.useStateFromStores(items, () => outer1_8.isSubscribedToAnyGuildChannel(guild.id));
+  let obj1 = width;
   const items1 = [guild, stateFromStores];
   const effect = width.useEffect(() => {
     let isGuildRecordResult = !stateFromStores;
-    if (isGuildRecordResult) {
+    if (!stateFromStores) {
       isGuildRecordResult = guild(stateFromStores[21]).isGuildRecord(guild);
       const obj = guild(stateFromStores[21]);
     }
@@ -98,28 +103,27 @@ export default function GuildActionSheetHeader(guild) {
       const obj2 = guild(stateFromStores[22]);
     }
   }, items1);
-  let obj1 = guild(stateFromStores[20]);
-  const items2 = [closure_7];
-  const stateFromStores1 = obj1.useStateFromStores(items2, () => outer1_7.getGuild(guild.id));
   let obj2 = guild(stateFromStores[20]);
-  const items3 = [_isNativeReflectConstruct];
-  const stateFromStores2 = obj2.useStateFromStores(items3, () => outer1_6.getGuild(guild.id));
-  let tmp7 = stateFromStores2;
-  if (null != stateFromStores1) {
-    tmp7 = stateFromStores1;
+  const items2 = [createGuildRecordFromRust];
+  let stateFromStores1 = obj2.useStateFromStores(items2, () => outer1_7.getGuild(guild.id));
+  let obj3 = guild(stateFromStores[20]);
+  const items3 = [initialize];
+  const stateFromStores2 = obj3.useStateFromStores(items3, () => outer1_6.getGuild(guild.id));
+  if (stateFromStores1 == null) {
+    stateFromStores1 = stateFromStores2;
   }
-  if (null != tmp7) {
-    guild = tmp7;
+  if (stateFromStores1 == null) {
+    stateFromStores1 = guild;
   }
-  let obj3 = guild(stateFromStores[23]);
-  const guildHeaderCounts = obj3.useGuildHeaderCounts(guild.id);
-  onlineCount = undefined;
+  let tmp5Result = tmp5(tmp3[23]);
+  const guildHeaderCounts = tmp5Result.useGuildHeaderCounts(stateFromStores1.id);
   memberCount = undefined;
+  onlineCount = undefined;
   if (stateFromStores) {
     ({ onlineCount, memberCount } = guildHeaderCounts);
   }
-  let tmp9 = onlineCount;
-  let tmp10 = memberCount;
+  let tmp11 = memberCount;
+  let tmp12 = onlineCount;
   if (null != stateFromStores2) {
     let presenceCount = onlineCount;
     if (onlineCount == null) {
@@ -129,129 +133,137 @@ export default function GuildActionSheetHeader(guild) {
     if (memberCount == null) {
       memberCount2 = stateFromStores2.memberCount;
     }
-    tmp10 = memberCount2;
-    tmp9 = presenceCount;
+    tmp11 = memberCount2;
+    tmp12 = presenceCount;
   }
-  width = importDefault(stateFromStores[24])().width;
-  let obj4 = guild(stateFromStores[21]);
-  if (obj4.isGuildRecord(guild)) {
-    const features = guild.features;
-    obj = { style: tmp.avatarBackground, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", accessibilityRole: "none" };
+  width = tmp2(tmp3[24])().width;
+  tmp5Result = tmp5(tmp3[21]);
+  if (tmp5Result.isGuildRecord(stateFromStores1)) {
+    const features = stateFromStores1.features;
+    obj = { style: null, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", accessibilityRole: "none", children: null };
+    obj[0] = tmp.avatarBackground;
     const hasItem = features.has(GuildFeatures.ANIMATED_BANNER);
-    obj = { style: tmp.avatar, guild, size: guild(stateFromStores[25]).GuildIconSizes.XLARGE, animate: true };
-    obj.children = callback(importDefault(stateFromStores[25]), obj);
+    obj = { style: null, guild: null, size: null, animate: true };
+    obj[0] = tmp.avatar;
+    obj[1] = stateFromStores1;
+    let tmp2Result = tmp2(tmp3[25]);
+    obj[2] = tmp5(tmp3[25]).GuildIconSizes.XLARGE;
+    obj[4] = callback(tmp2Result, obj);
     let guildBannerSource = null;
-    const tmp28 = importDefault(stateFromStores[25]);
-    if (null != guild.banner) {
+    if (null != stateFromStores1.banner) {
       guildBannerSource = null;
-      if (!tmp2) {
-        let obj13 = importDefault(stateFromStores[26]);
-        obj1 = {};
-        ({ id: obj15.id, banner: obj15.banner } = guild);
-        guildBannerSource = obj13.getGuildBannerSource(obj1, hasItem);
+      if (!tmp4) {
+        tmp2Result = tmp2(tmp3[26]);
+        obj1 = { id: null, banner: null };
+        ({ id: obj16[0], banner: obj16[1] } = stateFromStores1);
+        guildBannerSource = tmp2Result.getGuildBannerSource(obj1, hasItem);
       }
     }
     let guildSplashSource = guildBannerSource;
-    let tmp20 = callback(c4, obj);
-    const tmp30 = callback(c4, obj);
+    let tmp17 = callback(c4, obj);
+    let tmp18 = callback;
+    const tmp21 = callback;
+    const tmp24 = callback(c4, obj);
   } else {
-    let obj5 = importDefault(stateFromStores[26]);
-    obj2 = {};
-    ({ id: obj7.id, icon: obj7.icon } = guild);
-    obj2.canAnimate = true;
-    obj2.size = 68;
-    obj3 = { style: tmp.avatar, source: obj5.getGuildIconSource(obj2) };
+    obj2 = { id: null, icon: null, canAnimate: true, size: 68 };
+    ({ id: obj8[0], icon: obj8[1] } = stateFromStores1);
+    obj3 = { style: null, source: null };
+    obj3[0] = tmp.avatar;
+    obj3[1] = tmp2(tmp3[26]).getGuildIconSource(obj2);
     guildSplashSource = null;
-    if (null != guild.splash) {
+    const tmp13 = callback;
+    const tmp2Result1 = tmp2(tmp3[26]);
+    if (null != stateFromStores1.splash) {
       guildSplashSource = null;
-      if (!tmp2) {
-        let obj8 = importDefault(stateFromStores[26]);
-        obj4 = {};
-        ({ id: obj10.id, splash: obj10.splash } = guild);
-        let obj10 = guild(stateFromStores[27]);
-        obj4.size = width * obj10.getDevicePixelRatio();
-        guildSplashSource = obj8.getGuildSplashSource(obj4);
+      if (!tmp4) {
+        const obj4 = { id: null, splash: null, size: null };
+        ({ id: obj11[0], splash: obj11[1] } = stateFromStores1);
+        const tmp2Result2 = tmp2(tmp3[26]);
+        obj4[2] = width * tmp5(tmp3[27]).getDevicePixelRatio();
+        guildSplashSource = tmp2Result2.getGuildSplashSource(obj4);
+        const tmp5Result1 = tmp5(tmp3[27]);
       }
     }
-    tmp20 = callback(closure_5, obj3);
+    tmp17 = callback(closure_5, obj3);
+    tmp18 = tmp13;
     const tmp15 = callback(closure_5, obj3);
   }
-  const description = guild.description;
-  let obj15 = guild(stateFromStores[12]);
-  const guildTraits = obj15.getGuildTraits(guild);
-  let obj16 = guild(stateFromStores[28]);
+  ({ description, name } = stateFromStores1);
+  const guildTraits = guild(stateFromStores[12]).getGuildTraits(stateFromStores1);
+  const tmp5Result2 = guild(stateFromStores[12]);
   const result = 0.56 * width;
   c4 = result;
   const items4 = [tmp.guildBanner, width, result];
-  const clientThemesOverride = obj16.useClientThemesOverride();
-  const memo = width.useMemo(() => {
+  const clientThemesOverride = guild(stateFromStores[28]).useClientThemesOverride();
+  const memo = obj1.useMemo(() => {
     const obj = {};
-    const merged = Object.assign(tmp.guildBanner);
-    obj["width"] = width;
-    obj["height"] = c4;
-    obj["marginLeft"] = -width / 2;
+    const merged = Object.assign(_undefined.guildBanner);
+    obj.width = width;
+    obj.height = c4;
+    obj.marginLeft = -width / 2;
     return obj;
   }, items4);
-  let obj17 = guild(stateFromStores[29]);
-  obj5 = { style: items5 };
+  const tmp5Result3 = guild(stateFromStores[28]);
+  const obj5 = { style: items5, children: null };
   items5 = [tmp.headerContainer, clientThemesOverride];
-  let tmp41 = null != guildSplashSource;
-  const token = obj17.useToken(importDefault(stateFromStores[8]).modules.mobile.CHANNEL_LIST_TITLE_TEXT_STYLE);
-  if (tmp41) {
-    const obj6 = { style: memo, source: guildSplashSource };
-    tmp41 = callback(importDefault(stateFromStores[30]), obj6);
+  let tmp18Result = null != guildSplashSource;
+  const token = guild(stateFromStores[29]).useToken(tmp2(tmp3[8]).modules.mobile.CHANNEL_LIST_TITLE_TEXT_STYLE);
+  if (tmp18Result) {
+    const obj6 = { style: null, source: null };
+    obj6[0] = memo;
+    obj6[1] = guildSplashSource;
+    tmp18Result = tmp18(tmp2(tmp3[30]), obj6);
   }
-  const items6 = [tmp41, ];
-  const obj7 = {};
+  const items6 = [tmp18Result, ];
   const items7 = [tmp.content, ];
-  obj8 = {};
-  let num7 = 0;
+  let num = 0;
   if (null != guildSplashSource) {
-    num7 = result - 48;
+    num = result - 48;
   }
-  obj8.marginTop = num7;
-  items7[1] = obj8;
-  obj7.style = items7;
-  const items8 = [tmp20, , , ];
-  const obj9 = { style: tmp.nameRow };
-  obj10 = { guild };
-  const items9 = [callback(importDefault(stateFromStores[31]), obj10), ];
-  const obj11 = { lineClamp: 2, accessibilityRole: "header", variant: token, color: "mobile-text-heading-primary", children: guild.name };
-  items9[1] = callback(guild(stateFromStores[18]).Text, obj11);
-  obj9.children = items9;
-  items8[1] = callback2(c4, obj9);
-  let tmp47 = null;
+  const obj7 = { style: items7, children: null };
+  items7[1] = { marginTop: num };
+  const items8 = [tmp17, , , ];
+  const obj8 = { style: tmp.nameRow, children: null };
+  const items9 = [tmp18(importDefault(stateFromStores[31]), { guild: stateFromStores1 }), tmp18(guild(stateFromStores[18]).Text, { lineClamp: 2, accessibilityRole: "header", variant: token, color: "mobile-text-heading-primary", children: name })];
+  obj8[1] = items9;
+  items8[1] = closure_11(c4, obj8);
+  tmp18Result = null;
   if (null != description) {
-    const obj12 = { style: tmp.description, variant: "text-sm/medium", color: "text-default", children: description };
-    tmp47 = callback(guild(stateFromStores[18]).Text, obj12);
+    const obj9 = { style: null, variant: "text-sm/medium", color: "text-default", children: null };
+    obj9[0] = tmp.description;
+    obj9[3] = description;
+    tmp18Result = tmp18(tmp5(tmp3[18]).Text, obj9);
   }
-  items8[2] = tmp47;
-  obj13 = { style: tmp.memberInfo };
-  let tmp53 = null;
+  items8[2] = tmp18Result;
+  const obj10 = { style: tmp.memberInfo, children: null };
+  let tmp18Result1 = null;
   if (guildTraits.community) {
-    const obj14 = { guildVisibility: guildTraits.visibility };
-    tmp53 = callback(CommunityPill, obj14);
+    const obj11 = { guildVisibility: null };
+    obj11[0] = guildTraits.visibility;
+    tmp18Result1 = tmp18(CommunityPill, obj11);
   }
-  const items10 = [tmp53, ];
-  obj15 = { style: { gap: 15, flexDirection: "row" } };
-  let tmp58 = null != tmp9;
-  if (tmp58) {
-    obj16 = { type: "online", count: tmp9 };
-    tmp58 = callback(importDefault(stateFromStores[32]), obj16);
+  const items10 = [tmp18Result1, ];
+  const obj12 = { style: { gap: 15, flexDirection: "row" }, children: null };
+  let tmp18Result2 = null != tmp12;
+  if (tmp18Result2) {
+    const obj13 = { type: "online", count: null };
+    obj13[1] = tmp12;
+    tmp18Result2 = tmp18(tmp2(tmp3[32]), obj13);
   }
-  const items11 = [tmp58, ];
-  let tmp62 = null != tmp10;
-  if (tmp62) {
-    obj17 = { type: "total", count: tmp10 };
-    tmp62 = callback(importDefault(stateFromStores[32]), obj17);
+  const items11 = [tmp18Result2, ];
+  let tmp18Result3 = null != tmp11;
+  if (tmp18Result3) {
+    const obj14 = { type: "total", count: null };
+    obj14[1] = tmp11;
+    tmp18Result3 = tmp18(tmp2(tmp3[32]), obj14);
   }
-  items11[1] = tmp62;
-  obj15.children = items11;
-  items10[1] = callback2(c4, obj15);
-  obj13.children = items10;
-  items8[3] = callback2(c4, obj13);
-  obj7.children = items8;
-  items6[1] = callback2(c4, obj7);
-  obj5.children = items6;
-  return callback2(c4, obj5);
+  items11[1] = tmp18Result3;
+  obj12[1] = items11;
+  items10[1] = closure_11(c4, obj12);
+  obj10[1] = items10;
+  items8[3] = closure_11(c4, obj10);
+  obj7[1] = items8;
+  items6[1] = closure_11(c4, obj7);
+  obj5[1] = items6;
+  return closure_11(c4, obj5);
 };

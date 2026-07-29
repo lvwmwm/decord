@@ -1,18 +1,18 @@
-// Module ID: 10672
-// Function ID: 83043
+// Module ID: 10696
+// Function ID: 10697
 // Name: openNotificationSettings
-// Dependencies: [27, 477, 4719, 2]
+// Dependencies: [17, 500, 4741, 2]
 // Exports: default
 
-// Module 10672 (openNotificationSettings)
+// Module 10696 (openNotificationSettings)
 import { NativeModules } from "get ActivityIndicator";
 
 let result = require("enforcing").fileFinishedImporting("modules/native_permissions/mobile/openNotificationSettings.native.tsx");
 
 export default function openNotificationSettings() {
   if (obj.isAndroid()) {
-    const result = importDefault(4719).openNotificationSettings();
-    const obj2 = importDefault(4719);
+    const result = importDefault(4741).openNotificationSettings();
+    const obj2 = importDefault(4741);
   } else {
     const DeviceSettingsManager = NativeModules.DeviceSettingsManager;
     const result1 = DeviceSettingsManager.openNotificationSettings();

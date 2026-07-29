@@ -1,17 +1,17 @@
-// Module ID: 4655
-// Function ID: 40420
+// Module ID: 4677
+// Function ID: 4678
 // Name: isValidFormResponse
-// Dependencies: [4656, 653, 3985, 1327, 2]
+// Dependencies: [4678, 676, 4009, 1351, 2]
 // Exports: guildHasVerificationGate, isAutomaticApprovalFormField, isManualApprovalFormField, isValidFormResponse, removeInternalFields
 
-// Module 4655 (isValidFormResponse)
+// Module 4677 (isValidFormResponse)
 import items from "items";
 import { GuildFeatures } from "ME";
 
-let closure_2;
-let closure_3;
-({ AUTOMATIC_APPROVAL_FORM_FIELDS: closure_2, MANUAL_APPROVAL_FORM_FIELDS: closure_3 } = items);
-const result = require("isTermsFormField").fileFinishedImporting("modules/guild_member_verification/MemberVerificationUtils.tsx");
+let c3;
+let obj1;
+({ AUTOMATIC_APPROVAL_FORM_FIELDS: obj1, MANUAL_APPROVAL_FORM_FIELDS: c3 } = items);
+const result = require("MAX_RESULTS_PER_PAGE").fileFinishedImporting("modules/guild_member_verification/MemberVerificationUtils.tsx");
 
 export const isValidFormResponse = function isValidFormResponse(required) {
   let field_type;
@@ -21,22 +21,22 @@ export const isValidFormResponse = function isValidFormResponse(required) {
     if (null == response) {
       return false;
     } else {
-      if (require(3985) /* isTermsFormField */.VerificationFormFieldTypes.TERMS !== field_type) {
-        if (require(3985) /* isTermsFormField */.VerificationFormFieldTypes.VERIFICATION !== field_type) {
-          if (require(3985) /* isTermsFormField */.VerificationFormFieldTypes.TEXT_INPUT !== field_type) {
-            if (require(3985) /* isTermsFormField */.VerificationFormFieldTypes.PARAGRAPH !== field_type) {
-              if (require(3985) /* isTermsFormField */.VerificationFormFieldTypes.MULTIPLE_CHOICE === field_type) {
-                return "number" === typeof response;
+      if (require(4009) /* MAX_RESULTS_PER_PAGE */.VerificationFormFieldTypes.TERMS !== field_type) {
+        if (tmp4(4009).VerificationFormFieldTypes.VERIFICATION !== field_type) {
+          if (tmp4(4009).VerificationFormFieldTypes.TEXT_INPUT !== field_type) {
+            if (tmp4(4009).VerificationFormFieldTypes.PARAGRAPH !== field_type) {
+              if (tmp4(4009).VerificationFormFieldTypes.MULTIPLE_CHOICE === field_type) {
+                return typeof response === "Object";
               } else {
-                return require(1327) /* isDiscordFrontendDevelopment */.assertNever(field_type);
+                return tmp4(1351).assertNever(field_type);
               }
             }
           }
-          let tmp8 = "string" === typeof response;
-          if (tmp8) {
-            tmp8 = "" !== response.trim();
+          let tmp2 = typeof response === "y";
+          if (typeof response !== "init") {
+            tmp2 = "" !== response.trim();
           }
-          return tmp8;
+          return tmp2;
         }
       }
       const _Boolean = Boolean;
@@ -47,18 +47,18 @@ export const isValidFormResponse = function isValidFormResponse(required) {
   }
 };
 export const removeInternalFields = function removeInternalFields(arr) {
-  return arr.filter((field_type) => field_type.field_type !== outer1_0(outer1_1[2]).VerificationFormFieldTypes.VERIFICATION);
+  return arr.filter((field_type) => field_type.field_type !== callback(table[2]).VerificationFormFieldTypes.VERIFICATION);
 };
 export const isAutomaticApprovalFormField = function isAutomaticApprovalFormField(field_type) {
   field_type = undefined;
-  if (null != field_type) {
+  if (field_type != null) {
     field_type = field_type.field_type;
   }
   return set.has(field_type);
 };
 export const isManualApprovalFormField = function isManualApprovalFormField(field_type) {
   field_type = undefined;
-  if (null != field_type) {
+  if (field_type != null) {
     field_type = field_type.field_type;
   }
   return set2.has(field_type);

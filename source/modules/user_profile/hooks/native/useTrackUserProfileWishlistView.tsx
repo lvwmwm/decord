@@ -1,17 +1,17 @@
-// Module ID: 12172
-// Function ID: 95201
+// Module ID: 12196
+// Function ID: 12197
 // Name: useTrackUserProfileWishlistView
-// Dependencies: [31, 8650, 566, 2]
+// Dependencies: [19, 8674, 589, 2]
 // Exports: default
 
-// Module 12172 (useTrackUserProfileWishlistView)
-import result from "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 12196 (useTrackUserProfileWishlistView)
+import noop from "noop";
+import get from "get";
 
-let closure_2;
-let closure_3;
-({ useEffect: closure_2, useRef: closure_3 } = result);
-result = require("initialize").fileFinishedImporting("modules/user_profile/hooks/native/useTrackUserProfileWishlistView.tsx");
+let c3;
+let obj1;
+({ useEffect: obj1, useRef: c3 } = noop);
+const result = require("initialize").fileFinishedImporting("modules/user_profile/hooks/native/useTrackUserProfileWishlistView.tsx");
 
 export default function useTrackUserProfileWishlistView(wishlistId) {
   wishlistId = wishlistId.wishlistId;
@@ -34,15 +34,13 @@ export default function useTrackUserProfileWishlistView(wishlistId) {
         current = ref.current;
       }
       if (!current) {
-        const obj = { action: "VIEW_WISHLIST", wishlistId };
-        let tmp7;
-        if (null != productLines) {
-          tmp7 = productLines;
-        }
-        obj.productLines = tmp7;
+        const obj = { action: "VIEW_WISHLIST", wishlistId: null, productLines: null };
+        obj[1] = wishlistId;
+        obj[2] = productLines;
         onAction(obj);
         ref.current = true;
         const tmp3 = onAction;
+        const tmp5 = productLines;
       }
     } else {
       ref.current = false;

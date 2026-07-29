@@ -1,32 +1,32 @@
-// Module ID: 8742
-// Function ID: 69168
+// Module ID: 8766
+// Function ID: 8767
 // Name: GiftButton
-// Dependencies: [57, 31, 27, 6198, 5796, 655, 653, 8743, 1852, 33, 4165, 689, 6661, 8744, 4133, 8707, 8745, 1212, 8738, 8737, 8686, 1456, 5497, 4372, 11878, 1935, 5779, 11882, 656, 11883, 9768, 8681, 4161, 4579, 1877, 4101, 4011, 3869, 8640, 566, 8372, 3811, 5792, 5791, 8695, 9774, 11885, 11886, 11887, 6241, 11889, 1557, 478, 4589, 8507, 4578, 5517, 1921, 11890, 2]
+// Dependencies: [32, 19, 17, 6218, 5814, 678, 676, 8767, 1876, 21, 4189, 712, 6682, 8768, 4157, 8731, 8769, 1236, 8762, 8761, 8710, 1480, 5515, 4395, 11902, 1959, 5797, 11906, 679, 11907, 9790, 8705, 4185, 4601, 1901, 4125, 4035, 3893, 8664, 589, 8396, 3835, 5810, 5809, 8719, 9796, 11909, 11910, 11911, 6261, 11913, 1581, 501, 4611, 8531, 4600, 5535, 1945, 11914, 2]
 // Exports: default
 
-// Module 8742 (GiftButton)
-import wrapURL from "wrapURL";
-import OrbsIcon from "OrbsIcon";
-import { View } from "screens";
+// Module 8766 (GiftButton)
+import Text from "Text";
+import useProductDisableState from "useProductDisableState";
+import { View } from "getSystemLocale";
 import { useNativeCheckoutStore } from "context";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import map from "map";
 import items from "items";
 import ME from "ME";
 import { RootNavigatorScreen } from "MODE_CHANGE_PHYSICS";
 import GuildFeatures from "GuildFeatures";
-import jsxProd from "CollapsingText";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import jsxProd from "useNavigation";
+import createCacheKey from "createCacheKey";
 
-let closure_10;
-let closure_11;
+let c10;
+let c9;
 let closure_12;
 let closure_14;
 let closure_15;
 let closure_16;
 let closure_17;
 let closure_18;
-let closure_8;
-let closure_9;
+let metroImportAll;
+let unpackModuleId;
 let require = arg1;
 function GiftButton(onTrackPress) {
   let importDefault;
@@ -37,29 +37,29 @@ function GiftButton(onTrackPress) {
     variant = "primary";
   }
   onTrackPress = onTrackPress.onTrackPress;
-  let obj = { size: "lg", variant };
-  obj = { size: "md" };
+  let obj = { size: "lg", variant, icon: null, onPress: null, accessibilityLabel: null };
   if ("primary" === variant) {
-    let TEXT_STRONG = importDefault(onTrackPress[11]).colors.WHITE;
+    let TEXT_STRONG = importDefault(tmp3[11]).colors.WHITE;
   } else {
-    TEXT_STRONG = importDefault(onTrackPress[11]).colors.TEXT_STRONG;
+    TEXT_STRONG = importDefault(tmp3[11]).colors.TEXT_STRONG;
   }
-  obj.color = TEXT_STRONG;
-  obj.icon = closure_16(require(onTrackPress[13]).GiftIcon, obj);
-  obj.onPress = function onPress() {
-    if (null != onTrackPress) {
-      onTrackPress(outer1_9.SEND_AS_GIFT);
+  obj[2] = closure_16(require(onTrackPress[13]).GiftIcon, { size: "md", color: TEXT_STRONG });
+  obj[3] = function onPress() {
+    if (onTrackPress != null) {
+      tmp(outer1_9.SEND_AS_GIFT);
     }
     let obj = outer1_1(onTrackPress[14]);
     obj.hideActionSheet(outer1_0(onTrackPress[15]).PRODUCT_DETAILS_ACTION_SHEET_KEY);
     obj = { skuId: skuId.skuId, analyticsLocations: closure_1 };
     outer1_0(onTrackPress[16]).openShopGiftModal(obj);
   };
-  const intl = require(onTrackPress[17]).intl;
-  obj.accessibilityLabel = intl.string(require(onTrackPress[17]).t.PEjaCx);
+  const intl = tmp2(tmp3[17]).intl;
+  obj[4] = intl.string(require(onTrackPress[17]).t.PEjaCx);
   return closure_16(require(onTrackPress[12]).IconButton, obj);
 }
 function VCButton(balance) {
+  let canAfford;
+  let price;
   balance = balance.balance;
   const product = balance.product;
   const importDefault = product;
@@ -72,25 +72,24 @@ function VCButton(balance) {
   let navigation;
   let analyticsLocations;
   let closure_6;
-  let _isNativeReflectConstruct;
+  let map;
   let str;
-  const tmp = _createForOfIteratorHelperLoose();
+  const tmp = createCacheKey();
   c3 = tmp;
   let obj = balance(onTrackPress[18]);
   const virtualCurrencyData = obj.useVirtualCurrencyData(product, flag);
-  const price = virtualCurrencyData.price;
+  ({ price, canAfford } = virtualCurrencyData);
   let obj1 = balance(onTrackPress[19]);
   let isPartiallyOwnedBundle = obj1.useProductDisableState(product.skuId).isDisabled;
   let obj2 = balance(onTrackPress[20]);
   if (!isPartiallyOwnedBundle) {
-    isPartiallyOwnedBundle = !virtualCurrencyData.canAfford;
+    isPartiallyOwnedBundle = !canAfford;
   }
   if (!isPartiallyOwnedBundle) {
     isPartiallyOwnedBundle = obj2.useProductPurchaseState(product).isPartiallyOwnedBundle;
   }
-  let obj3 = balance(onTrackPress[21]);
-  navigation = obj3.useNavigation();
-  analyticsLocations = importDefault(onTrackPress[22])().analyticsLocations;
+  navigation = balance(onTrackPress[21]).useNavigation();
+  analyticsLocations = importDefault(tmp3[22])().analyticsLocations;
   const items = [navigation, product, balance, analyticsLocations];
   closure_6 = navigation.useCallback(() => {
     let obj = product(onTrackPress[14]);
@@ -99,45 +98,50 @@ function VCButton(balance) {
       skuId: product.skuId,
       analyticsLocations,
       onCheckoutSuccess(arg0) {
-        let obj = balance(onTrackPress[26]);
+        let obj = outer1_0(outer1_2[26]);
         const collectiblesPurchases = obj.fetchCollectiblesPurchases();
-        let obj1 = product(onTrackPress[23]);
-        obj1.popWithKey(outer2_20);
-        if (outer1_1.skuId === str.ORB_PROFILE_BADGE) {
-          obj = {
-            modalKey: outer2_19,
-            onPressViewBadge(arg0) {
-                return outer2_4.navigate(outer3_13.YOU, { showOrbsBadgeCoachmark: true });
-              },
-            orbBalancePriorToPurchase: outer1_0
+        let obj1 = outer1_1(outer1_2[23]);
+        obj1.popWithKey(outer1_20);
+        if (skuId.skuId === outer1_8.ORB_PROFILE_BADGE) {
+          let tmp4Result = tmp4(tmp2[23]);
+          obj = { modalKey: null, onPressViewBadge: null, orbBalancePriorToPurchase: null };
+          obj[0] = outer1_19;
+          obj[1] = function onPressViewBadge(arg0) {
+            return navigation.navigate(outer1_13.YOU, { showOrbsBadgeCoachmark: true });
           };
-          product(onTrackPress[23]).pushLazy(balance(onTrackPress[25])(onTrackPress[27], onTrackPress.paths), obj, outer2_19);
-          const obj7 = product(onTrackPress[23]);
+          obj[2] = closure_0;
+          tmp4Result.pushLazy(tmp(tmp2[25])(tmp2[27], tmp2.paths), obj, outer1_19);
         } else {
-          const ALL = balance(onTrackPress[28]).FractionalPremiumSKUsSets.ALL;
-          if (ALL.has(outer1_1.skuId)) {
-            let tmp23Result = tmp23(tmp24[14]);
-            obj = { skuId: outer1_1.skuId };
+          const ALL = tmp(tmp2[28]).FractionalPremiumSKUsSets.ALL;
+          if (ALL.has(tmp6.skuId)) {
+            tmp4Result = tmp4(tmp2[14]);
+            obj = { skuId: null, consumed: null, onPressExplorePerks: null, onPressViewCredits: null };
+            obj[0] = tmp6.skuId;
             const first = arg0.entitlements[0];
-            let consumed;
-            if (null != first) {
-              consumed = first.consumed;
+            let flag;
+            if (first != null) {
+              flag = first.consumed;
             }
-            obj.consumed = null != consumed && consumed;
-            obj.onPressExplorePerks = function onPressExplorePerks() {
-              outer2_4.navigate(outer3_12.PREMIUM);
-              product(onTrackPress[14]).hideActionSheet();
+            if (flag == null) {
+              flag = false;
+            }
+            obj[1] = flag;
+            obj[2] = function onPressExplorePerks() {
+              navigation.navigate(outer1_12.PREMIUM);
+              outer1_1(outer1_2[14]).hideActionSheet();
             };
-            obj.onPressViewCredits = function onPressViewCredits() {
-              outer2_4.navigate(outer3_12.PREMIUM_MANAGE_PLAN);
-              product(onTrackPress[14]).hideActionSheet();
+            obj[3] = function onPressViewCredits() {
+              navigation.navigate(outer1_12.PREMIUM_MANAGE_PLAN);
+              outer1_1(outer1_2[14]).hideActionSheet();
             };
-            tmp23Result.openLazy(balance(tmp24[25])(tmp24[29], tmp24.paths), "FractionalNitroCollectedActionSheet", obj);
-            const tmp7 = balance(tmp24[25])(tmp24[29], tmp24.paths);
+            tmp4Result.openLazy(tmp(tmp2[25])(tmp2[29], tmp2.paths), "FractionalNitroCollectedActionSheet", obj);
+            const tmp9 = tmp(tmp2[25])(tmp2[29], tmp2.paths);
           } else {
-            tmp23Result = tmp23(tmp24[30]);
-            obj1 = { product: outer1_1, useCategoryImage: true, showOrbBalancePill: true, orbBalancePriorToPurchase: outer1_0 };
-            tmp23Result.open(obj1);
+            obj1 = { product: null, useCategoryImage: true, showOrbBalancePill: true, orbBalancePriorToPurchase: null };
+            obj1[0] = tmp6;
+            obj1[3] = closure_0;
+            tmp4(tmp2[30]).open(obj1);
+            const tmp4Result1 = tmp4(tmp2[30]);
           }
         }
       }
@@ -147,458 +151,425 @@ function VCButton(balance) {
   if (null == price) {
     return null;
   } else {
-    const colors = importDefault(onTrackPress[11]).colors;
-    _isNativeReflectConstruct = isPartiallyOwnedBundle ? colors.INTERACTIVE_TEXT_ACTIVE : colors.WHITE;
+    const colors = tmp6(tmp3[11]).colors;
+    map = isPartiallyOwnedBundle ? colors.INTERACTIVE_TEXT_ACTIVE : colors.WHITE;
     str = "text-overlay-light";
     if (isPartiallyOwnedBundle) {
       str = "interactive-text-active";
     }
-    const intl = balance(onTrackPress[17]).intl;
-    obj = {
-      orbPrice: price.amount,
-      orbIconHook() {
-          return outer1_16(balance(onTrackPress[31]).OrbsIcon, { size: "sm", color: _isNativeReflectConstruct }, "orbs-icon");
-        }
+    const intl = tmp2(tmp3[17]).intl;
+    obj = { orbPrice: null, orbIconHook: null };
+    obj[0] = price.amount;
+    obj[1] = function orbIconHook() {
+      return outer1_16(balance(onTrackPress[31]).OrbsIcon, { size: "sm", color: map }, "orbs-icon");
     };
-    const formatResult = intl.format(balance(onTrackPress[17]).t.JC15qj, obj);
+    const formatResult = intl.format(tmp2(tmp3[17]).t.JC15qj, obj);
     const _Array = Array;
     let arr2 = formatResult;
     if (!Array.isArray(formatResult)) {
       const items1 = [formatResult];
       arr2 = items1;
     }
-    obj = { style: tmp.orbsButtonLabel };
-    const intl2 = balance(onTrackPress[17]).intl;
-    obj1 = { orbPrice: price.amount };
-    obj.accessibilityLabel = intl2.formatToPlainString(balance(onTrackPress[17]).t.yi41qQ, obj1);
-    obj.children = arr2.map((children) => {
-      if ("string" === typeof children) {
-        const obj = { style: _undefined.orbsButtonText, variant: "text-md/semibold", color: str, children };
-        let tmp2 = outer1_16(balance(onTrackPress[32]).Text, obj, arg1);
+    obj = { style: null, accessibilityLabel: null, children: null };
+    obj[0] = tmp.orbsButtonLabel;
+    const intl2 = tmp2(tmp3[17]).intl;
+    obj1 = { orbPrice: null };
+    obj1[0] = price.amount;
+    obj[1] = intl2.formatToPlainString(tmp2(tmp3[17]).t.yi41qQ, obj1);
+    obj[2] = arr2.map((arg0, arg1) => {
+      if (typeof arg0 === "y") {
+        const obj = { style: null, variant: "text-md/semibold", color: null, children: null };
+        obj[0] = _undefined.orbsButtonText;
+        obj[2] = str;
+        obj[3] = arg0;
+        let tmp7 = outer1_16(balance(onTrackPress[32]).Text, obj, arg1);
       } else {
-        tmp2 = children;
+        tmp7 = arg0;
       }
-      return tmp2;
+      return tmp7;
     });
-    obj2 = { style: tmp.buttonContainer };
-    obj3 = {
-      loading: false,
-      textElement: callback2(analyticsLocations, obj),
-      onPress() {
-          if (null != onTrackPress) {
-            onTrackPress(outer1_9.BUY_WITH_ORBS);
-          }
-          callback();
-        },
-      disabled: isPartiallyOwnedBundle,
-      size: "lg"
+    obj2 = { style: null, children: null };
+    obj2[0] = tmp.buttonContainer;
+    const obj3 = { loading: false, textElement: null, onPress: null, disabled: null, size: "lg", variant: null, grow: true };
+    obj3[1] = callback2(analyticsLocations, obj);
+    obj3[2] = function onPress() {
+      if (onTrackPress != null) {
+        tmp(outer1_9.BUY_WITH_ORBS);
+      }
+      callback();
     };
-    let str3 = "primary";
+    obj3[3] = isPartiallyOwnedBundle;
+    let str2 = "primary";
     if (isPartiallyOwnedBundle) {
-      str3 = "secondary";
+      str2 = "secondary";
     }
-    obj3.variant = str3;
-    obj3.grow = true;
-    obj2.children = callback2(balance(onTrackPress[33]).BaseTextButton, obj3);
+    obj3[5] = str2;
+    obj2[1] = callback2(tmp2(tmp3[33]).BaseTextButton, obj3);
     return callback2(analyticsLocations, obj2);
   }
+  const tmp2Result = balance(onTrackPress[21]);
+  tmp6 = importDefault;
 }
 function PurchaseDisclaimer(arg0) {
   let buyButtonLabel;
   let product;
   ({ product, buyButtonLabel } = arg0);
-  let obj = { style: _createForOfIteratorHelperLoose().disclaimer, variant: "text-xxs/normal", color: "interactive-text-active" };
-  let formatResult = product.type !== require(1877) /* CollectiblesItemType */.CollectiblesItemType.EXTERNAL_SKU;
+  let obj = { style: createCacheKey().disclaimer, variant: "text-xxs/normal", color: "interactive-text-active", children: null };
+  let formatResult = product.type !== require(1901) /* CollectiblesItemType */.CollectiblesItemType.EXTERNAL_SKU;
   if (formatResult) {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    obj = { buyButtonLabel, paidServiceTermURL: constants.PAID_TERMS };
-    formatResult = intl.format(require(1212) /* getSystemLocale */.t.iIglwJ, obj);
+    const intl = tmp3(1236).intl;
+    obj = { buyButtonLabel: null, paidServiceTermURL: null };
+    obj[0] = buyButtonLabel;
+    obj[1] = constants2.PAID_TERMS;
+    formatResult = intl.format(tmp3(1236).t.iIglwJ, obj);
   }
-  obj.children = formatResult;
-  return closure_16(require(4161) /* Text */.Text, obj);
+  obj[3] = formatResult;
+  return closure_16(require(4185) /* Text */.Text, obj);
 }
-({ EXTERNAL_PRODUCT_SKU_IDS: closure_8, ShopCtaEnum: closure_9 } = items);
-({ HelpdeskArticles: closure_10, MarketingURLs: closure_11, UserSettingsSections: closure_12 } = ME);
+({ EXTERNAL_PRODUCT_SKU_IDS: metroImportAll, ShopCtaEnum: c9 } = items);
+({ HelpdeskArticles: c10, MarketingURLs: unpackModuleId, UserSettingsSections: closure_12 } = ME);
 ({ PremiumTypes: closure_14, SubscriptionIntervalTypes: closure_15 } = GuildFeatures);
 ({ jsx: closure_16, jsxs: closure_17, Fragment: closure_18 } = jsxProd);
 const ORB_BADGE_COLLECTED_MODAL = "ORB_BADGE_COLLECTED_MODAL";
 const ORB_CHECKOUT_MODAL = "ORB_CHECKOUT_MODAL";
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.MOBILE_ACTIONSHEET_BACKGROUND, paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16, paddingTop: require("_createForOfIteratorHelperLoose").space.PX_8 };
-_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
-let obj1 = { borderWidth: 1, borderStyle: "solid", borderColor: require("_createForOfIteratorHelperLoose").colors.BORDER_MUTED };
-_createForOfIteratorHelperLoose.containerFramesEA = obj1;
-_createForOfIteratorHelperLoose.gradientOverlay = { position: "absolute", top: 0, left: 0, right: 0, bottom: 0 };
-_createForOfIteratorHelperLoose.purchaseSection = { gap: require("_createForOfIteratorHelperLoose").space.PX_12 };
-_createForOfIteratorHelperLoose.disclaimer = { opacity: 0.75 };
-let obj2 = { gap: require("_createForOfIteratorHelperLoose").space.PX_12 };
-_createForOfIteratorHelperLoose.buttonContainer = { flexDirection: "row", gap: require("_createForOfIteratorHelperLoose").space.PX_12 };
-let obj3 = { flexDirection: "row", gap: require("_createForOfIteratorHelperLoose").space.PX_12 };
-_createForOfIteratorHelperLoose.framesEAContainer = { flexDirection: "column", gap: require("_createForOfIteratorHelperLoose").space.PX_8 };
-_createForOfIteratorHelperLoose.orbsButtonLabel = { flexDirection: "row", alignItems: "center" };
-_createForOfIteratorHelperLoose.orbsButtonText = { flexShrink: 1 };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-let obj4 = { flexDirection: "column", gap: require("_createForOfIteratorHelperLoose").space.PX_8 };
-const result = require("get ActivityIndicator").fileFinishedImporting("modules/collectibles/native/ProductDetailsActionSheetPurchaseSection.tsx");
+createCacheKey = { container: null, containerFramesEA: null, gradientOverlay: null, purchaseSection: null, disclaimer: null, buttonContainer: null, framesEAContainer: null, orbsButtonLabel: null, orbsButtonText: null };
+createCacheKey = { backgroundColor: require("Themes").colors.MOBILE_ACTIONSHEET_BACKGROUND, paddingHorizontal: require("Themes").space.PX_16, paddingTop: require("Themes").space.PX_8 };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { borderWidth: 1, borderStyle: "solid", borderColor: require("Themes").colors.BORDER_MUTED };
+createCacheKey[2] = { position: "absolute", top: 0, left: 0, right: 0, bottom: 0 };
+let obj1 = { borderWidth: 1, borderStyle: "solid", borderColor: require("Themes").colors.BORDER_MUTED };
+createCacheKey[3] = { gap: require("Themes").space.PX_12 };
+createCacheKey[4] = { opacity: 0.75 };
+let obj2 = { gap: require("Themes").space.PX_12 };
+createCacheKey[5] = { flexDirection: "row", gap: require("Themes").space.PX_12 };
+let obj3 = { flexDirection: "row", gap: require("Themes").space.PX_12 };
+createCacheKey[6] = { flexDirection: "column", gap: require("Themes").space.PX_8 };
+createCacheKey[7] = { flexDirection: "row", alignItems: "center" };
+createCacheKey[8] = { flexShrink: 1 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let obj4 = { flexDirection: "column", gap: require("Themes").space.PX_8 };
+let result = require("get ActivityIndicator").fileFinishedImporting("modules/collectibles/native/ProductDetailsActionSheetPurchaseSection.tsx");
 
 export default function ProductDetailsActionSheetPurchaseSection(onBuy) {
-  let c18;
-  let c19;
-  let closure_14;
-  let closure_15;
-  let closure_16;
-  let closure_17;
+  let analyticsLocations;
+  let c2;
+  let c3;
+  let c4;
+  let canUseNow;
+  let isApplying;
+  let isBuying;
+  let isPartiallyOwnedBundle;
+  let isPurchased;
+  let onTrackPress;
   const product = onBuy.product;
   const require = product;
-  const analyticsLocations = onBuy.analyticsLocations;
-  const onTrackPress = onBuy.onTrackPress;
-  c18 = undefined;
-  c19 = undefined;
+  ({ analyticsLocations, onTrackPress } = onBuy);
+  let dependencyMap;
+  let callback;
+  c4 = undefined;
   let handleClaim;
-  let _createForOfIteratorHelperLoose;
-  let closure_22;
-  let closure_23;
-  let tmp = _createForOfIteratorHelperLoose();
-  const callback = tmp;
-  let obj = require(onTrackPress[36]);
-  const tmp2 = analyticsLocations(onTrackPress[35])();
-  let obj1 = require(onTrackPress[37]);
-  const token = obj1.useToken(analyticsLocations(onTrackPress[11]).colors.MOBILE_ACTIONSHEET_BACKGROUND);
-  let obj2 = require(onTrackPress[38]);
+  const tmp = createCacheKey();
+  const tmp5 = require;
+  let obj = require(4035) /* AccessibilityAnnouncer */;
+  const isThemeDarkResult = obj.isThemeDark(onTrackPress(4125)());
+  let obj1 = require(3893) /* map */;
+  const token = obj1.useToken(onTrackPress(712).colors.MOBILE_ACTIONSHEET_BACKGROUND);
+  let obj2 = require(8664) /* useCurrentUser */;
   const currentUser = obj2.useCurrentUser();
-  let obj3 = require(onTrackPress[20]);
+  let obj3 = require(8710) /* getProductPurchaseState */;
   const productPurchaseState = obj3.useProductPurchaseState(product);
-  const isPurchased = productPurchaseState.isPurchased;
-  const isPartiallyOwnedBundle = productPurchaseState.isPartiallyOwnedBundle;
-  let obj4 = require(onTrackPress[39]);
-  let items = [_isNativeReflectConstruct];
-  let items1 = [product];
-  const useNativeCheckoutStore = callback(obj4.useStateFromStoresArray(items, () => {
-    const items = [isClaiming.isClaiming === product.skuId];
-    return items;
-  }, items1), 1)[0];
-  let obj5 = require(onTrackPress[40]);
-  _isNativeReflectConstruct = obj5.useIsPremiumSubscriber(TIER_2.TIER_2);
-  let obj6 = analyticsLocations(onTrackPress[41]);
+  ({ isPurchased, isPartiallyOwnedBundle } = productPurchaseState);
+  let obj4 = require(589) /* initialize */;
+  let items = [map];
+  const items1 = [product];
+  let obj5 = require(8396) /* useIsPremiumSubscriber */;
+  const isPremiumSubscriber = obj5.useIsPremiumSubscriber(TIER_2.TIER_2);
+  let obj6 = onTrackPress(3835);
   const canUseShopDiscountsResult = obj6.canUseShopDiscounts(currentUser);
-  let obj7 = require(onTrackPress[42]);
-  let closure_9 = obj7.isPremiumCollectiblesProduct(product);
-  let obj8 = require(onTrackPress[42]);
-  let closure_10 = obj8.isFreeCollectiblesProduct(product);
-  let obj9 = require(onTrackPress[43]);
-  let closure_11 = obj9.isOrbsExclusiveProduct(product);
-  const isThemeDarkResult = obj.isThemeDark(analyticsLocations(onTrackPress[35])());
-  const balance = require(onTrackPress[44]).useFetchVirtualCurrencyBalance().balance;
-  let obj11 = require(onTrackPress[44]);
-  const canAfford = require(onTrackPress[18]).useVirtualCurrencyData(product, canUseShopDiscountsResult).canAfford;
-  let obj12 = require(onTrackPress[18]);
-  const handleUseNow = require(onTrackPress[45]).useHandleUseNow({ product, analyticsLocations });
-  ({ handleUseNow: closure_14, isApplying: closure_15, canUseNow: closure_16, handleEditProfile: closure_17 } = handleUseNow);
-  const tmp9 = useNativeCheckoutStore((orderRecord) => orderRecord.orderRecord);
-  obj = { product, analyticsLocations, onBuy: onBuy.onBuy };
+  let obj7 = require(5810) /* getItemRecordsFromPurchases */;
+  const result = obj7.isPremiumCollectiblesProduct(product);
+  let obj8 = require(5810) /* getItemRecordsFromPurchases */;
+  const result1 = obj8.isFreeCollectiblesProduct(product);
+  let obj9 = require(5809) /* getProductOrbPrice */;
+  const result2 = obj9.isOrbsExclusiveProduct(product);
+  let obj10 = require(8719);
+  const balance = obj10.useFetchVirtualCurrencyBalance().balance;
+  let obj11 = require(8762) /* useVirtualCurrencyData */;
+  const canAfford = obj11.useVirtualCurrencyData(product, canUseShopDiscountsResult).canAfford;
+  let obj12 = require(9796) /* useHandleUseNow */;
+  const handleUseNow = obj12.useHandleUseNow({ product, analyticsLocations });
+  ({ handleUseNow: c2, handleEditProfile: c3 } = handleUseNow);
+  ({ isApplying, canUseNow } = handleUseNow);
+  const tmp16 = useNativeCheckoutStore((orderRecord) => orderRecord.orderRecord);
+  obj = { product, analyticsLocations, onBuy: onBuy.onBuy, orderId: null };
   let id;
-  let obj13 = require(onTrackPress[45]);
-  if (null != tmp9) {
-    id = tmp9.id;
+  const tmp4 = onTrackPress(4125)();
+  if (tmp16 != null) {
+    id = tmp16.id;
   }
-  obj.orderId = id;
-  const tmp10 = analyticsLocations(onTrackPress[46]);
-  ({ handleBuyNow: c18, isBuying: c19 } = analyticsLocations(onTrackPress[46])(obj));
-  const tmp10Result = analyticsLocations(onTrackPress[46])(obj);
-  handleClaim = require(onTrackPress[47]).useHandleClaim({ product }).handleClaim;
-  const tmp13 = analyticsLocations(onTrackPress[48])({ location: "ProductDetailsActionSheetPurchaseSection", product });
-  _createForOfIteratorHelperLoose = tmp13;
-  let tmp22Result = tmp13;
-  if (tmp13) {
-    tmp22Result = !isPurchased;
+  obj[3] = id;
+  const tmp17 = onTrackPress(11909);
+  ({ handleBuyNow: c4, isBuying } = onTrackPress(11909)(obj));
+  let tmp5Result = tmp5(11910);
+  handleClaim = tmp5Result.useHandleClaim({ product }).handleClaim;
+  const tmp20 = onTrackPress(11911)({ location: "ProductDetailsActionSheetPurchaseSection", product });
+  let tmp25Result = tmp20;
+  if (tmp20) {
+    tmp25Result = !isPurchased;
   }
-  let obj15 = require(onTrackPress[47]);
-  closure_22 = require(onTrackPress[49]).useIsEligibleForBogoOffer() ? tmp15.MONTH : tmp15.YEAR;
-  let obj16 = require(onTrackPress[49]);
-  closure_23 = require(onTrackPress[50]).useCanGiftProduct(product);
-  let PX_16 = analyticsLocations(onTrackPress[51])().bottom;
-  obj = {};
-  let items2 = [tmp.container, , ];
-  let containerFramesEA = tmp22Result;
-  if (tmp22Result) {
+  tmp5Result = tmp5(6261);
+  const tmp17Result = onTrackPress(11909)(obj);
+  const tmp23 = tmp5Result.useIsEligibleForBogoOffer() ? closure_15.MONTH : closure_15.YEAR;
+  let canGiftProduct = tmp5(11913).useCanGiftProduct(product);
+  let PX_16 = tmp2(1581)().bottom;
+  const items2 = [tmp.container, , ];
+  let containerFramesEA = tmp25Result;
+  if (tmp25Result) {
     containerFramesEA = tmp.containerFramesEA;
   }
   items2[1] = containerFramesEA;
-  obj1 = {};
-  if (null == PX_16) {
-    PX_16 = analyticsLocations(onTrackPress[11]).space.PX_16;
+  if (PX_16 == null) {
+    PX_16 = tmp2(712).space.PX_16;
   }
-  obj1.paddingBottom = PX_16;
-  items2[2] = obj1;
-  obj.style = items2;
-  if (tmp22Result) {
-    tmp22Result = !require(onTrackPress[52]).isAndroid();
-    const obj20 = require(onTrackPress[52]);
+  obj = { style: items2, children: null };
+  items2[2] = { paddingBottom: PX_16 };
+  if (tmp25Result) {
+    tmp25Result = !tmp5(501).isAndroid();
+    const tmp5Result2 = tmp5(501);
   }
-  if (tmp22Result) {
-    obj2 = {};
-    obj3 = { colors: ["rgba(160, 86, 242, 0.45)", "rgba(22, 26, 138, 0.45)"], locations: [0.0854, 0.7847], start: { x: 0, y: 0 }, end: { x: 1, y: 1 } };
-    let items3 = [tmp.gradientOverlay, ];
-    let tmp28 = !isThemeDarkResult;
-    if (tmp28) {
-      obj4 = { opacity: 0.4 };
-      tmp28 = obj4;
+  if (tmp25Result) {
+    obj1 = { colors: null, locations: null, start: null, end: null, style: null, pointerEvents: "none" };
+    obj1[0] = ["rgba(160, 86, 242, 0.45)", "rgba(22, 26, 138, 0.45)"];
+    obj1[1] = [0.0854, 0.7847];
+    obj1[2] = { x: 0, y: 0 };
+    obj1[3] = { x: 1, y: 1 };
+    const items3 = [tmp.gradientOverlay, ];
+    obj2 = !isThemeDarkResult;
+    let tmp2Result = tmp2(4611);
+    if (!isThemeDarkResult) {
+      obj2 = { opacity: 0.4 };
     }
-    items3[1] = tmp28;
-    obj3.style = items3;
-    obj3.pointerEvents = "none";
-    let items4 = [callback2(analyticsLocations(onTrackPress[53]), obj3), ];
-    obj5 = { style: tmp.gradientOverlay, preserveAspectRatio: "none", viewBox: "0 0 100 100", pointerEvents: "none" };
-    const tmp22 = callback3;
-    const tmp23 = c18;
-    const tmp24 = callback2;
-    const tmp27 = analyticsLocations(onTrackPress[53]);
-    obj6 = {};
-    obj7 = { id: "frameEAVignette", cx: "50%", cy: "100%", rx: "100%", ry: "100%", fx: "50%", fy: "100%" };
-    obj8 = { offset: "60%", stopColor: token, stopOpacity: 1 };
-    const items5 = [callback2(require(onTrackPress[54]).Stop, obj8), ];
-    obj9 = { offset: "100%", stopColor: token, stopOpacity: 0 };
-    items5[1] = callback2(require(onTrackPress[54]).Stop, obj9);
-    obj7.children = items5;
-    obj6.children = callback3(require(onTrackPress[54]).RadialGradient, obj7);
-    const items6 = [callback2(require(onTrackPress[54]).Defs, obj6), callback2(require(onTrackPress[54]).Rect, { x: "0", y: "0", width: "100", height: "100", fill: "url(#frameEAVignette)" })];
-    obj5.children = items6;
-    items4[1] = callback3(analyticsLocations(onTrackPress[54]), obj5);
-    obj2.children = items4;
-    tmp22Result = tmp22(tmp23, obj2);
-    const tmp32 = analyticsLocations(onTrackPress[54]);
+    obj3 = { children: null };
+    items3[1] = obj2;
+    obj1[4] = items3;
+    const items4 = [callback2(tmp2Result, obj1), ];
+    obj4 = { style: null, preserveAspectRatio: "none", viewBox: "0 0 100 100", pointerEvents: "none", children: null };
+    obj4[0] = tmp.gradientOverlay;
+    tmp2Result = tmp2(8531);
+    obj5 = { children: null };
+    obj6 = { id: "frameEAVignette", cx: "50%", cy: "100%", rx: "100%", ry: "100%", fx: "50%", fy: "100%", children: null };
+    obj7 = { offset: "60%", stopColor: null, stopOpacity: 1 };
+    obj7[1] = token;
+    const items5 = [callback2(tmp5(8531).Stop, obj7), ];
+    obj8 = { offset: "100%", stopColor: null, stopOpacity: 0 };
+    obj8[1] = token;
+    items5[1] = callback2(tmp5(8531).Stop, obj8);
+    obj6[7] = items5;
+    obj5[0] = tmp25(tmp5(8531).RadialGradient, obj6);
+    const items6 = [callback2(tmp5(8531).Defs, obj5), callback2(tmp5(8531).Rect, { x: "0", y: "0", width: "100", height: "100", fill: "url(#frameEAVignette)" })];
+    obj4[4] = items6;
+    items4[1] = tmp25(tmp2Result, obj4);
+    obj3[0] = items4;
+    tmp25Result = tmp25(closure_18, obj3);
+    const tmp27 = closure_18;
   }
-  const items7 = [
-    tmp22Result,
-    (() => {
-      if (isPurchased) {
-        let tmp = product.type !== product(onTrackPress[34]).CollectiblesItemType.EXTERNAL_SKU;
-        if (tmp) {
-          let obj = { style: tmp.buttonContainer };
-          tmp = product;
-          tmp = onTrackPress;
-          tmp = outer1_17;
-          tmp = isPartiallyOwnedBundle;
-          tmp = outer1_16;
-          tmp = closure_16;
-          if (closure_16) {
-            obj = {};
-            tmp = closure_15;
-            obj.loading = closure_15;
-            tmp = product;
-            tmp = onTrackPress;
-            const intl13 = product(onTrackPress[17]).intl;
-            obj.text = intl13.string(product(onTrackPress[17]).t.MAS7uK);
-            obj.onPress = function onPress() {
-              if (null != outer1_2) {
-                outer1_2(constants.USE_NOW);
-              }
-              outer1_14();
-            };
-            obj.size = "lg";
-            obj.grow = true;
-            let obj1 = obj;
-          } else {
-            obj1 = {};
-            tmp = product;
-            tmp = onTrackPress;
-            const intl12 = product(onTrackPress[17]).intl;
-            obj1.text = intl12.string(product(onTrackPress[17]).t["2p2aYz"]);
-            obj1.onPress = function onPress() {
-              if (null != outer1_2) {
-                outer1_2(constants.EDIT_PROFILE);
-              }
-              outer1_17();
-            };
-            obj1.size = "lg";
-            obj1.grow = true;
+  const items7 = [tmp25Result, ];
+  if (isPurchased) {
+    tmp25Result = product.type !== tmp5(1901).CollectiblesItemType.EXTERNAL_SKU;
+    if (tmp25Result) {
+      obj9 = { style: null, children: null };
+      obj9[0] = tmp.buttonContainer;
+      if (canUseNow) {
+        obj10 = { loading: null, text: null, onPress: null, size: "lg", grow: true };
+        obj10[0] = isApplying;
+        const intl13 = tmp5(1236).intl;
+        obj10[1] = intl13.string(tmp5(1236).t.MAS7uK);
+        obj10[2] = function onPress() {
+          if (onTrackPress != null) {
+            tmp(outer1_9.USE_NOW);
           }
-          const items = [tmp(product(onTrackPress[55]).Button, obj1), ];
-          tmp = closure_23;
-          if (closure_23) {
-            tmp = outer1_16;
-            tmp = closure_22;
-            const obj2 = {};
-            tmp = product;
-            obj2.product = product;
-            tmp = analyticsLocations;
-            obj2.analyticsLocations = analyticsLocations;
-            tmp = onTrackPress;
-            obj2.onTrackPress = onTrackPress;
-            tmp = outer1_16(closure_22, obj2);
-          }
-          items[1] = tmp;
-          obj.children = items;
-          tmp = tmp(tmp, obj);
-        }
-        return tmp;
+          _undefined();
+        };
+        obj11 = obj10;
       } else {
-        tmp = c21;
-        if (c21) {
-          let obj9 = product(onTrackPress[52]);
-          const t = product(onTrackPress[17]).t;
-          const isAndroidResult = obj9.isAndroid();
-          const obj3 = {};
-          const items1 = [];
-          const arraySpreadResult = HermesBuiltin.arraySpread(analyticsLocations, 0);
-          items1[arraySpreadResult] = analyticsLocations(onTrackPress[56]).PROFILE_FRAMES_EA_MARKETING;
-          const sum = arraySpreadResult + 1;
-          obj3.value = items1;
-          const obj4 = { style: tmp.framesEAContainer };
-          const obj5 = { variant: "text-xs/semibold", color: "text-strong" };
-          const intl8 = product(onTrackPress[17]).intl;
-          const obj6 = {};
-          let obj14 = analyticsLocations(onTrackPress[57]);
-          obj6.articleURL = obj14.getArticleURL(constants.SHOP_FRAMES_EARLY_ACCESS);
-          obj5.children = intl8.format(product(onTrackPress[17]).t["3cglst"], obj6);
-          const items2 = [outer1_16(product(onTrackPress[32]).Text, obj5), , ];
-          const obj7 = { onTrackPress };
-          const intl9 = product(onTrackPress[17]).intl;
-          obj7.text = intl9.string(product(onTrackPress[17]).t["9wfL34"]);
-          items2[1] = outer1_16(product(onTrackPress[58]).UnlockWithNitroButton, obj7);
-          const obj8 = { variant: "text-xxs/normal" };
-          const intl10 = product(onTrackPress[17]).intl;
-          obj9 = { paidURL: constants2.PAID_TERMS };
-          const tmp78 = obj9.isAndroid() ? t.COObWR : t["7wpqfj"];
-          obj9.interval = analyticsLocations(onTrackPress[41]).getIntervalStringAsNoun(closure_22);
-          const intl11 = product(onTrackPress[17]).intl;
-          obj9.ctaText = intl11.string(product(onTrackPress[17]).t["9wfL34"]);
-          obj8.children = intl10.format(tmp78, obj9);
-          items2[2] = outer1_16(product(onTrackPress[32]).Text, obj8);
-          obj4.children = items2;
-          obj3.children = outer1_17(isPartiallyOwnedBundle, obj4);
-          return outer1_16(product(onTrackPress[22]).AnalyticsLocationProvider, obj3);
-        } else {
-          if (closure_9) {
-            if (!_isNativeReflectConstruct) {
-              if (!constants) {
-                obj = { onTrackPress };
-                return outer1_16(product(onTrackPress[58]).UnlockWithNitroButton, obj);
-              }
-            }
+        obj11 = { text: null, onPress: null, size: "lg", grow: true };
+        const intl12 = tmp5(1236).intl;
+        obj11[0] = intl12.string(tmp5(1236).t["2p2aYz"]);
+        obj11[1] = function onPress() {
+          if (onTrackPress != null) {
+            tmp(outer1_9.EDIT_PROFILE);
           }
-          if (!constants) {
-            if (product.type === product(onTrackPress[34]).CollectiblesItemType.BUNDLE) {
-              const intl6 = product(onTrackPress[17]).intl;
-              let stringResult = intl6.string(product(onTrackPress[17]).t.V1AWw0);
-            } else {
-              tmp = product;
-              tmp = product;
-              tmp = onTrackPress;
-              if (product.type === product(onTrackPress[34]).CollectiblesItemType.PROFILE_EFFECT) {
-                const intl5 = product(onTrackPress[17]).intl;
-                stringResult = intl5.string(product(onTrackPress[17]).t.kAeDcK);
-              } else {
-                tmp = product;
-                tmp = product;
-                tmp = onTrackPress;
-                if (product.type === product(onTrackPress[34]).CollectiblesItemType.NAMEPLATE) {
-                  const intl4 = product(onTrackPress[17]).intl;
-                  stringResult = intl4.string(product(onTrackPress[17]).t.H3vhqU);
-                } else {
-                  tmp = product;
-                  tmp = product;
-                  tmp = onTrackPress;
-                  if (product.type === product(onTrackPress[34]).CollectiblesItemType.AVATAR_DECORATION) {
-                    const intl3 = product(onTrackPress[17]).intl;
-                    stringResult = intl3.string(product(onTrackPress[17]).t.AQ0Veg);
-                  } else {
-                    tmp = product;
-                    tmp = product;
-                    tmp = onTrackPress;
-                    if (product.type === product(onTrackPress[34]).CollectiblesItemType.PROFILE_FRAME) {
-                      const intl2 = product(onTrackPress[17]).intl;
-                      stringResult = intl2.string(product(onTrackPress[17]).t.BlSW1e);
-                    } else {
-                      const intl = product(onTrackPress[17]).intl;
-                      stringResult = intl.string(product(onTrackPress[17]).t.AQ0Veg);
-                    }
-                  }
-                }
-              }
-            }
-            const obj10 = { style: tmp.purchaseSection };
-            let tmp31 = canAfford;
-            if (canAfford) {
-              const obj11 = { product, hasShopDiscount: closure_8, balance, onTrackPress };
-              tmp31 = outer1_16(closure_23, obj11);
-            }
-            const items3 = [tmp31, , , ];
-            let tmp40Result = !constants2;
-            if (tmp40Result) {
-              const obj12 = { style: tmp.buttonContainer };
-              const obj13 = {
-                loading: c19,
-                text: stringResult,
-                onPress() {
-                          if (null != outer1_2) {
-                            outer1_2(constants.BUY_WITH_FIAT);
-                          }
-                          outer1_18();
-                        },
-                disabled: isPartiallyOwnedBundle
-              };
-              let str = "primary";
-              let str2 = "primary";
-              if (canAfford) {
-                str2 = "secondary";
-              }
-              obj13.variant = str2;
-              obj13.size = "lg";
-              obj13.grow = true;
-              const items4 = [outer1_16(product(onTrackPress[55]).Button, obj13), ];
-              let tmp50Result = closure_23;
-              if (closure_23) {
-                obj14 = { product, analyticsLocations };
-                if (canAfford) {
-                  str = "secondary";
-                }
-                obj14.variant = str;
-                obj14.onTrackPress = onTrackPress;
-                tmp50Result = outer1_16(closure_22, obj14);
-                const tmp50 = outer1_16;
-                const tmp51 = closure_22;
-              }
-              items4[1] = tmp50Result;
-              obj12.children = items4;
-              tmp40Result = outer1_17(isPartiallyOwnedBundle, obj12);
-              const tmp40 = outer1_17;
-              const tmp41 = isPartiallyOwnedBundle;
-              const tmp43 = outer1_16;
-            }
-            items3[1] = tmp40Result;
-            let tmp57 = !canAfford;
-            if (tmp57) {
-              const obj15 = { product, hasShopDiscount: closure_8, balance, onTrackPress };
-              tmp57 = outer1_16(closure_23, obj15);
-            }
-            items3[2] = tmp57;
-            let tmp65 = !constants2;
-            if (tmp65) {
-              const obj16 = { product, buyButtonLabel: stringResult };
-              tmp65 = outer1_16(outer1_24, obj16);
-            }
-            items3[3] = tmp65;
-            obj10.children = items3;
-            return outer1_17(isPartiallyOwnedBundle, obj10);
-          }
-          const obj17 = {};
-          const intl7 = product(onTrackPress[17]).intl;
-          obj17.text = intl7.string(product(onTrackPress[17]).t.zp6caO);
-          obj17.loading = closure_6;
-          obj17.onPress = function onPress() {
-            if (null != outer1_2) {
-              outer1_2(constants.ADD_TO_COLLECTION);
-            }
-            outer1_20();
-          };
-          obj17.size = "lg";
-          obj17.grow = true;
-          return outer1_16(product(onTrackPress[55]).Button, obj17);
+          _undefined2();
+        };
+      }
+      const items8 = [callback2(tmp5(4600).Button, obj11), ];
+      if (canGiftProduct) {
+        obj12 = { product: null, analyticsLocations: null, onTrackPress: null };
+        obj12[0] = product;
+        obj12[1] = analyticsLocations;
+        obj12[2] = onTrackPress;
+        canGiftProduct = tmp57(GiftButton, obj12);
+      }
+      items8[1] = canGiftProduct;
+      obj9[1] = items8;
+      tmp25Result = tmp25(tmp26, obj9);
+    }
+    let tmp25Result2 = tmp25Result;
+  } else if (tmp20) {
+    const tmp5Result3 = tmp5(501);
+    const t = tmp5(1236).t;
+    const isAndroidResult = tmp5(501).isAndroid();
+    const obj13 = { value: null, children: null };
+    const items9 = [];
+    const tmp49 = tmp5(501).isAndroid() ? t.COObWR : t["7wpqfj"];
+    items9[HermesBuiltin.arraySpread(analyticsLocations, 0)] = tmp2(5535).PROFILE_FRAMES_EA_MARKETING;
+    obj13[0] = items9;
+    const obj14 = { style: null, children: null };
+    obj14[0] = tmp.framesEAContainer;
+    const obj15 = { variant: "text-xs/semibold", color: "text-strong", children: null };
+    const intl8 = tmp5(1236).intl;
+    const obj16 = { articleURL: null };
+    const arraySpreadResult = HermesBuiltin.arraySpread(analyticsLocations, 0);
+    obj16[0] = tmp2(1945).getArticleURL(constants.SHOP_FRAMES_EARLY_ACCESS);
+    obj15[2] = intl8.format(tmp5(1236).t["3cglst"], obj16);
+    const items10 = [callback2(tmp5(4185).Text, obj15), , ];
+    const obj17 = { onTrackPress: null, text: null };
+    obj17[0] = onTrackPress;
+    const intl9 = tmp5(1236).intl;
+    obj17[1] = intl9.string(tmp5(1236).t["9wfL34"]);
+    items10[1] = callback2(tmp5(11914).UnlockWithNitroButton, obj17);
+    const obj18 = { variant: "text-xxs/normal", children: null };
+    const intl10 = tmp5(1236).intl;
+    const obj19 = { paidURL: null, interval: null, ctaText: null };
+    obj19[0] = constants2.PAID_TERMS;
+    const tmp2Result1 = tmp2(1945);
+    obj19[1] = tmp2(3835).getIntervalStringAsNoun(tmp23);
+    const intl11 = tmp5(1236).intl;
+    obj19[2] = intl11.string(tmp5(1236).t["9wfL34"]);
+    obj18[1] = intl10.format(tmp49, obj19);
+    items10[2] = callback2(tmp5(4185).Text, obj18);
+    obj14[1] = items10;
+    obj13[1] = tmp25(tmp26, obj14);
+    tmp25Result2 = callback2(tmp5(5515).AnalyticsLocationProvider, obj13);
+    const tmp2Result2 = tmp2(3835);
+  } else {
+    if (result) {
+      if (!isPremiumSubscriber) {
+        if (!result1) {
+          const obj20 = { onTrackPress: null };
+          obj20[0] = onTrackPress;
+          tmp25Result2 = callback2(tmp5(11914).UnlockWithNitroButton, obj20);
         }
       }
-    })()
-  ];
-  obj.children = items7;
-  return callback3(isPartiallyOwnedBundle, obj);
+    }
+    if (!result1) {
+      if (product.type === tmp5(1901).CollectiblesItemType.BUNDLE) {
+        const intl6 = tmp5(1236).intl;
+        let stringResult = intl6.string(tmp5(1236).t.V1AWw0);
+      } else if (product.type === tmp5(1901).CollectiblesItemType.PROFILE_EFFECT) {
+        const intl5 = tmp5(1236).intl;
+        stringResult = intl5.string(tmp5(1236).t.kAeDcK);
+      } else if (product.type === tmp5(1901).CollectiblesItemType.NAMEPLATE) {
+        const intl4 = tmp5(1236).intl;
+        stringResult = intl4.string(tmp5(1236).t.H3vhqU);
+      } else if (product.type === tmp5(1901).CollectiblesItemType.AVATAR_DECORATION) {
+        const intl3 = tmp5(1236).intl;
+        stringResult = intl3.string(tmp5(1236).t.AQ0Veg);
+      } else if (product.type === tmp5(1901).CollectiblesItemType.PROFILE_FRAME) {
+        const intl2 = tmp5(1236).intl;
+        stringResult = intl2.string(tmp5(1236).t.BlSW1e);
+      } else {
+        const intl = tmp5(1236).intl;
+        stringResult = intl.string(tmp5(1236).t.AQ0Veg);
+      }
+      const obj21 = { style: null, children: null };
+      obj21[0] = tmp.purchaseSection;
+      let tmp34 = canAfford;
+      if (canAfford) {
+        const obj22 = { product: null, hasShopDiscount: null, balance: null, onTrackPress: null };
+        obj22[0] = product;
+        obj22[1] = canUseShopDiscountsResult;
+        obj22[2] = balance;
+        obj22[3] = onTrackPress;
+        tmp34 = callback2(VCButton, obj22);
+      }
+      const items11 = [tmp34, , , ];
+      let tmp25Result1 = !result2;
+      if (!result2) {
+        const obj23 = { style: null, children: null };
+        obj23[0] = tmp.buttonContainer;
+        const obj24 = { loading: null, text: null, onPress: null, disabled: null, variant: null, size: "lg", grow: true };
+        obj24[0] = isBuying;
+        obj24[1] = stringResult;
+        obj24[2] = function onPress() {
+          if (onTrackPress != null) {
+            tmp(outer1_9.BUY_WITH_FIAT);
+          }
+          _undefined3();
+        };
+        obj24[3] = isPartiallyOwnedBundle;
+        let str = "primary";
+        let str2 = "primary";
+        if (canAfford) {
+          str2 = "secondary";
+        }
+        obj24[4] = str2;
+        const items12 = [callback2(tmp5(4600).Button, obj24), ];
+        let tmp38Result = canGiftProduct;
+        if (canGiftProduct) {
+          const obj25 = { product: null, analyticsLocations: null, variant: null, onTrackPress: null };
+          obj25[0] = product;
+          obj25[1] = analyticsLocations;
+          if (canAfford) {
+            str = "secondary";
+          }
+          obj25[2] = str;
+          obj25[3] = onTrackPress;
+          tmp38Result = tmp38(GiftButton, obj25);
+          const tmp40 = GiftButton;
+        }
+        items12[1] = tmp38Result;
+        obj23[1] = items12;
+        tmp25Result1 = tmp25(tmp26, obj23);
+      }
+      items11[1] = tmp25Result1;
+      let tmp41 = !canAfford;
+      if (!canAfford) {
+        const obj26 = { product: null, hasShopDiscount: null, balance: null, onTrackPress: null };
+        obj26[0] = product;
+        obj26[1] = canUseShopDiscountsResult;
+        obj26[2] = balance;
+        obj26[3] = onTrackPress;
+        tmp41 = callback2(VCButton, obj26);
+      }
+      items11[2] = tmp41;
+      let tmp44 = !result2;
+      if (!result2) {
+        const obj27 = { product: null, buyButtonLabel: null };
+        obj27[0] = product;
+        obj27[1] = stringResult;
+        tmp44 = callback2(PurchaseDisclaimer, obj27);
+      }
+      items11[3] = tmp44;
+      obj21[1] = items11;
+      tmp25Result2 = tmp25(tmp26, obj21);
+    }
+    const obj28 = { text: null, loading: null, onPress: null, size: "lg", grow: true };
+    const intl7 = tmp5(1236).intl;
+    obj28[0] = intl7.string(tmp5(1236).t.zp6caO);
+    obj28[1] = callback(obj4.useStateFromStoresArray(items, () => {
+      const items = [outer1_7.isClaiming === product.skuId];
+      return items;
+    }, items1), 1)[0];
+    obj28[2] = function onPress() {
+      if (onTrackPress != null) {
+        tmp(outer1_9.ADD_TO_COLLECTION);
+      }
+      handleClaim();
+    };
+    tmp25Result2 = callback2(tmp5(4600).Button, obj28);
+  }
+  items7[1] = tmp25Result2;
+  obj[1] = items7;
+  return closure_17(handleClaim, obj);
 };

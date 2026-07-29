@@ -1,87 +1,47 @@
-// Module ID: 4381
-// Function ID: 38534
-// Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 587, 4380, 566, 686, 2]
+// Module ID: 4404
+// Function ID: 4405
+// Name: initialize
+// Dependencies: [595, 589, 4403, 709, 2]
 
-// Module 4381 (_isNativeReflectConstruct)
-import shouldAgeVerifyForAgeGate from "shouldAgeVerifyForAgeGate";
-import initialize from "initialize";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
+// Module 4404 (initialize)
+import { Store } from "initialize";
 
 const require = arg1;
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
-  }
-  const result = _isNativeReflectConstruct();
+const GuildNSFWAgreeStore = "GuildNSFWAgreeStore";
+let closure_3 = {};
+class GuildNSFWAgreeStore extends Store {
 }
-let closure_7 = {};
-let tmp2 = ((Store) => {
-  class GuildNSFWAgreeStore {
-    constructor() {
-      self = this;
-      tmp = outer1_2(this, GuildNSFWAgreeStore);
-      obj = outer1_5(GuildNSFWAgreeStore);
-      tmp2 = outer1_4;
-      if (outer1_8()) {
-        tmp6 = globalThis;
-        _Reflect = Reflect;
-        tmp7 = outer1_5;
-        tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, outer1_5(self).constructor);
-      } else {
-        tmp3 = arguments;
-        tmp4 = arguments;
-        constructResult = obj(...arguments);
-      }
-      return tmp2(self, constructResult);
-    }
+const prototype = GuildNSFWAgreeStore.prototype;
+prototype["initialize"] = function initialize() {
+  const Storage = require(595) /* Storage */.Storage;
+  let value = Storage.get(GuildNSFWAgreeStore);
+  if (value == null) {
+    value = closure_3;
   }
-  callback2(GuildNSFWAgreeStore, Store);
-  let obj = {
-    key: "initialize",
-    value() {
-      const Storage = GuildNSFWAgreeStore(outer1_1[5]).Storage;
-      let value = Storage.get("GuildNSFWAgreeStore");
-      if (null == value) {
-        value = outer1_7;
-      }
-      outer1_7 = value;
+  closure_3 = value;
+};
+prototype["didAgree"] = function didAgree(arg0) {
+  let tmp = null != arg0;
+  if (tmp) {
+    const result = require(4403) /* shouldShowAgeGateForVoiceChannel */.shouldAgeVerifyForAgeGate();
+    let tmp5 = !result;
+    if (!result) {
+      tmp5 = table[arg0] || false;
+      const tmp7 = table[arg0] || false;
     }
-  };
-  const items = [obj, ];
-  obj = {
-    key: "didAgree",
-    value(arg0) {
-      let tmp = null != arg0;
-      if (tmp) {
-        let tmp4 = !GuildNSFWAgreeStore(outer1_1[6]).shouldAgeVerifyForAgeGate();
-        if (tmp4) {
-          tmp4 = outer1_7[arg0] || false;
-          const tmp6 = outer1_7[arg0] || false;
-        }
-        tmp = tmp4;
-        const obj = GuildNSFWAgreeStore(outer1_1[6]);
-      }
-      return tmp;
-    }
-  };
-  items[1] = obj;
-  return callback(GuildNSFWAgreeStore, items);
-})(require("initialize").Store);
-tmp2.displayName = "GuildNSFWAgreeStore";
-tmp2 = new tmp2(require("dispatcher"), {
+    tmp = tmp5;
+    const obj = require(4403) /* shouldShowAgeGateForVoiceChannel */;
+  }
+  return tmp;
+};
+GuildNSFWAgreeStore.displayName = "GuildNSFWAgreeStore";
+const guildNSFWAgreeStore = new GuildNSFWAgreeStore(require("dispatcher"), {
   GUILD_NSFW_AGREE: function handleGuildNSFWAgree(guildId) {
-    closure_7[guildId.guildId] = true;
-    const Storage = require(587) /* Storage */.Storage;
-    const result = Storage.set("GuildNSFWAgreeStore", closure_7);
+    closure_3[guildId.guildId] = true;
+    const Storage = require(595) /* Storage */.Storage;
+    const result = Storage.set(GuildNSFWAgreeStore, closure_3);
   }
 });
-let result = require("_possibleConstructorReturn").fileFinishedImporting("stores/GuildNSFWAgreeStore.tsx");
+let result = require("shouldShowAgeGateForVoiceChannel").fileFinishedImporting("stores/GuildNSFWAgreeStore.tsx");
 
-export default tmp2;
+export default guildNSFWAgreeStore;

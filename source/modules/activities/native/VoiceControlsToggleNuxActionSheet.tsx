@@ -1,45 +1,47 @@
-// Module ID: 15890
-// Function ID: 122524
+// Module ID: 15925
+// Function ID: 15926
 // Name: VoiceControlsToggleActionSheet
-// Dependencies: [57, 31, 27, 4157, 1345, 33, 4165, 689, 4698, 566, 5221, 8118, 4161, 1212, 4578, 2]
+// Dependencies: [32, 19, 17, 4181, 1369, 21, 4189, 712, 4720, 589, 5243, 8142, 4185, 1236, 4600, 2]
 // Exports: default
 
-// Module 15890 (VoiceControlsToggleActionSheet)
+// Module 15925 (VoiceControlsToggleActionSheet)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
+import noop from "noop";
 import { View } from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
 import { ContentDismissActionType } from "ContentDismissActionType";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_8;
-let closure_9;
+let c9;
+let metroImportAll;
 const require = arg1;
-({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
+({ jsx: metroImportAll, jsxs: c9 } = jsxProd);
 let closure_10 = { videoURI: "https://cdn.discordapp.com/assets/activities/platform/activities_pipfab_tutorial_redesign.mp4" };
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { borderRadius: require("_createForOfIteratorHelperLoose").radii.sm, overflow: "hidden" };
-_createForOfIteratorHelperLoose.videoContainer = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.bottomSheetWrapper = { paddingHorizontal: 24 };
-_createForOfIteratorHelperLoose.contentContainer = { flex: 1, alignItems: "center", paddingTop: 24, paddingBottom: 16 };
-_createForOfIteratorHelperLoose.title = { marginTop: 16, textAlign: "center" };
-_createForOfIteratorHelperLoose.body = { marginTop: 8, marginBottom: 24, textAlign: "center" };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+createCacheKey = { videoContainer: null, bottomSheetWrapper: null, contentContainer: null, title: null, body: null };
+createCacheKey = { borderRadius: require("Themes").radii.sm, overflow: "hidden" };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { paddingHorizontal: 24 };
+createCacheKey[2] = { flex: 1, alignItems: "center", paddingTop: 24, paddingBottom: 16 };
+createCacheKey[3] = { marginTop: 16, textAlign: "center" };
+createCacheKey[4] = { marginTop: 8, marginBottom: 24, textAlign: "center" };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
 let result = require("get ActivityIndicator").fileFinishedImporting("modules/activities/native/VoiceControlsToggleNuxActionSheet.tsx");
 
 export default function VoiceControlsToggleActionSheet(markAsDismissed) {
+  let c1;
+  let tmp3;
   markAsDismissed = markAsDismissed.markAsDismissed;
-  const tmp = _createForOfIteratorHelperLoose();
-  const tmp2 = callback(React.useState(0), 2);
-  const first = tmp2[0];
-  const importDefault = tmp2[1];
+  let importDefault;
+  let isScreenLandscape;
+  const tmp = createCacheKey();
+  [tmp3, c1] = callback(React.useState(0), 2);
   let obj = markAsDismissed(isScreenLandscape[8]);
   isScreenLandscape = obj.useIsScreenLandscape();
   let obj1 = markAsDismissed(isScreenLandscape[9]);
-  const items = [_isNativeReflectConstruct];
+  const items = [maybeApplyNoTextColorForLightCustomTheme];
   let num = 1.5;
-  const stateFromStores = obj1.useStateFromStores(items, () => outer1_6.useReducedMotion);
+  const stateFromStores = obj1.useStateFromStores(items, () => useReducedMotion.useReducedMotion);
   if (isScreenLandscape) {
     num = 2.0875;
   }
@@ -47,9 +49,10 @@ export default function VoiceControlsToggleActionSheet(markAsDismissed) {
     startExpanded: true,
     onDismiss() {
       return markAsDismissed(outer1_7.UNKNOWN);
-    }
+    },
+    children: null
   };
-  obj = { style: tmp.bottomSheetWrapper };
+  obj = { style: tmp.bottomSheetWrapper, children: null };
   obj1 = {
     style: tmp.contentContainer,
     onLayout(nativeEvent) {
@@ -58,29 +61,30 @@ export default function VoiceControlsToggleActionSheet(markAsDismissed) {
       if (isScreenLandscape) {
         result = width / 2;
       }
-      closure_1(result);
-    }
+      c1(result);
+    },
+    children: null
   };
-  const obj2 = { style: tmp.videoContainer, src: closure_10, poster: "https://cdn.discordapp.com/assets/activities/platform/activities_pipfab_tutorial_redesign.png", width: first, height: first / num, muted: true, paused: stateFromStores };
-  const items1 = [callback2(importDefault(isScreenLandscape[11]), obj2), , , ];
-  const obj3 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary" };
-  const intl = markAsDismissed(isScreenLandscape[13]).intl;
-  obj3.children = intl.string(markAsDismissed(isScreenLandscape[13]).t.pT6hue);
+  const items1 = [callback2(importDefault(isScreenLandscape[11]), { style: tmp.videoContainer, src: closure_10, poster: "https://cdn.discordapp.com/assets/activities/platform/activities_pipfab_tutorial_redesign.png", width: tmp3, height: tmp3 / num, muted: true, paused: stateFromStores }), , , ];
+  const obj3 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: null };
+  const intl = tmp4(tmp5[13]).intl;
+  obj3[4] = intl.string(markAsDismissed(isScreenLandscape[13]).t.pT6hue);
   items1[1] = callback2(markAsDismissed(isScreenLandscape[12]).Text, obj3);
-  const obj4 = { style: tmp.body, variant: "text-sm/normal" };
-  const intl2 = markAsDismissed(isScreenLandscape[13]).intl;
-  obj4.children = intl2.string(markAsDismissed(isScreenLandscape[13]).t.tNm8AZ);
+  const obj4 = { style: tmp.body, variant: "text-sm/normal", children: null };
+  const intl2 = tmp4(tmp5[13]).intl;
+  obj4[2] = intl2.string(markAsDismissed(isScreenLandscape[13]).t.tNm8AZ);
   items1[2] = callback2(markAsDismissed(isScreenLandscape[12]).Text, obj4);
   const obj5 = {
     onPress() {
       return markAsDismissed(outer1_7.UNKNOWN);
-    }
+    },
+    text: null
   };
-  const intl3 = markAsDismissed(isScreenLandscape[13]).intl;
-  obj5.text = intl3.string(markAsDismissed(isScreenLandscape[13]).t["NX+WJN"]);
+  const intl3 = tmp4(tmp5[13]).intl;
+  obj5[1] = intl3.string(markAsDismissed(isScreenLandscape[13]).t["NX+WJN"]);
   items1[3] = callback2(markAsDismissed(isScreenLandscape[14]).Button, obj5);
-  obj1.children = items1;
-  obj.children = callback3(View, obj1);
-  obj.children = callback2(View, obj);
+  obj1[2] = items1;
+  obj[1] = callback3(View, obj1);
+  obj[2] = callback2(View, obj);
   return callback2(markAsDismissed(isScreenLandscape[10]).BottomSheet, obj);
 };

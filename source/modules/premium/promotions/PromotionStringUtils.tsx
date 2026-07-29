@@ -1,36 +1,39 @@
-// Module ID: 12409
-// Function ID: 96320
+// Module ID: 12431
+// Function ID: 12432
 // Name: useFormatStringWithCommonPremiumParams
-// Dependencies: [3816, 1852, 566, 3811, 5651, 1212, 1921, 2]
+// Dependencies: [3840, 1876, 589, 3835, 5669, 1236, 1945, 2]
 // Exports: getHelpArticleLinkProps, useFormatStringWithCommonPremiumParams
 
-// Module 12409 (useFormatStringWithCommonPremiumParams)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 12431 (useFormatStringWithCommonPremiumParams)
+import addSubscriptionPlan from "addSubscriptionPlan";
 import GuildFeatures from "GuildFeatures";
 
-let closure_4;
-let closure_5;
+let c4;
+let c5;
 const require = arg1;
-({ PremiumSubscriptionSKUs: closure_4, SubscriptionPlans: closure_5 } = GuildFeatures);
+({ PremiumSubscriptionSKUs: c4, SubscriptionPlans: c5 } = GuildFeatures);
 const result = require("initialize").fileFinishedImporting("modules/premium/promotions/PromotionStringUtils.tsx");
 
 export const useFormatStringWithCommonPremiumParams = function useFormatStringWithCommonPremiumParams(body) {
   let str = "...";
-  const items = [_isNativeReflectConstruct];
-  const stateFromStores = require(566) /* initialize */.useStateFromStores(items, () => outer1_3.isLoadedForSKU(outer1_4.TIER_2));
+  const items = [addSubscriptionPlan];
+  const stateFromStores = require(589) /* initialize */.useStateFromStores(items, () => loadedForSKU.isLoadedForSKU(TIER_2.TIER_2));
   if (-1 !== body.indexOf("{price}")) {
     if (stateFromStores) {
-      const defaultPrice = importDefault(3811).getDefaultPrice(PREMIUM_MONTH_TIER_2.PREMIUM_MONTH_TIER_2);
-      const obj2 = importDefault(3811);
-      str = require(5651) /* formatSingleCurrencyPrice */.formatPrice(defaultPrice.amount, defaultPrice.currency);
-      const obj3 = require(5651) /* formatSingleCurrencyPrice */;
+      try {
+        const defaultPrice = importDefault(3835).getDefaultPrice(PREMIUM_MONTH_TIER_2.PREMIUM_MONTH_TIER_2);
+        const obj2 = importDefault(3835);
+        str = require(5669) /* formatSingleCurrencyPrice */.formatPrice(defaultPrice.amount, defaultPrice.currency);
+        const tmpResult = require(5669) /* formatSingleCurrencyPrice */;
+      } catch (err) {
+      }
     }
   }
-  const replaced = body.replace(/\{price\}/g, str);
+  return body.replace(/\{price\}/g, str);
 };
 export const getHelpArticleLinkProps = function getHelpArticleLinkProps(helpArticle, helpArticleId) {
   let id;
-  if (null != helpArticle) {
+  if (helpArticle != null) {
     id = helpArticle.id;
   }
   id = helpArticleId;
@@ -44,17 +47,19 @@ export const getHelpArticleLinkProps = function getHelpArticleLinkProps(helpArti
     return null;
   } else {
     let linkText;
-    if (null != helpArticle) {
+    if (helpArticle != null) {
       linkText = helpArticle.linkText;
     }
     if (null != linkText) {
       if ("" !== helpArticle.linkText) {
         linkText = helpArticle.linkText;
       }
-      const obj = { url: importDefault(1921).getArticleURL(id), linkText };
+      const obj = { url: null, linkText: null };
+      obj[0] = importDefault(1945).getArticleURL(id);
+      obj[1] = linkText;
       return obj;
     }
-    const intl = require(1212) /* getSystemLocale */.intl;
-    linkText = intl.string(require(1212) /* getSystemLocale */.t["sBp+u0"]);
+    const intl = require(1236) /* getSystemLocale */.intl;
+    linkText = intl.string(require(1236) /* getSystemLocale */.t["sBp+u0"]);
   }
 };

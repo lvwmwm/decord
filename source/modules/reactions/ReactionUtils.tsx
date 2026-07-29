@@ -1,71 +1,92 @@
-// Module ID: 3804
-// Function ID: 29064
-// Name: getReactionEmojiName
-// Dependencies: [1194, 653, 3805, 3806, 1212, 3838, 675, 2]
-// Exports: emojiEquals, getAccessibleEmojiDisplayName, getBurstAnalyticsSection, isCustomReactionEmojiId, shouldApplyReaction, toReactionEmoji, updateReactionNotificationsSetting
+// Module ID: 3828
+// Function ID: 3829
+// Name: MAX_REACTIONS
+// Dependencies: [1218, 676, 3829, 3830, 1236, 3862, 698, 2]
+// Exports: emojiEquals, getAccessibleEmojiDisplayName, getBurstAnalyticsSection, getReactionEmojiName, isCustomReactionEmojiId, shouldApplyReaction, toReactionEmoji, updateReactionNotificationsSetting
 
-// Module 3804 (getReactionEmojiName)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 3828 (MAX_REACTIONS)
+import fetchFingerprint from "fetchFingerprint";
 import ME from "ME";
 import { NotificationSettingsUpdateType as closure_6 } from "AccountNotificationFlags";
 
-let closure_4;
-let closure_5;
+let c4;
+let c5;
 const require = arg1;
-function getReactionEmojiName(emoji) {
+({ AnalyticsSections: c4, AnalyticEvents: c5 } = ME);
+let result = require("AccountNotificationFlags").fileFinishedImporting("modules/reactions/ReactionUtils.tsx");
+
+export const MAX_REACTIONS = 20;
+export const getReactionEmojiName = function getReactionEmojiName(emoji) {
   if (null == emoji.id) {
-    let result = importDefault(3806).convertSurrogateToName(emoji.name);
-    const obj = importDefault(3806);
+    let result = importDefault(3830).convertSurrogateToName(emoji.name);
+    const obj = importDefault(3830);
   } else {
     const _HermesInternal = HermesInternal;
     result = ":" + emoji.name + ":";
   }
   return result;
-}
-({ AnalyticsSections: closure_4, AnalyticEvents: closure_5 } = ME);
-let result = require("AccountNotificationFlags").fileFinishedImporting("modules/reactions/ReactionUtils.tsx");
-
-export const MAX_REACTIONS = 20;
-export { getReactionEmojiName };
+};
 export const getAccessibleEmojiDisplayName = function getAccessibleEmojiDisplayName(me, count, emoji, arg3) {
-  const t = require(1212) /* getSystemLocale */.t;
-  if (!arg3) {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    const obj = { reactions: count };
-    const str = getReactionEmojiName(emoji);
-    let trimmed;
-    if (null != str) {
-      const str3 = str.replace(/[:_]/g, " ");
-      if (null != str3) {
-        trimmed = str3.trim();
+  const t = require(1236) /* getSystemLocale */.t;
+  if (arg3) {
+    if (me) {
+      Z_l_qu = t.i9DXqM;
+      let tmp6 = tmp2;
+      let tmp7 = tmp2;
+      let tmp8 = tmp;
+    } else {
+      Z_l_qu = t["Z/l+qu"];
+      tmp6 = tmp2;
+      tmp7 = tmp2;
+      tmp8 = tmp;
+    }
+  } else {
+    if (me) {
+      let PirBBE = t.CLuzw5;
+      let tmp5 = tmp;
+    } else {
+      PirBBE = t.PirBBE;
+      tmp5 = tmp;
+    }
+    const intl = tmp5(1236).intl;
+    const obj = { reactions: null, emojiName: null };
+    obj[0] = count;
+    if (null == emoji.id) {
+      let str2 = importDefault(3830).convertSurrogateToName(emoji.name);
+      const obj2 = importDefault(3830);
+    } else {
+      const _HermesInternal = HermesInternal;
+      str2 = ":" + emoji.name + ":";
+    }
+    let str3;
+    if (str2 != null) {
+      const str5 = str2.replace(/[:_]/g, " ");
+      if (str5 != null) {
+        str3 = str5.trim();
       }
     }
-    let str4 = "";
-    if (null != trimmed) {
-      str4 = trimmed;
+    if (str3 == null) {
+      str3 = "";
     }
-    obj.emojiName = str4;
-    return intl.formatToPlainString(me ? t.CLuzw5 : t.PirBBE, obj);
+    obj[1] = str3;
+    return intl.formatToPlainString(PirBBE, obj);
   }
 };
 export const toReactionEmoji = function toReactionEmoji(byName) {
-  const obj = {};
-  const id = byName.id;
-  let tmp = null;
-  if (null != id) {
-    tmp = id;
+  let id = byName.id;
+  if (id == null) {
+    id = null;
   }
-  obj.id = tmp;
-  let name = null != byName.id ? byName.name : byName.optionallyDiverseSequence;
-  if (null == name) {
-    name = byName.name;
+  const obj = { id, name: null, animated: null };
+  let str = null != byName.id ? byName.name : byName.optionallyDiverseSequence;
+  if (str == null) {
+    str = byName.name;
   }
-  let str = "";
-  if (null != name) {
-    str = name;
+  if (str == null) {
+    str = "";
   }
-  obj.name = str;
-  obj.animated = Boolean(byName.animated);
+  obj[1] = str;
+  obj[2] = Boolean(byName.animated);
   return obj;
 };
 export const isCustomReactionEmojiId = function isCustomReactionEmojiId(emojiId) {
@@ -75,11 +96,11 @@ export const isCustomReactionEmojiId = function isCustomReactionEmojiId(emojiId)
   }
   if (!tmp) {
     return tmp;
-  } else if ("number" === typeof emojiId) {
-    let tmp3 = 0 !== emojiId;
+  } else if (typeof emojiId === "Object") {
+    let tmp2 = 0 !== emojiId;
   } else {
     const _String = String;
-    tmp3 = "0" !== String(emojiId);
+    tmp2 = "0" !== String(emojiId);
   }
 };
 export const emojiEquals = function emojiEquals(emoji, closure_0) {
@@ -114,9 +135,9 @@ export const shouldApplyReaction = function shouldApplyReaction(optimistic) {
   return !optimistic;
 };
 export const updateReactionNotificationsSetting = function updateReactionNotificationsSetting(NumberResult, setting) {
-  const ReactionNotifications = require(3838) /* explicitContentFromProto */.ReactionNotifications;
+  const ReactionNotifications = require(3862) /* explicitContentFromProto */.ReactionNotifications;
   ReactionNotifications.updateSetting(NumberResult);
-  let obj = importDefault(675);
+  let obj = importDefault(698);
   obj = { update_type: constants3.ACCOUNT, reaction_notifications: NumberResult, reaction_notifications_old: setting };
   obj.track(constants2.NOTIFICATION_SETTINGS_UPDATED, obj);
 };

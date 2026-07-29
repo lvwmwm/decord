@@ -1,73 +1,93 @@
-// Module ID: 12290
-// Function ID: 95800
-// Name: rowModifierShared
-// Dependencies: [57, 31, 27, 6035, 5857, 1348, 4384, 8171, 653, 33, 7690, 7882, 4165, 8113, 9266, 689, 566, 10353, 1212, 21, 12291, 9525, 9285, 6056, 9522, 5251, 10024, 9480, 4173, 2]
+// Module ID: 12312
+// Function ID: 12313
+// Name: MeasureMessage
+// Dependencies: [32, 19, 17, 6053, 5875, 1372, 4407, 8195, 676, 21, 7713, 7905, 4189, 8137, 9290, 712, 589, 10374, 1236, 11, 12313, 9549, 9309, 6075, 9546, 5273, 10046, 9504, 4197, 2]
 // Exports: default
 
-// Module 12290 (rowModifierShared)
+// Module 12312 (MeasureMessage)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
-import get_ActivityIndicator from "handleMessagesTapURLLink";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_8 from "_isNativeReflectConstruct";
-import closure_9 from "_isNativeReflectConstruct";
-import closure_10 from "_isNativeReflectConstruct";
-import closure_11 from "_isNativeReflectConstruct";
+import DISCORD_EPOCH from "DISCORD_EPOCH";
+import get_ActivityIndicator from "useReactionPermissions";
+import handleLoadThreadsSuccess from "handleLoadThreadsSuccess";
+import handleReaction from "handleReaction";
+import ensureGuildLoaded from "ensureGuildLoaded";
+import reinjectEphemerals from "reinjectEphemerals";
+import messages from "messages";
 import { ThemeTypes } from "ME";
-import jsxProd from "jsxProd";
-import importDefaultResult from "RowManager";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import jsxProd from "castNativeSyntheticEventData";
+import createCacheKey from "createCacheKey";
+import createCacheKey from "createCacheKey";
+import createCacheKey from "createCacheKey";
 
-let closure_13;
+let c5;
 let closure_14;
 let closure_15;
-let closure_5;
 let closure_6;
+let map1;
 const require = arg1;
-function rowModifierShared(arg0, arg1) {
-  arg0.canAddNewReactions = !arg1;
-  arg0.contextType = require(7882) /* MediaGalleryItemType */.MessageContextType.MEDIA_VIEWER;
-}
 function MeasureMessage(message) {
   message = message.message;
   const onMeasure = message.onMeasure;
   const onMeasureTruncated = message.onMeasureTruncated;
   const disableReactionCreates = message.disableReactionCreates;
+  let React;
+  let c5;
   const tmp = callback3();
-  const React = tmp;
+  React = tmp;
   let obj = message(onMeasureTruncated[13]);
   const result = 0.5 * obj.useMediaViewerDimensions().height;
+  c5 = result;
   const items = [disableReactionCreates, result, message, onMeasureTruncated, onMeasure, tmp.dummyLayout];
   const memo = React.useMemo(() => {
-    function generateChatItemProps(arg0) {
-      let closure_0 = arg0;
-      return {
-        onLayout(nativeEvent) {
-          const bound = Math.min(nativeEvent.nativeEvent.layout.height, outer2_5);
-          if (0 !== bound) {
-            if (closure_0) {
-              outer2_2(bound);
-            } else {
-              outer2_1(bound);
-            }
+    let c0 = false;
+    const full = {
+      onLayout(nativeEvent) {
+        const bound = Math.min(nativeEvent.nativeEvent.layout.height, outer1_5);
+        if (0 !== bound) {
+          if (c0) {
+            outer1_2(bound);
+          } else {
+            outer1_1(bound);
           }
-        },
-        modifyRow(arg0) {
-          outer3_20(arg0, outer2_3);
-          if (closure_0) {
-            arg0.truncation = { numberOfLines: 3, expandable: false, seeMoreLabel: "" };
+        }
+      },
+      modifyRow(arg0) {
+        arg0.canAddNewReactions = !outer1_3;
+        arg0.contextType = message(onMeasureTruncated[11]).MessageContextType.MEDIA_VIEWER;
+        if (c0) {
+          arg0.truncation = { numberOfLines: 3, expandable: false, seeMoreLabel: "" };
+        }
+      },
+      rowGenerator: outer1_16,
+      message: c0,
+      style: _undefined.dummyLayout
+    };
+    c0 = true;
+    const truncated = {
+      onLayout(nativeEvent) {
+        const bound = Math.min(nativeEvent.nativeEvent.layout.height, outer1_5);
+        if (0 !== bound) {
+          if (c0) {
+            outer1_2(bound);
+          } else {
+            outer1_1(bound);
           }
-        },
-        rowGenerator: outer2_16,
-        message: outer1_0,
-        style: outer1_4.dummyLayout
-      };
-    }
-    return { full: generateChatItemProps(false), truncated: generateChatItemProps(true) };
+        }
+      },
+      modifyRow(arg0) {
+        arg0.canAddNewReactions = !outer1_3;
+        arg0.contextType = message(onMeasureTruncated[11]).MessageContextType.MEDIA_VIEWER;
+        if (c0) {
+          arg0.truncation = { numberOfLines: 3, expandable: false, seeMoreLabel: "" };
+        }
+      },
+      rowGenerator: outer1_16,
+      message: c0,
+      style: _undefined.dummyLayout
+    };
+    return { full, truncated };
   }, items);
-  obj = {};
+  obj = { children: null };
   obj = {};
   const merged = Object.assign(memo.full);
   const items1 = [callback(onMeasure(onMeasureTruncated[14]), obj), ];
@@ -75,27 +95,29 @@ function MeasureMessage(message) {
   const tmp4 = onMeasure(onMeasureTruncated[14]);
   const merged1 = Object.assign(memo.truncated);
   items1[1] = callback(onMeasure(onMeasureTruncated[14]), obj1);
-  obj.children = items1;
+  obj[0] = items1;
   return callback2(closure_14, obj);
 }
-({ findNodeHandle: closure_5, ScrollView: closure_6 } = get_ActivityIndicator);
-({ jsx: closure_13, Fragment: closure_14, jsxs: closure_15 } = jsxProd);
-importDefaultResult = new importDefaultResult();
-let obj = { renderCodedLinks: false, renderGiftCode: false, renderActivityInstanceEmbed: false, renderActivityInviteEmbed: false, renderComponents: false, renderEmbeds: false, ignoreMentioned: true, inlineAttachmentMedia: false, inlineEmbedMedia: false, renderReactions: true, renderAttachments: false, renderReplies: false, renderThreadEmbeds: false, renderPolls: false, renderForumPostActions: false, forcedTheme: ThemeTypes.DARK, forceHideSimpleEmbedContent: true };
-importDefaultResult.setOptions(obj);
-let closure_17 = _createForOfIteratorHelperLoose.createStyles({ dummyLayout: { position: "absolute", top: 0, left: -9999, bottom: 0, width: "100%", opacity: 0 } });
-obj = { reactionBackgroundColor: require("_createForOfIteratorHelperLoose").colors.REACTION_BACKGROUND_DEFAULT, reactionBorderColor: require("_createForOfIteratorHelperLoose").colors.REACTION_BORDER_DEFAULT, reactionTextColor: require("_createForOfIteratorHelperLoose").colors.REACTION_TEXT_DEFAULT, activeReactionBackgroundColor: require("_createForOfIteratorHelperLoose").colors.REACTION_BACKGROUND_REACTED_DEFAULT, activeReactionBorderColor: require("_createForOfIteratorHelperLoose").colors.REACTION_BORDER_REACTED_DEFAULT, activeReactionTextColor: require("_createForOfIteratorHelperLoose").colors.REACTION_TEXT_REACTED_DEFAULT };
-let closure_18 = _createForOfIteratorHelperLoose.createNativeStyleProperties(obj);
-let closure_19 = _createForOfIteratorHelperLoose.createNativeStyleProperties({ editedColor: require("_createForOfIteratorHelperLoose").colors.TEXT_MUTED, seeMoreLabelColor: require("_createForOfIteratorHelperLoose").colors.TEXT_DEFAULT });
-let obj1 = { editedColor: require("_createForOfIteratorHelperLoose").colors.TEXT_MUTED, seeMoreLabelColor: require("_createForOfIteratorHelperLoose").colors.TEXT_DEFAULT };
+({ findNodeHandle: c5, ScrollView: closure_6 } = get_ActivityIndicator);
+({ jsx: map1, Fragment: closure_14, jsxs: closure_15 } = jsxProd);
+let obj = new require("setOptions")();
+obj = { renderCodedLinks: false, renderGiftCode: false, renderActivityInstanceEmbed: false, renderActivityInviteEmbed: false, renderComponents: false, renderEmbeds: false, ignoreMentioned: true, inlineAttachmentMedia: false, inlineEmbedMedia: false, renderReactions: true, renderAttachments: false, renderReplies: false, renderThreadEmbeds: false, renderPolls: false, renderForumPostActions: false, forcedTheme: ThemeTypes.DARK, forceHideSimpleEmbedContent: true };
+obj.setOptions(obj);
+let closure_17 = createCacheKey.createStyles({ dummyLayout: { position: "absolute", top: 0, left: -9999, bottom: 0, width: "100%", opacity: 0 } });
+obj = { reactionBackgroundColor: require("Themes").colors.REACTION_BACKGROUND_DEFAULT, reactionBorderColor: require("Themes").colors.REACTION_BORDER_DEFAULT, reactionTextColor: require("Themes").colors.REACTION_TEXT_DEFAULT, activeReactionBackgroundColor: require("Themes").colors.REACTION_BACKGROUND_REACTED_DEFAULT, activeReactionBorderColor: require("Themes").colors.REACTION_BORDER_REACTED_DEFAULT, activeReactionTextColor: require("Themes").colors.REACTION_TEXT_REACTED_DEFAULT };
+let closure_19 = createCacheKey.createNativeStyleProperties(obj);
+let closure_20 = createCacheKey.createNativeStyleProperties({ editedColor: require("Themes").colors.TEXT_MUTED, seeMoreLabelColor: require("Themes").colors.TEXT_DEFAULT });
+let obj1 = { editedColor: require("Themes").colors.TEXT_MUTED, seeMoreLabelColor: require("Themes").colors.TEXT_DEFAULT };
 let result = require("get ActivityIndicator").fileFinishedImporting("modules/media_viewer/native/components/message_preview/MediaMessagePreview.tsx");
 
 export default function MediaMessagePreview(channelId) {
+  let c12;
   let closure_5;
   let closure_6;
   let flingUpRef;
   let onMeasureCollapsedHeight;
   let onMeasureFullHeight;
+  let tmp6;
   channelId = channelId.channelId;
   const messageId = channelId.messageId;
   const onClose = channelId.onClose;
@@ -104,82 +126,94 @@ export default function MediaMessagePreview(channelId) {
   ({ canExpand: closure_5, setScrollViewIsAtTop: closure_6, flingUpRef } = channelId);
   const flingDownRef = channelId.flingDownRef;
   const animationDriver = channelId.animationDriver;
+  let stateFromStores;
+  let disableReactionCreates;
+  let ThemeTypes;
+  let callback;
+  let ref;
+  let first;
+  let closure_16;
+  let c17;
+  let editedColor;
+  let seeMoreLabelColor;
+  let stateFromStores1;
+  let first1;
+  let closure_22;
   ({ onMeasureFullHeight, onMeasureCollapsedHeight } = channelId);
   let obj = channelId(onClose[16]);
   const items = [animationDriver];
-  const stateFromStores = obj.useStateFromStores(items, () => {
+  stateFromStores = obj.useStateFromStores(items, () => {
     let channel;
     if (null != channelId) {
-      channel = animationDriver.getChannel(channelId);
+      channel = animationDriver.getChannel(tmp);
     }
     return channel;
   });
-  const disableReactionCreates = messageId(onClose[17])(stateFromStores).disableReactionCreates;
-  let tmp2 = onTapMessage(full.useState(false), 2);
-  const ThemeTypes = tmp2[1];
-  let tmp3 = onTapMessage(full.useState(false), 2);
-  let callback = tmp3[1];
-  const ref = full.useRef(null);
-  const tmp5 = onTapMessage(full.useState(null), 2);
-  const first = tmp5[0];
-  let closure_16 = tmp5[1];
+  disableReactionCreates = messageId(onClose[17])(stateFromStores).disableReactionCreates;
+  [tmp6, c12] = onTapMessage(full.useState(false), 2);
+  const tmp7 = onTapMessage(full.useState(false), 2);
+  callback = tmp7[1];
+  ref = full.useRef(null);
+  const tmp9 = onTapMessage(full.useState(null), 2);
+  first = tmp9[0];
+  closure_16 = tmp9[1];
   const effect = full.useEffect(() => {
     callback2(outer1_5(ref.current));
   }, []);
-  const tmp8 = editedColor(ThemeTypes.MIDNIGHT);
-  let closure_17 = tmp8;
-  const tmp9 = seeMoreLabelColor(ThemeTypes.MIDNIGHT);
-  editedColor = tmp9.editedColor;
-  seeMoreLabelColor = tmp9.seeMoreLabelColor;
-  const items1 = [first, disableReactionCreates, editedColor, seeMoreLabelColor, tmp8, full, animationDriver];
+  const tmp12 = seeMoreLabelColor(ThemeTypes.MIDNIGHT);
+  c17 = tmp12;
+  const tmp13 = stateFromStores1(ThemeTypes.MIDNIGHT);
+  editedColor = tmp13.editedColor;
+  seeMoreLabelColor = tmp13.seeMoreLabelColor;
+  const items1 = [first, disableReactionCreates, editedColor, seeMoreLabelColor, tmp12, full, animationDriver];
   callback = full.useCallback((message) => {
-    stateFromStores1(message, disableReactionCreates);
+    message.canAddNewReactions = !disableReactionCreates;
+    message.contextType = channelId(onClose[11]).MessageContextType.MEDIA_VIEWER;
     message.reactTag = first;
     message.canAddNewReactions = !disableReactionCreates;
     message.message.feedbackColor = undefined;
     message.message.editedColor = editedColor;
-    message.reactionsTheme = closure_17;
+    message.reactionsTheme = c17;
     if (!full) {
-      const obj = { numberOfLines: 3, expandable: true };
-      const intl = channelId(onClose[18]).intl;
+      const obj = { numberOfLines: 3, expandable: true, seeMoreLabel: null, seeMoreLabelColor: null, outAnimationDuration: null, outAnimation: "fade" };
+      const intl = tmp(tmp2[18]).intl;
       const _HermesInternal = HermesInternal;
-      obj.seeMoreLabel = " " + intl.string(channelId(onClose[18]).t["7qbp3B"]);
-      obj.seeMoreLabelColor = seeMoreLabelColor;
+      obj[2] = " " + intl.string(tmp(tmp2[18]).t["7qbp3B"]);
+      obj[3] = seeMoreLabelColor;
       const _Math = Math;
-      obj.outAnimationDuration = Math.min(0.25 * animationDriver.get(), 0.1);
-      obj.outAnimation = "fade";
+      obj[4] = Math.min(0.25 * animationDriver.get(), 0.1);
       message.truncation = obj;
     }
   }, items1);
   let obj1 = channelId(onClose[16]);
   const items2 = [flingDownRef, stateFromStores, disableReactionCreates, flingUpRef];
   const items3 = [channelId, messageId];
-  const stateFromStores1 = obj1.useStateFromStores(items2, () => {
+  stateFromStores1 = obj1.useStateFromStores(items2, () => {
     if (null != channelId) {
       if (null != messageId) {
-        let message = stateFromStores.getMessage(channelId, messageId);
-        if (null == message) {
-          message = disableReactionCreates.getMessage(messageId);
+        let message = stateFromStores.getMessage(tmp, tmp2);
+        if (message == null) {
+          message = disableReactionCreates.getMessage(tmp2);
         }
-        if (null == message) {
+        if (message == null) {
+          const message1 = flingUpRef.getMessage(messageId(onClose[19]).castMessageIdAsChannelId(tmp2));
           let firstMessage;
-          const message1 = flingUpRef.getMessage(messageId(onClose[19]).castMessageIdAsChannelId(messageId));
-          if (null != message1) {
+          if (message1 != null) {
             firstMessage = message1.firstMessage;
           }
           message = firstMessage;
           const obj = messageId(onClose[19]);
         }
-        if (null == message) {
-          message = flingDownRef.getMessage(messageId);
+        if (message == null) {
+          message = flingDownRef.getMessage(tmp2);
         }
         return message;
       }
     }
   }, items3);
-  const tmp12 = onTapMessage(full.useState(0), 2);
-  const first1 = tmp12[0];
-  let closure_22 = tmp12[1];
+  const tmp16 = onTapMessage(full.useState(0), 2);
+  first1 = tmp16[0];
+  closure_22 = tmp16[1];
   const items4 = [full, first1];
   const callback1 = full.useCallback((arg0, arg1) => {
     callback3(arg1);
@@ -191,22 +225,21 @@ export default function MediaMessagePreview(channelId) {
     if (tmp3) {
       tmp3 = full;
     }
-    closure_12(tmp3);
+    c12(tmp3);
   }, items4);
   const items6 = [stateFromStores1];
-  const callback3 = full.useCallback((nativeEvent) => {
-    const obj = {};
+  const callback3 = full.useCallback((closure_0) => {
+    const obj = { channelId: null, message: null, closeMediaModal: null };
     const tmp = messageId(onClose[20]);
-    obj.channelId = channelId(onClose[21]).getNativeSyntheticEventData(nativeEvent).channelId;
-    obj.message = stateFromStores1;
-    obj.closeMediaModal = onClose;
+    obj[0] = channelId(onClose[21]).getNativeSyntheticEventData(closure_0).channelId;
+    obj[1] = stateFromStores1;
+    obj[2] = onClose;
     tmp(obj);
   }, items5);
   const items7 = [channelId, stateFromStores1, messageId];
   const callback4 = full.useCallback((arg0) => {
     if (arg0 == null) {
-      HermesBuiltin.throwTypeError("Cannot destructure 'undefined' or 'null'.");
-      throw undefined;
+      HermesBuiltin.throwTypeError();
     }
   }, items6);
   const callback5 = full.useCallback((nativeEvent) => {
@@ -225,10 +258,12 @@ export default function MediaMessagePreview(channelId) {
         if (null != reaction) {
           obj = {};
           const merged = Object.assign(reaction);
-          obj["emoji"] = reaction.emoji;
+          obj.emoji = reaction.emoji;
           tmp6 = obj;
         }
         const result = obj.handleAddOrRemoveReaction(tmp5, channel, tmp6, isBurst, channelId(onClose[23]).ReactionLocations.MOBILE_MEDIA_VIEWER);
+        const tmp3 = channelId;
+        const tmp4 = onClose;
       }
     }
   }, items7);
@@ -240,92 +275,95 @@ export default function MediaMessagePreview(channelId) {
       tmp = "" !== url;
     }
     if (tmp) {
-      const obj = { urlString: url };
+      const obj = { urlString: null };
+      obj[0] = url;
       messageId(onClose[24])(obj);
     }
   }, []);
-  let tmp22Result = null;
+  let tmp26Result = null;
   if (null != stateFromStores1) {
-    tmp22Result = null;
+    tmp26Result = null;
     if (null != stateFromStores) {
-      obj = {};
-      obj = { gesture: tmp20 };
-      obj1 = {
-        scrollEventThrottle: 16,
-        onScroll(nativeEvent) {
-              nativeEvent = nativeEvent.nativeEvent;
-              const velocity = nativeEvent.velocity;
-              let tmp2 = 0 === nativeEvent.contentOffset.y;
-              if (tmp2) {
-                let y;
-                if (null != velocity) {
-                  y = velocity.y;
-                }
-                let num = 0;
-                if (null != y) {
-                  num = y;
-                }
-                tmp2 = 0 === num;
-              }
-              closure_6(tmp2);
-            },
-        onLayout: callback2,
-        onContentSizeChange: callback1,
-        showsVerticalScrollIndicator: full,
-        bounces: tmp2[0]
+      obj = { gesture: null, children: null };
+      obj[0] = tmp24;
+      obj = { scrollEventThrottle: 16, onScroll: null, onLayout: null, onContentSizeChange: null, showsVerticalScrollIndicator: null, bounces: null, children: null };
+      obj[1] = function onScroll(nativeEvent) {
+        nativeEvent = nativeEvent.nativeEvent;
+        const velocity = nativeEvent.velocity;
+        let tmp2 = 0 === nativeEvent.contentOffset.y;
+        if (tmp2) {
+          let num;
+          if (velocity != null) {
+            num = velocity.y;
+          }
+          if (num == null) {
+            num = 0;
+          }
+          tmp2 = 0 === num;
+        }
+        closure_6(tmp2);
       };
-      const obj2 = {
-        ref,
-        onLongPressLink: callback6,
-        onLongPressMessage: callback3,
-        onTapMessage,
-        onTapReaction: callback5,
-        onTapSeeMore: onTapMessage,
-        onTapTag: callback4,
-        onTapLink(nativeEvent) {
-              if (closure_5) {
-                if (!full) {
-                  onTapMessage();
-                }
-              }
-              let obj = channelId(onClose[27]);
-              obj = {
-                allowWithinModal: true,
-                chatInputRef: undefined,
-                handleTransitionToThread(arg0, channelId, source) {
-                  const channel = animationDriver.getChannel(channelId);
-                  if (null != channel) {
-                    let obj = channelId(onClose[28]);
-                    obj = { source, navigationReplace: false };
-                    obj.transitionToThread(channel, obj);
-                  }
-                },
-                message: stateFromStores1,
-                messageChannel: stateFromStores,
-                selectedChannelId: channelId,
-                tapLinkData: nativeEvent.nativeEvent
-              };
-              const result = obj.handleMessagesTapLink(obj);
-            },
-        inverted: false
+      obj[2] = callback2;
+      obj[3] = callback1;
+      obj[4] = full;
+      obj[5] = tmp6;
+      obj1 = { ref: null, onLongPressLink: null, onLongPressMessage: null, onTapMessage: null, onTapReaction: null, onTapSeeMore: null, onTapTag: null, onTapLink: null, inverted: false };
+      obj1[0] = ref;
+      obj1[1] = callback6;
+      obj1[2] = callback3;
+      obj1[3] = onTapMessage;
+      obj1[4] = callback5;
+      obj1[5] = onTapMessage;
+      obj1[6] = callback4;
+      obj1[7] = function onTapLink(nativeEvent) {
+        if (closure_5) {
+          if (!full) {
+            onTapMessage();
+          }
+        }
+        let obj = channelId(onClose[27]);
+        obj = { allowWithinModal: true, chatInputRef: "Boolean", handleTransitionToThread: "EMBEDDED_ACTIVITY_DEFERRED_OPEN", message: null, messageChannel: null, selectedChannelId: null, tapLinkData: null };
+        obj[2] = function handleTransitionToThread(arg0, arg1, arg2) {
+          channel = channel.getChannel(arg1);
+          if (null != channel) {
+            let obj = callback(table[28]);
+            obj = { source: null, navigationReplace: false };
+            obj[0] = arg2;
+            obj.transitionToThread(channel, obj);
+          }
+        };
+        obj[3] = stateFromStores1;
+        obj[4] = stateFromStores;
+        obj[5] = channelId;
+        obj[6] = nativeEvent.nativeEvent;
+        const result = obj.handleMessagesTapLink(obj);
       };
-      const items9 = [callback(messageId(onClose[26]), obj2), ];
-      const obj3 = { rowGenerator: closure_16, modifyRow: callback, message: stateFromStores1 };
-      items9[1] = callback(messageId(onClose[14]), obj3);
-      obj1.children = items9;
-      obj.children = first(closure_6, obj1);
-      const items10 = [callback(channelId(onClose[25]).GestureDetector, obj), ];
-      let tmp33 = null;
-      if (tmp3[0]) {
-        const obj4 = { disableReactionCreates, message: stateFromStores1, onMeasure: onMeasureFullHeight, onMeasureTruncated: onMeasureCollapsedHeight };
-        tmp33 = callback(first1, obj4);
+      const items9 = [callback(tmp4(tmp2[26]), obj1), ];
+      const obj2 = { rowGenerator: null, modifyRow: null, message: null };
+      obj2[0] = closure_16;
+      obj2[1] = callback;
+      obj2[2] = stateFromStores1;
+      items9[1] = callback(tmp4(tmp2[14]), obj2);
+      obj[6] = items9;
+      obj[1] = first(closure_6, obj);
+      const items10 = [callback(channelId(tmp2[25]).GestureDetector, obj), ];
+      let tmp28Result = null;
+      if (tmp7[0]) {
+        const obj3 = { disableReactionCreates: null, message: null, onMeasure: null, onMeasureTruncated: null };
+        obj3[0] = disableReactionCreates;
+        obj3[1] = stateFromStores1;
+        obj3[2] = onMeasureFullHeight;
+        obj3[3] = onMeasureCollapsedHeight;
+        tmp28Result = tmp28(editedColor, obj3);
       }
-      items10[1] = tmp33;
-      obj.children = items10;
-      tmp22Result = first(ref, obj);
-      const tmp22 = first;
-      const tmp23 = ref;
+      const obj4 = { children: null };
+      items10[1] = tmp28Result;
+      obj4[0] = items10;
+      tmp26Result = first(ref, obj4);
+      const tmp26 = first;
+      const tmp27 = ref;
+      tmp28 = callback;
     }
   }
-  return tmp22Result;
+  return tmp26Result;
 };

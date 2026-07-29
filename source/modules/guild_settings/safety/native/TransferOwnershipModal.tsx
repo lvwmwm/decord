@@ -1,77 +1,190 @@
-// Module ID: 11012
-// Function ID: 85473
+// Module ID: 11036
+// Function ID: 11037
 // Name: closeModal
-// Dependencies: [5, 31, 11013, 33, 11011, 480, 1212, 5121, 11014, 9166, 8280, 3865, 5552, 2]
+// Dependencies: [5, 19, 11037, 21, 11035, 503, 1236, 5143, 11038, 9190, 8304, 3889, 5570, 2]
 // Exports: default
 
-// Module 11012 (closeModal)
-import isThrottled from "isThrottled";
-import result from "result";
+// Module 11036 (closeModal)
+import encodeProperties from "encodeProperties";
+import noop from "noop";
 import TransferOwnershipModalScenes from "TransferOwnershipModalScenes";
 import { jsx } from "jsxProd";
 
-let closure_5;
+let c5;
 let closure_6;
 const require = arg1;
 function closeModal() {
-  importDefault(11011).close();
+  importDefault(11035).close();
 }
-({ TransferOwnershipModalScenes: closure_5, TransferOwnershipVerificationTypes: closure_6 } = TransferOwnershipModalScenes);
+({ TransferOwnershipModalScenes: c5, TransferOwnershipVerificationTypes: closure_6 } = TransferOwnershipModalScenes);
 let result = require("TransferOwnershipModalScenes").fileFinishedImporting("modules/guild_settings/safety/native/TransferOwnershipModal.tsx");
 
 export default function TransferOwnershipModal(guild) {
   guild = guild.guild;
   const toUser = guild.toUser;
   const items = [guild, toUser];
-  const memo = React.useMemo(() => (function getScreens(guild, toUser) {
-    let closure_0 = guild;
-    let closure_1 = toUser;
-    let obj = { impression_group: guild(outer2_2[5]).ImpressionGroups.GUILD_TRANSFER_OWNERSHIP_FLOW };
+  const memo = React.useMemo(() => {
+    let obj = { impression_group: guild(outer1_2[5]).ImpressionGroups.GUILD_TRANSFER_OWNERSHIP_FLOW };
     obj = {};
-    obj = {};
-    let intl = guild(outer2_2[6]).intl;
-    obj.headerTitle = intl.string(guild(outer2_2[6]).t.Z5s7PM);
-    obj.headerLeft = guild(outer2_2[7]).getHeaderCloseButton(outer2_8);
-    obj.impressionName = guild(outer2_2[5]).ImpressionNames.GUILD_TRANSFER_OWNERSHIP;
-    obj.impressionProperties = obj;
-    obj.render = function render() {
-      return outer3_7(toUser(outer3_2[8]), { guild: closure_0, toUser: closure_1 });
+    obj = { headerTitle: null, headerLeft: null, impressionName: null, impressionProperties: null, render: null };
+    let intl = guild(outer1_2[6]).intl;
+    obj[0] = intl.string(guild(outer1_2[6]).t.Z5s7PM);
+    obj[1] = guild(outer1_2[7]).getHeaderCloseButton(outer1_8);
+    obj[2] = guild(outer1_2[5]).ImpressionNames.GUILD_TRANSFER_OWNERSHIP;
+    obj[3] = obj;
+    obj[4] = function render() {
+      return outer1_7(callback2(outer1_2[8]), { guild: closure_0, toUser: callback2 });
     };
-    obj[outer2_5.TRANFSER_OWNERSHIP] = obj;
-    const obj1 = {};
-    let intl2 = guild(outer2_2[6]).intl;
-    obj1.headerTitle = intl2.string(guild(outer2_2[6]).t.Z5s7PM);
-    const obj4 = guild(outer2_2[7]);
-    obj1.headerLeft = guild(outer2_2[7]).getHeaderCloseButton(outer2_8);
-    obj1.impressionName = guild(outer2_2[5]).ImpressionNames.GUILD_TRANSFER_OWNERSHIP_CONFIRM_EMAIL_CODE;
-    obj1.impressionProperties = obj;
-    obj1.render = function render() {
-      let obj = {
-        onFormSubmit: (() => {
-          // CreateGeneratorClosureLongIndex (0x67)
-          let closure_0 = outer4_3(tmp);
-          return () => { ... };
-        })(),
-        onSuccess() {
-          outer4_8();
-          toUser(outer4_2[10]).close();
-          const obj = toUser(outer4_2[10]);
-          const result = guild(outer4_2[11]).showTransferOwnershipSuccess();
+    obj[outer1_5.TRANFSER_OWNERSHIP] = obj;
+    let obj1 = { headerTitle: null, headerLeft: null, impressionName: null, impressionProperties: null, render: null };
+    let intl2 = guild(outer1_2[6]).intl;
+    obj1[0] = intl2.string(guild(outer1_2[6]).t.Z5s7PM);
+    const obj4 = guild(outer1_2[7]);
+    obj1[1] = guild(outer1_2[7]).getHeaderCloseButton(outer1_8);
+    obj1[2] = guild(outer1_2[5]).ImpressionNames.GUILD_TRANSFER_OWNERSHIP_CONFIRM_EMAIL_CODE;
+    obj1[3] = obj;
+    obj1[4] = function render() {
+      let obj = { onFormSubmit: null, onSuccess: null, onResend: null, headerText: null, confirmButtonText: null };
+      let callback;
+      callback = outer1_3((arg0) => {
+        let closure_0 = arg0;
+        let c2 = 0;
+        let c1 = 0;
+        return (function*(arg0) {
+          if (id2 === 2) {
+            id2 = 3;
+            HermesBuiltin.throwTypeError();
+          } else if (tmp3 === 3) {
+            if (arg0 === 1) {
+              throw arg1;
+            } else if (arg0 === 2) {
+              let obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            } else {
+              return { value: "HermesInternal", done: null };
+            }
+          } else {
+            try {
+              id2 = 2;
+              if (0 === c2) {
+                if (arg0 === 1) {
+                  id2 = 3;
+                  throw arg1;
+                } else if (arg0 === 2) {
+                  id2 = 3;
+                  obj = { value: null, done: true };
+                  obj[0] = arg1;
+                  return obj;
+                } else {
+                  let obj2 = outer2_1(outer2_2[10]);
+                  c2 = 1;
+                  id2 = 1;
+                  const obj1 = { value: null, done: false };
+                  obj1[0] = obj2.transferOwnership(id.id, id2.id, outer2_6.EMAIL, id);
+                  return obj1;
+                }
+              } else if (arg0 === 1) {
+                id2 = 3;
+                throw arg1;
+              } else if (arg0 === 2) {
+                id2 = 3;
+                obj2 = { value: null, done: true };
+                obj2[0] = arg1;
+                return obj2;
+              } else {
+                id2 = 3;
+                obj = { value: null, done: true };
+                obj[0] = arg1;
+                return obj;
+              }
+            } catch (tmp12) {
+              id2 = tmp;
+              throw tmp12;
+            }
+          }
+        })();
+      });
+      obj[0] = function() {
+        const self = this;
+        const apply = closure_0.apply;
+        if (typeof apply === "unknown") {
+          let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+        } else {
+          applyArgumentsResult = apply(self, arguments);
         }
+        return applyArgumentsResult;
       };
-      // CreateGeneratorClosureLongIndex (0x67)
-      obj.onResend = outer3_3(tmp);
-      const intl = guild(outer3_2[6]).intl;
-      obj.headerText = intl.string(guild(outer3_2[6]).t.Z5s7PM);
-      const intl2 = guild(outer3_2[6]).intl;
-      obj.confirmButtonText = intl2.string(guild(outer3_2[6]).t.Z5s7PM);
-      return outer3_7(toUser(outer3_2[9]), obj);
+      obj[1] = function onSuccess() {
+        callback2(11035).close();
+        const obj = callback2(11035);
+        callback2(8304).close();
+        const obj2 = callback2(8304);
+        const result = callback(3889).showTransferOwnershipSuccess();
+      };
+      obj[2] = outer1_3(function*() {
+        if (id === 2) {
+          id = 3;
+          HermesBuiltin.throwTypeError();
+        } else if (tmp3 === 3) {
+          if (arg0 === 1) {
+            throw arg1;
+          } else if (arg0 === 2) {
+            let obj = { value: null, done: true };
+            obj[0] = arg1;
+            return obj;
+          } else {
+            return { value: "HermesInternal", done: null };
+          }
+        } else {
+          try {
+            id = 2;
+            if (0 === v0) {
+              if (arg0 === 1) {
+                id = 3;
+                throw arg1;
+              } else if (arg0 === 2) {
+                id = 3;
+                obj = { value: null, done: true };
+                obj[0] = arg1;
+                return obj;
+              } else {
+                let obj1 = v0(outer1_2[10]);
+                v0 = 1;
+                id = 1;
+                obj1 = { value: null, done: false };
+                obj1[0] = obj1.sendTransferOwnershipPincode(id.id, true);
+                return obj1;
+              }
+            } else if (arg0 === 1) {
+              id = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              id = 3;
+              obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            } else {
+              id = 3;
+              return { value: "HermesInternal", done: null };
+            }
+          } catch (tmp8) {
+            id = tmp;
+            throw tmp8;
+          }
+        }
+      });
+      const intl = callback(outer1_2[6]).intl;
+      obj[3] = intl.string(callback(outer1_2[6]).t.Z5s7PM);
+      const intl2 = callback(outer1_2[6]).intl;
+      obj[4] = intl2.string(callback(outer1_2[6]).t.Z5s7PM);
+      return outer1_7(callback2(outer1_2[9]), obj);
     };
-    obj[outer2_5.CONFIRM_EMAIL_CODE] = obj1;
+    obj[outer1_5.CONFIRM_EMAIL_CODE] = obj1;
     return obj;
-  })(guild, toUser), items);
-  let obj = { screens: memo, initialRouteName: constants.TRANFSER_OWNERSHIP };
-  let intl = guild(1212).intl;
-  obj.headerBackTitle = intl.string(guild(1212).t["13/7kX"]);
-  return jsx(guild(5552).Navigator, { screens: memo, initialRouteName: constants.TRANFSER_OWNERSHIP });
+  }, items);
+  let obj = { screens: memo, initialRouteName: constants.TRANFSER_OWNERSHIP, headerBackTitle: null };
+  let intl = guild(1236).intl;
+  obj[2] = intl.string(guild(1236).t["13/7kX"]);
+  return jsx(guild(5570).Navigator, { screens: memo, initialRouteName: constants.TRANFSER_OWNERSHIP, headerBackTitle: null });
 };

@@ -1,59 +1,60 @@
-// Module ID: 15425
-// Function ID: 117458
+// Module ID: 15458
+// Function ID: 15459
 // Name: ThreadChannelStarterMessage
-// Dependencies: [31, 5839, 4384, 33, 7690, 566, 4695, 1198, 9266, 2]
+// Dependencies: [19, 5857, 4407, 21, 7713, 589, 4717, 1222, 9290, 2]
 // Exports: ThreadChannelStarterMessage, ThreadCreationStarterMessage
 
-// Module 15425 (ThreadChannelStarterMessage)
-import "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import { ReferencedMessageState } from "_isNativeReflectConstruct";
-import closure_5 from "_isNativeReflectConstruct";
+// Module 15458 (ThreadChannelStarterMessage)
+import "noop";
+import processMessage from "processMessage";
+import { ReferencedMessageState } from "processMessage";
+import reinjectEphemerals from "reinjectEphemerals";
 import { jsx } from "jsxProd";
-import importDefaultResult from "RowManager";
 
 const require = arg1;
-importDefaultResult = new importDefaultResult();
-importDefaultResult.setOptions({ renderCodedLinks: false, renderGiftCode: false, renderActivityInstanceEmbed: false, renderActivityInviteEmbed: false, renderEmbeds: true, ignoreMentioned: true, inlineAttachmentMedia: true, inlineEmbedMedia: true, renderReactions: false, renderReplies: true, renderThreadEmbeds: false });
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/threads/native/components/ThreadParentMessage.tsx");
+let obj = new require("setOptions")();
+obj.setOptions({ renderCodedLinks: false, renderGiftCode: false, renderActivityInstanceEmbed: false, renderActivityInviteEmbed: false, renderEmbeds: true, ignoreMentioned: true, inlineAttachmentMedia: true, inlineEmbedMedia: true, renderReactions: false, renderReplies: true, renderThreadEmbeds: false });
+const result = require("reinjectEphemerals").fileFinishedImporting("modules/threads/native/components/ThreadParentMessage.tsx");
 
 export const ThreadChannelStarterMessage = function ThreadChannelStarterMessage(arg0) {
   let dependencyMap;
   let importDefault;
   let require;
   ({ guildId: require, messageId: importDefault, channelId: dependencyMap } = arg0);
-  let obj = require(566) /* initialize */;
-  const items = [_isNativeReflectConstruct];
+  let obj = require(589) /* initialize */;
+  const items = [processMessage];
   const stateFromStores = obj.useStateFromStores(items, () => outer1_3.getMessage(closure_2, closure_1));
   let state;
-  if (null != stateFromStores) {
+  if (stateFromStores != null) {
     state = stateFromStores.state;
   }
-  let tmp3 = null;
+  let tmp5 = null;
   if (state === ReferencedMessageState.LOADED) {
-    obj = {
-      accessibilityRole: "button",
-      onPress() {
-          outer1_0(outer1_2[7]).transitionToGuild(closure_0, closure_2, closure_1);
-        }
+    obj = { accessibilityRole: "button", onPress: null, children: null };
+    obj[1] = function onPress() {
+      outer1_0(outer1_2[7]).transitionToGuild(closure_0, closure_2, closure_1);
     };
-    obj = { rowGenerator: closure_7, message: stateFromStores.message };
-    obj.children = jsx(importDefault(9266), { rowGenerator: closure_7, message: stateFromStores.message });
-    tmp3 = jsx(require(4695) /* PressableBase */.PressableOpacity, { rowGenerator: closure_7, message: stateFromStores.message });
+    obj = { rowGenerator: null, message: null };
+    obj[0] = obj;
+    obj[1] = stateFromStores.message;
+    obj[2] = jsx(importDefault(9290), { rowGenerator: null, message: null });
+    tmp5 = jsx(require(4717) /* PressableBase */.PressableOpacity, { rowGenerator: null, message: null });
   }
-  return tmp3;
+  return tmp5;
 };
 export const ThreadCreationStarterMessage = function ThreadCreationStarterMessage(arg0) {
   let importDefault;
   let require;
   ({ messageId: require, channelId: importDefault } = arg0);
-  let obj = require(566) /* initialize */;
-  const items = [closure_5];
+  let obj = require(589) /* initialize */;
+  const items = [reinjectEphemerals];
   const stateFromStores = obj.useStateFromStores(items, () => outer1_5.getMessage(closure_1, closure_0));
-  let tmp2 = null;
+  let tmp3 = null;
   if (null != stateFromStores) {
-    obj = { rowGenerator: closure_7, message: stateFromStores };
-    tmp2 = jsx(importDefault(9266), { rowGenerator: closure_7, message: stateFromStores });
+    obj = { rowGenerator: null, message: null };
+    obj[0] = obj;
+    obj[1] = stateFromStores;
+    tmp3 = jsx(importDefault(9290), { rowGenerator: null, message: null });
   }
-  return tmp2;
+  return tmp3;
 };

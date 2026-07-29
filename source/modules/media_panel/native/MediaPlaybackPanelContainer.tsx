@@ -1,26 +1,30 @@
-// Module ID: 16005
-// Function ID: 123492
-// Dependencies: [31, 33, 13567, 3780, 16006, 16008, 2]
+// Module ID: 16040
+// Function ID: 16041
+// Dependencies: [19, 21, 13590, 3804, 16041, 16043, 2]
 
-// Module 16005
+// Module 16040
 import { jsx } from "jsxProd";
-import importAllResult from "result";
+import importAllResult from "noop";
 
 const require = arg1;
-const memoResult = require("result").memo(function MediaPlaybackPanelContainer() {
-  let obj = require(13567) /* _isNativeReflectConstruct */;
-  let tmp = null;
+const memoResult = require("noop").memo(function MediaPlaybackPanelContainer() {
+  let obj = require(13590) /* _initialize */;
+  let tmp2 = null;
   if (obj.useMediaPlayerManagerStore(obj2.useShallow((showPip) => {
     let activeMediaPlayerSource;
     let mediaSourceMessage;
-    let tmp = !showPip.showPip || !showPip.canAccessMedia;
+    showPip = showPip.showPip;
+    let tmp = !showPip;
+    if (showPip) {
+      tmp = !showPip.canAccessMedia;
+    }
     if (!tmp) {
       tmp = null == showPip.activeMediaPlayerSource;
     }
     let tmp3 = !tmp;
     if (!tmp) {
       ({ mediaSourceMessage, activeMediaPlayerSource } = showPip);
-      if (null != activeMediaPlayerSource) {
+      if (activeMediaPlayerSource != null) {
         const attachmentIndex = activeMediaPlayerSource.attachmentIndex;
       }
       let flag = false;
@@ -28,33 +32,36 @@ const memoResult = require("result").memo(function MediaPlaybackPanelContainer()
         flag = false;
         if (null != attachmentIndex) {
           let tmp5;
-          if (null != mediaSourceMessage) {
+          if (mediaSourceMessage != null) {
             const contentMessage = mediaSourceMessage.getContentMessage();
-            if (null != contentMessage) {
+            if (contentMessage != null) {
               tmp5 = contentMessage.attachments[attachmentIndex];
             }
           }
-          let startsWithResult;
-          if (null != tmp5) {
+          let flag2;
+          if (tmp5 != null) {
             const content_type = tmp5.content_type;
-            if (null != content_type) {
-              startsWithResult = content_type.startsWith("audio");
+            if (content_type != null) {
+              flag2 = content_type.startsWith("audio");
             }
           }
-          flag = null != startsWithResult && startsWithResult;
-          const tmp8 = null != startsWithResult && startsWithResult;
+          if (flag2 == null) {
+            flag2 = false;
+          }
+          flag = flag2;
         }
       }
       tmp3 = flag;
     }
     return tmp3;
   }))) {
-    obj = { children: jsx(importDefault(16008), {}) };
-    tmp = jsx(importDefault(16006), { children: jsx(importDefault(16008), {}) });
-    let tmp5 = importDefault(16006);
+    obj = { children: null };
+    obj[0] = jsx(importDefault(16043), {});
+    tmp2 = jsx(importDefault(16041), { children: null });
+    let tmp5 = importDefault(16041);
   }
-  return tmp;
+  return tmp2;
 });
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/media_panel/native/MediaPlaybackPanelContainer.tsx");
+const result = require("_initialize").fileFinishedImporting("modules/media_panel/native/MediaPlaybackPanelContainer.tsx");
 
 export default memoResult;

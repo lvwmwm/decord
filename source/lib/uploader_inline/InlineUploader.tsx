@@ -1,119 +1,168 @@
-// Module ID: 7924
-// Function ID: 62988
-// Name: InlineUploader
-// Dependencies: [5, 6, 7, 4728, 7925, 2]
+// Module ID: 7949
+// Function ID: 7950
+// Name: fromBlob
+// Dependencies: [5, 4750, 7950, 2]
 
-// Module 7924 (InlineUploader)
-import set from "set";
-import _classCallCheck from "_classCallCheck";
-import _defineProperties from "_defineProperties";
+// Module 7949 (fromBlob)
+import asyncGeneratorStep from "asyncGeneratorStep";
 
 const require = arg1;
-const re6 = /^[a-f0-9]{32}$/;
-let tmp2 = (() => {
-  class InlineUploader {
-    constructor(arg0, arg1) {
-      tmp = outer1_4(this, InlineUploader);
-      this.surface = arg0;
-      this.originalMd5Promise = arg1;
-      return;
-    }
+const re4 = /^[a-f0-9]{32}$/;
+let InlineUploader;
+class InlineUploader {
+  constructor(arg0, arg1) {
+    obj = Object.create(new.target.prototype);
+    obj.surface = global;
+    obj.originalMd5Promise = arg1;
+    return obj;
   }
-  let obj = {
-    key: "getOriginalMd5",
-    value() {
-      return this.originalMd5Promise;
-    }
-  };
-  let items = [obj, ];
-  obj = { key: "buildHeaders" };
-  let closure_0 = callback(async function(arg0) {
-    return outer1_1.buildHeadersForMd5(yield this.originalMd5Promise, arg0);
-  });
-  obj.value = function buildHeaders() {
-    return callback(...arguments);
-  };
-  items[1] = obj;
-  obj = {
-    key: "fromBlob",
-    value(surface) {
-      const obj = InlineUploader(outer1_2[3]);
-      const fromBlobResult = InlineUploader(outer1_2[3]).fromBlob(arg1);
-      return new InlineUploader(surface, InlineUploader(outer1_2[3]).fromBlob(arg1).catch(() => null));
-    }
-  };
-  let items1 = [
-    obj,
-    {
-      key: "buildHeadersForMd5",
-      value(arg0, arg1) {
-        let tmp = (function serializeOriginalMd5Header(arg0) {
-          if (null == arg0) {
-            return null;
-          } else if ("string" === typeof arg0) {
-            let tmp9 = null;
-            if (outer2_6.test(arg0)) {
-              tmp9 = arg0;
-            }
-            return tmp9;
-          } else {
-            const items = [];
-            const _Object = Object;
-            const keys = Object.keys(arg0);
-            for (let num = 0; num < keys.length; num = num + 1) {
-              let tmp = keys[num];
-              let tmp2 = arg0[tmp];
-              let isMatch = null != tmp2;
-              if (isMatch) {
-                let tmp4 = outer2_6;
-                isMatch = outer2_6.test(tmp2);
-              }
-              if (isMatch) {
-                let items1 = [tmp, tmp2];
-                let arr = items.push(items1);
-              }
-            }
-            let joined = null;
-            if (0 !== items.length) {
-              const sorted = items.sort((arg0, arg1) => {
-                let tmp;
-                let tmp2;
-                [tmp] = arg0;
-                [tmp2] = arg1;
-                let num = -1;
-                if (tmp >= tmp2) {
-                  let num2 = 0;
-                  if (tmp > tmp2) {
-                    num2 = 1;
-                  }
-                  num = num2;
-                }
-                return num;
-              });
-              const mapped = items.map((arg0) => {
-                let str;
-                let tmp;
-                [str, tmp] = arg0;
-                return "" + str.toLowerCase() + "=\"" + tmp + "\"";
-              });
-              joined = mapped.join(", ");
-            }
-            return joined;
-          }
-        })(arg0);
-        let tmp2 = arg1;
-        if (null != tmp) {
-          const obj = {};
-          const merged = Object.assign(arg1);
-          obj[callback(outer1_2[4]).ORIGINAL_MD5_HEADER] = tmp;
-          tmp2 = obj;
+}
+const prototype = InlineUploader.prototype;
+InlineUploader["fromBlob"] = function fromBlob(surface) {
+  let obj = importDefault(4750);
+  const fromBlobResult = obj.fromBlob(arg1);
+  const tmp = InlineUploader;
+  if (typeof InlineUploader !== "find") {
+    HermesBuiltin.throwTypeError();
+  }
+  obj = Object.create(tmp.prototype);
+  obj.surface = surface;
+  obj.originalMd5Promise = obj.fromBlob(arg1).catch(() => null);
+  return obj;
+};
+prototype["getOriginalMd5"] = function getOriginalMd5() {
+  return this.originalMd5Promise;
+};
+InlineUploader["buildHeadersForMd5"] = function buildHeadersForMd5(originalMd5, buildHeadersForMd5) {
+  const tmp = (function serializeOriginalMd5Header(originalMd5) {
+    if (null == originalMd5) {
+      return null;
+    } else if (typeof originalMd5 === "y") {
+      let tmp14 = null;
+      if (regex.test(originalMd5)) {
+        tmp14 = originalMd5;
+      }
+      return tmp14;
+    } else {
+      const items = [];
+      const _Object = Object;
+      const keys = Object.keys(originalMd5);
+      for (const item10006 of keys) {
+        let tmp3 = arg0[item10006];
+        let tmp4 = tmp3;
+        let isMatch = null != tmp3;
+        let tmp2 = item10006;
+        if (isMatch) {
+          let tmp6 = regex;
+          let tmp7 = tmp3;
+          isMatch = regex.test(tmp4);
         }
-        return tmp2;
+        if (isMatch) {
+          let tmp8 = item10006;
+          let items1 = [tmp2, ];
+          let tmp9 = tmp3;
+          items1[1] = tmp4;
+          let arr = items.push(items1);
+        }
+        continue;
+      }
+      let joined = null;
+      if (0 !== items.length) {
+        const sorted = items.sort((arg0, arg1) => {
+          let tmp;
+          let tmp2;
+          [tmp] = arg0;
+          [tmp2] = arg1;
+          let num = -1;
+          if (tmp >= tmp2) {
+            let num2 = 0;
+            if (tmp > tmp2) {
+              num2 = 1;
+            }
+            num = num2;
+          }
+          return num;
+        });
+        const mapped = items.map((arg0) => {
+          let str;
+          let tmp;
+          [str, tmp] = arg0;
+          return "" + str.toLowerCase() + "=\"" + tmp + "\"";
+        });
+        joined = mapped.join(", ");
+      }
+      return joined;
+    }
+  })(originalMd5);
+  let tmp2 = buildHeadersForMd5;
+  if (null != tmp) {
+    const obj = {};
+    const merged = Object.assign(buildHeadersForMd5);
+    obj[require(7950) /* ORIGINAL_MD5_HEADER */.ORIGINAL_MD5_HEADER] = tmp;
+    tmp2 = obj;
+  }
+  return tmp2;
+};
+prototype["buildHeaders"] = function buildHeaders(arg0) {
+  let closure_0 = arg0;
+  const self = this;
+  return callback(function*() {
+    if (c4 === 2) {
+      c4 = 3;
+      HermesBuiltin.throwTypeError();
+    } else if (tmp3 === 3) {
+      if (arg0 === 1) {
+        throw arg1;
+      } else if (arg0 === 2) {
+        let obj = { value: null, done: true };
+        obj[0] = arg1;
+        return obj;
+      } else {
+        return { value: "HermesInternal", done: null };
+      }
+    } else {
+      try {
+        c4 = 2;
+        if (0 === c3) {
+          if (arg0 === 1) {
+            c4 = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            c4 = 3;
+            obj = { value: null, done: true };
+            obj[0] = arg1;
+            return obj;
+          } else {
+            let closure_2 = tmp4;
+            let closure_1 = outer1_5;
+            const buildHeadersForMd5 = outer1_5.buildHeadersForMd5;
+            c3 = 1;
+            c4 = 1;
+            const obj1 = { value: null, done: false };
+            obj1[0] = outer1_1.originalMd5Promise;
+            return obj1;
+          }
+        } else if (arg0 === 1) {
+          c4 = 3;
+          throw arg1;
+        } else if (arg0 === 2) {
+          c4 = 3;
+          const obj2 = { value: null, done: true };
+          obj2[0] = arg1;
+          return obj2;
+        } else {
+          c4 = 3;
+          obj = { value: null, done: true };
+          obj[0] = buildHeadersForMd5(arg1, buildHeadersForMd5);
+          return obj;
+        }
+      } catch (tmp11) {
+        c4 = tmp;
+        throw tmp11;
       }
     }
-  ];
-  return callback2(InlineUploader, items, items1);
-})();
-const result = require("_defineProperties").fileFinishedImporting("lib/uploader_inline/InlineUploader.tsx");
+  })();
+};
+const result = require("ORIGINAL_MD5_HEADER").fileFinishedImporting("lib/uploader_inline/InlineUploader.tsx");
 
-export default tmp2;
+export default InlineUploader;

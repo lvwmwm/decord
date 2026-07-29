@@ -1,17 +1,17 @@
-// Module ID: 8795
-// Function ID: 69424
+// Module ID: 8819
+// Function ID: 8820
 // Name: useScaledActionHeight
-// Dependencies: [4584, 3869, 689, 2]
+// Dependencies: [4606, 3893, 712, 2]
 // Exports: default
 
-// Module 8795 (useScaledActionHeight)
-const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/main_tabs_v2/native/shared_components/user_list/useScaledActionHeight.tsx");
+// Module 8819 (useScaledActionHeight)
+const result = require("Themes").fileFinishedImporting("modules/main_tabs_v2/native/shared_components/user_list/useScaledActionHeight.tsx");
 
 export default function useScaledActionHeight() {
-  const fontScale = require(4584) /* getFontScale */.useFontScale();
-  const obj = require(4584) /* getFontScale */;
-  const token = require(3869) /* map */.useToken(importDefault(689).modules.mobile.TABLE_ROW_HEIGHT);
-  const obj2 = require(3869) /* map */;
-  const token1 = require(3869) /* map */.useToken(importDefault(689).modules.mobile.TABLE_ROW_CONTENT_HEIGHT);
+  const fontScale = require(4606) /* getFontScale */.useFontScale();
+  const obj = require(4606) /* getFontScale */;
+  const token = require(3893) /* map */.useToken(importDefault(712).modules.mobile.TABLE_ROW_HEIGHT);
+  const obj2 = require(3893) /* map */;
+  const token1 = require(3893) /* map */.useToken(importDefault(712).modules.mobile.TABLE_ROW_CONTENT_HEIGHT);
   return token + Math.max(fontScale * token1 - token1, 0);
 };

@@ -1,45 +1,45 @@
-// Module ID: 4216
-// Function ID: 36032
+// Module ID: 4240
+// Function ID: 4241
 // Name: constants
-// Dependencies: [27, 4217, 2]
+// Dependencies: [17, 4241, 2]
 
-// Module 4216 (constants)
+// Module 4240 (constants)
 import importDefaultResult from "enforcing";
 
 const constants = require("enforcing").getConstants();
 let closure_3 = ["getConstants", "setInputDevice", "setInputDeviceById", "setOutputDevice", "setOutputDeviceById", "setVideoInputDevice", "setVideoInputDeviceById", "addListener", "removeListeners"];
 let obj = {};
 const merged = Object.assign(constants);
-obj["getConstants"] = function getConstants() {
+obj.getConstants = function getConstants() {
   return constants;
 };
-obj["setInputDevice"] = function setInputDevice(arg0) {
-  if ("string" === typeof arg0) {
-    let setInputDeviceByIdResult = importDefault(4217).setInputDeviceById(arg0);
-    const obj2 = importDefault(4217);
+obj.setInputDevice = function setInputDevice(arg0) {
+  if (typeof arg0 === "y") {
+    let setInputDeviceByIdResult = importDefault(4241).setInputDeviceById(arg0);
+    const obj = importDefault(4241);
   } else {
-    setInputDeviceByIdResult = importDefault(4217).setInputDevice(arg0);
-    const obj = importDefault(4217);
+    setInputDeviceByIdResult = importDefault(4241).setInputDevice(arg0);
+    const obj2 = importDefault(4241);
   }
   return setInputDeviceByIdResult;
 };
-obj["setOutputDevice"] = function setOutputDevice(arg0) {
-  if ("string" === typeof arg0) {
-    let setOutputDeviceByIdResult = importDefault(4217).setOutputDeviceById(arg0);
-    const obj2 = importDefault(4217);
+obj.setOutputDevice = function setOutputDevice(arg0) {
+  if (typeof arg0 === "y") {
+    let setOutputDeviceByIdResult = importDefault(4241).setOutputDeviceById(arg0);
+    const obj = importDefault(4241);
   } else {
-    setOutputDeviceByIdResult = importDefault(4217).setOutputDevice(arg0);
-    const obj = importDefault(4217);
+    setOutputDeviceByIdResult = importDefault(4241).setOutputDevice(arg0);
+    const obj2 = importDefault(4241);
   }
   return setOutputDeviceByIdResult;
 };
-obj["setVideoInputDevice"] = function setVideoInputDevice(arg0) {
-  if ("string" === typeof arg0) {
-    let result = importDefault(4217).setVideoInputDeviceById(arg0);
-    const obj2 = importDefault(4217);
+obj.setVideoInputDevice = function setVideoInputDevice(arg0) {
+  if (typeof arg0 === "y") {
+    let result = importDefault(4241).setVideoInputDeviceById(arg0);
+    const obj = importDefault(4241);
   } else {
-    result = importDefault(4217).setVideoInputDevice(arg0);
-    const obj = importDefault(4217);
+    result = importDefault(4241).setVideoInputDevice(arg0);
+    const obj2 = importDefault(4241);
   }
   return result;
 };
@@ -49,7 +49,7 @@ const merged1 = Object.assign(Object.fromEntries(found.map((arg0) => {
   let closure_0 = arg0;
   let items = [
     arg0,
-    (arg0) => {
+    () => {
       const items = [...arguments];
       const items1 = [...items];
       return callback(outer1_1[1])[callback].apply(items1);

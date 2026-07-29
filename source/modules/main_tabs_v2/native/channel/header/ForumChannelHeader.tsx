@@ -1,17 +1,16 @@
-// Module ID: 10126
-// Function ID: 78286
-// Dependencies: [31, 27, 9095, 33, 4165, 10127, 10105, 10128, 2]
+// Module ID: 10147
+// Function ID: 10148
+// Dependencies: [19, 17, 9119, 21, 4189, 10148, 10126, 10149, 2]
 
-// Module 10126
+// Module 10147
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import importAllResult from "result";
+import createCacheKey from "createCacheKey";
+import importAllResult from "noop";
 
 const require = arg1;
-let obj = { flex: 1, flexShrink: 1, flexDirection: "row", alignItems: "center", paddingStart: 4, height: require("MIN_HEADER_HEIGHT").MIN_HEADER_HEIGHT };
-let closure_5 = _createForOfIteratorHelperLoose.createStyles({ search: obj });
-const memoResult = require("result").memo((arg0) => {
+let closure_5 = createCacheKey.createStyles({ search: { flex: 1, flexShrink: 1, flexDirection: "row", alignItems: "center", paddingStart: 4, height: require("MIN_HEADER_HEIGHT").MIN_HEADER_HEIGHT } });
+const memoResult = require("noop").memo((arg0) => {
   let channelId;
   let guildId;
   let isGuildMemberCountVisible;
@@ -21,17 +20,27 @@ const memoResult = require("result").memo((arg0) => {
   let searchPlaceholder;
   ({ channelId, guildId } = arg0);
   ({ screenIndex, pressable, isGuildMemberCountVisible, isNavigationScreen, searchPlaceholder } = arg0);
-  let obj = require(10127) /* useIsForumChannelSearchActive */;
+  let obj = require(10148) /* useIsForumChannelSearchActive */;
   if (obj.useIsForumChannelSearchActive(channelId)) {
-    obj = { style: tmp.search };
-    obj = { channelId, guildId, placeholder: searchPlaceholder };
-    obj.children = tmp2(require(10105) /* ForumChannelCloseSearchButton */.ForumChannelSearchInput, obj);
-    let tmp2Result = tmp2(View, obj);
+    obj = { style: null, children: null };
+    obj[0] = tmp.search;
+    obj = { channelId: null, guildId: null, placeholder: null };
+    obj[0] = channelId;
+    obj[1] = guildId;
+    obj[2] = searchPlaceholder;
+    obj[1] = tmp4(require(10126) /* ForumChannelCloseSearchButton */.ForumChannelSearchInput, obj);
+    let tmp4Result = tmp4(View, obj);
   } else {
-    const obj1 = { channelId, guildId, pressable, isGuildMemberCountVisible, isNavigationScreen, screenIndex };
-    tmp2Result = tmp2(importDefault(10128), obj1);
+    const obj1 = { channelId: null, guildId: null, pressable: null, isGuildMemberCountVisible: null, isNavigationScreen: null, screenIndex: null };
+    obj1[0] = channelId;
+    obj1[1] = guildId;
+    obj1[2] = pressable;
+    obj1[3] = isGuildMemberCountVisible;
+    obj1[4] = isNavigationScreen;
+    obj1[5] = screenIndex;
+    tmp4Result = tmp4(importDefault(10149), obj1);
   }
-  return tmp2Result;
+  return tmp4Result;
 });
 const result = require("MIN_HEADER_HEIGHT").fileFinishedImporting("modules/main_tabs_v2/native/channel/header/ForumChannelHeader.tsx");
 

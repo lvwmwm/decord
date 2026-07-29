@@ -1,39 +1,49 @@
-// Module ID: 4100
-// Function ID: 33983
+// Module ID: 4124
+// Function ID: 4125
 // Name: useCustomThemeDisplaySettings
-// Dependencies: [57, 1322, 566, 2]
+// Dependencies: [32, 1346, 589, 2]
 // Exports: useCustomThemeDisplaySettings
 
-// Module 4100 (useCustomThemeDisplaySettings)
+// Module 4124 (useCustomThemeDisplaySettings)
 import _slicedToArray from "_slicedToArray";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import reset from "reset";
 
 const require = arg1;
 const result = require("initialize").fileFinishedImporting("modules/client_themes/native/useCustomThemeDisplaySettings.tsx");
 
 export const useCustomThemeDisplaySettings = function useCustomThemeDisplaySettings(base_theme) {
-  let obj = require(566) /* initialize */;
-  let items = [_isNativeReflectConstruct];
-  const tmp = callback(obj.useStateFromStoresArray(items, () => {
-    const items = [outer1_3.getCustomTheme(), outer1_3.getBaseTheme(), outer1_3.getPreviewTheme()];
+  let tmp2;
+  let tmp3;
+  let tmp4;
+  let obj = require(589) /* initialize */;
+  let items = [reset];
+  [tmp2, tmp3, tmp4] = callback(obj.useStateFromStoresArray(items, () => {
+    const items = [store.getCustomTheme(), store.getBaseTheme(), store.getPreviewTheme()];
     return items;
   }), 3);
-  const first = tmp[0];
-  if (undefined !== tmp[2]) {
+  if (undefined !== tmp4) {
     return tmp4;
   } else {
-    if (undefined !== first) {
+    if (undefined !== tmp2) {
       if (undefined !== tmp3) {
-        obj = { baseTheme: tmp3, customTheme: first };
+        obj = { baseTheme: null, customTheme: null };
+        obj[0] = tmp3;
+        obj[1] = tmp2;
         return obj;
       }
     }
     if (null != base_theme) {
-      obj = {};
-      ({ colors: obj2.colors, gradient_angle: obj2.gradientAngle, base_mix: obj2.baseMix } = base_theme);
-      obj.gradientColorStops = [];
-      const obj1 = { baseTheme: base_theme.base_theme, customTheme: obj };
+      obj = { colors: null, gradientAngle: null, baseMix: null, gradientColorStops: null };
+      ({ colors: obj2[0], gradient_angle: obj2[1], base_mix: obj2[2] } = base_theme);
+      obj[3] = [];
+      const obj1 = { baseTheme: null, customTheme: null };
+      obj1[0] = base_theme.base_theme;
+      obj1[1] = obj;
       return obj1;
     }
   }
+  const tmp = callback(obj.useStateFromStoresArray(items, () => {
+    const items = [store.getCustomTheme(), store.getBaseTheme(), store.getPreviewTheme()];
+    return items;
+  }), 3);
 };

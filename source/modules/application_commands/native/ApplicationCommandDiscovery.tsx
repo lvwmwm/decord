@@ -1,117 +1,38 @@
-// Module ID: 11468
-// Function ID: 88982
-// Name: _createForOfIteratorHelperLoose
-// Dependencies: [57, 31, 27, 4601, 11469, 9555, 653, 33, 11470, 4165, 689, 4584, 11471, 7999, 1882, 5690, 3878, 1212, 4359, 22, 11472, 5686, 11473, 11474, 1273, 9632, 2]
+// Module ID: 11492
+// Function ID: 11493
+// Name: ApplicationCommandDiscovery
+// Dependencies: [32, 19, 17, 4623, 11493, 9579, 676, 21, 11494, 4189, 712, 4606, 11495, 8024, 1906, 5708, 3902, 1236, 4384, 12, 11496, 5704, 11497, 11498, 1297, 9654, 2]
 // Exports: default
 
-// Module 11468 (_createForOfIteratorHelperLoose)
+// Module 11492 (ApplicationCommandDiscovery)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
-import get_ActivityIndicator from "get ActivityIndicator";
+import apply from "apply";
+import get_ActivityIndicator from "getSystemLocale";
 import TRUE_OPTION_NAME from "TRUE_OPTION_NAME";
 import { ITEM_HEIGHT } from "ICON_SIZE";
 import { AUTOCOMPLETE_ROW_HEIGHT } from "AUTOCOMPLETE_ROW_HEIGHT";
 import ME from "ME";
-import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import jsxProd from "ApplicationCommandSectionType";
+import createCacheKey from "createCacheKey";
 
+let c9;
 let closure_12;
-let closure_13;
 let closure_14;
 let closure_15;
 let closure_16;
 let closure_6;
-let closure_7;
-let closure_8;
-let closure_9;
+let error;
+let map1;
+let metroImportAll;
 const require = arg1;
-function _createForOfIteratorHelperLoose(iterable) {
-  let closure_0 = iterable;
-  iterable = "undefined" !== typeof Symbol;
-  if (iterable) {
-    const _Symbol = Symbol;
-    iterable = iterable[Symbol.iterator];
-  }
-  if (!iterable) {
-    iterable = iterable[Symbol.iterator];
-  }
-  if (iterable) {
-    const iter = iterable.call(iterable);
-    const next = iter.next;
-    return next.bind(iter);
-  } else {
-    const _Array = Array;
-    let tmp = iterable;
-    if (!Array.isArray(iterable)) {
-      let tmp2;
-      if (iterable) {
-        if ("string" === typeof iterable) {
-          tmp2 = _arrayLikeToArray(iterable, undefined);
-        } else {
-          const toString = {}.toString;
-          const substr = toString.call(iterable).slice(8, -1);
-          let name = substr;
-          if (tmp3) {
-            name = iterable.constructor.name;
-          }
-          if ("Map" !== name) {
-            if ("Set" !== name) {
-              if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(iterable, undefined);
-              } else {
-                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
-              }
-            }
-            tmp2 = arr;
-          }
-          const _Array2 = Array;
-          arr = Array.from(iterable);
-          const callResult = toString.call(iterable);
-          tmp3 = "Object" === substr && iterable.constructor;
-        }
-      }
-      tmp = tmp2;
-      if (!tmp2) {
-        const _TypeError = TypeError;
-        const typeError = new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
-        throw typeError;
-      }
-    }
-    if (tmp) {
-      closure_0 = tmp;
-    }
-    let c1 = 0;
-    return () => {
-      if (closure_1 >= length.length) {
-        let obj = { done: true };
-      } else {
-        obj = { done: false };
-        closure_1 = tmp3 + 1;
-        obj.value = length[+closure_1];
-      }
-      return obj;
-    };
-  }
-}
-function _arrayLikeToArray(arg0, arg1) {
-  let length;
-  if (tmp) {
-    length = arg0.length;
-  }
-  const ArrayResult = Array(length);
-  for (let num = 0; num < length; num = num + 1) {
-    ArrayResult[num] = arg0[num];
-  }
-  return ArrayResult;
-}
-({ View: closure_6, SectionList: closure_7 } = get_ActivityIndicator);
-({ BuiltInSectionId: closure_8, DISCOVERY_COMMANDS_QUERY_LIMIT: closure_9 } = TRUE_OPTION_NAME);
-({ AnalyticEvents: closure_12, SectionListElementType: closure_13 } = ME);
+({ View: closure_6, SectionList: error } = get_ActivityIndicator);
+({ BuiltInSectionId: metroImportAll, DISCOVERY_COMMANDS_QUERY_LIMIT: c9 } = TRUE_OPTION_NAME);
+({ AnalyticEvents: closure_12, SectionListElementType: map1 } = ME);
 ({ jsx: closure_14, Fragment: closure_15, jsxs: closure_16 } = jsxProd);
-_createForOfIteratorHelperLoose = { discoveryWrapper: { flex: 1 }, noCommandsImage: { height: 50, width: 50, marginBottom: 16 }, noCommandsContainer: { padding: 0, height: 100 } };
-_createForOfIteratorHelperLoose = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.MOBILE_FLOATING_ACCESSORY_BACKGROUND };
-_createForOfIteratorHelperLoose.commandsList = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+createCacheKey = { discoveryWrapper: { flex: 1 }, noCommandsImage: { height: 50, width: 50, marginBottom: 16 }, noCommandsContainer: { padding: 0, height: 100 }, commandsList: null };
+createCacheKey = { backgroundColor: require("Themes").colors.MOBILE_FLOATING_ACCESSORY_BACKGROUND };
+createCacheKey[3] = createCacheKey;
+createCacheKey = createCacheKey.createStyles(createCacheKey);
 let result = require("get ActivityIndicator").fileFinishedImporting("modules/application_commands/native/ApplicationCommandDiscovery.tsx");
 
 export default function ApplicationCommandDiscovery(channel) {
@@ -126,6 +47,13 @@ export default function ApplicationCommandDiscovery(channel) {
   ({ onPressSlashItem: require, onHeightChange } = channel);
   channel = channel.channel;
   const canOnlyUseTextCommands = channel.canOnlyUseTextCommands;
+  let dependencyMap;
+  let bound;
+  let ref;
+  let first;
+  let c7;
+  let closure_8;
+  let commandDiscoveryManager;
   let sectionDescriptors;
   c11 = undefined;
   commandsByActiveSection = undefined;
@@ -137,96 +65,95 @@ export default function ApplicationCommandDiscovery(channel) {
   let memo;
   let closure_19;
   let tmp = callback();
-  const dependencyMap = tmp;
-  let obj = require(4584) /* getFontScale */;
-  const bound = Math.max(obj.useFontScale() * c11, c11);
+  dependencyMap = tmp;
+  let obj = require(4606) /* getFontScale */;
+  bound = Math.max(obj.useFontScale() * c11, c11);
+  let obj1 = ref;
   ref = ref.useRef(null);
-  const tmp4 = bound(ref.useState(0), 2);
-  const first = tmp4[0];
-  let closure_7 = tmp6;
-  let closure_8 = ref.useRef(false);
-  let obj1 = require(11471) /* useCommandDiscoveryManager */;
-  const commandDiscoveryManager = obj1.useCommandDiscoveryManager((initialSectionId) => initialSectionId.initialSectionId);
-  let obj2 = channel(7999);
-  obj = { context: { channel, type: "channel" } };
-  obj = {};
-  let items = [require(1882) /* PermissionOverwriteType */.ApplicationCommandType.CHAT];
-  obj.commandTypes = items;
-  const BuiltInCommandFilter = require(5690) /* ScoreMethod */.BuiltInCommandFilter;
-  obj.builtIns = canOnlyUseTextCommands ? BuiltInCommandFilter.ONLY_TEXT : BuiltInCommandFilter.ALLOW;
-  obj.applicationCommands = !canOnlyUseTextCommands;
-  obj.filters = obj;
+  let tmp4 = bound(ref.useState(0), 2);
+  first = tmp4[0];
+  c7 = tmp6;
+  closure_8 = ref.useRef(false);
+  let obj2 = require(11495) /* useCommandDiscoveryManager */;
+  commandDiscoveryManager = obj2.useCommandDiscoveryManager((initialSectionId) => initialSectionId.initialSectionId);
+  let obj3 = channel(8024);
+  obj = { context: { channel, type: "channel" }, filters: null, options: null, allowFetch: true };
+  obj = { commandTypes: null, builtIns: null, applicationCommands: null };
+  let items = [require(1906) /* PermissionOverwriteType */.ApplicationCommandType.CHAT];
+  obj[0] = items;
+  const BuiltInCommandFilter = require(5708) /* ScoreMethod */.BuiltInCommandFilter;
+  obj[1] = canOnlyUseTextCommands ? BuiltInCommandFilter.ONLY_TEXT : BuiltInCommandFilter.ALLOW;
+  obj[2] = !canOnlyUseTextCommands;
+  obj[1] = obj;
   obj1 = { placeholderCount: 3, limit: commandDiscoveryManager, includeFrecency: true };
-  obj.options = obj1;
-  obj.allowFetch = true;
-  const discovery = obj2.useDiscovery(obj);
+  obj[2] = obj1;
+  const discovery = obj3.useDiscovery(obj);
   sectionDescriptors = discovery.sectionDescriptors;
   ({ activeSections: c11, commandsByActiveSection } = discovery);
   ({ hasMoreAfter: c13, filteredSectionId } = discovery);
   ({ scrollDown: c15, filterSection } = discovery);
   const items1 = [filterSection, commandDiscoveryManager, tmp4[1], sectionDescriptors];
-  const effect = ref.useEffect(() => {
+  const effect = obj1.useEffect(() => {
     if (null != commandDiscoveryManager) {
-      filterSection(commandDiscoveryManager);
-      const findIndexResult = sectionDescriptors.findIndex((id) => id.id === outer1_9);
+      filterSection(tmp);
+      const findIndexResult = sectionDescriptors.findIndex((id) => id.id === closure_9);
       let num2 = 0;
       if (-1 !== findIndexResult) {
         num2 = findIndexResult;
       }
-      closure_7(num2);
-      const tmp6 = closure_7;
+      c7(num2);
+      const tmp6 = c7;
     }
   }, items1);
-  const effect1 = ref.useEffect(() => {
-    const AccessibilityAnnouncer = outer1_0(tmp[16]).AccessibilityAnnouncer;
-    const intl = outer1_0(tmp[17]).intl;
-    AccessibilityAnnouncer.announce(intl.string(outer1_0(tmp[17]).t["2wfLMm"]));
-    outer1_0(tmp[18]).trackWithMetadata(commandsByActiveSection.APPLICATION_COMMAND_BROWSER_OPENED);
+  const effect1 = obj1.useEffect(() => {
+    const AccessibilityAnnouncer = callback(_undefined[16]).AccessibilityAnnouncer;
+    const intl = callback(_undefined[17]).intl;
+    AccessibilityAnnouncer.announce(intl.string(callback(_undefined[17]).t["2wfLMm"]));
+    callback(_undefined[18]).trackWithMetadata(commandsByActiveSection.APPLICATION_COMMAND_BROWSER_OPENED);
     return () => {
-      const result = outer2_0(table[12]).updateInitialSectionId(undefined);
+      const result = callback(table[12]).updateInitialSectionId(undefined);
     };
   }, []);
   const items2 = [commandsByActiveSection, onHeightChange, bound];
-  const effect2 = ref.useEffect(() => {
-    if (null != onHeightChange) {
-      onHeightChange((function heightForSections(commandsByActiveSection, bound) {
-        let closure_0 = bound;
-        let num = 0;
-        if (0 !== commandsByActiveSection.length) {
-          num = commandsByActiveSection.reduce((arg0, data) => {
-            if (0 === data.data.length) {
-              let sum = outer3_0(11470).APPLICATION_SECTION_HEADER_HEIGHT + 160;
-            } else {
-              sum = arg0 + (outer3_0(11470).APPLICATION_SECTION_HEADER_HEIGHT + (closure_0 + sectionDescriptors) * data.data.length);
-            }
-            return sum;
-          }, 0);
-        }
-        return num;
-      })(commandsByActiveSection, bound));
+  const effect2 = obj1.useEffect(() => {
+    if (onHeightChange != null) {
+      let closure_0 = bound;
+      let num2 = 0;
+      if (0 !== commandsByActiveSection.length) {
+        num2 = arr.reduce((arg0, data) => {
+          if (0 === data.data.length) {
+            let sum = callback(outer1_3[8]).APPLICATION_SECTION_HEADER_HEIGHT + 160;
+          } else {
+            sum = arg0 + (callback(outer1_3[8]).APPLICATION_SECTION_HEADER_HEIGHT + (callback + outer1_10) * data.data.length);
+          }
+          return sum;
+        }, 0);
+      }
+      tmp(num2);
+      arr = commandsByActiveSection;
     }
   }, items2);
   const items3 = [sectionDescriptors, filterSection, filteredSectionId];
-  callback = ref.useCallback((arg0) => {
+  callback = obj1.useCallback((arg0) => {
     if (sectionDescriptors[arg0].id !== filteredSectionId) {
       if (tmp.id !== ref.FRECENCY) {
         filterSection(tmp.id);
-        tmp6 = tmp6(arg0);
+        _undefined2(arg0);
       }
-      const result = outer1_0(tmp[12]).updateInitialSectionId(undefined);
+      const result = outer1_0(_undefined[12]).updateInitialSectionId(undefined);
     }
     filterSection(null);
-    tmp6(0);
+    _undefined2(0);
   }, items3);
-  const callback1 = ref.useCallback(() => {
+  const callback1 = obj1.useCallback(() => {
     closure_8.current = true;
-    outer1_0(tmp[18]).trackWithMetadata(commandsByActiveSection.APPLICATION_COMMAND_BROWSER_SCROLLED);
+    outer1_0(_undefined[18]).trackWithMetadata(commandsByActiveSection.APPLICATION_COMMAND_BROWSER_SCROLLED);
   }, []);
-  const callback2 = ref.useCallback((nativeEvent) => {
+  const callback2 = obj1.useCallback((nativeEvent) => {
     nativeEvent = nativeEvent.nativeEvent;
     const targetContentOffset = nativeEvent.targetContentOffset;
     let y;
-    if (null != targetContentOffset) {
+    if (targetContentOffset != null) {
       y = targetContentOffset.y;
     }
     if (nativeEvent.contentOffset.y === y) {
@@ -234,59 +161,49 @@ export default function ApplicationCommandDiscovery(channel) {
     }
   }, []);
   const items4 = [sectionDescriptors, commandsByActiveSection, bound];
-  const callback3 = ref.useCallback(() => {
+  const callback3 = obj1.useCallback(() => {
     closure_8.current = false;
   }, []);
-  memo = ref.useMemo(() => {
-    let done;
+  memo = obj1.useMemo(() => {
     let c0 = 0;
     const items = [];
-    function _loop(value) {
-      let closure_0 = value;
-      const findIndexResult = outer1_12.findIndex((section) => section.section.id === value.id);
-      if (findIndexResult >= 0) {
-        const result = outer1_12[findIndexResult].data.length * outer1_4;
-        const sum = result + outer2_0(table[8]).APPLICATION_SECTION_HEADER_HEIGHT + closure_0;
-        items.push(sum);
-        closure_0 = sum;
-      } else {
-        items.push(closure_0);
-      }
-    }
-    const tmp = memo(sectionDescriptors);
-    let iter = tmp();
-    if (!iter.done) {
-      do {
-        let _loopResult = _loop(iter.value);
-        let iter2 = tmp();
-        iter = iter2;
-        done = iter2.done;
-      } while (!done);
+    for (const item10008 of sectionDescriptors) {
+      let tmp = (function _loop(item10008) {
+        let closure_0 = item10008;
+        const findIndexResult = outer1_12.findIndex((section) => section.section.id === item10008.id);
+        if (findIndexResult >= 0) {
+          const result = outer1_12[findIndexResult].data.length * outer1_4;
+          const sum = result + outer2_0(table[8]).APPLICATION_SECTION_HEADER_HEIGHT + closure_0;
+          items.push(sum);
+          closure_0 = sum;
+        } else {
+          items.push(closure_0);
+        }
+      })(item10008);
+      continue;
     }
     return items;
   }, items4);
   const items5 = [memo];
-  closure_19 = ref.useMemo(() => onHeightChange(tmp[19]).throttle((arg0) => {
+  closure_19 = obj1.useMemo(() => onHeightChange(_undefined[19]).throttle((arg0) => {
     let num = 0;
-    if (0 < outer1_18.length) {
+    if (0 < closure_18.length) {
       let num2 = 0;
       let num3 = 0;
-      if (0 === outer1_18[0]) {
-        const sum = num2 + 1;
-        const sum1 = num3 + 1;
+      if (0 === tmp[0]) {
+        const sum = num3 + 1;
+        const sum1 = num2 + 1;
         num = sum;
-        while (sum1 < outer1_18.length) {
-          let tmp6 = outer1_18;
-          num2 = sum;
-          num3 = sum1;
-          if (0 === outer1_18[sum1]) {
+        while (sum1 < closure_18.length) {
+          num2 = sum1;
+          num3 = sum;
+          if (0 === tmp5[sum1]) {
             continue;
           } else {
-            let tmp7 = outer1_18;
-            num2 = sum;
-            num3 = sum1;
+            num2 = sum1;
+            num3 = sum;
             num = sum;
-            if (arg0 < outer1_18[sum1]) {
+            if (arg0 < tmp5[sum1]) {
               break;
             }
           }
@@ -298,67 +215,101 @@ export default function ApplicationCommandDiscovery(channel) {
         num = 0;
       }
     }
-    outer1_7(num);
+    callback(num);
   }, 100), items5);
   const items6 = [bound];
   const items7 = [channel.guild_id, callback, sectionDescriptors, first];
-  const callback4 = ref.useCallback((arg0, index) => {
+  const callback4 = obj1.useCallback((arg0, arg1) => {
     if (null == arg0) {
-      let obj = { length: 0, offset: 0, index };
+      let obj = { length: 0, offset: 0, index: null };
+      obj[2] = arg1;
       return obj;
     } else {
-      const ROW2 = _undefined2.ROW;
-      const tmp18 = memo(arg0);
-      const iter3 = tmp18();
-      let iter2 = iter3;
       let num = 0;
       let num2 = 0;
       let num3 = 0;
-      let num4 = 0;
-      let num5 = 0;
-      let ROW = ROW2;
-      if (!iter3.done) {
-        const value = iter2.value;
-        while (num + num2 + value.data.length + num3 + 1 < index) {
-          num = num + 1;
-          num2 = num2 + value.data.length;
-          num3 = num3 + 1;
-          let iter = tmp18();
-          iter2 = iter;
-          num4 = num;
-          num5 = num2;
-          ROW = ROW2;
-        }
-        if (index === num + num2 + num3) {
-          ROW = _undefined2.HEADER;
-          num4 = num;
-          num5 = num2;
-        } else if (index === num + num2 + value.data.length + num3 + 1) {
-          num4 = num + 1;
-          num5 = num2 + value.data.length;
-          ROW = _undefined2.FOOTER;
+      let ROW = _undefined4.ROW;
+      const iter = arg0[Symbol.iterator]();
+      const nextResult = iter.next();
+      while (iter !== undefined) {
+        let tmp4 = nextResult;
+        let tmp5 = num;
+        let tmp6 = num2;
+        let tmp7 = num3;
+        if (num + num2 + nextResult.data.length + num3 + 1 >= arg1) {
+          let tmp12 = num;
+          let tmp13 = num2;
+          let tmp14 = num3;
+          if (arg1 === num + num2 + num3) {
+            let tmp24 = _undefined4;
+            let tmp25 = _undefined4;
+            ROW = _undefined4.HEADER;
+          } else {
+            let tmp39 = num;
+            let tmp40 = num2;
+            let tmp41 = nextResult;
+            let tmp42 = num3;
+            if (arg1 === num + num2 + tmp4.data.length + num3 + 1) {
+              let tmp20 = num;
+              num = num + 1;
+              let tmp21 = num2;
+              num2 = num2 + nextResult.data.length;
+              let tmp22 = _undefined4;
+              let tmp23 = _undefined4;
+              ROW = _undefined4.FOOTER;
+            } else {
+              let tmp15 = num2;
+              let tmp16 = num;
+              let sum = num + 1;
+              num = sum;
+              num2 = num2 + (arg1 - sum - num2 - num3);
+              let tmp18 = _undefined4;
+              let tmp19 = _undefined4;
+              ROW = _undefined4.ROW;
+            }
+          }
+          let tmp26 = iter;
+          iter.return();
+          break;
         } else {
-          const sum = num + 1;
-          num5 = num2 + (index - sum - num2 - num3);
-          ROW = _undefined2.ROW;
-          num4 = sum;
+          let tmp8 = num;
+          num = num + 1;
+          let tmp9 = num2;
+          let tmp10 = nextResult;
+          num2 = num2 + tmp4.data.length;
+          let tmp11 = num3;
+          num3 = num3 + 1;
+          continue;
         }
+        let tmp27 = ROW;
+        let tmp28 = _undefined4;
+        if (_undefined4.ROW === ROW) {
+          let num4 = bound;
+        } else {
+          let tmp30 = tmp28;
+          if (tmp29.HEADER === ROW) {
+            let tmp31 = outer1_0;
+            let tmp32 = _undefined;
+            num4 = outer1_0(_undefined[8]).APPLICATION_SECTION_HEADER_HEIGHT;
+          } else {
+            let FOOTER = tmp28.FOOTER;
+            num4 = 0;
+          }
+        }
+        obj = { length: null, offset: null, index: null };
+        obj[0] = num4;
+        let tmp33 = outer1_0;
+        let tmp34 = _undefined;
+        let tmp35 = bound;
+        obj[1] = num * outer1_0(_undefined[8]).APPLICATION_SECTION_HEADER_HEIGHT + num2 * bound;
+        obj[2] = arg1;
+        return obj;
       }
-      if (_undefined2.ROW === ROW) {
-        let num6 = bound;
-      } else if (_undefined2.HEADER === ROW) {
-        num6 = outer1_0(tmp[8]).APPLICATION_SECTION_HEADER_HEIGHT;
-      } else {
-        const FOOTER = _undefined2.FOOTER;
-        num6 = 0;
-      }
-      obj = { length: num6, offset: num4 * outer1_0(tmp[8]).APPLICATION_SECTION_HEADER_HEIGHT + num5 * bound, index };
-      return obj;
     }
   }, items6);
-  obj2 = { style: items8 };
+  obj2 = { style: items8, children: null };
   items8 = [tmp.discoveryWrapper, channel.style];
-  const obj3 = {
+  obj3 = {
     ref,
     sections: commandsByActiveSection,
     style: tmp.commandsList,
@@ -372,92 +323,97 @@ export default function ApplicationCommandDiscovery(channel) {
       nativeEvent = nativeEvent.nativeEvent;
       ({ layoutMeasurement, contentSize, contentInset } = nativeEvent);
       const y = nativeEvent.contentOffset.y;
-      callback(y);
-      if (!ref.current) {
-        if (_undefined.length > 0) {
-          if (y < contentInset.top) {
-            const current = ref.current;
-            if (null != current) {
-              current.scrollToLocation({ sectionIndex: 0, itemIndex: 0, viewPosition: 0, animated: false });
-            }
-          } else if (y > contentSize.height - layoutMeasurement.height - contentInset.bottom) {
-            const current2 = ref.current;
-            if (null != current2) {
-              const obj = { sectionIndex: _undefined.length - 1 };
-              const _Math = Math;
-              obj.itemIndex = Math.max(commandsByActiveSection[commandsByActiveSection.length - 1].data.length - 1, 0);
-              obj.viewPosition = 1;
-              obj.animated = false;
-              current2.scrollToLocation(obj);
-            }
+      callback2(y);
+      const current = ref.current;
+      let tmp2 = !current;
+      if (!current) {
+        tmp2 = _undefined3.length > 0;
+      }
+      if (tmp2) {
+        if (y < contentInset.top) {
+          const current2 = ref.current;
+          if (current2 != null) {
+            current2.scrollToLocation({ sectionIndex: 0, itemIndex: 0, viewPosition: 0, animated: false });
+          }
+        } else if (y > contentSize.height - layoutMeasurement.height - contentInset.bottom) {
+          const current3 = ref.current;
+          if (current3 != null) {
+            const obj = { sectionIndex: null, itemIndex: null, viewPosition: 1, animated: false };
+            obj[0] = _undefined3.length - 1;
+            const _Math = Math;
+            obj[1] = Math.max(commandsByActiveSection[commandsByActiveSection.length - 1].data.length - 1, 0);
+            current3.scrollToLocation(obj);
           }
         }
       }
-      let tmp6 = c13;
+      let tmp7 = c13;
       if (c13) {
-        tmp6 = y + layoutMeasurement.height >= contentSize.height - 3 * bound;
+        tmp7 = y + layoutMeasurement.height >= contentSize.height - 3 * bound;
       }
-      if (tmp6) {
-        _undefined3();
+      if (tmp7) {
+        _undefined5();
       }
     },
     scrollEventThrottle: 16,
     keyExtractor(id) {
       return id.id;
-    }
+    },
+    maintainVisibleContentPosition: null,
+    renderItem: null,
+    renderSectionHeader: null,
+    getItemLayout: null,
+    stickySectionHeadersEnabled: true
   };
-  let tmp23 = null;
-  const memo1 = ref.useMemo(() => filteredSectionId(onHeightChange(tmp[20]), { onPressSection: callback, sections: sectionDescriptors, selectedIndex: first, guildId: channel.guild_id }), items7);
+  let obj4 = null;
+  const memo1 = obj1.useMemo(() => filteredSectionId(onHeightChange(_undefined[20]), { onPressSection: callback, sections: sectionDescriptors, selectedIndex: first, guildId: channel.guild_id }), items7);
   if (discovery.loading) {
-    const obj4 = { minIndexForVisible: 1 };
-    tmp23 = obj4;
+    obj4 = { minIndexForVisible: 1 };
   }
-  obj3.maintainVisibleContentPosition = tmp23;
-  obj3.renderItem = function renderItem(item) {
+  obj3[9] = obj4;
+  obj3[10] = function renderItem(item) {
     item = item.item;
     const section = item.section;
     let found;
-    if (item.inputType === outer1_0(tmp[21]).ApplicationCommandInputType.PLACEHOLDER) {
-      return filteredSectionId(onHeightChange(filteredSectionId[22]), {});
+    if (item.inputType === outer1_0(_undefined[21]).ApplicationCommandInputType.PLACEHOLDER) {
+      return filteredSectionId(onHeightChange(tmp[22]), {});
     } else {
       found = sectionDescriptors.find((id) => id.id === item.applicationId);
-      const obj = {
-        command: item,
-        onPress() {
-            let tmp;
-            if (null != item) {
-              tmp = item(item, found, section.section);
-            }
-            return tmp;
-          },
-        section: found,
-        showIcon: item.applicationId !== section.section.id,
-        guildId: found.guild_id
+      const obj = { command: null, onPress: null, section: null, showIcon: null, guildId: null };
+      obj[0] = item;
+      obj[1] = function onPress() {
+        let tmpResult;
+        if (item != null) {
+          tmpResult = tmp(item, found, section.section);
+        }
+        return tmpResult;
       };
+      obj[2] = found;
+      obj[3] = item.applicationId !== section.section.id;
+      obj[4] = found.guild_id;
       return filteredSectionId(onHeightChange(tmp[23]), obj);
     }
   };
-  obj3.renderSectionHeader = function renderSectionHeader(section) {
+  obj3[11] = function renderSectionHeader(section) {
     section = section.section;
-    let obj = {};
-    obj = { section: section.section, guildId: channel.guild_id };
-    const items = [filteredSectionId(onHeightChange(filterSection[8]), obj, section.section.id), ];
-    let tmp3 = 0 === section.data.length;
-    if (tmp3) {
-      obj = { lightSource: onHeightChange(tmp[25]), darkSource: onHeightChange(tmp[25]) };
-      const intl = outer1_0(tmp[17]).intl;
-      const obj1 = { applicationName: section.section.name };
-      obj.body = intl.format(outer1_0(tmp[17]).t.WoQXT6, obj1);
-      ({ noCommandsContainer: obj3.containerStyle, noCommandsImage: obj3.imageStyle } = tmp);
-      tmp3 = filteredSectionId(outer1_0(tmp[24]).ThemedEmptyState, obj);
+    let obj = { section: section.section, guildId: channel.guild_id };
+    const children = [filteredSectionId(onHeightChange(_undefined[8]), obj, section.section.id), ];
+    let tmp3Result = 0 === section.data.length;
+    if (tmp3Result) {
+      obj = { lightSource: null, darkSource: null, body: null, containerStyle: null, imageStyle: null };
+      obj[0] = tmp4(tmp5[25]);
+      obj[1] = tmp4(tmp5[25]);
+      const intl = outer1_0(tmp5[17]).intl;
+      obj = { applicationName: null };
+      obj[0] = section.section.name;
+      obj[2] = intl.format(outer1_0(tmp5[17]).t.WoQXT6, obj);
+      ({ noCommandsContainer: obj2[3], noCommandsImage: obj2[4] } = _undefined);
+      tmp3Result = filteredSectionId(outer1_0(tmp5[24]).ThemedEmptyState, obj);
     }
-    items[1] = tmp3;
-    obj.children = items;
-    return filterSection(c15, obj);
+    children[1] = tmp3Result;
+    return filterSection(c15, { children });
   };
-  obj3.getItemLayout = callback4;
-  obj3.stickySectionHeadersEnabled = true;
-  const items9 = [filteredSectionId(closure_7, obj3), memo1];
-  obj2.children = items9;
+  obj3[12] = callback4;
+  const items9 = [filteredSectionId(c7, obj3), memo1];
+  obj2[1] = items9;
   return filterSection(first, obj2);
 };

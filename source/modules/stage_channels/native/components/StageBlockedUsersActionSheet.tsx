@@ -1,215 +1,237 @@
-// Module ID: 7652
-// Function ID: 60933
+// Module ID: 7675
+// Function ID: 7676
 // Name: RestrictedUser
-// Dependencies: [57, 31, 27, 3802, 4989, 4982, 33, 4165, 689, 566, 1212, 1273, 7653, 4161, 4133, 7654, 5155, 4578, 5221, 7655, 2]
+// Dependencies: [32, 19, 17, 3826, 5011, 5004, 21, 4189, 712, 589, 1236, 1297, 7676, 4185, 4157, 7677, 5177, 4600, 5243, 7678, 2]
 // Exports: default
 
-// Module 7652 (RestrictedUser)
+// Module 7675 (RestrictedUser)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
-import { View } from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_7 from "_isNativeReflectConstruct";
+import renderDefaultEmpty from "renderDefaultEmpty";
+import { View } from "Button";
+import upsertRelationship from "upsertRelationship";
+import buildStageChannelUserRoles from "buildStageChannelUserRoles";
 import { STAGE_BLOCKED_USERS_SHEET_KEY as closure_8 } from "MAX_STAGE_TOPIC_LENGTH";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_10;
-let closure_9;
+let c10;
+let c9;
 const require = arg1;
 function RestrictedUser(guildId) {
   let participant;
   let require;
   ({ participant, channelId: require } = guildId);
-  const tmp = _createForOfIteratorHelperLoose();
-  const user = participant.user;
+  let user;
+  const tmp = createCacheKey();
+  user = participant.user;
   let speaker = participant.speaker;
-  let obj = require(566) /* initialize */;
-  const items = [closure_7];
+  let obj = require(589) /* initialize */;
+  const items = [buildStageChannelUserRoles];
   const stateFromStores = obj.useStateFromStores(items, () => outer1_7.isModerator(user.id, closure_0));
-  let obj1 = require(566) /* initialize */;
-  const items1 = [_isNativeReflectConstruct];
+  let obj1 = require(589) /* initialize */;
+  const items1 = [upsertRelationship];
   const stateFromStores1 = obj1.useStateFromStores(items1, () => outer1_6.isBlocked(user.id));
   const avatarSource = user.getAvatarSource(guildId.guildId);
-  const intl = require(1212) /* getSystemLocale */.intl;
+  const intl = require(1236) /* getSystemLocale */.intl;
   if (speaker) {
-    const intl3 = require(1212) /* getSystemLocale */.intl;
-    let stringResult = intl3.string(require(1212) /* getSystemLocale */.t.LqMmG2);
+    const intl3 = tmp2(1236).intl;
+    let stringResult = intl3.string(tmp2(1236).t.LqMmG2);
   } else {
-    stringResult = tmp5;
+    stringResult = tmp7;
     if (stateFromStores) {
-      const intl2 = require(1212) /* getSystemLocale */.intl;
-      stringResult = intl2.string(require(1212) /* getSystemLocale */.t.GMZqSi);
+      const intl2 = tmp2(1236).intl;
+      stringResult = intl2.string(tmp2(1236).t.GMZqSi);
     }
   }
-  obj = { style: tmp.userContainer };
-  obj = { style: tmp.avatarContainer };
-  obj1 = { source: avatarSource, size: require(1273) /* Button */.AvatarSizes.REFRESH_MEDIUM_32, style: tmp.avatar };
-  const items2 = [callback(require(1273) /* Button */.CutoutableAvatarImage, obj1), ];
+  obj = { style: tmp.userContainer, children: null };
+  obj = { style: tmp.avatarContainer, children: null };
+  obj1 = { source: avatarSource, size: null, style: null };
+  obj1[1] = require(1297) /* Button */.AvatarSizes.REFRESH_MEDIUM_32;
+  obj1[2] = tmp.avatar;
+  const items2 = [callback(require(1297) /* Button */.CutoutableAvatarImage, obj1), ];
   if (speaker) {
-    const obj2 = {};
+    const obj2 = { style: null, children: null };
     const items3 = [tmp.iconContainer];
-    obj2.style = items3;
-    const obj3 = { style: tmp.icon, source: user(7653), color: user(689).unsafe_rawColors.WHITE };
-    obj2.children = callback(require(1273) /* Button */.Icon, obj3);
-    speaker = callback(View, obj2);
+    obj2[0] = items3;
+    const obj3 = { style: null, source: null, color: null };
+    obj3[0] = tmp.icon;
+    obj3[1] = user(7676);
+    obj3[2] = user(712).unsafe_rawColors.WHITE;
+    obj2[1] = tmp11(tmp2(1297).Icon, obj3);
+    speaker = tmp11(tmp10, obj2);
   }
   items2[1] = speaker;
-  obj.children = items2;
-  const items4 = [callback2(View, obj), ];
-  const obj4 = {};
-  const obj5 = { style: tmp.flex };
-  const obj6 = { variant: "text-sm/medium", color: "mobile-text-heading-primary", children: participant.user.toString() };
-  const items5 = [callback(require(4161) /* Text */.Text, obj6), ];
+  obj[1] = items2;
+  const items4 = [closure_10(View, obj), ];
+  const obj4 = { style: tmp.flex, children: null };
+  const obj5 = { variant: "text-sm/medium", color: "mobile-text-heading-primary", children: null };
+  obj5[2] = participant.user.toString();
+  const items5 = [callback(require(4185) /* Text */.Text, obj5), ];
   const user2 = participant.user;
-  let tmp23 = !user2.hasUniqueUsername();
-  if (tmp23) {
-    const obj7 = { variant: "text-sm/medium", color: "text-default" };
+  const hasUniqueUsernameResult = user2.hasUniqueUsername();
+  let tmp9Result = !hasUniqueUsernameResult;
+  if (!hasUniqueUsernameResult) {
+    const obj6 = { variant: "text-sm/medium", color: "text-default", children: null };
     const items6 = ["#", participant.user.discriminator];
-    obj7.children = items6;
-    tmp23 = callback2(require(4161) /* Text */.Text, obj7);
+    obj6[2] = items6;
+    tmp9Result = tmp9(tmp2(4185).Text, obj6);
   }
-  items5[1] = tmp23;
-  obj5.children = items5;
-  const items7 = [callback2(View, obj5), ];
-  const obj8 = { style: tmp.flex };
-  const obj9 = { style: stateFromStores1 ? tmp.blocked : tmp.ignored };
-  const intl4 = require(1212) /* getSystemLocale */.intl;
+  items5[1] = tmp9Result;
+  obj4[1] = items5;
+  const items7 = [closure_10(View, obj4), ];
+  const obj7 = { style: tmp.flex, children: null };
+  const obj8 = { style: stateFromStores1 ? tmp.blocked : tmp.ignored, children: null };
+  const intl4 = tmp2(1236).intl;
   const string = intl4.string;
-  const t = require(1212) /* getSystemLocale */.t;
+  const t = tmp2(1236).t;
   if (stateFromStores1) {
     let stringResult1 = string(t["4bDptI"]);
   } else {
     stringResult1 = string(t.tFY5Zb);
   }
-  obj9.children = stringResult1;
-  const items8 = [callback(require(1273) /* Button */.LegacyText, obj9), ];
-  const obj10 = { variant: "text-sm/medium", color: "text-muted" };
+  const obj9 = { children: null };
+  obj8[1] = stringResult1;
+  const items8 = [callback(require(1297) /* Button */.LegacyText, obj8), ];
   const items9 = [" ", "| ", stringResult];
-  obj10.children = items9;
-  items8[1] = callback2(require(4161) /* Text */.Text, obj10);
-  obj8.children = items8;
-  items7[1] = callback2(View, obj8);
-  obj4.children = items7;
-  items4[1] = callback2(View, obj4);
-  obj.children = items4;
-  return callback2(View, obj);
+  items8[1] = closure_10(require(4185) /* Text */.Text, { variant: "text-sm/medium", color: "text-muted", children: items9 });
+  obj7[1] = items8;
+  items7[1] = closure_10(View, obj7);
+  obj9[0] = items7;
+  items4[1] = closure_10(View, obj9);
+  obj[1] = items4;
+  return closure_10(View, obj);
 }
 function StageBlockedUsersActionSheetHeader(arg0) {
   let blockedUserCount;
   let ignoredUserCount;
   ({ blockedUserCount, ignoredUserCount } = arg0);
-  const tmp = _createForOfIteratorHelperLoose();
+  const tmp = createCacheKey();
   if (blockedUserCount > 0) {
     if (ignoredUserCount > 0) {
-      let obj = { style: tmp.header };
-      obj = { style: tmp.title, accessibilityRole: "header", variant: "heading-lg/extrabold", color: "mobile-text-heading-primary" };
-      const intl3 = require(1212) /* getSystemLocale */.intl;
-      obj.children = intl3.string(require(1212) /* getSystemLocale */.t.Uzdyho);
-      const items = [callback(require(4161) /* Text */.Text, obj), ];
-      const obj1 = { style: tmp.description, variant: "text-sm/medium", color: "text-default" };
-      const intl4 = require(1212) /* getSystemLocale */.intl;
-      obj1.children = intl4.string(require(1212) /* getSystemLocale */.t["P/KFXz"]);
-      items[1] = callback(require(4161) /* Text */.Text, obj1);
-      obj.children = items;
+      let obj = { style: null, children: null };
+      obj[0] = tmp.header;
+      obj = { style: null, accessibilityRole: "header", variant: "heading-lg/extrabold", color: "mobile-text-heading-primary", children: null };
+      obj[0] = tmp.title;
+      const intl3 = require(1236) /* getSystemLocale */.intl;
+      obj[4] = intl3.string(require(1236) /* getSystemLocale */.t.Uzdyho);
+      const items = [callback(require(4185) /* Text */.Text, obj), ];
+      const obj1 = { style: null, variant: "text-sm/medium", color: "text-default", children: null };
+      obj1[0] = tmp.description;
+      const intl4 = require(1236) /* getSystemLocale */.intl;
+      obj1[3] = intl4.string(require(1236) /* getSystemLocale */.t["P/KFXz"]);
+      items[1] = callback(require(4185) /* Text */.Text, obj1);
+      obj[1] = items;
       let obj6 = obj;
     }
     return tmp2(tmp3, obj6);
   }
   if (ignoredUserCount > 0) {
-    obj = { style: tmp.header };
-    const obj2 = { style: tmp.title, accessibilityRole: "header", variant: "heading-lg/extrabold", color: "mobile-text-heading-primary" };
-    const intl = require(1212) /* getSystemLocale */.intl;
-    const obj3 = { number: ignoredUserCount };
-    obj2.children = intl.format(require(1212) /* getSystemLocale */.t.wvygk8, obj3);
-    const items1 = [callback(require(4161) /* Text */.Text, obj2), ];
-    const obj4 = { style: tmp.description, variant: "text-sm/medium", color: "text-default" };
-    const intl2 = require(1212) /* getSystemLocale */.intl;
-    const obj5 = { number: ignoredUserCount };
-    obj4.children = intl2.format(require(1212) /* getSystemLocale */.t.Ri3o33, obj5);
-    items1[1] = callback(require(4161) /* Text */.Text, obj4);
-    obj.children = items1;
+    obj = { style: null, children: null };
+    obj[0] = tmp.header;
+    const obj2 = { style: null, accessibilityRole: "header", variant: "heading-lg/extrabold", color: "mobile-text-heading-primary", children: null };
+    obj2[0] = tmp.title;
+    const intl = require(1236) /* getSystemLocale */.intl;
+    const obj3 = { number: null };
+    obj3[0] = ignoredUserCount;
+    obj2[4] = intl.format(require(1236) /* getSystemLocale */.t.wvygk8, obj3);
+    const items1 = [callback(require(4185) /* Text */.Text, obj2), ];
+    const obj4 = { style: null, variant: "text-sm/medium", color: "text-default", children: null };
+    obj4[0] = tmp.description;
+    const intl2 = require(1236) /* getSystemLocale */.intl;
+    const obj5 = { number: null };
+    obj5[0] = ignoredUserCount;
+    obj4[3] = intl2.format(require(1236) /* getSystemLocale */.t.Ri3o33, obj5);
+    items1[1] = callback(require(4185) /* Text */.Text, obj4);
+    obj[1] = items1;
     obj6 = obj;
   } else {
-    obj6 = { style: tmp.header };
-    const obj7 = { style: tmp.title, accessibilityRole: "header", variant: "heading-lg/extrabold", color: "mobile-text-heading-primary" };
-    const intl5 = require(1212) /* getSystemLocale */.intl;
-    const obj8 = { number: blockedUserCount };
-    obj7.children = intl5.format(require(1212) /* getSystemLocale */.t.HviVA9, obj8);
-    const items2 = [callback(require(4161) /* Text */.Text, obj7), ];
-    const obj9 = { style: tmp.description, variant: "text-sm/medium", color: "text-default" };
-    const intl6 = require(1212) /* getSystemLocale */.intl;
-    const obj10 = { number: blockedUserCount };
-    obj9.children = intl6.format(require(1212) /* getSystemLocale */.t["28qZMU"], obj10);
-    items2[1] = callback(require(4161) /* Text */.Text, obj9);
-    obj6.children = items2;
+    obj6 = { style: null, children: null };
+    obj6[0] = tmp.header;
+    const obj7 = { style: null, accessibilityRole: "header", variant: "heading-lg/extrabold", color: "mobile-text-heading-primary", children: null };
+    obj7[0] = tmp.title;
+    const intl5 = require(1236) /* getSystemLocale */.intl;
+    const obj8 = { number: null };
+    obj8[0] = blockedUserCount;
+    obj7[4] = intl5.format(require(1236) /* getSystemLocale */.t.HviVA9, obj8);
+    const items2 = [callback(require(4185) /* Text */.Text, obj7), ];
+    const obj9 = { style: null, variant: "text-sm/medium", color: "text-default", children: null };
+    obj9[0] = tmp.description;
+    const intl6 = require(1236) /* getSystemLocale */.intl;
+    const obj10 = { number: null };
+    obj10[0] = blockedUserCount;
+    obj9[3] = intl6.format(require(1236) /* getSystemLocale */.t["28qZMU"], obj10);
+    items2[1] = callback(require(4185) /* Text */.Text, obj9);
+    obj6[1] = items2;
   }
 }
-({ jsx: closure_9, jsxs: closure_10 } = jsxProd);
-_createForOfIteratorHelperLoose = { container: { paddingHorizontal: 16 }, header: { padding: 16 }, title: { marginTop: 16, marginBottom: 8, textAlign: "center" }, description: { textAlign: "center", marginBottom: 16 } };
-_createForOfIteratorHelperLoose = { width: "100%", backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWER, paddingHorizontal: 16, paddingVertical: 8 };
-_createForOfIteratorHelperLoose.buttons = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.userContainer = { display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "flex-start", marginVertical: 8, width: "100%" };
-_createForOfIteratorHelperLoose.avatarContainer = { position: "relative", padding: 8, paddingTop: 0, paddingBottom: 4, marginEnd: 12 };
-_createForOfIteratorHelperLoose.avatar = { opacity: 0.5 };
-let obj1 = { position: "absolute", top: -4, right: 4, height: 16, width: 16, alignItems: "center", justifyContent: "center", borderRadius: 8, borderWidth: 1, borderColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWER, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_MOD_STRONG };
-_createForOfIteratorHelperLoose.iconContainer = obj1;
-_createForOfIteratorHelperLoose.icon = { height: 12, width: 12 };
-_createForOfIteratorHelperLoose.flex = { display: "flex", flexDirection: "row" };
-_createForOfIteratorHelperLoose.blocked = { color: require("_createForOfIteratorHelperLoose").unsafe_rawColors.RED_400 };
-let obj2 = { color: require("_createForOfIteratorHelperLoose").unsafe_rawColors.RED_400 };
-_createForOfIteratorHelperLoose.ignored = { color: require("_createForOfIteratorHelperLoose").colors.TEXT_DEFAULT };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-let obj3 = { color: require("_createForOfIteratorHelperLoose").colors.TEXT_DEFAULT };
+({ jsx: c9, jsxs: c10 } = jsxProd);
+createCacheKey = { container: { paddingHorizontal: 16 }, header: { padding: 16 }, title: { marginTop: 16, marginBottom: 8, textAlign: "center" }, description: { textAlign: "center", marginBottom: 16 }, buttons: null, userContainer: null, avatarContainer: null, avatar: null, iconContainer: null, icon: null, flex: null, blocked: null, ignored: null };
+createCacheKey = { width: "100%", backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOWER, paddingHorizontal: 16, paddingVertical: 8 };
+createCacheKey[4] = createCacheKey;
+createCacheKey[5] = { display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "flex-start", marginVertical: 8, width: "100%" };
+createCacheKey[6] = { position: "relative", padding: 8, paddingTop: 0, paddingBottom: 4, marginEnd: 12 };
+createCacheKey[7] = { opacity: 0.5 };
+createCacheKey[8] = { position: "absolute", top: -4, right: 4, height: 16, width: 16, alignItems: "center", justifyContent: "center", borderRadius: 8, borderWidth: 1, borderColor: require("Themes").colors.BACKGROUND_BASE_LOWER, backgroundColor: require("Themes").colors.BACKGROUND_MOD_STRONG };
+createCacheKey[9] = { height: 12, width: 12 };
+createCacheKey[10] = { display: "flex", flexDirection: "row" };
+let obj1 = { position: "absolute", top: -4, right: 4, height: 16, width: 16, alignItems: "center", justifyContent: "center", borderRadius: 8, borderWidth: 1, borderColor: require("Themes").colors.BACKGROUND_BASE_LOWER, backgroundColor: require("Themes").colors.BACKGROUND_MOD_STRONG };
+createCacheKey[11] = { color: require("Themes").unsafe_rawColors.RED_400 };
+let obj2 = { color: require("Themes").unsafe_rawColors.RED_400 };
+createCacheKey[12] = { color: require("Themes").colors.TEXT_DEFAULT };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let obj3 = { color: require("Themes").colors.TEXT_DEFAULT };
 const result = require("get ActivityIndicator").fileFinishedImporting("modules/stage_channels/native/components/StageBlockedUsersActionSheet.tsx");
 
 export default function StageBlockedUsersActionSheet(channel) {
   channel = channel.channel;
   const onAccept = channel.onAccept;
-  function handleDismiss() {
-    onAccept(4133).hideActionSheet(outer1_8);
-  }
-  const tmp = _createForOfIteratorHelperLoose();
-  const tmp2 = items1(handleDismiss.useState(0), 2);
-  const dependencyMap = tmp2[1];
-  let obj = channel(7654);
+  let dependencyMap;
+  let items1;
+  const tmp = createCacheKey();
+  const tmp2 = items1(React.useState(0), 2);
+  dependencyMap = tmp2[1];
+  let obj = channel(7677);
   const stageBlockedUsers = obj.useStageBlockedUsers(channel.id);
-  let obj1 = channel(7654);
+  let obj1 = channel(7677);
   const stageIgnoredUsers = obj1.useStageIgnoredUsers(channel.id);
-  const callback = handleDismiss.useCallback((nativeEvent) => {
+  const callback = React.useCallback((nativeEvent) => {
     dependencyMap(nativeEvent.nativeEvent.layout.height);
   }, []);
-  obj = { bottom: true, style: tmp.buttons, onLayout: callback };
-  obj = {};
-  const intl = channel(1212).intl;
-  obj.text = intl.string(channel(1212).t.mbD50D);
-  obj.onPress = function onPress() {
+  obj = { bottom: true, style: tmp.buttons, onLayout: callback, children: null };
+  obj = { text: null, onPress: null };
+  const intl = channel(1236).intl;
+  obj[0] = intl.string(channel(1236).t.mbD50D);
+  obj[1] = function onPress() {
     onAccept(channel);
-    handleDismiss();
+    onAccept(4157).hideActionSheet(outer1_8);
   };
-  const items = [callback(channel(4578).Button, obj), ];
-  obj1 = { variant: "secondary" };
-  const intl2 = channel(1212).intl;
-  obj1.text = intl2.string(channel(1212).t.CZGqeT);
-  obj1.onPress = handleDismiss;
-  items[1] = callback(channel(4578).Button, obj1);
-  obj.children = items;
+  const items = [callback(channel(4600).Button, obj), ];
+  obj1 = { variant: "secondary", text: null, onPress: null };
+  const intl2 = channel(1236).intl;
+  obj1[1] = intl2.string(channel(1236).t.CZGqeT);
+  obj1[2] = function handleDismiss() {
+    onAccept(4157).hideActionSheet(closure_8);
+  };
+  items[1] = callback(channel(4600).Button, obj1);
+  obj[3] = items;
   items1 = [];
   HermesBuiltin.arraySpread(stageIgnoredUsers, HermesBuiltin.arraySpread(stageBlockedUsers, 0));
-  const obj2 = { scrollable: true, header: callback(StageBlockedUsersActionSheetHeader, { blockedUserCount: stageBlockedUsers.length, ignoredUserCount: stageIgnoredUsers.length }), footer: callback2(channel(5155).SafeAreaPaddingView, obj) };
-  const obj3 = { inActionSheet: true, contentContainerStyle: tmp.container };
-  const tmp4 = callback2(channel(5155).SafeAreaPaddingView, obj);
-  const intl3 = channel(1212).intl;
-  obj3.accessibilityLabel = intl3.string(channel(1212).t["3VoRLH"]);
+  const obj2 = { scrollable: true, header: null, footer: null, children: null };
+  obj2[1] = callback(StageBlockedUsersActionSheetHeader, { blockedUserCount: stageBlockedUsers.length, ignoredUserCount: stageIgnoredUsers.length });
+  obj2[2] = callback2(channel(5177).SafeAreaPaddingView, obj);
+  const obj3 = { inActionSheet: true, contentContainerStyle: tmp.container, accessibilityLabel: null, sections: null, renderItem: null, itemSize: null };
+  const tmp4 = callback2(channel(5177).SafeAreaPaddingView, obj);
+  const intl3 = channel(1236).intl;
+  obj3[2] = intl3.string(channel(1236).t["3VoRLH"]);
   const items2 = [items1.length];
-  obj3.sections = items2;
-  obj3.renderItem = function renderItem(arg0, arg1) {
+  obj3[3] = items2;
+  obj3[4] = function renderItem(arg0, arg1) {
     return outer1_9(outer1_12, { participant: items1[arg1], guildId: channel.getGuildId(), channelId: channel.id });
   };
-  obj3.itemSize = function itemSize() {
+  obj3[5] = function itemSize() {
     return 48;
   };
-  const items3 = [callback(onAccept(7655), obj3), callback(View, { style: { height: tmp2[0] } })];
-  obj2.children = items3;
-  return callback2(channel(5221).BottomSheet, obj2);
+  const items3 = [callback(onAccept(7678), obj3), callback(View, { style: { height: tmp2[0] } })];
+  obj2[3] = items3;
+  return callback2(channel(5243).BottomSheet, obj2);
 };

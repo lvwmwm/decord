@@ -1,60 +1,64 @@
-// Module ID: 12032
-// Function ID: 92842
-// Name: useGameRelationshipsForUserByType
-// Dependencies: [57, 5925, 653, 566, 4999, 2]
+// Module ID: 12056
+// Function ID: 12057
+// Name: useGameRelationshipsByType
+// Dependencies: [32, 5944, 676, 589, 5021, 2]
 // Exports: useGameFriendsForUser, useGameRelationshipsByType, useHasGameRelationshipsForUser, useHasGameRelationshipsForUserByType, useIncomingGameRelationshipsForUser
 
-// Module 12032 (useGameRelationshipsForUserByType)
+// Module 12056 (useGameRelationshipsByType)
 import _slicedToArray from "_slicedToArray";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import recountRelationshipTypes from "recountRelationshipTypes";
 import { RelationshipTypes } from "ME";
 
 const require = arg1;
-function useGameRelationshipsForUserByType(id, FRIEND) {
-  const _require = id;
-  const dependencyMap = FRIEND;
-  let items = [_isNativeReflectConstruct];
-  const items1 = [FRIEND, id];
-  return callback(_require(566).useStateFromStores(items, () => {
-    const items = [outer1_3.getGameRelationshipsForUserByType(closure_0, closure_1), outer1_3.getGameRelationshipsVersion()];
-    return items;
-  }, items1, _require(4999).isVersionEqual), 1)[0];
-}
 const result = require("ME").fileFinishedImporting("modules/game_relationships/GameRelationshipStoreHooks.tsx");
 
 export const useGameRelationshipsByType = function useGameRelationshipsByType(FRIEND) {
   const _require = FRIEND;
-  let items = [_isNativeReflectConstruct];
+  let items = [recountRelationshipTypes];
   const items1 = [FRIEND];
-  return callback(_require(566).useStateFromStores(items, () => {
+  return callback(_require(589).useStateFromStores(items, () => {
     const items = [outer1_3.getGameRelationshipsByType(closure_0), outer1_3.getGameRelationshipsVersion()];
     return items;
-  }, items1, _require(4999).isVersionEqual), 1)[0];
+  }, items1, _require(5021).isVersionEqual), 1)[0];
 };
 export const useGameFriendsForUser = function useGameFriendsForUser(id) {
-  return useGameRelationshipsForUserByType(id, RelationshipTypes.FRIEND);
+  const FRIEND = RelationshipTypes.FRIEND;
+  const _require = id;
+  const items = [recountRelationshipTypes];
+  const items1 = [FRIEND, id];
+  return callback(_require(FRIEND[3]).useStateFromStores(items, () => {
+    const items = [outer1_3.getGameRelationshipsForUserByType(closure_0, PENDING_INCOMING), outer1_3.getGameRelationshipsVersion()];
+    return items;
+  }, items1, _require(FRIEND[4]).isVersionEqual), 1)[0];
 };
 export const useIncomingGameRelationshipsForUser = function useIncomingGameRelationshipsForUser(id) {
-  return useGameRelationshipsForUserByType(id, RelationshipTypes.PENDING_INCOMING);
+  const PENDING_INCOMING = RelationshipTypes.PENDING_INCOMING;
+  const _require = id;
+  let items = [recountRelationshipTypes];
+  const items1 = [PENDING_INCOMING, id];
+  return callback(_require(PENDING_INCOMING[3]).useStateFromStores(items, () => {
+    const items = [outer1_3.getGameRelationshipsForUserByType(closure_0, PENDING_INCOMING), outer1_3.getGameRelationshipsVersion()];
+    return items;
+  }, items1, _require(PENDING_INCOMING[4]).isVersionEqual), 1)[0];
 };
 export const useHasGameRelationshipsForUser = function useHasGameRelationshipsForUser(arg0) {
   const _require = arg0;
-  let items = [_isNativeReflectConstruct];
+  let items = [recountRelationshipTypes];
   const items1 = [arg0];
-  return callback(_require(566).useStateFromStores(items, () => {
+  return callback(_require(589).useStateFromStores(items, () => {
     const gameRelationshipsForUser = outer1_3.getGameRelationshipsForUser(closure_0);
     const items = [gameRelationshipsForUser.length > 0, outer1_3.getGameRelationshipsVersion()];
     return items;
-  }, items1, _require(4999).isVersionEqual), 1)[0];
+  }, items1, _require(5021).isVersionEqual), 1)[0];
 };
 export const useHasGameRelationshipsForUserByType = function useHasGameRelationshipsForUserByType(arg0, arg1) {
   const _require = arg0;
   const dependencyMap = arg1;
-  let items = [_isNativeReflectConstruct];
+  let items = [recountRelationshipTypes];
   const items1 = [arg1, arg0];
-  return callback(_require(566).useStateFromStores(items, () => {
+  return callback(_require(589).useStateFromStores(items, () => {
     const gameRelationshipsForUserByType = outer1_3.getGameRelationshipsForUserByType(closure_0, closure_1);
     const items = [gameRelationshipsForUserByType.length > 0, outer1_3.getGameRelationshipsVersion()];
     return items;
-  }, items1, _require(4999).isVersionEqual), 1)[0];
+  }, items1, _require(5021).isVersionEqual), 1)[0];
 };

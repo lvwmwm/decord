@@ -1,99 +1,114 @@
-// Module ID: 14006
-// Function ID: 106920
-// Name: parseSortMethod
-// Dependencies: [57, 31, 10937, 5011, 33, 4165, 689, 1456, 3778, 6484, 14007, 14011, 2]
+// Module ID: 14027
+// Function ID: 14028
+// Name: QuestHomeSetting
+// Dependencies: [32, 19, 10961, 5033, 21, 4189, 712, 1480, 3802, 6505, 14028, 14032, 2]
 // Exports: default
 
-// Module 14006 (parseSortMethod)
+// Module 14027 (QuestHomeSetting)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
+import noop from "noop";
 import zustandStore from "zustandStore";
 import QuestsExperimentLocations from "QuestsExperimentLocations";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
 let closure_6;
-let closure_7;
-let require = arg1;
-function parseSortMethod(arg0) {
-  let SUGGESTED = arg0;
-  if (null == arg0) {
-    SUGGESTED = constants.SUGGESTED;
-  } else {
-    const _Object = Object;
-    const values = Object.values(constants);
-  }
-  return SUGGESTED;
-}
-function parseFilters(str) {
-  if (null == str) {
-    return closure_10;
-  } else {
-    const parts = str.split(",");
-    const mapped = parts.map((arg0) => outer1_7(arg0));
-    let found = mapped.filter((arg0) => null != arg0);
-    if (found.length <= 0) {
-      found = closure_10;
-    }
-    return found;
-  }
-}
-({ QuestHomeSortMethods: closure_6, getQuestHomeFilterOptionItem: closure_7 } = QuestsExperimentLocations);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWEST };
-_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+let error;
+const require = arg1;
+({ QuestHomeSortMethods: closure_6, getQuestHomeFilterOptionItem: error } = QuestsExperimentLocations);
+createCacheKey = { container: null };
+createCacheKey = { backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOWEST };
+createCacheKey[0] = createCacheKey;
+createCacheKey = createCacheKey.createStyles(createCacheKey);
 let closure_10 = [];
 const result = require("zustandStore").fileFinishedImporting("modules/quests/native/QuestHomeSetting.tsx");
 
 export default function QuestHomeSetting() {
+  let tmp3;
+  let tmp4;
   let tmp6;
   let tmp7;
-  let tmp2 = callback(React.useState(() => outer1_11(outer1_5.getField("sort"))), 2);
-  const first = tmp2[0];
-  const require = tmp4;
-  const tmp = _createForOfIteratorHelperLoose();
-  [tmp6, tmp7] = callback(React.useState(() => outer1_12(outer1_5.getField("filter"))), 2);
-  const importDefault = tmp7;
-  let effect = React.useEffect(() => outer1_5.subscribe((self) => ({ sort: self.sort, filter: self.filter }), (self, self2) => {
+  let tmp = createCacheKey();
+  [tmp3, tmp4] = callback(React.useState(() => {
+    let SUGGESTED = store.getField("sort");
+    if (null == SUGGESTED) {
+      SUGGESTED = constants.SUGGESTED;
+    } else {
+      const _Object = Object;
+      const values = Object.values(constants);
+    }
+    return SUGGESTED;
+  }), 2);
+  let navigation = tmp4;
+  const tmp2 = callback(React.useState(() => {
+    let SUGGESTED = store.getField("sort");
+    if (null == SUGGESTED) {
+      SUGGESTED = constants.SUGGESTED;
+    } else {
+      const _Object = Object;
+      const values = Object.values(constants);
+    }
+    return SUGGESTED;
+  }), 2);
+  [tmp6, tmp7] = callback(React.useState(() => {
+    const str = store.getField("filter");
+    if (null == str) {
+      let found = closure_10;
+    } else {
+      const parts = str.split(",");
+      const mapped = parts.map((arg0) => callback(arg0));
+      found = mapped.filter((arg0) => null != arg0);
+      if (found.length <= 0) {
+        found = closure_10;
+      }
+    }
+    return found;
+  }), 2);
+  let importDefault = tmp7;
+  const effect = React.useEffect(() => outer1_5.subscribe((self) => ({ sort: self.sort, filter: self.filter }), (self, self2) => {
     if (self.sort !== self2.sort) {
-      outer1_0(outer2_11(self.sort));
+      let SUGGESTED = self.sort;
+      if (null == SUGGESTED) {
+        SUGGESTED = outer1_6.SUGGESTED;
+      } else {
+        const _Object = Object;
+        const values = Object.values(outer1_6);
+      }
+      closure_0(SUGGESTED);
+      const tmp = closure_0;
     }
     if (self.filter !== self2.filter) {
-      outer1_1(outer2_12(self.filter));
+      if (null == self.filter) {
+        let found = outer1_10;
+      } else {
+        const parts = str.split(",");
+        const mapped = parts.map((arg0) => callback(arg0));
+        found = mapped.filter((arg0) => null != arg0);
+        if (found.length <= 0) {
+          found = outer1_10;
+        }
+      }
+      closure_1(found);
+      const tmp7 = closure_1;
     }
-  }, { equalityFn: tmp4(outer1_2[8]).shallow, fireImmediately: true }), []);
-  const tmp5 = callback(React.useState(() => outer1_12(outer1_5.getField("filter"))), 2);
+  }, { equalityFn: navigation(outer1_2[8]).shallow, fireImmediately: true }), []);
+  navigation = undefined;
+  importDefault = undefined;
+  let obj = navigation(1480);
+  navigation = obj.useNavigation();
+  const tmp10 = callback(React.useState(false), 2);
+  importDefault = tmp10[1];
+  const items = [navigation];
+  const effect1 = React.useEffect(() => navigation.addListener("transitionEnd", () => callback(true)), items);
   callback = React.useCallback(() => {
-    tmp7(outer1_10);
+    callback(outer1_10);
   }, []);
-  const effect1 = React.useEffect(() => () => {
-    callback(outer2_2[9]).close();
-    outer2_5.resetState();
+  const effect2 = React.useEffect(() => () => {
+    callback(table[9]).close();
+    zustandStore.resetState();
   }, []);
   const field = zustandStore.useField("scrollToQuestId");
-  importDefault(14007)({ setSelectedSortMethod: tmp2[1], setSelectedFilters: tmp7, selectedFilters: tmp6, selectedSortMethod: first });
-  const tmp9 = (function useFinishedNavigating() {
-    const navigation = tmp4(outer1_2[7]).useNavigation();
-    const tmp2 = outer1_3(outer1_4.useState(false), 2);
-    let closure_1 = tmp2[1];
-    const items = [navigation];
-    const effect = outer1_4.useEffect(() => navigation.addListener("transitionEnd", () => outer1_1(true)), items);
-    return tmp2[0];
-  })();
-  return jsx(importDefault(14011), {
-    containerStyle: tmp.container,
-    isNavigationComplete: (function useFinishedNavigating() {
-      const navigation = tmp4(outer1_2[7]).useNavigation();
-      const tmp2 = outer1_3(outer1_4.useState(false), 2);
-      let closure_1 = tmp2[1];
-      const items = [navigation];
-      const effect = outer1_4.useEffect(() => navigation.addListener("transitionEnd", () => outer1_1(true)), items);
-      return tmp2[0];
-    })(),
-    scrollToQuestId: field,
-    sortMethod: first,
-    filters: tmp6,
-    onClearFilters: callback
-  });
+  importDefault(14028)({ setSelectedSortMethod: tmp4, setSelectedFilters: tmp7, selectedFilters: tmp6, selectedSortMethod: tmp3 });
+  obj = { containerStyle: tmp.container, isNavigationComplete: tmp10[0], scrollToQuestId: field, sortMethod: tmp3, filters: tmp6, onClearFilters: callback };
+  return jsx(importDefault(14032), { containerStyle: tmp.container, isNavigationComplete: tmp10[0], scrollToQuestId: field, sortMethod: tmp3, filters: tmp6, onClearFilters: callback });
 };

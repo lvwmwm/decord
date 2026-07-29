@@ -1,11 +1,11 @@
-// Module ID: 5097
-// Function ID: 43991
+// Module ID: 5119
+// Function ID: 5120
 // Name: waitForOnboardingCompletion
-// Dependencies: [1918, 3781, 1360, 5098, 2]
+// Dependencies: [1942, 3805, 1384, 5120, 2]
 // Exports: waitForOnboardingCompletion
 
-// Module 5097 (waitForOnboardingCompletion)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 5119 (waitForOnboardingCompletion)
+import trackCommunicationDisabled from "trackCommunicationDisabled";
 import { GuildMemberFlags } from "GuildMemberFlags";
 
 const require = arg1;
@@ -17,16 +17,16 @@ export const waitForOnboardingCompletion = function waitForOnboardingCompletion(
     let closure_0 = arg0;
     const result = outer1_3.addConditionalChangeListener(() => {
       const selfMember = outer2_3.getSelfMember(callback);
-      let flags;
-      if (null != selfMember) {
-        flags = selfMember.flags;
+      let num;
+      if (selfMember != null) {
+        num = selfMember.flags;
       }
-      let num = 0;
-      if (null != flags) {
-        num = flags;
+      if (num == null) {
+        num = 0;
       }
-      let flag = !callback(outer2_2[2]).hasFlag(num, outer2_4.COMPLETED_ONBOARDING);
-      if (!flag) {
+      const hasFlagResult = callback(outer2_2[2]).hasFlag(num, outer2_4.COMPLETED_ONBOARDING);
+      let flag = !hasFlagResult;
+      if (hasFlagResult) {
         outer2_1(outer2_2[3]).finishOnboarding(callback);
         callback();
         flag = false;

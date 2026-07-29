@@ -1,28 +1,28 @@
-// Module ID: 5079
-// Function ID: 43727
-// Dependencies: [653, 1212, 2]
+// Module ID: 5101
+// Function ID: 5102
+// Dependencies: [676, 1236, 2]
 
-// Module 5079
+// Module 5101
 require("ME").AutoCompleteResultTypes;
 const result = require("set").fileFinishedImporting("utils/native/AutocompleteUtils.tsx");
 
 export default {
   MENTION_EVERYONE() {
-    const obj = { type: AutoCompleteResultTypes.GLOBAL, test: "everyone", text: "@everyone" };
-    const intl = require(1212) /* getSystemLocale */.intl;
-    obj.description = intl.string(require(1212) /* getSystemLocale */.t["5atMLZ"]);
+    const obj = { type: AutoCompleteResultTypes.GLOBAL, test: "everyone", text: "@everyone", description: null };
+    const intl = require(1236) /* getSystemLocale */.intl;
+    obj[3] = intl.string(require(1236) /* getSystemLocale */.t["5atMLZ"]);
     return obj;
   },
   MENTION_HERE() {
-    const obj = { type: AutoCompleteResultTypes.GLOBAL, test: "here", text: "@here" };
-    const intl = require(1212) /* getSystemLocale */.intl;
-    obj.description = intl.string(require(1212) /* getSystemLocale */.t.iX9SFD);
+    const obj = { type: AutoCompleteResultTypes.GLOBAL, test: "here", text: "@here", description: null };
+    const intl = require(1236) /* getSystemLocale */.intl;
+    obj[3] = intl.string(require(1236) /* getSystemLocale */.t.iX9SFD);
     return obj;
   },
   MENTION_GAME() {
-    const obj = { test: "game", text: "@game", inlineAutocompleteType: "gameMentionInput" };
-    const intl = require(1212) /* getSystemLocale */.intl;
-    obj.description = intl.string(require(1212) /* getSystemLocale */.t["1kR88y"]);
+    const obj = { test: "game", text: "@game", inlineAutocompleteType: "gameMentionInput", description: null };
+    const intl = require(1236) /* getSystemLocale */.intl;
+    obj[3] = intl.string(require(1236) /* getSystemLocale */.t["1kR88y"]);
     return obj;
   },
   LAUNCHABLE_APPLICATIONS() {

@@ -1,46 +1,35 @@
-// Module ID: 4150
-// Function ID: 34161
-// Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 653, 4151, 566, 686, 2]
+// Module ID: 4174
+// Function ID: 4175
+// Name: updateInvite
+// Dependencies: [676, 4175, 589, 709, 2]
 
-// Module 4150 (_isNativeReflectConstruct)
-import readSnowflake from "readSnowflake";
-import initialize from "initialize";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
+// Module 4174 (updateInvite)
 import { InviteStates } from "ME";
+import { Store } from "initialize";
 
-const require = arg1;
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
-  }
-  const result = _isNativeReflectConstruct();
-}
 function updateInvite(code, arg1) {
-  let str = "";
-  if (null != code) {
-    str = code;
+  let str = code;
+  if (code == null) {
+    str = "";
   }
-  let obj = require(4151) /* readSnowflake */;
+  let obj = require(4175) /* readSnowflake */;
   const result = obj.parseExtraDataFromInviteKey(str);
   const value = map.get(str);
   if (null != value) {
-    obj = { state: InviteStates.RESOLVING };
+    obj = { state: null };
+    obj[0] = InviteStates.RESOLVING;
     const merged = Object.assign(value);
   } else {
-    obj = { state: InviteStates.RESOLVING, code: result.baseCode };
+    obj = { state: null, code: null };
+    obj[0] = InviteStates.RESOLVING;
+    obj[1] = result.baseCode;
   }
   arg1(obj);
   map = new Map(map);
   const result1 = map.set(str, obj);
   const guild = obj.guild;
   let id;
-  if (null != guild) {
+  if (guild != null) {
     id = guild.id;
   }
   if (null != id) {
@@ -54,79 +43,40 @@ function handleInviteResolveFailure(code) {
   updateInvite(code.code, (arg0) => {
     if ("banned" in banned) {
       if (banned.banned) {
-        let EXPIRED = outer1_7.BANNED;
+        let EXPIRED = outer1_2.BANNED;
       }
       arg0.state = EXPIRED;
     }
-    EXPIRED = outer1_7.EXPIRED;
+    EXPIRED = outer1_2.EXPIRED;
   });
 }
 let map = new Map();
 const map1 = new Map();
-let closure_10 = {};
+let closure_5 = {};
 const map2 = new Map();
-let tmp5 = ((Store) => {
-  class InviteStore {
-    constructor() {
-      self = this;
-      tmp = outer1_2(this, InviteStore);
-      obj = outer1_5(InviteStore);
-      tmp2 = outer1_4;
-      if (outer1_12()) {
-        tmp6 = globalThis;
-        _Reflect = Reflect;
-        tmp7 = outer1_5;
-        tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, outer1_5(self).constructor);
-      } else {
-        tmp3 = arguments;
-        tmp4 = arguments;
-        constructResult = obj(...arguments);
-      }
-      return tmp2(self, constructResult);
-    }
-  }
-  callback2(InviteStore, Store);
-  let obj = {
-    key: "getInvite",
-    value(arg0) {
-      return outer1_8.get(arg0);
-    }
-  };
-  const items = [obj, , , , ];
-  obj = {
-    key: "getInviteError",
-    value(arg0) {
-      return outer1_9.get(arg0);
-    }
-  };
-  items[1] = obj;
-  obj = {
-    key: "getInvites",
-    value() {
-      return outer1_8;
-    }
-  };
-  items[2] = obj;
-  items[3] = {
-    key: "getInviteKeyForGuildId",
-    value(arg0) {
-      return outer1_10[arg0];
-    }
-  };
-  items[4] = {
-    key: "getFriendMemberIds",
-    value(arg0) {
-      return outer1_11.get(arg0);
-    }
-  };
-  return callback(InviteStore, items);
-})(require("initialize").Store);
-tmp5.displayName = "InviteStore";
-tmp5 = new tmp5(require("dispatcher"), {
+class InviteStore extends Store {
+}
+const prototype = InviteStore.prototype;
+prototype["getInvite"] = function getInvite(arg0) {
+  return map.get(arg0);
+};
+prototype["getInviteError"] = function getInviteError(arg0) {
+  return map1.get(arg0);
+};
+prototype["getInvites"] = function getInvites() {
+  return map;
+};
+prototype["getInviteKeyForGuildId"] = function getInviteKeyForGuildId(id) {
+  return table[id];
+};
+prototype["getFriendMemberIds"] = function getFriendMemberIds(arg0) {
+  return map2.get(arg0);
+};
+InviteStore.displayName = "InviteStore";
+const inviteStore = new InviteStore(require("dispatcher"), {
   INVITE_RESOLVE: function handleInviteResolve(code) {
     code = code.code;
-    let obj = require(4151) /* readSnowflake */;
+    let obj = require(4175) /* readSnowflake */;
     const result = obj.parseExtraDataFromInviteKey(code);
     map = new Map(map);
     obj = { code: result.baseCode, state: InviteStates.RESOLVING };
@@ -135,22 +85,20 @@ tmp5 = new tmp5(require("dispatcher"), {
   INVITE_RESOLVE_SUCCESS: function handleInviteResolveSuccess(code) {
     let closure_0 = code;
     updateInvite(code.code, (arg0) => {
-      arg0.state = outer1_7.RESOLVED;
+      arg0.state = outer1_2.RESOLVED;
       arg0.guild = code.invite.guild;
       arg0.channel = code.invite.channel;
       arg0.inviter = code.invite.inviter;
-      const approximate_member_count = code.invite.approximate_member_count;
-      let tmp = null;
-      if (null != approximate_member_count) {
-        tmp = approximate_member_count;
+      let prop = code.invite.approximate_member_count;
+      if (prop == null) {
+        prop = null;
       }
-      arg0.approximate_member_count = tmp;
-      const approximate_presence_count = code.invite.approximate_presence_count;
-      let tmp2 = null;
-      if (null != approximate_presence_count) {
-        tmp2 = approximate_presence_count;
+      arg0.approximate_member_count = prop;
+      let prop1 = tmp.invite.approximate_presence_count;
+      if (prop1 == null) {
+        prop1 = null;
       }
-      arg0.approximate_presence_count = tmp2;
+      arg0.approximate_presence_count = prop1;
       arg0.target_type = code.invite.target_type;
       arg0.target_user = code.invite.target_user;
       arg0.target_application = code.invite.target_application;
@@ -173,37 +121,35 @@ tmp5 = new tmp5(require("dispatcher"), {
   FRIEND_INVITE_CREATE_SUCCESS: function handleFriendInviteCreate(invite) {
     let closure_0 = invite;
     updateInvite(invite.invite.code, (arg0) => {
-      arg0.state = outer1_7.RESOLVED;
+      arg0.state = outer1_2.RESOLVED;
       arg0.inviter = invite.invite.inviter;
     });
   },
   FRIEND_INVITE_REVOKE_SUCCESS: function handleFriendInviteRevokeSuccess(invites) {
     invites = invites.invites;
     const item = invites.forEach((code) => {
-      outer1_13(code.code, (arg0) => {
-        arg0.state = outer2_7.EXPIRED;
+      callback(code.code, (arg0) => {
+        arg0.state = constants.EXPIRED;
       });
     });
   },
   INSTANT_INVITE_CREATE_SUCCESS: function handleInstantInviteCreate(invite) {
     let closure_0 = invite;
     updateInvite(invite.invite.code, (arg0) => {
-      arg0.state = outer1_7.RESOLVED;
+      arg0.state = outer1_2.RESOLVED;
       arg0.guild = invite.invite.guild;
       arg0.channel = invite.invite.channel;
       arg0.inviter = invite.invite.inviter;
-      const approximate_member_count = invite.invite.approximate_member_count;
-      let tmp = null;
-      if (null != approximate_member_count) {
-        tmp = approximate_member_count;
+      let prop = invite.invite.approximate_member_count;
+      if (prop == null) {
+        prop = null;
       }
-      arg0.approximate_member_count = tmp;
-      const approximate_presence_count = invite.invite.approximate_presence_count;
-      let tmp2 = null;
-      if (null != approximate_presence_count) {
-        tmp2 = approximate_presence_count;
+      arg0.approximate_member_count = prop;
+      let prop1 = tmp.invite.approximate_presence_count;
+      if (prop1 == null) {
+        prop1 = null;
       }
-      arg0.approximate_presence_count = tmp2;
+      arg0.approximate_presence_count = prop1;
       arg0.target_type = invite.invite.target_type;
       arg0.target_user = invite.invite.target_user;
       arg0.target_application = invite.invite.target_application;
@@ -216,13 +162,13 @@ tmp5 = new tmp5(require("dispatcher"), {
   },
   INVITE_ACCEPT: function handleAcceptInvite(code) {
     updateInvite(code.code, (arg0) => {
-      arg0.state = outer1_7.ACCEPTING;
+      arg0.state = constants.ACCEPTING;
     });
   },
   INVITE_ACCEPT_SUCCESS: function handleAcceptInviteSuccess(code) {
     let closure_0 = code;
     updateInvite(code.code, (channel) => {
-      channel.state = outer1_7.ACCEPTED;
+      channel.state = outer1_2.ACCEPTED;
       channel.guild = code.invite.guild;
       channel.new_member = code.invite.new_member;
       const merged = Object.assign(channel.channel);
@@ -233,22 +179,22 @@ tmp5 = new tmp5(require("dispatcher"), {
   INVITE_ACCEPT_FAILURE: function handleAcceptInviteFailure(code) {
     const result = map1.set(code.code, code.error);
     updateInvite(code.code, (arg0) => {
-      arg0.state = outer1_7.ERROR;
+      arg0.state = constants.ERROR;
     });
   },
   INVITE_APP_OPENING: function handleInviteAppOpening(code) {
     updateInvite(code.code, (arg0) => {
-      arg0.state = outer1_7.APP_OPENING;
+      arg0.state = constants.APP_OPENING;
     });
   },
   INVITE_APP_OPENED: function handleInviteAppOpened(code) {
     updateInvite(code.code, (arg0) => {
-      arg0.state = outer1_7.APP_OPENED;
+      arg0.state = constants.APP_OPENED;
     });
   },
   INVITE_APP_NOT_OPENED: function handleInviteAppNotOpened(code) {
     updateInvite(code.code, (arg0) => {
-      arg0.state = outer1_7.APP_NOT_OPENED;
+      arg0.state = constants.APP_NOT_OPENED;
     });
   },
   INVITE_FRIEND_MEMBERS_FETCH_SUCCESS: function handleInviteFriendMembersFetchSuccess(code) {
@@ -265,6 +211,6 @@ tmp5 = new tmp5(require("dispatcher"), {
     }
   }
 });
-let result = require("_possibleConstructorReturn").fileFinishedImporting("stores/InviteStore.tsx");
+let result = require("initialize").fileFinishedImporting("stores/InviteStore.tsx");
 
-export default tmp5;
+export default inviteStore;

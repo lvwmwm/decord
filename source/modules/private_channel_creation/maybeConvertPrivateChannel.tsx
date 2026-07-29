@@ -1,24 +1,24 @@
-// Module ID: 6022
-// Function ID: 53382
+// Module ID: 6040
+// Function ID: 6041
 // Name: maybeConvertPrivateChannel
-// Dependencies: [1348, 5639, 4175, 2]
+// Dependencies: [1372, 5657, 4199, 2]
 // Exports: default
 
-// Module 6022 (maybeConvertPrivateChannel)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 6040 (maybeConvertPrivateChannel)
+import ensureGuildLoaded from "ensureGuildLoaded";
 
 const require = arg1;
-const result = require("module_4175").fileFinishedImporting("modules/private_channel_creation/maybeConvertPrivateChannel.tsx");
+const result = require("module_4199").fileFinishedImporting("modules/private_channel_creation/maybeConvertPrivateChannel.tsx");
 
-export default function maybeConvertPrivateChannel(channelId) {
-  if (channelId !== require(5639) /* FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID */.FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID) {
+export default function maybeConvertPrivateChannel(arg0) {
+  if (arg0 !== require(5657) /* FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID */.FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID) {
     return null;
   } else {
-    channel = channel.getChannel(channelId);
+    channel = channel.getChannel(arg0);
     let ensurePrivateChannelResult = null;
     if (null != channel) {
-      ensurePrivateChannelResult = importDefault(4175).ensurePrivateChannel(channel.recipients);
-      const obj = importDefault(4175);
+      ensurePrivateChannelResult = importDefault(4199).ensurePrivateChannel(channel.recipients);
+      const obj = importDefault(4199);
     }
     return ensurePrivateChannelResult;
   }

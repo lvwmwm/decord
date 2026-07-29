@@ -1,33 +1,37 @@
-// Module ID: 12770
-// Function ID: 99216
+// Module ID: 12792
+// Function ID: 12793
 // Name: showVoiceChannelBlockedUserWarning
-// Dependencies: [6307, 12765, 12768, 668, 4133, 12771, 1935, 480, 2]
+// Dependencies: [6328, 12787, 12790, 691, 4157, 12793, 1959, 503, 2]
 // Exports: showVoiceChannelBlockedUserWarning
 
-// Module 12770 (showVoiceChannelBlockedUserWarning)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 12792 (showVoiceChannelBlockedUserWarning)
+import getState from "getState";
 import useSharedSpacesWarningStore from "useSharedSpacesWarningStore";
 import { VoiceChannelWarningSurfaces as closure_6 } from "GdmWarningMedium";
 
-let closure_4;
-let closure_5;
+let c4;
+let c5;
 const require = arg1;
-({ queueBlockWarning: closure_4, dequeueBlockWarning: closure_5 } = useSharedSpacesWarningStore);
+({ queueBlockWarning: c4, dequeueBlockWarning: c5 } = useSharedSpacesWarningStore);
 const result = require("GdmWarningMedium").fileFinishedImporting("modules/shared_space_warnings/show_voice_channel_warning/showVoiceChannelBlockedUserWarning.native.tsx");
 
-export const showVoiceChannelBlockedUserWarning = function showVoiceChannelBlockedUserWarning(channelId, blockedUserId) {
+export const showVoiceChannelBlockedUserWarning = function showVoiceChannelBlockedUserWarning(channelId, id) {
   state = state.getState();
-  if (state === require(668) /* keys */.AppStates.ACTIVE) {
+  if (state === require(691) /* keys */.AppStates.ACTIVE) {
     callback2();
-    let obj = importDefault(4133);
-    obj = { channelId, blockedUserId, impressionName: require(480) /* isThrottled */.ImpressionNames.VOICE_CHANNEL_BLOCKED_USER_WARNING };
-    obj = { channel_id: channelId };
-    const items = [blockedUserId];
-    obj.blocked_user_ids = items;
-    obj.warning_surface = constants.POST_JOIN_SHEET;
-    obj.impressionProperties = obj;
-    obj.openLazy(require(1935) /* maybeLoadBundle */(12771, dependencyMap.paths), "gdm_blocked_user_action_sheet", obj);
-    const tmp9 = require(1935) /* maybeLoadBundle */(12771, dependencyMap.paths);
+    let obj = importDefault(4157);
+    obj = { channelId: null, blockedUserId: null, impressionName: null, impressionProperties: null };
+    obj[0] = channelId;
+    obj[1] = id;
+    obj[2] = tmp2(503).ImpressionNames.VOICE_CHANNEL_BLOCKED_USER_WARNING;
+    obj = { channel_id: null, blocked_user_ids: null, warning_surface: null };
+    obj[0] = channelId;
+    const items = [id];
+    obj[1] = items;
+    obj[2] = constants.POST_JOIN_SHEET;
+    obj[3] = obj;
+    obj.openLazy(tmp2(1959)(12793, dependencyMap.paths), "gdm_blocked_user_action_sheet", obj);
+    const tmp11 = tmp2(1959)(12793, dependencyMap.paths);
   } else {
     callback();
   }

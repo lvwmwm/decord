@@ -1,18 +1,18 @@
-// Module ID: 15851
-// Function ID: 122170
+// Module ID: 15886
+// Function ID: 15887
 // Name: useInviteMembersCallback
-// Dependencies: [31, 1348, 653, 4016, 8324, 2]
+// Dependencies: [19, 1372, 676, 4040, 8348, 2]
 // Exports: useInviteMembersCallback
 
-// Module 15851 (useInviteMembersCallback)
-import result from "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 15886 (useInviteMembersCallback)
+import noop from "noop";
+import ensureGuildLoaded from "ensureGuildLoaded";
 import ME from "ME";
 
-let closure_4;
-let closure_5;
+let c4;
+let c5;
 const require = arg1;
-({ AnalyticsPages: closure_4, InstantInviteSources: closure_5 } = ME);
+({ AnalyticsPages: c4, InstantInviteSources: c5 } = ME);
 const result = require("ME").fileFinishedImporting("modules/voice_panel/native/hooks/useInviteMembersCallback.tsx");
 
 export const useInviteMembersCallback = function useInviteMembersCallback(channelId) {
@@ -23,15 +23,18 @@ export const useInviteMembersCallback = function useInviteMembersCallback(channe
     if (null == id) {
       return null;
     } else {
-      let tmpResult = outer1_1;
+      let tmp = closure_0;
+      let navigateToNewGroupDM = outer1_1;
       if (id.isPrivate()) {
-        tmpResult = tmp(tmpResult[3]);
+        tmp = tmp(navigateToNewGroupDM[3]);
+        navigateToNewGroupDM = tmp.navigateToNewGroupDM;
         id = id.id;
-        let navigateToNewGroupDMResult = tmpResult.navigateToNewGroupDM(id, outer1_4.CHANNEL_CALL);
+        let navigateToNewGroupDMResult = navigateToNewGroupDM(id, outer1_4.CHANNEL_CALL);
       } else {
-        tmpResult = tmp(tmpResult[4]);
-        const obj = { source: outer1_5.VOICE_CHANNEL };
-        navigateToNewGroupDMResult = tmpResult.showInstantInviteActionSheet(id, obj);
+        const obj = { source: null };
+        obj[0] = outer1_5.VOICE_CHANNEL;
+        navigateToNewGroupDMResult = tmp(navigateToNewGroupDM[4]).showInstantInviteActionSheet(id, obj);
+        const tmpResult = tmp(navigateToNewGroupDM[4]);
       }
     }
   }, items);

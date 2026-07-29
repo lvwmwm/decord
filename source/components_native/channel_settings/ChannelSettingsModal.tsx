@@ -1,60 +1,60 @@
-// Module ID: 15604
-// Function ID: 119954
+// Module ID: 15638
+// Function ID: 15639
 // Name: styles
-// Dependencies: [31, 27, 653, 9077, 33, 4165, 689, 15605, 1212, 10283, 15517, 9282, 15613, 15615, 15620, 15621, 15630, 15633, 15642, 15644, 15645, 15646, 15647, 15648, 2]
+// Dependencies: [19, 17, 676, 9101, 21, 4189, 712, 15639, 1236, 10304, 15551, 15647, 15648, 15650, 15655, 15656, 15665, 15668, 15677, 15679, 15680, 15681, 15682, 15683, 2]
 // Exports: getChannelSettingsScreens
 
-// Module 15604 (styles)
-import "result";
-import { View } from "get ActivityIndicator";
+// Module 15638 (styles)
+import "EditLinkedLobby";
+import { View } from "WebhookItem";
 import ME from "ME";
 import { SearchTabs } from "SearchAutocompleteSelectAnalyticsActions";
-import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import { jsx } from "handleSetRegion";
+import createCacheKey from "createCacheKey";
 
-let closure_4;
-let closure_5;
+let c4;
+let c5;
 let closure_6;
 const require = arg1;
-({ ChannelSettingsSections: closure_4, SearchTypes: closure_5, WebhookTypes: closure_6 } = ME);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { flex: 1, backgroundColor: require("_createForOfIteratorHelperLoose").colors.MOBILE_ACTIONSHEET_BACKGROUND };
-_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.pinsScreen = { flex: 1, backgroundColor: require("_createForOfIteratorHelperLoose").colors.MOBILE_ACTIONSHEET_BACKGROUND };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-let obj1 = { flex: 1, backgroundColor: require("_createForOfIteratorHelperLoose").colors.MOBILE_ACTIONSHEET_BACKGROUND };
+({ ChannelSettingsSections: c4, SearchTypes: c5, WebhookTypes: closure_6 } = ME);
+createCacheKey = { container: null, pinsScreen: null };
+createCacheKey = { flex: 1, backgroundColor: require("Themes").colors.MOBILE_ACTIONSHEET_BACKGROUND };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { flex: 1, backgroundColor: require("Themes").colors.MOBILE_ACTIONSHEET_BACKGROUND };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let obj1 = { flex: 1, backgroundColor: require("Themes").colors.MOBILE_ACTIONSHEET_BACKGROUND };
 const result = require("ME").fileFinishedImporting("components_native/channel_settings/ChannelSettingsModal.tsx");
 
-export const useChannelSettingsScreensStyles = _createForOfIteratorHelperLoose;
-export const getChannelSettingsScreens = function getChannelSettingsScreens(channelId, guildId, channelSettingsScreensStyles) {
+export const useChannelSettingsScreensStyles = createCacheKey;
+export const getChannelSettingsScreens = function getChannelSettingsScreens(channelId, arg1, channelSettingsScreensStyles) {
   const _require = channelId;
-  let closure_1 = guildId;
+  let closure_1 = arg1;
   const dependencyMap = channelSettingsScreensStyles;
   obj = { [closure_4.OVERVIEW]: obj };
   obj = {
     render(autoFocusElement) {
-      const obj = { channelId: closure_0 };
+      const obj = { channelId: closure_0, autoFocusElement: null };
       autoFocusElement = undefined;
-      if (null != autoFocusElement) {
+      if (autoFocusElement != null) {
         autoFocusElement = autoFocusElement.autoFocusElement;
       }
-      obj.autoFocusElement = autoFocusElement;
-      return outer1_8(guildId(pinsScreen[7]), obj);
+      obj[1] = autoFocusElement;
+      return outer1_8(callback(pinsScreen[7]), obj);
     }
   };
-  obj = {};
-  const intl = _require(1212).intl;
-  obj.title = intl.string(_require(1212).t.h850Ss);
-  obj.render = function render() {
-    return outer1_8(guildId(pinsScreen[9]), { channelId: closure_0 });
+  obj = { title: null, render: null };
+  const intl = _require(1236).intl;
+  obj[0] = intl.string(_require(1236).t.h850Ss);
+  obj[1] = function render() {
+    return outer1_8(callback(pinsScreen[9]), { channelId: closure_0 });
   };
   obj[constants.NOTIFICATIONS] = obj;
-  const obj1 = {};
-  const intl2 = _require(1212).intl;
-  obj1.title = intl2.string(_require(1212).t["mp1N/2"]);
-  obj1.render = function render() {
-    let obj = { type: outer1_5.GUILD_CHANNEL, guildId, channelId: closure_0 };
-    obj = { style: pinsScreen.pinsScreen, children: outer1_8(guildId(pinsScreen[10]), obj) };
+  const obj1 = { title: null, render: null };
+  const intl2 = _require(1236).intl;
+  obj1[0] = intl2.string(_require(1236).t["mp1N/2"]);
+  obj1[1] = function render() {
+    let obj = { type: outer1_5.GUILD_CHANNEL, guildId: callback, channelId: closure_0 };
+    obj = { style: pinsScreen.pinsScreen, children: outer1_8(callback(pinsScreen[10]), obj) };
     obj = { searchContext: obj, tab: outer1_7.PINS, isFocused: true };
     return outer1_8(outer1_3, obj);
   };
@@ -62,108 +62,106 @@ export const getChannelSettingsScreens = function getChannelSettingsScreens(chan
   obj[constants.PINNED_CHAT] = {
     postponeRender: true,
     render() {
-      return outer1_8(guildId(pinsScreen[11]), { channelId: closure_0 });
+      return outer1_8(callback(pinsScreen[11]), { channelId: closure_0 });
     }
   };
-  const obj3 = {};
-  const intl3 = _require(1212).intl;
-  obj3.title = intl3.string(_require(1212).t.ngRFjZ);
-  obj3.postponeRender = true;
-  obj3.render = function render() {
-    return outer1_8(guildId(pinsScreen[12]), {});
+  const obj2 = { title: null, postponeRender: true, render: null };
+  const intl3 = _require(1236).intl;
+  obj2[0] = intl3.string(_require(1236).t.ngRFjZ);
+  obj2[2] = function render() {
+    return callback2(callback(pinsScreen[12]), {});
   };
-  obj[constants.INSTANT_INVITES] = obj3;
-  const obj4 = {};
-  const intl4 = _require(1212).intl;
-  obj4.title = intl4.string(_require(1212).t.xrmhRX);
-  obj4.render = function render(arg0) {
+  obj[constants.INSTANT_INVITES] = obj2;
+  const obj3 = { title: null, render: null };
+  const intl4 = _require(1236).intl;
+  obj3[0] = intl4.string(_require(1236).t.xrmhRX);
+  obj3[1] = function render(arg0) {
     const obj = {};
     const merged = Object.assign(arg0);
-    obj["channelId"] = closure_0;
-    return outer1_8(guildId(pinsScreen[13]), obj);
+    obj.channelId = closure_0;
+    return outer1_8(callback(pinsScreen[13]), obj);
   };
-  obj[constants.PERMISSIONS] = obj4;
-  const obj5 = {};
-  const intl5 = _require(1212).intl;
-  obj5.title = intl5.string(_require(1212).t.vPHdP5);
-  obj5.postponeRender = true;
-  obj5.render = function render(arg0) {
+  obj[constants.PERMISSIONS] = obj3;
+  const obj4 = { title: null, postponeRender: true, render: null };
+  const intl5 = _require(1236).intl;
+  obj4[0] = intl5.string(_require(1236).t.vPHdP5);
+  obj4[2] = function render(arg0) {
     const merged = Object.assign(arg0);
-    return outer1_8(guildId(pinsScreen[14]), { channelId: closure_0 });
+    return outer1_8(callback(pinsScreen[14]), { channelId: closure_0 });
   };
-  obj[constants.NEW_PERMISSION] = obj5;
-  const obj6 = {};
-  const intl6 = _require(1212).intl;
-  obj6.title = intl6.string(_require(1212).t.D4p9TR);
-  obj6.render = function render(arg0) {
+  obj[constants.NEW_PERMISSION] = obj4;
+  const obj5 = { title: null, render: null };
+  const intl6 = _require(1236).intl;
+  obj5[0] = intl6.string(_require(1236).t.D4p9TR);
+  obj5[1] = function render(arg0) {
     const merged = Object.assign(arg0);
-    return outer1_8(guildId(pinsScreen[15]), { channelId: closure_0 });
+    return outer1_8(callback(pinsScreen[15]), { channelId: closure_0 });
   };
-  obj[constants.PERMISSION_OVERRIDES] = obj6;
-  const obj7 = {};
-  const intl7 = _require(1212).intl;
-  obj7.title = intl7.string(_require(1212).t.CIsNZw);
-  obj7.render = function render(arg0) {
+  obj[constants.PERMISSION_OVERRIDES] = obj5;
+  const obj6 = { title: null, render: null };
+  const intl7 = _require(1236).intl;
+  obj6[0] = intl7.string(_require(1236).t.CIsNZw);
+  obj6[1] = function render(arg0) {
     const merged = Object.assign(arg0);
-    return outer1_8(guildId(pinsScreen[16]), { channelId: closure_0 });
+    return outer1_8(callback(pinsScreen[16]), { channelId: closure_0 });
   };
-  obj[constants.INTEGRATIONS] = obj7;
-  const obj8 = {};
-  const intl8 = _require(1212).intl;
-  obj8.title = intl8.string(_require(1212).t.jp25Id);
-  obj8.render = function render() {
-    return outer1_8(guildId(pinsScreen[17]), { channelId: closure_0, webhookType: outer1_6.INCOMING });
+  obj[constants.INTEGRATIONS] = obj6;
+  const obj7 = { title: null, render: null };
+  const intl8 = _require(1236).intl;
+  obj7[0] = intl8.string(_require(1236).t.jp25Id);
+  obj7[1] = function render() {
+    return outer1_8(callback(pinsScreen[17]), { channelId: closure_0, webhookType: outer1_6.INCOMING });
   };
-  obj[constants.WEBHOOKS] = obj8;
-  const obj9 = {};
-  const intl9 = _require(1212).intl;
-  obj9.title = intl9.string(_require(1212).t["6SE3L3"]);
-  obj9.render = function render(arg0) {
+  obj[constants.WEBHOOKS] = obj7;
+  const obj8 = { title: null, render: null };
+  const intl9 = _require(1236).intl;
+  obj8[0] = intl9.string(_require(1236).t["6SE3L3"]);
+  obj8[1] = function render(arg0) {
     const merged = Object.assign(arg0);
-    return outer1_8(guildId(pinsScreen[18]), {});
+    return callback2(callback(pinsScreen[18]), {});
   };
-  obj[constants.EDIT_WEBHOOK] = obj9;
-  const obj10 = {};
-  const intl10 = _require(1212).intl;
-  obj10.title = intl10.string(_require(1212).t.OJknhi);
-  obj10.render = function render(arg0) {
+  obj[constants.EDIT_WEBHOOK] = obj8;
+  const obj9 = { title: null, render: null };
+  const intl10 = _require(1236).intl;
+  obj9[0] = intl10.string(_require(1236).t.OJknhi);
+  obj9[1] = function render(arg0) {
     const merged = Object.assign(arg0);
-    return outer1_8(guildId(pinsScreen[19]), {});
+    return callback2(callback(pinsScreen[19]), {});
   };
-  obj[constants.EDIT_LINKED_LOBBY] = obj10;
-  const obj11 = {};
-  const intl11 = _require(1212).intl;
-  obj11.title = intl11.string(_require(1212).t.OrV60r);
-  obj11.render = function render() {
-    return outer1_8(guildId(pinsScreen[17]), { channelId: closure_0, webhookType: outer1_6.CHANNEL_FOLLOWER });
+  obj[constants.EDIT_LINKED_LOBBY] = obj9;
+  const obj10 = { title: null, render: null };
+  const intl11 = _require(1236).intl;
+  obj10[0] = intl11.string(_require(1236).t.OrV60r);
+  obj10[1] = function render() {
+    return outer1_8(callback(pinsScreen[17]), { channelId: closure_0, webhookType: outer1_6.CHANNEL_FOLLOWER });
   };
-  obj[constants.CHANNELS_FOLLOWED] = obj11;
-  const obj12 = {};
-  const intl12 = _require(1212).intl;
-  obj12.title = intl12.string(_require(1212).t["+caQHK"]);
-  obj12.render = function render() {
-    return outer1_8(guildId(pinsScreen[20]), { channelId: closure_0 });
+  obj[constants.CHANNELS_FOLLOWED] = obj10;
+  const obj11 = { title: null, render: null };
+  const intl12 = _require(1236).intl;
+  obj11[0] = intl12.string(_require(1236).t["+caQHK"]);
+  obj11[1] = function render() {
+    return outer1_8(callback(pinsScreen[20]), { channelId: closure_0 });
   };
-  obj[constants.CHANGE_CATEGORY] = obj12;
-  const obj13 = {};
-  const intl13 = _require(1212).intl;
-  obj13.title = intl13.string(_require(1212).t["Ms8bX+"]);
-  obj13.render = function render() {
-    return outer1_8(guildId(pinsScreen[21]), { channelId: closure_0 });
+  obj[constants.CHANGE_CATEGORY] = obj11;
+  const obj12 = { title: null, render: null };
+  const intl13 = _require(1236).intl;
+  obj12[0] = intl13.string(_require(1236).t["Ms8bX+"]);
+  obj12[1] = function render() {
+    return outer1_8(callback(pinsScreen[21]), { channelId: closure_0 });
   };
-  obj[constants.CHANGE_RTC_REGION] = obj13;
+  obj[constants.CHANGE_RTC_REGION] = obj12;
   obj[constants.EDIT_FORUM_TAG] = {
     render(arg0) {
       const merged = Object.assign(arg0);
-      return outer1_8(guildId(pinsScreen[22]), { channelId: closure_0 });
+      return outer1_8(callback(pinsScreen[22]), { channelId: closure_0 });
     }
   };
-  const obj14 = {};
-  const intl14 = _require(1212).intl;
-  obj14.title = intl14.string(_require(1212).t["kQvoC/"]);
-  obj14.render = function render() {
-    return outer1_8(guildId(pinsScreen[23]), { channelId: closure_0 });
+  const obj13 = { title: null, render: null };
+  const intl14 = _require(1236).intl;
+  obj13[0] = intl14.string(_require(1236).t["kQvoC/"]);
+  obj13[1] = function render() {
+    return outer1_8(callback(pinsScreen[23]), { channelId: closure_0 });
   };
-  obj[constants.DEFAULT_FORUM_LAYOUT] = obj14;
+  obj[constants.DEFAULT_FORUM_LAYOUT] = obj13;
   return obj;
 };

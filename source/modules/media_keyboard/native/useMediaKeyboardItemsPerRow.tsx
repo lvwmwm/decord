@@ -1,39 +1,38 @@
-// Module ID: 9664
-// Function ID: 75228
+// Module ID: 9686
+// Function ID: 9687
 // Name: useMediaKeyboardItemsPerRow
-// Dependencies: [31, 4020, 2]
+// Dependencies: [19, 4044, 2]
 // Exports: useMediaKeyboardItemsPerRow
 
-// Module 9664 (useMediaKeyboardItemsPerRow)
-import result from "result";
+// Module 9686 (useMediaKeyboardItemsPerRow)
+import noop from "noop";
 
 const require = arg1;
-let result = require("set").fileFinishedImporting("modules/media_keyboard/native/useMediaKeyboardItemsPerRow.tsx");
+const result = require("set").fileFinishedImporting("modules/media_keyboard/native/useMediaKeyboardItemsPerRow.tsx");
 
 export const useMediaKeyboardItemsPerRow = function useMediaKeyboardItemsPerRow() {
-  const tmp = ref(4020)();
-  let num = 8;
-  if (num(4020).WindowSizeClassifier.XLARGE !== tmp) {
-    num = 6;
-    if (num(4020).WindowSizeClassifier.LARGE !== tmp) {
-      num = 4;
-      if (num(4020).WindowSizeClassifier.NORMAL !== tmp) {
-        num = 3;
-        if (num(4020).WindowSizeClassifier.SMALL !== tmp) {
+  const tmp2 = itemsPageSizeRef(4044)();
+  let itemsPerRow = 8;
+  if (itemsPerRow(4044).WindowSizeClassifier.XLARGE !== tmp2) {
+    itemsPerRow = 6;
+    if (tmp3(4044).WindowSizeClassifier.LARGE !== tmp2) {
+      itemsPerRow = 4;
+      if (tmp3(4044).WindowSizeClassifier.NORMAL !== tmp2) {
+        itemsPerRow = 3;
+        if (tmp3(4044).WindowSizeClassifier.SMALL !== tmp2) {
           const _Error = Error;
           const _HermesInternal = HermesInternal;
-          const error = new Error("Unknown window size classifier: " + tmp);
+          const error = new Error("Unknown window size classifier: " + tmp2);
           throw error;
         }
       }
     }
   }
-  const result = 17 * num;
-  ref = React.useRef(result);
-  const items = [num];
+  const itemsPageSize = 17 * itemsPerRow;
+  itemsPageSizeRef = React.useRef(itemsPageSize);
+  const items = [itemsPerRow];
   const effect = React.useEffect(() => {
-    ref.current = 17 * num;
+    itemsPageSizeRef.current = 17 * itemsPerRow;
   }, items);
-  const obj = { itemsPerRow: num, itemsPageSize: result, itemsPageSizeRef: ref };
-  return obj;
+  return { itemsPerRow, itemsPageSize, itemsPageSizeRef };
 };

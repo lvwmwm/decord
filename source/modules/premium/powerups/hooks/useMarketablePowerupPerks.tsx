@@ -1,12 +1,12 @@
-// Module ID: 12618
-// Function ID: 97535
+// Module ID: 12640
+// Function ID: 12641
 // Name: set
-// Dependencies: [31, 4052, 4053, 4056, 566, 11643, 2]
+// Dependencies: [19, 4076, 4077, 4080, 589, 11667, 2]
 // Exports: default
 
-// Module 12618 (set)
-import result from "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 12640 (set)
+import noop from "noop";
+import calculateAppliedBoosts from "calculateAppliedBoosts";
 import BoostedGuildTiers from "BoostedGuildTiers";
 import set from "BoostedGuildTiers";
 
@@ -18,26 +18,30 @@ const result = set.fileFinishedImporting("modules/premium/powerups/hooks/useMark
 
 export default function useMarketablePowerupPerks(arg0) {
   const _require = arg0;
-  let items = [_isNativeReflectConstruct];
-  const stateFromStores = _require(566).useStateFromStores(items, () => {
+  let items = [calculateAppliedBoosts];
+  const stateFromStores = _require(589).useStateFromStores(items, () => {
     const stateForGuild = outer1_4.getStateForGuild(closure_0);
     let tmp2;
-    if (null != stateForGuild) {
+    if (stateForGuild != null) {
       const powerupCatalog = stateForGuild.powerupCatalog;
-      if (null != powerupCatalog) {
+      if (powerupCatalog != null) {
         tmp2 = powerupCatalog[outer1_5.PERK];
       }
     }
     return tmp2;
   });
-  let tmp2 = stateFromStores(11643)(arg0);
+  let tmp2 = stateFromStores(11667)(arg0);
   const dependencyMap = tmp2;
-  const items1 = [stateFromStores, tmp2];
+  let items1 = [stateFromStores, tmp2];
   return React.useMemo(() => {
-    const items = [...null != stateFromStores ? stateFromStores : []];
-    if (null != closure_2) {
-      items.push(closure_2);
+    let items = stateFromStores;
+    if (stateFromStores == null) {
+      items = [];
     }
-    return items.filter((skuId) => !outer2_6.has(skuId.skuId));
+    const items1 = [...items];
+    if (null != closure_2) {
+      items1.push(tmp);
+    }
+    return items1.filter((skuId) => !set.has(skuId.skuId));
   }, items1);
 };

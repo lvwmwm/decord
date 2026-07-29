@@ -1,44 +1,45 @@
-// Module ID: 8923
-// Function ID: 70369
+// Module ID: 8947
+// Function ID: 8948
 // Name: useOAuth2AuthorizeForm
-// Dependencies: [5, 57, 31, 27, 3807, 4157, 4188, 4847, 1850, 8924, 653, 33, 4165, 3798, 566, 4563, 4026, 4166, 5498, 8925, 8926, 483, 8927, 507, 491, 8928, 8930, 8932, 8004, 5505, 1184, 8933, 8934, 4359, 8935, 4575, 8936, 4578, 1212, 5619, 4849, 8938, 8979, 8150, 8931, 8984, 8990, 8989, 8991, 8992, 8993, 8995, 9006, 5184, 2]
+// Dependencies: [5, 32, 19, 17, 3831, 4181, 4212, 4869, 1874, 8948, 676, 21, 4189, 3822, 589, 4586, 4050, 4190, 5516, 8949, 8950, 506, 8951, 530, 514, 8952, 8954, 8956, 8028, 5523, 1208, 8957, 8958, 4384, 8959, 4597, 8960, 4600, 1236, 5637, 4871, 8962, 9003, 8174, 8955, 9008, 9014, 9013, 9015, 9016, 9017, 9019, 9030, 5206, 2]
 // Exports: default
 
-// Module 8923 (useOAuth2AuthorizeForm)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import _slicedToArray from "_slicedToArray";
-import convertOAuth2Authorization from "convertOAuth2Authorization";
-import { View } from "getLocationContextServer";
-import createText from "createText";
-import closure_9 from "_isNativeReflectConstruct";
-import _callSuper from "_callSuper";
-import closure_11 from "_isNativeReflectConstruct";
-import closure_12 from "_isNativeReflectConstruct";
+// Module 8947 (useOAuth2AuthorizeForm)
+import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
+import OAuth2Prompts from "OAuth2Prompts";
+import filterScopes from "filterScopes";
+import { View } from "CONFIG_NEVER_ANIMATE_TIMING";
+import defaultImageSrcGenerator from "defaultImageSrcGenerator";
+import closure_9 from "maybeApplyNoTextColorForLightCustomTheme";
+import createExecutable from "createExecutable";
+import set from "set";
+import mergeGuildAvatar from "mergeGuildAvatar";
 import OAuth2Steps from "OAuth2Steps";
 import ME from "ME";
-import jsxProd from "_createForOfIteratorHelperLoose";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import jsxProd from "fromString";
+import createCacheKey from "createCacheKey";
 
-let closure_13;
 let closure_14;
 let closure_15;
 let closure_16;
 let closure_17;
 let closure_18;
 let closure_19;
+let map1;
 const require = arg1;
-({ EMOJI_POINTING_DOWN_CODE_POINT: closure_13, OAuth2Steps: closure_14 } = OAuth2Steps);
+({ EMOJI_POINTING_DOWN_CODE_POINT: map1, OAuth2Steps: closure_14 } = OAuth2Steps);
 ({ AnalyticEvents: closure_15, Endpoints: closure_16 } = ME);
 ({ jsx: closure_17, Fragment: closure_18, jsxs: closure_19 } = jsxProd);
-let closure_20 = _createForOfIteratorHelperLoose.createStyles({ loading: { flex: 1, alignSelf: "center", justifyContent: "center" } });
+let closure_20 = createCacheKey.createStyles({ loading: { flex: 1, alignSelf: "center", justifyContent: "center" } });
 let closure_21 = { code: "function useOAuth2AuthorizeFormTsx1(){const{shouldReduceMotion,withSequence,withTiming,Easing,withRepeat}=this.__closure;const TOTAL=500;if(shouldReduceMotion)return{};return{transform:[{translateY:withSequence(withTiming(-5,{duration:TOTAL/2,easing:Easing.inOut(Easing.quad)}),withRepeat(withTiming(5,{duration:TOTAL,easing:Easing.inOut(Easing.quad)}),-1,true))}]};}" };
-let result = require("result").fileFinishedImporting("modules/oauth2/native/useOAuth2AuthorizeForm.tsx");
+let result = require("noop").fileFinishedImporting("modules/oauth2/native/useOAuth2AuthorizeForm.tsx");
 
 export default function useOAuth2AuthorizeForm(clientId) {
   let channelId;
   let guildId;
   let integrationType;
   clientId = clientId.clientId;
+  let _require = clientId;
   const responseType = clientId.responseType;
   let redirectUri = clientId.redirectUri;
   const codeChallenge = clientId.codeChallenge;
@@ -69,7 +70,7 @@ export default function useOAuth2AuthorizeForm(clientId) {
   let callback = clientId.callback;
   const callbackWithoutPost = clientId.callbackWithoutPost;
   const dismissOAuthModal = clientId.dismissOAuthModal;
-  const disclosures = clientId.disclosures;
+  let disclosures = clientId.disclosures;
   const connectedAccountProvider = clientId.connectedAccountProvider;
   let flag5 = clientId.wasDeepLink;
   if (flag5 === undefined) {
@@ -115,364 +116,737 @@ export default function useOAuth2AuthorizeForm(clientId) {
   callback = undefined;
   let callback1;
   let closure_56;
-  let ref;
+  let closure_57;
   let callback2;
   let memo5;
   let closure_60;
   let AUTHORIZE_SCOPES;
   let callback4;
   let AUTHORIZE_BOT_PERMISSIONS;
-  class Spinner {
-    constructor() {
-      obj = { style: closure_17.loading, children: closure_17(clientId(codeChallenge[39]).ActivityIndicator, {}) };
-      return closure_17(prompt, obj);
-    }
-  }
   callback = first1();
-  let name = text1(nonce.useState(null), 2);
-  first = name[0];
-  closure_19 = name[1];
-  const tmp3 = text1(nonce.useState(null), 2);
-  first1 = tmp3[0];
-  closure_21 = tmp3[1];
-  const tmp5 = text1(nonce.useState(null), 2);
-  first2 = tmp5[0];
-  closure_23 = tmp5[1];
-  const tmp7 = text1(nonce.useState(false), 2);
-  closure_24 = tmp7[1];
+  let obj = nonce;
+  let hasItem2 = text1;
+  let tmp2 = text1(nonce.useState(null), 2);
+  first = tmp2[0];
+  closure_19 = tmp2[1];
+  const tmp4 = text1(nonce.useState(null), 2);
+  first1 = tmp4[0];
+  closure_21 = tmp4[1];
+  const tmp6 = text1(nonce.useState(null), 2);
+  first2 = tmp6[0];
+  closure_23 = tmp6[1];
+  closure_24 = text1(nonce.useState(false), 2)[1];
   guilds = undefined;
-  if (null != first) {
+  if (first != null) {
     guilds = first.guilds;
   }
-  let tmp10 = null;
-  if (null != guildId) {
-    tmp10 = guildId;
+  if (guildId == null) {
+    guildId = null;
   }
-  const tmp11 = text1(nonce.useState(tmp10), 2);
-  first3 = tmp11[0];
-  c27 = tmp13;
-  let tmp15 = null;
-  if (null != channelId) {
-    tmp15 = channelId;
+  const hasItem2Result = hasItem2(obj.useState(guildId), 2);
+  first3 = hasItem2Result[0];
+  c27 = tmp12;
+  if (channelId == null) {
+    channelId = null;
   }
-  const tmp16 = text1(nonce.useState(tmp15), 2);
-  first4 = tmp16[0];
-  c29 = tmp18;
-  const tmp19 = text1(nonce.useState(redirectUri(codeChallenge[13]).NONE), 2);
-  first5 = tmp19[0];
-  closure_31 = tmp19[1];
-  let obj = clientId(codeChallenge[14]);
+  const hasItem2Result1 = hasItem2(obj.useState(channelId), 2);
+  first4 = hasItem2Result1[0];
+  c29 = tmp15;
+  const hasItem2Result2 = hasItem2(obj.useState(redirectUri(codeChallenge[13]).NONE), 2);
+  first5 = hasItem2Result2[0];
+  closure_31 = hasItem2Result2[1];
+  let obj1 = _require(codeChallenge[14]);
   let items = [callbackWithoutPost];
-  const stateFromStores = obj.useStateFromStores(items, () => callbackWithoutPost.getCurrentUser());
+  const stateFromStores = obj1.useStateFromStores(items, () => callbackWithoutPost.getCurrentUser());
   nsfwAllowed = undefined;
-  if (null != stateFromStores) {
+  if (stateFromStores != null) {
     nsfwAllowed = stateFromStores.nsfwAllowed;
   }
   const items1 = [guilds, first3];
-  memo = nonce.useMemo(() => {
+  memo = obj.useMemo(() => {
     let found;
-    if (null != guilds) {
-      found = guilds.find((id) => id.id === outer1_26);
+    if (guilds != null) {
+      found = guilds.find((id) => id.id === closure_26);
     }
     return found;
   }, items1);
-  let obj1 = clientId(codeChallenge[14]);
+  let tmp20Result = tmp20(tmp17[14]);
   const items2 = [callback];
   const items3 = [connectedAccountProvider];
-  const stateFromStores1 = obj1.useStateFromStores(items2, () => {
+  const stateFromStores1 = tmp20Result.useStateFromStores(items2, () => {
     let tmp = null;
     if (null != connectedAccountProvider) {
       const accounts = callback.getAccounts();
-      const found = accounts.find((type) => type.type === outer1_15);
-      let tmp4 = null;
-      if (null != found) {
-        tmp4 = found;
+      let found = accounts.find((type) => type.type === closure_15);
+      if (found == null) {
+        found = null;
       }
-      tmp = tmp4;
+      tmp = found;
     }
     return tmp;
   }, items3);
   c34 = tmp25;
-  const tmp27 = text1(nonce.useState(null), 2);
-  first6 = tmp27[0];
-  closure_36 = tmp27[1];
-  const tmp29 = text1(nonce.useState(false), 2);
-  first7 = tmp29[0];
-  c38 = tmp31;
-  let obj2 = clientId(codeChallenge[14]);
+  const hasItem2Result3 = hasItem2(obj.useState(null), 2);
+  first6 = hasItem2Result3[0];
+  closure_36 = hasItem2Result3[1];
+  const hasItem2Result4 = hasItem2(obj.useState(false), 2);
+  first7 = hasItem2Result4[0];
+  c38 = tmp30;
+  tmp20Result = tmp20(tmp17[14]);
   const items4 = [permissions];
-  stateFromStores2 = obj2.useStateFromStores(items4, () => permissions.useReducedMotion);
-  let obj3 = clientId(codeChallenge[15]);
-  isScreenReaderEnabled = obj3.useIsScreenReaderEnabled();
-  let num = 16;
-  let obj4 = clientId(codeChallenge[16]);
-  class X {
+  stateFromStores2 = tmp20Result.useStateFromStores(items4, () => permissions.useReducedMotion);
+  const tmp8 = text1(nonce.useState(false), 2);
+  isScreenReaderEnabled = _require(codeChallenge[15]).useIsScreenReaderEnabled();
+  const tmp20Result1 = _require(codeChallenge[15]);
+  class V {
     constructor() {
       if (c39) {
         obj = {};
       } else {
-        obj = {};
-        obj = {};
-        tmp = clientId;
+        obj = { transform: null };
+        obj = { translateY: null };
+        tmp = f106130;
         tmp2 = codeChallenge;
-        num = 16;
-        obj3 = clientId(codeChallenge[16]);
-        num2 = 17;
-        obj4 = clientId(codeChallenge[17]);
-        obj1 = {};
-        num3 = 250;
-        obj1.duration = 250;
-        Easing = clientId(codeChallenge[16]).Easing;
-        obj1.easing = Easing.inOut(clientId(codeChallenge[16]).Easing.quad);
-        num4 = -5;
+        obj3 = f106130(codeChallenge[16]);
+        obj4 = f106130(codeChallenge[17]);
+        obj1 = { duration: 250, easing: null };
+        Easing = f106130(codeChallenge[16]).Easing;
+        obj1[1] = Easing.inOut(f106130(codeChallenge[16]).Easing.quad);
+        num = -5;
         withTimingResult = obj4.withTiming(-5, obj1);
-        obj6 = clientId(codeChallenge[16]);
-        obj7 = clientId(codeChallenge[17]);
-        obj2 = {};
-        num5 = 500;
-        obj2.duration = 500;
-        Easing2 = clientId(codeChallenge[16]).Easing;
-        obj2.easing = Easing2.inOut(clientId(codeChallenge[16]).Easing.quad);
-        num6 = 5;
-        num7 = -1;
+        obj6 = f106130(codeChallenge[16]);
+        obj7 = f106130(codeChallenge[17]);
+        obj2 = { duration: 500, easing: null };
+        Easing2 = f106130(codeChallenge[16]).Easing;
+        obj2[1] = Easing2.inOut(f106130(codeChallenge[16]).Easing.quad);
+        num2 = 5;
         flag = true;
-        obj.translateY = obj3.withSequence(withTimingResult, obj6.withRepeat(obj7.withTiming(5, obj2), -1, true));
+        num3 = -1;
+        obj[0] = obj3.withSequence(withTimingResult, obj6.withRepeat(obj7.withTiming(5, obj2), -1, true));
         items = [];
         items[0] = obj;
-        obj.transform = items;
+        obj[0] = items;
       }
       return obj;
     }
   }
-  obj = { shouldReduceMotion: stateFromStores2, withSequence: clientId(codeChallenge[16]).withSequence, withTiming: clientId(codeChallenge[17]).withTiming, Easing: clientId(codeChallenge[16]).Easing, withRepeat: clientId(codeChallenge[16]).withRepeat };
-  X.__closure = obj;
-  X.__workletHash = 1476082137097;
-  X.__initData = closure_21;
-  let animatedStyle = obj4.useAnimatedStyle(X);
+  obj = { shouldReduceMotion: stateFromStores2, withSequence: tmp20(tmp17[16]).withSequence, withTiming: tmp20(tmp17[17]).withTiming, Easing: tmp20(tmp17[16]).Easing, withRepeat: tmp20(tmp17[16]).withRepeat };
+  V.__closure = obj;
+  V.__workletHash = 1476082137097;
+  V.__initData = closure_21;
+  const animatedStyle = _require(codeChallenge[16]).useAnimatedStyle(V);
   let length;
-  if (null != scopes) {
+  if (scopes != null) {
     length = scopes.length;
   }
   const items5 = [length, redirectUri, integrationType];
-  memo1 = nonce.useMemo(() => {
+  memo1 = obj.useMemo(() => {
     let tmp = null == integrationType;
     if (tmp) {
-      let length;
-      if (null != scopes) {
-        length = scopes.length;
+      let num;
+      if (scopes != null) {
+        num = scopes.length;
       }
-      let num2 = 0;
-      if (null != length) {
-        num2 = length;
+      if (num == null) {
+        num = 0;
       }
-      tmp = 0 === num2;
+      tmp = 0 === num;
     }
     if (tmp) {
       tmp = null == redirectUri;
     }
     return tmp;
   }, items5);
-  const tmp38 = text1(nonce.useState(null), 2);
-  first8 = tmp38[0];
-  closure_43 = tmp38[1];
+  const hasItem2Result5 = hasItem2(obj.useState(null), 2);
+  first8 = hasItem2Result5[0];
+  closure_43 = hasItem2Result5[1];
   const items6 = [clientId, memo1];
-  const effect = nonce.useEffect(() => {
+  const effect = obj.useEffect(() => {
     if (memo1) {
-      const application = responseType(codeChallenge[18]).fetchApplication(clientId);
-      application.then((arg0) => outer1_43(integrationType.createFromServer(arg0)));
+      const application = responseType(codeChallenge[18]).fetchApplication(closure_0);
+      application.then((arg0) => callback(outer1_10.createFromServer(arg0)));
       const obj = responseType(codeChallenge[18]);
     }
   }, items6);
   let prop;
-  if (null != first8) {
+  if (first8 != null) {
     prop = first8.integrationTypesConfig;
   }
   const items7 = [prop, first6];
-  memo2 = nonce.useMemo(() => {
-    let tmp = null;
+  memo2 = obj.useMemo(() => {
+    let tmp2 = null;
     if (null != first6) {
       let oauth2InstallParams;
-      if (null != first8) {
+      if (first8 != null) {
         const integrationTypesConfig = first8.integrationTypesConfig;
-        if (null != integrationTypesConfig) {
-          if (null != integrationTypesConfig[first6]) {
-            oauth2InstallParams = tmp6.oauth2InstallParams;
+        if (integrationTypesConfig != null) {
+          if (integrationTypesConfig[tmp] != null) {
+            oauth2InstallParams = tmp4.oauth2InstallParams;
           }
         }
       }
-      tmp = oauth2InstallParams;
+      tmp2 = oauth2InstallParams;
     }
-    return tmp;
+    return tmp2;
   }, items7);
   let scopes1;
-  if (null != memo2) {
+  if (memo2 != null) {
     scopes1 = memo2.scopes;
   }
   const items8 = [scopes1, scopes, memo1];
-  const memo3 = nonce.useMemo(() => {
+  const memo3 = obj.useMemo(() => {
     if (memo1) {
       let scopes;
-      if (null != memo2) {
+      if (memo2 != null) {
         scopes = memo2.scopes;
       }
       let items = scopes;
     } else {
       items = scopes;
     }
-    let obj = clientId(codeChallenge[19]);
-    if (null == items) {
+    let obj = callback(codeChallenge[19]);
+    if (items == null) {
       items = [];
     }
     const filterScopesResult = obj.filterScopes(items);
-    clientId = filterScopesResult;
-    const OrderedAccountScopes = clientId(codeChallenge[20]).OrderedAccountScopes;
+    callback = filterScopesResult;
+    const OrderedAccountScopes = callback(codeChallenge[20]).OrderedAccountScopes;
     obj = { requestedScopes: filterScopesResult, accountScopes: OrderedAccountScopes.filter((arg0) => closure_0.includes(arg0)) };
     return obj;
   }, items8);
   requestedScopes = memo3.requestedScopes;
   const accountScopes = memo3.accountScopes;
   permissions = undefined;
-  if (null != memo2) {
+  if (memo2 != null) {
     permissions = memo2.permissions;
   }
   const items9 = [permissions, permissions, memo1];
-  memo4 = nonce.useMemo(() => {
+  memo4 = obj.useMemo(() => {
     if (memo1) {
-      let permissions;
-      if (null != memo2) {
-        permissions = memo2.permissions;
+      let num;
+      if (memo2 != null) {
+        num = memo2.permissions;
       }
-      let num2 = 0;
-      if (null != permissions) {
-        num2 = permissions;
+      if (num == null) {
+        num = 0;
       }
-      let NONE = redirectUri(codeChallenge[21]).deserialize(num2);
+      let NONE = redirectUri(codeChallenge[21]).deserialize(num);
       const obj = redirectUri(codeChallenge[21]);
     } else {
       NONE = permissions;
     }
-    if (null == NONE) {
+    if (NONE == null) {
       NONE = redirectUri(codeChallenge[13]).NONE;
     }
     return NONE;
   }, items9);
-  const tmp49 = text1(nonce.useState(false), 2);
-  first9 = tmp49[0];
-  closure_48 = tmp49[1];
+  const hasItem2Result6 = hasItem2(obj.useState(false), 2);
+  first9 = hasItem2Result6[0];
+  closure_48 = hasItem2Result6[1];
   const items10 = [clientId];
-  const effect1 = nonce.useEffect(() => {
+  const effect1 = obj.useEffect(() => {
     const obj = responseType(codeChallenge[22]);
-    responseType(codeChallenge[22]).checkIfOAuthRequest(clientId).then(closure_48);
+    responseType(codeChallenge[22]).checkIfOAuthRequest(closure_0).then(closure_48);
   }, items10);
-  const first10 = text1(nonce.useState(null), 2)[0];
-  let tmp55 = state;
+  const tmp20Result2 = _require(codeChallenge[16]);
+  const first10 = hasItem2(obj.useState(null), 2)[0];
+  let tmp51 = state;
   if (first9) {
-    let obj6 = clientId(codeChallenge[23]);
-    const text = `${obj7.getAPIBaseURL(false)}/v6${flag5.OAUTH2_AUTHORIZE_SAMSUNG_CALLBACK}`;
+    tmp20(tmp17[23]);
+    const text = `${obj8.getAPIBaseURL(false)}/v6${flag5.OAUTH2_AUTHORIZE_SAMSUNG_CALLBACK}`;
     redirectUri = text;
-    if (tmp60) {
-      obj7 = clientId(codeChallenge[24]);
-      tmp54(obj7.v4());
+    if (tmp54) {
+      tmp50(tmp20(tmp17[24]).v4());
+      const tmp20Result4 = tmp20(tmp17[24]);
     }
-    let tmp64 = state;
+    let tmp56 = state;
     if (null != first10) {
       text1 = state;
-      if (null == state) {
-        text1 = `SA${tmp53}`;
+      if (state == null) {
+        text1 = `SA${tmp49}`;
       }
-      tmp64 = text1;
+      tmp56 = text1;
     }
-    tmp55 = tmp64;
+    tmp51 = tmp56;
     redirectUri = text;
-    tmp60 = null == state && null == first10;
+    tmp54 = null == state && null == first10;
   }
-  closure_49 = nonce.useRef(false);
+  closure_49 = obj.useRef(false);
   let items11 = disclosures;
-  if (null == disclosures) {
+  if (disclosures == null) {
     items11 = [];
   }
-  const tmp67 = text1(nonce.useState(items11), 2);
-  first11 = tmp67[0];
-  c51 = tmp69;
-  const tmp70 = text1(nonce.useState(null != disclosures), 2);
-  first12 = tmp70[0];
-  c53 = tmp72;
-  const items12 = [clientId, disclosures, tmp67[1], tmp70[1]];
-  const effect2 = nonce.useEffect(() => {
+  const hasItem2Result8 = hasItem2(obj.useState(items11), 2);
+  first11 = hasItem2Result8[0];
+  c51 = tmp60;
+  const hasItem2Result9 = hasItem2(obj.useState(null != disclosures), 2);
+  first12 = hasItem2Result9[0];
+  c53 = tmp63;
+  const items12 = [clientId, disclosures, hasItem2Result8[1], hasItem2Result9[1]];
+  const effect2 = obj.useEffect(() => {
     function _doGetDisclosures() {
-      // CreateGeneratorClosureLongIndex (0x67)
-      const obj = codeChallengeMethod(tmp);
-      return obj(...arguments);
+      const self = this;
+      const tmp = codeChallengeMethod(function*() {
+        if (c5 === 2) {
+          c5 = 3;
+          HermesBuiltin.throwTypeError();
+        } else if (tmp7 === 3) {
+          if (arg0 === 1) {
+            throw arg1;
+          } else if (arg0 === 2) {
+            let obj = { value: null, done: true };
+            obj[0] = arg1;
+            return obj;
+          } else {
+            return { value: "HermesInternal", done: null };
+          }
+        } else {
+          try {
+            c5 = 2;
+            if (0 === c4) {
+              if (arg0 === 1) {
+                c5 = 3;
+                throw arg1;
+              } else if (arg0 === 2) {
+                c5 = 3;
+                obj = { value: null, done: true };
+                obj[0] = arg1;
+                return obj;
+              } else {
+                let disclosures = tmp4;
+                let lib = tmp8;
+                lib = undefined;
+                disclosures = undefined;
+                let allAcked;
+                let body;
+                outer1_49.current = true;
+                body = 2;
+                let obj1 = lib(outer2_3[25]);
+                c4 = 3;
+                c5 = 1;
+                obj1 = { value: null, done: false };
+                obj1[0] = obj1.getDisclosures(outer1_0);
+                return obj1;
+              }
+            } else if (1 === tmp8) {
+              body = 0;
+              outer1_49.current = false;
+              throw allAcked;
+            } else if (2 === tmp8) {
+              body = 1;
+              body = allAcked.body;
+              if (null != body.message) {
+                let message = body.message;
+              } else {
+                const _Object = Object;
+                const _Object2 = Object;
+                const _HermesInternal = HermesInternal;
+                message = "" + Object.keys(body)[0] + ": " + Object.values(body)[0];
+              }
+              const error = new Error(message);
+              outer1_23(error);
+              const tmp25 = outer1_23;
+            } else if (arg0 === 1) {
+              c5 = 3;
+              throw arg1;
+            } else {
+              if (arg0 !== 2) {
+                lib = arg1;
+                disclosures = lib.disclosures;
+                allAcked = lib.allAcked;
+                outer1_53(!allAcked);
+                outer1_51(disclosures);
+                body = 1;
+                body = 0;
+                outer1_49.current = false;
+                c5 = 3;
+              }
+              body = 0;
+              outer1_49.current = false;
+              c5 = 3;
+              obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            }
+          } catch (tmp48) {
+            allAcked = tmp48;
+            if (tmp5 === body) {
+              c5 = tmp3;
+              throw tmp48;
+            } else if (tmp2 === tmp50) {
+              c4 = tmp2;
+            } else {
+              c4 = tmp;
+            }
+          }
+        }
+      });
+      const _doGetDisclosures = tmp;
+      const apply = tmp.apply;
+      if (typeof apply === "unknown") {
+        let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+      } else {
+        applyArgumentsResult = apply(self, arguments);
+      }
+      return applyArgumentsResult;
     }
     if (!ref.current) {
       if (null == disclosures) {
         (function doGetDisclosures() {
-          return _doGetDisclosures(...arguments);
+          const self = this;
+          const apply = _doGetDisclosures.apply;
+          if (typeof apply === "unknown") {
+            let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+          } else {
+            applyArgumentsResult = apply(self, arguments);
+          }
+          return applyArgumentsResult;
         })();
       }
     }
   }, items12);
   let prop1;
-  if (null != first) {
+  if (first != null) {
     prop1 = first.application.content_classification;
   }
-  if (null == prop1) {
+  if (prop1 == null) {
     let prop2;
-    if (null != first8) {
+    if (first8 != null) {
       prop2 = first8.contentClassification;
     }
     prop1 = prop2;
   }
-  let obj8 = clientId(codeChallenge[26]);
-  let result = obj8.isContentClassificationRestricted(prop1, nsfwAllowed);
-  const items13 = [first6, callbackWithoutPost, clientId, requestedScopes, responseType, redirectUri, codeChallenge, codeChallengeMethod, tmp55, nonce, memo4, first5, first3, first4, first11, dismissOAuthModal, callback, flag5, , , ];
+  const hasItem2Result7 = hasItem2(obj.useState(null), 2);
+  let result = _require(codeChallenge[26]).isContentClassificationRestricted(prop1, nsfwAllowed);
+  _require = undefined;
+  _require = codeChallengeMethod((arg0) => {
+    let closure_0 = arg0;
+    let c5 = 0;
+    let c6 = 0;
+    let c4 = 0;
+    const iter = (function*(arg0) {
+      let c0;
+      let c1;
+      let c2;
+      if (c6 === 2) {
+        c6 = 3;
+        let throwTypeErrorResult = HermesBuiltin.throwTypeError();
+      } else {
+        throwTypeErrorResult = arg1;
+        throwTypeErrorResult = arg0;
+        throwTypeErrorResult = tmp6;
+        throwTypeErrorResult = null;
+        throwTypeErrorResult = globalThis;
+        if (tmp7 === 3) {
+          if (arg0 === 1) {
+            throw arg1;
+          } else if (arg0 === 2) {
+            let obj = { value: null, done: true };
+            obj[0] = arg1;
+            return obj;
+          } else {
+            return { value: "HermesInternal", done: null };
+          }
+        } else {
+          try {
+            c6 = 2;
+            if (0 === c5) {
+              if (arg0 === 1) {
+                c6 = 3;
+                throw arg1;
+              } else if (arg0 === 2) {
+                c6 = 3;
+                obj = { value: null, done: true };
+                obj[0] = arg1;
+                return obj;
+              } else {
+                c2 = tmp4;
+                c1 = tmp8;
+                c0 = undefined;
+                c1 = undefined;
+                c2 = undefined;
+                throwTypeErrorResult = c0;
+                ({ isAuthorized: c0, overrideSuccessCallback: c1, canceled: c2 } = c0);
+                let body;
+                let body2;
+                c5 = 1;
+                c6 = 1;
+                return { value: "ct", done: null };
+              }
+            } else {
+              if (1 === tmp8) {
+                if (arg0 === 1) {
+                  c6 = 3;
+                  throw arg1;
+                } else if (arg0 === 2) {
+                  c6 = 3;
+                  const obj1 = { value: null, done: true };
+                  obj1[0] = arg1;
+                  return obj1;
+                } else {
+                  throwTypeErrorResult = c2;
+                  throwTypeErrorResult = outer1_12;
+                  if (null != outer1_12) {
+                    throwTypeErrorResult = c1;
+                    throwTypeErrorResult = c2;
+                    throwTypeErrorResult = outer1_24;
+                    throwTypeErrorResult = outer1_24(true);
+                    throwTypeErrorResult = outer1_12;
+                    throwTypeErrorResult = callback;
+                    throwTypeErrorResult = outer1_12(callback);
+                    if (outer1_13 != null) {
+                      throwTypeErrorResult = outer1_13();
+                    }
+                    c6 = 3;
+                    const obj2 = { value: null, done: true };
+                    obj2[0] = undefined;
+                    return obj2;
+                  } else {
+                    throwTypeErrorResult = c2;
+                    throwTypeErrorResult = outer1_35;
+                    if (null != outer1_35) {
+                      body2 = 2;
+                      outer1_24(true);
+                      let obj7 = callback(codeChallenge[27]);
+                      let obj3 = { authorize: null, clientId: null, scopes: null, responseType: null, redirectUri: null, codeChallenge: null, codeChallengeMethod: null, state: null, nonce: null, permissions: null, guildId: null, channelId: null, integrationType: null, connectedAccountProvider: null };
+                      obj3[0] = c0;
+                      obj3[1] = callback;
+                      obj3[2] = outer1_45;
+                      obj3[3] = outer1_1;
+                      obj3[4] = outer1_2;
+                      obj3[5] = outer1_3;
+                      obj3[6] = body2;
+                      obj3[7] = c5;
+                      throwTypeErrorResult = c6;
+                      obj3[8] = c6;
+                      throwTypeErrorResult = redirectUri;
+                      throwTypeErrorResult = codeChallenge;
+                      let obj9 = redirectUri(codeChallenge[21]);
+                      throwTypeErrorResult = outer1_46;
+                      throwTypeErrorResult = outer1_30;
+                      obj3[9] = obj9.remove(outer1_46, outer1_30);
+                      throwTypeErrorResult = outer1_35;
+                      throwTypeErrorResult = callback;
+                      throwTypeErrorResult = codeChallenge;
+                      throwTypeErrorResult = undefined;
+                      if (outer1_35 === callback(codeChallenge[28]).ApplicationIntegrationType.GUILD_INSTALL) {
+                        throwTypeErrorResult = c2;
+                        throwTypeErrorResult = outer1_26;
+                        if (null != outer1_26) {
+                          throwTypeErrorResult = c2;
+                          throwTypeErrorResult = outer1_26;
+                        }
+                      }
+                      throwTypeErrorResult = c2;
+                      obj3[10] = throwTypeErrorResult;
+                      throwTypeErrorResult = outer1_35;
+                      throwTypeErrorResult = callback;
+                      throwTypeErrorResult = codeChallenge;
+                      throwTypeErrorResult = undefined;
+                      if (outer1_35 === callback(codeChallenge[28]).ApplicationIntegrationType.GUILD_INSTALL) {
+                        throwTypeErrorResult = c2;
+                        throwTypeErrorResult = outer1_28;
+                        if (null != outer1_28) {
+                          throwTypeErrorResult = c2;
+                          throwTypeErrorResult = outer1_28;
+                        }
+                      }
+                      throwTypeErrorResult = c2;
+                      obj3[11] = throwTypeErrorResult;
+                      throwTypeErrorResult = outer1_35;
+                      obj3[12] = outer1_35;
+                      throwTypeErrorResult = outer1_15;
+                      obj3[13] = outer1_15;
+                      c5 = 4;
+                      c6 = 1;
+                      let obj4 = { value: null, done: false };
+                      obj4[0] = obj7.authorize(obj3);
+                      return obj4;
+                    } else {
+                      const _Error2 = Error;
+                      const error = new Error("No integration type was selected.");
+                      outer1_23(error);
+                      c6 = 3;
+                    }
+                  }
+                }
+              } else if (2 !== tmp8) {
+                if (3 === tmp8) {
+                  body2 = 1;
+                  body2 = body.body;
+                  let message;
+                  if (body2 != null) {
+                    message = body2.message;
+                  }
+                  if (null != message) {
+                    if ("" !== body2.message) {
+                      const _Error = Error;
+                      const error1 = new Error(body2.message);
+                      outer1_23(error1);
+                      outer1_21(disclosures.AUTHORIZE_SCOPES);
+                    }
+                  }
+                  outer1_23(body2);
+                  outer1_21(disclosures.AUTHORIZE_SCOPES);
+                } else {
+                  if (4 === tmp8) {
+                    if (arg0 === 1) {
+                      c6 = 3;
+                      throw arg1;
+                    } else if (arg0 === 2) {
+                      body2 = 0;
+                      outer1_24(false);
+                      c6 = 3;
+                      const obj5 = { value: null, done: true };
+                      obj5[0] = arg1;
+                      return obj5;
+                    } else {
+                      throwTypeErrorResult = c1;
+                      outer1_3 = arg1;
+                      throwTypeErrorResult = callback;
+                      if (callback) {
+                        obj3 = responseType(codeChallenge[29]);
+                        const response = obj3.fetch();
+                        obj4 = callback(codeChallenge[25]);
+                        c5 = 5;
+                        c6 = 1;
+                        const obj6 = { value: null, done: false };
+                        obj6[0] = obj4.ackDisclosures(callback, outer1_50);
+                        return obj6;
+                      }
+                    }
+                  } else {
+                    if (5 === tmp8) {
+                      if (arg0 === 1) {
+                        c6 = 3;
+                        throw arg1;
+                      } else if (arg0 === 2) {
+                        body2 = 0;
+                        outer1_24(false);
+                        c6 = 3;
+                        obj7 = { value: null, done: true };
+                        obj7[0] = arg1;
+                        return obj7;
+                      }
+                    } else if (arg0 === 1) {
+                      c6 = 3;
+                      throw arg1;
+                    } else if (arg0 === 2) {
+                      body2 = 0;
+                      outer1_24(false);
+                      c6 = 3;
+                      obj = { value: null, done: true };
+                      obj[0] = arg1;
+                      return obj;
+                    } else if (outer1_11 != null) {
+                      throwTypeErrorResult = c1;
+                      throwTypeErrorResult = c2;
+                      const obj8 = {};
+                      throwTypeErrorResult = body;
+                      throwTypeErrorResult = obj8;
+                      throwTypeErrorResult = Object.assign(body);
+                      throwTypeErrorResult = c2;
+                      obj8.canceled = c2;
+                      let application;
+                      if (outer1_18 != null) {
+                        application = outer1_18.application;
+                      }
+                      obj8.application = application;
+                      obj8.guild = outer1_33;
+                      obj8.wasDeepLink = outer1_16;
+                      tmp10(obj8);
+                    }
+                    body2 = 1;
+                  }
+                  if (null != outer1_1) {
+                    outer1_1(outer1_3.location);
+                  } else {
+                    if (outer1_13 != null) {
+                      outer1_13();
+                    }
+                    const promise = new Promise((arg0) => setTimeout(arg0, 100));
+                    c5 = 6;
+                    c6 = 1;
+                    obj9 = { value: null, done: false };
+                    obj9[0] = promise;
+                    return obj9;
+                  }
+                }
+                body2 = 0;
+                outer1_24(false);
+              }
+              body2 = 0;
+              outer1_24(false);
+              throw body;
+            }
+          } catch (throwTypeErrorResult) {
+            body = throwTypeErrorResult;
+            if (tmp5 === body2) {
+              throwTypeErrorResult = tmp3;
+              c6 = tmp3;
+              throw throwTypeErrorResult;
+            } else if (tmp2 === throwTypeErrorResult) {
+              c5 = throwTypeErrorResult;
+            } else {
+              c5 = tmp3;
+            }
+          }
+        }
+      }
+    })();
+    iter.next();
+    return iter;
+  });
+  const items13 = [first6, callbackWithoutPost, clientId, requestedScopes, responseType, redirectUri, codeChallenge, codeChallengeMethod, tmp51, nonce, memo4, first5, first3, first4, first11, dismissOAuthModal, callback, flag5, , , ];
   let application;
-  const tmp52 = text1(nonce.useState(null), 2);
-  if (null != first) {
+  if (first != null) {
     application = first.application;
   }
   items13[18] = application;
   items13[19] = memo;
   items13[20] = connectedAccountProvider;
-  callback = nonce.useCallback((() => {
-    // CreateGeneratorClosureLongIndex (0x67)
-    let closure_0 = codeChallengeMethod(tmp);
-    return function(arg0) {
-      return callback(...arguments);
-    };
-  })(), items13);
+  callback = obj.useCallback(function(arg0) {
+    const self = this;
+    const apply = closure_0.apply;
+    if (typeof apply === "unknown") {
+      let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+    } else {
+      applyArgumentsResult = apply(self, arguments);
+    }
+    return applyArgumentsResult;
+  }, items13);
   const items14 = [callback];
-  callback1 = nonce.useCallback((arg0) => {
+  callback1 = obj.useCallback((arg0) => {
     let closure_0 = arg0;
     return new Promise((arg0) => {
       let closure_0 = arg0;
       return outer1_54({
         isAuthorized: closure_0,
-        overrideSuccessCallback(location) {
-          callback(location);
+        overrideSuccessCallback(arg0) {
+          callback(arg0);
         }
       });
     });
   }, items14);
-  const items15 = [clientId, first9, responseType, callback, callback1, tmp55, dismissOAuthModal, requestedScopes];
-  closure_56 = nonce.useCallback((isAuthorized) => {
-    let closure_0 = isAuthorized;
+  const items15 = [clientId, first9, responseType, callback, callback1, tmp51, dismissOAuthModal, requestedScopes];
+  closure_56 = obj.useCallback((arg0) => {
+    let closure_0 = arg0;
     if (first9) {
       const result = responseType(codeChallenge[22]).showConnectionDisclaimer();
       const obj2 = responseType(codeChallenge[22]);
-      const nextPromise = result.then(() => responseType(codeChallenge[22]).getAccountUrlAndAuthCode());
-      const nextPromise1 = result.then(() => responseType(codeChallenge[22]).getAccountUrlAndAuthCode()).then((arg0) => {
+      const nextPromise = result.then(() => callback2(8951).getAccountUrlAndAuthCode());
+      const nextPromise1 = result.then(() => callback2(8951).getAccountUrlAndAuthCode()).then((arg0) => {
         let tmp;
         let tmp2;
         [tmp, tmp2] = arg0;
-        const items = [tmp2, clientId(codeChallenge[27]).startSamsungAuthorization(closure_0, outer1_45, outer1_1, tmp, outer1_5)];
+        const items = [tmp2, callback(outer1_3[27]).startSamsungAuthorization(callback, closure_45, closure_1, tmp, OAuth2Prompts)];
         return Promise.all(items);
       });
-      const nextPromise2 = result.then(() => responseType(codeChallenge[22]).getAccountUrlAndAuthCode()).then((arg0) => {
+      const nextPromise2 = result.then(() => callback2(8951).getAccountUrlAndAuthCode()).then((arg0) => {
         let tmp;
         let tmp2;
         [tmp, tmp2] = arg0;
-        const items = [tmp2, clientId(codeChallenge[27]).startSamsungAuthorization(closure_0, outer1_45, outer1_1, tmp, outer1_5)];
+        const items = [tmp2, callback(outer1_3[27]).startSamsungAuthorization(callback, closure_45, closure_1, tmp, OAuth2Prompts)];
         return Promise.all(items);
       }).then((arg0) => {
         let tmp;
@@ -480,28 +854,11 @@ export default function useOAuth2AuthorizeForm(clientId) {
         const items = [tmp, outer1_55(closure_0)];
         return Promise.all(items);
       });
-      const nextPromise3 = result.then(() => responseType(codeChallenge[22]).getAccountUrlAndAuthCode()).then((arg0) => {
+      const nextPromise3 = result.then(() => callback2(8951).getAccountUrlAndAuthCode()).then((arg0) => {
         let tmp;
         let tmp2;
         [tmp, tmp2] = arg0;
-        const items = [tmp2, clientId(codeChallenge[27]).startSamsungAuthorization(closure_0, outer1_45, outer1_1, tmp, outer1_5)];
-        return Promise.all(items);
-      }).then((arg0) => {
-        let tmp;
-        [tmp, ] = arg0;
-        const items = [tmp, outer1_55(closure_0)];
-        return Promise.all(items);
-      }).then((arg0) => {
-        let tmp;
-        let tmp2;
-        [tmp, tmp2] = arg0;
-        return responseType(codeChallenge[22]).finishSamsungAuthorization(tmp, tmp2, outer1_5);
-      });
-      result.then(() => responseType(codeChallenge[22]).getAccountUrlAndAuthCode()).then((arg0) => {
-        let tmp;
-        let tmp2;
-        [tmp, tmp2] = arg0;
-        const items = [tmp2, clientId(codeChallenge[27]).startSamsungAuthorization(closure_0, outer1_45, outer1_1, tmp, outer1_5)];
+        const items = [tmp2, callback(outer1_3[27]).startSamsungAuthorization(callback, closure_45, closure_1, tmp, OAuth2Prompts)];
         return Promise.all(items);
       }).then((arg0) => {
         let tmp;
@@ -512,21 +869,38 @@ export default function useOAuth2AuthorizeForm(clientId) {
         let tmp;
         let tmp2;
         [tmp, tmp2] = arg0;
-        return responseType(codeChallenge[22]).finishSamsungAuthorization(tmp, tmp2, outer1_5);
+        return outer1_1(outer1_3[22]).finishSamsungAuthorization(tmp, tmp2, OAuth2Prompts);
+      });
+      result.then(() => callback2(8951).getAccountUrlAndAuthCode()).then((arg0) => {
+        let tmp;
+        let tmp2;
+        [tmp, tmp2] = arg0;
+        const items = [tmp2, callback(outer1_3[27]).startSamsungAuthorization(callback, closure_45, closure_1, tmp, OAuth2Prompts)];
+        return Promise.all(items);
+      }).then((arg0) => {
+        let tmp;
+        [tmp, ] = arg0;
+        const items = [tmp, outer1_55(closure_0)];
+        return Promise.all(items);
+      }).then((arg0) => {
+        let tmp;
+        let tmp2;
+        [tmp, tmp2] = arg0;
+        return outer1_1(outer1_3[22]).finishSamsungAuthorization(tmp, tmp2, OAuth2Prompts);
       }).then(() => {
         let tmp;
-        if (null != outer1_13) {
-          tmp = outer1_13();
+        if (callback3 != null) {
+          tmp = callback3();
         }
         return tmp;
       }).catch((arg0) => {
-        responseType(codeChallenge[30]).captureException(arg0);
+        callback2(1208).captureException(arg0);
       });
-      const nextPromise4 = result.then(() => responseType(codeChallenge[22]).getAccountUrlAndAuthCode()).then((arg0) => {
+      const nextPromise4 = result.then(() => callback2(8951).getAccountUrlAndAuthCode()).then((arg0) => {
         let tmp;
         let tmp2;
         [tmp, tmp2] = arg0;
-        const items = [tmp2, clientId(codeChallenge[27]).startSamsungAuthorization(closure_0, outer1_45, outer1_1, tmp, outer1_5)];
+        const items = [tmp2, callback(outer1_3[27]).startSamsungAuthorization(callback, closure_45, closure_1, tmp, OAuth2Prompts)];
         return Promise.all(items);
       }).then((arg0) => {
         let tmp;
@@ -537,29 +911,158 @@ export default function useOAuth2AuthorizeForm(clientId) {
         let tmp;
         let tmp2;
         [tmp, tmp2] = arg0;
-        return responseType(codeChallenge[22]).finishSamsungAuthorization(tmp, tmp2, outer1_5);
+        return outer1_1(outer1_3[22]).finishSamsungAuthorization(tmp, tmp2, OAuth2Prompts);
       }).then(() => {
         let tmp;
-        if (null != outer1_13) {
-          tmp = outer1_13();
+        if (callback3 != null) {
+          tmp = callback3();
         }
         return tmp;
       });
     } else {
-      const obj = { isAuthorized };
+      const obj = { isAuthorized: null };
+      obj[0] = arg0;
       callback(obj);
     }
   }, items15);
-  ref = nonce.useRef(false);
-  // CreateGeneratorClosureLongIndex (0x67)
-  const items16 = [clientId, requestedScopes, responseType, redirectUri, codeChallenge, codeChallengeMethod, tmp55, first6, connectedAccountProvider, _prompt, callback, first12, nsfwAllowed];
-  callback2 = nonce.useCallback(codeChallengeMethod(ref), items16);
+  closure_57 = obj.useRef(false);
+  const items16 = [clientId, requestedScopes, responseType, redirectUri, codeChallenge, codeChallengeMethod, tmp51, first6, connectedAccountProvider, _prompt, callback, first12, nsfwAllowed];
+  callback2 = obj.useCallback(codeChallengeMethod(function*() {
+    if (c6 === 2) {
+      c6 = 3;
+      HermesBuiltin.throwTypeError();
+    } else if (tmp7 === 3) {
+      if (arg0 === 1) {
+        throw arg1;
+      } else if (arg0 === 2) {
+        let obj = { value: null, done: true };
+        obj[0] = arg1;
+        return obj;
+      } else {
+        return { value: "HermesInternal", done: null };
+      }
+    } else {
+      try {
+        c6 = 2;
+        if (0 === c5) {
+          if (arg0 === 1) {
+            c6 = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            c6 = 3;
+            obj = { value: null, done: true };
+            obj[0] = arg1;
+            return obj;
+          } else {
+            let closure_2 = tmp4;
+            let application = tmp8;
+            let closure_0;
+            application = undefined;
+            closure_2 = undefined;
+            let c3;
+            if (outer1_57.current) {
+              c6 = 3;
+            } else {
+              outer1_57.current = true;
+              let c4 = 2;
+              let obj3 = outer1_0(outer1_3[27]);
+              const obj1 = { clientId: null, scopes: null, responseType: null, redirectUri: null, codeChallenge: null, codeChallengeMethod: null, state: null, integrationType: null, connectedAccountProvider: null };
+              obj1[0] = outer1_0;
+              obj1[1] = outer1_45;
+              obj1[2] = outer1_1;
+              obj1[3] = outer1_2;
+              obj1[4] = outer1_3;
+              obj1[5] = c4;
+              obj1[6] = c5;
+              closure_0 = outer1_35;
+              if (outer1_35 == null) {
+                closure_0 = undefined;
+              }
+              obj1[7] = closure_0;
+              obj1[8] = outer1_15;
+              c5 = 3;
+              c6 = 1;
+              const obj2 = { value: null, done: false };
+              obj2[0] = obj3.fetchAuthorization(obj1);
+              return obj2;
+            }
+          }
+        } else if (1 !== tmp8) {
+          if (2 === tmp8) {
+            c4 = 1;
+            outer1_3 = c3.body;
+            if (null != outer1_3.message) {
+              let message = c3.message;
+            } else {
+              const _Object = Object;
+              const _Object2 = Object;
+              const _HermesInternal = HermesInternal;
+              message = "" + Object.keys(outer1_3)[0] + ": " + Object.values(outer1_3)[0];
+            }
+            const error = new Error(message);
+            closure_23(error);
+            const tmp30 = closure_23;
+          } else if (arg0 === 1) {
+            c6 = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            c4 = 0;
+            outer1_57.current = false;
+            c6 = 3;
+            obj3 = { value: null, done: true };
+            obj3[0] = arg1;
+            return obj3;
+          } else {
+            closure_0 = arg1;
+            application = outer1_0(outer1_3[31]).convertOAuth2Authorization(closure_0);
+            callback(application);
+            const obj9 = outer1_0(outer1_3[31]);
+            closure_2 = outer1_0(outer1_3[26]).isContentClassificationRestricted(application.application.content_classification, closure_32);
+            let tmp11 = closure_7 !== outer1_0(outer1_3[32]).OAuth2Prompts.NONE;
+            if (!tmp11) {
+              tmp11 = !closure_0.authorized;
+            }
+            if (!tmp11) {
+              tmp11 = closure_52;
+            }
+            if (!tmp11) {
+              tmp11 = closure_2;
+            }
+            if (!tmp11) {
+              outer1_54({ isAuthorized: true });
+            }
+            obj = outer1_0(outer1_3[33]);
+            const obj4 = { application_id: null };
+            obj4[0] = closure_0.application.id;
+            obj.trackWithMetadata(outer1_15.OAUTH2_AUTHORIZE_VIEWED, obj4);
+            c4 = 1;
+            c4 = 0;
+            outer1_57.current = false;
+            const obj10 = outer1_0(outer1_3[26]);
+          }
+        }
+        c4 = 0;
+        closure_57.current = false;
+        throw c3;
+      } catch (tmp62) {
+        c3 = tmp62;
+        if (tmp5 === c4) {
+          c6 = tmp3;
+          throw tmp62;
+        } else if (tmp2 === tmp64) {
+          c5 = tmp2;
+        } else {
+          c5 = tmp;
+        }
+      }
+    }
+  }), items16);
   const items17 = [first8, memo1];
-  memo5 = nonce.useMemo(() => {
+  memo5 = obj.useMemo(() => {
     if (null != first8) {
       if (memo1) {
-        let prop = first8.integrationTypesConfig;
-        if (null == prop) {
+        let prop = tmp.integrationTypesConfig;
+        if (prop == null) {
           prop = {};
         }
         const entries = Object.entries(prop);
@@ -577,18 +1080,23 @@ export default function useOAuth2AuthorizeForm(clientId) {
       return [];
     }
   }, items17);
-  closure_60 = nonce.useRef(null);
+  closure_60 = obj.useRef(null);
   const items18 = [clientId, first6, memo4, requestedScopes, first1];
-  const effect3 = nonce.useEffect(() => {
+  const effect3 = obj.useEffect(() => {
     if (first1 !== ref2.current) {
-      ref2.current = first1;
-      let obj = clientId(codeChallenge[33]);
-      obj = { step: first1, application_id: clientId, integration_type: first6, scopes: requestedScopes, permissions: memo4.toString() };
+      ref2.current = tmp;
+      let obj = callback(codeChallenge[33]);
+      obj = { step: null, application_id: null, integration_type: null, scopes: null, permissions: null };
+      obj[0] = tmp;
+      obj[1] = callback;
+      obj[2] = first6;
+      obj[3] = requestedScopes;
+      obj[4] = memo4.toString();
       obj.trackWithMetadata(connectedAccountProvider.OAUTH2_AUTHORIZE_STEP_VIEWED, obj);
     }
   }, items18);
   const items19 = [memo5, first8, memo1, integrationType, first1, connectedAccountProvider, null == connectedAccountProvider || null != stateFromStores1];
-  const effect4 = nonce.useEffect(() => {
+  const effect4 = obj.useEffect(() => {
     let tmp = null != first1;
     if (!tmp) {
       let tmp2 = memo1;
@@ -600,74 +1108,79 @@ export default function useOAuth2AuthorizeForm(clientId) {
     if (!tmp) {
       if (null != connectedAccountProvider) {
         if (!c34) {
-          callback2(disclosures.CONNECT_ACCOUNT);
+          callback3(disclosures.CONNECT_ACCOUNT);
         }
       }
       if (memo5.length > 1) {
-        callback2(disclosures.SELECT_INSTALL_TYPE);
-      } else if (1 === memo5.length) {
-        callback5(memo5[0]);
-        callback2(disclosures.AUTHORIZE_SCOPES);
+        callback3(disclosures.SELECT_INSTALL_TYPE);
+      } else if (1 === arr.length) {
+        callback6(arr[0]);
+        callback3(disclosures.AUTHORIZE_SCOPES);
       } else if (null != integrationType) {
-        callback5(integrationType);
-        callback2(disclosures.AUTHORIZE_SCOPES);
+        callback6(tmp9);
+        callback3(disclosures.AUTHORIZE_SCOPES);
       } else {
-        callback5(clientId(codeChallenge[28]).ApplicationIntegrationType.GUILD_INSTALL);
-        callback2(disclosures.AUTHORIZE_SCOPES);
+        callback6(callback(codeChallenge[28]).ApplicationIntegrationType.GUILD_INSTALL);
+        callback3(disclosures.AUTHORIZE_SCOPES);
       }
     }
   }, items19);
   const items20 = [first1, null == connectedAccountProvider || null != stateFromStores1, integrationType];
-  const effect5 = nonce.useEffect(() => {
-    if (tmp) {
-      if (null != integrationType) {
-        let USER_INSTALL = integrationType;
-      } else {
-        USER_INSTALL = clientId(codeChallenge[28]).ApplicationIntegrationType.USER_INSTALL;
+  const effect5 = obj.useEffect(() => {
+    let tmp2 = first1 === disclosures.CONNECT_ACCOUNT;
+    if (tmp2) {
+      tmp2 = c34;
+    }
+    if (tmp2) {
+      let USER_INSTALL = integrationType;
+      if (integrationType == null) {
+        USER_INSTALL = callback(codeChallenge[28]).ApplicationIntegrationType.USER_INSTALL;
       }
       closure_36(USER_INSTALL);
-      callback2(disclosures.AUTHORIZE_SCOPES);
-      const tmp2 = closure_36;
+      callback3(disclosures.AUTHORIZE_SCOPES);
+      const tmp3 = closure_36;
     }
   }, items20);
   const items21 = [callback2, requestedScopes, memo4, first6, first, first2];
-  const effect6 = nonce.useEffect(() => {
+  const effect6 = obj.useEffect(() => {
     if (null != first6) {
       if (null == first) {
         if (null == first2) {
-          if (first6 === clientId(codeChallenge[28]).ApplicationIntegrationType.USER_INSTALL) {
+          if (tmp === callback(codeChallenge[28]).ApplicationIntegrationType.USER_INSTALL) {
             _undefined(null);
             _undefined2(null);
           }
           const found = requestedScopes.filter((arg0) => {
-            const ValidScopes = clientId(codeChallenge[20]).ValidScopes;
+            const ValidScopes = callback(table[20]).ValidScopes;
             return !ValidScopes.includes(arg0);
           });
           if (0 === requestedScopes.length) {
             const _Error3 = Error;
             const error = new Error("No scopes were provided.");
-            callback3(error);
+            callback4(error);
           } else if (found.length > 0) {
             const _Error2 = Error;
             const _HermesInternal = HermesInternal;
             const error1 = new Error("Invalid scope: " + found[0]);
-            callback3(error1);
+            callback4(error1);
           } else {
-            if (obj.containsDisallowedPermission(memo4)) {
+            if (tmp33Result.containsDisallowedPermission(memo4)) {
               const _Error = Error;
               const error2 = new Error("Invalid permission(s) provided.");
-              callback3(error2);
+              callback4(error2);
             } else {
               callback2();
             }
-            obj = clientId(codeChallenge[34]);
+            tmp33Result = tmp33(tmp34[34]);
           }
+          tmp33 = callback;
+          tmp34 = codeChallenge;
         }
       }
     }
   }, items21);
   const items22 = [isScreenReaderEnabled, first7];
-  const callback3 = nonce.useCallback(() => {
+  const callback3 = obj.useCallback(() => {
     let tmp = isScreenReaderEnabled;
     if (isScreenReaderEnabled) {
       tmp = !first7;
@@ -678,506 +1191,471 @@ export default function useOAuth2AuthorizeForm(clientId) {
   }, items22);
   if (first1 === disclosures.AUTHORIZE_SCOPES) {
     if (memo5.length > 1) {
-      const SELECT_INSTALL_TYPE = disclosures.SELECT_INSTALL_TYPE;
+      const SELECT_INSTALL_TYPE = tmp78.SELECT_INSTALL_TYPE;
       AUTHORIZE_SCOPES = SELECT_INSTALL_TYPE;
-      let tmp89 = SELECT_INSTALL_TYPE;
+      let tmp79 = SELECT_INSTALL_TYPE;
     }
-    const items23 = [tmp89, dismissOAuthModal, callback];
-    callback4 = nonce.useCallback(() => {
+    const items23 = [tmp79, dismissOAuthModal, callback];
+    callback4 = obj.useCallback(() => {
       if (null != AUTHORIZE_SCOPES) {
-        callback2(AUTHORIZE_SCOPES);
+        callback3(tmp);
       } else {
         callback({ isAuthorized: false, canceled: true });
-        if (null != dismissOAuthModal) {
+        if (dismissOAuthModal != null) {
           dismissOAuthModal();
         }
       }
       return true;
     }, items23);
-    responseType(codeChallenge[35])(callback4, flag4);
-    const callback5 = nonce.useCallback((arg0) => {
-      callback5(arg0);
-      callback(null);
-      callback2(disclosures.AUTHORIZE_SCOPES);
+    responseType(tmp17[35])(callback4, flag4);
+    const callback5 = obj.useCallback((arg0) => {
+      callback6(arg0);
+      callback2(null);
+      callback3(disclosures.AUTHORIZE_SCOPES);
     }, []);
     let _Error = Error;
     if (first2 instanceof Error) {
-      obj = {};
-      name = callback;
-      name = responseType;
-      name = codeChallenge;
-      obj1 = { error: first2.message, hideFooter: true };
-      obj.body = callback(responseType(codeChallenge[36]), obj1);
-      obj.goBackOrCancel = callback4;
-      name = clientId;
-      obj2 = { size: "lg" };
-      const intl4 = clientId(codeChallenge[38]).intl;
-      obj2.text = intl4.string(clientId(codeChallenge[38]).t.cpT0Cq);
-      obj2.onPress = function onPress() {
+      obj = { body: null, goBackOrCancel: null, footer: null, obscured: false };
+      hasItem2 = callback;
+      obj1 = { error: null, hideFooter: true };
+      obj1[0] = first2.message;
+      obj[0] = callback(tmp81(tmp17[36]), obj1);
+      obj[1] = callback4;
+      let obj2 = { size: "lg", text: null, onPress: null };
+      const intl = tmp20(tmp17[38]).intl;
+      obj2[1] = intl.string(tmp20(tmp17[38]).t.cpT0Cq);
+      obj2[2] = function onPress() {
         return callback4();
       };
-      obj.footer = callback(clientId(codeChallenge[37]).Button, obj2);
-      obj.obscured = false;
+      obj[2] = callback(tmp20(tmp17[37]).Button, obj2);
       return obj;
     } else {
       let str4 = "";
       if (null != connectedAccountProvider) {
-        name = responseType;
-        name = codeChallenge;
-        let obj9 = responseType(codeChallenge[40]);
-        name = obj9.get(connectedAccountProvider);
-        name = undefined;
-        if (null != name) {
-          name = name.name;
+        const value = tmp81(tmp17[40]).get(connectedAccountProvider);
+        let str5;
+        class Spinner {
+          constructor() {
+            obj = { style: closure_17.loading, children: closure_17(f106130(codeChallenge[39]).ActivityIndicator, {}) };
+            return closure_17(prompt, obj);
+          }
         }
-        str4 = "";
-        if (null != name) {
-          str4 = name;
+        if (str5 == null) {
+          str5 = "";
+        }
+        str4 = str5;
+        const tmp81Result = tmp81(tmp17[40]);
+      }
+      class Spinner {
+        constructor() {
+          obj = { style: closure_17.loading, children: closure_17(f106130(codeChallenge[39]).ActivityIndicator, {}) };
+          return closure_17(prompt, obj);
         }
       }
       if (null === first1) {
-        obj3 = {};
-        name = callback;
-        obj3.body = callback(Spinner, {});
-        obj3.obscured = false;
-        return obj3;
+        hasItem2 = callback;
+        { body: null, obscured: false }[0] = callback(Spinner, {});
+        class Spinner {
+          constructor() {
+            obj = { style: closure_17.loading, children: closure_17(f106130(codeChallenge[39]).ActivityIndicator, {}) };
+            return closure_17(prompt, obj);
+          }
+        }
+        let obj3 = { body: null, obscured: false };
       } else {
-        name = disclosures;
-        if (disclosures.CONNECT_ACCOUNT === first1) {
-          name = callback;
-          name = responseType;
-          name = codeChallenge;
-          obj4 = { clientId, platformType: connectedAccountProvider, platformName: str4 };
-          name = callback(responseType(codeChallenge[41]), obj4);
-          let flag6 = true;
-          let items29 = false;
+        if (tmp78.CONNECT_ACCOUNT === first1) {
+          hasItem2 = callback;
+          let obj4 = { clientId: null, platformType: null, platformName: null };
+          obj4[0] = clientId;
+          class Spinner {
+            constructor() {
+              obj = { style: closure_17.loading, children: closure_17(f106130(codeChallenge[39]).ActivityIndicator, {}) };
+              return closure_17(prompt, obj);
+            }
+          }
+          obj4[2] = str4;
+          let tmp88 = callback(tmp81(tmp17[41]), obj4);
+          let flag9 = true;
+          let flag6 = false;
           let flag7 = false;
           let flag8 = false;
-        } else {
-          name = disclosures;
-          if (disclosures.SELECT_INSTALL_TYPE === first1) {
-            if (null == first8) {
-              const obj5 = {};
-              name = callback;
-              obj5.body = callback(Spinner, {});
-              obj5.obscured = false;
-              return obj5;
-            } else {
-              name = callback;
-              name = responseType;
-              name = codeChallenge;
-              obj6 = { application: first8, onSelect: callback5 };
-              name = callback(responseType(codeChallenge[42]), obj6);
-              flag6 = false;
-              items29 = false;
-              flag7 = false;
-              flag8 = false;
+        } else if (tmp78.SELECT_INSTALL_TYPE === first1) {
+          if (null == first8) {
+            hasItem2 = callback;
+            { body: null, obscured: false }[0] = callback(Spinner, {});
+            class Spinner {
+              constructor() {
+                obj = { style: closure_17.loading, children: closure_17(f106130(codeChallenge[39]).ActivityIndicator, {}) };
+                return closure_17(prompt, obj);
+              }
             }
+            let obj5 = { body: null, obscured: false };
           } else {
-            name = disclosures;
-            if (disclosures.AUTHORIZE_SCOPES === first1) {
-              if (null != first) {
-                if (null != stateFromStores) {
-                  if (null != first6) {
-                    if (null == first2) {
-                      obj7 = {};
-                    } else {
-                      let _Error2 = Error;
-                      obj7 = first2;
-                    }
-                    if (null != guilds) {
-                      let sorted = guilds.sort((name, name2) => {
-                        const formatted = name.name.toLowerCase();
-                        return formatted.localeCompare(name2.name.toLowerCase());
-                      });
-                    }
-                    name = clientId;
-                    name = codeChallenge;
-                    name = first6 === clientId(codeChallenge[28]).ApplicationIntegrationType.GUILD_INSTALL;
-                    if (name) {
-                      name = clientId;
-                      name = codeChallenge;
-                      name = requestedScopes.includes(clientId(codeChallenge[43]).OAuth2Scopes.WEBHOOK_INCOMING);
-                    }
-                    if (!name) {
-                      name = clientId;
-                      name = codeChallenge;
-                      name = first6 === clientId(codeChallenge[28]).ApplicationIntegrationType.GUILD_INSTALL;
-                      if (name) {
-                        name = clientId;
-                        name = codeChallenge;
-                        name = requestedScopes.includes(clientId(codeChallenge[43]).OAuth2Scopes.BOT);
-                        if (!name) {
-                          name = clientId;
-                          name = codeChallenge;
-                          name = requestedScopes.includes(clientId(codeChallenge[43]).OAuth2Scopes.APPLICATIONS_COMMANDS);
-                        }
-                      }
-                    }
-                    name = clientId;
-                    name = codeChallenge;
-                    let obj13 = clientId(codeChallenge[44]);
-                    obj8 = {};
-                    name = null;
-                    name = obj13.getIsSocialLayerParentApplication(first.application);
-                    name = closure_19;
-                    name = first;
-                    if (null != stateFromStores1) {
-                      name = null;
-                      if (tmp25) {
-                        name = callback;
-                        name = clientId;
-                        name = codeChallenge;
-                        obj9 = { platformType: stateFromStores1.type, platformName: str4, connectedAccount: stateFromStores1, applicationName: first.application.name };
-                        name = callback(clientId(codeChallenge[41]).ConnectedAccountCard, obj9);
-                      }
-                    }
-                    const items24 = [name, , , , ];
-                    name = responseType;
-                    name = codeChallenge;
-                    name = callback;
-                    const obj10 = { application: first.application, accountScopes };
-                    items24[1] = callback(responseType(codeChallenge[45]), obj10);
-                    const obj11 = { application: first.application, accountScopes, requestedScopes, integrationType: first6, errors: obj7 };
-                    name = responseType(codeChallenge[46]);
-                    if (!flag2) {
-                      flag2 = name;
-                    }
-                    obj11.isTrustedName = flag2;
-                    items24[2] = name(name, obj11);
-                    name = null;
-                    if (name) {
-                      const obj12 = {};
-                      name = clientId;
-                      name = codeChallenge;
-                      name = closure_19;
-                      name = first;
-                      name = callback;
-                      const items25 = [callback(clientId(codeChallenge[47]).AuthorizeFormSeparator, {}), ];
-                      name = responseType;
-                      obj13 = {};
-                      name = responseType(codeChallenge[48]);
-                      let items26 = obj7[clientId(undefined, codeChallenge[43]).OAuth2Scopes.BOT];
-                      if (null == items26) {
-                        name = clientId;
-                        name = codeChallenge;
-                        items26 = obj7[clientId(undefined, codeChallenge[43]).OAuth2Scopes.APPLICATIONS_COMMANDS];
-                      }
-                      if (null == items26) {
-                        items26 = [];
-                      }
-                      obj13.error = items26[0];
-                      obj13.selectedGuildId = first3;
-                      obj13.onGuildChange = tmp13;
-                      if (null == sorted) {
-                        sorted = [];
-                      }
-                      obj13.guilds = sorted;
-                      name = "" !== first3;
-                      if (name) {
-                        name = true === flag;
-                      }
-                      obj13.disabled = name;
-                      items25[1] = name(name, obj13);
-                      obj12.children = items25;
-                      name = name(name, obj12);
-                    }
-                    items24[3] = name;
-                    name = null;
-                    if (name) {
-                      const obj14 = {};
-                      name = clientId;
-                      name = codeChallenge;
-                      name = closure_19;
-                      name = first;
-                      name = callback;
-                      const items27 = [callback(clientId(codeChallenge[47]).AuthorizeFormSeparator, {}), ];
-                      name = responseType;
-                      const obj15 = {};
-                      name = responseType(codeChallenge[49]);
-                      let items28 = obj7[clientId(undefined, codeChallenge[43]).OAuth2Scopes.WEBHOOK_INCOMING];
-                      if (null == items28) {
-                        items28 = [];
-                      }
-                      obj15.error = items28[0];
-                      obj15.selectedChannelId = first4;
-                      obj15.selectedGuildId = first3;
-                      obj15.onChannelChange = tmp18;
-                      items27[1] = name(name, obj15);
-                      obj14.children = items27;
-                      name = name(name, obj14);
-                    }
-                    items24[4] = name;
-                    obj8.children = items24;
-                    name = clientId;
-                    name = codeChallenge;
-                    name = name(name, obj8);
-                    name = requestedScopes.includes(clientId(codeChallenge[43]).OAuth2Scopes.BOT);
-                    if (name) {
-                      name = redirectUri;
-                      name = codeChallenge;
-                      let obj22 = redirectUri(codeChallenge[21]);
-                      name = !obj22.equals(memo4, redirectUri(codeChallenge[13]).NONE);
-                    }
-                    name = undefined;
-                    if (name) {
-                      name = disclosures;
-                      AUTHORIZE_BOT_PERMISSIONS = disclosures.AUTHORIZE_BOT_PERMISSIONS;
-                      name = AUTHORIZE_BOT_PERMISSIONS;
-                    }
-                    if (name) {
-                      name = null == memo;
-                    }
-                    if (!name) {
-                      if (name) {
-                        name = null == first4;
-                      }
-                    }
-                    if (!name) {
-                      name = !first7;
-                    }
-                    flag6 = true;
-                    items29 = name;
-                    flag7 = true;
-                    flag8 = true;
+            hasItem2 = callback;
+            let obj6 = { application: null, onSelect: null };
+            obj6[0] = first8;
+            class Spinner {
+              constructor() {
+                obj = { style: closure_17.loading, children: closure_17(f106130(codeChallenge[39]).ActivityIndicator, {}) };
+                return closure_17(prompt, obj);
+              }
+            }
+            tmp88 = callback(tmp81(tmp17[42]), obj6);
+            flag6 = false;
+            flag7 = false;
+            flag8 = false;
+            flag9 = false;
+          }
+        } else if (tmp78.AUTHORIZE_SCOPES === first1) {
+          if (null != first) {
+            if (null != stateFromStores) {
+              if (null != first6) {
+                if (null == first2) {
+                  let obj7 = {};
+                } else {
+                  let _Error2 = Error;
+                  obj7 = first2;
+                }
+                if (guilds != null) {
+                  let sorted = guilds.sort((name, name2) => {
+                    const formatted = name.name.toLowerCase();
+                    return formatted.localeCompare(name2.name.toLowerCase());
+                  });
+                }
+                class Spinner {
+                  constructor() {
+                    obj = { style: closure_17.loading, children: closure_17(f106130(codeChallenge[39]).ActivityIndicator, {}) };
+                    return closure_17(prompt, obj);
                   }
                 }
+                if (hasItem) {
+                  hasItem = requestedScopes.includes(tmp20(tmp17[43]).OAuth2Scopes.WEBHOOK_INCOMING);
+                }
+                let tmp92 = hasItem;
+                if (!hasItem) {
+                  const tmp93 = first6 === tmp20(tmp17[28]).ApplicationIntegrationType.GUILD_INSTALL;
+                  if (tmp93) {
+                    let hasItem1 = requestedScopes.includes(tmp20(tmp17[43]).OAuth2Scopes.BOT);
+                    if (!hasItem1) {
+                      hasItem1 = requestedScopes.includes(tmp20(tmp17[43]).OAuth2Scopes.APPLICATIONS_COMMANDS);
+                    }
+                    class Spinner {
+                      constructor() {
+                        obj = { style: closure_17.loading, children: closure_17(f106130(codeChallenge[39]).ActivityIndicator, {}) };
+                        return closure_17(prompt, obj);
+                      }
+                    }
+                  }
+                  tmp92 = tmp93;
+                }
+                let tmp98 = null;
+                const isSocialLayerParentApplication = tmp20(tmp17[44]).getIsSocialLayerParentApplication(first.application);
+                if (null != stateFromStores1) {
+                  tmp98 = null;
+                  if (tmp25) {
+                    obj8 = { platformType: null, platformName: null, connectedAccount: null, applicationName: null };
+                    obj8[0] = stateFromStores1.type;
+                    class Spinner {
+                      constructor() {
+                        obj = { style: closure_17.loading, children: closure_17(f106130(codeChallenge[39]).ActivityIndicator, {}) };
+                        return closure_17(prompt, obj);
+                      }
+                    }
+                    obj8[2] = stateFromStores1;
+                    obj8[3] = first.application.name;
+                    tmp98 = callback(tmp20(tmp17[41]).ConnectedAccountCard, obj8);
+                  }
+                }
+                const items24 = [tmp98, , , , ];
+                hasItem2 = callback;
+                let obj9 = { application: null, accountScopes: null };
+                obj9[0] = first.application;
+                obj9[1] = accountScopes;
+                items24[1] = callback(tmp81(tmp17[45]), obj9);
+                let obj10 = { application: null, accountScopes: null, requestedScopes: null, integrationType: null, errors: null, isTrustedName: null };
+                obj10[0] = first.application;
+                obj10[1] = accountScopes;
+                obj10[2] = requestedScopes;
+                obj10[3] = first6;
+                obj10[4] = obj7;
+                hasItem2 = tmp81(tmp17[46]);
+                if (!flag2) {
+                  flag2 = isSocialLayerParentApplication;
+                }
+                obj10[5] = flag2;
+                items24[2] = hasItem2(hasItem2, obj10);
+                hasItem2 = null;
+                if (tmp92) {
+                  const items25 = [hasItem2(tmp20(tmp17[47]).AuthorizeFormSeparator, {}), ];
+                  hasItem2 = tmp81(tmp17[48]);
+                  class Spinner {
+                    constructor() {
+                      obj = { style: closure_17.loading, children: closure_17(f106130(codeChallenge[39]).ActivityIndicator, {}) };
+                      return closure_17(prompt, obj);
+                    }
+                  }
+                  if (items26 == null) {
+                    items26 = obj7[tmp20(undefined, tmp17[43]).OAuth2Scopes.APPLICATIONS_COMMANDS];
+                  }
+                  if (items26 == null) {
+                    items26 = [];
+                  }
+                  const obj11 = { error: null, selectedGuildId: null, onGuildChange: null, guilds: null, disabled: null };
+                  obj11[0] = items26[0];
+                  obj11[1] = first3;
+                  obj11[2] = tmp12;
+                  if (sorted == null) {
+                    sorted = [];
+                  }
+                  obj11[3] = sorted;
+                  hasItem2 = "" !== first3;
+                  if (hasItem2) {
+                    hasItem2 = true === flag;
+                  }
+                  const obj12 = { children: null };
+                  obj11[4] = hasItem2;
+                  items25[1] = hasItem2(hasItem2, obj11);
+                  obj12[0] = items25;
+                  hasItem2 = tmp96(tmp97, obj12);
+                }
+                items24[3] = hasItem2;
+                hasItem2 = null;
+                if (hasItem) {
+                  const items27 = [hasItem2(tmp20(tmp17[47]).AuthorizeFormSeparator, {}), ];
+                  hasItem2 = tmp81(tmp17[49]);
+                  class Spinner {
+                    constructor() {
+                      obj = { style: closure_17.loading, children: closure_17(f106130(codeChallenge[39]).ActivityIndicator, {}) };
+                      return closure_17(prompt, obj);
+                    }
+                  }
+                  if (items28 == null) {
+                    items28 = [];
+                  }
+                  const obj13 = { children: null };
+                  const obj14 = { error: null, selectedChannelId: null, selectedGuildId: null, onChannelChange: null };
+                  obj14[0] = items28[0];
+                  obj14[1] = first4;
+                  obj14[2] = first3;
+                  obj14[3] = tmp15;
+                  items27[1] = hasItem2(hasItem2, obj14);
+                  obj13[0] = items27;
+                  hasItem2 = tmp96(tmp97, obj13);
+                }
+                const obj15 = { children: null };
+                items24[4] = hasItem2;
+                obj15[0] = items24;
+                hasItem2 = tmp96(tmp97, obj15);
+                hasItem2 = requestedScopes.includes(tmp20(tmp17[43]).OAuth2Scopes.BOT);
+                if (hasItem2) {
+                  hasItem2 = !tmp16(tmp17[21]).equals(memo4, tmp16(tmp17[13]).NONE);
+                  const tmp16Result = tmp16(tmp17[21]);
+                }
+                hasItem2 = undefined;
+                if (hasItem2) {
+                  AUTHORIZE_BOT_PERMISSIONS = tmp78.AUTHORIZE_BOT_PERMISSIONS;
+                  hasItem2 = AUTHORIZE_BOT_PERMISSIONS;
+                }
+                if (tmp92) {
+                  tmp92 = null == memo;
+                }
+                if (!tmp92) {
+                  if (hasItem) {
+                    hasItem = null == first4;
+                  }
+                  tmp92 = hasItem;
+                }
+                if (!tmp92) {
+                  tmp92 = !first7;
+                }
+                flag6 = true;
+                flag8 = tmp92;
+                flag7 = true;
+                flag9 = true;
+                tmp88 = hasItem2;
+                const tmp20Result6 = tmp20(tmp17[44]);
               }
-              const obj16 = {};
-              name = callback;
-              obj16.body = callback(Spinner, {});
-              obj16.obscured = false;
-              return obj16;
+            }
+          }
+          hasItem2 = callback;
+          class Spinner {
+            constructor() {
+              obj = { style: closure_17.loading, children: closure_17(f106130(codeChallenge[39]).ActivityIndicator, {}) };
+              return closure_17(prompt, obj);
+            }
+          }
+          return { body: null, obscured: false };
+        } else {
+          flag6 = true;
+          flag7 = true;
+          flag8 = false;
+          class Spinner {
+            constructor() {
+              obj = { style: closure_17.loading, children: closure_17(f106130(codeChallenge[39]).ActivityIndicator, {}) };
+              return closure_17(prompt, obj);
+            }
+          }
+          if (tmp78.AUTHORIZE_BOT_PERMISSIONS === first1) {
+            if (null == first) {
+              { body: null, obscured: false }[0] = callback(Spinner, {});
+              class Spinner {
+                constructor() {
+                  obj = { style: closure_17.loading, children: closure_17(f106130(codeChallenge[39]).ActivityIndicator, {}) };
+                  return closure_17(prompt, obj);
+                }
+              }
+              const obj17 = { body: null, obscured: false };
             } else {
-              name = disclosures;
-              flag6 = false;
-              items29 = false;
+              const obj18 = { application: null, permissions: null, deniedPermissions: null, onPermissionsChange: null, guild: null };
+              obj18[0] = first.application;
+              class Spinner {
+                constructor() {
+                  obj = { style: closure_17.loading, children: closure_17(f106130(codeChallenge[39]).ActivityIndicator, {}) };
+                  return closure_17(prompt, obj);
+                }
+              }
+              obj18[2] = first5;
+              obj18[3] = tmp84;
+              obj18[4] = memo;
+              tmp88 = callback(tmp81(tmp17[50]), obj18);
+              flag6 = true;
               flag7 = true;
-              flag8 = true;
-              if (disclosures.AUTHORIZE_BOT_PERMISSIONS === first1) {
-                if (null == first) {
-                  const obj17 = {};
-                  name = callback;
-                  obj17.body = callback(Spinner, {});
-                  obj17.obscured = false;
-                  return obj17;
-                } else {
-                  name = callback;
-                  name = responseType;
-                  name = codeChallenge;
-                  const obj18 = { application: first.application, permissions: memo4, deniedPermissions: first5, onPermissionsChange: tmp98, guild: memo };
-                  name = callback(responseType(codeChallenge[50]), obj18);
-                  flag6 = true;
-                  items29 = false;
-                  flag7 = true;
-                  flag8 = true;
-                }
-              }
+              flag8 = false;
+              flag9 = true;
             }
           }
         }
-        name = undefined;
+        hasItem2 = undefined;
         if (flag7) {
-          name = disclosures;
-          if (name !== disclosures.AUTHORIZE_BOT_PERMISSIONS) {
+          if (tmp89 !== tmp78.AUTHORIZE_BOT_PERMISSIONS) {
             if (null != first) {
-              name = undefined;
-              if (null != first) {
-                name = first.application.approximate_guild_count;
+              hasItem2 = undefined;
+              if (first != null) {
+                hasItem2 = first.application.approximate_guild_count;
               }
-              if (null == name) {
-                name = undefined;
-                if (null != first) {
+              if (hasItem2 == null) {
+                hasItem2 = undefined;
+                if (first != null) {
                   const bot = first.bot;
-                  if (null != bot) {
-                    name = bot.approximate_guild_count;
+                  if (bot != null) {
+                    hasItem2 = bot.approximate_guild_count;
                   }
                 }
               }
-              name = responseType;
-              name = codeChallenge;
-              name = callback;
-              const obj19 = { application: first.application, scopes: requestedScopes, disclosures: first11 };
-              const redirect_uri = first.redirect_uri;
-              name = null;
-              name = responseType(codeChallenge[51]);
-              if (null != redirect_uri) {
-                name = redirect_uri;
+              class Spinner {
+                constructor() {
+                  obj = { style: closure_17.loading, children: closure_17(f106130(codeChallenge[39]).ActivityIndicator, {}) };
+                  return closure_17(prompt, obj);
+                }
               }
-              obj19.redirectUri = name;
-              name = null;
-              obj19.approximateGuildCount = name;
-              obj19.isEmbeddedFlow = flag3;
-              obj19.connectedAccount = stateFromStores1;
-              name = name(name, obj19);
+              const obj19 = { application: null, scopes: null, disclosures: null, redirectUri: null, approximateGuildCount: null, isEmbeddedFlow: null, connectedAccount: null };
+              obj19[0] = first.application;
+              obj19[1] = requestedScopes;
+              obj19[2] = first11;
+              hasItem2 = first.redirect_uri;
+              hasItem2 = tmp81(tmp17[51]);
+              if (hasItem2 == null) {
+                hasItem2 = null;
+              }
+              obj19[3] = hasItem2;
+              hasItem2 = null;
+              obj19[4] = hasItem2;
+              obj19[5] = flag3;
+              obj19[6] = stateFromStores1;
+              hasItem2 = hasItem2(hasItem2, obj19);
             }
           }
         }
-        if (flag8) {
-          flag8 = null != first;
+        class Spinner {
+          constructor() {
+            obj = { style: closure_17.loading, children: closure_17(f106130(codeChallenge[39]).ActivityIndicator, {}) };
+            return closure_17(prompt, obj);
+          }
         }
-        if (flag8) {
-          flag8 = null != stateFromStores;
+        if (flag6) {
+          flag6 = null != stateFromStores;
         }
-        name = undefined;
-        if (flag8) {
-          name = callback;
-          name = responseType;
-          name = codeChallenge;
-          const obj20 = { user: stateFromStores, application: first.application, accountScopes, bot: first.bot };
-          name = callback(responseType(codeChallenge[52]), obj20);
-        }
-        name = items29;
-        if (items29) {
-          name = !first7;
-        }
-        const obj21 = { header: name, body: name };
-        obj22 = {};
-        name = disclosures;
-        name = null;
-        name = callback;
-        name = first;
-        if (first1 !== disclosures.SELECT_INSTALL_TYPE) {
-          name = disclosures;
-          name = null;
-          if (first1 !== disclosures.CONNECT_ACCOUNT) {
-            const obj23 = { accessibilityElementsHidden: name };
-            let str5 = "auto";
-            name = callback;
-            name = _prompt;
-            if (name) {
-              str5 = "no-hide-descendants";
+        hasItem2 = undefined;
+        if (flag6) {
+          hasItem2 = callback;
+          const obj20 = { user: null, application: null, accountScopes: null, bot: null };
+          obj20[0] = stateFromStores;
+          class Spinner {
+            constructor() {
+              obj = { style: closure_17.loading, children: closure_17(f106130(codeChallenge[39]).ActivityIndicator, {}) };
+              return closure_17(prompt, obj);
             }
-            obj23.importantForAccessibility = str5;
-            name = clientId;
-            name = codeChallenge;
-            name = callback;
-            if (null != name) {
-              const obj24 = { size: "lg" };
-              name = clientId;
-              name = codeChallenge;
-              const intl2 = clientId(codeChallenge[38]).intl;
-              const string = intl2.string;
-              let BwwiSM2 = clientId(codeChallenge[38]).t;
-              if (items29) {
-                if (first7) {
-                  BwwiSM2 = BwwiSM2.BwwiSM;
-                  name = string(BwwiSM2);
-                } else {
-                  name = string(BwwiSM2.N22i9F);
+          }
+          obj20[2] = accountScopes;
+          obj20[3] = first.bot;
+          hasItem2 = callback(tmp81(tmp17[52]), obj20);
+        }
+        hasItem2 = flag8;
+        if (flag8) {
+          hasItem2 = !first7;
+        }
+        const obj21 = { header: null, body: null, footer: null, appDetails: null, backStep: null, sendAuthorize: null, goBackOrCancel: null, allContentSeen: null, setAllContentSeen: null, hasContentBackground: null, obscured: null };
+        obj21[0] = hasItem2;
+        obj21[1] = tmp88;
+        hasItem2 = callback;
+        hasItem2 = null;
+        hasItem2 = first;
+        if (first1 !== tmp78.SELECT_INSTALL_TYPE) {
+          hasItem2 = null;
+          if (first1 !== tmp78.CONNECT_ACCOUNT) {
+            const obj22 = { accessibilityElementsHidden: null, importantForAccessibility: null, children: null };
+            obj22[0] = hasItem2;
+            let str6 = "auto";
+            class Spinner {
+              constructor() {
+                obj = { style: closure_17.loading, children: closure_17(f106130(codeChallenge[39]).ActivityIndicator, {}) };
+                return closure_17(prompt, obj);
+              }
+            }
+            if (hasItem2) {
+              str6 = "no-hide-descendants";
+            }
+            obj22[1] = str6;
+            if (null != tmp89) {
+              const string = tmp20(tmp17[38]).intl.string;
+              const t2 = tmp20(tmp17[38]).t;
+              class Spinner {
+                constructor() {
+                  obj = { style: closure_17.loading, children: closure_17(f106130(codeChallenge[39]).ActivityIndicator, {}) };
+                  return closure_17(prompt, obj);
                 }
-              } else {
-                obj24.text = string(BwwiSM2["3PatSz"]);
-                name = undefined;
-                if (!first7) {
-                  if (items29) {
-                    name = callback;
-                    name = responseType;
-                    name = codeChallenge;
-                    const obj25 = { style: animatedStyle };
-                    const obj26 = {};
-                    name = scopes;
-                    const convert2 = scopes.convert;
-                    name = dismissOAuthModal;
-                    name = responseType(codeChallenge[53]);
-                    obj26.name = convert2.fromCodePoint(dismissOAuthModal);
-                    animatedStyle = callback(name, obj26);
-                    obj25.children = animatedStyle;
-                    name = callback(responseType(codeChallenge[num]).View, obj25);
-                  }
-                }
-                obj24.icon = name;
-                obj24.iconPosition = "end";
-                obj24.onPress = function onPress() {
-                  return callback2(AUTHORIZE_BOT_PERMISSIONS);
-                };
-                if (!items29) {
-                  items29 = result;
-                }
-                obj24.disabled = items29;
-                const obj27 = { name: "enable" };
-                name = clientId;
-                name = codeChallenge;
-                const intl3 = clientId(codeChallenge[38]).intl;
-                num = intl3.string;
-                obj27.label = num(clientId(codeChallenge[38]).t.eIL75W);
-                items29 = [obj27];
-                obj24.accessibilityActions = items29;
-                obj24.onAccessibilityAction = callback3;
-                let obj28 = obj24;
               }
             } else {
-              obj28 = { size: "lg" };
-              name = clientId;
-              name = codeChallenge;
-              const intl5 = clientId(codeChallenge[38]).intl;
-              const string2 = intl5.string;
-              let BwwiSM = clientId(codeChallenge[38]).t;
-              if (items29) {
-                if (first7) {
-                  BwwiSM = BwwiSM.BwwiSM;
-                  name = string2(BwwiSM);
-                } else {
-                  name = string2(BwwiSM.N22i9F);
+              const string2 = tmp20(tmp17[38]).intl.string;
+              const t = tmp20(tmp17[38]).t;
+              class Spinner {
+                constructor() {
+                  obj = { style: closure_17.loading, children: closure_17(f106130(codeChallenge[39]).ActivityIndicator, {}) };
+                  return closure_17(prompt, obj);
                 }
-              } else {
-                obj28.text = string2(BwwiSM["y+/PE9"]);
-                obj28.onPress = function onPress() {
-                  callback6(true);
-                };
-                name = undefined;
-                if (!first7) {
-                  name = callback;
-                  name = responseType;
-                  name = codeChallenge;
-                  const obj29 = { style: animatedStyle };
-                  const obj30 = {};
-                  name = scopes;
-                  const convert = scopes.convert;
-                  name = dismissOAuthModal;
-                  name = responseType(codeChallenge[53]);
-                  obj30.name = convert.fromCodePoint(dismissOAuthModal);
-                  obj29.children = callback(name, obj30);
-                  name = callback(responseType(codeChallenge[num]).View, obj29);
-                }
-                obj28.icon = name;
-                obj28.iconPosition = "end";
-                name = items29;
-                if (!items29) {
-                  name = result;
-                }
-                obj28.disabled = name;
-                obj28.loading = tmp7[0];
-                const obj31 = { name: "enable" };
-                name = clientId;
-                name = codeChallenge;
-                const intl = clientId(codeChallenge[38]).intl;
-                obj31.label = intl.string(clientId(codeChallenge[38]).t.eIL75W);
-                const items30 = [obj31];
-                obj28.accessibilityActions = items30;
-                obj28.onAccessibilityAction = callback3;
               }
             }
-            obj23.children = name(clientId(codeChallenge[37]).Button, obj28);
-            name = name(name, obj23);
+            obj22[2] = hasItem2(tmp20(tmp17[37]).Button, hasItem2);
+            hasItem2 = hasItem2(hasItem2, obj22);
           }
         }
-        obj22.children = name;
-        obj21.footer = name(name, obj22);
-        obj21.appDetails = name;
-        obj21.backStep = tmp89;
-        obj21.sendAuthorize = callback;
-        obj21.goBackOrCancel = callback4;
-        obj21.allContentSeen = first7;
-        obj21.setAllContentSeen = tmp31;
-        obj21.hasContentBackground = flag6;
-        obj21.obscured = result;
+        const obj23 = { children: null };
+        obj23[0] = hasItem2;
+        obj21[2] = hasItem2(hasItem2, obj23);
+        obj21[3] = hasItem2;
+        obj21[4] = tmp79;
+        obj21[5] = callback;
+        obj21[6] = callback4;
+        obj21[7] = first7;
+        obj21[8] = tmp30;
+        obj21[9] = flag9;
+        obj21[10] = result;
         return obj21;
       }
     }
   }
   if (first1 === disclosures.AUTHORIZE_BOT_PERMISSIONS) {
-    AUTHORIZE_SCOPES = disclosures.AUTHORIZE_SCOPES;
-    tmp89 = AUTHORIZE_SCOPES;
+    AUTHORIZE_SCOPES = tmp78.AUTHORIZE_SCOPES;
+    tmp79 = AUTHORIZE_SCOPES;
   }
 };

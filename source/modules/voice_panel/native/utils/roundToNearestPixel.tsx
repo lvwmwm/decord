@@ -1,13 +1,14 @@
-// Module ID: 9891
-// Function ID: 76524
+// Module ID: 9913
+// Function ID: 9914
 // Name: t
-// Dependencies: [27, 2]
+// Dependencies: [17, 2]
 // Exports: default
 
-// Module 9891 (t)
+// Module 9913 (t)
 import { PixelRatio } from "get ActivityIndicator";
 
 const value = PixelRatio.get();
+let c0 = value;
 const fn = function t(arg0) {
   return Math.round(arg0 * closure_0) / closure_0;
 };

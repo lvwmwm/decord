@@ -1,9 +1,9 @@
-// Module ID: 640
-// Function ID: 7341
+// Module ID: 663
+// Function ID: 664
 // Name: ImpressionNames
-// Dependencies: [482, 2]
+// Dependencies: [505, 2]
 
-// Module 640 (ImpressionNames)
+// Module 663 (ImpressionNames)
 import { WebAnalyticsEvents } from "sum";
 
 const result = require("set").fileFinishedImporting("../discord_common/js/packages/analytics-utils/AnalyticsSchema.tsx");

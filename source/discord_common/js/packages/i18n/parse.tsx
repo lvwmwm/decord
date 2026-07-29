@@ -1,151 +1,182 @@
-// Module ID: 16057
-// Function ID: 123896
-// Name: setUpdateRules
-// Dependencies: [57, 6, 7, 16058, 16016, 3864, 16059, 16060, 2]
-// Exports: getMessage
+// Module ID: 16093
+// Function ID: 16094
+// Name: format
+// Dependencies: [32, 16094, 16051, 3888, 16095, 16096, 2]
+// Exports: getMessage, setUpdateRules
 
-// Module 16057 (setUpdateRules)
+// Module 16093 (format)
 import _slicedToArray from "_slicedToArray";
-import link from "link";
-import updateRules from "updateRules";
 import FORMAT_RE from "FORMAT_RE";
 
-let closure_10;
-let closure_11;
-let closure_8;
-let closure_9;
+let c9;
+let closure_6;
+let error;
+let metroImportAll;
 const require = arg1;
-function setUpdateRules(arg0) {
-  let closure_3 = (function parserFor(rules, arg1) {
-    let closure_0 = outer1_1(outer1_2[5]).parserFor(arg1(rules));
-    const obj = outer1_1(outer1_2[5]);
-    const obj2 = outer1_1(outer1_2[5]);
-    let closure_1 = obj2.reactFor(outer1_1(outer1_2[5]).ruleOutput(rules, "react"));
-    return (arr, context, unsafeContext) => {
-      const tmp = !arr.includes("\n\n");
-      let text = arr;
-      if (!tmp) {
-        text = `${arr}
-
-      `;
-      }
-      return callback2(callback(text, { inline: tmp, context, unsafeContext }));
-    };
-  })(require(16059) /* link */.rules, arg0);
-  let closure_4 = (function parserForNonReact(rules) {
-    let closure_0 = outer1_1(outer1_2[5]).parserFor(rules);
-    return (arg0, context, unsafeContext) => callback(arg0 + "\n\n", { inline: false, context, unsafeContext });
-  })(require(16059) /* link */.rules);
+({ FORMAT_RE: closure_6, MARKDOWN_RE: error, UNSAFE_RE: metroImportAll, UNSAFE_RE_ALL: c9 } = FORMAT_RE);
+class FormattedMessage {
+  constructor(arg0, arg1, arg2) {
+    replaced = global;
+    if (!importDefault) {
+      tmp2 = UNSAFE_RE_ALL;
+      str = "";
+      replaced = global.replace(UNSAFE_RE_ALL, "");
+    }
+    obj = Object.create(new.target.prototype);
+    obj.message = replaced;
+    obj.hasMarkdown = importDefault;
+    tmp4 = new require("module_16051")(obj.message, arg1);
+    obj.intlMessage = tmp4;
+    return obj;
+  }
 }
-({ FORMAT_RE: closure_8, MARKDOWN_RE: closure_9, UNSAFE_RE: closure_10, UNSAFE_RE_ALL: closure_11 } = FORMAT_RE);
-let tmp3 = (() => {
-  class FormattedMessage {
-    constructor(arg0, arg1, arg2) {
-      self = this;
-      tmp = outer1_6(this, FormattedMessage);
-      replaced = arg0;
-      if (!arg2) {
-        tmp3 = outer1_11;
-        str = "";
-        replaced = arg0.replace(outer1_11, "");
+const prototype = FormattedMessage.prototype;
+prototype["format"] = function format(arg0) {
+  const self = this;
+  if (this.hasMarkdown) {
+    const tmp2 = callback(self.getContext(arg0), 2);
+    const first = tmp2[0];
+    const intlMessage2 = self.intlMessage;
+    const formatResult = intlMessage2.format(first);
+    if (typeof closure_3 !== "find") {
+      HermesBuiltin.throwTypeError();
+    }
+    const hasItem = formatResult.includes("\n\n");
+    let text = formatResult;
+    if (hasItem) {
+      text = `${obj}
+
+  `;
+    }
+    obj = { inline: null, context: null, unsafeContext: null };
+    obj[0] = !hasItem;
+    obj[1] = first;
+    obj[2] = tmp2[1];
+    return importDefault(require(text, obj));
+  } else {
+    const intlMessage = self.intlMessage;
+    return intlMessage.format(arg0);
+  }
+};
+prototype["astFormat"] = function astFormat(arg0) {
+  const unsafeContext = callback(this.getContext(arg0), 2);
+  const context = unsafeContext[0];
+  const intlMessage = this.intlMessage;
+  if (typeof closure_4 !== "find") {
+    HermesBuiltin.throwTypeError();
+  }
+  return require(intlMessage.format(context) + "\n\n", { inline: false, context, unsafeContext: unsafeContext[1] });
+};
+prototype["plainFormat"] = function plainFormat(arg0) {
+  const intlMessage = this.intlMessage;
+  return intlMessage.format(arg0);
+};
+prototype["getContext"] = function getContext(arg0) {
+  let tmp10;
+  let tmp12;
+  const obj = {};
+  if (regex3.test(this.message)) {
+    let num = 0;
+    const _Object = Object;
+    const entries = Object.entries(arg0);
+    const tmp4 = entries[Symbol.iterator]();
+    while (tmp4 !== undefined) {
+      let tmp8 = callback;
+      let tmp9 = callback(tmp6, 2);
+      [tmp10, tmp12] = tmp9;
+      let message = this.message;
+      let _HermesInternal = HermesInternal;
+      let tmp11 = tmp10;
+      if (message.includes("!!{" + tmp10 + "}!!")) {
+        let tmp13 = num;
+        let sum = num + 1;
+        num = sum;
+        let tmp15 = tmp12;
+        obj[sum] = tmp12;
+        let tmp16 = tmp10;
+        arg0[tmp11] = sum;
       }
-      self.message = replaced;
-      self.hasMarkdown = arg2;
-      tmp4 = outer1_1(outer1_2[4]);
-      tmp4 = new tmp4(self.message, arg1);
-      self.intlMessage = tmp4;
-      return;
+      continue;
     }
   }
-  let obj = {
-    key: "format",
-    value(_2d) {
-      const self = this;
-      if (this.hasMarkdown) {
-        const tmp2 = outer1_5(self.getContext(_2d), 2);
-        const first = tmp2[0];
-        const intlMessage2 = self.intlMessage;
-        return outer1_3(intlMessage2.format(first), first, tmp2[1]);
-      } else {
-        const intlMessage = self.intlMessage;
-        return intlMessage.format(_2d);
-      }
-    }
-  };
-  let items = [obj, , , ];
-  obj = {
-    key: "astFormat",
-    value(_2d) {
-      const tmp = outer1_5(this.getContext(_2d), 2);
-      const first = tmp[0];
-      const intlMessage = this.intlMessage;
-      return outer1_4(intlMessage.format(first), first, tmp[1]);
-    }
-  };
-  items[1] = obj;
-  obj = {
-    key: "plainFormat",
-    value(arg0) {
-      const intlMessage = this.intlMessage;
-      return intlMessage.format(arg0);
-    }
-  };
-  items[2] = obj;
-  items[3] = {
-    key: "getContext",
-    value(arg0) {
-      const obj = {};
-      if (outer1_10.test(this.message)) {
-        const _Object = Object;
-        const entries = Object.entries(arg0);
-        let num4 = 0;
-        let num5 = 0;
-        if (0 < entries.length) {
-          do {
-            let tmp2 = outer1_5;
-            let tmp3 = outer1_5(entries[num5], 2);
-            let first = tmp3[0];
-            let message = this.message;
-            let _HermesInternal = HermesInternal;
-            let tmp5 = num4;
-            if (message.includes("!!{" + first + "}!!")) {
-              let sum = num4 + 1;
-              obj[sum] = tmp3[1];
-              arg0[first] = sum;
-              tmp5 = sum;
-            }
-            num5 = num5 + 1;
-            num4 = tmp5;
-          } while (num5 < entries.length);
-        }
-      }
-      const items = [arg0, obj];
-      return items;
-    }
-  };
-  return callback(FormattedMessage, items);
-})();
-let closure_12 = tmp3;
-const result = require("_defineProperties").fileFinishedImporting("../discord_common/js/packages/i18n/parse.tsx");
+  const items = [arg0, obj];
+  return items;
+};
+const result = require("module_16051").fileFinishedImporting("../discord_common/js/packages/i18n/parse.tsx");
 
-export const FormattedMessage = tmp3;
-export { setUpdateRules };
+export { FormattedMessage };
+export const setUpdateRules = function setUpdateRules(arg0) {
+  const rules = _require(16095).rules;
+  _require = undefined;
+  let importDefault;
+  _require = importDefault(3888).parserFor(arg0(rules));
+  const obj = importDefault(3888);
+  const obj2 = importDefault(3888);
+  importDefault = obj2.reactFor(importDefault(3888).ruleOutput(rules, "react"));
+  const f112542 = (arr, context, unsafeContext) => {
+    const hasItem = arr.includes("\n\n");
+    let text = arr;
+    if (hasItem) {
+      text = `${arr}
+
+    `;
+    }
+    return callback2(callback(text, { inline: !hasItem, context, unsafeContext }));
+  };
+  _require = undefined;
+  const obj3 = importDefault(3888);
+  _require = importDefault(3888).parserFor(_require(16095).rules);
+  const f112543 = (arg0, context, unsafeContext) => callback(arg0 + "\n\n", { inline: false, context, unsafeContext });
+};
 export const getMessage = function getMessage(str) {
   if (null == str) {
     return "";
   } else {
-    if (null == closure_3) {
-      setUpdateRules(require(16060) /* updateRules */.default);
+    if (null == f112542) {
+      const rules = _require(16095).rules;
+      _require = undefined;
+      let importDefault;
+      let obj = importDefault(3888);
+      _require = obj.parserFor(_require(16096).default(rules));
+      const obj2 = importDefault(3888);
+      importDefault = obj2.reactFor(importDefault(3888).ruleOutput(rules, "react"));
+      f112542 = (arr, context, unsafeContext) => {
+        const hasItem = arr.includes("\n\n");
+        let text = arr;
+        if (hasItem) {
+          text = `${arr}
+
+        `;
+        }
+        return callback2(callback(text, { inline: !hasItem, context, unsafeContext }));
+      };
+      _require = undefined;
+      const obj3 = importDefault(3888);
+      _require = importDefault(3888).parserFor(_require(16095).rules);
+      const f112543 = (arg0, context, unsafeContext) => callback(arg0 + "\n\n", { inline: false, context, unsafeContext });
+      const obj4 = importDefault(3888);
     }
-    const replaced = str.replace(/^\n+|\n+$/g, "");
-    const isMatch = regex.test(replaced);
-    const isMatch1 = regex2.test(replaced);
+    const str2 = str.replace(/^\n+|\n+$/g, "");
+    const isMatch = regex.test(str2);
+    const isMatch1 = regex2.test(str2);
     if (isMatch) {
-      const prototype = tmp3.prototype;
-      let tmp10 = new tmp3(replaced, arg1, isMatch1);
+      if (typeof FormattedMessage !== "find") {
+        HermesBuiltin.throwTypeError();
+      }
+      let replaced = str2;
+      if (!isMatch1) {
+        replaced = str2.replace(closure_9, "");
+      }
+      obj = Object.create(FormattedMessage.prototype);
+      obj.message = replaced;
+      obj.hasMarkdown = isMatch1;
+      const tmp16 = new importDefault(16051)(obj.message, arg1);
+      obj.intlMessage = tmp16;
+      let tmp5 = obj;
+      const tmp6 = FormattedMessage;
     } else {
-      tmp10 = replaced;
+      tmp5 = str2;
     }
-    return tmp10;
+    return tmp5;
   }
 };

@@ -1,15 +1,15 @@
-// Module ID: 5894
-// Function ID: 51797
+// Module ID: 5913
+// Function ID: 5914
 // Name: set
 // Dependencies: [2]
 
-// Module 5894 (set)
+// Module 5913 (set)
 import set from "set";
 
-const obj = {};
+const obj = { ALL: null, IS_ADULT_ONLY: null };
 let set = new Set([1, 2, 3, 4, 5, 6]);
-obj.ALL = set;
-obj.IS_ADULT_ONLY = new Set([5]);
+obj[0] = set;
+obj[1] = new Set([5]);
 const result = set.fileFinishedImporting("../discord_common/js/shared/shared-constants/ContentRatingESRBRating.tsx");
 
 export const ContentRatingESRBRating = { UNKNOWN_RATING: 0, [0]: "UNKNOWN_RATING", EVERYONE: 1, [1]: "EVERYONE", EVERYONE_TEN_PLUS: 2, [2]: "EVERYONE_TEN_PLUS", TEEN: 3, [3]: "TEEN", MATURE: 4, [4]: "MATURE", ADULTS_ONLY: 5, [5]: "ADULTS_ONLY", RATING_PENDING: 6, [6]: "RATING_PENDING" };

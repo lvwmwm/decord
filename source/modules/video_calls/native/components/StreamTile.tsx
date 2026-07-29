@@ -1,78 +1,75 @@
-// Module ID: 10520
-// Function ID: 81435
+// Module ID: 10544
+// Function ID: 10545
 // Name: StreamTextOverlay
-// Dependencies: [31, 27, 4184, 1194, 653, 4226, 33, 4165, 689, 4009, 4161, 1273, 566, 10521, 10523, 1212, 4354, 10530, 10543, 10533, 10518, 5251, 4695, 10545, 2]
+// Dependencies: [19, 17, 4208, 1218, 676, 4250, 21, 4189, 712, 4033, 4185, 1297, 589, 10545, 10547, 1236, 4379, 10554, 10567, 10557, 10542, 5273, 4717, 10569, 2]
 // Exports: default
 
-// Module 10520 (StreamTextOverlay)
-import importAllResult from "result";
-import get_ActivityIndicator from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_7 from "_isNativeReflectConstruct";
+// Module 10544 (StreamTextOverlay)
+import importAllResult from "map";
+import get_ActivityIndicator from "ResizeMode";
+import reset from "reset";
+import fetchFingerprint from "fetchFingerprint";
 import { ApplicationStreamStates } from "ME";
 import { MediaEngineContextTypes } from "DesktopSources";
-import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import hexToRgb from "hexToRgb";
-import hexToRgb from "hexToRgb";
+import jsxProd from "Directions";
+import createCacheKey from "createCacheKey";
+import hexToRgba from "hexToRgba";
+import hexToRgba from "hexToRgba";
 
 let StyleSheet;
-let closure_10;
-let closure_11;
+let c10;
+let c4;
 let closure_12;
-let closure_4;
+let unpackModuleId;
 const require = arg1;
 class StreamTextOverlay {
   constructor(arg0) {
     subtext = global.subtext;
-    tmp = jsxs();
-    obj = { style: tmp.screenMessageContainer };
+    tmp = Fragment();
+    obj = { style: tmp.screenMessageContainer, children: null };
     tmp2 = jsxs;
     tmp3 = View;
-    obj = { style: null, variant: "text-md/semibold", color: "text-overlay-light" };
-    obj.style = tmp.screenMessageText;
-    obj.children = global.title;
+    tmp4 = jsx;
+    tmp5 = closure_0;
+    tmp6 = closure_2;
+    obj = { style: tmp.screenMessageText, variant: "text-md/semibold", color: "text-overlay-light", children: global.title };
     items = [, ];
     items[0] = jsx(require("Text").Text, obj);
-    tmp4 = null;
+    tmp4Result = null;
     if (null != subtext) {
-      tmp5 = jsx;
-      tmp6 = closure_0;
-      tmp7 = closure_2;
-      num = 11;
-      obj1 = {};
-      obj1.style = tmp.screenMessageSubtext;
-      obj1.children = subtext;
-      tmp4 = jsx(require("Button").LegacyText, obj1);
+      obj1 = { style: null, children: null };
+      obj1[0] = tmp.screenMessageSubtext;
+      obj1[1] = subtext;
+      tmp4Result = tmp4(require("Button").LegacyText, obj1);
     }
-    items[1] = tmp4;
-    obj.children = items;
+    items[1] = tmp4Result;
+    obj[1] = items;
     return tmp2(tmp3, obj);
   }
 }
-({ View: closure_4, StyleSheet } = get_ActivityIndicator);
-({ jsx: closure_10, jsxs: closure_11, Fragment: closure_12 } = jsxProd);
-let obj = {};
-obj = { flex: 1, alignItems: "center", justifyContent: "center", overflow: "hidden", width: "100%", backgroundColor: require("_createForOfIteratorHelperLoose").colors.BLACK };
-obj.container = obj;
-_createForOfIteratorHelperLoose = {};
+let c3 = importAllResult;
+({ View: c4, StyleSheet } = get_ActivityIndicator);
+({ jsx: c10, jsxs: unpackModuleId, Fragment: closure_12 } = jsxProd);
+let obj = { container: null, screenMessageContainer: null, screenMessageText: null, screenMessageSubtext: null, statusWrapper: null, liveTag: null };
+obj = { flex: 1, alignItems: "center", justifyContent: "center", overflow: "hidden", width: "100%", backgroundColor: require("Themes").colors.BLACK };
+obj[0] = obj;
+createCacheKey = {};
 const merged = Object.assign(StyleSheet.absoluteFillObject);
-_createForOfIteratorHelperLoose["flex"] = 1;
-_createForOfIteratorHelperLoose["padding"] = 8;
-_createForOfIteratorHelperLoose["alignItems"] = "center";
-_createForOfIteratorHelperLoose["justifyContent"] = "center";
-_createForOfIteratorHelperLoose["backgroundColor"] = hexToRgb.hexWithOpacity(require("_createForOfIteratorHelperLoose").unsafe_rawColors.BLACK, 0.7);
-obj.screenMessageContainer = _createForOfIteratorHelperLoose;
-obj.screenMessageText = { lineHeight: 18 };
-let obj2 = { color: require("_createForOfIteratorHelperLoose").unsafe_rawColors.PRIMARY_300, fontSize: 14, lineHeight: 18, textAlign: "center" };
-obj.screenMessageSubtext = obj2;
+createCacheKey.flex = 1;
+createCacheKey.padding = 8;
+createCacheKey.alignItems = "center";
+createCacheKey.justifyContent = "center";
+createCacheKey.backgroundColor = hexToRgba.hexWithOpacity(require("Themes").unsafe_rawColors.BLACK, 0.7);
+obj[1] = createCacheKey;
+obj[2] = { lineHeight: 18 };
+obj[3] = { color: require("Themes").unsafe_rawColors.PRIMARY_300, fontSize: 14, lineHeight: 18, textAlign: "center" };
 let obj3 = { position: "absolute", bottom: 8, right: 8, backgroundColor: null, borderRadius: null, width: 24, height: 24, justifyContent: "center", alignItems: "center" };
-obj3.backgroundColor = hexToRgb.hexWithOpacity(require("_createForOfIteratorHelperLoose").unsafe_rawColors.PRIMARY_700, 0.5);
-obj3.borderRadius = require("_createForOfIteratorHelperLoose").radii.md;
-obj.statusWrapper = obj3;
-obj.liveTag = { position: "absolute", right: 8, top: 8 };
-let closure_13 = _createForOfIteratorHelperLoose.createStyles(obj);
-let closure_14 = importAllResult.memo((participant) => {
+obj3[3] = hexToRgba.hexWithOpacity(require("Themes").unsafe_rawColors.PRIMARY_700, 0.5);
+obj3[4] = require("Themes").radii.md;
+obj[4] = obj3;
+obj[5] = { position: "absolute", right: 8, top: 8 };
+let closure_13 = createCacheKey.createStyles(obj);
+let closure_15 = importAllResult.memo((participant) => {
   let gestureEnabled;
   let removeEmptyStateButton;
   let removeEmptyStateImage;
@@ -81,81 +78,104 @@ let closure_14 = importAllResult.memo((participant) => {
   let user;
   participant = participant.participant;
   ({ user, removeEmptyStateButton, removeEmptyStateImage } = participant);
+  let importDefault;
   ({ streamId, resizeMode, gestureEnabled } = participant);
-  const importDefault = callback2();
-  let obj = participant(566);
-  const items = [_isNativeReflectConstruct];
+  importDefault = callback2();
+  let obj = participant(589);
+  const items = [reset];
   const stateFromStores = obj.useStateFromStores(items, () => outer1_6.getActiveStreamForStreamKey(participant.id));
-  const tmp2 = importDefault(10521)(MediaEngineContextTypes.STREAM, participant.user.id);
+  const tmp5 = importDefault(10545)(MediaEngineContextTypes.STREAM, participant.user.id);
   if (null != stateFromStores) {
     const state = stateFromStores.state;
     if (ApplicationStreamStates.FAILED === state) {
-      obj = { stream: stateFromStores, removeCloseButton: removeEmptyStateButton, removeSplashImage: removeEmptyStateImage, type: participant(10523).VideoEmptyTypes.STREAM_FAILED, style: StyleSheet.absoluteFill };
-      return callback(importDefault(10523), obj);
-    } else if (ApplicationStreamStates.ENDED === state) {
-      obj = { stream: stateFromStores, removeCloseButton: removeEmptyStateButton, removeSplashImage: removeEmptyStateImage, type: participant(10523).VideoEmptyTypes.STREAM_ENDED, style: StyleSheet.absoluteFill };
-      return callback(importDefault(10523), obj);
+      obj = { stream: null, removeCloseButton: null, removeSplashImage: null, type: null, style: null };
+      obj[0] = stateFromStores;
+      obj[1] = removeEmptyStateButton;
+      obj[2] = removeEmptyStateImage;
+      let tmp4Result = tmp4(10547);
+      obj[3] = tmp(10547).VideoEmptyTypes.STREAM_FAILED;
+      obj[4] = StyleSheet.absoluteFill;
+      return callback(tmp4Result, obj);
+    } else if (tmp6.ENDED === state) {
+      obj = { stream: null, removeCloseButton: null, removeSplashImage: null, type: null, style: null };
+      obj[0] = stateFromStores;
+      obj[1] = removeEmptyStateButton;
+      obj[2] = removeEmptyStateImage;
+      tmp4Result = tmp4(10547);
+      obj[3] = tmp(10547).VideoEmptyTypes.STREAM_ENDED;
+      obj[4] = StyleSheet.absoluteFill;
+      return callback(tmp4Result, obj);
     } else {
-      if (ApplicationStreamStates.RECONNECTING === state) {
-        const obj1 = {};
-        const intl = participant(1212).intl;
-        obj1.title = intl.string(participant(1212).t["pdFFK+"]);
-        let tmp8 = callback(StreamTextOverlay, obj1);
+      if (tmp6.RECONNECTING === state) {
+        const obj1 = { title: null };
+        const intl = tmp(1236).intl;
+        obj1[0] = intl.string(tmp(1236).t["pdFFK+"]);
+        let tmp9 = callback(StreamTextOverlay, obj1);
       } else {
-        tmp8 = null;
-        if (ApplicationStreamStates.PAUSED === state) {
-          const obj2 = {};
-          const intl2 = participant(1212).intl;
-          obj2.title = intl2.string(participant(1212).t["5q17w5"]);
-          const intl3 = participant(1212).intl;
-          const obj3 = { username: importDefault(4354).getName(stateFromStores.guildId, stateFromStores.channelId, user) };
-          obj2.subtext = intl3.formatToPlainString(participant(1212).t.meVVlb, obj3);
-          tmp8 = callback(StreamTextOverlay, obj2);
-          const obj8 = importDefault(4354);
+        tmp9 = null;
+        if (tmp6.PAUSED === state) {
+          const obj2 = { title: null, subtext: null };
+          const intl2 = tmp(1236).intl;
+          obj2[0] = intl2.string(tmp(1236).t["5q17w5"]);
+          const intl3 = tmp(1236).intl;
+          const obj3 = { username: null };
+          obj3[0] = tmp4(4379).getName(stateFromStores.guildId, stateFromStores.channelId, user);
+          obj2[1] = intl3.formatToPlainString(tmp(1236).t.meVVlb, obj3);
+          tmp9 = callback(StreamTextOverlay, obj2);
+          const tmp4Result1 = tmp4(4379);
         }
       }
-      if (null != tmp2) {
-        const obj4 = { stream: stateFromStores, removeCloseButton: removeEmptyStateButton, removeSplashImage: removeEmptyStateImage, type: participant(10523).VideoEmptyTypes.STREAM_FAILED, style: StyleSheet.absoluteFill, avError: tmp2 };
-        return callback(importDefault(10523), obj4);
+      if (null != tmp5) {
+        const obj4 = { stream: null, removeCloseButton: null, removeSplashImage: null, type: null, style: null, avError: null };
+        obj4[0] = stateFromStores;
+        obj4[1] = removeEmptyStateButton;
+        obj4[2] = removeEmptyStateImage;
+        obj4[3] = tmp(10547).VideoEmptyTypes.STREAM_FAILED;
+        obj4[4] = StyleSheet.absoluteFill;
+        obj4[5] = tmp5;
+        return callback(tmp4(10547), obj4);
       } else {
-        const obj5 = {};
         id = id.getId();
-        const obj6 = {
-          resizeMode,
-          streamId,
-          gestureEnabled,
-          renderTag() {
-                  return outer1_10(lib(outer1_2[18]), { style: lib.liveTag, participant });
-                }
+        const obj5 = { resizeMode: null, streamId: null, gestureEnabled: null, renderTag: null, videoSpinnerContext: null, userId: null, paused: null };
+        obj5[0] = resizeMode;
+        obj5[1] = streamId;
+        obj5[2] = gestureEnabled;
+        obj5[3] = function renderTag() {
+          return outer1_10(lib(outer1_2[18]), { style: lib.liveTag, participant });
         };
         if (stateFromStores.ownerId === id) {
-          let REMOTE_STREAM = participant(10533).VideoSpinnerContext.SELF_STREAM;
+          let REMOTE_STREAM = tmp(10557).VideoSpinnerContext.SELF_STREAM;
         } else {
-          REMOTE_STREAM = participant(10533).VideoSpinnerContext.REMOTE_STREAM;
+          REMOTE_STREAM = tmp(10557).VideoSpinnerContext.REMOTE_STREAM;
         }
-        obj6.videoSpinnerContext = REMOTE_STREAM;
-        obj6.userId = user.id;
-        obj6.paused = stateFromStores.state === ApplicationStreamStates.PAUSED;
-        const items1 = [callback(importDefault(10530), obj6), tmp8];
-        obj5.children = items1;
-        return closure_11(closure_12, obj5);
+        const obj6 = { children: null };
+        obj5[4] = REMOTE_STREAM;
+        obj5[5] = user.id;
+        obj5[6] = stateFromStores.state === tmp6.PAUSED;
+        const items1 = [callback(tmp4(10554), obj5), tmp9];
+        obj6[0] = items1;
+        return closure_11(closure_12, obj6);
       }
     }
   } else {
     return null;
   }
 });
-let closure_15 = importAllResult.memo((arg0) => {
+let closure_16 = importAllResult.memo((arg0) => {
   let onFullScreen;
   let style;
   ({ onFullScreen, style } = arg0);
-  let obj = { accessibilityRole: "button", onPress: onFullScreen, style: items, hitSlop: { top: 4, left: 4, right: 4, bottom: 4 } };
+  let obj = { accessibilityRole: "button", onPress: onFullScreen, style: items, hitSlop: { top: 4, left: 4, right: 4, bottom: 4 }, children: null };
   items = [callback2().statusWrapper, style];
-  obj = { source: importDefault(10545), size: require(1273) /* Button */.Icon.Sizes.SMALL, color: importDefault(689).unsafe_rawColors.WHITE };
-  obj.children = callback(require(1273) /* Button */.Icon, obj);
-  return callback(require(4695) /* PressableBase */.PressableOpacity, obj);
+  obj = { source: null, size: null, color: null };
+  obj[0] = importDefault(10569);
+  obj[1] = require(1297) /* Button */.Icon.Sizes.SMALL;
+  obj[2] = importDefault(712).unsafe_rawColors.WHITE;
+  obj[4] = callback(require(1297) /* Button */.Icon, obj);
+  return callback(require(4717) /* PressableBase */.PressableOpacity, obj);
 });
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/video_calls/native/components/StreamTile.tsx");
+let obj2 = { color: require("Themes").unsafe_rawColors.PRIMARY_300, fontSize: 14, lineHeight: 18, textAlign: "center" };
+const result = require("reset").fileFinishedImporting("modules/video_calls/native/components/StreamTile.tsx");
 
 export default function StreamTile(participant) {
   let fullscreenIconStyle;
@@ -177,34 +197,35 @@ export default function StreamTile(participant) {
   const items = [onSingleTap, participant];
   const items1 = [onDoubleTap, participant];
   const callback = importAllResult.useCallback(() => {
-    let tmp;
-    if (null != onSingleTap) {
-      tmp = onSingleTap(participant);
+    let tmpResult;
+    if (onSingleTap != null) {
+      tmpResult = tmp(participant);
     }
-    return tmp;
+    return tmpResult;
   }, items);
   const callback1 = importAllResult.useCallback(() => {
-    let tmp;
-    if (null != onDoubleTap) {
-      tmp = onDoubleTap(participant);
+    let tmpResult;
+    if (onDoubleTap != null) {
+      tmpResult = tmp(participant);
     }
-    return tmp;
+    return tmpResult;
   }, items1);
   const tmp3 = callback2();
   ({ streamId, user } = participant);
-  let obj = { gesture: onSingleTap(onDoubleTap[20])({ onSingleTapStart: callback, onDoubleTapStart: callback1 }) };
-  obj = { style: items2 };
+  let obj = { gesture: onSingleTap(onDoubleTap[20])({ onSingleTapStart: callback, onDoubleTapStart: callback1 }), children: null };
+  obj = { style: items2, children: null };
   items2 = [tmp3.container, style];
-  obj = { streamId, participant, user, resizeMode: CONTAIN, gestureEnabled, removeEmptyStateButton, removeEmptyStateImage };
-  const items3 = [callback(closure_14, obj), ];
-  let tmp10 = null != onFullScreen;
-  if (tmp10) {
-    const obj1 = { onFullScreen, style: fullscreenIconStyle };
-    tmp10 = callback(closure_15, obj1);
+  const items3 = [callback(closure_15, { streamId, participant, user, resizeMode: CONTAIN, gestureEnabled, removeEmptyStateButton, removeEmptyStateImage }), ];
+  let tmp7Result = null != onFullScreen;
+  if (tmp7Result) {
+    obj = { onFullScreen: null, style: null };
+    obj[0] = onFullScreen;
+    obj[1] = fullscreenIconStyle;
+    tmp7Result = tmp7(closure_16, obj);
   }
-  items3[1] = tmp10;
-  obj.children = items3;
-  obj.children = closure_11(closure_4, obj);
+  items3[1] = tmp7Result;
+  obj[1] = items3;
+  obj[1] = closure_11(closure_4, obj);
   return callback(participant(onDoubleTap[21]).GestureDetector, obj);
 };
 export { StreamTextOverlay };

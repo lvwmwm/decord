@@ -1,25 +1,25 @@
-// Module ID: 15020
-// Function ID: 114326
+// Module ID: 15091
+// Function ID: 15092
 // Name: PX_12
-// Dependencies: [31, 27, 33, 689, 4165, 2]
+// Dependencies: [19, 17, 21, 712, 4189, 2]
 
-// Module 15020 (PX_12)
+// Module 15091 (PX_12)
 import get_ActivityIndicator from "get ActivityIndicator";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import importAllResult from "result";
+import createCacheKey from "createCacheKey";
+import importAllResult from "noop";
 
 let StyleSheet;
-let closure_0;
-({ StyleSheet, View: closure_0 } = get_ActivityIndicator);
-const PX_12 = require("_createForOfIteratorHelperLoose").space.PX_12;
-let obj = { container: { height: PX_12 } };
-obj = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BORDER_SUBTLE, height: StyleSheet.hairlineWidth };
+let c0;
+({ StyleSheet, View: c0 } = get_ActivityIndicator);
+const PX_12 = require("Themes").space.PX_12;
+let obj = { container: { height: PX_12 }, separator: null };
+obj = { backgroundColor: require("Themes").colors.BORDER_SUBTLE, height: StyleSheet.hairlineWidth };
 const merged = Object.assign(StyleSheet.absoluteFillObject);
-obj["top"] = undefined;
-obj.separator = obj;
-let closure_2 = _createForOfIteratorHelperLoose.createStyles(obj);
-const memoResult = require("result").memo(function MessagesItemSeperator() {
+obj.top = undefined;
+obj[1] = obj;
+let closure_2 = createCacheKey.createStyles(obj);
+const memoResult = require("noop").memo(function MessagesItemSeperator() {
   const tmp = callback();
   obj = { style: tmp.container, collapsable: false, children: <closure_0 {...obj} /> };
   obj = { style: tmp.separator };

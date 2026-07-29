@@ -1,20 +1,20 @@
-// Module ID: 10352
-// Function ID: 79848
+// Module ID: 10373
+// Function ID: 10374
 // Name: ActionSheetIconHeader
-// Dependencies: [31, 27, 33, 4165, 4161, 2]
+// Dependencies: [19, 17, 21, 4189, 4185, 2]
 // Exports: ActionSheetIconHeader
 
-// Module 10352 (ActionSheetIconHeader)
-import "result";
+// Module 10373 (ActionSheetIconHeader)
+import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_3;
-let closure_4;
+let c3;
+let c4;
 const require = arg1;
-({ jsx: closure_3, jsxs: closure_4 } = jsxProd);
-let closure_5 = _createForOfIteratorHelperLoose.createStyles({ container: { paddingVertical: 0, flexDirection: "row", alignItems: "center", gap: 12 }, titles: { justifyContent: "center", flex: 1 } });
+({ jsx: c3, jsxs: c4 } = jsxProd);
+let closure_5 = createCacheKey.createStyles({ container: { paddingVertical: 0, flexDirection: "row", alignItems: "center", gap: 12 }, titles: { justifyContent: "center", flex: 1 } });
 const result = require("jsxProd").fileFinishedImporting("design/components/Sheet/native/ActionSheetIconHeader.native.tsx");
 
 export const ActionSheetIconHeader = function ActionSheetIconHeader(subtitle) {
@@ -23,19 +23,19 @@ export const ActionSheetIconHeader = function ActionSheetIconHeader(subtitle) {
   subtitle = subtitle.subtitle;
   ({ title, icon } = subtitle);
   const tmp = callback2();
-  let obj = { style: tmp.container };
+  let obj = { style: tmp.container, children: null };
   const items = [callback(View, { children: icon }), ];
-  obj = { style: tmp.titles };
-  obj = { variant: "redesign/heading-18/bold", color: "mobile-text-heading-primary", accessibilityRole: "header", lineClamp: 2, children: title };
-  const items1 = [callback(require(4161) /* Text */.Text, obj), ];
-  let tmp4 = null;
+  obj = { style: tmp.titles, children: null };
+  const items1 = [callback(require(4185) /* Text */.Text, { variant: "redesign/heading-18/bold", color: "mobile-text-heading-primary", accessibilityRole: "header", lineClamp: 2, children: title }), ];
+  let tmp4Result = null;
   if (null != subtitle) {
-    const obj1 = { variant: "text-xs/medium", color: "text-default", children: subtitle };
-    tmp4 = callback(require(4161) /* Text */.Text, obj1);
+    obj = { variant: "text-xs/medium", color: "text-default", children: null };
+    obj[2] = subtitle;
+    tmp4Result = callback(require(4185) /* Text */.Text, obj);
   }
-  items1[1] = tmp4;
-  obj.children = items1;
+  items1[1] = tmp4Result;
+  obj[1] = items1;
   items[1] = closure_4(View, obj);
-  obj.children = items;
+  obj[1] = items;
   return closure_4(View, obj);
 };

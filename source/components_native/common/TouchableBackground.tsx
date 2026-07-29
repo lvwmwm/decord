@@ -1,71 +1,67 @@
-// Module ID: 11455
-// Function ID: 88844
+// Module ID: 11479
+// Function ID: 11480
 // Name: TouchableBackground
-// Dependencies: [57, 31, 27, 33, 4165, 689, 2]
+// Dependencies: [32, 19, 17, 21, 4189, 712, 2]
 // Exports: default
 
-// Module 11455 (TouchableBackground)
+// Module 11479 (TouchableBackground)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
+import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_2;
-let closure_3;
-({ View: closure_2, Pressable: closure_3 } = get_ActivityIndicator);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.INTERACTIVE_BACKGROUND_ACTIVE };
-_createForOfIteratorHelperLoose.default = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+let c3;
+let obj1;
+({ View: obj1, Pressable: c3 } = get_ActivityIndicator);
+createCacheKey = { default: null };
+createCacheKey = { backgroundColor: require("Themes").colors.INTERACTIVE_BACKGROUND_ACTIVE };
+createCacheKey[0] = createCacheKey;
+createCacheKey = createCacheKey.createStyles(createCacheKey);
 const result = require("get ActivityIndicator").fileFinishedImporting("components_native/common/TouchableBackground.tsx");
 
 export default function TouchableBackground(onPressOut) {
   let activeBackgroundColor;
+  let c2;
   let children;
   let onPressIn;
   let pressableStyle;
   let style;
+  let tmp4;
   ({ activeBackgroundColor, onPressIn } = onPressOut);
   onPressOut = onPressOut.onPressOut;
-  let obj = { activeBackgroundColor: 0, pressableStyle: 0, style: 0, children: 0, onPressIn: 0, onPressOut: 0 };
   ({ pressableStyle, style, children } = onPressOut);
-  Object.setPrototypeOf(null);
-  const merged = Object.assign(onPressOut, obj);
-  const tmp4 = onPressIn(onPressOut.useState(false), 2);
-  let first = tmp4[0];
-  let closure_2 = tmp4[1];
+  const merged = Object.assign(onPressOut, Object.create(null));
+  c2 = undefined;
+  const tmp2 = createCacheKey();
+  [tmp4, c2] = onPressIn(onPressOut.useState(false), 2);
   const items = [onPressIn];
   const items1 = [onPressOut];
   const callback = onPressOut.useCallback((arg0) => {
-    callback(true);
-    if (null != onPressIn) {
-      onPressIn(arg0);
+    _undefined(true);
+    if (onPressIn != null) {
+      tmp2(arg0);
     }
   }, items);
-  obj = { accessibilityRole: "button", style: pressableStyle };
+  let obj = { accessibilityRole: "button", style: pressableStyle };
   const callback1 = onPressOut.useCallback((arg0) => {
-    if (null != onPressOut) {
-      onPressOut(arg0);
+    if (onPressOut != null) {
+      tmp(arg0);
     }
-    callback(false);
+    _undefined(false);
   }, items1);
   const merged1 = Object.assign(merged);
-  obj["onPressIn"] = callback;
-  obj["onPressOut"] = callback1;
-  obj = {};
+  obj.onPressIn = callback;
+  obj.onPressOut = callback1;
   const items2 = [style, ];
-  if (first) {
-    const obj1 = {};
-    if (null == activeBackgroundColor) {
-      activeBackgroundColor = tmp3.default.backgroundColor;
+  if (tmp4) {
+    if (activeBackgroundColor == null) {
+      activeBackgroundColor = tmp2.default.backgroundColor;
     }
-    obj1.backgroundColor = activeBackgroundColor;
-    first = obj1;
+    obj = { backgroundColor: null };
+    obj[0] = activeBackgroundColor;
   }
-  items2[1] = first;
-  obj.style = items2;
-  obj.children = children;
-  obj["children"] = <closure_2 />;
-  return <closure_3 />;
+  items2[1] = tmp4;
+  obj.children = <c2 style={items2}>{children}</c2>;
+  return <closure_3 accessibilityRole="button" style={pressableStyle} />;
 };

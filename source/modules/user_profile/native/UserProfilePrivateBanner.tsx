@@ -1,43 +1,44 @@
-// Module ID: 12182
-// Function ID: 95261
+// Module ID: 12206
+// Function ID: 12207
 // Name: UserProfilePrivateBanner
-// Dependencies: [31, 27, 5545, 33, 4165, 689, 665, 4687, 4161, 1212, 2]
+// Dependencies: [19, 17, 5563, 21, 4189, 712, 688, 4709, 4185, 1236, 2]
 // Exports: default
 
-// Module 12182 (UserProfilePrivateBanner)
-import "result";
+// Module 12206 (UserProfilePrivateBanner)
+import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_4;
-let closure_5;
+let c4;
+let c5;
 const require = arg1;
-({ jsx: closure_4, jsxs: closure_5 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { flexDirection: "row", alignItems: "center", justifyContent: "center", gap: 6, paddingTop: 18, paddingBottom: require("_createForOfIteratorHelperLoose").space.PX_12, paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_8, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SURFACE_HIGH, position: "relative", zIndex: require("ARBITRARY_LARGE_OFFSET").PROFILE_TOP_LAYER_Z_INDEX };
-_createForOfIteratorHelperLoose.banner = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+({ jsx: c4, jsxs: c5 } = jsxProd);
+createCacheKey = { banner: null };
+createCacheKey = { flexDirection: "row", alignItems: "center", justifyContent: "center", gap: 6, paddingTop: 18, paddingBottom: require("Themes").space.PX_12, paddingHorizontal: require("Themes").space.PX_8, backgroundColor: require("Themes").colors.BACKGROUND_SURFACE_HIGH, position: "relative", zIndex: require("ARBITRARY_LARGE_OFFSET").PROFILE_TOP_LAYER_Z_INDEX };
+createCacheKey[0] = createCacheKey;
+createCacheKey = createCacheKey.createStyles(createCacheKey);
 const result = require("ARBITRARY_LARGE_OFFSET").fileFinishedImporting("modules/user_profile/native/UserProfilePrivateBanner.tsx");
 
 export default function UserProfilePrivateBanner(primaryColor) {
   primaryColor = primaryColor.primaryColor;
-  let obj = {};
-  const items = [_createForOfIteratorHelperLoose().banner, ];
+  const items = [createCacheKey().banner, ];
   let tmp3 = null != primaryColor;
   if (tmp3) {
-    obj = { backgroundColor: require(665) /* pad2 */.int2hex(primaryColor) };
+    let obj = { backgroundColor: null };
+    let obj1 = require(688) /* int2hslRaw */;
+    obj[0] = obj1.int2hex(primaryColor);
     tmp3 = obj;
-    const obj3 = require(665) /* pad2 */;
   }
+  obj = { style: items, children: null };
   items[1] = tmp3;
-  obj.style = items;
-  obj = { size: "xs", color: importDefault(689).colors.TEXT_DEFAULT };
-  const items1 = [callback(require(4687) /* LockIcon */.LockIcon, obj), ];
-  const obj1 = { variant: "text-sm/medium", color: "text-default" };
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj1.children = intl.string(require(1212) /* getSystemLocale */.t.KPnd2O);
-  items1[1] = callback(require(4161) /* Text */.Text, obj1);
-  obj.children = items1;
+  obj = { size: "xs", color: null };
+  obj[1] = importDefault(712).colors.TEXT_DEFAULT;
+  const items1 = [callback(require(4709) /* LockIcon */.LockIcon, obj), ];
+  obj1 = { variant: "text-sm/medium", color: "text-default", children: null };
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj1[2] = intl.string(require(1236) /* getSystemLocale */.t.KPnd2O);
+  items1[1] = callback(require(4185) /* Text */.Text, obj1);
+  obj[1] = items1;
   return closure_5(View, obj);
 };

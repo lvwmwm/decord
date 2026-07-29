@@ -1,20 +1,20 @@
-// Module ID: 9379
-// Function ID: 73106
+// Module ID: 9403
+// Function ID: 9404
 // Name: PremiumEmojiFeatureUpsell
-// Dependencies: [31, 27, 33, 4165, 689, 1557, 6723, 668, 4026, 9380, 6181, 2]
+// Dependencies: [19, 17, 21, 4189, 712, 1581, 6744, 691, 4050, 9404, 6201, 2]
 // Exports: default
 
-// Module 9379 (PremiumEmojiFeatureUpsell)
-import "result";
+// Module 9403 (PremiumEmojiFeatureUpsell)
+import "noop";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
 const require = arg1;
-let closure_5 = _createForOfIteratorHelperLoose.createStyles((arg0) => {
-  let obj = {};
-  obj = { position: "absolute", bottom: arg0 + importDefault(689).space.PX_12, left: 0, right: 0 };
-  obj.container = obj;
+let closure_5 = createCacheKey.createStyles((arg0) => {
+  let obj = { container: null };
+  obj = { position: "absolute", bottom: arg0 + importDefault(712).space.PX_12, left: 0, right: 0 };
+  obj[0] = obj;
   return obj;
 });
 let closure_6 = { code: "function PremiumEmojiFeatureUpsellTsx1(){const{shouldShow,inPortalKeyboard,bottomSheetIndex}=this.__closure;if(!shouldShow.get()){return false;}return inPortalKeyboard?bottomSheetIndex.get()===1:bottomSheetIndex.get()===0;}" };
@@ -24,14 +24,16 @@ export default function PremiumEmojiFeatureUpsell(bottomSheetIndex) {
   bottomSheetIndex = bottomSheetIndex.bottomSheetIndex;
   const inPortalKeyboard = bottomSheetIndex.inPortalKeyboard;
   const shouldShow = bottomSheetIndex.shouldShow;
-  let tmp = inPortalKeyboard(shouldShow[6])();
+  const tmp = inPortalKeyboard;
+  const tmp3 = inPortalKeyboard(shouldShow[6])();
+  const tmp4 = bottomSheetIndex;
   bottomSheetIndex(shouldShow[8]);
   const fn = function c() {
-    const tmp = !shouldShow.get();
-    if (tmp) {
-      return !tmp;
+    let value = shouldShow.get();
+    if (!value) {
+      return value;
     } else {
-      const value = bottomSheetIndex.get();
+      value = bottomSheetIndex.get();
       if (inPortalKeyboard) {
         let tmp5 = 1 === value;
       } else {
@@ -42,13 +44,16 @@ export default function PremiumEmojiFeatureUpsell(bottomSheetIndex) {
   fn.__closure = { shouldShow, inPortalKeyboard, bottomSheetIndex };
   fn.__workletHash = 10168295304319;
   fn.__initData = closure_6;
-  let tmp5 = null;
-  if (!tmp) {
-    let obj = { style: tmp2.container };
-    obj = { shouldShow: tmp4, featureName: bottomSheetIndex(shouldShow[10]).EntitlementFeatureNames.EMOJIS_EVERYWHERE };
-    obj.children = jsx(inPortalKeyboard(shouldShow[9]), { shouldShow: tmp4, featureName: bottomSheetIndex(shouldShow[10]).EntitlementFeatureNames.EMOJIS_EVERYWHERE });
-    tmp5 = <View shouldShow={tmp4} featureName={bottomSheetIndex(shouldShow[10]).EntitlementFeatureNames.EMOJIS_EVERYWHERE} />;
-    const tmp10 = inPortalKeyboard(shouldShow[9]);
+  let tmp8 = null;
+  if (!tmp3) {
+    let obj = { style: null, children: null };
+    obj[0] = tmp5.container;
+    obj = { shouldShow: null, featureName: null };
+    obj[0] = tmp7;
+    obj[1] = tmp4(tmp2[10]).EntitlementFeatureNames.EMOJIS_EVERYWHERE;
+    obj[1] = jsx(tmp(tmp2[9]), { shouldShow: null, featureName: null });
+    tmp8 = <View shouldShow={null} featureName={null} />;
+    const tmpResult = tmp(tmp2[9]);
   }
-  return tmp5;
+  return tmp8;
 };

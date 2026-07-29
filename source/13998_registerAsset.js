@@ -1,11 +1,10 @@
 // Module ID: 13998
-// Function ID: 106895
+// Function ID: 13999
 // Name: registerAsset
-// Dependencies: [1217]
+// Dependencies: [1241]
 
 // Module 13998 (registerAsset)
 import registerAsset from "registerAsset";
 
-const obj = { __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "648b6791176add4ac6a2018a27641a15", name: "SubscriptionIcon", type: "png" };
 
-export default registerAsset.registerAsset(obj);
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/consoles", width: 84, height: 46, scales: [2, 3], hash: "1dc3d638940bcdf9b267c8229f603041", name: "xbox_upsell", type: "png" });

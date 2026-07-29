@@ -1,30 +1,31 @@
-// Module ID: 10213
-// Function ID: 78754
-// Dependencies: [31, 27, 10214, 33, 4165, 689, 9877, 1557, 10219, 22, 10218, 4101, 4697, 10220, 6658, 10389, 4695, 1212, 1273, 10006, 11848, 2]
+// Module ID: 10234
+// Function ID: 10235
+// Dependencies: [19, 17, 10235, 21, 4189, 712, 9899, 1581, 10240, 12, 10239, 4125, 4719, 10241, 6679, 10413, 4717, 1236, 1297, 10028, 11873, 2]
 
-// Module 10213
-import importAllResult from "result";
-import { View } from "get ActivityIndicator";
-import { useIsVoiceChatFocused } from "resetFocusTimer";
-import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+// Module 10234
+import importAllResult from "registerAsset";
+import { View } from "getSystemLocale";
+import { useIsVoiceChatFocused } from "VoiceChatDrawerState";
+import jsxProd from "set";
+import createCacheKey from "createCacheKey";
 
 let closure_6;
-let closure_7;
+let error;
 const require = arg1;
-({ jsx: closure_6, jsxs: closure_7 } = jsxProd);
-let obj = {};
-obj = { flex: 1, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW, alignSelf: "stretch" };
-obj.chat = obj;
-_createForOfIteratorHelperLoose = { height: 44, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW };
-obj.chatHeaderSpacer = _createForOfIteratorHelperLoose;
-let obj2 = { flexDirection: "row", alignSelf: "stretch", height: 44, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW, alignItems: "center", justifyContent: "flex-start", position: "absolute", left: 0, right: 0, paddingHorizontal: 16 };
-obj.chatHeader = obj2;
-obj.chatHeaderBackIconContainer = { width: 32, height: 32, alignItems: "flex-start", justifyContent: "center" };
-obj.chatHeaderTitleContainer = { alignSelf: "stretch", flex: 1, justifyContent: "center", marginStart: 16 };
-obj.safeAreaTop = { alignSelf: "stretch", backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW };
-let closure_8 = _createForOfIteratorHelperLoose.createStyles(obj);
-let obj3 = { alignSelf: "stretch", backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW };
+let c3 = importAllResult;
+({ jsx: closure_6, jsxs: error } = jsxProd);
+let obj = { chat: null, chatHeaderSpacer: null, chatHeader: null, chatHeaderBackIconContainer: null, chatHeaderTitleContainer: null, safeAreaTop: null };
+obj = { flex: 1, backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW, alignSelf: "stretch" };
+obj[0] = obj;
+createCacheKey = { height: 44, backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW };
+obj[1] = createCacheKey;
+obj[2] = { flexDirection: "row", alignSelf: "stretch", height: 44, backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW, alignItems: "center", justifyContent: "flex-start", position: "absolute", left: 0, right: 0, paddingHorizontal: 16 };
+obj[3] = { width: 32, height: 32, alignItems: "flex-start", justifyContent: "center" };
+obj[4] = { alignSelf: "stretch", flex: 1, justifyContent: "center", marginStart: 16 };
+let obj2 = { flexDirection: "row", alignSelf: "stretch", height: 44, backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW, alignItems: "center", justifyContent: "flex-start", position: "absolute", left: 0, right: 0, paddingHorizontal: 16 };
+obj[5] = { alignSelf: "stretch", backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW };
+let closure_8 = createCacheKey.createStyles(obj);
+let obj3 = { alignSelf: "stretch", backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW };
 const memoResult = importAllResult.memo((channel) => {
   let left;
   let right;
@@ -37,116 +38,104 @@ const memoResult = importAllResult.memo((channel) => {
   }
   const tmp = callback2();
   const tmp2 = useIsVoiceChatFocused();
+  let obj = importAllResult;
   const items = [id, guild_id];
   const effect = importAllResult.useEffect(() => {
     let obj = guild_id(outer1_2[6]);
     obj = { guildId: guild_id, channelId: id };
     const messages = obj.fetchMessages(obj);
   }, items);
-  const tmp4 = guild_id(1557)();
-  const top = tmp4.top;
-  ({ left, right } = tmp4);
-  let obj = id(10219);
-  const voiceChatNavigationContext = obj.useVoiceChatNavigationContext();
+  const tmp6 = guild_id(1581)();
+  const top = tmp6.top;
+  ({ left, right } = tmp6);
+  let obj1 = id(10240);
+  const voiceChatNavigationContext = obj1.useVoiceChatNavigationContext();
   let openVoice;
-  if (null != voiceChatNavigationContext) {
+  if (voiceChatNavigationContext != null) {
     openVoice = voiceChatNavigationContext.openVoice;
   }
-  if (null == openVoice) {
-    openVoice = guild_id(22).noop;
+  if (openVoice == null) {
+    openVoice = tmp4(12).noop;
   }
-  let obj1 = id(10218);
-  const isConnectedToVoiceChannel = obj1.useIsConnectedToVoiceChannel(channel.channel);
-  obj = {};
+  const isConnectedToVoiceChannel = id(10239).useIsConnectedToVoiceChannel(channel.channel);
+  const tmp7Result = id(10239);
   let str = "no-hide-descendants";
-  const ref = importAllResult.useRef(null);
+  const ref = obj.useRef(null);
   if (tmp2) {
     str = "yes";
   }
-  obj.importantForAccessibility = str;
-  obj.accessibilityElementsHidden = !tmp2;
+  obj = { importantForAccessibility: str, accessibilityElementsHidden: !tmp2, style: null, children: null };
   const items1 = [tmp.chat, ];
-  let tmp14;
+  let tmp15;
   if (!flag) {
-    obj = { paddingLeft: left, paddingRight: right };
-    tmp14 = obj;
+    obj = { paddingLeft: null, paddingRight: null };
+    obj[0] = left;
+    obj[1] = right;
+    tmp15 = obj;
   }
-  items1[1] = tmp14;
-  obj.style = items1;
-  const items2 = [callback(guild_id(4697), { absolute: true, tall: true }), ];
-  obj1 = { guildId: guild_id, channelId: id };
-  let tmp17Result = null;
+  items1[1] = tmp15;
+  obj[2] = items1;
+  const items2 = [callback(guild_id(4719), { absolute: true, tall: true }), ];
+  obj1 = { guildId: guild_id, channelId: id, children: null };
+  let tmp16Result = null;
   if (!flag) {
-    const obj2 = { hidden: !tmp2, animated: true };
+    const obj2 = { hidden: null, animated: true, barStyle: null };
+    obj2[0] = !tmp2;
     if (isConnectedToVoiceChannel) {
       let str2 = "light-content";
     } else {
       str2 = "dark-content";
     }
-    obj2.barStyle = str2;
-    tmp17Result = callback(guild_id(6658), obj2);
-    const tmp17 = callback;
-    const tmp20 = guild_id(6658);
+    obj2[2] = str2;
+    tmp16Result = tmp16(tmp4(6679), obj2);
+    const tmp19 = !tmp2;
+    const tmp4Result = tmp4(6679);
   }
-  const items3 = [tmp17Result, , , , ];
-  const obj3 = {};
+  const items3 = [tmp16Result, , , , ];
   const items4 = [tmp.safeAreaTop, ];
-  const obj4 = { height: top };
+  const obj3 = { height: top, display: null };
   let str4;
   if (flag) {
     str4 = "none";
   }
-  obj4.display = str4;
-  items4[1] = obj4;
-  obj3.style = items4;
-  items3[1] = callback(View, obj3);
-  const obj5 = {};
+  obj3[1] = str4;
+  items4[1] = obj3;
+  items3[1] = callback(View, { style: items4 });
   const items5 = [tmp.chatHeaderSpacer, ];
-  const obj6 = {};
   let str5;
   if (flag) {
     str5 = "none";
   }
-  obj6.display = str5;
-  items5[1] = obj6;
-  obj5.style = items5;
-  items3[2] = callback(View, obj5);
-  items3[3] = callback(guild_id(10389), { guildId: guild_id, channelId: id, chatInputRef: ref, screenIndex: "voice-panel" });
-  const obj7 = {};
+  items5[1] = { display: str5 };
+  items3[2] = callback(View, { style: items5 });
+  items3[3] = callback(guild_id(10413), { guildId: guild_id, channelId: id, chatInputRef: ref, screenIndex: "voice-panel" });
   const items6 = [tmp.chatHeader, ];
-  const obj8 = { top };
+  const obj4 = { top, display: null };
   let str6;
   if (flag) {
     str6 = "none";
   }
-  obj8.display = str6;
-  items6[1] = obj8;
-  obj7.style = items6;
-  const obj9 = { accessibilityRole: "button", onPress: openVoice };
-  const intl = id(1212).intl;
-  obj9.accessibilityLabel = intl.string(id(1212).t["13/7kX"]);
-  obj9.style = tmp.chatHeaderBackIconContainer;
-  const obj10 = { source: guild_id(10006), size: id(1273).Icon.Sizes.MEDIUM };
-  obj9.children = callback(id(1273).Icon, obj10);
-  const items7 = [callback(id(4695).PressableOpacity, obj9), ];
-  const tmp11 = guild_id(4101)();
-  const tmp12 = closure_7;
-  const tmp13 = View;
-  const tmp15 = closure_7;
-  const tmp22 = callback;
-  const tmp23 = View;
-  const tmp24 = callback;
-  const tmp25 = View;
-  const tmp26 = closure_7;
-  const tmp27 = View;
-  items7[1] = callback(View, { style: tmp.chatHeaderTitleContainer, children: callback(id(11848).ChannelTitle, { guildId: guild_id, channelId: id }) });
-  obj7.children = items7;
-  items3[4] = tmp26(tmp27, obj7);
-  obj1.children = items3;
-  items2[1] = tmp15(id(10220).ChannelContainer, obj1);
-  obj.children = items2;
-  return tmp12(tmp13, obj);
+  const obj5 = { style: items6, children: null };
+  obj4[1] = str6;
+  items6[1] = obj4;
+  const obj6 = { accessibilityRole: "button", onPress: openVoice, accessibilityLabel: null, style: null, children: null };
+  const intl = tmp7(1236).intl;
+  obj6[2] = intl.string(id(1236).t["13/7kX"]);
+  obj6[3] = tmp.chatHeaderBackIconContainer;
+  const obj7 = { source: null, size: null };
+  obj7[0] = guild_id(10028);
+  obj7[1] = id(1297).Icon.Sizes.MEDIUM;
+  obj6[4] = callback(id(1297).Icon, obj7);
+  const items7 = [callback(id(4717).PressableOpacity, obj6), ];
+  const tmp12 = guild_id(4125)();
+  items7[1] = callback(View, { style: tmp.chatHeaderTitleContainer, children: callback(id(11873).ChannelTitle, { guildId: guild_id, channelId: id }) });
+  obj5[1] = items7;
+  items3[4] = closure_7(View, obj5);
+  obj1[2] = items3;
+  items2[1] = closure_7(id(10241).ChannelContainer, obj1);
+  obj[3] = items2;
+  return closure_7(View, obj);
 });
-const result = require("resetFocusTimer").fileFinishedImporting("modules/video_calls/native/components/ChannelVoiceChat.tsx");
+const result = require("VoiceChatDrawerState").fileFinishedImporting("modules/video_calls/native/components/ChannelVoiceChat.tsx");
 
 export default memoResult;

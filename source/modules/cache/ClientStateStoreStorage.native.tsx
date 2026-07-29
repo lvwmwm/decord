@@ -1,32 +1,28 @@
-// Module ID: 13223
-// Function ID: 101693
+// Module ID: 13246
+// Function ID: 13247
 // Name: setClientState
-// Dependencies: [27, 477, 479, 2]
+// Dependencies: [17, 500, 502, 2]
 // Exports: setClientState
 
-// Module 13223 (setClientState)
+// Module 13246 (setClientState)
 import { NativeModules } from "get ActivityIndicator";
 
 const result = require("enforcing").fileFinishedImporting("modules/cache/ClientStateStoreStorage.native.tsx");
 
-export const setClientState = function setClientState(outer2_22, arg1) {
+export const setClientState = function setClientState(closure_17, arg1) {
   if (obj.isAndroid()) {
     let str;
-    if (null != outer2_22) {
-      str = outer2_22.toString();
+    if (closure_17 != null) {
+      str = closure_17.toString();
     }
-    let tmp9;
-    if (null != str) {
-      tmp9 = str;
-    }
-    importDefault(479).setClientState(tmp9, undefined);
-    const obj2 = importDefault(479);
+    importDefault(502).setClientState(str, undefined);
+    const obj2 = importDefault(502);
   } else {
     const DCDFastConnectManager = NativeModules.DCDFastConnectManager;
-    let tmp3 = null;
-    if (null != outer2_22) {
-      tmp3 = outer2_22;
+    let tmp4 = closure_17;
+    if (closure_17 == null) {
+      tmp4 = null;
     }
-    DCDFastConnectManager.setClientState(tmp3, null);
+    DCDFastConnectManager.setClientState(tmp4, null);
   }
 };

@@ -1,42 +1,41 @@
-// Module ID: 7689
-// Function ID: 61385
+// Module ID: 7712
+// Function ID: 7713
 // Name: MessagePreview
-// Dependencies: [31, 27, 33, 4165, 689, 7690, 4009, 4161, 1212, 9266, 2]
+// Dependencies: [19, 17, 21, 4189, 712, 7713, 4033, 4185, 1236, 9290, 2]
 // Exports: default
 
-// Module 7689 (MessagePreview)
-import "result";
+// Module 7712 (MessagePreview)
+import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import importDefaultResult from "RowManager";
+import createCacheKey from "createCacheKey";
 
-let closure_4;
-let closure_5;
+let c4;
+let c5;
 const require = arg1;
-({ jsx: closure_4, jsxs: closure_5 } = jsxProd);
-_createForOfIteratorHelperLoose = { container: { alignSelf: "stretch", marginHorizontal: 16, marginBottom: 16 } };
-_createForOfIteratorHelperLoose = { color: require("_createForOfIteratorHelperLoose").colors.MOBILE_TEXT_HEADING_PRIMARY };
-_createForOfIteratorHelperLoose.borderColor = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.title = { lineHeight: 16, marginBottom: 8 };
-const obj1 = { minHeight: 40, borderRadius: require("_createForOfIteratorHelperLoose").radii.sm, borderWidth: 1, padding: 8 };
-_createForOfIteratorHelperLoose.chatItemContainer = obj1;
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-importDefaultResult = new importDefaultResult();
-importDefaultResult.setOptions({ renderCodedLinks: false, renderGiftCode: false, renderActivityInstanceEmbed: false, renderActivityInviteEmbed: false, renderEmbeds: true, ignoreMentioned: true, inlineAttachmentMedia: false, inlineEmbedMedia: true, renderReactions: false });
+({ jsx: c4, jsxs: c5 } = jsxProd);
+createCacheKey = { container: { alignSelf: "stretch", marginHorizontal: 16, marginBottom: 16 }, borderColor: null, title: null, chatItemContainer: null };
+createCacheKey = { color: require("Themes").colors.MOBILE_TEXT_HEADING_PRIMARY };
+createCacheKey[1] = createCacheKey;
+createCacheKey[2] = { lineHeight: 16, marginBottom: 8 };
+createCacheKey[3] = { minHeight: 40, borderRadius: require("Themes").radii.sm, borderWidth: 1, padding: 8 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+const obj5 = new require("setOptions")();
+obj5.setOptions({ renderCodedLinks: false, renderGiftCode: false, renderActivityInstanceEmbed: false, renderActivityInviteEmbed: false, renderEmbeds: true, ignoreMentioned: true, inlineAttachmentMedia: false, inlineEmbedMedia: true, renderReactions: false });
+const obj1 = { minHeight: 40, borderRadius: require("Themes").radii.sm, borderWidth: 1, padding: 8 };
 const result = require("jsxProd").fileFinishedImporting("modules/in_app_reports/native/components/InAppReportsMessagePreview.tsx");
 
 export default function MessagePreview(message) {
-  const tmp = _createForOfIteratorHelperLoose();
-  let obj = require(4009) /* hexToRgb */;
-  obj = { style: tmp.container };
-  obj = { style: tmp.title, accessibilityRole: "header", variant: "text-xs/bold" };
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj.children = intl.string(require(1212) /* getSystemLocale */.t.iouM3a);
-  const items = [callback(require(4161) /* Text */.Text, obj), ];
+  const tmp = createCacheKey();
+  let obj = require(4033) /* hexToRgba */;
+  obj = { style: tmp.container, children: null };
+  obj = { style: tmp.title, accessibilityRole: "header", variant: "text-xs/bold", children: null };
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj[3] = intl.string(require(1236) /* getSystemLocale */.t.iouM3a);
+  const items = [callback(require(4185) /* Text */.Text, obj), ];
   const hexWithOpacityResult = obj.hexWithOpacity(tmp.borderColor.color, 0.08);
   const items1 = [tmp.chatItemContainer, { borderColor: hexWithOpacityResult }];
-  items[1] = callback(View, { style: items1, children: callback(importDefault(9266), obj2) });
-  obj.children = items;
+  items[1] = callback(View, { style: items1, children: callback(importDefault(9290), obj2) });
+  obj[1] = items;
   return callback2(View, obj);
 };

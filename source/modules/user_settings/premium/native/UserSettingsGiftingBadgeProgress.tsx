@@ -1,368 +1,378 @@
-// Module ID: 12581
-// Function ID: 97209
+// Module ID: 12603
+// Function ID: 12604
 // Name: GiftingBadgeIntro
-// Dependencies: [57, 31, 27, 8085, 33, 4165, 689, 1324, 5497, 5517, 566, 8082, 4161, 1212, 2295, 9684, 4578, 8744, 9677, 12582, 12584, 8368, 2]
+// Dependencies: [32, 19, 17, 8109, 21, 4189, 712, 1348, 5515, 5535, 589, 8106, 4185, 1236, 2319, 9706, 4600, 8768, 9699, 12604, 12606, 8392, 2]
 // Exports: default
 
-// Module 12581 (GiftingBadgeIntro)
+// Module 12603 (GiftingBadgeIntro)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
-import get_ActivityIndicator from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import { getSingleRequirementThreshold as closure_8 } from "_isNativeReflectConstruct";
-import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import getGiftingBadgeProgressPercent from "getGiftingBadgeProgressPercent";
+import get_ActivityIndicator from "GiftIcon";
+import map from "map";
+import { getSingleRequirementThreshold as closure_8 } from "map";
+import jsxProd from "ChevronSmallDownIcon";
+import createCacheKey from "createCacheKey";
 
-let closure_10;
-let closure_11;
-let closure_5;
+let c10;
+let c5;
+let c9;
 let closure_6;
-let closure_9;
+let unpackModuleId;
 const require = arg1;
 function GiftingBadgeIntro(analyticsLocation) {
   analyticsLocation = analyticsLocation.analyticsLocation;
-  const tmp = callback4(importDefault(analyticsLocations[7])("UserSettingsGiftingBadgeProgress"));
-  importDefault = tmp;
+  let importDefault;
+  let analyticsLocations;
+  const tmp3 = callback4(importDefault(analyticsLocations[7])("UserSettingsGiftingBadgeProgress"));
+  importDefault = tmp3;
   analyticsLocations = importDefault(analyticsLocations[8])(importDefault(analyticsLocations[9]).USER_SETTINGS_GIFT_INVENTORY).analyticsLocations;
   let obj = analyticsLocation(analyticsLocations[10]);
-  let items = [_isNativeReflectConstruct];
+  let items = [map];
   const stateFromStores = obj.useStateFromStores(items, () => {
+    badgeById = badgeById.getBadgeById(analyticsLocation(analyticsLocations[11]).BadgeId.GIFTING);
     let tiers;
-    const badgeById = outer1_7.getBadgeById(analyticsLocation(analyticsLocations[11]).BadgeId.GIFTING);
-    if (null != badgeById) {
+    if (badgeById != null) {
       tiers = badgeById.tiers;
     }
     return tiers;
   });
-  let tmp3 = null;
+  let tmp6 = null;
   if (null != stateFromStores) {
-    obj = { style: tmp.wrapper };
-    obj = { style: tmp.introContent };
-    let obj1 = { variant: "text-xs/normal", color: "text-muted" };
-    let intl = analyticsLocation(analyticsLocations[13]).intl;
-    obj1.children = intl.string(importDefault(analyticsLocations[14])["4Yp0mI"]);
-    obj.children = callback2(analyticsLocation(analyticsLocations[12]).Text, obj1);
+    obj = { style: null, children: null };
+    obj[0] = tmp3.wrapper;
+    obj = { style: null, children: null };
+    obj[0] = tmp3.introContent;
+    let obj1 = { variant: "text-xs/normal", color: "text-muted", children: null };
+    let intl = tmp5(tmp2[13]).intl;
+    obj1[2] = intl.string(tmp(tmp2[14])["4Yp0mI"]);
+    obj[1] = callback2(tmp5(tmp2[12]).Text, obj1);
     let items1 = [callback2(closure_6, obj), , ];
-    let obj2 = {
-      style: tmp.introGrid,
-      children: stateFromStores.map((simple_icon_url) => {
-          let obj = { style: tmp.introGridItem };
-          let tmp3 = null != simple_icon_url.simple_icon_url;
-          if (tmp3) {
-            obj = { icon: simple_icon_url.simple_icon_url, size: 44 };
-            tmp3 = outer1_9(tmp(analyticsLocations[15]), obj);
-          }
-          const items = [tmp3, ];
-          obj = { style: tmp.badgeCopy };
-          const obj1 = { variant: "text-sm/semibold", color: "text-subtle" };
-          const name = simple_icon_url.name;
-          let str = "";
-          if (null != name) {
-            str = name;
-          }
-          obj1.children = str;
-          const items1 = [outer1_9(analyticsLocation(analyticsLocations[12]).Text, obj1), ];
-          const obj2 = { variant: "text-xs/normal", color: "text-muted" };
-          const intl = analyticsLocation(analyticsLocations[13]).intl;
-          const obj3 = { count: outer1_8(simple_icon_url) };
-          obj2.children = intl.format(outer1_10(analyticsLocations[14]).qvx9E4, obj3);
-          items1[1] = outer1_9(analyticsLocation(analyticsLocations[12]).Text, obj2);
-          obj.children = items1;
-          items[1] = outer1_10(outer1_6, obj);
-          obj.children = items;
-          return outer1_10(outer1_6, obj, simple_icon_url.key);
-        })
-    };
+    let obj2 = { style: null, children: null };
+    obj2[0] = tmp3.introGrid;
+    obj2[1] = stateFromStores.map((simple_icon_url) => {
+      let obj = { style: _undefined.introGridItem, children: null };
+      let tmp4 = null != simple_icon_url.simple_icon_url;
+      if (tmp4) {
+        obj = { icon: null, size: 44 };
+        obj[0] = simple_icon_url.simple_icon_url;
+        tmp4 = outer1_9(_undefined(analyticsLocations[15]), obj);
+      }
+      const items = [tmp4, ];
+      obj = { style: _undefined.badgeCopy, children: null };
+      let str = simple_icon_url.name;
+      if (str == null) {
+        str = "";
+      }
+      const items1 = [outer1_9(analyticsLocation(analyticsLocations[12]).Text, { variant: "text-sm/semibold", color: "text-subtle", children: str }), ];
+      const obj1 = { variant: "text-xs/normal", color: "text-muted", children: null };
+      const intl = tmp9(tmp10[13]).intl;
+      const obj2 = { count: null };
+      obj2[0] = outer1_8(simple_icon_url);
+      obj1[2] = intl.format(_undefined(analyticsLocations[14]).qvx9E4, obj2);
+      items1[1] = outer1_9(analyticsLocation(analyticsLocations[12]).Text, obj1);
+      obj[1] = items1;
+      items[1] = outer1_10(outer1_6, obj);
+      obj[1] = items;
+      return outer1_10(outer1_6, obj, simple_icon_url.key);
+    });
     items1[1] = callback2(closure_6, obj2);
-    let obj3 = { variant: "primary" };
-    const obj4 = { size: "sm", color: importDefault(analyticsLocations[6]).unsafe_rawColors.WHITE };
-    obj3.icon = callback2(analyticsLocation(analyticsLocations[17]).GiftIcon, obj4);
-    const intl2 = analyticsLocation(analyticsLocations[13]).intl;
-    obj3.text = intl2.string(importDefault(analyticsLocations[14]).DZnomS);
-    obj3.onPress = function onPress() {
+    const obj3 = { variant: "primary", icon: null, text: null, onPress: null, grow: true };
+    const obj4 = { size: "sm", color: null };
+    obj4[1] = tmp(tmp2[6]).unsafe_rawColors.WHITE;
+    obj3[1] = callback2(tmp5(tmp2[17]).GiftIcon, obj4);
+    const intl2 = tmp5(tmp2[13]).intl;
+    obj3[2] = intl2.string(tmp(tmp2[14]).DZnomS);
+    obj3[3] = function onPress() {
       let obj = analyticsLocation(analyticsLocations[18]);
       obj = { analyticsLocation, analyticsLocations };
       obj.openGiftModal(obj);
     };
-    obj3.grow = true;
-    items1[2] = callback2(analyticsLocation(analyticsLocations[16]).Button, obj3);
-    obj.children = items1;
-    tmp3 = callback3(closure_6, obj);
+    items1[2] = callback2(tmp5(tmp2[16]).Button, obj3);
+    obj[1] = items1;
+    tmp6 = callback3(closure_6, obj);
   }
-  return tmp3;
+  return tmp6;
 }
-({ Pressable: closure_5, View: closure_6 } = get_ActivityIndicator);
-({ jsx: closure_9, jsxs: closure_10, Fragment: closure_11 } = jsxProd);
-let closure_12 = _createForOfIteratorHelperLoose.createStyles((arg0) => {
-  let obj = {};
-  obj = { backgroundColor: importDefault(689).colors.BACKGROUND_MOD_MUTED };
+({ Pressable: c5, View: closure_6 } = get_ActivityIndicator);
+({ jsx: c9, jsxs: c10, Fragment: unpackModuleId } = jsxProd);
+let closure_12 = createCacheKey.createStyles((arg0) => {
+  let obj = { backgroundColor: importDefault(712).colors.BACKGROUND_MOD_MUTED, borderRadius: null, padding: null, gap: null };
   let num = 0;
   if (arg0) {
-    num = importDefault(689).radii.md;
+    num = tmp(712).radii.md;
   }
-  obj.borderRadius = num;
-  obj.padding = importDefault(689).space.PX_16;
-  obj.gap = importDefault(689).space.PX_16;
-  obj.wrapper = obj;
-  obj = { gap: importDefault(689).space.PX_8 };
-  obj.progressContainer = obj;
-  const obj1 = { flexDirection: "row", alignItems: "center", gap: importDefault(689).space.PX_4 };
-  obj.progressRow = obj1;
-  obj.progressTitleText = { flex: 1 };
-  obj.progressBarContainer = { paddingHorizontal: importDefault(689).space.PX_8 };
-  const obj2 = { paddingHorizontal: importDefault(689).space.PX_8 };
-  obj.progressBarTrack = { height: 6, borderRadius: importDefault(689).radii.round, backgroundColor: importDefault(689).colors.BACKGROUND_MOD_NORMAL, overflow: "hidden" };
-  const obj3 = { height: 6, borderRadius: importDefault(689).radii.round, backgroundColor: importDefault(689).colors.BACKGROUND_MOD_NORMAL, overflow: "hidden" };
-  obj.progressBarFill = { height: 6, borderRadius: importDefault(689).radii.round, backgroundColor: importDefault(689).unsafe_rawColors.BRAND_500 };
-  const obj5 = { flexDirection: "row", justifyContent: "flex-end", alignItems: "center", minHeight: importDefault(689).space.PX_16, marginTop: importDefault(689).space.PX_4 };
-  obj.progressLabels = obj5;
-  const obj4 = { height: 6, borderRadius: importDefault(689).radii.round, backgroundColor: importDefault(689).unsafe_rawColors.BRAND_500 };
-  obj.divider = { height: 1, backgroundColor: importDefault(689).colors.BACKGROUND_MOD_NORMAL };
-  obj.dropdownRow = { flexDirection: "row", alignItems: "center", justifyContent: "space-between" };
-  const obj7 = { flexDirection: "row", flexWrap: "wrap", justifyContent: "center", paddingVertical: importDefault(689).space.PX_4 };
-  obj.badgesRow = obj7;
-  const obj8 = { width: "33.33%", alignItems: "center", justifyContent: "center", padding: importDefault(689).space.PX_8, gap: importDefault(689).space.PX_8 };
-  obj.badgeItem = obj8;
-  const obj6 = { height: 1, backgroundColor: importDefault(689).colors.BACKGROUND_MOD_NORMAL };
-  obj.badgeItemActive = { backgroundColor: importDefault(689).colors.BACKGROUND_MOD_MUTED, borderRadius: importDefault(689).radii.md, borderWidth: 1, borderColor: importDefault(689).colors.BORDER_MUTED };
-  obj.badgeCopy = { alignItems: "center", gap: 2 };
-  const obj9 = { backgroundColor: importDefault(689).colors.BACKGROUND_MOD_MUTED, borderRadius: importDefault(689).radii.md, borderWidth: 1, borderColor: importDefault(689).colors.BORDER_MUTED };
-  obj.footerText = { textAlign: "center", marginBottom: importDefault(689).space.PX_16 };
-  const obj10 = { textAlign: "center", marginBottom: importDefault(689).space.PX_16 };
-  obj.introContent = { paddingHorizontal: importDefault(689).space.PX_8, gap: importDefault(689).space.PX_4 };
-  const obj12 = { flexDirection: "row", flexWrap: "wrap", justifyContent: "center", paddingVertical: importDefault(689).space.PX_4, paddingHorizontal: importDefault(689).space.PX_16 };
-  obj.introGrid = obj12;
-  const obj13 = { width: "33.33%", alignItems: "center", justifyContent: "center", padding: importDefault(689).space.PX_8, gap: importDefault(689).space.PX_8 };
-  obj.introGridItem = obj13;
+  obj = { wrapper: null, progressContainer: null, progressRow: null, progressTitleText: null, progressBarContainer: null, progressBarTrack: null, progressBarFill: null, progressLabels: null, divider: null, dropdownRow: null, badgesRow: null, badgeItem: null, badgeItemActive: null, badgeCopy: null, footerText: null, introContent: null, introGrid: null, introGridItem: null };
+  obj[1] = num;
+  obj[2] = importDefault(712).space.PX_16;
+  obj[3] = importDefault(712).space.PX_16;
+  obj[0] = obj;
+  obj = { gap: tmp(712).space.PX_8 };
+  obj[1] = obj;
+  obj[2] = { flexDirection: "row", alignItems: "center", gap: importDefault(712).space.PX_4 };
+  obj[3] = { flex: 1 };
+  const obj1 = { flexDirection: "row", alignItems: "center", gap: importDefault(712).space.PX_4 };
+  obj[4] = { paddingHorizontal: importDefault(712).space.PX_8 };
+  const obj2 = { paddingHorizontal: importDefault(712).space.PX_8 };
+  obj[5] = { height: 6, borderRadius: importDefault(712).radii.round, backgroundColor: importDefault(712).colors.BACKGROUND_MOD_NORMAL, overflow: "hidden" };
+  const obj3 = { height: 6, borderRadius: importDefault(712).radii.round, backgroundColor: importDefault(712).colors.BACKGROUND_MOD_NORMAL, overflow: "hidden" };
+  obj[6] = { height: 6, borderRadius: importDefault(712).radii.round, backgroundColor: importDefault(712).unsafe_rawColors.BRAND_500 };
+  const obj4 = { height: 6, borderRadius: importDefault(712).radii.round, backgroundColor: importDefault(712).unsafe_rawColors.BRAND_500 };
+  obj[7] = { flexDirection: "row", justifyContent: "flex-end", alignItems: "center", minHeight: importDefault(712).space.PX_16, marginTop: importDefault(712).space.PX_4 };
+  const obj5 = { flexDirection: "row", justifyContent: "flex-end", alignItems: "center", minHeight: importDefault(712).space.PX_16, marginTop: importDefault(712).space.PX_4 };
+  obj[8] = { height: 1, backgroundColor: importDefault(712).colors.BACKGROUND_MOD_NORMAL };
+  obj[9] = { flexDirection: "row", alignItems: "center", justifyContent: "space-between" };
+  const obj6 = { height: 1, backgroundColor: importDefault(712).colors.BACKGROUND_MOD_NORMAL };
+  obj[10] = { flexDirection: "row", flexWrap: "wrap", justifyContent: "center", paddingVertical: importDefault(712).space.PX_4 };
+  const obj7 = { flexDirection: "row", flexWrap: "wrap", justifyContent: "center", paddingVertical: importDefault(712).space.PX_4 };
+  obj[11] = { width: "33.33%", alignItems: "center", justifyContent: "center", padding: importDefault(712).space.PX_8, gap: importDefault(712).space.PX_8 };
+  const obj8 = { width: "33.33%", alignItems: "center", justifyContent: "center", padding: importDefault(712).space.PX_8, gap: importDefault(712).space.PX_8 };
+  obj[12] = { backgroundColor: importDefault(712).colors.BACKGROUND_MOD_MUTED, borderRadius: importDefault(712).radii.md, borderWidth: 1, borderColor: importDefault(712).colors.BORDER_MUTED };
+  obj[13] = { alignItems: "center", gap: 2 };
+  const obj9 = { backgroundColor: importDefault(712).colors.BACKGROUND_MOD_MUTED, borderRadius: importDefault(712).radii.md, borderWidth: 1, borderColor: importDefault(712).colors.BORDER_MUTED };
+  obj[14] = { textAlign: "center", marginBottom: importDefault(712).space.PX_16 };
+  const obj10 = { textAlign: "center", marginBottom: importDefault(712).space.PX_16 };
+  obj[15] = { paddingHorizontal: importDefault(712).space.PX_8, gap: importDefault(712).space.PX_4 };
+  const obj11 = { paddingHorizontal: importDefault(712).space.PX_8, gap: importDefault(712).space.PX_4 };
+  obj[16] = { flexDirection: "row", flexWrap: "wrap", justifyContent: "center", paddingVertical: importDefault(712).space.PX_4, paddingHorizontal: importDefault(712).space.PX_16 };
+  const obj12 = { flexDirection: "row", flexWrap: "wrap", justifyContent: "center", paddingVertical: importDefault(712).space.PX_4, paddingHorizontal: importDefault(712).space.PX_16 };
+  obj[17] = { width: "33.33%", alignItems: "center", justifyContent: "center", padding: importDefault(712).space.PX_8, gap: importDefault(712).space.PX_8 };
   return obj;
 });
 const result = require("get ActivityIndicator").fileFinishedImporting("modules/user_settings/premium/native/UserSettingsGiftingBadgeProgress.tsx");
 
 export default function UserSettingsGiftingBadgeProgress(analyticsLocation) {
   let badgeProgress;
+  let c2;
   let currentTier;
   let nextTier;
   let tiers;
+  let tmp5;
   analyticsLocation = analyticsLocation.analyticsLocation;
-  const tmp = callback4(importDefault(1324)("UserSettingsGiftingBadgeProgress"));
-  importDefault = tmp;
-  const tmp2 = analyticsLocations(currentTier.useState(false), 2);
-  let first = tmp2[0];
-  const dependencyMap = tmp2[1];
-  analyticsLocations = importDefault(5497)(importDefault(5517).USER_SETTINGS_GIFT_INVENTORY).analyticsLocations;
-  let obj = analyticsLocation(566);
-  let items = [_isNativeReflectConstruct];
+  let importDefault;
+  let dependencyMap;
+  let analyticsLocations;
+  currentTier = undefined;
+  const tmp3 = callback4(importDefault(1348)("UserSettingsGiftingBadgeProgress"));
+  importDefault = tmp3;
+  [tmp5, c2] = analyticsLocations(currentTier.useState(false), 2);
+  const tmp4 = analyticsLocations(currentTier.useState(false), 2);
+  analyticsLocations = importDefault(5515)(importDefault(5535).USER_SETTINGS_GIFT_INVENTORY).analyticsLocations;
+  let obj = analyticsLocation(589);
+  let items = [map];
   const stateFromStoresObject = obj.useStateFromStoresObject(items, () => {
-    const obj = {};
-    const singleRequirementProgress = outer1_7.getSingleRequirementProgress(analyticsLocation(8082).BadgeId.GIFTING);
-    let current;
-    if (null != singleRequirementProgress) {
-      current = singleRequirementProgress.current;
+    let getBadgeById;
+    let getCurrentTier;
+    let getNextTier;
+    let getRemainingToNextTier;
+    singleRequirementProgress = singleRequirementProgress.getSingleRequirementProgress(analyticsLocation(_undefined2[11]).BadgeId.GIFTING);
+    let num;
+    if (singleRequirementProgress != null) {
+      num = singleRequirementProgress.current;
     }
-    let num = 0;
-    if (null != current) {
-      num = current;
+    if (num == null) {
+      num = 0;
     }
-    obj.badgeProgress = num;
-    obj.currentTier = outer1_7.getCurrentTier(analyticsLocation(8082).BadgeId.GIFTING);
-    obj.nextTier = outer1_7.getNextTier(analyticsLocation(8082).BadgeId.GIFTING);
-    obj.giftsRemaining = outer1_7.getRemainingToNextTier(analyticsLocation(8082).BadgeId.GIFTING);
-    const badgeById = outer1_7.getBadgeById(analyticsLocation(8082).BadgeId.GIFTING);
+    const obj = { badgeProgress: num, currentTier: getCurrentTier(analyticsLocation(_undefined2[11]).BadgeId.GIFTING), nextTier: getNextTier(analyticsLocation(_undefined2[11]).BadgeId.GIFTING), giftsRemaining: getRemainingToNextTier(analyticsLocation(_undefined2[11]).BadgeId.GIFTING), tiers: null };
+    ({ getCurrentTier, getNextTier, getRemainingToNextTier, getBadgeById } = singleRequirementProgress);
+    const badgeById = getBadgeById(tmp2(tmp3[11]).BadgeId.GIFTING);
     let tiers;
-    if (null != badgeById) {
+    if (badgeById != null) {
       tiers = badgeById.tiers;
     }
-    if (null == tiers) {
+    if (tiers == null) {
       tiers = [];
     }
-    obj.tiers = tiers;
+    obj[4] = tiers;
     return obj;
   });
   ({ badgeProgress, currentTier } = stateFromStoresObject);
   ({ nextTier, tiers } = stateFromStoresObject);
   if (0 === badgeProgress) {
-    obj = { analyticsLocation };
+    obj = { analyticsLocation: null };
+    obj[0] = analyticsLocation;
     return callback2(GiftingBadgeIntro, obj);
   } else {
-    let tmp49 = callback(currentTier);
-    const tmp77 = callback(nextTier);
-    const giftingBadgeProgressPercent = analyticsLocation(12582).getGiftingBadgeProgressPercent(badgeProgress, currentTier, nextTier);
+    let tmp21 = callback(currentTier);
+    const tmp27 = callback(nextTier);
+    const giftingBadgeProgressPercent = tmp7(12604).getGiftingBadgeProgressPercent(badgeProgress, currentTier, nextTier);
     if (null != nextTier) {
-      const intl2 = analyticsLocation(1212).intl;
-      obj = { count: tmp6 };
-      let name;
-      if (null != nextTier) {
-        name = nextTier.name;
+      const intl2 = tmp7(1236).intl;
+      obj = { count: null, nextTier: null };
+      obj[0] = tmp9;
+      let str2;
+      if (nextTier != null) {
+        str2 = nextTier.name;
       }
-      let str2 = "";
-      if (null != name) {
-        str2 = name;
+      if (str2 == null) {
+        str2 = "";
       }
-      obj.nextTier = str2;
-      let formatToPlainStringResult = intl2.formatToPlainString(importDefault(2295).XTX3OO, obj);
+      obj[1] = str2;
+      let formatToPlainStringResult = intl2.formatToPlainString(tmp(2319).XTX3OO, obj);
     } else {
-      let intl = analyticsLocation(1212).intl;
-      let obj1 = {};
-      let name1;
-      if (null != currentTier) {
-        name1 = currentTier.name;
+      let intl = tmp7(1236).intl;
+      let str;
+      if (currentTier != null) {
+        str = currentTier.name;
       }
-      let str = "";
-      if (null != name1) {
-        str = name1;
+      if (str == null) {
+        str = "";
       }
-      obj1.currentTier = str;
-      formatToPlainStringResult = intl.formatToPlainString(importDefault(2295).LnsdbK, obj1);
+      let obj1 = { currentTier: null };
+      obj1[0] = str;
+      formatToPlainStringResult = intl.formatToPlainString(tmp(2319).LnsdbK, obj1);
     }
-    let obj2 = { style: tmp.wrapper };
-    let obj3 = { style: tmp.progressContainer };
-    const obj4 = { style: tmp.progressRow };
+    let obj2 = { style: null, children: null };
+    obj2[0] = tmp3.wrapper;
+    const obj3 = { style: null, children: null };
+    obj3[0] = tmp3.progressContainer;
+    const obj4 = { style: null, children: null };
+    obj4[0] = tmp3.progressRow;
     let simple_icon_url;
-    if (null != currentTier) {
+    if (currentTier != null) {
       simple_icon_url = currentTier.simple_icon_url;
     }
-    let tmp23 = null != simple_icon_url;
-    if (tmp23) {
-      const obj5 = { icon: currentTier.simple_icon_url, size: 36 };
-      const obj6 = { margin: 4 };
-      obj5.style = obj6;
-      tmp23 = callback2(importDefault(9684), obj5);
+    let tmp14 = null != simple_icon_url;
+    if (tmp14) {
+      const obj5 = { icon: null, size: 36, style: null };
+      obj5[0] = currentTier.simple_icon_url;
+      obj5[2] = { margin: 4 };
+      tmp14 = callback2(tmp(9706), obj5);
     }
-    let items1 = [tmp23, , ];
-    const obj7 = { style: tmp.progressTitleText, variant: "text-md/medium", color: "text-strong", children: formatToPlainStringResult };
-    items1[1] = callback2(analyticsLocation(4161).Text, obj7);
+    let items1 = [tmp14, , ];
+    const obj6 = { style: null, variant: "text-md/medium", color: "text-strong", children: null };
+    obj6[0] = tmp3.progressTitleText;
+    obj6[3] = formatToPlainStringResult;
+    items1[1] = callback2(tmp7(4185).Text, obj6);
     let simple_icon_url1;
-    if (null != nextTier) {
+    if (nextTier != null) {
       simple_icon_url1 = nextTier.simple_icon_url;
     }
-    let tmp31 = null != simple_icon_url1;
-    if (tmp31) {
-      const obj8 = { icon: nextTier.simple_icon_url, size: 36 };
-      const obj9 = { margin: 4 };
-      obj8.style = obj9;
-      tmp31 = callback2(importDefault(9684), obj8);
+    let tmp16Result = null != simple_icon_url1;
+    if (tmp16Result) {
+      const obj7 = { icon: null, size: 36, style: null };
+      obj7[0] = nextTier.simple_icon_url;
+      obj7[2] = { margin: 4 };
+      tmp16Result = tmp16(tmp(9706), obj7);
     }
-    items1[2] = tmp31;
-    obj4.children = items1;
-    let items2 = [callback3(closure_6, obj4), ];
-    const obj10 = { style: tmp.progressBarContainer };
-    const obj11 = { style: tmp.progressBarTrack };
-    const obj12 = {};
-    const items3 = [tmp.progressBarFill, ];
-    const obj13 = {};
+    items1[2] = tmp16Result;
+    obj4[1] = items1;
+    let items2 = [closure_10(closure_6, obj4), ];
+    const obj8 = { style: null, children: null };
+    obj8[0] = tmp3.progressBarContainer;
+    const obj9 = { style: null, children: null };
+    obj9[0] = tmp3.progressBarTrack;
+    const obj10 = { style: null };
+    const items3 = [tmp3.progressBarFill, ];
+    const obj11 = { width: null };
     const _HermesInternal = HermesInternal;
-    obj13.width = "" + giftingBadgeProgressPercent + "%";
-    items3[1] = obj13;
-    obj12.style = items3;
-    obj11.children = callback2(closure_6, obj12);
-    const items4 = [callback2(closure_6, obj11), ];
-    const obj14 = { style: tmp.progressLabels };
-    const obj15 = { variant: "text-xs/normal", color: "text-subtle" };
-    const intl3 = analyticsLocation(1212).intl;
-    const obj16 = {};
-    let tmp48 = tmp49;
+    obj11[0] = "" + giftingBadgeProgressPercent + "%";
+    items3[1] = obj11;
+    obj10[0] = items3;
+    obj9[1] = callback2(closure_6, obj10);
+    const items4 = [callback2(closure_6, obj9), ];
+    const obj12 = { style: null, children: null };
+    obj12[0] = tmp3.progressLabels;
+    const intl3 = tmp7(1236).intl;
+    let tmp20 = tmp21;
     if (null != nextTier) {
-      tmp48 = tmp77;
+      tmp20 = tmp27;
     }
-    obj16.threshold = tmp48;
+    const obj13 = { threshold: null, count: null };
+    obj13[0] = tmp20;
     if (null != nextTier) {
-      tmp49 = badgeProgress;
+      tmp21 = badgeProgress;
     }
-    obj16.count = tmp49;
-    obj15.children = intl3.format(importDefault(2295).iIpfQe, obj16);
-    obj14.children = callback2(analyticsLocation(4161).Text, obj15);
-    items4[1] = callback2(closure_6, obj14);
-    obj10.children = items4;
-    items2[1] = callback3(closure_6, obj10);
-    obj3.children = items2;
-    const items5 = [callback3(closure_6, obj3), , , , ];
-    const obj17 = { variant: "primary" };
-    const obj18 = { size: "sm", color: importDefault(689).unsafe_rawColors.WHITE };
-    obj17.icon = callback2(analyticsLocation(8744).GiftIcon, obj18);
-    const intl4 = analyticsLocation(1212).intl;
-    obj17.text = intl4.string(importDefault(2295).DZnomS);
-    obj17.onPress = function onPress() {
-      let obj = analyticsLocation(9677);
+    const obj14 = { variant: "text-xs/normal", color: "text-subtle", children: null };
+    obj13[1] = tmp21;
+    obj14[2] = intl3.format(tmp(2319).iIpfQe, obj13);
+    obj12[1] = callback2(tmp7(4185).Text, obj14);
+    items4[1] = callback2(closure_6, obj12);
+    obj8[1] = items4;
+    items2[1] = closure_10(closure_6, obj8);
+    obj3[1] = items2;
+    const items5 = [closure_10(closure_6, obj3), , , , ];
+    const obj15 = { variant: "primary", icon: null, text: null, onPress: null, grow: true };
+    const obj16 = { size: "sm", color: null };
+    obj16[1] = tmp(712).unsafe_rawColors.WHITE;
+    obj15[1] = callback2(tmp7(8768).GiftIcon, obj16);
+    const intl4 = tmp7(1236).intl;
+    obj15[2] = intl4.string(tmp(2319).DZnomS);
+    obj15[3] = function onPress() {
+      let obj = analyticsLocation(_undefined2[18]);
       obj = { analyticsLocation, analyticsLocations };
       obj.openGiftModal(obj);
     };
-    obj17.grow = true;
-    items5[1] = callback2(analyticsLocation(4578).Button, obj17);
-    const obj19 = { style: tmp.divider };
-    items5[2] = callback2(closure_6, obj19);
-    const obj20 = {
-      style: tmp.dropdownRow,
-      onPress() {
-          return dependencyMap((arg0) => !arg0);
-        }
+    items5[1] = callback2(tmp7(4600).Button, obj15);
+    const obj17 = { style: null };
+    obj17[0] = tmp3.divider;
+    items5[2] = callback2(closure_6, obj17);
+    const obj18 = { style: null, onPress: null, children: null };
+    obj18[0] = tmp3.dropdownRow;
+    obj18[1] = function onPress() {
+      return _undefined2((arg0) => !arg0);
     };
-    const obj21 = { variant: "text-sm/medium", color: "text-strong" };
-    const intl5 = analyticsLocation(1212).intl;
-    obj21.children = intl5.string(importDefault(2295).WZ4cXA);
-    const items6 = [callback2(analyticsLocation(4161).Text, obj21), ];
-    if (first) {
-      let ChevronSmallDownIcon = tmp61(12584).ChevronSmallUpIcon;
+    const obj19 = { variant: "text-sm/medium", color: "text-strong", children: null };
+    const intl5 = tmp7(1236).intl;
+    obj19[2] = intl5.string(tmp(2319).WZ4cXA);
+    const items6 = [callback2(tmp7(4185).Text, obj19), ];
+    if (tmp11Result) {
+      let ChevronSmallDownIcon = tmp7(12606).ChevronSmallUpIcon;
     } else {
-      ChevronSmallDownIcon = tmp61(8368).ChevronSmallDownIcon;
+      ChevronSmallDownIcon = tmp7(8392).ChevronSmallDownIcon;
     }
-    const obj22 = { color: importDefault(689).colors.INTERACTIVE_ICON_DEFAULT };
-    items6[1] = callback2(ChevronSmallDownIcon, obj22);
-    obj20.children = items6;
-    items5[3] = callback3(closure_5, obj20);
-    if (first) {
-      const obj23 = {};
-      const obj24 = {
-        style: tmp.badgesRow,
-        children: tiers.map((key) => {
-              let obj = {};
-              const items = [tmp.badgeItem, ];
-              key = undefined;
-              if (null != currentTier) {
-                key = currentTier.key;
-              }
-              let badgeItemActive = key.key === key;
-              if (badgeItemActive) {
-                badgeItemActive = tmp.badgeItemActive;
-              }
-              items[1] = badgeItemActive;
-              obj.style = items;
-              let tmp6 = null != key.simple_icon_url;
-              if (tmp6) {
-                obj = { icon: key.simple_icon_url, size: 36 };
-                tmp6 = outer1_9(tmp(9684), obj);
-              }
-              const items1 = [tmp6, ];
-              obj = { style: tmp.badgeCopy };
-              const obj1 = { variant: "text-sm/semibold", color: "text-strong" };
-              const name = key.name;
-              let str = "";
-              if (null != name) {
-                str = name;
-              }
-              obj1.children = str;
-              const items2 = [outer1_9(analyticsLocation(4161).Text, obj1), ];
-              const obj2 = { variant: "text-xs/normal", color: "text-subtle" };
-              const intl = analyticsLocation(1212).intl;
-              const obj3 = { count: outer1_8(key) };
-              obj2.children = intl.format(outer1_10(2295).qvx9E4, obj3);
-              items2[1] = outer1_9(analyticsLocation(4161).Text, obj2);
-              obj.children = items2;
-              items1[1] = outer1_10(outer1_6, obj);
-              obj.children = items1;
-              return outer1_10(outer1_6, obj, key.key);
-            })
-      };
-      const items7 = [callback2(closure_6, obj24), ];
-      const obj25 = { style: tmp.footerText, variant: "text-xs/normal", color: "text-muted" };
-      const intl6 = analyticsLocation(1212).intl;
-      obj25.children = intl6.string(importDefault(2295)["4Yp0mI"]);
-      items7[1] = callback2(analyticsLocation(4161).Text, obj25);
-      obj23.children = items7;
-      first = callback3(closure_11, obj23);
+    const obj20 = { color: null };
+    obj20[0] = tmp(712).colors.INTERACTIVE_ICON_DEFAULT;
+    items6[1] = callback2(ChevronSmallDownIcon, obj20);
+    obj18[2] = items6;
+    items5[3] = closure_10(closure_5, obj18);
+    if (tmp11Result) {
+      const obj21 = { children: null };
+      const obj22 = { style: null, children: null };
+      obj22[0] = tmp3.badgesRow;
+      obj22[1] = tiers.map((key) => {
+        const items = [_undefined.badgeItem, ];
+        key = undefined;
+        if (currentTier != null) {
+          key = currentTier.key;
+        }
+        let obj = { style: items, children: null };
+        items[1] = key.key === key && _undefined.badgeItemActive;
+        let tmp6 = null != key.simple_icon_url;
+        if (tmp6) {
+          obj = { icon: null, size: 36 };
+          obj[0] = key.simple_icon_url;
+          tmp6 = outer1_9(_undefined(_undefined2[15]), obj);
+        }
+        const items1 = [tmp6, ];
+        obj = { style: tmp3.badgeCopy, children: null };
+        let str = key.name;
+        if (str == null) {
+          str = "";
+        }
+        const items2 = [outer1_9(analyticsLocation(_undefined2[12]).Text, { variant: "text-sm/semibold", color: "text-strong", children: str }), ];
+        const obj1 = { variant: "text-xs/normal", color: "text-subtle", children: null };
+        const intl = tmp11(tmp12[13]).intl;
+        const obj2 = { count: null };
+        obj2[0] = outer1_8(key);
+        obj1[2] = intl.format(_undefined(_undefined2[14]).qvx9E4, obj2);
+        items2[1] = outer1_9(analyticsLocation(_undefined2[12]).Text, obj1);
+        obj[1] = items2;
+        items1[1] = outer1_10(outer1_6, obj);
+        obj[1] = items1;
+        return outer1_10(outer1_6, obj, key.key);
+      });
+      const items7 = [tmp16(tmp12, obj22), ];
+      const obj23 = { style: null, variant: "text-xs/normal", color: "text-muted", children: null };
+      obj23[0] = tmp3.footerText;
+      const intl6 = tmp7(1236).intl;
+      obj23[3] = intl6.string(tmp(2319)["4Yp0mI"]);
+      items7[1] = tmp16(tmp7(4185).Text, obj23);
+      obj21[0] = items7;
+      tmp11Result = tmp11(closure_11, obj21);
     }
-    items5[4] = first;
-    obj2.children = items5;
-    return callback3(closure_6, obj2);
+    items5[4] = tmp11Result;
+    obj2[1] = items5;
+    return closure_10(closure_6, obj2);
   }
-  const tmp4 = importDefault(5497);
+  let tmp6 = importDefault(5515);
 };

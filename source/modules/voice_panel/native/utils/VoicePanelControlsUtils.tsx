@@ -1,32 +1,28 @@
-// Module ID: 11409
-// Function ID: 88472
-// Name: getControlsDefaultWidth
-// Dependencies: [10016, 10019, 10014, 2]
+// Module ID: 11433
+// Function ID: 11434
+// Name: VOICE_PANEL_DRAWER_MAX_WIDTH
+// Dependencies: [10038, 10041, 10036, 2]
+// Exports: getControlsDefaultWidth, getControlsDrawerOpenWidth
 
-// Module 11409 (getControlsDefaultWidth)
-import { VOICE_PANEL_DRAWER_MAX_WIDTH as closure_0 } from "VoicePanelModes";
+// Module 11433 (VOICE_PANEL_DRAWER_MAX_WIDTH)
+import { VOICE_PANEL_DRAWER_MAX_WIDTH } from "VoicePanelModes";
 import { EDGE_GUTTER } from "CARD_SIZE";
 import { CONTROLS_MAX_WIDTH } from "VoicePanelControlsModes";
 
-let closure_3 = { code: "function getControlsDefaultWidth_VoicePanelControlsUtilsTsx1(windowWidth,safeAreaLeft,safeAreaRight){const{EDGE_GUTTER,CONTROLS_MAX_WIDTH}=this.__closure;safeAreaLeft=Math.max(safeAreaLeft,EDGE_GUTTER);safeAreaRight=Math.max(safeAreaRight,EDGE_GUTTER);return Math.min(windowWidth-safeAreaLeft-safeAreaRight,CONTROLS_MAX_WIDTH);}" };
-let closure_4 = { code: "function getControlsDrawerOpenWidth_VoicePanelControlsUtilsTsx2(windowWidth,safeAreaLeft,safeAreaRight){const{VOICE_PANEL_DRAWER_MAX_WIDTH}=this.__closure;return Math.min(windowWidth-safeAreaLeft-safeAreaRight,VOICE_PANEL_DRAWER_MAX_WIDTH);}" };
-const tmp2 = (() => {
-  export function getControlsDefaultWidth(width, left, right) {
-    const bound = Math.max(left, outer1_1);
-    return Math.min(width - bound - Math.max(right, outer1_1), outer1_2);
-  }
-  getControlsDefaultWidth.__closure = { EDGE_GUTTER, CONTROLS_MAX_WIDTH };
-  getControlsDefaultWidth.__workletHash = 5986385407902;
-  getControlsDefaultWidth.__initData = closure_3;
-  return getControlsDefaultWidth;
-})();
-const tmp3 = (() => {
-  export function getControlsDrawerOpenWidth(width, left, right) {
-    return Math.min(width - left - right, outer1_0);
-  }
-  getControlsDrawerOpenWidth.__closure = { VOICE_PANEL_DRAWER_MAX_WIDTH: closure_0 };
-  getControlsDrawerOpenWidth.__workletHash = 10795739180192;
-  getControlsDrawerOpenWidth.__initData = closure_4;
-  return getControlsDrawerOpenWidth;
-})();
+function getControlsDefaultWidth(width, left, right) {
+  const bound = Math.max(left, EDGE_GUTTER);
+  return Math.min(width - bound - Math.max(right, EDGE_GUTTER), CONTROLS_MAX_WIDTH);
+}
+getControlsDefaultWidth.__closure = { EDGE_GUTTER, CONTROLS_MAX_WIDTH };
+getControlsDefaultWidth.__workletHash = 5986385407902;
+getControlsDefaultWidth.__initData = { code: "function getControlsDefaultWidth_VoicePanelControlsUtilsTsx1(windowWidth,safeAreaLeft,safeAreaRight){const{EDGE_GUTTER,CONTROLS_MAX_WIDTH}=this.__closure;safeAreaLeft=Math.max(safeAreaLeft,EDGE_GUTTER);safeAreaRight=Math.max(safeAreaRight,EDGE_GUTTER);return Math.min(windowWidth-safeAreaLeft-safeAreaRight,CONTROLS_MAX_WIDTH);}" };
+function getControlsDrawerOpenWidth(width, left, right) {
+  return Math.min(width - left - right, VOICE_PANEL_DRAWER_MAX_WIDTH);
+}
+getControlsDrawerOpenWidth.__closure = { VOICE_PANEL_DRAWER_MAX_WIDTH };
+getControlsDrawerOpenWidth.__workletHash = 10795739180192;
+getControlsDrawerOpenWidth.__initData = { code: "function getControlsDrawerOpenWidth_VoicePanelControlsUtilsTsx2(windowWidth,safeAreaLeft,safeAreaRight){const{VOICE_PANEL_DRAWER_MAX_WIDTH}=this.__closure;return Math.min(windowWidth-safeAreaLeft-safeAreaRight,VOICE_PANEL_DRAWER_MAX_WIDTH);}" };
 const result = require("VoicePanelControlsModes").fileFinishedImporting("modules/voice_panel/native/utils/VoicePanelControlsUtils.tsx");
+
+export { getControlsDefaultWidth };
+export { getControlsDrawerOpenWidth };

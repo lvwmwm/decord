@@ -1,26 +1,26 @@
-// Module ID: 11970
-// Function ID: 92494
+// Module ID: 11994
+// Function ID: 11995
 // Name: isOnPlayStation
-// Dependencies: [653, 2]
+// Dependencies: [676, 2]
 // Exports: default
 
-// Module 11970 (isOnPlayStation)
+// Module 11994 (isOnPlayStation)
 import { ActivityGamePlatforms } from "ME";
 
 const result = require("set").fileFinishedImporting("modules/activities/utils/isOnPlayStation.tsx");
 
 export default function isOnPlayStation(platform) {
   platform = undefined;
-  if (null != platform) {
+  if (platform != null) {
     platform = platform.platform;
   }
-  let tmp2 = platform === ActivityGamePlatforms.PS4;
-  if (!tmp2) {
+  let tmp3 = platform === ActivityGamePlatforms.PS4;
+  if (!tmp3) {
     let platform1;
-    if (null != platform) {
+    if (platform != null) {
       platform1 = platform.platform;
     }
-    tmp2 = platform1 === ActivityGamePlatforms.PS5;
+    tmp3 = platform1 === tmp2.PS5;
   }
-  return tmp2;
+  return tmp3;
 };

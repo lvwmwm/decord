@@ -1,23 +1,23 @@
-// Module ID: 15675
-// Function ID: 120704
+// Module ID: 15710
+// Function ID: 15711
 // Name: useListHasSingleMessageRequest
-// Dependencies: [31, 5637, 5638, 15676, 566, 5156, 15677, 2]
+// Dependencies: [19, 5655, 5656, 15711, 589, 5178, 15712, 2]
 // Exports: useListHasSingleMessageRequest, useListHasSingleSpamMessageRequest
 
-// Module 15675 (useListHasSingleMessageRequest)
-import result from "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_5 from "_isNativeReflectConstruct";
+// Module 15710 (useListHasSingleMessageRequest)
+import noop from "noop";
+import processChannel from "processChannel";
+import closure_5 from "processChannel";
 
 const require = arg1;
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/message_request/hooks/useListHasSingleMessageRequest.tsx");
+const result = require("processChannel").fileFinishedImporting("modules/message_request/hooks/useListHasSingleMessageRequest.tsx");
 
 export const useListHasSingleMessageRequest = function useListHasSingleMessageRequest() {
   messageRequestsCount = messageRequestsCount(stateFromStores[3]).useMessageRequestsCount();
   const ref = React.useRef(messageRequestsCount);
   const obj = messageRequestsCount(stateFromStores[3]);
-  const items = [_isNativeReflectConstruct];
-  stateFromStores = messageRequestsCount(stateFromStores[4]).useStateFromStores(items, () => outer1_4.isReady());
+  const items = [processChannel];
+  stateFromStores = messageRequestsCount(stateFromStores[4]).useStateFromStores(items, () => ready.isReady());
   React = React.useRef(stateFromStores);
   const items1 = [stateFromStores, messageRequestsCount];
   const effect = React.useEffect(() => {
@@ -38,7 +38,7 @@ export const useListHasSingleSpamMessageRequest = function useListHasSingleSpamM
   const ref = React.useRef(spamMessageRequestCount);
   const obj = spamMessageRequestCount(stateFromStores[6]);
   const items = [closure_5];
-  stateFromStores = spamMessageRequestCount(stateFromStores[4]).useStateFromStores(items, () => outer1_5.isReady());
+  stateFromStores = spamMessageRequestCount(stateFromStores[4]).useStateFromStores(items, () => ready.isReady());
   React = React.useRef(stateFromStores);
   const items1 = [stateFromStores, spamMessageRequestCount];
   const effect = React.useEffect(() => {

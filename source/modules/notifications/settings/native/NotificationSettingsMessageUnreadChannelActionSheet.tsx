@@ -1,12 +1,12 @@
-// Module ID: 10310
-// Function ID: 79519
+// Module ID: 10331
+// Function ID: 10332
 // Name: NotificationSettingsMessageUnreadChannelActionSheet
-// Dependencies: [31, 4360, 653, 4361, 662, 33, 10291, 10309, 1212, 5113, 10292, 5108, 2]
+// Dependencies: [19, 4385, 676, 4386, 685, 21, 10312, 10330, 1236, 5135, 10313, 5130, 2]
 // Exports: default
 
-// Module 10310 (NotificationSettingsMessageUnreadChannelActionSheet)
-import "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 10331 (NotificationSettingsMessageUnreadChannelActionSheet)
+import "noop";
+import updateUserGuildSettingsInternal from "updateUserGuildSettingsInternal";
 import { UserNotificationSettings } from "ME";
 import { UnreadSetting } from "ReadStateTypes";
 import { ChannelNotificationSettingsFlags as closure_6 } from "MAX_FAVORITES";
@@ -19,28 +19,27 @@ export default function NotificationSettingsMessageUnreadChannelActionSheet(chan
   let notification;
   let unread;
   const _require = channel;
-  let obj = _require(10291);
+  let obj = _require(10312);
   const channelPresetSettings = obj.useChannelPresetSettings(channel.channel);
   ({ unread, notification } = channelPresetSettings);
-  obj = { value: unread };
+  obj = { value: unread, disabledMentionOnlyWithReason: null, onChange: null };
   let stringResult;
   if (notification === UserNotificationSettings.ALL_MESSAGES) {
-    const intl = _require(1212).intl;
-    stringResult = intl.string(_require(1212).t.eP8yWU);
+    const intl = tmp(1236).intl;
+    stringResult = intl.string(tmp(1236).t.eP8yWU);
   }
-  obj.disabledMentionOnlyWithReason = stringResult;
-  obj.onChange = function onChange(ONLY_MENTIONS) {
+  obj[1] = stringResult;
+  obj[2] = function onChange(ONLY_MENTIONS) {
     const channelIdFlags = outer1_3.getChannelIdFlags(channel.channel.guild_id, channel.channel.id);
     let obj = outer1_1(outer1_2[9]);
-    obj = {};
     if (ONLY_MENTIONS === outer1_5.ALL_MESSAGES) {
       let UNREADS_ONLY_MENTIONS = outer1_6.UNREADS_ALL_MESSAGES;
     } else {
       UNREADS_ONLY_MENTIONS = outer1_6.UNREADS_ONLY_MENTIONS;
     }
-    obj.flags = channel(outer1_2[10]).withChannelUnreadFlags(channelIdFlags, UNREADS_ONLY_MENTIONS);
+    obj = { flags: channel(outer1_2[10]).withChannelUnreadFlags(channelIdFlags, UNREADS_ONLY_MENTIONS) };
     const NotificationLabel = channel(outer1_2[11]).NotificationLabel;
     const result = obj.updateChannelOverrideSettings(channel.channel.guild_id, channel.channel.id, obj, NotificationLabel.unreads(ONLY_MENTIONS));
   };
-  return jsx(importDefault(10309), { value: unread });
+  return jsx(importDefault(10330), { value: unread, disabledMentionOnlyWithReason: null, onChange: null });
 };

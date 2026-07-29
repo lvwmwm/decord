@@ -1,40 +1,42 @@
-// Module ID: 11351
-// Function ID: 88076
+// Module ID: 11375
+// Function ID: 11376
 // Name: PollDurationRadioGroup
-// Dependencies: [31, 33, 11350, 3878, 4133, 7632, 1212, 7631, 5533, 2]
+// Dependencies: [19, 21, 11374, 3902, 4157, 7655, 1236, 7654, 5551, 2]
 // Exports: default
 
-// Module 11351 (PollDurationRadioGroup)
-import result from "result";
+// Module 11375 (PollDurationRadioGroup)
+import noop from "noop";
 import { jsx } from "jsxProd";
 
 const require = arg1;
 function PollDurationRadioGroup(onChange) {
   onChange = onChange.onChange;
-  let tmp = importDefault(11350)();
+  let importDefault;
+  const tmp = importDefault(11374)();
   importDefault = tmp;
   const items = [tmp, onChange];
   const callback = React.useCallback((arg0) => {
-    const tmp = onChange(arg0);
+    onChange(arg0);
     const AccessibilityAnnouncer = onChange(outer1_2[3]).AccessibilityAnnouncer;
-    AccessibilityAnnouncer.announce(tmp[arg0]);
-    tmp(outer1_2[4]).hideActionSheet();
+    AccessibilityAnnouncer.announce(_undefined[arg0]);
+    _undefined(outer1_2[4]).hideActionSheet();
   }, items);
-  let obj = {};
-  const intl = onChange(1212).intl;
-  obj.title = intl.string(onChange(1212).t["0ZStp9"]);
-  obj.hasIcons = false;
-  obj.onChange = callback;
-  obj.defaultValue = onChange.selectedDuration;
+  let obj = { title: null, hasIcons: false, onChange: null, defaultValue: null, children: null };
+  const intl = onChange(1236).intl;
+  obj[0] = intl.string(onChange(1236).t["0ZStp9"]);
+  obj[2] = callback;
+  obj[3] = onChange.selectedDuration;
   const entries = Object.entries(tmp);
-  obj.children = entries.map((arg0) => {
+  obj[4] = entries.map((arg0) => {
     let tmp;
     let tmp2;
     [tmp, tmp2] = arg0;
-    const obj = { value: parseInt(tmp), label: tmp2 };
-    return outer1_4(onChange(outer1_2[7]).TableRadioRow, obj, tmp);
+    const obj = { value: null, label: null };
+    obj[0] = parseInt(tmp);
+    obj[1] = tmp2;
+    return callback(onChange(table[7]).TableRadioRow, obj, tmp);
   });
-  return jsx(onChange(7632).TableRadioGroup, {});
+  return jsx(onChange(7655).TableRadioGroup, { title: null, hasIcons: false, onChange: null, defaultValue: null, children: null });
 }
 const result = require("usePollDurationOptions").fileFinishedImporting("modules/polls/native/PollDurationActionSheet.tsx");
 
@@ -42,6 +44,7 @@ export default function PollDurationActionSheet(arg0) {
   let onChange;
   let selectedDuration;
   ({ selectedDuration, onChange } = arg0);
-  const obj = { children: <PollDurationRadioGroup selectedDuration={selectedDuration} onChange={onChange} /> };
-  return jsx(require(5533) /* ActionSheet */.ActionSheet, { children: <PollDurationRadioGroup selectedDuration={selectedDuration} onChange={onChange} /> });
+  const obj = { children: null };
+  obj[0] = <PollDurationRadioGroup selectedDuration={selectedDuration} onChange={onChange} />;
+  return jsx(require(5551) /* ActionSheet */.ActionSheet, { children: null });
 };

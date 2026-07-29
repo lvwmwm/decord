@@ -1,14 +1,13 @@
-// Module ID: 1427
-// Function ID: 16712
+// Module ID: 1451
+// Function ID: 1452
 // Name: apexExperiment
-// Dependencies: [1428, 2]
+// Dependencies: [1452, 2]
 // Exports: getAttachmentImageLadderConfig
 
-// Module 1427 (apexExperiment)
+// Module 1451 (apexExperiment)
 import ApexExperiment from "ApexExperiment";
 
-const obj = { name: "2026-07-attachment-image-ladder", kind: "user", defaultConfig: { enabled: false }, variations: { [0]: { enabled: false }, [1]: { enabled: true } } };
-const apexExperiment = ApexExperiment.createApexExperiment(obj);
+const apexExperiment = ApexExperiment.createApexExperiment({ name: "2026-07-attachment-image-ladder", kind: "user", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true } } });
 const result = require("set").fileFinishedImporting("modules/image_upload/AttachmentImageLadderExperiment.tsx");
 
 export default apexExperiment;

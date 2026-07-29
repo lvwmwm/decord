@@ -1,12 +1,12 @@
-// Module ID: 8881
-// Function ID: 70164
+// Module ID: 8905
+// Function ID: 8906
 // Name: useSecureFramesUserVerifiedKeysCount
-// Dependencies: [31, 8852, 8853, 566, 2]
+// Dependencies: [19, 8876, 8877, 589, 2]
 // Exports: useSecureFramesUserVerifiedKeysCount
 
-// Module 8881 (useSecureFramesUserVerifiedKeysCount)
-import result from "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 8905 (useSecureFramesUserVerifiedKeysCount)
+import noop from "noop";
+import initialize from "initialize";
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/rtc/hooks/useSecureFramesUserVerifiedKeysCount.tsx");
@@ -14,17 +14,18 @@ const result = require("set").fileFinishedImporting("modules/rtc/hooks/useSecure
 export const useSecureFramesUserVerifiedKeysCount = function useSecureFramesUserVerifiedKeysCount(userId) {
   userId = userId.userId;
   const keyToOmit = userId.keyToOmit;
+  let memo;
   const items = [keyToOmit];
   memo = memo.useMemo(() => {
     if (null == keyToOmit) {
       return null;
     } else {
       const _Uint8Array = Uint8Array;
-      const uint8Array = new Uint8Array(keyToOmit);
+      const uint8Array = new Uint8Array(tmp);
       return userId(keyToOmit[2]).serializeKey(uint8Array);
     }
   }, items);
-  const items1 = [_isNativeReflectConstruct];
+  const items1 = [initialize];
   const items2 = [memo, userId];
   return userId(keyToOmit[3]).useStateFromStores(items1, () => {
     const userVerifiedKeys = outer1_3.getUserVerifiedKeys(userId);
@@ -32,7 +33,7 @@ export const useSecureFramesUserVerifiedKeysCount = function useSecureFramesUser
     if (null != userVerifiedKeys) {
       const _Object = Object;
       const keys = Object.keys(userVerifiedKeys);
-      num = keys.filter((arg0) => arg0 !== outer1_2).length;
+      num = keys.filter((arg0) => arg0 !== noop).length;
     }
     return num;
   }, items2);

@@ -1,34 +1,35 @@
-// Module ID: 8341
-// Function ID: 66828
+// Module ID: 8365
+// Function ID: 8366
 // Name: UseAnimatedPosition
-// Dependencies: [57, 31, 27, 1348, 1918, 1850, 7913, 5545, 653, 5222, 33, 4165, 5223, 4026, 1557, 566, 7958, 5497, 5517, 7928, 3838, 8083, 4698, 8058, 8342, 8073, 8064, 8042, 8053, 8343, 1450, 5118, 8072, 4101, 3869, 689, 8338, 8344, 7960, 1905, 7959, 675, 4017, 4133, 8335, 1456, 5221, 1273, 8345, 1212, 3877, 8349, 477, 6590, 8351, 11939, 12029, 8035, 5481, 12204, 1282, 2]
+// Dependencies: [32, 19, 17, 1372, 1942, 1874, 7938, 5563, 676, 5244, 21, 4189, 5245, 4050, 1581, 589, 7983, 5515, 5535, 7953, 3862, 8107, 4720, 8082, 8366, 8097, 8088, 8066, 8077, 8367, 1474, 5140, 8096, 4125, 3893, 712, 8362, 8368, 7985, 1929, 7984, 698, 4041, 4157, 8359, 1480, 5243, 1297, 8369, 1236, 3901, 8373, 500, 6611, 8375, 11963, 12053, 8059, 5499, 12228, 1306, 2]
 
-// Module 8341 (UseAnimatedPosition)
-import usePreloadProfileEffect from "usePreloadProfileEffect";
-import importAllResult from "NAV_BAR_HEIGHT";
-import get_ActivityIndicator from "useProfileEffect";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_8 from "_isNativeReflectConstruct";
-import closure_9 from "_isNativeReflectConstruct";
-import closure_10 from "_isNativeReflectConstruct";
+// Module 8365 (UseAnimatedPosition)
+import scaleProfileFrame from "scaleProfileFrame";
+import importAllResult from "useBottomSheetRef";
+import get_ActivityIndicator from "context";
+import ensureGuildLoaded from "ensureGuildLoaded";
+import trackCommunicationDisabled from "trackCommunicationDisabled";
+import mergeGuildAvatar from "mergeGuildAvatar";
+import handleFormOpen from "handleFormOpen";
 import { UserProfileThemeTypes } from "ARBITRARY_LARGE_OFFSET";
 import ME from "ME";
 import { ACTION_SHEET_MAX_WIDTH } from "ACTION_SHEET_START_HEIGHT_RATIO";
-import jsxProd from "useTheme";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import jsxProd from "UserProfileAnalyticsProvider";
+import createCacheKey from "createCacheKey";
 
+let c5;
 let closure_12;
-let closure_13;
 let closure_14;
 let closure_16;
 let closure_17;
-let closure_5;
 let closure_6;
+let map1;
 const require = arg1;
 function UseAnimatedPosition(animatedPosition) {
   animatedPosition = animatedPosition.animatedPosition;
-  const animatedPosition2 = animatedPosition(5223).useBottomSheet().animatedPosition;
-  const obj = animatedPosition(5223);
+  let animatedPosition2;
+  animatedPosition2 = animatedPosition(5245).useBottomSheet().animatedPosition;
+  const obj = animatedPosition(5245);
   const fn = function n() {
     return animatedPosition2.get();
   };
@@ -41,7 +42,7 @@ function UseAnimatedPosition(animatedPosition) {
   fn2.__closure = { animatedPosition };
   fn2.__workletHash = 15360670503044;
   fn2.__initData = closure_20;
-  const animatedReaction = animatedPosition(4026).useAnimatedReaction(fn, fn2);
+  const animatedReaction = animatedPosition(4050).useAnimatedReaction(fn, fn2);
   return null;
 }
 function ActionSheetAlignedView(children) {
@@ -49,51 +50,51 @@ function ActionSheetAlignedView(children) {
   const animatedIndex = children.animatedIndex;
   const safeAreaTop = children.safeAreaTop;
   let obj = animatedPosition(safeAreaTop[13]);
-  const fn = function u() {
-    let obj = {};
+  const fn = function c() {
+    let obj = { transform: null, opacity: null };
     obj = { translateY: animatedPosition.get() + safeAreaTop };
     const items = [obj];
-    obj.transform = items;
+    obj[0] = items;
     const value = animatedIndex.get();
-    const items1 = [-1, 0];
-    obj.opacity = animatedPosition(safeAreaTop[13]).interpolate(value, items1, [0, 1], animatedPosition(safeAreaTop[13]).Extrapolation.CLAMP);
+    obj[1] = animatedPosition(safeAreaTop[13]).interpolate(value, [-1, 0], [0, 1], animatedPosition(safeAreaTop[13]).Extrapolation.CLAMP);
     return obj;
   };
   obj = { animatedPosition, safeAreaTop, interpolate: animatedPosition(safeAreaTop[13]).interpolate, animatedIndex, Extrapolation: animatedPosition(safeAreaTop[13]).Extrapolation };
   fn.__closure = obj;
   fn.__workletHash = 16546700050596;
-  fn.__initData = closure_21;
+  fn.__initData = closure_22;
   const animatedStyle = obj.useAnimatedStyle(fn);
   const style = [absoluteFill.absoluteFill, animatedStyle];
-  return callback2(animatedIndex(safeAreaTop[13]).View, { style, pointerEvents: "box-none", children: children.children });
+  return callback(animatedIndex(safeAreaTop[13]).View, { style, pointerEvents: "box-none", children: children.children });
 }
-({ StyleSheet: closure_5, View: closure_6 } = get_ActivityIndicator);
-({ AnalyticEvents: closure_12, EMPTY_STRING_SNOWFLAKE_ID: closure_13, UserSettingsSections: closure_14 } = ME);
+let c4 = importAllResult;
+({ StyleSheet: c5, View: closure_6 } = get_ActivityIndicator);
+({ AnalyticEvents: closure_12, EMPTY_STRING_SNOWFLAKE_ID: map1, UserSettingsSections: closure_14 } = ME);
 ({ jsx: closure_16, jsxs: closure_17 } = jsxProd);
-let closure_18 = _createForOfIteratorHelperLoose.createStyles({ container: { flex: 1 }, profileContainer: { position: "relative" }, noPadding: { paddingHorizontal: 0 }, profileEffect: { position: "absolute", top: 0, left: 0, right: 0, zIndex: 1 } });
+let closure_18 = createCacheKey.createStyles({ container: { flex: 1 }, profileContainer: { position: "relative" }, noPadding: { paddingHorizontal: 0 }, profileEffect: { position: "absolute", top: 0, left: 0, right: 0, zIndex: 1 } });
 let closure_19 = { code: "function UserProfileActionSheetTsx1(){const{value}=this.__closure;return value.get();}" };
 let closure_20 = { code: "function UserProfileActionSheetTsx2(prepared){const{animatedPosition}=this.__closure;return animatedPosition.set(prepared);}" };
-let closure_21 = { code: "function UserProfileActionSheetTsx3(){const{animatedPosition,safeAreaTop,interpolate,animatedIndex,Extrapolation}=this.__closure;return{transform:[{translateY:animatedPosition.get()+safeAreaTop}],opacity:interpolate(animatedIndex.get(),[-1,0],[0,1],Extrapolation.CLAMP)};}" };
-let closure_22 = { code: "function UserProfileActionSheetTsx4(payload,context){const{defaultHandleOnScroll,scrollPosition,animatedScrollableState,SCROLLABLE_STATE}=this.__closure;var _defaultHandleOnScrol;(_defaultHandleOnScrol=defaultHandleOnScroll)===null||_defaultHandleOnScrol===void 0||_defaultHandleOnScrol(payload,context);scrollPosition.set(animatedScrollableState.get()===SCROLLABLE_STATE.LOCKED?0:payload.contentOffset.y);}" };
-let closure_23 = { code: "function UserProfileActionSheetTsx5(){const{scrollPosition}=this.__closure;const transform=scrollPosition.get()<=0?[{translateY:scrollPosition.get()}]:[];return{transform:transform};}" };
+let closure_22 = { code: "function UserProfileActionSheetTsx3(){const{animatedPosition,safeAreaTop,interpolate,animatedIndex,Extrapolation}=this.__closure;return{transform:[{translateY:animatedPosition.get()+safeAreaTop}],opacity:interpolate(animatedIndex.get(),[-1,0],[0,1],Extrapolation.CLAMP)};}" };
+let closure_24 = { code: "function UserProfileActionSheetTsx4(payload,context){const{defaultHandleOnScroll,scrollPosition,animatedScrollableState,SCROLLABLE_STATE}=this.__closure;var _defaultHandleOnScrol;(_defaultHandleOnScrol=defaultHandleOnScroll)===null||_defaultHandleOnScrol===void 0||_defaultHandleOnScrol(payload,context);scrollPosition.set(animatedScrollableState.get()===SCROLLABLE_STATE.LOCKED?0:payload.contentOffset.y);}" };
+let closure_25 = { code: "function UserProfileActionSheetTsx5(){const{scrollPosition}=this.__closure;const transform=scrollPosition.get()<=0?[{translateY:scrollPosition.get()}]:[];return{transform:transform};}" };
 const memoResult = importAllResult.memo(function UserProfileActionSheet(userId) {
-  let usePreloadProfileEffect;
-  let closure_4;
-  let closure_6;
-  let dependencyMap;
+  let _location;
+  let disableCalls;
+  let disableMessage;
   let isPreviewingChanges;
+  let isVoiceContext;
   let messageId;
-  let onClose;
   let openedAt;
   let primaryColor;
   let roleId;
   let secondaryColor;
   let sessionId;
+  let theme;
   userId = userId.userId;
   const channelId = userId.channelId;
-  ({ disableCalls: dependencyMap, disableMessage: usePreloadProfileEffect, isVoiceContext: closure_4, onClose } = userId);
-  ({ location: closure_6, openedAt, isPreviewingChanges } = userId);
-  ({ messageId, roleId, sessionId } = userId);
+  const onClose = userId.onClose;
+  ({ openedAt, isPreviewingChanges } = userId);
+  ({ messageId, roleId, sessionId, disableCalls, disableMessage, isVoiceContext, location: _location } = userId);
   if (isPreviewingChanges === undefined) {
     isPreviewingChanges = false;
   }
@@ -105,370 +106,376 @@ const memoResult = importAllResult.memo(function UserProfileActionSheet(userId) 
   if (prop === undefined) {
     prop = [];
   }
-  const initialSection = userId.initialSection;
   let sharedValue;
   let sharedValue1;
   let top;
   let stateFromStores;
-  let stateFromStores1;
   let guild_id;
   let stateFromStores2;
-  let callback3;
+  let UserProfileThemeTypes;
   let analyticsLocations;
-  let ref;
   let sharedValue2;
   let first;
-  let closure_22;
+  let closure_15;
   let first1;
-  let closure_24;
+  let closure_17;
   let pendingAvatarDecoration;
   let pendingProfileEffect;
   let pendingProfileFrame;
   let createUserProfileAnalyticsContext;
-  let c29;
+  let c22;
   let width;
-  let c31;
-  let closure_32;
-  let closure_33;
-  function showUserProfileActionSheetWithParams() {
-    const merged = Object.assign(createUserProfileAnalyticsContext);
-    channelId(outer1_2[44])({ sourceAnalyticsLocations: analyticsLocations });
-  }
+  let c24;
+  let closure_25;
   function handleUserSettingsClose() {
     navigation.goBack();
-    showUserProfileActionSheetWithParams();
+    const merged = Object.assign(createUserProfileAnalyticsContext);
+    channelId(onClose[44])({ sourceAnalyticsLocations: analyticsLocations });
   }
-  let fetchStartedAt = analyticsLocations();
-  let obj = userId(4026);
+  let tmp = pendingAvatarDecoration();
+  const tmp3 = onClose;
+  let obj = userId(onClose[13]);
   sharedValue = obj.useSharedValue(0);
-  let obj1 = userId(4026);
+  let obj1 = userId(onClose[13]);
   sharedValue1 = obj1.useSharedValue(-1);
-  top = channelId(1557)().top;
-  let obj2 = userId(566);
-  let items = [initialSection];
-  stateFromStores = obj2.useStateFromStores(items, () => initialSection.getUser(userId));
-  let obj3 = userId(566);
-  let items1 = [isPreviewingChanges];
+  top = channelId(onClose[14])().top;
+  let obj2 = userId(onClose[15]);
+  let items = [guild_id];
+  stateFromStores = obj2.useStateFromStores(items, () => guild_id.getUser(userId));
+  let obj4 = userId(onClose[15]);
+  const items1 = [top];
   const items2 = [channelId];
-  stateFromStores1 = obj3.useStateFromStores(items1, () => isPreviewingChanges.getChannel(channelId), items2);
+  const stateFromStores1 = obj4.useStateFromStores(items1, () => top.getChannel(channelId), items2);
   guild_id = undefined;
-  if (null != stateFromStores1) {
+  if (stateFromStores1 != null) {
     guild_id = stateFromStores1.guild_id;
   }
-  let obj4 = userId(566);
-  const items3 = [prop];
-  stateFromStores2 = obj4.useStateFromStores(items3, () => {
+  let tmp2Result = tmp2(tmp3[15]);
+  const items3 = [stateFromStores];
+  stateFromStores2 = tmp2Result.useStateFromStores(items3, () => {
     let member = null;
     if (null != guild_id) {
-      member = prop.getMember(guild_id, userId);
+      member = stateFromStores.getMember(tmp, userId);
     }
     return member;
   });
   let id;
-  if (null != stateFromStores) {
+  let tmp6Result = tmp6(tmp3[16]);
+  if (stateFromStores != null) {
     id = stateFromStores.id;
   }
-  if (null == id) {
-    id = stateFromStores;
+  if (id == null) {
+    id = sharedValue2;
   }
-  let tmp10;
+  let tmp12;
   if (flag) {
-    tmp10 = guild_id;
+    tmp12 = guild_id;
   }
-  const tmp8Result = channelId(7958)(id, tmp10);
-  callback3 = tmp8Result;
+  const tmp6ResultResult = tmp6Result(id, tmp12);
+  UserProfileThemeTypes = tmp6ResultResult;
   const items4 = [];
-  const tmp8 = channelId(7958);
-  const tmp12 = channelId(5497);
-  items4[HermesBuiltin.arraySpread(prop, 0)] = channelId(5517).USER_PROFILE_ACTION_SHEET;
-  analyticsLocations = tmp12(items4).analyticsLocations;
-  let obj5 = userId(7928);
-  const bottomSheetRef = obj5.useBottomSheetRef();
+  tmp6Result = tmp6(tmp3[17]);
+  items4[HermesBuiltin.arraySpread(prop, 0)] = channelId(tmp3[18]).USER_PROFILE_ACTION_SHEET;
+  analyticsLocations = tmp6Result(items4).analyticsLocations;
+  tmp2Result = tmp2(tmp3[19]);
+  const bottomSheetRef = tmp2Result.useBottomSheetRef();
   const bottomSheetClose = bottomSheetRef.bottomSheetClose;
-  ref = importAllResult.useRef(null);
-  let obj6 = userId(4026);
-  sharedValue2 = obj6.useSharedValue(0);
+  let obj7 = prop;
+  const ref = prop.useRef(null);
+  const arraySpreadResult = HermesBuiltin.arraySpread(prop, 0);
+  sharedValue2 = userId(tmp3[13]).useSharedValue(0);
   const items5 = [sharedValue2];
-  const memo = importAllResult.useMemo(() => (function buildBottomSheeetScrollEventsHandlers(sharedValue2) {
+  const memo = prop.useMemo(() => {
     let closure_0 = sharedValue2;
-    return (animatedRef, sharedValue, lockableScrollableContentOffsetY) => {
-      let obj = userId(outer3_2[12]);
-      const scrollEventsHandlersDefault = obj.useScrollEventsHandlersDefault(animatedRef, sharedValue, lockableScrollableContentOffsetY);
-      const animatedScrollableState = userId(outer3_2[12]).useBottomSheetInternal().animatedScrollableState;
+    return (arg0, arg1, arg2) => {
+      let obj = callback(outer1_2[12]);
+      const scrollEventsHandlersDefault = obj.useScrollEventsHandlersDefault(arg0, arg1, arg2);
+      const animatedScrollableState = callback(outer1_2[12]).useBottomSheetInternal().animatedScrollableState;
       const handleOnScroll = scrollEventsHandlersDefault.handleOnScroll;
-      const obj2 = userId(outer3_2[12]);
+      const obj2 = callback(outer1_2[12]);
       const fn = function s(contentOffset) {
-        if (null != handleOnScroll) {
-          handleOnScroll(contentOffset, arg1);
+        if (handleOnScroll != null) {
+          tmp(contentOffset, arg1);
         }
         const value = animatedScrollableState.get();
         let num = 0;
-        if (value !== userId(outer4_2[12]).SCROLLABLE_STATE.LOCKED) {
+        if (value !== animatedScrollableState(outer2_2[12]).SCROLLABLE_STATE.LOCKED) {
           num = contentOffset.contentOffset.y;
         }
         const result = animatedScrollableState.set(num);
       };
-      obj = { defaultHandleOnScroll: handleOnScroll, scrollPosition: animatedScrollableState, animatedScrollableState, SCROLLABLE_STATE: userId(outer3_2[12]).SCROLLABLE_STATE };
+      obj = { defaultHandleOnScroll: handleOnScroll, scrollPosition: animatedScrollableState, animatedScrollableState, SCROLLABLE_STATE: callback(outer1_2[12]).SCROLLABLE_STATE };
       fn.__closure = obj;
       fn.__workletHash = 13254130622789;
-      fn.__initData = closure_22;
+      fn.__initData = outer1_24;
       const items = [handleOnScroll, animatedScrollableState];
       obj = {};
-      const obj3 = userId(outer3_2[13]);
+      const obj3 = callback(outer1_2[13]);
       const merged = Object.assign(scrollEventsHandlersDefault);
-      obj["handleOnScroll"] = userId(outer3_2[13]).useWorkletCallback(fn, items);
+      obj.handleOnScroll = callback(outer1_2[13]).useWorkletCallback(fn, items);
       return obj;
     };
-  })(sharedValue2), items5);
-  let obj7 = userId(4026);
-  class W {
+  }, items5);
+  const tmp2Result1 = userId(tmp3[13]);
+  class V {
     constructor() {
-      obj = {};
-      if (c20.get() <= 0) {
-        obj = {};
-        tmp = c20;
-        obj.translateY = c20.get();
+      obj = c13;
+      if (c13.get() <= 0) {
+        obj = { translateY: null };
+        obj[0] = obj.get();
         items = [];
         items[0] = obj;
         items1 = items;
       } else {
         items1 = [];
       }
-      obj.transform = items1;
-      return obj;
+      return { transform: items1 };
     }
   }
-  W.__closure = { scrollPosition: sharedValue2 };
-  W.__workletHash = 6237718973214;
-  W.__initData = first1;
-  const animatedStyle = obj7.useAnimatedStyle(W);
-  const tmp19 = callback(importAllResult.useState(false), 2);
-  first = tmp19[0];
-  closure_22 = tmp19[1];
-  const tmp21 = callback(importAllResult.useState(0), 2);
-  first1 = tmp21[0];
-  closure_24 = tmp21[1];
-  callback = importAllResult.useCallback((nativeEvent) => {
+  V.__closure = { scrollPosition: sharedValue2 };
+  V.__workletHash = 6237718973214;
+  V.__initData = closure_25;
+  const animatedStyle = userId(tmp3[13]).useAnimatedStyle(V);
+  const tmp21 = isPreviewingChanges(prop.useState(false), 2);
+  first = tmp21[0];
+  closure_15 = tmp21[1];
+  const tmp23 = isPreviewingChanges(prop.useState(0), 2);
+  first1 = tmp23[0];
+  closure_17 = tmp23[1];
+  const callback = prop.useCallback((nativeEvent) => {
     callback2(Math.floor(nativeEvent.nativeEvent.layout.width));
   }, []);
-  const ProfileVisibility = userId(3838).ProfileVisibility;
+  const ProfileVisibility = tmp2(tmp3[20]).ProfileVisibility;
   const setting = ProfileVisibility.useSetting();
-  let obj8 = userId(566);
-  const items6 = [sharedValue];
-  const stateFromStoresObject = obj8.useStateFromStoresObject(items6, () => sharedValue.getPendingChanges());
+  const tmp2Result2 = userId(tmp3[13]);
+  const items6 = [stateFromStores2];
+  const stateFromStoresObject = userId(tmp3[15]).useStateFromStoresObject(items6, () => stateFromStores2.getPendingChanges());
   pendingAvatarDecoration = stateFromStoresObject.pendingAvatarDecoration;
   pendingProfileEffect = stateFromStoresObject.pendingProfileEffect;
   pendingProfileFrame = stateFromStoresObject.pendingProfileFrame;
-  let obj9 = userId(8083);
-  obj = { layout: "ACTION_SHEET", sourceSessionId: sessionId, userId, guildId: guild_id, channelId, messageId, roleId, showGuildProfile: flag };
-  createUserProfileAnalyticsContext = obj9.useCreateUserProfileAnalyticsContext(obj);
+  const tmp2Result3 = userId(tmp3[15]);
+  createUserProfileAnalyticsContext = userId(tmp3[21]).useCreateUserProfileAnalyticsContext({ layout: "ACTION_SHEET", sourceSessionId: sessionId, userId, guildId: guild_id, channelId, messageId, roleId, showGuildProfile: flag });
   if (isPreviewingChanges) {
     if (undefined !== pendingProfileFrame) {
       let skuId;
-      if (null != pendingProfileFrame) {
+      if (pendingProfileFrame != null) {
         skuId = pendingProfileFrame.skuId;
       }
     }
-    let obj11 = userId(4698);
-    const isScreenLandscape = obj11.useIsScreenLandscape();
-    let tmp33;
+    const isScreenLandscape = tmp2(tmp3[22]).useIsScreenLandscape();
+    let tmp32;
+    const tmp2Result5 = tmp2(tmp3[22]);
     if (!isScreenLandscape) {
-      tmp33 = skuId;
+      tmp32 = skuId;
     }
-    const tmp32Result = channelId(8058)(tmp33, "UserProfileActionSheet");
-    c29 = tmp32Result;
-    obj = {};
-    let tmp38;
-    const tmp32 = channelId(8058);
+    const tmp6Result2Result = tmp6(tmp3[23])(tmp32, "UserProfileActionSheet");
+    c22 = tmp6Result2Result;
+    let tmp35;
+    const tmp6Result1 = tmp6(tmp3[23]);
     if (!isScreenLandscape) {
-      tmp38 = skuId;
+      tmp35 = skuId;
     }
-    obj.skuId = tmp38;
-    obj.openedAt = openedAt;
-    obj.context = createUserProfileAnalyticsContext;
-    obj.analyticsLocations = analyticsLocations;
-    channelId(8342)(obj);
-    const items7 = [tmp32Result, sharedValue, top, sharedValue1, first1];
-    const memo1 = importAllResult.useMemo(() => {
-      let tmp = null;
-      if (null != c29) {
-        let obj = { animatedPosition: sharedValue, safeAreaTop: top, animatedIndex: sharedValue1 };
-        obj = { frame: c29, frameOrder: userId(outer1_2[26]).ProfileFrameLayerOrder.BACK, profileThemeType: sharedValue1.ACTION_SHEET, containerWidth: first1 };
-        obj.children = stateFromStores2(channelId(outer1_2[25]), obj);
-        tmp = stateFromStores2(pendingAvatarDecoration, obj);
-        const tmp10 = channelId(outer1_2[25]);
+    obj = { skuId: null, openedAt: null, context: null, analyticsLocations: null };
+    obj[0] = tmp35;
+    obj[1] = openedAt;
+    obj[2] = createUserProfileAnalyticsContext;
+    obj[3] = analyticsLocations;
+    tmp6(tmp3[24])(obj);
+    const items7 = [tmp6Result2Result, sharedValue, top, sharedValue1, first1];
+    const memo1 = obj7.useMemo(() => {
+      let tmp2 = null;
+      if (null != c22) {
+        let obj = { animatedPosition: null, safeAreaTop: null, animatedIndex: null, children: null };
+        obj[0] = sharedValue;
+        obj[1] = top;
+        obj[2] = sharedValue1;
+        obj = { frame: null, frameOrder: null, profileThemeType: null, containerWidth: null };
+        obj[0] = tmp;
+        obj[1] = userId(onClose[26]).ProfileFrameLayerOrder.BACK;
+        obj[2] = _undefined.ACTION_SHEET;
+        obj[3] = first1;
+        obj[3] = first1(channelId(onClose[25]), obj);
+        tmp2 = first1(width, obj);
+        const tmp10 = channelId(onClose[25]);
       }
-      return tmp;
+      return tmp2;
     }, items7);
     if (isPreviewingChanges) {
       if (undefined !== pendingProfileEffect) {
         let skuId1;
-        if (null != pendingProfileEffect) {
+        if (pendingProfileEffect != null) {
           skuId1 = pendingProfileEffect.skuId;
         }
         let skuId2 = skuId1;
       }
-      const tmp44Result = tmp44(skuId2);
-      obj1 = { user: stateFromStores, displayProfile: tmp8Result };
+      const tmp38Result = tmp38(skuId2);
+      obj = { user: null, displayProfile: null, pendingThemeColors: null };
+      obj[0] = stateFromStores;
+      obj[1] = tmp6ResultResult;
       let pendingThemeColors;
       if (isPreviewingChanges) {
         pendingThemeColors = stateFromStoresObject.pendingThemeColors;
       }
-      obj1.pendingThemeColors = pendingThemeColors;
-      const tmp49Result = channelId(8053)(obj1);
-      const theme = tmp49Result.theme;
-      ({ primaryColor, secondaryColor } = tmp49Result);
-      const tmp49 = channelId(8053);
-      const size = channelId(1450)();
+      obj[2] = pendingThemeColors;
+      const tmp6Result3 = tmp6(tmp3[28]);
+      ({ theme, primaryColor, secondaryColor } = tmp6(tmp3[28])(obj));
+      const tmp6Result4Result = tmp6(tmp3[28])(obj);
+      const size = tmp6(tmp3[30])();
       width = size.width;
-      const diff = size.height - userId(5118).NAV_BAR_HEIGHT_MULTILINE - top;
-      const items8 = [isPreviewingChanges, tmp32Result, width];
-      const memo2 = importAllResult.useMemo(() => {
+      const diff = size.height - tmp2(tmp3[31]).NAV_BAR_HEIGHT_MULTILINE - top;
+      const items8 = [isPreviewingChanges, tmp6Result2Result, width];
+      const memo2 = obj7.useMemo(() => {
         if (isPreviewingChanges) {
-          if (null != c29) {
+          if (null != c22) {
             const _Math = Math;
-            const bound = Math.min(width, guild_id);
-            return channelId(outer1_2[32])(c29, bound).overflowTop;
+            const bound = Math.min(width, closure_15);
+            return channelId(onClose[32])(tmp, bound).overflowTop;
           }
         }
         return 0;
       }, items8);
-      const tmp55 = channelId(8343)(guild_id);
-      let obj14 = userId(3869);
-      const token = obj14.useToken(channelId(689).colors.INTERACTIVE_TEXT_HOVER, theme);
-      obj2 = { userId, user: stateFromStores, channelId, guildId: guild_id, displayProfile: tmp8Result, guildMember: stateFromStores2 };
-      const tmp62 = channelId(8338)(obj2);
-      c31 = tmp62;
+      const tmp45 = tmp6(tmp3[29])(closure_15);
+      const tmp48 = tmp6(tmp3[33])();
+      const token = tmp2(tmp3[34]).useToken(tmp6(tmp3[35]).colors.INTERACTIVE_TEXT_HOVER, theme);
+      obj1 = { userId: null, user: null, channelId: null, guildId: null, displayProfile: null, guildMember: null };
+      obj1[0] = userId;
+      obj1[1] = stateFromStores;
+      obj1[2] = channelId;
+      obj1[3] = guild_id;
+      obj1[4] = tmp6ResultResult;
+      obj1[5] = stateFromStores2;
+      const tmp50 = tmp6(tmp3[36])(obj1);
+      c24 = tmp50;
       const items9 = [stateFromStores, channelId];
-      closure_32 = importAllResult.useMemo(() => {
+      const items10 = [stateFromStores, userId];
+      const memo3 = obj7.useMemo(() => {
         let result = null != stateFromStores;
         if (result) {
-          result = userId(outer1_2[37]).shouldDisableUserPresenceInChannel(stateFromStores, channelId);
-          const obj = userId(outer1_2[37]);
+          result = userId(onClose[37]).shouldDisableUserPresenceInChannel(tmp, channelId);
+          const obj = userId(onClose[37]);
         }
         return result;
       }, items9);
-      const items10 = [stateFromStores, userId];
-      const effect = importAllResult.useEffect(() => {
+      const effect = obj7.useEffect(() => {
         if (null == stateFromStores) {
-          const user = userId(outer1_2[38]).getUser(userId);
-          const obj = userId(outer1_2[38]);
+          const user = userId(onClose[38]).getUser(userId);
+          const obj = userId(onClose[38]);
         }
       }, items10);
       const items11 = [stateFromStores, guild_id, channelId];
-      const effect1 = importAllResult.useEffect(() => {
+      const effect1 = obj7.useEffect(() => {
+        let obj = stateFromStores;
         let tmp = null == stateFromStores;
         if (!tmp) {
-          let isNonUserBotResult = stateFromStores.isNonUserBot();
+          let isNonUserBotResult = obj.isNonUserBot();
           if (isNonUserBotResult) {
-            isNonUserBotResult = !channelId(outer1_2[39])(stateFromStores.id);
+            isNonUserBotResult = !channelId(onClose[39])(obj.id);
           }
           tmp = isNonUserBotResult;
         }
         if (!tmp) {
-          const obj = { type: "action_sheet", withMutualGuilds: true, withMutualFriends: true, dispatchWait: true, guildId: guild_id };
-          let tmp16;
-          const avatarURL = stateFromStores.getAvatarURL(guild_id, 80);
-          if (null != channelId) {
-            tmp16 = channelId;
-          }
-          obj.channelId = tmp16;
-          channelId(outer1_2[40])(stateFromStores.id, avatarURL, obj);
-          const tmp9 = channelId(outer1_2[40]);
+          obj = { type: "action_sheet", withMutualGuilds: true, withMutualFriends: true, dispatchWait: true, guildId: null, channelId: null };
+          obj[4] = guild_id;
+          const avatarURL = obj.getAvatarURL(guild_id, 80);
+          obj[5] = channelId;
+          channelId(onClose[40])(obj.id, avatarURL, obj);
+          const tmp10 = channelId;
+          const tmp7 = channelId(onClose[40]);
         }
       }, items11);
-      const items12 = [tmp62, tmp8Result, guild_id, first, stateFromStores2];
-      const effect2 = importAllResult.useEffect(() => {
+      const items12 = [tmp50, tmp6ResultResult, guild_id, first, stateFromStores2];
+      const effect2 = obj7.useEffect(() => {
         let tmp = first;
         if (!first) {
-          tmp = null == c17;
+          tmp = null == c11;
         }
         if (!tmp) {
           let tmp6 = null == guild_id;
           if (!tmp6) {
             let prop;
-            if (null != stateFromStores2) {
+            if (stateFromStores2 != null) {
               prop = stateFromStores2.fullProfileLoadedTimestamp;
             }
             tmp6 = null != prop;
           }
           if (tmp6) {
-            channelId(outer1_2[41]).track(top.OPEN_POPOUT, c31);
+            channelId(onClose[41]).track(analyticsLocations.OPEN_POPOUT, c24);
             callback(true);
-            const obj = channelId(outer1_2[41]);
+            const obj = channelId(onClose[41]);
           }
         }
       }, items12);
       skuId2 = undefined;
-      if (null != pendingAvatarDecoration) {
+      if (pendingAvatarDecoration != null) {
         skuId2 = pendingAvatarDecoration.skuId;
       }
       const items13 = [skuId2, , , ];
       let skuId3;
-      if (null != pendingProfileEffect) {
+      if (pendingProfileEffect != null) {
         skuId3 = pendingProfileEffect.skuId;
       }
       items13[1] = skuId3;
       let skuId4;
-      if (null != pendingProfileFrame) {
+      if (pendingProfileFrame != null) {
         skuId4 = pendingProfileFrame.skuId;
       }
       items13[2] = skuId4;
       items13[3] = prop;
-      const effect3 = importAllResult.useEffect(() => {
-        if (atResult === channelId(outer1_2[18]).COLLECTIBLES_SHOP_PROFILE_PREVIEW) {
-          let obj = channelId(outer1_2[41]);
-          obj = { type: "Collectibles Shop Details Modal Expanded", location_stack: prop };
+      const effect3 = obj7.useEffect(() => {
+        if (atResult === channelId(onClose[18]).COLLECTIBLES_SHOP_PROFILE_PREVIEW) {
+          const obj = { type: "Collectibles Shop Details Modal Expanded", location_stack: null, sku_id: null };
+          obj[1] = prop;
           let skuId;
-          if (null != pendingAvatarDecoration) {
+          if (pendingAvatarDecoration != null) {
             skuId = pendingAvatarDecoration.skuId;
           }
-          if (null == skuId) {
+          if (skuId == null) {
             let skuId1;
-            if (null != pendingProfileEffect) {
+            if (pendingProfileEffect != null) {
               skuId1 = pendingProfileEffect.skuId;
             }
             skuId = skuId1;
           }
-          if (null == skuId) {
+          if (skuId == null) {
             let skuId2;
-            if (null != pendingProfileFrame) {
+            if (pendingProfileFrame != null) {
               skuId2 = pendingProfileFrame.skuId;
             }
             skuId = skuId2;
           }
-          obj.sku_id = skuId;
-          obj.track(top.OPEN_MODAL, obj);
+          obj[2] = skuId;
+          channelId(onClose[41]).track(analyticsLocations.OPEN_MODAL, obj);
+          const tmp3Result = channelId(onClose[41]);
         }
       }, items13);
       const items14 = [onClose];
-      const effect4 = importAllResult.useEffect(() => () => {
-        if (null != outer1_5) {
-          outer1_5();
+      const effect4 = obj7.useEffect(() => () => {
+        if (closure_2 != null) {
+          tmp();
         }
       }, items14);
       const items15 = [userId];
-      const effect5 = importAllResult.useEffect(() => {
+      const effect5 = obj7.useEffect(() => {
         function handleNavigationChange() {
           let key;
-          if (null != rootNavigationRef) {
+          if (rootNavigationRef != null) {
             const currentRoute = rootNavigationRef.getCurrentRoute();
-            if (null != currentRoute) {
+            if (currentRoute != null) {
               key = currentRoute.key;
             }
           }
           if (key !== key) {
-            const obj = channelId(outer2_2[43]);
-            obj.hideActionSheet(userId(outer2_2[44]).getUserProfileActionSheetKey(rootNavigationRef));
-            const obj2 = userId(outer2_2[44]);
+            const obj2 = channelId(onClose[43]);
+            obj2.hideActionSheet(userId(onClose[44]).getUserProfileActionSheetKey(rootNavigationRef));
+            const obj3 = userId(onClose[44]);
           }
         }
-        const rootNavigationRef = userId(outer1_2[42]).getRootNavigationRef();
+        const rootNavigationRef = userId(onClose[42]).getRootNavigationRef();
         if (null != rootNavigationRef) {
           if (rootNavigationRef.isReady()) {
             let currentRoute = rootNavigationRef.getCurrentRoute();
             let key;
-            if (null != currentRoute) {
+            if (currentRoute != null) {
               key = currentRoute.key;
             }
             rootNavigationRef.addListener("state", handleNavigationChange);
@@ -478,252 +485,238 @@ const memoResult = importAllResult.memo(function UserProfileActionSheet(userId) 
           }
         }
       }, items15);
-      let obj16 = userId(1456);
-      closure_33 = obj16.useNavigation();
+      const tmp2Result6 = tmp2(tmp3[34]);
+      closure_25 = tmp2(tmp3[45]).useNavigation();
       if (null == stateFromStores) {
-        fetchStartedAt = userId;
-        fetchStartedAt = dependencyMap;
-        fetchStartedAt = stateFromStores2;
-        obj3 = { value: analyticsLocations };
-        fetchStartedAt = stateFromStores2;
-        obj4 = { value: createUserProfileAnalyticsContext, openedAt };
-        fetchStartedAt = undefined;
-        if (null != tmp8Result) {
-          fetchStartedAt = tmp8Result.fetchStartedAt;
+        obj2 = { value: null, children: null };
+        obj2[0] = analyticsLocations;
+        let obj3 = { value: null, openedAt: null, fetchStartedAt: null, fetchEndedAt: null, isLoaded: null, children: null };
+        obj3[0] = createUserProfileAnalyticsContext;
+        obj3[1] = openedAt;
+        let fetchStartedAt;
+        if (tmp6ResultResult != null) {
+          fetchStartedAt = tmp6ResultResult.fetchStartedAt;
         }
-        obj4.fetchStartedAt = fetchStartedAt;
-        fetchStartedAt = undefined;
-        if (null != tmp8Result) {
-          fetchStartedAt = tmp8Result.fetchEndedAt;
-        }
-        obj4.fetchEndedAt = fetchStartedAt;
-        fetchStartedAt = undefined;
-        if (null != tmp8Result) {
-          fetchStartedAt = tmp8Result.isLoaded;
-        }
-        obj4.isLoaded = fetchStartedAt;
-        fetchStartedAt = stateFromStores2;
-        fetchStartedAt = userId;
-        fetchStartedAt = dependencyMap;
-        obj5 = {};
-        fetchStartedAt = stateFromStores2;
-        obj6 = {};
-        obj7 = { marginTop: 42 };
-        obj6.style = obj7;
-        obj6.Illustration = userId(8345).NoResults;
-        const intl2 = userId(1212).intl;
-        obj6.body = intl2.string(userId(1212).t.eAn6z2);
-        obj5.children = stateFromStores2(userId(1273).EmptyState, obj6);
-        obj4.children = stateFromStores2(userId(5221).BottomSheet, obj5);
-        obj3.children = fetchStartedAt(userId(8083).UserProfileAnalyticsProvider, obj4);
-        fetchStartedAt = fetchStartedAt(userId(5497).AnalyticsLocationProvider, obj3);
-      } else {
-        fetchStartedAt = userId;
-        fetchStartedAt = dependencyMap;
-        fetchStartedAt = stateFromStores2;
-        obj8 = { theme, primaryColor, secondaryColor };
-        fetchStartedAt = stateFromStores2;
-        obj9 = { value: analyticsLocations };
-        fetchStartedAt = callback3;
-        const obj10 = { value: createUserProfileAnalyticsContext, openedAt };
-        let fetchStartedAt1;
-        if (null != tmp8Result) {
-          fetchStartedAt1 = tmp8Result.fetchStartedAt;
-        }
-        obj10.fetchStartedAt = fetchStartedAt1;
+        obj3[2] = fetchStartedAt;
         let fetchEndedAt;
-        if (null != tmp8Result) {
-          fetchEndedAt = tmp8Result.fetchEndedAt;
+        if (tmp6ResultResult != null) {
+          fetchEndedAt = tmp6ResultResult.fetchEndedAt;
         }
-        obj10.fetchEndedAt = fetchEndedAt;
+        obj3[3] = fetchEndedAt;
         let isLoaded;
-        if (null != tmp8Result) {
-          isLoaded = tmp8Result.isLoaded;
+        if (tmp6ResultResult != null) {
+          isLoaded = tmp6ResultResult.isLoaded;
         }
-        obj10.isLoaded = isLoaded;
-        obj11 = { ref: bottomSheetRef.bottomSheetRef, handleDisabled: true, scrollable: true, startExpanded: true, maxHeight: diff - memo2, contentStyles: fetchStartedAt.noPadding, backdropChildren: memo1, animatedIndex: sharedValue1 };
-        let tmp81 = null != tmp32Result;
-        if (tmp81) {
-          const obj12 = { animatedPosition: sharedValue };
-          tmp81 = stateFromStores2(closure_24, obj12);
+        obj3[4] = isLoaded;
+        obj4 = { children: null };
+        const obj5 = { style: null, Illustration: null, body: null };
+        obj5[0] = { marginTop: 42 };
+        obj5[1] = tmp2(tmp3[48]).NoResults;
+        const intl2 = tmp2(tmp3[49]).intl;
+        obj5[2] = intl2.string(tmp2(tmp3[49]).t.eAn6z2);
+        obj4[0] = first1(tmp2(tmp3[47]).EmptyState, obj5);
+        obj3[5] = first1(tmp2(tmp3[46]).BottomSheet, obj4);
+        obj2[1] = first1(tmp2(tmp3[21]).UserProfileAnalyticsProvider, obj3);
+        let tmp94Result3 = tmp90(tmp2(tmp3[17]).AnalyticsLocationProvider, obj2);
+      } else {
+        const obj6 = { theme: null, primaryColor: null, secondaryColor: null, children: null };
+        obj6[0] = theme;
+        obj6[1] = primaryColor;
+        obj6[2] = secondaryColor;
+        obj7 = { value: null, children: null };
+        obj7[0] = analyticsLocations;
+        const obj8 = { value: null, openedAt: null, fetchStartedAt: null, fetchEndedAt: null, isLoaded: null, children: null };
+        obj8[0] = createUserProfileAnalyticsContext;
+        obj8[1] = openedAt;
+        let fetchStartedAt1;
+        if (tmp6ResultResult != null) {
+          fetchStartedAt1 = tmp6ResultResult.fetchStartedAt;
         }
-        const items16 = [tmp81, , , ];
-        const obj13 = { gradientHeight: diff, bannerHeight: tmp55 };
-        items16[1] = stateFromStores2(channelId(8349), obj13);
-        obj14 = { scrollsToTop: false, style: fetchStartedAt.container };
-        const obj15 = {};
+        obj8[2] = fetchStartedAt1;
+        let fetchEndedAt1;
+        if (tmp6ResultResult != null) {
+          fetchEndedAt1 = tmp6ResultResult.fetchEndedAt;
+        }
+        obj8[3] = fetchEndedAt1;
+        let isLoaded1;
+        if (tmp6ResultResult != null) {
+          isLoaded1 = tmp6ResultResult.isLoaded;
+        }
+        obj8[4] = isLoaded1;
+        const obj9 = { ref: null, handleDisabled: true, scrollable: true, startExpanded: true, maxHeight: null, contentStyles: null, backdropChildren: null, animatedIndex: null, children: null };
+        obj9[0] = bottomSheetRef.bottomSheetRef;
+        obj9[4] = diff - memo2;
+        obj9[5] = tmp.noPadding;
+        obj9[6] = memo1;
+        obj9[7] = sharedValue1;
+        let tmp94Result = null != tmp6Result2Result;
+        if (tmp94Result) {
+          const obj10 = { animatedPosition: null };
+          obj10[0] = sharedValue;
+          tmp94Result = tmp94(createUserProfileAnalyticsContext, obj10);
+        }
+        const items16 = [tmp94Result, , , ];
+        const obj11 = { gradientHeight: null, bannerHeight: null };
+        obj11[0] = diff;
+        obj11[1] = tmp45;
+        items16[1] = first1(tmp6(tmp3[51]), obj11);
+        const obj12 = { scrollsToTop: false, style: null, contentContainerStyle: null, scrollEventsHandlersHook: null, ref: null, children: null };
+        obj12[1] = tmp.container;
         let str2;
         if (isPreviewingChanges) {
           str2 = "none";
         }
-        obj15.pointerEvents = str2;
-        obj14.contentContainerStyle = obj15;
-        let obj22 = userId(477);
-        let tmp91;
-        if (obj22.isIOS()) {
-          tmp91 = memo;
+        const obj13 = { pointerEvents: null };
+        obj13[0] = str2;
+        obj12[2] = obj13;
+        let tmp66;
+        if (tmp2Result8.isIOS()) {
+          tmp66 = memo;
         }
-        obj14.scrollEventsHandlersHook = tmp91;
-        obj14.ref = ref;
-        obj16 = {};
-        const obj17 = { style: fetchStartedAt.profileContainer, onLayout: callback };
-        const items17 = [
-          ((stateFromStores) => {
-                  let obj = {
-                    user: stateFromStores,
-                    channel: stateFromStores1,
-                    displayProfile: c17,
-                    disableCalls: closure_2,
-                    disableMessage: usePreloadProfileEffect,
-                    isVoiceContext: closure_4,
-                    location: closure_6,
-                    disableStatus: closure_32,
-                    scrollViewRef: ref,
-                    isPreviewingChanges,
-                    navigateToShop(initialTab, arg1) {
-                      let obj = userId(outer2_2[53]);
-                      obj = { screen: stateFromStores1.COLLECTIBLES_SHOP, onClose: outer1_35 };
-                      return obj.openUserSettings(obj);
-                    },
-                    navigateToPremium(arg0) {
-                      let obj = userId(outer2_2[53]);
-                      obj = { screen: stateFromStores1.PREMIUM, onClose: outer1_35 };
-                      return obj.openUserSettings(obj);
-                    },
-                    showUserProfileActionSheet: showUserProfileActionSheetWithParams,
-                    initialSection
-                  };
-                  let obj1 = userId(outer1_2[52]);
-                  let tmp;
-                  if (obj1.isIOS()) {
-                    tmp = sharedValue2;
-                  }
-                  obj.scrollPosition = tmp;
-                  if (stateFromStores.isNonUserBot()) {
-                    obj = {};
-                    const merged = Object.assign(obj);
-                    let tmp2Result = stateFromStores2(channelId(outer1_2[54]), obj);
-                    const tmp17 = channelId(outer1_2[54]);
-                  } else if (stateFromStores.bot) {
-                    obj = {};
-                    let tmp3Result = tmp3(tmp4[55]);
-                    const merged1 = Object.assign(obj);
-                    tmp2Result = tmp2(tmp3Result, obj);
-                  } else {
-                    obj1 = {};
-                    tmp3Result = tmp3(tmp4[56]);
-                    const merged2 = Object.assign(obj);
-                    tmp2Result = tmp2(tmp3Result, obj1);
-                  }
-                  return tmp2Result;
-                })(stateFromStores),
-
-        ];
-        let tmp95 = null != tmp44Result;
-        if (tmp95) {
+        obj12[3] = tmp66;
+        obj12[4] = ref;
+        const obj14 = { style: null, onLayout: null, children: null };
+        obj14[0] = tmp.profileContainer;
+        obj14[1] = callback;
+        const obj15 = { user: null, channel: null, displayProfile: null, disableCalls: null, disableMessage: null, isVoiceContext: null, location: null, disableStatus: null, scrollViewRef: null, isPreviewingChanges: null, navigateToShop: null, navigateToPremium: null, showUserProfileActionSheet: null, initialSection: null, scrollPosition: null };
+        obj15[0] = stateFromStores;
+        obj15[1] = stateFromStores1;
+        obj15[2] = tmp6ResultResult;
+        obj15[3] = disableCalls;
+        obj15[4] = disableMessage;
+        obj15[5] = isVoiceContext;
+        obj15[6] = _location;
+        obj15[7] = memo3;
+        obj15[8] = ref;
+        obj15[9] = isPreviewingChanges;
+        obj15[10] = function navigateToShop(initialTab, arg1) {
+          let obj = userId(onClose[53]);
+          obj = { screen: first.COLLECTIBLES_SHOP, onClose: handleUserSettingsClose };
+          return obj.openUserSettings(obj);
+        };
+        obj15[11] = function navigateToPremium(arg0) {
+          let obj = userId(onClose[53]);
+          obj = { screen: first.PREMIUM, onClose: handleUserSettingsClose };
+          return obj.openUserSettings(obj);
+        };
+        obj15[12] = function showUserProfileActionSheetWithParams() {
+          const merged = Object.assign(createUserProfileAnalyticsContext);
+          channelId(onClose[44])({ sourceAnalyticsLocations: analyticsLocations });
+        };
+        obj15[13] = userId.initialSection;
+        tmp2Result8 = tmp2(tmp3[52]);
+        let tmp68;
+        if (tmp2Result9.isIOS()) {
+          tmp68 = sharedValue2;
+        }
+        obj15[14] = tmp68;
+        if (stateFromStores.isNonUserBot()) {
+          const obj16 = {};
+          let merged = Object.assign(obj15);
+          tmp94Result = tmp94(tmp6(tmp3[54]), obj16);
+          const tmp6Result4 = tmp6(tmp3[54]);
+        } else if (stateFromStores.bot) {
+          const obj17 = {};
+          const merged1 = Object.assign(obj15);
+          tmp94Result = tmp94(tmp6(tmp3[55]), obj17);
+          const tmp6Result5 = tmp6(tmp3[55]);
+        } else {
           const obj18 = {};
-          const items18 = [fetchStartedAt.profileEffect, , ];
-          const obj19 = { height: diff };
-          items18[1] = obj19;
+          const merged2 = Object.assign(obj15);
+          tmp94Result = tmp94(tmp6(tmp3[56]), obj18);
+          const tmp6Result6 = tmp6(tmp3[56]);
+        }
+        const items17 = [tmp94Result, ];
+        let tmp94Result1 = null != tmp38Result;
+        if (tmp94Result1) {
+          const obj19 = { style: null, pointerEvents: "none", children: null };
+          const items18 = [tmp.profileEffect, , ];
+          const obj20 = { height: null };
+          obj20[0] = diff;
+          items18[1] = obj20;
           items18[2] = animatedStyle;
-          obj18.style = items18;
-          obj18.pointerEvents = "none";
-          const obj20 = { skuId: tmp44Result.skuId, bannerAdjustment: 0 };
-          obj18.children = stateFromStores2(channelId(8035), obj20);
-          tmp95 = stateFromStores2(channelId(4026).View, obj18);
+          obj19[0] = items18;
+          const obj21 = { skuId: null, bannerAdjustment: 0 };
+          obj21[0] = tmp38Result.skuId;
+          obj19[2] = tmp94(tmp6(tmp3[57]), obj21);
+          tmp94Result1 = tmp94(tmp6(tmp3[13]).View, obj19);
         }
-        items17[1] = tmp95;
-        obj17.children = items17;
-        obj16.children = callback3(closure_6, obj17);
-        obj14.children = stateFromStores2(closure_6, obj16);
-        items16[2] = stateFromStores2(userId(5223).BottomSheetScrollView, obj14);
-        fetchStartedAt = null == tmp32Result;
-        if (fetchStartedAt) {
-          fetchStartedAt = stateFromStores2;
-          fetchStartedAt = userId;
-          fetchStartedAt = dependencyMap;
-          const obj21 = { variant: "floating" };
-          obj22 = { backgroundColor: token };
-          obj21.tabStyle = obj22;
-          obj21.onPress = bottomSheetClose;
-          fetchStartedAt = stateFromStores2(userId(5481).ActionSheetHeaderBar, obj21);
+        const obj22 = { children: null };
+        items17[1] = tmp94Result1;
+        obj14[2] = items17;
+        obj22[0] = closure_17(sharedValue1, obj14);
+        obj12[5] = first1(sharedValue1, obj22);
+        items16[2] = first1(tmp2(tmp3[12]).BottomSheetScrollView, obj12);
+        let tmp94Result2 = null == tmp6Result2Result;
+        if (tmp94Result2) {
+          const obj23 = { variant: "floating", tabStyle: null, onPress: null };
+          const obj24 = { backgroundColor: null };
+          obj24[0] = token;
+          obj23[1] = obj24;
+          obj23[2] = bottomSheetClose;
+          tmp94Result2 = tmp94(tmp2(tmp3[58]).ActionSheetHeaderBar, obj23);
         }
-        items16[3] = fetchStartedAt;
-        obj11.children = items16;
-        const items19 = [callback3(userId(5221).BottomSheet, obj11), , ];
-        fetchStartedAt = null != tmp32Result;
-        if (fetchStartedAt) {
-          fetchStartedAt = callback3;
-          fetchStartedAt = pendingAvatarDecoration;
-          const obj23 = { animatedPosition: sharedValue, safeAreaTop: top, animatedIndex: sharedValue1 };
-          fetchStartedAt = stateFromStores2;
-          fetchStartedAt = channelId;
-          fetchStartedAt = dependencyMap;
-          const obj24 = { frame: tmp32Result };
-          fetchStartedAt = sharedValue1;
-          obj24.profileThemeType = sharedValue1.ACTION_SHEET;
-          fetchStartedAt = userId;
-          fetchStartedAt = channelId(8073);
-          obj24.frameOrder = userId(8064).ProfileFrameLayerOrder.FRONT;
-          obj24.containerWidth = first1;
-          const items20 = [stateFromStores2(fetchStartedAt, obj24), ];
-          fetchStartedAt = stateFromStores2;
-          const obj25 = { variant: "floating" };
-          const obj26 = { backgroundColor: token };
-          obj25.tabStyle = obj26;
-          obj25.onPress = bottomSheetClose;
-          items20[1] = stateFromStores2(userId(5481).ActionSheetHeaderBar, obj25);
-          obj23.children = items20;
-          fetchStartedAt = callback3(pendingAvatarDecoration, obj23);
+        items16[3] = tmp94Result2;
+        obj9[8] = items16;
+        const items19 = [closure_17(tmp2(tmp3[46]).BottomSheet, obj9), , ];
+        let tmp95Result = null != tmp6Result2Result;
+        if (tmp95Result) {
+          const obj25 = { animatedPosition: null, safeAreaTop: null, animatedIndex: null, children: null };
+          obj25[0] = sharedValue;
+          obj25[1] = top;
+          obj25[2] = sharedValue1;
+          const obj26 = { frame: null, profileThemeType: null, frameOrder: null, containerWidth: null };
+          obj26[0] = tmp6Result2Result;
+          obj26[1] = UserProfileThemeTypes.ACTION_SHEET;
+          obj26[2] = tmp2(tmp3[26]).ProfileFrameLayerOrder.FRONT;
+          obj26[3] = first1;
+          const items20 = [tmp94(tmp6(tmp3[25]), obj26), ];
+          const obj27 = { variant: "floating", tabStyle: null, onPress: null };
+          const obj28 = { backgroundColor: null };
+          obj28[0] = token;
+          obj27[1] = obj28;
+          obj27[2] = bottomSheetClose;
+          items20[1] = tmp94(tmp2(tmp3[58]).ActionSheetHeaderBar, obj27);
+          obj25[3] = items20;
+          tmp95Result = tmp95(width, obj25);
+          const tmp6Result7 = tmp6(tmp3[25]);
         }
-        items19[1] = fetchStartedAt;
+        items19[1] = tmp95Result;
         if (!isPreviewingChanges) {
           items19[2] = isPreviewingChanges;
-          obj10.children = items19;
-          obj9.children = fetchStartedAt(userId(8083).UserProfileAnalyticsProvider, obj10);
-          obj8.children = fetchStartedAt(userId(5497).AnalyticsLocationProvider, obj9);
-          fetchStartedAt = fetchStartedAt(userId(3877).ThemeContextProvider, obj8);
+          obj8[5] = items19;
+          obj7[1] = tmp95(tmp2(tmp3[21]).UserProfileAnalyticsProvider, obj8);
+          obj6[3] = tmp94(tmp2(tmp3[17]).AnalyticsLocationProvider, obj7);
+          tmp94Result3 = tmp94(tmp2(tmp3[50]).ThemeContextProvider, obj6);
         } else {
-          fetchStartedAt = userId;
-          fetchStartedAt = dependencyMap;
-          fetchStartedAt = stateFromStores2;
-          const obj27 = { theme: tmp60, primaryColor: null, secondaryColor: null };
-          fetchStartedAt = stateFromStores2;
-          let obj28 = {};
-          const intl = userId(1212).intl;
-          if (setting === userId(1282).ProfileVisibility.FRIENDS_ONLY) {
-            fetchStartedAt = userId;
-            fetchStartedAt = dependencyMap;
-            wSnI_0 = userId(1212).t.mNZcD8;
+          const obj29 = { theme: null, primaryColor: null, secondaryColor: null, children: null };
+          obj29[0] = tmp48;
+          const intl = tmp2(tmp3[49]).intl;
+          if (setting === tmp2(tmp3[60]).ProfileVisibility.FRIENDS_ONLY) {
+            wSnI_0 = tmp2(tmp3[49]).t.mNZcD8;
           } else {
-            fetchStartedAt = userId;
-            fetchStartedAt = dependencyMap;
-            wSnI_0 = userId(1212).t["wSnI/0"];
+            wSnI_0 = tmp2(tmp3[49]).t["wSnI/0"];
           }
-          obj28.text = intl.string(wSnI_0);
-          obj28.isExpanded = true;
-          obj28 = fetchStartedAt(userId(12204).ActionSheetBackdropToast, obj28);
-          obj27.children = obj28;
-          fetchStartedAt = fetchStartedAt(userId(3877).ThemeContextProvider, obj27);
+          const obj30 = { text: null, isExpanded: true };
+          obj30[0] = intl.string(wSnI_0);
+          obj29[3] = tmp94(tmp2(tmp3[59]).ActionSheetBackdropToast, obj30);
+          tmp94(tmp2(tmp3[50]).ThemeContextProvider, obj29);
         }
-        const tmp78 = callback3;
-        const tmp87 = stateFromStores2;
-        const tmp92 = stateFromStores2;
-        const tmp94 = callback3;
+        tmp2Result9 = tmp2(tmp3[52]);
       }
-      return fetchStartedAt;
+      return tmp94Result3;
     }
-    if (null != tmp8Result) {
-      const profileEffect = tmp8Result.profileEffect;
-      if (null != profileEffect) {
+    if (tmp6ResultResult != null) {
+      const profileEffect = tmp6ResultResult.profileEffect;
+      if (profileEffect != null) {
         skuId2 = profileEffect.skuId;
       }
     }
-    const tmp37 = channelId(8342);
+    const tmp6Result2 = tmp6(tmp3[24]);
   }
-  if (null != tmp8Result) {
-    const profileFrame = tmp8Result.profileFrame;
-    if (null != profileFrame) {
+  if (tmp6ResultResult != null) {
+    const profileFrame = tmp6ResultResult.profileFrame;
+    if (profileFrame != null) {
       skuId = profileFrame.skuId;
     }
   }

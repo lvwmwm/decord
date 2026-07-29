@@ -1,29 +1,29 @@
-// Module ID: 9980
-// Function ID: 77053
+// Module ID: 10002
+// Function ID: 10003
 // Name: categoryCollapse
-// Dependencies: [686, 2]
+// Dependencies: [709, 2]
 // Exports: categoryCollapse, categoryCollapseAll, categoryExpand, categoryExpandAll
 
-// Module 9980 (categoryCollapse)
+// Module 10002 (categoryCollapse)
 const result = require("set").fileFinishedImporting("actions/CategoryCollapseActionCreators.tsx");
 
-export const categoryCollapse = function categoryCollapse(closure_0) {
-  let obj = importDefault(686);
-  obj = { type: "CATEGORY_COLLAPSE", id: closure_0 };
+export const categoryCollapse = function categoryCollapse(id) {
+  let obj = importDefault(709);
+  obj = { type: "CATEGORY_COLLAPSE", id };
   obj.dispatch(obj);
 };
-export const categoryExpand = function categoryExpand(closure_0) {
-  let obj = importDefault(686);
-  obj = { type: "CATEGORY_EXPAND", id: closure_0 };
+export const categoryExpand = function categoryExpand(id) {
+  let obj = importDefault(709);
+  obj = { type: "CATEGORY_EXPAND", id };
   obj.dispatch(obj);
 };
 export const categoryCollapseAll = function categoryCollapseAll(guildId) {
-  let obj = importDefault(686);
+  let obj = importDefault(709);
   obj = { type: "CATEGORY_COLLAPSE_ALL", guildId };
   obj.dispatch(obj);
 };
 export const categoryExpandAll = function categoryExpandAll(guildId) {
-  let obj = importDefault(686);
+  let obj = importDefault(709);
   obj = { type: "CATEGORY_EXPAND_ALL", guildId };
   obj.dispatch(obj);
 };

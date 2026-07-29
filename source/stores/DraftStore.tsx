@@ -1,117 +1,16 @@
-// Module ID: 4503
-// Function ID: 39578
-// Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 57, 1194, 1348, 4504, 653, 22, 21, 1327, 566, 686, 2]
+// Module ID: 4526
+// Function ID: 4527
+// Name: handleChanged
+// Dependencies: [32, 1218, 1372, 4527, 676, 12, 11, 589, 1351, 709, 2]
 
-// Module 4503 (_isNativeReflectConstruct)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_4 from "_isNativeReflectConstruct";
-import set from "set";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
+// Module 4526 (handleChanged)
 import _slicedToArray from "_slicedToArray";
-import closure_9 from "_isNativeReflectConstruct";
-import closure_10 from "_isNativeReflectConstruct";
-import closure_11 from "_isNativeReflectConstruct";
+import fetchFingerprint from "fetchFingerprint";
+import ensureGuildLoaded from "ensureGuildLoaded";
+import handleConnectionOpen from "handleConnectionOpen";
+import { PersistedStore } from "initialize";
 
 const require = arg1;
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
-  }
-  const result = _isNativeReflectConstruct();
-}
-function _createForOfIteratorHelperLoose(iterable) {
-  let closure_0 = iterable;
-  iterable = "undefined" !== typeof Symbol;
-  if (iterable) {
-    const _Symbol = Symbol;
-    iterable = iterable[Symbol.iterator];
-  }
-  if (!iterable) {
-    iterable = iterable[Symbol.iterator];
-  }
-  if (iterable) {
-    const iter = iterable.call(iterable);
-    const next = iter.next;
-    return next.bind(iter);
-  } else {
-    const _Array = Array;
-    let tmp = iterable;
-    if (!Array.isArray(iterable)) {
-      let tmp2;
-      if (iterable) {
-        if ("string" === typeof iterable) {
-          tmp2 = _arrayLikeToArray(iterable, undefined);
-        } else {
-          const toString = {}.toString;
-          const substr = toString.call(iterable).slice(8, -1);
-          let name = substr;
-          if (tmp3) {
-            name = iterable.constructor.name;
-          }
-          if ("Map" !== name) {
-            if ("Set" !== name) {
-              if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(iterable, undefined);
-              } else {
-                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
-              }
-            }
-            tmp2 = arr;
-          }
-          const _Array2 = Array;
-          arr = Array.from(iterable);
-          const callResult = toString.call(iterable);
-          tmp3 = "Object" === substr && iterable.constructor;
-        }
-      }
-      tmp = tmp2;
-      if (!tmp2) {
-        const _TypeError = TypeError;
-        const typeError = new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
-        throw typeError;
-      }
-    }
-    if (tmp) {
-      closure_0 = tmp;
-    }
-    let c1 = 0;
-    return () => {
-      if (closure_1 >= length.length) {
-        let obj = { done: true };
-      } else {
-        obj = { done: false };
-        closure_1 = tmp3 + 1;
-        obj.value = length[+closure_1];
-      }
-      return obj;
-    };
-  }
-}
-function _arrayLikeToArray(arg0, arg1) {
-  let length;
-  if (tmp) {
-    length = arg0.length;
-  }
-  const ArrayResult = Array(length);
-  for (let num = 0; num < length; num = num + 1) {
-    ArrayResult[num] = arg0[num];
-  }
-  return ArrayResult;
-}
-function getUserDrafts(id) {
-  let tmp = table[id];
-  if (null == tmp) {
-    const obj = {};
-    table[id] = obj;
-    tmp = obj;
-  }
-  return tmp;
-}
 function handleChanged(type) {
   let channelId;
   let draft;
@@ -119,77 +18,85 @@ function handleChanged(type) {
   ({ channelId, draft, draftType } = type);
   const channel = store2.getChannel(channelId);
   let template;
-  if (null != channel) {
+  if (channel != null) {
     template = channel.template;
   }
   if (draft === template) {
     draft = "";
   }
+  let obj = store;
   const id = store.getId();
   if (null != id) {
     if (null != draft) {
       if ("" !== draft) {
-        const tmp6 = getUserDrafts(id);
-        let tmp7 = tmp6[channelId];
-        if (null == tmp7) {
-          let obj = {};
-          tmp6[channelId] = obj;
-          tmp7 = obj;
+        let tmp13 = dependencyMap[id];
+        if (null == tmp13) {
+          obj = {};
+          dependencyMap[id] = obj;
+          tmp13 = obj;
+        }
+        let tmp15 = tmp13[channelId];
+        if (null == tmp15) {
+          obj = {};
+          tmp13[channelId] = obj;
+          tmp15 = obj;
         }
         let substr = draft;
-        if (draft.length > closure_12) {
-          substr = draft.substr(0, closure_12);
+        if (draft.length > closure_7) {
+          substr = draft.substr(0, tmp16);
         }
         draft = undefined;
-        if (null != tmp7[draftType]) {
-          draft = tmp11.draft;
+        if (tmp15[draftType] != null) {
+          draft = tmp18.draft;
         }
         if (substr !== draft) {
-          obj = {};
+          const obj1 = { timestamp: null, draft: null };
           const _Date = Date;
-          obj.timestamp = Date.now();
-          obj.draft = substr;
-          tmp7[draftType] = obj;
+          obj1[0] = Date.now();
+          obj1[1] = substr;
+          tmp15[draftType] = obj1;
         }
       }
       return "DRAFT_SAVE" === type.type;
     }
   }
-  deleteDraft(channelId, draftType);
+  const id1 = obj.getId();
+  if (null != id1) {
+    let tmp10 = dependencyMap[id1];
+    if (null == tmp10) {
+      const obj2 = {};
+      dependencyMap[id1] = obj2;
+      tmp10 = obj2;
+    }
+    if (null != tmp10[channelId]) {
+      delete tmp4[tmp2];
+      if (obj6.isEmpty(tmp11)) {
+        delete tmp[tmp3];
+      }
+      obj6 = importDefault(12);
+    }
+  }
 }
-function deleteDraft(channelId, draftType, id) {
-  if (id === undefined) {
+function deleteDraft(arg0, arg1) {
+  let id = arg2;
+  if (arg2 === undefined) {
     id = store.getId();
   }
   if (null == id) {
     return false;
   } else {
-    const tmp8 = getUserDrafts(id)[channelId];
+    let tmp8 = dependencyMap[id];
     if (null == tmp8) {
+      const obj = {};
+      dependencyMap[id] = obj;
+      tmp8 = obj;
+    }
+    if (null == tmp8[arg0]) {
       return false;
     } else {
       delete tmp4[tmp3];
-      if (obj.isEmpty(tmp8)) {
-        delete tmp[tmp2];
-      }
-    }
-  }
-}
-function pruneNonexistentChannels() {
-  const id = store.getId();
-  if (null != id) {
-    if (obj.totalUnavailableGuilds <= 0) {
-      const tmp6 = getUserDrafts(id);
-      for (const key10012 in tmp6) {
-        let tmp8 = key10012;
-        let tmp9 = store2;
-        if (null != store2.getChannel(key10012)) {
-          continue;
-        } else {
-          delete tmp[tmp2];
-          continue;
-        }
-        continue;
+      if (obj2.isEmpty(tmp11)) {
+        delete tmp2[tmp];
       }
     }
   }
@@ -197,213 +104,185 @@ function pruneNonexistentChannels() {
 function handleChannelDelete(arg0) {
   const id = store.getId();
   if (null != id) {
-    getUserDrafts(id);
+    if (null == dependencyMap[id]) {
+      const obj = {};
+      dependencyMap[id] = obj;
+    }
     delete tmp[tmp2];
   }
   return false;
 }
-let closure_12 = require("ME").MAX_MESSAGE_LENGTH_PREMIUM + 500;
+let closure_7 = require("ME").MAX_MESSAGE_LENGTH_PREMIUM + 500;
 let obj = { ChannelMessage: 0, [0]: "ChannelMessage", ThreadSettings: 1, [1]: "ThreadSettings", FirstThreadMessage: 2, [2]: "FirstThreadMessage", ApplicationLauncherCommand: 3, [3]: "ApplicationLauncherCommand", Poll: 4, [4]: "Poll", SlashCommand: 5, [5]: "SlashCommand", ForwardContextMessage: 6, [6]: "ForwardContextMessage", InteractionModal: 7, [7]: "InteractionModal" };
-let closure_14 = {};
-let tmp2 = ((PersistedStore) => {
-  class DraftStore {
-    constructor() {
-      self = this;
-      tmp = outer1_3(this, DraftStore);
-      obj = outer1_6(DraftStore);
-      tmp2 = outer1_5;
-      if (outer1_15()) {
-        tmp6 = globalThis;
-        _Reflect = Reflect;
-        tmp7 = outer1_6;
-        tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, outer1_6(self).constructor);
-      } else {
-        tmp3 = arguments;
-        tmp4 = arguments;
-        constructResult = obj(...arguments);
-      }
-      return tmp2(self, constructResult);
-    }
+let closure_9 = {};
+class DraftStore extends PersistedStore {
+}
+const prototype = DraftStore.prototype;
+prototype["initialize"] = function initialize(arg0) {
+  let obj = arg0;
+  if (arg0 == null) {
+    obj = {};
   }
-  callback2(DraftStore, PersistedStore);
-  let obj = {
-    key: "initialize",
-    value(arg0) {
-      let iter5;
-      let tmp4;
-      let tmp5;
-      let obj = arg0;
-      const self = this;
-      if (null == arg0) {
-        obj = {};
-      }
-      const outer1_14 = obj;
-      const tmp = outer1_16(outer1_1(outer1_2[11]).entries(outer1_14));
-      const iter = tmp();
-      let iter2 = iter;
-      if (!iter.done) {
-        do {
-          let tmp2 = outer1_8;
-          let tmp3 = outer1_8(iter2.value, 2);
-          let tmp6 = outer1_16;
-          let tmp7 = outer1_1;
-          let tmp8 = outer1_2;
-          [tmp4, tmp5] = tmp3;
-          let obj3 = outer1_1(outer1_2[11]);
-          let tmp9 = outer1_16(obj3.entries(tmp5));
-          let iter3 = tmp9();
-          if (!iter3.done) {
-            do {
-              let tmp10 = outer1_8;
-              let tmp11 = outer1_8(iter3.value, 2);
-              let first = tmp11[0];
-              let tmp13 = outer1_13;
-              let tmp14 = tmp11[1][outer1_13.ChannelMessage];
-              if (null != tmp14) {
-                let tmp15 = "" !== tmp14.draft;
-                if (tmp15) {
-                  let str = tmp14.draft;
-                  tmp15 = "" !== str.trim();
-                }
-                if (!tmp15) {
-                  let tmp16 = outer1_19;
-                  let tmp17 = outer1_13;
-                  let tmp18 = outer1_19(first, outer1_13.ChannelMessage, tmp4);
-                }
-              }
-              iter4 = tmp9();
-              iter3 = iter4;
-              let tmp19 = first;
-              let tmp20 = tmp14;
-            } while (!iter4.done);
+  (function pruneEmptyDrafts() {
+    const obj = callback(11);
+    const entries = obj.entries(obj);
+    while (tmp2 !== undefined) {
+      let tmp4 = callback2;
+      let tmp5 = callback2(tmp3, 2);
+      let first = tmp5[0];
+      let tmp7 = callback;
+      let tmp8 = dependencyMap;
+      let obj2 = callback(11);
+      let entries1 = obj2.entries(tmp5[1]);
+      let tmp10 = entries1;
+      let tmp11 = entries1;
+      for (const item10033 of entries1) {
+        let tmp12 = callback2;
+        let tmp13 = callback2(item10033, 2);
+        let first1 = tmp13[0];
+        let tmp16 = tmp13[1][ChannelMessage.ChannelMessage];
+        let tmp17 = tmp16;
+        if (null != tmp16) {
+          let tmp18 = tmp16;
+          let tmp19 = "" !== tmp17.draft;
+          if (tmp19) {
+            let tmp20 = tmp16;
+            let str = tmp17.draft;
+            tmp19 = "" !== str.trim();
           }
-          iter5 = tmp();
-          iter2 = iter5;
-        } while (!iter5.done);
-      }
-      self.waitFor(outer1_9, outer1_10, outer1_11);
-    }
-  };
-  const items = [obj, , , , , ];
-  obj = {
-    key: "getState",
-    value() {
-      return outer1_14;
-    }
-  };
-  items[1] = obj;
-  obj = {
-    key: "getThreadDraftWithParentMessageId",
-    value(arg0) {
-      let self = this;
-      self = this;
-      let closure_1 = arg0;
-      const id = outer1_9.getId();
-      if (null != id) {
-        let threadSettings;
-        const tmp4 = outer1_18(id);
-        const keys = outer1_1(outer1_2[11]).keys(tmp4);
-        const found = keys.find((arg0) => {
-          const threadSettings = self.getThreadSettings(arg0);
-          let parentMessageId;
-          if (null != threadSettings) {
-            parentMessageId = threadSettings.parentMessageId;
-          }
-          return parentMessageId === closure_1;
-        });
-        if (null != found) {
-          threadSettings = self.getThreadSettings(found);
-        }
-        return threadSettings;
-      }
-    }
-  };
-  items[2] = obj;
-  items[3] = {
-    key: "getRecentlyEditedDrafts",
-    value(arg0) {
-      let closure_0 = arg0;
-      const id = outer1_9.getId();
-      if (null == id) {
-        return [];
-      } else {
-        const tmp3 = outer1_18(id);
-        const obj = outer1_1(outer1_2[10])(outer1_18(id));
-        const mapValuesResult = outer1_1(outer1_2[10])(outer1_18(id)).mapValues((arg0) => {
-          let tmp;
-          if (null != arg0) {
-            tmp = arg0[closure_0];
-          }
-          return tmp;
-        });
-        const pickByResult = outer1_1(outer1_2[10])(outer1_18(id)).mapValues((arg0) => {
-          let tmp;
-          if (null != arg0) {
-            tmp = arg0[closure_0];
-          }
-          return tmp;
-        }).pickBy(DraftStore(outer1_2[12]).isNotNullish);
-        const mapped = outer1_1(outer1_2[10])(outer1_18(id)).mapValues((arg0) => {
-          let tmp;
-          if (null != arg0) {
-            tmp = arg0[closure_0];
-          }
-          return tmp;
-        }).pickBy(DraftStore(outer1_2[12]).isNotNullish).toPairs().map((arg0) => {
-          let tmp;
-          [tmp, ] = arg0;
-          return { channelId, timestamp, draft };
-        });
-        const toPairsResult = outer1_1(outer1_2[10])(outer1_18(id)).mapValues((arg0) => {
-          let tmp;
-          if (null != arg0) {
-            tmp = arg0[closure_0];
-          }
-          return tmp;
-        }).pickBy(DraftStore(outer1_2[12]).isNotNullish).toPairs();
-        return mapped.sortBy((timestamp) => -timestamp.timestamp).value();
-      }
-    }
-  };
-  items[4] = {
-    key: "getDraft",
-    value(arg0, arg1) {
-      const id = outer1_9.getId();
-      if (null == id) {
-        return "";
-      } else {
-        const tmp4 = outer1_18(id)[arg0];
-        if (null != tmp4) {
-          if (null != tmp4[arg1]) {
-            return tmp6.draft;
+          if (!tmp19) {
+            let tmp21 = callback3;
+            let tmp22 = first1;
+            let tmp23 = first;
+            let tmp24 = callback3(first1, tmp15.ChannelMessage, first);
           }
         }
-        return "";
+        continue;
+      }
+      continue;
+    }
+  })();
+  this.waitFor(fetchFingerprint, ensureGuildLoaded, handleConnectionOpen);
+};
+prototype["getState"] = function getState() {
+  return closure_9;
+};
+prototype["getThreadDraftWithParentMessageId"] = function getThreadDraftWithParentMessageId(arg0) {
+  let self = this;
+  self = this;
+  let closure_0 = arg0;
+  const id = store.getId();
+  if (null != id) {
+    let tmp3 = dependencyMap[id];
+    if (null == tmp3) {
+      const obj = {};
+      dependencyMap[id] = obj;
+      tmp3 = obj;
+    }
+    const keys = self(11).keys(tmp3);
+    const found = keys.find((channelId) => {
+      const threadSettings = self.getThreadSettings(channelId);
+      let parentMessageId;
+      if (threadSettings != null) {
+        parentMessageId = threadSettings.parentMessageId;
+      }
+      return parentMessageId === closure_0;
+    });
+    let threadSettings;
+    if (null != found) {
+      threadSettings = self.getThreadSettings(found);
+    }
+    return threadSettings;
+  }
+};
+prototype["getRecentlyEditedDrafts"] = function getRecentlyEditedDrafts(ChannelMessage) {
+  const _require = ChannelMessage;
+  const id = store.getId();
+  if (null == id) {
+    return [];
+  } else {
+    let tmp3 = dependencyMap[id];
+    if (null == tmp3) {
+      const obj = {};
+      dependencyMap[id] = obj;
+      tmp3 = obj;
+    }
+    const obj2 = importDefault(12)(tmp3);
+    const mapValuesResult = importDefault(12)(tmp3).mapValues((arg0) => {
+      let tmp;
+      if (arg0 != null) {
+        tmp = arg0[closure_0];
+      }
+      return tmp;
+    });
+    const pickByResult = importDefault(12)(tmp3).mapValues((arg0) => {
+      let tmp;
+      if (arg0 != null) {
+        tmp = arg0[closure_0];
+      }
+      return tmp;
+    }).pickBy(_require(1351).isNotNullish);
+    const mapped = importDefault(12)(tmp3).mapValues((arg0) => {
+      let tmp;
+      if (arg0 != null) {
+        tmp = arg0[closure_0];
+      }
+      return tmp;
+    }).pickBy(_require(1351).isNotNullish).toPairs().map((arg0) => {
+      let tmp;
+      [tmp, ] = arg0;
+      return { channelId, timestamp, draft };
+    });
+    const toPairsResult = importDefault(12)(tmp3).mapValues((arg0) => {
+      let tmp;
+      if (arg0 != null) {
+        tmp = arg0[closure_0];
+      }
+      return tmp;
+    }).pickBy(_require(1351).isNotNullish).toPairs();
+    return mapped.sortBy((timestamp) => -timestamp.timestamp).value();
+  }
+};
+prototype["getDraft"] = function getDraft(id, ChannelMessage) {
+  id = store.getId();
+  if (null == id) {
+    return "";
+  } else {
+    let tmp3 = dependencyMap[id];
+    if (null == tmp3) {
+      const obj = {};
+      dependencyMap[id] = obj;
+      tmp3 = obj;
+    }
+    if (null != tmp3[id]) {
+      if (null != tmp6[ChannelMessage]) {
+        return tmp8.draft;
       }
     }
-  };
-  items[5] = {
-    key: "getThreadSettings",
-    value(arg0) {
-      const id = outer1_9.getId();
-      if (null == id) {
-        return null;
-      } else {
-        const tmp4 = outer1_18(id)[arg0];
-        let tmp5 = null;
-        if (null != tmp4) {
-          tmp5 = tmp4[outer1_13.ThreadSettings];
-        }
-        return tmp5;
-      }
+    return "";
+  }
+};
+prototype["getThreadSettings"] = function getThreadSettings(channelId) {
+  const id = store.getId();
+  if (null == id) {
+    return null;
+  } else {
+    let tmp3 = dependencyMap[id];
+    if (null == tmp3) {
+      const obj = {};
+      dependencyMap[id] = obj;
+      tmp3 = obj;
     }
-  };
-  return callback(DraftStore, items);
-})(require("initialize").PersistedStore);
-tmp2.displayName = "DraftStore";
-tmp2.persistKey = "DraftStore";
-let items = [
+    let tmp7 = null;
+    if (null != tmp3[channelId]) {
+      tmp7 = tmp6[obj.ThreadSettings];
+    }
+    return tmp7;
+  }
+};
+DraftStore.displayName = "DraftStore";
+DraftStore.persistKey = "DraftStore";
+const items = [
   (obj) => {
     if (null == obj) {
       return {};
@@ -442,70 +321,150 @@ let items = [
     return {};
   }
 ];
-tmp2.migrations = items;
+DraftStore.migrations = items;
 obj = {
   CONNECTION_OPEN: function handleConnectionOpen() {
+    let obj = store;
     const id = store.getId();
-    if (!(id in closure_14)) {
-      closure_14[id] = {};
+    if (!(id in dependencyMap)) {
+      dependencyMap[id] = {};
     }
-    pruneNonexistentChannels();
+    const id1 = obj.getId();
+    if (null != id1) {
+      if (handleConnectionOpen.totalUnavailableGuilds <= 0) {
+        let tmp8 = dependencyMap[id1];
+        if (null == tmp8) {
+          obj = {};
+          dependencyMap[id1] = obj;
+          tmp8 = obj;
+        }
+        for (const key10019 in tmp8) {
+          let tmp11 = key10019;
+          let tmp12 = store2;
+          if (null != store2.getChannel(key10019)) {
+            continue;
+          } else {
+            delete tmp[tmp2];
+            continue;
+          }
+          continue;
+        }
+      }
+    }
     return false;
   },
   LOGOUT: function handleLogout(isSwitchingAccount) {
     if (!isSwitchingAccount.isSwitchingAccount) {
-      let closure_14 = {};
+      let closure_9 = {};
     }
   },
   MULTI_ACCOUNT_REMOVE_ACCOUNT: function handleMultiAccountRemove(userId) {
-    if (userId.userId in closure_14) {
+    if (userId.userId in closure_9) {
       userId = userId.userId;
       delete tmp2[tmp];
     }
   },
   GUILD_DELETE: function handleGuildDelete() {
-    pruneNonexistentChannels();
+    const id = store.getId();
+    if (null != id) {
+      if (handleConnectionOpen.totalUnavailableGuilds <= 0) {
+        let tmp6 = dependencyMap[id];
+        if (null == tmp6) {
+          const obj = {};
+          dependencyMap[id] = obj;
+          tmp6 = obj;
+        }
+        for (const key10013 in tmp6) {
+          let tmp9 = key10013;
+          let tmp10 = store2;
+          if (null != store2.getChannel(key10013)) {
+            continue;
+          } else {
+            delete tmp[tmp2];
+            continue;
+          }
+          continue;
+        }
+      }
+    }
     return false;
   },
   CHANNEL_DELETE: handleChannelDelete,
   THREAD_DELETE: handleChannelDelete,
   THREAD_CREATE: function handleThreadCreate(channel) {
     channel = channel.channel;
+    let obj = store;
     const id = store.getId();
     if (null != id) {
       if (channel.ownerId !== id) {
-        const tmp10 = getUserDrafts(id);
+        let tmp10 = dependencyMap[id];
+        if (null == tmp10) {
+          obj = {};
+          dependencyMap[id] = obj;
+          tmp10 = obj;
+        }
         if (null == tmp10[channel.parent_id]) {
           return false;
         } else if (null == tmp11[obj.ThreadSettings]) {
           return false;
         } else {
-          if (tmp13.parentMessageId !== obj3.castChannelIdAsMessageId(channel.id)) {
+          if (tmp25.parentMessageId !== obj9.castChannelIdAsMessageId(channel.id)) {
             return false;
           } else if (null == tmp10[channel.parent_id]) {
             return false;
           } else {
-            let draft;
-            if (null != tmp16[obj.FirstThreadMessage]) {
-              draft = tmp18.draft;
+            let str;
+            if (tmp28[tmp24.FirstThreadMessage] != null) {
+              str = tmp29.draft;
             }
-            let str2 = "";
-            if (null != draft) {
-              str2 = draft;
+            if (str == null) {
+              str = "";
             }
-            if ("" !== str2) {
+            if ("" !== str) {
               obj = {};
-              obj = {};
+              const obj1 = { timestamp: null, draft: null };
               const _Date = Date;
-              obj.timestamp = Date.now();
-              obj.draft = str2;
-              obj[obj.ChannelMessage] = obj;
+              obj1[0] = Date.now();
+              obj1[1] = str;
+              obj[tmp24.ChannelMessage] = obj1;
               tmp10[channel.id] = obj;
             }
-            deleteDraft(channel.parent_id, obj.ThreadSettings);
-            deleteDraft(channel.parent_id, obj.FirstThreadMessage);
+            const ThreadSettings = tmp24.ThreadSettings;
+            const id1 = obj.getId();
+            if (null != id1) {
+              let tmp15 = dependencyMap[id1];
+              if (null == tmp15) {
+                const obj2 = {};
+                dependencyMap[id1] = obj2;
+                tmp15 = obj2;
+              }
+              if (null != tmp15[channel.parent_id]) {
+                delete tmp7[tmp6];
+                let tmp26Result = tmp26(12);
+                if (tmp26Result.isEmpty(tmp17)) {
+                  delete tmp4[tmp5];
+                }
+              }
+            }
+            const FirstThreadMessage = tmp24.FirstThreadMessage;
+            const id2 = obj.getId();
+            if (null != id2) {
+              let tmp20 = dependencyMap[id2];
+              if (null == tmp20) {
+                const obj3 = {};
+                dependencyMap[id2] = obj3;
+                tmp20 = obj3;
+              }
+              if (null != tmp20[channel.parent_id]) {
+                delete tmp3[tmp4];
+                tmp26Result = tmp26(12);
+                if (tmp26Result.isEmpty(tmp22)) {
+                  delete tmp[tmp2];
+                }
+              }
+            }
           }
-          obj3 = importDefault(21);
+          obj9 = importDefault(11);
         }
       }
     }
@@ -513,8 +472,26 @@ obj = {
   },
   DRAFT_SAVE: handleChanged,
   DRAFT_CHANGE: handleChanged,
-  DRAFT_CLEAR: function handleDraftClear(channelId) {
-    return deleteDraft(channelId.channelId, channelId.draftType);
+  DRAFT_CLEAR: function handleDraftClear(arg0) {
+    const id = store.getId();
+    let flag = false;
+    if (null != id) {
+      let tmp7 = dependencyMap[id];
+      if (null == tmp7) {
+        const obj = {};
+        dependencyMap[id] = obj;
+        tmp7 = obj;
+      }
+      flag = false;
+      if (null != tmp7[arg0.channelId]) {
+        delete tmp4[tmp3];
+        if (obj2.isEmpty(tmp9)) {
+          delete tmp[tmp2];
+        }
+        obj2 = importDefault(12);
+      }
+    }
+    return flag;
   },
   THREAD_SETTINGS_DRAFT_CHANGE: function handleThreadSettingsDraftChanged(arg0) {
     let channelId;
@@ -522,25 +499,30 @@ obj = {
     ({ channelId, draft } = arg0);
     const id = store.getId();
     if (null != id) {
-      const tmp3 = getUserDrafts(id);
-      let tmp4 = tmp3[channelId];
-      if (null == tmp4) {
+      let tmp3 = dependencyMap[id];
+      if (null == tmp3) {
         let obj = {};
-        tmp3[channelId] = obj;
-        tmp4 = obj;
+        dependencyMap[id] = obj;
+        tmp3 = obj;
       }
-      obj = {};
+      let tmp5 = tmp3[channelId];
+      if (null == tmp5) {
+        obj = {};
+        tmp3[channelId] = obj;
+        tmp5 = obj;
+      }
+      obj = { timestamp: null };
       const _Date = Date;
-      obj.timestamp = Date.now();
-      const merged = Object.assign(tmp4[obj.ThreadSettings]);
+      obj[0] = Date.now();
+      const merged = Object.assign(tmp5[obj.ThreadSettings]);
       const merged1 = Object.assign(draft);
-      obj["parentChannelId"] = channelId;
-      tmp4[obj.ThreadSettings] = obj;
+      obj.parentChannelId = channelId;
+      tmp5[obj.ThreadSettings] = obj;
     }
   }
 };
-tmp2 = new tmp2(require("dispatcher"), obj);
-let result = require("_possibleConstructorReturn").fileFinishedImporting("stores/DraftStore.tsx");
+const draftStore = new DraftStore(require("dispatcher"), obj);
+const result = require("ensureGuildLoaded").fileFinishedImporting("stores/DraftStore.tsx");
 
-export default tmp2;
+export default draftStore;
 export const DraftType = obj;

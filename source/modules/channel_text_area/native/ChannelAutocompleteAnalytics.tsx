@@ -1,40 +1,31 @@
-// Module ID: 11466
-// Function ID: 88976
+// Module ID: 11490
+// Function ID: 11491
 // Name: iOSTrackAutocompleteOpen
-// Dependencies: [653, 675, 4359, 2]
+// Dependencies: [676, 698, 4384, 2]
 // Exports: iOSTrackAutocompleteOpen, iOSTrackAutocompleteSelect
 
-// Module 11466 (iOSTrackAutocompleteOpen)
+// Module 11490 (iOSTrackAutocompleteOpen)
 import { AnalyticEvents } from "ME";
 
-const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/channel_text_area/native/ChannelAutocompleteAnalytics.tsx");
+const result = require("collectGuildAnalyticsMetadata").fileFinishedImporting("modules/channel_text_area/native/ChannelAutocompleteAnalytics.tsx");
 
-export const iOSTrackAutocompleteOpen = function iOSTrackAutocompleteOpen(arg0, guild_id, numEmojiResults) {
-  let obj = importDefault(675);
+export const iOSTrackAutocompleteOpen = function iOSTrackAutocompleteOpen(autocomplete_type, guild_id, arg2) {
+  let obj = importDefault(698);
   obj = {};
-  const merged = Object.assign(require(4359) /* _createForOfIteratorHelperLoose */.collectChannelAnalyticsMetadata(guild_id));
-  const obj3 = require(4359) /* _createForOfIteratorHelperLoose */;
-  const merged1 = Object.assign(require(4359) /* _createForOfIteratorHelperLoose */.collectGuildAnalyticsMetadata(guild_id.guild_id));
-  obj["autocomplete_type"] = arg0;
-  obj["num_emoji_results"] = numEmojiResults.numEmojiResults;
-  obj["num_sticker_results"] = numEmojiResults.numStickerResults;
-  obj["game_mentions_available"] = numEmojiResults.gameMentionsAvailable;
+  const merged = Object.assign(require(4384) /* collectGuildAnalyticsMetadata */.collectChannelAnalyticsMetadata(guild_id));
+  const obj3 = require(4384) /* collectGuildAnalyticsMetadata */;
+  const merged1 = Object.assign(require(4384) /* collectGuildAnalyticsMetadata */.collectGuildAnalyticsMetadata(guild_id.guild_id));
+  obj.autocomplete_type = autocomplete_type;
+  ({ numEmojiResults: obj2.num_emoji_results, numStickerResults: obj2.num_sticker_results, gameMentionsAvailable: obj2.game_mentions_available } = arg2);
   obj.track(AnalyticEvents.CHANNEL_AUTOCOMPLETE_OPEN, obj);
 };
-export const iOSTrackAutocompleteSelect = function iOSTrackAutocompleteSelect(arg0, guild_id, selectionType) {
-  let obj = importDefault(675);
+export const iOSTrackAutocompleteSelect = function iOSTrackAutocompleteSelect(autocomplete_type, guild_id, arg2) {
+  let obj = importDefault(698);
   obj = {};
-  const merged = Object.assign(require(4359) /* _createForOfIteratorHelperLoose */.collectChannelAnalyticsMetadata(guild_id));
-  const obj3 = require(4359) /* _createForOfIteratorHelperLoose */;
-  const merged1 = Object.assign(require(4359) /* _createForOfIteratorHelperLoose */.collectGuildAnalyticsMetadata(guild_id.guild_id));
-  obj["autocomplete_type"] = arg0;
-  obj["selection_type"] = selectionType.selectionType;
-  obj["sticker_id"] = selectionType.stickerId;
-  obj["application_id"] = selectionType.gameId;
-  obj["num_emoji_results"] = selectionType.numEmojiResults;
-  obj["num_sticker_results"] = selectionType.numStickerResults;
-  obj["emoji_name"] = selectionType.expressionName;
-  obj["is_custom"] = selectionType.isCustom;
-  obj["is_animated"] = selectionType.isAnimated;
+  const merged = Object.assign(require(4384) /* collectGuildAnalyticsMetadata */.collectChannelAnalyticsMetadata(guild_id));
+  const obj3 = require(4384) /* collectGuildAnalyticsMetadata */;
+  const merged1 = Object.assign(require(4384) /* collectGuildAnalyticsMetadata */.collectGuildAnalyticsMetadata(guild_id.guild_id));
+  obj.autocomplete_type = autocomplete_type;
+  ({ selectionType: obj2.selection_type, stickerId: obj2.sticker_id, gameId: obj2.application_id, numEmojiResults: obj2.num_emoji_results, numStickerResults: obj2.num_sticker_results, expressionName: obj2.emoji_name, isCustom: obj2.is_custom, isAnimated: obj2.is_animated } = arg2);
   obj.track(AnalyticEvents.CHANNEL_AUTOCOMPLETE_SELECTED, obj);
 };

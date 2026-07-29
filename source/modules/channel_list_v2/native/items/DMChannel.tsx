@@ -1,20 +1,21 @@
-// Module ID: 15170
-// Function ID: 115340
-// Dependencies: [31, 4177, 4360, 10263, 4361, 33, 4165, 689, 9073, 4173, 566, 15003, 15071, 8292, 2]
+// Module ID: 15203
+// Function ID: 15204
+// Dependencies: [19, 4201, 4385, 10284, 4386, 21, 4189, 712, 9097, 4197, 589, 15029, 15104, 8316, 2]
 
-// Module 15170
-import importAllResult from "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_5 from "_isNativeReflectConstruct";
+// Module 15203
+import importAllResult from "noop";
+import generateOldThreadCutoff from "generateOldThreadCutoff";
+import updateUserGuildSettingsInternal from "updateUserGuildSettingsInternal";
 import { UnreadSetting } from "ReadStateTypes";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
 const require = arg1;
-let obj = {};
-obj = { marginVertical: require("hairlineWidth").CHANNEL_MARGIN_VERTICAL, marginHorizontal: 8, borderRadius: require("_createForOfIteratorHelperLoose").radii.md };
-obj.container = obj;
-let closure_8 = _createForOfIteratorHelperLoose.createStyles(obj);
+let c3 = importAllResult;
+let obj = { container: null };
+obj = { marginVertical: require("hairlineWidth").CHANNEL_MARGIN_VERTICAL, marginHorizontal: 8, borderRadius: require("Themes").radii.md };
+obj[0] = obj;
+let closure_8 = createCacheKey.createStyles(obj);
 const memoResult = importAllResult.memo((channel) => {
   let hasUnread;
   let isIncomingCall;
@@ -30,29 +31,29 @@ const memoResult = importAllResult.memo((channel) => {
   const callback1 = importAllResult.useCallback(() => {
     channel(outer1_2[9]).transitionToChannel(channel.id);
   }, items1);
-  let obj = channel(566);
-  const items2 = [_isNativeReflectConstruct];
+  let obj = channel(589);
+  const items2 = [generateOldThreadCutoff];
   const items3 = [channel.id];
   const stateFromStoresObject = obj.useStateFromStoresObject(items2, () => ({ hasUnread: outer1_4.hasUnread(channel.id), mentionCount: outer1_4.getMentionCount(channel.id) }), items3);
   ({ hasUnread, mentionCount } = stateFromStoresObject);
   const tmp = callback();
-  const items4 = [closure_5];
+  const items4 = [updateUserGuildSettingsInternal];
   const items5 = [channel];
-  const stateFromStores = channel(566).useStateFromStores(items4, () => outer1_5.isChannelMuted(channel.getGuildId(), channel.id), items5);
-  const obj2 = channel(566);
-  ({ isIncomingCall, isOngoingCall } = importDefault(15003)(channel.id));
-  obj = { onPress: callback1, onLongPress: callback, style: tmp.container, accessible: true, accessibilityRole: "button" };
-  const tmp6 = importDefault(15003)(channel.id);
-  obj.accessibilityLabel = importDefault(8292)({ channel, unread: hasUnread, mentionCount, isIncomingCall, isOngoingCall });
-  obj.accessibilityState = { selected };
-  obj.channel = channel;
-  obj.selected = selected;
-  obj.unread = hasUnread;
-  obj.resolvedUnreadSetting = UnreadSetting.ALL_MESSAGES;
-  obj.mentionCount = mentionCount;
-  obj.muted = stateFromStores;
-  return jsx(importDefault(15071), { onPress: callback1, onLongPress: callback, style: tmp.container, accessible: true, accessibilityRole: "button" });
+  const stateFromStores = channel(589).useStateFromStores(items4, () => outer1_5.isChannelMuted(channel.getGuildId(), channel.id), items5);
+  const obj2 = channel(589);
+  ({ isIncomingCall, isOngoingCall } = importDefault(15029)(channel.id));
+  obj = { onPress: callback1, onLongPress: callback, style: tmp.container, accessible: true, accessibilityRole: "button", accessibilityLabel: null, accessibilityState: null, channel: null, selected: null, unread: null, resolvedUnreadSetting: null, mentionCount: null, muted: null };
+  const tmp6 = importDefault(15029)(channel.id);
+  obj[5] = importDefault(8316)({ channel, unread: hasUnread, mentionCount, isIncomingCall, isOngoingCall });
+  obj[6] = { selected };
+  obj[7] = channel;
+  obj[8] = selected;
+  obj[9] = hasUnread;
+  obj[10] = UnreadSetting.ALL_MESSAGES;
+  obj[11] = mentionCount;
+  obj[12] = stateFromStores;
+  return jsx(importDefault(15104), { onPress: callback1, onLongPress: callback, style: tmp.container, accessible: true, accessibilityRole: "button", accessibilityLabel: null, accessibilityState: null, channel: null, selected: null, unread: null, resolvedUnreadSetting: null, mentionCount: null, muted: null });
 });
-let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/channel_list_v2/native/items/DMChannel.tsx");
+let result = require("updateUserGuildSettingsInternal").fileFinishedImporting("modules/channel_list_v2/native/items/DMChannel.tsx");
 
 export default memoResult;

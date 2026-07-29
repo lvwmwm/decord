@@ -1,47 +1,43 @@
-// Module ID: 11262
-// Function ID: 87456
+// Module ID: 11286
+// Function ID: 11287
 // Name: EmptyState
-// Dependencies: [31, 27, 33, 4165, 689, 4011, 4101, 11263, 11264, 11201, 7992, 4161, 1212, 2]
+// Dependencies: [19, 17, 21, 4189, 712, 4035, 4125, 11287, 11288, 11225, 8017, 4185, 1236, 2]
 // Exports: default
 
-// Module 11262 (EmptyState)
-import "result";
+// Module 11286 (EmptyState)
+import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_3;
-let closure_4;
-let closure_5;
+let c3;
+let c4;
+let c5;
 let closure_6;
 const require = arg1;
-({ View: closure_3, Image: closure_4 } = get_ActivityIndicator);
-({ jsx: closure_5, jsxs: closure_6 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { paddingVertical: 16, paddingHorizontal: 24, gap: 12, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SURFACE_HIGH, borderRadius: require("_createForOfIteratorHelperLoose").radii.lg, alignItems: "center", justifyContent: "flex-start", display: "flex", flexDirection: "row" };
-_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.textContainer = { flexShrink: 1 };
-_createForOfIteratorHelperLoose.image = { width: 64, height: 64 };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+({ View: c3, Image: c4 } = get_ActivityIndicator);
+({ jsx: c5, jsxs: closure_6 } = jsxProd);
+createCacheKey = { container: null, textContainer: null, image: null };
+createCacheKey = { paddingVertical: 16, paddingHorizontal: 24, gap: 12, backgroundColor: require("Themes").colors.BACKGROUND_SURFACE_HIGH, borderRadius: require("Themes").radii.lg, alignItems: "center", justifyContent: "flex-start", display: "flex", flexDirection: "row" };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { flexShrink: 1 };
+createCacheKey[2] = { width: 64, height: 64 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
 const result = require("jsxProd").fileFinishedImporting("modules/app_launcher/native/screens/home/NoPermsState.tsx");
 
 export default function EmptyState() {
-  const tmp = _createForOfIteratorHelperLoose();
-  let obj = require(4011) /* AccessibilityAnnouncer */;
-  if (obj.isThemeLight(importDefault(4101)())) {
-    let tmp4 = 11263;
-  } else {
-    tmp4 = 11264;
-  }
-  let obj1 = require(11201) /* handleApplicationSelected */;
-  const logAppLauncherEmptyStateView = obj1.useLogAppLauncherEmptyStateView(require(7992) /* AppLauncherEntrypoint */.AppLauncherEmptyStateType.HOME_NO_PERMISSIONS);
-  obj = { style: tmp.container };
-  obj = { style: tmp.image, resizeMode: "contain", source: importDefault(tmp4) };
+  const tmp = createCacheKey();
+  let obj = require(4035) /* AccessibilityAnnouncer */;
+  const tmp4 = importDefault;
+  const tmp4Result = importDefault(obj.isThemeLight(importDefault(4125)()) ? 11287 : 11288);
+  const logAppLauncherEmptyStateView = require(11225) /* handleApplicationSelected */.useLogAppLauncherEmptyStateView(tmp2(8017).AppLauncherEmptyStateType.HOME_NO_PERMISSIONS);
+  obj = { style: tmp.container, children: null };
+  obj = { style: tmp.image, resizeMode: "contain", source: tmp4Result };
   const items = [callback(closure_4, obj), ];
-  obj1 = { style: tmp.textContainer, variant: "text-sm/medium", color: "text-muted" };
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj1.children = intl.string(require(1212) /* getSystemLocale */.t.uDnXXj);
-  items[1] = callback(require(4161) /* Text */.Text, obj1);
-  obj.children = items;
+  const obj1 = { style: tmp.textContainer, variant: "text-sm/medium", color: "text-muted", children: null };
+  const intl = tmp2(1236).intl;
+  obj1[3] = intl.string(require(1236) /* getSystemLocale */.t.uDnXXj);
+  items[1] = callback(require(4185) /* Text */.Text, obj1);
+  obj[1] = items;
   return callback2(closure_3, obj);
 };

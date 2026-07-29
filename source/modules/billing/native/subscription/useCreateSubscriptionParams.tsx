@@ -1,11 +1,11 @@
-// Module ID: 6647
-// Function ID: 58616
+// Module ID: 6668
+// Function ID: 6669
 // Name: useCreateSubscriptionParams
-// Dependencies: [31, 6648, 491, 2]
+// Dependencies: [19, 6669, 514, 2]
 // Exports: default
 
-// Module 6647 (useCreateSubscriptionParams)
-import result from "result";
+// Module 6668 (useCreateSubscriptionParams)
+import noop from "noop";
 
 const require = arg1;
 const result = require("v1").fileFinishedImporting("modules/billing/native/subscription/useCreateSubscriptionParams.tsx");
@@ -13,26 +13,29 @@ const result = require("v1").fileFinishedImporting("modules/billing/native/subsc
 export default function useCreateSubscriptionParams(arg0, arg1) {
   let closure_0 = arg0;
   const importDefault = arg1;
-  let tmp = importDefault(6648)();
+  const tmp = importDefault(6669)();
   const dependencyMap = tmp;
   let items = [arg0, arg1, tmp];
   return React.useMemo(() => {
-    let tmp = null;
-    if (null != lib) {
-      tmp = null;
+    let tmp2 = null;
+    if (null != callback) {
+      tmp2 = null;
       if (null != closure_1) {
-        tmp = null;
+        tmp2 = null;
         if (null != tmp) {
-          let obj = { requestIdentifier: lib(tmp[2]).v4() };
-          obj = { planId: lib.id, quantity: 1 };
+          let obj = { requestIdentifier: null, items: null, countryCode: null, currency: null };
+          obj[0] = callback(tmp[2]).v4();
+          obj = { planId: null, quantity: 1 };
+          obj[0] = tmp.id;
           const items = [obj];
-          obj.items = items;
-          ({ country: obj.countryCode, currency: obj.currency } = closure_1);
-          tmp = obj;
-          const obj2 = lib(tmp[2]);
+          obj[1] = items;
+          ({ country: obj[2], currency: obj[3] } = tmp3);
+          tmp2 = obj;
+          const obj2 = callback(tmp[2]);
         }
       }
+      tmp3 = closure_1;
     }
-    return tmp;
+    return tmp2;
   }, items);
 };

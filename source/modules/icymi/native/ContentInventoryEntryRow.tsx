@@ -1,12 +1,12 @@
-// Module ID: 15337
-// Function ID: 116812
+// Module ID: 15370
+// Function ID: 15371
 // Name: ContentInventoryEntryRow
-// Dependencies: [31, 3802, 33, 566, 7884, 15338, 15347, 2]
+// Dependencies: [19, 3826, 21, 589, 7909, 15371, 15380, 2]
 // Exports: default
 
-// Module 15337 (ContentInventoryEntryRow)
-import "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 15370 (ContentInventoryEntryRow)
+import "noop";
+import upsertRelationship from "upsertRelationship";
 import { jsx } from "jsxProd";
 
 const require = arg1;
@@ -18,29 +18,32 @@ export default function ContentInventoryEntryRow(content) {
   if (flag === undefined) {
     flag = false;
   }
-  const visible = content.visible;
-  let obj = content(566);
-  const items = [_isNativeReflectConstruct];
+  let flag2 = content.visible;
+  let obj = content(589);
+  const items = [upsertRelationship];
   if (obj.useStateFromStores(items, () => outer1_3.isBlockedOrIgnored(content.author_id))) {
     return null;
   } else {
     const content_type = content.content_type;
-    if (content(7884).ContentInventoryEntryType.TOP_GAME !== content_type) {
-      if (content(7884).ContentInventoryEntryType.PLAYED_GAME !== content_type) {
-        if (content(7884).ContentInventoryEntryType.CUSTOM_STATUS === content_type) {
-          obj = { content, renderForScreenshot: flag };
-          let tmp11 = null != visible;
-          if (tmp11) {
-            tmp11 = visible;
+    if (tmp(7909).ContentInventoryEntryType.TOP_GAME !== content_type) {
+      if (tmp(7909).ContentInventoryEntryType.PLAYED_GAME !== content_type) {
+        if (tmp(7909).ContentInventoryEntryType.CUSTOM_STATUS === content_type) {
+          obj = { content: null, renderForScreenshot: null, visible: null };
+          obj[0] = content;
+          obj[1] = flag;
+          if (flag2 == null) {
+            flag2 = false;
           }
-          obj.visible = tmp11;
-          return jsx(importDefault(15347), { content, renderForScreenshot: flag });
+          obj[2] = flag2;
+          return jsx(importDefault(15380), { content: null, renderForScreenshot: null, visible: null });
         } else {
           return null;
         }
       }
     }
-    obj = { content, renderForScreenshot: flag };
-    return jsx(importDefault(15338), { content, renderForScreenshot: flag });
+    obj = { content: null, renderForScreenshot: null };
+    obj[0] = content;
+    obj[1] = flag;
+    return jsx(importDefault(15371), { content: null, renderForScreenshot: null });
   }
 };

@@ -1,25 +1,25 @@
-// Module ID: 6672
-// Function ID: 58785
+// Module ID: 6693
+// Function ID: 6694
 // Name: generateAcceptInviteOptions
-// Dependencies: [5, 6673, 5761, 1352, 1194, 1348, 1908, 1918, 1838, 6675, 4150, 3793, 3802, 3982, 1850, 653, 1197, 1355, 4230, 6003, 4982, 1360, 6688, 5640, 1210, 1198, 4979, 1935, 6689, 8814, 4262, 4344, 12399, 5686, 4654, 9117, 7989, 5088, 8193, 686, 8624, 4380, 12400, 5083, 675, 507, 4065, 664, 4977, 480, 1361, 4151, 5085, 5622, 3834, 12402, 12403, 8011, 4485, 4403, 12404, 12405, 490, 12407, 2]
+// Dependencies: [5, 6694, 5779, 1376, 1218, 1372, 1932, 1942, 1862, 6696, 4174, 3817, 3826, 4006, 1874, 676, 1221, 1379, 4254, 6021, 5004, 1384, 6709, 5658, 1234, 1222, 5001, 1959, 6710, 8838, 4286, 4369, 12421, 5704, 4676, 9141, 8014, 5110, 8217, 709, 8648, 4403, 12422, 5105, 698, 530, 4089, 687, 4999, 503, 1385, 4175, 5107, 5640, 3858, 12424, 12425, 8035, 4508, 4426, 12426, 12427, 513, 12429, 2]
 // Exports: trackInviteEmbedActioned, trackInviteServerClicked, transitionToGuildFromEventInvite
 
-// Module 6672 (generateAcceptInviteOptions)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_6 from "_isNativeReflectConstruct";
-import { isGuildScheduledEventActive as closure_7 } from "_isNativeReflectConstruct";
-import _callSuper from "_callSuper";
-import closure_13 from "_isNativeReflectConstruct";
-import closure_14 from "_isNativeReflectConstruct";
-import closure_15 from "_isNativeReflectConstruct";
-import closure_16 from "_isNativeReflectConstruct";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import closure_18 from "_isNativeReflectConstruct";
-import closure_19 from "_isNativeReflectConstruct";
-import closure_20 from "_isNativeReflectConstruct";
-import closure_21 from "_isNativeReflectConstruct";
-import closure_22 from "_isNativeReflectConstruct";
-import closure_23 from "_isNativeReflectConstruct";
+// Module 6693 (generateAcceptInviteOptions)
+import ensureGuildLoaded from "ensureGuildLoaded";
+import scheduledEventSort from "scheduledEventSort";
+import { isGuildScheduledEventActive as closure_7 } from "scheduledEventSort";
+import createChannelRecord from "createChannelRecord";
+import fetchFingerprint from "fetchFingerprint";
+import closure_14 from "ensureGuildLoaded";
+import comparator from "comparator";
+import trackCommunicationDisabled from "trackCommunicationDisabled";
+import createGuildRecordFromRust from "createGuildRecordFromRust";
+import map from "map";
+import updateInvite from "updateInvite";
+import getUncachedChannelPermissions from "getUncachedChannelPermissions";
+import upsertRelationship from "upsertRelationship";
+import handleConnectionOpen from "handleConnectionOpen";
+import mergeGuildAvatar from "mergeGuildAvatar";
 import ME from "ME";
 import { AgeGateSource } from "result";
 import { StaticChannelRoute } from "set";
@@ -27,8 +27,8 @@ import { StreamTypes } from "StreamIssueReportReasons";
 import { InviteTargetTypes } from "InviteSendStates";
 import { STAGE_INVITE_STATE_KEY } from "MAX_STAGE_TOPIC_LENGTH";
 
-let closure_10;
-let closure_11;
+let c10;
+let c9;
 let closure_12;
 let closure_24;
 let closure_25;
@@ -40,8 +40,8 @@ let closure_30;
 let closure_31;
 let closure_32;
 let closure_33;
-let closure_8;
-let closure_9;
+let metroImportAll;
+let unpackModuleId;
 const require = arg1;
 function generateAcceptInviteOptions(target_type) {
   let target_application;
@@ -51,63 +51,57 @@ function generateAcceptInviteOptions(target_type) {
   if (InviteTargetTypes.STREAM === target_type) {
     ({ target_type: obj.targetType, target_user } = target_type);
     let id;
-    if (null != target_user) {
+    if (target_user != null) {
       id = target_user.id;
     }
     obj.targetUserId = id;
-  } else if (InviteTargetTypes.EMBEDDED_APPLICATION === target_type) {
+  } else if (tmp.EMBEDDED_APPLICATION === target_type) {
     ({ target_type: obj.targetType, target_application } = target_type);
     let id1;
-    if (null != target_application) {
+    if (target_application != null) {
       id1 = target_application.id;
     }
     obj.targetApplicationId = id1;
-  } else if (InviteTargetTypes.ROLE_SUBSCRIPTIONS_PURCHASE === target_type) {
+  } else if (tmp.ROLE_SUBSCRIPTIONS_PURCHASE === target_type) {
     obj.targetType = target_type.target_type;
   }
   const guild = target_type.guild;
   let id2;
-  if (null != guild) {
+  if (guild != null) {
     id2 = guild.id;
   }
-  const tmp9 = null != store2.getGuild(id2);
-  let new_member = !tmp9;
+  const tmp8 = null == guild.getGuild(id2) || target_type.new_member;
+  let tmp9 = tmp8;
+  if (tmp8) {
+    tmp9 = null != target_type.channel;
+  }
   if (tmp9) {
-    new_member = target_type.new_member;
+    tmp9 = callback2(target_type.channel.type);
   }
-  let tmp10 = new_member;
-  if (new_member) {
-    tmp10 = null != target_type.channel;
-  }
-  if (tmp10) {
-    tmp10 = callback2(target_type.channel.type);
-  }
-  if (tmp10) {
+  if (tmp9) {
     obj.welcomeModalChannelId = target_type.channel.id;
   }
   if (null != target_type.guild_scheduled_event) {
     obj.guildScheduledEvent = target_type.guild_scheduled_event;
   }
-  const flags = target_type.flags;
-  let num = 0;
-  if (null != flags) {
-    num = flags;
+  let num = target_type.flags;
+  if (num == null) {
+    num = 0;
   }
-  obj.isGuestInvite = require(1360) /* hasFlag */.hasFlag(num, require(6688) /* set */.GuildInviteFlags.IS_GUEST_INVITE);
-  const obj2 = require(1360) /* hasFlag */;
-  const flags2 = target_type.flags;
-  let num2 = 0;
-  if (null != flags2) {
-    num2 = flags2;
+  obj.isGuestInvite = require(1384) /* hasFlag */.hasFlag(num, require(6709) /* set */.GuildInviteFlags.IS_GUEST_INVITE);
+  const obj2 = require(1384) /* hasFlag */;
+  let num2 = target_type.flags;
+  if (num2 == null) {
+    num2 = 0;
   }
-  obj.isApplicationBypassInvite = require(1360) /* hasFlag */.hasFlag(num2, require(6688) /* set */.GuildInviteFlags.IS_APPLICATION_BYPASS);
+  obj.isApplicationBypassInvite = require(1384) /* hasFlag */.hasFlag(num2, require(6709) /* set */.GuildInviteFlags.IS_APPLICATION_BYPASS);
   const inviter = target_type.inviter;
   let id3;
-  if (null != inviter) {
+  if (inviter != null) {
     id3 = inviter.id;
   }
   obj.inviterUserId = id3;
-  if (!new_member) {
+  if (!tmp8) {
     obj.forceTransition = true;
   }
   if (null != target_type.target_channel_id) {
@@ -118,581 +112,1067 @@ function generateAcceptInviteOptions(target_type) {
   }
   return obj;
 }
-function getTransition(channel, options, arg2) {
-  let c0;
-  let guildScheduledEvent;
-  let welcomeModalChannelId;
-  let obj = options;
-  let flag = arg2;
-  if (arg2 === undefined) {
-    flag = false;
-  }
-  c0 = undefined;
-  obj = undefined;
-  if (null == obj) {
-    obj = {};
-  }
-  ({ transitionTo: c0, welcomeModalChannelId, guildScheduledEvent } = obj);
-  obj = { source: obj(1210).INVITE_ACCEPT, navigationReplace: true };
-  if (flag) {
-    obj.openChannel = true;
-  }
-  if (null != welcomeModalChannelId) {
-    obj.welcomeModalChannelId = welcomeModalChannelId;
-  }
-  if (channel.type === constants.GUILD_STAGE_VOICE) {
-    obj = { stageInviteKey: STAGE_INVITE_STATE_KEY };
-    obj.state = obj;
-  }
-  if (null != guildScheduledEvent) {
-    obj.guildScheduledEventId = guildScheduledEvent.id;
-  }
-  return (ME) => {
-    if (null != _undefined) {
-      let transitionToResult = _undefined(ME, obj);
-    } else {
-      obj = _undefined(outer1_3[25]);
-      transitionToResult = obj.transitionTo(ME, obj);
-    }
-    return transitionToResult;
-  };
-}
-function transitionToInviteChannel(guildId) {
-  let c4;
-  let targetType;
-  guildId = guildId.guildId;
-  let channel = guildId.channel;
-  const options = guildId.options;
-  let analyticsLocations = guildId.analyticsLocations;
-  if (analyticsLocations === undefined) {
-    analyticsLocations = [];
-  }
-  c4 = undefined;
-  targetType = undefined;
-  let targetApplicationId;
-  let isGuestInvite;
-  let GUILD_HOME;
-  let callback3;
-  let c10;
-  function runDeepLinkJump() {
-    return outer1_41(channel, options, true)(c10);
-  }
-  const guild = store2.getGuild(guildId);
-  if (null != guild) {
-    const features = guild.features;
-    const hasItem = features.has(constants3.MEMBER_VERIFICATION_MANUAL_APPROVAL);
-  }
-  let obj = options;
-  if (null == options) {
-    obj = {};
-  }
-  ({ targetUserId: c4, targetType } = obj);
-  targetApplicationId = obj.targetApplicationId;
-  isGuestInvite = obj.isGuestInvite;
-  const type = channel.type;
-  let targetChannelId;
-  channel = authStore.getChannel(channel.id);
-  if (null != options) {
-    targetChannelId = options.targetChannelId;
-  }
-  if (null != targetChannelId) {
-    const channel1 = authStore.getChannel(targetChannelId);
-    if (null != channel1) {
-      GUILD_HOME = targetChannelId;
-    }
-    callback3 = type === constants.GUILD_STAGE_VOICE;
-    let targetChannelId1;
-    if (null != options) {
-      targetChannelId1 = options.targetChannelId;
-    }
-    let tmp24;
-    if (null != targetChannelId1 && GUILD_HOME === options.targetChannelId) {
-      let targetMessageId;
-      if (null != options) {
-        targetMessageId = options.targetMessageId;
-      }
-      tmp24 = targetMessageId;
-    }
-    const CHANNELResult = closure_26.CHANNEL(guildId, GUILD_HOME, tmp24);
-    c10 = CHANNELResult;
-    if (GUILD_HOME === channel.id) {
-      if (callback3(type)) {
-        let autoJoin;
-        if (null != options) {
-          autoJoin = options.autoJoin;
-        }
-        if (false !== autoJoin) {
-          targetType(() => {
-            guildId(analyticsLocations[27])(analyticsLocations[26], analyticsLocations.paths).then((arg0) => {
-              let closure_0 = arg0.default;
-              function connect() {
-                if (outer2_9) {
-                  if (outer2_1 instanceof outer3_11) {
-                    let tmp52 = outer2_1;
-                  } else {
-                    tmp52 = callback(outer2_1);
-                  }
-                  guildId(analyticsLocations[28]).connectAndOpen(tmp52);
-                  const obj6 = guildId(analyticsLocations[28]);
-                  guildId(analyticsLocations[25]).transitionTo(outer2_10);
-                } else {
-                  let muteOnJoinVoiceChannel = null != outer2_2;
-                  if (muteOnJoinVoiceChannel) {
-                    muteOnJoinVoiceChannel = outer2_2.muteOnJoinVoiceChannel;
-                  }
-                  if (muteOnJoinVoiceChannel) {
-                    let obj = channel(analyticsLocations[29]);
-                    obj.setSelfMute(guildId(analyticsLocations[30]).MediaEngineContextTypes.DEFAULT, true);
-                  }
-                  const voiceChannel = closure_0.selectVoiceChannel(outer2_8);
-                  let tmp13 = outer2_5 === outer3_37.STREAM;
-                  if (tmp13) {
-                    tmp13 = null != outer2_4;
-                  }
-                  if (tmp13) {
-                    obj = { streamType: outer3_36.GUILD, ownerId: outer2_4, guildId: outer2_0, channelId: outer2_8 };
-                    const result = options(analyticsLocations[31]).watchStreamAndTransitionToStream(obj);
-                    const obj2 = options(analyticsLocations[31]);
-                  }
-                  let tmp24 = outer2_5 === outer3_37.EMBEDDED_APPLICATION;
-                  if (tmp24) {
-                    tmp24 = null != outer2_6;
-                  }
-                  if (tmp24) {
-                    guildId(analyticsLocations[25]).transitionTo(outer3_26.CHANNEL(null != outer2_0 ? outer2_0 : outer3_27, outer2_8));
-                    obj = { channelId: outer2_8, applicationId: outer2_6 };
-                    let intent;
-                    const obj4 = guildId(analyticsLocations[25]);
-                    if (null != outer2_2) {
-                      intent = outer2_2.intent;
-                    }
-                    obj.intent = intent;
-                    let inviterUserId;
-                    if (null != outer2_2) {
-                      inviterUserId = outer2_2.inviterUserId;
-                    }
-                    obj.inviterUserId = inviterUserId;
-                    obj.analyticsLocations = outer2_3;
-                    obj.commandOrigin = guildId(analyticsLocations[33]).CommandOrigin.CHAT;
-                    channel(analyticsLocations[32])(obj);
-                    const tmp33 = channel(analyticsLocations[32]);
-                  }
-                }
-              }
-              if (!outer1_7) {
-                const items = [outer2_17, outer2_23, outer2_16];
-                if (obj.shouldShowMembershipVerificationGate(outer1_0, items)) {
-                  let result = guildId(analyticsLocations[35]).openMemberVerificationModal(outer1_0, connect);
-                  let obj2 = guildId(analyticsLocations[35]);
-                }
-              }
-              connect();
-            });
-          });
-        }
-        if (tmp23) {
-          if (guildId !== closure_27) {
-            const promise = guildId(analyticsLocations[27])(analyticsLocations[37], analyticsLocations.paths);
-            guildId(analyticsLocations[27])(analyticsLocations[37], analyticsLocations.paths).then((arg0) => arg0.default({ guildId })).then(runDeepLinkJump, runDeepLinkJump);
-            const nextPromise = guildId(analyticsLocations[27])(analyticsLocations[37], analyticsLocations.paths).then((arg0) => arg0.default({ guildId }));
-          }
-        }
-        getTransition(channel, options, tmp23)(CHANNELResult);
-      }
-    }
-    let result = guildId(analyticsLocations[36]).isActivityInTextSupportedForChannel(channel);
-    if (result) {
-      result = targetType === InviteTargetTypes.EMBEDDED_APPLICATION;
-    }
-    if (result) {
-      result = null != targetApplicationId;
-    }
-    if (result) {
-      let tmp37 = guildId;
-      if (null == guildId) {
-        tmp37 = closure_27;
-      }
-      guildId(analyticsLocations[25]).transitionTo(closure_26.CHANNEL(tmp37, GUILD_HOME));
-      obj = { channelId: GUILD_HOME, applicationId: targetApplicationId };
-      let intent;
-      let obj4 = guildId(analyticsLocations[25]);
-      if (null != options) {
-        intent = options.intent;
-      }
-      obj.intent = intent;
-      let inviterUserId;
-      if (null != options) {
-        inviterUserId = options.inviterUserId;
-      }
-      obj.inviterUserId = inviterUserId;
-      obj.analyticsLocations = analyticsLocations;
-      obj.commandOrigin = guildId(analyticsLocations[33]).CommandOrigin.CHAT;
-      channel(analyticsLocations[32])(obj);
-      const tmp41 = channel(analyticsLocations[32]);
-    }
-    const obj3 = guildId(analyticsLocations[36]);
-  }
-  targetType = undefined;
-  if (null != options) {
-    targetType = options.targetType;
-  }
-  if (null == targetType) {
-    if (!callback3(channel.type)) {
-      if (obj2.canSeeOnboardingHome(guildId)) {
-        GUILD_HOME = StaticChannelRoute.GUILD_HOME;
-      }
-      obj2 = guildId(analyticsLocations[23]);
-    }
-  }
-  const channel2 = authStore.getChannel(channel.id);
-  if (closure_20.can(callback4(channel.type), channel2)) {
-    let id = channel.id;
-  } else {
-    defaultChannel = defaultChannel.getDefaultChannel(guildId, true, constants6.CREATE_INSTANT_INVITE);
-    id = undefined;
-    if (null != defaultChannel) {
-      id = defaultChannel.id;
-    }
-    if (null == id) {
-      id = channel.id;
-    }
-  }
-}
-function transitionToInviteChannelSync(dMFromUserId, arg1) {
-  let items = arg2;
-  let closure_0 = dMFromUserId;
-  let closure_1 = arg1;
-  if (arg2 === undefined) {
-    items = [];
-  }
-  let result = authStore.addConditionalChangeListener(() => {
-    const channel = outer1_14.getChannel(dMFromUserId);
+function transitionToInviteChannelSync(arg0, arg1) {
+  let closure_0 = arg0;
+  let items;
+  items = [];
+  const result = closure_14.addConditionalChangeListener(() => {
+    let c4;
+    let guildScheduledEvent;
+    let targetType;
+    let transitionTo;
+    let welcomeModalChannelId;
+    let obj = outer1_14;
+    transitionTo = outer1_14.getChannel(guildId);
     const currentUser = outer1_23.getCurrentUser();
-    if (null == channel || null == currentUser) {
-      return tmp2;
+    if (null == transitionTo || null == currentUser) {
+      return tmp3;
     } else {
-      let tmp3 = channel.nsfw && !currentUser.nsfwAllowed;
-      if (!tmp3) {
-        let isGuildVocalOrThreadResult = channel.isGuildVocalOrThread();
+      let guildScheduledEvent1 = transitionTo.nsfw && !currentUser.nsfwAllowed;
+      if (!guildScheduledEvent1) {
+        let isGuildVocalOrThreadResult = transitionTo.isGuildVocalOrThread();
         if (isGuildVocalOrThreadResult) {
-          isGuildVocalOrThreadResult = dMFromUserId(outer1_3[41]).maybeOpenAgeGateForVoiceChannel(dMFromUserId);
-          const obj2 = dMFromUserId(outer1_3[41]);
+          let obj2 = id(outer1_3[41]);
+          isGuildVocalOrThreadResult = obj2.maybeOpenAgeGateForVoiceChannel(tmp);
         }
-        tmp3 = isGuildVocalOrThreadResult;
+        guildScheduledEvent1 = isGuildVocalOrThreadResult;
       }
-      if (!tmp3) {
-        let isGuildVocalOrThreadResult1 = channel.isGuildVocalOrThread();
+      if (!guildScheduledEvent1) {
+        let isGuildVocalOrThreadResult1 = transitionTo.isGuildVocalOrThread();
         if (isGuildVocalOrThreadResult1) {
-          isGuildVocalOrThreadResult1 = dMFromUserId(outer1_3[42]).maybeOpenSpoilerGateForVoiceChannel(dMFromUserId);
-          const obj3 = dMFromUserId(outer1_3[42]);
+          isGuildVocalOrThreadResult1 = id(outer1_3[42]).maybeOpenSpoilerGateForVoiceChannel(tmp);
+          let obj4 = id(outer1_3[42]);
         }
-        tmp3 = isGuildVocalOrThreadResult1;
+        guildScheduledEvent1 = isGuildVocalOrThreadResult1;
       }
-      let flag = !tmp3;
-      if (flag) {
-        let guildScheduledEvent;
-        if (null != guildScheduledEvent) {
-          guildScheduledEvent = guildScheduledEvent.guildScheduledEvent;
+      let flag = !guildScheduledEvent1;
+      if (!guildScheduledEvent1) {
+        guildScheduledEvent = undefined;
+        if (transitionTo != null) {
+          guildScheduledEvent = tmp10.guildScheduledEvent;
         }
-        if (null == guildScheduledEvent) {
-          let obj = {};
-          let guildId = channel.getGuildId();
-          if (null == guildId) {
+        if (null != guildScheduledEvent) {
+          guildScheduledEvent1 = tmp10.guildScheduledEvent;
+          guildId = guildScheduledEvent1;
+          transitionTo = tmp10.welcomeModalChannelId;
+          flag = false;
+          if (null != guildScheduledEvent1) {
+            outer1_5(() => {
+              const obj = { guildScheduledEventId: guildId.id };
+              if (null != transitionTo) {
+                obj.welcomeModalChannelId = transitionTo;
+              }
+              const result = guildId(items[38]).transitionToEventDetailsFromInvite(guildId, obj);
+            });
+            flag = false;
+          }
+        } else {
+          guildId = transitionTo.getGuildId();
+          if (guildId == null) {
             guildId = outer1_27;
           }
-          obj.guildId = guildId;
-          obj.channel = channel;
-          obj.options = guildScheduledEvent;
-          obj.analyticsLocations = items;
-          outer1_42(obj);
-          flag = false;
-          const tmp14 = outer1_42;
+          let items = tmp10;
+          if (items === undefined) {
+            items = [];
+          }
+          c4 = undefined;
+          targetType = undefined;
+          let targetApplicationId;
+          let isGuestInvite;
+          let GUILD_HOME;
+          let closure_9;
+          let c10;
+          const guild = outer1_17.getGuild(guildId);
+          if (guild != null) {
+            const features = guild.features;
+            const hasItem = features.has(outer1_29.MEMBER_VERIFICATION_MANUAL_APPROVAL);
+          }
+          obj = tmp10;
+          if (tmp10 == null) {
+            obj = {};
+          }
+          ({ targetUserId: c4, targetType } = obj);
+          targetApplicationId = obj.targetApplicationId;
+          isGuestInvite = obj.isGuestInvite;
+          if (!isGuestInvite) {
+            if (!obj.isApplicationBypassInvite) {
+              let forceTransition;
+              if (tmp10 != null) {
+                forceTransition = tmp10.forceTransition;
+              }
+              if (!forceTransition) {
+                if (hasItem) {
+                  let CHANNELResult = outer1_22;
+                  guildScheduledEvent1 = outer1_22.getGuildId();
+                  flag = false;
+                }
+              }
+            }
+          }
+          const type = transitionTo.type;
+          let targetChannelId;
+          const channel = obj.getChannel(transitionTo.id);
+          if (tmp10 != null) {
+            targetChannelId = tmp10.targetChannelId;
+          }
+          if (null != targetChannelId) {
+            const channel1 = obj.getChannel(targetChannelId);
+            if (null != channel1) {
+              GUILD_HOME = targetChannelId;
+            }
+            closure_9 = type === outer1_25.GUILD_STAGE_VOICE;
+            let targetChannelId1;
+            if (tmp10 != null) {
+              targetChannelId1 = tmp10.targetChannelId;
+            }
+            let tmp39;
+            if (null != targetChannelId1 && GUILD_HOME === tmp10.targetChannelId) {
+              let targetMessageId;
+              if (tmp10 != null) {
+                targetMessageId = tmp10.targetMessageId;
+              }
+              tmp39 = targetMessageId;
+            }
+            CHANNELResult = outer1_26.CHANNEL(guildId, GUILD_HOME, tmp39);
+            c10 = CHANNELResult;
+            if (GUILD_HOME === transitionTo.id) {
+              if (outer1_9(type)) {
+                let autoJoin;
+                if (tmp10 != null) {
+                  autoJoin = tmp10.autoJoin;
+                }
+                if (false !== autoJoin) {
+                  outer1_5(() => {
+                    guildId(items[27])(items[26], items.paths).then((guildId) => {
+                      let closure_0 = guildId.default;
+                      function connect() {
+                        if (outer1_9) {
+                          if (outer1_1 instanceof outer2_11) {
+                            let tmp44 = tmp41;
+                          } else {
+                            tmp44 = outer2_10(tmp41);
+                          }
+                          outer2_0(outer2_3[28]).connectAndOpen(tmp44);
+                          const obj6 = outer2_0(outer2_3[28]);
+                          outer2_0(outer2_3[25]).transitionTo(outer1_10);
+                        } else {
+                          let prop;
+                          if (outer1_2 != null) {
+                            prop = tmp.muteOnJoinVoiceChannel;
+                          }
+                          if (prop) {
+                            let obj = outer2_1(outer2_3[29]);
+                            obj.setSelfMute(outer2_0(outer2_3[30]).MediaEngineContextTypes.DEFAULT, true);
+                          }
+                          const voiceChannel = closure_0.selectVoiceChannel(outer1_8);
+                          let tmp14 = outer1_5 === outer2_37.STREAM;
+                          if (tmp14) {
+                            tmp14 = null != outer1_4;
+                          }
+                          if (tmp14) {
+                            obj = { streamType: null, ownerId: null, guildId: null, channelId: null };
+                            obj[0] = outer2_36.GUILD;
+                            obj[1] = outer1_4;
+                            obj[2] = closure_0;
+                            obj[3] = tmp10;
+                            const result = outer2_2(outer2_3[31]).watchStreamAndTransitionToStream(obj);
+                            const obj2 = outer2_2(outer2_3[31]);
+                          }
+                          let tmp22 = outer1_5 === outer2_37.EMBEDDED_APPLICATION;
+                          if (tmp22) {
+                            tmp22 = null != outer1_6;
+                          }
+                          if (tmp22) {
+                            let tmp27 = closure_0;
+                            if (closure_0 == null) {
+                              tmp27 = outer2_27;
+                            }
+                            outer2_0(outer2_3[25]).transitionTo(outer2_26.CHANNEL(tmp27, tmp10));
+                            obj = { channelId: null, applicationId: null, intent: null, inviterUserId: null, analyticsLocations: null, commandOrigin: null };
+                            obj[0] = tmp10;
+                            obj[1] = outer1_6;
+                            let intent;
+                            const obj4 = outer2_0(outer2_3[25]);
+                            if (tmp != null) {
+                              intent = tmp.intent;
+                            }
+                            obj[2] = intent;
+                            let inviterUserId;
+                            if (tmp != null) {
+                              inviterUserId = tmp.inviterUserId;
+                            }
+                            obj[3] = inviterUserId;
+                            obj[4] = outer1_3;
+                            obj[5] = outer2_0(outer2_3[33]).CommandOrigin.CHAT;
+                            outer2_1(outer2_3[32])(obj);
+                            const tmp31 = outer2_1(outer2_3[32]);
+                          }
+                        }
+                      }
+                      if (!closure_7) {
+                        const items = [outer1_17, outer1_23, outer1_16];
+                        if (obj.shouldShowMembershipVerificationGate(closure_0, items)) {
+                          let result = outer1_0(outer1_3[35]).openMemberVerificationModal(closure_0, connect);
+                          const tmpResult = outer1_0(outer1_3[35]);
+                        }
+                      }
+                      connect();
+                    });
+                  });
+                }
+                if (tmp38) {
+                  if (guildId !== outer1_27) {
+                    transitionTo = function runDeepLinkJump(CHANNELResult, guildScheduledEvent1) {
+                      let guildScheduledEvent;
+                      let transitionTo;
+                      let welcomeModalChannelId;
+                      let obj = closure_2;
+                      if (closure_2 == null) {
+                        obj = {};
+                      }
+                      ({ transitionTo, welcomeModalChannelId, guildScheduledEvent } = obj);
+                      obj = { source: transitionTo(items[24]).INVITE_ACCEPT, navigationReplace: true, openChannel: true };
+                      if (null != welcomeModalChannelId) {
+                        obj.welcomeModalChannelId = welcomeModalChannelId;
+                      }
+                      if (transitionTo.type === outer1_25.GUILD_STAGE_VOICE) {
+                        obj = { stageInviteKey: null };
+                        obj[0] = outer1_38;
+                        obj.state = obj;
+                      }
+                      if (null != guildScheduledEvent) {
+                        obj.guildScheduledEventId = guildScheduledEvent.id;
+                      }
+                      if (null != transitionTo) {
+                        let transitionToResult = transitionTo(tmp3, obj);
+                      } else {
+                        transitionToResult = guildId(items[25]).transitionTo(tmp3, obj);
+                        const obj4 = guildId(items[25]);
+                      }
+                      return transitionToResult;
+                    };
+                    CHANNELResult = id(outer1_3[27])(outer1_3[37], outer1_3.paths);
+                    guildScheduledEvent1 = CHANNELResult.then((arg0) => arg0.default({ guildId }));
+                    guildScheduledEvent1.then(transitionTo, transitionTo);
+                    flag = false;
+                  }
+                  guildScheduledEvent1 = transitionTo(CHANNELResult, guildScheduledEvent1);
+                  flag = false;
+                }
+                obj = tmp10;
+                if (tmp10 == null) {
+                  obj = {};
+                }
+                ({ transitionTo, welcomeModalChannelId, guildScheduledEvent } = obj);
+                guildScheduledEvent1 = { source: null, navigationReplace: true };
+                guildScheduledEvent1[0] = obj(outer1_3[24]).INVITE_ACCEPT;
+                if (tmp38) {
+                  guildScheduledEvent1.openChannel = true;
+                }
+                if (null != welcomeModalChannelId) {
+                  guildScheduledEvent1.welcomeModalChannelId = welcomeModalChannelId;
+                }
+                if (transitionTo.type === tmp36.GUILD_STAGE_VOICE) {
+                  const obj1 = { stageInviteKey: null };
+                  obj1[0] = outer1_38;
+                  guildScheduledEvent1.state = obj1;
+                }
+                if (null != guildScheduledEvent) {
+                  guildScheduledEvent1.guildScheduledEventId = guildScheduledEvent.id;
+                }
+                if (null == transitionTo) {
+                  id(tmp58[25]).transitionTo(CHANNELResult, guildScheduledEvent1);
+                  flag = false;
+                  const obj13 = id(tmp58[25]);
+                }
+                tmp58 = outer1_3;
+              }
+            }
+            let result = id(outer1_3[36]).isActivityInTextSupportedForChannel(channel);
+            if (result) {
+              result = targetType === outer1_37.EMBEDDED_APPLICATION;
+            }
+            if (result) {
+              result = null != targetApplicationId;
+            }
+            if (result) {
+              let tmp47 = guildId;
+              if (guildId == null) {
+                tmp47 = outer1_27;
+              }
+              tmp43(tmp44[25]).transitionTo(obj7.CHANNEL(tmp47, GUILD_HOME));
+              obj2 = { channelId: null, applicationId: null, intent: null, inviterUserId: null, analyticsLocations: null, commandOrigin: null };
+              obj2[0] = GUILD_HOME;
+              obj2[1] = targetApplicationId;
+              let intent;
+              const tmp43Result = tmp43(tmp44[25]);
+              if (tmp10 != null) {
+                intent = tmp10.intent;
+              }
+              obj2[2] = intent;
+              let inviterUserId;
+              if (tmp10 != null) {
+                inviterUserId = tmp10.inviterUserId;
+              }
+              obj2[3] = inviterUserId;
+              obj2[4] = items;
+              obj2[5] = tmp43(tmp44[33]).CommandOrigin.CHAT;
+              obj(tmp44[32])(obj2);
+              const tmp50 = obj(tmp44[32]);
+            }
+            obj7 = outer1_26;
+            const obj8 = id(outer1_3[36]);
+            tmp36 = outer1_25;
+          }
+          targetType = undefined;
+          if (tmp10 != null) {
+            targetType = tmp10.targetType;
+          }
+          if (null == targetType) {
+            if (!outer1_9(transitionTo.type)) {
+              if (obj6.canSeeOnboardingHome(guildId)) {
+                GUILD_HOME = outer1_35.GUILD_HOME;
+              }
+              obj6 = id(outer1_3[23]);
+            }
+          }
+          const channel2 = obj.getChannel(transitionTo.id);
+          if (outer1_20.can(outer1_12(transitionTo.type), channel2)) {
+            id = transitionTo.id;
+          } else {
+            const defaultChannel = outer1_15.getDefaultChannel(guildId, true, outer1_32.CREATE_INSTANT_INVITE);
+            id = undefined;
+            if (defaultChannel != null) {
+              id = defaultChannel.id;
+            }
+            if (id == null) {
+              id = transitionTo.id;
+            }
+          }
         }
       }
-      (function transitionToInviteEvent(closure_1) {
-        const guildScheduledEvent = closure_1.guildScheduledEvent;
-        const welcomeModalChannelId = closure_1.welcomeModalChannelId;
-        if (null != guildScheduledEvent) {
-          outer2_5(() => {
-            const obj = { guildScheduledEventId: guildScheduledEvent.id };
-            if (null != welcomeModalChannelId) {
-              obj.welcomeModalChannelId = welcomeModalChannelId;
-            }
-            const result = guildScheduledEvent(outer3_3[38]).transitionToEventDetailsFromInvite(guildScheduledEvent, obj);
-          });
-        }
-      })(guildScheduledEvent);
-      flag = false;
     }
   });
 }
-async function _transitionToGuildFromEventInvite(arg0, arg1) {
-  const channel_id = arg0.channel_id;
-  if (outer2_7(arg0)) {
-    if (null != channel_id) {
-      outer2_43(channel_id);
-    }
+function _transitionToGuildFromEventInvite() {
+  const self = this;
+  const tmp = callback((arg0) => {
+    let closure_0 = arg0;
+    let c2 = 0;
+    let c1 = 0;
+    return (function*(arg0) {
+      if (v0 === 2) {
+        v0 = 3;
+        HermesBuiltin.throwTypeError();
+      } else if (tmp3 === 3) {
+        if (arg0 === 1) {
+          throw arg1;
+        } else if (arg0 === 2) {
+          let obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
+        } else {
+          return { value: "HermesInternal", done: null };
+        }
+      } else {
+        try {
+          v0 = 2;
+          if (0 === c2) {
+            if (arg0 === 1) {
+              v0 = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              v0 = 3;
+              obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            } else {
+              const channel_id = closure_0.channel_id;
+              if (outer1_7(closure_0)) {
+                if (null != channel_id) {
+                  outer1_42(channel_id);
+                }
+              }
+              let obj1 = v0(outer1_3[43]);
+              c2 = 1;
+              v0 = 1;
+              obj1 = { value: null, done: false };
+              obj1[0] = obj1.transitionToGuildSync(closure_0.guild_id);
+              return obj1;
+            }
+          } else if (arg0 === 1) {
+            v0 = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            v0 = 3;
+            obj = { value: null, done: true };
+            obj[0] = arg1;
+            return obj;
+          }
+          v0 = 3;
+          return { value: "HermesInternal", done: null };
+        } catch (tmp12) {
+          v0 = tmp;
+          throw tmp12;
+        }
+      }
+    })();
+  });
+  const _transitionToGuildFromEventInvite = tmp;
+  const apply = tmp.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
   }
-  return yield outer2_1(outer2_3[43]).transitionToGuildSync(arg0.guild_id);
+  return applyArgumentsResult;
 }
 function trackInviteServerClicked(id5, action, items2) {
-  let obj = importDefault(675);
-  obj = { guild_id: id5, action };
-  let tmp = null;
-  if (null != items2) {
-    tmp = items2;
+  let tmp = items2;
+  let obj = importDefault(698);
+  obj = { guild_id: id5, action, location_stack: null };
+  if (items2 == null) {
+    tmp = null;
   }
-  obj.location_stack = tmp;
-  obj.track(constants4.INVITE_SERVER_CLICKED, obj);
+  obj[2] = tmp;
+  obj.track(constants3.INVITE_SERVER_CLICKED, obj);
 }
-require("shouldWaitForBlockingModals").addPostConnectionCallback;
-({ isGuildTextChannelType: closure_8, isGuildVocalChannelOrVocalThreadType: closure_9, createChannelRecord: closure_10, ChannelRecordBase: closure_11, getAccessPermissions: closure_12 } = _callSuper);
+require("processCallbacks").addPostConnectionCallback;
+({ isGuildTextChannelType: metroImportAll, isGuildVocalChannelOrVocalThreadType: c9, createChannelRecord: c10, ChannelRecordBase: unpackModuleId, getAccessPermissions: closure_12 } = createChannelRecord);
 ({ Endpoints: closure_24, ChannelTypes: closure_25, Routes: closure_26, ME: closure_27, RPCCommands: closure_28, GuildFeatures: closure_29, AnalyticEvents: closure_30, UserFlags: closure_31, Permissions: closure_32, AbortCodes: closure_33 } = ME);
-let c39 = null;
-function resolveInvite(code) {
-  let closure_0 = code;
-  const importDefault = arg1;
-  let closure_2 = arg2;
-  let obj = importDefault(686);
-  if (obj.isDispatching()) {
-    const resolved = Promise.resolve();
-    let nextPromise = resolved.then(() => outer1_45(closure_0, closure_1, closure_2));
-  } else {
-    obj = { type: "INVITE_RESOLVE", code };
-    importDefault(686).dispatch(obj);
-    const obj2 = importDefault(686);
-    nextPromise = importDefault(8624)(code, arg1, arg2).then((arg0) => {
-      let code;
-      let invite;
-      ({ invite, code } = arg0);
-      if (null != invite) {
-        let obj = { type: "INVITE_RESOLVE_SUCCESS", invite, code };
-        callback(outer1_3[39]).dispatch(obj);
-        const obj3 = callback(outer1_3[39]);
-      } else {
-        obj = callback(outer1_3[39]);
-        obj = { type: "INVITE_RESOLVE_FAILURE", code, banned: tmp };
-        obj.dispatch(obj);
-      }
-      return { invite, code };
-    });
-    const promise = importDefault(8624)(code, arg1, arg2);
-  }
-  return nextPromise;
-}
-let result = require("_isNativeReflectConstruct").fileFinishedImporting("actions/InstantInviteActionCreators.tsx");
+let invite = "invite";
+let c40 = null;
+let result = require("scheduledEventSort").fileFinishedImporting("actions/InstantInviteActionCreators.tsx");
 
 export default {
-  resolveInvite,
+  resolveInvite(arg0, arg1, arg2) {
+    let closure_0 = arg0;
+    const importDefault = arg1;
+    let closure_2 = arg2;
+    let obj = importDefault(709);
+    if (obj.isDispatching()) {
+      const resolved = Promise.resolve();
+      let nextPromise = resolved.then(() => {
+        let obj = outer1_1(outer1_3[39]);
+        if (obj.isDispatching()) {
+          let resolved = Promise.resolve();
+          let nextPromise = resolved.then(() => {
+            let obj = outer1_1(outer1_3[39]);
+            if (obj.isDispatching()) {
+              let resolved = Promise.resolve();
+              let nextPromise = resolved.then(() => {
+                let obj = outer1_1(outer1_3[39]);
+                if (obj.isDispatching()) {
+                  let resolved = Promise.resolve();
+                  let nextPromise = resolved.then(() => {
+                    let obj = outer1_1(outer1_3[39]);
+                    if (obj.isDispatching()) {
+                      let resolved = Promise.resolve();
+                      let nextPromise = resolved.then(() => { ... });
+                    } else {
+                      obj = { type: "INVITE_RESOLVE", code: null };
+                      obj[1] = tmp;
+                      tmp4(tmp5[39]).dispatch(obj);
+                      let tmp4Result = tmp4(tmp5[39]);
+                      nextPromise = tmp4(tmp5[40])(tmp, closure_1, closure_2).then(() => { ... });
+                      let promise = tmp4(tmp5[40])(tmp, closure_1, closure_2);
+                    }
+                    return nextPromise;
+                  });
+                } else {
+                  obj = { type: "INVITE_RESOLVE", code: null };
+                  obj[1] = tmp;
+                  tmp4(tmp5[39]).dispatch(obj);
+                  let tmp4Result = tmp4(tmp5[39]);
+                  nextPromise = tmp4(tmp5[40])(tmp, closure_1, closure_2).then((arg0) => {
+                    let code;
+                    let invite;
+                    ({ invite, code } = arg0);
+                    if (null != invite) {
+                      let obj = { type: "INVITE_RESOLVE_SUCCESS", invite: null, code: null };
+                      obj[1] = invite;
+                      obj[2] = code;
+                      callback(dependencyMap[39]).dispatch(obj);
+                      const obj3 = callback(dependencyMap[39]);
+                    } else {
+                      obj = callback(dependencyMap[39]);
+                      obj = { type: "INVITE_RESOLVE_FAILURE", code: null, banned: null };
+                      obj[1] = code;
+                      obj[2] = tmp;
+                      obj.dispatch(obj);
+                    }
+                    return { invite, code };
+                  });
+                  let promise = tmp4(tmp5[40])(tmp, closure_1, closure_2);
+                }
+                return nextPromise;
+              });
+            } else {
+              obj = { type: "INVITE_RESOLVE", code: null };
+              obj[1] = tmp;
+              tmp4(tmp5[39]).dispatch(obj);
+              let tmp4Result = tmp4(tmp5[39]);
+              nextPromise = tmp4(tmp5[40])(tmp, closure_1, closure_2).then((arg0) => {
+                let code;
+                let invite;
+                ({ invite, code } = arg0);
+                if (null != invite) {
+                  let obj = { type: "INVITE_RESOLVE_SUCCESS", invite: null, code: null };
+                  obj[1] = invite;
+                  obj[2] = code;
+                  callback(dependencyMap[39]).dispatch(obj);
+                  const obj3 = callback(dependencyMap[39]);
+                } else {
+                  obj = callback(dependencyMap[39]);
+                  obj = { type: "INVITE_RESOLVE_FAILURE", code: null, banned: null };
+                  obj[1] = code;
+                  obj[2] = tmp;
+                  obj.dispatch(obj);
+                }
+                return { invite, code };
+              });
+              let promise = tmp4(tmp5[40])(tmp, closure_1, closure_2);
+            }
+            return nextPromise;
+          });
+        } else {
+          obj = { type: "INVITE_RESOLVE", code: null };
+          obj[1] = tmp;
+          tmp4(tmp5[39]).dispatch(obj);
+          let tmp4Result = tmp4(tmp5[39]);
+          nextPromise = tmp4(tmp5[40])(tmp, closure_1, closure_2).then((arg0) => {
+            let code;
+            let invite;
+            ({ invite, code } = arg0);
+            if (null != invite) {
+              let obj = { type: "INVITE_RESOLVE_SUCCESS", invite: null, code: null };
+              obj[1] = invite;
+              obj[2] = code;
+              callback(dependencyMap[39]).dispatch(obj);
+              const obj3 = callback(dependencyMap[39]);
+            } else {
+              obj = callback(dependencyMap[39]);
+              obj = { type: "INVITE_RESOLVE_FAILURE", code: null, banned: null };
+              obj[1] = code;
+              obj[2] = tmp;
+              obj.dispatch(obj);
+            }
+            return { invite, code };
+          });
+          let promise = tmp4(tmp5[40])(tmp, closure_1, closure_2);
+        }
+        return nextPromise;
+      });
+    } else {
+      obj = { type: "INVITE_RESOLVE", code: null };
+      obj[1] = arg0;
+      tmp(709).dispatch(obj);
+      const tmpResult = tmp(709);
+      nextPromise = tmp(8648)(arg0, arg1, arg2).then((arg0) => {
+        let code;
+        let invite;
+        ({ invite, code } = arg0);
+        if (null != invite) {
+          let obj = { type: "INVITE_RESOLVE_SUCCESS", invite: null, code: null };
+          obj[1] = invite;
+          obj[2] = code;
+          callback(dependencyMap[39]).dispatch(obj);
+          const obj3 = callback(dependencyMap[39]);
+        } else {
+          obj = callback(dependencyMap[39]);
+          obj = { type: "INVITE_RESOLVE_FAILURE", code: null, banned: null };
+          obj[1] = code;
+          obj[2] = tmp;
+          obj.dispatch(obj);
+        }
+        return { invite, code };
+      });
+      const promise = tmp(8648)(arg0, arg1, arg2);
+    }
+    return nextPromise;
+  },
   getInviteContext(location, guild) {
-    const obj = { location };
+    const obj = { location, location_guild_id: null, location_channel_id: null, location_channel_type: null };
     guild = undefined;
-    if (null != guild) {
+    if (guild != null) {
       guild = guild.guild;
     }
     let id;
     if (null != guild) {
       id = guild.guild.id;
     }
-    obj.location_guild_id = id;
+    obj[1] = id;
     let channel;
-    if (null != guild) {
+    if (guild != null) {
       channel = guild.channel;
     }
     let id1;
     if (null != channel) {
       id1 = guild.channel.id;
     }
-    obj.location_channel_id = id1;
+    obj[2] = id1;
     let channel1;
-    if (null != guild) {
+    if (guild != null) {
       channel1 = guild.channel;
     }
     let type;
     if (null != channel1) {
       type = guild.channel.type;
     }
-    obj.location_channel_type = type;
+    obj[3] = type;
     return obj;
   },
   createInvite(arg0) {
-    let obj = arg1;
     let closure_0 = arg0;
+    let obj = arg1;
     if (arg1 === undefined) {
       obj = {};
     }
     let closure_2 = arg2;
-    return callback(async () => {
-      let obj = {};
-      const merged = Object.assign(outer1_1);
-      const role_ids = obj.role_ids;
-      let length;
-      if (null != role_ids) {
-        length = role_ids.length;
-      }
-      if (0 === length) {
-        delete tmp.role_ids;
-      }
-      const HTTP = callback(outer2_3[45]).HTTP;
-      obj = { url: outer2_24.INSTANT_INVITES(outer1_0), body: obj, context: obj, rejectWithError: true };
-      obj = { location: outer1_2 };
-      const body = yield HTTP.post(obj).body;
-      obj(outer2_3[39]).dispatch({ type: "INSTANT_INVITE_CREATE_SUCCESS", channelId: outer1_0, invite: body });
-      return body;
-    })();
-  },
-  mobileCreateInvite(arg0, GROUP_DM) {
-    let closure_0 = arg0;
-    let closure_1 = GROUP_DM;
-    const self = this;
-    return callback(async () => {
-      const invite = outer2_18.getInvite(outer1_0.id);
-      if (null != invite) {
-        if (!invite.isExpired()) {
-          return invite.code;
+    return callback(function*() {
+      if (c5 === 2) {
+        c5 = 3;
+        HermesBuiltin.throwTypeError();
+      } else if (tmp8 === 3) {
+        if (arg0 === 1) {
+          throw arg1;
+        } else if (arg0 === 2) {
+          let obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
+        } else {
+          return { value: "HermesInternal", done: null };
+        }
+      } else {
+        try {
+          c5 = 2;
+          if (0 === c4) {
+            if (arg0 === 1) {
+              c5 = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              c5 = 3;
+              obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            } else {
+              let closure_1 = tmp3;
+              let body = tmp9;
+              body = undefined;
+              let dependencyMap = 1;
+              const obj1 = {};
+              const merged = Object.assign(outer1_1);
+              const role_ids = obj1.role_ids;
+              let length;
+              if (role_ids != null) {
+                length = role_ids.length;
+              }
+              if (0 === length) {
+                delete tmp6[tmp4];
+              }
+              const HTTP = outer1_0(530).HTTP;
+              const obj2 = { url: null, body: null, context: null, rejectWithError: true };
+              obj2[0] = outer1_24.INSTANT_INVITES(outer1_0);
+              obj2[1] = obj1;
+              const obj3 = { location: null };
+              obj3[0] = outer1_2;
+              obj2[2] = obj3;
+              c4 = 2;
+              c5 = 1;
+              let obj4 = { value: null, done: false };
+              obj4[0] = HTTP.post(obj2);
+              return obj4;
+            }
+          } else if (1 === tmp9) {
+            dependencyMap = 0;
+            closure_1 = closure_2;
+            obj4 = outer1_1(709);
+            const obj5 = { type: "INSTANT_INVITE_CREATE_FAILURE", channelId: null };
+            obj5[1] = body;
+            obj4.dispatch(obj5);
+            const tmp30 = new outer1_1(4089)(closure_1);
+            throw tmp30;
+          } else if (arg0 === 1) {
+            c5 = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            dependencyMap = 0;
+            c5 = 3;
+            const obj6 = { value: null, done: true };
+            obj6[0] = arg1;
+            return obj6;
+          } else {
+            body = arg1.body;
+            obj = outer1_1(709);
+            const obj7 = { type: "INSTANT_INVITE_CREATE_SUCCESS", channelId: null, invite: null };
+            obj7[1] = body;
+            obj7[2] = body;
+            obj.dispatch(obj7);
+            dependencyMap = 0;
+            c5 = 3;
+            const obj8 = { value: null, done: true };
+            obj8[0] = body;
+            return obj8;
+          }
+        } catch (tmp38) {
+          closure_2 = tmp38;
+          if (tmp5 === dependencyMap) {
+            c5 = tmp2;
+            throw tmp38;
+          } else {
+            c4 = tmp;
+          }
         }
       }
-      const invite1 = outer1_2.createInvite(outer1_0.id, { max_age: callback(outer2_3[47]).Seconds.DAY }, outer1_1);
-      const tmp = yield invite1.catch(() => callback(outer3_3[39]).dispatch({ type: "NATIVE_APP_INSTANT_INVITE_GDM_SHARE_FAILED" }));
-      let code;
-      if (null != tmp) {
-        code = tmp.code;
+    })();
+  },
+  mobileCreateInvite(c4, GROUP_DM) {
+    let closure_0 = c4;
+    let closure_1 = GROUP_DM;
+    const self = this;
+    return callback(function*() {
+      if (c2 === 2) {
+        c2 = 3;
+        HermesBuiltin.throwTypeError();
+      } else if (tmp4 === 3) {
+        if (arg0 === 1) {
+          throw arg1;
+        } else if (arg0 === 2) {
+          let obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
+        } else {
+          return { value: "HermesInternal", done: null };
+        }
+      } else {
+        try {
+          c2 = 2;
+          if (0 === v0) {
+            if (arg0 === 1) {
+              c2 = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              c2 = 3;
+              obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            } else {
+              let code = tmp2;
+              code = undefined;
+              const invite = outer1_18.getInvite(outer1_0.id);
+              if (null != invite) {
+                if (!invite.isExpired()) {
+                  c2 = 3;
+                  const obj1 = { value: null, done: true };
+                  obj1[0] = invite.code;
+                  return obj1;
+                }
+              }
+              const obj2 = { max_age: null };
+              obj2[0] = v0(outer1_3[47]).Seconds.DAY;
+              const invite1 = c2.createInvite(outer1_0.id, obj2, v0);
+              v0 = 1;
+              c2 = 1;
+              const obj3 = { value: null, done: false };
+              obj3[0] = invite1.catch(() => v1(table[39]).dispatch({ type: "NATIVE_APP_INSTANT_INVITE_GDM_SHARE_FAILED" }));
+              return obj3;
+            }
+          } else if (arg0 === 1) {
+            c2 = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            c2 = 3;
+            const obj4 = { value: null, done: true };
+            obj4[0] = arg1;
+            return obj4;
+          } else {
+            code = arg1;
+            code = undefined;
+            if (code != null) {
+              code = code.code;
+            }
+            c2 = 3;
+            obj = { value: null, done: true };
+            obj[0] = code;
+            return obj;
+          }
+        } catch (tmp13) {
+          c2 = tmp;
+          throw tmp13;
+        }
       }
-      return code;
     })();
   },
   getAllFriendInvites(arg0) {
     let closure_0 = arg0;
-    return callback(async () => {
-      yield new Promise((arg0) => {
-        let closure_0 = arg0;
-        return outer3_1(outer3_3[39]).wait(() => callback(null));
-      });
-      if (outer2_18.getFriendInvitesFetching()) {
-        if (null != outer2_39) {
-          let nextPromise = outer2_39.then((body) => body.body);
+    return callback(function*() {
+      if (dependencyMap === 2) {
+        dependencyMap = 3;
+        HermesBuiltin.throwTypeError();
+      } else if (tmp4 === 3) {
+        if (arg0 === 1) {
+          throw arg1;
+        } else if (arg0 === 2) {
+          let obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
         } else {
-          const _Error = Error;
-          const error = new Error("Invalid friend invite fetch request");
-          nextPromise = Promise.reject(error);
+          return { value: "HermesInternal", done: null };
         }
-        return nextPromise;
       } else {
-        const HTTP = callback(outer2_3[45]).HTTP;
-        let obj = { url: outer2_24.FRIEND_INVITES };
-        obj = { location: outer1_0 };
-        obj.context = obj;
-        obj.rejectWithError = callback(outer2_3[45]).rejectWithMigratedError();
-        outer2_39 = HTTP.get(obj);
-        const obj3 = callback(outer2_3[45]);
-        obj = { type: "FRIEND_INVITES_FETCH_REQUEST" };
-        const _Date = Date;
-        const date = new Date();
-        obj.requestedAt = date;
-        outer2_1(outer2_3[39]).dispatch(obj);
-        const body = yield outer2_39.body;
-        outer2_39 = null;
-        const obj4 = outer2_1(outer2_3[39]);
-        const obj1 = { type: "FRIEND_INVITES_FETCH_RESPONSE" };
-        const _Date2 = Date;
-        const date1 = new Date();
-        obj1.receivedAt = date1;
-        obj1.invites = body;
-        outer2_1(outer2_3[39]).dispatch(obj1);
-        return body;
+        try {
+          dependencyMap = 2;
+          if (0 === c2) {
+            if (arg0 === 1) {
+              dependencyMap = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              dependencyMap = 3;
+              obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            } else {
+              let closure_1 = tmp5;
+              let body = tmp2;
+              body = undefined;
+              const promise = new Promise((arg0) => {
+                let closure_0 = arg0;
+                return tmp5(table[39]).wait(() => callback(null));
+              });
+              c2 = 1;
+              dependencyMap = 1;
+              const obj1 = { value: null, done: false };
+              obj1[0] = promise;
+              return obj1;
+            }
+          } else if (1 === tmp5) {
+            if (arg0 === 1) {
+              dependencyMap = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              dependencyMap = 3;
+              const obj2 = { value: null, done: true };
+              obj2[0] = arg1;
+              return obj2;
+            } else if (outer1_18.getFriendInvitesFetching()) {
+              if (null != outer1_40) {
+                outer1_40.then((body) => body.body);
+              } else {
+                const _Error = Error;
+                const error = new Error("Invalid friend invite fetch request");
+                Promise.reject(error);
+              }
+              dependencyMap = 3;
+            } else {
+              const HTTP = outer1_0(530).HTTP;
+              const obj3 = { url: null, context: null, rejectWithError: null };
+              obj3[0] = outer1_24.FRIEND_INVITES;
+              let obj4 = { location: null };
+              obj4[0] = body;
+              obj3[1] = obj4;
+              obj4 = outer1_0(530);
+              obj3[2] = obj4.rejectWithMigratedError();
+              outer1_40 = HTTP.get(obj3);
+              let obj5 = outer1_1(709);
+              obj5 = { type: "FRIEND_INVITES_FETCH_REQUEST", requestedAt: null };
+              const _Date = Date;
+              const date = new Date();
+              obj5[1] = date;
+              obj5.dispatch(obj5);
+              c2 = 2;
+              dependencyMap = 1;
+              const obj6 = { value: null, done: false };
+              obj6[0] = outer1_40;
+              return obj6;
+            }
+          } else if (arg0 === 1) {
+            dependencyMap = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            dependencyMap = 3;
+            const obj7 = { value: null, done: true };
+            obj7[0] = arg1;
+            return obj7;
+          } else {
+            body = arg1.body;
+            outer1_40 = null;
+            const obj8 = { type: "FRIEND_INVITES_FETCH_RESPONSE", receivedAt: null, invites: null };
+            const _Date2 = Date;
+            const date1 = new Date();
+            obj8[1] = date1;
+            obj8[2] = body;
+            outer1_1(709).dispatch(obj8);
+            dependencyMap = 3;
+            obj = { value: null, done: true };
+            obj[0] = body;
+            return obj;
+          }
+        } catch (tmp35) {
+          dependencyMap = tmp;
+          throw tmp35;
+        }
       }
     })();
   },
-  createFriendInvite(sendMessageOptionsForReply, location) {
-    let obj = sendMessageOptionsForReply;
-    importDefault(686).dispatch({ type: "FRIEND_INVITE_CREATE_REQUEST" });
-    const HTTP = require(507) /* _isNativeReflectConstruct */.HTTP;
-    obj = { url: closure_24.FRIEND_INVITES };
-    if (null == sendMessageOptionsForReply) {
+  createFriendInvite(trackedActionData, location) {
+    let obj = trackedActionData;
+    importDefault(709).dispatch({ type: "FRIEND_INVITE_CREATE_REQUEST" });
+    const HTTP = require(530) /* sendRequest */.HTTP;
+    obj = { url: closure_24.FRIEND_INVITES, body: null, context: null, rejectWithError: null };
+    if (trackedActionData == null) {
       obj = {};
     }
-    obj.body = obj;
-    obj = { location };
-    obj.context = obj;
-    const obj2 = importDefault(686);
-    obj.rejectWithError = require(507) /* _isNativeReflectConstruct */.rejectWithMigratedError();
-    const obj5 = require(507) /* _isNativeReflectConstruct */;
+    obj[1] = obj;
+    obj[2] = { location };
+    const obj2 = importDefault(709);
+    const tmp3 = require;
+    obj[3] = require(530) /* sendRequest */.rejectWithMigratedError();
+    const tmp3Result = require(530) /* sendRequest */;
     return HTTP.post(obj).then((body) => {
       body = body.body;
-      outer1_1(outer1_3[39]).dispatch({ type: "FRIEND_INVITE_CREATE_SUCCESS", invite: body });
+      callback(709).dispatch({ type: "FRIEND_INVITE_CREATE_SUCCESS", invite: body });
       return body;
     }, (error) => {
-      let obj = outer1_1(outer1_3[39]);
+      let obj = callback(709);
       obj = { type: "FRIEND_INVITE_CREATE_FAILURE", error };
       obj.dispatch(obj);
       throw error;
     });
   },
   revokeFriendInvites() {
-    let obj = importDefault(686);
+    let obj = importDefault(709);
     obj.dispatch({ type: "FRIEND_INVITE_REVOKE_REQUEST" });
-    const HTTP = require(507) /* _isNativeReflectConstruct */.HTTP;
-    obj = { url: closure_24.FRIEND_INVITES, context: obj };
-    obj = { location: location, rejectWithError: require(507) /* _isNativeReflectConstruct */.rejectWithMigratedError() };
-    const obj4 = require(507) /* _isNativeReflectConstruct */;
+    const HTTP = require(530) /* sendRequest */.HTTP;
+    obj = { url: closure_24.FRIEND_INVITES, context: obj, rejectWithError: null };
+    obj = { location: location };
+    obj[2] = require(530) /* sendRequest */.rejectWithMigratedError();
+    const obj4 = require(530) /* sendRequest */;
     return HTTP.del(obj).then((invites) => {
-      outer1_1(outer1_3[39]).dispatch({ type: "FRIEND_INVITE_REVOKE_SUCCESS", invites: invites.body });
+      callback(table[39]).dispatch({ type: "FRIEND_INVITE_REVOKE_SUCCESS", invites: invites.body });
     });
   },
   revokeFriendInvite(arg0) {
-    const HTTP = require(507) /* _isNativeReflectConstruct */.HTTP;
-    const obj = { url: closure_24.INVITE(arg0), rejectWithError: require(507) /* _isNativeReflectConstruct */.rejectWithMigratedError() };
+    const HTTP = require(530) /* sendRequest */.HTTP;
+    const obj = { url: closure_24.INVITE(arg0), rejectWithError: null };
+    obj[1] = require(530) /* sendRequest */.rejectWithMigratedError();
     return HTTP.del(obj);
   },
   fetchFriendMembers(arg0) {
     let closure_0 = arg0;
-    return callback(async () => {
-      let obj = outer2_1(outer2_3[48]);
-      obj = { url: outer2_24.INVITE_FRIEND_MEMBERS(outer1_0) };
-      obj = {
-        event: callback(outer2_3[49]).NetworkActionNames.INVITE_FRIEND_MEMBERS_FETCH,
-        properties(body) {
-          let obj = callback(outer3_3[50]);
-          obj = { code: outer2_0 };
-          let length;
-          if (null != body) {
-            body = body.body;
-            if (null != body) {
-              const friend_member_ids = body.friend_member_ids;
-              if (null != friend_member_ids) {
-                length = friend_member_ids.length;
-              }
-            }
-          }
-          let num = 0;
-          if (null != length) {
-            num = length;
-          }
-          obj.friend_count = num;
-          return obj.exact(obj);
+    return callback(function*() {
+      if (c5 === 2) {
+        c5 = 3;
+        HermesBuiltin.throwTypeError();
+      } else if (tmp6 === 3) {
+        if (arg0 === 1) {
+          throw arg1;
+        } else if (arg0 === 2) {
+          let obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
+        } else {
+          return { value: "HermesInternal", done: null };
         }
-      };
-      obj.trackedActionData = obj;
-      obj.rejectWithError = true;
-      const obj4 = outer2_1(outer2_3[39]);
-      obj4.dispatch({ type: "INVITE_FRIEND_MEMBERS_FETCH_SUCCESS", code: outer1_0, friendMemberIds: yield obj.get(obj).body.friend_member_ids });
+      } else {
+        try {
+          c5 = 2;
+          if (0 === c4) {
+            if (arg0 === 1) {
+              c5 = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              c5 = 3;
+              obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            } else {
+              let closure_1 = tmp3;
+              let body = tmp7;
+              body = undefined;
+              let dependencyMap = 1;
+              const obj1 = { url: null, trackedActionData: null, rejectWithError: true };
+              obj1[0] = outer1_24.INVITE_FRIEND_MEMBERS(outer1_0);
+              const obj2 = { event: null, properties: null };
+              obj2[0] = outer1_0(503).NetworkActionNames.INVITE_FRIEND_MEMBERS_FETCH;
+              obj2[1] = function properties(body) {
+                let obj = body(table[50]);
+                obj = { code: body, friend_count: null };
+                let num;
+                if (body != null) {
+                  body = body.body;
+                  if (body != null) {
+                    const friend_member_ids = body.friend_member_ids;
+                    if (friend_member_ids != null) {
+                      num = friend_member_ids.length;
+                    }
+                  }
+                }
+                if (num == null) {
+                  num = 0;
+                }
+                obj[1] = num;
+                return obj.exact(obj);
+              };
+              obj1[1] = obj2;
+              c4 = 2;
+              c5 = 1;
+              let obj3 = { value: null, done: false };
+              obj3[0] = outer1_1(4999).get(obj1);
+              return obj3;
+            }
+          } else {
+            if (1 === tmp7) {
+              dependencyMap = 0;
+              obj3 = outer1_1(709);
+              const obj4 = { type: "INVITE_FRIEND_MEMBERS_FETCH_FAILURE", code: null };
+              obj4[1] = body;
+              obj3.dispatch(obj4);
+              c5 = 3;
+            } else if (arg0 === 1) {
+              c5 = 3;
+              throw arg1;
+            } else if (arg0 !== 2) {
+              body = arg1.body;
+              obj = outer1_1(709);
+              const obj5 = { type: "INVITE_FRIEND_MEMBERS_FETCH_SUCCESS", code: null, friendMemberIds: null };
+              obj5[1] = body;
+              obj5[2] = body.friend_member_ids;
+              obj.dispatch(obj5);
+              dependencyMap = 0;
+            }
+            dependencyMap = 0;
+            c5 = 3;
+            const obj6 = { value: null, done: true };
+            obj6[0] = arg1;
+            return obj6;
+          }
+        } catch (tmp21) {
+          let closure_2 = tmp21;
+          if (tmp4 === dependencyMap) {
+            c5 = tmp2;
+            throw tmp21;
+          } else {
+            c4 = tmp;
+          }
+        }
+      }
     })();
   },
   clearInviteFromStore(channelId) {
-    let obj = importDefault(686);
+    let obj = importDefault(709);
     obj = { type: "INSTANT_INVITE_CLEAR", channelId };
     obj.dispatch(obj);
   },
-  revokeInvite(code) {
-    code = code.code;
-    const channel = code.channel;
-    let obj = channel(4977);
-    obj = { url: closure_24.INVITE(code), oldFormErrors: true };
-    obj = { event: code(480).NetworkActionNames.INVITE_REVOKE, properties: obj1 };
-    obj.trackedActionData = obj;
-    obj.rejectWithError = code(507).rejectWithMigratedError();
-    obj1 = { uses: code.uses, max_uses: code.maxUses, max_age: code.maxAge, invite_type: code.type };
-    const obj5 = code(507);
+  revokeInvite(outer1_0) {
+    const code = outer1_0.code;
+    const channel = outer1_0.channel;
+    let obj = channel(4999);
+    obj = { url: closure_24.INVITE(code), oldFormErrors: true, trackedActionData: null, rejectWithError: null };
+    obj = { event: code(503).NetworkActionNames.INVITE_REVOKE, properties: obj1 };
+    obj[2] = obj;
+    obj[3] = code(530).rejectWithMigratedError();
+    obj1 = { uses: outer1_0.uses, max_uses: outer1_0.maxUses, max_age: outer1_0.maxAge, invite_type: outer1_0.type };
+    const obj5 = code(530);
     return obj.delete(obj).then(() => {
       let obj = channel(outer1_3[39]);
       obj = { type: "INSTANT_INVITE_REVOKE_SUCCESS", code, channelId: channel.id };
@@ -700,169 +1180,254 @@ export default {
     });
   },
   acceptInvite(inviteKey) {
-    let c4;
-    let c5;
     let context;
     let importAll;
     let importDefault;
+    let target_channel_id;
+    let target_message_id;
     inviteKey = inviteKey.inviteKey;
+    let _require = inviteKey;
     ({ context, callback: importDefault, skipOnboarding: importAll } = inviteKey);
     let guild_scheduled_event;
-    c4 = undefined;
-    c5 = undefined;
+    target_channel_id = undefined;
+    target_message_id = undefined;
     let guildScheduledEventId;
-    const self = this;
-    let obj = inviteKey(guild_scheduled_event[51]);
+    let c8;
+    let receivedInstallationIdForInviteCode;
+    let self = this;
+    let obj = _require(guild_scheduled_event[51]);
     let result = obj.parseInviteCodeFromInviteKey(inviteKey);
+    c8 = result;
     const sessionId = store.getSessionId();
     receivedInstallationIdForInviteCode = receivedInstallationIdForInviteCode.getReceivedInstallationIdForInviteCode(result);
     invite = invite.getInvite(inviteKey);
     if (null != invite) {
       guild_scheduled_event = invite.guild_scheduled_event;
       let id;
-      if (null != guild_scheduled_event) {
+      if (guild_scheduled_event != null) {
         id = guild_scheduled_event.id;
       }
       guildScheduledEventId = id;
-      let target_channel_id = invite.target_channel_id;
-      let tmp10;
-      if (null != target_channel_id) {
-        tmp10 = target_channel_id;
-      }
-      c4 = tmp10;
-      let target_message_id = invite.target_message_id;
-      let tmp11;
-      if (null != target_message_id) {
-        tmp11 = target_message_id;
-      }
-      c5 = tmp11;
+      target_channel_id = invite.target_channel_id;
+      target_message_id = invite.target_message_id;
       const tmp8 = id;
     } else {
-      let obj1 = inviteKey(guild_scheduled_event[51]);
-      const result1 = obj1.parseExtraDataFromInviteKey(inviteKey);
+      let tmpResult = tmp(tmp2[51]);
+      const result1 = tmpResult.parseExtraDataFromInviteKey(inviteKey);
       guildScheduledEventId = result1.guildScheduledEventId;
-      ({ targetChannelId: c4, targetMessageId: c5 } = result1);
+      ({ targetChannelId: target_channel_id, targetMessageId: target_message_id } = result1);
     }
     obj = {};
     let merged = Object.assign(context);
-    obj["invite_guild_scheduled_event_id"] = tmp8;
+    obj.invite_guild_scheduled_event_id = tmp8;
     currentUser = currentUser.getCurrentUser();
     let hasFlagResult;
-    if (null != currentUser) {
-      hasFlagResult = currentUser.hasFlag(constants5.QUARANTINED);
+    if (currentUser != null) {
+      hasFlagResult = currentUser.hasFlag(constants4.QUARANTINED);
     }
-    if (null != hasFlagResult) {
-      if (hasFlagResult) {
-        importDefault(guild_scheduled_event[52])();
-        let nextPromise = new Promise((arg0, arg1) => {
-          const error = new Error();
-          return arg1(error);
-        });
-      }
-      return nextPromise;
-    }
-    importDefault(guild_scheduled_event[39]).dispatch({ type: "INVITE_ACCEPT", code: inviteKey });
-    const HTTP = inviteKey(guild_scheduled_event[45]).HTTP;
-    obj = { url: closure_24.INVITE(result), context: obj, oldFormErrors: true, body: obj1 };
-    obj1 = { session_id: sessionId, invite_instance_id: context.invite_instance_id, received_installation_id: receivedInstallationIdForInviteCode };
-    const obj5 = importDefault(guild_scheduled_event[39]);
-    obj.rejectWithError = inviteKey(guild_scheduled_event[45]).rejectWithMigratedError();
-    const obj8 = inviteKey(guild_scheduled_event[45]);
-    nextPromise = HTTP.post(obj).then((() => {
-      let closure_0 = _undefined(async (arg0) => {
-        if (null != outer2_9) {
-          const result = outer2_7.clearReceivedInstallationIdForInviteCode(outer2_8);
-        }
-        let obj = outer3_1(guild_scheduled_event[39]);
-        obj = { type: "INVITE_ACCEPT_SUCCESS", invite: arg0.body, code: closure_0 };
-        obj.dispatch(obj);
-        if (null != outer2_3) {
-          let guildScheduledEvent = outer2_3;
-        } else {
-          guildScheduledEvent = guildScheduledEventId.getGuildScheduledEvent(outer2_6);
-        }
-        obj = {};
-        const merged = Object.assign(arg0.body);
-        obj["guild_scheduled_event"] = guildScheduledEvent;
-        let target_channel_id = arg0.body.target_channel_id;
-        if (null == target_channel_id) {
-          target_channel_id = outer2_4;
-        }
-        obj["target_channel_id"] = target_channel_id;
-        let target_message_id = arg0.body.target_message_id;
-        if (null == target_message_id) {
-          target_message_id = outer2_5;
-        }
-        obj["target_message_id"] = target_message_id;
-        let guild_id;
-        if (null != obj) {
-          guild_id = obj.guild_id;
-        }
-        if (null == guild_id) {
-          let id;
-          if (null != obj) {
-            const guild = obj.guild;
-            if (null != guild) {
-              id = guild.id;
-            }
-          }
-          guild_id = id;
-        }
-        const flags = obj.flags;
-        let num = 0;
-        if (null != flags) {
-          num = flags;
-        }
-        if (!outer2_2) {
-          if (!obj4.hasFlag(num, inviteKey(guild_scheduled_event[22]).GuildInviteFlags.IS_GUEST_INVITE)) {
-            if (null != guild_id) {
-              if (obj.new_member) {
-                if (!obj.show_verification_form) {
-                  const obj1 = { guildId: guild_id };
-                  return yield yield inviteKey(guild_scheduled_event[27])(guild_scheduled_event[37], guild_scheduled_event.paths).default(obj1);
-                }
-              }
-            }
-          }
-        }
-        if (null != outer2_1) {
-          outer2_1(obj);
-        }
-        return arg0.body;
+    if (hasFlagResult) {
+      tmp13(tmp2[52])();
+      let nextPromise = new Promise((arg0, arg1) => {
+        const error = new Error();
+        return arg1(error);
       });
-      return function() {
-        return callback(...arguments);
-      };
-    })(), (body) => {
-      body = body.body;
-      let code;
-      if (null != body) {
-        code = body.code;
-      }
-      if (code === outer1_33.USER_GUILD_JOIN_LARGE_GUILD_UNDERAGE_DISALLOWED) {
-        let obj = inviteKey(guild_scheduled_event[53]);
-        obj.openAgeGateModal(outer1_34.JOIN_LARGE_GUILD_UNDERAGE);
-      }
-      obj = { type: "INVITE_ACCEPT_FAILURE", code: inviteKey };
-      obj = {};
-      const body2 = body.body;
-      let message;
-      if (null != body2) {
-        message = body2.message;
-      }
-      obj.message = message;
-      const body3 = body.body;
-      let code1;
-      if (null != body3) {
-        code1 = body3.code;
-      }
-      obj.code = code1;
-      obj.error = obj;
-      outer1_1(guild_scheduled_event[39]).dispatch(obj);
-      let tmp9 = outer1_1(guild_scheduled_event[54]);
-      tmp9 = new tmp9(body);
-      throw tmp9;
-    });
+    } else {
+      obj = { type: "INVITE_ACCEPT", code: null };
+      obj[1] = inviteKey;
+      tmp13(tmp2[39]).dispatch(obj);
+      const HTTP = tmp(tmp2[45]).HTTP;
+      let obj1 = { url: null, context: null, oldFormErrors: true, body: null, rejectWithError: null };
+      obj1[0] = closure_24.INVITE(result);
+      obj1[1] = obj;
+      let obj2 = { session_id: null, invite_instance_id: null, received_installation_id: null };
+      obj2[0] = sessionId;
+      obj2[1] = context.invite_instance_id;
+      obj2[2] = receivedInstallationIdForInviteCode;
+      obj1[3] = obj2;
+      tmpResult = tmp(tmp2[45]);
+      obj1[4] = tmpResult.rejectWithMigratedError();
+      const tmp13Result = tmp13(tmp2[39]);
+      _require = undefined;
+      _require = target_channel_id((arg0) => {
+        let closure_0 = arg0;
+        let c8 = 0;
+        let c9 = 0;
+        return (function*(arg0) {
+          if (c9 === 2) {
+            c9 = 3;
+            HermesBuiltin.throwTypeError();
+          } else if (tmp4 === 3) {
+            if (arg0 === 1) {
+              throw arg1;
+            } else if (arg0 === 2) {
+              let obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            } else {
+              return { value: "HermesInternal", done: null };
+            }
+          } else {
+            try {
+              c9 = 2;
+              if (0 === c8) {
+                if (arg0 === 1) {
+                  c9 = 3;
+                  throw arg1;
+                } else if (arg0 === 2) {
+                  c9 = 3;
+                  obj = { value: null, done: true };
+                  obj[0] = arg1;
+                  return obj;
+                } else {
+                  let closure_7 = tmp5;
+                  let scheduledEventSort = tmp2;
+                  let obj2;
+                  let closure_2;
+                  let callback;
+                  if (null != c9) {
+                    const result = outer1_7.clearReceivedInstallationIdForInviteCode(c8);
+                  }
+                  let obj4 = outer2_1(guild_scheduled_event[39]);
+                  const obj1 = { type: "INVITE_ACCEPT_SUCCESS", invite: null, code: null };
+                  obj1[1] = lib.body;
+                  obj1[2] = lib;
+                  obj4.dispatch(obj1);
+                  obj2 = outer1_3;
+                  if (outer1_3 == null) {
+                    obj2 = guildScheduledEventId.getGuildScheduledEvent(outer1_6);
+                  }
+                  obj2 = {};
+                  const merged = Object.assign(tmp45.body);
+                  obj2.guild_scheduled_event = obj2;
+                  const target_channel_id = tmp45.body.target_channel_id;
+                  closure_2 = target_channel_id;
+                  if (target_channel_id == null) {
+                    closure_2 = outer1_4;
+                  }
+                  obj2.target_channel_id = closure_2;
+                  const target_message_id = tmp45.body.target_message_id;
+                  callback = target_message_id;
+                  if (target_message_id == null) {
+                    callback = outer1_5;
+                  }
+                  obj2.target_message_id = callback;
+                  const guild_id = obj2.guild_id;
+                  let id = guild_id;
+                  if (guild_id == null) {
+                    const guild = obj2.guild;
+                    id = undefined;
+                    if (guild != null) {
+                      id = guild.id;
+                    }
+                  }
+                  closure_2 = id;
+                  let obj7 = lib(tmp13[21]);
+                  const flags = obj2.flags;
+                  let c5 = flags;
+                  if (flags == null) {
+                    c5 = 0;
+                  }
+                  if (!outer1_2) {
+                    if (!obj7.hasFlag(c5, tmp28(tmp13[22]).GuildInviteFlags.IS_GUEST_INVITE)) {
+                      if (null != tmp27) {
+                        if (obj2.new_member) {
+                          if (!obj2.show_verification_form) {
+                            c8 = 1;
+                            c9 = 1;
+                            const obj3 = { value: null, done: false };
+                            obj3[0] = tmp28(tmp13[27])(tmp13[37], tmp13.paths);
+                            return obj3;
+                          }
+                        }
+                      }
+                    }
+                  }
+                  tmp27 = id;
+                }
+              } else if (1 === tmp5) {
+                if (arg0 === 1) {
+                  c9 = 3;
+                  throw arg1;
+                } else if (arg0 === 2) {
+                  c9 = 3;
+                  obj4 = { value: null, done: true };
+                  obj4[0] = arg1;
+                  return obj4;
+                } else {
+                  callback = arg1.default;
+                  const obj5 = { guildId: null };
+                  obj5[0] = closure_2;
+                  c8 = 2;
+                  c9 = 1;
+                  const obj6 = { value: null, done: false };
+                  obj6[0] = callback(obj5);
+                  return obj6;
+                }
+              } else if (arg0 === 1) {
+                c9 = 3;
+                throw arg1;
+              } else if (arg0 === 2) {
+                c9 = 3;
+                obj = { value: null, done: true };
+                obj[0] = arg1;
+                return obj;
+              }
+              if (outer1_1 != null) {
+                tmp32(outer1_1);
+              }
+              c9 = 3;
+              obj7 = { value: null, done: true };
+              obj7[0] = lib.body;
+              return obj7;
+            } catch (tmp39) {
+              c9 = tmp;
+              throw tmp39;
+            }
+          }
+        })();
+      });
+      nextPromise = HTTP.post(obj1).then(function() {
+        const self = this;
+        const apply = closure_0.apply;
+        if (typeof apply === "unknown") {
+          let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+        } else {
+          applyArgumentsResult = apply(self, arguments);
+        }
+        return applyArgumentsResult;
+      }, (body) => {
+        body = body.body;
+        let code;
+        if (body != null) {
+          code = body.code;
+        }
+        if (code === outer1_33.USER_GUILD_JOIN_LARGE_GUILD_UNDERAGE_DISALLOWED) {
+          let obj = callback(guild_scheduled_event[53]);
+          obj.openAgeGateModal(outer1_34.JOIN_LARGE_GUILD_UNDERAGE);
+        }
+        obj = { type: "INVITE_ACCEPT_FAILURE", code: callback, error: null };
+        const body2 = body.body;
+        let message;
+        if (body2 != null) {
+          message = body2.message;
+        }
+        obj = { message, code: null };
+        const body3 = body.body;
+        let code1;
+        if (body3 != null) {
+          code1 = body3.code;
+        }
+        obj[1] = code1;
+        obj[2] = obj;
+        outer1_1(guild_scheduled_event[39]).dispatch(obj);
+        const obj2 = outer1_1(guild_scheduled_event[39]);
+        const tmp6 = outer1_1;
+        const tmp7 = guild_scheduled_event;
+        throw new outer1_1(guild_scheduled_event[54])(body);
+      });
+      const postResult = HTTP.post(obj1);
+    }
+    return nextPromise;
   },
   acceptInviteAndTransitionToInviteChannel(inviteKey) {
     let importAll;
@@ -874,15 +1439,295 @@ export default {
       context: inviteKey.context,
       skipOnboarding: inviteKey.skipOnboarding,
       callback(channel) {
-        if (null == channel.channel) {
-          if (null != callback) {
-            callback(channel);
+        if (null != channel.channel) {
+          let obj = {};
+          const merged = Object.assign(outer1_41(channel));
+          obj.autoJoin = items;
+          items = id;
+          if (id == null) {
+            items = [];
           }
-        } else {
-          const obj = {};
-          const merged = Object.assign(outer1_40(channel));
-          obj["autoJoin"] = closure_2;
-          outer1_43(channel.channel.id, obj, null != closure_0 ? closure_0 : []);
+          id = channel.channel.id;
+          if (items === undefined) {
+            items = [];
+          }
+          let result = outer1_14.addConditionalChangeListener(() => {
+            let c4;
+            let guildScheduledEvent;
+            let targetType;
+            let transitionTo;
+            let welcomeModalChannelId;
+            let obj = outer1_14;
+            transitionTo = outer1_14.getChannel(guildId);
+            const currentUser = outer1_23.getCurrentUser();
+            if (null == transitionTo || null == currentUser) {
+              return tmp3;
+            } else {
+              let guildScheduledEvent1 = transitionTo.nsfw && !currentUser.nsfwAllowed;
+              if (!guildScheduledEvent1) {
+                let isGuildVocalOrThreadResult = transitionTo.isGuildVocalOrThread();
+                if (isGuildVocalOrThreadResult) {
+                  let obj2 = id(outer1_3[41]);
+                  isGuildVocalOrThreadResult = obj2.maybeOpenAgeGateForVoiceChannel(tmp);
+                }
+                guildScheduledEvent1 = isGuildVocalOrThreadResult;
+              }
+              if (!guildScheduledEvent1) {
+                let isGuildVocalOrThreadResult1 = transitionTo.isGuildVocalOrThread();
+                if (isGuildVocalOrThreadResult1) {
+                  isGuildVocalOrThreadResult1 = id(outer1_3[42]).maybeOpenSpoilerGateForVoiceChannel(tmp);
+                  let obj4 = id(outer1_3[42]);
+                }
+                guildScheduledEvent1 = isGuildVocalOrThreadResult1;
+              }
+              let flag = !guildScheduledEvent1;
+              if (!guildScheduledEvent1) {
+                guildScheduledEvent = undefined;
+                if (transitionTo != null) {
+                  guildScheduledEvent = tmp10.guildScheduledEvent;
+                }
+                if (null != guildScheduledEvent) {
+                  guildScheduledEvent1 = tmp10.guildScheduledEvent;
+                  guildId = guildScheduledEvent1;
+                  transitionTo = tmp10.welcomeModalChannelId;
+                  flag = false;
+                  if (null != guildScheduledEvent1) {
+                    outer1_5(() => {
+                      const obj = { guildScheduledEventId: guildId.id };
+                      if (null != transitionTo) {
+                        obj.welcomeModalChannelId = transitionTo;
+                      }
+                      const result = guildId(items[38]).transitionToEventDetailsFromInvite(guildId, obj);
+                    });
+                    flag = false;
+                  }
+                } else {
+                  guildId = transitionTo.getGuildId();
+                  if (guildId == null) {
+                    guildId = outer1_27;
+                  }
+                  let items = tmp10;
+                  if (items === undefined) {
+                    items = [];
+                  }
+                  c4 = undefined;
+                  targetType = undefined;
+                  let targetApplicationId;
+                  let isGuestInvite;
+                  let GUILD_HOME;
+                  let closure_9;
+                  let c10;
+                  const guild = outer1_17.getGuild(guildId);
+                  if (guild != null) {
+                    const features = guild.features;
+                    const hasItem = features.has(outer1_29.MEMBER_VERIFICATION_MANUAL_APPROVAL);
+                  }
+                  obj = tmp10;
+                  if (tmp10 == null) {
+                    obj = {};
+                  }
+                  ({ targetUserId: c4, targetType } = obj);
+                  targetApplicationId = obj.targetApplicationId;
+                  isGuestInvite = obj.isGuestInvite;
+                  if (!isGuestInvite) {
+                    if (!obj.isApplicationBypassInvite) {
+                      let forceTransition;
+                      if (tmp10 != null) {
+                        forceTransition = tmp10.forceTransition;
+                      }
+                      if (!forceTransition) {
+                        if (hasItem) {
+                          let CHANNELResult = outer1_22;
+                          guildScheduledEvent1 = outer1_22.getGuildId();
+                          flag = false;
+                        }
+                      }
+                    }
+                  }
+                  const type = transitionTo.type;
+                  let targetChannelId;
+                  const channel = obj.getChannel(transitionTo.id);
+                  if (tmp10 != null) {
+                    targetChannelId = tmp10.targetChannelId;
+                  }
+                  if (null != targetChannelId) {
+                    const channel1 = obj.getChannel(targetChannelId);
+                    if (null != channel1) {
+                      GUILD_HOME = targetChannelId;
+                    }
+                    closure_9 = type === outer1_25.GUILD_STAGE_VOICE;
+                    let targetChannelId1;
+                    if (tmp10 != null) {
+                      targetChannelId1 = tmp10.targetChannelId;
+                    }
+                    let tmp39;
+                    if (null != targetChannelId1 && GUILD_HOME === tmp10.targetChannelId) {
+                      let targetMessageId;
+                      if (tmp10 != null) {
+                        targetMessageId = tmp10.targetMessageId;
+                      }
+                      tmp39 = targetMessageId;
+                    }
+                    CHANNELResult = outer1_26.CHANNEL(guildId, GUILD_HOME, tmp39);
+                    c10 = CHANNELResult;
+                    if (GUILD_HOME === transitionTo.id) {
+                      if (outer1_9(type)) {
+                        let autoJoin;
+                        if (tmp10 != null) {
+                          autoJoin = tmp10.autoJoin;
+                        }
+                        if (false !== autoJoin) {
+                          outer1_5(() => {
+                            guildId(items[27])(items[26], items.paths).then((guildId) => {
+                              let closure_0 = guildId.default;
+                              function connect() { ... }
+                              if (!closure_7) {
+                                const items = [outer1_17, outer1_23, outer1_16];
+                                if (obj.shouldShowMembershipVerificationGate(closure_0, items)) {
+                                  let result = outer1_0(outer1_3[35]).openMemberVerificationModal(closure_0, connect);
+                                  const tmpResult = outer1_0(outer1_3[35]);
+                                }
+                              }
+                              connect();
+                            });
+                          });
+                        }
+                        if (tmp38) {
+                          if (guildId !== outer1_27) {
+                            transitionTo = function runDeepLinkJump(CHANNELResult, guildScheduledEvent1) {
+                              let guildScheduledEvent;
+                              let transitionTo;
+                              let welcomeModalChannelId;
+                              let obj = closure_2;
+                              if (closure_2 == null) {
+                                obj = {};
+                              }
+                              ({ transitionTo, welcomeModalChannelId, guildScheduledEvent } = obj);
+                              obj = { source: transitionTo(items[24]).INVITE_ACCEPT, navigationReplace: true, openChannel: true };
+                              if (null != welcomeModalChannelId) {
+                                obj.welcomeModalChannelId = welcomeModalChannelId;
+                              }
+                              if (transitionTo.type === outer1_25.GUILD_STAGE_VOICE) {
+                                obj = { stageInviteKey: null };
+                                obj[0] = outer1_38;
+                                obj.state = obj;
+                              }
+                              if (null != guildScheduledEvent) {
+                                obj.guildScheduledEventId = guildScheduledEvent.id;
+                              }
+                              if (null != transitionTo) {
+                                let transitionToResult = transitionTo(tmp3, obj);
+                              } else {
+                                transitionToResult = guildId(items[25]).transitionTo(tmp3, obj);
+                                const obj4 = guildId(items[25]);
+                              }
+                              return transitionToResult;
+                            };
+                            CHANNELResult = id(outer1_3[27])(outer1_3[37], outer1_3.paths);
+                            guildScheduledEvent1 = CHANNELResult.then((arg0) => arg0.default({ guildId }));
+                            guildScheduledEvent1.then(transitionTo, transitionTo);
+                            flag = false;
+                          }
+                          guildScheduledEvent1 = transitionTo(CHANNELResult, guildScheduledEvent1);
+                          flag = false;
+                        }
+                        obj = tmp10;
+                        if (tmp10 == null) {
+                          obj = {};
+                        }
+                        ({ transitionTo, welcomeModalChannelId, guildScheduledEvent } = obj);
+                        guildScheduledEvent1 = { source: null, navigationReplace: true };
+                        guildScheduledEvent1[0] = obj(outer1_3[24]).INVITE_ACCEPT;
+                        if (tmp38) {
+                          guildScheduledEvent1.openChannel = true;
+                        }
+                        if (null != welcomeModalChannelId) {
+                          guildScheduledEvent1.welcomeModalChannelId = welcomeModalChannelId;
+                        }
+                        if (transitionTo.type === tmp36.GUILD_STAGE_VOICE) {
+                          const obj1 = { stageInviteKey: null };
+                          obj1[0] = outer1_38;
+                          guildScheduledEvent1.state = obj1;
+                        }
+                        if (null != guildScheduledEvent) {
+                          guildScheduledEvent1.guildScheduledEventId = guildScheduledEvent.id;
+                        }
+                        if (null == transitionTo) {
+                          id(tmp58[25]).transitionTo(CHANNELResult, guildScheduledEvent1);
+                          flag = false;
+                          const obj13 = id(tmp58[25]);
+                        }
+                        tmp58 = outer1_3;
+                      }
+                    }
+                    let result = id(outer1_3[36]).isActivityInTextSupportedForChannel(channel);
+                    if (result) {
+                      result = targetType === outer1_37.EMBEDDED_APPLICATION;
+                    }
+                    if (result) {
+                      result = null != targetApplicationId;
+                    }
+                    if (result) {
+                      let tmp47 = guildId;
+                      if (guildId == null) {
+                        tmp47 = outer1_27;
+                      }
+                      tmp43(tmp44[25]).transitionTo(obj7.CHANNEL(tmp47, GUILD_HOME));
+                      obj2 = { channelId: null, applicationId: null, intent: null, inviterUserId: null, analyticsLocations: null, commandOrigin: null };
+                      obj2[0] = GUILD_HOME;
+                      obj2[1] = targetApplicationId;
+                      let intent;
+                      const tmp43Result = tmp43(tmp44[25]);
+                      if (tmp10 != null) {
+                        intent = tmp10.intent;
+                      }
+                      obj2[2] = intent;
+                      let inviterUserId;
+                      if (tmp10 != null) {
+                        inviterUserId = tmp10.inviterUserId;
+                      }
+                      obj2[3] = inviterUserId;
+                      obj2[4] = items;
+                      obj2[5] = tmp43(tmp44[33]).CommandOrigin.CHAT;
+                      obj(tmp44[32])(obj2);
+                      const tmp50 = obj(tmp44[32]);
+                    }
+                    obj7 = outer1_26;
+                    const obj8 = id(outer1_3[36]);
+                    tmp36 = outer1_25;
+                  }
+                  targetType = undefined;
+                  if (tmp10 != null) {
+                    targetType = tmp10.targetType;
+                  }
+                  if (null == targetType) {
+                    if (!outer1_9(transitionTo.type)) {
+                      if (obj6.canSeeOnboardingHome(guildId)) {
+                        GUILD_HOME = outer1_35.GUILD_HOME;
+                      }
+                      obj6 = id(outer1_3[23]);
+                    }
+                  }
+                  const channel2 = obj.getChannel(transitionTo.id);
+                  if (outer1_20.can(outer1_12(transitionTo.type), channel2)) {
+                    id = transitionTo.id;
+                  } else {
+                    const defaultChannel = outer1_15.getDefaultChannel(guildId, true, outer1_32.CREATE_INSTANT_INVITE);
+                    id = undefined;
+                    if (defaultChannel != null) {
+                      id = defaultChannel.id;
+                    }
+                    if (id == null) {
+                      id = transitionTo.id;
+                    }
+                  }
+                }
+              }
+            }
+          });
+        }
+        if (null != obj) {
+          tmp7(channel);
         }
       }
     });
@@ -906,152 +1751,824 @@ export default {
         if (null != inviter) {
           let dMFromUserId = null;
           if (friend.isFriend(inviter.id)) {
-            dMFromUserId = authStore.getDMFromUserId(inviter.id);
+            dMFromUserId = closure_14.getDMFromUserId(inviter.id);
           }
           if (null != dMFromUserId) {
-            transitionToInviteChannelSync(dMFromUserId, obj);
+            let id = dMFromUserId;
+            let closure_2 = [];
+            const result = closure_14.addConditionalChangeListener(() => {
+              let c4;
+              let guildScheduledEvent;
+              let targetType;
+              let transitionTo;
+              let welcomeModalChannelId;
+              let obj = outer1_14;
+              transitionTo = outer1_14.getChannel(guildId);
+              const currentUser = outer1_23.getCurrentUser();
+              if (null == transitionTo || null == currentUser) {
+                return tmp3;
+              } else {
+                let guildScheduledEvent1 = transitionTo.nsfw && !currentUser.nsfwAllowed;
+                if (!guildScheduledEvent1) {
+                  let isGuildVocalOrThreadResult = transitionTo.isGuildVocalOrThread();
+                  if (isGuildVocalOrThreadResult) {
+                    let obj2 = id(outer1_3[41]);
+                    isGuildVocalOrThreadResult = obj2.maybeOpenAgeGateForVoiceChannel(tmp);
+                  }
+                  guildScheduledEvent1 = isGuildVocalOrThreadResult;
+                }
+                if (!guildScheduledEvent1) {
+                  let isGuildVocalOrThreadResult1 = transitionTo.isGuildVocalOrThread();
+                  if (isGuildVocalOrThreadResult1) {
+                    isGuildVocalOrThreadResult1 = id(outer1_3[42]).maybeOpenSpoilerGateForVoiceChannel(tmp);
+                    let obj4 = id(outer1_3[42]);
+                  }
+                  guildScheduledEvent1 = isGuildVocalOrThreadResult1;
+                }
+                let flag = !guildScheduledEvent1;
+                if (!guildScheduledEvent1) {
+                  guildScheduledEvent = undefined;
+                  if (transitionTo != null) {
+                    guildScheduledEvent = tmp10.guildScheduledEvent;
+                  }
+                  if (null != guildScheduledEvent) {
+                    guildScheduledEvent1 = tmp10.guildScheduledEvent;
+                    guildId = guildScheduledEvent1;
+                    transitionTo = tmp10.welcomeModalChannelId;
+                    flag = false;
+                    if (null != guildScheduledEvent1) {
+                      outer1_5(() => {
+                        const obj = { guildScheduledEventId: guildId.id };
+                        if (null != transitionTo) {
+                          obj.welcomeModalChannelId = transitionTo;
+                        }
+                        const result = guildId(items[38]).transitionToEventDetailsFromInvite(guildId, obj);
+                      });
+                      flag = false;
+                    }
+                  } else {
+                    guildId = transitionTo.getGuildId();
+                    if (guildId == null) {
+                      guildId = outer1_27;
+                    }
+                    let items = tmp10;
+                    if (items === undefined) {
+                      items = [];
+                    }
+                    c4 = undefined;
+                    targetType = undefined;
+                    let targetApplicationId;
+                    let isGuestInvite;
+                    let GUILD_HOME;
+                    let closure_9;
+                    let c10;
+                    const guild = outer1_17.getGuild(guildId);
+                    if (guild != null) {
+                      const features = guild.features;
+                      const hasItem = features.has(outer1_29.MEMBER_VERIFICATION_MANUAL_APPROVAL);
+                    }
+                    obj = tmp10;
+                    if (tmp10 == null) {
+                      obj = {};
+                    }
+                    ({ targetUserId: c4, targetType } = obj);
+                    targetApplicationId = obj.targetApplicationId;
+                    isGuestInvite = obj.isGuestInvite;
+                    if (!isGuestInvite) {
+                      if (!obj.isApplicationBypassInvite) {
+                        let forceTransition;
+                        if (tmp10 != null) {
+                          forceTransition = tmp10.forceTransition;
+                        }
+                        if (!forceTransition) {
+                          if (hasItem) {
+                            let CHANNELResult = outer1_22;
+                            guildScheduledEvent1 = outer1_22.getGuildId();
+                            flag = false;
+                          }
+                        }
+                      }
+                    }
+                    const type = transitionTo.type;
+                    let targetChannelId;
+                    const channel = obj.getChannel(transitionTo.id);
+                    if (tmp10 != null) {
+                      targetChannelId = tmp10.targetChannelId;
+                    }
+                    if (null != targetChannelId) {
+                      const channel1 = obj.getChannel(targetChannelId);
+                      if (null != channel1) {
+                        GUILD_HOME = targetChannelId;
+                      }
+                      closure_9 = type === outer1_25.GUILD_STAGE_VOICE;
+                      let targetChannelId1;
+                      if (tmp10 != null) {
+                        targetChannelId1 = tmp10.targetChannelId;
+                      }
+                      let tmp39;
+                      if (null != targetChannelId1 && GUILD_HOME === tmp10.targetChannelId) {
+                        let targetMessageId;
+                        if (tmp10 != null) {
+                          targetMessageId = tmp10.targetMessageId;
+                        }
+                        tmp39 = targetMessageId;
+                      }
+                      CHANNELResult = outer1_26.CHANNEL(guildId, GUILD_HOME, tmp39);
+                      c10 = CHANNELResult;
+                      if (GUILD_HOME === transitionTo.id) {
+                        if (outer1_9(type)) {
+                          let autoJoin;
+                          if (tmp10 != null) {
+                            autoJoin = tmp10.autoJoin;
+                          }
+                          if (false !== autoJoin) {
+                            outer1_5(() => {
+                              guildId(items[27])(items[26], items.paths).then((guildId) => {
+                                let closure_0 = guildId.default;
+                                function connect() {
+                                  if (outer1_9) {
+                                    if (outer1_1 instanceof outer2_11) {
+                                      let tmp44 = tmp41;
+                                    } else {
+                                      tmp44 = outer2_10(tmp41);
+                                    }
+                                    outer2_0(outer2_3[28]).connectAndOpen(tmp44);
+                                    const obj6 = outer2_0(outer2_3[28]);
+                                    outer2_0(outer2_3[25]).transitionTo(outer1_10);
+                                  } else {
+                                    let prop;
+                                    if (outer1_2 != null) {
+                                      prop = tmp.muteOnJoinVoiceChannel;
+                                    }
+                                    if (prop) {
+                                      let obj = outer2_1(outer2_3[29]);
+                                      obj.setSelfMute(outer2_0(outer2_3[30]).MediaEngineContextTypes.DEFAULT, true);
+                                    }
+                                    const voiceChannel = closure_0.selectVoiceChannel(outer1_8);
+                                    let tmp14 = outer1_5 === outer2_37.STREAM;
+                                    if (tmp14) {
+                                      tmp14 = null != outer1_4;
+                                    }
+                                    if (tmp14) {
+                                      obj = { streamType: null, ownerId: null, guildId: null, channelId: null };
+                                      obj[0] = outer2_36.GUILD;
+                                      obj[1] = outer1_4;
+                                      obj[2] = closure_0;
+                                      obj[3] = tmp10;
+                                      const result = outer2_2(outer2_3[31]).watchStreamAndTransitionToStream(obj);
+                                      const obj2 = outer2_2(outer2_3[31]);
+                                    }
+                                    let tmp22 = outer1_5 === outer2_37.EMBEDDED_APPLICATION;
+                                    if (tmp22) {
+                                      tmp22 = null != outer1_6;
+                                    }
+                                    if (tmp22) {
+                                      let tmp27 = closure_0;
+                                      if (closure_0 == null) {
+                                        tmp27 = outer2_27;
+                                      }
+                                      outer2_0(outer2_3[25]).transitionTo(outer2_26.CHANNEL(tmp27, tmp10));
+                                      obj = { channelId: null, applicationId: null, intent: null, inviterUserId: null, analyticsLocations: null, commandOrigin: null };
+                                      obj[0] = tmp10;
+                                      obj[1] = outer1_6;
+                                      let intent;
+                                      const obj4 = outer2_0(outer2_3[25]);
+                                      if (tmp != null) {
+                                        intent = tmp.intent;
+                                      }
+                                      obj[2] = intent;
+                                      let inviterUserId;
+                                      if (tmp != null) {
+                                        inviterUserId = tmp.inviterUserId;
+                                      }
+                                      obj[3] = inviterUserId;
+                                      obj[4] = outer1_3;
+                                      obj[5] = outer2_0(outer2_3[33]).CommandOrigin.CHAT;
+                                      outer2_1(outer2_3[32])(obj);
+                                      const tmp31 = outer2_1(outer2_3[32]);
+                                    }
+                                  }
+                                }
+                                if (!closure_7) {
+                                  const items = [outer1_17, outer1_23, outer1_16];
+                                  if (obj.shouldShowMembershipVerificationGate(closure_0, items)) {
+                                    let result = outer1_0(outer1_3[35]).openMemberVerificationModal(closure_0, connect);
+                                    const tmpResult = outer1_0(outer1_3[35]);
+                                  }
+                                }
+                                connect();
+                              });
+                            });
+                          }
+                          if (tmp38) {
+                            if (guildId !== outer1_27) {
+                              transitionTo = function runDeepLinkJump(CHANNELResult, guildScheduledEvent1) {
+                                let guildScheduledEvent;
+                                let transitionTo;
+                                let welcomeModalChannelId;
+                                let obj = closure_2;
+                                if (closure_2 == null) {
+                                  obj = {};
+                                }
+                                ({ transitionTo, welcomeModalChannelId, guildScheduledEvent } = obj);
+                                obj = { source: transitionTo(items[24]).INVITE_ACCEPT, navigationReplace: true, openChannel: true };
+                                if (null != welcomeModalChannelId) {
+                                  obj.welcomeModalChannelId = welcomeModalChannelId;
+                                }
+                                if (transitionTo.type === outer1_25.GUILD_STAGE_VOICE) {
+                                  obj = { stageInviteKey: null };
+                                  obj[0] = outer1_38;
+                                  obj.state = obj;
+                                }
+                                if (null != guildScheduledEvent) {
+                                  obj.guildScheduledEventId = guildScheduledEvent.id;
+                                }
+                                if (null != transitionTo) {
+                                  let transitionToResult = transitionTo(tmp3, obj);
+                                } else {
+                                  transitionToResult = guildId(items[25]).transitionTo(tmp3, obj);
+                                  const obj4 = guildId(items[25]);
+                                }
+                                return transitionToResult;
+                              };
+                              CHANNELResult = id(outer1_3[27])(outer1_3[37], outer1_3.paths);
+                              guildScheduledEvent1 = CHANNELResult.then((arg0) => arg0.default({ guildId }));
+                              guildScheduledEvent1.then(transitionTo, transitionTo);
+                              flag = false;
+                            }
+                            guildScheduledEvent1 = transitionTo(CHANNELResult, guildScheduledEvent1);
+                            flag = false;
+                          }
+                          obj = tmp10;
+                          if (tmp10 == null) {
+                            obj = {};
+                          }
+                          ({ transitionTo, welcomeModalChannelId, guildScheduledEvent } = obj);
+                          guildScheduledEvent1 = { source: null, navigationReplace: true };
+                          guildScheduledEvent1[0] = obj(outer1_3[24]).INVITE_ACCEPT;
+                          if (tmp38) {
+                            guildScheduledEvent1.openChannel = true;
+                          }
+                          if (null != welcomeModalChannelId) {
+                            guildScheduledEvent1.welcomeModalChannelId = welcomeModalChannelId;
+                          }
+                          if (transitionTo.type === tmp36.GUILD_STAGE_VOICE) {
+                            const obj1 = { stageInviteKey: null };
+                            obj1[0] = outer1_38;
+                            guildScheduledEvent1.state = obj1;
+                          }
+                          if (null != guildScheduledEvent) {
+                            guildScheduledEvent1.guildScheduledEventId = guildScheduledEvent.id;
+                          }
+                          if (null == transitionTo) {
+                            id(tmp58[25]).transitionTo(CHANNELResult, guildScheduledEvent1);
+                            flag = false;
+                            const obj13 = id(tmp58[25]);
+                          }
+                          tmp58 = outer1_3;
+                        }
+                      }
+                      let result = id(outer1_3[36]).isActivityInTextSupportedForChannel(channel);
+                      if (result) {
+                        result = targetType === outer1_37.EMBEDDED_APPLICATION;
+                      }
+                      if (result) {
+                        result = null != targetApplicationId;
+                      }
+                      if (result) {
+                        let tmp47 = guildId;
+                        if (guildId == null) {
+                          tmp47 = outer1_27;
+                        }
+                        tmp43(tmp44[25]).transitionTo(obj7.CHANNEL(tmp47, GUILD_HOME));
+                        obj2 = { channelId: null, applicationId: null, intent: null, inviterUserId: null, analyticsLocations: null, commandOrigin: null };
+                        obj2[0] = GUILD_HOME;
+                        obj2[1] = targetApplicationId;
+                        let intent;
+                        const tmp43Result = tmp43(tmp44[25]);
+                        if (tmp10 != null) {
+                          intent = tmp10.intent;
+                        }
+                        obj2[2] = intent;
+                        let inviterUserId;
+                        if (tmp10 != null) {
+                          inviterUserId = tmp10.inviterUserId;
+                        }
+                        obj2[3] = inviterUserId;
+                        obj2[4] = items;
+                        obj2[5] = tmp43(tmp44[33]).CommandOrigin.CHAT;
+                        obj(tmp44[32])(obj2);
+                        const tmp50 = obj(tmp44[32]);
+                      }
+                      obj7 = outer1_26;
+                      const obj8 = id(outer1_3[36]);
+                      tmp36 = outer1_25;
+                    }
+                    targetType = undefined;
+                    if (tmp10 != null) {
+                      targetType = tmp10.targetType;
+                    }
+                    if (null == targetType) {
+                      if (!outer1_9(transitionTo.type)) {
+                        if (obj6.canSeeOnboardingHome(guildId)) {
+                          GUILD_HOME = outer1_35.GUILD_HOME;
+                        }
+                        obj6 = id(outer1_3[23]);
+                      }
+                    }
+                    const channel2 = obj.getChannel(transitionTo.id);
+                    if (outer1_20.can(outer1_12(transitionTo.type), channel2)) {
+                      id = transitionTo.id;
+                    } else {
+                      const defaultChannel = outer1_15.getDefaultChannel(guildId, true, outer1_32.CREATE_INSTANT_INVITE);
+                      id = undefined;
+                      if (defaultChannel != null) {
+                        id = defaultChannel.id;
+                      }
+                      if (id == null) {
+                        id = transitionTo.id;
+                      }
+                    }
+                  }
+                }
+              }
+            });
           }
         }
       }
     }
     if (null != guild) {
       const features = guild.features;
-      if (null != features) {
-        if (features.includes(constants3.HUB)) {
-          importDefault(12402).onOpenHubInvite(closure_0);
-          const obj6 = importDefault(12402);
-        }
+      let hasItem;
+      if (features != null) {
+        hasItem = features.includes(constants2.HUB);
+      }
+      if (hasItem) {
+        obj(12424).onOpenHubInvite(closure_0);
+        const obj6 = obj(12424);
       }
     }
-    const flags = closure_0.flags;
-    let num = 0;
-    if (null != flags) {
-      num = flags;
+    let num = closure_0.flags;
+    if (num == null) {
+      num = 0;
     }
-    let hasFlagResult = require(1360) /* hasFlag */.hasFlag(num, require(6688) /* set */.GuildInviteFlags.IS_GUEST_INVITE);
+    let hasFlagResult = id(1384).hasFlag(num, id(6709).GuildInviteFlags.IS_GUEST_INVITE);
     if (!hasFlagResult) {
-      hasFlagResult = require(1360) /* hasFlag */.hasFlag(num, require(6688) /* set */.GuildInviteFlags.IS_APPLICATION_BYPASS);
-      const obj3 = require(1360) /* hasFlag */;
+      let tmp6Result = tmp6(1384);
+      hasFlagResult = tmp6Result.hasFlag(num, tmp6(6709).GuildInviteFlags.IS_APPLICATION_BYPASS);
     }
     if (null != guild) {
       if (!hasFlagResult) {
         if (closure_0.new_member) {
-          if (obj4.inviteGuildHasPendingMemberDisabledVerification(guild)) {
-            const result = require(12403) /* inviteGuildHasPendingMemberDisabledVerification */.openVerificationModalOrTransitionToApplication(guild.id);
-            const obj5 = require(12403) /* inviteGuildHasPendingMemberDisabledVerification */;
+          tmp6Result = tmp6(12425);
+          if (tmp6Result.inviteGuildHasPendingMemberDisabledVerification(guild)) {
+            const result1 = tmp6(12425).openVerificationModalOrTransitionToApplication(guild.id);
+            const tmp6Result1 = tmp6(12425);
           }
-          obj4 = require(12403) /* inviteGuildHasPendingMemberDisabledVerification */;
         }
       }
     }
     if (null != channel) {
-      const tmp14 = generateAcceptInviteOptions(closure_0);
+      const tmp18 = generateAcceptInviteOptions(closure_0);
       if (null != transitionTo) {
-        tmp14.transitionTo = transitionTo;
+        tmp18.transitionTo = transitionTo;
       }
       if (null != intent) {
-        tmp14.intent = intent;
+        tmp18.intent = intent;
       }
       if (null != muteOnJoinVoiceChannel) {
-        tmp14.muteOnJoinVoiceChannel = muteOnJoinVoiceChannel;
+        tmp18.muteOnJoinVoiceChannel = muteOnJoinVoiceChannel;
       }
       if (null != forceTransition) {
-        tmp14.forceTransition = forceTransition;
+        tmp18.forceTransition = forceTransition;
       }
-      transitionToInviteChannelSync(channel.id, tmp14);
+      id = channel.id;
+      obj = tmp18;
+      closure_2 = [];
+      const result2 = closure_14.addConditionalChangeListener(() => {
+        let c4;
+        let guildScheduledEvent;
+        let targetType;
+        let transitionTo;
+        let welcomeModalChannelId;
+        let obj = outer1_14;
+        transitionTo = outer1_14.getChannel(guildId);
+        const currentUser = outer1_23.getCurrentUser();
+        if (null == transitionTo || null == currentUser) {
+          return tmp3;
+        } else {
+          let guildScheduledEvent1 = transitionTo.nsfw && !currentUser.nsfwAllowed;
+          if (!guildScheduledEvent1) {
+            let isGuildVocalOrThreadResult = transitionTo.isGuildVocalOrThread();
+            if (isGuildVocalOrThreadResult) {
+              let obj2 = id(outer1_3[41]);
+              isGuildVocalOrThreadResult = obj2.maybeOpenAgeGateForVoiceChannel(tmp);
+            }
+            guildScheduledEvent1 = isGuildVocalOrThreadResult;
+          }
+          if (!guildScheduledEvent1) {
+            let isGuildVocalOrThreadResult1 = transitionTo.isGuildVocalOrThread();
+            if (isGuildVocalOrThreadResult1) {
+              isGuildVocalOrThreadResult1 = id(outer1_3[42]).maybeOpenSpoilerGateForVoiceChannel(tmp);
+              let obj4 = id(outer1_3[42]);
+            }
+            guildScheduledEvent1 = isGuildVocalOrThreadResult1;
+          }
+          let flag = !guildScheduledEvent1;
+          if (!guildScheduledEvent1) {
+            guildScheduledEvent = undefined;
+            if (transitionTo != null) {
+              guildScheduledEvent = tmp10.guildScheduledEvent;
+            }
+            if (null != guildScheduledEvent) {
+              guildScheduledEvent1 = tmp10.guildScheduledEvent;
+              guildId = guildScheduledEvent1;
+              transitionTo = tmp10.welcomeModalChannelId;
+              flag = false;
+              if (null != guildScheduledEvent1) {
+                outer1_5(() => {
+                  const obj = { guildScheduledEventId: guildId.id };
+                  if (null != transitionTo) {
+                    obj.welcomeModalChannelId = transitionTo;
+                  }
+                  const result = guildId(items[38]).transitionToEventDetailsFromInvite(guildId, obj);
+                });
+                flag = false;
+              }
+            } else {
+              guildId = transitionTo.getGuildId();
+              if (guildId == null) {
+                guildId = outer1_27;
+              }
+              let items = tmp10;
+              if (items === undefined) {
+                items = [];
+              }
+              c4 = undefined;
+              targetType = undefined;
+              let targetApplicationId;
+              let isGuestInvite;
+              let GUILD_HOME;
+              let closure_9;
+              let c10;
+              const guild = outer1_17.getGuild(guildId);
+              if (guild != null) {
+                const features = guild.features;
+                const hasItem = features.has(outer1_29.MEMBER_VERIFICATION_MANUAL_APPROVAL);
+              }
+              obj = tmp10;
+              if (tmp10 == null) {
+                obj = {};
+              }
+              ({ targetUserId: c4, targetType } = obj);
+              targetApplicationId = obj.targetApplicationId;
+              isGuestInvite = obj.isGuestInvite;
+              if (!isGuestInvite) {
+                if (!obj.isApplicationBypassInvite) {
+                  let forceTransition;
+                  if (tmp10 != null) {
+                    forceTransition = tmp10.forceTransition;
+                  }
+                  if (!forceTransition) {
+                    if (hasItem) {
+                      let CHANNELResult = outer1_22;
+                      guildScheduledEvent1 = outer1_22.getGuildId();
+                      flag = false;
+                    }
+                  }
+                }
+              }
+              const type = transitionTo.type;
+              let targetChannelId;
+              const channel = obj.getChannel(transitionTo.id);
+              if (tmp10 != null) {
+                targetChannelId = tmp10.targetChannelId;
+              }
+              if (null != targetChannelId) {
+                const channel1 = obj.getChannel(targetChannelId);
+                if (null != channel1) {
+                  GUILD_HOME = targetChannelId;
+                }
+                closure_9 = type === outer1_25.GUILD_STAGE_VOICE;
+                let targetChannelId1;
+                if (tmp10 != null) {
+                  targetChannelId1 = tmp10.targetChannelId;
+                }
+                let tmp39;
+                if (null != targetChannelId1 && GUILD_HOME === tmp10.targetChannelId) {
+                  let targetMessageId;
+                  if (tmp10 != null) {
+                    targetMessageId = tmp10.targetMessageId;
+                  }
+                  tmp39 = targetMessageId;
+                }
+                CHANNELResult = outer1_26.CHANNEL(guildId, GUILD_HOME, tmp39);
+                c10 = CHANNELResult;
+                if (GUILD_HOME === transitionTo.id) {
+                  if (outer1_9(type)) {
+                    let autoJoin;
+                    if (tmp10 != null) {
+                      autoJoin = tmp10.autoJoin;
+                    }
+                    if (false !== autoJoin) {
+                      outer1_5(() => {
+                        guildId(items[27])(items[26], items.paths).then((guildId) => {
+                          let closure_0 = guildId.default;
+                          function connect() {
+                            if (outer1_9) {
+                              if (outer1_1 instanceof outer2_11) {
+                                let tmp44 = tmp41;
+                              } else {
+                                tmp44 = outer2_10(tmp41);
+                              }
+                              outer2_0(outer2_3[28]).connectAndOpen(tmp44);
+                              const obj6 = outer2_0(outer2_3[28]);
+                              outer2_0(outer2_3[25]).transitionTo(outer1_10);
+                            } else {
+                              let prop;
+                              if (outer1_2 != null) {
+                                prop = tmp.muteOnJoinVoiceChannel;
+                              }
+                              if (prop) {
+                                let obj = outer2_1(outer2_3[29]);
+                                obj.setSelfMute(outer2_0(outer2_3[30]).MediaEngineContextTypes.DEFAULT, true);
+                              }
+                              const voiceChannel = closure_0.selectVoiceChannel(outer1_8);
+                              let tmp14 = outer1_5 === outer2_37.STREAM;
+                              if (tmp14) {
+                                tmp14 = null != outer1_4;
+                              }
+                              if (tmp14) {
+                                obj = { streamType: null, ownerId: null, guildId: null, channelId: null };
+                                obj[0] = outer2_36.GUILD;
+                                obj[1] = outer1_4;
+                                obj[2] = closure_0;
+                                obj[3] = tmp10;
+                                const result = outer2_2(outer2_3[31]).watchStreamAndTransitionToStream(obj);
+                                const obj2 = outer2_2(outer2_3[31]);
+                              }
+                              let tmp22 = outer1_5 === outer2_37.EMBEDDED_APPLICATION;
+                              if (tmp22) {
+                                tmp22 = null != outer1_6;
+                              }
+                              if (tmp22) {
+                                let tmp27 = closure_0;
+                                if (closure_0 == null) {
+                                  tmp27 = outer2_27;
+                                }
+                                outer2_0(outer2_3[25]).transitionTo(outer2_26.CHANNEL(tmp27, tmp10));
+                                obj = { channelId: null, applicationId: null, intent: null, inviterUserId: null, analyticsLocations: null, commandOrigin: null };
+                                obj[0] = tmp10;
+                                obj[1] = outer1_6;
+                                let intent;
+                                const obj4 = outer2_0(outer2_3[25]);
+                                if (tmp != null) {
+                                  intent = tmp.intent;
+                                }
+                                obj[2] = intent;
+                                let inviterUserId;
+                                if (tmp != null) {
+                                  inviterUserId = tmp.inviterUserId;
+                                }
+                                obj[3] = inviterUserId;
+                                obj[4] = outer1_3;
+                                obj[5] = outer2_0(outer2_3[33]).CommandOrigin.CHAT;
+                                outer2_1(outer2_3[32])(obj);
+                                const tmp31 = outer2_1(outer2_3[32]);
+                              }
+                            }
+                          }
+                          if (!closure_7) {
+                            const items = [outer1_17, outer1_23, outer1_16];
+                            if (obj.shouldShowMembershipVerificationGate(closure_0, items)) {
+                              let result = outer1_0(outer1_3[35]).openMemberVerificationModal(closure_0, connect);
+                              const tmpResult = outer1_0(outer1_3[35]);
+                            }
+                          }
+                          connect();
+                        });
+                      });
+                    }
+                    if (tmp38) {
+                      if (guildId !== outer1_27) {
+                        transitionTo = function runDeepLinkJump(CHANNELResult, guildScheduledEvent1) {
+                          let guildScheduledEvent;
+                          let transitionTo;
+                          let welcomeModalChannelId;
+                          let obj = closure_2;
+                          if (closure_2 == null) {
+                            obj = {};
+                          }
+                          ({ transitionTo, welcomeModalChannelId, guildScheduledEvent } = obj);
+                          obj = { source: transitionTo(items[24]).INVITE_ACCEPT, navigationReplace: true, openChannel: true };
+                          if (null != welcomeModalChannelId) {
+                            obj.welcomeModalChannelId = welcomeModalChannelId;
+                          }
+                          if (transitionTo.type === outer1_25.GUILD_STAGE_VOICE) {
+                            obj = { stageInviteKey: null };
+                            obj[0] = outer1_38;
+                            obj.state = obj;
+                          }
+                          if (null != guildScheduledEvent) {
+                            obj.guildScheduledEventId = guildScheduledEvent.id;
+                          }
+                          if (null != transitionTo) {
+                            let transitionToResult = transitionTo(tmp3, obj);
+                          } else {
+                            transitionToResult = guildId(items[25]).transitionTo(tmp3, obj);
+                            const obj4 = guildId(items[25]);
+                          }
+                          return transitionToResult;
+                        };
+                        CHANNELResult = id(outer1_3[27])(outer1_3[37], outer1_3.paths);
+                        guildScheduledEvent1 = CHANNELResult.then((arg0) => arg0.default({ guildId }));
+                        guildScheduledEvent1.then(transitionTo, transitionTo);
+                        flag = false;
+                      }
+                      guildScheduledEvent1 = transitionTo(CHANNELResult, guildScheduledEvent1);
+                      flag = false;
+                    }
+                    obj = tmp10;
+                    if (tmp10 == null) {
+                      obj = {};
+                    }
+                    ({ transitionTo, welcomeModalChannelId, guildScheduledEvent } = obj);
+                    guildScheduledEvent1 = { source: null, navigationReplace: true };
+                    guildScheduledEvent1[0] = obj(outer1_3[24]).INVITE_ACCEPT;
+                    if (tmp38) {
+                      guildScheduledEvent1.openChannel = true;
+                    }
+                    if (null != welcomeModalChannelId) {
+                      guildScheduledEvent1.welcomeModalChannelId = welcomeModalChannelId;
+                    }
+                    if (transitionTo.type === tmp36.GUILD_STAGE_VOICE) {
+                      const obj1 = { stageInviteKey: null };
+                      obj1[0] = outer1_38;
+                      guildScheduledEvent1.state = obj1;
+                    }
+                    if (null != guildScheduledEvent) {
+                      guildScheduledEvent1.guildScheduledEventId = guildScheduledEvent.id;
+                    }
+                    if (null == transitionTo) {
+                      id(tmp58[25]).transitionTo(CHANNELResult, guildScheduledEvent1);
+                      flag = false;
+                      const obj13 = id(tmp58[25]);
+                    }
+                    tmp58 = outer1_3;
+                  }
+                }
+                let result = id(outer1_3[36]).isActivityInTextSupportedForChannel(channel);
+                if (result) {
+                  result = targetType === outer1_37.EMBEDDED_APPLICATION;
+                }
+                if (result) {
+                  result = null != targetApplicationId;
+                }
+                if (result) {
+                  let tmp47 = guildId;
+                  if (guildId == null) {
+                    tmp47 = outer1_27;
+                  }
+                  tmp43(tmp44[25]).transitionTo(obj7.CHANNEL(tmp47, GUILD_HOME));
+                  obj2 = { channelId: null, applicationId: null, intent: null, inviterUserId: null, analyticsLocations: null, commandOrigin: null };
+                  obj2[0] = GUILD_HOME;
+                  obj2[1] = targetApplicationId;
+                  let intent;
+                  const tmp43Result = tmp43(tmp44[25]);
+                  if (tmp10 != null) {
+                    intent = tmp10.intent;
+                  }
+                  obj2[2] = intent;
+                  let inviterUserId;
+                  if (tmp10 != null) {
+                    inviterUserId = tmp10.inviterUserId;
+                  }
+                  obj2[3] = inviterUserId;
+                  obj2[4] = items;
+                  obj2[5] = tmp43(tmp44[33]).CommandOrigin.CHAT;
+                  obj(tmp44[32])(obj2);
+                  const tmp50 = obj(tmp44[32]);
+                }
+                obj7 = outer1_26;
+                const obj8 = id(outer1_3[36]);
+                tmp36 = outer1_25;
+              }
+              targetType = undefined;
+              if (tmp10 != null) {
+                targetType = tmp10.targetType;
+              }
+              if (null == targetType) {
+                if (!outer1_9(transitionTo.type)) {
+                  if (obj6.canSeeOnboardingHome(guildId)) {
+                    GUILD_HOME = outer1_35.GUILD_HOME;
+                  }
+                  obj6 = id(outer1_3[23]);
+                }
+              }
+              const channel2 = obj.getChannel(transitionTo.id);
+              if (outer1_20.can(outer1_12(transitionTo.type), channel2)) {
+                id = transitionTo.id;
+              } else {
+                const defaultChannel = outer1_15.getDefaultChannel(guildId, true, outer1_32.CREATE_INSTANT_INVITE);
+                id = undefined;
+                if (defaultChannel != null) {
+                  id = defaultChannel.id;
+                }
+                if (id == null) {
+                  id = transitionTo.id;
+                }
+              }
+            }
+          }
+        }
+      });
     }
   },
   openNativeAppModal(inviteKey) {
-    let obj = require(4151) /* readSnowflake */;
+    let obj = require(4175) /* readSnowflake */;
     const result = obj.parseExtraDataFromInviteKey(inviteKey);
     obj = { installationId: store.getInstallationForTracking(), targetChannelId: result.targetChannelId, targetMessageId: result.targetMessageId, guildScheduledEventId: result.guildScheduledEventId };
-    importDefault(8011).openNativeAppModal(result.baseCode, constants2.INVITE_BROWSER, obj);
+    importDefault(8035).openNativeAppModal(result.baseCode, constants.INVITE_BROWSER, obj);
   },
-  transitionToInviteOnboarding(baseCode, source) {
-    let obj = source;
-    if (source === undefined) {
+  transitionToInviteOnboarding(baseCode, closure_1) {
+    let obj = closure_1;
+    if (closure_1 === undefined) {
       obj = {};
     }
     let transitionTo = obj.transitionTo;
     if (undefined === transitionTo) {
-      transitionTo = require(1198) /* shouldNavigate */.transitionTo;
+      transitionTo = require(1222) /* transitionTo */.transitionTo;
     }
-    obj = { baseCode: baseCode.code };
+    obj = { baseCode: baseCode.code, targetChannelId: null, targetMessageId: null, guildScheduledEventId: null };
     const target_channel_id = baseCode.target_channel_id;
-    let tmp3;
-    if (null != target_channel_id) {
-      tmp3 = target_channel_id;
-    }
-    obj.targetChannelId = tmp3;
+    obj[1] = target_channel_id;
     const target_message_id = baseCode.target_message_id;
-    let tmp4;
-    if (null != target_message_id) {
-      tmp4 = target_message_id;
-    }
-    obj.targetMessageId = tmp4;
+    obj[2] = target_message_id;
     const guild_scheduled_event = baseCode.guild_scheduled_event;
     let id;
-    if (null != guild_scheduled_event) {
+    if (guild_scheduled_event != null) {
       id = guild_scheduled_event.id;
     }
-    obj.guildScheduledEventId = id;
-    const inviteKeyFromExtraData = require(4151) /* readSnowflake */.generateInviteKeyFromExtraData(obj);
-    obj = {};
+    obj[3] = id;
+    const inviteKeyFromExtraData = require(4175) /* readSnowflake */.generateInviteKeyFromExtraData(obj);
+    obj = { search: null };
     const result = closure_26.APP_WITH_INVITE_AND_GUILD_ONBOARDING(baseCode.code);
-    const obj2 = require(4151) /* readSnowflake */;
-    obj.search = require(4151) /* readSnowflake */.getInviteKeySearchSuffix(inviteKeyFromExtraData);
+    const obj2 = require(4175) /* readSnowflake */;
+    const tmp3 = require;
+    obj[0] = require(4175) /* readSnowflake */.getInviteKeySearchSuffix(inviteKeyFromExtraData);
     transitionTo(result, obj);
   },
   openApp(code, arg1, fingerprint, username) {
     const _require = code;
     let result = null;
     if (null != code) {
-      let obj = _require(4151);
+      let obj = _require(4175);
       result = obj.parseExtraDataFromInviteKey(code);
     }
     let baseCode;
-    if (null != result) {
+    if (result != null) {
       baseCode = result.baseCode;
     }
     let targetMessageId;
-    if (null != result) {
+    if (result != null) {
       targetMessageId = result.targetMessageId;
     }
     let targetChannelId;
-    if (null != result) {
+    if (result != null) {
       targetChannelId = result.targetChannelId;
     }
-    let obj1 = importDefault(686);
+    let obj1 = importDefault(709);
     obj = { type: "INVITE_APP_OPENING", code };
     obj1.dispatch(obj);
-    if (null != importDefault(4485).ua) {
-      const formatted = importDefault(4485).ua.toLowerCase();
+    if (null != importDefault(4508).ua) {
+      const formatted = tmp7(4508).ua.toLowerCase();
       if (formatted.indexOf("googlebot") > -1) {
-        obj = { type: "INVITE_APP_NOT_OPENED", code };
-        importDefault(686).dispatch(obj);
-        const obj12 = importDefault(686);
+        let tmp7Result = tmp7(709);
+        obj = { type: "INVITE_APP_NOT_OPENED", code: null };
+        obj[1] = code;
+        tmp7Result.dispatch(obj);
       }
     }
-    const os = importDefault(4485).os;
+    const os = tmp7(4508).os;
     let family;
-    if (null != os) {
+    if (os != null) {
       family = os.family;
     }
     if ("Android" !== family) {
-      const os2 = importDefault(4485).os;
+      const os2 = tmp7(4508).os;
       let family1;
-      if (null != os2) {
+      if (os2 != null) {
         family1 = os2.family;
       }
       if ("iOS" !== family1) {
-        if (!_require(4403).isTablet) {
-          let tmp12 = targetChannelId;
-          if (null != arg1) {
-            tmp12 = arg1;
+        if (!_require(4426).isTablet) {
+          let tmp13 = arg1;
+          if (arg1 == null) {
+            tmp13 = targetChannelId;
           }
           let str4 = "";
-          if (null != tmp12) {
-            str4 = closure_26.INVITE_PROXY(tmp12, targetMessageId);
+          if (null != tmp13) {
+            str4 = closure_26.INVITE_PROXY(tmp13, targetMessageId);
           }
           let substr = str4;
           if ("#" === str4[0]) {
@@ -1060,74 +2577,75 @@ export default {
           const _HermesInternal = HermesInternal;
           let combined = "discord://" + substr;
         }
-        importDefault(12407).launch(combined, (arg0) => {
+        tmp7Result = tmp7(12429);
+        tmp7Result.launch(combined, (arg0) => {
           let obj = outer1_1(outer1_3[39]);
-          obj = {};
           if (arg0) {
-            obj.type = "INVITE_APP_OPENED";
-            obj.code = closure_0;
-            let tmp2 = obj;
+            obj = { type: "INVITE_APP_OPENED", code: null };
+            obj[1] = closure_0;
           } else {
-            obj.type = "INVITE_APP_NOT_OPENED";
-            obj.code = closure_0;
-            tmp2 = obj;
+            obj = { type: "INVITE_APP_NOT_OPENED", code: null };
+            obj[1] = closure_0;
           }
-          obj.dispatch(tmp2);
+          obj.dispatch(obj);
         });
-        const obj11 = importDefault(12407);
       }
     }
     if (null != baseCode) {
-      let inviteDynamicLinkTemplate = _require(12404).getInviteDynamicLinkTemplate(baseCode);
-      const obj5 = _require(12404);
+      let inviteDynamicLinkTemplate = _require(12426).getInviteDynamicLinkTemplate(baseCode);
+      let tmp20 = _require;
+      const obj5 = _require(12426);
     } else {
-      inviteDynamicLinkTemplate = _require(12404).getDefaultDynamicLinkTemplate();
-      const obj4 = _require(12404);
+      inviteDynamicLinkTemplate = _require(12426).getDefaultDynamicLinkTemplate();
+      tmp20 = _require;
+      const obj4 = _require(12426);
     }
-    const attemptId = _require(12405).generateAttemptId();
-    obj1 = {};
+    let tmp20Result = tmp20(12427);
+    const attemptId = tmp20Result.generateAttemptId();
     let str7 = "friend_invite";
-    const obj6 = _require(12405);
     if (2 !== arg4) {
-      str7 = "invite";
+      str7 = invite;
     }
-    obj1.utmSource = str7;
-    obj1.fingerprint = fingerprint;
-    obj1.installationId = store.getInstallationForTracking();
-    obj1.username = username;
-    obj1.attemptId = attemptId;
+    obj1 = { utmSource: str7, fingerprint, installationId: store.getInstallationForTracking(), username, attemptId, event: null, channel: null, message: null, iosFallbackLink: null };
     let prop;
-    if (null != result) {
+    if (result != null) {
       prop = result.guildScheduledEventId;
     }
-    obj1.event = prop;
-    obj1.channel = targetChannelId;
-    obj1.message = targetMessageId;
-    obj1.iosFallbackLink = "https://discord.com/api/download/mobile?invite_code=" + baseCode;
-    combined = importDefault(12405)(inviteDynamicLinkTemplate, obj1);
-    const tmp23 = importDefault(12405);
-    const obj2 = {};
-    const obj8 = importDefault(675);
-    obj2.fingerprint = _require(490).maybeExtractId(fingerprint);
-    obj2.attempt_id = attemptId;
-    obj2.source = "invite";
-    obj2.invite_code = baseCode;
-    obj8.track(constants4.DEEP_LINK_CLICKED, obj2);
+    obj1[5] = prop;
+    obj1[6] = targetChannelId;
+    obj1[7] = targetMessageId;
+    obj1[8] = "https://discord.com/api/download/mobile?invite_code=" + baseCode;
+    combined = importDefault(12427)(inviteDynamicLinkTemplate, obj1);
+    const tmp7Result1 = importDefault(12427);
+    const obj2 = { fingerprint: null, attempt_id: null, source: null, invite_code: null };
+    tmp20Result = tmp20(513);
+    obj2[0] = tmp20Result.maybeExtractId(fingerprint);
+    obj2[1] = attemptId;
+    obj2[2] = invite;
+    obj2[3] = baseCode;
+    importDefault(698).track(constants3.DEEP_LINK_CLICKED, obj2);
   },
-  setReceivedInstallationIdForInviteCode(result, installationId) {
-    let obj = importDefault(686);
-    obj = { type: "INSTANT_INVITE_RECEIVED_INSTALLATION_ID_SET", inviteCode: result, receivedInstallationId: installationId };
+  setReceivedInstallationIdForInviteCode(c15, installationId) {
+    let obj = importDefault(709);
+    obj = { type: "INSTANT_INVITE_RECEIVED_INSTALLATION_ID_SET", inviteCode: c15, receivedInstallationId: installationId };
     obj.dispatch(obj);
   },
-  clearReceivedInstallationIdForInviteCode(outer2_8) {
-    let obj = importDefault(686);
-    obj = { type: "INSTANT_INVITE_RECEIVED_INSTALLATION_ID_CLEAR", inviteCode: outer2_8 };
+  clearReceivedInstallationIdForInviteCode(c8) {
+    let obj = importDefault(709);
+    obj = { type: "INSTANT_INVITE_RECEIVED_INSTALLATION_ID_CLEAR", inviteCode: c8 };
     obj.dispatch(obj);
   },
   trackInviteServerClicked
 };
-export const transitionToGuildFromEventInvite = function transitionToGuildFromEventInvite(channel_id) {
-  return _transitionToGuildFromEventInvite(...arguments);
+export const transitionToGuildFromEventInvite = function transitionToGuildFromEventInvite(closure_0) {
+  const self = this;
+  const apply = _transitionToGuildFromEventInvite.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
 };
 export const trackInviteEmbedActioned = function trackInviteEmbedActioned(action, items1) {
   let application_id;
@@ -1138,49 +2656,43 @@ export const trackInviteEmbedActioned = function trackInviteEmbedActioned(action
   let number_of_users_in_channel;
   let stream_key;
   ({ invite, inviter_id, invite_message_id, invite_instance_id, application_id, stream_key, number_of_users_in_channel } = action);
-  let obj = importDefault(675);
-  obj = { action: action.action, invite_code: invite.code };
+  let obj = importDefault(698);
+  obj = { action: action.action, invite_code: invite.code, invite_type: null, inviter_id: null, invite_message_id: null, invite_instance_id: null, application_id: null, stream_key: null, number_of_users_in_channel: null, location_stack: null };
   let str = invite.type;
   str = undefined;
-  if (null != str) {
+  if (str != null) {
     str = str.toString();
   }
-  obj.invite_type = str;
-  let tmp2 = null;
-  if (null != inviter_id) {
-    tmp2 = inviter_id;
+  obj[2] = str;
+  if (inviter_id == null) {
+    inviter_id = null;
   }
-  obj.inviter_id = tmp2;
-  let tmp3 = null;
-  if (null != invite_message_id) {
-    tmp3 = invite_message_id;
+  obj[3] = inviter_id;
+  if (invite_message_id == null) {
+    invite_message_id = null;
   }
-  obj.invite_message_id = tmp3;
-  let tmp4 = null;
-  if (null != invite_instance_id) {
-    tmp4 = invite_instance_id;
+  obj[4] = invite_message_id;
+  if (invite_instance_id == null) {
+    invite_instance_id = null;
   }
-  obj.invite_instance_id = tmp4;
-  let tmp5 = null;
-  if (null != application_id) {
-    tmp5 = application_id;
+  obj[5] = invite_instance_id;
+  if (application_id == null) {
+    application_id = null;
   }
-  obj.application_id = tmp5;
-  let tmp6 = null;
-  if (null != stream_key) {
-    tmp6 = stream_key;
+  obj[6] = application_id;
+  if (stream_key == null) {
+    stream_key = null;
   }
-  obj.stream_key = tmp6;
-  let tmp7 = null;
-  if (null != number_of_users_in_channel) {
-    tmp7 = number_of_users_in_channel;
+  obj[7] = stream_key;
+  if (number_of_users_in_channel == null) {
+    number_of_users_in_channel = null;
   }
-  obj.number_of_users_in_channel = tmp7;
-  let tmp8 = null;
-  if (null != items1) {
-    tmp8 = items1;
+  let tmp2 = items1;
+  obj[8] = number_of_users_in_channel;
+  if (items1 == null) {
+    tmp2 = null;
   }
-  obj.location_stack = tmp8;
-  obj.track(constants4.INVITE_EMBED_ACTIONED, obj);
+  obj[9] = tmp2;
+  obj.track(constants3.INVITE_EMBED_ACTIONED, obj);
 };
 export { trackInviteServerClicked };

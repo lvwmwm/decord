@@ -1,112 +1,105 @@
-// Module ID: 14533
-// Function ID: 110907
+// Module ID: 14558
+// Function ID: 14559
 // Name: UserSettingsDesignSystemButtonGroup
-// Dependencies: [31, 27, 33, 4165, 4576, 4161, 5000, 4578, 6661, 8988, 2]
+// Dependencies: [19, 17, 21, 4189, 4598, 4185, 5022, 4600, 6682, 9012, 2]
 // Exports: default
 
-// Module 14533 (UserSettingsDesignSystemButtonGroup)
-import "result";
+// Module 14558 (UserSettingsDesignSystemButtonGroup)
+import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_3;
-let closure_4;
-let closure_5;
+let c3;
+let c4;
+let c5;
 let closure_6;
 const require = arg1;
-({ View: closure_3, ScrollView: closure_4 } = get_ActivityIndicator);
-({ jsx: closure_5, jsxs: closure_6 } = jsxProd);
-let closure_7 = _createForOfIteratorHelperLoose.createStyles({ container: { padding: 16, paddingBottom: 64 } });
+({ View: c3, ScrollView: c4 } = get_ActivityIndicator);
+({ jsx: c5, jsxs: closure_6 } = jsxProd);
+let closure_7 = createCacheKey.createStyles({ container: { padding: 16, paddingBottom: 64 } });
 const result = require("jsxProd").fileFinishedImporting("modules/user_settings/design_system/native/UserSettingsDesignSystemButtonGroup.tsx");
 
 export default function UserSettingsDesignSystemButtonGroup() {
-  let obj = {};
-  obj = { style: callback3().container };
-  obj = { spacing: 24 };
-  const obj1 = {};
-  const obj2 = {};
-  const items = [callback(require(4161) /* Text */.Text, { variant: "text-lg/bold", children: "Text Button Example" }), callback(require(4161) /* Text */.Text, { variant: "text-md/medium", color: "text-subtle", children: "By default, stacks buttons vertically. This is best for buttons with text." }), ];
-  const obj3 = {};
-  const obj4 = {
-    text: "Agree",
-    variant: "primary",
-    onPress() {
+  let obj = { children: null };
+  obj = { style: callback3().container, children: null };
+  obj = { spacing: 24, children: null };
+  const obj1 = { children: null };
+  const obj2 = { children: null };
+  const items = [callback(require(4185) /* Text */.Text, { variant: "text-lg/bold", children: "Text Button Example" }), callback(require(4185) /* Text */.Text, { variant: "text-md/medium", color: "text-subtle", children: "By default, stacks buttons vertically. This is best for buttons with text." }), ];
+  const obj3 = { children: null };
+  const items1 = [
+    callback(require(4600) /* Button */.Button, {
+      text: "Agree",
+      variant: "primary",
+      onPress() {
 
-    }
-  };
-  const items1 = [callback(require(4578) /* Button */.Button, obj4), ];
-  const obj5 = {
-    text: "Cancel",
-    variant: "secondary",
-    onPress() {
+      }
+    }),
+    callback(require(4600) /* Button */.Button, {
+      text: "Cancel",
+      variant: "secondary",
+      onPress() {
 
-    }
-  };
-  items1[1] = callback(require(4578) /* Button */.Button, obj5);
-  obj3.children = items1;
-  items[2] = callback2(require(5000) /* ButtonGroup */.ButtonGroup, obj3);
-  obj2.children = items;
-  obj1.children = callback2(require(4576) /* Stack */.Stack, obj2);
+      }
+    })
+  ];
+  obj3[0] = items1;
+  items[2] = callback2(require(5022) /* ButtonGroup */.ButtonGroup, obj3);
+  obj2[0] = items;
+  obj1[0] = callback2(require(4598) /* Stack */.Stack, obj2);
   const items2 = [callback(closure_3, obj1), , ];
-  const obj6 = {};
-  const obj7 = {};
-  const items3 = [callback(require(4161) /* Text */.Text, { variant: "text-lg/bold", children: "IconButton Example" }), callback(require(4161) /* Text */.Text, { variant: "text-md/medium", color: "text-subtle", children: "For IconButtons, a horizontal layout is recommended" }), ];
-  const obj8 = { direction: "horizontal" };
-  const obj9 = {
-    accessibilityLabel: "Settings",
-    variant: "secondary",
-    icon: importDefault(8988),
-    onPress() {
+  const obj6 = { children: null };
+  const obj7 = { children: null };
+  const items3 = [callback(require(4185) /* Text */.Text, { variant: "text-lg/bold", children: "IconButton Example" }), callback(require(4185) /* Text */.Text, { variant: "text-md/medium", color: "text-subtle", children: "For IconButtons, a horizontal layout is recommended" }), ];
+  const obj8 = { direction: "horizontal", children: null };
+  const obj9 = { accessibilityLabel: "Settings", variant: "secondary", icon: null, onPress: null };
+  obj9[2] = importDefault(9012);
+  obj9[3] = function onPress() {
 
-    }
   };
-  const items4 = [callback(require(6661) /* IconButton */.IconButton, obj9), ];
-  const obj10 = {
-    accessibilityLabel: "Settings",
-    variant: "secondary",
-    icon: importDefault(8988),
-    onPress() {
+  const items4 = [callback(require(6682) /* IconButton */.IconButton, obj9), ];
+  const obj10 = { accessibilityLabel: "Settings", variant: "secondary", icon: null, onPress: null };
+  obj10[2] = importDefault(9012);
+  obj10[3] = function onPress() {
 
-    }
   };
-  items4[1] = callback(require(6661) /* IconButton */.IconButton, obj10);
-  obj8.children = items4;
-  items3[2] = callback2(require(5000) /* ButtonGroup */.ButtonGroup, obj8);
-  obj7.children = items3;
-  obj6.children = callback2(require(4576) /* Stack */.Stack, obj7);
+  items4[1] = callback(require(6682) /* IconButton */.IconButton, obj10);
+  obj8[1] = items4;
+  items3[2] = callback2(require(5022) /* ButtonGroup */.ButtonGroup, obj8);
+  obj7[0] = items3;
+  obj6[0] = callback2(require(4598) /* Stack */.Stack, obj7);
   items2[1] = callback(closure_3, obj6);
-  const obj11 = {};
-  const obj12 = {};
-  const items5 = [callback(require(4161) /* Text */.Text, { variant: "text-lg/bold", children: "Mixed Buttons Example" }), callback(require(4161) /* Text */.Text, { variant: "text-md/medium", color: "text-subtle", children: "A single text button can be used in a ButtonGroup with smaller IconButtons, using the horizontal layout." }), callback(require(4161) /* Text */.Text, { variant: "text-md/medium", color: "text-subtle", children: "The Button with text must have the grow prop." }), , , ];
-  const obj13 = { direction: "horizontal" };
-  const obj14 = {
-    text: "Search",
-    variant: "secondary",
-    grow: true,
-    onPress() {
+  const obj11 = { children: null };
+  const obj12 = { children: null };
+  const items5 = [callback(require(4185) /* Text */.Text, { variant: "text-lg/bold", children: "Mixed Buttons Example" }), callback(require(4185) /* Text */.Text, { variant: "text-md/medium", color: "text-subtle", children: "A single text button can be used in a ButtonGroup with smaller IconButtons, using the horizontal layout." }), callback(require(4185) /* Text */.Text, { variant: "text-md/medium", color: "text-subtle", children: "The Button with text must have the grow prop." }), , , ];
+  const obj13 = { direction: "horizontal", children: null };
+  const items6 = [
+    callback(require(4600) /* Button */.Button, {
+      text: "Search",
+      variant: "secondary",
+      grow: true,
+      onPress() {
 
-    }
-  };
-  const items6 = [callback(require(4578) /* Button */.Button, obj14), ];
-  const obj15 = {
-    accessibilityLabel: "Cancel",
-    variant: "secondary",
-    icon: importDefault(8988),
-    onPress() {
+      }
+    }),
 
-    }
+  ];
+  const obj15 = { accessibilityLabel: "Cancel", variant: "secondary", icon: null, onPress: null };
+  obj15[2] = importDefault(9012);
+  obj15[3] = function onPress() {
+
   };
-  items6[1] = callback(require(6661) /* IconButton */.IconButton, obj15);
-  obj13.children = items6;
-  items5[3] = callback2(require(5000) /* ButtonGroup */.ButtonGroup, obj13);
-  items5[4] = callback(require(4161) /* Text */.Text, { variant: "text-sm/medium", color: "text-feedback-critical", children: "More than one text button should not be put in a horizontal group." });
-  items5[5] = callback(require(4161) /* Text */.Text, { variant: "text-sm/medium", color: "text-subtle", children: "This does not flex well with internationalization and enlarged font size settings. Use TwinButtons instead when there are specifically two text Buttons." });
-  obj12.children = items5;
-  obj11.children = callback2(require(4576) /* Stack */.Stack, obj12);
+  items6[1] = callback(require(6682) /* IconButton */.IconButton, obj15);
+  obj13[1] = items6;
+  items5[3] = callback2(require(5022) /* ButtonGroup */.ButtonGroup, obj13);
+  items5[4] = callback(require(4185) /* Text */.Text, { variant: "text-sm/medium", color: "text-feedback-critical", children: "More than one text button should not be put in a horizontal group." });
+  items5[5] = callback(require(4185) /* Text */.Text, { variant: "text-sm/medium", color: "text-subtle", children: "This does not flex well with internationalization and enlarged font size settings. Use TwinButtons instead when there are specifically two text Buttons." });
+  obj12[0] = items5;
+  obj11[0] = callback2(require(4598) /* Stack */.Stack, obj12);
   items2[2] = callback(closure_3, obj11);
-  obj.children = items2;
-  obj.children = callback2(require(4576) /* Stack */.Stack, obj);
-  obj.children = callback(closure_3, obj);
+  obj[1] = items2;
+  obj[1] = callback2(require(4598) /* Stack */.Stack, obj);
+  obj[0] = callback(closure_3, obj);
   return callback(closure_4, obj);
 };

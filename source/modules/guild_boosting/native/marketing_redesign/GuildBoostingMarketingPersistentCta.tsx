@@ -1,37 +1,37 @@
-// Module ID: 12615
-// Function ID: 97511
+// Module ID: 12637
+// Function ID: 12638
 // Name: GuildBoostingMarketingPersistentCta
-// Dependencies: [31, 27, 4157, 653, 33, 4165, 689, 624, 4026, 4577, 4589, 5548, 4161, 11656, 2]
+// Dependencies: [19, 17, 4181, 676, 21, 4189, 712, 647, 4050, 4599, 4611, 5566, 4185, 11680, 2]
 // Exports: default
 
-// Module 12615 (GuildBoostingMarketingPersistentCta)
-import "result";
+// Module 12637 (GuildBoostingMarketingPersistentCta)
+import "noop";
 import { View } from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
 import { AnalyticsSections } from "ME";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
 let closure_6;
-let closure_7;
+let error;
 const require = arg1;
-({ jsx: closure_6, jsxs: closure_7 } = jsxProd);
+({ jsx: closure_6, jsxs: error } = jsxProd);
 let closure_8 = { stiffness: 70, damping: 10 };
-_createForOfIteratorHelperLoose = { wrapper: { display: "flex", alignItems: "center", position: "absolute", width: "100%", zIndex: 1, bottom: -76 } };
-_createForOfIteratorHelperLoose = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_MOD_NORMAL, display: "flex", flexDirection: "row", alignItems: "center", position: "relative", height: 76, width: 343, borderRadius: 76, paddingLeft: 13, paddingVertical: 13, paddingRight: 27 };
-_createForOfIteratorHelperLoose.innerWraper = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.guildInfoContainer = { display: "flex", flexDirection: "row", alignItems: "center", flex: 1, marginRight: 10 };
-let obj1 = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SURFACE_HIGH, marginRight: 10, height: 50, width: 50, borderRadius: 25 };
-_createForOfIteratorHelperLoose.guildIcon = obj1;
-_createForOfIteratorHelperLoose.guildIconText = { color: require("_createForOfIteratorHelperLoose").colors.MOBILE_TEXT_HEADING_PRIMARY };
-_createForOfIteratorHelperLoose.guildName = { flexGrow: 1, flexShrink: 1, flexBasis: "auto" };
-_createForOfIteratorHelperLoose.buttonContainer = { height: 40 };
-_createForOfIteratorHelperLoose.button = { minWidth: 100 };
-_createForOfIteratorHelperLoose.border = { padding: 2, borderRadius: 80 };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+createCacheKey = { wrapper: { display: "flex", alignItems: "center", position: "absolute", width: "100%", zIndex: 1, bottom: -76 }, innerWraper: null, guildInfoContainer: null, guildIcon: null, guildIconText: null, guildName: null, buttonContainer: null, button: null, border: null };
+createCacheKey = { backgroundColor: require("Themes").colors.BACKGROUND_MOD_NORMAL, display: "flex", flexDirection: "row", alignItems: "center", position: "relative", height: 76, width: 343, borderRadius: 76, paddingLeft: 13, paddingVertical: 13, paddingRight: 27 };
+createCacheKey[1] = createCacheKey;
+createCacheKey[2] = { display: "flex", flexDirection: "row", alignItems: "center", flex: 1, marginRight: 10 };
+createCacheKey[3] = { backgroundColor: require("Themes").colors.BACKGROUND_SURFACE_HIGH, marginRight: 10, height: 50, width: 50, borderRadius: 25 };
+let obj1 = { backgroundColor: require("Themes").colors.BACKGROUND_SURFACE_HIGH, marginRight: 10, height: 50, width: 50, borderRadius: 25 };
+createCacheKey[4] = { color: require("Themes").colors.MOBILE_TEXT_HEADING_PRIMARY };
+createCacheKey[5] = { flexGrow: 1, flexShrink: 1, flexBasis: "auto" };
+createCacheKey[6] = { height: 40 };
+createCacheKey[7] = { minWidth: 100 };
+createCacheKey[8] = { padding: 2, borderRadius: 80 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
 let closure_10 = { code: "function GuildBoostingMarketingPersistentCtaTsx1(){const{useReducedMotion,VISIBILITY_OFFSET,withSpring,isVisible,SPRING_CONFIG}=this.__closure;return{transform:[{translateY:useReducedMotion?-VISIBILITY_OFFSET:withSpring(isVisible?-VISIBILITY_OFFSET:VISIBILITY_OFFSET,SPRING_CONFIG)}],opacity:withSpring(isVisible?1:0,SPRING_CONFIG)};}" };
-let obj2 = { color: require("_createForOfIteratorHelperLoose").colors.MOBILE_TEXT_HEADING_PRIMARY };
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/guild_boosting/native/marketing_redesign/GuildBoostingMarketingPersistentCta.tsx");
+let obj2 = { color: require("Themes").colors.MOBILE_TEXT_HEADING_PRIMARY };
+const result = require("maybeApplyNoTextColorForLightCustomTheme").fileFinishedImporting("modules/guild_boosting/native/marketing_redesign/GuildBoostingMarketingPersistentCta.tsx");
 
 export default function GuildBoostingMarketingPersistentCta(arg0) {
   let fractionalPremiumState;
@@ -39,63 +39,58 @@ export default function GuildBoostingMarketingPersistentCta(arg0) {
   let isVisible;
   let premiumGroupRole;
   let previousGuildSubscriptionSlot;
-  const tmp = _createForOfIteratorHelperLoose();
+  const tmp = createCacheKey();
   ({ guild, isVisible } = arg0);
   ({ fractionalPremiumState, previousGuildSubscriptionSlot, premiumGroupRole } = arg0);
-  let obj = isVisible(624);
-  let items = [_isNativeReflectConstruct];
-  const stateFromStores = obj.useStateFromStores(items, () => outer1_4.useReducedMotion);
-  let obj1 = isVisible(4026);
+  let obj = isVisible(647);
+  let items = [maybeApplyNoTextColorForLightCustomTheme];
+  const stateFromStores = obj.useStateFromStores(items, () => useReducedMotion.useReducedMotion);
+  let obj1 = isVisible(4050);
   const fn = function _() {
-    let obj = {};
-    obj = {};
     let num = -120;
     if (!stateFromStores) {
-      let num3 = 120;
+      let obj = isVisible(outer1_2[9]);
+      let num2 = 120;
       if (isVisible) {
-        num3 = -120;
+        num2 = -120;
       }
-      num = isVisible(outer1_2[9]).withSpring(num3, outer1_8);
-      const obj3 = isVisible(outer1_2[9]);
+      num = obj.withSpring(num2, outer1_8);
     }
-    obj.translateY = num;
-    const items = [obj];
-    obj.transform = items;
-    let num4 = 0;
+    obj = { transform: items, opacity: null };
+    items = [{ translateY: num }];
+    let num3 = 0;
     if (isVisible) {
-      num4 = 1;
+      num3 = 1;
     }
-    obj.opacity = isVisible(outer1_2[9]).withSpring(num4, outer1_8);
+    obj[1] = isVisible(outer1_2[9]).withSpring(num3, outer1_8);
     return obj;
   };
-  obj = { useReducedMotion: stateFromStores, VISIBILITY_OFFSET: 120, withSpring: isVisible(4577).withSpring, isVisible, SPRING_CONFIG: closure_8 };
+  obj = { useReducedMotion: stateFromStores, VISIBILITY_OFFSET: 120, withSpring: isVisible(4599).withSpring, isVisible, SPRING_CONFIG: closure_8 };
   fn.__closure = obj;
   fn.__workletHash = 14370895185277;
   fn.__initData = closure_10;
   const animatedStyle = obj1.useAnimatedStyle(fn);
-  obj = { style: items1 };
+  obj = { style: items1, children: null };
   items1 = [tmp.wrapper, animatedStyle];
-  obj1 = { angle: 45, angleCenter: { x: 0.5, y: 0.5 } };
-  const items2 = [stateFromStores(689).unsafe_rawColors.GUILD_BOOSTING_BLUE, stateFromStores(689).unsafe_rawColors.GUILD_BOOSTING_PURPLE];
-  obj1.colors = items2;
-  obj1.locations = [0, 1];
-  obj1.style = tmp.border;
-  obj1.useAngle = true;
-  const obj2 = { style: tmp.innerWraper };
-  let obj3 = { style: tmp.guildInfoContainer };
-  const obj4 = { style: tmp.guildIcon, textStyle: tmp.guildIconText, guild };
-  const tmp4 = stateFromStores(4589);
-  obj4.size = isVisible(5548).GuildIconSizes.LARGE;
-  const items3 = [callback(stateFromStores(5548), obj4), ];
-  const obj5 = { style: tmp.guildName, variant: "text-md/bold", lineClamp: 1, children: guild.name };
-  items3[1] = callback(isVisible(4161).Text, obj5);
-  obj3.children = items3;
+  obj1 = { angle: 45, angleCenter: { x: 0.5, y: 0.5 }, colors: null, locations: null, style: null, useAngle: true, children: null };
+  const items2 = [stateFromStores(712).unsafe_rawColors.GUILD_BOOSTING_BLUE, stateFromStores(712).unsafe_rawColors.GUILD_BOOSTING_PURPLE];
+  obj1[2] = items2;
+  obj1[3] = [0, 1];
+  obj1[4] = tmp.border;
+  const obj2 = { style: tmp.innerWraper, children: null };
+  const obj3 = { style: tmp.guildInfoContainer, children: null };
+  const obj4 = { style: tmp.guildIcon, textStyle: tmp.guildIconText, guild, size: null };
+  const tmp4 = stateFromStores(4611);
+  obj4[3] = isVisible(5566).GuildIconSizes.LARGE;
+  const items3 = [callback(stateFromStores(5566), obj4), callback(isVisible(4185).Text, { style: tmp.guildName, variant: "text-md/bold", lineClamp: 1, children: guild.name })];
+  obj3[1] = items3;
   const items4 = [callback2(View, obj3), ];
-  const tmp5 = stateFromStores(5548);
-  items4[1] = callback(View, { style: tmp.buttonContainer, children: callback(stateFromStores(11656), obj7) });
-  obj2.children = items4;
-  obj1.children = callback2(View, obj2);
-  obj.children = callback(tmp4, obj1);
-  return callback(stateFromStores(4026).View, obj);
+  const obj5 = { style: tmp.guildName, variant: "text-md/bold", lineClamp: 1, children: guild.name };
+  const tmp5 = stateFromStores(5566);
+  items4[1] = callback(View, { style: tmp.buttonContainer, children: callback(stateFromStores(11680), obj7) });
+  obj2[1] = items4;
+  obj1[6] = callback2(View, obj2);
+  obj[1] = callback(tmp4, obj1);
+  return callback(stateFromStores(4050).View, obj);
 };
 export const VISIBILITY_OFFSET = 120;

@@ -1,100 +1,110 @@
-// Module ID: 8245
-// Function ID: 65887
+// Module ID: 8269
+// Function ID: 8270
 // Name: StageChannelUpsell
-// Dependencies: [57, 31, 27, 1352, 8246, 8194, 653, 33, 4165, 689, 4695, 1273, 7676, 8247, 4161, 1212, 4578, 4372, 8248, 1935, 4133, 2]
+// Dependencies: [32, 19, 17, 1376, 8270, 8218, 676, 21, 4189, 712, 4717, 1297, 7699, 8271, 4185, 1236, 4600, 4395, 8272, 1959, 4157, 2]
 // Exports: default
 
-// Module 8245 (StageChannelUpsell)
+// Module 8269 (StageChannelUpsell)
 import _slicedToArray from "_slicedToArray";
-import "result";
-import get_ActivityIndicator from "get ActivityIndicator";
-import { createChannelRecord } from "_callSuper";
+import "asyncRequireImpl";
+import get_ActivityIndicator from "module_4395";
+import { createChannelRecord } from "createChannelRecord";
 import { useStageChannelUpsellCardStore as closure_7 } from "useStageChannelUpsellCardStore";
 import { CREATE_GUILD_EVENT_MODAL_KEY as closure_8 } from "CREATE_GUILD_EVENT_MODAL_KEY";
 import { ChannelTypes } from "ME";
-import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import jsxProd from "set";
+import createCacheKey from "createCacheKey";
 
-let closure_10;
-let closure_11;
-let closure_4;
-let closure_5;
+let c10;
+let c4;
+let c5;
+let unpackModuleId;
 const require = arg1;
-({ Image: closure_4, View: closure_5 } = get_ActivityIndicator);
-({ jsx: closure_10, jsxs: closure_11 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { flexDirection: "column", alignItems: "center", backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW, padding: 16, margin: 16, borderRadius: require("_createForOfIteratorHelperLoose").radii.sm };
-_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.image = { marginBottom: 16 };
-_createForOfIteratorHelperLoose.closeContainer = { position: "absolute", top: 14, right: 14 };
-_createForOfIteratorHelperLoose.header = { lineHeight: 20, marginBottom: 4 };
-_createForOfIteratorHelperLoose.description = { textAlign: "center", marginBottom: 4 };
-_createForOfIteratorHelperLoose.button = { marginTop: 12, alignSelf: "stretch" };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+({ Image: c4, View: c5 } = get_ActivityIndicator);
+({ jsx: c10, jsxs: unpackModuleId } = jsxProd);
+const CREATE_CHANNEL_MODAL_KEY = "CREATE_CHANNEL_MODAL_KEY";
+createCacheKey = { container: null, image: null, closeContainer: null, header: null, description: null, button: null };
+createCacheKey = { flexDirection: "column", alignItems: "center", backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW, padding: 16, margin: 16, borderRadius: require("Themes").radii.sm };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { marginBottom: 16 };
+createCacheKey[2] = { position: "absolute", top: 14, right: 14 };
+createCacheKey[3] = { lineHeight: 20, marginBottom: 4 };
+createCacheKey[4] = { textAlign: "center", marginBottom: 4 };
+createCacheKey[5] = { marginTop: 12, alignSelf: "stretch" };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
 const result = require("get ActivityIndicator").fileFinishedImporting("modules/guild_scheduled_events/native/components/StageChannelUpsell.tsx");
 
 export default function StageChannelUpsell(arg0) {
   let importDefault;
   let require;
   ({ guildId: require, onCreate: importDefault } = arg0);
-  let tmp = _createForOfIteratorHelperLoose();
+  let dependencyMap;
+  let tmp = createCacheKey();
   const tmp2 = callback(callback2(), 2);
-  const dependencyMap = tmp3;
+  dependencyMap = tmp3;
   let tmp4 = null;
   if (!tmp2[0]) {
-    let obj = { style: tmp.container };
-    obj = { onPress: tmp3, accessibilityRole: "button", style: tmp.closeContainer };
-    obj = { source: importDefault(7676) };
-    obj.children = callback3(require(1273) /* Button */.Icon, obj);
-    const items = [callback3(require(4695) /* PressableBase */.PressableOpacity, obj), , , , , ];
-    const obj1 = { source: importDefault(8247), style: tmp.image };
+    let obj = { style: null, children: null };
+    obj[0] = tmp.container;
+    obj = { onPress: null, accessibilityRole: "button", style: null, children: null };
+    obj[0] = tmp3;
+    obj[2] = tmp.closeContainer;
+    obj = { source: null };
+    obj[0] = importDefault(7699);
+    obj[3] = callback3(require(1297) /* Button */.Icon, obj);
+    const items = [callback3(require(4717) /* PressableBase */.PressableOpacity, obj), , , , , ];
+    const obj1 = { source: null, style: null };
+    obj1[0] = importDefault(8271);
+    obj1[1] = tmp.image;
     items[1] = callback3(closure_4, obj1);
-    let obj2 = { style: tmp.header, variant: "text-md/bold", color: "mobile-text-heading-primary" };
-    const intl = require(1212) /* getSystemLocale */.intl;
-    obj2.children = intl.string(require(1212) /* getSystemLocale */.t.Sx8Ezi);
-    items[2] = callback3(require(4161) /* Text */.Text, obj2);
-    const obj3 = { style: tmp.description, variant: "text-sm/medium", color: "text-default" };
-    const intl2 = require(1212) /* getSystemLocale */.intl;
-    obj3.children = intl2.string(require(1212) /* getSystemLocale */.t.JUzPhm);
-    items[3] = callback3(require(4161) /* Text */.Text, obj3);
-    const obj4 = { style: tmp.description, variant: "text-sm/medium", color: "text-default" };
-    const intl3 = require(1212) /* getSystemLocale */.intl;
-    const obj5 = {
-      suggestionsHook(children) {
-          const obj = { variant: "text-sm/semibold", color: "mobile-text-heading-primary", children };
-          return outer1_10(outer1_0(tmp3[14]).Text, obj, arg1);
-        }
+    let obj2 = { style: null, variant: "text-md/bold", color: "mobile-text-heading-primary", children: null };
+    obj2[0] = tmp.header;
+    const intl = require(1236) /* getSystemLocale */.intl;
+    obj2[3] = intl.string(require(1236) /* getSystemLocale */.t.Sx8Ezi);
+    items[2] = callback3(require(4185) /* Text */.Text, obj2);
+    const obj3 = { style: null, variant: "text-sm/medium", color: "text-default", children: null };
+    obj3[0] = tmp.description;
+    const intl2 = require(1236) /* getSystemLocale */.intl;
+    obj3[3] = intl2.string(require(1236) /* getSystemLocale */.t.JUzPhm);
+    items[3] = callback3(require(4185) /* Text */.Text, obj3);
+    const obj4 = { style: null, variant: "text-sm/medium", color: "text-default", children: null };
+    obj4[0] = tmp.description;
+    const intl3 = require(1236) /* getSystemLocale */.intl;
+    const obj5 = { suggestionsHook: null };
+    obj5[0] = function suggestionsHook(children) {
+      return callback2(callback(_undefined[14]).Text, { variant: "text-sm/semibold", color: "mobile-text-heading-primary", children }, arg1);
     };
-    obj4.children = intl3.format(require(1212) /* getSystemLocale */.t.Vh7rP7, obj5);
-    items[4] = callback3(require(4161) /* Text */.Text, obj4);
-    const obj6 = { style: tmp.button };
-    const obj7 = { variant: "secondary", size: "md" };
-    const intl4 = require(1212) /* getSystemLocale */.intl;
-    obj7.text = intl4.string(require(1212) /* getSystemLocale */.t["X/3SyA"]);
-    obj7.onPress = function onPress() {
-      let obj = outer1_1(tmp3[17]);
+    obj4[3] = intl3.format(require(1236) /* getSystemLocale */.t.Vh7rP7, obj5);
+    items[4] = callback3(require(4185) /* Text */.Text, obj4);
+    const obj6 = { style: null, children: null };
+    obj6[0] = tmp.button;
+    const obj7 = { variant: "secondary", size: "md", text: null, onPress: null };
+    const intl4 = require(1236) /* getSystemLocale */.intl;
+    obj7[2] = intl4.string(require(1236) /* getSystemLocale */.t["X/3SyA"]);
+    obj7[3] = function onPress() {
+      let obj = outer1_1(_undefined[17]);
       obj.popWithKey(outer1_8);
       obj = {
         guildId: closure_0,
         channelType: outer1_9.GUILD_STAGE_VOICE,
         onChannelCreated(id) {
-          const tmp = outer2_6({ id, type: outer2_9.GUILD_STAGE_VOICE });
+          const tmp = outer1_6({ id, type: outer1_9.GUILD_STAGE_VOICE });
           if (null != tmp) {
-            outer1_1(tmp);
+            callback(tmp);
           }
         },
         onClose() {
-          outer2_1(table[17]).popWithKey("CREATE_CHANNEL_MODAL_KEY");
+          callback(table[17]).popWithKey(closure_12);
         }
       };
-      outer1_1(tmp3[17]).pushLazy(outer1_0(tmp3[19])(tmp3[18], tmp3.paths), obj, "CREATE_CHANNEL_MODAL_KEY");
-      tmp3 = tmp3();
-      const obj2 = outer1_1(tmp3[17]);
-      outer1_1(tmp3[20]).hideActionSheet();
+      outer1_1(_undefined[17]).pushLazy(outer1_0(_undefined[19])(_undefined[18], _undefined.paths), obj, outer1_12);
+      _undefined();
+      const obj2 = outer1_1(_undefined[17]);
+      outer1_1(_undefined[20]).hideActionSheet();
     };
-    obj6.children = callback3(require(4578) /* Button */.Button, obj7);
+    obj6[1] = callback3(require(4600) /* Button */.Button, obj7);
     items[5] = callback3(closure_5, obj6);
-    obj.children = items;
+    obj[1] = items;
     tmp4 = callback4(closure_5, obj);
   }
   return tmp4;

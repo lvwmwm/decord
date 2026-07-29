@@ -1,9 +1,9 @@
-// Module ID: 14424
-// Function ID: 110263
+// Module ID: 14446
+// Function ID: 14447
 // Name: _handleEnableSystemNotification
-// Dependencies: [5, 27, 7733, 653, 4379, 11481, 11489, 675, 10670, 10099, 1212, 2]
+// Dependencies: [5, 17, 7756, 676, 4402, 11505, 11513, 698, 10694, 10120, 1236, 2]
 
-// Module 14424 (_handleEnableSystemNotification)
+// Module 14446 (_handleEnableSystemNotification)
 import closure_3 from "EventActionType";
 import { NativeModules } from "get ActivityIndicator";
 import { AnalyticEvents } from "ME";
@@ -11,27 +11,118 @@ import { NotificationAuthorizationStatus as closure_6 } from "NativePermissionSt
 import EventActionType from "EventActionType";
 import createToggle from "createToggle";
 
-let closure_7;
-let closure_8;
+let error;
+let metroImportAll;
 const require = arg1;
 function _handleEnableSystemNotification() {
-  // CreateGeneratorClosureLongIndex (0x67)
-  const obj = callback(tmp);
-  return obj(...arguments);
+  const self = this;
+  const tmp = callback(function*() {
+    if (c3 === 2) {
+      c3 = 3;
+      HermesBuiltin.throwTypeError();
+    } else if (tmp5 === 3) {
+      if (arg0 === 1) {
+        throw arg1;
+      } else if (arg0 === 2) {
+        let obj = { value: null, done: true };
+        obj[0] = arg1;
+        return obj;
+      } else {
+        return { value: "HermesInternal", done: null };
+      }
+    } else {
+      try {
+        c3 = 2;
+        if (0 === dependencyMap) {
+          if (arg0 === 1) {
+            c3 = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            c3 = 3;
+            obj = { value: null, done: true };
+            obj[0] = arg1;
+            return obj;
+          } else {
+            const callback = tmp2;
+            let closure_0 = tmp3;
+            closure_0 = undefined;
+            const NativePermissionManager = outer1_4.NativePermissionManager;
+            dependencyMap = 1;
+            c3 = 1;
+            const obj1 = { value: null, done: false };
+            obj1[0] = NativePermissionManager.getNotificationAuthorizationStatus();
+            return obj1;
+          }
+        } else if (arg0 === 1) {
+          c3 = 3;
+          throw arg1;
+        } else if (arg0 === 2) {
+          c3 = 3;
+          let obj2 = { value: null, done: true };
+          obj2[0] = arg1;
+          return obj2;
+        } else {
+          closure_0 = arg1;
+          if (closure_0 === constants2.UNDETERMINED) {
+            let obj3 = callback(11513);
+            const permission = obj3.requestPermission((permission_granted) => {
+              let obj = tmp2(table[7]);
+              obj = { action_type: constants2.ALLOW_TO_REQUEST, action_location: constants3.NOTIFICATION_SETTING, permission_granted };
+              obj.track(constants.NOTIFICATION_PERMISSION_PREPROMPT_ACKED, obj);
+              if (!permission_granted) {
+                const result = tmp2(tmp2[8]).openNotificationSettings();
+                const tmpResult = tmp2(tmp2[8]);
+              }
+            });
+          } else {
+            obj = callback(698);
+            let num3 = 0;
+            if (closure_0 === constants2.AUTHORIZED) {
+              num3 = 1;
+            }
+            obj3 = { setting_type: "os", current_status: null };
+            obj3[1] = num3;
+            obj.track(constants.NOTIFICATION_SETTINGS_CLICKED, obj3);
+            obj2 = callback(10694);
+            let result = obj2.openNotificationSettings();
+          }
+          c3 = 3;
+        }
+      } catch (tmp25) {
+        c3 = tmp;
+        throw tmp25;
+      }
+    }
+  });
+  const _handleEnableSystemNotification = tmp;
+  const apply = tmp.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
 }
-({ EventActionType: closure_7, EventActionLocation: closure_8 } = EventActionType);
+({ EventActionType: error, EventActionLocation: metroImportAll } = EventActionType);
 createToggle = {
   useTitle() {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(require(1212) /* getSystemLocale */.t.nl2Dqx);
+    const intl = require(1236) /* getSystemLocale */.intl;
+    return intl.string(require(1236) /* getSystemLocale */.t.nl2Dqx);
   },
   parent: require("MobileSetting").MobileSetting.NOTIFICATIONS,
   onPress: function handleEnableSystemNotification() {
-    return _handleEnableSystemNotification(...arguments);
+    const self = this;
+    const apply = _handleEnableSystemNotification.apply;
+    if (typeof apply === "unknown") {
+      let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+    } else {
+      applyArgumentsResult = apply(self, arguments);
+    }
+    return applyArgumentsResult;
   },
   withArrow: true
 };
 createToggle = createToggle.createPressable(createToggle);
-const result = require("MobileSetting").fileFinishedImporting("modules/user_settings/defs/native/SystemNotificationsSetting.tsx");
+let result = require("MobileSetting").fileFinishedImporting("modules/user_settings/defs/native/SystemNotificationsSetting.tsx");
 
 export default createToggle;

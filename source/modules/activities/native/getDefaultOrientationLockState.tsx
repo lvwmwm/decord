@@ -1,24 +1,59 @@
-// Module ID: 10632
-// Function ID: 82696
+// Module ID: 10656
+// Function ID: 10657
 // Name: getIsTabletActivitySurface
-// Dependencies: [4145, 1553, 686, 2]
-// Exports: setOrientationLockState
+// Dependencies: [4169, 1577, 709, 2]
+// Exports: getDefaultOrientationLockState, getIsTabletActivitySurface, setOrientationLockState
 
-// Module 10632 (getIsTabletActivitySurface)
-import getSystemVersion from "getSystemVersion";
+// Module 10656 (getIsTabletActivitySurface)
+import DCDDeviceManager from "DCDDeviceManager";
 import isMetaQuest from "isMetaQuest";
 
-function getIsTabletActivitySurface() {
-  let tmp = getSystemVersion;
-  if (!getSystemVersion) {
+DCDDeviceManager = DCDDeviceManager.isIpadOS();
+isMetaQuest = isMetaQuest.isMetaQuest();
+const result = require("dispatcher").fileFinishedImporting("modules/activities/native/getDefaultOrientationLockState.tsx");
+
+export function getIsTabletActivitySurface() {
+  let tmp = DCDDeviceManager;
+  if (!DCDDeviceManager) {
     tmp = isMetaQuest;
   }
   return tmp;
 }
-function getDefaultOrientationLockState(application) {
+export const setOrientationLockState = function setOrientationLockState(embeddedActivityConfig) {
+  if (arg1 == null) {
+    if (null != embeddedActivityConfig) {
+      let tmp2 = DCDDeviceManager;
+      if (!DCDDeviceManager) {
+        tmp2 = isMetaQuest;
+      }
+      embeddedActivityConfig = embeddedActivityConfig.embeddedActivityConfig;
+      if (tmp2) {
+        let prop;
+        if (!tmp3) {
+          prop = embeddedActivityConfig.tablet_default_orientation_lock_state;
+        }
+        let default_orientation_lock_state = prop;
+      } else if (!tmp3) {
+        default_orientation_lock_state = embeddedActivityConfig.default_orientation_lock_state;
+      }
+    }
+  }
+  if (null != arg1) {
+    let obj = importDefault(709);
+    obj = { type: "EMBEDDED_ACTIVITY_SET_ORIENTATION_LOCK_STATE", applicationId: null, lockState: null };
+    obj[1] = embeddedActivityConfig.id;
+    obj[2] = tmp;
+    obj.dispatch(obj);
+  }
+};
+export const getDefaultOrientationLockState = function getDefaultOrientationLockState(application) {
   if (null != application) {
+    let tmp = DCDDeviceManager;
+    if (!DCDDeviceManager) {
+      tmp = isMetaQuest;
+    }
     const embeddedActivityConfig = application.embeddedActivityConfig;
-    if (getIsTabletActivitySurface()) {
+    if (tmp) {
       let prop;
       if (!tmp2) {
         prop = embeddedActivityConfig.tablet_default_orientation_lock_state;
@@ -29,21 +64,4 @@ function getDefaultOrientationLockState(application) {
     }
     return default_orientation_lock_state;
   }
-}
-getSystemVersion = getSystemVersion.isIpadOS();
-isMetaQuest = isMetaQuest.isMetaQuest();
-const result = require("dispatcher").fileFinishedImporting("modules/activities/native/getDefaultOrientationLockState.tsx");
-
-export { getIsTabletActivitySurface };
-export const setOrientationLockState = function setOrientationLockState(id) {
-  let tmp = arg1;
-  if (null == arg1) {
-    tmp = getDefaultOrientationLockState(id);
-  }
-  if (null != tmp) {
-    let obj = importDefault(686);
-    obj = { type: "EMBEDDED_ACTIVITY_SET_ORIENTATION_LOCK_STATE", applicationId: id.id, lockState: tmp };
-    obj.dispatch(obj);
-  }
 };
-export { getDefaultOrientationLockState };

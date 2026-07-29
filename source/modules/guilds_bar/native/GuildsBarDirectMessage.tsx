@@ -1,131 +1,147 @@
-// Module ID: 14973
-// Function ID: 114025
-// Dependencies: [31, 1194, 4844, 1348, 5902, 3802, 1850, 653, 33, 4165, 689, 14926, 566, 8292, 1212, 14928, 4173, 9073, 14974, 9070, 1273, 5119, 2]
+// Module ID: 14999
+// Function ID: 15000
+// Dependencies: [19, 1218, 4866, 1372, 5921, 3826, 1874, 676, 21, 4189, 712, 14952, 589, 8316, 1236, 14954, 4197, 9097, 15000, 9094, 1297, 5141, 2]
 
-// Module 14973
-import importAllResult from "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_5 from "_isNativeReflectConstruct";
-import closure_6 from "_isNativeReflectConstruct";
-import closure_7 from "_isNativeReflectConstruct";
-import closure_8 from "_isNativeReflectConstruct";
-import closure_9 from "_isNativeReflectConstruct";
+// Module 14999
+import importAllResult from "FacepileGroupDMAvatar";
+import fetchFingerprint from "fetchFingerprint";
+import callConnect from "callConnect";
+import ensureGuildLoaded from "ensureGuildLoaded";
+import updateGuildUnreadSentinel from "updateGuildUnreadSentinel";
+import upsertRelationship from "upsertRelationship";
+import mergeGuildAvatar from "mergeGuildAvatar";
 import { ChannelTypes } from "ME";
-import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import { jsx } from "preload";
+import createCacheKey from "createCacheKey";
 
 const require = arg1;
-let obj = {};
-obj = { width: require("_createForOfIteratorHelperLoose").modules.mobile.GUILD_BAR_ITEM_SIZE, height: require("_createForOfIteratorHelperLoose").modules.mobile.GUILD_BAR_ITEM_SIZE };
-obj.dm = obj;
-let closure_12 = _createForOfIteratorHelperLoose.createStyles(obj);
+let c3 = importAllResult;
+let obj = { dm: null };
+obj = { width: require("Themes").modules.mobile.GUILD_BAR_ITEM_SIZE, height: require("Themes").modules.mobile.GUILD_BAR_ITEM_SIZE };
+obj[0] = obj;
+let closure_12 = createCacheKey.createStyles(obj);
 const memoResult = importAllResult.memo(function GuildsBarDirectMessage(channelId) {
   let badge;
   let cutouts;
   channelId = channelId.channelId;
+  let stateFromStores;
+  let channel;
+  let dmRecipient;
   let obj = channelId(channel[11]);
-  let tmp = callback();
+  const tmp = callback();
   let obj1 = channelId(channel[12]);
-  const items = [closure_7];
-  const stateFromStores = obj1.useStateFromStores(items, () => outer1_7.getMentionCountForPrivateChannel(channelId).count);
+  const items = [updateGuildUnreadSentinel];
+  stateFromStores = obj1.useStateFromStores(items, () => outer1_7.getMentionCountForPrivateChannel(channelId).count);
   let obj2 = channelId(channel[12]);
-  const items1 = [closure_6, closure_9, closure_8, closure_5, _isNativeReflectConstruct];
+  const items1 = [ensureGuildLoaded, mergeGuildAvatar, upsertRelationship, callConnect, fetchFingerprint];
   const stateFromStoresObject = obj2.useStateFromStoresObject(items1, () => {
     const channel = outer1_6.getChannel(channelId);
     let type;
-    if (null != channel) {
+    if (channel != null) {
       type = channel.type;
     }
     let user;
     if (type === outer1_10.DM) {
       user = outer1_9.getUser(channel.getRecipientId());
     }
-    const call = outer1_5.getCall(channelId);
+    const call = outer1_5.getCall(tmp);
     const id = outer1_4.getId();
     let hasItem = null != call && null != id;
     if (hasItem) {
       const ringing = call.ringing;
       hasItem = ringing.includes(id);
     }
-    let obj = { channel, dmRecipient: user };
+    let obj = { channel, dmRecipient: user, label: null };
     if (null != channel) {
-      obj = { channel, unread: stateFromStores > 0, mentionCount: stateFromStores, isIncomingCall: hasItem, isOngoingCall: tmp7 };
+      obj = { channel: null, unread: null, mentionCount: null, isIncomingCall: null, isOngoingCall: null };
+      obj[0] = channel;
+      obj[1] = stateFromStores > 0;
+      obj[2] = stateFromStores;
+      obj[3] = hasItem;
+      obj[4] = tmp8;
       let stringResult = stateFromStores(channel[13])(obj);
     } else {
       const intl = channelId(channel[14]).intl;
       stringResult = intl.string(channelId(channel[14]).t.zLZPmk);
     }
-    obj.label = stringResult;
+    obj[2] = stringResult;
     return obj;
   });
   channel = stateFromStoresObject.channel;
-  const dmRecipient = stateFromStoresObject.dmRecipient;
+  dmRecipient = stateFromStoresObject.dmRecipient;
   const guildsBarAnimatedWrapperStyles = obj.useGuildsBarAnimatedWrapperStyles({ disableSelectedColor: true, disableBGColor: true });
   const items2 = [channel, dmRecipient];
   ({ badge, cutouts } = stateFromStores(channel[15])({ mentionCount: stateFromStores }));
   const memo = dmRecipient.useMemo(() => {
-    let tmp;
-    if (null != channel) {
-      if (channel.isDM()) {
-        let avatarSource;
-        if (null != dmRecipient) {
-          avatarSource = dmRecipient.getAvatarSource(undefined);
-        }
-        tmp = avatarSource;
-      }
+    let isDMResult;
+    if (channel != null) {
+      isDMResult = channel.isDM();
     }
-    return tmp;
+    let tmp2;
+    if (isDMResult) {
+      let avatarSource;
+      if (dmRecipient != null) {
+        avatarSource = obj2.getAvatarSource(undefined);
+      }
+      tmp2 = avatarSource;
+      obj2 = dmRecipient;
+    }
+    return tmp2;
   }, items2);
   const items3 = [channel];
   const memo1 = dmRecipient.useMemo(() => ({
     onPress() {
-      if (null != outer1_2) {
-        channelId(channel[16]).transitionToChannel(outer1_2.id);
-        const obj = channelId(channel[16]);
+      if (null != closure_2) {
+        outer1_0(outer1_2[16]).transitionToChannel(tmp.id);
+        const obj = outer1_0(outer1_2[16]);
       }
     },
     onLongPress() {
-      if (null != outer1_2) {
-        const result = channelId(channel[17]).openChannelLongPressActionSheet(outer1_2.id);
-        const obj = channelId(channel[17]);
+      if (null != closure_2) {
+        const result = outer1_0(outer1_2[17]).openChannelLongPressActionSheet(tmp.id);
+        const obj = outer1_0(outer1_2[17]);
       }
     }
   }), items3);
-  obj = { selected: false, circle: null, unread: true };
-  let isMultiUserDMResult = null != channel;
-  const tmp5 = stateFromStores(channel[15])({ mentionCount: stateFromStores });
-  const tmp8 = jsx;
-  if (isMultiUserDMResult) {
+  let isMultiUserDMResult;
+  const tmp8 = stateFromStores(channel[15])({ mentionCount: stateFromStores });
+  if (channel != null) {
     isMultiUserDMResult = channel.isMultiUserDM();
   }
-  obj.circle = !isMultiUserDMResult;
-  obj.styles = guildsBarAnimatedWrapperStyles;
-  obj.label = stateFromStoresObject.label;
-  obj.overState = undefined;
-  obj.config = memo1;
-  obj.cutouts = cutouts;
-  obj.externalChildren = badge;
-  let tmp11 = null;
+  obj = { selected: false, circle: !isMultiUserDMResult, unread: true, styles: guildsBarAnimatedWrapperStyles, label: stateFromStoresObject.label, overState: "Boolean", config: true, cutouts: false, externalChildren: "done", expandedChildren: "percent", children: 0 };
+  obj[6] = memo1;
+  obj[7] = cutouts;
+  obj[8] = badge;
+  let tmp11Result = null;
   if (null != channel) {
-    obj = { channel };
-    tmp11 = jsx(stateFromStores(channel[18]), { channel });
+    obj = { channel: null };
+    obj[0] = channel;
+    tmp11Result = tmp11(tmp7(tmp3[18]), obj);
   }
-  obj.expandedChildren = tmp11;
-  if (null != channel) {
-    if (channel.isMultiUserDM()) {
-      obj1 = { channel, size: channelId(channel[20]).AvatarSizes.LARGE_48, pileSizeOverride: channelId(channel[20]).AvatarSizes.REFRESH_MEDIUM_32, animate: true };
-      let tmp15 = jsx(stateFromStores(channel[19]), { channel, size: channelId(channel[20]).AvatarSizes.LARGE_48, pileSizeOverride: channelId(channel[20]).AvatarSizes.REFRESH_MEDIUM_32, animate: true });
-      const tmp22 = stateFromStores(channel[19]);
+  obj[9] = tmp11Result;
+  let isMultiUserDMResult1;
+  if (channel != null) {
+    isMultiUserDMResult1 = channel.isMultiUserDM();
+  }
+  if (isMultiUserDMResult1) {
+    obj1 = { channel: null, size: null, pileSizeOverride: null, animate: true };
+    obj1[0] = channel;
+    obj1[1] = tmp2(tmp3[20]).AvatarSizes.LARGE_48;
+    obj1[2] = tmp2(tmp3[20]).AvatarSizes.REFRESH_MEDIUM_32;
+    tmp11Result = tmp11(tmp7(tmp3[19]), obj1);
+    const tmp7Result = tmp7(tmp3[19]);
+  } else {
+    tmp11Result = null;
+    if (null != memo) {
+      obj2 = { style: null, source: null };
+      obj2[0] = tmp.dm;
+      obj2[1] = memo;
+      tmp11Result = tmp11(tmp7(tmp3[21]), obj2);
     }
-    obj.children = tmp15;
-    return tmp8(tmp9, obj);
   }
-  tmp15 = null;
-  if (null != memo) {
-    obj2 = { style: tmp.dm, source: memo };
-    tmp15 = jsx(stateFromStores(channel[21]), { style: tmp.dm, source: memo });
-  }
+  obj[10] = tmp11Result;
+  return jsx(stateFromStores(channel[11]), { selected: false, circle: !isMultiUserDMResult, unread: true, styles: guildsBarAnimatedWrapperStyles, label: stateFromStoresObject.label, overState: "Boolean", config: true, cutouts: false, externalChildren: "done", expandedChildren: "percent", children: 0 });
 });
-let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/guilds_bar/native/GuildsBarDirectMessage.tsx");
+let result = require("callConnect").fileFinishedImporting("modules/guilds_bar/native/GuildsBarDirectMessage.tsx");
 
 export default memoResult;

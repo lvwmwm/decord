@@ -1,20 +1,20 @@
-// Module ID: 10508
-// Function ID: 81360
+// Module ID: 10532
+// Function ID: 10533
 // Name: useIsActivitiesAvailableInShelf
-// Dependencies: [31, 10509, 10510, 5678, 2]
+// Dependencies: [19, 10533, 10534, 5696, 2]
 // Exports: default
 
-// Module 10508 (useIsActivitiesAvailableInShelf)
-import result from "result";
+// Module 10532 (useIsActivitiesAvailableInShelf)
+import noop from "noop";
 
 const require = arg1;
 const result = require("useIsPrivateChannelWithEnabledActivities").fileFinishedImporting("modules/activities/useIsActivitiesAvailableInShelf.tsx");
 
 export default function useIsActivitiesAvailableInShelf(arg0, arg1) {
   const _require = arg0;
-  const isActivitiesEnabledForCurrentPlatform = _require(10509).useIsActivitiesEnabledForCurrentPlatform();
+  const isActivitiesEnabledForCurrentPlatform = _require(10533).useIsActivitiesEnabledForCurrentPlatform();
   let tmp3 = null != arg0;
-  let obj = _require(10509);
+  let obj = _require(10533);
   if (tmp3) {
     tmp3 = "" !== arg0;
   }
@@ -30,7 +30,8 @@ export default function useIsActivitiesAvailableInShelf(arg0, arg1) {
     }
     if (tmp) {
       let obj = callback(tmp3[3]);
-      obj = { guildId: callback };
+      obj = { guildId: null };
+      obj[0] = callback;
       const shelf = obj.fetchShelf(obj);
     }
   }, items);

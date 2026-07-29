@@ -1,14 +1,14 @@
-// Module ID: 1186
-// Function ID: 13544
+// Module ID: 1210
+// Function ID: 1211
 // Name: TelemetryRingLifecycle
-// Dependencies: [2, 1187, 13226, 13231, 13232, 13227, 13224]
+// Dependencies: [2, 1211, 13247, 13254, 13255, 13248, 13251]
 
-// Module 1186 (TelemetryRingLifecycle)
-const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/telemetry_ring/native/index.tsx");
+// Module 1210 (TelemetryRingLifecycle)
+const result = require("shouldRun").fileFinishedImporting("modules/telemetry_ring/native/index.tsx");
 
-export const TelemetryRingLifecycle = require("_isNativeReflectConstruct");
-export const ZoomedInTelemetry = require("_createForOfIteratorHelperLoose");
-export const SentryTelemetry = require("_isNativeReflectConstruct");
-export const NormalTelemetry = require("_isNativeReflectConstruct");
+export const TelemetryRingLifecycle = require("_updateZoomedInExport");
+export const ZoomedInTelemetry = require("shouldRun");
+export const SentryTelemetry = require("snapshotForBreadcrumbs");
+export const NormalTelemetry = require("NormalTelemetryImpl");
 export const isZoomedExperimentEnabled = require("apexExperiment").isZoomedExperimentEnabled;
 export const TelemetryChannel = require("TelemetryChannel").TelemetryChannel;

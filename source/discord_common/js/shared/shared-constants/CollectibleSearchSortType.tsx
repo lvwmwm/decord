@@ -1,9 +1,9 @@
-// Module ID: 658
-// Function ID: 8030
+// Module ID: 681
+// Function ID: 682
 // Name: CollectibleSearchSortType
 // Dependencies: [2]
 
-// Module 658 (CollectibleSearchSortType)
+// Module 681 (CollectibleSearchSortType)
 const result = require("set").fileFinishedImporting("../discord_common/js/shared/shared-constants/CollectibleSearchSortType.tsx");
 
 export const CollectibleSearchSortType = { PRICE: "price", ALPHABETICAL: "alphabetical", RECENCY: "recency", POPULARITY: "popularity", RELEVANCE: "relevance" };

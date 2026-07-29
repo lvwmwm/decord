@@ -1,170 +1,165 @@
-// Module ID: 10232
-// Function ID: 78981
+// Module ID: 10253
+// Function ID: 10254
 // Name: getFocusedChannelId
-// Dependencies: [57, 31, 4178, 10233, 4377, 4018, 4016, 4017, 4019, 2]
-// Exports: isChannelFocusedForReadStateAck, useIsChannelFocused
+// Dependencies: [32, 19, 4202, 10254, 4400, 4042, 4040, 4041, 4043, 2]
+// Exports: isChannelFocused, isChannelFocusedForReadStateAck, useIsChannelFocused
 
-// Module 10232 (getFocusedChannelId)
+// Module 10253 (getFocusedChannelId)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import { CHANNEL_PREFIX } from "_createForOfIteratorHelperLoose";
+import noop from "noop";
+import getParticipants from "getParticipants";
+import getIdFromHistoryItem from "getIdFromHistoryItem";
+import { CHANNEL_PREFIX } from "getIdFromHistoryItem";
 import withEqualityFn from "withEqualityFn";
 
 const require = arg1;
 function getFocusedChannelId() {
-  const rootNavigationRef = require(4017) /* getRootNavigationRef */.getRootNavigationRef();
-  const obj = require(4017) /* getRootNavigationRef */;
-  const isChatLockedOpen = require(4019) /* useChatLayout */.getChatLayout().isChatLockedOpen;
+  let params = require;
+  let paramsResult3 = dependencyMap;
+  const rootNavigationRef = require(4041) /* getRootNavigationRef */.getRootNavigationRef();
+  const obj = require(4041) /* getRootNavigationRef */;
+  const isChatLockedOpen = require(4043) /* useChatLayout */.getChatLayout().isChatLockedOpen;
   let tmp2 = null;
   if (null != rootNavigationRef) {
     if (rootNavigationRef.isReady()) {
       const currentRoute = rootNavigationRef.getCurrentRoute();
-      const coerceChannelRouteResult = require(4016) /* _createForOfIteratorHelperLoose */.coerceChannelRoute(currentRoute);
+      const coerceChannelRouteResult = params(4040).coerceChannelRoute(currentRoute);
       if (tmp2 != coerceChannelRouteResult) {
         return coerceChannelRouteResult.params.channelId;
-      } else {
-        if (isChatLockedOpen) {
-          const coerceGuildsRouteResult = require(4016) /* _createForOfIteratorHelperLoose */.coerceGuildsRoute(currentRoute);
-          if (tmp2 != coerceGuildsRouteResult) {
-            const params = coerceGuildsRouteResult.params;
-            let channelId;
-            if (tmp2 != params) {
-              channelId = params.channelId;
-            }
-            return channelId;
+      } else if (isChatLockedOpen) {
+        const coerceGuildsRouteResult = params(4040).coerceGuildsRoute(currentRoute);
+        let tmp6;
+        if (tmp2 != coerceGuildsRouteResult) {
+          const params2 = coerceGuildsRouteResult.params;
+          let channelId;
+          if (params2 != tmp2) {
+            channelId = params2.channelId;
           }
-          const obj5 = require(4016) /* _createForOfIteratorHelperLoose */;
+          tmp6 = channelId;
         }
-        return channelId2;
+        return tmp6;
       }
-      const obj4 = require(4016) /* _createForOfIteratorHelperLoose */;
+      const paramsResult = params(4040);
     }
   }
   if (tmp2 !== c9) {
     return c9;
   } else {
-    const tmp30 = importDefault(4018)();
-    let num6 = 6;
-    let num4 = require(4016) /* _createForOfIteratorHelperLoose */;
-    let tmp11;
-    if (tmp2 != tmp30) {
-      const routes = tmp30.routes;
-      if (tmp2 != routes) {
-        let index;
-        if (tmp2 != tmp30) {
-          index = tmp30.index;
+    const tmp19 = importDefault(4042)();
+    let routes2 = params(4040);
+    let tmp8;
+    if (tmp19 != tmp2) {
+      const routes = tmp19.routes;
+      if (routes != tmp2) {
+        let num;
+        if (tmp19 != tmp2) {
+          num = tmp19.index;
         }
-        let num2 = 0;
-        if (tmp2 != index) {
-          num2 = index;
+        if (num == tmp2) {
+          num = 0;
         }
-        tmp11 = routes[num2];
+        tmp8 = routes[num];
       }
     }
-    let num3 = num4.coerceMainRoute(tmp11);
-    if (tmp2 == num3) {
-      c9 = tmp13;
+    let num2 = routes2.coerceMainRoute(tmp8);
+    if (tmp2 == num2) {
+      c9 = tmp9;
     } else {
-      num4 = require(dependencyMap[num6]);
+      routes2 = params(4040);
       if (!isChatLockedOpen) {
-        const state = num3.state;
-        let tmp16;
-        if (tmp2 != state) {
-          const routes2 = state.routes;
-          if (tmp2 != routes2) {
-            const state2 = num3.state;
-            let index1;
-            if (tmp2 != state2) {
-              index1 = state2.index;
+        const state = num2.state;
+        let tmp10;
+        if (state != tmp2) {
+          const routes3 = state.routes;
+          if (routes3 != tmp2) {
+            const state2 = num2.state;
+            let num3;
+            if (state2 != tmp2) {
+              num3 = state2.index;
             }
-            let num5 = 0;
-            if (tmp2 != index1) {
-              num5 = index1;
+            if (num3 == tmp2) {
+              num3 = 0;
             }
-            tmp16 = routes2[num5];
+            tmp10 = routes3[num3];
           }
         }
-        const coerceChannelRouteResult1 = num4.coerceChannelRoute(tmp16);
+        const coerceChannelRouteResult1 = routes2.coerceChannelRoute(tmp10);
         if (tmp2 != coerceChannelRouteResult1) {
-          const params2 = coerceChannelRouteResult1.params;
+          const params3 = coerceChannelRouteResult1.params;
           let channelId1;
-          if (tmp2 != params2) {
-            channelId1 = params2.channelId;
+          if (params3 != tmp2) {
+            channelId1 = params3.channelId;
           }
-          tmp13 = channelId1;
+          tmp9 = channelId1;
         }
       }
     }
-    const state3 = num3.state;
-    let tmp20;
-    if (tmp2 != state3) {
-      const routes3 = state3.routes;
-      if (tmp2 != routes3) {
-        const state4 = num3.state;
-        let index2;
-        if (tmp2 != state4) {
-          index2 = state4.index;
+    const state3 = num2.state;
+    let tmp13;
+    if (state3 != tmp2) {
+      const routes4 = state3.routes;
+      if (routes4 != tmp2) {
+        const state4 = num2.state;
+        num2 = undefined;
+        if (state4 != tmp2) {
+          num2 = state4.index;
         }
-        num3 = 0;
-        if (tmp2 != index2) {
-          num3 = index2;
+        if (num2 == tmp2) {
+          num2 = 0;
         }
-        tmp20 = routes3[num3];
+        tmp13 = routes4[num2];
       }
     }
-    num4 = num4.coerceTabsRoute(tmp20);
-    if (tmp2 != num4) {
-      num6 = require(dependencyMap[num6]);
-      num3 = num4.state;
-      let tmp24;
-      if (tmp2 != num3) {
-        num3 = num3.routes;
-        if (tmp2 != num3) {
-          const state5 = num4.state;
-          let index3;
-          if (tmp2 != state5) {
-            index3 = state5.index;
+    const coerceTabsRouteResult = routes2.coerceTabsRoute(tmp13);
+    if (tmp2 != coerceTabsRouteResult) {
+      params = params(4040).coerceGuildsRoute;
+      routes2 = coerceTabsRouteResult.state;
+      let tmp16;
+      if (routes2 != tmp2) {
+        routes2 = routes2.routes;
+        if (routes2 != tmp2) {
+          num2 = coerceTabsRouteResult.state;
+          let num4;
+          if (num2 != tmp2) {
+            num4 = num2.index;
           }
-          num4 = 0;
-          if (tmp2 != index3) {
-            num4 = index3;
+          if (num4 == tmp2) {
+            num4 = 0;
           }
-          tmp24 = num3[num4];
+          tmp16 = routes2[num4];
         }
       }
-      const coerceGuildsRouteResult1 = num6.coerceGuildsRoute(tmp24);
-      if (tmp2 != coerceGuildsRouteResult1) {
-        const params3 = coerceGuildsRouteResult1.params;
-        tmp2 = tmp2 == params3;
-        channelId2 = undefined;
+      paramsResult3 = params(tmp16);
+      if (tmp2 != paramsResult3) {
+        params = paramsResult3.params;
+        tmp2 = params == tmp2;
+        paramsResult3 = undefined;
         if (!tmp2) {
-          channelId2 = params3.channelId;
+          paramsResult3 = params.channelId;
         }
-        tmp13 = channelId2;
+        tmp9 = paramsResult3;
       }
+      const paramsResult2 = params(4040);
     }
   }
 }
-function isChannelFocused() {
-  return null != getFocusedChannelId();
-}
 let c9 = null;
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/panels/isChannelFocused.native.tsx");
+const result = require("getParticipants").fileFinishedImporting("modules/panels/isChannelFocused.native.tsx");
 
 export { getFocusedChannelId };
-export { isChannelFocused };
+export const isChannelFocused = function isChannelFocused() {
+  return null != getFocusedChannelId();
+};
 export const useIsChannelFocused = function useIsChannelFocused() {
-  const tmp = callback(React.useState(() => outer1_11()), 2);
+  const tmp = callback(React.useState(() => null != callback2()), 2);
   let closure_0 = tmp[1];
-  const items = [importDefault(4019)()];
+  const items = [importDefault(4043)()];
   const effect = React.useEffect(() => {
-    callback(outer1_11());
+    callback(null != outer1_10());
   }, items);
   const effect1 = React.useEffect(() => {
     function handleStateChange() {
-      rootNavigationRef(outer2_11());
+      rootNavigationRef(null != outer1_10());
     }
     const rootNavigationRef = callback(outer1_2[7]).getRootNavigationRef();
     if (null != rootNavigationRef) {
@@ -177,7 +172,7 @@ export const useIsChannelFocused = function useIsChannelFocused() {
   }, []);
   return tmp[0];
 };
-export const isChannelFocusedForReadStateAck = function isChannelFocusedForReadStateAck(channelId, timestamp) {
+export const isChannelFocusedForReadStateAck = function isChannelFocusedForReadStateAck(channelId, arg1) {
   if (chatOpen.getChatOpen(channelId)) {
     return true;
   } else {
@@ -187,10 +182,10 @@ export const isChannelFocusedForReadStateAck = function isChannelFocusedForReadS
     } else if (getFocusedChannelId() === channelId) {
       return true;
     } else {
-      if (null != timestamp) {
+      if (null != arg1) {
         lastFocusedTimestampForHistoryItem = lastFocusedTimestampForHistoryItem.getLastFocusedTimestampForHistoryItem(CHANNEL_PREFIX + channelId);
         if (null != lastFocusedTimestampForHistoryItem) {
-          if (lastFocusedTimestampForHistoryItem >= timestamp) {
+          if (lastFocusedTimestampForHistoryItem >= arg1) {
             return true;
           }
         }

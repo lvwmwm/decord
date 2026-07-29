@@ -1,25 +1,34 @@
-// Module ID: 6481
-// Function ID: 57970
+// Module ID: 6502
+// Function ID: 6503
 // Name: apexExperiment
-// Dependencies: [1428, 2]
+// Dependencies: [1452, 2]
 
-// Module 6481 (apexExperiment)
+// Module 6502 (apexExperiment)
+import ApexExperiment from "ApexExperiment";
 import ApexExperiment from "ApexExperiment";
 import ApexExperiment from "ApexExperiment";
 import ApexExperiment from "ApexExperiment";
 import ApexExperiment from "ApexExperiment";
 import ApexExperiment from "ApexExperiment";
 
-let obj = { name: "2026-03-nitro-acom-subscription", kind: "user", defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } };
-const apexExperiment = ApexExperiment.createApexExperiment(obj);
-obj = { name: "2026-03-acom-modify-dark-launch", kind: "user", defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } };
-const apexExperiment1 = ApexExperiment.createApexExperiment(obj);
-const obj1 = { name: "2026-06-otp-acom-order", kind: "user", defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } };
-const apexExperiment2 = ApexExperiment.createApexExperiment(obj1);
-const obj2 = { name: "2026-06-gift-acom-order", kind: "user", defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } };
-const apexExperiment3 = ApexExperiment.createApexExperiment(obj2);
-const obj3 = { name: "2026-07-nitro-acom-trials", kind: "user", defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } };
-const apexExperiment4 = ApexExperiment.createApexExperiment(obj3);
+let obj = { 1: null };
+obj[1] = { enabled: true };
+const apexExperiment = ApexExperiment.createApexExperiment({ name: "2026-03-nitro-acom-subscription", kind: "user", defaultConfig: { enabled: false }, variations: obj });
+obj = { 1: null };
+obj[1] = { enabled: true };
+const apexExperiment1 = ApexExperiment.createApexExperiment({ name: "2026-03-acom-modify-dark-launch", kind: "user", defaultConfig: { enabled: false }, variations: obj });
+const obj1 = { 1: null };
+obj1[1] = { enabled: true };
+const apexExperiment2 = ApexExperiment.createApexExperiment({ name: "2026-06-otp-acom-order", kind: "user", defaultConfig: { enabled: false }, variations: obj1 });
+const obj2 = { 1: null };
+obj2[1] = { enabled: true };
+const apexExperiment3 = ApexExperiment.createApexExperiment({ name: "2026-06-gift-acom-order", kind: "user", defaultConfig: { enabled: false }, variations: obj2 });
+const obj3 = { 1: null };
+obj3[1] = { enabled: true };
+const apexExperiment4 = ApexExperiment.createApexExperiment({ name: "2026-07-nitro-acom-trials", kind: "user", defaultConfig: { enabled: false }, variations: obj3 });
+const obj4 = { 1: null };
+obj4[1] = { enabled: true };
+const apexExperiment5 = ApexExperiment.createApexExperiment({ name: "2026-07-nitro-acom-discounts", kind: "user", defaultConfig: { enabled: false }, variations: obj4 });
 const result = require("set").fileFinishedImporting("modules/billing/native/ACOMExperiments.tsx");
 
 export const NitroACOMSubscriptionExperiment = apexExperiment;
@@ -27,3 +36,4 @@ export const ACOMModifyDarkLaunchExperiment = apexExperiment1;
 export const OTPACOMOrderExperiment = apexExperiment2;
 export const GiftACOMOrderExperiment = apexExperiment3;
 export const NitroACOMTrialsExperiment = apexExperiment4;
+export const NitroACOMDiscountsExperiment = apexExperiment5;

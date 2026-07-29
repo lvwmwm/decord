@@ -1,54 +1,51 @@
-// Module ID: 7813
-// Function ID: 61868
-// Name: isReferralProgramPopoverSeen
-// Dependencies: [6192, 1345, 664, 1212, 3981, 1334, 21, 1336, 7814, 566, 7819, 2]
-// Exports: getReferralTrialOfferExpirationCopy, isReferralProgramBadgeAcknowledged, markReferralProgramBadgeAcknowledged, markReferralProgramEntrypointBadgeAcknowledged, markReferralProgramPopoverSeen, useIsReferralProgramBadgeShowable, useIsReferralProgramEntrypointBadgeAcknowledged, useIsReferralProgramPopoverShowable
+// Module ID: 7836
+// Function ID: 7837
+// Name: getReferralTrialOfferExpirationCopy
+// Dependencies: [6212, 1369, 687, 1236, 4005, 1358, 11, 1360, 7837, 589, 7842, 2]
+// Exports: getReferralTrialOfferExpirationCopy, isReferralProgramBadgeAcknowledged, isReferralProgramPopoverSeen, markReferralProgramBadgeAcknowledged, markReferralProgramEntrypointBadgeAcknowledged, markReferralProgramPopoverSeen, useIsReferralProgramBadgeShowable, useIsReferralProgramEntrypointBadgeAcknowledged, useIsReferralProgramPopoverShowable
 
-// Module 7813 (isReferralProgramPopoverSeen)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 7836 (getReferralTrialOfferExpirationCopy)
+import emitChanges from "emitChanges";
 import { ContentDismissActionType } from "ContentDismissActionType";
 
 const require = arg1;
-function isReferralProgramPopoverSeen() {
-  return require(3981) /* UNSAFE_isDismissibleContentDismissed */.UNSAFE_isDismissibleContentDismissed(require(1334) /* DismissibleContent */.DismissibleContent.REFERRAL_PROGRAM_POPOVER);
-}
 let result = require("set").fileFinishedImporting("modules/premium/referral_program/ReferralProgramUtils.tsx");
 
 export const getReferralTrialOfferExpirationCopy = function getReferralTrialOfferExpirationCopy(arg0) {
   const diff = arg0 - Date.now();
-  const result = diff / importDefault(664).Millis.HOUR;
+  const result = diff / importDefault(687).Millis.HOUR;
   if (result > 24) {
-    const intl3 = require(1212) /* getSystemLocale */.intl;
-    let obj = {};
+    const intl3 = require(1236) /* getSystemLocale */.intl;
+    let obj = { numDays: null };
     const _Math3 = Math;
-    obj.numDays = Math.floor(result / 24);
-    let formatToPlainStringResult = intl3.formatToPlainString(require(1212) /* getSystemLocale */.t["g9s+dA"], obj);
+    obj[0] = Math.floor(result / 24);
+    let formatToPlainStringResult = intl3.formatToPlainString(require(1236) /* getSystemLocale */.t["g9s+dA"], obj);
   } else if (result >= 1) {
-    const intl2 = require(1212) /* getSystemLocale */.intl;
-    obj = {};
+    const intl2 = require(1236) /* getSystemLocale */.intl;
+    obj = { numHours: null };
     const _Math2 = Math;
-    obj.numHours = Math.floor(result);
-    formatToPlainStringResult = intl2.formatToPlainString(require(1212) /* getSystemLocale */.t.k9v33y, obj);
+    obj[0] = Math.floor(result);
+    formatToPlainStringResult = intl2.formatToPlainString(require(1236) /* getSystemLocale */.t.k9v33y, obj);
   } else {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    obj = {};
+    const intl = require(1236) /* getSystemLocale */.intl;
+    obj = { numMinutes: null };
     const _Math = Math;
-    obj.numMinutes = Math.floor(60 * result);
-    formatToPlainStringResult = intl.formatToPlainString(require(1212) /* getSystemLocale */.t["/d0GmT"], obj);
+    obj[0] = Math.floor(60 * result);
+    formatToPlainStringResult = intl.formatToPlainString(require(1236) /* getSystemLocale */.t["/d0GmT"], obj);
   }
   return formatToPlainStringResult;
 };
 export const useIsReferralProgramEntrypointBadgeAcknowledged = function useIsReferralProgramEntrypointBadgeAcknowledged() {
-  return require(3981) /* UNSAFE_isDismissibleContentDismissed */.useIsDismissibleContentDismissed_UNSAFE(require(1334) /* DismissibleContent */.DismissibleContent.REFERRAL_PROGRAM_ENTRYPOINT_NITRO_TAB_BADGE);
+  return require(4005) /* UNSAFE_isDismissibleContentDismissed */.useIsDismissibleContentDismissed_UNSAFE(require(1358) /* DismissibleContent */.DismissibleContent.REFERRAL_PROGRAM_ENTRYPOINT_NITRO_TAB_BADGE);
 };
 export const markReferralProgramEntrypointBadgeAcknowledged = function markReferralProgramEntrypointBadgeAcknowledged() {
-  const result = require(3981) /* UNSAFE_isDismissibleContentDismissed */.UNSAFE_markDismissibleContentAsDismissed(require(1334) /* DismissibleContent */.DismissibleContent.REFERRAL_PROGRAM_ENTRYPOINT_NITRO_TAB_BADGE);
+  const result = require(4005) /* UNSAFE_isDismissibleContentDismissed */.UNSAFE_markDismissibleContentAsDismissed(require(1358) /* DismissibleContent */.DismissibleContent.REFERRAL_PROGRAM_ENTRYPOINT_NITRO_TAB_BADGE);
 };
 export const isReferralProgramBadgeAcknowledged = function isReferralProgramBadgeAcknowledged() {
-  return require(3981) /* UNSAFE_isDismissibleContentDismissed */.UNSAFE_isDismissibleContentDismissed(require(1334) /* DismissibleContent */.DismissibleContent.REFERRAL_PROGRAM_NITRO_TAB_BADGE);
+  return require(4005) /* UNSAFE_isDismissibleContentDismissed */.UNSAFE_isDismissibleContentDismissed(require(1358) /* DismissibleContent */.DismissibleContent.REFERRAL_PROGRAM_NITRO_TAB_BADGE);
 };
 export const markReferralProgramBadgeAcknowledged = function markReferralProgramBadgeAcknowledged() {
-  const result = require(3981) /* UNSAFE_isDismissibleContentDismissed */.UNSAFE_markDismissibleContentAsDismissed(require(1334) /* DismissibleContent */.DismissibleContent.REFERRAL_PROGRAM_NITRO_TAB_BADGE);
+  const result = require(4005) /* UNSAFE_isDismissibleContentDismissed */.UNSAFE_markDismissibleContentAsDismissed(require(1358) /* DismissibleContent */.DismissibleContent.REFERRAL_PROGRAM_NITRO_TAB_BADGE);
 };
 export const useIsReferralProgramBadgeShowable = function useIsReferralProgramBadgeShowable(trialOffer) {
   trialOffer = trialOffer.trialOffer;
@@ -57,11 +54,11 @@ export const useIsReferralProgramBadgeShowable = function useIsReferralProgramBa
   } else {
     let tmp = undefined !== trialOffer.referrer_id;
     const _Date = Date;
-    const date = new Date(importDefault(21).extractTimestamp(trialOffer.id));
+    const date = new Date(importDefault(11).extractTimestamp(trialOffer.id));
     const _Date2 = Date;
     const date1 = new Date();
     if (tmp) {
-      tmp = tmp2;
+      tmp = undefined === trialOffer.redeemed_at;
     }
     if (tmp) {
       tmp = date1 >= date;
@@ -71,36 +68,40 @@ export const useIsReferralProgramBadgeShowable = function useIsReferralProgramBa
 };
 export const markReferralProgramPopoverSeen = function markReferralProgramPopoverSeen(promotionId) {
   if (null != promotionId) {
-    let obj = { dismissAction: ContentDismissActionType.INDIRECT_ACTION };
-    const result = require(1336) /* addVersionedDismissedContent */.markSnowflakeBoundDismissibleContentAsDismissed(require(1334) /* DismissibleContent */.DismissibleContent.REFERRAL_PROGRAM_POPOVER_V2, promotionId, obj);
-    const obj2 = require(1336) /* addVersionedDismissedContent */;
+    let obj = { dismissAction: null };
+    obj[0] = ContentDismissActionType.INDIRECT_ACTION;
+    const result = require(1360) /* addVersionedDismissedContent */.markSnowflakeBoundDismissibleContentAsDismissed(require(1358) /* DismissibleContent */.DismissibleContent.REFERRAL_PROGRAM_POPOVER_V2, promotionId, obj);
+    const obj2 = require(1360) /* addVersionedDismissedContent */;
   } else {
-    obj = require(3981) /* UNSAFE_isDismissibleContentDismissed */;
-    const result1 = obj.UNSAFE_markDismissibleContentAsDismissed(require(1334) /* DismissibleContent */.DismissibleContent.REFERRAL_PROGRAM_POPOVER);
+    obj = require(4005) /* UNSAFE_isDismissibleContentDismissed */;
+    const result1 = obj.UNSAFE_markDismissibleContentAsDismissed(require(1358) /* DismissibleContent */.DismissibleContent.REFERRAL_PROGRAM_POPOVER);
   }
 };
-export { isReferralProgramPopoverSeen };
+export const isReferralProgramPopoverSeen = function isReferralProgramPopoverSeen() {
+  return require(4005) /* UNSAFE_isDismissibleContentDismissed */.UNSAFE_isDismissibleContentDismissed(require(1358) /* DismissibleContent */.DismissibleContent.REFERRAL_PROGRAM_POPOVER);
+};
 export const useIsReferralProgramPopoverShowable = function useIsReferralProgramPopoverShowable() {
-  let isEligibleSenderForReferralProgram = require(7814) /* useIsEligibleSenderForReferralProgram */.useIsEligibleSenderForReferralProgram(false);
-  const obj = require(7814) /* useIsEligibleSenderForReferralProgram */;
-  const items = [_isNativeReflectConstruct];
-  const stateFromStores = require(566) /* initialize */.useStateFromStores(items, () => outer1_3.getReferralsRemaining());
-  const obj2 = require(566) /* initialize */;
-  const items1 = [_isNativeReflectConstruct];
-  const stateFromStores1 = require(566) /* initialize */.useStateFromStores(items1, () => outer1_3.getReminderStateId());
-  const obj3 = require(566) /* initialize */;
+  let isEligibleSenderForReferralProgram = require(7837) /* useIsEligibleSenderForReferralProgram */.useIsEligibleSenderForReferralProgram(false);
+  const obj = require(7837) /* useIsEligibleSenderForReferralProgram */;
+  const items = [emitChanges];
+  const stateFromStores = require(589) /* initialize */.useStateFromStores(items, () => store.getReferralsRemaining());
+  const obj2 = require(589) /* initialize */;
+  const items1 = [emitChanges];
+  const stateFromStores1 = require(589) /* initialize */.useStateFromStores(items1, () => store.getReminderStateId());
+  const obj3 = require(589) /* initialize */;
   if (obj4.useIsReferralReminderDCExperimentEnabled({ location: "ReferralProgramUtils" })) {
-    let tmp7 = null != stateFromStores1;
-    if (tmp7) {
-      tmp7 = !require(3981) /* UNSAFE_isDismissibleContentDismissed */.UNSAFE_isSnowflakeBoundDismissibleContentDismissed(require(1334) /* DismissibleContent */.DismissibleContent.REFERRAL_PROGRAM_POPOVER_V2, stateFromStores1).isDismissed;
-      const obj5 = require(3981) /* UNSAFE_isDismissibleContentDismissed */;
+    let tmp8 = null != stateFromStores1;
+    if (tmp8) {
+      let tmpResult = tmp(4005);
+      tmp8 = !tmpResult.UNSAFE_isSnowflakeBoundDismissibleContentDismissed(tmp(1358).DismissibleContent.REFERRAL_PROGRAM_POPOVER_V2, stateFromStores1).isDismissed;
     }
-    let tmp5 = tmp7;
+    let tmp6 = tmp8;
   } else {
-    tmp5 = !isReferralProgramPopoverSeen();
+    tmpResult = tmp(4005);
+    tmp6 = !tmpResult.UNSAFE_isDismissibleContentDismissed(tmp(1358).DismissibleContent.REFERRAL_PROGRAM_POPOVER);
   }
   if (isEligibleSenderForReferralProgram) {
-    isEligibleSenderForReferralProgram = tmp5;
+    isEligibleSenderForReferralProgram = tmp6;
   }
   if (isEligibleSenderForReferralProgram) {
     isEligibleSenderForReferralProgram = null != stateFromStores;

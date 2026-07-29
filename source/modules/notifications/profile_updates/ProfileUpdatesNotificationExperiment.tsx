@@ -1,14 +1,13 @@
-// Module ID: 14445
-// Function ID: 110335
+// Module ID: 14467
+// Function ID: 14468
 // Name: apexExperiment
-// Dependencies: [1428, 2]
+// Dependencies: [1452, 2]
 // Exports: isEligibleForProfileUpdatesNotificationsToggle, useProfileUpdatesNotificationExperiment
 
-// Module 14445 (apexExperiment)
+// Module 14467 (apexExperiment)
 import ApexExperiment from "ApexExperiment";
 
-const obj = { kind: "user", name: "2026-01-profile-updates-notification", defaultConfig: { showSettingsToggle: false }, variations: { [0]: { showSettingsToggle: false }, [1]: { showSettingsToggle: true }, [2]: { showSettingsToggle: true } } };
-const apexExperiment = ApexExperiment.createApexExperiment(obj);
+const apexExperiment = ApexExperiment.createApexExperiment({ kind: "user", name: "2026-01-profile-updates-notification", defaultConfig: { showSettingsToggle: false }, variations: { 0: { showSettingsToggle: false }, 1: { showSettingsToggle: true }, 2: { showSettingsToggle: true } } });
 const result = require("set").fileFinishedImporting("modules/notifications/profile_updates/ProfileUpdatesNotificationExperiment.tsx");
 
 export default apexExperiment;

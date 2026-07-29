@@ -1,26 +1,26 @@
-// Module ID: 13817
-// Function ID: 105820
+// Module ID: 13838
+// Function ID: 13839
 // Name: route
-// Dependencies: [3802, 7733, 653, 566, 1212, 10099, 9190, 13818, 2]
+// Dependencies: [3826, 7756, 676, 589, 1236, 10120, 9214, 13839, 2]
 
-// Module 13817 (route)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 13838 (route)
+import upsertRelationship from "upsertRelationship";
 import createToggle from "createToggle";
 
 const require = arg1;
 createToggle = {
   IconComponent: require("EyeSlashIcon").EyeSlashIcon,
   useTitle() {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(require(1212) /* getSystemLocale */.t["93ZDWE"]);
+    const intl = require(1236) /* getSystemLocale */.intl;
+    return intl.string(require(1236) /* getSystemLocale */.t["93ZDWE"]);
   },
   useDescription: function useAccountIgnoredUsersSettingDescription() {
-    let obj = require(566) /* initialize */;
-    const items = [_isNativeReflectConstruct];
-    const stateFromStoresArray = obj.useStateFromStoresArray(items, () => outer1_2.getIgnoredIDs());
-    const intl = require(1212) /* getSystemLocale */.intl;
+    let obj = require(589) /* initialize */;
+    const items = [upsertRelationship];
+    const stateFromStoresArray = obj.useStateFromStoresArray(items, () => ignoredIDs.getIgnoredIDs());
+    const intl = require(1236) /* getSystemLocale */.intl;
     obj = { numberOfIgnoredUsers: stateFromStoresArray.length };
-    return intl.format(require(1212) /* getSystemLocale */.t.rXUeOl, obj);
+    return intl.format(require(1236) /* getSystemLocale */.t.rXUeOl, obj);
   },
   parent: require("MobileSetting").MobileSetting.CONTENT_AND_SOCIAL_DISCORD,
   screen: createToggle
@@ -28,7 +28,7 @@ createToggle = {
 createToggle = {
   route: require("ME").UserSettingsSections.IGNORED_USERS,
   getComponent() {
-    return require(13818) /* IgnoredUsersList */.default;
+    return require(13839) /* IgnoredUsersList */.default;
   }
 };
 createToggle = createToggle.createRoute(createToggle);

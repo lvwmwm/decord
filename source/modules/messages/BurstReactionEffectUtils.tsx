@@ -1,10 +1,10 @@
-// Module ID: 6115
-// Function ID: 54440
+// Module ID: 6133
+// Function ID: 6134
 // Name: replaceAnimationColors
-// Dependencies: [4009, 22, 2]
+// Dependencies: [4033, 12, 2]
 // Exports: replaceAnimationColors
 
-// Module 6115 (replaceAnimationColors)
+// Module 6133 (replaceAnimationColors)
 import apply from "apply";
 
 const memoizeResult = apply.memoize((str) => {
@@ -14,21 +14,21 @@ const memoizeResult = apply.memoize((str) => {
   let num3 = 0;
   if (0 < str.length) {
     do {
-      num2 = (num2 << 5) - num2 + str.charCodeAt(num3);
-      num3 = num3 + 1;
-      num = num2;
+      num2 = (num2 << 5) - num2 + str.charCodeAt(num);
+      num = num + 1;
+      num3 = num2;
       length = str.length;
-    } while (num3 < length);
+    } while (num < length);
   }
-  return Math.abs(num);
+  return Math.abs(num3);
 });
 const result = require("set").fileFinishedImporting("modules/messages/BurstReactionEffectUtils.tsx");
 
-export const replaceAnimationColors = function replaceAnimationColors(json, arg1) {
+export const replaceAnimationColors = function replaceAnimationColors(c5, arg1) {
   const items = [, , ];
   ({ r: arr[0], g: arr[1], b: arr[2] } = arg1);
-  const complimentaryPaletteForColor = require(4009) /* hexToRgb */.getComplimentaryPaletteForColor(items, 2);
-  const obj = require(4009) /* hexToRgb */;
-  return json.replace(/(\[1,0,0,)/g, "[" + complimentaryPaletteForColor[0][0] / 255 + "," + complimentaryPaletteForColor[0][1] / 255 + "," + complimentaryPaletteForColor[0][2] / 255 + ",").replace(/\[0,0,1,/g, "[" + complimentaryPaletteForColor[1][0] / 255 + "," + complimentaryPaletteForColor[1][1] / 255 + "," + complimentaryPaletteForColor[1][2] / 255 + ",");
+  const complimentaryPaletteForColor = require(4033) /* hexToRgba */.getComplimentaryPaletteForColor(items, 2);
+  const obj = require(4033) /* hexToRgba */;
+  return c5.replace(/(\[1,0,0,)/g, "[" + complimentaryPaletteForColor[0][0] / 255 + "," + complimentaryPaletteForColor[0][1] / 255 + "," + complimentaryPaletteForColor[0][2] / 255 + ",").replace(/\[0,0,1,/g, "[" + complimentaryPaletteForColor[1][0] / 255 + "," + complimentaryPaletteForColor[1][1] / 255 + "," + complimentaryPaletteForColor[1][2] / 255 + ",");
 };
 export const getBurstAnimationHash = memoizeResult;

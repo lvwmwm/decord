@@ -1,19 +1,19 @@
-// Module ID: 15979
-// Function ID: 123326
+// Module ID: 16014
+// Function ID: 16015
 // Name: getBadgeLeft
-// Dependencies: [31, 27, 33, 10506, 8507, 2]
+// Dependencies: [19, 17, 21, 10530, 8531, 2]
 
-// Module 15979 (getBadgeLeft)
+// Module 16014 (getBadgeLeft)
 import { PixelRatio } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
-import importAllResult from "result";
+import importAllResult from "noop";
 
-let closure_3;
-let closure_4;
+let c3;
+let c4;
 const require = arg1;
-({ jsx: closure_3, jsxs: closure_4 } = jsxProd);
+({ jsx: c3, jsxs: c4 } = jsxProd);
 let closure_5 = PixelRatio.get();
-const memoResult = require("result").memo(function CircleWithCutout(arg0) {
+const memoResult = require("noop").memo(function CircleWithCutout(arg0) {
   let alignBadgeEdgeWithCircleEdge;
   let badgeRadius;
   let circleRadius;
@@ -40,42 +40,40 @@ const memoResult = require("result").memo(function CircleWithCutout(arg0) {
     const result1 = badgeRadius * num;
   }
   const result2 = 2 * result;
-  let obj = require(10506) /* getCutoutCenterX */;
+  let obj = require(10530) /* CircleWithCutout */;
   const cutoutCenterX = obj.getCutoutCenterX(result, cutoutPositionInDegrees);
-  let obj1 = require(10506) /* getCutoutCenterX */;
+  let obj1 = require(10530) /* CircleWithCutout */;
   const cutoutCenterY = obj1.getCutoutCenterY(result, cutoutPositionInDegrees);
   if (alignBadgeEdgeWithCircleEdge) {
     alignBadgeEdgeWithCircleEdge = null != result1;
   }
+  let tmp8 = cutoutCenterY;
   let diff = cutoutCenterX;
-  let tmp7 = cutoutCenterY;
   if (alignBadgeEdgeWithCircleEdge) {
     diff = 2 * result - result1;
-    tmp7 = result1;
+    tmp8 = result1;
   }
-  obj = { height: result2, width: result2, style: { transform: items } };
+  obj = { height: result2, width: result2, style: { transform: items }, children: null };
   obj = { scale: 1 / num };
   items = [obj];
-  obj1 = {};
-  const obj2 = { id: "mask" };
-  const items1 = [callback(require(8507) /* inlineStyles */.Rect, { width: result2, height: result2, fill: "white" }), ];
-  const obj3 = { cx: diff, cy: tmp7, r: cutoutRadius * num, fill: "black" };
-  items1[1] = callback(require(8507) /* inlineStyles */.Circle, obj3);
-  obj2.children = items1;
-  obj1.children = callback2(require(8507) /* inlineStyles */.Mask, obj2);
-  const items2 = [callback(require(8507) /* inlineStyles */.Defs, obj1), ];
-  const obj4 = { cx: result, cy: result, r: result, fill };
+  obj1 = { children: null };
+  const obj2 = { id: "mask", children: null };
+  const items1 = [callback(require(8531) /* inlineStyles */.Rect, { width: result2, height: result2, fill: "white" }), callback(require(8531) /* inlineStyles */.Circle, { cx: diff, cy: tmp8, r: cutoutRadius * num, fill: "black" })];
+  obj2[1] = items1;
+  obj1[0] = callback2(require(8531) /* inlineStyles */.Mask, obj2);
+  const items2 = [callback(require(8531) /* inlineStyles */.Defs, obj1), ];
+  const obj4 = { cx: result, cy: result, r: result, fill, mask: null };
   let str;
   if (enableCutout) {
     str = "url(#mask)";
   }
-  obj4.mask = str;
-  items2[1] = callback(require(8507) /* inlineStyles */.Circle, obj4);
-  obj.children = items2;
-  return callback2(importDefault(8507), obj);
+  obj4[4] = str;
+  items2[1] = callback(require(8531) /* inlineStyles */.Circle, obj4);
+  obj[3] = items2;
+  return callback2(importDefault(8531), obj);
 });
 let result = require("jsxProd").fileFinishedImporting("modules/voice_panel/native/shared/CircleWithCutout.tsx");
 
 export default memoResult;
-export const getBadgeLeft = require("getCutoutCenterX").getBadgeLeft;
-export const getBadgeTop = require("getCutoutCenterX").getBadgeTop;
+export const getBadgeLeft = require("CircleWithCutout").getBadgeLeft;
+export const getBadgeTop = require("CircleWithCutout").getBadgeTop;

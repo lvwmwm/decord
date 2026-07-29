@@ -1,62 +1,59 @@
-// Module ID: 15936
-// Function ID: 122939
+// Module ID: 15971
+// Function ID: 15972
 // Name: ActivitiesDebugOverlay
-// Dependencies: [31, 27, 33, 4165, 4009, 689, 10605, 1557, 4161, 2]
+// Dependencies: [19, 17, 21, 4189, 4033, 712, 10646, 1581, 4185, 2]
 // Exports: default
 
-// Module 15936 (ActivitiesDebugOverlay)
-import "result";
+// Module 15971 (ActivitiesDebugOverlay)
+import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import hexToRgb from "hexToRgb";
+import createCacheKey from "createCacheKey";
+import hexToRgba from "hexToRgba";
 
-let closure_4;
-let closure_5;
+let c4;
+let c5;
 const require = arg1;
-({ jsxs: closure_4, jsx: closure_5 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { position: "absolute", top: 0, left: 0, backgroundColor: null, paddingRight: 16, paddingBottom: 16 };
-_createForOfIteratorHelperLoose.backgroundColor = hexToRgb.hexWithOpacity(require("_createForOfIteratorHelperLoose").unsafe_rawColors.BLACK, 0.7);
-_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.row = { flexDirection: "row" };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+({ jsxs: c4, jsx: c5 } = jsxProd);
+createCacheKey = { container: null, row: null };
+createCacheKey = { position: "absolute", top: 0, left: 0, backgroundColor: null, paddingRight: 16, paddingBottom: 16 };
+createCacheKey[3] = hexToRgba.hexWithOpacity(require("Themes").unsafe_rawColors.BLACK, 0.7);
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { flexDirection: "row" };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
 const result = require("jsxProd").fileFinishedImporting("modules/activities/native/ActivitiesDebugOverlay.tsx");
 
 export default function ActivitiesDebugOverlay() {
-  const tmp = _createForOfIteratorHelperLoose();
-  const tmp2 = importDefault(10605)();
-  let str = "";
-  let str2 = "text-overlay-light";
-  if (require(10605) /* _getThermalState */.ThermalStates.UNHANDLED !== tmp2) {
-    str = "nominal";
-    str2 = "text-feedback-positive";
-    if (require(10605) /* _getThermalState */.ThermalStates.NOMINAL !== tmp2) {
-      str = "fair";
-      str2 = "text-feedback-warning";
-      if (require(10605) /* _getThermalState */.ThermalStates.FAIR !== tmp2) {
-        str = "serious";
-        str2 = "text-feedback-critical";
-        if (require(10605) /* _getThermalState */.ThermalStates.SERIOUS !== tmp2) {
-          if (require(10605) /* _getThermalState */.ThermalStates.CRITICAL === tmp2) {
-            str = "critical";
-            str2 = "text-feedback-critical";
+  const tmp = createCacheKey();
+  const tmp4 = importDefault(10646)();
+  let str = "text-overlay-light";
+  let str2 = "";
+  if (require(10646) /* useThermalState */.ThermalStates.UNHANDLED !== tmp4) {
+    str = "text-feedback-positive";
+    str2 = "nominal";
+    if (tmp5(10646).ThermalStates.NOMINAL !== tmp4) {
+      str = "text-feedback-warning";
+      str2 = "fair";
+      if (tmp5(10646).ThermalStates.FAIR !== tmp4) {
+        str2 = "serious";
+        str = "text-feedback-critical";
+        if (tmp5(10646).ThermalStates.SERIOUS !== tmp4) {
+          if (tmp5(10646).ThermalStates.CRITICAL === tmp4) {
+            str2 = "critical";
+            str = "text-feedback-critical";
           }
         }
       }
     }
   }
-  const rect = importDefault(1557)();
-  let obj = { style: items, pointerEvents: "none" };
+  const rect = importDefault(1581)();
+  let obj = { style: items, pointerEvents: "none", children: null };
   items = [tmp.container, ];
   obj = { paddingTop: rect.top + 16, paddingLeft: rect.left + 16 };
   items[1] = obj;
-  obj = { style: tmp.row };
-  const obj1 = { variant: "text-md/normal", color: "text-overlay-light", children: ["thermal state:", " "] };
-  const items1 = [callback(require(4161) /* Text */.Text, obj1), ];
-  const obj2 = { variant: "text-md/normal", color: str2, children: str };
-  items1[1] = callback2(require(4161) /* Text */.Text, obj2);
-  obj.children = items1;
-  obj.children = callback(View, obj);
+  obj = { style: tmp.row, children: null };
+  const items1 = [callback(require(4185) /* Text */.Text, { variant: "text-md/normal", color: "text-overlay-light", children: ["thermal state:", " "] }), callback2(require(4185) /* Text */.Text, { variant: "text-md/normal", color: str, children: str2 })];
+  obj[1] = items1;
+  obj[2] = callback(View, obj);
   return callback2(View, obj);
 };

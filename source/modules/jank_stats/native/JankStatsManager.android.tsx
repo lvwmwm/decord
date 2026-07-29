@@ -1,31 +1,97 @@
-// Module ID: 16200
-// Function ID: 125376
-// Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 653, 16201, 675, 5713, 5112, 2]
+// Module ID: 16235
+// Function ID: 16236
+// Name: handleAppStateUpdate
+// Dependencies: [676, 5134, 16236, 698, 5731, 2]
 
-// Module 16200 (_isNativeReflectConstruct)
-import enforcing from "enforcing";
-import expandLocation from "expandLocation";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
+// Module 16235 (handleAppStateUpdate)
 import ME from "ME";
-import tmp3 from "AutomaticLifecycleManager";
+import "initialize";
 
-let closure_8;
-let closure_9;
-const require = arg1;
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
+let c3;
+let c4;
+({ AppStates: c3, AnalyticEvents: c4 } = ME);
+class JankStatsManager extends tmp3 {
+  constructor() {
+    applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
+    closure_0 = applyArgumentsResult;
+    applyArgumentsResult._timeoutId = null;
+    applyArgumentsResult._isScheduledReportSent = false;
+    applyArgumentsResult._isStartup = true;
+    applyArgumentsResult.actions = {
+      APP_STATE_UPDATE(arg0) {
+            applyArgumentsResult.handleAppStateUpdate(arg0);
+          },
+      CONNECTION_OPEN_SUPPLEMENTAL() {
+            const result = applyArgumentsResult.handleConnectionOpenSupplemental();
+          }
+    };
+    return applyArgumentsResult;
   }
-  const result = _isNativeReflectConstruct();
 }
-({ AppStates: closure_8, AnalyticEvents: closure_9 } = ME);
-tmp3 = new tmp3();
-let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/jank_stats/native/JankStatsManager.android.tsx");
+const prototype = JankStatsManager.prototype;
+prototype["handleAppStateUpdate"] = function handleAppStateUpdate(state) {
+  const self = this;
+  state = state.state;
+  if (state === constants.ACTIVE) {
+    if (!self._isStartup) {
+      self.scheduleReport();
+    }
+  }
+  if (!tmp3) {
+    const _clearTimeout = clearTimeout;
+    clearTimeout(self._timeoutId);
+    self._timeoutId = null;
+    self.sendReport("background");
+  }
+};
+prototype["handleConnectionOpenSupplemental"] = function handleConnectionOpenSupplemental() {
+  const self = this;
+  const timerId = setTimeout(() => {
+    self.sendReport("startup");
+    self._isStartup = false;
+    self.scheduleReport();
+  }, 0);
+};
+prototype["scheduleReport"] = function scheduleReport() {
+  let self = this;
+  self = this;
+  if (null == this._timeoutId) {
+    self._isScheduledReportSent = false;
+    const _setTimeout = setTimeout;
+    self._timeoutId = setTimeout(() => {
+      self._timeoutId = null;
+      self.sendReport("timer");
+      self._isScheduledReportSent = true;
+      const obj = outer1_1(outer1_2[2]);
+      if (obj != null) {
+        obj.stopTracking();
+      }
+    }, 300000);
+  }
+};
+prototype["sendReport"] = function sendReport(background) {
+  let obj = importDefault(16236);
+  let report;
+  if (obj != null) {
+    report = obj.requestReport();
+  }
+  let tmp4 = null == report;
+  if (!tmp4) {
+    tmp4 = 0 === report.totalFrameCount && 0 === report.frameMetricsTotalFrameCount;
+    const tmp5 = 0 === report.totalFrameCount && 0 === report.frameMetricsTotalFrameCount;
+  }
+  if (!tmp4) {
+    obj = {};
+    const tmpResult = importDefault(698);
+    const merged = Object.assign(require(5731) /* getDeviceMetadata */.getDeviceMetadata());
+    obj.version = 2;
+    ({ totalFrameCount: obj3.total_frame_count, jankFrameCount: obj3.jank_frame_count, frameMetricsTotalFrameCount: obj3.frame_metrics_total_frame_count, frameMetricsJankFrameCount: obj3.frame_metrics_jank_frame_count } = report);
+    obj.trigger = background;
+    tmpResult.track(constants2.ANDROID_JANK_STATS, obj);
+    const obj4 = require(5731) /* getDeviceMetadata */;
+  }
+};
+const jankStatsManager = new JankStatsManager();
+let result = require("enforcing").fileFinishedImporting("modules/jank_stats/native/JankStatsManager.android.tsx");
 
-export default tmp3;
+export default jankStatsManager;

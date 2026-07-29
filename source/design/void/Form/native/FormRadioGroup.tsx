@@ -1,18 +1,18 @@
-// Module ID: 7634
-// Function ID: 60887
+// Module ID: 7657
+// Function ID: 7658
 // Name: FormRadioGroup
-// Dependencies: [31, 27, 33, 5197, 7632, 7624, 2]
+// Dependencies: [19, 17, 21, 5219, 7655, 7647, 2]
 // Exports: default
 
-// Module 7634 (FormRadioGroup)
-import result from "result";
+// Module 7657 (FormRadioGroup)
+import noop from "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
 
-let closure_5;
+let c5;
 let closure_6;
 const require = arg1;
-({ jsx: closure_5, jsxs: closure_6 } = jsxProd);
+({ jsx: c5, jsxs: closure_6 } = jsxProd);
 const result = require("jsxProd").fileFinishedImporting("design/void/Form/native/FormRadioGroup.tsx");
 
 export default function FormRadioGroup(arg0) {
@@ -24,35 +24,42 @@ export default function FormRadioGroup(arg0) {
   let title;
   let value;
   ({ title, children, hint } = arg0);
-  let obj = { title: 0, hasIcons: 0, accessibilityLabel: 0, children: 0, value: 0, hint: 0, icon: 0 };
   ({ hasIcons, accessibilityLabel, value, icon } = arg0);
-  Object.setPrototypeOf(null);
-  const merged = Object.assign(arg0, obj);
-  if (React.useContext(require(5197) /* context */.RedesignCompatContext)) {
-    obj = { style: { marginBottom: 24, marginHorizontal: 12 } };
-    obj = {};
-    const obj1 = { defaultValue: value, hasIcons, title, accessibilityLabel, children };
-    obj.children = callback(require(7632) /* context */.TableRadioGroup, obj1);
+  const merged = Object.assign(arg0, Object.create(null));
+  if (React.useContext(require(5219) /* context */.RedesignCompatContext)) {
+    let obj = { style: null, children: null };
+    obj[0] = { marginBottom: 24, marginHorizontal: 12 };
+    obj = { children: null };
+    const obj1 = { defaultValue: null, hasIcons: null, title: null, accessibilityLabel: null, children: null };
+    obj1[0] = value;
+    obj1[1] = hasIcons;
+    obj1[2] = title;
+    obj1[3] = accessibilityLabel;
+    obj1[4] = children;
+    obj[0] = callback(require(7655) /* context */.TableRadioGroup, obj1);
     const items = [callback(View, obj), ];
-    let tmp16 = null;
+    let tmp13Result = null;
     if (null != hint) {
-      const obj2 = {};
-      const obj3 = { marginTop: 8 };
-      obj2.style = obj3;
-      obj2.children = hint;
-      tmp16 = callback(View, obj2);
+      const obj2 = { style: null, children: null };
+      obj2[0] = { marginTop: 8 };
+      obj2[1] = hint;
+      tmp13Result = tmp13(tmp12, obj2);
     }
-    items[1] = tmp16;
-    obj.children = items;
-    let tmp11Result = closure_6(View, obj);
+    items[1] = tmp13Result;
+    obj[1] = items;
+    let tmp11Result = closure_6(tmp12, obj);
     const tmp11 = closure_6;
-    const tmp12 = View;
+    tmp13 = callback;
   } else {
-    const obj4 = { title, accessibilityRole: "radiogroup", accessibilityLabel: title, hint, icon };
+    obj = { title: null, accessibilityRole: "radiogroup", accessibilityLabel: null, hint: null, icon: null };
+    obj[0] = title;
+    obj[2] = title;
+    obj[3] = hint;
+    obj[4] = icon;
     const merged1 = Object.assign(merged);
-    obj4["children"] = children;
-    tmp11Result = callback(importDefault(7624), obj4);
-    const tmp6 = importDefault(7624);
+    obj.children = children;
+    tmp11Result = callback(importDefault(7647), obj);
+    const tmp6 = importDefault(7647);
   }
   return tmp11Result;
 };

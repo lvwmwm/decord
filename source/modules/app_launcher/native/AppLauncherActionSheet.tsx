@@ -1,12 +1,12 @@
-// Module ID: 15556
-// Function ID: 119464
+// Module ID: 15590
+// Function ID: 15591
 // Name: AppLauncherActionSheet
-// Dependencies: [57, 31, 1455, 33, 4026, 10900, 7992, 10901, 5221, 11231, 11346, 5479, 2]
+// Dependencies: [32, 19, 1479, 21, 4050, 10924, 8017, 10925, 5243, 11255, 11370, 5497, 2]
 // Exports: useAppLauncherActionSheet
 
-// Module 15556 (AppLauncherActionSheet)
+// Module 15590 (AppLauncherActionSheet)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
+import noop from "noop";
 import { AppLauncherRouteName } from "APP_LAUNCHER_BUILT_IN_SECTION_ICON";
 import { jsx } from "jsxProd";
 
@@ -15,7 +15,8 @@ function AppLauncherActionSheet(arg0) {
   let channel;
   let require;
   ({ chatInputRef: require, channel } = arg0);
-  const ref = React.useRef(null);
+  let ref;
+  ref = React.useRef(null);
   let obj = require(ref[4]);
   const sharedValue = obj.useSharedValue(-1);
   let obj1 = require(ref[4]);
@@ -29,42 +30,40 @@ function AppLauncherActionSheet(arg0) {
     getApplicationCommandManager() {
       const current = ref.current;
       let applicationCommandManager;
-      if (null != current) {
+      if (current != null) {
         applicationCommandManager = current.getApplicationCommandManager();
       }
       return applicationCommandManager;
     },
     closeCustomKeyboard() {
       const current = ref.current;
-      if (null != current) {
+      if (current != null) {
         current.closeActionSheet();
       }
     },
     openCustomKeyboard() {
       const current = ref.current;
-      if (null != current) {
+      if (current != null) {
         current.expandActionSheet();
       }
     }
   };
   const memo = React.useMemo(() => ({ channel, type: "channel" }), items);
   const ref2 = React.useRef(require(ref[5]).AppLauncherKeyboardCloseReason.DISMISSED);
-  obj = { ref, animatedIndex: sharedValue, scrollable: true, startExpanded: true };
-  obj1 = { bottomSheetIndex: sharedValue, bottomSheetPosition: sharedValue1, bottomSheetExpandReasonRef: ref1, context: memo, chatInputRef: React.useRef(obj), entrypoint: TEXT, keyboardCloseReasonRef: ref2, width: defaultAppLauncherWidth };
-  obj2 = { initialRouteName: AppLauncherRouteName.HOME };
+  obj = { ref, animatedIndex: sharedValue, scrollable: true, startExpanded: true, children: null };
+  obj1 = { bottomSheetIndex: sharedValue, bottomSheetPosition: sharedValue1, bottomSheetExpandReasonRef: ref1, context: memo, chatInputRef: React.useRef(obj), entrypoint: TEXT, keyboardCloseReasonRef: ref2, width: defaultAppLauncherWidth, overrideParams: null };
+  obj2 = { initialRouteName: AppLauncherRouteName.HOME, initialSearchQuery: null };
   const ref3 = React.useRef(obj);
-  const tmp10 = jsx;
-  const tmp9 = jsx;
-  const tmp11 = channel(ref[9]);
+  const tmp10 = channel(ref[9]);
   const appDMApplication = require(ref[10]).getAppDMApplication(channel);
   let name;
-  if (null != appDMApplication) {
+  if (appDMApplication != null) {
     name = appDMApplication.name;
   }
-  obj2.initialSearchQuery = name;
-  obj1.overrideParams = obj2;
-  obj.children = tmp10(tmp11, obj1);
-  return tmp9(require(ref[8]).BottomSheet, obj);
+  obj2[1] = name;
+  obj1[8] = obj2;
+  obj[4] = <tmp10 bottomSheetIndex={sharedValue} bottomSheetPosition={sharedValue1} bottomSheetExpandReasonRef={ref1} context={memo} chatInputRef={React.useRef(obj)} entrypoint={TEXT} keyboardCloseReasonRef={ref2} width={defaultAppLauncherWidth} overrideParams={null} />;
+  return jsx(require(ref[8]).BottomSheet, { ref, animatedIndex: sharedValue, scrollable: true, startExpanded: true, children: null });
 }
 const result = require("APP_LAUNCHER_BUILT_IN_SECTION_ICON").fileFinishedImporting("modules/app_launcher/native/AppLauncherActionSheet.tsx");
 
@@ -78,23 +77,21 @@ export const useAppLauncherActionSheet = function useAppLauncherActionSheet(arg0
     appLauncherActionSheet: React.useMemo(() => {
       let tmp = null;
       if (first) {
-        let obj = {};
-        obj = {
-          transitionState: "visible",
-          close() {
+        let obj = { value: null, children: null };
+        obj = { transitionState: "visible", close: null, onLeave: null, registerDismissHandler: null };
+        obj[1] = function close() {
 
-            },
-          onLeave() {
-              outer1_2(false);
-            },
-          registerDismissHandler(onDismiss) {
-
-            }
         };
-        obj.value = obj;
+        obj[2] = function onLeave() {
+          callback(false);
+        };
+        obj[3] = function registerDismissHandler(onDismiss) {
+
+        };
+        obj[0] = obj;
         obj = {};
         const merged = Object.assign(closure_0);
-        obj.children = outer1_6(outer1_7, obj);
+        obj[1] = outer1_6(outer1_7, obj);
         tmp = outer1_6(first(tmp3[11]).Provider, obj);
       }
       return tmp;

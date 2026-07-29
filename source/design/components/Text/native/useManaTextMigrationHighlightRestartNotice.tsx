@@ -1,24 +1,24 @@
-// Module ID: 14782
-// Function ID: 112543
+// Module ID: 14808
+// Function ID: 14809
 // Name: useManaTextMigrationHighlightRestartNotice
-// Dependencies: [31, 4164, 566, 4506, 2]
+// Dependencies: [19, 4188, 589, 4529, 2]
 // Exports: useManaTextMigrationHighlightRestartNotice
 
-// Module 14782 (useManaTextMigrationHighlightRestartNotice)
-import result from "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 14808 (useManaTextMigrationHighlightRestartNotice)
+import noop from "noop";
+import getUserAgnosticState from "getUserAgnosticState";
 
 const require = arg1;
 const result = require("initialize").fileFinishedImporting("design/components/Text/native/useManaTextMigrationHighlightRestartNotice.tsx");
 
 export const useManaTextMigrationHighlightRestartNotice = function useManaTextMigrationHighlightRestartNotice() {
-  const items = [_isNativeReflectConstruct];
-  const stateFromStores = _require(566).useStateFromStores(items, () => outer1_4.get("highlight_mana_text"));
+  const items = [getUserAgnosticState];
+  const stateFromStores = _require(589).useStateFromStores(items, () => getUserAgnosticState.get("highlight_mana_text"));
   _require = React.useRef(true);
   const items1 = [stateFromStores];
   const effect = React.useEffect(() => {
     if (ref.current) {
-      ref.current = false;
+      tmp.current = false;
     } else {
       outer1_1(outer1_2[3]).show({ title: "Mana Text Migration Highlighter", body: "Restart the app (force quit and reopen) to see the change." });
       const obj = outer1_1(outer1_2[3]);

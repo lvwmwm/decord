@@ -1,102 +1,192 @@
-// Module ID: 12191
-// Function ID: 95330
+// Module ID: 12215
+// Function ID: 12216
 // Name: AddFriendNicknameModal
-// Dependencies: [5, 57, 31, 27, 3802, 1850, 33, 4165, 689, 566, 1212, 4372, 8894, 5620, 4596, 4161, 6712, 4004, 2]
+// Dependencies: [5, 32, 19, 17, 3826, 1874, 21, 4189, 712, 589, 1236, 4395, 8918, 5638, 4618, 4185, 6733, 4028, 2]
 // Exports: default
 
-// Module 12191 (AddFriendNicknameModal)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 12215 (AddFriendNicknameModal)
+import mergeGuildAvatar from "mergeGuildAvatar";
 import _slicedToArray from "_slicedToArray";
-import result from "result";
-import { View } from "get ActivityIndicator";
-import closure_7 from "_isNativeReflectConstruct";
-import closure_8 from "_isNativeReflectConstruct";
+import noop from "noop";
+import { View } from "nameFromUser";
+import upsertRelationship from "upsertRelationship";
+import closure_8 from "mergeGuildAvatar";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_10;
-let closure_9;
+let c10;
+let c9;
 const require = arg1;
-({ jsx: closure_9, jsxs: closure_10 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { flex: 1, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SCRIM, justifyContent: "center", alignItems: "center" };
-_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.title = { textAlign: "center" };
-_createForOfIteratorHelperLoose.description = { marginTop: 8, marginBottom: 16, textAlign: "center", lineHeight: 18 };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-const result = require("result").fileFinishedImporting("modules/user_profile/native/AddFriendNicknameModal.tsx");
+({ jsx: c9, jsxs: c10 } = jsxProd);
+createCacheKey = { container: null, title: null, description: null };
+createCacheKey = { flex: 1, backgroundColor: require("Themes").colors.BACKGROUND_SCRIM, justifyContent: "center", alignItems: "center" };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { textAlign: "center" };
+createCacheKey[2] = { marginTop: 8, marginBottom: 16, textAlign: "center", lineHeight: 18 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+const result = require("noop").fileFinishedImporting("modules/user_profile/native/AddFriendNicknameModal.tsx");
 
 export default function AddFriendNicknameModal(arg0) {
+  let c2;
+  let c3;
   let require;
   let showUserProfile;
   ({ userId: require, showUserProfile } = arg0);
   let dependencyMap;
-  let _isNativeReflectConstruct;
+  c3 = undefined;
   let callback;
   let callback1;
   function _handleSubmit() {
-    // CreateGeneratorClosureLongIndex (0x67)
-    const obj = callback(tmp);
-    return obj(...arguments);
+    const self = this;
+    const tmp = _undefined2(function*() {
+      if (v0 === 2) {
+        v0 = 3;
+        HermesBuiltin.throwTypeError();
+      } else if (tmp6 === 3) {
+        if (arg0 === 1) {
+          throw arg1;
+        } else if (arg0 === 2) {
+          let obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
+        } else {
+          return { value: "HermesInternal", done: null };
+        }
+      } else {
+        try {
+          v0 = 2;
+          if (0 === table) {
+            if (arg0 === 1) {
+              v0 = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              v0 = 3;
+              obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            } else {
+              let closure_1 = tmp3;
+              if (table) {
+                v0 = 3;
+              } else {
+                outer1_3(true);
+                let ref = 1;
+                let obj1 = outer1_1(table[12]);
+                const current = ref.current;
+                let c0 = current;
+                if (current == null) {
+                  c0 = "";
+                }
+                table = 2;
+                v0 = 1;
+                obj1 = { value: null, done: false };
+                obj1[0] = obj1.updateRelationship(outer1_0, c0);
+                return obj1;
+              }
+            }
+          } else if (1 === tmp7) {
+            ref = 0;
+            callback(false);
+            throw callback;
+          } else if (arg0 === 1) {
+            v0 = 3;
+            throw arg1;
+          } else if (arg0 !== 2) {
+            v0();
+            ref = 0;
+            callback(false);
+          }
+          ref = 0;
+          callback(false);
+          v0 = 3;
+          obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
+        } catch (tmp29) {
+          callback = tmp29;
+          if (tmp4 === ref) {
+            v0 = tmp2;
+            throw tmp29;
+          } else {
+            table = tmp;
+          }
+        }
+      }
+    });
+    const _handleSubmit = tmp;
+    const apply = tmp.apply;
+    if (typeof apply === "unknown") {
+      let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+    } else {
+      applyArgumentsResult = apply(self, arguments);
+    }
+    return applyArgumentsResult;
   }
-  const tmp = _createForOfIteratorHelperLoose();
-  const tmp3 = callback(callback1.useState(false), 2);
-  dependencyMap = tmp3[0];
-  _isNativeReflectConstruct = tmp3[1];
-  let obj = require(566) /* initialize */;
-  const items = [closure_7];
-  const stateFromStores = obj.useStateFromStores(items, () => outer1_7.getNickname(closure_0));
-  let tmp5 = null;
-  if (null != stateFromStores) {
-    tmp5 = stateFromStores;
+  let tmp = createCacheKey();
+  let obj = callback1;
+  [c2, c3] = callback(callback1.useState(false), 2);
+  let obj1 = require(589) /* initialize */;
+  const items = [upsertRelationship];
+  const stateFromStores = obj1.useStateFromStores(items, () => outer1_7.getNickname(closure_0));
+  let tmp6 = stateFromStores;
+  if (stateFromStores == null) {
+    tmp6 = null;
   }
-  callback = callback1.useRef(tmp5);
-  callback = callback1.useCallback((current) => {
+  callback = callback1.useRef(tmp6);
+  callback = obj.useCallback((current) => {
     _slicedToArray.current = current;
   }, []);
-  let obj1 = require(566) /* initialize */;
+  const tmp2 = callback(callback1.useState(false), 2);
   const items1 = [closure_8];
-  const stateFromStores1 = obj1.useStateFromStores(items1, () => outer1_8.getUser(closure_0));
+  const stateFromStores1 = require(589) /* initialize */.useStateFromStores(items1, () => outer1_8.getUser(closure_0));
   if (null == stateFromStores) {
-    const intl2 = require(1212) /* getSystemLocale */.intl;
-    let stringResult = intl2.string(require(1212) /* getSystemLocale */.t.BGYkaH);
+    const intl2 = tmp3(1236).intl;
+    let stringResult = intl2.string(tmp3(1236).t.BGYkaH);
   } else {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    stringResult = intl.string(require(1212) /* getSystemLocale */.t["8pOYUE"]);
+    const intl = tmp3(1236).intl;
+    stringResult = intl.string(tmp3(1236).t["8pOYUE"]);
   }
   const items2 = [showUserProfile];
-  callback1 = callback1.useCallback(() => {
-    let arr = showUserProfile(table[11]);
+  callback1 = obj.useCallback(() => {
+    let arr = showUserProfile(_undefined[11]);
     arr = arr.pop();
-    if (null != showUserProfile) {
+    if (showUserProfile != null) {
       showUserProfile();
     }
   }, items2);
-  obj = { style: tmp.container };
-  obj = {};
-  obj1 = {};
-  const tmp14 = showUserProfile(5620);
-  const intl3 = require(1212) /* getSystemLocale */.intl;
-  obj1.confirmText = intl3.string(require(1212) /* getSystemLocale */.t["R3BPH+"]);
-  obj1.onConfirm = function handleSubmit() {
-    return _handleSubmit(...arguments);
+  obj = { style: tmp.container, children: null };
+  obj = { children: null };
+  const tmp3Result = require(589) /* initialize */;
+  obj1 = { confirmText: null, onConfirm: null, cancelText: null, onCancel: null, children: null };
+  const tmp11 = showUserProfile(5638);
+  const intl3 = tmp3(1236).intl;
+  obj1[0] = intl3.string(require(1236) /* getSystemLocale */.t["R3BPH+"]);
+  obj1[1] = function handleSubmit() {
+    const self = this;
+    const apply = _handleSubmit.apply;
+    if (typeof apply === "unknown") {
+      let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+    } else {
+      applyArgumentsResult = apply(self, arguments);
+    }
+    return applyArgumentsResult;
   };
-  const intl4 = require(1212) /* getSystemLocale */.intl;
-  obj1.cancelText = intl4.string(require(1212) /* getSystemLocale */.t["ETE/oC"]);
-  obj1.onCancel = callback1;
-  const obj2 = { style: tmp.title, accessibilityRole: "header", variant: "heading-lg/extrabold", color: "mobile-text-heading-primary", children: stringResult };
-  const items3 = [callback2(require(4161) /* Text */.Text, obj2), , ];
-  const obj3 = { style: tmp.description, variant: "text-sm/medium", color: "text-default" };
-  const intl5 = require(1212) /* getSystemLocale */.intl;
-  obj3.children = intl5.string(require(1212) /* getSystemLocale */.t["NdQ+lP"]);
-  items3[1] = callback2(require(4161) /* Text */.Text, obj3);
+  const intl4 = tmp3(1236).intl;
+  obj1[2] = intl4.string(require(1236) /* getSystemLocale */.t["ETE/oC"]);
+  obj1[3] = callback1;
+  const items3 = [callback2(require(4185) /* Text */.Text, { style: tmp.title, accessibilityRole: "header", variant: "heading-lg/extrabold", color: "mobile-text-heading-primary", children: stringResult }), , ];
+  const obj3 = { style: tmp.description, variant: "text-sm/medium", color: "text-default", children: null };
+  const intl5 = tmp3(1236).intl;
+  obj3[3] = intl5.string(require(1236) /* getSystemLocale */.t["NdQ+lP"]);
+  items3[1] = callback2(require(4185) /* Text */.Text, obj3);
   const obj4 = { onChange: callback, autoFocus: true, placeholder: null, defaultValue: null, maxLength: 32, isClearable: true };
-  const tmp15 = showUserProfile(4596);
-  obj4.placeholder = showUserProfile(4004).getName(stateFromStores1);
-  obj4.defaultValue = stateFromStores;
-  items3[2] = callback2(require(6712) /* TextField */.TextField, obj4);
-  obj1.children = items3;
-  obj.children = callback3(tmp15, obj1);
-  obj.children = callback2(tmp14, obj);
+  const obj2 = { style: tmp.title, accessibilityRole: "header", variant: "heading-lg/extrabold", color: "mobile-text-heading-primary", children: stringResult };
+  const tmp12 = showUserProfile(4618);
+  obj4[2] = showUserProfile(4028).getName(stateFromStores1);
+  obj4[3] = stateFromStores;
+  items3[2] = callback2(require(6733) /* TextField */.TextField, obj4);
+  obj1[4] = items3;
+  obj[0] = callback3(tmp12, obj1);
+  obj[1] = callback2(tmp11, obj);
   return callback2(_handleSubmit, obj);
 };

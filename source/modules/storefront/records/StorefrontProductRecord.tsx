@@ -1,72 +1,81 @@
-// Module ID: 5801
-// Function ID: 50818
-// Name: StorefrontProductRecord
-// Dependencies: [6, 7, 5800, 4204, 2]
+// Module ID: 5819
+// Function ID: 5820
+// Name: fromServer
+// Dependencies: [5818, 4228, 2]
 
-// Module 5801 (StorefrontProductRecord)
-import _classCallCheck from "_classCallCheck";
-import _defineProperties from "_defineProperties";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_3 from "_isNativeReflectConstruct";
+// Module 5819 (fromServer)
+import fromServer from "fromServer";
+import createFromServer from "createFromServer";
 
-let tmp2 = (() => {
-  class StorefrontProductRecord {
-    constructor(arg0) {
-      tmp = StorefrontProductRecord(this, StorefrontProductRecord);
-      ({ id: this.id, skuIds: this.skuIds, name: this.name, summary: this.summary, options: this.options, createdAt: this.createdAt, updatedAt: this.updatedAt, skus: this.skus, primaryCollectionId: this.primaryCollectionId, primaryCollectionStyles: this.primaryCollectionStyles, primaryCollectionPdpBgUrl: this.primaryCollectionPdpBgUrl, primaryCollectionWillUnpublishAt: this.primaryCollectionWillUnpublishAt, gameApplicationId: this.gameApplicationId } = arg0);
-      return;
+let prototype;
+prototype = function StorefrontProductRecord(arg0) {
+  ({ id: tmp.id, skuIds: tmp.skuIds, name: tmp.name, summary: tmp.summary, options: tmp.options, createdAt: tmp.createdAt, updatedAt: tmp.updatedAt, skus: tmp.skus, primaryCollectionId: tmp.primaryCollectionId, primaryCollectionStyles: tmp.primaryCollectionStyles, primaryCollectionPdpBgUrl: tmp.primaryCollectionPdpBgUrl, primaryCollectionWillUnpublishAt: tmp.primaryCollectionWillUnpublishAt, gameApplicationId: tmp.gameApplicationId } = arg0);
+  return Object.create(new.target.prototype);
+}.prototype;
+prototype["fromServer"] = function fromServer(sku_ids) {
+  let created_at;
+  let options;
+  let skus;
+  let tenant_metadata;
+  let updated_at;
+  ({ options, created_at, updated_at, skus, tenant_metadata } = sku_ids);
+  let obj = {};
+  const merged = Object.assign(Object.assign(sku_ids, Object.create(null)));
+  obj.skuIds = sku_ids.sku_ids;
+  obj.options = options.map((name) => ({ name: name.name, optionValues: name.option_values }));
+  obj.createdAt = new Date(created_at);
+  const date = new Date(created_at);
+  obj.updatedAt = new Date(updated_at);
+  obj.skus = skus.map((arg0) => createFromServer.createFromServer(arg0));
+  const collectibles = tenant_metadata.collectibles;
+  let prop;
+  if (collectibles != null) {
+    prop = collectibles.primary_collection_id;
+  }
+  obj.primaryCollectionId = prop;
+  const collectibles2 = tenant_metadata.collectibles;
+  let prop1;
+  if (collectibles2 != null) {
+    prop1 = collectibles2.primary_collection_styles;
+  }
+  let fromServerResult;
+  if (null != prop1) {
+    fromServerResult = fromServer.fromServer(tenant_metadata.collectibles.primary_collection_styles);
+  }
+  obj.primaryCollectionStyles = fromServerResult;
+  const collectibles3 = tenant_metadata.collectibles;
+  let prop2;
+  if (collectibles3 != null) {
+    prop2 = collectibles3.primary_collection_pdp_bg_url;
+  }
+  obj.primaryCollectionPdpBgUrl = prop2;
+  const collectibles4 = tenant_metadata.collectibles;
+  let prop3;
+  if (collectibles4 != null) {
+    prop3 = collectibles4.primary_collection_will_unpublish_at;
+  }
+  let date2;
+  if (null != prop3) {
+    const _Date = Date;
+    date2 = new Date(tenant_metadata.collectibles.primary_collection_will_unpublish_at);
+  }
+  obj.primaryCollectionWillUnpublishAt = date2;
+  const guild_monetization = tenant_metadata.guild_monetization;
+  let game_application_id;
+  if (guild_monetization != null) {
+    const game_server = guild_monetization.game_server;
+    if (game_server != null) {
+      game_application_id = game_server.game_application_id;
     }
   }
-  const items = [
-    {
-      key: "fromServer",
-      value(sku_ids) {
-        let created_at;
-        let options;
-        let skus;
-        let tenant_metadata;
-        let updated_at;
-        ({ options, created_at, updated_at, skus, tenant_metadata } = sku_ids);
-        let obj = { sku_ids: 0, options: 0, created_at: 0, updated_at: 0, skus: 0, tenant_metadata: 0 };
-        Object.setPrototypeOf(null);
-        let tmp2 = StorefrontProductRecord;
-        obj = {};
-        const merged = Object.assign(Object.assign(sku_ids, obj));
-        obj["skuIds"] = sku_ids.sku_ids;
-        obj["options"] = options.map((name) => ({ name: name.name, optionValues: name.option_values }));
-        obj["createdAt"] = new Date(created_at);
-        const date = new Date(created_at);
-        obj["updatedAt"] = new Date(updated_at);
-        obj["skus"] = skus.map((arg0) => outer2_3.createFromServer(arg0));
-        obj["primaryCollectionId"] = tenant_metadata.collectibles.primary_collection_id;
-        let fromServerResult;
-        if (null != tenant_metadata.collectibles.primary_collection_styles) {
-          fromServerResult = outer1_2.fromServer(tenant_metadata.collectibles.primary_collection_styles);
-        }
-        obj["primaryCollectionStyles"] = fromServerResult;
-        obj["primaryCollectionPdpBgUrl"] = tenant_metadata.collectibles.primary_collection_pdp_bg_url;
-        let date2;
-        if (null != tenant_metadata.collectibles.primary_collection_will_unpublish_at) {
-          const _Date = Date;
-          date2 = new Date(tenant_metadata.collectibles.primary_collection_will_unpublish_at);
-        }
-        obj["primaryCollectionWillUnpublishAt"] = date2;
-        const guild_monetization = tenant_metadata.guild_monetization;
-        let game_application_id;
-        if (null != guild_monetization) {
-          const game_server = guild_monetization.game_server;
-          if (null != game_server) {
-            game_application_id = game_server.game_application_id;
-          }
-        }
-        obj["gameApplicationId"] = game_application_id;
-        tmp2 = new tmp2(obj);
-        return tmp2;
-      }
-    }
-  ];
-  return callback(StorefrontProductRecord, null, items);
-})();
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/storefront/records/StorefrontProductRecord.tsx");
+  obj.gameApplicationId = game_application_id;
+  if (typeof prototype !== "find") {
+    HermesBuiltin.throwTypeError();
+  }
+  obj = Object.create(tmp.prototype);
+  ({ id: tmp15.id, skuIds: tmp15.skuIds, name: tmp15.name, summary: tmp15.summary, options: tmp15.options, createdAt: tmp15.createdAt, updatedAt: tmp15.updatedAt, skus: tmp15.skus, primaryCollectionId: tmp15.primaryCollectionId, primaryCollectionStyles: tmp15.primaryCollectionStyles, primaryCollectionPdpBgUrl: tmp15.primaryCollectionPdpBgUrl, primaryCollectionWillUnpublishAt: tmp15.primaryCollectionWillUnpublishAt, gameApplicationId: tmp15.gameApplicationId } = obj);
+  return obj;
+};
+const result = require("set").fileFinishedImporting("modules/storefront/records/StorefrontProductRecord.tsx");
 
-export default tmp2;
+export default prototype;

@@ -1,23 +1,18 @@
-// Module ID: 8894
-// Function ID: 70230
-// Name: showAlert
-// Dependencies: [57, 1850, 653, 8895, 5166, 4505, 5085, 1212, 8896, 8897, 8898, 507, 4004, 4011, 686, 8899, 6700, 2]
+// Module ID: 8918
+// Function ID: 8919
+// Name: handleRelationshipAddError
+// Dependencies: [32, 1874, 676, 8919, 5188, 4528, 5107, 1236, 8920, 8921, 8922, 530, 4028, 4035, 709, 8923, 6721, 2]
 
-// Module 8894 (showAlert)
+// Module 8918 (handleRelationshipAddError)
 import _slicedToArray from "_slicedToArray";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import mergeGuildAvatar from "mergeGuildAvatar";
 import ME from "ME";
 import { ClearFriendRequestFilters } from "ClearFriendRequestFilters";
 
 let closure_6;
-let closure_7;
-let closure_8;
+let error;
+let metroImportAll;
 const require = arg1;
-function showAlert(merged, arg1, arg2) {
-  require(5166) /* open */.closeContextMenu();
-  const obj = require(5166) /* open */;
-  importDefault(4505).show(merged);
-}
 function handleRelationshipAddError(arg0, arg1, substr) {
   let body;
   let status;
@@ -28,65 +23,74 @@ function handleRelationshipAddError(arg0, arg1, substr) {
   }
   if (429 === status) {
     if (arg1 === obj.SHOW_ALWAYS) {
-      obj = {};
-      const intl7 = require(1212) /* getSystemLocale */.intl;
-      obj.title = intl7.string(require(1212) /* getSystemLocale */.t["3D5eox"]);
-      const intl8 = require(1212) /* getSystemLocale */.intl;
-      obj.body = intl8.string(require(1212) /* getSystemLocale */.t.TuJriJ);
-      const intl9 = require(1212) /* getSystemLocale */.intl;
-      obj.confirmText = intl9.string(require(1212) /* getSystemLocale */.t.DppXIx);
-      showAlert(obj);
+      obj = { title: null, body: null, confirmText: null };
+      const intl7 = require(1236) /* getSystemLocale */.intl;
+      obj[0] = intl7.string(require(1236) /* getSystemLocale */.t["3D5eox"]);
+      const intl8 = require(1236) /* getSystemLocale */.intl;
+      obj[1] = intl8.string(require(1236) /* getSystemLocale */.t.TuJriJ);
+      const intl9 = require(1236) /* getSystemLocale */.intl;
+      obj[2] = intl9.string(require(1236) /* getSystemLocale */.t.DppXIx);
+      require(5188) /* openContextMenu */.closeContextMenu();
+      const obj11 = require(5188) /* openContextMenu */;
+      importDefault(4528).show(obj);
+      const obj12 = importDefault(4528);
     }
   } else {
     if (403 === status) {
       if (num === constants.EMAIL_VERIFICATION_REQUIRED) {
-        obj = {};
-        const intl4 = require(1212) /* getSystemLocale */.intl;
-        obj.title = intl4.string(require(1212) /* getSystemLocale */.t.Gqf33E);
-        const intl5 = require(1212) /* getSystemLocale */.intl;
-        obj.body = intl5.string(require(1212) /* getSystemLocale */.t.GHOBdx);
-        const intl6 = require(1212) /* getSystemLocale */.intl;
-        obj.confirmText = intl6.string(require(1212) /* getSystemLocale */.t.HbTSE6);
-        obj.onConfirm = function onConfirm() {
-          const result = outer1_2(outer1_3[8]).openClaimAccountModal();
+        obj = { title: null, body: null, confirmText: null, onConfirm: null };
+        const intl4 = require(1236) /* getSystemLocale */.intl;
+        obj[0] = intl4.string(require(1236) /* getSystemLocale */.t.Gqf33E);
+        const intl5 = require(1236) /* getSystemLocale */.intl;
+        obj[1] = intl5.string(require(1236) /* getSystemLocale */.t.GHOBdx);
+        const intl6 = require(1236) /* getSystemLocale */.intl;
+        obj[2] = intl6.string(require(1236) /* getSystemLocale */.t.HbTSE6);
+        obj[3] = function onConfirm() {
+          const result = callback(table[8]).openClaimAccountModal();
         };
-        showAlert(obj);
+        require(5188) /* openContextMenu */.closeContextMenu();
+        const obj7 = require(5188) /* openContextMenu */;
+        importDefault(4528).show(obj);
+        const obj8 = importDefault(4528);
       }
     }
     if (num === constants.USER_QUARANTINED) {
-      require(5166) /* open */.closeContextMenu();
-      importDefault(5085)();
-      const obj3 = require(5166) /* open */;
+      require(5188) /* openContextMenu */.closeContextMenu();
+      importDefault(5107)();
+      const obj5 = require(5188) /* openContextMenu */;
     } else {
-      if (!obj5.isLimitedAccessErrorCode(status, num)) {
-        if (num !== constants.RELATIONSHIP_INVALID_NO_CONFIRMATION) {
+      if (!obj9.isLimitedAccessErrorCode(status, num)) {
+        if (num !== tmp2.RELATIONSHIP_INVALID_NO_CONFIRMATION) {
           if (arg1 === obj.SHOW_ALWAYS) {
             if (null != substr) {
-              obj = require(8898) /* validateDiscordTag */;
+              let tmp18Result = tmp18(8922);
               if (!num) {
                 num = 0;
               }
-              let humanizeAbortCodeResult = obj.humanizeAbortCode(num, substr);
+              let humanizeAbortCodeResult = tmp18Result.humanizeAbortCode(num, substr);
             } else {
-              const intl = require(1212) /* getSystemLocale */.intl;
-              humanizeAbortCodeResult = intl.string(require(1212) /* getSystemLocale */.t.paDJBM);
+              const intl = tmp18(1236).intl;
+              humanizeAbortCodeResult = intl.string(tmp18(1236).t.paDJBM);
             }
-            const obj1 = {};
-            const intl2 = require(1212) /* getSystemLocale */.intl;
-            obj1.title = intl2.string(require(1212) /* getSystemLocale */.t["6moJ8s"]);
-            obj1.body = humanizeAbortCodeResult;
-            const intl3 = require(1212) /* getSystemLocale */.intl;
-            obj1.confirmText = intl3.string(require(1212) /* getSystemLocale */.t.BddRzS);
-            showAlert(obj1);
+            const obj1 = { title: null, body: null, confirmText: null };
+            const intl2 = tmp18(1236).intl;
+            obj1[0] = intl2.string(tmp18(1236).t["6moJ8s"]);
+            obj1[1] = humanizeAbortCodeResult;
+            const intl3 = tmp18(1236).intl;
+            obj1[2] = intl3.string(tmp18(1236).t.BddRzS);
+            tmp18Result = tmp18(5188);
+            tmp18Result.closeContextMenu();
+            importDefault(4528).show(obj1);
+            const obj4 = importDefault(4528);
           }
         }
       }
-      obj5 = require(8897) /* isLimitedAccessErrorCode */;
+      obj9 = require(8921) /* isLimitedAccessErrorCode */;
     }
   }
   throw arg0;
 }
-({ Endpoints: closure_6, AbortCodes: closure_7, RelationshipTypes: closure_8 } = ME);
+({ Endpoints: closure_6, AbortCodes: error, RelationshipTypes: metroImportAll } = ME);
 let obj = { SHOW_ALWAYS: 0, [0]: "SHOW_ALWAYS", SHOW_ONLY_IF_ACTION_NEEDED: 1, [1]: "SHOW_ONLY_IF_ACTION_NEEDED" };
 obj = {
   sendRequest(discordTag) {
@@ -103,18 +107,17 @@ obj = {
       errorUxConfig = obj.SHOW_ALWAYS;
     }
     [tmp3, tmp4] = callback(str.split("#"), 2);
-    const HTTP = str(507).HTTP;
-    obj = { url: closure_6.USER_RELATIONSHIPS() };
+    const HTTP = str(530).HTTP;
+    obj = { url: closure_6.USER_RELATIONSHIPS(), body: null, context: null, oldFormErrors: true, rejectWithError: null };
     obj = { username: tmp3, discriminator: parseInt(tmp4), note };
     const merged = Object.assign(captchaPayload);
-    obj.body = obj;
-    obj.context = context;
-    obj.oldFormErrors = true;
+    obj[1] = obj;
+    obj[2] = context;
     const tmp2 = callback(str.split("#"), 2);
-    obj.rejectWithError = str(507).rejectWithMigratedError();
-    const obj3 = str(507);
+    obj[4] = str(530).rejectWithMigratedError();
+    const obj3 = str(530);
     return HTTP.post(obj).catch((arg0) => {
-      outer1_13(arg0, errorUxConfig, str);
+      outer1_11(arg0, errorUxConfig, str);
     });
   },
   addRelationship(arg0, arg1) {
@@ -124,166 +127,168 @@ obj = {
     let fromFriendSuggestion;
     let type;
     let userId;
-    let SHOW_ALWAYS = arg2;
     ({ userId, captchaPayload } = arg0);
     const _require = arg1;
+    let SHOW_ALWAYS = arg2;
     ({ context, type, fromFriendSuggestion, confirmStrangerRequest } = arg0);
     if (arg2 === undefined) {
       SHOW_ALWAYS = obj.SHOW_ALWAYS;
     }
     let user2;
     user2 = user.getUser(userId);
-    const HTTP = _require(507).HTTP;
-    obj = { url: closure_6.USER_RELATIONSHIP(userId) };
+    const HTTP = _require(530).HTTP;
+    obj = { url: closure_6.USER_RELATIONSHIP(userId), body: null, context: null, oldFormErrors: true, rejectWithError: null };
     obj = { type, from_friend_suggestion: fromFriendSuggestion, confirm_stranger_request: confirmStrangerRequest };
     const merged = Object.assign(captchaPayload);
-    obj.body = obj;
-    obj.context = context;
-    obj.oldFormErrors = true;
-    obj.rejectWithError = _require(507).rejectWithMigratedError();
-    const obj3 = _require(507);
+    obj[1] = obj;
+    obj[2] = context;
+    obj[4] = _require(530).rejectWithMigratedError();
+    const obj3 = _require(530);
     const putResult = HTTP.put(obj);
     return HTTP.put(obj).then(() => {
-      if (null != callback) {
-        callback();
+      if (closure_0 != null) {
+        tmp();
       }
     }).catch((arg0) => {
-      outer1_13(arg0, SHOW_ALWAYS, SHOW_ALWAYS(outer1_3[12]).getUserTag(closure_2));
-      return Promise.reject(arg0);
+      outer1_11(arg0, SHOW_ALWAYS, SHOW_ALWAYS(outer1_3[12]).getUserTag(closure_2));
     });
   },
   acceptFriendRequest(arg0) {
     return obj.addRelationship(arg0, () => {
-      const AccessibilityAnnouncer = outer1_0(outer1_3[13]).AccessibilityAnnouncer;
-      const intl = outer1_0(outer1_3[7]).intl;
-      AccessibilityAnnouncer.announce(intl.string(outer1_0(outer1_3[7]).t["3goNa5"]));
+      const AccessibilityAnnouncer = callback(4035).AccessibilityAnnouncer;
+      const intl = callback(1236).intl;
+      AccessibilityAnnouncer.announce(intl.string(callback(1236).t["3goNa5"]));
     });
   },
   cancelFriendRequest(arg0, arg1) {
     return obj.removeRelationship(arg0, arg1, () => {
-      const AccessibilityAnnouncer = outer1_0(outer1_3[13]).AccessibilityAnnouncer;
-      const intl = outer1_0(outer1_3[7]).intl;
-      AccessibilityAnnouncer.announce(intl.string(outer1_0(outer1_3[7]).t.pLUaxR));
+      const AccessibilityAnnouncer = callback(4035).AccessibilityAnnouncer;
+      const intl = callback(1236).intl;
+      AccessibilityAnnouncer.announce(intl.string(callback(1236).t.pLUaxR));
     });
   },
   removeFriend(arg0, arg1) {
     obj.removeRelationship(arg0, arg1, () => {
-      const AccessibilityAnnouncer = outer1_0(outer1_3[13]).AccessibilityAnnouncer;
-      const intl = outer1_0(outer1_3[7]).intl;
-      AccessibilityAnnouncer.announce(intl.string(outer1_0(outer1_3[7]).t.vGSLa2));
+      const AccessibilityAnnouncer = callback(4035).AccessibilityAnnouncer;
+      const intl = callback(1236).intl;
+      AccessibilityAnnouncer.announce(intl.string(callback(1236).t.vGSLa2));
     });
   },
   blockUser(userId, context) {
     const obj = { userId, context, type: constants2.BLOCKED };
     return obj.addRelationship(obj, () => {
-      const AccessibilityAnnouncer = outer1_0(outer1_3[13]).AccessibilityAnnouncer;
-      const intl = outer1_0(outer1_3[7]).intl;
-      AccessibilityAnnouncer.announce(intl.string(outer1_0(outer1_3[7]).t.mU0Vrp));
+      const AccessibilityAnnouncer = callback(4035).AccessibilityAnnouncer;
+      const intl = callback(1236).intl;
+      AccessibilityAnnouncer.announce(intl.string(callback(1236).t.mU0Vrp));
     });
   },
   unblockUser(id, arg1) {
     return obj.removeRelationship(id, arg1, () => {
-      const AccessibilityAnnouncer = outer1_0(outer1_3[13]).AccessibilityAnnouncer;
-      const intl = outer1_0(outer1_3[7]).intl;
-      AccessibilityAnnouncer.announce(intl.string(outer1_0(outer1_3[7]).t["9t1au7"]));
+      const AccessibilityAnnouncer = callback(4035).AccessibilityAnnouncer;
+      const intl = callback(1236).intl;
+      AccessibilityAnnouncer.announce(intl.string(callback(1236).t["9t1au7"]));
     });
   },
   removeRelationship(userId, context) {
     const _require = arg2;
-    const HTTP = _require(507).HTTP;
-    const obj = { url: closure_6.USER_RELATIONSHIP(userId), context, oldFormErrors: true, rejectWithError: _require(507).rejectWithMigratedError() };
-    const obj2 = _require(507);
+    const HTTP = _require(530).HTTP;
+    const obj = { url: closure_6.USER_RELATIONSHIP(userId), context, oldFormErrors: true, rejectWithError: null };
+    obj[3] = _require(530).rejectWithMigratedError();
+    const obj2 = _require(530);
     const delResult = HTTP.del(obj);
     return HTTP.del(obj).then(() => {
-      if (null != callback) {
-        callback();
+      if (closure_0 != null) {
+        tmp();
       }
     }).catch(() => {
-      const AccessibilityAnnouncer = callback(outer1_3[13]).AccessibilityAnnouncer;
-      const intl = callback(outer1_3[7]).intl;
-      AccessibilityAnnouncer.announce(intl.string(callback(outer1_3[7]).t.n6Jo3E));
+      const AccessibilityAnnouncer = callback(4035).AccessibilityAnnouncer;
+      const intl = callback(1236).intl;
+      AccessibilityAnnouncer.announce(intl.string(callback(1236).t.n6Jo3E));
     });
   },
-  updateRelationship(userId, nickname) {
-    const HTTP = require(507) /* _isNativeReflectConstruct */.HTTP;
-    obj = { url: closure_6.USER_RELATIONSHIP(userId), body: obj };
-    obj = { nickname, rejectWithError: require(507) /* _isNativeReflectConstruct */.rejectWithMigratedError() };
+  updateRelationship(userId, c0) {
+    const HTTP = require(530) /* sendRequest */.HTTP;
+    obj = { url: closure_6.USER_RELATIONSHIP(userId), body: obj, rejectWithError: null };
+    obj = { nickname: c0 };
+    obj[2] = require(530) /* sendRequest */.rejectWithMigratedError();
     return HTTP.patch(obj);
   },
   fetchRelationships() {
-    const HTTP = require(507) /* _isNativeReflectConstruct */.HTTP;
-    let obj = { url: closure_6.USER_RELATIONSHIPS(), oldFormErrors: true, rejectWithError: true };
-    const value = HTTP.get(obj);
+    const HTTP = require(530) /* sendRequest */.HTTP;
+    const value = HTTP.get({ url: closure_6.USER_RELATIONSHIPS(), oldFormErrors: true, rejectWithError: true });
     value.then((body) => {
-      let obj = outer1_1(outer1_3[14]);
+      let obj = callback(709);
       obj = { type: "LOAD_RELATIONSHIPS_SUCCESS", relationships: body.body };
       return obj.dispatch(obj);
-    }, () => outer1_1(outer1_3[14]).dispatch({ type: "LOAD_RELATIONSHIPS_FAILURE" }));
+    }, () => callback(709).dispatch({ type: "LOAD_RELATIONSHIPS_FAILURE" }));
   },
   confirmClearPendingRelationships(arg0) {
-    importDefault(8899)(arg0);
+    importDefault(8923)(arg0);
   },
   clearPendingRelationships() {
-    const HTTP = require(507) /* _isNativeReflectConstruct */.HTTP;
-    obj = { url: closure_6.USER_RELATIONSHIPS(), query: obj };
-    obj = { relationship_type: constants2.PENDING_INCOMING, rejectWithError: require(507) /* _isNativeReflectConstruct */.rejectWithMigratedError() };
-    const obj3 = require(507) /* _isNativeReflectConstruct */;
+    const HTTP = require(530) /* sendRequest */.HTTP;
+    obj = { url: closure_6.USER_RELATIONSHIPS(), query: obj, rejectWithError: null };
+    obj = { relationship_type: constants2.PENDING_INCOMING };
+    obj[2] = require(530) /* sendRequest */.rejectWithMigratedError();
+    const obj3 = require(530) /* sendRequest */;
     const delResult = HTTP.del(obj);
     return HTTP.del(obj).then(() => {
-      outer1_1(outer1_3[14]).dispatch({ type: "RELATIONSHIP_PENDING_INCOMING_REMOVED" });
+      callback2(709).dispatch({ type: "RELATIONSHIP_PENDING_INCOMING_REMOVED" });
     }).catch(() => {
-      const AccessibilityAnnouncer = outer1_0(outer1_3[13]).AccessibilityAnnouncer;
-      const intl = outer1_0(outer1_3[7]).intl;
-      AccessibilityAnnouncer.announce(intl.string(outer1_0(outer1_3[7]).t.n6Jo3E));
+      const AccessibilityAnnouncer = callback(4035).AccessibilityAnnouncer;
+      const intl = callback(1236).intl;
+      AccessibilityAnnouncer.announce(intl.string(callback(1236).t.n6Jo3E));
     });
   },
   clearPendingSpamAndIgnored() {
-    const HTTP = require(507) /* _isNativeReflectConstruct */.HTTP;
-    obj = { url: closure_6.USER_RELATIONSHIPS(), query: obj, body: { filters: items } };
+    const HTTP = require(530) /* sendRequest */.HTTP;
+    obj = { url: closure_6.USER_RELATIONSHIPS(), query: obj, body: { filters: items }, rejectWithError: null };
     obj = { relationship_type: constants2.PENDING_INCOMING };
     items = [, ];
     ({ SPAM: arr[0], IGNORED: arr[1] } = ClearFriendRequestFilters);
-    obj.rejectWithError = require(507) /* _isNativeReflectConstruct */.rejectWithMigratedError();
-    const obj3 = require(507) /* _isNativeReflectConstruct */;
+    obj[3] = require(530) /* sendRequest */.rejectWithMigratedError();
+    const obj3 = require(530) /* sendRequest */;
     const delResult = HTTP.del(obj);
     return HTTP.del(obj).then(() => {
-      outer1_1(outer1_3[14]).dispatch({ type: "RELATIONSHIP_PENDING_INCOMING_REMOVED" });
+      callback2(709).dispatch({ type: "RELATIONSHIP_PENDING_INCOMING_REMOVED" });
     }).catch(() => {
-      const AccessibilityAnnouncer = outer1_0(outer1_3[13]).AccessibilityAnnouncer;
-      const intl = outer1_0(outer1_3[7]).intl;
-      AccessibilityAnnouncer.announce(intl.string(outer1_0(outer1_3[7]).t.n6Jo3E));
+      const AccessibilityAnnouncer = callback(4035).AccessibilityAnnouncer;
+      const intl = callback(1236).intl;
+      AccessibilityAnnouncer.announce(intl.string(callback(1236).t.n6Jo3E));
     });
   },
-  ignoreUser(id, IGNORE_CONFIRMATION_ACTION_SHEET, channelId) {
-    const _require = id;
+  ignoreUser(closure_3, IGNORE_CONFIRMATION_ACTION_SHEET, channelId) {
+    const _require = closure_3;
     let closure_1 = channelId;
-    const HTTP = _require(507).HTTP;
-    obj = { url: closure_6.IGNORE_USER(id), context: obj };
-    obj = { location: IGNORE_CONFIRMATION_ACTION_SHEET, rejectWithError: _require(507).rejectWithMigratedError() };
-    const obj3 = _require(507);
+    const HTTP = _require(530).HTTP;
+    obj = { url: closure_6.IGNORE_USER(closure_3), context: obj, rejectWithError: null };
+    obj = { location: IGNORE_CONFIRMATION_ACTION_SHEET };
+    obj[2] = _require(530).rejectWithMigratedError();
+    const obj3 = _require(530);
     const putResult = HTTP.put(obj);
     return HTTP.put(obj).then(() => {
       let obj = channelId(outer1_3[16]);
-      const result = obj.showIgnoreSuccessToast(id, channelId);
-      const AccessibilityAnnouncer = id(outer1_3[13]).AccessibilityAnnouncer;
-      const intl = id(outer1_3[7]).intl;
-      AccessibilityAnnouncer.announce(intl.string(id(outer1_3[7]).t.Us93Ca));
-      obj = { type: "RELATIONSHIP_IGNORE_USER_SUCCESS", userId: id, timestamp: Date.now() };
+      const result = obj.showIgnoreSuccessToast(callback, channelId);
+      const AccessibilityAnnouncer = callback(outer1_3[13]).AccessibilityAnnouncer;
+      const intl = callback(outer1_3[7]).intl;
+      AccessibilityAnnouncer.announce(intl.string(callback(outer1_3[7]).t.Us93Ca));
+      obj = { type: "RELATIONSHIP_IGNORE_USER_SUCCESS", userId: callback, timestamp: Date.now() };
       channelId(outer1_3[14]).dispatch(obj);
     }).catch(() => {
-      channelId(outer1_3[16]).showFailedToast();
-      const AccessibilityAnnouncer = id(outer1_3[13]).AccessibilityAnnouncer;
-      const intl = id(outer1_3[7]).intl;
-      AccessibilityAnnouncer.announce(intl.string(id(outer1_3[7]).t.n6Jo3E));
+      channelId(6721).showFailedToast();
+      const AccessibilityAnnouncer = callback(4035).AccessibilityAnnouncer;
+      const intl = callback(1236).intl;
+      AccessibilityAnnouncer.announce(intl.string(callback(1236).t.n6Jo3E));
     });
   },
   unignoreUser(id, UserProfileRemediatedNotice, id2) {
     const _require = id;
     let closure_1 = id2;
-    const HTTP = _require(507).HTTP;
-    obj = { url: closure_6.IGNORE_USER(id), context: obj };
-    obj = { location: UserProfileRemediatedNotice, rejectWithError: _require(507).rejectWithMigratedError() };
-    const obj3 = _require(507);
+    const HTTP = _require(530).HTTP;
+    obj = { url: closure_6.IGNORE_USER(id), context: obj, rejectWithError: null };
+    obj = { location: UserProfileRemediatedNotice };
+    obj[2] = _require(530).rejectWithMigratedError();
+    const obj3 = _require(530);
     const delResult = HTTP.del(obj);
     return HTTP.del(obj).then(() => {
       const result = id2(outer1_3[16]).showUnignoreSuccessToast(id, id2);
@@ -291,10 +296,10 @@ obj = {
       const intl = id(outer1_3[7]).intl;
       AccessibilityAnnouncer.announce(intl.string(id(outer1_3[7]).t.QlH5w6));
     }).catch(() => {
-      id2(outer1_3[16]).showFailedToast();
-      const AccessibilityAnnouncer = id(outer1_3[13]).AccessibilityAnnouncer;
-      const intl = id(outer1_3[7]).intl;
-      AccessibilityAnnouncer.announce(intl.string(id(outer1_3[7]).t.n6Jo3E));
+      id2(6721).showFailedToast();
+      const AccessibilityAnnouncer = id(4035).AccessibilityAnnouncer;
+      const intl = id(1236).intl;
+      AccessibilityAnnouncer.announce(intl.string(id(1236).t.n6Jo3E));
     });
   }
 };

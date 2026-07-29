@@ -1,108 +1,16 @@
-// Module ID: 6063
-// Function ID: 54173
-// Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 1352, 1348, 22, 566, 686, 2]
+// Module ID: 6081
+// Function ID: 6082
+// Name: updateFromGuild
+// Dependencies: [1376, 1372, 12, 589, 709, 2]
 
-// Module 6063 (_isNativeReflectConstruct)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import apply from "apply";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
-import { ALL_CHANNEL_TYPES } from "_callSuper";
-import closure_8 from "_isNativeReflectConstruct";
+// Module 6081 (updateFromGuild)
+import { ALL_CHANNEL_TYPES } from "createChannelRecord";
+import ensureGuildLoaded from "ensureGuildLoaded";
+import { Store } from "initialize";
 
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
-  }
-  const result = _isNativeReflectConstruct();
-}
-function _createForOfIteratorHelperLoose(iterable) {
-  let closure_0 = iterable;
-  iterable = "undefined" !== typeof Symbol;
-  if (iterable) {
-    const _Symbol = Symbol;
-    iterable = iterable[Symbol.iterator];
-  }
-  if (!iterable) {
-    iterable = iterable[Symbol.iterator];
-  }
-  if (iterable) {
-    const iter = iterable.call(iterable);
-    const next = iter.next;
-    return next.bind(iter);
-  } else {
-    const _Array = Array;
-    let tmp = iterable;
-    if (!Array.isArray(iterable)) {
-      let tmp2;
-      if (iterable) {
-        if ("string" === typeof iterable) {
-          tmp2 = _arrayLikeToArray(iterable, undefined);
-        } else {
-          const toString = {}.toString;
-          const substr = toString.call(iterable).slice(8, -1);
-          let name = substr;
-          if (tmp3) {
-            name = iterable.constructor.name;
-          }
-          if ("Map" !== name) {
-            if ("Set" !== name) {
-              if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(iterable, undefined);
-              } else {
-                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
-              }
-            }
-            tmp2 = arr;
-          }
-          const _Array2 = Array;
-          arr = Array.from(iterable);
-          const callResult = toString.call(iterable);
-          tmp3 = "Object" === substr && iterable.constructor;
-        }
-      }
-      tmp = tmp2;
-      if (!tmp2) {
-        const _TypeError = TypeError;
-        const typeError = new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
-        throw typeError;
-      }
-    }
-    if (tmp) {
-      closure_0 = tmp;
-    }
-    let c1 = 0;
-    return () => {
-      if (closure_1 >= length.length) {
-        let obj = { done: true };
-      } else {
-        obj = { done: false };
-        closure_1 = tmp3 + 1;
-        obj.value = length[+closure_1];
-      }
-      return obj;
-    };
-  }
-}
-function _arrayLikeToArray(arg0, arg1) {
-  let length;
-  if (tmp) {
-    length = arg0.length;
-  }
-  const ArrayResult = Array(length);
-  for (let num = 0; num < length; num = num + 1) {
-    ArrayResult[num] = arg0[num];
-  }
-  return ArrayResult;
-}
 function updateFromGuild(threads) {
   threads = threads.threads;
-  if (null != threads) {
+  if (threads != null) {
     const item = threads.forEach(updateFromThread);
   }
 }
@@ -110,18 +18,17 @@ function updateFromThread(type) {
   let memberCount;
   if (ALL_CHANNEL_TYPES.has(type.type)) {
     if (!(type.id in dependencyMap)) {
-      const obj = {};
-      ({ guild_id: obj.guildId, parent_id: obj.parentId, memberCount } = type);
-      let num = 0;
-      if (null != memberCount) {
-        num = memberCount;
+      const obj = { guildId: null, parentId: null, memberCount: null, memberIdsPreview: null };
+      ({ guild_id: obj[0], parent_id: obj[1], memberCount } = type);
+      if (memberCount == null) {
+        memberCount = 0;
       }
-      obj.memberCount = num;
+      obj[2] = memberCount;
       let memberIdsPreview = type.memberIdsPreview;
-      if (null == memberIdsPreview) {
+      if (memberIdsPreview == null) {
         memberIdsPreview = [];
       }
-      obj.memberIdsPreview = memberIdsPreview;
+      obj[3] = memberIdsPreview;
       dependencyMap[type.id] = obj;
       const tmp2 = dependencyMap;
     }
@@ -136,7 +43,32 @@ function updateFromThread(type) {
   }
 }
 function handleThreadCreateOrUpdate(channel) {
-  return updateFromThread(channel.channel);
+  let memberCount;
+  channel = channel.channel;
+  if (ALL_CHANNEL_TYPES.has(channel.type)) {
+    if (!(channel.id in dependencyMap)) {
+      const obj = { guildId: null, parentId: null, memberCount: null, memberIdsPreview: null };
+      ({ guild_id: obj[0], parent_id: obj[1], memberCount } = channel);
+      if (memberCount == null) {
+        memberCount = 0;
+      }
+      obj[2] = memberCount;
+      let memberIdsPreview = channel.memberIdsPreview;
+      if (memberIdsPreview == null) {
+        memberIdsPreview = [];
+      }
+      obj[3] = memberIdsPreview;
+      dependencyMap[channel.id] = obj;
+      const tmp2 = dependencyMap;
+    }
+    if (null != channel.memberCount) {
+      tmp5.memberCount = channel.memberCount;
+    }
+    if (null != channel.memberIdsPreview) {
+      tmp5.memberIdsPreview = channel.memberIdsPreview;
+    }
+  }
+  return false;
 }
 function handleLoadArchivedThreadsSuccess(threads) {
   threads = threads.threads;
@@ -151,99 +83,157 @@ function handleSearchMessagesSuccess(data) {
     ({ threads, messages } = arg0);
     let item = messages.forEach((arr) => {
       const item = arr.forEach((thread) => {
-        outer2_0 = outer3_15(thread.thread) || outer2_0;
+        let memberCount;
+        thread = thread.thread;
+        let flag = false;
+        if (null != thread) {
+          flag = false;
+          if (!(thread.id in outer1_4)) {
+            const channel = outer1_3.getChannel(thread.id);
+            flag = false;
+            if (null != channel) {
+              flag = true;
+              if (outer1_2.has(channel.type)) {
+                if (!(channel.id in outer1_4)) {
+                  const obj = { guildId: null, parentId: null, memberCount: null, memberIdsPreview: null };
+                  ({ guild_id: obj[0], parent_id: obj[1], memberCount } = channel);
+                  if (memberCount == null) {
+                    memberCount = 0;
+                  }
+                  obj[2] = memberCount;
+                  let memberIdsPreview = channel.memberIdsPreview;
+                  if (memberIdsPreview == null) {
+                    memberIdsPreview = [];
+                  }
+                  obj[3] = memberIdsPreview;
+                  outer1_4[channel.id] = obj;
+                  const tmp6 = outer1_4;
+                }
+                if (null != channel.memberCount) {
+                  tmp8.memberCount = channel.memberCount;
+                }
+                flag = true;
+                if (null != channel.memberIdsPreview) {
+                  tmp8.memberIdsPreview = channel.memberIdsPreview;
+                  flag = true;
+                }
+              }
+            }
+          }
+        }
       });
     });
-    const item1 = threads.forEach((arg0) => {
-      outer1_0 = outer2_15(arg0) || outer1_0;
+    const item1 = threads.forEach((id) => {
+      let memberCount;
+      let flag = false;
+      if (null != id) {
+        flag = false;
+        if (!(id.id in outer1_4)) {
+          const channel = outer1_3.getChannel(id.id);
+          flag = false;
+          if (null != channel) {
+            flag = true;
+            if (outer1_2.has(channel.type)) {
+              if (!(channel.id in outer1_4)) {
+                const obj = { guildId: null, parentId: null, memberCount: null, memberIdsPreview: null };
+                ({ guild_id: obj[0], parent_id: obj[1], memberCount } = channel);
+                if (memberCount == null) {
+                  memberCount = 0;
+                }
+                obj[2] = memberCount;
+                let memberIdsPreview = channel.memberIdsPreview;
+                if (memberIdsPreview == null) {
+                  memberIdsPreview = [];
+                }
+                obj[3] = memberIdsPreview;
+                outer1_4[channel.id] = obj;
+                const tmp6 = outer1_4;
+              }
+              if (null != channel.memberCount) {
+                tmp8.memberCount = channel.memberCount;
+              }
+              flag = true;
+              if (null != channel.memberIdsPreview) {
+                tmp8.memberIdsPreview = channel.memberIdsPreview;
+                flag = true;
+              }
+            }
+          }
+        }
+      }
     });
   });
   return c0;
 }
 function updateFromServerThread(id) {
+  let memberCount;
   if (null != id) {
-    if (!(id.id in closure_9)) {
+    if (!(id.id in dependencyMap)) {
       channel = channel.getChannel(id.id);
       if (null != channel) {
-        updateFromThread(channel);
+        if (ALL_CHANNEL_TYPES.has(channel.type)) {
+          if (!(channel.id in dependencyMap)) {
+            const obj = { guildId: null, parentId: null, memberCount: null, memberIdsPreview: null };
+            ({ guild_id: obj[0], parent_id: obj[1], memberCount } = channel);
+            if (memberCount == null) {
+              memberCount = 0;
+            }
+            obj[2] = memberCount;
+            let memberIdsPreview = channel.memberIdsPreview;
+            if (memberIdsPreview == null) {
+              memberIdsPreview = [];
+            }
+            obj[3] = memberIdsPreview;
+            dependencyMap[channel.id] = obj;
+            const tmp4 = dependencyMap;
+          }
+          if (null != channel.memberCount) {
+            tmp6.memberCount = channel.memberCount;
+          }
+          if (null != channel.memberIdsPreview) {
+            tmp6.memberIdsPreview = channel.memberIdsPreview;
+          }
+        }
         return true;
       }
     }
   }
   return false;
 }
-let closure_9 = {};
-let tmp2 = ((Store) => {
-  class ThreadMembersStore {
-    constructor() {
-      self = this;
-      tmp = outer1_2(this, ThreadMembersStore);
-      obj = outer1_5(ThreadMembersStore);
-      tmp2 = outer1_4;
-      if (outer1_10()) {
-        tmp6 = globalThis;
-        _Reflect = Reflect;
-        tmp7 = outer1_5;
-        tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, outer1_5(self).constructor);
-      } else {
-        tmp3 = arguments;
-        tmp4 = arguments;
-        constructResult = obj(...arguments);
-      }
-      return tmp2(self, constructResult);
-    }
+let closure_4 = {};
+class ThreadMembersStore extends Store {
+}
+const prototype = ThreadMembersStore.prototype;
+prototype["initialize"] = function initialize() {
+  this.waitFor(ensureGuildLoaded);
+};
+prototype["getMemberCount"] = function getMemberCount(arg0) {
+  let memberCount;
+  if (dependencyMap[arg0] != null) {
+    memberCount = tmp.memberCount;
   }
-  callback2(ThreadMembersStore, Store);
-  let obj = {
-    key: "initialize",
-    value() {
-      this.waitFor(outer1_8);
-    }
-  };
-  const items = [obj, , , ];
-  obj = {
-    key: "getMemberCount",
-    value(arg0) {
-      let memberCount;
-      if (null != outer1_9[arg0]) {
-        memberCount = tmp.memberCount;
-      }
-      let tmp3 = null;
-      if (null != memberCount) {
-        tmp3 = memberCount;
-      }
-      return tmp3;
-    }
-  };
-  items[1] = obj;
-  obj = {
-    key: "getMemberIdsPreview",
-    value(arg0) {
-      let memberIdsPreview;
-      if (null != outer1_9[arg0]) {
-        memberIdsPreview = tmp.memberIdsPreview;
-      }
-      let tmp3 = null;
-      if (null != memberIdsPreview) {
-        tmp3 = memberIdsPreview;
-      }
-      return tmp3;
-    }
-  };
-  items[2] = obj;
-  items[3] = {
-    key: "getInitialOverlayState",
-    value() {
-      return outer1_9;
-    }
-  };
-  return callback(ThreadMembersStore, items);
-})(require("initialize").Store);
-tmp2.displayName = "ThreadMembersStore";
-tmp2 = new tmp2(require("dispatcher"), {
+  if (memberCount == null) {
+    memberCount = null;
+  }
+  return memberCount;
+};
+prototype["getMemberIdsPreview"] = function getMemberIdsPreview(arg0) {
+  let memberIdsPreview;
+  if (dependencyMap[arg0] != null) {
+    memberIdsPreview = tmp.memberIdsPreview;
+  }
+  if (memberIdsPreview == null) {
+    memberIdsPreview = null;
+  }
+  return memberIdsPreview;
+};
+prototype["getInitialOverlayState"] = function getInitialOverlayState() {
+  return closure_4;
+};
+ThreadMembersStore.displayName = "ThreadMembersStore";
+const threadMembersStore = new ThreadMembersStore(require("dispatcher"), {
   CONNECTION_OPEN: function handleConnectionOpen(guilds) {
-    let closure_9 = {};
+    let closure_4 = {};
     guilds = guilds.guilds;
     const item = guilds.forEach(updateFromGuild);
   },
@@ -252,19 +242,18 @@ tmp2 = new tmp2(require("dispatcher"), {
     const merged = Object.assign(threadMembers.threadMembers);
   },
   GUILD_CREATE: function handleGuildCreate(guild) {
-    updateFromGuild(guild.guild);
+    const threads = guild.guild.threads;
+    if (threads != null) {
+      const item = threads.forEach(updateFromThread);
+    }
   },
   GUILD_DELETE: function handleGuildDelete(guild) {
-    (function deleteForGuild(id) {
-      let closure_0 = id;
-      outer1_9 = outer1_0(outer1_1[7]).omitBy(outer1_9, (guildId) => guildId.guildId === closure_0);
-    })(guild.guild.id);
+    const id = guild.guild.id;
+    closure_4 = id(12).omitBy(closure_4, (guildId) => guildId.guildId === id);
   },
   CHANNEL_DELETE: function handleChannelDelete(channel) {
-    (function deleteForChannel(id) {
-      let closure_0 = id;
-      outer1_9 = outer1_0(outer1_1[7]).omitBy(outer1_9, (parentId) => parentId.parentId === closure_0);
-    })(channel.channel.id);
+    const id = channel.channel.id;
+    closure_4 = id(12).omitBy(closure_4, (parentId) => parentId.parentId === id);
   },
   THREAD_CREATE: handleThreadCreateOrUpdate,
   THREAD_UPDATE: handleThreadCreateOrUpdate,
@@ -289,26 +278,20 @@ tmp2 = new tmp2(require("dispatcher"), {
   THREAD_DELETE: function handleThreadDelete(arg0) {
     delete tmp2[tmp];
   },
-  LOAD_MESSAGES_SUCCESS: function handleLoadMessagesSuccess(messages) {
-    let iter3;
-    const tmp = _createForOfIteratorHelperLoose(messages.messages);
-    const iter = tmp();
-    let iter2 = iter;
+  LOAD_MESSAGES_SUCCESS: function handleLoadMessagesSuccess(arg0) {
     let flag = false;
-    let flag2 = false;
-    if (!iter.done) {
-      do {
-        let tmp2 = updateFromServerThread;
-        let tmp3 = updateFromServerThread(iter2.value.thread) || flag;
-        iter3 = tmp();
-        flag = tmp3;
-        iter2 = iter3;
-        flag2 = tmp3;
-      } while (!iter3.done);
+    for (const item10007 of tmp) {
+      let tmp2 = updateFromServerThread;
+      let tmp3 = updateFromServerThread(item10007.thread);
+      if (!tmp3) {
+        tmp3 = flag;
+      }
+      flag = tmp3;
+      continue;
     }
-    return flag2;
+    return flag;
   }
 });
-let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/threads/ThreadMembersStore.tsx");
+const result = require("apply").fileFinishedImporting("modules/threads/ThreadMembersStore.tsx");
 
-export default tmp2;
+export default threadMembersStore;

@@ -1,11 +1,10 @@
 // Module ID: 4918
-// Function ID: 42361
+// Function ID: 4919
 // Name: registerAsset
-// Dependencies: [1217]
+// Dependencies: [1241]
 
 // Module 4918 (registerAsset)
 import registerAsset from "registerAsset";
 
-const obj = { __packager_asset: true, httpServerLocation: "/assets/images/platforms", width: 24, height: 24, scales: [1], hash: "18792494d95a201efe70aee5f49c4a4a", name: "img_account_sync_github_light", type: "svg" };
 
-export default registerAsset.registerAsset(obj);
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/platforms", width: 24, height: 24, scales: [1], hash: "74760e8f58ab462ca972dde9498902d3", name: "img_account_sync_twitter_white", type: "svg" });

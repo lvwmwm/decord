@@ -1,60 +1,61 @@
-// Module ID: 11235
-// Function ID: 87316
+// Module ID: 11259
+// Function ID: 11260
 // Name: ActivityShelfBadge
-// Dependencies: [31, 27, 653, 33, 4165, 689, 1273, 1882, 4161, 1212, 2]
+// Dependencies: [19, 17, 676, 21, 4189, 712, 1297, 1906, 4185, 1236, 2]
 // Exports: default
 
-// Module 11235 (ActivityShelfBadge)
-import "result";
+// Module 11259 (ActivityShelfBadge)
+import "noop";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 import Button from "Button";
 
 const require = arg1;
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { position: "absolute", top: 4, right: 4, display: "flex", flexDirection: "row", alignItems: "center", backgroundColor: require("_createForOfIteratorHelperLoose").colors.STATUS_POSITIVE_BACKGROUND };
-_createForOfIteratorHelperLoose.badge = _createForOfIteratorHelperLoose;
-let obj1 = { paddingLeft: 4, paddingRight: 6, borderRadius: require("_createForOfIteratorHelperLoose").radii.sm, height: 16, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BADGE_NOTIFICATION_BACKGROUND };
-_createForOfIteratorHelperLoose.newBadge = obj1;
-const obj2 = { paddingLeft: 4, paddingRight: 6, borderRadius: require("_createForOfIteratorHelperLoose").radii.sm, height: 16, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BADGE_BACKGROUND_BRAND };
-_createForOfIteratorHelperLoose.updatedBadge = obj2;
-_createForOfIteratorHelperLoose.elevationShadow = Button.generateBoxShadowStyle(require("Button").FOUR_DP_ELEVATION_SHADOW_PARAMS);
-const obj3 = { textTransform: "uppercase", marginLeft: 2, fontFamily: require("ME").Fonts.DISPLAY_EXTRABOLD, lineHeight: 16, fontSize: 12 };
-_createForOfIteratorHelperLoose.badgeText = obj3;
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+createCacheKey = { badge: null, newBadge: null, updatedBadge: null, elevationShadow: null, badgeText: null };
+createCacheKey = { position: "absolute", top: 4, right: 4, display: "flex", flexDirection: "row", alignItems: "center", backgroundColor: require("Themes").colors.STATUS_POSITIVE_BACKGROUND };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { paddingLeft: 4, paddingRight: 6, borderRadius: require("Themes").radii.sm, height: 16, backgroundColor: require("Themes").colors.BADGE_NOTIFICATION_BACKGROUND };
+let obj1 = { paddingLeft: 4, paddingRight: 6, borderRadius: require("Themes").radii.sm, height: 16, backgroundColor: require("Themes").colors.BADGE_NOTIFICATION_BACKGROUND };
+createCacheKey[2] = { paddingLeft: 4, paddingRight: 6, borderRadius: require("Themes").radii.sm, height: 16, backgroundColor: require("Themes").colors.BADGE_BACKGROUND_BRAND };
+createCacheKey[3] = Button.generateBoxShadowStyle(require("Button").FOUR_DP_ELEVATION_SHADOW_PARAMS);
+createCacheKey[4] = { textTransform: "uppercase", marginLeft: 2, fontFamily: require("ME").Fonts.DISPLAY_EXTRABOLD, lineHeight: 16, fontSize: 12 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+const obj2 = { paddingLeft: 4, paddingRight: 6, borderRadius: require("Themes").radii.sm, height: 16, backgroundColor: require("Themes").colors.BADGE_BACKGROUND_BRAND };
 const result = require("ME").fileFinishedImporting("modules/activities/native/ActivityShelfBadge.tsx");
 
 export default function ActivityShelfBadge(arg0) {
   let labelType;
   let replacementStyles;
   ({ labelType, replacementStyles } = arg0);
-  const tmp = _createForOfIteratorHelperLoose();
-  if (null == replacementStyles) {
+  const tmp = createCacheKey();
+  if (replacementStyles == null) {
     replacementStyles = tmp.badge;
   }
-  if (labelType === require(1882) /* PermissionOverwriteType */.EmbeddedActivityLabelTypes.NEW) {
-    let obj = {};
+  if (labelType === require(1906) /* PermissionOverwriteType */.EmbeddedActivityLabelTypes.NEW) {
+    let obj = { style: null, children: null };
     const items = [replacementStyles, , ];
     ({ newBadge: arr[1], elevationShadow: arr[2] } = tmp);
-    obj.style = items;
-    obj = { variant: "text-xs/semibold", style: tmp.badgeText, color: "text-overlay-light" };
-    const intl = require(1212) /* getSystemLocale */.intl;
-    obj.children = intl.string(require(1212) /* getSystemLocale */.t.y2b7CA);
-    obj.children = jsx(require(4161) /* Text */.Text, { variant: "text-xs/semibold", style: tmp.badgeText, color: "text-overlay-light" });
-    let tmp6 = <View variant="text-xs/semibold" style={tmp.badgeText} color="text-overlay-light" />;
+    obj[0] = items;
+    obj = { variant: "text-xs/semibold", style: null, color: "text-overlay-light", children: null };
+    obj[1] = tmp.badgeText;
+    const intl = tmp2(1236).intl;
+    obj[3] = intl.string(tmp2(1236).t.y2b7CA);
+    obj[1] = jsx(tmp2(4185).Text, { variant: "text-xs/semibold", style: null, color: "text-overlay-light", children: null });
+    let tmp6 = <View variant="text-xs/semibold" style={null} color="text-overlay-light">{null}</View>;
   } else {
     tmp6 = null;
-    if (labelType === require(1882) /* PermissionOverwriteType */.EmbeddedActivityLabelTypes.UPDATED) {
-      obj = {};
+    if (labelType === tmp2(1906).EmbeddedActivityLabelTypes.UPDATED) {
+      obj = { style: null, children: null };
       const items1 = [replacementStyles, , ];
       ({ updatedBadge: arr2[1], elevationShadow: arr2[2] } = tmp);
-      obj.style = items1;
-      const obj1 = { variant: "text-xs/semibold", style: tmp.badgeText, color: "text-overlay-light" };
-      const intl2 = require(1212) /* getSystemLocale */.intl;
-      obj1.children = intl2.string(require(1212) /* getSystemLocale */.t["/qdhkk"]);
-      obj.children = jsx(require(4161) /* Text */.Text, { variant: "text-xs/semibold", style: tmp.badgeText, color: "text-overlay-light" });
-      tmp6 = <View />;
+      obj[0] = items1;
+      const obj1 = { variant: "text-xs/semibold", style: null, color: "text-overlay-light", children: null };
+      obj1[1] = tmp.badgeText;
+      const intl2 = tmp2(1236).intl;
+      obj1[3] = intl2.string(tmp2(1236).t["/qdhkk"]);
+      obj[1] = jsx(tmp2(4185).Text, { variant: "text-xs/semibold", style: null, color: "text-overlay-light", children: null });
+      tmp6 = <View style={null}>{null}</View>;
     }
   }
   return tmp6;

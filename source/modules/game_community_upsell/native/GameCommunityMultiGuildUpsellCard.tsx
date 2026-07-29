@@ -1,168 +1,161 @@
-// Module ID: 15204
-// Function ID: 115557
-// Name: getGuildIconSize
-// Dependencies: [5, 57, 31, 27, 4157, 1838, 653, 33, 1450, 4165, 689, 566, 1392, 1426, 675, 5083, 6669, 1212, 7945, 8440, 1273, 4161, 4578, 9275, 6661, 8939, 2]
+// Module ID: 15237
+// Function ID: 15238
+// Name: GameCommunityMultiGuildUpsellCard
+// Dependencies: [5, 32, 19, 17, 4181, 1862, 676, 21, 1474, 4189, 712, 589, 1416, 1450, 698, 5105, 6690, 1236, 7970, 8464, 1297, 4185, 4600, 9299, 6682, 8963, 2]
 // Exports: default
 
-// Module 15204 (getGuildIconSize)
-import closure_3 from "_createForOfIteratorHelperLoose";
+// Module 15237 (GameCommunityMultiGuildUpsellCard)
+import createGuildRecordFromRust from "createGuildRecordFromRust";
 import _slicedToArray from "_slicedToArray";
-import result from "result";
-import get_ActivityIndicator from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_9 from "_createForOfIteratorHelperLoose";
+import GuildBadgeV2 from "GuildBadgeV2";
+import get_ActivityIndicator from "getSystemLocale";
+import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
+import closure_9 from "createGuildRecordFromRust";
 import ME from "ME";
-import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import jsxProd from "Text";
+import createCacheKey from "createCacheKey";
 
-let closure_10;
-let closure_11;
+let c10;
 let closure_12;
-let closure_13;
 let closure_14;
 let closure_6;
-let closure_7;
+let error;
+let map1;
+let unpackModuleId;
 const require = arg1;
-function getGuildIconSize(variant) {
-  let num = 50;
-  if ("one-column" === variant) {
-    num = 56;
-  }
-  return num;
-}
-function getGuildIconTop(variant) {
-  const tmp = getGuildIconSize(variant);
-  if ("one-column" === variant) {
-    let diff = 88 - tmp / 2 - 2;
-  } else {
-    diff = 80 - tmp / 2 - 2;
-  }
-  return diff;
-}
-function getCardWidth(arg0) {
-  const width = require(1450) /* useWindowDimensions */.getWindowDimensions().width;
-  let result = width;
-  if ("one-column" !== arg0) {
-    result = width / 2;
-  }
-  return result;
-}
-({ Image: closure_6, View: closure_7 } = get_ActivityIndicator);
-({ GuildFeatures: closure_10, JoinGuildSources: closure_11, AnalyticEvents: closure_12 } = ME);
-({ jsx: closure_13, jsxs: closure_14 } = jsxProd);
-let closure_15 = _createForOfIteratorHelperLoose.createStyles((variant) => {
+({ Image: closure_6, View: error } = get_ActivityIndicator);
+({ GuildFeatures: c10, JoinGuildSources: unpackModuleId, AnalyticEvents: closure_12 } = ME);
+({ jsx: map1, jsxs: closure_14 } = jsxProd);
+let closure_15 = createCacheKey.createStyles((arg0) => {
   let num = 10;
-  if ("one-column" === variant) {
+  if ("one-column" === arg0) {
     num = 12;
   }
-  const tmp2 = getGuildIconSize(variant);
-  let obj = {};
-  obj = { backgroundColor: importDefault(689).colors.BG_SURFACE_RAISED, borderColor: importDefault(689).colors.BORDER_MUTED, borderWidth: 1, borderRadius: importDefault(689).radii.lg, overflow: "hidden", flex: 1, marginBottom: importDefault(689).space.PX_16 };
-  obj.card = obj;
-  obj = {};
-  let num2 = 80;
-  if ("one-column" === variant) {
-    num2 = 88;
+  let num2 = 50;
+  let num3 = 50;
+  if ("one-column" === arg0) {
+    num3 = 56;
   }
-  obj.height = num2;
-  obj.backgroundColor = importDefault(689).colors.CARD_BACKGROUND_DEFAULT;
-  obj.bannerContainer = obj;
-  obj.banner = { flex: 1 };
-  const obj1 = { flex: 1, justifyContent: "space-between" };
-  let num3 = 28;
-  if ("one-column" === variant) {
-    num3 = 32;
+  let obj = { card: null, bannerContainer: null, banner: null, content: null, guildIconContainer: null, guildIcon: null, guildNameRow: null, guildBadge: null, guildName: null, description: null, memberCounts: null, memberCount: null, dot: null, dotOnline: null, dismissButton: null };
+  obj = { backgroundColor: importDefault(712).colors.BG_SURFACE_RAISED, borderColor: importDefault(712).colors.BORDER_MUTED, borderWidth: 1, borderRadius: importDefault(712).radii.lg, overflow: "hidden", flex: 1, marginBottom: importDefault(712).space.PX_16 };
+  obj[0] = obj;
+  let num4 = 80;
+  if ("one-column" === arg0) {
+    num4 = 88;
   }
-  obj1.marginTop = num3;
-  obj1.marginBottom = importDefault(689).space.PX_12;
-  obj1.marginHorizontal = importDefault(689).space.PX_12;
-  obj.content = obj1;
-  const obj2 = { position: "absolute", top: getGuildIconTop(variant), left: 16 };
-  obj.guildIconContainer = obj2;
-  obj.guildIcon = { width: tmp2, height: tmp2, borderRadius: importDefault(689).radii.lg };
-  const obj4 = { flexDirection: "row", alignItems: "center", marginBottom: importDefault(689).space.PX_4 };
-  obj.guildNameRow = obj4;
-  const obj5 = {};
-  const space = importDefault(689).space;
-  obj5.marginRight = "one-column" === variant ? space.PX_8 : space.PX_4;
-  obj.guildBadge = obj5;
-  obj.guildName = { flex: 1, minWidth: 0 };
-  const obj6 = {};
-  const space2 = importDefault(689).space;
-  obj6.marginBottom = "one-column" === variant ? space2.PX_8 : space2.PX_4;
-  obj.description = obj6;
-  const obj3 = { width: tmp2, height: tmp2, borderRadius: importDefault(689).radii.lg };
-  obj.memberCounts = { flexDirection: "row", gap: importDefault(689).space.PX_16 };
-  const obj8 = { display: "flex", flexDirection: "row", alignItems: "center", marginBottom: null, gap: 6 };
-  const space3 = importDefault(689).space;
-  obj8.marginBottom = "one-column" === variant ? space3.PX_12 : space3.PX_8;
-  obj.memberCount = obj8;
-  const obj9 = { width: num, height: num };
-  const result = num / 2;
-  obj9.borderRadius = result;
-  obj9.backgroundColor = importDefault(689).colors.TEXT_STATUS_OFFLINE;
-  obj.dot = obj9;
-  const obj10 = { width: num, height: num, borderRadius: result, backgroundColor: importDefault(689).colors.TEXT_STATUS_ONLINE };
-  obj.dotOnline = obj10;
-  const obj11 = { position: "absolute", top: 8, right: 8, width: 2 * importDefault(689).radii.lg, height: 2 * importDefault(689).radii.lg, borderRadius: importDefault(689).radii.lg, backgroundColor: importDefault(689).colors.BACKGROUND_MOD_SUBTLE, alignItems: "center", justifyContent: "center" };
-  obj.dismissButton = obj11;
+  obj = { height: num4, backgroundColor: tmp2(712).colors.CARD_BACKGROUND_DEFAULT };
+  obj[1] = obj;
+  obj[2] = { flex: 1 };
+  let num5 = 28;
+  if ("one-column" === arg0) {
+    num5 = 32;
+  }
+  obj[3] = { flex: 1, justifyContent: "space-between", marginTop: num5, marginBottom: importDefault(712).space.PX_12, marginHorizontal: importDefault(712).space.PX_12 };
+  if ("one-column" === arg0) {
+    num2 = 56;
+  }
+  const result = num2 / 2;
+  if ("one-column" === arg0) {
+    let diff = 88 - result - 2;
+  } else {
+    diff = 80 - result - 2;
+  }
+  obj[4] = { position: "absolute", top: diff, left: 16 };
+  const obj1 = { flex: 1, justifyContent: "space-between", marginTop: num5, marginBottom: importDefault(712).space.PX_12, marginHorizontal: importDefault(712).space.PX_12 };
+  obj[5] = { width: num3, height: num3, borderRadius: importDefault(712).radii.lg };
+  const obj2 = { width: num3, height: num3, borderRadius: importDefault(712).radii.lg };
+  obj[6] = { flexDirection: "row", alignItems: "center", marginBottom: importDefault(712).space.PX_4 };
+  const space = tmp2(712).space;
+  obj[7] = { marginRight: "one-column" === arg0 ? space.PX_8 : space.PX_4 };
+  obj[8] = { flex: 1, minWidth: 0 };
+  const space2 = tmp2(712).space;
+  obj[9] = { marginBottom: "one-column" === arg0 ? space2.PX_8 : space2.PX_4 };
+  const obj3 = { flexDirection: "row", alignItems: "center", marginBottom: importDefault(712).space.PX_4 };
+  obj[10] = { flexDirection: "row", gap: importDefault(712).space.PX_16 };
+  const space3 = tmp2(712).space;
+  obj[11] = { display: "flex", flexDirection: "row", alignItems: "center", marginBottom: "one-column" === arg0 ? space3.PX_12 : space3.PX_8, gap: 6 };
+  const obj4 = { flexDirection: "row", gap: importDefault(712).space.PX_16 };
+  const result1 = num / 2;
+  obj[12] = { width: num, height: num, borderRadius: result1, backgroundColor: importDefault(712).colors.TEXT_STATUS_OFFLINE };
+  const obj5 = { width: num, height: num, borderRadius: result1, backgroundColor: importDefault(712).colors.TEXT_STATUS_OFFLINE };
+  obj[13] = { width: num, height: num, borderRadius: result1, backgroundColor: importDefault(712).colors.TEXT_STATUS_ONLINE };
+  const obj6 = { width: num, height: num, borderRadius: result1, backgroundColor: importDefault(712).colors.TEXT_STATUS_ONLINE };
+  obj[14] = { position: "absolute", top: 8, right: 8, width: 2 * importDefault(712).radii.lg, height: 2 * importDefault(712).radii.lg, borderRadius: importDefault(712).radii.lg, backgroundColor: importDefault(712).colors.BACKGROUND_MOD_SUBTLE, alignItems: "center", justifyContent: "center" };
   return obj;
 });
-let result = require("result").fileFinishedImporting("modules/game_community_upsell/native/GameCommunityMultiGuildUpsellCard.tsx");
+let result = require("noop").fileFinishedImporting("modules/game_community_upsell/native/GameCommunityMultiGuildUpsellCard.tsx");
 
 export default function GameCommunityMultiGuildUpsellCard(guild) {
   guild = guild.guild;
   const gameId = guild.gameId;
   const variant = guild.variant;
   const onDismiss = guild.onDismiss;
+  let first;
+  let React;
+  let stateFromStores;
+  let stateFromStores1;
+  let num2;
   let c9;
-  let tmp = callback3(variant);
+  const tmp = callback(variant);
+  let obj = React;
   const tmp2 = first(React.useState(false), 2);
   first = tmp2[0];
   React = tmp2[1];
-  let obj = guild(variant[11]);
-  let items = [_isNativeReflectConstruct];
-  const stateFromStores = obj.useStateFromStores(items, () => tmp6.useReducedMotion);
   let obj1 = guild(variant[11]);
+  let items = [num2];
+  stateFromStores = obj1.useStateFromStores(items, () => num2.useReducedMotion);
+  let obj2 = guild(variant[11]);
   const items1 = [c9];
-  const stateFromStores1 = obj1.useStateFromStores(items1, () => null != _undefined.getGuild(guild.id));
-  const tmp6 = getGuildIconSize(variant);
-  _isNativeReflectConstruct = tmp6;
+  stateFromStores1 = obj2.useStateFromStores(items1, () => null != _undefined.getGuild(guild.id));
+  let tmp15Result = "one-column" === variant;
+  let num = 50;
+  num2 = 50;
+  if (tmp15Result) {
+    num2 = 56;
+  }
   const items2 = [, , , ];
   ({ id: arr3[0], icon: arr3[1] } = guild);
   items2[2] = stateFromStores;
-  items2[3] = tmp6;
-  let tmp8 = !stateFromStores;
-  const memo = React.useMemo(() => {
-    const icon = guild.icon;
-    let tmp = null;
-    if (null != icon) {
-      tmp = icon;
+  items2[3] = num2;
+  let tmp10 = !stateFromStores;
+  const memo = obj.useMemo(() => {
+    let icon = guild.icon;
+    if (icon == null) {
+      icon = null;
     }
     let obj = gameId(variant[12]);
-    obj = { id: guild.id, icon: tmp, canAnimate: !stateFromStores, size: _isNativeReflectConstruct * guild(variant[13]).getDevicePixelRatio() };
+    obj = { id: guild.id, icon, canAnimate: !stateFromStores, size: null };
+    obj[3] = num2 * guild(variant[13]).getDevicePixelRatio();
     return obj.getGuildIconSource(obj);
   }, items2);
-  if (tmp8) {
+  if (!stateFromStores) {
     const features = guild.features;
-    tmp8 = true === features.has(constants.ANIMATED_BANNER);
+    tmp10 = true === features.has(constants.ANIMATED_BANNER);
   }
-  c9 = tmp8;
+  c9 = tmp10;
   const items3 = [, , , , ];
   ({ id: arr4[0], splash: arr4[1], banner: arr4[2] } = guild);
-  items3[3] = tmp8;
+  items3[3] = tmp10;
   items3[4] = variant;
-  const fn = () => {
+  const memo1 = obj.useMemo(() => {
     let banner;
     let splash;
     ({ splash, banner } = banner);
     if (null != splash) {
-      let obj = { id: banner.id, splash };
+      let obj = { id: null, splash: null, size: null };
+      obj[0] = tmp.id;
+      obj[1] = splash;
       const obj2 = gameId(variant[12]);
-      const tmp10 = outer1_18(variant);
-      obj.size = tmp10 * guild(variant[13]).getDevicePixelRatio();
+      const tmp9 = guild;
+      const width = guild(variant[8]).getWindowDimensions().width;
+      let result = width;
+      if ("one-column" !== variant) {
+        result = width / 2;
+      }
+      const obj4 = guild(variant[8]);
+      obj[2] = result * tmp9(variant[13]).getDevicePixelRatio();
       let guildSplashSource = obj2.getGuildSplashSource(obj);
-      const obj4 = guild(variant[13]);
+      const tmp9Result = tmp9(variant[13]);
     } else {
       guildSplashSource = null;
       if (null != banner) {
@@ -175,179 +168,279 @@ export default function GameCommunityMultiGuildUpsellCard(guild) {
       }
     }
     return guildSplashSource;
-  };
-  const memo1 = React.useMemo(fn, items3);
-  // CreateGeneratorClosureLongIndex (0x67)
+  }, items3);
   const items4 = [guild.id, stateFromStores1, first, gameId, variant];
   const items5 = [guild.id];
-  const callback = React.useCallback(onDismiss(fn), items4);
+  callback = obj.useCallback(onDismiss(function*() {
+    if (c4 === 2) {
+      c4 = 3;
+      HermesBuiltin.throwTypeError();
+    } else if (tmp6 === 3) {
+      if (arg0 === 1) {
+        throw arg1;
+      } else if (arg0 === 2) {
+        let obj = { value: null, done: true };
+        obj[0] = arg1;
+        return obj;
+      } else {
+        return { value: "HermesInternal", done: null };
+      }
+    } else {
+      try {
+        c4 = 2;
+        if (0 === v0) {
+          if (arg0 === 1) {
+            c4 = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            c4 = 3;
+            obj = { value: null, done: true };
+            obj[0] = arg1;
+            return obj;
+          } else {
+            const id = tmp3;
+            if (!outer1_7) {
+              if (!c4) {
+                outer1_5(true);
+                let obj4 = v0(outer1_2[14]);
+                let obj1 = { guild_id: null, game_id: null, variant: null };
+                obj1[0] = outer1_0.id;
+                obj1[1] = v0;
+                obj1[2] = outer1_2;
+                obj4.track(outer1_12.GAME_COMMUNITY_MULTI_GUILD_UPSELL_CARD_JOINED, obj1);
+                let c3 = 1;
+                const obj2 = { source: null, autoNavigate: false };
+                obj2[0] = outer1_11.GAME_COMMUNITY_UPSELL;
+                v0 = 2;
+                c4 = 1;
+                const obj3 = { value: null, done: false };
+                obj3[0] = v0(outer1_2[15]).joinGuild(outer1_0.id, obj2);
+                return obj3;
+              }
+            }
+            c4 = 3;
+          }
+        } else if (1 === tmp7) {
+          c3 = 0;
+          outer1_5(false);
+          throw closure_2;
+        } else if (2 === tmp7) {
+          if (arg0 === 1) {
+            c4 = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            c3 = 0;
+            callback(false);
+            c4 = 3;
+            obj4 = { value: null, done: true };
+            obj4[0] = arg1;
+            return obj4;
+          } else {
+            obj1 = v0(outer1_2[15]);
+            v0 = 3;
+            c4 = 1;
+            const obj5 = { value: null, done: false };
+            obj5[0] = obj1.waitForGuild(id.id);
+            return obj5;
+          }
+        } else if (arg0 === 1) {
+          c4 = 3;
+          throw arg1;
+        } else if (arg0 !== 2) {
+          c3 = 0;
+          callback(false);
+        }
+        c3 = 0;
+        callback(false);
+        c4 = 3;
+        obj = { value: null, done: true };
+        obj[0] = arg1;
+        return obj;
+      } catch (tmp40) {
+        closure_2 = tmp40;
+        if (tmp4 === c3) {
+          c4 = tmp2;
+          throw tmp40;
+        } else {
+          v0 = tmp;
+        }
+      }
+    }
+  }), items4);
   const items6 = [guild.id, gameId, onDismiss];
-  const callback1 = React.useCallback(() => {
+  const callback1 = obj.useCallback(() => {
     guild(variant[16]).transitionToGuild(guild.id);
   }, items5);
-  const memo2 = React.useMemo(() => {
+  const memo2 = obj.useMemo(() => {
     if (null == onDismiss) {
       let items = [];
     } else {
-      const obj = {};
+      const obj = { label: null, variant: "destructive", action: null };
       const intl = guild(variant[17]).intl;
-      obj.label = intl.string(guild(variant[17]).t.XW1okC);
-      obj.variant = "destructive";
-      obj.action = function action() {
-        return outer1_3(outer1_0.id, outer1_1);
+      obj[0] = intl.string(guild(variant[17]).t.XW1okC);
+      obj[2] = function action() {
+        return callback(id.id, closure_1);
       };
       items = [obj];
     }
     return items;
   }, items6);
-  const presenceCount = guild.presenceCount;
-  let num = 0;
-  if (null != presenceCount) {
-    num = presenceCount;
+  let num3 = guild.presenceCount;
+  if (num3 == null) {
+    num3 = 0;
   }
-  const memberCount = guild.memberCount;
-  let num2 = 0;
-  if (null != memberCount) {
-    num2 = memberCount;
+  let num4 = guild.memberCount;
+  if (num4 == null) {
+    num4 = 0;
   }
   const description = guild.description;
-  obj = { style: tmp.card };
-  obj = { style: tmp.bannerContainer };
-  obj1 = { style: tmp.banner };
-  let obj2 = { shape: guild(variant[18]).CutoutShape.RoundedRect, x: 12, y: getGuildIconTop(variant) - 4 };
-  const sum = tmp6 + 8;
-  obj2.width = sum;
-  obj2.height = sum;
-  obj2.cornerRadius = gameId(variant[10]).radii.lg + 4;
+  obj = { style: tmp.card, children: null };
+  obj = { style: tmp.bannerContainer, children: null };
+  obj1 = { style: tmp.banner, cutouts: null, children: null };
+  obj2 = { shape: null, x: 12, y: null, width: null, height: null, cornerRadius: null };
+  obj2[0] = guild(variant[18]).CutoutShape.RoundedRect;
+  if (tmp15Result) {
+    num = 56;
+  }
+  let result = num / 2;
+  if (tmp15Result) {
+    let diff = 88 - result - 2;
+  } else {
+    diff = 80 - result - 2;
+  }
+  obj2[2] = diff - 4;
+  const sum = num2 + 8;
+  obj2[3] = sum;
+  obj2[4] = sum;
+  obj2[5] = gameId(variant[10]).radii.lg + 4;
   const items7 = [obj2];
-  obj1.cutouts = items7;
+  obj1[1] = items7;
   if (null != memo1) {
-    const obj3 = { style: tmp.banner, source: memo1, resizeMode: "cover" };
-    let tmp20 = callback(stateFromStores, obj3);
+    let obj3 = { style: null, source: null, resizeMode: "cover" };
+    obj3[0] = tmp.banner;
+    obj3[1] = memo1;
+    let tmp17Result = tmp17(stateFromStores, obj3);
   } else {
-    let obj4 = { style: tmp.banner };
-    tmp20 = callback(stateFromStores1, obj4);
+    let obj4 = { style: null };
+    obj4[0] = tmp.banner;
+    tmp17Result = tmp17(tmp16, obj4);
   }
-  obj1.children = tmp20;
-  obj.children = callback(gameId(variant[18]), obj1);
-  const items8 = [callback(stateFromStores1, obj), , , ];
-  const tmp13 = callback2;
-  const tmp16 = gameId(variant[18]);
-  items8[1] = callback(stateFromStores1, { style: tmp.guildIconContainer, children: callback(stateFromStores, obj6) });
-  const obj7 = { style: tmp.content };
-  const obj8 = {};
-  const obj9 = { style: tmp.guildNameRow };
-  const obj10 = { guild };
-  let tmp27 = "one-column" === variant;
-  const obj5 = { style: tmp.guildIconContainer, children: callback(stateFromStores, obj6) };
-  const tmp23 = callback;
-  const Sizes = guild(variant[20]).Icon.Sizes;
-  obj10.size = tmp27 ? Sizes.REFRESH_SMALL_16 : Sizes.EXTRA_SMALL;
-  obj10.style = tmp.guildBadge;
-  const items9 = [tmp23(gameId(variant[19]), obj10), ];
-  const obj11 = { variant: null, color: "mobile-text-heading-primary", accessibilityRole: "header", style: null, lineClamp: 1 };
-  let str2 = "heading-sm/bold";
-  if (tmp27) {
-    str2 = "heading-md/bold";
+  obj1[2] = tmp17Result;
+  obj[1] = closure_13(gameId(variant[18]), obj1);
+  const items8 = [closure_13(stateFromStores1, obj), , , ];
+  const tmp19 = gameId(variant[18]);
+  items8[1] = closure_13(stateFromStores1, { style: tmp.guildIconContainer, children: closure_13(stateFromStores, obj6) });
+  const obj7 = { style: tmp.content, children: null };
+  const obj8 = { style: tmp.guildNameRow, children: null };
+  const obj9 = { guild, size: null, style: null };
+  let obj5 = { style: tmp.guildIconContainer, children: closure_13(stateFromStores, obj6) };
+  const Sizes = tmp4(tmp5[20]).Icon.Sizes;
+  obj9[1] = tmp15Result ? Sizes.REFRESH_SMALL_16 : Sizes.EXTRA_SMALL;
+  obj9[2] = tmp.guildBadge;
+  const items9 = [closure_13(gameId(variant[19]), obj9), ];
+  let str = "heading-sm/bold";
+  if (tmp15Result) {
+    str = "heading-md/bold";
   }
-  obj11.variant = str2;
-  obj11.style = tmp.guildName;
-  obj11.children = guild.name;
-  items9[1] = callback(guild(variant[21]).Text, obj11);
-  obj9.children = items9;
-  const items10 = [callback2(stateFromStores1, obj9), ];
-  let tmp30Result = null != description && description.length > 0;
-  if (tmp30Result) {
-    const obj12 = {};
-    let str3 = "text-xs/medium";
-    if (tmp27) {
-      str3 = "text-sm/medium";
+  items9[1] = closure_13(guild(variant[21]).Text, { variant: str, color: "mobile-text-heading-primary", accessibilityRole: "header", style: tmp.guildName, lineClamp: 1, children: guild.name });
+  obj8[1] = items9;
+  const items10 = [closure_14(stateFromStores1, obj8), ];
+  tmp17Result = null != description;
+  if (tmp17Result) {
+    tmp17Result = description.length > 0;
+  }
+  if (tmp17Result) {
+    let str2 = "text-xs/medium";
+    if (tmp15Result) {
+      str2 = "text-sm/medium";
     }
-    obj12.variant = str3;
-    obj12.style = tmp.description;
-    obj12.lineClamp = 3;
-    obj12.children = description;
-    tmp30Result = callback(guild(variant[21]).Text, obj12);
-    const tmp30 = callback;
+    const obj11 = { variant: null, style: null, lineClamp: 3, children: null };
+    obj11[0] = str2;
+    obj11[1] = tmp.description;
+    obj11[3] = description;
+    tmp17Result = tmp17(tmp4(tmp5[21]).Text, obj11);
   }
-  items10[1] = tmp30Result;
-  obj8.children = items10;
-  const items11 = [callback2(stateFromStores1, obj8), ];
-  const obj13 = {};
-  const obj14 = { style: tmp.memberCounts };
-  let tmp35 = num > 0;
-  if (tmp35) {
-    const obj15 = { style: tmp.memberCount };
-    const obj16 = { style: tmp.dotOnline };
-    const items12 = [callback(stateFromStores1, obj16), ];
-    const obj17 = { variant: "text-xs/medium", color: "text-subtle" };
-    let intl = guild(variant[17]).intl;
-    const obj18 = { membersOnline: num };
-    obj17.children = intl.format(guild(variant[17]).t["LC+S+m"], obj18);
-    items12[1] = callback(guild(variant[21]).Text, obj17);
-    obj15.children = items12;
-    tmp35 = callback2(stateFromStores1, obj15);
+  items10[1] = tmp17Result;
+  const items11 = [closure_14(stateFromStores1, { children: items10 }), ];
+  const obj12 = { style: tmp.memberCounts, children: null };
+  tmp15Result = num3 > 0;
+  if (tmp15Result) {
+    const obj13 = { style: null, children: null };
+    obj13[0] = tmp.memberCount;
+    const obj14 = { style: null };
+    obj14[0] = tmp.dotOnline;
+    const items12 = [tmp17(tmp16, obj14), ];
+    const obj15 = { variant: "text-xs/medium", color: "text-subtle", children: null };
+    let intl = tmp4(tmp5[17]).intl;
+    const obj16 = { membersOnline: null };
+    obj16[0] = num3;
+    obj15[2] = intl.format(tmp4(tmp5[17]).t["LC+S+m"], obj16);
+    items12[1] = tmp17(tmp4(tmp5[21]).Text, obj15);
+    obj13[1] = items12;
+    tmp15Result = tmp15(tmp16, obj13);
   }
-  const items13 = [tmp35, ];
-  if (tmp27) {
-    tmp27 = num2 > 0;
+  const items13 = [tmp15Result, ];
+  if (tmp15Result) {
+    tmp15Result = num4 > 0;
   }
-  if (tmp27) {
-    const obj19 = { style: tmp.memberCount };
-    const obj20 = { style: tmp.dot };
-    const items14 = [callback(stateFromStores1, obj20), ];
-    const obj21 = { variant: "text-xs/medium", color: "text-subtle" };
-    const intl2 = guild(variant[17]).intl;
-    const obj22 = { count: num2 };
-    obj21.children = intl2.format(guild(variant[17]).t.zRl6XR, obj22);
-    items14[1] = callback(guild(variant[21]).Text, obj21);
-    obj19.children = items14;
-    tmp27 = callback2(stateFromStores1, obj19);
+  if (tmp15Result) {
+    const obj17 = { style: null, children: null };
+    obj17[0] = tmp.memberCount;
+    const obj18 = { style: null };
+    obj18[0] = tmp.dot;
+    const items14 = [tmp17(tmp16, obj18), ];
+    const obj19 = { variant: "text-xs/medium", color: "text-subtle", children: null };
+    const intl2 = tmp4(tmp5[17]).intl;
+    const obj20 = { count: null };
+    obj20[0] = num4;
+    obj19[2] = intl2.format(tmp4(tmp5[17]).t.zRl6XR, obj20);
+    items14[1] = tmp17(tmp4(tmp5[21]).Text, obj19);
+    obj17[1] = items14;
+    tmp15Result = tmp15(tmp16, obj17);
   }
-  items13[1] = tmp27;
-  obj14.children = items13;
-  const items15 = [callback2(stateFromStores1, obj14), ];
+  items13[1] = tmp15Result;
+  obj12[1] = items13;
+  const items15 = [closure_14(stateFromStores1, obj12), ];
   if (stateFromStores1) {
-    const obj23 = { variant: "active", size: "sm", text: null, onPress: null, grow: true };
-    const intl4 = guild(variant[17]).intl;
-    obj23.text = intl4.string(guild(variant[17]).t.KLOhbO);
-    obj23.onPress = callback1;
-    let obj24 = obj23;
+    const obj21 = { variant: "active", size: "sm", text: null, onPress: null, grow: true };
+    const intl4 = tmp4(tmp5[17]).intl;
+    obj21[2] = intl4.string(tmp4(tmp5[17]).t.KLOhbO);
+    obj21[3] = callback1;
+    let obj22 = obj21;
   } else {
-    obj24 = { variant: "primary", size: "sm", loading: first };
-    const intl3 = guild(variant[17]).intl;
-    obj24.text = intl3.string(guild(variant[17]).t.VJlc0S);
-    obj24.onPress = callback;
-    obj24.grow = true;
+    obj22 = { variant: "primary", size: "sm", loading: null, text: null, onPress: null, grow: true };
+    obj22[2] = first;
+    const intl3 = tmp4(tmp5[17]).intl;
+    obj22[3] = intl3.string(tmp4(tmp5[17]).t.VJlc0S);
+    obj22[4] = callback;
   }
-  items15[1] = callback(guild(variant[22]).Button, obj24);
-  obj13.children = items15;
-  items11[1] = callback2(stateFromStores1, obj13);
-  obj7.children = items11;
-  items8[2] = callback2(stateFromStores1, obj7);
-  let tmp51 = memo2.length > 0;
-  if (tmp51) {
-    const obj25 = { style: tmp.dismissButton };
-    const obj26 = {
-      items: memo2,
-      children(ref) {
-          let obj = Object.create(null);
-          obj.ref = 0;
-          const merged = Object.assign(ref, obj);
-          obj = { ref: ref.ref };
-          const merged1 = Object.assign(merged);
-          obj["icon"] = outer1_13(guild(variant[25]).MoreHorizontalIcon, { size: "sm" });
-          obj["size"] = "sm";
-          obj["variant"] = "secondary-overlay";
-          const intl = guild(variant[17]).intl;
-          obj["accessibilityLabel"] = intl.string(guild(variant[17]).t.ogxXGq);
-          return outer1_13(guild(variant[24]).IconButton, obj);
-        }
+  const obj23 = { children: null };
+  items15[1] = closure_13(guild(variant[22]).Button, obj22);
+  obj23[0] = items15;
+  items11[1] = closure_14(stateFromStores1, obj23);
+  obj7[1] = items11;
+  items8[2] = closure_14(stateFromStores1, obj7);
+  let tmp17Result1 = memo2.length > 0;
+  if (tmp17Result1) {
+    const obj24 = { style: null, children: null };
+    obj24[0] = tmp.dismissButton;
+    const obj25 = { items: null, children: null };
+    obj25[0] = memo2;
+    obj25[1] = function children(ref) {
+      const merged = Object.assign(ref, Object.create(null));
+      const obj = { ref: ref.ref };
+      const merged1 = Object.assign(merged);
+      obj.icon = callback(guild(variant[25]).MoreHorizontalIcon, { size: "sm" });
+      obj.size = "sm";
+      obj.variant = "secondary-overlay";
+      const intl = guild(variant[17]).intl;
+      obj.accessibilityLabel = intl.string(guild(variant[17]).t.ogxXGq);
+      return callback(guild(variant[24]).IconButton, obj);
     };
-    obj25.children = callback(guild(variant[23]).ContextMenu, obj26);
-    tmp51 = callback(stateFromStores1, obj25);
+    obj24[1] = tmp17(tmp4(tmp5[23]).ContextMenu, obj25);
+    tmp17Result1 = tmp17(tmp16, obj24);
   }
-  items8[3] = tmp51;
-  obj.children = items8;
-  return tmp13(stateFromStores1, obj);
+  items8[3] = tmp17Result1;
+  obj[1] = items8;
+  return closure_14(stateFromStores1, obj);
 };

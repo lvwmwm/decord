@@ -1,59 +1,48 @@
-// Module ID: 9554
-// Function ID: 74414
-// Name: getMentionTextWithUser
-// Dependencies: [31, 27, 1352, 1908, 3802, 1850, 653, 9555, 4602, 33, 4165, 689, 4355, 5009, 4004, 7618, 2]
-// Exports: getAutocompleteResultText, getItemLayout, getItemSeparator, getPrefix, getQuery, isUnbrokenRun, isWhitespaceSeparatingBoundary
+// Module ID: 9578
+// Function ID: 9579
+// Name: AutocompleteFormDivider
+// Dependencies: [19, 17, 1376, 1932, 3826, 1874, 676, 9579, 4624, 21, 4189, 712, 4380, 5031, 4028, 7641, 2]
+// Exports: getAutocompleteResultText, getItemLayout, getItemSeparator, getMentionTextWithUser, getPrefix, getQuery, isUnbrokenRun, isWhitespaceSeparatingBoundary
 
-// Module 9554 (getMentionTextWithUser)
-import "result";
-import { isGuildSelectableChannelType as closure_3 } from "_callSuper";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_5 from "_isNativeReflectConstruct";
-import closure_6 from "_isNativeReflectConstruct";
+// Module 9578 (AutocompleteFormDivider)
+import "noop";
+import { isGuildSelectableChannelType as closure_3 } from "createChannelRecord";
+import comparator from "comparator";
+import upsertRelationship from "upsertRelationship";
+import mergeGuildAvatar from "mergeGuildAvatar";
 import ME from "ME";
 import AUTOCOMPLETE_ROW_HEIGHT from "AUTOCOMPLETE_ROW_HEIGHT";
 import regExp from "regExp";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_10;
-let closure_11;
+let c10;
+let c9;
 let closure_12;
-let closure_13;
 let closure_14;
-let closure_7;
-let closure_8;
-let closure_9;
+let error;
+let map1;
+let metroImportAll;
+let unpackModuleId;
 const require = arg1;
-function getMentionTextWithUser(messageChannel, user) {
-  if (obj.hasSameRoleAsUsername(messageChannel, user)) {
-    const _HermesInternal2 = HermesInternal;
-    let combined = "" + tmp + user.tag;
-  } else {
-    const _HermesInternal = HermesInternal;
-    combined = "" + tmp + importDefault(4004).getUserTag(user);
-    const obj2 = importDefault(4004);
-  }
-  return combined;
-}
 function AutocompleteFormDivider() {
-  const tmp = _createForOfIteratorHelperLoose();
-  return jsx(importDefault(7618), { style: _createForOfIteratorHelperLoose().itemDivider });
+  const tmp = createCacheKey();
+  return jsx(importDefault(7641), { style: createCacheKey().itemDivider });
 }
-({ AutoCompleteResultTypes: closure_7, WHITESPACE_RE: closure_8 } = ME);
-({ AUTOCOMPLETE_EMOJI_ROW_HEIGHT: closure_9, AUTOCOMPLETE_ROW_HEIGHT: closure_10 } = AUTOCOMPLETE_ROW_HEIGHT);
-({ CHANNEL_SENTINEL: closure_11, EMOJI_SENTINEL: closure_12, GAME_MENTION_SENTINEL: closure_13, MENTION_SENTINEL: closure_14 } = regExp);
+({ AutoCompleteResultTypes: error, WHITESPACE_RE: metroImportAll } = ME);
+({ AUTOCOMPLETE_EMOJI_ROW_HEIGHT: c9, AUTOCOMPLETE_ROW_HEIGHT: c10 } = AUTOCOMPLETE_ROW_HEIGHT);
+({ CHANNEL_SENTINEL: unpackModuleId, EMOJI_SENTINEL: closure_12, GAME_MENTION_SENTINEL: map1, MENTION_SENTINEL: closure_14 } = regExp);
 const hairlineWidth = require("get ActivityIndicator").StyleSheet.hairlineWidth;
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { marginLeft: 16, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BORDER_SUBTLE };
-_createForOfIteratorHelperLoose.itemDivider = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-let result = require("_callSuper").fileFinishedImporting("modules/autocompleter/native/AutocompleteUtils.tsx");
+createCacheKey = { itemDivider: null };
+createCacheKey = { marginLeft: 16, backgroundColor: require("Themes").colors.BORDER_SUBTLE };
+createCacheKey[0] = createCacheKey;
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let result = require("createChannelRecord").fileFinishedImporting("modules/autocompleter/native/AutocompleteUtils.tsx");
 
 export const getItemLayout = function getItemLayout(arg0, index) {
   let type;
-  if (null != arg0) {
-    if (null != arg0[index]) {
+  if (arg0 != null) {
+    if (arg0[index] != null) {
       type = tmp2.type;
     }
   }
@@ -69,49 +58,58 @@ export const getAutocompleteResultText = function getAutocompleteResultText(type
   }
   type = type.type;
   if (constants.USER === type) {
-    return getMentionTextWithUser(channel, type.user);
-  } else if (constants.GLOBAL === type) {
+    const user = type.user;
+    if (obj5.hasSameRoleAsUsername(channel, user)) {
+      const _HermesInternal9 = HermesInternal;
+      let combined = "" + tmp34 + user.tag;
+    } else {
+      const _HermesInternal8 = HermesInternal;
+      combined = "" + tmp34 + importDefault(4028).getUserTag(user);
+      const tmp32Result = importDefault(4028);
+    }
+    return combined;
+  } else if (tmp.GLOBAL === type) {
     return type.text;
-  } else if (constants.ROLE === type) {
+  } else if (tmp.ROLE === type) {
     const _HermesInternal7 = HermesInternal;
     return "" + closure_14 + type.name;
-  } else if (constants.CHANNEL === type) {
+  } else if (tmp.CHANNEL === type) {
     channel = type.channel;
     if (channel.isThread()) {
-      const obj3 = require(4355) /* computeDefaultGroupDmNameFromUserIds */;
+      const obj3 = require(4380) /* computeChannelName */;
       const _HermesInternal6 = HermesInternal;
-      return "#\"" + obj3.escapeChannelName(require(4355) /* computeDefaultGroupDmNameFromUserIds */.computeChannelName(type.channel, closure_6, closure_5)) + "\"";
+      return "#\"" + obj3.escapeChannelName(require(4380) /* computeChannelName */.computeChannelName(type.channel, mergeGuildAvatar, upsertRelationship)) + "\"";
     } else {
       channel2 = type.channel;
       const guildId = channel2.getGuildId();
       if (null != guildId) {
         if (callback(type.channel.type)) {
-          const tmp20 = textChannelNameDisambiguations.getTextChannelNameDisambiguations(guildId)[type.channel.id];
+          const tmp16 = textChannelNameDisambiguations.getTextChannelNameDisambiguations(guildId)[type.channel.id];
           let name;
-          if (null != tmp20) {
-            name = tmp20.name;
+          if (tmp16 != null) {
+            name = tmp16.name;
           }
-          if (null == name) {
-            name = require(4355) /* computeDefaultGroupDmNameFromUserIds */.computeChannelName(type.channel, closure_6, closure_5);
-            const obj2 = require(4355) /* computeDefaultGroupDmNameFromUserIds */;
+          if (name == null) {
+            name = require(4380) /* computeChannelName */.computeChannelName(type.channel, mergeGuildAvatar, upsertRelationship);
+            const obj2 = require(4380) /* computeChannelName */;
           }
           const _HermesInternal5 = HermesInternal;
           return "" + closure_11 + name;
         }
       }
       const _HermesInternal4 = HermesInternal;
-      return "" + closure_11 + require(4355) /* computeDefaultGroupDmNameFromUserIds */.computeChannelName(type.channel, closure_6, closure_5);
+      return "" + closure_11 + require(4380) /* computeChannelName */.computeChannelName(type.channel, mergeGuildAvatar, upsertRelationship);
     }
-  } else if (constants.GAME_MENTION === type) {
+  } else if (tmp.GAME_MENTION === type) {
     const _HermesInternal3 = HermesInternal;
     return "" + closure_13 + type.game.name;
-  } else if (constants.EMOJI === type) {
+  } else if (tmp.EMOJI === type) {
     const _HermesInternal2 = HermesInternal;
     return "" + closure_12 + type.name + ":";
   } else {
-    if (constants.EMOJI_PREMIUM_UPSELL !== type) {
-      if (constants.SLASH !== type) {
-        if (constants.CHOICE === type) {
+    if (tmp.EMOJI_PREMIUM_UPSELL !== type) {
+      if (tmp.SLASH !== type) {
+        if (tmp.CHOICE === type) {
           const _HermesInternal = HermesInternal;
           return "" + type.choice.displayName;
         } else {
@@ -122,7 +120,17 @@ export const getAutocompleteResultText = function getAutocompleteResultText(type
     return "";
   }
 };
-export { getMentionTextWithUser };
+export const getMentionTextWithUser = function getMentionTextWithUser(messageChannel, user) {
+  if (obj.hasSameRoleAsUsername(messageChannel, user)) {
+    const _HermesInternal2 = HermesInternal;
+    let combined = "" + tmp3 + user.tag;
+  } else {
+    const _HermesInternal = HermesInternal;
+    combined = "" + tmp3 + importDefault(4028).getUserTag(user);
+    const tmpResult = importDefault(4028);
+  }
+  return combined;
+};
 export const getItemSeparator = function getItemSeparator() {
   return <AutocompleteFormDivider />;
 };
@@ -132,13 +140,13 @@ export const getPrefix = function getPrefix(substr1) {
 export const getQuery = function getQuery(arr) {
   return arr.slice(1).toLowerCase();
 };
-export const isWhitespaceSeparatingBoundary = function isWhitespaceSeparatingBoundary(closure_0, lastIndexOfResult) {
-  let isMatch = 0 === lastIndexOfResult;
+export const isWhitespaceSeparatingBoundary = function isWhitespaceSeparatingBoundary(c23, index) {
+  let isMatch = 0 === index;
   if (!isMatch) {
-    isMatch = regex.test(closure_0[lastIndexOfResult - 1]);
+    isMatch = regex.test(c23[index - 1]);
   }
   return isMatch;
 };
-export const isUnbrokenRun = function isUnbrokenRun(arr, arg1, selectionEnd) {
-  return !regex.test(arr.slice(arg1, selectionEnd));
+export const isUnbrokenRun = function isUnbrokenRun(arr, arg1, arg2) {
+  return !regex.test(arr.slice(arg1, arg2));
 };

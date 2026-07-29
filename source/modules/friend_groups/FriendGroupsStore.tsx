@@ -1,225 +1,89 @@
-// Module ID: 12733
-// Function ID: 98642
-// Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 5926, 5625, 3802, 1850, 566, 686, 2]
+// Module ID: 12755
+// Function ID: 12756
+// Name: initialize
+// Dependencies: [5945, 5643, 3826, 1874, 589, 709, 2]
 
-// Module 12733 (_isNativeReflectConstruct)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_1 from "_isNativeReflectConstruct";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
-import closure_5 from "_isNativeReflectConstruct";
-import closure_6 from "_isNativeReflectConstruct";
-import closure_7 from "_isNativeReflectConstruct";
-import closure_8 from "_isNativeReflectConstruct";
+// Module 12755 (initialize)
+import recomputeAffinities from "recomputeAffinities";
+import hasConsented from "hasConsented";
+import upsertRelationship from "upsertRelationship";
+import mergeGuildAvatar from "mergeGuildAvatar";
+import { PersistedStore } from "initialize";
 
-function _isNativeReflectConstruct() {
-  let _isNativeReflectConstruct = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return _isNativeReflectConstruct;
-  }
-  const result = _isNativeReflectConstruct();
+let closure_4 = [];
+let c5 = false;
+class FriendGroupsStore extends PersistedStore {
 }
-function _createForOfIteratorHelperLoose(iterable) {
-  let _isNativeReflectConstruct = iterable;
-  iterable = "undefined" !== typeof Symbol;
-  if (iterable) {
-    const _Symbol = Symbol;
-    iterable = iterable[Symbol.iterator];
-  }
-  if (!iterable) {
-    iterable = iterable[Symbol.iterator];
-  }
-  if (iterable) {
-    const iter = iterable.call(iterable);
-    const next = iter.next;
-    return next.bind(iter);
-  } else {
-    const _Array = Array;
-    let tmp = iterable;
-    if (!Array.isArray(iterable)) {
-      let tmp2;
-      if (iterable) {
-        if ("string" === typeof iterable) {
-          tmp2 = _arrayLikeToArray(iterable, undefined);
-        } else {
-          const toString = {}.toString;
-          const substr = toString.call(iterable).slice(8, -1);
-          let name = substr;
-          if (tmp3) {
-            name = iterable.constructor.name;
-          }
-          if ("Map" !== name) {
-            if ("Set" !== name) {
-              if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(iterable, undefined);
-              } else {
-                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
-              }
-            }
-            tmp2 = arr;
-          }
-          const _Array2 = Array;
-          arr = Array.from(iterable);
-          const callResult = toString.call(iterable);
-          tmp3 = "Object" === substr && iterable.constructor;
-        }
-      }
-      tmp = tmp2;
-      if (!tmp2) {
-        const _TypeError = TypeError;
-        const typeError = new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
-        throw typeError;
-      }
+const prototype = FriendGroupsStore.prototype;
+prototype["initialize"] = function initialize(groups) {
+  this.waitFor(hasConsented, upsertRelationship, recomputeAffinities, mergeGuildAvatar);
+  if (null != groups) {
+    groups = groups.groups;
+    if (groups == null) {
+      groups = [];
     }
-    if (tmp) {
-      _isNativeReflectConstruct = tmp;
-    }
-    let c1 = 0;
-    return () => {
-      if (closure_1 >= length.length) {
-        let obj = { done: true };
-      } else {
-        obj = { done: false };
-        closure_1 = tmp3 + 1;
-        obj.value = length[+closure_1];
-      }
-      return obj;
-    };
-  }
-}
-function _arrayLikeToArray(arg0, arg1) {
-  let length;
-  if (tmp) {
-    length = arg0.length;
-  }
-  const ArrayResult = Array(length);
-  for (let num = 0; num < length; num = num + 1) {
-    ArrayResult[num] = arg0[num];
-  }
-  return ArrayResult;
-}
-let closure_9 = [];
-let c10 = false;
-let tmp2 = ((PersistedStore) => {
-  class FriendGroupsStore {
-    constructor() {
-      self = this;
-      tmp = FriendGroupsStore(this, FriendGroupsStore);
-      obj = outer1_3(FriendGroupsStore);
-      tmp2 = outer1_2;
-      if (outer1_11()) {
-        tmp6 = globalThis;
-        _Reflect = Reflect;
-        tmp7 = outer1_3;
-        tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, outer1_3(self).constructor);
-      } else {
-        tmp3 = arguments;
-        tmp4 = arguments;
-        constructResult = obj(...arguments);
-      }
-      return tmp2(self, constructResult);
+    let flag = groups.isInitialized;
+    if (flag == null) {
+      flag = false;
     }
   }
-  callback2(FriendGroupsStore, PersistedStore);
-  let obj = {
-    key: "initialize",
-    value(groups) {
-      this.waitFor(outer1_6, outer1_7, outer1_5, outer1_8);
-      if (null != groups) {
-        groups = groups.groups;
-        if (null == groups) {
-          groups = [];
-        }
-        const outer1_9 = groups;
-        const isInitialized = groups.isInitialized;
-        const outer1_10 = null != isInitialized && isInitialized;
-      }
-    }
-  };
-  const items = [obj, , , , , , , ];
-  obj = {
-    key: "getGroups",
-    value() {
-      return outer1_9;
-    }
-  };
-  items[1] = obj;
-  obj = {
-    key: "getGroup",
-    value(arg0) {
-      let _isNativeReflectConstruct = arg0;
-      const found = outer1_9.find((id) => id.id === _isNativeReflectConstruct);
-      let tmp2 = null;
-      if (null != found) {
-        tmp2 = found;
-      }
-      return tmp2;
-    }
-  };
-  items[2] = obj;
-  items[3] = {
-    key: "getGroupIds",
-    value() {
-      return outer1_9.map((id) => id.id);
-    }
-  };
-  items[4] = {
-    key: "getUserGroups",
-    value(arg0) {
-      let _isNativeReflectConstruct = arg0;
-      return outer1_9.filter((userIds) => {
-        userIds = userIds.userIds;
-        return userIds.includes(_isNativeReflectConstruct);
-      });
-    }
-  };
-  items[5] = {
-    key: "isGroupEmpty",
-    value(arg0) {
-      const group = this.getGroup(arg0);
-      let tmp2 = null == group;
-      if (!tmp2) {
-        tmp2 = 0 === group.userIds.length;
-      }
-      return tmp2;
-    }
-  };
-  items[6] = {
-    key: "isInitialized",
-    value() {
-      return outer1_10;
-    }
-  };
-  items[7] = {
-    key: "getState",
-    value() {
-      return { groups: outer1_9, isInitialized: outer1_10 };
-    }
-  };
-  return callback(FriendGroupsStore, items);
-})(require("initialize").PersistedStore);
-tmp2.displayName = "FriendGroupsStore";
-tmp2.persistKey = "FriendGroupsStoreV2";
-tmp2 = new tmp2(require("dispatcher"), {
+};
+prototype["getGroups"] = function getGroups() {
+  return closure_4;
+};
+prototype["getGroup"] = function getGroup(arg0) {
+  let recomputeAffinities = arg0;
+  let found = arr.find((id) => id.id === recomputeAffinities);
+  if (found == null) {
+    found = null;
+  }
+  return found;
+};
+prototype["getGroupIds"] = function getGroupIds() {
+  return arr.map((id) => id.id);
+};
+prototype["getUserGroups"] = function getUserGroups(arg0) {
+  let recomputeAffinities = arg0;
+  return arr.filter((userIds) => {
+    userIds = userIds.userIds;
+    return userIds.includes(recomputeAffinities);
+  });
+};
+prototype["isGroupEmpty"] = function isGroupEmpty(arg0) {
+  const group = this.getGroup(arg0);
+  let tmp2 = null == group;
+  if (!tmp2) {
+    tmp2 = 0 === group.userIds.length;
+  }
+  return tmp2;
+};
+prototype["isInitialized"] = function isInitialized() {
+  return c5;
+};
+prototype["getState"] = function getState() {
+  return { groups: closure_4, isInitialized: c5 };
+};
+FriendGroupsStore.displayName = "FriendGroupsStore";
+FriendGroupsStore.persistKey = "FriendGroupsStoreV2";
+const friendGroupsStore = new FriendGroupsStore(require("dispatcher"), {
   POST_CONNECTION_OPEN: function handleInitializeFriendGroups() {
-    if (!c10) {
+    if (!c5) {
       if (arr.length <= 0) {
         arr = [];
-        c10 = true;
+        c5 = true;
       }
     }
     return false;
   },
   CREATE_FRIEND_GROUP: function handleCreateFriendGroup(groupId) {
     groupId = groupId.groupId;
-    let flag = !arr.some((id) => id.id === groupId);
-    if (flag) {
-      const obj = { id: groupId, name: groupId.name, userIds: [] };
+    const someResult = arr.some((id) => id.id === groupId);
+    let flag = !someResult;
+    if (!someResult) {
+      const obj = { id: null, name: null, userIds: null };
+      obj[0] = groupId;
+      obj[1] = groupId.name;
+      obj[2] = [];
       arr = arr.push(obj);
       flag = true;
     }
@@ -232,7 +96,7 @@ tmp2 = new tmp2(require("dispatcher"), {
     if (flag) {
       const obj = {};
       const merged = Object.assign(arr[findIndexResult]);
-      obj["name"] = groupId.name;
+      obj.name = groupId.name;
       arr[findIndexResult] = obj;
       flag = true;
     }
@@ -243,20 +107,19 @@ tmp2 = new tmp2(require("dispatcher"), {
     found = found.filter((id) => id.id !== groupId);
     return found.length !== found.length;
   },
-  REORDER_FRIEND_GROUPS: function handleReorderFriendGroups(groupIds) {
-    let iter2;
+  REORDER_FRIEND_GROUPS: function handleReorderFriendGroups(arg0) {
     let items = [];
-    const tmp = _createForOfIteratorHelperLoose(groupIds.groupIds);
-    let iter = tmp();
-    if (!iter.done) {
-      do {
-        let value = map.get(iter.value);
-        if (null != value) {
-          let arr = items.push(value);
-        }
-        iter2 = tmp();
-        iter = iter2;
-      } while (!iter2.done);
+    const map = new Map(items.map((id) => {
+      const items = [id.id, id];
+      return items;
+    }));
+    while (tmp !== undefined) {
+      let value = map.get(tmp2);
+      if (null != value) {
+        let tmp5 = value;
+        let arr = items.push(tmp4);
+      }
+      continue;
     }
     let flag = items.length === items.length;
     if (flag) {
@@ -265,11 +128,11 @@ tmp2 = new tmp2(require("dispatcher"), {
     return flag;
   },
   ADD_USERS_TO_GROUP: function handleAddUsersToGroup(arg0) {
-    let _isNativeReflectConstruct;
+    let recomputeAffinities;
     let userIds;
-    ({ groupId: _isNativeReflectConstruct, userIds } = arg0);
+    ({ groupId: recomputeAffinities, userIds } = arg0);
     let set;
-    const findIndexResult = arr.findIndex((id) => id.id === _isNativeReflectConstruct);
+    const findIndexResult = arr.findIndex((id) => id.id === recomputeAffinities);
     if (-1 === findIndexResult) {
       return false;
     } else {
@@ -282,7 +145,7 @@ tmp2 = new tmp2(require("dispatcher"), {
         const merged = Object.assign(tmp11);
         const items = [];
         HermesBuiltin.arraySpread(found, HermesBuiltin.arraySpread(tmp11.userIds, 0));
-        obj["userIds"] = items;
+        obj.userIds = items;
         arr[findIndexResult] = obj;
         flag = true;
       }
@@ -290,23 +153,23 @@ tmp2 = new tmp2(require("dispatcher"), {
     }
   },
   REMOVE_USERS_FROM_GROUP: function handleRemoveUsersFromGroup(arg0) {
-    let _isNativeReflectConstruct;
+    let recomputeAffinities;
     let userIds;
-    ({ groupId: _isNativeReflectConstruct, userIds } = arg0);
+    ({ groupId: recomputeAffinities, userIds } = arg0);
     let set;
-    const findIndexResult = arr.findIndex((id) => id.id === _isNativeReflectConstruct);
+    const findIndexResult = arr.findIndex((id) => id.id === recomputeAffinities);
     if (-1 === findIndexResult) {
       return false;
     } else {
       const _Set = Set;
       set = new Set(userIds);
-      userIds = tmp7.userIds;
+      userIds = tmp3.userIds;
       const found = userIds.filter((arg0) => !set.has(arg0));
-      let flag = found.length !== tmp7.userIds.length;
+      let flag = found.length !== tmp3.userIds.length;
       if (flag) {
         const obj = {};
-        const merged = Object.assign(tmp7);
-        obj["userIds"] = found;
+        const merged = Object.assign(tmp3);
+        obj.userIds = found;
         arr[findIndexResult] = obj;
         flag = true;
       }
@@ -314,6 +177,6 @@ tmp2 = new tmp2(require("dispatcher"), {
     }
   }
 });
-let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/friend_groups/FriendGroupsStore.tsx");
+const result = require("upsertRelationship").fileFinishedImporting("modules/friend_groups/FriendGroupsStore.tsx");
 
-export default tmp2;
+export default friendGroupsStore;

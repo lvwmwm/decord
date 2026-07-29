@@ -1,16 +1,16 @@
-// Module ID: 4395
-// Function ID: 38802
+// Module ID: 4418
+// Function ID: 4419
 // Name: useNullableMessageAuthor
-// Dependencies: [1348, 1918, 1911, 1838, 3802, 1850, 44, 566, 4004, 4396, 2]
+// Dependencies: [1372, 1942, 1935, 1862, 3826, 1874, 38, 589, 4028, 4419, 2]
 // Exports: default, getMessageAuthor, useUserNickAndColor
 
-// Module 4395 (useNullableMessageAuthor)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_4 from "_isNativeReflectConstruct";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import closure_6 from "_createForOfIteratorHelperLoose";
-import closure_7 from "_isNativeReflectConstruct";
-import closure_8 from "_isNativeReflectConstruct";
+// Module 4418 (useNullableMessageAuthor)
+import ensureGuildLoaded from "ensureGuildLoaded";
+import trackCommunicationDisabled from "trackCommunicationDisabled";
+import createGuildRoleRecordFromRust from "createGuildRoleRecordFromRust";
+import createGuildRecordFromRust from "createGuildRecordFromRust";
+import upsertRelationship from "upsertRelationship";
+import mergeGuildAvatar from "mergeGuildAvatar";
 
 const require = arg1;
 function useNullableMessageAuthor(message) {
@@ -19,165 +19,176 @@ function useNullableMessageAuthor(message) {
   const items = [guild_id];
   const stateFromStores = obj.useStateFromStores(items, () => {
     let channel = null;
-    if (null != message) {
-      channel = guild_id.getChannel(message.channel_id);
+    if (null != closure_0) {
+      channel = guild_id.getChannel(tmp.channel_id);
     }
     return channel;
   });
   id = undefined;
-  if (null != message) {
+  if (message != null) {
     let author = message.author;
-    if (null != author) {
+    if (author != null) {
       id = author.id;
     }
   }
   guild_id = undefined;
-  if (null != stateFromStores) {
+  if (stateFromStores != null) {
     guild_id = stateFromStores.guild_id;
   }
+  let tmpResult = tmp(tmp2[7]);
   const items1 = [colorRoleId];
-  const stateFromStores1 = _require(id[7]).useStateFromStores(items1, () => {
+  const stateFromStores1 = tmpResult.useStateFromStores(items1, () => {
     let member = null;
     if (null != guild_id) {
       member = null;
       if (null != id) {
-        member = colorRoleId.getMember(guild_id, id);
+        member = colorRoleId.getMember(tmp, tmp3);
       }
     }
     return member;
   });
-  const obj2 = _require(id[7]);
-  const items2 = [closure_8];
+  tmpResult = tmp(tmp2[7]);
+  const items2 = [mergeGuildAvatar];
   const items3 = [id];
-  const stateFromStores2 = _require(id[7]).useStateFromStores(items2, () => outer1_8.getUser(id), items3);
-  const obj3 = _require(id[7]);
-  let tmp6 = stateFromStores2;
-  if (null != message) {
-    tmp6 = stateFromStores2;
-    if (message.author.bot) {
-      author = undefined;
-      if (null != message) {
-        author = message.author;
-      }
-      tmp6 = author;
-    }
+  let stateFromStores2 = tmpResult.useStateFromStores(items2, () => outer1_8.getUser(id), items3);
+  let bot;
+  if (message != null) {
+    bot = message.author.bot;
   }
-  const name = stateFromStores(id[8]).useName(tmp6);
+  if (bot) {
+    author = undefined;
+    if (message != null) {
+      author = message.author;
+    }
+    stateFromStores2 = author;
+  }
+  const name = stateFromStores(id[8]).useName(stateFromStores2);
   const obj4 = stateFromStores(id[8]);
-  const items4 = [closure_6];
+  const items4 = [createGuildRecordFromRust];
   const items5 = [guild_id];
   colorRoleId = undefined;
   const stateFromStores3 = _require(id[7]).useStateFromStores(items4, () => outer1_6.getGuild(guild_id), items5);
-  if (null != stateFromStores1) {
+  if (stateFromStores1 != null) {
     colorRoleId = stateFromStores1.colorRoleId;
   }
-  const obj5 = _require(id[7]);
-  const items6 = [_createForOfIteratorHelperLoose];
+  const tmpResult1 = _require(id[7]);
+  const items6 = [createGuildRoleRecordFromRust];
   const items7 = [guild_id, colorRoleId];
   const stateFromStores4 = _require(id[7]).useStateFromStores(items6, () => {
     let role;
     if (null != guild_id) {
       if (null != colorRoleId) {
-        role = outer1_5.getRole(guild_id, colorRoleId);
+        role = outer1_5.getRole(tmp, tmp3);
       }
     }
     return role;
   }, items7);
-  const obj6 = _require(id[7]);
-  const items8 = [closure_7];
+  const tmpResult2 = _require(id[7]);
+  const items8 = [upsertRelationship];
   const stateFromStores5 = _require(id[7]).useStateFromStores(items8, () => {
     let nickname = null;
     if (null != id) {
-      nickname = null;
-      if (null != stateFromStores) {
-        nickname = null;
-        if (stateFromStores.isPrivate()) {
-          nickname = outer1_7.getNickname(id);
-        }
+      let isPrivateResult;
+      if (stateFromStores != null) {
+        isPrivateResult = obj.isPrivate();
       }
+      nickname = null;
+      if (isPrivateResult) {
+        nickname = outer1_7.getNickname(tmp);
+      }
+      obj = stateFromStores;
     }
     return nickname;
   });
-  obj = { userId: id, guildId: guild_id };
-  let tmp14 = null;
+  let tmp16 = null;
   if (null != message) {
-    obj = { user: message.author, channel: stateFromStores, guild: stateFromStores3, memberColorRole: stateFromStores4, userName: name, member: stateFromStores1, friendNickname: stateFromStores5, displayNameStyles: tmp13 };
-    tmp14 = computeMessageAuthor(obj);
+    obj = { user: null, channel: null, guild: null, memberColorRole: null, userName: null, member: null, friendNickname: null, displayNameStyles: null };
+    obj[0] = message.author;
+    obj[1] = stateFromStores;
+    obj[2] = stateFromStores3;
+    obj[3] = stateFromStores4;
+    obj[4] = name;
+    obj[5] = stateFromStores1;
+    obj[6] = stateFromStores5;
+    obj[7] = tmp15;
+    tmp16 = computeMessageAuthor(obj);
   }
-  return tmp14;
+  return tmp16;
 }
-function useNullableUserAuthor(stateFromStores1, channel) {
+function useNullableUserAuthor(author, channel) {
   const _require = channel;
   let id;
-  if (null != stateFromStores1) {
-    id = stateFromStores1.id;
+  if (author != null) {
+    id = author.id;
   }
   let guild_id;
-  if (null != channel) {
+  if (channel != null) {
     guild_id = channel.guild_id;
   }
   let obj = _require(guild_id[7]);
-  const items = [closure_4];
+  const items = [trackCommunicationDisabled];
   const stateFromStores = obj.useStateFromStores(items, () => {
     let member = null;
     if (null != guild_id) {
       member = null;
       if (null != id) {
-        member = outer1_4.getMember(guild_id, id);
+        member = outer1_4.getMember(tmp, tmp3);
       }
     }
     return member;
   });
-  const items1 = [closure_6];
+  const items1 = [createGuildRecordFromRust];
   const items2 = [guild_id];
   let colorRoleId;
-  stateFromStores1 = _require(guild_id[7]).useStateFromStores(items1, () => outer1_6.getGuild(guild_id), items2);
-  if (null != stateFromStores) {
+  const stateFromStores1 = _require(guild_id[7]).useStateFromStores(items1, () => outer1_6.getGuild(guild_id), items2);
+  if (stateFromStores != null) {
     colorRoleId = stateFromStores.colorRoleId;
   }
-  const obj2 = _require(guild_id[7]);
-  const items3 = [_createForOfIteratorHelperLoose];
+  let tmp3Result = tmp3(tmp4[7]);
+  const items3 = [createGuildRoleRecordFromRust];
   const items4 = [guild_id, colorRoleId];
-  const stateFromStores2 = _require(guild_id[7]).useStateFromStores(items3, () => {
+  const stateFromStores2 = tmp3Result.useStateFromStores(items3, () => {
     let role;
     if (null != guild_id) {
       if (null != colorRoleId) {
-        role = outer1_5.getRole(guild_id, colorRoleId);
+        role = outer1_5.getRole(tmp, tmp3);
       }
     }
     return role;
   }, items4);
-  const obj3 = _require(guild_id[7]);
-  const items5 = [closure_7];
-  const stateFromStores3 = _require(guild_id[7]).useStateFromStores(items5, () => {
+  tmp3Result = tmp3(tmp4[7]);
+  const items5 = [upsertRelationship];
+  const stateFromStores3 = tmp3Result.useStateFromStores(items5, () => {
     let nickname = null;
     if (null != id) {
-      nickname = null;
-      if (null != _private) {
-        nickname = null;
-        if (_private.isPrivate()) {
-          nickname = outer1_7.getNickname(id);
-        }
+      let isPrivateResult;
+      if (closure_0 != null) {
+        isPrivateResult = obj.isPrivate();
       }
+      nickname = null;
+      if (isPrivateResult) {
+        nickname = outer1_7.getNickname(tmp);
+      }
+      obj = closure_0;
     }
     return nickname;
   });
-  const obj4 = _require(guild_id[7]);
-  obj = { user: stateFromStores1, channel, guild: stateFromStores1, memberColorRole: stateFromStores2, member: stateFromStores, userName: id(guild_id[8]).useName(stateFromStores1), friendNickname: stateFromStores3 };
+  const obj2 = _require(guild_id[7]);
+  obj = { user: author, channel, guild: stateFromStores1, memberColorRole: stateFromStores2, member: stateFromStores, userName: id(guild_id[8]).useName(author), friendNickname: stateFromStores3, displayNameStyles: null };
   let displayNameStyles;
-  if (null != stateFromStores1) {
-    displayNameStyles = stateFromStores1.displayNameStyles;
+  if (author != null) {
+    displayNameStyles = author.displayNameStyles;
   }
-  obj.displayNameStyles = displayNameStyles;
+  obj[7] = displayNameStyles;
   return computeMessageAuthor(obj);
 }
 function getUserAuthor(user, channel) {
   let id;
-  if (null != user) {
+  if (user != null) {
     id = user.id;
   }
   let guild_id;
-  if (null != channel) {
+  if (channel != null) {
     guild_id = channel.guild_id;
   }
   let member = null;
@@ -191,7 +202,7 @@ function getUserAuthor(user, channel) {
   let role;
   if (null != guild_id) {
     let colorRoleId;
-    if (null != member) {
+    if (member != null) {
       colorRoleId = member.colorRoleId;
     }
     if (null != colorRoleId) {
@@ -208,12 +219,12 @@ function getUserAuthor(user, channel) {
       }
     }
   }
-  const obj = { user, channel, guild, memberColorRole: role, member, friendNickname: nickname };
+  const obj = { user, channel, guild, memberColorRole: role, member, friendNickname: nickname, displayNameStyles: null };
   let displayNameStyles;
-  if (null != user) {
+  if (user != null) {
     displayNameStyles = user.displayNameStyles;
   }
-  obj.displayNameStyles = displayNameStyles;
+  obj[6] = displayNameStyles;
   return computeMessageAuthor(obj);
 }
 function computeMessageAuthor(channel) {
@@ -227,77 +238,73 @@ function computeMessageAuthor(channel) {
   ({ user, guild, memberColorRole, member, userName, friendNickname, displayNameStyles } = channel);
   let str = "???";
   if (null != user) {
-    if (null == userName) {
-      let obj = importDefault(4004);
+    if (userName == null) {
+      let obj = importDefault(4028);
       userName = obj.getName(user);
     }
     str = userName;
   }
   let id;
-  if (null != user) {
+  if (user != null) {
     id = user.id;
   }
   if (null != id) {
     if (null != channel.channel) {
       let id1;
-      if (null != guild) {
+      if (guild != null) {
         id1 = guild.id;
       }
       if (null == id1) {
-        obj = { nick: null, colorString: null, colorStrings: null };
-        let tmp9 = str;
-        if (null != friendNickname) {
-          tmp9 = friendNickname;
+        if (friendNickname == null) {
+          friendNickname = str;
         }
-        obj.nick = tmp9;
-        obj.displayNameStyles = displayNameStyles;
+        obj = { nick: null, colorString: null, colorStrings: null, displayNameStyles: null };
+        obj[0] = friendNickname;
+        obj[3] = displayNameStyles;
         let obj1 = obj;
       } else if (null == member) {
-        obj = { nick: str, colorString: null, colorStrings: null, displayNameStyles };
+        obj = { nick: null, colorString: null, colorStrings: null, displayNameStyles: null };
+        obj[0] = str;
+        obj[3] = displayNameStyles;
         obj1 = obj;
       } else {
-        obj1 = {};
-        const nick = member.nick;
-        let tmp5 = str;
-        if (null != nick) {
-          tmp5 = nick;
+        let nick = member.nick;
+        if (nick == null) {
+          nick = str;
         }
-        obj1.nick = tmp5;
-        ({ colorString: obj3.colorString, colorStrings: obj3.colorStrings } = member);
+        obj1 = { nick: null, colorString: null, colorStrings: null, colorRoleName: null, colorRoleId: null, iconRoleId: null, guildMemberAvatar: null, guildMemberAvatarDecoration: null, primaryGuild: null, guildId: null, authorId: null, displayNameStyles: null };
+        obj1[0] = nick;
+        ({ colorString: obj2[1], colorStrings: obj2[2] } = member);
         let name;
-        if (null != memberColorRole) {
+        if (memberColorRole != null) {
           name = memberColorRole.name;
         }
-        obj1.colorRoleName = name;
+        obj1[3] = name;
         let id2;
-        if (null != memberColorRole) {
+        if (memberColorRole != null) {
           id2 = memberColorRole.id;
         }
-        obj1.colorRoleId = id2;
-        ({ iconRoleId: obj3.iconRoleId, avatar: obj3.guildMemberAvatar, avatarDecoration: obj3.guildMemberAvatarDecoration } = member);
+        obj1[4] = id2;
+        ({ iconRoleId: obj2[5], avatar: obj2[6], avatarDecoration: obj2[7] } = member);
         const primaryGuild = user.primaryGuild;
-        let tmp8;
-        if (null != primaryGuild) {
-          tmp8 = primaryGuild;
-        }
-        obj1.primaryGuild = tmp8;
-        obj1.guildId = guild.id;
-        obj1.authorId = user.id;
-        obj1.displayNameStyles = displayNameStyles;
+        obj1[8] = primaryGuild;
+        obj1[9] = guild.id;
+        obj1[10] = user.id;
+        obj1[11] = displayNameStyles;
       }
     }
     return obj1;
   }
-  const obj2 = { nick: str, colorString: null, colorStrings: null, displayNameStyles };
-  obj1 = obj2;
+  obj1 = { nick: str, colorString: null, colorStrings: null, displayNameStyles };
 }
-const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/messages/useMessageAuthor.tsx");
+const result = require("createGuildRoleRecordFromRust").fileFinishedImporting("modules/messages/useMessageAuthor.tsx");
 
 export default function useMessageNickAndColor(message) {
-  let tmp = useNullableMessageAuthor(message);
-  importDefault(44)(null != tmp, "Result cannot be null because the message is not null");
-  if (null != arg1) {
-    tmp = arg1;
+  let tmp = arg1;
+  const tmp2 = useNullableMessageAuthor(message);
+  importDefault(38)(null != tmp2, "Result cannot be null because the message is not null");
+  if (arg1 == null) {
+    tmp = tmp2;
   }
   return tmp;
 };
@@ -305,10 +312,9 @@ export { useNullableMessageAuthor };
 export const getMessageAuthor = function getMessageAuthor(message) {
   return getUserAuthor(message.author, channel.getChannel(message.channel_id));
 };
-export const useUserNickAndColor = function useUserNickAndColor(stateFromStores1, channel) {
-  const tmp = useNullableUserAuthor(stateFromStores1, channel);
-  importDefault(44)(null != tmp, "Result cannot be null because user and channel are not null");
-  return tmp;
+export const useUserNickAndColor = function useUserNickAndColor(author, channel) {
+  importDefault(38)(true, "Result cannot be null because user and channel are not null");
+  return useNullableUserAuthor(author, channel);
 };
 export { useNullableUserAuthor };
 export { getUserAuthor };

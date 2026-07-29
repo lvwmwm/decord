@@ -1,11 +1,11 @@
-// Module ID: 15530
-// Function ID: 119203
+// Module ID: 15564
+// Function ID: 15565
 // Name: MoreButton
-// Dependencies: [31, 33, 9073, 9097, 9094, 1212, 8310, 2]
+// Dependencies: [19, 21, 9097, 9121, 9118, 1236, 8334, 2]
 // Exports: default
 
-// Module 15530 (MoreButton)
-import result from "result";
+// Module 15564 (MoreButton)
+import noop from "noop";
 import { jsx } from "jsxProd";
 
 const require = arg1;
@@ -17,15 +17,15 @@ export default function MoreButton(channel) {
   let tmp2 = null;
   if (null != channel) {
     if (channel.isDM()) {
-      let obj = {};
-      obj = {};
-      const intl = channel(1212).intl;
-      obj.accessibilityLabel = intl.string(channel(1212).t["UKOtz+"]);
-      obj.source = importDefault(8310);
-      obj.onPress = tmp;
-      obj.children = jsx(channel(9094).HeaderIconButton, {});
-      tmp2 = jsx(importDefault(9097), {});
-      const tmp6 = importDefault(9097);
+      let obj = { children: null };
+      obj = { accessibilityLabel: null, source: null, onPress: null };
+      const intl = channel(1236).intl;
+      obj[0] = intl.string(channel(1236).t["UKOtz+"]);
+      obj[1] = importDefault(8334);
+      obj[2] = tmp;
+      obj[0] = jsx(channel(9118).HeaderIconButton, { accessibilityLabel: null, source: null, onPress: null });
+      tmp2 = jsx(importDefault(9121), { accessibilityLabel: null, source: null, onPress: null });
+      const tmp6 = importDefault(9121);
     } else {
       tmp2 = null;
     }

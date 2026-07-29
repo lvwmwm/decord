@@ -1,118 +1,120 @@
-// Module ID: 5739
-// Function ID: 49633
-// Name: getMemberSupplementalByGuildId
-// Dependencies: [5740, 2]
-// Exports: hasMemberSupplemental, syncMemberSupplemental
+// Module ID: 5757
+// Function ID: 5758
+// Name: hasMemberSupplemental
+// Dependencies: [5758, 2]
+// Exports: getMemberSupplementalByGuildId, hasMemberSupplemental, syncMemberSupplemental
 
-// Module 5739 (getMemberSupplementalByGuildId)
-function getMemberSupplementalByGuildId(guildId) {
-  if (null == dependencyMap[guildId]) {
-    dependencyMap[guildId] = {};
-  }
-  return dependencyMap[guildId];
-}
+// Module 5757 (hasMemberSupplemental)
 let closure_2 = {};
 const result = require("set").fileFinishedImporting("modules/guild_mod_dash_member_safety/MemberSafetyStoreSupplemental.tsx");
 
 export const hasMemberSupplemental = function hasMemberSupplemental(arg0, arg1) {
-  let tmp = null != dependencyMap[arg0];
-  if (tmp) {
-    tmp = null != dependencyMap[arg0][arg1];
+  let tmp2 = null != dependencyMap[arg0];
+  if (tmp2) {
+    tmp2 = null != tmp[arg0][arg1];
   }
-  return tmp;
+  return tmp2;
 };
-export { getMemberSupplementalByGuildId };
+export const getMemberSupplementalByGuildId = function getMemberSupplementalByGuildId(guildId) {
+  if (null == dependencyMap[guildId]) {
+    tmp[guildId] = {};
+  }
+  return dependencyMap[guildId];
+};
 export const syncMemberSupplemental = function syncMemberSupplemental(guildId, memberSupplementals) {
   if (0 === memberSupplementals.length) {
     return false;
   } else {
-    let closure_0 = getMemberSupplementalByGuildId(guildId);
+    if (null == dependencyMap[guildId]) {
+      tmp2[guildId] = {};
+    }
+    let closure_0 = tmp2[guildId];
     const item = memberSupplementals.forEach((joinSourceType) => {
+      let sourceInviteCode;
+      let userId;
       joinSourceType = joinSourceType.joinSourceType;
-      if (null == joinSourceType) {
-        joinSourceType = undefined;
-        if (null != tmp) {
-          joinSourceType = tmp.joinSourceType;
+      if (joinSourceType == null) {
+        let joinSourceType1;
+        if (tmp2 != null) {
+          joinSourceType1 = tmp2.joinSourceType;
         }
+        joinSourceType = joinSourceType1;
       }
-      let INVITE = null;
-      if (null != joinSourceType) {
-        INVITE = joinSourceType;
+      if (joinSourceType == null) {
+        joinSourceType = null;
       }
-      let tmp4 = null != INVITE;
-      if (tmp4) {
-        tmp4 = INVITE !== dependencyMap(outer1_1[0]).JoinSourceType.UNSPECIFIED;
+      let tmp5 = null != joinSourceType;
+      if (tmp5) {
+        tmp5 = joinSourceType !== dependencyMap(outer1_1[0]).JoinSourceType.UNSPECIFIED;
       }
-      if (!tmp4) {
-        tmp4 = null == joinSourceType.sourceInviteCode;
+      if (!tmp5) {
+        tmp5 = null == joinSourceType.sourceInviteCode;
       }
-      if (!tmp4) {
-        INVITE = dependencyMap(outer1_1[0]).JoinSourceType.INVITE;
+      if (!tmp5) {
+        joinSourceType = dependencyMap(outer1_1[0]).JoinSourceType.INVITE;
       }
-      const obj = { userId: joinSourceType.userId };
-      let sourceInviteCode = joinSourceType.sourceInviteCode;
-      if (null == sourceInviteCode) {
+      const obj = { userId: joinSourceType.userId, sourceInviteCode: null, joinSourceType: null, inviterId: null, integrationType: null, joinSourceApplicationId: null, joinSourceChannelId: null };
+      ({ sourceInviteCode, userId } = joinSourceType);
+      if (sourceInviteCode == null) {
         sourceInviteCode = undefined;
-        if (null != tmp) {
-          sourceInviteCode = tmp.sourceInviteCode;
+        if (tmp2 != null) {
+          sourceInviteCode = tmp2.sourceInviteCode;
         }
       }
-      let tmp11 = null;
-      if (null != sourceInviteCode) {
-        tmp11 = sourceInviteCode;
+      if (sourceInviteCode == null) {
+        sourceInviteCode = null;
       }
-      obj.sourceInviteCode = tmp11;
-      obj.joinSourceType = INVITE;
+      obj[1] = sourceInviteCode;
+      obj[2] = joinSourceType;
       let inviterId = joinSourceType.inviterId;
-      if (null == inviterId) {
-        inviterId = undefined;
-        if (null != tmp) {
-          inviterId = tmp.inviterId;
+      if (inviterId == null) {
+        let inviterId1;
+        if (tmp2 != null) {
+          inviterId1 = tmp2.inviterId;
         }
+        inviterId = inviterId1;
       }
-      let tmp13 = null;
-      if (null != inviterId) {
-        tmp13 = inviterId;
+      if (inviterId == null) {
+        inviterId = null;
       }
-      obj.inviterId = tmp13;
+      obj[3] = inviterId;
       let integrationType = joinSourceType.integrationType;
-      if (null == integrationType) {
-        integrationType = undefined;
-        if (null != tmp) {
-          integrationType = tmp.integrationType;
+      if (integrationType == null) {
+        let integrationType1;
+        if (tmp2 != null) {
+          integrationType1 = tmp2.integrationType;
         }
+        integrationType = integrationType1;
       }
-      let tmp15 = null;
-      if (null != integrationType) {
-        tmp15 = integrationType;
+      if (integrationType == null) {
+        integrationType = null;
       }
-      obj.integrationType = tmp15;
-      let joinSourceApplicationId = joinSourceType.joinSourceApplicationId;
-      if (null == joinSourceApplicationId) {
-        let prop;
-        if (null != tmp) {
-          prop = tmp.joinSourceApplicationId;
+      obj[4] = integrationType;
+      let prop = joinSourceType.joinSourceApplicationId;
+      if (prop == null) {
+        let prop1;
+        if (tmp2 != null) {
+          prop1 = tmp2.joinSourceApplicationId;
         }
-        joinSourceApplicationId = prop;
+        prop = prop1;
       }
-      let tmp17 = null;
-      if (null != joinSourceApplicationId) {
-        tmp17 = joinSourceApplicationId;
+      if (prop == null) {
+        prop = null;
       }
-      obj.joinSourceApplicationId = tmp17;
+      obj[5] = prop;
       let joinSourceChannelId = joinSourceType.joinSourceChannelId;
-      if (null == joinSourceChannelId) {
-        joinSourceChannelId = undefined;
-        if (null != tmp) {
-          joinSourceChannelId = tmp.joinSourceChannelId;
+      if (joinSourceChannelId == null) {
+        let joinSourceChannelId1;
+        if (tmp2 != null) {
+          joinSourceChannelId1 = tmp2.joinSourceChannelId;
         }
+        joinSourceChannelId = joinSourceChannelId1;
       }
-      let tmp19 = null;
-      if (null != joinSourceChannelId) {
-        tmp19 = joinSourceChannelId;
+      if (joinSourceChannelId == null) {
+        joinSourceChannelId = null;
       }
-      obj.joinSourceChannelId = tmp19;
-      dependencyMap[joinSourceType.userId] = obj;
+      obj[6] = joinSourceChannelId;
+      dependencyMap[userId] = obj;
     });
     return true;
   }

@@ -1,20 +1,23 @@
-// Module ID: 12284
-// Function ID: 95757
-// Dependencies: [31, 33, 9580, 9573, 3866, 1212, 9591, 9577, 1317, 8093, 12283, 9395, 689, 9397, 2]
+// Module ID: 12306
+// Function ID: 12307
+// Dependencies: [19, 21, 9601, 9597, 3890, 1236, 9613, 9598, 1341, 8117, 12305, 9419, 712, 9421, 2]
 
-// Module 12284
-import importAllResult from "result";
+// Module 12306
+import importAllResult from "noop";
 import { jsx } from "jsxProd";
 
 const require = arg1;
+let c3 = importAllResult;
 const memoResult = importAllResult.memo(function GIFFavButton(source) {
   source = source.source;
   let uri;
   let isFavoriteGIF;
   uri = source.isGIFV ? source.embedURI : source.sourceURI;
-  if (null == uri) {
+  if (uri == null) {
     uri = source.uri;
   }
+  let StarIcon = source;
+  let YELLOW_300 = isFavoriteGIF;
   let obj = source(isFavoriteGIF[2]);
   isFavoriteGIF = obj.useIsFavoriteGIF(source(isFavoriteGIF[3]).gifUrlKey(uri));
   const items = [isFavoriteGIF, , , , , , , ];
@@ -24,27 +27,30 @@ const memoResult = importAllResult.memo(function GIFFavButton(source) {
     if (isFavoriteGIF) {
       let tmpResult = tmp(tmp2[3]);
       tmpResult.removeFavoriteGIF(uri);
-      let obj = { key: "REMOVED_FROM_FAVORITES" };
-      const intl2 = tmp(tmp2[5]).intl;
-      obj.content = intl2.string(tmp(tmp2[5]).t.in1rga);
-      obj.IconComponent = tmp(tmp2[6]).GifIcon;
-      uri(tmp2[4]).open(obj);
-      const obj8 = uri(tmp2[4]);
+      let obj = { key: "REMOVED_FROM_FAVORITES", content: null, IconComponent: null };
+      const intl2 = source(isFavoriteGIF[5]).intl;
+      obj[1] = intl2.string(source(isFavoriteGIF[5]).t.in1rga);
+      obj[2] = source(isFavoriteGIF[6]).GifIcon;
+      uri(isFavoriteGIF[4]).open(obj);
+      const obj8 = uri(isFavoriteGIF[4]);
     } else {
       tmpResult = tmp(tmp2[7]);
-      obj = {};
-      ({ embedProviderName: obj2.providerName, thumbnail: obj2.thumbnail } = source);
+      obj = { providerName: null, thumbnail: null };
+      ({ embedProviderName: obj2[0], thumbnail: obj2[1] } = source);
       const gIFThumbnailForFavorite = tmpResult.getGIFThumbnailForFavorite(obj);
-      const obj1 = { url: uri, src: source.uri, gifSrc: gIFThumbnailForFavorite };
-      ({ width: obj4.width, height: obj4.height } = source);
+      let obj2 = source(isFavoriteGIF[3]);
+      const obj1 = { url: null, src: null, gifSrc: null, width: null, height: null, format: null };
+      obj1[0] = uri;
+      obj1[1] = source.uri;
+      obj1[2] = gIFThumbnailForFavorite;
+      ({ width: obj4[3], height: obj4[4] } = source);
       const GIFType = source(isFavoriteGIF[8]).GIFType;
-      obj1.format = source.isGIFV ? GIFType.VIDEO : GIFType.IMAGE;
-      tmp(tmp2[3]).addFavoriteGIF(obj1);
-      const tmpResult1 = tmp(tmp2[3]);
-      const obj2 = { key: "ADDED_TO_FAVORITES" };
+      obj1[5] = source.isGIFV ? GIFType.VIDEO : GIFType.IMAGE;
+      obj2.addFavoriteGIF(obj1);
+      obj2 = { key: "ADDED_TO_FAVORITES", content: null, IconComponent: null };
       const intl = source(isFavoriteGIF[5]).intl;
-      obj2.content = intl.string(source(isFavoriteGIF[5]).t.okQonm);
-      obj2.IconComponent = source(isFavoriteGIF[6]).GifIcon;
+      obj2[1] = intl.string(source(isFavoriteGIF[5]).t.okQonm);
+      obj2[2] = source(isFavoriteGIF[6]).GifIcon;
       uri(isFavoriteGIF[4]).open(obj2);
       const obj5 = uri(isFavoriteGIF[4]);
     }
@@ -55,29 +61,28 @@ const memoResult = importAllResult.memo(function GIFFavButton(source) {
       return null;
     }
   }
-  obj = {};
   obj3 = source(isFavoriteGIF[9]);
-  const tmp4 = jsx;
-  let intl = source(isFavoriteGIF[5]).intl;
+  const tmp5 = uri;
+  let intl = StarIcon(YELLOW_300[5]).intl;
   const string = intl.string;
-  const t = source(isFavoriteGIF[5]).t;
+  const t = StarIcon(YELLOW_300[5]).t;
   if (isFavoriteGIF) {
     let stringResult = string(t["5/NS74"]);
   } else {
     stringResult = string(t.nIH0v8);
   }
-  obj.accessibilityLabel = stringResult;
-  obj.onPress = callback;
-  let StarIcon = source;
+  obj = { accessibilityLabel: stringResult, onPress: callback, icon: null };
   if (isFavoriteGIF) {
-    StarIcon = StarIcon(tmp8[11]).StarIcon;
-    obj = { color: uri(tmp8[12]).unsafe_rawColors.YELLOW_300, size: "md" };
-    let tmp7Result = tmp7(StarIcon, obj);
+    StarIcon = StarIcon(YELLOW_300[11]).StarIcon;
+    obj = { color: null, size: "md" };
+    YELLOW_300 = tmp5(YELLOW_300[12]).unsafe_rawColors.YELLOW_300;
+    obj[0] = YELLOW_300;
+    let tmp4Result = tmp4(StarIcon, obj);
   } else {
-    tmp7Result = tmp7(StarIcon(tmp8[13]).StarOutlineIcon, { color: "interactive-text-default", size: "md" });
+    tmp4Result = tmp4(StarIcon(YELLOW_300[13]).StarOutlineIcon, { color: "interactive-text-default", size: "md" });
   }
-  obj.icon = tmp7Result;
-  tmp4(uri(isFavoriteGIF[10]), obj);
+  obj[2] = tmp4Result;
+  tmp4Result = tmp4(uri(YELLOW_300[10]), obj);
 });
 const result = require("useFavoriteGIFs").fileFinishedImporting("modules/media_viewer/native/components/overlay/MediaViewerOverlayButtonFavoriteGIF.tsx");
 

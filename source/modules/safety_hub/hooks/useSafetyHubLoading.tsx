@@ -1,16 +1,16 @@
-// Module ID: 13760
-// Function ID: 105488
+// Module ID: 13781
+// Function ID: 13782
 // Name: useIsSafetyHubLoading
-// Dependencies: [11048, 566, 2]
+// Dependencies: [11072, 589, 2]
 // Exports: default
 
-// Module 13760 (useIsSafetyHubLoading)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 13781 (useIsSafetyHubLoading)
+import handleSafetyHubRequestAgeVerificationResetModalAction from "handleSafetyHubRequestAgeVerificationResetModalAction";
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/safety_hub/hooks/useSafetyHubLoading.tsx");
 
 export default function useIsSafetyHubLoading() {
-  const items = [_isNativeReflectConstruct];
-  return require(566) /* initialize */.useStateFromStores(items, () => outer1_2.isFetching());
+  const items = [handleSafetyHubRequestAgeVerificationResetModalAction];
+  return require(589) /* initialize */.useStateFromStores(items, () => fetching.isFetching());
 };

@@ -1,12 +1,12 @@
-// Module ID: 10302
-// Function ID: 79494
+// Module ID: 10323
+// Function ID: 10324
 // Name: NotificationSettingsMessageNotificationGuildActionSheet
-// Dependencies: [31, 4360, 653, 4361, 662, 33, 10297, 10303, 1212, 10292, 5113, 5108, 2]
+// Dependencies: [19, 4385, 676, 4386, 685, 21, 10318, 10324, 1236, 10313, 5135, 5130, 2]
 // Exports: default
 
-// Module 10302 (NotificationSettingsMessageNotificationGuildActionSheet)
-import "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 10323 (NotificationSettingsMessageNotificationGuildActionSheet)
+import "noop";
+import updateUserGuildSettingsInternal from "updateUserGuildSettingsInternal";
 import { UserNotificationSettings } from "ME";
 import { UnreadSetting } from "ReadStateTypes";
 import { GuildNotificationSettingsFlags as closure_6 } from "MAX_FAVORITES";
@@ -17,20 +17,20 @@ let result = require("ME").fileFinishedImporting("modules/notifications/settings
 
 export default function NotificationSettingsMessageNotificationGuildActionSheet(guildId) {
   const _require = guildId;
-  let obj = _require(10297);
+  let obj = _require(10318);
   const guildPresetSettings = obj.useGuildPresetSettings(guildId.guildId);
   const unread = guildPresetSettings.unread;
   const notification = guildPresetSettings.notification;
-  obj = { context: "guild", value: notification };
+  obj = { context: "guild", value: notification, allMessagesSubLabel: null, onChange: null };
   let stringResult;
   if (notification !== UserNotificationSettings.ALL_MESSAGES) {
     if (unread !== UnreadSetting.ALL_MESSAGES) {
-      const intl = _require(1212).intl;
-      stringResult = intl.string(_require(1212).t.eP8yWU);
+      const intl = tmp(1236).intl;
+      stringResult = intl.string(tmp(1236).t.eP8yWU);
     }
   }
-  obj.allMessagesSubLabel = stringResult;
-  obj.onChange = function onChange(message_notifications) {
+  obj[2] = stringResult;
+  obj[3] = function onChange(message_notifications) {
     const obj = { message_notifications };
     let tmp = message_notifications === outer1_4.ALL_MESSAGES;
     if (tmp) {
@@ -43,5 +43,5 @@ export default function NotificationSettingsMessageNotificationGuildActionSheet(
     const NotificationLabel = guildId(outer1_2[11]).NotificationLabel;
     const result = unread(outer1_2[10]).updateGuildNotificationSettings(guildId.guildId, obj, NotificationLabel.notifications(message_notifications));
   };
-  return jsx(unread(10303), { context: "guild", value: notification });
+  return jsx(unread(10324), { context: "guild", value: notification, allMessagesSubLabel: null, onChange: null });
 };

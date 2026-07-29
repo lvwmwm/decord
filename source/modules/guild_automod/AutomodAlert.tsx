@@ -1,10 +1,10 @@
-// Module ID: 5755
-// Function ID: 49722
+// Module ID: 5773
+// Function ID: 5774
 // Name: AutomodAlertActionType
 // Dependencies: [2]
 // Exports: parseAlertActionsExecution
 
-// Module 5755 (AutomodAlertActionType)
+// Module 5773 (AutomodAlertActionType)
 const result = require("set").fileFinishedImporting("modules/guild_automod/AutomodAlert.tsx");
 
 export const AutomodAlertActionType = { SET_COMPLETED: 1, [1]: "SET_COMPLETED", UNSET_COMPLETED: 2, [2]: "UNSET_COMPLETED", DELETE_USER_MESSAGE: 3, [3]: "DELETE_USER_MESSAGE", SUBMIT_FEEDBACK: 4, [4]: "SUBMIT_FEEDBACK" };
@@ -12,31 +12,31 @@ export const parseAlertActionsExecution = function parseAlertActionsExecution(ar
   if (null == arg0) {
     return null;
   } else {
-    let parsed = null;
-    if (null != arg0) {
-      const _JSON = JSON;
-      parsed = JSON.parse(arg0);
-    }
-    while (true) {
-      let tmp4 = null;
-      if (null == parsed) {
-        break;
+    const tmp = (function safeJsonParse(arg0) {
+      if (null == arg0) {
+        return null;
       } else {
-        tmp4 = null;
-        if (null == parsed.actions) {
-          break;
-        } else {
-          let tmp5 = globalThis;
-          let _Object = Object;
-          let keys = Object.keys(parsed.actions);
-          let item = keys.forEach((actionType) => {
-            parsed.actions[actionType].actionType = actionType;
-          });
-          tmp4 = parsed;
-          break;
+        try {
+          const _JSON = JSON;
+          return JSON.parse(arg0);
+        } catch (err) {
+          return tmp;
         }
       }
-      return tmp4;
+    })(arg0);
+    let closure_0 = tmp;
+    let tmp2 = null;
+    if (null != tmp) {
+      tmp2 = null;
+      if (null != tmp.actions) {
+        const _Object = Object;
+        const keys = Object.keys(tmp.actions);
+        const item = keys.forEach((actionType) => {
+          tmp.actions[actionType].actionType = actionType;
+        });
+        tmp2 = tmp;
+      }
     }
+    return tmp2;
   }
 };

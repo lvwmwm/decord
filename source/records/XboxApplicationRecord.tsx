@@ -1,26 +1,25 @@
-// Module ID: 12781
-// Function ID: 99344
-// Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 4188, 4849, 2]
+// Module ID: 12803
+// Function ID: 12804
+// Name: getIconURL
+// Dependencies: [4212, 4871, 2]
 
-// Module 12781 (_isNativeReflectConstruct)
-import getPlatformUserUrl from "getPlatformUserUrl";
-import set from "set";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
-import tmp2 from "_callSuper";
+// Module 12803 (getIconURL)
+import "createExecutable";
 
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
+let c2 = "xbox:";
+const result = require("set").fileFinishedImporting("records/XboxApplicationRecord.tsx");
+class XboxApplicationRecord extends tmp2 {
+  constructor(arg0) {
+    tmp3 = new XboxApplicationRecord(global, tmp2, tmp);
+    // ThrowIfThisInitialized (0x7c)
+    tmp3.id = "" + c2 + global.name;
+    tmp3.name = global.name;
+    return tmp3;
   }
-  const result = _isNativeReflectConstruct();
 }
-let result = require("_possibleConstructorReturn").fileFinishedImporting("records/XboxApplicationRecord.tsx");
+XboxApplicationRecord.prototype["getIconURL"] = function getIconURL() {
+  return importDefault(4871).get("xbox").icon.lightPNG;
+};
 
-export default tmp2;
+export default XboxApplicationRecord;
 export const XBOX_APPLICATION_ID_PREFIX = "xbox:";

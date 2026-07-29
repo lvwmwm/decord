@@ -1,50 +1,40 @@
-// Module ID: 10665
-// Function ID: 82913
+// Module ID: 10689
+// Function ID: 10690
 // Name: isVoicePanelEnabled
-// Dependencies: [1348, 4237, 4377, 4378, 624, 2]
+// Dependencies: [1372, 4261, 4400, 4401, 647, 2]
 // Exports: isVoicePanelEnabled, useIsAnyVoicePanelOpen, useIsVoicePanelFullscreen, useIsVoicePanelMounted, useIsVoicePanelOpen, useIsVoicePanelShowing
 
-// Module 10665 (isVoicePanelEnabled)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_3 from "_isNativeReflectConstruct";
+// Module 10689 (isVoicePanelEnabled)
+import ensureGuildLoaded from "ensureGuildLoaded";
+import createRTCConnection from "createRTCConnection";
 import withEqualityFn from "withEqualityFn";
 
 const require = arg1;
 let result = require("withEqualityFn").fileFinishedImporting("modules/voice_panel/VoicePanelUtils.native.tsx");
 
 export const isVoicePanelEnabled = function isVoicePanelEnabled(channel2) {
-  let tmp = !require(4378) /* useIsStageVoicePanelEnabled */.isStageVoicePanelEnabled("voice_panel_utils");
-  if (tmp) {
+  const result = require(4401) /* useIsStageVoicePanelEnabled */.isStageVoicePanelEnabled("voice_panel_utils");
+  let tmp2 = !result;
+  if (!result) {
     let isGuildStageVoiceResult;
-    if (null != channel2) {
+    if (channel2 != null) {
       isGuildStageVoiceResult = channel2.isGuildStageVoice();
     }
-    tmp = null != isGuildStageVoiceResult;
-    const tmp2 = isGuildStageVoiceResult;
+    tmp2 = isGuildStageVoiceResult;
   }
-  if (tmp) {
-    tmp = tmp2;
-  }
-  return !tmp;
+  return !tmp2;
 };
 export const useIsVoicePanelShowing = function useIsVoicePanelShowing() {
-  const items = [_isNativeReflectConstruct, closure_3];
-  return require(624) /* defaultAreStatesEqual */.useStateFromStores(items, () => {
-    let obj = outer1_2;
-    let obj2 = outer1_3;
-    if (outer1_2 === undefined) {
-      obj = outer1_2;
-    }
-    if (obj2 === undefined) {
-      obj2 = outer1_3;
-    }
-    const channel = obj.getChannel(obj2.getChannelId());
+  const items = [ensureGuildLoaded, createRTCConnection];
+  return require(647) /* defaultAreStatesEqual */.useStateFromStores(items, () => {
+    channel = channel.getChannel(channelId.getChannelId());
     let tmp = null != channel;
     if (tmp) {
-      let result = !channel.isGuildStageVoice();
-      if (!result) {
-        result = outer1_0(outer1_1[3]).isStageVoicePanelEnabled("voice_panel_utils");
-        const obj4 = outer1_0(outer1_1[3]);
+      const isGuildStageVoiceResult = channel.isGuildStageVoice();
+      let result = !isGuildStageVoiceResult;
+      if (isGuildStageVoiceResult) {
+        result = callback(table[3]).isStageVoicePanelEnabled("voice_panel_utils");
+        const obj2 = callback(table[3]);
       }
       tmp = result;
     }

@@ -1,12 +1,13 @@
-// Module ID: 8490
-// Function ID: 67465
+// Module ID: 8514
+// Function ID: 8515
 // Name: context
-// Dependencies: [31, 2]
+// Dependencies: [19, 2]
 // Exports: useObscuredSurface
 
-// Module 8490 (context)
-import importAllResult from "result";
+// Module 8514 (context)
+import importAllResult from "noop";
 
+let c0 = importAllResult;
 const context = importAllResult.createContext({ obscured: false });
 const result = require("set").fileFinishedImporting("modules/safety_common/ObscuredSurfaceContext.tsx");
 

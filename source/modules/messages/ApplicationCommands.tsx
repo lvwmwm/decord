@@ -1,37 +1,39 @@
-// Module ID: 7769
-// Function ID: 61760
+// Module ID: 7792
+// Function ID: 7793
 // Name: getApplicationCommand
-// Dependencies: [57, 2]
+// Dependencies: [32, 2]
 // Exports: getApplicationCommand
 
-// Module 7769 (getApplicationCommand)
+// Module 7792 (getApplicationCommand)
 import _slicedToArray from "_slicedToArray";
 
 const re1 = /<\/([^\s]+):(\d+)>(?:\s?(.*))?/;
 const result = require("set").fileFinishedImporting("modules/messages/ApplicationCommands.tsx");
 
 export const getApplicationCommand = function getApplicationCommand(content) {
+  let tmp7;
+  let tmp8;
+  let tmp9;
   const match = regex.exec(content);
   if (null == match) {
     return null;
   } else {
-    const tmp6 = callback(match, 4);
-    const first = tmp6[0];
+    [r10025, tmp7, tmp8, tmp9] = callback(match, 4);
     let tmp2 = null;
-    if (null != tmp6[1]) {
+    if (null != tmp7) {
       tmp2 = null;
-      if (null != tmp9) {
-        const obj = {};
+      if (null != tmp8) {
         let str2 = "";
-        if (null != tmp10) {
+        if (null != tmp9) {
           const _HermesInternal = HermesInternal;
-          str2 = " " + tmp10;
+          str2 = " " + tmp9;
         }
+        const obj = { content: null, name: null, id: null, hasOptions: null };
         const _HermesInternal2 = HermesInternal;
-        obj.content = "/" + tmp8 + str2;
-        obj.name = tmp8;
-        obj.id = tmp9;
-        obj.hasOptions = null != tmp10 && "" !== tmp10;
+        obj[0] = "/" + tmp7 + str2;
+        obj[1] = tmp7;
+        obj[2] = tmp8;
+        obj[3] = null != tmp9 && "" !== tmp9;
         tmp2 = obj;
       }
     }

@@ -1,191 +1,132 @@
-// Module ID: 1338
-// Function ID: 15730
-// Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 653, 1339, 1335, 675, 566, 686, 2]
+// Module ID: 1362
+// Function ID: 1363
+// Name: set
+// Dependencies: [676, 1363, 1359, 698, 589, 709, 2]
 
-// Module 1338 (_isNativeReflectConstruct)
-import closure_3 from "set";
-import isTimeRecurringDismissibleContent from "isTimeRecurringDismissibleContent";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
+// Module 1362 (set)
 import { AnalyticEvents } from "ME";
-import set from "_possibleConstructorReturn";
+import { PersistedStore } from "initialize";
+import set from "isSingleUseDismissibleContent";
 
-const require = arg1;
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
-  }
-  const result = _isNativeReflectConstruct();
-}
-function hasAlreadySeenDCForGuild(dismissibleContent, guildId) {
-  const seenForGuildId = obj.seenForGuildId;
-  const value = seenForGuildId.get(guildId);
-  let hasItem = null != value;
-  if (hasItem) {
-    hasItem = value.has(dismissibleContent);
-  }
-  return hasItem;
-}
-let obj = { numberOfDCsShownToday: 0, dailyCapPeriodStart: null, dismissibleContentSeenDuringSession: null, dailyCapOverridden: false, newUserMinAgeRequiredOverridden: false, renderedAtTimestamps: null, lastDismissed: null };
+let obj = { numberOfDCsShownToday: 0, dailyCapPeriodStart: null, dismissibleContentSeenDuringSession: null, dailyCapOverridden: false, newUserMinAgeRequiredOverridden: false, renderedAtTimestamps: null, lastDismissed: null, seenForGuildId: null };
 let set = new Set();
-obj.dismissibleContentSeenDuringSession = set;
-obj.renderedAtTimestamps = new Map();
+obj[2] = set;
+obj[5] = new Map();
 let map = new Map();
-obj.seenForGuildId = new Map();
-let tmp5 = ((PersistedStore) => {
-  class DismissibleContentFrameworkStore {
-    constructor() {
-      self = this;
-      tmp = outer1_3(this, DismissibleContentFrameworkStore);
-      obj = outer1_6(DismissibleContentFrameworkStore);
-      tmp2 = outer1_5;
-      if (outer1_10()) {
-        tmp6 = globalThis;
-        _Reflect = Reflect;
-        tmp7 = outer1_6;
-        tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, outer1_6(self).constructor);
-      } else {
-        tmp3 = arguments;
-        tmp4 = arguments;
-        constructResult = obj(...arguments);
-      }
-      return tmp2(self, constructResult);
+obj[7] = new Map();
+class DismissibleContentFrameworkStore extends PersistedStore {
+}
+const prototype = DismissibleContentFrameworkStore.prototype;
+prototype["initialize"] = function initialize(numberOfDCsShownToday) {
+  let dailyCapOverridden;
+  if (null != numberOfDCsShownToday) {
+    let num = numberOfDCsShownToday.numberOfDCsShownToday;
+    if (num == null) {
+      num = 0;
     }
+    obj.numberOfDCsShownToday = num;
+    ({ dailyCapPeriodStart: obj.dailyCapPeriodStart, dailyCapOverridden } = numberOfDCsShownToday);
+    if (dailyCapOverridden == null) {
+      dailyCapOverridden = false;
+    }
+    obj.dailyCapOverridden = dailyCapOverridden;
+    let flag = numberOfDCsShownToday.newUserMinAgeRequiredOverridden;
+    if (flag == null) {
+      flag = false;
+    }
+    obj.newUserMinAgeRequiredOverridden = flag;
+    const tmp = obj;
+    const tmp3 = obj;
+    const tmp4 = obj;
   }
-  callback2(DismissibleContentFrameworkStore, PersistedStore);
-  let obj = {
-    key: "initialize",
-    value(numberOfDCsShownToday) {
-      let dailyCapOverridden;
-      if (null != numberOfDCsShownToday) {
-        numberOfDCsShownToday = numberOfDCsShownToday.numberOfDCsShownToday;
-        let num = 0;
-        if (null != numberOfDCsShownToday) {
-          num = numberOfDCsShownToday;
+  obj.dismissibleContentSeenDuringSession = new Set();
+  const set = new Set();
+  obj.seenForGuildId = new Map();
+  obj.lastDismissed = null;
+};
+prototype["getState"] = function getState() {
+  return obj;
+};
+Object.defineProperty(prototype, "dailyCapOverridden", {
+  get: function dailyCapOverridden(FlashList, arg1) {
+    return obj.dailyCapOverridden;
+  },
+  set: undefined
+});
+Object.defineProperty(prototype, "newUserMinAgeRequiredOverridden", {
+  get: function newUserMinAgeRequiredOverridden() {
+    return obj.newUserMinAgeRequiredOverridden;
+  },
+  set: undefined
+});
+Object.defineProperty(prototype, "lastDismissed", {
+  get: function lastDismissed() {
+    return obj.lastDismissed;
+  },
+  set: undefined
+});
+prototype["getRenderedAtTimestamp"] = function getRenderedAtTimestamp(closure_0) {
+  const renderedAtTimestamps = obj.renderedAtTimestamps;
+  return renderedAtTimestamps.get(closure_0);
+};
+prototype["hasUserHitDCCap"] = function hasUserHitDCCap(PASSWORDLESS_UPSELL, closure_1) {
+  if (null != PASSWORDLESS_UPSELL) {
+    const CONTENT_TYPES_WITH_BYPASS_FATIGUE = require(1363) /* set */.CONTENT_TYPES_WITH_BYPASS_FATIGUE;
+    return false;
+  }
+  if (null != PASSWORDLESS_UPSELL) {
+    let result = null != closure_1;
+    if (result) {
+      const obj = require(1359) /* isSingleUseDismissibleContent */;
+      result = obj.isGuildDismissibleContent(PASSWORDLESS_UPSELL);
+    }
+    if (result) {
+      if (null != closure_1) {
+        const seenForGuildId = obj.seenForGuildId;
+        const value = seenForGuildId.get(closure_1);
+        if (tmp9) {
+          return false;
         }
-        outer1_9.numberOfDCsShownToday = num;
-        ({ dailyCapPeriodStart: outer1_9.dailyCapPeriodStart, dailyCapOverridden } = numberOfDCsShownToday);
-        let tmp4 = null != dailyCapOverridden;
-        if (tmp4) {
-          tmp4 = dailyCapOverridden;
-        }
-        outer1_9.dailyCapOverridden = tmp4;
-        const newUserMinAgeRequiredOverridden = numberOfDCsShownToday.newUserMinAgeRequiredOverridden;
-        let tmp6 = null != newUserMinAgeRequiredOverridden;
-        if (tmp6) {
-          tmp6 = newUserMinAgeRequiredOverridden;
-        }
-        outer1_9.newUserMinAgeRequiredOverridden = tmp6;
-        const tmp = outer1_9;
-        const tmp3 = outer1_9;
-        const tmp5 = outer1_9;
+        tmp9 = null != value && value.has(PASSWORDLESS_UPSELL);
       }
-      outer1_9.dismissibleContentSeenDuringSession = new Set();
-      const set = new Set();
-      outer1_9.seenForGuildId = new Map();
-      outer1_9.lastDismissed = null;
     }
-  };
-  const items = [obj, , , , , , ];
-  obj = {
-    key: "getState",
-    value() {
-      return outer1_9;
-    }
-  };
-  items[1] = obj;
-  obj = {
-    key: "dailyCapOverridden",
-    get() {
-      return outer1_9.dailyCapOverridden;
-    }
-  };
-  items[2] = obj;
-  items[3] = {
-    key: "newUserMinAgeRequiredOverridden",
-    get() {
-      return outer1_9.newUserMinAgeRequiredOverridden;
-    }
-  };
-  items[4] = {
-    key: "lastDismissed",
-    get() {
-      return outer1_9.lastDismissed;
-    }
-  };
-  items[5] = {
-    key: "getRenderedAtTimestamp",
-    value(arg0) {
-      const renderedAtTimestamps = outer1_9.renderedAtTimestamps;
-      return renderedAtTimestamps.get(arg0);
-    }
-  };
-  items[6] = {
-    key: "hasUserHitDCCap",
-    value(dismissibleContent) {
-      if (null != dismissibleContent) {
-        const CONTENT_TYPES_WITH_BYPASS_FATIGUE = DismissibleContentFrameworkStore(outer1_2[6]).CONTENT_TYPES_WITH_BYPASS_FATIGUE;
+    if (!result) {
+      const dismissibleContentSeenDuringSession = obj.dismissibleContentSeenDuringSession;
+      if (dismissibleContentSeenDuringSession.has(PASSWORDLESS_UPSELL)) {
         return false;
       }
-      if (null != dismissibleContent) {
-        let result = null != arg1;
-        if (result) {
-          result = DismissibleContentFrameworkStore(outer1_2[7]).isGuildDismissibleContent(dismissibleContent);
-          const obj = DismissibleContentFrameworkStore(outer1_2[7]);
-        }
-        if (result) {
-          if (null != arg1) {
-            if (outer1_11(dismissibleContent, arg1)) {
-              return false;
-            }
-          }
-        }
-        if (!result) {
-          const dismissibleContentSeenDuringSession = outer1_9.dismissibleContentSeenDuringSession;
-          if (dismissibleContentSeenDuringSession.has(dismissibleContent)) {
-            return false;
-          }
-        }
-      }
-      const date = new Date();
-      date.setHours(0, 0, 0, 0);
-      let tmp10 = null != outer1_9.dailyCapPeriodStart;
-      if (tmp10) {
-        tmp10 = outer1_9.dailyCapPeriodStart < date.getTime();
-      }
-      if (tmp10) {
-        outer1_9.numberOfDCsShownToday = 0;
-        outer1_9.dailyCapPeriodStart = null;
-      }
-      return outer1_9.numberOfDCsShownToday >= 3;
     }
-  };
-  return callback(DismissibleContentFrameworkStore, items);
-})(require("initialize").PersistedStore);
-tmp5.displayName = "DismissibleContentFrameworkStore";
-tmp5.persistKey = "DismissibleContentFrameworkStore";
-let items = [
+  }
+  const date = new Date();
+  date.setHours(0, 0, 0, 0);
+  let tmp12 = null != obj.dailyCapPeriodStart;
+  if (tmp12) {
+    tmp12 = obj.dailyCapPeriodStart < date.getTime();
+  }
+  if (tmp12) {
+    obj.numberOfDCsShownToday = 0;
+    obj.dailyCapPeriodStart = null;
+  }
+  return obj.numberOfDCsShownToday >= 3;
+};
+DismissibleContentFrameworkStore.displayName = "DismissibleContentFrameworkStore";
+DismissibleContentFrameworkStore.persistKey = "DismissibleContentFrameworkStore";
+const items = [
   (arg0) => {
     const merged = Object.assign(arg0);
     return {};
   }
 ];
-tmp5.migrations = items;
+DismissibleContentFrameworkStore.migrations = items;
 obj = {
   LOGOUT: function handleLogout() {
     const obj = {};
     const merged = Object.assign(obj);
-    obj["dismissibleContentSeenDuringSession"] = new Set();
+    obj.dismissibleContentSeenDuringSession = new Set();
     const set = new Set();
-    obj["renderedAtTimestamps"] = new Map();
+    obj.renderedAtTimestamps = new Map();
     const map = new Map();
-    obj["seenForGuildId"] = new Map();
+    obj.seenForGuildId = new Map();
   },
   DCF_DAILY_CAP_OVERRIDE: function handleDailyCapOverride(value) {
     obj.dailyCapOverridden = value.value;
@@ -199,27 +140,27 @@ obj = {
     ({ dismissibleContent, guildId } = arg0);
     const renderedAtTimestamps = obj.renderedAtTimestamps;
     const result = renderedAtTimestamps.set(dismissibleContent, new Date().getTime());
-    const CONTENT_TYPES_WITH_BYPASS_FATIGUE = require(1339) /* set */.CONTENT_TYPES_WITH_BYPASS_FATIGUE;
+    const CONTENT_TYPES_WITH_BYPASS_FATIGUE = require(1363) /* set */.CONTENT_TYPES_WITH_BYPASS_FATIGUE;
     if (!CONTENT_TYPES_WITH_BYPASS_FATIGUE.has(dismissibleContent)) {
       if (!obj.dailyCapOverridden) {
-        let result1 = require(1335) /* isTimeRecurringDismissibleContent */.isGuildDismissibleContent(dismissibleContent);
+        let result1 = require(1359) /* isSingleUseDismissibleContent */.isGuildDismissibleContent(dismissibleContent);
         if (result1) {
           result1 = null != guildId;
         }
         if (result1) {
           if (!result1) {
             if (result1) {
-              const seenForGuildId = tmp9.seenForGuildId;
-              let set = seenForGuildId.get(guildId);
-              if (null == set) {
+              const seenForGuildId2 = tmp11.seenForGuildId;
+              let set = seenForGuildId2.get(guildId);
+              if (set == null) {
                 const _Set = Set;
                 set = new Set();
               }
               set.add(dismissibleContent);
-              const seenForGuildId2 = obj.seenForGuildId;
-              const result2 = seenForGuildId2.set(guildId, set);
+              const seenForGuildId3 = obj.seenForGuildId;
+              const result2 = seenForGuildId3.set(guildId, set);
             } else {
-              const dismissibleContentSeenDuringSession2 = tmp9.dismissibleContentSeenDuringSession;
+              const dismissibleContentSeenDuringSession2 = tmp11.dismissibleContentSeenDuringSession;
               dismissibleContentSeenDuringSession2.add(dismissibleContent);
             }
             if (null == obj.dailyCapPeriodStart) {
@@ -230,16 +171,21 @@ obj = {
             }
             obj.numberOfDCsShownToday = obj.numberOfDCsShownToday + 1;
             if (obj.numberOfDCsShownToday > 3) {
-              obj = { cap_type: "daily_cap", dismissible_content: dismissibleContent };
-              obj.shown_dcs = obj.numberOfDCsShownToday;
-              importDefault(675).track(AnalyticEvents.DCF_CAP_EXCEEDED, obj);
-              const obj5 = importDefault(675);
+              obj = { cap_type: "daily_cap", dismissible_content: null, shown_dcs: null };
+              obj[1] = dismissibleContent;
+              obj[2] = obj.numberOfDCsShownToday;
+              importDefault(698).track(AnalyticEvents.DCF_CAP_EXCEEDED, obj);
+              const obj6 = importDefault(698);
             }
+          } else {
+            const seenForGuildId = obj.seenForGuildId;
+            const value = seenForGuildId.get(guildId);
+            const tmp10 = null != value && value.has(dismissibleContent);
           }
         } else {
           const dismissibleContentSeenDuringSession = obj.dismissibleContentSeenDuringSession;
         }
-        const obj2 = require(1335) /* isTimeRecurringDismissibleContent */;
+        const tmp2Result = require(1359) /* isSingleUseDismissibleContent */;
       }
     }
   },
@@ -253,7 +199,9 @@ obj = {
     dismissibleContent = dismissibleContent.dismissibleContent;
     let tmp3 = null;
     if (null != dismissibleContent) {
-      const obj = { content: dismissibleContent, guildId: tmp };
+      const obj = { content: null, guildId: null };
+      obj[0] = dismissibleContent;
+      obj[1] = tmp;
       tmp3 = obj;
     }
     obj.lastDismissed = tmp3;
@@ -267,7 +215,7 @@ obj = {
     obj.lastDismissed = null;
   }
 };
-tmp5 = new tmp5(require("dispatcher"), obj);
+const dismissibleContentFrameworkStore = new DismissibleContentFrameworkStore(require("dispatcher"), obj);
 let result = set.fileFinishedImporting("modules/dismissible_content/DismissibleContentFrameworkStore.tsx");
 
-export default tmp5;
+export default dismissibleContentFrameworkStore;

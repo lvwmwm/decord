@@ -1,38 +1,38 @@
-// Module ID: 10697
-// Function ID: 83214
+// Module ID: 10721
+// Function ID: 10722
 // Name: participantMemberInfo
-// Dependencies: [664, 4004, 1212, 2]
+// Dependencies: [687, 4028, 1236, 2]
 // Exports: participantMemberInfo
 
-// Module 10697 (participantMemberInfo)
+// Module 10721 (participantMemberInfo)
 const require = arg1;
 const DAY = require("set").Millis.DAY;
 const result = require("getSystemLocale").fileFinishedImporting("modules/stage_channels/StageChannelParticipantUtils.tsx");
 
 export const participantMemberInfo = function participantMemberInfo(participant) {
   if (obj.isNewUser(participant.user)) {
-    const intl5 = require(1212) /* getSystemLocale */.intl;
-    return intl5.string(require(1212) /* getSystemLocale */.t.VaCdhQ);
+    const intl5 = tmp(1236).intl;
+    return intl5.string(tmp(1236).t.VaCdhQ);
   } else {
     const member = participant.member;
     let joinedAt;
-    if (null != member) {
+    if (member != null) {
       joinedAt = member.joinedAt;
     }
     if (null == joinedAt) {
-      const intl4 = require(1212) /* getSystemLocale */.intl;
-      let stringResult = intl4.string(require(1212) /* getSystemLocale */.t.CQmzib);
+      const intl4 = tmp(1236).intl;
+      let stringResult = intl4.string(tmp(1236).t.CQmzib);
     } else {
       if (null != participant.member) {
         if (participant.member.roles.length > 0) {
           const role = participant.role;
           let name;
-          if (null != role) {
+          if (role != null) {
             name = role.name;
           }
-          if (null == name) {
-            const intl3 = require(1212) /* getSystemLocale */.intl;
-            name = intl3.string(require(1212) /* getSystemLocale */.t["97/NdO"]);
+          if (name == null) {
+            const intl3 = tmp(1236).intl;
+            name = intl3.string(tmp(1236).t["97/NdO"]);
           }
           stringResult = name;
         }
@@ -42,14 +42,14 @@ export const participantMemberInfo = function participantMemberInfo(participant)
       const _Date2 = Date;
       const time = date.getTime();
       if (time - Date.parse(joinedAt) < DAY) {
-        const intl2 = require(1212) /* getSystemLocale */.intl;
-        stringResult = intl2.string(require(1212) /* getSystemLocale */.t.IKE48n);
+        const intl2 = tmp(1236).intl;
+        stringResult = intl2.string(tmp(1236).t.IKE48n);
       } else {
-        const intl = require(1212) /* getSystemLocale */.intl;
-        stringResult = intl.string(require(1212) /* getSystemLocale */.t.u0gUWt);
+        const intl = tmp(1236).intl;
+        stringResult = intl.string(tmp(1236).t.u0gUWt);
       }
     }
     return stringResult;
   }
-  obj = require(4004) /* conceal */;
+  obj = require(4028) /* nameFromUser */;
 };

@@ -1,51 +1,31 @@
-// Module ID: 10453
-// Function ID: 80627
-// Name: _computeActivityPartyPrivacyFlags
-// Dependencies: [653, 3838, 587, 1360, 6006, 2]
+// Module ID: 10477
+// Function ID: 10478
+// Name: computeActivityFlags
+// Dependencies: [676, 3862, 595, 1384, 6024, 2]
 // Exports: computeActivityFlags, isContextlessEmbeddedActivity
 
-// Module 10453 (_computeActivityPartyPrivacyFlags)
+// Module 10477 (computeActivityFlags)
 import ME from "ME";
 
-let closure_3;
-let closure_4;
-function _computeActivityPartyPrivacyFlags(arg0) {
-  const AllowActivityPartyPrivacyFriends = require(3838) /* explicitContentFromProto */.AllowActivityPartyPrivacyFriends;
-  const setting = AllowActivityPartyPrivacyFriends.getSetting();
-  const AllowActivityPartyPrivacyVoiceChannel = require(3838) /* explicitContentFromProto */.AllowActivityPartyPrivacyVoiceChannel;
-  const PARTY_PRIVACY_FRIENDS = constants.PARTY_PRIVACY_FRIENDS;
-  const setting1 = AllowActivityPartyPrivacyVoiceChannel.getSetting();
-  if (setting) {
-    let tmp3 = arg0 | PARTY_PRIVACY_FRIENDS;
-  } else {
-    tmp3 = arg0 & ~PARTY_PRIVACY_FRIENDS;
-  }
-  const PARTY_PRIVACY_VOICE_CHANNEL = constants.PARTY_PRIVACY_VOICE_CHANNEL;
-  if (setting1) {
-    let tmp4 = tmp3 | PARTY_PRIVACY_VOICE_CHANNEL;
-  } else {
-    tmp4 = tmp3 & ~PARTY_PRIVACY_VOICE_CHANNEL;
-  }
-  return tmp4;
-}
-({ ActivityFlags: closure_3, ActivityPartyPrivacy: closure_4 } = ME);
+let c3;
+let c4;
+({ ActivityFlags: c3, ActivityPartyPrivacy: c4 } = ME);
 const result = require("Storage").fileFinishedImporting("modules/activities/utils/ActivityFlagUtils.tsx");
 
-export const computeActivityFlags = function computeActivityFlags(activity, hasFlagResult, arg2, canLaunchFrameResult, privacy) {
-  let flag = hasFlagResult;
-  let flag2 = arg2;
-  let flag3 = canLaunchFrameResult;
-  let PRIVATE = privacy;
-  if (hasFlagResult === undefined) {
+export const computeActivityFlags = function computeActivityFlags(activity, flag, arg2, canLaunchFrameResult, privacy) {
+  if (flag === undefined) {
     flag = false;
   }
-  if (flag2 === undefined) {
+  let flag2 = arg2;
+  if (arg2 === undefined) {
     flag2 = false;
   }
-  if (flag3 === undefined) {
+  let flag3 = canLaunchFrameResult;
+  if (canLaunchFrameResult === undefined) {
     flag3 = false;
   }
-  if (PRIVATE === undefined) {
+  let PRIVATE = privacy;
+  if (privacy === undefined) {
     PRIVATE = constants2.PRIVATE;
   }
   const secrets = activity.secrets;
@@ -54,7 +34,7 @@ export const computeActivityFlags = function computeActivityFlags(activity, hasF
     num = constants.INSTANCE | 0;
   }
   let join;
-  if (null != secrets) {
+  if (secrets != null) {
     join = secrets.join;
   }
   let tmp4 = num;
@@ -66,32 +46,64 @@ export const computeActivityFlags = function computeActivityFlags(activity, hasF
     tmp6 = tmp4 | constants.CONTEXTLESS;
   }
   if (flag2) {
-    let tmp12 = tmp15 | _computeActivityPartyPrivacyFlags(tmp15);
+    const AllowActivityPartyPrivacyFriends2 = require(3862) /* explicitContentFromProto */.AllowActivityPartyPrivacyFriends;
+    const setting = AllowActivityPartyPrivacyFriends2.getSetting();
+    const AllowActivityPartyPrivacyVoiceChannel2 = require(3862) /* explicitContentFromProto */.AllowActivityPartyPrivacyVoiceChannel;
+    const PARTY_PRIVACY_FRIENDS2 = constants.PARTY_PRIVACY_FRIENDS;
+    const setting1 = AllowActivityPartyPrivacyVoiceChannel2.getSetting();
+    if (setting) {
+      let tmp28 = tmp23 | PARTY_PRIVACY_FRIENDS2;
+    } else {
+      tmp28 = tmp23 & ~PARTY_PRIVACY_FRIENDS2;
+    }
+    const PARTY_PRIVACY_VOICE_CHANNEL2 = constants.PARTY_PRIVACY_VOICE_CHANNEL;
+    if (setting1) {
+      let tmp29 = tmp28 | PARTY_PRIVACY_VOICE_CHANNEL2;
+    } else {
+      tmp29 = tmp28 & ~PARTY_PRIVACY_VOICE_CHANNEL2;
+    }
+    const tmp22 = constants;
   } else {
     let value = PRIVATE === constants2.PUBLIC;
     if (!value) {
-      const Storage = require(587) /* Storage */.Storage;
+      const Storage = require(595) /* Storage */.Storage;
       value = Storage.get("ACTIVITIES_FORCE_PUBLIC");
     }
-    tmp12 = tmp6;
-    if (value) {
-      tmp12 = tmp6 | _computeActivityPartyPrivacyFlags(tmp6);
+    if (!value) {
+      return tmp6;
+    } else {
+      const AllowActivityPartyPrivacyFriends = require(3862) /* explicitContentFromProto */.AllowActivityPartyPrivacyFriends;
+      const setting2 = AllowActivityPartyPrivacyFriends.getSetting();
+      const AllowActivityPartyPrivacyVoiceChannel = require(3862) /* explicitContentFromProto */.AllowActivityPartyPrivacyVoiceChannel;
+      const PARTY_PRIVACY_FRIENDS = constants.PARTY_PRIVACY_FRIENDS;
+      const setting3 = AllowActivityPartyPrivacyVoiceChannel.getSetting();
+      if (setting2) {
+        let tmp18 = tmp6 | PARTY_PRIVACY_FRIENDS;
+        let tmp19 = tmp17;
+      } else {
+        tmp18 = tmp6 & ~PARTY_PRIVACY_FRIENDS;
+        tmp19 = tmp17;
+      }
+      const PARTY_PRIVACY_VOICE_CHANNEL = tmp19.PARTY_PRIVACY_VOICE_CHANNEL;
+      if (setting3) {
+        let tmp20 = tmp18 | PARTY_PRIVACY_VOICE_CHANNEL;
+      } else {
+        tmp20 = tmp18 & ~PARTY_PRIVACY_VOICE_CHANNEL;
+      }
     }
   }
-  return tmp12;
 };
 export const isContextlessEmbeddedActivity = function isContextlessEmbeddedActivity(remoteApplicationActivity) {
-  let flags;
-  if (null != remoteApplicationActivity) {
-    flags = remoteApplicationActivity.flags;
+  let num;
+  if (remoteApplicationActivity != null) {
+    num = remoteApplicationActivity.flags;
   }
-  let num = 0;
-  if (null != flags) {
-    num = flags;
+  if (num == null) {
+    num = 0;
   }
-  let hasFlagResult = require(1360) /* hasFlag */.hasFlag(num, constants.CONTEXTLESS);
+  let hasFlagResult = require(1384) /* hasFlag */.hasFlag(num, constants.CONTEXTLESS);
   if (hasFlagResult) {
-    hasFlagResult = importDefault(6006)(remoteApplicationActivity);
+    hasFlagResult = importDefault(6024)(remoteApplicationActivity);
   }
   return hasFlagResult;
 };

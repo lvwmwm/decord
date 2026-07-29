@@ -1,207 +1,179 @@
-// Module ID: 1209
-// Function ID: 13895
-// Name: ComponentDispatcher
-// Dependencies: [6, 7, 631, 2]
+// Module ID: 1233
+// Function ID: 1234
+// Name: safeDispatch
+// Dependencies: [652, 2]
 
-// Module 1209 (ComponentDispatcher)
-import _classCallCheck from "_classCallCheck";
-import _defineProperties from "_defineProperties";
-
-const require = arg1;
-const tmp2 = (() => {
-  class ComponentDispatcher {
-    constructor() {
-      obj = arg0;
-      self = this;
-      if (arg0 === undefined) {
-        obj = {};
-      }
-      tmp = outer1_2(self, ComponentDispatcher);
-      eventEmitter = new ComponentDispatcher(outer1_1[2]).EventEmitter();
-      self.emitter = eventEmitter;
-      self._savedDispatches = {};
-      obj = { maxListeners: 100, enableDevtools: false };
+// Module 1233 (safeDispatch)
+let result = require("set").fileFinishedImporting("../discord_common/js/shared/utils/ComponentDispatchUtils.tsx");
+class ComponentDispatcher {
+  constructor() {
+    obj = global;
+    if (global === undefined) {
+      obj = {};
+    }
+    obj = Object.create(new.target.prototype);
+    eventEmitter = new require("EventEmitter").EventEmitter();
+    obj[0] = eventEmitter;
+    obj[1] = {};
+    obj1 = { maxListeners: 100, enableDevtools: false };
+    merged = Object.assign(obj);
+    obj.options = obj1;
+    num = obj.options.maxListeners;
+    if (num == null) {
       num = 100;
-      merged = Object.assign(obj);
-      self.options = obj;
-      maxListeners = self.options.maxListeners;
-      if (null != maxListeners) {
-        num = maxListeners;
-      }
-      emitter = self.emitter;
-      setMaxListenersResult = emitter.setMaxListeners(num);
-      return;
     }
+    emitter = obj.emitter;
+    setMaxListenersResult = emitter.setMaxListeners(num);
+    return obj;
   }
-  let obj = {
-    key: "safeDispatch",
-    value(arg0, arg1) {
-      const self = this;
-      const substr = [...arguments].slice();
-      if (this.hasSubscribers(arg0)) {
-        const dispatch = self.dispatch;
-        const items = [arg0];
-        HermesBuiltin.arraySpread(substr, 1);
-        return HermesBuiltin.apply(items, self);
-      } else {
-        let items1 = self._savedDispatches[arg0];
-        if (null == items1) {
-          items1 = [];
-        }
-        self._savedDispatches[arg0] = items1;
-        items1.push(substr[0]);
-        return self;
-      }
+}
+const prototype = ComponentDispatcher.prototype;
+prototype["safeDispatch"] = function safeDispatch(MODAL_CLOSE) {
+  const self = this;
+  const substr = [...arguments].slice();
+  if (this.hasSubscribers(MODAL_CLOSE)) {
+    const dispatch = self.dispatch;
+    const items = [MODAL_CLOSE];
+    HermesBuiltin.arraySpread(substr, 1);
+    return HermesBuiltin.apply(items, self);
+  } else {
+    let items1 = self._savedDispatches[MODAL_CLOSE];
+    if (items1 == null) {
+      items1 = [];
     }
-  };
-  let items = [obj, , , , , , , , , , , , ];
-  obj = {
-    key: "dispatch",
-    value(arg0, arg1) {
-      const self = this;
-      const timestamp = Date.now();
-      const emitter = this.emitter;
-      emitter.emit(arg0, arg1);
-      const enableDevtools = this.options.enableDevtools;
-      let devtoolsReporter = enableDevtools;
-      if (enableDevtools) {
-        devtoolsReporter = self.options.devtoolsReporter;
-      }
-      if (devtoolsReporter) {
-        const options = self.options;
-        const _Date = Date;
-        options.devtoolsReporter(arg0, arg1, Date.now() - timestamp);
-      }
-      return self;
+    self._savedDispatches[MODAL_CLOSE] = items1;
+    items1.push(substr[0]);
+    return self;
+  }
+};
+prototype["dispatch"] = function dispatch(arg0, arg1) {
+  const self = this;
+  try {
+    const emitter = self.emitter;
+    emitter.emit(arg0, arg1);
+    let devtoolsReporter = self.options.enableDevtools;
+    if (devtoolsReporter) {
+      devtoolsReporter = self.options.devtoolsReporter;
     }
-  };
-  items[1] = obj;
-  obj = {
-    key: "dispatchToLastSubscribed",
-    value(arg0, arg1) {
-      const self = this;
-      const timestamp = Date.now();
-      const emitter = this.emitter;
-      const listenersResult = emitter.listeners(arg0);
-      if (listenersResult.length > 0) {
-        arr2[arr2.length - 1](arg1);
-      }
-      const enableDevtools = self.options.enableDevtools;
-      let devtoolsReporter = enableDevtools;
-      if (enableDevtools) {
-        devtoolsReporter = self.options.devtoolsReporter;
-      }
-      if (devtoolsReporter) {
-        const options = self.options;
-        const _Date = Date;
-        options.devtoolsReporter(arg0, arg1, Date.now() - timestamp);
-      }
-      return self;
+    if (devtoolsReporter) {
+      const options = self.options;
+      const _Date = Date;
+      options.devtoolsReporter(arg0, arg1, Date.now() - tmp6);
     }
-  };
-  items[2] = obj;
-  items[3] = {
-    key: "hasSubscribers",
-    value(arg0) {
-      const emitter = this.emitter;
-      return emitter.listenerCount(arg0) > 0;
+    return self;
+  } catch (tmp9) {
+    let devtoolsReporter2 = tmp2.options.enableDevtools;
+    if (devtoolsReporter2) {
+      devtoolsReporter2 = tmp2.options.devtoolsReporter;
     }
-  };
-  items[4] = {
-    key: "_checkSavedDispatches",
-    value(arg0) {
-      const self = this;
-      let closure_1 = arg0;
-      if (null != this._savedDispatches[arg0]) {
-        const item = arr.forEach((arg0) => {
-          self.dispatch(closure_1, arg0);
-        });
-        tmp._savedDispatches[arg0] = undefined;
-      }
+    if (devtoolsReporter2) {
+      const options2 = tmp2.options;
+      const _Date2 = tmp.Date;
+      options2.devtoolsReporter(tmp4, tmp3, _Date2.now() - tmp5);
     }
-  };
-  items[5] = {
-    key: "subscribe",
-    value(arg0, arg1) {
-      const self = this;
-      const emitter = this.emitter;
-      if (listenersResult.indexOf(arg1) >= 0) {
-        if (self.options.logger) {
-          const logger = self.options.logger;
-          logger.warn("ComponentDispatch.subscribe: Attempting to add a duplicate listener", arg0);
-        }
-      } else {
-        const emitter2 = self.emitter;
-        emitter2.on(arg0, arg1);
-        const result = self._checkSavedDispatches(arg0);
-      }
-      return self;
+    throw tmp9;
+  }
+};
+prototype["dispatchToLastSubscribed"] = function dispatchToLastSubscribed(arg0, arg1) {
+  const self = this;
+  try {
+    const emitter = self.emitter;
+    const listenersResult = emitter.listeners(arg0);
+    if (listenersResult.length > 0) {
+      arr2[arr2.length - 1](arg1);
     }
-  };
-  items[6] = {
-    key: "subscribeOnce",
-    value(arg0, arg1) {
-      const emitter = this.emitter;
-      emitter.once(arg0, arg1);
-      const result = this._checkSavedDispatches(arg0);
-      return this;
+    let devtoolsReporter = self.options.enableDevtools;
+    if (devtoolsReporter) {
+      devtoolsReporter = self.options.devtoolsReporter;
     }
-  };
-  items[7] = {
-    key: "resubscribe",
-    value(arg0, arg1) {
-      const self = this;
-      const emitter = this.emitter;
-      if (listenersResult.includes(arg1)) {
-        const emitter2 = self.emitter;
-        emitter2.off(arg0, arg1);
-        const emitter3 = self.emitter;
-        emitter3.on(arg0, arg1);
-      } else if (self.options.logger) {
-        const logger = self.options.logger;
-        logger.warn("ComponentDispatch.resubscribe: Resubscribe without existing subscription", arg0);
-      }
-      return self;
+    if (devtoolsReporter) {
+      const options = self.options;
+      const _Date = Date;
+      options.devtoolsReporter(arg0, arg1, Date.now() - tmp6);
     }
-  };
-  items[8] = {
-    key: "unsubscribe",
-    value(arg0, arg1) {
-      const emitter = this.emitter;
-      emitter.removeListener(arg0, arg1);
-      return this;
+    return self;
+  } catch (tmp10) {
+    let devtoolsReporter2 = tmp2.options.enableDevtools;
+    if (devtoolsReporter2) {
+      devtoolsReporter2 = tmp2.options.devtoolsReporter;
     }
-  };
-  items[9] = {
-    key: "reset",
-    value() {
-      const emitter = this.emitter;
-      emitter.removeAllListeners();
-      return this;
+    if (devtoolsReporter2) {
+      const options2 = tmp2.options;
+      const _Date2 = tmp.Date;
+      options2.devtoolsReporter(tmp4, tmp3, _Date2.now() - tmp5);
     }
-  };
-  items[10] = {
-    key: "dispatchKeyed",
-    value(arg0, arg1, arg2) {
-      const substr = [...arguments].slice();
-      const items = ["" + arg0 + "_" + arg1, ...substr];
-      return this.dispatch.apply(items);
+    throw tmp10;
+  }
+};
+prototype["hasSubscribers"] = function hasSubscribers(MODAL_CLOSE) {
+  const emitter = this.emitter;
+  return emitter.listenerCount(MODAL_CLOSE) > 0;
+};
+prototype["_checkSavedDispatches"] = function _checkSavedDispatches(arg0) {
+  const self = this;
+  let closure_0 = arg0;
+  if (null != this._savedDispatches[arg0]) {
+    const item = arr.forEach((arg0) => {
+      self.dispatch(closure_0, arg0);
+    });
+    tmp._savedDispatches[arg0] = undefined;
+  }
+};
+prototype["subscribe"] = function subscribe(arg0, arg1) {
+  const self = this;
+  const emitter = this.emitter;
+  if (listenersResult.indexOf(arg1) >= 0) {
+    if (self.options.logger) {
+      const logger = self.options.logger;
+      logger.warn("ComponentDispatch.subscribe: Attempting to add a duplicate listener", arg0);
     }
-  };
-  items[11] = {
-    key: "subscribeKeyed",
-    value(arg0, arg1, arg2) {
-      return this.subscribe("" + arg0 + "_" + arg1, arg2);
-    }
-  };
-  items[12] = {
-    key: "unsubscribeKeyed",
-    value(arg0, arg1, arg2) {
-      return this.unsubscribe("" + arg0 + "_" + arg1, arg2);
-    }
-  };
-  return callback(ComponentDispatcher, items);
-})();
-let result = require("EventEmitter").fileFinishedImporting("../discord_common/js/shared/utils/ComponentDispatchUtils.tsx");
+  } else {
+    const emitter2 = self.emitter;
+    emitter2.on(arg0, arg1);
+    const result = self._checkSavedDispatches(arg0);
+  }
+  return self;
+};
+prototype["subscribeOnce"] = function subscribeOnce(arg0, arg1) {
+  const emitter = this.emitter;
+  emitter.once(arg0, arg1);
+  const result = this._checkSavedDispatches(arg0);
+  return this;
+};
+prototype["resubscribe"] = function resubscribe(arg0, arg1) {
+  const self = this;
+  const emitter = this.emitter;
+  if (listenersResult.includes(arg1)) {
+    const emitter2 = self.emitter;
+    emitter2.off(arg0, arg1);
+    const emitter3 = self.emitter;
+    emitter3.on(arg0, arg1);
+  } else if (self.options.logger) {
+    const logger = self.options.logger;
+    logger.warn("ComponentDispatch.resubscribe: Resubscribe without existing subscription", arg0);
+  }
+  return self;
+};
+prototype["unsubscribe"] = function unsubscribe(arg0, arg1) {
+  const emitter = this.emitter;
+  emitter.removeListener(arg0, arg1);
+  return this;
+};
+prototype["reset"] = function reset() {
+  const emitter = this.emitter;
+  emitter.removeAllListeners();
+  return this;
+};
+prototype["dispatchKeyed"] = function dispatchKeyed(VOICE_MESSAGE_SEND, voiceMessageAnimationState, arg2) {
+  const substr = [...arguments].slice();
+  const items = ["" + VOICE_MESSAGE_SEND + "_" + voiceMessageAnimationState, ...substr];
+  return this.dispatch.apply(items);
+};
+prototype["subscribeKeyed"] = function subscribeKeyed(VOICE_MESSAGE_SEND, sharedValue1, callback) {
+  return this.subscribe("" + VOICE_MESSAGE_SEND + "_" + sharedValue1, callback);
+};
+prototype["unsubscribeKeyed"] = function unsubscribeKeyed(VOICE_MESSAGE_SEND, closure_1, closure_10) {
+  return this.unsubscribe("" + VOICE_MESSAGE_SEND + "_" + closure_1, closure_10);
+};
 
-export const ComponentDispatcher = tmp2;
+export { ComponentDispatcher };

@@ -1,18 +1,18 @@
-// Module ID: 8210
-// Function ID: 65702
+// Module ID: 8234
+// Function ID: 8235
 // Name: GuildEventSchedule
-// Dependencies: [31, 33, 3747, 8186, 8211, 1212, 2]
+// Dependencies: [19, 21, 3771, 8210, 8235, 1236, 2]
 // Exports: default
 
-// Module 8210 (GuildEventSchedule)
-import result from "result";
+// Module 8234 (GuildEventSchedule)
+import noop from "noop";
 import jsxProd from "jsxProd";
 
-let closure_4;
-let closure_5;
+let c4;
+let c5;
 let closure_6;
 const require = arg1;
-({ jsx: closure_4, Fragment: closure_5, jsxs: closure_6 } = jsxProd);
+({ jsx: c4, Fragment: c5, jsxs: closure_6 } = jsxProd);
 const result = require("t").fileFinishedImporting("modules/guild_scheduled_events/native/components/GuildEventSchedule.tsx");
 
 export default function GuildEventSchedule(schedule) {
@@ -21,53 +21,52 @@ export default function GuildEventSchedule(schedule) {
   schedule = schedule.schedule;
   const onChange = schedule.onChange;
   ({ guildEvent, recurrenceId } = schedule);
-  let obj = onChange(3747)();
-  const addResult = obj.add(schedule(8186).MAX_DAYS_AHEAD_AN_EVENT_CAN_START, "days");
+  let obj = onChange(3771)();
+  const addResult = obj.add(schedule(8210).MAX_DAYS_AHEAD_AN_EVENT_CAN_START, "days");
   const items = [schedule.startDate];
   const memo = React.useMemo(() => onChange(outer1_2[2])(schedule.startDate).add(15, "minutes"), items);
-  const tmp = onChange(3747)();
-  const addResult1 = onChange(3747)().add(schedule(8186).MAX_DAYS_AHEAD_AN_EVENT_CAN_END, "days");
+  const tmp2 = onChange(3771)();
+  const addResult1 = onChange(3771)().add(schedule(8210).MAX_DAYS_AHEAD_AN_EVENT_CAN_END, "days");
   if (null != recurrenceId) {
-    addResult.add(schedule(8186).MAX_YEARS_AHEAD_RECURRING_EVENT, "years");
-    addResult1.add(schedule(8186).MAX_YEARS_AHEAD_RECURRING_EVENT, "years");
+    addResult.add(tmp3(8210).MAX_YEARS_AHEAD_RECURRING_EVENT, "years");
+    addResult1.add(tmp3(8210).MAX_YEARS_AHEAD_RECURRING_EVENT, "years");
   }
-  obj = {};
   obj = {
     date: schedule.startDate,
-    onChange(arg0) {
+    onChange(startDate) {
       const obj = {};
       const merged = Object.assign(schedule);
-      obj["startDate"] = arg0;
+      obj.startDate = startDate;
       onChange(obj);
     },
-    minimumDate: tmp,
-    maximumDate: addResult
+    minimumDate: tmp2,
+    maximumDate: addResult,
+    dateLabel: null,
+    timeLabel: null
   };
-  const intl = schedule(1212).intl;
-  obj.dateLabel = intl.string(schedule(1212).t.kKOIwJ);
-  const intl2 = schedule(1212).intl;
-  obj.timeLabel = intl2.string(schedule(1212).t["6dGmCD"]);
-  const items1 = [callback(schedule(8211).GuildEventDatetime, obj), ];
-  let tmp9 = null != guildEvent.scheduled_end_time;
-  if (tmp9) {
-    const obj1 = {
-      date: schedule.endDate,
-      onChange(arg0) {
-          const obj = {};
-          const merged = Object.assign(schedule);
-          obj["endDate"] = arg0;
-          onChange(obj);
-        },
-      minimumDate: memo,
-      maximumDate: addResult1
+  const intl = tmp3(1236).intl;
+  obj[4] = intl.string(schedule(1236).t.kKOIwJ);
+  const intl2 = tmp3(1236).intl;
+  obj[5] = intl2.string(schedule(1236).t["6dGmCD"]);
+  const children = [callback(schedule(8235).GuildEventDatetime, obj), ];
+  let tmp9Result = null != guildEvent.scheduled_end_time;
+  if (tmp9Result) {
+    obj = { date: null, onChange: null, minimumDate: null, maximumDate: null, dateLabel: null, timeLabel: null };
+    obj[0] = schedule.endDate;
+    obj[1] = function onChange(endDate) {
+      const obj = {};
+      const merged = Object.assign(schedule);
+      obj.endDate = endDate;
+      onChange(obj);
     };
-    const intl3 = schedule(1212).intl;
-    obj1.dateLabel = intl3.string(schedule(1212).t.CTLgZJ);
-    const intl4 = schedule(1212).intl;
-    obj1.timeLabel = intl4.string(schedule(1212).t.j2RuXF);
-    tmp9 = callback(schedule(8211).GuildEventDatetime, obj1);
+    obj[2] = memo;
+    obj[3] = addResult1;
+    const intl3 = tmp3(1236).intl;
+    obj[4] = intl3.string(tmp3(1236).t.CTLgZJ);
+    const intl4 = tmp3(1236).intl;
+    obj[5] = intl4.string(tmp3(1236).t.j2RuXF);
+    tmp9Result = callback(tmp3(8235).GuildEventDatetime, obj);
   }
-  items1[1] = tmp9;
-  obj.children = items1;
-  return closure_6(closure_5, obj);
+  children[1] = tmp9Result;
+  return closure_6(closure_5, { children });
 };

@@ -1,54 +1,59 @@
-// Module ID: 11494
-// Function ID: 89316
+// Module ID: 11518
+// Function ID: 11519
 // Name: ChatInputCharCounter
-// Dependencies: [57, 31, 1850, 653, 1852, 33, 4165, 566, 3811, 6164, 6171, 3866, 1212, 4695, 4161, 6606, 2]
+// Dependencies: [32, 19, 1874, 676, 1876, 21, 4189, 589, 3835, 6182, 6191, 3890, 1236, 4717, 4185, 6627, 2]
 
-// Module 11494 (ChatInputCharCounter)
+// Module 11518 (ChatInputCharCounter)
 import _slicedToArray from "_slicedToArray";
-import importAllResult from "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import importAllResult from "noop";
+import mergeGuildAvatar from "mergeGuildAvatar";
 import { UpsellTypes } from "ME";
 import { PremiumUpsellTypes } from "GuildFeatures";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_8;
-let closure_9;
+let c9;
+let metroImportAll;
 const require = arg1;
-({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
-let closure_10 = _createForOfIteratorHelperLoose.createStyles({ container: { alignItems: "center", paddingBottom: 6 } });
-const forwardRefResult = importAllResult.forwardRef((analyticsLocations) => {
+let c4 = importAllResult;
+({ jsx: metroImportAll, jsxs: c9 } = jsxProd);
+let closure_10 = createCacheKey.createStyles({ container: { alignItems: "center", paddingBottom: 6 } });
+const forwardRefResult = importAllResult.forwardRef((analyticsLocations, ref) => {
+  let c2;
+  let tmp6;
   analyticsLocations = analyticsLocations.analyticsLocations;
-  let obj = analyticsLocations(566);
-  const items = [_isNativeReflectConstruct];
-  const stateFromStores = obj.useStateFromStores(items, () => stateFromStores(table[8]).canUseIncreasedMessageLength(outer1_5.getCurrentUser()));
-  const tmp3 = callback(importAllResult.useState(0), 2);
-  const first = tmp3[0];
-  const dependencyMap = tmp3[1];
-  const tmp5 = stateFromStores(6164)();
-  callback = tmp5;
-  const imperativeHandle = importAllResult.useImperativeHandle(arg1, () => ({
+  let stateFromStores;
+  let dependencyMap;
+  let callback;
+  let obj = analyticsLocations(589);
+  const items = [mergeGuildAvatar];
+  stateFromStores = obj.useStateFromStores(items, () => stateFromStores(_undefined[8]).canUseIncreasedMessageLength(currentUser.getCurrentUser()));
+  const tmp = callback4();
+  [tmp6, c2] = callback(importAllResult.useState(0), 2);
+  const tmp7 = stateFromStores(6182)();
+  callback = tmp7;
+  const imperativeHandle = importAllResult.useImperativeHandle(ref, () => ({
     onMessageLengthChanged(length) {
-      outer1_2(Math.max(0, length - outer1_3));
+      callback(Math.max(0, length - _slicedToArray));
     }
   }));
-  const items1 = [analyticsLocations, stateFromStores, tmp5];
-  let tmp8 = null;
-  if (first > 0) {
-    obj = { onPress: tmp7, style: tmp.container };
-    obj = { color: "text-feedback-critical", lineClamp: 1, variant: "text-xs/medium" };
+  const items1 = [analyticsLocations, stateFromStores, tmp7];
+  let tmp10 = null;
+  if (tmp6 > 0) {
+    obj = { onPress: null, style: null, children: null };
+    obj[0] = tmp9;
+    obj[1] = tmp.container;
+    obj = { color: "text-feedback-critical", lineClamp: 1, variant: "text-xs/medium", children: null };
     const _HermesInternal = HermesInternal;
-    obj.children = "-" + first;
-    const items2 = [callback2(analyticsLocations(4161).Text, obj), ];
-    let obj1 = { size: "sm" };
-    items2[1] = callback2(analyticsLocations(6606).NitroWheelIcon, obj1);
-    obj.children = items2;
-    tmp8 = callback3(analyticsLocations(4695).PressableOpacity, obj);
+    obj[3] = "-" + tmp6;
+    const items2 = [callback2(tmp2(4185).Text, obj), callback2(tmp2(6627).NitroWheelIcon, { size: "sm" })];
+    obj[2] = items2;
+    tmp10 = callback3(tmp2(4717).PressableOpacity, obj);
   }
-  return tmp8;
+  return tmp10;
 });
 forwardRefResult.displayName = "ChatInputCharCounter";
 const memoResult = importAllResult.memo(forwardRefResult);
-let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/chat_input/native/accessories/ChatInputCharCounter.tsx");
+let result = require("mergeGuildAvatar").fileFinishedImporting("modules/chat_input/native/accessories/ChatInputCharCounter.tsx");
 
 export default memoResult;

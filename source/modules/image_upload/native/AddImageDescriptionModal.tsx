@@ -1,23 +1,23 @@
-// Module ID: 9825
-// Function ID: 76153
+// Module ID: 9847
+// Function ID: 9848
 // Name: AddDescription
-// Dependencies: [57, 31, 27, 4503, 4502, 33, 4165, 689, 566, 1450, 1456, 5193, 9826, 9094, 1212, 6168, 9824, 7621, 9084, 2]
+// Dependencies: [32, 19, 17, 4526, 4525, 21, 4189, 712, 589, 1474, 1480, 5215, 9848, 9118, 1236, 6186, 9846, 7644, 9108, 2]
 // Exports: default
 
-// Module 9825 (AddDescription)
+// Module 9847 (AddDescription)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
-import get_ActivityIndicator from "get ActivityIndicator";
-import { DraftType } from "_isNativeReflectConstruct";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import set from "set";
+import get_ActivityIndicator from "TextArea";
+import { DraftType } from "handleChanged";
+import map from "map";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_10;
-let closure_11;
-let closure_5;
+let c10;
+let c5;
 let closure_6;
-let closure_7;
+let error;
+let unpackModuleId;
 const require = arg1;
 function AddDescription(id) {
   let channelId;
@@ -26,12 +26,13 @@ function AddDescription(id) {
   let width;
   ({ source, channelId } = id);
   id = id.id;
+  let stateFromStores;
   let first;
   let React;
   let navigation;
-  const tmp = _createForOfIteratorHelperLoose();
+  const tmp = createCacheKey();
   let obj = channelId(stateFromStores[8]);
-  const items = [_isNativeReflectConstruct];
+  const items = [map];
   stateFromStores = obj.useStateFromStores(items, () => outer1_9.getUpload(channelId, id, outer1_8.ChannelMessage));
   ({ width, height } = source);
   let num = 1;
@@ -47,84 +48,82 @@ function AddDescription(id) {
       }
     }
   }
-  let description;
-  if (null != stateFromStores) {
-    description = stateFromStores.description;
+  let obj1 = React;
+  let str;
+  if (stateFromStores != null) {
+    str = stateFromStores.description;
   }
-  let str = "";
-  if (null != description) {
-    str = description;
+  if (str == null) {
+    str = "";
   }
-  const tmp6 = first(React.useState(str), 2);
-  first = tmp6[0];
-  React = React.useRef(first);
-  const ref = React.useRef(null);
-  const ref1 = React.useRef(null);
-  let obj1 = channelId(stateFromStores[10]);
-  navigation = obj1.useNavigation();
-  const insets = id(stateFromStores[11])({ includeKeyboardHeight: true }).insets;
+  const tmp7 = first(React.useState(str), 2);
+  first = tmp7[0];
+  React = obj1.useRef(first);
+  const ref = obj1.useRef(null);
+  const ref1 = obj1.useRef(null);
+  const tmp6 = id(stateFromStores[9])({ ignoreKeyboard: true });
+  navigation = channelId(stateFromStores[10]).useNavigation();
+  const insets = tmp5(tmp3[11])({ includeKeyboardHeight: true }).insets;
   const items1 = [{ ref, offset: { type: "toBottom" } }];
   id(stateFromStores[12])({ insets, inputs: items1, scrollViewRef: ref1 });
   const items2 = [first];
-  const effect = React.useEffect(() => {
-    result.current = first;
+  const effect = obj1.useEffect(() => {
+    set.current = first;
   }, items2);
   const items3 = [channelId, id, stateFromStores, navigation];
-  const effect1 = React.useEffect(() => {
+  const effect1 = obj1.useEffect(() => {
     navigation.setOptions({
       headerRight(arg0) {
-        let obj = channelId(stateFromStores[13]);
-        const intl = channelId(stateFromStores[14]).intl;
+        let obj = outer1_0(outer1_2[13]);
+        const intl = outer1_0(outer1_2[14]).intl;
         obj = {};
-        const renderHeaderTextButton = obj.getRenderHeaderTextButton(intl.string(channelId(stateFromStores[14]).t["R3BPH+"]), () => {
-          let obj = id(stateFromStores[15]);
+        const renderHeaderTextButton = obj.getRenderHeaderTextButton(intl.string(outer1_0(outer1_2[14]).t["R3BPH+"]), () => {
+          let obj = outer1_1(outer1_2[15]);
           obj = {};
-          const merged = Object.assign(outer2_2);
-          obj["description"] = outer2_4.current;
-          obj.update(outer2_0, outer2_1, outer3_8.ChannelMessage, obj);
-          id(stateFromStores[16]).close();
+          const merged = Object.assign(closure_2);
+          obj.description = ref.current;
+          obj.update(closure_0, closure_1, outer1_8.ChannelMessage, obj);
+          outer1_1(outer1_2[16]).close();
         });
         let merged = Object.assign(arg0);
         return renderHeaderTextButton(obj);
       }
     });
   }, items3);
-  obj = { ref: ref1, style: tmp.contentContainer };
-  obj = { padding: id(stateFromStores[7]).space.PX_16, paddingBottom: insets.bottom + id(stateFromStores[7]).space.PX_16 };
-  obj.contentContainerStyle = obj;
+  obj = { ref: ref1, style: tmp.contentContainer, contentContainerStyle: null, children: null };
+  obj = { padding: tmp5(tmp3[7]).space.PX_16, paddingBottom: insets.bottom + tmp5(tmp3[7]).space.PX_16 };
+  obj[2] = obj;
   obj1 = { style: tmp.imageContainer, children: callback(closure_6, { style: items4, source }) };
-  items4 = [tmp.image, ];
-  const obj2 = { aspectRatio: num, maxHeight: id(stateFromStores[9])({ ignoreKeyboard: true }).height / 2 };
-  items4[1] = obj2;
+  items4 = [tmp.image, { aspectRatio: num, maxHeight: tmp6.height / 2 }];
   const items5 = [callback(navigation, obj1), ];
-  const obj3 = { ref };
-  const obj4 = { paddingTop: id(stateFromStores[7]).space.PX_16 };
-  obj3.containerStyle = obj4;
-  let intl = channelId(stateFromStores[14]).intl;
-  obj3.label = intl.string(channelId(stateFromStores[14]).t.eOB2eR);
-  const intl2 = channelId(stateFromStores[14]).intl;
-  obj3.placeholder = intl2.string(channelId(stateFromStores[14]).t.RNH1jn);
-  obj3.value = first;
-  obj3.onChange = tmp6[1];
-  obj3.placeholderTextColor = tmp.placeholderText.color;
-  obj3.maxLength = 1000;
-  obj3.autoFocus = true;
-  items5[1] = callback(channelId(stateFromStores[17]).TextArea, obj3);
-  obj.children = items5;
+  const obj2 = { ref, containerStyle: null, label: null, placeholder: null, value: null, onChange: null, placeholderTextColor: null, maxLength: 1000, autoFocus: true };
+  const obj3 = { paddingTop: null };
+  obj3[0] = id(stateFromStores[7]).space.PX_16;
+  obj2[1] = obj3;
+  let intl = tmp2(tmp3[14]).intl;
+  obj2[2] = intl.string(channelId(stateFromStores[14]).t.eOB2eR);
+  const intl2 = tmp2(tmp3[14]).intl;
+  obj2[3] = intl2.string(channelId(stateFromStores[14]).t.RNH1jn);
+  obj2[4] = first;
+  obj2[5] = tmp7[1];
+  obj2[6] = tmp.placeholderText.color;
+  items5[1] = callback(channelId(stateFromStores[17]).TextArea, obj2);
+  obj[3] = items5;
   return callback2(closure_7, obj);
 }
-({ View: closure_5, Image: closure_6, ScrollView: closure_7 } = get_ActivityIndicator);
-({ jsx: closure_10, jsxs: closure_11 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW };
-_createForOfIteratorHelperLoose.contentContainer = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.imageContainer = { alignItems: "center", borderRadius: require("_createForOfIteratorHelperLoose").radii.sm };
-let obj2 = { width: "100%", resizeMode: "contain", height: undefined, borderRadius: require("_createForOfIteratorHelperLoose").radii.sm };
-_createForOfIteratorHelperLoose.image = obj2;
-let obj1 = { alignItems: "center", borderRadius: require("_createForOfIteratorHelperLoose").radii.sm };
-_createForOfIteratorHelperLoose.placeholderText = { color: require("_createForOfIteratorHelperLoose").colors.TEXT_MUTED };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-let obj3 = { color: require("_createForOfIteratorHelperLoose").colors.TEXT_MUTED };
+({ View: c5, Image: closure_6, ScrollView: error } = get_ActivityIndicator);
+({ jsx: c10, jsxs: unpackModuleId } = jsxProd);
+createCacheKey = { contentContainer: null, imageContainer: null, image: null, placeholderText: null };
+createCacheKey = { backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { alignItems: "center", borderRadius: require("Themes").radii.sm };
+let obj2 = { width: "100%", resizeMode: "contain", height: "Array", borderRadius: false };
+obj2[3] = require("Themes").radii.sm;
+createCacheKey[2] = obj2;
+let obj1 = { alignItems: "center", borderRadius: require("Themes").radii.sm };
+createCacheKey[3] = { color: require("Themes").colors.TEXT_MUTED };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let obj3 = { color: require("Themes").colors.TEXT_MUTED };
 const result = require("get ActivityIndicator").fileFinishedImporting("modules/image_upload/native/AddImageDescriptionModal.tsx");
 
 export default function AddImageDescriptionModal(arg0) {
@@ -132,11 +131,11 @@ export default function AddImageDescriptionModal(arg0) {
   let importDefault;
   let require;
   ({ source: require, channelId: importDefault, id: dependencyMap } = arg0);
-  const obj = { screenKey: "addImageDescriptionModal" };
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj.title = intl.string(require(1212) /* getSystemLocale */.t["5S2AK+"]);
-  obj.render = function render() {
+  const obj = { screenKey: "addImageDescriptionModal", title: null, render: null };
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj[1] = intl.string(require(1236) /* getSystemLocale */.t["5S2AK+"]);
+  obj[2] = function render() {
     return outer1_10(outer1_13, { source: closure_0, channelId: closure_1, id: closure_2 });
   };
-  return callback(importDefault(9084), obj);
+  return callback(importDefault(9108), obj);
 };

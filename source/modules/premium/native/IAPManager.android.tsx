@@ -1,26 +1,26 @@
-// Module ID: 16179
-// Function ID: 125198
-// Name: _isNativeReflectConstruct
-// Dependencies: [7, 6, 15, 17, 18, 5112, 2]
+// Module ID: 16214
+// Function ID: 16215
+// Name: prototype
+// Dependencies: [5134, 2]
 
-// Module 16179 (_isNativeReflectConstruct)
-import _defineProperties from "_defineProperties";
-import set from "set";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
-import tmp2 from "AutomaticLifecycleManager";
+// Module 16214 (prototype)
+import "initialize";
 
-function _isNativeReflectConstruct() {
-  let _defineProperties = !valueOf.call(Reflect.construct(Boolean, [], () => {
+let prototype = function IAPManager() {
+  const applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
+  applyArgumentsResult.actions = {
+    POST_CONNECTION_OPEN() {
 
-  }));
-  function _isNativeReflectConstruct() {
-    return _defineProperties;
-  }
-  const result = _isNativeReflectConstruct();
+    },
+    APP_STATE_UPDATE() {
+
+    }
+  };
+  return applyArgumentsResult;
+}.prototype;
+class prototype extends tmp2 {
 }
-tmp2 = new tmp2();
-let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/premium/native/IAPManager.android.tsx");
+prototype = new prototype();
+const result = require("set").fileFinishedImporting("modules/premium/native/IAPManager.android.tsx");
 
-export default tmp2;
+export default prototype;

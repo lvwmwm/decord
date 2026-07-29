@@ -1,160 +1,153 @@
-// Module ID: 16574
-// Function ID: 128988
+// Module ID: 16609
+// Function ID: 16610
 // Name: Content
-// Dependencies: [57, 31, 14200, 653, 33, 13013, 16546, 14222, 14207, 16529, 8319, 1212, 16535, 7611, 1273, 16575, 16538, 2]
+// Dependencies: [32, 19, 14222, 676, 21, 13036, 16581, 14244, 14229, 16564, 8343, 1236, 16570, 7634, 1297, 16610, 16573, 2]
 // Exports: default
 
-// Module 16574 (Content)
+// Module 16609 (Content)
 import _slicedToArray from "_slicedToArray";
 import MAX_SUBSCRIPTION_TIERS from "MAX_SUBSCRIPTION_TIERS";
 import { UPLOAD_MEDIUM_SIZE } from "ME";
 import jsxProd from "jsxProd";
-import importAllResult from "result";
+import importAllResult from "noop";
 
-let closure_10;
-let closure_11;
-let closure_5;
+let c10;
+let c5;
+let c9;
 let closure_6;
-let closure_7;
-let closure_9;
+let error;
+let unpackModuleId;
 const require = arg1;
 function Content() {
   let require;
   let tmp10;
   let tmp12;
   let tmp13;
-  let tmp4;
-  let tmp5;
+  let tmp15;
+  let tmp16;
   let tmp7;
-  let tmp9;
-  const tmp = importDefault(13013)();
-  let obj = require(16546) /* useEditStateContext */;
+  let tmp8;
+  const tmp3 = importDefault(13036)();
+  let obj = require(16581) /* useEditStateContext */;
   const editStateContext = obj.useEditStateContext();
   const editStateId = editStateContext.editStateId;
-  let obj1 = importAll(14222);
-  [tmp4, tmp5] = callback(obj1.useName(editStateId), 2);
-  let obj2 = importAll(14222);
-  const tmp3 = callback(obj1.useName(editStateId), 2);
-  [tmp7, require] = callback(obj2.useImage(editStateId), 2);
-  let obj3 = importAll(14222);
-  const tmp6 = callback(obj2.useImage(editStateId), 2);
-  [tmp9, tmp10] = callback(obj3.usePriceTier(editStateId), 2);
-  let obj4 = importAll(14222);
-  const tmp8 = callback(obj3.usePriceTier(editStateId), 2);
-  let tmp14 = null;
-  [tmp12, tmp13] = callback(obj4.useDescription(editStateId), 2);
-  if (null != tmp7) {
-    obj = { uri: tmp7 };
-    tmp14 = obj;
+  let obj1 = importAll(14244);
+  [tmp7, tmp8] = callback(obj1.useName(editStateId), 2);
+  let obj2 = importAll(14244);
+  const tmp6 = callback(obj1.useName(editStateId), 2);
+  [tmp10, require] = callback(obj2.useImage(editStateId), 2);
+  let obj3 = importAll(14244);
+  const tmp9 = callback(obj2.useImage(editStateId), 2);
+  [tmp12, tmp13] = callback(obj3.usePriceTier(editStateId), 2);
+  let obj4 = importAll(14244);
+  const tmp11 = callback(obj3.usePriceTier(editStateId), 2);
+  let tmp17 = null;
+  [tmp15, tmp16] = callback(obj4.useDescription(editStateId), 2);
+  if (null != tmp10) {
+    obj = { uri: null };
+    obj[0] = tmp10;
+    tmp17 = obj;
   }
-  let obj6 = require(14207) /* _createForOfIteratorHelperLoose */;
-  const subscriptionListing = obj6.useSubscriptionListing(editStateId);
+  let tmp4Result = tmp4(14229);
+  const subscriptionListing = tmp4Result.useSubscriptionListing(editStateId);
   let published;
-  if (null != subscriptionListing) {
+  if (subscriptionListing != null) {
     published = subscriptionListing.published;
   }
-  let tmp17 = true === published;
-  let obj7 = require(16529) /* useRoleSubscriptionSettingsDisabled */;
-  const roleSubscriptionSettingsDisabled = obj7.useRoleSubscriptionSettingsDisabled();
-  obj = {};
-  obj1 = { style: tmp.header };
-  const tmp11 = callback(obj4.useDescription(editStateId), 2);
-  const tmp19 = closure_11;
-  const tmp20 = closure_10;
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj1.children = intl.string(require(1212) /* getSystemLocale */.t["6XpbbR"]);
-  const items = [callback2(importDefault(8319), obj1), , , , , , , ];
-  obj2 = {};
-  const tmp21 = importDefault(8319);
-  const intl2 = require(1212) /* getSystemLocale */.intl;
-  obj2.description = intl2.string(require(1212) /* getSystemLocale */.t.pNZfgG);
-  obj2.image = tmp14;
-  obj2.imageUploadSize = UPLOAD_MEDIUM_SIZE;
-  obj2.previewShape = require(16535) /* pickImage */.PreviewShape.CIRCLE;
-  obj2.setImage = function setImage(uri) {
+  let tmp20 = true === published;
+  tmp4Result = tmp4(16564);
+  const roleSubscriptionSettingsDisabled = tmp4Result.useRoleSubscriptionSettingsDisabled();
+  obj = { style: tmp3.header, children: null };
+  let tmpResult = tmp(8343);
+  const intl = tmp4(1236).intl;
+  obj[1] = intl.string(require(1236) /* getSystemLocale */.t["6XpbbR"]);
+  const items = [callback2(tmpResult, obj), , , , , , , ];
+  obj1 = { description: null, image: null, imageUploadSize: null, previewShape: null, setImage: null, disabled: null };
+  tmpResult = tmp(16570);
+  const intl2 = tmp4(1236).intl;
+  obj1[0] = intl2.string(require(1236) /* getSystemLocale */.t.pNZfgG);
+  obj1[1] = tmp17;
+  obj1[2] = UPLOAD_MEDIUM_SIZE;
+  obj1[3] = require(16570) /* pickImage */.PreviewShape.CIRCLE;
+  obj1[4] = function setImage(uri) {
     return callback(uri.uri);
   };
-  obj2.disabled = roleSubscriptionSettingsDisabled;
-  items[1] = callback2(importDefault(16535), obj2);
-  obj3 = { style: tmp.header };
-  const tmp22 = importDefault(16535);
-  const intl3 = require(1212) /* getSystemLocale */.intl;
-  obj3.children = intl3.string(require(1212) /* getSystemLocale */.t.rJ6Oad);
-  items[2] = callback2(importDefault(8319), obj3);
-  obj4 = { style: tmp.textInput, showTopContainer: false, multiline: false, maxLength: closure_7, value: tmp4 };
-  const intl4 = require(1212) /* getSystemLocale */.intl;
-  obj4.placeholder = intl4.string(require(1212) /* getSystemLocale */.t["i4/g+E"]);
-  obj4.onChange = tmp5;
-  obj4.autoFocus = true;
-  obj4.clearButtonVisibility = require(1273) /* Button */.ClearButtonVisibility.WITH_CONTENT;
-  obj4.disabled = roleSubscriptionSettingsDisabled;
-  items[3] = callback2(require(7611) /* Form */.FormInput, obj4);
-  const obj5 = { style: tmp.header };
-  const tmp23 = importDefault(8319);
-  const intl5 = require(1212) /* getSystemLocale */.intl;
-  obj5.children = intl5.string(require(1212) /* getSystemLocale */.t["74JctW"]);
-  items[4] = callback2(importDefault(8319), obj5);
-  obj6 = { style: tmp.textInput, showTopContainer: false, multiline: true, maxLength: closure_6, numberOfLines: 3, value: tmp12 };
-  const intl6 = require(1212) /* getSystemLocale */.intl;
-  obj6.placeholder = intl6.string(require(1212) /* getSystemLocale */.t["3YHwoG"]);
-  obj6.onChange = tmp13;
-  obj6.disabled = roleSubscriptionSettingsDisabled;
-  items[5] = callback2(require(7611) /* Form */.FormInput, obj6);
-  obj7 = { style: tmp.header };
-  const tmp24 = importDefault(8319);
-  const intl7 = require(1212) /* getSystemLocale */.intl;
-  obj7.children = intl7.string(require(1212) /* getSystemLocale */.t.CrRVAx);
-  items[6] = callback2(importDefault(8319), obj7);
-  const obj8 = {};
-  const tmp25 = importDefault(8319);
-  const tmp26 = callback2;
-  if (!tmp17) {
-    tmp17 = roleSubscriptionSettingsDisabled;
+  obj1[5] = roleSubscriptionSettingsDisabled;
+  items[1] = callback2(tmpResult, obj1);
+  obj2 = { style: tmp3.header, children: null };
+  const tmp14 = callback(obj4.useDescription(editStateId), 2);
+  const tmp22 = closure_11;
+  const tmp23 = closure_10;
+  const tmp24 = callback2;
+  const intl3 = tmp4(1236).intl;
+  obj2[1] = intl3.string(require(1236) /* getSystemLocale */.t.rJ6Oad);
+  items[2] = callback2(importDefault(8343), obj2);
+  obj3 = { style: tmp3.textInput, showTopContainer: false, multiline: false, maxLength: closure_7, value: tmp7, placeholder: null, onChange: null, autoFocus: true, clearButtonVisibility: null, disabled: null };
+  const intl4 = tmp4(1236).intl;
+  obj3[5] = intl4.string(require(1236) /* getSystemLocale */.t["i4/g+E"]);
+  obj3[6] = tmp8;
+  obj3[8] = require(1297) /* Button */.ClearButtonVisibility.WITH_CONTENT;
+  obj3[9] = roleSubscriptionSettingsDisabled;
+  items[3] = callback2(require(7634) /* Form */.FormInput, obj3);
+  obj4 = { style: tmp3.header, children: null };
+  const tmpResult1 = importDefault(8343);
+  const intl5 = tmp4(1236).intl;
+  obj4[1] = intl5.string(require(1236) /* getSystemLocale */.t["74JctW"]);
+  items[4] = callback2(importDefault(8343), obj4);
+  const obj5 = { style: tmp3.textInput, showTopContainer: false, multiline: true, maxLength: closure_6, numberOfLines: 3, value: tmp15, placeholder: null, onChange: null, disabled: null };
+  const intl6 = tmp4(1236).intl;
+  obj5[6] = intl6.string(require(1236) /* getSystemLocale */.t["3YHwoG"]);
+  obj5[7] = tmp16;
+  obj5[8] = roleSubscriptionSettingsDisabled;
+  items[5] = callback2(require(7634) /* Form */.FormInput, obj5);
+  const obj6 = { style: tmp3.header, children: null };
+  const tmpResult2 = importDefault(8343);
+  const intl7 = tmp4(1236).intl;
+  obj6[1] = intl7.string(require(1236) /* getSystemLocale */.t.CrRVAx);
+  items[6] = callback2(importDefault(8343), obj6);
+  const tmpResult3 = importDefault(8343);
+  if (!tmp20) {
+    tmp20 = roleSubscriptionSettingsDisabled;
   }
-  obj8.disabled = tmp17;
-  obj8.guildId = editStateContext.guildId;
-  let tmp28 = null;
-  if (null != tmp9) {
-    tmp28 = tmp9;
-  }
-  obj8.price = tmp28;
-  obj8.onChange = tmp10;
-  items[7] = tmp26(importDefault(16575), obj8);
-  obj.children = items;
-  return tmp19(tmp20, obj);
+  const obj7 = { disabled: tmp20, guildId: editStateContext.guildId, price: null, onChange: null };
+  const obj8 = { children: null };
+  obj7[2] = tmp12;
+  obj7[3] = tmp13;
+  items[7] = tmp24(importDefault(16610), obj7);
+  obj8[0] = items;
+  return tmp22(tmp23, obj8);
 }
-({ GuildRoleSubscriptionsTierScenes: closure_5, MAX_SUBSCRIPTION_TIER_DESCRIPTION_LENGTH: closure_6, MAX_SUBSCRIPTION_TIER_NAME_LENGTH: closure_7 } = MAX_SUBSCRIPTION_TIERS);
-({ jsx: closure_9, Fragment: closure_10, jsxs: closure_11 } = jsxProd);
-const memoResult = require("result").memo(() => callback2(Content, {}));
+({ GuildRoleSubscriptionsTierScenes: c5, MAX_SUBSCRIPTION_TIER_DESCRIPTION_LENGTH: closure_6, MAX_SUBSCRIPTION_TIER_NAME_LENGTH: error } = MAX_SUBSCRIPTION_TIERS);
+({ jsx: c9, Fragment: c10, jsxs: unpackModuleId } = jsxProd);
+const memoResult = require("noop").memo(() => callback2(Content, {}));
 const result = require("MAX_SUBSCRIPTION_TIERS").fileFinishedImporting("modules/guild_role_subscriptions/native/components/GuildRoleSubscriptionTierDetailsModal.tsx");
 
 export default function GuildRoleSubscriptionTierDetailsModal(arg0) {
-  let obj = require(16546) /* useEditStateContext */;
+  let obj = require(16581) /* useEditStateContext */;
   const editStateId = obj.useEditStateContext().editStateId;
-  const obj2 = importAll(14222);
-  const obj3 = importAll(14222);
-  const obj4 = importAll(14222);
-  let tmp = callback(obj2.useName(editStateId), 1)[0].length > 0;
-  if (tmp) {
-    tmp = null != callback(obj4.usePriceTier(editStateId), 1)[0];
+  const obj2 = importAll(14244);
+  const obj3 = importAll(14244);
+  const obj4 = importAll(14244);
+  let tmp3 = callback(obj2.useName(editStateId), 1)[0].length > 0;
+  if (tmp3) {
+    tmp3 = null != callback(obj4.usePriceTier(editStateId), 1)[0];
   }
-  if (tmp) {
-    tmp = callback(obj5.useDescription(editStateId), 1)[0].length > 0;
+  if (tmp3) {
+    tmp3 = callback(obj5.useDescription(editStateId), 1)[0].length > 0;
   }
-  if (tmp) {
-    tmp = null != callback(obj3.useImage(editStateId), 1)[0];
+  if (tmp3) {
+    tmp3 = null != callback(obj3.useImage(editStateId), 1)[0];
   }
-  obj = {};
-  obj5 = importAll(14222);
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj.title = intl.string(require(1212) /* getSystemLocale */.t.o3pHas);
-  const intl2 = require(1212) /* getSystemLocale */.intl;
-  obj.description = intl2.string(require(1212) /* getSystemLocale */.t.oOOME5);
-  obj.canProceedToNextStep = tmp;
-  obj.nextStep = constants.CHANNEL_BENEFITS;
-  obj.scrollable = false;
+  obj = { title: null, description: null, canProceedToNextStep: null, nextStep: null, scrollable: false };
+  obj5 = importAll(14244);
+  const intl = tmp(1236).intl;
+  obj[0] = intl.string(require(1236) /* getSystemLocale */.t.o3pHas);
+  const intl2 = tmp(1236).intl;
+  obj[1] = intl2.string(require(1236) /* getSystemLocale */.t.oOOME5);
+  obj[2] = tmp3;
+  obj[3] = constants.CHANNEL_BENEFITS;
   const merged = Object.assign(arg0);
-  obj["children"] = callback2(closure_12, {});
-  return callback2(importDefault(16538), obj);
+  obj.children = callback2(closure_13, {});
+  return callback2(importDefault(16573), obj);
 };
 export const GuildRoleSubscriptionTierDetailsTab = memoResult;

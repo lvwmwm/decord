@@ -1,81 +1,79 @@
-// Module ID: 15254
-// Function ID: 116031
+// Module ID: 15287
+// Function ID: 15288
 // Name: ForYouMentionPlaceholder
-// Dependencies: [31, 27, 4157, 33, 4165, 689, 566, 4026, 4166, 2]
+// Dependencies: [19, 17, 4181, 21, 4189, 712, 589, 4050, 4190, 2]
 // Exports: ForYouMentionPlaceholder
 
-// Module 15254 (ForYouMentionPlaceholder)
-import "result";
+// Module 15287 (ForYouMentionPlaceholder)
+import "noop";
 import { View } from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_5;
+let c5;
 let closure_6;
 let require = arg1;
-({ jsx: closure_5, jsxs: closure_6 } = jsxProd);
-_createForOfIteratorHelperLoose = { placeholder: { flexDirection: "row", marginBottom: 16, marginHorizontal: 24 } };
-_createForOfIteratorHelperLoose = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_MOD_STRONG, height: 52, width: 52, borderRadius: 26, marginEnd: 12 };
-_createForOfIteratorHelperLoose.placeholderImage = _createForOfIteratorHelperLoose;
-let obj1 = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_MOD_STRONG, height: 15, borderRadius: require("_createForOfIteratorHelperLoose").radii.sm, marginRight: 12, marginBottom: 4 };
-_createForOfIteratorHelperLoose.placeholderText = obj1;
-_createForOfIteratorHelperLoose.placeholderTextContainer = { flexDirection: "row", flexWrap: "wrap" };
-_createForOfIteratorHelperLoose.placeholderBody = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_MOD_STRONG, height: 40, borderRadius: require("_createForOfIteratorHelperLoose").radii.sm, marginTop: 4 };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+({ jsx: c5, jsxs: closure_6 } = jsxProd);
+createCacheKey = { placeholder: { flexDirection: "row", marginBottom: 16, marginHorizontal: 24 }, placeholderImage: null, placeholderText: null, placeholderTextContainer: null, placeholderBody: null };
+createCacheKey = { backgroundColor: require("Themes").colors.BACKGROUND_MOD_STRONG, height: 52, width: 52, borderRadius: 26, marginEnd: 12 };
+createCacheKey[1] = createCacheKey;
+createCacheKey[2] = { backgroundColor: require("Themes").colors.BACKGROUND_MOD_STRONG, height: 15, borderRadius: require("Themes").radii.sm, marginRight: 12, marginBottom: 4 };
+createCacheKey[3] = { flexDirection: "row", flexWrap: "wrap" };
+let obj1 = { backgroundColor: require("Themes").colors.BACKGROUND_MOD_STRONG, height: 15, borderRadius: require("Themes").radii.sm, marginRight: 12, marginBottom: 4 };
+createCacheKey[4] = { backgroundColor: require("Themes").colors.BACKGROUND_MOD_STRONG, height: 40, borderRadius: require("Themes").radii.sm, marginTop: 4 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
 let closure_8 = [70, 50];
 let closure_9 = { code: "function ForYouMentionPlaceholderTsx1(){const{reducedMotion,opacity}=this.__closure;return{opacity:reducedMotion?0.7:opacity.get()};}" };
-let obj2 = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_MOD_STRONG, height: 40, borderRadius: require("_createForOfIteratorHelperLoose").radii.sm, marginTop: 4 };
-let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/notification_center/native/ForYouMentionPlaceholder.tsx");
+let obj2 = { backgroundColor: require("Themes").colors.BACKGROUND_MOD_STRONG, height: 40, borderRadius: require("Themes").radii.sm, marginTop: 4 };
+let result = require("maybeApplyNoTextColorForLightCustomTheme").fileFinishedImporting("modules/notification_center/native/ForYouMentionPlaceholder.tsx");
 
 export const ForYouMentionPlaceholder = function ForYouMentionPlaceholder() {
-  const tmp = _createForOfIteratorHelperLoose();
+  const tmp = createCacheKey();
   const require = tmp;
   let obj = require(sharedValue[6]);
-  let items = [_isNativeReflectConstruct];
-  const stateFromStores = obj.useStateFromStores(items, () => outer1_4.useReducedMotion);
+  let items = [maybeApplyNoTextColorForLightCustomTheme];
+  const stateFromStores = obj.useStateFromStores(items, () => useReducedMotion.useReducedMotion);
   let obj1 = require(sharedValue[7]);
   sharedValue = obj1.useSharedValue(0.3);
   let obj3 = require(sharedValue[7]);
-  obj = { duration: 1000 };
+  obj = { duration: 1000, easing: null };
   const Easing = require(sharedValue[7]).Easing;
-  obj.easing = Easing.inOut(require(sharedValue[7]).Easing.ease);
+  obj[1] = Easing.inOut(require(sharedValue[7]).Easing.ease);
   const result = sharedValue.set(obj3.withRepeat(require(sharedValue[8]).withTiming(0.7, obj), -1, true));
   const obj5 = require(sharedValue[8]);
   const fn = function y() {
-    const obj = {};
-    let num = 0.7;
+    let opacity = 0.7;
     if (!stateFromStores) {
-      num = sharedValue.get();
+      opacity = sharedValue.get();
     }
-    obj.opacity = num;
-    return obj;
+    return { opacity };
   };
   fn.__closure = { reducedMotion: stateFromStores, opacity: sharedValue };
   fn.__workletHash = 8828208724188;
   fn.__initData = closure_9;
   const animatedStyle = require(sharedValue[7]).useAnimatedStyle(fn);
-  obj = { style: items1 };
+  obj = { style: items1, children: null };
   items1 = [tmp.placeholder, animatedStyle];
   obj1 = { style: tmp.placeholderImage };
   const items2 = [callback(View, obj1), ];
-  const obj2 = {};
+  const obj2 = { children: null };
   obj3 = {
     style: tmp.placeholderTextContainer,
     children: closure_8.map((arg0, arg1) => {
-      let obj = {};
+      let obj = { style: null };
       const items = [tmp.placeholderText, ];
       obj = { width: "" + arg0 + "%" };
       items[1] = obj;
-      obj.style = items;
+      obj[0] = items;
       return outer1_5(outer1_3, obj, arg1);
     })
   };
   const items3 = [callback(View, obj3), ];
   const items4 = [tmp.placeholderBody, { width: "85%" }];
   items3[1] = callback(View, { style: items4 });
-  obj2.children = items3;
+  obj2[0] = items3;
   items2[1] = callback2(View, obj2);
-  obj.children = items2;
+  obj[1] = items2;
   return callback2(stateFromStores(sharedValue[7]).View, obj);
 };

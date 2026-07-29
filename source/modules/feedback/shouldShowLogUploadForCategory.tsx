@@ -1,10 +1,10 @@
-// Module ID: 16135
-// Function ID: 124769
+// Module ID: 16173
+// Function ID: 16174
 // Name: shouldShowLogUploadForCategory
-// Dependencies: [9497, 2]
+// Dependencies: [9521, 2]
 // Exports: shouldShowLogUploadForCategory
 
-// Module 16135 (shouldShowLogUploadForCategory)
+// Module 16173 (shouldShowLogUploadForCategory)
 import { FeedbackRating } from "FeedbackRating";
 
 let closure_1 = {};
@@ -21,10 +21,11 @@ export const shouldShowLogUploadForCategory = function shouldShowLogUploadForCat
   } else {
     let num2 = 0.01;
     if (null != table[category]) {
-      num2 = 0.01;
-      if (null != tmp3[reason.value]) {
-        num2 = tmp5;
+      let num3 = tmp2[reason.value];
+      if (num3 == null) {
+        num3 = 0.01;
       }
+      num2 = num3;
     }
     const _Math = Math;
     return Math.random() < num2;

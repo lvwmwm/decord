@@ -1,23 +1,23 @@
-// Module ID: 13724
-// Function ID: 105232
+// Module ID: 13745
+// Function ID: 13746
 // Name: GuildSelectComponentActionSheet
-// Dependencies: [57, 31, 27, 1838, 5005, 33, 4165, 4394, 1212, 4133, 10988, 5548, 4354, 1273, 4161, 5009, 2]
+// Dependencies: [32, 19, 17, 1862, 5027, 21, 4189, 4417, 1236, 4157, 11012, 5566, 4379, 1297, 4185, 5031, 2]
 // Exports: default
 
-// Module 13724 (GuildSelectComponentActionSheet)
+// Module 13745 (GuildSelectComponentActionSheet)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
+import noop from "noop";
 import { View } from "get ActivityIndicator";
-import closure_6 from "_createForOfIteratorHelperLoose";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import createGuildRecordFromRust from "createGuildRecordFromRust";
+import insertUnsortedGuilds from "insertUnsortedGuilds";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_8;
-let closure_9;
+let c9;
+let metroImportAll;
 const require = arg1;
-({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
-let closure_10 = _createForOfIteratorHelperLoose.createStyles({ guildIdentity: { flexDirection: "row", alignItems: "center" }, iconContainer: { marginRight: 16 }, avatar: { marginRight: 4 } });
+({ jsx: metroImportAll, jsxs: c9 } = jsxProd);
+let closure_10 = createCacheKey.createStyles({ guildIdentity: { flexDirection: "row", alignItems: "center" }, iconContainer: { marginRight: 16 }, avatar: { marginRight: 4 } });
 const result = require("get ActivityIndicator").fileFinishedImporting("modules/interaction_components/native/components/GuildSelectComponentActionSheet.tsx");
 
 export default function GuildSelectComponentActionSheet(arg0) {
@@ -25,88 +25,101 @@ export default function GuildSelectComponentActionSheet(arg0) {
   let require;
   let selectedGuild;
   ({ selectedGuild, onSelectGuild: require, user: importDefault } = arg0);
+  let dependencyMap;
+  let first;
+  let first1;
+  let closure_5;
   let callback;
-  function submitSelection() {
-    return outer1_1(tmp[9]).hideActionSheet();
-  }
-  let tmp = callback2();
-  const dependencyMap = tmp;
+  const tmp = callback2();
+  dependencyMap = tmp;
+  let obj = first1;
   const tmp2 = first(first1.useState(""), 2);
   first = tmp2[0];
-  let obj = { type: require(4394) /* ActionComponentState */.SelectOptionType.GUILD, value: selectedGuild.id, label: selectedGuild.name, guild: selectedGuild };
-  const tmp4 = first(first1.useState(obj), 2);
-  first1 = tmp4[0];
-  let closure_5 = tmp4[1];
+  obj = { type: require(4417) /* ActionComponentState */.SelectOptionType.GUILD, value: selectedGuild.id, label: selectedGuild.name, guild: selectedGuild };
+  const tmp6 = first(first1.useState(obj), 2);
+  first1 = tmp6[0];
+  closure_5 = tmp6[1];
   if (null != first1) {
     let items = [first1];
     let items1 = items;
   } else {
     items1 = [];
   }
-  obj = { maxValues: 1, minValues: 1 };
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj.placeholder = intl.string(require(1212) /* getSystemLocale */.t["ZImm/x"]);
-  callback = first1.useCallback((query) => (function queryGuilds(query) {
-    function guildRecordToGuildSearchableSelectOption(id) {
-      return { type: outer3_0(table[7]).SelectOptionType.GUILD, value: id.id, label: id.name, guild: id };
-    }
-    if (0 === query.length) {
-      const flattenedGuildIds = submitSelection.getFlattenedGuildIds();
+  obj = { maxValues: 1, minValues: 1, placeholder: null };
+  function submitSelection() {
+    return lib(_undefined[9]).hideActionSheet();
+  }
+  const intl = tmp4(1236).intl;
+  obj[2] = intl.string(require(1236) /* getSystemLocale */.t["ZImm/x"]);
+  callback = obj.useCallback((arg0) => {
+    if (0 === arg0.length) {
+      flattenedGuildIds = flattenedGuildIds.getFlattenedGuildIds();
       const _Array = Array;
       const array = new Array();
-      return flattenedGuildIds.reduce((arr, guildId) => {
-        const guild = callback.getGuild(guildId);
+      let reduced = flattenedGuildIds.reduce((arr) => {
+        guild = guild.getGuild(arg1);
         if (null != guild) {
-          arr.push(guildRecordToGuildSearchableSelectOption(guild));
+          const obj = { type: null, value: null, label: null, guild: null };
+          obj[0] = callback(4417).SelectOptionType.GUILD;
+          ({ id: obj[1], name: obj[2] } = guild);
+          obj[3] = guild;
+          arr.push(obj);
         }
         return arr;
       }, array);
     } else {
-      let obj = outer2_1(table[15]);
-      obj = { query };
-      return obj.queryGuilds(obj).map((record) => guildRecordToGuildSearchableSelectOption(record.record));
+      let obj = lib(_undefined[15]);
+      obj = { query: null };
+      obj[0] = arg0;
+      reduced = obj.queryGuilds(obj).map((record) => {
+        record = record.record;
+        return { type: callback(4417).SelectOptionType.GUILD, value: record.id, label: record.name, guild: record };
+      });
+      const queryGuildsResult = obj.queryGuilds(obj);
     }
-  })(query), []);
+    return reduced;
+  }, []);
   const items2 = [first, callback];
-  const memo = first1.useMemo(() => callback(first), items2);
-  obj = {
+  const memo = obj.useMemo(() => callback(first), items2);
+  return callback(importDefault(11012), {
     onPressOptionItem(arg0, guild) {
       callback(guild.guild);
       callback2(guild);
-      submitSelection();
+      outer1_1(_undefined[9]).hideActionSheet();
     },
     onRemoveOptionItem() {
       callback2(null);
     },
     renderIcon(guild) {
-      return outer1_8(outer1_1(tmp[11]), { guild: guild.guild });
+      return callback3(lib(_undefined[11]), { guild: guild.guild });
     },
     renderHeaderIcon(guild) {
-      const obj = {};
-      tmp = outer1_1(tmp[11]);
-      obj.size = outer1_0(tmp[11]).GuildIconSizes.XSMALL;
-      obj.guild = guild.guild;
-      return outer1_8(tmp, obj);
+      const obj = { size: null, guild: null };
+      obj[0] = callback(_undefined[11]).GuildIconSizes.XSMALL;
+      obj[1] = guild.guild;
+      return callback3(lib(_undefined[11]), obj);
     },
     iconContainerStyle: tmp.iconContainer,
     renderDescription(guild) {
-      const hasAvatarForGuildResult = closure_1.hasAvatarForGuild(guild.guild.id);
-      let obj = outer1_1(tmp[12]);
-      let username = obj.getNickname(guild.guild.id, undefined, closure_1);
-      obj = { style: tmp.guildIdentity };
-      let tmp5 = hasAvatarForGuildResult;
+      const hasAvatarForGuildResult = lib.hasAvatarForGuild(guild.guild.id);
+      let obj = outer1_1(_undefined[12]);
+      let username = obj.getNickname(guild.guild.id, undefined, lib);
+      obj = { style: _undefined.guildIdentity, children: null };
+      let tmp8 = hasAvatarForGuildResult;
       if (hasAvatarForGuildResult) {
-        obj = { size: outer1_0(tmp[13]).AvatarSizes.SIZE_16, style: tmp.avatar, user: closure_1, guildId: guild.guild.id, animate: true };
-        tmp5 = outer1_8(outer1_0(tmp[13]).Avatar, obj);
+        obj = { size: null, style: null, user: null, guildId: null, animate: true };
+        obj[0] = outer1_0(tmp3[13]).AvatarSizes.SIZE_16;
+        obj[1] = tmp7.avatar;
+        obj[2] = tmp;
+        obj[3] = guild.guild.id;
+        tmp8 = outer1_8(outer1_0(tmp3[13]).Avatar, obj);
       }
-      const items = [tmp5, ];
-      const obj1 = { variant: "text-sm/medium", color: "text-default" };
-      if (null == username) {
-        username = closure_1.username;
+      const items = [tmp8, ];
+      if (username == null) {
+        username = tmp.username;
       }
-      obj1.children = username;
-      items[1] = outer1_8(outer1_0(tmp[14]).Text, obj1);
-      obj.children = items;
+      items[1] = outer1_8(outer1_0(_undefined[14]).Text, { variant: "text-sm/medium", color: "text-default", children: username });
+      obj[1] = items;
       return outer1_9(closure_5, obj);
     },
     selectionActionComponent: obj,
@@ -115,7 +128,7 @@ export default function GuildSelectComponentActionSheet(arg0) {
     selectedOptions: items1,
     isSelected(value) {
       value = undefined;
-      if (null != first1) {
+      if (first1 != null) {
         value = first1.value;
       }
       return value.value === value;
@@ -127,6 +140,5 @@ export default function GuildSelectComponentActionSheet(arg0) {
     },
     allowEmpty: false,
     expanded: true
-  };
-  return callback(importDefault(10988), obj);
+  });
 };

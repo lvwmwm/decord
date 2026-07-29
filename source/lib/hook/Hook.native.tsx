@@ -1,16 +1,16 @@
-// Module ID: 12871
-// Function ID: 100090
+// Module ID: 12893
+// Function ID: 12894
 // Name: isHookModuleTooOld
 // Dependencies: [2]
 // Exports: attachToProcess, cancelAttachToProcess, findSteamProcess, isHookModuleTooOld
 
-// Module 12871 (isHookModuleTooOld)
+// Module 12893 (isHookModuleTooOld)
 const result = require("set").fileFinishedImporting("lib/hook/Hook.native.tsx");
 
 export function isHookModuleTooOld() {
   return true;
 }
-export const attachToProcess = function attachToProcess(pidFromDesktopSource, arg1) {
+export const attachToProcess = function attachToProcess(soundshareId, arg1) {
   return Promise.resolve();
 };
 export const cancelAttachToProcess = function cancelAttachToProcess(soundshareId) {

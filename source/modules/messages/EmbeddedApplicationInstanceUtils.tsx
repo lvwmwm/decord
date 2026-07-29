@@ -1,11 +1,11 @@
-// Module ID: 12348
-// Function ID: 96048
+// Module ID: 12370
+// Function ID: 12371
 // Name: getJoinOrStartButtonState
-// Dependencies: [31, 1212, 7989, 10580, 2]
+// Dependencies: [19, 1236, 8014, 10604, 2]
 // Exports: useJoinOrStartButtonState
 
-// Module 12348 (getJoinOrStartButtonState)
-import result from "result";
+// Module 12370 (getJoinOrStartButtonState)
+import noop from "noop";
 
 const require = arg1;
 function getJoinOrStartButtonState(channel) {
@@ -13,28 +13,28 @@ function getJoinOrStartButtonState(channel) {
   let embeddedActivity;
   let joinability;
   ({ embeddedActivity, joinability, currentEmbeddedActivity } = channel);
-  let obj = { disabled: false, isJoinAction: !tmp };
-  const intl = require(1212) /* getSystemLocale */.intl;
+  let obj = { disabled: false, isJoinAction: !tmp, text: null, tooltip: "Array" };
+  const intl = require(1236) /* getSystemLocale */.intl;
   const string = intl.string;
-  const t = require(1212) /* getSystemLocale */.t;
+  const t = require(1236) /* getSystemLocale */.t;
   if (null == embeddedActivity) {
     let stringResult = string(t.RscU7I);
+    let tmp6 = tmp2;
   } else {
     stringResult = string(t.sqe0hj);
+    tmp6 = tmp2;
   }
-  obj.text = stringResult;
-  obj.tooltip = undefined;
-  let obj1 = require(7989) /* isActivityInTextSupportedForChannel */;
-  const result = obj1.isActivitiesInTextEnabled(channel.channel);
+  obj[2] = stringResult;
+  const result = tmp6(8014).isActivitiesInTextEnabled(channel.channel);
   if (null != embeddedActivity) {
     if (null != currentEmbeddedActivity) {
       if (embeddedActivity.launchId === currentEmbeddedActivity.launchId) {
         obj = {};
         const merged = Object.assign(obj);
-        obj["disabled"] = true;
-        const intl10 = require(1212) /* getSystemLocale */.intl;
-        obj["text"] = intl10.string(require(1212) /* getSystemLocale */.t.DPfdsq);
-        obj["tooltip"] = undefined;
+        obj.disabled = true;
+        const intl10 = tmp6(1236).intl;
+        obj.text = intl10.string(tmp6(1236).t.DPfdsq);
+        obj.tooltip = undefined;
         return obj;
       }
     }
@@ -42,48 +42,49 @@ function getJoinOrStartButtonState(channel) {
   if (null == embeddedActivity) {
     obj = {};
     const merged1 = Object.assign(obj);
-    obj["disabled"] = !result;
+    obj.disabled = !result;
     let stringResult1;
     if (!result) {
-      const intl9 = require(1212) /* getSystemLocale */.intl;
-      stringResult1 = intl9.string(require(1212) /* getSystemLocale */.t.f41E1g);
+      const intl9 = tmp6(1236).intl;
+      stringResult1 = intl9.string(tmp6(1236).t.f41E1g);
     }
-    obj["tooltip"] = stringResult1;
+    obj.tooltip = stringResult1;
     return obj;
   } else {
     if (null != joinability) {
-      if (joinability !== require(10580) /* getEmbeddedActivityJoinability */.EmbeddedActivityJoinability.CAN_JOIN) {
-        if (require(10580) /* getEmbeddedActivityJoinability */.EmbeddedActivityJoinability.NO_USE_EMBEDDED_ACTIVITIES_PERMISSION === joinability) {
-          const intl8 = require(1212) /* getSystemLocale */.intl;
-          let stringResult2 = intl8.string(require(1212) /* getSystemLocale */.t.hHGrWz);
-        } else if (require(10580) /* getEmbeddedActivityJoinability */.EmbeddedActivityJoinability.ACTIVITY_AGE_GATED === joinability) {
-          const intl7 = require(1212) /* getSystemLocale */.intl;
-          stringResult2 = intl7.string(require(1212) /* getSystemLocale */.t["4WuFRE"]);
-        } else if (require(10580) /* getEmbeddedActivityJoinability */.EmbeddedActivityJoinability.ACTIVITIES_FEATURE_NOT_ENABLED_FOR_OS === joinability) {
-          const intl6 = require(1212) /* getSystemLocale */.intl;
-          stringResult2 = intl6.string(require(1212) /* getSystemLocale */.t.uGDCcw);
-        } else if (require(10580) /* getEmbeddedActivityJoinability */.EmbeddedActivityJoinability.ACTIVITY_NOT_SUPPORTED_ON_OS === joinability) {
-          const intl5 = require(1212) /* getSystemLocale */.intl;
-          stringResult2 = intl5.string(require(1212) /* getSystemLocale */.t.UXoQTp);
-        } else if (require(10580) /* getEmbeddedActivityJoinability */.EmbeddedActivityJoinability.CHANNEL_FULL === joinability) {
-          const intl4 = require(1212) /* getSystemLocale */.intl;
-          stringResult2 = intl4.string(require(1212) /* getSystemLocale */.t.rZfiNq);
-        } else if (require(10580) /* getEmbeddedActivityJoinability */.EmbeddedActivityJoinability.NO_CHANNEL_CONNECT_PERMISSION === joinability) {
-          const intl3 = require(1212) /* getSystemLocale */.intl;
-          stringResult2 = intl3.string(require(1212) /* getSystemLocale */.t.w5SAps);
+      if (joinability !== tmp6(10604).EmbeddedActivityJoinability.CAN_JOIN) {
+        if (tmp6(10604).EmbeddedActivityJoinability.NO_USE_EMBEDDED_ACTIVITIES_PERMISSION === joinability) {
+          const intl8 = tmp6(1236).intl;
+          let stringResult2 = intl8.string(tmp6(1236).t.hHGrWz);
+        } else if (tmp6(10604).EmbeddedActivityJoinability.ACTIVITY_AGE_GATED === joinability) {
+          const intl7 = tmp6(1236).intl;
+          stringResult2 = intl7.string(tmp6(1236).t["4WuFRE"]);
+        } else if (tmp6(10604).EmbeddedActivityJoinability.ACTIVITIES_FEATURE_NOT_ENABLED_FOR_OS === joinability) {
+          const intl6 = tmp6(1236).intl;
+          stringResult2 = intl6.string(tmp6(1236).t.uGDCcw);
+        } else if (tmp6(10604).EmbeddedActivityJoinability.ACTIVITY_NOT_SUPPORTED_ON_OS === joinability) {
+          const intl5 = tmp6(1236).intl;
+          stringResult2 = intl5.string(tmp6(1236).t.UXoQTp);
+        } else if (tmp6(10604).EmbeddedActivityJoinability.CHANNEL_FULL === joinability) {
+          const intl4 = tmp6(1236).intl;
+          stringResult2 = intl4.string(tmp6(1236).t.rZfiNq);
+        } else if (tmp6(10604).EmbeddedActivityJoinability.NO_CHANNEL_CONNECT_PERMISSION === joinability) {
+          const intl3 = tmp6(1236).intl;
+          stringResult2 = intl3.string(tmp6(1236).t.w5SAps);
         } else {
-          const intl2 = require(1212) /* getSystemLocale */.intl;
-          stringResult2 = intl2.string(require(1212) /* getSystemLocale */.t.Etp6uI);
+          const intl2 = tmp6(1236).intl;
+          stringResult2 = intl2.string(tmp6(1236).t.Etp6uI);
         }
-        obj1 = {};
+        const obj1 = {};
         const merged2 = Object.assign(obj);
-        obj1["disabled"] = true;
-        obj1["tooltip"] = stringResult2;
+        obj1.disabled = true;
+        obj1.tooltip = stringResult2;
         return obj1;
       }
     }
     return obj;
   }
+  const tmp6Result = tmp6(8014);
 }
 let result = require("isActivityInTextSupportedForChannel").fileFinishedImporting("modules/messages/EmbeddedApplicationInstanceUtils.tsx");
 

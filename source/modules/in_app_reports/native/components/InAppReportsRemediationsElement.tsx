@@ -1,29 +1,28 @@
-// Module ID: 12380
-// Function ID: 96182
+// Module ID: 12402
+// Function ID: 12403
 // Name: RemediationsElement
-// Dependencies: [31, 27, 33, 4165, 689, 5536, 1212, 2]
+// Dependencies: [19, 17, 21, 4189, 712, 5554, 1236, 2]
 // Exports: default
 
-// Module 12380 (RemediationsElement)
-import "result";
+// Module 12402 (RemediationsElement)
+import "noop";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
 const require = arg1;
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16, marginBottom: require("_createForOfIteratorHelperLoose").space.PX_32 };
-_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+createCacheKey = { container: null };
+createCacheKey = { paddingHorizontal: require("Themes").space.PX_16, marginBottom: require("Themes").space.PX_32 };
+createCacheKey[0] = createCacheKey;
+createCacheKey = createCacheKey.createStyles(createCacheKey);
 const result = require("jsxProd").fileFinishedImporting("modules/in_app_reports/native/components/InAppReportsRemediationsElement.tsx");
 
 export default function RemediationsElement(children) {
-  let obj = { style: _createForOfIteratorHelperLoose().container };
-  obj = {};
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj.title = intl.string(require(1212) /* getSystemLocale */.t["k+QA9N"]);
-  obj.hasIcons = true;
-  obj.children = children.children;
-  obj.children = jsx(require(5536) /* TableRowGroupTitle */.TableRowGroup, {});
-  return <View />;
+  let obj = { style: createCacheKey().container, children: null };
+  obj = { title: null, hasIcons: true, children: null };
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj[0] = intl.string(require(1236) /* getSystemLocale */.t["k+QA9N"]);
+  obj[2] = children.children;
+  obj[1] = jsx(require(5554) /* TableRowGroupTitle */.TableRowGroup, { title: null, hasIcons: true, children: null });
+  return <View title={null} hasIcons>{null}</View>;
 };

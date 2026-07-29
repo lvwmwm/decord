@@ -1,66 +1,58 @@
-// Module ID: 5922
-// Function ID: 52357
-// Name: LowDiskTrim
-// Dependencies: [6, 7, 5717, 1883, 2]
+// Module ID: 5941
+// Function ID: 5942
+// Name: handlePostConnectionOpen
+// Dependencies: [5735, 1907, 2]
 
-// Module 5922 (LowDiskTrim)
-import _classCallCheck from "_classCallCheck";
-import _defineProperties from "_defineProperties";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 5941 (handlePostConnectionOpen)
+import importDefaultResult from "result";
 
-let tmp2 = (() => {
-  class LowDiskTrim {
-    constructor() {
-      self = this;
-      tmp = outer1_2(this, self);
-      this.isLowDisk = false;
-      this.actions = {
-        POST_CONNECTION_OPEN() {
-              return self.handlePostConnectionOpen();
-            }
-      };
-      addChangeListenerResult = outer1_4.addChangeListener(() => self.handleFileSystemStoreChanged());
-      return;
+let obj = importDefault;
+class LowDiskTrim {
+  constructor() {
+    obj = Object.create(new.target.prototype);
+    LowDiskTrim = obj;
+    obj.isLowDisk = false;
+    obj.actions = {
+      POST_CONNECTION_OPEN() {
+            return obj.handlePostConnectionOpen();
+          }
+    };
+    addChangeListenerResult = __esModule.addChangeListener(() => obj.handleFileSystemStoreChanged());
+    return obj;
+  }
+}
+const prototype = LowDiskTrim.prototype;
+prototype["handlePostConnectionOpen"] = function handlePostConnectionOpen() {
+  this.isLowDisk = false;
+  const result = this.handleFileSystemStoreChanged();
+};
+prototype["handleFileSystemStoreChanged"] = function handleFileSystemStoreChanged() {
+  const self = this;
+  const isLowDisk = importDefaultResult.isLowDisk;
+  let tmp = isLowDisk;
+  if (isLowDisk) {
+    tmp = self.isLowDisk !== isLowDisk;
+  }
+  if (tmp) {
+    obj = obj(1907);
+    const databaseResult = obj.database();
+    if (databaseResult != null) {
+      databaseResult.incrementalVacuum();
     }
   }
-  let obj = {
-    key: "handlePostConnectionOpen",
-    value() {
-      this.isLowDisk = false;
-      const result = this.handleFileSystemStoreChanged();
-    }
-  };
-  const items = [obj, , ];
-  obj = {
-    key: "handleFileSystemStoreChanged",
-    value() {
-      const self = this;
-      const isLowDisk = outer1_4.isLowDisk;
-      let tmp = isLowDisk;
-      if (isLowDisk) {
-        tmp = self.isLowDisk !== isLowDisk;
-      }
-      if (tmp) {
-        const databaseResult = LowDiskTrim(outer1_1[3]).database();
-        if (null != databaseResult) {
-          databaseResult.incrementalVacuum();
-        }
-        const obj = LowDiskTrim(outer1_1[3]);
-      }
-      self.isLowDisk = isLowDisk;
-    }
-  };
-  items[1] = obj;
-  obj = {
-    key: "resetInMemoryState",
-    value() {
+  self.isLowDisk = isLowDisk;
+};
+prototype["resetInMemoryState"] = function resetInMemoryState() {
 
-    }
-  };
-  items[2] = obj;
-  return callback(LowDiskTrim, items);
-})();
-tmp2 = new tmp2();
-let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/app_database/modules/LowDiskTrim.tsx");
+};
+obj = Object.create(LowDiskTrim.prototype);
+obj.isLowDisk = false;
+obj.actions = {
+  POST_CONNECTION_OPEN() {
+    return obj.handlePostConnectionOpen();
+  }
+};
+importDefaultResult.addChangeListener(() => obj.handleFileSystemStoreChanged());
+let result = require("set").fileFinishedImporting("modules/app_database/modules/LowDiskTrim.tsx");
 
-export default tmp2;
+export default obj;

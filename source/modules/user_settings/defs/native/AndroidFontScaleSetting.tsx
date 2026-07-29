@@ -1,11 +1,11 @@
-// Module ID: 14306
-// Function ID: 109725
+// Module ID: 14328
+// Function ID: 14329
 // Name: slider
-// Dependencies: [31, 14258, 662, 7733, 33, 682, 14307, 11284, 1212, 10099, 477, 2]
+// Dependencies: [19, 14280, 685, 7756, 21, 705, 14329, 11308, 1236, 10120, 500, 2]
 
-// Module 14306 (slider)
-import result from "result";
-import { useFontScaleStore } from "customFontScale";
+// Module 14328 (slider)
+import noop from "noop";
+import { useFontScaleStore } from "DEFAULT_FONT_SCALE_STORE_STATE";
 import { FontScales } from "MAX_FAVORITES";
 import { jsx } from "jsxProd";
 import createToggle from "createToggle";
@@ -13,8 +13,8 @@ import createToggle from "createToggle";
 let require = arg1;
 createToggle = {
   useTitle() {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(require(1212) /* getSystemLocale */.t.i19n5L);
+    const intl = require(1236) /* getSystemLocale */.intl;
+    return intl.string(require(1236) /* getSystemLocale */.t.i19n5L);
   },
   parent: require("MobileSetting").MobileSetting.APPEARANCE,
   useProps: function useFontScaleSliderProps() {
@@ -25,17 +25,17 @@ createToggle = {
       index = FontScales.indexOf(tmp.persistedFontScale);
     }
     callback = callback.useCallback((arg0) => {
-      arg0(index[5]).batchUpdates(() => outer2_3.setState({ fontScale: outer2_4[closure_0] }));
+      arg0(index[5]).batchUpdates(() => outer1_3.setState({ fontScale: outer1_4[closure_0] }));
     }, []);
     const items = [index, callback, tmp.fontScale];
     return callback.useMemo(() => {
       const text = `${closure_0.fontScale * 100}%`;
-      const obj = { value: index, minimumValue: 0, maximumValue: outer1_4.length - 1, step: 1, onValueChange: callback, startIcon: outer1_5(tmp(index[6]).CircleMinusIcon, {}), endIcon: outer1_5(tmp(index[7]).CirclePlusIcon, {}) };
+      const obj = { value: index, minimumValue: 0, maximumValue: outer1_4.length - 1, step: 1, onValueChange: callback, startIcon: outer1_5(tmp(index[6]).CircleMinusIcon, {}), endIcon: outer1_5(tmp(index[7]).CirclePlusIcon, {}), accessibilityLabel: null, accessibilityValue: null, valueLabel: null, defaultValue: null };
       const intl = tmp(index[8]).intl;
-      obj.accessibilityLabel = intl.string(tmp(index[8]).t.i19n5L);
-      obj.accessibilityValue = { text };
-      obj.valueLabel = text;
-      obj.defaultValue = outer1_4.indexOf(1);
+      obj[7] = intl.string(tmp(index[8]).t.i19n5L);
+      obj[8] = { text };
+      obj[9] = text;
+      obj[10] = outer1_4.indexOf(1);
       return obj;
     }, items);
   },

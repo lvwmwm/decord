@@ -1,11 +1,11 @@
-// Module ID: 10608
-// Function ID: 82528
+// Module ID: 10614
+// Function ID: 10615
 // Name: getShelfItemData
-// Dependencies: [4202, 2]
+// Dependencies: [4226, 2]
 // Exports: default
 
-// Module 10608 (getShelfItemData)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 10614 (getShelfItemData)
+import addApplication from "addApplication";
 
 const result = require("set").fileFinishedImporting("modules/activities/getShelfItemData.tsx");
 
@@ -15,10 +15,10 @@ export default function getShelfItemData(applicationId) {
   applicationId = applicationId.applicationId;
   ({ activityConfigs, applications } = applicationId);
   let found;
-  if (null != applications) {
+  if (applications != null) {
     found = applications.find((id) => id.id === applicationId);
   }
-  if (null == found) {
+  if (found == null) {
     found = applicationId.getApplication(applicationId);
   }
   const found1 = activityConfigs.find((application_id) => application_id.application_id === applicationId);
@@ -26,7 +26,9 @@ export default function getShelfItemData(applicationId) {
   if (null != found1) {
     tmp4 = null;
     if (null != found) {
-      const obj = { activity: found1, application: found };
+      const obj = { activity: null, application: null };
+      obj[0] = found1;
+      obj[1] = found;
       tmp4 = obj;
     }
   }

@@ -1,11 +1,11 @@
-// Module ID: 16142
-// Function ID: 124792
+// Module ID: 16180
+// Function ID: 16181
 // Name: InAppReportsFeedbackActionSheet
-// Dependencies: [31, 653, 9497, 33, 16143, 16144, 9518, 1212, 675, 16145, 9500, 3865, 2]
+// Dependencies: [19, 676, 9521, 21, 16181, 16182, 9542, 1236, 698, 16183, 9524, 3889, 2]
 // Exports: default
 
-// Module 16142 (InAppReportsFeedbackActionSheet)
-import "result";
+// Module 16180 (InAppReportsFeedbackActionSheet)
+import "noop";
 import { AnalyticEvents } from "ME";
 import { FeedbackType } from "FeedbackRating";
 import { jsx } from "jsxProd";
@@ -17,26 +17,26 @@ export default function InAppReportsFeedbackActionSheet(arg0) {
   let importDefault;
   let require;
   ({ reportId: require, reportType: importDefault } = arg0);
-  let obj = require(16144) /* newGetEnglishMessageText */;
+  let obj = require(16182) /* newGetEnglishMessageText */;
   const result = obj.improperGetEnglishIntlMessageText("CALL_FEEDBACK_OPTION_OTHER");
-  obj = { headerLabel: null, showHeaderCloseButton: true, hideDontShowAgainCheckbox: true };
-  const tmp = importDefault(16143)();
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj.headerLabel = intl.string(require(1212) /* getSystemLocale */.t.MP5lDj);
-  const intl2 = require(1212) /* getSystemLocale */.intl;
-  obj.ratingsBodyLabel = intl2.string(require(1212) /* getSystemLocale */.t["7Ct0Dj"]);
-  const intl3 = require(1212) /* getSystemLocale */.intl;
-  obj.reasonsHeaderLabel = intl3.string(require(1212) /* getSystemLocale */.t.FJmoxF);
-  obj.reasons = tmp;
+  obj = { headerLabel: null, showHeaderCloseButton: true, hideDontShowAgainCheckbox: true, ratingsBodyLabel: null, reasonsHeaderLabel: null, reasons: null, feedbackReasons: null, otherKey: null, trackOpen: null, trackReport: null };
+  const tmp = importDefault(16181)();
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj[0] = intl.string(require(1236) /* getSystemLocale */.t.MP5lDj);
+  const intl2 = require(1236) /* getSystemLocale */.intl;
+  obj[3] = intl2.string(require(1236) /* getSystemLocale */.t["7Ct0Dj"]);
+  const intl3 = require(1236) /* getSystemLocale */.intl;
+  obj[4] = intl3.string(require(1236) /* getSystemLocale */.t.FJmoxF);
+  obj[5] = tmp;
   const items = [result];
-  obj.feedbackReasons = items;
-  obj.otherKey = result;
-  obj.trackOpen = function trackOpen() {
+  obj[6] = items;
+  obj[7] = result;
+  obj[8] = function trackOpen() {
     let obj = outer1_1(outer1_2[8]);
     obj = { report_id: closure_0, report_type: closure_1 };
     obj.track(outer1_3.IAR_FEEDBACK_MODAL_VIEWED, obj);
   };
-  obj.trackReport = function trackReport(arg0) {
+  obj[9] = function trackReport(arg0) {
     let dontShowAgain;
     let feedback;
     let rating;
@@ -46,25 +46,29 @@ export default function InAppReportsFeedbackActionSheet(arg0) {
     if (null != reason) {
       value = reason.value;
     }
-    let obj = { rating, problem: value };
-    let str = "";
-    if (null != feedback) {
-      str = feedback;
+    let obj = { rating, problem: value, feedback: null, reportId: null, reportType: null, dontShowAgain: null };
+    if (feedback == null) {
+      feedback = "";
     }
-    obj.feedback = str;
-    obj.reportId = closure_0;
-    obj.reportType = closure_1;
-    obj.dontShowAgain = null != dontShowAgain && dontShowAgain;
+    obj[2] = feedback;
+    obj[3] = closure_0;
+    obj[4] = closure_1;
+    let flag = dontShowAgain;
+    if (dontShowAgain == null) {
+      flag = false;
+    }
+    obj[5] = flag;
     outer1_1(outer1_2[9])(obj);
     if (dontShowAgain) {
-      obj = { feedbackType: outer1_4.IN_APP_REPORTS, location: "InAppReportsFeedbackActionSheet" };
-      outer1_0(outer1_2[10]).processOptOut(obj);
-      const obj2 = outer1_0(outer1_2[10]);
+      obj = { feedbackType: null, location: "InAppReportsFeedbackActionSheet" };
+      obj[0] = outer1_4.IN_APP_REPORTS;
+      outer1_0(tmp2[10]).processOptOut(obj);
+      const obj2 = outer1_0(tmp2[10]);
     }
     if (null != rating) {
-      outer1_0(outer1_2[11]).presentFeedbackSent();
-      const obj4 = outer1_0(outer1_2[11]);
+      outer1_0(tmp2[11]).presentFeedbackSent();
+      const obj4 = outer1_0(tmp2[11]);
     }
   };
-  return jsx(importDefault(9518), { headerLabel: null, showHeaderCloseButton: true, hideDontShowAgainCheckbox: true });
+  return jsx(importDefault(9542), { headerLabel: null, showHeaderCloseButton: true, hideDontShowAgainCheckbox: true, ratingsBodyLabel: null, reasonsHeaderLabel: null, reasons: null, feedbackReasons: null, otherKey: null, trackOpen: null, trackReport: null });
 };

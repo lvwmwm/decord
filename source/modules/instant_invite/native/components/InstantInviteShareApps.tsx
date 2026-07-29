@@ -1,35 +1,39 @@
-// Module ID: 12212
-// Function ID: 95438
-// Dependencies: [57, 31, 27, 12213, 33, 4165, 689, 4584, 5251, 12243, 6661, 12214, 2]
+// Module ID: 12236
+// Function ID: 12237
+// Dependencies: [32, 19, 17, 12237, 21, 4189, 712, 4606, 5273, 12267, 6682, 12238, 2]
 
-// Module 12212
+// Module 12236
 import _slicedToArray from "_slicedToArray";
-import importAllResult from "result";
+import importAllResult from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import SHARE_APPS_KEY from "SHARE_APPS_KEY";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_5;
+let c5;
 let closure_6;
-let closure_7;
-let closure_8;
+let error;
+let metroImportAll;
 const require = arg1;
-({ View: closure_5, ScrollView: closure_6 } = get_ActivityIndicator);
-({ SHARE_ITEMS: closure_7, SHARE_ITEMS_DEFAULT: closure_8 } = SHARE_APPS_KEY);
-let obj = {};
-obj = { padding: require("_createForOfIteratorHelperLoose").space.PX_16, gap: require("_createForOfIteratorHelperLoose").space.PX_12, alignItems: "center" };
-obj.contentContainer = obj;
-let closure_10 = _createForOfIteratorHelperLoose.createStyles(obj);
+let c4 = importAllResult;
+({ View: c5, ScrollView: closure_6 } = get_ActivityIndicator);
+({ SHARE_ITEMS: error, SHARE_ITEMS_DEFAULT: metroImportAll } = SHARE_APPS_KEY);
+let obj = { contentContainer: null };
+obj = { padding: require("Themes").space.PX_16, gap: require("Themes").space.PX_12, alignItems: "center" };
+obj[0] = obj;
+let closure_10 = createCacheKey.createStyles(obj);
 const memoResult = importAllResult.memo(function InstantInviteShareApps(onItemPressed) {
+  let arr;
+  let c2;
   onItemPressed = onItemPressed.onItemPressed;
-  let obj = onItemPressed(4584);
-  let closure_1 = obj.useFontScale();
-  const tmp2 = callback(importAllResult.useState(closure_8), 2);
-  const first = tmp2[0];
-  const dependencyMap = tmp2[1];
+  let closure_1;
+  let dependencyMap;
+  let obj = onItemPressed(4606);
+  closure_1 = obj.useFontScale();
+  const tmp = callback2();
+  [arr, c2] = callback(importAllResult.useState(closure_8), 2);
   const gesture = importAllResult.useMemo(() => {
-    const Gesture = onItemPressed(5251).Gesture;
+    const Gesture = onItemPressed(_undefined[8]).Gesture;
     return Gesture.Native().disallowInterruption(true);
   }, []);
   const effect = importAllResult.useEffect(() => {
@@ -37,56 +41,91 @@ const memoResult = importAllResult.memo(function InstantInviteShareApps(onItemPr
       const items = [];
       const item = arr.forEach((arg0, arg1) => {
         if (arg0) {
-          items.push(outer3_7[arg1]);
+          items.push(outer1_7[arg1]);
         }
       });
-      outer1_2(items);
+      callback(items);
     });
   }, []);
-  obj = { contentContainerStyle: null, showsHorizontalScrollIndicator: false, horizontal: true };
-  let items = [callback2().contentContainer, onItemPressed.contentContainerStyle];
-  obj.contentContainerStyle = items;
-  obj.children = first.map((type) => {
+  obj = {
+    contentContainerStyle: items,
+    showsHorizontalScrollIndicator: false,
+    horizontal: true,
+    children: arr.map((type) => {
+      let IconComponent;
+      let fullIcon;
+      let getLabel;
+      let icon;
+      let onItemPressed;
+      ({ fullIcon, getLabel, icon, IconComponent, onPress: onItemPressed } = type);
+      obj = { style: obj, children: null };
+      obj = { maxWidth: 76 * callback };
+      if (null != fullIcon) {
+        obj = { image: null, label: null, onPress: null, maxFontSizeMultiplier: 2 };
+        obj[0] = fullIcon;
+        obj[1] = getLabel();
+        obj[2] = function onPress() {
+          return outer1_0(closure_0);
+        };
+        let tmpResult = tmp(onItemPressed(_undefined[9]).ImageButton, obj);
+      } else {
+        if (null == IconComponent) {
+          if (icon == null) {
+            icon = callback(tmp4[11]);
+          }
+          IconComponent = icon;
+        }
+        const obj1 = { variant: "secondary", icon: null, label: null, onPress: null, maxFontSizeMultiplier: 2 };
+        obj1[1] = IconComponent;
+        obj1[2] = getLabel();
+        obj1[3] = function onPress() {
+          return outer1_0(closure_0);
+        };
+        tmpResult = tmp(onItemPressed(_undefined[10]).IconButton, obj1);
+        tmp4 = _undefined;
+      }
+      obj[1] = tmpResult;
+      return outer1_9(outer1_5, obj, type.type);
+    })
+  };
+  items = [tmp.contentContainer, onItemPressed.contentContainerStyle];
+  const children = <closure_6 contentContainerStyle={items} showsHorizontalScrollIndicator={false} horizontal>{arr.map((type) => {
     let IconComponent;
     let fullIcon;
     let getLabel;
     let icon;
     let onItemPressed;
     ({ fullIcon, getLabel, icon, IconComponent, onPress: onItemPressed } = type);
-    obj = { style: obj };
+    obj = { style: obj, children: null };
     obj = { maxWidth: 76 * callback };
     if (null != fullIcon) {
-      obj = {
-        image: fullIcon,
-        label: getLabel(),
-        onPress() {
-            return outer1_0(closure_0);
-          },
-        maxFontSizeMultiplier: 2
+      obj = { image: null, label: null, onPress: null, maxFontSizeMultiplier: 2 };
+      obj[0] = fullIcon;
+      obj[1] = getLabel();
+      obj[2] = function onPress() {
+        return outer1_0(closure_0);
       };
-      let tmp3Result = outer1_9(onItemPressed(12243).ImageButton, obj);
+      let tmpResult = tmp(onItemPressed(_undefined[9]).ImageButton, obj);
     } else {
-      const obj1 = { variant: "secondary" };
       if (null == IconComponent) {
-        if (null == icon) {
-          icon = callback(12214);
+        if (icon == null) {
+          icon = callback(tmp4[11]);
         }
         IconComponent = icon;
       }
-      obj1.icon = IconComponent;
-      obj1.label = getLabel();
-      obj1.onPress = function onPress() {
+      const obj1 = { variant: "secondary", icon: null, label: null, onPress: null, maxFontSizeMultiplier: 2 };
+      obj1[1] = IconComponent;
+      obj1[2] = getLabel();
+      obj1[3] = function onPress() {
         return outer1_0(closure_0);
       };
-      obj1.maxFontSizeMultiplier = 2;
-      tmp3Result = outer1_9(onItemPressed(6661).IconButton, obj1);
-      const tmp3 = outer1_9;
+      tmpResult = tmp(onItemPressed(_undefined[10]).IconButton, obj1);
+      tmp4 = _undefined;
     }
-    obj.children = tmp3Result;
+    obj[1] = tmpResult;
     return outer1_9(outer1_5, obj, type.type);
-  });
-  const children = <closure_6 contentContainerStyle={null} showsHorizontalScrollIndicator={false} horizontal />;
-  return jsx(onItemPressed(5251).GestureDetector, { gesture, children });
+  })}</closure_6>;
+  return jsx(onItemPressed(5273).GestureDetector, { gesture, children });
 });
 const result = require("get ActivityIndicator").fileFinishedImporting("modules/instant_invite/native/components/InstantInviteShareApps.tsx");
 

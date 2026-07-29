@@ -1,89 +1,53 @@
-// Module ID: 11134
-// Function ID: 86350
-// Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 1194, 1348, 5952, 653, 664, 5639, 507, 686, 566, 2]
+// Module ID: 11158
+// Function ID: 11159
+// Name: handleTypingStart
+// Dependencies: [1218, 1372, 5971, 676, 687, 5657, 530, 709, 589, 2]
 
-// Module 11134 (_isNativeReflectConstruct)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_4 from "_isNativeReflectConstruct";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
-import closure_8 from "_isNativeReflectConstruct";
-import closure_9 from "_isNativeReflectConstruct";
-import { SlowmodeType } from "_isNativeReflectConstruct";
+// Module 11158 (handleTypingStart)
+import fetchFingerprint from "fetchFingerprint";
+import ensureGuildLoaded from "ensureGuildLoaded";
+import { SlowmodeType } from "setCooldown";
 import { Endpoints } from "ME";
+import { Store } from "initialize";
 
 const require = arg1;
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
-  }
-  const result = _isNativeReflectConstruct();
-}
-function _getTypingUsers(channelId) {
-  let tmp = dependencyMap[channelId];
-  if (null == tmp) {
-    tmp = closure_17;
-  }
-  return tmp;
-}
-function _getTypingUsersByGuild(guildId) {
-  let tmp = dependencyMap2[guildId];
-  if (null == tmp) {
-    tmp = closure_18;
-  }
-  return tmp;
-}
-function getGuildIdForChannel(channelId) {
-  channel = channel.getChannel(channelId);
-  let guildId;
-  if (null != channel) {
-    guildId = channel.getGuildId();
-  }
-  let tmp2;
-  if (null != guildId) {
-    tmp2 = guildId;
-  }
-  return tmp2;
-}
 function handleTypingStart(arg0) {
   let channelId;
   let guildId;
   let userId;
   ({ channelId, userId, guildId } = arg0);
+  let tmp = dependencyMap[channelId];
+  if (tmp == null) {
+    tmp = closure_12;
+  }
   let obj = {};
-  const merged = Object.assign(_getTypingUsers(channelId));
+  const merged = Object.assign(tmp);
   clearTimeout(obj[userId]);
-  const tmp3 = (function scheduleClear(channelId, userId, guildId) {
-    let closure_0 = channelId;
-    let closure_1 = userId;
-    let closure_2 = guildId;
-    return setTimeout(() => {
-      let obj = outer2_1(outer2_2[12]);
-      obj = { type: "TYPING_STOP", channelId: closure_0, userId: closure_1, guildId: closure_2 };
-      obj.dispatch(obj);
-    }, outer1_13);
-  })(channelId, userId, guildId);
-  obj[userId] = tmp3;
-  closure_15[channelId] = obj;
+  const timerId = setTimeout(() => {
+    let obj = userId(guildId[7]);
+    obj = { type: "TYPING_STOP", channelId, userId, guildId };
+    obj.dispatch(obj);
+  }, closure_8);
+  obj[userId] = timerId;
+  dependencyMap[channelId] = obj;
   if (null != guildId) {
-    obj = {};
-    const merged1 = Object.assign(_getTypingUsersByGuild(guildId));
-    obj = {};
-    let tmp7 = obj[channelId];
-    if (null == tmp7) {
-      tmp7 = closure_17;
+    let tmp6 = dependencyMap2[guildId];
+    if (tmp6 == null) {
+      tmp6 = closure_13;
     }
-    const merged2 = Object.assign(tmp7);
+    obj = {};
+    const merged1 = Object.assign(tmp6);
+    let tmp10 = obj[channelId];
+    if (tmp10 == null) {
+      tmp10 = closure_12;
+    }
+    obj = {};
+    const merged2 = Object.assign(tmp10);
     const _clearTimeout = clearTimeout;
     clearTimeout(obj[userId]);
-    obj[userId] = tmp3;
+    obj[userId] = timerId;
     obj[channelId] = obj;
-    closure_16[guildId] = obj;
+    dependencyMap2[guildId] = obj;
   }
 }
 function handleTypingStop(arg0) {
@@ -92,22 +56,22 @@ function handleTypingStop(arg0) {
   let userId;
   ({ channelId, userId, guildId } = arg0);
   if (null != dependencyMap[channelId]) {
-    if (null != tmp6[userId]) {
+    if (null != tmp7[userId]) {
       let obj = {};
-      const merged = Object.assign(tmp6);
+      const merged = Object.assign(tmp7);
       const _clearTimeout = clearTimeout;
       clearTimeout(obj[userId]);
-      delete tmp5[tmp3];
+      delete tmp6[tmp3];
       dependencyMap[channelId] = obj;
       if (null != guildId) {
         if (null != dependencyMap2[guildId]) {
-          if (null != tmp22[channelId]) {
-            if (null != tmp23[userId]) {
+          if (null != tmp23[channelId]) {
+            if (null != tmp24[userId]) {
               obj = {};
-              const merged1 = Object.assign(tmp23);
+              const merged1 = Object.assign(tmp24);
               delete tmp5[tmp3];
               obj = {};
-              const merged2 = Object.assign(tmp22);
+              const merged2 = Object.assign(tmp23);
               const _Object = Object;
               if (0 === Object.keys(obj).length) {
                 delete tmp3[tmp4];
@@ -129,76 +93,53 @@ function handleTypingStop(arg0) {
   return false;
 }
 function handleConnectionOpen() {
-  let closure_15 = {};
-  let closure_16 = {};
+  let closure_10 = {};
+  let closure_11 = {};
 }
-let closure_13 = 10 * require("set").Millis.SECOND;
-let closure_14 = 1.5 * require("set").Millis.SECOND;
-let closure_15 = {};
-let closure_16 = {};
-let closure_17 = Object.freeze({});
-let closure_18 = Object.freeze({});
-let tmp2 = ((Store) => {
-  class TypingStore {
-    constructor() {
-      self = this;
-      tmp = outer1_3(this, TypingStore);
-      obj = outer1_6(TypingStore);
-      tmp2 = outer1_5;
-      if (outer1_19()) {
-        tmp6 = globalThis;
-        _Reflect = Reflect;
-        tmp7 = outer1_6;
-        tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, outer1_6(self).constructor);
-      } else {
-        tmp3 = arguments;
-        tmp4 = arguments;
-        constructResult = obj(...arguments);
-      }
-      return tmp2(self, constructResult);
-    }
+let closure_8 = 10 * require("set").Millis.SECOND;
+let closure_9 = 1.5 * require("set").Millis.SECOND;
+let closure_10 = {};
+let closure_11 = {};
+let closure_12 = Object.freeze({});
+let closure_13 = Object.freeze({});
+class TypingStore extends Store {
+}
+const prototype = TypingStore.prototype;
+prototype["initialize"] = function initialize() {
+  this.waitFor(fetchFingerprint, ensureGuildLoaded);
+};
+prototype["getTypingUsers"] = function getTypingUsers(channelId) {
+  let tmp = dependencyMap[channelId];
+  if (tmp == null) {
+    tmp = closure_12;
   }
-  callback2(TypingStore, Store);
-  let obj = {
-    key: "initialize",
-    value() {
-      this.waitFor(outer1_8, outer1_9);
-    }
-  };
-  const items = [obj, , , ];
-  obj = {
-    key: "getTypingUsers",
-    value(arg0) {
-      return outer1_20(arg0);
-    }
-  };
-  items[1] = obj;
-  obj = {
-    key: "getTypingUsersByGuild",
-    value(arg0) {
-      return outer1_21(arg0);
-    }
-  };
-  items[2] = obj;
-  items[3] = {
-    key: "isTyping",
-    value(arg0, arg1) {
-      return null != outer1_20(arg0)[arg1];
-    }
-  };
-  return callback(TypingStore, items);
-})(require("initialize").Store);
-tmp2.displayName = "TypingStore";
-tmp2 = new tmp2(require("dispatcher"), {
+  return tmp;
+};
+prototype["getTypingUsersByGuild"] = function getTypingUsersByGuild(closure_0) {
+  let tmp = dependencyMap2[closure_0];
+  if (tmp == null) {
+    tmp = closure_13;
+  }
+  return tmp;
+};
+prototype["isTyping"] = function isTyping(id, id2) {
+  let tmp = dependencyMap[id];
+  if (tmp == null) {
+    tmp = closure_12;
+  }
+  return null != tmp[id2];
+};
+TypingStore.displayName = "TypingStore";
+const typingStore = new TypingStore(require("dispatcher"), {
   TYPING_START: handleTypingStart,
   TYPING_STOP: handleTypingStop,
   TYPING_START_LOCAL: function handleTypingStartLocal(channelId) {
     channelId = channelId.channelId;
-    const id = store.getId();
+    let id;
+    id = store.getId();
     if (null == id) {
       return false;
-    } else if (channelId === channelId(5639).FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID) {
+    } else if (channelId === channelId(5657).FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID) {
       return false;
     } else {
       let tmp3 = null != obj;
@@ -214,71 +155,87 @@ tmp2 = new tmp2(require("dispatcher"), {
       }
       const _Date = Date;
       const timestamp = Date.now();
-      const result = 0.8 * closure_13;
+      const result = 0.8 * closure_8;
       if (null != obj) {
         return false;
       }
       if (null == obj) {
-        let num3 = closure_14;
+        let num3 = closure_9;
       } else {
         num3 = 0;
       }
       const _setTimeout = setTimeout;
-      obj = {
-        channelId,
-        timeout: setTimeout(() => {
-            let tmp = null != obj;
-            if (tmp) {
-              tmp = obj.channelId === channelId;
-            }
-            if (tmp) {
-              tmp = id === outer1_8.getId();
-            }
-            if (tmp) {
-              tmp = null != obj.timeout;
-            }
-            if (tmp) {
-              obj.timeout = null;
-              const tmp10 = outer1_20(channelId);
-              let num = 0;
-              if (tmp10 !== outer1_17) {
-                const _Object = Object;
-                num = Object.keys(tmp10).length;
+      obj = { channelId: null, timeout: null, prevSend: null };
+      obj[0] = channelId;
+      obj[1] = setTimeout(() => {
+        let tmp = null != obj;
+        if (tmp) {
+          tmp = obj.channelId === channelId;
+        }
+        if (tmp) {
+          tmp = id === outer1_4.getId();
+        }
+        if (tmp) {
+          tmp = null != obj.timeout;
+        }
+        if (tmp) {
+          obj.timeout = null;
+          let tmp10 = outer1_10[channelId];
+          if (tmp10 == null) {
+            tmp10 = outer1_12;
+          }
+          let num = 0;
+          if (tmp10 !== outer1_12) {
+            const _Object = Object;
+            num = Object.keys(tmp10).length;
+          }
+          if (num <= 5) {
+            const HTTP = channelId(outer1_2[6]).HTTP;
+            obj = { url: null, oldFormErrors: true, rejectWithError: true };
+            obj[0] = outer1_7.TYPING(tmp8);
+            HTTP.post(obj).then((status) => {
+              if (200 === status.status) {
+                let num = status.body.message_send_cooldown_ms;
+                if (num == null) {
+                  num = 0;
+                }
+                let num2 = status.body.thread_create_cooldown_ms;
+                if (num2 == null) {
+                  num2 = 0;
+                }
+                if (num > 0) {
+                  let obj = outer1_1(outer1_2[7]);
+                  obj = { type: "SLOWMODE_SET_COOLDOWN", channelId: null, slowmodeType: null, cooldownMs: null };
+                  obj[1] = closure_0;
+                  obj[2] = outer1_6.SendMessage;
+                  obj[3] = num;
+                  obj.dispatch(obj);
+                }
+                if (num2 > 0) {
+                  obj = { type: "SLOWMODE_SET_COOLDOWN", channelId: null, slowmodeType: null, cooldownMs: null };
+                  obj[1] = closure_0;
+                  obj[2] = outer1_6.CreateThread;
+                  obj[3] = num2;
+                  outer1_1(outer1_2[7]).dispatch(obj);
+                  const obj3 = outer1_1(outer1_2[7]);
+                }
               }
-              if (num <= 5) {
-                const HTTP = channelId(outer1_2[11]).HTTP;
-                obj = { url: outer1_11.TYPING(channelId), oldFormErrors: true, rejectWithError: true };
-                HTTP.post(obj).then((status) => {
-                  if (200 === status.status) {
-                    const message_send_cooldown_ms = status.body.message_send_cooldown_ms;
-                    let num = 0;
-                    if (null != message_send_cooldown_ms) {
-                      num = message_send_cooldown_ms;
-                    }
-                    const thread_create_cooldown_ms = status.body.thread_create_cooldown_ms;
-                    let num2 = 0;
-                    if (null != thread_create_cooldown_ms) {
-                      num2 = thread_create_cooldown_ms;
-                    }
-                    if (num > 0) {
-                      let obj = id(outer2_2[12]);
-                      obj = { type: "SLOWMODE_SET_COOLDOWN", channelId: outer1_0, slowmodeType: outer2_10.SendMessage, cooldownMs: num };
-                      obj.dispatch(obj);
-                    }
-                    if (num2 > 0) {
-                      obj = { type: "SLOWMODE_SET_COOLDOWN", channelId: outer1_0, slowmodeType: outer2_10.CreateThread, cooldownMs: num2 };
-                      id(outer2_2[12]).dispatch(obj);
-                      const obj3 = id(outer2_2[12]);
-                    }
-                  }
-                });
-                const postResult = HTTP.post(obj);
-              }
-            }
-          }, num3),
-        prevSend: timestamp
-      };
-      obj = { channelId, userId: id, guildId: getGuildIdForChannel(channelId) };
+            });
+            const postResult = HTTP.post(obj);
+          }
+          tmp8 = channelId;
+        }
+      }, num3);
+      obj[2] = timestamp;
+      obj = { channelId: null, userId: null, guildId: null };
+      obj[0] = channelId;
+      obj[1] = id;
+      const channel = store2.getChannel(channelId);
+      let guildId;
+      if (channel != null) {
+        guildId = channel.getGuildId();
+      }
+      obj[2] = guildId;
       handleTypingStart(obj);
     }
   },
@@ -287,21 +244,30 @@ tmp2 = new tmp2(require("dispatcher"), {
     const id = store.getId();
     let tmp2 = null != id;
     if (tmp2) {
-      let tmp4 = null != config;
-      if (tmp4) {
-        tmp4 = config.channelId === channelId;
+      let tmp10Result = null != config;
+      if (tmp10Result) {
+        tmp10Result = config.channelId === channelId;
       }
-      if (tmp4) {
-        tmp4 = null != config.timeout;
+      if (tmp10Result) {
+        tmp10Result = null != config.timeout;
       }
-      if (tmp4) {
+      if (tmp10Result) {
         const _clearTimeout = clearTimeout;
         clearTimeout(config.timeout);
         config = null;
-        const obj = { channelId, userId: id, guildId: getGuildIdForChannel(channelId) };
-        tmp4 = handleTypingStop(obj);
+        const obj = { channelId: null, userId: null, guildId: null };
+        obj[0] = channelId;
+        obj[1] = id;
+        const channel = store2.getChannel(channelId);
+        let guildId;
+        if (channel != null) {
+          guildId = channel.getGuildId();
+        }
+        obj[2] = guildId;
+        tmp10Result = handleTypingStop(obj);
+        const tmp10 = handleTypingStop;
       }
-      tmp2 = tmp4;
+      tmp2 = tmp10Result;
     }
     return tmp2;
   },
@@ -325,17 +291,23 @@ tmp2 = new tmp2(require("dispatcher"), {
     }
     let tmp9Result = null != author;
     if (tmp9Result) {
-      const obj = { channelId, userId: author.id };
-      if (null == guildId) {
-        guildId = getGuildIdForChannel(channelId);
+      const obj = { channelId: null, userId: null, guildId: null };
+      obj[0] = channelId;
+      obj[1] = author.id;
+      if (guildId == null) {
+        const channel = store2.getChannel(channelId);
+        guildId = undefined;
+        if (channel != null) {
+          guildId = channel.getGuildId();
+        }
       }
-      obj.guildId = guildId;
+      obj[2] = guildId;
       tmp9Result = handleTypingStop(obj);
       const tmp9 = handleTypingStop;
     }
     return tmp9Result;
   }
 });
-let result = require("_possibleConstructorReturn").fileFinishedImporting("stores/TypingStore.tsx");
+let result = require("setCooldown").fileFinishedImporting("stores/TypingStore.tsx");
 
-export default tmp2;
+export default typingStore;

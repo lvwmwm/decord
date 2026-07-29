@@ -1,9 +1,9 @@
-// Module ID: 8041
-// Function ID: 63892
-// Dependencies: [31, 27, 33, 6187, 8038, 2]
+// Module ID: 8065
+// Function ID: 8066
+// Dependencies: [19, 17, 21, 6207, 8062, 2]
 
-// Module 8041
-import importAllResult from "result";
+// Module 8065
+import importAllResult from "noop";
 import { StyleSheet } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
 
@@ -16,6 +16,7 @@ const memoResult = importAllResult.memo((paused) => {
   ({ layerConfig, animate } = paused);
   paused = paused.paused;
   const width = paused.width;
+  let aPNGPlayerControls;
   ({ accessibilityLabel, onLoad } = paused);
   const ref = aPNGPlayerControls.useRef(null);
   let obj = animate(paused[3]);
@@ -29,19 +30,20 @@ const memoResult = importAllResult.memo((paused) => {
     }
     aPNGPlayerControls.pause();
   }, items);
-  obj = { ref, url: layerConfig.src, autoplay: false };
+  obj = { ref, url: layerConfig.src, autoplay: false, style: null, ariaLabel: null, onLoad: null };
   const items1 = [StyleSheet.absoluteFill, ];
-  obj = { position: "absolute", width, height: animate(paused[4]).calculateProfileEffectHeight(layerConfig, width) };
+  obj = { position: "absolute", width, height: null, opacity: null };
+  obj[2] = animate(paused[4]).calculateProfileEffectHeight(layerConfig, width);
   let num = 0;
   if (animate) {
     num = 1;
   }
-  obj.opacity = num;
+  obj[3] = num;
   items1[1] = obj;
-  obj.style = items1;
-  obj.ariaLabel = accessibilityLabel;
-  obj.onLoad = onLoad;
-  return jsx(animate(paused[3]).APNGPlayer, { position: "absolute", width, height: animate(paused[4]).calculateProfileEffectHeight(layerConfig, width) });
+  obj[3] = items1;
+  obj[4] = accessibilityLabel;
+  obj[5] = onLoad;
+  return jsx(animate(paused[3]).APNGPlayer, { position: "absolute", width, height: null, opacity: null });
 });
 const result = require("jsxProd").fileFinishedImporting("modules/collectibles/profile_effects/native/ProfileEffectLayer.android.tsx");
 

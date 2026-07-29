@@ -1,84 +1,48 @@
-// Module ID: 12739
-// Function ID: 98808
-// Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 566, 686, 2]
+// Module ID: 12761
+// Function ID: 12762
+// Name: harvestType
+// Dependencies: [589, 709, 2]
 
-// Module 12739 (_isNativeReflectConstruct)
-import dispatcher from "dispatcher";
-import set from "set";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
+// Module 12761 (harvestType)
+import { Store } from "initialize";
 
-function _isNativeReflectConstruct() {
-  let dispatcher = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return dispatcher;
-  }
-  const result = _isNativeReflectConstruct();
+let c0 = false;
+let c1;
+class DataHarvestStore extends Store {
 }
-let c5 = false;
-let c6;
-let tmp2 = ((Store) => {
-  class DataHarvestStore {
-    constructor() {
-      self = this;
-      tmp = DataHarvestStore(this, DataHarvestStore);
-      obj = outer1_3(DataHarvestStore);
-      tmp2 = outer1_2;
-      if (outer1_7()) {
-        tmp6 = globalThis;
-        _Reflect = Reflect;
-        tmp7 = outer1_3;
-        tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, outer1_3(self).constructor);
-      } else {
-        tmp3 = arguments;
-        tmp4 = arguments;
-        constructResult = obj(...arguments);
-      }
-      return tmp2(self, constructResult);
-    }
-  }
-  callback2(DataHarvestStore, Store);
-  let obj = {
-    key: "harvestType",
-    get() {
-      return outer1_6;
-    }
-  };
-  const items = [obj, ];
-  obj = {
-    key: "requestingHarvest",
-    get() {
-      return outer1_5;
-    }
-  };
-  items[1] = obj;
-  return callback(DataHarvestStore, items);
-})(require("initialize").Store);
-tmp2.displayName = "DataHarvestStore";
-tmp2 = new tmp2(require("dispatcher"), {
+const prototype = DataHarvestStore.prototype;
+Object.defineProperty(prototype, "harvestType", {
+  get: function harvestType() {
+    return c1;
+  },
+  set: undefined
+});
+Object.defineProperty(prototype, "requestingHarvest", {
+  get: function requestingHarvest() {
+    return c0;
+  },
+  set: undefined
+});
+DataHarvestStore.displayName = "DataHarvestStore";
+const dataHarvestStore = new DataHarvestStore(require("dispatcher"), {
   CONNECTION_OPEN: function handleConnectionOpen() {
-    let c6;
+    let c1;
   },
   UPDATE_DATA_HARVEST_TYPE: function handleUpdateHarvestType(harvestType) {
-    let c5 = false;
+    let c0 = false;
     harvestType = harvestType.harvestType;
   },
   LOAD_DATA_HARVEST_TYPE_START: function handleRequestingHarvest() {
-    let c5 = true;
+    let c0 = true;
   },
   LOAD_DATA_HARVEST_TYPE_FAILURE: function handleRequestingHarvestFailure() {
-    let c5 = false;
+    let c0 = false;
   },
   LOGOUT: function handleLogout() {
-    let c5 = false;
-    let c6 = null;
+    let c0 = false;
+    let c1 = null;
   }
 });
-let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/harvester/DataHarvestStore.tsx");
+const result = require("set").fileFinishedImporting("modules/harvester/DataHarvestStore.tsx");
 
-export default tmp2;
+export default dataHarvestStore;

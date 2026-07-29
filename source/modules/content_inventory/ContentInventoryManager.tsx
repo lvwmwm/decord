@@ -1,47 +1,33 @@
-// Module ID: 16615
-// Function ID: 129419
-// Name: _isNativeReflectConstruct
-// Dependencies: [7, 6, 15, 17, 18, 5, 4843, 4847, 4978, 12951, 11106, 8147, 8169, 653, 664, 22, 16616, 686, 12724, 16617, 5112, 2]
+// Module ID: 16650
+// Function ID: 16651
+// Name: getBackoffJitter
+// Dependencies: [5, 4865, 4869, 5000, 12974, 11130, 8171, 8193, 676, 687, 12, 16651, 709, 12746, 16652, 5134, 2]
 
-// Module 16615 (_isNativeReflectConstruct)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_4 from "_isNativeReflectConstruct";
-import closure_5 from "apply";
-import dispatcher from "dispatcher";
-import apexExperiment from "apexExperiment";
-import asyncGeneratorStep from "asyncGeneratorStep";
-import closure_9 from "_isNativeReflectConstruct";
-import closure_10 from "_isNativeReflectConstruct";
-import closure_11 from "_isNativeReflectConstruct";
-import "_isNativeReflectConstruct";
-import closure_12 from "_isNativeReflectConstruct";
-import closure_13 from "_isNativeReflectConstruct";
+// Module 16650 (getBackoffJitter)
+import updateImpressionCaches from "updateImpressionCaches";
+import _handleConnectionOpen from "_handleConnectionOpen";
+import closure_5 from "set";
+import checkIdleAFK from "checkIdleAFK";
+import "map";
+import closure_7 from "updateImpressionCaches";
+import map from "map";
 import { ContentInventoryFeedKey } from "ContentInventoryFeedKey";
 import { PlatformTypes } from "ME";
-import apply from "apply";
-import tmp6 from "AutomaticLifecycleManager";
-import set from "_possibleConstructorReturn";
+import apply from "dispatcher";
+import "initialize";
+import set from "set";
 
 const require = arg1;
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
-  }
-  const result = _isNativeReflectConstruct();
-}
 function getBackoffJitter() {
   let num = arg0;
   if (arg0 === undefined) {
     num = 0;
   }
-  return Math.random() * (num + 1) * closure_16;
+  return Math.random() * (num + 1) * closure_11;
 }
-function setFeedState(GLOBAL_FEED, state) {
-  let obj = importDefault(686);
-  obj = { type: "CONTENT_INVENTORY_SET_FEED_STATE", feedId: GLOBAL_FEED, state };
+function setFeedState(feedId, state) {
+  let obj = importDefault(709);
+  obj = { type: "CONTENT_INVENTORY_SET_FEED_STATE", feedId, state };
   obj.dispatch(obj);
 }
 function canFetch(GLOBAL_FEED) {
@@ -49,22 +35,22 @@ function canFetch(GLOBAL_FEED) {
     return false;
   } else {
     if (GLOBAL_FEED === ContentInventoryFeedKey.GAME_PROFILE_FEED) {
-      if (undefined !== store.getFeed(GLOBAL_FEED)) {
+      if (undefined !== store2.getFeed(GLOBAL_FEED)) {
         return false;
       }
     }
     if (GLOBAL_FEED === GLOBAL_FEED) {
       if (obj.isEligibleForContentInventoryV1("ContentInventoryManager")) {
-        if (hidden.hidden) {
-          if (null != store.getFeed(GLOBAL_FEED)) {
+        if (closure_7.hidden) {
+          if (null != store2.getFeed(GLOBAL_FEED)) {
             return false;
           }
         }
-        if (connected.isConnected()) {
-          idleSince = idleSince.getIdleSince();
+        if (_handleConnectionOpen.isConnected()) {
+          const idleSince = store.getIdleSince();
           if (null != idleSince) {
             const _Date = Date;
-            if (Date.now() - idleSince > closure_18) {
+            if (Date.now() - idleSince > closure_13) {
               return false;
             }
           }
@@ -74,13 +60,289 @@ function canFetch(GLOBAL_FEED) {
       } else {
         return false;
       }
-      obj = require(12724) /* apexExperiment */;
+      obj = require(12746) /* apexExperiment */;
     }
     return true;
   }
 }
-function cancelScheduledFetch(GLOBAL_FEED) {
-  setFeedState(GLOBAL_FEED, { loading: false });
+function scheduleNextFetch() {
+  let num = map1.get(GLOBAL_FEED);
+  if (num == null) {
+    num = 0;
+  }
+  if (num <= 0) {
+    let obj = importDefault(709);
+    obj = { type: "CONTENT_INVENTORY_SET_FEED_STATE", feedId: null, state: null };
+    obj[1] = tmp;
+    obj[2] = { loading: false };
+    obj.dispatch(obj);
+    const value = map.get(tmp);
+    if (undefined !== value) {
+      const _clearTimeout = clearTimeout;
+      clearTimeout(value);
+      obj3.delete(tmp);
+    }
+    let flag = false;
+    if (!set.has(tmp)) {
+      if (tmp !== ContentInventoryFeedKey.GAME_PROFILE_FEED) {
+        flag = true;
+        {
+          flag = false;
+          if (obj9.isEligibleForContentInventoryV1("ContentInventoryManager")) {
+            if (!closure_7.hidden) {
+              flag = false;
+              if (_handleConnectionOpen.isConnected()) {
+                const idleSince = store.getIdleSince();
+                flag = true;
+                if (null != idleSince) {
+                  const _Date = Date;
+                  flag = true;
+                  if (Date.now() - idleSince > closure_13) {
+                    flag = false;
+                  }
+                }
+              }
+            } else {
+              flag = false;
+            }
+          }
+          obj9 = require(12746) /* apexExperiment */;
+        }
+      } else {
+        flag = false;
+      }
+    }
+    if (flag) {
+      const feed = store2.getFeed(tmp);
+      let prop;
+      if (feed != null) {
+        prop = feed.refresh_stale_inbox_after_ms;
+      }
+      if (null == prop) {
+        let expired_at;
+        if (feed != null) {
+          expired_at = feed.expired_at;
+        }
+        let num3 = 0;
+        if (null != expired_at) {
+          const _Date2 = Date;
+          const date = new Date(feed.expired_at);
+          const _Date3 = Date;
+          const time = date.getTime();
+          num3 = time - Date.now();
+        }
+        let num4 = 0;
+        if (null != c17) {
+          const _Date4 = Date;
+          const date1 = new Date(c17);
+          const _Date5 = Date;
+          const time1 = date1.getTime();
+          num4 = time1 - Date.now();
+        }
+        let num5 = 0;
+        if (num > 0) {
+          const _Math = Math;
+          num5 = Math.random() * closure_11;
+        }
+        const _Math2 = Math;
+        const sum = Math.max(0, num4, num3) + num5;
+        obj = { loading: false, nextFetchDate: null };
+        const _Date6 = Date;
+        const _Date7 = Date;
+        const date2 = new Date(Date.now() + sum);
+        obj[1] = date2;
+        const obj1 = { type: "CONTENT_INVENTORY_SET_FEED_STATE", feedId: null, state: null };
+        obj1[1] = tmp;
+        obj1[2] = obj;
+        tmp2(709).dispatch(obj1);
+        const _setTimeout = setTimeout;
+        const result = obj3.set(tmp, setTimeout(() => callback2({ feedId: closure_12, feature: callback(table[14]).ContentInventoryFeature.INBOX }), sum));
+        const tmp2Result = tmp2(709);
+      }
+    }
+    tmp2 = importDefault;
+  }
+}
+function fetchInventory(arg0) {
+  const self = this;
+  const apply = _fetchInventory.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
+}
+function _fetchInventory() {
+  const self = this;
+  const tmp = callback((arg0) => {
+    let closure_0 = arg0;
+    let c6 = 0;
+    let c7 = 0;
+    let c5 = 0;
+    const iter = (function*(arg0) {
+      let c0;
+      let c1;
+      let force;
+      if (c7 === 2) {
+        c7 = 3;
+        HermesBuiltin.throwTypeError();
+      } else if (tmp6 === 3) {
+        if (arg0 === 1) {
+          throw arg1;
+        } else if (arg0 === 2) {
+          let obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
+        } else {
+          return { value: "HermesInternal", done: null };
+        }
+      } else {
+        try {
+          c7 = 2;
+          if (0 === c6) {
+            if (arg0 === 1) {
+              c7 = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              c7 = 3;
+              obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            } else {
+              let refresh_token = tmp3;
+              force = tmp7;
+              let callback;
+              let callback2;
+              force = undefined;
+              ({ feedId: c0, feature: c1, force } = callback);
+              if (force === undefined) {
+                force = false;
+              }
+              refresh_token = undefined;
+              let _handleConnectionOpen;
+              let c5;
+              c6 = undefined;
+              c7 = undefined;
+              c6 = 1;
+              c7 = 1;
+              return { value: "ct", done: null };
+            }
+          } else {
+            if (1 === tmp7) {
+              if (arg0 === 1) {
+                c7 = 3;
+                throw arg1;
+              } else if (arg0 === 2) {
+                c7 = 3;
+                let obj1 = { value: null, done: true };
+                obj1[0] = arg1;
+                return obj1;
+              } else {
+                if (!callback5(callback)) {
+                  if (!force) {
+                    c7 = 3;
+                  }
+                }
+                c5 = 1;
+                refresh_token = feed.getFeed(callback);
+                set.add(callback);
+                callback4(callback, { loading: true });
+                let obj3 = callback(force[11]);
+                refresh_token = undefined;
+                if (refresh_token != null) {
+                  refresh_token = refresh_token.refresh_token;
+                }
+                const obj2 = { token: null, feedId: null, feature: null };
+                obj2[0] = refresh_token;
+                obj2[1] = callback;
+                obj2[2] = callback2;
+                c6 = 3;
+                c7 = 1;
+                obj3 = { value: null, done: false };
+                obj3[0] = obj3.getMyContentInventory(obj2);
+                return obj3;
+              }
+            } else if (2 === tmp7) {
+              c5 = 0;
+              const value = store.get(callback);
+              callback2 = value;
+              if (value == null) {
+                callback2 = 0;
+              }
+              c5 = callback2;
+              if (c5 < 4) {
+                const _Math = Math;
+                c6 = callback2(force[9]).Millis.MINUTE * Math.pow(2, c5);
+                c7 = callback3(c5);
+                const _setTimeout = setTimeout;
+                const result = closure_14.set(callback, setTimeout(() => outer1_23({ feedId: c0, feature: c1, force }), c6 + c7));
+                const result1 = store.set(callback, c5 + 1);
+              } else {
+                obj1 = callback2(force[12]);
+                const obj4 = { type: "CONTENT_INVENTORY_CLEAR_FEED", feedId: null };
+                obj4[1] = callback;
+                obj1.dispatch(obj4);
+              }
+              set.delete(callback);
+            } else if (arg0 === 1) {
+              c7 = 3;
+              throw arg1;
+            } else if (arg0 !== 2) {
+              _handleConnectionOpen = arg1;
+              const obj5 = { type: "CONTENT_INVENTORY_SET_FEED", feedId: null, feed: null };
+              obj5[1] = callback;
+              obj5[2] = _handleConnectionOpen;
+              callback2(force[12]).dispatch(obj5);
+              const result2 = store.set(callback, 0);
+              set.delete(callback);
+              callback4(callback, { loading: false });
+              if (callback === closure_12) {
+                let c17 = null;
+                callback6();
+              }
+              c5 = 0;
+              const obj10 = callback2(force[12]);
+            }
+            c5 = 0;
+            c7 = 3;
+            obj = { value: null, done: true };
+            obj[0] = arg1;
+            return obj;
+          }
+        } catch (tmp66) {
+          _handleConnectionOpen = tmp66;
+          if (tmp4 === c5) {
+            c7 = tmp2;
+            throw tmp66;
+          } else {
+            c6 = tmp;
+          }
+        }
+      }
+    })();
+    iter.next();
+    return iter;
+  });
+  const _fetchInventory = tmp;
+  const apply = tmp.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
+}
+function handleUpdatePollingState() {
+  scheduleNextFetch();
+}
+function handlePostConnectionOpen() {
+  scheduleNextFetch();
+}
+function handleConnectionClosed() {
+  let obj = importDefault(709);
+  obj = { type: "CONTENT_INVENTORY_SET_FEED_STATE", feedId: GLOBAL_FEED, state: { loading: false } };
+  obj.dispatch(obj);
   const value = map.get(GLOBAL_FEED);
   if (undefined !== value) {
     const _clearTimeout = clearTimeout;
@@ -88,97 +350,33 @@ function cancelScheduledFetch(GLOBAL_FEED) {
     map.delete(GLOBAL_FEED);
   }
 }
-function scheduleNextFetch() {
-  const value = map1.get(GLOBAL_FEED);
-  let num = 0;
-  if (null != value) {
-    num = value;
-  }
-  if (num <= 0) {
-    cancelScheduledFetch(GLOBAL_FEED);
-    if (canFetch(GLOBAL_FEED)) {
-      const feed = store.getFeed(GLOBAL_FEED);
-      let prop;
-      if (null != feed) {
-        prop = feed.refresh_stale_inbox_after_ms;
-      }
-      if (null == prop) {
-        let expired_at;
-        if (null != feed) {
-          expired_at = feed.expired_at;
-        }
-        let num3 = 0;
-        if (null != expired_at) {
-          const _Date = Date;
-          const date = new Date(feed.expired_at);
-          const _Date2 = Date;
-          const time = date.getTime();
-          num3 = time - Date.now();
-        }
-        let num4 = 0;
-        if (null != c22) {
-          const _Date3 = Date;
-          const date1 = new Date(c22);
-          const _Date4 = Date;
-          const time1 = date1.getTime();
-          num4 = time1 - Date.now();
-        }
-        let num5 = 0;
-        if (num > 0) {
-          num5 = getBackoffJitter();
-        }
-        const _Math = Math;
-        const sum = Math.max(0, num4, num3) + num5;
-        const obj = { loading: false };
-        const _Date5 = Date;
-        const _Date6 = Date;
-        const date2 = new Date(Date.now() + sum);
-        obj.nextFetchDate = date2;
-        setFeedState(GLOBAL_FEED, obj);
-        const _setTimeout = setTimeout;
-        const result = map.set(GLOBAL_FEED, setTimeout(() => outer1_30({ feedId: outer1_17, feature: outer1_0(outer1_2[19]).ContentInventoryFeature.INBOX }), sum));
-      }
-    }
-  }
-}
-function fetchInventory(arg0) {
-  return _fetchInventory(...arguments);
-}
-function _fetchInventory() {
-  // CreateGeneratorClosureLongIndex (0x67)
-  const obj = callback3(tmp);
-  return obj(...arguments);
-}
-function handleUpdatePollingState() {
-  scheduleNextFetch();
-}
-function handlePostConnectionOpen() {
-  handleUpdatePollingState();
-}
-function handleConnectionClosed() {
-  cancelScheduledFetch(GLOBAL_FEED);
-}
 function handleManualRefresh(feature) {
   const feedId = feature.feedId;
-  cancelScheduledFetch(feedId);
+  importDefault(709).dispatch({ type: "CONTENT_INVENTORY_SET_FEED_STATE", feedId, state: { loading: false } });
+  const value = map.get(feedId);
+  if (undefined !== value) {
+    const _clearTimeout = clearTimeout;
+    clearTimeout(value);
+    map.delete(feedId);
+  }
   fetchInventory({ feedId, feature: feature.feature, force: true });
 }
 function handleInboxStale(refreshAfterMs) {
   let refresh_stale_inbox_after_ms = refreshAfterMs.refreshAfterMs;
-  const feed = store.getFeed(GLOBAL_FEED);
+  const feed = store2.getFeed(GLOBAL_FEED);
   let prop;
-  if (null != feed) {
+  if (feed != null) {
     prop = feed.refresh_stale_inbox_after_ms;
   }
   if (null != prop) {
     const _Date = Date;
     const timestamp = Date.now();
-    if (null == refresh_stale_inbox_after_ms) {
+    if (refresh_stale_inbox_after_ms == null) {
       refresh_stale_inbox_after_ms = feed.refresh_stale_inbox_after_ms;
     }
     const _Date2 = Date;
     const date = new Date(timestamp + refresh_stale_inbox_after_ms);
-    let closure_22 = date.toUTCString();
+    let closure_17 = date.toUTCString();
     scheduleNextFetch();
   }
 }
@@ -187,26 +385,33 @@ function handleSpotifyNewTrack(connectionId) {
   if (null != connectionId) {
     account = account.getAccount(connectionId, PlatformTypes.SPOTIFY);
     let showActivity;
-    if (null != account) {
+    if (account != null) {
       showActivity = account.showActivity;
     }
     if (showActivity) {
-      callback4(connectionId, tmp);
+      callback2(connectionId, tmp);
     }
   }
 }
 function handleFetchGameProfileFeed() {
-  fetchInventory({ feedId: ContentInventoryFeedKey.GLOBAL_FEED, feature: require(16617) /* ContentInventoryFeature */.ContentInventoryFeature.GAME_PROFILE });
+  fetchInventory({ feedId: ContentInventoryFeedKey.GLOBAL_FEED, feature: require(16652) /* ContentInventoryFeature */.ContentInventoryFeature.GAME_PROFILE });
 }
-let closure_16 = 2 * require("set").Millis.MINUTE;
+let closure_11 = 2 * require("set").Millis.MINUTE;
 const GLOBAL_FEED = ContentInventoryFeedKey.GLOBAL_FEED;
-let closure_18 = 15 * require("set").Millis.MINUTE;
+let closure_13 = 15 * require("set").Millis.MINUTE;
 const map = new Map();
 let set = new Set();
 const map1 = new Map();
-let c22 = null;
-let closure_23 = apply.debounce(require("_getMyContentInventory").postTrackToContentInventory, 3000, { trailing: true });
-tmp6 = new tmp6();
+let c17 = null;
+let closure_18 = apply.debounce(require("_getMyContentInventory").postTrackToContentInventory, 3000, { trailing: true });
+let prototype = function ContentInventoryManager() {
+  const applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
+  applyArgumentsResult.actions = { POST_CONNECTION_OPEN: handlePostConnectionOpen, CONNECTION_CLOSED: handleConnectionClosed, WINDOW_FOCUS: handleUpdatePollingState, IDLE: handleUpdatePollingState, CONTENT_INVENTORY_TOGGLE_FEED_HIDDEN: handleUpdatePollingState, CONTENT_INVENTORY_MANUAL_REFRESH: handleManualRefresh, CONTENT_INVENTORY_INBOX_STALE: handleInboxStale, SPOTIFY_NEW_TRACK: handleSpotifyNewTrack, GAME_PROFILE_OPEN: handleFetchGameProfileFeed };
+  return applyArgumentsResult;
+}.prototype;
+class prototype extends tmp6 {
+}
+prototype = new prototype();
 let result = set.fileFinishedImporting("modules/content_inventory/ContentInventoryManager.tsx");
 
-export default tmp6;
+export default prototype;

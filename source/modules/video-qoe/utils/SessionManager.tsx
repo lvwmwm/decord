@@ -1,31 +1,17 @@
-// Module ID: 14141
-// Function ID: 108137
-// Name: SessionManager
-// Dependencies: [6, 7, 2]
+// Module ID: 14163
+// Function ID: 14164
+// Name: generateSessionId
+// Dependencies: [2]
 
-// Module 14141 (SessionManager)
-import _classCallCheck from "_classCallCheck";
-import _defineProperties from "_defineProperties";
-
-const tmp2 = (() => {
-  class SessionManager {
-    constructor() {
-      tmp = SessionManager(this, SessionManager);
-      return;
-    }
-  }
-  const items = [
-    {
-      key: "generateSessionId",
-      value() {
-        const timestamp = Date.now();
-        const str = Math.random();
-        return "discord-video-" + timestamp + "-" + Math.random().toString(36).substr(2, 9);
-      }
-    }
-  ];
-  return callback(SessionManager, null, items);
-})();
+// Module 14163 (generateSessionId)
 const result = require("set").fileFinishedImporting("modules/video-qoe/utils/SessionManager.tsx");
+const prototype = function SessionManager() {
+  return Object.create(new.target.prototype);
+}.prototype;
+prototype["generateSessionId"] = function generateSessionId() {
+  const timestamp = Date.now();
+  const str = Math.random();
+  return "discord-video-" + timestamp + "-" + Math.random().toString(36).substr(2, 9);
+};
 
-export const SessionManager = tmp2;
+export const SessionManager = prototype;

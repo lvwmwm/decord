@@ -1,12 +1,12 @@
-// Module ID: 14896
-// Function ID: 113469
+// Module ID: 14922
+// Function ID: 14923
 // Name: context
-// Dependencies: [31, 2]
+// Dependencies: [19, 2]
 
-// Module 14896 (context)
-import importAllResult from "result";
+// Module 14922 (context)
+import importAllResult from "noop";
 
-const context = require("result").createContext({ current: undefined });
+const context = require("noop").createContext({ current: "r" });
 const result = require("set").fileFinishedImporting("modules/launchpad/native/LaunchPadGestureRefContext.tsx");
 
 export default context;

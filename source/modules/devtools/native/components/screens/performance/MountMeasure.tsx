@@ -1,11 +1,11 @@
-// Module ID: 14809
-// Function ID: 112746
+// Module ID: 14835
+// Function ID: 14836
 // Name: MountMeasure
-// Dependencies: [31, 27, 33, 4594, 2]
+// Dependencies: [19, 17, 21, 4616, 2]
 // Exports: default
 
-// Module 14809 (MountMeasure)
-import "result";
+// Module 14835 (MountMeasure)
+import "noop";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
 
@@ -20,7 +20,7 @@ export default function MountMeasure(arg0) {
   let style;
   ({ batchKey: require, onMeasure: dependencyMap, onCancel: View } = arg0);
   ({ style, children } = arg0);
-  let obj = require(4594) /* useMountLayoutEffect */;
+  let obj = require(4616) /* useMountLayoutEffect */;
   const unmountEffect = obj.useUnmountEffect(() => callback2(closure_0));
   obj = {
     style,

@@ -1,36 +1,40 @@
-// Module ID: 13671
-// Function ID: 104917
+// Module ID: 13692
+// Function ID: 13693
 // Name: ProfilePreviewButton
-// Dependencies: [31, 27, 33, 4165, 689, 5497, 8083, 8335, 4695, 1212, 4161, 9078, 8343, 8077, 2]
+// Dependencies: [19, 17, 21, 4189, 712, 5515, 8107, 8359, 4717, 1236, 4185, 9102, 8367, 8101, 2]
 // Exports: default
 
-// Module 13671 (ProfilePreviewButton)
-import result from "result";
+// Module 13692 (ProfilePreviewButton)
+import noop from "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_5;
+let c5;
 let closure_6;
 const require = arg1;
 function ProfilePreviewButton(userId) {
   userId = userId.userId;
+  let analyticsLocations;
+  let context;
   analyticsLocations = analyticsLocations(context[5])().analyticsLocations;
   let obj = userId(context[6]);
   context = obj.useUserProfileAnalyticsContext().context;
   const items = [userId, context, analyticsLocations];
-  let tmp3 = null;
+  let tmp5 = null;
   if (null != userId) {
-    obj = { style: tmp.previewButton, onPress: tmp2, accessibilityRole: "button" };
-    const intl = userId(context[9]).intl;
-    obj.accessibilityLabel = intl.string(userId(context[9]).t["3Qcx6K"]);
-    obj = { variant: "text-sm/semibold", color: "text-overlay-light" };
-    const intl2 = userId(context[9]).intl;
-    obj.children = intl2.string(userId(context[9]).t["3Qcx6K"]);
-    obj.children = callback(userId(context[10]).Text, obj);
-    tmp3 = callback(userId(context[8]).PressableOpacity, obj);
+    obj = { style: null, onPress: null, accessibilityRole: "button", accessibilityLabel: null, children: null };
+    obj[0] = tmp.previewButton;
+    obj[1] = tmp4;
+    const intl = tmp3(tmp2[9]).intl;
+    obj[3] = intl.string(tmp3(tmp2[9]).t["3Qcx6K"]);
+    obj = { variant: "text-sm/semibold", color: "text-overlay-light", children: null };
+    const intl2 = tmp3(tmp2[9]).intl;
+    obj[2] = intl2.string(tmp3(tmp2[9]).t["3Qcx6K"]);
+    obj[4] = callback(tmp3(tmp2[10]).Text, obj);
+    tmp5 = callback(tmp3(tmp2[8]).PressableOpacity, obj);
   }
-  return tmp3;
+  return tmp5;
 }
 function EditButton(disabled) {
   let accessibilityLabel;
@@ -40,18 +44,19 @@ function EditButton(disabled) {
   if (flag === undefined) {
     flag = false;
   }
-  let obj = { accessibilityRole: "button", accessibilityLabel, onPress, disabled: flag, style: _createForOfIteratorHelperLoose().editButton };
-  obj = { size: "xs", color: importDefault(689).colors.WHITE };
-  obj.children = callback(require(9078) /* PencilIcon */.PencilIcon, obj);
-  return callback(require(4695) /* PressableBase */.PressableOpacity, obj);
+  let obj = { accessibilityRole: "button", accessibilityLabel, onPress, disabled: flag, style: createCacheKey().editButton, children: null };
+  obj = { size: "xs", color: null };
+  obj[1] = importDefault(712).colors.WHITE;
+  obj[5] = callback(require(9102) /* PencilIcon */.PencilIcon, obj);
+  return callback(require(4717) /* PressableBase */.PressableOpacity, obj);
 }
-({ jsx: closure_5, jsxs: closure_6 } = jsxProd);
-_createForOfIteratorHelperLoose = { container: { position: "relative" } };
-_createForOfIteratorHelperLoose = { position: "absolute", top: 12, right: 12, width: 28, height: 28, alignItems: "center", justifyContent: "center", backgroundColor: require("_createForOfIteratorHelperLoose").colors.CONTROL_OVERLAY_SECONDARY_BACKGROUND_DEFAULT, borderRadius: require("_createForOfIteratorHelperLoose").radii.round };
-_createForOfIteratorHelperLoose.editButton = _createForOfIteratorHelperLoose;
-const obj1 = { position: "absolute", justifyContent: "center", minHeight: 28, top: 12, right: 48, paddingVertical: 4, paddingHorizontal: 12, borderRadius: require("_createForOfIteratorHelperLoose").radii.round, backgroundColor: require("_createForOfIteratorHelperLoose").colors.CONTROL_OVERLAY_SECONDARY_BACKGROUND_DEFAULT, zIndex: 1 };
-_createForOfIteratorHelperLoose.previewButton = obj1;
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+({ jsx: c5, jsxs: closure_6 } = jsxProd);
+createCacheKey = { container: { position: "relative" }, editButton: null, previewButton: null };
+createCacheKey = { position: "absolute", top: 12, right: 12, width: 28, height: 28, alignItems: "center", justifyContent: "center", backgroundColor: require("Themes").colors.CONTROL_OVERLAY_SECONDARY_BACKGROUND_DEFAULT, borderRadius: require("Themes").radii.round };
+createCacheKey[1] = createCacheKey;
+createCacheKey[2] = { position: "absolute", justifyContent: "center", minHeight: 28, top: 12, right: 48, paddingVertical: 4, paddingHorizontal: 12, borderRadius: require("Themes").radii.round, backgroundColor: require("Themes").colors.CONTROL_OVERLAY_SECONDARY_BACKGROUND_DEFAULT, zIndex: 1 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+const obj1 = { position: "absolute", justifyContent: "center", minHeight: 28, top: 12, right: 48, paddingVertical: 4, paddingHorizontal: 12, borderRadius: require("Themes").radii.round, backgroundColor: require("Themes").colors.CONTROL_OVERLAY_SECONDARY_BACKGROUND_DEFAULT, zIndex: 1 };
 const result = require("jsxProd").fileFinishedImporting("modules/user_profile/native/UserProfileEditBannerButton.tsx");
 
 export default function UserProfileEditBannerButton(arg0) {
@@ -76,19 +81,23 @@ export default function UserProfileEditBannerButton(arg0) {
   if (editDisabled === undefined) {
     editDisabled = false;
   }
-  let obj = { style: _createForOfIteratorHelperLoose().container };
-  const tmp = _createForOfIteratorHelperLoose();
-  const items = [callback(importDefault(8077), { user, displayProfile, pendingBanner, pendingAvatarSrc, pendingThemeColors, pendingAccentColor, bannerHeight: importDefault(8343)(), bannerSafeArea }), , ];
+  let obj = { style: createCacheKey().container, children: null };
+  const tmp = createCacheKey();
+  const items = [callback(importDefault(8101), { user, displayProfile, pendingBanner, pendingAvatarSrc, pendingThemeColors, pendingAccentColor, bannerHeight: importDefault(8367)(), bannerSafeArea }), , ];
   if (showProfilePreviewButton) {
-    obj = { userId: user.id };
-    showProfilePreviewButton = callback(ProfilePreviewButton, obj);
+    obj = { userId: null };
+    obj[0] = user.id;
+    showProfilePreviewButton = tmp5(ProfilePreviewButton, obj);
   }
   items[1] = showProfilePreviewButton;
   if (showEditButton) {
-    obj = { onPress: onPressEdit, accessibilityLabel: editButtonAccessibilityLabel, disabled: editDisabled };
-    showEditButton = callback(EditButton, obj);
+    obj = { onPress: null, accessibilityLabel: null, disabled: null };
+    obj[0] = onPressEdit;
+    obj[1] = editButtonAccessibilityLabel;
+    obj[2] = editDisabled;
+    showEditButton = tmp5(EditButton, obj);
   }
   items[2] = showEditButton;
-  obj.children = items;
+  obj[1] = items;
   return closure_6(View, obj);
 };

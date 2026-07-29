@@ -1,276 +1,276 @@
-// Module ID: 6254
-// Function ID: 56033
-// Name: _isNativeReflectConstruct
-// Dependencies: [57, 6, 7, 15, 17, 18, 6250, 1334, 6249, 6248, 1284, 2]
+// Module ID: 6274
+// Function ID: 6275
+// Name: create
+// Dependencies: [32, 1307, 6270, 1358, 6269, 6268, 2]
 
-// Module 6254 (_isNativeReflectConstruct)
+// Module 6274 (create)
 import _slicedToArray from "_slicedToArray";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import DismissibleContent from "DismissibleContent";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
+import { MessageType } from "module_1307";
 
 const require = arg1;
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
+class MobileBottomSheet$Type extends MessageType {
+  constructor() {
+    items = [, , , , , , , , ];
+    items[0] = { no: 1, name: "asset_url", kind: "scalar", T: 9 };
+    items[1] = { no: 2, name: "header", kind: "scalar", T: 9 };
+    items[2] = { no: 3, name: "body", kind: "scalar", T: 9 };
+    items[3] = { no: 4, name: "help_article_id", kind: "scalar", T: 9 };
+    items[4] = {
+      no: 5,
+      name: "button",
+      kind: "message",
+      T() {
+            return callback(6270).CTAButton;
+          }
+    };
+    items[5] = {
+      no: 6,
+      name: "dismissible_content",
+      kind: "enum",
+      T() {
+            const items = ["discord_protos.discord_users.v1.DismissibleContent", callback(1358).DismissibleContent];
+            return items;
+          }
+    };
+    items[6] = {
+      no: 7,
+      name: "help_article",
+      kind: "message",
+      T() {
+            return callback(6269).HelpArticle;
+          }
+    };
+    obj = { no: 8, name: "header_localized", kind: "message", T: null };
+    class T {
+      constructor() {
+        return require("create").LocalizedString;
+      }
+    }
+    obj[3] = T;
+    items[7] = obj;
+    items[8] = {
+      no: 9,
+      name: "body_localized",
+      kind: "message",
+      T() {
+            return callback(6268).LocalizedString;
+          }
+    };
+    tmp = new tmp("discord_protos.premium_marketing.v1.MobileBottomSheet", items, T);
+    // ThrowIfThisInitialized (0x7c)
+    return tmp;
   }
-  const result = _isNativeReflectConstruct();
 }
-let tmp2 = ((MessageType) => {
-  class MobileBottomSheet$Type {
-    constructor() {
-      self = this;
-      tmp = outer1_3(this, MobileBottomSheet$Type);
-      items = [, , , , , , , , ];
-      items[0] = { no: 1, name: "asset_url", kind: "scalar", T: 9 };
-      items[1] = { no: 2, name: "header", kind: "scalar", T: 9 };
-      items[2] = { no: 3, name: "body", kind: "scalar", T: 9 };
-      items[3] = { no: 4, name: "help_article_id", kind: "scalar", T: 9 };
-      obj = { no: 5, name: "button", kind: "message" };
-      obj.T = function T() {
-        return MobileBottomSheet$Type(outer2_1[6]).CTAButton;
-      };
-      items[4] = obj;
-      obj = { no: 6, name: "dismissible_content", kind: "enum" };
-      obj.T = function T() {
-        const items = ["discord_protos.discord_users.v1.DismissibleContent", MobileBottomSheet$Type(outer2_1[7]).DismissibleContent];
-        return items;
-      };
-      items[5] = obj;
-      obj1 = { no: 7, name: "help_article", kind: "message" };
-      obj1.T = function T() {
-        return MobileBottomSheet$Type(outer2_1[8]).HelpArticle;
-      };
-      items[6] = obj1;
-      obj2 = { no: 8, name: "header_localized", kind: "message" };
-      obj2.T = function T() {
-        return MobileBottomSheet$Type(outer2_1[9]).LocalizedString;
-      };
-      items[7] = obj2;
-      obj3 = { no: 9, name: "body_localized", kind: "message" };
-      obj3.T = function T() {
-        return MobileBottomSheet$Type(outer2_1[9]).LocalizedString;
-      };
-      items[8] = obj3;
-      items1 = ["discord_protos.premium_marketing.v1.MobileBottomSheet"];
-      items1[1] = items;
-      obj6 = outer1_6(MobileBottomSheet$Type);
-      tmp2 = outer1_5;
-      if (outer1_8()) {
-        tmp4 = globalThis;
-        _Reflect = Reflect;
-        tmp5 = outer1_6;
-        constructResult = Reflect.construct(obj6, items1, outer1_6(self).constructor);
-      } else {
-        constructResult = obj6.apply(self, items1);
-      }
-      return tmp2(self, constructResult);
-    }
+let prototype = MobileBottomSheet$Type.prototype;
+prototype["create"] = function create(arr) {
+  let obj = { assetUrl: "", header: "", body: "", helpArticleId: "", dismissibleContent: 0 };
+  const _Object = Object;
+  obj = { enumerable: false, value: this };
+  _Object.defineProperty(obj, require(1307).MESSAGE_TYPE, obj);
+  if (undefined !== arr) {
+    const result = require(1307).reflectionMergePartial(this, obj, arr);
+    const tmpResult = require(1307);
   }
-  callback2(MobileBottomSheet$Type, MessageType);
-  let obj = {
-    key: "create",
-    value(arr) {
-      let obj = { assetUrl: "", header: "", body: "", helpArticleId: "", dismissibleContent: 0 };
-      const _Object = Object;
-      obj = { enumerable: false, value: this };
-      _Object.defineProperty(obj, MobileBottomSheet$Type(outer1_1[10]).MESSAGE_TYPE, obj);
-      if (undefined !== arr) {
-        const result = MobileBottomSheet$Type(outer1_1[10]).reflectionMergePartial(this, obj, arr);
-        const obj3 = MobileBottomSheet$Type(outer1_1[10]);
-      }
-      return obj;
-    }
-  };
-  let items = [obj, , ];
-  obj = {
-    key: "internalBinaryRead",
-    value(pos, arg1, readUnknownField) {
-      let tmp7;
-      let tmp8;
-      let obj = arg3;
-      const self = this;
-      if (null == arg3) {
-        obj = self.create();
-      }
-      const sum = pos.pos + arg1;
-      while (pos.pos < sum) {
-        let tmp5 = outer1_2;
-        let tmp6 = outer1_2(pos.tag(), 2);
-        [tmp7, tmp8] = tmp6;
-        if (1 === tmp7) {
-          obj.assetUrl = pos.string();
-          let tmp10 = tmp3;
-          let tmp11 = tmp4;
-        } else if (2 === tmp7) {
-          obj.header = pos.string();
-          tmp10 = tmp3;
-          tmp11 = tmp4;
-        } else if (3 === tmp7) {
-          obj.body = pos.string();
-          tmp10 = tmp3;
-          tmp11 = tmp4;
-        } else if (4 === tmp7) {
-          obj.helpArticleId = pos.string();
-          tmp10 = tmp3;
-          tmp11 = tmp4;
-        } else if (5 === tmp7) {
-          let tmp41 = MobileBottomSheet$Type;
-          let tmp42 = outer1_1;
-          let CTAButton = MobileBottomSheet$Type(outer1_1[6]).CTAButton;
-          let tmp43 = CTAButton;
-          let tmp44 = pos;
-          let tmp45 = readUnknownField;
-          obj.button = CTAButton.internalBinaryRead(pos, pos.uint32(), readUnknownField, obj.button);
-          tmp10 = tmp3;
-          tmp11 = tmp4;
-        } else if (6 === tmp7) {
-          obj.dismissibleContent = pos.int32();
-          tmp10 = tmp3;
-          tmp11 = tmp4;
-        } else if (7 === tmp7) {
-          let tmp36 = MobileBottomSheet$Type;
-          let tmp37 = outer1_1;
-          let HelpArticle = MobileBottomSheet$Type(outer1_1[8]).HelpArticle;
-          let tmp38 = HelpArticle;
-          let tmp39 = pos;
-          let tmp40 = readUnknownField;
-          obj.helpArticle = HelpArticle.internalBinaryRead(pos, pos.uint32(), readUnknownField, obj.helpArticle);
-          tmp10 = tmp3;
-          tmp11 = tmp4;
-        } else if (8 === tmp7) {
-          let tmp31 = MobileBottomSheet$Type;
-          let tmp32 = outer1_1;
-          let LocalizedString2 = MobileBottomSheet$Type(outer1_1[9]).LocalizedString;
-          let tmp33 = LocalizedString2;
-          let tmp34 = pos;
-          let tmp35 = readUnknownField;
-          obj.headerLocalized = LocalizedString2.internalBinaryRead(pos, pos.uint32(), readUnknownField, obj.headerLocalized);
-          tmp10 = tmp3;
-          tmp11 = tmp4;
-        } else if (9 === tmp7) {
-          let tmp26 = MobileBottomSheet$Type;
-          let tmp27 = outer1_1;
-          let LocalizedString = MobileBottomSheet$Type(outer1_1[9]).LocalizedString;
-          let tmp28 = LocalizedString;
-          let tmp29 = pos;
-          let tmp30 = readUnknownField;
-          obj.bodyLocalized = LocalizedString.internalBinaryRead(pos, pos.uint32(), readUnknownField, obj.bodyLocalized);
-          tmp10 = tmp3;
-          tmp11 = tmp4;
+  return obj;
+};
+prototype["internalBinaryRead"] = function internalBinaryRead(pos, arg1, readUnknownField) {
+  let tmp5;
+  let tmp6;
+  const self = this;
+  let obj = arg3;
+  if (arg3 == null) {
+    obj = self.create();
+  }
+  const sum = pos.pos + arg1;
+  if (pos.pos < sum) {
+    do {
+      let tmp3 = callback;
+      let tmp4 = callback(pos.tag(), 2);
+      [tmp5, tmp6] = tmp4;
+      if (1 === tmp5) {
+        obj.assetUrl = pos.string();
+      } else if (2 === tmp5) {
+        obj.header = pos.string();
+      } else if (3 === tmp5) {
+        obj.body = pos.string();
+      } else if (4 === tmp5) {
+        obj.helpArticleId = pos.string();
+      } else if (5 === tmp5) {
+        let tmp37 = require;
+        let tmp38 = dependencyMap;
+        let CTAButton = require(6270) /* create */.CTAButton;
+        let tmp39 = CTAButton;
+        let tmp40 = pos;
+        let tmp41 = readUnknownField;
+        obj.button = CTAButton.internalBinaryRead(pos, pos.uint32(), readUnknownField, obj.button);
+      } else if (6 === tmp5) {
+        obj.dismissibleContent = pos.int32();
+      } else if (7 === tmp5) {
+        let tmp32 = require;
+        let tmp33 = dependencyMap;
+        let HelpArticle = require(6269) /* create */.HelpArticle;
+        let tmp34 = HelpArticle;
+        let tmp35 = pos;
+        let tmp36 = readUnknownField;
+        obj.helpArticle = HelpArticle.internalBinaryRead(pos, pos.uint32(), readUnknownField, obj.helpArticle);
+      } else if (8 === tmp5) {
+        let tmp27 = require;
+        let tmp28 = dependencyMap;
+        let LocalizedString2 = require(6268) /* create */.LocalizedString;
+        let tmp29 = LocalizedString2;
+        let tmp30 = pos;
+        let tmp31 = readUnknownField;
+        obj.headerLocalized = LocalizedString2.internalBinaryRead(pos, pos.uint32(), readUnknownField, obj.headerLocalized);
+      } else if (9 === tmp5) {
+        let tmp22 = require;
+        let tmp23 = dependencyMap;
+        let LocalizedString = require(6268) /* create */.LocalizedString;
+        let tmp24 = LocalizedString;
+        let tmp25 = pos;
+        let tmp26 = readUnknownField;
+        obj.bodyLocalized = LocalizedString.internalBinaryRead(pos, pos.uint32(), readUnknownField, obj.bodyLocalized);
+      } else {
+        let onRead = readUnknownField.readUnknownField;
+        if ("throw" === onRead) {
+          let tmp15 = globalThis;
+          let _globalThis = globalThis;
+          let _HermesInternal = HermesInternal;
+          let str = ") for ";
+          let str2 = " (wire type ";
+          let str3 = "Unknown field ";
+          let tmp16 = tmp5;
+          let tmp17 = tmp6;
+          let tmp18 = new.target;
+          let tmp19 = new.target;
+          let error = new Error("Unknown field " + tmp5 + " (wire type " + tmp6 + ") for " + self.typeName);
+          let tmp21 = error;
+          throw error;
         } else {
-          readUnknownField = readUnknownField.readUnknownField;
-          if ("throw" === readUnknownField) {
-            let tmp19 = globalThis;
-            let _globalThis = globalThis;
-            let _Error = Error;
-            let _HermesInternal = HermesInternal;
-            let str = "Unknown field ";
-            let str2 = " (wire type ";
-            let str3 = ") for ";
-            let tmp20 = tmp7;
-            let tmp21 = tmp8;
-            let prototype = _Error.prototype;
-            let tmp22 = new.target;
-            let tmp23 = new.target;
-            _Error = new _Error("Unknown field " + tmp7 + " (wire type " + tmp8 + ") for " + self.typeName);
-            let tmp25 = _Error;
-            throw _Error;
-          } else {
-            let skipResult = pos.skip(tmp8);
-            tmp10 = readUnknownField;
-            tmp11 = skipResult;
-            if (false !== readUnknownField) {
-              let onRead = readUnknownField;
-              if (true === readUnknownField) {
-                let tmp12 = MobileBottomSheet$Type;
-                let tmp13 = outer1_1;
-                onRead = MobileBottomSheet$Type(outer1_1[10]).UnknownFieldHandler.onRead;
-              }
-              let tmp14 = obj;
-              let tmp15 = tmp7;
-              let tmp16 = tmp8;
-              let tmp17 = skipResult;
-              let onReadResult = onRead(self.typeName, obj, tmp7, tmp8, skipResult);
-              tmp10 = readUnknownField;
-              tmp11 = skipResult;
+          let skipResult = pos.skip(tmp6);
+          if (false !== onRead) {
+            if (true === onRead) {
+              let tmp8 = require;
+              let tmp9 = dependencyMap;
+              onRead = require(1307).UnknownFieldHandler.onRead;
             }
+            let tmp10 = obj;
+            let tmp11 = tmp5;
+            let tmp12 = tmp6;
+            let tmp13 = skipResult;
+            let onReadResult = onRead(self.typeName, obj, tmp5, tmp6, skipResult);
           }
         }
-        tmp3 = tmp10;
-        tmp4 = tmp11;
       }
-      return obj;
+    } while (pos.pos < sum);
+  }
+  return obj;
+};
+prototype["internalBinaryWrite"] = function internalBinaryWrite(assetUrl, tag, writeUnknownFields) {
+  if ("" !== assetUrl.assetUrl) {
+    tag.tag(1, require(1307).WireType.LengthDelimited).string(assetUrl.assetUrl);
+    const tagResult = tag.tag(1, require(1307).WireType.LengthDelimited);
+  }
+  if ("" !== assetUrl.header) {
+    tag.tag(2, require(1307).WireType.LengthDelimited).string(assetUrl.header);
+    const tagResult1 = tag.tag(2, require(1307).WireType.LengthDelimited);
+  }
+  if ("" !== assetUrl.body) {
+    tag.tag(3, require(1307).WireType.LengthDelimited).string(assetUrl.body);
+    const tagResult2 = tag.tag(3, require(1307).WireType.LengthDelimited);
+  }
+  if ("" !== assetUrl.helpArticleId) {
+    tag.tag(4, require(1307).WireType.LengthDelimited).string(assetUrl.helpArticleId);
+    const tagResult3 = tag.tag(4, require(1307).WireType.LengthDelimited);
+  }
+  if (assetUrl.button) {
+    const CTAButton = require(6270) /* create */.CTAButton;
+    const tagResult4 = tag.tag(5, require(1307).WireType.LengthDelimited);
+    const joined = CTAButton.internalBinaryWrite(assetUrl.button, tag.tag(5, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields).join();
+    const internalBinaryWriteResult = CTAButton.internalBinaryWrite(assetUrl.button, tag.tag(5, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields);
+  }
+  if (0 !== assetUrl.dismissibleContent) {
+    tag.tag(6, require(1307).WireType.Varint).int32(assetUrl.dismissibleContent);
+    const tagResult5 = tag.tag(6, require(1307).WireType.Varint);
+  }
+  if (assetUrl.helpArticle) {
+    const HelpArticle = require(6269) /* create */.HelpArticle;
+    const tagResult6 = tag.tag(7, require(1307).WireType.LengthDelimited);
+    const joined1 = HelpArticle.internalBinaryWrite(assetUrl.helpArticle, tag.tag(7, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields).join();
+    const internalBinaryWriteResult1 = HelpArticle.internalBinaryWrite(assetUrl.helpArticle, tag.tag(7, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields);
+  }
+  if (assetUrl.headerLocalized) {
+    const LocalizedString = require(6268) /* create */.LocalizedString;
+    const tagResult7 = tag.tag(8, require(1307).WireType.LengthDelimited);
+    const joined2 = LocalizedString.internalBinaryWrite(assetUrl.headerLocalized, tag.tag(8, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields).join();
+    const internalBinaryWriteResult2 = LocalizedString.internalBinaryWrite(assetUrl.headerLocalized, tag.tag(8, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields);
+  }
+  if (assetUrl.bodyLocalized) {
+    const LocalizedString2 = require(6268) /* create */.LocalizedString;
+    const tagResult8 = tag.tag(9, require(1307).WireType.LengthDelimited);
+    const joined3 = LocalizedString2.internalBinaryWrite(assetUrl.bodyLocalized, tag.tag(9, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields).join();
+    const internalBinaryWriteResult3 = LocalizedString2.internalBinaryWrite(assetUrl.bodyLocalized, tag.tag(9, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields);
+  }
+  let onWrite = writeUnknownFields.writeUnknownFields;
+  if (false !== onWrite) {
+    if (1 == onWrite) {
+      onWrite = require(1307).UnknownFieldHandler.onWrite;
     }
-  };
-  items[1] = obj;
-  obj = {
-    key: "internalBinaryWrite",
-    value(assetUrl, tag, writeUnknownFields) {
-      if ("" !== assetUrl.assetUrl) {
-        tag.tag(1, MobileBottomSheet$Type(outer1_1[10]).WireType.LengthDelimited).string(assetUrl.assetUrl);
-        const tagResult = tag.tag(1, MobileBottomSheet$Type(outer1_1[10]).WireType.LengthDelimited);
-      }
-      if ("" !== assetUrl.header) {
-        tag.tag(2, MobileBottomSheet$Type(outer1_1[10]).WireType.LengthDelimited).string(assetUrl.header);
-        const tagResult1 = tag.tag(2, MobileBottomSheet$Type(outer1_1[10]).WireType.LengthDelimited);
-      }
-      if ("" !== assetUrl.body) {
-        tag.tag(3, MobileBottomSheet$Type(outer1_1[10]).WireType.LengthDelimited).string(assetUrl.body);
-        const tagResult2 = tag.tag(3, MobileBottomSheet$Type(outer1_1[10]).WireType.LengthDelimited);
-      }
-      if ("" !== assetUrl.helpArticleId) {
-        tag.tag(4, MobileBottomSheet$Type(outer1_1[10]).WireType.LengthDelimited).string(assetUrl.helpArticleId);
-        const tagResult3 = tag.tag(4, MobileBottomSheet$Type(outer1_1[10]).WireType.LengthDelimited);
-      }
-      if (assetUrl.button) {
-        const CTAButton = MobileBottomSheet$Type(outer1_1[6]).CTAButton;
-        const tagResult4 = tag.tag(5, MobileBottomSheet$Type(outer1_1[10]).WireType.LengthDelimited);
-        const joined = CTAButton.internalBinaryWrite(assetUrl.button, tag.tag(5, MobileBottomSheet$Type(outer1_1[10]).WireType.LengthDelimited).fork(), writeUnknownFields).join();
-        const internalBinaryWriteResult = CTAButton.internalBinaryWrite(assetUrl.button, tag.tag(5, MobileBottomSheet$Type(outer1_1[10]).WireType.LengthDelimited).fork(), writeUnknownFields);
-      }
-      if (0 !== assetUrl.dismissibleContent) {
-        tag.tag(6, MobileBottomSheet$Type(outer1_1[10]).WireType.Varint).int32(assetUrl.dismissibleContent);
-        const tagResult5 = tag.tag(6, MobileBottomSheet$Type(outer1_1[10]).WireType.Varint);
-      }
-      if (assetUrl.helpArticle) {
-        const HelpArticle = MobileBottomSheet$Type(outer1_1[8]).HelpArticle;
-        const tagResult6 = tag.tag(7, MobileBottomSheet$Type(outer1_1[10]).WireType.LengthDelimited);
-        const joined1 = HelpArticle.internalBinaryWrite(assetUrl.helpArticle, tag.tag(7, MobileBottomSheet$Type(outer1_1[10]).WireType.LengthDelimited).fork(), writeUnknownFields).join();
-        const internalBinaryWriteResult1 = HelpArticle.internalBinaryWrite(assetUrl.helpArticle, tag.tag(7, MobileBottomSheet$Type(outer1_1[10]).WireType.LengthDelimited).fork(), writeUnknownFields);
-      }
-      if (assetUrl.headerLocalized) {
-        const LocalizedString = MobileBottomSheet$Type(outer1_1[9]).LocalizedString;
-        const tagResult7 = tag.tag(8, MobileBottomSheet$Type(outer1_1[10]).WireType.LengthDelimited);
-        const joined2 = LocalizedString.internalBinaryWrite(assetUrl.headerLocalized, tag.tag(8, MobileBottomSheet$Type(outer1_1[10]).WireType.LengthDelimited).fork(), writeUnknownFields).join();
-        const internalBinaryWriteResult2 = LocalizedString.internalBinaryWrite(assetUrl.headerLocalized, tag.tag(8, MobileBottomSheet$Type(outer1_1[10]).WireType.LengthDelimited).fork(), writeUnknownFields);
-      }
-      if (assetUrl.bodyLocalized) {
-        const LocalizedString2 = MobileBottomSheet$Type(outer1_1[9]).LocalizedString;
-        const tagResult8 = tag.tag(9, MobileBottomSheet$Type(outer1_1[10]).WireType.LengthDelimited);
-        const joined3 = LocalizedString2.internalBinaryWrite(assetUrl.bodyLocalized, tag.tag(9, MobileBottomSheet$Type(outer1_1[10]).WireType.LengthDelimited).fork(), writeUnknownFields).join();
-        const internalBinaryWriteResult3 = LocalizedString2.internalBinaryWrite(assetUrl.bodyLocalized, tag.tag(9, MobileBottomSheet$Type(outer1_1[10]).WireType.LengthDelimited).fork(), writeUnknownFields);
-      }
-      let onWrite = writeUnknownFields.writeUnknownFields;
-      if (false !== onWrite) {
-        if (1 == onWrite) {
-          onWrite = MobileBottomSheet$Type(outer1_1[10]).UnknownFieldHandler.onWrite;
-        }
-        const self = this;
-        onWrite(this.typeName, assetUrl, tag);
-      }
-      return tag;
+    const self = this;
+    onWrite(this.typeName, assetUrl, tag);
+  }
+  return tag;
+};
+let items = [
+  { no: 1, name: "asset_url", kind: "scalar", T: 9 },
+  { no: 2, name: "header", kind: "scalar", T: 9 },
+  { no: 3, name: "body", kind: "scalar", T: 9 },
+  { no: 4, name: "help_article_id", kind: "scalar", T: 9 },
+  {
+    no: 5,
+    name: "button",
+    kind: "message",
+    T() {
+      return callback(6270).CTAButton;
     }
-  };
-  items[2] = obj;
-  return callback(MobileBottomSheet$Type, items);
-})(require("module_1284").MessageType);
-tmp2 = new tmp2();
-let result = require("_defineProperties").fileFinishedImporting("../discord_common/js/packages/protos/discord_protos/premium_marketing/v1/mobile_bottom_sheet.tsx");
+  },
+  {
+    no: 6,
+    name: "dismissible_content",
+    kind: "enum",
+    T() {
+      const items = ["discord_protos.discord_users.v1.DismissibleContent", callback(1358).DismissibleContent];
+      return items;
+    }
+  },
+  {
+    no: 7,
+    name: "help_article",
+    kind: "message",
+    T() {
+      return callback(6269).HelpArticle;
+    }
+  },
+,
 
-export const MobileBottomSheet = tmp2;
+];
+let obj = { no: 8, name: "header_localized", kind: "message", T: null };
+class T {
+  constructor() {
+    return require("create").LocalizedString;
+  }
+}
+obj[3] = T;
+items[7] = obj;
+items[8] = {
+  no: 9,
+  name: "body_localized",
+  kind: "message",
+  T() {
+    return callback(6268).LocalizedString;
+  }
+};
+prototype = new prototype("discord_protos.premium_marketing.v1.MobileBottomSheet", items, tmp, T, MobileBottomSheet$Type, prototype, items);
+// ThrowIfThisInitialized (0x7c)
+let result = require("create").fileFinishedImporting("../discord_common/js/packages/protos/discord_protos/premium_marketing/v1/mobile_bottom_sheet.tsx");
+
+export const MobileBottomSheet = prototype;

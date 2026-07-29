@@ -1,11 +1,11 @@
-// Module ID: 13122
-// Function ID: 101249
+// Module ID: 13145
+// Function ID: 13146
 // Name: WarningCircle
-// Dependencies: [31, 33, 8507, 2]
+// Dependencies: [19, 21, 8531, 2]
 // Exports: default
 
-// Module 13122 (WarningCircle)
-import "result";
+// Module 13145 (WarningCircle)
+import "noop";
 import { jsx } from "jsxProd";
 
 const require = arg1;
@@ -24,15 +24,12 @@ export default function WarningCircle(width) {
   if (str === undefined) {
     str = "currentColor";
   }
-  let obj = { width: 0, height: 0, color: 0 };
-  Object.setPrototypeOf(null);
-  const merged = Object.assign(width, obj);
-  obj = {};
+  const merged = Object.assign(width, Object.create(null));
+  const obj = {};
   const merged1 = Object.assign(merged);
-  obj["width"] = num;
-  obj["height"] = num2;
-  obj["viewBox"] = "0 0 20 20";
-  obj = { d: "M10 0C4.486 0 0 4.486 0 10C0 15.515 4.486 20 10 20C15.514 20 20 15.515 20 10C20 4.486 15.514 0 10 0ZM9 4H11V11H9V4ZM10 15.25C9.31 15.25 8.75 14.691 8.75 14C8.75 13.31 9.31 12.75 10 12.75C10.69 12.75 11.25 13.31 11.25 14C11.25 14.691 10.69 15.25 10 15.25Z", fillRule: "evenodd", clipRule: "evenodd", fill: str };
-  obj["children"] = jsx(require(8507) /* inlineStyles */.Path, { d: "M10 0C4.486 0 0 4.486 0 10C0 15.515 4.486 20 10 20C15.514 20 20 15.515 20 10C20 4.486 15.514 0 10 0ZM9 4H11V11H9V4ZM10 15.25C9.31 15.25 8.75 14.691 8.75 14C8.75 13.31 9.31 12.75 10 12.75C10.69 12.75 11.25 13.31 11.25 14C11.25 14.691 10.69 15.25 10 15.25Z", fillRule: "evenodd", clipRule: "evenodd", fill: str });
-  return jsx(require(8507) /* inlineStyles */.Svg, { d: "M10 0C4.486 0 0 4.486 0 10C0 15.515 4.486 20 10 20C15.514 20 20 15.515 20 10C20 4.486 15.514 0 10 0ZM9 4H11V11H9V4ZM10 15.25C9.31 15.25 8.75 14.691 8.75 14C8.75 13.31 9.31 12.75 10 12.75C10.69 12.75 11.25 13.31 11.25 14C11.25 14.691 10.69 15.25 10 15.25Z", fillRule: "evenodd", clipRule: "evenodd", fill: str });
+  obj.width = num;
+  obj.height = num2;
+  obj.viewBox = "0 0 20 20";
+  obj.children = jsx(require(8531) /* inlineStyles */.Path, { d: "M10 0C4.486 0 0 4.486 0 10C0 15.515 4.486 20 10 20C15.514 20 20 15.515 20 10C20 4.486 15.514 0 10 0ZM9 4H11V11H9V4ZM10 15.25C9.31 15.25 8.75 14.691 8.75 14C8.75 13.31 9.31 12.75 10 12.75C10.69 12.75 11.25 13.31 11.25 14C11.25 14.691 10.69 15.25 10 15.25Z", fillRule: "evenodd", clipRule: "evenodd", fill: str });
+  return jsx(require(8531) /* inlineStyles */.Svg, {});
 };

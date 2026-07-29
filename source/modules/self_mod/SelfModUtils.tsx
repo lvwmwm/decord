@@ -1,18 +1,18 @@
-// Module ID: 5848
-// Function ID: 51254
+// Module ID: 5866
+// Function ID: 5867
 // Name: isCurrentUserTeen
-// Dependencies: [1850, 2]
+// Dependencies: [1874, 2]
 // Exports: isCurrentUserTeen
 
-// Module 5848 (isCurrentUserTeen)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 5866 (isCurrentUserTeen)
+import mergeGuildAvatar from "mergeGuildAvatar";
 
 const result = require("set").fileFinishedImporting("modules/self_mod/SelfModUtils.tsx");
 
 export const isCurrentUserTeen = function isCurrentUserTeen() {
   currentUser = currentUser.getCurrentUser();
   let nsfwAllowed;
-  if (null != currentUser) {
+  if (currentUser != null) {
     nsfwAllowed = currentUser.nsfwAllowed;
   }
   return false === nsfwAllowed;

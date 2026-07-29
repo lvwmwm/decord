@@ -1,118 +1,108 @@
-// Module ID: 16063
-// Function ID: 123931
+// Module ID: 16098
+// Function ID: 16099
 // Name: isAnalyticsEndpoint
-// Dependencies: [5, 4079, 653, 508, 16064, 1443, 1428, 686, 507, 1194, 683, 1922, 1850, 675, 477, 16065, 27, 643, 16066, 16067, 12, 1184, 16070, 1935, 9446, 14739, 8897, 5085, 16076, 12948, 16077, 1430, 2]
+// Dependencies: [5, 4103, 676, 531, 16099, 1467, 1452, 709, 530, 1218, 706, 1946, 1874, 698, 500, 16100, 17, 666, 16101, 16102, 7, 1208, 16105, 1959, 9470, 14765, 8921, 5107, 16111, 12971, 16112, 1454, 2]
 
-// Module 16063 (isAnalyticsEndpoint)
-import isOriginalContentTypeDifferent from "isOriginalContentTypeDifferent";
-import closure_5 from "_isNativeReflectConstruct";
+// Module 16098 (isAnalyticsEndpoint)
+import getHash from "getHash";
 import { AbortCodes } from "ME";
 import ApexExperiment from "ApexExperiment";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import importDefaultResult from "dispatcher";
+import importDefaultResult from "isDiscordProxiedAssetUrl";
+import sendRequest from "sendRequest";
+import sendRequest from "sendRequest";
+import sendRequest from "sendRequest";
+import importDefaultResult1 from "dispatcher";
 
-const require = arg1;
+let closure_0 = arg1;
 function isAnalyticsEndpoint(pathname) {
-  const uRL = new URL(pathname);
-  return regex.test(uRL.pathname);
+  try {
+    const _URL = URL;
+    const uRL = new URL(pathname);
+    return regex.test(uRL.pathname);
+  } catch (err) {
+    return regex.test(tmp);
+  }
 }
-let closure_7 = ["https://cdn.discordapp.com/bad-domains/updated_hashes.json", "https://cdn.discordapp.com/bad-domains/hashes.json"];
+let closure_6 = ["https://cdn.discordapp.com/bad-domains/updated_hashes.json", "https://cdn.discordapp.com/bad-domains/hashes.json"];
 require("_createForOfIteratorHelper").parse[""] = JSON.parse;
 const idGenerator = new require("IdGenerator").IdGenerator();
-const re9 = /\/api(\/v\d+)?\/science/;
-ApexExperiment = { name: "2026-07-reject-with-error-kill-switch", kind: "user", defaultConfig: { migrationKilled: false }, variations: { [1]: { migrationKilled: true } } };
-ApexExperiment = ApexExperiment.createApexExperiment(ApexExperiment);
+const re8 = /\/api(\/v\d+)?\/science/;
+ApexExperiment = { 1: null };
+ApexExperiment[1] = { migrationKilled: true };
+let closure_10 = ApexExperiment.createApexExperiment({ name: "2026-07-reject-with-error-kill-switch", kind: "user", defaultConfig: { migrationKilled: false }, variations: ApexExperiment });
 let c11 = null;
 const subscription = require("dispatcher").subscribe("LOGOUT", () => {
   let c11 = null;
 });
-let result = _isNativeReflectConstruct.setRejectWithMigratedError(function isRejectWithMigratedErrorEnabled() {
-  if (null != c11) {
-    let tmp2 = c11;
-  } else {
-    tmp2 = !hasLoadedExperiments.hasLoadedExperiments;
-    if (!tmp2) {
-      const obj = { location: "reject_with_error_migration" };
-      const tmp4 = !ApexExperiment.getConfig(obj).migrationKilled;
-      c11 = tmp4;
-      tmp2 = tmp4;
+let result = sendRequest.setRejectWithMigratedError(function isRejectWithMigratedErrorEnabled() {
+  let tmp = c11;
+  if (null == c11) {
+    hasLoadedExperiments = hasLoadedExperiments.hasLoadedExperiments;
+    let tmp3 = !hasLoadedExperiments;
+    if (hasLoadedExperiments) {
+      const tmp5 = !config.getConfig({ location: "reject_with_error_migration" }).migrationKilled;
+      c11 = tmp5;
+      tmp3 = tmp5;
     }
+    tmp = tmp3;
   }
-  return tmp2;
+  return tmp;
 });
 ApexExperiment = {
   prepareRequest(promise) {
-    const _require = promise;
-    function maybeTrackRequest(status) {
-      if (c2) {
-        const obj = {};
-        ({ url: obj.url, method: obj.method } = closure_0);
-        status = undefined;
-        if (null != status) {
-          status = status.status;
-        }
-        obj.status_code = status;
-        const _Math = Math;
-        const _performance = performance;
-        obj.duration_ms = Math.round(performance.now() - callback);
-        callback(maybeTrackRequest[19])(obj);
-        c2 = false;
-        const tmp3 = callback(maybeTrackRequest[19]);
-      }
-    }
-    const _default = _require(maybeTrackRequest[9]).default;
-    const _default2 = _require(maybeTrackRequest[10]).default;
-    const _default3 = _require(maybeTrackRequest[12]).default;
+    const callback = promise;
+    const _default = callback(1218).default;
+    const _default2 = callback(706).default;
+    const _default3 = callback(1874).default;
     const importDefault = performance.now();
     if ("/" === promise.url[0]) {
-      obj.url = _require(maybeTrackRequest[8]).getAPIBaseURL() + obj.url;
-      let tmp2 = "Authorization" in obj.header;
-      if (!tmp2) {
-        tmp2 = "authorization" in obj.header;
+      let tmpResult = tmp(530);
+      promise.url = tmpResult.getAPIBaseURL() + promise.url;
+      let tmp3 = "Authorization" in promise.header;
+      if (!tmp3) {
+        tmp3 = "authorization" in promise.header;
       }
-      if (!tmp2) {
-        const result = obj.set("Authorization", _default.getToken());
+      if (!tmp3) {
+        const result = promise.set("Authorization", _default.getToken());
       }
-      const obj6 = _require(maybeTrackRequest[8]);
-      const result1 = _require(maybeTrackRequest[15]).updateDynamicSuperProperties();
+      tmpResult = tmp(16100);
+      const result1 = tmpResult.updateDynamicSuperProperties();
       const superPropertiesBase64 = _default4.getSuperPropertiesBase64();
       if (null != superPropertiesBase64) {
-        const result2 = obj.set("X-Super-Properties", superPropertiesBase64);
+        const result2 = promise.set("X-Super-Properties", superPropertiesBase64);
       }
       const fingerprint = _default.getFingerprint();
-      let tmp13 = null != fingerprint;
-      if (tmp13) {
-        tmp13 = "" !== fingerprint;
+      let tmp10 = null != fingerprint;
+      if (tmp10) {
+        tmp10 = "" !== fingerprint;
       }
-      if (tmp13) {
-        const result3 = obj.set("X-Fingerprint", fingerprint);
+      if (tmp10) {
+        const result3 = promise.set("X-Fingerprint", fingerprint);
       }
       const installationForTracking = _default.getInstallationForTracking();
-      let tmp17 = null != installationForTracking;
-      if (tmp17) {
-        tmp17 = "" !== installationForTracking;
+      let tmp13 = null != installationForTracking;
+      if (tmp13) {
+        tmp13 = "" !== installationForTracking;
       }
-      if (tmp17) {
-        const result4 = obj.set("X-Installation-ID", installationForTracking);
+      if (tmp13) {
+        const result4 = promise.set("X-Installation-ID", installationForTracking);
       }
-      if (_require(maybeTrackRequest[14]).isPlatformEmbedded) {
-        let items = [];
-        const tmp22 = _require(maybeTrackRequest[16]);
-        if (obj3.isAndroid()) {
-          let LocalizationManager = _require(maybeTrackRequest[17]).default;
+      if (callback(500).isPlatformEmbedded) {
+        const tmpResult1 = tmp(17);
+        if (tmpResult2.isAndroid()) {
+          let LocalizationManager = tmp(666).default;
         } else {
-          LocalizationManager = tmp22.NativeModules.LocalizationManager;
+          LocalizationManager = tmpResult1.NativeModules.LocalizationManager;
         }
+        let items = [];
         if (null != LocalizationManager) {
           let Languages = LocalizationManager.getConstants().Languages;
-          if (null == Languages) {
+          if (Languages == null) {
             Languages = [];
           }
           items = Languages;
         }
-        const result5 = obj.set("Accept-Language", (function populateQValues(items) {
+        const result5 = promise.set("Accept-Language", (function populateQValues(items) {
           let c0 = 10;
           const reduced = items.reduce((arr) => {
             if (10 === closure_0) {
@@ -126,63 +116,65 @@ ApexExperiment = {
           }, []);
           return reduced.join(",");
         })(items));
-        obj3 = _require(maybeTrackRequest[14]);
+        tmpResult2 = tmp(500);
       }
-      const result6 = obj.set("X-Discord-Locale", _require(maybeTrackRequest[11]).default.locale);
-      const tmp31 = importDefault(maybeTrackRequest[18])();
-      if (null != tmp31) {
-        const result7 = obj.set("X-Discord-Timezone", tmp31);
+      const result6 = promise.set("X-Discord-Locale", callback(1946).default.locale);
+      const tmp19 = importDefault(16101)();
+      if (null != tmp19) {
+        const result7 = promise.set("X-Discord-Timezone", tmp19);
       }
       const debugOptionsHeaderValue = _default2.getDebugOptionsHeaderValue();
-      let tmp35 = null != debugOptionsHeaderValue;
-      if (tmp35) {
-        tmp35 = "" !== debugOptionsHeaderValue;
+      let tmp22 = null != debugOptionsHeaderValue;
+      if (tmp22) {
+        tmp22 = "" !== debugOptionsHeaderValue;
       }
-      if (tmp35) {
-        const result8 = obj.set("X-Debug-Options", debugOptionsHeaderValue);
+      if (tmp22) {
+        const result8 = promise.set("X-Debug-Options", debugOptionsHeaderValue);
       }
       const routingKeyHeaderValue = _default2.getRoutingKeyHeaderValue();
-      let tmp39 = null != routingKeyHeaderValue;
-      if (tmp39) {
-        tmp39 = "" !== routingKeyHeaderValue;
+      let tmp25 = null != routingKeyHeaderValue;
+      if (tmp25) {
+        tmp25 = "" !== routingKeyHeaderValue;
       }
-      if (tmp39) {
-        const result9 = obj.set("X-Routing-Key", routingKeyHeaderValue);
+      if (tmp25) {
+        const result9 = promise.set("X-Routing-Key", routingKeyHeaderValue);
       }
       if (_default2.isTracingRequests) {
         const currentUser = _default3.getCurrentUser();
-        let id;
-        if (null != currentUser) {
-          id = currentUser.id;
+        let str14;
+        if (currentUser != null) {
+          str14 = currentUser.id;
         }
-        let str14 = "0";
-        if (null != id) {
-          str14 = id;
+        if (str14 == null) {
+          str14 = "0";
         }
         const generateResult = idGenerator.generate(str14);
-        const result10 = obj.set("x-client-trace-id", generateResult);
-        const _URL = URL;
-        const uRL = new URL(obj.url);
-        if (!isAnalyticsEndpoint(uRL.pathname)) {
-          const _URLSearchParams = URLSearchParams;
-          const str16 = new URLSearchParams();
-          let _HermesInternal = HermesInternal;
-          str16.append("query", "@http.x_client_trace_id:\"" + tmp46 + "\"");
-          str16.append("showAllSpans", "true");
-          const _HermesInternal2 = HermesInternal;
-          const str24 = importDefault(maybeTrackRequest[5]).toURLSafe("traces?" + str16.toString(), "https://datadog.discord.tools/apm/");
-          if (null != str24) {
-            str24.toString();
+        const result10 = promise.set("x-client-trace-id", generateResult);
+        try {
+          const _URL = URL;
+          const uRL = new URL(promise.url);
+          if (!isAnalyticsEndpoint(uRL.pathname)) {
+            (function getDatadogAPMUrl(generateResult) {
+              let str = new URLSearchParams();
+              str.append("query", "@http.x_client_trace_id:\"" + generateResult + "\"");
+              str.append("showAllSpans", "true");
+              const str2 = callback(table[5]).toURLSafe("traces?" + str.toString(), "https://datadog.discord.tools/apm/");
+              str = null;
+              if (null != str2) {
+                str = str2.toString();
+              }
+              return str;
+            })(generateResult);
           }
-          const obj4 = importDefault(maybeTrackRequest[5]);
+        } catch (err) {
         }
-        tmp46 = generateResult;
       }
-      let obj2 = _require(maybeTrackRequest[15]);
     }
-    const importAll = !isAnalyticsEndpoint(promise.url);
-    _default4 = _require(maybeTrackRequest[13]).default;
-    importAll(maybeTrackRequest[20]).report("Network", "Sending " + promise.method + " to " + promise.url);
+    const importAll = (function shouldTrackHttpRequest(url) {
+      return !callback3(url);
+    })(promise.url);
+    _default4 = callback(698).default;
+    importAll(7).report("Network", "Sending " + promise.method + " to " + promise.url);
     promise.on("response", (status) => {
       let method;
       let url;
@@ -198,25 +190,40 @@ ApexExperiment = {
         const _HermesInternal = HermesInternal;
         str = "and body: " + text;
       }
+      let obj = callback2(outer1_3[20]);
       ({ method, url } = closure_0);
       status = undefined;
-      if (null != status) {
+      if (status != null) {
         status = status.status;
       }
-      callback2(maybeTrackRequest[20]).report("Network", "Completed " + method + " to " + url + " with status: " + status + " " + str);
-      maybeTrackRequest(status);
+      obj.report("Network", "Completed " + method + " to " + url + " with status: " + status + " " + str);
+      if (c2) {
+        obj = { url: null, method: null, status_code: null, duration_ms: null };
+        ({ url: obj2[0], method: obj2[1] } = closure_0);
+        let status1;
+        if (status != null) {
+          status1 = status.status;
+        }
+        obj[2] = status1;
+        const _Math = Math;
+        const _performance = performance;
+        obj[3] = Math.round(performance.now() - callback);
+        callback(outer1_3[19])(obj);
+        c2 = false;
+        const tmp8 = callback(outer1_3[19]);
+      }
     });
     promise.on("error", (status, text) => {
       let method;
       let url;
-      let obj = callback2(maybeTrackRequest[20]);
-      ({ method, url } = promise);
+      let obj = callback2(outer1_3[20]);
+      ({ method, url } = closure_0);
       status = undefined;
-      if (null != status) {
+      if (status != null) {
         status = status.status;
       }
       text = undefined;
-      if (null != text) {
+      if (text != null) {
         text = text.text;
       }
       obj.report("Network", "Failed " + method + " to " + url + " with status " + status + " and body: " + text);
@@ -224,205 +231,297 @@ ApexExperiment = {
         if ("parse" in status) {
           if (status.parse) {
             let str = "[FILTERED]";
-            if (outer1_7.includes(promise.url)) {
-              const xhr = promise.xhr;
+            if (outer1_6.includes(tmp2.url)) {
+              const xhr = tmp2.xhr;
               let substr;
-              if (null != xhr) {
+              if (xhr != null) {
                 const responseText = xhr.responseText;
-                if (null != responseText) {
+                if (responseText != null) {
                   substr = responseText.slice(0, 1000);
                 }
               }
               str = substr;
             }
-            obj = { category: "superagent", message: "Failed to parse HTTP response." };
-            obj = {};
-            ({ method: obj4.method, url: obj4.url } = promise);
-            obj.responseText = str;
-            obj.status = status.status;
-            obj.data = obj;
-            callback(maybeTrackRequest[21]).addBreadcrumb(obj);
-            const obj2 = callback(maybeTrackRequest[21]);
+            let obj1 = callback(tmp[21]);
+            obj = { category: "superagent", message: "Failed to parse HTTP response.", data: null };
+            obj = { method: null, url: null, responseText: null, status: null };
+            ({ method: obj4[0], url: obj4[1] } = tmp2);
+            obj[2] = str;
+            obj[3] = status.status;
+            obj[2] = obj;
+            obj1.addBreadcrumb(obj);
           }
         }
       }
-      maybeTrackRequest(text);
+      if (c2) {
+        obj1 = { url: null, method: null, status_code: null, duration_ms: null };
+        ({ url: obj5[0], method: obj5[1] } = tmp2);
+        let status1;
+        if (text != null) {
+          status1 = text.status;
+        }
+        obj1[2] = status1;
+        const _Math = Math;
+        const _performance = performance;
+        obj1[3] = Math.round(performance.now() - callback);
+        callback(tmp[19])(obj1);
+        c2 = false;
+        const tmp11 = callback(tmp[19]);
+      }
     });
   },
   interceptResponse(statusCode) {
-    const _require = statusCode;
+    const callback = statusCode;
     let closure_1 = arg1;
     let closure_2 = arg2;
     if (400 === statusCode.statusCode) {
       let body = statusCode.body;
-      if (null != body) {
-        if (body.captcha_key) {
-          const items = [_require(1935)(16070, dependencyMap.paths), _require(1935)(9446, dependencyMap.paths)];
-          const allPromises = Promise.all(items);
-          const nextPromise = Promise.all(items).then((arg0) => {
-            const iter = arg0[Symbol.iterator]();
-            let nextResult;
-            let tmp3 = tmp2;
-            if (iter !== undefined) {
-              nextResult = iter.next();
-            }
-            let nextResult1;
-            if (!tmp3) {
-              tmp3 = tmp6;
-              if (iter !== undefined) {
-                nextResult1 = iter.next();
-              }
-            }
-            if (!tmp3) {
-              iter.return();
-            }
-            return nextResult.default.showCaptchaAsync(nextResult1.extractCaptchaPropsFromResponse(statusCode.body));
-          });
-          Promise.all(items).then((arg0) => {
-            const iter = arg0[Symbol.iterator]();
-            let nextResult;
-            let tmp3 = tmp2;
-            if (iter !== undefined) {
-              nextResult = iter.next();
-            }
-            let nextResult1;
-            if (!tmp3) {
-              tmp3 = tmp6;
-              if (iter !== undefined) {
-                nextResult1 = iter.next();
-              }
-            }
-            if (!tmp3) {
-              iter.return();
-            }
-            return nextResult.default.showCaptchaAsync(nextResult1.extractCaptchaPropsFromResponse(statusCode.body));
-          }).then((X_Captcha_Key) => {
-            let captcha_rqtoken;
-            let captcha_session_id;
-            ({ captcha_rqtoken, captcha_session_id } = X_Captcha_Key);
-            const obj = { "X-Captcha-Key": X_Captcha_Key.captcha_key };
-            if (null != captcha_rqtoken) {
-              obj["X-Captcha-Rqtoken"] = captcha_rqtoken;
-            }
-            if (null != captcha_session_id) {
-              obj["X-Captcha-Session-Id"] = captcha_session_id;
-            }
-            callback(obj);
-          }).catch(arg2);
-          let flag = true;
-          const nextPromise1 = Promise.all(items).then((arg0) => {
-            const iter = arg0[Symbol.iterator]();
-            let nextResult;
-            let tmp3 = tmp2;
-            if (iter !== undefined) {
-              nextResult = iter.next();
-            }
-            let nextResult1;
-            if (!tmp3) {
-              tmp3 = tmp6;
-              if (iter !== undefined) {
-                nextResult1 = iter.next();
-              }
-            }
-            if (!tmp3) {
-              iter.return();
-            }
-            return nextResult.default.showCaptchaAsync(nextResult1.extractCaptchaPropsFromResponse(statusCode.body));
-          }).then((X_Captcha_Key) => {
-            let captcha_rqtoken;
-            let captcha_session_id;
-            ({ captcha_rqtoken, captcha_session_id } = X_Captcha_Key);
-            const obj = { "X-Captcha-Key": X_Captcha_Key.captcha_key };
-            if (null != captcha_rqtoken) {
-              obj["X-Captcha-Rqtoken"] = captcha_rqtoken;
-            }
-            if (null != captcha_session_id) {
-              obj["X-Captcha-Session-Id"] = captcha_session_id;
-            }
-            callback(obj);
-          });
-        }
-        return flag;
+      let captcha_key;
+      if (body != null) {
+        captcha_key = body.captcha_key;
       }
+      if (captcha_key) {
+        const items = [callback(1959)(16105, dependencyMap.paths), callback(1959)(9470, dependencyMap.paths)];
+        const allPromises = Promise.all(items);
+        const nextPromise = Promise.all(items).then((arg0) => {
+          const iter = arg0[Symbol.iterator]();
+          let nextResult;
+          if (iter !== undefined) {
+            nextResult = iter.next();
+          }
+          let nextResult1;
+          let tmp4 = tmp;
+          if (iter !== undefined) {
+            tmp4 = tmp6;
+            if (iter !== undefined) {
+              nextResult1 = iter.next();
+              tmp4 = tmp6;
+            }
+          }
+          if (!tmp4) {
+            iter.return();
+          }
+          return nextResult.default.showCaptchaAsync(nextResult1.extractCaptchaPropsFromResponse(statusCode.body));
+        });
+        Promise.all(items).then((arg0) => {
+          const iter = arg0[Symbol.iterator]();
+          let nextResult;
+          if (iter !== undefined) {
+            nextResult = iter.next();
+          }
+          let nextResult1;
+          let tmp4 = tmp;
+          if (iter !== undefined) {
+            tmp4 = tmp6;
+            if (iter !== undefined) {
+              nextResult1 = iter.next();
+              tmp4 = tmp6;
+            }
+          }
+          if (!tmp4) {
+            iter.return();
+          }
+          return nextResult.default.showCaptchaAsync(nextResult1.extractCaptchaPropsFromResponse(statusCode.body));
+        }).then((X_Captcha_Key) => {
+          let captcha_rqtoken;
+          let captcha_session_id;
+          ({ captcha_rqtoken, captcha_session_id } = X_Captcha_Key);
+          const obj = { "X-Captcha-Key": X_Captcha_Key.captcha_key };
+          if (null != captcha_rqtoken) {
+            obj["X-Captcha-Rqtoken"] = captcha_rqtoken;
+          }
+          if (null != captcha_session_id) {
+            obj["X-Captcha-Session-Id"] = captcha_session_id;
+          }
+          callback(obj);
+        }).catch(arg2);
+        let flag = true;
+        const nextPromise1 = Promise.all(items).then((arg0) => {
+          const iter = arg0[Symbol.iterator]();
+          let nextResult;
+          if (iter !== undefined) {
+            nextResult = iter.next();
+          }
+          let nextResult1;
+          let tmp4 = tmp;
+          if (iter !== undefined) {
+            tmp4 = tmp6;
+            if (iter !== undefined) {
+              nextResult1 = iter.next();
+              tmp4 = tmp6;
+            }
+          }
+          if (!tmp4) {
+            iter.return();
+          }
+          return nextResult.default.showCaptchaAsync(nextResult1.extractCaptchaPropsFromResponse(statusCode.body));
+        }).then((X_Captcha_Key) => {
+          let captcha_rqtoken;
+          let captcha_session_id;
+          ({ captcha_rqtoken, captcha_session_id } = X_Captcha_Key);
+          const obj = { "X-Captcha-Key": X_Captcha_Key.captcha_key };
+          if (null != captcha_rqtoken) {
+            obj["X-Captcha-Rqtoken"] = captcha_rqtoken;
+          }
+          if (null != captcha_session_id) {
+            obj["X-Captcha-Session-Id"] = captcha_session_id;
+          }
+          callback(obj);
+        });
+      }
+      return flag;
     }
     if (401 === statusCode.statusCode) {
       const body2 = statusCode.body;
       let code;
-      if (null != body2) {
+      if (body2 != null) {
         code = body2.code;
       }
       if (code === AbortCodes.MFA_REQUIRED) {
         const body3 = statusCode.body;
-        if (null != body3) {
-          if (body3.mfa) {
-            const promise4 = _require(1935)(14739, dependencyMap.paths);
-            _require(1935)(14739, dependencyMap.paths).then((openMFAModal) => {
-              openMFAModal.openMFAModal(statusCode.body.mfa, closure_1, closure_2);
-            }).catch(arg2);
-            flag = true;
-            const nextPromise2 = _require(1935)(14739, dependencyMap.paths).then((openMFAModal) => {
-              openMFAModal.openMFAModal(statusCode.body.mfa, closure_1, closure_2);
-            });
-          }
+        let mfa;
+        if (body3 != null) {
+          mfa = body3.mfa;
+        }
+        if (mfa) {
+          const promise4 = callback(1959)(14765, dependencyMap.paths);
+          callback(1959)(14765, dependencyMap.paths).then((openMFAModal) => {
+            openMFAModal.openMFAModal(statusCode.body.mfa, closure_1, closure_2);
+          }).catch(arg2);
+          flag = true;
+          const nextPromise2 = callback(1959)(14765, dependencyMap.paths).then((openMFAModal) => {
+            openMFAModal.openMFAModal(statusCode.body.mfa, closure_1, closure_2);
+          });
         }
       }
     }
     const body4 = statusCode.body;
     let code1;
-    if (null != body4) {
+    if (body4 != null) {
       code1 = body4.code;
     }
     if (obj.isLimitedAccessErrorCode(statusCode.statusCode, code1)) {
-      tmp6(1935)(5085, dependencyMap.paths).then((arg0) => {
+      tmp7(1959)(5107, tmp8.paths).then((arg0) => {
         arg0.default();
       });
       flag = false;
-      const promise3 = tmp6(1935)(5085, dependencyMap.paths);
+      const promise3 = tmp7(1959)(5107, tmp8.paths);
     } else {
       const body5 = statusCode.body;
       let code2;
-      if (null != body5) {
+      if (body5 != null) {
         code2 = body5.code;
       }
-      if (tmp6Result.isLimitedAccessErrorCode(statusCode.statusCode, code2)) {
-        _require(1935)(12948, dependencyMap.paths).then((arg0) => {
+      if (tmp7Result.isLimitedAccessErrorCode(statusCode.statusCode, code2)) {
+        tmp7(1959)(12971, tmp8.paths).then((arg0) => {
           const body = statusCode.body;
           let guild_id;
-          if (null != body) {
+          if (body != null) {
             guild_id = body.guild_id;
           }
           arg0.default(guild_id);
         });
         flag = false;
-        const promise2 = _require(1935)(12948, dependencyMap.paths);
+        const promise2 = tmp7(1959)(12971, tmp8.paths);
       } else {
         flag = 403 === statusCode.statusCode;
         if (flag) {
           const body6 = statusCode.body;
           let code3;
-          if (null != body6) {
+          if (body6 != null) {
             code3 = body6.code;
           }
           flag = code3 === AbortCodes.RESTRICTED_HOURS_ACTIVE;
         }
         if (flag) {
-          _require(1935)(16077, dependencyMap.paths).then((openRestrictedHoursModal) => {
+          tmp7(1959)(16112, tmp8.paths).then((openRestrictedHoursModal) => {
             const result = openRestrictedHoursModal.openRestrictedHoursModal();
           });
           flag = false;
-          const promise = _require(1935)(16077, dependencyMap.paths);
+          const promise = tmp7(1959)(16112, tmp8.paths);
         }
       }
-      tmp6Result = tmp6(16076);
+      tmp7Result = tmp7(16111);
     }
   }
 };
-ApexExperiment = _isNativeReflectConstruct.setRequestPatch(ApexExperiment);
-_isNativeReflectConstruct.setAwaitOnline((() => {
-  // CreateGeneratorClosureLongIndex (0x67)
-  let closure_0 = callback(tmp);
-  return function() {
-    return callback(...arguments);
-  };
-})());
+ApexExperiment = sendRequest.setRequestPatch(ApexExperiment);
+closure_0 = undefined;
+closure_0 = importDefaultResult((arg0) => {
+  let closure_0 = arg0;
+  let c3 = 0;
+  let c4 = 0;
+  return (function*(arg0) {
+    if (c4 === 2) {
+      c4 = 3;
+      HermesBuiltin.throwTypeError();
+    } else if (tmp4 === 3) {
+      if (arg0 === 1) {
+        throw arg1;
+      } else if (arg0 === 2) {
+        let obj = { value: null, done: true };
+        obj[0] = arg1;
+        return obj;
+      } else {
+        return { value: "HermesInternal", done: null };
+      }
+    } else {
+      try {
+        c4 = 2;
+        if (0 === dependencyMap) {
+          if (arg0 === 1) {
+            c4 = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            c4 = 3;
+            obj = { value: null, done: true };
+            obj[0] = arg1;
+            return obj;
+          } else {
+            let closure_2 = tmp5;
+            let closure_1 = tmp2;
+            const _HermesInternal2 = HermesInternal;
+            outer1_2(7).report("Network", "Request to " + closure_0 + " failed, will retry.");
+            const obj7 = outer1_2(7);
+            const tmp25 = outer1_1;
+            if (obj8.isOnline()) {
+              c4 = 3;
+            } else {
+              dependencyMap = 1;
+              c4 = 1;
+              const obj1 = { value: null, done: false };
+              obj1[0] = tmp25(1454).awaitOnline();
+              return obj1;
+            }
+            obj8 = outer1_1(1454);
+          }
+        } else if (arg0 === 1) {
+          c4 = 3;
+          throw arg1;
+        } else if (arg0 !== 2) {
+          obj = outer1_2(7);
+          const _HermesInternal = HermesInternal;
+          obj.report("Network", "Network detected online, retrying " + closure_0);
+        }
+        c4 = 3;
+        const obj2 = { value: null, done: true };
+        obj2[0] = arg1;
+        return obj2;
+      } catch (tmp14) {
+        c4 = tmp;
+        throw tmp14;
+      }
+    }
+  })();
+});
+sendRequest.setAwaitOnline(function() {
+  const self = this;
+  const apply = closure_0.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
+});
 let result1 = require("ME").fileFinishedImporting("lib/superagentPatch.tsx");

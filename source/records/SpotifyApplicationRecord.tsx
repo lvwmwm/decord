@@ -1,70 +1,36 @@
-// Module ID: 12350
-// Function ID: 96058
-// Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 4188, 4849, 2]
+// Module ID: 12372
+// Function ID: 12373
+// Name: getIconURL
+// Dependencies: [4212, 4871, 2]
 
-// Module 12350 (_isNativeReflectConstruct)
-import getPlatformUserUrl from "getPlatformUserUrl";
-import set from "set";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
-import importDefaultResult from "_callSuper";
+// Module 12372 (getIconURL)
+import "createExecutable";
 import importDefaultResult1 from "getPlatformUserUrl";
 
-function _isNativeReflectConstruct() {
-  let getPlatformUserUrl = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return getPlatformUserUrl;
+const spotify = "spotify";
+const value = require("getPlatformUserUrl").get("spotify");
+class SpotifyApplicationRecord extends tmp4 {
+  constructor() {
+    tmp = new tmp({}, new.target, tmp);
+    // ThrowIfThisInitialized (0x7c)
+    tmp.id = spotify;
+    tmp.name = get.name;
+    return tmp;
   }
-  const result = _isNativeReflectConstruct();
 }
-let closure_5 = require("getPlatformUserUrl").get("spotify");
-let tmp3 = ((importDefaultResult) => {
-  class SpotifyApplicationRecord {
-    constructor() {
-      self = this;
-      tmp = SpotifyApplicationRecord(this, SpotifyApplicationRecord);
-      items = [];
-      items[0] = {};
-      obj = outer1_3(SpotifyApplicationRecord);
-      tmp2 = outer1_2;
-      if (outer1_6()) {
-        tmp4 = globalThis;
-        _Reflect = Reflect;
-        tmp5 = outer1_3;
-        constructResult = Reflect.construct(obj, items, outer1_3(self).constructor);
-      } else {
-        constructResult = obj.apply(self, items);
-      }
-      tmp2Result = tmp2(self, constructResult);
-      tmp2Result.id = "spotify";
-      tmp2Result.name = outer1_5.name;
-      return tmp2Result;
-    }
-  }
-  callback2(SpotifyApplicationRecord, importDefaultResult);
-  let obj = {
-    key: "getIconURL",
-    value() {
-      return outer1_5.icon.lightPNG;
-    }
-  };
-  let items = [obj, ];
-  obj = {
-    key: "getWhiteIconURL",
-    value() {
-      return outer1_5.icon.whitePNG;
-    }
-  };
-  items[1] = obj;
-  return callback(SpotifyApplicationRecord, items);
-})(importDefaultResult);
-tmp3 = new tmp3();
-let result = require("_possibleConstructorReturn").fileFinishedImporting("records/SpotifyApplicationRecord.tsx");
+const prototype = SpotifyApplicationRecord.prototype;
+prototype["getIconURL"] = function getIconURL() {
+  return value.icon.lightPNG;
+};
+prototype["getWhiteIconURL"] = function getWhiteIconURL() {
+  return value.icon.whitePNG;
+};
+const tmp6 = new "getWhiteIconURL"({}, tmp2, tmp);
+// ThrowIfThisInitialized (0x7c)
+tmp6.id = "spotify";
+tmp6.name = value.name;
+const result = require("set").fileFinishedImporting("records/SpotifyApplicationRecord.tsx");
 
-export default tmp3;
+export default SpotifyApplicationRecord;
 export const SPOTIFY_APPLICATION_ID = "spotify";
-export const SpotifyApplication = tmp3;
+export const SpotifyApplication = tmp6;

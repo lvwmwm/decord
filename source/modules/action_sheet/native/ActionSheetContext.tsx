@@ -1,12 +1,12 @@
-// Module ID: 5479
-// Function ID: 46703
+// Module ID: 5497
+// Function ID: 5498
 // Name: context
-// Dependencies: [31, 2]
+// Dependencies: [19, 2]
 
-// Module 5479 (context)
-import importAllResult from "result";
+// Module 5497 (context)
+import importAllResult from "noop";
 
-const context = require("result").createContext(null);
+const context = require("noop").createContext(null);
 const result = require("set").fileFinishedImporting("modules/action_sheet/native/ActionSheetContext.tsx");
 
 export default context;

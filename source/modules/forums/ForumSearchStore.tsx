@@ -1,119 +1,58 @@
-// Module ID: 6061
-// Function ID: 54131
-// Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 1348, 566, 686, 2]
+// Module ID: 6079
+// Function ID: 6080
+// Name: initialize
+// Dependencies: [1372, 589, 709, 2]
 
-// Module 6061 (_isNativeReflectConstruct)
-import initialize from "initialize";
-import dispatcher from "dispatcher";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 6079 (initialize)
+import ensureGuildLoaded from "ensureGuildLoaded";
+import { Store } from "initialize";
 
-function _isNativeReflectConstruct() {
-  let initialize = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return initialize;
-  }
-  const result = _isNativeReflectConstruct();
+let closure_1 = {};
+class ForumSearchStore extends Store {
 }
-function isForumLikeChannel(channelId) {
-  channel = channel.getChannel(channelId);
-  return !(null == channel || !channel.isForumLikeChannel());
-}
-function getOrCreateSearchState(arg0) {
-  let obj = dependencyMap[arg0];
-  if (null == obj) {
-    obj = { query: null, loading: false, results: null };
+const prototype = ForumSearchStore.prototype;
+prototype["initialize"] = function initialize() {
+  this.waitFor(ensureGuildLoaded);
+};
+prototype["getSearchQuery"] = function getSearchQuery(ensureGuildLoaded) {
+  let query;
+  if (dependencyMap[ensureGuildLoaded] != null) {
+    query = tmp.query;
   }
-  dependencyMap[arg0] = obj;
-  return obj;
-}
-let closure_6 = {};
-let tmp2 = ((Store) => {
-  class ForumSearchStore {
-    constructor() {
-      self = this;
-      tmp = ForumSearchStore(this, ForumSearchStore);
-      obj = outer1_3(ForumSearchStore);
-      tmp2 = outer1_2;
-      if (outer1_7()) {
-        tmp6 = globalThis;
-        _Reflect = Reflect;
-        tmp7 = outer1_3;
-        tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, outer1_3(self).constructor);
-      } else {
-        tmp3 = arguments;
-        tmp4 = arguments;
-        constructResult = obj(...arguments);
-      }
-      return tmp2(self, constructResult);
-    }
+  return query;
+};
+prototype["getSearchLoading"] = function getSearchLoading(ensureGuildLoaded) {
+  let flag;
+  if (dependencyMap[ensureGuildLoaded] != null) {
+    flag = tmp.loading;
   }
-  callback2(ForumSearchStore, Store);
-  let obj = {
-    key: "initialize",
-    value() {
-      this.waitFor(outer1_5);
-    }
-  };
-  const items = [obj, , , , ];
-  obj = {
-    key: "getSearchQuery",
-    value(arg0) {
-      let query;
-      if (null != outer1_6[arg0]) {
-        query = tmp.query;
-      }
-      return query;
-    }
-  };
-  items[1] = obj;
-  obj = {
-    key: "getSearchLoading",
-    value(arg0) {
-      let loading;
-      if (null != outer1_6[arg0]) {
-        loading = tmp.loading;
-      }
-      return null != loading && loading;
-    }
-  };
-  items[2] = obj;
-  items[3] = {
-    key: "getSearchResults",
-    value(arg0) {
-      let results;
-      if (null != outer1_6[arg0]) {
-        results = tmp.results;
-      }
-      return results;
-    }
-  };
-  items[4] = {
-    key: "getHasSearchResults",
-    value(arg0) {
-      let results;
-      if (null != outer1_6[arg0]) {
-        results = tmp.results;
-      }
-      let tmp3 = null != results;
-      if (tmp3) {
-        tmp3 = tmp.results.length > 0;
-      }
-      return tmp3;
-    }
-  };
-  return callback(ForumSearchStore, items);
-})(require("initialize").Store);
-tmp2.displayName = "ForumSearchStore";
-tmp2 = new tmp2(require("dispatcher"), {
+  if (flag == null) {
+    flag = false;
+  }
+  return flag;
+};
+prototype["getSearchResults"] = function getSearchResults(arg0) {
+  let results;
+  if (dependencyMap[arg0] != null) {
+    results = tmp.results;
+  }
+  return results;
+};
+prototype["getHasSearchResults"] = function getHasSearchResults(arg0) {
+  let results;
+  if (dependencyMap[arg0] != null) {
+    results = tmp.results;
+  }
+  let tmp3 = null != results;
+  if (tmp3) {
+    tmp3 = tmp.results.length > 0;
+  }
+  return tmp3;
+};
+ForumSearchStore.displayName = "ForumSearchStore";
+const forumSearchStore = new ForumSearchStore(require("dispatcher"), {
   CONNECTION_OPEN: function handleConnectionOpen() {
-    let closure_6 = {};
+    let closure_1 = {};
   },
   THREAD_DELETE: function handleThreadDelete(channel) {
     channel = channel.channel;
@@ -127,71 +66,100 @@ tmp2 = new tmp2(require("dispatcher"), {
       const merged = Object.assign(tmp2);
       const results = tmp2.results;
       let found;
-      if (null != results) {
+      if (results != null) {
         found = results.filter((arg0) => channel.id !== arg0);
       }
-      obj["results"] = found;
+      obj.results = found;
       dependencyMap[parent_id] = obj;
     }
   },
-  CHANNEL_DELETE: function handleChannelDelete(channel) {
-    delete tmp2[tmp];
-    return channel.channel.id;
+  CHANNEL_DELETE: function handleChannelDelete(arg0) {
+    delete tmp3[tmp2];
+    return tmp;
   },
   FORUM_SEARCH_QUERY_UPDATED: function handleForumSearchQueryUpdated(channelId) {
     channelId = channelId.channelId;
-    if (isForumLikeChannel(channelId)) {
-      const obj = {};
-      const merged = Object.assign(getOrCreateSearchState(channelId));
-      obj["query"] = channelId.query;
-      closure_6[channelId] = obj;
+    const channel = store.getChannel(channelId);
+    if (!tmp) {
+      let obj = dependencyMap[channelId];
+      if (obj == null) {
+        obj = { query: null, loading: false, results: null };
+      }
+      dependencyMap[channelId] = obj;
+      obj = {};
+      const merged = Object.assign(obj);
+      obj.query = channelId.query;
+      dependencyMap[channelId] = obj;
     } else {
       return false;
     }
+    tmp = null == channel || !channel.isForumLikeChannel();
   },
   FORUM_SEARCH_START: function handleForumSearchStart(channelId) {
     channelId = channelId.channelId;
-    if (isForumLikeChannel(channelId)) {
-      const obj = {};
-      const merged = Object.assign(getOrCreateSearchState(channelId));
-      obj["loading"] = true;
-      closure_6[channelId] = obj;
+    const channel = store.getChannel(channelId);
+    if (!tmp) {
+      let obj = dependencyMap[channelId];
+      if (obj == null) {
+        obj = { query: null, loading: false, results: null };
+      }
+      dependencyMap[channelId] = obj;
+      obj = {};
+      const merged = Object.assign(obj);
+      obj.loading = true;
+      dependencyMap[channelId] = obj;
     } else {
       return false;
     }
+    tmp = null == channel || !channel.isForumLikeChannel();
   },
   FORUM_SEARCH_SUCCESS: function handleForumSearchSuccess(channelId) {
     channelId = channelId.channelId;
-    if (isForumLikeChannel(channelId)) {
-      const obj = {};
-      const merged = Object.assign(getOrCreateSearchState(channelId));
-      obj["loading"] = false;
-      obj["results"] = channelId.threadIds;
-      closure_6[channelId] = obj;
+    const channel = store.getChannel(channelId);
+    if (!tmp) {
+      let obj = dependencyMap[channelId];
+      if (obj == null) {
+        obj = { query: null, loading: false, results: null };
+      }
+      dependencyMap[channelId] = obj;
+      obj = {};
+      const merged = Object.assign(obj);
+      obj.loading = false;
+      obj.results = channelId.threadIds;
+      dependencyMap[channelId] = obj;
     } else {
       return false;
     }
+    tmp = null == channel || !channel.isForumLikeChannel();
   },
   FORUM_SEARCH_FAILURE: function handleForumSearchFailure(channelId) {
     channelId = channelId.channelId;
-    if (isForumLikeChannel(channelId)) {
-      const obj = {};
-      const merged = Object.assign(getOrCreateSearchState(channelId));
-      obj["loading"] = false;
-      obj["results"] = [];
-      closure_6[channelId] = obj;
+    const channel = store.getChannel(channelId);
+    if (!tmp) {
+      let obj = dependencyMap[channelId];
+      if (obj == null) {
+        obj = { query: null, loading: false, results: null };
+      }
+      dependencyMap[channelId] = obj;
+      obj = {};
+      const merged = Object.assign(obj);
+      obj.loading = false;
+      obj.results = [];
+      dependencyMap[channelId] = obj;
     } else {
       return false;
     }
+    tmp = null == channel || !channel.isForumLikeChannel();
   },
   FORUM_SEARCH_CLEAR: function handleForumSearchClear(channelId) {
-    const tmp3 = isForumLikeChannel(channelId.channelId);
-    if (tmp3) {
+    const channel = store.getChannel(channelId.channelId);
+    const tmp4 = !(null == channel || !channel.isForumLikeChannel());
+    if (tmp4) {
       delete tmp[tmp2];
     }
-    return tmp3;
+    return tmp4;
   }
 });
-let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/forums/ForumSearchStore.tsx");
+const result = require("dispatcher").fileFinishedImporting("modules/forums/ForumSearchStore.tsx");
 
-export default tmp2;
+export default forumSearchStore;

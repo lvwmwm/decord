@@ -1,118 +1,125 @@
-// Module ID: 14875
-// Function ID: 113298
-// Name: renderSteps
-// Dependencies: [31, 27, 653, 33, 4165, 14876, 5619, 4161, 1212, 4578, 1273, 4004, 1456, 4399, 675, 14877, 14881, 9191, 2]
+// Module ID: 14901
+// Function ID: 14902
+// Name: CompanionRemoteAuth
+// Dependencies: [19, 17, 676, 21, 4189, 14902, 5637, 4185, 1236, 4600, 1297, 4028, 1480, 4422, 698, 14903, 14907, 9215, 2]
 // Exports: CompanionRemoteAuth
 
-// Module 14875 (renderSteps)
-import result from "result";
-import { View } from "get ActivityIndicator";
+// Module 14901 (CompanionRemoteAuth)
+import noop from "noop";
+import { View } from "AuthFormView";
 import ME from "ME";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_5;
+let c5;
+let c9;
 let closure_6;
-let closure_7;
-let closure_8;
-let closure_9;
+let error;
+let metroImportAll;
 const require = arg1;
-function renderSteps(state, avatar, callback1, context) {
-  const step = state.step;
-  if (require(14876) /* RemoteAuthStep */.RemoteAuthStep.INITIALIZING !== step) {
-    if (require(14876) /* RemoteAuthStep */.RemoteAuthStep.PENDING_REMOTE_INIT !== step) {
-      if (require(14876) /* RemoteAuthStep */.RemoteAuthStep.PENDING_TICKET === step) {
-        const user = state.user;
-        let obj = {};
-        obj = { style: avatar.avatar, user, size: require(1273) /* Button */.AvatarSizes.LARGE, guildId: context };
-        const items = [callback(require(1273) /* Button */.Avatar, obj), , , ];
-        obj = { variant: "heading-lg/bold" };
-        const intl = require(1212) /* getSystemLocale */.intl;
-        obj.children = intl.string(require(1212) /* getSystemLocale */.t.apGCUT);
-        items[1] = callback(require(4161) /* Text */.Text, obj);
-        const obj1 = { style: avatar.statusText, variant: "text-md/medium", color: "text-muted" };
-        const intl2 = require(1212) /* getSystemLocale */.intl;
-        const obj2 = {};
-        let obj5 = importDefault(4004);
-        obj2.username = obj5.getUserTag(user);
-        obj1.children = intl2.format(require(1212) /* getSystemLocale */.t.Cbl5JK, obj2);
-        items[2] = callback(require(4161) /* Text */.Text, obj1);
-        const obj3 = { style: avatar.buttonContainer };
-        const obj4 = { size: "lg", variant: "tertiary" };
-        const intl3 = require(1212) /* getSystemLocale */.intl;
-        obj4.text = intl3.string(require(1212) /* getSystemLocale */.t["ETE/oC"]);
-        obj4.onPress = callback1;
-        obj3.children = callback(require(4578) /* Button */.Button, obj4);
-        items[3] = callback(View, obj3);
-        obj.children = items;
-        return callback2(closure_8, obj);
-      } else {
-        return callback(require(5619) /* ActivityIndicator */.ActivityIndicator, {});
-      }
-    }
-  }
-  obj5 = {};
-  const items1 = [callback(require(5619) /* ActivityIndicator */.ActivityIndicator, {}), , ];
-  const obj6 = { style: avatar.statusText, variant: "text-md/medium", color: "text-muted" };
-  const intl4 = require(1212) /* getSystemLocale */.intl;
-  obj6.children = intl4.string(require(1212) /* getSystemLocale */.t["7LkwqE"]);
-  items1[1] = callback(require(4161) /* Text */.Text, obj6);
-  const obj7 = { style: avatar.buttonContainer };
-  const obj8 = { size: "lg", variant: "tertiary" };
-  const intl5 = require(1212) /* getSystemLocale */.intl;
-  obj8.text = intl5.string(require(1212) /* getSystemLocale */.t["ETE/oC"]);
-  obj8.onPress = callback1;
-  obj7.children = callback(require(4578) /* Button */.Button, obj8);
-  items1[2] = callback(View, obj7);
-  obj5.children = items1;
-  return callback2(closure_8, obj5);
-}
-({ AnalyticEvents: closure_5, LoginSuccessfulSources: closure_6 } = ME);
-({ jsx: closure_7, Fragment: closure_8, jsxs: closure_9 } = jsxProd);
-let closure_10 = _createForOfIteratorHelperLoose.createStyles({ statusContainer: { alignItems: "center", marginTop: 32 }, avatar: { marginBottom: 16 }, statusText: { textAlign: "center", marginTop: 16, marginBottom: 24, paddingHorizontal: 32 }, buttonContainer: { width: "100%", paddingHorizontal: 16, marginTop: 16 } });
+({ AnalyticEvents: c5, LoginSuccessfulSources: closure_6 } = ME);
+({ jsx: error, Fragment: metroImportAll, jsxs: c9 } = jsxProd);
+let closure_10 = createCacheKey.createStyles({ statusContainer: { alignItems: "center", marginTop: 32 }, avatar: { marginBottom: 16 }, statusText: { textAlign: "center", marginTop: 16, marginBottom: 24, paddingHorizontal: 32 }, buttonContainer: { width: "100%", paddingHorizontal: 16, marginTop: 16 } });
 const result = require("ME").fileFinishedImporting("modules/remote_auth/components/native/CompanionRemoteAuth.tsx");
 
 export const CompanionRemoteAuth = function CompanionRemoteAuth() {
-  let tmp = callback3();
-  let obj = navigation(1456);
+  let tmp = callback2();
+  let obj = navigation(1480);
   navigation = obj.useNavigation();
-  const context = React.useContext(fingerprint(4399));
+  let obj1 = React;
+  const context = React.useContext(fingerprint(4422));
   const callback = React.useCallback((arg0) => {
-    let obj = fingerprint(outer1_2[14]);
-    obj = { source: outer1_6.QR_CODE, login_source: "companion_remote_auth", is_new_user: false, login_method: "quest_remote_auth" };
-    let tmp = null;
-    if (null != arg0) {
-      tmp = arg0;
+    let tmp = arg0;
+    let obj = fingerprint(table[14]);
+    obj = { source: constants2.QR_CODE, login_source: "companion_remote_auth", is_new_user: false, login_method: "quest_remote_auth", login_instance_id: null };
+    if (arg0 == null) {
+      tmp = null;
     }
-    obj.login_instance_id = tmp;
-    obj.track(outer1_5.LOGIN_SUCCESSFUL, obj);
+    obj[4] = tmp;
+    obj.track(constants.LOGIN_SUCCESSFUL, obj);
   }, []);
-  const state = navigation(14877).useAuthWebsocket(callback, true).state;
+  let obj2 = navigation(14903);
+  const state = obj2.useAuthWebsocket(callback, true).state;
   const items = [navigation];
   const callback1 = React.useCallback(() => {
     navigation.goBack();
   }, items);
   fingerprint = null;
-  if (state.step === navigation(14876).RemoteAuthStep.PENDING_REMOTE_INIT) {
+  if (state.step === navigation(14902).RemoteAuthStep.PENDING_REMOTE_INIT) {
     fingerprint = state.fingerprint;
   }
   const items1 = [fingerprint];
-  const effect = React.useEffect(() => {
+  const effect = obj1.useEffect(() => {
     if (null != fingerprint) {
       const _HermesInternal = HermesInternal;
       const obj = fingerprint(outer1_2[16]);
-      fingerprint(outer1_2[16]).sendAuthUrl("https://discord.com/ra/" + fingerprint).catch(() => {
+      fingerprint(outer1_2[16]).sendAuthUrl("https://discord.com/ra/" + tmp).catch(() => {
         const error = new Error("Failed to initialize authentication");
         throw error;
       });
-      const sendAuthUrlResult = fingerprint(outer1_2[16]).sendAuthUrl("https://discord.com/ra/" + fingerprint);
+      const sendAuthUrlResult = fingerprint(outer1_2[16]).sendAuthUrl("https://discord.com/ra/" + tmp);
     }
   }, items1);
-  obj = {};
-  const obj2 = navigation(14877);
-  const intl = navigation(1212).intl;
-  obj.headerText = intl.string(navigation(1212).t["7fNJgA"]);
-  obj = { style: tmp.statusContainer, children: renderSteps(state, tmp, callback1, context) };
-  obj.children = callback(View, obj);
-  return callback(fingerprint(9191), obj);
+  obj = { headerText: null, children: null };
+  let tmp5Result = tmp5(9215);
+  const intl = tmp2(1236).intl;
+  obj[0] = intl.string(navigation(1236).t["7fNJgA"]);
+  obj = { style: tmp.statusContainer, children: null };
+  const step = state.step;
+  if (navigation(14902).RemoteAuthStep.INITIALIZING !== step) {
+    if (tmp2(14902).RemoteAuthStep.PENDING_REMOTE_INIT !== step) {
+      if (tmp2(14902).RemoteAuthStep.PENDING_TICKET === step) {
+        const user = state.user;
+        obj1 = { children: null };
+        obj2 = { style: null, user: null, size: null, guildId: null };
+        obj2[0] = tmp.avatar;
+        obj2[1] = user;
+        obj2[2] = tmp2(1297).AvatarSizes.LARGE;
+        obj2[3] = context;
+        const items2 = [tmp11(tmp2(1297).Avatar, obj2), , , ];
+        const obj3 = { variant: "heading-lg/bold", children: null };
+        const intl2 = tmp2(1236).intl;
+        obj3[1] = intl2.string(tmp2(1236).t.apGCUT);
+        items2[1] = tmp11(tmp2(4185).Text, obj3);
+        const obj4 = { style: null, variant: "text-md/medium", color: "text-muted", children: null };
+        obj4[0] = tmp.statusText;
+        const intl3 = tmp2(1236).intl;
+        const obj5 = { username: null };
+        tmp5Result = tmp5(4028);
+        obj5[0] = tmp5Result.getUserTag(user);
+        obj4[3] = intl3.format(tmp2(1236).t.Cbl5JK, obj5);
+        items2[2] = tmp11(tmp2(4185).Text, obj4);
+        const obj6 = { style: null, children: null };
+        obj6[0] = tmp.buttonContainer;
+        const obj7 = { size: "lg", variant: "tertiary", text: null, onPress: null };
+        const intl4 = tmp2(1236).intl;
+        obj7[2] = intl4.string(tmp2(1236).t["ETE/oC"]);
+        obj7[3] = callback1;
+        obj6[1] = tmp11(tmp2(4600).Button, obj7);
+        items2[3] = tmp11(tmp13, obj6);
+        obj1[0] = items2;
+        let tmp11Result = callback(closure_8, obj1);
+      } else if (tmp2(14902).RemoteAuthStep.PENDING_LOGIN === step) {
+        tmp11Result = tmp11(tmp2(5637).ActivityIndicator, {});
+      }
+    }
+    obj[1] = tmp11Result;
+    obj[1] = tmp11(tmp13, obj);
+    return tmp11(tmp5Result, obj);
+  }
+  const obj8 = { children: null };
+  const items3 = [closure_7(navigation(5637).ActivityIndicator, {}), , ];
+  const obj9 = { style: tmp.statusText, variant: "text-md/medium", color: "text-muted", children: null };
+  const intl5 = tmp2(1236).intl;
+  obj9[3] = intl5.string(navigation(1236).t["7LkwqE"]);
+  items3[1] = closure_7(navigation(4185).Text, obj9);
+  const obj10 = { style: tmp.buttonContainer, children: null };
+  const obj11 = { size: "lg", variant: "tertiary", text: null, onPress: null };
+  const intl6 = tmp2(1236).intl;
+  obj11[2] = intl6.string(navigation(1236).t["ETE/oC"]);
+  obj11[3] = callback1;
+  obj10[1] = closure_7(navigation(4600).Button, obj11);
+  items3[2] = closure_7(View, obj10);
+  obj8[0] = items3;
+  tmp11Result = callback(closure_8, obj8);
 };

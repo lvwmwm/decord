@@ -1,155 +1,734 @@
-// Module ID: 5170
-// Function ID: 44646
-// Name: isElectronBuiltInSpellcheckerSupported
-// Dependencies: [5, 3776, 477, 5171, 2]
+// Module ID: 5192
+// Function ID: 5193
+// Name: _setEnabled
+// Dependencies: [5, 3800, 500, 5193, 2]
 // Exports: addResultListener, getCachedMisspelling, getCorrections, isMisspelled, isSupported, replaceWithCorrection, setAppLocale, setEnabled, setLearnedWords
 
-// Module 5170 (isElectronBuiltInSpellcheckerSupported)
+// Module 5192 (_setEnabled)
 import asyncGeneratorStep from "asyncGeneratorStep";
+import set from "set";
+import set from "set";
 
 const require = arg1;
-function isElectronBuiltInSpellcheckerSupported() {
-  let spellCheck;
-  if (null != importDefault(3776)) {
-    spellCheck = importDefault(3776).spellCheck;
+function _setEnabled() {
+  const self = this;
+  const tmp = callback((arg0) => {
+    let closure_0 = arg0;
+    let c2 = 0;
+    let c3 = 0;
+    return (function*(arg0) {
+      if (c3 === 2) {
+        c3 = 3;
+        HermesBuiltin.throwTypeError();
+      } else if (tmp4 === 3) {
+        if (arg0 === 1) {
+          throw arg1;
+        } else if (arg0 === 2) {
+          let obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
+        } else {
+          return { value: "HermesInternal", done: null };
+        }
+      } else {
+        try {
+          c3 = 2;
+          if (0 === c2) {
+            if (arg0 === 1) {
+              c3 = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              c3 = 3;
+              obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            } else {
+              let closure_1 = tmp2;
+              closure_1 = undefined;
+              c2 = 1;
+              c3 = 1;
+              const obj1 = { value: null, done: false };
+              obj1[0] = outer1_4;
+              return obj1;
+            }
+          } else if (arg0 === 1) {
+            c3 = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            c3 = 3;
+            obj = { value: null, done: true };
+            obj[0] = arg1;
+            return obj;
+          } else {
+            closure_1 = arg1;
+            if (null != closure_1) {
+              closure_1.enabled = closure_0;
+            }
+            c3 = 3;
+            return { value: "HermesInternal", done: null };
+          }
+        } catch (tmp13) {
+          c3 = tmp;
+          throw tmp13;
+        }
+      }
+    })();
+  });
+  const _setEnabled = tmp;
+  const apply = tmp.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
   }
-  return null != spellCheck;
+  return applyArgumentsResult;
 }
+function _setLearnedWords() {
+  const self = this;
+  const tmp = callback((arg0) => {
+    let closure_0 = arg0;
+    let c2 = 0;
+    let c3 = 0;
+    return (function*(arg0) {
+      if (c3 === 2) {
+        c3 = 3;
+        HermesBuiltin.throwTypeError();
+      } else if (tmp4 === 3) {
+        if (arg0 === 1) {
+          throw arg1;
+        } else if (arg0 === 2) {
+          let obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
+        } else {
+          return { value: "HermesInternal", done: null };
+        }
+      } else {
+        try {
+          c3 = 2;
+          if (0 === c2) {
+            if (arg0 === 1) {
+              c3 = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              c3 = 3;
+              obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            } else {
+              let learnedWords = tmp2;
+              learnedWords = undefined;
+              c2 = 1;
+              c3 = 1;
+              const obj1 = { value: null, done: false };
+              obj1[0] = outer1_4;
+              return obj1;
+            }
+          } else if (arg0 === 1) {
+            c3 = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            c3 = 3;
+            obj = { value: null, done: true };
+            obj[0] = arg1;
+            return obj;
+          } else {
+            learnedWords = arg1;
+            if (null != learnedWords) {
+              learnedWords.setLearnedWords(closure_0);
+            }
+            c3 = 3;
+            return { value: "HermesInternal", done: null };
+          }
+        } catch (tmp14) {
+          c3 = tmp;
+          throw tmp14;
+        }
+      }
+    })();
+  });
+  const _setLearnedWords = tmp;
+  const apply = tmp.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
+}
+function _isMisspelled() {
+  const self = this;
+  const tmp = callback((arg0) => {
+    let closure_0 = arg0;
+    let closure_1 = arg1;
+    let c4 = 0;
+    let c5 = 0;
+    const iter = (function*(arg0) {
+      if (c5 === 2) {
+        c5 = 3;
+        HermesBuiltin.throwTypeError();
+      } else if (tmp4 === 3) {
+        if (arg0 === 1) {
+          throw arg1;
+        } else if (arg0 === 2) {
+          let obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
+        } else {
+          return { value: "HermesInternal", done: null };
+        }
+      } else {
+        try {
+          c5 = 2;
+          if (0 === c4) {
+            if (arg0 === 1) {
+              c5 = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              c5 = 3;
+              obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            } else {
+              let asyncGeneratorStep = tmp5;
+              let misspelled = tmp2;
+              let flag;
+              if (flag === undefined) {
+                flag = false;
+              }
+              misspelled = undefined;
+              c4 = 1;
+              c5 = 1;
+              return { value: "ct", done: null };
+            }
+          } else if (1 === tmp5) {
+            if (arg0 === 1) {
+              c5 = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              c5 = 3;
+              const obj1 = { value: null, done: true };
+              obj1[0] = arg1;
+              return obj1;
+            } else {
+              c4 = 2;
+              c5 = 1;
+              const obj2 = { value: null, done: false };
+              obj2[0] = c4;
+              return obj2;
+            }
+          } else if (arg0 === 1) {
+            c5 = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            c5 = 3;
+            const obj3 = { value: null, done: true };
+            obj3[0] = arg1;
+            return obj3;
+          } else {
+            misspelled = arg1;
+            let isMisspelledResult = null != misspelled;
+            if (isMisspelledResult) {
+              isMisspelledResult = misspelled.isMisspelled(closure_0, flag);
+            }
+            c5 = 3;
+            obj = { value: null, done: true };
+            obj[0] = isMisspelledResult;
+            return obj;
+          }
+        } catch (tmp16) {
+          c5 = tmp;
+          throw tmp16;
+        }
+      }
+    })();
+    iter.next();
+    return iter;
+  });
+  const _isMisspelled = tmp;
+  const apply = tmp.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
+}
+function _getCorrections() {
+  const self = this;
+  const tmp = callback((arg0) => {
+    let closure_0 = arg0;
+    let closure_1 = arg1;
+    let closure_2 = arg2;
+    let c5 = 0;
+    let c6 = 0;
+    const iter = (function*(arg0) {
+      if (c6 === 2) {
+        c6 = 3;
+        HermesBuiltin.throwTypeError();
+      } else if (tmp4 === 3) {
+        if (arg0 === 1) {
+          throw arg1;
+        } else if (arg0 === 2) {
+          let obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
+        } else {
+          return { value: "HermesInternal", done: null };
+        }
+      } else {
+        try {
+          c6 = 2;
+          if (0 === c5) {
+            if (arg0 === 1) {
+              c6 = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              c6 = 3;
+              obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            } else {
+              let closure_4 = tmp5;
+              let correctionsForMisspelling = tmp2;
+              let flag;
+              let num10;
+              if (flag === undefined) {
+                flag = false;
+              }
+              if (num10 === undefined) {
+                num10 = 5;
+              }
+              correctionsForMisspelling = undefined;
+              c5 = 1;
+              c6 = 1;
+              return { value: "ct", done: null };
+            }
+          } else if (1 === tmp5) {
+            if (arg0 === 1) {
+              c6 = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              c6 = 3;
+              const obj1 = { value: null, done: true };
+              obj1[0] = arg1;
+              return obj1;
+            } else {
+              c5 = 2;
+              c6 = 1;
+              const obj2 = { value: null, done: false };
+              obj2[0] = closure_4;
+              return obj2;
+            }
+          } else if (arg0 === 1) {
+            c6 = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            c6 = 3;
+            obj = { value: null, done: true };
+            obj[0] = arg1;
+            return obj;
+          } else {
+            correctionsForMisspelling = arg1;
+            if (null == correctionsForMisspelling) {
+              const items = [];
+            } else {
+              correctionsForMisspelling = correctionsForMisspelling.getCorrectionsForMisspelling(closure_0, flag);
+              const substr = correctionsForMisspelling.slice(0, num10);
+            }
+            c6 = 3;
+          }
+        } catch (tmp17) {
+          c6 = tmp;
+          throw tmp17;
+        }
+      }
+    })();
+    iter.next();
+    return iter;
+  });
+  const _getCorrections = tmp;
+  const apply = tmp.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
+}
+function _getCachedMisspelling() {
+  const self = this;
+  const tmp = callback(() => {
+    let closure_0 = arg0;
+    let c3 = 0;
+    let c4 = 0;
+    const iter = (function*() {
+      if (c4 === 2) {
+        c4 = 3;
+        HermesBuiltin.throwTypeError();
+      } else if (tmp4 === 3) {
+        if (arg0 === 1) {
+          throw arg1;
+        } else if (arg0 === 2) {
+          let obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
+        } else {
+          return { value: "HermesInternal", done: null };
+        }
+      } else {
+        try {
+          c4 = 2;
+          if (0 === c3) {
+            if (arg0 === 1) {
+              c4 = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              c4 = 3;
+              obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            } else {
+              let cachedMisspelling2 = tmp5;
+              let cachedMisspelling = tmp2;
+              let num11;
+              if (num11 === undefined) {
+                num11 = 5;
+              }
+              cachedMisspelling = undefined;
+              cachedMisspelling2 = undefined;
+              c3 = 1;
+              c4 = 1;
+              return { value: "ct", done: null };
+            }
+          } else if (1 === tmp5) {
+            if (arg0 === 1) {
+              c4 = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              c4 = 3;
+              const obj1 = { value: null, done: true };
+              obj1[0] = arg1;
+              return obj1;
+            } else {
+              c3 = 2;
+              c4 = 1;
+              const obj2 = { value: null, done: false };
+              obj2[0] = c4;
+              return obj2;
+            }
+          } else if (arg0 === 1) {
+            c4 = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            c4 = 3;
+            const obj3 = { value: null, done: true };
+            obj3[0] = arg1;
+            return obj3;
+          } else {
+            cachedMisspelling = arg1;
+            if (null == cachedMisspelling) {
+              const obj4 = { misspelledWord: "", corrections: null };
+              obj4[1] = [];
+              c4 = 3;
+              const obj5 = { value: null, done: true };
+              obj5[0] = obj4;
+              return obj5;
+            } else {
+              cachedMisspelling2 = cachedMisspelling.getCachedMisspelling();
+              obj = { misspelledWord: null, corrections: null };
+              obj[0] = cachedMisspelling2.misspelledWord;
+              const corrections = cachedMisspelling2.corrections;
+              obj[1] = corrections.slice(0, num11);
+              c4 = 3;
+              const obj6 = { value: null, done: true };
+              obj6[0] = obj;
+              return obj6;
+            }
+          }
+        } catch (tmp12) {
+          c4 = tmp;
+          throw tmp12;
+        }
+      }
+    })();
+    iter.next();
+    return iter;
+  });
+  const _getCachedMisspelling = tmp;
+  const apply = tmp.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
+}
+function _replaceWithCorrection() {
+  const self = this;
+  const tmp = callback((arg0) => {
+    let closure_0 = arg0;
+    let c2 = 0;
+    let c3 = 0;
+    return (function*(arg0) {
+      if (c3 === 2) {
+        c3 = 3;
+        HermesBuiltin.throwTypeError();
+      } else if (tmp4 === 3) {
+        if (arg0 === 1) {
+          throw arg1;
+        } else if (arg0 === 2) {
+          let obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
+        } else {
+          return { value: "HermesInternal", done: null };
+        }
+      } else {
+        try {
+          c3 = 2;
+          if (0 === c2) {
+            if (arg0 === 1) {
+              c3 = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              c3 = 3;
+              obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            } else {
+              let closure_1 = tmp2;
+              closure_1 = undefined;
+              c2 = 1;
+              c3 = 1;
+              const obj1 = { value: null, done: false };
+              obj1[0] = outer1_4;
+              return obj1;
+            }
+          } else if (arg0 === 1) {
+            c3 = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            c3 = 3;
+            obj = { value: null, done: true };
+            obj[0] = arg1;
+            return obj;
+          } else {
+            closure_1 = arg1;
+            if (null != closure_1) {
+              closure_1.replaceMisspelling(closure_0);
+            }
+            c3 = 3;
+            return { value: "HermesInternal", done: null };
+          }
+        } catch (tmp14) {
+          c3 = tmp;
+          throw tmp14;
+        }
+      }
+    })();
+  });
+  const _replaceWithCorrection = tmp;
+  const apply = tmp.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
+}
+function _setAppLocale() {
+  const self = this;
+  const tmp = callback((arg0) => {
+    let closure_0 = arg0;
+    let c2 = 0;
+    let c3 = 0;
+    return (function*(arg0) {
+      if (c3 === 2) {
+        c3 = 3;
+        HermesBuiltin.throwTypeError();
+      } else if (tmp4 === 3) {
+        if (arg0 === 1) {
+          throw arg1;
+        } else if (arg0 === 2) {
+          let obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
+        } else {
+          return { value: "HermesInternal", done: null };
+        }
+      } else {
+        try {
+          c3 = 2;
+          if (0 === c2) {
+            if (arg0 === 1) {
+              c3 = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              c3 = 3;
+              obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            } else {
+              let appLocale = tmp2;
+              appLocale = undefined;
+              c2 = 1;
+              c3 = 1;
+              const obj1 = { value: null, done: false };
+              obj1[0] = outer1_4;
+              return obj1;
+            }
+          } else if (arg0 === 1) {
+            c3 = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            c3 = 3;
+            obj = { value: null, done: true };
+            obj[0] = arg1;
+            return obj;
+          } else {
+            appLocale = arg1;
+            if (null != appLocale) {
+              appLocale.setAppLocale(closure_0);
+            }
+            c3 = 3;
+            return { value: "HermesInternal", done: null };
+          }
+        } catch (tmp14) {
+          c3 = tmp;
+          throw tmp14;
+        }
+      }
+    })();
+  });
+  const _setAppLocale = tmp;
+  const apply = tmp.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
+}
+set = set.isDesktop();
+if (set) {
+  const importDefaultResult = require("set");
+  let spellCheck;
+  if (importDefaultResult != null) {
+    spellCheck = importDefaultResult.spellCheck;
+  }
+  set = null != spellCheck;
+}
+let installResult = null;
+if (set) {
+  installResult = require("normalizeLocale").install();
+  let obj2 = require("normalizeLocale");
+}
+let c4 = installResult;
 function isSupported() {
-  let isDesktopResult = require(477) /* set */.isDesktop();
+  let isDesktopResult = require(500) /* set */.isDesktop();
   if (isDesktopResult) {
-    isDesktopResult = isElectronBuiltInSpellcheckerSupported();
+    const tmp4 = importDefault(3800);
+    let spellCheck;
+    if (tmp4 != null) {
+      spellCheck = tmp4.spellCheck;
+    }
+    isDesktopResult = null != spellCheck;
   }
   return isDesktopResult;
 }
-async function _setEnabled(arg0, arg1) {
-  const tmp = yield outer2_4;
-  if (null != tmp) {
-    tmp.enabled = arg0;
-  }
-}
-async function _setLearnedWords(arg0, arg1) {
-  const obj = yield outer2_4;
-  if (null != obj) {
-    obj.setLearnedWords(arg0);
-  }
-}
-async function _isMisspelled(arg0, arg1) {
-  let iter = (function*(arg0, flag) {
-    if (flag === undefined) {
-      flag = false;
-    }
-    yield undefined;
-    const obj = yield outer2_4;
-    let isMisspelledResult = null != obj;
-    if (isMisspelledResult) {
-      isMisspelledResult = obj.isMisspelled(arg0, flag);
-    }
-    return isMisspelledResult;
-  })();
-  iter.next();
-  return iter;
-}
-async function _getCorrections(arg0, arg1) {
-  let iter = (function*(arg0) {
-    let flag = arg1;
-    let num = arg2;
-    if (flag === undefined) {
-      flag = false;
-    }
-    if (num === undefined) {
-      num = 5;
-    }
-    yield undefined;
-    const obj = yield outer2_4;
-    if (null == obj) {
-      let items = [];
-    } else {
-      const correctionsForMisspelling = obj.getCorrectionsForMisspelling(arg0, flag);
-      items = correctionsForMisspelling.slice(0, num);
-    }
-    return items;
-  })();
-  iter.next();
-  return iter;
-}
-async function _getCachedMisspelling() {
-  let iter = (function*() {
-    let corrections;
-    let num = arg0;
-    if (num === undefined) {
-      num = 5;
-    }
-    yield undefined;
-    let obj = yield outer2_4;
-    if (null == obj) {
-      obj = { misspelledWord: "", corrections: [] };
-      return obj;
-    } else {
-      const cachedMisspelling = obj.getCachedMisspelling();
-      obj = {};
-      ({ misspelledWord: obj2.misspelledWord, corrections } = cachedMisspelling);
-      obj.corrections = corrections.slice(0, num);
-      return obj;
-    }
-  })();
-  iter.next();
-  return iter;
-}
-async function _replaceWithCorrection(arg0, arg1) {
-  const obj = yield outer2_4;
-  if (null != obj) {
-    obj.replaceMisspelling(arg0);
-  }
-}
-async function _setAppLocale(arg0, arg1) {
-  const obj = yield outer2_4;
-  if (null != obj) {
-    obj.setAppLocale(arg0);
-  }
-}
-let installResult = null;
-if (isSupported()) {
-  installResult = require("normalizeLocale").install();
-  let obj = require("normalizeLocale");
-}
-const result = require("set").fileFinishedImporting("utils/SpellcheckUtils.tsx");
+const result = set.fileFinishedImporting("utils/SpellcheckUtils.tsx");
 
 export { isSupported };
 export const setEnabled = function setEnabled() {
-  return _setEnabled(...arguments);
+  const self = this;
+  const apply = _setEnabled.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
 };
-export const setLearnedWords = function setLearnedWords(arg0) {
-  return _setLearnedWords(...arguments);
+export const setLearnedWords = function setLearnedWords() {
+  const self = this;
+  const apply = _setLearnedWords.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
 };
-export const isMisspelled = function isMisspelled(arg0, flag) {
-  return _isMisspelled(...arguments);
+export const isMisspelled = function isMisspelled() {
+  const self = this;
+  const apply = _isMisspelled.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
 };
 export const getCorrections = function getCorrections() {
-  return _getCorrections(...arguments);
+  const self = this;
+  const apply = _getCorrections.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
 };
 export const getCachedMisspelling = function getCachedMisspelling() {
-  return _getCachedMisspelling(...arguments);
+  const self = this;
+  const apply = _getCachedMisspelling.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
 };
 export const replaceWithCorrection = function replaceWithCorrection() {
-  return _replaceWithCorrection(...arguments);
+  const self = this;
+  const apply = _replaceWithCorrection.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
 };
 export const setAppLocale = function setAppLocale() {
-  return _setAppLocale(...arguments);
+  const self = this;
+  const apply = _setAppLocale.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
 };
 export const addResultListener = function addResultListener(arg0) {
-  if (isElectronBuiltInSpellcheckerSupported()) {
-    const spellCheck = importDefault(3776).spellCheck;
-    let fn = spellCheck.on("spellcheck-result", arg0);
-    if (null == fn) {
-      fn = () => {
+  const tmp3 = importDefault(3800);
+  let spellCheck;
+  if (tmp3 != null) {
+    spellCheck = tmp3.spellCheck;
+  }
+  if (null != spellCheck) {
+    spellCheck = importDefault(3800).spellCheck;
+    let fn2 = spellCheck.on("spellcheck-result", arg0);
+    if (fn2 == null) {
+      fn2 = () => {
 
       };
     }
-    return fn;
+    let fn = fn2;
   } else {
-    return () => {
+    fn = () => {
 
     };
   }
+  return fn;
 };

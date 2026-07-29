@@ -1,30 +1,30 @@
-// Module ID: 13928
-// Function ID: 106490
+// Module ID: 13949
+// Function ID: 13950
 // Name: FamilyCenterLinkRow
-// Dependencies: [31, 27, 5776, 33, 4165, 13929, 13930, 2]
+// Dependencies: [19, 17, 5794, 21, 4189, 13950, 13951, 2]
 // Exports: default
 
-// Module 13928 (FamilyCenterLinkRow)
-import "result";
+// Module 13949 (FamilyCenterLinkRow)
+import "noop";
 import { View } from "get ActivityIndicator";
 import { UserLinkStatus } from "items";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_4;
-let closure_5;
-({ jsx: closure_4, jsxs: closure_5 } = jsxProd);
-let closure_6 = _createForOfIteratorHelperLoose.createStyles({ actionContainer: { flexDirection: "row", alignItems: "center", justifyContent: "flex-end", height: "100%" } });
+let c4;
+let c5;
+({ jsx: c4, jsxs: c5 } = jsxProd);
+let closure_6 = createCacheKey.createStyles({ actionContainer: { flexDirection: "row", alignItems: "center", justifyContent: "flex-end", height: "100%" } });
 const result = require("items").fileFinishedImporting("modules/parent_tools/native/FamilyCenterLinkRow.tsx");
 
 export default function FamilyCenterLinkRow(children) {
   const otherUser = children.otherUser;
-  let obj = { userId: otherUser.id };
+  let obj = { userId: otherUser.id, children: null };
   const tmp = callback3();
   obj = { otherUser, status: UserLinkStatus.PENDING };
-  const items = [callback(importDefault(13930), obj), ];
+  const items = [callback(importDefault(13951), obj), ];
   obj = { style: tmp.actionContainer, children: children.actions };
   items[1] = callback(View, obj);
-  obj.children = items;
-  return callback2(importDefault(13929), obj);
+  obj[1] = items;
+  return callback2(importDefault(13950), obj);
 };

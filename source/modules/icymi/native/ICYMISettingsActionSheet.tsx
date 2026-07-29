@@ -1,118 +1,170 @@
-// Module ID: 15291
-// Function ID: 116233
+// Module ID: 15324
+// Function ID: 15325
 // Name: ICYMISettingsActionSheet
-// Dependencies: [5, 31, 27, 4177, 8158, 8146, 653, 33, 4165, 689, 566, 8162, 5533, 5536, 1212, 5537, 8161, 5198, 6138, 669, 21, 5104, 4133, 8160, 4372, 15292, 1935, 15301, 2]
+// Dependencies: [5, 19, 17, 4201, 8182, 8170, 676, 21, 4189, 712, 589, 8186, 5551, 5554, 1236, 5555, 8185, 5220, 6156, 692, 11, 5126, 4157, 8184, 4395, 15325, 1959, 15334, 2]
 // Exports: default
 
-// Module 15291 (ICYMISettingsActionSheet)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import "result";
-import { View } from "ICYMI_CUSTOM_SCORES_MODAL_KEY";
-import closure_5 from "_isNativeReflectConstruct";
-import closure_6 from "_isNativeReflectConstruct";
-import closure_7 from "_isNativeReflectConstruct";
+// Module 15324 (ICYMISettingsActionSheet)
+import filterStaffGuild from "filterStaffGuild";
+import "set";
+import { View } from "TableRowInner";
+import generateOldThreadCutoff from "generateOldThreadCutoff";
+import initialize from "initialize";
+import closure_7 from "filterStaffGuild";
 import ME from "ME";
-import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import jsxProd from "ack";
+import createCacheKey from "createCacheKey";
 
-let closure_10;
-let closure_11;
+let c10;
+let c9;
 let closure_12;
-let closure_8;
-let closure_9;
+let metroImportAll;
+let unpackModuleId;
 const require = arg1;
-({ AnalyticsObjectTypes: closure_8, AnalyticsObjects: closure_9 } = ME);
-({ jsx: closure_10, Fragment: closure_11, jsxs: closure_12 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { bottomPadding: require("_createForOfIteratorHelperLoose").space.PX_16, width: "100%" };
-_createForOfIteratorHelperLoose.padding = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+({ AnalyticsObjectTypes: metroImportAll, AnalyticsObjects: c9 } = ME);
+({ jsx: c10, Fragment: unpackModuleId, jsxs: closure_12 } = jsxProd);
+createCacheKey = { padding: null };
+createCacheKey = { bottomPadding: require("Themes").space.PX_16, width: "100%" };
+createCacheKey[0] = createCacheKey;
+createCacheKey = createCacheKey.createStyles(createCacheKey);
 const result = require("get ActivityIndicator").fileFinishedImporting("modules/icymi/native/ICYMISettingsActionSheet.tsx");
 
 export default function ICYMISettingsActionSheet() {
-  let obj = stateFromStoresObject(566);
-  const items = [closure_6];
-  stateFromStoresObject = obj.useStateFromStoresObject(items, () => outer1_6.getState());
-  const ICYMIStaffDebuggingUtilityExperiment = stateFromStoresObject(8162).ICYMIStaffDebuggingUtilityExperiment;
-  obj = { showGradient: true, startExpanded: true };
-  obj = {};
-  const intl = stateFromStoresObject(1212).intl;
-  obj.title = intl.string(stateFromStoresObject(1212).t["7Si8Ul"]);
-  obj.hasIcons = false;
+  let obj = stateFromStoresObject(589);
+  const items = [initialize];
+  stateFromStoresObject = obj.useStateFromStoresObject(items, () => state.getState());
+  const ICYMIStaffDebuggingUtilityExperiment = stateFromStoresObject(8186).ICYMIStaffDebuggingUtilityExperiment;
+  obj = { title: null, hasIcons: false, children: null };
+  const intl = stateFromStoresObject(1236).intl;
+  obj[0] = intl.string(stateFromStoresObject(1236).t["7Si8Ul"]);
   let tmp5Result = null;
   if (ICYMIStaffDebuggingUtilityExperiment.useConfig({ location: "settings action sheet" }).enabled) {
-    const obj1 = {};
-    let obj2 = {};
-    const intl2 = stateFromStoresObject(1212).intl;
-    obj2.label = intl2.string(stateFromStoresObject(1212).t["3wDyfQ"]);
-    const filterStaffContent = stateFromStoresObject.filterStaffContent;
-    obj2.value = null != filterStaffContent && filterStaffContent;
-    obj2.onValueChange = function onValueChange() {
+    obj = { label: null, value: null, onValueChange: null };
+    const intl2 = tmp(1236).intl;
+    obj[0] = intl2.string(tmp(1236).t["3wDyfQ"]);
+    let flag = stateFromStoresObject.filterStaffContent;
+    if (flag == null) {
+      flag = false;
+    }
+    let obj1 = { children: null };
+    obj[1] = flag;
+    obj[2] = function onValueChange() {
       let obj = outer1_1(outer1_2[16]);
       obj = {};
       const merged = Object.assign(stateFromStoresObject);
-      obj["filterStaffContent"] = !stateFromStoresObject.filterStaffContent;
+      obj.filterStaffContent = !stateFromStoresObject.filterStaffContent;
       obj.setFilters(obj);
       const dehydrated = outer1_1(outer1_2[16]).fetchDehydrated();
     };
-    const items1 = [callback2(stateFromStoresObject(5537).TableSwitchRow, obj2), , ];
-    let obj3 = {
-      label: "Clear read states",
-      onPress() {
-          const dehydratedItems = outer1_7.getDehydratedItems();
-          const item = dehydratedItems.forEach((type) => {
-            let tmp = type.type === stateFromStoresObject(outer2_2[18]).ICYMIItemTypes.MESSAGE;
-            if (tmp) {
-              tmp = type.data.channel_type === stateFromStoresObject(outer2_2[19]).ChannelTypes.GUILD_ANNOUNCEMENT;
-            }
-            if (tmp) {
-              let obj = outer2_1(outer2_2[20]);
-              tmp = obj.compare(outer2_5.ackMessageId(type.data.channel_id), type.data.message_id) >= 0;
-            }
-            if (tmp) {
-              const obj2 = stateFromStoresObject(outer2_2[21]);
-              const channel_id = type.data.channel_id;
-              obj = { object: outer2_9.ACK_GRAVITY_CLEAR_READ_STATES_BUTTON, objectType: outer2_8.ACK_SEMI_AUTOMATIC };
-              obj2.ack(channel_id, obj, true, true, outer2_1(outer2_2[20]).atPreviousMillisecond(type.data.message_id));
-              const obj4 = outer2_1(outer2_2[20]);
-            }
-          });
-          outer1_1(outer1_2[16]).clearReadStates();
-          let obj = outer1_1(outer1_2[16]);
-          outer1_1(outer1_2[22]).hideActionSheet();
+    const items1 = [callback2(tmp(5555).TableSwitchRow, obj), , ];
+    let obj2 = { label: "Clear read states", onPress: null };
+    obj2[1] = function onPress() {
+      dehydratedItems = dehydratedItems.getDehydratedItems();
+      const item = dehydratedItems.forEach((type) => {
+        let tmp3 = type.type === callback(table[18]).ICYMIItemTypes.MESSAGE;
+        if (tmp3) {
+          tmp3 = type.data.channel_type === tmp(tmp2[19]).ChannelTypes.GUILD_ANNOUNCEMENT;
         }
+        if (tmp3) {
+          let obj = callback2(tmp2[20]);
+          tmp3 = obj.compare(generateOldThreadCutoff.ackMessageId(type.data.channel_id), type.data.message_id) >= 0;
+        }
+        if (tmp3) {
+          const tmpResult = tmp(tmp2[21]);
+          const channel_id = type.data.channel_id;
+          obj = { object: null, objectType: null };
+          obj[0] = constants2.ACK_GRAVITY_CLEAR_READ_STATES_BUTTON;
+          obj[1] = constants.ACK_SEMI_AUTOMATIC;
+          tmpResult.ack(channel_id, obj, true, true, callback2(tmp2[20]).atPreviousMillisecond(type.data.message_id));
+          const obj4 = callback2(tmp2[20]);
+        }
+      });
+      callback(paths[16]).clearReadStates();
+      let obj = callback(paths[16]);
+      callback(paths[22]).hideActionSheet();
     };
-    items1[1] = callback2(stateFromStoresObject(5198).TableRow, obj3);
-    let obj4 = { label: "Regenerate feed and clear read states" };
-    // CreateGeneratorClosureLongIndex (0x67)
-    obj4.onPress = callback("Regenerate feed and clear read states");
-    items1[2] = callback2(stateFromStoresObject(5198).TableRow, obj4);
-    obj1.children = items1;
-    tmp5Result = closure_12(closure_11, obj1);
-    const tmp5 = closure_12;
-    const tmp6 = closure_11;
-    const tmp7 = callback2;
+    items1[1] = callback2(tmp(5220).TableRow, obj2);
+    let obj3 = { label: "Regenerate feed and clear read states", onPress: null };
+    obj3[1] = callback(function*() {
+      if (dependencyMap === 2) {
+        dependencyMap = 3;
+        HermesBuiltin.throwTypeError();
+      } else if (tmp3 === 3) {
+        if (arg0 === 1) {
+          throw arg1;
+        } else if (arg0 === 2) {
+          let obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
+        } else {
+          return { value: "HermesInternal", done: null };
+        }
+      } else {
+        try {
+          dependencyMap = 2;
+          if (0 === v0) {
+            if (arg0 === 1) {
+              dependencyMap = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              dependencyMap = 3;
+              obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            } else {
+              let closure_0 = tmp4;
+              let obj2 = outer1_0(8184);
+              v0 = 1;
+              dependencyMap = 1;
+              const obj1 = { value: null, done: false };
+              obj1[0] = obj2.regenerateFeedAndClearReadStates(outer1_9.ACK_GRAVITY_REGENERATE_FEED_AND_CLEAR_READ_STATES_BUTTON);
+              return obj1;
+            }
+          } else if (arg0 === 1) {
+            dependencyMap = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            dependencyMap = 3;
+            obj2 = { value: null, done: true };
+            obj2[0] = arg1;
+            return obj2;
+          } else {
+            obj = v0(4157);
+            obj.hideActionSheet();
+            dependencyMap = 3;
+            return { value: "HermesInternal", done: null };
+          }
+        } catch (tmp12) {
+          dependencyMap = tmp;
+          throw tmp12;
+        }
+      }
+    });
+    items1[2] = callback2(tmp(5220).TableRow, obj3);
+    obj1[0] = items1;
+    tmp5Result = tmp5(closure_11, obj1);
+    const tmp7 = closure_11;
   }
+  let obj4 = { showGradient: true, startExpanded: true, children: null };
   const items2 = [tmp5Result, ];
-  const obj5 = {};
-  const intl3 = stateFromStoresObject(1212).intl;
-  obj5.label = intl3.string(stateFromStoresObject(1212).t.Eorjmy);
-  obj5.onPress = function onPress() {
-    let obj = outer1_1(outer1_2[16]);
-    obj.itemInteracted("icymi_settings_action_sheet", "icymi_settings_action_sheet", "custom_scoring_button");
-    outer1_1(outer1_2[16]).feedPageActioned({ actionParameters: { actionGestureType: "press", actionTargetElement: "tune_settings_button", actionIntentType: "open", actionDestinationType: null } });
-    const obj2 = outer1_1(outer1_2[16]);
-    const obj3 = outer1_1(outer1_2[24]);
-    obj = { presentation: "modal" };
-    obj3.pushLazy(stateFromStoresObject(outer1_2[26])(outer1_2[25], outer1_2.paths), {}, stateFromStoresObject(outer1_2[27]).ICYMI_CUSTOM_SCORES_MODAL_KEY, obj);
-    const tmp3 = stateFromStoresObject(outer1_2[26])(outer1_2[25], outer1_2.paths);
-    outer1_1(outer1_2[22]).hideActionSheet();
+  const obj5 = { label: null, onPress: null };
+  const intl3 = tmp(1236).intl;
+  obj5[0] = intl3.string(stateFromStoresObject(1236).t.Eorjmy);
+  obj5[1] = function onPress() {
+    callback(paths[16]).itemInteracted("icymi_settings_action_sheet", "icymi_settings_action_sheet", "custom_scoring_button");
+    const obj = callback(paths[16]);
+    callback(paths[16]).feedPageActioned({ actionParameters: { actionGestureType: "press", actionTargetElement: "tune_settings_button", actionIntentType: "open", actionDestinationType: null } });
+    const obj2 = callback(paths[16]);
+    const obj3 = callback(paths[24]);
+    obj3.pushLazy(stateFromStoresObject(paths[26])(paths[25], paths.paths), {}, stateFromStoresObject(paths[27]).ICYMI_CUSTOM_SCORES_MODAL_KEY, { presentation: "modal" });
+    const tmp3 = stateFromStoresObject(paths[26])(paths[25], paths.paths);
+    callback(paths[22]).hideActionSheet();
   };
-  items2[1] = callback2(stateFromStoresObject(5198).TableRow, obj5);
-  obj.children = items2;
-  const items3 = [closure_12(stateFromStoresObject(5536).TableRowGroup, obj), ];
-  const tmp2 = _createForOfIteratorHelperLoose();
-  items3[1] = callback2(View, { style: _createForOfIteratorHelperLoose().padding });
-  obj.children = items3;
-  return closure_12(stateFromStoresObject(5533).ActionSheet, obj);
+  items2[1] = callback2(stateFromStoresObject(5220).TableRow, obj5);
+  obj[2] = items2;
+  const items3 = [closure_12(stateFromStoresObject(5554).TableRowGroup, obj), ];
+  const tmp4 = createCacheKey();
+  items3[1] = callback2(View, { style: createCacheKey().padding });
+  obj4[2] = items3;
+  return closure_12(stateFromStoresObject(5551).ActionSheet, obj4);
 };

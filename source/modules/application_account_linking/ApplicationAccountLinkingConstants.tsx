@@ -1,9 +1,9 @@
-// Module ID: 5501
-// Function ID: 46863
+// Module ID: 5519
+// Function ID: 5520
 // Name: AuthorizeFlow
 // Dependencies: [2]
 
-// Module 5501 (AuthorizeFlow)
+// Module 5519 (AuthorizeFlow)
 const date = new Date("2026-07-10Z-07:00");
 const date1 = new Date("2026-09-22Z-07:00");
 const result = require("set").fileFinishedImporting("modules/application_account_linking/ApplicationAccountLinkingConstants.tsx");

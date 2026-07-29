@@ -1,9 +1,9 @@
-// Module ID: 1191
-// Function ID: 13661
+// Module ID: 1215
+// Function ID: 1216
 // Name: UnitType
-// Dependencies: [1192, 2]
+// Dependencies: [1216, 2]
 
-// Module 1191 (UnitType)
+// Module 1215 (UnitType)
 const obj = { User: 1, [1]: "User", Installation: 2, [2]: "Installation", Guild: 3, [3]: "Guild" };
 const result = require("set").fileFinishedImporting("../discord_common/js/packages/apex/ApexTypes.tsx");
 

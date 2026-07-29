@@ -1,39 +1,17 @@
-// Module ID: 16403
-// Function ID: 127573
-// Name: areTypesInSameSection
-// Dependencies: [1352, 653, 11487, 5106, 2]
-// Exports: getDnDUpdates, getDropData
+// Module ID: 16438
+// Function ID: 16439
+// Name: getFirstChannelOfType
+// Dependencies: [1376, 676, 11511, 5128, 2]
+// Exports: areTypesInSameSection, getDnDUpdates, getDropData
 
-// Module 16403 (areTypesInSameSection)
-import _callSuper from "_callSuper";
+// Module 16438 (getFirstChannelOfType)
+import createChannelRecord from "createChannelRecord";
 import { ChannelTypes } from "ME";
 
-let closure_2;
-let closure_3;
-function areTypesInSameSection(type, type2) {
-  let tmp = null != type && null != type2;
-  if (tmp) {
-    let tmp2 = type === type2;
-    if (!tmp2) {
-      let tmp4 = callback(type);
-      if (tmp4) {
-        tmp4 = callback(type2);
-      }
-      tmp2 = tmp4;
-    }
-    if (!tmp2) {
-      let tmp7 = callback2(type);
-      if (tmp7) {
-        tmp7 = callback2(type2);
-      }
-      tmp2 = tmp7;
-    }
-    tmp = tmp2;
-  }
-  return tmp;
-}
-function getFirstChannelOfType(arg0, id, type, arr) {
-  let closure_0 = id;
+let c3;
+let obj1;
+function getFirstChannelOfType(arg0, arg1, arg2, arr) {
+  let closure_0 = arg1;
   let c1 = -1;
   const found = arr.find((channel) => {
     let flag = channel.channel.id === closure_0;
@@ -46,270 +24,549 @@ function getFirstChannelOfType(arg0, id, type, arr) {
   if (c1 < 0) {
     return null;
   } else {
-    let sum = c1;
+    let tmp12 = c1;
     if (c1 >= 0) {
-      if (sum < arr.length) {
-        while (!areTypesInSameSection(arr[sum].channel.type, type)) {
-          sum = sum + arg0;
+      if (tmp12 < arr.length) {
+        while (true) {
+          let type = arr[tmp12].channel.type;
+          let tmp4 = null != type;
+          let tmp5 = tmp12;
+          if (tmp4) {
+            tmp4 = null != arg2;
+          }
+          if (tmp4) {
+            let tmp6 = type === arg2;
+            if (!tmp6) {
+              let tmp7 = callback;
+              let tmp8 = callback(type) && tmp7(arg2);
+              tmp6 = tmp8;
+            }
+            if (!tmp6) {
+              let tmp9 = callback2;
+              let tmp10 = callback2(type) && tmp9(arg2);
+              tmp6 = tmp10;
+            }
+            tmp4 = tmp6;
+          }
+          if (tmp4) {
+            break;
+          } else {
+            let sum = tmp12 + arg0;
+            if (sum >= 0) {
+              tmp12 = sum;
+            }
+          }
         }
-        return arr[sum];
+        return tmp3;
       }
     }
     return null;
   }
 }
-function getChannelPosition(localChannel, substr, arg2) {
-  let flag = arg2;
-  let closure_0 = localChannel;
-  if (arg2 === undefined) {
-    flag = false;
-  }
-  let c2;
-  if (null == localChannel) {
-    return 0;
-  } else {
-    c2 = null;
-    const found = substr.filter((arg0) => {
-      let tmp2 = null != localChannel;
-      if (tmp2) {
-        let tmp3 = flag;
-        if (!flag) {
-          tmp3 = outer1_5(localChannel.type, tmp);
-        }
-        tmp2 = tmp3;
-      }
-      return tmp2;
-    });
-    const found1 = found.find((arg0, arg1) => {
-      let flag = null != localChannel;
-      if (flag) {
-        flag = tmp === localChannel.id;
-      }
-      if (flag) {
-        let closure_2 = arg1;
-        flag = true;
-      }
-      return flag;
-    });
-    return c2;
-  }
-}
-function hoverSameType(id) {
-  return { referenceId: id.id, parentId: id.parent_id };
-}
-({ isGuildSelectableChannelType: closure_2, isGuildVocalChannelType: closure_3 } = _callSuper);
+({ isGuildSelectableChannelType: obj1, isGuildVocalChannelType: c3 } = createChannelRecord);
 const result = require("calculatePositionDeltas").fileFinishedImporting("utils/ChannelSortingUtils.tsx");
 
-export { areTypesInSameSection };
+export const areTypesInSameSection = function areTypesInSameSection(arg0, arg1) {
+  let tmp = null != arg0 && null != arg1;
+  if (tmp) {
+    let tmp2 = arg0 === arg1;
+    if (!tmp2) {
+      tmp2 = callback(arg0) && callback(arg1);
+      const tmp3 = callback;
+      const tmp4 = callback(arg0) && callback(arg1);
+    }
+    if (!tmp2) {
+      tmp2 = callback2(arg0) && callback2(arg1);
+      const tmp5 = callback2;
+      const tmp6 = callback2(arg0) && callback2(arg1);
+    }
+    tmp = tmp2;
+  }
+  return tmp;
+};
 export const getDropData = function getDropData(localChannel, arg1, localChannel2, index, channelList) {
+  let parent_id3;
   if (null != localChannel) {
+    parent_id3 = localChannel2;
     if (null != localChannel2) {
       const GUILD_CATEGORY = ChannelTypes.GUILD_CATEGORY;
       if (localChannel.type === GUILD_CATEGORY) {
         if (index !== arg1) {
           if (index >= arg1) {
-            let tmp32 = null;
+            let tmp47 = null;
             if (index > arg1) {
-              const tmp35 = getChannelPosition(localChannel2, channelList, true);
-              let num13 = 0;
-              if (null != tmp35) {
-                num13 = tmp35;
-              }
-              const tmp39 = getFirstChannelOfType(-1, localChannel2.id, localChannel.type, channelList);
-              let tmp40 = null;
-              if (null != tmp39) {
-                tmp40 = null;
-                if (tmp39.channel.id !== localChannel.id) {
-                  if (null == tmp36) {
-                    let obj = { referenceId: tmp39.channel.id, parentId: null };
-                    let tmp41 = obj;
-                  } else {
-                    tmp41 = null;
+              let c1 = true;
+              let callback;
+              let num17 = 0;
+              if (null != parent_id3) {
+                callback = null;
+                const found = channelList.filter((channel) => {
+                  const type = channel.channel.type;
+                  let tmp2 = null != closure_0;
+                  if (tmp2) {
+                    let tmp3 = c1;
+                    if (!c1) {
+                      const type2 = tmp.type;
+                      let tmp4 = null != type2 && null != type;
+                      if (tmp4) {
+                        let tmp5 = type2 === type;
+                        if (!tmp5) {
+                          tmp5 = _null(type2) && _null(type);
+                          const tmp6 = _null;
+                          const tmp7 = _null(type2) && _null(type);
+                        }
+                        if (!tmp5) {
+                          tmp5 = num11(type2) && num11(type);
+                          const tmp8 = num11;
+                          const tmp9 = num11(type2) && num11(type);
+                        }
+                        tmp4 = tmp5;
+                      }
+                      tmp3 = tmp4;
+                    }
+                    tmp2 = tmp3;
                   }
-                  tmp40 = tmp41;
+                  return tmp2;
+                });
+                const found1 = found.find((arg0, arg1) => {
+                  let flag = null != localChannel2 && tmp === localChannel2.id;
+                  if (flag) {
+                    let closure_2 = arg1;
+                    flag = true;
+                  }
+                  return flag;
+                });
+                num17 = callback;
+              }
+              if (num17 == null) {
+                num17 = 0;
+              }
+              const tmp52 = getFirstChannelOfType(-1, parent_id3.id, localChannel.type, channelList);
+              let tmp53 = null;
+              if (null != tmp52) {
+                tmp53 = null;
+                if (tmp52.channel.id !== localChannel.id) {
+                  if (null == tmp49) {
+                    let obj = { referenceId: null, parentId: null };
+                    obj[0] = tmp52.channel.id;
+                    let tmp54 = obj;
+                  } else {
+                    tmp54 = null;
+                  }
+                  tmp53 = tmp54;
                 }
               }
-              tmp32 = tmp40;
+              tmp47 = tmp53;
             }
           }
         }
-        tmp32 = hoverSameType(localChannel2);
+        obj = { referenceId: null, parentId: null };
+        ({ id: obj13[0], parent_id: parent_id3 } = parent_id3);
+        obj[1] = parent_id3;
+        tmp47 = obj;
       } else {
-        if (areTypesInSameSection(localChannel.type, localChannel2.type)) {
-          let tmp5 = hoverSameType(localChannel2);
+        const type3 = localChannel.type;
+        const type4 = parent_id3.type;
+        let tmp = null != type3 && null != type4;
+        if (tmp) {
+          let tmp2 = type3 === type4;
+          if (!tmp2) {
+            tmp2 = callback(type3) && callback(type4);
+            const tmp3 = callback;
+            const tmp4 = callback(type3) && callback(type4);
+          }
+          if (!tmp2) {
+            tmp2 = callback2(type3) && callback2(type4);
+            const tmp5 = callback2;
+            const tmp6 = callback2(type3) && callback2(type4);
+          }
+          tmp = tmp2;
+        }
+        if (tmp) {
+          ({ id: obj11[0], parent_id: obj11[1] } = parent_id3);
+          let tmp12 = { referenceId: null, parentId: null };
+          const obj1 = { referenceId: null, parentId: null };
         } else if (index < arg1) {
-          if (localChannel2.type !== GUILD_CATEGORY) {
-            const tmp50 = getChannelPosition(localChannel2, channelList, true);
-            let num7 = 0;
-            if (null != tmp50) {
-              num7 = tmp50;
+          if (parent_id3.type !== GUILD_CATEGORY) {
+            c1 = true;
+            let num9 = 0;
+            if (null != parent_id3) {
+              callback = null;
+              const found2 = channelList.filter((channel) => {
+                const type = channel.channel.type;
+                let tmp2 = null != closure_0;
+                if (tmp2) {
+                  let tmp3 = c1;
+                  if (!c1) {
+                    const type2 = tmp.type;
+                    let tmp4 = null != type2 && null != type;
+                    if (tmp4) {
+                      let tmp5 = type2 === type;
+                      if (!tmp5) {
+                        tmp5 = _null(type2) && _null(type);
+                        const tmp6 = _null;
+                        const tmp7 = _null(type2) && _null(type);
+                      }
+                      if (!tmp5) {
+                        tmp5 = num11(type2) && num11(type);
+                        const tmp8 = num11;
+                        const tmp9 = num11(type2) && num11(type);
+                      }
+                      tmp4 = tmp5;
+                    }
+                    tmp3 = tmp4;
+                  }
+                  tmp2 = tmp3;
+                }
+                return tmp2;
+              });
+              const found3 = found2.find((arg0, arg1) => {
+                let flag = null != localChannel2 && tmp === localChannel2.id;
+                if (flag) {
+                  let closure_2 = arg1;
+                  flag = true;
+                }
+                return flag;
+              });
+              num9 = callback;
             }
-            const tmp17 = getFirstChannelOfType(1, localChannel2.id, localChannel.type, channelList);
-            if (null == channelList[num7 - 1]) {
+            if (num9 == null) {
+              num9 = 0;
+            }
+            const tmp30 = getFirstChannelOfType(1, parent_id3.id, localChannel.type, channelList);
+            if (null == channelList[num9 - 1]) {
               if (!localChannel.isGuildVocal()) {
-                obj = {};
                 let id = null;
-                if (null != tmp17) {
-                  id = tmp17.channel.id;
+                if (null != tmp30) {
+                  id = tmp30.channel.id;
                 }
-                obj.referenceId = id;
-                obj.parentId = null;
+                let obj2 = { referenceId: null, parentId: null };
+                obj2[0] = id;
               }
             }
-            let tmp20 = null;
+            let tmp33 = null;
             if (callback(localChannel.type)) {
-              tmp20 = null;
-              if (null != tmp17) {
-                if (callback(tmp14.channel.type)) {
-                  const obj1 = { referenceId: tmp17.channel.id, parentId: localChannel2.parent_id };
-                  tmp20 = obj1;
+              tmp33 = null;
+              if (null != tmp30) {
+                if (tmp32(tmp27.channel.type)) {
+                  const obj3 = { referenceId: null, parentId: null };
+                  obj3[0] = tmp30.channel.id;
+                  obj3[1] = parent_id3.parent_id;
+                  tmp33 = obj3;
                 } else {
-                  const channel5 = tmp14.channel;
-                  tmp20 = null;
+                  const channel5 = tmp27.channel;
+                  tmp33 = null;
                 }
               }
             }
-            obj = tmp20;
+            obj2 = tmp33;
+            tmp32 = callback;
           }
-          const tmp23 = getChannelPosition(localChannel2, channelList, true);
-          let num10 = 0;
-          if (null != tmp23) {
-            num10 = tmp23;
+          c1 = true;
+          let num13 = 0;
+          if (null != parent_id3) {
+            callback = null;
+            const found4 = channelList.filter((channel) => {
+              const type = channel.channel.type;
+              let tmp2 = null != closure_0;
+              if (tmp2) {
+                let tmp3 = c1;
+                if (!c1) {
+                  const type2 = tmp.type;
+                  let tmp4 = null != type2 && null != type;
+                  if (tmp4) {
+                    let tmp5 = type2 === type;
+                    if (!tmp5) {
+                      tmp5 = _null(type2) && _null(type);
+                      const tmp6 = _null;
+                      const tmp7 = _null(type2) && _null(type);
+                    }
+                    if (!tmp5) {
+                      tmp5 = num11(type2) && num11(type);
+                      const tmp8 = num11;
+                      const tmp9 = num11(type2) && num11(type);
+                    }
+                    tmp4 = tmp5;
+                  }
+                  tmp3 = tmp4;
+                }
+                tmp2 = tmp3;
+              }
+              return tmp2;
+            });
+            const found5 = found4.find((arg0, arg1) => {
+              let flag = null != localChannel2 && tmp === localChannel2.id;
+              if (flag) {
+                let closure_2 = arg1;
+                flag = true;
+              }
+              return flag;
+            });
+            num13 = callback;
           }
-          let parent_id2 = channelList[num10 - 1];
-          let id2 = getFirstChannelOfType(1, localChannel2.id, localChannel.type, channelList);
+          if (num13 == null) {
+            num13 = 0;
+          }
+          let parent_id2 = channelList[num13 - 1];
+          let id2 = getFirstChannelOfType(1, parent_id3.id, localChannel.type, channelList);
           if (null == parent_id2) {
-            let obj2 = { referenceId: null, parentId: null };
+            let obj4 = { referenceId: null, parentId: null };
           } else {
-            obj2 = null;
+            obj4 = null;
             if (null != id2) {
-              if (!areTypesInSameSection(parent_id2.channel.type, localChannel.type)) {
+              const type = parent_id2.channel.type;
+              const type2 = localChannel.type;
+              let tmp37 = null != type && null != type2;
+              if (tmp37) {
+                let tmp38 = type === type2;
+                if (!tmp38) {
+                  tmp38 = callback(type) && callback(type2);
+                  const tmp39 = callback;
+                  const tmp40 = callback(type) && callback(type2);
+                }
+                if (!tmp38) {
+                  tmp38 = callback2(type) && callback2(type2);
+                  const tmp41 = callback2;
+                  const tmp42 = callback2(type) && callback2(type2);
+                }
+                tmp37 = tmp38;
+              }
+              if (!tmp37) {
                 if (!localChannel.isGuildVocal()) {
                   const channel6 = parent_id2.channel;
-                  obj2 = null;
+                  obj4 = null;
                   if (channel6.isCategory()) {
-                    const obj3 = { referenceId: id2.channel.id, parentId: parent_id2.channel.id };
-                    obj2 = obj3;
+                    const obj5 = { referenceId: null, parentId: null };
+                    obj5[0] = id2.channel.id;
+                    obj5[1] = parent_id2.channel.id;
+                    obj4 = obj5;
                   }
                 }
               }
             }
-            const obj4 = {};
+            const obj6 = { referenceId: null, parentId: null };
             id2 = id2.channel.id;
-            obj4.referenceId = id2;
+            obj6[0] = id2;
             parent_id2 = parent_id2.channel.parent_id;
-            obj4.parentId = parent_id2;
-            obj2 = obj4;
+            obj6[1] = parent_id2;
+            obj4 = obj6;
           }
-        } else if (localChannel2.type === GUILD_CATEGORY) {
-          const tmp8 = getChannelPosition(localChannel2, channelList, true);
-          let num4 = 0;
-          if (null != tmp8) {
-            num4 = tmp8;
+        } else if (parent_id3.type === GUILD_CATEGORY) {
+          c1 = true;
+          let num5 = 0;
+          if (null != parent_id3) {
+            callback = null;
+            const found6 = channelList.filter((channel) => {
+              const type = channel.channel.type;
+              let tmp2 = null != closure_0;
+              if (tmp2) {
+                let tmp3 = c1;
+                if (!c1) {
+                  const type2 = tmp.type;
+                  let tmp4 = null != type2 && null != type;
+                  if (tmp4) {
+                    let tmp5 = type2 === type;
+                    if (!tmp5) {
+                      tmp5 = _null(type2) && _null(type);
+                      const tmp6 = _null;
+                      const tmp7 = _null(type2) && _null(type);
+                    }
+                    if (!tmp5) {
+                      tmp5 = num11(type2) && num11(type);
+                      const tmp8 = num11;
+                      const tmp9 = num11(type2) && num11(type);
+                    }
+                    tmp4 = tmp5;
+                  }
+                  tmp3 = tmp4;
+                }
+                tmp2 = tmp3;
+              }
+              return tmp2;
+            });
+            const found7 = found6.find((arg0, arg1) => {
+              let flag = null != localChannel2 && tmp === localChannel2.id;
+              if (flag) {
+                let closure_2 = arg1;
+                flag = true;
+              }
+              return flag;
+            });
+            num5 = callback;
           }
-          let parent_id = channelList[num4 + 1];
-          id = getFirstChannelOfType(-1, localChannel2.id, localChannel.type, channelList);
-          let tmp11 = null;
+          if (num5 == null) {
+            num5 = 0;
+          }
+          let parent_id = channelList[num5 + 1];
+          id = getFirstChannelOfType(-1, parent_id3.id, localChannel.type, channelList);
+          let tmp17 = null;
           if (null != id) {
             if (null == parent_id) {
-              const obj5 = { referenceId: id.channel.id };
-              id = localChannel2.id;
-              obj5.parentId = id;
-              tmp11 = obj5;
-            } else if (!areTypesInSameSection(parent_id.channel.type, localChannel.type)) {
-              if (!callback(localChannel.type)) {
-                const channel4 = parent_id.channel;
-                tmp11 = null;
-                if (channel4.isCategory()) {
-                  const obj6 = { referenceId: id.channel.id, parentId: localChannel2.id };
-                  tmp11 = obj6;
+              const obj7 = { referenceId: null, parentId: null };
+              obj7[0] = id.channel.id;
+              id = parent_id3.id;
+              obj7[1] = id;
+              tmp17 = obj7;
+            } else {
+              const type5 = parent_id.channel.type;
+              const type6 = localChannel.type;
+              let tmp18 = null != type5 && null != type6;
+              if (tmp18) {
+                let tmp19 = type5 === type6;
+                if (!tmp19) {
+                  tmp19 = callback(type5) && callback(type6);
+                  const tmp20 = callback;
+                  const tmp21 = callback(type5) && callback(type6);
                 }
-              } else {
-                const channel3 = parent_id.channel;
+                if (!tmp19) {
+                  tmp19 = callback2(type5) && callback2(type6);
+                  const tmp22 = callback2;
+                  const tmp23 = callback2(type5) && callback2(type6);
+                }
+                tmp18 = tmp19;
+              }
+              if (!tmp18) {
+                if (!callback(localChannel.type)) {
+                  const channel4 = parent_id.channel;
+                  tmp17 = null;
+                  if (channel4.isCategory()) {
+                    const obj8 = { referenceId: null, parentId: null };
+                    obj8[0] = id.channel.id;
+                    obj8[1] = parent_id3.id;
+                    tmp17 = obj8;
+                  }
+                } else {
+                  const channel3 = parent_id.channel;
+                }
               }
             }
-            const obj7 = { referenceId: id.channel.id };
+            const obj9 = { referenceId: null, parentId: null };
+            obj9[0] = id.channel.id;
             parent_id = parent_id.channel.parent_id;
-            obj7.parentId = parent_id;
-            tmp11 = obj7;
+            obj9[1] = parent_id;
+            tmp17 = obj9;
           }
         } else {
-          const tmp47 = getChannelPosition(localChannel2, channelList, true);
+          c1 = true;
           let num = 0;
-          if (null != tmp47) {
-            num = tmp47;
+          if (null != parent_id3) {
+            callback = null;
+            const found8 = channelList.filter((channel) => {
+              const type = channel.channel.type;
+              let tmp2 = null != closure_0;
+              if (tmp2) {
+                let tmp3 = c1;
+                if (!c1) {
+                  const type2 = tmp.type;
+                  let tmp4 = null != type2 && null != type;
+                  if (tmp4) {
+                    let tmp5 = type2 === type;
+                    if (!tmp5) {
+                      tmp5 = _null(type2) && _null(type);
+                      const tmp6 = _null;
+                      const tmp7 = _null(type2) && _null(type);
+                    }
+                    if (!tmp5) {
+                      tmp5 = num11(type2) && num11(type);
+                      const tmp8 = num11;
+                      const tmp9 = num11(type2) && num11(type);
+                    }
+                    tmp4 = tmp5;
+                  }
+                  tmp3 = tmp4;
+                }
+                tmp2 = tmp3;
+              }
+              return tmp2;
+            });
+            const found9 = found8.find((arg0, arg1) => {
+              let flag = null != localChannel2 && tmp === localChannel2.id;
+              if (flag) {
+                let closure_2 = arg1;
+                flag = true;
+              }
+              return flag;
+            });
+            num = callback;
           }
-          const tmp4 = getFirstChannelOfType(-1, localChannel2.id, localChannel.type, channelList);
-          tmp5 = null;
-          if (null != tmp4) {
+          if (num == null) {
+            num = 0;
+          }
+          const tmp11 = getFirstChannelOfType(-1, parent_id3.id, localChannel.type, channelList);
+          tmp12 = null;
+          if (null != tmp11) {
             if (!localChannel.isGuildVocal()) {
-              let tmp6 = null;
+              let tmp13 = null;
               if (localChannel.isCategory()) {
-                if (null == tmp) {
-                  obj = { referenceId: tmp4.channel.id, parentId: null };
-                  tmp6 = obj;
+                if (null == tmp8) {
+                  obj = { referenceId: null, parentId: null };
+                  obj[0] = tmp11.channel.id;
+                  tmp13 = obj;
                 } else {
-                  const channel2 = tmp.channel;
-                  tmp6 = null;
+                  const channel2 = tmp8.channel;
+                  tmp13 = null;
                 }
               }
-              tmp5 = tmp6;
+              tmp12 = tmp13;
             } else {
-              if (null != tmp) {
-                const channel7 = tmp.channel;
+              if (null != tmp8) {
+                const channel7 = tmp8.channel;
                 if (!channel7.isCategory()) {
-                  const channel = tmp.channel;
+                  const channel = tmp8.channel;
                   if (channel.isGuildVocal()) {
-                    const obj8 = { referenceId: tmp4.channel.id, parentId: tmp.channel.parent_id };
-                    tmp5 = obj8;
+                    const obj10 = { referenceId: null, parentId: null };
+                    obj10[0] = tmp11.channel.id;
+                    obj10[1] = tmp8.channel.parent_id;
+                    tmp12 = obj10;
                   }
                 }
               }
-              const obj9 = { referenceId: tmp4.channel.id, parentId: localChannel2.parent_id };
-              tmp5 = obj9;
+              const obj11 = { referenceId: null, parentId: null };
+              obj11[0] = tmp11.channel.id;
+              obj11[1] = parent_id3.parent_id;
+              tmp12 = obj11;
             }
           }
         }
-        return tmp5;
+        return tmp12;
       }
     }
   }
   return null;
 };
 export const getDnDUpdates = function getDnDUpdates(localChannel, localChannel2, parentId, channels) {
-  const importDefault = localChannel;
-  const dependencyMap = parentId;
+  let importDefault = localChannel;
+  let dependencyMap = parentId;
   function generateUpdates(substr) {
-    if (null != closure_2) {
-      if (null != closure_3) {
-        let tmp5 = null != closure_2;
-        if (tmp5) {
-          tmp5 = null != tmp4;
+    if (null != c2) {
+      if (null != num11) {
+        let tmp4 = null != tmp;
+        if (tmp4) {
+          tmp4 = null != tmp2;
         }
-        if (tmp5) {
-          tmp5 = null != substr[tmp3];
+        if (tmp4) {
+          tmp4 = null != substr[tmp];
         }
-        if (tmp5) {
-          tmp5 = substr[tmp3].channel === localChannel;
+        if (tmp4) {
+          tmp4 = substr[tmp].channel === localChannel2;
         }
-        if (tmp5) {
-          tmp5 = null != substr[tmp4];
+        if (tmp4) {
+          tmp4 = null != substr[tmp2];
         }
-        if (tmp5) {
-          let obj = localChannel(parentId[2]);
-          let moveItemFromToResult = obj.moveItemFromTo(substr, closure_2, closure_3);
+        if (tmp4) {
+          let obj = localChannel2(11511);
+          let moveItemFromToResult = obj.moveItemFromTo(substr, tmp, tmp2);
         }
-        obj = {
-          oldOrdering: substr,
-          newOrdering: moveItemFromToResult,
-          idGetter(channel) {
-                return channel.channel.id;
-              },
-          existingPositionGetter(channel) {
-                return channel.channel.position;
-              }
+        obj = { oldOrdering: null, newOrdering: null, idGetter: null, existingPositionGetter: null };
+        obj[0] = substr;
+        obj[1] = moveItemFromToResult;
+        obj[2] = function idGetter(channel) {
+          return channel.channel.id;
         };
-        closure_4 = closure_4.concat(localChannel(parentId[2]).calculatePositionDeltas(obj));
+        obj[3] = function existingPositionGetter(channel) {
+          return channel.channel.position;
+        };
+        closure_4 = closure_4.concat(localChannel2(11511).calculatePositionDeltas(obj));
         return moveItemFromToResult;
       }
     }
@@ -322,49 +579,314 @@ export const getDnDUpdates = function getDnDUpdates(localChannel, localChannel2,
     const items1 = [];
     HermesBuiltin.arraySpread(_categories, 0);
     const substr = items1.slice(1);
-    let callback = getChannelPosition(localChannel, substr);
-    let closure_3 = getChannelPosition(localChannel2, substr);
+    importDefault = localChannel;
+    dependencyMap = false;
+    let callback;
+    let num4 = 0;
+    if (null != localChannel) {
+      callback = null;
+      const found = substr.filter((channel) => {
+        const type = channel.channel.type;
+        let tmp2 = null != closure_0;
+        if (tmp2) {
+          let tmp3 = c1;
+          if (!c1) {
+            const type2 = tmp.type;
+            let tmp4 = null != type2 && null != type;
+            if (tmp4) {
+              let tmp5 = type2 === type;
+              if (!tmp5) {
+                tmp5 = _null(type2) && _null(type);
+                const tmp6 = _null;
+                const tmp7 = _null(type2) && _null(type);
+              }
+              if (!tmp5) {
+                tmp5 = num11(type2) && num11(type);
+                const tmp8 = num11;
+                const tmp9 = num11(type2) && num11(type);
+              }
+              tmp4 = tmp5;
+            }
+            tmp3 = tmp4;
+          }
+          tmp2 = tmp3;
+        }
+        return tmp2;
+      });
+      const found1 = found.find((arg0, arg1) => {
+        let flag = null != localChannel2 && tmp === localChannel2.id;
+        if (flag) {
+          let closure_2 = arg1;
+          flag = true;
+        }
+        return flag;
+      });
+      num4 = callback;
+    }
+    callback = num4;
+    importDefault = localChannel2;
+    dependencyMap = false;
+    callback = undefined;
+    let num5 = 0;
+    if (null != localChannel2) {
+      callback = null;
+      const found2 = substr.filter((channel) => {
+        const type = channel.channel.type;
+        let tmp2 = null != closure_0;
+        if (tmp2) {
+          let tmp3 = c1;
+          if (!c1) {
+            const type2 = tmp.type;
+            let tmp4 = null != type2 && null != type;
+            if (tmp4) {
+              let tmp5 = type2 === type;
+              if (!tmp5) {
+                tmp5 = _null(type2) && _null(type);
+                const tmp6 = _null;
+                const tmp7 = _null(type2) && _null(type);
+              }
+              if (!tmp5) {
+                tmp5 = num11(type2) && num11(type);
+                const tmp8 = num11;
+                const tmp9 = num11(type2) && num11(type);
+              }
+              tmp4 = tmp5;
+            }
+            tmp3 = tmp4;
+          }
+          tmp2 = tmp3;
+        }
+        return tmp2;
+      });
+      const found3 = found2.find((arg0, arg1) => {
+        let flag = null != localChannel2 && tmp === localChannel2.id;
+        if (flag) {
+          let closure_2 = arg1;
+          flag = true;
+        }
+        return flag;
+      });
+      num5 = callback;
+    }
+    let num11 = num5;
     const updates = generateUpdates(substr);
     updates.unshift(_categories[0]);
     items = updates;
   }
   if (callback(localChannel.type)) {
-    let tmp10 = _categories;
+    let tmp11 = _categories;
     if (items.length > 0) {
-      tmp10 = items;
+      tmp11 = items;
     }
-    const tmp9Result = importDefault(5106)(tmp10, channels, (channel) => callback(channel.channel.type));
-    callback = getChannelPosition(localChannel, tmp9Result);
-    closure_3 = getChannelPosition(localChannel2, tmp9Result);
-    const updates1 = generateUpdates(tmp9Result);
-    const tmp9 = importDefault(5106);
+    const tmp10Result = importDefault(5128)(tmp11, channels, (channel) => _null(channel.channel.type));
+    importDefault = localChannel;
+    dependencyMap = false;
+    callback = undefined;
+    let num7 = 0;
+    if (null != localChannel) {
+      callback = null;
+      const found4 = tmp10Result.filter((channel) => {
+        const type = channel.channel.type;
+        let tmp2 = null != closure_0;
+        if (tmp2) {
+          let tmp3 = c1;
+          if (!c1) {
+            const type2 = tmp.type;
+            let tmp4 = null != type2 && null != type;
+            if (tmp4) {
+              let tmp5 = type2 === type;
+              if (!tmp5) {
+                tmp5 = _null(type2) && _null(type);
+                const tmp6 = _null;
+                const tmp7 = _null(type2) && _null(type);
+              }
+              if (!tmp5) {
+                tmp5 = num11(type2) && num11(type);
+                const tmp8 = num11;
+                const tmp9 = num11(type2) && num11(type);
+              }
+              tmp4 = tmp5;
+            }
+            tmp3 = tmp4;
+          }
+          tmp2 = tmp3;
+        }
+        return tmp2;
+      });
+      const found5 = found4.find((arg0, arg1) => {
+        let flag = null != localChannel2 && tmp === localChannel2.id;
+        if (flag) {
+          let closure_2 = arg1;
+          flag = true;
+        }
+        return flag;
+      });
+      num7 = callback;
+    }
+    callback = num7;
+    importDefault = localChannel2;
+    dependencyMap = false;
+    callback = undefined;
+    let num8 = 0;
+    if (null != localChannel2) {
+      callback = null;
+      const found6 = tmp10Result.filter((channel) => {
+        const type = channel.channel.type;
+        let tmp2 = null != closure_0;
+        if (tmp2) {
+          let tmp3 = c1;
+          if (!c1) {
+            const type2 = tmp.type;
+            let tmp4 = null != type2 && null != type;
+            if (tmp4) {
+              let tmp5 = type2 === type;
+              if (!tmp5) {
+                tmp5 = _null(type2) && _null(type);
+                const tmp6 = _null;
+                const tmp7 = _null(type2) && _null(type);
+              }
+              if (!tmp5) {
+                tmp5 = num11(type2) && num11(type);
+                const tmp8 = num11;
+                const tmp9 = num11(type2) && num11(type);
+              }
+              tmp4 = tmp5;
+            }
+            tmp3 = tmp4;
+          }
+          tmp2 = tmp3;
+        }
+        return tmp2;
+      });
+      const found7 = found6.find((arg0, arg1) => {
+        let flag = null != localChannel2 && tmp === localChannel2.id;
+        if (flag) {
+          let closure_2 = arg1;
+          flag = true;
+        }
+        return flag;
+      });
+      num8 = callback;
+    }
+    num11 = num8;
+    const updates1 = generateUpdates(tmp10Result);
+    const tmp10 = importDefault(5128);
   }
   if (localChannel.isGuildVocal()) {
     if (items.length > 0) {
       _categories = items;
     }
-    const tmp16Result = importDefault(5106)(_categories, channels, (channel) => {
+    const tmp18Result = importDefault(5128)(_categories, channels, (channel) => {
       channel = channel.channel;
       return channel.isGuildVocal();
     });
-    callback = getChannelPosition(localChannel, tmp16Result);
-    closure_3 = getChannelPosition(localChannel2, tmp16Result);
-    const updates2 = generateUpdates(tmp16Result);
-    const tmp16 = importDefault(5106);
+    importDefault = localChannel;
+    dependencyMap = false;
+    callback = undefined;
+    let num10 = 0;
+    if (null != localChannel) {
+      callback = null;
+      const found8 = tmp18Result.filter((channel) => {
+        const type = channel.channel.type;
+        let tmp2 = null != closure_0;
+        if (tmp2) {
+          let tmp3 = c1;
+          if (!c1) {
+            const type2 = tmp.type;
+            let tmp4 = null != type2 && null != type;
+            if (tmp4) {
+              let tmp5 = type2 === type;
+              if (!tmp5) {
+                tmp5 = _null(type2) && _null(type);
+                const tmp6 = _null;
+                const tmp7 = _null(type2) && _null(type);
+              }
+              if (!tmp5) {
+                tmp5 = num11(type2) && num11(type);
+                const tmp8 = num11;
+                const tmp9 = num11(type2) && num11(type);
+              }
+              tmp4 = tmp5;
+            }
+            tmp3 = tmp4;
+          }
+          tmp2 = tmp3;
+        }
+        return tmp2;
+      });
+      const found9 = found8.find((arg0, arg1) => {
+        let flag = null != localChannel2 && tmp === localChannel2.id;
+        if (flag) {
+          let closure_2 = arg1;
+          flag = true;
+        }
+        return flag;
+      });
+      num10 = callback;
+    }
+    callback = num10;
+    importDefault = localChannel2;
+    dependencyMap = false;
+    callback = undefined;
+    num11 = 0;
+    if (null != localChannel2) {
+      callback = null;
+      const found10 = tmp18Result.filter((channel) => {
+        const type = channel.channel.type;
+        let tmp2 = null != closure_0;
+        if (tmp2) {
+          let tmp3 = c1;
+          if (!c1) {
+            const type2 = tmp.type;
+            let tmp4 = null != type2 && null != type;
+            if (tmp4) {
+              let tmp5 = type2 === type;
+              if (!tmp5) {
+                tmp5 = _null(type2) && _null(type);
+                const tmp6 = _null;
+                const tmp7 = _null(type2) && _null(type);
+              }
+              if (!tmp5) {
+                tmp5 = num11(type2) && num11(type);
+                const tmp8 = num11;
+                const tmp9 = num11(type2) && num11(type);
+              }
+              tmp4 = tmp5;
+            }
+            tmp3 = tmp4;
+          }
+          tmp2 = tmp3;
+        }
+        return tmp2;
+      });
+      const found11 = found10.find((arg0, arg1) => {
+        let flag = null != localChannel2 && tmp === localChannel2.id;
+        if (flag) {
+          let closure_2 = arg1;
+          flag = true;
+        }
+        return flag;
+      });
+      num11 = callback;
+    }
+    const updates2 = generateUpdates(tmp18Result);
+    const tmp18 = importDefault(5128);
   }
-  let tmp20 = localChannel.parent_id !== parentId;
-  if (tmp20) {
-    tmp20 = null == ChannelTypes.find((id) => {
-      let flag = id.id === localChannel.id;
+  let tmp23 = localChannel.parent_id !== parentId;
+  if (tmp23) {
+    tmp23 = null == ChannelTypes.find((id) => {
+      let flag = id.id === localChannel2.id;
       if (flag) {
-        id.parent_id = closure_1;
+        id.parent_id = c1;
         flag = true;
       }
       return flag;
     });
   }
-  if (tmp20) {
-    let obj = { id: localChannel.id, parent_id: parentId };
+  if (tmp23) {
+    let obj = { id: null, parent_id: null };
+    obj[0] = localChannel.id;
+    obj[1] = parentId;
     ChannelTypes.push(obj);
   }
   return ChannelTypes;

@@ -1,9 +1,9 @@
-// Module ID: 5852
-// Function ID: 51269
+// Module ID: 5870
+// Function ID: 5871
 // Name: enforcing
-// Dependencies: [27, 2]
+// Dependencies: [17, 2]
 
-// Module 5852 (enforcing)
+// Module 5870 (enforcing)
 import { TurboModuleRegistry } from "get ActivityIndicator";
 
 const enforcing = TurboModuleRegistry.getEnforcing("NativeMetricMonitorModule");

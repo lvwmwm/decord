@@ -1,17 +1,17 @@
-// Module ID: 10542
-// Function ID: 81547
+// Module ID: 10566
+// Function ID: 10567
 // Name: __INTERNAL_VIEW_CONFIG
-// Dependencies: [110, 42, 2]
+// Dependencies: [106, 65, 2]
 
-// Module 10542 (__INTERNAL_VIEW_CONFIG)
+// Module 10566 (__INTERNAL_VIEW_CONFIG)
 import weakSet from "weakSet";
-import get from "get";
+import setRuntimeConfigProvider from "setRuntimeConfigProvider";
 
-let obj = { uiViewClassName: "DCDVideoRenderer", directEventTypes: { topSize: { registrationName: "onSize" }, topReady: { registrationName: "onReady" } } };
+let obj = { uiViewClassName: "DCDVideoRenderer", directEventTypes: { topSize: { registrationName: "onSize" }, topReady: { registrationName: "onReady" } }, validAttributes: null };
 obj = { useSurfaceDirectRenderer: true, streamId: true };
 const merged = Object.assign(weakSet.ConditionallyIgnoredEventHandlers({ onSize: true, onReady: true }));
-obj.validAttributes = obj;
-const value = get.get("DCDVideoRenderer", () => obj);
+obj[2] = obj;
+const value = setRuntimeConfigProvider.get("DCDVideoRenderer", () => obj);
 const result = require("set").fileFinishedImporting("../discord_common/js/packages/rtn-codegen/js/VideoRendererNativeComponent.tsx");
 
 export default value;

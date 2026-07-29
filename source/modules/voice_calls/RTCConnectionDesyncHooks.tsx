@@ -1,174 +1,84 @@
-// Module ID: 15167
-// Function ID: 115290
-// Name: _createForOfIteratorHelperLoose
-// Dependencies: [57, 31, 4178, 4182, 1194, 1348, 1918, 12787, 4237, 1850, 4181, 22, 566, 1327, 10487, 2]
-// Exports: useEnsureSyncedChannelParticipants, useEnsureSyncedChannelVoiceStates, useIsRTCDisconnectedUIVisible
+// Module ID: 15200
+// Function ID: 15201
+// Name: useEnsureSyncedChannelVoiceStates
+// Dependencies: [32, 19, 4202, 4206, 1218, 1372, 1942, 12809, 4261, 1874, 4205, 12, 589, 1351, 10511, 2]
+// Exports: useDesyncedChannelParticipants, useEnsureSyncedChannelParticipants, useEnsureSyncedChannelVoiceStates, useIsRTCDisconnectedUIVisible
 
-// Module 15167 (_createForOfIteratorHelperLoose)
+// Module 15200 (useEnsureSyncedChannelVoiceStates)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_5 from "_isNativeReflectConstruct";
-import closure_6 from "_isNativeReflectConstruct";
-import closure_7 from "_isNativeReflectConstruct";
-import closure_8 from "_isNativeReflectConstruct";
-import closure_9 from "_isNativeReflectConstruct";
-import closure_10 from "_isNativeReflectConstruct";
-import closure_11 from "_isNativeReflectConstruct";
-import closure_12 from "_isNativeReflectConstruct";
+import noop from "noop";
+import getParticipants from "getParticipants";
+import isVoiceMuted from "isVoiceMuted";
+import fetchFingerprint from "fetchFingerprint";
+import ensureGuildLoaded from "ensureGuildLoaded";
+import trackCommunicationDisabled from "trackCommunicationDisabled";
+import retryFailedUsers from "retryFailedUsers";
+import createRTCConnection from "createRTCConnection";
+import mergeGuildAvatar from "mergeGuildAvatar";
+import updateVoiceState from "updateVoiceState";
 
 const require = arg1;
-function _createForOfIteratorHelperLoose(iterable) {
-  let closure_0 = iterable;
-  iterable = "undefined" !== typeof Symbol;
-  if (iterable) {
-    const _Symbol = Symbol;
-    iterable = iterable[Symbol.iterator];
-  }
-  if (!iterable) {
-    iterable = iterable[Symbol.iterator];
-  }
-  if (iterable) {
-    const iter = iterable.call(iterable);
-    const next = iter.next;
-    return next.bind(iter);
-  } else {
-    const _Array = Array;
-    let tmp = iterable;
-    if (!Array.isArray(iterable)) {
-      let tmp2;
-      if (iterable) {
-        if ("string" === typeof iterable) {
-          tmp2 = _arrayLikeToArray(iterable, undefined);
-        } else {
-          const toString = {}.toString;
-          const substr = toString.call(iterable).slice(8, -1);
-          let name = substr;
-          if (tmp3) {
-            name = iterable.constructor.name;
-          }
-          if ("Map" !== name) {
-            if ("Set" !== name) {
-              if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(iterable, undefined);
-              } else {
-                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
-              }
-            }
-            tmp2 = arr;
-          }
-          const _Array2 = Array;
-          arr = Array.from(iterable);
-          const callResult = toString.call(iterable);
-          tmp3 = "Object" === substr && iterable.constructor;
-        }
-      }
-      tmp = tmp2;
-      if (!tmp2) {
-        const _TypeError = TypeError;
-        const typeError = new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
-        throw typeError;
-      }
-    }
-    if (tmp) {
-      closure_0 = tmp;
-    }
-    let c1 = 0;
-    return () => {
-      if (closure_1 >= length.length) {
-        let obj = { done: true };
-      } else {
-        obj = { done: false };
-        closure_1 = tmp3 + 1;
-        obj.value = length[+closure_1];
-      }
-      return obj;
-    };
-  }
-}
-function _arrayLikeToArray(arg0, arg1) {
-  let length;
-  if (tmp) {
-    length = arg0.length;
-  }
-  const ArrayResult = Array(length);
-  for (let num = 0; num < length; num = num + 1) {
-    ArrayResult[num] = arg0[num];
-  }
-  return ArrayResult;
-}
-function useDesyncedChannelParticipants(channelId) {
-  const _require = channelId;
-  const items = [closure_9, closure_10];
-  return _require(566).useStateFromStores(items, () => {
-    let desyncedParticipants = null;
-    if (closure_0 === outer1_10.getChannelId()) {
-      desyncedParticipants = outer1_9.getDesyncedParticipants();
-    }
-    return desyncedParticipants;
-  });
-}
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/voice_calls/RTCConnectionDesyncHooks.tsx");
+const result = require("getParticipants").fileFinishedImporting("modules/voice_calls/RTCConnectionDesyncHooks.tsx");
 
 export const useEnsureSyncedChannelVoiceStates = function useEnsureSyncedChannelVoiceStates(id, voiceStates) {
   const _require = id;
   const dependencyMap = voiceStates;
-  let guild_id;
-  let items = [closure_9, closure_10];
-  const stateFromStores = _require(566).useStateFromStores(items, () => {
+  let items = [retryFailedUsers, createRTCConnection];
+  const stateFromStores = _require(589).useStateFromStores(items, () => {
     let desyncedVoiceStates = null;
     if (closure_0 === outer1_10.getChannelId()) {
       desyncedVoiceStates = outer1_9.getDesyncedVoiceStates();
     }
     return desyncedVoiceStates;
   });
-  let obj = _require(566);
+  let obj = _require(589);
   const items1 = [stateFromStoresArray];
-  const React = _require(566).useStateFromStoresArray(items1, () => {
+  const React = _require(589).useStateFromStoresArray(items1, () => {
     if (null == closure_0) {
       let items = [];
     } else {
       items = [];
-      HermesBuiltin.arraySpread(stateFromStoresArray.getGuildRingingUsers(closure_0), 0);
+      HermesBuiltin.arraySpread(stateFromStoresArray.getGuildRingingUsers(tmp), 0);
     }
     return items;
   });
-  const obj2 = _require(566);
-  const items2 = [closure_11];
-  stateFromStoresArray = _require(566).useStateFromStoresArray(items2, () => {
-    const mapped = result.map((arg0) => outer2_11.getUser(arg0));
+  const obj2 = _require(589);
+  const items2 = [mergeGuildAvatar];
+  stateFromStoresArray = _require(589).useStateFromStoresArray(items2, () => {
+    const mapped = noop.map((arg0) => user.getUser(arg0));
     return mapped.filter(id(voiceStates[13]).isNotNullish);
   });
-  const obj3 = _require(566);
-  const items3 = [closure_7];
-  const stateFromStores1 = _require(566).useStateFromStores(items3, () => outer1_7.getBasicChannel(closure_0));
+  const obj3 = _require(589);
+  const items3 = [ensureGuildLoaded];
+  const stateFromStores1 = _require(589).useStateFromStores(items3, () => outer1_7.getBasicChannel(closure_0));
   const items4 = [stateFromStoresArray, ];
-  if (null != stateFromStores1) {
+  let guild_id;
+  if (stateFromStores1 != null) {
     guild_id = stateFromStores1.guild_id;
   }
   items4[1] = guild_id;
   const memo = React.useMemo(() => stateFromStoresArray.map((id) => {
-    const obj = { voiceState: new stateFromStores1(id.id), user: id };
+    const obj = { voiceState: null, user: null, member: null, nick: null, comparator: null, _isPlaceholder: false };
+    obj[0] = new outer1_5(id.id);
+    obj[1] = id;
     let guild_id;
-    if (null != outer1_5) {
-      guild_id = outer1_5.guild_id;
+    if (isVoiceMuted != null) {
+      guild_id = tmp2.guild_id;
     }
     let member = null;
     if (null != guild_id) {
       let guild_id1;
-      if (null != outer1_5) {
-        guild_id1 = outer1_5.guild_id;
+      if (tmp2 != null) {
+        guild_id1 = tmp2.guild_id;
       }
-      member = outer2_8.getMember(guild_id1, id.id);
+      member = outer1_8.getMember(guild_id1, id.id);
     }
-    obj.member = member;
-    ({ globalName: obj.nick, globalName: obj.comparator } = id);
-    obj._isPlaceholder = false;
+    obj[2] = member;
+    ({ globalName: obj[3], globalName: obj[4] } = id);
     return obj;
   }), items4);
   const items5 = [stateFromStores, voiceStates, memo];
   return React.useMemo(() => (function syncChannelVoiceStates(stateFromStores, closure_1, memo) {
-    let done;
     if (null == stateFromStores) {
       if (0 === memo.length) {
         return closure_1;
@@ -176,19 +86,14 @@ export const useEnsureSyncedChannelVoiceStates = function useEnsureSyncedChannel
     }
     const items = [];
     const set = new Set();
-    const tmp = outer2_13(closure_1);
-    let iter = tmp();
-    if (!iter.done) {
-      do {
-        let value = iter.value;
-        let arr = items.push(value);
-        let addResult = set.add(value.user.id);
-        let iter2 = tmp();
-        iter = iter2;
-        done = iter2.done;
-      } while (!done);
+    const iter = closure_1[Symbol.iterator]();
+    const nextResult = iter.next();
+    while (iter !== undefined) {
+      let arr = items.push(nextResult);
+      let addResult = set.add(nextResult.user.id);
+      continue;
     }
-    if (null != stateFromStores) {
+    if (stateFromStores != null) {
       const item = stateFromStores.forEach((arg0) => {
         items.splice(items(set[11]).sortedIndexBy(items, arg0, (comparator) => comparator.comparator), 0, arg0);
       });
@@ -204,46 +109,65 @@ export const useEnsureSyncedChannelVoiceStates = function useEnsureSyncedChannel
     return items;
   })(stateFromStores, closure_1, memo), items5);
 };
-export { useDesyncedChannelParticipants };
-export const useEnsureSyncedChannelParticipants = function useEnsureSyncedChannelParticipants(channelId) {
-  let closure_0 = arg1;
-  const tmp = useDesyncedChannelParticipants(channelId);
-  const dependencyMap = tmp;
-  let items = [tmp, arg1];
-  return React.useMemo(() => (function syncChannelParticipants(closure_1, closure_0) {
-    if (null != closure_1) {
-      if (0 !== closure_1.length) {
-        const items = [];
-        HermesBuiltin.arraySpread(closure_0, 0);
-        const item = closure_1.forEach((arg0) => {
-          items.splice(items(table[11]).sortedIndexBy(items, arg0, (arg0) => callback(table[14]).sortKey(arg0)), 0, arg0);
+export const useDesyncedChannelParticipants = function useDesyncedChannelParticipants(arg0) {
+  const _require = arg0;
+  const items = [retryFailedUsers, createRTCConnection];
+  return _require(589).useStateFromStores(items, () => {
+    let desyncedParticipants = null;
+    if (closure_0 === outer1_10.getChannelId()) {
+      desyncedParticipants = outer1_9.getDesyncedParticipants();
+    }
+    return desyncedParticipants;
+  });
+};
+export const useEnsureSyncedChannelParticipants = function useEnsureSyncedChannelParticipants(arg0, arg1) {
+  let _require = arg1;
+  _require = arg0;
+  let items = [retryFailedUsers, createRTCConnection];
+  stateFromStores = _require(stateFromStores[12]).useStateFromStores(items, () => {
+    let desyncedParticipants = null;
+    if (closure_0 === outer1_10.getChannelId()) {
+      desyncedParticipants = outer1_9.getDesyncedParticipants();
+    }
+    return desyncedParticipants;
+  });
+  const items1 = [stateFromStores, arg1];
+  return React.useMemo(() => {
+    let tmp2 = items;
+    if (null != stateFromStores) {
+      tmp2 = tmp;
+      if (0 !== arr.length) {
+        items = [];
+        HermesBuiltin.arraySpread(tmp, 0);
+        const item = arr.forEach((arg0) => {
+          items.splice(items(outer1_1[11]).sortedIndexBy(items, arg0, (arg0) => callback(table[14]).sortKey(arg0)), 0, arg0);
         });
-        return items;
+        tmp2 = items;
       }
     }
-    return closure_0;
-  })(closure_1, closure_0), items);
+    return tmp2;
+  }, items1);
 };
 export const useIsRTCDisconnectedUIVisible = function useIsRTCDisconnectedUIVisible(arg0, id) {
-  let _isNativeReflectConstruct;
-  let closure_5;
+  let getParticipants;
+  let isVoiceMuted;
   let tmp4;
   let tmp6;
   const _require = arg0;
   const dependencyMap = id;
   const items = [stateFromStores2];
-  const stateFromStores = _require(566).useStateFromStores(items, () => stateFromStores2.getId() === closure_1);
-  const obj = _require(566);
-  const items1 = [closure_10];
-  const stateFromStores1 = _require(566).useStateFromStores(items1, () => outer1_10.getChannelId());
+  const stateFromStores = _require(589).useStateFromStores(items, () => stateFromStores2.getId() === closure_1);
+  const obj = _require(589);
+  const items1 = [createRTCConnection];
+  const stateFromStores1 = _require(589).useStateFromStores(items1, () => channelId.getChannelId());
   React = React.useRef(null);
-  const obj2 = _require(566);
-  [tmp4, _isNativeReflectConstruct] = stateFromStores1(React.useState(false), 2);
+  const obj2 = _require(589);
+  [tmp4, getParticipants] = stateFromStores1(React.useState(false), 2);
   const tmp3 = stateFromStores1(React.useState(false), 2);
-  [tmp6, closure_5] = stateFromStores1(React.useState(false), 2);
+  [tmp6, isVoiceMuted] = stateFromStores1(React.useState(false), 2);
   const tmp5 = stateFromStores1(React.useState(false), 2);
-  const items2 = [closure_10, closure_12];
-  stateFromStores2 = _require(566).useStateFromStores(items2, () => {
+  const items2 = [createRTCConnection, updateVoiceState];
+  stateFromStores2 = _require(589).useStateFromStores(items2, () => {
     let isUserConnectedResult = null != closure_1;
     if (isUserConnectedResult) {
       isUserConnectedResult = null != closure_0;
@@ -252,30 +176,30 @@ export const useIsRTCDisconnectedUIVisible = function useIsRTCDisconnectedUIVisi
       isUserConnectedResult = outer1_10.getChannelId() === closure_0;
     }
     if (isUserConnectedResult) {
-      isUserConnectedResult = null != outer1_12.isInChannel(closure_0, closure_1);
+      isUserConnectedResult = null != outer1_12.isInChannel(closure_0, tmp);
     }
     if (isUserConnectedResult) {
-      isUserConnectedResult = outer1_10.isUserConnected(closure_1);
+      isUserConnectedResult = outer1_10.isUserConnected(tmp);
     }
     return isUserConnectedResult;
   });
-  const obj3 = _require(566);
-  const items3 = [closure_10, closure_12];
-  const stateFromStores3 = _require(566).useStateFromStores(items3, () => {
-    let tmp = null != closure_1;
-    if (tmp) {
-      tmp = null != closure_0;
+  const obj3 = _require(589);
+  const items3 = [createRTCConnection, updateVoiceState];
+  const stateFromStores3 = _require(589).useStateFromStores(items3, () => {
+    let tmp2 = null != closure_1;
+    if (tmp2) {
+      tmp2 = null != closure_0;
     }
-    if (tmp) {
-      tmp = outer1_10.getChannelId() === closure_0;
+    if (tmp2) {
+      tmp2 = outer1_10.getChannelId() === closure_0;
     }
-    if (tmp) {
-      tmp = null != outer1_12.isInChannel(closure_0, closure_1);
+    if (tmp2) {
+      tmp2 = null != outer1_12.isInChannel(closure_0, tmp);
     }
-    if (tmp) {
-      tmp = !outer1_10.isUserConnected(closure_1);
+    if (tmp2) {
+      tmp2 = !outer1_10.isUserConnected(tmp);
     }
-    return tmp;
+    return tmp2;
   });
   const items4 = [stateFromStores2];
   const effect = React.useEffect(() => {
@@ -294,19 +218,26 @@ export const useIsRTCDisconnectedUIVisible = function useIsRTCDisconnectedUIVisi
     if (stateFromStores3) {
       if (null == ref.current) {
         const _setTimeout = setTimeout;
-        ref.current = setTimeout(() => {
-          outer1_3.current = null;
-          outer1_4(true);
+        tmp.current = setTimeout(() => {
+          noop.current = null;
+          callback(true);
         }, 250);
       }
       return () => {
-        clearTimeout(outer1_3.current);
-        outer1_3.current = null;
+        clearTimeout(ref.current);
+        ref.current = null;
       };
     }
     clearTimeout(ref.current);
     ref.current = null;
     callback(false);
   }, items6);
-  return !stateFromStores && tmp6 && tmp4;
+  let tmp12 = !stateFromStores;
+  if (!stateFromStores) {
+    tmp12 = tmp6;
+  }
+  if (tmp12) {
+    tmp12 = tmp4;
+  }
+  return tmp12;
 };

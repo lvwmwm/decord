@@ -1,155 +1,66 @@
-// Module ID: 16661
-// Function ID: 129785
-// Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 1188, 1845, 1842, 620, 1428, 5112, 2]
+// Module ID: 16697
+// Function ID: 16698
+// Name: experimentStoreUpdateHandler
+// Dependencies: [1212, 1869, 1866, 643, 1452, 5134, 2]
 
-// Module 16661 (_isNativeReflectConstruct)
-import isBlockedDomain from "isBlockedDomain";
-import _callSuper from "_callSuper";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import tmp2 from "AutomaticLifecycleManager";
+// Module 16697 (experimentStoreUpdateHandler)
+import initialize from "initialize";
+import "initialize";
 
 const require = arg1;
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
-  }
-  const result = _isNativeReflectConstruct();
-}
-function _createForOfIteratorHelperLoose(iterable) {
-  let closure_0 = iterable;
-  iterable = "undefined" !== typeof Symbol;
-  if (iterable) {
-    const _Symbol = Symbol;
-    iterable = iterable[Symbol.iterator];
-  }
-  if (!iterable) {
-    iterable = iterable[Symbol.iterator];
-  }
-  if (iterable) {
-    const iter = iterable.call(iterable);
-    const next = iter.next;
-    return next.bind(iter);
-  } else {
-    const _Array = Array;
-    let tmp = iterable;
-    if (!Array.isArray(iterable)) {
-      let tmp2;
-      if (iterable) {
-        if ("string" === typeof iterable) {
-          tmp2 = _arrayLikeToArray(iterable, undefined);
-        } else {
-          const toString = {}.toString;
-          const substr = toString.call(iterable).slice(8, -1);
-          let name = substr;
-          if (tmp3) {
-            name = iterable.constructor.name;
-          }
-          if ("Map" !== name) {
-            if ("Set" !== name) {
-              if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(iterable, undefined);
-              } else {
-                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
-              }
-            }
-            tmp2 = arr;
-          }
-          const _Array2 = Array;
-          arr = Array.from(iterable);
-          const callResult = toString.call(iterable);
-          tmp3 = "Object" === substr && iterable.constructor;
-        }
-      }
-      tmp = tmp2;
-      if (!tmp2) {
-        const _TypeError = TypeError;
-        const typeError = new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
-        throw typeError;
-      }
-    }
-    if (tmp) {
-      closure_0 = tmp;
-    }
-    let c1 = 0;
-    return () => {
-      if (closure_1 >= length.length) {
-        let obj = { done: true };
-      } else {
-        obj = { done: false };
-        closure_1 = tmp3 + 1;
-        obj.value = length[+closure_1];
-      }
-      return obj;
-    };
-  }
-}
-function _arrayLikeToArray(arg0, arg1) {
-  let length;
-  if (tmp) {
-    length = arg0.length;
-  }
-  const ArrayResult = Array(length);
-  for (let num = 0; num < length; num = num + 1) {
-    ArrayResult[num] = arg0[num];
-  }
-  return ArrayResult;
-}
 function experimentStoreUpdateHandler() {
-  let done;
-  let obj = require(1845) /* isBlockedDomain */;
+  let obj = require(1869) /* isBlockedDomain */;
   if (obj.isLibdiscoreInitialized()) {
-    if (!obj2.isExperimentSyncDisabled()) {
+    if (!tmpResult.isExperimentSyncDisabled()) {
       obj = {};
-      const tmp6 = _createForOfIteratorHelperLoose(require(1842) /* _callSuper */.ALL_LIBDISCORE_EXPERIMENTS);
-      let iter = tmp6();
-      if (!iter.done) {
-        do {
-          let value = iter.value;
-          obj[value.id] = value.getCurrentConfig();
-          let iter2 = tmp6();
-          iter = iter2;
-          done = iter2.done;
-        } while (!done);
+      const ALL_LIBDISCORE_EXPERIMENTS = tmp(1866).ALL_LIBDISCORE_EXPERIMENTS;
+      for (const item10018 of ALL_LIBDISCORE_EXPERIMENTS) {
+        obj[item10018.id] = item10018.getCurrentConfig();
+        continue;
       }
-      let tmp9 = null != obj;
-      if (tmp9) {
-        tmp9 = importDefault(620)(obj, obj);
+      let tmp7 = null != obj;
+      if (tmp7) {
+        tmp7 = importDefault(643)(obj, obj);
       }
-      if (!tmp9) {
-        const experimentCacher = require(1845) /* isBlockedDomain */.getExperimentCacher();
+      if (!tmp7) {
+        const experimentCacher = require(1869) /* isBlockedDomain */.getExperimentCacher();
         const _JSON = JSON;
         experimentCacher.flushToCache(JSON.stringify(obj));
-        const obj4 = require(1845) /* isBlockedDomain */;
+        const obj4 = require(1869) /* isBlockedDomain */;
       }
     }
-    obj2 = require(1842) /* _callSuper */;
+    tmpResult = tmp(1866);
   }
 }
-function initializeAllExperiments() {
-  const prop = require(1842) /* _callSuper */.ALL_LIBDISCORE_EXPERIMENTS;
-  const item = prop.forEach((setExperiment) => {
-    setExperiment.setExperiment((function createApexExperimentWrapper(id) {
-      let obj = outer2_0(outer2_2[9]);
-      obj = { kind: "user", name: id.id, defaultConfig: { treatmentId: -1 } };
-      const treatments = id.getTreatments();
-      obj.variations = Object.fromEntries(treatments.map((treatmentId) => {
-        treatmentId = treatmentId.treatmentId;
-        const items = [treatmentId, { treatmentId }];
-        return items;
-      }));
-      return obj.createApexExperiment(obj);
-    })(setExperiment));
-  });
+let c4 = null;
+class LibdiscoreExperimentManager extends tmp2 {
+  constructor() {
+    applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
+    applyArgumentsResult.actions = {};
+    map = new Map();
+    applyArgumentsResult.stores = map.set(experimentStoreUpdateHandler, experimentStoreUpdateHandler);
+    return applyArgumentsResult;
+  }
 }
-let c9 = null;
-tmp2 = new tmp2();
-let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/libdiscore/LibdiscoreExperimentManager.tsx");
+const prototype = LibdiscoreExperimentManager.prototype;
+prototype["_initialize"] = function _initialize() {
+  const prop = require(1866) /* items */.ALL_LIBDISCORE_EXPERIMENTS;
+  const item = prop.forEach((id) => {
+    let obj = callback(table[4]);
+    obj = { kind: "user", name: id.id, defaultConfig: { treatmentId: -1 }, variations: null };
+    const treatments = id.getTreatments();
+    obj[3] = Object.fromEntries(treatments.map((treatmentId) => {
+      treatmentId = treatmentId.treatmentId;
+      const items = [treatmentId, { treatmentId }];
+      return items;
+    }));
+    id.setExperiment(obj.createApexExperiment(obj));
+  });
+};
+prototype["_terminate"] = function _terminate() {
 
-export default tmp2;
+};
+const libdiscoreExperimentManager = new LibdiscoreExperimentManager();
+const result = require("items").fileFinishedImporting("modules/libdiscore/LibdiscoreExperimentManager.tsx");
+
+export default libdiscoreExperimentManager;

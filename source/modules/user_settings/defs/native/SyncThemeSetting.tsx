@@ -1,64 +1,63 @@
-// Module ID: 14303
-// Function ID: 109709
+// Module ID: 14325
+// Function ID: 14326
 // Name: toggle
-// Dependencies: [3977, 1279, 1278, 1316, 7733, 653, 1324, 566, 1212, 14304, 6186, 10099, 2]
+// Dependencies: [4001, 1303, 1302, 1340, 7756, 676, 1348, 589, 1236, 14326, 6206, 10120, 2]
 
-// Module 14303 (toggle)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_4 from "_isNativeReflectConstruct";
-import closure_5 from "_isNativeReflectConstruct";
-import closure_6 from "_isNativeReflectConstruct";
+// Module 14325 (toggle)
+import isSyncedModeThemesEnabled from "isSyncedModeThemesEnabled";
+import initialize from "initialize";
+import handleThemeChange from "handleThemeChange";
+import handleConnectionClosedOrResumed from "handleConnectionClosedOrResumed";
 import { AnalyticEvents } from "ME";
 import createToggle from "createToggle";
 
 const require = arg1;
 createToggle = {
   useTitle() {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(require(1212) /* getSystemLocale */.t["3340dY"]);
+    const intl = require(1236) /* getSystemLocale */.intl;
+    return intl.string(require(1236) /* getSystemLocale */.t["3340dY"]);
   },
   parent: require("MobileSetting").MobileSetting.APPEARANCE,
   useIsDisabled: function useSyncThemeDisabled() {
-    let stateFromStores = importDefault(1324)("SyncThemeSetting");
-    const items = [closure_5];
+    let stateFromStores = importDefault(1348)("SyncThemeSetting");
+    const items = [handleThemeChange];
     if (stateFromStores) {
-      stateFromStores = obj.useStateFromStores(items, () => outer1_5.isSameAsDeviceThemeEnabled());
+      stateFromStores = obj.useStateFromStores(items, () => sameAsDeviceThemeEnabled.isSameAsDeviceThemeEnabled());
     }
     return stateFromStores;
   },
   useValue: function useSyncThemeAcrossClientsValue() {
-    const items = [closure_4];
-    return require(566) /* initialize */.useStateFromStores(items, () => false !== outer1_4.shouldSync("appearance"));
+    const items = [initialize];
+    return require(589) /* initialize */.useStateFromStores(items, () => false !== initialize.shouldSync("appearance"));
   },
   onValueChange: function onSyncThemeAcrossClientsValueChange(is_sync_enabled) {
     gradientPreset = gradientPreset.gradientPreset;
     let id;
-    if (null != gradientPreset) {
+    if (gradientPreset != null) {
       id = gradientPreset.id;
     }
-    let tmp2 = null;
-    if (null != id) {
-      tmp2 = id;
+    if (id == null) {
+      id = null;
     }
     const appearance = settings.settings.appearance;
     let prop;
-    if (null != appearance) {
+    if (appearance != null) {
       const clientThemeSettings = appearance.clientThemeSettings;
-      if (null != clientThemeSettings) {
+      if (clientThemeSettings != null) {
         prop = clientThemeSettings.customUserThemeSettings;
       }
     }
-    let obj = require(14304) /* track */;
-    obj = { is_sync_enabled, base_theme: theme.theme, client_theme: tmp2, has_custom_theme: null != prop };
+    let obj = require(14326) /* track */;
+    obj = { is_sync_enabled, base_theme: theme.theme, client_theme: id, has_custom_theme: null != prop };
     obj.track(AnalyticEvents.SYNC_ACROSS_CLIENTS_TOGGLED, obj);
-    const result = importDefault(6186).setShouldSyncAppearanceSettings(is_sync_enabled);
+    const result = importDefault(6206).setShouldSyncAppearanceSettings(is_sync_enabled);
   },
   useDescription: function useSyncThemeAcrossClientsDescription() {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(require(1212) /* getSystemLocale */.t.CRtkeH).trim();
+    const intl = require(1236) /* getSystemLocale */.intl;
+    return intl.string(require(1236) /* getSystemLocale */.t.CRtkeH).trim();
   }
 };
 createToggle = createToggle.createToggle(createToggle);
-let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/user_settings/defs/native/SyncThemeSetting.tsx");
+let result = require("handleThemeChange").fileFinishedImporting("modules/user_settings/defs/native/SyncThemeSetting.tsx");
 
 export default createToggle;

@@ -1,50 +1,50 @@
-// Module ID: 12267
-// Function ID: 95691
+// Module ID: 12289
+// Function ID: 12290
 // Name: BlockedDomainActionSheet
-// Dependencies: [31, 33, 4165, 689, 5221, 4576, 6763, 4161, 1212, 12268, 4578, 4133, 2]
+// Dependencies: [19, 21, 4189, 712, 5243, 4598, 6785, 4185, 1236, 12290, 4600, 4157, 2]
 // Exports: default
 
-// Module 12267 (BlockedDomainActionSheet)
-import "result";
+// Module 12289 (BlockedDomainActionSheet)
+import "noop";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_3;
-let closure_4;
+let c3;
+let c4;
 const require = arg1;
-({ jsx: closure_3, jsxs: closure_4 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { padding: require("_createForOfIteratorHelperLoose").space.PX_16 };
-_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.title = { textAlign: "center" };
-_createForOfIteratorHelperLoose.warningMessage = { textAlign: "center" };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/blocked_domains/components/native/BlockedDomainActionSheet.tsx");
+({ jsx: c3, jsxs: c4 } = jsxProd);
+createCacheKey = { container: null, title: null, warningMessage: null };
+createCacheKey = { padding: require("Themes").space.PX_16 };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { textAlign: "center" };
+createCacheKey[2] = { textAlign: "center" };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+const result = require("createCacheKey").fileFinishedImporting("modules/blocked_domains/components/native/BlockedDomainActionSheet.tsx");
 
 export default function BlockedDomainActionSheet(url) {
-  const tmp = _createForOfIteratorHelperLoose();
-  let obj = { startExpanded: true };
-  obj = { spacing: 16, justify: "center", align: "center", style: tmp.container };
-  obj = { spacing: 8, justify: "center", align: "center" };
-  const items = [callback(require(6763) /* AccountAgeTier10LargeBadge */.TrafficConeSpotIllustration, {}), , ];
-  const obj1 = { style: tmp.title, accessibilityRole: "header", variant: "heading-lg/extrabold", color: "mobile-text-heading-primary" };
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj1.children = intl.string(require(1212) /* getSystemLocale */.t["2B3wj8"]);
-  items[1] = callback(require(4161) /* Text */.Text, obj1);
-  const obj2 = { style: tmp.warningMessage, variant: "text-md/medium" };
-  const intl2 = require(1212) /* getSystemLocale */.intl;
-  obj2.children = intl2.format(require(1212) /* getSystemLocale */.t.jnHyYU, {});
-  items[2] = callback(require(4161) /* Text */.Text, obj2);
-  obj.children = items;
-  const items1 = [callback2(require(4576) /* Stack */.Stack, obj), callback(require(12268) /* URLCallout */.URLCallout, { url: url.url }), ];
-  const obj3 = { grow: true };
-  const intl3 = require(1212) /* getSystemLocale */.intl;
-  obj3.text = intl3.string(require(1212) /* getSystemLocale */.t["/g10LC"]);
-  obj3.onPress = function onPress() {
-    return outer1_1(outer1_2[11]).hideActionSheet();
+  const tmp = createCacheKey();
+  let obj = { startExpanded: true, children: null };
+  obj = { spacing: 16, justify: "center", align: "center", style: tmp.container, children: null };
+  obj = { spacing: 8, justify: "center", align: "center", children: null };
+  const items = [callback(require(6785) /* AccountAgeTier10LargeBadge */.TrafficConeSpotIllustration, {}), , ];
+  const obj1 = { style: tmp.title, accessibilityRole: "header", variant: "heading-lg/extrabold", color: "mobile-text-heading-primary", children: null };
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj1[4] = intl.string(require(1236) /* getSystemLocale */.t["2B3wj8"]);
+  items[1] = callback(require(4185) /* Text */.Text, obj1);
+  const obj2 = { style: tmp.warningMessage, variant: "text-md/medium", children: null };
+  const intl2 = require(1236) /* getSystemLocale */.intl;
+  obj2[2] = intl2.format(require(1236) /* getSystemLocale */.t.jnHyYU, {});
+  items[2] = callback(require(4185) /* Text */.Text, obj2);
+  obj[3] = items;
+  const items1 = [callback2(require(4598) /* Stack */.Stack, obj), callback(require(12290) /* URLCallout */.URLCallout, { url: url.url }), ];
+  const obj3 = { grow: true, text: null, onPress: null };
+  const intl3 = require(1236) /* getSystemLocale */.intl;
+  obj3[1] = intl3.string(require(1236) /* getSystemLocale */.t["/g10LC"]);
+  obj3[2] = function onPress() {
+    return callback(table[11]).hideActionSheet();
   };
-  items1[2] = callback(require(4578) /* Button */.Button, obj3);
-  obj.children = items1;
-  obj.children = callback2(require(4576) /* Stack */.Stack, obj);
-  return callback(require(5221) /* Background */.BottomSheet, obj);
+  items1[2] = callback(require(4600) /* Button */.Button, obj3);
+  obj[4] = items1;
+  obj[1] = callback2(require(4598) /* Stack */.Stack, obj);
+  return callback(require(5243) /* Background */.BottomSheet, obj);
 };

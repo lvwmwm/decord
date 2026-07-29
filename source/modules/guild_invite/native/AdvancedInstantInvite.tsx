@@ -1,32 +1,23 @@
-// Module ID: 16600
-// Function ID: 129216
-// Name: findOptionLabel
-// Dependencies: [31, 27, 3802, 1850, 33, 4165, 4628, 4355, 16601, 8328, 16602, 4133, 16603, 1935, 16604, 1212, 5548, 5204, 4576, 689, 5536, 5198, 5537, 1360, 6688, 2]
+// Module ID: 16635
+// Function ID: 16636
+// Name: AdvancedInstantInvite
+// Dependencies: [19, 17, 3826, 1874, 21, 4189, 4650, 4380, 16636, 8352, 16637, 4157, 16638, 1959, 16639, 1236, 5566, 5226, 4598, 712, 5554, 5220, 5555, 1384, 6709, 2]
 // Exports: default
 
-// Module 16600 (findOptionLabel)
-import result from "result";
-import { View } from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_6 from "_isNativeReflectConstruct";
-import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+// Module 16635 (AdvancedInstantInvite)
+import Themes from "Themes";
+import { View } from "TableRowIcon";
+import upsertRelationship from "upsertRelationship";
+import mergeGuildAvatar from "mergeGuildAvatar";
+import jsxProd from "TableRowInner";
+import createCacheKey from "createCacheKey";
 
-let closure_7;
-let closure_8;
+let error;
+let metroImportAll;
 const require = arg1;
-function findOptionLabel(arr) {
-  let closure_0 = arg1;
-  const found = arr.find((value) => value.value === closure_0);
-  let label;
-  if (null != found) {
-    label = found.label;
-  }
-  return label;
-}
-({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-let closure_9 = _createForOfIteratorHelperLoose.createStyles({ container: { flexGrow: 1 } });
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/guild_invite/native/AdvancedInstantInvite.tsx");
+({ jsx: error, jsxs: metroImportAll } = jsxProd);
+let closure_9 = createCacheKey.createStyles({ container: { flexGrow: 1 } });
+const result = require("upsertRelationship").fileFinishedImporting("modules/guild_invite/native/AdvancedInstantInvite.tsx");
 
 export default function AdvancedInstantInvite(maxAge) {
   let canCreateApplicationBypassInvites;
@@ -40,10 +31,11 @@ export default function AdvancedInstantInvite(maxAge) {
   let style;
   let temporary;
   ({ channel, guild } = maxAge);
+  let maxUses = guild;
   maxAge = maxAge.maxAge;
   const onChangeMaxAge = maxAge.onChangeMaxAge;
   const maxUsesOptions = maxAge.maxUsesOptions;
-  const maxUses = maxAge.maxUses;
+  maxUses = maxAge.maxUses;
   const onChangeMaxUses = maxAge.onChangeMaxUses;
   ({ onChangeTemporary, flags } = maxAge);
   ({ onChangeFlags: closure_7, roleIds } = maxAge);
@@ -52,72 +44,72 @@ export default function AdvancedInstantInvite(maxAge) {
   let c11;
   ({ style, temporary } = maxAge);
   if (null != channel) {
-    let obj = guild(onChangeMaxAge[6]);
+    let obj = maxUses(onChangeMaxAge[6]);
     const channelIconComponent = obj.getChannelIconComponent(channel);
   }
   let str = " ";
   if (null != channel) {
-    let obj1 = guild(onChangeMaxAge[7]);
+    let obj1 = maxUses(onChangeMaxAge[7]);
     str = obj1.computeChannelName(channel, flags, onChangeMaxUses, true);
   }
-  let obj2 = guild(onChangeMaxAge[8]);
+  let obj2 = maxUses(onChangeMaxAge[8]);
   const inviteApplicationBypassInfo = obj2.useInviteApplicationBypassInfo(guild);
-  ({ canCreateApplicationBypassInvites, isManualApprovalGuild } = inviteApplicationBypassInfo);
-  let obj3 = guild(onChangeMaxAge[9]);
-  obj = {};
+  ({ isManualApprovalGuild, canCreateApplicationBypassInvites } = inviteApplicationBypassInfo);
+  let obj3 = maxUses(onChangeMaxAge[9]);
   let id;
-  if (null != guild) {
+  if (guild != null) {
     id = guild.id;
   }
-  obj.guildId = id;
-  obj.location = "AdvancedInstantInvite";
-  maxAgeOptions = obj3.useMaxAgeOptions(obj);
-  let tmp15 = null;
+  maxAgeOptions = obj3.useMaxAgeOptions({ guildId: id, location: "AdvancedInstantInvite" });
+  let tmp17 = guild;
   let tmp = onChangeRoleIds();
-  if (null != guild) {
-    tmp15 = guild;
+  if (guild == null) {
+    tmp17 = null;
   }
-  const tmp14Result = maxAge(onChangeMaxAge[10])(tmp15);
-  c11 = tmp14Result;
-  const items = [guild, tmp14Result, roleIds, onChangeRoleIds];
+  const tmp16Result = maxAge(onChangeMaxAge[10])(tmp17);
+  c11 = tmp16Result;
+  const items = [guild, tmp16Result, roleIds, onChangeRoleIds];
   const items1 = [maxAge, maxAgeOptions, onChangeMaxAge];
   const callback = maxUsesOptions.useCallback(() => {
-    let tmp = null != guild;
+    let tmp = null != maxUses;
     if (tmp) {
       tmp = null != onChangeRoleIds;
     }
     if (tmp) {
       let obj = maxAge(onChangeMaxAge[11]);
-      obj = { assignableRoles: c11, selectedRoleIds: roleIds, onSave: onChangeRoleIds };
-      obj.openLazy(guild(onChangeMaxAge[13])(onChangeMaxAge[12], onChangeMaxAge.paths), "SelectInviteRolesActionSheet", obj, "stack");
+      obj = { assignableRoles: null, selectedRoleIds: null, onSave: null };
+      obj[0] = c11;
+      obj[1] = roleIds;
+      obj[2] = onChangeRoleIds;
+      obj.openLazy(maxUses(onChangeMaxAge[13])(onChangeMaxAge[12], onChangeMaxAge.paths), "SelectInviteRolesActionSheet", obj, "stack");
     }
   }, items);
   const items2 = [maxUses, maxUsesOptions, onChangeMaxUses];
   const callback1 = maxUsesOptions.useCallback(() => {
     if (null != onChangeMaxAge) {
       let obj = maxAge(onChangeMaxAge[11]);
-      const tmp4 = guild(onChangeMaxAge[13])(onChangeMaxAge[14], onChangeMaxAge.paths);
-      obj = {};
-      const intl = guild(onChangeMaxAge[15]).intl;
-      obj.title = intl.string(guild(onChangeMaxAge[15]).t.gKmKP0);
-      obj.options = maxAgeOptions;
-      obj.value = maxAge;
-      obj.onChange = onChangeMaxAge;
-      obj.openLazy(tmp4, "InviteMaxAgeActionSheet", obj, "stack");
+      const tmp5 = maxUses(onChangeMaxAge[13])(onChangeMaxAge[14], onChangeMaxAge.paths);
+      obj = { title: null, options: null, value: null, onChange: null };
+      const intl = maxUses(onChangeMaxAge[15]).intl;
+      obj[0] = intl.string(maxUses(onChangeMaxAge[15]).t.gKmKP0);
+      obj[1] = maxAgeOptions;
+      obj[2] = maxAge;
+      obj[3] = tmp;
+      obj.openLazy(tmp5, "InviteMaxAgeActionSheet", obj, "stack");
     }
   }, items1);
-  const items3 = [tmp14Result, roleIds];
+  const items3 = [tmp16Result, roleIds];
   const callback2 = maxUsesOptions.useCallback(() => {
     if (null != onChangeMaxUses) {
       let obj = maxAge(onChangeMaxAge[11]);
-      const tmp4 = guild(onChangeMaxAge[13])(onChangeMaxAge[14], onChangeMaxAge.paths);
-      obj = {};
-      const intl = guild(onChangeMaxAge[15]).intl;
-      obj.title = intl.string(guild(onChangeMaxAge[15]).t["+3vH1h"]);
-      obj.options = maxUsesOptions;
-      obj.value = maxUses;
-      obj.onChange = onChangeMaxUses;
-      obj.openLazy(tmp4, "InviteMaxUsesActionSheet", obj, "stack");
+      const tmp5 = maxUses(onChangeMaxAge[13])(onChangeMaxAge[14], onChangeMaxAge.paths);
+      obj = { title: null, options: null, value: null, onChange: null };
+      const intl = maxUses(onChangeMaxAge[15]).intl;
+      obj[0] = intl.string(maxUses(onChangeMaxAge[15]).t["+3vH1h"]);
+      obj[1] = maxUsesOptions;
+      obj[2] = maxUses;
+      obj[3] = tmp;
+      obj.openLazy(tmp5, "InviteMaxUsesActionSheet", obj, "stack");
     }
   }, items2);
   const memo = maxUsesOptions.useMemo(() => {
@@ -125,112 +117,127 @@ export default function AdvancedInstantInvite(maxAge) {
     return roleIds.filter((arg0) => set.has(arg0)).length;
   }, items3);
   if (0 !== memo) {
-    let intl = guild(onChangeMaxAge[15]).intl;
-    obj = { count: memo };
-    const formatToPlainStringResult = intl.formatToPlainString(guild(onChangeMaxAge[15]).t["eXU3/V"], obj);
+    let intl = tmp11(tmp12[15]).intl;
+    obj = { count: null };
+    obj[0] = memo;
+    const formatToPlainStringResult = intl.formatToPlainString(tmp11(tmp12[15]).t["eXU3/V"], obj);
   }
-  const tmp24 = maxAgeOptions(maxAgeOptions, maxAge);
-  const tmp25 = maxAgeOptions(maxUsesOptions, maxUses);
+  maxUses = maxAge;
+  const found = maxAgeOptions.find((value) => value.value === maxUses);
+  let label;
+  if (found != null) {
+    label = found.label;
+  }
+  const found1 = maxUsesOptions.find((value) => value.value === maxUses);
+  let label1;
+  if (found1 != null) {
+    label1 = found1.label;
+  }
   if (null != guild) {
-    obj1 = { guild, size: guild(onChangeMaxAge[16]).GuildIconSizes.SMALL_32 };
-    let tmp26 = callback(maxAge(onChangeMaxAge[16]), obj1);
-    const tmp33 = maxAge(onChangeMaxAge[16]);
+    obj = { guild: null, size: null };
+    obj[0] = guild;
+    obj[1] = tmp11(tmp12[16]).GuildIconSizes.SMALL_32;
+    let tmp28 = callback(tmp15(tmp12[16]), obj);
+    const tmp15Result = tmp15(tmp12[16]);
   } else if (null != channelIconComponent) {
-    obj2 = { IconComponent: channelIconComponent };
-    tmp26 = callback(guild(onChangeMaxAge[17]).TableRowIcon, obj2);
+    obj1 = { IconComponent: null };
+    obj1[0] = channelIconComponent;
+    tmp28 = callback(tmp11(tmp12[17]).TableRowIcon, obj1);
   }
-  obj3 = { style: items4 };
+  obj2 = { style: items4, children: null };
   items4 = [tmp.container, style];
-  const obj4 = { spacing: maxAge(onChangeMaxAge[19]).space.PX_24 };
-  const obj5 = {};
-  const intl2 = guild(onChangeMaxAge[15]).intl;
-  obj5.title = intl2.string(guild(onChangeMaxAge[15]).t.LUo0Q8);
-  obj5.hasIcons = null != tmp26;
-  const obj6 = { icon: tmp26, label: str };
+  obj3 = { spacing: null, children: null };
+  obj3[0] = maxAge(onChangeMaxAge[19]).space.PX_24;
+  const obj4 = { title: null, hasIcons: null, children: null };
+  const intl2 = tmp11(tmp12[15]).intl;
+  obj4[0] = intl2.string(maxUses(onChangeMaxAge[15]).t.LUo0Q8);
+  obj4[1] = null != tmp28;
+  const obj5 = { icon: tmp28, label: str, subLabel: null };
   let name;
-  if (null != guild) {
+  if (guild != null) {
     name = guild.name;
   }
-  obj6.subLabel = name;
-  obj5.children = callback(guild(onChangeMaxAge[21]).TableRow, obj6);
-  const items5 = [callback(guild(onChangeMaxAge[20]).TableRowGroup, obj5), , , , ];
-  const obj7 = {};
-  const intl3 = guild(onChangeMaxAge[15]).intl;
-  obj7.title = intl3.string(guild(onChangeMaxAge[15]).t["4QuV7G"]);
-  obj7.hasIcons = false;
-  const obj8 = {};
-  const intl4 = guild(onChangeMaxAge[15]).intl;
-  obj8.label = intl4.string(guild(onChangeMaxAge[15]).t.gKmKP0);
-  let tmp41;
-  if (null != tmp24) {
-    const obj9 = { text: tmp24 };
-    tmp41 = callback(guild(onChangeMaxAge[21]).TableRow.TrailingText, obj9);
+  obj5[2] = name;
+  obj4[2] = callback(maxUses(onChangeMaxAge[21]).TableRow, obj5);
+  const items5 = [callback(maxUses(onChangeMaxAge[20]).TableRowGroup, obj4), , , , ];
+  const obj6 = { title: null, hasIcons: false, children: null };
+  const intl3 = tmp11(tmp12[15]).intl;
+  obj6[0] = intl3.string(maxUses(onChangeMaxAge[15]).t["4QuV7G"]);
+  const obj7 = { label: null, trailing: null, arrow: true, onPress: null, disabled: null };
+  const intl4 = tmp11(tmp12[15]).intl;
+  obj7[0] = intl4.string(maxUses(onChangeMaxAge[15]).t.gKmKP0);
+  let tmp32Result;
+  if (null != label) {
+    const obj8 = { text: null };
+    obj8[0] = label;
+    tmp32Result = tmp32(tmp11(tmp12[21]).TableRow.TrailingText, obj8);
   }
-  obj8.trailing = tmp41;
-  obj8.arrow = true;
-  obj8.onPress = callback1;
-  obj8.disabled = null == onChangeMaxAge;
-  const items6 = [callback(guild(onChangeMaxAge[21]).TableRow, obj8), ];
-  const obj10 = {};
-  const intl5 = guild(onChangeMaxAge[15]).intl;
-  obj10.label = intl5.string(guild(onChangeMaxAge[15]).t["+3vH1h"]);
-  let tmp46;
-  if (null != tmp25) {
-    const obj11 = { text: tmp25 };
-    tmp46 = callback(guild(onChangeMaxAge[21]).TableRow.TrailingText, obj11);
+  obj7[1] = tmp32Result;
+  obj7[3] = callback1;
+  obj7[4] = null == onChangeMaxAge;
+  const items6 = [callback(maxUses(onChangeMaxAge[21]).TableRow, obj7), ];
+  const obj9 = { label: null, trailing: null, arrow: true, onPress: null, disabled: null };
+  const intl5 = tmp11(tmp12[15]).intl;
+  obj9[0] = intl5.string(maxUses(onChangeMaxAge[15]).t["+3vH1h"]);
+  tmp32Result = undefined;
+  if (null != label1) {
+    const obj10 = { text: null };
+    obj10[0] = label1;
+    tmp32Result = tmp32(tmp11(tmp12[21]).TableRow.TrailingText, obj10);
   }
-  obj10.trailing = tmp46;
-  obj10.arrow = true;
-  obj10.onPress = callback2;
-  obj10.disabled = null == onChangeMaxUses;
-  items6[1] = callback(guild(onChangeMaxAge[21]).TableRow, obj10);
-  obj7.children = items6;
-  items5[1] = roleIds(guild(onChangeMaxAge[20]).TableRowGroup, obj7);
-  let tmp50 = null;
-  if (tmp16) {
-    const obj12 = { hasIcons: false };
-    const obj13 = {};
-    const intl6 = guild(onChangeMaxAge[15]).intl;
-    obj13.label = intl6.string(guild(onChangeMaxAge[15]).t.rPYJxL);
-    obj13.arrow = true;
-    obj13.subLabel = formatToPlainStringResult;
-    obj13.onPress = callback;
-    obj12.children = callback(guild(onChangeMaxAge[21]).TableRow, obj13);
-    tmp50 = callback(guild(onChangeMaxAge[20]).TableRowGroup, obj12);
+  obj9[1] = tmp32Result;
+  obj9[3] = callback2;
+  obj9[4] = null == onChangeMaxUses;
+  items6[1] = callback(maxUses(onChangeMaxAge[21]).TableRow, obj9);
+  obj6[2] = items6;
+  items5[1] = roleIds(maxUses(onChangeMaxAge[20]).TableRowGroup, obj6);
+  let tmp32Result1 = null;
+  if (tmp18) {
+    const obj11 = { hasIcons: false, children: null };
+    const obj12 = { label: null, arrow: true, subLabel: null, onPress: null };
+    const intl6 = tmp11(tmp12[15]).intl;
+    obj12[0] = intl6.string(tmp11(tmp12[15]).t.rPYJxL);
+    obj12[2] = formatToPlainStringResult;
+    obj12[3] = callback;
+    obj11[1] = tmp32(tmp11(tmp12[21]).TableRow, obj12);
+    tmp32Result1 = tmp32(tmp11(tmp12[20]).TableRowGroup, obj11);
   }
-  items5[2] = tmp50;
-  let tmp54 = !isManualApprovalGuild && null != onChangeTemporary;
-  if (tmp54) {
-    const obj14 = { hasIcons: false };
-    const intl7 = guild(onChangeMaxAge[15]).intl;
-    obj14.helperText = intl7.string(guild(onChangeMaxAge[15]).t.A53l87);
-    const obj15 = {};
-    const intl8 = guild(onChangeMaxAge[15]).intl;
-    obj15.label = intl8.string(guild(onChangeMaxAge[15]).t.dy1ico);
-    obj15.value = temporary;
-    obj15.onValueChange = onChangeTemporary;
-    obj14.children = callback(guild(onChangeMaxAge[22]).TableSwitchRow, obj15);
-    tmp54 = callback(guild(onChangeMaxAge[20]).TableRowGroup, obj14);
+  items5[2] = tmp32Result1;
+  let tmp32Result2 = !isManualApprovalGuild;
+  if (!isManualApprovalGuild) {
+    tmp32Result2 = null != onChangeTemporary;
   }
-  items5[3] = tmp54;
-  let tmp58 = null;
+  if (tmp32Result2) {
+    const obj13 = { hasIcons: false, helperText: null, children: null };
+    const intl7 = tmp11(tmp12[15]).intl;
+    obj13[1] = intl7.string(tmp11(tmp12[15]).t.A53l87);
+    const obj14 = { label: null, value: null, onValueChange: null };
+    const intl8 = tmp11(tmp12[15]).intl;
+    obj14[0] = intl8.string(tmp11(tmp12[15]).t.dy1ico);
+    obj14[1] = temporary;
+    obj14[2] = onChangeTemporary;
+    obj13[2] = tmp32(tmp11(tmp12[22]).TableSwitchRow, obj14);
+    tmp32Result2 = tmp32(tmp11(tmp12[20]).TableRowGroup, obj13);
+  }
+  items5[3] = tmp32Result2;
+  let tmp32Result3 = null;
   if (canCreateApplicationBypassInvites) {
-    const obj16 = { hasIcons: false };
-    const intl9 = guild(onChangeMaxAge[15]).intl;
-    obj16.helperText = intl9.string(guild(onChangeMaxAge[15]).t["jvd/LF"]);
-    const obj17 = {};
-    const intl10 = guild(onChangeMaxAge[15]).intl;
-    obj17.label = intl10.string(guild(onChangeMaxAge[15]).t["1i1bUl"]);
-    obj17.value = guild(onChangeMaxAge[23]).hasFlag(flags, guild(onChangeMaxAge[24]).GuildInviteFlags.IS_APPLICATION_BYPASS);
-    obj17.onValueChange = function onValueChange(arg0) {
-      return callback(guild(onChangeMaxAge[23]).setFlag(flags, guild(onChangeMaxAge[24]).GuildInviteFlags.IS_APPLICATION_BYPASS, arg0));
+    const obj15 = { hasIcons: false, helperText: null, children: null };
+    const intl9 = tmp11(tmp12[15]).intl;
+    obj15[1] = intl9.string(tmp11(tmp12[15]).t["jvd/LF"]);
+    const obj16 = { label: null, value: null, onValueChange: null };
+    const intl10 = tmp11(tmp12[15]).intl;
+    obj16[0] = intl10.string(tmp11(tmp12[15]).t["1i1bUl"]);
+    obj16[1] = tmp11(tmp12[23]).hasFlag(flags, tmp11(tmp12[24]).GuildInviteFlags.IS_APPLICATION_BYPASS);
+    obj16[2] = function onValueChange(arg0) {
+      return callback(maxUses(onChangeMaxAge[23]).setFlag(flags, maxUses(onChangeMaxAge[24]).GuildInviteFlags.IS_APPLICATION_BYPASS, arg0));
     };
-    obj16.children = callback(guild(onChangeMaxAge[22]).TableSwitchRow, obj17);
-    tmp58 = callback(guild(onChangeMaxAge[20]).TableRowGroup, obj16);
-    const obj24 = guild(onChangeMaxAge[23]);
+    obj15[2] = tmp32(tmp11(tmp12[22]).TableSwitchRow, obj16);
+    tmp32Result3 = tmp32(tmp11(tmp12[20]).TableRowGroup, obj15);
+    const tmp11Result = tmp11(tmp12[23]);
   }
-  items5[4] = tmp58;
-  obj4.children = items5;
-  obj3.children = roleIds(guild(onChangeMaxAge[18]).Stack, obj4);
-  return callback(maxUses, obj3);
+  items5[4] = tmp32Result3;
+  obj3[1] = items5;
+  obj2[1] = roleIds(maxUses(onChangeMaxAge[18]).Stack, obj3);
+  return callback(maxUses, obj2);
 };

@@ -1,61 +1,62 @@
-// Module ID: 8099
-// Function ID: 64268
+// Module ID: 8123
+// Function ID: 8124
 // Name: useVideoControls
-// Dependencies: [57, 31, 4157, 33, 621, 682, 8100, 4165, 566, 8092, 8101, 8093, 8102, 2]
+// Dependencies: [32, 19, 4181, 21, 644, 705, 8124, 4189, 589, 8116, 8125, 8117, 8126, 2]
 // Exports: default, initVideoStateStore, setMuted, setPausedState, setVideoStateControls, toggleMuted, tryPauseCurrentVideo, unpauseCurrentVideoIfNeeded
 
-// Module 8099 (useVideoControls)
+// Module 8123 (useVideoControls)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import noop from "noop";
+import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
 import { jsx } from "jsxProd";
 import keys from "keys";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
 const require = arg1;
-keys = keys.create(() => ({ controls: undefined, paused: false }));
-let closure_8 = _createForOfIteratorHelperLoose.createStyles({ slider: { marginBottom: 8 } });
-let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/media_viewer/native/useVideoControls.tsx");
+keys = keys.create(() => ({ controls: "ct", paused: null }));
+let closure_8 = createCacheKey.createStyles({ slider: { marginBottom: 8 } });
+let result = require("maybeApplyNoTextColorForLightCustomTheme").fileFinishedImporting("modules/media_viewer/native/useVideoControls.tsx");
 
-export default function useVideoControls(arg0, portal, controls) {
+export default function useVideoControls(arg0, portal) {
   const _require = arg0;
-  const importDefault = controls;
+  const importDefault = arg2;
   let obj = _require(stateFromStores[8]);
-  const items = [_isNativeReflectConstruct];
-  stateFromStores = obj.useStateFromStores(items, () => tmp6.useReducedMotion);
-  const tmp3 = callback(state.useState(false), 2);
-  callback = tmp4;
+  const items = [maybeApplyNoTextColorForLightCustomTheme];
+  stateFromStores = obj.useStateFromStores(items, () => tmp9.useReducedMotion);
+  const tmp5 = callback(state.useState(false), 2);
+  callback = tmp6;
   const MediaViewerSourcesStore = _require(stateFromStores[9]).MediaViewerSourcesStore;
   state = MediaViewerSourcesStore.useState((spoilerIndexes) => {
     spoilerIndexes = spoilerIndexes.spoilerIndexes;
     return spoilerIndexes.has(closure_0);
   });
-  const tmp6 = importDefault(stateFromStores[10])(arg0);
-  _isNativeReflectConstruct = tmp6;
-  let result = null != controls;
+  const tmp9 = importDefault(stateFromStores[10])(arg0);
+  maybeApplyNoTextColorForLightCustomTheme = tmp9;
+  let result = null != arg2;
   if (result) {
-    result = _require(stateFromStores[11]).supportOverlayVideoControls(portal);
-    const obj2 = _require(stateFromStores[11]);
+    result = tmp2(tmp3[11]).supportOverlayVideoControls(portal);
+    const tmp2Result = tmp2(tmp3[11]);
   }
   let videoURI = portal.portal;
-  if (null == videoURI) {
+  if (videoURI == null) {
     videoURI = portal.videoURI;
   }
-  const tmp10 = importDefault(stateFromStores[10])(videoURI);
-  const keys = tmp10;
-  const items1 = [controls, videoURI, stateFromStores, tmp10, state, tmp6, arg0];
+  const tmp11 = importDefault(stateFromStores[10])(videoURI);
+  const keys = tmp11;
+  const items1 = [arg2, videoURI, stateFromStores, tmp11, state, tmp9, arg0];
   const effect = state.useEffect(() => {
-    if (_isNativeReflectConstruct !== closure_0) {
-      if (null != _isNativeReflectConstruct) {
+    if (maybeApplyNoTextColorForLightCustomTheme !== closure_0) {
+      if (null != tmp) {
         if (null != videoURI) {
-          if (closure_7 !== videoURI) {
-            controls.seek(0);
-            let tmp8 = state;
+          if (closure_7 !== tmp3) {
+            closure_1.seek(0);
+            let tmp6 = state;
             if (!state) {
-              tmp8 = stateFromStores;
+              tmp6 = stateFromStores;
             }
-            controls.pause(tmp8);
-            tmp4(tmp8);
+            closure_1.pause(tmp6);
+            tmp6(tmp6);
+            const obj = closure_1;
           }
         }
       }
@@ -63,52 +64,56 @@ export default function useVideoControls(arg0, portal, controls) {
   }, items1);
   [][0] = arg0;
   if (result) {
-    obj = { style: tmp.slider, controls, paused: tmp3[0], setPaused: tmp4, onPlayPress: tmp12 };
-    return videoURI(importDefault(stateFromStores[12]), obj, videoURI);
+    obj = { style: null, controls: null, paused: null, setPaused: null, onPlayPress: null };
+    obj[0] = tmp.slider;
+    obj[1] = arg2;
+    obj[2] = tmp5[0];
+    obj[3] = tmp6;
+    obj[4] = tmp13;
+    return videoURI(tmp8(tmp3[12]), obj, videoURI);
   }
+  const obj2 = state;
   tmp = callback2();
+  tmp2 = _require;
 };
 export const useVideoStateStore = keys;
 export const initVideoStateStore = function initVideoStateStore() {
-  require(682) /* batchUpdates */.batchUpdates(() => {
-    outer1_7.setState({ controls: undefined, paused: false });
+  require(705) /* batchUpdates */.batchUpdates(() => {
+    state.setState({ controls: "ct", paused: null });
   });
 };
 export const setMuted = function setMuted(arg0) {
   const _require = arg0;
-  _require(682).batchUpdates(() => {
+  _require(705).batchUpdates(() => {
     const useMediaPlayerMutedStore = callback(outer1_2[6]).useMediaPlayerMutedStore;
     useMediaPlayerMutedStore.setState({ isMuted: callback });
   });
 };
 export const toggleMuted = function toggleMuted() {
-  require(682) /* batchUpdates */.batchUpdates(() => {
-    const useMediaPlayerMutedStore = outer1_0(outer1_2[6]).useMediaPlayerMutedStore;
+  require(705) /* batchUpdates */.batchUpdates(() => {
+    const useMediaPlayerMutedStore = callback(table[6]).useMediaPlayerMutedStore;
     useMediaPlayerMutedStore.setState((isMuted) => ({ isMuted: !isMuted.isMuted }));
   });
 };
 export const setVideoStateControls = function setVideoStateControls(videoControls) {
   const _require = videoControls;
-  _require(682).batchUpdates(() => outer1_7.setState({ controls: closure_0 }));
+  _require(705).batchUpdates(() => outer1_7.setState({ controls: closure_0 }));
 };
 export const setPausedState = function setPausedState(arg0) {
   const _require = arg0;
-  _require(682).batchUpdates(() => outer1_7.setState({ paused: closure_0 }));
+  _require(705).batchUpdates(() => outer1_7.setState({ paused: closure_0 }));
 };
 export const tryPauseCurrentVideo = function tryPauseCurrentVideo() {
   const controls = keys.getState().controls;
-  if (null != controls) {
+  if (controls != null) {
     controls.pause(true);
   }
 };
 export const unpauseCurrentVideoIfNeeded = function unpauseCurrentVideoIfNeeded() {
-  let paused = keys.getState().paused;
-  if (!paused) {
+  if (!keys.getState().paused) {
     const controls = keys.getState().controls;
-    paused = null == controls;
-    const obj = controls;
-  }
-  if (!paused) {
-    obj.pause(false);
+    if (controls != null) {
+      controls.pause(false);
+    }
   }
 };

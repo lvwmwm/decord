@@ -1,38 +1,40 @@
-// Module ID: 12007
-// Function ID: 92651
+// Module ID: 12031
+// Function ID: 12032
 // Name: VoicePanelStreamPreview
-// Dependencies: [31, 27, 4184, 1194, 33, 4026, 4578, 4165, 689, 10829, 566, 4229, 4166, 7656, 4161, 1212, 2]
+// Dependencies: [19, 17, 4208, 1218, 21, 4050, 4600, 4189, 712, 10853, 589, 4253, 4190, 7679, 4185, 1236, 2]
 // Exports: VoicePanelStreamPreview
 
-// Module 12007 (VoicePanelStreamPreview)
-import "result";
+// Module 12031 (VoicePanelStreamPreview)
+import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_5 from "_isNativeReflectConstruct";
+import reset from "reset";
+import fetchFingerprint from "fetchFingerprint";
 import jsxProd from "jsxProd";
-import importDefaultResult from "module_4026";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import importDefaultResult1 from "module_4026";
+import importDefaultResult from "module_4050";
+import createCacheKey from "createCacheKey";
+import importDefaultResult1 from "module_4050";
 
+let Pressable;
+let c3;
 let closure_6;
-let closure_7;
+let error;
 const require = arg1;
-const View = get_ActivityIndicator.View;
-({ jsx: closure_6, jsxs: closure_7 } = jsxProd);
-let closure_8 = require("module_4026").createAnimatedComponent(get_ActivityIndicator.Pressable);
-let closure_9 = require("module_4026").createAnimatedComponent(require("Button").Button);
+({ View: c3, Pressable } = get_ActivityIndicator);
+({ jsx: closure_6, jsxs: error } = jsxProd);
+let closure_8 = require("module_4050").createAnimatedComponent(Pressable);
+let closure_9 = require("module_4050").createAnimatedComponent(require("Button").Button);
 let closure_10 = { duration: 200 };
-let obj = {};
-obj = { position: "absolute", alignItems: "center", justifyContent: "center", width: "100%", height: "100%", backgroundColor: require("_createForOfIteratorHelperLoose").colors.VOICE_VIDEO_VIDEO_TILE_BACKGROUND };
-obj.roundedCard = obj;
-obj.streamPreviewImage = { position: "absolute", width: "100%", height: "100%", opacity: 0.5 };
-obj.ownStreamTextContainer = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SCRIM, borderRadius: require("_createForOfIteratorHelperLoose").radii.sm, marginHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16 };
-_createForOfIteratorHelperLoose = { textAlign: "center", paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16, paddingVertical: require("_createForOfIteratorHelperLoose").space.PX_16 };
-obj.ownStreamText = _createForOfIteratorHelperLoose;
-let closure_11 = _createForOfIteratorHelperLoose.createStyles(obj);
+let obj = { roundedCard: null, streamPreviewImage: null, ownStreamTextContainer: null, ownStreamText: null };
+obj = { position: "absolute", alignItems: "center", justifyContent: "center", width: "100%", height: "100%", backgroundColor: require("Themes").colors.VOICE_VIDEO_VIDEO_TILE_BACKGROUND };
+obj[0] = obj;
+obj[1] = { position: "absolute", width: "100%", height: "100%", opacity: 0.5 };
+obj[2] = { backgroundColor: require("Themes").colors.BACKGROUND_SCRIM, borderRadius: require("Themes").radii.sm, marginHorizontal: require("Themes").space.PX_16 };
+createCacheKey = { textAlign: "center", paddingHorizontal: require("Themes").space.PX_16, paddingVertical: require("Themes").space.PX_16 };
+obj[3] = createCacheKey;
+let closure_11 = createCacheKey.createStyles(obj);
 let closure_12 = { code: "function VoicePanelStreamPreviewTsx1(){const{mode,withTiming,OPACITY_TIMING}=this.__closure;if(mode==null){return{opacity:1};}return{opacity:withTiming(mode.get()==='pip'?0:1,OPACITY_TIMING)};}" };
-let obj1 = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SCRIM, borderRadius: require("_createForOfIteratorHelperLoose").radii.sm, marginHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16 };
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/voice_panel/native/shared/VoicePanelStreamPreview.tsx");
+let obj1 = { backgroundColor: require("Themes").colors.BACKGROUND_SCRIM, borderRadius: require("Themes").radii.sm, marginHorizontal: require("Themes").space.PX_16 };
+const result = require("reset").fileFinishedImporting("modules/voice_panel/native/shared/VoicePanelStreamPreview.tsx");
 
 export const VoicePanelStreamPreview = function VoicePanelStreamPreview(mode) {
   let disabled;
@@ -41,104 +43,102 @@ export const VoicePanelStreamPreview = function VoicePanelStreamPreview(mode) {
   mode = mode.mode;
   const stream = mode.stream;
   ({ disabled, onPress, layout } = mode);
-  let tmp = callback2();
+  const tmp = callback2();
   let guildId;
-  if (null != stream) {
+  if (stream != null) {
     guildId = stream.guildId;
   }
   let channelId;
-  if (null != stream) {
+  if (stream != null) {
     channelId = stream.channelId;
   }
   let ownerId;
-  if (null != stream) {
+  if (stream != null) {
     ownerId = stream.ownerId;
   }
-  const previewUrl = stream(10829)(guildId, channelId, ownerId).previewUrl;
-  let obj = mode(566);
-  const items = [_isNativeReflectConstruct, closure_5];
+  const previewUrl = stream(10853)(guildId, channelId, ownerId).previewUrl;
+  let obj = mode(589);
+  const items = [reset, fetchFingerprint];
   const items1 = [stream];
   const stateFromStores = obj.useStateFromStores(items, () => {
-    let tmp = null != stream;
-    if (tmp) {
-      tmp = stream.ownerId === outer1_5.getId();
+    let tmp2 = null != stream;
+    if (tmp2) {
+      tmp2 = tmp.ownerId === outer1_5.getId();
     }
-    if (tmp) {
-      tmp = null == outer1_4.getStreamerActiveStreamMetadataForStream(mode(outer1_2[11]).encodeStreamKey(stream));
+    if (tmp2) {
+      tmp2 = null == outer1_4.getStreamerActiveStreamMetadataForStream(mode(outer1_2[11]).encodeStreamKey(tmp));
       const obj = mode(outer1_2[11]);
     }
-    return tmp;
+    return tmp2;
   }, items1);
-  let obj1 = mode(4026);
+  let obj1 = mode(4050);
   class T {
     constructor() {
+      obj = mode;
       if (null == mode) {
-        obj = {};
-        num3 = 1;
-        obj.opacity = 1;
+        obj = { opacity: 1 };
       } else {
-        obj = {};
         tmp = mode;
         tmp2 = outer1_2;
-        num = 12;
         obj2 = mode(outer1_2[12]);
-        tmp3 = mode;
-        num2 = 1;
+        num = 1;
         str = "pip";
-        if ("pip" === mode.get()) {
-          num2 = 0;
+        if ("pip" === obj.get()) {
+          num = 0;
         }
-        tmp4 = outer1_10;
-        obj.opacity = obj2.withTiming(num2, outer1_10);
+        obj = { opacity: null };
+        tmp3 = outer1_10;
+        obj[0] = obj2.withTiming(num, outer1_10);
       }
       return obj;
     }
   }
-  obj = { mode, withTiming: mode(4166).withTiming, OPACITY_TIMING: closure_10 };
+  obj = { mode, withTiming: mode(4190).withTiming, OPACITY_TIMING: closure_10 };
   T.__closure = obj;
   T.__workletHash = 15496474861955;
   T.__initData = closure_12;
-  obj = { layout, onPress, style: tmp.roundedCard };
-  let tmp10 = disabled;
+  obj = { layout, onPress, style: tmp.roundedCard, disabled: null, accessible: false, children: null };
+  let tmp13 = disabled;
   const animatedStyle = obj1.useAnimatedStyle(T);
   if (!disabled) {
-    tmp10 = stateFromStores;
+    tmp13 = stateFromStores;
   }
-  obj.disabled = tmp10;
-  obj.accessible = false;
-  let tmp11 = null;
+  obj[3] = tmp13;
+  let tmp14 = null;
   if (null != previewUrl) {
-    obj1 = { layout };
-    let obj2 = { uri: previewUrl };
-    obj1.source = obj2;
-    obj1.style = tmp.streamPreviewImage;
-    obj1.resizeMode = "cover";
-    tmp11 = callback(stream(4026).Image, obj1);
+    obj1 = { layout: null, source: null, style: null, resizeMode: "cover" };
+    obj1[0] = layout;
+    let obj2 = { uri: null };
+    obj2[0] = previewUrl;
+    obj1[1] = obj2;
+    obj1[2] = tmp.streamPreviewImage;
+    tmp14 = callback(tmp2(4050).Image, obj1);
   }
-  const items2 = [tmp11, ];
-  const obj3 = { style: animatedStyle, layout };
-  const tmp15 = callback;
-  const tmp2 = stream(10829);
-  const tmp8 = closure_7;
-  const tmp9 = closure_8;
+  const items2 = [tmp14, ];
+  const obj3 = { style: animatedStyle, layout, children: null };
+  const tmp11 = closure_7;
+  const tmp12 = closure_8;
+  const tmp4 = stream(10853);
   if (stateFromStores) {
-    const obj4 = { style: tmp.ownStreamTextContainer };
-    const obj5 = { variant: "text-sm/semibold", color: "text-overlay-light", style: tmp.ownStreamText };
-    const intl2 = mode(1212).intl;
-    obj5.children = intl2.string(mode(1212).t["ro/HN8"]);
-    obj4.children = tmp17(mode(4161).Text, obj5);
-    let tmp17Result = tmp17(View, obj4);
+    const obj4 = { style: null, children: null };
+    obj4[0] = tmp.ownStreamTextContainer;
+    const obj5 = { variant: "text-sm/semibold", color: "text-overlay-light", style: null, children: null };
+    obj5[2] = tmp.ownStreamText;
+    const intl2 = tmp8(1236).intl;
+    obj5[3] = intl2.string(tmp8(1236).t["ro/HN8"]);
+    obj4[1] = tmp16(tmp8(4185).Text, obj5);
+    let tmp16Result = tmp16(closure_3, obj4);
   } else {
-    const obj6 = { layout, disabled };
-    const intl = mode(1212).intl;
-    obj6.text = intl.string(mode(1212).t["7Xq/nV"]);
-    obj6.size = "sm";
-    obj6.variant = "primary-overlay";
-    obj6.onPress = onPress;
-    tmp17Result = tmp17(closure_9, obj6);
+    const obj6 = { layout: null, disabled: null, text: null, size: "sm", variant: "primary-overlay", onPress: null };
+    obj6[0] = layout;
+    obj6[1] = disabled;
+    const intl = tmp8(1236).intl;
+    obj6[2] = intl.string(tmp8(1236).t["7Xq/nV"]);
+    obj6[5] = onPress;
+    tmp16Result = tmp16(closure_9, obj6);
   }
-  obj3.children = tmp17Result;
-  items2[1] = tmp15(stream(7656), obj3);
-  obj.children = items2;
-  return tmp8(tmp9, obj);
+  obj3[2] = tmp16Result;
+  items2[1] = callback(stream(7679), obj3);
+  obj[5] = items2;
+  return tmp11(tmp12, obj);
 };

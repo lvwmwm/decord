@@ -1,23 +1,22 @@
-// Module ID: 13530
-// Function ID: 103880
+// Module ID: 13553
+// Function ID: 13554
 // Name: validateTransportType
-// Dependencies: [4068, 653, 10592, 2]
+// Dependencies: [4092, 676, 10626, 2]
 // Exports: validateTransportType
 
-// Module 13530 (validateTransportType)
+// Module 13553 (validateTransportType)
 import { TransportTypes } from "RPC_SCOPE_CONFIG";
 import { RPCErrors } from "ME";
 
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/rpc/helpers/validateTransportType.tsx");
+const result = require("prototype").fileFinishedImporting("modules/rpc/helpers/validateTransportType.tsx");
 
 export const validateTransportType = function validateTransportType(transport) {
   if (TransportTypes.IPC !== transport) {
     if (TransportTypes.POST_MESSAGE !== transport) {
-      let tmp4 = importDefault(10592);
-      const obj = { errorCode: RPCErrors.INVALID_COMMAND };
-      const prototype = tmp4.prototype;
-      tmp4 = new tmp4(obj, "Invalid transport.");
-      throw tmp4;
+      const obj = { errorCode: null };
+      obj[0] = RPCErrors.INVALID_COMMAND;
+      const tmp7 = new importDefault(10626)(obj, "Invalid transport.");
+      throw tmp7;
     }
   }
 };

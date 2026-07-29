@@ -1,143 +1,184 @@
-// Module ID: 6713
-// Function ID: 59066
+// Module ID: 6734
+// Function ID: 6735
 // Name: useTextFieldState
-// Dependencies: [57, 31, 4574, 2]
-// Exports: useTextField
+// Dependencies: [32, 19, 4596, 2]
+// Exports: useTextField, useTextFieldState
 
-// Module 6713 (useTextFieldState)
+// Module 6734 (useTextFieldState)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
+import noop from "noop";
 
 const require = arg1;
-function useTextFieldState(onClear) {
-  let defaultValue;
+let result = require("setAccessibilityFocus").fileFinishedImporting("design/components/TextField/native/useTextField.native.tsx");
+
+export const useTextFieldState = function useTextFieldState(onClear) {
   let onChange;
   let value;
-  ({ value, defaultValue, onChange } = onClear);
+  ({ value, onChange } = onClear);
   onClear = onClear.onClear;
-  if (null != value) {
-    defaultValue = value;
+  let obj = callback;
+  let str = first;
+  if (first == null) {
+    str = onClear.defaultValue;
   }
-  let str = "";
-  if (null != defaultValue) {
-    str = defaultValue;
+  if (str == null) {
+    str = "";
   }
-  const tmp2 = callback(callback.useState(str), 2);
-  let first = tmp2[0];
-  callback = tmp2[1];
-  if (null != value) {
-    first = value;
+  const tmp = callback(callback.useState(str), 2);
+  callback = tmp[1];
+  if (first == null) {
+    first = tmp[0];
   }
   const items = [onChange];
-  callback = callback.useCallback((arg0) => {
-    callback(arg0);
-    if (null != onChange) {
+  callback = obj.useCallback((arg0) => {
+    obj(arg0);
+    if (onChange != null) {
       onChange(arg0);
     }
   }, items);
   const items1 = [callback, onClear];
-  const obj = {
+  obj = {
     value: first,
     setTextValue: callback,
-    clear: callback.useCallback(() => {
-      callback("");
-      if (null != onClear) {
+    clear: obj.useCallback(() => {
+      callback1("");
+      if (onClear != null) {
         onClear();
       }
     }, items1),
     hasValue: first.length > 0
   };
   return obj;
-}
-let result = require("setAccessibilityFocus").fileFinishedImporting("design/components/TextField/native/useTextField.native.tsx");
-
-export { useTextFieldState };
-export const useTextField = function useTextField(onClear, arg1) {
-  let closure_0 = onClear;
-  const ref = React.useRef(null);
+};
+export const useTextField = function useTextField(onClear, ref) {
+  let onChange;
+  let value;
+  onChange = onClear;
+  let obj = callback1;
+  ref = callback1.useRef(null);
+  onClear = ref;
   const items = [ref, onClear.onClear];
-  let obj = {};
-  const callback = React.useCallback(() => {
-    const current = ref.current;
-    if (null != current) {
+  obj = {};
+  const callback = callback1.useCallback(() => {
+    const current = onClear.current;
+    if (current != null) {
       current.clear();
     }
-    onClear = onClear.onClear;
-    if (null != onClear) {
+    onClear = onChange.onClear;
+    if (onClear != null) {
       onClear();
     }
-    let obj = onClear(ref[2]);
-    obj = { ref };
-    const result = obj.setAccessibilityFocus(obj);
+    const result = onChange(onClear[2]).setAccessibilityFocus({ ref: onClear });
   }, items);
   const merged = Object.assign(onClear);
-  obj["onClear"] = callback;
-  const tmp4 = useTextFieldState(obj);
-  let _slicedToArray = tmp4;
-  const items1 = [ref, tmp4];
-  const imperativeHandle = React.useImperativeHandle(arg1, () => ({
+  obj.onClear = callback;
+  onChange = undefined;
+  onClear = undefined;
+  obj = undefined;
+  callback1 = undefined;
+  ({ value, onChange } = obj);
+  onClear = obj.onClear;
+  let str = first;
+  if (first == null) {
+    str = obj.defaultValue;
+  }
+  if (str == null) {
+    str = "";
+  }
+  const tmp4 = obj(callback1.useState(str), 2);
+  obj = tmp4[1];
+  if (first == null) {
+    first = tmp4[0];
+  }
+  const items1 = [onChange];
+  callback1 = obj.useCallback((arg0) => {
+    obj(arg0);
+    if (onChange != null) {
+      onChange(arg0);
+    }
+  }, items1);
+  const items2 = [callback1, onClear];
+  obj = {
+    value: first,
+    setTextValue: callback1,
+    clear: obj.useCallback(() => {
+      callback1("");
+      if (onClear != null) {
+        onClear();
+      }
+    }, items2),
+    hasValue: first.length > 0
+  };
+  const items3 = [ref, obj];
+  const imperativeHandle = obj.useImperativeHandle(ref, () => ({
     blur() {
-      const current = outer1_1.current;
-      if (null != current) {
+      const current = closure_1.current;
+      if (current != null) {
         current.blur();
       }
     },
     focus() {
-      const current = outer1_1.current;
-      if (null != current) {
+      const current = closure_1.current;
+      if (current != null) {
         current.focus();
       }
     },
     isFocused() {
-      const current = outer1_1.current;
+      const current = closure_1.current;
       let isFocusedResult;
-      if (null != current) {
+      if (current != null) {
         isFocusedResult = current.isFocused();
       }
       return true === isFocusedResult;
     },
     getText() {
-      return outer1_2.value;
+      return _slicedToArray.value;
     },
-    setText(text) {
-      if ("" === text) {
-        outer1_2.clear();
+    setText(arg0) {
+      if ("" === arg0) {
+        _slicedToArray.clear();
       } else {
-        const current = outer1_1.current;
-        if (null != current) {
-          const obj = { text };
+        const current = closure_1.current;
+        if (current != null) {
+          const obj = { text: null };
+          obj[0] = arg0;
           current.setNativeProps(obj);
         }
-        outer1_2.setTextValue(text);
+        _slicedToArray.setTextValue(arg0);
       }
     },
     measure(arg0) {
-      const current = outer1_1.current;
-      if (null != current) {
+      const current = closure_1.current;
+      if (current != null) {
         current.measure(arg0);
       }
     },
     measureInWindow(arg0) {
-      const current = outer1_1.current;
-      if (null != current) {
+      const current = closure_1.current;
+      if (current != null) {
         current.measureInWindow(arg0);
       }
     },
     measureLayout(arg0, arg1, arg2) {
-      const current = outer1_1.current;
-      if (null != current) {
+      const current = closure_1.current;
+      if (current != null) {
         current.measureLayout(arg0, arg1, arg2);
       }
     }
-  }), items1);
-  obj = { innerRef: ref, state: tmp4 };
-  obj = {};
+  }), items3);
+  const obj1 = { innerRef: ref, state: obj, inputProps: null };
+  const obj2 = {};
   const merged1 = Object.assign(onClear);
-  obj["onChange"] = undefined;
-  obj["onChangeText"] = tmp4.setTextValue;
-  obj["editable"] = !onClear.isDisabled;
-  obj["focusable"] = !onClear.isDisabled && onClear.focusable;
-  obj["aria-disabled"] = onClear.isDisabled;
-  obj.inputProps = obj;
-  return obj;
+  obj2.onChange = undefined;
+  obj2.onChangeText = obj.setTextValue;
+  obj2.editable = !onClear.isDisabled;
+  const isDisabled = onClear.isDisabled;
+  let focusable = !isDisabled;
+  if (!isDisabled) {
+    focusable = onClear.focusable;
+  }
+  obj2.focusable = focusable;
+  obj2["aria-disabled"] = onClear.isDisabled;
+  obj1[2] = obj2;
+  return obj1;
 };

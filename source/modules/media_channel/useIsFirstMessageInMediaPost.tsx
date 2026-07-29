@@ -1,21 +1,72 @@
-// Module ID: 7700
-// Function ID: 61471
-// Name: isFirstMessageInMediaPost
-// Dependencies: [1348, 624, 21, 2]
-// Exports: useIsFirstMessageInMediaPost
+// Module ID: 7723
+// Function ID: 7724
+// Name: useIsFirstMessageInMediaPost
+// Dependencies: [1372, 647, 11, 2]
+// Exports: isFirstMessageIdInMediaPost, isFirstMessageInMediaPost, useIsFirstMessageInMediaPost
 
-// Module 7700 (isFirstMessageInMediaPost)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 7723 (useIsFirstMessageInMediaPost)
+import ensureGuildLoaded from "ensureGuildLoaded";
 
 const require = arg1;
-function isFirstMessageInMediaPost(id) {
-  let tmp = null != id;
+const result = require("DISCORD_EPOCH").fileFinishedImporting("modules/media_channel/useIsFirstMessageInMediaPost.tsx");
+
+export const useIsFirstMessageInMediaPost = function useIsFirstMessageInMediaPost(arg0) {
+  const _require = arg0;
+  const items = [arg0];
+  return _require(647).useStateFromStores([], () => {
+    let tmp2 = null != closure_0;
+    if (tmp2) {
+      const channel_id = tmp.channel_id;
+      let flag = false;
+      if (tmp.id === obj.castChannelIdAsMessageId(channel_id)) {
+        const channel = outer1_3.getChannel(channel_id);
+        flag = false;
+        if (null != channel) {
+          flag = false;
+          if (channel.isForumPost()) {
+            const channel1 = obj2.getChannel(channel.parent_id);
+            let isMediaChannelResult;
+            if (channel1 != null) {
+              isMediaChannelResult = channel1.isMediaChannel();
+            }
+            flag = true === isMediaChannelResult;
+          }
+        }
+        obj2 = outer1_3;
+      }
+      tmp2 = flag;
+      obj = outer1_1(outer1_2[2]);
+    }
+    return tmp2;
+  }, items);
+};
+export const isFirstMessageInMediaPost = function isFirstMessageInMediaPost(channel_id) {
+  let tmp = null != channel_id;
   if (tmp) {
-    tmp = isFirstMessageIdInMediaPost(id.id, id.channel_id);
+    channel_id = channel_id.channel_id;
+    let flag = false;
+    if (channel_id.id === obj.castChannelIdAsMessageId(channel_id)) {
+      const channel = store.getChannel(channel_id);
+      flag = false;
+      if (null != channel) {
+        flag = false;
+        if (channel.isForumPost()) {
+          const channel1 = obj2.getChannel(channel.parent_id);
+          let isMediaChannelResult;
+          if (channel1 != null) {
+            isMediaChannelResult = channel1.isMediaChannel();
+          }
+          flag = true === isMediaChannelResult;
+        }
+      }
+      obj2 = store;
+    }
+    tmp = flag;
+    obj = importDefault(11);
   }
   return tmp;
-}
-function isFirstMessageIdInMediaPost(id, channel_id) {
+};
+export const isFirstMessageIdInMediaPost = function isFirstMessageIdInMediaPost(id, channel_id) {
   if (id !== obj.castChannelIdAsMessageId(channel_id)) {
     return false;
   } else {
@@ -24,7 +75,7 @@ function isFirstMessageIdInMediaPost(id, channel_id) {
       if (channel.isForumPost()) {
         const channel1 = store.getChannel(channel.parent_id);
         let isMediaChannelResult;
-        if (null != channel1) {
+        if (channel1 != null) {
           isMediaChannelResult = channel1.isMediaChannel();
         }
         return true === isMediaChannelResult;
@@ -32,14 +83,5 @@ function isFirstMessageIdInMediaPost(id, channel_id) {
     }
     return false;
   }
-  obj = importDefault(21);
-}
-const result = require("DISCORD_EPOCH").fileFinishedImporting("modules/media_channel/useIsFirstMessageInMediaPost.tsx");
-
-export const useIsFirstMessageInMediaPost = function useIsFirstMessageInMediaPost(arg0) {
-  const _require = arg0;
-  const items = [arg0];
-  return _require(624).useStateFromStores([], () => outer1_4(closure_0), items);
+  obj = importDefault(11);
 };
-export { isFirstMessageInMediaPost };
-export { isFirstMessageIdInMediaPost };

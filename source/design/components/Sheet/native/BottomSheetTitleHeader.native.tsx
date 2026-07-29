@@ -1,35 +1,36 @@
-// Module ID: 5220
-// Function ID: 45148
+// Module ID: 5242
+// Function ID: 5243
 // Name: RedesignBottomSheetTitleHeaderBase
-// Dependencies: [57, 31, 27, 33, 4165, 689, 1450, 3869, 1324, 4161, 5122, 2]
+// Dependencies: [32, 19, 17, 21, 4189, 712, 1474, 3893, 1348, 4185, 5144, 2]
 // Exports: BottomSheetTitleHeader
 
-// Module 5220 (RedesignBottomSheetTitleHeaderBase)
+// Module 5242 (RedesignBottomSheetTitleHeaderBase)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
+import noop from "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
+import createCacheKey from "createCacheKey";
+import createCacheKey from "createCacheKey";
 
 let closure_6;
-let closure_7;
+let error;
 const require = arg1;
 function RedesignBottomSheetTitleHeaderBase(children) {
   const subtitle = children.subtitle;
   const tmp = callback4();
-  let obj = { style: tmp.container };
-  obj = { style: tmp.titles };
+  let obj = { style: tmp.container, children: null };
+  obj = { style: tmp.titles, children: null };
   const items = [callback2(Title, { lineClamp: 2, children: children.title }), ];
-  let tmp6 = null;
+  let tmp2Result = null;
   if (null != subtitle) {
-    obj = { children: subtitle };
-    tmp6 = callback2(Subtitle, obj);
+    obj = { children: null };
+    obj[0] = subtitle;
+    tmp2Result = tmp2(Subtitle, obj);
   }
-  items[1] = tmp6;
-  obj.children = items;
-  obj.children = closure_7(View, obj);
+  items[1] = tmp2Result;
+  obj[1] = items;
+  obj[1] = closure_7(View, obj);
   return callback2(View, obj);
 }
 function RedesignBottomSheetTitleHeaderStacked(subtitle) {
@@ -40,63 +41,67 @@ function RedesignBottomSheetTitleHeaderStacked(subtitle) {
   ({ title, leading, trailing } = subtitle);
   const tmp = callback4();
   const tmp2 = callback5();
-  let obj = { style: items };
+  let obj = { style: items, children: null };
   items = [tmp.container, tmp2.container];
-  obj = { style: tmp2.accessories };
+  obj = { style: tmp2.accessories, children: null };
   obj = { style: tmp2.item, children: leading };
   const items1 = [callback2(View, obj), callback2(View, { style: tmp2.item, children: trailing })];
-  obj.children = items1;
+  obj[1] = items1;
   const items2 = [callback3(View, obj), ];
-  const obj2 = { style: tmp.titles };
+  const obj2 = { style: tmp.titles, children: null };
   const items3 = [callback2(Title, { children: title }), ];
-  let tmp7 = null;
+  let tmp5Result = null;
   if (null != subtitle) {
-    const obj3 = { children: subtitle };
-    tmp7 = callback2(Subtitle, obj3);
+    const obj3 = { children: null };
+    obj3[0] = subtitle;
+    tmp5Result = callback2(Subtitle, obj3);
   }
-  items3[1] = tmp7;
-  obj2.children = items3;
+  items3[1] = tmp5Result;
+  obj2[1] = items3;
   items2[1] = callback3(View, obj2);
-  obj.children = items2;
+  obj[1] = items2;
   return callback3(View, obj);
 }
 function RedesignBottomSheetTitleHeaderComplex(subtitle) {
+  let c0;
   let leading;
   let onTitleTextLayout;
   let title;
+  let tmp5;
   let trailing;
   subtitle = subtitle.subtitle;
+  let _require;
   ({ title, leading, trailing, onTitleTextLayout } = subtitle);
   const tmp = callback4();
   const tmp2 = callback6();
-  let obj = _require(3869);
-  const result = (importDefault(1450)().width - 2 * obj.useToken(importDefault(689).modules.mobile.SHEET_HEADER_PADDING_HORIZONTAL)) / 4;
-  const tmp4 = callback(React.useState(undefined), 2);
-  const first = tmp4[0];
-  _require = tmp4[1];
+  let obj = _require(3893);
+  const diff = importDefault(1474)().width - 2 * obj.useToken(importDefault(712).modules.mobile.SHEET_HEADER_PADDING_HORIZONTAL);
+  [tmp5, c0] = callback(React.useState(undefined), 2);
   callback = React.useCallback((nativeEvent) => {
     const width = nativeEvent.nativeEvent.layout.width;
     width((arg0) => {
-      let num = 0;
-      if (null != arg0) {
-        num = arg0;
+      let num = arg0;
+      if (arg0 == null) {
+        num = 0;
       }
       return Math.max(num, width);
     });
   }, []);
-  obj = { style: tmp.container };
-  const items = [callback2(View, { style: { width: first } }), , , , ];
-  obj = { style: tmp.titles };
+  obj = { style: tmp.container, children: null };
+  const items = [callback2(View, { style: { width: tmp5 } }), , , , ];
+  obj = { style: tmp.titles, children: null };
   const items1 = [callback2(Title, { onTextLayout: onTitleTextLayout, lineClamp: 3, children: title }), ];
-  let tmp11 = null;
+  let tmp9Result = null;
   if (null != subtitle) {
-    const obj1 = { children: subtitle };
-    tmp11 = callback2(Subtitle, obj1);
+    const obj1 = { children: null };
+    obj1[0] = subtitle;
+    tmp9Result = tmp9(Subtitle, obj1);
   }
-  items1[1] = tmp11;
-  obj.children = items1;
+  const result = diff / 4;
+  items1[1] = tmp9Result;
+  obj[1] = items1;
   items[1] = closure_7(View, obj);
-  items[2] = callback2(View, { style: { width: first } });
+  items[2] = callback2(View, { style: { width: tmp5 } });
   const items2 = [, , ];
   ({ accessory: arr3[0], leading: arr3[1] } = tmp2);
   items2[2] = { maxWidth: result };
@@ -105,48 +110,48 @@ function RedesignBottomSheetTitleHeaderComplex(subtitle) {
   ({ accessory: arr4[0], trailing: arr4[1] } = tmp2);
   items3[2] = { maxWidth: result };
   items[4] = callback2(View, { onLayout: callback, style: items3, children: trailing });
-  obj.children = items;
+  obj[1] = items;
   return closure_7(View, obj);
 }
 function Title(arg0) {
   let str = "redesign/heading-18/bold";
-  if (importDefault(1324)("BottomSheetTitleHeader")) {
+  if (importDefault(1348)("BottomSheetTitleHeader")) {
     str = "redesign/heading-18/semibold";
   }
-  const obj = { variant: str, color: "mobile-text-heading-primary", accessibilityRole: "header", style: callback4().title };
+  const tmp = callback4();
   const merged = Object.assign(arg0);
-  return callback2(require(4161) /* Text */.Text, obj);
+  return callback2(require(4185) /* Text */.Text, { variant: str, color: "mobile-text-heading-primary", accessibilityRole: "header", style: callback4().title });
 }
 function Subtitle(children) {
-  const tmp2 = importDefault(1324)("BottomSheetTitleHeader");
+  const tmp3 = importDefault(1348)("BottomSheetTitleHeader");
   let str = "text-default";
-  if (tmp2) {
+  if (tmp3) {
     str = "text-muted";
   }
   let str2 = "text-xs/medium";
-  if (tmp2) {
+  if (tmp3) {
     str2 = "text-sm/medium";
   }
-  const obj = { variant: str2, color: str, lineClamp: 1, style: callback4().subtitle, children: children.children };
-  return callback2(require(4161) /* Text */.Text, obj);
+  const tmp = callback4();
+  return callback2(require(4185) /* Text */.Text, { variant: str2, color: str, lineClamp: 1, style: callback4().subtitle, children: children.children });
 }
-({ jsx: closure_6, jsxs: closure_7 } = jsxProd);
-let closure_8 = _createForOfIteratorHelperLoose.createStyles(() => {
-  let obj = {};
-  obj = { paddingHorizontal: importDefault(689).modules.mobile.SHEET_HEADER_PADDING_HORIZONTAL, flexDirection: "row", gap: 4, position: "relative" };
-  obj.container = obj;
-  obj.titles = { flexGrow: 1, flexShrink: 1, gap: 2 };
-  obj.subtitle = { textAlign: "center" };
-  obj.title = { textAlign: "center" };
+({ jsx: closure_6, jsxs: error } = jsxProd);
+let closure_8 = createCacheKey.createStyles(() => {
+  let obj = { container: null, titles: null, subtitle: null, title: null };
+  obj = { paddingHorizontal: importDefault(712).modules.mobile.SHEET_HEADER_PADDING_HORIZONTAL, flexDirection: "row", gap: 4, position: "relative" };
+  obj[0] = obj;
+  obj[1] = { flexGrow: 1, flexShrink: 1, gap: 2 };
+  obj[2] = { textAlign: "center" };
+  obj[3] = { textAlign: "center" };
   return obj;
 });
-let closure_9 = _createForOfIteratorHelperLoose.createStyles(() => ({ container: { flexDirection: "column" }, accessories: { flexDirection: "row", justifyContent: "space-between" }, item: { flexShrink: 0 } }));
-let closure_10 = _createForOfIteratorHelperLoose.createStyles(() => {
-  let obj = { accessory: { position: "absolute", top: 0, bottom: 0, flexShrink: 0, flexDirection: "row", flexGrow: 1 } };
-  obj = { left: importDefault(689).space.PX_16, justifyContent: "flex-start" };
-  obj.leading = obj;
-  obj = { right: importDefault(689).space.PX_16, justifyContent: "flex-end" };
-  obj.trailing = obj;
+let closure_10 = createCacheKey.createStyles(() => ({ container: { flexDirection: "column" }, accessories: { flexDirection: "row", justifyContent: "space-between" }, item: { flexShrink: 0 } }));
+let closure_12 = createCacheKey.createStyles(() => {
+  let obj = { accessory: { position: "absolute", top: 0, bottom: 0, flexShrink: 0, flexDirection: "row", flexGrow: 1 }, leading: null, trailing: null };
+  obj = { left: importDefault(712).space.PX_16, justifyContent: "flex-start" };
+  obj[1] = obj;
+  obj = { right: importDefault(712).space.PX_16, justifyContent: "flex-end" };
+  obj[2] = obj;
   return obj;
 });
 let result = require("get ActivityIndicator").fileFinishedImporting("design/components/Sheet/native/BottomSheetTitleHeader.native.tsx");
@@ -158,7 +163,7 @@ export const BottomSheetTitleHeader = function BottomSheetTitleHeader(arg0) {
   ({ leading, trailing } = arg0);
   const tmp2 = callback(React.useState(false), 2);
   let closure_0 = tmp2[1];
-  const tmp3 = importDefault(5122)("sheet");
+  const tmp3 = importDefault(5144)("sheet");
   if (null != leading) {
     if (tmp2[0]) {
       let obj = {};
@@ -167,7 +172,7 @@ export const BottomSheetTitleHeader = function BottomSheetTitleHeader(arg0) {
     } else {
       obj = {};
       const merged1 = Object.assign(merged);
-      obj["onTitleTextLayout"] = function onTitleTextLayout(nativeEvent) {
+      obj.onTitleTextLayout = function onTitleTextLayout(nativeEvent) {
         callback(nativeEvent.nativeEvent.lines.length > 2);
       };
       tmp6Result = tmp6(RedesignBottomSheetTitleHeaderComplex, obj);
@@ -178,11 +183,10 @@ export const BottomSheetTitleHeader = function BottomSheetTitleHeader(arg0) {
   const tmp5 = callback2(RedesignBottomSheetTitleHeaderBase, obj);
   let tmp16 = tmp5;
   if (null != tmp3) {
-    const obj1 = {};
-    const obj2 = { position: "relative" };
-    obj1.style = obj2;
+    const obj1 = { style: null, children: null };
+    obj1[0] = { position: "relative" };
     const items = [tmp5, tmp3];
-    obj1.children = items;
+    obj1[1] = items;
     tmp16 = callback3(View, obj1);
   }
   return tmp16;

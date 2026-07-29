@@ -1,27 +1,27 @@
-// Module ID: 14254
-// Function ID: 109496
+// Module ID: 14276
+// Function ID: 14277
 // Name: toggle
-// Dependencies: [4212, 7733, 566, 1212, 10099, 10763, 2]
+// Dependencies: [4236, 7756, 589, 1236, 10120, 10787, 2]
 
-// Module 14254 (toggle)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 14276 (toggle)
+import _detectH265HardwareDecode from "_detectH265HardwareDecode";
 import createToggle from "createToggle";
 
 const require = arg1;
 createToggle = {
   useTitle() {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(require(1212) /* getSystemLocale */.t.cUMdH0);
+    const intl = require(1236) /* getSystemLocale */.intl;
+    return intl.string(require(1236) /* getSystemLocale */.t.cUMdH0);
   },
   parent: require("MobileSetting").MobileSetting.VOICE,
   useValue: function useAutomaticGainControlSettingValue() {
-    const items = [_isNativeReflectConstruct];
-    return require(566) /* initialize */.useStateFromStores(items, () => outer1_2.getAutomaticGainControl());
+    const items = [_detectH265HardwareDecode];
+    return require(589) /* initialize */.useStateFromStores(items, () => automaticGainControl.getAutomaticGainControl());
   },
-  onValueChange: require("getSelectedNoiseSuppressionOption").handleAutomaticGainControlChange,
+  onValueChange: require("handleAutomaticGainControlChange").handleAutomaticGainControlChange,
   useDescription: function useAutomaticGainControlSettingDescription() {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(require(1212) /* getSystemLocale */.t["6EjbvA"]);
+    const intl = require(1236) /* getSystemLocale */.intl;
+    return intl.string(require(1236) /* getSystemLocale */.t["6EjbvA"]);
   }
 };
 createToggle = createToggle.createToggle(createToggle);

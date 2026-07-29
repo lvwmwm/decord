@@ -1,44 +1,42 @@
-// Module ID: 11366
-// Function ID: 88195
+// Module ID: 11390
+// Function ID: 11391
 // Name: PollCreationInputError
-// Dependencies: [31, 27, 33, 4165, 689, 3878, 1273, 4161, 2]
+// Dependencies: [19, 17, 21, 4189, 712, 3902, 1297, 4185, 2]
 // Exports: default
 
-// Module 11366 (PollCreationInputError)
-import result from "result";
+// Module 11390 (PollCreationInputError)
+import noop from "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_4;
-let closure_5;
+let c4;
+let c5;
 const require = arg1;
-({ jsx: closure_4, jsxs: closure_5 } = jsxProd);
-_createForOfIteratorHelperLoose = { container: { flexDirection: "row", alignItems: "center", marginTop: -10 } };
-_createForOfIteratorHelperLoose = { alignSelf: "center", marginRight: 5, color: require("_createForOfIteratorHelperLoose").colors.TEXT_FEEDBACK_CRITICAL };
-_createForOfIteratorHelperLoose.icon = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+({ jsx: c4, jsxs: c5 } = jsxProd);
+createCacheKey = { container: { flexDirection: "row", alignItems: "center", marginTop: -10 }, icon: null };
+createCacheKey = { alignSelf: "center", marginRight: 5, color: require("Themes").colors.TEXT_FEEDBACK_CRITICAL };
+createCacheKey[1] = createCacheKey;
+createCacheKey = createCacheKey.createStyles(createCacheKey);
 const result = require("jsxProd").fileFinishedImporting("modules/polls/native/PollCreationInputError.tsx");
 
 export default function PollCreationInputError(message) {
   message = message.message;
-  let tmp = _createForOfIteratorHelperLoose();
+  const tmp = createCacheKey();
   const items = [message];
   const effect = React.useEffect(() => {
-    let tmp = null != message;
-    if (tmp) {
-      tmp = "" !== message;
+    let tmp2 = null != message;
+    if (tmp2) {
+      tmp2 = "" !== tmp;
     }
-    if (tmp) {
+    if (tmp2) {
       const AccessibilityAnnouncer = message(outer1_1[5]).AccessibilityAnnouncer;
-      AccessibilityAnnouncer.announce(message);
+      AccessibilityAnnouncer.announce(tmp);
     }
   }, items);
-  let obj = { style: tmp.container };
+  let obj = { style: tmp.container, children: null };
   obj = { width: 16, height: 16, style: tmp.icon };
-  const items1 = [callback(message(1273).WarningCircle, obj), ];
-  obj = { variant: "text-xs/medium", color: "text-feedback-critical", children: message };
-  items1[1] = callback(message(4161).Text, obj);
-  obj.children = items1;
+  const items1 = [callback(message(1297).WarningCircle, obj), callback(message(4185).Text, { variant: "text-xs/medium", color: "text-feedback-critical", children: message })];
+  obj[1] = items1;
   return callback2(View, obj);
 };

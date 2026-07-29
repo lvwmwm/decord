@@ -1,44 +1,36 @@
-// Module ID: 10212
-// Function ID: 78749
+// Module ID: 10233
+// Function ID: 10234
 // Name: ChannelVoiceChatModal
-// Dependencies: [31, 33, 4355, 4358, 9084, 4689, 4046, 10213, 2]
+// Dependencies: [19, 21, 4380, 4383, 9108, 4711, 4070, 10234, 2]
 // Exports: default
 
-// Module 10212 (ChannelVoiceChatModal)
-import result from "result";
+// Module 10233 (ChannelVoiceChatModal)
+import noop from "noop";
 import { jsx } from "jsxProd";
 
 const require = arg1;
-const result = require("computeDefaultGroupDmNameFromUserIds").fileFinishedImporting("modules/video_calls/native/components/ChannelVoiceChatModal.tsx");
+const result = require("computeChannelName").fileFinishedImporting("modules/video_calls/native/components/ChannelVoiceChatModal.tsx");
 
 export default function ChannelVoiceChatModal(channel) {
   channel = channel.channel;
-  const tmp = importDefault(4355)(channel);
+  const tmp2 = importDefault(4380)(channel);
   const items = [channel.id];
   const effect = React.useEffect(() => {
     outer1_1(outer1_2[3]).updateChatOpen(channel.id, true);
     return () => {
-      outer2_1(outer2_2[3]).updateChatOpen(outer1_0.id, false);
+      outer1_1(outer1_2[3]).updateChatOpen(id.id, false);
     };
   }, items);
-  let obj = { screenKey: "StageVoiceChat" };
-  let str = "";
-  if (null != tmp) {
-    str = tmp;
+  let str = tmp2;
+  if (tmp2 == null) {
+    str = "";
   }
-  obj.title = str;
-  obj.titleIcon = jsx(channel(4689).StageIcon, { size: "sm" });
-  obj.render = function render() {
-    let obj = {};
-    const guild_id = channel.guild_id;
-    let tmp2 = null;
-    if (null != guild_id) {
-      tmp2 = guild_id;
+  const tmp5 = importDefault(9108);
+  return <tmp5 screenKey="StageVoiceChat" title={str} titleIcon={jsx(channel(4711).StageIcon, { size: "sm" })} render={function render() {
+    let guild_id = channel.guild_id;
+    if (guild_id == null) {
+      guild_id = null;
     }
-    obj.value = tmp2;
-    obj = { channel, inModal: true };
-    obj.children = outer1_4(outer1_1(outer1_2[7]), obj);
-    return outer1_4(outer1_1(outer1_2[6]).Provider, obj);
-  };
-  return jsx(importDefault(9084), { screenKey: "StageVoiceChat" });
+    return outer1_4(outer1_1(outer1_2[6]).Provider, { value: guild_id, children: outer1_4(outer1_1(outer1_2[7]), { channel, inModal: true }) });
+  }} />;
 };

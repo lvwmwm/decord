@@ -1,11 +1,11 @@
-// Module ID: 12566
-// Function ID: 97136
+// Module ID: 12588
+// Function ID: 12589
 // Name: useOutboundPromotionRedemptionEndDate
-// Dependencies: [31, 3747, 3835, 2]
+// Dependencies: [19, 3771, 3859, 2]
 // Exports: default
 
-// Module 12566 (useOutboundPromotionRedemptionEndDate)
-import result from "result";
+// Module 12588 (useOutboundPromotionRedemptionEndDate)
+import noop from "noop";
 import module_30 from "module_30";
 import importDefaultResult from "t";
 
@@ -17,16 +17,20 @@ export default function useOutboundPromotionRedemptionEndDate(arg0, arg1) {
   let closure_1 = arg1;
   const items = [arg0, arg1];
   return React.useMemo(() => {
+    let tmp = outer1_2;
     lib(outer1_2[2]);
     if (callback) {
+      let outboundRedemptionEndDate = lib;
       if (null != lib.outboundRedemptionEndDate) {
-        let addResult = callback(outer1_2[1])(lib.outboundRedemptionEndDate);
+        tmp = callback(tmp[1]);
+        outboundRedemptionEndDate = outboundRedemptionEndDate.outboundRedemptionEndDate;
+        let addResult = tmp(outboundRedemptionEndDate);
       } else {
-        addResult = callback(outer1_2[1])(lib.endDate).add(outer1_4);
-        const obj = callback(outer1_2[1])(lib.endDate);
+        addResult = callback(tmp[1])(outboundRedemptionEndDate.endDate).add(outer1_4);
+        const obj = callback(tmp[1])(outboundRedemptionEndDate.endDate);
       }
     } else {
-      return tmp2(callback(outer1_2[1])(lib.endDate), "LL");
+      return tmp3(callback(tmp[1])(lib.endDate), "LL");
     }
   }, items);
 };

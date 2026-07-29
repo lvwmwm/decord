@@ -1,25 +1,30 @@
-// Module ID: 8740
-// Function ID: 69162
+// Module ID: 8764
+// Function ID: 8765
 // Name: NativePaymentContextProvider
-// Dependencies: [57, 31, 3816, 482, 33, 6202, 6551, 6280, 8741, 566, 2]
+// Dependencies: [32, 19, 3840, 505, 21, 6222, 6572, 6301, 8765, 589, 2]
 // Exports: NativePaymentContextProvider
 
-// Module 8740 (NativePaymentContextProvider)
-import result from "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 8764 (NativePaymentContextProvider)
+import noop from "noop";
+import addSubscriptionPlan from "addSubscriptionPlan";
 import { PaymentGateways } from "sum";
 import { jsx } from "jsxProd";
 import importDefaultResult from "_slicedToArray";
 
+let error;
+let tmp4;
+let tmp5;
 const require = arg1;
+[error, tmp4, tmp5] = require("_slicedToArray")(require("createDefinedContext")(), 3);
 const importDefaultResultResult = require("_slicedToArray")(require("createDefinedContext")(), 3);
-let closure_7 = importDefaultResultResult[0];
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/payments/native/NativePaymentContext.tsx");
+const result = require("addSubscriptionPlan").fileFinishedImporting("modules/payments/native/NativePaymentContext.tsx");
 
 export const NativePaymentContextProvider = function NativePaymentContextProvider(skuIDs) {
   let activeSubscription;
   let children;
   skuIDs = skuIDs.skuIDs;
+  let storeFront;
+  let selectedPlanId;
   ({ children, activeSubscription } = skuIDs);
   let obj = storeFront(selectedPlanId[6]);
   const nativeIAPPayments = obj.useNativeIAPPayments();
@@ -37,31 +42,31 @@ export const NativePaymentContextProvider = function NativePaymentContextProvide
   }, items);
   const tmp3 = storeFront(selectedPlanId[8])();
   selectedPlanId = tmp3.selectedPlanId;
-  const items1 = [_isNativeReflectConstruct];
+  const items1 = [addSubscriptionPlan];
   const items2 = [selectedPlanId];
-  obj = {};
+  obj = { value: null, children: null };
   obj = {
     isReadyToPurchase: nativeIAPPayments.nativePaymentsConnected,
     setSelectedPlanId: tmp3.setSelectedPlanId,
     selectedPlan: skuIDs(selectedPlanId[9]).useStateFromStores(items1, () => {
       let value = null;
       if (null != selectedPlanId) {
-        value = outer1_4.get(selectedPlanId);
+        value = outer1_4.get(tmp);
       }
       return value;
     }, items2),
     storeFront,
     activeSubscription
   };
-  obj.value = obj;
-  obj.children = children;
+  obj[0] = obj;
+  obj[1] = children;
   return <redux.Provider isReadyToPurchase={nativeIAPPayments.nativePaymentsConnected} setSelectedPlanId={tmp3.setSelectedPlanId} selectedPlan={skuIDs(selectedPlanId[9]).useStateFromStores(items1, () => {
     let value = null;
     if (null != selectedPlanId) {
-      value = outer1_4.get(selectedPlanId);
+      value = outer1_4.get(tmp);
     }
     return value;
   }, items2)} storeFront={storeFront} activeSubscription={activeSubscription} />;
 };
-export const useNativeIAPPaymentContext = importDefaultResultResult[1];
-export const useForwardedNativePaymentContext = importDefaultResultResult[2];
+export const useNativeIAPPaymentContext = tmp4;
+export const useForwardedNativePaymentContext = tmp5;

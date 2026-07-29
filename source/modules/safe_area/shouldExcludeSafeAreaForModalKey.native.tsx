@@ -1,12 +1,12 @@
-// Module ID: 15664
-// Function ID: 120642
+// Module ID: 15699
+// Function ID: 15700
 // Name: set
-// Dependencies: [653, 10653, 4376, 2]
+// Dependencies: [676, 10677, 4399, 2]
 // Exports: shouldExcludeSafeAreaForModalKey
 
-// Module 15664 (set)
+// Module 15699 (set)
 import OAUTH2_AUTHORIZE_MODAL_KEY from "OAUTH2_AUTHORIZE_MODAL_KEY";
-import set from "getVoiceChannelKeyByChannelId";
+import set from "openChannelCallModal";
 
 const items = [require("ME").MEDIA_MODAL_KEY, , , ];
 ({ OAUTH2_AUTHORIZE_MODAL_KEY: arr[1], OAUTH2_SUCCESS_RESULT_MODAL_KEY: arr[2], OAUTH2_ERROR_RESULT_MODAL_KEY: arr[3] } = OAUTH2_AUTHORIZE_MODAL_KEY);
@@ -16,13 +16,12 @@ const result = set.fileFinishedImporting("modules/safe_area/shouldExcludeSafeAre
 export const shouldExcludeSafeAreaForModalKey = function shouldExcludeSafeAreaForModalKey(key) {
   let tmp = null != key;
   if (tmp) {
-    const tmp4 = !require(4376) /* getVoiceChannelKeyByChannelId */.isVoiceChannelModalKey(key);
-    let hasItem = !tmp4;
-    if (tmp4) {
+    let hasItem = require(4399) /* openChannelCallModal */.isVoiceChannelModalKey(key);
+    if (!hasItem) {
       hasItem = set.has(key);
     }
     tmp = hasItem;
-    const obj = require(4376) /* getVoiceChannelKeyByChannelId */;
+    const obj = require(4399) /* openChannelCallModal */;
   }
   return tmp;
 };

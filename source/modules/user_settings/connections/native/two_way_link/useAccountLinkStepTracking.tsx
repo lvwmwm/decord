@@ -1,42 +1,51 @@
-// Module ID: 8958
-// Function ID: 70653
-// Name: _handleStateChange
-// Dependencies: [31, 653, 675, 2]
+// Module ID: 8982
+// Function ID: 8983
+// Name: useAccountLinkStepTracking
+// Dependencies: [19, 676, 698, 2]
 // Exports: useAccountLinkStepTracking
 
-// Module 8958 (_handleStateChange)
-import result from "result";
+// Module 8982 (useAccountLinkStepTracking)
+import noop from "noop";
 import { AnalyticEvents } from "ME";
 
-function _handleStateChange(index, current, platform_type, location_stack) {
-  if (null != index) {
-    index = index.index;
-    let tmp;
-    let obj = importDefault(675);
-    obj = { location_stack };
-    if (null != current.current) {
-      tmp = index.routeNames[current.current];
-    }
-    obj.previous_step = tmp;
-    obj.current_step = index.routeNames[index];
-    obj.platform_type = platform_type;
-    obj.track(AnalyticEvents.ACCOUNT_LINK_STEP, obj);
-    current.current = index;
-  }
-}
-const result = require("expandLocation").fileFinishedImporting("modules/user_settings/connections/native/two_way_link/useAccountLinkStepTracking.tsx");
+const result = require("expandEventProperties").fileFinishedImporting("modules/user_settings/connections/native/two_way_link/useAccountLinkStepTracking.tsx");
 
 export const useAccountLinkStepTracking = function useAccountLinkStepTracking(CRUNCHYROLL, locationStack) {
   let closure_0 = CRUNCHYROLL;
   let closure_1 = locationStack;
   React = React.useRef(null);
-  const items = [locationStack, CRUNCHYROLL];
+  let items = [locationStack, CRUNCHYROLL];
   const items1 = [locationStack, CRUNCHYROLL];
-  const callback = React.useCallback((arg0) => {
-    outer1_4(arg0, result, closure_0, closure_1);
+  const callback = React.useCallback((index) => {
+    if (null != index) {
+      index = index.index;
+      let obj = CRUNCHYROLL(locationStack[2]);
+      obj = { location_stack: null, previous_step: null, current_step: null, platform_type: null };
+      obj[0] = tmp3;
+      let tmp7;
+      if (null != tmp.current) {
+        tmp7 = index.routeNames[tmp.current];
+      }
+      obj[1] = tmp7;
+      obj[2] = index.routeNames[index];
+      obj[3] = tmp2;
+      obj.track(outer1_3.ACCOUNT_LINK_STEP, obj);
+      tmp.current = index;
+    }
   }, items);
   const effect = React.useEffect(() => {
-    outer1_4({ index: 0, routeNames: ["landing"] }, result, closure_0, closure_1);
+    const items = ["landing"];
+    let obj = CRUNCHYROLL(locationStack[2]);
+    obj = { location_stack: locationStack, previous_step: null, current_step: null, platform_type: null };
+    let tmp3;
+    if (null != ref.current) {
+      tmp3 = items[tmp.current];
+    }
+    obj[1] = tmp3;
+    obj[2] = items[0];
+    obj[3] = CRUNCHYROLL;
+    obj.track(outer1_3.ACCOUNT_LINK_STEP, obj);
+    ref.current = 0;
   }, items1);
   return callback;
 };

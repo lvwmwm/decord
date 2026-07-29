@@ -1,34 +1,32 @@
-// Module ID: 13902
-// Function ID: 106350
+// Module ID: 13923
+// Function ID: 13924
 // Name: FamilyCenterUsernameHeader
-// Dependencies: [31, 27, 33, 4165, 4004, 4161, 2]
+// Dependencies: [19, 17, 21, 4189, 4028, 4185, 2]
 // Exports: default
 
-// Module 13902 (FamilyCenterUsernameHeader)
-import "result";
+// Module 13923 (FamilyCenterUsernameHeader)
+import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_4;
-let closure_5;
+let c4;
+let c5;
 const require = arg1;
-({ jsx: closure_4, jsxs: closure_5 } = jsxProd);
-let closure_6 = _createForOfIteratorHelperLoose.createStyles({ container: { justifyContent: "center" } });
+({ jsx: c4, jsxs: c5 } = jsxProd);
+let closure_6 = createCacheKey.createStyles({ container: { justifyContent: "center" } });
 const result = require("jsxProd").fileFinishedImporting("modules/parent_tools/native/FamilyCenterUsernameHeader.tsx");
 
 export default function FamilyCenterUsernameHeader(user) {
   user = user.user;
-  let obj = importDefault(4004);
+  let obj = importDefault(4028);
   const name = obj.useName(user);
-  let obj1 = importDefault(4004);
-  obj = { style: callback3().container };
-  const combined = " (@" + obj1.getUserTag(user, { decoration: "never" }) + ")";
-  obj = { variant: "text-md/semibold", color: "mobile-text-heading-primary", lineClamp: 1 };
-  const items = [name, ];
-  obj1 = { variant: "text-md/medium", color: "text-muted", lineClamp: 1, children: combined };
-  items[1] = callback(require(4161) /* Text */.Text, obj1);
-  obj.children = items;
-  obj.children = callback2(require(4161) /* Text */.Text, obj);
+  const tmp = callback3();
+  obj = { style: tmp.container, children: null };
+  const combined = " (@" + importDefault(4028).getUserTag(user, { decoration: "never" }) + ")";
+  obj = { variant: "text-md/semibold", color: "mobile-text-heading-primary", lineClamp: 1, children: null };
+  const items = [name, callback(require(4185) /* Text */.Text, { variant: "text-md/medium", color: "text-muted", lineClamp: 1, children: combined })];
+  obj[3] = items;
+  obj[1] = callback2(require(4185) /* Text */.Text, obj);
   return callback(View, obj);
 };

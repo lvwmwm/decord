@@ -1,32 +1,32 @@
-// Module ID: 10626
-// Function ID: 82670
+// Module ID: 10650
+// Function ID: 10651
 // Name: ConfirmActivityGateContent
-// Dependencies: [31, 27, 33, 4165, 689, 10627, 4161, 1212, 4505, 1273, 2]
+// Dependencies: [19, 17, 21, 4189, 712, 10651, 4185, 1236, 4528, 1297, 2]
 // Exports: confirmActivityAgeGateAlert
 
-// Module 10626 (ConfirmActivityGateContent)
-import "result";
+// Module 10650 (ConfirmActivityGateContent)
+import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_4;
-let closure_5;
+let c4;
+let c5;
 const require = arg1;
 function ConfirmActivityGateContent(children) {
-  const tmp = _createForOfIteratorHelperLoose();
-  let obj = { style: tmp.alertContainer };
-  const items = [callback(importDefault(10627), {}), ];
+  const tmp = createCacheKey();
+  let obj = { style: tmp.alertContainer, children: null };
+  const items = [callback(importDefault(10651), {}), ];
   obj = { style: tmp.alertBodyText, variant: "text-md/normal", children: children.description };
-  items[1] = callback(require(4161) /* Text */.Text, obj);
-  obj.children = items;
+  items[1] = callback(require(4185) /* Text */.Text, obj);
+  obj[1] = items;
   return callback2(View, obj);
 }
-({ jsx: closure_4, jsxs: closure_5 } = jsxProd);
-_createForOfIteratorHelperLoose = { alertContainer: { display: "flex", alignItems: "center", padding: 8 } };
-_createForOfIteratorHelperLoose = { fontSize: 16, lineHeight: 24, color: require("_createForOfIteratorHelperLoose").colors.INTERACTIVE_TEXT_DEFAULT, textAlign: "center" };
-_createForOfIteratorHelperLoose.alertBodyText = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+({ jsx: c4, jsxs: c5 } = jsxProd);
+createCacheKey = { alertContainer: { display: "flex", alignItems: "center", padding: 8 }, alertBodyText: null };
+createCacheKey = { fontSize: 16, lineHeight: 24, color: require("Themes").colors.INTERACTIVE_TEXT_DEFAULT, textAlign: "center" };
+createCacheKey[1] = createCacheKey;
+createCacheKey = createCacheKey.createStyles(createCacheKey);
 const result = require("jsxProd").fileFinishedImporting("modules/activities/confirmActivityAgeGateAlert.native.tsx");
 
 export const confirmActivityAgeGateAlert = function confirmActivityAgeGateAlert(arg0) {
@@ -34,19 +34,19 @@ export const confirmActivityAgeGateAlert = function confirmActivityAgeGateAlert(
   let onAgree;
   let onDisagree;
   ({ application, onAgree, onDisagree } = arg0);
-  const intl = require(1212) /* getSystemLocale */.intl;
+  const intl = require(1236) /* getSystemLocale */.intl;
   let obj = { applicationName: application.name };
-  const formatToPlainStringResult = intl.formatToPlainString(require(1212) /* getSystemLocale */.t.OgmIqy, obj);
-  obj = {};
-  const intl2 = require(1212) /* getSystemLocale */.intl;
-  obj.title = intl2.string(require(1212) /* getSystemLocale */.t.SSDPOF);
-  obj.children = callback(ConfirmActivityGateContent, { description: formatToPlainStringResult });
-  const intl3 = require(1212) /* getSystemLocale */.intl;
-  obj.cancelText = intl3.string(require(1212) /* getSystemLocale */.t.hg1uxn);
-  const intl4 = require(1212) /* getSystemLocale */.intl;
-  obj.confirmText = intl4.string(require(1212) /* getSystemLocale */.t.wVq7uo);
-  obj.onConfirm = onAgree;
-  obj.onCancel = onDisagree;
-  obj.confirmColor = require(1273) /* Button */.ButtonColors.RED;
-  return Promise.resolve(importDefault(4505).show(obj));
+  const formatToPlainStringResult = intl.formatToPlainString(require(1236) /* getSystemLocale */.t.OgmIqy, obj);
+  obj = { title: null, children: null, cancelText: null, confirmText: null, onConfirm: null, onCancel: null, confirmColor: null };
+  const intl2 = require(1236) /* getSystemLocale */.intl;
+  obj[0] = intl2.string(require(1236) /* getSystemLocale */.t.SSDPOF);
+  obj[1] = callback(ConfirmActivityGateContent, { description: formatToPlainStringResult });
+  const intl3 = require(1236) /* getSystemLocale */.intl;
+  obj[2] = intl3.string(require(1236) /* getSystemLocale */.t.hg1uxn);
+  const intl4 = require(1236) /* getSystemLocale */.intl;
+  obj[3] = intl4.string(require(1236) /* getSystemLocale */.t.wVq7uo);
+  obj[4] = onAgree;
+  obj[5] = onDisagree;
+  obj[6] = require(1297) /* Button */.ButtonColors.RED;
+  return Promise.resolve(importDefault(4528).show(obj));
 };

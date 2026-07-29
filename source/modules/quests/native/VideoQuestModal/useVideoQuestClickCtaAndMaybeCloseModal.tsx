@@ -1,20 +1,21 @@
-// Module ID: 14158
-// Function ID: 108707
+// Module ID: 14180
+// Function ID: 14181
 // Name: useVideoQuestClickCtaAndMaybeCloseModal
-// Dependencies: [31, 10472, 1443, 9465, 10474, 5014, 5993, 2]
+// Dependencies: [19, 10496, 1467, 9489, 10498, 5036, 6012, 2]
 // Exports: useVideoQuestClickCtaAndMaybeCloseModal
 
-// Module 14158 (useVideoQuestClickCtaAndMaybeCloseModal)
-import result from "result";
+// Module 14180 (useVideoQuestClickCtaAndMaybeCloseModal)
+import noop from "noop";
 
 const require = arg1;
-const result = require("isOriginalContentTypeDifferent").fileFinishedImporting("modules/quests/native/VideoQuestModal/useVideoQuestClickCtaAndMaybeCloseModal.tsx");
+const result = require("isDiscordProxiedAssetUrl").fileFinishedImporting("modules/quests/native/VideoQuestModal/useVideoQuestClickCtaAndMaybeCloseModal.tsx");
 
 export const useVideoQuestClickCtaAndMaybeCloseModal = function useVideoQuestClickCtaAndMaybeCloseModal(quest) {
   quest = quest.quest;
   const onClose = quest.onClose;
   const sourceQuestContent = quest.sourceQuestContent;
-  const getQuestImpressionId = quest(sourceQuestContent[1]).useGetQuestImpressionId();
+  let getQuestImpressionId;
+  getQuestImpressionId = quest(sourceQuestContent[1]).useGetQuestImpressionId();
   const items = [quest, getQuestImpressionId, sourceQuestContent, onClose];
   return getQuestImpressionId.useCallback(() => {
     let obj = onClose(sourceQuestContent[2]);
@@ -22,7 +23,8 @@ export const useVideoQuestClickCtaAndMaybeCloseModal = function useVideoQuestCli
       onClose();
     }
     obj2 = quest(sourceQuestContent[3]);
-    obj = { content: quest(sourceQuestContent[5]).QuestContent.VIDEO_MODAL_MOBILE, ctaContent: quest(sourceQuestContent[6]).QuestContentCTA.OPEN_GAME_LINK, impressionId: getQuestImpressionId(), sourceQuestContent };
-    quest(sourceQuestContent[4]).openGameLinkDirectly(quest, obj);
+    const tmp3 = quest;
+    obj = { content: tmp2(tmp[5]).QuestContent.VIDEO_MODAL_MOBILE, ctaContent: tmp2(tmp[6]).QuestContentCTA.OPEN_GAME_LINK, impressionId: getQuestImpressionId(), sourceQuestContent };
+    quest(sourceQuestContent[4]).openGameLinkDirectly(tmp3, obj);
   }, items);
 };

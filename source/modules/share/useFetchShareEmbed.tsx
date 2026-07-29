@@ -1,16 +1,16 @@
-// Module ID: 13016
-// Function ID: 100797
+// Module ID: 13039
+// Function ID: 13040
 // Name: useFetchShareEmbed
-// Dependencies: [5, 57, 31, 1443, 11042, 682, 2]
+// Dependencies: [5, 32, 19, 1467, 11066, 705, 2]
 // Exports: default
 
-// Module 13016 (useFetchShareEmbed)
+// Module 13039 (useFetchShareEmbed)
 import batchUpdates from "batchUpdates";
 import _slicedToArray from "_slicedToArray";
-import result from "result";
+import noop from "noop";
 
 const require = arg1;
-const result = require("result").fileFinishedImporting("modules/share/useFetchShareEmbed.tsx");
+const result = require("noop").fileFinishedImporting("modules/share/useFetchShareEmbed.tsx");
 
 export default function useFetchShareEmbed(arg0) {
   let dependencyMap;
@@ -23,21 +23,133 @@ export default function useFetchShareEmbed(arg0) {
   let batchUpdates = hasTriedResolving[1];
   callback = React.useRef(true);
   React = React.useRef(undefined);
-  const items = [arg0];
+  let items = [arg0];
   const effect = React.useEffect(() => {
-    function unfurl() {
-      return _unfurl(...arguments);
-    }
     function _unfurl() {
-      // CreateGeneratorClosureLongIndex (0x67)
-      const obj = callback(tmp);
-      return obj(...arguments);
+      const self = this;
+      const tmp = callback(function*() {
+        if (c5 === 2) {
+          c5 = 3;
+          HermesBuiltin.throwTypeError();
+        } else if (tmp7 === 3) {
+          if (arg0 === 1) {
+            throw arg1;
+          } else if (arg0 === 2) {
+            let obj = { value: null, done: true };
+            obj[0] = arg1;
+            return obj;
+          } else {
+            return { value: "HermesInternal", done: null };
+          }
+        } else {
+          try {
+            c5 = 2;
+            if (0 === c4) {
+              if (arg0 === 1) {
+                c5 = 3;
+                throw arg1;
+              } else if (arg0 === 2) {
+                c5 = 3;
+                obj = { value: null, done: true };
+                obj[0] = arg1;
+                return obj;
+              } else {
+                let closure_1 = tmp4;
+                let closure_0 = tmp8;
+                closure_0 = undefined;
+                if (null != outer1_0) {
+                  let c3 = 2;
+                  outer1_2(true);
+                  const items = [outer1_0];
+                  c4 = 3;
+                  c5 = 1;
+                  let obj1 = { value: null, done: false };
+                  obj1[0] = outer2_0(11066).unfurlEmbedUrl(items);
+                  return obj1;
+                } else {
+                  c5 = 3;
+                }
+              }
+            } else if (1 !== tmp8) {
+              if (2 === tmp8) {
+                c3 = 1;
+                outer1_1(undefined);
+              } else if (arg0 === 1) {
+                c5 = 3;
+                throw arg1;
+              } else if (arg0 === 2) {
+                c3 = 0;
+                let obj3 = outer2_0(705);
+                obj3.batchUpdates(() => {
+                  v0(true);
+                  tmp48(false);
+                });
+                c5 = 3;
+                const obj2 = { value: null, done: true };
+                obj2[0] = arg1;
+                return obj2;
+              } else {
+                closure_0 = arg1;
+                if (0 === closure_0.embeds.length) {
+                  outer1_1(undefined);
+                  c3 = 0;
+                  obj1 = outer2_0(705);
+                  obj1.batchUpdates(() => {
+                    v0(true);
+                    tmp48(false);
+                  });
+                  c5 = 3;
+                  obj3 = { value: null, done: true };
+                  obj3[0] = undefined;
+                  return obj3;
+                } else {
+                  obj = { embed: null, url: null };
+                  obj[0] = closure_0.embeds[0];
+                  obj[1] = closure_0;
+                  outer1_1(obj);
+                  c3 = 1;
+                }
+              }
+              c3 = 0;
+              outer2_0(705).batchUpdates(() => {
+                v0(true);
+                tmp48(false);
+              });
+              const obj6 = outer2_0(705);
+            }
+            c3 = 0;
+            outer2_0(705).batchUpdates(() => {
+              v0(true);
+              tmp48(false);
+            });
+            throw dependencyMap;
+          } catch (tmp48) {
+            dependencyMap = tmp48;
+            if (tmp5 === c3) {
+              c5 = tmp3;
+              throw tmp48;
+            } else if (tmp2 === tmp50) {
+              c4 = tmp2;
+            } else {
+              c4 = tmp;
+            }
+          }
+        }
+      });
+      const _unfurl = tmp;
+      const apply = tmp.apply;
+      if (typeof apply === "unknown") {
+        let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+      } else {
+        applyArgumentsResult = apply(self, arguments);
+      }
+      return applyArgumentsResult;
     }
     if (null != closure_0) {
-      if ("" !== closure_0) {
-        const match = closure_0.match(callback(outer1_2[3]).URL_REGEX);
+      if ("" !== str) {
+        const match = str.match(callback(outer1_2[3]).URL_REGEX);
         let atResult;
-        if (null != match) {
+        if (match != null) {
           atResult = match.at(0);
         }
         closure_0 = atResult;
@@ -47,8 +159,18 @@ export default function useFetchShareEmbed(arg0) {
             callback(undefined);
             ref.current = false;
           } else {
+            function unfurl() {
+              const self = this;
+              const apply = _unfurl.apply;
+              if (typeof apply === "unknown") {
+                let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+              } else {
+                applyArgumentsResult = apply(self, arguments);
+              }
+              return applyArgumentsResult;
+            }
             if (ref.current) {
-              ref.current = false;
+              tmp2.current = false;
               unfurl();
             }
             const _setTimeout = setTimeout;

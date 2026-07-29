@@ -1,50 +1,54 @@
-// Module ID: 11636
-// Function ID: 90291
+// Module ID: 11660
+// Function ID: 11661
 // Name: GuildPowerupPerksSection
-// Dependencies: [27, 33, 4165, 689, 11619, 1212, 2231, 11637, 11639, 11641, 2]
+// Dependencies: [17, 21, 4189, 712, 11643, 1236, 2255, 11661, 11663, 11665, 2]
 // Exports: default
 
-// Module 11636 (GuildPowerupPerksSection)
+// Module 11660 (GuildPowerupPerksSection)
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_4;
-let closure_5;
+let c4;
+let c5;
 let closure_6;
-({ jsx: closure_4, Fragment: closure_5, jsxs: closure_6 } = jsxProd);
-let obj = {};
-obj = { flexDirection: "column", gap: require("_createForOfIteratorHelperLoose").space.PX_16 };
-obj.container = obj;
-let closure_7 = _createForOfIteratorHelperLoose.createStyles(obj);
-const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/premium/powerups/native/GuildPowerupsPerksSection.tsx");
+({ jsx: c4, Fragment: c5, jsxs: closure_6 } = jsxProd);
+let obj = { container: null };
+obj = { flexDirection: "column", gap: require("Themes").space.PX_16 };
+obj[0] = obj;
+let closure_7 = createCacheKey.createStyles(obj);
+const result = require("createCacheKey").fileFinishedImporting("modules/premium/powerups/native/GuildPowerupsPerksSection.tsx");
 
 export default function GuildPowerupPerksSection(arg0) {
   let listings;
   let require;
   ({ guildId: require, listings } = arg0);
-  let obj = {};
-  obj = {};
+  let obj = { children: null };
+  obj = { title: null, description: null };
   const tmp = callback3();
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj.title = intl.string(importDefault(2231).TV3Vm8);
-  const intl2 = require(1212) /* getSystemLocale */.intl;
-  obj.description = intl2.string(importDefault(2231).STx9hp);
-  const items = [callback(importDefault(11619), obj), ];
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj[0] = intl.string(importDefault(2255).TV3Vm8);
+  const intl2 = require(1236) /* getSystemLocale */.intl;
+  obj[1] = intl2.string(importDefault(2255).STx9hp);
+  const items = [callback(importDefault(11643), obj), ];
   obj = {
     style: tmp.container,
     children: listings.map((type) => {
       type = type.type;
       if ("singlePerk" === type) {
-        let obj = { guildId: closure_0 };
-        ({ powerup: obj3.powerup, badge: obj3.badge } = type);
+        let obj = { guildId: null, powerup: null, badge: null };
+        obj[0] = closure_0;
+        ({ powerup: obj3[1], badge: obj3[2] } = type);
         return outer1_4(outer1_1(outer1_2[7]), obj, type.powerup.skuId);
       } else if ("multiPerk" === type) {
-        obj = { guildId: closure_0, listing: type };
+        obj = { guildId: null, listing: null };
+        obj[0] = closure_0;
+        obj[1] = type;
         const _HermesInternal2 = HermesInternal;
         return outer1_4(outer1_1(outer1_2[8]), obj, "" + type.group + "-" + arg1);
       } else if ("gameServer" === type) {
-        obj = { guildId: closure_0 };
+        obj = { guildId: null };
+        obj[0] = closure_0;
         const _HermesInternal = HermesInternal;
         return outer1_4(outer1_1(outer1_2[9]), obj, "game-server-" + arg1);
       } else {
@@ -53,6 +57,6 @@ export default function GuildPowerupPerksSection(arg0) {
     })
   };
   items[1] = callback(View, obj);
-  obj.children = items;
+  obj[0] = items;
   return callback2(closure_5, obj);
 };

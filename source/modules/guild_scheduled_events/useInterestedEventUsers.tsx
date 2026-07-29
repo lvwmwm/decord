@@ -1,12 +1,12 @@
-// Module ID: 8198
-// Function ID: 65567
+// Module ID: 8222
+// Function ID: 8223
 // Name: useInterestedEventUsers
-// Dependencies: [31, 5761, 1354, 566, 2]
+// Dependencies: [19, 5779, 1378, 589, 2]
 // Exports: default
 
-// Module 8198 (useInterestedEventUsers)
-import { useMemo } from "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 8222 (useInterestedEventUsers)
+import { useMemo } from "noop";
+import scheduledEventSort from "scheduledEventSort";
 import { GuildScheduledEventUserResponses as closure_4 } from "GUILD_EVENT_MAX_NAME_LENGTH";
 
 const result = require("GUILD_EVENT_MAX_NAME_LENGTH").fileFinishedImporting("modules/guild_scheduled_events/useInterestedEventUsers.tsx");
@@ -16,11 +16,11 @@ export default function useInterestedEventUsers(arg0, arg1) {
   const dependencyMap = arg1;
   let items = [stateFromStoresArray1];
   const items1 = [arg0];
-  const stateFromStoresArray = _require(566).useStateFromStoresArray(items, () => Object.values(stateFromStoresArray1.getUsersForGuildEvent(closure_0, null)), items1);
-  const obj = _require(566);
+  const stateFromStoresArray = _require(589).useStateFromStoresArray(items, () => Object.values(stateFromStoresArray1.getUsersForGuildEvent(closure_0, null)), items1);
+  const obj = _require(589);
   const items2 = [stateFromStoresArray1];
   const items3 = [arg0, arg1];
-  stateFromStoresArray1 = _require(566).useStateFromStoresArray(items2, () => Object.values(stateFromStoresArray1.getUsersForGuildEvent(closure_0, closure_1)), items3);
+  stateFromStoresArray1 = _require(589).useStateFromStoresArray(items2, () => Object.values(stateFromStoresArray1.getUsersForGuildEvent(closure_0, closure_1)), items3);
   const items4 = [stateFromStoresArray, stateFromStoresArray1];
   return stateFromStoresArray(() => {
     function addUserToAllInterested(user_id) {
@@ -36,11 +36,11 @@ export default function useInterestedEventUsers(arg0, arg1) {
     const found = items.filter((arg0) => {
       let tmp2 = null == tmp;
       if (!tmp2) {
-        tmp2 = tmp.response === outer2_4.INTERESTED;
+        tmp2 = tmp.response === outer1_4.INTERESTED;
       }
       return tmp2;
     });
-    const found1 = stateFromStoresArray1.filter((response) => response.response === outer2_4.INTERESTED);
+    const found1 = stateFromStoresArray1.filter((response) => response.response === constants.INTERESTED);
     const set = new Set();
     items = [];
     const item = found.forEach(addUserToAllInterested);

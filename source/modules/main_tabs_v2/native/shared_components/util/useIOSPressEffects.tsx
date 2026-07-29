@@ -1,21 +1,21 @@
-// Module ID: 5203
-// Function ID: 45115
+// Module ID: 5225
+// Function ID: 5226
 // Name: SPRING_CONFIG
-// Dependencies: [31, 1450, 4026, 477, 4577, 2]
+// Dependencies: [19, 1474, 4050, 500, 4599, 2]
 // Exports: useIOSPressEffects
 
-// Module 5203 (SPRING_CONFIG)
-import result from "result";
+// Module 5225 (SPRING_CONFIG)
+import noop from "noop";
 
 const require = arg1;
 let obj = { overshootClamping: true, damping: 35, stiffness: 450, mass: 0.5, restDisplacementThreshold: 0.001 };
 let closure_5 = { code: "function useIOSPressEffectsTsx1(){const{withSpring,interpolate,sharedPressState,sharedWidthScale,SPRING_CONFIG,withOpacity}=this.__closure;const scale=withSpring(interpolate(sharedPressState.get(),[0,1],[1,sharedWidthScale.get()]),SPRING_CONFIG);if(withOpacity){return{transform:[{scale:scale}],opacity:withSpring(interpolate(sharedPressState.get(),[0,1],[1,0.5]),SPRING_CONFIG)};}else{return{transform:[{scale:scale}]};}}" };
-let result = require("module_4026").fileFinishedImporting("modules/main_tabs_v2/native/shared_components/util/useIOSPressEffects.tsx");
+let result = require("module_4050").fileFinishedImporting("modules/main_tabs_v2/native/shared_components/util/useIOSPressEffects.tsx");
 
 export const SPRING_CONFIG = obj;
 export const useIOSPressEffects = function useIOSPressEffects(arg0) {
-  let flag = arg1;
   const _require = arg0;
+  let flag = arg1;
   if (arg1 === undefined) {
     flag = false;
   }
@@ -46,39 +46,39 @@ export const useIOSPressEffects = function useIOSPressEffects(arg0) {
     }
     return isIOSResult;
   }, items2);
-  const obj2 = _require(width[2]);
+  let obj2 = _require(width[2]);
   class S {
     constructor() {
+      tmp = closure_0;
+      tmp2 = width;
       obj = closure_0(width[4]);
       obj2 = closure_0(width[2]);
+      obj3 = width;
       value = width.get();
       items = [1];
       items[1] = c3.get();
+      tmp4 = width;
       withSpringResult = obj.withSpring(obj2.interpolate(value, [0, 1], items), width);
-      obj = {};
       if (c1) {
-        obj1 = {};
-        obj.scale = withSpringResult;
+        obj = { transform: null, opacity: null };
+        obj1 = { scale: null };
+        obj1[0] = withSpringResult;
         items1 = [];
-        items1[0] = obj;
-        obj1.transform = items1;
-        tmp4 = closure_0;
-        tmp5 = width;
-        obj6 = closure_0(width[4]);
-        obj7 = closure_0(width[2]);
-        tmp6 = width;
-        tmp7 = width;
-        obj1.opacity = obj6.withSpring(obj7.interpolate(width.get(), [0, 1], [1, 0.5]), width);
-        tmp3 = obj1;
+        items1[0] = obj1;
+        obj[0] = items1;
+        tmpResult = tmp(tmp2[4]);
+        tmpResult1 = tmp(tmp2[2]);
+        obj[1] = tmpResult.withSpring(tmpResult1.interpolate(obj3.get(), [0, 1], [1, 0.5]), tmp4);
+        obj2 = obj;
       } else {
-        obj2 = {};
-        obj2.scale = withSpringResult;
+        obj2 = { transform: null };
+        obj3 = { scale: null };
+        obj3[0] = withSpringResult;
         items2 = [];
-        items2[0] = obj2;
-        obj.transform = items2;
-        tmp3 = obj;
+        items2[0] = obj3;
+        obj2[0] = items2;
       }
-      return tmp3;
+      return obj2;
     }
   }
   obj = { withSpring: _require(width[4]).withSpring, interpolate: _require(width[2]).interpolate, sharedPressState: sharedValue1, sharedWidthScale: sharedValue, SPRING_CONFIG: sharedValue1, withOpacity: flag };

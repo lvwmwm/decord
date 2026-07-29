@@ -1,53 +1,354 @@
-// Module ID: 6759
-// Function ID: 59394
+// Module ID: 6781
+// Function ID: 6782
 // Name: _requestGoogleWalletVerification
-// Dependencies: [5, 653, 507, 6760, 2]
+// Dependencies: [5, 676, 530, 6782, 2]
 // Exports: checkGoogleWalletAvailable, getGoogleWalletCredential, requestGoogleWalletVerification, verifyGoogleWalletCredential
 
-// Module 6759 (_requestGoogleWalletVerification)
+// Module 6781 (_requestGoogleWalletVerification)
 import asyncGeneratorStep from "asyncGeneratorStep";
 import { Endpoints } from "ME";
 
 const require = arg1;
-async function _requestGoogleWalletVerification() {
-  const HTTP = outer2_0(outer2_2[2]).HTTP;
-  return yield HTTP.post({ url: outer2_4.GOOGLE_WALLET_REQUEST, body: {}, rejectWithError: true, failImmediatelyWhenRateLimited: true }).body;
-}
-async function _verifyGoogleWalletCredential(arg0, arg1) {
-  const HTTP = outer2_0(outer2_2[2]).HTTP;
-  obj = { url: outer2_4.GOOGLE_WALLET_VERIFY, body: obj, rejectWithError: true, failImmediatelyWhenRateLimited: true };
-  obj = { credential_json: arg0 };
-  yield HTTP.post(obj);
-}
-async function _checkGoogleWalletAvailable() {
-  const tmp = null != outer2_1(outer2_2[3]);
-  let tmp2 = tmp;
-  if (tmp) {
-    tmp2 = yield outer2_1(outer2_2[3]).isAvailable();
-    const obj = outer2_1(outer2_2[3]);
-  }
-  return tmp2;
-}
-async function _getGoogleWalletCredential(arg0, arg1) {
-  if (null == outer2_1(outer2_2[3])) {
-    const _Error = Error;
-    const error = new Error("Digital credential module is not available");
-    throw error;
+function _requestGoogleWalletVerification() {
+  const self = this;
+  const tmp = callback(function*() {
+    if (v0 === 2) {
+      v0 = 3;
+      HermesBuiltin.throwTypeError();
+    } else if (tmp3 === 3) {
+      if (arg0 === 1) {
+        throw arg1;
+      } else if (arg0 === 2) {
+        let obj = { value: null, done: true };
+        obj[0] = arg1;
+        return obj;
+      } else {
+        return { value: "HermesInternal", done: null };
+      }
+    } else {
+      try {
+        v0 = 2;
+        if (0 === c1) {
+          if (arg0 === 1) {
+            v0 = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            v0 = 3;
+            obj = { value: null, done: true };
+            obj[0] = arg1;
+            return obj;
+          } else {
+            const HTTP = v0(outer1_2[2]).HTTP;
+            const obj1 = { url: null, body: null, rejectWithError: true, failImmediatelyWhenRateLimited: true };
+            obj1[0] = outer1_4.GOOGLE_WALLET_REQUEST;
+            obj1[1] = {};
+            c1 = 1;
+            v0 = 1;
+            const obj2 = { value: null, done: false };
+            obj2[0] = HTTP.post(obj1);
+            return obj2;
+          }
+        } else if (arg0 === 1) {
+          v0 = 3;
+          throw arg1;
+        } else if (arg0 === 2) {
+          v0 = 3;
+          const obj3 = { value: null, done: true };
+          obj3[0] = arg1;
+          return obj3;
+        } else {
+          v0 = 3;
+          obj = { value: null, done: true };
+          obj[0] = arg1.body;
+          return obj;
+        }
+      } catch (tmp8) {
+        v0 = tmp;
+        throw tmp8;
+      }
+    }
+  });
+  const _requestGoogleWalletVerification = tmp;
+  const apply = tmp.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
   } else {
-    return yield outer2_1(outer2_2[3]).getCredential(arg0);
+    applyArgumentsResult = apply(self, arguments);
   }
+  return applyArgumentsResult;
 }
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/age_assurance/GoogleWalletActionCreators.native.tsx");
+function _verifyGoogleWalletCredential() {
+  const self = this;
+  const tmp = callback((arg0) => {
+    let closure_0 = arg0;
+    let c2 = 0;
+    let c1 = 0;
+    return (function*(arg0) {
+      if (c1 === 2) {
+        c1 = 3;
+        HermesBuiltin.throwTypeError();
+      } else if (tmp3 === 3) {
+        if (arg0 === 1) {
+          throw arg1;
+        } else if (arg0 === 2) {
+          let obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
+        } else {
+          return { value: "HermesInternal", done: null };
+        }
+      } else {
+        try {
+          c1 = 2;
+          if (0 === table) {
+            if (arg0 === 1) {
+              c1 = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              c1 = 3;
+              obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            } else {
+              const HTTP = callback(table[2]).HTTP;
+              const obj1 = { url: null, body: null, rejectWithError: true, failImmediatelyWhenRateLimited: true };
+              obj1[0] = outer1_4.GOOGLE_WALLET_VERIFY;
+              const obj2 = { credential_json: null };
+              obj2[0] = callback;
+              obj1[1] = obj2;
+              table = 1;
+              c1 = 1;
+              const obj3 = { value: null, done: false };
+              obj3[0] = HTTP.post(obj1);
+              return obj3;
+            }
+          } else if (arg0 === 1) {
+            c1 = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            c1 = 3;
+            obj = { value: null, done: true };
+            obj[0] = arg1;
+            return obj;
+          } else {
+            c1 = 3;
+            return { value: "HermesInternal", done: null };
+          }
+        } catch (tmp9) {
+          c1 = tmp;
+          throw tmp9;
+        }
+      }
+    })();
+  });
+  const _verifyGoogleWalletCredential = tmp;
+  const apply = tmp.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
+}
+function _checkGoogleWalletAvailable() {
+  const self = this;
+  const tmp = callback(function*() {
+    if (c0 === 2) {
+      c0 = 3;
+      HermesBuiltin.throwTypeError();
+    } else if (tmp5 === 3) {
+      if (arg0 === 1) {
+        throw arg1;
+      } else if (arg0 === 2) {
+        let obj = { value: null, done: true };
+        obj[0] = arg1;
+        return obj;
+      } else {
+        return { value: "HermesInternal", done: null };
+      }
+    } else {
+      try {
+        c0 = 2;
+        if (0 === v0) {
+          if (arg0 === 1) {
+            c0 = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            c0 = 3;
+            obj = { value: null, done: true };
+            obj[0] = arg1;
+            return obj;
+          } else {
+            let table = 1;
+            let tmp7 = null != v0(table[3]);
+            if (tmp7) {
+              v0 = 2;
+              c0 = 1;
+              const obj1 = { value: null, done: false };
+              obj1[0] = tmp8(tmp9[3]).isAvailable();
+              return obj1;
+            }
+            tmp8 = v0;
+            tmp9 = table;
+          }
+        } else if (1 === tmp6) {
+          table = 0;
+          c0 = 3;
+          return { value: false, done: true };
+        } else if (arg0 === 1) {
+          c0 = 3;
+          throw arg1;
+        } else {
+          tmp7 = arg1;
+          if (arg0 === 2) {
+            table = 0;
+            c0 = 3;
+            obj = { value: null, done: true };
+            obj[0] = arg1;
+            return obj;
+          }
+        }
+        table = 0;
+        c0 = 3;
+        const obj2 = { value: null, done: true };
+        obj2[0] = tmp7;
+        return obj2;
+      } catch (tmp10) {
+        if (tmp3 === table) {
+          c0 = tmp2;
+          throw tmp10;
+        } else {
+          v0 = tmp;
+        }
+      }
+    }
+  });
+  const _checkGoogleWalletAvailable = tmp;
+  const apply = tmp.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
+}
+function _getGoogleWalletCredential() {
+  const self = this;
+  const tmp = callback((arg0) => {
+    let closure_0 = arg0;
+    let c2 = 0;
+    let c1 = 0;
+    return (function*(arg0) {
+      if (v0 === 2) {
+        v0 = 3;
+        HermesBuiltin.throwTypeError();
+      } else if (tmp3 === 3) {
+        if (arg0 === 1) {
+          throw arg1;
+        } else if (arg0 === 2) {
+          let obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
+        } else {
+          return { value: "HermesInternal", done: null };
+        }
+      } else {
+        try {
+          v0 = 2;
+          if (0 === table) {
+            if (arg0 === 1) {
+              v0 = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              v0 = 3;
+              obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            } else {
+              if (null == v0(table[3])) {
+                const _Error = Error;
+                const error = new Error("Digital credential module is not available");
+                throw error;
+              } else {
+                table = 1;
+                v0 = 1;
+                const obj1 = { value: null, done: false };
+                obj1[0] = tmp6(tmp7[3]).getCredential(tmp5);
+                return obj1;
+              }
+              tmp5 = closure_0;
+              tmp6 = v0;
+              tmp7 = table;
+            }
+          } else if (arg0 === 1) {
+            v0 = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            v0 = 3;
+            const obj2 = { value: null, done: true };
+            obj2[0] = arg1;
+            return obj2;
+          } else {
+            v0 = 3;
+            obj = { value: null, done: true };
+            obj[0] = arg1;
+            return obj;
+          }
+        } catch (tmp14) {
+          v0 = tmp;
+          throw tmp14;
+        }
+      }
+    })();
+  });
+  const _getGoogleWalletCredential = tmp;
+  const apply = tmp.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
+}
+const result = require("sendRequest").fileFinishedImporting("modules/age_assurance/GoogleWalletActionCreators.native.tsx");
 
 export const requestGoogleWalletVerification = function requestGoogleWalletVerification() {
-  return _requestGoogleWalletVerification(...arguments);
+  const self = this;
+  const apply = _requestGoogleWalletVerification.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
 };
-export const verifyGoogleWalletCredential = function verifyGoogleWalletCredential(arg0) {
-  return _verifyGoogleWalletCredential(...arguments);
+export const verifyGoogleWalletCredential = function verifyGoogleWalletCredential(closure_1) {
+  const self = this;
+  const apply = _verifyGoogleWalletCredential.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
 };
 export const checkGoogleWalletAvailable = function checkGoogleWalletAvailable() {
-  return _checkGoogleWalletAvailable(...arguments);
+  const self = this;
+  const apply = _checkGoogleWalletAvailable.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
 };
 export const getGoogleWalletCredential = function getGoogleWalletCredential(request_json) {
-  return _getGoogleWalletCredential(...arguments);
+  const self = this;
+  const apply = _getGoogleWalletCredential.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
 };

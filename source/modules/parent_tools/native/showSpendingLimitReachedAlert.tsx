@@ -1,45 +1,44 @@
-// Module ID: 6234
-// Function ID: 55728
+// Module ID: 6254
+// Function ID: 6255
 // Name: isSpendingLimitError
-// Dependencies: [4064, 3833, 6235, 4506, 1212, 5827, 4175, 2]
+// Dependencies: [4088, 3857, 6255, 4529, 1236, 5845, 4199, 2]
 // Exports: isSpendingLimitError, showSpendingLimitReachedAlert
 
-// Module 6234 (isSpendingLimitError)
+// Module 6254 (isSpendingLimitError)
 const result = require("useUserIdsForLinkStatus").fileFinishedImporting("modules/parent_tools/native/showSpendingLimitReachedAlert.tsx");
 
 export const isSpendingLimitError = function isSpendingLimitError(billingError) {
-  let tmp = billingError instanceof require(4064) /* V6OrEarlierAPIError */.BillingError;
-  if (tmp) {
-    let tmp4 = billingError.code === require(3833) /* _isNativeReflectConstruct */.ErrorCodes.BILLING_SPENDING_LIMIT_REACHED;
+  let tmp3 = billingError instanceof require(4088) /* V6OrEarlierAPIError */.BillingError;
+  if (tmp3) {
+    let tmp4 = billingError.code === tmp(3857).ErrorCodes.BILLING_SPENDING_LIMIT_REACHED;
     if (!tmp4) {
-      tmp4 = billingError.code === require(3833) /* _isNativeReflectConstruct */.ErrorCodes.BILLING_SPENDING_LIMIT_WILL_EXCEED;
+      tmp4 = billingError.code === tmp(3857).ErrorCodes.BILLING_SPENDING_LIMIT_WILL_EXCEED;
     }
-    tmp = tmp4;
+    tmp3 = tmp4;
   }
-  return tmp;
+  return tmp3;
 };
 export const showSpendingLimitReachedAlert = function showSpendingLimitReachedAlert() {
-  let obj = activeLinkUserIds(6235);
+  let obj = activeLinkUserIds(6255);
   activeLinkUserIds = obj.getActiveLinkUserIds();
-  let obj1 = importDefault(4506);
-  obj = {};
-  const intl = activeLinkUserIds(1212).intl;
-  obj.title = intl.string(activeLinkUserIds(1212).t.QJKKrT);
-  const intl2 = activeLinkUserIds(1212).intl;
-  obj.body = intl2.string(activeLinkUserIds(1212).t["73Islf"]);
-  obj.isDismissable = true;
+  let obj1 = importDefault(4529);
+  obj = { title: null, body: null, isDismissable: true };
+  const intl = activeLinkUserIds(1236).intl;
+  obj[0] = intl.string(activeLinkUserIds(1236).t.QJKKrT);
+  const intl2 = activeLinkUserIds(1236).intl;
+  obj[1] = intl2.string(activeLinkUserIds(1236).t["73Islf"]);
   if (activeLinkUserIds.length > 0) {
-    obj = {};
-    const intl3 = activeLinkUserIds(1212).intl;
-    obj.confirmText = intl3.string(activeLinkUserIds(1212).t.GF9RCX);
-    obj.onConfirm = function onConfirm() {
+    obj = { confirmText: null, onConfirm: null, cancelText: null };
+    const intl3 = tmp(1236).intl;
+    obj[0] = intl3.string(tmp(1236).t.GF9RCX);
+    obj[1] = function onConfirm() {
       let obj = activeLinkUserIds(outer1_2[5]);
       obj.popLayer();
       obj = { recipientIds: activeLinkUserIds };
       outer1_1(outer1_2[6]).openPrivateChannel(obj);
     };
-    const intl4 = activeLinkUserIds(1212).intl;
-    obj.cancelText = intl4.string(activeLinkUserIds(1212).t.L5eIZ2);
+    const intl4 = tmp(1236).intl;
+    obj[2] = intl4.string(tmp(1236).t.L5eIZ2);
     obj1 = obj;
   } else {
     obj1 = {};

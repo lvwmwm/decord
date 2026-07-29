@@ -1,11 +1,11 @@
-// Module ID: 9736
-// Function ID: 75699
+// Module ID: 9758
+// Function ID: 9759
 // Name: useFormattedSKUPrice
-// Dependencies: [31, 6279, 566, 5654, 2]
+// Dependencies: [19, 6300, 589, 5672, 2]
 // Exports: useFormattedSKUPrice
 
-// Module 9736 (useFormattedSKUPrice)
-import result from "result";
+// Module 9758 (useFormattedSKUPrice)
+import noop from "noop";
 
 const require = arg1;
 const result = require("initialize").fileFinishedImporting("modules/storefront/native/StorefrontNativeUtils.android.tsx");
@@ -15,31 +15,30 @@ export const useFormattedSKUPrice = function useFormattedSKUPrice(sku) {
   let _require;
   let stateFromStores;
   let tmp2;
-  if (null != sku) {
+  if (sku != null) {
     const googleSkuIds = sku.googleSkuIds;
-    if (null != googleSkuIds) {
+    if (googleSkuIds != null) {
       tmp2 = googleSkuIds[tmp];
     }
   }
-  let tmp3 = null;
-  if (null != tmp2) {
-    tmp3 = tmp2;
+  if (tmp2 == null) {
+    tmp2 = null;
   }
-  _require = tmp3;
-  let items = [tmp3];
+  _require = tmp2;
+  let items = [tmp2];
   const effect = React.useEffect(() => {
     if (null != _undefined) {
-      const items = [_undefined];
+      const items = [tmp];
       const inAppSkus = _undefined(outer1_2[1]).loadInAppSkus(items);
       const obj = _undefined(outer1_2[1]);
     }
   }, items);
-  const items1 = [stateFromStores(5654)];
-  const items2 = [tmp3];
-  stateFromStores = _require(566).useStateFromStores(items1, () => {
+  const items1 = [stateFromStores(5672)];
+  const items2 = [tmp2];
+  stateFromStores = _require(589).useStateFromStores(items1, () => {
     let product = null;
     if (null != c0) {
-      product = stateFromStores(outer1_2[3]).getProduct(c0);
+      product = stateFromStores(outer1_2[3]).getProduct(tmp);
       const obj = stateFromStores(outer1_2[3]);
     }
     return product;
@@ -47,11 +46,12 @@ export const useFormattedSKUPrice = function useFormattedSKUPrice(sku) {
   const items3 = [stateFromStores];
   return React.useMemo(() => {
     let priceString;
-    if (null != stateFromStores) {
-      priceString = stateFromStores.priceString;
+    if (stateFromStores != null) {
+      priceString = tmp.priceString;
     }
     if (null != priceString) {
-      let obj = { normalPrice: stateFromStores.priceString, discountedPrice: null, discountPercent: null, userPrice: stateFromStores.priceString };
+      let obj = { normalPrice: null, discountedPrice: null, discountPercent: null, userPrice: null };
+      ({ priceString: obj2[0], priceString: obj2[3] } = tmp);
     } else {
       obj = { normalPrice: null, discountedPrice: null, discountPercent: null, userPrice: null };
     }

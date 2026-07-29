@@ -1,176 +1,134 @@
-// Module ID: 4236
-// Function ID: 36209
-// Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 4226, 587, 22, 566, 686, 2]
+// Module ID: 4260
+// Function ID: 4261
+// Name: initialize
+// Dependencies: [4250, 595, 589, 12, 709, 2]
 
-// Module 4236 (_isNativeReflectConstruct)
-import Storage from "Storage";
-import apply from "apply";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
+// Module 4260 (initialize)
 import { DeviceTypes } from "DesktopSources";
+import { Store } from "initialize";
 
-const require = arg1;
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
-  }
-  const result = _isNativeReflectConstruct();
+const CertifiedDeviceStore = "CertifiedDeviceStore";
+let closure_5 = {};
+let closure_6 = {};
+let c7 = 0;
+class CertifiedDeviceStore extends Store {
 }
-function getOrElse(arg0, arg1, arg2) {
-  let tmp = arg1;
-  if (null != table2[arg0]) {
-    tmp = arg2(tmp2);
-  }
-  return tmp;
-}
-function updateDevicesForApplication(applicationId, devices) {
-  if (null != table[applicationId]) {
-    const item = arr.forEach((id) => {
-      delete tmp2[tmp];
-      return id.id;
-    });
-  }
-  table[applicationId] = devices;
-  const item1 = devices.forEach((id) => {
-    outer1_10[id.id] = id;
-    return id;
-  });
-}
-let closure_9 = {};
-let closure_10 = {};
-let c11 = 0;
-let tmp2 = ((Store) => {
-  class CertifiedDeviceStore {
-    constructor() {
-      self = this;
-      tmp = outer1_3(this, CertifiedDeviceStore);
-      obj = outer1_6(CertifiedDeviceStore);
-      tmp2 = outer1_5;
-      if (outer1_12()) {
-        tmp6 = globalThis;
-        _Reflect = Reflect;
-        tmp7 = outer1_6;
-        tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, outer1_6(self).constructor);
-      } else {
-        tmp3 = arguments;
-        tmp4 = arguments;
-        constructResult = obj(...arguments);
-      }
-      return tmp2(self, constructResult);
-    }
-  }
-  callback2(CertifiedDeviceStore, Store);
-  let obj = {
-    key: "initialize",
-    value() {
-      const Storage = CertifiedDeviceStore(outer1_2[6]).Storage;
-      const value = Storage.get("CertifiedDeviceStore");
-      if (null != value) {
-        let item = outer1_1(outer1_2[7]).forEach(value, (arr) => {
-          const item = arr.forEach((type) => {
-            if (tmp) {
-              type.hardwareMute = false;
-            }
-          });
-          outer2_14(arg1, arr);
+const prototype = CertifiedDeviceStore.prototype;
+prototype["initialize"] = function initialize() {
+  const Storage = require(595) /* Storage */.Storage;
+  const value = Storage.get(CertifiedDeviceStore);
+  if (null != value) {
+    let item = importDefault(12).forEach(value, (arr) => {
+      const item = arr.forEach((type) => {
+        if (tmp) {
+          type.hardwareMute = false;
+        }
+      });
+      if (null != table[arg1]) {
+        const item1 = arr.forEach((arg0) => {
+          delete tmp3[tmp2];
+          return tmp;
         });
-        const arr = outer1_1(outer1_2[7]);
       }
+      table[arg1] = arr;
+      const item2 = arr.forEach((id) => {
+        closure_6[id.id] = id;
+        return id;
+      });
+    });
+    const arr = importDefault(12);
+  }
+};
+prototype["isCertified"] = function isCertified(found) {
+  return null != dependencyMap[found];
+};
+prototype["getCertifiedDevice"] = function getCertifiedDevice(inputDeviceId) {
+  return dependencyMap[inputDeviceId];
+};
+prototype["getCertifiedDeviceName"] = function getCertifiedDeviceName(inputDeviceId, arg1) {
+  let combined = arg1;
+  const certifiedDevice = this.getCertifiedDevice(inputDeviceId);
+  if (null != certifiedDevice) {
+    const _HermesInternal = HermesInternal;
+    combined = "" + certifiedDevice.vendor.name + " " + certifiedDevice.model.name;
+  }
+  return combined;
+};
+prototype["getCertifiedDeviceByType"] = function getCertifiedDeviceByType(arg0) {
+  let closure_0 = arg0;
+  return importDefault(12).find(closure_6, (type) => type.type === closure_0);
+};
+prototype["isHardwareMute"] = function isHardwareMute(arg0) {
+  let flag = false;
+  if (null != dependencyMap[arg0]) {
+    flag = tmp.type === DeviceTypes.AUDIO_INPUT && tmp.hardwareMute;
+    const tmp3 = tmp.type === DeviceTypes.AUDIO_INPUT && tmp.hardwareMute;
+  }
+  return flag;
+};
+prototype["hasEchoCancellation"] = function hasEchoCancellation(inputDeviceId) {
+  let flag = false;
+  if (null != dependencyMap[inputDeviceId]) {
+    flag = tmp.type === DeviceTypes.AUDIO_INPUT && tmp.echoCancellation;
+    const tmp3 = tmp.type === DeviceTypes.AUDIO_INPUT && tmp.echoCancellation;
+  }
+  return flag;
+};
+prototype["hasNoiseSuppression"] = function hasNoiseSuppression(inputDeviceId) {
+  let flag = false;
+  if (null != dependencyMap[inputDeviceId]) {
+    flag = tmp.type === DeviceTypes.AUDIO_INPUT && tmp.noiseSuppression;
+    const tmp3 = tmp.type === DeviceTypes.AUDIO_INPUT && tmp.noiseSuppression;
+  }
+  return flag;
+};
+prototype["hasAutomaticGainControl"] = function hasAutomaticGainControl(inputDeviceId) {
+  let flag = false;
+  if (null != dependencyMap[inputDeviceId]) {
+    flag = tmp.type === DeviceTypes.AUDIO_INPUT && tmp.automaticGainControl;
+    const tmp3 = tmp.type === DeviceTypes.AUDIO_INPUT && tmp.automaticGainControl;
+  }
+  return flag;
+};
+prototype["getVendor"] = function getVendor(arg0) {
+  let vendor = null;
+  if (null != dependencyMap[arg0]) {
+    vendor = tmp.vendor;
+  }
+  return vendor;
+};
+prototype["getModel"] = function getModel(arg0) {
+  let model = null;
+  if (null != dependencyMap[arg0]) {
+    model = tmp.model;
+  }
+  return model;
+};
+prototype["getRevision"] = function getRevision() {
+  return c7;
+};
+CertifiedDeviceStore.displayName = "CertifiedDeviceStore";
+const certifiedDeviceStore = new CertifiedDeviceStore(require("dispatcher"), {
+  CERTIFIED_DEVICES_SET: function handleSetCertifiedDevices(arg0) {
+    let applicationId;
+    let devices;
+    ({ applicationId, devices } = arg0);
+    if (null != table[applicationId]) {
+      const item = arr.forEach((arg0) => {
+        delete tmp3[tmp2];
+        return tmp;
+      });
     }
-  };
-  const items = [obj, , , , , , , , , , , ];
-  obj = {
-    key: "isCertified",
-    value(arg0) {
-      return null != outer1_10[arg0];
-    }
-  };
-  items[1] = obj;
-  obj = {
-    key: "getCertifiedDevice",
-    value(arg0) {
-      return outer1_10[arg0];
-    }
-  };
-  items[2] = obj;
-  items[3] = {
-    key: "getCertifiedDeviceName",
-    value(arg0, arg1) {
-      let combined = arg1;
-      const certifiedDevice = this.getCertifiedDevice(arg0);
-      if (null != certifiedDevice) {
-        const _HermesInternal = HermesInternal;
-        combined = "" + certifiedDevice.vendor.name + " " + certifiedDevice.model.name;
-      }
-      return combined;
-    }
-  };
-  items[4] = {
-    key: "getCertifiedDeviceByType",
-    value(arg0) {
-      let closure_0 = arg0;
-      return outer1_1(outer1_2[7]).find(outer1_10, (type) => type.type === closure_0);
-    }
-  };
-  items[5] = {
-    key: "isHardwareMute",
-    value(arg0) {
-      return outer1_13(arg0, false, (type) => type.type === outer2_8.AUDIO_INPUT && type.hardwareMute);
-    }
-  };
-  items[6] = {
-    key: "hasEchoCancellation",
-    value(arg0) {
-      return outer1_13(arg0, false, (type) => type.type === outer2_8.AUDIO_INPUT && type.echoCancellation);
-    }
-  };
-  items[7] = {
-    key: "hasNoiseSuppression",
-    value(arg0) {
-      return outer1_13(arg0, false, (type) => type.type === outer2_8.AUDIO_INPUT && type.noiseSuppression);
-    }
-  };
-  items[8] = {
-    key: "hasAutomaticGainControl",
-    value(arg0) {
-      return outer1_13(arg0, false, (type) => type.type === outer2_8.AUDIO_INPUT && type.automaticGainControl);
-    }
-  };
-  items[9] = {
-    key: "getVendor",
-    value(arg0) {
-      return outer1_13(arg0, null, (vendor) => vendor.vendor);
-    }
-  };
-  items[10] = {
-    key: "getModel",
-    value(arg0) {
-      return outer1_13(arg0, null, (model) => model.model);
-    }
-  };
-  items[11] = {
-    key: "getRevision",
-    value() {
-      return outer1_11;
-    }
-  };
-  return callback(CertifiedDeviceStore, items);
-})(require("initialize").Store);
-tmp2.displayName = "CertifiedDeviceStore";
-tmp2 = new tmp2(require("dispatcher"), {
-  CERTIFIED_DEVICES_SET: function handleSetCertifiedDevices(applicationId) {
-    updateDevicesForApplication(applicationId.applicationId, applicationId.devices);
-    const Storage = require(587) /* Storage */.Storage;
-    const result = Storage.set("CertifiedDeviceStore", closure_9);
-    closure_11 = closure_11 + 1;
+    table[applicationId] = devices;
+    const item1 = devices.forEach((id) => {
+      closure_6[id.id] = id;
+      return id;
+    });
+    const Storage = require(595) /* Storage */.Storage;
+    const result = Storage.set(CertifiedDeviceStore, tmp);
+    closure_7 = closure_7 + 1;
   }
 });
-let result = require("_possibleConstructorReturn").fileFinishedImporting("stores/CertifiedDeviceStore.tsx");
+let result = require("initialize").fileFinishedImporting("stores/CertifiedDeviceStore.tsx");
 
-export default tmp2;
+export default certifiedDeviceStore;

@@ -1,26 +1,26 @@
-// Module ID: 14236
-// Function ID: 109380
+// Module ID: 14258
+// Function ID: 14259
 // Name: useEmojiByIdOrName
-// Dependencies: [5026, 566, 2]
+// Dependencies: [5048, 589, 2]
 // Exports: default, useEmojiByIdOrName
 
-// Module 14236 (useEmojiByIdOrName)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 14258 (useEmojiByIdOrName)
+import getEmojiToGroupId from "getEmojiToGroupId";
 
 const require = arg1;
 function useEmojiByIdOrName(guildId, emojiId) {
   const _require = guildId;
   const dependencyMap = emojiId;
-  const items = [_isNativeReflectConstruct];
+  const items = [getEmojiToGroupId];
   const items1 = [guildId, emojiId];
-  return _require(566).useStateFromStores(items, () => {
+  return _require(589).useStateFromStores(items, () => {
     if (null == closure_1) {
       return null;
     } else {
       const disambiguatedEmojiContext = outer1_2.getDisambiguatedEmojiContext(closure_0);
-      let byId = disambiguatedEmojiContext.getById(closure_1);
-      if (null == byId) {
-        byId = disambiguatedEmojiContext.getByName(closure_1);
+      let byId = disambiguatedEmojiContext.getById(tmp);
+      if (byId == null) {
+        byId = disambiguatedEmojiContext.getByName(tmp);
       }
       return byId;
     }

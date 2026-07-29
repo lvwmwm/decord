@@ -1,11 +1,11 @@
-// Module ID: 8372
-// Function ID: 66967
+// Module ID: 8396
+// Function ID: 8397
 // Name: useIsPremiumSubscriber
-// Dependencies: [1850, 1852, 566, 1873, 2]
+// Dependencies: [1874, 1876, 589, 1897, 2]
 // Exports: useIsPremiumSubscriber
 
-// Module 8372 (useIsPremiumSubscriber)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 8396 (useIsPremiumSubscriber)
+import mergeGuildAvatar from "mergeGuildAvatar";
 import { PremiumTypes } from "GuildFeatures";
 
 const require = arg1;
@@ -15,8 +15,8 @@ export const useIsPremiumSubscriber = function useIsPremiumSubscriber(TIER_2) {
   if (TIER_2 === undefined) {
     TIER_2 = PremiumTypes.TIER_2;
   }
-  const items = [_isNativeReflectConstruct];
-  return TIER_2(566).useStateFromStores(items, () => {
+  const items = [mergeGuildAvatar];
+  return TIER_2(589).useStateFromStores(items, () => {
     const currentUser = outer1_2.getCurrentUser();
     return TIER_2(outer1_1[3]).isPremiumExactly(currentUser, TIER_2);
   });

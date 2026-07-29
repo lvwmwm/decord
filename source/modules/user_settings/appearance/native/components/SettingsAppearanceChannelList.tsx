@@ -1,31 +1,33 @@
-// Module ID: 14284
-// Function ID: 109616
+// Module ID: 14306
+// Function ID: 14307
 // Name: ChannelListPreview
-// Dependencies: [31, 27, 33, 4165, 689, 14285, 14286, 14287, 4026, 1212, 14293, 6655, 14296, 2]
+// Dependencies: [19, 17, 21, 4189, 712, 14307, 14308, 14309, 4050, 1236, 14315, 6676, 14318, 2]
 // Exports: default
 
-// Module 14284 (ChannelListPreview)
-import result from "result";
+// Module 14306 (ChannelListPreview)
+import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_5;
+let StyleSheet;
+let c4;
+let c5;
 let closure_6;
 const require = arg1;
-const View = get_ActivityIndicator.View;
-({ jsx: closure_5, jsxs: closure_6 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = {};
-let merged = Object.assign(get_ActivityIndicator.StyleSheet.absoluteFillObject);
-_createForOfIteratorHelperLoose["borderRadius"] = require("_createForOfIteratorHelperLoose").radii.xl;
-_createForOfIteratorHelperLoose["overflow"] = "hidden";
-_createForOfIteratorHelperLoose.channelPreviewGradient = _createForOfIteratorHelperLoose;
-let obj1 = { flex: 1, marginTop: require("_createForOfIteratorHelperLoose").space.PX_8, borderRadius: require("_createForOfIteratorHelperLoose").radii.xl, width: "100%", borderWidth: 1 };
-let merged1 = Object.assign(require("_createForOfIteratorHelperLoose").shadows.SHADOW_HIGH);
-obj1["shadowColor"] = "#000000";
-_createForOfIteratorHelperLoose.channelPreviewCardContainer = obj1;
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+({ View: c4, StyleSheet } = get_ActivityIndicator);
+({ jsx: c5, jsxs: closure_6 } = jsxProd);
+createCacheKey = { channelPreviewGradient: null, channelPreviewCardContainer: null };
+createCacheKey = {};
+let merged = Object.assign(StyleSheet.absoluteFillObject);
+createCacheKey.borderRadius = require("Themes").radii.xl;
+createCacheKey.overflow = "hidden";
+createCacheKey[0] = createCacheKey;
+let obj1 = { flex: 1, marginTop: require("Themes").space.PX_8, borderRadius: require("Themes").radii.xl, width: "100%", borderWidth: 1 };
+let merged1 = Object.assign(require("Themes").shadows.SHADOW_HIGH);
+obj1.shadowColor = "#000000";
+createCacheKey[1] = obj1;
+createCacheKey = createCacheKey.createStyles(createCacheKey);
 const result = require("jsxProd").fileFinishedImporting("modules/user_settings/appearance/native/components/SettingsAppearanceChannelList.tsx");
 
 export default function ChannelListPreview(useGradientBackground) {
@@ -37,7 +39,7 @@ export default function ChannelListPreview(useGradientBackground) {
   ({ themes, themeIndex, animatedStyles } = useGradientBackground);
   useGradientBackground = useGradientBackground.useGradientBackground;
   ({ data, isNitroLocked } = useGradientBackground);
-  const tmp = _createForOfIteratorHelperLoose();
+  const tmp = createCacheKey();
   const items = [animatedStyles];
   const callback = React.useCallback((item) => {
     item = item.item;
@@ -45,53 +47,55 @@ export default function ChannelListPreview(useGradientBackground) {
     if ("channel-row" === kind) {
       let obj = {};
       const merged = Object.assign(item);
-      obj["animatedStyles"] = animatedStyles;
+      obj.animatedStyles = animatedStyles;
       return outer1_5(outer1_1(outer1_2[5]), obj);
     } else if ("messages-header" === kind) {
       obj = {};
       const merged1 = Object.assign(item);
-      obj["animatedStyles"] = animatedStyles;
+      obj.animatedStyles = animatedStyles;
       return outer1_5(outer1_1(outer1_2[6]), obj);
     } else if ("activity-cards" === kind) {
       obj = {};
       const merged2 = Object.assign(item);
-      obj["animatedStyles"] = animatedStyles;
+      obj.animatedStyles = animatedStyles;
       return outer1_5(outer1_1(outer1_2[7]), obj);
     } else {
       return null;
     }
   }, items);
-  let obj = { style: null, accessible: true, accessibilityRole: "image" };
   const items1 = [tmp.channelPreviewCardContainer, animatedStyles.borderNormal, ];
   let bgSurfaceHigh = !useGradientBackground;
-  if (bgSurfaceHigh) {
+  if (!useGradientBackground) {
     bgSurfaceHigh = animatedStyles.bgSurfaceHigh;
   }
+  let obj = { style: items1, accessible: true, accessibilityRole: "image", accessibilityLabel: null, children: null };
   items1[2] = bgSurfaceHigh;
-  obj.style = items1;
-  const intl = animatedStyles(1212).intl;
-  obj.accessibilityLabel = intl.string(animatedStyles(1212).t.iGxm3x);
-  let tmp4 = null;
+  const intl = animatedStyles(1236).intl;
+  obj[3] = intl.string(animatedStyles(1236).t.iGxm3x);
+  let tmp7 = null;
   if (useGradientBackground) {
-    obj = { style: tmp.channelPreviewGradient };
-    obj = { themes, themeIndex, isDimmed: false, backgroundToken: importDefault(689).colors.BACKGROUND_BASE_LOW };
-    obj.children = callback(importDefault(14293), obj);
-    tmp4 = callback(View, obj);
-    const tmp9 = importDefault(14293);
+    obj = { style: null, children: null };
+    obj[0] = tmp.channelPreviewGradient;
+    obj = { themes: null, themeIndex: null, isDimmed: false, backgroundToken: null };
+    obj[0] = themes;
+    obj[1] = themeIndex;
+    obj[3] = tmp4(712).colors.BACKGROUND_BASE_LOW;
+    obj[1] = callback(tmp4(14315), obj);
+    tmp7 = callback(closure_4, obj);
+    const tmp4Result = tmp4(14315);
   }
-  const items2 = [tmp4, , ];
-  const obj1 = {};
-  const obj2 = { paddingVertical: importDefault(689).space.PX_16 };
-  obj1.contentContainerStyle = obj2;
-  obj1.data = data;
-  obj1.renderItem = callback;
-  obj1.keyExtractor = function keyExtractor(id) {
+  const items2 = [tmp7, , ];
+  const obj1 = { contentContainerStyle: null, data: null, renderItem: null, keyExtractor: null, showsVerticalScrollIndicator: false, importantForAccessibility: "no-hide-descendants" };
+  const obj2 = { paddingVertical: null };
+  obj2[0] = importDefault(712).space.PX_16;
+  obj1[0] = obj2;
+  obj1[1] = data;
+  obj1[2] = callback;
+  obj1[3] = function keyExtractor(id) {
     return id.id;
   };
-  obj1.showsVerticalScrollIndicator = false;
-  obj1.importantForAccessibility = "no-hide-descendants";
-  items2[1] = callback(animatedStyles(6655).FlashList, obj1);
-  items2[2] = callback(importDefault(14296), { visible: isNitroLocked, theme: themes[themeIndex] });
-  obj.children = items2;
-  return closure_6(importDefault(4026).View, obj);
+  items2[1] = callback(animatedStyles(6676).FlashList, obj1);
+  items2[2] = callback(importDefault(14318), { visible: isNitroLocked, theme: themes[themeIndex] });
+  obj[4] = items2;
+  return closure_6(importDefault(4050).View, obj);
 };

@@ -1,32 +1,32 @@
-// Module ID: 11794
-// Function ID: 91459
+// Module ID: 11819
+// Function ID: 11820
 // Name: getInviteState
-// Dependencies: [57, 31, 27, 653, 33, 4165, 689, 1327, 3869, 5195, 11795, 11798, 1392, 1426, 11803, 1450, 5200, 2]
+// Dependencies: [32, 19, 17, 676, 21, 4189, 712, 1351, 3893, 5217, 11820, 11823, 1416, 1450, 11828, 1474, 5222, 2]
 // Exports: default
 
-// Module 11794 (getInviteState)
+// Module 11819 (getInviteState)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
-import get_ActivityIndicator from "get ActivityIndicator";
+import noop from "noop";
+import get_ActivityIndicator from "set";
 import { InviteStates } from "ME";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_10;
-let closure_5;
+let c10;
+let c5;
+let c9;
 let closure_6;
-let closure_7;
-let closure_9;
+let error;
 const require = arg1;
 function getInviteState(invite) {
   let state;
-  if (null != invite) {
+  if (invite != null) {
     state = invite.state;
   }
   let tmp2 = null == state;
   if (tmp2) {
     let channel;
-    if (null != invite) {
+    if (invite != null) {
       channel = invite.channel;
     }
     tmp2 = null == channel;
@@ -36,16 +36,16 @@ function getInviteState(invite) {
       if (!tmp2) {
         state = invite.state;
         if (InviteStates.RESOLVED !== state) {
-          if (InviteStates.ACCEPTED !== state) {
-            if (InviteStates.EXPIRED !== state) {
-              if (InviteStates.BANNED !== state) {
-                if (InviteStates.ERROR !== state) {
-                  if (InviteStates.RESOLVING !== state) {
-                    if (InviteStates.APP_NOT_OPENED !== state) {
-                      if (InviteStates.APP_OPENED !== state) {
-                        if (InviteStates.APP_OPENING !== state) {
-                          if (InviteStates.ACCEPTING !== state) {
-                            require(1327) /* isDiscordFrontendDevelopment */.assertNever(state);
+          if (tmp4.ACCEPTED !== state) {
+            if (tmp4.EXPIRED !== state) {
+              if (tmp4.BANNED !== state) {
+                if (tmp4.ERROR !== state) {
+                  if (tmp4.RESOLVING !== state) {
+                    if (tmp4.APP_NOT_OPENED !== state) {
+                      if (tmp4.APP_OPENED !== state) {
+                        if (tmp4.APP_OPENING !== state) {
+                          if (tmp4.ACCEPTING !== state) {
+                            require(1351) /* isDiscordFrontendDevelopment */.assertNever(state);
                           }
                         }
                       }
@@ -65,10 +65,10 @@ function getInviteState(invite) {
   return constants.LOADING;
 }
 function InviteResolving() {
-  let obj = require(3869) /* map */;
-  obj = { style: _createForOfIteratorHelperLoose().resolvingContainer };
-  obj = { color: obj.useToken(importDefault(689).colors.INTERACTIVE_TEXT_DEFAULT), size: "large" };
-  obj.children = callback2(closure_5, obj);
+  let obj = require(3893) /* map */;
+  obj = { style: createCacheKey().resolvingContainer, children: null };
+  obj = { color: obj.useToken(importDefault(712).colors.INTERACTIVE_TEXT_DEFAULT), size: "large" };
+  obj[1] = callback2(closure_5, obj);
   return callback2(closure_7, obj);
 }
 function AcceptInviteCardComponent(invite) {
@@ -80,9 +80,9 @@ function AcceptInviteCardComponent(invite) {
   const effect = React.useEffect(() => {
     const tmp = outer1_13(invite);
     if (tmp !== first) {
-      const result = invite(5195).DeprecatedLayoutAnimation();
+      const result = invite(5217).DeprecatedLayoutAnimation();
       dependencyMap(tmp);
-      const obj = invite(5195);
+      const obj = invite(5217);
     }
   }, items);
   if (null == invite) {
@@ -90,69 +90,66 @@ function AcceptInviteCardComponent(invite) {
   } else if (constants.DETAILS === first) {
     let obj = {};
     const merged = Object.assign(invite);
-    obj["invite"] = invite;
-    return callback2(first(11795), obj);
-  } else if (constants.ERROR === first) {
+    obj.invite = invite;
+    return callback2(first(11820), obj);
+  } else if (tmp22.ERROR === first) {
     obj = {};
     const merged1 = Object.assign(invite);
-    obj["invite"] = invite;
-    return callback2(first(11798), obj);
+    obj.invite = invite;
+    return callback2(first(11823), obj);
   } else {
     return callback2(InviteResolving, {});
   }
 }
-({ ActivityIndicator: closure_5, ImageBackground: closure_6, View: closure_7 } = get_ActivityIndicator);
-({ jsx: closure_9, jsxs: closure_10 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW, alignItems: "center", justifyContent: "center" };
-_createForOfIteratorHelperLoose.parentContainer = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.imageStyle = { marginVertical: 0, resizeMode: "cover" };
-let obj1 = { position: "absolute", flex: 1, width: "90%", alignItems: "center", justifyContent: "center", padding: 0, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SURFACE_HIGH };
-_createForOfIteratorHelperLoose.cardContainer = obj1;
-_createForOfIteratorHelperLoose.cardContent = { padding: 16, flex: 1, justifyContent: "center", alignItems: "center", width: "100%" };
-_createForOfIteratorHelperLoose.resolvingContainer = { padding: 64 };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+({ ActivityIndicator: c5, ImageBackground: closure_6, View: error } = get_ActivityIndicator);
+({ jsx: c9, jsxs: c10 } = jsxProd);
+createCacheKey = { parentContainer: null, imageStyle: null, cardContainer: null, cardContent: null, resolvingContainer: null };
+createCacheKey = { backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW, alignItems: "center", justifyContent: "center" };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { marginVertical: 0, resizeMode: "cover" };
+createCacheKey[2] = { position: "absolute", flex: 1, width: "90%", alignItems: "center", justifyContent: "center", padding: 0, backgroundColor: require("Themes").colors.BACKGROUND_SURFACE_HIGH };
+createCacheKey[3] = { padding: 16, flex: 1, justifyContent: "center", alignItems: "center", width: "100%" };
+createCacheKey[4] = { padding: 64 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
 let closure_12 = { LOADING: 0, [0]: "LOADING", DETAILS: 1, [1]: "DETAILS", ERROR: 2, [2]: "ERROR" };
+const obj1 = { position: "absolute", flex: 1, width: "90%", alignItems: "center", justifyContent: "center", padding: 0, backgroundColor: require("Themes").colors.BACKGROUND_SURFACE_HIGH };
 let result = require("get ActivityIndicator").fileFinishedImporting("modules/accept_invite/native/AcceptInvite.tsx");
 
 export default function AcceptInvite(invite) {
   let height;
   let width;
   invite = invite.invite;
-  let obj = Object.create(null);
-  obj.invite = 0;
-  const merged = Object.assign(invite, obj);
-  const tmp3 = _createForOfIteratorHelperLoose();
-  ({ height, width } = importDefault(1450)());
-  obj = invite;
-  if (null == invite) {
+  const merged = Object.assign(invite, Object.create(null));
+  const tmp2 = createCacheKey();
+  ({ height, width } = importDefault(1474)());
+  let obj = invite;
+  if (invite == null) {
     obj = {};
   }
   const guild = obj.guild;
   let splash;
-  if (null != guild) {
+  if (guild != null) {
     splash = guild.splash;
   }
   if (null == splash) {
-    let guildSplashSource = importDefault(11803);
+    let guildSplashSource = tmp3(11828);
   } else {
-    let obj1 = importDefault(1392);
-    obj = {};
-    ({ id: obj3.id, splash: obj3.splash } = guild);
-    let obj3 = require(1426) /* isAttachmentLadderEnabled */;
-    obj.size = width * obj3.getDevicePixelRatio();
-    guildSplashSource = obj1.getGuildSplashSource(obj);
+    obj = { id: null, splash: null, size: null };
+    ({ id: obj3[0], splash: obj3[1] } = guild);
+    let obj3 = require(1450) /* isAttachmentLadderEnabled */;
+    obj[2] = width * obj3.getDevicePixelRatio();
+    guildSplashSource = tmp3(1416).getGuildSplashSource(obj);
+    const tmp3Result = tmp3(1416);
   }
-  obj1 = { style: items };
-  items = [tmp3.parentContainer, { height, width }];
-  const obj2 = { source: guildSplashSource, imageStyle: tmp3.imageStyle, style: { height, width } };
-  const items1 = [callback2(closure_6, obj2), ];
-  obj3 = { style: tmp3.cardContainer };
-  const obj4 = { style: tmp3.cardContent };
+  obj = { style: items, children: null };
+  items = [tmp2.parentContainer, { height, width }];
+  const items1 = [callback2(closure_6, { source: guildSplashSource, imageStyle: tmp2.imageStyle, style: { height, width } }), ];
+  const obj2 = { style: tmp2.cardContainer, children: null };
+  obj3 = { style: tmp2.cardContent, children: null };
   const merged1 = Object.assign(merged);
-  obj4.children = callback2(AcceptInviteCardComponent, { invite });
-  obj3.children = callback2(closure_7, obj4);
-  items1[1] = callback2(require(5200) /* getCardBackgroundToken */.Card, obj3);
-  obj1.children = items1;
-  return callback3(closure_7, obj1);
+  obj3[1] = callback2(AcceptInviteCardComponent, { invite });
+  obj2[1] = callback2(closure_7, obj3);
+  items1[1] = callback2(require(5222) /* PressableCard */.Card, obj2);
+  obj[1] = items1;
+  return callback3(closure_7, obj);
 };

@@ -1,97 +1,103 @@
-// Module ID: 9929
-// Function ID: 76734
+// Module ID: 9951
+// Function ID: 9952
 // Name: HeaderIcon
-// Dependencies: [27, 1838, 33, 4165, 689, 5547, 566, 5548, 9070, 1273, 4664, 4355, 4628, 1212, 4161, 2]
+// Dependencies: [17, 1862, 21, 4189, 712, 5565, 589, 5566, 9094, 1297, 4686, 4380, 4650, 1236, 4185, 2]
 // Exports: ForLaterCardHeader
 
-// Module 9929 (HeaderIcon)
+// Module 9951 (HeaderIcon)
 import { View } from "get ActivityIndicator";
-import closure_4 from "_createForOfIteratorHelperLoose";
+import createGuildRecordFromRust from "createGuildRecordFromRust";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_5;
+let c5;
 let closure_6;
 function HeaderIcon(channel) {
   channel = channel.channel;
-  let obj = channel(566);
-  const items = [closure_4];
+  let obj = channel(589);
+  const items = [createGuildRecordFromRust];
   const stateFromStores = obj.useStateFromStores(items, () => outer1_4.getGuild(channel.guild_id));
   if (null != stateFromStores) {
-    obj = { guild: stateFromStores, size: channel(5548).GuildIconSizes.XSMALL };
-    let tmp8 = callback(importDefault(5548), obj);
-    const tmp17 = importDefault(5548);
+    obj = { guild: null, size: null };
+    obj[0] = stateFromStores;
+    obj[1] = tmp2(5566).GuildIconSizes.XSMALL;
+    let tmp6Result = callback(importDefault(5566), obj);
+    const tmp13 = importDefault(5566);
   } else {
-    if (null != channel) {
-      if (channel.isGroupDM()) {
-        obj = { channel, size: channel(1273).AvatarSizes.XSMALL };
-        tmp8 = callback(importDefault(9070), obj);
-        const tmp12 = importDefault(9070);
-      }
+    let isGroupDMResult;
+    if (channel != null) {
+      isGroupDMResult = channel.isGroupDM();
     }
-    const obj1 = { style: tmp.dmIcon };
-    const obj2 = { size: "xxs" };
-    obj1.children = callback(channel(4664).ChatIcon, obj2);
-    tmp8 = callback(View, obj1);
+    if (isGroupDMResult) {
+      obj = { channel: null, size: null };
+      obj[0] = channel;
+      obj[1] = tmp2(1297).AvatarSizes.XSMALL;
+      tmp6Result = tmp6(importDefault(9094), obj);
+      const tmp10 = importDefault(9094);
+    } else {
+      const obj1 = { style: null, children: null };
+      obj1[0] = tmp.dmIcon;
+      obj1[1] = tmp6(tmp2(4686).ChatIcon, { size: "xxs" });
+      tmp6Result = tmp6(View, obj1);
+    }
   }
-  return tmp8;
+  return tmp6Result;
 }
 function ChannelName(channel) {
   channel = channel.channel;
   const tmp = callback2();
-  let obj = channel(566);
-  const items = [closure_4];
+  let obj = channel(589);
+  const items = [createGuildRecordFromRust];
   const stateFromStores = obj.useStateFromStores(items, () => outer1_4.getGuild(channel.guild_id));
-  const tmp3 = importDefault(4355)(channel, false);
-  let obj1 = channel(4628);
+  const tmp5 = importDefault(4380)(channel, false);
+  let obj1 = channel(4650);
   const channelIconComponentWithGuild = obj1.getChannelIconComponentWithGuild(channel, stateFromStores);
   let isPrivateResult = channel.isPrivate();
   if (!isPrivateResult) {
     isPrivateResult = null == channelIconComponentWithGuild;
   }
-  let formatToPlainStringResult = tmp3;
+  let formatToPlainStringResult = tmp5;
   if (channel.isDM()) {
-    const intl = channel(1212).intl;
-    obj = { username: tmp3 };
-    formatToPlainStringResult = intl.formatToPlainString(channel(1212).t.smD7XV, obj);
+    const intl = tmp2(1236).intl;
+    obj = { username: null };
+    obj[0] = tmp5;
+    formatToPlainStringResult = intl.formatToPlainString(tmp2(1236).t.smD7XV, obj);
   }
-  obj = { style: tmp.channelNameContainer };
+  obj = { style: tmp.channelNameContainer, children: null };
   let tmp12 = null;
   if (!isPrivateResult) {
-    obj1 = { style: tmp.channelTypeIcon, size: "xxs" };
+    obj1 = { style: null, size: "xxs" };
+    obj1[0] = tmp.channelTypeIcon;
     tmp12 = callback(channelIconComponentWithGuild, obj1);
   }
-  const items1 = [tmp12, ];
-  const obj2 = { style: tmp.channelName, variant: "text-md/semibold", color: "mobile-text-heading-primary", lineClamp: 1, children: formatToPlainStringResult };
-  items1[1] = callback(channel(4161).Text, obj2);
-  obj.children = items1;
+  const items1 = [tmp12, callback(channel(4185).Text, { style: tmp.channelName, variant: "text-md/semibold", color: "mobile-text-heading-primary", lineClamp: 1, children: formatToPlainStringResult })];
+  obj[1] = items1;
   return closure_6(View, obj);
 }
-({ jsx: closure_5, jsxs: closure_6 } = jsxProd);
-let obj = { cardHeader: { flexDirection: "row", alignItems: "center", gap: 8 } };
-obj = { padding: 6, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWEST, borderRadius: require("_createForOfIteratorHelperLoose").radii.sm };
-obj.dmIcon = obj;
-obj.channelNameContainer = { flexDirection: "row", alignItems: "center", flexShrink: 1 };
-obj.channelName = { flexShrink: 1 };
-obj.channelTypeIcon = { marginRight: 4 };
-obj.actionsContainer = { marginVertical: -4, marginLeft: "auto" };
-let closure_7 = _createForOfIteratorHelperLoose.createStyles(obj);
+({ jsx: c5, jsxs: closure_6 } = jsxProd);
+let obj = { cardHeader: { flexDirection: "row", alignItems: "center", gap: 8 }, dmIcon: null, channelNameContainer: null, channelName: null, channelTypeIcon: null, actionsContainer: null };
+obj = { padding: 6, backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOWEST, borderRadius: require("Themes").radii.sm };
+obj[1] = obj;
+obj[2] = { flexDirection: "row", alignItems: "center", flexShrink: 1 };
+obj[3] = { flexShrink: 1 };
+obj[4] = { marginRight: 4 };
+obj[5] = { marginVertical: -4, marginLeft: "auto" };
+let closure_7 = createCacheKey.createStyles(obj);
 const result = require("jsxProd").fileFinishedImporting("modules/saved_messages/native/ForLaterCardHeader.tsx");
 
 export const ForLaterCardHeader = function ForLaterCardHeader(channel) {
   channel = channel.channel;
   const tmp = callback2();
-  let obj = { style: tmp.cardHeader };
+  let obj = { style: tmp.cardHeader, children: null };
   const items = [callback(HeaderIcon, { channel }), , , ];
-  let tmp4 = null;
+  let tmp4Result = null;
   if (!channel.isPrivate()) {
-    obj = { size: "xxs" };
-    tmp4 = callback(require(5547) /* ChevronSmallRightIcon */.ChevronSmallRightIcon, obj);
+    tmp4Result = tmp4(require(5565) /* ChevronSmallRightIcon */.ChevronSmallRightIcon, { size: "xxs" });
   }
-  items[1] = tmp4;
+  items[1] = tmp4Result;
   items[2] = callback(ChannelName, { channel });
   obj = { style: tmp.actionsContainer, children: channel.actions };
   items[3] = callback(View, obj);
-  obj.children = items;
+  obj[1] = items;
   return closure_6(View, obj);
 };

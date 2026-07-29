@@ -1,20 +1,22 @@
-// Module ID: 15423
-// Function ID: 117443
-// Dependencies: [31, 1348, 653, 33, 15424, 6070, 6166, 566, 6165, 1212, 6706, 5156, 2]
+// Module ID: 15456
+// Function ID: 15457
+// Dependencies: [19, 1372, 676, 21, 15457, 6088, 6184, 589, 6183, 1236, 6727, 5178, 2]
 
-// Module 15423
-import importAllResult from "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 15456
+import importAllResult from "noop";
+import ensureGuildLoaded from "ensureGuildLoaded";
 import { MAX_CHANNEL_NAME_LENGTH } from "ME";
 import { jsx } from "jsxProd";
 
 const require = arg1;
-const memoResult = importAllResult.memo(importAllResult.forwardRef((chatInputRef, ref) => {
+let c3 = importAllResult;
+const memoResult = importAllResult.memo(importAllResult.forwardRef((chatInputRef) => {
   chatInputRef = chatInputRef.chatInputRef;
   const threadSettingsDraft = chatInputRef.threadSettingsDraft;
   const optional = chatInputRef.optional;
-  const dependencyMap = ref;
-  let obj = chatInputRef(15424);
+  let ref;
+  const dependencyMap = arg1;
+  let obj = chatInputRef(15457);
   obj = { content: threadSettingsDraft.name };
   ref = ref.useRef(threadSettingsDraft.name);
   const items = [threadSettingsDraft.parentChannelId];
@@ -22,87 +24,88 @@ const memoResult = importAllResult.memo(importAllResult.forwardRef((chatInputRef
   const callback = ref.useCallback((current) => {
     if (null != threadSettingsDraft.parentChannelId) {
       let obj = threadSettingsDraft(ref[5]);
-      obj = { name: threadSettingsDraft(ref[6])(current, false) };
-      obj.changeThreadSettings(threadSettingsDraft.parentChannelId, obj);
+      obj = { name: null };
+      obj[0] = threadSettingsDraft(ref[6])(current, false);
+      obj.changeThreadSettings(tmp.parentChannelId, obj);
       ref.current = current;
     }
   }, items);
   const items2 = [chatInputRef];
   const callback1 = ref.useCallback(() => {
     if (null != threadSettingsDraft.name) {
-      if (null != threadSettingsDraft.parentChannelId) {
-        const tmp5 = threadSettingsDraft(ref[6])(threadSettingsDraft.name, true);
-        if (tmp5 !== threadSettingsDraft.name) {
-          let obj = threadSettingsDraft(ref[5]);
-          obj = { name: tmp5 };
-          obj.changeThreadSettings(threadSettingsDraft.parentChannelId, obj);
+      if (null != tmp.parentChannelId) {
+        const tmp4 = threadSettingsDraft(ref[6])(tmp.name, true);
+        if (tmp4 !== tmp.name) {
+          const obj = { name: null };
+          obj[0] = tmp4;
+          tmp2(tmp3[5]).changeThreadSettings(tmp.parentChannelId, obj);
+          const tmp2Result = tmp2(tmp3[5]);
         }
+        tmp2 = threadSettingsDraft;
+        tmp3 = ref;
       }
     }
   }, items1);
-  const items3 = [threadSettingsDraft.name, ref];
+  const items3 = [threadSettingsDraft.name, arg1];
   const callback2 = ref.useCallback(() => {
     const current = chatInputRef.current;
-    if (null != current) {
+    if (current != null) {
       current.focus();
     }
   }, items2);
   const effect = ref.useEffect(() => {
-    let tmp = ref.current !== threadSettingsDraft.name;
-    if (tmp) {
-      tmp = null != threadSettingsDraft.name;
+    let tmp2 = ref.current !== threadSettingsDraft.name;
+    if (tmp2) {
+      tmp2 = null != tmp.name;
     }
-    if (tmp) {
-      let tmp6 = null == ref;
-      if (!tmp6) {
+    if (tmp2) {
+      if (ref != null) {
         const current = ref.current;
-        tmp6 = null == current;
-        const obj = current;
-      }
-      if (!tmp6) {
-        obj.setText(threadSettingsDraft.name);
+        if (current != null) {
+          current.setText(tmp.name);
+        }
       }
     }
   }, items3);
   const renderErrorResult = obj.renderError(chatInputRef.threadNameError, obj);
-  const items4 = [_isNativeReflectConstruct];
-  const stateFromStores = chatInputRef(566).useStateFromStores(items4, () => outer1_4.getChannel(threadSettingsDraft.parentChannelId));
+  const items4 = [ensureGuildLoaded];
+  const stateFromStores = chatInputRef(589).useStateFromStores(items4, () => outer1_4.getChannel(threadSettingsDraft.parentChannelId));
   let str = "";
   if (null != stateFromStores) {
-    str = chatInputRef(6165).getDefaultThreadName(stateFromStores, threadSettingsDraft.parentMessageId);
-    const obj4 = chatInputRef(6165);
+    str = tmp(6183).getDefaultThreadName(stateFromStores, threadSettingsDraft.parentMessageId);
+    const tmpResult = tmp(6183);
   }
-  const intl = chatInputRef(1212).intl;
+  const intl = tmp(1236).intl;
   const string = intl.string;
-  const t = chatInputRef(1212).t;
+  const t = tmp(1236).t;
   if (optional) {
     let stringResult = string(t.JPvIiL);
   } else {
     stringResult = string(t.j3XWjD);
   }
-  obj = { defaultValue: threadSettingsDraft(5156)(ref), errorMessage: renderErrorResult, label: stringResult, accessibilityLabel: stringResult };
+  obj = { defaultValue: null, errorMessage: null, label: null, accessibilityLabel: null, accessibilityHint: null, required: null, isClearable: true, autoFocus: true, maxLength: null, onSubmitEditing: null, onBlur: null, onChange: null, placeholder: null, ref: null, returnKeyType: "next", textContentType: "none" };
+  obj[0] = threadSettingsDraft(5178)(ref);
+  obj[1] = renderErrorResult;
+  obj[2] = stringResult;
+  obj[3] = stringResult;
   let stringResult1;
   if (!optional) {
-    const intl2 = chatInputRef(1212).intl;
-    stringResult1 = intl2.string(chatInputRef(1212).t["/+VEZN"]);
+    const intl2 = tmp(1236).intl;
+    stringResult1 = intl2.string(tmp(1236).t["/+VEZN"]);
   }
-  obj.accessibilityHint = stringResult1;
-  obj.required = !optional;
-  obj.isClearable = true;
-  obj.autoFocus = true;
-  obj.maxLength = MAX_CHANNEL_NAME_LENGTH;
-  obj.onSubmitEditing = callback2;
-  obj.onBlur = callback1;
-  obj.onChange = callback;
+  obj[4] = stringResult1;
+  obj[5] = !optional;
+  obj[8] = MAX_CHANNEL_NAME_LENGTH;
+  obj[9] = callback2;
+  obj[10] = callback1;
+  obj[11] = callback;
   if ("" === str) {
-    const intl3 = chatInputRef(1212).intl;
-    str = intl3.string(chatInputRef(1212).t["Nb2/RE"]);
+    const intl3 = tmp(1236).intl;
+    str = intl3.string(tmp(1236).t["Nb2/RE"]);
   }
-  obj.placeholder = str;
-  obj.ref = ref;
-  obj.returnKeyType = "next";
-  obj.textContentType = "none";
-  return jsx(chatInputRef(6706).TextInput, { defaultValue: threadSettingsDraft(5156)(ref), errorMessage: renderErrorResult, label: stringResult, accessibilityLabel: stringResult });
+  obj[12] = str;
+  obj[13] = arg1;
+  return jsx(chatInputRef(6727).TextInput, { defaultValue: null, errorMessage: null, label: null, accessibilityLabel: null, accessibilityHint: null, required: null, isClearable: true, autoFocus: true, maxLength: null, onSubmitEditing: null, onBlur: null, onChange: null, placeholder: null, ref: null, returnKeyType: "next", textContentType: "none" });
 }));
 const result = require("ME").fileFinishedImporting("modules/threads/native/components/thread_creation/ThreadCreationTitleInput.tsx");
 

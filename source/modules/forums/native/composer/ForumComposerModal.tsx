@@ -1,34 +1,27 @@
-// Module ID: 9543
-// Function ID: 74277
-// Name: clearDraft
-// Dependencies: [31, 27, 9544, 1348, 4503, 4502, 6035, 33, 4165, 689, 1820, 4506, 1212, 6070, 6168, 5497, 566, 9545, 9542, 1454, 1555, 21, 6060, 5127, 9546, 2]
+// Module ID: 9567
+// Function ID: 9568
+// Name: ForumComposerModal
+// Dependencies: [19, 17, 9568, 1372, 4526, 4525, 6053, 21, 4189, 712, 1844, 4529, 1236, 6088, 6186, 5515, 589, 9569, 9566, 1478, 1579, 11, 6078, 5149, 9570, 2]
 // Exports: default
 
-// Module 9543 (clearDraft)
-import "result";
-import { View } from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_6 from "_isNativeReflectConstruct";
-import closure_7 from "_isNativeReflectConstruct";
-import { DraftType } from "_isNativeReflectConstruct";
-import closure_9 from "_isNativeReflectConstruct";
-import closure_10 from "_isNativeReflectConstruct";
-import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+// Module 9567 (ForumComposerModal)
+import "computeEntryState";
+import { View } from "useGetThreadDraftSettings";
+import initialize from "initialize";
+import ensureGuildLoaded from "ensureGuildLoaded";
+import handleChanged from "handleChanged";
+import { DraftType } from "handleChanged";
+import map from "map";
+import handleLoadThreadsSuccess from "handleLoadThreadsSuccess";
+import { jsx } from "DISCORD_EPOCH";
+import createCacheKey from "createCacheKey";
 
 const require = arg1;
-function clearDraft(arg0) {
-  importDefault(6070).clearDraft(arg0, DraftType.ThreadSettings);
-  const obj = importDefault(6070);
-  importDefault(6070).clearDraft(arg0, DraftType.ChannelMessage);
-  const obj2 = importDefault(6070);
-  importDefault(6168).clearAll(arg0, DraftType.ChannelMessage);
-}
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { flex: 1, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW };
-_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/forums/native/composer/ForumComposerModal.tsx");
+createCacheKey = { container: null };
+createCacheKey = { flex: 1, backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW };
+createCacheKey[0] = createCacheKey;
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let result = require("initialize").fileFinishedImporting("modules/forums/native/composer/ForumComposerModal.tsx");
 
 export default function ForumComposerModal(parentChannelId) {
   let importAll;
@@ -41,96 +34,105 @@ export default function ForumComposerModal(parentChannelId) {
   }
   let stateFromStores;
   function handleClose(arg0) {
-    let onCancel;
-    let onConfirm;
     if (null != stateFromStores) {
       if (arg0) {
-        let tmp31Result = tmp31(tmp32[18]);
-        let result = tmp31Result.closeCreateForumPostModal();
-        outer1_13(parentChannelId);
+        let tmp52Result = tmp52(tmp53[18]);
+        let result = tmp52Result.closeCreateForumPostModal();
+        threadId(isEdit[13]).clearDraft(parentChannelId, outer1_8.ThreadSettings);
+        const obj13 = threadId(isEdit[13]);
+        threadId(isEdit[13]).clearDraft(parentChannelId, outer1_8.ChannelMessage);
+        const obj14 = threadId(isEdit[13]);
+        threadId(isEdit[14]).clearAll(parentChannelId, outer1_8.ChannelMessage);
+        const obj15 = threadId(isEdit[14]);
       } else {
-        tmp31Result = tmp31(tmp32[19]);
-        let obj = { type: tmp31(tmp32[20]).KeyboardTypes.SYSTEM };
-        tmp31Result.setKeyboardType(obj);
+        tmp52Result = tmp52(tmp53[19]);
+        let obj = { type: null };
+        obj[0] = parentChannelId(isEdit[20]).KeyboardTypes.SYSTEM;
+        tmp52Result.setKeyboardType(obj);
         const draft = outer1_7.getDraft(parentChannelId, outer1_8.ChannelMessage);
         let threadSettings = outer1_7.getThreadSettings(parentChannelId);
-        if (null == threadSettings) {
-          threadSettings = outer1_7.getThreadDraftWithParentMessageId(threadId(isEdit[21]).castChannelIdAsMessageId(parentChannelId));
-          const obj3 = threadId(isEdit[21]);
+        if (threadSettings == null) {
+          threadSettings = obj3.getThreadDraftWithParentMessageId(threadId(isEdit[21]).castChannelIdAsMessageId(tmp4));
+          const obj4 = threadId(isEdit[21]);
         }
         if (isEdit) {
           let result1 = parentChannelId(isEdit[18]).closeCreateForumPostModal();
-          outer1_13(parentChannelId);
           const obj8 = parentChannelId(isEdit[18]);
+          threadId(isEdit[13]).clearDraft(tmp4, outer1_8.ThreadSettings);
+          const obj9 = threadId(isEdit[13]);
+          threadId(isEdit[13]).clearDraft(tmp4, outer1_8.ChannelMessage);
+          const obj10 = threadId(isEdit[13]);
+          threadId(isEdit[14]).clearAll(tmp4, outer1_8.ChannelMessage);
+          const obj11 = threadId(isEdit[14]);
         } else {
           if (draft.length <= 0) {
             if (arr2.length <= 0) {
-              let name;
-              if (null != threadSettings) {
-                name = threadSettings.name;
+              let str;
+              if (threadSettings != null) {
+                str = threadSettings.name;
               }
-              let str = "";
-              if (null != name) {
-                str = name;
+              if (str == null) {
+                str = "";
               }
             }
           }
-          obj = {
-            onConfirm() {
-                    let obj = parentChannelId(isEdit[22]);
-                    obj = { guildId: outer1_4.guild_id, channelId: outer1_4.id };
-                    const result = obj.maybeTrackForumNewPostDraftCreated(obj);
-                    const result1 = parentChannelId(isEdit[18]).closeCreateForumPostModal();
-                  },
-            onCancel() {
-                    const result = parentChannelId(isEdit[18]).closeCreateForumPostModal();
-                    outer2_13(outer1_0);
-                  }
-          };
-          ({ onConfirm, onCancel } = obj);
           const result2 = outer1_2(isEdit[10]).dismissGlobalKeyboard();
           const obj5 = outer1_2(isEdit[10]);
-          const obj1 = {};
+          obj = { title: null, body: null, confirmText: null, cancelText: null, onConfirm: null, onCancel: null, hideActionSheet: true, isDismissable: true };
           const intl = parentChannelId(isEdit[12]).intl;
-          obj1.title = intl.string(parentChannelId(isEdit[12]).t.Fz1512);
+          obj[0] = intl.string(parentChannelId(isEdit[12]).t.Fz1512);
           const intl2 = parentChannelId(isEdit[12]).intl;
-          obj1.body = intl2.string(parentChannelId(isEdit[12]).t.YBgepz);
+          obj[1] = intl2.string(parentChannelId(isEdit[12]).t.YBgepz);
           const intl3 = parentChannelId(isEdit[12]).intl;
-          obj1.confirmText = intl3.string(parentChannelId(isEdit[12]).t.Rnli6C);
+          obj[2] = intl3.string(parentChannelId(isEdit[12]).t.Rnli6C);
           const intl4 = parentChannelId(isEdit[12]).intl;
-          obj1.cancelText = intl4.string(parentChannelId(isEdit[12]).t["3NnH6V"]);
-          obj1.onConfirm = onConfirm;
-          obj1.onCancel = onCancel;
-          obj1.hideActionSheet = true;
-          obj1.isDismissable = true;
-          threadId(isEdit[11]).show(obj1);
+          obj[3] = intl4.string(parentChannelId(isEdit[12]).t["3NnH6V"]);
+          obj[4] = function onConfirm() {
+            let obj = outer1_0(outer1_3[22]);
+            obj = { guildId: closure_4.guild_id, channelId: closure_4.id };
+            const result = obj.maybeTrackForumNewPostDraftCreated(obj);
+            const result1 = outer1_0(outer1_3[18]).closeCreateForumPostModal();
+          };
+          obj[5] = function onCancel() {
+            const result = outer1_0(outer1_3[18]).closeCreateForumPostModal();
+            const obj = outer1_0(outer1_3[18]);
+            outer1_1(outer1_3[13]).clearDraft(closure_0, outer1_8.ThreadSettings);
+            const obj2 = outer1_1(outer1_3[13]);
+            outer1_1(outer1_3[13]).clearDraft(closure_0, outer1_8.ChannelMessage);
+            const obj3 = outer1_1(outer1_3[13]);
+            outer1_1(outer1_3[14]).clearAll(closure_0, outer1_8.ChannelMessage);
+          };
+          threadId(isEdit[11]).show(obj);
           const obj6 = threadId(isEdit[11]);
         }
+        obj3 = outer1_7;
       }
     }
   }
   let obj = parentChannelId(isEdit[16]);
-  const items = [closure_6];
+  const items = [ensureGuildLoaded];
   const items1 = [parentChannelId];
   stateFromStores = obj.useStateFromStores(items, () => outer1_6.getChannel(parentChannelId), items1);
-  const tmp = _createForOfIteratorHelperLoose();
-  const items2 = [closure_6];
+  const tmp = createCacheKey();
+  const tmp2 = threadId;
+  const tmp4 = parentChannelId;
+  const items2 = [ensureGuildLoaded];
   const items3 = [threadId];
   const stateFromStores1 = parentChannelId(isEdit[16]).useStateFromStores(items2, () => outer1_6.getChannel(threadId), items3);
-  const tmp3 = threadId(isEdit[17])(parentChannelId);
+  const tmp6 = threadId(isEdit[17])(parentChannelId);
   let obj3 = parentChannelId(isEdit[16]);
-  const items4 = [closure_10];
+  const items4 = [handleLoadThreadsSuccess];
   const stateFromStores2 = parentChannelId(isEdit[16]).useStateFromStores(items4, () => {
     let firstMessage = null;
     if (null != threadId) {
       firstMessage = null;
       if (null != closure_2) {
-        firstMessage = outer1_10.getMessage(threadId).firstMessage;
+        firstMessage = outer1_10.getMessage(tmp).firstMessage;
       }
     }
     return firstMessage;
   });
-  const obj4 = parentChannelId(isEdit[16]);
+  let obj4 = parentChannelId(isEdit[16]);
   const items5 = [handleClose];
   const stateFromStores3 = parentChannelId(isEdit[16]).useStateFromStores(items5, () => handleClose.isOpen());
   let obj5 = parentChannelId(isEdit[16]);
@@ -138,31 +140,39 @@ export default function ForumComposerModal(parentChannelId) {
     handleClose(false);
     return true;
   });
-  let tmp8Result = null;
+  let tmp11Result = null;
   if (null != stateFromStores) {
-    tmp8Result = null;
+    tmp11Result = null;
     if (stateFromStores.isForumLikeChannel()) {
       if (isEdit) {
         if (!isEdit) {
-          obj = { value: threadId(isEdit[15])(parentChannelId.analyticsLocations).analyticsLocations };
-          obj = { style: tmp.container };
+          obj = { value: null, children: null };
+          obj[0] = threadId(isEdit[15])(parentChannelId.analyticsLocations).analyticsLocations;
+          obj = { style: null, importantForAccessibility: null, children: null };
+          obj[0] = tmp.container;
           let str;
           if (stateFromStores3) {
             str = "no-hide-descendants";
           }
-          obj.importantForAccessibility = str;
-          let obj1 = { parentChannel: stateFromStores, thread: stateFromStores1, message: stateFromStores2, threadSettingsDraft: tmp3, onClose: handleClose, isEdit };
-          obj.children = jsx(threadId(isEdit[24]), { parentChannel: stateFromStores, thread: stateFromStores1, message: stateFromStores2, threadSettingsDraft: tmp3, onClose: handleClose, isEdit });
-          obj.children = <stateFromStores style={tmp.container} />;
-          tmp8Result = tmp8(parentChannelId(isEdit[15]).AnalyticsLocationProvider, obj);
-          const tmp11 = stateFromStores;
+          obj[1] = str;
+          const obj1 = { parentChannel: null, thread: null, message: null, threadSettingsDraft: null, onClose: null, isEdit: null };
+          obj1[0] = stateFromStores;
+          obj1[1] = stateFromStores1;
+          obj1[2] = stateFromStores2;
+          obj1[3] = tmp6;
+          obj1[4] = handleClose;
+          obj1[5] = isEdit;
+          obj[2] = jsx(tmp2(tmp3[24]), { parentChannel: null, thread: null, message: null, threadSettingsDraft: null, onClose: null, isEdit: null });
+          obj[1] = <stateFromStores style={null} importantForAccessibility={null}>{null}</stateFromStores>;
+          tmp11Result = tmp11(tmp4(tmp3[15]).AnalyticsLocationProvider, obj);
+          const tmp12 = stateFromStores;
         } else {
-          tmp8Result = null;
+          tmp11Result = null;
         }
       } else {
-        tmp8Result = null;
+        tmp11Result = null;
       }
     }
   }
-  return tmp8Result;
+  return tmp11Result;
 };

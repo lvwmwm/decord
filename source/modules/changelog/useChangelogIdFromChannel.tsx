@@ -1,21 +1,21 @@
-// Module ID: 11501
-// Function ID: 89372
+// Module ID: 11525
+// Function ID: 11526
 // Name: useChangelogIdFromChannel
-// Dependencies: [4384, 566, 2]
+// Dependencies: [4407, 589, 2]
 // Exports: default
 
-// Module 11501 (useChangelogIdFromChannel)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 11525 (useChangelogIdFromChannel)
+import reinjectEphemerals from "reinjectEphemerals";
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/changelog/useChangelogIdFromChannel.tsx");
 
 export default function useChangelogIdFromChannel(arg0) {
   const _require = arg0;
+  const items = [reinjectEphemerals];
+  const stateFromStores = _require(589).useStateFromStores(items, () => outer1_2.getLastMessage(closure_0));
   let changelogId;
-  const items = [_isNativeReflectConstruct];
-  const stateFromStores = _require(566).useStateFromStores(items, () => outer1_2.getLastMessage(closure_0));
-  if (null != stateFromStores) {
+  if (stateFromStores != null) {
     changelogId = stateFromStores.changelogId;
   }
   return changelogId;

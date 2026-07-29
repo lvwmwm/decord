@@ -1,105 +1,94 @@
-// Module ID: 8328
-// Function ID: 66747
+// Module ID: 8352
+// Function ID: 8353
 // Name: getDefaultInviteExpiration
-// Dependencies: [1838, 653, 8326, 4077, 624, 2]
+// Dependencies: [1862, 676, 8350, 4101, 647, 2]
 // Exports: useDefaultInviteExpiration, useMaxAgeOptions
 
-// Module 8328 (getDefaultInviteExpiration)
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+// Module 8352 (getDefaultInviteExpiration)
+import createGuildRecordFromRust from "createGuildRecordFromRust";
 import ME from "ME";
 import createExperiment from "createExperiment";
 import createExperiment from "createExperiment";
 
-let closure_4;
-let closure_5;
+let c4;
+let c5;
 const require = arg1;
 function getDefaultInviteExpiration(arg0) {
   let experimentConfig;
   let guild;
   ({ guild, experimentConfig } = arg0);
-  if (null != guild) {
+  let hasItem;
+  if (guild != null) {
     const features = guild.features;
-    if (features.has(constants.HUB)) {
-      return importDefault(8326).INVITE_OPTIONS_FOREVER.value;
-    }
+    hasItem = features.has(constants.HUB);
   }
-  if (null != experimentConfig) {
+  if (hasItem) {
+    return importDefault(8350).INVITE_OPTIONS_FOREVER.value;
+  } else if (null != experimentConfig) {
     let defaultMaxAge2 = experimentConfig.defaultMaxAge;
-    if (null == defaultMaxAge2) {
+    if (defaultMaxAge2 == null) {
       defaultMaxAge2 = closure_6;
     }
     return defaultMaxAge2;
   } else {
     let id;
-    if (null != guild) {
+    if (guild != null) {
       id = guild.id;
     }
-    if (null == id) {
+    if (id == null) {
       id = closure_4;
     }
-    let obj = { guildId: id, location: "getDefaultInviteExpiration" };
-    const currentConfig = createExperiment.getCurrentConfig(obj);
+    let obj = { guildId: null, location: "getDefaultInviteExpiration" };
+    obj[0] = id;
+    const currentConfig = experiment.getCurrentConfig(obj);
     if (currentConfig.defaultMaxAge !== closure_6) {
       let defaultMaxAge = currentConfig.defaultMaxAge;
     } else {
-      obj = { guildId: id, location: "getDefaultInviteExpiration" };
+      obj = { guildId: null, location: "getDefaultInviteExpiration" };
+      obj[0] = id;
       defaultMaxAge = experiment1.getCurrentConfig(obj).defaultMaxAge;
-      if (null == defaultMaxAge) {
-        defaultMaxAge = closure_6;
+      if (defaultMaxAge == null) {
+        defaultMaxAge = tmp6;
       }
     }
     return defaultMaxAge;
   }
 }
-({ EMPTY_STRING_SNOWFLAKE_ID: closure_4, GuildFeatures: closure_5 } = ME);
-const value = require("_createForOfIteratorHelperLoose").INVITE_OPTIONS_7_DAYS.value;
-createExperiment = { kind: "guild", id: "2025-08_default_invite_expiration_guild", label: "Default Invite Expiration Guild", defaultConfig: { defaultMaxAge: 604800 } };
-createExperiment = { id: 1, label: "14 days", config: { defaultMaxAge: 1209600 } };
-let items = [createExperiment, , ];
-const obj1 = { id: 2, label: "30 days", config: { defaultMaxAge: 2592000 } };
-items[1] = obj1;
-const obj2 = { id: 3, label: "60 days", config: { defaultMaxAge: 5184000 } };
-items[2] = obj2;
-createExperiment.treatments = items;
-createExperiment = createExperiment.createExperiment(createExperiment);
-const obj3 = { kind: "guild", id: "2026-05_default_invite_expiration_guild_web", label: "Default Invite Expiration Guild Web", defaultConfig: { defaultMaxAge: 604800 } };
-const obj4 = { id: 1, label: "14 days", config: { defaultMaxAge: 1209600 } };
-const items1 = [obj4, , ];
-createExperiment = { id: 2, label: "30 days", config: { defaultMaxAge: 2592000 } };
-items1[1] = createExperiment;
-const obj6 = { id: 3, label: "60 days", config: { defaultMaxAge: 5184000 } };
-items1[2] = obj6;
-obj3.treatments = items1;
-let experiment1 = createExperiment.createExperiment(obj3);
-const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/instant_invite/DefaultInviteExpirationExperiments.tsx");
+({ EMPTY_STRING_SNOWFLAKE_ID: c4, GuildFeatures: c5 } = ME);
+const value = require("isGuildMember").INVITE_OPTIONS_7_DAYS.value;
+const items = [{ id: 1, label: "14 days", config: { defaultMaxAge: 1209600 } }, { id: 2, label: "30 days", config: { defaultMaxAge: 2592000 } }, { id: 3, label: "60 days", config: { defaultMaxAge: 5184000 } }];
+let experiment = createExperiment.createExperiment({ kind: "guild", id: "2025-08_default_invite_expiration_guild", label: "Default Invite Expiration Guild", defaultConfig: { defaultMaxAge: 604800 }, treatments: items });
+const items1 = [{ id: 1, label: "14 days", config: { defaultMaxAge: 1209600 } }, { id: 2, label: "30 days", config: { defaultMaxAge: 2592000 } }, { id: 3, label: "60 days", config: { defaultMaxAge: 5184000 } }];
+let experiment1 = createExperiment.createExperiment({ kind: "guild", id: "2026-05_default_invite_expiration_guild_web", label: "Default Invite Expiration Guild Web", defaultConfig: { defaultMaxAge: 604800 }, treatments: items1 });
+const result = require("isGuildMember").fileFinishedImporting("modules/instant_invite/DefaultInviteExpirationExperiments.tsx");
 
 export const DEFAULT_MAX_AGE = value;
-export const DefaultInviteExpirationGuildExperiment = createExperiment;
+export const DefaultInviteExpirationGuildExperiment = experiment;
 export const DefaultInviteExpirationGuildWebExperiment = experiment1;
 export { getDefaultInviteExpiration };
 export const useDefaultInviteExpiration = function useDefaultInviteExpiration(guildId) {
   guildId = guildId.guildId;
   const _location = guildId.location;
   let tmp = guildId;
-  if (null == guildId) {
+  if (guildId == null) {
     tmp = closure_4;
   }
-  let obj = { guildId: tmp, location: _location };
-  const experiment = createExperiment.useExperiment(obj);
-  obj = { guildId: tmp, location: _location };
-  experiment1 = experiment1.useExperiment(obj);
+  experiment = experiment.useExperiment({ guildId: tmp, location: _location });
+  experiment1 = experiment1.useExperiment({ guildId: tmp, location: _location });
   let defaultMaxAge;
-  if (null != experiment) {
+  if (experiment != null) {
     defaultMaxAge = experiment.defaultMaxAge;
   }
   if (defaultMaxAge !== closure_6) {
     experiment1 = experiment;
   }
-  guildId(624);
-  [][0] = _createForOfIteratorHelperLoose;
+  guildId(647);
+  [][0] = createGuildRecordFromRust;
   let tmp7 = null;
   if (null != guildId) {
-    obj = { guild: tmp6, experimentConfig: experiment1 };
+    const obj = { guild: null, experimentConfig: null };
+    obj[0] = tmp6;
+    obj[1] = experiment1;
     tmp7 = getDefaultInviteExpiration(obj);
   }
   return tmp7;
@@ -108,26 +97,22 @@ export const useMaxAgeOptions = function useMaxAgeOptions(arg0) {
   let _location;
   let guildId;
   ({ guildId, location: _location } = arg0);
-  if (null == guildId) {
+  if (guildId == null) {
     guildId = closure_4;
   }
-  let obj = { guildId, location: _location };
-  const experiment = createExperiment.useExperiment(obj);
-  obj = { guildId, location: _location };
-  experiment1 = experiment1.useExperiment(obj);
+  experiment = experiment.useExperiment({ guildId, location: _location });
+  experiment1 = experiment1.useExperiment({ guildId, location: _location });
   let defaultMaxAge;
-  if (null != experiment) {
+  if (experiment != null) {
     defaultMaxAge = experiment.defaultMaxAge;
   }
   if (defaultMaxAge !== closure_6) {
     experiment1 = experiment;
   }
-  obj = {};
   let defaultMaxAge1;
-  if (null != experiment1) {
+  if (experiment1 != null) {
     defaultMaxAge1 = experiment1.defaultMaxAge;
   }
-  const items = [defaultMaxAge1];
-  obj.includeExperimentalValues = items;
-  return importDefault(8326).getMaxAgeOptions(obj);
+  const includeExperimentalValues = [defaultMaxAge1];
+  return importDefault(8350).getMaxAgeOptions({ includeExperimentalValues });
 };

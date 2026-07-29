@@ -1,11 +1,11 @@
-// Module ID: 15278
-// Function ID: 116147
+// Module ID: 15311
+// Function ID: 15312
 // Name: renderChannelWrapper
-// Dependencies: [31, 27, 33, 10264, 2]
+// Dependencies: [19, 17, 21, 10285, 2]
 // Exports: renderChannelWrapper
 
-// Module 15278 (renderChannelWrapper)
-import "result";
+// Module 15311 (renderChannelWrapper)
+import "noop";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
 
@@ -21,36 +21,39 @@ export const renderChannelWrapper = function renderChannelWrapper(children, font
   if (panelVariant === undefined) {
     panelVariant = false;
   }
-  let obj = require(10264) /* getLayoutStyles */;
+  let obj = require(10285) /* getLayoutStyles */;
   let isThreadResult;
-  if (null != channel) {
+  if (channel != null) {
     isThreadResult = channel.isThread();
   }
   if (isThreadResult) {
     isThreadResult = !launchpad;
   }
   const scaledChannelRowHeight = obj.getScaledChannelRowHeight(fontScale.fontScale, layout, isThreadResult);
-  const layoutStyles = require(10264) /* getLayoutStyles */.getLayoutStyles(layout, launchpad);
-  obj = {};
+  const layoutStyles = require(10285) /* getLayoutStyles */.getLayoutStyles(layout, launchpad);
   const items = [{ flex: 1, flexDirection: "row", alignItems: "center", position: "relative" }, , ];
-  obj = {};
-  if (null != channel) {
-    if (channel.isThread()) {
-      let result = 2 * layoutStyles.layout.marginThread.marginVertical;
-    }
-    obj.minHeight = scaledChannelRowHeight - result;
-    items[1] = obj;
-    if (null != channel) {
-      if (channel.isThread()) {
-        let paddingThread = layoutStyles.container.paddingThread;
-      }
-      items[2] = paddingThread;
-      obj.style = items;
-      obj.children = children;
-      return tmp4(tmp5, obj);
-    }
-    const container = layoutStyles.container;
+  let isThreadResult1;
+  if (channel != null) {
+    isThreadResult1 = channel.isThread();
+  }
+  const layout2 = layoutStyles.layout;
+  if (isThreadResult1) {
+    let result = 2 * layout2.marginThread.marginVertical;
+  } else {
+    result = 2 * layout2.margin.marginVertical;
+  }
+  items[1] = { minHeight: scaledChannelRowHeight - result };
+  let isThreadResult2;
+  if (channel != null) {
+    isThreadResult2 = channel.isThread();
+  }
+  const container = layoutStyles.container;
+  if (isThreadResult2) {
+    let paddingThread = container.paddingThread;
+  } else {
     paddingThread = panelVariant ? container.paddingPanels : container.padding;
   }
-  result = 2 * layoutStyles.layout.margin.marginVertical;
+  obj = { style: items, children };
+  items[2] = paddingThread;
+  return <View style={items}>{arg0}</View>;
 };

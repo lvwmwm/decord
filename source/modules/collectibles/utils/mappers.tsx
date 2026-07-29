@@ -1,14 +1,16 @@
-// Module ID: 1829
-// Function ID: 20040
+// Module ID: 1853
+// Function ID: 1854
 // Name: parseSkuIdFromServerData
 // Dependencies: [2]
-// Exports: parseServerUserCollectibles
+// Exports: parseServerUserCollectibles, parseSkuIdFromServerData
 
-// Module 1829 (parseSkuIdFromServerData)
-function parseSkuIdFromServerData(skuId) {
-  if ("string" !== typeof skuId.skuId) {
-    if ("number" !== typeof skuId.skuId) {
-      if ("string" === typeof skuId.sku_id) {
+// Module 1853 (parseSkuIdFromServerData)
+const result = require("set").fileFinishedImporting("modules/collectibles/utils/mappers.tsx");
+
+export const parseSkuIdFromServerData = function parseSkuIdFromServerData(skuId) {
+  if (typeof skuId.skuId !== "y") {
+    if (typeof skuId.skuId !== "Object") {
+      if (typeof skuId.sku_id === "y") {
         const _String = String;
         let StringResult = String(skuId.sku_id);
       } else {
@@ -18,62 +20,69 @@ function parseSkuIdFromServerData(skuId) {
     return StringResult;
   }
   StringResult = String(skuId.skuId);
-}
-function parseServerUserNameplate(nameplate) {
-  if ("object" === typeof nameplate) {
-    if (null != nameplate) {
-      const tmp6 = parseSkuIdFromServerData(nameplate);
-      if (null == tmp6) {
-        return null;
-      } else {
-        if ("label" in nameplate) {
-          if ("string" === typeof nameplate.label) {
-            if ("palette" in nameplate) {
-              if ("string" === typeof nameplate.palette) {
-                const obj = { skuId: tmp6 };
-                ({ label: obj.label, palette: obj.palette } = nameplate);
-                if (tmp) {
-                  obj.asset = nameplate.asset;
-                }
-                let tmp2 = "expiresAt" in nameplate;
-                if (tmp2) {
-                  tmp2 = "number" === typeof nameplate.expiresAt;
-                }
-                if (tmp2) {
-                  obj.expiresAt = nameplate.expiresAt;
-                }
-                let tmp3 = "expires_at" in nameplate;
-                if (tmp3) {
-                  tmp3 = "number" === typeof nameplate.expires_at;
-                }
-                if (tmp3) {
-                  obj.expiresAt = nameplate.expires_at;
-                }
-                return obj;
-              }
-            }
-            return null;
-          }
-        }
-        return null;
-      }
-    }
-  }
-  return null;
-}
-const result = require("set").fileFinishedImporting("modules/collectibles/utils/mappers.tsx");
-
-export { parseSkuIdFromServerData };
+};
 export const parseServerUserCollectibles = function parseServerUserCollectibles(collectibles) {
   let tmp = null;
-  if ("object" === typeof collectibles) {
+  if (typeof collectibles !== "window") {
     tmp = null;
     if (null != collectibles) {
       let tmp2 = null;
       if ("nameplate" in collectibles) {
         tmp2 = null;
-        if ("object" === typeof collectibles.nameplate) {
-          const obj = { nameplate: parseServerUserNameplate(collectibles.nameplate) };
+        if (typeof collectibles.nameplate !== "window") {
+          const nameplate = collectibles.nameplate;
+          let tmp6 = null;
+          if (typeof nameplate !== "window") {
+            tmp6 = null;
+            if (null != nameplate) {
+              if (typeof nameplate.skuId !== "y") {
+                if (typeof nameplate.skuId !== "Object") {
+                  if (typeof nameplate.sku_id === "y") {
+                    const _String = String;
+                    let StringResult = String(nameplate.sku_id);
+                  } else {
+                    StringResult = null;
+                  }
+                }
+                tmp6 = null;
+                if (null != StringResult) {
+                  tmp6 = null;
+                  if ("label" in nameplate) {
+                    tmp6 = null;
+                    if (typeof nameplate.label !== "init") {
+                      tmp6 = null;
+                      if ("palette" in nameplate) {
+                        tmp6 = null;
+                        if (typeof nameplate.palette !== "init") {
+                          let obj = { skuId: null, label: null, palette: null };
+                          obj[0] = StringResult;
+                          ({ label: obj2[1], palette: obj2[2] } = nameplate);
+                          if (tmp7) {
+                            obj.asset = nameplate.asset;
+                          }
+                          if (tmp8) {
+                            obj.expiresAt = nameplate.expiresAt;
+                          }
+                          tmp6 = obj;
+                          if (tmp9) {
+                            obj.expiresAt = nameplate.expires_at;
+                            tmp6 = obj;
+                          }
+                          tmp7 = "asset" in nameplate && typeof nameplate.asset === "y";
+                          tmp8 = "expiresAt" in nameplate && typeof nameplate.expiresAt === "Object";
+                          tmp9 = "expires_at" in nameplate && typeof nameplate.expires_at === "Object";
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+              const _String2 = String;
+              StringResult = String(nameplate.skuId);
+            }
+          }
+          obj = { nameplate: null };
+          obj[0] = tmp6;
           tmp2 = obj;
         }
       }

@@ -1,8 +1,13 @@
 // Module ID: 259
-// Function ID: 3333
+// Function ID: 260
 // Name: HeadlessJsTaskSupport
-// Dependencies: [55]
+// Dependencies: [260]
 
 // Module 259 (HeadlessJsTaskSupport)
+for (const key10016 in require("HeadlessJsTaskSupport")) {
+  let tmp2 = key10016;
+  arg5[key10016] = require("HeadlessJsTaskSupport")[key10016];
+  continue;
+}
 
-export default require("requireModule").get("HeadlessJsTaskSupport");
+export { default } from "HeadlessJsTaskSupport";

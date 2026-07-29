@@ -1,10 +1,10 @@
-// Module ID: 5955
-// Function ID: 52735
+// Module ID: 5974
+// Function ID: 5975
 // Name: set
-// Dependencies: [4154, 1327, 5956, 5957, 2]
+// Dependencies: [4178, 1351, 5975, 5976, 2]
 // Exports: getApplicationCodedLinkData, isApplicationCodedLink, isApplicationCodedLinkMobileSupported
 
-// Module 5955 (set)
+// Module 5974 (set)
 import set from "makeStorefrontSKUCodedLink";
 
 const items = [require("CodedLinkType").CodedLinkType.APP_DIRECTORY_PROFILE, require("CodedLinkType").CodedLinkType.ACTIVITY_BOOKMARK, require("CodedLinkType").CodedLinkType.APP_DIRECTORY_STOREFRONT, require("CodedLinkType").CodedLinkType.APP_DIRECTORY_STOREFRONT_SKU, require("CodedLinkType").CodedLinkType.APP_OAUTH2_LINK];
@@ -15,27 +15,33 @@ let result = set.fileFinishedImporting("modules/coded_links/ApplicationCodedLink
 
 export const APP_LINK_CODED_TYPES = set;
 export const isApplicationCodedLink = function isApplicationCodedLink(type) {
-  return require(1327) /* isDiscordFrontendDevelopment */.isInSet(type, set);
+  return require(1351) /* isDiscordFrontendDevelopment */.isInSet(type, set);
 };
 export const APP_LINK_CODED_TYPES_MOBILE_SUPPORT = set1;
 export const isApplicationCodedLinkMobileSupported = function isApplicationCodedLinkMobileSupported(type) {
-  return require(1327) /* isDiscordFrontendDevelopment */.isInSet(type, set1);
+  return require(1351) /* isDiscordFrontendDevelopment */.isInSet(type, set1);
 };
 export const getApplicationCodedLinkData = function getApplicationCodedLinkData(type, code, url) {
-  if (require(4154) /* CodedLinkType */.CodedLinkType.APP_DIRECTORY_PROFILE !== type) {
-    if (require(4154) /* CodedLinkType */.CodedLinkType.APP_OAUTH2_LINK !== type) {
-      if (require(4154) /* CodedLinkType */.CodedLinkType.APP_DIRECTORY_STOREFRONT !== type) {
-        if (require(4154) /* CodedLinkType */.CodedLinkType.APP_DIRECTORY_STOREFRONT_SKU === type) {
-          const result = require(5956) /* makeStorefrontSKUCodedLink */.parseStorefrontSkuCodedLink(code);
-          let tmp9 = null;
+  if (require(4178) /* CodedLinkType */.CodedLinkType.APP_DIRECTORY_PROFILE !== type) {
+    if (tmp(4178).CodedLinkType.APP_OAUTH2_LINK !== type) {
+      if (tmp(4178).CodedLinkType.APP_DIRECTORY_STOREFRONT !== type) {
+        if (tmp(4178).CodedLinkType.APP_DIRECTORY_STOREFRONT_SKU === type) {
+          let tmpResult = tmp(5975);
+          const result = tmpResult.parseStorefrontSkuCodedLink(code);
+          let tmp5 = null;
           if (null != result) {
-            let obj = { type };
-            ({ applicationId: obj4.applicationId, skuId: obj4.skuId } = result);
-            tmp9 = obj;
+            let obj = { type: null, applicationId: null, skuId: null };
+            obj[0] = type;
+            ({ applicationId: obj4[1], skuId: obj4[2] } = result);
+            tmp5 = obj;
           }
-          return tmp9;
-        } else if (require(4154) /* CodedLinkType */.CodedLinkType.ACTIVITY_BOOKMARK === type) {
-          obj = { type, applicationId: code, params: require(5957) /* extractActivityBookmarkParams */.extractActivityBookmarkParams(url) };
+          return tmp5;
+        } else if (tmp(4178).CodedLinkType.ACTIVITY_BOOKMARK === type) {
+          obj = { type: null, applicationId: null, params: null };
+          obj[0] = type;
+          obj[1] = code;
+          tmpResult = tmp(5976);
+          obj[2] = tmpResult.extractActivityBookmarkParams(url);
           return obj;
         }
       }

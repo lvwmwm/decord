@@ -1,60 +1,20 @@
-// Module ID: 9540
-// Function ID: 74261
-// Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 4158, 566, 686, 2]
+// Module ID: 9564
+// Function ID: 9565
+// Name: getOptions
+// Dependencies: [4182, 589, 709, 2]
 
-// Module 9540 (_isNativeReflectConstruct)
-import initialize from "initialize";
-import dispatcher from "dispatcher";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
+// Module 9564 (getOptions)
 import { MessageSendLocation } from "MESSAGE_GROUP_SPACING";
+import { Store } from "initialize";
 
-function _isNativeReflectConstruct() {
-  let initialize = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return initialize;
-  }
-  const result = _isNativeReflectConstruct();
+let closure_1 = {};
+class SendMessageOptionsStore extends Store {
 }
-let closure_6 = {};
-let tmp2 = ((Store) => {
-  class SendMessageOptionsStore {
-    constructor() {
-      self = this;
-      tmp = SendMessageOptionsStore(this, SendMessageOptionsStore);
-      obj = outer1_3(SendMessageOptionsStore);
-      tmp2 = outer1_2;
-      if (outer1_7()) {
-        tmp6 = globalThis;
-        _Reflect = Reflect;
-        tmp7 = outer1_3;
-        tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, outer1_3(self).constructor);
-      } else {
-        tmp3 = arguments;
-        tmp4 = arguments;
-        constructResult = obj(...arguments);
-      }
-      return tmp2(self, constructResult);
-    }
-  }
-  callback2(SendMessageOptionsStore, Store);
-  const items = [
-    {
-      key: "getOptions",
-      value(arg0) {
-        return outer1_6[arg0];
-      }
-    }
-  ];
-  return callback(SendMessageOptionsStore, items);
-})(require("initialize").Store);
-tmp2.displayName = "SendMessageOptionsStore";
-tmp2 = new tmp2(require("dispatcher"), {
+SendMessageOptionsStore.prototype["getOptions"] = function getOptions(arg0) {
+  return table[arg0];
+};
+SendMessageOptionsStore.displayName = "SendMessageOptionsStore";
+const sendMessageOptionsStore = new SendMessageOptionsStore(require("dispatcher"), {
   MESSAGE_CREATE: function handleMessageCreate(arg0) {
     let message;
     let sendMessageOptions;
@@ -63,16 +23,16 @@ tmp2 = new tmp2(require("dispatcher"), {
       const obj = {};
       const merged = Object.assign(sendMessageOptions);
       let OTHER = sendMessageOptions.location;
-      if (null == OTHER) {
+      if (OTHER == null) {
         OTHER = MessageSendLocation.OTHER;
       }
-      obj["location"] = OTHER;
-      closure_6[message.id] = obj;
-      const tmp3 = closure_6;
+      obj.location = OTHER;
+      closure_1[message.id] = obj;
+      const tmp3 = closure_1;
     }
     let tmp8 = null != message.nonce && message.nonce !== message.id;
     if (tmp8) {
-      tmp8 = message.nonce in closure_6;
+      tmp8 = message.nonce in closure_1;
     }
     if (tmp8) {
       const nonce = message.nonce;
@@ -80,6 +40,6 @@ tmp2 = new tmp2(require("dispatcher"), {
     }
   }
 });
-let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/messages/SendMessageOptionsStore.tsx");
+const result = require("dispatcher").fileFinishedImporting("modules/messages/SendMessageOptionsStore.tsx");
 
-export default tmp2;
+export default sendMessageOptionsStore;

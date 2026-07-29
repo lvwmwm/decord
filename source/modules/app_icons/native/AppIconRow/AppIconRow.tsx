@@ -1,42 +1,42 @@
-// Module ID: 14467
-// Function ID: 110443
+// Module ID: 14489
+// Function ID: 14490
 // Name: items
-// Dependencies: [57, 31, 33, 1212, 4165, 689, 6563, 22, 3883, 5198, 14464, 7633, 2]
+// Dependencies: [32, 19, 21, 1236, 4189, 712, 6584, 12, 3907, 5220, 14486, 7656, 2]
 // Exports: default
 
-// Module 14467 (items)
+// Module 14489 (items)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
+import noop from "noop";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
 const require = arg1;
 const items = [
   () => {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(require(1212) /* getSystemLocale */.t["EgWTY+"]);
+    const intl = require(1236) /* getSystemLocale */.intl;
+    return intl.string(require(1236) /* getSystemLocale */.t["EgWTY+"]);
   },
   () => {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(require(1212) /* getSystemLocale */.t.umBn5f);
+    const intl = require(1236) /* getSystemLocale */.intl;
+    return intl.string(require(1236) /* getSystemLocale */.t.umBn5f);
   },
   () => {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(require(1212) /* getSystemLocale */.t.dG1wD1);
+    const intl = require(1236) /* getSystemLocale */.intl;
+    return intl.string(require(1236) /* getSystemLocale */.t.dG1wD1);
   },
   () => {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(require(1212) /* getSystemLocale */.t.SesI4S);
+    const intl = require(1236) /* getSystemLocale */.intl;
+    return intl.string(require(1236) /* getSystemLocale */.t.SesI4S);
   },
   () => {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(require(1212) /* getSystemLocale */.t.RnMLvl);
+    const intl = require(1236) /* getSystemLocale */.intl;
+    return intl.string(require(1236) /* getSystemLocale */.t.RnMLvl);
   }
 ];
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { borderRadius: require("_createForOfIteratorHelperLoose").radii.md };
-_createForOfIteratorHelperLoose.icon = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+createCacheKey = { icon: null };
+createCacheKey = { borderRadius: require("Themes").radii.md };
+createCacheKey[0] = createCacheKey;
+createCacheKey = createCacheKey.createStyles(createCacheKey);
 const result = require("jsxProd").fileFinishedImporting("modules/app_icons/native/AppIconRow/AppIconRow.tsx");
 
 export default function AppIconRow(arg0) {
@@ -49,46 +49,49 @@ export default function AppIconRow(arg0) {
   let require;
   let showEasterEgg;
   ({ icon, onSelect: require, onLongPress: importDefault } = arg0);
+  let id;
   ({ hasNitro, currentAppIcon, showEasterEgg } = arg0);
-  const id = icon.id;
+  id = icon.id;
   if (id === require(id[6]).PremiumAppIconIds.PIRATE) {
-    let obj = importDefault(id[7]);
+    let obj = importDefault(tmp4[7]);
     let name = items[obj.random(obj, 0, items.length - 1)]();
   } else {
     name = icon.name;
   }
-  let obj1 = require(id[8]);
-  const radioA11yNative = obj1.useRadioA11yNative({ selected: tmp6 });
+  const tmp = createCacheKey();
+  const radioA11yNative = require(id[8]).useRadioA11yNative({ selected: tmp7 });
   ({ accessibilityRole, accessibilityState } = radioA11yNative);
   if (id === require(id[6]).PremiumAppIconIds.BRAND_INVERTED) {
     if (!showEasterEgg) {
-      let tmp9Result = null;
+      let tmp10Result = null;
     }
-    return tmp9Result;
+    return tmp10Result;
   }
-  tmp9Result = null;
+  tmp10Result = null;
   if (!icon.isHidden) {
-    obj = {};
-    obj = { id, style: tmp.icon };
-    obj.icon = jsx(importDefault(id[10]), { id, style: tmp.icon });
-    obj.label = callback(React.useState(name), 1)[0];
-    obj.onLongPress = function onLongPress() {
+    obj = { icon: null, label: null, onLongPress: null, onPress: null, accessibilityRole: null, accessibilityState: null, trailing: null };
+    obj = { id: null, style: null };
+    obj[0] = id;
+    obj[1] = tmp.icon;
+    obj[0] = jsx(importDefault(tmp4[10]), { id: null, style: null });
+    obj[1] = callback(React.useState(name), 1)[0];
+    obj[2] = function onLongPress() {
       return callback2(id);
     };
-    obj.onPress = function onPress() {
+    obj[3] = function onPress() {
       return callback(id);
     };
-    obj.accessibilityRole = accessibilityRole;
-    obj.accessibilityState = accessibilityState;
-    if (!tmp6) {
+    obj[4] = accessibilityRole;
+    obj[5] = accessibilityState;
+    if (!tmp7) {
       if (icon.isPremium) {
-        let tmp13 = null;
+        tmp10Result = null;
       }
-      obj.trailing = tmp13;
-      tmp9Result = tmp9(require(id[9]).TableRow, obj, id);
+      obj[6] = tmp10Result;
+      tmp10Result = tmp10(tmp3(tmp4[9]).TableRow, obj, id);
     }
-    obj1 = { selected: tmp6 };
-    tmp13 = jsx(require(id[11]).FormRadio, { selected: tmp6 });
-    tmp9 = jsx;
+    const obj1 = { selected: null };
+    obj1[0] = tmp7;
+    tmp10Result = tmp10(tmp3(tmp4[11]).FormRadio, obj1);
   }
 };

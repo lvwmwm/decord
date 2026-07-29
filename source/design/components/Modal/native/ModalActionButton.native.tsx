@@ -1,40 +1,39 @@
-// Module ID: 9905
-// Function ID: 76577
+// Module ID: 9927
+// Function ID: 9928
 // Name: ModalActionButton
-// Dependencies: [31, 27, 33, 4165, 4578, 2]
+// Dependencies: [19, 17, 21, 4189, 4600, 2]
 // Exports: ModalActionButton
 
-// Module 9905 (ModalActionButton)
-import "result";
+// Module 9927 (ModalActionButton)
+import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_3;
-let closure_4;
-let closure_5;
+let c3;
+let c4;
+let c5;
 const require = arg1;
-({ jsx: closure_3, Fragment: closure_4, jsxs: closure_5 } = jsxProd);
-let closure_6 = _createForOfIteratorHelperLoose.createStyles({ spacer: { marginTop: 12 } });
+({ jsx: c3, Fragment: c4, jsxs: c5 } = jsxProd);
+let closure_6 = createCacheKey.createStyles({ spacer: { marginTop: 12 } });
 const result = require("jsxProd").fileFinishedImporting("design/components/Modal/native/ModalActionButton.native.tsx");
 
 export const ModalActionButton = function ModalActionButton(variant) {
   variant = variant.variant;
-  let obj = Object.create(null);
-  obj.variant = 0;
-  const merged = Object.assign(variant, obj);
-  obj = {};
-  let tmp6 = "secondary" === variant;
-  if (tmp6) {
-    obj = { style: tmp3.spacer };
-    tmp6 = callback(View, obj);
+  const merged = Object.assign(variant, Object.create(null));
+  let tmp5 = "secondary" === variant;
+  if (tmp5) {
+    let obj = { style: null };
+    obj[0] = tmp2.spacer;
+    tmp5 = callback(View, obj);
   }
-  const items = [tmp6, ];
-  const obj1 = {};
+  obj = { children: null };
+  const items = [tmp5, ];
+  obj = {};
   const merged1 = Object.assign(merged);
-  obj1["variant"] = variant;
-  obj1["size"] = "lg";
-  items[1] = callback(require(4578) /* Button */.Button, obj1);
-  obj.children = items;
+  obj.variant = variant;
+  obj.size = "lg";
+  items[1] = callback(require(4600) /* Button */.Button, obj);
+  obj[0] = items;
   return closure_5(closure_4, obj);
 };

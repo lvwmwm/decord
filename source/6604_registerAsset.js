@@ -1,11 +1,10 @@
 // Module ID: 6604
-// Function ID: 58469
+// Function ID: 6605
 // Name: registerAsset
-// Dependencies: [1217]
+// Dependencies: [1241]
 
 // Module 6604 (registerAsset)
 import registerAsset from "registerAsset";
 
-const obj = { __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "0b7dc87cd2d9da017fd484c168f76354", name: "SuperReactionIcon", type: "png" };
 
-export default registerAsset.registerAsset(obj);
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/custom_app_icons/HoloWavesIcon", width: 60, height: 60, scales: [2, 3], hash: "88fd60fc6961a4cc52d32c54b3209f38", name: "HoloWavesIcon", type: "png" });

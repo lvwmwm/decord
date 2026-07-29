@@ -1,47 +1,50 @@
-// Module ID: 11446
-// Function ID: 88809
+// Module ID: 11470
+// Function ID: 11471
 // Name: useInvitesDisabledPermission
-// Dependencies: [10223, 3793, 653, 566, 2]
-// Exports: useShouldShowInvitesDisabledNotif
+// Dependencies: [10244, 3817, 676, 589, 2]
+// Exports: useInvitesDisabled, useInvitesDisabledPermission, useShouldShowInvitesDisabledNotif
 
-// Module 11446 (useInvitesDisabledPermission)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_3 from "_isNativeReflectConstruct";
+// Module 11470 (useInvitesDisabledPermission)
+import computeAlertSettings from "computeAlertSettings";
+import getUncachedChannelPermissions from "getUncachedChannelPermissions";
 import ME from "ME";
 
-let closure_4;
-let closure_5;
+let c4;
+let c5;
 const require = arg1;
-function useInvitesDisabledPermission(guild) {
+({ GuildFeatures: c4, Permissions: c5 } = ME);
+const result = require("ME").fileFinishedImporting("modules/guild_settings/safety/GuildInvitesDisabledUtils.tsx");
+
+export const useInvitesDisabledPermission = function useInvitesDisabledPermission(guild) {
   const _require = guild;
-  const items = [closure_3];
+  const items = [getUncachedChannelPermissions];
   const items1 = [guild];
-  return _require(566).useStateFromStores(items, () => {
+  return _require(589).useStateFromStores(items, () => {
     let canResult = null != closure_0;
     if (canResult) {
-      canResult = outer1_3.can(outer1_5.MANAGE_GUILD, closure_0);
+      canResult = outer1_3.can(outer1_5.MANAGE_GUILD, tmp);
     }
     return canResult;
   }, items1);
-}
-function useInvitesDisabled(features) {
+};
+export const useInvitesDisabled = function useInvitesDisabled(features) {
   const _require = features;
-  const items = [_isNativeReflectConstruct];
-  const stateFromStores = _require(566).useStateFromStores(items, () => {
+  const items = [computeAlertSettings];
+  const stateFromStores = _require(589).useStateFromStores(items, () => {
     let guildIncident = null;
-    if (null != id) {
-      guildIncident = outer1_2.getGuildIncident(id.id);
+    if (null != closure_0) {
+      guildIncident = outer1_2.getGuildIncident(tmp.id);
     }
     return guildIncident;
   });
   let hasItem;
-  if (null != features) {
+  if (features != null) {
     features = features.features;
     hasItem = features.has(constants.INVITES_DISABLED);
   }
   if (!hasItem) {
     let invitesDisabledUntil;
-    if (null != stateFromStores) {
+    if (stateFromStores != null) {
       invitesDisabledUntil = stateFromStores.invitesDisabledUntil;
     }
     let tmp5 = null != invitesDisabledUntil;
@@ -55,16 +58,50 @@ function useInvitesDisabled(features) {
     hasItem = tmp5;
   }
   return hasItem;
-}
-({ GuildFeatures: closure_4, Permissions: closure_5 } = ME);
-const result = require("ME").fileFinishedImporting("modules/guild_settings/safety/GuildInvitesDisabledUtils.tsx");
-
-export { useInvitesDisabledPermission };
-export { useInvitesDisabled };
+};
 export const useShouldShowInvitesDisabledNotif = function useShouldShowInvitesDisabledNotif(guild) {
-  let tmp = useInvitesDisabledPermission(guild);
-  if (tmp) {
-    tmp = useInvitesDisabled(guild);
+  let _require = guild;
+  const items = [getUncachedChannelPermissions];
+  const items1 = [guild];
+  let stateFromStores = _require(589).useStateFromStores(items, () => {
+    let canResult = null != closure_0;
+    if (canResult) {
+      canResult = outer1_3.can(outer1_5.MANAGE_GUILD, tmp);
+    }
+    return canResult;
+  }, items1);
+  _require = guild;
+  const obj = _require(589);
+  const items2 = [computeAlertSettings];
+  const stateFromStores1 = _require(589).useStateFromStores(items2, () => {
+    let guildIncident = null;
+    if (null != closure_0) {
+      guildIncident = outer1_2.getGuildIncident(tmp.id);
+    }
+    return guildIncident;
+  });
+  let hasItem;
+  if (guild != null) {
+    const features = guild.features;
+    hasItem = features.has(constants.INVITES_DISABLED);
   }
-  return tmp;
+  if (!hasItem) {
+    let invitesDisabledUntil;
+    if (stateFromStores1 != null) {
+      invitesDisabledUntil = stateFromStores1.invitesDisabledUntil;
+    }
+    let tmp6 = null != invitesDisabledUntil;
+    if (tmp6) {
+      const _Date = Date;
+      const date = new Date(stateFromStores1.invitesDisabledUntil);
+      const _Date2 = Date;
+      const date1 = new Date();
+      tmp6 = date > date1;
+    }
+    hasItem = tmp6;
+  }
+  if (stateFromStores) {
+    stateFromStores = hasItem;
+  }
+  return stateFromStores;
 };

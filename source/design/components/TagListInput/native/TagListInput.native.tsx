@@ -1,59 +1,60 @@
-// Module ID: 8265
-// Function ID: 66111
-// Dependencies: [57, 31, 27, 33, 4165, 689, 4161, 4026, 4577, 4581, 5143, 4589, 6714, 4584, 6720, 6722, 3874, 6724, 5485, 5223, 8266, 8267, 1212, 8268, 3878, 6719, 8270, 2]
+// Module ID: 8289
+// Function ID: 8290
+// Dependencies: [32, 19, 17, 21, 4189, 712, 4185, 4050, 4599, 4603, 5165, 4611, 6735, 4606, 6741, 6743, 3898, 6745, 5503, 5245, 8290, 8291, 1236, 8292, 3902, 6740, 8294, 2]
 
-// Module 8265
+// Module 8289
 import _slicedToArray from "_slicedToArray";
-import importAllResult from "result";
-import get_ActivityIndicator from "set";
-import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import importAllResult from "BottomSheetModal";
+import get_ActivityIndicator from "useBottomSheetKeyboardHandling";
+import jsxProd from "VoidTextInput";
+import createCacheKey from "createCacheKey";
+import createCacheKey from "createCacheKey";
 
-let closure_5;
+let c5;
+let c9;
 let closure_6;
-let closure_7;
-let closure_8;
-let closure_9;
+let error;
+let metroImportAll;
 const require = arg1;
-({ View: closure_5, ScrollView: closure_6, StyleSheet: closure_7 } = get_ActivityIndicator);
-({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
-let closure_10 = _createForOfIteratorHelperLoose.createStyles(() => {
-  let obj = {};
-  obj = { color: importDefault(689).colors.INPUT_PLACEHOLDER_TEXT_DEFAULT };
-  obj.placeholder = obj;
-  obj = { paddingHorizontal: importDefault(689).space.PX_12 };
-  obj.iconContainer = obj;
-  obj.iconLeft = { marginLeft: importDefault(689).space.PX_12 };
-  obj.scrollViewContent = { paddingVertical: 5 };
-  obj.horizontalScrollViewContent = { flexGrow: 1 };
-  const obj2 = { marginHorizontal: importDefault(689).space.PX_4, alignItems: "center", flexDirection: "row", flexWrap: "wrap", flex: 1 };
-  obj.inputInner = obj2;
-  obj.horizontalInputInner = { flexWrap: "nowrap" };
-  const obj3 = { flex: 1, minHeight: importDefault(689).space.PX_24, minWidth: importDefault(689).space.PX_48, color: importDefault(689).colors.TEXT_DEFAULT };
-  const merged = Object.assign(require(4161) /* Text */.TextStyleSheet["text-sm/medium"]);
-  obj3["paddingVertical"] = 0;
-  obj3["marginVertical"] = 2;
-  obj.searchInput = obj3;
-  const obj1 = { marginLeft: importDefault(689).space.PX_12 };
-  obj.horizontalSearchInput = { minWidth: importDefault(689).space.PX_64 };
+let c4 = importAllResult;
+({ View: c5, ScrollView: closure_6, StyleSheet: error } = get_ActivityIndicator);
+({ jsx: metroImportAll, jsxs: c9 } = jsxProd);
+let closure_10 = createCacheKey.createStyles(() => {
+  let obj = { placeholder: null, iconContainer: null, iconLeft: null, scrollViewContent: null, horizontalScrollViewContent: null, inputInner: null, horizontalInputInner: null, searchInput: null, horizontalSearchInput: null };
+  obj = { color: importDefault(712).colors.INPUT_PLACEHOLDER_TEXT_DEFAULT };
+  obj[0] = obj;
+  obj = { paddingHorizontal: importDefault(712).space.PX_12 };
+  obj[1] = obj;
+  obj[2] = { marginLeft: importDefault(712).space.PX_12 };
+  obj[3] = { paddingVertical: 5 };
+  obj[4] = { flexGrow: 1 };
+  const obj1 = { marginLeft: importDefault(712).space.PX_12 };
+  obj[5] = { marginHorizontal: importDefault(712).space.PX_4, alignItems: "center", flexDirection: "row", flexWrap: "wrap", flex: 1 };
+  obj[6] = { flexWrap: "nowrap" };
+  const obj3 = { flex: 1, minHeight: importDefault(712).space.PX_24, minWidth: importDefault(712).space.PX_48, color: importDefault(712).colors.TEXT_DEFAULT };
+  const merged = Object.assign(require(4185) /* Text */.TextStyleSheet["text-sm/medium"]);
+  obj3.paddingVertical = 0;
+  obj3.marginVertical = 2;
+  obj[7] = obj3;
+  const obj2 = { marginHorizontal: importDefault(712).space.PX_4, alignItems: "center", flexDirection: "row", flexWrap: "wrap", flex: 1 };
+  obj[8] = { minWidth: importDefault(712).space.PX_64 };
   return obj;
 });
 let closure_11 = { x: 0, y: 0.5 };
 let closure_12 = { x: 1, y: 0.5 };
 let closure_13 = ["transparent", "black"];
-let closure_14 = _createForOfIteratorHelperLoose.createStyles(() => {
-  let obj = { fill: { flex: 1 } };
+let closure_14 = createCacheKey.createStyles(() => {
+  let obj = { fill: { flex: 1 }, mask: null, leadingFade: null, leadingCover: null, maskRemainder: null };
   obj = {};
   const merged = Object.assign(closure_7.absoluteFillObject);
-  obj["flexDirection"] = "row";
-  obj.mask = obj;
-  obj.leadingFade = { width: 32 };
+  obj.flexDirection = "row";
+  obj[1] = obj;
+  obj[2] = { width: 32 };
   obj = {};
   const merged1 = Object.assign(closure_7.absoluteFillObject);
-  obj["backgroundColor"] = "black";
-  obj.leadingCover = obj;
-  obj.maskRemainder = { flex: 1, backgroundColor: "black" };
+  obj.backgroundColor = "black";
+  obj[3] = obj;
+  obj[4] = { flex: 1, backgroundColor: "black" };
   return obj;
 });
 let closure_15 = { code: "function TagListInputNativeTsx1(){const{withSpring,scrolled,springStandard}=this.__closure;return{opacity:withSpring(scrolled.get()?0:1,springStandard,'animate-always')};}" };
@@ -62,33 +63,42 @@ const memoResult = importAllResult.memo(function TagListInput(accessibilityHint)
   let autoClearInputOnTagAdd;
   let autoFocus;
   let c10;
+  let c12;
+  let c13;
+  let c14;
   let c17;
+  let c8;
   let c9;
+  let clearProps;
+  let clearState;
   let defaultValue;
-  let dependencyMap;
   let disabled;
   let focusOnAdd;
   let footer;
   let icon;
   let inActionSheet;
+  let isFocused;
   let onBlur;
   let onChangeText;
   let onFocus;
   let onScroll;
   let onSubmitEditing;
   let placeholder;
+  let ref1;
   let returnKeyType;
   let style;
   let tmp23;
+  let tmp30;
   ({ defaultValue, disabled } = accessibilityHint);
   if (disabled === undefined) {
     disabled = false;
   }
-  ({ placeholder, accessibilityLabel, icon, returnKeyType, onChangeText, onBlur, onFocus, onScroll, style } = accessibilityHint);
+  ({ placeholder, accessibilityLabel, icon, onChangeText, onScroll, returnKeyType, onBlur, onFocus, style } = accessibilityHint);
   if (returnKeyType === undefined) {
     returnKeyType = "search";
   }
-  let tags = accessibilityHint.tags;
+  const tags = accessibilityHint.tags;
+  onScroll = tags;
   let flag = accessibilityHint.horizontal;
   if (flag === undefined) {
     flag = false;
@@ -97,520 +107,515 @@ const memoResult = importAllResult.memo(function TagListInput(accessibilityHint)
   if (focusOnAdd === undefined) {
     focusOnAdd = true;
   }
-  ({ inActionSheet, onRemove: dependencyMap, autoClearInputOnTagAdd, onSubmitEditing, autoFocus } = accessibilityHint);
+  let ref = focusOnAdd;
+  ({ inActionSheet, onRemove: ref1, autoClearInputOnTagAdd, onSubmitEditing, autoFocus } = accessibilityHint);
   if (autoClearInputOnTagAdd === undefined) {
     autoClearInputOnTagAdd = true;
   }
+  let sharedValue = autoClearInputOnTagAdd;
   let flag2 = accessibilityHint.leadingFade;
   if (flag2 === undefined) {
     flag2 = false;
   }
-  let inputRef;
-  let inputValueRef;
-  let inputUpdate;
-  let closure_7;
-  let focusProps;
-  c9 = undefined;
+  let animatedStyle;
+  ref1 = undefined;
   let callback;
-  let ref;
-  let closure_12;
-  let closure_13;
-  let closure_14;
+  let closure_7;
+  c8 = undefined;
+  c9 = undefined;
+  callback = undefined;
+  let ref3;
+  c12 = undefined;
+  c13 = undefined;
+  let callback2;
   let c15;
-  let ref1;
+  let ref4;
   c17 = undefined;
   let tmp = callback();
-  let obj = tags(4584);
+  let obj = onScroll(ref1[13]);
   const bound = Math.min(2, obj.useFontScale());
-  let result = tags(6720).InputHeights.MD * bound;
-  let tmp4 = (function useTagListInputState(ref, onChangeText) {
-    let clearProps;
-    let clearState;
-    let closure_0 = onChangeText;
-    ref = inputRef.useRef(null);
-    const ref1 = inputRef.useRef("");
-    const ref2 = inputRef.useRef(false);
-    const tmp4 = autoClearInputOnTagAdd(inputRef.useState(false), 2);
-    const first = tmp4[0];
-    let closure_5 = tmp4[1];
-    const items = [onChangeText];
-    const callback = inputRef.useCallback((current) => {
-      let flag = arg1;
-      if (arg1 === undefined) {
+  onScroll = onChangeText;
+  ref = undefined;
+  ref1 = undefined;
+  sharedValue = undefined;
+  animatedStyle = undefined;
+  ref1 = undefined;
+  callback = undefined;
+  let obj1 = animatedStyle;
+  let result = onScroll(ref1[14]).InputHeights.MD * bound;
+  ref = animatedStyle.useRef(null);
+  ref1 = animatedStyle.useRef("");
+  const ref2 = animatedStyle.useRef(false);
+  sharedValue = ref2;
+  const tmp10 = sharedValue(animatedStyle.useState(false), 2);
+  const first = tmp10[0];
+  animatedStyle = first;
+  ref1 = tmp10[1];
+  let items = [onChangeText];
+  callback = animatedStyle.useCallback((current) => {
+    let flag = arg1;
+    if (arg1 === undefined) {
+      flag = false;
+    }
+    sharedValue.current = true;
+    ref1.current = current;
+    ref1(current.length > 0);
+    if (onScroll != null) {
+      onScroll(current);
+    }
+    if (flag) {
+      current = ref.current;
+      if (current != null) {
+        const obj = { text: null };
+        obj[0] = current;
+        current.setNativeProps(obj);
+      }
+    }
+  }, items);
+  const imperativeHandle = animatedStyle.useImperativeHandle(accessibilityHint.ref, () => ({
+    blur() {
+      const current = closure_1.current;
+      let blurResult;
+      if (current != null) {
+        blurResult = current.blur();
+      }
+      return blurResult;
+    },
+    focus() {
+      const current = closure_1.current;
+      let focusResult;
+      if (current != null) {
+        focusResult = current.focus();
+      }
+      return focusResult;
+    },
+    setText(arg0) {
+      return callback(arg0, true);
+    },
+    getText() {
+      return ref.current;
+    },
+    isFocused() {
+      const current = closure_1.current;
+      let flag;
+      if (current != null) {
+        flag = current.isFocused();
+      }
+      if (flag == null) {
         flag = false;
       }
-      ref2.current = true;
-      ref1.current = current;
-      callback(current.length > 0);
-      if (null != onChangeText) {
-        onChangeText(current);
+      return flag;
+    },
+    measure(arg0) {
+      const current = closure_1.current;
+      let measureResult;
+      if (current != null) {
+        measureResult = current.measure(arg0);
       }
-      if (flag) {
-        current = ref.current;
-        if (null != current) {
-          const obj = { text: current };
-          current.setNativeProps(obj);
-        }
+      return measureResult;
+    },
+    measureInWindow(arg0) {
+      const current = closure_1.current;
+      let measureInWindowResult;
+      if (current != null) {
+        measureInWindowResult = current.measureInWindow(arg0);
       }
-    }, items);
-    const imperativeHandle = inputRef.useImperativeHandle(ref, () => ({
-      blur() {
-        const current = outer1_1.current;
-        let blurResult;
-        if (null != current) {
-          blurResult = current.blur();
-        }
-        return blurResult;
+      return measureInWindowResult;
+    },
+    measureLayout(arg0, arg1, arg2) {
+      const current = closure_1.current;
+      let measureLayoutResult;
+      if (current != null) {
+        measureLayoutResult = current.measureLayout(arg0, arg1, arg2);
+      }
+      return measureLayoutResult;
+    }
+  }));
+  let items1 = [first, callback];
+  const memo = animatedStyle.useMemo(() => {
+    const clearState = {
+      hasValue: animatedStyle,
+      clear() {
+        return callback("", true);
       },
-      focus() {
-        const current = outer1_1.current;
-        let focusResult;
-        if (null != current) {
-          focusResult = current.focus();
-        }
-        return focusResult;
-      },
-      setText(arg0) {
-        return outer1_6(arg0, true);
-      },
-      getText() {
-        return outer1_2.current;
-      },
-      isFocused() {
-        const current = outer1_1.current;
+      setTextValue(arg0) {
+        return callback(arg0, true);
+      }
+    };
+    return { clearProps: { isClearable: true }, clearState };
+  }, items1);
+  ({ clearProps, clearState } = memo);
+  let obj2 = onScroll(ref1[12]);
+  const inputClearButton = obj2.useInputClearButton(clearProps, clearState);
+  animatedStyle = ref;
+  closure_7 = animatedStyle.useRef({ start: 0, end: 0 });
+  let obj3 = onScroll(ref1[15]);
+  const keyboardBlurring = obj3.useKeyboardBlurring(ref);
+  let obj4 = onScroll(ref1[16]);
+  const focus = obj4.useFocus();
+  ({ focusProps: c8, isFocused } = focus);
+  ({ onFocus: c9, onBlur: c10 } = ref(ref1[17])({ onFocus, onBlur }));
+  ref3 = animatedStyle.useRef(null);
+  const tmp18 = ref;
+  const tmp19 = ref(ref1[17])({ onFocus, onBlur });
+  let tmp9 = sharedValue;
+  [c12, c13] = sharedValue(animatedStyle.useState(null), 2);
+  const tmp21 = sharedValue(animatedStyle.useState(null), 2);
+  [tmp23, c14] = sharedValue(animatedStyle.useState(false), 2);
+  const tmp24 = ref(ref1[18])(tags);
+  c15 = tmp24;
+  ref4 = animatedStyle.useRef(tags);
+  let items2 = [focusOnAdd, callback, ref4, tags, ref, ref1, autoClearInputOnTagAdd];
+  const layoutEffect = animatedStyle.useLayoutEffect(() => {
+    if (ref4.current.length < onScroll.length) {
+      let tmp6 = ref;
+      if (ref) {
+        let current = animatedStyle.current;
         let isFocusedResult;
-        if (null != current) {
+        if (current != null) {
           isFocusedResult = current.isFocused();
         }
-        return null != isFocusedResult && isFocusedResult;
-      },
-      measure(arg0) {
-        const current = outer1_1.current;
-        let measureResult;
-        if (null != current) {
-          measureResult = current.measure(arg0);
-        }
-        return measureResult;
-      },
-      measureInWindow(arg0) {
-        const current = outer1_1.current;
-        let measureInWindowResult;
-        if (null != current) {
-          measureInWindowResult = current.measureInWindow(arg0);
-        }
-        return measureInWindowResult;
-      },
-      measureLayout(arg0, arg1, arg2) {
-        const current = outer1_1.current;
-        let measureLayoutResult;
-        if (null != current) {
-          measureLayoutResult = current.measureLayout(arg0, arg1, arg2);
-        }
-        return measureLayoutResult;
+        tmp6 = false === isFocusedResult;
       }
-    }));
-    const items1 = [first, callback];
-    const memo = inputRef.useMemo(() => {
-      const clearState = {
-        hasValue: first,
-        clear() {
-          return outer1_6("", true);
-        },
-        setTextValue(text) {
-          return outer1_6(text, true);
-        }
-      };
-      return { clearProps: { isClearable: true }, clearState };
-    }, items1);
-    let obj = {};
-    ({ clearProps, clearState } = memo);
-    obj.clearButton = tags(outer1_2[12]).useInputClearButton(clearProps, clearState);
-    obj.inputRef = ref;
-    obj.inputValueRef = ref1;
-    obj.inputUpdate = callback;
-    obj.inputInitializedRef = ref2;
-    return obj;
-  })(accessibilityHint.ref, onChangeText);
-  inputRef = tmp4.inputRef;
-  inputValueRef = tmp4.inputValueRef;
-  inputUpdate = tmp4.inputUpdate;
-  const clearButton = tmp4.clearButton;
-  closure_7 = inputRef.useRef({ start: 0, end: 0 });
-  let obj1 = tags(6722);
-  const keyboardBlurring = obj1.useKeyboardBlurring(inputRef);
-  let obj2 = tags(3874);
-  const focus = obj2.useFocus();
-  focusProps = focus.focusProps;
-  ({ onFocus: c9, onBlur: c10 } = focusOnAdd(6724)({ onFocus, onBlur }));
-  ref = inputRef.useRef(null);
-  const tmp9 = autoClearInputOnTagAdd(inputRef.useState(null), 2);
-  closure_12 = tmp9[0];
-  closure_13 = tmp9[1];
-  const tmp10 = autoClearInputOnTagAdd(inputRef.useState(false), 2);
-  closure_14 = tmp10[1];
-  const tmp11 = focusOnAdd(5485)(tags);
-  c15 = tmp11;
-  ref1 = inputRef.useRef(tags);
-  let items = [focusOnAdd, inputUpdate, ref1, tags, inputRef, inputValueRef, autoClearInputOnTagAdd];
-  const layoutEffect = inputRef.useLayoutEffect(() => {
-    if (ref1.current.length < tags.length) {
-      if (focusOnAdd) {
-        let current = inputRef.current;
-        let isFocusedResult;
-        if (null != current) {
-          isFocusedResult = current.isFocused();
-        }
-        if (false === isFocusedResult) {
-          const current2 = inputRef.current;
-          if (null != current2) {
-            current2.focus();
-          }
+      if (tmp6) {
+        const current2 = animatedStyle.current;
+        if (current2 != null) {
+          current2.focus();
         }
       }
       const _setTimeout = setTimeout;
       const timerId = setTimeout(() => {
-        const current = outer1_11.current;
+        const current = ref.current;
         let scrollToEndResult;
-        if (null != current) {
-          const obj = { animated: false };
-          scrollToEndResult = current.scrollToEnd(obj);
+        if (current != null) {
+          scrollToEndResult = current.scrollToEnd({ animated: false });
         }
         return scrollToEndResult;
       }, 10);
-      let tmp8 = autoClearInputOnTagAdd;
-      if (autoClearInputOnTagAdd) {
-        tmp8 = inputValueRef.current.length > 0;
+      let tmp12 = sharedValue;
+      if (sharedValue) {
+        tmp12 = ref1.current.length > 0;
       }
-      if (tmp8) {
-        inputUpdate("", true);
-      }
-    }
-    ref1.current = tags;
-  }, items);
-  let items1 = [tmp11];
-  const layoutEffect1 = inputRef.useLayoutEffect(() => {
-    if (0 !== _undefined3.length) {
-      const current = ref.current;
-      if (null != current) {
-        const obj = { animated: false };
-        current.scrollToEnd(obj);
+      if (tmp12) {
+        callback("", true);
       }
     }
-  }, items1);
+    ref4.current = onScroll;
+  }, items2);
+  const items3 = [tmp24];
+  const layoutEffect1 = animatedStyle.useLayoutEffect(() => {
+    if (0 !== _undefined5.length) {
+      const current = ref3.current;
+      if (current != null) {
+        current.scrollToEnd({ animated: false });
+      }
+    }
+  }, items3);
   if (inActionSheet) {
-    let BottomSheetScrollView = tags(5223).BottomSheetScrollView;
+    let BottomSheetScrollView = tmp2(tmp3[19]).BottomSheetScrollView;
   } else {
-    BottomSheetScrollView = inputUpdate;
+    BottomSheetScrollView = callback;
   }
   if (inActionSheet) {
-    let BottomSheetTextInput = tags(8266).BottomSheetTextInput;
+    let BottomSheetTextInput = tmp2(tmp3[20]).BottomSheetTextInput;
   } else {
-    BottomSheetTextInput = focusOnAdd(8267);
+    BottomSheetTextInput = tmp18(tmp3[21]);
   }
   const result1 = 33 * bound;
-  const tmp7 = focusOnAdd(6724)({ onFocus, onBlur });
-  [tmp23, c17] = autoClearInputOnTagAdd(inputRef.useState(0), 2);
-  callback = inputRef.useCallback((nativeEvent) => {
-    _undefined4(nativeEvent.nativeEvent.layout.width);
+  const tmp22 = sharedValue(animatedStyle.useState(false), 2);
+  [tmp30, c17] = tmp9(obj1.useState(0), 2);
+  const callback1 = obj1.useCallback((nativeEvent) => {
+    _undefined6(nativeEvent.nativeEvent.layout.width);
   }, []);
-  if (null == placeholder) {
-    let intl = tags(1212).intl;
-    placeholder = intl.string(tags(1212).t["5h0QOP"]);
+  if (placeholder == null) {
+    let intl = tmp2(tmp3[22]).intl;
+    placeholder = intl.string(tmp2(tmp3[22]).t["5h0QOP"]);
   }
-  if (null == accessibilityLabel) {
-    const intl2 = tags(1212).intl;
-    accessibilityLabel = intl2.string(tags(1212).t["5h0QOP"]);
+  if (accessibilityLabel == null) {
+    const intl2 = tmp2(tmp3[22]).intl;
+    accessibilityLabel = intl2.string(tmp2(tmp3[22]).t["5h0QOP"]);
   }
-  obj = { horizontal: flag, leadingFade: flag2, onScroll };
-  let obj4 = (function useLeadingFade(leadingFade) {
-    let horizontal;
-    let onScroll;
-    ({ horizontal, onScroll } = leadingFade);
-    horizontal = undefined;
-    let sharedValue;
-    let animatedStyle;
-    let tmp = callback3();
-    const focusOnAdd = tmp;
-    if (horizontal) {
-      horizontal = leadingFade.leadingFade;
+  const tmp33 = callback2();
+  ref = tmp33;
+  let tmp34 = flag;
+  if (flag) {
+    tmp34 = flag2;
+  }
+  ref1 = tmp34;
+  let tmp2Result = tmp2(tmp3[7]);
+  sharedValue = tmp2Result.useSharedValue(false);
+  const items4 = [tmp34, onScroll, sharedValue];
+  callback2 = obj1.useCallback((nativeEvent) => {
+    if (ref1) {
+      const result = sharedValue.set(nativeEvent.nativeEvent.contentOffset.x > 1);
     }
-    let obj = tags(outer1_2[7]);
-    sharedValue = obj.useSharedValue(false);
-    let items = [horizontal, onScroll, sharedValue];
-    const callback = inputRef.useCallback((nativeEvent) => {
-      if (horizontal) {
-        const result = sharedValue.set(nativeEvent.nativeEvent.contentOffset.x > 1);
-      }
-      if (null != onScroll) {
-        onScroll(nativeEvent);
-      }
-    }, items);
-    const fn = function s() {
-      const obj = {};
-      let num = 1;
-      if (sharedValue.get()) {
-        num = 0;
-      }
-      obj.opacity = tags(outer2_2[8]).withSpring(num, tags(outer2_2[9]).springStandard, "animate-always");
-      return obj;
-    };
-    obj = { withSpring: tags(outer1_2[8]).withSpring, scrolled: sharedValue, springStandard: tags(outer1_2[9]).springStandard };
-    fn.__closure = obj;
-    fn.__workletHash = 11561232362008;
-    fn.__initData = c15;
-    animatedStyle = tags(outer1_2[7]).useAnimatedStyle(fn);
-    let items1 = [horizontal, tmp, animatedStyle];
-    let tmp6 = horizontal;
-    const callback1 = inputRef.useCallback((children) => {
-      let tmp = children;
-      if (horizontal) {
-        let obj = { style: tmp.fill, androidRenderingMode: "software" };
-        obj = { style: tmp.mask };
-        obj = { style: tmp.leadingFade };
-        const obj1 = { start: ref, end: closure_12, colors: closure_13, style: absoluteFill.absoluteFill };
-        const items = [focusProps(focusOnAdd(outer2_2[11]), obj1), ];
-        const obj2 = {};
-        const items1 = [tmp.leadingCover, animatedStyle];
-        obj2.style = items1;
-        items[1] = focusProps(focusOnAdd(outer2_2[7]).View, obj2);
-        obj.children = items;
-        const items2 = [callback(inputValueRef, obj), ];
-        const obj3 = { style: tmp.maskRemainder };
-        items2[1] = focusProps(inputValueRef, obj3);
-        obj.children = items2;
-        obj.maskElement = callback(inputValueRef, obj);
-        obj.children = children;
-        tmp = focusProps(focusOnAdd(outer2_2[10]), obj);
-        const tmp5 = focusOnAdd(outer2_2[10]);
-      }
-      return tmp;
-    }, items1);
-    if (!horizontal) {
-      tmp6 = null != onScroll;
+    if (onScroll != null) {
+      tmp3(nativeEvent);
     }
-    obj = {};
-    let tmp8;
-    if (tmp6) {
-      tmp8 = callback;
+  }, items4);
+  tmp2Result = tmp2(tmp3[7]);
+  const fn = function u() {
+    let obj = onScroll(ref1[8]);
+    let num = 1;
+    if (sharedValue.get()) {
+      num = 0;
     }
-    obj.onScroll = tmp8;
-    let num;
-    if (tmp6) {
-      num = 16;
-    }
-    obj.scrollEventThrottle = num;
-    let fill;
-    if (horizontal) {
-      fill = tmp.fill;
-    }
-    obj.scrollerStyle = fill;
-    obj.wrap = callback1;
+    obj = { opacity: obj.withSpring(num, onScroll(ref1[9]).springStandard, "animate-always") };
     return obj;
-  })(obj);
-  obj = { style: items2 };
-  obj1 = { maxHeight: 3 * result1 };
-  items2 = [obj1, obj4.scrollerStyle];
-  const items3 = [tmp.scrollViewContent, ];
+  };
+  obj = { withSpring: tmp2(tmp3[8]).withSpring, scrolled: sharedValue, springStandard: tmp2(tmp3[9]).springStandard };
+  fn.__closure = obj;
+  fn.__workletHash = 11561232362008;
+  fn.__initData = c15;
+  animatedStyle = tmp2Result.useAnimatedStyle(fn);
+  const items5 = [tmp34, tmp33, animatedStyle];
+  let tmp39 = tmp34;
+  const callback3 = obj1.useCallback((arg0) => {
+    let tmp = arg0;
+    if (ref1) {
+      let obj = { style: null, androidRenderingMode: "software", maskElement: null, children: null };
+      obj[0] = ref.fill;
+      obj = { style: null, children: null };
+      obj[0] = ref.mask;
+      obj = { style: null, children: null };
+      obj[0] = ref.leadingFade;
+      const obj1 = { start: null, end: null, colors: null, style: null };
+      obj1[0] = ref3;
+      obj1[1] = c12;
+      obj1[2] = c13;
+      obj1[3] = ref.absoluteFill;
+      const items = [_undefined(ref(ref1[11]), obj1), ];
+      const obj2 = { style: null };
+      const items1 = [ref.leadingCover, animatedStyle];
+      obj2[0] = items1;
+      items[1] = _undefined(ref(ref1[7]).View, obj2);
+      obj[1] = items;
+      const items2 = [_undefined2(ref1, obj), ];
+      const obj3 = { style: null };
+      obj3[0] = ref.maskRemainder;
+      items2[1] = _undefined(ref1, obj3);
+      obj[1] = items2;
+      obj[2] = _undefined2(ref1, obj);
+      obj[3] = arg0;
+      tmp = _undefined(ref(ref1[10]), obj);
+      const tmp5 = ref(ref1[10]);
+    }
+    return tmp;
+  }, items5);
+  if (!tmp34) {
+    tmp39 = null != onScroll;
+  }
+  let tmp40;
+  if (tmp39) {
+    tmp40 = callback2;
+  }
+  obj = { onScroll: tmp40, scrollEventThrottle: null, scrollerStyle: null, wrap: null };
+  let num;
+  if (tmp39) {
+    num = 16;
+  }
+  obj[1] = num;
+  let fill;
+  if (tmp34) {
+    fill = tmp33.fill;
+  }
+  obj[2] = fill;
+  obj[3] = callback3;
+  obj1 = { style: items6, contentContainerStyle: null, ref: null, bounces: false, onScroll: null, onLayout: null, scrollEventThrottle: null, horizontal: null, snapToInterval: null, overScrollMode: "never", keyboardShouldPersistTaps: "handled", children: null };
+  obj2 = { maxHeight: 3 * result1 };
+  items6 = [obj2, obj.scrollerStyle];
+  const items7 = [tmp.scrollViewContent, ];
   let prop;
   if (flag) {
     prop = tmp.horizontalScrollViewContent;
   }
-  items3[1] = prop;
-  obj.contentContainerStyle = items3;
-  obj.ref = ref;
-  obj.bounces = false;
-  obj.onScroll = obj4.onScroll;
-  let tmp32;
+  items7[1] = prop;
+  obj1[1] = items7;
+  obj1[2] = ref3;
+  obj1[4] = obj.onScroll;
+  let tmp44;
   if (flag) {
-    tmp32 = callback;
+    tmp44 = callback1;
   }
-  obj.onLayout = tmp32;
-  obj.scrollEventThrottle = obj4.scrollEventThrottle;
-  obj.horizontal = flag;
-  obj.snapToInterval = result1;
-  obj.overScrollMode = "never";
-  obj.keyboardShouldPersistTaps = "handled";
-  obj2 = {};
-  const items4 = [tmp.inputInner, ];
+  obj1[5] = tmp44;
+  obj1[6] = obj.scrollEventThrottle;
+  obj1[7] = flag;
+  obj1[8] = result1;
+  const items8 = [tmp.inputInner, ];
   let horizontalInputInner = flag;
   if (flag) {
     horizontalInputInner = tmp.horizontalInputInner;
   }
-  items4[1] = horizontalInputInner;
-  obj2.style = items4;
-  const items5 = [
+  obj3 = { style: items8, children: null };
+  items8[1] = horizontalInputInner;
+  const items9 = [
     tags.map((id) => {
-      const tags = id;
+      const onScroll = id;
       let closure_1 = arg1;
-      return focusProps(tags(outer1_2[23]).TagListInputTagComponent, {
+      return _undefined(onScroll(ref1[23]).TagListInputTagComponent, {
         tag: id,
-        selected: id.id === closure_12,
+        selected: id.id === c12,
         onPress(arg0) {
           if ("select" === arg0) {
             if (outer1_12 !== id.id) {
-              outer1_13(tmp6.id);
+              outer1_13(tmp5.id);
             }
             const current = outer1_4.current;
-            if (null != current) {
+            if (current != null) {
               current.focus();
             }
             outer1_14(true);
             const current2 = outer1_4.current;
-            if (null != current2) {
+            if (current2 != null) {
               current2.setSelection(0, 0);
             }
             outer1_7.current = { start: 0, end: 0 };
-          } else if (null != outer1_2) {
-            const tmp3 = outer1_2(closure_1);
+            const tmp9 = outer1_4;
+          } else if (outer1_2 != null) {
+            const tmpResult = tmp(closure_1);
           }
-          return tmp3;
+          return tmpResult;
         },
         start: 0 === arg1,
-        end: arg1 === tags.length - 1
+        end: arg1 === onScroll.length - 1
       }, arg1);
     }),
 
   ];
-  let obj3 = { ref: inputRef, accessibilityHint: accessibilityHint.accessibilityHint, accessibilityRole: "search" };
-  if (tmp4.inputInitializedRef.current) {
-    defaultValue = inputValueRef.current;
+  obj4 = { ref, accessibilityHint: accessibilityHint.accessibilityHint, accessibilityRole: "search", defaultValue: null, style: null, onChangeText: null, onKeyPress: null, onFocus: null, onBlur: null, onPressIn: null, autoCapitalize: "none", autoCorrect: false, "aria-label": null, placeholder: null, placeholderTextColor: null, autoFocus: null, returnKeyType: null, accessibilityLabel: null, caretHidden: null, onSubmitEditing: null, maxFontSizeMultiplier: 2, onSelectionChange: null };
+  if (ref2.current) {
+    defaultValue = ref1.current;
   }
-  obj3.defaultValue = defaultValue;
-  const items6 = [tmp.searchInput, , ];
+  obj4[3] = defaultValue;
+  const items10 = [tmp.searchInput, , ];
   let horizontalSearchInput = flag;
   if (flag) {
     horizontalSearchInput = tmp.horizontalSearchInput;
   }
-  items6[1] = horizontalSearchInput;
-  let tmp36;
+  items10[1] = horizontalSearchInput;
+  let tmp47;
   if (flag) {
-    if (tmp25) {
-      obj4 = { maxWidth: tmp23 - 16 };
-      tmp36 = obj4;
+    if (tmp32) {
+      const obj5 = { maxWidth: null };
+      obj5[0] = tmp30 - 16;
+      tmp47 = obj5;
     }
   }
-  items6[2] = tmp36;
-  obj3.style = items6;
-  obj3.onChangeText = inputUpdate;
-  obj3.onKeyPress = function onKeyPress(nativeEvent) {
-    callback3(false);
-    let tmp3 = 0 === closure_7.current.start;
-    if (tmp3) {
-      tmp3 = 0 === closure_7.current.end;
+  items10[2] = tmp47;
+  obj4[4] = items10;
+  obj4[5] = callback;
+  obj4[6] = function onKeyPress(nativeEvent) {
+    _undefined4(false);
+    let tmp4 = 0 === ref.current.start;
+    if (tmp4) {
+      tmp4 = 0 === tmp3.current.end;
     }
     if ("Backspace" === nativeEvent.nativeEvent.key) {
-      if (null != closure_12) {
-        const findIndexResult = tags.findIndex((id) => id.id === outer1_12);
+      if (null != c12) {
+        const findIndexResult = onScroll.findIndex((id) => id.id === closure_12);
         if (findIndexResult > -1) {
-          if (null != callback) {
-            callback(findIndexResult);
+          if (ref1 != null) {
+            ref1(findIndexResult);
           }
         }
-        callback2(null);
+        _undefined3(null);
       }
     }
     if ("Backspace" === nativeEvent.nativeEvent.key) {
-      if (tmp3) {
-        if (0 !== tags.length) {
-          callback2(tags[tags.length - 1].id);
-          callback3(true);
-          const AccessibilityAnnouncer = tags(outer1_2[24]).AccessibilityAnnouncer;
-          const intl = tags(outer1_2[22]).intl;
-          let obj = { text: tags[tags.length - 1].text };
-          AccessibilityAnnouncer.announce(intl.formatToPlainString(tags(outer1_2[22]).t.QymItZ, obj));
+      if (tmp4) {
+        if (0 !== onScroll.length) {
+          _undefined3(arr[arr.length - 1].id);
+          _undefined4(true);
+          const AccessibilityAnnouncer = onScroll(ref1[24]).AccessibilityAnnouncer;
+          const intl = onScroll(ref1[22]).intl;
+          const obj = { text: null };
+          obj[0] = arr[arr.length - 1].text;
+          AccessibilityAnnouncer.announce(intl.formatToPlainString(onScroll(ref1[22]).t.QymItZ, obj));
         }
       }
     }
-    if (null != closure_12) {
-      callback2(null);
+    if (null != c12) {
+      _undefined3(null);
     } else {
-      let tmp8 = null != closure_7.current;
+      let tmp8 = null != tmp3.current && tmp3.current.start === tmp3.current.end;
       if (tmp8) {
-        tmp8 = closure_7.current.start === closure_7.current.end;
-      }
-      if (tmp8) {
-        tmp8 = closure_7.current.start === inputValueRef.current.length;
+        tmp8 = tmp3.current.start === ref1.current.length;
       }
       if (tmp8) {
         const _setTimeout = setTimeout;
         const timerId = setTimeout(() => {
-          const current = outer1_11.current;
+          const current = ref.current;
           let scrollToEndResult;
-          if (null != current) {
-            const obj = { animated: false };
-            scrollToEndResult = current.scrollToEnd(obj);
+          if (current != null) {
+            scrollToEndResult = current.scrollToEnd({ animated: false });
           }
           return scrollToEndResult;
         }, 10);
       }
     }
   };
-  obj3.onFocus = function onFocus(arg0) {
-    focusProps.onFocus();
-    if (null != _undefined) {
-      _undefined(arg0);
+  obj4[7] = function onFocus(arg0) {
+    _undefined.onFocus();
+    if (c9 != null) {
+      tmp2(arg0);
     }
   };
-  obj3.onBlur = function onBlur(arg0) {
-    focusProps.onBlur();
-    if (null != _undefined2) {
-      _undefined2(arg0);
+  obj4[8] = function onBlur(arg0) {
+    _undefined.onBlur();
+    if (c10 != null) {
+      tmp2(arg0);
     }
   };
-  obj3.onPressIn = function onPressIn() {
-    callback3(false);
-    callback2(null);
+  obj4[9] = function onPressIn() {
+    _undefined4(false);
+    _undefined3(null);
   };
-  obj3.autoCapitalize = "none";
-  obj3.autoCorrect = false;
-  obj3["aria-label"] = accessibilityLabel;
-  let tmp37;
+  obj4[12] = accessibilityLabel;
+  let tmp48;
   if (0 === tags.length) {
-    if (tmp25) {
-      tmp37 = placeholder;
+    if (tmp32) {
+      tmp48 = placeholder;
     }
   }
-  obj3.placeholder = tmp37;
-  obj3.placeholderTextColor = tmp.placeholder.color;
-  obj3.autoFocus = autoFocus;
-  obj3.returnKeyType = returnKeyType;
-  obj3.accessibilityLabel = accessibilityLabel;
-  obj3.caretHidden = tmp10[0];
-  obj3.onSubmitEditing = onSubmitEditing;
-  obj3.maxFontSizeMultiplier = 2;
-  obj3.onSelectionChange = function onSelectionChange(nativeEvent) {
+  obj4[13] = tmp48;
+  obj4[14] = tmp.placeholder.color;
+  obj4[15] = autoFocus;
+  obj4[16] = returnKeyType;
+  obj4[17] = accessibilityLabel;
+  obj4[18] = tmp23;
+  obj4[19] = onSubmitEditing;
+  obj4[21] = function onSelectionChange(nativeEvent) {
     const selection = nativeEvent.nativeEvent.selection;
     closure_7.current = selection;
     return selection;
   };
-  items5[1] = focusProps(BottomSheetTextInput, obj3);
-  obj2.children = items5;
-  obj.children = c9(inputValueRef, obj2);
-  const obj5 = { style: items7 };
-  items7 = [{ minHeight: result, overflow: "hidden" }, style];
-  const tmp22 = autoClearInputOnTagAdd(inputRef.useState(0), 2);
-  const tmp30 = focusProps;
-  const tmp33 = c9;
-  const tmp34 = inputValueRef;
-  const tmp35 = focusProps;
-  const obj6 = { size: "sm", isDisabled: disabled, isFocused: focus.isFocused };
+  items9[1] = c8(BottomSheetTextInput, obj4);
+  obj3[1] = items9;
+  obj1[11] = c9(ref1, obj3);
+  const obj6 = { style: items11, children: null };
+  items11 = [{ minHeight: result, overflow: "hidden" }, style];
+  let tmp42Result = tmp42(BottomSheetScrollView, obj1);
+  const obj7 = { size: "sm", isDisabled: disabled, isFocused, children: null };
   if (null == icon) {
-    const obj7 = { style: tmp.iconLeft, size: "xs", color: "interactive-text-default" };
-    icon = focusProps(tags(8270).MagnifyingGlassIcon, obj7);
+    const obj8 = { style: null, size: "xs", color: "interactive-text-default" };
+    obj8[0] = tmp.iconLeft;
+    icon = tmp42(tmp2(tmp3[26]).MagnifyingGlassIcon, obj8);
   }
-  const items8 = [icon, obj4.wrap(focusProps(BottomSheetScrollView, obj)), ];
+  const items12 = [icon, obj.wrap(tmp42Result), ];
   if (null == footer) {
-    let tmp45 = null;
-    if (null != clearButton) {
-      const obj8 = { style: tmp.iconContainer, children: clearButton };
-      tmp45 = focusProps(inputValueRef, obj8);
+    tmp42Result = null;
+    if (null != inputClearButton) {
+      const obj9 = { style: null, children: null };
+      obj9[0] = tmp.iconContainer;
+      obj9[1] = inputClearButton;
+      tmp42Result = tmp42(tmp46, obj9);
     }
-    footer = tmp45;
+    footer = tmp42Result;
   }
-  items8[2] = footer;
-  obj6.children = items8;
-  obj5.children = c9(tags(6719).InputFieldContainer, obj6);
-  return focusProps(inputValueRef, obj5);
+  items12[2] = footer;
+  obj7[3] = items12;
+  obj6[1] = c9(onScroll(ref1[25]).InputFieldContainer, obj7);
+  return c8(ref1, obj6);
 });
 let result = require("get ActivityIndicator").fileFinishedImporting("design/components/TagListInput/native/TagListInput.native.tsx");
 

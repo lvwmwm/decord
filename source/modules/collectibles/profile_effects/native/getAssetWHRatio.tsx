@@ -1,20 +1,21 @@
-// Module ID: 8039
-// Function ID: 63880
-// Name: getPositiveValue
+// Module ID: 8063
+// Function ID: 8064
+// Name: DEFAULT_PROFILE_EFFECT_WH_RATIO
 // Dependencies: [2]
 // Exports: getAssetWHRatio
 
-// Module 8039 (getPositiveValue)
-function getPositiveValue(height, arg1) {
-  let tmp = height;
-  if (null == height) {
-    tmp = arg1;
-  }
-  return tmp;
-}
+// Module 8063 (DEFAULT_PROFILE_EFFECT_WH_RATIO)
 const result = require("set").fileFinishedImporting("modules/collectibles/profile_effects/native/getAssetWHRatio.tsx");
 
 export const DEFAULT_PROFILE_EFFECT_WH_RATIO = 0.5113636363636364;
 export const getAssetWHRatio = function getAssetWHRatio(width) {
-  return getPositiveValue(width.width, 450) / getPositiveValue(width.height, 880);
+  let num = width.width;
+  if (null == num) {
+    num = 450;
+  }
+  let num3 = width.height;
+  if (null == num3) {
+    num3 = 880;
+  }
+  return num / num3;
 };

@@ -1,157 +1,156 @@
-// Module ID: 10113
-// Function ID: 78213
+// Module ID: 10134
+// Function ID: 10135
 // Name: items
-// Dependencies: [31, 5679, 4202, 5878, 4188, 1850, 653, 1882, 566, 7959, 686, 5503, 2]
+// Dependencies: [19, 5697, 4226, 5896, 4212, 1874, 676, 1906, 589, 7984, 709, 5521, 2]
 // Exports: default
 
-// Module 10113 (items)
-import result from "result";
-import { useQueryState } from "_isNativeReflectConstruct";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_6 from "_isNativeReflectConstruct";
-import _callSuper from "_callSuper";
-import closure_8 from "_isNativeReflectConstruct";
+// Module 10134 (items)
+import noop from "noop";
+import { useQueryState } from "getIndexKey";
+import addApplication from "addApplication";
+import createUserWidgetFromServer from "createUserWidgetFromServer";
+import createExecutable from "createExecutable";
+import mergeGuildAvatar from "mergeGuildAvatar";
 import { EMPTY_STRING_SNOWFLAKE_ID } from "ME";
 
 const require = arg1;
 let items = [require("PermissionOverwriteType").ApplicationCommandType.PRIMARY_ENTRY_POINT, require("PermissionOverwriteType").ApplicationCommandType.CHAT, require("PermissionOverwriteType").ApplicationCommandType.MESSAGE, require("PermissionOverwriteType").ApplicationCommandType.USER];
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/app_dms/useAppDMChatInputState.tsx");
+const result = require("addApplication").fileFinishedImporting("modules/app_dms/useAppDMChatInputState.tsx");
 
 export default function useAppDMChatInputState(context) {
-  let dependencyMap;
+  let channel;
+  let memo;
+  let stateFromStores;
   let application;
-  const channel = context.context.channel;
+  channel = context.context.channel;
+  let obj = application;
   const items = [channel];
-  const memo = application.useMemo(() => {
+  memo = application.useMemo(() => {
     if (null != channel) {
-      if (true === channel.isDM()) {
-        const user = outer1_8.getUser(channel.getRecipientId());
-        let tmp5 = null;
+      if (true === obj.isDM()) {
+        const user = outer1_8.getUser(obj.getRecipientId());
+        let tmp3 = null;
         if (undefined !== user) {
-          tmp5 = null;
+          tmp3 = null;
           if (true === user.bot) {
-            tmp5 = user;
+            tmp3 = user;
           }
         }
-        return tmp5;
+        return tmp3;
       }
     }
     return null;
   }, items);
-  let obj = channel(566);
-  const items1 = [_isNativeReflectConstruct];
-  const stateFromStores = obj.useStateFromStores(items1, () => {
+  let obj1 = channel(stateFromStores[8]);
+  const items1 = [addApplication];
+  stateFromStores = obj1.useStateFromStores(items1, () => {
     let id;
-    if (null != memo) {
+    if (memo != null) {
       id = memo.id;
     }
     return outer1_5.getAppIdForBotUserId(id);
   });
-  let obj1 = channel(566);
-  const items2 = [closure_6];
-  const stateFromStores1 = obj1.useStateFromStores(items2, () => {
-    let tmp;
+  const items2 = [createUserWidgetFromServer];
+  const stateFromStores1 = channel(stateFromStores[8]).useStateFromStores(items2, () => {
+    let tmp2;
     if (null !== memo) {
       let id;
-      if (null != memo) {
-        id = memo.id;
+      if (tmp != null) {
+        id = tmp.id;
       }
       const userProfile = outer1_6.getUserProfile(id);
       let application;
-      if (null != userProfile) {
+      if (userProfile != null) {
         application = userProfile.application;
       }
-      tmp = application;
+      tmp2 = application;
     }
-    return tmp;
+    return tmp2;
   });
-  let tmp4 = stateFromStores;
-  if (null == stateFromStores) {
+  if (stateFromStores == null) {
     let id;
-    if (null != stateFromStores1) {
+    if (stateFromStores1 != null) {
       id = stateFromStores1.id;
     }
-    tmp4 = id;
+    stateFromStores = id;
   }
-  dependencyMap = tmp4;
-  const items3 = [memo, tmp4];
-  const effect = application.useEffect(() => {
-    if (null == _undefined) {
+  const items3 = [memo, stateFromStores];
+  const effect = obj.useEffect(() => {
+    if (null == stateFromStores) {
       let id;
-      if (null != memo) {
+      if (memo != null) {
         id = memo.id;
       }
-      if (null == id) {
+      if (id == null) {
         id = outer1_9;
       }
-      const obj = { withMutualGuilds: true };
-      memo(_undefined[9])(id, undefined, obj);
-      const tmp3 = memo(_undefined[9]);
+      memo(stateFromStores[9])(id, undefined, { withMutualGuilds: true });
+      const tmp3 = memo(stateFromStores[9]);
     }
   }, items3);
   let id1;
-  if (null != memo) {
+  if (memo != null) {
     id1 = memo.id;
   }
   const items4 = [id1];
-  const effect1 = application.useEffect(() => {
+  const effect1 = obj.useEffect(() => {
     let id;
-    if (null != memo) {
-      id = memo.id;
+    if (memo != null) {
+      id = tmp.id;
     }
     if (null != id) {
-      let obj = memo(_undefined[10]);
-      obj = { type: "APP_DM_OPEN", botUserId: memo.id };
+      let obj = memo(stateFromStores[10]);
+      obj = { type: "APP_DM_OPEN", botUserId: null };
+      obj[1] = tmp.id;
       obj.dispatch(obj);
     }
   }, items4);
   obj = { commandTypes: items };
-  obj = { applicationId: tmp4 };
+  obj = { applicationId: stateFromStores, allowFetch: null, allowApplicationState: true };
   let id2;
-  if (null != memo) {
+  if (memo != null) {
     id2 = memo.id;
   }
-  obj.allowFetch = null != id2;
-  obj.allowApplicationState = true;
+  obj[1] = null != id2;
   const descriptors = useQueryState({ channel, type: "channel" }, obj, obj).descriptors;
   const found = descriptors.find((application) => {
     application = application.application;
     let id;
-    if (null != application) {
+    if (application != null) {
       id = application.id;
     }
-    return id === c2;
+    return id === stateFromStores;
   });
   application = undefined;
-  if (null != found) {
+  if (found != null) {
     application = found.application;
   }
   const items5 = [application];
-  const memo1 = application.useMemo(() => {
+  let memo1 = obj.useMemo(() => {
     let fromServer;
     if (null != application) {
-      fromServer = outer1_7.createFromServer(application);
+      fromServer = outer1_7.createFromServer(tmp);
     }
     return fromServer;
   }, items5);
-  let tmp15;
+  const obj3 = channel(stateFromStores[8]);
+  const tmp10 = useQueryState;
+  let tmp2 = channel;
+  let tmp3 = stateFromStores;
   if (null == memo1) {
-    tmp15 = tmp4;
+    const tmp15 = stateFromStores;
   }
-  let getOrFetchApplication = channel(5503).useGetOrFetchApplication(tmp15);
-  obj1 = {};
-  if (null != memo1) {
-    getOrFetchApplication = memo1;
+  if (memo1 == null) {
+    memo1 = tmp2Result.useGetOrFetchApplication(tmp15);
   }
-  let tmp17;
-  if (null != getOrFetchApplication) {
-    tmp17 = getOrFetchApplication;
+  obj1 = { application: memo1, isAppDM: null };
+  let flag;
+  if (memo != null) {
+    flag = memo.bot;
   }
-  obj1.application = tmp17;
-  let bot;
-  if (null != memo) {
-    bot = memo.bot;
+  if (flag == null) {
+    flag = false;
   }
-  obj1.isAppDM = null != bot && bot;
+  obj1[1] = flag;
   return obj1;
 };

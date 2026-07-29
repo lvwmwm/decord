@@ -1,29 +1,31 @@
-// Module ID: 15833
-// Function ID: 121940
+// Module ID: 15868
+// Function ID: 15869
 // Name: renderActivityOrPIP
-// Dependencies: [31, 33, 15834, 15838, 15841, 15807, 15832, 2]
+// Dependencies: [19, 21, 15869, 15873, 15876, 15842, 15867, 2]
 // Exports: default
 
-// Module 15833 (renderActivityOrPIP)
-import result from "result";
+// Module 15868 (renderActivityOrPIP)
+import noop from "noop";
 import { jsx } from "jsxProd";
 
 const require = arg1;
 function renderActivityOrPIP(arg0, arg1, transitionState, transitionCleanUp) {
   if ("pip" === arg1) {
-    let tmp4 = 15834;
+    let tmp4 = 15869;
   } else {
-    tmp4 = 15838;
+    tmp4 = 15873;
   }
   return jsx(importDefault(tmp4), { transitionState, transitionCleanUp }, arg0);
 }
-const result = require("module_15834").fileFinishedImporting("modules/frames/panel/native/FramePanelUI.tsx");
+const result = require("module_15869").fileFinishedImporting("modules/frames/panel/native/FramePanelUI.tsx");
 
 export default function FramePanelUI() {
-  const callback = React.useCallback(() => outer1_4(outer1_1(outer1_2[4]), {}), []);
+  const callback = React.useCallback(() => callback2(callback(table[4]), {}), []);
   const items = [callback];
   return React.useMemo(() => {
-    const obj = { renderActivityOrPIP: outer1_5, context: outer1_1(outer1_2[6]), renderActivityPanelSystemUIManager: callback };
+    const obj = { renderActivityOrPIP: outer1_5, context: null, renderActivityPanelSystemUIManager: null };
+    obj[1] = outer1_1(outer1_2[6]);
+    obj[2] = callback;
     return outer1_4(callback(outer1_2[5]).BaseActivityPanelUI, obj);
   }, items);
 };

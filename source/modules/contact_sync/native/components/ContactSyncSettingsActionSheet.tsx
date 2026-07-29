@@ -1,40 +1,40 @@
-// Module ID: 11753
-// Function ID: 91144
+// Module ID: 11778
+// Function ID: 11779
 // Name: ContactSyncSettingsActionSheet
-// Dependencies: [31, 27, 11743, 653, 33, 4165, 689, 7611, 1212, 4161, 11746, 5533, 2]
+// Dependencies: [19, 17, 11768, 676, 21, 4189, 712, 7634, 1236, 4185, 11771, 5551, 2]
 // Exports: default
 
-// Module 11753 (ContactSyncSettingsActionSheet)
-import "result";
+// Module 11778 (ContactSyncSettingsActionSheet)
+import "noop";
 import { View } from "get ActivityIndicator";
-import initialValues from "initialValues";
+import ContactSyncModes from "ContactSyncModes";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_3;
-let closure_4;
-let closure_5;
+let c3;
+let c4;
+let c5;
 let closure_6;
-let closure_7;
-let closure_8;
+let error;
+let metroImportAll;
 const require = arg1;
-({ setAllowEmail: closure_3, setAllowPhone: closure_4, setAllowSync: closure_5, useContactSyncModalStore: closure_6 } = initialValues);
-({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW, paddingBottom: 16 };
-_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
-let obj1 = { marginTop: 8, paddingVertical: 16, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SURFACE_HIGH };
-_createForOfIteratorHelperLoose.formRow = obj1;
-_createForOfIteratorHelperLoose.syncRow = { marginTop: 24 };
-_createForOfIteratorHelperLoose.formText = { fontFamily: require("ME").Fonts.PRIMARY_SEMIBOLD, color: require("_createForOfIteratorHelperLoose").colors.INTERACTIVE_TEXT_ACTIVE };
-let obj3 = { marginTop: 8, fontSize: 14, lineHeight: 18, paddingHorizontal: 16, color: require("_createForOfIteratorHelperLoose").colors.TEXT_SUBTLE };
-_createForOfIteratorHelperLoose.info = obj3;
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-let obj2 = { fontFamily: require("ME").Fonts.PRIMARY_SEMIBOLD, color: require("_createForOfIteratorHelperLoose").colors.INTERACTIVE_TEXT_ACTIVE };
-const result = require("initialValues").fileFinishedImporting("modules/contact_sync/native/components/ContactSyncSettingsActionSheet.tsx");
+({ setAllowEmail: c3, setAllowPhone: c4, setAllowSync: c5, useContactSyncModalStore: closure_6 } = ContactSyncModes);
+({ jsx: error, jsxs: metroImportAll } = jsxProd);
+createCacheKey = { container: null, formRow: null, syncRow: null, formText: null, info: null };
+createCacheKey = { backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW, paddingBottom: 16 };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { marginTop: 8, paddingVertical: 16, backgroundColor: require("Themes").colors.BACKGROUND_SURFACE_HIGH };
+createCacheKey[2] = { marginTop: 24 };
+let obj1 = { marginTop: 8, paddingVertical: 16, backgroundColor: require("Themes").colors.BACKGROUND_SURFACE_HIGH };
+createCacheKey[3] = { fontFamily: require("ME").Fonts.PRIMARY_SEMIBOLD, color: require("Themes").colors.INTERACTIVE_TEXT_ACTIVE };
+let obj2 = { fontFamily: require("ME").Fonts.PRIMARY_SEMIBOLD, color: require("Themes").colors.INTERACTIVE_TEXT_ACTIVE };
+createCacheKey[4] = { marginTop: 8, fontSize: 14, lineHeight: 18, paddingHorizontal: 16, color: require("Themes").colors.TEXT_SUBTLE };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let obj3 = { marginTop: 8, fontSize: 14, lineHeight: 18, paddingHorizontal: 16, color: require("Themes").colors.TEXT_SUBTLE };
+const result = require("ContactSyncModes").fileFinishedImporting("modules/contact_sync/native/components/ContactSyncSettingsActionSheet.tsx");
 
 export default function ContactSyncSettingsActionSheet() {
-  const tmp = _createForOfIteratorHelperLoose();
+  const tmp = createCacheKey();
   const tmp2 = callback();
   const allowPhone = tmp2.allowPhone;
   const allowEmail = tmp2.allowEmail;
@@ -43,71 +43,71 @@ export default function ContactSyncSettingsActionSheet() {
     tmp3 = allowEmail;
   }
   const View = tmp3;
-  let obj = { style: tmp.container };
-  obj = { DEPRECATED_style: items };
+  let obj = { style: tmp.container, children: null };
+  obj = { DEPRECATED_style: items, label: null, onPress: null, trailing: null };
   items = [, ];
   ({ formRow: arr[0], syncRow: arr[1] } = tmp);
-  obj = { style: tmp.formText };
+  obj = { style: tmp.formText, text: null };
   const intl = allowPhone(allowEmail[8]).intl;
-  obj.text = intl.string(allowPhone(allowEmail[8]).t.a5QL24);
-  obj.label = callback2(allowPhone(allowEmail[7]).FormRow.Label, obj);
-  obj.onPress = function onPress() {
+  obj[1] = intl.string(allowPhone(allowEmail[8]).t.a5QL24);
+  obj[1] = callback2(allowPhone(allowEmail[7]).FormRow.Label, obj);
+  obj[2] = function onPress() {
     outer1_5(!closure_2);
   };
-  const obj1 = { selected: tmp3 };
-  obj.trailing = callback2(allowPhone(allowEmail[7]).FormRow.Checkbox, obj1);
+  obj[3] = callback2(allowPhone(allowEmail[7]).FormRow.Checkbox, { selected: tmp3 });
   const items1 = [callback2(allowPhone(allowEmail[7]).FormRow, obj), , , , , , ];
-  const obj2 = { style: tmp.info };
+  const obj1 = { style: tmp.info, children: null };
   const intl2 = allowPhone(allowEmail[8]).intl;
-  obj2.children = intl2.string(allowPhone(allowEmail[8]).t.pfjsB5);
-  items1[1] = callback2(allowPhone(allowEmail[7]).FormText, obj2);
-  const obj3 = { style: tmp.info };
+  obj1[1] = intl2.string(allowPhone(allowEmail[8]).t.pfjsB5);
+  items1[1] = callback2(allowPhone(allowEmail[7]).FormText, obj1);
+  const obj2 = { style: tmp.info, children: null };
   const intl3 = allowPhone(allowEmail[8]).intl;
-  obj3.children = intl3.string(allowPhone(allowEmail[8]).t.cW1nr9);
-  items1[2] = callback2(allowPhone(allowEmail[7]).FormText, obj3);
-  const obj4 = { style: tmp.info };
+  obj2[1] = intl3.string(allowPhone(allowEmail[8]).t.cW1nr9);
+  items1[2] = callback2(allowPhone(allowEmail[7]).FormText, obj2);
+  const obj3 = { style: tmp.info, children: null };
   const intl4 = allowPhone(allowEmail[8]).intl;
-  obj4.children = intl4.format(allowPhone(allowEmail[8]).t.eswIfi, {
-    learnMoreHook(children) {
-      const obj = { onPress: allowPhone(allowEmail[10]).handleOpenLearnMoreLink, variant: "text-sm/medium", color: "text-link", children };
-      return outer1_7(allowPhone(allowEmail[9]).Text, obj, arg1);
+  obj3[1] = intl4.format(allowPhone(allowEmail[8]).t.eswIfi, {
+    learnMoreHook(arg0, arg1) {
+      const obj = { onPress: null, variant: "text-sm/medium", color: "text-link", children: null };
+      obj[0] = allowPhone(allowEmail[10]).handleOpenLearnMoreLink;
+      obj[3] = arg0;
+      return callback(allowPhone(allowEmail[9]).Text, obj, arg1);
     }
   });
-  items1[3] = callback2(allowPhone(allowEmail[7]).FormText, obj4);
-  const obj6 = {};
+  items1[3] = callback2(allowPhone(allowEmail[7]).FormText, obj3);
+  const obj5 = { title: null, thinTitle: true };
   const intl5 = allowPhone(allowEmail[8]).intl;
-  obj6.title = intl5.string(allowPhone(allowEmail[8]).t["0t2wRW"]);
-  obj6.thinTitle = true;
-  items1[4] = callback2(allowPhone(allowEmail[7]).FormTitle, obj6);
-  const obj7 = { DEPRECATED_style: tmp.formRow };
-  const obj8 = { style: tmp.formText };
+  obj5[0] = intl5.string(allowPhone(allowEmail[8]).t["0t2wRW"]);
+  items1[4] = callback2(allowPhone(allowEmail[7]).FormTitle, obj5);
+  const obj6 = { DEPRECATED_style: tmp.formRow, label: null, subLabel: null, onPress: null, trailing: null };
+  const obj7 = { style: tmp.formText, text: null };
   const intl6 = allowPhone(allowEmail[8]).intl;
-  obj8.text = intl6.string(allowPhone(allowEmail[8]).t["eJnn0+"]);
-  obj7.label = callback2(allowPhone(allowEmail[7]).FormRow.Label, obj8);
-  const obj9 = { variant: "text-sm/medium", color: "text-default" };
+  obj7[1] = intl6.string(allowPhone(allowEmail[8]).t["eJnn0+"]);
+  obj6[1] = callback2(allowPhone(allowEmail[7]).FormRow.Label, obj7);
+  const obj8 = { variant: "text-sm/medium", color: "text-default", children: null };
   const intl7 = allowPhone(allowEmail[8]).intl;
-  obj9.children = intl7.string(allowPhone(allowEmail[8]).t.X7pIKN);
-  obj7.subLabel = callback2(allowPhone(allowEmail[9]).Text, obj9);
-  obj7.onPress = function onPress() {
+  obj8[2] = intl7.string(allowPhone(allowEmail[8]).t.X7pIKN);
+  obj6[2] = callback2(allowPhone(allowEmail[9]).Text, obj8);
+  obj6[3] = function onPress() {
     outer1_4(!allowPhone);
   };
-  obj7.trailing = callback2(allowPhone(allowEmail[7]).FormRow.Checkbox, { selected: allowPhone });
-  items1[5] = callback2(allowPhone(allowEmail[7]).FormRow, obj7);
-  const obj10 = { DEPRECATED_style: tmp.formRow };
-  const obj11 = { style: tmp.formText };
+  obj6[4] = callback2(allowPhone(allowEmail[7]).FormRow.Checkbox, { selected: allowPhone });
+  items1[5] = callback2(allowPhone(allowEmail[7]).FormRow, obj6);
+  const obj9 = { DEPRECATED_style: tmp.formRow, label: null, subLabel: null, onPress: null, trailing: null };
+  const obj10 = { style: tmp.formText, text: null };
   const intl8 = allowPhone(allowEmail[8]).intl;
-  obj11.text = intl8.string(allowPhone(allowEmail[8]).t.dI4d4S);
-  obj10.label = callback2(allowPhone(allowEmail[7]).FormRow.Label, obj11);
-  const obj12 = { variant: "text-sm/medium", color: "text-default" };
+  obj10[1] = intl8.string(allowPhone(allowEmail[8]).t.dI4d4S);
+  obj9[1] = callback2(allowPhone(allowEmail[7]).FormRow.Label, obj10);
+  const obj11 = { variant: "text-sm/medium", color: "text-default", children: null };
   const intl9 = allowPhone(allowEmail[8]).intl;
-  obj12.children = intl9.string(allowPhone(allowEmail[8]).t.ilGsHE);
-  obj10.subLabel = callback2(allowPhone(allowEmail[9]).Text, obj12);
-  obj10.onPress = function onPress() {
+  obj11[2] = intl9.string(allowPhone(allowEmail[8]).t.ilGsHE);
+  obj9[2] = callback2(allowPhone(allowEmail[9]).Text, obj11);
+  obj9[3] = function onPress() {
     outer1_3(!allowEmail);
   };
-  obj10.trailing = callback2(allowPhone(allowEmail[7]).FormRow.Checkbox, { selected: allowEmail });
-  items1[6] = callback2(allowPhone(allowEmail[7]).FormRow, obj10);
-  obj.children = items1;
+  obj9[4] = callback2(allowPhone(allowEmail[7]).FormRow.Checkbox, { selected: allowEmail });
+  items1[6] = callback2(allowPhone(allowEmail[7]).FormRow, obj9);
+  obj[1] = items1;
   const children = callback3(View, obj);
   return callback2(allowPhone(allowEmail[11]).ActionSheet, { startExpanded: true, children });
 };

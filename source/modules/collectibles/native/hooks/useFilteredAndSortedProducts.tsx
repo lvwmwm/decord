@@ -1,12 +1,12 @@
-// Module ID: 14081
-// Function ID: 107602
+// Module ID: 14103
+// Function ID: 14104
 // Name: useFilteredAndSortedProducts
-// Dependencies: [31, 1850, 655, 14082, 14083, 14084, 566, 3811, 5791, 2]
+// Dependencies: [19, 1874, 678, 14104, 14105, 14106, 589, 3835, 5809, 2]
 // Exports: useFilteredAndSortedProducts
 
-// Module 14081 (useFilteredAndSortedProducts)
-import result from "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 14103 (useFilteredAndSortedProducts)
+import noop from "noop";
+import mergeGuildAvatar from "mergeGuildAvatar";
 import { CollectiblesMobileShopScreen as closure_5 } from "items";
 
 const require = arg1;
@@ -14,46 +14,57 @@ const result = require("items").fileFinishedImporting("modules/collectibles/nati
 
 export const useFilteredAndSortedProducts = function useFilteredAndSortedProducts(products) {
   products = products.products;
-  let maxProducts = products.maxProducts;
+  let _require = products;
+  const maxProducts = products.maxProducts;
+  let importDefault = maxProducts;
   const bypassAndroidUnsyncedFilter = products.bypassAndroidUnsyncedFilter;
-  const badBundleFilter = products(bypassAndroidUnsyncedFilter[3]).useBadBundleFilter();
-  let obj = products(bypassAndroidUnsyncedFilter[3]);
-  const androidUnsyncedFilter = products(bypassAndroidUnsyncedFilter[4]).useAndroidUnsyncedFilter();
-  const tmp3 = (function usePriceFilter(screen) {
-    const products = tmp;
-    const items = [androidUnsyncedFilter];
-    const stateFromStores = products(bypassAndroidUnsyncedFilter[6]).useStateFromStores(items, () => androidUnsyncedFilter.getCurrentUser());
-    let obj = products(bypassAndroidUnsyncedFilter[6]);
-    const canUseShopDiscountsResult = maxProducts(bypassAndroidUnsyncedFilter[7]).canUseShopDiscounts(stateFromStores);
-    maxProducts = canUseShopDiscountsResult;
-    const items1 = [screen === tmp3.ORBS, canUseShopDiscountsResult];
-    return badBundleFilter.useCallback((arr) => {
-      let found = arr;
-      if (closure_0) {
-        found = arr.filter((product) => {
-          let obj = products(bypassAndroidUnsyncedFilter[8]);
-          obj = { product, hasShopDiscount: outer1_1 };
-          return null != obj.getProductOrbPrice(obj);
-        });
-      }
-      return found;
-    }, items1);
-  })(products.screen);
-  let closure_5 = tmp3;
-  let items = [badBundleFilter, androidUnsyncedFilter, products, bypassAndroidUnsyncedFilter, tmp3];
+  let badBundleFilter;
+  let androidUnsyncedFilter;
+  let callback;
+  let purchasedProductsSort;
+  badBundleFilter = _require(bypassAndroidUnsyncedFilter[3]).useBadBundleFilter();
+  let obj = _require(bypassAndroidUnsyncedFilter[3]);
+  androidUnsyncedFilter = _require(bypassAndroidUnsyncedFilter[4]).useAndroidUnsyncedFilter();
+  _require = undefined;
+  importDefault = undefined;
+  _require = tmp3;
+  const obj2 = _require(bypassAndroidUnsyncedFilter[4]);
+  let items = [androidUnsyncedFilter];
+  const stateFromStores = _require(bypassAndroidUnsyncedFilter[6]).useStateFromStores(items, () => androidUnsyncedFilter.getCurrentUser());
+  const obj3 = _require(bypassAndroidUnsyncedFilter[6]);
+  const canUseShopDiscountsResult = importDefault(bypassAndroidUnsyncedFilter[7]).canUseShopDiscounts(stateFromStores);
+  importDefault = canUseShopDiscountsResult;
+  const items1 = [products.screen === callback.ORBS, canUseShopDiscountsResult];
+  callback = badBundleFilter.useCallback((arr) => {
+    let found = arr;
+    if (c0) {
+      found = arr.filter((product) => {
+        let obj = outer1_0(outer1_2[8]);
+        obj = { product, hasShopDiscount: closure_1 };
+        return null != obj.getProductOrbPrice(obj);
+      });
+    }
+    return found;
+  }, items1);
+  const items2 = [badBundleFilter, androidUnsyncedFilter, products, bypassAndroidUnsyncedFilter, callback];
   const memo = badBundleFilter.useMemo(() => {
-    const items = [bypassAndroidUnsyncedFilter ? ((arg0) => arg0) : androidUnsyncedFilter, badBundleFilter, closure_5];
-    return items.reduce((arg0, arg1) => arg1(arg0), products);
-  }, items);
-  const obj2 = products(bypassAndroidUnsyncedFilter[4]);
-  const purchasedProductsSort = products(bypassAndroidUnsyncedFilter[5]).usePurchasedProductsSort(memo);
-  let items1 = [purchasedProductsSort, maxProducts];
+    if (bypassAndroidUnsyncedFilter) {
+      let fn = (arg0) => arg0;
+    } else {
+      fn = androidUnsyncedFilter;
+    }
+    const items = [fn, badBundleFilter, callback];
+    return items.reduce((arg0, arg1) => arg1(arg0), c0);
+  }, items2);
+  const obj4 = importDefault(bypassAndroidUnsyncedFilter[7]);
+  purchasedProductsSort = _require(bypassAndroidUnsyncedFilter[5]).usePurchasedProductsSort(memo);
+  const items3 = [purchasedProductsSort, maxProducts];
   return badBundleFilter.useMemo(() => {
-    if (null != maxProducts) {
-      let substr = purchasedProductsSort.slice(0, maxProducts);
+    if (null != c1) {
+      let substr = purchasedProductsSort.slice(0, tmp);
     } else {
       substr = purchasedProductsSort;
     }
     return substr;
-  }, items1);
+  }, items3);
 };

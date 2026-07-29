@@ -1,40 +1,52 @@
-// Module ID: 7752
-// Function ID: 61711
-// Name: isCreatorMonetizationEnabledGuild
-// Dependencies: [1838, 653, 566, 2]
-// Exports: default
+// Module ID: 7775
+// Function ID: 7776
+// Name: useIsCreatorMonetizationEnabledGuild
+// Dependencies: [1862, 676, 589, 2]
+// Exports: default, isCreatorMonetizationEnabledGuild
 
-// Module 7752 (isCreatorMonetizationEnabledGuild)
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+// Module 7775 (useIsCreatorMonetizationEnabledGuild)
+import createGuildRecordFromRust from "createGuildRecordFromRust";
 import { GuildFeatures } from "ME";
 
 const require = arg1;
-function isCreatorMonetizationEnabledGuild(guild) {
-  const features = guild.features;
-  let tmp = !features.has(GuildFeatures.CREATOR_MONETIZABLE_DISABLED);
-  if (tmp) {
-    const features2 = guild.features;
-    let hasItem = features2.has(GuildFeatures.CREATOR_MONETIZABLE);
-    if (!hasItem) {
-      const features3 = guild.features;
-      hasItem = features3.has(GuildFeatures.CREATOR_MONETIZABLE_PROVISIONAL);
-    }
-    tmp = hasItem;
-  }
-  return tmp;
-}
 const result = require("initialize").fileFinishedImporting("modules/creator_monetization_eligibility/useIsCreatorMonetizationEnabledGuild.tsx");
 
 export default function useIsCreatorMonetizationEnabledGuild(arg0) {
   const _require = arg0;
-  const items = [_createForOfIteratorHelperLoose];
-  return _require(566).useStateFromStores(items, () => {
+  const items = [createGuildRecordFromRust];
+  return _require(589).useStateFromStores(items, () => {
     const guild = outer1_2.getGuild(closure_0);
     let tmp2 = null != guild;
     if (tmp2) {
-      tmp2 = outer1_4(guild);
+      const features = guild.features;
+      const hasItem = features.has(outer1_3.CREATOR_MONETIZABLE_DISABLED);
+      let tmp5 = !hasItem;
+      if (!hasItem) {
+        const features2 = guild.features;
+        let hasItem1 = features2.has(tmp3.CREATOR_MONETIZABLE);
+        if (!hasItem1) {
+          const features3 = guild.features;
+          hasItem1 = features3.has(tmp3.CREATOR_MONETIZABLE_PROVISIONAL);
+        }
+        tmp5 = hasItem1;
+      }
+      tmp2 = tmp5;
     }
     return tmp2;
   });
 };
-export { isCreatorMonetizationEnabledGuild };
+export const isCreatorMonetizationEnabledGuild = function isCreatorMonetizationEnabledGuild(guild) {
+  const features = guild.features;
+  const hasItem = features.has(GuildFeatures.CREATOR_MONETIZABLE_DISABLED);
+  let tmp3 = !hasItem;
+  if (!hasItem) {
+    const features2 = guild.features;
+    let hasItem1 = features2.has(tmp.CREATOR_MONETIZABLE);
+    if (!hasItem1) {
+      const features3 = guild.features;
+      hasItem1 = features3.has(tmp.CREATOR_MONETIZABLE_PROVISIONAL);
+    }
+    tmp3 = hasItem1;
+  }
+  return tmp3;
+};

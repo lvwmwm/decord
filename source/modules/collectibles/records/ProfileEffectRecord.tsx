@@ -1,33 +1,41 @@
-// Module ID: 5786
-// Function ID: 50547
-// Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 102, 18, 1876, 1877, 2]
+// Module ID: 5804
+// Function ID: 5805
+// Name: fromServer
+// Dependencies: [1900, 1901, 2]
 // Exports: isProfileEffectRecord
 
-// Module 5786 (_isNativeReflectConstruct)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import CollectiblesItemType from "CollectiblesItemType";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _get from "_get";
-import _inherits from "_inherits";
-import tmp2 from "_isNativeReflectConstruct";
+// Module 5804 (fromServer)
+import "fromServer";
 
 const require = arg1;
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
-  }
-  const result = _isNativeReflectConstruct();
+let prototype;
+prototype = function ProfileEffectRecord(arg0) {
+  const tmp2 = new prototype(arg0, new.target, new.target, tmp);
+  // ThrowIfThisInitialized (0x7c)
+  tmp2.type = require(1901) /* CollectiblesItemType */.CollectiblesItemType.PROFILE_EFFECT;
+  ({ title: tmp2.title, description: tmp2.description, accessibilityLabel: tmp2.accessibilityLabel, reducedMotionSrc: tmp2.reducedMotionSrc, thumbnailPreviewSrc: tmp2.thumbnailPreviewSrc, effects: tmp2.effects, animationType: tmp2.animationType, staticFrameSrc: tmp2.staticFrameSrc } = arg0);
+  return tmp2;
+}.prototype;
+class prototype extends tmp2 {
 }
-let closure_8 = tmp2;
-let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/collectibles/records/ProfileEffectRecord.tsx");
+prototype["fromServer"] = function fromServer(arg0) {
+  const obj = {};
+  let tmp = prototype;
+  const merged = Object.assign(super.fromServer(arg0));
+  const merged1 = Object.assign(arg0);
+  if (typeof prototype !== "find") {
+    HermesBuiltin.throwTypeError();
+  }
+  tmp = new tmp(obj, arg0, this, merged);
+  // ThrowIfThisInitialized (0x7c)
+  tmp.type = require(1901) /* CollectiblesItemType */.CollectiblesItemType.PROFILE_EFFECT;
+  ({ title: tmp4.title, description: tmp4.description, accessibilityLabel: tmp4.accessibilityLabel, reducedMotionSrc: tmp4.reducedMotionSrc, thumbnailPreviewSrc: tmp4.thumbnailPreviewSrc, effects: tmp4.effects, animationType: tmp4.animationType, staticFrameSrc: tmp4.staticFrameSrc } = obj);
+  return tmp;
+};
+const result = require("set").fileFinishedImporting("modules/collectibles/records/ProfileEffectRecord.tsx");
 
-export default tmp2;
+export default prototype;
 export const RestartMethod = { FromLoop: "fromLoop", FromStart: "fromStart" };
 export const isProfileEffectRecord = function isProfileEffectRecord(first) {
-  return first instanceof closure_8;
+  return first instanceof prototype;
 };

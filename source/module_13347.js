@@ -1,17 +1,6 @@
 // Module ID: 13347
-// Function ID: 102304
-// Dependencies: [13343]
+// Function ID: 13348
+// Dependencies: []
 
 // Module 13347
-
-export default !require("module_13343")(() => {
-  const fn = () => {
-
-  };
-  const bindResult = fn.bind();
-  let hasOwnPropertyResult = "function" !== typeof bindResult;
-  if (!hasOwnPropertyResult) {
-    hasOwnPropertyResult = bindResult.hasOwnProperty("prototype");
-  }
-  return hasOwnPropertyResult;
-});
+arg5.collations = ["big5han", "compat", "dict", "direct", "ducet", "emoji", "eor", "gb2312", "phonebk", "phonetic", "pinyin", "reformed", "search", "searchjl", "standard", "stroke", "trad", "unihan", "zhuyin"];

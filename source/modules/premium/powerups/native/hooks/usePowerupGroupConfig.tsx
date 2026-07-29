@@ -1,12 +1,12 @@
-// Module ID: 11616
-// Function ID: 90172
+// Module ID: 11640
+// Function ID: 11641
 // Name: usePowerupGroupConfig
-// Dependencies: [31, 1838, 566, 7917, 1212, 2231, 11617, 11618, 1327, 2]
+// Dependencies: [19, 1862, 589, 7942, 1236, 2255, 11641, 11642, 1351, 2]
 // Exports: default
 
-// Module 11616 (usePowerupGroupConfig)
-import result from "result";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+// Module 11640 (usePowerupGroupConfig)
+import noop from "noop";
+import createGuildRecordFromRust from "createGuildRecordFromRust";
 
 const require = arg1;
 const result = require("initialize").fileFinishedImporting("modules/premium/powerups/native/hooks/usePowerupGroupConfig.tsx");
@@ -14,7 +14,7 @@ const result = require("initialize").fileFinishedImporting("modules/premium/powe
 export default function usePowerupGroupConfig(arg0, arg1) {
   const _require = arg0;
   let closure_1 = arg1;
-  const items = [_createForOfIteratorHelperLoose];
+  const items = [createGuildRecordFromRust];
   stateFromStores = _require(stateFromStores[2]).useStateFromStores(items, () => {
     const guild = outer1_4.getGuild(callback);
     let guildSupportsTagsResult = null != guild;
@@ -27,25 +27,25 @@ export default function usePowerupGroupConfig(arg0, arg1) {
   const items1 = [arg1, stateFromStores];
   return React.useMemo(() => {
     if ("guildTagsBadgePacks" === lib.group) {
-      let obj = {};
+      let obj = { title: null, description: null, image: null, disabledReason: null, badge: "HermesInternal", forceStaticImages: "HermesInternal" };
       const intl = callback(stateFromStores[4]).intl;
-      obj.title = intl.string(lib(stateFromStores[5]).KC9HRW);
+      obj[0] = intl.string(lib(stateFromStores[5]).KC9HRW);
       const intl2 = callback(stateFromStores[4]).intl;
-      obj.description = intl2.string(lib(stateFromStores[5]).GJiSmP);
-      obj = { staticUrl: lib(stateFromStores[6]), animatedUrl: lib(stateFromStores[7]) };
-      obj.image = obj;
+      obj[1] = intl2.string(lib(stateFromStores[5]).GJiSmP);
+      obj = { staticUrl: null, animatedUrl: null };
+      obj[0] = lib(stateFromStores[6]);
+      obj[1] = lib(stateFromStores[7]);
+      obj[2] = obj;
       let stringResult;
       if (!stateFromStores) {
         const intl3 = callback(stateFromStores[4]).intl;
         stringResult = intl3.string(lib(stateFromStores[5]).lvk1Gc);
       }
-      obj.disabledReason = stringResult;
-      obj.badge = undefined;
-      obj.forceStaticImages = true;
+      obj[3] = stringResult;
       return obj;
     } else {
       obj = callback(stateFromStores[8]);
-      obj.assertNever(lib.group);
+      obj.assertNever(tmp.group);
     }
   }, items1);
 };

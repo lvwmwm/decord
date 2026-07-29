@@ -1,22 +1,22 @@
-// Module ID: 14352
-// Function ID: 110054
+// Module ID: 14374
+// Function ID: 14375
 // Name: toggle
-// Dependencies: [4157, 7733, 566, 10099, 1212, 13479, 2]
+// Dependencies: [4181, 7756, 589, 10120, 1236, 13502, 2]
 
-// Module 14352 (toggle)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 14374 (toggle)
+import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
 import createToggle from "createToggle";
 
 const require = arg1;
 createToggle = {
   useTitle() {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(require(1212) /* getSystemLocale */.t["sSY+mD"]);
+    const intl = require(1236) /* getSystemLocale */.intl;
+    return intl.string(require(1236) /* getSystemLocale */.t["sSY+mD"]);
   },
   parent: require("MobileSetting").MobileSetting.ACCESSIBILITY,
   useValue: function useProfileColorsSettingValue() {
-    const items = [_isNativeReflectConstruct];
-    return require(566) /* initialize */.useStateFromStores(items, () => outer1_2.syncProfileThemeWithUserTheme);
+    const items = [maybeApplyNoTextColorForLightCustomTheme];
+    return require(589) /* initialize */.useStateFromStores(items, () => obj.syncProfileThemeWithUserTheme);
   },
   onValueChange: require("setFontSize").toggleSyncProfileThemeWithUserTheme
 };

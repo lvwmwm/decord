@@ -1,11 +1,10 @@
 // Module ID: 1424
-// Function ID: 16688
+// Function ID: 1425
 // Name: registerAsset
-// Dependencies: [1217]
+// Dependencies: [1241]
 
 // Module 1424 (registerAsset)
 import registerAsset from "registerAsset";
 
-const obj = { __packager_asset: true, httpServerLocation: "/assets/images/native/auto_moderation", width: 256, height: 256, scales: [1], hash: "424407a78216a455f8fc1ac2080855a1", name: "auto_moderation_avatar", type: "png" };
 
-export default registerAsset.registerAsset(obj);
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/avatars", width: 256, height: 256, scales: [1], hash: "3c6ccb83716d1e4fb91d3082f6b21d77", name: "default_avatar_4", type: "png" });

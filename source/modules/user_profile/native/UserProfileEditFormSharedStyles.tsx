@@ -1,23 +1,25 @@
-// Module ID: 13682
-// Function ID: 104992
-// Name: ARBITRARY_LARGE_OFFSET
-// Dependencies: [5545, 4165, 689, 2]
+// Module ID: 13703
+// Function ID: 13704
+// Name: styles
+// Dependencies: [5563, 4189, 712, 2]
 
-// Module 13682 (ARBITRARY_LARGE_OFFSET)
+// Module 13703 (styles)
 import ARBITRARY_LARGE_OFFSET from "ARBITRARY_LARGE_OFFSET";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-ARBITRARY_LARGE_OFFSET = ARBITRARY_LARGE_OFFSET.ARBITRARY_LARGE_OFFSET;
-let obj = { container: { flex: 1 } };
-obj = { position: "absolute", top: -ARBITRARY_LARGE_OFFSET, height: ARBITRARY_LARGE_OFFSET, right: 0, left: 0, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SURFACE_HIGH };
-obj.bounceOffset = obj;
-obj.avatarContainer = { zIndex: 1 };
-const obj1 = { marginTop: 16, padding: 16, borderRadius: require("_createForOfIteratorHelperLoose").radii.lg, rowGap: 20 };
-obj.formContainer = obj1;
-obj.errorContainer = { flex: 1, flexDirection: "row", justifyContent: "center" };
-const obj2 = { position: "absolute", marginBottom: require("_createForOfIteratorHelperLoose").space.PX_4, left: 0, right: 0, maxHeight: ARBITRARY_LARGE_OFFSET.FLOATING_UPSELL_HEIGHT - 12 };
-obj.floatingUpsell = obj2;
-const styles = _createForOfIteratorHelperLoose.createStyles(obj);
-const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/user_profile/native/UserProfileEditFormSharedStyles.tsx");
+let ARBITRARY_LARGE_OFFSET;
+let FLOATING_UPSELL_HEIGHT;
+({ ARBITRARY_LARGE_OFFSET, FLOATING_UPSELL_HEIGHT } = ARBITRARY_LARGE_OFFSET);
+let obj = { container: { flex: 1 }, bounceOffset: null, avatarContainer: null, formContainer: null, errorContainer: null, floatingUpsell: null };
+obj = { position: "absolute", top: -ARBITRARY_LARGE_OFFSET, height: ARBITRARY_LARGE_OFFSET, right: 0, left: 0, backgroundColor: require("Themes").colors.BACKGROUND_SURFACE_HIGH };
+obj[1] = obj;
+obj[2] = { zIndex: 1 };
+obj[3] = { marginTop: 16, padding: 16, borderRadius: require("Themes").radii.lg, rowGap: 20 };
+obj[4] = { flex: 1, flexDirection: "row", justifyContent: "center" };
+const obj1 = { marginTop: 16, padding: 16, borderRadius: require("Themes").radii.lg, rowGap: 20 };
+obj[5] = { position: "absolute", marginBottom: require("Themes").space.PX_4, left: 0, right: 0, maxHeight: FLOATING_UPSELL_HEIGHT - 12 };
+const styles = createCacheKey.createStyles(obj);
+const obj2 = { position: "absolute", marginBottom: require("Themes").space.PX_4, left: 0, right: 0, maxHeight: FLOATING_UPSELL_HEIGHT - 12 };
+const result = require("Themes").fileFinishedImporting("modules/user_profile/native/UserProfileEditFormSharedStyles.tsx");
 
 export default styles;

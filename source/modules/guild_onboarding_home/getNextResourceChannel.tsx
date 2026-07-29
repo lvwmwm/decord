@@ -1,18 +1,18 @@
-// Module ID: 11413
-// Function ID: 88489
+// Module ID: 11437
+// Function ID: 11438
 // Name: getCurrentAndNextResourceChannel
-// Dependencies: [4368, 566, 2]
+// Dependencies: [4391, 589, 2]
 // Exports: default, usePreviousAndNextResourceChannel
 
-// Module 11413 (getCurrentAndNextResourceChannel)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 11437 (getCurrentAndNextResourceChannel)
+import handleSettingsLoadSuccess from "handleSettingsLoadSuccess";
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/guild_onboarding_home/getNextResourceChannel.tsx");
 
-export default function getCurrentAndNextResourceChannel(arg0, arg1) {
-  let closure_0 = arg1;
-  resourceChannels = resourceChannels.getResourceChannels(arg0);
+export default function getCurrentAndNextResourceChannel(closure_0) {
+  closure_0 = arg1;
+  resourceChannels = resourceChannels.getResourceChannels(closure_0);
   const findIndexResult = resourceChannels.findIndex((channelId) => channelId.channelId === closure_0);
   if (findIndexResult < 0) {
     let items = [null, null];
@@ -24,8 +24,8 @@ export default function getCurrentAndNextResourceChannel(arg0, arg1) {
 export const usePreviousAndNextResourceChannel = function usePreviousAndNextResourceChannel(guild_id, id) {
   const _require = guild_id;
   const dependencyMap = id;
-  const items = [_isNativeReflectConstruct];
-  const stateFromStores = _require(566).useStateFromStores(items, () => outer1_2.getResourceChannels(closure_0));
+  const items = [handleSettingsLoadSuccess];
+  const stateFromStores = _require(589).useStateFromStores(items, () => outer1_2.getResourceChannels(closure_0));
   const findIndexResult = stateFromStores.findIndex((channelId) => channelId.channelId === closure_1);
   if (findIndexResult >= 0) {
     if (stateFromStores.length > 1) {

@@ -1,105 +1,103 @@
-// Module ID: 15454
-// Function ID: 117797
-// Name: getItemKey
-// Dependencies: [31, 27, 9077, 33, 4165, 15455, 15457, 15458, 15468, 15451, 15470, 15472, 15467, 15459, 15473, 15477, 15478, 15481, 15482, 15483, 15484, 15485, 1557, 15443, 1212, 6655, 2]
+// Module ID: 15488
+// Function ID: 15489
+// Name: keyExtractor
+// Dependencies: [19, 17, 9101, 21, 4189, 15489, 15491, 15492, 15502, 15485, 15504, 15506, 15501, 15493, 15507, 15511, 15512, 15515, 15516, 15517, 15518, 15519, 1581, 15476, 1236, 6676, 2]
 
-// Module 15454 (getItemKey)
-import importAllResult from "result";
-import get_ActivityIndicator from "get ActivityIndicator";
+// Module 15488 (keyExtractor)
+import importAllResult from "MemberRowPlaceholderItem";
+import get_ActivityIndicator from "module_15515";
 import SearchAutocompleteSelectAnalyticsActions from "SearchAutocompleteSelectAnalyticsActions";
-import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import jsxProd from "module_15519";
+import createCacheKey from "createCacheKey";
 
-let closure_4;
-let closure_5;
+let c4;
+let c5;
+let c9;
 let closure_6;
-let closure_7;
-let closure_8;
-let closure_9;
+let error;
+let metroImportAll;
 const require = arg1;
-function getItemKey(type) {
+function keyExtractor(type) {
   type = type.type;
-  if (constants.DM === type) {
+  if (constants2.DM === type) {
+    const _HermesInternal11 = HermesInternal;
+    let key = "" + type.section + "-" + type.props.user.id + "-" + type.props.guildId;
+  } else if (tmp.GUILD_CHANNEL_MEMBER === type) {
     const _HermesInternal10 = HermesInternal;
-    return "" + type.section + "-" + type.props.user.id + "-" + type.props.guildId;
-  } else if (constants.GUILD_CHANNEL_MEMBER === type) {
-    const _HermesInternal9 = HermesInternal;
-    return "" + type.props.user.id + "-" + type.props.guildId;
-  } else if (constants.SEARCH_HISTORY_ITEM === type) {
-    return (function searchHistoryKeyExtractor(searchHistoryItem) {
-      const type = searchHistoryItem.type;
-      if (outer1_6.TEXT === type) {
-        const tags = searchHistoryItem.tags;
-        let joined;
-        if (null != tags) {
-          const mapped = tags.map((text) => text.text);
-          joined = mapped.join(" ");
-        }
-        const _HermesInternal3 = HermesInternal;
-        return "" + searchHistoryItem.text + " " + joined;
-      } else {
-        if (outer1_6.GROUP_DM !== type) {
-          if (outer1_6.GUILD_TEXT_CHANNEL !== type) {
-            if (outer1_6.GUILD_VOICE_CHANNEL !== type) {
-              if (outer1_6.DM === type) {
-                const _HermesInternal = HermesInternal;
-                return "" + searchHistoryItem.userId;
-              }
+    key = "" + type.props.user.id + "-" + type.props.guildId;
+  } else if (tmp.SEARCH_HISTORY_ITEM === type) {
+    const searchHistoryItem = type.props.searchHistoryItem;
+    const type2 = searchHistoryItem.type;
+    if (constants.TEXT === type2) {
+      const tags = searchHistoryItem.tags;
+      let joined;
+      if (tags != null) {
+        const mapped = tags.map((text) => text.text);
+        joined = mapped.join(" ");
+      }
+      const _HermesInternal9 = HermesInternal;
+      let combined = "" + searchHistoryItem.text + " " + joined;
+    } else {
+      if (tmp9.GROUP_DM !== type2) {
+        if (tmp9.GUILD_TEXT_CHANNEL !== type2) {
+          if (tmp9.GUILD_VOICE_CHANNEL !== type2) {
+            if (tmp9.DM === type2) {
+              const _HermesInternal13 = HermesInternal;
+              combined = "" + searchHistoryItem.userId;
             }
           }
         }
-        const _HermesInternal2 = HermesInternal;
-        return "" + searchHistoryItem.channelId;
       }
-    })(type.props.searchHistoryItem);
-  } else if (constants.MEDIA_GRID === type) {
+      const _HermesInternal8 = HermesInternal;
+      combined = "" + searchHistoryItem.channelId;
+    }
+    key = combined;
+  } else if (tmp.MEDIA_GRID === type) {
     const media = type.props.media;
-    let mapped = media.map((messageId) => "" + messageId.messageId + "-" + messageId.mediaIndex);
-    return mapped.join("-");
-  } else if (constants.MEDIA === type) {
-    const _HermesInternal8 = HermesInternal;
-    return "" + type.props.media.messageId + "-" + type.props.media.mediaIndex;
+    const mapped1 = media.map((messageId) => "" + messageId.messageId + "-" + messageId.mediaIndex);
+    key = mapped1.join("-");
+  } else if (tmp.MEDIA === type) {
+    const _HermesInternal7 = HermesInternal;
+    key = "" + type.props.media.messageId + "-" + type.props.media.mediaIndex;
   } else {
-    if (constants.MEDIA_PLACEHOLDER !== type) {
-      if (constants.FILE_OR_LINK_PLACEHOLDER !== type) {
-        if (constants.MESSAGE_PLACEHOLDER !== type) {
-          if (constants.GUILD_CHANNEL_MEMBER_PLACEHOLDER !== type) {
-            if (constants.GROUP_DM === type) {
-              const _HermesInternal7 = HermesInternal;
-              return "" + type.section + "-" + type.props.channel.id;
+    if (tmp.MEDIA_PLACEHOLDER !== type) {
+      if (tmp.FILE_OR_LINK_PLACEHOLDER !== type) {
+        if (tmp.MESSAGE_PLACEHOLDER !== type) {
+          if (tmp.GUILD_CHANNEL_MEMBER_PLACEHOLDER !== type) {
+            if (tmp.GROUP_DM === type) {
+              const _HermesInternal6 = HermesInternal;
+              key = "" + type.section + "-" + type.props.channel.id;
             } else {
-              if (constants.GUILD_TEXT_CHANNEL !== type) {
-                if (constants.GUILD_VOICE_CHANNEL !== type) {
-                  if (constants.MESSAGE === type) {
-                    const _HermesInternal5 = HermesInternal;
-                    return "" + type.props.message.id;
-                  } else if (constants.LINK === type) {
+              if (tmp.GUILD_TEXT_CHANNEL !== type) {
+                if (tmp.GUILD_VOICE_CHANNEL !== type) {
+                  if (tmp.MESSAGE === type) {
                     const _HermesInternal4 = HermesInternal;
-                    return "" + type.props.data.messageId + "-" + type.props.data.linkIndex;
-                  } else if (constants.FILE === type) {
-                    let _HermesInternal3 = HermesInternal;
-                    return "" + type.props.data.messageId + "-" + type.props.data.fileIndex;
-                  } else if (constants.GENERIC === type) {
-                    let _HermesInternal2 = HermesInternal;
-                    return "" + type.props.text;
-                  } else if (constants.SECTION === type) {
-                    let _HermesInternal = HermesInternal;
-                    return "" + type.props.title;
+                    key = "" + type.props.message.id;
+                  } else if (tmp.LINK === type) {
+                    const _HermesInternal3 = HermesInternal;
+                    key = "" + type.props.data.messageId + "-" + type.props.data.linkIndex;
+                  } else if (tmp.FILE === type) {
+                    const _HermesInternal2 = HermesInternal;
+                    key = "" + type.props.data.messageId + "-" + type.props.data.fileIndex;
+                  } else if (tmp.GENERIC === type) {
+                    const _HermesInternal = HermesInternal;
+                    key = "" + type.props.text;
+                  } else if (tmp.SECTION === type) {
+                    const _HermesInternal12 = HermesInternal;
+                    key = "" + type.props.title;
                   }
                 }
               }
-              const _HermesInternal6 = HermesInternal;
-              return "" + type.props.channel.id;
+              const _HermesInternal5 = HermesInternal;
+              key = "" + type.props.channel.id;
             }
           }
         }
       }
     }
-    return type.key;
+    key = type.key;
   }
-}
-function keyExtractor(type) {
-  return "" + type.type + "-" + getItemKey(type);
+  return "" + type.type + "-" + key;
 }
 function getItemType(type) {
   return type.type;
@@ -107,78 +105,79 @@ function getItemType(type) {
 function renderItem(item) {
   item = item.item;
   const type = item.type;
-  if (constants.DM === type) {
+  if (constants2.DM === type) {
     let obj = {};
     const merged = Object.assign(item.props);
-    return callback(importDefault(15455), obj);
-  } else if (constants.GROUP_DM === type) {
+    return callback(importDefault(15489), obj);
+  } else if (tmp.GROUP_DM === type) {
     obj = {};
     const merged1 = Object.assign(item.props);
-    return callback(importDefault(15457), obj);
-  } else if (constants.SEARCH_HISTORY_ITEM === type) {
+    return callback(importDefault(15491), obj);
+  } else if (tmp.SEARCH_HISTORY_ITEM === type) {
     const obj1 = {};
     const merged2 = Object.assign(item.props);
-    return callback(importDefault(15458), obj1);
-  } else if (constants.MEDIA === type) {
+    return callback(importDefault(15492), obj1);
+  } else if (tmp.MEDIA === type) {
     const obj2 = {};
     const merged3 = Object.assign(item.props);
-    return callback(importDefault(15468), obj2);
-  } else if (constants.MEDIA_PLACEHOLDER === type) {
+    return callback(importDefault(15502), obj2);
+  } else if (tmp.MEDIA_PLACEHOLDER === type) {
     const obj3 = {};
     const merged4 = Object.assign(item.props);
-    return callback(importDefault(15451), obj3);
-  } else if (constants.FILE_OR_LINK_PLACEHOLDER === type) {
+    return callback(importDefault(15485), obj3);
+  } else if (tmp.FILE_OR_LINK_PLACEHOLDER === type) {
     const obj4 = {};
     const merged5 = Object.assign(item.props);
-    return callback(importDefault(15470), obj4);
-  } else if (constants.MEDIA_GRID === type) {
+    return callback(importDefault(15504), obj4);
+  } else if (tmp.MEDIA_GRID === type) {
     const obj5 = {};
     const merged6 = Object.assign(item.props);
-    return callback(importDefault(15472), obj5);
-  } else if (constants.GUILD_TEXT_CHANNEL === type) {
+    return callback(importDefault(15506), obj5);
+  } else if (tmp.GUILD_TEXT_CHANNEL === type) {
     const obj6 = {};
     const merged7 = Object.assign(item.props);
-    return callback(importDefault(15467), obj6);
-  } else if (constants.GUILD_VOICE_CHANNEL === type) {
+    return callback(importDefault(15501), obj6);
+  } else if (tmp.GUILD_VOICE_CHANNEL === type) {
     const obj7 = {};
     const merged8 = Object.assign(item.props);
-    return callback(importDefault(15459), obj7);
-  } else if (constants.MESSAGE === type) {
+    return callback(importDefault(15493), obj7);
+  } else if (tmp.MESSAGE === type) {
     const obj8 = {};
     const merged9 = Object.assign(item.props);
-    return callback(importDefault(15473), obj8);
-  } else if (constants.MESSAGE_PLACEHOLDER === type) {
-    return callback(importDefault(15477), {});
-  } else if (constants.LINK === type) {
+    return callback(importDefault(15507), obj8);
+  } else if (tmp.MESSAGE_PLACEHOLDER === type) {
+    return callback(importDefault(15511), {});
+  } else if (tmp.LINK === type) {
     const obj9 = {};
     const merged10 = Object.assign(item.props);
-    return callback(importDefault(15478), obj9);
-  } else if (constants.FILE === type) {
+    return callback(importDefault(15512), obj9);
+  } else if (tmp.FILE === type) {
     const obj10 = {};
     const merged11 = Object.assign(item.props);
-    return callback(importDefault(15481), obj10);
-  } else if (constants.GUILD_CHANNEL_MEMBER === type) {
+    return callback(importDefault(15515), obj10);
+  } else if (tmp.GUILD_CHANNEL_MEMBER === type) {
     const obj11 = {};
     const merged12 = Object.assign(item.props);
-    return callback(importDefault(15482), obj11);
-  } else if (constants.GUILD_CHANNEL_MEMBER_PLACEHOLDER === type) {
-    return callback(importDefault(15483), {});
-  } else if (constants.GENERIC === type) {
+    return callback(importDefault(15516), obj11);
+  } else if (tmp.GUILD_CHANNEL_MEMBER_PLACEHOLDER === type) {
+    return callback(importDefault(15517), {});
+  } else if (tmp.GENERIC === type) {
     const obj12 = {};
     const merged13 = Object.assign(item.props);
-    return callback(importDefault(15484), obj12);
-  } else if (constants.SECTION === type) {
+    return callback(importDefault(15518), obj12);
+  } else if (tmp.SECTION === type) {
     obj = {};
     const merged14 = Object.assign(item.props);
-    return callback(importDefault(15485), obj);
+    return callback(importDefault(15519), obj);
   } else {
     return null;
   }
 }
-({ View: closure_4, StyleSheet: closure_5 } = get_ActivityIndicator);
-({ SearchHistoryItemTypes: closure_6, SearchListItemTypes: closure_7 } = SearchAutocompleteSelectAnalyticsActions);
-({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
-let closure_10 = _createForOfIteratorHelperLoose.createStyles({ container: { flex: 1 } });
+let c3 = importAllResult;
+({ View: c4, StyleSheet: c5 } = get_ActivityIndicator);
+({ SearchHistoryItemTypes: closure_6, SearchListItemTypes: error } = SearchAutocompleteSelectAnalyticsActions);
+({ jsx: metroImportAll, jsxs: c9 } = jsxProd);
+let closure_10 = createCacheKey.createStyles({ container: { flex: 1 } });
 const memoResult = importAllResult.memo(function SearchList(arg0) {
   let ItemSeparatorComponent;
   let ListFooterComponent;
@@ -202,46 +201,44 @@ const memoResult = importAllResult.memo(function SearchList(arg0) {
       }
     }
   }
-  let obj = { style: callback2().container };
-  let tmp6 = tmp3;
+  let obj = { style: callback2().container, children: null };
+  let tmp8 = tmp5;
   if (0 === data.length && null == ListFooterComponent && null == ListHeaderComponent) {
-    obj = { style: absoluteFill.absoluteFill };
-    obj = {};
-    const intl = require(1212) /* getSystemLocale */.intl;
-    obj.text = intl.string(require(1212) /* getSystemLocale */.t.V6nAfF);
-    obj.children = callback(importDefault(15443), obj);
-    tmp6 = callback(closure_4, obj);
-    const tmp13 = importDefault(15443);
+    obj = { style: null, children: null };
+    obj[0] = absoluteFill.absoluteFill;
+    obj = { text: null };
+    const intl = require(1236) /* getSystemLocale */.intl;
+    obj[0] = intl.string(require(1236) /* getSystemLocale */.t.V6nAfF);
+    obj[1] = callback(tmp3(15476), obj);
+    tmp8 = callback(tmp7, obj);
+    const tmp3Result = tmp3(15476);
   }
-  const items = [tmp6, ];
-  const obj1 = { ref };
+  const items = [tmp8, ];
+  const obj1 = { ref, overrideProps: null, keyboardDismissMode: "on-drag", keyboardShouldPersistTaps: "handled", data: null, renderItem: null, onEndReachedThreshold: null, onEndReached: null, scrollsToTop: true, contentContainerStyle: null, keyExtractor: null, getItemType: null, ListHeaderComponent: null, ListFooterComponent: null, ItemSeparatorComponent: null, numColumns: null };
   let obj2;
   if (0 === data.length && null == ListFooterComponent && null == ListHeaderComponent) {
     obj2 = { importantForAccessibility: "no", scrollEnabled: false };
   }
-  obj1.overrideProps = obj2;
-  obj1.keyboardDismissMode = "on-drag";
-  obj1.keyboardShouldPersistTaps = "handled";
-  obj1.data = data;
-  obj1.renderItem = renderItem;
-  obj1.onEndReachedThreshold = num;
-  obj1.onEndReached = onEndReached;
-  obj1.scrollsToTop = true;
-  const tmp15 = callback;
+  obj1[1] = obj2;
+  obj1[4] = data;
+  obj1[5] = renderItem;
+  obj1[6] = num;
+  obj1[7] = onEndReached;
+  const tmp13 = callback;
   const tmp2 = callback2();
-  const tmp4 = closure_9;
-  const tmp5 = closure_4;
+  tmp3 = importDefault;
+  const tmp6 = closure_9;
   const merged = Object.assign(contentContainerStyle);
-  obj1.contentContainerStyle = { paddingBottom: 16 + importDefault(1557)().bottom };
-  obj1.keyExtractor = keyExtractor;
-  obj1.getItemType = getItemType;
-  obj1.ListHeaderComponent = ListHeaderComponent;
-  obj1.ListFooterComponent = ListFooterComponent;
-  obj1.ItemSeparatorComponent = ItemSeparatorComponent;
-  obj1.numColumns = numColumns;
-  items[1] = tmp15(require(6655) /* useModalDismissGuardRefreshControl */.AnimatedFlashList, obj1);
-  obj.children = items;
-  return tmp4(tmp5, obj);
+  obj1[9] = { paddingBottom: 16 + importDefault(1581)().bottom };
+  obj1[10] = keyExtractor;
+  obj1[11] = getItemType;
+  obj1[12] = ListHeaderComponent;
+  obj1[13] = ListFooterComponent;
+  obj1[14] = ItemSeparatorComponent;
+  obj1[15] = numColumns;
+  items[1] = tmp13(require(6676) /* noop */.AnimatedFlashList, obj1);
+  obj[1] = items;
+  return tmp6(closure_4, obj);
 });
 const result = require("SearchAutocompleteSelectAnalyticsActions").fileFinishedImporting("modules/search/native/components/list/SearchList.tsx");
 

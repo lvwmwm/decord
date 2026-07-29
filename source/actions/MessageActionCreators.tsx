@@ -1,42 +1,40 @@
-// Module ID: 5695
-// Function ID: 48786
+// Module ID: 5713
+// Function ID: 5714
 // Name: trackInvite
-// Dependencies: [57, 5, 6, 7, 4843, 5696, 5697, 5700, 5944, 5946, 5839, 5070, 4184, 1194, 1348, 5947, 1838, 4150, 4384, 3793, 4252, 4177, 5952, 1850, 653, 5954, 5698, 4158, 27, 3, 4149, 5955, 4154, 5958, 5959, 4359, 5964, 5016, 5983, 6001, 675, 4151, 6002, 6005, 4401, 6008, 1212, 1921, 4701, 686, 6020, 4364, 6021, 5844, 507, 4386, 5639, 14, 5726, 4838, 21, 1883, 1902, 5715, 4841, 6022, 6023, 6026, 6027, 3811, 5949, 1360, 6028, 6054, 6123, 6127, 6130, 6136, 6137, 6159, 664, 6160, 1882, 6058, 4011, 6161, 4505, 2]
+// Dependencies: [32, 5, 4865, 5714, 5715, 5718, 5963, 5965, 5857, 5092, 4208, 1218, 1372, 5966, 1862, 4174, 4407, 3817, 4276, 4201, 5971, 1874, 676, 5973, 5716, 4182, 17, 3, 4173, 5974, 4178, 5977, 5978, 4384, 5983, 5038, 6002, 698, 4175, 6020, 6023, 4424, 6026, 1236, 1945, 4723, 709, 6038, 4389, 6039, 5862, 530, 4409, 5657, 9, 5744, 4860, 11, 1907, 1926, 5733, 4863, 6040, 6041, 6044, 6045, 3835, 5968, 1384, 6046, 6072, 6141, 6145, 6148, 6154, 6155, 6177, 687, 6178, 1906, 6076, 4035, 6179, 4528, 2]
 
-// Module 5695 (trackInvite)
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_6 from "_createForOfIteratorHelperLoose";
-import closure_7 from "_isNativeReflectConstruct";
-import closure_8 from "_isNativeReflectConstruct";
-import closure_9 from "_isNativeReflectConstruct";
-import closure_10 from "_createForOfIteratorHelperLoose";
-import closure_11 from "_isNativeReflectConstruct";
-import closure_12 from "_isNativeReflectConstruct";
-import closure_13 from "_createForOfIteratorHelperLoose";
-import closure_14 from "_isNativeReflectConstruct";
-import { ReferencedMessageState } from "_isNativeReflectConstruct";
-import closure_16 from "_isNativeReflectConstruct";
-import closure_17 from "_isNativeReflectConstruct";
-import closure_18 from "_isNativeReflectConstruct";
-import closure_19 from "_isNativeReflectConstruct";
-import closure_20 from "_isNativeReflectConstruct";
-import closure_21 from "_createForOfIteratorHelperLoose";
-import closure_22 from "_isNativeReflectConstruct";
-import closure_23 from "_isNativeReflectConstruct";
-import "_isNativeReflectConstruct";
-import closure_24 from "_isNativeReflectConstruct";
-import closure_25 from "_isNativeReflectConstruct";
-import { SlowmodeType } from "_isNativeReflectConstruct";
-import closure_27 from "_isNativeReflectConstruct";
+// Module 5713 (trackInvite)
+import ClickArea from "ClickArea";
+import trackRoundtrip from "trackRoundtrip";
+import _handleConnectionOpen from "_handleConnectionOpen";
+import updateSubmittedGuildJoinRequestTotal from "updateSubmittedGuildJoinRequestTotal";
+import handleGuildTemplateResolveSuccess from "handleGuildTemplateResolveSuccess";
+import closure_9 from "trackRoundtrip";
+import initialize from "initialize";
+import getState from "getState";
+import processMessage from "processMessage";
+import { ReferencedMessageState } from "processMessage";
+import loadSavedGuildStickers from "loadSavedGuildStickers";
+import reset from "reset";
+import fetchFingerprint from "fetchFingerprint";
+import ensureGuildLoaded from "ensureGuildLoaded";
+import closure_18 from "initialize";
+import createGuildRecordFromRust from "createGuildRecordFromRust";
+import updateInvite from "updateInvite";
+import reinjectEphemerals from "reinjectEphemerals";
+import "getUncachedChannelPermissions";
+import sortActivity from "sortActivity";
+import generateOldThreadCutoff from "generateOldThreadCutoff";
+import { SlowmodeType } from "setCooldown";
+import mergeGuildAvatar from "mergeGuildAvatar";
 import ME from "ME";
 import { LinkType } from "LinkType";
 import { GuildTemplateStates } from "GUILD_TEMPLATES_MEMBER_COUNT_PROMOTION_THRESHOLD";
 import MESSAGE_GROUP_SPACING from "MESSAGE_GROUP_SPACING";
-import importDefaultResult1 from "_defineProperties";
-import importDefaultResult2 from "_defineProperties";
 
 let Permissions;
+let closure_27;
+let closure_28;
 let closure_29;
 let closure_30;
 let closure_31;
@@ -52,10 +50,8 @@ let closure_40;
 let closure_41;
 let closure_42;
 let closure_43;
-let closure_44;
-let closure_45;
-let closure_48;
-let closure_49;
+let closure_46;
+let closure_47;
 const require = arg1;
 function trackInvite(channelId) {
   let _location;
@@ -69,23 +65,23 @@ function trackInvite(channelId) {
   }
   id = id.getId();
   invite = invite.getInvite(inviteKey);
-  let obj = require(4151) /* readSnowflake */;
+  let obj = require(4175) /* readSnowflake */;
   const result = obj.parseExtraDataFromInviteKey(inviteKey);
   let result1 = null != invite;
   if (result1) {
-    let obj1 = require(6002) /* isGroupDMInvite */;
-    result1 = obj1.isEmbeddedApplicationInvite(invite);
+    let tmp3Result = tmp3(6020);
+    result1 = tmp3Result.isEmbeddedApplicationInvite(invite);
   }
   let id1;
-  if (null != invite) {
+  if (invite != null) {
     const target_application = invite.target_application;
-    if (null != target_application) {
+    if (target_application != null) {
       id1 = target_application.id;
     }
   }
   if (tmp8) {
-    let obj2 = require(5959) /* trackAppEmbedViewed */;
-    const result2 = obj2.trackAppEmbedLinkSent(id1, LinkType.ACTIVITY_INVITE, id);
+    tmp3Result = tmp3(5978);
+    const result2 = tmp3Result.trackAppEmbedLinkSent(id1, LinkType.ACTIVITY_INVITE, id);
   }
   let channel = store.getChannel(channelId.channelId);
   if (null != channel) {
@@ -108,7 +104,7 @@ function trackInvite(channelId) {
           obj.invite_channel_id = channel.id;
           const guild = invite.guild;
           let id2;
-          if (null != guild) {
+          if (guild != null) {
             id2 = guild.id;
           }
           obj.invite_guild_id = id2;
@@ -125,14 +121,14 @@ function trackInvite(channelId) {
             STREAM = GDM_INVITE;
             if (lastActiveStream.channelId === channel.id) {
               obj.destination_user_id = lastActiveStream.ownerId;
-              const streamerApplication = require(6005) /* _findPlayingActivity */.getStreamerApplication(lastActiveStream, closure_24);
+              const streamerApplication = tmp3(6023).getStreamerApplication(lastActiveStream, sortActivity);
               let id3 = null;
               if (null != streamerApplication) {
                 id3 = streamerApplication.id;
               }
               obj.application_id = id3;
               STREAM = constants3.STREAM;
-              const obj9 = require(6005) /* _findPlayingActivity */;
+              const tmp3Result1 = tmp3(6023);
             }
           }
         }
@@ -150,120 +146,110 @@ function trackInvite(channelId) {
     }
     obj = {};
     const merged = Object.assign(obj);
-    obj["location"] = _location;
-    obj["invite_type"] = STREAM;
-    obj["invite_code"] = result.baseCode;
-    obj["guild_id"] = channel.getGuildId();
-    obj["channel_id"] = channel.id;
-    obj["message_id"] = messageId;
-    obj["send_type"] = constants4.DIRECT_MESSAGE;
-    obj["invite_guild_scheduled_event_id"] = result.guildScheduledEventId;
-    const inviteInstanceId = require(4151) /* readSnowflake */.getInviteInstanceId(result.baseCode, messageId);
-    let tmp48 = null;
-    if (null != inviteInstanceId) {
-      tmp48 = inviteInstanceId;
+    obj.location = _location;
+    obj.invite_type = STREAM;
+    obj.invite_code = result.baseCode;
+    obj.guild_id = channel.getGuildId();
+    obj.channel_id = channel.id;
+    obj.message_id = messageId;
+    obj.send_type = constants4.DIRECT_MESSAGE;
+    obj.invite_guild_scheduled_event_id = result.guildScheduledEventId;
+    let inviteInstanceId = tmp3(4175).getInviteInstanceId(result.baseCode, messageId);
+    if (inviteInstanceId == null) {
+      inviteInstanceId = null;
     }
-    obj["invite_instance_id"] = tmp48;
+    obj.invite_instance_id = inviteInstanceId;
     const merged1 = Object.assign(overrideProperties);
-    const obj11 = require(4151) /* readSnowflake */;
-    importDefault(4359).trackWithMetadata(constants.INVITE_SENT, obj);
-    const obj12 = importDefault(4359);
+    const tmp3Result2 = tmp3(4175);
+    importDefault(4384).trackWithMetadata(constants.INVITE_SENT, obj);
+    const obj13 = importDefault(4384);
   } else {
-    obj1 = {};
-    if (null != invite) {
-      if (invite.state === constants5.RESOLVED) {
-        if (null != invite.inviter) {
-          obj1.invite_inviter_id = invite.inviter.id;
-          if (null != invite.target_application) {
-            obj1.application_id = invite.target_application.id;
-          }
-          obj2 = {};
-          const merged2 = Object.assign(obj1);
-          obj2["location"] = _location;
-          obj2["invite_type"] = constants3.FRIEND_INVITE;
-          obj2["invite_code"] = result.baseCode;
-          obj2["message_id"] = messageId;
-          obj2["send_type"] = constants4.DIRECT_MESSAGE;
-          obj2["invite_guild_scheduled_event_id"] = result.guildScheduledEventId;
-          const inviteInstanceId1 = require(4151) /* readSnowflake */.getInviteInstanceId(result.baseCode, messageId);
-          let tmp21 = null;
-          if (null != inviteInstanceId1) {
-            tmp21 = inviteInstanceId1;
-          }
-          obj2["invite_instance_id"] = tmp21;
-          const merged3 = Object.assign(overrideProperties);
-          const obj6 = require(4151) /* readSnowflake */;
-          importDefault(4359).trackWithMetadata(constants.INVITE_SENT, obj2);
-          const obj7 = importDefault(4359);
-        }
+    let tmp12 = null != invite;
+    if (tmp12) {
+      tmp12 = invite.state === constants5.RESOLVED;
+    }
+    if (tmp12) {
+      tmp12 = null != invite.inviter;
+    }
+    if (tmp12) {
+      const obj1 = { invite_inviter_id: invite.inviter.id };
+      if (null != invite.target_application) {
+        obj1.application_id = invite.target_application.id;
       }
+      const obj2 = {};
+      const merged2 = Object.assign(obj1);
+      obj2.location = _location;
+      obj2.invite_type = constants3.FRIEND_INVITE;
+      obj2.invite_code = result.baseCode;
+      obj2.message_id = messageId;
+      obj2.send_type = constants4.DIRECT_MESSAGE;
+      obj2.invite_guild_scheduled_event_id = result.guildScheduledEventId;
+      let inviteInstanceId1 = tmp3(4175).getInviteInstanceId(result.baseCode, messageId);
+      if (inviteInstanceId1 == null) {
+        inviteInstanceId1 = null;
+      }
+      obj2.invite_instance_id = inviteInstanceId1;
+      const merged3 = Object.assign(overrideProperties);
+      const tmp3Result3 = tmp3(4175);
+      importDefault(4384).trackWithMetadata(constants.INVITE_SENT, obj2);
+      const obj8 = importDefault(4384);
     }
   }
 }
 const AbortCodes = ME.AbortCodes;
-({ AnalyticEvents: closure_29, Endpoints: closure_30, Permissions, ChannelTypes: closure_31, LoggingInviteTypes: closure_32, SendTypes: closure_33, InviteStates: closure_34, MessageFlags: closure_35, MAX_MESSAGES_FOR_JUMP: closure_36, MessageTypes: closure_37, AllowedMentionTypes: closure_38, HelpdeskArticles: closure_39, MarketingURLs: closure_40, MessageReferenceTypes: closure_41, LOCAL_BOT_ID: closure_42, NON_USER_BOT_DISCRIMINATOR: closure_43, MessageStates: closure_44, ActivityActionTypes: closure_45 } = ME);
-({ FileUploadErrorTypes: closure_48, MessageSendLocation: closure_49 } = MESSAGE_GROUP_SPACING);
-const MediaPlayerManager = require("MESSAGE_GROUP_SPACING").NativeModules.MediaPlayerManager;
-importDefaultResult1 = new importDefaultResult1("MessageActionCreators");
-importDefaultResult2 = new importDefaultResult2("MessageQueue");
-let c53 = false;
-let closure_54 = (() => {
-  class RemoteFetch {
-    constructor() {
-      tmp = outer1_6(this, RemoteFetch);
-      this.completed = false;
-      return;
-    }
-  }
-  const items = [
-    {
-      key: "markComplete",
-      value() {
-        this.completed = true;
-      }
-    }
-  ];
-  return callback2(RemoteFetch, items);
-})();
+({ AnalyticEvents: closure_27, Endpoints: closure_28, Permissions, ChannelTypes: closure_29, LoggingInviteTypes: closure_30, SendTypes: closure_31, InviteStates: closure_32, MessageFlags: closure_33, MAX_MESSAGES_FOR_JUMP: closure_34, MessageTypes: closure_35, AllowedMentionTypes: closure_36, HelpdeskArticles: closure_37, MarketingURLs: closure_38, MessageReferenceTypes: closure_39, LOCAL_BOT_ID: closure_40, NON_USER_BOT_DISCRIMINATOR: closure_41, MessageStates: closure_42, ActivityActionTypes: closure_43 } = ME);
+({ FileUploadErrorTypes: closure_46, MessageSendLocation: closure_47 } = MESSAGE_GROUP_SPACING);
+const MediaPlayerManager = require("getUncachedChannelPermissions").NativeModules.MediaPlayerManager;
+let closure_49 = new require("updateSubmittedGuildJoinRequestTotal")("MessageActionCreators");
+const tmp5 = new require("updateSubmittedGuildJoinRequestTotal")("MessageActionCreators");
+let closure_50 = new require("updateSubmittedGuildJoinRequestTotal")("MessageQueue");
+let c51 = false;
+class RemoteFetch {
+}
+RemoteFetch.prototype["markComplete"] = function markComplete() {
+  this.completed = true;
+};
 let obj = {
   messageName: "SLOWMODE_RATE_LIMITED",
   messageGetter(rateLimitPerUser) {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.formatToPlainString(require(1212) /* getSystemLocale */.t.IWntYg, { seconds: rateLimitPerUser.rateLimitPerUser });
+    const intl = require(1236) /* getSystemLocale */.intl;
+    return intl.formatToPlainString(require(1236) /* getSystemLocale */.t.IWntYg, { seconds: rateLimitPerUser.rateLimitPerUser });
   }
 };
 obj = {
   messageName: "INVALID_MESSAGE_SEND_NO_MUTUAL_GUILDS",
   messageGetter(rawRecipients) {
-    let obj = importDefault(1921);
+    let obj = importDefault(1945);
     const articleURL = obj.getArticleURL(constants7.DM_COULD_NOT_BE_DELIVERED);
     rawRecipients = rawRecipients.rawRecipients;
-    if (null == rawRecipients) {
+    if (rawRecipients == null) {
       rawRecipients = [];
     }
     if (rawRecipients.isDM()) {
       if (1 === rawRecipients.length) {
         if (rawRecipients.some((bot) => bot.bot)) {
-          const intl2 = require(1212) /* getSystemLocale */.intl;
-          obj = { helpUrl: articleURL };
-          let formatToPlainStringResult = intl2.formatToPlainString(require(1212) /* getSystemLocale */.t.SkGL7l, obj);
+          const intl2 = require(1236) /* getSystemLocale */.intl;
+          obj = { helpUrl: null };
+          obj[0] = articleURL;
+          let formatToPlainStringResult = intl2.formatToPlainString(require(1236) /* getSystemLocale */.t.SkGL7l, obj);
         }
         return formatToPlainStringResult;
       }
     }
-    const intl = require(1212) /* getSystemLocale */.intl;
-    formatToPlainStringResult = intl.formatToPlainString(require(1212) /* getSystemLocale */.t.llTkqr, { helpUrl: articleURL });
+    const intl = require(1236) /* getSystemLocale */.intl;
+    formatToPlainStringResult = intl.formatToPlainString(require(1236) /* getSystemLocale */.t.llTkqr, { helpUrl: articleURL });
   }
 };
 obj = {
   messageName: "INVALID_MESSAGE_SEND_USER",
   messageGetter() {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    const obj = { helpUrl: importDefault(1921).getArticleURL(constants7.DM_COULD_NOT_BE_DELIVERED) };
-    return intl.formatToPlainString(require(1212) /* getSystemLocale */.t.SkGL7l, obj);
+    const intl = require(1236) /* getSystemLocale */.intl;
+    const obj = { helpUrl: null };
+    obj[0] = importDefault(1945).getArticleURL(constants7.DM_COULD_NOT_BE_DELIVERED);
+    return intl.formatToPlainString(require(1236) /* getSystemLocale */.t.SkGL7l, obj);
   }
 };
-let closure_55 = {
+let closure_54 = {
   [AbortCodes.SLOWMODE_RATE_LIMITED]: obj,
   [AbortCodes.INVALID_MESSAGE_SEND_NO_MUTUAL_GUILDS]: obj,
   [AbortCodes.INVALID_MESSAGE_SEND_USER]: obj,
@@ -272,282 +258,285 @@ let closure_55 = {
     messageGetter(isForumLikeChannel) {
       if (!isForumLikeChannel.isForumLikeChannel()) {
         if (!isForumLikeChannel.isForumPost()) {
-          const intl = require(1212) /* getSystemLocale */.intl;
-          let stringResult = intl.string(require(1212) /* getSystemLocale */.t["5EMPA7"]);
+          const intl = require(1236) /* getSystemLocale */.intl;
+          let stringResult = intl.string(require(1236) /* getSystemLocale */.t["5EMPA7"]);
         }
         return stringResult;
       }
-      const intl2 = require(1212) /* getSystemLocale */.intl;
-      stringResult = intl2.string(require(1212) /* getSystemLocale */.t["/jUd2+"]);
+      const intl2 = require(1236) /* getSystemLocale */.intl;
+      stringResult = intl2.string(require(1236) /* getSystemLocale */.t["/jUd2+"]);
     }
   },
   [AbortCodes.TOO_MANY_ANNOUNCEMENT_THREADS]: {
     messageName: "TOO_MANY_ANNOUNCEMENT_THREADS",
     messageGetter() {
-      const intl = require(1212) /* getSystemLocale */.intl;
-      return intl.string(require(1212) /* getSystemLocale */.t["aY+lLC"]);
+      const intl = require(1236) /* getSystemLocale */.intl;
+      return intl.string(require(1236) /* getSystemLocale */.t["aY+lLC"]);
     }
   },
   [AbortCodes.HARMFUL_LINK_MESSAGE_BLOCKED]: {
     messageName: "HARMFUL_LINK_MESSAGE_BLOCKED",
     messageGetter() {
-      const intl = require(1212) /* getSystemLocale */.intl;
-      return intl.formatToPlainString(require(1212) /* getSystemLocale */.t.zSG3Qy, { helpUrl: constants8.HARMFUL_LINKS });
+      const intl = require(1236) /* getSystemLocale */.intl;
+      return intl.formatToPlainString(require(1236) /* getSystemLocale */.t.zSG3Qy, { helpUrl: constants8.HARMFUL_LINKS });
     }
   },
   [AbortCodes.HARMFUL_URL_BLOCKED]: {
     messageName: "HARMFUL_URL_BLOCKED",
     messageGetter() {
-      const intl = require(1212) /* getSystemLocale */.intl;
-      return intl.string(require(1212) /* getSystemLocale */.t.WxX2Fd);
+      const intl = require(1236) /* getSystemLocale */.intl;
+      return intl.string(require(1236) /* getSystemLocale */.t.WxX2Fd);
     }
   },
   [AbortCodes.EMAIL_VERIFICATION_REQUIRED]: {
     messageName: "BOT_REQUIRES_EMAIL_VERIFICATION",
     messageGetter() {
-      const intl = require(1212) /* getSystemLocale */.intl;
-      return intl.string(require(1212) /* getSystemLocale */.t.k1Cjqr);
+      const intl = require(1236) /* getSystemLocale */.intl;
+      return intl.string(require(1236) /* getSystemLocale */.t.k1Cjqr);
     }
   },
   [AbortCodes.GUILD_MESSAGE_UPDATE_RATE_LIMIT_EXCEEDED]: {
     messageName: "GUILD_MESSAGE_UPDATE_RATE_LIMIT_EXCEEDED",
     messageGetter() {
-      const intl = require(1212) /* getSystemLocale */.intl;
-      return intl.string(require(1212) /* getSystemLocale */.t.Z5SUuv);
+      const intl = require(1236) /* getSystemLocale */.intl;
+      return intl.string(require(1236) /* getSystemLocale */.t.Z5SUuv);
     }
   },
   [AbortCodes.RATE_LIMIT_DM_OPEN]: {
     messageName: "BOT_DM_RATE_LIMITED",
     messageGetter() {
-      const intl = require(1212) /* getSystemLocale */.intl;
-      return intl.string(require(1212) /* getSystemLocale */.t.E8nbNb);
+      const intl = require(1236) /* getSystemLocale */.intl;
+      return intl.string(require(1236) /* getSystemLocale */.t.E8nbNb);
     }
   },
   [AbortCodes.SEND_MESSAGE_TEMPORARILY_DISABLED]: {
     messageName: "BOT_DM_SEND_MESSAGE_TEMPORARILY_DISABLED",
     messageGetter() {
-      const intl = require(1212) /* getSystemLocale */.intl;
-      return intl.string(require(1212) /* getSystemLocale */.t.aRUbah);
+      const intl = require(1236) /* getSystemLocale */.intl;
+      return intl.string(require(1236) /* getSystemLocale */.t.aRUbah);
     }
   },
   [AbortCodes.INVALID_MESSAGE_SEND_GAME_FRIEND_DM]: {
     messageName: "BOT_DM_SEND_MESSAGE_INVALID_FOR_GAME_FRIEND",
     messageGetter() {
-      const intl = require(1212) /* getSystemLocale */.intl;
-      return intl.string(require(1212) /* getSystemLocale */.t["/meGhR"]);
+      const intl = require(1236) /* getSystemLocale */.intl;
+      return intl.string(require(1236) /* getSystemLocale */.t["/meGhR"]);
     }
   },
   [AbortCodes.INVALID_MESSAGE_SEND_PROVISIONAL_ACCOUNT_OFFLINE]: {
     messageName: "BOT_DM_SEND_MESSAGE_INVALID_OFFLINE_PROVISIONAL_ACCOUNT",
     messageGetter() {
-      const intl = require(1212) /* getSystemLocale */.intl;
-      return intl.string(require(1212) /* getSystemLocale */.t.Oc1Zjw);
+      const intl = require(1236) /* getSystemLocale */.intl;
+      return intl.string(require(1236) /* getSystemLocale */.t.Oc1Zjw);
     }
   },
   [AbortCodes.TOTAL_ATTACHMENT_SIZE_TOO_LARGE]: {
     messageName: "TOTAL_ATTACHMENT_SIZE_TOO_LARGE",
     messageGetter() {
-      const intl = require(1212) /* getSystemLocale */.intl;
-      const obj = { maxSizeMb: require(4701) /* items */.MAX_TOTAL_ATTACHMENT_SIZE_MB };
-      return intl.formatToPlainString(require(1212) /* getSystemLocale */.t.DYFPg2, obj);
+      const intl = require(1236) /* getSystemLocale */.intl;
+      const obj = { maxSizeMb: null };
+      obj[0] = require(4723) /* items */.MAX_TOTAL_ATTACHMENT_SIZE_MB;
+      return intl.formatToPlainString(require(1236) /* getSystemLocale */.t.DYFPg2, obj);
     }
   },
   [AbortCodes.CLOUD_UPLOAD_NOT_FOUND]: {
     messageName: "CLOUD_UPLOAD_NOT_FOUND",
     messageGetter() {
-      const intl = require(1212) /* getSystemLocale */.intl;
-      return intl.string(require(1212) /* getSystemLocale */.t.bQldfH);
+      const intl = require(1236) /* getSystemLocale */.intl;
+      return intl.string(require(1236) /* getSystemLocale */.t.bQldfH);
     }
   },
   [AbortCodes.INVALID_PERMISSIONS]: {
     messageName: "INVALID_PERMISSIONS",
     messageGetter() {
-      const intl = require(1212) /* getSystemLocale */.intl;
-      return intl.string(require(1212) /* getSystemLocale */.t.zl4Weq);
+      const intl = require(1236) /* getSystemLocale */.intl;
+      return intl.string(require(1236) /* getSystemLocale */.t.zl4Weq);
     }
   }
 };
 let obj14 = {
-  receiveMessage(channel_id, body, arg2, outer1_2) {
+  receiveMessage(channelId, message) {
     let flag = arg2;
-    let obj = outer1_2;
     if (arg2 === undefined) {
       flag = false;
     }
-    if (obj === undefined) {
+    let obj = arg3;
+    if (arg3 === undefined) {
       obj = {};
     }
-    obj = { type: "MESSAGE_CREATE", channelId: channel_id, message: body, optimistic: flag };
-    obj.sendMessageOptions = obj;
-    obj.isPushNotification = false;
-    importDefault(686).dispatch(obj);
+    obj = { type: "MESSAGE_CREATE", channelId, message, optimistic: flag, sendMessageOptions: obj, isPushNotification: false };
+    importDefault(709).dispatch(obj);
   },
   sendBotMessage(id, intl, messageName, nonce) {
     if (null != messageName) {
-      let obj = importDefault(4359);
-      obj = { message_author: "Clyde", message_name: messageName };
+      let obj = importDefault(4384);
+      obj = { message_author: "Clyde", message_name: null };
+      obj[1] = messageName;
       obj.trackWithMetadata(constants.AUTOMATED_MESSAGE_RECEIVED, obj);
     }
     obj = { messageId: nonce, channelId: id, content: intl, loggingName: messageName };
-    obj14.receiveMessage(id, require(6020) /* userRecordToServer */.createBotMessage(obj));
+    obj14.receiveMessage(id, require(6038) /* createMessage */.createBotMessage(obj));
   },
   sendNitroSystemMessage(channelId, content, nonce) {
-    obj = { channelId, nonce, type: constants6.NITRO_NOTIFICATION, content, flags: closure_35.EPHEMERAL, author: obj };
-    obj = { id: closure_42, username: "Nitro Notification", discriminator: closure_43, avatar: "nitro", bot: true };
+    obj = { channelId, nonce, type: constants6.NITRO_NOTIFICATION, content, flags: closure_33.EPHEMERAL, author: obj };
+    obj = { id: closure_40, username: "Nitro Notification", discriminator: closure_41, avatar: "nitro", bot: true };
     obj = {};
-    const merged = Object.assign(importDefault(6020)(obj));
-    obj["state"] = constants9.SENT;
-    obj["channel_id"] = channelId;
+    const merged = Object.assign(importDefault(6038)(obj));
+    obj.state = constants9.SENT;
+    obj.channel_id = channelId;
     obj14.receiveMessage(channelId, obj, true);
   },
   sendGiftingPromptSystemMessage(channelId, giftingPrompt) {
-    obj = { channelId, type: constants6.GIFTING_PROMPT, content: "", flags: closure_35.EPHEMERAL, author: obj, giftingPrompt };
-    obj = { id: closure_42, username: "Gifting Prompt", discriminator: closure_43, avatar: "gifting_prompt", bot: true };
+    obj = { channelId, type: constants6.GIFTING_PROMPT, content: "", flags: closure_33.EPHEMERAL, author: obj, giftingPrompt };
+    obj = { id: closure_40, username: "Gifting Prompt", discriminator: closure_41, avatar: "gifting_prompt", bot: true };
     obj = {};
-    const merged = Object.assign(importDefault(6020)(obj));
-    obj["state"] = constants9.SENT;
+    const merged = Object.assign(importDefault(6038)(obj));
+    obj.state = constants9.SENT;
     obj14.receiveMessage(channelId, obj, true);
   },
   sendGuildBoostUpsellSystemMessage(channelId, boostingPrompt) {
-    obj = { channelId, type: constants6.GUILD_BOOST_UPSELL, content: "", flags: closure_35.EPHEMERAL, author: obj, boostingPrompt };
-    obj = { id: closure_42, username: "Guild Boost Upsell", discriminator: closure_43, avatar: "guild_boost_upsell", bot: true };
+    obj = { channelId, type: constants6.GUILD_BOOST_UPSELL, content: "", flags: closure_33.EPHEMERAL, author: obj, boostingPrompt };
+    obj = { id: closure_40, username: "Guild Boost Upsell", discriminator: closure_41, avatar: "guild_boost_upsell", bot: true };
     obj = {};
-    const merged = Object.assign(importDefault(6020)(obj));
-    obj["state"] = constants9.SENT;
+    const merged = Object.assign(importDefault(6038)(obj));
+    obj.state = constants9.SENT;
     obj14.receiveMessage(channelId, obj, true);
   },
-  sendClydeError(closure_0, code) {
+  sendClydeError(c0, code) {
     let num = code;
     if (code === undefined) {
       num = 0;
     }
-    const channel = store.getChannel(closure_0);
+    const channel = store.getChannel(c0);
     if (null != channel) {
       let obj = table[num];
       if (null != obj) {
-        obj14.sendBotMessage(closure_0, obj.messageGetter(channel), obj.messageName);
+        obj14.sendBotMessage(c0, obj.messageGetter(channel), obj.messageName);
       } else {
-        const intl = require(1212) /* getSystemLocale */.intl;
-        obj = { helpUrl: importDefault(1921).getArticleURL(constants7.DM_COULD_NOT_BE_DELIVERED) };
+        const intl = require(1236) /* getSystemLocale */.intl;
+        obj = { helpUrl: null };
+        obj[0] = importDefault(1945).getArticleURL(constants7.DM_COULD_NOT_BE_DELIVERED);
         const _HermesInternal = HermesInternal;
-        const obj3 = importDefault(1921);
-        obj14.sendBotMessage(closure_0, intl.formatToPlainString(require(1212) /* getSystemLocale */.t.SkGL7l, obj), "SEND_FAILED (" + num + ")");
-        const formatToPlainStringResult = intl.formatToPlainString(require(1212) /* getSystemLocale */.t.SkGL7l, obj);
+        const obj3 = importDefault(1945);
+        obj14.sendBotMessage(c0, intl.formatToPlainString(require(1236) /* getSystemLocale */.t.SkGL7l, obj), "SEND_FAILED (" + num + ")");
+        const formatToPlainStringResult = intl.formatToPlainString(require(1236) /* getSystemLocale */.t.SkGL7l, obj);
       }
     }
   },
-  sendExplicitMediaClydeError(channelId, attachments1, EXPLICIT_MEDIA_MESSAGE_SEND_BLOCKED) {
+  sendExplicitMediaClydeError(c0, attachments, EXPLICIT_MEDIA_ADD_MEDIA_TO_FORUM_POST_BLOCKED) {
     let message;
     let messageName;
-    const channel = store.getChannel(channelId);
+    const channel = store.getChannel(c0);
     if (null != channel) {
-      let obj = { isDM: channel.isDM(), isGDM: channel.isGroupDM() };
-      const match = require(4364) /* n */.match(obj);
-      obj = { isDM: true };
-      const str2 = require(4364) /* n */;
-      const withResult = match.with(obj, () => {
-        const obj = {};
-        const intl = outer1_0(outer1_3[46]).intl;
-        obj.message = intl.string(outer1_0(outer1_3[46]).t["mktny/"]);
-        obj.messageName = "BOT_DM_EXPLICIT_CONTENT";
+      let obj = { isDM: null, isGDM: null };
+      obj[0] = channel.isDM();
+      obj[1] = channel.isGroupDM();
+      const match = require(4389) /* t */.match(obj);
+      const str = require(4389) /* t */;
+      const withResult = match.with({ isDM: true }, () => {
+        const obj = { message: null, messageName: "BOT_DM_EXPLICIT_CONTENT" };
+        const intl = callback(1236).intl;
+        obj[0] = intl.string(callback(1236).t["mktny/"]);
         return obj;
       });
-      const withResult1 = match.with(obj, () => {
-        const obj = {};
-        const intl = outer1_0(outer1_3[46]).intl;
-        obj.message = intl.string(outer1_0(outer1_3[46]).t["mktny/"]);
-        obj.messageName = "BOT_DM_EXPLICIT_CONTENT";
+      const withResult1 = match.with({ isDM: true }, () => {
+        const obj = { message: null, messageName: "BOT_DM_EXPLICIT_CONTENT" };
+        const intl = callback(1236).intl;
+        obj[0] = intl.string(callback(1236).t["mktny/"]);
         return obj;
       }).with({ isDM: false, isGDM: true }, () => {
-        const obj = {};
-        const intl = outer1_0(outer1_3[46]).intl;
-        obj.message = intl.string(outer1_0(outer1_3[46]).t["mktny/"]);
-        obj.messageName = "BOT_GDM_EXPLICIT_CONTENT";
+        const obj = { message: null, messageName: "BOT_GDM_EXPLICIT_CONTENT" };
+        const intl = callback(1236).intl;
+        obj[0] = intl.string(callback(1236).t["mktny/"]);
         return obj;
       });
-      ({ message, messageName } = match.with(obj, () => {
-        const obj = {};
-        const intl = outer1_0(outer1_3[46]).intl;
-        obj.message = intl.string(outer1_0(outer1_3[46]).t["mktny/"]);
-        obj.messageName = "BOT_DM_EXPLICIT_CONTENT";
+      ({ message, messageName } = match.with({ isDM: true }, () => {
+        const obj = { message: null, messageName: "BOT_DM_EXPLICIT_CONTENT" };
+        const intl = callback(1236).intl;
+        obj[0] = intl.string(callback(1236).t["mktny/"]);
         return obj;
       }).with({ isDM: false, isGDM: true }, () => {
-        const obj = {};
-        const intl = outer1_0(outer1_3[46]).intl;
-        obj.message = intl.string(outer1_0(outer1_3[46]).t["mktny/"]);
-        obj.messageName = "BOT_GDM_EXPLICIT_CONTENT";
+        const obj = { message: null, messageName: "BOT_GDM_EXPLICIT_CONTENT" };
+        const intl = callback(1236).intl;
+        obj[0] = intl.string(callback(1236).t["mktny/"]);
         return obj;
       }).otherwise(() => {
-        const obj = {};
-        const intl = outer1_0(outer1_3[46]).intl;
-        obj.message = intl.string(outer1_0(outer1_3[46]).t.i4AbAS);
-        obj.messageName = "BOT_GUILD_EXPLICIT_CONTENT";
+        const obj = { message: null, messageName: "BOT_GUILD_EXPLICIT_CONTENT" };
+        const intl = callback(1236).intl;
+        obj[0] = intl.string(callback(1236).t.i4AbAS);
         return obj;
       }));
-      const otherwiseResult = match.with(obj, () => {
-        const obj = {};
-        const intl = outer1_0(outer1_3[46]).intl;
-        obj.message = intl.string(outer1_0(outer1_3[46]).t["mktny/"]);
-        obj.messageName = "BOT_DM_EXPLICIT_CONTENT";
+      const otherwiseResult = match.with({ isDM: true }, () => {
+        const obj = { message: null, messageName: "BOT_DM_EXPLICIT_CONTENT" };
+        const intl = callback(1236).intl;
+        obj[0] = intl.string(callback(1236).t["mktny/"]);
         return obj;
       }).with({ isDM: false, isGDM: true }, () => {
-        const obj = {};
-        const intl = outer1_0(outer1_3[46]).intl;
-        obj.message = intl.string(outer1_0(outer1_3[46]).t["mktny/"]);
-        obj.messageName = "BOT_GDM_EXPLICIT_CONTENT";
+        const obj = { message: null, messageName: "BOT_GDM_EXPLICIT_CONTENT" };
+        const intl = callback(1236).intl;
+        obj[0] = intl.string(callback(1236).t["mktny/"]);
         return obj;
       }).otherwise(() => {
-        const obj = {};
-        const intl = outer1_0(outer1_3[46]).intl;
-        obj.message = intl.string(outer1_0(outer1_3[46]).t.i4AbAS);
-        obj.messageName = "BOT_GUILD_EXPLICIT_CONTENT";
+        const obj = { message: null, messageName: "BOT_GUILD_EXPLICIT_CONTENT" };
+        const intl = callback(1236).intl;
+        obj[0] = intl.string(callback(1236).t.i4AbAS);
         return obj;
       });
-      const nonce = require(6021) /* snowflakeSequence */.createNonce();
-      obj14.sendBotMessage(channelId, message, messageName, nonce);
-      const obj9 = require(6021) /* snowflakeSequence */;
-      let obj1 = { action: require(5844) /* timeoutAttachmentsAndEmbedsForMessage */.TrackMediaRedactionActionType.EXPLICIT_MEDIA_FALSE_POSITIVE_CLYDE_MESSAGE_SENT, messageId: nonce, channelId, context: EXPLICIT_MEDIA_MESSAGE_SEND_BLOCKED };
-      const result = require(5844) /* timeoutAttachmentsAndEmbedsForMessage */.trackMediaRedactionAction(obj1);
-      let tmp = null != attachments1;
+      const nonce = require(6039) /* snowflakeSequence */.createNonce();
+      obj14.sendBotMessage(c0, message, messageName, nonce);
+      const obj8 = require(6039) /* snowflakeSequence */;
+      obj = { action: null, messageId: null, channelId: null, context: null };
+      obj[0] = require(5862) /* redactionSettingToRenderedString */.TrackMediaRedactionActionType.EXPLICIT_MEDIA_FALSE_POSITIVE_CLYDE_MESSAGE_SENT;
+      obj[1] = nonce;
+      obj[2] = c0;
+      obj[3] = EXPLICIT_MEDIA_ADD_MEDIA_TO_FORUM_POST_BLOCKED;
+      const result = require(5862) /* redactionSettingToRenderedString */.trackMediaRedactionAction(obj);
+      let tmp = null != attachments;
       if (tmp) {
-        tmp = attachments1.length > 0;
+        tmp = attachments.length > 0;
       }
       if (tmp) {
-        obj1 = importDefault(686);
-        const obj2 = { type: "MESSAGE_EXPLICIT_CONTENT_FP_CREATE", messageId: nonce, channelId, attachments: attachments1 };
-        obj1.dispatch(obj2);
+        let obj1 = importDefault(709);
+        obj1 = { type: "MESSAGE_EXPLICIT_CONTENT_FP_CREATE", messageId: null, channelId: null, attachments: null };
+        obj1[1] = nonce;
+        obj1[2] = c0;
+        obj1[3] = attachments;
+        obj1.dispatch(obj1);
       }
-      const obj10 = require(5844) /* timeoutAttachmentsAndEmbedsForMessage */;
+      const obj9 = require(5862) /* redactionSettingToRenderedString */;
     }
   },
   truncateMessages(channelId, truncateBottom, truncateTop) {
-    let obj = importDefault(686);
+    let obj = importDefault(709);
     obj = { type: "TRUNCATE_MESSAGES", channelId, truncateBottom, truncateTop };
     obj.dispatch(obj);
   },
   clearChannel(channelId) {
-    let obj = importDefault(686);
+    let obj = importDefault(709);
     obj = { type: "CLEAR_MESSAGES", channelId };
     obj.dispatch(obj);
   },
-  jumpToPresent(channelId, limit) {
+  jumpToPresent(channelId) {
+    let obj = obj14;
     obj14.trackJump(channelId, null, "Present");
-    let obj = { present: true };
-    if (closure_23.hasPresent(channelId)) {
-      obj = { type: "LOAD_MESSAGES_SUCCESS_CACHED" };
-      obj.jump = obj;
-      obj.channelId = channelId;
-      obj.limit = limit;
-      importDefault(686).dispatch(obj);
-      const obj3 = importDefault(686);
+    obj = { present: true };
+    if (reinjectEphemerals.hasPresent(channelId)) {
+      obj = { type: "LOAD_MESSAGES_SUCCESS_CACHED", jump: null, channelId: null, limit: null };
+      obj[1] = obj;
+      obj[2] = channelId;
+      obj[3] = arg1;
+      importDefault(709).dispatch(obj);
+      const obj4 = importDefault(709);
     } else {
-      obj = { channelId, limit };
-      obj.jump = obj;
-      const messages = obj14.fetchMessages(obj);
+      const obj1 = { channelId: null, limit: null, jump: null };
+      obj1[0] = channelId;
+      obj1[1] = arg1;
+      obj1[2] = obj;
+      const messages = obj.fetchMessages(obj1);
     }
   },
   trackJump(channelId, id, Present, extraProperties) {
-    let obj = importDefault(4359);
+    let obj = importDefault(4384);
     obj = { context: Present, channel_id: channelId, message_id: id };
     const merged = Object.assign(extraProperties);
     obj.trackWithMetadata(constants.JUMP, obj);
@@ -574,22 +563,19 @@ let obj14 = {
       extraProperties = null;
     }
     ({ isPreload, returnMessageId, skipLocalFetch, jumpType, avoidInitialScroll, onJumpComplete } = arg0);
-    if ("string" === typeof context) {
+    if (typeof context !== "init") {
       obj14.trackJump(channelId, messageId, context, extraProperties);
     }
-    let tmp8 = null == MediaPlayerManager;
-    if (!tmp8) {
-      tmp8 = null == MediaPlayerManager.pauseAllMediaPlayers;
+    if (MediaPlayerManager != null) {
+      const pauseAllMediaPlayers = MediaPlayerManager.pauseAllMediaPlayers;
+      if (pauseAllMediaPlayers != null) {
+        pauseAllMediaPlayers();
+      }
     }
-    if (!tmp8) {
-      MediaPlayerManager.pauseAllMediaPlayers();
-    }
-    obj = { channelId, limit: closure_36, jump: obj, isPreload, skipLocalFetch, avoidInitialScroll };
-    obj = { messageId, flash, offset, returnMessageId, jumpType, onJumpComplete };
-    return obj14.fetchMessages(obj);
+    return obj14.fetchMessages({ channelId, limit: closure_34, jump: { messageId, flash, offset, returnMessageId, jumpType, onJumpComplete }, isPreload, skipLocalFetch, avoidInitialScroll });
   },
   focusMessage(channelId) {
-    obj = { channelId: channelId.channelId, limit: closure_36, focus: obj };
+    obj = { channelId: channelId.channelId, limit: closure_34, focus: obj };
     obj = { messageId: channelId.messageId };
     const messages = obj14.fetchMessages(obj);
   },
@@ -597,178 +583,250 @@ let obj14 = {
     let importDefault;
     let require;
     ({ channelId: require, messageId: importDefault } = arg0);
-    return callback(async () => {
-      const HTTP = outer2_0(outer2_3[54]).HTTP;
-      obj = { url: outer2_30.MESSAGES(outer1_0), query: obj, retries: 2, oldFormErrors: true };
-      obj = { limit: 1, around: outer1_1, rejectWithError: outer2_0(outer2_3[54]).rejectWithMigratedError() };
-      const tmp = yield HTTP.get(obj);
-      if (tmp.body.length > 0) {
-        return outer2_0(outer2_3[55]).createMessageRecord(tmp.body[0]);
+    return callback(function*() {
+      if (dependencyMap === 2) {
+        dependencyMap = 3;
+        HermesBuiltin.throwTypeError();
+      } else if (tmp4 === 3) {
+        if (arg0 === 1) {
+          throw arg1;
+        } else if (arg0 === 2) {
+          let obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
+        } else {
+          return { value: "HermesInternal", done: null };
+        }
+      } else {
+        try {
+          dependencyMap = 2;
+          if (0 === c2) {
+            if (arg0 === 1) {
+              dependencyMap = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              dependencyMap = 3;
+              obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            } else {
+              let closure_1 = tmp2;
+              let closure_0 = 0;
+              closure_0 = undefined;
+              const HTTP = outer1_0(530).HTTP;
+              const obj1 = { url: null, query: null, retries: 2, oldFormErrors: true, rejectWithError: null };
+              obj1[0] = outer1_28.MESSAGES(outer1_0);
+              const obj2 = { limit: 1, around: null };
+              obj2[1] = outer1_1;
+              obj1[1] = obj2;
+              obj1[4] = outer1_0(530).rejectWithMigratedError();
+              c2 = 1;
+              dependencyMap = 1;
+              const obj3 = { value: null, done: false };
+              obj3[0] = HTTP.get(obj1);
+              return obj3;
+            }
+          } else if (arg0 === 1) {
+            dependencyMap = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            dependencyMap = 3;
+            const obj4 = { value: null, done: true };
+            obj4[0] = arg1;
+            return obj4;
+          } else {
+            closure_0 = arg1;
+            if (closure_0.body.length > 0) {
+              obj = outer1_0(4409);
+              dependencyMap = 3;
+              const obj5 = { value: null, done: true };
+              obj5[0] = obj.createMessageRecord(closure_0.body[0]);
+              return obj5;
+            } else {
+              dependencyMap = 3;
+              return { value: "HermesInternal", done: null };
+            }
+          }
+        } catch (tmp11) {
+          dependencyMap = tmp;
+          throw tmp11;
+        }
       }
-      const obj3 = outer2_0(outer2_3[54]);
     })();
   },
   fetchMessages(channelId) {
-    let closure_6;
-    let closure_7;
+    let _handleConnectionOpen;
+    let updateSubmittedGuildJoinRequestTotal;
     let feature;
     let fetchKey;
     let focus;
     let isPreload;
     let skipLocalFetch;
     let truncate;
-    const self = this;
     channelId = channelId.channelId;
     const before = channelId.before;
     const after = channelId.after;
     const limit = channelId.limit;
-    const jump = channelId.jump;
+    let jump = channelId.jump;
     ({ focus, truncate } = channelId);
-    ({ forICYMI: closure_6, avoidInitialScroll: closure_7, fetchKey } = channelId);
+    ({ forICYMI: _handleConnectionOpen, avoidInitialScroll: updateSubmittedGuildJoinRequestTotal, fetchKey } = channelId);
+    let closure_9;
+    let timestamp;
     let messageId;
-    let c12;
+    let obj1;
     ({ isPreload, skipLocalFetch, feature } = channelId);
     const channel = store.getChannel(channelId);
-    let closure_9 = fetchKey.isConnectedOrOverlay();
-    let timestamp = Date.now();
+    closure_9 = connectedOrOverlay.isConnectedOrOverlay();
+    timestamp = Date.now();
     if (null != channel) {
       if (channel.type === constants2.GUILD_STORE) {
         return false;
       }
     }
-    if (channelId !== channelId(limit[56]).FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID) {
+    if (channelId !== channelId(limit[53]).FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID) {
       const _JSON = JSON;
       const _HermesInternal = HermesInternal;
-      importDefaultResult1.log("Fetching messages for " + channelId + " between " + after + " and " + before + ". jump=" + JSON.stringify(jump));
-      let obj = { channelId, before, after, limit, jump, focus, truncate };
+      tmp5.log("Fetching messages for " + channelId + " between " + after + " and " + before + ". jump=" + JSON.stringify(jump));
+      let obj = { channelId: null, before: null, after: null, limit: null, jump: null, focus: null, truncate: null };
+      obj[0] = channelId;
+      obj[1] = before;
+      obj[2] = after;
+      obj[3] = limit;
+      obj[4] = jump;
+      obj[5] = focus;
+      obj[6] = truncate;
       if (!obj14._tryFetchMessagesCached(obj)) {
-        let fetchMessages = before(limit[57]).fetchMessages;
+        let fetchMessages = before(tmp5[54]).fetchMessages;
         fetchMessages.recordStart();
-        obj = before(limit[58]);
-        let tmp7 = timestamp;
-        if (null != fetchKey) {
-          tmp7 = fetchKey;
+        obj = before(tmp5[55]);
+        let tmp8 = fetchKey;
+        if (fetchKey == null) {
+          tmp8 = timestamp;
         }
-        let result = obj.recordChannelFetchStart(channelId, tmp7, before, after, limit);
-        let tmp15;
-        if (null != jump) {
-          tmp15 = jump;
-        }
+        let result = obj.recordChannelFetchStart(channelId, tmp8, before, after, limit);
         if (tmp16) {
           obj = {};
           const merged = Object.assign(focus);
-          tmp15 = obj;
+          jump = obj;
         }
-        let obj2 = before(limit[59]);
-        const orCreate = obj2.getOrCreate(channelId);
-        const start = orCreate.loadStart(tmp15);
-        before(limit[59]).commit(start);
-        const obj5 = before(limit[59]);
-        tmp16 = null == tmp15 && null != focus;
-        const obj1 = { type: "LOAD_MESSAGES" };
-        before(limit[49]).dispatch(obj1);
+        let tmp6Result = tmp6(tmp5[56]);
+        const orCreate = tmp6Result.getOrCreate(channelId);
+        const start = orCreate.loadStart(jump);
+        tmp6Result = tmp6(tmp5[56]);
+        tmp6Result.commit(start);
+        before(tmp5[46]).dispatch({ type: "LOAD_MESSAGES" });
         messageId = undefined;
-        if (null != tmp15) {
-          messageId = tmp15.messageId;
+        if (jump != null) {
+          messageId = jump.messageId;
         }
-        const prototype = ctor.prototype;
-        const tmp29 = new ctor();
-        c12 = tmp29;
+        if (typeof RemoteFetch !== "find") {
+          HermesBuiltin.throwTypeError();
+        }
+        obj1 = Object.create(RemoteFetch.prototype);
         if (!skipLocalFetch) {
-          if (null != fetchKey) {
-            timestamp = fetchKey;
+          const self = this;
+          if (fetchKey == null) {
+            fetchKey = timestamp;
           }
-          const localMessages = self.fetchLocalMessages(channelId, timestamp, before, after, limit, tmp30);
+          const localMessages = this.fetchLocalMessages(channelId, fetchKey, before, after, limit, obj1);
         }
-        const HTTP = channelId(limit[54]).HTTP;
-        obj2 = { url: closure_30.MESSAGES(channelId) };
-        const obj3 = { before, after, limit, around: messageId, preload: isPreload, feature };
-        obj2.query = obj3;
-        obj2.retries = 2;
-        obj2.oldFormErrors = true;
-        const obj6 = before(limit[49]);
-        obj2.rejectWithError = channelId(limit[54]).rejectWithMigratedError();
+        const HTTP = tmp4(tmp5[51]).HTTP;
+        const obj2 = { url: null, query: null, retries: 2, oldFormErrors: true, rejectWithError: null };
+        obj2[0] = closure_28.MESSAGES(channelId);
+        const obj3 = { before: null, after: null, limit: null, around: null, preload: null, feature: null };
+        obj3[0] = before;
+        obj3[1] = after;
+        obj3[2] = limit;
+        obj3[3] = messageId;
+        obj3[4] = isPreload;
+        obj3[5] = feature;
+        obj2[1] = obj3;
+        tmp16 = null == jump && null != focus;
+        const tmp24 = RemoteFetch;
+        const tmp6Result1 = before(tmp5[46]);
+        obj2[4] = tmp4(tmp5[51]).rejectWithMigratedError();
         const value = HTTP.get(obj2);
         return value.then((arg0) => {
           let closure_0 = arg0;
-          const fetchMessages = before(limit[57]).fetchMessages;
+          const fetchMessages = before(limit[54]).fetchMessages;
           fetchMessages.recordEnd();
-          const dispatchMessages = before(limit[57]).dispatchMessages;
+          const dispatchMessages = before(limit[54]).dispatchMessages;
           dispatchMessages.measure(() => {
             body = body.body;
             let flag = null != outer1_11;
             if (!flag) {
-              let tmp4 = body.length === outer1_3;
-              if (tmp4) {
-                let tmp5 = tmp;
-                if (!tmp) {
-                  let tmp7 = null == outer1_1;
-                  if (tmp7) {
-                    tmp7 = null == outer1_2;
-                  }
-                  tmp5 = tmp7;
+              let tmp7 = body.length === outer1_3;
+              if (tmp7) {
+                let tmp8 = tmp2;
+                if (!tmp2) {
+                  tmp8 = null == tmp && null == tmp3;
+                  const tmp9 = null == tmp && null == tmp3;
                 }
-                tmp4 = tmp5;
+                tmp7 = tmp8;
               }
-              flag = tmp4;
+              flag = tmp7;
             }
-            let flag2 = null != outer1_11;
+            let flag2 = null != tmp5;
             if (!flag2) {
-              let tmp9 = tmp2;
-              if (tmp2) {
-                tmp9 = body.length === outer1_3;
+              let tmp10 = tmp4;
+              if (tmp4) {
+                tmp10 = body.length === outer1_3;
               }
-              flag2 = tmp9;
+              flag2 = tmp10;
             }
-            let tmp11 = flag;
             let flag3 = flag2;
+            let tmp12 = flag;
             if (null != outer1_11) {
               const _Math = Math;
               const rounded = Math.floor(outer1_3 / 2);
-              const items = [outer1_11];
+              const items = [tmp5];
               HermesBuiltin.arraySpread(body.map((id) => id.id), 1);
               const found = items.filter((arg0, arg1, arr) => arr.indexOf(arg0) === arg1);
-              const sorted = found.sort(before(limit[60]).compare);
-              const index = sorted.indexOf(outer1_11);
+              const sorted = found.sort(before(limit[57]).compare);
+              const index = sorted.indexOf(tmp5);
               if (index < rounded + outer1_3 % 2 - 1) {
                 flag = false;
               }
               if (body.length - index < rounded) {
                 flag2 = false;
               }
-              tmp11 = flag;
               flag3 = flag2;
+              tmp12 = flag;
               if (flag2) {
-                tmp11 = flag;
                 flag3 = flag2;
+                tmp12 = flag;
                 if (body.length > 0) {
-                  tmp11 = flag;
                   flag3 = flag2;
-                  if (body[0].id === outer2_25.lastMessageId(body)) {
+                  tmp12 = flag;
+                  if (body[0].id === outer2_23.lastMessageId(body)) {
                     flag3 = false;
-                    tmp11 = flag;
+                    tmp12 = flag;
                   }
                 }
               }
             }
-            outer2_51.log("Fetched " + body.length + " messages for " + body + " isBefore:" + null != outer1_1 + " isAfter:" + null != outer1_2);
+            outer2_49.log("Fetched " + body.length + " messages for " + body + " isBefore:" + null != outer1_1 + " isAfter:" + null != outer1_2);
             outer1_12.markComplete();
-            let obj = before(limit[49]);
-            obj = { type: "LOAD_MESSAGES_SUCCESS", channelId: body, messages: body, isBefore: tmp, isAfter: tmp2, hasMoreBefore: tmp11, hasMoreAfter: flag3, limit: outer1_3, jump: outer1_4, forICYMI: outer1_6 };
-            let tmp16 = !outer1_9;
-            if (!tmp16) {
-              tmp16 = fetchKey.lastTimeConnectedChanged() >= outer1_10;
+            let obj = before(limit[46]);
+            obj = { type: "LOAD_MESSAGES_SUCCESS", channelId: body, messages: body, isBefore: tmp2, isAfter: tmp4, hasMoreBefore: tmp12, hasMoreAfter: flag3, limit: outer1_3, jump: outer1_4, forICYMI: outer1_6, isStale: null, truncate: null, avoidInitialScroll: null };
+            let tmp19 = !outer1_9;
+            if (outer1_9) {
+              tmp19 = outer2_6.lastTimeConnectedChanged() >= outer1_10;
             }
-            obj.isStale = tmp16;
-            obj.truncate = outer1_5;
-            obj.avoidInitialScroll = outer1_7;
+            obj[10] = tmp19;
+            obj[11] = outer1_5;
+            obj[12] = outer1_7;
             obj.dispatch(obj);
-            const result = before(limit[58]).recordChannelFetchedNetwork(body, null != outer1_8 ? outer1_8 : outer1_10, outer1_1, outer1_2, outer1_3, body);
+            let tmp23 = outer1_8;
+            if (outer1_8 == null) {
+              tmp23 = outer1_10;
+            }
+            const result = before(limit[55]).recordChannelFetchedNetwork(body, tmp23, tmp, tmp3, outer1_3, body);
           });
           return true;
         }, () => {
-          outer1_51.log("Failed to fetch messages for " + channelId);
-          let obj = before(limit[49]);
+          outer1_49.log("Failed to fetch messages for " + channelId);
+          let obj = before(limit[46]);
           obj = { type: "LOAD_MESSAGES_FAILURE", channelId };
           obj.dispatch(obj);
           return false;
@@ -776,108 +834,221 @@ let obj14 = {
       }
     }
   },
-  fetchLocalMessages(channelId, timestamp, before, after, limit, arg5) {
+  fetchLocalMessages(channelId, fetchKey, before, after, limit, arg5) {
     let closure_0 = channelId;
-    let closure_1 = timestamp;
+    let closure_1 = fetchKey;
     let closure_2 = before;
     let closure_3 = after;
-    let _createForOfIteratorHelperLoose = limit;
+    let ClickArea = limit;
     const callback = arg5;
-    return callback(async () => {
-      let c0;
-      const basicChannel = outer2_19.getBasicChannel(outer1_0);
-      let obj = callback2(4838);
-      const orCreate = obj.getOrCreate(outer1_0);
-      const databaseResult = callback2(1883).database();
-      c0 = databaseResult;
-      if (null != databaseResult) {
-        if (null != basicChannel) {
-          if (null == outer1_2) {
-            if (null == outer1_3) {
-              if (orCreate.ready) {
-                if (!orCreate.cached) {
-                  callback2(14).addLocalMessages(outer1_0, -2);
-                  const obj4 = callback2(14);
-                }
-              }
-              const tmp13 = yield callback(1902).tryLoadAsync(() => callback(table[63]).load(c0, outer2_0, outer2_4));
-              if (null != tmp13) {
-                const _HermesInternal = HermesInternal;
-                outer2_51.log("fetched " + tmp13.messages.length + " messages from local database (channel_id: " + outer1_0 + ", remote_fetch_completed: " + outer1_5.completed + ")");
-                callback2(14).addLocalMessages(outer1_0, tmp13.messages.length);
-                if (!outer1_5.completed) {
-                  if (tmp13.messages.length > 0) {
-                    let tmp28 = tmp13.messages.length >= outer1_4;
-                    if (tmp28) {
-                      tmp28 = tmp13.connectionId === outer2_8.lastTimeConnectedChanged();
+    return callback(function*() {
+      if (dependencyMap === 2) {
+        dependencyMap = 3;
+        HermesBuiltin.throwTypeError();
+      } else if (tmp4 === 3) {
+        if (arg0 === 1) {
+          throw arg1;
+        } else if (arg0 === 2) {
+          let obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
+        } else {
+          return { value: "HermesInternal", done: null };
+        }
+      } else {
+        try {
+          dependencyMap = 2;
+          if (0 === closure_2) {
+            if (arg0 === 1) {
+              dependencyMap = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              dependencyMap = 3;
+              obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            } else {
+              let c1 = tmp2;
+              let basicChannel = num2;
+              basicChannel = undefined;
+              c1 = undefined;
+              closure_2 = undefined;
+              dependencyMap = undefined;
+              basicChannel = outer1_17.getBasicChannel(outer1_0);
+              const orCreate = outer1_1(4860).getOrCreate(outer1_0);
+              const obj13 = outer1_1(4860);
+              const databaseResult = outer1_1(1907).database();
+              c1 = databaseResult;
+              if (null != databaseResult) {
+                if (null != basicChannel) {
+                  if (null == c2) {
+                    if (null == dependencyMap) {
+                      if (orCreate.ready) {
+                        if (!orCreate.cached) {
+                          outer1_1(9).addLocalMessages(outer1_0, -2);
+                          const obj8 = outer1_1(9);
+                        }
+                      }
+                      closure_2 = 1;
+                      dependencyMap = 1;
+                      let obj1 = { value: null, done: false };
+                      obj1[0] = outer1_0(1926).tryLoadAsync(() => outer2_1(table[60]).load(c1, basicChannel, outer1_4));
+                      return obj1;
                     }
-                    const obj8 = callback2(5726);
-                    const result = obj8.recordChannelFetchedLocal(outer1_0, outer1_1, outer1_2, outer1_3, outer1_4, tmp13.messages);
-                    obj = { type: "LOCAL_MESSAGES_LOADED", guildId: basicChannel.guild_id, channelId: outer1_0 };
-                    ({ users: obj10.users, members: obj10.members, messages: obj10.messages } = tmp13);
-                    obj.stale = !tmp28;
-                    callback2(686).dispatch(obj);
-                    const obj9 = callback2(686);
+                    dependencyMap = 3;
                   }
                 }
-                const obj7 = callback2(14);
-              } else {
-                callback2(14).addLocalMessages(outer1_0, -3);
-                const obj6 = callback2(14);
               }
-              const obj5 = callback(1902);
+              const obj14 = outer1_1(1907);
+              outer1_1(9).addLocalMessages(outer1_0, -1);
+              const obj7 = outer1_1(9);
+            }
+          } else if (arg0 === 1) {
+            dependencyMap = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            dependencyMap = 3;
+            let obj2 = { value: null, done: true };
+            obj2[0] = arg1;
+            return obj2;
+          } else {
+            closure_2 = arg1;
+            if (null == closure_2) {
+              obj = outer1_1(9);
+              obj.addLocalMessages(basicChannel, -3);
             }
           }
+          const _HermesInternal = HermesInternal;
+          outer1_49.log("fetched " + closure_2.messages.length + " messages from local database (channel_id: " + basicChannel + ", remote_fetch_completed: " + trackRoundtrip.completed + ")");
+          obj1 = outer1_1(9);
+          obj1.addLocalMessages(basicChannel, closure_2.messages.length);
+          if (!trackRoundtrip.completed) {
+            if (closure_2.messages.length > num2) {
+              let tmp30 = closure_2.messages.length >= ClickArea;
+              if (tmp30) {
+                tmp30 = closure_2.connectionId === outer1_6.lastTimeConnectedChanged();
+              }
+              dependencyMap = tmp30;
+              obj2 = outer1_1(5744);
+              const result = obj2.recordChannelFetchedLocal(basicChannel, c1, closure_2, dependencyMap, ClickArea, closure_2.messages);
+              let obj3 = outer1_1(709);
+              obj3 = { type: "LOCAL_MESSAGES_LOADED", guildId: null, channelId: null, users: null, members: null, messages: null, stale: null };
+              obj3[1] = basicChannel.guild_id;
+              obj3[2] = basicChannel;
+              obj3[3] = closure_2.users;
+              obj3[4] = closure_2.members;
+              obj3[5] = closure_2.messages;
+              obj3[6] = !dependencyMap;
+              obj3.dispatch(obj3);
+            }
+          }
+        } catch (tmp64) {
+          dependencyMap = tmp;
+          throw tmp64;
         }
       }
-      const obj2 = callback2(1883);
-      callback2(14).addLocalMessages(outer1_0, -1);
     })();
   },
-  fetchNewLocalMessages(channelId, closure_18) {
+  fetchNewLocalMessages(channelId, closure_13) {
     let closure_0 = channelId;
-    let closure_1 = closure_18;
-    return callback(async () => {
-      let c0;
-      let id;
-      const basicChannel = outer2_19.getBasicChannel(outer1_0);
-      let obj = callback2(outer2_3[61]);
-      const databaseResult = obj.database();
-      c0 = databaseResult;
-      if (null != databaseResult) {
-        if (null != basicChannel) {
-          if (!obj3.getOrCreate(outer1_0).hasMoreAfter) {
-            const tmp5 = yield callback(outer2_3[62]).tryLoadAsync(() => id(outer3_3[63]).load(c0, outer2_0, outer2_1));
-            if (null != tmp5) {
-              const orCreate = callback2(outer2_3[59]).getOrCreate(outer1_0);
+    let closure_1 = closure_13;
+    return callback(function*() {
+      if (c3 === 2) {
+        c3 = 3;
+        HermesBuiltin.throwTypeError();
+      } else if (tmp4 === 3) {
+        if (arg0 === 1) {
+          throw arg1;
+        } else if (arg0 === 2) {
+          let obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
+        } else {
+          return { value: "HermesInternal", done: null };
+        }
+      } else {
+        try {
+          c3 = 2;
+          if (0 === orCreate) {
+            if (arg0 === 1) {
+              c3 = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              c3 = 3;
+              obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            } else {
+              let c1 = tmp2;
+              let basicChannel = 0;
+              basicChannel = undefined;
+              c1 = undefined;
+              orCreate = undefined;
+              c3 = undefined;
+              let id;
+              let messages;
+              basicChannel = outer1_17.getBasicChannel(outer1_0);
+              const databaseResult = outer1_1(c3[58]).database();
+              c1 = databaseResult;
+              if (null != databaseResult) {
+                if (null != basicChannel) {
+                  let obj1 = outer1_1(c3[56]);
+                  orCreate = obj1.getOrCreate(outer1_0);
+                  if (!orCreate.hasMoreAfter) {
+                    let obj2 = outer1_0(c3[59]);
+                    orCreate = 1;
+                    c3 = 1;
+                    obj1 = { value: null, done: false };
+                    obj1[0] = obj2.tryLoadAsync(() => outer2_1(5733).load(c1, basicChannel, c1));
+                    return obj1;
+                  }
+                }
+              }
+              c3 = 3;
+              const obj11 = outer1_1(c3[58]);
+            }
+          } else if (arg0 === 1) {
+            c3 = 3;
+            throw arg1;
+          } else if (arg0 !== 2) {
+            c3 = arg1;
+            if (null != c3) {
+              orCreate = outer1_1(c3[56]).getOrCreate(basicChannel);
               const lastResult = orCreate.last();
               id = undefined;
-              if (null != lastResult) {
+              if (lastResult != null) {
                 id = lastResult.id;
               }
               if (null == id) {
-                let messages = tmp5.messages;
+                messages = c3.messages;
               } else {
-                const messages1 = tmp5.messages;
-                messages = messages1.filter((id) => id(outer3_3[60]).compare(id.id, id) > 0);
+                messages = c3.messages;
+                messages = messages.filter((id) => outer2_1(11).compare(id.id, id) > 0);
               }
               const _HermesInternal = HermesInternal;
-              outer2_51.log("Fetched " + tmp5.messages.length + " messages from the cache after foregrounding. " + messages.length + " are new");
+              outer1_49.log("Fetched " + c3.messages.length + " messages from the cache after foregrounding. " + messages.length + " are new");
               if (0 !== messages.length) {
-                obj = { type: "LOCAL_MESSAGES_LOADED", guildId: basicChannel.guild_id, channelId: outer1_0 };
-                ({ users: obj7.users, members: obj7.members } = tmp5);
-                obj.messages = messages;
-                obj.stale = true;
-                const obj6 = callback2(outer2_3[49]);
-                obj.isForegroundCacheLoad = callback(outer2_3[64]).isIOSPushNotificationRawPayloadFixExperimentEnabled();
-                obj6.dispatch(obj);
-                const obj8 = callback(outer2_3[64]);
+                obj2 = { type: "LOCAL_MESSAGES_LOADED", guildId: null, channelId: null, users: null, members: null, messages: null, stale: true, isForegroundCacheLoad: null };
+                obj2[1] = outer1_0.guild_id;
+                obj2[2] = basicChannel;
+                obj2[3] = c3.users;
+                obj2[4] = c3.members;
+                obj2[5] = outer1_5;
+                const obj8 = outer1_1(c3[46]);
+                obj2[7] = outer1_0(c3[61]).isIOSPushNotificationRawPayloadFixExperimentEnabled();
+                obj8.dispatch(obj2);
+                const obj10 = outer1_0(c3[61]);
               }
-              const obj4 = callback2(outer2_3[59]);
+              const obj7 = outer1_1(c3[56]);
             }
-            const obj2 = callback(outer2_3[62]);
           }
-          obj3 = callback2(outer2_3[59]);
+          c3 = 3;
+          obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
+        } catch (tmp27) {
+          c3 = tmp;
+          throw tmp27;
         }
       }
     })();
@@ -891,23 +1062,27 @@ let obj14 = {
     let limit;
     let truncate;
     ({ channelId, before, after, limit, jump, focus, truncate } = arg0);
-    const messages = closure_23.getMessages(channelId);
+    const messages = reinjectEphemerals.getMessages(channelId);
     if (!messages.cached) {
       if (messages.ready) {
         let messageId;
-        if (null != jump) {
+        if (jump != null) {
           messageId = jump.messageId;
         }
         if (null == messageId) {
           let messageId1;
-          if (null != focus) {
+          if (focus != null) {
             messageId1 = focus.messageId;
           }
           if (null == messageId1) {
             if (null != before) {
               if (messages.hasBeforeCached(before)) {
-                let obj3 = importDefault(686);
-                let obj = { type: "LOAD_MESSAGES_SUCCESS_CACHED", channelId, before, limit, truncate };
+                let obj3 = importDefault(709);
+                let obj = { type: "LOAD_MESSAGES_SUCCESS_CACHED", channelId: null, before: null, limit: null, truncate: null };
+                obj[1] = channelId;
+                obj[2] = before;
+                obj[3] = limit;
+                obj[4] = truncate;
                 obj3.dispatch(obj);
                 let flag = true;
               }
@@ -916,33 +1091,45 @@ let obj14 = {
             const tmp4 = null == after || !messages.hasAfterCached(after);
             flag = !tmp4;
             if (!tmp4) {
-              let obj1 = importDefault(686);
-              obj = { type: "LOAD_MESSAGES_SUCCESS_CACHED", channelId, after, limit, truncate };
+              let obj1 = importDefault(709);
+              obj = { type: "LOAD_MESSAGES_SUCCESS_CACHED", channelId: null, after: null, limit: null, truncate: null };
+              obj[1] = channelId;
+              obj[2] = after;
+              obj[3] = limit;
+              obj[4] = truncate;
               obj1.dispatch(obj);
               flag = true;
             }
           }
         }
         let messageId2;
-        if (null != jump) {
+        if (jump != null) {
           messageId2 = jump.messageId;
         }
         if (null != messageId2) {
           if (messages.has(jump.messageId, false)) {
-            obj1 = { type: "LOAD_MESSAGES_SUCCESS_CACHED", channelId, jump, limit, truncate };
-            importDefault(686).dispatch(obj1);
+            obj1 = { type: "LOAD_MESSAGES_SUCCESS_CACHED", channelId: null, jump: null, limit: null, truncate: null };
+            obj1[1] = channelId;
+            obj1[2] = jump;
+            obj1[3] = limit;
+            obj1[4] = truncate;
+            importDefault(709).dispatch(obj1);
             return true;
           }
         }
         let messageId3;
-        if (null != focus) {
+        if (focus != null) {
           messageId3 = focus.messageId;
         }
         let tmp13 = jump;
         if (null != messageId3) {
           if (messages.has(focus.messageId, false)) {
-            const obj2 = { type: "LOAD_MESSAGES_SUCCESS_CACHED", channelId, focus, limit, truncate };
-            importDefault(686).dispatch(obj2);
+            const obj2 = { type: "LOAD_MESSAGES_SUCCESS_CACHED", channelId: null, focus: null, limit: null, truncate: null };
+            obj2[1] = channelId;
+            obj2[2] = focus;
+            obj2[3] = limit;
+            obj2[4] = truncate;
+            importDefault(709).dispatch(obj2);
             return true;
           } else {
             obj3 = {};
@@ -951,50 +1138,61 @@ let obj14 = {
           }
         }
         let messageId4;
-        if (null != tmp13) {
+        if (tmp13 != null) {
           messageId4 = tmp13.messageId;
         }
-        let num3 = 0;
+        let num = 0;
         if (null != messageId4) {
           let messageId5;
-          if (null != tmp13) {
+          if (tmp13 != null) {
             messageId5 = tmp13.messageId;
           }
-          num3 = importDefault(21).extractTimestamp(messageId5);
-          const obj7 = importDefault(21);
+          num = importDefault(11).extractTimestamp(messageId5);
+          const obj7 = importDefault(11);
         }
         const firstResult = messages.first();
         const lastResult = messages.last();
-        let flag4 = !messages.hasMoreBefore && null != firstResult;
+        const hasMoreBefore = messages.hasMoreBefore;
+        let flag4 = !hasMoreBefore;
+        if (!hasMoreBefore) {
+          flag4 = null != firstResult;
+        }
         if (flag4) {
-          flag4 = importDefault(21).extractTimestamp(firstResult.id) >= num3;
-          const obj8 = importDefault(21);
+          flag4 = importDefault(11).extractTimestamp(firstResult.id) >= num;
+          const obj8 = importDefault(11);
         }
         if (!flag4) {
-          let tmp25 = !messages.hasMoreAfter && null != lastResult;
+          const hasMoreAfter = messages.hasMoreAfter;
+          let tmp25 = !hasMoreAfter;
+          if (!hasMoreAfter) {
+            tmp25 = null != lastResult;
+          }
           if (tmp25) {
-            tmp25 = importDefault(21).extractTimestamp(lastResult.id) <= num3;
-            const obj9 = importDefault(21);
+            tmp25 = importDefault(11).extractTimestamp(lastResult.id) <= num;
+            const obj9 = importDefault(11);
           }
           flag4 = tmp25;
         }
         if (!flag4) {
           let tmp28 = null != firstResult && null != lastResult;
           if (tmp28) {
-            tmp28 = importDefault(21).extractTimestamp(firstResult.id) < num3;
-            const obj10 = importDefault(21);
+            tmp28 = importDefault(11).extractTimestamp(firstResult.id) < num;
+            const obj10 = importDefault(11);
           }
           if (tmp28) {
-            tmp28 = importDefault(21).extractTimestamp(lastResult.id) > num3;
-            const obj11 = importDefault(21);
+            tmp28 = importDefault(11).extractTimestamp(lastResult.id) > num;
+            const obj11 = importDefault(11);
           }
           flag4 = tmp28;
         }
         if (flag4) {
-          const obj4 = { type: "LOAD_MESSAGES_SUCCESS_CACHED", channelId, jump: tmp13, limit: closure_36 };
-          importDefault(686).dispatch(obj4);
+          const obj4 = { type: "LOAD_MESSAGES_SUCCESS_CACHED", channelId: null, jump: null, limit: null };
+          obj4[1] = channelId;
+          obj4[2] = tmp13;
+          obj4[3] = closure_34;
+          importDefault(709).dispatch(obj4);
           flag4 = true;
-          const obj12 = importDefault(686);
+          const obj12 = importDefault(709);
         }
         return flag4;
       }
@@ -1002,56 +1200,115 @@ let obj14 = {
     return false;
   },
   sendMessage(arg0, arg1) {
-    let flag = arg2;
     let closure_0 = arg0;
     let closure_1 = arg1;
+    let flag = arg2;
     if (arg2 === undefined) {
       flag = true;
     }
     let closure_3 = arg3;
-    return callback(async () => {
-      let c0;
-      if (outer1_1.reaction) {
-        return Promise.resolve();
-      } else {
-        const tmp4 = yield closure_1(closure_3[65])(outer1_0);
-        if (null != tmp4) {
-          return outer2_56.sendMessage(tmp4, outer1_1, outer1_2, outer1_3);
+    return callback(function*() {
+      if (c4 === 2) {
+        c4 = 3;
+        HermesBuiltin.throwTypeError();
+      } else if (tmp4 === 3) {
+        if (arg0 === 1) {
+          throw arg1;
+        } else if (arg0 === 2) {
+          let obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
         } else {
-          let nonce = outer1_3.nonce;
-          if (null == nonce) {
-            let obj = callback(6021);
-            nonce = obj.createNonce();
-          }
-          obj = {};
-          const merged = Object.assign(outer1_3);
-          obj["nonce"] = nonce;
-          outer1_3 = obj;
-          const backgroundifyResult = callback2(6023).backgroundify(function _trySend() {
-            return outer3_56._sendMessage(outer2_0, outer2_1, outer2_3);
-          }, undefined);
-          c0 = backgroundifyResult;
-          const result = outer2_11.recordMessageSendAttempt(outer1_0, nonce, outer1_3);
-          if (outer2_23.isReady(outer1_0)) {
-            let backgroundifyResultResult = backgroundifyResult();
-          } else {
-            if (outer1_2) {
-              if (outer1_0 !== callback(5639).FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID) {
-                const _HermesInternal = HermesInternal;
-                outer2_52.info("Waiting for channel " + outer1_0 + " to be ready before sending.");
-                backgroundifyResultResult = new Promise((arg0, arg1) => {
-                  let closure_0 = arg0;
-                  let closure_1 = arg1;
-                  outer3_23.whenReady(outer2_0, () => {
-                    outer4_52.info("Channel " + outer3_0 + " is ready for sending now.");
-                    callback().then(callback, closure_1);
-                  });
-                });
+          return { value: "HermesInternal", done: null };
+        }
+      } else {
+        try {
+          c4 = 2;
+          if (0 === nonce) {
+            if (arg0 === 1) {
+              c4 = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              c4 = 3;
+              obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            } else {
+              let closure_2 = tmp5;
+              let closure_1 = tmp2;
+              let closure_0;
+              closure_1 = undefined;
+              closure_2 = undefined;
+              if (outer1_1.reaction) {
+                c4 = 3;
+                const obj1 = { value: null, done: true };
+                obj1[0] = Promise.resolve();
+                return obj1;
+              } else {
+                nonce = 1;
+                c4 = 1;
+                let obj2 = { value: null, done: false };
+                obj2[0] = outer1_1(nonce[62])(outer1_0);
+                return obj2;
               }
             }
-            backgroundifyResultResult = backgroundifyResult();
+          } else if (arg0 === 1) {
+            c4 = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            c4 = 3;
+            const obj3 = { value: null, done: true };
+            obj3[0] = arg1;
+            return obj3;
+          } else {
+            closure_0 = arg1;
+            if (null != closure_0) {
+              c4 = 3;
+              const obj4 = { value: null, done: true };
+              obj4[0] = outer1_55.sendMessage(outer1_0, outer1_1, outer1_2, nonce);
+              return obj4;
+            } else {
+              nonce = nonce.nonce;
+              closure_0 = nonce;
+              if (nonce == null) {
+                obj = outer1_0(nonce[49]);
+                closure_0 = obj.createNonce();
+              }
+              closure_1 = closure_0;
+              const obj5 = {};
+              const merged = Object.assign(nonce);
+              obj5.nonce = closure_1;
+              nonce = obj5;
+              obj2 = outer1_1(nonce[63]);
+              closure_2 = obj2.backgroundify(function _trySend() {
+                return outer1_55._sendMessage(closure_0, closure_1, c3);
+              }, undefined);
+              const result = outer1_9.recordMessageSendAttempt(outer1_0, closure_1, nonce);
+              if (outer1_21.isReady(outer1_0)) {
+                outer1_2();
+              } else {
+                if (outer1_2) {
+                  if (outer1_0 !== outer1_0(nonce[53]).FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID) {
+                    const _HermesInternal = HermesInternal;
+                    outer1_50.info("Waiting for channel " + closure_0 + " to be ready before sending.");
+                    new Promise((arg0, arg1) => {
+                      let closure_0 = arg0;
+                      let closure_1 = arg1;
+                      outer2_21.whenReady(closure_0, () => {
+                        outer3_50.info("Channel " + closure_0 + " is ready for sending now.");
+                        outer1_2().then(closure_0, closure_1);
+                      });
+                    });
+                  }
+                }
+                outer1_2();
+              }
+              c4 = 3;
+            }
           }
-          return backgroundifyResultResult;
+        } catch (tmp57) {
+          c4 = tmp;
+          throw tmp57;
         }
       }
     })();
@@ -1060,28 +1317,23 @@ let obj14 = {
     if (null == pendingReply) {
       let obj = {};
     } else {
-      obj = {};
-      obj = {};
       const channel = pendingReply.channel;
       const guildId = channel.getGuildId();
-      let tmp;
-      if (null != guildId) {
-        tmp = guildId;
-      }
-      obj.guild_id = tmp;
-      obj.channel_id = pendingReply.channel.id;
-      obj.message_id = pendingReply.message.id;
-      obj.messageReference = obj;
+      obj = { messageReference: null, allowedMentions: null, mediaMention: null };
+      obj = { guild_id: null, channel_id: null, message_id: null };
+      obj[0] = guildId;
+      obj[1] = pendingReply.channel.id;
+      obj[2] = pendingReply.message.id;
+      obj[0] = obj;
       let tmp2;
       if (!pendingReply.shouldMention) {
-        obj = {};
+        obj = { parse: null, replied_user: false };
         const _Object = Object;
-        obj.parse = Object.values(closure_38);
-        obj.replied_user = false;
+        obj[0] = Object.values(closure_36);
         tmp2 = obj;
       }
-      obj.allowedMentions = tmp2;
-      obj.mediaMention = pendingReply.mediaMention;
+      obj[1] = tmp2;
+      obj[2] = pendingReply.mediaMention;
     }
     return obj;
   },
@@ -1090,7 +1342,8 @@ let obj14 = {
     if (null != stickers) {
       if (0 !== stickers.length) {
         if (!tmp) {
-          let obj = { stickerIds: stickers };
+          let obj = { stickerIds: null };
+          obj[0] = stickers;
         }
         return obj;
       }
@@ -1102,7 +1355,8 @@ let obj14 = {
     if (null == scheduledTimestamp) {
       let obj = {};
     } else {
-      obj = { scheduledTimestamp };
+      obj = { scheduledTimestamp: null };
+      obj[0] = scheduledTimestamp;
     }
     return obj;
   },
@@ -1122,16 +1376,14 @@ let obj14 = {
     const merged6 = Object.assign(obj14.getSendMessageOptionsForAlsoForwardToChannel({}));
     return obj;
   },
-  sendInvite(id, code, _location, closure_1, content) {
-    const tmp = importDefault(6026)(code);
-    let combined = tmp;
+  sendInvite(c1, code, c3, c4, content) {
+    const tmp = importDefault(6044)(code);
+    content = tmp;
     if (null != content) {
       const _HermesInternal = HermesInternal;
-      combined = "" + content + "\n" + tmp;
+      content = "" + content + "\n" + tmp;
     }
-    let obj = { content: combined, tts: false, validNonShortcutEmojis: [], invalidEmojis: [] };
-    obj = { location: _location, inviteAnalyticsMetadata: closure_1 };
-    return obj14._sendMessage(id, obj, obj);
+    return obj14._sendMessage(c1, { content, tts: false, validNonShortcutEmojis: [], invalidEmojis: [] }, { location: c3, inviteAnalyticsMetadata: c4 });
   },
   sendActivityBookmark(arg0, content, location, inviteAnalyticsMetadata) {
     let obj = { content, tts: false, validNonShortcutEmojis: [], invalidEmojis: [] };
@@ -1140,829 +1392,1125 @@ let obj14 = {
   },
   sendStickers(id, items1, result, arg3) {
     let str = result;
-    let flag = arg4;
     if (result === undefined) {
       str = "";
     }
-    if (flag === undefined) {
+    let flag = arg4;
+    if (arg4 === undefined) {
       flag = false;
     }
-    if ("string" === typeof str) {
-      let obj = { content: str, invalidEmojis: [], validNonShortcutEmojis: [], tts: flag };
-      let tmp6 = obj;
+    if (typeof str === "y") {
+      let obj = { content: null, invalidEmojis: null, validNonShortcutEmojis: null, tts: null };
+      obj[0] = str;
+      obj[1] = [];
+      obj[2] = [];
+      obj[3] = flag;
+      let tmp = obj;
     } else {
       obj = {};
       const merged = Object.assign(str);
-      const tts = str.tts;
-      let tmp5 = flag;
-      if (null != tts) {
-        tmp5 = tts;
+      let tts = str.tts;
+      if (tts == null) {
+        tts = flag;
       }
-      obj["tts"] = tmp5;
-      tmp6 = obj;
+      obj.tts = tts;
+      tmp = obj;
     }
     obj = {};
     const merged1 = Object.assign(arg3);
-    obj["stickerIds"] = items1;
-    return obj14._sendMessage(id, tmp6, obj);
+    obj.stickerIds = items1;
+    return obj14._sendMessage(id, tmp, obj);
   },
-  sendGreetMessage(id, _749054660769218631, sendMessageOptionsForReply) {
+  sendGreetMessage(id, outer1_14, sendMessageOptionsForReply) {
     let allowedMentions;
     let messageReference;
-    let obj = sendMessageOptionsForReply;
     const _require = id;
-    let closure_1 = _749054660769218631;
+    let closure_1 = outer1_14;
+    let obj = sendMessageOptionsForReply;
     if (sendMessageOptionsForReply === undefined) {
       obj = {};
     }
     ({ messageReference, allowedMentions } = obj);
-    const HTTP = _require(507).HTTP;
-    obj = { url: closure_30.MESSAGES_GREET(id), body: { sticker_ids: items, allowed_mentions: allowedMentions, message_reference: messageReference }, oldFormErrors: true };
-    items = [_749054660769218631];
-    obj.rejectWithError = _require(507).rejectWithMigratedError();
+    const HTTP = _require(530).HTTP;
+    obj = { url: closure_28.MESSAGES_GREET(id), body: { sticker_ids: items, allowed_mentions: allowedMentions, message_reference: messageReference }, oldFormErrors: true, rejectWithError: null, context: null };
+    items = [outer1_14];
+    obj[3] = _require(530).rejectWithMigratedError();
     obj = { location: constants10.GREET };
-    obj.context = obj;
-    const obj3 = _require(507);
+    obj[4] = obj;
+    const obj3 = _require(530);
     return HTTP.post(obj).then((body) => {
-      v749054660769218631(outer1_3[68]).donateSentMessage(body.body.content, closure_0);
-      outer1_56.receiveMessage(closure_0, body.body);
-      const obj = v749054660769218631(outer1_3[68]);
-      const items = [v749054660769218631];
-      v749054660769218631(outer1_3[49]).dispatch({ type: "STICKER_TRACK_USAGE", stickerIds: items });
+      outer1_14(outer1_3[65]).donateSentMessage(body.body.content, closure_0);
+      outer1_55.receiveMessage(closure_0, body.body);
+      const obj = outer1_14(outer1_3[65]);
+      const items = [outer1_14];
+      outer1_14(outer1_3[46]).dispatch({ type: "STICKER_TRACK_USAGE", stickerIds: items });
       return body;
     }, (messageId) => {
-      outer1_51.log("Failed to send greeting");
+      outer1_49.log("Failed to send greeting");
       if (429 !== messageId.status) {
-        outer1_56.sendClydeError(closure_0, messageId.body.code);
+        outer1_55.sendClydeError(closure_0, messageId.body.code);
       }
-      let obj = v749054660769218631(outer1_3[49]);
+      let obj = outer1_14(outer1_3[46]);
       obj = { type: "MESSAGE_SEND_FAILED", messageId: messageId.body.id, channelId: closure_0 };
       obj.dispatch(obj);
       throw messageId;
     });
   },
-  sendPollMessage(id, arg1, arg2) {
+  sendPollMessage(id, poll, arg2) {
     let obj = arg2;
     if (arg2 === undefined) {
       obj = {};
     }
-    obj = { content: "", tts: false, validNonShortcutEmojis: [], invalidEmojis: [] };
     obj = {};
     const merged = Object.assign(obj);
-    obj["poll"] = arg1;
-    obj["location"] = constants10.POLL_CREATION;
-    return obj14._sendMessage(id, obj, obj);
+    obj.poll = poll;
+    obj.location = constants10.POLL_CREATION;
+    return obj14._sendMessage(id, { content: "", tts: false, validNonShortcutEmojis: [], invalidEmojis: [] }, obj);
   },
-  validateMessage(invalidEmojis, currentUser, outer1_0) {
+  validateMessage(invalidEmojis, currentUser, throwTypeErrorResult) {
     if (invalidEmojis.some((animated) => animated.animated)) {
-      let obj = importDefault(3811);
+      let obj = importDefault(3835);
       if (!obj.canUseAnimatedEmojis(currentUser)) {
-        const intl = require(1212) /* getSystemLocale */.intl;
-        let stringResult = intl.string(require(1212) /* getSystemLocale */.t["V5/GgC"]);
+        const intl = require(1236) /* getSystemLocale */.intl;
+        let stringResult = intl.string(require(1236) /* getSystemLocale */.t["V5/GgC"]);
         let str = "INVALID_ANIMATED_EMOJI_BODY";
       }
-      obj = { errorMessage: stringResult, errorMessageName: str };
+      obj = { errorMessage: null, errorMessageName: null };
+      obj[0] = stringResult;
+      obj[1] = str;
       return obj;
     }
-    const intl2 = require(1212) /* getSystemLocale */.intl;
-    stringResult = intl2.string(require(1212) /* getSystemLocale */.t["Q87rI/"]);
+    const intl2 = require(1236) /* getSystemLocale */.intl;
+    stringResult = intl2.string(require(1236) /* getSystemLocale */.t["Q87rI/"]);
     str = "INVALID_EXTERNAL_EMOJI_BODY";
   },
   _sendMessage(arg0, arg1, arg2) {
     let closure_0 = arg0;
     let closure_1 = arg1;
     let closure_2 = arg2;
-    return callback(async () => {
+    return callback(function*() {
       let _location;
       let activity;
       let activityAction;
       let allowedMentions;
       let announcementSendOptions;
       let attachments;
-      let attachments2;
       let attachmentsToUpload;
-      let c1;
-      let c13;
       let c3;
+      let c9;
+      let closure_1;
       let contentInventoryEntry;
       let flags;
       let invalidEmojis;
       let mediaMention;
-      let onAttachmentUploadError;
       let poll;
       let publish;
       let sharedCustomTheme;
       let stickerIds;
       let tts;
       let withCheckpoint;
-      let content;
-      c1 = undefined;
-      _location = undefined;
-      c3 = undefined;
-      stickerIds = undefined;
-      let messageReference;
-      poll = undefined;
-      contentInventoryEntry = undefined;
-      attachmentsToUpload = undefined;
-      let c9;
-      let DEFAULT;
-      let nonce;
-      nonce = undefined;
-      c13 = undefined;
-      let obj;
-      const promise = callback2(outer2_3[65])(outer1_0);
-      if (null != promise) {
-        let infoResult = outer2_52;
-        infoResult = outer2_52.info("Converting channel to a private channel");
-        return promise.then((arg0) => {
-          outer3_52.info("Finished converting channel to a private channel");
-          return outer3_56._sendMessage(arg0, outer2_1, outer2_2);
-        });
+      if (c8 === 2) {
+        c8 = 3;
+        let throwTypeErrorResult = HermesBuiltin.throwTypeError();
       } else {
-        infoResult = outer1_1;
-        content = outer1_1.content;
-        ({ invalidEmojis, validNonShortcutEmojis: c1, tts } = outer1_1);
-        infoResult = undefined !== tts && tts;
-        ({ activityAction, location: _location } = outer1_2);
-        ({ inviteAnalyticsMetadata: c3, stickerIds } = outer1_2);
-        messageReference = outer1_2.messageReference;
-        ({ allowedMentions, poll } = outer1_2);
-        ({ sharedCustomTheme, contentInventoryEntry } = outer1_2);
-        ({ attachments, attachmentsToUpload } = outer1_2);
-        ({ onAttachmentUploadError, announcementSendOptions, withCheckpoint, mediaMention, flags } = outer1_2);
-        let num2 = 0;
-        if (null != flags) {
-          num2 = flags;
-        }
-        const tmp6 = outer2_4(callback2(outer2_3[70])(content), 2);
-        let tmp8 = content;
-        let addFlagResult = num2;
-        if (tmp6[0]) {
-          content = tmp7;
-          obj = callback(outer2_3[71]);
-          addFlagResult = obj.addFlag(num2, outer2_35.SUPPRESS_NOTIFICATIONS);
-          tmp8 = tmp7;
-        }
-        let channel = outer2_19.getChannel(outer1_0);
-        let guild_id;
-        if (null != channel) {
-          guild_id = channel.guild_id;
-        }
-        const guild = outer2_21.getGuild(guild_id);
-        let obj1 = callback(outer2_3[72]);
-        let addFlagResult1 = addFlagResult;
-        if (obj1.canSendGuildOfficialMessages(guild, channel, "_sendMessage")) {
-          let obj2 = callback(outer2_3[71]);
-          addFlagResult1 = obj2.addFlag(addFlagResult, outer2_35.IS_GUILD_OFFICIAL);
-        }
-        let flag2 = false;
-        const messageReference2 = outer1_2.messageReference;
-        let type;
-        if (null != messageReference2) {
-          type = messageReference2.type;
-        }
-        c9 = tmp28;
-        if ("" === tmp8) {
-          if (null == activityAction) {
-            if (null == stickerIds) {
-              if (null == poll) {
-                if (null == sharedCustomTheme) {
-                  if (null == contentInventoryEntry) {
-                    if (!tmp28) {
-                      if (null == attachments) {
-                        if (!withCheckpoint) {
-                          if (null == outer1_1.components) {
-                            if (null != arr) {
-                              if (arr.length > 0) {
-                                flag2 = true;
+        throwTypeErrorResult = arg1;
+        throwTypeErrorResult = arg0;
+        throwTypeErrorResult = tmp6;
+        throwTypeErrorResult = globalThis;
+        throwTypeErrorResult = null;
+        if (tmp7 === 3) {
+          if (arg0 === 1) {
+            throw arg1;
+          } else if (arg0 === 2) {
+            let obj = { value: null, done: true };
+            obj[0] = arg1;
+            return obj;
+          } else {
+            return { value: "HermesInternal", done: null };
+          }
+        } else {
+          try {
+            c8 = 2;
+            if (0 === c7) {
+              if (arg0 === 1) {
+                c8 = 3;
+                throw arg1;
+              } else if (arg0 === 2) {
+                c8 = 3;
+                obj = { value: null, done: true };
+                obj[0] = arg1;
+                return obj;
+              } else {
+                stickerIds = tmp3;
+                c3 = tmp5;
+                let c0;
+                closure_1 = undefined;
+                let c2;
+                c3 = undefined;
+                stickerIds = undefined;
+                let messageReference;
+                let c6;
+                c7 = undefined;
+                c8 = undefined;
+                c9 = undefined;
+                let c10;
+                let c11;
+                let DEFAULT;
+                let closure_13;
+                let loadSavedGuildStickers;
+                let uploader;
+                let obj4;
+                let ensureGuildLoaded;
+                attachments = undefined;
+                let c19;
+                let c20;
+                let c21;
+                let c22;
+                let c23;
+                throwTypeErrorResult = outer1_1;
+                throwTypeErrorResult = outer1_3;
+                throwTypeErrorResult = outer1_0;
+                const promise = outer1_1(outer1_3[62])(outer1_0);
+                if (null != promise) {
+                  throwTypeErrorResult = outer1_50;
+                  throwTypeErrorResult = outer1_50.info("Converting channel to a private channel");
+                  c8 = 3;
+                  let obj1 = { value: null, done: true };
+                  obj1[0] = promise.then((arg0) => {
+                    outer1_50.info("Finished converting channel to a private channel");
+                    return outer1_55._sendMessage(arg0, closure_1, c2);
+                  });
+                  return obj1;
+                } else {
+                  throwTypeErrorResult = outer1_1;
+                  const content = outer1_1.content;
+                  c0 = content;
+                  ({ invalidEmojis, validNonShortcutEmojis: closure_1, tts } = outer1_1);
+                  let tmp40 = undefined !== tts;
+                  if (tmp40) {
+                    tmp40 = tts;
+                  }
+                  ({ activityAction, location: _location } = outer1_2);
+                  c2 = _location;
+                  ({ inviteAnalyticsMetadata: c3, stickerIds } = outer1_2);
+                  messageReference = outer1_2.messageReference;
+                  ({ allowedMentions, poll } = outer1_2);
+                  c6 = poll;
+                  ({ sharedCustomTheme, contentInventoryEntry } = outer1_2);
+                  c7 = contentInventoryEntry;
+                  ({ attachments, attachmentsToUpload } = outer1_2);
+                  c8 = attachmentsToUpload;
+                  ({ onAttachmentUploadError: c9, announcementSendOptions, withCheckpoint, mediaMention, flags } = outer1_2);
+                  c0 = flags;
+                  if (flags == null) {
+                    c0 = 0;
+                  }
+                  const tmp45 = outer1_4(throwTypeErrorResult(outer1_3[67])(content), 2);
+                  let addFlagResult = c0;
+                  let tmp48 = content;
+                  if (tmp45[0]) {
+                    c0 = tmp46;
+                    obj4 = outer1_0(outer1_3[68]);
+                    addFlagResult = obj4.addFlag(tmp42, outer1_33.SUPPRESS_NOTIFICATIONS);
+                    tmp48 = tmp46;
+                  }
+                  let channel = outer1_17.getChannel(throwTypeErrorResult);
+                  let guild_id;
+                  if (channel != null) {
+                    guild_id = channel.guild_id;
+                  }
+                  const guild = outer1_19.getGuild(guild_id);
+                  let obj5 = outer1_0(outer1_3[69]);
+                  let addFlagResult1 = addFlagResult;
+                  if (obj5.canSendGuildOfficialMessages(guild, channel, "_sendMessage")) {
+                    let obj6 = outer1_0(outer1_3[68]);
+                    addFlagResult1 = obj6.addFlag(addFlagResult, outer1_33.IS_GUILD_OFFICIAL);
+                  }
+                  c10 = false;
+                  const messageReference2 = tmp41.messageReference;
+                  let type;
+                  if (messageReference2 != null) {
+                    type = messageReference2.type;
+                  }
+                  c11 = tmp65;
+                  if ("" === tmp48) {
+                    if (null == activityAction) {
+                      if (null == stickerIds) {
+                        if (null == poll) {
+                          if (null == sharedCustomTheme) {
+                            if (null == contentInventoryEntry) {
+                              if (!tmp65) {
+                                if (null == attachments) {
+                                  if (!withCheckpoint) {
+                                    if (null == throwTypeErrorResult.components) {
+                                      if (null != attachmentsToUpload) {
+                                        if (attachmentsToUpload.length > 0) {
+                                          c10 = true;
+                                        }
+                                      }
+                                      c8 = 3;
+                                      let obj2 = { value: null, done: true };
+                                      obj2[0] = Promise.resolve();
+                                      return obj2;
+                                    }
+                                  }
+                                }
                               }
                             }
-                            return Promise.resolve();
                           }
                         }
                       }
                     }
                   }
-                }
-              }
-            }
-          }
-        }
-        if (null != messageReference) {
-          DEFAULT = outer2_37.REPLY;
-        } else {
-          DEFAULT = outer2_37.DEFAULT;
-        }
-        nonce = outer1_2.nonce;
-        if (null == nonce) {
-          let obj3 = callback(outer2_3[52]);
-          nonce = obj3.createNonce();
-        }
-        obj = { channelId: outer1_0, content: tmp8, tts: infoResult, type: DEFAULT, messageReference, allowedMentions };
-        let tmp44;
-        if (0 !== addFlagResult1) {
-          tmp44 = addFlagResult1;
-        }
-        obj.flags = tmp44;
-        obj.nonce = nonce;
-        const tmp42 = callback2(outer2_3[50]);
-        obj.poll = callback(outer2_3[73]).createPollServerDataFromCreateRequest(poll);
-        obj.sharedCustomTheme = sharedCustomTheme;
-        obj.mediaMention = mediaMention;
-        obj.mentionGames = outer1_1.mentionGames;
-        const tmp42Result = tmp42(obj);
-        if (false !== outer1_2.eagerDispatch) {
-          let result = callback(outer2_3[74]).updateComboOnMessageSend(outer1_0, tmp42Result.id);
-          if (null != stickerIds) {
-            const mapped = stickerIds.map((arg0) => outer3_16.getStickerById(arg0));
-            tmp42Result.sticker_items = mapped.filter((arg0) => null != arg0);
-          }
-          outer2_56.receiveMessage(outer1_0, tmp42Result, true, outer1_2);
-          let obj7 = callback(outer2_3[74]);
-        }
-        if (!outer2_53) {
-          if (null != invalidEmojis) {
-            if (invalidEmojis.length > 0) {
-              outer2_53 = true;
-              const validateMessageResult = outer2_56.validateMessage(invalidEmojis, outer2_27.getCurrentUser(), outer1_0);
-              outer2_56.sendBotMessage(outer1_0, validateMessageResult.errorMessage, validateMessageResult.errorMessageName);
-            }
-          }
-        }
-        obj = {};
-        if (null != announcementSendOptions) {
-          let SEND = callback(outer2_3[75]).MessageDataType.SEND_ANNOUNCEMENT;
-        } else {
-          SEND = callback(outer2_3[75]).MessageDataType.SEND;
-        }
-        obj.type = SEND;
-        obj1 = { channelId: outer1_0, content: tmp8, nonce, tts: infoResult, message_reference: messageReference, allowed_mentions: allowedMentions, flags: addFlagResult1, analyticsLocation: _location };
-        obj.message = obj1;
-        if (null != outer1_1.components) {
-          tmp76.message.components = outer1_1.components;
-        }
-        if (null != announcementSendOptions) {
-          ({ createThread: tmp76.message.create_thread, threadName: tmp76.message.title, publish } = announcementSendOptions);
-          let tmp81 = null != publish;
-          if (tmp81) {
-            tmp81 = publish;
-          }
-          tmp76.message.publish = tmp81;
-        }
-        if (null != activityAction) {
-          let session_id;
-          if (null != activityAction) {
-            session_id = activityAction.activity.session_id;
-          }
-          let sessionId = session_id;
-          if (activityAction.type !== outer2_45.JOIN_REQUEST) {
-            sessionId = session_id;
-            if (activityAction.type !== outer2_45.STREAM_REQUEST) {
-              sessionId = session_id;
-              if (null == session_id) {
-                sessionId = outer2_18.getSessionId();
-              }
-            }
-          }
-          if (null != sessionId) {
-            obj2 = { type: activityAction.type, session_id: sessionId };
-            ({ targetUserId: obj10.target_user_id, activity } = activityAction);
-            if (tmp87) {
-              obj2.party_id = activity.party.id;
-            }
-            tmp76.message.application_id = activity.application_id;
-            tmp76.message.activity = obj2;
-            tmp87 = null != activity.party && null != activity.party.id;
-          }
-        }
-        if (null != poll) {
-          tmp76.message.poll = poll;
-        }
-        if (null != sharedCustomTheme) {
-          tmp76.message.shared_client_theme = sharedCustomTheme;
-        }
-        if (null != stickerIds) {
-          tmp76.message.sticker_ids = stickerIds;
-        }
-        if (outer2_12.isEnabled()) {
-          tmp76.message.has_poggermode_enabled = true;
-        }
-        if (withCheckpoint) {
-          tmp76.message.with_checkpoint = true;
-        }
-        if (null != contentInventoryEntry) {
-          tmp76.message.content_inventory_entry = contentInventoryEntry;
-        }
-        if (null != mediaMention) {
-          tmp76.message.media_mention = mediaMention;
-        }
-        if (tmp97) {
-          tmp76.message.attachments = attachments;
-        }
-        if (null != attachmentsToUpload) {
-          infoResult = attachmentsToUpload;
-          if (arr.length > 0) {
-            infoResult = callback;
-            infoResult = outer2_3;
-            obj3 = {};
-            infoResult = outer1_0;
-            obj3.channelId = outer1_0;
-            obj3.nonce = nonce;
-            obj3.items = attachmentsToUpload;
-            obj3.message = tmp42Result;
-            infoResult = outer1_2;
-            infoResult = !outer1_2.doNotNotifyOnError;
-            obj3.shouldUploadFailureSendNotification = infoResult;
-            infoResult = yield callback(outer2_3[76]).uploadMessageAttachments(obj3);
-            if (null != infoResult) {
-              ({ attachments: attachments2, uploader: c13 } = infoResult);
-              if (flag2) {
-                infoResult = attachments2;
-                if (null != attachments2) {
-                  infoResult = attachments2;
-                }
-              }
-              infoResult = attachments2;
-              if (null != attachments2) {
-                infoResult = attachments2;
-                obj.message.attachments = attachments2.map((id) => content(outer3_3[48]).getAttachmentPayload(id, arg1));
-              }
-            }
-            let obj11 = callback(outer2_3[76]);
-          }
-        }
-        infoResult = globalThis;
-        infoResult = new.target;
-        infoResult = new.target;
-        infoResult = new Promise((arg0, arg1) => {
-          let closure_0 = arg0;
-          const _undefined = arg1;
-          let closure_2 = Date.now();
-          _undefined(outer3_3[75]).length;
-          const rounded = Math.floor(10000 * Math.random());
-          outer3_52.info("Queueing message to be sent LogId:" + rounded);
-          let obj = _undefined(outer3_3[75]);
-          obj.enqueue(obj, (ok) => {
-            let applicationStatus;
-            let body;
-            let guildId;
-            let userId;
-            const callback = ok;
-            if (ok.ok) {
-              let obj15 = callback2(outer4_3[68]);
-              obj15.donateSentMessage(callback, outer3_0);
-              let obj = {};
-              obj = { duration: message, queueSize: length };
-              obj.sendAnalytics = obj;
-              obj.poll = outer1_6;
-              outer4_56.receiveMessage(outer3_0, ok.body, true, obj);
-              if (null != outer3_2.alsoForwardToChannelId) {
-                let obj18 = callback2(outer4_3[78]);
-                let obj19 = callback(outer4_3[55]);
-                const sendForwardResult = obj18.sendForward(obj19.createMessageRecord(ok.body), outer3_2.alsoForwardToChannelId);
-                obj18.sendForward(obj19.createMessageRecord(ok.body), outer3_2.alsoForwardToChannelId).then(() => {
-                  let channelId;
-                  let destinationChannelId;
-                  let guildId;
-                  let referencedMessageId;
-                  const obj = {};
-                  const body = ok.body;
-                  let id;
-                  if (null != body) {
-                    id = body.id;
+                  if (null != messageReference) {
+                    DEFAULT = outer1_35.REPLY;
+                  } else {
+                    DEFAULT = outer1_35.DEFAULT;
                   }
-                  obj.referencedMessageId = id;
-                  const body2 = ok.body;
-                  let guild_id;
-                  if (null != body2) {
-                    guild_id = body2.guild_id;
+                  const nonce = tmp41.nonce;
+                  closure_1 = nonce;
+                  if (nonce == null) {
+                    let obj8 = outer1_0(outer1_3[49]);
+                    closure_1 = obj8.createNonce();
                   }
-                  obj.guildId = guild_id;
-                  const body3 = ok.body;
-                  let channel_id;
-                  if (null != body3) {
-                    channel_id = body3.channel_id;
+                  closure_13 = closure_1;
+                  loadSavedGuildStickers = closure_1;
+                  let obj3 = { channelId: null, content: null, tts: null, type: null, messageReference: null, allowedMentions: null, flags: null, nonce: null, poll: null, sharedCustomTheme: null, mediaMention: null, mentionGames: null };
+                  obj3[0] = throwTypeErrorResult;
+                  obj3[1] = tmp48;
+                  obj3[2] = tmp40;
+                  obj3[3] = DEFAULT;
+                  obj3[4] = messageReference;
+                  obj3[5] = allowedMentions;
+                  let tmp73;
+                  if (0 !== addFlagResult1) {
+                    tmp73 = addFlagResult1;
                   }
-                  obj.channelId = channel_id;
-                  obj.destinationChannelId = outer4_2.alsoForwardToChannelId;
-                  ({ referencedMessageId, guildId, channelId, destinationChannelId } = obj);
-                  callback(outer5_3[40]).track(outer5_29.MESSAGE_ALSO_SEND_TO_CHANNEL_SENT, { referenced_message_id: referencedMessageId, guild_id: guildId, channel_id: channelId, destination_channel_id: destinationChannelId });
-                }).catch((arg0) => {
-                  const obj = {};
-                  const body = ok.body;
-                  let id;
-                  const combined = "Failed to forward thread message to parent channel LogId:" + outer1_4;
-                  if (null != body) {
-                    id = body.id;
-                  }
-                  obj.referencedMessageId = id;
-                  obj.channelId = outer4_0;
-                  obj.destinationChannelId = outer4_2.alsoForwardToChannelId;
-                  obj.error = arg0.toString();
-                  outer5_51.log(combined, obj);
-                });
-                const nextPromise = obj18.sendForward(obj19.createMessageRecord(ok.body), outer3_2.alsoForwardToChannelId).then(() => {
-                  let channelId;
-                  let destinationChannelId;
-                  let guildId;
-                  let referencedMessageId;
-                  const obj = {};
-                  const body = ok.body;
-                  let id;
-                  if (null != body) {
-                    id = body.id;
-                  }
-                  obj.referencedMessageId = id;
-                  const body2 = ok.body;
-                  let guild_id;
-                  if (null != body2) {
-                    guild_id = body2.guild_id;
-                  }
-                  obj.guildId = guild_id;
-                  const body3 = ok.body;
-                  let channel_id;
-                  if (null != body3) {
-                    channel_id = body3.channel_id;
-                  }
-                  obj.channelId = channel_id;
-                  obj.destinationChannelId = outer4_2.alsoForwardToChannelId;
-                  ({ referencedMessageId, guildId, channelId, destinationChannelId } = obj);
-                  callback(outer5_3[40]).track(outer5_29.MESSAGE_ALSO_SEND_TO_CHANNEL_SENT, { referenced_message_id: referencedMessageId, guild_id: guildId, channel_id: channelId, destination_channel_id: destinationChannelId });
-                });
-              }
-              const request = outer4_9.getRequest(callback2(outer4_3[60]).cast(outer3_0));
-              if (null != request) {
-                ({ guildId, userId, applicationStatus } = request);
-                let obj1 = { guildId, channelId: outer3_0, messageId: ok.body.id, joinRequestStatus: applicationStatus, joinRequestUserId: userId };
-                let result = callback(outer4_3[79]).trackMemberApplicationInterviewMessage(obj1);
-                const obj22 = callback(outer4_3[79]);
-              }
-              let result1 = outer4_11.recordMessageSendApiResponse(outer1_11);
-              if (outer1_10 === outer4_37.REPLY) {
-                const id2 = ok.body.id;
-                message = outer3_0;
-                message = outer1_5;
-                if (null != outer1_5) {
-                  const message_id = outer1_5.message_id;
-                }
-                const pendingReplyActionSource = outer4_13.getPendingReplyActionSource(message);
-                if ("message_swipe" === pendingReplyActionSource) {
-                  message = null;
-                  if (null != message_id) {
-                    message = outer4_23;
-                    message = outer4_23.getMessage(message, message_id);
-                  }
-                  message = outer4_19;
-                  message = outer4_19.getChannel(message);
-                  message = outer4_27;
-                  message = outer4_27.getCurrentUser();
-                  message = callback2;
-                  message = outer4_3;
-                  message = outer4_29;
-                  let obj2 = { message_id: id2, channel_id: message };
-                  message = undefined;
-                  if (null != message) {
-                    message = message.guild_id;
-                  }
-                  obj2.guild_id = message;
-                  obj2.swipe_action = "reply";
-                  message = null != message;
-                  if (message) {
-                    message = undefined;
-                    if (null != message) {
-                      message = message.author.id;
+                  obj3[6] = tmp73;
+                  obj3[7] = closure_1;
+                  let obj10 = outer1_0(outer1_3[70]);
+                  obj3[8] = obj10.createPollServerDataFromCreateRequest(poll);
+                  obj3[9] = sharedCustomTheme;
+                  obj3[10] = mediaMention;
+                  obj3[11] = throwTypeErrorResult.mentionGames;
+                  const tmpResultResult = throwTypeErrorResult(outer1_3[47])(obj3);
+                  if (false !== outer1_2.eagerDispatch) {
+                    let result = outer1_0(outer1_3[71]).updateComboOnMessageSend(throwTypeErrorResult, tmpResultResult.id);
+                    if (null != stickerIds) {
+                      const mapped = stickerIds.map((arg0) => stickerById.getStickerById(arg0));
+                      tmpResultResult.sticker_items = mapped.filter((arg0) => null != arg0);
                     }
-                    message = message.id === message;
+                    outer1_55.receiveMessage(throwTypeErrorResult, tmpResultResult, true, tmp41);
+                    let obj12 = outer1_0(outer1_3[71]);
                   }
-                  obj2.is_own_message = message;
-                  message = callback2(outer4_3[40]).track(outer4_29.MESSAGE_SWIPE_ACTION_SENT, obj2);
-                  const obj26 = callback2(outer4_3[40]);
-                } else if ("message_shortcut" === pendingReplyActionSource) {
-                  message = outer4_19;
-                  message = outer4_19.getChannel(message);
-                  message = callback2;
-                  message = outer4_3;
-                  message = outer4_29;
-                  let obj3 = { message_id: id2, channel_id: message };
-                  let guild_id;
-                  if (null != message) {
-                    guild_id = message.guild_id;
+                  if (!outer1_51) {
+                    if (null != invalidEmojis) {
+                      if (invalidEmojis.length > 0) {
+                        outer1_51 = true;
+                        const validateMessageResult = outer1_55.validateMessage(invalidEmojis, outer1_25.getCurrentUser(), throwTypeErrorResult);
+                        outer1_55.sendBotMessage(throwTypeErrorResult, validateMessageResult.errorMessage, validateMessageResult.errorMessageName);
+                      }
+                    }
                   }
-                  obj3.guild_id = guild_id;
-                  obj3.original_message_id = message_id;
-                  obj3.action = "reply";
-                  message = outer4_3;
-                  const obj42 = callback2(outer4_3[40]);
-                  message = undefined;
-                  if (null != message) {
-                    message = message.guild_id;
+                  if (null != announcementSendOptions) {
+                    let SEND = outer1_0(outer1_3[72]).MessageDataType.SEND_ANNOUNCEMENT;
+                  } else {
+                    SEND = outer1_0(outer1_3[72]).MessageDataType.SEND;
                   }
-                  message = obj3;
-                  message = Object.assign(callback(outer4_3[35]).collectGuildAnalyticsMetadata(message));
-                  message = callback;
-                  message = outer4_3;
-                  const obj24 = callback(outer4_3[35]);
-                  message = obj3;
-                  message = Object.assign(callback(outer4_3[35]).collectChannelAnalyticsMetadata(message));
-                  message = obj42.track(outer4_29.MESSAGE_SHORTCUT_ACTION_SENT, obj3);
-                  const obj25 = callback(outer4_3[35]);
-                }
-              }
-              message = callback2;
-              message = outer4_3;
-              const obj21 = callback2(outer4_3[60]);
-              let obj4 = { type: "SLOWMODE_RESET_COOLDOWN" };
-              message = outer4_26;
-              obj4.slowmodeType = outer4_26.SendMessage;
-              message = outer3_0;
-              obj4.channelId = outer3_0;
-              message = callback2(outer4_3[49]).dispatch(obj4);
-              const obj28 = callback2(outer4_3[49]);
-              let obj5 = { type: "EMOJI_TRACK_USAGE" };
-              message = callback2;
-              obj5.emojiUsed = callback2;
-              message = callback2(outer4_3[49]).dispatch(obj5);
-              const obj30 = callback2(outer4_3[49]);
-              let obj6 = { type: "STICKER_TRACK_USAGE" };
-              message = rounded;
-              obj6.stickerIds = rounded;
-              message = callback2(outer4_3[49]).dispatch(obj6);
-              const obj32 = callback2(outer4_3[49]);
-              const obj7 = { type: "LOCAL_MESSAGE_CREATE" };
-              let obj8 = { channel_id: outer3_0 };
-              message = outer4_27;
-              obj8.author = outer4_27.getCurrentUser();
-              obj7.message = obj8;
-              message = callback2(outer4_3[49]).dispatch(obj7);
-              let obj9 = {};
-              message = callback;
-              obj9.content = callback;
-              obj9.channelId = outer3_0;
-              obj9.messageId = ok.body.id;
-              message = closure_2;
-              let str15 = "chat_input";
-              let str16 = "chat_input";
-              if (null != closure_2) {
-                str16 = closure_2;
-              }
-              obj9.location = str16;
-              message = length;
-              obj9.inviteAnalyticsMetadata = length;
-              message = (function trackCodedLinks(content) {
-                let closure_0;
-                let closure_1;
-                let closure_2;
-                let closure_3;
-                let overrideProperties;
-                ({ channelId: closure_0, messageId: closure_1, location: closure_2, inviteAnalyticsMetadata: closure_3, overrideProperties } = content);
-                if (overrideProperties === undefined) {
-                  overrideProperties = {};
-                }
-                let id;
-                id = outer5_18.getId();
-                const item = callback(outer5_3[30])(content.content).forEach(() => { ... });
-              })(obj9);
-              message = callback;
-              message = outer3_0;
-              let id = ok.body.id;
-              message = closure_2;
-              message = str15;
-              if (null != closure_2) {
-                message = closure_2;
-              }
-              message = outer3_2;
-              message = id;
-              message = (function trackGiftCodes(message, message2, id, message3, isGiftLinkSentOnBehalfOfUser) {
-                const ok = message2;
-                let closure_1 = id;
-                let closure_2 = message3;
-                let closure_3 = isGiftLinkSentOnBehalfOfUser;
-                let obj = ok(outer5_3[44]);
-                const item = ok(outer5_3[44]).findGiftCodes(message).forEach(() => { ... });
-              })(message, message, id, message, outer3_2.isGiftLinkSentOnBehalfOfUser);
-              if (null != outer3_2.gifMetadata) {
-                message = outer3_2;
-                message = closure_2;
-                message = outer3_0;
-                if (null != closure_2) {
-                  str15 = closure_2;
-                }
-                message = outer4_19;
-                let channel = outer4_19.getChannel(message);
-                if (null != channel) {
-                  message = callback2;
-                  message = outer4_3;
-                  message = outer4_29;
-                  let obj10 = { location: str15, message_id: ok.body.id };
-                  ({ gif_provider: obj45.gif_provider, load_id: obj45.load_id, source_object: obj45.source_object, gif_url: obj45.gif_url, gif_id: obj45.gif_id } = outer3_2.gifMetadata);
-                  message = callback;
-                  const obj44 = callback2(outer4_3[40]);
-                  message = obj10;
-                  message = Object.assign(callback(outer4_3[35]).collectGuildAnalyticsMetadata(channel.getGuildId()));
-                  const obj46 = callback(outer4_3[35]);
-                  message = obj10;
-                  message = Object.assign(callback(outer4_3[35]).collectChannelAnalyticsMetadata(channel));
-                  message = obj44.track(outer4_29.MESSAGE_SENT_WITH_GIF, obj10);
-                  const obj47 = callback(outer4_3[35]);
-                }
-              }
-              const obj11 = {};
-              message = outer3_0;
-              obj11.channelId = outer3_0;
-              obj11.messageId = ok.body.id;
-              let attachments = ok.body.attachments;
-              if (null == attachments) {
-                attachments = [];
-              }
-              obj11.attachments = attachments;
-              message = outer1_8;
-              obj11.attachmentsToUpload = null != outer1_8 ? outer1_8 : [];
-              message = outer1_5;
-              obj11.messageReference = outer1_5;
-              message = (function trackClipsShared(channelId) {
-                let attachments;
-                let closure_1;
-                channelId = channelId.channelId;
-                ({ messageId: closure_1, attachments } = channelId);
-                const attachmentsToUpload = channelId.attachmentsToUpload;
-                let channel;
-                let messageByReference;
-                if (attachments.length === attachmentsToUpload.length) {
-                  channel = outer5_19.getChannel(channelId);
-                  if (null != channel) {
-                    messageByReference = outer5_14.getMessageByReference(tmp);
-                    const item = attachmentsToUpload.forEach(() => { ... });
+                  obj4 = { type: null, message: null };
+                  obj4[0] = SEND;
+                  obj5 = { channelId: null, content: null, nonce: null, tts: null, message_reference: null, allowed_mentions: null, flags: null, analyticsLocation: null };
+                  obj5[0] = throwTypeErrorResult;
+                  obj5[1] = tmp48;
+                  obj5[2] = closure_1;
+                  obj5[3] = tmp40;
+                  obj5[4] = messageReference;
+                  obj5[5] = allowedMentions;
+                  obj5[6] = addFlagResult1;
+                  obj5[7] = _location;
+                  obj4[1] = obj5;
+                  if (null != throwTypeErrorResult.components) {
+                    obj4.message.components = throwTypeErrorResult.components;
                   }
-                }
-              })(obj11);
-              message = outer1_13;
-              if (null != outer1_13) {
-                message = callback2;
-                message = outer4_3;
-                let obj12 = { type: "UPLOAD_COMPLETE" };
-                message = outer3_0;
-                obj12.channelId = outer3_0;
-                message = outer1_13;
-                obj12.file = outer1_13._file;
-                obj12.aborted = false;
-                message = callback2(outer4_3[49]).dispatch(obj12);
-                const obj40 = callback2(outer4_3[49]);
-              }
-              message = callback;
-              message = callback(ok);
-              const obj34 = callback2(outer4_3[49]);
-            } else {
-              obj = {};
-              ({ hasErr: obj.hasErr, status: obj.status, body } = ok);
-              let code;
-              if (null != body) {
-                code = body.code;
-              }
-              obj.code = code;
-              obj.error = ok.err;
-              outer4_51.log("Failed to send message", obj);
-              if (ok.hasErr) {
-                let flag = false;
-                if ("ABORTED" === ok.err.code) {
-                  flag = true;
-                }
-              } else {
-                flag = false;
-                if (ok.status >= 400) {
-                  flag = false;
-                  if (ok.status < 500) {
-                    flag = false;
-                    if (ok.body) {
-                      if (ok.body.code === outer4_28.SLOWMODE_RATE_LIMITED) {
-                        const retry_after = ok.body.retry_after;
-                        let tmp22 = null != retry_after;
-                        if (tmp22) {
-                          tmp22 = retry_after > 0;
+                  if (null != announcementSendOptions) {
+                    ({ createThread: obj13.message.create_thread, threadName: obj13.message.title, publish } = announcementSendOptions);
+                    c2 = publish;
+                    if (publish == null) {
+                      c2 = false;
+                    }
+                    obj4.message.publish = c2;
+                  }
+                  if (null != activityAction) {
+                    let session_id;
+                    if (activityAction != null) {
+                      session_id = activityAction.activity.session_id;
+                    }
+                    let sessionId = session_id;
+                    if (activityAction.type !== outer1_43.JOIN_REQUEST) {
+                      sessionId = session_id;
+                      if (activityAction.type !== tmp97.STREAM_REQUEST) {
+                        sessionId = session_id;
+                        if (null == session_id) {
+                          sessionId = outer1_16.getSessionId();
                         }
-                        flag = false;
-                        if (tmp22) {
-                          obj6 = callback2(outer4_3[49]);
-                          const obj13 = { type: "SLOWMODE_SET_COOLDOWN", channelId: outer3_0, slowmodeType: outer4_26.SendMessage, cooldownMs: retry_after * callback2(outer4_3[80]).Millis.SECOND };
-                          obj6.dispatch(obj13);
-                          flag = false;
+                      }
+                    }
+                    if (null != sessionId) {
+                      obj6 = { type: null, session_id: null, target_user_id: null };
+                      obj6[0] = activityAction.type;
+                      obj6[1] = sessionId;
+                      ({ targetUserId: obj15[2], activity } = activityAction);
+                      throwTypeErrorResult = null != activity.party;
+                      if (throwTypeErrorResult) {
+                        throwTypeErrorResult = null != activity.party.id;
+                      }
+                      if (throwTypeErrorResult) {
+                        obj6.party_id = activity.party.id;
+                      }
+                      obj4.message.application_id = activity.application_id;
+                      obj4.message.activity = obj6;
+                    }
+                  }
+                  if (null != poll) {
+                    obj4.message.poll = poll;
+                  }
+                  if (null != sharedCustomTheme) {
+                    obj4.message.shared_client_theme = sharedCustomTheme;
+                  }
+                  if (null != stickerIds) {
+                    obj4.message.sticker_ids = stickerIds;
+                  }
+                  throwTypeErrorResult = outer1_10;
+                  if (outer1_10.isEnabled()) {
+                    obj4.message.has_poggermode_enabled = true;
+                  }
+                  if (withCheckpoint) {
+                    obj4.message.with_checkpoint = true;
+                  }
+                  if (null != contentInventoryEntry) {
+                    obj4.message.content_inventory_entry = contentInventoryEntry;
+                  }
+                  if (null != mediaMention) {
+                    obj4.message.media_mention = mediaMention;
+                  }
+                  throwTypeErrorResult = null != attachments;
+                  if (throwTypeErrorResult) {
+                    throwTypeErrorResult = attachments.length > 0;
+                  }
+                  if (throwTypeErrorResult) {
+                    obj4.message.attachments = attachments;
+                  }
+                  if (null != attachmentsToUpload) {
+                    if (attachmentsToUpload.length > 0) {
+                      c6 = 1;
+                      throwTypeErrorResult = outer1_0;
+                      throwTypeErrorResult = outer1_3;
+                      let obj7 = { channelId: null, nonce: null, items: null, message: null, shouldUploadFailureSendNotification: null };
+                      obj7[0] = throwTypeErrorResult;
+                      obj7[1] = tmp70;
+                      obj7[2] = attachmentsToUpload;
+                      obj7[3] = tmpResultResult;
+                      const doNotNotifyOnError = tmp41.doNotNotifyOnError;
+                      throwTypeErrorResult = !doNotNotifyOnError;
+                      obj7[4] = throwTypeErrorResult;
+                      c7 = 2;
+                      c8 = 1;
+                      obj8 = { value: null, done: false };
+                      obj8[0] = outer1_0(outer1_3[73]).uploadMessageAttachments(obj7);
+                      return obj8;
+                    }
+                  }
+                  throwTypeErrorResult = c3;
+                  throwTypeErrorResult = new.target;
+                  throwTypeErrorResult = new.target;
+                  throwTypeErrorResult = new Promise((arg0, arg1) => {
+                    let closure_0 = arg0;
+                    let closure_1 = arg1;
+                    let closure_2 = Date.now();
+                    outer2_1(outer2_3[72]).length;
+                    const rounded = Math.floor(10000 * Math.random());
+                    outer2_50.info("Queueing message to be sent LogId:" + rounded);
+                    outer2_1(outer2_3[72]).enqueue(obj4, (ok) => {
+                      let applicationStatus;
+                      let attachments;
+                      let body;
+                      let content;
+                      let guildId;
+                      let id;
+                      let message;
+                      let overrideProperties;
+                      let userId;
+                      message = ok;
+                      if (ok.ok) {
+                        let obj14 = outer3_1(outer3_3[65]);
+                        obj14.donateSentMessage(closure_0, c0);
+                        let obj = { sendAnalytics: null, poll: null };
+                        obj = { duration: null, queueSize: null };
+                        obj[0] = message;
+                        obj[1] = message;
+                        obj[0] = obj;
+                        obj[1] = outer1_6;
+                        outer3_55.receiveMessage(c0, ok.body, true, obj);
+                        if (null != c2.alsoForwardToChannelId) {
+                          let obj17 = outer3_1(outer3_3[75]);
+                          let obj19 = outer3_0(outer3_3[52]);
+                          const sendForwardResult = obj17.sendForward(outer3_0(outer3_3[52]).createMessageRecord(ok.body), c2.alsoForwardToChannelId);
+                          obj17.sendForward(outer3_0(outer3_3[52]).createMessageRecord(ok.body), c2.alsoForwardToChannelId).then(() => {
+                            const body = message.body;
+                            let id;
+                            if (body != null) {
+                              id = body.id;
+                            }
+                            const body2 = tmp.body;
+                            let guild_id;
+                            if (body2 != null) {
+                              guild_id = body2.guild_id;
+                            }
+                            const body3 = tmp.body;
+                            let channel_id;
+                            if (body3 != null) {
+                              channel_id = body3.channel_id;
+                            }
+                            outer4_1(outer4_3[37]).track(outer4_27.MESSAGE_ALSO_SEND_TO_CHANNEL_SENT, { referenced_message_id: id, guild_id, channel_id, destination_channel_id: attachments.alsoForwardToChannelId });
+                          }).catch((arg0) => {
+                            const body = message.body;
+                            let id;
+                            const combined = "Failed to forward thread message to parent channel LogId:" + ClickArea;
+                            if (body != null) {
+                              id = body.id;
+                            }
+                            outer4_49.log(combined, { referencedMessageId: id, channelId: c0, destinationChannelId: attachments.alsoForwardToChannelId, error: arg0.toString() });
+                          });
+                          const nextPromise = obj17.sendForward(outer3_0(outer3_3[52]).createMessageRecord(ok.body), c2.alsoForwardToChannelId).then(() => {
+                            const body = message.body;
+                            let id;
+                            if (body != null) {
+                              id = body.id;
+                            }
+                            const body2 = tmp.body;
+                            let guild_id;
+                            if (body2 != null) {
+                              guild_id = body2.guild_id;
+                            }
+                            const body3 = tmp.body;
+                            let channel_id;
+                            if (body3 != null) {
+                              channel_id = body3.channel_id;
+                            }
+                            outer4_1(outer4_3[37]).track(outer4_27.MESSAGE_ALSO_SEND_TO_CHANNEL_SENT, { referenced_message_id: id, guild_id, channel_id, destination_channel_id: attachments.alsoForwardToChannelId });
+                          });
                         }
+                        request = request.getRequest(outer3_1(outer3_3[57]).cast(c0));
+                        if (null != request) {
+                          ({ guildId, userId, applicationStatus } = request);
+                          let obj1 = { guildId: null, channelId: null, messageId: null, joinRequestStatus: null, joinRequestUserId: null };
+                          obj1[0] = guildId;
+                          obj1[1] = c0;
+                          obj1[2] = ok.body.id;
+                          obj1[3] = applicationStatus;
+                          obj1[4] = userId;
+                          let result = outer3_0(outer3_3[76]).trackMemberApplicationInterviewMessage(obj1);
+                          const obj21 = outer3_0(outer3_3[76]);
+                        }
+                        let result1 = outer3_9.recordMessageSendApiResponse(outer1_13);
+                        if (outer1_12 === outer3_35.REPLY) {
+                          id = ok.body.id;
+                          message = c0;
+                          if (outer1_5 != null) {
+                            const message_id = outer1_5.message_id;
+                          }
+                          const pendingReplyActionSource = outer3_11.getPendingReplyActionSource(message);
+                          if ("message_swipe" === pendingReplyActionSource) {
+                            message = null;
+                            if (null != message_id) {
+                              message = outer3_21;
+                              message = outer3_21.getMessage(message, message_id);
+                            }
+                            message = outer3_17;
+                            message = outer3_17.getChannel(message);
+                            message = outer3_25;
+                            message = outer3_25.getCurrentUser();
+                            message = outer3_1;
+                            message = outer3_3;
+                            message = outer3_27;
+                            let obj2 = { message_id: null, channel_id: null, guild_id: null, swipe_action: "reply", is_own_message: null };
+                            obj2[0] = id;
+                            obj2[1] = message;
+                            message = undefined;
+                            if (message != null) {
+                              message = message.guild_id;
+                            }
+                            obj2[2] = message;
+                            message = null != message;
+                            if (message) {
+                              message = undefined;
+                              if (message != null) {
+                                message = message.author.id;
+                              }
+                              message = message.id === message;
+                            }
+                            obj2[4] = message;
+                            message = outer3_1(outer3_3[37]).track(outer3_27.MESSAGE_SWIPE_ACTION_SENT, obj2);
+                            const obj25 = outer3_1(outer3_3[37]);
+                          } else if ("message_shortcut" === pendingReplyActionSource) {
+                            message = outer3_17;
+                            message = outer3_17.getChannel(message);
+                            message = outer3_1;
+                            message = outer3_3;
+                            message = outer3_27;
+                            let obj3 = { message_id: null, channel_id: null, guild_id: null, original_message_id: null, action: "reply" };
+                            obj3[0] = id;
+                            obj3[1] = message;
+                            message = undefined;
+                            if (message != null) {
+                              message = message.guild_id;
+                            }
+                            obj3[2] = message;
+                            obj3[3] = message_id;
+                            message = outer3_0;
+                            message = outer3_3;
+                            const obj41 = outer3_1(outer3_3[37]);
+                            message = undefined;
+                            if (message != null) {
+                              message = message.guild_id;
+                            }
+                            message = obj3;
+                            message = Object.assign(outer3_0(outer3_3[33]).collectGuildAnalyticsMetadata(message));
+                            message = outer3_0;
+                            message = outer3_3;
+                            const obj23 = outer3_0(outer3_3[33]);
+                            message = obj3;
+                            message = Object.assign(outer3_0(outer3_3[33]).collectChannelAnalyticsMetadata(message));
+                            message = obj41.track(outer3_27.MESSAGE_SHORTCUT_ACTION_SENT, obj3);
+                            const obj24 = outer3_0(outer3_3[33]);
+                          }
+                        }
+                        message = outer3_1;
+                        message = outer3_3;
+                        const obj20 = outer3_1(outer3_3[57]);
+                        let obj4 = { type: "SLOWMODE_RESET_COOLDOWN", slowmodeType: null, channelId: null };
+                        message = outer3_24;
+                        obj4[1] = outer3_24.SendMessage;
+                        message = c0;
+                        obj4[2] = c0;
+                        message = outer3_1(outer3_3[46]).dispatch(obj4);
+                        message = outer3_1;
+                        message = outer3_3;
+                        const obj27 = outer3_1(outer3_3[46]);
+                        let obj5 = { type: "EMOJI_TRACK_USAGE", emojiUsed: null };
+                        message = closure_1;
+                        obj5[1] = closure_1;
+                        message = outer3_1(outer3_3[46]).dispatch(obj5);
+                        message = outer3_1;
+                        message = outer3_3;
+                        const obj29 = outer3_1(outer3_3[46]);
+                        const obj6 = { type: "STICKER_TRACK_USAGE", stickerIds: null };
+                        message = rounded;
+                        obj6[1] = rounded;
+                        message = outer3_1(outer3_3[46]).dispatch(obj6);
+                        message = outer3_1;
+                        message = outer3_3;
+                        const obj31 = outer3_1(outer3_3[46]);
+                        let obj7 = { type: "LOCAL_MESSAGE_CREATE", message: null };
+                        const obj8 = { channel_id: null, author: null };
+                        message = c0;
+                        obj8[0] = c0;
+                        message = outer3_25;
+                        obj8[1] = outer3_25.getCurrentUser();
+                        obj7[1] = obj8;
+                        message = outer3_1(outer3_3[46]).dispatch(obj7);
+                        let obj9 = { content: null, channelId: null, messageId: null, location: null, inviteAnalyticsMetadata: null };
+                        obj9[0] = closure_0;
+                        message = c0;
+                        obj9[1] = c0;
+                        obj9[2] = ok.body.id;
+                        let str4 = closure_2;
+                        let str5 = closure_2;
+                        if (closure_2 == null) {
+                          str5 = "chat_input";
+                        }
+                        obj9[3] = str5;
+                        message = length;
+                        obj9[4] = length;
+                        ({ channelId: message, messageId: id, location: attachments, inviteAnalyticsMetadata: message, overrideProperties, content } = obj9);
+                        if (overrideProperties === undefined) {
+                          overrideProperties = {};
+                        }
+                        let messageByReference = overrideProperties;
+                        let id2;
+                        message = outer3_16;
+                        id2 = outer3_16.getId();
+                        message = outer3_1;
+                        message = outer3_3;
+                        const obj33 = outer3_1(outer3_3[46]);
+                        message = outer3_1(outer3_3[28])(content).forEach((url) => {
+                          let applicationId;
+                          let code;
+                          let type;
+                          let type2;
+                          ({ type, code } = url);
+                          let obj = message(message[29]);
+                          if (obj.isApplicationCodedLink(type)) {
+                            let tmpResult = tmp(tmp2[29]);
+                            const applicationCodedLinkData = tmpResult.getApplicationCodedLinkData(type, code, url.url);
+                            if (null != applicationCodedLinkData) {
+                              ({ applicationId, type: type2 } = applicationCodedLinkData);
+                              if (tmp(tmp2[30]).CodedLinkType.APP_DIRECTORY_PROFILE === type2) {
+                                tmpResult = tmp(tmp2[31]);
+                                const result = tmpResult.trackAppDirectoryProfileEmbed(applicationId);
+                                const result1 = tmp(tmp2[32]).trackAppEmbedLinkSent(code, outer1_44.APP_DISCOVERY, trackRoundtrip);
+                                const tmpResult1 = tmp(tmp2[32]);
+                              } else if (tmp(tmp2[30]).CodedLinkType.APP_DIRECTORY_STOREFRONT === type2) {
+                                const result2 = tmp(tmp2[31]).trackAppDirectoryProfileEmbed(applicationId, "storefront");
+                                const tmpResult2 = tmp(tmp2[31]);
+                              } else if (tmp(tmp2[30]).CodedLinkType.APP_DIRECTORY_STOREFRONT_SKU === type2) {
+                                const result3 = tmp(tmp2[31]).trackAppDirectoryProfileEmbed(applicationId, "storefront_sku");
+                                const tmpResult3 = tmp(tmp2[31]);
+                              } else if (tmp(tmp2[30]).CodedLinkType.ACTIVITY_BOOKMARK === type2) {
+                                const params = applicationCodedLinkData.params;
+                                const tmpResult4 = tmp(tmp2[32]);
+                                const ACTIVITY = outer1_44.ACTIVITY;
+                                let referrerId = params.referrerId;
+                                if (referrerId == null) {
+                                  referrerId = trackRoundtrip;
+                                }
+                                const result4 = tmpResult4.trackAppEmbedLinkSent(applicationId, ACTIVITY, referrerId, params.customId);
+                              } else if (tmp(tmp2[30]).CodedLinkType.APP_OAUTH2_LINK === type2) {
+                                const result5 = tmp(tmp2[32]).trackAppEmbedLinkSent(applicationId, outer1_44.OAUTH, trackRoundtrip);
+                                const tmpResult5 = tmp(tmp2[32]);
+                                obj = { application_id: null };
+                                obj[0] = applicationId;
+                                id(tmp2[33]).trackWithMetadata(outer1_27.APP_OAUTH2_LINK_EMBED_URL_SENT, obj);
+                                const obj19 = id(tmp2[33]);
+                              }
+                            }
+                          } else if (tmp(tmp2[30]).CodedLinkType.INVITE === type) {
+                            obj = { inviteKey: null, channelId: null, messageId: null, location: null, inviteAnalyticsMetadata: null, overrideProperties: null };
+                            obj[0] = code;
+                            obj[1] = message;
+                            obj[2] = id;
+                            obj[3] = attachments;
+                            obj[4] = message;
+                            obj[5] = ClickArea;
+                            outer1_53(obj);
+                          } else if (tmp(tmp2[30]).CodedLinkType.TEMPLATE === type) {
+                            const guildTemplate = outer1_8.getGuildTemplate(code);
+                            if (null != guildTemplate) {
+                              if (guildTemplate.state !== outer1_45.RESOLVING) {
+                                let obj1 = { guild_template_code: null, guild_template_name: null, guild_template_description: null, guild_template_guild_id: null };
+                                obj1[0] = code;
+                                ({ name: obj10[1], description: obj10[2], sourceGuildId: obj10[3] } = guildTemplate);
+                                id(tmp2[33]).trackWithMetadata(outer1_27.GUILD_TEMPLATE_LINK_SENT, obj1);
+                                const obj9 = id(tmp2[33]);
+                              }
+                            }
+                          } else if (tmp(tmp2[30]).CodedLinkType.BUILD_OVERRIDE !== type) {
+                            if (tmp(tmp2[30]).CodedLinkType.EXPERIMENT !== type) {
+                              if (tmp(tmp2[30]).CodedLinkType.MANUAL_BUILD_OVERRIDE !== type) {
+                                if (tmp(tmp2[30]).CodedLinkType.EVENT !== type) {
+                                  if (tmp(tmp2[30]).CodedLinkType.CHANNEL_LINK !== type) {
+                                    if (tmp(tmp2[30]).CodedLinkType.EMBEDDED_ACTIVITY_INVITE === type) {
+                                      const result6 = tmp(tmp2[32]).trackAppEmbedLinkSent(code, outer1_44.ACTIVITY_INVITE, trackRoundtrip);
+                                      const tmpResult6 = tmp(tmp2[32]);
+                                    } else if (tmp(tmp2[30]).CodedLinkType.GUILD_PRODUCT !== type) {
+                                      if (tmp(tmp2[30]).CodedLinkType.SERVER_SHOP !== type) {
+                                        if (tmp(tmp2[30]).CodedLinkType.SOCIAL_LAYER_STOREFRONT !== type) {
+                                          if (tmp(tmp2[30]).CodedLinkType.SOCIAL_LAYER_STOREFRONT_APP !== type) {
+                                            if (tmp(tmp2[30]).CodedLinkType.QUESTS_EMBED === type) {
+                                              const adMetadataSealed = tmp(tmp2[34]).getAdMetadataSealed(tmp(tmp2[35]).QuestContent.QUESTS_EMBED);
+                                              const tmpResult7 = tmp(tmp2[34]);
+                                              const obj2 = { questId: null, event: null, properties: null, trackGuildAndChannelMetadata: true, sourceQuestContent: null };
+                                              obj2[0] = code;
+                                              obj2[1] = outer1_27.QUEST_LINK_SHARED;
+                                              let tmp8 = null;
+                                              if (null != adMetadataSealed) {
+                                                tmp8 = adMetadataSealed;
+                                              }
+                                              const obj3 = { metadata_sealed: null };
+                                              obj3[0] = tmp8;
+                                              obj2[2] = obj3;
+                                              obj2[4] = tmp(tmp2[35]).QuestContent.QUESTS_EMBED;
+                                              tmp(tmp2[36]).trackQuestEvent(obj2);
+                                              const tmpResult8 = tmp(tmp2[36]);
+                                            } else if (tmp(tmp2[30]).CodedLinkType.GAME_PROFILE === type) {
+                                              obj1 = id(tmp2[37]);
+                                              const obj4 = { game_id: null };
+                                              obj4[0] = code;
+                                              obj1.track(outer1_27.GAME_PROFILE_LINK_EMBED_SENT, obj4);
+                                            } else if (tmp(tmp2[30]).CodedLinkType.COLLECTIBLES_SHOP !== type) {
+                                              if (tmp(tmp2[30]).CodedLinkType.GAME_SERVER_SHARE !== type) {
+                                                const _Error = Error;
+                                                const _HermesInternal = HermesInternal;
+                                                throw Error("Unknown coded link type: " + type);
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        });
+                        let str6 = str4;
+                        message = c0;
+                        if (str4 == null) {
+                          str6 = "chat_input";
+                        }
+                        message = c2;
+                        id = ok.body.id;
+                        attachments = str6;
+                        message = c2.isGiftLinkSentOnBehalfOfUser;
+                        message = outer3_0;
+                        message = outer3_3;
+                        const arr2 = outer3_1(outer3_3[28])(content);
+                        const obj37 = outer3_0(outer3_3[41]);
+                        message = outer3_0(outer3_3[41]).findGiftCodes(closure_0).forEach((arg0) => {
+                          const channel = outer1_17.getChannel(message);
+                          if (null != channel) {
+                            const obj = { location: null, gift_code: null, guild_id: null, channel_id: null, channel_type: null, message_id: null, automatic_send: null };
+                            obj[0] = attachments;
+                            obj[1] = arg0;
+                            obj[2] = channel.getGuildId();
+                            ({ id: obj3[3], type: obj3[4] } = channel);
+                            obj[5] = id;
+                            obj[6] = message;
+                            id(message[33]).trackWithMetadata(outer1_27.GIFT_CODE_SENT, obj);
+                            const obj2 = id(message[33]);
+                          }
+                        });
+                        message = c2;
+                        if (null != c2.gifMetadata) {
+                          message = c2;
+                          message = c0;
+                          if (str4 == null) {
+                            str4 = "chat_input";
+                          }
+                          message = outer3_17;
+                          let channel = outer3_17.getChannel(message);
+                          if (null != channel) {
+                            message = outer3_1;
+                            message = outer3_3;
+                            message = outer3_27;
+                            const obj10 = { location: null, message_id: null, gif_provider: null, load_id: null, source_object: null, gif_url: null, gif_id: null };
+                            obj10[0] = str4;
+                            obj10[1] = ok.body.id;
+                            ({ gif_provider: obj44[2], load_id: obj44[3], source_object: obj44[4], gif_url: obj44[5], gif_id: obj44[6] } = c2.gifMetadata);
+                            message = outer3_0;
+                            message = outer3_3;
+                            const obj43 = outer3_1(outer3_3[37]);
+                            message = obj10;
+                            message = Object.assign(outer3_0(outer3_3[33]).collectGuildAnalyticsMetadata(channel.getGuildId()));
+                            message = outer3_0;
+                            message = outer3_3;
+                            const obj45 = outer3_0(outer3_3[33]);
+                            message = obj10;
+                            message = Object.assign(outer3_0(outer3_3[33]).collectChannelAnalyticsMetadata(channel));
+                            message = obj43.track(outer3_27.MESSAGE_SENT_WITH_GIF, obj10);
+                            const obj46 = outer3_0(outer3_3[33]);
+                          }
+                        }
+                        message = c0;
+                        attachments = ok.body.attachments;
+                        if (attachments == null) {
+                          attachments = [];
+                        }
+                        let items = outer1_8;
+                        if (outer1_8 == null) {
+                          items = [];
+                        }
+                        id = ok.body.id;
+                        if (attachments.length === items.length) {
+                          message = outer3_17;
+                          message = outer3_17.getChannel(message);
+                          if (null != message) {
+                            message = outer3_12;
+                            messageByReference = outer3_12.getMessageByReference(message);
+                            message = items.forEach((clip) => {
+                              clip = clip.clip;
+                              if (null != clip) {
+                                let someResult = ClickArea.state === outer1_13.LOADED;
+                                if (someResult) {
+                                  const attachments = ClickArea.message.attachments;
+                                  someResult = attachments.some(() => { ... });
+                                }
+                                let obj = id(message[37]);
+                                obj = {};
+                                const merged = Object.assign(attachments(message[42]).getClipBaseProperties(clip));
+                                const obj3 = attachments(message[42]);
+                                const merged1 = Object.assign(attachments(message[42]).getClipContextProperties("trackClipsShared"));
+                                obj.channel_id = clip;
+                                obj.guild_id = message.getGuildId();
+                                obj.channel_type = message.type;
+                                ({ applicationId: obj2.application_id, id: obj2.clip_uuid, remoteClipId: obj2.remote_clip_id } = clip);
+                                obj.message_id = id;
+                                obj.attachment_id = attachments[arg1].id;
+                                obj.is_distributed_clip_reply = someResult;
+                                obj.track(outer1_27.CLIP_SHARED, obj);
+                                const obj4 = attachments(message[42]);
+                              }
+                            });
+                          }
+                        }
+                        message = outer1_15;
+                        if (null != outer1_15) {
+                          message = outer3_1;
+                          message = outer3_3;
+                          let obj11 = { type: "UPLOAD_COMPLETE", channelId: null, file: null, aborted: false };
+                          message = c0;
+                          obj11[1] = c0;
+                          message = outer1_15;
+                          obj11[2] = outer1_15._file;
+                          message = outer3_1(outer3_3[46]).dispatch(obj11);
+                          const obj39 = outer3_1(outer3_3[46]);
+                        }
+                        message = message(ok);
+                        const findGiftCodesResult = outer3_0(outer3_3[41]).findGiftCodes(closure_0);
                       } else {
-                        message = callback;
-                        message = outer4_3;
-                        const AUTOMOD_ERROR_CODES = callback(outer4_3[81]).AUTOMOD_ERROR_CODES;
-                        if (AUTOMOD_ERROR_CODES.has(ok.body.code)) {
-                          obj3 = callback2(outer4_3[49]);
-                          let obj14 = { type: "MESSAGE_SEND_FAILED_AUTOMOD", messageData: outer1_14 };
-                          obj15 = { code: ok.body.code, message: ok.body.message };
-                          obj14.errorResponseBody = obj15;
-                          obj3.dispatch(obj14);
-                          flag = false;
-                        } else if (ok.body.code === outer4_28.POGGERMODE_TEMPORARILY_DISABLED) {
-                          obj1 = callback2(outer4_3[49]);
-                          let obj16 = { type: "POGGERMODE_TEMPORARILY_DISABLED" };
-                          obj1.dispatch(obj16);
-                          flag = false;
+                        obj = { hasErr: null, status: null, code: null, error: null };
+                        ({ hasErr: obj[0], status: obj[1], body } = ok);
+                        let code;
+                        if (body != null) {
+                          code = body.code;
+                        }
+                        obj[2] = code;
+                        obj[3] = ok.err;
+                        outer3_49.log("Failed to send message", obj);
+                        if (ok.hasErr) {
+                          let flag = false;
+                          if ("ABORTED" === ok.err.code) {
+                            flag = true;
+                          }
                         } else {
-                          message = outer4_28;
-                          if (ok.body.code === outer4_28.EXPLICIT_CONTENT) {
-                            const EXPLICIT_CONTENT = outer4_48.EXPLICIT_CONTENT;
+                          flag = false;
+                          if (ok.status >= 400) {
                             flag = false;
-                          } else {
-                            let tmp9 = null != outer1_6 || outer1_9;
-                            if (!tmp9) {
-                              tmp9 = null != outer1_7;
-                            }
-                            flag = false;
-                            if (!tmp9) {
-                              outer4_56.sendClydeError(outer3_0, ok.body.code);
+                            if (ok.status < 500) {
                               flag = false;
+                              if (ok.body) {
+                                if (ok.body.code === outer3_26.SLOWMODE_RATE_LIMITED) {
+                                  const retry_after = ok.body.retry_after;
+                                  let tmp21 = null != retry_after;
+                                  if (tmp21) {
+                                    tmp21 = retry_after > 0;
+                                  }
+                                  flag = false;
+                                  if (tmp21) {
+                                    obj5 = outer3_1(outer3_3[46]);
+                                    const obj12 = { type: "SLOWMODE_SET_COOLDOWN", channelId: null, slowmodeType: null, cooldownMs: null };
+                                    obj12[1] = c0;
+                                    obj12[2] = outer3_24.SendMessage;
+                                    obj12[3] = retry_after * outer3_1(outer3_3[77]).Millis.SECOND;
+                                    obj5.dispatch(obj12);
+                                    flag = false;
+                                  }
+                                } else {
+                                  message = outer3_0;
+                                  message = outer3_3;
+                                  const AUTOMOD_ERROR_CODES = outer3_0(outer3_3[78]).AUTOMOD_ERROR_CODES;
+                                  if (AUTOMOD_ERROR_CODES.has(ok.body.code)) {
+                                    obj2 = outer3_1(outer3_3[46]);
+                                    let obj13 = { type: "MESSAGE_SEND_FAILED_AUTOMOD", messageData: null, errorResponseBody: null };
+                                    obj13[1] = outer1_16;
+                                    obj14 = { code: null, message: null };
+                                    obj14[0] = ok.body.code;
+                                    obj14[1] = ok.body.message;
+                                    obj13[2] = obj14;
+                                    obj2.dispatch(obj13);
+                                    flag = false;
+                                  } else if (ok.body.code === tmp6.POGGERMODE_TEMPORARILY_DISABLED) {
+                                    obj1 = outer3_1(outer3_3[46]);
+                                    obj1.dispatch({ type: "POGGERMODE_TEMPORARILY_DISABLED" });
+                                    flag = false;
+                                  } else if (ok.body.code === tmp6.EXPLICIT_CONTENT) {
+                                    const EXPLICIT_CONTENT = outer3_46.EXPLICIT_CONTENT;
+                                    flag = false;
+                                  } else {
+                                    let tmp8 = null != outer1_6 || outer1_11;
+                                    if (!tmp8) {
+                                      tmp8 = null != outer1_7;
+                                    }
+                                    flag = false;
+                                    if (!tmp8) {
+                                      outer3_55.sendClydeError(c0, ok.body.code);
+                                      flag = false;
+                                    }
+                                  }
+                                }
+                              }
                             }
                           }
                         }
+                        if (flag) {
+                          outer3_55.deleteMessage(c0, outer1_14, true);
+                        } else {
+                          if (null != outer1_15) {
+                            obj7 = outer3_1(outer3_3[46]);
+                            const obj15 = { type: "UPLOAD_FAIL", channelId: null, file: null, messageId: null, reason: null, noSendFailed: true };
+                            obj15[1] = c0;
+                            obj15[2] = outer1_15._file;
+                            obj15[3] = outer1_14;
+                            obj15[4] = EXPLICIT_CONTENT;
+                            obj7.dispatch(obj15);
+                          }
+                          let hasErr = ok.hasErr;
+                          if (!hasErr) {
+                            hasErr = EXPLICIT_CONTENT !== outer3_46.EXPLICIT_CONTENT;
+                          }
+                          if (!hasErr) {
+                            let body2 = ok.body;
+                            let attachments1;
+                            if (body2 != null) {
+                              attachments1 = body2.attachments;
+                            }
+                            let result2 = outer3_55.sendExplicitMediaClydeError(c0, attachments1, outer3_0(outer3_3[50]).TrackMediaRedactionContext.EXPLICIT_MEDIA_MESSAGE_SEND_BLOCKED);
+                            const tmp38 = c0;
+                          }
+                          obj9 = outer3_1(outer3_3[46]);
+                          const obj16 = { type: "MESSAGE_SEND_FAILED", messageId: null, channelId: null, shouldNotify: null, reason: null };
+                          obj16[1] = outer1_14;
+                          obj16[2] = c0;
+                          obj16[3] = !c2.doNotNotifyOnError;
+                          obj16[4] = EXPLICIT_CONTENT;
+                          obj9.dispatch(obj16);
+                          obj11 = outer3_0(outer3_3[74]);
+                          let status;
+                          if (!ok.hasErr) {
+                            status = ok.status;
+                          }
+                          obj17 = { failureCode: null, errorMessage: null };
+                          obj17[0] = status;
+                          let message1;
+                          if (ok.hasErr) {
+                            message1 = ok.err.message;
+                          }
+                          obj17[1] = message1;
+                          let result3 = obj11.logMessageSendFailure(obj17);
+                          obj13 = outer3_1(outer3_3[72]);
+                          let result4 = obj13.cancelPendingSendRequests(c0);
+                          const item = result4.forEach((messageId) => {
+                            logger.log("Cancelling pending message", messageId.nonce);
+                            let obj = id(message[46]);
+                            obj = { type: "MESSAGE_SEND_FAILED", messageId: messageId.nonce, channelId: messageId.channelId };
+                            obj.dispatch(obj);
+                          });
+                        }
+                        id(ok);
                       }
-                    }
-                  }
+                    }, rounded);
+                  });
+                  c8 = 3;
+                  const throwTypeErrorResultResult = throwTypeErrorResult(outer1_3[47]);
+                  tmp42 = c0;
                 }
               }
-              if (flag) {
-                outer4_56.deleteMessage(outer3_0, outer1_12, true);
+            } else if (1 === tmp8) {
+              c6 = 0;
+              const outer2_19 = messageReference;
+              const outer2_20 = outer2_19.file;
+              const outer2_21 = outer2_19.code;
+              const outer2_22 = outer2_19.reason;
+              const outer2_23 = outer2_19.responseBody;
+              obj1 = outer1_0(outer1_3[74]);
+              let obj9 = { fileItems: null, failureCode: null, errorMessage: null };
+              obj9[0] = outer2_20.items;
+              obj9[1] = outer2_21;
+              let msg;
+              if (outer2_22 != null) {
+                msg = outer2_22.msg;
+              }
+              obj9[2] = msg;
+              let result1 = obj1.logMessageSendFailure(obj9);
+              if (outer2_9 != null) {
+                tmp33(outer1_20, outer1_21, outer1_22, outer1_23);
+              }
+              c8 = 3;
+              obj10 = { value: null, done: true };
+              obj10[0] = undefined;
+              return obj10;
+            } else if (arg0 === 1) {
+              c8 = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              c6 = 0;
+              c8 = 3;
+              obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            } else {
+              throwTypeErrorResult = c3;
+              ensureGuildLoaded = arg1;
+              throwTypeErrorResult = ensureGuildLoaded;
+              if (null == ensureGuildLoaded) {
+                c6 = 0;
+                c8 = 3;
+                return { value: "HermesInternal", done: null };
               } else {
-                if (null != outer1_13) {
-                  obj8 = callback2(outer4_3[49]);
-                  let obj17 = { type: "UPLOAD_FAIL", channelId: outer3_0, file: outer1_13._file, messageId: outer1_12, reason: EXPLICIT_CONTENT, noSendFailed: true };
-                  obj8.dispatch(obj17);
-                }
-                if (!ok.hasErr) {
-                  if (EXPLICIT_CONTENT === outer4_48.EXPLICIT_CONTENT) {
-                    let body2 = ok.body;
-                    let attachments1;
-                    if (null != body2) {
-                      attachments1 = body2.attachments;
-                    }
-                    let result2 = outer4_56.sendExplicitMediaClydeError(outer3_0, attachments1, callback(outer4_3[53]).TrackMediaRedactionContext.EXPLICIT_MEDIA_MESSAGE_SEND_BLOCKED);
-                    const tmp37 = outer3_0;
+                throwTypeErrorResult = c3;
+                throwTypeErrorResult = ensureGuildLoaded;
+                attachments = ensureGuildLoaded.attachments;
+                throwTypeErrorResult = ensureGuildLoaded;
+                uploader = ensureGuildLoaded.uploader;
+                throwTypeErrorResult = c10;
+                if (!c10) {
+                  if (null != attachments) {
+                    obj4.message.attachments = attachments.map((closure_0, closure_1) => v0(_undefined[45]).getAttachmentPayload(closure_0, closure_1));
                   }
+                  c6 = 0;
                 }
-                obj10 = callback2(outer4_3[49]);
-                obj18 = { type: "MESSAGE_SEND_FAILED", messageId: outer1_12, channelId: outer3_0, shouldNotify: !outer3_2.doNotNotifyOnError, reason: EXPLICIT_CONTENT };
-                obj10.dispatch(obj18);
-                obj12 = callback(outer4_3[77]);
-                obj19 = {};
-                let status;
-                if (!ok.hasErr) {
-                  status = ok.status;
-                }
-                obj19.failureCode = status;
-                let message1;
-                if (ok.hasErr) {
-                  message1 = ok.err.message;
-                }
-                obj19.errorMessage = message1;
-                let result3 = obj12.logMessageSendFailure(obj19);
-                obj14 = callback2(outer4_3[75]);
-                let result4 = obj14.cancelPendingSendRequests(outer3_0);
-                let item = result4.forEach((messageId) => {
-                  outer5_51.log("Cancelling pending message", messageId.nonce);
-                  let obj = callback(outer5_3[49]);
-                  obj = { type: "MESSAGE_SEND_FAILED", messageId: messageId.nonce, channelId: messageId.channelId };
-                  obj.dispatch(obj);
-                });
               }
-              callback2(ok);
             }
-          }, rounded);
-        });
-        return infoResult;
+            c6 = 0;
+            c8 = 3;
+            return { value: "HermesInternal", done: null };
+          } catch (throwTypeErrorResult) {
+            messageReference = throwTypeErrorResult;
+            throwTypeErrorResult = c6;
+            if (tmp4 === c6) {
+              throwTypeErrorResult = tmp2;
+              c8 = tmp2;
+              throw throwTypeErrorResult;
+            } else {
+              c7 = throwTypeErrorResult;
+            }
+          }
+        }
       }
     })();
   },
   startEditMessage(channelId, messageId, content, source) {
-    let obj = importDefault(686);
+    let obj = importDefault(709);
     obj = { type: "MESSAGE_START_EDIT", channelId, messageId, content, source };
     obj.dispatch(obj);
   },
   startEditMessageRecord(id, flags, source) {
-    let obj = require(1360) /* hasFlag */;
-    if (obj.hasFlag(flags.flags, closure_35.IS_COMPONENTS_V2)) {
+    let obj = require(1384) /* hasFlag */;
+    if (obj.hasFlag(flags.flags, closure_33.IS_COMPONENTS_V2)) {
       const components = flags.components;
-      const found = components.filter((type) => type.type === outer1_0(outer1_3[82]).ComponentType.TEXT_DISPLAY);
+      const found = components.filter((type) => type.type === callback(table[79]).ComponentType.TEXT_DISPLAY);
       if (found.length > 0) {
         const mapped = found.map((content) => content.content);
         const joined = mapped.join("\n");
-        obj = { type: "MESSAGE_START_EDIT", channelId: id, messageId: flags.id, content: joined, source };
-        importDefault(686).dispatch(obj);
+        obj = { type: "MESSAGE_START_EDIT", channelId: null, messageId: null, content: null, source: null };
+        obj[1] = id;
+        obj[2] = flags.id;
+        obj[3] = joined;
+        obj[4] = source;
+        importDefault(709).dispatch(obj);
       }
     }
     obj = { type: "MESSAGE_START_EDIT", channelId: id, messageId: flags.id, content: flags.content, source };
-    importDefault(686).dispatch(obj);
+    importDefault(709).dispatch(obj);
   },
   updateEditMessage(channelId, textValue, richValue) {
-    let obj = importDefault(686);
+    let obj = importDefault(709);
     obj = { type: "MESSAGE_UPDATE_EDIT", channelId, textValue, richValue };
     obj.dispatch(obj);
   },
   endEditMessage(id, response) {
-    let obj = importDefault(686);
+    let obj = importDefault(709);
     obj = { type: "MESSAGE_END_EDIT", channelId: id, response };
     obj.dispatch(obj);
   },
@@ -1972,99 +2520,223 @@ let obj14 = {
     let closure_0 = id;
     let closure_1 = id2;
     ({ content: importAll, components: dependencyMap } = parsed);
-    return callback(async () => {
-      let obj1;
-      if ("message_swipe" === outer2_20.getEditActionSource(outer1_0)) {
-        const channel = outer2_19.getChannel(tmp2);
-        let obj = callback2(outer2_3[40]);
-        obj = { message_id: outer1_1, channel_id: tmp2 };
-        let guild_id;
-        if (null != channel) {
-          guild_id = channel.guild_id;
-        }
-        obj.guild_id = guild_id;
-        obj.swipe_action = "edit";
-        obj.is_own_message = true;
-        obj.track(outer2_29.MESSAGE_SWIPE_ACTION_SENT, obj);
-      }
-      let obj2 = callback2(outer2_3[83]);
-      yield obj2.unarchiveThreadIfNecessary(outer1_0);
-      const message = outer2_23.getMessage(outer1_0, outer1_1);
-      let tmp15;
-      if (null != message) {
-        if (message.type === outer2_37.REPLY) {
-          const messageByReference = outer2_14.getMessageByReference(message.messageReference);
-          if (messageByReference.state === outer2_15.LOADED) {
-            const mentions = message.mentions;
-            if (!mentions.includes(messageByReference.message.author.id)) {
-              obj = {};
-              const _Object = Object;
-              obj.parse = Object.values(outer2_38);
-              obj.replied_user = false;
-              tmp15 = obj;
-            }
-          }
-        }
-      }
-      const message1 = outer2_23.getMessage(tmp12, tmp13);
-      let hasFlagResult = null != message1;
-      if (hasFlagResult) {
-        hasFlagResult = message1.hasFlag(outer2_35.CROSSPOSTED);
-      }
-      obj1 = { channelId: tmp12, messageId: tmp13, content: outer1_2, isCrossposted: hasFlagResult, allowed_mentions: tmp15, components: outer1_3 };
-      obj2 = { type: callback(outer2_3[75]).MessageDataType.EDIT, message: obj1 };
-      callback2(outer2_3[75]).enqueue(obj2, (hasErr) => {
-        let hasItem = !hasErr.hasErr;
-        if (hasItem) {
-          const AUTOMOD_ERROR_CODES = obj1(outer3_3[81]).AUTOMOD_ERROR_CODES;
-          hasItem = AUTOMOD_ERROR_CODES.has(hasErr.body.code);
-        }
-        if (hasItem) {
-          let obj = { type: obj1(outer3_3[75]).MessageDataType.EDIT, message: obj1 };
-          obj1 = callback(outer3_3[49]);
-          obj = { type: "MESSAGE_EDIT_FAILED_AUTOMOD" };
-          obj.messageData = obj;
-          obj = { code: hasErr.body.code, message: hasErr.body.message };
-          obj.errorResponseBody = obj;
-          obj1.dispatch(obj);
-        }
-        const AccessibilityAnnouncer = obj1(outer3_3[84]).AccessibilityAnnouncer;
-        const announce = AccessibilityAnnouncer.announce;
-        const intl = obj1(outer3_3[46]).intl;
-        const string = intl.string;
-        const t = obj1(outer3_3[46]).t;
-        if (hasErr.hasErr) {
-          announce(string(t.Atp7FP));
-        } else if (hasItem) {
-          announce(string(t.Hym4ix));
+    return callback(function*() {
+      if (dependencyMap === 2) {
+        dependencyMap = 3;
+        HermesBuiltin.throwTypeError();
+      } else if (tmp5 === 3) {
+        if (arg0 === 1) {
+          throw arg1;
+        } else if (arg0 === 2) {
+          let obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
         } else {
-          announce(string(t["0x1HBD"]));
+          return { value: "HermesInternal", done: null };
         }
-        let tmp14;
-        if (!hasErr.hasErr) {
-          tmp14 = hasErr;
+      } else {
+        try {
+          dependencyMap = 2;
+          if (0 === obj2) {
+            if (arg0 === 1) {
+              dependencyMap = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              dependencyMap = 3;
+              obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            } else {
+              let closure_1 = tmp2;
+              let closure_0 = tmp3;
+              closure_0 = undefined;
+              closure_1 = undefined;
+              obj2 = undefined;
+              (function tryTrackEditMessageSwipeSend(outer1_1, outer1_0) {
+                if ("message_swipe" === editActionSource.getEditActionSource(outer1_0)) {
+                  channel = channel.getChannel(outer1_0);
+                  let obj = callback(698);
+                  obj = { message_id: null, channel_id: null, guild_id: null, swipe_action: "edit", is_own_message: true };
+                  obj[0] = outer1_1;
+                  obj[1] = outer1_0;
+                  let guild_id;
+                  if (channel != null) {
+                    guild_id = channel.guild_id;
+                  }
+                  obj[2] = guild_id;
+                  obj.track(constants2.MESSAGE_SWIPE_ACTION_SENT, obj);
+                }
+              })(outer1_1, outer1_0);
+              let obj1 = outer1_1(6076);
+              obj2 = 1;
+              dependencyMap = 1;
+              obj1 = { value: null, done: false };
+              obj1[0] = obj1.unarchiveThreadIfNecessary(outer1_0);
+              return obj1;
+            }
+          } else if (arg0 === 1) {
+            dependencyMap = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            dependencyMap = 3;
+            obj = { value: null, done: true };
+            obj[0] = arg1;
+            return obj;
+          } else {
+            closure_0 = (function getAllowedMentionsForMessageEdit(closure_0, closure_1) {
+              const message = store.getMessage(closure_0, closure_1);
+              if (null != message) {
+                if (message.type === constants4.REPLY) {
+                  messageByReference = messageByReference.getMessageByReference(message.messageReference);
+                  if (messageByReference.state === constants.LOADED) {
+                    const mentions = message.mentions;
+                    if (!mentions.includes(messageByReference.message.author.id)) {
+                      const obj = { parse: null, replied_user: false };
+                      const _Object = Object;
+                      obj[0] = Object.values(closure_36);
+                      return obj;
+                    }
+                  }
+                }
+              }
+            })(closure_0, closure_1);
+            closure_1 = (function getIsCrosspostedForMessageEdit(closure_0, closure_1) {
+              const message = store.getMessage(closure_0, closure_1);
+              let hasFlagResult = null != message;
+              if (hasFlagResult) {
+                hasFlagResult = message.hasFlag(constants3.CROSSPOSTED);
+              }
+              return hasFlagResult;
+            })(closure_0, closure_1);
+            obj2 = { channelId: null, messageId: null, content: null, isCrossposted: null, allowed_mentions: null, components: null };
+            obj2[0] = closure_0;
+            obj2[1] = closure_1;
+            obj2[2] = obj2;
+            obj2[3] = closure_1;
+            obj2[4] = closure_0;
+            obj2[5] = dependencyMap;
+            const obj3 = { type: null, message: null };
+            obj3[0] = outer1_0(6145).MessageDataType.EDIT;
+            obj3[1] = obj2;
+            outer1_1(6145).enqueue(obj3, (hasErr) => {
+              hasErr = hasErr.hasErr;
+              let hasItem = !hasErr;
+              if (!hasErr) {
+                const AUTOMOD_ERROR_CODES = outer2_0(6178).AUTOMOD_ERROR_CODES;
+                hasItem = AUTOMOD_ERROR_CODES.has(hasErr.body.code);
+              }
+              if (hasItem) {
+                let obj = { type: null, message: null };
+                obj[0] = outer2_0(6145).MessageDataType.EDIT;
+                obj[1] = obj2;
+                let obj1 = outer2_1(709);
+                obj = { type: "MESSAGE_EDIT_FAILED_AUTOMOD", messageData: null, errorResponseBody: null };
+                obj[1] = obj;
+                obj = { code: null, message: null };
+                obj[0] = hasErr.body.code;
+                obj[1] = hasErr.body.message;
+                obj[2] = obj;
+                obj1.dispatch(obj);
+              }
+              const AccessibilityAnnouncer = outer2_0(4035).AccessibilityAnnouncer;
+              const announce = AccessibilityAnnouncer.announce;
+              const intl = outer2_0(1236).intl;
+              const string = intl.string;
+              const t = outer2_0(1236).t;
+              if (hasErr.hasErr) {
+                announce(string(t.Atp7FP));
+              } else if (hasItem) {
+                announce(string(t.Hym4ix));
+              } else {
+                announce(string(t["0x1HBD"]));
+              }
+              let tmp14;
+              if (!hasErr.hasErr) {
+                tmp14 = hasErr;
+              }
+              outer2_55.endEditMessage(closure_0, tmp14);
+              obj1 = { channelId: tmp13, messageId: closure_1 };
+              outer2_55.focusMessage(obj1);
+            });
+            dependencyMap = 3;
+            return { value: "HermesInternal", done: null };
+          }
+        } catch (tmp13) {
+          dependencyMap = tmp;
+          throw tmp13;
         }
-        outer3_56.endEditMessage(outer2_0, tmp14);
-        obj1 = { channelId: outer2_0, messageId: outer2_1 };
-        outer3_56.focusMessage(obj1);
-      });
+      }
     })();
   },
-  suppressEmbeds(closure_0, closure_1) {
-    return callback(async () => {
-      let obj = callback2(outer2_3[83]);
-      yield obj.unarchiveThreadIfNecessary(outer1_0);
-      const message = outer2_23.getMessage(outer1_0, outer1_1);
-      if (null != message) {
-        const HTTP = callback(outer2_3[54]).HTTP;
-        obj = { url: outer2_30.MESSAGE(outer1_0, outer1_1) };
-        obj = { flags: callback(outer2_3[71]).setFlag(message.flags, outer2_35.SUPPRESS_EMBEDS, true) };
-        obj.body = obj;
-        obj.oldFormErrors = true;
-        const obj4 = callback(outer2_3[71]);
-        obj.rejectWithError = callback(outer2_3[54]).rejectWithMigratedError();
-        HTTP.patch(obj);
-        const obj5 = callback(outer2_3[54]);
+  suppressEmbeds(id, id2) {
+    let closure_0 = id;
+    let closure_1 = id2;
+    return callback(function*() {
+      if (dependencyMap === 2) {
+        dependencyMap = 3;
+        HermesBuiltin.throwTypeError();
+      } else if (tmp4 === 3) {
+        if (arg0 === 1) {
+          throw arg1;
+        } else if (arg0 === 2) {
+          let obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
+        } else {
+          return { value: "HermesInternal", done: null };
+        }
+      } else {
+        try {
+          dependencyMap = 2;
+          if (0 === c2) {
+            if (arg0 === 1) {
+              dependencyMap = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              dependencyMap = 3;
+              obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            } else {
+              let closure_1 = tmp5;
+              let flags = tmp2;
+              flags = undefined;
+              let obj1 = outer1_1(6076);
+              c2 = 1;
+              dependencyMap = 1;
+              obj1 = { value: null, done: false };
+              obj1[0] = obj1.unarchiveThreadIfNecessary(outer1_0);
+              return obj1;
+            }
+          } else if (arg0 === 1) {
+            dependencyMap = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            dependencyMap = 3;
+            obj = { value: null, done: true };
+            obj[0] = arg1;
+            return obj;
+          } else {
+            flags = outer1_21.getMessage(flags, closure_1);
+            if (null != flags) {
+              const HTTP = outer1_0(530).HTTP;
+              const obj2 = { url: null, body: null, oldFormErrors: true, rejectWithError: null };
+              obj2[0] = outer1_28.MESSAGE(flags, closure_1);
+              const obj3 = { flags: null };
+              obj3[0] = outer1_0(1384).setFlag(flags.flags, outer1_33.SUPPRESS_EMBEDS, true);
+              obj2[1] = obj3;
+              const obj8 = outer1_0(1384);
+              obj2[3] = outer1_0(530).rejectWithMigratedError();
+              HTTP.patch(obj2);
+              const obj9 = outer1_0(530);
+            }
+            dependencyMap = 3;
+            return { value: "HermesInternal", done: null };
+          }
+        } catch (tmp9) {
+          dependencyMap = tmp;
+          throw tmp9;
+        }
       }
     })();
   },
@@ -2072,91 +2744,442 @@ let obj14 = {
     let closure_0 = id;
     let closure_1 = id2;
     let closure_2 = arg2;
-    return callback(async () => {
-      let obj = callback2(outer2_3[83]);
-      yield obj.unarchiveThreadIfNecessary(outer1_0);
-      const message = outer2_23.getMessage(outer1_0, outer1_1);
-      if (null != message) {
-        const HTTP = callback(outer2_3[54]).HTTP;
-        obj = { url: outer2_30.MESSAGE(outer1_0, outer1_1) };
-        obj = { flags: callback(outer2_3[71]).setFlag(message.flags, outer2_35.IS_GUILD_OFFICIAL, outer1_2) };
-        obj.body = obj;
-        obj.oldFormErrors = true;
-        const obj4 = callback(outer2_3[71]);
-        obj.rejectWithError = callback(outer2_3[54]).rejectWithMigratedError();
-        HTTP.patch(obj);
-        const obj5 = callback(outer2_3[54]);
+    return callback(function*() {
+      if (dependencyMap === 2) {
+        dependencyMap = 3;
+        HermesBuiltin.throwTypeError();
+      } else if (tmp4 === 3) {
+        if (arg0 === 1) {
+          throw arg1;
+        } else if (arg0 === 2) {
+          let obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
+        } else {
+          return { value: "HermesInternal", done: null };
+        }
+      } else {
+        try {
+          dependencyMap = 2;
+          if (0 === c2) {
+            if (arg0 === 1) {
+              dependencyMap = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              dependencyMap = 3;
+              obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            } else {
+              let closure_1 = tmp5;
+              let flags = tmp2;
+              flags = undefined;
+              let obj1 = outer1_1(6076);
+              c2 = 1;
+              dependencyMap = 1;
+              obj1 = { value: null, done: false };
+              obj1[0] = obj1.unarchiveThreadIfNecessary(outer1_0);
+              return obj1;
+            }
+          } else if (arg0 === 1) {
+            dependencyMap = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            dependencyMap = 3;
+            obj = { value: null, done: true };
+            obj[0] = arg1;
+            return obj;
+          } else {
+            flags = outer1_21.getMessage(flags, closure_1);
+            if (null != flags) {
+              const HTTP = outer1_0(530).HTTP;
+              const obj2 = { url: null, body: null, oldFormErrors: true, rejectWithError: null };
+              obj2[0] = outer1_28.MESSAGE(flags, closure_1);
+              const obj3 = { flags: null };
+              obj3[0] = outer1_0(1384).setFlag(flags.flags, outer1_33.IS_GUILD_OFFICIAL, c2);
+              obj2[1] = obj3;
+              const obj8 = outer1_0(1384);
+              obj2[3] = outer1_0(530).rejectWithMigratedError();
+              HTTP.patch(obj2);
+              const obj9 = outer1_0(530);
+            }
+            dependencyMap = 3;
+            return { value: "HermesInternal", done: null };
+          }
+        } catch (tmp9) {
+          dependencyMap = tmp;
+          throw tmp9;
+        }
       }
     })();
   },
-  patchMessageAttachments(closure_0, id, found) {
-    let closure_1 = id;
+  patchMessageAttachments(id, id2, found) {
+    let closure_0 = id;
+    let closure_1 = id2;
     let closure_2 = found;
-    return callback(async () => {
-      let obj = callback2(outer2_3[83]);
-      yield obj.unarchiveThreadIfNecessary(outer1_0);
-      const HTTP = callback(outer2_3[54]).HTTP;
-      obj = { url: outer2_30.MESSAGE(outer1_0, outer1_1), body: obj, oldFormErrors: true };
-      obj = { attachments: outer1_2, rejectWithError: callback(outer2_3[54]).rejectWithMigratedError() };
-      HTTP.patch(obj);
+    return callback(function*() {
+      if (c2 === 2) {
+        c2 = 3;
+        HermesBuiltin.throwTypeError();
+      } else if (tmp3 === 3) {
+        if (arg0 === 1) {
+          throw arg1;
+        } else if (arg0 === 2) {
+          let obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
+        } else {
+          return { value: "HermesInternal", done: null };
+        }
+      } else {
+        try {
+          c2 = 2;
+          if (0 === v0) {
+            if (arg0 === 1) {
+              c2 = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              c2 = 3;
+              obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            } else {
+              let closure_0 = tmp4;
+              let obj1 = v0(outer1_3[80]);
+              v0 = 1;
+              c2 = 1;
+              obj1 = { value: null, done: false };
+              obj1[0] = obj1.unarchiveThreadIfNecessary(outer1_0);
+              return obj1;
+            }
+          } else if (arg0 === 1) {
+            c2 = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            c2 = 3;
+            obj = { value: null, done: true };
+            obj[0] = arg1;
+            return obj;
+          } else {
+            const HTTP = outer1_0(outer1_3[51]).HTTP;
+            const obj2 = { url: null, body: null, oldFormErrors: true, rejectWithError: null };
+            obj2[0] = outer1_28.MESSAGE(closure_0, v0);
+            const obj3 = { attachments: null };
+            obj3[0] = c2;
+            obj2[1] = obj3;
+            obj2[3] = outer1_0(outer1_3[51]).rejectWithMigratedError();
+            HTTP.patch(obj2);
+            c2 = 3;
+            return { value: "HermesInternal", done: null };
+          }
+        } catch (tmp8) {
+          c2 = tmp;
+          throw tmp8;
+        }
+      }
     })();
   },
   deleteMessage(arg0, arg1) {
-    let flag = arg2;
     let closure_0 = arg0;
     let closure_1 = arg1;
+    let flag = arg2;
     if (arg2 === undefined) {
       flag = false;
     }
-    return callback(async () => {
-      function dispatchDelete() {
-        let obj = callback(outer3_3[49]);
-        obj = { type: "MESSAGE_DELETE", id: outer2_1, channelId: outer2_0 };
-        obj.dispatch(obj).then(() => {
-          const AccessibilityAnnouncer = callback(outer4_3[84]).AccessibilityAnnouncer;
-          const intl = callback(outer4_3[46]).intl;
-          AccessibilityAnnouncer.announce(intl.string(callback(outer4_3[46]).t.RYMs7s));
-        });
-      }
-      if (outer1_2) {
-        dispatchDelete();
+    return callback(function*() {
+      if (dependencyMap === 2) {
+        dependencyMap = 3;
+        HermesBuiltin.throwTypeError();
+      } else if (tmp3 === 3) {
+        if (arg0 === 1) {
+          throw arg1;
+        } else if (arg0 === 2) {
+          let obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
+        } else {
+          return { value: "HermesInternal", done: null };
+        }
       } else {
-        let obj = callback2(outer2_3[83]);
-        yield obj.unarchiveThreadIfNecessary(outer1_0);
-        const HTTP = callback(outer2_3[54]).HTTP;
-        obj = { url: outer2_30.MESSAGE(outer1_0, outer1_1), oldFormErrors: true, rejectWithError: callback(outer2_3[54]).rejectWithMigratedError() };
-        const obj3 = callback(outer2_3[54]);
-        HTTP.del(obj).then(() => {
-          dispatchDelete();
-        });
-        const delResult = HTTP.del(obj);
+        try {
+          dependencyMap = 2;
+          if (0 === c2) {
+            if (arg0 === 1) {
+              dependencyMap = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              dependencyMap = 3;
+              obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            } else {
+              let closure_1 = tmp4;
+              let closure_0 = tmp4;
+              if (c2) {
+                (function dispatchDelete() {
+                  let obj = tmp4(709);
+                  obj = { type: "MESSAGE_DELETE", id: tmp4, channelId: closure_0 };
+                  obj.dispatch(obj).then(() => {
+                    const AccessibilityAnnouncer = callback(4035).AccessibilityAnnouncer;
+                    const intl = callback(1236).intl;
+                    AccessibilityAnnouncer.announce(intl.string(callback(1236).t.RYMs7s));
+                  });
+                })();
+                dependencyMap = 3;
+              } else {
+                let obj1 = outer1_1(6076);
+                c2 = 1;
+                dependencyMap = 1;
+                obj1 = { value: null, done: false };
+                obj1[0] = obj1.unarchiveThreadIfNecessary(outer1_0);
+                return obj1;
+              }
+            }
+          } else if (arg0 === 1) {
+            dependencyMap = 3;
+            throw arg1;
+          } else if (arg0 !== 2) {
+            const HTTP = outer1_0(530).HTTP;
+            const obj2 = { url: null, oldFormErrors: true, rejectWithError: null };
+            obj2[0] = outer1_28.MESSAGE(closure_0, closure_1);
+            obj2[2] = outer1_0(530).rejectWithMigratedError();
+            const obj7 = outer1_0(530);
+            HTTP.del(obj2).then(() => {
+              let obj = tmp4(709);
+              obj = { type: "MESSAGE_DELETE", id: tmp4, channelId: closure_0 };
+              obj.dispatch(obj).then(() => {
+                const AccessibilityAnnouncer = callback(4035).AccessibilityAnnouncer;
+                const intl = callback(1236).intl;
+                AccessibilityAnnouncer.announce(intl.string(callback(1236).t.RYMs7s));
+              });
+            });
+            const delResult = HTTP.del(obj2);
+          }
+          dependencyMap = 3;
+          obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
+        } catch (tmp10) {
+          dependencyMap = tmp;
+          throw tmp10;
+        }
       }
     })();
   },
-  dismissAutomatedMessage(message) {
-    const self = this;
-    if (null != message.loggingName) {
-      let obj = importDefault(4359);
-      obj = { message_name: message.loggingName, message_author: message.author.username };
+  dismissAutomatedMessage(loggingName) {
+    if (null != loggingName.loggingName) {
+      let obj = importDefault(4384);
+      obj = { message_name: null, message_author: null };
+      obj[0] = loggingName.loggingName;
+      obj[1] = loggingName.author.username;
       obj.trackWithMetadata(constants.AUTOMATED_MESSAGE_DISMISSED, obj);
     }
-    const result = require(6161) /* dismissGiftIntent */.logGiftIntentMessageDismissed(message.channel_id, message.id);
-    self.deleteMessage(message.channel_id, message.id, true);
+    const result = require(6179) /* fetchAndReconcileGiftIntentDismissals */.logGiftIntentMessageDismissed(loggingName.channel_id, loggingName.id);
+    this.deleteMessage(loggingName.channel_id, loggingName.id, true);
   },
   revealMessage(id, messageId) {
-    let obj = importDefault(686);
+    let obj = importDefault(709);
     obj = { type: "MESSAGE_REVEAL", channelId: id, messageId };
     obj.dispatch(obj);
   },
-  crosspostMessage(closure_0, closure_1) {
-    return callback(async () => {
-      const HTTP = callback(outer2_3[54]).HTTP;
-      const obj = { url: outer2_30.MESSAGE_CROSSPOST(outer1_0, outer1_1), oldFormErrors: true, failImmediatelyWhenRateLimited: true, rejectWithError: callback(outer2_3[54]).rejectWithMigratedError() };
-      return yield HTTP.post(obj);
+  crosspostMessage(id, id2) {
+    let closure_0 = id;
+    let closure_1 = id2;
+    return callback(function*() {
+      if (c5 === 2) {
+        c5 = 3;
+        HermesBuiltin.throwTypeError();
+      } else if (tmp6 === 3) {
+        if (arg0 === 1) {
+          throw arg1;
+        } else if (arg0 === 2) {
+          let obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
+        } else {
+          return { value: "HermesInternal", done: null };
+        }
+      } else {
+        try {
+          c5 = 2;
+          if (0 === c4) {
+            if (arg0 === 1) {
+              c5 = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              c5 = 3;
+              obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            } else {
+              let closure_1 = tmp3;
+              let c0 = tmp7;
+              c0 = undefined;
+              let dependencyMap = 1;
+              const HTTP = outer1_0(530).HTTP;
+              const obj1 = { url: null, oldFormErrors: true, failImmediatelyWhenRateLimited: true, rejectWithError: null };
+              obj1[0] = outer1_28.MESSAGE_CROSSPOST(outer1_0, outer1_1);
+              obj1[3] = outer1_0(530).rejectWithMigratedError();
+              c4 = 2;
+              c5 = 1;
+              const obj2 = { value: null, done: false };
+              obj2[0] = HTTP.post(obj1);
+              return obj2;
+            }
+          } else if (1 === tmp7) {
+            dependencyMap = 0;
+            closure_1 = closure_2;
+            if (429 === closure_1.status) {
+              const intl2 = outer1_0(1236).intl;
+              let obj3 = { retryAfter: null };
+              const _Math = Math;
+              obj3[0] = Math.floor(closure_1.body.retry_after / 60);
+              let formatToPlainStringResult = intl2.formatToPlainString(outer1_0(1236).t["77cuqz"], obj3);
+            } else {
+              const intl = outer1_0(1236).intl;
+              formatToPlainStringResult = intl.string(outer1_0(1236).t.z2gyNF);
+            }
+            c0 = formatToPlainStringResult;
+            obj3 = outer1_1(4528);
+            const obj4 = { title: null, body: null, confirmText: null };
+            const intl3 = outer1_0(1236).intl;
+            obj4[0] = intl3.string(outer1_0(1236).t.Vd1hs6);
+            obj4[1] = c0;
+            const intl4 = outer1_0(1236).intl;
+            obj4[2] = intl4.string(outer1_0(1236).t.BddRzS);
+            obj3.show(obj4);
+            c5 = 3;
+          } else if (arg0 === 1) {
+            c5 = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            dependencyMap = 0;
+            c5 = 3;
+            const obj5 = { value: null, done: true };
+            obj5[0] = arg1;
+            return obj5;
+          } else {
+            dependencyMap = 0;
+            c5 = 3;
+            obj = { value: null, done: true };
+            obj[0] = arg1;
+            return obj;
+          }
+        } catch (tmp39) {
+          closure_2 = tmp39;
+          if (tmp4 === dependencyMap) {
+            c5 = tmp2;
+            throw tmp39;
+          } else {
+            c4 = tmp;
+          }
+        }
+      }
     })();
   },
   trackInvite
 };
-let result = require("_classCallCheck").fileFinishedImporting("actions/MessageActionCreators.tsx");
+let obj1 = {
+  messageName: "TOO_MANY_THREADS",
+  messageGetter(isForumLikeChannel) {
+    if (!isForumLikeChannel.isForumLikeChannel()) {
+      if (!isForumLikeChannel.isForumPost()) {
+        const intl = require(1236) /* getSystemLocale */.intl;
+        let stringResult = intl.string(require(1236) /* getSystemLocale */.t["5EMPA7"]);
+      }
+      return stringResult;
+    }
+    const intl2 = require(1236) /* getSystemLocale */.intl;
+    stringResult = intl2.string(require(1236) /* getSystemLocale */.t["/jUd2+"]);
+  }
+};
+let obj10 = {
+  messageName: "BOT_DM_SEND_MESSAGE_INVALID_OFFLINE_PROVISIONAL_ACCOUNT",
+  messageGetter() {
+    const intl = require(1236) /* getSystemLocale */.intl;
+    return intl.string(require(1236) /* getSystemLocale */.t.Oc1Zjw);
+  }
+};
+let obj11 = {
+  messageName: "TOTAL_ATTACHMENT_SIZE_TOO_LARGE",
+  messageGetter() {
+    const intl = require(1236) /* getSystemLocale */.intl;
+    const obj = { maxSizeMb: null };
+    obj[0] = require(4723) /* items */.MAX_TOTAL_ATTACHMENT_SIZE_MB;
+    return intl.formatToPlainString(require(1236) /* getSystemLocale */.t.DYFPg2, obj);
+  }
+};
+let obj12 = {
+  messageName: "CLOUD_UPLOAD_NOT_FOUND",
+  messageGetter() {
+    const intl = require(1236) /* getSystemLocale */.intl;
+    return intl.string(require(1236) /* getSystemLocale */.t.bQldfH);
+  }
+};
+let obj13 = {
+  messageName: "INVALID_PERMISSIONS",
+  messageGetter() {
+    const intl = require(1236) /* getSystemLocale */.intl;
+    return intl.string(require(1236) /* getSystemLocale */.t.zl4Weq);
+  }
+};
+let obj2 = {
+  messageName: "TOO_MANY_ANNOUNCEMENT_THREADS",
+  messageGetter() {
+    const intl = require(1236) /* getSystemLocale */.intl;
+    return intl.string(require(1236) /* getSystemLocale */.t["aY+lLC"]);
+  }
+};
+let obj3 = {
+  messageName: "HARMFUL_LINK_MESSAGE_BLOCKED",
+  messageGetter() {
+    const intl = require(1236) /* getSystemLocale */.intl;
+    return intl.formatToPlainString(require(1236) /* getSystemLocale */.t.zSG3Qy, { helpUrl: constants8.HARMFUL_LINKS });
+  }
+};
+let obj4 = {
+  messageName: "HARMFUL_URL_BLOCKED",
+  messageGetter() {
+    const intl = require(1236) /* getSystemLocale */.intl;
+    return intl.string(require(1236) /* getSystemLocale */.t.WxX2Fd);
+  }
+};
+let obj5 = {
+  messageName: "BOT_REQUIRES_EMAIL_VERIFICATION",
+  messageGetter() {
+    const intl = require(1236) /* getSystemLocale */.intl;
+    return intl.string(require(1236) /* getSystemLocale */.t.k1Cjqr);
+  }
+};
+let obj6 = {
+  messageName: "GUILD_MESSAGE_UPDATE_RATE_LIMIT_EXCEEDED",
+  messageGetter() {
+    const intl = require(1236) /* getSystemLocale */.intl;
+    return intl.string(require(1236) /* getSystemLocale */.t.Z5SUuv);
+  }
+};
+let obj7 = {
+  messageName: "BOT_DM_RATE_LIMITED",
+  messageGetter() {
+    const intl = require(1236) /* getSystemLocale */.intl;
+    return intl.string(require(1236) /* getSystemLocale */.t.E8nbNb);
+  }
+};
+let obj8 = {
+  messageName: "BOT_DM_SEND_MESSAGE_TEMPORARILY_DISABLED",
+  messageGetter() {
+    const intl = require(1236) /* getSystemLocale */.intl;
+    return intl.string(require(1236) /* getSystemLocale */.t.aRUbah);
+  }
+};
+let obj9 = {
+  messageName: "BOT_DM_SEND_MESSAGE_INVALID_FOR_GAME_FRIEND",
+  messageGetter() {
+    const intl = require(1236) /* getSystemLocale */.intl;
+    return intl.string(require(1236) /* getSystemLocale */.t["/meGhR"]);
+  }
+};
+const tmp6 = new require("updateSubmittedGuildJoinRequestTotal")("MessageQueue");
+let result = require("_handleConnectionOpen").fileFinishedImporting("actions/MessageActionCreators.tsx");
 
 export default obj14;

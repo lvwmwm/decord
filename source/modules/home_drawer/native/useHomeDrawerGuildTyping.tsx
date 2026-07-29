@@ -1,26 +1,26 @@
-// Module ID: 14954
-// Function ID: 113939
+// Module ID: 14980
+// Function ID: 14981
 // Name: areHomeDrawerGuildTypingStatesEqual
-// Dependencies: [3795, 1352, 1348, 11134, 620, 14950, 14951, 566, 21, 2]
+// Dependencies: [3819, 1376, 1372, 11158, 643, 14976, 14977, 589, 11, 2]
 // Exports: useHomeDrawerGuildTyping
 
-// Module 14954 (areHomeDrawerGuildTypingStatesEqual)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import { isThread } from "_callSuper";
-import closure_5 from "_isNativeReflectConstruct";
-import closure_6 from "_isNativeReflectConstruct";
+// Module 14980 (areHomeDrawerGuildTypingStatesEqual)
+import storeThread from "storeThread";
+import { isThread } from "createChannelRecord";
+import ensureGuildLoaded from "ensureGuildLoaded";
+import handleTypingStart from "handleTypingStart";
 
 const require = arg1;
 function areHomeDrawerGuildTypingStatesEqual(typingChannelId, typingChannelId2) {
   let result = typingChannelId.typingChannelId === typingChannelId2.typingChannelId && typingChannelId.typingChannelName === typingChannelId2.typingChannelName;
   if (result) {
-    result = require(620) /* shallowEqual */.areArraysShallowEqual(typingChannelId.typingUserIds, typingChannelId2.typingUserIds);
-    const obj = require(620) /* shallowEqual */;
+    result = require(643) /* shallowEqual */.areArraysShallowEqual(typingChannelId.typingUserIds, typingChannelId2.typingUserIds);
+    const obj = require(643) /* shallowEqual */;
   }
   return result;
 }
-let closure_7 = { typingChannelId: undefined, typingChannelName: undefined, typingUserIds: [] };
-let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/home_drawer/native/useHomeDrawerGuildTyping.tsx");
+let closure_7 = { typingChannelId: "Array", typingChannelName: "ct", typingUserIds: [] };
+let result = require("ensureGuildLoaded").fileFinishedImporting("modules/home_drawer/native/useHomeDrawerGuildTyping.tsx");
 
 export const useHomeDrawerGuildTyping = function useHomeDrawerGuildTyping(id) {
   const _require = id;
@@ -28,26 +28,26 @@ export const useHomeDrawerGuildTyping = function useHomeDrawerGuildTyping(id) {
   let obj = _require(isHomeDrawerChannelInChannelList[5]);
   isHomeDrawerChannelInChannelList = _require(isHomeDrawerChannelInChannelList[6]).useIsHomeDrawerChannelInChannelList();
   const obj2 = _require(isHomeDrawerChannelInChannelList[6]);
-  const items = [closure_6, closure_5, _isNativeReflectConstruct];
+  const items = [handleTypingStart, ensureGuildLoaded, storeThread];
   const items1 = [id, isHomeDrawerChannelMuted, isHomeDrawerChannelInChannelList];
   return _require(isHomeDrawerChannelInChannelList[7]).useStateFromStores(items, () => {
     const typingUsersByGuild = outer1_6.getTypingUsersByGuild(closure_0);
     let obj = isHomeDrawerChannelMuted(isHomeDrawerChannelInChannelList[8]);
     const keys = obj.keys(typingUsersByGuild);
-    const found = keys.find((arg0) => {
-      const basicChannel = outer2_5.getBasicChannel(arg0);
+    const found = keys.find((id) => {
+      const basicChannel = outer1_5.getBasicChannel(id);
       let tmp2 = null != basicChannel;
       if (tmp2) {
-        tmp2 = !outer1_1(basicChannel);
+        tmp2 = !callback(basicChannel);
       }
       if (tmp2) {
-        let tmp5 = outer2_4(basicChannel.type);
+        let tmp5 = outer1_4(basicChannel.type);
         if (tmp5) {
-          tmp5 = !outer2_3.hasJoined(arg0);
+          tmp5 = !outer1_3.hasJoined(id);
         }
         let tmp7 = !tmp5;
-        if (tmp7) {
-          tmp7 = outer1_2(basicChannel);
+        if (!tmp5) {
+          tmp7 = callback2(basicChannel);
         }
         tmp2 = tmp7;
       }
@@ -56,15 +56,16 @@ export const useHomeDrawerGuildTyping = function useHomeDrawerGuildTyping(id) {
     if (null == found) {
       obj = outer1_7;
     } else {
-      obj = { typingChannelId: found };
+      obj = { typingChannelId: null, typingChannelName: null, typingUserIds: null };
+      obj[0] = found;
       const channel = outer1_5.getChannel(found);
       let name;
-      if (null != channel) {
+      if (channel != null) {
         name = channel.name;
       }
-      obj.typingChannelName = name;
+      obj[1] = name;
       const _Object = Object;
-      obj.typingUserIds = Object.keys(typingUsersByGuild[found]);
+      obj[2] = Object.keys(typingUsersByGuild[found]);
     }
     return obj;
   }, items1, areHomeDrawerGuildTypingStatesEqual);

@@ -1,23 +1,23 @@
-// Module ID: 13523
-// Function ID: 103784
-// Dependencies: [4068, 653, 507, 675, 2]
+// Module ID: 13546
+// Function ID: 13547
+// Dependencies: [4092, 676, 530, 698, 2]
 
-// Module 13523
+// Module 13546
 import { RPC_LOCAL_SCOPE } from "RPC_SCOPE_CONFIG";
 import ME from "ME";
 
 let RPCCommands;
-let closure_3;
-let closure_4;
-({ Endpoints: closure_3, AnalyticEvents: closure_4, RPCCommands } = ME);
+let c3;
+let c4;
+({ Endpoints: c3, AnalyticEvents: c4, RPCCommands } = ME);
 let obj = {
   scope: RPC_LOCAL_SCOPE,
   handler() {
-    const HTTP = require(507) /* _isNativeReflectConstruct */.HTTP;
+    const HTTP = require(530) /* sendRequest */.HTTP;
     let obj = { url: location.protocol + window.GLOBAL_ENV.NETWORKING_ENDPOINT, retries: 3, rejectWithError: false };
     const value = HTTP.get(obj);
     const items = [value.then((body) => body.body.address), ];
-    const HTTP2 = require(507) /* _isNativeReflectConstruct */.HTTP;
+    const HTTP2 = require(530) /* sendRequest */.HTTP;
     obj = { url: constants.NETWORKING_TOKEN, retries: 3, oldFormErrors: true, rejectWithError: false };
     items[1] = HTTP2.post(obj).then((body) => body.body.token);
     const postResult = HTTP2.post(obj);
@@ -34,7 +34,7 @@ obj = {
   handler(args) {
     args = args.args;
     args.application_id = args.socket.application.id;
-    importDefault(675).track(constants2.NETWORKING_SYSTEM_METRICS, args);
+    importDefault(698).track(constants2.NETWORKING_SYSTEM_METRICS, args);
   }
 };
 obj = {
@@ -42,10 +42,10 @@ obj = {
   handler(args) {
     args = args.args;
     args.application_id = args.socket.application.id;
-    importDefault(675).track(constants2.NETWORKING_PEER_METRICS, args);
+    importDefault(698).track(constants2.NETWORKING_PEER_METRICS, args);
   }
 };
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/rpc/server/commands/networking.tsx");
+const result = require("sendRequest").fileFinishedImporting("modules/rpc/server/commands/networking.tsx");
 
 export default {
   [RPCCommands.GET_NETWORKING_CONFIG]: obj,
@@ -54,9 +54,8 @@ export default {
   [RPCCommands.NETWORKING_CREATE_TOKEN]: {
     scope: RPC_LOCAL_SCOPE,
     handler() {
-      const HTTP = require(507) /* _isNativeReflectConstruct */.HTTP;
-      const obj = { url: constants.NETWORKING_TOKEN, retries: 1, oldFormErrors: true, rejectWithError: false };
-      return HTTP.post(obj).then((body) => body.body);
+      const HTTP = require(530) /* sendRequest */.HTTP;
+      return HTTP.post({ url: constants.NETWORKING_TOKEN, retries: 1, oldFormErrors: true, rejectWithError: false }).then((body) => body.body);
     }
   }
 };

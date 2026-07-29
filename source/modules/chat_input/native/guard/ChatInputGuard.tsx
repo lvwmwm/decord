@@ -1,54 +1,54 @@
-// Module ID: 11516
-// Function ID: 89507
+// Module ID: 11540
+// Function ID: 11541
 // Name: ChatInputGuard
-// Dependencies: [31, 27, 9286, 33, 4165, 689, 783, 8801, 1324, 11397, 11396, 4697, 477, 11405, 5198, 6661, 10173, 10168, 4161, 4578, 5000, 8212, 2]
+// Dependencies: [19, 17, 9310, 21, 4189, 712, 806, 8825, 1348, 11421, 11420, 4719, 500, 11429, 5220, 6682, 10194, 10189, 4185, 4600, 5022, 8236, 2]
 // Exports: ChatInputGuardContainer, default
 
-// Module 11516 (ChatInputGuard)
-import result from "result";
-import get_ActivityIndicator from "get ActivityIndicator";
-import { updateChatInputContainerHeight as closure_6 } from "getChatInputContainerHeight";
-import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+// Module 11540 (ChatInputGuard)
+import Button from "Button";
+import get_ActivityIndicator from "componentDidMount";
+import { updateChatInputContainerHeight as closure_6 } from "updateChatInputContainerHeight";
+import jsxProd from "TwinButtons";
+import createCacheKey from "createCacheKey";
 
-let closure_4;
-let closure_5;
-let closure_7;
-let closure_8;
+let c4;
+let c5;
+let error;
+let metroImportAll;
 const require = arg1;
-({ StyleSheet: closure_4, View: closure_5 } = get_ActivityIndicator);
-({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-let closure_9 = _createForOfIteratorHelperLoose.createStyles((arg0) => {
-  let obj = {};
-  obj = { paddingHorizontal: importDefault(689).space.PX_12, paddingBottom: importDefault(689).space.PX_8 };
-  obj.container = obj;
-  obj = {};
+({ StyleSheet: c4, View: c5 } = get_ActivityIndicator);
+({ jsx: error, jsxs: metroImportAll } = jsxProd);
+let closure_9 = createCacheKey.createStyles((arg0) => {
+  let obj = { container: null, content: null, underlay: null, wrapper: null, floating: null, text: null, subtext: null, spacing: null };
+  obj = { paddingHorizontal: importDefault(712).space.PX_12, paddingBottom: importDefault(712).space.PX_8 };
+  obj[0] = obj;
   let lg;
   if (arg0) {
-    lg = importDefault(689).radii.lg;
+    lg = tmp(712).radii.lg;
   }
-  obj.borderRadius = lg;
+  obj = { borderRadius: lg, overflow: null };
   let str;
   if (arg0) {
     str = "hidden";
   }
-  obj.overflow = str;
-  obj.content = obj;
-  const obj1 = { backgroundColor: importDefault(689).colors.BACKGROUND_BASE_LOWER, height: importDefault(689).space.PX_8 + require(783) /* Radius */.Radius.lg };
+  obj[1] = str;
+  obj[1] = obj;
+  const obj1 = { backgroundColor: importDefault(712).colors.BACKGROUND_BASE_LOWER, height: null };
+  obj1[1] = importDefault(712).space.PX_8 + require(806) /* Radius */.Radius.lg;
   const merged = Object.assign(absoluteFillObject.absoluteFillObject);
-  obj1["top"] = undefined;
-  obj.underlay = obj1;
-  obj.wrapper = { borderColor: importDefault(689).colors.BORDER_MUTED, paddingHorizontal: importDefault(689).space.PX_12, paddingTop: importDefault(689).space.PX_16, backgroundColor: importDefault(689).colors.BACKGROUND_SURFACE_HIGH, borderRadius: importDefault(689).radii.lg, borderWidth: 1 };
-  const obj2 = { borderColor: importDefault(689).colors.BORDER_MUTED, paddingHorizontal: importDefault(689).space.PX_12, paddingTop: importDefault(689).space.PX_16, backgroundColor: importDefault(689).colors.BACKGROUND_SURFACE_HIGH, borderRadius: importDefault(689).radii.lg, borderWidth: 1 };
-  obj.floating = { backgroundColor: importDefault(689).colors.BACKGROUND_SURFACE_HIGH, borderRadius: importDefault(689).modules.mobile.TABLE_ROW_BORDER_RADIUS, borderColor: importDefault(689).colors.BORDER_MUTED, borderWidth: 1 };
-  obj.text = { textAlign: "center" };
-  const obj3 = { backgroundColor: importDefault(689).colors.BACKGROUND_SURFACE_HIGH, borderRadius: importDefault(689).modules.mobile.TABLE_ROW_BORDER_RADIUS, borderColor: importDefault(689).colors.BORDER_MUTED, borderWidth: 1 };
-  obj.subtext = { marginTop: importDefault(689).space.PX_4, textAlign: "center" };
-  const obj4 = { marginTop: importDefault(689).space.PX_4, textAlign: "center" };
-  obj.spacing = { marginTop: importDefault(689).space.PX_8 };
+  obj1.top = undefined;
+  obj[2] = obj1;
+  obj[3] = { borderColor: importDefault(712).colors.BORDER_MUTED, paddingHorizontal: importDefault(712).space.PX_12, paddingTop: importDefault(712).space.PX_16, backgroundColor: importDefault(712).colors.BACKGROUND_SURFACE_HIGH, borderRadius: importDefault(712).radii.lg, borderWidth: 1 };
+  const obj2 = { borderColor: importDefault(712).colors.BORDER_MUTED, paddingHorizontal: importDefault(712).space.PX_12, paddingTop: importDefault(712).space.PX_16, backgroundColor: importDefault(712).colors.BACKGROUND_SURFACE_HIGH, borderRadius: importDefault(712).radii.lg, borderWidth: 1 };
+  obj[4] = { backgroundColor: importDefault(712).colors.BACKGROUND_SURFACE_HIGH, borderRadius: importDefault(712).modules.mobile.TABLE_ROW_BORDER_RADIUS, borderColor: importDefault(712).colors.BORDER_MUTED, borderWidth: 1 };
+  obj[5] = { textAlign: "center" };
+  const obj3 = { backgroundColor: importDefault(712).colors.BACKGROUND_SURFACE_HIGH, borderRadius: importDefault(712).modules.mobile.TABLE_ROW_BORDER_RADIUS, borderColor: importDefault(712).colors.BORDER_MUTED, borderWidth: 1 };
+  obj[6] = { marginTop: importDefault(712).space.PX_4, textAlign: "center" };
+  const obj4 = { marginTop: importDefault(712).space.PX_4, textAlign: "center" };
+  obj[7] = { marginTop: importDefault(712).space.PX_8 };
   return obj;
 });
-const result = require("getChatInputContainerHeight").fileFinishedImporting("modules/chat_input/native/guard/ChatInputGuard.tsx");
+const result = require("updateChatInputContainerHeight").fileFinishedImporting("modules/chat_input/native/guard/ChatInputGuard.tsx");
 
 export default function ChatInputGuard(type) {
   let actionIcon;
@@ -70,89 +70,107 @@ export default function ChatInputGuard(type) {
   let message2;
   let subtext;
   let subtext2;
-  const tmp = callback3(importDefault(8801)());
+  const tmp3 = callback2(importDefault(8825)());
   if ("simple-action" === type.type) {
     ({ countdown, actionIcon, actionLabel, actionOnPress } = type);
-    let obj = { style: tmp.floating };
+    let obj = { style: null, children: null };
+    obj[0] = tmp3.floating;
     ({ icon, message, subtext } = type);
-    obj = { arrow: false, accessibilityRole: "button", onPress: actionOnPress, icon, start: true, end: true };
+    obj = { arrow: false, accessibilityRole: "button", onPress: null, icon: null, start: true, end: true, trailing: null, label: null, subLabel: null };
+    obj[2] = actionOnPress;
+    obj[3] = icon;
     if (null != actionLabel) {
       if (null != actionOnPress) {
-        const obj1 = { accessibilityLabel: actionLabel };
-        if (null == actionIcon) {
-          const obj2 = { color: importDefault(689).colors.WHITE };
-          actionIcon = callback(require(10173) /* ArrowSmallRightIcon */.ArrowSmallRightIcon, obj2);
+        const obj1 = { accessibilityLabel: null, icon: null, size: "sm", onPress: null };
+        obj1[0] = actionLabel;
+        if (actionIcon == null) {
+          const obj2 = { color: null };
+          obj2[0] = tmp(712).colors.WHITE;
+          actionIcon = tmp7(tmp9(10194).ArrowSmallRightIcon, obj2);
         }
-        obj1.icon = actionIcon;
-        obj1.size = "sm";
-        obj1.onPress = actionOnPress;
-        let tmp28Result = callback(require(6661) /* IconButton */.IconButton, obj1);
-        const tmp28 = callback;
+        obj1[1] = actionIcon;
+        obj1[3] = actionOnPress;
+        let tmp7Result = tmp7(tmp9(6682).IconButton, obj1);
       }
-      obj.trailing = tmp28Result;
-      const obj3 = { variant: "text-sm/semibold", children: message };
-      obj.label = callback(require(4161) /* Text */.Text, obj3);
-      obj.subLabel = subtext;
-      obj.children = tmp18(tmp22, obj);
-      return tmp18(tmp19, obj);
+      obj[6] = tmp7Result;
+      const obj3 = { variant: "text-sm/semibold", children: null };
+      obj3[1] = message;
+      obj[7] = tmp7(tmp9(4185).Text, obj3);
+      obj[8] = subtext;
+      obj[1] = tmp7(tmp10, obj);
+      return tmp7(tmp8, obj);
     }
-    tmp28Result = null;
+    tmp7Result = null;
     if (null != countdown) {
-      const obj4 = {};
+      const obj4 = { style: null, deadline: null };
       const items = [, ];
-      ({ text: arr3[0], spacing: arr3[1] } = tmp);
-      obj4.style = items;
-      obj4.deadline = countdown;
-      tmp28Result = callback(importDefault(10168), obj4);
+      ({ text: arr3[0], spacing: arr3[1] } = tmp3);
+      obj4[0] = items;
+      obj4[1] = countdown;
+      tmp7Result = tmp7(tmp(10189), obj4);
     }
-    tmp19 = closure_5;
+    tmp8 = closure_5;
   } else {
     ({ subtext: subtext2, buttonSecondaryText, buttonSecondaryOnPress, countdown: countdown2 } = type);
     ({ message: message2, buttonPrimaryText, buttonPrimaryOnPress, buttonPrimaryDisabled, buttonPrimaryLoading, buttonPrimaryVariant, buttonSecondaryDisabled, buttonSecondaryLoading } = type);
-    const obj5 = { disabled: buttonPrimaryDisabled, loading: buttonPrimaryLoading, text: buttonPrimaryText, onPress: buttonPrimaryOnPress, size: "sm", variant: buttonPrimaryVariant };
-    const tmp41 = callback(require(4578) /* Button */.Button, obj5);
-    const obj6 = { style: tmp.wrapper };
-    const obj7 = { style: tmp.text, variant: "text-sm/semibold", children: message2 };
-    const items1 = [callback(require(4161) /* Text */.Text, obj7), , , ];
-    let tmp2 = null;
+    const obj5 = { disabled: null, loading: null, text: null, onPress: null, size: "sm", variant: null };
+    obj5[0] = buttonPrimaryDisabled;
+    obj5[1] = buttonPrimaryLoading;
+    obj5[2] = buttonPrimaryText;
+    obj5[3] = buttonPrimaryOnPress;
+    obj5[5] = buttonPrimaryVariant;
+    const tmp15 = callback(require(4600) /* Button */.Button, obj5);
+    const obj6 = { style: null, children: null };
+    obj6[0] = tmp3.wrapper;
+    const obj7 = { style: null, variant: "text-sm/semibold", children: null };
+    obj7[0] = tmp3.text;
+    obj7[2] = message2;
+    const items1 = [callback(require(4185) /* Text */.Text, obj7), , , ];
+    let tmp13Result = null;
     if (null != subtext2) {
-      tmp2 = null;
-      if ("string" === typeof subtext2) {
-        tmp2 = null;
+      tmp13Result = null;
+      if (typeof subtext2 !== "init") {
+        tmp13Result = null;
         if (subtext2.length > 0) {
-          obj = { style: tmp.subtext, variant: "text-xs/medium", color: "text-muted", children: subtext2 };
-          tmp2 = callback(require(4161) /* Text */.Text, obj);
+          obj = { style: null, variant: "text-xs/medium", color: "text-muted", children: null };
+          obj[0] = tmp3.subtext;
+          obj[3] = subtext2;
+          tmp13Result = tmp13(tmp14(4185).Text, obj);
         }
       }
     }
-    items1[1] = tmp2;
-    const obj8 = {};
-    let tmp9 = tmp41;
+    items1[1] = tmp13Result;
+    let tmp16Result = tmp15;
     if (null != buttonSecondaryText) {
-      tmp9 = tmp41;
+      tmp16Result = tmp15;
       if (null != buttonSecondaryOnPress) {
-        const obj9 = {};
-        const items2 = [tmp41, ];
-        const obj10 = { disabled: buttonSecondaryDisabled, loading: buttonSecondaryLoading, text: buttonSecondaryText, onPress: buttonSecondaryOnPress, variant: "secondary", size: "sm" };
-        items2[1] = callback(require(4578) /* Button */.Button, obj10);
-        obj9.children = items2;
-        tmp9 = callback2(require(8212) /* TwinButtons */.TwinButtons, obj9);
+        const obj8 = { children: null };
+        const items2 = [tmp15, ];
+        const obj9 = { disabled: null, loading: null, text: null, onPress: null, variant: "secondary", size: "sm" };
+        obj9[0] = buttonSecondaryDisabled;
+        obj9[1] = buttonSecondaryLoading;
+        obj9[2] = buttonSecondaryText;
+        obj9[3] = buttonSecondaryOnPress;
+        items2[1] = tmp13(tmp14(4600).Button, obj9);
+        obj8[0] = items2;
+        tmp16Result = tmp16(tmp14(8236).TwinButtons, obj8);
       }
     }
-    obj8.children = tmp9;
-    items1[2] = callback(require(5000) /* ButtonGroup */.ButtonGroup, obj8);
-    let tmp14 = null;
+    const obj10 = { children: null };
+    obj10[0] = tmp16Result;
+    items1[2] = callback(require(5022) /* ButtonGroup */.ButtonGroup, obj10);
+    tmp13Result = null;
     if (null != countdown2) {
-      const obj11 = {};
+      const obj11 = { style: null, deadline: null };
       const items3 = [, ];
-      ({ text: arr2[0], spacing: arr2[1] } = tmp);
-      obj11.style = items3;
-      obj11.deadline = countdown2;
-      tmp14 = callback(importDefault(10168), obj11);
+      ({ text: arr2[0], spacing: arr2[1] } = tmp3);
+      obj11[0] = items3;
+      obj11[1] = countdown2;
+      tmp13Result = tmp13(tmp(10189), obj11);
     }
-    items1[3] = tmp14;
-    obj6.children = items1;
-    return callback2(closure_5, obj6);
+    items1[3] = tmp13Result;
+    obj6[1] = items1;
+    return closure_8(closure_5, obj6);
   }
 };
 export const ChatInputGuardContainer = function ChatInputGuardContainer(screenIndex) {
@@ -161,57 +179,58 @@ export const ChatInputGuardContainer = function ChatInputGuardContainer(screenIn
   screenIndex = screenIndex.screenIndex;
   const channelId = screenIndex.channelId;
   ({ onJumpToPresent, children } = screenIndex);
-  const tmp = importDefault(8801)();
-  let obj = screenIndex(1324);
+  const tmp3 = importDefault(8825)();
+  let obj = screenIndex(1348);
   const chatInputFloating = obj.useMobileVisualRefreshConfig({ location: "ChatInputGuardContainer" }).chatInputFloating;
-  let obj1 = screenIndex(11397);
+  let obj1 = screenIndex(11421);
   const chatInputFloatingOverlayStyle = obj1.useChatInputFloatingOverlayStyle();
-  const tmp3 = callback3(tmp);
+  const tmp6 = callback2(tmp3);
   const items = [screenIndex];
-  obj = {};
   const callback = React.useCallback((nativeEvent) => {
     outer1_6(screenIndex, nativeEvent.nativeEvent.layout.height);
   }, items);
-  const items1 = [importDefault(11396)({ isCreatingThread: false }), ];
-  let tmp7 = chatInputFloating;
+  const items1 = [importDefault(11420)({ isCreatingThread: false }), ];
+  let tmp10 = chatInputFloating;
   if (chatInputFloating) {
-    tmp7 = chatInputFloatingOverlayStyle;
+    tmp10 = chatInputFloatingOverlayStyle;
   }
-  items1[1] = tmp7;
-  obj.style = items1;
-  obj.onLayout = callback;
-  obj.collapsable = false;
-  let tmp8 = null;
+  obj = { style: items1, onLayout: callback, collapsable: false, children: null };
+  items1[1] = tmp10;
+  let tmp11 = null;
   if (chatInputFloating) {
-    tmp8 = callback(screenIndex(11397).ChatInputScrimGradient, {});
+    tmp11 = callback(tmp4(11421).ChatInputScrimGradient, {});
   }
-  const items2 = [tmp8, ];
-  obj = { style: tmp3.container };
-  let tmp14 = null;
-  if (!tmp) {
-    obj1 = { style: tmp3.underlay };
-    tmp14 = callback(closure_5, obj1);
+  const items2 = [tmp11, ];
+  obj = { style: tmp6.container, children: null };
+  let tmp13 = null;
+  if (!tmp3) {
+    obj1 = { style: null };
+    obj1[0] = tmp6.underlay;
+    tmp13 = callback(tmp9, obj1);
   }
-  const items3 = [tmp14, , ];
-  const obj2 = { style: tmp3.content };
-  let tmp19 = null;
-  if (tmp) {
-    tmp19 = callback(importDefault(4697), { absolute: true, wide: true, tall: true, mix: true });
+  const items3 = [tmp13, , ];
+  const obj2 = { style: tmp6.content, children: null };
+  let tmp15 = null;
+  if (tmp3) {
+    tmp15 = callback(tmp(4719), { absolute: true, wide: true, tall: true, mix: true });
   }
-  const items4 = [tmp19, children];
-  obj2.children = items4;
+  const items4 = [tmp15, children];
+  obj2[1] = items4;
   items3[1] = closure_8(closure_5, obj2);
-  let tmp23 = null;
-  if (obj7.isIOS()) {
-    tmp23 = null;
+  let tmp17 = null;
+  if (tmp4Result.isIOS()) {
+    tmp17 = null;
     if (null != channelId) {
-      const obj3 = { channelId, screenIndex, onJumpToPresent };
-      tmp23 = callback(importDefault(11405), obj3);
+      const obj3 = { channelId: null, screenIndex: null, onJumpToPresent: null };
+      obj3[0] = channelId;
+      obj3[1] = screenIndex;
+      obj3[2] = onJumpToPresent;
+      tmp17 = callback(tmp(11429), obj3);
     }
   }
-  items3[2] = tmp23;
-  obj.children = items3;
+  items3[2] = tmp17;
+  obj[1] = items3;
   items2[1] = closure_8(closure_5, obj);
-  obj.children = items2;
+  obj[3] = items2;
   return closure_8(closure_5, obj);
 };

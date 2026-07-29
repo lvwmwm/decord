@@ -1,208 +1,115 @@
-// Module ID: 4252
-// Function ID: 36831
-// Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 1194, 1850, 653, 4253, 22, 636, 21, 566, 686, 2]
+// Module ID: 4276
+// Function ID: 4277
+// Name: sortActivity
+// Dependencies: [1218, 1874, 676, 4277, 12, 659, 11, 589, 709, 2]
 
-// Module 4252 (_isNativeReflectConstruct)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_3 from "ME";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
-import closure_7 from "_isNativeReflectConstruct";
-import closure_8 from "_isNativeReflectConstruct";
+// Module 4276 (sortActivity)
+import fetchFingerprint from "fetchFingerprint";
+import mergeGuildAvatar from "mergeGuildAvatar";
 import ME from "ME";
+import { Store } from "initialize";
 
-let closure_10;
-let closure_11;
-let closure_12;
-let closure_13;
-let closure_9;
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
-  }
-  const result = _isNativeReflectConstruct();
-}
-function _createForOfIteratorHelperLoose(iterable) {
-  let closure_0 = iterable;
-  iterable = "undefined" !== typeof Symbol;
-  if (iterable) {
-    const _Symbol = Symbol;
-    iterable = iterable[Symbol.iterator];
-  }
-  if (!iterable) {
-    iterable = iterable[Symbol.iterator];
-  }
-  if (iterable) {
-    const iter = iterable.call(iterable);
-    const next = iter.next;
-    return next.bind(iter);
-  } else {
-    const _Array = Array;
-    let tmp = iterable;
-    if (!Array.isArray(iterable)) {
-      let tmp2;
-      if (iterable) {
-        if ("string" === typeof iterable) {
-          tmp2 = _arrayLikeToArray(iterable, undefined);
-        } else {
-          const toString = {}.toString;
-          const substr = toString.call(iterable).slice(8, -1);
-          let name = substr;
-          if (tmp3) {
-            name = iterable.constructor.name;
-          }
-          if ("Map" !== name) {
-            if ("Set" !== name) {
-              if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(iterable, undefined);
-              } else {
-                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
-              }
-            }
-            tmp2 = arr;
-          }
-          const _Array2 = Array;
-          arr = Array.from(iterable);
-          const callResult = toString.call(iterable);
-          tmp3 = "Object" === substr && iterable.constructor;
+let c4;
+let c5;
+let closure_6;
+let error;
+let metroImportAll;
+function sortActivity(type, type2) {
+  type = type2.type;
+  let num = 4;
+  let num2 = 4;
+  if (constants2.CUSTOM_STATUS !== type) {
+    num2 = 3;
+    if (tmp.COMPETING !== type) {
+      num2 = 2;
+      if (tmp.STREAMING !== type) {
+        num2 = 0;
+        if (tmp.PLAYING === type) {
+          num2 = 1;
         }
       }
-      tmp = tmp2;
-      if (!tmp2) {
-        const _TypeError = TypeError;
-        const typeError = new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
-        throw typeError;
+    }
+  }
+  type2 = type.type;
+  if (constants2.CUSTOM_STATUS !== type2) {
+    num = 3;
+    if (tmp.COMPETING !== type2) {
+      num = 2;
+      if (tmp.STREAMING !== type2) {
+        num = 0;
+        if (tmp.PLAYING === type2) {
+          num = 1;
+        }
       }
     }
-    if (tmp) {
-      closure_0 = tmp;
-    }
-    let c1 = 0;
-    return () => {
-      if (closure_1 >= length.length) {
-        let obj = { done: true };
-      } else {
-        obj = { done: false };
-        closure_1 = tmp3 + 1;
-        obj.value = length[+closure_1];
-      }
-      return obj;
-    };
   }
-}
-function _arrayLikeToArray(arg0, arg1) {
-  let length;
-  if (tmp) {
-    length = arg0.length;
-  }
-  const ArrayResult = Array(length);
-  for (let num = 0; num < length; num = num + 1) {
-    ArrayResult[num] = arg0[num];
-  }
-  return ArrayResult;
-}
-function getPresence(arg0, arg1) {
-  let tmp2 = null;
-  if (null != dependencyMap[arg0]) {
-    tmp2 = tmp[arg1];
-  }
-  return tmp2;
-}
-function typeScore(type) {
-  type = type.type;
-  if (constants2.CUSTOM_STATUS === type) {
-    return 4;
-  } else if (constants2.COMPETING === type) {
-    return 3;
-  } else if (constants2.STREAMING === type) {
-    return 2;
-  } else if (constants2.PLAYING === type) {
-    return 1;
-  } else {
-    return 0;
-  }
-}
-function richnessScore(created_at2) {
-  let num = 0;
-  if (importDefault(4253)(created_at2)) {
-    num = 1;
-  }
-  return num;
-}
-function sortActivity(created_at, created_at2) {
-  let diff = typeScore(created_at2) - typeScore(created_at);
+  let diff = num2 - num;
   if (!diff) {
-    diff = richnessScore(created_at2) - richnessScore(created_at);
-    const tmp4 = richnessScore(created_at2);
+    let num3 = 0;
+    if (importDefault(4277)(type2)) {
+      num3 = 1;
+    }
+    let num4 = 0;
+    if (tmp3(4277)(type)) {
+      num4 = 1;
+    }
+    diff = num3 - num4;
+    tmp3 = importDefault;
   }
   if (!diff) {
-    created_at = created_at2.created_at;
-    let num = 0;
-    if (null != created_at) {
-      num = created_at;
+    let num5 = type2.created_at;
+    if (num5 == null) {
+      num5 = 0;
     }
-    created_at2 = created_at.created_at;
-    let num2 = 0;
-    if (null != created_at2) {
-      num2 = created_at2;
+    let num6 = type.created_at;
+    if (num6 == null) {
+      num6 = 0;
     }
-    diff = num - num2;
+    diff = num5 - num6;
   }
   return diff;
 }
 function filterPlayingActivities(arg0) {
-  let iter;
   if (0 === arg0.length) {
     return arg0;
   } else {
     const items = [];
     const items1 = [];
-    const tmp13 = _createForOfIteratorHelperLoose(arg0);
-    let iter2 = tmp13();
-    if (!iter2.done) {
-      do {
-        let value = iter2.value;
-        let tmp = constants2;
-        if (value.type === constants2.PLAYING) {
-          let arr = items1.push(value);
-        } else {
-          arr = items.push(value);
-        }
-        iter = tmp13();
-        iter2 = iter;
-      } while (!iter.done);
+    const iter = arg0[Symbol.iterator]();
+    const nextResult = iter.next();
+    while (iter !== undefined) {
+      let tmp4 = nextResult;
+      let tmp5 = constants2;
+      if (nextResult.type === constants2.PLAYING) {
+        let tmp8 = nextResult;
+        let arr = items1.push(tmp4);
+      } else {
+        let tmp6 = nextResult;
+        arr = items.push(tmp4);
+      }
+      continue;
     }
     if (items1.length <= 1) {
       return arg0;
     } else {
       const items2 = [];
-      let arraySpreadResult = HermesBuiltin.arraySpread(items1, 0);
+      HermesBuiltin.arraySpread(items1, 0);
       const items3 = [];
-      arraySpreadResult = HermesBuiltin.arraySpread(items, 0);
-      items3[arraySpreadResult] = items2.sort(sortActivity)[0];
-      const sum = arraySpreadResult + 1;
+      items3[HermesBuiltin.arraySpread(items, 0)] = items2.sort(sortActivity)[0];
       return items3.sort(sortActivity);
     }
   }
 }
-function setActivitiesForUser(id, activities) {
-  closure_17[id] = activities;
-  closure_18[id] = filterPlayingActivities(activities);
-}
-function flattenPresence(userId) {
+function flattenPresence(id) {
+  let activities;
   delete tmp[tmp2];
   delete tmp[tmp2];
   delete tmp[tmp2];
   delete tmp[tmp2];
   delete tmp[tmp2];
-  if (null != dependencyMap[userId]) {
+  if (null != dependencyMap[id]) {
     const _Object3 = Object;
-    let values = Object.values(dependencyMap[userId]);
+    let values = Object.values(dependencyMap[id]);
     const reduced = values.reduce((processedAtTimestamp, processedAtTimestamp2) => {
       processedAtTimestamp = processedAtTimestamp2.processedAtTimestamp;
       processedAtTimestamp2 = processedAtTimestamp.processedAtTimestamp;
@@ -225,8 +132,8 @@ function flattenPresence(userId) {
       return tmp;
     }, values[0]);
     if (reduced.status === constants.OFFLINE) {
-      if (obj.every(dependencyMap[userId], (status) => {
-        let tmp = status.status === outer1_9.OFFLINE;
+      if (obj.every(dependencyMap[id], (status) => {
+        let tmp = status.status === constants.OFFLINE;
         if (tmp) {
           let tmp3 = null == status.hiddenActivities;
           if (!tmp3) {
@@ -246,72 +153,103 @@ function flattenPresence(userId) {
       })) {
         const _Object = Object;
         values = Object.values(values);
-        closure_19[userId] = dedupeHiddenActivities(values.flatMap((hiddenActivities) => {
+        const flatMapResult = values.flatMap((hiddenActivities) => {
           hiddenActivities = hiddenActivities.hiddenActivities;
-          if (null == hiddenActivities) {
+          if (hiddenActivities == null) {
             hiddenActivities = [];
           }
           return hiddenActivities;
-        }));
+        });
+        let tmp8 = flatMapResult;
+        if (0 !== flatMapResult.length) {
+          const items = [];
+          HermesBuiltin.arraySpread(flatMapResult, 0);
+          const reversed = items.reverse();
+          const _Map = Map;
+          const map = new Map(reversed.map((party) => {
+            party = party.party;
+            let id;
+            if (party != null) {
+              id = party.id;
+            }
+            const items = ["" + party.application_id + ":" + id, party];
+            return items;
+          }));
+          const items1 = [];
+          HermesBuiltin.arraySpread(map.values(), 0);
+          tmp8 = items1;
+        }
+        closure_14[id] = tmp8;
+        const tmp7 = closure_14;
       }
-      obj = importDefault(22);
+      obj = importDefault(12);
     }
-    closure_16[userId] = reduced.status;
-    setActivitiesForUser(userId, reduced.activities);
+    ({ status: closure_11[id], activities } = reduced);
+    closure_12[id] = activities;
+    closure_13[id] = filterPlayingActivities(activities);
     const _Object2 = Object;
     const values1 = Object.values(values);
-    closure_19[userId] = dedupeHiddenActivities(values1.flatMap((hiddenActivities) => {
+    const flatMapResult1 = values1.flatMap((hiddenActivities) => {
       hiddenActivities = hiddenActivities.hiddenActivities;
-      if (null == hiddenActivities) {
+      if (hiddenActivities == null) {
         hiddenActivities = [];
       }
       return hiddenActivities;
-    }));
-    if (null != reduced.clientStatus) {
-      closure_20[userId] = reduced.clientStatus;
+    });
+    let tmp23 = flatMapResult1;
+    if (0 !== flatMapResult1.length) {
+      const items2 = [];
+      HermesBuiltin.arraySpread(flatMapResult1, 0);
+      const reversed1 = items2.reverse();
+      const _Map2 = Map;
+      const map1 = new Map(reversed1.map((party) => {
+        party = party.party;
+        let id;
+        if (party != null) {
+          id = party.id;
+        }
+        const items = ["" + party.application_id + ":" + id, party];
+        return items;
+      }));
+      const items3 = [];
+      HermesBuiltin.arraySpread(map1.values(), 0);
+      tmp23 = items3;
     }
+    closure_14[id] = tmp23;
+    if (null != reduced.clientStatus) {
+      closure_15[id] = reduced.clientStatus;
+    }
+    const tmp22 = closure_14;
   }
 }
-function dedupeHiddenActivities(values) {
-  if (0 === values.length) {
-    return values;
-  } else {
-    let items = [];
-    HermesBuiltin.arraySpread(values, 0);
-    const reversed = items.reverse();
-    const _Map = Map;
-    const map = new Map(reversed.map((party) => {
-      party = party.party;
-      let id;
-      if (null != party) {
-        id = party.id;
-      }
-      const items = ["" + party.application_id + ":" + id, party];
-      return items;
-    }));
-    const items1 = [];
-    HermesBuiltin.arraySpread(map.values(), 0);
-    return items1;
-  }
-}
-function flattenPresenceInConnectionOpen(id) {
-  if (null != dependencyMap[id]) {
+function flattenPresenceInConnectionOpen(arg0) {
+  let activities;
+  if (null != dependencyMap[arg0]) {
     const _Object = Object;
-    const maxByResult = importDefault(22).maxBy(Object.values(tmp), (processedAtTimestamp) => processedAtTimestamp.processedAtTimestamp);
-    if (maxByResult.status !== constants.OFFLINE) {
-      closure_16[id] = maxByResult.status;
-      setActivitiesForUser(id, maxByResult.activities);
+    const maxByResult = importDefault(12).maxBy(Object.values(tmp), (processedAtTimestamp) => processedAtTimestamp.processedAtTimestamp);
+    let tmp3 = maxByResult.status !== constants.OFFLINE;
+    if (!tmp3) {
+      let tmp2 = null != maxByResult.hiddenActivities;
+      if (tmp2) {
+        tmp2 = maxByResult.hiddenActivities.length > 0;
+      }
+      tmp3 = tmp2;
+    }
+    if (tmp3) {
+      ({ status: closure_11[arg0], activities } = maxByResult);
+      closure_12[arg0] = activities;
+      closure_13[arg0] = filterPlayingActivities(activities);
       let hiddenActivities = maxByResult.hiddenActivities;
-      if (null == hiddenActivities) {
+      if (hiddenActivities == null) {
         hiddenActivities = [];
       }
-      closure_19[id] = hiddenActivities;
+      closure_14[arg0] = hiddenActivities;
       if (null != maxByResult.clientStatus) {
-        closure_20[id] = maxByResult.clientStatus;
+        closure_15[arg0] = maxByResult.clientStatus;
       }
-      const tmp5 = closure_19;
+      const tmp8 = closure_14;
     }
-    const obj = importDefault(22);
+    const obj = importDefault(12);
   }
 }
 function updatePresence(arg0) {
@@ -345,7 +283,12 @@ function updatePresence(arg0) {
       }
     }
     if (tmp5) {
-      obj = { status, clientStatus, activities: closure_14, hiddenActivities: closure_14, processedAtTimestamp };
+      obj = { status: null, clientStatus: null, activities: null, hiddenActivities: null, processedAtTimestamp: null };
+      obj[0] = status;
+      obj[1] = clientStatus;
+      obj[2] = closure_9;
+      obj[3] = closure_9;
+      obj[4] = processedAtTimestamp;
       tmp7[guildId] = obj;
     } else {
       let sorted = activities;
@@ -354,22 +297,44 @@ function updatePresence(arg0) {
         HermesBuiltin.arraySpread(activities, 0);
         sorted = items.sort(sortActivity);
       }
-      if (null == hiddenActivities) {
+      if (hiddenActivities == null) {
         hiddenActivities = [];
+      }
+      let tmp15 = hiddenActivities;
+      if (0 !== hiddenActivities.length) {
+        const items1 = [];
+        HermesBuiltin.arraySpread(hiddenActivities, 0);
+        const reversed = items1.reverse();
+        const _Map = Map;
+        const map = new Map(reversed.map((party) => {
+          party = party.party;
+          let id;
+          if (party != null) {
+            id = party.id;
+          }
+          const items = ["" + party.application_id + ":" + id, party];
+          return items;
+        }));
+        const items2 = [];
+        HermesBuiltin.arraySpread(map.values(), 0);
+        tmp15 = items2;
       }
       let activities2 = sorted;
       if (null != tmp7[guildId]) {
         activities2 = sorted;
-        if (importDefault(636)(tmp17.activities, sorted)) {
-          activities2 = tmp17.activities;
+        if (importDefault(659)(tmp25.activities, sorted)) {
+          activities2 = tmp25.activities;
         }
       }
-      obj = { status, clientStatus, activities: activities2, hiddenActivities: dedupeHiddenActivities(hiddenActivities), processedAtTimestamp };
+      obj = { status: null, clientStatus: null, activities: null, hiddenActivities: null, processedAtTimestamp: null };
+      obj[0] = status;
+      obj[1] = clientStatus;
+      obj[2] = activities2;
+      obj[3] = tmp15;
+      obj[4] = processedAtTimestamp;
       tmp7[guildId] = obj;
-      const tmp15 = dedupeHiddenActivities;
-      const tmp15Result = dedupeHiddenActivities(hiddenActivities);
     }
-    delete tmp[tmp2];
+    delete tmp2[tmp];
     flattenPresence(userId);
     return true;
   }
@@ -401,34 +366,62 @@ function updatePresenceInConnectionOpen(arg0) {
       }
     }
     if (tmp3) {
-      obj = { status, clientStatus, activities: closure_14, hiddenActivities: closure_14, processedAtTimestamp };
+      obj = { status: null, clientStatus: null, activities: null, hiddenActivities: null, processedAtTimestamp: null };
+      obj[0] = status;
+      obj[1] = clientStatus;
+      obj[2] = closure_9;
+      obj[3] = closure_9;
+      obj[4] = processedAtTimestamp;
       tmp5[guildId] = obj;
     } else {
       let sorted = activities;
       if (activities.length > 1) {
-        const items = [];
+        let items = [];
         HermesBuiltin.arraySpread(activities, 0);
         sorted = items.sort(sortActivity);
       }
-      if (null == hiddenActivities) {
+      if (hiddenActivities == null) {
         hiddenActivities = [];
       }
-      obj = { status, clientStatus, activities: sorted, hiddenActivities: dedupeHiddenActivities(hiddenActivities), processedAtTimestamp };
+      let tmp13 = hiddenActivities;
+      if (0 !== hiddenActivities.length) {
+        const items1 = [];
+        HermesBuiltin.arraySpread(hiddenActivities, 0);
+        const reversed = items1.reverse();
+        const _Map = Map;
+        const map = new Map(reversed.map((party) => {
+          party = party.party;
+          let id;
+          if (party != null) {
+            id = party.id;
+          }
+          const items = ["" + party.application_id + ":" + id, party];
+          return items;
+        }));
+        const items2 = [];
+        HermesBuiltin.arraySpread(map.values(), 0);
+        tmp13 = items2;
+      }
+      obj = { status: null, clientStatus: null, activities: null, hiddenActivities: null, processedAtTimestamp: null };
+      obj[0] = status;
+      obj[1] = clientStatus;
+      obj[2] = sorted;
+      obj[3] = tmp13;
+      obj[4] = processedAtTimestamp;
       tmp5[guildId] = obj;
-      const tmp13 = dedupeHiddenActivities;
     }
   }
 }
-function clearPresence(guildId, id) {
+function clearPresence(closure_7, id) {
   if (id === store.getId()) {
     return false;
   } else {
     if (null != dependencyMap[id]) {
-      if (null != tmp5[guildId]) {
-        delete tmp3[tmp];
+      if (null != tmp5[closure_7]) {
+        delete tmp3[tmp2];
         const _Object = Object;
         if (0 === Object.keys(tmp5).length) {
-          delete tmp[tmp2];
+          delete tmp2[tmp];
         }
         flattenPresence(id);
       }
@@ -436,317 +429,246 @@ function clearPresence(guildId, id) {
     return false;
   }
 }
-function clearPresences(closure_12) {
-  let done;
-  const tmp = _createForOfIteratorHelperLoose(importDefault(21).keys(closure_15));
-  let iter = tmp();
-  if (!iter.done) {
-    do {
-      let tmp2 = clearPresence;
-      let tmp3 = clearPresence(closure_12, iter.value);
-      let iter2 = tmp();
-      iter = iter2;
-      done = iter2.done;
-    } while (!done);
+function clearPresences(closure_7) {
+  const keys = importDefault(11).keys(closure_10);
+  const obj = importDefault(11);
+  while (tmp2 !== undefined) {
+    let tmp4 = clearPresence;
+    let tmp5 = clearPresence(closure_7, tmp3);
+    continue;
   }
 }
-({ StatusTypes: closure_9, ActivityTypes: closure_10, ClientTypes: closure_11, ME: closure_12, UserFlags: closure_13 } = ME);
-let closure_14 = Object.freeze([]);
+({ StatusTypes: c4, ActivityTypes: c5, ClientTypes: closure_6, ME: error, UserFlags: metroImportAll } = ME);
+let closure_9 = Object.freeze([]);
+let closure_10 = {};
+let closure_11 = {};
+let closure_12 = {};
+let closure_13 = {};
+let closure_14 = {};
 let closure_15 = {};
 let closure_16 = {};
-let closure_17 = {};
-let closure_18 = {};
-let closure_19 = {};
-let closure_20 = {};
-let closure_21 = {};
-let tmp3 = ((Store) => {
-  class PresenceStore {
-    constructor() {
-      self = this;
-      tmp = outer1_2(this, PresenceStore);
-      obj = outer1_5(PresenceStore);
-      tmp2 = outer1_4;
-      if (outer1_22()) {
-        tmp6 = globalThis;
-        _Reflect = Reflect;
-        tmp7 = outer1_5;
-        tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, outer1_5(self).constructor);
-      } else {
-        tmp3 = arguments;
-        tmp4 = arguments;
-        constructResult = obj(...arguments);
+class PresenceStore extends Store {
+}
+const prototype = PresenceStore.prototype;
+prototype["initialize"] = function initialize() {
+  this.waitFor(fetchFingerprint, mergeGuildAvatar);
+};
+prototype["setCurrentUserOnConnectionOpen"] = function setCurrentUserOnConnectionOpen(closure_17, closure_26) {
+  closure_11[store.getId()] = closure_17;
+  const id = store.getId();
+  const items = [...closure_26];
+  const sorted = items.sort(sortActivity);
+  closure_12[id] = sorted;
+  closure_13[id] = filterPlayingActivities(sorted);
+};
+prototype["getStatus"] = function getStatus(arg0) {
+  let tmp = arg1;
+  if (arg1 === undefined) {
+    tmp = null;
+  }
+  let UNKNOWN = arg2;
+  if (arg2 === undefined) {
+    UNKNOWN = constants.OFFLINE;
+  }
+  user = user.getUser(arg0);
+  let hasFlagResult = null != user;
+  if (hasFlagResult) {
+    hasFlagResult = user.hasFlag(constants4.BOT_HTTP_INTERACTIONS);
+  }
+  if (hasFlagResult) {
+    UNKNOWN = constants.UNKNOWN;
+  }
+  if (null == tmp) {
+    let tmp11 = dependencyMap2[arg0];
+    if (tmp11 == null) {
+      tmp11 = UNKNOWN;
+    }
+    return tmp11;
+  } else {
+    let tmp8 = null;
+    if (null != dependencyMap[arg0]) {
+      tmp8 = tmp7[tmp];
+    }
+    let status;
+    if (tmp8 != null) {
+      status = tmp8.status;
+    }
+    if (status == null) {
+      status = UNKNOWN;
+    }
+    return status;
+  }
+};
+prototype["getActivities"] = function getActivities(arg0) {
+  let tmp = arg1;
+  if (arg1 === undefined) {
+    tmp = null;
+  }
+  if (null == tmp) {
+    let tmp8 = dependencyMap4[arg0];
+    if (tmp8 == null) {
+      tmp8 = closure_9;
+    }
+    return tmp8;
+  } else {
+    let tmp4 = null;
+    if (null != dependencyMap[arg0]) {
+      tmp4 = tmp3[tmp];
+    }
+    if (null != tmp4) {
+      if (null != tmp4.activities) {
+        let tmp6 = filterPlayingActivities(tmp4.activities);
       }
-      return tmp2(self, constructResult);
+      return tmp6;
+    }
+    tmp6 = closure_9;
+  }
+};
+prototype["getUnfilteredActivities"] = function getUnfilteredActivities(arg0) {
+  let tmp = arg1;
+  if (arg1 === undefined) {
+    tmp = null;
+  }
+  if (null == tmp) {
+    let tmp6 = dependencyMap3[arg0];
+    if (tmp6 == null) {
+      tmp6 = closure_9;
+    }
+    return tmp6;
+  } else {
+    let tmp4 = null;
+    if (null != dependencyMap[arg0]) {
+      tmp4 = tmp3[tmp];
+    }
+    if (null != tmp4) {
+      if (null != tmp4.activities) {
+        let activities = tmp4.activities;
+      }
+      return activities;
+    }
+    activities = closure_9;
+  }
+};
+prototype["getHiddenActivities"] = function getHiddenActivities(arg0) {
+  let tmp = arg1;
+  if (arg1 === undefined) {
+    tmp = null;
+  }
+  if (null == tmp) {
+    let tmp7 = dependencyMap5[arg0];
+    if (tmp7 == null) {
+      tmp7 = closure_9;
+    }
+    let hiddenActivities = tmp7;
+  } else {
+    let tmp4 = null;
+    if (null != dependencyMap[arg0]) {
+      tmp4 = tmp3[tmp];
+    }
+    hiddenActivities = undefined;
+    if (tmp4 != null) {
+      hiddenActivities = tmp4.hiddenActivities;
+    }
+    if (hiddenActivities == null) {
+      hiddenActivities = closure_9;
     }
   }
-  callback2(PresenceStore, Store);
-  let obj = {
-    key: "initialize",
-    value() {
-      this.waitFor(outer1_7, outer1_8);
+  return hiddenActivities;
+};
+prototype["getPrimaryActivity"] = function getPrimaryActivity(arg0) {
+  let tmp = arg1;
+  if (arg1 === undefined) {
+    tmp = null;
+  }
+  const activities = this.getActivities(arg0, tmp);
+  return activities.filter((type) => type.type !== constants.HANG_STATUS)[0];
+};
+prototype["getAllApplicationActivities"] = function getAllApplicationActivities(arg0) {
+  const items = [];
+  let obj = importDefault(11);
+  const keys = obj.keys(dependencyMap4);
+  for (const item10015 of keys) {
+    let tmp3 = dependencyMap4;
+    let tmp4 = dependencyMap4[item10015];
+    let tmp5 = tmp4;
+    let tmp6 = tmp4;
+    for (const item10023 of tmp4) {
+      if (item10023.application_id === arg0) {
+        obj = { userId: null, activity: null };
+        let tmp8 = item10015;
+        obj[0] = tmp2;
+        let tmp9 = item10023;
+        obj[1] = tmp7;
+        let arr = items.push(obj);
+      }
+      continue;
     }
-  };
-  let items = [obj, , , , , , , , , , , , , , , ];
-  obj = {
-    key: "setCurrentUserOnConnectionOpen",
-    value(arg0, arg1) {
-      outer1_16[outer1_7.getId()] = arg0;
-      const items = [];
-      const id = outer1_7.getId();
-      HermesBuiltin.arraySpread(arg1, 0);
-      outer1_30(id, items.sort(outer1_28));
-    }
-  };
-  items[1] = obj;
-  obj = {
-    key: "getStatus",
-    value(arg0) {
-      let tmp = arg1;
-      let UNKNOWN = arg2;
-      if (arg1 === undefined) {
-        tmp = null;
-      }
-      if (UNKNOWN === undefined) {
-        UNKNOWN = outer1_9.OFFLINE;
-      }
-      const user = outer1_8.getUser(arg0);
-      let hasFlagResult = null != user;
-      if (hasFlagResult) {
-        hasFlagResult = user.hasFlag(outer1_13.BOT_HTTP_INTERACTIONS);
-      }
-      if (hasFlagResult) {
-        UNKNOWN = outer1_9.UNKNOWN;
-      }
-      if (null == tmp) {
-        if (null != outer1_16[arg0]) {
-          UNKNOWN = tmp11;
-        }
-        return UNKNOWN;
-      } else {
-        const tmp7 = outer1_25(arg0, tmp);
-        let status;
-        if (null != tmp7) {
-          status = tmp7.status;
-        }
-        let tmp9 = UNKNOWN;
-        if (null != status) {
-          tmp9 = status;
-        }
-        return tmp9;
-      }
-    }
-  };
-  items[2] = obj;
-  items[3] = {
-    key: "getActivities",
-    value(arg0) {
-      let tmp = arg1;
-      if (arg1 === undefined) {
-        tmp = null;
-      }
-      if (null == tmp) {
-        let tmp7 = outer1_18[arg0];
-        if (null == tmp7) {
-          tmp7 = outer1_14;
-        }
-        return tmp7;
-      } else {
-        const tmp3 = outer1_25(arg0, tmp);
-        if (null != tmp3) {
-          if (null != tmp3.activities) {
-            let tmp5 = outer1_29(tmp3.activities);
-          }
-          return tmp5;
-        }
-        tmp5 = outer1_14;
-      }
-    }
-  };
-  items[4] = {
-    key: "getUnfilteredActivities",
-    value(arg0) {
-      let tmp = arg1;
-      if (arg1 === undefined) {
-        tmp = null;
-      }
-      if (null == tmp) {
-        let tmp5 = outer1_17[arg0];
-        if (null == tmp5) {
-          tmp5 = outer1_14;
-        }
-        return tmp5;
-      } else {
-        const tmp3 = outer1_25(arg0, tmp);
-        if (null != tmp3) {
-          if (null != tmp3.activities) {
-            let activities = tmp3.activities;
-          }
-          return activities;
-        }
-        activities = outer1_14;
-      }
-    }
-  };
-  items[5] = {
-    key: "getHiddenActivities",
-    value(arg0) {
-      let tmp = arg1;
-      if (arg1 === undefined) {
-        tmp = null;
-      }
-      if (null == tmp) {
-        let tmp6 = outer1_19[arg0];
-        if (null == tmp6) {
-          tmp6 = outer1_14;
-        }
-        let hiddenActivities = tmp6;
-      } else {
-        const tmp3 = outer1_25(arg0, tmp);
-        hiddenActivities = undefined;
-        if (null != tmp3) {
-          hiddenActivities = tmp3.hiddenActivities;
-        }
-        if (null == hiddenActivities) {
-          hiddenActivities = outer1_14;
-        }
-      }
-      return hiddenActivities;
-    }
-  };
-  items[6] = {
-    key: "getPrimaryActivity",
-    value(arg0) {
-      let tmp = arg1;
-      const self = this;
-      if (arg1 === undefined) {
-        tmp = null;
-      }
-      const activities = self.getActivities(arg0, tmp);
-      return activities.filter((type) => type.type !== outer2_10.HANG_STATUS)[0];
-    }
-  };
-  items[7] = {
-    key: "getAllApplicationActivities",
-    value(arg0) {
-      let iter5;
-      const items = [];
-      let obj = PresenceStore(outer1_1[11]);
-      const tmp = outer1_23(obj.keys(outer1_18));
-      const iter = tmp();
-      let iter2 = iter;
-      if (!iter.done) {
-        do {
-          let value = iter2.value;
-          let tmp2 = outer1_23;
-          let tmp3 = outer1_18;
-          let tmp4 = outer1_23(outer1_18[value]);
-          let iter3 = tmp4();
-          if (!iter3.done) {
-            do {
-              value = iter3.value;
-              if (value.application_id === arg0) {
-                obj = { userId: value, activity: value };
-                let arr = items.push(obj);
-              }
-              iter4 = tmp4();
-              iter3 = iter4;
-              let tmp6 = value;
-            } while (!iter4.done);
-          }
-          iter5 = tmp();
-          iter2 = iter5;
-        } while (!iter5.done);
-      }
-      return items;
-    }
-  };
-  items[8] = {
-    key: "getApplicationActivity",
-    value(arg0, arg1) {
-      let tmp = arg2;
-      const self = this;
-      let closure_0 = arg1;
-      if (arg2 === undefined) {
-        tmp = null;
-      }
-      return self.findActivity(arg0, (application_id) => application_id.application_id === closure_0, tmp, true);
-    }
-  };
-  items[9] = {
-    key: "findActivity",
-    value(arg0, arg1) {
-      let tmp = arg2;
-      let flag = arg3;
-      const self = this;
-      if (arg2 === undefined) {
-        tmp = null;
-      }
-      if (flag === undefined) {
-        flag = false;
-      }
-      const activities = self.getActivities(arg0, tmp);
-      let combined = activities;
-      if (tmp2) {
-        combined = activities.concat(self.getHiddenActivities(arg0, tmp));
-      }
-      return combined.find(arg1);
-    }
-  };
-  items[10] = {
-    key: "getActivityMetadata",
-    value(arg0) {
-      return outer1_21[arg0];
-    }
-  };
-  items[11] = {
-    key: "getUserIds",
-    value() {
-      return PresenceStore(outer1_1[11]).keys(outer1_17);
-    }
-  };
-  items[12] = {
-    key: "isMobileOnline",
-    value(arg0) {
-      let tmp2 = null != tmp;
-      if (tmp2) {
-        tmp2 = tmp[outer1_11.MOBILE] === outer1_9.ONLINE;
-      }
-      if (tmp2) {
-        tmp2 = tmp[outer1_11.DESKTOP] !== outer1_9.ONLINE;
-      }
-      if (tmp2) {
-        tmp2 = tmp[outer1_11.VR] !== outer1_9.ONLINE;
-      }
-      return tmp2;
-    }
-  };
-  items[13] = {
-    key: "isVROnline",
-    value(arg0) {
-      let tmp2 = null != tmp;
-      if (tmp2) {
-        tmp2 = tmp[outer1_11.VR] === outer1_9.ONLINE;
-      }
-      return tmp2;
-    }
-  };
-  items[14] = {
-    key: "getClientStatus",
-    value(arg0) {
-      return outer1_20[arg0];
-    }
-  };
-  items[15] = {
-    key: "getState",
-    value() {
-      return { presencesForGuilds: outer1_15, statuses: outer1_16, activities: outer1_17, filteredActivities: outer1_18, hiddenActivities: outer1_19, activityMetadata: outer1_21, clientStatuses: outer1_20 };
-    }
-  };
-  return callback(PresenceStore, items);
-})(require("initialize").Store);
-tmp3.displayName = "PresenceStore";
-tmp3 = new tmp3(require("dispatcher"), {
+    continue;
+  }
+  return items;
+};
+prototype["getApplicationActivity"] = function getApplicationActivity(arg0, arg1) {
+  let closure_0 = arg1;
+  let tmp = arg2;
+  if (arg2 === undefined) {
+    tmp = null;
+  }
+  return this.findActivity(arg0, (application_id) => application_id.application_id === closure_0, tmp, true);
+};
+prototype["findActivity"] = function findActivity(arg0, closure_4) {
+  let tmp = arg2;
+  if (arg2 === undefined) {
+    tmp = null;
+  }
+  let flag = arg3;
+  if (arg3 === undefined) {
+    flag = false;
+  }
+  if (flag == null) {
+    flag = false;
+  }
+  const self = this;
+  const activities = this.getActivities(arg0, tmp);
+  let combined = activities;
+  if (flag) {
+    combined = activities.concat(self.getHiddenActivities(arg0, tmp));
+  }
+  return combined.find(closure_4);
+};
+prototype["getActivityMetadata"] = function getActivityMetadata(arg0) {
+  return table[arg0];
+};
+prototype["getUserIds"] = function getUserIds() {
+  return importDefault(11).keys(closure_12);
+};
+prototype["isMobileOnline"] = function isMobileOnline(id) {
+  let tmp2 = null != tmp;
+  if (tmp2) {
+    tmp2 = tmp[constants3.MOBILE] === constants.ONLINE;
+  }
+  if (tmp2) {
+    tmp2 = tmp[constants3.DESKTOP] !== constants.ONLINE;
+  }
+  if (tmp2) {
+    tmp2 = tmp[constants3.VR] !== constants.ONLINE;
+  }
+  return tmp2;
+};
+prototype["isVROnline"] = function isVROnline(id) {
+  let tmp2 = null != tmp;
+  if (tmp2) {
+    tmp2 = tmp[constants3.VR] === constants.ONLINE;
+  }
+  return tmp2;
+};
+prototype["getClientStatus"] = function getClientStatus(arg0) {
+  return dependencyMap6[arg0];
+};
+prototype["getState"] = function getState() {
+  return { presencesForGuilds: closure_10, statuses: closure_11, activities: closure_12, filteredActivities: closure_13, hiddenActivities: closure_14, activityMetadata: closure_16, clientStatuses: closure_15 };
+};
+PresenceStore.displayName = "PresenceStore";
+const presenceStore = new PresenceStore(require("dispatcher"), {
   CONNECTION_OPEN: function handleConnectionOpen() {
     return true;
   },
@@ -754,29 +676,37 @@ tmp3 = new tmp3(require("dispatcher"), {
     let guilds;
     let presences;
     ({ guilds, presences } = arg0);
+    let set;
     const id = store.getId();
-    let closure_15 = {};
-    let closure_21 = {};
+    let closure_10 = {};
+    let closure_16 = {};
     obj = { [id]: obj[id] };
     obj = { [id]: obj[id] };
     obj = { [id]: obj[id] };
     obj1 = { [id]: obj1[id] };
-    let closure_20 = { [id]: {} };
-    const set = new Set();
+    let closure_15 = { [id]: {} };
+    set = new Set();
     let item = guilds.forEach((presences) => {
       let closure_0 = presences;
       presences = presences.presences;
       const item = presences.forEach((status) => {
         const user = status.user;
-        outer2_35({ guildId: presences.id, userId: user.id, status: status.status, clientStatus: status.clientStatus, activities: status.activities, hiddenActivities: status.hiddenActivities, processedAtTimestamp: status.processedAtTimestamp });
+        outer2_22({ guildId: presences.id, userId: user.id, status: status.status, clientStatus: status.clientStatus, activities: status.activities, hiddenActivities: status.hiddenActivities, processedAtTimestamp: status.processedAtTimestamp });
         presences.add(user.id);
       });
     });
     const item1 = presences.forEach((user) => {
       user = user.user;
       if (null != user) {
-        const obj = { guildId: outer1_12, userId: user.id, status: tmp, clientStatus: tmp2, activities: tmp3, hiddenActivities: tmp4, processedAtTimestamp: tmp5 };
-        outer1_35(obj);
+        const obj = { guildId: null, userId: null, status: null, clientStatus: null, activities: null, hiddenActivities: null, processedAtTimestamp: null };
+        obj[0] = outer1_7;
+        obj[1] = user.id;
+        obj[2] = tmp;
+        obj[3] = tmp2;
+        obj[4] = tmp3;
+        obj[5] = tmp4;
+        obj[6] = tmp5;
+        outer1_22(obj);
         set.add(user.id);
       }
     });
@@ -784,25 +714,41 @@ tmp3 = new tmp3(require("dispatcher"), {
     const item2 = set.forEach(flattenPresenceInConnectionOpen);
   },
   OVERLAY_INITIALIZE: function handleOverlayInitialize(presences) {
-    let closure_15;
+    let closure_10;
+    let closure_11;
+    let closure_12;
+    let closure_14;
     let closure_16;
-    let closure_17;
-    let closure_19;
-    let closure_21;
-    ({ presencesForGuilds: closure_15, statuses: closure_16, activities: closure_17, hiddenActivities: closure_19, activityMetadata: closure_21 } = presences.presences);
+    ({ presencesForGuilds: closure_10, statuses: closure_11, activities: closure_12, hiddenActivities: closure_14, activityMetadata: closure_16 } = presences.presences);
   },
   GUILD_CREATE: function handleGuildCreate(guild) {
     guild = guild.guild;
     const presences = guild.presences;
     const item = presences.forEach((user) => {
-      outer1_34({ guildId: guild.id, userId: user.user.id, status: user.status, clientStatus: user.clientStatus, activities: user.activities, hiddenActivities: user.hiddenActivities, processedAtTimestamp: user.processedAtTimestamp });
+      outer1_21({ guildId: guild.id, userId: user.user.id, status: user.status, clientStatus: user.clientStatus, activities: user.activities, hiddenActivities: user.hiddenActivities, processedAtTimestamp: user.processedAtTimestamp });
     });
   },
   GUILD_DELETE: function handleGuildDelete(guild) {
     clearPresences(guild.guild.id);
   },
-  GUILD_MEMBER_REMOVE: function handleGuildMemberRemove(guildId) {
-    return clearPresence(guildId.guildId, guildId.user.id);
+  GUILD_MEMBER_REMOVE: function handleGuildMemberRemove(user) {
+    const id = user.user.id;
+    let flag = false;
+    if (id !== store.getId()) {
+      flag = false;
+      if (null != dependencyMap[id]) {
+        flag = false;
+        if (null != tmp5[user.guildId]) {
+          delete tmp3[tmp2];
+          const _Object = Object;
+          if (0 === Object.keys(tmp5).length) {
+            delete tmp2[tmp];
+          }
+          flattenPresence(id);
+        }
+      }
+    }
+    return flag;
   },
   PRESENCE_UPDATES: function handlePresenceUpdates(updates) {
     updates = updates.updates;
@@ -814,35 +760,34 @@ tmp3 = new tmp3(require("dispatcher"), {
       let status;
       let user;
       guildId = guildId.guildId;
-      const obj = {};
       ({ user, status, clientStatus, activities, hiddenActivities, processedAtTimestamp } = guildId);
-      if (null == guildId) {
-        guildId = outer1_12;
+      if (guildId == null) {
+        guildId = closure_7;
       }
-      obj.guildId = guildId;
-      obj.userId = user.id;
-      obj.status = status;
-      obj.clientStatus = clientStatus;
-      obj.activities = activities;
-      obj.hiddenActivities = hiddenActivities;
-      obj.processedAtTimestamp = processedAtTimestamp;
-      return outer1_34(obj);
+      return closure_21({ guildId, userId: user.id, status, clientStatus, activities, hiddenActivities, processedAtTimestamp });
     });
     return mapped.some((arg0) => arg0);
   },
   PRESENCES_REPLACE: function handlePresenceReplace(presences) {
     presences = presences.presences;
-    clearPresences(closure_12);
+    clearPresences(closure_7);
     const item = presences.forEach((user) => {
       user = user.user;
       if (null != user) {
-        const obj = { guildId: outer1_12, userId: user.id, status: tmp, clientStatus: tmp2, activities: tmp3, hiddenActivities: tmp4, processedAtTimestamp: tmp5 };
-        outer1_34(obj);
+        const obj = { guildId: null, userId: null, status: null, clientStatus: null, activities: null, hiddenActivities: null, processedAtTimestamp: null };
+        obj[0] = closure_7;
+        obj[1] = user.id;
+        obj[2] = tmp;
+        obj[3] = tmp2;
+        obj[4] = tmp3;
+        obj[5] = tmp4;
+        obj[6] = tmp5;
+        callback(obj);
       }
     });
   },
   ACTIVITY_METADATA_UPDATE: function handleActivityMetadataUpdate(userId) {
-    closure_21[userId.userId] = userId.metadata;
+    closure_16[userId.userId] = userId.metadata;
     return false;
   },
   THREAD_MEMBER_LIST_UPDATE: function handleThreadMemberListUpdate(arg0) {
@@ -851,8 +796,15 @@ tmp3 = new tmp3(require("dispatcher"), {
     ({ guildId: importDefault, members } = arg0);
     const item = members.forEach((presence) => {
       if (null != presence.presence) {
-        const obj = { guildId: closure_0, userId: presence.user_id, status: presence.presence.status, clientStatus: presence.presence.clientStatus, activities: presence.presence.activities, hiddenActivities: presence.presence.hiddenActivities, processedAtTimestamp: presence.presence.processedAtTimestamp };
-        outer1_34(obj);
+        const obj = { guildId: null, userId: null, status: null, clientStatus: null, activities: null, hiddenActivities: null, processedAtTimestamp: null };
+        obj[0] = closure_0;
+        obj[1] = presence.user_id;
+        obj[2] = presence.presence.status;
+        obj[3] = presence.presence.clientStatus;
+        obj[4] = presence.presence.activities;
+        obj[5] = presence.presence.hiddenActivities;
+        obj[6] = presence.presence.processedAtTimestamp;
+        outer1_21(obj);
       }
     });
   },
@@ -860,33 +812,42 @@ tmp3 = new tmp3(require("dispatcher"), {
     let addedMembers;
     let importDefault;
     ({ guildId: importDefault, addedMembers } = arg0);
-    if (null != addedMembers) {
+    if (addedMembers != null) {
       const item = addedMembers.forEach((presence) => {
         if (null != presence.presence) {
-          const obj = { guildId: closure_0, userId: presence.userId, status: presence.presence.status, clientStatus: presence.presence.clientStatus, activities: presence.presence.activities, hiddenActivities: presence.presence.hiddenActivities, processedAtTimestamp: presence.presence.processedAtTimestamp };
-          outer1_34(obj);
+          const obj = { guildId: null, userId: null, status: null, clientStatus: null, activities: null, hiddenActivities: null, processedAtTimestamp: null };
+          obj[0] = closure_0;
+          obj[1] = presence.userId;
+          obj[2] = presence.presence.status;
+          obj[3] = presence.presence.clientStatus;
+          obj[4] = presence.presence.activities;
+          obj[5] = presence.presence.hiddenActivities;
+          obj[6] = presence.presence.processedAtTimestamp;
+          outer1_21(obj);
         }
       });
     }
   },
   SELF_PRESENCE_STORE_UPDATE: function handleCurrentUserPresenceUpdate(status) {
     const id = store.getId();
-    if (table[id] === status.status) {
-      if (table2[id] === status.activities) {
-        if (table3[id] === status.hiddenActivities) {
+    if (dependencyMap2[id] === status.status) {
+      if (dependencyMap3[id] === status.activities) {
+        if (dependencyMap5[id] === status.hiddenActivities) {
           return false;
         }
       }
     }
-    table[id] = status.status;
+    dependencyMap2[id] = status.status;
     const items = [...status.activities];
-    setActivitiesForUser(id, items.sort(sortActivity));
+    const sorted = items.sort(sortActivity);
+    dependencyMap3[id] = sorted;
+    closure_13[id] = filterPlayingActivities(sorted);
     const items1 = [...status.hiddenActivities];
-    table3[id] = items1.sort(sortActivity);
+    dependencyMap5[id] = items1.sort(sortActivity);
     delete tmp[tmp2];
   }
 });
-let result = require("_possibleConstructorReturn").fileFinishedImporting("stores/PresenceStore.tsx");
+const result = require("ME").fileFinishedImporting("stores/PresenceStore.tsx");
 
-export default tmp3;
+export default presenceStore;
 export { sortActivity };

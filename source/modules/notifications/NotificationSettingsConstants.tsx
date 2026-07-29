@@ -1,9 +1,9 @@
-// Module ID: 13486
-// Function ID: 103448
+// Module ID: 13509
+// Function ID: 13510
 // Name: items2
-// Dependencies: [2493, 13487, 13488, 2]
+// Dependencies: [2517, 13510, 13511, 2]
 
-// Module 13486 (items2)
+// Module 13509 (items2)
 let obj = { badge: true, visibility: "popup", vibrate: true, sound: true };
 obj = { badge: true, visibility: "default", vibrate: true, sound: true };
 obj = { badge: true, visibility: "default", vibrate: false, sound: false };
@@ -14,56 +14,56 @@ const obj2 = { title: require("messagesProxy")["UzRF+8"], string_id: "222_social
 items[2] = { title: require("messagesProxy").zRKbpz, string_id: "333_server" };
 const obj3 = { title: require("messagesProxy").zRKbpz, string_id: "333_server" };
 items[3] = { title: require("messagesProxy").q5M7HV, string_id: "444_other" };
-const obj5 = { title: require("messagesProxy")["IUH/Oe"], id: require("NotifSettings").NotifSettings.CALLS, string_id: "calls", category: "111_realtime", behavior: { badge: false, ringtone: "call_ringing", visibility: "popup", vibrate: true, sound: true }, systemOnly: true };
-const items1 = [obj5, , , , , , , , , , , , , , , , , , , , , , , , ];
-const obj6 = { title: require("messagesProxy").VeBD1N, id: require("NotifSettings").NotifSettings.VOICE_CONNECTED, string_id: "mediaConnections", category: "111_realtime", behavior: { badge: false, visibility: "default", vibrate: false, sound: true }, systemOnly: true };
-items1[1] = obj6;
-const obj7 = { title: require("messagesProxy").NGdNZb, id: require("NotifSettings").NotifSettings.DMS, string_id: "directMessages", category: "222_social", behavior: obj, systemOnly: true };
-items1[2] = obj7;
-const obj8 = { title: require("messagesProxy").NxgGZA, id: require("NotifSettings").NotifSettings.FRIEND_REQUESTS, string_id: "friendRequests", category: "222_social", behavior: obj, systemOnly: true };
-items1[3] = obj8;
-const obj9 = { title: require("messagesProxy").MOjygY, id: require("NotifSettings").NotifSettings.POLLS, string_id: "polls", category: "222_social", behavior: obj, systemOnly: true };
-items1[4] = obj9;
 const obj4 = { title: require("messagesProxy").q5M7HV, string_id: "444_other" };
+const items1 = [{ title: require("messagesProxy")["IUH/Oe"], id: require("NotifSettings").NotifSettings.CALLS, string_id: "calls", category: "111_realtime", behavior: { badge: false, ringtone: "call_ringing", visibility: "popup", vibrate: true, sound: true }, systemOnly: true }, , , , , , , , , , , , , , , , , , , , , , , , ];
+const obj5 = { title: require("messagesProxy")["IUH/Oe"], id: require("NotifSettings").NotifSettings.CALLS, string_id: "calls", category: "111_realtime", behavior: { badge: false, ringtone: "call_ringing", visibility: "popup", vibrate: true, sound: true }, systemOnly: true };
+items1[1] = { title: require("messagesProxy").VeBD1N, id: require("NotifSettings").NotifSettings.VOICE_CONNECTED, string_id: "mediaConnections", category: "111_realtime", behavior: { badge: false, visibility: "default", vibrate: false, sound: true }, systemOnly: true };
+const obj6 = { title: require("messagesProxy").VeBD1N, id: require("NotifSettings").NotifSettings.VOICE_CONNECTED, string_id: "mediaConnections", category: "111_realtime", behavior: { badge: false, visibility: "default", vibrate: false, sound: true }, systemOnly: true };
+items1[2] = { title: require("messagesProxy").NGdNZb, id: require("NotifSettings").NotifSettings.DMS, string_id: "directMessages", category: "222_social", behavior: obj, systemOnly: true };
+const obj7 = { title: require("messagesProxy").NGdNZb, id: require("NotifSettings").NotifSettings.DMS, string_id: "directMessages", category: "222_social", behavior: obj, systemOnly: true };
+items1[3] = { title: require("messagesProxy").NxgGZA, id: require("NotifSettings").NotifSettings.FRIEND_REQUESTS, string_id: "friendRequests", category: "222_social", behavior: obj, systemOnly: true };
+const obj8 = { title: require("messagesProxy").NxgGZA, id: require("NotifSettings").NotifSettings.FRIEND_REQUESTS, string_id: "friendRequests", category: "222_social", behavior: obj, systemOnly: true };
+items1[4] = { title: require("messagesProxy").MOjygY, id: require("NotifSettings").NotifSettings.POLLS, string_id: "polls", category: "222_social", behavior: obj, systemOnly: true };
+const obj9 = { title: require("messagesProxy").MOjygY, id: require("NotifSettings").NotifSettings.POLLS, string_id: "polls", category: "222_social", behavior: obj, systemOnly: true };
 items1[5] = { title: require("messagesProxy").wv4QHR, id: require("NotifSettings").NotifSettings.REACTIONS, string_id: "reactions", category: "222_social", behavior: obj };
+const obj10 = { title: require("messagesProxy").wv4QHR, id: require("NotifSettings").NotifSettings.REACTIONS, string_id: "reactions", category: "222_social", behavior: obj };
+items1[6] = { title: require("messagesProxy").n0Wp6j, id: require("NotifSettings").NotifSettings.MISSED_MESSAGES_LOW, string_id: "missed_messages_low", category: "222_social", behavior: obj, experiment: "2026-05-noisier-notif-settings-defaults", variations: [0, 2, 3, 4] };
 const obj11 = { title: require("messagesProxy").n0Wp6j, id: require("NotifSettings").NotifSettings.MISSED_MESSAGES_LOW, string_id: "missed_messages_low", category: "222_social", behavior: obj, experiment: "2026-05-noisier-notif-settings-defaults", variations: [0, 2, 3, 4] };
-items1[6] = obj11;
+items1[7] = { title: require("messagesProxy").n0Wp6j, id: require("NotifSettings").NotifSettings.MISSED_MESSAGES_DEFAULT, string_id: "missed_messages_default", category: "222_social", behavior: obj, experiment: "2026-05-noisier-notif-settings-defaults", variations: [1] };
 const obj12 = { title: require("messagesProxy").n0Wp6j, id: require("NotifSettings").NotifSettings.MISSED_MESSAGES_DEFAULT, string_id: "missed_messages_default", category: "222_social", behavior: obj, experiment: "2026-05-noisier-notif-settings-defaults", variations: [1] };
-items1[7] = obj12;
+items1[8] = { title: require("messagesProxy").n0Wp6j, id: require("NotifSettings").NotifSettings.MISSED_MESSAGES_DEFAULT, string_id: "missed_messages_default", category: "222_social", behavior: obj, experiment: "2026-05-noisier-notif-settings-defaults", variations: [5] };
 const obj13 = { title: require("messagesProxy").n0Wp6j, id: require("NotifSettings").NotifSettings.MISSED_MESSAGES_DEFAULT, string_id: "missed_messages_default", category: "222_social", behavior: obj, experiment: "2026-05-noisier-notif-settings-defaults", variations: [5] };
-items1[8] = obj13;
+items1[9] = { title: require("messagesProxy").Iy9grw, id: require("NotifSettings").NotifSettings.VOICE_ACTIVITY_LOW, string_id: "voice_activity_low", category: "222_social", behavior: obj, experiment: "2026-05-noisier-notif-settings-defaults", variations: [0, 1, 3, 4] };
 const obj14 = { title: require("messagesProxy").Iy9grw, id: require("NotifSettings").NotifSettings.VOICE_ACTIVITY_LOW, string_id: "voice_activity_low", category: "222_social", behavior: obj, experiment: "2026-05-noisier-notif-settings-defaults", variations: [0, 1, 3, 4] };
-items1[9] = obj14;
+items1[10] = { title: require("messagesProxy").Iy9grw, id: require("NotifSettings").NotifSettings.VOICE_ACTIVITY_DEFAULT, string_id: "voice_activity_default", category: "222_social", behavior: obj, experiment: "2026-05-noisier-notif-settings-defaults", variations: [2] };
 const obj15 = { title: require("messagesProxy").Iy9grw, id: require("NotifSettings").NotifSettings.VOICE_ACTIVITY_DEFAULT, string_id: "voice_activity_default", category: "222_social", behavior: obj, experiment: "2026-05-noisier-notif-settings-defaults", variations: [2] };
-items1[10] = obj15;
+items1[11] = { title: require("messagesProxy").Iy9grw, id: require("NotifSettings").NotifSettings.VOICE_ACTIVITY_DEFAULT, string_id: "voice_activity_default", category: "222_social", behavior: obj, experiment: "2026-05-noisier-notif-settings-defaults", variations: [5] };
 const obj16 = { title: require("messagesProxy").Iy9grw, id: require("NotifSettings").NotifSettings.VOICE_ACTIVITY_DEFAULT, string_id: "voice_activity_default", category: "222_social", behavior: obj, experiment: "2026-05-noisier-notif-settings-defaults", variations: [5] };
-items1[11] = obj16;
+items1[12] = { title: require("messagesProxy")["9EDo+/"], id: require("NotifSettings").NotifSettings.GAMING_LOW, string_id: "gaming_low", category: "222_social", behavior: obj, experiment: "2026-05-noisier-notif-settings-defaults", variations: [0, 1, 2, 4] };
 const obj17 = { title: require("messagesProxy")["9EDo+/"], id: require("NotifSettings").NotifSettings.GAMING_LOW, string_id: "gaming_low", category: "222_social", behavior: obj, experiment: "2026-05-noisier-notif-settings-defaults", variations: [0, 1, 2, 4] };
-items1[12] = obj17;
+items1[13] = { title: require("messagesProxy")["9EDo+/"], id: require("NotifSettings").NotifSettings.GAMING_DEFAULT, string_id: "gaming_default", category: "222_social", behavior: obj, experiment: "2026-05-noisier-notif-settings-defaults", variations: [3] };
 const obj18 = { title: require("messagesProxy")["9EDo+/"], id: require("NotifSettings").NotifSettings.GAMING_DEFAULT, string_id: "gaming_default", category: "222_social", behavior: obj, experiment: "2026-05-noisier-notif-settings-defaults", variations: [3] };
-items1[13] = obj18;
+items1[14] = { title: require("messagesProxy")["9EDo+/"], id: require("NotifSettings").NotifSettings.GAMING_DEFAULT, string_id: "gaming_default", category: "222_social", behavior: obj, experiment: "2026-05-noisier-notif-settings-defaults", variations: [5] };
 const obj19 = { title: require("messagesProxy")["9EDo+/"], id: require("NotifSettings").NotifSettings.GAMING_DEFAULT, string_id: "gaming_default", category: "222_social", behavior: obj, experiment: "2026-05-noisier-notif-settings-defaults", variations: [5] };
-items1[14] = obj19;
+items1[15] = { title: require("messagesProxy").vcrTV5, id: require("NotifSettings").NotifSettings.FRIEND_ACTIVITY_LOW, string_id: "social", category: "222_social", behavior: obj, systemOnly: true, experiment: "2026-05-noisier-notif-settings-defaults", variations: [0, 1, 2, 3] };
 const obj20 = { title: require("messagesProxy").vcrTV5, id: require("NotifSettings").NotifSettings.FRIEND_ACTIVITY_LOW, string_id: "social", category: "222_social", behavior: obj, systemOnly: true, experiment: "2026-05-noisier-notif-settings-defaults", variations: [0, 1, 2, 3] };
-items1[15] = obj20;
+items1[16] = { title: require("messagesProxy").vcrTV5, id: require("NotifSettings").NotifSettings.FRIEND_ACTIVITY_DEFAULT, string_id: "social", category: "222_social", behavior: obj, systemOnly: true, experiment: "2026-05-noisier-notif-settings-defaults", variations: [4] };
 const obj21 = { title: require("messagesProxy").vcrTV5, id: require("NotifSettings").NotifSettings.FRIEND_ACTIVITY_DEFAULT, string_id: "social", category: "222_social", behavior: obj, systemOnly: true, experiment: "2026-05-noisier-notif-settings-defaults", variations: [4] };
-items1[16] = obj21;
+items1[17] = { title: require("messagesProxy").vcrTV5, id: require("NotifSettings").NotifSettings.FRIEND_ACTIVITY_DEFAULT, string_id: "social", category: "222_social", behavior: obj, systemOnly: true, experiment: "2026-05-noisier-notif-settings-defaults", variations: [5] };
 const obj22 = { title: require("messagesProxy").vcrTV5, id: require("NotifSettings").NotifSettings.FRIEND_ACTIVITY_DEFAULT, string_id: "social", category: "222_social", behavior: obj, systemOnly: true, experiment: "2026-05-noisier-notif-settings-defaults", variations: [5] };
-items1[17] = obj22;
+items1[18] = { title: require("messagesProxy")["4qWUAO"], id: require("NotifSettings").NotifSettings.GUILD_MESSAGES, string_id: "messages", category: "333_server", behavior: obj, systemOnly: true };
 const obj23 = { title: require("messagesProxy")["4qWUAO"], id: require("NotifSettings").NotifSettings.GUILD_MESSAGES, string_id: "messages", category: "333_server", behavior: obj, systemOnly: true };
-items1[18] = obj23;
+items1[19] = { title: require("messagesProxy").HibKoy, id: require("NotifSettings").NotifSettings.FORUM_NOTIFICATIONS, string_id: "forumThreadCreated", category: "333_server", behavior: obj, systemOnly: true };
 const obj24 = { title: require("messagesProxy").HibKoy, id: require("NotifSettings").NotifSettings.FORUM_NOTIFICATIONS, string_id: "forumThreadCreated", category: "333_server", behavior: obj, systemOnly: true };
-items1[19] = obj24;
+items1[20] = { title: require("messagesProxy")["40TIqW"], id: require("NotifSettings").NotifSettings.GUILD_EVENT_NOTIFICATIONS, string_id: "guildEventLive", category: "333_server", behavior: obj, systemOnly: true };
 const obj25 = { title: require("messagesProxy")["40TIqW"], id: require("NotifSettings").NotifSettings.GUILD_EVENT_NOTIFICATIONS, string_id: "guildEventLive", category: "333_server", behavior: obj, systemOnly: true };
-items1[20] = obj25;
+items1[21] = { title: require("messagesProxy")["4n388K"], id: require("NotifSettings").NotifSettings.STAGE_NOTIFICATIONS, string_id: "stageLive", category: "333_server", behavior: obj, systemOnly: true };
 const obj26 = { title: require("messagesProxy")["4n388K"], id: require("NotifSettings").NotifSettings.STAGE_NOTIFICATIONS, string_id: "stageLive", category: "333_server", behavior: obj, systemOnly: true };
-items1[21] = obj26;
+items1[22] = { title: require("messagesProxy").kIrLfg, id: require("NotifSettings").NotifSettings.OTHER_GUILD, string_id: "other", category: "333_server", behavior: obj, systemOnly: true };
 const obj27 = { title: require("messagesProxy").kIrLfg, id: require("NotifSettings").NotifSettings.OTHER_GUILD, string_id: "other", category: "333_server", behavior: obj, systemOnly: true };
-items1[22] = obj27;
+items1[23] = { title: require("messagesProxy")["T+79Eo"], id: require("NotifSettings").NotifSettings.OTHER, string_id: "default", category: "444_other", behavior: obj, systemOnly: true };
 const obj28 = { title: require("messagesProxy")["T+79Eo"], id: require("NotifSettings").NotifSettings.OTHER, string_id: "default", category: "444_other", behavior: obj, systemOnly: true };
-items1[23] = obj28;
-const obj29 = { title: require("messagesProxy").zJlwvV, id: require("NotifSettings").NotifSettings.SYSTEM, string_id: "systemMessages", category: "444_other", behavior: obj, systemOnly: true };
-items1[24] = obj29;
+items1[24] = { title: require("messagesProxy").zJlwvV, id: require("NotifSettings").NotifSettings.SYSTEM, string_id: "systemMessages", category: "444_other", behavior: obj, systemOnly: true };
 const obj30 = {};
 const items2 = [require("NotifSettings").NotifSettings.VOICE_ACTIVITY_LOW, require("NotifSettings").NotifSettings.VOICE_ACTIVITY_DEFAULT];
 obj30[require("NotifTypes").NotifTypes.GUILD_STREAM_START] = items2;
@@ -87,7 +87,7 @@ const items11 = [require("NotifSettings").NotifSettings.FRIEND_ACTIVITY_LOW, req
 obj30[require("NotifTypes").NotifTypes.CUSTOM_STATUS_UPDATE] = items11;
 const items12 = [require("NotifSettings").NotifSettings.FRIEND_ACTIVITY_LOW, require("NotifSettings").NotifSettings.FRIEND_ACTIVITY_DEFAULT];
 obj30[require("NotifTypes").NotifTypes.PROFILE_UPDATES_NOTIFICATION] = items12;
-const obj10 = { title: require("messagesProxy").wv4QHR, id: require("NotifSettings").NotifSettings.REACTIONS, string_id: "reactions", category: "222_social", behavior: obj };
+const obj29 = { title: require("messagesProxy").zJlwvV, id: require("NotifSettings").NotifSettings.SYSTEM, string_id: "systemMessages", category: "444_other", behavior: obj, systemOnly: true };
 const result = require("NotifTypes").fileFinishedImporting("modules/notifications/NotificationSettingsConstants.tsx");
 
 export const NOTIF_CATEGORIES = items;

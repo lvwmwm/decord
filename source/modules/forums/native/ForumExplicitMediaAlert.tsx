@@ -1,30 +1,30 @@
-// Module ID: 12588
-// Function ID: 97239
+// Module ID: 12610
+// Function ID: 12611
 // Name: ForumExplicitMediaAlert
-// Dependencies: [31, 27, 33, 4165, 689, 4596, 4161, 1212, 4578, 11080, 2]
+// Dependencies: [19, 17, 21, 4189, 712, 4618, 4185, 1236, 4600, 11104, 2]
 // Exports: default
 
-// Module 12588 (ForumExplicitMediaAlert)
-import "result";
+// Module 12610 (ForumExplicitMediaAlert)
+import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_4;
-let closure_5;
+let c4;
+let c5;
 const require = arg1;
-({ jsx: closure_4, jsxs: closure_5 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { padding: require("_createForOfIteratorHelperLoose").space.PX_16, alignItems: "stretch" };
-_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.title = { marginBottom: require("_createForOfIteratorHelperLoose").space.PX_16 };
-let obj1 = { marginBottom: require("_createForOfIteratorHelperLoose").space.PX_16 };
-_createForOfIteratorHelperLoose.body = { marginTop: require("_createForOfIteratorHelperLoose").space.PX_16 };
-let obj2 = { marginTop: require("_createForOfIteratorHelperLoose").space.PX_16 };
-_createForOfIteratorHelperLoose.buttonContainer = { marginVertical: require("_createForOfIteratorHelperLoose").space.PX_16 };
-_createForOfIteratorHelperLoose.text = { textAlign: "center" };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-let obj3 = { marginVertical: require("_createForOfIteratorHelperLoose").space.PX_16 };
+({ jsx: c4, jsxs: c5 } = jsxProd);
+createCacheKey = { container: null, title: null, body: null, buttonContainer: null, text: null };
+createCacheKey = { padding: require("Themes").space.PX_16, alignItems: "stretch" };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { marginBottom: require("Themes").space.PX_16 };
+let obj1 = { marginBottom: require("Themes").space.PX_16 };
+createCacheKey[2] = { marginTop: require("Themes").space.PX_16 };
+let obj2 = { marginTop: require("Themes").space.PX_16 };
+createCacheKey[3] = { marginVertical: require("Themes").space.PX_16 };
+createCacheKey[4] = { textAlign: "center" };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let obj3 = { marginVertical: require("Themes").space.PX_16 };
 let result = require("jsxProd").fileFinishedImporting("modules/forums/native/ForumExplicitMediaAlert.tsx");
 
 export default function ForumExplicitMediaAlert(arg0) {
@@ -32,38 +32,36 @@ export default function ForumExplicitMediaAlert(arg0) {
   let onClose;
   let require;
   ({ channelId: require, messageId: importDefault, onClose } = arg0);
-  const tmp = _createForOfIteratorHelperLoose();
-  let obj = { noDefaultButtons: true, style: tmp.container, onClose };
-  obj = { accessibilityRole: "header", variant: "heading-md/extrabold", color: "text-default" };
-  const items = [, ];
+  const tmp = createCacheKey();
+  let obj = { noDefaultButtons: true, style: tmp.container, onClose, children: null };
+  obj = { accessibilityRole: "header", variant: "heading-md/extrabold", color: "text-default", style: items, children: null };
+  items = [, ];
   ({ title: arr[0], text: arr[1] } = tmp);
-  obj.style = items;
   const intl = require(onClose[7]).intl;
-  obj.children = intl.string(require(onClose[7]).t.B3vFdU);
+  obj[4] = intl.string(require(onClose[7]).t.B3vFdU);
   const items1 = [callback(require(onClose[6]).Text, obj), , , ];
-  obj = { style: null, maxFontSizeMultiplier: 1, variant: "text-md/normal" };
-  const items2 = [, ];
+  obj = { style: items2, maxFontSizeMultiplier: 1, variant: "text-md/normal", children: null };
+  items2 = [, ];
   ({ body: arr3[0], text: arr3[1] } = tmp);
-  obj.style = items2;
   const intl2 = require(onClose[7]).intl;
-  obj.children = intl2.string(require(onClose[7]).t.i4AbAS);
+  obj[3] = intl2.string(require(onClose[7]).t.i4AbAS);
   items1[1] = callback(require(onClose[6]).Text, obj);
-  const obj1 = { style: tmp.buttonContainer };
-  const obj2 = { variant: "primary", size: "md" };
+  const obj1 = { style: tmp.buttonContainer, children: null };
+  const obj2 = { variant: "primary", size: "md", text: null, onPress: null };
   const intl3 = require(onClose[7]).intl;
-  obj2.text = intl3.string(require(onClose[7]).t.WAI6xu);
-  obj2.onPress = onClose;
-  obj1.children = callback(require(onClose[8]).Button, obj2);
+  obj2[2] = intl3.string(require(onClose[7]).t.WAI6xu);
+  obj2[3] = onClose;
+  obj1[1] = callback(require(onClose[8]).Button, obj2);
   items1[2] = callback(View, obj1);
-  const obj3 = { style: tmp.text, variant: "text-sm/medium", color: "text-muted" };
+  const obj3 = { style: tmp.text, variant: "text-sm/medium", color: "text-muted", children: null };
   const intl4 = require(onClose[7]).intl;
-  obj3.children = intl4.format(require(onClose[7]).t["APQGZ+"], {
+  obj3[3] = intl4.format(require(onClose[7]).t["APQGZ+"], {
     handleFalsePositiveHook() {
       onClose();
       const result = outer1_0(onClose[9]).handleSenderFalsePositiveFlow(closure_0, closure_1);
     }
   });
   items1[3] = callback(require(onClose[6]).Text, obj3);
-  obj.children = items1;
+  obj[3] = items1;
   return callback2(importDefault(onClose[5]), obj);
 };

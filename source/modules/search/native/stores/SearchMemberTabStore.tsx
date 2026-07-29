@@ -1,198 +1,131 @@
-// Module ID: 11439
-// Function ID: 88724
-// Name: _isNativeReflectConstruct
-// Dependencies: [15, 17, 18, 6, 7, 1348, 653, 6145, 3798, 5082, 566, 686, 2]
+// Module ID: 11463
+// Function ID: 11464
+// Name: setAutocompleteOptions
+// Dependencies: [1372, 676, 6163, 3822, 5104, 589, 709, 2]
 
-// Module 11439 (_isNativeReflectConstruct)
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
-import ME from "ME";
-import sortByMatchScore from "sortByMatchScore";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 11463 (setAutocompleteOptions)
+import ensureGuildLoaded from "ensureGuildLoaded";
 import { Permissions } from "ME";
+import { Store } from "initialize";
 
 const require = arg1;
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
-  }
-  const result = _isNativeReflectConstruct();
-}
-let closure_11 = [];
-let closure_12 = (() => {
-  class GuildMemberSearchManager {
-    constructor() {
-      self = this;
-      tmp = outer1_7(this, self);
-      this.count = null;
-      this.isFetching = false;
-      this.searchQueryString = "";
-      this.targetChannelId = null;
-      this.results = [];
-      this.onAutocompleterResultsChange = (arr) => {
-        if (arg1 === items.searchQueryString) {
-          items.isFetching = false;
-          items = [];
-          const channel = outer2_9.getChannel(items.targetChannelId);
-          const item = arr.forEach((type) => {
-            if (type.type === GuildMemberSearchManager(outer3_3[7]).AutocompleterResultTypes.USER) {
-              if (null != closure_1) {
-                let obj = outer3_2(outer3_3[8]);
-                obj = { permission: outer3_10.VIEW_CHANNEL, user: type.record, context: closure_1 };
-              }
-              items.push(type);
+let closure_6 = [];
+class GuildMemberSearchManager {
+  constructor() {
+    obj = Object.create(new.target.prototype);
+    closure_0 = obj;
+    obj.count = null;
+    obj.isFetching = false;
+    obj.searchQueryString = "";
+    obj.targetChannelId = null;
+    obj.results = [];
+    obj.onAutocompleterResultsChange = function onAutocompleterResultsChange(arr) {
+      if (arg1 === items.searchQueryString) {
+        tmp.isFetching = false;
+        items = [];
+        const channel = outer1_4.getChannel(tmp.targetChannelId);
+        const item = arr.forEach((type) => {
+          if (type.type === items(outer1_3[2]).AutocompleterResultTypes.USER) {
+            if (null != closure_1) {
+              let obj = outer1_2(outer1_3[3]);
+              obj = { permission: null, user: null, context: null };
+              obj[0] = outer1_5.VIEW_CHANNEL;
+              obj[1] = type.record;
+              obj[2] = tmp2;
             }
-          });
-          items.results = items;
-          if (items.searchQueryString.length > 0) {
-            items.count = items.length;
-          } else {
-            items.count = null;
+            items.push(type);
           }
-          items = outer2_14;
-          outer2_14.emitChange();
+        });
+        tmp.results = items;
+        if (tmp.searchQueryString.length > 0) {
+          tmp.count = items.length;
+        } else {
+          tmp.count = null;
         }
-      };
-      tmp2 = outer1_1(outer1_3[7]);
-      items = [];
-      items[0] = GuildMemberSearchManager(outer1_3[7]).AutocompleterResultTypes.USER;
-      tmp2 = new tmp2(this.onAutocompleterResultsChange, items, 50);
-      this.autocompleter = tmp2;
-      autocompleter = this.autocompleter;
-      searchContext = autocompleter.createSearchContext();
-      return;
-    }
+        items = outer1_9;
+        outer1_9.emitChange();
+      }
+    };
+    tmp2 = require("sortByMatchScore");
+    items = [];
+    items[0] = require("sortByMatchScore").AutocompleterResultTypes.USER;
+    tmp2 = new tmp2(obj.onAutocompleterResultsChange, items, 50);
+    obj.autocompleter = tmp2;
+    autocompleter = obj.autocompleter;
+    searchContext = autocompleter.createSearchContext();
+    return obj;
   }
-  let obj = {
-    key: "setAutocompleteOptions",
-    value(arg0) {
-      const autocompleter = this.autocompleter;
-      autocompleter.setOptions(arg0);
-    }
-  };
-  let items = [obj, , , , , ];
-  obj = {
-    key: "teardown",
-    value() {
-      const autocompleter = this.autocompleter;
-      autocompleter.clean();
-    }
-  };
-  items[1] = obj;
-  obj = {
-    key: "search",
-    value(arg0, targetChannelId, str) {
-      this.targetChannelId = targetChannelId;
-      this.isFetching = true;
-      const trimmed = str.toLowerCase().trim();
-      this.searchQueryString = trimmed;
-      str = str.toLowerCase();
-      const members = outer1_1(outer1_3[9]).requestMembers(arg0, trimmed, 50);
-      const autocompleter = this.autocompleter;
-      autocompleter.search(trimmed);
-    }
-  };
-  items[2] = obj;
-  items[3] = {
-    key: "getResults",
-    value() {
-      return this.results;
-    }
-  };
-  items[4] = {
-    key: "getCount",
-    value() {
-      return this.count;
-    }
-  };
-  items[5] = {
-    key: "getIsFetching",
-    value() {
-      return this.isFetching;
-    }
-  };
-  return callback2(GuildMemberSearchManager, items);
-})();
+}
+const prototype = GuildMemberSearchManager.prototype;
+prototype["setAutocompleteOptions"] = function setAutocompleteOptions(arg0) {
+  const autocompleter = this.autocompleter;
+  autocompleter.setOptions(arg0);
+};
+prototype["teardown"] = function teardown() {
+  const autocompleter = this.autocompleter;
+  autocompleter.clean();
+};
+prototype["search"] = function search(arg0, targetChannelId, str) {
+  this.targetChannelId = targetChannelId;
+  this.isFetching = true;
+  const trimmed = str.toLowerCase().trim();
+  this.searchQueryString = trimmed;
+  str = str.toLowerCase();
+  const members = importDefault(5104).requestMembers(arg0, trimmed, 50);
+  const autocompleter = this.autocompleter;
+  autocompleter.search(trimmed);
+};
+prototype["getResults"] = function getResults() {
+  return this.results;
+};
+prototype["getCount"] = function getCount() {
+  return this.count;
+};
+prototype["getIsFetching"] = function getIsFetching() {
+  return this.isFetching;
+};
 const map = new Map();
-let tmp3 = ((Store) => {
-  class SearchGuildMemberTabStoreImpl {
-    constructor() {
-      self = this;
-      tmp = outer1_7(this, SearchGuildMemberTabStoreImpl);
-      obj = outer1_5(SearchGuildMemberTabStoreImpl);
-      tmp2 = outer1_4;
-      if (outer1_15()) {
-        tmp6 = globalThis;
-        _Reflect = Reflect;
-        tmp7 = outer1_5;
-        tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, outer1_5(self).constructor);
-      } else {
-        tmp3 = arguments;
-        tmp4 = arguments;
-        constructResult = obj(...arguments);
-      }
-      return tmp2(self, constructResult);
-    }
+class SearchGuildMemberTabStoreImpl extends Store {
+}
+const prototype2 = SearchGuildMemberTabStoreImpl.prototype;
+prototype2["initialize"] = function initialize() {
+  this.waitFor(ensureGuildLoaded);
+};
+prototype2["getResults"] = function getResults(arg0) {
+  const value = map.get(arg0);
+  let results;
+  if (value != null) {
+    results = value.getResults();
   }
-  callback(SearchGuildMemberTabStoreImpl, Store);
-  let obj = {
-    key: "initialize",
-    value() {
-      this.waitFor(outer1_9);
-    }
-  };
-  const items = [obj, , , ];
-  obj = {
-    key: "getResults",
-    value(arg0) {
-      const value = outer1_13.get(arg0);
-      let results;
-      if (null != value) {
-        results = value.getResults();
-      }
-      if (null == results) {
-        results = outer1_11;
-      }
-      return results;
-    }
-  };
-  items[1] = obj;
-  obj = {
-    key: "getCount",
-    value(arg0) {
-      const value = outer1_13.get(arg0);
-      let count;
-      if (null != value) {
-        count = value.getCount();
-      }
-      let tmp2 = null;
-      if (null != count) {
-        tmp2 = count;
-      }
-      return tmp2;
-    }
-  };
-  items[2] = obj;
-  items[3] = {
-    key: "getIsFetching",
-    value(arg0) {
-      const value = outer1_13.get(arg0);
-      let isFetching;
-      if (null != value) {
-        isFetching = value.getIsFetching();
-      }
-      return null != isFetching && isFetching;
-    }
-  };
-  return callback2(SearchGuildMemberTabStoreImpl, items);
-})(require("initialize").Store);
-tmp3.displayName = "SearchGuildMemberTabStore";
-tmp3 = new tmp3(require("dispatcher"), {
+  if (results == null) {
+    results = closure_6;
+  }
+  return results;
+};
+prototype2["getCount"] = function getCount(arg0) {
+  const value = map.get(arg0);
+  let count;
+  if (value != null) {
+    count = value.getCount();
+  }
+  if (count == null) {
+    count = null;
+  }
+  return count;
+};
+prototype2["getIsFetching"] = function getIsFetching(arg0) {
+  const value = map.get(arg0);
+  let flag;
+  if (value != null) {
+    flag = value.getIsFetching();
+  }
+  if (flag == null) {
+    flag = false;
+  }
+  return flag;
+};
+SearchGuildMemberTabStoreImpl.displayName = "SearchGuildMemberTabStore";
+const searchGuildMemberTabStoreImpl = new SearchGuildMemberTabStoreImpl(require("dispatcher"), {
   SEARCH_GUILD_MEMBER_TAB_SEARCH: function handleSearchGuildMemberTabSearch(arg0) {
     let channelId;
     let guildId;
@@ -200,34 +133,70 @@ tmp3 = new tmp3(require("dispatcher"), {
     let searchQueryString;
     let threadId;
     ({ id, guildId, threadId } = arg0);
+    let obj = map;
     ({ channelId, searchQueryString } = arg0);
     let value = map.get(id);
-    if (null == value) {
-      const prototype = ctor.prototype;
-      value = new ctor();
+    if (value == null) {
+      if (typeof GuildMemberSearchManager !== "find") {
+        HermesBuiltin.throwTypeError();
+      }
+      obj = Object.create(GuildMemberSearchManager.prototype);
+      obj.count = null;
+      obj.isFetching = false;
+      obj.searchQueryString = "";
+      obj.targetChannelId = null;
+      obj.results = [];
+      obj.onAutocompleterResultsChange = function onAutocompleterResultsChange(arr) {
+        if (arg1 === items.searchQueryString) {
+          tmp.isFetching = false;
+          items = [];
+          const channel = outer1_4.getChannel(tmp.targetChannelId);
+          const item = arr.forEach((type) => {
+            if (type.type === items(outer1_3[2]).AutocompleterResultTypes.USER) {
+              if (null != closure_1) {
+                let obj = outer1_2(outer1_3[3]);
+                obj = { permission: null, user: null, context: null };
+                obj[0] = outer1_5.VIEW_CHANNEL;
+                obj[1] = type.record;
+                obj[2] = tmp2;
+              }
+              items.push(type);
+            }
+          });
+          tmp.results = items;
+          if (tmp.searchQueryString.length > 0) {
+            tmp.count = items.length;
+          } else {
+            tmp.count = null;
+          }
+          items = outer1_9;
+          outer1_9.emitChange();
+        }
+      };
+      let tmp4 = importDefault(6163);
+      let items = [obj(6163).AutocompleterResultTypes.USER];
+      tmp4 = new tmp4(onAutocompleterResultsChange, items, 50);
+      obj.autocompleter = tmp4;
+      const autocompleter = obj.autocompleter;
+      const searchContext = autocompleter.createSearchContext();
+      value = obj;
+      const tmp16 = GuildMemberSearchManager;
     }
-    const result = map.set(id, value);
-    let obj = { frecencyBoosters: true, allowSnowflake: true };
-    obj = { guild: guildId, strict: true };
-    let tmp5;
-    if (null != threadId) {
-      tmp5 = threadId;
-    }
-    obj.thread = tmp5;
-    obj.userFilters = obj;
-    const result1 = value.setAutocompleteOptions(obj);
+    const result = obj.set(id, value);
+    obj = { guild: guildId, strict: true, thread: null };
+    obj[2] = threadId;
+    const result1 = value.setAutocompleteOptions({ frecencyBoosters: true, allowSnowflake: true, userFilters: obj });
     value.search(guildId, channelId, searchQueryString);
   },
   SEARCH_GUILD_MEMBER_TAB_CLEANUP: function handleSearchGuildMemberTabCleanup(id) {
     id = id.id;
     const value = map.get(id);
-    if (null != value) {
+    if (value != null) {
       value.teardown();
     }
     map.delete(id);
   }
 });
-let closure_14 = tmp3;
-let result = require("_inherits").fileFinishedImporting("modules/search/native/stores/SearchMemberTabStore.tsx");
+let result = require("sortByMatchScore").fileFinishedImporting("modules/search/native/stores/SearchMemberTabStore.tsx");
 
-export default tmp3;
+export default searchGuildMemberTabStoreImpl;

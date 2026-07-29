@@ -1,38 +1,39 @@
-// Module ID: 5092
-// Function ID: 43893
+// Module ID: 5114
+// Function ID: 5115
 // Name: fetchOnboardingPrompts
-// Dependencies: [5, 1194, 1918, 1838, 5093, 5094, 653, 3781, 675, 4359, 686, 507, 1360, 2]
+// Dependencies: [5, 1218, 1942, 1862, 5115, 5116, 676, 3805, 698, 4384, 709, 530, 1384, 2]
 // Exports: loadOnboardingPrompts, maybeFetchOnboardingPrompts
 
-// Module 5092 (fetchOnboardingPrompts)
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_5 from "_isNativeReflectConstruct";
-import closure_6 from "_createForOfIteratorHelperLoose";
-import closure_7 from "_isNativeReflectConstruct";
-import { serverApiResponseToClientState as closure_8 } from "_createForOfIteratorHelperLoose";
+// Module 5114 (fetchOnboardingPrompts)
+import serverPromptToClientPrompt from "serverPromptToClientPrompt";
+import fetchFingerprint from "fetchFingerprint";
+import trackCommunicationDisabled from "trackCommunicationDisabled";
+import createGuildRecordFromRust from "createGuildRecordFromRust";
+import handleUpdate from "handleUpdate";
+import { serverApiResponseToClientState as closure_8 } from "serverPromptToClientPrompt";
 import ME from "ME";
 import { GuildMemberFlags } from "GuildMemberFlags";
 
-let closure_10;
-let closure_11;
-let closure_9;
+let c10;
+let c9;
+let unpackModuleId;
 const require = arg1;
 function fetchOnboardingPrompts(guildId) {
   const _require = guildId;
-  let obj = importDefault(686);
+  let obj = importDefault(709);
   obj = { type: "GUILD_ONBOARDING_PROMPTS_FETCH_START", guildId };
   obj.dispatch(obj);
-  const HTTP = _require(507).HTTP;
+  const HTTP = _require(530).HTTP;
   obj = { url: closure_10.GUILD_ONBOARDING(guildId), rejectWithError: false };
   const value = HTTP.get(obj);
   return value.then((body) => {
+    let c0;
     const tmp = outer1_8(body.body);
-    let closure_0 = tmp;
+    c0 = tmp;
     let obj = outer1_1(outer1_2[10]);
-    obj = { type: "GUILD_ONBOARDING_PROMPTS_FETCH_SUCCESS", guildId: closure_0 };
+    obj = { type: "GUILD_ONBOARDING_PROMPTS_FETCH_SUCCESS", guildId: c0 };
     const merged = Object.assign(tmp);
-    return obj.dispatch(obj).then(() => tmp.prompts);
+    return obj.dispatch(obj).then(() => _undefined.prompts);
   }, (arg0) => {
     let obj = outer1_1(outer1_2[10]);
     obj = { type: "GUILD_ONBOARDING_PROMPTS_FETCH_FAILURE", guildId: closure_0 };
@@ -40,93 +41,167 @@ function fetchOnboardingPrompts(guildId) {
     return arg0;
   });
 }
-async function _maybeFetchOnboardingPrompts(arg0, arg1) {
-  const id = outer2_4.getId();
-  const member = outer2_5.getMember(arg0, id);
-  let flags;
-  if (null != member) {
-    flags = member.flags;
-  }
-  let num = 0;
-  if (null != flags) {
-    num = flags;
-  }
-  const hasFlagResult = outer2_0(outer2_2[12]).hasFlag(num, outer2_12.COMPLETED_ONBOARDING);
-  const guild = outer2_6.getGuild(arg0);
-  if (null != guild) {
-    const features = guild.features;
-    if (features.has(outer2_11.GUILD_ONBOARDING)) {
-      const onboardingPrompts = outer2_7.getOnboardingPrompts(arg0);
-      if (!shouldFetchPromptsResult) {
-        if (onboardingPrompts.length > 0) {
-          if (onboardingPrompts.every((inOnboarding) => !inOnboarding.inOnboarding)) {
-            outer2_17(arg0);
-            let resolved = Promise.resolve();
-          } else {
-            if (!hasFlagResult) {
-              outer2_16(arg0);
+function _maybeFetchOnboardingPrompts() {
+  const self = this;
+  const tmp = callback((arg0) => {
+    let closure_0 = arg0;
+    let c4 = 0;
+    let c5 = 0;
+    return (function*(arg0) {
+      if (member === 2) {
+        member = 3;
+        HermesBuiltin.throwTypeError();
+      } else if (tmp5 === 3) {
+        if (arg0 === 1) {
+          throw arg1;
+        } else if (arg0 === 2) {
+          let obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
+        } else {
+          return { value: "HermesInternal", done: null };
+        }
+      } else {
+        try {
+          member = 2;
+          let num2 = 0;
+          if (0 === id) {
+            if (arg0 === 1) {
+              member = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              member = 3;
+              obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            } else {
+              let serverPromptToClientPrompt = tmp2;
+              let closure_2 = tmp3;
+              num2 = undefined;
+              closure_2 = undefined;
+              id = id.getId();
+              member = member.getMember(callback, id);
+              let flags;
+              if (member != null) {
+                flags = member.flags;
+              }
+              num2 = flags;
+              const hasFlagResult = callback(outer1_2[12]).hasFlag(num2, outer1_12.COMPLETED_ONBOARDING);
+              num2 = hasFlagResult;
+              const guild = outer1_6.getGuild(tmp49);
+              if (null != guild) {
+                const features = guild.features;
+                if (features.has(outer1_11.GUILD_ONBOARDING)) {
+                  const onboardingPrompts = outer1_7.getOnboardingPrompts(tmp49);
+                  if (!shouldFetchPromptsResult) {
+                    if (onboardingPrompts.length > num2) {
+                      if (onboardingPrompts.every((inOnboarding) => !inOnboarding.inOnboarding)) {
+                        outer1_17(tmp49);
+                        const resolved = Promise.resolve();
+                      } else {
+                        if (!hasFlagResult) {
+                          outer1_15(tmp49);
+                        }
+                        const resolved1 = Promise.resolve();
+                      }
+                      member = 3;
+                    }
+                  }
+                  id = 1;
+                  member = 1;
+                  const obj1 = { value: null, done: false };
+                  obj1[0] = outer1_13(tmp49);
+                  return obj1;
+                }
+              }
+              member = 3;
+              const obj2 = { value: null, done: true };
+              obj2[0] = Promise.resolve();
+              return obj2;
             }
-            resolved = Promise.resolve();
+          } else if (arg0 === 1) {
+            member = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            member = 3;
+            obj = { value: null, done: true };
+            obj[0] = arg1;
+            return obj;
+          } else {
+            closure_2 = arg1;
+            let resolve = globalThis;
+            const _Array = Array;
+            if (!Array.isArray(closure_2)) {
+              if (!num2) {
+                callback2(callback);
+              }
+              member = 3;
+            }
+            callback3(callback);
+            resolve = resolve.Promise.resolve;
+            resolve();
+            const _Promise = resolve.Promise;
           }
-          return resolved;
+        } catch (tmp41) {
+          member = tmp;
+          throw tmp41;
         }
       }
-      const obj2 = yield outer2_14(arg0);
-      const _Array = Array;
-      if (Array.isArray(obj2)) {
-        if (obj2.every((inOnboarding) => !inOnboarding.inOnboarding)) {
-          outer2_17(arg0);
-          let resolved1 = Promise.resolve();
-        }
-        return resolved1;
-      }
-      resolved1 = obj2;
-      if (!hasFlagResult) {
-        outer2_16(arg0);
-        resolved1 = obj2;
-      }
-      shouldFetchPromptsResult = outer2_7.shouldFetchPrompts(arg0);
-    }
+    })();
+  });
+  const _maybeFetchOnboardingPrompts = tmp;
+  const apply = tmp.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
   }
-  return Promise.resolve();
+  return applyArgumentsResult;
 }
 function startOnboarding(guildId) {
-  let obj = importDefault(686);
+  let obj = importDefault(709);
   obj = { type: "GUILD_ONBOARDING_START", guildId };
   obj.dispatch(obj);
 }
 function _trackOnboardingDirectJoin(guildId) {
-  let obj = importDefault(675);
+  let obj = importDefault(698);
   obj = {};
-  const merged = Object.assign(require(4359) /* _createForOfIteratorHelperLoose */.collectGuildAnalyticsMetadata(guildId));
-  obj["step"] = c13;
-  obj["required"] = true;
+  const merged = Object.assign(require(4384) /* collectGuildAnalyticsMetadata */.collectGuildAnalyticsMetadata(guildId));
+  obj.step = c16;
+  obj.required = true;
   obj.track(constants.GUILD_ONBOARDING_STEP_VIEWED, obj);
-  const obj3 = require(4359) /* _createForOfIteratorHelperLoose */;
+  const obj3 = require(4384) /* collectGuildAnalyticsMetadata */;
   obj = {};
-  const obj4 = importDefault(675);
-  const merged1 = Object.assign(require(4359) /* _createForOfIteratorHelperLoose */.collectGuildAnalyticsMetadata(guildId));
-  obj["step"] = c13;
-  obj["skipped"] = false;
-  obj["is_final_step"] = true;
-  obj["in_onboarding"] = true;
+  const obj4 = importDefault(698);
+  const merged1 = Object.assign(require(4384) /* collectGuildAnalyticsMetadata */.collectGuildAnalyticsMetadata(guildId));
+  obj.step = c16;
+  obj.skipped = false;
+  obj.is_final_step = true;
+  obj.in_onboarding = true;
   obj4.track(constants.GUILD_ONBOARDING_STEP_COMPLETED, obj);
 }
-({ AnalyticEvents: closure_9, Endpoints: closure_10, GuildFeatures: closure_11 } = ME);
-let c13 = -2;
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/guild_onboarding/GuildOnboardingPromptsActionCreators.tsx");
+({ AnalyticEvents: c9, Endpoints: c10, GuildFeatures: unpackModuleId } = ME);
+let c16 = -2;
+const result = require("trackCommunicationDisabled").fileFinishedImporting("modules/guild_onboarding/GuildOnboardingPromptsActionCreators.tsx");
 
 export const loadOnboardingPrompts = function loadOnboardingPrompts(guildId) {
-  let obj = importDefault(675);
+  let obj = importDefault(698);
   obj = {};
-  const merged = Object.assign(require(4359) /* _createForOfIteratorHelperLoose */.collectGuildAnalyticsMetadata(guildId));
-  obj["has_new_prompts"] = false;
-  obj["number_of_prompts"] = 0;
+  const merged = Object.assign(require(4384) /* collectGuildAnalyticsMetadata */.collectGuildAnalyticsMetadata(guildId));
+  obj.has_new_prompts = false;
+  obj.number_of_prompts = 0;
   obj.track(constants.GUILD_ONBOARDING_LOADED, obj);
 };
 export { fetchOnboardingPrompts };
-export const maybeFetchOnboardingPrompts = function maybeFetchOnboardingPrompts(guildId) {
-  return _maybeFetchOnboardingPrompts(...arguments);
+export const maybeFetchOnboardingPrompts = function maybeFetchOnboardingPrompts(closure_0) {
+  const self = this;
+  const apply = _maybeFetchOnboardingPrompts.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
 };
 export { startOnboarding };
 export const CONNECTIONS_STEP = -3;

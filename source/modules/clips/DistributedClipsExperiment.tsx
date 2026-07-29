@@ -1,13 +1,14 @@
-// Module ID: 4232
-// Function ID: 36197
+// Module ID: 4256
+// Function ID: 4257
 // Name: apexExperiment
-// Dependencies: [1428, 2]
+// Dependencies: [1452, 2]
 
-// Module 4232 (apexExperiment)
+// Module 4256 (apexExperiment)
 import ApexExperiment from "ApexExperiment";
 
-const obj = { kind: "user", name: "2026-05-distributed-clips", defaultConfig: { enableDistributedClips: false }, variations: { [1]: { enableDistributedClips: true } } };
-const apexExperiment = ApexExperiment.createApexExperiment(obj);
+const obj = { 1: null };
+obj[1] = { enableDistributedClips: true };
+const apexExperiment = ApexExperiment.createApexExperiment({ kind: "user", name: "2026-05-distributed-clips", defaultConfig: { enableDistributedClips: false }, variations: obj });
 const result = require("set").fileFinishedImporting("modules/clips/DistributedClipsExperiment.tsx");
 
 export default apexExperiment;

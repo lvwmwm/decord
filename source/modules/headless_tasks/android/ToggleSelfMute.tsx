@@ -1,10 +1,10 @@
-// Module ID: 16737
-// Function ID: 130366
+// Module ID: 16773
+// Function ID: 16774
 // Name: promise
-// Dependencies: [1348, 16733, 10753, 10773, 2]
+// Dependencies: [1372, 16769, 10777, 10797, 2]
 
-// Module 16737 (promise)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 16773 (promise)
+import ensureGuildLoaded from "ensureGuildLoaded";
 
 const require = arg1;
 const result = require("getMuteStates").fileFinishedImporting("modules/headless_tasks/android/ToggleSelfMute.tsx");

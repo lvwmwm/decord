@@ -1,22 +1,20 @@
-// Module ID: 13105
-// Function ID: 101173
-// Name: items
-// Dependencies: [57, 31, 27, 4157, 33, 4165, 566, 4026, 4166, 1276, 2]
+// Module ID: 13128
+// Function ID: 13129
+// Name: ShinyButton
+// Dependencies: [32, 19, 17, 4181, 21, 4189, 589, 4050, 4190, 1300, 2]
 // Exports: default
 
-// Module 13105 (items)
+// Module 13128 (ShinyButton)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
+import noop from "noop";
 import { AppState } from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
 const require = arg1;
-_createForOfIteratorHelperLoose = { width: 56, height: "500%", transform: null, backgroundColor: "rgba(255,255,255,0.1)", top: "-100%", alignItems: "center" };
 let items = [{ rotate: "30deg" }];
-_createForOfIteratorHelperLoose.transform = items;
-let closure_8 = _createForOfIteratorHelperLoose.createStyles({ shinyButton: { overflow: "hidden" }, shineContainer: { width: "100%", height: "100%", position: "absolute", overflow: "hidden" }, shine: _createForOfIteratorHelperLoose, shineInner: { width: 16, height: "100%", backgroundColor: "rgba(255,255,255,0.1)" } });
+let closure_8 = createCacheKey.createStyles({ shinyButton: { overflow: "hidden" }, shineContainer: { width: "100%", height: "100%", position: "absolute", overflow: "hidden" }, shine: { width: 56, height: "500%", transform: items, backgroundColor: "rgba(255,255,255,0.1)", top: "-100%", alignItems: "center" }, shineInner: { width: 16, height: "100%", backgroundColor: "rgba(255,255,255,0.1)" } });
 let closure_9 = { code: "function ShinyButtonTsx1(){const{width,OFFSCREEN_OFFSET,withRepeat,withSequence,withTiming,withDelay,INITIAL_ANIMATION_DELAY,ANIMATION_DURATION}=this.__closure;if(width==null){return{transform:[{translateX:-OFFSCREEN_OFFSET}]};}return{transform:[{translateX:withRepeat(withSequence(withTiming(-OFFSCREEN_OFFSET,{duration:0},'animate-always'),withDelay(INITIAL_ANIMATION_DELAY,withTiming(width+OFFSCREEN_OFFSET,{duration:ANIMATION_DURATION},'animate-always'))),-1)}]};}" };
 const result = require("get ActivityIndicator").fileFinishedImporting("design/void/ShinyButton/native/ShinyButton.tsx");
 
@@ -24,7 +22,7 @@ export default function ShinyButton(disabled) {
   let c10;
   let c9;
   let _slicedToArray;
-  let result;
+  let noop;
   let importDefault;
   let shineDisabled;
   disabled = disabled.disabled;
@@ -32,10 +30,8 @@ export default function ShinyButton(disabled) {
   if (shineDisabled === undefined) {
     shineDisabled = false;
   }
-  ({ shineStyle: _slicedToArray, shineInnerStyle: result } = disabled);
-  let obj = { style: 0, disabled: 0, submitting: 0, shineDisabled: 0, shineStyle: 0, shineInnerStyle: 0 };
-  Object.setPrototypeOf(null);
-  const merged = Object.assign(disabled, obj);
+  ({ shineStyle: _slicedToArray, shineInnerStyle: noop } = disabled);
+  const merged = Object.assign(disabled, Object.create(null));
   let AppState;
   let first;
   let jsx;
@@ -46,44 +42,41 @@ export default function ShinyButton(disabled) {
   function handleLayout(nativeEvent) {
     callback(nativeEvent.nativeEvent.layout.width);
   }
-  const tmp3 = callback2();
-  AppState = tmp3;
-  const tmp4 = callback(React.useState(null), 2);
-  first = tmp4[0];
-  jsx = tmp4[1];
+  const tmp2 = callback2();
+  AppState = tmp2;
+  const tmp3 = callback(React.useState(null), 2);
+  first = tmp3[0];
+  jsx = tmp3[1];
+  let obj = disabled(shineDisabled[6]);
   let items = [first];
-  callback2 = disabled(shineDisabled[6]).useStateFromStores(items, () => first.useReducedMotion, []);
-  let obj2 = disabled(shineDisabled[6]);
+  callback2 = obj.useStateFromStores(items, () => first.useReducedMotion, []);
   [c9, c10] = callback(React.useState("active" === AppState.currentState), 2);
   const effect = React.useEffect(() => {
     let closure_0 = _undefined.addEventListener("change", (arg0) => {
-      outer1_10("active" === arg0);
+      callback("active" === arg0);
     });
     return () => {
       closure_0.remove();
     };
   }, []);
-  const tmp6 = callback(React.useState("active" === AppState.currentState), 2);
+  const tmp5 = callback(React.useState("active" === AppState.currentState), 2);
   const fn = function p() {
     if (null == first) {
-      let obj = {};
-      obj = { translateX: -100 };
-      const items = [obj];
-      obj.transform = items;
+      let obj = { transform: null };
+      const items = [{ translateX: -100 }];
+      obj[0] = items;
     } else {
-      obj = {};
-      const obj1 = {};
+      obj = { transform: null };
+      obj = { translateX: null };
+      const obj4 = disabled(shineDisabled[7]);
       const obj5 = disabled(shineDisabled[7]);
-      const obj6 = disabled(shineDisabled[7]);
-      const obj2 = { duration: 0 };
-      const obj7 = disabled(shineDisabled[8]);
-      const withTimingResult = disabled(shineDisabled[8]).withTiming(-100, obj2, "animate-always");
-      const obj9 = disabled(shineDisabled[7]);
-      const obj3 = { duration: 2000 };
-      obj1.translateX = obj5.withRepeat(obj6.withSequence(withTimingResult, obj9.withDelay(750, disabled(shineDisabled[8]).withTiming(first + 100, obj3, "animate-always"))), -1);
-      const items1 = [obj1];
-      obj.transform = items1;
-      const obj10 = disabled(shineDisabled[8]);
+      const obj6 = disabled(shineDisabled[8]);
+      const withTimingResult = disabled(shineDisabled[8]).withTiming(-100, { duration: 0 }, "animate-always");
+      const obj7 = disabled(shineDisabled[7]);
+      obj[0] = obj4.withRepeat(obj5.withSequence(withTimingResult, obj7.withDelay(750, disabled(shineDisabled[8]).withTiming(tmp + 100, { duration: 2000 }, "animate-always"))), -1);
+      const items1 = [obj];
+      obj[0] = items1;
+      const obj8 = disabled(shineDisabled[8]);
     }
     return obj;
   };
@@ -93,12 +86,12 @@ export default function ShinyButton(disabled) {
   fn.__initData = c9;
   closure_11 = disabled(shineDisabled[7]).useAnimatedStyle(fn);
   obj = {};
-  let obj3 = disabled(shineDisabled[7]);
+  const obj2 = disabled(shineDisabled[7]);
   const merged1 = Object.assign(merged);
-  let items1 = [disabled.style, tmp3.shinyButton];
-  obj["style"] = items1;
-  obj["disabled"] = disabled;
-  obj["renderShine"] = function renderShine() {
+  let items1 = [disabled.style, tmp2.shinyButton];
+  obj.style = items1;
+  obj.disabled = disabled;
+  obj.renderShine = function renderShine() {
     let tmp = null;
     if (!disabled) {
       tmp = null;
@@ -109,17 +102,18 @@ export default function ShinyButton(disabled) {
           if (!shineDisabled) {
             tmp = null;
             if (c9) {
-              let obj = { onLayout: handleLayout };
+              let obj = { onLayout: null, style: null, children: null };
+              obj[0] = handleLayout;
               const items = [_undefined.shineContainer, closure_11];
-              obj.style = items;
-              obj = {};
+              obj[1] = items;
+              obj = { style: null, children: null };
               const items1 = [_undefined.shine, _slicedToArray];
-              obj.style = items1;
-              obj = {};
-              const items2 = [_undefined.shineInner, result];
-              obj.style = items2;
-              obj.children = callback(outer1_1(shineDisabled[7]).View, obj);
-              obj.children = callback(outer1_1(shineDisabled[7]).View, obj);
+              obj[0] = items1;
+              obj = { style: null };
+              const items2 = [_undefined.shineInner, noop];
+              obj[0] = items2;
+              obj[1] = callback(outer1_1(shineDisabled[7]).View, obj);
+              obj[2] = callback(outer1_1(shineDisabled[7]).View, obj);
               tmp = callback(outer1_1(shineDisabled[7]).View, obj);
             }
           }

@@ -1,16 +1,16 @@
-// Module ID: 14346
-// Function ID: 110023
+// Module ID: 14368
+// Function ID: 14369
 // Name: ChatPreview
-// Dependencies: [31, 27, 33, 4165, 689, 7918, 1874, 8052, 1212, 2557, 9801, 3835, 1273, 8356, 8357, 4161, 2]
+// Dependencies: [19, 17, 21, 4189, 712, 7943, 1898, 8076, 1236, 2581, 9823, 3859, 1297, 8380, 8381, 4185, 2]
 // Exports: default
 
-// Module 14346 (ChatPreview)
-import result from "result";
+// Module 14368 (ChatPreview)
+import noop from "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_5;
+let c5;
 let closure_6;
 const require = arg1;
 function ChatPreview(arg0) {
@@ -20,50 +20,53 @@ function ChatPreview(arg0) {
   let user;
   ({ user, guildId } = arg0);
   ({ displayName, displayNameStyles } = arg0);
-  const tmp = _createForOfIteratorHelperLoose();
-  let obj = { style: tmp.chatContainer, pointerEvents: "none" };
+  const tmp = createCacheKey();
+  let obj = { style: tmp.chatContainer, pointerEvents: "none", children: null };
   const memo = React.useMemo(() => {
-    const obj = outer1_0(outer1_2[11]);
+    const obj = callback(table[11]);
     return obj.calendarFormat(new Date(), true);
   }, []);
-  obj = { user, size: require(1273) /* Button */.AvatarSizes.NORMAL, guildId };
-  const items = [callback(require(1273) /* Button */.Avatar, obj), ];
-  obj = { style: tmp.chatContent };
-  const obj1 = { style: tmp.chatHeader };
-  const obj2 = { userId: user.id, guildId, userName: displayName, variant: "text-md/semibold", effectDisplayType: require(8357) /* DisplayNameStyleColorPreset */.EffectDisplayType.PLAIN, lineClamp: 1, pendingDisplayNameStyles: displayNameStyles };
-  const items1 = [callback(importDefault(8356), obj2), ];
-  const obj3 = { variant: "text-xs/medium", color: "text-muted", style: tmp.chatTimestamp, children: memo };
-  items1[1] = callback(require(4161) /* Text */.Text, obj3);
-  obj1.children = items1;
+  obj = { user, size: null, guildId: null };
+  obj[1] = require(1297) /* Button */.AvatarSizes.NORMAL;
+  obj[2] = guildId;
+  const items = [callback(require(1297) /* Button */.Avatar, obj), ];
+  obj = { style: tmp.chatContent, children: null };
+  const obj1 = { style: tmp.chatHeader, children: null };
+  const obj2 = { userId: user.id, guildId, userName: displayName, variant: "text-md/semibold", effectDisplayType: null, lineClamp: 1, pendingDisplayNameStyles: null };
+  obj2[4] = require(8381) /* DisplayNameStyleColorPreset */.EffectDisplayType.PLAIN;
+  obj2[6] = displayNameStyles;
+  const items1 = [callback(importDefault(8380), obj2), callback(require(4185) /* Text */.Text, { variant: "text-xs/medium", color: "text-muted", style: tmp.chatTimestamp, children: memo })];
+  obj1[1] = items1;
   const items2 = [callback2(View, obj1), ];
-  const obj4 = { variant: "text-md/normal", color: "text-default", style: tmp.chatMessageText };
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj4.children = intl.string(importDefault(2557).h5Cuej);
-  items2[1] = callback(require(4161) /* Text */.Text, obj4);
-  obj.children = items2;
+  const obj4 = { variant: "text-md/normal", color: "text-default", style: tmp.chatMessageText, children: null };
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj4[3] = intl.string(importDefault(2581).h5Cuej);
+  items2[1] = callback(require(4185) /* Text */.Text, obj4);
+  obj[1] = items2;
   items[1] = callback2(View, obj);
-  obj.children = items;
+  obj[2] = items;
   return callback2(View, obj);
 }
-({ jsx: closure_5, jsxs: closure_6 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { marginBottom: require("_createForOfIteratorHelperLoose").space.PX_24, alignItems: "center", alignSelf: "center", width: "100%", maxWidth: 360 };
-_createForOfIteratorHelperLoose.previewSection = _createForOfIteratorHelperLoose;
-let obj1 = { marginTop: -18, alignSelf: "flex-end", width: 260, borderRadius: require("_createForOfIteratorHelperLoose").radii.sm, borderWidth: 1, borderColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_MOD_SUBTLE };
-_createForOfIteratorHelperLoose.chatPreviewWrapper = obj1;
-_createForOfIteratorHelperLoose.nameplatePreviewWrapper = { marginTop: -6, width: 260 };
-_createForOfIteratorHelperLoose.chatContainer = { flexDirection: "row", borderRadius: require("_createForOfIteratorHelperLoose").radii.sm, padding: require("_createForOfIteratorHelperLoose").space.PX_16, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW, gap: require("_createForOfIteratorHelperLoose").space.PX_12 };
-_createForOfIteratorHelperLoose.chatContent = { flex: 1 };
-_createForOfIteratorHelperLoose.chatHeader = { flexDirection: "row", alignItems: "baseline", gap: 6 };
-_createForOfIteratorHelperLoose.chatTimestamp = { marginTop: -8 };
-_createForOfIteratorHelperLoose.chatMessageText = {};
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-let obj2 = { flexDirection: "row", borderRadius: require("_createForOfIteratorHelperLoose").radii.sm, padding: require("_createForOfIteratorHelperLoose").space.PX_16, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW, gap: require("_createForOfIteratorHelperLoose").space.PX_12 };
+({ jsx: c5, jsxs: closure_6 } = jsxProd);
+createCacheKey = { previewSection: null, chatPreviewWrapper: null, nameplatePreviewWrapper: null, chatContainer: null, chatContent: null, chatHeader: null, chatTimestamp: null, chatMessageText: null };
+createCacheKey = { marginBottom: require("Themes").space.PX_24, alignItems: "center", alignSelf: "center", width: "100%", maxWidth: 360 };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { marginTop: -18, alignSelf: "flex-end", width: 260, borderRadius: require("Themes").radii.sm, borderWidth: 1, borderColor: require("Themes").colors.BACKGROUND_MOD_SUBTLE };
+createCacheKey[2] = { marginTop: -6, width: 260 };
+let obj1 = { marginTop: -18, alignSelf: "flex-end", width: 260, borderRadius: require("Themes").radii.sm, borderWidth: 1, borderColor: require("Themes").colors.BACKGROUND_MOD_SUBTLE };
+createCacheKey[3] = { flexDirection: "row", borderRadius: require("Themes").radii.sm, padding: require("Themes").space.PX_16, backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW, gap: require("Themes").space.PX_12 };
+createCacheKey[4] = { flex: 1 };
+createCacheKey[5] = { flexDirection: "row", alignItems: "baseline", gap: 6 };
+createCacheKey[6] = { marginTop: -8 };
+createCacheKey[7] = {};
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let obj2 = { flexDirection: "row", borderRadius: require("Themes").radii.sm, padding: require("Themes").space.PX_16, backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW, gap: require("Themes").space.PX_12 };
 const result = require("jsxProd").fileFinishedImporting("modules/display_name_styles/native/DisplayNameStylesEditPreview.tsx");
 
 export default function DisplayNameStylesEditPreview(selectedEffectId) {
   let displayName;
   let guildId;
+  let guildNameplate;
   let pendingNameplate;
   let selectedFontId;
   let user;
@@ -71,36 +74,36 @@ export default function DisplayNameStylesEditPreview(selectedEffectId) {
   ({ user, displayName, guildId, selectedFontId } = selectedEffectId);
   selectedEffectId = selectedEffectId.selectedEffectId;
   const selectedColors = selectedEffectId.selectedColors;
-  const tmp = _createForOfIteratorHelperLoose();
+  const tmp = createCacheKey();
   let obj = selectedFontId(selectedColors[5]);
   const guildMemberAndUserPendingNameplate = obj.useGuildMemberAndUserPendingNameplate(user, guildId);
-  ({ userNameplate, pendingNameplate } = guildMemberAndUserPendingNameplate);
+  ({ pendingNameplate, userNameplate, guildNameplate } = guildMemberAndUserPendingNameplate);
   let obj1 = selectedFontId(selectedColors[6]);
-  const nameplateData = obj1.getNameplateData(guildMemberAndUserPendingNameplate.guildNameplate);
+  let nameplateData = obj1.getNameplateData(guildNameplate);
   const items = [selectedFontId, selectedEffectId, selectedColors];
   const memo = React.useMemo(() => ({ fontId: selectedFontId, effectId: selectedEffectId, colors: selectedColors }), items);
-  obj = { style: tmp.previewSection };
-  obj = { user, displayName, guildId, displayNameStylesOverride: memo, compact: true, hideFrame: true, maxWidth: 320 };
+  obj = { style: tmp.previewSection, children: null };
+  obj = { user, displayName, guildId, displayNameStylesOverride: memo, compact: true, hideFrame: true, maxWidth: 320, accessibilityLabel: null };
   const intl = selectedFontId(selectedColors[8]).intl;
-  obj.accessibilityLabel = intl.string(selectedEffectId(selectedColors[9]).zoh6MT);
+  obj[7] = intl.string(selectedEffectId(selectedColors[9]).zoh6MT);
   const items1 = [callback(selectedEffectId(selectedColors[7]), obj), , ];
   obj1 = { style: tmp.chatPreviewWrapper, children: callback(ChatPreview, { user, displayName, displayNameStyles: memo, guildId }) };
   items1[1] = callback(View, obj1);
-  const obj2 = { style: tmp.nameplatePreviewWrapper };
-  const obj3 = { user, nameplate: pendingNameplate };
-  let tmp11;
+  const obj2 = { style: tmp.nameplatePreviewWrapper, children: null };
+  const obj3 = { user, nameplate: pendingNameplate, nameplateData: null, guildId: null, pendingDisplayNameStyles: null, pendingGlobalName: null };
+  let tmp9;
   if (null == pendingNameplate) {
-    if (null != nameplateData) {
-      userNameplate = nameplateData;
+    if (nameplateData == null) {
+      nameplateData = userNameplate;
     }
-    tmp11 = userNameplate;
+    tmp9 = nameplateData;
   }
-  obj3.nameplateData = tmp11;
-  obj3.guildId = guildId;
-  obj3.pendingDisplayNameStyles = memo;
-  obj3.pendingGlobalName = displayName;
-  obj2.children = callback(selectedFontId(selectedColors[10]).NameplatePreview, obj3);
+  obj3[2] = tmp9;
+  obj3[3] = guildId;
+  obj3[4] = memo;
+  obj3[5] = displayName;
+  obj2[1] = callback(selectedFontId(selectedColors[10]).NameplatePreview, obj3);
   items1[2] = callback(View, obj2);
-  obj.children = items1;
+  obj[1] = items1;
   return closure_6(View, obj);
 };

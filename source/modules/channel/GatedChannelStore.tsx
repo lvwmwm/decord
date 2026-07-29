@@ -1,133 +1,35 @@
-// Module ID: 1909
-// Function ID: 21491
-// Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 1910, 1352, 1912, 1348, 1918, 1911, 1838, 1850, 653, 3784, 3785, 3786, 566, 686, 2]
+// Module ID: 1933
+// Function ID: 1934
+// Name: isSubscriptionGated
+// Dependencies: [1934, 1376, 1936, 1372, 1942, 1935, 1862, 1874, 676, 3808, 3809, 3810, 589, 709, 2]
 
-// Module 1909 (_isNativeReflectConstruct)
-import _callSuper from "_callSuper";
-import GuildRoleRecordTypeTag from "GuildRoleRecordTypeTag";
-import isChannelAccessDeniedBy from "isChannelAccessDeniedBy";
+// Module 1933 (isSubscriptionGated)
 import initialize from "initialize";
-import dispatcher from "dispatcher";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import { THREAD_CHANNEL_TYPES } from "_callSuper";
+import { THREAD_CHANNEL_TYPES } from "createChannelRecord";
 import { hasPermission } from "GuildRoleRecordTypeTag";
-import closure_10 from "_isNativeReflectConstruct";
-import closure_11 from "_isNativeReflectConstruct";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import closure_13 from "_createForOfIteratorHelperLoose";
-import closure_14 from "_isNativeReflectConstruct";
+import ensureGuildLoaded from "ensureGuildLoaded";
+import trackCommunicationDisabled from "trackCommunicationDisabled";
+import createGuildRoleRecordFromRust from "createGuildRoleRecordFromRust";
+import createGuildRecordFromRust from "createGuildRecordFromRust";
+import mergeGuildAvatar from "mergeGuildAvatar";
 import ME from "ME";
-import set from "_possibleConstructorReturn";
+import { Store } from "initialize";
+import set from "GuildRoleRecordTypeTag";
 
-let closure_15;
-let closure_16;
+let c10;
+let unpackModuleId;
 const require = arg1;
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
-  }
-  const result = _isNativeReflectConstruct();
-}
-function _createForOfIteratorHelperLoose(iterable) {
-  let closure_0 = iterable;
-  iterable = "undefined" !== typeof Symbol;
-  if (iterable) {
-    const _Symbol = Symbol;
-    iterable = iterable[Symbol.iterator];
-  }
-  if (!iterable) {
-    iterable = iterable[Symbol.iterator];
-  }
-  if (iterable) {
-    const iter = iterable.call(iterable);
-    const next = iter.next;
-    return next.bind(iter);
-  } else {
-    const _Array = Array;
-    let tmp = iterable;
-    if (!Array.isArray(iterable)) {
-      let tmp2;
-      if (iterable) {
-        if ("string" === typeof iterable) {
-          tmp2 = _arrayLikeToArray(iterable, undefined);
-        } else {
-          const toString = {}.toString;
-          const substr = toString.call(iterable).slice(8, -1);
-          let name = substr;
-          if (tmp3) {
-            name = iterable.constructor.name;
-          }
-          if ("Map" !== name) {
-            if ("Set" !== name) {
-              if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(iterable, undefined);
-              } else {
-                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
-              }
-            }
-            tmp2 = arr;
-          }
-          const _Array2 = Array;
-          arr = Array.from(iterable);
-          const callResult = toString.call(iterable);
-          tmp3 = "Object" === substr && iterable.constructor;
-        }
-      }
-      tmp = tmp2;
-      if (!tmp2) {
-        const _TypeError = TypeError;
-        const typeError = new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
-        throw typeError;
-      }
-    }
-    if (tmp) {
-      closure_0 = tmp;
-    }
-    let c1 = 0;
-    return () => {
-      if (closure_1 >= length.length) {
-        let obj = { done: true };
-      } else {
-        obj = { done: false };
-        closure_1 = tmp3 + 1;
-        obj.value = length[+closure_1];
-      }
-      return obj;
-    };
-  }
-}
-function _arrayLikeToArray(arg0, arg1) {
-  let length;
-  if (tmp) {
-    length = arg0.length;
-  }
-  const ArrayResult = Array(length);
-  for (let num = 0; num < length; num = num + 1) {
-    ArrayResult[num] = arg0[num];
-  }
-  return ArrayResult;
-}
 function isSubscriptionGated(role) {
   let guildId;
   let isPreviewingRoles;
   role = role.role;
   ({ guildId, isPreviewingRoles } = role);
-  const tmp = !require(3784) /* isSubscriptionRole */.isSubscriptionRole(role);
-  let tmp2 = !tmp;
-  if (!tmp) {
-    let tmp4 = !tmp3;
-    if (!isPreviewingRoles) {
-      let tmp8;
-      if (null != role) {
-        tmp8 = role;
-      }
-      const tmp9 = !require(3784) /* isSubscriptionRole */.isSubscriptionRoleAvailableForPurchase(tmp8);
-      let tmp10 = !tmp9;
-      if (tmp9) {
+  let isSubscriptionRoleResult = require(3808) /* isSubscriptionRole */.isSubscriptionRole(role);
+  if (isSubscriptionRoleResult) {
+    let tmp4 = isPreviewingRoles;
+    if (!tmp4) {
+      let result = require(3808) /* isSubscriptionRole */.isSubscriptionRoleAvailableForPurchase(role);
+      if (!result) {
         let flag = false;
         if (null != role) {
           currentUser = currentUser.getCurrentUser();
@@ -142,88 +44,100 @@ function isSubscriptionGated(role) {
             flag = hasItem;
           }
         }
-        tmp10 = flag;
+        result = flag;
       }
-      tmp4 = tmp10;
-      const obj2 = require(3784) /* isSubscriptionRole */;
+      tmp4 = result;
+      const tmp6 = role;
+      const tmpResult = require(3808) /* isSubscriptionRole */;
     }
-    tmp2 = tmp4;
+    isSubscriptionRoleResult = tmp4;
   }
-  return tmp2;
+  return isSubscriptionRoleResult;
 }
 function isChannelSubscriptionGatedInGuild(channel, guild) {
   const features = guild.features;
   if (!features.has(constants2.CREATOR_MONETIZABLE)) {
     const features2 = guild.features;
-    if (!features2.has(constants2.CREATOR_MONETIZABLE_PROVISIONAL)) {
+    if (!features2.has(tmp.CREATOR_MONETIZABLE_PROVISIONAL)) {
       return false;
     }
   }
   const isViewingServerShopResult = viewingServerShop.isViewingServerShop(guild.id);
   const keys = Object.keys(channel.permissionOverwrites);
-  let num = 0;
-  if (0 < keys.length) {
-    while (true) {
-      let tmp3 = keys[num];
-      let tmp4 = store;
-      let tmp5 = isSubscriptionGated;
-      let obj = { guildId: guild.id, role: store.getRole(guild.id, tmp3), isPreviewingRoles: isViewingServerShopResult };
-      if (isSubscriptionGated(obj)) {
-        let tmp6 = require;
-        let tmp7 = dependencyMap;
-        let obj2 = require(3785) /* isChannelAccessDeniedBy */;
-        if (obj2.isChannelAccessGrantedBy(channel, channel.permissionOverwrites[tmp3])) {
-          break;
-        }
-      }
-      num = num + 1;
-    }
-    return true;
-  }
-  const tmp8 = !hasPermission(store.getEveryoneRole(guild), constants.VIEW_CHANNEL);
-  if (tmp8) {
-    if (!obj3.isChannelAccessDeniedBy(channel, channel.permissionOverwrites[guild.id])) {
-      const tmp11 = _createForOfIteratorHelperLoose(store.getSortedRoles(guild.id));
-      let iter = tmp11();
-      if (!iter.done) {
-        while (true) {
-          let value = iter.value;
-          let tmp12 = isSubscriptionGated;
-          obj = { guildId: guild.id, role: value, isPreviewingRoles: isViewingServerShopResult };
-          if (isSubscriptionGated(obj)) {
-            let tmp13 = require;
-            let tmp14 = dependencyMap;
-            let obj5 = require(3785) /* isChannelAccessDeniedBy */;
-            if (obj5.hasViewChannelPermission(value)) {
-              break;
-            }
-          }
-          let iter2 = tmp11();
-          iter = iter2;
-        }
+  const iter = keys[Symbol.iterator]();
+  const nextResult = iter.next();
+  while (iter !== undefined) {
+    let tmp6 = store2;
+    let tmp7 = store2;
+    let tmp5 = nextResult;
+    let tmp8 = isSubscriptionGated;
+    let obj = { guildId: null, role: null, isPreviewingRoles: null };
+    obj[0] = guild.id;
+    obj[1] = store2.getRole(guild.id, nextResult);
+    obj[2] = isViewingServerShopResult;
+    if (isSubscriptionGated(obj)) {
+      let tmp9 = nextResult;
+      let tmp10 = require;
+      let tmp11 = dependencyMap;
+      let obj2 = require(3809) /* hasViewChannelPermission */;
+      if (obj2.isChannelAccessGrantedBy(channel, channel.permissionOverwrites[tmp5])) {
+        let tmp12 = iter;
+        iter.return();
+        let flag2 = true;
         return true;
+      }
+    }
+    continue;
+  }
+  const obj3 = store2;
+  tmp = constants2;
+  const tmp13 = store2;
+  const tmp14 = hasPermission(store2.getEveryoneRole(guild), constants.VIEW_CHANNEL);
+  if (!tmp14) {
+    if (!obj4.isChannelAccessDeniedBy(channel, channel.permissionOverwrites[guild.id])) {
+      const sortedRoles = obj3.getSortedRoles(guild.id);
+      for (const item10077 of sortedRoles) {
+        let tmp20 = isSubscriptionGated;
+        obj = { guildId: null, role: null, isPreviewingRoles: null };
+        obj[0] = arg1.id;
+        obj[1] = item10077;
+        obj[2] = isViewingServerShopResult;
+        let tmp19 = item10077;
+        if (isSubscriptionGated(obj)) {
+          let tmp21 = require;
+          let tmp22 = dependencyMap;
+          let obj7 = require(3809) /* hasViewChannelPermission */;
+          let tmp23 = item10077;
+          if (obj7.hasViewChannelPermission(tmp19)) {
+            let tmp24 = obj5;
+            obj5.return();
+            let flag3 = true;
+            return true;
+          }
+        }
+        continue;
       }
     }
   }
   return false;
 }
 function computeForChannel(guild_id, id) {
-  if (null == table[guild_id]) {
+  if (null == dependencyMap[guild_id]) {
     return false;
   } else {
-    channel = channel.getChannel(id);
+    const channel = store.getChannel(id);
     if (null == channel) {
       return false;
     } else {
-      guild = guild.getGuild(channel.getGuildId());
+      const guild = store3.getGuild(channel.getGuildId());
       if (null == guild) {
         return false;
       } else {
         const hasItem = obj.has(id);
-        const tmp6 = isChannelSubscriptionGatedInGuild(channel, guild);
-        let flag = hasItem !== tmp6;
+        const tmp7 = isChannelSubscriptionGatedInGuild(channel, guild);
+        let flag = hasItem !== tmp7;
         if (flag) {
-          if (tmp6) {
+          if (tmp7) {
             obj.add(id);
             flag = true;
           } else {
@@ -237,7 +151,7 @@ function computeForChannel(guild_id, id) {
   }
 }
 function handleInitialize() {
-  let closure_17 = {};
+  let closure_12 = {};
   set.clear();
 }
 function handleGuildUpdate(arg0) {
@@ -250,129 +164,118 @@ function handleChannelUpdate(channel) {
   channel = channel.channel;
   let tmp = null != channel.guild_id;
   if (tmp) {
-    tmp = computeForChannel(channel.guild_id, channel.id);
+    const id = channel.id;
+    let flag = false;
+    if (null != dependencyMap[channel.guild_id]) {
+      channel = store.getChannel(id);
+      flag = false;
+      if (null != channel) {
+        const guild = store3.getGuild(channel.getGuildId());
+        flag = false;
+        if (null != guild) {
+          const hasItem = obj.has(id);
+          const tmp8 = isChannelSubscriptionGatedInGuild(channel, guild);
+          let flag2 = hasItem !== tmp8;
+          if (flag2) {
+            if (!tmp8) {
+              obj.delete(id);
+              flag2 = true;
+            }
+          }
+          obj.add(id);
+          flag2 = true;
+        }
+      }
+    }
+    tmp = flag;
   }
   return tmp;
 }
-({ Permissions: closure_15, GuildFeatures: closure_16 } = ME);
-let closure_17 = {};
+({ Permissions: c10, GuildFeatures: unpackModuleId } = ME);
+let closure_12 = {};
 let set = new Set();
-let tmp4 = ((Store) => {
-  class GatedChannelStore {
-    constructor() {
-      self = this;
-      tmp = outer1_2(this, GatedChannelStore);
-      obj = outer1_5(GatedChannelStore);
-      tmp2 = outer1_4;
-      if (outer1_19()) {
-        tmp6 = globalThis;
-        _Reflect = Reflect;
-        tmp7 = outer1_5;
-        tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, outer1_5(self).constructor);
-      } else {
-        tmp3 = arguments;
-        tmp4 = arguments;
-        constructResult = obj(...arguments);
+class GatedChannelStore extends Store {
+}
+const prototype = GatedChannelStore.prototype;
+prototype["initialize"] = function initialize() {
+  this.waitFor(ensureGuildLoaded, trackCommunicationDisabled, createGuildRoleRecordFromRust, createGuildRecordFromRust, initialize, mergeGuildAvatar);
+};
+prototype["isChannelGated"] = function isChannelGated(guildId, channelId) {
+  if (null == guildId) {
+    return false;
+  } else {
+    let obj = dependencyMap[guildId];
+    if (null == obj) {
+      const guild = store3.getGuild(guildId);
+      if (null != guild) {
+        const _Set = Set;
+        const set = new Set();
+        dependencyMap[guildId] = set;
+        const features = guild.features;
+        if (features.has(constants2.ROLE_SUBSCRIPTIONS_ENABLED)) {
+          const mutableGuildChannelsForGuild = store.getMutableGuildChannelsForGuild(guildId);
+          for (const key10008 in mutableGuildChannelsForGuild) {
+            let tmp17 = key10008;
+            let tmp18 = mutableGuildChannelsForGuild[key10008];
+            let tmp19 = isChannelSubscriptionGatedInGuild;
+            if (!isChannelSubscriptionGatedInGuild(tmp18, guild)) {
+              continue;
+            } else {
+              let addResult = set.add(tmp18.id);
+              continue;
+            }
+            continue;
+          }
+        }
       }
-      return tmp2(self, constructResult);
+      obj = dependencyMap[guildId];
+    }
+    let hasItem = null != obj;
+    if (hasItem) {
+      hasItem = obj.has(channelId);
+    }
+    return hasItem;
+  }
+};
+prototype["isChannelGatedAndVisible"] = function isChannelGatedAndVisible(c0, id) {
+  let tmp = null != c0;
+  if (tmp) {
+    const self = this;
+    let isChannelGatedResult = this.isChannelGated(c0, id);
+    if (isChannelGatedResult) {
+      isChannelGatedResult = !set.has(c0);
+    }
+    tmp = isChannelGatedResult;
+  }
+  return tmp;
+};
+prototype["isChannelOrThreadParentGated"] = function isChannelOrThreadParentGated(guild_id, channel_id) {
+  if (null == guild_id) {
+    return false;
+  } else {
+    const self = this;
+    if (this.isChannelGated(guild_id, channel_id)) {
+      return true;
+    } else {
+      const channel = store.getChannel(channel_id);
+      let tmp4 = null == channel || null == channel.parent_id;
+      if (!tmp4) {
+        let type;
+        if (channel != null) {
+          type = channel.type;
+        }
+        tmp4 = !THREAD_CHANNEL_TYPES.has(type);
+      }
+      let result = !tmp4;
+      if (!tmp4) {
+        result = self.isChannelOrThreadParentGated(guild_id, channel.parent_id);
+      }
+      return result;
     }
   }
-  callback2(GatedChannelStore, Store);
-  let obj = {
-    key: "initialize",
-    value() {
-      this.waitFor(outer1_10, outer1_11, outer1_12, outer1_13, outer1_7, outer1_14);
-    }
-  };
-  const items = [obj, , , ];
-  obj = {
-    key: "isChannelGated",
-    value(guildId) {
-      if (null == guildId) {
-        return false;
-      } else {
-        let obj = outer1_17[guildId];
-        if (null == obj) {
-          const guild = outer1_13.getGuild(guildId);
-          if (null != guild) {
-            const _Set = Set;
-            const set = new Set();
-            outer1_17[guildId] = set;
-            const features = guild.features;
-            if (features.has(outer1_16.ROLE_SUBSCRIPTIONS_ENABLED)) {
-              const mutableGuildChannelsForGuild = outer1_10.getMutableGuildChannelsForGuild(guildId);
-              for (const key10008 in mutableGuildChannelsForGuild) {
-                let tmp17 = key10008;
-                let tmp18 = mutableGuildChannelsForGuild[key10008];
-                let tmp19 = outer1_23;
-                if (!outer1_23(tmp18, guild)) {
-                  continue;
-                } else {
-                  let addResult = set.add(tmp18.id);
-                  continue;
-                }
-                continue;
-              }
-            }
-          }
-          obj = outer1_17[guildId];
-        }
-        let hasItem = null != obj;
-        if (hasItem) {
-          hasItem = obj.has(arg1);
-        }
-        return hasItem;
-      }
-    }
-  };
-  items[1] = obj;
-  obj = {
-    key: "isChannelGatedAndVisible",
-    value(arg0, arg1) {
-      const self = this;
-      let tmp = null != arg0;
-      if (tmp) {
-        let isChannelGatedResult = self.isChannelGated(arg0, arg1);
-        if (isChannelGatedResult) {
-          isChannelGatedResult = !outer1_18.has(arg0);
-        }
-        tmp = isChannelGatedResult;
-      }
-      return tmp;
-    }
-  };
-  items[2] = obj;
-  items[3] = {
-    key: "isChannelOrThreadParentGated",
-    value(arg0, channelId) {
-      const self = this;
-      if (null == arg0) {
-        return false;
-      } else if (self.isChannelGated(arg0, channelId)) {
-        return true;
-      } else {
-        const channel = outer1_10.getChannel(channelId);
-        let tmp3 = null == channel || null == channel.parent_id;
-        if (!tmp3) {
-          let type;
-          if (null != channel) {
-            type = channel.type;
-          }
-          tmp3 = !outer1_8.has(type);
-        }
-        let result = !tmp3;
-        if (!tmp3) {
-          result = self.isChannelOrThreadParentGated(arg0, channel.parent_id);
-        }
-        return result;
-      }
-    }
-  };
-  return callback(GatedChannelStore, items);
-})(require("initialize").Store);
-tmp4.displayName = "GatedChannelStore";
-tmp4 = new tmp4(require("dispatcher"), {
+};
+GatedChannelStore.displayName = "GatedChannelStore";
+const gatedChannelStore = new GatedChannelStore(require("dispatcher"), {
   CONNECTION_OPEN: handleInitialize,
   OVERLAY_INITIALIZE: handleInitialize,
   CACHE_LOADED_LAZY: handleInitialize,
@@ -386,31 +289,24 @@ tmp4 = new tmp4(require("dispatcher"), {
   IMPERSONATE_STOP: handleGuildRoleUpdate,
   CHANNEL_CREATE: handleChannelUpdate,
   CHANNEL_DELETE: handleChannelUpdate,
-  CHANNEL_UPDATES: function handleChannelUpdates(channels) {
-    let iter3;
-    const tmp = _createForOfIteratorHelperLoose(channels.channels);
-    const iter = tmp();
-    let iter2 = iter;
+  CHANNEL_UPDATES: function handleChannelUpdates(arg0) {
     let flag = false;
-    let flag2 = false;
-    if (!iter.done) {
-      do {
-        let value = iter2.value;
-        let tmp2 = flag;
-        if (null != value.guild_id) {
-          let tmp3 = computeForChannel;
-          if (computeForChannel(value.guild_id, value.id)) {
-            flag = true;
-          }
-          tmp2 = flag;
-        }
-        iter3 = tmp();
-        flag = tmp2;
-        iter2 = iter3;
-        flag2 = tmp2;
-      } while (!iter3.done);
+    const iter = arg0.channels[Symbol.iterator]();
+    const nextResult = iter.next();
+    while (iter !== undefined) {
+      let tmp2 = nextResult;
+      let tmp3 = null != nextResult.guild_id;
+      if (tmp3) {
+        let tmp4 = computeForChannel;
+        let tmp5 = nextResult;
+        tmp3 = computeForChannel(tmp2.guild_id, tmp2.id);
+      }
+      if (tmp3) {
+        flag = true;
+      }
+      continue;
     }
-    return flag2;
+    return flag;
   },
   GUILD_ROLE_SUBSCRIPTIONS_FETCH_RESTRICTIONS_SUCCESS: function handleRoleSubscriptionsRestrictionsUpdate(guildId) {
     guildId = guildId.guildId;
@@ -426,4 +322,4 @@ tmp4 = new tmp4(require("dispatcher"), {
 });
 let result = set.fileFinishedImporting("modules/channel/GatedChannelStore.tsx");
 
-export default tmp4;
+export default gatedChannelStore;

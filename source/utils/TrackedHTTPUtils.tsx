@@ -1,76 +1,263 @@
-// Module ID: 4977
-// Function ID: 42486
-// Name: makeRequest
-// Dependencies: [29, 675, 507, 2]
+// Module ID: 4999
+// Function ID: 5000
+// Dependencies: [109, 698, 530, 2]
 
-// Module 4977 (makeRequest)
+// Module 4999
 import _objectWithoutProperties from "_objectWithoutProperties";
 
 const require = arg1;
-function makeRequest(arg0, trackedActionData, request_method) {
-  let closure_0 = arg0;
-  trackedActionData = trackedActionData.trackedActionData;
-  const tmp = obj(trackedActionData, closure_2);
-  closure_2 = tmp;
-  obj = { url: tmp.url, request_method };
-  return new Promise((arg0, arg1) => {
-    const callback = arg0;
-    let closure_1 = arg1;
-    const promise = callback(closure_2);
-    callback(closure_2).then((status) => {
-      let properties = lib.properties;
-      if ("function" === typeof lib.properties) {
-        properties = lib.properties(status);
-      }
-      let obj = callback(trackedActionData[1]);
-      obj = { status_code: status.status };
-      const merged = Object.assign(outer1_3);
-      const merged1 = Object.assign(properties);
-      obj.trackNetworkAction(lib.event, obj);
-      callback(status);
-    }).catch((status) => {
-      let properties = lib.properties;
-      if ("function" === typeof lib.properties) {
-        properties = lib.properties(status);
-      }
-      let obj = callback(trackedActionData[1]);
-      obj = { status_code: status.status };
-      const body = status.body;
-      let code;
-      if (null != body) {
-        code = body.code;
-      }
-      obj.error_code = code;
-      const body2 = status.body;
-      let message;
-      if (null != body2) {
-        message = body2.message;
-      }
-      obj.error_message = message;
-      const merged = Object.assign(outer1_3);
-      const merged1 = Object.assign(properties);
-      obj.trackNetworkAction(lib.event, obj);
-      lib(status);
-    });
-  });
-}
 let closure_2 = ["trackedActionData"];
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("utils/TrackedHTTPUtils.tsx");
+const result = require("sendRequest").fileFinishedImporting("utils/TrackedHTTPUtils.tsx");
 
 export default {
-  get(arg0) {
-    return makeRequest(require(507) /* _isNativeReflectConstruct */.HTTP.get, arg0, "get");
+  get(trackedActionData) {
+    get = get(trackedActionData[2]).HTTP.get;
+    trackedActionData = undefined;
+    let c2;
+    let callback;
+    trackedActionData = trackedActionData.trackedActionData;
+    const tmp = callback(trackedActionData, c2);
+    c2 = tmp;
+    callback = { url: tmp.url, request_method: "get" };
+    return new Promise((arg0, arg1) => {
+      const del = arg0;
+      let closure_1 = arg1;
+      const promise = del(c2);
+      del(c2).then((status) => {
+        let obj = lib;
+        let properties = lib.properties;
+        if (typeof lib.properties !== "_") {
+          properties = obj.properties(status);
+        }
+        obj = { status_code: status.status };
+        const merged = Object.assign(outer1_3);
+        const merged1 = Object.assign(properties);
+        del(trackedActionData[1]).trackNetworkAction(obj.event, obj);
+        callback(status);
+      }).catch((status) => {
+        let obj = lib;
+        let properties = lib.properties;
+        if (typeof lib.properties !== "_") {
+          properties = obj.properties(status);
+        }
+        obj = { status_code: status.status, error_code: null, error_message: null };
+        const body = status.body;
+        let code;
+        if (body != null) {
+          code = body.code;
+        }
+        obj[1] = code;
+        const body2 = status.body;
+        let message;
+        if (body2 != null) {
+          message = body2.message;
+        }
+        obj[2] = message;
+        const merged = Object.assign(outer1_3);
+        const merged1 = Object.assign(properties);
+        del(trackedActionData[1]).trackNetworkAction(obj.event, obj);
+        lib(status);
+      });
+    });
   },
-  post(sendMessageOptionsForReply, responseHandler) {
-    return makeRequest(require(507) /* _isNativeReflectConstruct */.HTTP.post, sendMessageOptionsForReply, "post");
+  post(trackedActionData, responseHandler) {
+    post = post(trackedActionData[2]).HTTP.post;
+    trackedActionData = undefined;
+    let c2;
+    let callback;
+    trackedActionData = trackedActionData.trackedActionData;
+    const tmp = callback(trackedActionData, c2);
+    c2 = tmp;
+    callback = { url: tmp.url, request_method: "post" };
+    return new Promise((arg0, arg1) => {
+      const del = arg0;
+      let closure_1 = arg1;
+      const promise = del(c2);
+      del(c2).then((status) => {
+        let obj = lib;
+        let properties = lib.properties;
+        if (typeof lib.properties !== "_") {
+          properties = obj.properties(status);
+        }
+        obj = { status_code: status.status };
+        const merged = Object.assign(outer1_3);
+        const merged1 = Object.assign(properties);
+        del(trackedActionData[1]).trackNetworkAction(obj.event, obj);
+        callback(status);
+      }).catch((status) => {
+        let obj = lib;
+        let properties = lib.properties;
+        if (typeof lib.properties !== "_") {
+          properties = obj.properties(status);
+        }
+        obj = { status_code: status.status, error_code: null, error_message: null };
+        const body = status.body;
+        let code;
+        if (body != null) {
+          code = body.code;
+        }
+        obj[1] = code;
+        const body2 = status.body;
+        let message;
+        if (body2 != null) {
+          message = body2.message;
+        }
+        obj[2] = message;
+        const merged = Object.assign(outer1_3);
+        const merged1 = Object.assign(properties);
+        del(trackedActionData[1]).trackNetworkAction(obj.event, obj);
+        lib(status);
+      });
+    });
   },
-  put(arg0) {
-    return makeRequest(require(507) /* _isNativeReflectConstruct */.HTTP.put, arg0, "put");
+  put(trackedActionData) {
+    put = put(trackedActionData[2]).HTTP.put;
+    trackedActionData = undefined;
+    let c2;
+    let callback;
+    trackedActionData = trackedActionData.trackedActionData;
+    const tmp = callback(trackedActionData, c2);
+    c2 = tmp;
+    callback = { url: tmp.url, request_method: "put" };
+    return new Promise((arg0, arg1) => {
+      const del = arg0;
+      let closure_1 = arg1;
+      const promise = del(c2);
+      del(c2).then((status) => {
+        let obj = lib;
+        let properties = lib.properties;
+        if (typeof lib.properties !== "_") {
+          properties = obj.properties(status);
+        }
+        obj = { status_code: status.status };
+        const merged = Object.assign(outer1_3);
+        const merged1 = Object.assign(properties);
+        del(trackedActionData[1]).trackNetworkAction(obj.event, obj);
+        callback(status);
+      }).catch((status) => {
+        let obj = lib;
+        let properties = lib.properties;
+        if (typeof lib.properties !== "_") {
+          properties = obj.properties(status);
+        }
+        obj = { status_code: status.status, error_code: null, error_message: null };
+        const body = status.body;
+        let code;
+        if (body != null) {
+          code = body.code;
+        }
+        obj[1] = code;
+        const body2 = status.body;
+        let message;
+        if (body2 != null) {
+          message = body2.message;
+        }
+        obj[2] = message;
+        const merged = Object.assign(outer1_3);
+        const merged1 = Object.assign(properties);
+        del(trackedActionData[1]).trackNetworkAction(obj.event, obj);
+        lib(status);
+      });
+    });
   },
-  patch(arg0) {
-    return makeRequest(require(507) /* _isNativeReflectConstruct */.HTTP.patch, arg0, "patch");
+  patch(trackedActionData) {
+    patch = patch(trackedActionData[2]).HTTP.patch;
+    trackedActionData = undefined;
+    let c2;
+    let callback;
+    trackedActionData = trackedActionData.trackedActionData;
+    const tmp = callback(trackedActionData, c2);
+    c2 = tmp;
+    callback = { url: tmp.url, request_method: "patch" };
+    return new Promise((arg0, arg1) => {
+      const del = arg0;
+      let closure_1 = arg1;
+      const promise = del(c2);
+      del(c2).then((status) => {
+        let obj = lib;
+        let properties = lib.properties;
+        if (typeof lib.properties !== "_") {
+          properties = obj.properties(status);
+        }
+        obj = { status_code: status.status };
+        const merged = Object.assign(outer1_3);
+        const merged1 = Object.assign(properties);
+        del(trackedActionData[1]).trackNetworkAction(obj.event, obj);
+        callback(status);
+      }).catch((status) => {
+        let obj = lib;
+        let properties = lib.properties;
+        if (typeof lib.properties !== "_") {
+          properties = obj.properties(status);
+        }
+        obj = { status_code: status.status, error_code: null, error_message: null };
+        const body = status.body;
+        let code;
+        if (body != null) {
+          code = body.code;
+        }
+        obj[1] = code;
+        const body2 = status.body;
+        let message;
+        if (body2 != null) {
+          message = body2.message;
+        }
+        obj[2] = message;
+        const merged = Object.assign(outer1_3);
+        const merged1 = Object.assign(properties);
+        del(trackedActionData[1]).trackNetworkAction(obj.event, obj);
+        lib(status);
+      });
+    });
   },
-  delete: function del(arg0) {
-    return makeRequest(require(507) /* _isNativeReflectConstruct */.HTTP.del, arg0, "del");
+  delete: function del(trackedActionData) {
+    del = del(trackedActionData[2]).HTTP.del;
+    trackedActionData = undefined;
+    let c2;
+    let callback;
+    trackedActionData = trackedActionData.trackedActionData;
+    const tmp = callback(trackedActionData, c2);
+    c2 = tmp;
+    callback = { url: tmp.url, request_method: "del" };
+    return new Promise((arg0, arg1) => {
+      const del = arg0;
+      let closure_1 = arg1;
+      const promise = del(c2);
+      del(c2).then((status) => {
+        let obj = lib;
+        let properties = lib.properties;
+        if (typeof lib.properties !== "_") {
+          properties = obj.properties(status);
+        }
+        obj = { status_code: status.status };
+        const merged = Object.assign(outer1_3);
+        const merged1 = Object.assign(properties);
+        del(trackedActionData[1]).trackNetworkAction(obj.event, obj);
+        callback(status);
+      }).catch((status) => {
+        let obj = lib;
+        let properties = lib.properties;
+        if (typeof lib.properties !== "_") {
+          properties = obj.properties(status);
+        }
+        obj = { status_code: status.status, error_code: null, error_message: null };
+        const body = status.body;
+        let code;
+        if (body != null) {
+          code = body.code;
+        }
+        obj[1] = code;
+        const body2 = status.body;
+        let message;
+        if (body2 != null) {
+          message = body2.message;
+        }
+        obj[2] = message;
+        const merged = Object.assign(outer1_3);
+        const merged1 = Object.assign(properties);
+        del(trackedActionData[1]).trackNetworkAction(obj.event, obj);
+        lib(status);
+      });
+    });
   }
 };

@@ -1,244 +1,204 @@
-// Module ID: 5924
-// Function ID: 52378
-// Name: _createForOfIteratorHelperLoose
-// Dependencies: [5, 6, 7, 5925, 5926, 3802, 1850, 653, 3, 1883, 5928, 2]
+// Module ID: 5943
+// Function ID: 5944
+// Name: getAll
+// Dependencies: [5, 5944, 5945, 3826, 1874, 676, 3, 1907, 5947, 2]
 
-// Module 5924 (_createForOfIteratorHelperLoose)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_4 from "_isNativeReflectConstruct";
+// Module 5943 (getAll)
 import ME from "ME";
-import closure_6 from "_isNativeReflectConstruct";
-import closure_7 from "_isNativeReflectConstruct";
-import closure_8 from "_isNativeReflectConstruct";
-import closure_9 from "_isNativeReflectConstruct";
+import recountRelationshipTypes from "recountRelationshipTypes";
+import recomputeAffinities from "recomputeAffinities";
+import upsertRelationship from "upsertRelationship";
+import mergeGuildAvatar from "mergeGuildAvatar";
 import { RelationshipTypes } from "ME";
-import importDefaultResult from "_isNativeReflectConstruct";
+import set from "recomputeAffinities";
 
-const require = arg1;
-function _createForOfIteratorHelperLoose(iterable) {
-  let closure_0 = iterable;
-  iterable = "undefined" !== typeof Symbol;
-  if (iterable) {
-    const _Symbol = Symbol;
-    iterable = iterable[Symbol.iterator];
-  }
-  if (!iterable) {
-    iterable = iterable[Symbol.iterator];
-  }
-  if (iterable) {
-    const iter = iterable.call(iterable);
-    const next = iter.next;
-    return next.bind(iter);
-  } else {
-    const _Array = Array;
-    let tmp = iterable;
-    if (!Array.isArray(iterable)) {
-      let tmp2;
-      if (iterable) {
-        if ("string" === typeof iterable) {
-          tmp2 = _arrayLikeToArray(iterable, undefined);
-        } else {
-          const toString = {}.toString;
-          const substr = toString.call(iterable).slice(8, -1);
-          let name = substr;
-          if (tmp3) {
-            name = iterable.constructor.name;
+let c9 = new require("upsertRelationship")("UserSearchItems");
+let c10 = false;
+class UserSearchItems {
+  constructor() {
+    obj = Object.create(new.target.prototype);
+    UserSearchItems = obj;
+    obj.actions = {
+      POST_CONNECTION_OPEN: obj.handlePostConnectionOpen,
+      WRITE_CACHES(arg0, arg1) {
+            return obj.handleWriteCaches(arg1);
           }
-          if ("Map" !== name) {
-            if ("Set" !== name) {
-              if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(iterable, undefined);
-              } else {
-                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
-              }
-            }
-            tmp2 = arr;
-          }
-          const _Array2 = Array;
-          arr = Array.from(iterable);
-          const callResult = toString.call(iterable);
-          tmp3 = "Object" === substr && iterable.constructor;
-        }
-      }
-      tmp = tmp2;
-      if (!tmp2) {
-        const _TypeError = TypeError;
-        const typeError = new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
-        throw typeError;
-      }
-    }
-    if (tmp) {
-      closure_0 = tmp;
-    }
-    let c1 = 0;
-    return () => {
-      if (closure_1 >= length.length) {
-        let obj = { done: true };
-      } else {
-        obj = { done: false };
-        closure_1 = tmp3 + 1;
-        obj.value = length[+closure_1];
-      }
-      return obj;
     };
+    return obj;
   }
 }
-function _arrayLikeToArray(arg0, arg1) {
-  let length;
-  if (tmp) {
-    length = arg0.length;
-  }
-  const ArrayResult = Array(length);
-  for (let num = 0; num < length; num = num + 1) {
-    ArrayResult[num] = arg0[num];
-  }
-  return ArrayResult;
-}
-importDefaultResult = new importDefaultResult("UserSearchItems");
-let c12 = false;
-let tmp4 = (() => {
-  class UserSearchItems {
-    constructor() {
-      self = this;
-      tmp = outer1_4(this, UserSearchItems);
-      this.actions = {
-        POST_CONNECTION_OPEN: this.handlePostConnectionOpen,
-        WRITE_CACHES(arg0, arg1) {
-              return self.handleWriteCaches(arg1);
-            }
-      };
-      return;
-    }
-  }
-  let obj = { key: "getAll" };
-  let closure_0 = callback(async () => {
-    const nowResult = performance.now();
-    const userSearchItemsResult = UserSearchItems(outer2_2[9]).userSearchItems();
-    if (null == userSearchItemsResult) {
-      return [];
+const prototype = UserSearchItems.prototype;
+prototype["getAll"] = function getAll() {
+  return callback(function*() {
+    if (c3 === 2) {
+      c3 = 3;
+      HermesBuiltin.throwTypeError();
+    } else if (tmp4 === 3) {
+      if (arg0 === 1) {
+        throw arg1;
+      } else if (arg0 === 2) {
+        let obj = { value: null, done: true };
+        obj[0] = arg1;
+        return obj;
+      } else {
+        return { value: "HermesInternal", done: null };
+      }
     } else {
-      const arr = yield userSearchItemsResult.getMany();
-      const _performance = performance;
-      const _HermesInternal = HermesInternal;
-      outer2_11.log("asynchronously loaded in " + performance.now() - nowResult + "ms (userSearchItems: " + arr.length + ")");
-      return arr;
-    }
-    const obj = UserSearchItems(outer2_2[9]);
-  });
-  obj.value = function getAll() {
-    return callback(...arguments);
-  };
-  const items = [obj, , , , ];
-  obj = {
-    key: "resetInMemoryState",
-    value() {
-
-    }
-  };
-  items[1] = obj;
-  obj = {
-    key: "shouldUseCache",
-    get() {
-      return !outer1_12;
-    }
-  };
-  items[2] = obj;
-  items[3] = {
-    key: "handlePostConnectionOpen",
-    value() {
-      const outer1_12 = true;
-    }
-  };
-  items[4] = {
-    key: "handleWriteCaches",
-    value(arg0) {
-      let iter3;
-      let iter6;
-      let obj = {};
-      const tmp = outer1_13(outer1_8.getFriendIDs());
-      const iter = tmp();
-      let iter2 = iter;
-      if (!iter.done) {
-        do {
-          let value = iter2.value;
-          let tmp2 = outer1_9;
-          let user = outer1_9.getUser(value);
-          if (null != user) {
-            let tmp15 = callback;
-            let tmp16 = outer1_2;
-            let obj5 = callback(outer1_2[10]);
-            let names = obj5.getNames(user);
-            obj = { id: value };
-            let tmp18 = outer1_10;
-            obj.type = outer1_10.FRIEND;
-            obj.user = user;
-            ({ names: obj6.names, nick: obj6.nick } = names);
-            let tmp19 = outer1_7;
-            let userAffinity = outer1_7.getUserAffinity(value);
-            let prop;
-            if (null != userAffinity) {
-              prop = userAffinity.communicationProbability;
+      try {
+        c3 = 2;
+        if (0 === closure_2) {
+          if (arg0 === 1) {
+            c3 = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            c3 = 3;
+            obj = { value: null, done: true };
+            obj[0] = arg1;
+            return obj;
+          } else {
+            let length = tmp5;
+            let closure_0 = tmp2;
+            closure_0 = undefined;
+            length = undefined;
+            closure_2 = undefined;
+            const _performance2 = performance;
+            closure_0 = performance.now();
+            const userSearchItemsResult = outer1_1(table[7]).userSearchItems();
+            if (null == userSearchItemsResult) {
+              c3 = 3;
+              const obj1 = { value: null, done: true };
+              obj1[0] = [];
+              return obj1;
+            } else {
+              closure_2 = 1;
+              c3 = 1;
+              const obj2 = { value: null, done: false };
+              obj2[0] = userSearchItemsResult.getMany();
+              return obj2;
             }
-            let num = 0;
-            if (null != prop) {
-              num = prop;
-            }
-            obj.affinity = num;
-            obj[value] = obj;
-            let tmp5 = prop;
-            let tmp6 = userAffinity;
+            const obj7 = outer1_1(table[7]);
           }
-          iter3 = tmp();
-          iter2 = iter3;
-        } while (!iter3.done);
+        } else if (arg0 === 1) {
+          c3 = 3;
+          throw arg1;
+        } else if (arg0 === 2) {
+          c3 = 3;
+          const obj3 = { value: null, done: true };
+          obj3[0] = arg1;
+          return obj3;
+        } else {
+          length = arg1;
+          const _performance = performance;
+          closure_2 = performance.now();
+          const _HermesInternal = HermesInternal;
+          logger.log("asynchronously loaded in " + closure_2 - closure_0 + "ms (userSearchItems: " + length.length + ")");
+          c3 = 3;
+          obj = { value: null, done: true };
+          obj[0] = length;
+          return obj;
+        }
+      } catch (tmp6) {
+        c3 = tmp;
+        throw tmp6;
       }
-      const gameRelationships = outer1_6.getGameRelationships();
-      const values = gameRelationships.values();
-      const tmp7 = outer1_13(values.filter((type) => type.type === outer2_10.FRIEND));
-      const iter4 = tmp7();
-      let iter5 = iter4;
-      if (!iter4.done) {
-        do {
-          value = iter5.value;
-          let tmp8 = outer1_9;
-          let user1 = outer1_9.getUser(value.id);
-          if (null != user1) {
-            let tmp21 = callback;
-            let tmp22 = outer1_2;
-            let obj7 = callback(outer1_2[10]);
-            let names1 = obj7.getNames(user1);
-            obj = { id: value.id };
-            let tmp24 = outer1_10;
-            obj.type = outer1_10.FRIEND;
-            obj.user = user1;
-            ({ names: obj8.names, nick: obj8.nick } = names1);
-            let tmp25 = outer1_7;
-            let userAffinity1 = outer1_7.getUserAffinity(value.id);
-            let prop1;
-            if (null != userAffinity1) {
-              prop1 = userAffinity1.communicationProbability;
-            }
-            let num2 = 0;
-            if (null != prop1) {
-              num2 = prop1;
-            }
-            obj.affinity = num2;
-            obj[value.id] = obj;
-            let tmp11 = prop1;
-            let tmp12 = userAffinity1;
-          }
-          iter6 = tmp7();
-          iter5 = iter6;
-        } while (!iter6.done);
-      }
-      const result = UserSearchItems(outer1_2[9]).userSearchItemsTransaction(arg0);
-      result.delete();
-      result.putAll(Object.values(obj));
     }
-  };
-  return callback2(UserSearchItems, items);
-})();
-tmp4 = new tmp4();
-let result = require("_defineProperties").fileFinishedImporting("modules/app_database/modules/UserSearchItems.tsx");
+  })();
+};
+prototype["resetInMemoryState"] = function resetInMemoryState() {
 
-export default tmp4;
+};
+Object.defineProperty(prototype, "shouldUseCache", {
+  get: function shouldUseCache() {
+    return !c10;
+  },
+  set: undefined
+});
+prototype["handlePostConnectionOpen"] = function handlePostConnectionOpen() {
+  let c10 = true;
+};
+prototype["handleWriteCaches"] = function handleWriteCaches(database) {
+  friendIDs = friendIDs.getFriendIDs();
+  let obj = {};
+  const iter = friendIDs[Symbol.iterator]();
+  const nextResult = iter.next();
+  while (iter !== undefined) {
+    let tmp3 = nextResult;
+    let tmp4 = authStore2;
+    let user = authStore2.getUser(nextResult);
+    let tmp6 = user;
+    if (null != user) {
+      let tmp14 = obj;
+      let tmp15 = dependencyMap;
+      let obj5 = obj(5947);
+      let tmp16 = user;
+      let names = obj5.getNames(tmp6);
+      let tmp18 = nextResult;
+      obj = { id: null, type: null, user: null, names: null, nick: null, affinity: null };
+      obj[0] = tmp3;
+      let tmp19 = RelationshipTypes;
+      obj[1] = RelationshipTypes.FRIEND;
+      obj[2] = tmp6;
+      ({ names: obj6[3], nick: obj6[4] } = names);
+      let tmp20 = authStore;
+      let userAffinity = authStore.getUserAffinity(tmp3);
+      let num;
+      if (userAffinity != null) {
+        num = userAffinity.communicationProbability;
+      }
+      if (num == null) {
+        num = 0;
+      }
+      obj[5] = num;
+      obj[tmp3] = obj;
+    }
+    continue;
+  }
+  gameRelationships = gameRelationships.getGameRelationships();
+  const values = gameRelationships.values();
+  const found = values.filter((type) => type.type === constants.FRIEND);
+  for (const item10033 of found) {
+    let tmp8 = item10033;
+    let tmp9 = authStore2;
+    let user1 = authStore2.getUser(item10033.id);
+    let tmp11 = user1;
+    if (null != user1) {
+      let tmp22 = obj;
+      let tmp23 = dependencyMap;
+      let obj7 = obj(5947);
+      let tmp24 = user1;
+      let names1 = obj7.getNames(tmp11);
+      let tmp26 = item10033;
+      obj = { id: null, type: null, user: null, names: null, nick: null, affinity: null };
+      obj[0] = tmp8.id;
+      let tmp27 = RelationshipTypes;
+      obj[1] = RelationshipTypes.FRIEND;
+      obj[2] = tmp11;
+      ({ names: obj8[3], nick: obj8[4] } = names1);
+      let tmp28 = authStore;
+      let userAffinity1 = authStore.getUserAffinity(tmp8.id);
+      let num2;
+      if (userAffinity1 != null) {
+        num2 = userAffinity1.communicationProbability;
+      }
+      if (num2 == null) {
+        num2 = 0;
+      }
+      obj[5] = num2;
+      obj[tmp8.id] = obj;
+    }
+    continue;
+  }
+  const result = importDefault(1907).userSearchItemsTransaction(database);
+  result.delete();
+  result.putAll(Object.values(obj));
+};
+let set = Object.create(UserSearchItems.prototype);
+set.actions = {
+  POST_CONNECTION_OPEN: set.handlePostConnectionOpen,
+  WRITE_CACHES(arg0, arg1) {
+    return obj.handleWriteCaches(arg1);
+  }
+};
+let result = set.fileFinishedImporting("modules/app_database/modules/UserSearchItems.tsx");
+
+export default set;

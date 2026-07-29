@@ -1,43 +1,42 @@
-// Module ID: 6306
-// Function ID: 56413
-// Name: USER_SETTINGS_CONTAINER_HORIZONTAL_PADDING
-// Dependencies: [57, 31, 27, 1850, 3816, 3817, 5831, 6307, 5654, 653, 1852, 33, 4165, 6308, 1557, 5497, 5517, 6309, 4594, 675, 566, 1456, 1390, 6272, 6270, 686, 6310, 5832, 6222, 6238, 6221, 6482, 6483, 6484, 6485, 3811, 6488, 6490, 6530, 6537, 6538, 9298, 12420, 12472, 6337, 477, 2]
+// Module ID: 6327
+// Function ID: 6328
+// Name: UserSettingsPremium
+// Dependencies: [32, 19, 17, 1874, 3840, 3841, 5849, 6328, 5672, 676, 1876, 21, 4189, 6329, 1581, 5515, 5535, 6330, 4616, 698, 589, 1480, 1414, 6293, 6291, 709, 6331, 5850, 6242, 6258, 6241, 6503, 6504, 6505, 6506, 3835, 6509, 6511, 6551, 6558, 6559, 9322, 12442, 12494, 6358, 500, 2]
 // Exports: default
 
-// Module 6306 (USER_SETTINGS_CONTAINER_HORIZONTAL_PADDING)
-import _slicedToArray from "_slicedToArray";
-import module_6482 from "module_6482";
-import get_ActivityIndicator from "_fetchUserEntitlements";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_9 from "_isNativeReflectConstruct";
-import closure_10 from "_isNativeReflectConstruct";
-import closure_11 from "_isNativeReflectConstruct";
-import closure_12 from "_isNativeReflectConstruct";
-import closure_13 from "_isNativeReflectConstruct";
+// Module 6327 (UserSettingsPremium)
+import _fetchUserOffer from "_fetchUserOffer";
+import expandEventProperties from "expandEventProperties";
+import get_ActivityIndicator from "useSettingNavigationRoute";
+import mergeGuildAvatar from "mergeGuildAvatar";
+import addSubscriptionPlan from "addSubscriptionPlan";
+import reset from "reset";
+import addEntitlement from "addEntitlement";
+import getState from "getState";
+import updateProduct from "updateProduct";
 import ME from "ME";
 import GuildFeatures from "GuildFeatures";
-import { jsx } from "dispatcher";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import { jsx } from "useNavigation";
+import createCacheKey from "createCacheKey";
 
 let USER_SETTINGS_CONTAINER_HORIZONTAL_PADDING;
+let c5;
 let closure_14;
 let closure_15;
 let closure_16;
 let closure_17;
 let closure_18;
-let closure_5;
 let closure_6;
-let closure_7;
+let error;
 const require = arg1;
-({ ActivityIndicator: closure_5, View: closure_6, ScrollView: closure_7 } = get_ActivityIndicator);
+({ ActivityIndicator: c5, View: closure_6, ScrollView: error } = get_ActivityIndicator);
 ({ AnalyticEvents: closure_14, AppStates: closure_15, UserSettingsSections: closure_16, USER_SETTINGS_CONTAINER_HORIZONTAL_PADDING } = ME);
 ({ PremiumTypes: closure_17, PREMIUM_SUBSCRIPTION_APPLICATION: closure_18 } = GuildFeatures);
-_createForOfIteratorHelperLoose = { marginTop: 20, paddingHorizontal: USER_SETTINGS_CONTAINER_HORIZONTAL_PADDING, width: "100%" };
-let closure_20 = _createForOfIteratorHelperLoose.createStyles({ root: { flex: 1 }, container: { paddingVertical: 24, paddingHorizontal: USER_SETTINGS_CONTAINER_HORIZONTAL_PADDING }, subscriptionHeader: { marginTop: 20, width: "100%" }, billingInfo: { marginTop: 20, width: "100%" }, accountCredit: _createForOfIteratorHelperLoose, loadingSpinnerContainer: { display: "flex", alignItems: "center", justifyContent: "center", height: "100%" } });
+let closure_20 = createCacheKey.createStyles({ root: { flex: 1 }, container: { paddingVertical: 24, paddingHorizontal: USER_SETTINGS_CONTAINER_HORIZONTAL_PADDING }, subscriptionHeader: { marginTop: 20, width: "100%" }, billingInfo: { marginTop: 20, width: "100%" }, accountCredit: { marginTop: 20, paddingHorizontal: USER_SETTINGS_CONTAINER_HORIZONTAL_PADDING, width: "100%" }, loadingSpinnerContainer: { display: "flex", alignItems: "center", justifyContent: "center", height: "100%" } });
 let result = require("get ActivityIndicator").fileFinishedImporting("modules/user_settings/premium/native/UserSettingsPremium.tsx");
 
 export default function UserSettingsPremium(applicationId) {
-  let _slicedToArray;
+  let _fetchUserOffer;
   let dependencyMap;
   let importDefault;
   let isFullScreenPresentation;
@@ -48,7 +47,7 @@ export default function UserSettingsPremium(applicationId) {
   let tmp8;
   let tmp9;
   applicationId = applicationId.applicationId;
-  ({ activitySessionId: importDefault, channelId: dependencyMap, guildId: _slicedToArray, onClose, premiumFeatureCardOrder, onPaymentSuccess, onPaymentDismiss, isFullScreenPresentation } = applicationId);
+  ({ activitySessionId: importDefault, channelId: dependencyMap, guildId: _fetchUserOffer, onClose, premiumFeatureCardOrder, onPaymentSuccess, onPaymentDismiss, isFullScreenPresentation } = applicationId);
   if (isFullScreenPresentation === undefined) {
     isFullScreenPresentation = false;
   }
@@ -56,257 +55,262 @@ export default function UserSettingsPremium(applicationId) {
   let closure_5;
   let closure_6;
   let stateFromStores;
-  let _isNativeReflectConstruct;
+  let mergeGuildAvatar;
   let premiumTrialOffer;
   let premiumDiscountOffer;
-  let tmp = callback2();
-  importDefault(6308)();
+  let container = callback2();
+  let tmp = importDefault;
+  let tmp31Result = dependencyMap;
+  importDefault(6329)();
   if (applicationId.isFromTextSection) {
-    let items = [importDefault(5517).TEXT_AND_IMAGES];
+    let items = [tmp(5535).TEXT_AND_IMAGES];
     let items1 = items;
   } else {
     items1 = [];
   }
-  const items2 = [...items1, importDefault(5517).PREMIUM_MARKETING];
-  analyticsLocations = importDefault(5497)(items2).analyticsLocations;
-  let obj = applicationId(6309);
+  const items2 = [...items1, tmp(5535).PREMIUM_MARKETING];
+  analyticsLocations = importDefault(5515)(items2).analyticsLocations;
+  let obj = applicationId(6330);
   closure_5 = obj.useSettingNavigationRoute();
-  importDefault(4594)(() => {
+  tmp(4616)(() => {
     const params = navigation.params;
     let analyticsLocation;
-    if (null != params) {
+    if (params != null) {
       analyticsLocation = params.analyticsLocation;
     }
     let section;
-    if (null != analyticsLocation) {
+    if (analyticsLocation != null) {
       section = analyticsLocation.section;
     }
     if (null != section) {
-      let obj = { source_section: section };
+      let obj = { source_section: null };
+      obj[0] = section;
     } else {
       obj = {};
     }
-    obj = { application_id: applicationId, location_stack: analyticsLocations, activity_session_id: closure_1, channel_id: closure_2, guild_id: _slicedToArray };
+    obj = { application_id: applicationId, location_stack: analyticsLocations, activity_session_id: closure_1, channel_id: closure_2, guild_id: _fetchUserOffer };
     const merged = Object.assign(obj);
     outer1_1(outer1_2[19]).track(outer1_14.PREMIUM_MARKETING_PAGE_VIEWED, obj);
   });
-  let obj1 = applicationId(566);
+  let obj1 = applicationId(589);
   const items3 = [premiumDiscountOffer];
-  const tmp3 = importDefault(5497);
+  const tmp4 = importDefault(5515);
   [tmp8, tmp9] = callback(obj1.useStateFromStoresArray(items3, () => {
     const items = [premiumDiscountOffer.getPremiumTypeSubscription(), premiumDiscountOffer.hasFetchedSubscriptions()];
     return items;
   }), 2);
-  let obj2 = applicationId(1456);
+  let obj2 = applicationId(1480);
   closure_6 = obj2.useNavigation();
-  let obj3 = applicationId(566);
-  const items4 = [closure_12];
-  stateFromStores = obj3.useStateFromStores(items4, () => outer1_12.getState());
-  _isNativeReflectConstruct = analyticsLocations.useRef(stateFromStores);
-  let obj4 = applicationId(566);
-  const items5 = [closure_11];
+  let obj3 = applicationId(589);
+  const items4 = [getState];
+  stateFromStores = obj3.useStateFromStores(items4, () => state2.getState());
+  mergeGuildAvatar = analyticsLocations.useRef(stateFromStores);
+  let obj4 = applicationId(589);
+  const items5 = [addEntitlement];
   const stateFromStores1 = obj4.useStateFromStores(items5, () => {
-    const items = [outer1_18];
-    return outer1_11.hasFetchedForApplicationIds(items);
+    const items = [closure_18];
+    return addEntitlement.hasFetchedForApplicationIds(items);
   });
-  let obj5 = applicationId(566);
-  const items6 = [closure_11];
+  let obj5 = applicationId(589);
+  const items6 = [addEntitlement];
   const stateFromStores2 = obj5.useStateFromStores(items6, () => {
-    let forApplication = outer1_11.getForApplication(outer1_18);
-    if (null == forApplication) {
+    let forApplication = addEntitlement.getForApplication(closure_18);
+    if (forApplication == null) {
       const _Set = Set;
       forApplication = new Set();
     }
     return forApplication;
-  }, [], applicationId(1390).areSetsEqual);
-  let obj6 = applicationId(566);
+  }, [], applicationId(1414).areSetsEqual);
+  let obj6 = applicationId(589);
   const items7 = [premiumTrialOffer];
   let stateFromStores3 = obj6.useStateFromStores(items7, () => premiumTrialOffer.isLoadedForPremiumSKUs());
-  let obj7 = applicationId(566);
-  const items8 = [closure_13];
-  const stateFromStores4 = obj7.useStateFromStores(items8, () => outer1_13.getProduct(applicationId(outer1_2[23]).ProductIds.PREMIUM_TIER_2_MONTHLY));
-  let obj8 = applicationId(566);
-  const items9 = [_isNativeReflectConstruct];
+  let obj7 = applicationId(589);
+  const items8 = [updateProduct];
+  const stateFromStores4 = obj7.useStateFromStores(items8, () => product.getProduct(applicationId(6293).ProductIds.PREMIUM_TIER_2_MONTHLY));
+  let obj8 = applicationId(589);
+  const items9 = [mergeGuildAvatar];
   const stateFromStores5 = obj8.useStateFromStores(items9, () => {
     const currentUser = ref.getCurrentUser();
-    let result;
-    if (null != currentUser) {
-      result = currentUser.isPremiumWithPremiumGroup();
+    let flag;
+    if (currentUser != null) {
+      flag = currentUser.isPremiumWithPremiumGroup();
     }
-    return null != result && result;
+    if (flag == null) {
+      flag = false;
+    }
+    return flag;
   });
-  let obj9 = applicationId(6270);
+  let obj9 = applicationId(6291);
   const isPaymentsBlocked = obj9.useIsPaymentsBlocked();
   const effect = analyticsLocations.useEffect(() => {
-    outer1_1(outer1_2[25]).wait(() => outer2_1(outer2_2[26]).init());
-    const obj = outer1_1(outer1_2[25]);
-    const userEntitlementsForApplication = applicationId(outer1_2[27]).fetchUserEntitlementsForApplication(outer1_18);
+    callback(709).wait(() => callback(table[26]).init());
+    const obj = callback(709);
+    const userEntitlementsForApplication = applicationId(5850).fetchUserEntitlementsForApplication(closure_18);
   }, []);
   const items10 = [stateFromStores];
   const effect1 = analyticsLocations.useEffect(() => {
-    let tmp = stateFromStores === outer1_15.ACTIVE;
-    if (tmp) {
-      tmp = ref.current === outer1_15.BACKGROUND;
+    let tmp3 = stateFromStores === outer1_15.ACTIVE;
+    if (tmp3) {
+      tmp3 = ref.current === tmp2.BACKGROUND;
     }
-    if (tmp) {
-      outer1_1(outer1_2[25]).wait(() => outer2_1(outer2_2[26]).init());
+    if (tmp3) {
+      outer1_1(outer1_2[25]).wait(() => callback(table[26]).init());
       const obj = outer1_1(outer1_2[25]);
     }
     ref.current = stateFromStores;
   }, items10);
-  let obj10 = applicationId(6222);
+  let obj10 = applicationId(6242);
   premiumTrialOffer = obj10.usePremiumTrialOffer();
   const tmp7 = callback(obj1.useStateFromStoresArray(items3, () => {
     const items = [premiumDiscountOffer.getPremiumTypeSubscription(), premiumDiscountOffer.hasFetchedSubscriptions()];
     return items;
   }), 2);
-  premiumDiscountOffer = applicationId(6238).usePremiumDiscountOffer();
-  const obj12 = applicationId(6238);
-  const premiumTrialOfferPremiumType = applicationId(6221).usePremiumTrialOfferPremiumType();
+  premiumDiscountOffer = applicationId(6258).usePremiumDiscountOffer();
+  const obj12 = applicationId(6258);
+  const premiumTrialOfferPremiumType = applicationId(6241).usePremiumTrialOfferPremiumType();
   const items11 = [premiumTrialOffer, premiumDiscountOffer];
   const effect2 = analyticsLocations.useEffect(() => {
     if (null != premiumTrialOffer) {
-      const result = outer1_1(outer1_2[31]).acknowledgeUserTrialOffer(premiumTrialOffer);
+      const result = outer1_1(outer1_2[31]).acknowledgeUserTrialOffer(tmp);
       const obj = outer1_1(outer1_2[31]);
     }
     if (null != premiumDiscountOffer) {
-      applicationId(outer1_2[32]).acknowledgeUserOffer(undefined, premiumDiscountOffer);
+      applicationId(outer1_2[32]).acknowledgeUserOffer(undefined, tmp5);
       const obj2 = applicationId(outer1_2[32]);
     }
   }, items11);
-  let tmp23 = null != tmp8 && stateFromStores3 && tmp9;
-  const obj13 = applicationId(6221);
-  const hasTier2Premium = applicationId(3811).useHasTier2Premium();
-  const obj14 = applicationId(3811);
-  obj = { userHasSubscription: tmp23 };
+  let tmp31Result3 = null != tmp8 && stateFromStores3 && tmp9;
+  let tmp5Result = tmp5(3835);
+  const hasTier2Premium = tmp5Result.useHasTier2Premium();
+  tmp5Result = tmp5(6509);
+  obj = { userHasSubscription: tmp31Result3, isNitroHomeSurface: null, isConfirmedNonSubscriber: null };
   let tmp26 = hasTier2Premium;
   if (hasTier2Premium) {
     tmp26 = null == premiumFeatureCardOrder;
   }
-  obj.isNitroHomeSurface = tmp26;
-  obj.isConfirmedNonSubscriber = tmp9;
-  const buyNitroExperiment = applicationId(6488).useBuyNitroExperiment(obj);
+  obj[1] = tmp26;
+  obj[2] = tmp9;
+  const buyNitroExperiment = tmp5Result.useBuyNitroExperiment(obj);
   if (null == stateFromStores4 || !stateFromStores3 || !tmp9 || !stateFromStores1) {
     if (!buyNitroExperiment.canRenderRedesignUpsellEarly) {
-      obj = { style: tmp.loadingSpinnerContainer, children: <closure_5 animating size="large" /> };
-      return <closure_6 style={tmp.loadingSpinnerContainer}><closure_5 animating size="large" /></closure_6>;
+      obj = { style: null, children: null };
+      obj[0] = container.loadingSpinnerContainer;
+      obj[1] = <closure_5 animating size="large" />;
+      return <closure_6 style={null}>{null}</closure_6>;
     }
   }
   if (isPaymentsBlocked) {
-    obj1 = { style: tmp.container };
-    tmp = importDefault(6337);
-    obj1.children = tmp31(tmp, {});
-    tmp31(stateFromStores, obj1);
+    obj1 = { style: null, children: null };
+    container = container.container;
+    obj1[0] = container;
+    tmp = tmp(6358);
+    tmp31Result = tmp31(tmp, {});
+    obj1[1] = tmp31Result;
+    tmp31Result = tmp31(stateFromStores, obj1);
   } else {
-    obj2 = {};
-    const items12 = [tmp.root, ];
-    obj3 = {};
-    let num3 = 0;
-    if (obj20.isAndroid()) {
-      num3 = importDefault(1557)().bottom;
+    const items12 = [container.root, ];
+    let num = 0;
+    if (tmp5Result1.isAndroid()) {
+      num = importDefault(1581)().bottom;
     }
-    obj3.marginBottom = num3;
+    obj2 = { style: null, children: null };
+    obj3 = { marginBottom: null };
+    obj3[0] = num;
     items12[1] = obj3;
-    obj2.style = items12;
-    obj4 = { value: analyticsLocations };
+    obj2[0] = items12;
+    obj4 = { value: null, children: null };
+    obj4[0] = analyticsLocations;
     if (buyNitroExperiment.showRedesignUpsell) {
-      obj5 = { onClose, applicationId, initialLoadCompleted: !tmp24, onPaymentSuccess, onPaymentDismiss };
+      obj5 = { onClose: null, applicationId: null, initialLoadCompleted: null, onPaymentSuccess: null, onPaymentDismiss: null, initialTier: null };
+      obj5[0] = onClose;
+      obj5[1] = applicationId;
+      obj5[2] = !tmp24;
+      obj5[3] = onPaymentSuccess;
+      obj5[4] = onPaymentDismiss;
       if (null == premiumFeatureCardOrder) {
-        obj5.initialTier = undefined;
-        let tmp44Result = tmp64(tmp67, obj5);
-      } else if (premiumFeatureCardOrder === applicationId(9298).PremiumFeatureCardOrder.TIER_0_LEADING) {
+        obj5[5] = undefined;
+        let tmp31Result1 = tmp31(tmp38, obj5);
+      } else if (premiumFeatureCardOrder === tmp5(9322).PremiumFeatureCardOrder.TIER_0_LEADING) {
         let TIER_2 = closure_17.TIER_0;
       } else {
         TIER_2 = closure_17.TIER_2;
       }
-      tmp64 = jsx;
     } else {
       if (hasTier2Premium) {
         if (null == premiumFeatureCardOrder) {
-          obj6 = { onClose };
-          tmp44Result = jsx(importDefault(12420), { onClose });
+          obj6 = { onClose: null };
+          obj6[0] = onClose;
+          tmp31Result1 = tmp31(tmp(12442), obj6);
         }
       }
       let TIER_2_LEADING = premiumFeatureCardOrder;
-      if (null == premiumFeatureCardOrder) {
-        if (premiumTrialOfferPremiumType === closure_17.TIER_0) {
-          TIER_2_LEADING = applicationId(9298).PremiumFeatureCardOrder.TIER_0_LEADING;
-        } else {
-          TIER_2_LEADING = premiumFeatureCardOrder;
-          if (premiumTrialOfferPremiumType === closure_17.TIER_2) {
-            TIER_2_LEADING = applicationId(9298).PremiumFeatureCardOrder.TIER_2_LEADING;
+      if (null != premiumFeatureCardOrder) {
+        obj7 = { applicationId: null, userHasSubscription: null, subscriptionDetails: null, billingInfo: null, accountCredit: null, onClose: null, premiumFeatureCardOrder: null, entitlements: null, onPaymentSuccess: null, onPaymentDismiss: null, isFullScreenPresentation: null };
+        obj7[0] = applicationId;
+        obj7[1] = tmp31Result3;
+        let tmp31Result2 = tmp31Result3;
+        if (tmp31Result3) {
+          function handleLearnMorePremiumGuild() {
+            let arr = state;
+            const routes = state.getState().routes;
+            const found = routes.find((name) => name.name === constants.GUILD_BOOSTING);
+            let obj = outer1_1(outer1_2[33]);
+            obj.setSection(outer1_16.GUILD_BOOSTING);
+            obj = { destinationPane: outer1_16.GUILD_BOOSTING };
+            const result = applicationId(outer1_2[34]).trackUserSettingsPaneViewed(obj);
+            if (null != found) {
+              arr.navigate(found);
+            } else {
+              arr = arr.push(outer1_16.GUILD_BOOSTING);
+            }
           }
+          obj8 = { style: null, onClickManagePremiumGuild: null, subscription: null };
+          obj8[0] = container.subscriptionHeader;
+          obj8[1] = handleLearnMorePremiumGuild;
+          obj8[2] = tmp8;
+          tmp31Result2 = tmp31(tmp(6511), obj8);
+        }
+        obj7[2] = tmp31Result2;
+        if (tmp31Result3) {
+          obj9 = { style: null, subscription: null };
+          obj9[0] = container.billingInfo;
+          obj9[1] = tmp8;
+          tmp31Result3 = tmp31(tmp(6551), obj9);
+        }
+        obj7[3] = tmp31Result3;
+        if (stateFromStores3) {
+          obj10 = { style: null, currentSubscription: null, entitlements: null, hasPremiumGroup: null };
+          obj10[0] = container.accountCredit;
+          obj10[1] = tmp8;
+          obj10[2] = stateFromStores2;
+          obj10[3] = stateFromStores5;
+          stateFromStores3 = tmp31(tmp(6558), obj10);
+        }
+        obj7[4] = stateFromStores3;
+        obj7[5] = onClose;
+        if (TIER_2_LEADING == null) {
+          TIER_2_LEADING = tmp5(9322).PremiumFeatureCardOrder.TIER_2_LEADING;
+        }
+        obj7[6] = TIER_2_LEADING;
+        obj7[7] = stateFromStores2;
+        obj7[8] = onPaymentSuccess;
+        obj7[9] = onPaymentDismiss;
+        obj7[10] = isFullScreenPresentation;
+        tmp31Result1 = tmp31(tmp(12494), obj7);
+        const tmpResult = tmp(12494);
+      } else if (premiumTrialOfferPremiumType === closure_17.TIER_0) {
+        let TIER_2_LEADING2 = tmp5(9322).PremiumFeatureCardOrder.TIER_0_LEADING;
+      } else {
+        TIER_2_LEADING2 = premiumFeatureCardOrder;
+        if (premiumTrialOfferPremiumType === tmp33.TIER_2) {
+          TIER_2_LEADING2 = tmp5(9322).PremiumFeatureCardOrder.TIER_2_LEADING;
         }
       }
-      obj7 = { applicationId, userHasSubscription: tmp23 };
-      let tmp48 = tmp23;
-      if (tmp23) {
-        obj8 = {
-          style: tmp.subscriptionHeader,
-          onClickManagePremiumGuild: function handleLearnMorePremiumGuild() {
-                  const routes = navigation2.getState().routes;
-                  const found = routes.find((name) => name.name === outer2_16.GUILD_BOOSTING);
-                  let obj = outer1_1(outer1_2[33]);
-                  obj.setSection(outer1_16.GUILD_BOOSTING);
-                  obj = { destinationPane: outer1_16.GUILD_BOOSTING };
-                  const result = applicationId(outer1_2[34]).trackUserSettingsPaneViewed(obj);
-                  if (null != found) {
-                    navigation2.navigate(found);
-                  } else {
-                    navigation2.push(outer1_16.GUILD_BOOSTING);
-                  }
-                },
-          subscription: tmp8
-        };
-        tmp48 = jsx(importDefault(6490), {
-          style: tmp.subscriptionHeader,
-          onClickManagePremiumGuild: function handleLearnMorePremiumGuild() {
-                  const routes = navigation2.getState().routes;
-                  const found = routes.find((name) => name.name === outer2_16.GUILD_BOOSTING);
-                  let obj = outer1_1(outer1_2[33]);
-                  obj.setSection(outer1_16.GUILD_BOOSTING);
-                  obj = { destinationPane: outer1_16.GUILD_BOOSTING };
-                  const result = applicationId(outer1_2[34]).trackUserSettingsPaneViewed(obj);
-                  if (null != found) {
-                    navigation2.navigate(found);
-                  } else {
-                    navigation2.push(outer1_16.GUILD_BOOSTING);
-                  }
-                },
-          subscription: tmp8
-        });
-      }
-      obj7.subscriptionDetails = tmp48;
-      if (tmp23) {
-        obj9 = { style: tmp.billingInfo, subscription: tmp8 };
-        tmp23 = jsx(importDefault(6530), { style: tmp.billingInfo, subscription: tmp8 });
-      }
-      obj7.billingInfo = tmp23;
-      if (stateFromStores3) {
-        obj10 = { style: tmp.accountCredit, currentSubscription: tmp8, entitlements: stateFromStores2, hasPremiumGroup: stateFromStores5 };
-        stateFromStores3 = jsx(importDefault(6537), { style: tmp.accountCredit, currentSubscription: tmp8, entitlements: stateFromStores2, hasPremiumGroup: stateFromStores5 });
-      }
-      obj7.accountCredit = stateFromStores3;
-      obj7.onClose = onClose;
-      if (null != TIER_2_LEADING) {
-        let TIER_2_LEADING2 = TIER_2_LEADING;
-      } else {
-        TIER_2_LEADING2 = applicationId(9298).PremiumFeatureCardOrder.TIER_2_LEADING;
-      }
-      obj7.premiumFeatureCardOrder = TIER_2_LEADING2;
-      obj7.entitlements = stateFromStores2;
-      obj7.onPaymentSuccess = onPaymentSuccess;
-      obj7.onPaymentDismiss = onPaymentDismiss;
-      obj7.isFullScreenPresentation = isFullScreenPresentation;
-      tmp44Result = jsx(importDefault(12472), { applicationId, userHasSubscription: tmp23 });
-      const tmp44 = jsx;
-      const tmp47 = importDefault(12472);
     }
-    obj4.children = tmp44Result;
-    obj2.children = jsx(applicationId(5497).AnalyticsLocationProvider, { value: analyticsLocations });
-    tmp31(closure_6, obj2);
-    obj20 = applicationId(477);
+    obj4[1] = tmp31Result1;
+    obj2[1] = tmp31(tmp5(5515).AnalyticsLocationProvider, obj4);
+    tmp31Result = tmp31(closure_6, obj2);
     const tmp32 = closure_6;
-    const tmp35 = jsx;
+    tmp5Result1 = tmp5(500);
   }
 };

@@ -1,17 +1,15 @@
-// Module ID: 15892
-// Function ID: 122559
+// Module ID: 15927
+// Function ID: 15928
 // Name: apexExperiment
-// Dependencies: [1428, 2]
+// Dependencies: [1452, 2]
 
-// Module 15892 (apexExperiment)
+// Module 15927 (apexExperiment)
 import ApexExperiment from "ApexExperiment";
 
 let obj = { CONTROL: 0, [0]: "CONTROL", SCREENSHARE_REPLACES_CHAT: 1, [1]: "SCREENSHARE_REPLACES_CHAT", SCREENSHARE_REPLACES_SOUNDBOARD: 2, [2]: "SCREENSHARE_REPLACES_SOUNDBOARD" };
-obj = { name: "2026-01-mobile-go-live-entrypoint", kind: "user" };
-obj.defaultConfig = { treatment: obj.CONTROL };
+obj = { treatment: obj.CONTROL };
 obj = { treatment: obj.SCREENSHARE_REPLACES_CHAT };
-obj.variations = { [obj.SCREENSHARE_REPLACES_CHAT]: obj, [obj.SCREENSHARE_REPLACES_SOUNDBOARD]: { treatment: obj.SCREENSHARE_REPLACES_SOUNDBOARD } };
-const apexExperiment = ApexExperiment.createApexExperiment(obj);
+const apexExperiment = ApexExperiment.createApexExperiment({ name: "2026-01-mobile-go-live-entrypoint", kind: "user", defaultConfig: obj, variations: { [obj.SCREENSHARE_REPLACES_CHAT]: obj, [obj.SCREENSHARE_REPLACES_SOUNDBOARD]: { treatment: obj.SCREENSHARE_REPLACES_SOUNDBOARD } } });
 const result = require("set").fileFinishedImporting("modules/go_live/MobileGoLiveEntrypointExperiment.tsx");
 
 export default apexExperiment;

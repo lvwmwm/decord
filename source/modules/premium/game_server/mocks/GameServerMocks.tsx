@@ -1,42 +1,76 @@
-// Module ID: 11552
-// Function ID: 89846
-// Name: createMockGame
-// Dependencies: [4055, 11553, 2]
+// Module ID: 11576
+// Function ID: 11577
+// Name: items5
+// Dependencies: [4079, 11577, 2]
 
-// Module 11552 (createMockGame)
-function createMockGame(_1, name) {
-  const obj = { id: _1, name, provider: require(4055) /* GameServerProviderType */.GameServerProviderType.SHOCKBYTE, plans: items1 };
-  const items = [...items1.map((cost) => cost.cost)];
-  obj.baseCost = Math.min.apply(items);
-  obj.gameId = "1";
-  return obj;
-}
-let obj = { id: "1", name: "GameServer #1", cost: 3 };
-let items = [{ title: "2", description: "GB" }, { title: "1", description: "vCPU" }, { title: "25", description: "GB" }];
-obj.specifications = items;
-const items1 = [obj, , ];
-obj = { id: "2", name: "GameServer #2", cost: 6 };
+// Module 11576 (items5)
+const items = [{ title: "2", description: "GB" }, { title: "1", description: "vCPU" }, { title: "25", description: "GB" }];
+const items1 = [{ id: "1", name: "GameServer #1", cost: 3, specifications: items }, , ];
 const items2 = [{ title: "2", description: "GB" }, { title: "1", description: "vCPU" }, { title: "25", description: "GB" }];
-obj.specifications = items2;
-items1[1] = obj;
-obj = { id: "3", name: "GameServer #3", cost: 12 };
+items1[1] = { id: "2", name: "GameServer #2", cost: 6, specifications: items2 };
 const items3 = [{ title: "2", description: "GB" }, { title: "1", description: "vCPU" }, { title: "25", description: "GB" }];
-obj.specifications = items3;
-items1[2] = obj;
-const items4 = [createMockGame("1", "GameServer Test #1"), createMockGame("2", "GameServer Test #2"), createMockGame("3", "GameServer Test #3"), createMockGame("4", "GameServer Test #4"), createMockGame("5", "GameServer Test #5"), createMockGame("6", "GameServer Test #6"), createMockGame("7", "GameServer Test #7"), createMockGame("8", "GameServer Test #8"), createMockGame("9", "GameServer Test #9"), createMockGame("10", "GameServer Test #10"), createMockGame("11", "GameServer Test #11"), createMockGame("12", "GameServer Test #12")];
-const obj1 = { id: "1", gameId: "1", name: "GameServer Test #1", port: "25565", regionId: "us-east", regionName: "US East", planId: items1[1].id, planName: items1[1].name, onlineConnectionsCount: 0, maxConnectionsCount: 10, status: require("GameServerStatus").GameServerStatus.ONLINE, serverIP: "127.0.0.1", gameServerPanelUrl: "https://google.com", entitlementId: "1" };
-const items5 = [obj1, , , , , ];
-const obj2 = { id: "2", gameId: "2", name: "GameServer Test #2", port: "25565", regionId: "us-east", regionName: "US East", planId: items1[1].id, planName: items1[1].name, onlineConnectionsCount: 0, maxConnectionsCount: 10, status: require("GameServerStatus").GameServerStatus.ONLINE, serverIP: "127.0.0.1", gameServerPanelUrl: "https://google.com", entitlementId: "2" };
-items5[1] = obj2;
-const obj3 = { id: "3", gameId: "3", name: "GameServer Test #3", port: "25565", regionId: "us-east", regionName: "US East", planId: items1[1].id, planName: items1[1].name, onlineConnectionsCount: 0, maxConnectionsCount: 10, status: require("GameServerStatus").GameServerStatus.ONLINE, serverIP: "127.0.0.1", gameServerPanelUrl: "https://google.com", entitlementId: "3" };
-items5[2] = obj3;
-const obj4 = { id: "4", gameId: "4", name: "GameServer Test #4", port: "25565", regionId: "us-east", regionName: "US East", planId: items1[1].id, planName: items1[1].name, onlineConnectionsCount: 0, maxConnectionsCount: 10, status: require("GameServerStatus").GameServerStatus.ONLINE, serverIP: "127.0.0.1", gameServerPanelUrl: "https://google.com", entitlementId: "4" };
-items5[3] = obj4;
-const obj5 = { id: "5", gameId: "5", name: "GameServer Test #5", port: "25565", regionId: "us-east", regionName: "US East", planId: items1[1].id, planName: items1[1].name, onlineConnectionsCount: 0, maxConnectionsCount: 10, status: require("GameServerStatus").GameServerStatus.ONLINE, serverIP: "127.0.0.1", gameServerPanelUrl: "https://google.com", entitlementId: "5" };
-items5[4] = obj5;
-const obj6 = { id: "6", gameId: "6", name: "GameServer Test #6", port: "25565", regionId: "us-east", regionName: "US East", planId: items1[1].id, planName: items1[1].name, onlineConnectionsCount: 0, maxConnectionsCount: 10, status: require("GameServerStatus").GameServerStatus.ONLINE, serverIP: "127.0.0.1", gameServerPanelUrl: "https://google.com", entitlementId: "6" };
-items5[5] = obj6;
+items1[2] = { id: "3", name: "GameServer #3", cost: 12, specifications: items3 };
+let obj = { id: "1", name: "GameServer Test #1", provider: require("GameServerProviderType").GameServerProviderType.SHOCKBYTE, plans: items1, baseCost: null, gameId: "1" };
+const items4 = [...items1.map((cost) => cost.cost)];
+obj[4] = Math.min.apply(items4);
+const items5 = [obj, , , , , , , , , , , ];
+obj = { id: "2", name: "GameServer Test #2", provider: require("GameServerProviderType").GameServerProviderType.SHOCKBYTE, plans: items1, baseCost: null, gameId: "1" };
+const items6 = [...items1.map((cost) => cost.cost)];
+obj[4] = Math.min.apply(items6);
+items5[1] = obj;
+obj = { id: "3", name: "GameServer Test #3", provider: require("GameServerProviderType").GameServerProviderType.SHOCKBYTE, plans: items1, baseCost: null, gameId: "1" };
+const items7 = [...items1.map((cost) => cost.cost)];
+obj[4] = Math.min.apply(items7);
+items5[2] = obj;
+const obj1 = { id: "4", name: "GameServer Test #4", provider: require("GameServerProviderType").GameServerProviderType.SHOCKBYTE, plans: items1, baseCost: null, gameId: "1" };
+const items8 = [...items1.map((cost) => cost.cost)];
+obj1[4] = Math.min.apply(items8);
+items5[3] = obj1;
+const obj2 = { id: "5", name: "GameServer Test #5", provider: require("GameServerProviderType").GameServerProviderType.SHOCKBYTE, plans: items1, baseCost: null, gameId: "1" };
+const items9 = [...items1.map((cost) => cost.cost)];
+obj2[4] = Math.min.apply(items9);
+items5[4] = obj2;
+const obj3 = { id: "6", name: "GameServer Test #6", provider: require("GameServerProviderType").GameServerProviderType.SHOCKBYTE, plans: items1, baseCost: null, gameId: "1" };
+const items10 = [...items1.map((cost) => cost.cost)];
+obj3[4] = Math.min.apply(items10);
+items5[5] = obj3;
+const obj4 = { id: "7", name: "GameServer Test #7", provider: require("GameServerProviderType").GameServerProviderType.SHOCKBYTE, plans: items1, baseCost: null, gameId: "1" };
+const items11 = [...items1.map((cost) => cost.cost)];
+obj4[4] = Math.min.apply(items11);
+items5[6] = obj4;
+const obj5 = { id: "8", name: "GameServer Test #8", provider: require("GameServerProviderType").GameServerProviderType.SHOCKBYTE, plans: items1, baseCost: null, gameId: "1" };
+const items12 = [...items1.map((cost) => cost.cost)];
+obj5[4] = Math.min.apply(items12);
+items5[7] = obj5;
+const obj6 = { id: "9", name: "GameServer Test #9", provider: require("GameServerProviderType").GameServerProviderType.SHOCKBYTE, plans: items1, baseCost: null, gameId: "1" };
+const items13 = [...items1.map((cost) => cost.cost)];
+obj6[4] = Math.min.apply(items13);
+items5[8] = obj6;
+const obj7 = { id: "10", name: "GameServer Test #10", provider: require("GameServerProviderType").GameServerProviderType.SHOCKBYTE, plans: items1, baseCost: null, gameId: "1" };
+const items14 = [...items1.map((cost) => cost.cost)];
+obj7[4] = Math.min.apply(items14);
+items5[9] = obj7;
+const obj8 = { id: "11", name: "GameServer Test #11", provider: require("GameServerProviderType").GameServerProviderType.SHOCKBYTE, plans: items1, baseCost: null, gameId: "1" };
+const items15 = [...items1.map((cost) => cost.cost)];
+obj8[4] = Math.min.apply(items15);
+items5[10] = obj8;
+const obj9 = { id: "12", name: "GameServer Test #12", provider: require("GameServerProviderType").GameServerProviderType.SHOCKBYTE, plans: items1, baseCost: null, gameId: "1" };
+const items16 = [...items1.map((cost) => cost.cost)];
+obj9[4] = Math.min.apply(items16);
+items5[11] = obj9;
+const items17 = [{ id: "1", gameId: "1", name: "GameServer Test #1", port: "25565", regionId: "us-east", regionName: "US East", planId: items1[1].id, planName: items1[1].name, onlineConnectionsCount: 0, maxConnectionsCount: 10, status: require("GameServerStatus").GameServerStatus.ONLINE, serverIP: "127.0.0.1", gameServerPanelUrl: "https://google.com", entitlementId: "1" }, , , , , ];
+const obj10 = { id: "1", gameId: "1", name: "GameServer Test #1", port: "25565", regionId: "us-east", regionName: "US East", planId: items1[1].id, planName: items1[1].name, onlineConnectionsCount: 0, maxConnectionsCount: 10, status: require("GameServerStatus").GameServerStatus.ONLINE, serverIP: "127.0.0.1", gameServerPanelUrl: "https://google.com", entitlementId: "1" };
+items17[1] = { id: "2", gameId: "2", name: "GameServer Test #2", port: "25565", regionId: "us-east", regionName: "US East", planId: items1[1].id, planName: items1[1].name, onlineConnectionsCount: 0, maxConnectionsCount: 10, status: require("GameServerStatus").GameServerStatus.ONLINE, serverIP: "127.0.0.1", gameServerPanelUrl: "https://google.com", entitlementId: "2" };
+const obj11 = { id: "2", gameId: "2", name: "GameServer Test #2", port: "25565", regionId: "us-east", regionName: "US East", planId: items1[1].id, planName: items1[1].name, onlineConnectionsCount: 0, maxConnectionsCount: 10, status: require("GameServerStatus").GameServerStatus.ONLINE, serverIP: "127.0.0.1", gameServerPanelUrl: "https://google.com", entitlementId: "2" };
+items17[2] = { id: "3", gameId: "3", name: "GameServer Test #3", port: "25565", regionId: "us-east", regionName: "US East", planId: items1[1].id, planName: items1[1].name, onlineConnectionsCount: 0, maxConnectionsCount: 10, status: require("GameServerStatus").GameServerStatus.ONLINE, serverIP: "127.0.0.1", gameServerPanelUrl: "https://google.com", entitlementId: "3" };
+const obj12 = { id: "3", gameId: "3", name: "GameServer Test #3", port: "25565", regionId: "us-east", regionName: "US East", planId: items1[1].id, planName: items1[1].name, onlineConnectionsCount: 0, maxConnectionsCount: 10, status: require("GameServerStatus").GameServerStatus.ONLINE, serverIP: "127.0.0.1", gameServerPanelUrl: "https://google.com", entitlementId: "3" };
+items17[3] = { id: "4", gameId: "4", name: "GameServer Test #4", port: "25565", regionId: "us-east", regionName: "US East", planId: items1[1].id, planName: items1[1].name, onlineConnectionsCount: 0, maxConnectionsCount: 10, status: require("GameServerStatus").GameServerStatus.ONLINE, serverIP: "127.0.0.1", gameServerPanelUrl: "https://google.com", entitlementId: "4" };
+const obj13 = { id: "4", gameId: "4", name: "GameServer Test #4", port: "25565", regionId: "us-east", regionName: "US East", planId: items1[1].id, planName: items1[1].name, onlineConnectionsCount: 0, maxConnectionsCount: 10, status: require("GameServerStatus").GameServerStatus.ONLINE, serverIP: "127.0.0.1", gameServerPanelUrl: "https://google.com", entitlementId: "4" };
+items17[4] = { id: "5", gameId: "5", name: "GameServer Test #5", port: "25565", regionId: "us-east", regionName: "US East", planId: items1[1].id, planName: items1[1].name, onlineConnectionsCount: 0, maxConnectionsCount: 10, status: require("GameServerStatus").GameServerStatus.ONLINE, serverIP: "127.0.0.1", gameServerPanelUrl: "https://google.com", entitlementId: "5" };
+const obj14 = { id: "5", gameId: "5", name: "GameServer Test #5", port: "25565", regionId: "us-east", regionName: "US East", planId: items1[1].id, planName: items1[1].name, onlineConnectionsCount: 0, maxConnectionsCount: 10, status: require("GameServerStatus").GameServerStatus.ONLINE, serverIP: "127.0.0.1", gameServerPanelUrl: "https://google.com", entitlementId: "5" };
+items17[5] = { id: "6", gameId: "6", name: "GameServer Test #6", port: "25565", regionId: "us-east", regionName: "US East", planId: items1[1].id, planName: items1[1].name, onlineConnectionsCount: 0, maxConnectionsCount: 10, status: require("GameServerStatus").GameServerStatus.ONLINE, serverIP: "127.0.0.1", gameServerPanelUrl: "https://google.com", entitlementId: "6" };
+const obj15 = { id: "6", gameId: "6", name: "GameServer Test #6", port: "25565", regionId: "us-east", regionName: "US East", planId: items1[1].id, planName: items1[1].name, onlineConnectionsCount: 0, maxConnectionsCount: 10, status: require("GameServerStatus").GameServerStatus.ONLINE, serverIP: "127.0.0.1", gameServerPanelUrl: "https://google.com", entitlementId: "6" };
 const result = require("set").fileFinishedImporting("modules/premium/game_server/mocks/GameServerMocks.tsx");
 
-export const GAME_SERVER_GAME_MOCKS = items4;
-export const GAME_SERVER_INSTANCE_MOCKS = items5;
+export const GAME_SERVER_GAME_MOCKS = items5;
+export const GAME_SERVER_INSTANCE_MOCKS = items17;

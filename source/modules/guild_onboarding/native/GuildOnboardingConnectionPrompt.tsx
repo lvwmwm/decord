@@ -1,152 +1,81 @@
-// Module ID: 5494
-// Function ID: 46783
-// Name: _createForOfIteratorHelperLoose
-// Dependencies: [31, 27, 5116, 5101, 4847, 1838, 5093, 5094, 5090, 653, 33, 4165, 5118, 689, 1456, 1557, 566, 5100, 675, 4359, 5092, 5155, 4161, 1212, 5495, 5517, 4578, 2]
+// Module ID: 5512
+// Function ID: 5513
+// Name: GuildOnboardingConnectionPrompt
+// Dependencies: [19, 17, 5138, 5123, 4869, 1862, 5115, 5116, 5112, 676, 21, 4189, 5140, 712, 1480, 1581, 589, 5122, 698, 4384, 5114, 5177, 4185, 1236, 5513, 5535, 4600, 2]
 // Exports: default
 
-// Module 5494 (_createForOfIteratorHelperLoose)
-import result from "result";
-import get_ActivityIndicator from "set";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_7 from "_isNativeReflectConstruct";
-import closure_8 from "_isNativeReflectConstruct";
-import closure_9 from "_createForOfIteratorHelperLoose";
-import closure_10 from "_isNativeReflectConstruct";
-import { OnboardingConnectionType } from "_createForOfIteratorHelperLoose";
+// Module 5512 (GuildOnboardingConnectionPrompt)
+import collectGuildAnalyticsMetadata from "collectGuildAnalyticsMetadata";
+import get_ActivityIndicator from "isChattableChannel";
+import get from "get";
+import recomputeFromAppTokens from "recomputeFromAppTokens";
+import set from "set";
+import createGuildRecordFromRust from "createGuildRecordFromRust";
+import handleUpdate from "handleUpdate";
+import { OnboardingConnectionType } from "serverPromptToClientPrompt";
 import { GuildOnboardingModalStates as closure_12 } from "GUILD_ONBOARDING_MODAL_KEY";
 import { AnalyticEvents } from "ME";
-import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import jsxProd from "SafeAreaPaddingView";
+import createCacheKey from "createCacheKey";
 
+let c4;
+let c5;
 let closure_14;
 let closure_15;
-let closure_4;
-let closure_5;
 const require = arg1;
-function _createForOfIteratorHelperLoose(iterable) {
-  let closure_0 = iterable;
-  iterable = "undefined" !== typeof Symbol;
-  if (iterable) {
-    const _Symbol = Symbol;
-    iterable = iterable[Symbol.iterator];
-  }
-  if (!iterable) {
-    iterable = iterable[Symbol.iterator];
-  }
-  if (iterable) {
-    const iter = iterable.call(iterable);
-    const next = iter.next;
-    return next.bind(iter);
-  } else {
-    const _Array = Array;
-    let tmp = iterable;
-    if (!Array.isArray(iterable)) {
-      let tmp2;
-      if (iterable) {
-        if ("string" === typeof iterable) {
-          tmp2 = _arrayLikeToArray(iterable, undefined);
-        } else {
-          const toString = {}.toString;
-          const substr = toString.call(iterable).slice(8, -1);
-          let name = substr;
-          if (tmp3) {
-            name = iterable.constructor.name;
-          }
-          if ("Map" !== name) {
-            if ("Set" !== name) {
-              if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(iterable, undefined);
-              } else {
-                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
-              }
-            }
-            tmp2 = arr;
-          }
-          const _Array2 = Array;
-          arr = Array.from(iterable);
-          const callResult = toString.call(iterable);
-          tmp3 = "Object" === substr && iterable.constructor;
-        }
-      }
-      tmp = tmp2;
-      if (!tmp2) {
-        const _TypeError = TypeError;
-        const typeError = new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
-        throw typeError;
-      }
-    }
-    if (tmp) {
-      closure_0 = tmp;
-    }
-    let c1 = 0;
-    return () => {
-      if (closure_1 >= length.length) {
-        let obj = { done: true };
-      } else {
-        obj = { done: false };
-        closure_1 = tmp3 + 1;
-        obj.value = length[+closure_1];
-      }
-      return obj;
-    };
-  }
-}
-function _arrayLikeToArray(arg0, arg1) {
-  let length;
-  if (tmp) {
-    length = arg0.length;
-  }
-  const ArrayResult = Array(length);
-  for (let num = 0; num < length; num = num + 1) {
-    ArrayResult[num] = arg0[num];
-  }
-  return ArrayResult;
-}
-({ View: closure_4, ScrollView: closure_5 } = get_ActivityIndicator);
+({ View: c4, ScrollView: c5 } = get_ActivityIndicator);
 ({ jsx: closure_14, jsxs: closure_15 } = jsxProd);
-_createForOfIteratorHelperLoose = { flex: { flex: 1 } };
-_createForOfIteratorHelperLoose = { display: "flex", flex: 1, flexGrow: 1, marginTop: require("NAV_BAR_HEIGHT").NAV_BAR_HEIGHT, marginBottom: require("_createForOfIteratorHelperLoose").space.PX_16, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWER };
-_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
-let obj1 = { display: "flex", flexGrow: 1, paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16, paddingTop: require("_createForOfIteratorHelperLoose").space.PX_16, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWER };
-_createForOfIteratorHelperLoose.scrollContainer = obj1;
-_createForOfIteratorHelperLoose.header = { marginBottom: require("_createForOfIteratorHelperLoose").space.PX_24 };
-let obj2 = { marginBottom: require("_createForOfIteratorHelperLoose").space.PX_24 };
-_createForOfIteratorHelperLoose.title = { marginBottom: require("_createForOfIteratorHelperLoose").space.PX_8 };
-let obj3 = { marginBottom: require("_createForOfIteratorHelperLoose").space.PX_8 };
-_createForOfIteratorHelperLoose.description = { marginTop: require("_createForOfIteratorHelperLoose").space.PX_8 };
-let obj4 = { marginTop: require("_createForOfIteratorHelperLoose").space.PX_8 };
-_createForOfIteratorHelperLoose.connectionsList = { marginTop: require("_createForOfIteratorHelperLoose").space.PX_8 };
-let obj6 = { display: "flex", flexDirection: "column", justifyContent: "flex-end", alignItems: "center", bottom: 0, paddingBottom: require("_createForOfIteratorHelperLoose").space.PX_8, position: "absolute", width: "100%", backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWER };
-_createForOfIteratorHelperLoose.footer = obj6;
-let obj5 = { marginTop: require("_createForOfIteratorHelperLoose").space.PX_8 };
-_createForOfIteratorHelperLoose.footerContent = { width: "100%", paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16 };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-let obj7 = { width: "100%", paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16 };
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/guild_onboarding/native/GuildOnboardingConnectionPrompt.tsx");
+createCacheKey = { flex: { flex: 1 }, container: null, scrollContainer: null, header: null, title: null, description: null, connectionsList: null, footer: null, footerContent: null };
+createCacheKey = { display: "flex", flex: 1, flexGrow: 1, marginTop: require("NAV_BAR_HEIGHT").NAV_BAR_HEIGHT, marginBottom: require("Themes").space.PX_16, backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOWER };
+createCacheKey[1] = createCacheKey;
+createCacheKey[2] = { display: "flex", flexGrow: 1, paddingHorizontal: require("Themes").space.PX_16, paddingTop: require("Themes").space.PX_16, backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOWER };
+let obj1 = { display: "flex", flexGrow: 1, paddingHorizontal: require("Themes").space.PX_16, paddingTop: require("Themes").space.PX_16, backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOWER };
+createCacheKey[3] = { marginBottom: require("Themes").space.PX_24 };
+let obj2 = { marginBottom: require("Themes").space.PX_24 };
+createCacheKey[4] = { marginBottom: require("Themes").space.PX_8 };
+let obj3 = { marginBottom: require("Themes").space.PX_8 };
+createCacheKey[5] = { marginTop: require("Themes").space.PX_8 };
+let obj4 = { marginTop: require("Themes").space.PX_8 };
+createCacheKey[6] = { marginTop: require("Themes").space.PX_8 };
+let obj5 = { marginTop: require("Themes").space.PX_8 };
+createCacheKey[7] = { display: "flex", flexDirection: "column", justifyContent: "flex-end", alignItems: "center", bottom: 0, paddingBottom: require("Themes").space.PX_8, position: "absolute", width: "100%", backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOWER };
+let obj6 = { display: "flex", flexDirection: "column", justifyContent: "flex-end", alignItems: "center", bottom: 0, paddingBottom: require("Themes").space.PX_8, position: "absolute", width: "100%", backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOWER };
+createCacheKey[8] = { width: "100%", paddingHorizontal: require("Themes").space.PX_16 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let obj7 = { width: "100%", paddingHorizontal: require("Themes").space.PX_16 };
+const result = require("get").fileFinishedImporting("modules/guild_onboarding/native/GuildOnboardingConnectionPrompt.tsx");
 
 export default function GuildOnboardingConnectionPrompt(guildId) {
   guildId = guildId.guildId;
   const onComplete = guildId.onComplete;
   const isLastStep = guildId.isLastStep;
-  let tmp = _createForOfIteratorHelperLoose();
+  let navigation;
+  let closure_4;
+  let stateFromStores;
+  let stateFromStoresArray;
+  let stateFromStores1;
+  let stateFromStores2;
+  let stateFromStores3;
+  let stateFromStores4;
+  let tmp = createCacheKey();
   let obj = guildId(isLastStep[14]);
-  const navigation = obj.useNavigation();
+  navigation = obj.useNavigation();
   const bottom = onComplete(isLastStep[15])().bottom;
   const sum = 64 + bottom;
   const sum1 = sum + onComplete(isLastStep[13]).space.PX_8;
-  let closure_4 = navigation.useRef(false);
+  closure_4 = navigation.useRef(false);
   let obj1 = guildId(isLastStep[16]);
   const items = [stateFromStores4];
-  const stateFromStores = obj1.useStateFromStores(items, () => stateFromStores4.getOnboardingConnections(guildId));
+  stateFromStores = obj1.useStateFromStores(items, () => stateFromStores4.getOnboardingConnections(guildId));
   let obj2 = guildId(isLastStep[16]);
   const items1 = [stateFromStores4];
-  const stateFromStoresArray = obj2.useStateFromStoresArray(items1, () => stateFromStores4.getOnboardingPromptsForOnboarding(guildId));
+  stateFromStoresArray = obj2.useStateFromStoresArray(items1, () => stateFromStores4.getOnboardingPromptsForOnboarding(guildId));
   let obj3 = guildId(isLastStep[16]);
   const items2 = [stateFromStores3];
-  const stateFromStores1 = obj3.useStateFromStores(items2, () => stateFromStores3.getGuild(guildId));
+  stateFromStores1 = obj3.useStateFromStores(items2, () => stateFromStores3.getGuild(guildId));
   let obj4 = guildId(isLastStep[16]);
   const items3 = [stateFromStoresArray];
-  const stateFromStores2 = obj4.useStateFromStores(items3, () => stateFromStoresArray.getRulesPrompt(guildId));
+  stateFromStores2 = obj4.useStateFromStores(items3, () => stateFromStoresArray.getRulesPrompt(guildId));
   let obj5 = guildId(isLastStep[16]);
   const items4 = [stateFromStores4];
   stateFromStores3 = obj5.useStateFromStores(items4, () => stateFromStores4.isLoading());
@@ -154,46 +83,41 @@ export default function GuildOnboardingConnectionPrompt(guildId) {
   const items5 = [stateFromStores1, stateFromStores2];
   const items6 = [stateFromStores];
   stateFromStores4 = obj6.useStateFromStores(items5, () => {
-    const tmp = outer1_17(stateFromStores);
-    const iter = tmp();
-    let iter2 = iter;
-    if (!iter.done) {
-      while (true) {
-        let value = iter2.value;
-        let connection_type = value.connection_type;
-        let tmp3 = outer1_11;
-        if (outer1_11.APPLICATION === connection_type) {
-          let tmp8 = stateFromStores1;
-          let tmp5 = tmp2;
-          if (null != stateFromStores1.getNewestTokenForApplication(value.application_id)) {
-            let flag2 = true;
-            return true;
-          }
-        } else {
-          let tmp4 = outer1_11;
-          if (outer1_11.PROVIDER_CONNECTED_ACCOUNT === connection_type) {
-            tmp5 = tmp2;
-            if (null != value.provider_id) {
-              let tmp6 = stateFromStores2;
-              let account = stateFromStores2.getAccount(null, value.provider_id);
-              tmp5 = account;
-              if (null != account) {
-                tmp5 = account;
-                if (!account.revoked) {
-                  break;
-                }
-              }
+    const iter = stateFromStores[Symbol.iterator]();
+    const nextResult = iter.next();
+    while (iter !== undefined) {
+      let tmp3 = nextResult;
+      let connection_type = nextResult.connection_type;
+      if (outer1_11.APPLICATION === connection_type) {
+        let tmp13 = stateFromStores1;
+        let tmp14 = nextResult;
+        if (null != stateFromStores1.getNewestTokenForApplication(tmp3.application_id)) {
+          let tmp15 = iter;
+          iter.return();
+          let flag2 = true;
+          return true;
+        }
+      } else if (tmp4.PROVIDER_CONNECTED_ACCOUNT === connection_type) {
+        let tmp6 = nextResult;
+        if (null != tmp3.provider_id) {
+          let tmp7 = stateFromStores2;
+          let tmp8 = nextResult;
+          let account = stateFromStores2.getAccount(null, tmp3.provider_id);
+          if (null != account) {
+            let tmp11 = account;
+            if (!tmp10.revoked) {
+              let tmp12 = iter;
+              iter.return();
+              let flag = true;
+              return true;
             }
-          } else {
-            let connection_type2 = value.connection_type;
-            tmp5 = tmp2;
           }
         }
-        let iter3 = tmp();
-        tmp2 = tmp5;
-        iter2 = iter3;
+      } else {
+        let tmp5 = nextResult;
+        let connection_type2 = tmp3.connection_type;
       }
-      return true;
+      continue;
     }
     return false;
   }, items6);
@@ -203,20 +127,18 @@ export default function GuildOnboardingConnectionPrompt(guildId) {
       if (0 !== stateFromStores.length) {
         if (!ref.current) {
           let obj = guildId(isLastStep[17]);
-          const providerConnectionState = obj.getProviderConnectionState(stateFromStores);
-          const applicationConnectionState = guildId(isLastStep[17]).getApplicationConnectionState(stateFromStores);
+          const providerConnectionState = obj.getProviderConnectionState(tmp);
+          const applicationConnectionState = guildId(isLastStep[17]).getApplicationConnectionState(tmp);
           const obj2 = guildId(isLastStep[17]);
           obj = {};
           const obj3 = onComplete(isLastStep[18]);
           const merged = Object.assign(guildId(isLastStep[19]).collectGuildAnalyticsMetadata(guildId));
-          obj["step"] = guildId(isLastStep[20]).CONNECTIONS_STEP;
-          obj["required"] = false;
-          obj["provider_connections_connected"] = providerConnectionState.connected;
-          obj["provider_connections_not_connected"] = providerConnectionState.notConnected;
-          obj["application_connections_connected"] = applicationConnectionState.connected;
-          obj["application_connections_not_connected"] = applicationConnectionState.notConnected;
+          obj.step = guildId(isLastStep[20]).CONNECTIONS_STEP;
+          obj.required = false;
+          ({ connected: obj4.provider_connections_connected, notConnected: obj4.provider_connections_not_connected } = providerConnectionState);
+          ({ connected: obj4.application_connections_connected, notConnected: obj4.application_connections_not_connected } = applicationConnectionState);
           obj3.track(outer1_13.GUILD_ONBOARDING_STEP_VIEWED, obj);
-          ref.current = true;
+          tmp12.current = true;
           const obj5 = guildId(isLastStep[19]);
         }
       }
@@ -228,90 +150,94 @@ export default function GuildOnboardingConnectionPrompt(guildId) {
     const providerConnectionState = obj.getProviderConnectionState(stateFromStores);
     const applicationConnectionState = guildId(isLastStep[17]).getApplicationConnectionState(stateFromStores);
     const obj2 = guildId(isLastStep[17]);
+    const tmp = guildId;
+    const tmp2 = isLastStep;
     obj = {};
     const obj3 = onComplete(isLastStep[18]);
     const merged = Object.assign(guildId(isLastStep[19]).collectGuildAnalyticsMetadata(guildId));
-    obj["step"] = guildId(isLastStep[20]).CONNECTIONS_STEP;
-    obj["skipped"] = !stateFromStores4;
-    obj["back"] = false;
-    obj["options_selected"] = 0;
-    obj["in_onboarding"] = true;
-    obj["is_final_step"] = isLastStep;
-    obj["provider_connections_connected"] = providerConnectionState.connected;
-    obj["provider_connections_not_connected"] = providerConnectionState.notConnected;
-    obj["application_connections_connected"] = applicationConnectionState.connected;
-    obj["application_connections_not_connected"] = applicationConnectionState.notConnected;
+    obj.step = guildId(isLastStep[20]).CONNECTIONS_STEP;
+    obj.skipped = !stateFromStores4;
+    obj.back = false;
+    obj.options_selected = 0;
+    obj.in_onboarding = true;
+    obj.is_final_step = isLastStep;
+    ({ connected: obj4.provider_connections_connected, notConnected: obj4.provider_connections_not_connected } = providerConnectionState);
+    ({ connected: obj4.application_connections_connected, notConnected: obj4.application_connections_not_connected } = applicationConnectionState);
     obj3.track(outer1_13.GUILD_ONBOARDING_STEP_COMPLETED, obj);
     if (stateFromStoresArray.length > 0) {
-      obj = { currentPrompt: 0 };
-      navigation.push(outer1_12.PROMPT, obj);
+      navigation.push(outer1_12.PROMPT, { currentPrompt: 0 });
     } else {
-      if (obj6.showRulesInOnboarding(stateFromStores1, stateFromStores2)) {
+      if (tmpResult.showRulesInOnboarding(stateFromStores1, stateFromStores2)) {
         navigation.push(outer1_12.RULES);
       } else {
         onComplete();
       }
-      obj6 = guildId(isLastStep[17]);
+      tmpResult = tmp(tmp2[17]);
     }
   }, items8);
-  obj = { top: true, style: items9 };
+  obj = { top: true, style: items9, children: null };
   items9 = [, ];
   ({ flex: arr12[0], container: arr12[1] } = tmp);
   if (stateFromStores3) {
-    obj = {};
+    obj = { style: null, children: null };
     const items10 = [tmp.flex, { justifyContent: "center", alignItems: "center" }];
-    obj.style = items10;
-    obj1 = { variant: "text-md/normal", color: "text-muted" };
-    const intl4 = guildId(isLastStep[23]).intl;
-    obj1.children = intl4.string(guildId(isLastStep[23]).t.ZTNur7);
-    obj.children = callback(guildId(isLastStep[22]).Text, obj1);
-    obj.children = callback(closure_4, obj);
-    let tmp22 = obj;
+    obj[0] = items10;
+    obj1 = { variant: "text-md/normal", color: "text-muted", children: null };
+    const intl4 = tmp2(tmp3[23]).intl;
+    obj1[2] = intl4.string(tmp2(tmp3[23]).t.ZTNur7);
+    obj[1] = tmp13(tmp2(tmp3[22]).Text, obj1);
+    obj[2] = tmp13(closure_4, obj);
+    let tmp19 = obj;
   } else {
-    obj2 = { style: tmp.flex };
-    obj3 = {};
+    obj2 = { style: null, children: null };
+    obj2[0] = tmp.flex;
+    obj3 = { contentContainerStyle: null, children: null };
     const items11 = [tmp.scrollContainer, ];
-    obj4 = { paddingBottom: sum1 };
+    obj4 = { paddingBottom: null };
+    obj4[0] = sum1;
     items11[1] = obj4;
-    obj3.contentContainerStyle = items11;
-    obj5 = { style: tmp.header };
-    obj6 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/semibold", color: "mobile-text-heading-primary" };
-    const intl = guildId(isLastStep[23]).intl;
-    obj6.children = intl.string(guildId(isLastStep[23]).t.eDVMrA);
-    const items12 = [callback(guildId(isLastStep[22]).Text, obj6), ];
-    const obj7 = { style: tmp.description, variant: "text-md/normal", color: "text-muted" };
-    const intl2 = guildId(isLastStep[23]).intl;
-    obj7.children = intl2.string(guildId(isLastStep[23]).t.BozOXu);
-    items12[1] = callback(guildId(isLastStep[22]).Text, obj7);
-    obj5.children = items12;
-    const items13 = [callback2(closure_4, obj5), ];
-    const obj8 = {
-      style: tmp.connectionsList,
-      children: stateFromStores.map((connection) => {
-          const obj = { connection, guildId, location: onComplete(isLastStep[25]).GUILD_ONBOARDING };
-          return outer1_14(onComplete(isLastStep[24]), obj, arg1);
-        })
-    };
-    items13[1] = callback(closure_4, obj8);
-    obj3.children = items13;
-    const items14 = [callback2(stateFromStores, obj3), ];
-    const obj9 = {};
+    obj3[0] = items11;
+    obj5 = { style: null, children: null };
+    obj5[0] = tmp.header;
+    obj6 = { style: null, accessibilityRole: "header", variant: "heading-xl/semibold", color: "mobile-text-heading-primary", children: null };
+    obj6[0] = tmp.title;
+    const intl = tmp2(tmp3[23]).intl;
+    obj6[4] = intl.string(tmp2(tmp3[23]).t.eDVMrA);
+    const items12 = [tmp13(tmp2(tmp3[22]).Text, obj6), ];
+    const obj7 = { style: null, variant: "text-md/normal", color: "text-muted", children: null };
+    obj7[0] = tmp.description;
+    const intl2 = tmp2(tmp3[23]).intl;
+    obj7[3] = intl2.string(tmp2(tmp3[23]).t.BozOXu);
+    items12[1] = tmp13(tmp2(tmp3[22]).Text, obj7);
+    obj5[1] = items12;
+    const items13 = [callback(closure_4, obj5), ];
+    const obj8 = { style: null, children: null };
+    obj8[0] = tmp.connectionsList;
+    obj8[1] = stateFromStores.map((connection) => {
+      const obj = { connection, guildId, location: null };
+      obj[2] = onComplete(isLastStep[25]).GUILD_ONBOARDING;
+      return outer1_14(onComplete(isLastStep[24]), obj, arg1);
+    });
+    items13[1] = tmp13(closure_4, obj8);
+    obj3[1] = items13;
+    const items14 = [callback(stateFromStores, obj3), ];
+    const obj9 = { style: null, children: null };
     const items15 = [, , ];
     ({ footer: arr17[0], footerContent: arr17[1] } = tmp);
-    const obj10 = { paddingBottom: bottom };
+    const obj10 = { paddingBottom: null };
+    obj10[0] = bottom;
     items15[2] = obj10;
-    obj9.style = items15;
-    const obj11 = {};
+    obj9[0] = items15;
     if (stateFromStores4) {
       let str = "primary";
     } else {
       str = "secondary";
     }
-    obj11.variant = str;
-    obj11.size = "md";
-    const intl3 = guildId(isLastStep[23]).intl;
+    const obj11 = { variant: null, size: "md", text: null, onPress: null, grow: true };
+    obj11[0] = str;
+    const intl3 = tmp2(tmp3[23]).intl;
     const string = intl3.string;
-    const t = guildId(isLastStep[23]).t;
+    const t = tmp2(tmp3[23]).t;
     if (isLastStep) {
       const _HermesInternal = HermesInternal;
       let combined = "" + string(t["8SuVoE"]) + " \u{1F389}";
@@ -320,15 +246,14 @@ export default function GuildOnboardingConnectionPrompt(guildId) {
     } else {
       combined = string(t["5Wxrcd"]);
     }
-    obj11.text = combined;
-    obj11.onPress = callback;
-    obj11.grow = true;
-    obj9.children = callback(guildId(isLastStep[26]).Button, obj11);
-    items14[1] = callback(closure_4, obj9);
-    obj2.children = items14;
-    obj.children = callback2(closure_4, obj2);
-    tmp22 = obj;
-    const tmp12 = callback2;
+    obj11[2] = combined;
+    obj11[3] = callback;
+    obj9[1] = tmp13(tmp2(tmp3[26]).Button, obj11);
+    items14[1] = tmp13(closure_4, obj9);
+    obj2[1] = items14;
+    obj[2] = callback(closure_4, obj2);
+    tmp19 = obj;
+    let tmp14 = callback;
   }
-  return callback(guildId(isLastStep[21]).SafeAreaPaddingView, tmp22);
+  return closure_14(guildId(isLastStep[21]).SafeAreaPaddingView, tmp19);
 };

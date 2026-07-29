@@ -1,12 +1,12 @@
-// Module ID: 4226
-// Function ID: 36178
+// Module ID: 4250
+// Function ID: 4251
 // Name: DesktopSources
-// Dependencies: [2, 4227]
+// Dependencies: [2, 4251]
 
-// Module 4226 (DesktopSources)
+// Module 4250 (DesktopSources)
 const result = require("set").fileFinishedImporting("../discord_common/js/packages/media-engine/Constants.tsx");
 
-export const DesktopSources = require("_isNativeReflectConstruct").DesktopSources;
+export const DesktopSources = require("SystemServiceNotAvailableError").DesktopSources;
 export const MediaEngineContextTypes = { DEFAULT: "default", STREAM: "stream" };
 export const DeviceTypes = { AUDIO_INPUT: "audioinput", AUDIO_OUTPUT: "audiooutput", VIDEO_INPUT: "videoinput" };
 export const InputModes = { PUSH_TO_TALK: "PUSH_TO_TALK", VOICE_ACTIVITY: "VOICE_ACTIVITY" };

@@ -1,27 +1,27 @@
-// Module ID: 16012
-// Function ID: 123569
-// Name: _createForOfIteratorHelperLoose
-// Dependencies: [57, 5, 16013, 16063, 27, 16083, 1923, 1907, 6307, 5702, 16084, 653, 14, 3, 16694, 5730, 16695, 10958, 566, 682, 1186, 16697, 13226, 477, 20, 16698, 10586, 686, 16699, 4029, 5713, 1184, 16700, 16701, 10670, 587, 675, 479, 1899, 5682, 1934, 1250, 16702, 1935, 8143, 16704, 13432, 5939, 16722, 16723, 16724, 16725, 9877, 5726, 5714, 4018, 1278, 4157, 1324, 13480, 15748, 15749, 684, 13221, 5701, 13485, 13498, 5902, 16727, 5251, 5703, 5714, 2]
+// Module ID: 16047
+// Function ID: 16048
+// Name: linkFromAppsFlyer
+// Dependencies: [32, 5, 16048, 16098, 17, 16118, 1947, 1931, 6328, 5720, 16119, 676, 9, 3, 16730, 5748, 16731, 10982, 589, 705, 1210, 16733, 13247, 500, 10, 16734, 10610, 709, 16735, 4053, 5731, 1208, 16736, 16737, 10694, 595, 698, 502, 1923, 5700, 1958, 1274, 16738, 1959, 8167, 16740, 13455, 5958, 16758, 16759, 16760, 16761, 9899, 5744, 5732, 4042, 1302, 4181, 1348, 13503, 15784, 15785, 707, 13244, 5719, 13508, 13521, 5921, 16763, 5273, 5721, 5732, 2]
 // Exports: init, initHeadlessTask
 
-// Module 16012 (_createForOfIteratorHelperLoose)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 16047 (linkFromAppsFlyer)
+import onStageConnectionError from "onStageConnectionError";
 import closure_5 from "timestamp";
-import module_16013 from "module_16013";
+import module_16048 from "module_16048";
 import isAnalyticsEndpoint from "isAnalyticsEndpoint";
-import get_ActivityIndicator from "dispatcher";
+import get_ActivityIndicator from "BundleUpdaterManager";
 import timestamp from "timestamp";
 import { subscribeToIntlLoadingSuccess as closure_11 } from "_setAppLocale";
-import closure_12 from "_isNativeReflectConstruct";
-import closure_13 from "_isNativeReflectConstruct";
+import handleConnectionOpen from "handleConnectionOpen";
+import getState from "getState";
 import result from "result";
-import inlineRequire from "inlineRequire";
+import module_16119 from "module_16119";
 import ME from "ME";
-import { loadImports } from "DeeplinkSource";
-import importDefaultResult from "isAnalyticsEndpoint";
-import { loadIndex } from "DeeplinkSource";
+import { loadImports } from "result";
+import { loadIndex } from "result";
 
-let closure_10;
+let c10;
+let c9;
 let closure_14;
 let closure_15;
 let closure_16;
@@ -29,117 +29,161 @@ let closure_17;
 let closure_18;
 let closure_19;
 let closure_6;
-let closure_7;
-let closure_8;
-let closure_9;
+let error;
+let metroImportAll;
 const require = arg1;
-function _createForOfIteratorHelperLoose(iterable) {
-  let closure_0 = iterable;
-  iterable = "undefined" !== typeof Symbol;
-  if (iterable) {
-    const _Symbol = Symbol;
-    iterable = iterable[Symbol.iterator];
-  }
-  if (!iterable) {
-    iterable = iterable[Symbol.iterator];
-  }
-  if (iterable) {
-    const iter = iterable.call(iterable);
-    const next = iter.next;
-    return next.bind(iter);
-  } else {
-    const _Array = Array;
-    let tmp = iterable;
-    if (!Array.isArray(iterable)) {
-      let tmp2;
-      if (iterable) {
-        if ("string" === typeof iterable) {
-          tmp2 = _arrayLikeToArray(iterable, undefined);
-        } else {
-          const toString = {}.toString;
-          const substr = toString.call(iterable).slice(8, -1);
-          let name = substr;
-          if (tmp3) {
-            name = iterable.constructor.name;
-          }
-          if ("Map" !== name) {
-            if ("Set" !== name) {
-              if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(iterable, undefined);
-              } else {
-                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
-              }
-            }
-            tmp2 = arr;
-          }
-          const _Array2 = Array;
-          arr = Array.from(iterable);
-          const callResult = toString.call(iterable);
-          tmp3 = "Object" === substr && iterable.constructor;
-        }
-      }
-      tmp = tmp2;
-      if (!tmp2) {
-        const _TypeError = TypeError;
-        const typeError = new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
-        throw typeError;
-      }
-    }
-    if (tmp) {
-      closure_0 = tmp;
-    }
-    let c1 = 0;
-    return () => {
-      if (closure_1 >= length.length) {
-        let obj = { done: true };
-      } else {
-        obj = { done: false };
-        closure_1 = tmp3 + 1;
-        obj.value = length[+closure_1];
-      }
-      return obj;
-    };
-  }
-}
-function _arrayLikeToArray(arg0, arg1) {
-  let length;
-  if (tmp) {
-    length = arg0.length;
-  }
-  const ArrayResult = Array(length);
-  for (let num = 0; num < length; num = num + 1) {
-    ArrayResult[num] = arg0[num];
-  }
-  return ArrayResult;
-}
 function linkFromAppsFlyer(arg0) {
-  const uRL = new URL(arg0);
-  const searchParams = uRL.searchParams;
-  return "true" === searchParams.get("fromAppsFlyer");
+  try {
+    const _URL = URL;
+    const uRL = new URL(arg0);
+    const searchParams = uRL.searchParams;
+    return "true" === searchParams.get("fromAppsFlyer");
+  } catch (tmp8) {
+    const obj = { url: null, error: null };
+    obj[0] = tmp;
+    obj[1] = tmp8;
+    tmp10.error("Failed to parse URL in linkFromAppsFlyer", obj);
+    return false;
+  }
 }
 function getInitialURLs() {
-  return _getInitialURLs(...arguments);
+  const self = this;
+  const apply = _getInitialURLs.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
 }
 function _getInitialURLs() {
-  // CreateGeneratorClosureLongIndex (0x67)
-  const obj = callback(tmp);
-  return obj(...arguments);
-}
-function handleURL(defaultResult1, defaultResult2) {
-  importDefault(5730)("handleURL", () => outer1_0(outer1_3[16])).default(defaultResult1, defaultResult2);
+  const self = this;
+  const tmp = callback(function*() {
+    if (dependencyMap === 2) {
+      dependencyMap = 3;
+      HermesBuiltin.throwTypeError();
+    } else if (tmp4 === 3) {
+      if (arg0 === 1) {
+        throw arg1;
+      } else if (arg0 === 2) {
+        let obj = { value: null, done: true };
+        obj[0] = arg1;
+        return obj;
+      } else {
+        return { value: "HermesInternal", done: null };
+      }
+    } else {
+      try {
+        dependencyMap = 2;
+        if (0 === c2) {
+          if (arg0 === 1) {
+            dependencyMap = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            dependencyMap = 3;
+            obj = { value: null, done: true };
+            obj[0] = arg1;
+            return obj;
+          } else {
+            let closure_1 = tmp5;
+            let arr = tmp2;
+            closure_1 = undefined;
+            c2 = undefined;
+            dependencyMap = undefined;
+            arr = [];
+            const DeepLinkManager = outer1_10.DeepLinkManager;
+            c2 = 1;
+            dependencyMap = 1;
+            const obj1 = { value: null, done: false };
+            obj1[0] = DeepLinkManager.getInitialURL();
+            return obj1;
+          }
+        } else {
+          if (1 === tmp5) {
+            if (arg0 === 1) {
+              dependencyMap = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              dependencyMap = 3;
+              const obj2 = { value: null, done: true };
+              obj2[0] = arg1;
+              return obj2;
+            } else {
+              closure_1 = arg1;
+              if (null != closure_1) {
+                if (null != closure_1.url) {
+                  if (callback(closure_1.url)) {
+                    let push = arr(16730).DeeplinkSource;
+                    if (closure_1.isDeferred) {
+                      let AppsFlyer = push.AppsFlyerDeferred;
+                    } else {
+                      AppsFlyer = push.AppsFlyer;
+                    }
+                    c2 = AppsFlyer;
+                    push = arr.push;
+                    const obj3 = { url: null, source: null };
+                    obj3[0] = closure_1.url;
+                    obj3[1] = c2;
+                    arr = push(obj3);
+                  } else {
+                    const obj4 = { url: null, source: null };
+                    obj4[0] = closure_1.url;
+                    obj4[1] = arr(16730).DeeplinkSource.OS;
+                    arr = arr.push(obj4);
+                    dependencyMap = 3;
+                  }
+                }
+              }
+              c2 = 2;
+              dependencyMap = 1;
+              const obj5 = { value: null, done: false };
+              obj5[0] = initialURL.getInitialURL();
+              return obj5;
+            }
+          } else if (arg0 === 1) {
+            dependencyMap = 3;
+            throw arg1;
+          } else if (arg0 !== 2) {
+            dependencyMap = arg1;
+            if (null != dependencyMap) {
+              const obj6 = { url: null, source: null };
+              obj6[0] = dependencyMap;
+              obj6[1] = arr(16730).DeeplinkSource.ReactNativeLinking;
+              arr.push(obj6);
+            }
+          }
+          dependencyMap = 3;
+          obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
+        }
+      } catch (tmp36) {
+        dependencyMap = tmp;
+        throw tmp36;
+      }
+    }
+  });
+  const _getInitialURLs = tmp;
+  const apply = tmp.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
 }
 function sharedInit() {
-  function handleNotification(defaultResult1) {
+  function handleNotification(arg0) {
     if (c0) {
-      arr(handleNotification[15])("receiveNotification", () => callback(handleNotification[32])).default(defaultResult1, false);
+      arr(handleNotification[15])("receiveNotification", () => callback(table[32])).default(arg0, false);
       arr(handleNotification[12]).extraProperties.tapped_notification = true;
     } else {
-      arr = arr.push(defaultResult1);
+      arr = arr.push(arg0);
     }
   }
   function handleLocalNotification(getData) {
     if (c0) {
-      const result = arr(handleNotification[15])("LocalPushNotificationActionCreators", () => callback(handleNotification[33])).receiveLocalNotification(getData);
+      const result = arr(handleNotification[15])("LocalPushNotificationActionCreators", () => callback(table[33])).receiveLocalNotification(getData);
     } else {
       arr = arr2.push(getData);
     }
@@ -151,24 +195,23 @@ function sharedInit() {
   const TelemetryRingLifecycle = _require(handleNotification[20]).TelemetryRingLifecycle;
   TelemetryRingLifecycle.initialize();
   const result2 = _require(handleNotification[21]).installWebsocketTelemetryHook((arg0) => {
-    arr(handleNotification[22]).append(outer1_15.WEBSOCKET_MESSAGE_RECEIVED, arg0);
+    arr(handleNotification[22]).append(constants.WEBSOCKET_MESSAGE_RECEIVED, arg0);
   });
   const listener = closure_8.addEventListener("url", (url) => {
     url = url.url;
-    let isAndroidResult = callback(handleNotification[23]).isAndroid();
+    let isAndroidResult = url(handleNotification[23]).isAndroid();
     if (isAndroidResult) {
-      isAndroidResult = outer1_22 === url;
+      isAndroidResult = url === url;
     }
     if (!isAndroidResult) {
-      outer1_22 = url;
-      outer1_27.then(() => {
-        outer2_20.log("Handling URL: " + url);
-        let obj = callback(handleNotification[24]);
+      promise.then(() => {
+        outer1_20.log("Handling URL: " + url);
+        let obj = outer1_1(outer1_3[24]);
         obj.mark("\u2757", "Handle URL " + url);
-        obj = { url };
-        const DeeplinkSource = url(handleNotification[14]).DeeplinkSource;
-        obj.source = outer2_30(url) ? DeeplinkSource.AppsFlyer : DeeplinkSource.OS;
-        outer2_33(obj, false);
+        obj = { url, source: null };
+        const DeeplinkSource = url(outer1_3[14]).DeeplinkSource;
+        obj[1] = outer1_22(url) ? DeeplinkSource.AppsFlyer : DeeplinkSource.OS;
+        outer1_1(outer1_3[15])("handleURL", () => callback(table[16])).default(obj, false);
       });
     }
   });
@@ -178,7 +221,7 @@ function sharedInit() {
   initialBundleDownloaded.then((versionRequired) => {
     if (tmp) {
       const _HermesInternal = HermesInternal;
-      outer1_20.verbose("Get initial downloaded bundle " + versionRequired.versionRequired);
+      closure_20.verbose("Get initial downloaded bundle " + versionRequired.versionRequired);
       arr(handleNotification[25]).prepareUpdate(versionRequired.versionRequired);
       const obj = arr(handleNotification[25]);
     }
@@ -186,73 +229,59 @@ function sharedInit() {
   const obj3 = importDefault(handleNotification[17]);
   const listener1 = importDefault(handleNotification[17]).addEventListener("downloaded", (versionRequired) => {
     versionRequired = versionRequired.versionRequired;
-    outer1_20.verbose("Bundle Event: bundle downloaded for " + versionRequired);
+    closure_20.verbose("Bundle Event: bundle downloaded for " + versionRequired);
     arr(handleNotification[25]).prepareUpdate(versionRequired);
   });
   const obj4 = importDefault(handleNotification[17]);
   const initialOtaUpdateChecked = importDefault(handleNotification[17]).getInitialOtaUpdateChecked();
   initialOtaUpdateChecked.then((metrics) => {
-    let done;
     metrics = metrics.metrics;
-    outer1_20.verbose("Initial OTA update check metrics", metrics);
-    const tmp2 = outer1_28(metrics);
-    let iter = tmp2();
-    if (!iter.done) {
-      do {
-        let tmp3 = arr;
-        let tmp4 = handleNotification;
-        let obj = arr(handleNotification[17]);
-        let emitOtaMetricResult = obj.emitOtaMetric(iter.value);
-        let iter2 = tmp2();
-        iter = iter2;
-        done = iter2.done;
-      } while (!done);
+    closure_20.verbose("Initial OTA update check metrics", metrics);
+    for (const item10010 of metrics) {
+      let tmp2 = arr;
+      let tmp3 = handleNotification;
+      let obj = arr(handleNotification[17]);
+      let emitOtaMetricResult = obj.emitOtaMetric(item10010);
+      continue;
     }
   });
   const obj5 = importDefault(handleNotification[17]);
   const listener2 = importDefault(handleNotification[17]).addEventListener("otaUpdateChecked", (metrics) => {
-    let done;
     metrics = metrics.metrics;
-    outer1_20.verbose("OTA update check metrics", metrics);
-    const tmp2 = outer1_28(metrics);
-    let iter = tmp2();
-    if (!iter.done) {
-      do {
-        let tmp3 = arr;
-        let tmp4 = handleNotification;
-        let obj = arr(handleNotification[17]);
-        let emitOtaMetricResult = obj.emitOtaMetric(iter.value);
-        let iter2 = tmp2();
-        iter = iter2;
-        done = iter2.done;
-      } while (!done);
+    closure_20.verbose("OTA update check metrics", metrics);
+    for (const item10010 of metrics) {
+      let tmp2 = arr;
+      let tmp3 = handleNotification;
+      let obj = arr(handleNotification[17]);
+      let emitOtaMetricResult = obj.emitOtaMetric(item10010);
+      continue;
     }
   });
   const obj6 = importDefault(handleNotification[17]);
   new closure_7(importDefault(handleNotification[26])).addListener("appWillEnterForeground", () => {
     arr(handleNotification[27]).dispatch({ type: "APP_STATE_UPDATE_WILL_BECOME_ACTIVE" });
   });
-  if (state.getState() !== closure_6.currentState) {
-    importDefault(handleNotification[15])("handleAppStateChange", () => callback(handleNotification[28])).default(closure_6.currentState);
-  } else if (_require(handleNotification[29]).isBridgeless) {
-    if (!obj8.isAndroid()) {
+  if (state.getState() !== currentState.currentState) {
+    tmp(tmp2[15])("handleAppStateChange", () => callback(handleNotification[28])).default(obj8.currentState);
+  } else if (tmp4(tmp2[29]).isBridgeless) {
+    if (!tmp4Result.isAndroid()) {
       if (!c21) {
-        if (closure_6.currentState === constants.ACTIVE) {
+        if (obj8.currentState === constants.ACTIVE) {
           c21 = true;
-          importDefault(handleNotification[15])("trackAppOpened", () => callback(handleNotification[30])).trackAppOpened("launcher");
+          tmp(tmp2[15])("trackAppOpened", () => callback(handleNotification[30])).trackAppOpened("launcher");
         }
       }
     }
-    obj8 = _require(handleNotification[23]);
+    tmp4Result = tmp4(tmp2[23]);
   }
-  const listener3 = closure_6.addEventListener("change", (defaultResult1) => {
+  const listener3 = obj8.addEventListener("change", (arg0) => {
     const appStateChangeStart = arr(handleNotification[12]).imports.appStateChangeStart;
     appStateChangeStart.record();
     let obj = arr(handleNotification[24]);
     obj.resumeTracing();
-    obj = { message: "App state changed to " + defaultResult1, category: "appState" };
+    obj = { message: "App state changed to " + arg0, category: "appState" };
     arr(handleNotification[31]).addBreadcrumb(obj);
-    arr(handleNotification[15])("handleAppStateChange", () => callback(handleNotification[28])).default(defaultResult1);
+    arr(handleNotification[15])("handleAppStateChange", () => callback(table[28])).default(arg0);
     const appStateChangeEnd = arr(handleNotification[12]).imports.appStateChangeEnd;
     appStateChangeEnd.record();
   });
@@ -270,18 +299,23 @@ function sharedInit() {
   _require = false;
   importDefault = [];
   let closure_2 = [];
-  const obj7 = new closure_7(importDefault(handleNotification[26]));
-  const result3 = importDefault(handleNotification[34]).addNotificationEventListener("notification", (defaultResult1) => {
+  let tmpResult = tmp(tmp2[34]);
+  const result3 = tmpResult.addNotificationEventListener("notification", (arg0) => {
     const state = outer1_13.getState();
     outer1_20.log("Push notification received, the app state is " + state);
     if (state !== outer1_14.ACTIVE) {
-      handleNotification(defaultResult1);
+      if (c0) {
+        arr(handleNotification[15])("receiveNotification", () => callback(table[32])).default(arg0, false);
+        arr(handleNotification[12]).extraProperties.tapped_notification = true;
+      } else {
+        arr = arr.push(arg0);
+      }
     }
   });
-  const obj9 = importDefault(handleNotification[34]);
-  const result4 = importDefault(handleNotification[34]).addNotificationEventListener("localNotification", handleLocalNotification);
+  tmpResult = tmp(tmp2[34]);
+  const result4 = tmpResult.addNotificationEventListener("localNotification", handleLocalNotification);
   obj = {
-    onStorageInitialize() {
+    onStorageInitialize(arg0) {
       let c0 = true;
       const item = arr.forEach(handleNotification);
       const item1 = arr2.forEach(handleLocalNotification);
@@ -292,87 +326,928 @@ function sharedInit() {
   return obj;
 }
 function _trackFirstLaunched() {
-  // CreateGeneratorClosureLongIndex (0x67)
-  const obj = callback(tmp);
-  return obj(...arguments);
+  const self = this;
+  const tmp = callback(function*() {
+    if (c6 === 2) {
+      c6 = 3;
+      HermesBuiltin.throwTypeError();
+    } else if (tmp4 === 3) {
+      if (arg0 === 1) {
+        throw arg1;
+      } else if (arg0 === 2) {
+        let obj = { value: null, done: true };
+        obj[0] = arg1;
+        return obj;
+      } else {
+        return { value: "HermesInternal", done: null };
+      }
+    } else {
+      try {
+        c6 = 2;
+        if (0 === c5) {
+          if (arg0 === 1) {
+            c6 = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            c6 = 3;
+            obj = { value: null, done: true };
+            obj[0] = arg1;
+            return obj;
+          } else {
+            let closure_2 = tmp2;
+            const Storage2 = outer1_0(outer1_3[35]).Storage;
+            if (Storage2.get(outer1_15.APP_FIRST_LAUNCHED, true)) {
+              const tmp18 = outer1_1(outer1_3[36]);
+              const table = tmp18;
+              const track = tmp18.track;
+              const APP_FIRST_LAUNCHED = outer1_15.APP_FIRST_LAUNCHED;
+              const obj1 = {};
+              let obj2 = outer1_0(outer1_3[23]);
+              if (obj2.isAndroid()) {
+                let IOS = tmp22.ANDROID;
+              } else {
+                IOS = tmp22.IOS;
+              }
+              obj1.platform = IOS;
+              const InstallReferrer = outer1_10.InstallReferrer;
+              let value;
+              if (InstallReferrer != null) {
+                value = InstallReferrer.get();
+              }
+              c5 = 1;
+              c6 = 1;
+              obj2 = { value: null, done: false };
+              obj2[0] = value;
+              return obj2;
+            } else {
+              c6 = 3;
+            }
+          }
+        } else if (arg0 === 1) {
+          c6 = 3;
+          throw arg1;
+        } else if (arg0 !== 2) {
+          obj1.referrer = arg1;
+          track(APP_FIRST_LAUNCHED, obj1);
+          const Storage = obj1(table[35]).Storage;
+          const result = Storage.set(constants.APP_FIRST_LAUNCHED, false);
+        }
+        c6 = 3;
+        obj = { value: null, done: true };
+        obj[0] = arg1;
+        return obj;
+      } catch (tmp26) {
+        c6 = tmp;
+        throw tmp26;
+      }
+    }
+  });
+  const _trackFirstLaunched = tmp;
+  const apply = tmp.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
 }
 function loadStorage() {
-  return _loadStorage(...arguments);
+  const self = this;
+  const apply = _loadStorage.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
 }
 function _loadStorage() {
-  // CreateGeneratorClosureLongIndex (0x67)
-  const obj = callback(tmp);
-  return obj(...arguments);
+  const self = this;
+  const tmp = callback(function*() {
+    if (c5 === 2) {
+      c5 = 3;
+      HermesBuiltin.throwTypeError();
+    } else if (tmp6 === 3) {
+      if (arg0 === 1) {
+        throw arg1;
+      } else if (arg0 === 2) {
+        let obj = { value: null, done: true };
+        obj[0] = arg1;
+        return obj;
+      } else {
+        return { value: "HermesInternal", done: null };
+      }
+    } else {
+      try {
+        c5 = 2;
+        if (0 === c4) {
+          if (arg0 === 1) {
+            c5 = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            c5 = 3;
+            obj = { value: null, done: true };
+            obj[0] = arg1;
+            return obj;
+          } else {
+            let callback = tmp3;
+            let closure_0 = tmp7;
+            closure_0 = undefined;
+            let dependencyMap = 1;
+            const loadStorage2 = outer1_1(9).loadStorage;
+            loadStorage2.recordStart();
+            let Storage = outer1_0(595).Storage;
+            c4 = 2;
+            c5 = 1;
+            const obj1 = { value: null, done: false };
+            obj1[0] = Storage.refresh([], outer1_18);
+            return obj1;
+          }
+        } else {
+          if (1 === tmp7) {
+            dependencyMap = 0;
+            callback = closure_2;
+            logger.error("Unable to load Storage", callback);
+            c5 = 3;
+          } else if (arg0 === 1) {
+            c5 = 3;
+            throw arg1;
+          } else if (arg0 !== 2) {
+            closure_0 = arg1;
+            const loadStorage = callback(9).loadStorage;
+            loadStorage.recordEnd();
+            const parseStorage = callback(9).parseStorage;
+            parseStorage.measureAsync(() => {
+              const Storage = callback(table[35]).Storage;
+              return Storage.parse(callback);
+            });
+            dependencyMap = 0;
+          }
+          dependencyMap = 0;
+          c5 = 3;
+          obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
+        }
+      } catch (tmp23) {
+        closure_2 = tmp23;
+        if (tmp4 === dependencyMap) {
+          c5 = tmp2;
+          throw tmp23;
+        } else {
+          c4 = tmp;
+        }
+      }
+    }
+  });
+  const _loadStorage = tmp;
+  const apply = tmp.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
 }
 function loadKvStorage() {
-  importDefault(1899).initialize();
-  const resolved = Promise.resolve();
+  try {
+    importDefault(1923).initialize();
+    return Promise.resolve();
+  } catch (tmp4) {
+    tmp10.warn("DatabaseManager.initialize errored.", tmp4);
+    importDefault(1208).captureException(tmp4);
+    const obj2 = importDefault(1208);
+  }
 }
 function initializeIntl() {
-  return _initializeIntl(...arguments);
+  const self = this;
+  const apply = _initializeIntl.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
 }
 function _initializeIntl() {
-  // CreateGeneratorClosureLongIndex (0x67)
-  const obj = callback(tmp);
-  return obj(...arguments);
+  const self = this;
+  const tmp = callback((arg0) => {
+    let closure_0 = arg0;
+    let c3 = 0;
+    let c4 = 0;
+    const iter = (function*(arg0) {
+      if (c4 === 2) {
+        c4 = 3;
+        HermesBuiltin.throwTypeError();
+      } else if (tmp4 === 3) {
+        if (arg0 === 1) {
+          throw arg1;
+        } else if (arg0 === 2) {
+          let obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
+        } else {
+          return { value: "HermesInternal", done: null };
+        }
+      } else {
+        try {
+          c4 = 2;
+          if (0 === paths) {
+            if (arg0 === 1) {
+              c4 = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              c4 = 3;
+              obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            } else {
+              let closure_2 = tmp2;
+              let callback = tmp5;
+              let log;
+              log = log.log;
+              callback = undefined;
+              paths = 1;
+              c4 = 1;
+              return { value: "ct", done: null };
+            }
+          } else if (1 === tmp5) {
+            if (arg0 === 1) {
+              c4 = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              c4 = 3;
+              const obj1 = { value: null, done: true };
+              obj1[0] = arg1;
+              return obj1;
+            } else {
+              paths = 2;
+              c4 = 1;
+              const obj2 = { value: null, done: false };
+              obj2[0] = log(paths[40]).preloadAllIntlMessageFiles();
+              return obj2;
+            }
+          } else if (2 === tmp5) {
+            if (arg0 === 1) {
+              c4 = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              c4 = 3;
+              let obj3 = { value: null, done: true };
+              obj3[0] = arg1;
+              return obj3;
+            } else {
+              let obj6 = log(paths[41]);
+              paths = 3;
+              c4 = 1;
+              const obj4 = { value: null, done: false };
+              obj4[0] = obj6.waitForAllDefaultIntlMessagesLoaded();
+              return obj4;
+            }
+          } else if (3 === tmp5) {
+            if (arg0 === 1) {
+              c4 = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              c4 = 3;
+              const obj5 = { value: null, done: true };
+              obj5[0] = arg1;
+              return obj5;
+            } else {
+              if (log) {
+                obj3 = callback(paths[24]);
+                obj3.markAndLog(closure_20, "\u{1F30E}", "i18n loaded");
+              }
+              paths = 4;
+              c4 = 1;
+              obj6 = { value: null, done: false };
+              obj6[0] = log(paths[43])(paths[42], paths.paths);
+              return obj6;
+            }
+          } else if (4 === tmp5) {
+            if (arg0 === 1) {
+              c4 = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              c4 = 3;
+              const obj7 = { value: null, done: true };
+              obj7[0] = arg1;
+              return obj7;
+            } else {
+              callback = arg1.default;
+              paths = 5;
+              c4 = 1;
+              const obj8 = { value: null, done: false };
+              obj8[0] = callback();
+              return obj8;
+            }
+          } else if (arg0 === 1) {
+            c4 = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            c4 = 3;
+            obj = { value: null, done: true };
+            obj[0] = arg1;
+            return obj;
+          } else {
+            callback2(() => callback());
+            c4 = 3;
+            return { value: "HermesInternal", done: null };
+          }
+        } catch (tmp29) {
+          c4 = tmp;
+          throw tmp29;
+        }
+      }
+    })();
+    iter.next();
+    return iter;
+  });
+  const _initializeIntl = tmp;
+  const apply = tmp.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
 }
 function _init(_payload) {
-  // CreateGeneratorClosureLongIndex (0x67)
-  const obj = callback(tmp);
-  return obj(...arguments);
+  let self = this;
+  const tmp = callback(function*() {
+    if (c3 === 2) {
+      c3 = 3;
+      let throwTypeErrorResult = HermesBuiltin.throwTypeError();
+    } else {
+      throwTypeErrorResult = arg1;
+      throwTypeErrorResult = arg0;
+      throwTypeErrorResult = tmp4;
+      if (tmp5 === 3) {
+        if (arg0 === 1) {
+          throw arg1;
+        } else if (arg0 === 2) {
+          let obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
+        } else {
+          return { value: "HermesInternal", done: null };
+        }
+      } else {
+        try {
+          c3 = 2;
+          let num2 = 0;
+          if (0 === v0) {
+            if (arg0 === 1) {
+              c3 = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              c3 = 3;
+              obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            } else {
+              let onStorageInitialize = tmp3;
+              let callback = tmp2;
+              callback = undefined;
+              onStorageInitialize = undefined;
+              v0 = undefined;
+              c3 = undefined;
+              let lib;
+              let closure_5;
+              let c6;
+              let resolved;
+              let c8;
+              let c9;
+              let c10;
+              let c11;
+              let getState;
+              let closure_14;
+              let dependencyMap;
+              let closure_16;
+              let closure_17;
+              let closure_18;
+              let closure_19;
+              throwTypeErrorResult = outer1_34;
+              throwTypeErrorResult = outer1_33;
+              if (outer1_34 !== outer1_33.Full) {
+                throwTypeErrorResult = outer1_34;
+                throwTypeErrorResult = outer1_34 === throwTypeErrorResult.HeadlessRan;
+                callback = throwTypeErrorResult;
+                outer1_34 = throwTypeErrorResult.Full;
+                onStorageInitialize = throwTypeErrorResult;
+                if (!throwTypeErrorResult) {
+                  throwTypeErrorResult = outer1_26;
+                  onStorageInitialize = outer1_26().onStorageInitialize;
+                }
+                throwTypeErrorResult = outer1_0;
+                throwTypeErrorResult = c3;
+                throwTypeErrorResult = outer1_0;
+                throwTypeErrorResult = c3;
+                throwTypeErrorResult = outer1_0(500).isAndroid();
+                let _Promise6 = outer1_0(8167);
+                if (throwTypeErrorResult) {
+                  throwTypeErrorResult = _Promise6.unlockOrientation({ unlockAfterRotatingToPreviousLock: false });
+                } else {
+                  throwTypeErrorResult = _Promise6.lockOrientationForiOS();
+                }
+                throwTypeErrorResult = outer1_1;
+                throwTypeErrorResult = c3;
+                throwTypeErrorResult = outer1_6;
+                throwTypeErrorResult = outer1_14;
+                outer1_1(9).didBackgroundApp = outer1_6.currentState === outer1_14.BACKGROUND;
+                throwTypeErrorResult = outer1_1;
+                throwTypeErrorResult = c3;
+                const loadStorageStart = outer1_1(9).imports.loadStorageStart;
+                throwTypeErrorResult = loadStorageStart.record();
+                throwTypeErrorResult = globalThis;
+                _Promise6 = Promise;
+                throwTypeErrorResult = outer1_23;
+                const items = [outer1_23(), , , , ];
+                throwTypeErrorResult = outer1_1;
+                throwTypeErrorResult = c3;
+                const obj15 = outer1_0(500);
+                const initialNotification = outer1_1(10694).getInitialNotification();
+                items[1] = initialNotification.catch(() => null);
+                throwTypeErrorResult = outer1_28;
+                items[2] = outer1_28();
+                throwTypeErrorResult = outer1_30;
+                items[3] = outer1_30();
+                throwTypeErrorResult = outer1_0;
+                throwTypeErrorResult = c3;
+                num2 = outer1_0(1959);
+                throwTypeErrorResult = c3;
+                throwTypeErrorResult = c3;
+                const obj16 = outer1_1(10694);
+                throwTypeErrorResult = num2(16740, c3.paths).then((arg0) => arg0.default());
+                items[4] = throwTypeErrorResult;
+                throwTypeErrorResult = Promise.all(items);
+                v0 = 1;
+                c3 = 1;
+                const num2Result = num2(16740, c3.paths);
+              } else {
+                throwTypeErrorResult = outer1_1;
+                throwTypeErrorResult = c3;
+                throwTypeErrorResult = outer1_1(1208).addBreadcrumb({ message: "Init called when already initialized" });
+                c3 = 3;
+                const obj14 = outer1_1(1208);
+              }
+            }
+          } else {
+            if (1 === tmp6) {
+              if (arg0 === 1) {
+                c3 = 3;
+                throw arg1;
+              } else if (arg0 === 2) {
+                c3 = 3;
+                const obj1 = { value: null, done: true };
+                obj1[0] = arg1;
+                return obj1;
+              } else {
+                throwTypeErrorResult = callback;
+                throwTypeErrorResult = onStorageInitialize;
+                v0 = arg1;
+                throwTypeErrorResult = lib;
+                throwTypeErrorResult = v0;
+                c3 = lib(v0, 2);
+                throwTypeErrorResult = c3;
+                lib = 32;
+                throwTypeErrorResult = c3;
+                closure_5 = 5;
+                throwTypeErrorResult = onStorageInitialize;
+                throwTypeErrorResult = c3;
+                const loadStorageEnd = onStorageInitialize(9).imports.loadStorageEnd;
+                throwTypeErrorResult = loadStorageEnd.record();
+                throwTypeErrorResult = callback;
+                throwTypeErrorResult = c3;
+                if (obj19.isAndroid()) {
+                  if (callback(13455).isTTITest) {
+                    throwTypeErrorResult = callback;
+                    throwTypeErrorResult = onStorageInitialize;
+                    throwTypeErrorResult = outer1_0;
+                    throwTypeErrorResult = c3;
+                    outer1_6 = outer1_0(5958).default;
+                    throwTypeErrorResult = outer1_6;
+                    v0 = 2;
+                    c3 = 1;
+                    let obj2 = { value: null, done: false };
+                    obj2[0] = outer1_6.yieldConfig();
+                    return obj2;
+                  }
+                }
+                obj19 = callback(500);
+              }
+            } else if (2 === tmp6) {
+              if (arg0 === 1) {
+                c3 = 3;
+                throw arg1;
+              } else if (arg0 === 2) {
+                c3 = 3;
+                let obj3 = { value: null, done: true };
+                obj3[0] = arg1;
+                return obj3;
+              }
+            } else if (arg0 === 1) {
+              c3 = 3;
+              throw arg1;
+            } else if (arg0 !== 2) {
+              throwTypeErrorResult = callback;
+              throwTypeErrorResult = onStorageInitialize;
+              closure_14 = arg1;
+              throwTypeErrorResult = lib;
+              throwTypeErrorResult = closure_14;
+              dependencyMap = lib(closure_14, 5);
+              throwTypeErrorResult = dependencyMap;
+              throwTypeErrorResult = 32;
+              throwTypeErrorResult = dependencyMap;
+              closure_16 = 5.default;
+              throwTypeErrorResult = dependencyMap;
+              closure_17 = 16048.default;
+              throwTypeErrorResult = dependencyMap;
+              closure_18 = 16098.default;
+              throwTypeErrorResult = dependencyMap;
+              closure_19 = 17;
+              throwTypeErrorResult = closure_16;
+              throwTypeErrorResult = closure_16.registerNotificationCategories();
+              throwTypeErrorResult = closure_16;
+              throwTypeErrorResult = closure_16.registerListener();
+              throwTypeErrorResult = closure_17;
+              throwTypeErrorResult = closure_17.loadServer();
+              throwTypeErrorResult = closure_18;
+              throwTypeErrorResult = closure_18.addChangeListener(() => {
+                const result = onStorageInitialize(paths[34]).setApplicationIconBadgeNumber(totalMentionCount.getTotalMentionCount());
+              });
+              throwTypeErrorResult = callback;
+              if (!callback) {
+                closure_19.init();
+              }
+              callback(5273);
+              obj = callback(5721);
+              const sessionHeartbeatScheduler = obj.initSessionHeartbeatScheduler();
+            }
+            if (callback) {
+              resolved = Promise.resolve();
+            } else {
+              resolved = callback2({ log: true });
+            }
+            obj3 = onStorageInitialize(10);
+            obj3.markAndLog(logger, "\u{1F3C3}", "The initial promise has resolved");
+            let tmp34 = null != lib;
+            if (tmp34) {
+              tmp34 = lib.length > num2;
+            }
+            if (tmp34) {
+              logger.log("initialURLs", lib);
+            }
+            if (null != closure_5) {
+              logger.log("initialNotification", closure_5);
+            }
+            const Storage = callback(595).Storage;
+            if (null == Storage.get(closure_16)) {
+              const Storage2 = callback(595).Storage;
+              const _Date = Date;
+              let result = Storage2.set(closure_16, Date.now());
+            }
+            (function trackFirstLaunched() {
+              const self = this;
+              const apply = closure_27.apply;
+              if (typeof apply === "unknown") {
+                let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+              } else {
+                applyArgumentsResult = apply(self, arguments);
+              }
+              return applyArgumentsResult;
+            })();
+            if (!callback) {
+              outer1_40();
+              if (onStorageInitialize != null) {
+                onStorageInitialize();
+              }
+            }
+            outer1_1(5748)("DispatcherBridge", () => {
+              _undefined(paths[48]);
+            });
+            if (callback) {
+              let obj5 = outer1_1(10);
+              obj5.markAndLog(outer1_20, "\u{1F3C3}", "Flux already initialized.");
+            } else {
+              let obj4 = outer1_1(10);
+              obj4.time("\u{1F3C3}", "Flux.initialize()", () => {
+                onStorageInitialize(paths[18]).initialize();
+                closure_20.verbose("Flux has initialized");
+              });
+            }
+            outer1_1(16759)();
+            const result1 = outer1_0(16760).setupLibdiscoreTimersMonitor();
+            const obj7 = outer1_0(16760);
+            const result2 = outer1_0(16761).installRNGHMountReactionsBridge();
+            const item = outer1_4.forEach((url) => {
+              url = url.url;
+              onStorageInitialize(paths[15])("handleURL", () => callback(table[16])).default(url, true);
+            });
+            let outer1_8 = false;
+            if (null != outer1_5) {
+              throwTypeErrorResult = c3;
+              const outer1_9 = outer1_1(5748)("receiveNotification", () => _undefined(paths[32])).default;
+              throwTypeErrorResult = outer1_1;
+              throwTypeErrorResult = c3;
+              outer1_1(9).extraProperties.tapped_notification = true;
+              throwTypeErrorResult = outer1_9;
+              throwTypeErrorResult = outer1_5;
+              outer1_8 = outer1_9(outer1_5, true);
+            }
+            throwTypeErrorResult = callback;
+            throwTypeErrorResult = outer1_8;
+            if (!outer1_8) {
+              throwTypeErrorResult = onStorageInitialize;
+              throwTypeErrorResult = outer1_12;
+              const outer1_10 = outer1_12.getChannelId();
+              throwTypeErrorResult = outer1_10;
+              if (null != outer1_10) {
+                throwTypeErrorResult = callback;
+                throwTypeErrorResult = onStorageInitialize;
+                throwTypeErrorResult = onStorageInitialize;
+                throwTypeErrorResult = c3;
+                obj4 = { channelId: null, isPreload: true, skipLocalFetch: true, fetchKey: null };
+                throwTypeErrorResult = c10;
+                obj4[0] = c10;
+                throwTypeErrorResult = callback;
+                throwTypeErrorResult = c3;
+                obj4[3] = callback(5744).INITIAL_MESSAGE_FETCH_KEY;
+                throwTypeErrorResult = onStorageInitialize(9899).fetchMessages(obj4);
+                const obj9 = onStorageInitialize(9899);
+              }
+            }
+            throwTypeErrorResult = callback;
+            throwTypeErrorResult = onStorageInitialize;
+            throwTypeErrorResult = outer1_1;
+            throwTypeErrorResult = c3;
+            const loadMiniCacheStart = outer1_1(9).imports.loadMiniCacheStart;
+            throwTypeErrorResult = loadMiniCacheStart.record();
+            let items2 = globalThis;
+            throwTypeErrorResult = new.target;
+            throwTypeErrorResult = new.target;
+            throwTypeErrorResult = new Promise((arg0) => {
+              const _undefined = arg0;
+              _undefined(paths[43])(paths[54], paths.paths).then((arg0) => arg0.default.loadCacheAsync(outer1_4(callback(outer1_3[55]).computeInitialNavigationState(), 1)[0], () => {
+                outer1_0(outer1_3[59]).updateSaturation(outer1_0(outer1_3[57]).default.saturation);
+                const obj = outer1_0(outer1_3[59]);
+                outer1_0(outer1_3[60]).updateVisualRefresh(outer1_0(outer1_3[58]).isMobileVisualRefreshEnabled("NativeAppStartup"));
+                const obj2 = outer1_0(outer1_3[60]);
+                outer1_0(outer1_3[61]).updateTheme(outer1_0(outer1_3[56]).default.theme);
+                callback();
+              }));
+            });
+            const outer1_11 = throwTypeErrorResult;
+            outer1_12 = null;
+            throwTypeErrorResult = v0;
+            throwTypeErrorResult = c3;
+            const obj8 = outer1_0(16761);
+            if (null != obj11.getToken()) {
+              throwTypeErrorResult = callback;
+              items2.Promise.resolve();
+              const _Promise3 = items2.Promise;
+            } else {
+              throwTypeErrorResult = callback;
+              throwTypeErrorResult = onStorageInitialize;
+              throwTypeErrorResult = outer1_0;
+              throwTypeErrorResult = c3;
+              getState = outer1_0(13244);
+              throwTypeErrorResult = getState;
+              throwTypeErrorResult = getState.beginLoadedExperimentsTimeout();
+              throwTypeErrorResult = getState;
+              getState.getPromise();
+            }
+            throwTypeErrorResult = callback;
+            throwTypeErrorResult = onStorageInitialize;
+            throwTypeErrorResult = outer1_11;
+            const items1 = [outer1_11, ];
+            throwTypeErrorResult = outer1_12;
+            items1[1] = outer1_12;
+            const _Promise4 = items2.Promise;
+            obj11 = v0(707);
+            throwTypeErrorResult = items2.Promise.all(items1).then(() => {
+              closure_32.resolve();
+            });
+            throwTypeErrorResult = outer1_0;
+            throwTypeErrorResult = c3;
+            throwTypeErrorResult = c3;
+            throwTypeErrorResult = c3;
+            items2 = [outer1_0(1959)(5719, c3.paths), , , , , ];
+            throwTypeErrorResult = outer1_0;
+            throwTypeErrorResult = c3;
+            throwTypeErrorResult = c3;
+            throwTypeErrorResult = c3;
+            items2[1] = outer1_0(1959)(13508, c3.paths);
+            throwTypeErrorResult = outer1_0;
+            throwTypeErrorResult = c3;
+            throwTypeErrorResult = c3;
+            throwTypeErrorResult = c3;
+            items2[2] = outer1_0(1959)(13521, c3.paths);
+            throwTypeErrorResult = outer1_0;
+            throwTypeErrorResult = c3;
+            throwTypeErrorResult = c3;
+            throwTypeErrorResult = c3;
+            items2[3] = outer1_0(1959)(5921, c3.paths);
+            throwTypeErrorResult = outer1_0;
+            throwTypeErrorResult = c3;
+            throwTypeErrorResult = c3;
+            throwTypeErrorResult = c3;
+            items2[4] = outer1_0(1959)(16763, c3.paths);
+            throwTypeErrorResult = outer1_7;
+            items2[5] = outer1_7;
+            throwTypeErrorResult = items2.Promise.all(items2);
+            v0 = 3;
+            c3 = 1;
+            const _Promise5 = items2.Promise;
+            const allResult = items2.Promise.all(items1);
+          }
+          c3 = 3;
+          obj5 = { value: null, done: true };
+          obj5[0] = arg1;
+          return obj5;
+        } catch (throwTypeErrorResult) {
+          c3 = throwTypeErrorResult;
+          throw throwTypeErrorResult;
+        }
+      }
+    }
+  });
+  const _init = tmp;
+  let apply = tmp.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
 }
 function _initHeadlessTask() {
-  // CreateGeneratorClosureLongIndex (0x67)
-  const obj = callback(tmp);
-  return obj(...arguments);
+  const self = this;
+  const tmp = callback(function*() {
+    if (c3 === 2) {
+      c3 = 3;
+      HermesBuiltin.throwTypeError();
+    } else if (tmp5 === 3) {
+      if (arg0 === 1) {
+        throw arg1;
+      } else if (arg0 === 2) {
+        let obj = { value: null, done: true };
+        obj[0] = arg1;
+        return obj;
+      } else {
+        return { value: "HermesInternal", done: null };
+      }
+    } else {
+      try {
+        c3 = 2;
+        if (0 === c2) {
+          if (arg0 === 1) {
+            c3 = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            c3 = 3;
+            obj = { value: null, done: true };
+            obj[0] = arg1;
+            return obj;
+          } else {
+            let callback = tmp3;
+            let onStorageInitialize = tmp2;
+            onStorageInitialize = undefined;
+            callback = undefined;
+            if (outer1_34 === outer1_33.None) {
+              outer1_34 = outer1_33.HeadlessRan;
+              onStorageInitialize = outer1_26().onStorageInitialize;
+              const items = [outer1_28(), outer1_30(), outer1_35({ log: false })];
+              c2 = 1;
+              c3 = 1;
+              const obj1 = { value: null, done: false };
+              obj1[0] = Promise.all(items);
+              return obj1;
+            } else {
+              c3 = 3;
+            }
+          }
+        } else if (1 === tmp6) {
+          if (arg0 === 1) {
+            c3 = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            c3 = 3;
+            const obj2 = { value: null, done: true };
+            obj2[0] = arg1;
+            return obj2;
+          } else {
+            callback3();
+            onStorageInitialize();
+            onStorageInitialize(c3[71]);
+            onStorageInitialize(c3[48]);
+            callback(c3[18]).initialize();
+            const obj8 = callback(c3[18]);
+            onStorageInitialize(c3[43])(c3[54], c3.paths).then((arg0) => {
+              const cacheAsync = arg0.default.loadCacheAsync({ page: "other" }, () => {
+                closure_32.resolve();
+              });
+            });
+            const items1 = [onStorageInitialize(c3[43])(c3[68], c3.paths)];
+            c2 = 2;
+            c3 = 1;
+            const obj3 = { value: null, done: false };
+            obj3[0] = Promise.all(items1);
+            return obj3;
+          }
+        } else if (arg0 === 1) {
+          c3 = 3;
+          throw arg1;
+        } else if (arg0 !== 2) {
+          callback = arg1;
+          const first = callback2(callback, 1)[0];
+          first.init();
+          callback(c3[49])();
+        }
+        c3 = 3;
+        const obj4 = { value: null, done: true };
+        obj4[0] = arg1;
+        return obj4;
+      } catch (tmp20) {
+        c3 = tmp;
+        throw tmp20;
+      }
+    }
+  });
+  const _initHeadlessTask = tmp;
+  const apply = tmp.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
 }
 function initializeTokenStorage() {
-  const Storage = require(587) /* Storage */.Storage;
+  const Storage = require(595) /* Storage */.Storage;
   if (null == Storage.get(closure_17)) {
-    let obj = require(477) /* set */;
-    if (obj.isAndroid()) {
-      let token = importDefault(479).getConstants().token;
-      const obj2 = importDefault(479);
+    if (tmpResult.isAndroid()) {
+      let token = importDefault(502).getConstants().token;
+      const obj3 = importDefault(502);
     } else {
       token = closure_10.DCDFastConnectManager.token;
     }
     if (null != token) {
-      importDefaultResult.log("Applying token storage fix.");
-      const Storage2 = require(587) /* Storage */.Storage;
-      const result = Storage2.set(closure_17, token);
+      tmp10.log("Applying token storage fix.");
+      const Storage2 = tmp(595).Storage;
+      const result = Storage2.set(tmp3, token);
+      let obj = tmp10;
     } else {
-      importDefaultResult.log("Cannot apply token storage fix as token not in NSUserDefaults.");
+      tmp10.log("Cannot apply token storage fix as token not in NSUserDefaults.");
+      obj = tmp10;
     }
+    tmpResult = tmp(500);
   } else {
-    importDefaultResult.verbose("No need to apply token storage fix as token already exists.");
+    obj = tmp10;
+    tmp10.verbose("No need to apply token storage fix as token already exists.");
   }
-  importAll(684).init();
-  const obj3 = importAll(684);
-  const obj4 = importAll(684);
-  const Storage3 = require(587) /* Storage */.Storage;
-  obj = { storageHasToken: null != Storage3.get(closure_17), tokenManagerHasToken: null != importAll(684).getToken() };
-  importDefaultResult.verbose("Token manager has initialized", obj);
+  importAll(707).init();
+  const obj4 = importAll(707);
+  const obj5 = importAll(707);
+  const Storage3 = tmp(595).Storage;
+  obj = { storageHasToken: null != Storage3.get(tmp3), tokenManagerHasToken: null != importAll(707).getToken() };
+  obj.verbose("Token manager has initialized", obj);
   callback2();
 }
-({ AppState: closure_6, NativeEventEmitter: closure_7, Linking: closure_8, LogBox: closure_9, NativeModules: closure_10 } = get_ActivityIndicator);
+({ AppState: closure_6, NativeEventEmitter: error, Linking: metroImportAll, LogBox: c9, NativeModules: c10 } = get_ActivityIndicator);
 ({ AppStates: closure_14, AnalyticEvents: closure_15, FIRST_RUN_DATE_KEY: closure_16, TOKEN_KEY: closure_17, STORAGE_SECURE_KEYS: closure_18, Platforms: closure_19 } = ME);
 loadImports.recordEnd();
-importDefaultResult = new importDefaultResult("index.native.tsx");
+let closure_20 = new require("isAnalyticsEndpoint")("index.native.tsx");
 let c21 = false;
-let c22 = null;
+let c25 = null;
 const future = new require("Future").Future();
 let obj = { None: 0, [0]: "None", HeadlessRan: 1, [1]: "HeadlessRan", Full: 2, [2]: "Full" };
 const None = obj.None;
 const promise = new Promise((arg0) => {
-  let closure_23 = arg0;
+  let closure_31 = arg0;
 });
 loadIndex.recordEnd();
-result = require("module_16013").fileFinishedImporting("modules/app_startup/native/NativeAppStartup.tsx");
+const tmp10 = new require("isAnalyticsEndpoint")("index.native.tsx");
+result = require("module_16048").fileFinishedImporting("modules/app_startup/native/NativeAppStartup.tsx");
 
 export const applicationReady = future;
 export const init = function init() {
-  return _init(...arguments);
+  const self = this;
+  const apply = _init.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
 };
 export const initHeadlessTask = function initHeadlessTask() {
-  return _initHeadlessTask(...arguments);
+  const self = this;
+  const apply = _initHeadlessTask.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
 };

@@ -1,45 +1,56 @@
-// Module ID: 8067
-// Function ID: 64007
-// Name: maxOverflowOrFallback
-// Dependencies: [8068, 8065, 8066, 2]
+// Module ID: 8091
+// Function ID: 8092
+// Name: computeProfileFrameDimensions
+// Dependencies: [8092, 8089, 8090, 2]
 // Exports: computeProfileFrameDimensions
 
-// Module 8067 (maxOverflowOrFallback)
-function maxOverflowOrFallback(found, arg1) {
-  let applyResult = arg1;
-  if (found.length > 0) {
-    const _Math = Math;
-    const items = [];
-    HermesBuiltin.arraySpread(found, 0);
-    const _Math2 = Math;
-    applyResult = HermesBuiltin.apply(items, Math);
-  }
-  return applyResult;
-}
-function stapleOverflow(arg0, arg1, arg2) {
-  return Math.max(0, arg0 - (arg1 - arg2));
-}
+// Module 8091 (computeProfileFrameDimensions)
 const result = require("ProfileFrameLayerAnchor").fileFinishedImporting("modules/collectibles/profile_frames/tooling/computeProfileFrameDimensions.tsx");
 
-export const computeProfileFrameDimensions = function computeProfileFrameDimensions(items1) {
-  INNER_WIDTH = INNER_WIDTH(8068).DefaultProfileFrameDimensions.INNER_WIDTH;
-  const found = items1.filter((layer) => {
+export const computeProfileFrameDimensions = function computeProfileFrameDimensions(closure_4) {
+  innerWidth = innerWidth(8092).DefaultProfileFrameDimensions.INNER_WIDTH;
+  const mapped = closure_4.map((dims) => Math.round(Math.max(0, (dims.dims.width - innerWidth) / 2)));
+  let overflowHorizontal = 0;
+  if (mapped.length > 0) {
+    const _Math = Math;
+    const items = [];
+    HermesBuiltin.arraySpread(mapped, 0);
+    const _Math2 = Math;
+    overflowHorizontal = HermesBuiltin.apply(items, Math);
+  }
+  const found = closure_4.filter((layer) => {
     layer = layer.layer;
-    let tmp = layer.type === INNER_WIDTH(outer1_1[1]).ProfileFrameLayerType.STAPLE;
-    if (tmp) {
-      tmp = layer.anchor === INNER_WIDTH(outer1_1[2]).ProfileFrameLayerAnchor.TOP;
+    let tmp3 = layer.type === innerWidth(8089).ProfileFrameLayerType.STAPLE;
+    if (tmp3) {
+      tmp3 = layer.anchor === innerWidth(8090).ProfileFrameLayerAnchor.TOP;
     }
-    return tmp;
+    return tmp3;
   });
-  let tmp = maxOverflowOrFallback(items1.map((dims) => Math.round(Math.max(0, (dims.dims.width - INNER_WIDTH) / 2))), 0);
-  const found1 = items1.filter((layer) => {
+  const mapped1 = found.map((dims) => Math.max(0, dims.dims.height - (716 - innerWidth(8092).DefaultProfileFrameDimensions.OVERFLOW_TOP)));
+  let overflowTop = 0;
+  if (mapped1.length > 0) {
+    const _Math3 = Math;
+    const items1 = [];
+    HermesBuiltin.arraySpread(mapped1, 0);
+    const _Math4 = Math;
+    overflowTop = HermesBuiltin.apply(items1, Math);
+  }
+  const found1 = closure_4.filter((layer) => {
     layer = layer.layer;
-    let tmp = layer.type === INNER_WIDTH(outer1_1[1]).ProfileFrameLayerType.STAPLE;
-    if (tmp) {
-      tmp = layer.anchor === INNER_WIDTH(outer1_1[2]).ProfileFrameLayerAnchor.BOTTOM;
+    let tmp3 = layer.type === innerWidth(8089).ProfileFrameLayerType.STAPLE;
+    if (tmp3) {
+      tmp3 = layer.anchor === innerWidth(8090).ProfileFrameLayerAnchor.BOTTOM;
     }
-    return tmp;
+    return tmp3;
   });
-  const tmp2 = maxOverflowOrFallback(found.map((dims) => outer1_3(dims.dims.height, 716, INNER_WIDTH(outer1_1[0]).DefaultProfileFrameDimensions.OVERFLOW_TOP)), 0);
-  return { innerWidth: INNER_WIDTH, overflowTop: maxOverflowOrFallback(found.map((dims) => outer1_3(dims.dims.height, 716, INNER_WIDTH(outer1_1[0]).DefaultProfileFrameDimensions.OVERFLOW_TOP)), 0), overflowBottom: maxOverflowOrFallback(found1.map((dims) => outer1_3(dims.dims.height, 424, INNER_WIDTH(outer1_1[0]).DefaultProfileFrameDimensions.OVERFLOW_BOTTOM)), 0), overflowHorizontal: tmp };
+  const mapped2 = found1.map((dims) => Math.max(0, dims.dims.height - (424 - innerWidth(8092).DefaultProfileFrameDimensions.OVERFLOW_BOTTOM)));
+  let overflowBottom = 0;
+  if (mapped2.length > 0) {
+    const _Math5 = Math;
+    const items2 = [];
+    HermesBuiltin.arraySpread(mapped2, 0);
+    const _Math6 = Math;
+    overflowBottom = HermesBuiltin.apply(items2, Math);
+  }
+  return { innerWidth, overflowTop, overflowBottom, overflowHorizontal };
 };

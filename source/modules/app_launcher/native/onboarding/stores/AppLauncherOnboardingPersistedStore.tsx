@@ -1,163 +1,111 @@
-// Module ID: 11194
-// Function ID: 86840
-// Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 566, 686, 2]
+// Module ID: 11218
+// Function ID: 11219
+// Name: initialize
+// Dependencies: [589, 709, 2]
 
-// Module 11194 (_isNativeReflectConstruct)
-import dispatcher from "dispatcher";
-import set from "set";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
+// Module 11218 (initialize)
+import { PersistedStore } from "initialize";
 
-function _isNativeReflectConstruct() {
-  let dispatcher = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return dispatcher;
-  }
-  const result = _isNativeReflectConstruct();
-}
 let obj = { canShowBotsBanner: false, canShowAppsOrActivitiesBanner: false, willShowGlobalSearchOnboarding: false, timeMs: 0, channelId: "0" };
-let closure_6 = { lastSeenTimeMs: null, triggeredOnboardingContentMetadata: obj };
-let tmp2 = ((PersistedStore) => {
-  class AppLauncherOnboardingPersistedStore {
-    constructor() {
-      self = this;
-      tmp = AppLauncherOnboardingPersistedStore(this, AppLauncherOnboardingPersistedStore);
-      obj = outer1_3(AppLauncherOnboardingPersistedStore);
-      tmp2 = outer1_2;
-      if (outer1_7()) {
-        tmp6 = globalThis;
-        _Reflect = Reflect;
-        tmp7 = outer1_3;
-        tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, outer1_3(self).constructor);
-      } else {
-        tmp3 = arguments;
-        tmp4 = arguments;
-        constructResult = obj(...arguments);
-      }
-      return tmp2(self, constructResult);
-    }
+let closure_1 = { lastSeenTimeMs: null, triggeredOnboardingContentMetadata: obj };
+class AppLauncherOnboardingPersistedStore extends PersistedStore {
+}
+const prototype = AppLauncherOnboardingPersistedStore.prototype;
+prototype["initialize"] = function initialize(arg0) {
+  if (null != arg0) {
+    ({ lastSeenTimeMs: closure_1.lastSeenTimeMs, triggeredOnboardingContentMetadata: closure_1.triggeredOnboardingContentMetadata } = arg0);
   }
-  callback2(AppLauncherOnboardingPersistedStore, PersistedStore);
-  let obj = {
-    key: "initialize",
-    value(arg0) {
-      if (null != arg0) {
-        ({ lastSeenTimeMs: outer1_6.lastSeenTimeMs, triggeredOnboardingContentMetadata: outer1_6.triggeredOnboardingContentMetadata } = arg0);
-      }
-    }
-  };
-  const items = [obj, , , ];
-  obj = {
-    key: "getState",
-    value() {
-      return outer1_6;
-    }
-  };
-  items[1] = obj;
-  obj = {
-    key: "getLastSeenTimeMs",
-    value() {
-      return outer1_6.lastSeenTimeMs;
-    }
-  };
-  items[2] = obj;
-  items[3] = {
-    key: "getTriggeredOnboardingContentMetadata",
-    value() {
-      return outer1_6.triggeredOnboardingContentMetadata;
-    }
-  };
-  return callback(AppLauncherOnboardingPersistedStore, items);
-})(require("initialize").PersistedStore);
-tmp2.displayName = "AppLauncherOnboardingPersistedStore";
-tmp2.persistKey = "AppLauncherOnboardingPersistedStore";
-let items = [
+};
+prototype["getState"] = function getState() {
+  return closure_1;
+};
+prototype["getLastSeenTimeMs"] = function getLastSeenTimeMs() {
+  return closure_1.lastSeenTimeMs;
+};
+prototype["getTriggeredOnboardingContentMetadata"] = function getTriggeredOnboardingContentMetadata() {
+  return closure_1.triggeredOnboardingContentMetadata;
+};
+AppLauncherOnboardingPersistedStore.displayName = "AppLauncherOnboardingPersistedStore";
+AppLauncherOnboardingPersistedStore.persistKey = "AppLauncherOnboardingPersistedStore";
+const items = [
   (lastSeenTimeMs) => {
-    let obj = {};
     lastSeenTimeMs = undefined;
-    if (null != lastSeenTimeMs) {
+    if (lastSeenTimeMs != null) {
       lastSeenTimeMs = lastSeenTimeMs.lastSeenTimeMs;
     }
-    let tmp2 = null;
-    if (null != lastSeenTimeMs) {
-      tmp2 = lastSeenTimeMs;
+    if (lastSeenTimeMs == null) {
+      lastSeenTimeMs = null;
     }
-    obj.lastSeenTimeMs = tmp2;
-    obj = {};
+    let obj = { lastSeenTimeMs, triggeredOnboardingContentMetadata: null };
     let canShowBotsBanner;
-    if (null != lastSeenTimeMs) {
+    if (lastSeenTimeMs != null) {
       const triggeredOnboardingContentMetadata = lastSeenTimeMs.triggeredOnboardingContentMetadata;
-      if (null != triggeredOnboardingContentMetadata) {
+      if (triggeredOnboardingContentMetadata != null) {
         canShowBotsBanner = triggeredOnboardingContentMetadata.canShowBotsBanner;
       }
     }
-    if (null == canShowBotsBanner) {
+    if (canShowBotsBanner == null) {
       canShowBotsBanner = obj.canShowBotsBanner;
     }
-    obj.canShowBotsBanner = canShowBotsBanner;
+    obj = { canShowBotsBanner, canShowAppsOrActivitiesBanner: null, willShowGlobalSearchOnboarding: null, timeMs: null, channelId: null };
     let prop;
-    if (null != lastSeenTimeMs) {
+    if (lastSeenTimeMs != null) {
       const triggeredOnboardingContentMetadata2 = lastSeenTimeMs.triggeredOnboardingContentMetadata;
-      if (null != triggeredOnboardingContentMetadata2) {
+      if (triggeredOnboardingContentMetadata2 != null) {
         prop = triggeredOnboardingContentMetadata2.canShowAppsOrActivitiesBanner;
       }
     }
-    if (null == prop) {
+    if (prop == null) {
       prop = obj.canShowAppsOrActivitiesBanner;
     }
-    obj.canShowAppsOrActivitiesBanner = prop;
+    obj[1] = prop;
     let prop1;
-    if (null != lastSeenTimeMs) {
+    if (lastSeenTimeMs != null) {
       const triggeredOnboardingContentMetadata3 = lastSeenTimeMs.triggeredOnboardingContentMetadata;
-      if (null != triggeredOnboardingContentMetadata3) {
+      if (triggeredOnboardingContentMetadata3 != null) {
         prop1 = triggeredOnboardingContentMetadata3.willShowGlobalSearchOnboarding;
       }
     }
-    if (null == prop1) {
+    if (prop1 == null) {
       prop1 = obj.willShowGlobalSearchOnboarding;
     }
-    obj.willShowGlobalSearchOnboarding = prop1;
+    obj[2] = prop1;
     let timeMs;
-    if (null != lastSeenTimeMs) {
+    if (lastSeenTimeMs != null) {
       const triggeredOnboardingContentMetadata4 = lastSeenTimeMs.triggeredOnboardingContentMetadata;
-      if (null != triggeredOnboardingContentMetadata4) {
+      if (triggeredOnboardingContentMetadata4 != null) {
         timeMs = triggeredOnboardingContentMetadata4.timeMs;
       }
     }
-    if (null == timeMs) {
+    if (timeMs == null) {
       timeMs = obj.timeMs;
     }
-    obj.timeMs = timeMs;
+    obj[3] = timeMs;
     let channelId;
-    if (null != lastSeenTimeMs) {
+    if (lastSeenTimeMs != null) {
       const triggeredOnboardingContentMetadata5 = lastSeenTimeMs.triggeredOnboardingContentMetadata;
-      if (null != triggeredOnboardingContentMetadata5) {
+      if (triggeredOnboardingContentMetadata5 != null) {
         channelId = triggeredOnboardingContentMetadata5.channelId;
       }
     }
-    if (null == channelId) {
+    if (channelId == null) {
       channelId = obj.channelId;
     }
-    obj.channelId = channelId;
-    obj.triggeredOnboardingContentMetadata = obj;
+    obj[4] = channelId;
+    obj[1] = obj;
     return obj;
   }
 ];
-tmp2.migrations = items;
+AppLauncherOnboardingPersistedStore.migrations = items;
 obj = {
   APP_LAUNCHER_ONBOARDING_SET_LAST_SEEN_TIME_MS: function handleSetLastSeenTimeMs() {
-    closure_6.lastSeenTimeMs = Date.now();
+    closure_1.lastSeenTimeMs = Date.now();
   },
   APP_LAUNCHER_ONBOARDING_SET_TRIGGERED_ONBOARDING_CONTENT_METADATA: function handleSetTriggeredOnboardingContentMetadata(triggeredOnboardingContentMetadata) {
-    closure_6.triggeredOnboardingContentMetadata = triggeredOnboardingContentMetadata.triggeredOnboardingContentMetadata;
+    closure_1.triggeredOnboardingContentMetadata = triggeredOnboardingContentMetadata.triggeredOnboardingContentMetadata;
   }
 };
-tmp2 = new tmp2(require("dispatcher"), obj);
-let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/app_launcher/native/onboarding/stores/AppLauncherOnboardingPersistedStore.tsx");
+const appLauncherOnboardingPersistedStore = new AppLauncherOnboardingPersistedStore(require("dispatcher"), obj);
+const result = require("set").fileFinishedImporting("modules/app_launcher/native/onboarding/stores/AppLauncherOnboardingPersistedStore.tsx");
 
-export default tmp2;
+export default appLauncherOnboardingPersistedStore;

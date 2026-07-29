@@ -1,11 +1,11 @@
-// Module ID: 15966
-// Function ID: 123250
+// Module ID: 16001
+// Function ID: 16002
 // Name: useControlsTranslation
-// Dependencies: [31, 10016, 10019, 10015, 4026, 4577, 2]
+// Dependencies: [19, 10038, 10041, 10037, 4050, 4599, 2]
 // Exports: default
 
-// Module 15966 (useControlsTranslation)
-import result from "result";
+// Module 16001 (useControlsTranslation)
+import noop from "noop";
 import { MODE_CHANGE_PHYSICS } from "VoicePanelModes";
 import { CALL_TILE_GUTTER } from "CARD_SIZE";
 
@@ -20,30 +20,29 @@ export default function useControlsTranslation(arg0, wrapperSpecs, viewHeight) {
   let obj = _require(useReducedMotion[4]);
   class S {
     constructor() {
-      obj = {};
-      obj = {};
-      obj3 = closure_0(useReducedMotion[5]);
-      obj.translateX = obj3.withSpring(closure_0.get().x, outer1_4);
+      obj = { translateX: null };
+      obj2 = closure_0(useReducedMotion[5]);
+      obj3 = closure_0;
+      tmp = outer1_4;
+      obj[0] = obj2.withSpring(closure_0.get().x, outer1_4);
       items = [, ];
       items[0] = obj;
-      obj1 = {};
-      obj5 = closure_0(useReducedMotion[5]);
+      obj4 = closure_0(useReducedMotion[5]);
       if (!useReducedMotion.get()) {
-        tmp = closure_0;
-        if (closure_0.get().hidden) {
-          tmp2 = closure_0;
-          tmp3 = outer1_5;
-          tmp5 = closure_1;
-          sum = closure_0.get().height + outer1_5;
+        if (obj3.get().hidden) {
+          tmp2 = outer1_5;
+          tmp4 = closure_1;
+          sum = obj3.get().height + outer1_5;
           y = sum + closure_1.get();
         }
-        tmp6 = outer1_4;
-        obj1.translateY = obj5.withSpring(y, outer1_4);
+        obj = { transform: null };
+        obj1 = { translateY: null };
+        obj1[0] = obj4.withSpring(y, tmp);
         items[1] = obj1;
-        obj.transform = items;
+        obj[0] = items;
         return obj;
       }
-      y = closure_0.get().y;
+      y = obj3.get().y;
       return;
     }
   }

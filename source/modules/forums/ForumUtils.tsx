@@ -1,69 +1,88 @@
-// Module ID: 6049
-// Function ID: 53867
-// Name: getForumPostReadStates
-// Dependencies: [1348, 1838, 4177, 6050, 1355, 1212, 1357, 2]
-// Exports: canDisplayPostUnreadMessageCount, getForumPostReadStatesById, getForumTimestampFormatter, isForumPostPinned
+// Module ID: 6067
+// Function ID: 6068
+// Name: getCreationDefaultFormatter
+// Dependencies: [1372, 1862, 4201, 6068, 1379, 1236, 1381, 2]
+// Exports: canDisplayPostUnreadMessageCount, getForumPostReadStates, getForumPostReadStatesById, getForumTimestampFormatter, isForumPostPinned
 
-// Module 6049 (getForumPostReadStates)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import closure_4 from "_isNativeReflectConstruct";
+// Module 6067 (getCreationDefaultFormatter)
+import ensureGuildLoaded from "ensureGuildLoaded";
+import createGuildRecordFromRust from "createGuildRecordFromRust";
+import generateOldThreadCutoff from "generateOldThreadCutoff";
 import { ForumTimestampFormats } from "FORUM_GUIDELINES_ACTION_SHEET";
 import { ChannelFlags } from "set";
 
 const require = arg1;
-function getForumPostReadStates(channel, guild, items) {
+function getCreationDefaultFormatter() {
+  const obj = { minutes: require(1236) /* getSystemLocale */.t.nFt9ck, hours: require(1236) /* getSystemLocale */.t.jzCewe, days: require(1236) /* getSystemLocale */.t.U4I0sw, month: null };
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj[3] = intl.string(require(1236) /* getSystemLocale */.t["nBNJ/L"]);
+  return obj;
+}
+const result = require("generateOldThreadCutoff").fileFinishedImporting("modules/forums/ForumUtils.tsx");
+
+export const getForumPostReadStates = function getForumPostReadStates(isArchivedThread, guild, items) {
   let obj;
   let tmp = items;
   if (items === undefined) {
-    items = [closure_4];
+    items = [generateOldThreadCutoff];
     tmp = items;
   }
   [obj] = tmp;
-  obj = {};
-  let isNewForumThreadResult = !channel.isArchivedThread();
-  if (isNewForumThreadResult) {
-    isNewForumThreadResult = obj.isNewForumThread(channel.id, channel.parent_id, guild);
+  const isArchivedThreadResult = isArchivedThread.isArchivedThread();
+  let isNewForumThreadResult = !isArchivedThreadResult;
+  if (!isArchivedThreadResult) {
+    isNewForumThreadResult = obj.isNewForumThread(isArchivedThread.id, isArchivedThread.parent_id, guild);
   }
-  obj.isNew = isNewForumThreadResult;
-  obj.hasUnreads = !channel.isArchivedThread() && obj.isForumPostUnread(channel.id);
+  obj = { isNew: isNewForumThreadResult, hasUnreads: null };
+  const isArchivedThreadResult1 = isArchivedThread.isArchivedThread();
+  let isForumPostUnreadResult = !isArchivedThreadResult1;
+  if (!isArchivedThreadResult1) {
+    isForumPostUnreadResult = obj.isForumPostUnread(isArchivedThread.id);
+  }
+  obj[1] = isForumPostUnreadResult;
   return obj;
-}
-function getCreationDefaultFormatter() {
-  const obj = { minutes: require(1212) /* getSystemLocale */.t.nFt9ck, hours: require(1212) /* getSystemLocale */.t.jzCewe, days: require(1212) /* getSystemLocale */.t.U4I0sw };
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj.month = intl.string(require(1212) /* getSystemLocale */.t["nBNJ/L"]);
-  return obj;
-}
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/forums/ForumUtils.tsx");
-
-export { getForumPostReadStates };
-export const getForumPostReadStatesById = function getForumPostReadStatesById(channelId) {
+};
+export const getForumPostReadStatesById = function getForumPostReadStatesById(arg0) {
   let obj;
   let obj2;
+  let obj4;
   let tmp5;
   let tmp = arg1;
   if (arg1 === undefined) {
-    const items = [_isNativeReflectConstruct, _createForOfIteratorHelperLoose, closure_4];
+    const items = [ensureGuildLoaded, createGuildRecordFromRust, generateOldThreadCutoff];
     tmp = items;
   }
   [obj, obj2, tmp5] = tmp;
-  const channel = obj.getChannel(channelId);
+  const channel = obj.getChannel(arg0);
   if (null == channel) {
     return null;
   } else {
     const guild = obj2.getGuild(channel.guild_id);
-    let tmp8 = null;
+    let tmp11 = null;
     if (null != guild) {
       const items1 = [tmp5];
-      tmp8 = getForumPostReadStates(channel, guild, items1);
+      [obj4] = items1;
+      const isArchivedThreadResult = channel.isArchivedThread();
+      let isNewForumThreadResult = !isArchivedThreadResult;
+      if (!isArchivedThreadResult) {
+        isNewForumThreadResult = obj4.isNewForumThread(channel.id, channel.parent_id, guild);
+      }
+      obj = { isNew: null, hasUnreads: null };
+      obj[0] = isNewForumThreadResult;
+      const isArchivedThreadResult1 = channel.isArchivedThread();
+      let isForumPostUnreadResult = !isArchivedThreadResult1;
+      if (!isArchivedThreadResult1) {
+        isForumPostUnreadResult = obj4.isForumPostUnread(channel.id);
+      }
+      obj[1] = isForumPostUnreadResult;
+      tmp11 = obj;
     }
-    return tmp8;
+    return tmp11;
   }
 };
 export const getForumTimestampFormatter = function getForumTimestampFormatter(closure_1, DURATION_AGO) {
   if (DURATION_AGO === ForumTimestampFormats.POSTED_DURATION_AGO) {
-    if (closure_1 === require(1357) /* set */.ThreadSortOrder.CREATION_DATE) {
+    if (closure_1 === require(1381) /* set */.ThreadSortOrder.CREATION_DATE) {
       return getCreationDefaultFormatter;
     }
   }
@@ -84,7 +103,7 @@ export const canDisplayPostUnreadMessageCount = function canDisplayPostUnreadMes
 export const isForumPostPinned = function isForumPostPinned(id) {
   channel = channel.getChannel(id);
   let hasFlagResult;
-  if (null != channel) {
+  if (channel != null) {
     hasFlagResult = channel.hasFlag(ChannelFlags.PINNED);
   }
   return true === hasFlagResult;

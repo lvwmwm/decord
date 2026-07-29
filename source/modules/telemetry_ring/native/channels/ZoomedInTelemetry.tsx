@@ -1,109 +1,157 @@
-// Module ID: 13226
-// Function ID: 101700
-// Name: _createForOfIteratorHelperLoose
-// Dependencies: [5, 6, 7, 15, 17, 18, 13227, 13224, 13228, 675, 13229, 2]
+// Module ID: 13247
+// Function ID: 13248
+// Name: shouldRun
+// Dependencies: [5, 13248, 13249, 13251, 13253, 698, 2]
 
-// Module 13226 (_createForOfIteratorHelperLoose)
-import _inherits from "_inherits";
-import apexExperiment from "apexExperiment";
-import TelemetryChannel from "TelemetryChannel";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import closure_8 from "_inherits";
-import tmp2 from "_isNativeReflectConstruct";
+// Module 13247 (shouldRun)
+import expandEventProperties from "expandEventProperties";
+import "getIntervalMs";
+import importDefaultResult1 from "TelemetryChannel";
 
 const require = arg1;
-function _createForOfIteratorHelperLoose(iterable) {
-  let closure_0 = iterable;
-  iterable = "undefined" !== typeof Symbol;
-  if (iterable) {
-    const _Symbol = Symbol;
-    iterable = iterable[Symbol.iterator];
+let closure_4 = { type: "ROWS", limit: 250 };
+let closure_5 = { type: "ROWS", limit: 10000 };
+class ZoomedInTelemetryImpl extends tmp3 {
+  constructor() {
+    tmp2 = require("TelemetryChannel");
+    items = [];
+    items[0] = require("TelemetryChannel").TelemetryChannel.ZOOMED;
+    tmp = new tmp(tmp2, items, closure_1, new.target);
+    // ThrowIfThisInitialized (0x7c)
+    return tmp;
   }
-  if (!iterable) {
-    iterable = iterable[Symbol.iterator];
-  }
-  if (iterable) {
-    const iter = iterable.call(iterable);
-    const next = iter.next;
-    return next.bind(iter);
-  } else {
-    const _Array = Array;
-    let tmp = iterable;
-    if (!Array.isArray(iterable)) {
-      let tmp2;
-      if (iterable) {
-        if ("string" === typeof iterable) {
-          tmp2 = _arrayLikeToArray(iterable, undefined);
-        } else {
-          const toString = {}.toString;
-          const substr = toString.call(iterable).slice(8, -1);
-          let name = substr;
-          if (tmp3) {
-            name = iterable.constructor.name;
-          }
-          if ("Map" !== name) {
-            if ("Set" !== name) {
-              if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(iterable, undefined);
-              } else {
-                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+}
+const prototype = ZoomedInTelemetryImpl.prototype;
+prototype["shouldRun"] = function shouldRun() {
+  return require(13248) /* apexExperiment */.isZoomedExperimentEnabled();
+};
+prototype["getBudget"] = function getBudget(mode) {
+  return "backlog" === mode ? closure_5 : closure_4;
+};
+prototype["getAckedEndOffsetStorageKey"] = function getAckedEndOffsetStorageKey() {
+  return "telemetry_ring_zoomed_acked_end_offset_v1";
+};
+prototype["getExportBatchSize"] = function getExportBatchSize() {
+  return 250;
+};
+prototype["exportEntries"] = function exportEntries(arg0, arg1) {
+  let closure_0 = arg0;
+  let closure_1 = arg1;
+  return callback(function*() {
+    if (table === 2) {
+      table = 3;
+      HermesBuiltin.throwTypeError();
+    } else if (tmp2 === 3) {
+      if (arg0 === 1) {
+        throw arg1;
+      } else if (arg0 === 2) {
+        let obj = { value: null, done: true };
+        obj[0] = arg1;
+        return obj;
+      } else {
+        return { value: "HermesInternal", done: null };
+      }
+    } else {
+      while (true) {
+        let num = 2;
+        table = 2;
+        let tmp3 = c3;
+        if (0 === c3) {
+          if (arg0 === 1) {
+            let num9 = 3;
+            table = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            let num8 = 3;
+            table = 3;
+            obj = { value: null, done: true };
+            obj[0] = arg1;
+            return obj;
+          } else {
+            let c5 = 1;
+            let items = [];
+            let closure_0 = items;
+            let tmp20 = outer1_0;
+            let closure_1 = outer1_0;
+            let tmp21 = outer1_0;
+            closure_1 = outer1_0;
+            closure_0 = outer1_0[Symbol.iterator]();
+            let tmp7 = closure_1;
+            let tmp8 = closure_0;
+            while (closure_0 !== undefined) {
+              c5 = 2;
+              let tmp10 = outer1_0;
+              let tmp11 = table;
+              let obj1 = outer1_0(table[4]);
+              let zoomedInAnalyticsEvent = obj1.buildZoomedInAnalyticsEvent(tmp9);
+              if (null != zoomedInAnalyticsEvent) {
+                obj1 = { key: null, props: null };
+                ({ key: obj3[0], props: obj3[1] } = zoomedInAnalyticsEvent);
+                let arr = items.push(obj1);
               }
+              c5 = 1;
+              continue;
             }
-            tmp2 = arr;
+            if (0 === items.length) {
+              c5 = 0;
+              let num7 = 3;
+              table = 3;
+              return { value: true, done: true };
+            } else {
+              let _Promise = Promise;
+              c3 = 3;
+              let num6 = 1;
+              table = 1;
+              let obj2 = { value: null, done: false };
+              obj2[0] = Promise.all(items.map((arg0, arg1) => {
+                let key;
+                let props;
+                let flush = closure_1;
+                ({ key, props } = arg0);
+                if (closure_1) {
+                  flush = arg1 === length.length - 1;
+                }
+                return outer2_1(table[5]).track(key, props, { flush });
+              }));
+              return obj2;
+            }
           }
-          const _Array2 = Array;
-          arr = Array.from(iterable);
-          const callResult = toString.call(iterable);
-          tmp3 = "Object" === substr && iterable.constructor;
+        } else if (1 === tmp3) {
+          c5 = 0;
+          let num5 = 3;
+          table = 3;
+          return { value: false, done: true };
+        } else if (2 === tmp3) {
+          let tmp4 = closure_4;
+          let tmp5 = closure_4;
+          c5 = 1;
+          let tmp6 = closure_0;
+          closure_0.return();
+          throw closure_4;
+        } else if (arg0 === 1) {
+          let num4 = 3;
+          table = 3;
+          throw arg1;
+        } else if (arg0 === 2) {
+          c5 = 0;
+          let num3 = 3;
+          table = 3;
+          obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
+        } else {
+          c5 = 0;
+          let num2 = 3;
+          table = 3;
+          return { value: true, done: true };
         }
       }
-      tmp = tmp2;
-      if (!tmp2) {
-        const _TypeError = TypeError;
-        const typeError = new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
-        throw typeError;
-      }
     }
-    if (tmp) {
-      closure_0 = tmp;
-    }
-    let c1 = 0;
-    return () => {
-      if (closure_1 >= length.length) {
-        let obj = { done: true };
-      } else {
-        obj = { done: false };
-        closure_1 = tmp3 + 1;
-        obj.value = length[+closure_1];
-      }
-      return obj;
-    };
-  }
-}
-function _arrayLikeToArray(arg0, arg1) {
-  let length;
-  if (tmp) {
-    length = arg0.length;
-  }
-  const ArrayResult = Array(length);
-  for (let num = 0; num < length; num = num + 1) {
-    ArrayResult[num] = arg0[num];
-  }
-  return ArrayResult;
-}
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
+  })();
+};
+let items = [require("TelemetryChannel").TelemetryChannel.ZOOMED];
+// ThrowIfThisInitialized (0x7c)
+let tmp5 = new "exportEntries"(importDefaultResult1, items, tmp, prototype, ZoomedInTelemetryImpl, "exportEntries", importDefaultResult1);
+const result = require("getIntervalMs").fileFinishedImporting("modules/telemetry_ring/native/channels/ZoomedInTelemetry.tsx");
 
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
-  }
-  const result = _isNativeReflectConstruct();
-}
-let closure_9 = { type: "ROWS", limit: 250 };
-let closure_10 = { type: "ROWS", limit: 10000 };
-tmp2 = new tmp2();
-let result = require("_defineProperties").fileFinishedImporting("modules/telemetry_ring/native/channels/ZoomedInTelemetry.tsx");
-
-export default tmp2;
+export default tmp5;

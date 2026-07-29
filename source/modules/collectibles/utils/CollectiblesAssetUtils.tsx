@@ -1,10 +1,11 @@
-// Module ID: 1830
-// Function ID: 20044
+// Module ID: 1854
+// Function ID: 1855
 // Name: parseSkuIdFromServerData
-// Dependencies: [1327, 2, 1829]
+// Dependencies: [1351, 2, 1853]
 // Exports: getCollectiblesItemAssetUrl
 
-// Module 1830 (parseSkuIdFromServerData)
+// Module 1854 (parseSkuIdFromServerData)
+let c2 = "media/v1/collectibles-shop";
 let result = require("parseSkuIdFromServerData").fileFinishedImporting("modules/collectibles/utils/CollectiblesAssetUtils.tsx");
 
 export const parseSkuIdFromServerData = require("parseSkuIdFromServerData").parseSkuIdFromServerData;
@@ -17,29 +18,27 @@ export const getCollectiblesItemAssetUrl = function getCollectiblesItemAssetUrl(
   if (null == skuId) {
     return null;
   } else {
-    let str = globalThis;
+    let _HermesInternal = globalThis;
     const _Boolean = Boolean;
-    const result = require(1327) /* isDiscordFrontendDevelopment */.isDiscordBackendDevelopment();
-    let str2 = Boolean(assetId);
-    let str3 = "";
+    const result = require(1351) /* isDiscordFrontendDevelopment */.isDiscordBackendDevelopment();
+    let str = Boolean(assetId);
     if (result) {
-      let combined = str3;
-      if (str2) {
-        str2 = "/";
-        combined = `` + assetId + "/";
+      let str9 = "";
+      if (str) {
+        str9 = "" + assetId + "/";
       }
-      str3 = str.HermesInternal.concat;
+      _HermesInternal = _HermesInternal.HermesInternal;
       str = "/";
-      let str3Result = str3("media/v1/collectibles-shop", "/", skuId, "/", combined, assetFormat);
+      let combined = tmp4 + "/" + skuId + "/" + str9 + assetFormat;
     } else {
-      let combined1 = str3;
-      if (str2) {
-        const _HermesInternal = HermesInternal;
-        combined1 = str3 + assetId + "/";
+      let str3 = "";
+      if (`/`) {
+        const _HermesInternal2 = HermesInternal;
+        str3 = "" + assetId + "/";
       }
-      const _HermesInternal2 = HermesInternal;
-      str3Result = "https://cdn.discordapp.com/" + "media/v1/collectibles-shop" + "/" + skuId + "/" + combined1 + assetFormat;
+      const _HermesInternal3 = HermesInternal;
+      combined = "https://cdn.discordapp.com/" + tmp4 + "/" + skuId + "/" + str3 + assetFormat;
     }
-    const obj = require(1327) /* isDiscordFrontendDevelopment */;
+    const obj = require(1351) /* isDiscordFrontendDevelopment */;
   }
 };

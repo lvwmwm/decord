@@ -1,71 +1,69 @@
-// Module ID: 11785
-// Function ID: 91376
+// Module ID: 11810
+// Function ID: 11811
 // Name: InstantInviteAgeText
-// Dependencies: [31, 27, 8325, 33, 4165, 566, 4161, 8326, 4695, 8324, 1212, 2]
+// Dependencies: [19, 17, 8349, 21, 4189, 589, 4185, 8350, 4717, 8348, 1236, 2]
 // Exports: default
 
-// Module 11785 (InstantInviteAgeText)
-import "result";
+// Module 11810 (InstantInviteAgeText)
+import "noop";
 import { View } from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import updateWithLatestInvite from "updateWithLatestInvite";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_4;
-let closure_5;
+let c4;
+let c5;
 const require = arg1;
-({ jsxs: closure_4, jsx: closure_5 } = jsxProd);
-let closure_6 = _createForOfIteratorHelperLoose.createStyles({ inviteAgeContainer: { flexDirection: "row", alignItems: "center", flexWrap: "wrap" } });
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/instant_invite/native/components/InstantInviteAgeText.tsx");
+({ jsxs: c4, jsx: c5 } = jsxProd);
+let closure_6 = createCacheKey.createStyles({ inviteAgeContainer: { flexDirection: "row", alignItems: "center", flexWrap: "wrap" } });
+const result = require("updateWithLatestInvite").fileFinishedImporting("modules/instant_invite/native/components/InstantInviteAgeText.tsx");
 
 export default function InstantInviteAgeText(style) {
   let View;
   let canEditInvite;
-  let _isNativeReflectConstruct;
+  let updateWithLatestInvite;
   let dependencyMap;
   let require;
   ({ channel: require, callbackActionSheet: dependencyMap, canEditInvite } = style);
   if (canEditInvite === undefined) {
     canEditInvite = true;
   }
-  ({ onEdit: View, source: _isNativeReflectConstruct } = style);
-  let obj = require(566) /* initialize */;
-  const items = [_isNativeReflectConstruct];
-  const stateFromStores = obj.useStateFromStores(items, () => outer1_3.getInviteSettings());
-  let tmp4Result = null;
+  ({ onEdit: View, source: updateWithLatestInvite } = style);
+  let obj = require(589) /* initialize */;
+  const items = [updateWithLatestInvite];
+  const stateFromStores = obj.useStateFromStores(items, () => inviteSettings.getInviteSettings());
+  let tmp6Result = null;
   if (null != stateFromStores) {
-    obj = {};
+    obj = { style: null, children: null };
     const items1 = [tmp.inviteAgeContainer, style.style];
-    obj.style = items1;
-    obj = { variant: "text-xs/normal" };
-    const items2 = [require(8326) /* _createForOfIteratorHelperLoose */.maxAgeString(stateFromStores.maxAge, stateFromStores.maxUses), " "];
-    obj.children = items2;
-    const items3 = [callback(require(4161) /* Text */.Text, obj), ];
+    obj[0] = items1;
+    obj = { variant: "text-xs/normal", children: null };
+    const items2 = [tmp2(8350).maxAgeString(stateFromStores.maxAge, stateFromStores.maxUses), " "];
+    obj[1] = items2;
+    const items3 = [callback(tmp2(4185).Text, obj), ];
     if (canEditInvite) {
-      const obj1 = {
-        onPress() {
-              outer1_0(outer1_1[9]).handlePressSettings(closure_0, closure_1, _isNativeReflectConstruct);
-              if (null != callback) {
-                callback();
-              }
-            },
-        accessibilityRole: "link"
+      const obj1 = { onPress: null, accessibilityRole: "link", accessibilityLabel: null, hitSlop: null, children: null };
+      obj1[0] = function onPress() {
+        outer1_0(outer1_1[9]).handlePressSettings(closure_0, closure_1, updateWithLatestInvite);
+        if (callback != null) {
+          callback();
+        }
       };
-      const intl = require(1212) /* getSystemLocale */.intl;
-      obj1.accessibilityLabel = intl.string(require(1212) /* getSystemLocale */.t["VNe8P/"]);
-      obj1.hitSlop = { top: 8, left: 8, bottom: 8, right: 8 };
-      const obj2 = { variant: "text-xs/normal", color: "text-link" };
-      const intl2 = require(1212) /* getSystemLocale */.intl;
-      obj2.children = intl2.string(require(1212) /* getSystemLocale */.t["VNe8P/"]);
-      obj1.children = callback2(require(4161) /* Text */.Text, obj2);
-      canEditInvite = callback2(require(4695) /* PressableBase */.PressableOpacity, obj1);
+      const intl = tmp2(1236).intl;
+      obj1[2] = intl.string(tmp2(1236).t["VNe8P/"]);
+      obj1[3] = { top: 8, left: 8, bottom: 8, right: 8 };
+      const obj2 = { variant: "text-xs/normal", color: "text-link", children: null };
+      const intl2 = tmp2(1236).intl;
+      obj2[2] = intl2.string(tmp2(1236).t["VNe8P/"]);
+      obj1[4] = callback2(tmp2(4185).Text, obj2);
+      canEditInvite = callback2(tmp2(4717).PressableOpacity, obj1);
     }
     items3[1] = canEditInvite;
-    obj.children = items3;
-    tmp4Result = callback(View, obj);
-    const obj4 = require(8326) /* _createForOfIteratorHelperLoose */;
-    const tmp4 = callback;
-    const tmp5 = View;
+    obj[1] = items3;
+    tmp6Result = callback(View, obj);
+    const tmp2Result = tmp2(8350);
+    const tmp6 = callback;
+    const tmp7 = View;
   }
-  return tmp4Result;
+  return tmp6Result;
 };

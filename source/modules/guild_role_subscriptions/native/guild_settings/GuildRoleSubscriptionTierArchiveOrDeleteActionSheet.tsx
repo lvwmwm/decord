@@ -1,27 +1,27 @@
-// Module ID: 16541
-// Function ID: 128752
+// Module ID: 16576
+// Function ID: 16577
 // Name: GuildRoleSubscriptionTierArchiveOrDeleteActionSheet
-// Dependencies: [31, 27, 33, 4165, 689, 1557, 44, 16542, 5221, 5223, 4161, 1273, 4578, 4133, 1212, 2]
+// Dependencies: [19, 17, 21, 4189, 712, 1581, 38, 16577, 5243, 5245, 4185, 1297, 4600, 4157, 1236, 2]
 // Exports: default
 
-// Module 16541 (GuildRoleSubscriptionTierArchiveOrDeleteActionSheet)
-import "result";
+// Module 16576 (GuildRoleSubscriptionTierArchiveOrDeleteActionSheet)
+import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_3;
-let closure_4;
-let closure_5;
+let c3;
+let c4;
+let c5;
 let closure_6;
 const require = arg1;
-({ TouchableOpacity: closure_3, View: closure_4 } = get_ActivityIndicator);
-({ jsx: closure_5, jsxs: closure_6 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SURFACE_HIGH, padding: 24 };
-_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.cancel = { alignSelf: "center" };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+({ TouchableOpacity: c3, View: c4 } = get_ActivityIndicator);
+({ jsx: c5, jsxs: closure_6 } = jsxProd);
+createCacheKey = { container: null, cancel: null };
+createCacheKey = { backgroundColor: require("Themes").colors.BACKGROUND_SURFACE_HIGH, padding: 24 };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { alignSelf: "center" };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
 const result = require("jsxProd").fileFinishedImporting("modules/guild_role_subscriptions/native/guild_settings/GuildRoleSubscriptionTierArchiveOrDeleteActionSheet.tsx");
 
 export default function GuildRoleSubscriptionTierArchiveOrDeleteActionSheet(groupListingId) {
@@ -34,40 +34,37 @@ export default function GuildRoleSubscriptionTierArchiveOrDeleteActionSheet(grou
   let headerText;
   groupListingId = groupListingId.groupListingId;
   ({ editStateId, guildId } = groupListingId);
-  const tmp = _createForOfIteratorHelperLoose();
-  importDefault(44)(null != groupListingId, "group listing id cannot be null");
-  const tmp3 = importDefault(16542)(guildId, groupListingId, editStateId);
-  let deleting = tmp3.deleting;
-  ({ headerText, buttonText, descriptionText, handleArchiveOrDelete, archiving } = tmp3);
-  let obj = { backdropOpacity: 0.8 };
-  obj = { style: tmp.container };
-  obj = { contentContainerStyle: { paddingBottom: importDefault(1557)().bottom } };
-  const obj1 = { variant: "heading-lg/semibold", color: "mobile-text-heading-primary", children: headerText };
-  const items = [callback(require(4161) /* Text */.Text, obj1), callback(require(1273) /* Button */.Spacer, { size: 12 }), , , , , ];
-  const obj2 = { variant: "text-sm/normal", color: "text-default", children: descriptionText };
-  items[2] = callback(require(4161) /* Text */.Text, obj2);
-  items[3] = callback(require(1273) /* Button */.Spacer, { size: 24 });
-  const obj3 = { text: buttonText, variant: "destructive", grow: true, onPress: handleArchiveOrDelete };
+  const tmp = createCacheKey();
+  importDefault(38)(null != groupListingId, "group listing id cannot be null");
+  const tmp4 = importDefault(16577)(guildId, groupListingId, editStateId);
+  let deleting = tmp4.deleting;
+  ({ headerText, buttonText, descriptionText, handleArchiveOrDelete, archiving } = tmp4);
+  let obj = { style: tmp.container, children: null };
+  obj = { contentContainerStyle: { paddingBottom: importDefault(1581)().bottom }, children: null };
+  const items = [callback(require(4185) /* Text */.Text, { variant: "heading-lg/semibold", color: "mobile-text-heading-primary", children: headerText }), callback(require(1297) /* Button */.Spacer, { size: 12 }), callback(require(4185) /* Text */.Text, { variant: "text-sm/normal", color: "text-default", children: descriptionText }), callback(require(1297) /* Button */.Spacer, { size: 24 }), , , ];
+  obj = { text: buttonText, variant: "destructive", grow: true, onPress: handleArchiveOrDelete, disabled: null };
   if (!deleting) {
     deleting = archiving;
   }
-  obj3.disabled = deleting;
-  items[4] = callback(require(4578) /* Button */.Button, obj3);
-  items[5] = callback(require(1273) /* Button */.Spacer, { size: 24 });
-  const obj4 = {
+  const obj1 = { backdropOpacity: 0.8, children: null };
+  obj[4] = deleting;
+  items[4] = callback(require(4600) /* Button */.Button, obj);
+  items[5] = callback(require(1297) /* Button */.Spacer, { size: 24 });
+  const obj2 = {
     onPress() {
-      return outer1_1(outer1_2[13]).hideActionSheet();
+      return callback(table[13]).hideActionSheet();
     },
     style: tmp.cancel,
-    activeOpacity: 0.5
+    activeOpacity: 0.5,
+    children: null
   };
-  const obj5 = { variant: "text-sm/semibold", color: "interactive-text-active" };
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj5.children = intl.string(require(1212) /* getSystemLocale */.t["ETE/oC"]);
-  obj4.children = callback(require(4161) /* Text */.Text, obj5);
-  items[6] = callback(closure_3, obj4);
-  obj.children = items;
-  obj.children = closure_6(require(5223) /* BottomSheetModal */.BottomSheetScrollView, obj);
-  obj.children = callback(closure_4, obj);
-  return callback(require(5221) /* Background */.BottomSheet, obj);
+  const obj3 = { variant: "text-sm/semibold", color: "interactive-text-active", children: null };
+  const intl = tmp6(1236).intl;
+  obj3[2] = intl.string(require(1236) /* getSystemLocale */.t["ETE/oC"]);
+  obj2[3] = callback(require(4185) /* Text */.Text, obj3);
+  items[6] = callback(closure_3, obj2);
+  obj[1] = items;
+  obj[1] = closure_6(require(5245) /* BottomSheetModal */.BottomSheetScrollView, obj);
+  obj1[1] = callback(closure_4, obj);
+  return callback(require(5243) /* Background */.BottomSheet, obj1);
 };

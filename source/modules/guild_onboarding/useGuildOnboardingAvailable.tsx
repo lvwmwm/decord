@@ -1,11 +1,11 @@
-// Module ID: 9971
-// Function ID: 76947
+// Module ID: 9993
+// Function ID: 9994
 // Name: useGuildOnboardingAvailable
-// Dependencies: [1910, 653, 566, 2]
+// Dependencies: [1934, 676, 589, 2]
 // Exports: default, isGuildOnboardingAvailable
 
-// Module 9971 (useGuildOnboardingAvailable)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 9993 (useGuildOnboardingAvailable)
+import initialize from "initialize";
 import { GuildFeatures } from "ME";
 
 const require = arg1;
@@ -13,21 +13,21 @@ const result = require("initialize").fileFinishedImporting("modules/guild_onboar
 
 export default function useGuildOnboardingAvailable(features) {
   const _require = features;
-  const items = [_isNativeReflectConstruct];
-  let stateFromStores = _require(566).useStateFromStores(items, () => {
+  const items = [initialize];
+  let stateFromStores = _require(589).useStateFromStores(items, () => {
     let id;
-    if (null != user) {
-      id = user.id;
+    if (closure_0 != null) {
+      id = tmp.id;
     }
     if (null == id) {
       return false;
     } else {
-      return outer1_2.isFullServerPreview(user.id) && outer1_2.isOnboardingEnabled(user.id);
+      return outer1_2.isFullServerPreview(tmp.id) && outer1_2.isOnboardingEnabled(tmp.id);
     }
   });
   if (!stateFromStores) {
     let hasItem;
-    if (null != features) {
+    if (features != null) {
       features = features.features;
       hasItem = features.has(GuildFeatures.GUILD_ONBOARDING_HAS_PROMPTS);
     }
@@ -39,7 +39,7 @@ export const isGuildOnboardingAvailable = function isGuildOnboardingAvailable(gu
   if (null == guild) {
     return false;
   } else {
-    let hasItem = _isNativeReflectConstruct.isFullServerPreview(guild.id) && _isNativeReflectConstruct.isOnboardingEnabled(guild.id);
+    let hasItem = initialize.isFullServerPreview(guild.id) && initialize.isOnboardingEnabled(guild.id);
     if (!hasItem) {
       const features = guild.features;
       hasItem = features.has(GuildFeatures.GUILD_ONBOARDING_HAS_PROMPTS);

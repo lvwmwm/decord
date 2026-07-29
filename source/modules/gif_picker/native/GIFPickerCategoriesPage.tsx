@@ -1,21 +1,22 @@
-// Module ID: 9592
-// Function ID: 74652
-// Dependencies: [31, 27, 9572, 33, 4165, 9579, 689, 9569, 566, 9573, 9593, 9374, 8799, 9217, 5196, 1212, 2]
+// Module ID: 9614
+// Function ID: 9615
+// Dependencies: [19, 17, 9596, 21, 4189, 9600, 712, 9593, 589, 9597, 9615, 9398, 8823, 9241, 5218, 1236, 2]
 
-// Module 9592
-import importAllResult from "result";
+// Module 9614
+import importAllResult from "noop";
 import { View } from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import getFormatFromUrl from "getFormatFromUrl";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
 const require = arg1;
-let closure_7 = _createForOfIteratorHelperLoose.createStyles((height) => {
-  let obj = {};
-  obj = { height, flexDirection: "row", gap: require(9579) /* transformFavoriteGifUrl */.GIF_PICKER_GUTTER_SPACING, paddingBottom: require(9579) /* transformFavoriteGifUrl */.GIF_PICKER_GUTTER_SPACING };
-  obj.item = obj;
-  obj = { backgroundColor: importDefault(689).colors.BORDER_SUBTLE, height: height - require(9579) /* transformFavoriteGifUrl */.GIF_PICKER_GUTTER_SPACING, borderRadius: importDefault(689).radii.xs, flex: 1 };
-  obj.placeholder = obj;
+let c3 = importAllResult;
+let closure_7 = createCacheKey.createStyles((height) => {
+  let obj = { item: null, placeholder: null };
+  obj = { height, flexDirection: "row", gap: require(9600) /* transformFavoriteGifUrl */.GIF_PICKER_GUTTER_SPACING, paddingBottom: require(9600) /* transformFavoriteGifUrl */.GIF_PICKER_GUTTER_SPACING };
+  obj[0] = obj;
+  obj = { backgroundColor: importDefault(712).colors.BORDER_SUBTLE, height: height - require(9600) /* transformFavoriteGifUrl */.GIF_PICKER_GUTTER_SPACING, borderRadius: importDefault(712).radii.xs, flex: 1 };
+  obj[1] = obj;
   return obj;
 });
 const memoResult = importAllResult.memo(function GIFPickerCategoriesPage(columns) {
@@ -28,20 +29,24 @@ const memoResult = importAllResult.memo(function GIFPickerCategoriesPage(columns
   let data;
   if (columns > 2) {
     GIF_PICKER_ITEM_ESIMTATED_HEIGHT = columns(onSelectCategory[5]).GIF_PICKER_ITEM_ESIMTATED_HEIGHT;
+    let tmp3 = columns;
+    let tmp2 = onSelectCategory;
   } else {
+    tmp2 = onSelectCategory;
     GIF_PICKER_ITEM_ESIMTATED_HEIGHT = columns(onSelectCategory[5]).GIF_PICKER_ITEM_ESIMTATED_HEIGHT / 2;
+    tmp3 = columns;
   }
-  let tmp5 = callback(GIF_PICKER_ITEM_ESIMTATED_HEIGHT);
-  c4 = tmp5;
-  let obj = columns(onSelectCategory[8]);
+  let tmp6 = callback(GIF_PICKER_ITEM_ESIMTATED_HEIGHT);
+  c4 = tmp6;
+  let tmp3Result = tmp3(tmp2[8]);
   let items = [trendingCategories];
-  trendingCategories = obj.useStateFromStoresObject(items, () => ({ trendingCategories: trendingCategories.getTrendingCategories() })).trendingCategories;
+  trendingCategories = tmp3Result.useStateFromStoresObject(items, () => ({ trendingCategories: trendingCategories.getTrendingCategories() })).trendingCategories;
   let items1 = [columns, favoritesCategory, trendingCategories];
   const memo = GIF_PICKER_ITEM_ESIMTATED_HEIGHT.useMemo(() => {
     let bound;
     const items = [...trendingCategories];
     if (null != favoritesCategory) {
-      items.unshift(favoritesCategory);
+      items.unshift(tmp);
     }
     const data = [];
     let num = 0;
@@ -67,30 +72,31 @@ const memoResult = importAllResult.memo(function GIFPickerCategoriesPage(columns
       const obj = columns(onSelectCategory[9]);
     }
   }, items2);
-  const items3 = [columns, data, onSelectCategory, tmp5];
+  const items3 = [columns, data, onSelectCategory, tmp6];
   callback = GIF_PICKER_ITEM_ESIMTATED_HEIGHT.useCallback((arg0, arg1) => {
     const items = [];
     let num = 0;
     if (0 < columns) {
       do {
         let tmp2 = tmp[num];
+        let tmp3 = num;
         if (null != tmp2) {
           let tmp8 = data;
           let tmp9 = favoritesCategory;
           let tmp10 = onSelectCategory;
-          let obj = { item: tmp2 };
+          let obj = { item: null, onSelectCategory: null };
+          obj[0] = tmp2;
           let tmp11 = onSelectCategory;
-          obj.onSelectCategory = onSelectCategory;
+          obj[1] = onSelectCategory;
           let tmp7 = data(favoritesCategory(onSelectCategory[10]), obj, num);
         } else {
-          let tmp3 = data;
-          let tmp4 = _undefined;
-          obj = {};
+          let tmp4 = data;
           let tmp5 = _undefined;
-          let items1 = [_undefined.item, ];
+          obj = { style: null };
           let tmp6 = _undefined;
-          items1[1] = _undefined.placeholder;
-          obj.style = items1;
+          let items1 = [, ];
+          ({ item: arr2[0], placeholder: arr2[1] } = _undefined);
+          obj[0] = items1;
           tmp7 = data(_undefined, obj, num);
         }
         let arr = items.push(tmp7);
@@ -101,29 +107,29 @@ const memoResult = importAllResult.memo(function GIFPickerCategoriesPage(columns
     obj = { style: _undefined.item, collapsable: false, children: items };
     return data(_undefined, obj);
   }, items3);
-  const items4 = [GIF_PICKER_ITEM_ESIMTATED_HEIGHT, columns, tmp5];
-  const isPortalKeyboardInModal = columns(onSelectCategory[11]).useIsPortalKeyboardInModal();
+  tmp3Result = tmp3(tmp2[11]);
+  const items4 = [GIF_PICKER_ITEM_ESIMTATED_HEIGHT, columns, tmp6];
+  const isPortalKeyboardInModal = tmp3Result.useIsPortalKeyboardInModal();
   const memo1 = GIF_PICKER_ITEM_ESIMTATED_HEIGHT.useMemo(() => {
-    let obj = {};
+    let obj = { sectionItem: null };
     obj = { type: columns(onSelectCategory[12]).FastestListPropsPlaceholderType.SHAPE, shape: "rect", shapeCount: columns, spaceGap: columns(onSelectCategory[5]).GIF_PICKER_GUTTER_SPACING, borderRadius: _undefined.placeholder.borderRadius, colorHex: _undefined.placeholder.backgroundColor, height: GIF_PICKER_ITEM_ESIMTATED_HEIGHT - columns(onSelectCategory[5]).GIF_PICKER_GUTTER_SPACING, verticalAlignment: "top" };
-    obj.sectionItem = obj;
+    obj[0] = obj;
     return obj;
   }, items4);
-  obj = {};
-  const obj2 = columns(onSelectCategory[11]);
-  let tmp11 = favoritesCategory(onSelectCategory[13]);
-  obj.estimatedListSize = columns(onSelectCategory[14]).getCustomKeyboardHeight();
-  obj.inActionSheet = columns.inActionSheet;
-  obj.preventNativeModalDismiss = isPortalKeyboardInModal;
-  obj.insetEnd = favoritesCategory(onSelectCategory[7])({ hasCategories: false }).safeAreaBottomKeyboardAware;
-  obj.itemSize = GIF_PICKER_ITEM_ESIMTATED_HEIGHT;
-  obj.sections = memo.sections;
-  obj.placeholderConfig = memo1;
-  obj.renderItem = callback;
-  const intl = columns(onSelectCategory[15]).intl;
-  obj.accessibilityLabel = intl.string(columns(onSelectCategory[15]).t.ffgJrs);
-  return data(tmp11, obj);
+  let obj = { estimatedListSize: null, inActionSheet: null, preventNativeModalDismiss: null, insetEnd: null, itemSize: null, sections: null, placeholderConfig: null, renderItem: null, accessibilityLabel: null };
+  const tmp12 = favoritesCategory(tmp2[13]);
+  obj[0] = tmp3(tmp2[14]).getCustomKeyboardHeight();
+  obj[1] = columns.inActionSheet;
+  obj[2] = isPortalKeyboardInModal;
+  obj[3] = favoritesCategory(tmp2[7])({ hasCategories: false }).safeAreaBottomKeyboardAware;
+  obj[4] = GIF_PICKER_ITEM_ESIMTATED_HEIGHT;
+  obj[5] = memo.sections;
+  obj[6] = memo1;
+  obj[7] = callback;
+  const intl = tmp3(tmp2[15]).intl;
+  obj[8] = intl.string(tmp3(tmp2[15]).t.ffgJrs);
+  return data(tmp12, obj);
 });
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/gif_picker/native/GIFPickerCategoriesPage.tsx");
+const result = require("getFormatFromUrl").fileFinishedImporting("modules/gif_picker/native/GIFPickerCategoriesPage.tsx");
 
 export default memoResult;

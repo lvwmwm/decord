@@ -1,44 +1,43 @@
-// Module ID: 11695
-// Function ID: 90574
+// Module ID: 11719
+// Function ID: 11720
 // Name: UserProfileConfirmThreadRemove
-// Dependencies: [31, 33, 4004, 4510, 1212, 4510, 2]
+// Dependencies: [19, 21, 4028, 4533, 1236, 4533, 2]
 // Exports: default
 
-// Module 11695 (UserProfileConfirmThreadRemove)
-import "result";
+// Module 11719 (UserProfileConfirmThreadRemove)
+import "noop";
 import jsxProd from "jsxProd";
 
-let closure_3;
-let closure_4;
+let c3;
+let c4;
 const require = arg1;
-({ jsx: closure_3, jsxs: closure_4 } = jsxProd);
-const result = require("conceal").fileFinishedImporting("modules/user_profile/native/UserProfileConfirmThreadRemove.tsx");
+({ jsx: c3, jsxs: c4 } = jsxProd);
+const result = require("nameFromUser").fileFinishedImporting("modules/user_profile/native/UserProfileConfirmThreadRemove.tsx");
 
 export default function UserProfileConfirmThreadRemove(isForumPost) {
   let onConfirm;
   let user;
   isForumPost = isForumPost.isForumPost;
   ({ user, onConfirm } = isForumPost);
-  let obj = importDefault(4004);
+  let obj = importDefault(4028);
   const name = obj.useName(user);
-  obj = {};
-  const intl = require(1212) /* getSystemLocale */.intl;
-  const t = require(1212) /* getSystemLocale */.t;
-  obj.title = intl.string(isForumPost ? t["8sKSjm"] : t.ZPm8jN);
-  const intl2 = require(1212) /* getSystemLocale */.intl;
-  const t2 = require(1212) /* getSystemLocale */.t;
-  obj.content = intl2.formatToPlainString(isForumPost ? t2["6UGfnx"] : t2["hL+Znb"], { user: name });
-  obj = {};
-  const obj1 = { variant: "destructive" };
-  const intl3 = require(1212) /* getSystemLocale */.intl;
-  obj1.text = intl3.string(require(1212) /* getSystemLocale */.t.N86XcP);
-  obj1.onPress = onConfirm;
-  const items = [callback(require(4510) /* getAlertModalItemKey */.AlertActionButton, obj1, "remove-user-from-thread"), ];
-  const obj2 = { variant: "secondary" };
-  const intl4 = require(1212) /* getSystemLocale */.intl;
-  obj2.text = intl4.string(require(1212) /* getSystemLocale */.t.yNbnce);
-  items[1] = callback(require(4510) /* getAlertModalItemKey */.AlertActionButton, obj2, "cancel-remove-user-from-thread");
-  obj.children = items;
-  obj.actions = callback2(require(4510) /* getAlertModalItemKey */.AlertActions, obj);
-  return callback(require(4510) /* getAlertModalItemKey */.AlertModal, obj);
+  const intl = require(1236) /* getSystemLocale */.intl;
+  const t = require(1236) /* getSystemLocale */.t;
+  obj = { title: intl.string(isForumPost ? t["8sKSjm"] : t.ZPm8jN), content: null, actions: null };
+  const intl2 = tmp4(1236).intl;
+  const t2 = tmp4(1236).t;
+  obj[1] = intl2.formatToPlainString(isForumPost ? t2["6UGfnx"] : t2["hL+Znb"], { user: name });
+  obj = { children: null };
+  const obj1 = { variant: "destructive", text: null, onPress: null };
+  const intl3 = tmp4(1236).intl;
+  obj1[1] = intl3.string(require(1236) /* getSystemLocale */.t.N86XcP);
+  obj1[2] = onConfirm;
+  const items = [closure_3(require(4533) /* getAlertModalItemKey */.AlertActionButton, obj1, "remove-user-from-thread"), ];
+  const obj2 = { variant: "secondary", text: null };
+  const intl4 = tmp4(1236).intl;
+  obj2[1] = intl4.string(require(1236) /* getSystemLocale */.t.yNbnce);
+  items[1] = closure_3(require(4533) /* getAlertModalItemKey */.AlertActionButton, obj2, "cancel-remove-user-from-thread");
+  obj[0] = items;
+  obj[2] = callback(require(4533) /* getAlertModalItemKey */.AlertActions, obj);
+  return closure_3(require(4533) /* getAlertModalItemKey */.AlertModal, obj);
 };

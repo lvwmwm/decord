@@ -1,21 +1,21 @@
-// Module ID: 4976
-// Function ID: 42481
+// Module ID: 4998
+// Function ID: 4999
 // Name: ChannelTypes
-// Dependencies: [1911, 1838, 653, 483, 2]
+// Dependencies: [1935, 1862, 676, 506, 2]
 // Exports: default
 
-// Module 4976 (ChannelTypes)
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import closure_3 from "_createForOfIteratorHelperLoose";
+// Module 4998 (ChannelTypes)
+import createGuildRoleRecordFromRust from "createGuildRoleRecordFromRust";
+import createGuildRecordFromRust from "createGuildRecordFromRust";
 import ME from "ME";
-import importAllResult from "fromHexReverseArray";
+import importAllResult from "fromString";
 
 let ChannelTypes;
 let Permissions;
 ({ ChannelTypes, Permissions } = ME);
 let items = [, , , , , ];
 ({ GUILD_TEXT: arr[0], GUILD_VOICE: arr[1], GUILD_ANNOUNCEMENT: arr[2], GUILD_FORUM: arr[3], PUBLIC_THREAD: arr[4], PRIVATE_THREAD: arr[5] } = ChannelTypes);
-let closure_5 = require("fromHexReverseArray").combine(Permissions.VIEW_CHANNEL, Permissions.SEND_MESSAGES);
+let closure_5 = require("fromString").combine(Permissions.VIEW_CHANNEL, Permissions.SEND_MESSAGES);
 const result = require("ME").fileFinishedImporting("modules/channel/getConnectionsRoles.tsx");
 
 export default function getConnectionsRoles(type) {
@@ -32,9 +32,9 @@ export default function getConnectionsRoles(type) {
           if (tmp) {
             const role = outer1_2.getRole(guild.id, type.id);
             let guild_connections;
-            if (null != role) {
+            if (role != null) {
               const tags = role.tags;
-              if (null != tags) {
+              if (tags != null) {
                 guild_connections = tags.guild_connections;
               }
             }

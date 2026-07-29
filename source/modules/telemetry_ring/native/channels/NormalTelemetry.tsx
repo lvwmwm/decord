@@ -1,27 +1,26 @@
-// Module ID: 13232
-// Function ID: 101787
-// Name: _isNativeReflectConstruct
-// Dependencies: [7, 6, 15, 17, 18, 13224, 13230, 2]
+// Module ID: 13255
+// Function ID: 13256
+// Name: NormalTelemetryImpl
+// Dependencies: [13250, 13251, 2]
 
-// Module 13232 (_isNativeReflectConstruct)
-import set from "set";
-import BaseTelemetryChannel from "BaseTelemetryChannel";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
-import tmp2 from "BaseTelemetryChannel";
+// Module 13255 (NormalTelemetryImpl)
+import importDefaultResult from "append";
+import importDefaultResult1 from "TelemetryChannel";
 
 const require = arg1;
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
+class NormalTelemetryImpl extends tmp3 {
+  constructor() {
+    tmp2 = require("TelemetryChannel");
+    items = [];
+    items[0] = require("TelemetryChannel").TelemetryChannel.NORMAL;
+    tmp = new tmp(tmp2, items, closure_1, new.target);
+    // ThrowIfThisInitialized (0x7c)
+    return tmp;
   }
-  const result = _isNativeReflectConstruct();
 }
-tmp2 = new tmp2();
-let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/telemetry_ring/native/channels/NormalTelemetry.tsx");
+let items = [require("TelemetryChannel").TelemetryChannel.NORMAL];
+importDefaultResult = new importDefaultResult(importDefaultResult1, items, tmp, Object, NormalTelemetryImpl, importDefaultResult, importDefaultResult1);
+// ThrowIfThisInitialized (0x7c)
+const result = require("set").fileFinishedImporting("modules/telemetry_ring/native/channels/NormalTelemetry.tsx");
 
-export default tmp2;
+export default importDefaultResult;

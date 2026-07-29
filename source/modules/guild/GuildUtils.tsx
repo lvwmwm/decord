@@ -1,19 +1,19 @@
-// Module ID: 9400
-// Function ID: 73209
+// Module ID: 9424
+// Function ID: 9425
 // Name: handleJoinGuild
-// Dependencies: [5083, 2]
+// Dependencies: [5105, 2]
 // Exports: handleJoinGuild
 
-// Module 9400 (handleJoinGuild)
+// Module 9424 (handleJoinGuild)
 let result = require("set").fileFinishedImporting("modules/guild/GuildUtils.tsx");
 
-export const handleJoinGuild = function handleJoinGuild(guildId) {
-  const importDefault = guildId;
-  if (null != guildId) {
-    const obj = importDefault(5083);
-    importDefault(5083).joinGuild(guildId).then(() => {
-      const result = guildId(outer1_1[0]).transitionToGuildSync(guildId);
+export const handleJoinGuild = function handleJoinGuild(closure_0) {
+  const importDefault = closure_0;
+  if (null != closure_0) {
+    const obj = importDefault(5105);
+    importDefault(5105).joinGuild(closure_0).then(() => {
+      const result = callback(outer1_1[0]).transitionToGuildSync(callback);
     });
-    const joinGuildResult = importDefault(5083).joinGuild(guildId);
+    const joinGuildResult = importDefault(5105).joinGuild(closure_0);
   }
 };

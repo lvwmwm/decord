@@ -1,26 +1,26 @@
-// Module ID: 4111
-// Function ID: 34003
+// Module ID: 4135
+// Function ID: 4136
 // Name: SendMessageIcon
-// Dependencies: [31, 33, 689, 3868, 4112, 2]
+// Dependencies: [19, 21, 712, 3892, 4136, 2]
 // Exports: SendMessageIcon
 
-// Module 4111 (SendMessageIcon)
-import "result";
+// Module 4135 (SendMessageIcon)
+import "noop";
 import { jsx } from "jsxProd";
 
 const require = arg1;
-const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("design/components/Icon/native/redesign/generated/SendMessageIcon.tsx");
+const result = require("Themes").fileFinishedImporting("design/components/Icon/native/redesign/generated/SendMessageIcon.tsx");
 
 export const SendMessageIcon = function SendMessageIcon(color) {
   let INTERACTIVE_ICON_DEFAULT = color.color;
   if (INTERACTIVE_ICON_DEFAULT === undefined) {
-    INTERACTIVE_ICON_DEFAULT = importDefault(689).colors.INTERACTIVE_ICON_DEFAULT;
+    INTERACTIVE_ICON_DEFAULT = importDefault(712).colors.INTERACTIVE_ICON_DEFAULT;
   }
-  let obj = Object.create(null);
-  obj.style = 0;
-  obj.color = 0;
-  const merged = Object.assign(color, obj);
-  obj = { source: require(4112) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
+  const merged = Object.assign(color, Object.create(null));
+  const obj = { source: null, color: null, style: null };
+  obj[0] = require(4136) /* registerAsset */;
+  obj[1] = INTERACTIVE_ICON_DEFAULT;
+  obj[2] = color.style;
   const merged1 = Object.assign(merged);
-  return jsx(require(3868) /* BaseIconImage */.BaseIconImage, { source: require(4112) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(require(3892) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
 };

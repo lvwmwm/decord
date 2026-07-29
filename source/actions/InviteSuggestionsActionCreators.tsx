@@ -1,11 +1,11 @@
-// Module ID: 10065
-// Function ID: 77653
+// Module ID: 10086
+// Function ID: 10087
 // Name: loadInviteSuggestions
-// Dependencies: [10066, 8792, 686, 2]
+// Dependencies: [10087, 8816, 709, 2]
 // Exports: loadInviteSuggestions, searchInviteSuggestions
 
-// Module 10065 (loadInviteSuggestions)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 10086 (loadInviteSuggestions)
+import _computeRows from "_computeRows";
 
 const result = require("dispatcher").fileFinishedImporting("actions/InviteSuggestionsActionCreators.tsx");
 
@@ -16,26 +16,20 @@ export const loadInviteSuggestions = function loadInviteSuggestions(arg0) {
   let importDefault;
   let require;
   ({ omitUserIds: require, guild: importDefault, channel: dependencyMap, applicationId: closure_3, inviteTargetType: closure_4 } = arg0);
-  const userAffinitiesV2 = require(8792) /* fetchUserAffinitiesV2 */.fetchUserAffinitiesV2();
+  const userAffinitiesV2 = require(8816) /* fetchUserAffinitiesV2 */.fetchUserAffinitiesV2();
   return userAffinitiesV2.then(() => {
     let obj = outer1_1(outer1_2[2]);
-    obj = { type: "LOAD_INVITE_SUGGESTIONS" };
-    if (null != closure_0) {
-      let set = closure_0;
-    } else {
+    let set = closure_0;
+    if (closure_0 == null) {
       const _Set = Set;
       set = new Set();
     }
-    obj.omitUserIds = set;
-    obj.guild = closure_1;
-    obj.channel = closure_2;
-    obj.applicationId = closure_3;
-    obj.inviteTargetType = closure_4;
+    obj = { type: "LOAD_INVITE_SUGGESTIONS", omitUserIds: set, guild: closure_1, channel: closure_2, applicationId: closure_3, inviteTargetType: closure_4 };
     obj.dispatch(obj);
   });
 };
 export const searchInviteSuggestions = function searchInviteSuggestions(query) {
-  let obj = importDefault(686);
+  let obj = importDefault(709);
   obj = { type: "INVITE_SUGGESTIONS_SEARCH", query };
   obj.dispatch(obj);
 };

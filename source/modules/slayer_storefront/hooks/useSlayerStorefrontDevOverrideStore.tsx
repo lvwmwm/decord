@@ -1,14 +1,14 @@
-// Module ID: 8665
-// Function ID: 68727
+// Module ID: 8689
+// Function ID: 8690
 // Name: useSlayerStorefrontDevOverrideStore
-// Dependencies: [621, 2]
+// Dependencies: [644, 2]
 
-// Module 8665 (useSlayerStorefrontDevOverrideStore)
+// Module 8689 (useSlayerStorefrontDevOverrideStore)
 import keys from "keys";
 
 const tmp2 = keys.create()((arg0) => {
   let closure_0 = arg0;
-  let obj = {
+  return {
     overrideApplicationId: null,
     setOverrideApplicationId(overrideApplicationId) {
       return callback({ overrideApplicationId });
@@ -19,13 +19,11 @@ const tmp2 = keys.create()((arg0) => {
     },
     recommendationApplicationIds: null,
     setRecommendationApplicationIds(str) {
-      const obj = {};
-      let parts = null;
+      let recommendationApplicationIds = null;
       if (null != str) {
-        parts = str.split(",");
+        recommendationApplicationIds = str.split(",");
       }
-      obj.recommendationApplicationIds = parts;
-      return closure_0(obj);
+      return closure_0({ recommendationApplicationIds });
     },
     overrideNitroEligibilityForSocialLayerStorefront: false,
     setOverrideNitroEligibilityForSocialLayerStorefront(overrideNitroEligibilityForSocialLayerStorefront) {
@@ -36,7 +34,6 @@ const tmp2 = keys.create()((arg0) => {
       return callback({ isNitroEligibleForSocialLayerStorefront });
     }
   };
-  return obj;
 });
 const result = require("set").fileFinishedImporting("modules/slayer_storefront/hooks/useSlayerStorefrontDevOverrideStore.tsx");
 

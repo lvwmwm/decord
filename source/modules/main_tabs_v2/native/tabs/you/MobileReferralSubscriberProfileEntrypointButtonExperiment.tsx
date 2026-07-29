@@ -1,18 +1,17 @@
-// Module ID: 15589
-// Function ID: 119834
+// Module ID: 15623
+// Function ID: 15624
 // Name: result
-// Dependencies: [664, 1428, 2]
+// Dependencies: [687, 1452, 2]
 // Exports: useMobileReferralSubscriberProfileEntrypointButtonConfig
 
-// Module 15589 (result)
+// Module 15623 (result)
 import ApexExperiment from "ApexExperiment";
 
 const result = 3 * require("set").Millis.DAYS_30;
-ApexExperiment = { name: "2026-05-mobile-referral-subscriber-profile-entrypoint-button", kind: "user", defaultConfig: { enabled: false, showReferralNotificationDot: false }, variations: { [0]: { enabled: false, showReferralNotificationDot: false }, [1]: { enabled: true, showReferralNotificationDot: false }, [2]: { enabled: true, showReferralNotificationDot: true } } };
-ApexExperiment = ApexExperiment.createApexExperiment(ApexExperiment);
+let closure_0 = ApexExperiment.createApexExperiment({ name: "2026-05-mobile-referral-subscriber-profile-entrypoint-button", kind: "user", defaultConfig: { enabled: false, showReferralNotificationDot: false }, variations: { 0: { enabled: false, showReferralNotificationDot: false }, 1: { enabled: true, showReferralNotificationDot: false }, 2: { enabled: true, showReferralNotificationDot: true } } });
 const result1 = require("set").fileFinishedImporting("modules/main_tabs_v2/native/tabs/you/MobileReferralSubscriberProfileEntrypointButtonExperiment.tsx");
 
 export const REFERRAL_NITRO_BUTTON_RED_DOT_COOLDOWN_MS = result;
 export const useMobileReferralSubscriberProfileEntrypointButtonConfig = function useMobileReferralSubscriberProfileEntrypointButtonConfig(YouBannerDecorations) {
-  return ApexExperiment.useConfig({ location: YouBannerDecorations });
+  return closure_0.useConfig({ location: YouBannerDecorations });
 };

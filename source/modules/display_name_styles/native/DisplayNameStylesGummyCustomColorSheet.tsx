@@ -1,44 +1,45 @@
-// Module ID: 14340
-// Function ID: 109982
+// Module ID: 14362
+// Function ID: 14363
 // Name: DisplayNameStylesGummyCustomColorSheet
-// Dependencies: [31, 27, 1862, 33, 4165, 689, 4026, 1861, 665, 4134, 4133, 5221, 5220, 1212, 4578, 14341, 13680, 2]
+// Dependencies: [19, 17, 1886, 21, 4189, 712, 4050, 1885, 688, 4158, 4157, 5243, 5242, 1236, 4600, 14363, 13701, 2]
 // Exports: default
 
-// Module 14340 (DisplayNameStylesGummyCustomColorSheet)
-import result from "result";
-import { View } from "get ActivityIndicator";
+// Module 14362 (DisplayNameStylesGummyCustomColorSheet)
+import noop from "noop";
+import { View } from "set";
 import items3 from "items3";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_5;
+let c5;
 let closure_6;
-let closure_7;
-let closure_8;
+let error;
+let metroImportAll;
 const require = arg1;
-({ DISPLAY_NAME_STYLES_GUMMY_HUE_LIGHTNESS: closure_5, DISPLAY_NAME_STYLES_GUMMY_HUE_SATURATION: closure_6 } = items3);
-({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16, paddingTop: require("_createForOfIteratorHelperLoose").space.PX_12, paddingBottom: require("_createForOfIteratorHelperLoose").space.PX_16, gap: require("_createForOfIteratorHelperLoose").space.PX_16, alignItems: "center" };
-_createForOfIteratorHelperLoose.body = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.huePickerInset = { paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_4 + 2, alignSelf: "stretch" };
-_createForOfIteratorHelperLoose.previewWrapper = { width: "25%", padding: 2 };
-let obj2 = { height: 40, flexDirection: "row", borderRadius: require("_createForOfIteratorHelperLoose").radii.sm, overflow: "hidden" };
-_createForOfIteratorHelperLoose.preview = obj2;
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-let obj1 = { paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_4 + 2, alignSelf: "stretch" };
+({ DISPLAY_NAME_STYLES_GUMMY_HUE_LIGHTNESS: c5, DISPLAY_NAME_STYLES_GUMMY_HUE_SATURATION: closure_6 } = items3);
+({ jsx: error, jsxs: metroImportAll } = jsxProd);
+createCacheKey = { body: null, huePickerInset: null, previewWrapper: null, preview: null };
+createCacheKey = { paddingHorizontal: require("Themes").space.PX_16, paddingTop: require("Themes").space.PX_12, paddingBottom: require("Themes").space.PX_16, gap: require("Themes").space.PX_16, alignItems: "center" };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { paddingHorizontal: require("Themes").space.PX_4 + 2, alignSelf: "stretch" };
+createCacheKey[2] = { width: "25%", padding: 2 };
+let obj1 = { paddingHorizontal: require("Themes").space.PX_4 + 2, alignSelf: "stretch" };
+createCacheKey[3] = { height: 40, flexDirection: "row", borderRadius: require("Themes").radii.sm, overflow: "hidden" };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let obj2 = { height: 40, flexDirection: "row", borderRadius: require("Themes").radii.sm, overflow: "hidden" };
 let result = require("items3").fileFinishedImporting("modules/display_name_styles/native/DisplayNameStylesGummyCustomColorSheet.tsx");
 
 export default function DisplayNameStylesGummyCustomColorSheet(onSelect) {
   onSelect = onSelect.onSelect;
-  const tmp = _createForOfIteratorHelperLoose();
-  let obj = onSelect(4026);
-  let obj1 = onSelect(1861);
-  let obj2 = onSelect(665);
-  const sharedValue = obj.useSharedValue(obj1.wrapHue(obj2.int2hslRaw(onSelect.initialColor).h));
+  let sharedValue;
+  const tmp = createCacheKey();
+  let obj = onSelect(4050);
+  let obj1 = onSelect(1885);
+  let obj2 = onSelect(688);
+  sharedValue = obj.useSharedValue(obj1.wrapHue(obj2.int2hslRaw(onSelect.initialColor).h));
   const items = [sharedValue, onSelect];
   const callback = React.useCallback(() => {
-    const result = onSelect(outer1_2[9]).triggerHapticFeedback(onSelect(outer1_2[9]).HapticFeedbackTypes.IMPACT_LIGHT);
+    const result = onSelect(4158).triggerHapticFeedback(onSelect(4158).HapticFeedbackTypes.IMPACT_LIGHT);
   }, []);
   const callback1 = React.useCallback(() => {
     const result = onSelect(outer1_2[9]).triggerHapticFeedback(onSelect(outer1_2[9]).HapticFeedbackTypes.IMPACT_MEDIUM);
@@ -47,22 +48,23 @@ export default function DisplayNameStylesGummyCustomColorSheet(onSelect) {
     const obj2 = onSelect(outer1_2[7]);
     sharedValue(outer1_2[10]).hideActionSheet();
   }, items);
-  obj = {};
-  obj = {};
-  const intl = onSelect(1212).intl;
-  obj.title = intl.string(onSelect(1212).t.WTqQ5e);
-  obj1 = { variant: "primary", size: "sm" };
-  const intl2 = onSelect(1212).intl;
-  obj1.text = intl2.string(onSelect(1212).t.XqMe3N);
-  obj1.onPress = callback1;
-  obj.trailing = callback(onSelect(4578).Button, obj1);
-  obj.header = callback(onSelect(5220).BottomSheetTitleHeader, obj);
-  obj2 = { style: tmp.body };
-  const obj3 = { style: tmp.previewWrapper, children: callback(View, { style: tmp.preview, children: callback(sharedValue(14341), { hue: sharedValue }) }) };
+  obj = { header: null, children: null };
+  obj = { title: null, trailing: null };
+  const intl = onSelect(1236).intl;
+  obj[0] = intl.string(onSelect(1236).t.WTqQ5e);
+  obj1 = { variant: "primary", size: "sm", text: null, onPress: null };
+  const intl2 = onSelect(1236).intl;
+  obj1[2] = intl2.string(onSelect(1236).t.XqMe3N);
+  obj1[3] = callback1;
+  obj[1] = callback(onSelect(4600).Button, obj1);
+  obj[0] = callback(onSelect(5242).BottomSheetTitleHeader, obj);
+  obj2 = { style: tmp.body, children: null };
+  const obj3 = { style: tmp.previewWrapper, children: null };
+  obj3[1] = callback(View, { style: tmp.preview, children: callback(sharedValue(14363), { hue: sharedValue }) });
   const items1 = [callback(View, obj3), ];
-  const obj4 = { style: tmp.preview, children: callback(sharedValue(14341), { hue: sharedValue }) };
-  items1[1] = callback(View, { style: tmp.huePickerInset, children: callback(sharedValue(13680), obj6) });
-  obj2.children = items1;
-  obj.children = callback2(View, obj2);
-  return callback(onSelect(5221).BottomSheet, obj);
+  const obj4 = { style: tmp.preview, children: callback(sharedValue(14363), { hue: sharedValue }) };
+  items1[1] = callback(View, { style: tmp.huePickerInset, children: callback(sharedValue(13701), obj6) });
+  obj2[1] = items1;
+  obj[1] = callback2(View, obj2);
+  return callback(onSelect(5243).BottomSheet, obj);
 };

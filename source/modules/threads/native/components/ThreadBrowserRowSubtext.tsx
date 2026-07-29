@@ -1,90 +1,91 @@
-// Module ID: 15507
-// Function ID: 118179
+// Module ID: 15541
+// Function ID: 15542
 // Name: MessageContent
-// Dependencies: [31, 27, 4157, 1918, 1850, 6048, 653, 482, 33, 4165, 689, 566, 6074, 4606, 5083, 4161, 1212, 4004, 6052, 4395, 21, 1273, 7853, 7721, 4029, 2]
+// Dependencies: [19, 17, 4181, 1942, 1874, 6066, 676, 505, 21, 4189, 712, 589, 6092, 4628, 5105, 4185, 1236, 4028, 6070, 4418, 11, 1297, 7876, 7744, 4053, 2]
 // Exports: ThreadSubtext
 
-// Module 15507 (MessageContent)
-import importAllResult from "result";
-import { View } from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_6 from "_isNativeReflectConstruct";
-import closure_7 from "_isNativeReflectConstruct";
-import closure_8 from "_isNativeReflectConstruct";
-import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+// Module 15541 (MessageContent)
+import importAllResult from "useNullableMessageAuthor";
+import { View } from "nameFromUser";
+import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
+import trackCommunicationDisabled from "trackCommunicationDisabled";
+import mergeGuildAvatar from "mergeGuildAvatar";
+import updateState from "updateState";
+import jsxProd from "Button";
+import createCacheKey from "createCacheKey";
 
-let closure_10;
-let closure_11;
-let closure_9;
+let c10;
+let c9;
+let unpackModuleId;
 const require = arg1;
 function MessageContent(arg0) {
-  let View;
-  let closure_3;
-  let dependencyMap;
+  let c2;
+  let c3;
+  let c4;
   let message;
   let thread;
   ({ thread, message } = arg0);
-  let obj = message(6052);
+  let importDefault;
+  let dependencyMap;
+  c3 = undefined;
+  c4 = undefined;
+  let maybeApplyNoTextColorForLightCustomTheme;
+  let obj = message(6070);
   const items = [message.author.id];
   const subscribeGuildMembers = obj.useSubscribeGuildMembers({ [thread.guild_id]: items }, "ThreadBrowserRowSubtext");
-  let obj1 = message(566);
-  const items1 = [closure_7];
+  let obj1 = message(589);
+  const items1 = [mergeGuildAvatar];
   const stateFromStores = obj1.useStateFromStores(items1, () => {
     let author = outer1_7.getUser(message.author.id);
-    if (null == author) {
+    if (author == null) {
       author = message.author;
     }
     return author;
   });
   const tmp = callback3();
-  const items2 = [_isNativeReflectConstruct];
-  const importDefault = message(566).useStateFromStores(items2, () => roleStyle.roleStyle);
-  const obj3 = message(566);
-  ({ nick: dependencyMap, colorString: closure_3, colorStrings: View } = importDefault(4395)(message));
-  let tmp4 = importDefault(4395)(message);
-  const extractTimestampResult = importDefault(21).extractTimestamp(message.id);
-  const obj4 = importDefault(21);
-  const timestampString = message(6074).getTimestampString(extractTimestampResult);
-  const obj5 = message(6074);
-  const timestampAccessibilityLabel = message(6074).getTimestampAccessibilityLabel(extractTimestampResult);
-  _isNativeReflectConstruct = importDefault(4606)(thread.guild_id, stateFromStores.id);
-  obj = { user: stateFromStores, timestamp: timestampString, accessibilityLabel: timestampAccessibilityLabel };
-  obj = { lineClamp: 1, ellipsizeMode: "tail", lineBreakMode: "tail", style: tmp.subtextContent, variant: "text-sm/medium", color: "text-default" };
-  const intl = message(1212).intl;
+  const items2 = [maybeApplyNoTextColorForLightCustomTheme];
+  importDefault = message(589).useStateFromStores(items2, () => roleStyle.roleStyle);
+  const obj3 = message(589);
+  ({ nick: c2, colorString: c3, colorStrings: c4 } = importDefault(4418)(message));
+  let tmp4 = importDefault(4418)(message);
+  const extractTimestampResult = importDefault(11).extractTimestamp(message.id);
+  const obj4 = importDefault(11);
+  const timestampString = message(6092).getTimestampString(extractTimestampResult);
+  const obj5 = message(6092);
+  const timestampAccessibilityLabel = message(6092).getTimestampAccessibilityLabel(extractTimestampResult);
+  maybeApplyNoTextColorForLightCustomTheme = importDefault(4628)(thread.guild_id, stateFromStores.id);
+  obj = { user: stateFromStores, timestamp: timestampString, accessibilityLabel: timestampAccessibilityLabel, children: null };
+  obj = { lineClamp: 1, ellipsizeMode: "tail", lineBreakMode: "tail", style: tmp.subtextContent, variant: "text-sm/medium", color: "text-default", children: null };
+  const intl = message(1236).intl;
   obj1 = {
     usernameHook(arg0, arg1) {
-      const obj = {};
-      let str = "";
-      if (null != closure_2) {
-        str = closure_2;
+      let str = c2;
+      if (c2 == null) {
+        str = "";
       }
-      obj.nickname = str;
-      let tmp3 = null;
-      if ("username" === closure_1) {
-        tmp3 = closure_3;
-      }
-      obj.usernameColor = tmp3;
-      obj.roleColor = closure_3;
+      const obj = { nickname: str, usernameColor: null, roleColor: null, roleColors: null, shouldShowRoleDot: null };
       let tmp4 = null;
-      if (_isNativeReflectConstruct) {
-        tmp4 = closure_4;
+      if ("username" === closure_1) {
+        tmp4 = c3;
       }
-      obj.roleColors = tmp4;
-      let tmp5 = "dot" === closure_1;
-      if (tmp5) {
-        tmp5 = null != closure_3;
+      obj[1] = tmp4;
+      obj[2] = c3;
+      let tmp6 = null;
+      if (maybeApplyNoTextColorForLightCustomTheme) {
+        tmp6 = c4;
       }
-      obj.shouldShowRoleDot = tmp5;
+      obj[3] = tmp6;
+      obj[4] = "dot" === closure_1 && null != c3;
       return outer1_9(outer1_17, obj, arg1);
     },
     messageTextHook(arg0, arg1) {
-      const obj = { children: callback(outer1_2[22])(message, { formatInline: true, allowGameMentions: true }).content };
-      return outer1_9(message(outer1_2[21]).LegacyText, obj, arg1);
+      const obj = { children: null };
+      obj[0] = callback(_undefined[22])(message, { formatInline: true, allowGameMentions: true }).content;
+      return outer1_9(message(_undefined[21]).LegacyText, obj, arg1);
     }
   };
-  obj.children = intl.format(message(1212).t.M79KAH, obj1);
-  obj.children = callback(message(4161).Text, obj);
+  obj[6] = intl.format(message(1236).t.M79KAH, obj1);
+  obj[3] = callback(message(4185).Text, obj);
   return callback(SubstringRow, obj);
 }
 function SubstringRow(arg0) {
@@ -96,23 +97,31 @@ function SubstringRow(arg0) {
   ({ user, children } = arg0);
   const tmp = callback3();
   if (null == user) {
-    let obj = { style: tmp.row };
-    obj = { style: tmp.timestamp, accessibilityLabel, variant: "text-sm/medium", color: "text-muted", children: ` ${timestamp}` };
-    obj.children = callback(require(4161) /* Text */.Text, obj);
-    let tmp7 = callback(View, obj);
+    let obj = { style: null, children: null };
+    obj[0] = tmp.row;
+    obj = { style: null, accessibilityLabel: null, variant: "text-sm/medium", color: "text-muted", children: null };
+    obj[0] = tmp.timestamp;
+    obj[1] = accessibilityLabel;
+    obj[4] = ` ${timestamp}`;
+    obj[1] = callback(require(4185) /* Text */.Text, obj);
+    let tmp6 = callback(View, obj);
   } else {
-    obj = { style: tmp.row };
+    obj = { style: null, children: null };
+    obj[0] = tmp.row;
     const items = [children, , ];
-    const obj1 = { style: tmp.dividerDot };
+    const obj1 = { style: null };
+    obj1[0] = tmp.dividerDot;
     items[1] = callback(View, obj1);
-    const obj2 = { style: tmp.timestamp, accessibilityLabel, variant: "text-sm/medium", color: "text-muted" };
+    const obj2 = { style: null, accessibilityLabel: null, variant: "text-sm/medium", color: "text-muted", children: null };
+    obj2[0] = tmp.timestamp;
+    obj2[1] = accessibilityLabel;
     const _HermesInternal = HermesInternal;
-    obj2.children = "" + timestamp;
-    items[2] = callback(require(4161) /* Text */.Text, obj2);
-    obj.children = items;
-    tmp7 = callback2(View, obj);
+    obj2[4] = "" + timestamp;
+    items[2] = callback(require(4185) /* Text */.Text, obj2);
+    obj[1] = items;
+    tmp6 = callback2(View, obj);
   }
-  return tmp7;
+  return tmp6;
 }
 function Username(usernameColor) {
   let nickname;
@@ -121,97 +130,102 @@ function Username(usernameColor) {
   let shouldShowRoleDot;
   usernameColor = usernameColor.usernameColor;
   ({ roleColors, shouldShowRoleDot } = usernameColor);
+  let c1;
   ({ nickname, roleColor } = usernameColor);
   const tmp = callback3();
-  const importDefault = tmp;
+  c1 = tmp;
   let items = [usernameColor, tmp];
   const memo = importAllResult.useMemo(() => {
     if (null != usernameColor) {
-      const items = [tmp.username, ];
-      const obj = { color: usernameColor };
+      const items = [_undefined.username, ];
+      const obj = { color: null };
+      obj[0] = tmp;
       items[1] = obj;
       let username = items;
     } else {
-      username = tmp.username;
+      username = _undefined.username;
     }
     return username;
   }, items);
-  let obj = usernameColor(7721);
+  let obj = usernameColor(7744);
   const processColorStringsArray = obj.useProcessColorStringsArray(roleColors);
-  let tmp3 = !shouldShowRoleDot;
-  if (tmp3) {
-    tmp3 = processColorStringsArray.length > 1;
+  let tmp5 = !shouldShowRoleDot;
+  if (!shouldShowRoleDot) {
+    tmp5 = processColorStringsArray.length > 1;
   }
-  obj = {};
   if (shouldShowRoleDot) {
-    obj = { color: roleColor, colors: roleColors, size: "small" };
-    shouldShowRoleDot = callback(usernameColor(1273).RoleDot, obj);
+    obj = { color: null, colors: null, size: "small" };
+    obj[0] = roleColor;
+    obj[1] = roleColors;
+    shouldShowRoleDot = callback(tmp3(1297).RoleDot, obj);
   }
   const items1 = [shouldShowRoleDot, ];
-  const obj1 = { variant: "text-sm/semibold", color: "mobile-text-heading-primary", experimental_useNativeText: !usernameColor(4029).isFabric() };
+  obj = { variant: "text-sm/semibold", color: "mobile-text-heading-primary", experimental_useNativeText: null, gradientColors: null, style: null, children: null };
+  obj[2] = !usernameColor(4053).isFabric();
   let tmp10;
-  if (tmp3) {
+  if (tmp5) {
     tmp10 = processColorStringsArray;
   }
-  obj1.gradientColors = tmp10;
-  obj1.style = memo;
-  obj1.children = nickname;
-  items1[1] = callback(usernameColor(4161).Text, obj1);
-  obj.children = items1;
-  return closure_10(closure_11, obj);
+  const obj1 = { children: null };
+  obj[3] = tmp10;
+  obj[4] = memo;
+  obj[5] = nickname;
+  items1[1] = callback(usernameColor(4185).Text, obj);
+  obj1[0] = items1;
+  return closure_10(closure_11, obj1);
 }
-({ jsx: closure_9, jsxs: closure_10, Fragment: closure_11 } = jsxProd);
+let c3 = importAllResult;
+({ jsx: c9, jsxs: c10, Fragment: unpackModuleId } = jsxProd);
 let items = [, ];
 ({ CHANNEL_NAME_CHANGE: arr[0], THREAD_STARTER_MESSAGE: arr[1] } = require("ME").MessageTypes);
-let obj = { row: { flexDirection: "row" }, subtextContent: { lineHeight: 18, flexShrink: 1 }, timestamp: { lineHeight: 18 } };
-obj = { fontSize: 14, lineHeight: 18, fontFamily: require("sum").Fonts.PRIMARY_SEMIBOLD, color: require("_createForOfIteratorHelperLoose").colors.TEXT_SUBTLE };
-obj.username = obj;
-_createForOfIteratorHelperLoose = { width: 4, height: 4, marginHorizontal: 4, borderRadius: 2, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_MOD_STRONG, alignSelf: "center" };
-obj.dividerDot = _createForOfIteratorHelperLoose;
-let closure_13 = _createForOfIteratorHelperLoose.createStyles(obj);
+let obj = { row: { flexDirection: "row" }, subtextContent: { lineHeight: 18, flexShrink: 1 }, timestamp: { lineHeight: 18 }, username: null, dividerDot: null };
+obj = { fontSize: 14, lineHeight: 18, fontFamily: require("sum").Fonts.PRIMARY_SEMIBOLD, color: require("Themes").colors.TEXT_SUBTLE };
+obj[3] = obj;
+createCacheKey = { width: 4, height: 4, marginHorizontal: 4, borderRadius: 2, backgroundColor: require("Themes").colors.BACKGROUND_MOD_STRONG, alignSelf: "center" };
+obj[4] = createCacheKey;
+let closure_13 = createCacheKey.createStyles(obj);
 let closure_14 = importAllResult.memo((thread) => {
   thread = thread.thread;
   const accessibilityLabel = thread.accessibilityLabel;
-  let c4;
-  let c5;
-  let closure_6;
-  let closure_7;
+  let stateFromStores;
+  let stateFromStores1;
+  let importAllResult;
+  let colorString;
+  let colorStrings;
+  let trackCommunicationDisabled;
+  let mergeGuildAvatar;
   let obj = thread(stateFromStores1[11]);
-  let items = [closure_7];
-  const stateFromStores = obj.useStateFromStores(items, () => ref.getUser(thread.ownerId));
+  let items = [mergeGuildAvatar];
+  stateFromStores = obj.useStateFromStores(items, () => ref.getUser(thread.ownerId));
   let obj1 = thread(stateFromStores1[11]);
-  const items1 = [closure_6];
+  const items1 = [trackCommunicationDisabled];
   stateFromStores1 = obj1.useStateFromStores(items1, () => member.getMember(thread.guild_id, thread.ownerId));
   const tmp = callback3();
-  const items2 = [c5];
-  const importAllResult = thread(stateFromStores1[11]).useStateFromStores(items2, () => _undefined.roleStyle);
-  let colorString;
-  if (null != stateFromStores1) {
+  const items2 = [colorStrings];
+  importAllResult = thread(stateFromStores1[11]).useStateFromStores(items2, () => colorStrings.roleStyle);
+  colorString = undefined;
+  if (stateFromStores1 != null) {
     colorString = stateFromStores1.colorString;
   }
-  let tmp5 = null;
-  if (null != colorString) {
-    tmp5 = colorString;
+  if (colorString == null) {
+    colorString = null;
   }
-  c4 = tmp5;
-  let colorStrings;
-  if (null != stateFromStores1) {
+  colorStrings = undefined;
+  if (stateFromStores1 != null) {
     colorStrings = stateFromStores1.colorStrings;
   }
-  let tmp7 = null;
-  if (null != colorStrings) {
-    tmp7 = colorStrings;
+  if (colorStrings == null) {
+    colorStrings = null;
   }
-  c5 = tmp7;
   let id;
   const obj3 = thread(stateFromStores1[11]);
-  if (null != stateFromStores) {
+  if (stateFromStores != null) {
     id = stateFromStores.id;
   }
-  closure_6 = stateFromStores(stateFromStores1[13])(thread.guild_id, id);
-  closure_7 = importAllResult.useRef(thread);
+  trackCommunicationDisabled = stateFromStores(stateFromStores1[13])(thread.guild_id, id);
+  mergeGuildAvatar = importAllResult.useRef(thread);
   const effect = importAllResult.useEffect(() => {
-    closure_7.current = thread;
+    mergeGuildAvatar.current = thread;
   });
   const items3 = [stateFromStores1, stateFromStores];
   const effect1 = importAllResult.useEffect(() => {
@@ -222,69 +236,66 @@ let closure_14 = importAllResult.memo((thread) => {
       const obj = stateFromStores(stateFromStores1[14]);
     }
   }, items3);
-  obj = { user: stateFromStores, timestamp: thread.timestamp, accessibilityLabel };
-  obj = { lineClamp: 1, ellipsizeMode: "tail", lineBreakMode: "tail", style: tmp.subtextContent, accessibilityLabel, variant: "text-sm/medium", color: "text-default" };
-  const intl = thread(stateFromStores1[16]).intl;
+  obj = { user: stateFromStores, timestamp: thread.timestamp, accessibilityLabel, children: null };
+  obj = { lineClamp: 1, ellipsizeMode: "tail", lineBreakMode: "tail", style: tmp.subtextContent, accessibilityLabel, variant: "text-sm/medium", color: "text-default", children: null };
+  const intl = tmp2(tmp3[16]).intl;
   obj1 = {
     usernameHook(arg0, arg1) {
-      const obj = {};
-      let nick;
-      if (null != stateFromStores1) {
-        nick = stateFromStores1.nick;
+      let str;
+      if (stateFromStores1 != null) {
+        str = stateFromStores1.nick;
       }
-      if (null == nick) {
-        nick = stateFromStores(stateFromStores1[17]).getName(stateFromStores);
-        const obj2 = stateFromStores(stateFromStores1[17]);
+      if (str == null) {
+        let obj = stateFromStores(stateFromStores1[17]);
+        str = obj.getName(stateFromStores);
       }
-      let str = "";
-      if (null != nick) {
-        str = nick;
+      if (str == null) {
+        str = "";
       }
-      obj.nickname = str;
-      let tmp8 = null;
+      obj = { nickname: str, usernameColor: null, roleColor: null, roleColors: null, shouldShowRoleDot: null };
+      let tmp7 = null;
       if ("username" === closure_3) {
-        tmp8 = c4;
+        tmp7 = colorString;
       }
-      obj.usernameColor = tmp8;
-      obj.roleColor = c4;
+      obj[1] = tmp7;
+      obj[2] = colorString;
       let tmp9 = null;
-      if (closure_6) {
-        tmp9 = c5;
+      if (trackCommunicationDisabled) {
+        tmp9 = colorStrings;
       }
-      obj.roleColors = tmp9;
-      let tmp10 = "dot" === closure_3;
-      if (tmp10) {
-        tmp10 = null != c4;
-      }
-      obj.shouldShowRoleDot = tmp10;
+      obj[3] = tmp9;
+      obj[4] = "dot" === closure_3 && null != colorString;
       return outer1_9(outer1_17, obj, arg1);
     }
   };
-  obj.children = intl.format(thread(stateFromStores1[16]).t.imPXd5, obj1);
-  obj.children = callback(thread(stateFromStores1[15]).Text, obj);
+  obj[7] = intl.format(thread(stateFromStores1[16]).t.imPXd5, obj1);
+  obj[3] = callback(thread(stateFromStores1[15]).Text, obj);
   return callback(SubstringRow, obj);
 });
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/threads/native/components/ThreadBrowserRowSubtext.tsx");
+const result = require("maybeApplyNoTextColorForLightCustomTheme").fileFinishedImporting("modules/threads/native/components/ThreadBrowserRowSubtext.tsx");
 
 export const ThreadSubtext = function ThreadSubtext(thread) {
   thread = thread.thread;
-  const id = thread.id;
-  let obj = id(566);
-  const items = [closure_8];
+  let id;
+  id = thread.id;
+  let obj = id(589);
+  const items = [updateState];
   const items1 = [id];
   const stateFromStores = obj.useStateFromStores(items, () => outer1_8.getMostRecentMessage(id), items1);
-  const lastMessageTimestamp = id(6074).useLastMessageTimestamp(thread);
+  const lastMessageTimestamp = id(6092).useLastMessageTimestamp(thread);
   if (null != stateFromStores) {
     if (!items.includes(stateFromStores.type)) {
       if (!thread.isArchivedThread()) {
-        obj = { thread, message: stateFromStores };
+        obj = { thread: null, message: null };
+        obj[0] = thread;
+        obj[1] = stateFromStores;
         return callback(MessageContent, obj);
       }
     }
   }
-  const obj2 = id(6074);
-  const timestampString = id(6074).getTimestampString(lastMessageTimestamp);
-  const obj4 = id(6074);
-  obj = { thread, timestamp: timestampString, accessibilityLabel: id(6074).getTimestampAccessibilityLabel(lastMessageTimestamp) };
+  let tmpResult = tmp(6092);
+  const timestampString = tmpResult.getTimestampString(lastMessageTimestamp);
+  tmpResult = tmp(6092);
+  obj = { thread, timestamp: timestampString, accessibilityLabel: tmpResult.getTimestampAccessibilityLabel(lastMessageTimestamp) };
   return callback(closure_14, obj);
 };

@@ -1,17 +1,17 @@
-// Module ID: 14928
-// Function ID: 113784
+// Module ID: 14954
+// Function ID: 14955
 // Name: useGuildsBarBottomRightBadge
-// Dependencies: [57, 31, 33, 4165, 14929, 1273, 3869, 689, 14930, 14931, 14935, 2]
+// Dependencies: [32, 19, 21, 4189, 14955, 1297, 3893, 712, 14956, 14957, 14961, 2]
 // Exports: default
 
-// Module 14928 (useGuildsBarBottomRightBadge)
+// Module 14954 (useGuildsBarBottomRightBadge)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
+import noop from "noop";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
 const require = arg1;
-let closure_6 = _createForOfIteratorHelperLoose.createStyles({ bottomRightBadge: { position: "absolute", right: 9, backgroundColor: "transparent", borderColor: "transparent" } });
+let closure_6 = createCacheKey.createStyles({ bottomRightBadge: { position: "absolute", right: 9, backgroundColor: "transparent", borderColor: "transparent" } });
 const result = require("jsxProd").fileFinishedImporting("modules/guilds_bar/native/hooks/useGuildsBarBottomRightBadge.tsx");
 
 export default function useGuildsBarBottomRightBadge(mentionCount) {
@@ -58,63 +58,69 @@ export default function useGuildsBarBottomRightBadge(mentionCount) {
   let items1 = [first, flag, joinRequestState, mentionCount, isMentionLowImportance, memo, token, prop, hasExpired];
   return prop.useMemo(() => {
     if (mentionCount > 0) {
-      let obj = { position: "bottom-right", containerSize: token, width: first - 2 * mentionCount(joinRequestState[5]).BADGE_PADDING };
-      const tmp24Result = isMentionLowImportance(joinRequestState[8])(obj);
-      obj = {};
-      const obj1 = {
-        maskStyle: memo,
-        value: mentionCount,
-        isMentionLowImportance,
-        accessibilityElementsHidden: true,
-        importantForAccessibility: "no-hide-descendants",
-        onLayout(nativeEvent) {
-            const layout = nativeEvent.nativeEvent.layout;
-            if (outer1_7 !== layout.width) {
-              outer1_8(layout.width);
-            }
-          }
+      let obj = { position: "bottom-right", containerSize: null, width: null };
+      obj[1] = token;
+      obj[2] = first - 2 * mentionCount(joinRequestState[5]).BADGE_PADDING;
+      const tmp29Result = isMentionLowImportance(joinRequestState[8])(obj);
+      obj = { badge: null, cutout: null, cutouts: null };
+      const obj1 = { maskStyle: null, value: null, isMentionLowImportance: null, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", onLayout: null };
+      obj1[0] = memo;
+      obj1[1] = tmp;
+      obj1[2] = isMentionLowImportance;
+      obj1[5] = function onLayout(nativeEvent) {
+        const layout = nativeEvent.nativeEvent.layout;
+        if (closure_7 !== layout.width) {
+          callback(layout.width);
+        }
       };
-      obj.badge = _undefined(mentionCount(joinRequestState[5]).MaskedBadge, obj1);
-      obj.cutout = tmp24Result;
-      const items = [tmp24Result];
-      obj.cutouts = items;
+      obj[0] = _undefined(mentionCount(joinRequestState[5]).MaskedBadge, obj1);
+      obj[1] = tmp29Result;
+      const items = [tmp29Result];
+      obj[2] = items;
       return obj;
     } else if (null != joinRequestState) {
-      const obj2 = { position: "bottom-right", containerSize: token };
-      const tmp18 = isMentionLowImportance(joinRequestState[8])(obj2);
-      const obj3 = {};
-      const obj4 = { style: memo, joinRequestState };
-      obj3.badge = _undefined(isMentionLowImportance(joinRequestState[9]), obj4);
-      obj3.cutout = tmp18;
-      const items1 = [tmp18];
-      obj3.cutouts = items1;
+      const obj2 = { position: "bottom-right", containerSize: null };
+      obj2[1] = token;
+      const tmp22 = isMentionLowImportance(joinRequestState[8])(obj2);
+      const obj3 = { badge: null, cutout: null, cutouts: null };
+      const obj4 = { style: null, joinRequestState: null };
+      obj4[0] = memo;
+      obj4[1] = tmp39;
+      obj3[0] = _undefined(isMentionLowImportance(joinRequestState[9]), obj4);
+      obj3[1] = tmp22;
+      const items1 = [tmp22];
+      obj3[2] = items1;
       return obj3;
     } else if (flag) {
-      const obj5 = { position: "bottom-right", containerSize: token };
-      const tmp12 = isMentionLowImportance(joinRequestState[8])(obj5);
-      const obj6 = {};
-      const obj7 = { style: memo };
-      obj6.badge = _undefined(isMentionLowImportance(joinRequestState[10]), obj7);
-      obj6.cutout = tmp12;
-      const items2 = [tmp12];
-      obj6.cutouts = items2;
+      const obj5 = { position: "bottom-right", containerSize: null };
+      obj5[1] = token;
+      const tmp14 = isMentionLowImportance(joinRequestState[8])(obj5);
+      const obj6 = { badge: null, cutout: null, cutouts: null };
+      const obj7 = { style: null };
+      obj7[0] = memo;
+      obj6[0] = _undefined(isMentionLowImportance(joinRequestState[10]), obj7);
+      obj6[1] = tmp14;
+      const items2 = [tmp14];
+      obj6[2] = items2;
       return obj6;
     } else {
       if (null != prop) {
         if (!hasExpired) {
-          obj = { position: "bottom-right", containerSize: token };
-          const tmp5 = isMentionLowImportance(joinRequestState[8])(obj);
-          const obj8 = {};
-          const obj9 = { style: memo, expiresAt: prop };
-          obj8.badge = _undefined(isMentionLowImportance(joinRequestState[4]), obj9);
-          obj8.cutout = tmp5;
-          const items3 = [tmp5];
-          obj8.cutouts = items3;
+          obj = { position: "bottom-right", containerSize: null };
+          obj[1] = token;
+          const tmp6 = isMentionLowImportance(joinRequestState[8])(obj);
+          const obj8 = { badge: null, cutout: null, cutouts: null };
+          const obj9 = { style: null, expiresAt: null };
+          obj9[0] = memo;
+          obj9[1] = tmp2;
+          obj8[0] = _undefined(isMentionLowImportance(joinRequestState[4]), obj9);
+          obj8[1] = tmp6;
+          const items3 = [tmp6];
+          obj8[2] = items3;
           return obj8;
         }
       }
-      const obj10 = { badge: null, cutout: undefined, cutouts: undefined };
-      return obj10;
+      return { badge: null, cutout: "Array", cutouts: "isArray" };
     }
   }, items1);
 };

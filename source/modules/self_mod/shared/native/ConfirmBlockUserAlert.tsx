@@ -1,30 +1,30 @@
-// Module ID: 10149
-// Function ID: 78447
+// Module ID: 10170
+// Function ID: 10171
 // Name: ConfirmBlockUserAlert
-// Dependencies: [31, 27, 1850, 10138, 33, 4165, 689, 566, 10140, 4004, 8894, 6700, 7669, 4596, 4578, 1212, 4161, 2]
+// Dependencies: [19, 17, 1874, 10159, 21, 4189, 712, 589, 10161, 4028, 8918, 6721, 7692, 4618, 4600, 1236, 4185, 2]
 // Exports: default
 
-// Module 10149 (ConfirmBlockUserAlert)
-import result from "result";
-import { View } from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 10170 (ConfirmBlockUserAlert)
+import noop from "noop";
+import { View } from "set";
+import mergeGuildAvatar from "mergeGuildAvatar";
 import { LOCATION_CONTEXT_MOBILE } from "LOCATION_CONTEXT_MOBILE";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_7;
-let closure_8;
+let error;
+let metroImportAll;
 const require = arg1;
-({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { color: require("_createForOfIteratorHelperLoose").colors.MOBILE_TEXT_HEADING_PRIMARY, textAlign: "center" };
-_createForOfIteratorHelperLoose.header = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.text = { color: require("_createForOfIteratorHelperLoose").colors.TEXT_SUBTLE, marginTop: require("_createForOfIteratorHelperLoose").space.PX_8, marginBottom: require("_createForOfIteratorHelperLoose").space.PX_24, marginHorizontal: require("_createForOfIteratorHelperLoose").space.PX_4, textAlign: "center" };
-let obj1 = { color: require("_createForOfIteratorHelperLoose").colors.TEXT_SUBTLE, marginTop: require("_createForOfIteratorHelperLoose").space.PX_8, marginBottom: require("_createForOfIteratorHelperLoose").space.PX_24, marginHorizontal: require("_createForOfIteratorHelperLoose").space.PX_4, textAlign: "center" };
-_createForOfIteratorHelperLoose.buttonsContainer = { gap: require("_createForOfIteratorHelperLoose").space.PX_12, marginBottom: -require("_createForOfIteratorHelperLoose").space.PX_8 };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-let obj2 = { gap: require("_createForOfIteratorHelperLoose").space.PX_12, marginBottom: -require("_createForOfIteratorHelperLoose").space.PX_8 };
-let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/self_mod/shared/native/ConfirmBlockUserAlert.tsx");
+({ jsx: error, jsxs: metroImportAll } = jsxProd);
+createCacheKey = { header: null, text: null, buttonsContainer: null };
+createCacheKey = { color: require("Themes").colors.MOBILE_TEXT_HEADING_PRIMARY, textAlign: "center" };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { color: require("Themes").colors.TEXT_SUBTLE, marginTop: require("Themes").space.PX_8, marginBottom: require("Themes").space.PX_24, marginHorizontal: require("Themes").space.PX_4, textAlign: "center" };
+let obj1 = { color: require("Themes").colors.TEXT_SUBTLE, marginTop: require("Themes").space.PX_8, marginBottom: require("Themes").space.PX_24, marginHorizontal: require("Themes").space.PX_4, textAlign: "center" };
+createCacheKey[2] = { gap: require("Themes").space.PX_12, marginBottom: -require("Themes").space.PX_8 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let obj2 = { gap: require("Themes").space.PX_12, marginBottom: -require("Themes").space.PX_8 };
+let result = require("mergeGuildAvatar").fileFinishedImporting("modules/self_mod/shared/native/ConfirmBlockUserAlert.tsx");
 
 export default function ConfirmBlockUserAlert(userId) {
   let description;
@@ -35,25 +35,28 @@ export default function ConfirmBlockUserAlert(userId) {
   const onClose = userId.onClose;
   const onBlockAndReport = userId.onBlockAndReport;
   const onBlock = userId.onBlock;
-  const blockButtonVariant = userId.blockButtonVariant;
-  const tmp = _createForOfIteratorHelperLoose();
+  let str = userId.blockButtonVariant;
+  let lastChannelMessage;
+  let callback;
+  let closure_8;
+  const tmp = createCacheKey();
   let obj = userId(onCancel[7]);
   const items = [onBlock];
   const stateFromStores = obj.useStateFromStores(items, () => onBlock.getUser(userId));
   let obj1 = userId(onCancel[8]);
-  const lastChannelMessage = obj1.useLastChannelMessage(channelId);
+  lastChannelMessage = obj1.useLastChannelMessage(channelId);
   let obj2 = channelId(onCancel[9]);
   const name = obj2.useName(stateFromStores);
   const items1 = [userId, channelId];
-  const callback = onClose.useCallback(() => {
+  callback = onClose.useCallback(() => {
     let obj = channelId(onCancel[10]);
     obj = { location: lastChannelMessage };
     obj.blockUser(userId, obj).then(() => {
-      const result = channelId(onCancel[11]).showBlockSuccessToast(outer1_0, outer1_1);
+      const result = outer1_1(outer1_2[11]).showBlockSuccessToast(closure_0, closure_1);
     });
   }, items1);
   const items2 = [onClose, onCancel];
-  let closure_8 = onClose.useCallback(() => {
+  closure_8 = onClose.useCallback(() => {
     onClose();
     onCancel();
   }, items2);
@@ -68,52 +71,52 @@ export default function ConfirmBlockUserAlert(userId) {
     onClose();
     callback();
     const result = userId(onCancel[12]).showReportModalForInappropriateConversationSafetyAlert(lastChannelMessage);
-    if (null != onBlockAndReport) {
+    if (onBlockAndReport != null) {
       onBlockAndReport();
     }
   }, items4);
   obj = {
     renderConfirmButton() {
-      const obj = { size: "lg", onPress: closure_8 };
+      const obj = { size: "lg", onPress: closure_8, text: null, variant: "secondary" };
       const intl = userId(onCancel[15]).intl;
-      obj.text = intl.string(userId(onCancel[15]).t["ETE/oC"]);
-      obj.variant = "secondary";
+      obj[2] = intl.string(userId(onCancel[15]).t["ETE/oC"]);
       return callback(userId(onCancel[14]).Button, obj);
-    }
+    },
+    children: null
   };
-  obj = { style: tmp.header, variant: "heading-lg/bold", color: "mobile-text-heading-primary" };
+  obj = { style: tmp.header, variant: "heading-lg/bold", color: "mobile-text-heading-primary", children: null };
   let intl = userId(onCancel[15]).intl;
-  obj.children = intl.format(userId(onCancel[15]).t.x5pOn9, { name });
+  obj[3] = intl.format(userId(onCancel[15]).t.x5pOn9, { name });
   const items5 = [callback(userId(onCancel[16]).Text, obj), , ];
-  obj1 = { style: tmp.text, variant: "text-md/medium" };
-  if (null == description) {
-    const intl2 = userId(onCancel[15]).intl;
-    obj2 = { name };
-    description = intl2.format(userId(onCancel[15]).t.pegItC, obj2);
+  obj1 = { style: tmp.text, variant: "text-md/medium", children: null };
+  if (description == null) {
+    const intl2 = tmp2(tmp3[15]).intl;
+    obj2 = { name: null };
+    obj2[0] = name;
+    description = intl2.format(tmp2(tmp3[15]).t.pegItC, obj2);
   }
-  obj1.children = description;
+  obj1[2] = description;
   items5[1] = callback(userId(onCancel[16]).Text, obj1);
-  const obj3 = { style: tmp.buttonsContainer };
-  const obj4 = { size: "lg", onPress: callback1 };
-  const intl3 = userId(onCancel[15]).intl;
-  obj4.text = intl3.string(userId(onCancel[15]).t.l4Emac);
-  let str = "destructive";
-  if (null != blockButtonVariant) {
-    str = blockButtonVariant;
+  const obj3 = { style: tmp.buttonsContainer, children: null };
+  const obj4 = { size: "lg", onPress: callback1, text: null, variant: null };
+  const intl3 = tmp2(tmp3[15]).intl;
+  obj4[2] = intl3.string(userId(onCancel[15]).t.l4Emac);
+  if (str == null) {
+    str = "destructive";
   }
-  obj4.variant = str;
+  obj4[3] = str;
   const items6 = [callback(userId(onCancel[14]).Button, obj4), ];
-  let tmp16 = null != onBlockAndReport;
-  if (tmp16) {
-    const obj5 = { size: "lg", onPress: callback2 };
-    const intl4 = userId(onCancel[15]).intl;
-    obj5.text = intl4.string(userId(onCancel[15]).t["39O+8F"]);
-    obj5.variant = "secondary";
-    tmp16 = callback(userId(onCancel[14]).Button, obj5);
+  let tmp12Result = null != onBlockAndReport;
+  if (tmp12Result) {
+    const obj5 = { size: "lg", onPress: null, text: null, variant: "secondary" };
+    obj5[1] = callback2;
+    const intl4 = tmp2(tmp3[15]).intl;
+    obj5[2] = intl4.string(tmp2(tmp3[15]).t["39O+8F"]);
+    tmp12Result = tmp12(tmp2(tmp3[14]).Button, obj5);
   }
-  items6[1] = tmp16;
-  obj3.children = items6;
+  items6[1] = tmp12Result;
+  obj3[1] = items6;
   items5[2] = closure_8(onBlockAndReport, obj3);
-  obj.children = items5;
+  obj[1] = items5;
   return closure_8(channelId(onCancel[13]), obj);
 };

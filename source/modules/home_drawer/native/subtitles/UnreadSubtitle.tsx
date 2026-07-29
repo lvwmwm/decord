@@ -1,11 +1,11 @@
-// Module ID: 14960
-// Function ID: 113955
+// Module ID: 14986
+// Function ID: 14987
 // Name: UnreadSubtitle
-// Dependencies: [31, 27, 33, 14958, 4628, 4673, 1212, 4161, 2]
+// Dependencies: [19, 17, 21, 14984, 4650, 4695, 1236, 4185, 2]
 // Exports: default
 
-// Module 14960 (UnreadSubtitle)
-import "result";
+// Module 14986 (UnreadSubtitle)
+import "noop";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
 
@@ -17,52 +17,45 @@ export default function UnreadSubtitle(channel) {
   let count;
   let guild;
   channel = channel.channel;
+  let subtitleStyles;
   let channelIconComponentWithGuild;
   ({ guild, channelName, count } = channel);
   let obj = subtitleStyles(channelIconComponentWithGuild[3]);
   subtitleStyles = obj.useSubtitleStyles();
   channelIconComponentWithGuild = undefined;
   if (null != channel) {
-    channelIconComponentWithGuild = subtitleStyles(channelIconComponentWithGuild[4]).getChannelIconComponentWithGuild(channel, guild);
-    const obj2 = subtitleStyles(channelIconComponentWithGuild[4]);
+    channelIconComponentWithGuild = tmp(tmp2[4]).getChannelIconComponentWithGuild(channel, guild);
+    const tmpResult = tmp(tmp2[4]);
   }
-  if (null == channelIconComponentWithGuild) {
-    channelIconComponentWithGuild = subtitleStyles(channelIconComponentWithGuild[5]).TextIcon;
+  if (channelIconComponentWithGuild == null) {
+    channelIconComponentWithGuild = tmp(tmp2[5]).TextIcon;
   }
-  obj = { style: subtitleStyles.subtitleRow };
-  const intl = subtitleStyles(channelIconComponentWithGuild[6]).intl;
+  obj = { style: subtitleStyles.subtitleRow, children: null };
+  const intl = tmp(tmp2[6]).intl;
   obj = {
     channelName,
     count: count - 1,
     labelHook(children) {
-      const obj = { variant: "text-xs/medium", color: "text-muted", lineClamp: 1, children };
-      return outer1_3(subtitleStyles(channelIconComponentWithGuild[7]).Text, obj, arg1);
+      return callback(subtitleStyles(channelIconComponentWithGuild[7]).Text, { variant: "text-xs/medium", color: "text-muted", lineClamp: 1, children }, arg1);
     },
     iconHook(arg0, arg1) {
-      const obj = { size: "xxs", color: "icon-muted", style: subtitleStyles.unreadChannelIcon };
-      return outer1_3(channelIconComponentWithGuild, obj, arg1);
+      return outer1_3(channelIconComponentWithGuild, { size: "xxs", color: "icon-muted", style: subtitleStyles.unreadChannelIcon }, arg1);
     },
     channelHook(children) {
-      const obj = { variant: "text-xs/medium", color: "text-muted", lineClamp: 1, style: subtitleStyles.subtitleText, children };
-      return outer1_3(subtitleStyles(channelIconComponentWithGuild[7]).Text, obj, arg1);
+      return outer1_3(subtitleStyles(channelIconComponentWithGuild[7]).Text, { variant: "text-xs/medium", color: "text-muted", lineClamp: 1, style: subtitleStyles.subtitleText, children }, arg1);
     },
     overflowHook(children) {
-      const obj = { variant: "text-xs/medium", color: "text-muted", children };
-      return outer1_3(subtitleStyles(channelIconComponentWithGuild[7]).Text, obj, arg1);
+      return callback(subtitleStyles(channelIconComponentWithGuild[7]).Text, { variant: "text-xs/medium", color: "text-muted", children }, arg1);
     }
   };
-  obj.children = intl.format(subtitleStyles(channelIconComponentWithGuild[6]).t.OqlmU6, obj);
+  obj[1] = intl.format(subtitleStyles(channelIconComponentWithGuild[6]).t.OqlmU6, obj);
   return <View channelName={channelName} count={count - 1} labelHook={function labelHook(children) {
-    const obj = { variant: "text-xs/medium", color: "text-muted", lineClamp: 1, children };
-    return outer1_3(subtitleStyles(channelIconComponentWithGuild[7]).Text, obj, arg1);
+    return callback(subtitleStyles(channelIconComponentWithGuild[7]).Text, { variant: "text-xs/medium", color: "text-muted", lineClamp: 1, children }, arg1);
   }} iconHook={function iconHook(arg0, arg1) {
-    const obj = { size: "xxs", color: "icon-muted", style: subtitleStyles.unreadChannelIcon };
-    return outer1_3(channelIconComponentWithGuild, obj, arg1);
+    return outer1_3(channelIconComponentWithGuild, { size: "xxs", color: "icon-muted", style: subtitleStyles.unreadChannelIcon }, arg1);
   }} channelHook={function channelHook(children) {
-    const obj = { variant: "text-xs/medium", color: "text-muted", lineClamp: 1, style: subtitleStyles.subtitleText, children };
-    return outer1_3(subtitleStyles(channelIconComponentWithGuild[7]).Text, obj, arg1);
+    return outer1_3(subtitleStyles(channelIconComponentWithGuild[7]).Text, { variant: "text-xs/medium", color: "text-muted", lineClamp: 1, style: subtitleStyles.subtitleText, children }, arg1);
   }} overflowHook={function overflowHook(children) {
-    const obj = { variant: "text-xs/medium", color: "text-muted", children };
-    return outer1_3(subtitleStyles(channelIconComponentWithGuild[7]).Text, obj, arg1);
+    return callback(subtitleStyles(channelIconComponentWithGuild[7]).Text, { variant: "text-xs/medium", color: "text-muted", children }, arg1);
   }} />;
 };

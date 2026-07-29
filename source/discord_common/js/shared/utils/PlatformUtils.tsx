@@ -1,37 +1,29 @@
-// Module ID: 478
-// Function ID: 6168
-// Name: isWindows
+// Module ID: 501
+// Function ID: 502
+// Name: PlatformTypes
 // Dependencies: [2]
-// Exports: getNativePlatform, getNewUpdaterPlatformName, getOS, getPlatform, getPlatformName, isAndroid, isAndroidChrome, isAndroidWeb, isIOS, isLinux, isMac, isMacWeb, isWeb, platformPrefersDeepLink, platformSupportsActivityJoin
+// Exports: getNativePlatform, getNewUpdaterPlatformName, getOS, getPlatform, getPlatformName, isAndroid, isAndroidChrome, isAndroidWeb, isDesktop, isIOS, isLinux, isMac, isMacWeb, isOculusWeb, isWeb, isWindows, platformPrefersDeepLink, platformSupportsActivityJoin
 
-// Module 478 (isWindows)
-function isWindows() {
-  return /^win/.test(android);
-}
-function isDesktop() {
-  return isWindows() || false;
-}
-function isOculusWeb() {
-  let match;
-  if (null != navigator.userAgent) {
-    match = str.match(/OculusBrowser/i);
-  }
-  return null != match;
-}
-const obj = { WINDOWS: "WINDOWS", OSX: "OSX", LINUX: "LINUX", WEB: "WEB" };
+// Module 501 (PlatformTypes)
+let obj = { WINDOWS: "WINDOWS", OSX: "OSX", LINUX: "LINUX", WEB: "WEB" };
+let c1 = true;
 const android = "android";
 const result = require("set").fileFinishedImporting("../discord_common/js/shared/utils/PlatformUtils.tsx");
 
 export const PlatformTypes = obj;
 export const isPlatformEmbedded = true;
-export { isWindows };
+export const isWindows = function isWindows() {
+  return /^win/.test(android);
+};
 export function isMac() {
   return false;
 }
 export function isLinux() {
   return false;
 }
-export { isDesktop };
+export const isDesktop = function isDesktop() {
+  return /^win/.test(android) || false;
+};
 export function isWeb() {
   return false;
 }
@@ -47,14 +39,14 @@ export const isAndroidChrome = function isAndroidChrome() {
 };
 export const isAndroidWeb = function isAndroidWeb() {
   let match;
-  if (null != navigator.userAgent) {
+  if (navigator.userAgent != null) {
     match = str.match(/android/i);
   }
   return null != match;
 };
 export const isMacWeb = function isMacWeb() {
   let match;
-  if (null != navigator.userAgent) {
+  if (navigator.userAgent != null) {
     match = str.match(/Macintosh/i);
   }
   return null != match;
@@ -65,22 +57,38 @@ export function isAndroid() {
 export function isIOS() {
   return false;
 }
-export { isOculusWeb };
+export const isOculusWeb = function isOculusWeb() {
+  let match;
+  if (navigator.userAgent != null) {
+    match = str.match(/OculusBrowser/i);
+  }
+  return null != match;
+};
 export const platformPrefersDeepLink = function platformPrefersDeepLink() {
-  return isOculusWeb();
+  let match;
+  if (navigator.userAgent != null) {
+    match = str.match(/OculusBrowser/i);
+  }
+  return null != match;
 };
 export const platformSupportsActivityJoin = function platformSupportsActivityJoin() {
-  let flag = isDesktop();
-  if (!flag) {
-    flag = isOculusWeb();
+  let tmp = /^win/.test(android) || false;
+  if (!tmp) {
+    const _navigator = navigator;
+    let match;
+    if (navigator.userAgent != null) {
+      match = str.match(/OculusBrowser/i);
+    }
+    tmp = null != match;
   }
-  if (!flag) {
-    flag = true;
+  if (!tmp) {
+    tmp = c1;
   }
-  return flag;
+  return tmp;
 };
 export const getPlatform = function getPlatform() {
-  return isWindows() ? obj.WINDOWS : obj.WEB;
+  const obj = /^win/;
+  return obj.test(android) ? obj.WINDOWS : obj.WEB;
 };
 export function getPlatformName() {
   return android;
@@ -97,7 +105,8 @@ export const getOS = function getOS() {
   return "android";
 };
 export const getNewUpdaterPlatformName = function getNewUpdaterPlatformName() {
-  if (isWindows()) {
+  if (obj.test(android)) {
     return "win";
   }
+  obj = /^win/;
 };

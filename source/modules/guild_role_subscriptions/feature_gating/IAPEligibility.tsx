@@ -1,54 +1,62 @@
-// Module ID: 5066
-// Function ID: 43454
-// Name: compareVersions
-// Dependencies: [31, 1838, 653, 477, 5067, 624, 2]
+// Module ID: 5088
+// Function ID: 5089
+// Name: items
+// Dependencies: [19, 1862, 676, 500, 5089, 647, 2]
 // Exports: canUseRoleSubscriptionIAP, useCanUseRoleSubscriptionIAP
 
-// Module 5066 (compareVersions)
-import result from "result";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+// Module 5088 (items)
+import noop from "noop";
+import createGuildRecordFromRust from "createGuildRecordFromRust";
 
 const require = arg1;
-function compareVersions(systemVersion, arg1) {
-  const parts = systemVersion.split(".");
-  const mapped = parts.map(Number);
-  const parts1 = "13.2".split(".");
-  const mapped1 = parts1.map(Number);
-  const bound = Math.max(mapped.length, mapped1.length);
-  let num = 0;
-  if (0 < bound) {
-    while (true) {
-      let tmp2 = mapped[num];
-      let num2 = 0;
-      if (null != tmp2) {
-        num2 = tmp2;
-      }
-      let tmp3 = mapped1[num];
-      let num3 = 0;
-      if (null != tmp3) {
-        num3 = tmp3;
-      }
-      if (num2 < num3) {
-        break;
-      } else if (num2 > num3) {
-        let num4 = 1;
-        return 1;
-      } else {
-        num = num + 1;
-      }
-    }
-    return -1;
-  }
-  return 0;
-}
+let c4 = "13.2";
 let items = [require("ME").GuildFeatures.ROLE_SUBSCRIPTIONS_AVAILABLE_FOR_PURCHASE];
 const result = require("ME").fileFinishedImporting("modules/guild_role_subscriptions/feature_gating/IAPEligibility.tsx");
 
 export const canUseRoleSubscriptionIAP = function canUseRoleSubscriptionIAP(guildId) {
   if (obj.isIOS()) {
-    const systemVersion = guild(5067).getSystemVersion();
-    if (null != systemVersion) {
-      if (-1 !== compareVersions(systemVersion, "13.2")) {
+    const str = tmp(5089).getSystemVersion();
+    if (null != str) {
+      const parts = str.split(".");
+      const _Number = Number;
+      const mapped = parts.map(Number);
+      const parts1 = v132.split(".");
+      const _Number2 = Number;
+      const mapped1 = parts1.map(Number);
+      const _Math = Math;
+      const bound = Math.max(mapped.length, mapped1.length);
+      let num4 = 0;
+      let num3 = 0;
+      if (0 < bound) {
+        while (true) {
+          let num = mapped[num4];
+          let tmp4 = num4;
+          if (num == null) {
+            num = 0;
+          }
+          let num2 = mapped1[num4];
+          if (num2 == null) {
+            num2 = 0;
+          }
+          num3 = -1;
+          if (num < num2) {
+            break;
+          } else {
+            num3 = 1;
+            if (num > num2) {
+              break;
+            } else {
+              let sum = num4 + 1;
+              num4 = sum;
+              num3 = 0;
+              if (sum >= bound) {
+                break;
+              }
+            }
+          }
+        }
+      }
+      if (-1 !== num3) {
         guild = guild.getGuild(guildId);
         let everyResult = null != guild;
         if (everyResult) {
@@ -64,26 +72,66 @@ export const canUseRoleSubscriptionIAP = function canUseRoleSubscriptionIAP(guil
   } else {
     return false;
   }
-  obj = guild(477);
+  obj = guild(500);
+  tmp = guild;
 };
 export const useCanUseRoleSubscriptionIAP = function useCanUseRoleSubscriptionIAP(guildId) {
   const _require = guildId;
   const memo = React.useMemo(() => {
-    const systemVersion = guildId(outer1_1[4]).getSystemVersion();
-    let tmp2 = null != systemVersion;
-    if (tmp2) {
-      tmp2 = outer1_5(systemVersion, "13.2") >= 0;
+    const str = guildId(5089).getSystemVersion();
+    let tmp = null != str;
+    if (tmp) {
+      const parts = str.split(".");
+      const _Number = Number;
+      const mapped = parts.map(Number);
+      const parts1 = closure_4.split(".");
+      const _Number2 = Number;
+      const mapped1 = parts1.map(Number);
+      const _Math = Math;
+      const bound = Math.max(mapped.length, mapped1.length);
+      let num4 = 0;
+      let num5 = 0;
+      if (0 < bound) {
+        while (true) {
+          let num6 = mapped[num4];
+          let tmp5 = num4;
+          if (num6 == null) {
+            num6 = 0;
+          }
+          let num7 = mapped1[num4];
+          if (num7 == null) {
+            num7 = 0;
+          }
+          num5 = -1;
+          if (num6 < num7) {
+            break;
+          } else {
+            num5 = 1;
+            if (num6 > num7) {
+              break;
+            } else {
+              let sum = num4 + 1;
+              num4 = sum;
+              num5 = 0;
+              if (sum >= bound) {
+                break;
+              }
+            }
+          }
+        }
+      }
+      tmp = num5 >= 0;
     }
-    return tmp2;
+    return tmp;
   }, []);
-  let memo1 = React.useMemo(() => guildId(outer1_1[3]).isIOS(), []);
-  const items = [_createForOfIteratorHelperLoose];
+  let memo1 = React.useMemo(() => guildId(500).isIOS(), []);
+  const items = [createGuildRecordFromRust];
   if (memo1) {
     memo1 = obj.useStateFromStores(items, () => {
       guild = outer1_3.getGuild(guild);
       let everyResult = null != guild;
       if (everyResult) {
-        everyResult = outer1_4.every((arg0) => {
+        everyResult = outer1_5.every((arg0) => {
           const features = guild.features;
           return features.has(arg0);
         });

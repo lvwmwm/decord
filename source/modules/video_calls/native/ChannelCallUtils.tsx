@@ -1,44 +1,44 @@
-// Module ID: 15998
-// Function ID: 123452
+// Module ID: 16033
+// Function ID: 16034
 // Name: voiceSettings
-// Dependencies: [31, 4251, 653, 33, 1212, 15999, 6590, 4133, 4358, 4506, 15996, 1935, 16000, 4229, 16001, 8324, 4016, 10771, 7667, 12, 3866, 8172, 2]
+// Dependencies: [19, 4275, 676, 21, 1236, 16034, 6611, 4157, 4383, 4529, 16031, 1959, 16035, 4253, 16036, 8348, 4040, 10795, 7690, 7, 3890, 8196, 2]
 // Exports: invite, openHideSelfStreamAndVideoConfirmDialog, reportStreamIssue, rtcDebugPanel, selfVideoHidden, shareActivityLogs, videoParticipantsHidden, voiceSettings
 
-// Module 15998 (voiceSettings)
-import "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 16033 (voiceSettings)
+import "report";
+import initialize from "initialize";
 import ME from "ME";
-import { jsx } from "jsxProd";
+import { jsx } from "showShareActionSheet";
 
-let closure_4;
-let closure_5;
+let c4;
+let c5;
 let closure_6;
-let closure_7;
+let error;
 const require = arg1;
-({ UserSettingsSections: closure_4, AnalyticsPages: closure_5, InstantInviteSources: closure_6, RPC_APPLICATION_LOGGING_CATEGORY: closure_7 } = ME);
+({ UserSettingsSections: c4, AnalyticsPages: c5, InstantInviteSources: closure_6, RPC_APPLICATION_LOGGING_CATEGORY: error } = ME);
 let result = require("ME").fileFinishedImporting("modules/video_calls/native/ChannelCallUtils.tsx");
 
 export const voiceSettings = function voiceSettings() {
-  let obj = {};
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj.label = intl.string(require(1212) /* getSystemLocale */.t.NiTd0e);
-  obj.icon = importDefault(15999);
-  obj.onPress = function onPress() {
-    let obj = outer1_0(outer1_2[6]);
-    obj = { screen: outer1_4.VOICE };
+  let obj = { label: null, icon: null, onPress: null };
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj[0] = intl.string(require(1236) /* getSystemLocale */.t.NiTd0e);
+  obj[1] = importDefault(16034);
+  obj[2] = function onPress() {
+    let obj = callback(6611);
+    obj = { screen: constants.VOICE };
     obj.openUserSettings(obj);
-    outer1_1(outer1_2[7]).hideActionSheet();
+    callback2(4157).hideActionSheet();
   };
   return obj;
 };
 export const videoParticipantsHidden = function videoParticipantsHidden(arg0, arg1) {
   const _require = arg0;
   let closure_1 = arg1;
-  const obj = {};
-  const intl = _require(1212).intl;
-  obj.label = intl.string(_require(1212).t.hoZYAA);
-  obj.switchValue = !arg1;
-  obj.onPress = function onPress() {
+  const obj = { label: null, switchValue: null, onPress: null };
+  const intl = _require(1236).intl;
+  obj[0] = intl.string(_require(1236).t.hoZYAA);
+  obj[1] = !arg1;
+  obj[2] = function onPress() {
     const result = callback(outer1_2[8]).toggleVoiceParticipantsHidden(id.id, !callback);
   };
   return obj;
@@ -46,7 +46,7 @@ export const videoParticipantsHidden = function videoParticipantsHidden(arg0, ar
 export const openHideSelfStreamAndVideoConfirmDialog = function openHideSelfStreamAndVideoConfirmDialog(arg0, arg1) {
   let closure_0 = arg0;
   const importDefault = arg1;
-  let obj = importDefault(4506);
+  let obj = importDefault(4529);
   obj = {
     importer() {
       return callback(outer1_2[11])(outer1_2[10], outer1_2.paths).then((arg0) => {
@@ -54,9 +54,9 @@ export const openHideSelfStreamAndVideoConfirmDialog = function openHideSelfStre
         return (arg0) => {
           const obj = {};
           const merged = Object.assign(arg0);
-          obj["type"] = outer2_0;
-          obj["onConfirm"] = outer2_1;
-          return outer3_8(closure_0, obj);
+          obj.type = closure_0;
+          obj.onConfirm = outer1_1;
+          return outer2_8(closure_0, obj);
         };
       });
     }
@@ -65,33 +65,33 @@ export const openHideSelfStreamAndVideoConfirmDialog = function openHideSelfStre
 };
 export const selfVideoHidden = function selfVideoHidden(arg0, arg1) {
   const _require = arg1;
-  const obj = {};
-  const intl = _require(1212).intl;
-  obj.label = intl.string(_require(1212).t.MH8ESU);
-  obj.switchValue = !arg0;
-  obj.onPress = function onPress() {
+  const obj = { label: null, switchValue: null, onPress: null };
+  const intl = _require(1236).intl;
+  obj[0] = intl.string(_require(1236).t.MH8ESU);
+  obj[1] = !arg0;
+  obj[2] = function onPress() {
     callback();
   };
   return obj;
 };
 export const reportStreamIssue = function reportStreamIssue(stream) {
   const _require = stream;
-  let obj = {};
-  const intl = _require(1212).intl;
-  obj.label = intl.string(_require(1212).t.KHGhHf);
-  obj.icon = importDefault(16000);
-  obj.onPress = function onPress() {
+  let obj = { label: null, icon: null, onPress: null };
+  const intl = _require(1236).intl;
+  obj[0] = intl.string(_require(1236).t.KHGhHf);
+  obj[1] = importDefault(16035);
+  obj[2] = function onPress() {
     let obj = stream(outer1_2[13]);
     const encodeStreamKeyResult = obj.encodeStreamKey(stream);
     let videoStats = outer1_3.getVideoStats(encodeStreamKeyResult);
-    if (null == videoStats) {
+    if (videoStats == null) {
       videoStats = {};
     }
-    obj = { media_session_id: outer1_3.getMediaSessionId(encodeStreamKeyResult), rtc_connection_id: outer1_3.getRtcConnectionId(encodeStreamKeyResult), stream_region: outer1_3.getRegion(encodeStreamKeyResult), max_viewers: outer1_3.getMaxViewers(encodeStreamKeyResult) };
+    obj = { media_session_id: obj2.getMediaSessionId(encodeStreamKeyResult), rtc_connection_id: obj2.getRtcConnectionId(encodeStreamKeyResult), stream_region: obj2.getRegion(encodeStreamKeyResult), max_viewers: obj2.getMaxViewers(encodeStreamKeyResult) };
     const merged = Object.assign(videoStats);
-    const obj4 = outer1_1(outer1_2[7]);
-    obj = { stream, analyticsData: obj };
-    obj4.openLazy(stream(outer1_2[11])(outer1_2[14], outer1_2.paths), "StreamReportProblem" + stream.ownerId, obj);
+    const obj5 = outer1_1(outer1_2[7]);
+    const tmp = stream;
+    obj5.openLazy(stream(outer1_2[11])(outer1_2[14], outer1_2.paths), "StreamReportProblem" + stream.ownerId, { stream, analyticsData: obj });
   };
   return obj;
 };
@@ -99,67 +99,70 @@ export const invite = function invite(isPrivate) {
   const _require = isPrivate;
   const importDefault = arg1;
   const dependencyMap = arg2;
-  function onPress() {
-    let obj = isPrivate(8324);
-    obj = { source: outer1_6.VOICE_CHANNEL };
-    return obj.showInstantInviteActionSheet(isPrivate, obj);
-  }
   if (null != arg1) {
-    onPress = function onPress() {
-      let obj = isPrivate(8324);
+    function onPress() {
+      let obj = isPrivate(8348);
       obj = { source: outer1_6.STREAM, stream: closure_1 };
       return obj.showInstantInviteActionSheet(isPrivate, obj);
-    };
-  } else if (null != arg2) {
+    }
+  } else {
     onPress = function onPress() {
-      let obj = isPrivate(8324);
-      obj = { source: outer1_6.ACTIVITY_INVITE, targetApplicationId: dependencyMap };
+      let obj = isPrivate(8348);
+      obj = { source: outer1_6.VOICE_CHANNEL };
       return obj.showInstantInviteActionSheet(isPrivate, obj);
     };
+    if (null != arg2) {
+      onPress = function onPress() {
+        let obj = isPrivate(8348);
+        obj = { source: outer1_6.ACTIVITY_INVITE, targetApplicationId: dependencyMap };
+        return obj.showInstantInviteActionSheet(isPrivate, obj);
+      };
+    }
   }
   if (isPrivate.isPrivate()) {
     onPress = function onPress() {
-      return isPrivate(4016).navigateToNewGroupDM(isPrivate.id, outer1_5.CHANNEL_CALL);
+      return isPrivate(4040).navigateToNewGroupDM(isPrivate.id, outer1_5.CHANNEL_CALL);
     };
   }
-  let obj = {};
-  const intl = _require(1212).intl;
-  obj.label = intl.string(_require(1212).t.VINpSK);
-  obj.icon = importDefault(10771);
-  obj.onPress = onPress;
+  let obj = { label: null, icon: null, onPress: null };
+  const intl = _require(1236).intl;
+  obj[0] = intl.string(_require(1236).t.VINpSK);
+  obj[1] = importDefault(10795);
+  obj[2] = onPress;
   return obj;
 };
 export const rtcDebugPanel = function rtcDebugPanel(arg0) {
   const _require = arg0;
-  const obj = {};
-  const intl = _require(1212).intl;
-  obj.label = intl.string(_require(1212).t.X8bCMe);
-  obj.icon = importDefault(7667);
-  obj.onPress = function onPress() {
+  const obj = { label: null, icon: null, onPress: null };
+  const intl = _require(1236).intl;
+  obj[0] = intl.string(_require(1236).t.X8bCMe);
+  obj[1] = importDefault(7690);
+  obj[2] = function onPress() {
     callback();
     outer1_1(outer1_2[7]).hideActionSheet();
   };
   return obj;
 };
 export const shareActivityLogs = function shareActivityLogs() {
-  let obj = {};
-  let intl = require(1212) /* getSystemLocale */.intl;
-  obj.label = intl.string(require(1212) /* getSystemLocale */.t.iQzQs3);
-  obj.icon = importDefault(7667);
-  obj.onPress = function onPress() {
-    let obj = outer1_0(outer1_2[19]);
-    const items = [outer1_7];
+  let obj = { label: null, icon: null, onPress: null };
+  let intl = require(1236) /* getSystemLocale */.intl;
+  obj[0] = intl.string(require(1236) /* getSystemLocale */.t.iQzQs3);
+  obj[1] = importDefault(7690);
+  obj[2] = function onPress() {
+    let obj = callback(table[19]);
+    const items = [closure_7];
     const json = obj.stringify(items);
     if ("" === json) {
-      obj = { key: "EMBEDDED_ACTIVITIES_SHARE_EMPTY_LOGS_ERROR_MESSAGE" };
-      const intl = outer1_0(outer1_2[4]).intl;
-      obj.content = intl.string(outer1_0(outer1_2[4]).t["i+9VWy"]);
-      outer1_1(outer1_2[20]).open(obj);
-      const obj4 = outer1_1(outer1_2[20]);
+      obj = { key: "EMBEDDED_ACTIVITIES_SHARE_EMPTY_LOGS_ERROR_MESSAGE", content: null };
+      const intl = tmp(tmp2[4]).intl;
+      obj[1] = intl.string(tmp(tmp2[4]).t["i+9VWy"]);
+      callback2(tmp2[20]).open(obj);
+      const obj4 = callback2(tmp2[20]);
     } else {
-      obj = { message: json };
-      outer1_0(outer1_2[21]).showShareActionSheet(obj, "Activity Logs");
-      const obj2 = outer1_0(outer1_2[21]);
+      obj = { message: null };
+      obj[0] = json;
+      tmp(tmp2[21]).showShareActionSheet(obj, "Activity Logs");
+      const tmpResult = tmp(tmp2[21]);
     }
   };
   return obj;

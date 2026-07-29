@@ -1,15 +1,15 @@
-// Module ID: 8712
-// Function ID: 68974
+// Module ID: 8736
+// Function ID: 8737
 // Name: useTrackPdpClick
-// Dependencies: [31, 653, 8639, 8640, 5792, 675, 2]
+// Dependencies: [19, 676, 8663, 8664, 5810, 698, 2]
 // Exports: useTrackPdpClick
 
-// Module 8712 (useTrackPdpClick)
-import result from "result";
+// Module 8736 (useTrackPdpClick)
+import noop from "noop";
 import { AnalyticEvents } from "ME";
 
 const require = arg1;
-const result = require("useCollectiblesAnalyticsContext").fileFinishedImporting("modules/collectibles/hooks/useTrackPdpClick.tsx");
+const result = require("context").fileFinishedImporting("modules/collectibles/hooks/useTrackPdpClick.tsx");
 
 export const useTrackPdpClick = function useTrackPdpClick(skuId) {
   skuId = skuId.skuId;
@@ -19,30 +19,24 @@ export const useTrackPdpClick = function useTrackPdpClick(skuId) {
   let sessionId;
   let shopDiscountSource;
   let collectiblesAnalyticsContext = skuId(analyticsLocations[2]).useCollectiblesAnalyticsContext();
-  if (null == collectiblesAnalyticsContext) {
+  if (collectiblesAnalyticsContext == null) {
     collectiblesAnalyticsContext = {};
   }
   cardId = collectiblesAnalyticsContext.cardId;
   sessionId = collectiblesAnalyticsContext.sessionId;
-  let obj = skuId(analyticsLocations[2]);
-  const currentUserIfAvailable = skuId(analyticsLocations[3]).useCurrentUserIfAvailable();
-  const obj3 = skuId(analyticsLocations[3]);
-  shopDiscountSource = skuId(analyticsLocations[4]).getShopDiscountSource(currentUserIfAvailable);
+  let tmpResult = tmp(tmp2[3]);
+  const currentUserIfAvailable = tmpResult.useCurrentUserIfAvailable();
+  tmpResult = tmp(tmp2[4]);
+  shopDiscountSource = tmpResult.getShopDiscountSource(currentUserIfAvailable);
   const items = [skuId, analyticsLocations, cardId, productSkuIds, sessionId, shopDiscountSource];
   return cardId.useCallback((cta) => {
     let tmp = arg1;
     let obj = productSkuIds(analyticsLocations[5]);
-    obj = {};
-    if (null == arg1) {
+    if (arg1 == null) {
       tmp = skuId;
     }
-    obj.sku_id = tmp;
-    obj.cta = cta;
-    obj.shop_session_id = sessionId;
-    obj.card_id = cardId;
-    obj.product_sku_ids = productSkuIds;
-    obj.location_stack = analyticsLocations;
-    obj.discount_source = skuId(analyticsLocations[4]).getAnalyticsShopDiscountSource(shopDiscountSource);
+    obj = { sku_id: tmp, cta, shop_session_id: sessionId, card_id: cardId, product_sku_ids: productSkuIds, location_stack: analyticsLocations, discount_source: null };
+    obj[6] = skuId(analyticsLocations[4]).getAnalyticsShopDiscountSource(shopDiscountSource);
     obj.track(sessionId.SHOP_PRODUCT_DETAIL_PAGE_CLICKED, obj);
   }, items);
 };

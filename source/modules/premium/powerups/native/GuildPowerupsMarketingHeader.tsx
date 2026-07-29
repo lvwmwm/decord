@@ -1,39 +1,38 @@
-// Module ID: 12617
-// Function ID: 97531
+// Module ID: 12639
+// Function ID: 12640
 // Name: PerkText
-// Dependencies: [31, 27, 4052, 33, 4165, 689, 666, 4161, 12618, 11556, 11581, 1212, 2231, 12619, 2]
+// Dependencies: [19, 17, 4076, 21, 4189, 712, 689, 4185, 12640, 11580, 11605, 1236, 2255, 12641, 2]
 // Exports: default
 
-// Module 12617 (PerkText)
-import result from "result";
+// Module 12639 (PerkText)
+import noop from "noop";
 import { View } from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import calculateAppliedBoosts from "calculateAppliedBoosts";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
 const require = arg1;
-function PerkText(powerup) {
-  const obj = { color: "text-overlay-light", variant: "text-sm/semibold", children: powerup.powerup.title };
-  return jsx(require(4161) /* Text */.Text, { color: "text-overlay-light", variant: "text-sm/semibold", children: powerup.powerup.title });
+function PerkText(children) {
+  return jsx(require(4185) /* Text */.Text, { color: "text-overlay-light", variant: "text-sm/semibold", children: children.powerup.title });
 }
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { padding: require("_createForOfIteratorHelperLoose").space.PX_12 };
-let obj4 = require("t")("#000000");
-_createForOfIteratorHelperLoose.backgroundColor = require("t")("#000000").alpha(0.18).hex();
-_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
-let obj1 = { textAlign: "center" };
-const alphaResult = require("t")("#000000").alpha(0.18);
-const obj7 = require("t")("#FFFFFF");
-obj1.color = require("t")("#FFFFFF").alpha(0.5).hex();
-_createForOfIteratorHelperLoose.text = obj1;
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-const alphaResult1 = require("t")("#FFFFFF").alpha(0.5);
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/premium/powerups/native/GuildPowerupsMarketingHeader.tsx");
+createCacheKey = { container: null, text: null };
+createCacheKey = { padding: require("Themes").space.PX_12, backgroundColor: null };
+let obj4 = require("n")("#000000");
+createCacheKey[1] = require("n")("#000000").alpha(0.18).hex();
+createCacheKey[0] = createCacheKey;
+let obj1 = { textAlign: "center", color: null };
+const alphaResult = require("n")("#000000").alpha(0.18);
+const obj7 = require("n")("#FFFFFF");
+obj1[1] = require("n")("#FFFFFF").alpha(0.5).hex();
+createCacheKey[1] = obj1;
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+const alphaResult1 = require("n")("#FFFFFF").alpha(0.5);
+const result = require("calculateAppliedBoosts").fileFinishedImporting("modules/premium/powerups/native/GuildPowerupsMarketingHeader.tsx");
 
 export default function GuildPowerupsMarketingHeader(guild) {
   guild = guild.guild;
-  const tmp = _createForOfIteratorHelperLoose();
-  const arr = importDefault(12618)(guild.id);
+  const tmp = createCacheKey();
+  const arr = importDefault(12640)(guild.id);
   const items = [guild.id];
   const effect = React.useEffect(() => {
     if (outer1_5.shouldFetchCatalogForGuild(guild.id)) {
@@ -41,45 +40,48 @@ export default function GuildPowerupsMarketingHeader(guild) {
       const obj = guild(outer1_2[9]);
     }
   }, items);
-  if (importDefault(11581)(guild.id)) {
-    let length;
-    if (null != arr) {
-      length = arr.length;
+  if (importDefault(11605)(guild.id)) {
+    let num;
+    if (arr != null) {
+      num = arr.length;
     }
-    let num2 = 0;
-    if (null != length) {
-      num2 = length;
+    if (num == null) {
+      num = 0;
     }
-    if (0 !== num2) {
-      let obj = { style: tmp.container };
-      obj = { style: tmp.text, variant: "text-sm/semibold" };
-      const intl = guild(1212).intl;
-      obj = {};
-      let str3 = "";
+    if (0 !== num) {
+      let obj = { style: null, children: null };
+      obj[0] = tmp.container;
+      obj = { style: null, variant: "text-sm/semibold", children: null };
+      obj[0] = tmp.text;
+      const intl = guild(1236).intl;
+      let str2 = "";
       if (null != arr) {
-        str3 = "";
+        str2 = "";
         if (0 !== arr.length) {
-          let first = importDefault(12619)(arr);
+          let first = tmp2(12641)(arr);
           if (1 === first.length) {
-            const obj1 = {};
+            obj = { powerup: null };
             first = first[0];
-            obj1.powerup = first;
-            let formatResult = <PerkText />;
+            obj[0] = first;
+            let formatResult = tmp6(PerkText, obj);
           } else {
-            const intl2 = guild(1212).intl;
-            const obj2 = {};
-            const obj3 = { powerup: first[0] };
-            obj2.perk1 = <PerkText powerup={first[0]} />;
-            const obj4 = { powerup: first[1] };
-            obj2.perk2 = <PerkText powerup={first[1]} />;
-            formatResult = intl2.format(importDefault(2231).MNO3sG, obj2);
+            const intl2 = guild(1236).intl;
+            const obj1 = { perk1: null, perk2: null };
+            const obj2 = { powerup: null };
+            obj2[0] = first[0];
+            obj1[0] = tmp6(PerkText, obj2);
+            const obj3 = { powerup: null };
+            obj3[0] = first[1];
+            obj1[1] = tmp6(PerkText, obj3);
+            formatResult = intl2.format(tmp2(2255).MNO3sG, obj1);
           }
         }
       }
-      obj.perks = str3;
-      obj.children = intl.format(importDefault(2231)["7lwpzR"], obj);
-      obj.children = jsx(guild(4161).Text, {});
-      return <View />;
+      const obj4 = { perks: null };
+      obj4[0] = str2;
+      obj[2] = intl.format(tmp2(2255)["7lwpzR"], obj4);
+      obj[1] = jsx(guild(4185).Text, { style: null, variant: "text-sm/semibold", children: null });
+      return <View style={null} variant="text-sm/semibold">{null}</View>;
     }
   }
 };

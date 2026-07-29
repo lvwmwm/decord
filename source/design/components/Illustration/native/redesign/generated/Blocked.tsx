@@ -1,40 +1,63 @@
-// Module ID: 13812
-// Function ID: 105802
+// Module ID: 13833
+// Function ID: 13834
 // Name: getBlockedSource
-// Dependencies: [31, 27, 33, 6517, 13813, 13814, 13815, 4011, 2]
-// Exports: Blocked
+// Dependencies: [19, 17, 21, 6538, 13834, 13835, 13836, 4035, 2]
+// Exports: Blocked, getBlockedSource, useBlockedSource
 
-// Module 13812 (getBlockedSource)
-import "result";
+// Module 13833 (getBlockedSource)
+import "noop";
 import { Image } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
 
 const require = arg1;
-function getBlockedSource(theme) {
-  let obj = require(6517) /* getIllustrationSource */;
+const result = require("jsxProd").fileFinishedImporting("design/components/Illustration/native/redesign/generated/Blocked.tsx");
+
+export const getBlockedSource = function getBlockedSource(theme) {
+  let obj = require(6538) /* getIllustrationSource */;
   obj = {
     dark() {
-      return outer1_0(outer1_1[4]);
+      return callback(13834);
     },
     darker() {
-      return outer1_0(outer1_1[5]);
+      return callback(13835);
     },
     light() {
-      return outer1_0(outer1_1[6]);
+      return callback(13836);
     }
   };
   return obj.getIllustrationSource(theme, obj);
-}
-function useBlockedSource() {
-  return getBlockedSource(require(4011) /* AccessibilityAnnouncer */.useThemeContext().theme);
-}
-const result = require("jsxProd").fileFinishedImporting("design/components/Illustration/native/redesign/generated/Blocked.tsx");
-
-export { getBlockedSource };
-export { useBlockedSource };
+};
+export const useBlockedSource = function useBlockedSource() {
+  let obj = require(4035) /* AccessibilityAnnouncer */;
+  obj = {
+    dark() {
+      return callback(13834);
+    },
+    darker() {
+      return callback(13835);
+    },
+    light() {
+      return callback(13836);
+    }
+  };
+  return require(6538) /* getIllustrationSource */.getIllustrationSource(obj.useThemeContext().theme, obj);
+};
 export const Blocked = function Blocked(arg0) {
-  const obj = {};
+  let obj = require(4035) /* AccessibilityAnnouncer */;
+  obj = {
+    dark() {
+      return callback(13834);
+    },
+    darker() {
+      return callback(13835);
+    },
+    light() {
+      return callback(13836);
+    }
+  };
+  obj = {};
+  const illustrationSource = require(6538) /* getIllustrationSource */.getIllustrationSource(obj.useThemeContext().theme, obj);
   const merged = Object.assign(arg0);
-  obj["source"] = useBlockedSource();
+  obj.source = illustrationSource;
   return <Image />;
 };

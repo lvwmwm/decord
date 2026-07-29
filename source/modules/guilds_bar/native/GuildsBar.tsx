@@ -1,17 +1,18 @@
-// Module ID: 14913
-// Function ID: 113589
-// Dependencies: [31, 33, 4165, 477, 10237, 14914, 14924, 14993, 10872, 5251, 5550, 7655, 14994, 2]
+// Module ID: 14939
+// Function ID: 14940
+// Dependencies: [19, 21, 4189, 500, 10258, 14940, 14950, 15019, 10896, 5273, 5568, 7678, 15020, 2]
 
-// Module 14913
-import importAllResult from "result";
+// Module 14939
+import importAllResult from "noop";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_4;
-let closure_5;
+let c4;
+let c5;
 const require = arg1;
-({ jsx: closure_4, jsxs: closure_5 } = jsxProd);
-let closure_6 = _createForOfIteratorHelperLoose.createStyles({ wrapper: { position: "relative", overflow: "visible", flex: 1 } });
+let c3 = importAllResult;
+({ jsx: c4, jsxs: c5 } = jsxProd);
+let closure_6 = createCacheKey.createStyles({ wrapper: { position: "relative", overflow: "visible", flex: 1 } });
 const memoResult = importAllResult.memo(function GuildsBar(enableHome) {
   let gesture;
   let listDataProps;
@@ -25,103 +26,98 @@ const memoResult = importAllResult.memo(function GuildsBar(enableHome) {
   if (flag === undefined) {
     flag = false;
   }
-  let fastListRef;
-  const tmp2 = importDefault(14914)();
-  fastListRef = tmp2.fastListRef;
-  ({ scrollPosition, gesture, scrollerRef, persistantKeys, onFastListScroll, onFastListScrollWorklet } = tmp2);
-  const tmp = callback2();
-  ({ listProps, listDataProps } = importDefault(14924)(fastListRef));
-  let items = [fastListRef];
-  let effect = importAllResult.useEffect(() => {
-    const result = fastListRef(outer1_2[7]).registerGuildVisibilityMethod(fastListRef);
+  listProps = undefined;
+  let tmp4 = fastListRef(14940)();
+  fastListRef = tmp4.fastListRef;
+  listProps = fastListRef;
+  ({ scrollPosition, gesture, scrollerRef, persistantKeys, onFastListScroll, onFastListScrollWorklet } = tmp4);
+  let tmp = callback();
+  const tmp2 = fastListRef;
+  ({ listProps, listDataProps } = fastListRef(14950)(fastListRef));
+  const items = [fastListRef];
+  const effect = importAllResult.useEffect(() => {
+    const result = listProps(ref[7]).registerGuildVisibilityMethod(listProps);
   }, items);
-  (function usePipResizeFix(listProps, fastListRef) {
-    let closure_0 = listProps;
-    let closure_1 = fastListRef;
-    let closure_2 = outer1_3.useRef(listProps);
-    let closure_3 = outer1_3.useRef(false);
-    const effect = outer1_3.useEffect(() => {
-      if (obj.isAndroid()) {
-        let closure_0 = outer2_1(outer2_2[4]).addOnPipModeChangedListener((arg0) => {
-          if (arg0) {
-            outer1_3.current = true;
-          }
-        });
-        return () => {
-          let removeResult;
-          if (null != closure_0) {
-            removeResult = closure_0.remove();
-          }
-          return removeResult;
-        };
+  let dependencyMap;
+  importAllResult = undefined;
+  dependencyMap = importAllResult.useRef(listProps);
+  importAllResult = importAllResult.useRef(false);
+  const effect1 = importAllResult.useEffect(() => {
+    if (obj.isAndroid()) {
+      let closure_0 = fastListRef(tmp[4]).addOnPipModeChangedListener((arg0) => {
+        if (arg0) {
+          closure_3.current = true;
+        }
+      });
+      return () => {
+        let removeResult;
+        if (closure_0 != null) {
+          removeResult = closure_0.remove();
+        }
+        return removeResult;
+      };
+    }
+    obj = listProps(ref[3]);
+    tmp = ref;
+  }, []);
+  const items1 = [fastListRef, listProps];
+  const effect2 = importAllResult.useEffect(() => {
+    const current = ref.current;
+    ref.current = listProps;
+    if (ref2.current) {
+      let num = tmp.chunkBase;
+      if (num == null) {
+        num = 0;
       }
-      obj = fastListRef(outer2_2[3]);
-    }, []);
-    const items = [fastListRef, listProps];
-    const effect1 = outer1_3.useEffect(() => {
-      const current = ref2.current;
-      ref2.current = listProps;
-      if (ref3.current) {
-        const chunkBase = listProps.chunkBase;
-        let num = 0;
-        if (null != chunkBase) {
-          num = chunkBase;
-        }
-        const chunkBase2 = current.chunkBase;
-        let num2 = 0;
-        if (null != chunkBase2) {
-          num2 = chunkBase2;
-        }
-        if (num > num2) {
-          ref3.current = false;
-          let tmp5 = listProps.insetStart === current.insetStart;
-          if (tmp5) {
-            tmp5 = listProps.insetEnd === current.insetEnd;
-          }
-          if (tmp5) {
-            const current2 = ref.current;
-            if (null != current2) {
-              const blocks = current2.computeBlocks();
-            }
-          }
-        }
+      let num2 = current.chunkBase;
+      if (num2 == null) {
+        num2 = 0;
       }
-    }, items);
-  })(listProps, fastListRef);
-  let obj = {};
-  const tmp3 = importDefault(14924)(fastListRef);
-  obj.profile = fastListRef(10872).Profiles.Guilds;
-  obj = { gesture };
-  obj = { style: tmp.wrapper, collapsable: false, nativeID: "guilds-bar-view" };
-  const tmp7 = importDefault(10872);
-  const tmp8 = closure_5;
+      if (num > num2) {
+        tmp2.current = false;
+        if (tmp4) {
+          const current2 = fastListRef.current;
+          if (current2 != null) {
+            const blocks = current2.computeBlocks();
+          }
+        }
+        tmp4 = tmp.insetStart === current.insetStart && tmp.insetEnd === current.insetEnd;
+      }
+    }
+  }, items1);
+  let obj = { profile: null, children: null };
+  const tmp5 = fastListRef(14950)(fastListRef);
+  obj[0] = listProps(10896).Profiles.Guilds;
+  obj = { gesture, children: null };
+  obj = { style: tmp.wrapper, collapsable: false, nativeID: "guilds-bar-view", children: null };
+  const tmp10 = fastListRef(10896);
+  const tmp11 = closure_5;
   const obj1 = {};
-  const tmp9 = importDefault(5550);
+  const tmp12 = fastListRef(5568);
   const merged = Object.assign(listProps);
   const merged1 = Object.assign(listDataProps);
-  obj1["ref"] = fastListRef;
-  obj1["manualRef"] = scrollerRef;
-  obj1["disableContentWrappers"] = true;
-  obj1["onScroll"] = onFastListScroll;
-  obj1["onScrollWorklet"] = onFastListScrollWorklet;
-  obj1["scrollPosValue"] = scrollPosition;
-  obj1["stickySectionsVariant"] = "sticky-mount";
-  obj1["optimizeListItemRender"] = true;
-  obj1["persistantKeys"] = persistantKeys;
-  obj1["disableRecyclingOnFullCompute"] = true;
-  let tmp13;
+  obj1.ref = fastListRef;
+  obj1.manualRef = scrollerRef;
+  obj1.disableContentWrappers = true;
+  obj1.onScroll = onFastListScroll;
+  obj1.onScrollWorklet = onFastListScrollWorklet;
+  obj1.scrollPosValue = scrollPosition;
+  obj1.stickySectionsVariant = "sticky-mount";
+  obj1.optimizeListItemRender = true;
+  obj1.persistantKeys = persistantKeys;
+  obj1.disableRecyclingOnFullCompute = true;
+  let obj2;
   if (flag) {
-    const obj2 = { overflow: "visible" };
-    tmp13 = obj2;
+    obj2 = { overflow: "visible" };
   }
-  obj1["style"] = tmp13;
-  obj1["nativeID"] = "guilds-bar-fast-list";
-  const items1 = [callback(importDefault(7655), obj1), callback(importDefault(14994), {})];
-  obj.children = items1;
-  obj.children = tmp8(tmp9, obj);
-  obj.children = callback(fastListRef(5251).GestureDetector, obj);
-  return callback(tmp7, obj);
+  obj1.style = obj2;
+  obj1.nativeID = "guilds-bar-fast-list";
+  const items2 = [closure_4(fastListRef(7678), obj1), closure_4(tmp2(15020), {})];
+  obj[3] = items2;
+  obj[1] = tmp11(tmp12, obj);
+  obj[1] = closure_4(listProps(5273).GestureDetector, obj);
+  return closure_4(tmp10, obj);
 });
-let result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/guilds_bar/native/GuildsBar.tsx");
+let result = require("createCacheKey").fileFinishedImporting("modules/guilds_bar/native/GuildsBar.tsx");
 
 export default memoResult;

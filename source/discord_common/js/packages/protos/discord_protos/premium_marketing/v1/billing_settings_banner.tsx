@@ -1,265 +1,266 @@
-// Module ID: 6268
-// Function ID: 56211
-// Name: _isNativeReflectConstruct
-// Dependencies: [57, 6, 7, 15, 17, 18, 6258, 6250, 6248, 6249, 1284, 2]
+// Module ID: 6288
+// Function ID: 6289
+// Name: create
+// Dependencies: [32, 1307, 6278, 6270, 6268, 6269, 2]
 
-// Module 6268 (_isNativeReflectConstruct)
+// Module 6288 (create)
 import _slicedToArray from "_slicedToArray";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_4 from "_isNativeReflectConstruct";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
+import { MessageType } from "module_1307";
 
 const require = arg1;
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
+class BillingSettingsBanner$Type extends MessageType {
+  constructor() {
+    items = [, , , , , , ];
+    items[0] = { no: 1, name: "header", kind: "scalar", T: 9 };
+    items[1] = { no: 2, name: "body", kind: "scalar", T: 9 };
+    items[2] = {
+      no: 3,
+      name: "asset",
+      kind: "message",
+      T() {
+            return callback(6278).ThemeAwareAsset;
+          }
+    };
+    items[3] = {
+      no: 4,
+      name: "button",
+      kind: "message",
+      T() {
+            return callback(6270).CTAButton;
+          }
+    };
+    items[4] = {
+      no: 5,
+      name: "header_localized",
+      kind: "message",
+      T() {
+            return callback(6268).LocalizedString;
+          }
+    };
+    obj = { no: 6, name: "body_localized", kind: "message", T: null };
+    class T {
+      constructor() {
+        return require("create").LocalizedString;
+      }
+    }
+    obj[3] = T;
+    items[5] = obj;
+    items[6] = {
+      no: 7,
+      name: "help_article",
+      kind: "message",
+      T() {
+            return callback(6269).HelpArticle;
+          }
+    };
+    tmp = new tmp("discord_protos.premium_marketing.v1.BillingSettingsBanner", items, T);
+    // ThrowIfThisInitialized (0x7c)
+    return tmp;
   }
-  const result = _isNativeReflectConstruct();
 }
-let tmp2 = ((MessageType) => {
-  class BillingSettingsBanner$Type {
-    constructor() {
-      self = this;
-      tmp = outer1_3(this, BillingSettingsBanner$Type);
-      items = [, , , , , , ];
-      items[0] = { no: 1, name: "header", kind: "scalar", T: 9 };
-      items[1] = { no: 2, name: "body", kind: "scalar", T: 9 };
-      obj = { no: 3, name: "asset", kind: "message" };
-      obj.T = function T() {
-        return BillingSettingsBanner$Type(outer2_1[6]).ThemeAwareAsset;
-      };
-      items[2] = obj;
-      obj = { no: 4, name: "button", kind: "message" };
-      obj.T = function T() {
-        return BillingSettingsBanner$Type(outer2_1[7]).CTAButton;
-      };
-      items[3] = obj;
-      obj1 = { no: 5, name: "header_localized", kind: "message" };
-      obj1.T = function T() {
-        return BillingSettingsBanner$Type(outer2_1[8]).LocalizedString;
-      };
-      items[4] = obj1;
-      obj2 = { no: 6, name: "body_localized", kind: "message" };
-      obj2.T = function T() {
-        return BillingSettingsBanner$Type(outer2_1[8]).LocalizedString;
-      };
-      items[5] = obj2;
-      obj3 = { no: 7, name: "help_article", kind: "message" };
-      obj3.T = function T() {
-        return BillingSettingsBanner$Type(outer2_1[9]).HelpArticle;
-      };
-      items[6] = obj3;
-      items1 = ["discord_protos.premium_marketing.v1.BillingSettingsBanner"];
-      items1[1] = items;
-      obj6 = outer1_6(BillingSettingsBanner$Type);
-      tmp2 = outer1_5;
-      if (outer1_8()) {
-        tmp4 = globalThis;
-        _Reflect = Reflect;
-        tmp5 = outer1_6;
-        constructResult = Reflect.construct(obj6, items1, outer1_6(self).constructor);
-      } else {
-        constructResult = obj6.apply(self, items1);
-      }
-      return tmp2(self, constructResult);
-    }
+let prototype = BillingSettingsBanner$Type.prototype;
+prototype["create"] = function create(arr) {
+  let obj = { header: "", body: "" };
+  const _Object = Object;
+  obj = { enumerable: false, value: this };
+  _Object.defineProperty(obj, require(1307).MESSAGE_TYPE, obj);
+  if (undefined !== arr) {
+    const result = require(1307).reflectionMergePartial(this, obj, arr);
+    const tmpResult = require(1307);
   }
-  callback2(BillingSettingsBanner$Type, MessageType);
-  let obj = {
-    key: "create",
-    value(arr) {
-      let obj = { header: "", body: "" };
-      const _Object = Object;
-      obj = { enumerable: false, value: this };
-      _Object.defineProperty(obj, BillingSettingsBanner$Type(outer1_1[10]).MESSAGE_TYPE, obj);
-      if (undefined !== arr) {
-        const result = BillingSettingsBanner$Type(outer1_1[10]).reflectionMergePartial(this, obj, arr);
-        const obj3 = BillingSettingsBanner$Type(outer1_1[10]);
-      }
-      return obj;
-    }
-  };
-  let items = [obj, , ];
-  obj = {
-    key: "internalBinaryRead",
-    value(pos, arg1, readUnknownField) {
-      let tmp7;
-      let tmp8;
-      let obj = arg3;
-      const self = this;
-      if (null == arg3) {
-        obj = self.create();
-      }
-      const sum = pos.pos + arg1;
-      while (pos.pos < sum) {
-        let tmp5 = outer1_2;
-        let tmp6 = outer1_2(pos.tag(), 2);
-        [tmp7, tmp8] = tmp6;
-        if (1 === tmp7) {
-          obj.header = pos.string();
-          let tmp10 = tmp3;
-          let tmp11 = tmp4;
-        } else if (2 === tmp7) {
-          obj.body = pos.string();
-          tmp10 = tmp3;
-          tmp11 = tmp4;
-        } else if (3 === tmp7) {
-          let tmp46 = BillingSettingsBanner$Type;
-          let tmp47 = outer1_1;
-          let ThemeAwareAsset = BillingSettingsBanner$Type(outer1_1[6]).ThemeAwareAsset;
-          let tmp48 = ThemeAwareAsset;
-          let tmp49 = pos;
-          let tmp50 = readUnknownField;
-          obj.asset = ThemeAwareAsset.internalBinaryRead(pos, pos.uint32(), readUnknownField, obj.asset);
-          tmp10 = tmp3;
-          tmp11 = tmp4;
-        } else if (4 === tmp7) {
-          let tmp41 = BillingSettingsBanner$Type;
-          let tmp42 = outer1_1;
-          let CTAButton = BillingSettingsBanner$Type(outer1_1[7]).CTAButton;
-          let tmp43 = CTAButton;
-          let tmp44 = pos;
-          let tmp45 = readUnknownField;
-          obj.button = CTAButton.internalBinaryRead(pos, pos.uint32(), readUnknownField, obj.button);
-          tmp10 = tmp3;
-          tmp11 = tmp4;
-        } else if (5 === tmp7) {
-          let tmp36 = BillingSettingsBanner$Type;
-          let tmp37 = outer1_1;
-          let LocalizedString2 = BillingSettingsBanner$Type(outer1_1[8]).LocalizedString;
-          let tmp38 = LocalizedString2;
-          let tmp39 = pos;
-          let tmp40 = readUnknownField;
-          obj.headerLocalized = LocalizedString2.internalBinaryRead(pos, pos.uint32(), readUnknownField, obj.headerLocalized);
-          tmp10 = tmp3;
-          tmp11 = tmp4;
-        } else if (6 === tmp7) {
-          let tmp31 = BillingSettingsBanner$Type;
-          let tmp32 = outer1_1;
-          let LocalizedString = BillingSettingsBanner$Type(outer1_1[8]).LocalizedString;
-          let tmp33 = LocalizedString;
-          let tmp34 = pos;
-          let tmp35 = readUnknownField;
-          obj.bodyLocalized = LocalizedString.internalBinaryRead(pos, pos.uint32(), readUnknownField, obj.bodyLocalized);
-          tmp10 = tmp3;
-          tmp11 = tmp4;
-        } else if (7 === tmp7) {
-          let tmp26 = BillingSettingsBanner$Type;
-          let tmp27 = outer1_1;
-          let HelpArticle = BillingSettingsBanner$Type(outer1_1[9]).HelpArticle;
-          let tmp28 = HelpArticle;
-          let tmp29 = pos;
-          let tmp30 = readUnknownField;
-          obj.helpArticle = HelpArticle.internalBinaryRead(pos, pos.uint32(), readUnknownField, obj.helpArticle);
-          tmp10 = tmp3;
-          tmp11 = tmp4;
+  return obj;
+};
+prototype["internalBinaryRead"] = function internalBinaryRead(pos, arg1, readUnknownField) {
+  let tmp5;
+  let tmp6;
+  const self = this;
+  let obj = arg3;
+  if (arg3 == null) {
+    obj = self.create();
+  }
+  const sum = pos.pos + arg1;
+  if (pos.pos < sum) {
+    do {
+      let tmp3 = callback;
+      let tmp4 = callback(pos.tag(), 2);
+      [tmp5, tmp6] = tmp4;
+      if (1 === tmp5) {
+        obj.header = pos.string();
+      } else if (2 === tmp5) {
+        obj.body = pos.string();
+      } else if (3 === tmp5) {
+        let tmp42 = require;
+        let tmp43 = dependencyMap;
+        let ThemeAwareAsset = require(6278) /* create */.ThemeAwareAsset;
+        let tmp44 = ThemeAwareAsset;
+        let tmp45 = pos;
+        let tmp46 = readUnknownField;
+        obj.asset = ThemeAwareAsset.internalBinaryRead(pos, pos.uint32(), readUnknownField, obj.asset);
+      } else if (4 === tmp5) {
+        let tmp37 = require;
+        let tmp38 = dependencyMap;
+        let CTAButton = require(6270) /* create */.CTAButton;
+        let tmp39 = CTAButton;
+        let tmp40 = pos;
+        let tmp41 = readUnknownField;
+        obj.button = CTAButton.internalBinaryRead(pos, pos.uint32(), readUnknownField, obj.button);
+      } else if (5 === tmp5) {
+        let tmp32 = require;
+        let tmp33 = dependencyMap;
+        let LocalizedString2 = require(6268) /* create */.LocalizedString;
+        let tmp34 = LocalizedString2;
+        let tmp35 = pos;
+        let tmp36 = readUnknownField;
+        obj.headerLocalized = LocalizedString2.internalBinaryRead(pos, pos.uint32(), readUnknownField, obj.headerLocalized);
+      } else if (6 === tmp5) {
+        let tmp27 = require;
+        let tmp28 = dependencyMap;
+        let LocalizedString = require(6268) /* create */.LocalizedString;
+        let tmp29 = LocalizedString;
+        let tmp30 = pos;
+        let tmp31 = readUnknownField;
+        obj.bodyLocalized = LocalizedString.internalBinaryRead(pos, pos.uint32(), readUnknownField, obj.bodyLocalized);
+      } else if (7 === tmp5) {
+        let tmp22 = require;
+        let tmp23 = dependencyMap;
+        let HelpArticle = require(6269) /* create */.HelpArticle;
+        let tmp24 = HelpArticle;
+        let tmp25 = pos;
+        let tmp26 = readUnknownField;
+        obj.helpArticle = HelpArticle.internalBinaryRead(pos, pos.uint32(), readUnknownField, obj.helpArticle);
+      } else {
+        let onRead = readUnknownField.readUnknownField;
+        if ("throw" === onRead) {
+          let tmp15 = globalThis;
+          let _globalThis = globalThis;
+          let _HermesInternal = HermesInternal;
+          let str = ") for ";
+          let str2 = " (wire type ";
+          let str3 = "Unknown field ";
+          let tmp16 = tmp5;
+          let tmp17 = tmp6;
+          let tmp18 = new.target;
+          let tmp19 = new.target;
+          let error = new Error("Unknown field " + tmp5 + " (wire type " + tmp6 + ") for " + self.typeName);
+          let tmp21 = error;
+          throw error;
         } else {
-          readUnknownField = readUnknownField.readUnknownField;
-          if ("throw" === readUnknownField) {
-            let tmp19 = globalThis;
-            let _globalThis = globalThis;
-            let _Error = Error;
-            let _HermesInternal = HermesInternal;
-            let str = "Unknown field ";
-            let str2 = " (wire type ";
-            let str3 = ") for ";
-            let tmp20 = tmp7;
-            let tmp21 = tmp8;
-            let prototype = _Error.prototype;
-            let tmp22 = new.target;
-            let tmp23 = new.target;
-            _Error = new _Error("Unknown field " + tmp7 + " (wire type " + tmp8 + ") for " + self.typeName);
-            let tmp25 = _Error;
-            throw _Error;
-          } else {
-            let skipResult = pos.skip(tmp8);
-            tmp10 = readUnknownField;
-            tmp11 = skipResult;
-            if (false !== readUnknownField) {
-              let onRead = readUnknownField;
-              if (true === readUnknownField) {
-                let tmp12 = BillingSettingsBanner$Type;
-                let tmp13 = outer1_1;
-                onRead = BillingSettingsBanner$Type(outer1_1[10]).UnknownFieldHandler.onRead;
-              }
-              let tmp14 = obj;
-              let tmp15 = tmp7;
-              let tmp16 = tmp8;
-              let tmp17 = skipResult;
-              let onReadResult = onRead(self.typeName, obj, tmp7, tmp8, skipResult);
-              tmp10 = readUnknownField;
-              tmp11 = skipResult;
+          let skipResult = pos.skip(tmp6);
+          if (false !== onRead) {
+            if (true === onRead) {
+              let tmp8 = require;
+              let tmp9 = dependencyMap;
+              onRead = require(1307).UnknownFieldHandler.onRead;
             }
+            let tmp10 = obj;
+            let tmp11 = tmp5;
+            let tmp12 = tmp6;
+            let tmp13 = skipResult;
+            let onReadResult = onRead(self.typeName, obj, tmp5, tmp6, skipResult);
           }
         }
-        tmp3 = tmp10;
-        tmp4 = tmp11;
       }
-      return obj;
+    } while (pos.pos < sum);
+  }
+  return obj;
+};
+prototype["internalBinaryWrite"] = function internalBinaryWrite(header, tag, writeUnknownFields) {
+  if ("" !== header.header) {
+    tag.tag(1, require(1307).WireType.LengthDelimited).string(header.header);
+    const tagResult = tag.tag(1, require(1307).WireType.LengthDelimited);
+  }
+  if ("" !== header.body) {
+    tag.tag(2, require(1307).WireType.LengthDelimited).string(header.body);
+    const tagResult1 = tag.tag(2, require(1307).WireType.LengthDelimited);
+  }
+  if (header.asset) {
+    const ThemeAwareAsset = require(6278) /* create */.ThemeAwareAsset;
+    const tagResult2 = tag.tag(3, require(1307).WireType.LengthDelimited);
+    const joined = ThemeAwareAsset.internalBinaryWrite(header.asset, tag.tag(3, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields).join();
+    const internalBinaryWriteResult = ThemeAwareAsset.internalBinaryWrite(header.asset, tag.tag(3, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields);
+  }
+  if (header.button) {
+    const CTAButton = require(6270) /* create */.CTAButton;
+    const tagResult3 = tag.tag(4, require(1307).WireType.LengthDelimited);
+    const joined1 = CTAButton.internalBinaryWrite(header.button, tag.tag(4, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields).join();
+    const internalBinaryWriteResult1 = CTAButton.internalBinaryWrite(header.button, tag.tag(4, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields);
+  }
+  if (header.headerLocalized) {
+    const LocalizedString = require(6268) /* create */.LocalizedString;
+    const tagResult4 = tag.tag(5, require(1307).WireType.LengthDelimited);
+    const joined2 = LocalizedString.internalBinaryWrite(header.headerLocalized, tag.tag(5, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields).join();
+    const internalBinaryWriteResult2 = LocalizedString.internalBinaryWrite(header.headerLocalized, tag.tag(5, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields);
+  }
+  if (header.bodyLocalized) {
+    const LocalizedString2 = require(6268) /* create */.LocalizedString;
+    const tagResult5 = tag.tag(6, require(1307).WireType.LengthDelimited);
+    const joined3 = LocalizedString2.internalBinaryWrite(header.bodyLocalized, tag.tag(6, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields).join();
+    const internalBinaryWriteResult3 = LocalizedString2.internalBinaryWrite(header.bodyLocalized, tag.tag(6, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields);
+  }
+  if (header.helpArticle) {
+    const HelpArticle = require(6269) /* create */.HelpArticle;
+    const tagResult6 = tag.tag(7, require(1307).WireType.LengthDelimited);
+    const joined4 = HelpArticle.internalBinaryWrite(header.helpArticle, tag.tag(7, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields).join();
+    const internalBinaryWriteResult4 = HelpArticle.internalBinaryWrite(header.helpArticle, tag.tag(7, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields);
+  }
+  let onWrite = writeUnknownFields.writeUnknownFields;
+  if (false !== onWrite) {
+    if (1 == onWrite) {
+      onWrite = require(1307).UnknownFieldHandler.onWrite;
     }
-  };
-  items[1] = obj;
-  obj = {
-    key: "internalBinaryWrite",
-    value(header, tag, writeUnknownFields) {
-      if ("" !== header.header) {
-        tag.tag(1, BillingSettingsBanner$Type(outer1_1[10]).WireType.LengthDelimited).string(header.header);
-        const tagResult = tag.tag(1, BillingSettingsBanner$Type(outer1_1[10]).WireType.LengthDelimited);
-      }
-      if ("" !== header.body) {
-        tag.tag(2, BillingSettingsBanner$Type(outer1_1[10]).WireType.LengthDelimited).string(header.body);
-        const tagResult1 = tag.tag(2, BillingSettingsBanner$Type(outer1_1[10]).WireType.LengthDelimited);
-      }
-      if (header.asset) {
-        const ThemeAwareAsset = BillingSettingsBanner$Type(outer1_1[6]).ThemeAwareAsset;
-        const tagResult2 = tag.tag(3, BillingSettingsBanner$Type(outer1_1[10]).WireType.LengthDelimited);
-        const joined = ThemeAwareAsset.internalBinaryWrite(header.asset, tag.tag(3, BillingSettingsBanner$Type(outer1_1[10]).WireType.LengthDelimited).fork(), writeUnknownFields).join();
-        const internalBinaryWriteResult = ThemeAwareAsset.internalBinaryWrite(header.asset, tag.tag(3, BillingSettingsBanner$Type(outer1_1[10]).WireType.LengthDelimited).fork(), writeUnknownFields);
-      }
-      if (header.button) {
-        const CTAButton = BillingSettingsBanner$Type(outer1_1[7]).CTAButton;
-        const tagResult3 = tag.tag(4, BillingSettingsBanner$Type(outer1_1[10]).WireType.LengthDelimited);
-        const joined1 = CTAButton.internalBinaryWrite(header.button, tag.tag(4, BillingSettingsBanner$Type(outer1_1[10]).WireType.LengthDelimited).fork(), writeUnknownFields).join();
-        const internalBinaryWriteResult1 = CTAButton.internalBinaryWrite(header.button, tag.tag(4, BillingSettingsBanner$Type(outer1_1[10]).WireType.LengthDelimited).fork(), writeUnknownFields);
-      }
-      if (header.headerLocalized) {
-        const LocalizedString = BillingSettingsBanner$Type(outer1_1[8]).LocalizedString;
-        const tagResult4 = tag.tag(5, BillingSettingsBanner$Type(outer1_1[10]).WireType.LengthDelimited);
-        const joined2 = LocalizedString.internalBinaryWrite(header.headerLocalized, tag.tag(5, BillingSettingsBanner$Type(outer1_1[10]).WireType.LengthDelimited).fork(), writeUnknownFields).join();
-        const internalBinaryWriteResult2 = LocalizedString.internalBinaryWrite(header.headerLocalized, tag.tag(5, BillingSettingsBanner$Type(outer1_1[10]).WireType.LengthDelimited).fork(), writeUnknownFields);
-      }
-      if (header.bodyLocalized) {
-        const LocalizedString2 = BillingSettingsBanner$Type(outer1_1[8]).LocalizedString;
-        const tagResult5 = tag.tag(6, BillingSettingsBanner$Type(outer1_1[10]).WireType.LengthDelimited);
-        const joined3 = LocalizedString2.internalBinaryWrite(header.bodyLocalized, tag.tag(6, BillingSettingsBanner$Type(outer1_1[10]).WireType.LengthDelimited).fork(), writeUnknownFields).join();
-        const internalBinaryWriteResult3 = LocalizedString2.internalBinaryWrite(header.bodyLocalized, tag.tag(6, BillingSettingsBanner$Type(outer1_1[10]).WireType.LengthDelimited).fork(), writeUnknownFields);
-      }
-      if (header.helpArticle) {
-        const HelpArticle = BillingSettingsBanner$Type(outer1_1[9]).HelpArticle;
-        const tagResult6 = tag.tag(7, BillingSettingsBanner$Type(outer1_1[10]).WireType.LengthDelimited);
-        const joined4 = HelpArticle.internalBinaryWrite(header.helpArticle, tag.tag(7, BillingSettingsBanner$Type(outer1_1[10]).WireType.LengthDelimited).fork(), writeUnknownFields).join();
-        const internalBinaryWriteResult4 = HelpArticle.internalBinaryWrite(header.helpArticle, tag.tag(7, BillingSettingsBanner$Type(outer1_1[10]).WireType.LengthDelimited).fork(), writeUnknownFields);
-      }
-      let onWrite = writeUnknownFields.writeUnknownFields;
-      if (false !== onWrite) {
-        if (1 == onWrite) {
-          onWrite = BillingSettingsBanner$Type(outer1_1[10]).UnknownFieldHandler.onWrite;
-        }
-        const self = this;
-        onWrite(this.typeName, header, tag);
-      }
-      return tag;
+    const self = this;
+    onWrite(this.typeName, header, tag);
+  }
+  return tag;
+};
+let items = [
+  { no: 1, name: "header", kind: "scalar", T: 9 },
+  { no: 2, name: "body", kind: "scalar", T: 9 },
+  {
+    no: 3,
+    name: "asset",
+    kind: "message",
+    T() {
+      return callback(6278).ThemeAwareAsset;
     }
-  };
-  items[2] = obj;
-  return callback(BillingSettingsBanner$Type, items);
-})(require("module_1284").MessageType);
-tmp2 = new tmp2();
-let result = require("_defineProperties").fileFinishedImporting("../discord_common/js/packages/protos/discord_protos/premium_marketing/v1/billing_settings_banner.tsx");
+  },
+  {
+    no: 4,
+    name: "button",
+    kind: "message",
+    T() {
+      return callback(6270).CTAButton;
+    }
+  },
+  {
+    no: 5,
+    name: "header_localized",
+    kind: "message",
+    T() {
+      return callback(6268).LocalizedString;
+    }
+  },
+,
 
-export const BillingSettingsBanner = tmp2;
+];
+let obj = { no: 6, name: "body_localized", kind: "message", T: null };
+class T {
+  constructor() {
+    return require("create").LocalizedString;
+  }
+}
+obj[3] = T;
+items[5] = obj;
+items[6] = {
+  no: 7,
+  name: "help_article",
+  kind: "message",
+  T() {
+    return callback(6269).HelpArticle;
+  }
+};
+prototype = new prototype("discord_protos.premium_marketing.v1.BillingSettingsBanner", items, tmp, T, BillingSettingsBanner$Type, prototype, items);
+// ThrowIfThisInitialized (0x7c)
+let result = require("create").fileFinishedImporting("../discord_common/js/packages/protos/discord_protos/premium_marketing/v1/billing_settings_banner.tsx");
+
+export const BillingSettingsBanner = prototype;

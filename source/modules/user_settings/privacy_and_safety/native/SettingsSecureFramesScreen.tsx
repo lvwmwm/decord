@@ -1,28 +1,29 @@
-// Module ID: 14622
-// Function ID: 111423
+// Module ID: 14647
+// Function ID: 14648
 // Name: UserListItem
-// Dependencies: [31, 27, 1850, 653, 33, 4165, 689, 566, 14623, 4004, 7960, 5497, 8335, 5198, 1273, 1212, 5205, 3869, 1456, 14621, 4161, 6655, 8868, 2]
+// Dependencies: [19, 17, 1874, 676, 21, 4189, 712, 589, 14648, 4028, 7985, 5515, 8359, 5220, 1297, 1236, 5227, 3893, 1480, 14646, 4185, 6676, 8892, 2]
 // Exports: default
 
-// Module 14622 (UserListItem)
-import result from "result";
-import { View } from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 14647 (UserListItem)
+import useSecureFramesVerifiedUserIds from "useSecureFramesVerifiedUserIds";
+import { View } from "map";
+import mergeGuildAvatar from "mergeGuildAvatar";
 import { UserSettingsSections } from "ME";
-import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import jsxProd from "noop";
+import createCacheKey from "createCacheKey";
 
-let closure_7;
-let closure_8;
+let error;
+let metroImportAll;
 const require = arg1;
 function UserListItem(userId) {
   let end;
   let start;
   userId = userId.userId;
   const onPress = userId.onPress;
+  let analyticsLocations;
   ({ start, end } = userId);
   let obj = userId(analyticsLocations[7]);
-  const items = [_isNativeReflectConstruct];
+  const items = [mergeGuildAvatar];
   const stateFromStores = obj.useStateFromStores(items, () => outer1_5.getUser(userId));
   let obj1 = userId(analyticsLocations[8]);
   const secureFramesUserVerifiedKeys = obj1.useSecureFramesUserVerifiedKeys(userId);
@@ -40,23 +41,24 @@ function UserListItem(userId) {
   const callback1 = React.useCallback(() => {
     onPress(analyticsLocations[12])({ userId, sourceAnalyticsLocations: analyticsLocations });
   }, items3);
-  obj = {};
-  let tmp7 = null != stateFromStores;
-  if (tmp7) {
-    obj = { user: stateFromStores, guildId: undefined, size: userId(analyticsLocations[14]).AvatarSizes.REFRESH_MEDIUM_32 };
-    tmp7 = callback(userId(analyticsLocations[14]).Avatar, obj);
+  let tmp8Result = null != stateFromStores;
+  if (tmp8Result) {
+    obj = { user: null, guildId: "Array", size: 2086900762484230000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 };
+    obj[0] = stateFromStores;
+    obj[2] = tmp(tmp2[14]).AvatarSizes.REFRESH_MEDIUM_32;
+    tmp8Result = tmp8(tmp(tmp2[14]).Avatar, obj);
   }
-  obj.icon = tmp7;
-  const intl = userId(analyticsLocations[15]).intl;
+  obj = { icon: tmp8Result, subLabel: null, label: null, start: null, end: null, onPress: null, onLongPress: null, trailing: null };
+  const intl = tmp(tmp2[15]).intl;
   obj1 = { count: secureFramesUserVerifiedKeys.length };
-  obj.subLabel = intl.formatToPlainString(userId(analyticsLocations[15]).t["/MBjYF"], obj1);
-  obj.label = formattedName;
-  obj.start = start;
-  obj.end = end;
-  obj.onPress = callback;
-  obj.onLongPress = callback1;
-  obj.trailing = callback(userId(analyticsLocations[16]).TableRowArrow, {});
-  return callback(userId(analyticsLocations[13]).TableRow, obj);
+  obj[1] = intl.formatToPlainString(userId(analyticsLocations[15]).t["/MBjYF"], obj1);
+  obj[2] = formattedName;
+  obj[3] = start;
+  obj[4] = end;
+  obj[5] = callback;
+  obj[6] = callback1;
+  obj[7] = closure_7(userId(analyticsLocations[16]).TableRowArrow, {});
+  return closure_7(userId(analyticsLocations[13]).TableRow, obj);
 }
 function renderItem(item) {
   item = item.item;
@@ -84,57 +86,65 @@ function SettingsSecureFramesFooter() {
   let obj2 = navigation(secureFramesVerifiedUserIds[19]);
   secureFramesVerifiedUserIds = obj2.useSecureFramesVerifiedUserIds();
   const items1 = [callback, secureFramesVerifiedUserIds];
-  let tmp6 = null;
+  let tmp8 = null;
   if (0 !== secureFramesVerifiedUserIds.length) {
-    obj = { style: tmp.list };
-    obj = { variant: "text-sm/semibold", color: "text-default" };
-    const intl = navigation(secureFramesVerifiedUserIds[15]).intl;
-    obj.children = intl.string(navigation(secureFramesVerifiedUserIds[15]).t["5b3FNI"]);
-    const items2 = [callback(navigation(secureFramesVerifiedUserIds[20]).Text, obj), , ];
-    obj1 = {};
-    obj2 = { minHeight: secureFramesVerifiedUserIds.length * token };
-    obj1.style = obj2;
-    const obj3 = { keyExtractor, getItemType, renderItem, data: tmp5 };
-    obj1.children = callback(navigation(secureFramesVerifiedUserIds[21]).FlashList, obj3);
+    obj = { style: null, children: null };
+    obj[0] = tmp.list;
+    obj = { variant: "text-sm/semibold", color: "text-default", children: null };
+    const intl = tmp2(tmp3[15]).intl;
+    obj[2] = intl.string(tmp2(tmp3[15]).t["5b3FNI"]);
+    const items2 = [callback(tmp2(tmp3[20]).Text, obj), , ];
+    obj1 = { style: null, children: null };
+    obj2 = { minHeight: null };
+    obj2[0] = secureFramesVerifiedUserIds.length * token;
+    obj1[0] = obj2;
+    const obj3 = { keyExtractor: null, getItemType: null, renderItem: null, data: null };
+    obj3[0] = keyExtractor;
+    obj3[1] = getItemType;
+    obj3[2] = renderItem;
+    obj3[3] = tmp7;
+    obj1[1] = callback(tmp2(tmp3[21]).FlashList, obj3);
     items2[1] = callback(View, obj1);
-    const obj4 = { variant: "text-xs/normal", color: "text-default" };
-    const intl2 = navigation(secureFramesVerifiedUserIds[15]).intl;
-    const obj5 = { helpArticle: navigation(secureFramesVerifiedUserIds[22]).getSecureFramesVerifiedDevicesHelpdeskArticle() };
-    obj4.children = intl2.format(navigation(secureFramesVerifiedUserIds[15]).t["7w9ymD"], obj5);
-    items2[2] = callback(navigation(secureFramesVerifiedUserIds[20]).Text, obj4);
-    obj.children = items2;
-    tmp6 = callback2(View, obj);
-    const obj11 = navigation(secureFramesVerifiedUserIds[22]);
+    const obj4 = { variant: "text-xs/normal", color: "text-default", children: null };
+    const intl2 = tmp2(tmp3[15]).intl;
+    const obj5 = { helpArticle: null };
+    obj5[0] = tmp2(tmp3[22]).getSecureFramesVerifiedDevicesHelpdeskArticle();
+    obj4[2] = intl2.format(tmp2(tmp3[15]).t["7w9ymD"], obj5);
+    items2[2] = callback(tmp2(tmp3[20]).Text, obj4);
+    obj[1] = items2;
+    tmp8 = callback2(View, obj);
+    const tmp2Result = tmp2(tmp3[22]);
   }
-  return tmp6;
+  return tmp8;
 }
-({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { flexGrow: 1, paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16, gap: require("_createForOfIteratorHelperLoose").space.PX_16 };
-_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.header = { marginTop: require("_createForOfIteratorHelperLoose").space.PX_24, gap: require("_createForOfIteratorHelperLoose").space.PX_8 };
-let obj1 = { marginTop: require("_createForOfIteratorHelperLoose").space.PX_24, gap: require("_createForOfIteratorHelperLoose").space.PX_8 };
-_createForOfIteratorHelperLoose.list = { flexGrow: 1, gap: require("_createForOfIteratorHelperLoose").space.PX_8 };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+({ jsx: error, jsxs: metroImportAll } = jsxProd);
+createCacheKey = { container: null, header: null, list: null };
+createCacheKey = { flexGrow: 1, paddingHorizontal: require("Themes").space.PX_16, gap: require("Themes").space.PX_16 };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { marginTop: require("Themes").space.PX_24, gap: require("Themes").space.PX_8 };
+let obj1 = { marginTop: require("Themes").space.PX_24, gap: require("Themes").space.PX_8 };
+createCacheKey[2] = { flexGrow: 1, gap: require("Themes").space.PX_8 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
 let closure_10 = { USER: "USER" };
-let obj2 = { flexGrow: 1, gap: require("_createForOfIteratorHelperLoose").space.PX_8 };
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/user_settings/privacy_and_safety/native/SettingsSecureFramesScreen.tsx");
+let obj2 = { flexGrow: 1, gap: require("Themes").space.PX_8 };
+const result = require("mergeGuildAvatar").fileFinishedImporting("modules/user_settings/privacy_and_safety/native/SettingsSecureFramesScreen.tsx");
 
 export default function SettingsSecureFramesScreen() {
-  const tmp = _createForOfIteratorHelperLoose();
-  let obj = { style: tmp.container };
-  obj = { style: tmp.header };
-  obj = { variant: "heading-md/semibold", color: "mobile-text-heading-primary" };
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj.children = intl.string(require(1212) /* getSystemLocale */.t["9Q/PQv"]);
-  const items = [callback(require(4161) /* Text */.Text, obj), ];
-  const obj1 = { variant: "text-sm/normal", color: "text-default" };
-  const intl2 = require(1212) /* getSystemLocale */.intl;
-  const obj2 = { helpArticle: require(8868) /* _createForOfIteratorHelperLoose */.getSecureFramesHelpdeskArticle() };
-  obj1.children = intl2.format(require(1212) /* getSystemLocale */.t["8IwQfG"], obj2);
-  items[1] = callback(require(4161) /* Text */.Text, obj1);
-  obj.children = items;
+  const tmp = createCacheKey();
+  let obj = { style: tmp.container, children: null };
+  obj = { style: tmp.header, children: null };
+  obj = { variant: "heading-md/semibold", color: "mobile-text-heading-primary", children: null };
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj[2] = intl.string(require(1236) /* getSystemLocale */.t["9Q/PQv"]);
+  const items = [callback(require(4185) /* Text */.Text, obj), ];
+  const obj1 = { variant: "text-sm/normal", color: "text-default", children: null };
+  const intl2 = require(1236) /* getSystemLocale */.intl;
+  const obj2 = { helpArticle: null };
+  obj2[0] = require(8892) /* getCurrentUserSigningKey */.getSecureFramesHelpdeskArticle();
+  obj1[2] = intl2.format(require(1236) /* getSystemLocale */.t["8IwQfG"], obj2);
+  items[1] = callback(require(4185) /* Text */.Text, obj1);
+  obj[1] = items;
   const items1 = [callback2(View, obj), callback(SettingsSecureFramesFooter, {})];
-  obj.children = items1;
+  obj[1] = items1;
   return callback2(View, obj);
 };

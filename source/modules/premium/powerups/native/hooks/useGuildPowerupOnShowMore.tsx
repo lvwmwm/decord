@@ -1,11 +1,11 @@
-// Module ID: 11634
-// Function ID: 90286
+// Module ID: 11658
+// Function ID: 11659
 // Name: useGuildPowerupOnShowMore
-// Dependencies: [31, 11585, 2]
+// Dependencies: [19, 11609, 2]
 // Exports: default
 
-// Module 11634 (useGuildPowerupOnShowMore)
-import result from "result";
+// Module 11658 (useGuildPowerupOnShowMore)
+import noop from "noop";
 
 const result = require("set").fileFinishedImporting("modules/premium/powerups/native/hooks/useGuildPowerupOnShowMore.tsx");
 
@@ -15,7 +15,9 @@ export default function useGuildPowerupOnShowMore(arg0, arg1) {
   const items = [arg0, arg1];
   return React.useCallback(() => {
     if (null != table) {
-      const obj = { guildId: callback, powerup: table };
+      const obj = { guildId: null, powerup: null };
+      obj[0] = callback;
+      obj[1] = tmp;
       callback(table[1])(obj);
     }
   }, items);

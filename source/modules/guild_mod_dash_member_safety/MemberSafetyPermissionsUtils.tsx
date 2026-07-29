@@ -1,70 +1,74 @@
-// Module ID: 6044
-// Function ID: 53722
+// Module ID: 6062
+// Function ID: 6063
 // Name: getContextForPermission
-// Dependencies: [57, 1391, 1838, 3793, 1850, 3797, 653, 483, 3798, 566, 2]
-// Exports: canBulkBanUser, canPruneGuildMembers, useCanAccessBulkBanningFeature, useCanAccessInviteCodeFeature, useCanBulkBanUser
+// Dependencies: [32, 1415, 1862, 3817, 1874, 3821, 676, 506, 3822, 589, 2]
+// Exports: canAccessMemberSafetyPage, canBulkBanUser, canPruneGuildMembers, getContextForPermission, hasBulkBanningPermissions, useCanAccessBulkBanningFeature, useCanAccessInviteCodeFeature, useCanAccessMemberSafetyPage, useCanBulkBanUser
 
-// Module 6044 (getContextForPermission)
+// Module 6062 (getContextForPermission)
 import _slicedToArray from "_slicedToArray";
-import { isGuildOwner } from "isGuildOwner";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_7 from "_isNativeReflectConstruct";
+import { isGuildOwner } from "GuildNSFWContentLevel";
+import createGuildRecordFromRust from "createGuildRecordFromRust";
+import getUncachedChannelPermissions from "getUncachedChannelPermissions";
+import mergeGuildAvatar from "mergeGuildAvatar";
 import { MemberSafetyPagePermissions as closure_8 } from "MemberSafetyPagePermissions";
 import ME from "ME";
 
-let closure_10;
-let closure_9;
+let c10;
+let c9;
 const require = arg1;
-function getContextForPermission(guildId, arg1) {
-  let tmp = arg1;
-  if (arg1 === undefined) {
-    const items = [closure_7, closure_8];
-    tmp = items;
-  }
-  const tmp4 = callback(tmp, 2);
-  const first = tmp4[0];
-  const guild = first.getGuild(guildId);
-  const currentUser = tmp4[1].getCurrentUser();
-}
-function canAccessMemberSafetyPage(guildId) {
-  let tmp = arg1;
-  if (arg1 === undefined) {
-    const items = [_createForOfIteratorHelperLoose, closure_7];
-    tmp = items;
-  }
-  getContextForPermission(guildId, tmp);
-  return false;
-}
-function hasBulkBanningPermissions(guildId) {
-  let tmp = arg1;
-  if (arg1 === undefined) {
-    const items = [_createForOfIteratorHelperLoose, closure_7];
-    tmp = items;
-  }
-  getContextForPermission(guildId, tmp);
-  return false;
-}
-function useCanAccessMemberSafetyPage(id) {
-  const _require = id;
-  let items = [_createForOfIteratorHelperLoose, closure_7];
-  const items1 = [id];
-  return _require(566).useStateFromStores(items, () => {
-    const items = [outer1_5, outer1_7];
-    outer1_12(closure_0, items);
-    return false;
-  }, items1);
-}
-({ GuildFeatures: closure_9, Permissions: closure_10 } = ME);
-const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/guild_mod_dash_member_safety/MemberSafetyPermissionsUtils.tsx");
+({ GuildFeatures: c9, Permissions: c10 } = ME);
+const result = require("createGuildRecordFromRust").fileFinishedImporting("modules/guild_mod_dash_member_safety/MemberSafetyPermissionsUtils.tsx");
 
-export { getContextForPermission };
-export { canAccessMemberSafetyPage };
-export { hasBulkBanningPermissions };
+export const getContextForPermission = function getContextForPermission(arg0, arg1) {
+  let obj;
+  let obj2;
+  let tmp = arg1;
+  if (arg1 === undefined) {
+    const items = [mergeGuildAvatar, closure_8];
+    tmp = items;
+  }
+  [obj, obj2] = callback(tmp, 2);
+  const guild = obj.getGuild(arg0);
+  const currentUser = obj2.getCurrentUser();
+};
+export const canAccessMemberSafetyPage = function canAccessMemberSafetyPage(arg0) {
+  let obj;
+  let obj2;
+  let tmp = arg1;
+  if (arg1 === undefined) {
+    const items = [createGuildRecordFromRust, mergeGuildAvatar];
+    tmp = items;
+  }
+  if (tmp === undefined) {
+    const items1 = [mergeGuildAvatar, closure_8];
+    tmp = items1;
+  }
+  [obj, obj2] = callback(tmp, 2);
+  const guild = obj.getGuild(arg0);
+  const currentUser = obj2.getCurrentUser();
+  return false;
+};
+export const hasBulkBanningPermissions = function hasBulkBanningPermissions(arg0) {
+  let obj;
+  let obj2;
+  let tmp = arg1;
+  if (arg1 === undefined) {
+    const items = [createGuildRecordFromRust, mergeGuildAvatar];
+    tmp = items;
+  }
+  if (tmp === undefined) {
+    const items1 = [mergeGuildAvatar, closure_8];
+    tmp = items1;
+  }
+  [obj, obj2] = callback(tmp, 2);
+  const guild = obj.getGuild(arg0);
+  const currentUser = obj2.getCurrentUser();
+  return false;
+};
 export const canPruneGuildMembers = function canPruneGuildMembers(guild, currentUser, callback1) {
   let obj = callback1;
   if (callback1 === undefined) {
-    obj = _isNativeReflectConstruct;
+    obj = getUncachedChannelPermissions;
   }
   const features = guild.features;
   if (features.has(constants.PRUNE_REQUIRES_ADMIN)) {
@@ -74,31 +78,59 @@ export const canPruneGuildMembers = function canPruneGuildMembers(guild, current
     }
     let canResult1 = canResult;
   } else {
-    canResult1 = obj.can(importAll(483).combine(constants2.MANAGE_GUILD, constants2.KICK_MEMBERS), guild);
-    const obj2 = importAll(483);
+    canResult1 = obj.can(importAll(506).combine(constants2.MANAGE_GUILD, constants2.KICK_MEMBERS), guild);
+    const obj2 = importAll(506);
   }
   return canResult1;
 };
-export { useCanAccessMemberSafetyPage };
-export const useCanAccessBulkBanningFeature = function useCanAccessBulkBanningFeature(id) {
+export const useCanAccessMemberSafetyPage = function useCanAccessMemberSafetyPage(id) {
   const _require = id;
-  let stateFromStores = useCanAccessMemberSafetyPage(id);
-  let items = [_createForOfIteratorHelperLoose, closure_7];
+  const items = [createGuildRecordFromRust, mergeGuildAvatar];
   const items1 = [id];
+  return _require(589).useStateFromStores(items, () => {
+    let obj;
+    let obj2;
+    const items = [outer1_5, outer1_7];
+    [obj, obj2] = outer1_3(items, 2);
+    const guild = obj.getGuild(closure_0);
+    const currentUser = obj2.getCurrentUser();
+    return false;
+  }, items1);
+};
+export const useCanAccessBulkBanningFeature = function useCanAccessBulkBanningFeature(arg0) {
+  const _require = arg0;
+  let items = [createGuildRecordFromRust, mergeGuildAvatar];
+  const items1 = [arg0];
+  let stateFromStores = _require(589).useStateFromStores(items, () => {
+    let obj;
+    let obj2;
+    const items = [outer1_5, outer1_7];
+    [obj, obj2] = outer1_3(items, 2);
+    const guild = obj.getGuild(closure_0);
+    const currentUser = obj2.getCurrentUser();
+    return false;
+  }, items1);
+  const obj = _require(589);
+  const items2 = [createGuildRecordFromRust, mergeGuildAvatar];
+  const items3 = [arg0];
   if (stateFromStores) {
-    stateFromStores = obj.useStateFromStores(items, () => {
+    stateFromStores = obj2.useStateFromStores(items2, () => {
+      let obj;
+      let obj2;
       const items = [outer1_5, outer1_7];
-      outer1_13(closure_0, items);
+      [obj, obj2] = outer1_3(items, 2);
+      const guild = obj.getGuild(closure_0);
+      const currentUser = obj2.getCurrentUser();
       return false;
-    }, items1);
+    }, items3);
   }
   return stateFromStores;
 };
 export const useCanAccessInviteCodeFeature = function useCanAccessInviteCodeFeature(arg0) {
   const _require = arg0;
-  const items = [_createForOfIteratorHelperLoose, _isNativeReflectConstruct];
+  const items = [createGuildRecordFromRust, getUncachedChannelPermissions];
   const items1 = [arg0];
-  return _require(566).useStateFromStores(items, () => {
+  return _require(589).useStateFromStores(items, () => {
     const guild = outer1_5.getGuild(closure_0);
     let canResult = null != guild;
     if (canResult) {
@@ -111,9 +143,9 @@ export const useCanBulkBanUser = function useCanBulkBanUser(arg0, arg1, arg2) {
   const _require = arg0;
   let closure_1 = arg1;
   const dependencyMap = arg2;
-  const items = [_isNativeReflectConstruct, _createForOfIteratorHelperLoose];
+  const items = [getUncachedChannelPermissions, createGuildRecordFromRust];
   const items1 = [arg1, arg0, arg2];
-  return _require(566).useStateFromStores(items, () => {
+  return _require(589).useStateFromStores(items, () => {
     const guild = outer1_5.getGuild(closure_0);
     let tmp2 = null != guild;
     if (tmp2) {
@@ -126,15 +158,15 @@ export const useCanBulkBanUser = function useCanBulkBanUser(arg0, arg1, arg2) {
     return tmp2;
   }, items1);
 };
-export const canBulkBanUser = function canBulkBanUser(guildId) {
-  let canManageUserResult = arg1;
-  guild = guild.getGuild(guildId);
-  let tmp3 = null != guild;
-  if (tmp3) {
-    if (canManageUserResult) {
-      canManageUserResult = _isNativeReflectConstruct.canManageUser(constants2.BAN_MEMBERS, arg2, guild);
+export const canBulkBanUser = function canBulkBanUser(arg0, arg1, user) {
+  guild = guild.getGuild(arg0);
+  let tmp2 = null != guild;
+  if (tmp2) {
+    let canManageUserResult = arg1;
+    if (arg1) {
+      canManageUserResult = getUncachedChannelPermissions.canManageUser(constants2.BAN_MEMBERS, user, guild);
     }
-    tmp3 = canManageUserResult;
+    tmp2 = canManageUserResult;
   }
-  return tmp3;
+  return tmp2;
 };

@@ -1,44 +1,44 @@
-// Module ID: 8291
-// Function ID: 66411
+// Module ID: 8315
+// Function ID: 8316
 // Name: getEventLocationIconSource
-// Dependencies: [8189, 8226, 4628, 8227, 2]
+// Dependencies: [8213, 8250, 4650, 8251, 2]
 // Exports: getEventLocationIconComponent, getEventLocationIconSource
 
-// Module 8291 (getEventLocationIconSource)
-const result = require("getThreadChannelIcon").fileFinishedImporting("modules/guild_scheduled_events/native/components/GuildEventUtils.tsx");
+// Module 8315 (getEventLocationIconSource)
+const result = require("getChannelIcon").fileFinishedImporting("modules/guild_scheduled_events/native/components/GuildEventUtils.tsx");
 
 export const getEventLocationIconSource = function getEventLocationIconSource(event, channel, stateFromStores2) {
   if (null != obj.getLocationFromEvent(event)) {
-    let tmp = importDefault(8226);
+    let tmp4 = importDefault(8250);
   } else {
-    tmp = null;
+    tmp4 = null;
     if (null != channel) {
-      const obj2 = require(4628) /* getThreadChannelIcon */;
+      const tmpResult = require(4650) /* getChannelIcon */;
       if (stateFromStores2) {
-        let channelIcon = obj2.getChannelIcon(channel);
+        let channelIcon = tmpResult.getChannelIcon(channel);
       } else {
-        channelIcon = obj2.getSimpleChannelIcon(channel);
+        channelIcon = tmpResult.getSimpleChannelIcon(channel);
       }
     }
   }
-  return tmp;
+  return tmp4;
 };
 export const getEventLocationIconComponent = function getEventLocationIconComponent(event, channel, stateFromStores1) {
   if (null != obj.getLocationFromEvent(event)) {
-    let LocationIcon = require(8227) /* LocationIcon */.LocationIcon;
+    let LocationIcon = tmp(8251).LocationIcon;
   } else {
     LocationIcon = null;
     if (null != channel) {
-      const obj2 = require(4628) /* getThreadChannelIcon */;
+      const tmpResult = tmp(4650);
       if (stateFromStores1) {
-        let channelIconComponent = obj2.getChannelIconComponent(channel);
+        let channelIconComponent = tmpResult.getChannelIconComponent(channel);
       } else {
-        channelIconComponent = obj2.getSimpleChannelIconComponent(channel);
+        channelIconComponent = tmpResult.getSimpleChannelIconComponent(channel);
       }
-      LocationIcon = null;
-      if (null != channelIconComponent) {
-        LocationIcon = channelIconComponent;
+      if (channelIconComponent == null) {
+        channelIconComponent = null;
       }
+      LocationIcon = channelIconComponent;
     }
   }
   return LocationIcon;

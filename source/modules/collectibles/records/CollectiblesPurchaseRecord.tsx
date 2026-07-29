@@ -1,95 +1,91 @@
-// Module ID: 5808
-// Function ID: 50846
-// Name: CollectiblesPurchaseRecord
-// Dependencies: [6, 7, 5783, 5784, 5782, 655, 653, 4206, 2]
+// Module ID: 5826
+// Function ID: 5827
+// Name: fromServer
+// Dependencies: [5801, 5802, 5800, 678, 676, 4230, 2]
 
-// Module 5808 (CollectiblesPurchaseRecord)
-import ME from "ME";
-import getPricesFromServer from "getPricesFromServer";
-import CollectiblesBundledProductRecord from "CollectiblesBundledProductRecord";
-import { createCollectiblesItemsFromServerResponse as closure_5 } from "_createForOfIteratorHelperLoose";
-import { CollectiblesVariantProductRecord as closure_6 } from "_callSuper";
-import { REWARD_CATEGORY_AND_REWARD_SKU_IDS as closure_7 } from "items";
+// Module 5826 (fromServer)
+import fromServer from "fromServer";
+import { createCollectiblesItemsFromServerResponse as closure_3 } from "createCollectiblesItemsFromServerResponse";
+import { CollectiblesVariantProductRecord as closure_4 } from "fromServer";
+import { REWARD_CATEGORY_AND_REWARD_SKU_IDS as closure_5 } from "items";
 import { PREMIUM_TYPE_NONE } from "ME";
 
-const tmp2 = (() => {
-  class CollectiblesPurchaseRecord {
-    constructor(arg0) {
-      tmp = outer1_2(this, CollectiblesPurchaseRecord);
-      ({ skuId: this.skuId, name: this.name, type: this.type, premiumType: this.premiumType, items: this.items, categorySkuId: this.categorySkuId, isCategoryReward: this.isCategoryReward, prices: this.prices, bundledProducts: this.bundledProducts, googleSkuIds: this.googleSkuIds, variants: this.variants, eligibleOffers: this.eligibleOffers, baseVariantName: this.baseVariantName, baseVariantSkuId: this.baseVariantSkuId, variantLabel: this.variantLabel, variantValue: this.variantValue, purchasedAt: this.purchasedAt, purchaseType: this.purchaseType, expiresAt: this.expiresAt } = arg0);
-      return;
-    }
+let prototype;
+prototype = function CollectiblesPurchaseRecord(arg0) {
+  ({ skuId: tmp.skuId, name: tmp.name, type: tmp.type, premiumType: tmp.premiumType, items: tmp.items, categorySkuId: tmp.categorySkuId, isCategoryReward: tmp.isCategoryReward, prices: tmp.prices, bundledProducts: tmp.bundledProducts, googleSkuIds: tmp.googleSkuIds, variants: tmp.variants, eligibleOffers: tmp.eligibleOffers, baseVariantName: tmp.baseVariantName, baseVariantSkuId: tmp.baseVariantSkuId, variantLabel: tmp.variantLabel, variantValue: tmp.variantValue, purchasedAt: tmp.purchasedAt, purchaseType: tmp.purchaseType, expiresAt: tmp.expiresAt } = arg0);
+  return Object.create(new.target.prototype);
+}.prototype;
+prototype["fromServer"] = function fromServer(sku_id) {
+  let base_variant_name;
+  let base_variant_sku_id;
+  let bundled_products;
+  let category_sku_id;
+  let eligible_offers;
+  let expires_at;
+  let google_sku_ids;
+  let name;
+  let premium_type;
+  let prices;
+  let purchase_type;
+  let purchased_at;
+  let type;
+  let variant_label;
+  let variant_value;
+  let variants;
+  sku_id = sku_id.sku_id;
+  ({ premium_type, bundled_products, variants, purchased_at, expires_at } = sku_id);
+  ({ type, name, category_sku_id, prices, base_variant_name, base_variant_sku_id, variant_label, variant_value, purchase_type } = sku_id);
+  const merged = Object.assign(sku_id, Object.create(null));
+  let tmp3 = null;
+  if (premium_type !== PREMIUM_TYPE_NONE) {
+    tmp3 = premium_type;
   }
-  const items = [
-    {
-      key: "fromServer",
-      value(sku_id) {
-        let base_variant_name;
-        let base_variant_sku_id;
-        let bundled_products;
-        let category_sku_id;
-        let expires_at;
-        let name;
-        let premium_type;
-        let prices;
-        let purchase_type;
-        let purchased_at;
-        let type;
-        let variant_label;
-        let variant_value;
-        let variants;
-        sku_id = sku_id.sku_id;
-        ({ premium_type, bundled_products, variants, purchased_at, expires_at } = sku_id);
-        let obj = { type: 0, sku_id: 0, name: 0, premium_type: 0, category_sku_id: 0, prices: 0, bundled_products: 0, variants: 0, base_variant_name: 0, base_variant_sku_id: 0, variant_label: 0, variant_value: 0, purchased_at: 0, purchase_type: 0, expires_at: 0 };
-        ({ type, name, category_sku_id, prices, base_variant_name, base_variant_sku_id, variant_label, variant_value, purchase_type } = sku_id);
-        Object.setPrototypeOf(null);
-        const merged = Object.assign(sku_id, obj);
-        let tmp3 = sku_id;
-        obj = { type, name, skuId: sku_id };
-        let tmp4 = null;
-        if (premium_type !== outer1_8) {
-          tmp4 = premium_type;
-        }
-        obj.premiumType = tmp4;
-        obj.categorySkuId = category_sku_id;
-        obj.isCategoryReward = outer1_7.some((rewardSkuId) => rewardSkuId.rewardSkuId === sku_id);
-        obj.prices = CollectiblesPurchaseRecord(outer1_1[7])(prices);
-        obj.items = outer1_5(merged.items);
-        let mapped;
-        if (null != bundled_products) {
-          mapped = bundled_products.map(outer1_4.fromServer);
-        }
-        obj.bundledProducts = mapped;
-        let mapped1;
-        if (null != variants) {
-          mapped1 = variants.map(outer1_6.fromServer);
-        }
-        obj.variants = mapped1;
-        ({ google_sku_ids: obj2.googleSkuIds, eligible_offers: obj2.eligibleOffers } = merged);
-        obj.baseVariantName = base_variant_name;
-        obj.baseVariantSkuId = base_variant_sku_id;
-        obj.variantLabel = variant_label;
-        obj.variantValue = variant_value;
-        obj.purchaseType = purchase_type;
-        let date = purchased_at;
-        if (null != purchased_at) {
-          const _Date = Date;
-          date = new Date(purchased_at);
-        }
-        obj.purchasedAt = date;
-        let date1 = null;
-        if (null != expires_at) {
-          const _Date2 = Date;
-          date1 = new Date(expires_at);
-        }
-        obj.expiresAt = date1;
-        tmp3 = new tmp3(obj);
-        return tmp3;
-      }
-    }
-  ];
-  return callback(CollectiblesPurchaseRecord, null, items);
-})();
-const result = require("CollectiblesBundledProductRecord").fileFinishedImporting("modules/collectibles/records/CollectiblesPurchaseRecord.tsx");
+  const someResult = closure_5.some((rewardSkuId) => rewardSkuId.rewardSkuId === sku_id);
+  let mapped;
+  const tmp5 = sku_id(4230)(prices);
+  if (bundled_products != null) {
+    mapped = bundled_products.map(fromServer.fromServer);
+  }
+  let mapped1;
+  if (variants != null) {
+    mapped1 = variants.map(fromServer2.fromServer);
+  }
+  let date = purchased_at;
+  ({ google_sku_ids, eligible_offers } = merged);
+  if (null != purchased_at) {
+    const _Date = Date;
+    date = new Date(purchased_at);
+  }
+  let date1 = null;
+  if (null != expires_at) {
+    const _Date2 = Date;
+    date1 = new Date(expires_at);
+  }
+  if (typeof prototype !== "find") {
+    HermesBuiltin.throwTypeError();
+  }
+  const obj = Object.create(prototype.prototype);
+  obj.skuId = sku_id;
+  obj.name = name;
+  obj.type = type;
+  obj.premiumType = tmp3;
+  obj.items = callback(merged.items);
+  obj.categorySkuId = category_sku_id;
+  obj.isCategoryReward = someResult;
+  obj.prices = tmp5;
+  obj.bundledProducts = mapped;
+  obj.googleSkuIds = google_sku_ids;
+  obj.variants = mapped1;
+  obj.eligibleOffers = eligible_offers;
+  obj.baseVariantName = base_variant_name;
+  obj.baseVariantSkuId = base_variant_sku_id;
+  obj.variantLabel = variant_label;
+  obj.variantValue = variant_value;
+  obj.purchasedAt = date;
+  obj.purchaseType = purchase_type;
+  obj.expiresAt = date1;
+  return obj;
+};
+const result = require("fromServer").fileFinishedImporting("modules/collectibles/records/CollectiblesPurchaseRecord.tsx");
 
-export default tmp2;
+export default prototype;

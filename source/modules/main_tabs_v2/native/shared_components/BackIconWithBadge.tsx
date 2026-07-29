@@ -1,18 +1,18 @@
-// Module ID: 15240
-// Function ID: 115872
+// Module ID: 15273
+// Function ID: 15274
 // Name: IconWithBadge
-// Dependencies: [31, 27, 5902, 33, 4165, 689, 566, 15231, 1273, 7945, 478, 5125, 5153, 4119, 2]
+// Dependencies: [19, 17, 5921, 21, 4189, 712, 589, 15264, 1297, 7970, 501, 5147, 5175, 4143, 2]
 // Exports: CloseIconWithBadgeOnSide, LeftBackIconWithBadge, SettingsLeftIconWithBadge
 
-// Module 15240 (IconWithBadge)
-import result from "result";
+// Module 15273 (IconWithBadge)
+import noop from "noop";
 import { View } from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import updateGuildUnreadSentinel from "updateGuildUnreadSentinel";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
 let closure_6;
-let closure_7;
+let error;
 const require = arg1;
 function IconWithBadge(includeNotificationsCount) {
   let flag = includeNotificationsCount.includeNotificationsCount;
@@ -21,17 +21,17 @@ function IconWithBadge(includeNotificationsCount) {
   }
   let _require;
   let memo;
-  const tmp = _createForOfIteratorHelperLoose();
-  let obj = _require(566);
-  const items = [_isNativeReflectConstruct];
-  const stateFromStores = obj.useStateFromStores(items, () => outer1_5.getTotalMentionCount());
+  const tmp = createCacheKey();
+  let obj = _require(589);
+  const items = [updateGuildUnreadSentinel];
+  const stateFromStores = obj.useStateFromStores(items, () => totalMentionCount.getTotalMentionCount());
   let num = 0;
   if (null != stateFromStores) {
     num = stateFromStores;
   }
   let num2 = 0;
   if (flag) {
-    num2 = memo(15231)().value;
+    num2 = memo(15264)().value;
   }
   const sum = num + num2;
   _require = sum;
@@ -48,47 +48,53 @@ function IconWithBadge(includeNotificationsCount) {
   const memo1 = React.useMemo(() => {
     if (0 !== _undefined) {
       const BADGE_PADDING = _undefined(outer1_2[8]).BADGE_PADDING;
-      const obj = { shape: _undefined(outer1_2[9]).CutoutShape.RoundedRect, x: 12 - BADGE_PADDING, y: 16 - BADGE_PADDING, width: memo + 2 * BADGE_PADDING, height: _undefined(outer1_2[8]).BADGE_SIZE + 2 * BADGE_PADDING, cornerRadius: (_undefined(outer1_2[8]).BADGE_SIZE + 2 * BADGE_PADDING) / 2 };
+      const obj = { shape: null, x: null, y: null, width: null, height: null, cornerRadius: null };
+      obj[0] = _undefined(outer1_2[9]).CutoutShape.RoundedRect;
+      obj[1] = 12 - BADGE_PADDING;
+      obj[2] = 16 - BADGE_PADDING;
+      obj[3] = memo + 2 * BADGE_PADDING;
+      obj[4] = _undefined(outer1_2[8]).BADGE_SIZE + 2 * BADGE_PADDING;
+      obj[5] = (_undefined(outer1_2[8]).BADGE_SIZE + 2 * BADGE_PADDING) / 2;
       return obj;
     }
   }, items2);
-  obj = {};
-  let obj2 = _require(478);
   obj = undefined;
-  if (obj2.isAndroid()) {
+  if (tmp2Result.isAndroid()) {
     obj = { height: 40, width: 40, paddingTop: 8, marginRight: -8 };
   }
-  obj.style = obj;
-  const obj1 = { style: tmp.backIcon };
-  obj2 = {};
+  obj = { style: obj, children: null };
+  const obj1 = { style: tmp.backIcon, children: null };
+  const tmp11 = closure_7;
+  tmp2Result = _require(501);
+  const tmp5 = memo;
   if (null != memo1) {
     const items3 = [memo1];
     let items4 = items3;
   } else {
     items4 = [];
   }
-  obj2.cutouts = items4;
-  const obj3 = { size: "md", style: tmp.backIcon, color: "interactive-text-default" };
-  obj2.children = callback(includeNotificationsCount.Icon, obj3);
-  const items5 = [callback(memo(7945), obj2), ];
-  let tmp12 = null;
+  const tmp5Result = memo(7970);
+  const items5 = [closure_6(tmp5Result, { cutouts: items4, children: closure_6(includeNotificationsCount.Icon, obj3) }), ];
+  let tmp9Result = null;
   if (sum > 0) {
-    const obj4 = { style: tmp.badgeWrapper };
-    const obj5 = { value: sum, maxValue: 99 };
-    obj4.children = callback(_require(1273).Badge, obj5);
-    tmp12 = callback(View, obj4);
+    const obj4 = { style: null, children: null };
+    obj4[0] = tmp.badgeWrapper;
+    const obj5 = { value: null, maxValue: 99 };
+    obj5[0] = sum;
+    obj4[1] = tmp9(tmp2(1297).Badge, obj5);
+    tmp9Result = tmp9(tmp10, obj4);
   }
-  items5[1] = tmp12;
-  obj1.children = items5;
-  obj.children = closure_7(View, obj1);
-  return callback(View, obj);
+  items5[1] = tmp9Result;
+  obj1[1] = items5;
+  obj[1] = tmp11(View, obj1);
+  return closure_6(View, obj);
 }
-({ jsx: closure_6, jsxs: closure_7 } = jsxProd);
-_createForOfIteratorHelperLoose = { badgeWrapper: { position: "absolute", top: 16, left: 12 }, backIcon: { height: 24, width: 24 } };
-_createForOfIteratorHelperLoose = { display: "flex", flexDirection: "row", alignItems: "center", gap: require("_createForOfIteratorHelperLoose").space.PX_4, borderRadius: require("_createForOfIteratorHelperLoose").modules.button.BORDER_RADIUS, padding: 7, backgroundColor: require("_createForOfIteratorHelperLoose").colors.CONTROL_OVERLAY_SECONDARY_BACKGROUND_DEFAULT };
-_createForOfIteratorHelperLoose.iconWithBadge = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/main_tabs_v2/native/shared_components/BackIconWithBadge.tsx");
+({ jsx: closure_6, jsxs: error } = jsxProd);
+createCacheKey = { badgeWrapper: { position: "absolute", top: 16, left: 12 }, backIcon: { height: 24, width: 24 }, iconWithBadge: null };
+createCacheKey = { display: "flex", flexDirection: "row", alignItems: "center", gap: require("Themes").space.PX_4, borderRadius: require("Themes").modules.button.BORDER_RADIUS, padding: 7, backgroundColor: require("Themes").colors.CONTROL_OVERLAY_SECONDARY_BACKGROUND_DEFAULT };
+createCacheKey[2] = createCacheKey;
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+const result = require("updateGuildUnreadSentinel").fileFinishedImporting("modules/main_tabs_v2/native/shared_components/BackIconWithBadge.tsx");
 
 export const BACK_ICON_WITH_BADGE_HIT_SLOP = { top: 8, bottom: 8, left: 8, right: 8 };
 export const SettingsLeftIconWithBadge = function SettingsLeftIconWithBadge(navigation) {
@@ -98,12 +104,12 @@ export const SettingsLeftIconWithBadge = function SettingsLeftIconWithBadge(navi
     flag = false;
   }
   const items = [navigation];
-  const obj = { includeNotificationsCount: flag };
+  const obj = { includeNotificationsCount: flag, Icon: null };
   if (React.useMemo(() => navigation.getState().index > 0, items)) {
-    obj.Icon = tmp3(5125).ArrowLargeLeftIcon;
+    obj[1] = tmp3(5147).ArrowLargeLeftIcon;
     let tmp5 = obj;
   } else {
-    obj.Icon = tmp3(5153).XSmallIcon;
+    obj[1] = tmp3(5175).XSmallIcon;
     tmp5 = obj;
   }
   return closure_6(IconWithBadge, tmp5);
@@ -113,19 +119,19 @@ export const LeftBackIconWithBadge = function LeftBackIconWithBadge(includeNotif
   if (flag === undefined) {
     flag = false;
   }
-  const obj = { includeNotificationsCount: flag, Icon: require(5125) /* ArrowLargeLeftIcon */.ArrowLargeLeftIcon };
-  return callback(IconWithBadge, obj);
+  return callback(IconWithBadge, { includeNotificationsCount: flag, Icon: require(5147) /* ArrowLargeLeftIcon */.ArrowLargeLeftIcon });
 };
 export const CloseIconWithBadgeOnSide = function CloseIconWithBadgeOnSide(count) {
   count = count.count;
-  let obj = { style: _createForOfIteratorHelperLoose().iconWithBadge };
-  const items = [callback(require(4119) /* XLargeIcon */.XLargeIcon, { size: "sm", color: "white" }), ];
-  let tmp3 = null;
+  let obj = { style: createCacheKey().iconWithBadge, children: null };
+  const items = [callback(require(4143) /* XLargeIcon */.XLargeIcon, { size: "sm", color: "white" }), ];
+  let tmp3Result = null;
   if (count > 0) {
-    obj = { value: count };
-    tmp3 = callback(require(1273) /* Button */.Badge, obj);
+    obj = { value: null };
+    obj[0] = count;
+    tmp3Result = callback(require(1297) /* Button */.Badge, obj);
   }
-  items[1] = tmp3;
-  obj.children = items;
+  items[1] = tmp3Result;
+  obj[1] = items;
   return closure_7(View, obj);
 };

@@ -1,11 +1,11 @@
-// Module ID: 4984
-// Function ID: 42567
+// Module ID: 5006
+// Function ID: 5007
 // Name: canJoinVoiceChannel
-// Dependencies: [1352, 653, 2]
+// Dependencies: [1376, 676, 2]
 // Exports: default
 
-// Module 4984 (canJoinVoiceChannel)
-import { isPrivate } from "_callSuper";
+// Module 5006 (canJoinVoiceChannel)
+import { isPrivate } from "createChannelRecord";
 import { BasicPermissions } from "ME";
 
 const result = require("set").fileFinishedImporting("modules/channel/canJoinVoiceChannel.tsx");

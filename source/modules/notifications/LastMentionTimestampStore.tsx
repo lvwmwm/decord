@@ -1,185 +1,232 @@
-// Module ID: 5109
-// Function ID: 44250
-// Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 1918, 4360, 1850, 686, 566, 2]
+// Module ID: 5131
+// Function ID: 5132
+// Name: initialize
+// Dependencies: [1942, 4385, 1874, 709, 589, 2]
 // Exports: trackMessageNotificationTimestamps
 
-// Module 5109 (_isNativeReflectConstruct)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_3 from "_isNativeReflectConstruct";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
-import closure_7 from "_isNativeReflectConstruct";
-import closure_8 from "_isNativeReflectConstruct";
-import closure_9 from "_isNativeReflectConstruct";
+// Module 5131 (initialize)
+import trackCommunicationDisabled from "trackCommunicationDisabled";
+import updateUserGuildSettingsInternal from "updateUserGuildSettingsInternal";
+import mergeGuildAvatar from "mergeGuildAvatar";
+import { Store } from "initialize";
 
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
-  }
-  const result = _isNativeReflectConstruct();
+let c5 = null;
+let c6 = null;
+let c7 = null;
+let c8 = null;
+let closure_9 = {};
+let closure_10 = {};
+let closure_11 = {};
+let closure_12 = {};
+class LastMentionTimestampStore extends Store {
 }
-let c10 = null;
-let c11 = null;
-let c12 = null;
-let c13 = null;
-let closure_14 = {};
-let closure_15 = {};
-let closure_16 = {};
-let closure_17 = {};
-let tmp2 = ((Store) => {
-  class LastMentionTimestampStore {
-    constructor() {
-      self = this;
-      tmp = outer1_2(this, LastMentionTimestampStore);
-      obj = outer1_5(LastMentionTimestampStore);
-      tmp2 = outer1_4;
-      if (outer1_18()) {
-        tmp6 = globalThis;
-        _Reflect = Reflect;
-        tmp7 = outer1_5;
-        tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, outer1_5(self).constructor);
-      } else {
-        tmp3 = arguments;
-        tmp4 = arguments;
-        constructResult = obj(...arguments);
-      }
-      return tmp2(self, constructResult);
-    }
+const prototype = LastMentionTimestampStore.prototype;
+prototype["initialize"] = function initialize() {
+  this.waitFor(trackCommunicationDisabled, updateUserGuildSettingsInternal, mergeGuildAvatar);
+};
+prototype["getGlobalStats"] = function getGlobalStats() {
+  let rounded = null;
+  if (null != c5) {
+    const _Math = Math;
+    const _Date = Date;
+    rounded = Math.floor((Date.now() - tmp) / 1000);
   }
-  callback2(LastMentionTimestampStore, Store);
-  let obj = {
-    key: "initialize",
-    value() {
-      this.waitFor(outer1_7, outer1_8, outer1_9);
+  const obj = { approx_seconds_since_last_notification: rounded, approx_seconds_since_last_mention: null, approx_seconds_since_last_role_mention: null, approx_seconds_since_last_everyone_mention: null };
+  let rounded1 = null;
+  if (null != c6) {
+    const _Math2 = Math;
+    const _Date2 = Date;
+    rounded1 = Math.floor((Date.now() - tmp4) / 1000);
+  }
+  obj[1] = rounded1;
+  let rounded2 = null;
+  if (null != c7) {
+    const _Math3 = Math;
+    const _Date3 = Date;
+    rounded2 = Math.floor((Date.now() - tmp7) / 1000);
+  }
+  obj[2] = rounded2;
+  let rounded3 = null;
+  if (null != c8) {
+    const _Math4 = Math;
+    const _Date4 = Date;
+    rounded3 = Math.floor((Date.now() - tmp10) / 1000);
+  }
+  obj[3] = rounded3;
+  return obj;
+};
+prototype["getStats"] = function getStats(arg0) {
+  let rounded = null;
+  if (null != c5) {
+    const _Math = Math;
+    const _Date = Date;
+    rounded = Math.floor((Date.now() - tmp) / 1000);
+  }
+  const obj = { approx_seconds_since_last_notification: rounded, approx_seconds_since_last_mention: null, approx_seconds_since_last_role_mention: null, approx_seconds_since_last_everyone_mention: null, approx_seconds_since_last_guild_notification: null, approx_seconds_since_last_guild_mention: null, approx_seconds_since_last_guild_role_mention: null, approx_seconds_since_last_guild_everyone_mention: null };
+  let rounded1 = null;
+  if (null != c6) {
+    const _Math2 = Math;
+    const _Date2 = Date;
+    rounded1 = Math.floor((Date.now() - tmp4) / 1000);
+  }
+  obj[1] = rounded1;
+  let rounded2 = null;
+  if (null != c7) {
+    const _Math3 = Math;
+    const _Date3 = Date;
+    rounded2 = Math.floor((Date.now() - tmp7) / 1000);
+  }
+  obj[2] = rounded2;
+  let rounded3 = null;
+  if (null != c8) {
+    const _Math4 = Math;
+    const _Date4 = Date;
+    rounded3 = Math.floor((Date.now() - tmp10) / 1000);
+  }
+  obj[3] = rounded3;
+  let tmp13 = null;
+  if (null != arg0) {
+    let rounded4 = null;
+    if (null != dependencyMap[arg0]) {
+      const _Math5 = Math;
+      const _Date5 = Date;
+      rounded4 = Math.floor((Date.now() - tmp15) / 1000);
     }
-  };
-  const items = [obj, , ];
-  obj = {
-    key: "getGlobalStats",
-    value() {
-      function age(outer1_10) {
-        let rounded = null;
-        if (null != outer1_10) {
-          const _Math = Math;
-          const _Date = Date;
-          rounded = Math.floor((Date.now() - outer1_10) / 1000);
-        }
-        return rounded;
-      }
-      return { approx_seconds_since_last_notification: age(outer1_10), approx_seconds_since_last_mention: age(outer1_11), approx_seconds_since_last_role_mention: age(outer1_12), approx_seconds_since_last_everyone_mention: age(outer1_13) };
+    tmp13 = rounded4;
+  }
+  obj[4] = tmp13;
+  let tmp18 = null;
+  if (null != arg0) {
+    let rounded5 = null;
+    if (null != dependencyMap2[arg0]) {
+      const _Math6 = Math;
+      const _Date6 = Date;
+      rounded5 = Math.floor((Date.now() - tmp20) / 1000);
     }
-  };
-  items[1] = obj;
-  obj = {
-    key: "getStats",
-    value(arg0) {
-      function age(outer1_10) {
-        let rounded = null;
-        if (null != outer1_10) {
-          const _Math = Math;
-          const _Date = Date;
-          rounded = Math.floor((Date.now() - outer1_10) / 1000);
-        }
-        return rounded;
-      }
-      const obj = { approx_seconds_since_last_notification: age(outer1_10), approx_seconds_since_last_mention: age(outer1_11), approx_seconds_since_last_role_mention: age(outer1_12), approx_seconds_since_last_everyone_mention: age(outer1_13) };
-      let ageResult = null;
-      if (null != arg0) {
-        ageResult = age(outer1_14[arg0]);
-      }
-      obj.approx_seconds_since_last_guild_notification = ageResult;
-      let ageResult1 = null;
-      if (null != arg0) {
-        ageResult1 = age(outer1_15[arg0]);
-      }
-      obj.approx_seconds_since_last_guild_mention = ageResult1;
-      let ageResult2 = null;
-      if (null != arg0) {
-        ageResult2 = age(outer1_17[arg0]);
-      }
-      obj.approx_seconds_since_last_guild_role_mention = ageResult2;
-      let ageResult3 = null;
-      if (null != arg0) {
-        ageResult3 = age(outer1_16[arg0]);
-      }
-      obj.approx_seconds_since_last_guild_everyone_mention = ageResult3;
-      return obj;
+    tmp18 = rounded5;
+  }
+  obj[5] = tmp18;
+  let tmp23 = null;
+  if (null != arg0) {
+    let rounded6 = null;
+    if (null != dependencyMap4[arg0]) {
+      const _Math7 = Math;
+      const _Date7 = Date;
+      rounded6 = Math.floor((Date.now() - tmp25) / 1000);
     }
-  };
-  items[2] = obj;
-  return callback(LastMentionTimestampStore, items);
-})(require("initialize").Store);
-tmp2 = new tmp2(require("dispatcher"), {
+    tmp23 = rounded6;
+  }
+  obj[6] = tmp23;
+  let tmp28 = null;
+  if (null != arg0) {
+    let rounded7 = null;
+    if (null != dependencyMap3[arg0]) {
+      const _Math8 = Math;
+      const _Date8 = Date;
+      rounded7 = Math.floor((Date.now() - tmp30) / 1000);
+    }
+    tmp28 = rounded7;
+  }
+  obj[7] = tmp28;
+  return obj;
+};
+const lastMentionTimestampStore = new LastMentionTimestampStore(require("dispatcher"), {
   CONNECTION_OPEN: function handleConnectionOpen() {
-    function isRecent(c10) {
-      let tmp = null != c10;
-      if (tmp) {
-        const _Date = Date;
-        tmp = Date.now() - c10 < 60000;
+    let tmp4 = null != c5;
+    if (tmp4) {
+      const _Date = Date;
+      tmp4 = Date.now() - tmp3 < 60000;
+    }
+    if (!tmp4) {
+      c5 = null;
+    }
+    let tmp7 = null != c6;
+    if (tmp7) {
+      const _Date2 = Date;
+      tmp7 = Date.now() - tmp6 < 60000;
+    }
+    if (!tmp7) {
+      c6 = null;
+    }
+    let tmp10 = null != c7;
+    if (tmp10) {
+      const _Date3 = Date;
+      tmp10 = Date.now() - tmp9 < 60000;
+    }
+    if (!tmp10) {
+      c7 = null;
+    }
+    let tmp13 = null != c8;
+    if (tmp13) {
+      const _Date4 = Date;
+      tmp13 = Date.now() - tmp12 < 60000;
+    }
+    if (!tmp13) {
+      c8 = null;
+    }
+    for (const key10037 in closure_9) {
+      let tmp19 = key10037;
+      let tmp20 = dependencyMap;
+      let tmp21 = dependencyMap[key10037];
+      let tmp15 = null != tmp21;
+      if (tmp15) {
+        let _Date5 = Date;
+        tmp15 = Date.now() - tmp21 < 60000;
       }
-      return tmp;
-    }
-    if (!isRecent(c10)) {
-      c10 = null;
-    }
-    if (!isRecent(c11)) {
-      c11 = null;
-    }
-    if (!isRecent(c12)) {
-      c12 = null;
-    }
-    if (!isRecent(c13)) {
-      c13 = null;
-    }
-    for (const key10016 in closure_14) {
-      let tmp11 = key10016;
-      let tmp12 = table;
-      if (isRecent(table[key10016])) {
+      if (tmp15) {
         continue;
       } else {
-        let tmp7 = table;
         delete tmp[tmp2];
         continue;
       }
       continue;
     }
-    for (const key10020 in closure_15) {
-      let tmp13 = key10020;
-      let tmp14 = table2;
-      if (isRecent(table2[key10020])) {
+    for (const key10045 in closure_10) {
+      let tmp22 = key10045;
+      let tmp23 = dependencyMap2;
+      let tmp24 = dependencyMap2[key10045];
+      let tmp16 = null != tmp24;
+      if (tmp16) {
+        let _Date6 = Date;
+        tmp16 = Date.now() - tmp24 < 60000;
+      }
+      if (tmp16) {
         continue;
       } else {
-        let tmp8 = table2;
         delete tmp[tmp2];
         continue;
       }
       continue;
     }
-    for (const key10024 in closure_17) {
-      let tmp15 = key10024;
-      let tmp16 = table4;
-      if (isRecent(table4[key10024])) {
+    for (const key10053 in closure_12) {
+      let tmp25 = key10053;
+      let tmp26 = dependencyMap4;
+      let tmp27 = dependencyMap4[key10053];
+      let tmp17 = null != tmp27;
+      if (tmp17) {
+        let _Date7 = Date;
+        tmp17 = Date.now() - tmp27 < 60000;
+      }
+      if (tmp17) {
         continue;
       } else {
-        let tmp9 = table4;
         delete tmp[tmp2];
         continue;
       }
       continue;
     }
-    for (const key10028 in closure_16) {
-      let tmp17 = key10028;
-      let tmp18 = table3;
-      if (isRecent(table3[key10028])) {
+    for (const key10061 in closure_11) {
+      let tmp28 = key10061;
+      let tmp29 = dependencyMap3;
+      let tmp30 = dependencyMap3[key10061];
+      let tmp18 = null != tmp30;
+      if (tmp18) {
+        let _Date8 = Date;
+        tmp18 = Date.now() - tmp30 < 60000;
+      }
+      if (tmp18) {
         continue;
       } else {
-        let tmp10 = table3;
         delete tmp[tmp2];
         continue;
       }
@@ -194,37 +241,37 @@ tmp2 = new tmp2(require("dispatcher"), {
     ({ mentioned, roleMentioned, everyoneMentioned } = guildId);
     const timestamp = Date.now();
     if (null != guildId) {
-      closure_14[guildId] = timestamp;
+      closure_9[guildId] = timestamp;
     }
     if (mentioned) {
       if (null != guildId) {
-        closure_15[guildId] = timestamp;
+        closure_10[guildId] = timestamp;
       }
     }
     if (roleMentioned) {
       if (null != guildId) {
-        closure_17[guildId] = timestamp;
+        closure_12[guildId] = timestamp;
       }
     }
     if (everyoneMentioned) {
       if (null != guildId) {
-        closure_16[guildId] = timestamp;
+        closure_11[guildId] = timestamp;
       }
     }
   }
 });
-let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/notifications/LastMentionTimestampStore.tsx");
+let result = require("mergeGuildAvatar").fileFinishedImporting("modules/notifications/LastMentionTimestampStore.tsx");
 
-export default tmp2;
+export default lastMentionTimestampStore;
 export const trackMessageNotificationTimestamps = function trackMessageNotificationTimestamps(mentions, guildId) {
   currentUser = currentUser.getCurrentUser();
   let id;
-  if (null != currentUser) {
+  if (currentUser != null) {
     id = currentUser.id;
   }
-  const result = closure_8.isSuppressEveryoneEnabled(guildId);
+  const result = updateUserGuildSettingsInternal.isSuppressEveryoneEnabled(guildId);
   let someResult = null != mentions.mentions;
-  const result1 = closure_8.isSuppressRolesEnabled(guildId);
+  const result1 = updateUserGuildSettingsInternal.isSuppressRolesEnabled(guildId);
   if (someResult) {
     mentions = mentions.mentions;
     someResult = mentions.some((id) => id.id === id);
@@ -244,12 +291,12 @@ export const trackMessageNotificationTimestamps = function trackMessageNotificat
       return roles.includes(arg0);
     });
   }
-  let obj = id(member[8]);
-  obj = { type: "MESSAGE_NOTIFICATION_SHOWN", guildId, mentioned: someResult };
+  let obj = id(member[3]);
+  obj = { type: "MESSAGE_NOTIFICATION_SHOWN", guildId, mentioned: someResult, roleMentioned: null, everyoneMentioned: null };
   if (someResult1) {
     someResult1 = !result1;
   }
-  obj.roleMentioned = someResult1;
-  obj.everyoneMentioned = true === mentions.mention_everyone && !result;
+  obj[3] = someResult1;
+  obj[4] = true === mentions.mention_everyone && !result;
   obj.dispatch(obj);
 };

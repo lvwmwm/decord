@@ -1,126 +1,242 @@
-// Module ID: 15733
-// Function ID: 121190
-// Name: _createForOfIteratorHelperLoose
-// Dependencies: [57, 6, 7, 15, 17, 18, 5, 5101, 15734, 653, 664, 507, 5112, 2]
+// Module ID: 15769
+// Function ID: 15770
+// Name: _claimIncentivizedAccountLinkingReward
+// Dependencies: [32, 5, 5123, 15770, 676, 687, 530, 5134, 2]
 // Exports: claimIncentivizedAccountLinkingReward
 
-// Module 15733 (_createForOfIteratorHelperLoose)
+// Module 15769 (_claimIncentivizedAccountLinkingReward)
 import _slicedToArray from "_slicedToArray";
-import asyncGeneratorStep from "asyncGeneratorStep";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
-import closure_8 from "_inherits";
-import closure_9 from "_isNativeReflectConstruct";
-import closure_10 from "_isNativeReflectConstruct";
+import set from "set";
+import recomputeFromAppTokens from "recomputeFromAppTokens";
+import map from "map";
 import ME from "ME";
-import tmp3 from "AutomaticLifecycleManager";
+import "initialize";
 
-let closure_11;
-let closure_12;
-const require = arg1;
-function _createForOfIteratorHelperLoose(iterable) {
-  let closure_0 = iterable;
-  iterable = "undefined" !== typeof Symbol;
-  if (iterable) {
-    const _Symbol = Symbol;
-    iterable = iterable[Symbol.iterator];
-  }
-  if (!iterable) {
-    iterable = iterable[Symbol.iterator];
-  }
-  if (iterable) {
-    const iter = iterable.call(iterable);
-    const next = iter.next;
-    return next.bind(iter);
-  } else {
-    const _Array = Array;
-    let tmp = iterable;
-    if (!Array.isArray(iterable)) {
-      let tmp2;
-      if (iterable) {
-        if ("string" === typeof iterable) {
-          tmp2 = _arrayLikeToArray(iterable, undefined);
+let closure_6;
+let error;
+let require = arg1;
+function _claimIncentivizedAccountLinkingReward() {
+  const self = this;
+  const tmp = callback2((arg0) => {
+    let closure_0 = arg0;
+    let c5 = 0;
+    let c6 = 0;
+    let c4 = 0;
+    const iter = (function*(arg0) {
+      let c0;
+      let c1;
+      let c2;
+      if (c6 === 2) {
+        c6 = 3;
+        HermesBuiltin.throwTypeError();
+      } else if (tmp7 === 3) {
+        if (arg0 === 1) {
+          throw arg1;
+        } else if (arg0 === 2) {
+          let obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
         } else {
-          const toString = {}.toString;
-          const substr = toString.call(iterable).slice(8, -1);
-          let name = substr;
-          if (tmp3) {
-            name = iterable.constructor.name;
-          }
-          if ("Map" !== name) {
-            if ("Set" !== name) {
-              if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(iterable, undefined);
-              } else {
-                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
-              }
+          return { value: "HermesInternal", done: null };
+        }
+      } else {
+        try {
+          c6 = 2;
+          if (0 === c5) {
+            if (arg0 === 1) {
+              c6 = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              c6 = 3;
+              obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            } else {
+              c2 = tmp3;
+              let dependencyMap = tmp5;
+              let callback;
+              dependencyMap = undefined;
+              c2 = undefined;
+              ({ applicationId: c0, onSuccess: c1, onError: c2 } = callback);
+              c5 = 1;
+              c6 = 1;
+              return { value: "ct", done: null };
             }
-            tmp2 = arr;
+          } else if (1 === tmp8) {
+            if (arg0 === 1) {
+              c6 = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              c6 = 3;
+              const obj1 = { value: null, done: true };
+              obj1[0] = arg1;
+              return obj1;
+            } else {
+              let c4 = 1;
+              const HTTP = callback(530).HTTP;
+              const obj2 = { url: null, body: null, rejectWithError: true };
+              obj2[0] = obj.OAUTH2_ACCOUNT_LINKING_ACHIEVEMENT;
+              const obj3 = { application_id: null };
+              obj3[0] = callback;
+              obj2[1] = obj3;
+              c5 = 3;
+              c6 = 1;
+              const obj4 = { value: null, done: false };
+              obj4[0] = HTTP.post(obj2);
+              return obj4;
+            }
+          } else {
+            if (2 === tmp8) {
+              c4 = 0;
+              if (c2 != null) {
+                tmp14(set);
+              }
+              c6 = 3;
+            } else if (arg0 === 1) {
+              c6 = 3;
+              throw arg1;
+            } else if (arg0 !== 2) {
+              if (dependencyMap != null) {
+                dependencyMap();
+              }
+              c4 = 0;
+            }
+            c4 = 0;
+            c6 = 3;
+            obj = { value: null, done: true };
+            obj[0] = arg1;
+            return obj;
           }
-          const _Array2 = Array;
-          arr = Array.from(iterable);
-          const callResult = toString.call(iterable);
-          tmp3 = "Object" === substr && iterable.constructor;
+        } catch (tmp25) {
+          set = tmp25;
+          if (tmp4 === c4) {
+            c6 = tmp2;
+            throw tmp25;
+          } else {
+            c5 = tmp;
+          }
         }
       }
-      tmp = tmp2;
-      if (!tmp2) {
-        const _TypeError = TypeError;
-        const typeError = new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
-        throw typeError;
-      }
-    }
-    if (tmp) {
-      closure_0 = tmp;
-    }
-    let c1 = 0;
-    return () => {
-      if (closure_1 >= length.length) {
-        let obj = { done: true };
-      } else {
-        obj = { done: false };
-        closure_1 = tmp3 + 1;
-        obj.value = length[+closure_1];
-      }
-      return obj;
+    })();
+    iter.next();
+    return iter;
+  });
+  const _claimIncentivizedAccountLinkingReward = tmp;
+  const apply = tmp.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
+}
+({ AppStates: closure_6, Endpoints: error } = ME);
+let closure_8 = 20 * require("set").Millis.MINUTE;
+class AccountLinkManager extends tmp3 {
+  constructor() {
+    applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
+    closure_0 = applyArgumentsResult;
+    applyArgumentsResult.actions = {
+      OAUTH2_TOKEN_CREATE(arg0) {
+            return applyArgumentsResult.handleOAuth2TokenCreate(arg0);
+          },
+      USER_AUTHORIZED_APPS_UPDATE() {
+            return applyArgumentsResult.handleAuthorizedAppsUpdate();
+          },
+      APP_STATE_UPDATE(arg0) {
+            return applyArgumentsResult.handleAppStateUpdate(arg0);
+          },
+      ACCOUNT_LINK_AUTHORIZATION_COMPLETED(applicationId) {
+            return applyArgumentsResult.handleAccountLinkAuthorizationCompleted(applicationId);
+          }
     };
+    return applyArgumentsResult;
   }
 }
-function _arrayLikeToArray(arg0, arg1) {
-  let length;
-  if (tmp) {
-    length = arg0.length;
+const prototype = AccountLinkManager.prototype;
+prototype["evaluatePending"] = function evaluatePending() {
+  let tmp7;
+  let tmp8;
+  const pendingAuthorizations = authStore.getPendingAuthorizations();
+  if (0 !== pendingAuthorizations.size) {
+    const _Date = Date;
+    const timestamp = Date.now();
+    const tmp26 = pendingAuthorizations[Symbol.iterator]();
+    while (tmp26 !== undefined) {
+      let tmp5 = callback;
+      let tmp6 = callback(tmp3, 2);
+      [tmp7, tmp8] = tmp6;
+      let tmp9 = tmp8;
+      let tmp10 = closure_8;
+      if (timestamp - tmp8.startedAt > closure_8) {
+        let tmp18 = authStore;
+        let tmp19 = tmp7;
+        let result = authStore.deletePendingAuthorization(tmp7);
+        let tmp21 = tmp8;
+        let accountLinkCallbacks2 = tmp9.accountLinkCallbacks;
+        if (accountLinkCallbacks2 != null) {
+          let onError = accountLinkCallbacks2.onError;
+          if (onError != null) {
+            let onErrorResult = onError("Account link authorization timed out");
+          }
+        }
+      } else {
+        let tmp11 = newestTokenForApplication;
+        let tmp12 = tmp7;
+        if (null != newestTokenForApplication.getNewestTokenForApplication(tmp7)) {
+          let tmp13 = tmp8;
+          let accountLinkCallbacks = tmp9.accountLinkCallbacks;
+          if (accountLinkCallbacks != null) {
+            let onSuccess = accountLinkCallbacks.onSuccess;
+            if (onSuccess != null) {
+              let onSuccessResult = onSuccess();
+            }
+          }
+          let tmp15 = authStore;
+          let tmp16 = tmp7;
+          let result1 = authStore.deletePendingAuthorization(tmp7);
+        }
+      }
+      continue;
+    }
   }
-  const ArrayResult = Array(length);
-  for (let num = 0; num < length; num = num + 1) {
-    ArrayResult[num] = arg0[num];
-  }
-  return ArrayResult;
-}
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
-  }
-  const result = _isNativeReflectConstruct();
-}
-function _claimIncentivizedAccountLinkingReward() {
-  // CreateGeneratorClosureLongIndex (0x67)
-  const obj = callback3(tmp);
-  return obj(...arguments);
-}
-({ AppStates: closure_11, Endpoints: closure_12 } = ME);
-let closure_13 = 20 * require("set").Millis.MINUTE;
-tmp3.displayName = "AccountLinkManager";
-tmp3 = new tmp3();
-let result = require("_defineProperties").fileFinishedImporting("modules/application_account_linking/AccountLinkManager.tsx");
-
-export default tmp3;
-export const claimIncentivizedAccountLinkingReward = function claimIncentivizedAccountLinkingReward(arg0) {
-  return _claimIncentivizedAccountLinkingReward(...arguments);
 };
-export const AccountLinkManager = tmp3;
+prototype["handleOAuth2TokenCreate"] = function handleOAuth2TokenCreate(application) {
+  const pendingAuthorizations = authStore.getPendingAuthorizations();
+  if (pendingAuthorizations.has(application.application.id)) {
+    const self = this;
+    this.evaluatePending();
+  }
+};
+prototype["handleAuthorizedAppsUpdate"] = function handleAuthorizedAppsUpdate() {
+  this.evaluatePending();
+};
+prototype["handleAccountLinkAuthorizationCompleted"] = function handleAccountLinkAuthorizationCompleted(applicationId) {
+  const pendingAuthorizations = authStore.getPendingAuthorizations();
+  if (pendingAuthorizations.has(applicationId.applicationId)) {
+    const self = this;
+    this.evaluatePending();
+  }
+};
+prototype["handleAppStateUpdate"] = function handleAppStateUpdate(state) {
+  if (state.state === constants.ACTIVE) {
+    const self = this;
+    this.evaluatePending();
+  }
+};
+AccountLinkManager.displayName = "AccountLinkManager";
+const accountLinkManager = new AccountLinkManager();
+let result = require("recomputeFromAppTokens").fileFinishedImporting("modules/application_account_linking/AccountLinkManager.tsx");
+
+export default accountLinkManager;
+export const claimIncentivizedAccountLinkingReward = function claimIncentivizedAccountLinkingReward(arg0) {
+  const self = this;
+  const apply = _claimIncentivizedAccountLinkingReward.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
+};
+export { AccountLinkManager };

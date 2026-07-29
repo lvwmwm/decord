@@ -1,44 +1,46 @@
-// Module ID: 9903
-// Function ID: 76568
+// Module ID: 9925
+// Function ID: 9926
 // Name: ShareChatInput
-// Dependencies: [57, 31, 27, 653, 33, 4165, 689, 477, 6164, 7620, 1212, 4695, 6555, 2]
+// Dependencies: [32, 19, 17, 676, 21, 4189, 712, 500, 6182, 7643, 1236, 4717, 6576, 2]
 // Exports: default
 
-// Module 9903 (ShareChatInput)
+// Module 9925 (ShareChatInput)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
+import noop from "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 import set from "set";
 import set from "get ActivityIndicator";
 
 let closure_6;
-let closure_7;
+let error;
 const require = arg1;
+({ jsx: closure_6, jsxs: error } = jsxProd);
+createCacheKey = { container: null, chatInput: null, chatText: null, inputPlaceholder: null, emojiButton: null, focused: null };
+createCacheKey = { flex: 1, flexDirection: "row", backgroundColor: require("Themes").colors.SHARE_CHAT_INPUT_BACKGROUND, borderRadius: require("Themes").modules.mobile.CHAT_INPUT_BORDER_RADIUS, borderWidth: require("Themes").modules.mobile.CHAT_INPUT_PILL_BORDER_WIDTH, borderColor: require("Themes").colors.MOBILE_CHATINPUT_BORDER_DEFAULT, paddingHorizontal: require("Themes").space.PX_12 };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { flex: 1, paddingVertical: 0, paddingHorizontal: require("Themes").space.PX_4, maxHeight: 80 };
+const obj2 = { fontSize: 16, lineHeight: 20, fontFamily: require("ME").Fonts.PRIMARY_NORMAL, color: require("Themes").colors.TEXT_STRONG, paddingTop: null, paddingBottom: null };
 let num = 2;
-({ jsx: closure_6, jsxs: closure_7 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { flex: 1, flexDirection: "row", backgroundColor: require("_createForOfIteratorHelperLoose").colors.SHARE_CHAT_INPUT_BACKGROUND, borderRadius: require("_createForOfIteratorHelperLoose").modules.mobile.CHAT_INPUT_BORDER_RADIUS, borderWidth: require("_createForOfIteratorHelperLoose").modules.mobile.CHAT_INPUT_PILL_BORDER_WIDTH, borderColor: require("_createForOfIteratorHelperLoose").colors.MOBILE_CHATINPUT_BORDER_DEFAULT, paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_12 };
-_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
-const obj1 = { flex: 1, paddingVertical: 0, paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_4, maxHeight: 80 };
-_createForOfIteratorHelperLoose.chatInput = obj1;
-const obj2 = { fontSize: 16, lineHeight: 20, fontFamily: require("ME").Fonts.PRIMARY_NORMAL, color: require("_createForOfIteratorHelperLoose").colors.TEXT_STRONG };
 if (set.isAndroid()) {
   num = 0;
 }
-obj2.paddingTop = require("_createForOfIteratorHelperLoose").space.PX_8 + num;
-obj2.paddingBottom = require("_createForOfIteratorHelperLoose").space.PX_8;
-_createForOfIteratorHelperLoose.chatText = obj2;
-_createForOfIteratorHelperLoose.inputPlaceholder = { color: require("_createForOfIteratorHelperLoose").colors.TEXT_MUTED };
-const obj3 = { color: require("_createForOfIteratorHelperLoose").colors.TEXT_MUTED };
-_createForOfIteratorHelperLoose.emojiButton = { paddingTop: require("_createForOfIteratorHelperLoose").space.PX_8, paddingBottom: require("_createForOfIteratorHelperLoose").space.PX_8, alignSelf: "flex-end" };
-set = { borderColor: require("_createForOfIteratorHelperLoose").colors.MOBILE_CHATINPUT_BORDER_ACTIVE };
-_createForOfIteratorHelperLoose.focused = set;
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+obj2[4] = require("Themes").space.PX_8 + num;
+obj2[5] = require("Themes").space.PX_8;
+createCacheKey[2] = obj2;
+const obj1 = { flex: 1, paddingVertical: 0, paddingHorizontal: require("Themes").space.PX_4, maxHeight: 80 };
+createCacheKey[3] = { color: require("Themes").colors.TEXT_MUTED };
+const obj3 = { color: require("Themes").colors.TEXT_MUTED };
+createCacheKey[4] = { paddingTop: require("Themes").space.PX_8, paddingBottom: require("Themes").space.PX_8, alignSelf: "flex-end" };
+set = { borderColor: require("Themes").colors.MOBILE_CHATINPUT_BORDER_ACTIVE };
+createCacheKey[5] = set;
+createCacheKey = createCacheKey.createStyles(createCacheKey);
 const result = set.fileFinishedImporting("modules/share/native/ShareChatInput.tsx");
 
 export default function ShareChatInput(onFocus) {
+  let c2;
+  let focused;
   let inputRef;
   let onChange;
   let onPressEmoji;
@@ -53,59 +55,53 @@ export default function ShareChatInput(onFocus) {
     flag = false;
   }
   let dependencyMap;
-  const tmp = _createForOfIteratorHelperLoose();
-  const tmp3 = callback(React.useState(false), 2);
-  let focused = tmp3[0];
-  dependencyMap = tmp3[1];
+  const tmp = createCacheKey();
+  const tmp2 = onBlur;
+  const tmp4 = onBlur(6182)();
+  [focused, c2] = callback(React.useState(false), 2);
   const items = [onFocus];
   const items1 = [onBlur];
   callback = React.useCallback(() => {
-    callback(true);
+    _undefined(true);
     onFocus();
   }, items);
-  let obj = {};
   const items2 = [tmp.container, ];
   const callback1 = React.useCallback(() => {
-    callback(false);
+    _undefined(false);
     onBlur();
   }, items1);
   if (focused) {
     focused = tmp.focused;
   }
+  let obj = { style: items2, children: null };
   items2[1] = focused;
-  obj.style = items2;
-  obj = { ref: inputRef, maxLength: onBlur(6164)() };
-  const tmp2 = onBlur(6164)();
-  const tmp6 = closure_7;
-  const tmp7 = View;
-  const intl = onFocus(1212).intl;
-  obj.placeholder = intl.string(onFocus(1212).t.ZroO3G);
-  obj.placeholderTextColor = tmp.inputPlaceholder.color;
-  const intl2 = onFocus(1212).intl;
-  obj.accessibilityLabel = intl2.string(onFocus(1212).t["/+MXmw"]);
-  obj.onSubmitEditing = onSend;
-  obj.onSelectionChange = onSelectionChange;
-  obj.style = tmp.chatInput;
-  obj.value = text;
-  obj.onChange = onChange;
-  obj.onFocus = callback;
-  obj.onBlur = callback1;
-  obj.multiline = true;
-  obj.showBorder = false;
-  obj.showTopContainer = false;
-  obj.textAlignVertical = "center";
-  obj.inputTextStyle = tmp.chatText;
-  obj.editable = !flag;
-  const items3 = [callback2(onBlur(7620), obj), ];
-  obj = {};
-  const intl3 = onFocus(1212).intl;
-  obj.accessibilityLabel = intl3.string(onFocus(1212).t.iZ7Mz9);
-  obj.accessibilityRole = "button";
-  obj.onPress = onPressEmoji;
-  obj.style = tmp.emojiButton;
-  obj.disabled = flag;
-  obj.children = callback2(onFocus(6555).ReactionIcon, { size: "md" });
-  items3[1] = callback2(onFocus(4695).PressableOpacity, obj);
-  obj.children = items3;
-  return tmp6(tmp7, obj);
+  obj = { ref: inputRef, maxLength: tmp4, placeholder: null, placeholderTextColor: null, accessibilityLabel: null, onSubmitEditing: null, onSelectionChange: null, style: null, value: null, onChange: null, onFocus: null, onBlur: null, multiline: true, showBorder: false, showTopContainer: false, textAlignVertical: "center", inputTextStyle: null, editable: null };
+  const tmp5 = callback(React.useState(false), 2);
+  const tmp8 = closure_7;
+  const tmp9 = View;
+  const intl = onFocus(1236).intl;
+  obj[2] = intl.string(onFocus(1236).t.ZroO3G);
+  obj[3] = tmp.inputPlaceholder.color;
+  const intl2 = onFocus(1236).intl;
+  obj[4] = intl2.string(onFocus(1236).t["/+MXmw"]);
+  obj[5] = onSend;
+  obj[6] = onSelectionChange;
+  obj[7] = tmp.chatInput;
+  obj[8] = text;
+  obj[9] = onChange;
+  obj[10] = callback;
+  obj[11] = callback1;
+  obj[16] = tmp.chatText;
+  obj[17] = !flag;
+  const items3 = [callback2(tmp2(7643), obj), ];
+  obj = { accessibilityLabel: null, accessibilityRole: "button", onPress: null, style: null, disabled: null, children: null };
+  const intl3 = onFocus(1236).intl;
+  obj[0] = intl3.string(onFocus(1236).t.iZ7Mz9);
+  obj[2] = onPressEmoji;
+  obj[3] = tmp.emojiButton;
+  obj[4] = flag;
+  obj[5] = callback2(onFocus(6576).ReactionIcon, { size: "md" });
+  items3[1] = callback2(onFocus(4717).PressableOpacity, obj);
+  obj[1] = items3;
+  return tmp8(tmp9, obj);
 };

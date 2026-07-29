@@ -1,16 +1,16 @@
-// Module ID: 13521
-// Function ID: 103777
+// Module ID: 13544
+// Function ID: 13545
 // Name: items
-// Dependencies: [4149, 1443, 1212, 2]
+// Dependencies: [4173, 1467, 1236, 2]
 // Exports: resolveActivityShareMessageContent
 
-// Module 13521 (items)
-const items = [require("_createForOfIteratorHelperLoose").parseQuestsEmbedCode];
+// Module 13544 (items)
+const items = [require("getPathsFromURL").parseQuestsEmbedCode];
 const result = require("getSystemLocale").fileFinishedImporting("modules/activities/utils/activityShareLink.tsx");
 
-export const resolveActivityShareMessageContent = function resolveActivityShareMessageContent(outer1_3, outer1_14, outer1_12) {
+export const resolveActivityShareMessageContent = function resolveActivityShareMessageContent(c3, closure_14, closure_12) {
   const _require = false;
-  const replaced = outer1_3.replaceAll(importDefault(1443).URL_REGEX, (arg0) => {
+  const replaced = c3.replaceAll(importDefault(1467).URL_REGEX, (arg0) => {
     let c0 = arg0;
     const someResult = outer1_3.some((arg0) => null != arg0(c0));
     if (someResult) {
@@ -25,10 +25,12 @@ export const resolveActivityShareMessageContent = function resolveActivityShareM
   });
   let combined = replaced;
   if (!_require) {
-    const intl = _require(1212).intl;
-    const obj = { applicationName: outer1_14.name, link: outer1_12 };
+    const intl = _require(1236).intl;
+    const obj = { applicationName: null, link: null };
+    obj[0] = closure_14.name;
+    obj[1] = closure_12;
     let _HermesInternal = HermesInternal;
-    combined = "" + replaced + "\n\n" + intl.formatToMarkdownString(_require(1212).t.dZJpdG, obj);
+    combined = "" + replaced + "\n\n" + intl.formatToMarkdownString(_require(1236).t.dZJpdG, obj);
   }
   return combined;
 };

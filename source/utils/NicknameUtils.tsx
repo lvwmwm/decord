@@ -1,41 +1,61 @@
-// Module ID: 4354
-// Function ID: 37968
+// Module ID: 4379
+// Function ID: 4380
 // Name: getNickname
-// Dependencies: [1348, 1918, 3802, 1212, 4004, 566, 2]
-// Exports: useName
+// Dependencies: [1372, 1942, 3826, 1236, 4028, 589, 2]
+// Exports: getNickname, useName
 
-// Module 4354 (getNickname)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_4 from "_isNativeReflectConstruct";
-import closure_5 from "_isNativeReflectConstruct";
+// Module 4379 (getNickname)
+import ensureGuildLoaded from "ensureGuildLoaded";
+import trackCommunicationDisabled from "trackCommunicationDisabled";
+import upsertRelationship from "upsertRelationship";
 
 const require = arg1;
-function getNickname(id, closure_0, user) {
-  if (null == user) {
+function getNickname(id, arg1, id) {
+  if (null == id) {
     return null;
   } else if (null != id) {
-    return nick.getNick(id, user.id);
+    return store2.getNick(id, id.id);
   } else {
-    if (null != closure_0) {
-      channel = channel.getChannel(closure_0);
-      if (null != channel) {
-        if (channel.isPrivate()) {
-          return nickname.getNickname(user.id);
-        }
+    if (null != arg1) {
+      const channel = store.getChannel(arg1);
+      let isPrivateResult;
+      if (channel != null) {
+        isPrivateResult = channel.isPrivate();
+      }
+      if (isPrivateResult) {
+        return store3.getNickname(id.id);
       }
     }
     return null;
   }
 }
-function getName(id, closure_0, user) {
-  if (null == user) {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    let stringResult = intl.string(require(1212) /* getSystemLocale */.t.sKdZ6U);
+function getName(id, arg1, id) {
+  if (null == id) {
+    const intl = require(1236) /* getSystemLocale */.intl;
+    let stringResult = intl.string(require(1236) /* getSystemLocale */.t.sKdZ6U);
   } else {
-    stringResult = getNickname(id, closure_0, user);
-    if (null == stringResult) {
-      stringResult = importDefault(4004).getName(user);
-      const obj = importDefault(4004);
+    stringResult = null;
+    if (null != id) {
+      if (null != id) {
+        stringResult = store2.getNick(id, id.id);
+      } else {
+        stringResult = null;
+        if (null != arg1) {
+          const channel = store.getChannel(arg1);
+          let isPrivateResult;
+          if (channel != null) {
+            isPrivateResult = channel.isPrivate();
+          }
+          stringResult = null;
+          if (isPrivateResult) {
+            stringResult = store3.getNickname(id.id);
+          }
+        }
+      }
+    }
+    if (stringResult == null) {
+      stringResult = importDefault(4028).getName(id);
+      const obj2 = importDefault(4028);
     }
   }
   return stringResult;
@@ -44,10 +64,10 @@ function useName(arg0, arg1, arg2) {
   const _require = arg0;
   let closure_1 = arg1;
   const dependencyMap = arg2;
-  const items = [closure_4, _isNativeReflectConstruct, closure_5];
-  return _require(566).useStateFromStores(items, () => outer1_7(closure_0, closure_1, closure_2));
+  const items = [trackCommunicationDisabled, ensureGuildLoaded, upsertRelationship];
+  return _require(589).useStateFromStores(items, () => outer1_6(closure_0, closure_1, closure_2));
 }
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("utils/NicknameUtils.tsx");
+const result = require("upsertRelationship").fileFinishedImporting("utils/NicknameUtils.tsx");
 
 export default { getNickname, getName, useName };
 export { getNickname };

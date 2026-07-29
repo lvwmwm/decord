@@ -1,29 +1,59 @@
-// Module ID: 12395
-// Function ID: 96249
-// Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 1348, 3982, 11505, 1327, 686, 4565, 2]
+// Module ID: 12417
+// Function ID: 12418
+// Name: _initialize
+// Dependencies: [1372, 4006, 4368, 709, 11529, 1351, 2]
 
-// Module 12395 (_isNativeReflectConstruct)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
-import closure_8 from "_isNativeReflectConstruct";
-import closure_9 from "_isNativeReflectConstruct";
-import tmp2 from "LifecycleManager";
+// Module 12417 (_initialize)
+import ensureGuildLoaded from "ensureGuildLoaded";
+import handleConnectionOpen from "handleConnectionOpen";
+import "initialize";
 
-const require = arg1;
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
+let require = arg1;
+class StageLurkingManager extends tmp2 {
+  constructor() {
+    applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
+    closure_0 = applyArgumentsResult;
+    applyArgumentsResult.handleVoiceChannelSelect = function handleVoiceChannelSelect(arg0) {
+      let channelId;
+      let guildId;
+      ({ channelId, guildId } = arg0);
+      if (null != channelId) {
+        const channel = outer1_3.getChannel(channelId);
+      }
+      applyArgumentsResult.terminate();
+      let tmp3 = null;
+      if (null != channelId) {
+        if (guildId == null) {
+          guildId = null;
+        }
+        tmp3 = guildId;
+      }
+      const result = applyArgumentsResult.handleDisconnectFromStageChannel(tmp3);
+    };
+    applyArgumentsResult.handleDisconnectFromStageChannel = function handleDisconnectFromStageChannel(arg0) {
+      guildId = guildId.getGuildId();
+      const items = [guildId, arg0];
+      applyArgumentsResult(11529).stopLurkingAll(items.filter(applyArgumentsResult(1351).isNotNullish));
+    };
+    applyArgumentsResult.handleLogout = function handleLogout() {
+      applyArgumentsResult.terminate();
+      const result = applyArgumentsResult.handleDisconnectFromStageChannel(null);
+    };
+    return applyArgumentsResult;
   }
-  const result = _isNativeReflectConstruct();
 }
-tmp2 = new tmp2();
-let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/stage_channels/StageLurkingManager.tsx");
+const prototype = StageLurkingManager.prototype;
+prototype["_initialize"] = function _initialize() {
+  const subscription = importDefault(709).subscribe("VOICE_CHANNEL_SELECT", this.handleVoiceChannelSelect);
+  const obj = importDefault(709);
+  const subscription1 = importDefault(709).subscribe("LOGOUT", this.handleLogout);
+};
+prototype["_terminate"] = function _terminate() {
+  importDefault(709).unsubscribe("VOICE_CHANNEL_SELECT", this.handleVoiceChannelSelect);
+  const obj = importDefault(709);
+  importDefault(709).unsubscribe("LOGOUT", this.handleLogout);
+};
+const stageLurkingManager = new StageLurkingManager();
+let result = require("initialize").fileFinishedImporting("modules/stage_channels/StageLurkingManager.tsx");
 
-export default tmp2;
+export default stageLurkingManager;

@@ -1,26 +1,26 @@
-// Module ID: 11020
-// Function ID: 85527
+// Module ID: 11044
+// Function ID: 11045
 // Name: ClockWarningIcon
-// Dependencies: [31, 33, 689, 3868, 11021, 2]
+// Dependencies: [19, 21, 712, 3892, 11045, 2]
 // Exports: ClockWarningIcon
 
-// Module 11020 (ClockWarningIcon)
-import "result";
+// Module 11044 (ClockWarningIcon)
+import "noop";
 import { jsx } from "jsxProd";
 
 const require = arg1;
-const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("design/components/Icon/native/redesign/generated/ClockWarningIcon.tsx");
+const result = require("Themes").fileFinishedImporting("design/components/Icon/native/redesign/generated/ClockWarningIcon.tsx");
 
-export const ClockWarningIcon = function ClockWarningIcon(qXtNtS) {
-  let INTERACTIVE_ICON_DEFAULT = qXtNtS.color;
+export const ClockWarningIcon = function ClockWarningIcon(color) {
+  let INTERACTIVE_ICON_DEFAULT = color.color;
   if (INTERACTIVE_ICON_DEFAULT === undefined) {
-    INTERACTIVE_ICON_DEFAULT = importDefault(689).colors.INTERACTIVE_ICON_DEFAULT;
+    INTERACTIVE_ICON_DEFAULT = importDefault(712).colors.INTERACTIVE_ICON_DEFAULT;
   }
-  let obj = Object.create(null);
-  obj.style = 0;
-  obj.color = 0;
-  const merged = Object.assign(qXtNtS, obj);
-  obj = { source: require(11021) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: qXtNtS.style };
+  const merged = Object.assign(color, Object.create(null));
+  const obj = { source: null, color: null, style: null };
+  obj[0] = require(11045) /* registerAsset */;
+  obj[1] = INTERACTIVE_ICON_DEFAULT;
+  obj[2] = color.style;
   const merged1 = Object.assign(merged);
-  return jsx(require(3868) /* BaseIconImage */.BaseIconImage, { source: require(11021) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: qXtNtS.style });
+  return jsx(require(3892) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
 };

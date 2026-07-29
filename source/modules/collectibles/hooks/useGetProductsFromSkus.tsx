@@ -1,27 +1,27 @@
-// Module ID: 14079
-// Function ID: 107594
+// Module ID: 14101
+// Function ID: 14102
 // Name: useGetProductsFromSkus
-// Dependencies: [31, 5780, 566, 14080, 2]
+// Dependencies: [19, 5798, 589, 14102, 2]
 // Exports: default
 
-// Module 14079 (useGetProductsFromSkus)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 14101 (useGetProductsFromSkus)
+import updateCategoriesAndProducts from "updateCategoriesAndProducts";
 
-require("result").useCallback;
+require("noop").useCallback;
 const result = require("initialize").fileFinishedImporting("modules/collectibles/hooks/useGetProductsFromSkus.tsx");
 
 export default function useGetProductsFromSkus() {
-  const items = [_isNativeReflectConstruct];
-  stateFromStores = stateFromStores(566).useStateFromStores(items, () => outer1_4.products);
+  const items = [updateCategoriesAndProducts];
+  stateFromStores = stateFromStores(589).useStateFromStores(items, () => products.products);
   const items1 = [stateFromStores];
   return useCallback((arr) => {
     const mapped = arr.map((arg0) => {
-      const value = outer1_0.get(arg0);
+      const value = closure_0.get(arg0);
       let productByStoreListingId = value;
       if (null != value) {
         productByStoreListingId = value;
         if (null != value.variantGroupStoreListingId) {
-          productByStoreListingId = outer2_4.getProductByStoreListingId(value.variantGroupStoreListingId);
+          productByStoreListingId = outer1_4.getProductByStoreListingId(value.variantGroupStoreListingId);
         }
       }
       return productByStoreListingId;

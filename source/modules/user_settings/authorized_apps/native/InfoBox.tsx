@@ -1,27 +1,27 @@
-// Module ID: 8031
-// Function ID: 63832
+// Module ID: 8055
+// Function ID: 8056
 // Name: InfoBox
-// Dependencies: [31, 27, 33, 4165, 689, 4121, 6709, 4161, 2]
+// Dependencies: [19, 17, 21, 4189, 712, 4145, 6730, 4185, 2]
 // Exports: default
 
-// Module 8031 (InfoBox)
-import "result";
+// Module 8055 (InfoBox)
+import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_4;
-let closure_5;
+let c4;
+let c5;
 const require = arg1;
-({ jsx: closure_4, jsxs: closure_5 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { borderRadius: require("_createForOfIteratorHelperLoose").radii.xs, padding: 8, borderStyle: "solid", borderWidth: 1, borderColor: require("_createForOfIteratorHelperLoose").colors.TEXT_LINK, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_FEEDBACK_INFO, flexDirection: "row", alignItems: "center", gap: 8 };
-_createForOfIteratorHelperLoose.infoBox = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.infoBoxWarning = { borderColor: require("_createForOfIteratorHelperLoose").colors.ICON_FEEDBACK_WARNING, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_FEEDBACK_WARNING };
-_createForOfIteratorHelperLoose.infoText = { flex: 1 };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+({ jsx: c4, jsxs: c5 } = jsxProd);
+createCacheKey = { infoBox: null, infoBoxWarning: null, infoText: null };
+createCacheKey = { borderRadius: require("Themes").radii.xs, padding: 8, borderStyle: "solid", borderWidth: 1, borderColor: require("Themes").colors.TEXT_LINK, backgroundColor: require("Themes").colors.BACKGROUND_FEEDBACK_INFO, flexDirection: "row", alignItems: "center", gap: 8 };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { borderColor: require("Themes").colors.ICON_FEEDBACK_WARNING, backgroundColor: require("Themes").colors.BACKGROUND_FEEDBACK_WARNING };
+createCacheKey[2] = { flex: 1 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
 let obj2 = { INFO: "info", WARNING: "warning" };
-let obj1 = { borderColor: require("_createForOfIteratorHelperLoose").colors.ICON_FEEDBACK_WARNING, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_FEEDBACK_WARNING };
+let obj1 = { borderColor: require("Themes").colors.ICON_FEEDBACK_WARNING, backgroundColor: require("Themes").colors.BACKGROUND_FEEDBACK_WARNING };
 const result = require("jsxProd").fileFinishedImporting("modules/user_settings/authorized_apps/native/InfoBox.tsx");
 
 export default function InfoBox(look) {
@@ -32,22 +32,24 @@ export default function InfoBox(look) {
   if (INFO === undefined) {
     INFO = obj2.INFO;
   }
-  const tmp2 = _createForOfIteratorHelperLoose();
+  const tmp2 = createCacheKey();
   const items = [tmp2.infoBox];
   const items1 = [, ];
   ({ infoBox: arr2[0], infoBoxWarning: arr2[1] } = tmp2);
   let obj = {};
-  obj = { color: importDefault(689).colors.TEXT_LINK };
-  obj[obj2.INFO] = callback(require(4121) /* CircleInformationIcon */.CircleInformationIcon, obj);
-  obj = { color: importDefault(689).colors.ICON_FEEDBACK_WARNING };
-  obj[obj2.WARNING] = callback(require(6709) /* CircleErrorIcon */.CircleErrorIcon, obj);
-  const obj1 = {};
+  obj = { color: null };
+  obj[0] = importDefault(712).colors.TEXT_LINK;
+  obj[obj2.INFO] = callback(require(4145) /* CircleInformationIcon */.CircleInformationIcon, obj);
+  obj = { color: null };
+  obj[0] = importDefault(712).colors.ICON_FEEDBACK_WARNING;
+  obj[obj2.WARNING] = callback(require(6730) /* CircleErrorIcon */.CircleErrorIcon, obj);
+  const obj1 = { style: null, children: null };
   const items2 = [style, ...{ [closure_7.INFO]: items, [closure_7.WARNING]: items1 }[INFO]];
-  obj1.style = items2;
+  obj1[0] = items2;
   const items3 = [obj[INFO], ];
   obj2 = { style: tmp2.infoText, variant: "text-sm/semibold", children };
-  items3[1] = callback(require(4161) /* Text */.Text, obj2);
-  obj1.children = items3;
+  items3[1] = callback(require(4185) /* Text */.Text, obj2);
+  obj1[1] = items3;
   return callback2(View, obj1);
 };
 export const InfoBoxLooks = obj2;

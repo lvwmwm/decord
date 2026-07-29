@@ -1,39 +1,41 @@
-// Module ID: 9992
-// Function ID: 77185
-// Dependencies: [31, 33, 1212, 6731, 7676, 9993, 5552, 2]
+// Module ID: 10014
+// Function ID: 10015
+// Dependencies: [19, 21, 1236, 6752, 7699, 10015, 5570, 2]
 
-// Module 9992
-import importAllResult from "result";
+// Module 10014
+import importAllResult from "noop";
 import { jsx } from "jsxProd";
 
 const require = arg1;
+let c3 = importAllResult;
+const GUILD_ROLE_CONNECTIONS_SCREEN = "GUILD_ROLE_CONNECTIONS_SCREEN";
 const memoResult = importAllResult.memo((guildId) => {
   guildId = guildId.guildId;
   const onClose = guildId.onClose;
   const items = [guildId, onClose];
-  const screens = importAllResult.useMemo(() => (function getScreens(guildId, onClose) {
-    let closure_0 = guildId;
-    let closure_1 = onClose;
+  const memo = importAllResult.useMemo(() => {
     let obj = {};
-    obj = {};
-    let intl = guildId(outer2_2[2]).intl;
-    obj.title = intl.string(guildId(outer2_2[2]).t.ghtnss);
-    obj.headerLeft = function headerLeft() {
+    obj = { title: null, headerLeft: null, headerRight: null, render: null };
+    let intl = guildId(outer1_2[2]).intl;
+    obj[0] = intl.string(guildId(outer1_2[2]).t.ghtnss);
+    obj[1] = function headerLeft() {
       return null;
     };
-    obj.headerRight = function headerRight() {
-      const obj = { source: onClose(outer3_2[4]), onPress: closure_1 };
-      const intl = guildId(outer3_2[2]).intl;
-      obj.accessibilityLabel = intl.string(guildId(outer3_2[2]).t.cpT0Cq);
-      return outer3_4(guildId(outer3_2[3]).HeaderActionButton, obj);
+    obj[2] = function headerRight() {
+      const obj = { source: null, onPress: null, accessibilityLabel: null };
+      obj[0] = callback2(outer1_2[4]);
+      obj[1] = callback2;
+      const intl = callback(outer1_2[2]).intl;
+      obj[2] = intl.string(callback(outer1_2[2]).t.cpT0Cq);
+      return outer1_4(callback(outer1_2[3]).HeaderActionButton, obj);
     };
-    obj.render = function render() {
-      return outer3_4(onClose(outer3_2[5]), { guildId: closure_0, onCloseModal: closure_1 });
+    obj[3] = function render() {
+      return outer1_4(callback2(outer1_2[5]), { guildId: closure_0, onCloseModal: callback2 });
     };
-    obj["GUILD_ROLE_CONNECTIONS_SCREEN"] = obj;
+    obj[outer1_5] = obj;
     return obj;
-  })(guildId, onClose), items);
-  return jsx(guildId(5552).Navigator, { screens, initialRouteName: "GUILD_ROLE_CONNECTIONS_SCREEN" });
+  }, items);
+  return jsx(guildId(5570).Navigator, { screens: memo, initialRouteName: GUILD_ROLE_CONNECTIONS_SCREEN });
 });
 const result = require("getSystemLocale").fileFinishedImporting("modules/connections/native/GuildRoleConnectionsModal.tsx");
 

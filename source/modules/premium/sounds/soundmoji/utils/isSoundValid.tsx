@@ -1,48 +1,48 @@
-// Module ID: 4618
-// Function ID: 40325
+// Module ID: 4640
+// Function ID: 4641
 // Name: isSoundValid
-// Dependencies: [1348, 3793, 1850, 4614, 482, 3811, 2]
+// Dependencies: [1372, 3817, 1874, 4636, 505, 3835, 2]
 // Exports: default
 
-// Module 4618 (isSoundValid)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_3 from "_isNativeReflectConstruct";
-import closure_4 from "_isNativeReflectConstruct";
+// Module 4640 (isSoundValid)
+import ensureGuildLoaded from "ensureGuildLoaded";
+import getUncachedChannelPermissions from "getUncachedChannelPermissions";
+import mergeGuildAvatar from "mergeGuildAvatar";
 import { DEFAULT_SOUND_GUILD_ID } from "MAX_LENGTH_SOUND_NAME";
 import { Permissions } from "sum";
 
-let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/premium/sounds/soundmoji/utils/isSoundValid.tsx");
+let result = require("mergeGuildAvatar").fileFinishedImporting("modules/premium/sounds/soundmoji/utils/isSoundValid.tsx");
 
-export default function isSoundValid(guildId, arg1, channelId) {
-  channel = channel.getChannel(channelId);
+export default function isSoundValid(guildId) {
+  channel = channel.getChannel(arg2);
   guildId = undefined;
-  if (null != guildId) {
+  if (guildId != null) {
     guildId = guildId.guildId;
   }
   if (guildId === DEFAULT_SOUND_GUILD_ID) {
     return true;
   } else {
     let guildId1;
-    if (null != guildId) {
+    if (guildId != null) {
       guildId1 = guildId.guildId;
     }
     let guild_id;
-    if (null != channel) {
+    if (channel != null) {
       guild_id = channel.guild_id;
     }
     if (guildId1 !== guild_id) {
       let guildId2;
-      if (null != guildId) {
+      if (guildId != null) {
         guildId2 = guildId.guildId;
       }
       if (guildId2 !== arg1) {
         let canResult = null == channel;
-        const result = importDefault(3811).canUseSoundboardEverywhere(currentUser.getCurrentUser());
+        const result = importDefault(3835).canUseSoundboardEverywhere(currentUser.getCurrentUser());
         if (!canResult) {
           canResult = null == channel.guild_id;
         }
         if (!canResult) {
-          canResult = closure_3.can(Permissions.USE_EXTERNAL_SOUNDS, channel);
+          canResult = getUncachedChannelPermissions.can(Permissions.USE_EXTERNAL_SOUNDS, channel);
         }
         if (canResult) {
           canResult = result;

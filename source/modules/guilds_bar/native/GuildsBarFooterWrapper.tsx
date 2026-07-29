@@ -1,35 +1,33 @@
-// Module ID: 14980
-// Function ID: 114071
+// Module ID: 15006
+// Function ID: 15007
 // Name: GuildsBarFooterWrapper
-// Dependencies: [14916, 33, 4165, 689, 3869, 4022, 5550, 2]
+// Dependencies: [14942, 21, 4189, 712, 3893, 4046, 5568, 2]
 // Exports: default
 
-// Module 14980 (GuildsBarFooterWrapper)
+// Module 15006 (GuildsBarFooterWrapper)
 import { GUILD_ITEM_HIT_SLOP } from "GUILD_ITEM_SIZE";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let obj = {};
-obj = { display: "flex", alignSelf: "stretch", alignItems: "center", gap: require("_createForOfIteratorHelperLoose").modules.mobile.GUILD_BAR_ITEM_PADDING };
-obj.footerWrapper = obj;
-let closure_5 = _createForOfIteratorHelperLoose.createStyles(obj);
-const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/guilds_bar/native/GuildsBarFooterWrapper.tsx");
+let obj = { footerWrapper: null };
+obj = { display: "flex", alignSelf: "stretch", alignItems: "center", gap: require("Themes").modules.mobile.GUILD_BAR_ITEM_PADDING };
+obj[0] = obj;
+let closure_5 = createCacheKey.createStyles(obj);
+const result = require("createCacheKey").fileFinishedImporting("modules/guilds_bar/native/GuildsBarFooterWrapper.tsx");
 
 export default function GuildsBarFooterWrapper(children) {
-  let obj = require(3869) /* map */;
-  const token = obj.useToken(importDefault(689).modules.mobile.GUILD_BAR_ITEM_SIZE);
-  const MobileHomeDrawerExperiment = require(4022) /* MobileHomeDrawerExperiment */.MobileHomeDrawerExperiment;
-  obj = {};
-  const items = [callback().footerWrapper, ];
+  let obj = require(3893) /* map */;
+  const token = obj.useToken(importDefault(712).modules.mobile.GUILD_BAR_ITEM_SIZE);
+  const MobileHomeDrawerExperiment = require(4046) /* MobileHomeDrawerExperiment */.MobileHomeDrawerExperiment;
+  const style = [callback().footerWrapper, ];
   let tmp5 = null;
   const tmp2 = callback();
   const tmp3 = jsx;
   if (!MobileHomeDrawerExperiment.useConfig({ location: "guilds_bar" }).enableHome) {
-    obj = { width: token + GUILD_ITEM_HIT_SLOP.left + GUILD_ITEM_HIT_SLOP.right };
+    obj = { width: null };
+    obj[0] = token + GUILD_ITEM_HIT_SLOP.left + GUILD_ITEM_HIT_SLOP.right;
     tmp5 = obj;
   }
-  items[1] = tmp5;
-  obj.style = items;
-  obj.children = children.children;
-  return tmp3(importDefault(5550), obj);
+  style[1] = tmp5;
+  return tmp3(importDefault(5568), { style, children: children.children });
 };

@@ -1,61 +1,65 @@
-// Module ID: 10181
-// Function ID: 78595
+// Module ID: 10202
+// Function ID: 10203
 // Name: memoResult1
-// Dependencies: [31, 27, 1850, 33, 4165, 689, 4354, 4004, 9430, 1273, 566, 7611, 5198, 2]
+// Dependencies: [19, 17, 1874, 21, 4189, 712, 4379, 4028, 9454, 1297, 589, 7634, 5220, 2]
 
-// Module 10181 (memoResult1)
-import importAllResult from "result";
+// Module 10202 (memoResult1)
+import importAllResult from "noop";
 import { View } from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import mergeGuildAvatar from "mergeGuildAvatar";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_5;
+let c5;
 let closure_6;
 const require = arg1;
-({ jsx: closure_5, jsxs: closure_6 } = jsxProd);
-let obj = { mainIdentity: { flexDirection: "row", alignItems: "center" } };
-obj = { marginRight: require("_createForOfIteratorHelperLoose").space.PX_4 };
-obj.primaryAvatar = obj;
-_createForOfIteratorHelperLoose = { color: require("_createForOfIteratorHelperLoose").colors.INTERACTIVE_TEXT_DEFAULT, fontSize: 12 };
-obj.mainTag = _createForOfIteratorHelperLoose;
-let closure_7 = _createForOfIteratorHelperLoose.createStyles(obj);
+({ jsx: c5, jsxs: closure_6 } = jsxProd);
+let obj = { mainIdentity: { flexDirection: "row", alignItems: "center" }, primaryAvatar: null, mainTag: null };
+obj = { marginRight: require("Themes").space.PX_4 };
+obj[1] = obj;
+createCacheKey = { color: require("Themes").colors.INTERACTIVE_TEXT_DEFAULT, fontSize: 12 };
+obj[2] = createCacheKey;
+let closure_7 = createCacheKey.createStyles(obj);
 const memoResult = importAllResult.memo((height) => {
   let guildId;
   let user;
   ({ guildId, user } = height);
   const tmp = callback2();
-  let obj = importDefault(4354);
+  let obj = importDefault(4379);
   let nickname = obj.getNickname(guildId, undefined, user);
-  if (null == nickname) {
-    let obj1 = importDefault(4004);
-    nickname = obj1.getGlobalName(user);
+  if (nickname == null) {
+    nickname = tmp2(4028).getGlobalName(user);
+    const tmp2Result = tmp2(4028);
   }
   const hasAvatarForGuildResult = user.hasAvatarForGuild(guildId);
-  obj = { style: { height: height.contentHeight } };
-  obj = { user, nick: nickname };
-  const items = [callback(importDefault(9430), obj), ];
+  obj = { style: { height: height.contentHeight }, children: null };
+  const items = [callback(importDefault(9454), { user, nick: nickname }), ];
   if (hasAvatarForGuildResult) {
-    obj1 = { style: tmp.mainIdentity };
-    let tmp11 = null;
+    obj = { style: null, children: null };
+    obj[0] = tmp.mainIdentity;
+    let tmp8Result = null;
     if (hasAvatarForGuildResult) {
-      const obj2 = { size: require(1273) /* Button */.AvatarSizes.SIZE_16, style: tmp.primaryAvatar, user, guildId: undefined };
-      tmp11 = callback(require(1273) /* Button */.Avatar, obj2);
+      const obj1 = { size: null, style: null, user: null, guildId: "Array" };
+      obj1[0] = require(1297) /* Button */.AvatarSizes.SIZE_16;
+      obj1[1] = tmp.primaryAvatar;
+      obj1[2] = user;
+      tmp8Result = tmp8(require(1297) /* Button */.Avatar, obj1);
     }
-    const items1 = [tmp11, ];
-    const obj3 = { user, usernameStyle: tmp.mainTag, hideBotTag: true };
-    items1[1] = callback(importDefault(9430), obj3);
-    obj1.children = items1;
-    let tmp9Result = closure_6(View, obj1);
-    const tmp10 = View;
-    const tmp9 = closure_6;
+    const items1 = [tmp8Result, ];
+    const obj2 = { user: null, usernameStyle: null, hideBotTag: true };
+    obj2[0] = user;
+    obj2[1] = tmp.mainTag;
+    items1[1] = tmp8(tmp2(9454), obj2);
+    obj[1] = items1;
+    let tmp6Result = tmp6(tmp7, obj);
   } else {
-    tmp9Result = null;
+    tmp6Result = null;
   }
-  items[1] = tmp9Result;
-  obj.children = items;
+  items[1] = tmp6Result;
+  obj[1] = items;
   return closure_6(View, obj);
 });
+const metroImportAll = memoResult;
 const memoResult1 = importAllResult.memo(function DetailedGuildIdentityUserRow(arrow) {
   let accessibilityLabel;
   let accessibilityRole;
@@ -76,55 +80,66 @@ const memoResult1 = importAllResult.memo(function DetailedGuildIdentityUserRow(a
     deprecatedFormRow = false;
   }
   ({ disabled, guildId, leading, onPress, trailing, userId: require, subLabel, accessibilityRole, accessibilityState } = arrow);
+  let SMALL = dependencyMap;
   ({ end, start } = arrow);
-  let obj = require(566) /* initialize */;
-  const items = [_isNativeReflectConstruct];
+  let obj = require(589) /* initialize */;
+  const items = [mergeGuildAvatar];
   const stateFromStores = obj.useStateFromStores(items, () => outer1_4.getUser(closure_0));
-  let tmp = null;
   if (null == stateFromStores) {
     return null;
-  } else {
-    let FormRow = require;
-    if (deprecatedFormRow) {
-      FormRow = FormRow(7611).FormRow;
-      obj = { accessibilityLabel, disabled };
-      if (tmp == leading) {
-        accessibilityLabel = callback;
-        obj = { source: stateFromStores.getAvatarSource(guildId), size: require(1273) /* Button */.AvatarSizes.SMALL };
-        leading = callback(require(1273) /* Button */.Avatar, obj);
-      }
-      obj.leading = leading;
-      tmp = callback;
-      leading = closure_8;
-      const obj1 = { contentHeight, user: stateFromStores, guildId };
-      obj.label = callback(closure_8, obj1);
-      obj.onPress = onPress;
-      obj.subLabel = subLabel;
-      obj.trailing = trailing;
-      obj.accessibilityRole = accessibilityRole;
-      obj.accessibilityState = accessibilityState;
-      let tmp2Result = tmp2(FormRow, obj);
-    } else {
-      const obj2 = { accessibilityLabel, arrow: arrow.arrow, disabled, end };
-      let tmp4 = leading;
-      if (tmp == leading) {
-        const obj3 = { source: stateFromStores.getAvatarSource(guildId), size: require(1273) /* Button */.AvatarSizes.SMALL };
-        tmp4 = callback(require(1273) /* Button */.Avatar, obj3);
-      }
-      obj2.icon = tmp4;
-      const obj4 = { contentHeight, user: stateFromStores, guildId };
-      obj2.label = callback(closure_8, obj4);
-      obj2.onPress = onPress;
-      obj2.start = start;
-      obj2.subLabel = subLabel;
-      obj2.trailing = trailing;
-      obj2.accessibilityRole = accessibilityRole;
-      obj2.accessibilityState = accessibilityState;
-      tmp2Result = tmp2(FormRow(5198).TableRow, obj2);
+  } else if (deprecatedFormRow) {
+    obj = { accessibilityLabel: null, disabled: null, leading: null, label: null, onPress: null, subLabel: null, trailing: null, accessibilityRole: null, accessibilityState: null };
+    obj[0] = accessibilityLabel;
+    obj[1] = disabled;
+    if (leading == null) {
+      disabled = { source: null, size: null };
+      disabled[0] = stateFromStores.getAvatarSource(guildId);
+      SMALL = tmp(1297).AvatarSizes.SMALL;
+      disabled[1] = SMALL;
+      leading = tmp2(tmp(1297).Avatar, disabled);
     }
+    obj[2] = leading;
+    leading = closure_8;
+    obj = { contentHeight: null, user: null, guildId: null };
+    obj[0] = contentHeight;
+    obj[1] = stateFromStores;
+    obj[2] = guildId;
+    obj[3] = tmp2(closure_8, obj);
+    obj[4] = onPress;
+    obj[5] = subLabel;
+    obj[6] = trailing;
+    obj[7] = accessibilityRole;
+    obj[8] = accessibilityState;
+    let tmp2Result = tmp2(tmp(7634).FormRow, obj);
+  } else {
+    const obj1 = { accessibilityLabel: null, arrow: null, disabled: null, end: null, icon: null, label: null, onPress: null, start: null, subLabel: null, trailing: null, accessibilityRole: null, accessibilityState: null };
+    obj1[0] = accessibilityLabel;
+    obj1[1] = arrow.arrow;
+    obj1[2] = disabled;
+    obj1[3] = end;
+    tmp2Result = leading;
+    if (leading == null) {
+      const obj2 = { source: null, size: null };
+      obj2[0] = stateFromStores.getAvatarSource(guildId);
+      obj2[1] = tmp(1297).AvatarSizes.SMALL;
+      tmp2Result = tmp2(tmp(1297).Avatar, obj2);
+    }
+    obj1[4] = tmp2Result;
+    const obj3 = { contentHeight: null, user: null, guildId: null };
+    obj3[0] = contentHeight;
+    obj3[1] = stateFromStores;
+    obj3[2] = guildId;
+    obj1[5] = tmp2(closure_8, obj3);
+    obj1[6] = onPress;
+    obj1[7] = start;
+    obj1[8] = subLabel;
+    obj1[9] = trailing;
+    obj1[10] = accessibilityRole;
+    obj1[11] = accessibilityState;
+    tmp2Result = tmp2(tmp(5220).TableRow, obj1);
   }
 });
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/guild_settings/native/DetailedGuildIdentityUserRow.tsx");
+const result = require("mergeGuildAvatar").fileFinishedImporting("modules/guild_settings/native/DetailedGuildIdentityUserRow.tsx");
 
 export default memoResult1;
 export const DetailedGuildIdentityUser = memoResult;

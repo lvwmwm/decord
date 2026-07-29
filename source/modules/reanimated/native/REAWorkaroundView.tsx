@@ -1,19 +1,19 @@
-// Module ID: 4027
-// Function ID: 33236
+// Module ID: 4051
+// Function ID: 4052
 // Name: View
-// Dependencies: [31, 33, 1582, 4028, 4029, 2]
+// Dependencies: [19, 21, 1606, 4052, 4053, 2]
 
-// Module 4027 (View)
+// Module 4051 (View)
 import { jsx } from "jsxProd";
 import __INTERNAL_VIEW_CONFIG from "__INTERNAL_VIEW_CONFIG";
 import isFabric from "isFabric";
 import importDefaultResult from "cancelAnimation";
 
-let View = require("result").forwardRef((entering) => {
+let View = require("noop").forwardRef((entering, ref) => {
   const obj = {};
   const merged = Object.assign(entering);
-  obj["hasEnteringAnimation"] = null != entering.entering;
-  obj["ref"] = arg1;
+  obj.hasEnteringAnimation = null != entering.entering;
+  obj.ref = ref;
   return <__INTERNAL_VIEW_CONFIG />;
 });
 View.displayName = "REAWorkaroundView";

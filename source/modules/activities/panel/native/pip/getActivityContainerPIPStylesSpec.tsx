@@ -1,10 +1,10 @@
-// Module ID: 15811
-// Function ID: 121784
+// Module ID: 15846
+// Function ID: 15847
 // Name: OrientationLockState
-// Dependencies: [4190, 5670, 9891, 2]
+// Dependencies: [4214, 5688, 9913, 2]
 // Exports: default
 
-// Module 15811 (OrientationLockState)
+// Module 15846 (OrientationLockState)
 import { OrientationLockState } from "items3";
 import { LANDSCAPE_ACTIVITY_ASPECT_RATIO } from "ActivityPanelModes";
 
@@ -13,31 +13,30 @@ const fn = function t(isLandscape) {
   let pipOrientationLockState;
   let pipWidth;
   ({ pipWidth, pipHeight, pipOrientationLockState } = isLandscape);
-  if (null == pipOrientationLockState) {
+  if (pipOrientationLockState == null) {
     pipOrientationLockState = OrientationLockState.UNLOCKED;
   }
   if (pipOrientationLockState === OrientationLockState.PORTRAIT) {
     const result = pipWidth * LANDSCAPE_ACTIVITY_ASPECT_RATIO;
-    let num4 = -1 * importDefault(9891)(result / 2);
-    let flag = false;
-    let flag2 = true;
-    let num3 = 0;
-    let result1 = pipWidth;
-    pipHeight = result;
+    let marginTop = -1 * importDefault(9913)(result / 2);
+    let marginLeft = 0;
+    let shouldVerticallyCenter = true;
+    let shouldHorizontallyCenter = false;
+    const height = result;
+    let width = pipWidth;
   } else {
-    result1 = pipHeight * LANDSCAPE_ACTIVITY_ASPECT_RATIO;
-    num3 = -1 * importDefault(9891)(result1 / 2);
-    flag = true;
-    flag2 = false;
-    num4 = 0;
+    width = height * LANDSCAPE_ACTIVITY_ASPECT_RATIO;
+    marginLeft = -1 * importDefault(9913)(width / 2);
+    marginTop = 0;
+    shouldVerticallyCenter = false;
+    shouldHorizontallyCenter = true;
   }
-  const obj = { width: result1, height: pipHeight, shouldHorizontallyCenter: flag, shouldVerticallyCenter: flag2, marginLeft: num3, marginTop: num4 };
-  return obj;
+  return { width, height, shouldHorizontallyCenter, shouldVerticallyCenter, marginLeft, marginTop };
 };
 fn.__closure = { OrientationLockState, LANDSCAPE_ACTIVITY_ASPECT_RATIO, roundToNearestPixel: require("t") };
 fn.__workletHash = 7141745103186;
 fn.__initData = { code: "function getActivityContainerPipStylesSpec_getActivityContainerPIPStylesSpecTsx1({pipWidth:pipWidth,pipHeight:pipHeight,pipOrientationLockState:pipOrientationLockState,isLandscape:isLandscape}){const{OrientationLockState,LANDSCAPE_ACTIVITY_ASPECT_RATIO,roundToNearestPixel}=this.__closure;const nonNullPipOrientationLockState=pipOrientationLockState!==null&&pipOrientationLockState!==void 0?pipOrientationLockState:OrientationLockState.UNLOCKED;const shouldUsePortraitAspectRatio=nonNullPipOrientationLockState===OrientationLockState.PORTRAIT||nonNullPipOrientationLockState===OrientationLockState.UNLOCKED&&!isLandscape;let width=pipWidth;let height=pipHeight;let shouldHorizontallyCenter=false;let shouldVerticallyCenter=false;let marginLeft=0;let marginTop=0;if(shouldUsePortraitAspectRatio){width=pipWidth;height=width*LANDSCAPE_ACTIVITY_ASPECT_RATIO;shouldVerticallyCenter=true;marginTop=roundToNearestPixel(height/2)*-1;}else{height=pipHeight;width=height*LANDSCAPE_ACTIVITY_ASPECT_RATIO;shouldHorizontallyCenter=true;marginLeft=roundToNearestPixel(width/2)*-1;}return{width:width,height:height,shouldHorizontallyCenter:shouldHorizontallyCenter,shouldVerticallyCenter:shouldVerticallyCenter,marginLeft:marginLeft,marginTop:marginTop};}" };
-let obj = { OrientationLockState, LANDSCAPE_ACTIVITY_ASPECT_RATIO, roundToNearestPixel: require("t") };
+const obj = { OrientationLockState, LANDSCAPE_ACTIVITY_ASPECT_RATIO, roundToNearestPixel: require("t") };
 let result = require("t").fileFinishedImporting("modules/activities/panel/native/pip/getActivityContainerPIPStylesSpec.tsx");
 
 export default fn;

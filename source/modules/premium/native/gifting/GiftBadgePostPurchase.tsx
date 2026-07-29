@@ -1,23 +1,23 @@
-// Module ID: 9802
-// Function ID: 76059
+// Module ID: 9824
+// Function ID: 9825
 // Name: PostPurchaseFooter
-// Dependencies: [31, 27, 8085, 9803, 1345, 33, 4165, 689, 1557, 4372, 4017, 4578, 8744, 1212, 2295, 9804, 4161, 4134, 4135, 9684, 9805, 3981, 1334, 566, 8082, 2]
+// Dependencies: [19, 17, 8109, 9825, 1369, 21, 4189, 712, 1581, 4395, 4041, 4600, 8768, 1236, 2319, 9826, 4185, 4158, 4159, 9706, 9827, 4005, 1358, 589, 8106, 2]
 // Exports: default
 
-// Module 9802 (PostPurchaseFooter)
-import result from "result";
-import { View } from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import getNextTierForProgress from "getNextTierForProgress";
+// Module 9824 (PostPurchaseFooter)
+import GiftingBadgeIcon from "GiftingBadgeIcon";
+import { View } from "HapticFeedbackTypes";
+import map from "map";
+import getTierForProgress from "getTierForProgress";
 import { ContentDismissActionType } from "ContentDismissActionType";
-import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import jsxProd from "UNSAFE_isDismissibleContentDismissed";
+import createCacheKey from "createCacheKey";
 
-let closure_10;
-let closure_11;
+let c10;
 let closure_6;
-let closure_7;
-let closure_8;
+let error;
+let metroImportAll;
+let unpackModuleId;
 const require = arg1;
 function PostPurchaseFooter(onSendGift) {
   onSendGift = onSendGift.onSendGift;
@@ -27,28 +27,29 @@ function PostPurchaseFooter(onSendGift) {
     arr = arr.pop();
     onSendGift();
   }, items);
-  let obj = { style: callback6(importDefault(1557)().bottom).footer };
+  let obj = { style: callback6(importDefault(1581)().bottom).footer, children: null };
   const callback1 = React.useCallback(() => {
-    let arr = outer1_1(outer1_2[9]);
+    let arr = callback(4395);
     arr = arr.pop();
-    const rootNavigationRef = onSendGift(outer1_2[10]).getRootNavigationRef();
-    if (null != rootNavigationRef) {
+    const rootNavigationRef = onSendGift(4041).getRootNavigationRef();
+    if (rootNavigationRef != null) {
       rootNavigationRef.navigate("you");
     }
   }, []);
-  obj = { grow: true, variant: "primary" };
-  obj = { size: "sm", color: importDefault(689).colors.CONTROL_PRIMARY_TEXT_DEFAULT };
-  obj.icon = callback4(onSendGift(8744).GiftIcon, obj);
-  const intl = onSendGift(1212).intl;
-  obj.text = intl.string(importDefault(2295).g86YiI);
-  obj.onPress = callback;
-  const items1 = [callback4(onSendGift(4578).Button, obj), ];
-  const obj1 = { grow: true, variant: "secondary" };
-  const intl2 = onSendGift(1212).intl;
-  obj1.text = intl2.string(importDefault(2295)["sa/cfM"]);
-  obj1.onPress = callback1;
-  items1[1] = callback4(onSendGift(4578).Button, obj1);
-  obj.children = items1;
+  obj = { grow: true, variant: "primary", icon: null, text: null, onPress: null };
+  obj = { size: "sm", color: null };
+  obj[1] = importDefault(712).colors.CONTROL_PRIMARY_TEXT_DEFAULT;
+  obj[2] = callback4(onSendGift(8768).GiftIcon, obj);
+  const intl = onSendGift(1236).intl;
+  obj[3] = intl.string(importDefault(2319).g86YiI);
+  obj[4] = callback;
+  const items1 = [callback4(onSendGift(4600).Button, obj), ];
+  const obj1 = { grow: true, variant: "secondary", text: null, onPress: null };
+  const intl2 = onSendGift(1236).intl;
+  obj1[2] = intl2.string(importDefault(2319)["sa/cfM"]);
+  obj1[3] = callback1;
+  items1[1] = callback4(onSendGift(4600).Button, obj1);
+  obj[1] = items1;
   return callback5(View, obj);
 }
 function InProgressScreen(arg0) {
@@ -60,20 +61,18 @@ function InProgressScreen(arg0) {
   let progressBarTitle;
   let title;
   ({ progress, title, progressBarTitle, description, currentTier, nextTier, onSendGift } = arg0);
-  const tmp = callback6(importDefault(1557)().bottom);
-  let obj = { style: tmp.screenContainer };
-  obj = { style: tmp.content };
-  obj = { style: tmp.progressWrapper, children: callback4(importDefault(9804), { progress, currentTier, nextTier, iconSize: 48, title: progressBarTitle }) };
+  const tmp = callback6(importDefault(1581)().bottom);
+  let obj = { style: tmp.screenContainer, children: null };
+  obj = { style: tmp.content, children: null };
+  obj = { style: tmp.progressWrapper, children: callback4(importDefault(9826), { progress, currentTier, nextTier, iconSize: 48, title: progressBarTitle }) };
   const items = [callback4(View, obj), ];
-  const obj1 = { style: tmp.messageSection };
-  const items1 = [callback4(require(4161) /* Text */.Text, { variant: "heading-xxl/bold", style: tmp.centerText, children: title }), ];
-  const obj3 = { variant: "text-md/medium", color: "text-subtle", style: tmp.centerText, children: description };
-  items1[1] = callback4(require(4161) /* Text */.Text, obj3);
-  obj1.children = items1;
+  const obj1 = { style: tmp.messageSection, children: null };
+  const items1 = [callback4(require(4185) /* Text */.Text, { variant: "heading-xxl/bold", style: tmp.centerText, children: title }), callback4(require(4185) /* Text */.Text, { variant: "text-md/medium", color: "text-subtle", style: tmp.centerText, children: description })];
+  obj1[1] = items1;
   items[1] = callback5(View, obj1);
-  obj.children = items;
+  obj[1] = items;
   const items2 = [callback5(View, obj), callback4(PostPurchaseFooter, { onSendGift })];
-  obj.children = items2;
+  obj[1] = items2;
   return callback5(View, obj);
 }
 function LevelUpScreen(arg0) {
@@ -85,98 +84,96 @@ function LevelUpScreen(arg0) {
   let simulatedProgress;
   ({ newTier, nextTier, giftsToNextTier } = arg0);
   ({ simulatedProgress, currentTier, onSendGift } = arg0);
-  const tmp = callback6(importDefault(1557)().bottom);
+  const tmp3 = callback6(importDefault(1581)().bottom);
   const effect = React.useEffect(() => {
-    const result = outer1_0(outer1_2[17]).triggerHapticFeedback(outer1_1(outer1_2[18]).IMPACT_HEAVY);
+    const result = callback(4158).triggerHapticFeedback(callback2(4159).IMPACT_HEAVY);
   }, []);
-  let obj = { style: tmp.screenContainer };
-  obj = { style: tmp.content };
-  obj = { style: tmp.levelUpIconWrapper };
-  let tmp9 = null != newTier.simple_icon_url;
-  if (tmp9) {
-    const obj1 = { icon: newTier.simple_icon_url, size: 140 };
-    tmp9 = callback4(importDefault(9684), obj1);
+  let obj = { style: tmp3.screenContainer, children: null };
+  obj = { style: tmp3.content, children: null };
+  obj = { style: tmp3.levelUpIconWrapper, children: null };
+  let tmp7Result = null != newTier.simple_icon_url;
+  if (tmp7Result) {
+    const obj1 = { icon: null, size: 140 };
+    obj1[0] = newTier.simple_icon_url;
+    tmp7Result = tmp7(tmp(9706), obj1);
   }
-  obj.children = tmp9;
-  const items = [callback4(View, obj), ];
-  const obj2 = { style: tmp.levelUpBody };
-  const items1 = [callback4(importDefault(9805), { progress: simulatedProgress, currentTier, newTier, style: tmp.levelUpProgress }), ];
-  const obj4 = { style: tmp.messageSection };
-  const obj5 = { variant: "heading-xxl/bold", style: tmp.centerText };
-  const intl = require(1212) /* getSystemLocale */.intl;
-  const obj6 = {};
-  const name = newTier.name;
-  let str = "";
-  let str2 = "";
-  if (null != name) {
-    str2 = name;
+  obj[1] = tmp7Result;
+  const items = [closure_10(View, obj), ];
+  const obj2 = { style: tmp3.levelUpBody, children: null };
+  const items1 = [closure_10(importDefault(9827), { progress: simulatedProgress, currentTier, newTier, style: tmp3.levelUpProgress }), ];
+  const obj4 = { style: tmp3.messageSection, children: null };
+  const obj5 = { variant: "heading-xxl/bold", style: tmp3.centerText, children: null };
+  const intl = require(1236) /* getSystemLocale */.intl;
+  let str = newTier.name;
+  if (str == null) {
+    str = "";
   }
-  obj6.tierName = str2;
-  obj5.children = intl.format(importDefault(2295).k8MmO8, obj6);
-  const items2 = [callback4(require(4161) /* Text */.Text, obj5), ];
-  let tmp19Result = null != nextTier && null != giftsToNextTier;
-  if (tmp19Result) {
-    tmp19Result = giftsToNextTier > 0;
+  obj5[2] = intl.format(importDefault(2319).k8MmO8, { tierName: str });
+  const items2 = [closure_10(require(4185) /* Text */.Text, obj5), ];
+  tmp7Result = null != nextTier && null != giftsToNextTier;
+  if (tmp7Result) {
+    tmp7Result = giftsToNextTier > 0;
   }
-  if (tmp19Result) {
-    const obj7 = { variant: "text-md/normal", color: "text-subtle", style: tmp.centerText };
-    const intl2 = require(1212) /* getSystemLocale */.intl;
-    const obj8 = { count: giftsToNextTier };
-    const name2 = nextTier.name;
-    if (null != name2) {
-      str = name2;
+  if (tmp7Result) {
+    const obj6 = { variant: "text-md/normal", color: "text-subtle", style: null, children: null };
+    obj6[2] = tmp3.centerText;
+    const intl2 = tmp9(1236).intl;
+    const obj7 = { count: null, nextTierName: null };
+    obj7[0] = giftsToNextTier;
+    let str2 = nextTier.name;
+    if (str2 == null) {
+      str2 = "";
     }
-    obj8.nextTierName = str;
-    obj7.children = intl2.format(importDefault(2295)["6QVlxw"], obj8);
-    tmp19Result = callback4(require(4161) /* Text */.Text, obj7);
-    const tmp19 = callback4;
+    obj7[1] = str2;
+    obj6[3] = intl2.format(tmp(2319)["6QVlxw"], obj7);
+    tmp7Result = tmp7(tmp9(4185).Text, obj6);
   }
-  items2[1] = tmp19Result;
-  obj4.children = items2;
+  items2[1] = tmp7Result;
+  obj4[1] = items2;
   items1[1] = closure_11(View, obj4);
-  obj2.children = items1;
+  obj2[1] = items1;
   items[1] = closure_11(View, obj2);
-  obj.children = items;
-  const items3 = [closure_11(View, obj), callback4(PostPurchaseFooter, { onSendGift })];
-  obj.children = items3;
+  obj[1] = items;
+  const items3 = [closure_11(View, obj), closure_10(PostPurchaseFooter, { onSendGift })];
+  obj[1] = items3;
   return closure_11(View, obj);
 }
-({ getRemainingGiftsToNextTier: closure_6, getTierForProgress: closure_7, getNextTierForProgress: closure_8 } = getNextTierForProgress);
-({ jsx: closure_10, jsxs: closure_11 } = jsxProd);
-let closure_12 = _createForOfIteratorHelperLoose.createStyles((arg0) => {
-  let obj = { screenContainer: { flex: 1 } };
-  obj = { flex: 1, alignItems: "center", justifyContent: "center", padding: importDefault(689).space.PX_16 };
-  obj.content = obj;
-  obj = { padding: importDefault(689).space.PX_16, width: "100%", marginBottom: importDefault(689).space.PX_24 };
-  obj.progressWrapper = obj;
-  const obj1 = { gap: importDefault(689).space.PX_12, alignItems: "center", width: "100%", paddingHorizontal: importDefault(689).space.PX_16 };
-  obj.messageSection = obj1;
-  obj.centerText = { textAlign: "center" };
-  const obj2 = { paddingVertical: 26, paddingHorizontal: 74, marginBottom: importDefault(689).space.PX_48 };
-  obj.levelUpIconWrapper = obj2;
-  const obj3 = { gap: importDefault(689).space.PX_12, alignItems: "center", width: "100%" };
-  obj.levelUpBody = obj3;
-  obj.levelUpProgress = { maxWidth: 260 };
-  obj.footer = { width: "100%", gap: importDefault(689).space.PX_12, paddingHorizontal: importDefault(689).space.PX_16, paddingBottom: importDefault(689).space.PX_16 + arg0 };
+({ getRemainingGiftsToNextTier: closure_6, getTierForProgress: error, getNextTierForProgress: metroImportAll } = getTierForProgress);
+({ jsx: c10, jsxs: unpackModuleId } = jsxProd);
+let closure_12 = createCacheKey.createStyles((arg0) => {
+  let obj = { screenContainer: { flex: 1 }, content: null, progressWrapper: null, messageSection: null, centerText: null, levelUpIconWrapper: null, levelUpBody: null, levelUpProgress: null, footer: null };
+  obj = { flex: 1, alignItems: "center", justifyContent: "center", padding: importDefault(712).space.PX_16 };
+  obj[1] = obj;
+  obj = { padding: importDefault(712).space.PX_16, width: "100%", marginBottom: importDefault(712).space.PX_24 };
+  obj[2] = obj;
+  obj[3] = { gap: importDefault(712).space.PX_12, alignItems: "center", width: "100%", paddingHorizontal: importDefault(712).space.PX_16 };
+  obj[4] = { textAlign: "center" };
+  const obj1 = { gap: importDefault(712).space.PX_12, alignItems: "center", width: "100%", paddingHorizontal: importDefault(712).space.PX_16 };
+  obj[5] = { paddingVertical: 26, paddingHorizontal: 74, marginBottom: importDefault(712).space.PX_48 };
+  const obj2 = { paddingVertical: 26, paddingHorizontal: 74, marginBottom: importDefault(712).space.PX_48 };
+  obj[6] = { gap: importDefault(712).space.PX_12, alignItems: "center", width: "100%" };
+  obj[7] = { maxWidth: 260 };
+  const obj3 = { gap: importDefault(712).space.PX_12, alignItems: "center", width: "100%" };
+  obj[8] = { width: "100%", gap: importDefault(712).space.PX_12, paddingHorizontal: importDefault(712).space.PX_16, paddingBottom: importDefault(712).space.PX_16 + arg0 };
   return obj;
 });
-let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/premium/native/gifting/GiftBadgePostPurchase.tsx");
+let result = require("map").fileFinishedImporting("modules/premium/native/gifting/GiftBadgePostPurchase.tsx");
 
 export default function GiftBadgePostPurchase(arg0) {
   let currentProgress;
   let onSendGift;
   ({ currentProgress, onSendGift } = arg0);
   const effect = React.useEffect(() => {
-    let obj = outer1_0(outer1_2[21]);
-    obj = { dismissAction: outer1_9.INDIRECT_ACTION };
-    const result = obj.UNSAFE_markDismissibleContentAsDismissed(outer1_0(outer1_2[22]).DismissibleContent.NEW_GIFTING_BADGES_COACHMARK, obj);
+    let obj = callback(4005);
+    obj = { dismissAction: constants.INDIRECT_ACTION };
+    const result = obj.UNSAFE_markDismissibleContentAsDismissed(callback(1358).DismissibleContent.NEW_GIFTING_BADGES_COACHMARK, obj);
   }, []);
-  let obj = require(566) /* initialize */;
-  const items = [_isNativeReflectConstruct];
+  let obj = require(589) /* initialize */;
+  const items = [map];
   const stateFromStores = obj.useStateFromStores(items, () => {
+    badgeById = badgeById.getBadgeById(callback(8106).BadgeId.GIFTING);
     let tiers;
-    const badgeById = outer1_5.getBadgeById(outer1_0(outer1_2[24]).BadgeId.GIFTING);
-    if (null != badgeById) {
+    if (badgeById != null) {
       tiers = badgeById.tiers;
     }
     return tiers;
@@ -184,94 +181,88 @@ export default function GiftBadgePostPurchase(arg0) {
   if (null == stateFromStores) {
     return null;
   } else {
-    const tmp31 = callback2(stateFromStores, currentProgress);
+    const tmp24 = callback2(stateFromStores, currentProgress);
     const sum = currentProgress + 1;
-    const tmp33 = callback2(stateFromStores, sum);
+    const tmp26 = callback2(stateFromStores, sum);
     let key;
-    if (null != tmp33) {
-      key = tmp33.key;
+    if (tmp26 != null) {
+      key = tmp26.key;
     }
     let key1;
-    if (null != tmp31) {
-      key1 = tmp31.key;
+    if (tmp24 != null) {
+      key1 = tmp24.key;
     }
-    const tmp6 = callback3(stateFromStores, sum);
-    const tmp8 = callback(stateFromStores, sum);
+    const tmp8 = callback3(stateFromStores, sum);
+    const tmp10 = callback(stateFromStores, sum);
     if (key !== key1) {
-      if (null != tmp33) {
-        obj = { simulatedProgress: sum, currentTier: tmp31, newTier: tmp33, nextTier: tmp6, giftsToNextTier: tmp8, onSendGift };
-        let tmp9Result = callback4(LevelUpScreen, obj);
+      if (null != tmp26) {
+        obj = { simulatedProgress: null, currentTier: null, newTier: null, nextTier: null, giftsToNextTier: null, onSendGift: null };
+        obj[0] = sum;
+        obj[1] = tmp24;
+        obj[2] = tmp26;
+        obj[3] = tmp8;
+        obj[4] = tmp10;
+        obj[5] = onSendGift;
+        let tmp11Result = callback4(LevelUpScreen, obj);
       }
-      return tmp9Result;
+      return tmp11Result;
     }
-    if (1 === tmp8) {
-      obj = {};
-      const intl2 = require(1212) /* getSystemLocale */.intl;
-      const obj1 = {};
-      let name;
-      if (null != tmp6) {
-        name = tmp6.name;
+    if (1 === tmp10) {
+      const intl2 = tmp2(1236).intl;
+      let str2;
+      if (tmp8 != null) {
+        str2 = tmp8.name;
       }
-      let str2 = "";
-      if (null != name) {
-        str2 = name;
+      if (str2 == null) {
+        str2 = "";
       }
-      obj1.nextTier = str2;
-      obj.title = intl2.formatToPlainString(importDefault(2295).KjdBPz, obj1);
-      const intl3 = require(1212) /* getSystemLocale */.intl;
-      obj.description = intl3.string(importDefault(2295).oqDrEM);
-      const intl4 = require(1212) /* getSystemLocale */.intl;
-      obj.progressBarTitle = intl4.string(importDefault(2295)["Ka5s+Q"]);
-      obj.progress = sum;
-      let tmp25;
-      if (null != tmp33) {
-        tmp25 = tmp33;
-      }
-      obj.currentTier = tmp25;
-      let tmp26;
-      if (null != tmp6) {
-        tmp26 = tmp6;
-      }
-      obj.nextTier = tmp26;
-      obj.onSendGift = onSendGift;
+      obj = { title: null, description: null, progressBarTitle: null, progress: null, currentTier: null, nextTier: null, onSendGift: null };
+      const obj1 = { nextTier: null };
+      obj1[0] = str2;
+      obj[0] = intl2.formatToPlainString(importDefault(2319).KjdBPz, obj1);
+      const intl3 = tmp2(1236).intl;
+      obj[1] = intl3.string(importDefault(2319).oqDrEM);
+      const intl4 = tmp2(1236).intl;
+      obj[2] = intl4.string(importDefault(2319)["Ka5s+Q"]);
+      obj[3] = sum;
+      obj[4] = tmp26;
+      obj[5] = tmp8;
+      obj[6] = onSendGift;
       let obj2 = obj;
+      const tmp18 = tmp26;
+      const tmp19 = tmp8;
     } else {
-      obj2 = {};
-      const intl5 = require(1212) /* getSystemLocale */.intl;
-      obj2.title = intl5.string(importDefault(2295)["/rBQud"]);
-      const intl6 = require(1212) /* getSystemLocale */.intl;
-      obj2.description = intl6.string(importDefault(2295).DDQMlx);
-      let name1;
-      if (null != tmp31) {
-        name1 = tmp31.name;
+      obj2 = { title: null, description: null, progressBarTitle: null, progress: null, currentTier: null, nextTier: null, onSendGift: null };
+      const intl5 = tmp2(1236).intl;
+      obj2[0] = intl5.string(importDefault(2319)["/rBQud"]);
+      const intl6 = tmp2(1236).intl;
+      obj2[1] = intl6.string(importDefault(2319).DDQMlx);
+      let name;
+      if (tmp24 != null) {
+        name = tmp24.name;
       }
       let str = "";
-      if (null != name1) {
-        const intl = require(1212) /* getSystemLocale */.intl;
-        const obj3 = {};
-        let name2;
-        if (null != tmp31) {
-          name2 = tmp31.name;
+      if (null != name) {
+        const intl = tmp2(1236).intl;
+        let name1;
+        if (tmp24 != null) {
+          name1 = tmp24.name;
         }
-        obj3.tierName = name2;
-        str = intl.formatToPlainString(importDefault(2295).bwyQt8, obj3);
+        const obj3 = { tierName: null };
+        obj3[0] = name1;
+        str = intl.formatToPlainString(tmp27(2319).bwyQt8, obj3);
       }
-      obj2.progressBarTitle = str;
-      obj2.progress = sum;
-      let tmp16;
-      if (null != tmp33) {
-        tmp16 = tmp33;
-      }
-      obj2.currentTier = tmp16;
-      let tmp17;
-      if (null != tmp6) {
-        tmp17 = tmp6;
-      }
-      obj2.nextTier = tmp17;
-      obj2.onSendGift = onSendGift;
+      obj2[2] = str;
+      obj2[3] = sum;
+      obj2[4] = tmp26;
+      obj2[5] = tmp8;
+      obj2[6] = onSendGift;
+      const tmp15 = tmp26;
+      const tmp16 = tmp8;
+      tmp27 = importDefault;
     }
-    tmp9Result = callback4(InProgressScreen, obj2);
-    const tmp10 = InProgressScreen;
-    const tmp9 = callback4;
+    tmp11Result = callback4(InProgressScreen, obj2);
+    const tmp11 = callback4;
+    const tmp12 = InProgressScreen;
   }
 };

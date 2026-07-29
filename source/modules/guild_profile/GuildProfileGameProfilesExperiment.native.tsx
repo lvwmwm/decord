@@ -1,14 +1,15 @@
-// Module ID: 11928
-// Function ID: 92170
+// Module ID: 11952
+// Function ID: 11953
 // Name: useGuildProfileGameProfilesExperiment
-// Dependencies: [1428, 2]
+// Dependencies: [1452, 2]
 // Exports: useGuildProfileGameProfilesExperiment
 
-// Module 11928 (useGuildProfileGameProfilesExperiment)
+// Module 11952 (useGuildProfileGameProfilesExperiment)
 import ApexExperiment from "ApexExperiment";
 
-const obj = { name: "2026-07-server-tag-game-profiles-mobile", kind: "user", defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } };
-let closure_0 = ApexExperiment.createApexExperiment(obj);
+const obj = { 1: null };
+obj[1] = { enabled: true };
+let closure_0 = ApexExperiment.createApexExperiment({ name: "2026-07-server-tag-game-profiles-mobile", kind: "user", defaultConfig: { enabled: false }, variations: obj });
 const result = require("set").fileFinishedImporting("modules/guild_profile/GuildProfileGameProfilesExperiment.native.tsx");
 
 export const useGuildProfileGameProfilesExperiment = function useGuildProfileGameProfilesExperiment(location) {

@@ -1,66 +1,68 @@
-// Module ID: 15394
-// Function ID: 117221
+// Module ID: 15427
+// Function ID: 15428
 // Name: ResourcesRow
-// Dependencies: [31, 27, 15395, 33, 4165, 689, 15396, 11414, 4133, 15397, 1935, 4695, 4161, 1212, 2]
+// Dependencies: [19, 17, 15428, 21, 4189, 712, 15429, 11438, 4157, 15430, 1959, 4717, 4185, 1236, 2]
 // Exports: default
 
-// Module 15394 (ResourcesRow)
-import "result";
+// Module 15427 (ResourcesRow)
+import "noop";
 import { ScrollView } from "get ActivityIndicator";
 import { ONBOARDING_HOME_RESOURCES_SHEET_KEY as closure_4 } from "ONBOARDING_HOME_RESOURCES_SHEET_KEY";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_5;
+let c5;
 let closure_6;
 const require = arg1;
-({ jsx: closure_5, jsxs: closure_6 } = jsxProd);
-_createForOfIteratorHelperLoose = { container: { display: "flex", flexDirection: "row", paddingBottom: 8, marginBottom: 16 } };
-_createForOfIteratorHelperLoose = { display: "flex", justifyContent: "center", backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWEST, borderRadius: require("_createForOfIteratorHelperLoose").radii.round, marginLeft: 8, paddingVertical: 8, paddingHorizontal: 12 };
-_createForOfIteratorHelperLoose.channelItem = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+({ jsx: c5, jsxs: closure_6 } = jsxProd);
+createCacheKey = { container: { display: "flex", flexDirection: "row", paddingBottom: 8, marginBottom: 16 }, channelItem: null };
+createCacheKey = { display: "flex", justifyContent: "center", backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOWEST, borderRadius: require("Themes").radii.round, marginLeft: 8, paddingVertical: 8, paddingHorizontal: 12 };
+createCacheKey[1] = createCacheKey;
+createCacheKey = createCacheKey.createStyles(createCacheKey);
 const result = require("ONBOARDING_HOME_RESOURCES_SHEET_KEY").fileFinishedImporting("modules/guild_onboarding_home/native/ResourcesRow.tsx");
 
 export default function ResourcesRow(guildId) {
   guildId = guildId.guildId;
-  const tmp = _createForOfIteratorHelperLoose();
-  const importDefault = tmp;
-  const arr = importDefault(15396)(guildId);
-  let obj = { horizontal: true, style: tmp.container };
+  let importDefault;
+  const tmp = createCacheKey();
+  importDefault = tmp;
+  const arr = importDefault(15429)(guildId);
+  let obj = { horizontal: true, style: tmp.container, children: null };
   const substr = arr.slice(0, 2);
   const items = [
-    substr.map((title) => {
-      let closure_0 = title;
+    substr.map((children) => {
+      let closure_0 = children;
       let obj = {
-        style: tmp.channelItem,
+        style: _undefined.channelItem,
         onPress() {
-          const homeResourceChannel = guildId(outer2_2[7]).selectHomeResourceChannel(title, title.channelId);
-        }
+          const homeResourceChannel = guildId(outer2_2[7]).selectHomeResourceChannel(channelId, channelId.channelId);
+        },
+        children: null
       };
-      obj = { variant: "text-md/medium", color: "text-default", children: title.title };
-      obj.children = outer1_5(guildId(outer1_2[12]).Text, obj);
-      return outer1_5(guildId(outer1_2[11]).PressableOpacity, obj, title.channelId);
+      obj = { variant: "text-md/medium", color: "text-default", children: children.title };
+      obj[2] = outer1_5(guildId(outer1_2[12]).Text, obj);
+      return outer1_5(guildId(outer1_2[11]).PressableOpacity, obj, children.channelId);
     }),
 
   ];
-  let tmp5 = null;
-  if (tmp2) {
-    obj = {
-      style: tmp.channelItem,
-      onPress() {
-          let obj = tmp(outer1_2[8]);
-          obj = { guildId };
-          obj.openLazy(guildId(outer1_2[10])(outer1_2[9], outer1_2.paths), outer1_4, obj);
-        }
+  let tmp6 = null;
+  if (tmp3) {
+    obj = { style: null, onPress: null, children: null };
+    obj[0] = tmp.channelItem;
+    obj[1] = function onPress() {
+      let obj = _undefined(outer1_2[8]);
+      obj = { guildId };
+      obj.openLazy(guildId(outer1_2[10])(outer1_2[9], outer1_2.paths), outer1_4, obj);
     };
-    obj = { variant: "text-md/medium", color: "text-default" };
-    const intl = guildId(1212).intl;
-    const obj1 = { count: arr.length - 2 };
-    obj.children = intl.format(guildId(1212).t.F6iMs4, obj1);
-    obj.children = callback(guildId(4161).Text, obj);
-    tmp5 = callback(guildId(4695).PressableOpacity, obj);
+    obj = { variant: "text-md/medium", color: "text-default", children: null };
+    const intl = guildId(1236).intl;
+    const obj1 = { count: null };
+    obj1[0] = arr.length - 2;
+    obj[2] = intl.format(guildId(1236).t.F6iMs4, obj1);
+    obj[2] = callback(guildId(4185).Text, obj);
+    tmp6 = callback(guildId(4717).PressableOpacity, obj);
   }
-  items[1] = tmp5;
-  obj.children = items;
+  items[1] = tmp6;
+  obj[2] = items;
   return closure_6(ScrollView, obj);
 };

@@ -1,69 +1,68 @@
-// Module ID: 15466
-// Function ID: 117880
+// Module ID: 15500
+// Function ID: 15501
 // Name: LaunchpadChannelIcon
-// Dependencies: [31, 27, 1838, 3802, 1850, 4361, 33, 8292, 1212, 4165, 689, 10264, 566, 5548, 11341, 5908, 15278, 9070, 15464, 4355, 2]
+// Dependencies: [19, 17, 1862, 3826, 1874, 4386, 21, 8316, 1236, 4189, 712, 10285, 589, 5566, 11365, 5927, 15311, 9094, 15498, 4380, 2]
 // Exports: getChannelAccessibilityProps, renderChannelItem
 
-// Module 15466 (LaunchpadChannelIcon)
-import "result";
-import { View } from "get ActivityIndicator";
-import closure_4 from "_createForOfIteratorHelperLoose";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_6 from "_isNativeReflectConstruct";
+// Module 15500 (LaunchpadChannelIcon)
+import "computeChannelName";
+import { View } from "FacepileGroupDMAvatar";
+import createGuildRecordFromRust from "createGuildRecordFromRust";
+import upsertRelationship from "upsertRelationship";
+import mergeGuildAvatar from "mergeGuildAvatar";
 import { UnreadSetting } from "ReadStateTypes";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_10;
-let closure_8;
-let closure_9;
+let c10;
+let c9;
+let metroImportAll;
 const require = arg1;
 function LaunchpadChannelIcon(channel) {
   channel = channel.channel;
   const layout = channel.layout;
-  let obj = channel(10264);
+  let obj = channel(10285);
   const layoutStyles = obj.getLayoutStyles(layout);
-  let obj1 = channel(566);
-  const items = [closure_4];
-  obj = {};
-  obj = { style: callback2(layout).guildBadgeIcon };
+  let obj1 = channel(589);
+  const items = [createGuildRecordFromRust];
+  obj = { style: callback2(layout).guildBadgeIcon, children: null };
   const stateFromStores = obj1.useStateFromStores(items, () => outer1_4.getGuild(channel.guild_id));
-  obj1 = { guild: stateFromStores, size: layoutStyles.icon.guildBadgeIconSize };
-  obj.children = callback(importDefault(5548), obj1);
+  obj = { guild: stateFromStores, size: layoutStyles.icon.guildBadgeIconSize };
+  obj[1] = callback(importDefault(5566), obj);
   const items1 = [callback(View, obj), ];
-  const obj2 = { channel };
+  obj1 = { channel, size: null, wrapperSize: null };
   const tmp = callback2(layout);
-  const tmp4 = closure_10;
-  const tmp5 = closure_9;
-  const tmp6 = callback;
+  const tmp2 = channel;
+  const tmp6 = closure_10;
+  const tmp7 = closure_9;
+  const tmp8 = callback;
   let str = "sm";
-  if (obj7.isLayoutCozy(layout)) {
+  if (obj6.isLayoutCozy(layout)) {
     str = "md";
   }
-  obj2.size = str;
-  obj7 = channel(10264);
+  obj1[1] = str;
+  obj6 = channel(10285);
   let num = 32;
-  if (obj8.isLayoutCozy(layout)) {
+  if (tmp2Result.isLayoutCozy(layout)) {
     num = 48;
   }
-  obj2.wrapperSize = num;
-  items1[1] = tmp6(channel(11341).ChannelIcon, obj2);
-  obj.children = items1;
-  return tmp4(tmp5, obj);
+  const obj2 = { children: null };
+  obj1[2] = num;
+  items1[1] = tmp8(channel(11365).ChannelIcon, obj1);
+  obj2[0] = items1;
+  return tmp6(tmp7, obj2);
 }
-({ jsx: closure_8, Fragment: closure_9, jsxs: closure_10 } = jsxProd);
-let closure_11 = _createForOfIteratorHelperLoose.createStyles((layout) => {
-  let obj = {};
-  obj = { position: "absolute", zIndex: 1, bottom: -4, right: -4, borderColor: importDefault(689).colors.BACKGROUND_BASE_LOW, borderWidth: 2 };
+({ jsx: metroImportAll, Fragment: c9, jsxs: c10 } = jsxProd);
+let closure_11 = createCacheKey.createStyles((layout) => {
+  const guildBadgeIcon = { position: "absolute", zIndex: 1, bottom: -4, right: -4, borderColor: importDefault(712).colors.BACKGROUND_BASE_LOW, borderWidth: 2, borderRadius: null };
   let num = 6;
-  if (obj3.isLayoutCozy(layout)) {
+  if (obj2.isLayoutCozy(layout)) {
     num = 9;
   }
-  obj.borderRadius = num;
-  obj.guildBadgeIcon = obj;
-  return obj;
+  guildBadgeIcon[6] = num;
+  return { guildBadgeIcon };
 });
-const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/main_tabs_v2/native/shared_components/guild_channels/ChannelItem.tsx");
+const result = require("createGuildRecordFromRust").fileFinishedImporting("modules/main_tabs_v2/native/shared_components/guild_channels/ChannelItem.tsx");
 
 export const getChannelAccessibilityProps = function getChannelAccessibilityProps(channel) {
   let embeddedActivitiesCount;
@@ -71,16 +70,15 @@ export const getChannelAccessibilityProps = function getChannelAccessibilityProp
   let unread;
   let voiceStates;
   channel = channel.channel;
-  let obj = { accessible: true, accessibilityRole: "button" };
+  let obj = { accessible: true, accessibilityRole: "button", accessibilityLabel: importDefault(8316)({ channel, unread, mentionCount, voiceStates, embeddedActivitiesCount }) };
   ({ unread, mentionCount, voiceStates, embeddedActivitiesCount } = channel);
-  obj.accessibilityLabel = importDefault(8292)({ channel, unread, mentionCount, voiceStates, embeddedActivitiesCount });
   if (channel.isGuildVoice()) {
-    obj = {};
-    const intl = require(1212) /* getSystemLocale */.intl;
-    obj.accessibilityHint = intl.string(require(1212) /* getSystemLocale */.t["9C444m"]);
-    const tmp = obj;
+    obj = { accessibilityHint: null };
+    const intl = require(1236) /* getSystemLocale */.intl;
+    obj[0] = intl.string(require(1236) /* getSystemLocale */.t["9C444m"]);
+    const tmp2 = obj;
   }
-  const merged = Object.assign(tmp);
+  const merged = Object.assign(tmp2);
   return obj;
 };
 export const renderChannelItem = function renderChannelItem(unread) {
@@ -127,68 +125,68 @@ export const renderChannelItem = function renderChannelItem(unread) {
   if (flag4 === undefined) {
     flag4 = false;
   }
-  let flag5 = unread.panelVariant;
-  if (flag5 === undefined) {
-    flag5 = false;
+  let panelVariant = unread.panelVariant;
+  if (panelVariant === undefined) {
+    panelVariant = false;
   }
   let relativeTimestamp = null;
   if (null != latestMessageTimestamp) {
     relativeTimestamp = null;
     if (!flag3) {
-      let obj = require(5908) /* getRelativeTimestamp */;
+      let obj = require(5927) /* getRelativeTimestamp */;
       relativeTimestamp = obj.getRelativeTimestamp(latestMessageTimestamp);
     }
   }
-  let obj1 = require(10264) /* getLayoutStyles */;
+  let obj1 = require(10285) /* getLayoutStyles */;
   const layoutStyles = obj1.getLayoutStyles(layout);
-  let obj2 = require(15278) /* renderChannelWrapper */;
-  obj = {};
-  const items = [unreadBadge, , , ];
-  obj = {};
-  obj1 = { position: "relative", borderRadius: importDefault(689).radii.round, justifyContent: "center", alignItems: "center", flexShrink: 0, flexGrow: 0 };
-  let obj6 = require(10264) /* getLayoutStyles */;
-  const merged = Object.assign(obj6.makeSizeStyle(layoutStyles.icon.wrapper.size));
+  let obj2 = require(15311) /* renderChannelWrapper */;
+  const children = [unreadBadge, , , ];
+  obj = { style: null, children: null };
+  obj = { position: "relative", borderRadius: importDefault(712).radii.round, justifyContent: "center", alignItems: "center", flexShrink: 0, flexGrow: 0 };
+  const merged = Object.assign(require(10285) /* getLayoutStyles */.makeSizeStyle(layoutStyles.icon.wrapper.size));
   const merged1 = Object.assign(layoutStyles.icon.margin);
-  obj.style = obj1;
+  obj[0] = obj;
   if (channel.isGroupDM()) {
-    obj2 = { channel, size: layoutStyles.icon.avatarSize };
-    let tmp12Result = tmp12(importDefault(9070), obj2);
+    obj1 = { channel: null, size: null };
+    obj1[0] = channel;
+    obj1[1] = layoutStyles.icon.avatarSize;
+    let tmp10Result = tmp10(importDefault(9094), obj1);
   } else {
-    const obj3 = { channel, layout };
-    tmp12Result = tmp12(LaunchpadChannelIcon, obj3);
+    obj2 = { channel: null, layout: null };
+    obj2[0] = channel;
+    obj2[1] = layout;
+    tmp10Result = tmp10(LaunchpadChannelIcon, obj2);
   }
-  obj.children = tmp12Result;
-  items[1] = callback(View, obj);
-  const obj4 = { layout };
-  if (null == channelName) {
-    channelName = require(4355) /* computeDefaultGroupDmNameFromUserIds */.computeChannelName(channel, closure_6, _isNativeReflectConstruct);
-    const obj12 = require(4355) /* computeDefaultGroupDmNameFromUserIds */;
+  obj[1] = tmp10Result;
+  children[1] = closure_8(View, obj);
+  let tmp5Result = tmp5(15498);
+  const obj3 = { layout, name: null, subtitle: null, unread: null, resolvedUnreadSetting: null, muted: null, lastMessageTimestampString: null, channel: null, locked: null, connected: null, live: null, mentionCount: null, mentionBadge: null, isSubscriptionGated: null, needSubscriptionToAccess: null };
+  if (channelName == null) {
+    tmp5Result = tmp5(4380);
+    channelName = tmp5Result.computeChannelName(channel, mergeGuildAvatar, upsertRelationship);
   }
-  obj4.name = channelName;
-  obj4.subtitle = subtitle;
-  obj4.unread = flag;
-  obj4.resolvedUnreadSetting = ONLY_MENTIONS;
-  obj4.muted = flag3;
-  obj4.lastMessageTimestampString = relativeTimestamp;
-  obj4.channel = channel;
-  obj4.locked = locked;
-  obj4.connected = connected;
-  obj4.live = flag2;
-  obj4.mentionCount = mentionCount;
-  obj4.mentionBadge = mentionBadge;
-  obj4.isSubscriptionGated = isSubscriptionGated;
-  obj4.needSubscriptionToAccess = flag4;
-  items[2] = require(15464) /* ChannelContentComponent */.renderChannelContent(obj4);
-  let tmp21 = null;
+  obj3[1] = channelName;
+  obj3[2] = subtitle;
+  obj3[3] = flag;
+  obj3[4] = ONLY_MENTIONS;
+  obj3[5] = flag3;
+  obj3[6] = relativeTimestamp;
+  obj3[7] = channel;
+  obj3[8] = locked;
+  obj3[9] = connected;
+  obj3[10] = flag2;
+  obj3[11] = mentionCount;
+  obj3[12] = mentionBadge;
+  obj3[13] = isSubscriptionGated;
+  obj3[14] = flag4;
+  children[2] = tmp5Result.renderChannelContent(obj3);
+  tmp10Result = null;
   if (null != end) {
-    const obj5 = {};
-    obj6 = { paddingLeft: 8 };
-    obj5.style = obj6;
-    obj5.children = end;
-    tmp21 = callback(View, obj5);
+    const obj4 = { style: null, children: null };
+    obj4[0] = { paddingLeft: 8 };
+    obj4[1] = end;
+    tmp10Result = tmp10(tmp11, obj4);
   }
-  items[3] = tmp21;
-  obj.children = items;
-  const obj7 = { channel, layout, launchpad, fontScale, panelVariant: flag5 };
-  return obj2.renderChannelWrapper(closure_10(closure_9, obj), obj7);
+  children[3] = tmp10Result;
+  return obj2.renderChannelWrapper(closure_10(closure_9, { children }), { channel, layout, launchpad, fontScale, panelVariant });
 };

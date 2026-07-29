@@ -1,49 +1,50 @@
-// Module ID: 13824
-// Function ID: 105856
+// Module ID: 13845
+// Function ID: 13846
 // Name: UserSettingsSensitiveContentFilters
-// Dependencies: [31, 7733, 33, 1212, 10099, 13825, 13657, 2]
+// Dependencies: [19, 7756, 21, 1236, 10120, 13846, 13678, 2]
 // Exports: default
 
-// Module 13824 (UserSettingsSensitiveContentFilters)
-import result from "result";
+// Module 13845 (UserSettingsSensitiveContentFilters)
+import noop from "noop";
 import { MobileSetting } from "MobileSetting";
 import jsxProd from "jsxProd";
 
-let closure_5;
+let c5;
 let closure_6;
-let closure_7;
+let error;
 const require = arg1;
-({ jsx: closure_5, Fragment: closure_6, jsxs: closure_7 } = jsxProd);
+({ jsx: c5, Fragment: closure_6, jsxs: error } = jsxProd);
 const result = require("jsxProd").fileFinishedImporting("modules/user_settings/content_and_social/native/SensitiveContentFiltersScreen.tsx");
 
 export default function UserSettingsSensitiveContentFilters() {
-  let obj = {};
+  let obj = { children: null };
   const memo = React.useMemo(() => {
-    let obj = outer1_0(outer1_2[4]);
-    obj = {};
-    obj = {};
-    const intl = outer1_0(outer1_2[3]).intl;
-    obj.label = intl.string(outer1_0(outer1_2[3]).t.GYpoAq);
+    let obj = callback(10120);
+    obj = { sections: null };
+    obj = { label: null, settings: null, subLabel: null };
+    const intl = callback(1236).intl;
+    obj[0] = intl.string(callback(1236).t.GYpoAq);
     const items = [, , ];
-    ({ EXPLICIT_MEDIA_FILTERS_FRIENDS_DMS: arr[0], EXPLICIT_MEDIA_FILTERS_NON_FRIENDS_DMS: arr[1], EXPLICIT_MEDIA_FILTERS_GUILDS: arr[2] } = outer1_4);
-    obj.settings = items;
-    const intl2 = outer1_0(outer1_2[3]).intl;
-    obj.subLabel = intl2.string(outer1_0(outer1_2[3]).t.Wnojv1);
+    ({ EXPLICIT_MEDIA_FILTERS_FRIENDS_DMS: arr[0], EXPLICIT_MEDIA_FILTERS_NON_FRIENDS_DMS: arr[1], EXPLICIT_MEDIA_FILTERS_GUILDS: arr[2] } = closure_4);
+    obj[1] = items;
+    const intl2 = callback(1236).intl;
+    obj[2] = intl2.string(callback(1236).t.Wnojv1);
     const items1 = [obj, ];
-    const obj1 = {};
-    const intl3 = outer1_0(outer1_2[3]).intl;
-    obj1.label = intl3.string(outer1_0(outer1_2[3]).t["16/3Bi"]);
+    const obj1 = { label: null, settings: null, subLabel: null };
+    const intl3 = callback(1236).intl;
+    obj1[0] = intl3.string(callback(1236).t["16/3Bi"]);
     const items2 = [, , ];
-    ({ GORE_MEDIA_FILTERS_FRIENDS_DMS: arr3[0], GORE_MEDIA_FILTERS_NON_FRIENDS_DMS: arr3[1], GORE_MEDIA_FILTERS_GUILDS: arr3[2] } = outer1_4);
-    obj1.settings = items2;
-    const intl4 = outer1_0(outer1_2[3]).intl;
-    obj1.subLabel = intl4.string(outer1_0(outer1_2[3]).t.XgH9eh);
+    ({ GORE_MEDIA_FILTERS_FRIENDS_DMS: arr3[0], GORE_MEDIA_FILTERS_NON_FRIENDS_DMS: arr3[1], GORE_MEDIA_FILTERS_GUILDS: arr3[2] } = closure_4);
+    obj1[1] = items2;
+    const intl4 = callback(1236).intl;
+    obj1[2] = intl4.string(callback(1236).t.XgH9eh);
     items1[1] = obj1;
-    obj.sections = items1;
+    obj[0] = items1;
     return obj.createList(obj);
   }, []);
-  obj = { screen: require(13825) /* items */.SettingsScreen.SENSITIVE_CONTENT_FILTERS };
-  let items = [callback(importDefault(13825), obj), callback(importDefault(13657), { node: memo })];
-  obj.children = items;
+  obj = { screen: null };
+  obj[0] = require(13846) /* items */.SettingsScreen.SENSITIVE_CONTENT_FILTERS;
+  let items = [callback(importDefault(13846), obj), callback(importDefault(13678), { node: memo })];
+  obj[0] = items;
   return callback2(closure_6, obj);
 };

@@ -1,47 +1,49 @@
-// Module ID: 11056
-// Function ID: 85829
+// Module ID: 11080
+// Function ID: 11081
 // Name: ClassificationEvidence
-// Dependencies: [31, 27, 33, 4165, 1273, 689, 4161, 1212, 11057, 2]
+// Dependencies: [19, 17, 21, 4189, 1297, 712, 4185, 1236, 11081, 2]
 // Exports: default
 
-// Module 11056 (ClassificationEvidence)
-import "result";
+// Module 11080 (ClassificationEvidence)
+import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 import Button from "Button";
 
-let closure_4;
-let closure_5;
+let c4;
+let c5;
 const require = arg1;
-({ jsx: closure_4, jsxs: closure_5 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose.cardShadow = Button.generateBoxShadowStyle(require("Button").FOUR_DP_ELEVATION_SHADOW_PARAMS);
-_createForOfIteratorHelperLoose = { borderWidth: 1, borderRadius: require("_createForOfIteratorHelperLoose").radii.sm, borderColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWEST, backgroundColor: require("_createForOfIteratorHelperLoose").colors.CHANNELTEXTAREA_BACKGROUND, padding: 20 };
-_createForOfIteratorHelperLoose.flaggedContent = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.sectionContainer = { display: "flex", gap: require("_createForOfIteratorHelperLoose").space.PX_8 };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-let obj1 = { display: "flex", gap: require("_createForOfIteratorHelperLoose").space.PX_8 };
+({ jsx: c4, jsxs: c5 } = jsxProd);
+createCacheKey = { cardShadow: null, flaggedContent: null, sectionContainer: null };
+createCacheKey[0] = Button.generateBoxShadowStyle(require("Button").FOUR_DP_ELEVATION_SHADOW_PARAMS);
+createCacheKey = { borderWidth: 1, borderRadius: require("Themes").radii.sm, borderColor: require("Themes").colors.BACKGROUND_BASE_LOWEST, backgroundColor: require("Themes").colors.CHANNELTEXTAREA_BACKGROUND, padding: 20 };
+createCacheKey[1] = createCacheKey;
+createCacheKey[2] = { display: "flex", gap: require("Themes").space.PX_8 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let obj1 = { display: "flex", gap: require("Themes").space.PX_8 };
 const result = require("jsxProd").fileFinishedImporting("modules/safety_hub/native/ClassificationEvidence.tsx");
 
 export default function ClassificationEvidence(flaggedContent) {
   flaggedContent = flaggedContent.flaggedContent;
-  const tmp = _createForOfIteratorHelperLoose();
+  const tmp = createCacheKey();
   let tmp2 = null;
   if (0 !== flaggedContent.length) {
-    let obj = { style: tmp.sectionContainer };
-    obj = { variant: "eyebrow", color: "text-default" };
-    const intl = require(1212) /* getSystemLocale */.intl;
-    obj.children = intl.string(require(1212) /* getSystemLocale */.t.s64CMg);
-    const items = [callback(require(4161) /* Text */.Text, obj), ];
-    obj = {};
+    let obj = { style: null, children: null };
+    obj[0] = tmp.sectionContainer;
+    obj = { variant: "eyebrow", color: "text-default", children: null };
+    const intl = require(1236) /* getSystemLocale */.intl;
+    obj[2] = intl.string(require(1236) /* getSystemLocale */.t.s64CMg);
+    const items = [callback(require(4185) /* Text */.Text, obj), ];
+    obj = { style: null, children: null };
     const items1 = [, ];
     ({ flaggedContent: arr3[0], cardShadow: arr3[1] } = tmp);
-    obj.style = items1;
-    const obj1 = { flaggedContent };
-    obj.children = callback(importDefault(11057), obj1);
+    obj[0] = items1;
+    const obj1 = { flaggedContent: null };
+    obj1[0] = flaggedContent;
+    obj[1] = callback(importDefault(11081), obj1);
     items[1] = callback(View, obj);
-    obj.children = items;
+    obj[1] = items;
     tmp2 = callback2(View, obj);
   }
   return tmp2;

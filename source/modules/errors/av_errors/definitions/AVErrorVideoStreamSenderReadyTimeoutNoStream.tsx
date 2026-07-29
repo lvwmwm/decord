@@ -1,14 +1,14 @@
-// Module ID: 16653
-// Function ID: 129712
+// Module ID: 16689
+// Function ID: 16690
 // Name: AVErrorVideoStreamSenderReadyTimeoutNoStreamDefinition
-// Dependencies: [1194, 10488, 8828, 2]
+// Dependencies: [1218, 10512, 8852, 2]
 
-// Module 16653 (AVErrorVideoStreamSenderReadyTimeoutNoStreamDefinition)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_3 from "_isNativeReflectConstruct";
+// Module 16689 (AVErrorVideoStreamSenderReadyTimeoutNoStreamDefinition)
+import fetchFingerprint from "fetchFingerprint";
+import makeTimeoutKey from "makeTimeoutKey";
 
 const require = arg1;
-const result = require("validateUniqueErrorCodes").fileFinishedImporting("modules/errors/av_errors/definitions/AVErrorVideoStreamSenderReadyTimeoutNoStream.tsx");
+const result = require("mapped").fileFinishedImporting("modules/errors/av_errors/definitions/AVErrorVideoStreamSenderReadyTimeoutNoStream.tsx");
 
 export const AVErrorVideoStreamSenderReadyTimeoutNoStreamDefinition = {
   getActiveErrors() {
@@ -17,7 +17,7 @@ export const AVErrorVideoStreamSenderReadyTimeoutNoStreamDefinition = {
       let userId;
       let videoStreamId;
       ({ userId, videoStreamId } = arg0);
-      let tmp = outer1_2.getId() === userId;
+      let tmp = id.getId() === userId;
       if (tmp) {
         tmp = null == videoStreamId;
       }
@@ -25,7 +25,7 @@ export const AVErrorVideoStreamSenderReadyTimeoutNoStreamDefinition = {
     });
     return found.map((arg0) => {
       const merged = Object.assign(arg0);
-      return { type: outer1_0(outer1_1[2]).AVError.VIDEO_STREAM_SENDER_READY_TIMEOUT_NO_STREAM };
+      return { type: callback(table[2]).AVError.VIDEO_STREAM_SENDER_READY_TIMEOUT_NO_STREAM };
     });
   },
   makeErrorContextKey(mediaContext) {

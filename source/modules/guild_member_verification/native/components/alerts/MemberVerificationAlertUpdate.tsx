@@ -1,45 +1,45 @@
-// Module ID: 9136
-// Function ID: 71689
+// Module ID: 9160
+// Function ID: 9161
 // Name: MemberVerificationAlertUpdate
-// Dependencies: [31, 27, 653, 33, 4165, 4596, 1212, 3862, 9137, 4161, 2]
+// Dependencies: [19, 17, 676, 21, 4189, 4618, 1236, 3886, 9161, 4185, 2]
 // Exports: default
 
-// Module 9136 (MemberVerificationAlertUpdate)
-import "result";
+// Module 9160 (MemberVerificationAlertUpdate)
+import "noop";
 import { Image } from "get ActivityIndicator";
 import { DownloadLinks } from "ME";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_5;
+let c5;
 let closure_6;
 const require = arg1;
-({ jsx: closure_5, jsxs: closure_6 } = jsxProd);
-let closure_7 = _createForOfIteratorHelperLoose.createStyles({ headerImage: { marginLeft: "auto", marginRight: "auto", marginTop: 8 }, header: { marginTop: 24, textAlign: "center" }, text: { marginVertical: 8, lineHeight: 18, textAlign: "center" } });
+({ jsx: c5, jsxs: closure_6 } = jsxProd);
+let closure_7 = createCacheKey.createStyles({ headerImage: { marginLeft: "auto", marginRight: "auto", marginTop: 8 }, header: { marginTop: 24, textAlign: "center" }, text: { marginVertical: 8, lineHeight: 18, textAlign: "center" } });
 const result = require("ME").fileFinishedImporting("modules/guild_member_verification/native/components/alerts/MemberVerificationAlertUpdate.tsx");
 
 export default function MemberVerificationAlertUpdate(onClose) {
   const tmp = callback3();
   let obj = {};
   const merged = Object.assign(onClose);
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj["confirmText"] = intl.string(require(1212) /* getSystemLocale */.t.b8siyY);
-  const intl2 = require(1212) /* getSystemLocale */.intl;
-  obj["cancelText"] = intl2.string(require(1212) /* getSystemLocale */.t["ETE/oC"]);
-  obj["onConfirm"] = function onConfirm() {
-    return outer1_1(outer1_2[7]).openURL(outer1_4.IOS);
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj.confirmText = intl.string(require(1236) /* getSystemLocale */.t.b8siyY);
+  const intl2 = require(1236) /* getSystemLocale */.intl;
+  obj.cancelText = intl2.string(require(1236) /* getSystemLocale */.t["ETE/oC"]);
+  obj.onConfirm = function onConfirm() {
+    return callback(table[7]).openURL(constants.IOS);
   };
-  obj["onCancel"] = onClose.onClose;
-  obj = { source: importDefault(9137), style: tmp.headerImage };
+  obj.onCancel = onClose.onClose;
+  obj = { source: importDefault(9161), style: tmp.headerImage };
   const items = [callback(Image, obj), , ];
-  obj = { style: tmp.header, variant: "heading-lg/extrabold", color: "mobile-text-heading-primary" };
-  const intl3 = require(1212) /* getSystemLocale */.intl;
-  obj.children = intl3.string(require(1212) /* getSystemLocale */.t.kkjNHU);
-  items[1] = callback(require(4161) /* Text */.Text, obj);
-  const obj1 = { style: tmp.text, variant: "text-sm/medium", color: "text-default" };
-  const intl4 = require(1212) /* getSystemLocale */.intl;
-  obj1.children = intl4.string(require(1212) /* getSystemLocale */.t.gnkqzQ);
-  items[2] = callback(require(4161) /* Text */.Text, obj1);
-  obj["children"] = items;
-  return callback2(importDefault(4596), obj);
+  obj = { style: tmp.header, variant: "heading-lg/extrabold", color: "mobile-text-heading-primary", children: null };
+  const intl3 = require(1236) /* getSystemLocale */.intl;
+  obj[3] = intl3.string(require(1236) /* getSystemLocale */.t.kkjNHU);
+  items[1] = callback(require(4185) /* Text */.Text, obj);
+  const obj1 = { style: tmp.text, variant: "text-sm/medium", color: "text-default", children: null };
+  const intl4 = require(1236) /* getSystemLocale */.intl;
+  obj1[3] = intl4.string(require(1236) /* getSystemLocale */.t.gnkqzQ);
+  items[2] = callback(require(4185) /* Text */.Text, obj1);
+  obj.children = items;
+  return callback2(importDefault(4618), obj);
 };

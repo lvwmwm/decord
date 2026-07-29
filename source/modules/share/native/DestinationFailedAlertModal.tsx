@@ -1,148 +1,152 @@
-// Module ID: 9907
-// Function ID: 76582
+// Module ID: 9929
+// Function ID: 9930
 // Name: FailedGroupDMRow
-// Dependencies: [31, 27, 1348, 1838, 4252, 3802, 1850, 482, 33, 4165, 689, 4355, 9070, 1273, 4161, 566, 4004, 9908, 4510, 4510, 1212, 2]
+// Dependencies: [19, 17, 1372, 1862, 4276, 3826, 1874, 505, 21, 4189, 712, 4380, 9094, 1297, 4185, 589, 4028, 9930, 4533, 4533, 1236, 2]
 // Exports: default
 
-// Module 9907 (FailedGroupDMRow)
-import "result";
-import { View } from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_5 from "_createForOfIteratorHelperLoose";
-import closure_6 from "_isNativeReflectConstruct";
-import closure_7 from "_isNativeReflectConstruct";
-import closure_8 from "_isNativeReflectConstruct";
+// Module 9929 (FailedGroupDMRow)
+import "getAlertModalItemKey";
+import { View } from "GuildIconWithChannelTypeSizes";
+import ensureGuildLoaded from "ensureGuildLoaded";
+import createGuildRecordFromRust from "createGuildRecordFromRust";
+import sortActivity from "sortActivity";
+import upsertRelationship from "upsertRelationship";
+import mergeGuildAvatar from "mergeGuildAvatar";
 import { StatusTypes } from "sum";
-import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import jsxProd from "set";
+import createCacheKey from "createCacheKey";
 
-let closure_10;
-let closure_11;
+let c10;
 let closure_12;
+let unpackModuleId;
 const require = arg1;
 function FailedGroupDMRow(channel) {
   channel = channel.channel;
-  const tmp = _createForOfIteratorHelperLoose();
-  let obj = { style: tmp.row };
-  obj = {};
-  const tmp2 = importDefault(4355)(channel);
-  obj.size = require(1273) /* Button */.AvatarSizes.REFRESH_MEDIUM_32;
-  obj.channel = channel;
-  const items = [callback(importDefault(9070), obj), ];
+  const tmp = createCacheKey();
+  let obj = { style: tmp.row, children: null };
+  obj = { size: null, channel: null };
+  const tmp2 = importDefault(4380)(channel);
+  obj[0] = require(1297) /* Button */.AvatarSizes.REFRESH_MEDIUM_32;
+  obj[1] = channel;
+  const items = [callback(importDefault(9094), obj), ];
   obj = { style: tmp.label, variant: "text-md/medium", lineClamp: 1, ellipsizeMode: "tail", children: tmp2 };
-  items[1] = callback(require(4161) /* Text */.Text, obj);
-  obj.children = items;
+  items[1] = callback(require(4185) /* Text */.Text, obj);
+  obj[1] = items;
   return callback2(View, obj);
 }
 function FailedUserRow(user) {
   user = user.user;
-  const tmp = _createForOfIteratorHelperLoose();
-  let obj = user(566);
-  const items = [closure_7];
+  const tmp = createCacheKey();
+  let obj = user(589);
+  const items = [upsertRelationship];
   let stateFromStores = obj.useStateFromStores(items, () => outer1_7.getNickname(user.id));
-  let obj1 = user(566);
-  const items1 = [closure_6];
+  let obj1 = user(589);
+  const items1 = [sortActivity];
   const stateFromStoresObject = obj1.useStateFromStoresObject(items1, () => ({ isMobileOnline: outer1_6.isMobileOnline(user.id), status: outer1_6.getStatus(user.id), isVROnline: outer1_6.isVROnline(user.id) }));
   const status = stateFromStoresObject.status;
-  let tmp7Result = null;
+  let tmp9Result = null;
   if (null != user) {
-    obj = { style: tmp.row };
-    obj = { user, guildId: undefined };
+    obj = { style: null, children: null };
+    obj[0] = tmp.row;
+    obj = { user: null, guildId: "Boolean", status: true, isMobileOnline: "done", isVROnline: true, size: null, avatarDecoration: null, autoStatusCutout: -6 };
+    obj[0] = user;
     let tmp13 = null;
     if (StatusTypes.OFFLINE !== status) {
       tmp13 = status;
     }
-    obj.status = tmp13;
-    obj.isMobileOnline = tmp4;
-    obj.isVROnline = tmp5;
-    obj.size = user(1273).AvatarSizes.XSMALL;
-    obj.avatarDecoration = user.avatarDecoration;
-    obj.autoStatusCutout = true;
-    const items2 = [closure_10(user(1273).Avatar, obj), ];
-    obj1 = { style: tmp.label, variant: "text-md/medium", lineClamp: 1, ellipsizeMode: "tail" };
-    if (null == stateFromStores) {
-      stateFromStores = importDefault(4004).getName(user);
-      const obj6 = importDefault(4004);
+    obj[2] = tmp13;
+    obj[3] = tmp6;
+    obj[4] = tmp7;
+    obj[5] = tmp2(1297).AvatarSizes.XSMALL;
+    obj[6] = user.avatarDecoration;
+    const items2 = [closure_10(tmp2(1297).Avatar, obj), ];
+    obj1 = { style: null, variant: "text-md/medium", lineClamp: 1, ellipsizeMode: "tail", children: null };
+    obj1[0] = tmp.label;
+    if (stateFromStores == null) {
+      stateFromStores = importDefault(4028).getName(user);
+      const obj6 = importDefault(4028);
     }
-    obj1.children = stateFromStores;
-    items2[1] = closure_10(user(4161).Text, obj1);
-    obj.children = items2;
-    tmp7Result = closure_11(View, obj);
-    const tmp16 = closure_10;
-    const tmp7 = closure_11;
-    const tmp8 = View;
-    const tmp9 = closure_10;
+    obj1[4] = stateFromStores;
+    items2[1] = closure_10(tmp2(4185).Text, obj1);
+    obj[1] = items2;
+    tmp9Result = closure_11(View, obj);
+    const tmp10 = View;
+    const tmp9 = closure_11;
   }
-  return tmp7Result;
+  return tmp9Result;
 }
 function FailedChannelRow(channel) {
   channel = channel.channel;
-  const tmp = _createForOfIteratorHelperLoose();
-  let obj = channel(566);
-  const items = [closure_5];
+  const tmp = createCacheKey();
+  let obj = channel(589);
+  const items = [createGuildRecordFromRust];
   const stateFromStores = obj.useStateFromStores(items, () => {
     let guild_id;
-    if (null != channel) {
+    if (channel != null) {
       guild_id = channel.guild_id;
     }
     return outer1_5.getGuild(guild_id);
   });
-  obj = { style: tmp.row };
-  obj = { "aria-label": "", guild: stateFromStores, channel, size: channel(9908).GuildIconWithChannelTypeSizes.SMALL_32 };
-  const items1 = [callback(channel(9908).GuildIconWithChannelType, obj), ];
-  const obj1 = { style: tmp.label, variant: "text-md/medium", lineClamp: 1, ellipsizeMode: "tail", children: importDefault(4355)(channel) };
-  items1[1] = callback(channel(4161).Text, obj1);
-  obj.children = items1;
+  obj = { style: tmp.row, children: null };
+  obj = { "aria-label": "", guild: stateFromStores, channel, size: null };
+  obj[3] = channel(9930).GuildIconWithChannelTypeSizes.SMALL_32;
+  const items1 = [callback(channel(9930).GuildIconWithChannelType, obj), ];
+  const tmp3 = importDefault(4380)(channel);
+  items1[1] = callback(channel(4185).Text, { style: tmp.label, variant: "text-md/medium", lineClamp: 1, ellipsizeMode: "tail", children: importDefault(4380)(channel) });
+  obj[1] = items1;
   return callback2(View, obj);
 }
 function FailedDestinationRow(destination) {
   let channel;
   let user;
   destination = destination.destination;
-  let obj = destination(566);
-  const items = [_isNativeReflectConstruct, closure_8];
+  let obj = destination(589);
+  const items = [ensureGuildLoaded, mergeGuildAvatar];
   const stateFromStoresObject = obj.useStateFromStoresObject(items, () => {
-    const obj = {};
     let channel = null;
     if ("channel" === destination.type) {
-      channel = outer1_4.getChannel(destination.id);
+      channel = outer1_4.getChannel(tmp.id);
     }
-    obj.channel = channel;
+    const obj = { channel, user: null };
     let user = null;
     if ("user" === destination.type) {
-      user = outer1_8.getUser(destination.id);
+      user = outer1_8.getUser(tmp.id);
     }
-    obj.user = user;
+    obj[1] = user;
     return obj;
   });
   ({ channel, user } = stateFromStoresObject);
-  if (null != channel) {
-    if (channel.isGroupDM()) {
-      obj = { channel };
-      let tmp2 = callback(FailedGroupDMRow, obj);
-    }
-    return tmp2;
+  let isGroupDMResult;
+  if (channel != null) {
+    isGroupDMResult = channel.isGroupDM();
   }
-  if (null != user) {
-    obj = { user };
-    tmp2 = callback(FailedUserRow, obj);
+  if (isGroupDMResult) {
+    obj = { channel: null };
+    obj[0] = channel;
+    let tmp3 = callback(FailedGroupDMRow, obj);
+  } else if (null != user) {
+    obj = { user: null };
+    obj[0] = user;
+    tmp3 = callback(FailedUserRow, obj);
   } else {
-    tmp2 = null;
+    tmp3 = null;
     if (null != channel) {
-      const obj1 = { channel };
-      tmp2 = callback(FailedChannelRow, obj1);
+      const obj1 = { channel: null };
+      obj1[0] = channel;
+      tmp3 = callback(FailedChannelRow, obj1);
     }
   }
+  return tmp3;
 }
-({ jsx: closure_10, jsxs: closure_11, Fragment: closure_12 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { borderWidth: 1, borderColor: require("_createForOfIteratorHelperLoose").colors.BORDER_STRONG, borderRadius: require("_createForOfIteratorHelperLoose").radii.lg, paddingVertical: require("_createForOfIteratorHelperLoose").space.PX_8 };
-_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
-let obj1 = { display: "flex", flexDirection: "row", alignItems: "center", gap: require("_createForOfIteratorHelperLoose").space.PX_12, height: 40, marginHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16 };
-_createForOfIteratorHelperLoose.row = obj1;
-_createForOfIteratorHelperLoose.label = { flexShrink: 1 };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/share/native/DestinationFailedAlertModal.tsx");
+({ jsx: c10, jsxs: unpackModuleId, Fragment: closure_12 } = jsxProd);
+createCacheKey = { container: null, row: null, label: null };
+createCacheKey = { borderWidth: 1, borderColor: require("Themes").colors.BORDER_STRONG, borderRadius: require("Themes").radii.lg, paddingVertical: require("Themes").space.PX_8 };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { display: "flex", flexDirection: "row", alignItems: "center", gap: require("Themes").space.PX_12, height: 40, marginHorizontal: require("Themes").space.PX_16 };
+createCacheKey[2] = { flexShrink: 1 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let obj1 = { display: "flex", flexDirection: "row", alignItems: "center", gap: require("Themes").space.PX_12, height: 40, marginHorizontal: require("Themes").space.PX_16 };
+const result = require("ensureGuildLoaded").fileFinishedImporting("modules/share/native/DestinationFailedAlertModal.tsx");
 
 export default function DestinationFailedAlertModal(arg0) {
   let content;
@@ -151,29 +155,29 @@ export default function DestinationFailedAlertModal(arg0) {
   let title;
   ({ failedDestinations, onRetry } = arg0);
   ({ title, content } = arg0);
-  let obj = { title, content };
-  obj = { style: _createForOfIteratorHelperLoose().container, children: failedDestinations.map((destination) => outer1_10(outer1_17, { destination }, arg1)) };
-  obj.extraContent = callback(View, obj);
-  obj = {};
+  let obj = { title, content, extraContent: null, actions: null };
+  obj = { style: createCacheKey().container, children: null };
+  obj[1] = failedDestinations.map((destination) => callback(closure_17, { destination }, arg1));
+  obj[2] = callback(View, obj);
   if (null != onRetry) {
-    const obj1 = {};
-    const obj2 = { variant: "primary", onPress: onRetry };
-    const intl2 = require(1212) /* getSystemLocale */.intl;
-    obj2.text = intl2.string(require(1212) /* getSystemLocale */.t["5911Lb"]);
-    const items = [callback(require(4510) /* getAlertModalItemKey */.AlertActionButton, obj2, "confirm"), ];
-    const obj3 = { variant: "secondary" };
-    const intl3 = require(1212) /* getSystemLocale */.intl;
-    obj3.text = intl3.string(require(1212) /* getSystemLocale */.t.WAI6xu);
-    items[1] = callback(require(4510) /* getAlertModalItemKey */.AlertActionButton, obj3, "cancel");
-    obj1.children = items;
-    let tmp7 = callback2(closure_12, obj1);
+    obj = { children: null };
+    const obj1 = { variant: "primary", onPress: null, text: null };
+    obj1[1] = onRetry;
+    const intl2 = tmp3(1236).intl;
+    obj1[2] = intl2.string(tmp3(1236).t["5911Lb"]);
+    const items = [tmp2(tmp3(4533).AlertActionButton, obj1, "confirm"), ];
+    const obj2 = { variant: "secondary", text: null };
+    const intl3 = tmp3(1236).intl;
+    obj2[1] = intl3.string(tmp3(1236).t.WAI6xu);
+    items[1] = tmp2(tmp3(4533).AlertActionButton, obj2, "cancel");
+    obj[0] = items;
+    let tmp2Result = callback2(closure_12, obj);
   } else {
-    const obj4 = { variant: "primary" };
-    const intl = require(1212) /* getSystemLocale */.intl;
-    obj4.text = intl.string(require(1212) /* getSystemLocale */.t.BddRzS);
-    tmp7 = callback(require(4510) /* getAlertModalItemKey */.AlertActionButton, obj4, "confirm");
+    const obj3 = { variant: "primary", text: null };
+    const intl = tmp3(1236).intl;
+    obj3[1] = intl.string(tmp3(1236).t.BddRzS);
+    tmp2Result = tmp2(tmp3(4533).AlertActionButton, obj3, "confirm");
   }
-  obj.children = tmp7;
-  obj.actions = callback(require(4510) /* getAlertModalItemKey */.AlertActions, obj);
-  return callback(require(4510) /* getAlertModalItemKey */.AlertModal, obj);
+  obj[3] = callback(require(4533) /* getAlertModalItemKey */.AlertActions, { children: tmp2Result });
+  return callback(require(4533) /* getAlertModalItemKey */.AlertModal, obj);
 };

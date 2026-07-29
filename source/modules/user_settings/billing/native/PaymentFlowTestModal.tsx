@@ -1,52 +1,51 @@
-// Module ID: 14766
-// Function ID: 112379
-// Dependencies: [31, 33, 9085, 5552, 9094, 10163, 14767, 2]
+// Module ID: 14792
+// Function ID: 14793
+// Dependencies: [19, 21, 9109, 5570, 9118, 10184, 14793, 2]
 
-// Module 14766
+// Module 14792
 import { jsx } from "jsxProd";
 import createNativeStackNavigator from "createNativeStackNavigator";
-import importAllResult from "result";
+import importAllResult from "noop";
 
 const require = arg1;
 createNativeStackNavigator = createNativeStackNavigator.createNativeStackNavigator();
-const memoResult = require("result").memo(function PaymentFlowTestModal() {
+const memoResult = require("noop").memo(function PaymentFlowTestModal() {
   let Navigator;
   let Screen;
-  let obj = _require(5552);
+  let obj = _require(5570);
   _require = obj.useAccessibilityNativeStackOptions();
   obj = {
     screenOptions(navigation) {
-      let obj = {
+      const obj = {
         headerTitle(children) {
-          let obj = Object.create(null);
-          obj.children = 0;
-          const merged = Object.assign(children, obj);
-          obj = { title: children.children };
+          const merged = Object.assign(children, Object.create(null));
           const merged1 = Object.assign(merged);
-          return outer2_3(callback(outer2_2[4]).GenericHeaderTitle, obj);
+          return callback2(callback(table[4]).GenericHeaderTitle, { title: children.children });
         },
-        headerLeft: callback(outer1_2[4]).getRenderModalCloseImage(navigation.navigation),
+        headerLeft: null,
         headerTitleAlign: "center"
       };
+      obj[1] = callback(outer1_2[4]).getRenderModalCloseImage(navigation.navigation);
       let merged = Object.assign(callback);
       let merged1 = Object.assign(outer1_1(outer1_2[5])());
       return obj;
-    }
+    },
+    children: null
   };
   obj = {
     name: "PaymentFlowTest",
     options() {
       return { title: "Payment Flow Test" };
     },
-    component: importDefault(14767)
+    component: importDefault(14793)
   };
   ({ Navigator, Screen } = createNativeStackNavigator);
-  obj.children = <Screen name="PaymentFlowTest" options={function options() {
+  obj[1] = <Screen name="PaymentFlowTest" options={function options() {
     return { title: "Payment Flow Test" };
-  }} component={importDefault(14767)} />;
+  }} component={importDefault(14793)} />;
   return <Navigator name="PaymentFlowTest" options={function options() {
     return { title: "Payment Flow Test" };
-  }} component={importDefault(14767)} />;
+  }} component={importDefault(14793)} />;
 });
 const result = require("createNativeStackNavigator").fileFinishedImporting("modules/user_settings/billing/native/PaymentFlowTestModal.tsx");
 

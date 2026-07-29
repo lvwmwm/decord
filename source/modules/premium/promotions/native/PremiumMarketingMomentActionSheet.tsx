@@ -1,49 +1,52 @@
-// Module ID: 15725
-// Function ID: 121135
+// Module ID: 15761
+// Function ID: 15762
 // Name: PremiumMarketingMomentActionSheet
-// Dependencies: [31, 27, 4157, 653, 1345, 33, 4165, 689, 566, 5497, 686, 6665, 8402, 480, 6546, 12409, 5221, 4701, 8118, 5119, 4161, 3862, 8403, 1212, 2]
+// Dependencies: [19, 17, 4181, 676, 1369, 21, 4189, 712, 589, 5515, 709, 6686, 8426, 503, 6567, 12431, 5243, 4723, 8142, 5141, 4185, 3886, 8427, 1236, 2]
 // Exports: default
 
-// Module 15725 (PremiumMarketingMomentActionSheet)
-import result from "result";
-import { View } from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 15761 (PremiumMarketingMomentActionSheet)
+import preload from "preload";
+import { View } from "items";
+import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
 import { AnalyticsPages } from "ME";
 import { ContentDismissActionType } from "ContentDismissActionType";
-import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import jsxProd from "module_3886";
+import createCacheKey from "createCacheKey";
 
-let closure_8;
-let closure_9;
+let c9;
+let metroImportAll;
 const require = arg1;
-({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { display: "flex", flexDirection: "column", alignItems: "center", paddingVertical: 12, paddingHorizontal: 20, borderRadius: require("_createForOfIteratorHelperLoose").radii.lg };
-_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
-let obj1 = { marginTop: require("_createForOfIteratorHelperLoose").space.PX_24, width: 335, height: 48 };
-_createForOfIteratorHelperLoose.buttonContainer = obj1;
-_createForOfIteratorHelperLoose.header = { marginBottom: require("_createForOfIteratorHelperLoose").space.PX_8, textAlign: "center" };
-_createForOfIteratorHelperLoose.body = { textAlign: "center" };
-let obj3 = { height: 188, width: 335, borderRadius: require("_createForOfIteratorHelperLoose").radii.md, marginBottom: require("_createForOfIteratorHelperLoose").space.PX_24 };
-_createForOfIteratorHelperLoose.image = obj3;
-let obj2 = { marginBottom: require("_createForOfIteratorHelperLoose").space.PX_8, textAlign: "center" };
-_createForOfIteratorHelperLoose.video = { borderRadius: require("_createForOfIteratorHelperLoose").radii.md, marginBottom: require("_createForOfIteratorHelperLoose").space.PX_24 };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-let obj4 = { borderRadius: require("_createForOfIteratorHelperLoose").radii.md, marginBottom: require("_createForOfIteratorHelperLoose").space.PX_24 };
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/premium/promotions/native/PremiumMarketingMomentActionSheet.tsx");
+({ jsx: metroImportAll, jsxs: c9 } = jsxProd);
+createCacheKey = { container: null, buttonContainer: null, header: null, body: null, image: null, video: null };
+createCacheKey = { display: "flex", flexDirection: "column", alignItems: "center", paddingVertical: 12, paddingHorizontal: 20, borderRadius: require("Themes").radii.lg };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { marginTop: require("Themes").space.PX_24, width: 335, height: 48 };
+let obj1 = { marginTop: require("Themes").space.PX_24, width: 335, height: 48 };
+createCacheKey[2] = { marginBottom: require("Themes").space.PX_8, textAlign: "center" };
+createCacheKey[3] = { textAlign: "center" };
+let obj2 = { marginBottom: require("Themes").space.PX_8, textAlign: "center" };
+createCacheKey[4] = { height: 188, width: 335, borderRadius: require("Themes").radii.md, marginBottom: require("Themes").space.PX_24 };
+const obj3 = { height: 188, width: 335, borderRadius: require("Themes").radii.md, marginBottom: require("Themes").space.PX_24 };
+createCacheKey[5] = { borderRadius: require("Themes").radii.md, marginBottom: require("Themes").space.PX_24 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let obj4 = { borderRadius: require("Themes").radii.md, marginBottom: require("Themes").space.PX_24 };
+const result = require("maybeApplyNoTextColorForLightCustomTheme").fileFinishedImporting("modules/premium/promotions/native/PremiumMarketingMomentActionSheet.tsx");
 
 export default function PremiumMarketingMomentActionSheet(component_id) {
   const markAsDismissed = component_id.markAsDismissed;
   const bottomSheetData = component_id.bottomSheetData;
   const promotionId = component_id.promotionId;
+  let analyticsLocations;
+  let callback;
   let helpArticleLinkProps;
-  const tmp = _createForOfIteratorHelperLoose();
+  const tmp = createCacheKey();
   let obj = markAsDismissed(promotionId[8]);
   const items = [helpArticleLinkProps];
   const stateFromStores = obj.useStateFromStores(items, () => helpArticleLinkProps.useReducedMotion);
-  const analyticsLocations = bottomSheetData(promotionId[9])().analyticsLocations;
+  analyticsLocations = bottomSheetData(promotionId[9])().analyticsLocations;
+  let obj1 = analyticsLocations;
   const items1 = [markAsDismissed, promotionId];
-  const callback = analyticsLocations.useCallback((arg0) => {
+  callback = analyticsLocations.useCallback((arg0) => {
     markAsDismissed(arg0);
     let obj = bottomSheetData(promotionId[10]);
     obj = { type: "PREMIUM_MARKETING_ANNOUNCEMENT_MODAL_DISMISSED", promotionId };
@@ -51,14 +54,14 @@ export default function PremiumMarketingMomentActionSheet(component_id) {
   }, items1);
   let button = bottomSheetData.button;
   let buttonAction;
-  if (null != button) {
+  if (button != null) {
     buttonAction = button.buttonAction;
   }
   const items2 = [buttonAction, , , ];
   let button2 = bottomSheetData.button;
   let value;
-  if (null != button2) {
-    if (null != button2.navigableStorefrontApplicationId) {
+  if (button2 != null) {
+    if (button2.navigableStorefrontApplicationId != null) {
       value = iter.value;
     }
   }
@@ -69,104 +72,89 @@ export default function PremiumMarketingMomentActionSheet(component_id) {
   const callback1 = analyticsLocations.useCallback(() => {
     callback(outer1_7.PRIMARY);
     let obj = markAsDismissed(promotionId[11]);
-    obj = {};
     const button = bottomSheetData.button;
     let buttonAction;
-    if (null != button) {
+    if (button != null) {
       buttonAction = button.buttonAction;
     }
-    obj.buttonAction = buttonAction;
+    obj = { buttonAction, applicationId: null, analyticsLocations: null, analyticsPage: null };
     const button2 = bottomSheetData.button;
     let value;
-    if (null != button2) {
-      if (null != button2.navigableStorefrontApplicationId) {
+    if (button2 != null) {
+      if (button2.navigableStorefrontApplicationId != null) {
         value = iter.value;
       }
     }
-    obj.applicationId = value;
-    obj.analyticsLocations = analyticsLocations;
-    obj.analyticsPage = outer1_6.PREMIUM_MARKETING_MOMENT_ACTION_SHEET;
+    obj[1] = value;
+    obj[2] = analyticsLocations;
+    obj[3] = outer1_6.PREMIUM_MARKETING_MOMENT_ACTION_SHEET;
     obj.getButtonActionHandler(obj)();
   }, items2);
-  const callback2 = analyticsLocations.useCallback(() => {
+  const callback2 = obj1.useCallback(() => {
     callback(outer1_7.USER_DISMISS);
   }, items3);
-  obj = { type: markAsDismissed(promotionId[13]).ImpressionTypes.HALFSHEET, name: markAsDismissed(promotionId[13]).ImpressionNames.PREMIUM_MARKETING_COMPONENT };
-  obj = { component_type: markAsDismissed(promotionId[14]).MarketingComponentType.MOBILE_BOTTOM_SHEET, component_id: component_id.componentId, dismissible_content: bottomSheetData.dismissibleContent };
-  obj.properties = obj;
-  bottomSheetData(promotionId[12])(obj);
-  let obj3 = markAsDismissed(promotionId[15]);
-  helpArticleLinkProps = obj3.getHelpArticleLinkProps(bottomSheetData.helpArticle, bottomSheetData.helpArticleId);
-  const obj1 = { onDismiss: callback2 };
-  const obj2 = { style: items4 };
+  obj = { type: null, name: null, properties: null };
+  let tmp5Result = tmp5(tmp3[12]);
+  obj[0] = markAsDismissed(promotionId[13]).ImpressionTypes.HALFSHEET;
+  obj[1] = markAsDismissed(promotionId[13]).ImpressionNames.PREMIUM_MARKETING_COMPONENT;
+  obj = { component_type: tmp2(tmp3[14]).MarketingComponentType.MOBILE_BOTTOM_SHEET, component_id: component_id.componentId, dismissible_content: bottomSheetData.dismissibleContent };
+  obj[2] = obj;
+  tmp5Result(obj);
+  let tmp2Result = tmp2(tmp3[15]);
+  helpArticleLinkProps = tmp2Result.getHelpArticleLinkProps(bottomSheetData.helpArticle, bottomSheetData.helpArticleId);
+  obj1 = { onDismiss: callback2, children: null };
+  const obj2 = { style: items4, children: null };
   items4 = [tmp.container];
-  let obj6 = markAsDismissed(promotionId[17]);
-  obj3 = { uri: bottomSheetData.assetUrl };
-  if (obj6.getFile(obj3).isVideo) {
+  tmp2Result = tmp2(tmp3[17]);
+  if (tmp2Result.getFile(obj3).isVideo) {
     const obj4 = { src: null, style: null, muted: true, height: 188, width: 335, paused: null, resizeMode: "contain" };
-    ({ assetUrl: obj12.videoURI, assetUrl: obj12.uri } = bottomSheetData);
-    obj4.src = {};
-    obj4.style = tmp.video;
-    obj4.paused = stateFromStores;
-    let tmp15Result = tmp15(tmp16(tmp17[18]), obj4);
-    const obj5 = {};
+    ({ assetUrl: obj13[0], assetUrl: obj13[1] } = bottomSheetData);
+    obj4[0] = { videoURI: null, uri: null };
+    obj4[1] = tmp.video;
+    obj4[5] = stateFromStores;
+    let tmp14Result = tmp14(tmp5(tmp3[18]), obj4);
+    const obj5 = { videoURI: null, uri: null };
   } else {
-    obj6 = {};
-    const obj7 = { uri: bottomSheetData.assetUrl };
-    obj6.source = obj7;
-    obj6.style = tmp.image;
-    obj6.resizeMode = "contain";
-    tmp15Result = tmp15(tmp16(tmp17[19]), obj6);
+    const obj6 = { source: null, style: null, resizeMode: "contain" };
+    const obj7 = { uri: null };
+    obj7[0] = bottomSheetData.assetUrl;
+    obj6[0] = obj7;
+    obj6[1] = tmp.image;
+    tmp14Result = tmp14(tmp5(tmp3[19]), obj6);
   }
-  const items5 = [tmp15Result, , , ];
-  const obj8 = { style: null, color: "mobile-text-heading-primary", variant: "heading-lg/extrabold" };
+  const items5 = [tmp14Result, , , ];
   const items6 = [tmp.header];
-  obj8.style = items6;
-  obj8.children = bottomSheetData.header;
-  items5[1] = callback(markAsDismissed(promotionId[20]).Text, obj8);
-  const obj9 = { style: null, color: "text-default", variant: "text-sm/normal" };
-  const items7 = [tmp.body];
-  obj9.style = items7;
+  items5[1] = closure_8(markAsDismissed(promotionId[20]).Text, { style: items6, color: "mobile-text-heading-primary", variant: "heading-lg/extrabold", children: bottomSheetData.header });
+  const obj9 = { style: items7, color: "text-default", variant: "text-sm/normal", children: null };
+  items7 = [tmp.body];
   const items8 = [bottomSheetData.body, " ", ];
-  let tmp20 = null != helpArticleLinkProps;
-  if (tmp20) {
-    const obj10 = {
-      color: "text-link",
-      variant: "text-sm/normal",
-      accessibilityRole: "link",
-      onPress() {
-          return bottomSheetData(promotionId[21]).openURL(helpArticleLinkProps.url);
-        },
-      children: helpArticleLinkProps.linkText
+  tmp14Result = null != helpArticleLinkProps;
+  if (tmp14Result) {
+    const obj10 = { color: "text-link", variant: "text-sm/normal", accessibilityRole: "link", onPress: null, children: null };
+    obj10[3] = function onPress() {
+      return bottomSheetData(promotionId[21]).openURL(helpArticleLinkProps.url);
     };
-    tmp20 = callback(markAsDismissed(promotionId[20]).Text, obj10);
+    obj10[4] = helpArticleLinkProps.linkText;
+    tmp14Result = tmp14(tmp2(tmp3[20]).Text, obj10);
   }
-  items8[2] = tmp20;
-  obj9.children = items8;
+  items8[2] = tmp14Result;
+  obj9[3] = items8;
   items5[2] = closure_9(markAsDismissed(promotionId[20]).Text, obj9);
-  const obj11 = { style: items9 };
+  const obj11 = { style: items9, children: null };
   items9 = [tmp.buttonContainer];
-  const obj12 = {};
   const button3 = bottomSheetData.button;
   let copy;
-  const tmp12 = callback;
-  const tmp13 = closure_9;
-  const tmp14 = callback;
-  const tmp19 = closure_9;
-  const tmp25 = callback;
-  const tmp9 = bottomSheetData(promotionId[12]);
-  if (null != button3) {
+  tmp5Result = tmp5(tmp3[22]);
+  if (button3 != null) {
     copy = button3.copy;
   }
-  if (null == copy) {
-    const intl = markAsDismissed(promotionId[23]).intl;
-    copy = intl.string(markAsDismissed(promotionId[23]).t.J61px0);
+  if (copy == null) {
+    const intl = tmp2(tmp3[23]).intl;
+    copy = intl.string(tmp2(tmp3[23]).t.J61px0);
   }
-  obj12.text = copy;
-  obj12.onPress = callback1;
-  obj11.children = callback(bottomSheetData(promotionId[22]), obj12);
-  items5[3] = callback(tmp25, obj11);
-  obj2.children = items5;
-  obj1.children = tmp13(tmp14, obj2);
-  return tmp12(markAsDismissed(promotionId[16]).BottomSheet, obj1);
+  obj11[1] = closure_8(tmp5Result, { text: copy, onPress: callback1 });
+  items5[3] = closure_8(callback, obj11);
+  obj2[1] = items5;
+  obj1[1] = closure_9(callback, obj2);
+  return closure_8(markAsDismissed(promotionId[16]).BottomSheet, obj1);
 };

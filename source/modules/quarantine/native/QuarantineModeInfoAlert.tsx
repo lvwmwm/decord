@@ -1,40 +1,40 @@
-// Module ID: 5086
-// Function ID: 43850
+// Module ID: 5108
+// Function ID: 5109
 // Name: QuarantineModeInfoAlert
-// Dependencies: [31, 653, 33, 4165, 5087, 689, 4596, 1273, 1212, 4161, 2]
+// Dependencies: [19, 676, 21, 4189, 5109, 712, 4618, 1297, 1236, 4185, 2]
 // Exports: default
 
-// Module 5086 (QuarantineModeInfoAlert)
-import "result";
+// Module 5108 (QuarantineModeInfoAlert)
+import "noop";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 import importDefaultResult from "createTextStyle";
 
-let closure_3;
-let closure_4;
+let c3;
+let c4;
 const require = arg1;
-({ jsx: closure_3, jsxs: closure_4 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = {};
-const merged = Object.assign(require("createTextStyle")(require("ME").Fonts.PRIMARY_BOLD, require("_createForOfIteratorHelperLoose").colors.MOBILE_TEXT_HEADING_PRIMARY, 24));
-_createForOfIteratorHelperLoose["textAlign"] = "center";
-_createForOfIteratorHelperLoose["marginVertical"] = 12;
-_createForOfIteratorHelperLoose.header = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.text = { textAlign: "center", marginVertical: 8 };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+({ jsx: c3, jsxs: c4 } = jsxProd);
+createCacheKey = { header: null, text: null };
+createCacheKey = {};
+const merged = Object.assign(require("createTextStyle")(require("ME").Fonts.PRIMARY_BOLD, require("Themes").colors.MOBILE_TEXT_HEADING_PRIMARY, 24));
+createCacheKey.textAlign = "center";
+createCacheKey.marginVertical = 12;
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { textAlign: "center", marginVertical: 8 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
 const result = require("jsxProd").fileFinishedImporting("modules/quarantine/native/QuarantineModeInfoAlert.tsx");
 
 export default function QuarantineModeInfoAlert(onClose) {
-  const tmp = _createForOfIteratorHelperLoose();
-  let obj = { onClose: onClose.onClose };
-  obj = { style: tmp.header };
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj.children = intl.string(require(1212) /* getSystemLocale */.t.EouHwv);
-  const items = [callback(require(1273) /* Button */.LegacyText, obj), ];
-  obj = { style: tmp.text, variant: "text-md/medium" };
-  const intl2 = require(1212) /* getSystemLocale */.intl;
-  obj.children = intl2.string(require(1212) /* getSystemLocale */.t.zNPBMA);
-  items[1] = callback(require(4161) /* Text */.Text, obj);
-  obj.children = items;
-  return callback2(importDefault(4596), obj);
+  const tmp = createCacheKey();
+  let obj = { onClose: onClose.onClose, children: null };
+  obj = { style: tmp.header, children: null };
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj[1] = intl.string(require(1236) /* getSystemLocale */.t.EouHwv);
+  const items = [callback(require(1297) /* Button */.LegacyText, obj), ];
+  obj = { style: tmp.text, variant: "text-md/medium", children: null };
+  const intl2 = require(1236) /* getSystemLocale */.intl;
+  obj[2] = intl2.string(require(1236) /* getSystemLocale */.t.zNPBMA);
+  items[1] = callback(require(4185) /* Text */.Text, obj);
+  obj[1] = items;
+  return callback2(importDefault(4618), obj);
 };

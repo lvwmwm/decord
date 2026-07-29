@@ -1,78 +1,87 @@
-// Module ID: 10656
-// Function ID: 82880
+// Module ID: 10680
+// Function ID: 10681
 // Name: ModeratorStartStageView
-// Dependencies: [57, 31, 1838, 33, 566, 8297, 10657, 8242, 8296, 10658, 8186, 10659, 1212, 10676, 10677, 2]
+// Dependencies: [32, 19, 1862, 21, 589, 8321, 10681, 8266, 8320, 10682, 8210, 10683, 1236, 10700, 10701, 2]
 // Exports: default
 
-// Module 10656 (ModeratorStartStageView)
+// Module 10680 (ModeratorStartStageView)
 import _slicedToArray from "_slicedToArray";
-import "result";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import "noop";
+import createGuildRecordFromRust from "createGuildRecordFromRust";
 import jsxProd from "jsxProd";
 
-let closure_5;
+let c5;
 let closure_6;
-let closure_7;
+let error;
 const require = arg1;
-({ jsx: closure_5, Fragment: closure_6, jsxs: closure_7 } = jsxProd);
-const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/stage_channels/native/components/ModeratorStartStageView.tsx");
+({ jsx: c5, Fragment: closure_6, jsxs: error } = jsxProd);
+const result = require("createGuildRecordFromRust").fileFinishedImporting("modules/stage_channels/native/components/ModeratorStartStageView.tsx");
 
 export default function ModeratorStartStageView(channel) {
   channel = channel.channel;
-  const guild_id = channel.guild_id;
-  let obj = guild_id(566);
-  const items = [_createForOfIteratorHelperLoose];
+  let guild_id;
+  guild_id = channel.guild_id;
+  let obj = guild_id(589);
+  const items = [createGuildRecordFromRust];
   const items1 = [guild_id];
   const stateFromStores = obj.useStateFromStores(items, () => outer1_4.getGuild(guild_id), items1);
-  let obj1 = guild_id(8297);
+  let obj1 = guild_id(8321);
   const first = callback(obj1.useGuildChannelScheduledEvents(channel.id), 1)[0];
-  let obj2 = guild_id(8242);
+  let obj2 = guild_id(8266);
   const canManageGuildEventResult = obj2.useManageResourcePermissions(channel).canManageGuildEvent(first);
-  let obj3 = guild_id(10658);
+  const tmp5 = importDefault;
+  let obj3 = guild_id(10682);
   const isLive = obj3.useStageChannelStartEvent(channel.id).isLive;
-  let obj4 = guild_id(8186);
+  let obj4 = guild_id(8210);
   const nextRecurrenceIdInEvent = obj4.getNextRecurrenceIdInEvent(first);
-  if (null != nextRecurrenceIdInEvent) {
-    const tmp6 = nextRecurrenceIdInEvent;
-  }
-  let tmp8Result = null;
+  let tmp10Result2 = null;
   if (null != stateFromStores) {
-    obj = {};
-    const intl = guild_id(1212).intl;
-    obj.title = intl.string(guild_id(1212).t.QGnDLs);
-    const intl2 = guild_id(1212).intl;
-    obj.body = intl2.string(guild_id(1212).t["s/uXzq"]);
-    obj = {};
-    let tmp15 = null;
+    obj = { title: null, body: null, children: null };
+    const intl = tmp(1236).intl;
+    obj[0] = intl.string(tmp(1236).t.QGnDLs);
+    const intl2 = tmp(1236).intl;
+    obj[1] = intl2.string(tmp(1236).t["s/uXzq"]);
+    let tmp10Result = null;
     if (canManageGuildEventResult) {
-      tmp15 = null;
+      tmp10Result = null;
       if (null != first) {
-        obj1 = { channel, event: first, isLive, guild: stateFromStores, recurrenceId: tmp6 };
-        tmp15 = callback2(guild_id(10676).StartEventPrompt, obj1);
+        obj = { channel: null, event: null, isLive: null, guild: null, recurrenceId: null };
+        obj[0] = channel;
+        obj[1] = first;
+        obj[2] = isLive;
+        obj[3] = stateFromStores;
+        obj[4] = nextRecurrenceIdInEvent;
+        tmp10Result = tmp10(tmp(10700).StartEventPrompt, obj);
       }
     }
-    const items2 = [tmp15, , , ];
-    let tmp19 = null;
-    if (importDefault(10657)(channel.id, true).moderator) {
-      obj2 = { channel, isLive };
-      tmp19 = callback2(guild_id(10677).StartStagePrompt, obj2);
+    const items2 = [tmp10Result, , , ];
+    tmp10Result = null;
+    if (importDefault(10681)(channel.id, true).moderator) {
+      obj1 = { channel: null, isLive: null };
+      obj1[0] = channel;
+      obj1[1] = isLive;
+      tmp10Result = tmp10(tmp(10701).StartStagePrompt, obj1);
     }
-    items2[1] = tmp19;
-    let tmp23 = null;
-    if (tmp4) {
-      obj3 = { channel, isLive, guild: stateFromStores };
-      tmp23 = callback2(guild_id(10676).ScheduleEventPrompt, obj3);
+    items2[1] = tmp10Result;
+    let tmp10Result1 = null;
+    if (tmp7) {
+      obj2 = { channel: null, isLive: null, guild: null };
+      obj2[0] = channel;
+      obj2[1] = isLive;
+      obj2[2] = stateFromStores;
+      tmp10Result1 = tmp10(tmp(10700).ScheduleEventPrompt, obj2);
     }
-    items2[2] = tmp23;
-    obj4 = { onContinue: channel.onSkip };
-    items2[3] = callback2(guild_id(10677).ContinueToStagePrompt, obj4);
-    obj.children = items2;
-    obj.children = closure_7(closure_6, obj);
-    tmp8Result = callback2(importDefault(10659), obj);
-    const tmp11 = importDefault(10659);
-    const tmp13 = closure_7;
-    const tmp14 = closure_6;
-    const tmp8 = callback2;
+    obj3 = { children: null };
+    items2[2] = tmp10Result1;
+    obj4 = { onContinue: null };
+    obj4[0] = channel.onSkip;
+    items2[3] = closure_5(tmp(10701).ContinueToStagePrompt, obj4);
+    obj3[0] = items2;
+    obj[2] = closure_7(closure_6, obj3);
+    tmp10Result2 = tmp10(tmp5(10683), obj);
+    const tmp12 = closure_7;
+    const tmp13 = closure_6;
+    const tmp5Result = tmp5(10683);
   }
-  return tmp8Result;
+  return tmp10Result2;
 };

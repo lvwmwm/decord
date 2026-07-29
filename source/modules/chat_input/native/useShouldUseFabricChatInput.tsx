@@ -1,44 +1,55 @@
-// Module ID: 11141
-// Function ID: 86454
-// Name: resolveShouldUseFabric
-// Dependencies: [477, 4029, 11142, 2]
+// Module ID: 11165
+// Function ID: 11166
+// Name: useShouldUseFabricChatInput
+// Dependencies: [500, 4053, 11166, 2]
 // Exports: shouldUseFabricChatInput, useShouldUseFabricChatInput
 
-// Module 11141 (resolveShouldUseFabric)
-function resolveShouldUseFabric(enabled) {
-  if (null != closure_3) {
-    let tmp4 = closure_3;
-  } else {
-    const tmp3 = !require(477) /* set */.isAndroid();
-    tmp4 = !tmp3;
-    if (tmp3) {
-      const obj2 = require(4029) /* isFabric */;
-      tmp4 = require(4029) /* isFabric */.isIosFabric() && enabled;
-      const tmp7 = require(4029) /* isFabric */.isIosFabric() && enabled;
-    }
-    closure_3 = tmp4;
-    const obj = require(477) /* set */;
-  }
-  return tmp4;
-}
+// Module 11165 (useShouldUseFabricChatInput)
+const chat_input = "chat_input";
 const result = require("apexExperiment").fileFinishedImporting("modules/chat_input/native/useShouldUseFabricChatInput.tsx");
 
 export const useShouldUseFabricChatInput = function useShouldUseFabricChatInput() {
-  return resolveShouldUseFabric(importDefault(11142).useConfig({ location: "chat_input" }).enabled);
+  importDefault(11166);
+  if (null != closure_3) {
+    let isAndroidResult = closure_3;
+  } else {
+    isAndroidResult = require(500) /* set */.isAndroid();
+    if (!isAndroidResult) {
+      const tmp4Result = tmp4(4053);
+      isAndroidResult = tmp4(4053).isIosFabric() && tmp3;
+      const tmp6 = tmp4(4053).isIosFabric() && tmp3;
+    }
+    closure_3 = isAndroidResult;
+    const obj = require(500) /* set */;
+    tmp4 = require;
+  }
+  return isAndroidResult;
 };
 export const shouldUseFabricChatInput = function shouldUseFabricChatInput() {
   if (null != closure_3) {
-    let tmpResult = closure_3;
+    let isAndroidResult = closure_3;
   } else {
-    let obj = require(477) /* set */;
-    let enabled = !obj.isAndroid();
-    if (enabled) {
-      obj = { location: "chat_input" };
-      enabled = importDefault(11142).getConfig(obj).enabled;
-      const obj2 = importDefault(11142);
+    isAndroidResult = require(500) /* set */.isAndroid();
+    let enabled = !isAndroidResult;
+    if (!isAndroidResult) {
+      let obj = importDefault(11166);
+      obj = { location: null };
+      obj[0] = chat_input;
+      enabled = obj.getConfig(obj).enabled;
     }
-    tmpResult = resolveShouldUseFabric(enabled);
-    const tmp = resolveShouldUseFabric;
+    if (null != closure_3) {
+      isAndroidResult = closure_3;
+    } else {
+      let tmp6Result = tmp6(500);
+      isAndroidResult = tmp6Result.isAndroid();
+      if (!isAndroidResult) {
+        tmp6Result = tmp6(4053);
+        isAndroidResult = tmp6Result.isIosFabric() && enabled;
+        const tmp5 = tmp6Result.isIosFabric() && enabled;
+      }
+      closure_3 = isAndroidResult;
+    }
+    const obj5 = require(500) /* set */;
   }
-  return tmpResult;
+  return isAndroidResult;
 };

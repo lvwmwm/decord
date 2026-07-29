@@ -1,26 +1,26 @@
-// Module ID: 8303
-// Function ID: 66506
+// Module ID: 8327
+// Function ID: 8328
 // Name: CalendarIcon
-// Dependencies: [31, 33, 689, 3868, 8304, 2]
+// Dependencies: [19, 21, 712, 3892, 8328, 2]
 // Exports: CalendarIcon
 
-// Module 8303 (CalendarIcon)
-import "result";
+// Module 8327 (CalendarIcon)
+import "noop";
 import { jsx } from "jsxProd";
 
 const require = arg1;
-const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("design/components/Icon/native/redesign/generated/CalendarIcon.tsx");
+const result = require("Themes").fileFinishedImporting("design/components/Icon/native/redesign/generated/CalendarIcon.tsx");
 
 export const CalendarIcon = function CalendarIcon(color) {
   let INTERACTIVE_ICON_DEFAULT = color.color;
   if (INTERACTIVE_ICON_DEFAULT === undefined) {
-    INTERACTIVE_ICON_DEFAULT = importDefault(689).colors.INTERACTIVE_ICON_DEFAULT;
+    INTERACTIVE_ICON_DEFAULT = importDefault(712).colors.INTERACTIVE_ICON_DEFAULT;
   }
-  let obj = Object.create(null);
-  obj.style = 0;
-  obj.color = 0;
-  const merged = Object.assign(color, obj);
-  obj = { source: require(8304) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
+  const merged = Object.assign(color, Object.create(null));
+  const obj = { source: null, color: null, style: null };
+  obj[0] = require(8328) /* registerAsset */;
+  obj[1] = INTERACTIVE_ICON_DEFAULT;
+  obj[2] = color.style;
   const merged1 = Object.assign(merged);
-  return jsx(require(3868) /* BaseIconImage */.BaseIconImage, { source: require(8304) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(require(3892) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
 };

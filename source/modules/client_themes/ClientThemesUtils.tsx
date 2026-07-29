@@ -1,20 +1,20 @@
-// Module ID: 4008
-// Function ID: 33018
+// Module ID: 4032
+// Function ID: 4033
 // Name: getThemeForColor
-// Dependencies: [3978, 1281, 482, 688, 2]
+// Dependencies: [4002, 1305, 505, 711, 2]
 // Exports: areThemesEqualForGradientThemes, getBaseTheme, getLinearGradientForBackgroundGradient, getThemeForColor, getThemeName
 
-// Module 4008 (getThemeForColor)
+// Module 4032 (getThemeForColor)
 import items1 from "items1";
 import SystemThemeState from "SystemThemeState";
 import { ThemeTypes } from "sum";
 
 let PROTO_THEME_MAP_WEB_REFRESH;
-let closure_2;
-let closure_3;
-let closure_4;
-({ LEGACY_STANDARD_BACKGROUND_THEMES: closure_2, REFRESH_STANDARD_BACKGROUND_THEMES: closure_3 } = items1);
-({ PROTO_THEME_MAP_MOBILE: closure_4, PROTO_THEME_MAP_WEB_REFRESH } = SystemThemeState);
+let c3;
+let c4;
+let obj1;
+({ LEGACY_STANDARD_BACKGROUND_THEMES: obj1, REFRESH_STANDARD_BACKGROUND_THEMES: c3 } = items1);
+({ PROTO_THEME_MAP_MOBILE: c4, PROTO_THEME_MAP_WEB_REFRESH } = SystemThemeState);
 const result = require("sum").fileFinishedImporting("modules/client_themes/ClientThemesUtils.tsx");
 
 export const getThemeForColor = function getThemeForColor(l) {
@@ -33,41 +33,34 @@ export const getLinearGradientForBackgroundGradient = function getLinearGradient
     let stop;
     let token;
     ({ token, stop } = arg0);
-    return "" + outer1_0(outer1_1[3]).unsafe_getResolvedRawColor(token, { saturation: 1 }) + " " + stop + "%";
+    return "" + callback(table[3]).unsafe_getResolvedRawColor(token, { saturation: 1 }) + " " + stop + "%";
   });
   return "linear-gradient(" + angle + "deg, " + mapped.join(", ") + ")";
 };
 export const areThemesEqualForGradientThemes = function areThemesEqualForGradientThemes(arg0, arg1) {
   let tmp = arg0 === arg1;
   if (!tmp) {
-    let tmp3 = arg0 === ThemeTypes.DARK;
-    if (tmp3) {
-      tmp3 = arg1 === ThemeTypes.DARKER;
-    }
+    let tmp3 = arg0 === ThemeTypes.DARK && arg1 === tmp2.DARKER;
     if (!tmp3) {
-      let tmp6 = arg0 === ThemeTypes.DARKER;
-      if (tmp6) {
-        tmp6 = arg1 === ThemeTypes.DARK;
-      }
-      tmp3 = tmp6;
+      tmp3 = arg0 === tmp2.DARKER && arg1 === tmp2.DARK;
+      const tmp4 = arg0 === tmp2.DARKER && arg1 === tmp2.DARK;
     }
     tmp = tmp3;
   }
   return tmp;
 };
-export const getBaseTheme = function getBaseTheme(base_theme) {
-  return table[base_theme];
+export const getBaseTheme = function getBaseTheme(arg0) {
+  return table[arg0];
 };
 export const getThemeName = function getThemeName(DARK, closure_1) {
   let closure_0 = DARK;
   const found = closure_1 ? closure_3 : closure_2.find((theme) => theme.theme === closure_0);
-  let name;
-  if (null != found) {
-    name = found.getName();
+  let str;
+  if (found != null) {
+    str = found.getName();
   }
-  let str = "";
-  if (null != name) {
-    str = name;
+  if (str == null) {
+    str = "";
   }
   return str;
 };

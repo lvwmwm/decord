@@ -1,104 +1,52 @@
-// Module ID: 5778
-// Function ID: 50360
-// Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 1318, 1282, 566, 686, 2]
+// Module ID: 5796
+// Function ID: 5797
+// Name: getSettings
+// Dependencies: [1342, 1306, 589, 709, 2]
 
-// Module 5778 (_isNativeReflectConstruct)
-import _callSuper from "_callSuper";
-import initialize from "initialize";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
+// Module 5796 (getSettings)
+import { Store } from "initialize";
 
 const require = arg1;
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
-  }
-  const result = _isNativeReflectConstruct();
+let c2 = false;
+let closure_3 = {};
+let closure_4 = {};
+class FamilyCenterControlledSettingsStore extends Store {
 }
-let c7 = false;
-let closure_8 = {};
-let closure_9 = {};
-let tmp2 = ((Store) => {
-  class FamilyCenterControlledSettingsStore {
-    constructor() {
-      self = this;
-      tmp = outer1_2(this, FamilyCenterControlledSettingsStore);
-      obj = outer1_5(FamilyCenterControlledSettingsStore);
-      tmp2 = outer1_4;
-      if (outer1_10()) {
-        tmp6 = globalThis;
-        _Reflect = Reflect;
-        tmp7 = outer1_5;
-        tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, outer1_5(self).constructor);
-      } else {
-        tmp3 = arguments;
-        tmp4 = arguments;
-        constructResult = obj(...arguments);
-      }
-      return tmp2(self, constructResult);
+const prototype = FamilyCenterControlledSettingsStore.prototype;
+prototype["getSettings"] = function getSettings(arg0) {
+  return dependencyMap[arg0];
+};
+prototype["getControlledSettings"] = function getControlledSettings(arg0) {
+  return dependencyMap[arg0];
+};
+prototype["hasSettingsForUser"] = function hasSettingsForUser(arg0) {
+  return null != dependencyMap[arg0];
+};
+prototype["getConsents"] = function getConsents(arg0) {
+  return dependencyMap2[arg0];
+};
+prototype["hasConsented"] = function hasConsented(arg0, arg1) {
+  if (null == arg0) {
+    return false;
+  } else {
+    let tmp3 = null != tmp2;
+    if (tmp3) {
+      tmp3 = null != tmp2[arg1] && tmp2[arg1].consented;
+      const tmp5 = null != tmp2[arg1] && tmp2[arg1].consented;
     }
+    return tmp3;
   }
-  callback2(FamilyCenterControlledSettingsStore, Store);
-  let obj = {
-    key: "getSettings",
-    value(arg0) {
-      return outer1_8[arg0];
-    }
-  };
-  const items = [obj, , , , , ];
-  obj = {
-    key: "getControlledSettings",
-    value(arg0) {
-      return outer1_8[arg0];
-    }
-  };
-  items[1] = obj;
-  obj = {
-    key: "hasSettingsForUser",
-    value(arg0) {
-      return null != outer1_8[arg0];
-    }
-  };
-  items[2] = obj;
-  items[3] = {
-    key: "getConsents",
-    value(arg0) {
-      return outer1_9[arg0];
-    }
-  };
-  items[4] = {
-    key: "hasConsented",
-    value(arg0, arg1) {
-      if (null == arg0) {
-        return false;
-      } else {
-        let tmp3 = null != tmp2;
-        if (tmp3) {
-          tmp3 = null != tmp2[arg1] && tmp2[arg1].consented;
-          const tmp4 = null != tmp2[arg1] && tmp2[arg1].consented;
-        }
-        return tmp3;
-      }
-    }
-  };
-  items[5] = {
-    key: "isLoading",
-    get() {
-      return outer1_7;
-    }
-  };
-  return callback(FamilyCenterControlledSettingsStore, items);
-})(require("initialize").Store);
-tmp2.displayName = "FamilyCenterControlledSettingsStore";
-tmp2 = new tmp2(require("dispatcher"), {
+};
+Object.defineProperty(prototype, "isLoading", {
+  get: function isLoading() {
+    return c2;
+  },
+  set: undefined
+});
+FamilyCenterControlledSettingsStore.displayName = "FamilyCenterControlledSettingsStore";
+const familyCenterControlledSettingsStore = new FamilyCenterControlledSettingsStore(require("dispatcher"), {
   FAMILY_CENTER_TEEN_SETTINGS_FETCH_START: function handleTeenSettingsFetchStart() {
-    let c7 = true;
+    let c2 = true;
   },
   FAMILY_CENTER_TEEN_SETTINGS_AND_CONSENTS_FETCH_SUCCESS: function handleTeenSettingsAndConsentsFetchSuccess(arg0) {
     let consents;
@@ -106,29 +54,29 @@ tmp2 = new tmp2(require("dispatcher"), {
     let userId;
     ({ userId, settings, consents } = arg0);
     if (null != settings) {
-      closure_8[userId] = require(1318) /* _createForOfIteratorHelperLoose */.b64ToPreloadedUserSettingsProto(settings);
-      const obj = require(1318) /* _createForOfIteratorHelperLoose */;
+      closure_3[userId] = require(1342) /* b64ToProto */.b64ToPreloadedUserSettingsProto(settings);
+      const obj = require(1342) /* b64ToProto */;
     }
     if (null != consents) {
-      closure_9[userId] = consents;
+      closure_4[userId] = consents;
     }
-    let c7 = false;
+    let c2 = false;
   },
   FAMILY_CENTER_TEEN_CONSENTS_UPDATE_SUCCESS: function handleTeenConsentsUpdateSuccess(userId) {
-    closure_9[userId.userId] = userId.consents;
+    closure_4[userId.userId] = userId.consents;
   },
   FAMILY_CENTER_TEEN_UPDATE_SETTINGS_SUCCESS: function handleTeenUpdateSettingsSuccess(userId) {
     userId = userId.userId;
-    const result = require(1318) /* _createForOfIteratorHelperLoose */.b64ToPreloadedUserSettingsProto(userId.settings);
-    const obj = require(1318) /* _createForOfIteratorHelperLoose */;
-    table[userId] = require(1318) /* _createForOfIteratorHelperLoose */.mergeTopLevelFields(require(1282) /* _callSuper */.PreloadedUserSettings, table[userId], result);
+    const result = require(1342) /* b64ToProto */.b64ToPreloadedUserSettingsProto(userId.settings);
+    const obj = require(1342) /* b64ToProto */;
+    dependencyMap[userId] = require(1342) /* b64ToProto */.mergeTopLevelFields(require(1306) /* create */.PreloadedUserSettings, dependencyMap[userId], result);
   },
   LOGOUT: function handleLogout() {
-    let closure_8 = {};
-    let closure_9 = {};
-    let c7 = false;
+    let closure_3 = {};
+    let closure_4 = {};
+    let c2 = false;
   }
 });
-let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/parent_tools/FamilyCenterControlledSettingsStore.tsx");
+let result = require("initialize").fileFinishedImporting("modules/parent_tools/FamilyCenterControlledSettingsStore.tsx");
 
-export default tmp2;
+export default familyCenterControlledSettingsStore;

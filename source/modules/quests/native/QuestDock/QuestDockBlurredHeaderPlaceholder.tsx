@@ -1,39 +1,40 @@
-// Module ID: 14188
-// Function ID: 108959
+// Module ID: 14210
+// Function ID: 14211
 // Name: QUEST_DOCK_UNENROLLED_HEADER_INSET_EXPANDED
-// Dependencies: [31, 27, 5011, 14100, 33, 4165, 14101, 14189, 4026, 2]
+// Dependencies: [19, 17, 5033, 14122, 21, 4189, 14123, 14211, 4050, 2]
 
-// Module 14188 (QUEST_DOCK_UNENROLLED_HEADER_INSET_EXPANDED)
-import importAllResult from "result";
+// Module 14210 (QUEST_DOCK_UNENROLLED_HEADER_INSET_EXPANDED)
+import importAllResult from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { QuestDockMode } from "QuestsExperimentLocations";
 import QUEST_DOCK_COLLAPSED_HEIGHT from "QUEST_DOCK_COLLAPSED_HEIGHT";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
 let QUEST_DOCK_EXPANDED_HEIGHT;
 let QUEST_DOCK_UNENROLLED_HEADER_INSET_EXPANDED;
 let StyleSheet;
-let closure_4;
-let closure_7;
-let closure_8;
-let closure_9;
+let c4;
+let c9;
+let error;
+let metroImportAll;
 const require = arg1;
-({ StyleSheet, View: closure_4 } = get_ActivityIndicator);
+let c3 = importAllResult;
+({ StyleSheet, View: c4 } = get_ActivityIndicator);
 ({ QUEST_DOCK_EXPANDED_HEIGHT, QUEST_DOCK_UNENROLLED_HEADER_INSET_EXPANDED } = QUEST_DOCK_COLLAPSED_HEIGHT);
-({ jsx: closure_7, Fragment: closure_8, jsxs: closure_9 } = jsxProd);
-let obj = {};
+({ jsx: error, Fragment: metroImportAll, jsxs: c9 } = jsxProd);
+let obj = { image: null, overlay: null };
 obj = {};
 const merged = Object.assign(StyleSheet.absoluteFillObject);
-obj["height"] = QUEST_DOCK_EXPANDED_HEIGHT;
-obj["top"] = -QUEST_DOCK_UNENROLLED_HEADER_INSET_EXPANDED;
-obj.image = obj;
-_createForOfIteratorHelperLoose = {};
+obj.height = QUEST_DOCK_EXPANDED_HEIGHT;
+obj.top = -QUEST_DOCK_UNENROLLED_HEADER_INSET_EXPANDED;
+obj[0] = obj;
+createCacheKey = {};
 const merged1 = Object.assign(StyleSheet.absoluteFillObject);
-_createForOfIteratorHelperLoose["backgroundColor"] = "rgba(38, 39, 50, 0.3)";
-_createForOfIteratorHelperLoose["height"] = QUEST_DOCK_EXPANDED_HEIGHT;
-obj.overlay = _createForOfIteratorHelperLoose;
-let closure_10 = _createForOfIteratorHelperLoose.createStyles(obj);
+createCacheKey.backgroundColor = "rgba(38, 39, 50, 0.3)";
+createCacheKey.height = QUEST_DOCK_EXPANDED_HEIGHT;
+obj[1] = createCacheKey;
+let closure_10 = createCacheKey.createStyles(obj);
 let closure_11 = { code: "function QuestDockBlurredHeaderPlaceholderTsx1(){const{activeQuestDockMode,QuestDockMode,QUEST_DOCK_UNENROLLED_HEADER_INSET_EXPANDED,questDockWrapperSpecs}=this.__closure;return{left:activeQuestDockMode.get()===QuestDockMode.EXPANDED?-QUEST_DOCK_UNENROLLED_HEADER_INSET_EXPANDED:0,width:questDockWrapperSpecs.get().width+QUEST_DOCK_UNENROLLED_HEADER_INSET_EXPANDED};}" };
 const memoResult = importAllResult.memo(function QuestDockBlurredContentBackground(placeholder) {
   let animatedLayout;
@@ -45,21 +46,20 @@ const memoResult = importAllResult.memo(function QuestDockBlurredContentBackgrou
   activeQuestDockMode = context.activeQuestDockMode;
   const items = [placeholder];
   const memo = importAllResult.useMemo(() => {
-    const obj = { uri: placeholder(activeQuestDockMode[7]).thumbHashToDataURL(Uint8Array.from(atob(placeholder), (str) => str.charCodeAt(0))) };
+    const obj = { uri: null };
+    obj[0] = placeholder(activeQuestDockMode[7]).thumbHashToDataURL(Uint8Array.from(atob(placeholder), (str) => str.charCodeAt(0)));
     return obj;
   }, items);
   const tmp3 = callback3();
   let obj = placeholder(activeQuestDockMode[8]);
   class D {
     constructor() {
-      obj = {};
       num = 0;
       if (activeQuestDockMode.get() === outer1_5.EXPANDED) {
         tmp = outer1_6;
         num = -outer1_6;
       }
-      obj.left = num;
-      obj.width = questDockWrapperSpecs.get().width + outer1_6;
+      obj = { left: num, width: questDockWrapperSpecs.get().width + outer1_6 };
       return obj;
     }
   }
@@ -67,11 +67,11 @@ const memoResult = importAllResult.memo(function QuestDockBlurredContentBackgrou
   D.__closure = obj;
   D.__workletHash = 11176778421725;
   D.__initData = closure_11;
-  obj = {};
+  obj = { children: null };
   animatedStyle = obj.useAnimatedStyle(D);
   const items1 = [tmp3.image, animatedStyle, animatedStyle];
   const items2 = [callback(questDockWrapperSpecs(activeQuestDockMode[8]).Image, { source: memo, style: items1, layout: animatedLayout }), callback(closure_4, { style: tmp3.overlay })];
-  obj.children = items2;
+  obj[0] = items2;
   return callback2(closure_8, obj);
 });
 const result = require("QuestsExperimentLocations").fileFinishedImporting("modules/quests/native/QuestDock/QuestDockBlurredHeaderPlaceholder.tsx");

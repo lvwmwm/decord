@@ -1,29 +1,29 @@
-// Module ID: 14319
-// Function ID: 109827
+// Module ID: 14341
+// Function ID: 14342
 // Name: toggle
-// Dependencies: [1188, 1194, 7733, 1324, 566, 686, 10099, 1212, 2]
+// Dependencies: [1212, 1218, 7756, 1348, 589, 709, 10120, 1236, 2]
 
-// Module 14319 (toggle)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_4 from "_isNativeReflectConstruct";
+// Module 14341 (toggle)
+import initialize from "initialize";
+import fetchFingerprint from "fetchFingerprint";
 import createToggle from "createToggle";
 
 const require = arg1;
 const name = require("useIsMobileVisualRefreshExperimentEnabled").MobileVisualRefreshExperiment.definition.name;
 createToggle = {
   useTitle() {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(require(1212) /* getSystemLocale */.t.s3amTp);
+    const intl = require(1236) /* getSystemLocale */.intl;
+    return intl.string(require(1236) /* getSystemLocale */.t.s3amTp);
   },
   useDescription() {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(require(1212) /* getSystemLocale */.t["6e1ir2"]);
+    const intl = require(1236) /* getSystemLocale */.intl;
+    return intl.string(require(1236) /* getSystemLocale */.t["6e1ir2"]);
   },
   parent: require("MobileSetting").MobileSetting.APPEARANCE,
   usePredicate: function useIsInDTesterExperimentVariant() {
-    const items = [_isNativeReflectConstruct, closure_4];
-    return require(566) /* initialize */.useStateFromStores(items, () => {
-      const serverAssignment = outer1_3.getServerAssignment("user", outer1_4.getId(), outer1_5);
+    const items = [initialize, fetchFingerprint];
+    return require(589) /* initialize */.useStateFromStores(items, () => {
+      serverAssignment = serverAssignment.getServerAssignment("user", id.getId(), closure_5);
       let tmp2 = null != serverAssignment;
       if (tmp2) {
         tmp2 = 3 === serverAssignment.variantId;
@@ -32,16 +32,18 @@ createToggle = {
     });
   },
   useValue: function useIsRefreshEnabled() {
-    const MobileVisualRefreshExperiment = require(1324) /* useIsMobileVisualRefreshExperimentEnabled */.MobileVisualRefreshExperiment;
+    const MobileVisualRefreshExperiment = require(1348) /* useIsMobileVisualRefreshExperimentEnabled */.MobileVisualRefreshExperiment;
     return MobileVisualRefreshExperiment.useConfig({ location: "SettingsAppearance" }).enabled;
   },
   onValueChange: function onToggleRefresh(arg0) {
-    const dispatch = importDefault(686).dispatch;
+    const dispatch = importDefault(709).dispatch;
     if (arg0) {
-      let obj = { type: "APEX_EXPERIMENT_OVERRIDE_DELETE", experimentName: name };
+      let obj = { type: "APEX_EXPERIMENT_OVERRIDE_DELETE", experimentName: null };
+      obj[1] = name;
       dispatch(obj);
     } else {
-      obj = { type: "APEX_EXPERIMENT_OVERRIDE_CREATE", experimentName: name, variantId: 0 };
+      obj = { type: "APEX_EXPERIMENT_OVERRIDE_CREATE", experimentName: null, variantId: 0 };
+      obj[1] = name;
       dispatch(obj);
     }
   }

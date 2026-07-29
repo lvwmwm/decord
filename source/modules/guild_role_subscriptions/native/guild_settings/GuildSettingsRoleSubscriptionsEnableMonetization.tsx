@@ -1,12 +1,12 @@
-// Module ID: 16523
-// Function ID: 128635
+// Module ID: 16558
+// Function ID: 16559
 // Name: GuildSubscriptionEnableMonetization
-// Dependencies: [31, 1838, 33, 566, 16485, 15371, 1212, 2]
+// Dependencies: [19, 1862, 21, 589, 16520, 15404, 1236, 2]
 // Exports: default
 
-// Module 16523 (GuildSubscriptionEnableMonetization)
-import "result";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+// Module 16558 (GuildSubscriptionEnableMonetization)
+import "noop";
+import createGuildRecordFromRust from "createGuildRecordFromRust";
 import { jsx } from "jsxProd";
 
 const require = arg1;
@@ -14,18 +14,18 @@ const result = require("jsxProd").fileFinishedImporting("modules/guild_role_subs
 
 export default function GuildSubscriptionEnableMonetization(guildId) {
   guildId = guildId.guildId;
-  let obj = guildId(566);
-  const items = [_createForOfIteratorHelperLoose];
+  let obj = guildId(589);
+  const items = [createGuildRecordFromRust];
   if (null == obj.useStateFromStores(items, () => outer1_3.getGuild(guildId))) {
-    let tmp4 = jsx(importDefault(16485), {});
+    let tmp5 = jsx(importDefault(16520), {});
   } else {
-    obj = { brightTitle: true };
-    const intl = guildId(1212).intl;
-    obj.title = intl.string(guildId(1212).t.KeeWp0);
-    const intl2 = guildId(1212).intl;
-    obj.description = intl2.string(guildId(1212).t["tJLG+L"]);
-    tmp4 = jsx(importDefault(15371), { brightTitle: true });
-    const tmp8 = importDefault(15371);
+    obj = { brightTitle: true, title: null, description: null };
+    const intl = tmp(1236).intl;
+    obj[1] = intl.string(tmp(1236).t.KeeWp0);
+    const intl2 = tmp(1236).intl;
+    obj[2] = intl2.string(tmp(1236).t["tJLG+L"]);
+    tmp5 = jsx(importDefault(15404), { brightTitle: true, title: null, description: null });
+    const tmp8 = importDefault(15404);
   }
-  return tmp4;
+  return tmp5;
 };

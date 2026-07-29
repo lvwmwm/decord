@@ -1,10 +1,10 @@
-// Module ID: 10086
-// Function ID: 77972
+// Module ID: 10107
+// Function ID: 10108
 // Name: ANSWER_IN_REGEX
-// Dependencies: [4153, 2]
+// Dependencies: [4177, 2]
 // Exports: makeRegexForOptionsWithNegation, validateForMapWithNegation
 
-// Module 10086 (ANSWER_IN_REGEX)
+// Module 10107 (ANSWER_IN_REGEX)
 const result = require("set").fileFinishedImporting("modules/search/tokens/SearchTokensUtils.tsx");
 
 export const ANSWER_IN_REGEX = /(?:\s*#?((?:"(\\\\|\\"|[^\\"])*")|(?:[^\s]+)))/i;
@@ -12,12 +12,12 @@ export const GENERIC_REGEX = /(?:\s*([^\s]+))/;
 export const makeRegexForOptionsWithNegation = function makeRegexForOptionsWithNegation(items) {
   items = [...items];
   const sorted = items.sort((arg0, arg1) => arg1.length - arg0.length);
-  const mapped = sorted.map((arg0) => outer1_0(outer1_1[0]).escape(arg0));
+  const mapped = sorted.map((arg0) => callback(table[0]).escape(arg0));
   const regExp = new RegExp("(?:\\s*(-?(?:" + mapped.join("|") + ")))", "i");
   return regExp;
 };
-export const validateForMapWithNegation = function validateForMapWithNegation(author_type, authorTypeMap, getMatch) {
-  const match = getMatch.getMatch(1);
+export const validateForMapWithNegation = function validateForMapWithNegation(author_type, hasMap, token) {
+  const match = token.getMatch(1);
   const startsWithResult = match.startsWith("-");
   let substr = match;
   if (startsWithResult) {
@@ -33,7 +33,7 @@ export const validateForMapWithNegation = function validateForMapWithNegation(au
       const _HermesInternal = HermesInternal;
       combined = "-" + tmp3;
     }
-    getMatch.setData(author_type, combined);
+    token.setData(author_type, combined);
     flag = true;
   }
   return flag;

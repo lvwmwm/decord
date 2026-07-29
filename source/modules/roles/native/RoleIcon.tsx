@@ -1,11 +1,11 @@
-// Module ID: 5523
-// Function ID: 46987
+// Module ID: 5541
+// Function ID: 5542
 // Name: RoleIcon
-// Dependencies: [31, 27, 33, 1273, 2]
+// Dependencies: [19, 17, 21, 1297, 2]
 // Exports: default
 
-// Module 5523 (RoleIcon)
-import "result";
+// Module 5541 (RoleIcon)
+import "noop";
 import { Image } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
 
@@ -20,21 +20,20 @@ export default function RoleIcon(arg0) {
   if (size === undefined) {
     size = 20;
   }
-  obj = { roleIcon: obj, unicodeEmojiRoleIcon: obj };
-  obj = { height: size, width: size, resizeMode: "contain" };
-  obj = { fontFamily: "System", fontSize: size, marginBottom: -2 };
+  let obj = { height: size, width: size, resizeMode: "contain" };
   if (null != source) {
-    const obj1 = { source, style: obj.roleIcon };
-    let tmp = <Image source={source} style={obj.roleIcon} />;
+    obj = { source: null, style: null };
+    obj[0] = source;
+    obj[1] = obj;
+    let tmp = <Image source={null} style={null} />;
   } else {
     tmp = null;
     if (null != unicodeEmoji) {
-      const obj2 = { adjustsFontSizeToFit: true };
-      const items = [, ];
-      ({ roleIcon: arr[0], unicodeEmojiRoleIcon: arr[1] } = obj);
-      obj2.style = items;
-      obj2.children = unicodeEmoji.surrogates;
-      tmp = jsx(require(1273) /* Button */.LegacyText, { adjustsFontSizeToFit: true });
+      obj = { adjustsFontSizeToFit: true, style: null, children: null };
+      const items = [obj, { fontFamily: "System", fontSize: size, marginBottom: -2 }];
+      obj[1] = items;
+      obj[2] = unicodeEmoji.surrogates;
+      tmp = jsx(require(1297) /* Button */.LegacyText, { adjustsFontSizeToFit: true, style: null, children: null });
     }
   }
   return tmp;

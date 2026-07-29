@@ -1,27 +1,17 @@
-// Module ID: 10489
-// Function ID: 81195
-// Name: _checkIsSpeaking
-// Dependencies: [4613, 1907, 4987, 4181, 566, 2]
+// Module ID: 10513
+// Function ID: 10514
+// Name: useIsSpeaking
+// Dependencies: [4635, 1931, 5009, 4205, 589, 2]
 // Exports: default, getIsSpeaking
 
-// Module 10489 (_checkIsSpeaking)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_3 from "_isNativeReflectConstruct";
-import closure_4 from "_isNativeReflectConstruct";
-import closure_5 from "_isNativeReflectConstruct";
+// Module 10513 (useIsSpeaking)
+import handleSoundCreateOrUpdate from "handleSoundCreateOrUpdate";
+import handleConnectionOpen from "handleConnectionOpen";
+import anyoneHasFlagInContext from "anyoneHasFlagInContext";
+import updateVoiceState from "updateVoiceState";
 
 const require = arg1;
-function _checkIsSpeaking(stateFromStores1, arg1, stateFromStores2) {
-  let tmp = stateFromStores1;
-  if (!stateFromStores1) {
-    tmp = arg1;
-  }
-  if (!tmp) {
-    tmp = stateFromStores2;
-  }
-  return tmp;
-}
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("hooks/useIsSpeaking.tsx");
+const result = require("anyoneHasFlagInContext").fileFinishedImporting("hooks/useIsSpeaking.tsx");
 
 export default function useIsSpeaking(checkSoundboardSounds) {
   let checkSoundSharing;
@@ -40,7 +30,7 @@ export default function useIsSpeaking(checkSoundboardSounds) {
   }
   const context = checkSoundboardSounds.context;
   flag2 = undefined;
-  const items = [closure_5, context];
+  const items = [updateVoiceState, context];
   const stateFromStores = require(checkSoundSharing[4]).useStateFromStores(items, () => {
     const voiceChannelId = context.getVoiceChannelId();
     let voiceStateForChannel = null;
@@ -51,33 +41,39 @@ export default function useIsSpeaking(checkSoundboardSounds) {
   });
   if (flag2) {
     let mute;
-    if (null != stateFromStores) {
+    if (stateFromStores != null) {
       mute = stateFromStores.mute;
     }
     if (!mute) {
       let selfMute;
-      if (null != stateFromStores) {
+      if (stateFromStores != null) {
         selfMute = stateFromStores.selfMute;
       }
       mute = selfMute;
     }
     flag2 = mute;
   }
-  const obj = require(checkSoundSharing[4]);
+  let tmpResult = tmp(tmp2[4]);
   const items1 = [flag2];
-  const stateFromStores1 = require(checkSoundSharing[4]).useStateFromStores(items1, () => {
+  let stateFromStores1 = tmpResult.useStateFromStores(items1, () => {
     let isSpeakingResult = flag2.isSpeaking(closure_0, context);
     if (isSpeakingResult) {
       isSpeakingResult = !flag2;
     }
     return isSpeakingResult;
   });
-  const obj2 = require(checkSoundSharing[4]);
+  tmpResult = tmp(tmp2[4]);
   const items2 = [flag2];
-  const stateFromStores2 = require(checkSoundSharing[4]).useStateFromStores(items2, () => flag2.isSoundSharing(closure_0) && checkSoundSharing);
-  const obj3 = require(checkSoundSharing[4]);
+  const stateFromStores2 = tmpResult.useStateFromStores(items2, () => flag2.isSoundSharing(closure_0) && checkSoundSharing);
+  const obj = require(checkSoundSharing[4]);
   const items3 = [flag];
-  return _checkIsSpeaking(stateFromStores1, require(checkSoundSharing[4]).useStateFromStores(items3, () => flag.isUserPlayingSounds(closure_0) && flag), stateFromStores2);
+  if (!stateFromStores1) {
+    stateFromStores1 = tmpResult1.useStateFromStores(items3, () => flag.isUserPlayingSounds(closure_0) && flag);
+  }
+  if (!stateFromStores1) {
+    stateFromStores1 = stateFromStores2;
+  }
+  return stateFromStores1;
 };
 export const getIsSpeaking = function getIsSpeaking(checkSoundboardSounds) {
   let checkSoundSharing;
@@ -86,7 +82,6 @@ export const getIsSpeaking = function getIsSpeaking(checkSoundboardSounds) {
   let obj3;
   let obj4;
   let userId;
-  let tmp = arg1;
   ({ userId, checkSoundSharing } = checkSoundboardSounds);
   if (checkSoundSharing === undefined) {
     checkSoundSharing = false;
@@ -99,8 +94,9 @@ export const getIsSpeaking = function getIsSpeaking(checkSoundboardSounds) {
   if (flag2 === undefined) {
     flag2 = false;
   }
-  if (tmp === undefined) {
-    const items = [closure_5, closure_3, closure_4, _isNativeReflectConstruct];
+  let tmp = arg1;
+  if (arg1 === undefined) {
+    const items = [updateVoiceState, handleConnectionOpen, anyoneHasFlagInContext, handleSoundCreateOrUpdate];
     tmp = items;
   }
   [obj, obj2, obj3, obj4] = tmp;
@@ -111,20 +107,25 @@ export const getIsSpeaking = function getIsSpeaking(checkSoundboardSounds) {
   }
   if (flag2) {
     let mute;
-    if (null != voiceStateForChannel) {
+    if (voiceStateForChannel != null) {
       mute = voiceStateForChannel.mute;
     }
     if (!mute) {
       let selfMute;
-      if (null != voiceStateForChannel) {
+      if (voiceStateForChannel != null) {
         selfMute = voiceStateForChannel.selfMute;
       }
       mute = selfMute;
     }
     flag2 = mute;
   }
-  const tmp10 = obj3.isSpeaking(userId, checkSoundboardSounds.context) && !flag2;
+  let tmp10 = obj3.isSpeaking(userId, checkSoundboardSounds.context) && !flag2;
   const tmp11 = obj3.isSoundSharing(userId) && checkSoundSharing;
-  const tmp12 = _checkIsSpeaking;
-  return tmp12(tmp10, obj4.isUserPlayingSounds(userId) && flag, tmp11);
+  if (!tmp10) {
+    tmp10 = tmp12;
+  }
+  if (!tmp10) {
+    tmp10 = tmp11;
+  }
+  return tmp10;
 };

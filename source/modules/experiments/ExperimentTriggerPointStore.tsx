@@ -1,68 +1,37 @@
-// Module ID: 12721
-// Function ID: 98589
-// Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 4079, 1188, 12722, 12723, 686, 566, 2]
+// Module ID: 12743
+// Function ID: 12744
+// Name: handleConnectionOpen
+// Dependencies: [4103, 1212, 12744, 12745, 589, 709, 2]
 
-// Module 12721 (_isNativeReflectConstruct)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_4 from "apexExperiment";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
-import closure_8 from "_isNativeReflectConstruct";
-import closure_9 from "_isNativeReflectConstruct";
+// Module 12743 (handleConnectionOpen)
+import getHash from "getHash";
+import initialize from "initialize";
 import apexExperiment from "apexExperiment";
+import { Store } from "initialize";
+import importDefaultResult from "dispatcher";
 
 const require = arg1;
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
-  }
-  const result = _isNativeReflectConstruct();
-}
 function handleConnectionOpen() {
-  const ConnectionOpenTriggerPoint = require(12723) /* commonTriggerPointConfiguration */.ConnectionOpenTriggerPoint;
+  const ConnectionOpenTriggerPoint = require(12745) /* commonTriggerPointConfiguration */.ConnectionOpenTriggerPoint;
   ConnectionOpenTriggerPoint.trigger();
 }
-let tmp3 = ((Store) => {
-  class ExperimentTriggerPointStore {
-    constructor() {
-      self = this;
-      tmp = outer1_3(this, ExperimentTriggerPointStore);
-      items = [, , ];
-      items[0] = outer1_1(outer1_2[9]);
-      obj = { CONNECTION_OPEN: outer1_11 };
-      items[1] = obj;
-      items[2] = ExperimentTriggerPointStore(outer1_2[9]).DispatchBand.Early;
-      obj2 = outer1_6(ExperimentTriggerPointStore);
-      tmp2 = outer1_5;
-      if (outer1_10()) {
-        tmp4 = globalThis;
-        _Reflect = Reflect;
-        tmp5 = outer1_6;
-        constructResult = Reflect.construct(obj2, items, outer1_6(self).constructor);
-      } else {
-        constructResult = obj2.apply(self, items);
-      }
-      return tmp2(self, constructResult);
-    }
+class ExperimentTriggerPointStore extends Store {
+  constructor() {
+    tmp2 = require("dispatcher");
+    obj = { CONNECTION_OPEN: handleConnectionOpen };
+    tmp = new tmp(tmp2, obj, require("dispatcher").DispatchBand.Early, handleConnectionOpen, new.target);
+    // ThrowIfThisInitialized (0x7c)
+    return tmp;
   }
-  callback2(ExperimentTriggerPointStore, Store);
-  let items = [
-    {
-      key: "initialize",
-      value() {
-        this.waitFor(outer1_8, outer1_9);
-      }
-    }
-  ];
-  return callback(ExperimentTriggerPointStore, items);
-})(require("initialize").Store);
-tmp3.displayName = "ExperimentTriggerPointStore";
-tmp3 = new tmp3();
-let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/experiments/ExperimentTriggerPointStore.tsx");
+}
+const prototype = ExperimentTriggerPointStore.prototype;
+prototype["initialize"] = function initialize() {
+  this.waitFor(getHash, initialize);
+};
+ExperimentTriggerPointStore.displayName = "ExperimentTriggerPointStore";
+const obj = { CONNECTION_OPEN: handleConnectionOpen };
+// ThrowIfThisInitialized (0x7c)
+const tmp4 = new "initialize"(importDefaultResult, obj, require("dispatcher").DispatchBand.Early, prototype, ExperimentTriggerPointStore, "initialize", importDefaultResult, obj);
+const result = require("apexExperiment").fileFinishedImporting("modules/experiments/ExperimentTriggerPointStore.tsx");
 
-export default tmp3;
+export default tmp4;

@@ -1,29 +1,29 @@
-// Module ID: 13004
-// Function ID: 100712
+// Module ID: 13027
+// Function ID: 13028
 // Name: GuildSettingsPickerBottomSheet
-// Dependencies: [31, 27, 33, 4165, 13005, 5221, 5220, 4161, 1273, 13009, 4133, 4578, 44, 8280, 2]
+// Dependencies: [19, 17, 21, 4189, 13028, 5243, 5242, 4185, 1297, 13032, 4157, 4600, 38, 8304, 2]
 
-// Module 13004 (GuildSettingsPickerBottomSheet)
-import "result";
+// Module 13027 (GuildSettingsPickerBottomSheet)
+import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_4;
-let closure_5;
+let c4;
+let c5;
 const require = arg1;
-({ jsx: closure_4, jsxs: closure_5 } = jsxProd);
-let closure_6 = _createForOfIteratorHelperLoose.createStyles({ content: { paddingHorizontal: 16 } });
+({ jsx: c4, jsxs: c5 } = jsxProd);
+let closure_6 = createCacheKey.createStyles({ content: { paddingHorizontal: 16 } });
 const result = require("jsxProd").fileFinishedImporting("modules/guild_settings_picker/native/GuildSettingsPickerBottomSheet.tsx");
 class GuildSettingsPickerBottomSheet {
   constructor(arg0) {
     feature = global.feature;
     ({ section, subsection, guildId } = global);
-    tmp = c6();
+    tmp = jsxs();
     obj = require("useGuildSettingsPickerFeature");
     guildSettingsPickerFeature = obj.useGuildSettingsPickerFeature(feature);
     ({ selectGuildCta, title, description, isGuildSupported } = guildSettingsPickerFeature);
-    obj = { startExpanded: true };
+    obj = { startExpanded: true, children: null };
     items = [, , , , , ];
     items[0] = jsx(require("RedesignBottomSheetTitleHeaderBase").BottomSheetTitleHeader, { title });
     obj1 = { style: tmp.content, children: jsx(require("Text").Text, { variant: "text-md/medium", children: description }) };
@@ -34,7 +34,7 @@ class GuildSettingsPickerBottomSheet {
       onChange(guildId) {
             let obj = outer1_1(outer1_2[10]);
             obj = { feature, section: closure_1, subsection: closure_2, guildId };
-            obj.openLazy(() => Promise.resolve(outer2_7), "GuildSettingsPickerBottomSheet", obj);
+            obj.openLazy(() => Promise.resolve(closure_7), "GuildSettingsPickerBottomSheet", obj);
           },
       isGuildIncluded: isGuildSupported
     };
@@ -53,7 +53,7 @@ class GuildSettingsPickerBottomSheet {
           }
     };
     items[5] = jsx(guildId, obj3);
-    obj.children = items;
+    obj[1] = items;
     return jsxs(require("Background").BottomSheet, obj);
   }
 }

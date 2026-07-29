@@ -1,11 +1,11 @@
-// Module ID: 9864
-// Function ID: 76315
+// Module ID: 9886
+// Function ID: 9887
 // Name: ExplicitMediaObscuredFalsePositiveActionSheet
-// Dependencies: [31, 5847, 33, 9865, 9867, 9868, 5867, 4133, 5844, 2]
+// Dependencies: [19, 5865, 21, 9887, 9889, 9890, 5885, 4157, 5862, 2]
 // Exports: default
 
-// Module 9864 (ExplicitMediaObscuredFalsePositiveActionSheet)
-import result from "result";
+// Module 9886 (ExplicitMediaObscuredFalsePositiveActionSheet)
+import noop from "noop";
 import { EXPLICIT_MEDIA_FALSE_POSITIVE_ACTION_SHEET_KEY as closure_4 } from "USER_SETTING_ACTION_SHEET_KEY";
 import { jsx } from "jsxProd";
 
@@ -17,10 +17,13 @@ export default function ExplicitMediaObscuredFalsePositiveActionSheet(channelId)
   let embedId;
   channelId = channelId.channelId;
   const messageId = channelId.messageId;
+  let redactableMediaAttachmentsForMessage;
+  let redactableMediaEmbedsForMessage;
+  let reportFalsePositive;
   ({ attachmentId, embedId } = channelId);
   let obj = channelId(redactableMediaAttachmentsForMessage[3]);
   redactableMediaAttachmentsForMessage = obj.useRedactableMediaAttachmentsForMessage(channelId, messageId, attachmentId);
-  const redactableMediaEmbedsForMessage = channelId(redactableMediaAttachmentsForMessage[3]).useRedactableMediaEmbedsForMessage(channelId, messageId, embedId);
+  redactableMediaEmbedsForMessage = channelId(redactableMediaAttachmentsForMessage[3]).useRedactableMediaEmbedsForMessage(channelId, messageId, embedId);
   const obj2 = channelId(redactableMediaAttachmentsForMessage[3]);
   obj = {
     onSuccess() {
@@ -31,61 +34,59 @@ export default function ExplicitMediaObscuredFalsePositiveActionSheet(channelId)
     },
     report() {
       let mapped;
-      if (null != redactableMediaAttachmentsForMessage) {
+      if (redactableMediaAttachmentsForMessage != null) {
         mapped = redactableMediaAttachmentsForMessage.map((id) => id.id);
       }
-      if (null == mapped) {
+      if (mapped == null) {
         mapped = [];
       }
       let mapped1 = redactableMediaEmbedsForMessage.map((id) => id.id);
-      if (null == mapped1) {
+      if (mapped1 == null) {
         mapped1 = [];
       }
       return channelId(redactableMediaAttachmentsForMessage[6]).reportFalsePositive(channelId, messageId, mapped, mapped1);
     }
   };
   const explicitMediaActions = channelId(redactableMediaAttachmentsForMessage[4]).useExplicitMediaActions(obj);
-  const reportFalsePositive = explicitMediaActions.reportFalsePositive;
-  let length;
-  if (null != redactableMediaAttachmentsForMessage) {
-    length = redactableMediaAttachmentsForMessage.length;
+  reportFalsePositive = explicitMediaActions.reportFalsePositive;
+  let num;
+  if (redactableMediaAttachmentsForMessage != null) {
+    num = redactableMediaAttachmentsForMessage.length;
   }
-  let num = 0;
-  if (null != length) {
-    num = length;
+  if (num == null) {
+    num = 0;
   }
-  let tmp3 = num > 0;
-  if (!tmp3) {
-    let length1;
-    if (null != redactableMediaEmbedsForMessage) {
-      length1 = redactableMediaEmbedsForMessage.length;
+  let tmp4 = num > 0;
+  if (!tmp4) {
+    let num2;
+    if (redactableMediaEmbedsForMessage != null) {
+      num2 = redactableMediaEmbedsForMessage.length;
     }
-    let num2 = 0;
-    if (null != length1) {
-      num2 = length1;
+    if (num2 == null) {
+      num2 = 0;
     }
-    tmp3 = num2 > 0;
+    tmp4 = num2 > 0;
   }
-  if (!tmp3) {
-    messageId(redactableMediaAttachmentsForMessage[7]).hideActionSheet();
-    const obj5 = messageId(redactableMediaAttachmentsForMessage[7]);
+  if (!tmp4) {
+    messageId(tmp2[7]).hideActionSheet();
+    const obj5 = messageId(tmp2[7]);
   }
   const items = [reportFalsePositive];
   const callback = redactableMediaEmbedsForMessage.useCallback(() => {
     reportFalsePositive();
   }, items);
-  obj = { channelId, messageId, isReportFalsePositiveLoading: explicitMediaActions.isReportFalsePositiveLoading };
+  obj = { channelId, messageId, isReportFalsePositiveLoading: explicitMediaActions.isReportFalsePositiveLoading, attachmentPreview: null, embedPreview: null, onConfirmPress: null, analyticsContext: null };
   let first;
   if (1 === redactableMediaAttachmentsForMessage.length) {
     first = redactableMediaAttachmentsForMessage[0];
   }
-  obj.attachmentPreview = first;
+  obj[3] = first;
   let first1;
   if (1 === redactableMediaEmbedsForMessage.length) {
     first1 = redactableMediaEmbedsForMessage[0];
   }
-  obj.embedPreview = first1;
-  obj.onConfirmPress = callback;
-  obj.analyticsContext = channelId(redactableMediaAttachmentsForMessage[8]).TrackMediaRedactionContext.EXPLICIT_MEDIA_OBSCURED_FALSE_POSITIVE_FLOW;
-  return jsx(channelId(redactableMediaAttachmentsForMessage[5]).ExplicitMediaFalsePositiveActionSheet, { channelId, messageId, isReportFalsePositiveLoading: explicitMediaActions.isReportFalsePositiveLoading });
+  obj[4] = first1;
+  obj[5] = callback;
+  obj[6] = channelId(redactableMediaAttachmentsForMessage[8]).TrackMediaRedactionContext.EXPLICIT_MEDIA_OBSCURED_FALSE_POSITIVE_FLOW;
+  return jsx(channelId(redactableMediaAttachmentsForMessage[5]).ExplicitMediaFalsePositiveActionSheet, { channelId, messageId, isReportFalsePositiveLoading: explicitMediaActions.isReportFalsePositiveLoading, attachmentPreview: null, embedPreview: null, onConfirmPress: null, analyticsContext: null });
 };

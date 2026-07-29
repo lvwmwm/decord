@@ -1,139 +1,58 @@
-// Module ID: 7998
-// Function ID: 63487
-// Name: _createForOfIteratorHelperLoose
-// Dependencies: [57, 5026, 5074, 1348, 1908, 1918, 1911, 1838, 3793, 3802, 1850, 653, 1853, 5951, 4355, 21, 5009, 3806, 3810, 2]
+// Module ID: 8023
+// Function ID: 8024
+// Name: resolvePlaintextInlineVoid
+// Dependencies: [32, 5048, 5096, 1372, 1932, 1942, 1935, 1862, 3817, 3826, 1874, 676, 1877, 5970, 4380, 11, 5031, 3830, 3834, 2]
 // Exports: resolveApplicationCommandOption
 
-// Module 7998 (_createForOfIteratorHelperLoose)
+// Module 8023 (resolvePlaintextInlineVoid)
 import _slicedToArray from "_slicedToArray";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_5 from "_isNativeReflectConstruct";
-import closure_6 from "_isNativeReflectConstruct";
-import closure_7 from "_isNativeReflectConstruct";
-import { GUILD_SELECTABLE_CHANNELS_KEY as closure_8 } from "_isNativeReflectConstruct";
-import closure_9 from "_isNativeReflectConstruct";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import closure_11 from "_createForOfIteratorHelperLoose";
-import closure_12 from "_isNativeReflectConstruct";
-import closure_13 from "_isNativeReflectConstruct";
-import closure_14 from "_isNativeReflectConstruct";
+import getEmojiToGroupId from "getEmojiToGroupId";
+import rebuild from "rebuild";
+import ensureGuildLoaded from "ensureGuildLoaded";
+import comparator from "comparator";
+import { GUILD_SELECTABLE_CHANNELS_KEY as closure_8 } from "comparator";
+import trackCommunicationDisabled from "trackCommunicationDisabled";
+import createGuildRoleRecordFromRust from "createGuildRoleRecordFromRust";
+import createGuildRecordFromRust from "createGuildRecordFromRust";
+import getUncachedChannelPermissions from "getUncachedChannelPermissions";
+import upsertRelationship from "upsertRelationship";
+import mergeGuildAvatar from "mergeGuildAvatar";
 import { Permissions } from "ME";
 import { EmojiIntention } from "set";
 
 const require = arg1;
-function _createForOfIteratorHelperLoose(iterable) {
-  let closure_0 = iterable;
-  iterable = "undefined" !== typeof Symbol;
-  if (iterable) {
-    const _Symbol = Symbol;
-    iterable = iterable[Symbol.iterator];
-  }
-  if (!iterable) {
-    iterable = iterable[Symbol.iterator];
-  }
-  if (iterable) {
-    const iter = iterable.call(iterable);
-    const next = iter.next;
-    return next.bind(iter);
-  } else {
-    const _Array = Array;
-    let tmp = iterable;
-    if (!Array.isArray(iterable)) {
-      let tmp2;
-      if (iterable) {
-        if ("string" === typeof iterable) {
-          tmp2 = _arrayLikeToArray(iterable, undefined);
-        } else {
-          const toString = {}.toString;
-          const substr = toString.call(iterable).slice(8, -1);
-          let name = substr;
-          if (tmp3) {
-            name = iterable.constructor.name;
-          }
-          if ("Map" !== name) {
-            if ("Set" !== name) {
-              if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(iterable, undefined);
-              } else {
-                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
-              }
-            }
-            tmp2 = arr;
-          }
-          const _Array2 = Array;
-          arr = Array.from(iterable);
-          const callResult = toString.call(iterable);
-          tmp3 = "Object" === substr && iterable.constructor;
-        }
-      }
-      tmp = tmp2;
-      if (!tmp2) {
-        const _TypeError = TypeError;
-        const typeError = new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
-        throw typeError;
-      }
-    }
-    if (tmp) {
-      closure_0 = tmp;
-    }
-    let c1 = 0;
-    return () => {
-      if (closure_1 >= length.length) {
-        let obj = { done: true };
-      } else {
-        obj = { done: false };
-        closure_1 = tmp3 + 1;
-        obj.value = length[+closure_1];
-      }
-      return obj;
-    };
-  }
-}
-function _arrayLikeToArray(arg0, arg1) {
-  let length;
-  if (tmp) {
-    length = arg0.length;
-  }
-  const ArrayResult = Array(length);
-  for (let num = 0; num < length; num = num + 1) {
-    ArrayResult[num] = arg0[num];
-  }
-  return ArrayResult;
-}
-function resolvePlaintextInlineVoid(arr, source, id, intention) {
+function resolvePlaintextInlineVoid(text, throwTypeErrorResult, id, intention) {
   let obj = intention;
-  if (null == intention) {
+  if (intention == null) {
     obj = {};
   }
   const allowUsers = obj.allowUsers;
   const allowRoles = obj.allowRoles;
-  let first = arr[0];
+  let first = text[0];
   if ("@" === first) {
-    return (function resolveUserOrRole(arr, source, id, arg3, arg4) {
-      let tmp = outer1_3(arr.slice(1).split("#", 2), 2);
+    return (function resolveUserOrRole(arr, throwTypeErrorResult, id, arg3, arg4) {
+      let tmp = callback3(arr.slice(1).split("#", 2), 2);
       const first = tmp[0];
       let closure_1 = tmp3;
       let guild = null;
-      if (null != source) {
-        guild = outer1_11.getGuild(source);
+      if (null != throwTypeErrorResult) {
+        guild = guild.getGuild(throwTypeErrorResult);
       }
       if (arg4) {
         if (null == tmp3) {
           if (null != guild) {
-            const tmp8 = outer1_17(outer1_10.getSortedRoles(guild.id));
-            const iter = tmp8();
-            let iter2 = iter;
-            if (!iter.done) {
-              const value = iter2.value;
-              while (first !== value.name) {
-                let iter3 = tmp8();
-                iter2 = iter3;
+            sortedRoles = sortedRoles.getSortedRoles(guild.id);
+            for (const item10028 of sortedRoles) {
+              let tmp10 = item10028;
+              if (first === item10028.name) {
+                let obj = { type: "roleMention", roleId: null, children: null };
+                obj[1] = item10028.id;
+                let items = [{ text: "" }];
+                obj[2] = items;
+                let tmp11 = obj;
+                obj.return();
+                return obj;
               }
-              let obj = { type: "roleMention", roleId: value.id };
-              obj = { text: "" };
-              const items = [obj];
-              obj.children = items;
-              return obj;
             }
           }
         }
@@ -141,7 +60,7 @@ function resolvePlaintextInlineVoid(arr, source, id, intention) {
       if (arg3) {
         let channel = null;
         if (null != id) {
-          channel = outer1_6.getChannel(id);
+          channel = channel.getChannel(id);
         }
         if (null == channel) {
           return null;
@@ -149,214 +68,116 @@ function resolvePlaintextInlineVoid(arr, source, id, intention) {
           if (channel.isPrivate()) {
             let recipients = channel.recipients;
           } else {
-            const members = outer1_9.getMembers(source);
+            members = members.getMembers(throwTypeErrorResult);
             recipients = members.map((userId) => userId.userId);
           }
-          const mapped = recipients.map((arg0) => outer2_14.getUser(arg0));
-          const found = mapped.filter((arg0) => {
-            let tmp = undefined !== arg0;
+          const mapped = recipients.map((arg0) => user.getUser(arg0));
+          const found = mapped.filter((username) => {
+            let tmp = undefined !== username;
             if (tmp) {
-              tmp = outer2_20(first, closure_1, arg0);
+              let str = closure_1;
+              let flag = {}.requireExact;
+              if (flag === undefined) {
+                flag = false;
+              }
+              let tmp4 = null != username;
+              if (tmp4) {
+                username = username.username;
+                if (flag) {
+                  let startsWithResult = username === tmp2;
+                } else {
+                  startsWithResult = username.startsWith(tmp2);
+                }
+                if (startsWithResult) {
+                  if (str == null) {
+                    str = "0";
+                  }
+                  startsWithResult = username.discriminator === str;
+                }
+                tmp4 = startsWithResult;
+              }
+              tmp = tmp4;
             }
             return tmp;
           });
           if (1 === found.length) {
             const first1 = found[0];
-            obj = { requireExact: true };
-            if (outer1_20(first, tmp3, first1, obj)) {
-              const obj1 = { type: "userMention", userId: first1.id };
-              const obj2 = { text: "" };
-              const items1 = [obj2];
-              obj1.children = items1;
-              return obj1;
+            if (callback4(first, tmp3, first1, { requireExact: true })) {
+              obj = { type: "userMention", userId: null, children: null };
+              obj[1] = first1.id;
+              const items1 = [{ text: "" }];
+              obj[2] = items1;
+              return obj;
             }
           }
         }
       }
       return null;
-    })(arr, source, id, tmp, tmp2);
+    })(text, throwTypeErrorResult, id, tmp, tmp2);
   } else if (":" === first) {
-    const EMOJI_NAME_RE = importDefault(3806).EMOJI_NAME_RE;
-    const match = EMOJI_NAME_RE.exec(arr);
-    let tmp47 = null;
+    const EMOJI_NAME_RE = importDefault(3830).EMOJI_NAME_RE;
+    const match = EMOJI_NAME_RE.exec(text);
+    let tmp7 = null;
     if (null != match) {
-      disambiguatedEmojiContext = disambiguatedEmojiContext.getDisambiguatedEmojiContext(source);
+      disambiguatedEmojiContext = disambiguatedEmojiContext.getDisambiguatedEmojiContext(throwTypeErrorResult);
       const customEmoji = disambiguatedEmojiContext.getCustomEmoji();
       let obj2 = customEmoji.get(match[1]);
       let channel = null;
       if (null != id) {
         channel = channel.getChannel(id);
       }
-      tmp47 = null;
+      tmp7 = null;
       if (null != obj2) {
-        obj = { emoji: obj2, channel, intention: EmojiIntention.CHAT };
-        tmp47 = null;
-        if (!obj17.isEmojiFiltered(obj)) {
-          obj = { type: "customEmoji" };
-          let obj1 = { emojiId: obj2.id };
+        obj = { emoji: null, channel: null, intention: null };
+        obj[0] = obj2;
+        obj[1] = channel;
+        obj[2] = EmojiIntention.CHAT;
+        tmp7 = null;
+        if (!tmp4Result.isEmojiFiltered(obj)) {
+          obj = { emojiId: null, name: null, animated: null, jumboable: false };
+          obj[0] = obj2.id;
           if (!("require_colons" in obj2)) {
-            obj1.name = obj2.name;
-            obj1.animated = true === obj2.animated;
-            obj1.jumboable = false;
-            obj.emoji = obj1;
+            const obj1 = { type: "customEmoji", emoji: null, children: null };
+            obj[1] = obj2.name;
+            obj[2] = true === obj2.animated;
+            obj1[1] = obj;
+            obj = [];
             obj2 = { text: "" };
-            obj1 = [obj2];
-            obj.children = obj1;
+            obj[0] = obj2;
+            obj1[2] = obj;
           }
           const _HermesInternal = HermesInternal;
           const combined = ":" + obj2.name + ":";
         }
-        obj17 = importDefault(3810);
+        tmp4Result = importDefault(3834);
       }
     }
-    return tmp47;
+    return tmp7;
   } else if ("#" === first) {
-    let tmp4 = null;
-    if (null != source) {
-      if (arr.length > 3) {
-        if ("\"" === arr[1]) {
-          if ("\"" === arr[arr.length - 1]) {
-            obj1 = require(4355) /* computeDefaultGroupDmNameFromUserIds */;
-            let unescapeChannelNameResult = obj1.unescapeChannelName(arr.slice(2, arr.length - 1));
+    return (function resolveChannel(arr, throwTypeErrorResult) {
+      if (null == throwTypeErrorResult) {
+        return null;
+      } else {
+        if (arr.length > 3) {
+          if ("\"" === arr[1]) {
+            let num = 1;
+            textChannelNameDisambiguations = textChannelNameDisambiguations.getTextChannelNameDisambiguations(throwTypeErrorResult);
+            num = callback2(11).keys(textChannelNameDisambiguations);
+            num[Symbol.iterator]();
+            const obj2 = callback2(11);
           }
-          const textChannelNameDisambiguations = store.getTextChannelNameDisambiguations(source);
-          let obj3 = importDefault(21);
-          const tmp13 = _createForOfIteratorHelperLoose(obj3.keys(textChannelNameDisambiguations));
-          let iter = tmp13();
-          let iter2 = iter;
-          if (iter.done) {
-            const tmp17 = _createForOfIteratorHelperLoose(require(5009) /* _createForOfIteratorHelperLoose */.COMMAND_SUPPORTED_CHANNEL_TYPE_KEYS);
-            const iter4 = tmp17();
-            let iter5 = iter4;
-            if (!iter4.done) {
-              while (true) {
-                let value = iter5.value;
-                let tmp19 = closure_8;
-                let tmp20 = tmp18;
-                if (value !== closure_8) {
-                  let tmp62 = _createForOfIteratorHelperLoose;
-                  let tmp63 = store;
-                  let tmp64 = _createForOfIteratorHelperLoose(store.getChannels(source)[value]);
-                  let iter15 = tmp64();
-                  let iter7 = iter15;
-                  let tmp65 = iter15;
-                  let tmp66 = tmp64;
-                  tmp20 = tmp18;
-                  if (!iter15.done) {
-                    while (true) {
-                      channel = iter7.value.channel;
-                      let tmp21 = require;
-                      let tmp22 = dependencyMap;
-                      let obj6 = require(4355) /* computeDefaultGroupDmNameFromUserIds */;
-                      let tmp23 = closure_14;
-                      let tmp24 = closure_13;
-                      if (obj6.computeChannelName(channel, closure_14, closure_13) !== unescapeChannelNameResult) {
-                        let iter6 = tmp64();
-                        iter7 = iter6;
-                        let tmp27 = iter6;
-                        let tmp28 = tmp64;
-                        tmp20 = channel;
-                        continue;
-                      } else if (!channel.isCategory()) {
-                        break;
-                      } else {
-                        let tmp25 = closure_12;
-                        let tmp26 = Permissions;
-                        if (closure_12.can(Permissions.VIEW_CHANNEL, channel)) {
-                          break;
-                        }
-                      }
-                    }
-                    obj3 = {};
-                    let str4 = "channelMention";
-                    obj3.type = "channelMention";
-                    obj3.channelId = channel.id;
-                    let obj4 = {};
-                    let str5 = "";
-                    obj4.text = "";
-                    let items = [obj4];
-                    obj3.children = items;
-                    tmp4 = obj3;
-                  }
-                }
-                let iter8 = tmp17();
-                tmp18 = tmp20;
-                iter5 = iter8;
-              }
-            }
-            activeJoinedThreadsForGuild = activeJoinedThreadsForGuild.getActiveJoinedThreadsForGuild(source);
-            const tmp34 = _createForOfIteratorHelperLoose(importDefault(21).keys(activeJoinedThreadsForGuild));
-            const iter9 = tmp34();
-            let iter10 = iter9;
-            tmp4 = null;
-            if (!iter9.done) {
-              while (true) {
-                let value1 = iter10.value;
-                let tmp35 = _createForOfIteratorHelperLoose;
-                let tmp36 = importDefault;
-                let tmp37 = dependencyMap;
-                let obj10 = importDefault(21);
-                let tmp38 = _createForOfIteratorHelperLoose(obj10.keys(activeJoinedThreadsForGuild[value1]));
-                let iter11 = tmp38();
-                let iter12 = iter11;
-                if (iter11.done) {
-                  let iter14 = tmp34();
-                  iter10 = iter14;
-                  tmp4 = null;
-                } else {
-                  let channel2 = activeJoinedThreadsForGuild[value1][iter12.value].channel;
-                  let tmp39 = require;
-                  let tmp40 = dependencyMap;
-                  let obj11 = require(4355) /* computeDefaultGroupDmNameFromUserIds */;
-                  let tmp41 = closure_14;
-                  let tmp42 = closure_13;
-                  while (obj11.computeChannelName(channel2, closure_14, closure_13) !== unescapeChannelNameResult) {
-                    let iter13 = tmp38();
-                    iter12 = iter13;
-                    let tmp43 = channel2;
-                    continue;
-                  }
-                  let obj5 = {};
-                  let str6 = "channelMention";
-                  obj5.type = "channelMention";
-                  obj5.channelId = channel2.id;
-                  obj6 = {};
-                  let str7 = "";
-                  obj6.text = "";
-                  let items1 = [obj6];
-                  obj5.children = items1;
-                  tmp4 = obj5;
-                }
-              }
-            }
-            const obj9 = importDefault(21);
-          } else {
-            obj2 = iter2.value;
-            while (textChannelNameDisambiguations[obj2].name !== unescapeChannelNameResult) {
-              let iter3 = tmp13();
-              iter2 = iter3;
-            }
-            const obj7 = { type: "channelMention", channelId: obj2 };
-            const obj8 = { text: "" };
-            const items2 = [obj8];
-            obj7.children = items2;
-            tmp4 = obj7;
-          }
+          callback(4380).unescapeChannelName(arr.slice(2, arr.length - num));
+          const obj = callback(4380);
         }
+        const substr = arr.slice(1);
       }
-      unescapeChannelNameResult = arr.slice(1);
-    }
-    return tmp4;
+    })(text, throwTypeErrorResult);
   } else {
     return null;
   }
 }
-function matchesUser(arg0, arg1, username) {
-  let obj = arg3;
-  if (arg3 === undefined) {
-    obj = {};
-  }
-  let flag = obj.requireExact;
+function matchesUser(arg0, arg1, username, requireExact) {
+  let flag = requireExact.requireExact;
   if (flag === undefined) {
     flag = false;
   }
@@ -369,9 +190,9 @@ function matchesUser(arg0, arg1, username) {
       startsWithResult = username.startsWith(arg0);
     }
     if (startsWithResult) {
-      let str = "0";
-      if (null != arg1) {
-        str = arg1;
+      let str = arg1;
+      if (arg1 == null) {
+        str = "0";
       }
       startsWithResult = username.discriminator === str;
     }
@@ -379,15 +200,15 @@ function matchesUser(arg0, arg1, username) {
   }
   return tmp;
 }
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/channel_text_area/PlaintextResolvers.tsx");
+const result = require("rebuild").fileFinishedImporting("modules/channel_text_area/PlaintextResolvers.tsx");
 
 export { resolvePlaintextInlineVoid };
-export const resolveApplicationCommandOption = function resolveApplicationCommandOption(text, source, id, intention) {
-  const tmp = resolvePlaintextInlineVoid(text, source, id, intention);
+export const resolveApplicationCommandOption = function resolveApplicationCommandOption(text, throwTypeErrorResult, id, intention) {
+  const tmp = resolvePlaintextInlineVoid(text, throwTypeErrorResult, id, intention);
   let voidToOptionValueResult = null;
   if (null != tmp) {
-    voidToOptionValueResult = require(5951) /* toRichValue */.voidToOptionValue(tmp);
-    const obj = require(5951) /* toRichValue */;
+    voidToOptionValueResult = require(5970) /* createEmptyState */.voidToOptionValue(tmp);
+    const obj = require(5970) /* createEmptyState */;
   }
   return voidToOptionValueResult;
 };

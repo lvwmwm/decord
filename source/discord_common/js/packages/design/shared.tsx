@@ -1,48 +1,48 @@
-// Module ID: 3980
-// Function ID: 32663
-// Dependencies: [2, 3878, 3884, 3885, 3886, 3888, 3889, 3890, 3891]
+// Module ID: 4004
+// Function ID: 4005
+// Dependencies: [2, 3902, 3908, 3909, 3910, 3912, 3913, 3914, 3915]
 
-// Module 3980
+// Module 4004
 import LOW_SATURATION_THRESHOLD from "LOW_SATURATION_THRESHOLD";
 
 const result = require("context").fileFinishedImporting("../discord_common/js/packages/design/shared.tsx");
-for (const key10021 in require("AccessibilityAnnouncer")) {
-  let tmp4 = key10021;
-  arg5[key10021] = require("AccessibilityAnnouncer")[key10021];
+for (const key10018 in require("AccessibilityAnnouncer")) {
+  let tmp4 = key10018;
+  arg5[key10018] = require("AccessibilityAnnouncer")[key10018];
   continue;
 }
-for (const key10026 in require("context")) {
-  let tmp5 = key10026;
-  arg5[key10026] = require("context")[key10026];
+for (const key10022 in require("context")) {
+  let tmp5 = key10022;
+  arg5[key10022] = require("context")[key10022];
   continue;
 }
-for (const key10032 in _module1) {
-  let tmp6 = key10032;
-  arg5[key10032] = LOW_SATURATION_THRESHOLD[key10032];
+for (const key10027 in _module1) {
+  let tmp6 = key10027;
+  arg5[key10027] = LOW_SATURATION_THRESHOLD[key10027];
   continue;
 }
-for (const key10037 in require("isThemeLight")) {
-  let tmp7 = key10037;
-  arg5[key10037] = require("isThemeLight")[key10037];
+for (const key10031 in require("isThemeLight")) {
+  let tmp7 = key10031;
+  arg5[key10031] = require("isThemeLight")[key10031];
   continue;
 }
-for (const key10042 in require("createThemedContext")) {
-  let tmp8 = key10042;
-  arg5[key10042] = require("createThemedContext")[key10042];
+for (const key10035 in require("json")) {
+  let tmp8 = key10035;
+  arg5[key10035] = require("json")[key10035];
   continue;
 }
-for (const key10047 in require("ThemeContextProvider")) {
-  let tmp9 = key10047;
-  arg5[key10047] = require("ThemeContextProvider")[key10047];
+for (const key10039 in require("ThemeContextProvider")) {
+  let tmp9 = key10039;
+  arg5[key10039] = require("ThemeContextProvider")[key10039];
   continue;
 }
-for (const key10052 in require("ClientThemeType")) {
-  let tmp10 = key10052;
-  arg5[key10052] = require("ClientThemeType")[key10052];
+for (const key10043 in require("ClientThemeType")) {
+  let tmp10 = key10043;
+  arg5[key10043] = require("ClientThemeType")[key10043];
   continue;
 }
-for (const key10057 in require("hasThemeFlag")) {
-  let tmp11 = key10057;
-  arg5[key10057] = require("hasThemeFlag")[key10057];
+for (const key10047 in require("ThemeContextFlags")) {
+  let tmp11 = key10047;
+  arg5[key10047] = require("ThemeContextFlags")[key10047];
   continue;
 }

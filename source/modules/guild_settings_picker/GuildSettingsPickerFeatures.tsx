@@ -1,44 +1,44 @@
-// Module ID: 13005
-// Function ID: 100717
+// Module ID: 13028
+// Function ID: 13029
 // Name: useGuildSettingsPickerFeature
-// Dependencies: [57, 31, 3793, 13006, 13007, 1212, 566, 2]
+// Dependencies: [32, 19, 3817, 13029, 13030, 1236, 589, 2]
 // Exports: useGuildSettingsPickerFeature
 
-// Module 13005 (useGuildSettingsPickerFeature)
+// Module 13028 (useGuildSettingsPickerFeature)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import noop from "noop";
+import getUncachedChannelPermissions from "getUncachedChannelPermissions";
 
 const require = arg1;
-let obj = { "server-subscriptions-onboarding": require("module_13006"), "server-subscriptions-create-tier-from-template": require("module_13007") };
+let obj = { "server-subscriptions-onboarding": require("module_13029"), "server-subscriptions-create-tier-from-template": require("module_13030") };
 let closure_6 = {
   title() {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(require(1212) /* getSystemLocale */.t.V42OaH);
+    const intl = require(1236) /* getSystemLocale */.intl;
+    return intl.string(require(1236) /* getSystemLocale */.t.V42OaH);
   },
   description() {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(require(1212) /* getSystemLocale */.t["7dJ16X"]);
+    const intl = require(1236) /* getSystemLocale */.intl;
+    return intl.string(require(1236) /* getSystemLocale */.t["7dJ16X"]);
   },
   selectGuildCta() {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(require(1212) /* getSystemLocale */.t.LhlgY9);
+    const intl = require(1236) /* getSystemLocale */.intl;
+    return intl.string(require(1236) /* getSystemLocale */.t.LhlgY9);
   },
   createGuildDescription() {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(require(1212) /* getSystemLocale */.t.anOisx);
+    const intl = require(1236) /* getSystemLocale */.intl;
+    return intl.string(require(1236) /* getSystemLocale */.t.anOisx);
   },
   createGuildCta() {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(require(1212) /* getSystemLocale */.t.B44MTm);
+    const intl = require(1236) /* getSystemLocale */.intl;
+    return intl.string(require(1236) /* getSystemLocale */.t.B44MTm);
   },
   canCreateGuild: true,
   useIsGuildSupported() {
-    const items = [_isNativeReflectConstruct];
-    return require(566) /* initialize */.useStateFromStores(items, () => (arg0) => outer2_4.canAccessGuildSettings(arg0), [], require(566) /* initialize */.statesWillNeverBeEqual);
+    const items = [getUncachedChannelPermissions];
+    return require(589) /* initialize */.useStateFromStores(items, () => (guild) => getUncachedChannelPermissions.canAccessGuildSettings(guild), [], require(589) /* initialize */.statesWillNeverBeEqual);
   }
 };
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/guild_settings_picker/GuildSettingsPickerFeatures.tsx");
+const result = require("getUncachedChannelPermissions").fileFinishedImporting("modules/guild_settings_picker/GuildSettingsPickerFeatures.tsx");
 
 export const useGuildSettingsPickerFeature = function useGuildSettingsPickerFeature(feature) {
   let tmp2;
@@ -48,14 +48,15 @@ export const useGuildSettingsPickerFeature = function useGuildSettingsPickerFeat
   let first = callback(React.useState(tmp2), 1)[0];
   let closure_0 = closure_6.useIsGuildSupported();
   let isGuildSupported;
-  if (null != first) {
-    if (null != first.useIsGuildSupported) {
-      isGuildSupported = first.useIsGuildSupported();
+  if (first != null) {
+    const useIsGuildSupported = first.useIsGuildSupported;
+    if (useIsGuildSupported != null) {
+      isGuildSupported = useIsGuildSupported();
     }
   }
   obj = {};
   const merged = Object.assign(closure_6);
-  if (null == first) {
+  if (first == null) {
     first = {};
   }
   const merged1 = Object.assign(first);
@@ -69,11 +70,11 @@ export const useGuildSettingsPickerFeature = function useGuildSettingsPickerFeat
     isGuildSupported(arg0, arg1) {
       let tmp = callback(arg0, arg1);
       if (tmp) {
-        let tmp4;
-        if (null != isGuildSupported) {
-          tmp4 = isGuildSupported(arg0, arg1);
+        let tmp3;
+        if (isGuildSupported != null) {
+          tmp3 = isGuildSupported(arg0, arg1);
         }
-        tmp = false !== tmp4;
+        tmp = false !== tmp3;
       }
       return tmp;
     }

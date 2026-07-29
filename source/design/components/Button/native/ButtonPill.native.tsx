@@ -1,24 +1,24 @@
-// Module ID: 4587
-// Function ID: 40034
+// Module ID: 4609
+// Function ID: 4610
 // Name: PillWrapper
-// Dependencies: [57, 31, 27, 33, 4582, 4165, 689, 4583, 3877, 3869, 4588, 4589, 4026, 4011, 4593, 3884, 4577, 4581, 2]
+// Dependencies: [32, 19, 17, 21, 4604, 4189, 712, 4605, 3901, 3893, 4610, 4611, 4050, 4035, 4615, 3908, 4599, 4603, 2]
 // Exports: ButtonPill
 
-// Module 4587 (PillWrapper)
+// Module 4609 (PillWrapper)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
-import get_ActivityIndicator from "get ActivityIndicator";
+import noop from "noop";
+import get_ActivityIndicator from "SUBTLE_SPRING";
 import jsxProd from "jsxProd";
-import getButtonPadding from "getButtonPadding";
-import getButtonPadding from "getButtonPadding";
-import getButtonPadding from "getButtonPadding";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import MINIMUM_HIT_AREA from "MINIMUM_HIT_AREA";
+import MINIMUM_HIT_AREA from "MINIMUM_HIT_AREA";
+import MINIMUM_HIT_AREA from "MINIMUM_HIT_AREA";
+import createCacheKey from "createCacheKey";
 
-let closure_5;
+let c5;
+let c9;
 let closure_6;
-let closure_7;
-let closure_8;
-let closure_9;
+let error;
+let metroImportAll;
 const require = arg1;
 function PillWrapper(expressivePressState) {
   let children;
@@ -33,72 +33,74 @@ function PillWrapper(expressivePressState) {
   }
   expressivePressState = expressivePressState.expressivePressState;
   ({ expressiveRiveRef, size } = expressivePressState);
-  let obj = require(4583) /* useProfileThemedButtonStyles */;
+  let obj = require(4605) /* styleProperties */;
   const buttonPillStyles = obj.useButtonPillStyles(variant, expressivePressState.pressed);
-  let obj1 = require(4583) /* useProfileThemedButtonStyles */;
+  let obj1 = require(4605) /* styleProperties */;
   const gradientPillStyles = obj1.useGradientPillStyles(variant);
-  let obj2 = require(3877) /* ManaContext */;
-  const tmp3 = callback4(variant, size);
-  let obj3 = require(3869) /* map */;
-  let items = [obj3.useToken(importDefault(689).colors.REDESIGN_BUTTON_PREMIUM_PRIMARY_PURPLE_FOR_GRADIENT), , ];
-  let obj4 = require(3869) /* map */;
-  items[1] = obj4.useToken(importDefault(689).colors.REDESIGN_BUTTON_PREMIUM_PRIMARY_PURPLE_FOR_GRADIENT_2);
-  let obj5 = require(3869) /* map */;
-  items[2] = obj5.useToken(importDefault(689).colors.REDESIGN_BUTTON_PREMIUM_PRIMARY_PINK_FOR_GRADIENT);
-  const items1 = [importDefault(689).unsafe_rawColors.PREMIUM_TIER_0_PURPLE_FOR_GRADIENTS, importDefault(689).unsafe_rawColors.PREMIUM_TIER_0_BLUE_FOR_GRADIENTS_2, importDefault(689).unsafe_rawColors.PREMIUM_TIER_0_BLUE_FOR_GRADIENTS];
-  let tmp4 = null;
+  let obj2 = require(3901) /* ManaContext */;
+  const tmp5 = callback3(variant, size);
+  let obj3 = require(3893) /* map */;
+  let items = [obj3.useToken(importDefault(712).colors.REDESIGN_BUTTON_PREMIUM_PRIMARY_PURPLE_FOR_GRADIENT), , ];
+  let obj4 = require(3893) /* map */;
+  items[1] = obj4.useToken(importDefault(712).colors.REDESIGN_BUTTON_PREMIUM_PRIMARY_PURPLE_FOR_GRADIENT_2);
+  let obj5 = require(3893) /* map */;
+  items[2] = obj5.useToken(importDefault(712).colors.REDESIGN_BUTTON_PREMIUM_PRIMARY_PINK_FOR_GRADIENT);
+  const items1 = [importDefault(712).unsafe_rawColors.PREMIUM_TIER_0_PURPLE_FOR_GRADIENTS, importDefault(712).unsafe_rawColors.PREMIUM_TIER_0_BLUE_FOR_GRADIENTS_2, importDefault(712).unsafe_rawColors.PREMIUM_TIER_0_BLUE_FOR_GRADIENTS];
+  let tmp7 = null;
   if (shiny) {
-    obj = { variant };
-    tmp4 = callback2(require(4588) /* useShineEffectStyles */.ButtonShine, obj);
+    obj = { variant: null };
+    obj[0] = variant;
+    tmp7 = callback2(tmp(4610).ButtonShine, obj);
   }
   if ("experimental_premium-primary" !== variant) {
     if ("experimental_premium-basic" !== variant) {
-      obj = {};
-      let tmp10Result = "expressive" === variant;
-      if (tmp10Result) {
-        obj1 = {};
-        const items2 = [closure_6.absoluteFill, tmp3.expressivePill];
-        obj1.style = items2;
-        obj2 = { withReducedMotion: "short-loop", ref: expressiveRiveRef, fit: "layout" };
+      let tmp11Result = "expressive" === variant;
+      if (tmp11Result) {
+        obj = { style: null, children: null };
+        const items2 = [closure_6.absoluteFill, tmp5.expressivePill];
+        obj[0] = items2;
+        obj1 = { withReducedMotion: "short-loop", ref: null, fit: "layout", artboard: null, dataBinding: null };
+        obj1[1] = expressiveRiveRef;
         let str = "Mobile Expressive Button Dark Mode";
-        if (obj10.isThemeLight(obj2.useThemeContext().theme)) {
+        if (tmpResult.isThemeLight(obj2.useThemeContext().theme)) {
           str = "Mobile Expressive Button Lightmode";
         }
-        obj2.artboard = str;
-        obj3 = { buttonColor: tmp3.expressiveRiveFill.color, cornerRadius: tmp3.expressivePill.borderRadius };
+        obj1[3] = str;
+        obj2 = { buttonColor: null, cornerRadius: null };
+        obj2[0] = tmp5.expressiveRiveFill.color;
+        obj2[1] = tmp5.expressivePill.borderRadius;
         const merged = Object.assign(expressivePressState);
-        obj2.dataBinding = obj3;
-        obj1.children = callback2(require(3877) /* ManaContext */.ExpressiveButtonRive, obj2);
-        tmp10Result = callback2(closure_5, obj1);
-        obj10 = require(4011) /* AccessibilityAnnouncer */;
-        const tmp10 = callback2;
-        const tmp11 = closure_5;
-        const tmp13 = callback2;
+        obj1[4] = obj2;
+        obj[1] = callback2(tmp(3901).ExpressiveButtonRive, obj1);
+        tmp11Result = tmp11(closure_5, obj);
+        const tmp12 = closure_5;
+        tmpResult = tmp(4035);
       }
-      const items3 = [tmp10Result, ];
-      obj4 = {};
+      obj3 = { children: null };
+      const items3 = [tmp11Result, ];
+      obj4 = { style: null, children: null };
       const items4 = [style, buttonPillStyles];
-      obj4.style = items4;
-      const items5 = [children, tmp4];
-      obj4.children = items5;
-      items3[1] = callback3(importDefault(4026).View, obj4);
-      obj.children = items3;
+      obj4[0] = items4;
+      const items5 = [children, tmp7];
+      obj4[1] = items5;
+      items3[1] = tmp9(tmp6(4050).View, obj4);
+      obj3[0] = items3;
     }
-    return tmp8(tmp9, obj);
+    return tmp9(tmp10, obj3);
   }
-  obj5 = {};
-  const obj6 = { start: { x: 0, y: 0 }, end: { x: 1, y: 0 }, style: items6 };
+  obj5 = { start: { x: 0, y: 0 }, end: { x: 1, y: 0 }, style: items6, colors: null };
   items6 = [style, gradientPillStyles, closure_6.absoluteFill];
   if ("experimental_premium-basic" === variant) {
     items = items1;
   }
-  obj6.colors = items;
-  const items7 = [callback2(importDefault(4589), obj6), ];
+  const obj6 = { children: null };
+  obj5[3] = items;
+  const items7 = [callback2(importDefault(4611), obj5), ];
   const items8 = [style, buttonPillStyles];
-  const items9 = [children, tmp4];
-  items7[1] = callback3(importDefault(4026).View, { style: items8, children: items9 });
-  obj5.children = items7;
-  obj = obj5;
+  const items9 = [children, tmp7];
+  items7[1] = closure_8(importDefault(4050).View, { style: items8, children: items9 });
+  obj6[0] = items7;
+  obj3 = obj6;
 }
 class BasicButtonPill {
   constructor(arg0) {
@@ -111,28 +113,19 @@ class BasicButtonPill {
     if (DEFAULT_BUTTON_SIZE === undefined) {
       tmp = closure_0;
       tmp2 = closure_2;
-      num = 4;
-      DEFAULT_BUTTON_SIZE = require("getButtonPadding").DEFAULT_BUTTON_SIZE;
+      DEFAULT_BUTTON_SIZE = require("MINIMUM_HIT_AREA").DEFAULT_BUTTON_SIZE;
     }
     flag = global.shiny;
     if (flag === undefined) {
       flag = false;
     }
     ({ expressiveRiveRef, expressivePressState } = global);
-    tmp3 = f40043(str, DEFAULT_BUTTON_SIZE);
-    obj = {};
-    obj.variant = str;
-    obj.size = DEFAULT_BUTTON_SIZE;
+    tmp3 = f32569(str, DEFAULT_BUTTON_SIZE);
+    obj = { variant: str, size: DEFAULT_BUTTON_SIZE, style: items, pressed, shiny: flag, expressiveRiveRef, expressivePressState, children: jsx(View, obj) };
     items = [, ];
     items[0] = tmp3.pill;
     items[1] = style;
-    obj.style = items;
-    obj.pressed = pressed;
-    obj.shiny = flag;
-    obj.expressiveRiveRef = expressiveRiveRef;
-    obj.expressivePressState = expressivePressState;
     obj = { style: tmp3.childContainer, children };
-    obj.children = jsx(View, obj);
     return jsx(PillWrapper, obj);
   }
 }
@@ -147,8 +140,7 @@ class LoadingButtonPill {
     if (DEFAULT_BUTTON_SIZE === undefined) {
       tmp = c0;
       tmp2 = c2;
-      num = 4;
-      DEFAULT_BUTTON_SIZE = require("getButtonPadding").DEFAULT_BUTTON_SIZE;
+      DEFAULT_BUTTON_SIZE = require("MINIMUM_HIT_AREA").DEFAULT_BUTTON_SIZE;
     }
     flag = global.loading;
     if (flag === undefined) {
@@ -159,67 +151,58 @@ class LoadingButtonPill {
     useRef = undefined;
     c2 = undefined;
     ({ expressiveRiveRef, expressivePressState } = global);
-    tmp3 = f40043(str, DEFAULT_BUTTON_SIZE);
-    useRef = result.useRef(null);
-    tmp4 = _slicedToArray(result.useState(flag), 2);
-    first = tmp4[0];
-    c2 = tmp4[1];
+    tmp3 = f32569(str, DEFAULT_BUTTON_SIZE);
+    useRef = noop.useRef(null);
+    tmp4 = _slicedToArray(noop.useState(flag), 2);
+    [tmp5, c2] = tmp4;
     items = [];
     items[0] = flag;
-    effect = result.useEffect(() => {
+    effect = noop.useEffect(() => {
       if (null != ref.current) {
         const _clearTimeout = clearTimeout;
-        clearTimeout(ref.current);
+        clearTimeout(tmp.current);
       }
       if (flag) {
-        callback(true);
+        _undefined(true);
       } else {
         const _setTimeout = setTimeout;
-        ref.current = setTimeout(() => {
-          outer1_2(false);
+        tmp.current = setTimeout(() => {
+          callback(false);
         }, 500);
       }
     }, items);
     tmp7 = _slicedToArray(useLoadingStyles(flag, DEFAULT_BUTTON_SIZE), 2);
-    obj = {};
-    obj.variant = str;
-    obj.size = DEFAULT_BUTTON_SIZE;
+    obj = { variant: str, size: DEFAULT_BUTTON_SIZE, style: items1, pressed, expressiveRiveRef, expressivePressState, children: null };
     items1 = [, ];
     items1[0] = tmp3.pill;
     items1[1] = style;
-    obj.style = items1;
-    obj.pressed = pressed;
-    obj.expressiveRiveRef = expressiveRiveRef;
-    obj.expressivePressState = expressivePressState;
+    tmp12 = jsx;
     [tmp8, tmp9] = tmp7;
     tmp10 = jsxs;
     tmp11 = PillWrapper;
+    tmp13 = c2;
     items2 = [, ];
     items2[0] = tmp3.childContainer;
     items2[1] = tmp8;
     items3 = [, ];
-    items3[0] = jsx(require("module_4026").View, { style: items2, children });
-    tmp12 = jsx;
-    obj = { style: items4 };
+    items3[0] = jsx(require("module_4050").View, { style: items2, children });
+    obj = { style: items4, children: null };
     items4 = [, ];
     items4[0] = tmp3.ellipsis;
     items4[1] = tmp9;
-    if (first) {
+    if (tmp12Result) {
       tmp14 = c0;
-      tmp15 = c2;
-      num2 = 14;
-      tmp13 = jsx;
-      obj1 = {};
-      obj1.variant = str;
-      if (null != loaderSize) {
-        DEFAULT_BUTTON_SIZE = loaderSize;
+      obj1 = { variant: null, size: null };
+      obj1[0] = str;
+      if (loaderSize == null) {
+        loaderSize = DEFAULT_BUTTON_SIZE;
       }
-      obj1.size = DEFAULT_BUTTON_SIZE;
-      first = tmp13(require("EllipsisCircle").Ellipsis, obj1);
+      obj1[1] = loaderSize;
+      tmp12Result = tmp12(require("EllipsisCircle").Ellipsis, obj1);
     }
-    obj.children = first;
-    items3[1] = tmp12(require("module_4026").View, obj);
-    obj.children = items3;
+    obj[1] = tmp12Result;
+    items3[1] = tmp12(require("module_4050").View, obj);
+    obj[6] = items3;
     return tmp10(tmp11, obj);
   }
 }
@@ -230,7 +213,7 @@ function useLoadingStyles(flag, DEFAULT_BUTTON_SIZE) {
   if ("lg" === DEFAULT_BUTTON_SIZE) {
     num = 18;
   }
-  let obj = _require(num[12]);
+  let tmpResult = tmp(tmp2[12]);
   const fn = function o() {
     let obj = callback(num[16]);
     num = 1;
@@ -238,38 +221,38 @@ function useLoadingStyles(flag, DEFAULT_BUTTON_SIZE) {
       num = 0;
     }
     const withSpringResult = obj.withSpring(num, callback(num[17]).SUBTLE_SPRING, "animate-always");
-    obj = {};
+    obj = { opacity: null, transform: null };
     if (enabled) {
       let withDelayResult = withSpringResult;
-      if (!callback) {
-        withDelayResult = callback(num[12]).withDelay(outer1_10, withSpringResult);
-        const obj5 = callback(num[12]);
+      if (!tmp3) {
+        let tmpResult = tmp(tmp2[12]);
+        withDelayResult = tmpResult.withDelay(outer1_10, withSpringResult);
       }
-      obj.opacity = withDelayResult;
-      obj = { translateY: 0 };
-      const items = [obj];
-      obj.transform = items;
-      let tmp8 = obj;
+      obj[0] = withDelayResult;
+      const items = [{ translateY: 0 }];
+      obj[1] = items;
+      let tmp6 = obj;
     } else {
-      obj.opacity = withSpringResult;
-      const obj1 = {};
+      obj[0] = withSpringResult;
+      tmpResult = tmp(tmp2[16]);
       let num2 = 0;
-      if (callback) {
+      if (tmp3) {
         num2 = -1 * num;
       }
-      obj1.translateY = callback(num[16]).withSpring(num2, callback(num[17]).SUBTLE_SPRING);
-      const items1 = [obj1];
-      obj.transform = items1;
-      tmp8 = obj;
-      const obj4 = callback(num[16]);
+      obj = { translateY: null };
+      obj[0] = tmpResult.withSpring(num2, tmp(tmp2[17]).SUBTLE_SPRING);
+      const items1 = [obj];
+      obj[1] = items1;
+      tmp6 = obj;
     }
-    return tmp8;
+    return tmp6;
   };
-  obj = { withSpring: _require(num[16]).withSpring, loading: flag, SUBTLE_SPRING: _require(num[17]).SUBTLE_SPRING, useReducedMotion: enabled, withDelay: _require(num[12]).withDelay, FADE_DELAY: c10, offsetY: num };
+  let obj = { withSpring: tmp(tmp2[16]).withSpring, loading: flag, SUBTLE_SPRING: tmp(tmp2[17]).SUBTLE_SPRING, useReducedMotion: enabled, withDelay: tmp(tmp2[12]).withDelay, FADE_DELAY: c10, offsetY: num };
   fn.__closure = obj;
   fn.__workletHash = 9388603334085;
-  fn.__initData = closure_15;
-  let items = [obj.useAnimatedStyle(fn), ];
+  fn.__initData = closure_18;
+  let items = [tmpResult.useAnimatedStyle(fn), ];
+  tmpResult = tmp(tmp2[12]);
   const fn2 = function l() {
     let obj = callback(num[16]);
     num = 0;
@@ -277,70 +260,83 @@ function useLoadingStyles(flag, DEFAULT_BUTTON_SIZE) {
       num = 1;
     }
     const withSpringResult = obj.withSpring(num, callback(num[17]).SUBTLE_SPRING, "animate-always");
-    obj = {};
+    obj = { opacity: null, transform: null };
     if (enabled) {
       let withDelayResult = withSpringResult;
-      if (callback) {
-        withDelayResult = callback(num[12]).withDelay(outer1_10, withSpringResult);
-        const obj5 = callback(num[12]);
+      if (tmp3) {
+        let tmpResult = tmp(tmp2[12]);
+        withDelayResult = tmpResult.withDelay(outer1_10, withSpringResult);
       }
-      obj.opacity = withDelayResult;
-      obj = { translateY: 0 };
-      const items = [obj];
-      obj.transform = items;
-      let tmp7 = obj;
+      obj[0] = withDelayResult;
+      const items = [{ translateY: 0 }];
+      obj[1] = items;
+      let tmp5 = obj;
     } else {
-      obj.opacity = withSpringResult;
-      const obj1 = {};
+      obj[0] = withSpringResult;
+      tmpResult = tmp(tmp2[16]);
       let num2 = 0;
-      if (!callback) {
+      if (!tmp3) {
         num2 = num;
       }
-      obj1.translateY = callback(num[16]).withSpring(num2, callback(num[17]).SUBTLE_SPRING);
-      const items1 = [obj1];
-      obj.transform = items1;
-      tmp7 = obj;
-      const obj4 = callback(num[16]);
+      obj = { translateY: null };
+      obj[0] = tmpResult.withSpring(num2, tmp(tmp2[17]).SUBTLE_SPRING);
+      const items1 = [obj];
+      obj[1] = items1;
+      tmp5 = obj;
     }
-    return tmp7;
+    return tmp5;
   };
-  obj = { withSpring: _require(num[16]).withSpring, loading: flag, SUBTLE_SPRING: _require(num[17]).SUBTLE_SPRING, useReducedMotion: enabled, withDelay: _require(num[12]).withDelay, FADE_DELAY: c10, offsetY: num };
+  obj = { withSpring: tmp(tmp2[16]).withSpring, loading: flag, SUBTLE_SPRING: tmp(tmp2[17]).SUBTLE_SPRING, useReducedMotion: enabled, withDelay: tmp(tmp2[12]).withDelay, FADE_DELAY: c10, offsetY: num };
   fn2.__closure = obj;
   fn2.__workletHash = 8255420825872;
-  fn2.__initData = closure_16;
-  items[1] = _require(num[12]).useAnimatedStyle(fn2);
+  fn2.__initData = closure_19;
+  items[1] = tmpResult.useAnimatedStyle(fn2);
   return items;
 }
-({ View: closure_5, StyleSheet: closure_6 } = get_ActivityIndicator);
-({ jsx: closure_7, jsxs: closure_8, Fragment: closure_9 } = jsxProd);
+({ View: c5, StyleSheet: closure_6 } = get_ActivityIndicator);
+({ jsx: error, jsxs: metroImportAll, Fragment: c9 } = jsxProd);
 let c10 = 300;
-const buttonPadding = getButtonPadding.getButtonPadding(require("getButtonPadding").SMALL_BUTTON_HEIGHT, require("getButtonPadding").SMALL_BUTTON_ICON_SIZE);
-const buttonPadding2 = getButtonPadding.getButtonPadding(require("getButtonPadding").MEDIUM_BUTTON_HEIGHT, require("getButtonPadding").MEDIUM_BUTTON_ICON_SIZE);
-const buttonPadding3 = getButtonPadding.getButtonPadding(require("getButtonPadding").LARGE_BUTTON_HEIGHT, require("getButtonPadding").LARGE_BUTTON_ICON_SIZE);
-let closure_14 = _createForOfIteratorHelperLoose.createStyles((arg0, arg1) => {
-  let obj = {};
+const buttonPadding = MINIMUM_HIT_AREA.getButtonPadding(require("MINIMUM_HIT_AREA").SMALL_BUTTON_HEIGHT, require("MINIMUM_HIT_AREA").SMALL_BUTTON_ICON_SIZE);
+const buttonPadding2 = MINIMUM_HIT_AREA.getButtonPadding(require("MINIMUM_HIT_AREA").MEDIUM_BUTTON_HEIGHT, require("MINIMUM_HIT_AREA").MEDIUM_BUTTON_ICON_SIZE);
+const buttonPadding3 = MINIMUM_HIT_AREA.getButtonPadding(require("MINIMUM_HIT_AREA").LARGE_BUTTON_HEIGHT, require("MINIMUM_HIT_AREA").LARGE_BUTTON_ICON_SIZE);
+let closure_14 = createCacheKey.createStyles((arg0, arg1) => {
   if ("sm" === arg1) {
-    obj = { minHeight: require(4582) /* getButtonPadding */.SMALL_BUTTON_HEIGHT, minWidth: require(4582) /* getButtonPadding */.SMALL_BUTTON_HEIGHT, paddingHorizontal: require(4582) /* getButtonPadding */.SMALL_BUTTON_HORIZONTAL_PADDING, paddingVertical: closure_11 };
+    let obj = { minHeight: null, minWidth: null, paddingHorizontal: null, paddingVertical: null };
+    obj[0] = require(4604) /* MINIMUM_HIT_AREA */.SMALL_BUTTON_HEIGHT;
+    obj[1] = require(4604) /* MINIMUM_HIT_AREA */.SMALL_BUTTON_HEIGHT;
+    obj[2] = require(4604) /* MINIMUM_HIT_AREA */.SMALL_BUTTON_HORIZONTAL_PADDING;
+    obj[3] = closure_11;
   } else if ("md" === arg1) {
-    obj = { minHeight: require(4582) /* getButtonPadding */.MEDIUM_BUTTON_HEIGHT, minWidth: require(4582) /* getButtonPadding */.MEDIUM_BUTTON_HEIGHT, paddingHorizontal: require(4582) /* getButtonPadding */.MEDIUM_BUTTON_HORIZONTAL_PADDING, paddingVertical: closure_12 };
-  } else if ("lg" === arg1) {
-    const obj1 = { minHeight: require(4582) /* getButtonPadding */.LARGE_BUTTON_HEIGHT, minWidth: require(4582) /* getButtonPadding */.LARGE_BUTTON_HEIGHT, paddingHorizontal: require(4582) /* getButtonPadding */.LARGE_BUTTON_HORIZONTAL_PADDING, paddingVertical: closure_13 };
-    obj = obj1;
+    obj = { minHeight: null, minWidth: null, paddingHorizontal: null, paddingVertical: null };
+    obj[0] = require(4604) /* MINIMUM_HIT_AREA */.MEDIUM_BUTTON_HEIGHT;
+    obj[1] = require(4604) /* MINIMUM_HIT_AREA */.MEDIUM_BUTTON_HEIGHT;
+    obj[2] = require(4604) /* MINIMUM_HIT_AREA */.MEDIUM_BUTTON_HORIZONTAL_PADDING;
+    obj[3] = closure_12;
+  } else {
+    obj = {};
+    if ("lg" === arg1) {
+      const obj1 = { minHeight: null, minWidth: null, paddingHorizontal: null, paddingVertical: null };
+      obj1[0] = require(4604) /* MINIMUM_HIT_AREA */.LARGE_BUTTON_HEIGHT;
+      obj1[1] = require(4604) /* MINIMUM_HIT_AREA */.LARGE_BUTTON_HEIGHT;
+      obj1[2] = require(4604) /* MINIMUM_HIT_AREA */.LARGE_BUTTON_HORIZONTAL_PADDING;
+      obj1[3] = closure_13;
+      obj = obj1;
+    }
   }
-  let obj3 = require(4582) /* getButtonPadding */;
+  let obj3 = require(4604) /* MINIMUM_HIT_AREA */;
   const buttonBorderRadius = obj3.getButtonBorderRadius(arg1);
-  const obj2 = {};
-  obj3 = { flexDirection: "row", alignItems: "center", justifyContent: "center", overflow: "hidden", borderWidth: require(4582) /* getButtonPadding */.BUTTON_BORDER_WIDTH, borderRadius: buttonBorderRadius };
+  const obj2 = { pill: null, expressivePill: null, expressiveRiveFill: null, childContainer: null, ellipsis: null };
+  obj3 = { flexDirection: "row", alignItems: "center", justifyContent: "center", overflow: "hidden", borderWidth: require(4604) /* MINIMUM_HIT_AREA */.BUTTON_BORDER_WIDTH, borderRadius: buttonBorderRadius };
   const merged = Object.assign(obj);
-  obj2.pill = obj3;
-  obj2.expressivePill = { overflow: "hidden", borderRadius: buttonBorderRadius };
-  obj2.expressiveRiveFill = { color: importDefault(689).colors.CONTROL_EXPRESSIVE_BACKGROUND_DEFAULT };
-  obj2.childContainer = { flexDirection: "row", alignItems: "center", justifyContent: "center", flexGrow: 1, maxWidth: "100%" };
-  obj2.ellipsis = { position: "absolute", height: "100%", width: "100%", justifyContent: "center", alignItems: "center" };
+  obj2[0] = obj3;
+  obj2[1] = { overflow: "hidden", borderRadius: buttonBorderRadius };
+  obj2[2] = { color: importDefault(712).colors.CONTROL_EXPRESSIVE_BACKGROUND_DEFAULT };
+  obj2[3] = { flexDirection: "row", alignItems: "center", justifyContent: "center", flexGrow: 1, maxWidth: "100%" };
+  obj2[4] = { position: "absolute", height: "100%", width: "100%", justifyContent: "center", alignItems: "center" };
   return obj2;
 });
-let closure_15 = { code: "function ButtonPillNativeTsx1(){const{withSpring,loading,SUBTLE_SPRING,useReducedMotion,withDelay,FADE_DELAY,offsetY}=this.__closure;const opacityTransition=withSpring(loading?0:1,SUBTLE_SPRING,'animate-always');if(useReducedMotion){return{opacity:loading?opacityTransition:withDelay(FADE_DELAY,opacityTransition),transform:[{translateY:0}]};}return{opacity:opacityTransition,transform:[{translateY:withSpring(loading?-1*offsetY:0,SUBTLE_SPRING)}]};}" };
-let closure_16 = { code: "function ButtonPillNativeTsx2(){const{withSpring,loading,SUBTLE_SPRING,useReducedMotion,withDelay,FADE_DELAY,offsetY}=this.__closure;const opacityTransition=withSpring(loading?1:0,SUBTLE_SPRING,'animate-always');if(useReducedMotion){return{opacity:loading?withDelay(FADE_DELAY,opacityTransition):opacityTransition,transform:[{translateY:0}]};}return{opacity:opacityTransition,transform:[{translateY:withSpring(loading?0:offsetY,SUBTLE_SPRING)}]};}" };
+let closure_18 = { code: "function ButtonPillNativeTsx1(){const{withSpring,loading,SUBTLE_SPRING,useReducedMotion,withDelay,FADE_DELAY,offsetY}=this.__closure;const opacityTransition=withSpring(loading?0:1,SUBTLE_SPRING,'animate-always');if(useReducedMotion){return{opacity:loading?opacityTransition:withDelay(FADE_DELAY,opacityTransition),transform:[{translateY:0}]};}return{opacity:opacityTransition,transform:[{translateY:withSpring(loading?-1*offsetY:0,SUBTLE_SPRING)}]};}" };
+let closure_19 = { code: "function ButtonPillNativeTsx2(){const{withSpring,loading,SUBTLE_SPRING,useReducedMotion,withDelay,FADE_DELAY,offsetY}=this.__closure;const opacityTransition=withSpring(loading?1:0,SUBTLE_SPRING,'animate-always');if(useReducedMotion){return{opacity:loading?withDelay(FADE_DELAY,opacityTransition):opacityTransition,transform:[{translateY:0}]};}return{opacity:opacityTransition,transform:[{translateY:withSpring(loading?0:offsetY,SUBTLE_SPRING)}]};}" };
 const result = require("get ActivityIndicator").fileFinishedImporting("design/components/Button/native/ButtonPill.native.tsx");
 
 export const ButtonPill = function ButtonPill(loading) {

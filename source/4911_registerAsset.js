@@ -1,11 +1,10 @@
 // Module ID: 4911
-// Function ID: 42354
+// Function ID: 4912
 // Name: registerAsset
-// Dependencies: [1217]
+// Dependencies: [1241]
 
 // Module 4911 (registerAsset)
 import registerAsset from "registerAsset";
 
-const obj = { __packager_asset: true, httpServerLocation: "/assets/images/platforms", width: 255, height: 255, scales: [1], hash: "108517ec1c0ebdbb7171adf1b1ef15b7", name: "img_account_sync_xbox_custom", type: "png" };
 
-export default registerAsset.registerAsset(obj);
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/platforms", width: 255, height: 255, scales: [1], hash: "322f5aec10ee0e2c3d6aad9844b5f00f", name: "img_account_sync_facebook_light_and_dark", type: "png" });

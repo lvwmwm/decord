@@ -1,32 +1,30 @@
-// Module ID: 10766
-// Function ID: 83517
+// Module ID: 10790
+// Function ID: 10791
 // Name: getWindowsAudioEffectsExperimentConfig
-// Dependencies: [1188, 1428, 566, 2]
-// Exports: useWindowsAudioEffectsExperimentConfig
+// Dependencies: [1212, 1452, 589, 2]
+// Exports: getWindowsAudioEffectsExperimentConfig, useWindowsAudioEffectsExperimentConfig
 
-// Module 10766 (getWindowsAudioEffectsExperimentConfig)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 10790 (getWindowsAudioEffectsExperimentConfig)
+import initialize from "initialize";
 import ApexExperiment from "ApexExperiment";
 
 const require = arg1;
-function getWindowsAudioEffectsExperimentConfig(location) {
-  return config.getConfig({ location: location.location });
-}
 let obj = { preferSystemEffects: false };
-obj = { name: "2025-12-windows-audio-effects", kind: "user" };
-obj.defaultConfig = obj;
-obj = {};
+obj = { name: "2025-12-windows-audio-effects", kind: "user", defaultConfig: obj, variations: null };
+obj = { 1: null };
 ApexExperiment = {};
 const merged = Object.assign(obj);
-ApexExperiment["preferSystemEffects"] = true;
+ApexExperiment.preferSystemEffects = true;
 obj[1] = ApexExperiment;
-obj.variations = obj;
+obj[3] = obj;
 let closure_3 = ApexExperiment.createApexExperiment(obj);
 const result = require("initialize").fileFinishedImporting("modules/noise_cancellation/WindowsEffectsExperiment.tsx");
 
-export { getWindowsAudioEffectsExperimentConfig };
+export const getWindowsAudioEffectsExperimentConfig = function getWindowsAudioEffectsExperimentConfig(location) {
+  return config.getConfig({ location: location.location });
+};
 export const useWindowsAudioEffectsExperimentConfig = function useWindowsAudioEffectsExperimentConfig(location) {
   location = location.location;
-  const items = [_isNativeReflectConstruct];
-  return location(566).useStateFromStores(items, () => outer1_4({ location }));
+  const items = [initialize];
+  return location(589).useStateFromStores(items, () => outer1_3.getConfig({ location }));
 };

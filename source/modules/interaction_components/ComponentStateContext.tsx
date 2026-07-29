@@ -1,34 +1,34 @@
-// Module ID: 7868
-// Function ID: 62570
+// Module ID: 7891
+// Function ID: 7892
 // Name: isInteractionComponent
-// Dependencies: [57, 31, 7698, 3794, 1348, 1918, 4981, 1850, 7869, 33, 1882, 4394, 4392, 566, 7735, 6030, 7871, 7872, 686, 4594, 4388, 2]
+// Dependencies: [32, 19, 7721, 3818, 1372, 1942, 5003, 1874, 7892, 21, 1906, 4417, 4415, 589, 7758, 6048, 7894, 7895, 709, 4616, 4411, 2]
 // Exports: ComponentStateContextProvider, useComponentContainerId, useComponentError, useComponentState, useComponentStateContext
 
-// Module 7868 (isInteractionComponent)
+// Module 7891 (isInteractionComponent)
 import _slicedToArray from "_slicedToArray";
-import importAllResult from "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_6 from "_isNativeReflectConstruct";
-import closure_7 from "_isNativeReflectConstruct";
-import closure_8 from "_isNativeReflectConstruct";
-import closure_9 from "_isNativeReflectConstruct";
-import closure_10 from "_isNativeReflectConstruct";
-import closure_11 from "_isNativeReflectConstruct";
-import { jsx } from "jsxProd";
+import importAllResult from "useMountLayoutEffect";
+import deleteNonce from "deleteNonce";
+import initialize from "initialize";
+import ensureGuildLoaded from "ensureGuildLoaded";
+import trackCommunicationDisabled from "trackCommunicationDisabled";
+import recomputeGuild from "recomputeGuild";
+import mergeGuildAvatar from "mergeGuildAvatar";
+import getInteractionComponentStates from "getInteractionComponentStates";
+import { jsx } from "set";
 
 const require = arg1;
 function isInteractionComponent(type) {
   type = type.type;
-  if (require(1882) /* PermissionOverwriteType */.ComponentType.BUTTON === type) {
-    return type.style !== require(1882) /* PermissionOverwriteType */.ButtonStyle.LINK;
+  if (require(1906) /* PermissionOverwriteType */.ComponentType.BUTTON === type) {
+    return type.style !== tmp(1906).ButtonStyle.LINK;
   } else {
-    if (require(1882) /* PermissionOverwriteType */.ComponentType.STRING_SELECT !== type) {
-      if (require(1882) /* PermissionOverwriteType */.ComponentType.USER_SELECT !== type) {
-        if (require(1882) /* PermissionOverwriteType */.ComponentType.ROLE_SELECT !== type) {
-          if (require(1882) /* PermissionOverwriteType */.ComponentType.MENTIONABLE_SELECT !== type) {
-            if (require(1882) /* PermissionOverwriteType */.ComponentType.CHANNEL_SELECT !== type) {
-              if (require(1882) /* PermissionOverwriteType */.ComponentType.ACTION_ROW !== type) {
-                const TEXT_INPUT = require(1882) /* PermissionOverwriteType */.ComponentType.TEXT_INPUT;
+    if (tmp(1906).ComponentType.STRING_SELECT !== type) {
+      if (tmp(1906).ComponentType.USER_SELECT !== type) {
+        if (tmp(1906).ComponentType.ROLE_SELECT !== type) {
+          if (tmp(1906).ComponentType.MENTIONABLE_SELECT !== type) {
+            if (tmp(1906).ComponentType.CHANNEL_SELECT !== type) {
+              if (tmp(1906).ComponentType.ACTION_ROW !== type) {
+                const TEXT_INPUT = tmp(1906).ComponentType.TEXT_INPUT;
               }
               return false;
             }
@@ -44,130 +44,152 @@ function getActionComponentState(interaction, id, shouldDisableInteractiveCompon
   if (shouldDisableInteractiveComponents === undefined) {
     flag = false;
   }
-  let LOADING = require(4394) /* ActionComponentState */.ActionComponentState.NORMAL;
-  let tmp = null != interaction;
-  if (tmp) {
-    tmp = interaction.state !== require(4392) /* InteractionState */.InteractionState.FAILED;
+  let LOADING = require(4417) /* ActionComponentState */.ActionComponentState.NORMAL;
+  let tmp3 = null != interaction;
+  if (tmp3) {
+    tmp3 = interaction.state !== tmp(4415).InteractionState.FAILED;
   }
   let DISABLED = LOADING;
-  if (!tmp) {
+  if (!tmp3) {
     if (flag) {
       flag = isInteractionComponent(id);
     }
     if (flag) {
-      DISABLED = require(4394) /* ActionComponentState */.ActionComponentState.DISABLED;
+      DISABLED = tmp(4417).ActionComponentState.DISABLED;
     }
     return DISABLED;
   } else {
-    if (interaction.data.interactionType !== require(1882) /* PermissionOverwriteType */.InteractionTypes.MESSAGE_COMPONENT) {
+    if (interaction.data.interactionType !== tmp(1906).InteractionTypes.MESSAGE_COMPONENT) {
       if (isInteractionComponent(id)) {
-        LOADING = require(4394) /* ActionComponentState */.ActionComponentState.DISABLED;
+        LOADING = tmp(4417).ActionComponentState.DISABLED;
       }
     }
-    LOADING = require(4394) /* ActionComponentState */.ActionComponentState.LOADING;
+    LOADING = tmp(4417).ActionComponentState.LOADING;
   }
-}
-function getApplicationWidgetContainerId(applicationId) {
-  return "app-widget-" + applicationId.applicationId;
 }
 function useShouldDisableInteractiveComponents(channel_id) {
   channel = channel.getChannel(channel_id);
-  const items = [closure_9];
+  const items = [recomputeGuild];
   const items1 = [channel];
-  const stateFromStores = channel(566).useStateFromStores(items, () => {
+  const stateFromStores = channel(589).useStateFromStores(items, () => {
     let guild_id;
-    if (null != channel) {
-      guild_id = channel.guild_id;
+    if (channel != null) {
+      guild_id = tmp.guild_id;
     }
     let canChatInGuildResult = null == guild_id;
     if (!canChatInGuildResult) {
-      canChatInGuildResult = outer1_9.canChatInGuild(channel.guild_id);
+      canChatInGuildResult = outer1_9.canChatInGuild(tmp.guild_id);
     }
     return canChatInGuildResult;
   }, items1);
-  const obj2 = channel(566);
-  const items2 = [closure_6];
+  const obj2 = channel(589);
+  const items2 = [initialize];
   const items3 = [channel];
-  const stateFromStores1 = channel(566).useStateFromStores(items2, () => {
+  const stateFromStores1 = channel(589).useStateFromStores(items2, () => {
     let guild_id;
-    if (null != channel) {
-      guild_id = channel.guild_id;
+    if (channel != null) {
+      guild_id = tmp.guild_id;
     }
     let isLurkingResult = null != guild_id;
     if (isLurkingResult) {
-      isLurkingResult = outer1_6.isLurking(channel.guild_id);
+      isLurkingResult = outer1_6.isLurking(tmp.guild_id);
     }
     return isLurkingResult;
   }, items3);
-  const obj3 = channel(566);
-  const items4 = [closure_8, closure_10];
-  const stateFromStores2 = channel(566).useStateFromStores(items4, () => {
+  const obj3 = channel(589);
+  const items4 = [trackCommunicationDisabled, mergeGuildAvatar];
+  const stateFromStores2 = channel(589).useStateFromStores(items4, () => {
     const currentUser = outer1_10.getCurrentUser();
     let guild_id;
-    if (null != channel) {
-      guild_id = channel.guild_id;
+    if (channel != null) {
+      guild_id = tmp2.guild_id;
     }
-    let tmp4 = null;
+    let flag = null;
     if (null != guild_id) {
-      tmp4 = null;
+      flag = null;
       if (null != currentUser) {
         let guild_id1;
-        if (null != channel) {
-          guild_id1 = channel.guild_id;
+        if (tmp2 != null) {
+          guild_id1 = tmp2.guild_id;
         }
         const member = outer1_8.getMember(guild_id1, currentUser.id);
         let isPending;
-        if (null != member) {
+        if (member != null) {
           isPending = member.isPending;
         }
-        tmp4 = isPending;
+        flag = isPending;
       }
     }
-    return null != tmp4 && tmp4;
+    if (flag == null) {
+      flag = false;
+    }
+    return flag;
   });
-  const obj4 = channel(566);
+  const obj4 = channel(589);
   let guild_id;
-  if (null != channel) {
+  if (channel != null) {
     guild_id = channel.guild_id;
   }
-  const obj5 = channel(7735);
-  const isThreadModerator = channel(6030).useIsThreadModerator(channel);
-  const obj6 = channel(6030);
-  let tmp7 = !stateFromStores;
-  const canUnarchiveThread = channel(6030).useCanUnarchiveThread(channel);
-  if (!tmp7) {
-    tmp7 = stateFromStores1;
+  let tmpResult = tmp(6048);
+  const isThreadModerator = tmpResult.useIsThreadModerator(channel);
+  tmpResult = tmp(6048);
+  let tmp9 = !stateFromStores;
+  const canUnarchiveThread = tmpResult.useCanUnarchiveThread(channel);
+  if (stateFromStores) {
+    tmp9 = stateFromStores1;
   }
-  if (!tmp7) {
-    tmp7 = stateFromStores2;
+  if (!tmp9) {
+    tmp9 = stateFromStores2;
   }
-  if (!tmp7) {
-    tmp7 = null != channel && channel.isLockedThread() && !isThreadModerator;
-    const tmp8 = null != channel && channel.isLockedThread() && !isThreadModerator;
+  if (!tmp9) {
+    let isLockedThreadResult;
+    if (channel != null) {
+      isLockedThreadResult = channel.isLockedThread();
+    }
+    if (isLockedThreadResult) {
+      isLockedThreadResult = !isThreadModerator;
+    }
+    tmp9 = isLockedThreadResult;
   }
-  if (!tmp7) {
-    tmp7 = null != channel && channel.isArchivedThread() && !canUnarchiveThread;
-    const tmp9 = null != channel && channel.isArchivedThread() && !canUnarchiveThread;
+  if (!tmp9) {
+    let isArchivedThreadResult;
+    if (channel != null) {
+      isArchivedThreadResult = channel.isArchivedThread();
+    }
+    if (isArchivedThreadResult) {
+      isArchivedThreadResult = !canUnarchiveThread;
+    }
+    tmp9 = isArchivedThreadResult;
   }
-  if (!tmp7) {
-    tmp7 = callback(obj5.useCurrentUserCommunicationDisabled(guild_id), 2)[1];
+  if (!tmp9) {
+    tmp9 = callback(obj5.useCurrentUserCommunicationDisabled(guild_id), 2)[1];
   }
-  return tmp7;
+  return tmp9;
 }
-function useComponentValidatorState(id, stateFromStores) {
-  let closure_0 = id;
-  let closure_1 = stateFromStores;
-  const context = importAllResult.useContext(closure_13);
-  const items = [id, context];
-  const callback = importAllResult.useCallback((arg0) => {
+function useComponentStateForMessage(channel_id, arg1, id) {
+  let _require = channel_id;
+  let stateFromStores = id;
+  let obj = _require(callback[13]);
+  const items = [getInteractionComponentStates];
+  stateFromStores = obj.useStateFromStores(items, () => outer1_11.getInteractionComponentState(id.id, stateFromStores.id));
+  const items1 = [deleteNonce];
+  const items2 = [channel_id];
+  const stateFromStores1 = _require(callback[13]).useStateFromStores(items1, () => outer1_5.getInteraction(closure_0), items2);
+  const tmp3 = useShouldDisableInteractiveComponents(channel_id.channel_id) || arg1;
+  _require = id;
+  const context = importAllResult.useContext(closure_18);
+  callback = context;
+  const items3 = [id, context];
+  callback = importAllResult.useCallback((arg0) => {
     let str = "message";
     if (null != context.modal) {
       str = "modal";
     }
     const tmpResult = stateFromStores(context[16])(closure_0, arg0, str);
     closure_0 = tmpResult;
-    if (null != context.setValidationErrors) {
-      context.setValidationErrors((arg0) => {
+    const setValidationErrors = context.setValidationErrors;
+    if (setValidationErrors != null) {
+      setValidationErrors((arg0) => {
         const obj = {};
         const merged = Object.assign(arg0);
         obj[tmpResult.id] = tmpResult;
@@ -175,142 +197,165 @@ function useComponentValidatorState(id, stateFromStores) {
       });
     }
     return null == tmpResult;
-  }, items);
-  const items1 = [context.validators, callback, stateFromStores, id.id];
+  }, items3);
+  id = callback;
+  const items4 = [context.validators, callback, stateFromStores, id.id];
   const effect = importAllResult.useEffect(() => {
     function currentValidate() {
-      return outer1_3(outer1_1);
+      return callback(closure_1);
     }
     let validators = context.validators;
-    if (null != validators) {
+    if (validators != null) {
       validators.add(currentValidate);
     }
     return () => {
       const validators = outer1_2.validators;
-      if (null != validators) {
+      if (validators != null) {
         validators.delete(currentValidate);
       }
     };
-  }, items1);
-  let obj = {};
+  }, items4);
   const validationErrors = context.validationErrors;
-  let tmp4;
-  if (null != validationErrors) {
-    tmp4 = validationErrors[id.id];
+  let tmp7;
+  if (validationErrors != null) {
+    tmp7 = validationErrors[id.id];
   }
-  let tmp5 = null;
-  if (null != tmp4) {
-    tmp5 = tmp4;
+  if (tmp7 == null) {
+    tmp7 = null;
   }
-  obj.error = tmp5;
-  obj.validate = callback;
-  return obj;
-}
-function useComponentStateForMessage(channel_id, arg1, type) {
-  const _require = channel_id;
-  let closure_1 = type;
-  let obj = _require(validate[13]);
-  const items = [closure_11];
-  const stateFromStores = obj.useStateFromStores(items, () => outer1_11.getInteractionComponentState(channel_id.id, type.id));
-  const items1 = [_isNativeReflectConstruct];
-  const items2 = [channel_id];
-  const stateFromStores1 = _require(validate[13]).useStateFromStores(items1, () => outer1_5.getInteraction(closure_0), items2);
-  const tmp3 = useShouldDisableInteractiveComponents(channel_id.channel_id) || arg1;
-  const tmp4 = useComponentValidatorState(type, stateFromStores);
-  validate = tmp4.validate;
-  let id = channel_id.applicationId;
-  if (null == id) {
+  id = channel_id.applicationId;
+  if (id == null) {
     id = channel_id.author.id;
   }
   obj = {
     state: stateFromStores,
-    executeStateUpdate: importAllResult.useCallback((localState) => {
-      if (validate(localState)) {
-        const channel = outer1_7.getChannel(channel_id.channel_id);
+    executeStateUpdate: importAllResult.useCallback((arg0) => {
+      if (callback(arg0)) {
+        const channel = outer1_7.getChannel(id.channel_id);
         let tmp5 = null != channel;
         if (tmp5) {
-          tmp5 = null != type.customId;
+          tmp5 = null != stateFromStores.customId;
         }
         if (tmp5) {
-          let obj = channel_id(validate[17]);
-          obj = { componentType: type.type };
-          ({ id: obj2.messageId, flags: obj2.messageFlags } = channel_id);
-          ({ customId: obj2.customId, id: obj2.componentId } = type);
-          obj.applicationId = id;
-          ({ id: obj2.channelId, guild_id: obj2.guildId } = channel);
-          obj.localState = localState;
+          let obj = id(callback[17]);
+          obj = { componentType: null, messageId: null, messageFlags: null, customId: null, componentId: null, applicationId: null, channelId: null, guildId: null, localState: null };
+          obj[0] = stateFromStores.type;
+          ({ id: obj2[1], flags: obj2[2] } = id);
+          ({ customId: obj2[3], id: obj2[4] } = stateFromStores);
+          obj[5] = id;
+          ({ id: obj2[6], guild_id: obj2[7] } = channel);
+          obj[8] = arg0;
           const result = obj.executeMessageComponentInteraction(obj);
         }
         return true;
       } else {
         return false;
       }
-    }, items3)
+    }, items5),
+    isDisabled: null,
+    visualState: null,
+    error: null
   };
-  items3 = [, , , , , , , ];
-  ({ channel_id: arr4[0], flags: arr4[1], id: arr4[2] } = channel_id);
-  ({ customId: arr4[3], type: arr4[4], id: arr4[5] } = type);
-  items3[6] = id;
-  items3[7] = validate;
-  let tmp5 = tmp3;
+  items5 = [, , , , , , , ];
+  ({ channel_id: arr6[0], flags: arr6[1], id: arr6[2] } = channel_id);
+  ({ customId: arr6[3], type: arr6[4], id: arr6[5] } = id);
+  items5[6] = id;
+  items5[7] = callback;
+  let tmp8 = tmp3;
   if (tmp3) {
-    tmp5 = isInteractionComponent(type);
+    tmp8 = isInteractionComponent(id);
   }
-  obj.isDisabled = tmp5;
-  obj.visualState = getActionComponentState(stateFromStores1, type, tmp3);
-  obj.error = tmp4.error;
+  obj[2] = tmp8;
+  obj[3] = getActionComponentState(stateFromStores1, id, tmp3);
+  obj[4] = tmp7;
   return obj;
 }
 function useComponentStateForModal(customId, id) {
-  const _require = customId;
-  const importDefault = id;
-  const dependencyMap = arg2;
-  let obj = _require(566);
-  const items = [closure_11];
-  const stateFromStores = obj.useStateFromStores(items, () => outer1_11.getInteractionComponentState(customId.customId, id.id));
-  let first = stateFromStores(validate.useState(arg2), 1)[0];
-  const tmp3 = useComponentValidatorState(id, stateFromStores);
-  validate = tmp3.validate;
-  const items1 = [customId.customId, id.id, validate];
-  const callback = validate.useCallback((state) => {
-    let tmp = null == state;
+  let _require = customId;
+  let stateFromStores = id;
+  let context = arg2;
+  let obj = _require(context[13]);
+  const items = [getInteractionComponentStates];
+  stateFromStores = obj.useStateFromStores(items, () => outer1_11.getInteractionComponentState(id.customId, stateFromStores.id));
+  let callback = stateFromStores;
+  _require = id;
+  context = undefined;
+  callback = undefined;
+  context = callback.useContext(closure_18);
+  const items1 = [id, context];
+  callback = callback.useCallback((arg0) => {
+    let str = "message";
+    if (null != context.modal) {
+      str = "modal";
+    }
+    const tmpResult = stateFromStores(context[16])(closure_0, arg0, str);
+    closure_0 = tmpResult;
+    const setValidationErrors = context.setValidationErrors;
+    if (setValidationErrors != null) {
+      setValidationErrors((arg0) => {
+        const obj = {};
+        const merged = Object.assign(arg0);
+        obj[tmpResult.id] = tmpResult;
+        return obj;
+      });
+    }
+    return null == tmpResult;
+  }, items1);
+  const items2 = [context.validators, callback, stateFromStores, id.id];
+  const effect = callback.useEffect(() => {
+    function currentValidate() {
+      return callback(closure_1);
+    }
+    let validators = context.validators;
+    if (validators != null) {
+      validators.add(currentValidate);
+    }
+    return () => {
+      const validators = outer1_2.validators;
+      if (validators != null) {
+        validators.delete(currentValidate);
+      }
+    };
+  }, items2);
+  const validationErrors = context.validationErrors;
+  let tmp7;
+  if (validationErrors != null) {
+    tmp7 = validationErrors[id.id];
+  }
+  if (tmp7 == null) {
+    tmp7 = null;
+  }
+  const items3 = [customId.customId, id.id, callback];
+  const callback1 = callback.useCallback((arg0) => {
+    let tmp = null == arg0;
     if (!tmp) {
-      let obj = id(table[18]);
-      obj = { type: "SET_INTERACTION_COMPONENT_STATE", rootContainerId: customId.customId, componentId: id.id, state };
+      let obj = stateFromStores(context[18]);
+      obj = { type: "SET_INTERACTION_COMPONENT_STATE", rootContainerId: null, componentId: null, state: null };
+      obj[1] = id.customId;
+      obj[2] = stateFromStores.id;
+      obj[3] = arg0;
       obj.dispatch(obj);
-      tmp = validate(state);
+      tmp = callback(arg0);
     }
     return tmp;
-  }, items1);
-  importDefault(4594)(() => {
-    if (null == stateFromStores) {
-      callback(closure_2);
+  }, items3);
+  stateFromStores(context[19])(() => {
+    if (null == callback) {
+      callback1(context);
     }
   });
-  obj = {};
-  if (null != stateFromStores) {
-    first = stateFromStores;
+  if (stateFromStores == null) {
+    stateFromStores = callback(callback.useState(arg2), 1)[0];
   }
-  let tmp6 = null;
-  if (null != first) {
-    tmp6 = first;
+  if (stateFromStores == null) {
+    stateFromStores = null;
   }
-  obj.state = tmp6;
-  obj.executeStateUpdate = callback;
-  obj.isDisabled = false;
-  obj.visualState = _require(4394).ActionComponentState.NORMAL;
-  obj.error = tmp3.error;
+  obj = { state: stateFromStores, executeStateUpdate: callback1, isDisabled: false, visualState: _require(tmp2[11]).ActionComponentState.NORMAL, error: tmp7 };
   return obj;
 }
-function getParentsNotSupported(arg0) {
-  const ApplicationWidget = "ApplicationWidget";
-  return () => {
-    const error = new Error("" + ApplicationWidget + " does not support parents");
-    throw error;
-  };
-}
+let c4 = importAllResult;
 let context = importAllResult.createContext(null);
-let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/interaction_components/ComponentStateContext.tsx");
+let result = require("deleteNonce").fileFinishedImporting("modules/interaction_components/ComponentStateContext.tsx");
 
 export { getActionComponentState };
 export { useShouldDisableInteractiveComponents };
@@ -328,38 +373,44 @@ export const ComponentStateContextProvider = function ComponentStateContextProvi
   const items = [message, modal, applicationWidget, flag, validators, validationErrors, setValidationErrors];
   return <redux.Provider value={validationErrors.useMemo(() => {
     if (null != ApplicationWidget) {
-      let obj = { useComponentState: outer1_19.bind(null, ApplicationWidget, flag) };
-      ({ channel_id: obj3.channelId, id: obj3.containerId } = ApplicationWidget);
-      obj.message = ApplicationWidget;
-      obj.validators = validators;
-      obj.getParents = function getParents(arg0) {
-        return message(applicationWidget[20]).getParents(ApplicationWidget.components, arg0);
+      let obj = { useComponentState: null, channelId: null, containerId: null, message: null, validators: null, getParents: null };
+      obj[0] = outer1_16.bind(null, tmp, flag);
+      ({ channel_id: obj3[1], id: obj3[2] } = tmp);
+      obj[3] = tmp;
+      obj[4] = validators;
+      obj[5] = function getParents(arg0) {
+        return ApplicationWidget(outer1_2[20]).getParents(ApplicationWidget.components, arg0);
       };
       return obj;
     } else if (null != modal) {
-      obj = { useComponentState: outer1_20.bind(null, modal) };
-      ({ channelId: obj2.channelId, customId: obj2.containerId } = modal);
-      obj.modal = modal;
-      obj.validators = validators;
-      obj.validationErrors = validationErrors;
-      obj.setValidationErrors = setValidationErrors;
-      obj.getParents = function getParents(arg0) {
-        return message(applicationWidget[20]).getParents(outer1_1.components, arg0);
+      obj = { useComponentState: null, channelId: null, containerId: null, modal: null, validators: null, validationErrors: null, setValidationErrors: null, getParents: null };
+      obj[0] = outer1_17.bind(null, tmp18);
+      ({ channelId: obj2[1], customId: obj2[2] } = tmp18);
+      obj[3] = tmp18;
+      obj[4] = validators;
+      obj[5] = validationErrors;
+      obj[6] = setValidationErrors;
+      obj[7] = function getParents(arg0) {
+        return ApplicationWidget(outer1_2[20]).getParents(components.components, arg0);
       };
       return obj;
     } else if (null != applicationWidget) {
-      obj = {};
+      obj = { useComponentState: null, containerId: null, applicationWidget: null, validators: null, validationErrors: null, setValidationErrors: null, getParents: null };
       ApplicationWidget = "ApplicationWidget";
-      obj.useComponentState = () => {
+      obj[0] = () => {
         const error = new Error("" + ApplicationWidget + " does not support state");
         throw error;
       };
-      obj.containerId = outer1_16(applicationWidget);
-      obj.applicationWidget = applicationWidget;
-      obj.validators = validators;
-      obj.validationErrors = validationErrors;
-      obj.setValidationErrors = setValidationErrors;
-      obj.getParents = outer1_21("ApplicationWidget");
+      const _HermesInternal = HermesInternal;
+      obj[1] = "app-widget-" + tmp19.applicationId;
+      obj[2] = tmp19;
+      obj[3] = validators;
+      obj[4] = validationErrors;
+      obj[5] = setValidationErrors;
+      obj[6] = () => {
+        const error = new Error("" + "ApplicationWidget" + " does not support parents");
+        throw error;
+      };
       return obj;
     } else {
       const _Error = Error;
@@ -369,24 +420,23 @@ export const ComponentStateContextProvider = function ComponentStateContextProvi
   }, items)}>{arg0.children}</redux.Provider>;
 };
 export const useComponentState = function useComponentState(type, arg1) {
-  const context = importAllResult.useContext(closure_13);
+  const context = importAllResult.useContext(closure_18);
   return context.useComponentState(type, arg1);
 };
 export const useComponentStateContext = function useComponentStateContext() {
-  return importAllResult.useContext(closure_13);
+  return importAllResult.useContext(closure_18);
 };
 export const useComponentContainerId = function useComponentContainerId() {
-  return importAllResult.useContext(closure_13).containerId;
+  return importAllResult.useContext(closure_18).containerId;
 };
 export const useComponentError = function useComponentError(component) {
-  const validationErrors = importAllResult.useContext(closure_13).validationErrors;
+  const validationErrors = importAllResult.useContext(closure_18).validationErrors;
   let tmp;
-  if (null != validationErrors) {
+  if (validationErrors != null) {
     tmp = validationErrors[component.id];
   }
-  let tmp3 = null;
-  if (null != tmp) {
-    tmp3 = tmp;
+  if (tmp == null) {
+    tmp = null;
   }
-  return tmp3;
+  return tmp;
 };

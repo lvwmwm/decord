@@ -1,27 +1,28 @@
-// Module ID: 7937
-// Function ID: 63058
+// Module ID: 7962
+// Function ID: 7963
 // Name: memoResult1
-// Dependencies: [31, 27, 5785, 1393, 33, 4165, 7938, 7936, 7939, 5517, 7944, 2]
+// Dependencies: [19, 17, 5803, 1417, 21, 4189, 7963, 7961, 7964, 5535, 7969, 2]
 
-// Module 7937 (memoResult1)
-import importAllResult from "result";
+// Module 7962 (memoResult1)
+import importAllResult from "noop";
 import { View } from "get ActivityIndicator";
-import { isAvatarDecorationRecord } from "_isNativeReflectConstruct";
+import { isAvatarDecorationRecord } from "fromServer";
 import { AVATAR_DECORATION_SIZE } from "DECORATION_TO_AVATAR_RATIO";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_7;
-let closure_8;
-let closure_9;
+let c9;
+let error;
+let metroImportAll;
 const require = arg1;
-({ jsx: closure_7, Fragment: closure_8, jsxs: closure_9 } = jsxProd);
-let obj = {};
+let c3 = importAllResult;
+({ jsx: error, Fragment: metroImportAll, jsxs: c9 } = jsxProd);
+let obj = { row: null, rowSpacer: null };
 obj = { flexDirection: "row", alignItems: "center", justifyContent: "space-between", paddingHorizontal: require("useCollectibleListLayout").GUTTER_SIZE };
-obj.row = obj;
-_createForOfIteratorHelperLoose = { height: require("useCollectibleListLayout").GUTTER_SIZE };
-obj.rowSpacer = _createForOfIteratorHelperLoose;
-let closure_10 = _createForOfIteratorHelperLoose.createStyles(obj);
+obj[0] = obj;
+createCacheKey = { height: require("useCollectibleListLayout").GUTTER_SIZE };
+obj[1] = createCacheKey;
+let closure_10 = createCacheKey.createStyles(obj);
 const memoResult = importAllResult.memo((size) => {
   let dependencyMap;
   let isTryItOut;
@@ -40,31 +41,44 @@ const memoResult = importAllResult.memo((size) => {
   closure_5 = isTryItOut.useCallback(() => {
     setSelectedAvatarDecoration(null);
   }, items);
-  let obj = {};
-  obj = { style: tmp.row };
+  let obj = { children: null };
+  obj = { style: tmp.row, children: null };
   const items1 = [...items, null, null];
-  const substr = items1.slice(0, require(7938) /* useCollectibleListLayout */.ROW_SIZE);
-  obj.children = substr.map((avatarDecoration) => {
-    if (avatarDecoration === outer1_0(outer1_2[7]).NONE_ITEM) {
-      let obj = { size, onPress: callback, isSelected: null == closure_0, asDefault: null != closure_2 };
-      return outer1_7(outer1_0(outer1_2[8]).EditCollectiblesListItemNone, obj, "none");
-    } else if (avatarDecoration === outer1_0(outer1_2[7]).SHOP_ITEM) {
-      obj = { size, analyticsSource: setSelectedAvatarDecoration(outer1_2[9]).EDIT_AVATAR_DECORATION_SHEET };
-      return outer1_7(outer1_0(outer1_2[8]).EditCollectiblesListItemShop, obj, "shop");
-    } else if (callback(avatarDecoration)) {
-      const obj1 = { avatarDecoration, isSelected: closure_0 === avatarDecoration.skuId, setSelectedAvatarDecoration, isTryItOut, size };
-      return outer1_7(outer1_11, obj1, avatarDecoration.skuId);
+  const substr = items1.slice(0, require(7963) /* useCollectibleListLayout */.ROW_SIZE);
+  obj[1] = substr.map((skuId) => {
+    if (skuId === outer1_0(outer1_2[7]).NONE_ITEM) {
+      let obj = { size: null, onPress: null, isSelected: null, asDefault: null };
+      obj[0] = size;
+      obj[1] = callback;
+      obj[2] = null == closure_0;
+      obj[3] = null != closure_2;
+      return outer1_7(tmp(tmp2[8]).EditCollectiblesListItemNone, obj, "none");
+    } else if (skuId === tmp(tmp2[7]).SHOP_ITEM) {
+      obj = { size: null, analyticsSource: null };
+      obj[0] = size;
+      obj[1] = setSelectedAvatarDecoration(tmp2[9]).EDIT_AVATAR_DECORATION_SHEET;
+      return outer1_7(tmp(tmp2[8]).EditCollectiblesListItemShop, obj, "shop");
+    } else if (callback(skuId)) {
+      const obj1 = { avatarDecoration: null, isSelected: null, setSelectedAvatarDecoration: null, isTryItOut: null, size: null };
+      obj1[0] = skuId;
+      obj1[1] = closure_0 === skuId.skuId;
+      obj1[2] = setSelectedAvatarDecoration;
+      obj1[3] = isTryItOut;
+      obj1[4] = size;
+      return outer1_7(outer1_11, obj1, skuId.skuId);
     } else {
-      obj = {};
-      const obj2 = { height: size, width: size };
-      obj.style = obj2;
+      obj = { style: null };
+      const obj2 = { height: null, width: null };
+      obj2[0] = size;
+      obj2[1] = size;
+      obj[0] = obj2;
       return outer1_7(size, obj, arg1);
     }
   });
   const items2 = [callback(size, obj), ];
   obj = { style: tmp.rowSpacer };
   items2[1] = callback(size, obj);
-  obj.children = items2;
+  obj[0] = items2;
   return callback2(closure_8, obj);
 });
 memoResult.displayName = "EditAvatarDecorationRow";
@@ -81,12 +95,12 @@ const memoResult1 = importAllResult.memo((avatarDecoration) => {
   const callback = importAllResult.useCallback(() => {
     setSelectedAvatarDecoration(avatarDecoration);
   }, items);
-  let obj = { skuId: avatarDecoration.skuId, isSelected, onPress: callback, size: avatarDecoration.size, isTryItOut: flag, accessibilityLabel: avatarDecoration.label };
+  let obj = { skuId: avatarDecoration.skuId, isSelected, onPress: callback, size: avatarDecoration.size, isTryItOut: flag, accessibilityLabel: avatarDecoration.label, children: null };
   obj = { avatarDecoration, size: AVATAR_DECORATION_SIZE, animate: isSelected };
-  obj.children = callback(setSelectedAvatarDecoration(7944), obj);
-  return callback(avatarDecoration(7939).EditCollectiblesListItemProduct, obj);
+  obj[6] = callback(setSelectedAvatarDecoration(7969), obj);
+  return callback(avatarDecoration(7964).EditCollectiblesListItemProduct, obj);
 });
 memoResult1.displayName = "EditAvatarDecorationItem";
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/collectibles/avatar_decorations/native/EditAvatarDecorationSection.tsx");
+const result = require("fromServer").fileFinishedImporting("modules/collectibles/avatar_decorations/native/EditAvatarDecorationSection.tsx");
 
 export const EditAvatarDecorationRow = memoResult;

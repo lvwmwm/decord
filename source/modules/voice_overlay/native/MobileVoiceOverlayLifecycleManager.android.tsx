@@ -1,25 +1,20 @@
-// Module ID: 13559
-// Function ID: 104131
-// Name: _isNativeReflectConstruct
-// Dependencies: [15, 17, 18, 6, 7, 1348, 1908, 1838, 4212, 3793, 4237, 3802, 4987, 1850, 4181, 10742, 653, 13560, 13561, 13562, 13563, 7676, 12822, 13564, 13565, 7661, 1212, 13566, 10761, 4029, 6024, 4355, 5009, 675, 4359, 63, 4565, 2]
+// Module ID: 13582
+// Function ID: 13583
+// Name: importDefaultResult1
+// Dependencies: [1372, 1932, 1862, 4236, 3817, 4261, 3826, 5009, 1874, 4205, 10766, 676, 13583, 13584, 13585, 13586, 7699, 12844, 13587, 13588, 7684, 1236, 4053, 39, 13589, 10785, 6042, 4380, 5031, 698, 4384, 4368, 2]
 
-// Module 13559 (_isNativeReflectConstruct)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_4 from "registerAsset";
-import closure_5 from "registerAsset";
-import closure_6 from "_isNativeReflectConstruct";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import closure_8 from "_isNativeReflectConstruct";
-import { GUILD_VOCAL_CHANNELS_KEY } from "_isNativeReflectConstruct";
-import closure_10 from "_createForOfIteratorHelperLoose";
-import importDefaultResult from "_isNativeReflectConstruct";
-import closure_12 from "_isNativeReflectConstruct";
-import importDefaultResult1 from "_isNativeReflectConstruct";
-import closure_14 from "_isNativeReflectConstruct";
-import closure_15 from "_isNativeReflectConstruct";
-import closure_16 from "_isNativeReflectConstruct";
-import importDefaultResult2 from "_isNativeReflectConstruct";
-import closure_18 from "_isNativeReflectConstruct";
+// Module 13582 (importDefaultResult1)
+import ensureGuildLoaded from "ensureGuildLoaded";
+import { GUILD_VOCAL_CHANNELS_KEY } from "comparator";
+import createGuildRecordFromRust from "createGuildRecordFromRust";
+import importDefaultResult from "_detectH265HardwareDecode";
+import getUncachedChannelPermissions from "getUncachedChannelPermissions";
+import importDefaultResult1 from "createRTCConnection";
+import upsertRelationship from "upsertRelationship";
+import anyoneHasFlagInContext from "anyoneHasFlagInContext";
+import mergeGuildAvatar from "mergeGuildAvatar";
+import importDefaultResult2 from "updateVoiceState";
+import getUserAgnosticState from "getUserAgnosticState";
 import ME from "ME";
 import registerAsset from "registerAsset";
 import registerAsset from "registerAsset";
@@ -41,528 +36,446 @@ import { intl as intl8 } from "getSystemLocale";
 import { intl as intl9 } from "getSystemLocale";
 import { intl as intl10 } from "getSystemLocale";
 import { intl as intl11 } from "getSystemLocale";
-import tmp17 from "LifecycleManager";
+import "initialize";
 
-let closure_19;
-let closure_20;
+let closure_14;
+let closure_15;
 const require = arg1;
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
-  }
-  const result = _isNativeReflectConstruct();
-}
-function _createForOfIteratorHelperLoose(iterable) {
-  let closure_0 = iterable;
-  iterable = "undefined" !== typeof Symbol;
-  if (iterable) {
-    const _Symbol = Symbol;
-    iterable = iterable[Symbol.iterator];
-  }
-  if (!iterable) {
-    iterable = iterable[Symbol.iterator];
-  }
-  if (iterable) {
-    const iter = iterable.call(iterable);
-    const next = iter.next;
-    return next.bind(iter);
-  } else {
-    const _Array = Array;
-    let tmp = iterable;
-    if (!Array.isArray(iterable)) {
-      let tmp2;
-      if (iterable) {
-        if ("string" === typeof iterable) {
-          tmp2 = _arrayLikeToArray(iterable, undefined);
-        } else {
-          const toString = {}.toString;
-          const substr = toString.call(iterable).slice(8, -1);
-          let name = substr;
-          if (tmp3) {
-            name = iterable.constructor.name;
-          }
-          if ("Map" !== name) {
-            if ("Set" !== name) {
-              if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(iterable, undefined);
-              } else {
-                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
-              }
-            }
-            tmp2 = arr;
-          }
-          const _Array2 = Array;
-          arr = Array.from(iterable);
-          const callResult = toString.call(iterable);
-          tmp3 = "Object" === substr && iterable.constructor;
-        }
-      }
-      tmp = tmp2;
-      if (!tmp2) {
-        const _TypeError = TypeError;
-        const typeError = new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
-        throw typeError;
-      }
-    }
-    if (tmp) {
-      closure_0 = tmp;
-    }
-    let c1 = 0;
-    return () => {
-      if (closure_1 >= length.length) {
-        let obj = { done: true };
-      } else {
-        obj = { done: false };
-        closure_1 = tmp3 + 1;
-        obj.value = length[+closure_1];
-      }
-      return obj;
-    };
-  }
-}
-function _arrayLikeToArray(arg0, arg1) {
-  let length;
-  if (tmp) {
-    length = arg0.length;
-  }
-  const ArrayResult = Array(length);
-  for (let num = 0; num < length; num = num + 1) {
-    ArrayResult[num] = arg0[num];
-  }
-  return ArrayResult;
-}
-({ AnalyticEvents: closure_19, Permissions: closure_20 } = ME);
+({ AnalyticEvents: closure_14, Permissions: closure_15 } = ME);
 let items = [importDefaultResult2, importDefaultResult1, importDefaultResult];
-let closure_22 = { DISABLED: 0, [0]: "DISABLED", NOT_SHOWING: 1, [1]: "NOT_SHOWING", WAITING_FOR_SERVICE: 2, [2]: "WAITING_FOR_SERVICE", SHOWING: 3, [3]: "SHOWING" };
-let obj = {};
-obj.useSpeaker = intl.string(require("getSystemLocale").t.CVxXDM);
-obj.mute = intl2.string(require("getSystemLocale").t.w4m945);
-obj.disconnectFromVoice = intl3.string(require("getSystemLocale").t["/lEZpt"]);
-obj.getInvite = intl4.string(require("getSystemLocale").t.JYzIWe);
-obj.switchChannels = intl5.string(require("getSystemLocale").t.zJvWqU);
-obj.openDiscord = intl6.string(require("getSystemLocale").t["G/Ez6p"]);
-obj.inviteLinkCopied = intl7.string(require("getSystemLocale").t.OhctG7);
-obj.channelSelect = intl8.string(require("getSystemLocale").t.r2ptsz);
-obj.closeWindow = intl9.string(require("getSystemLocale").t.gaifwY);
-obj.searchChannels = intl10.string(require("getSystemLocale").t.wM7uRI);
-obj.noResults = intl11.string(require("getSystemLocale").t.wk3qsA);
-let tmp15 = (() => {
-  class MobileVoiceOverlayManager {
-    constructor() {
-      self = this;
-      tmp = outer1_6(this, self);
-      this.currentVoiceChannelId = null;
-      this.trashedVoiceChannelId = null;
-      this.overlayState = outer1_22.DISABLED;
-      this.channelSelectorResults = [];
-      this.layoutTrashedSubscription = null;
-      this.channelQueryUpdateSubscription = null;
-      this.isBatchedBridgeInitialized = false;
-      this.handleMobileVoiceOverlayStoreUpdate = () => {
-        if (outer2_18.getEnabled()) {
-          obj.handleOverlayEnable();
-        } else {
-          const result = obj.unsubscribeFromVoiceStateStoreUpdates();
-          const result1 = obj.unsubscribeFromNativeEvents();
-          obj.overlayState = outer2_22.DISABLED;
-          if (obj.isOverlayShowing()) {
-            if (null != outer2_1(outer2_2[27])) {
-              outer2_1(outer2_2[27]).hideOverlay();
-              const obj2 = outer2_1(outer2_2[27]);
-            }
+let closure_17 = { DISABLED: 0, [0]: "DISABLED", NOT_SHOWING: 1, [1]: "NOT_SHOWING", WAITING_FOR_SERVICE: 2, [2]: "WAITING_FOR_SERVICE", SHOWING: 3, [3]: "SHOWING" };
+let obj = { useSpeaker: null, mute: null, disconnectFromVoice: null, getInvite: null, switchChannels: null, openDiscord: null, inviteLinkCopied: null, channelSelect: null, closeWindow: null, searchChannels: null, noResults: null };
+obj[0] = intl.string(require("getSystemLocale").t.CVxXDM);
+obj[1] = intl2.string(require("getSystemLocale").t.w4m945);
+obj[2] = intl3.string(require("getSystemLocale").t["/lEZpt"]);
+obj[3] = intl4.string(require("getSystemLocale").t.JYzIWe);
+obj[4] = intl5.string(require("getSystemLocale").t.zJvWqU);
+obj[5] = intl6.string(require("getSystemLocale").t["G/Ez6p"]);
+obj[6] = intl7.string(require("getSystemLocale").t.OhctG7);
+obj[7] = intl8.string(require("getSystemLocale").t.r2ptsz);
+obj[8] = intl9.string(require("getSystemLocale").t.gaifwY);
+obj[9] = intl10.string(require("getSystemLocale").t.wM7uRI);
+obj[10] = intl11.string(require("getSystemLocale").t.wk3qsA);
+class MobileVoiceOverlayManager {
+  constructor() {
+    obj = Object.create(new.target.prototype);
+    closure_0 = obj;
+    obj.currentVoiceChannelId = null;
+    obj.trashedVoiceChannelId = null;
+    obj.overlayState = Permissions.DISABLED;
+    obj.channelSelectorResults = [];
+    obj.layoutTrashedSubscription = null;
+    obj.channelQueryUpdateSubscription = null;
+    obj.isBatchedBridgeInitialized = false;
+    obj.handleMobileVoiceOverlayStoreUpdate = function handleMobileVoiceOverlayStoreUpdate() {
+      if (outer1_13.getEnabled()) {
+        obj.handleOverlayEnable();
+      } else {
+        const result = obj.unsubscribeFromVoiceStateStoreUpdates();
+        const result1 = obj.unsubscribeFromNativeEvents();
+        obj.overlayState = outer1_17.DISABLED;
+        if (obj.isOverlayShowing()) {
+          const obj2 = outer1_1(outer1_2[24]);
+          if (obj2 != null) {
+            obj2.hideOverlay();
           }
         }
-      };
-      this.handleOverlayEnable = () => {
-        function handleEnableFail() {
-          outer3_1(outer3_2[28]).setEnabled(false);
-          handleEnableFail.overlayState = outer3_22.DISABLED;
-        }
-        if (null != outer2_1(outer2_2[27])) {
-          const obj = outer2_1(outer2_2[27]);
-          const enableOverlayResult = outer2_1(outer2_2[27]).enableOverlay();
-          outer2_1(outer2_2[27]).enableOverlay().then((arg0) => {
-            if (arg0) {
-              const result = handleEnableFail.subscribeToVoiceStateStoreUpdates();
-              const result1 = handleEnableFail.subscribeToNativeEvents();
-              handleEnableFail.overlayState = outer3_22.NOT_SHOWING;
-            } else {
-              handleEnableFail();
-            }
-          }).catch(() => {
-            handleEnableFail();
-          });
-          const nextPromise = outer2_1(outer2_2[27]).enableOverlay().then((arg0) => {
-            if (arg0) {
-              const result = handleEnableFail.subscribeToVoiceStateStoreUpdates();
-              const result1 = handleEnableFail.subscribeToNativeEvents();
-              handleEnableFail.overlayState = outer3_22.NOT_SHOWING;
-            } else {
-              handleEnableFail();
-            }
-          });
-        }
-      };
-      this.subscribeToVoiceStateStoreUpdates = () => {
-        if (!self.isSubscribedToVoiceStateStoreUpdates()) {
-          const item = outer2_21.forEach((addChangeListener) => {
-            addChangeListener.addChangeListener(outer1_0.handleOverlayUIStoreUpdate);
-          });
-        }
-      };
-      this.unsubscribeFromVoiceStateStoreUpdates = () => {
-        if (self.isSubscribedToVoiceStateStoreUpdates()) {
-          const item = outer2_21.forEach((removeChangeListener) => {
-            removeChangeListener.removeChangeListener(outer1_0.handleOverlayUIStoreUpdate);
-          });
-        }
-      };
-      this.isSubscribedToVoiceStateStoreUpdates = () => null != outer2_21.find((_changeCallbacks) => _changeCallbacks._changeCallbacks.has(outer1_0.handleOverlayUIStoreUpdate));
-      this.subscribeToNativeEvents = () => {
-        if (obj.isFabric()) {
-          self.layoutTrashedSubscription = outer2_1(outer2_2[27]).onLayoutTrashed(self.handleLayoutTrashed);
-          const obj2 = outer2_1(outer2_2[27]);
-          self.channelQueryUpdateSubscription = outer2_1(outer2_2[27]).onChannelQueryUpdate(self.handleChannelQueryUpdate);
-          const obj3 = outer2_1(outer2_2[27]);
-        }
-      };
-      this.unsubscribeFromNativeEvents = () => {
-        if (obj.isFabric()) {
-          const layoutTrashedSubscription = self.layoutTrashedSubscription;
-          if (null != layoutTrashedSubscription) {
-            layoutTrashedSubscription.remove();
+      }
+    };
+    obj.handleOverlayEnable = function handleOverlayEnable() {
+      let obj = outer1_1(outer1_2[24]);
+      if (obj != null) {
+        const enableOverlayResult = obj.enableOverlay();
+        obj.enableOverlay().then((arg0) => {
+          if (arg0) {
+            const result = closure_0.subscribeToVoiceStateStoreUpdates();
+            const result1 = closure_0.subscribeToNativeEvents();
+            closure_0.overlayState = outer1_17.NOT_SHOWING;
+          } else {
+            outer1_1(outer1_2[25]).setEnabled(false);
+            closure_0.overlayState = outer1_17.DISABLED;
+            const obj = outer1_1(outer1_2[25]);
           }
-          const channelQueryUpdateSubscription = self.channelQueryUpdateSubscription;
-          if (null != channelQueryUpdateSubscription) {
-            channelQueryUpdateSubscription.remove();
+        }).catch(() => {
+          outer1_1(outer1_2[25]).setEnabled(false);
+          closure_0.overlayState = outer1_17.DISABLED;
+        });
+        const nextPromise = obj.enableOverlay().then((arg0) => {
+          if (arg0) {
+            const result = closure_0.subscribeToVoiceStateStoreUpdates();
+            const result1 = closure_0.subscribeToNativeEvents();
+            closure_0.overlayState = outer1_17.NOT_SHOWING;
+          } else {
+            outer1_1(outer1_2[25]).setEnabled(false);
+            closure_0.overlayState = outer1_17.DISABLED;
+            const obj = outer1_1(outer1_2[25]);
           }
+        });
+      }
+    };
+    obj.subscribeToVoiceStateStoreUpdates = function subscribeToVoiceStateStoreUpdates() {
+      if (!obj.isSubscribedToVoiceStateStoreUpdates()) {
+        const item = outer1_16.forEach((addChangeListener) => {
+          addChangeListener.addChangeListener(obj.handleOverlayUIStoreUpdate);
+        });
+      }
+    };
+    obj.unsubscribeFromVoiceStateStoreUpdates = function unsubscribeFromVoiceStateStoreUpdates() {
+      if (obj.isSubscribedToVoiceStateStoreUpdates()) {
+        const item = outer1_16.forEach((removeChangeListener) => {
+          removeChangeListener.removeChangeListener(obj.handleOverlayUIStoreUpdate);
+        });
+      }
+    };
+    obj.isSubscribedToVoiceStateStoreUpdates = function isSubscribedToVoiceStateStoreUpdates() {
+      return null != outer1_16.find((_changeCallbacks) => _changeCallbacks._changeCallbacks.has(obj.handleOverlayUIStoreUpdate));
+    };
+    obj.subscribeToNativeEvents = function subscribeToNativeEvents() {
+      obj = obj(outer1_2[22]);
+      if (obj.isFabric()) {
+        obj.layoutTrashedSubscription = outer1_1(tmp[24]).onLayoutTrashed(obj.handleLayoutTrashed);
+        const obj2 = outer1_1(tmp[24]);
+        obj.channelQueryUpdateSubscription = outer1_1(tmp[24]).onChannelQueryUpdate(obj.handleChannelQueryUpdate);
+        const obj3 = outer1_1(tmp[24]);
+      }
+    };
+    obj.unsubscribeFromNativeEvents = function unsubscribeFromNativeEvents() {
+      obj = obj(outer1_2[22]);
+      if (obj.isFabric()) {
+        const layoutTrashedSubscription = obj.layoutTrashedSubscription;
+        if (layoutTrashedSubscription != null) {
+          layoutTrashedSubscription.remove();
         }
-      };
-      this.handleOverlayUIStoreUpdate = () => {
-        if (self.overlayState !== outer2_22.DISABLED) {
-          const currentVoiceChannelId = self.getVoiceConnectedGuildAndChannel().currentVoiceChannelId;
-          if (currentVoiceChannelId !== self.currentVoiceChannelId) {
-            self.currentVoiceChannelId = currentVoiceChannelId;
-            self.trashedVoiceChannelId = null;
-          }
-          if (null != currentVoiceChannelId) {
-            if (currentVoiceChannelId !== self.trashedVoiceChannelId) {
-              const overlayState = self.overlayState;
-              if (outer2_22.WAITING_FOR_SERVICE !== overlayState) {
-                if (outer2_22.NOT_SHOWING === overlayState) {
-                  const result = outer2_1(outer2_2[30]).isForegroundServiceRunning((arg0) => {
-                    if (arg0) {
-                      obj.showOverlay();
-                    } else {
-                      obj.overlayState = outer3_22.NOT_SHOWING;
-                    }
-                  });
-                  self.overlayState = outer2_22.WAITING_FOR_SERVICE;
-                } else if (outer2_22.SHOWING === overlayState) {
-                  self.updateOverlayUI();
-                } else {
-                  const overlayState2 = self.overlayState;
-                }
+        const channelQueryUpdateSubscription = obj.channelQueryUpdateSubscription;
+        if (channelQueryUpdateSubscription != null) {
+          channelQueryUpdateSubscription.remove();
+        }
+        const tmp = obj;
+      }
+    };
+    obj.handleOverlayUIStoreUpdate = function handleOverlayUIStoreUpdate() {
+      if (obj.overlayState !== outer1_17.DISABLED) {
+        const currentVoiceChannelId = obj.getVoiceConnectedGuildAndChannel().currentVoiceChannelId;
+        if (currentVoiceChannelId !== obj.currentVoiceChannelId) {
+          obj.currentVoiceChannelId = currentVoiceChannelId;
+          obj.trashedVoiceChannelId = null;
+        }
+        if (null != currentVoiceChannelId) {
+          if (currentVoiceChannelId !== obj.trashedVoiceChannelId) {
+            const overlayState = obj.overlayState;
+            if (tmp.WAITING_FOR_SERVICE !== overlayState) {
+              if (tmp.NOT_SHOWING === overlayState) {
+                const result = outer1_1(outer1_2[26]).isForegroundServiceRunning((arg0) => {
+                  if (arg0) {
+                    obj.showOverlay();
+                  } else {
+                    obj.overlayState = outer1_17.NOT_SHOWING;
+                  }
+                });
+                obj.overlayState = tmp.WAITING_FOR_SERVICE;
+              } else if (tmp.SHOWING === overlayState) {
+                obj.updateOverlayUI();
+              } else {
+                const overlayState2 = obj.overlayState;
               }
             }
           }
-          if (self.isOverlayShowing()) {
-            self.hideOverlay();
-          }
         }
-      };
-      this.updateOverlayUI = () => {
-        let currentGuildId;
-        let currentVoiceChannelId;
-        const currentUser = outer2_16.getCurrentUser();
-        let id;
-        if (null != currentUser) {
-          id = currentUser.id;
+        if (obj.isOverlayShowing()) {
+          obj.hideOverlay();
         }
-        if (null != id) {
-          const voiceConnectedGuildAndChannel = self.getVoiceConnectedGuildAndChannel();
-          ({ currentGuildId, currentVoiceChannelId } = voiceConnectedGuildAndChannel);
-          const channel = outer2_8.getChannel(currentVoiceChannelId);
-          if (null != currentVoiceChannelId) {
-            if (null != channel) {
-              const overlayUser = self.getOverlayUser(id);
-              if (null != overlayUser) {
-                const _Object = Object;
-                const keys = Object.keys(outer2_17.getVoiceStatesForChannel(currentVoiceChannelId));
-                let tmp5 = overlayUser;
-                if (!overlayUser.speaking) {
-                  const tmp4 = outer2_27(keys);
-                  let iter = tmp4();
-                  tmp5 = null;
-                  if (!iter.done) {
-                    while (true) {
-                      let tmp6 = self;
-                      let overlayUser1 = self.getOverlayUser(iter.value);
-                      if (null == overlayUser1) {
-                        let iter2 = tmp4();
-                        iter = iter2;
-                        tmp5 = null;
-                        if (iter2.done) {
-                          break;
-                        }
-                      } else {
-                        tmp5 = overlayUser1;
-                        if (overlayUser1.speaking) {
-                          break;
-                        }
-                      }
-                      break;
-                    }
+      }
+    };
+    obj.updateOverlayUI = function updateOverlayUI() {
+      let currentGuildId;
+      let currentVoiceChannelId;
+      let obj;
+      const currentUser = outer1_11.getCurrentUser();
+      let id;
+      if (currentUser != null) {
+        id = currentUser.id;
+      }
+      if (null != id) {
+        const voiceConnectedGuildAndChannel = obj.getVoiceConnectedGuildAndChannel();
+        ({ currentGuildId, currentVoiceChannelId } = voiceConnectedGuildAndChannel);
+        const channel = outer1_3.getChannel(currentVoiceChannelId);
+        if (null != currentVoiceChannelId) {
+          if (null != channel) {
+            const overlayUser = obj4.getOverlayUser(id);
+            if (null != overlayUser) {
+              const _Object = Object;
+              const keys = Object.keys(outer1_12.getVoiceStatesForChannel(currentVoiceChannelId));
+              let tmp10 = null;
+              if (overlayUser.speaking) {
+                tmp10 = overlayUser;
+              } else {
+                for (const item10014 of keys) {
+                  let tmp5 = obj;
+                  let tmp6 = obj;
+                  let overlayUser1 = obj.getOverlayUser(item10014);
+                  let tmp8 = overlayUser1;
+                  let speaking;
+                  if (overlayUser1 != null) {
+                    speaking = overlayUser1.speaking;
                   }
+                  if (speaking) {
+                    tmp10 = overlayUser1;
+                    let tmp11 = obj;
+                    obj.return();
+                    break;
+                  }
+                  break;
                 }
-                if (null == tmp5) {
-                  tmp5 = overlayUser;
-                }
-                const items = [tmp5];
-                if (tmp5.userId !== overlayUser.userId) {
-                  items.push(overlayUser);
-                }
-                let num = 0;
-                if (0 < keys.length) {
-                  while (true) {
-                    let tmp10 = keys[num];
-                    let tmp11 = tmp9;
-                    if (tmp10 !== id) {
-                      let userId;
-                      if (null != tmp5) {
-                        userId = tmp5.userId;
-                      }
-                      let tmp13 = tmp5;
-                      tmp11 = tmp9;
-                      if (tmp10 !== userId) {
-                        let tmp14 = self;
-                        let overlayUser2 = self.getOverlayUser(tmp10);
-                        let tmp16 = tmp5;
-                        tmp11 = overlayUser2;
-                        if (null != overlayUser2) {
-                          let arr = items.push(overlayUser2);
-                          let tmp18 = tmp5;
-                          tmp11 = overlayUser2;
-                          if (items.length >= 3) {
-                            break;
-                          }
-                        }
+              }
+              if (null == tmp10) {
+                tmp10 = overlayUser;
+              }
+              const items = [tmp10];
+              if (tmp10.userId !== overlayUser.userId) {
+                items.push(overlayUser);
+              }
+              const iter = keys[Symbol.iterator]();
+              const nextResult = iter.next();
+              while (iter !== undefined) {
+                let tmp19 = nextResult;
+                if (nextResult !== id) {
+                  let tmp20 = nextResult;
+                  let tmp21 = tmp10;
+                  let userId;
+                  if (tmp10 != null) {
+                    userId = tmp10.userId;
+                  }
+                  if (tmp19 !== userId) {
+                    let tmp23 = obj;
+                    let tmp24 = obj;
+                    let tmp25 = nextResult;
+                    let overlayUser2 = obj.getOverlayUser(tmp19);
+                    if (null != overlayUser2) {
+                      let tmp28 = overlayUser2;
+                      let arr = items.push(tmp27);
+                      if (items.length >= 3) {
+                        let tmp30 = iter;
+                        iter.return();
                         break;
                       }
+                      let tmp31 = obj;
+                      let obj2 = obj;
+                      let tmp32 = outer1_17;
+                      if (obj.overlayState !== outer1_17.SHOWING) {
+                        let tmp33 = tmp31;
+                        let str = "";
+                        let result = obj2.refreshChannelSelectorResults("");
+                      }
+                      let tmp35 = tmp31;
+                      obj2.currentVoiceChannelId = currentVoiceChannelId;
+                      let tmp36 = outer1_1;
+                      let tmp37 = outer1_2;
+                      let obj3 = outer1_1(outer1_2[24]);
+                      if (obj3 != null) {
+                        obj = { users: null, channelName: null, guildName: null, guildId: null, channelId: null, extraUsers: null, deafened: null, muted: null, connectionQuality: null, canGenerateInvite: null, channelSelectorResults: null };
+                        obj[0] = items;
+                        let tmp51 = obj;
+                        let obj6 = obj(tmp37[27]);
+                        let tmp52 = outer1_11;
+                        let tmp53 = outer1_9;
+                        obj[1] = obj6.computeChannelName(channel, outer1_11, outer1_9);
+                        let tmp54 = outer1_5;
+                        let guild = outer1_5.getGuild(currentGuildId);
+                        let str2;
+                        if (guild != null) {
+                          str2 = guild.name;
+                        }
+                        if (str2 == null) {
+                          str2 = "";
+                        }
+                        obj[2] = str2;
+                        obj[3] = currentGuildId;
+                        obj[4] = currentVoiceChannelId;
+                        obj[5] = keys.length - items.length;
+                        let tmp38 = outer1_6;
+                        obj[6] = outer1_6.isSelfDeaf();
+                        obj[7] = outer1_6.isSelfMute();
+                        let tmp39 = outer1_8;
+                        obj[8] = outer1_8.getQuality();
+                        let tmp40 = outer1_7;
+                        let tmp41 = outer1_15;
+                        obj[9] = outer1_7.can(outer1_15.CREATE_INSTANT_INVITE, channel);
+                        obj[10] = tmp31.channelSelectorResults;
+                        let setDataResult = obj3.setData(obj);
+                      }
                     }
-                    num = num + 1;
-                    tmp9 = tmp11;
-                    if (num >= keys.length) {
-                      break;
-                    }
                   }
                 }
-                if (self.overlayState !== outer2_22.SHOWING) {
-                  const result = self.refreshChannelSelectorResults("");
-                }
-                self.currentVoiceChannelId = currentVoiceChannelId;
-                if (null != outer2_1(outer2_2[27])) {
-                  let obj = outer2_1(outer2_2[27]);
-                  obj = { users: items, channelName: MobileVoiceOverlayManager(outer2_2[31]).computeChannelName(channel, outer2_16, outer2_14) };
-                  const guild = outer2_10.getGuild(currentGuildId);
-                  let name;
-                  if (null != guild) {
-                    name = guild.name;
-                  }
-                  let str2 = "";
-                  if (null != name) {
-                    str2 = name;
-                  }
-                  obj.guildName = str2;
-                  obj.guildId = currentGuildId;
-                  obj.channelId = currentVoiceChannelId;
-                  obj.extraUsers = keys.length - items.length;
-                  obj.deafened = outer2_11.isSelfDeaf();
-                  obj.muted = outer2_11.isSelfMute();
-                  obj.connectionQuality = outer2_13.getQuality();
-                  obj.canGenerateInvite = outer2_12.can(outer2_20.CREATE_INSTANT_INVITE, channel);
-                  obj.channelSelectorResults = self.channelSelectorResults;
-                  obj.setData(obj);
-                  const obj3 = MobileVoiceOverlayManager(outer2_2[31]);
-                }
+                continue;
               }
             }
           }
         }
+        obj4 = obj;
+        const tmp43 = obj;
+      }
+    };
+    obj.getVoiceConnectedGuildAndChannel = function getVoiceConnectedGuildAndChannel() {
+      let obj = guildId;
+      guildId = guildId.getGuildId();
+      if (guildId == null) {
+        guildId = null;
+      }
+      obj = { currentGuildId: guildId, currentVoiceChannelId: null };
+      let channelId = obj.getChannelId();
+      if (channelId == null) {
+        channelId = null;
+      }
+      obj[1] = channelId;
+      return obj;
+    };
+    obj.refreshChannelSelectorResults = function refreshChannelSelectorResults(query) {
+      let currentGuildId = null;
+      if (0 === query.length) {
+        currentGuildId = obj.getVoiceConnectedGuildAndChannel().currentGuildId;
+      }
+      obj = outer1_1(outer1_2[28]);
+      obj = {
+        query,
+        guildId: currentGuildId,
+        limit: 15,
+        fuzzy: true,
+        filter(id) {
+          return id.id !== lib.currentVoiceChannelId && !id.isGuildStageVoice();
+        },
+        type: outer1_4,
+        allowEmptyQueries: true
       };
-      this.getVoiceConnectedGuildAndChannel = () => {
-        const obj = {};
-        const guildId = outer2_13.getGuildId();
-        let tmp2 = null;
-        if (null != guildId) {
-          tmp2 = guildId;
+      obj.channelSelectorResults = obj.queryChannels(obj).map((record) => {
+        record = record.record;
+        const obj = { channelId: record.id, guildId: record.guild_id, channelName: null, guildName: null, categoryName: null };
+        obj[2] = lib(table[27]).computeChannelName(record, mergeGuildAvatar, upsertRelationship);
+        guild = guild.getGuild(record.guild_id);
+        let str;
+        if (guild != null) {
+          str = guild.name;
         }
-        obj.currentGuildId = tmp2;
-        const channelId = outer2_13.getChannelId();
-        let tmp4 = null;
-        if (null != channelId) {
-          tmp4 = channelId;
+        if (str == null) {
+          str = "";
         }
-        obj.currentVoiceChannelId = tmp4;
+        obj[3] = str;
+        channel = channel.getChannel(record.parent_id);
+        let str2 = "";
+        if (null != channel) {
+          str2 = lib(table[27]).computeChannelName(channel, mergeGuildAvatar, upsertRelationship);
+          const tmpResult = lib(table[27]);
+        }
+        obj[4] = str2;
         return obj;
-      };
-      this.refreshChannelSelectorResults = (query) => {
-        let currentGuildId = null;
-        if (0 === query.length) {
-          currentGuildId = self.getVoiceConnectedGuildAndChannel().currentGuildId;
-        }
-        let obj = outer2_1(outer2_2[32]);
-        obj = {
-          query,
-          guildId: currentGuildId,
-          limit: 15,
-          fuzzy: true,
-          filter(id) {
-            return id.id !== outer1_0.currentVoiceChannelId && !id.isGuildStageVoice();
-          },
-          type: outer2_9,
-          allowEmptyQueries: true
-        };
-        self.channelSelectorResults = obj.queryChannels(obj).map((record) => {
-          record = record.record;
-          const obj = { channelId: record.id, guildId: record.guild_id, channelName: MobileVoiceOverlayManager(outer3_2[31]).computeChannelName(record, outer3_16, outer3_14) };
-          const guild = outer3_10.getGuild(record.guild_id);
-          let name;
-          if (null != guild) {
-            name = guild.name;
-          }
-          let str = "";
-          let str2 = "";
-          if (null != name) {
-            str2 = name;
-          }
-          obj.guildName = str2;
-          const channel = outer3_8.getChannel(record.parent_id);
-          if (null != channel) {
-            str = MobileVoiceOverlayManager(outer3_2[31]).computeChannelName(channel, outer3_16, outer3_14);
-            const obj3 = MobileVoiceOverlayManager(outer3_2[31]);
-          }
-          obj.categoryName = str;
-          return obj;
-        });
-      };
-      this.showOverlay = () => {
-        const voiceConnectedGuildAndChannel = self.getVoiceConnectedGuildAndChannel();
-        const channel = outer2_8.getChannel(voiceConnectedGuildAndChannel.currentVoiceChannelId);
-        const rTCConnectionId = outer2_13.getRTCConnectionId();
-        let obj = outer2_1(outer2_2[33]);
-        obj = { type: "voice", rtc_connection_id: rTCConnectionId };
-        const merged = Object.assign(MobileVoiceOverlayManager(outer2_2[34]).collectChannelAnalyticsMetadata(channel));
-        const obj3 = MobileVoiceOverlayManager(outer2_2[34]);
-        const merged1 = Object.assign(MobileVoiceOverlayManager(outer2_2[34]).collectGuildAnalyticsMetadata(voiceConnectedGuildAndChannel.currentGuildId));
-        obj.track(outer2_19.MOBILE_OVERLAY_OPENED, obj);
-        if (null != outer2_1(outer2_2[27])) {
-          outer2_1(outer2_2[27]).showOverlay(outer2_23);
-          const obj5 = outer2_1(outer2_2[27]);
-        }
-        self.updateOverlayUI();
-        self.overlayState = outer2_22.SHOWING;
-      };
-      this.hideOverlay = () => {
-        const rTCConnectionId = outer2_13.getRTCConnectionId();
-        outer2_1(outer2_2[33]).track(outer2_19.MOBILE_OVERLAY_CLOSED, { type: "voice", rtc_connection_id: rTCConnectionId });
-        const obj = outer2_1(outer2_2[33]);
-        outer2_1(outer2_2[33]).track(outer2_19.MOBILE_OVERLAY_CLOSED, {});
-        if (null != outer2_1(outer2_2[27])) {
-          outer2_1(outer2_2[27]).hideOverlay();
-          const obj3 = outer2_1(outer2_2[27]);
-        }
-        self.overlayState = outer2_22.NOT_SHOWING;
-      };
-      this.isOverlayShowing = () => {
-        let tmp = self.overlayState === outer2_22.SHOWING;
-        if (!tmp) {
-          tmp = self.overlayState === outer2_22.WAITING_FOR_SERVICE;
-        }
-        return tmp;
-      };
-      this.getOverlayUser = (userId) => {
-        const user = outer2_16.getUser(userId);
-        if (null == user) {
-          return null;
-        } else {
-          const obj = { userId, avatar: user.avatar, speaking: outer2_15.isSpeaking(userId), discriminator: user.discriminator };
-          return obj;
-        }
-      };
-      this.handleLayoutTrashed = () => {
-        self.trashedVoiceChannelId = self.currentVoiceChannelId;
-        const result = self.handleOverlayUIStoreUpdate();
-      };
-      this.handleChannelQueryUpdate = (arg0) => {
-        const result = self.refreshChannelSelectorResults(arg0);
-        const result1 = self.handleOverlayUIStoreUpdate();
-      };
-      return;
-    }
-  }
-  let obj = {
-    key: "initialize",
-    value() {
-      const self = this;
-      const obj = MobileVoiceOverlayManager(outer1_2[29]);
-      if (!tmp) {
-        const prototype = outer1_25.prototype;
-        const tmp8 = new outer1_25(self);
-        const result = outer1_1(outer1_2[35]).registerCallableModule("MobileVoiceOverlayManager", tmp8);
-        self.isBatchedBridgeInitialized = true;
-        const obj2 = outer1_1(outer1_2[35]);
+      });
+    };
+    obj.showOverlay = function showOverlay(outer1_18) {
+      const voiceConnectedGuildAndChannel = obj.getVoiceConnectedGuildAndChannel();
+      const channel = outer1_3.getChannel(voiceConnectedGuildAndChannel.currentVoiceChannelId);
+      const rTCConnectionId = outer1_8.getRTCConnectionId();
+      obj = { type: "voice", rtc_connection_id: rTCConnectionId };
+      const obj2 = outer1_1(outer1_2[29]);
+      const merged = Object.assign(obj(outer1_2[30]).collectChannelAnalyticsMetadata(channel));
+      const obj4 = obj(outer1_2[30]);
+      const merged1 = Object.assign(obj(outer1_2[30]).collectGuildAnalyticsMetadata(voiceConnectedGuildAndChannel.currentGuildId));
+      obj2.track(outer1_14.MOBILE_OVERLAY_OPENED, obj);
+      const obj6 = outer1_1(outer1_2[24]);
+      if (obj6 != null) {
+        obj6.showOverlay(outer1_18);
       }
-      if (outer1_18.getEnabled()) {
-        self.handleOverlayEnable();
+      obj.updateOverlayUI();
+      obj.overlayState = outer1_17.SHOWING;
+    };
+    obj.hideOverlay = function hideOverlay() {
+      const rTCConnectionId = outer1_8.getRTCConnectionId();
+      const obj = outer1_1(outer1_2[29]);
+      obj.track(outer1_14.MOBILE_OVERLAY_CLOSED, { type: "voice", rtc_connection_id: rTCConnectionId });
+      outer1_1(outer1_2[29]).track(outer1_14.MOBILE_OVERLAY_CLOSED, {});
+      const obj3 = outer1_1(outer1_2[24]);
+      if (obj3 != null) {
+        obj3.hideOverlay();
       }
-      outer1_18.addChangeListener(self.handleMobileVoiceOverlayStoreUpdate);
-    }
-  };
-  let items = [obj, ];
-  obj = {
-    key: "terminate",
-    value() {
-      outer1_18.removeChangeListener(this.handleMobileVoiceOverlayStoreUpdate);
-      const result = this.unsubscribeFromVoiceStateStoreUpdates();
-      const result1 = this.unsubscribeFromNativeEvents();
-    }
-  };
-  items[1] = obj;
-  return callback2(MobileVoiceOverlayManager, items);
-})();
-tmp15 = new tmp15();
-let closure_24 = tmp15;
-let closure_25 = (() => {
-  class NativeCallableInterface {
-    constructor(arg0) {
-      tmp = outer1_6(this, NativeCallableInterface);
-      this.manager = arg0;
-      return;
-    }
+      obj.overlayState = outer1_17.NOT_SHOWING;
+    };
+    obj.isOverlayShowing = function isOverlayShowing() {
+      return obj.overlayState === outer1_17.SHOWING || obj.overlayState === tmp.WAITING_FOR_SERVICE;
+    };
+    obj.getOverlayUser = function getOverlayUser(id) {
+      user = user.getUser(id);
+      if (null == user) {
+        return null;
+      } else {
+        const obj = { userId: null, avatar: null, speaking: null, discriminator: null };
+        obj[0] = id;
+        obj[1] = user.avatar;
+        obj[2] = speaking.isSpeaking(id);
+        obj[3] = user.discriminator;
+        return obj;
+      }
+    };
+    obj.handleLayoutTrashed = function handleLayoutTrashed() {
+      obj.trashedVoiceChannelId = obj.currentVoiceChannelId;
+      const result = obj.handleOverlayUIStoreUpdate();
+    };
+    obj.handleChannelQueryUpdate = function handleChannelQueryUpdate(handleChannelQueryUpdate) {
+      const result = obj.refreshChannelSelectorResults(handleChannelQueryUpdate);
+      const result1 = obj.handleOverlayUIStoreUpdate();
+    };
+    return obj;
   }
-  let obj = {
-    key: "onLayoutTrashed",
-    value() {
-      const manager = this.manager;
-      manager.handleLayoutTrashed();
+}
+const prototype = MobileVoiceOverlayManager.prototype;
+prototype["initialize"] = function initialize() {
+  const self = this;
+  let obj = require(4053) /* isFabric */;
+  if (!tmp2) {
+    if (typeof NativeCallableInterface !== "find") {
+      HermesBuiltin.throwTypeError();
     }
-  };
-  const items = [obj, ];
-  obj = {
-    key: "onChannelQueryUpdate",
-    value(arg0) {
-      const manager = this.manager;
-      const result = manager.handleChannelQueryUpdate(arg0);
-    }
-  };
-  items[1] = obj;
-  return callback2(NativeCallableInterface, items);
-})();
-tmp17 = new tmp17();
-let result = require("_inherits").fileFinishedImporting("modules/voice_overlay/native/MobileVoiceOverlayLifecycleManager.android.tsx");
+    obj = Object.create(NativeCallableInterface.prototype);
+    obj.manager = self;
+    const result = importDefault(39).registerCallableModule("MobileVoiceOverlayManager", obj);
+    self.isBatchedBridgeInitialized = true;
+    const obj2 = importDefault(39);
+    const tmp4 = NativeCallableInterface;
+  }
+  if (getUserAgnosticState.getEnabled()) {
+    self.handleOverlayEnable();
+  }
+  getUserAgnosticState.addChangeListener(self.handleMobileVoiceOverlayStoreUpdate);
+};
+prototype["terminate"] = function terminate() {
+  getUserAgnosticState.removeChangeListener(this.handleMobileVoiceOverlayStoreUpdate);
+  const result = this.unsubscribeFromVoiceStateStoreUpdates();
+  const result1 = this.unsubscribeFromNativeEvents();
+};
+let closure_19 = new MobileVoiceOverlayManager();
+class NativeCallableInterface {
+  constructor(arg0) {
+    obj = Object.create(new.target.prototype);
+    obj.manager = global;
+    return obj;
+  }
+}
+const prototype2 = NativeCallableInterface.prototype;
+prototype2["onLayoutTrashed"] = function onLayoutTrashed(handleLayoutTrashed) {
+  const manager = this.manager;
+  manager.handleLayoutTrashed();
+};
+prototype2["onChannelQueryUpdate"] = function onChannelQueryUpdate(handleChannelQueryUpdate) {
+  const manager = this.manager;
+  const result = manager.handleChannelQueryUpdate(handleChannelQueryUpdate);
+};
+class MobileVoiceOverlayLifecycleManager extends tmp15 {
+}
+const prototype3 = MobileVoiceOverlayLifecycleManager.prototype;
+prototype3["_initialize"] = function _initialize() {
+  closure_19.initialize();
+};
+prototype3["_terminate"] = function _terminate() {
+  closure_19.terminate();
+};
+const mobileVoiceOverlayLifecycleManager = new MobileVoiceOverlayLifecycleManager();
+let result = require("createGuildRecordFromRust").fileFinishedImporting("modules/voice_overlay/native/MobileVoiceOverlayLifecycleManager.android.tsx");
 
-export default tmp17;
+export default mobileVoiceOverlayLifecycleManager;

@@ -1,51 +1,51 @@
-// Module ID: 12152
-// Function ID: 95058
+// Module ID: 12176
+// Function ID: 12177
 // Name: createNitroSuggestedSku
-// Dependencies: [57, 4204, 8653, 8654, 8655, 653, 1852, 1212, 5648, 3811, 2]
+// Dependencies: [32, 4228, 8677, 8678, 8679, 676, 1876, 1236, 5666, 3835, 2]
 // Exports: buildReorderedNitroFirstWishlistItems, buildReorderedWishlistData, createNitroSuggestedSku, isEligibleWishlistItemOnMobile
 
-// Module 12152 (createNitroSuggestedSku)
+// Module 12176 (createNitroSuggestedSku)
 import _slicedToArray from "_slicedToArray";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import { isCollectiblesWishlistItemRecord as closure_5 } from "_createForOfIteratorHelperLoose";
-import { isPremiumWishlistItemRecord as closure_6 } from "_isNativeReflectConstruct";
-import { isSKUWishlistItemRecord } from "_isNativeReflectConstruct";
+import createFromServer from "createFromServer";
+import { isCollectiblesWishlistItemRecord as closure_5 } from "createCollectiblesItemFromServerResponse";
+import { isPremiumWishlistItemRecord as closure_6 } from "fromServer";
+import { isSKUWishlistItemRecord } from "fromServer";
 import { SKUProductLines } from "ME";
 import { PremiumSubscriptionSKUs } from "GuildFeatures";
 
 const require = arg1;
-const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/wishlists/WishlistUtils.tsx");
+const result = require("createCollectiblesItemFromServerResponse").fileFinishedImporting("modules/wishlists/WishlistUtils.tsx");
 
 export const createNitroSuggestedSku = function createNitroSuggestedSku() {
-  const obj = { id: PremiumSubscriptionSKUs.TIER_2, productLine: SKUProductLines.PREMIUM };
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj.name = intl.string(require(1212) /* getSystemLocale */.t.lG6a5x);
-  obj.features = new Set();
+  const obj = { id: PremiumSubscriptionSKUs.TIER_2, productLine: SKUProductLines.PREMIUM, name: null, features: null, genres: null, manifests: null, availableRegions: null, locales: null, bundledSkuIds: null, selectedOptions: null, eligibleOffers: null, prices: null };
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj[2] = intl.string(require(1236) /* getSystemLocale */.t.lG6a5x);
+  obj[3] = new Set();
   const set = new Set();
-  obj.genres = new Set();
-  obj.manifests = [];
-  obj.availableRegions = [];
-  obj.locales = [];
-  obj.bundledSkuIds = [];
-  obj.selectedOptions = [];
-  obj.eligibleOffers = [];
-  obj.prices = {};
+  obj[4] = new Set();
+  obj[5] = [];
+  obj[6] = [];
+  obj[7] = [];
+  obj[8] = [];
+  obj[9] = [];
+  obj[10] = [];
+  obj[11] = {};
   const set1 = new Set();
-  return new _isNativeReflectConstruct(obj);
+  return new createFromServer(obj);
 };
 export const isEligibleWishlistItemOnMobile = function isEligibleWishlistItemOnMobile(sku, isWishlistOwner) {
   isWishlistOwner = isWishlistOwner.isWishlistOwner;
   if (isSKUWishlistItemRecord(sku)) {
     if (sku.sku.productLine === SKUProductLines.SOCIAL_LAYER_GAME_ITEM) {
-      let tmp5 = !tmp4;
-      if (!!isWishlistOwner.isSocialLayerStorefrontMobilePurchasingEnabled) {
+      let prop = isWishlistOwner.isSocialLayerStorefrontMobilePurchasingEnabled;
+      if (prop) {
         if (!isWishlistOwner) {
-          isWishlistOwner = require(5648) /* transformStorefrontSKUPricesServer */.isSlayerSkuAvailableOnThisPlatform(sku.sku);
-          const obj = require(5648) /* transformStorefrontSKUPricesServer */;
+          isWishlistOwner = require(5666) /* useSKUPrice */.isSlayerSkuAvailableOnThisPlatform(sku.sku);
+          const obj = require(5666) /* useSKUPrice */;
         }
-        tmp5 = isWishlistOwner;
+        prop = isWishlistOwner;
       }
-      let tmp2 = tmp5;
+      let tmp2 = prop;
     }
     return tmp2;
   }
@@ -57,48 +57,43 @@ export const isEligibleWishlistItemOnMobile = function isEligibleWishlistItemOnM
 export const buildReorderedWishlistData = function buildReorderedWishlistData(set) {
   if (arg2 < arg3) {
     let skuId;
-    if (null != arg1[arg3]) {
-      skuId = tmp8.skuId;
+    if (arg1[arg3] != null) {
+      skuId = tmp6.skuId;
     }
-    let tmp11 = null;
-    if (null != skuId) {
-      tmp11 = skuId;
+    if (skuId == null) {
+      skuId = null;
     }
     let skuId1;
-    if (null != arg1[arg3 + 1]) {
-      skuId1 = tmp12.skuId;
+    if (arg1[arg3 + 1] != null) {
+      skuId1 = tmp9.skuId;
     }
-    let tmp14 = null;
-    if (null != skuId1) {
-      tmp14 = skuId1;
+    if (skuId1 == null) {
+      skuId1 = null;
     }
-    let tmp7 = tmp14;
-    let tmp4 = tmp11;
+    let skuId3 = skuId1;
+    let skuId2 = skuId;
   } else {
-    let skuId2;
-    if (null != arg1[arg3 - 1]) {
+    skuId2 = undefined;
+    if (arg1[arg3 - 1] != null) {
       skuId2 = tmp.skuId;
     }
-    tmp4 = null;
-    if (null != skuId2) {
-      tmp4 = skuId2;
+    if (skuId2 == null) {
+      skuId2 = null;
     }
-    let skuId3;
-    if (null != arg1[arg3]) {
-      skuId3 = tmp5.skuId;
+    skuId3 = undefined;
+    if (arg1[arg3] != null) {
+      skuId3 = tmp4.skuId;
     }
-    tmp7 = null;
-    if (null != skuId3) {
-      tmp7 = skuId3;
+    if (skuId3 == null) {
+      skuId3 = null;
     }
   }
   const items = [...arg1];
   items.splice(arg3, 0, callback(items.splice(arg2, 1), 1)[0]);
-  const obj = { newWishlistData: set.set("items", items), previousSkuId: tmp4, nextSkuId: tmp7 };
-  return obj;
+  return { newWishlistData: set.set("items", items), previousSkuId: skuId2, nextSkuId: skuId3 };
 };
 export const buildReorderedNitroFirstWishlistItems = function buildReorderedNitroFirstWishlistItems(arr) {
-  const findIndexResult = arr.findIndex((skuId) => outer1_1(outer1_2[9]).isPremiumSku(skuId.skuId));
+  const findIndexResult = arr.findIndex((skuId) => callback(table[9]).isPremiumSku(skuId.skuId));
   if (findIndexResult <= 0) {
     return arr;
   } else {

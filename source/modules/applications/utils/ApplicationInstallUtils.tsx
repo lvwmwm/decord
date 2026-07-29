@@ -1,15 +1,17 @@
-// Module ID: 8006
-// Function ID: 63550
+// Module ID: 8030
+// Function ID: 8031
 // Name: canInstallApplication
-// Dependencies: [5679, 4601, 8004, 2]
-// Exports: isAppUserInstallable, shouldInstallApplicationOnDemand
+// Dependencies: [5697, 4623, 8028, 2]
+// Exports: canInstallApplication, isAppUserInstallable, shouldInstallApplicationOnDemand
 
-// Module 8006 (canInstallApplication)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 8030 (canInstallApplication)
+import getIndexKey from "getIndexKey";
 import { BuiltInSectionId } from "TRUE_OPTION_NAME";
 
 const require = arg1;
-function canInstallApplication(application) {
+let result = require("ApplicationIntegrationType").fileFinishedImporting("modules/applications/utils/ApplicationInstallUtils.tsx");
+
+export const canInstallApplication = function canInstallApplication(application) {
   const integrationTypesConfig = application.integrationTypesConfig;
   let tmp = null != application.customInstallUrl || null != application.installParams;
   if (!tmp) {
@@ -19,13 +21,13 @@ function canInstallApplication(application) {
       const values = Object.values(integrationTypesConfig);
       someResult = values.some((oauth2_install_params) => {
         let prop;
-        if (null != oauth2_install_params) {
+        if (oauth2_install_params != null) {
           prop = oauth2_install_params.oauth2_install_params;
         }
         let tmp2 = null != prop;
         if (!tmp2) {
           let oauth2InstallParams;
-          if (null != oauth2_install_params) {
+          if (oauth2_install_params != null) {
             oauth2InstallParams = oauth2_install_params.oauth2InstallParams;
           }
           tmp2 = null != oauth2InstallParams;
@@ -36,18 +38,38 @@ function canInstallApplication(application) {
     tmp = someResult;
   }
   return tmp;
-}
-const result = require("ApplicationIntegrationType").fileFinishedImporting("modules/applications/utils/ApplicationInstallUtils.tsx");
-
-export { canInstallApplication };
-export const isAppUserInstallable = function isAppUserInstallable(customInstallUrl) {
-  const integrationTypesConfig = customInstallUrl.integrationTypesConfig;
-  let tmp = canInstallApplication({ customInstallUrl: customInstallUrl.customInstallUrl, installParams: customInstallUrl.installParams, integrationTypesConfig });
+};
+export const isAppUserInstallable = function isAppUserInstallable(integrationTypesConfig) {
+  integrationTypesConfig = integrationTypesConfig.integrationTypesConfig;
+  let tmp = null != integrationTypesConfig.customInstallUrl || null != integrationTypesConfig.installParams;
+  if (!tmp) {
+    let someResult = null != integrationTypesConfig;
+    if (someResult) {
+      const _Object = Object;
+      const values = Object.values(integrationTypesConfig);
+      someResult = values.some((oauth2_install_params) => {
+        let prop;
+        if (oauth2_install_params != null) {
+          prop = oauth2_install_params.oauth2_install_params;
+        }
+        let tmp2 = null != prop;
+        if (!tmp2) {
+          let oauth2InstallParams;
+          if (oauth2_install_params != null) {
+            oauth2InstallParams = oauth2_install_params.oauth2InstallParams;
+          }
+          tmp2 = null != oauth2InstallParams;
+        }
+        return tmp2;
+      });
+    }
+    tmp = someResult;
+  }
   if (tmp) {
     tmp = null != integrationTypesConfig;
   }
   if (tmp) {
-    tmp = require(8004) /* ApplicationIntegrationType */.ApplicationIntegrationType.USER_INSTALL in integrationTypesConfig;
+    tmp = require(8028) /* ApplicationIntegrationType */.ApplicationIntegrationType.USER_INSTALL in integrationTypesConfig;
   }
   return tmp;
 };
@@ -58,25 +80,28 @@ export const shouldInstallApplicationOnDemand = function shouldInstallApplicatio
   ({ applicationId, channel, commandIntegrationTypes } = arg0);
   let tmp = null != commandIntegrationTypes;
   if (tmp) {
-    tmp = !commandIntegrationTypes.includes(require(8004) /* ApplicationIntegrationType */.ApplicationIntegrationType.USER_INSTALL);
+    tmp = !commandIntegrationTypes.includes(require(8028) /* ApplicationIntegrationType */.ApplicationIntegrationType.USER_INSTALL);
   }
   let tmp4 = !tmp;
   if (!tmp) {
-    let tmp7 = !tmp6;
-    if (applicationId !== BuiltInSectionId.BUILT_IN) {
-      let tmp9 = !_isNativeReflectConstruct.hasUserStateApplication(applicationId);
-      if (tmp9) {
-        let tmp10 = null == channel;
-        if (!tmp10) {
-          const obj = { applicationId };
-          ({ id: obj.channelId, guild_id: obj.guildId } = channel);
-          tmp10 = !_isNativeReflectConstruct.hasContextStateApplication(obj);
+    let tmp6 = applicationId !== BuiltInSectionId.BUILT_IN;
+    if (tmp6) {
+      let obj = getIndexKey;
+      const result = getIndexKey.hasUserStateApplication(applicationId);
+      let tmp8 = !result;
+      if (!result) {
+        let tmp9 = null == channel;
+        if (!tmp9) {
+          obj = { applicationId: null, channelId: null, guildId: null };
+          obj[0] = applicationId;
+          ({ id: obj2[1], guild_id: obj2[2] } = channel);
+          tmp9 = !obj.hasContextStateApplication(obj);
         }
-        tmp9 = tmp10;
+        tmp8 = tmp9;
       }
-      tmp7 = tmp9;
+      tmp6 = tmp8;
     }
-    tmp4 = tmp7;
+    tmp4 = tmp6;
   }
   return tmp4;
 };

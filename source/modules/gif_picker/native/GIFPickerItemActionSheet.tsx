@@ -1,46 +1,50 @@
-// Module ID: 9590
-// Function ID: 74644
+// Module ID: 9612
+// Function ID: 9613
 // Name: GIFPickerItemActionSheet
-// Dependencies: [31, 27, 33, 4165, 689, 477, 9580, 9573, 1450, 4133, 3866, 1212, 9591, 4578, 5221, 5119, 2]
+// Dependencies: [19, 17, 21, 4189, 712, 500, 9601, 9597, 1474, 4157, 3890, 1236, 9613, 4600, 5243, 5141, 2]
 // Exports: default
 
-// Module 9590 (GIFPickerItemActionSheet)
-import result from "result";
+// Module 9612 (GIFPickerItemActionSheet)
+import noop from "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 import set from "set";
 import set from "jsxProd";
 
-let closure_5;
+let c5;
 let closure_6;
 const require = arg1;
+({ jsx: c5, jsxs: closure_6 } = jsxProd);
+createCacheKey = { paddingHorizontal: require("Themes").space.PX_16, paddingBottom: null };
 let num = 0;
-({ jsx: closure_5, jsxs: closure_6 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16 };
 if (set.isAndroid()) {
-  num = require("_createForOfIteratorHelperLoose").space.PX_16;
+  num = require("Themes").space.PX_16;
 }
-_createForOfIteratorHelperLoose.paddingBottom = num;
-_createForOfIteratorHelperLoose.contentWrapper = _createForOfIteratorHelperLoose;
-let obj1 = { flexDirection: "column", alignItems: "center", marginTop: require("_createForOfIteratorHelperLoose").space.PX_8 };
-_createForOfIteratorHelperLoose.gifContainer = obj1;
-_createForOfIteratorHelperLoose.gifImage = { borderRadius: require("_createForOfIteratorHelperLoose").radii.xs, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BORDER_SUBTLE };
-set = { flex: 1, flexDirection: "row", alignItems: "stretch", width: "100%", marginTop: require("_createForOfIteratorHelperLoose").space.PX_16 };
-_createForOfIteratorHelperLoose.favoriteButtonContainer = set;
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+createCacheKey = { contentWrapper: createCacheKey, gifContainer: null, gifImage: null, favoriteButtonContainer: null };
+createCacheKey[1] = num;
+createCacheKey[1] = { flexDirection: "column", alignItems: "center", marginTop: require("Themes").space.PX_8 };
+set = { borderRadius: require("Themes").radii.xs, backgroundColor: require("Themes").colors.BORDER_SUBTLE };
+createCacheKey[2] = set;
+let obj1 = { flexDirection: "column", alignItems: "center", marginTop: require("Themes").space.PX_8 };
+createCacheKey[3] = { flex: 1, flexDirection: "row", alignItems: "stretch", width: "100%", marginTop: require("Themes").space.PX_16 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
 const result = set.fileFinishedImporting("modules/gif_picker/native/GIFPickerItemActionSheet.tsx");
 
 export default function GIFPickerItemActionSheet(item) {
   item = item.item;
-  const tmp = _createForOfIteratorHelperLoose();
+  let isFavoriteGIF;
+  let width;
+  let height;
+  let callback;
+  let callback1;
+  const tmp = createCacheKey();
   let obj = item(width[6]);
   let obj1 = item(width[7]);
-  const isFavoriteGIF = obj.useIsFavoriteGIF(obj1.gifUrlKey(item.url));
+  isFavoriteGIF = obj.useIsFavoriteGIF(obj1.gifUrlKey(item.url));
   const size = isFavoriteGIF(width[8])();
   width = size.width;
-  const height = size.height;
+  height = size.height;
   const items = [, , , ];
   ({ width: arr[0], height: arr[1] } = item);
   items[2] = width;
@@ -49,59 +53,56 @@ export default function GIFPickerItemActionSheet(item) {
     const bound = Math.min((width - 2 * isFavoriteGIF(width[4]).space.PX_16) / item.width, 0.5 * height / item.height);
     return { width: item.width * bound, height: item.height * bound };
   }, items);
-  const callback = height.useCallback(() => {
+  callback = height.useCallback(() => {
     isFavoriteGIF(width[9]).hideActionSheet();
   }, []);
   const items1 = [callback, isFavoriteGIF, item];
-  const callback1 = height.useCallback(() => {
+  callback1 = height.useCallback(() => {
     callback();
     let obj = item(width[7]);
     if (isFavoriteGIF) {
       obj.removeFavoriteGIF(item.url);
-      obj = { key: "REMOVED_FROM_FAVORITES" };
-      const intl2 = tmp2(tmp3[11]).intl;
-      obj.content = intl2.string(tmp2(tmp3[11]).t.in1rga);
-      obj.IconComponent = tmp2(tmp3[12]).GifIcon;
-      isFavoriteGIF(tmp3[10]).open(obj);
-      const obj4 = isFavoriteGIF(tmp3[10]);
+      obj = { key: "REMOVED_FROM_FAVORITES", content: null, IconComponent: null };
+      const intl2 = item(width[11]).intl;
+      obj[1] = intl2.string(item(width[11]).t.in1rga);
+      obj[2] = item(width[12]).GifIcon;
+      isFavoriteGIF(width[10]).open(obj);
+      const obj4 = isFavoriteGIF(width[10]);
     } else {
       obj.addFavoriteGIF(item);
-      obj = { key: "ADDED_TO_FAVORITES" };
-      const intl = tmp2(tmp3[11]).intl;
-      obj.content = intl.string(tmp2(tmp3[11]).t.okQonm);
-      obj.IconComponent = tmp2(tmp3[12]).GifIcon;
-      isFavoriteGIF(tmp3[10]).open(obj);
-      const obj2 = isFavoriteGIF(tmp3[10]);
+      obj = { key: "ADDED_TO_FAVORITES", content: null, IconComponent: null };
+      const intl = item(width[11]).intl;
+      obj[1] = intl.string(item(width[11]).t.okQonm);
+      obj[2] = item(width[12]).GifIcon;
+      isFavoriteGIF(width[10]).open(obj);
+      const obj2 = isFavoriteGIF(width[10]);
     }
   }, items1);
   const items2 = [callback1, isFavoriteGIF];
   const callback2 = height.useCallback(() => {
-    const obj = {};
     let str = "primary";
     if (isFavoriteGIF) {
       str = "destructive";
     }
-    obj.variant = str;
-    obj.onPress = callback1;
-    const intl = item(width[11]).intl;
+    const obj = { variant: str, onPress: callback1, text: null, grow: true };
+    const intl = tmp2(tmp3[11]).intl;
     const string = intl.string;
-    const t = item(width[11]).t;
+    const t = tmp2(tmp3[11]).t;
     if (isFavoriteGIF) {
       let stringResult = string(t["5/NS74"]);
     } else {
       stringResult = string(t.nIH0v8);
     }
-    obj.text = stringResult;
-    obj.grow = true;
+    obj[2] = stringResult;
     return callback1(item(width[13]).Button, obj);
   }, items2);
-  obj = { startExpanded: true };
-  obj = { style: tmp.contentWrapper };
-  obj1 = { style: tmp.gifContainer };
+  obj = { startExpanded: true, children: null };
+  obj = { style: tmp.contentWrapper, children: null };
+  obj1 = { style: tmp.gifContainer, children: null };
   const items3 = [tmp.gifImage, memo];
   const items4 = [callback1(isFavoriteGIF(width[15]), { style: items3, source: { uri: item.src } }), callback1(callback, { style: tmp.favoriteButtonContainer, children: callback2() })];
-  obj1.children = items4;
-  obj.children = callback(callback, obj1);
-  obj.children = callback1(callback, obj);
+  obj1[1] = items4;
+  obj[1] = callback(callback, obj1);
+  obj[1] = callback1(callback, obj);
   return callback1(item(width[14]).BottomSheet, obj);
 };

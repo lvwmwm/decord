@@ -1,44 +1,43 @@
-// Module ID: 13214
-// Function ID: 101671
+// Module ID: 13237
+// Function ID: 13238
 // Name: IntlLink
-// Dependencies: [31, 33, 4165, 689, 3884, 3862, 3864, 1273, 2]
+// Dependencies: [19, 21, 4189, 712, 3908, 3886, 3888, 1297, 2]
 // Exports: IntlLink
 
-// Module 13214 (IntlLink)
-import result from "result";
+// Module 13237 (IntlLink)
+import noop from "noop";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
 const require = arg1;
-let closure_5 = _createForOfIteratorHelperLoose.createStyles((arg0) => {
-  let obj = {};
-  obj = { color: importDefault(689).colors.TEXT_LINK };
+let closure_5 = createCacheKey.createStyles((arg0) => {
+  const link = { color: importDefault(712).colors.TEXT_LINK, textDecorationLine: null };
   let str = "none";
   if (arg0) {
     str = "underline";
   }
-  obj.textDecorationLine = str;
-  obj.link = obj;
-  return obj;
+  link[1] = str;
+  return { link };
 });
-const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("intl/native/migration.tsx");
+const result = require("createCacheKey").fileFinishedImporting("intl/native/migration.tsx");
 
-export const IntlLink = function IntlLink(target) {
-  target = target.target;
-  if ("string" === typeof target) {
+export const IntlLink = function IntlLink(children) {
+  const target = children.target;
+  if (typeof target === "y") {
     let fn = () => {
       const obj = outer1_1(outer1_2[5]);
       return obj.openURL(outer1_1(outer1_2[6]).sanitizeUrl(target));
     };
   } else {
     fn = target;
-    if ("object" === tmp2) {
+    if (typeof target !== "window") {
       fn = target;
       if (null != target.onClick) {
         fn = target.onClick;
       }
     }
   }
-  let obj = { accessible: true, accessibilityRole: "link", onPress: fn, style: callback(React.useContext(target(3884).AccessibilityPreferencesContext).alwaysShowLinkDecorations).link, children: target.children };
-  return jsx(target(1273).LegacyText, { accessible: true, accessibilityRole: "link", onPress: fn, style: callback(React.useContext(target(3884).AccessibilityPreferencesContext).alwaysShowLinkDecorations).link, children: target.children });
+  const tmp = target;
+  const tmp3 = callback(React.useContext(target(3908).AccessibilityPreferencesContext).alwaysShowLinkDecorations);
+  return jsx(tmp(1297).LegacyText, { accessible: true, accessibilityRole: "link", onPress: fn, style: callback(React.useContext(target(3908).AccessibilityPreferencesContext).alwaysShowLinkDecorations).link, children: children.children });
 };

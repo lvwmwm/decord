@@ -1,18 +1,18 @@
-// Module ID: 7829
-// Function ID: 61959
+// Module ID: 7852
+// Function ID: 7853
 // Name: createGiftIntentEmbed
-// Dependencies: [7830, 1850, 1852, 4165, 689, 1212, 7834, 4004, 7706, 4102, 7835, 7836, 2]
+// Dependencies: [7853, 1874, 1876, 4189, 712, 1236, 7857, 4028, 7729, 4126, 7858, 7859, 2]
 // Exports: createGiftIntentEmbed
 
-// Module 7829 (createGiftIntentEmbed)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_4 from "_isNativeReflectConstruct";
+// Module 7852 (createGiftIntentEmbed)
+import getCurrentTime from "getCurrentTime";
+import mergeGuildAvatar from "mergeGuildAvatar";
 import { GiftIntentType } from "GuildFeatures";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
 const require = arg1;
-_createForOfIteratorHelperLoose = { headerTextColor: require("_createForOfIteratorHelperLoose").colors.TEXT_STRONG, subHeaderTextColor: require("_createForOfIteratorHelperLoose").colors.TEXT_SUBTLE, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWEST, borderColor: require("_createForOfIteratorHelperLoose").colors.BORDER_MUTED };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createNativeStyleProperties(_createForOfIteratorHelperLoose);
+createCacheKey = { headerTextColor: require("Themes").colors.TEXT_STRONG, subHeaderTextColor: require("Themes").colors.TEXT_SUBTLE, backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOWEST, borderColor: require("Themes").colors.BORDER_MUTED };
+createCacheKey = createCacheKey.createNativeStyleProperties(createCacheKey);
 const result = require("GuildFeatures").fileFinishedImporting("modules/messages/native/renderer/row_data/embeds/GiftIntentEmbed.tsx");
 
 export const createGiftIntentEmbed = function createGiftIntentEmbed(message, theme) {
@@ -23,34 +23,35 @@ export const createGiftIntentEmbed = function createGiftIntentEmbed(message, the
     return null;
   } else {
     ({ giftIntentType, recipientUserId } = giftingPrompt);
-    const user = authStore.getUser(recipientUserId);
+    user = user.getUser(recipientUserId);
     if (null == user) {
       return null;
     } else {
-      const name = importDefault(4004).getName(user);
+      const name = importDefault(4028).getName(user);
       if (GiftIntentType.FRIEND_ANNIVERSARY === giftIntentType) {
-        let obj = {};
-        const intl = require(1212) /* getSystemLocale */.intl;
-        obj.headerText = intl.string(require(1212) /* getSystemLocale */.t.CeQIwZ);
-        obj = {};
-        const intl2 = require(1212) /* getSystemLocale */.intl;
-        obj = { numberOfYears: tmp17 };
-        obj.text = intl2.formatToPlainString(require(1212) /* getSystemLocale */.t.PpG27s, obj);
+        let obj = { headerText: null, subHeaderParts: null };
+        const intl = require(1236) /* getSystemLocale */.intl;
+        obj[0] = intl.string(require(1236) /* getSystemLocale */.t.CeQIwZ);
+        obj = { text: null };
+        const intl2 = require(1236) /* getSystemLocale */.intl;
+        obj = { numberOfYears: null };
+        obj[0] = tmp12;
+        obj[0] = intl2.formatToPlainString(require(1236) /* getSystemLocale */.t.PpG27s, obj);
         const items = [obj];
-        obj.subHeaderParts = items;
-        let tmp2 = obj;
+        obj[1] = items;
+        let tmp = obj;
       } else {
-        tmp2 = null;
-        if (GiftIntentType.UNSPECIFIED !== giftIntentType) {
-          require(7834) /* _sendGiftMessage */.unhandledGiftIntent(giftIntentType);
-          tmp2 = null;
-          const obj10 = require(7834) /* _sendGiftMessage */;
+        tmp = null;
+        if (tmp13.UNSPECIFIED !== giftIntentType) {
+          require(7857) /* _sendGiftMessage */.unhandledGiftIntent(giftIntentType);
+          tmp = null;
+          const obj11 = require(7857) /* _sendGiftMessage */;
         }
       }
-      if (null == tmp2) {
+      if (null == tmp) {
         return null;
       } else {
-        const currentUser = authStore.getCurrentUser();
+        const currentUser = obj8.getCurrentUser();
         const _HermesInternal2 = HermesInternal;
         let combined1;
         const combined = "" + user.getAvatarURL(undefined, 40);
@@ -58,24 +59,28 @@ export const createGiftIntentEmbed = function createGiftIntentEmbed(message, the
           const _HermesInternal = HermesInternal;
           combined1 = "" + currentUser.getAvatarURL(undefined, 40);
         }
-        const obj1 = { recipientAvatarUrl: combined, currentUserAvatarUrl: combined1, recipientName: name };
-        ({ headerText: obj4.headerText, subHeaderParts: obj4.subHeaderParts } = tmp2);
-        obj1.recipientUserId = recipientUserId;
-        obj1.giftIntentType = giftIntentType;
-        ({ headerTextColor: obj4.headerTextColor, subHeaderTextColor: obj4.subHeaderTextColor, backgroundColor: obj4.backgroundColor, borderColor: obj4.borderColor } = _createForOfIteratorHelperLoose(theme));
-        const tmp8 = _createForOfIteratorHelperLoose(theme);
-        obj1.subHeaderIconUrl = require(7706) /* frozen */.getAssetUriForEmbed(importDefault(4102));
-        const intl3 = require(1212) /* getSystemLocale */.intl;
-        obj1.primaryCtaLabel = intl3.string(require(1212) /* getSystemLocale */.t.ilhtIa);
-        const obj5 = require(7706) /* frozen */;
-        obj1.primaryCtaIconUrl = require(7706) /* frozen */.getAssetUriForEmbed(importDefault(7835));
-        const obj6 = require(7706) /* frozen */;
-        obj1.secondaryCtaIconUrl = require(7706) /* frozen */.getAssetUriForEmbed(importDefault(7836));
-        const intl4 = require(1212) /* getSystemLocale */.intl;
-        obj1.secondaryCtaAccessibilityLabel = intl4.string(require(1212) /* getSystemLocale */.t.I5gL2H);
+        const obj1 = { recipientAvatarUrl: null, currentUserAvatarUrl: null, recipientName: null, headerText: null, subHeaderParts: null, recipientUserId: null, giftIntentType: null, headerTextColor: null, subHeaderTextColor: null, backgroundColor: null, borderColor: null, subHeaderIconUrl: null, primaryCtaLabel: null, primaryCtaIconUrl: null, secondaryCtaIconUrl: null, secondaryCtaAccessibilityLabel: null };
+        obj1[0] = combined;
+        obj1[1] = combined1;
+        obj1[2] = name;
+        ({ headerText: obj4[3], subHeaderParts: obj4[4] } = tmp);
+        obj1[5] = recipientUserId;
+        obj1[6] = giftIntentType;
+        ({ headerTextColor: obj4[7], subHeaderTextColor: obj4[8], backgroundColor: obj4[9], borderColor: obj4[10] } = createCacheKey(theme));
+        const tmp6 = createCacheKey(theme);
+        obj1[11] = require(7729) /* frozen */.getAssetUriForEmbed(tmp8(4126));
+        const intl3 = require(1236) /* getSystemLocale */.intl;
+        obj1[12] = intl3.string(require(1236) /* getSystemLocale */.t.ilhtIa);
+        const obj5 = require(7729) /* frozen */;
+        obj1[13] = require(7729) /* frozen */.getAssetUriForEmbed(tmp8(7858));
+        const obj6 = require(7729) /* frozen */;
+        obj1[14] = require(7729) /* frozen */.getAssetUriForEmbed(tmp8(7859));
+        const intl4 = require(1236) /* getSystemLocale */.intl;
+        obj1[15] = intl4.string(require(1236) /* getSystemLocale */.t.I5gL2H);
         return obj1;
       }
-      const obj9 = importDefault(4004);
+      const obj10 = importDefault(4028);
     }
+    obj8 = user;
   }
 };

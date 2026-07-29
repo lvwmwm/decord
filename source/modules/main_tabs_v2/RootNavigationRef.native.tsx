@@ -1,10 +1,10 @@
-// Module ID: 4017
-// Function ID: 33186
+// Module ID: 4041
+// Function ID: 4042
 // Name: getRootNavigationRef
-// Dependencies: [1457, 2]
+// Dependencies: [1481, 2]
 // Exports: getRootNavigationRef
 
-// Module 4017 (getRootNavigationRef)
+// Module 4041 (getRootNavigationRef)
 import Link from "Link";
 
 Link = Link.createNavigationContainerRef();

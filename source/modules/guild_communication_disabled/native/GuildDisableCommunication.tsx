@@ -1,35 +1,36 @@
-// Module ID: 11008
-// Function ID: 85441
+// Module ID: 11032
+// Function ID: 11033
 // Name: items
-// Dependencies: [5, 57, 31, 27, 1920, 653, 33, 1212, 4165, 689, 5193, 9826, 4594, 675, 11009, 3866, 4354, 10335, 4161, 7632, 7631, 7621, 4578, 2]
+// Dependencies: [5, 32, 19, 17, 1944, 676, 21, 1236, 4189, 712, 5215, 9848, 4616, 698, 11033, 3890, 4379, 10356, 4185, 7655, 7654, 7644, 4600, 2]
 
-// Module 11008 (items)
+// Module 11032 (items)
 import ME from "ME";
 import _slicedToArray from "_slicedToArray";
-import importAllResult from "result";
-import get_ActivityIndicator from "get ActivityIndicator";
+import importAllResult from "context";
+import get_ActivityIndicator from "registerAsset";
 import getFriendlyDurationString from "getFriendlyDurationString";
 import { AnalyticEvents } from "ME";
-import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import jsxProd from "TextArea";
+import createCacheKey from "createCacheKey";
 
 let DisableCommunicationDuration;
-let closure_11;
+let c9;
 let closure_12;
-let closure_13;
 let closure_6;
-let closure_7;
-let closure_8;
-let closure_9;
+let error;
+let map1;
+let metroImportAll;
+let unpackModuleId;
 const require = arg1;
-({ View: closure_6, ScrollView: closure_7 } = get_ActivityIndicator);
-({ DisableCommunicationDuration, GUILD_COMMUNICATION_DISABLED_RESOURCE_LINK: closure_8, SET_COMMUNICATION_DISABLED_MODAL_NAME: closure_9 } = getFriendlyDurationString);
-({ jsx: closure_11, Fragment: closure_12, jsxs: closure_13 } = jsxProd);
+let c5 = importAllResult;
+({ View: closure_6, ScrollView: error } = get_ActivityIndicator);
+({ DisableCommunicationDuration, GUILD_COMMUNICATION_DISABLED_RESOURCE_LINK: metroImportAll, SET_COMMUNICATION_DISABLED_MODAL_NAME: c9 } = getFriendlyDurationString);
+({ jsx: unpackModuleId, Fragment: closure_12, jsxs: map1 } = jsxProd);
 let obj = {
   value: DisableCommunicationDuration.DURATION_60_SEC,
   getLabel() {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.formatToPlainString(require(1212) /* getSystemLocale */.t.iruf5E, { minutes: 1 });
+    const intl = require(1236) /* getSystemLocale */.intl;
+    return intl.formatToPlainString(require(1236) /* getSystemLocale */.t.iruf5E, { minutes: 1 });
   }
 };
 let items = [
@@ -37,120 +38,200 @@ let items = [
   {
     value: DisableCommunicationDuration.DURATION_5_MIN,
     getLabel() {
-      const intl = require(1212) /* getSystemLocale */.intl;
-      return intl.formatToPlainString(require(1212) /* getSystemLocale */.t.iruf5E, { minutes: 5 });
+      const intl = require(1236) /* getSystemLocale */.intl;
+      return intl.formatToPlainString(require(1236) /* getSystemLocale */.t.iruf5E, { minutes: 5 });
     }
   },
   {
     value: DisableCommunicationDuration.DURATION_10_MIN,
     getLabel() {
-      const intl = require(1212) /* getSystemLocale */.intl;
-      return intl.formatToPlainString(require(1212) /* getSystemLocale */.t.iruf5E, { minutes: 10 });
+      const intl = require(1236) /* getSystemLocale */.intl;
+      return intl.formatToPlainString(require(1236) /* getSystemLocale */.t.iruf5E, { minutes: 10 });
     }
   },
   {
     value: DisableCommunicationDuration.DURATION_1_HOUR,
     getLabel() {
-      const intl = require(1212) /* getSystemLocale */.intl;
-      return intl.formatToPlainString(require(1212) /* getSystemLocale */.t.LnvrA3, { hours: 1 });
+      const intl = require(1236) /* getSystemLocale */.intl;
+      return intl.formatToPlainString(require(1236) /* getSystemLocale */.t.LnvrA3, { hours: 1 });
     }
   },
   {
     value: DisableCommunicationDuration.DURATION_1_DAY,
     getLabel() {
-      const intl = require(1212) /* getSystemLocale */.intl;
-      return intl.formatToPlainString(require(1212) /* getSystemLocale */.t.jzH70Z, { days: 1 });
+      const intl = require(1236) /* getSystemLocale */.intl;
+      return intl.formatToPlainString(require(1236) /* getSystemLocale */.t.jzH70Z, { days: 1 });
     }
   },
   {
     value: DisableCommunicationDuration.DURATION_1_WEEK,
     getLabel() {
-      const intl = require(1212) /* getSystemLocale */.intl;
-      return intl.formatToPlainString(require(1212) /* getSystemLocale */.t.iVZYyl, { weeks: 1 });
+      const intl = require(1236) /* getSystemLocale */.intl;
+      return intl.formatToPlainString(require(1236) /* getSystemLocale */.t.iVZYyl, { weeks: 1 });
     }
   }
 ];
-obj = { container: { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW } };
-_createForOfIteratorHelperLoose = { marginVertical: require("_createForOfIteratorHelperLoose").space.PX_16 };
-obj.reasonTextArea = _createForOfIteratorHelperLoose;
-let obj1 = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW };
-obj.buttonContainer = { marginBottom: require("_createForOfIteratorHelperLoose").space.PX_16 };
-let closure_15 = _createForOfIteratorHelperLoose.createStyles(obj);
-const obj3 = { marginBottom: require("_createForOfIteratorHelperLoose").space.PX_16 };
+obj = { container: null, reasonTextArea: null, buttonContainer: null };
+obj[0] = { backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW };
+createCacheKey = { marginVertical: require("Themes").space.PX_16 };
+obj[1] = createCacheKey;
+let obj1 = { backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW };
+obj[2] = { marginBottom: require("Themes").space.PX_16 };
+let closure_15 = createCacheKey.createStyles(obj);
+let obj3 = { marginBottom: require("Themes").space.PX_16 };
 const memoResult = importAllResult.memo(function GuildDisableCommunication(arg0) {
+  let c3;
+  let c4;
   let dependencyMap;
   let importDefault;
   let require;
   ({ user: require, guildId: importDefault, onClose: dependencyMap } = arg0);
-  let ME;
+  c3 = undefined;
+  let callback;
   let importAllResult;
   function _handleSubmitButtonPressed() {
-    // CreateGeneratorClosureLongIndex (0x67)
-    const obj = callback(tmp);
-    return obj(...arguments);
+    const self = this;
+    const tmp = _undefined(function*() {
+      if (c3 === 2) {
+        c3 = 3;
+        HermesBuiltin.throwTypeError();
+      } else if (tmp3 === 3) {
+        if (arg0 === 1) {
+          throw arg1;
+        } else if (arg0 === 2) {
+          let obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
+        } else {
+          return { value: "HermesInternal", done: null };
+        }
+      } else {
+        try {
+          c3 = 2;
+          if (0 === dependencyMap) {
+            if (arg0 === 1) {
+              c3 = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              c3 = 3;
+              obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            } else {
+              let closure_1 = tmp4;
+              let obj3 = outer1_1(11033);
+              dependencyMap = 1;
+              c3 = 1;
+              const obj1 = { value: null, done: false };
+              obj1[0] = obj3.setCommunicationDisabledDuration(outer1_1, outer1_0.id, outer1_14[c3].value, outer1_5.current);
+              return obj1;
+            }
+          } else if (arg0 === 1) {
+            c3 = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            c3 = 3;
+            const obj2 = { value: null, done: true };
+            obj2[0] = arg1;
+            return obj2;
+          } else {
+            const intl = outer1_0(1236).intl;
+            const obj8 = outer1_1(3890);
+            const name = outer1_1(4379).getName(closure_1, null, c0);
+            c0 = name;
+            if (name == null) {
+              c0 = "";
+            }
+            obj = { key: "GUILD_COMMUNICATION_DISABLED_SUCCESS", content: null, icon: null };
+            obj3 = { user: null };
+            obj3[0] = c0;
+            obj[1] = intl.formatToPlainString(outer1_0(1236).t.O9C3Nt, obj3);
+            obj[2] = outer1_1(10356);
+            obj8.open(obj);
+            dependencyMap();
+            c3 = 3;
+            return { value: "HermesInternal", done: null };
+          }
+        } catch (tmp20) {
+          c3 = tmp;
+          throw tmp20;
+        }
+      }
+    });
+    const _handleSubmitButtonPressed = tmp;
+    const apply = tmp.apply;
+    if (typeof apply === "unknown") {
+      let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+    } else {
+      applyArgumentsResult = apply(self, arguments);
+    }
+    return applyArgumentsResult;
   }
-  const tmp = callback4();
-  const tmp2 = callback(importAllResult.useState(0), 2);
-  ME = tmp2[0];
-  callback = tmp2[1];
+  let tmp = callback4();
+  [c3, c4] = callback(importAllResult.useState(0), 2);
   importAllResult = importAllResult.useRef("");
   const ref = importAllResult.useRef(null);
   const ref1 = importAllResult.useRef(null);
-  const insets = importDefault(5193)({ includeKeyboardHeight: true }).insets;
+  const insets = importDefault(5215)({ includeKeyboardHeight: true }).insets;
   const items = [{ ref: ref1, offset: { type: "toBottom" } }];
-  importDefault(9826)({ insets, inputs: items, scrollViewRef: ref });
-  importDefault(4594)(() => {
+  importDefault(9848)({ insets, inputs: items, scrollViewRef: ref });
+  importDefault(4616)(() => {
     let obj = outer1_1(outer1_2[13]);
-    obj = { type: outer1_9, guild_id: closure_1, other_user_id: id.id };
+    obj = { type: outer1_9, guild_id: closure_1, other_user_id: lib.id };
     obj.track(outer1_10.OPEN_MODAL, obj);
   });
-  let obj = { style: tmp.container, ref };
-  obj = { paddingHorizontal: importDefault(689).space.PX_12, paddingBottom: insets.bottom };
-  obj.contentContainerStyle = obj;
-  obj = {};
-  const obj1 = {};
-  const obj2 = { marginVertical: importDefault(689).space.PX_16 };
-  obj1.style = obj2;
-  obj1.variant = "heading-md/semibold";
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj1.children = intl.format(require(1212) /* getSystemLocale */.t.Ns83GT, { helpdeskArticle: closure_8 });
-  const items1 = [callback2(require(4161) /* Text */.Text, obj1), , , ];
-  const obj4 = {};
-  const intl2 = require(1212) /* getSystemLocale */.intl;
-  obj4.title = intl2.string(require(1212) /* getSystemLocale */.t["9XsExm"]);
-  obj4.defaultValue = 0;
-  obj4.onChange = function onChange(arg0) {
-    callback2(arg0);
+  let obj = { style: tmp.container, ref, contentContainerStyle: null, children: null };
+  obj = { paddingHorizontal: importDefault(712).space.PX_12, paddingBottom: insets.bottom };
+  obj[2] = obj;
+  obj = { children: null };
+  let obj1 = { style: null, variant: "heading-md/semibold", children: null };
+  let obj2 = { marginVertical: null };
+  obj2[0] = importDefault(712).space.PX_16;
+  obj1[0] = obj2;
+  let intl = require(1236) /* getSystemLocale */.intl;
+  obj1[2] = intl.format(require(1236) /* getSystemLocale */.t.Ns83GT, { helpdeskArticle: closure_8 });
+  const items1 = [callback2(require(4185) /* Text */.Text, obj1), , , ];
+  const obj4 = { title: null, defaultValue: 0, onChange: null, hasIcons: false, children: null };
+  const intl2 = require(1236) /* getSystemLocale */.intl;
+  obj4[0] = intl2.string(require(1236) /* getSystemLocale */.t["9XsExm"]);
+  obj4[2] = function onChange(arg0) {
+    _undefined2(arg0);
   };
-  obj4.hasIcons = false;
-  obj4.children = items.map((getLabel, value) => {
-    const obj = { value, label: getLabel.getLabel() };
-    return outer1_11(outer1_0(outer1_2[20]).TableRadioRow, obj, value);
+  obj4[4] = items.map((getLabel, value) => {
+    const obj = { value, label: null };
+    obj[1] = getLabel.getLabel();
+    return callback(lib(table[20]).TableRadioRow, obj, value);
   });
-  items1[1] = callback2(require(7632) /* context */.TableRadioGroup, obj4);
-  const obj5 = { ref: ref1, containerStyle: tmp.reasonTextArea };
-  const intl3 = require(1212) /* getSystemLocale */.intl;
-  obj5.placeholder = intl3.string(require(1212) /* getSystemLocale */.t.GakiH1);
-  const intl4 = require(1212) /* getSystemLocale */.intl;
-  obj5.label = intl4.string(require(1212) /* getSystemLocale */.t.ewHW15);
-  obj5.maxLength = 512;
-  obj5.onChange = function onChange(current) {
+  items1[1] = callback2(require(7655) /* context */.TableRadioGroup, obj4);
+  const obj5 = { ref: ref1, containerStyle: tmp.reasonTextArea, placeholder: null, label: null, maxLength: 512, onChange: null };
+  const intl3 = require(1236) /* getSystemLocale */.intl;
+  obj5[2] = intl3.string(require(1236) /* getSystemLocale */.t.GakiH1);
+  const intl4 = require(1236) /* getSystemLocale */.intl;
+  obj5[3] = intl4.string(require(1236) /* getSystemLocale */.t.ewHW15);
+  obj5[5] = function onChange(current) {
     closure_5.current = current;
   };
-  items1[2] = callback2(require(7621) /* TextArea */.TextArea, obj5);
-  const obj6 = { style: tmp.buttonContainer };
-  const obj7 = { variant: "primary" };
-  const intl5 = require(1212) /* getSystemLocale */.intl;
-  obj7.text = intl5.string(require(1212) /* getSystemLocale */.t.MlPTIi);
-  obj7.onPress = function handleSubmitButtonPressed() {
-    return _handleSubmitButtonPressed(...arguments);
+  items1[2] = callback2(require(7644) /* TextArea */.TextArea, obj5);
+  const obj6 = { style: tmp.buttonContainer, children: null };
+  const obj7 = { variant: "primary", text: null, onPress: null };
+  const intl5 = require(1236) /* getSystemLocale */.intl;
+  obj7[1] = intl5.string(require(1236) /* getSystemLocale */.t.MlPTIi);
+  obj7[2] = function handleSubmitButtonPressed() {
+    const self = this;
+    const apply = _handleSubmitButtonPressed.apply;
+    if (typeof apply === "unknown") {
+      let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+    } else {
+      applyArgumentsResult = apply(self, arguments);
+    }
+    return applyArgumentsResult;
   };
-  obj6.children = callback2(require(4578) /* Button */.Button, obj7);
+  obj6[1] = callback2(require(4600) /* Button */.Button, obj7);
   items1[3] = callback2(_handleSubmitButtonPressed, obj6);
-  obj.children = items1;
-  obj.children = callback3(closure_12, obj);
+  obj[0] = items1;
+  obj[3] = callback3(closure_12, obj);
   return callback2(closure_7, obj);
 });
-const result = require("result").fileFinishedImporting("modules/guild_communication_disabled/native/GuildDisableCommunication.tsx");
+const result = require("noop").fileFinishedImporting("modules/guild_communication_disabled/native/GuildDisableCommunication.tsx");
 
 export default memoResult;

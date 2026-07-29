@@ -1,99 +1,97 @@
-// Module ID: 12972
-// Function ID: 100582
-// Dependencies: [31, 11745, 653, 33, 4165, 689, 7611, 675, 11742, 5530, 1212, 12973, 2]
+// Module ID: 12995
+// Function ID: 12996
+// Dependencies: [19, 11770, 676, 21, 4189, 712, 7634, 698, 11767, 5548, 1236, 12996, 2]
 
-// Module 12972
+// Module 12995
 import { dismissUpsellCTA } from "setStoredContacts";
 import ME from "ME";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import importAllResult from "result";
+import createCacheKey from "createCacheKey";
+import importAllResult from "noop";
 
-let closure_4;
-let closure_5;
+let c4;
+let c5;
 const require = arg1;
-({ AnalyticEvents: closure_4, AnalyticsSections: closure_5 } = ME);
-let obj = {};
-obj = { padding: 12, borderRadius: require("_createForOfIteratorHelperLoose").radii.sm, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SURFACE_HIGH };
-obj.container = obj;
-let closure_7 = _createForOfIteratorHelperLoose.createStyles(obj);
-const memoResult = require("result").memo(function ContactSyncUpsellCTA(location) {
+({ AnalyticEvents: c4, AnalyticsSections: c5 } = ME);
+let obj = { container: null };
+obj = { padding: 12, borderRadius: require("Themes").radii.sm, backgroundColor: require("Themes").colors.BACKGROUND_SURFACE_HIGH };
+obj[0] = obj;
+let closure_7 = createCacheKey.createStyles(obj);
+const memoResult = require("noop").memo(function ContactSyncUpsellCTA(location) {
   location = location.location;
   let obj = {
     onPress() {
       let obj = outer1_1(outer1_2[7]);
-      obj = { type: outer1_5.CONTACT_SYNC_MODAL };
-      obj = {};
-      let str = "Friends List Upsell";
-      let str2 = "Friends List Upsell";
-      if (null != location) {
-        str2 = location;
+      obj = { type: outer1_5.CONTACT_SYNC_MODAL, location: null };
+      let str = location;
+      let str2 = location;
+      if (location == null) {
+        str2 = "Friends List Upsell";
       }
-      obj.page = str2;
-      obj.location = obj;
+      obj[1] = { page: str2 };
       obj.track(outer1_4.OPEN_MODAL, obj);
-      const obj1 = {};
-      if (null != location) {
-        str = location;
+      if (str == null) {
+        str = "Friends List Upsell";
       }
-      obj1.page = str;
-      location(outer1_2[8]).openContactSyncModal({}, obj1);
+      location(outer1_2[8]).openContactSyncModal({}, { page: str });
     },
     onLongPress() {
-      let obj = location(outer1_2[9]);
+      let obj = location(5548);
       obj = { key: "ContactSyncUpsellLongPress", options: null, hasIcons: false };
-      obj = {};
-      const intl = location(outer1_2[10]).intl;
-      obj.label = intl.string(location(outer1_2[10]).t.WAI6xu);
-      obj.onPress = function onPress() {
-        outer2_3();
+      obj = { label: null, onPress: null };
+      const intl = location(1236).intl;
+      obj[0] = intl.string(location(1236).t.WAI6xu);
+      obj[1] = function onPress() {
+        callback();
       };
       const items = [obj];
-      obj.options = items;
+      obj[1] = items;
       const result = obj.showSimpleActionSheet(obj);
     },
-    style: items
+    style: items,
+    iconSource: null,
+    title: null,
+    subtitle: null
   };
   items = [callback().container, location.style];
-  obj.iconSource = importDefault(12973);
-  let intl = location(1212).intl;
-  obj.title = intl.string(location(1212).t.T6Rfd9);
-  const intl2 = location(1212).intl;
-  obj.subtitle = intl2.string(location(1212).t.c6KIpg);
-  return jsx(location(7611).FormCTA, {
+  obj[3] = importDefault(12996);
+  let intl = location(1236).intl;
+  obj[4] = intl.string(location(1236).t.T6Rfd9);
+  const intl2 = location(1236).intl;
+  obj[5] = intl2.string(location(1236).t.c6KIpg);
+  return jsx(location(7634).FormCTA, {
     onPress() {
       let obj = outer1_1(outer1_2[7]);
-      obj = { type: outer1_5.CONTACT_SYNC_MODAL };
-      obj = {};
-      let str = "Friends List Upsell";
-      let str2 = "Friends List Upsell";
-      if (null != location) {
-        str2 = location;
+      obj = { type: outer1_5.CONTACT_SYNC_MODAL, location: null };
+      let str = location;
+      let str2 = location;
+      if (location == null) {
+        str2 = "Friends List Upsell";
       }
-      obj.page = str2;
-      obj.location = obj;
+      obj[1] = { page: str2 };
       obj.track(outer1_4.OPEN_MODAL, obj);
-      const obj1 = {};
-      if (null != location) {
-        str = location;
+      if (str == null) {
+        str = "Friends List Upsell";
       }
-      obj1.page = str;
-      location(outer1_2[8]).openContactSyncModal({}, obj1);
+      location(outer1_2[8]).openContactSyncModal({}, { page: str });
     },
     onLongPress() {
-      let obj = location(outer1_2[9]);
+      let obj = location(5548);
       obj = { key: "ContactSyncUpsellLongPress", options: null, hasIcons: false };
-      obj = {};
-      const intl = location(outer1_2[10]).intl;
-      obj.label = intl.string(location(outer1_2[10]).t.WAI6xu);
-      obj.onPress = function onPress() {
-        outer2_3();
+      obj = { label: null, onPress: null };
+      const intl = location(1236).intl;
+      obj[0] = intl.string(location(1236).t.WAI6xu);
+      obj[1] = function onPress() {
+        callback();
       };
       const items = [obj];
-      obj.options = items;
+      obj[1] = items;
       const result = obj.showSimpleActionSheet(obj);
     },
-    style: items
+    style: items,
+    iconSource: null,
+    title: null,
+    subtitle: null
   });
 });
 let result = require("ME").fileFinishedImporting("modules/contact_sync/native/components/ContactSyncUpsellCTA.tsx");

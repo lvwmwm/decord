@@ -1,10 +1,10 @@
-// Module ID: 7855
-// Function ID: 62168
+// Module ID: 7878
+// Function ID: 7879
 // Name: regExp
-// Dependencies: [4087, 7856, 7857, 2]
+// Dependencies: [4111, 7879, 7880, 2]
 // Exports: getExperimentBuckets, getExperimentFromEmbedURL, getExperimentServerAssignmentLabel, getExperimentTreatmentFromEmbedURL, getURLForExperiment, isExperimentEmbedURL
 
-// Module 7855 (regExp)
+// Module 7878 (regExp)
 const regExp = new RegExp("^dev://experiment/([-\\w._0-9]+)(?:/([0-9]+))?$", "i");
 const result = require("getExperimentVariantsForDevTools").fileFinishedImporting("modules/experiments/ExperimentEmbedUtils.tsx");
 
@@ -49,20 +49,21 @@ export const getExperimentServerAssignmentLabel = function getExperimentServerAs
   if (null != experimentServerAssignment) {
     if (null != system) {
       const system2 = system.system;
-      if (require(4087) /* trackExposureToExperiment */.ExperimentSystem.LEGACY === system2) {
-        return importDefault(7856).getExperimentBucketName(experimentServerAssignment.bucket);
-      } else if (require(4087) /* trackExposureToExperiment */.ExperimentSystem.APEX === system2) {
+      if (require(4111) /* trackExposureToExperiment */.ExperimentSystem.LEGACY === system2) {
+        return importDefault(7879).getExperimentBucketName(experimentServerAssignment.bucket);
+      } else if (tmp4(4111).ExperimentSystem.APEX === system2) {
         const _HermesInternal = HermesInternal;
         return "Variant " + experimentServerAssignment.variantId;
       } else {
         system = system.system;
         return null;
       }
+      tmp4 = require;
     }
   }
   return null;
 };
 export const getExperimentBuckets = function getExperimentBuckets(experiment) {
-  const experimentVariantsForDevTools = require(7857) /* getExperimentVariantsForDevTools */.getExperimentVariantsForDevTools(experiment);
+  const experimentVariantsForDevTools = require(7880) /* getExperimentVariantsForDevTools */.getExperimentVariantsForDevTools(experiment);
   return experimentVariantsForDevTools.map((id) => ({ id: id.id, label: id.label, value: id.id }));
 };

@@ -1,138 +1,138 @@
-// Module ID: 10668
-// Function ID: 82943
+// Module ID: 10692
+// Function ID: 10693
 // Name: ConnectivityGlobalStatusContent
-// Dependencies: [31, 27, 1348, 1838, 4237, 4180, 10664, 653, 33, 4165, 689, 8905, 566, 10370, 10662, 4011, 4101, 4698, 4016, 10483, 477, 1557, 6658, 10669, 2]
+// Dependencies: [19, 17, 1372, 1862, 4261, 4204, 10688, 676, 21, 4189, 712, 8929, 589, 10394, 10686, 4035, 4125, 4720, 4040, 10507, 500, 1581, 6679, 10693, 2]
 // Exports: default
 
-// Module 10668 (ConnectivityGlobalStatusContent)
-import "result";
-import { View } from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_5 from "_createForOfIteratorHelperLoose";
-import closure_6 from "_isNativeReflectConstruct";
-import closure_7 from "_isNativeReflectConstruct";
+// Module 10692 (ConnectivityGlobalStatusContent)
+import "ChannelCallCameraPreview";
+import { View } from "getIsScreenLandscape";
+import ensureGuildLoaded from "ensureGuildLoaded";
+import createGuildRecordFromRust from "createGuildRecordFromRust";
+import createRTCConnection from "createRTCConnection";
+import handleUpdate from "handleUpdate";
 import { RTCConnectionStates } from "ME";
-import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import jsxProd from "useSafeAreaInsets";
+import createCacheKey from "createCacheKey";
 
-let closure_10;
-let closure_9;
+let c10;
+let c9;
 let require = arg1;
-({ jsx: closure_9, jsxs: closure_10 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWEST };
-_createForOfIteratorHelperLoose.bgNeutral = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.bg = { backgroundColor: require("_createForOfIteratorHelperLoose").unsafe_rawColors.GREEN_360 };
-let obj2 = { paddingHorizontal: 16, minHeight: require("RTC_PANEL_HEIGHT").RTC_PANEL_HEIGHT, alignItems: "center", justifyContent: "center" };
-_createForOfIteratorHelperLoose.container = obj2;
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-let obj1 = { backgroundColor: require("_createForOfIteratorHelperLoose").unsafe_rawColors.GREEN_360 };
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/connectivity/native/components/GlobalStatusContent.tsx");
+({ jsx: c9, jsxs: c10 } = jsxProd);
+createCacheKey = { bgNeutral: null, bg: null, container: null };
+createCacheKey = { backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOWEST };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { backgroundColor: require("Themes").unsafe_rawColors.GREEN_360 };
+createCacheKey[2] = { paddingHorizontal: 16, minHeight: require("RTC_PANEL_HEIGHT").RTC_PANEL_HEIGHT, alignItems: "center", justifyContent: "center" };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+const obj1 = { backgroundColor: require("Themes").unsafe_rawColors.GREEN_360 };
+const result = require("ensureGuildLoaded").fileFinishedImporting("modules/connectivity/native/components/GlobalStatusContent.tsx");
 
 export default function ConnectivityGlobalStatusContent() {
   let guild;
   let remotePlatform;
   let rtcConnectionState;
-  const tmp = _createForOfIteratorHelperLoose();
-  const tmp2 = importDefault(8905)();
-  const require = tmp2;
-  let obj = require(566) /* initialize */;
-  const items = [closure_6, closure_5, _isNativeReflectConstruct, closure_7];
-  const items1 = [tmp2];
+  const tmp = createCacheKey();
+  const tmp4 = importDefault(8929)();
+  const require = tmp4;
+  let obj = require(589) /* initialize */;
+  const items = [createRTCConnection, createGuildRecordFromRust, ensureGuildLoaded, handleUpdate];
+  const items1 = [tmp4];
   const stateFromStoresObject = obj.useStateFromStoresObject(items, () => {
     let channelId;
-    if (null != tmp2) {
+    if (closure_0 != null) {
       channelId = tmp2.channelId;
     }
-    if (null == channelId) {
+    if (channelId == null) {
       channelId = outer1_6.getChannelId();
     }
     const channel = outer1_4.getChannel(channelId);
-    if (null != tmp2) {
+    if (null != closure_0) {
       let guildId;
-      if (null != channel) {
+      if (channel != null) {
         guildId = channel.getGuildId();
       }
       let guildId1 = guildId;
     } else {
       guildId1 = outer1_6.getGuildId();
     }
-    let sessionId;
+    let str;
     const guild = outer1_5.getGuild(guildId1);
-    if (null != tmp2) {
-      sessionId = tmp2.sessionId;
+    if (closure_0 != null) {
+      str = tmp2.sessionId;
     }
-    let str = "";
-    if (null != sessionId) {
-      str = sessionId;
+    if (str == null) {
+      str = "";
     }
     const sessionById = outer1_7.getSessionById(str);
     let os;
-    if (null != sessionById) {
+    if (sessionById != null) {
       os = sessionById.clientInfo.os;
     }
-    const obj = { guild, channel };
-    if (null != tmp2) {
+    const obj = { guild, channel, rtcConnectionState: null, remotePlatform: null };
+    if (null != closure_0) {
       let RTC_CONNECTED = outer1_8.RTC_CONNECTED;
     } else {
       RTC_CONNECTED = outer1_6.getState();
     }
-    obj.rtcConnectionState = RTC_CONNECTED;
-    obj.remotePlatform = os;
+    obj[2] = RTC_CONNECTED;
+    obj[3] = os;
     return obj;
   }, items1);
   let channel = stateFromStoresObject.channel;
   let isGuildStageVoiceResult;
   ({ guild, rtcConnectionState, remotePlatform } = stateFromStoresObject);
-  if (null != channel) {
+  if (channel != null) {
     isGuildStageVoiceResult = channel.isGuildStageVoice();
   }
   let id;
-  if (null != channel) {
+  if (channel != null) {
     id = channel.id;
   }
-  let tmp5Result = importDefault(10370)(id);
-  const tmp5 = importDefault(10370);
-  let obj1 = require(4011) /* AccessibilityAnnouncer */;
-  let tmp11 = tmp9;
-  const tmp8 = importDefault(10662)();
+  let tmp2ResultResult = importDefault(10394)(id);
+  const tmp2Result = importDefault(10394);
+  let tmp5Result = tmp5(4035);
+  let tmp14 = tmp12;
+  const tmp11 = importDefault(10686)();
   if (isGuildStageVoiceResult) {
-    if (!tmp5Result) {
-      tmp5Result = tmp8;
+    if (!tmp2ResultResult) {
+      tmp2ResultResult = tmp11;
     }
-    tmp11 = tmp5Result;
+    tmp14 = tmp2ResultResult;
   }
-  let obj2 = require(4698) /* getIsScreenLandscape */;
-  let isScreenLandscape = obj2.useIsScreenLandscape();
+  tmp5Result = tmp5(4720);
+  let isScreenLandscape = tmp5Result.useIsScreenLandscape();
   if (isScreenLandscape) {
-    isScreenLandscape = require(4016) /* _createForOfIteratorHelperLoose */.isModalOpen(importDefault(10483));
-    const obj4 = require(4016) /* _createForOfIteratorHelperLoose */;
+    isScreenLandscape = tmp5(4040).isModalOpen(tmp2(10507));
+    const tmp5Result1 = tmp5(4040);
   }
   if (isScreenLandscape) {
-    isScreenLandscape = require(477) /* set */.isAndroid();
-    const obj5 = require(477) /* set */;
+    isScreenLandscape = tmp5(500).isAndroid();
+    const tmp5Result2 = tmp5(500);
   }
-  obj = {};
-  const items2 = [tmp11 ? tmp.bg : tmp.bgNeutral, tmp.container, ];
-  obj = {};
-  let num4 = 0;
+  const items2 = [tmp14 ? tmp.bg : tmp.bgNeutral, tmp.container, ];
+  let num = 0;
   if (!isScreenLandscape) {
-    num4 = importDefault(1557)().top;
+    num = tmp2(1581)().top;
   }
-  obj.paddingTop = num4;
-  items2[2] = obj;
-  obj.style = items2;
+  obj = { style: items2, children: null };
+  items2[2] = { paddingTop: num };
   if (isScreenLandscape) {
-    obj1 = { hidden: true };
-    isScreenLandscape = callback(importDefault(6658), obj1);
+    isScreenLandscape = callback(tmp2(6679), { hidden: true });
   }
   const items3 = [isScreenLandscape, ];
-  let tmp23 = null;
+  let tmp19 = null;
   if (isGuildStageVoiceResult) {
-    obj2 = { channel, guild, hasRTCConnectivity: tmp9, isDarkTheme: isThemeDarkResult, rtcConnectionState, remotePlatform };
-    tmp23 = callback(importDefault(10669), obj2);
+    obj = { channel: null, guild: null, hasRTCConnectivity: null, isDarkTheme: null, rtcConnectionState: null, remotePlatform: null };
+    obj[0] = channel;
+    obj[1] = guild;
+    obj[2] = tmp12;
+    obj[3] = isThemeDarkResult;
+    obj[4] = rtcConnectionState;
+    obj[5] = remotePlatform;
+    tmp19 = callback(tmp2(10693), obj);
   }
-  items3[1] = tmp23;
-  obj.children = items3;
+  items3[1] = tmp19;
+  obj[1] = items3;
   return closure_10(View, obj);
 };

@@ -1,78 +1,77 @@
-// Module ID: 12831
-// Function ID: 99701
+// Module ID: 12853
+// Function ID: 12854
 // Name: OngoingCallStatusLabel
-// Dependencies: [31, 1194, 4844, 4181, 33, 566, 1212, 12830, 1273, 2]
+// Dependencies: [19, 1218, 4866, 4205, 21, 589, 1236, 12852, 1297, 2]
 // Exports: default
 
-// Module 12831 (OngoingCallStatusLabel)
-import "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_3 from "_isNativeReflectConstruct";
-import closure_4 from "_isNativeReflectConstruct";
+// Module 12853 (OngoingCallStatusLabel)
+import "noop";
+import fetchFingerprint from "fetchFingerprint";
+import callConnect from "callConnect";
+import updateVoiceState from "updateVoiceState";
 import { jsx } from "jsxProd";
 
 const require = arg1;
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/voice_calls/native/components/OngoingCallStatusLabel.tsx");
+const result = require("callConnect").fileFinishedImporting("modules/voice_calls/native/components/OngoingCallStatusLabel.tsx");
 
-export default function OngoingCallStatusLabel(useAllAloneText) {
+export default function OngoingCallStatusLabel(style) {
   let channel;
-  let style;
+  let useAllAloneText;
   let voiceState;
-  let flag = useAllAloneText.useAllAloneText;
-  ({ style, channel, voiceState } = useAllAloneText);
-  if (flag === undefined) {
-    flag = true;
+  ({ channel, voiceState, useAllAloneText } = style);
+  if (useAllAloneText === undefined) {
+    useAllAloneText = true;
   }
-  const children = (function useOngoingCallStatus(channel, voiceState, flag) {
-    let closure_0 = channel;
-    if (flag === undefined) {
-      flag = true;
-    }
-    let id;
-    id = outer1_2.getId();
-    const items = [outer1_4, outer1_3];
-    const items1 = [id, channel];
-    const stateFromStores = outer1_0(outer1_1[5]).useStateFromStores(items, () => {
-      if (null == user) {
-        return false;
-      } else {
-        const _Object = Object;
-        const values = Object.values(outer2_4.getVoiceStatesForChannel(user.id));
-        const call = outer2_3.getCall(user.id);
-        let tmp = null != call;
-        if (tmp) {
-          tmp = call.ringing.length > 0;
-        }
-        let tmp2 = !tmp;
-        if (!tmp) {
-          tmp2 = 1 === values.length;
-        }
-        if (tmp2) {
-          tmp2 = values[0].userId === id;
-        }
-        return tmp2;
+  if (useAllAloneText === undefined) {
+    useAllAloneText = true;
+  }
+  let id;
+  id = id.getId();
+  let obj = channel(id[5]);
+  const items = [updateVoiceState, callConnect];
+  const items1 = [id, channel];
+  const stateFromStores = obj.useStateFromStores(items, () => {
+    if (null == channel) {
+      return false;
+    } else {
+      const _Object = Object;
+      const values = Object.values(outer1_4.getVoiceStatesForChannel(tmp.id));
+      const call = outer1_3.getCall(tmp.id);
+      let tmp2 = null != call;
+      if (tmp2) {
+        tmp2 = call.ringing.length > 0;
       }
-    }, items1);
-    const intl = outer1_0(outer1_1[6]).intl;
-    let stringResult = intl.string(outer1_0(outer1_1[6]).t["1zFMqU"]);
-    if (outer1_0(outer1_1[7]).CallStates.DISCONNECTING !== voiceState) {
-      if (outer1_0(outer1_1[7]).CallStates.CONNECTED !== voiceState) {
-        if (outer1_0(outer1_1[7]).CallStates.RINGING === voiceState) {
-          const intl2 = outer1_0(outer1_1[6]).intl;
-          stringResult = intl2.string(outer1_0(outer1_1[6]).t.Xuzre8);
-        } else if (outer1_0(outer1_1[7]).CallStates.DISCONNECTED === voiceState) {
-          const intl5 = outer1_0(outer1_1[6]).intl;
-          stringResult = intl5.string(outer1_0(outer1_1[6]).t["w//7ET"]);
-        }
-        return stringResult;
+      let tmp3 = !tmp2;
+      if (!tmp2) {
+        tmp3 = 1 === values.length;
       }
+      if (tmp3) {
+        tmp3 = values[0].userId === id;
+      }
+      return tmp3;
     }
-    if (!stateFromStores) {
-      const intl3 = outer1_0(outer1_1[6]).intl;
-      let stringResult1 = intl3.string(outer1_0(outer1_1[6]).t["NGg/fm"]);
+  }, items1);
+  const intl = channel(id[6]).intl;
+  let stringResult = intl.string(channel(id[6]).t["1zFMqU"]);
+  if (channel(id[7]).CallStates.DISCONNECTING !== voiceState) {
+    if (tmp2(tmp3[7]).CallStates.CONNECTED !== voiceState) {
+      if (tmp2(tmp3[7]).CallStates.RINGING === voiceState) {
+        const intl2 = tmp2(tmp3[6]).intl;
+        stringResult = intl2.string(tmp2(tmp3[6]).t.Xuzre8);
+      } else if (tmp2(tmp3[7]).CallStates.DISCONNECTED === voiceState) {
+        const intl5 = tmp2(tmp3[6]).intl;
+        stringResult = intl5.string(tmp2(tmp3[6]).t["w//7ET"]);
+      }
+      obj = { style: null, children: null };
+      obj[0] = style.style;
+      obj[1] = stringResult;
+      return jsx(tmp2(tmp3[8]).LegacyText, { style: null, children: null });
     }
-    const intl4 = outer1_0(outer1_1[6]).intl;
-    stringResult1 = intl4.string(outer1_0(outer1_1[6]).t.xNeSms);
-  })(channel, voiceState, flag);
-  return jsx(require(1273) /* Button */.LegacyText, { style, children });
+  }
+  if (!stateFromStores) {
+    const intl3 = tmp2(tmp3[6]).intl;
+    let stringResult1 = intl3.string(tmp2(tmp3[6]).t["NGg/fm"]);
+  }
+  const intl4 = tmp2(tmp3[6]).intl;
+  stringResult1 = intl4.string(tmp2(tmp3[6]).t.xNeSms);
 };

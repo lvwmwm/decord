@@ -1,12 +1,11 @@
-// Module ID: 6019
-// Function ID: 53375
+// Module ID: 6037
+// Function ID: 6038
 // Name: ThermalState
 // Dependencies: [2]
 
-// Module 6019 (ThermalState)
+// Module 6037 (ThermalState)
 let obj = { NOMINAL: "NOMINAL", FAIR: "FAIR", SERIOUS: "SERIOUS", CRITICAL: "CRITICAL", UNKNOWN: "UNKNOWN" };
-obj = { thermalState: null, batteryLevel: 1, isLowPowerMode: false };
-obj.thermalState = obj.UNKNOWN;
+obj = { thermalState: obj.UNKNOWN, batteryLevel: 1, isLowPowerMode: false };
 const result = require("set").fileFinishedImporting("modules/device/constants/DeviceState.tsx");
 
 export const ThermalState = obj;

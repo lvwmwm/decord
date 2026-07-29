@@ -1,93 +1,48 @@
-// Module ID: 9728
-// Function ID: 75609
-// Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 1922, 566, 686, 2]
+// Module ID: 9750
+// Function ID: 9751
+// Name: handleUserSettingsStoreUpdate
+// Dependencies: [1946, 589, 709, 2]
 
-// Module 9728 (_isNativeReflectConstruct)
-import initialize from "initialize";
-import dispatcher from "dispatcher";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 9750 (handleUserSettingsStoreUpdate)
+import _getSystemLocale from "_getSystemLocale";
+import { Store } from "initialize";
 
-function _isNativeReflectConstruct() {
-  let initialize = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return initialize;
-  }
-  const result = _isNativeReflectConstruct();
-}
-function getKey(arg0, arg1) {
-  if (0 === arg0.length) {
-    const _Error = Error;
-    const error = new Error("No user IDs provided");
-    throw error;
-  } else {
-    const items = [];
-    HermesBuiltin.arraySpread(arg1, HermesBuiltin.arraySpread(arg0, 0));
-    return items.join(",");
-  }
-}
 function handleUserSettingsStoreUpdate() {
-  if (locale === _isNativeReflectConstruct.locale) {
+  if (locale === _getSystemLocale.locale) {
     return false;
   } else {
-    let closure_7 = {};
-    locale = _isNativeReflectConstruct.locale;
+    let closure_2 = {};
+    locale = tmp.locale;
   }
 }
-let closure_7 = {};
-let tmp2 = ((Store) => {
-  class WishlistRecommendationsStore {
-    constructor() {
-      self = this;
-      tmp = WishlistRecommendationsStore(this, WishlistRecommendationsStore);
-      obj = outer1_3(WishlistRecommendationsStore);
-      tmp2 = outer1_2;
-      if (outer1_8()) {
-        tmp6 = globalThis;
-        _Reflect = Reflect;
-        tmp7 = outer1_3;
-        tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, outer1_3(self).constructor);
+let closure_2 = {};
+class WishlistRecommendationsStore extends Store {
+}
+const prototype = WishlistRecommendationsStore.prototype;
+prototype["initialize"] = function initialize() {
+  this.waitFor(_getSystemLocale);
+  const items = [_getSystemLocale];
+  this.syncWith(items, handleUserSettingsStoreUpdate);
+  const locale = _getSystemLocale.locale;
+};
+prototype["getRecommendations"] = function getRecommendations(memo, memo3) {
+  if (0 !== memo.length) {
+    if (0 !== memo3.length) {
+      if (0 === memo.length) {
+        const _Error = Error;
+        const error = new Error("No user IDs provided");
+        throw error;
       } else {
-        tmp3 = arguments;
-        tmp4 = arguments;
-        constructResult = obj(...arguments);
+        const items = [];
+        HermesBuiltin.arraySpread(memo3, HermesBuiltin.arraySpread(memo, 0));
+        return tmp2[items.join(items, ",")];
       }
-      return tmp2(self, constructResult);
     }
   }
-  callback2(WishlistRecommendationsStore, Store);
-  let obj = {
-    key: "initialize",
-    value() {
-      this.waitFor(outer1_5);
-      const items = [outer1_5];
-      this.syncWith(items, outer1_10);
-      const outer1_6 = outer1_5.locale;
-    }
-  };
-  let items = [obj, ];
-  obj = {
-    key: "getRecommendations",
-    value(arg0, arg1) {
-      if (0 !== arg0.length) {
-        if (0 !== arg1.length) {
-          return outer1_7[outer1_9(undefined, arg0, arg1)];
-        }
-      }
-    }
-  };
-  items[1] = obj;
-  return callback(WishlistRecommendationsStore, items);
-})(require("initialize").Store);
-tmp2 = new tmp2(require("dispatcher"), {
+};
+const wishlistRecommendationsStore = new WishlistRecommendationsStore(require("dispatcher"), {
   LOGOUT: function handleLogout() {
-    let closure_7 = {};
+    let closure_2 = {};
   },
   WISHLIST_RECOMMENDATIONS_FETCH_START: function handleFetchStart(arg0) {
     let applicationIds;
@@ -95,10 +50,18 @@ tmp2 = new tmp2(require("dispatcher"), {
     ({ userIds, applicationIds } = arg0);
     if (0 !== userIds.length) {
       if (0 !== applicationIds.length) {
-        let obj = {};
-        const merged = Object.assign(obj);
-        obj = { state: "loading" };
-        obj[getKey(userIds, applicationIds)] = obj;
+        if (0 === userIds.length) {
+          const _Error = Error;
+          const error = new Error("No user IDs provided");
+          throw error;
+        } else {
+          const items = [];
+          HermesBuiltin.arraySpread(applicationIds, HermesBuiltin.arraySpread(userIds, 0));
+          const obj = {};
+          const joined = items.join(",");
+          const merged = Object.assign(obj);
+          obj[joined] = { state: "loading" };
+        }
       }
     }
     return false;
@@ -109,12 +72,22 @@ tmp2 = new tmp2(require("dispatcher"), {
     ({ userIds, applicationIds } = arg0);
     if (0 !== userIds.length) {
       if (0 !== applicationIds.length) {
-        let obj = {};
-        const merged = Object.assign(obj);
-        obj = { state: "success", data: tmp };
-        const _Date = Date;
-        obj.fetchedAt = Date.now();
-        obj[getKey(userIds, applicationIds)] = obj;
+        if (0 === userIds.length) {
+          const _Error = Error;
+          const error = new Error("No user IDs provided");
+          throw error;
+        } else {
+          const items = [];
+          HermesBuiltin.arraySpread(applicationIds, HermesBuiltin.arraySpread(userIds, 0));
+          let obj = {};
+          const joined = items.join(",");
+          const merged = Object.assign(obj);
+          obj = { state: "success", data: null, fetchedAt: null };
+          obj[1] = tmp;
+          const _Date = Date;
+          obj[2] = Date.now();
+          obj[joined] = obj;
+        }
       }
     }
     return false;
@@ -125,26 +98,34 @@ tmp2 = new tmp2(require("dispatcher"), {
     ({ userIds, applicationIds } = arg0);
     if (0 !== userIds.length) {
       if (0 !== applicationIds.length) {
-        const tmp2 = getKey(userIds, applicationIds);
-        let state;
-        if (null != obj[tmp2]) {
-          state = tmp4.state;
-        }
-        if ("success" === state) {
-          return false;
+        if (0 === userIds.length) {
+          const _Error = Error;
+          const error = new Error("No user IDs provided");
+          throw error;
         } else {
-          obj = {};
-          const merged = Object.assign(obj);
-          obj = { state: "error" };
-          const _Date = Date;
-          obj.fetchedAt = Date.now();
-          obj[tmp2] = obj;
+          const items = [];
+          HermesBuiltin.arraySpread(applicationIds, HermesBuiltin.arraySpread(userIds, 0));
+          const joined = items.join(",");
+          let state;
+          if (obj[joined] != null) {
+            state = tmp18.state;
+          }
+          if ("success" === state) {
+            return false;
+          } else {
+            obj = {};
+            const merged = Object.assign(obj);
+            obj = { state: "error", fetchedAt: null };
+            const _Date = Date;
+            obj[1] = Date.now();
+            obj[joined] = obj;
+          }
         }
       }
     }
     return false;
   }
 });
-let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/wishlists/WishlistRecommendationsStore.tsx");
+const result = require("dispatcher").fileFinishedImporting("modules/wishlists/WishlistRecommendationsStore.tsx");
 
-export default tmp2;
+export default wishlistRecommendationsStore;

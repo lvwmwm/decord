@@ -1,101 +1,109 @@
-// Module ID: 15720
-// Function ID: 121096
+// Module ID: 15756
+// Function ID: 15757
 // Name: GiftingPromotionCoachmarkActionSheet
-// Dependencies: [31, 27, 4157, 653, 1345, 33, 4165, 689, 566, 9686, 5497, 5517, 4133, 9677, 5221, 477, 6188, 5119, 4161, 4578, 1212, 2]
+// Dependencies: [19, 17, 4181, 676, 1369, 21, 4189, 712, 589, 9708, 5515, 5535, 4157, 9699, 5243, 500, 6208, 5141, 4185, 4600, 1236, 2]
 // Exports: default
 
-// Module 15720 (GiftingPromotionCoachmarkActionSheet)
-import result from "result";
-import { View } from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 15756 (GiftingPromotionCoachmarkActionSheet)
+import Button from "Button";
+import { View } from "preload";
+import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
 import ME from "ME";
 import { ContentDismissActionType } from "ContentDismissActionType";
-import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import jsxProd from "set";
+import createCacheKey from "createCacheKey";
 
-let closure_10;
-let closure_11;
+let c10;
 let closure_6;
-let closure_7;
-let closure_8;
+let error;
+let metroImportAll;
+let unpackModuleId;
 const require = arg1;
-({ AnalyticsSections: closure_6, AnalyticsObjects: closure_7, AnalyticsPages: closure_8 } = ME);
-({ jsx: closure_10, jsxs: closure_11 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { alignItems: "center", padding: require("_createForOfIteratorHelperLoose").space.PX_16 };
-_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.textContainer = { gap: require("_createForOfIteratorHelperLoose").space.PX_8, paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16, paddingVertical: require("_createForOfIteratorHelperLoose").space.PX_24 };
-_createForOfIteratorHelperLoose.text = { textAlign: "center" };
-let obj2 = { height: 188, width: 335, borderRadius: require("_createForOfIteratorHelperLoose").radii.sm };
-_createForOfIteratorHelperLoose.imageShared = obj2;
-_createForOfIteratorHelperLoose.imageWrapperAndroid = { overflow: "hidden" };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-let obj1 = { gap: require("_createForOfIteratorHelperLoose").space.PX_8, paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16, paddingVertical: require("_createForOfIteratorHelperLoose").space.PX_24 };
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/premium/gifting/native/views/promotions/GiftingPromotionCoachmark.tsx");
+({ AnalyticsSections: closure_6, AnalyticsObjects: error, AnalyticsPages: metroImportAll } = ME);
+({ jsx: c10, jsxs: unpackModuleId } = jsxProd);
+createCacheKey = { container: null, textContainer: null, text: null, imageShared: null, imageWrapperAndroid: null };
+createCacheKey = { alignItems: "center", padding: require("Themes").space.PX_16 };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { gap: require("Themes").space.PX_8, paddingHorizontal: require("Themes").space.PX_16, paddingVertical: require("Themes").space.PX_24 };
+createCacheKey[2] = { textAlign: "center" };
+let obj1 = { gap: require("Themes").space.PX_8, paddingHorizontal: require("Themes").space.PX_16, paddingVertical: require("Themes").space.PX_24 };
+createCacheKey[3] = { height: 188, width: 335, borderRadius: require("Themes").radii.sm };
+createCacheKey[4] = { overflow: "hidden" };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let obj2 = { height: 188, width: 335, borderRadius: require("Themes").radii.sm };
+const result = require("maybeApplyNoTextColorForLightCustomTheme").fileFinishedImporting("modules/premium/gifting/native/views/promotions/GiftingPromotionCoachmark.tsx");
 
 export default function GiftingPromotionCoachmarkActionSheet(arg0) {
   let coachmarkComponent;
   let markAsDismissed;
   ({ coachmarkComponent, markAsDismissed } = arg0);
   let analyticsLocations;
-  const tmp = _createForOfIteratorHelperLoose();
-  let obj = markAsDismissed(566);
-  const items = [_isNativeReflectConstruct];
-  const stateFromStores = obj.useStateFromStores(items, () => outer1_5.useReducedMotion);
-  let obj1 = markAsDismissed(9686);
+  const tmp = createCacheKey();
+  let obj = markAsDismissed(589);
+  const items = [maybeApplyNoTextColorForLightCustomTheme];
+  const stateFromStores = obj.useStateFromStores(items, () => useReducedMotion.useReducedMotion);
+  let obj1 = markAsDismissed(9708);
   let asset;
-  if (null != coachmarkComponent) {
+  if (coachmarkComponent != null) {
     asset = coachmarkComponent.asset;
   }
   const themeAndReducedMotionAwareAssetUrl = obj1.useThemeAndReducedMotionAwareAssetUrl(asset);
-  analyticsLocations = analyticsLocations(5497)(analyticsLocations(5517).GIFTING_PROMOTION_COACHMARK).analyticsLocations;
+  let tmp7 = analyticsLocations;
+  analyticsLocations = analyticsLocations(5515)(analyticsLocations(5535).GIFTING_PROMOTION_COACHMARK).analyticsLocations;
   const items1 = [analyticsLocations, markAsDismissed];
-  let tmp8Result = null;
+  let tmp11Result = null;
   if (null != coachmarkComponent) {
-    obj = {
-      startExpanded: true,
-      onDismiss() {
-          return markAsDismissed(outer1_9.USER_DISMISS);
-        }
+    obj = { startExpanded: true, onDismiss: null, children: null };
+    obj[1] = function onDismiss() {
+      return markAsDismissed(outer1_9.USER_DISMISS);
     };
-    obj = { style: tmp.container };
+    obj = { style: null, children: null };
+    obj[0] = tmp.container;
     if (null == themeAndReducedMotionAwareAssetUrl) {
-      const items2 = [tmp14, , ];
-      obj1 = { style: tmp.textContainer };
-      const obj2 = { style: tmp.text, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: coachmarkComponent.header };
-      const items3 = [callback(markAsDismissed(4161).Text, obj2), ];
-      const obj3 = { style: tmp.text, variant: "text-md/normal", color: "text-default", children: coachmarkComponent.body };
-      items3[1] = callback(markAsDismissed(4161).Text, obj3);
-      obj1.children = items3;
-      items2[1] = callback2(View, obj1);
-      let obj4 = { grow: true };
-      const intl = markAsDismissed(1212).intl;
-      obj4.text = intl.string(markAsDismissed(1212).t.RzWDqY);
-      obj4.onPress = tmp6;
-      items2[2] = callback(markAsDismissed(4578).Button, obj4);
-      obj.children = items2;
-      obj.children = tmp12(tmp13, obj);
-      tmp8Result = tmp8(tmp11, obj);
+      const items2 = [tmp15, , ];
+      obj1 = { style: null, children: null };
+      obj1[0] = tmp.textContainer;
+      const obj2 = { style: null, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: null };
+      obj2[0] = tmp.text;
+      obj2[3] = coachmarkComponent.header;
+      const items3 = [tmp11(tmp2(4185).Text, obj2), ];
+      const obj3 = { style: null, variant: "text-md/normal", color: "text-default", children: null };
+      obj3[0] = tmp.text;
+      obj3[3] = coachmarkComponent.body;
+      items3[1] = tmp11(tmp2(4185).Text, obj3);
+      obj1[1] = items3;
+      items2[1] = tmp13(tmp14, obj1);
+      const obj4 = { grow: true, text: null, onPress: null };
+      const intl = tmp2(1236).intl;
+      obj4[1] = intl.string(tmp2(1236).t.RzWDqY);
+      obj4[2] = tmp9;
+      items2[2] = tmp11(tmp2(4600).Button, obj4);
+      obj[1] = items2;
+      obj[2] = tmp13(tmp14, obj);
+      tmp11Result = tmp11(tmp12, obj);
     } else {
-      obj4 = markAsDismissed(477);
-      if (obj4.isAndroid()) {
+      if (tmp2Result.isAndroid()) {
         if (!stateFromStores) {
-          const obj5 = {};
+          const obj5 = { style: null, children: null };
           const items4 = [, ];
           ({ imageShared: arr3[0], imageWrapperAndroid: arr3[1] } = tmp);
-          obj5.style = items4;
-          const obj6 = { url: themeAndReducedMotionAwareAssetUrl, style: tmp.imageShared };
-          obj5.children = callback(analyticsLocations(6188), obj6);
-          let tmp21 = callback(View, obj5);
+          obj5[0] = items4;
+          const obj6 = { url: null, style: null };
+          obj6[0] = themeAndReducedMotionAwareAssetUrl;
+          obj6[1] = tmp.imageShared;
+          obj5[1] = tmp11(tmp7(6208), obj6);
+          tmp11Result = tmp11(tmp14, obj5);
         }
       }
-      const obj7 = {};
-      const obj8 = { uri: themeAndReducedMotionAwareAssetUrl };
-      obj7.source = obj8;
-      obj7.style = tmp.imageShared;
-      tmp21 = callback(analyticsLocations(5119), obj7);
+      tmp7 = tmp7(5141);
+      const obj7 = { source: null, style: null };
+      const obj8 = { uri: null };
+      obj8[0] = themeAndReducedMotionAwareAssetUrl;
+      obj7[0] = obj8;
+      obj7[1] = tmp.imageShared;
+      tmp11Result = tmp11(tmp7, obj7);
+      tmp2Result = tmp2(500);
     }
-    tmp8 = callback;
   }
-  return tmp8Result;
+  return tmp11Result;
 };

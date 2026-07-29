@@ -1,10 +1,10 @@
-// Module ID: 11985
-// Function ID: 92541
+// Module ID: 12009
+// Function ID: 12010
 // Name: PlatformTypes
-// Dependencies: [653, 11984, 9055, 4849, 8155, 11969, 11970, 11986, 11987, 2]
+// Dependencies: [676, 12008, 9079, 4871, 8179, 11993, 11994, 12010, 12011, 2]
 // Exports: default
 
-// Module 11985 (PlatformTypes)
+// Module 12009 (PlatformTypes)
 import { PlatformTypes } from "ME";
 import set from "isListeningOnSpotify";
 
@@ -15,31 +15,33 @@ const result = set.fileFinishedImporting("modules/user_profile/utils/getActivity
 
 export default function getActivityPlatform(session_id) {
   const importDefault = session_id;
-  const tmp = importDefault(11984)(session_id.session_id);
-  if (null != tmp) {
-    return tmp;
-  } else if (importDefault(9055)(session_id)) {
-    return tmp24(4849).get(PlatformTypes.SPOTIFY);
-  } else if (tmp24(8155)(session_id)) {
-    return tmp2(4849).get(PlatformTypes.CRUNCHYROLL);
-  } else if (tmp2(11969)(session_id)) {
-    return tmp4(4849).get(PlatformTypes.XBOX);
-  } else if (tmp4(11970)(session_id)) {
-    return tmp6(4849).get(PlatformTypes.PLAYSTATION);
+  const tmp3 = importDefault(12008)(session_id.session_id);
+  if (null != tmp3) {
+    return tmp3;
+  } else if (tmp(9079)(session_id)) {
+    let tmpResult = tmp(4871);
+    return tmpResult.get(PlatformTypes.SPOTIFY);
+  } else if (tmp(8179)(session_id)) {
+    tmpResult = tmp(4871);
+    return tmpResult.get(PlatformTypes.CRUNCHYROLL);
+  } else if (tmp(11993)(session_id)) {
+    return tmp(4871).get(PlatformTypes.XBOX);
+  } else if (tmp(11994)(session_id)) {
+    return tmp(4871).get(PlatformTypes.PLAYSTATION);
   } else {
-    if (!tmp6(11986)(session_id)) {
-      if (!importDefault(11987)(session_id)) {
-        const found = importDefault(4849).find((name) => name.name === session_id.name);
-        let tmp13 = null;
+    if (!tmp(12010)(session_id)) {
+      if (!tmp(12011)(session_id)) {
+        const found = tmp(4871).find((name) => name.name === session_id.name);
+        let tmp5 = null;
         if (null != found) {
-          tmp13 = null;
+          tmp5 = null;
           if (set.has(found.type)) {
-            tmp13 = found;
+            tmp5 = found;
           }
         }
-        return tmp13;
+        return tmp5;
       }
     }
-    return importDefault(4849).get(PlatformTypes.META_QUEST_OR_HORIZON);
+    return tmp(4871).get(PlatformTypes.META_QUEST_OR_HORIZON);
   }
 };

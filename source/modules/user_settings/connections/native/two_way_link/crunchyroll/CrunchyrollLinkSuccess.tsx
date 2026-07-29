@@ -1,51 +1,51 @@
-// Module ID: 8967
-// Function ID: 70691
+// Module ID: 8991
+// Function ID: 8992
 // Name: CrunchyrollLinkDiscordSuccess
-// Dependencies: [31, 27, 33, 4165, 8914, 8968, 4161, 1212, 5155, 4578, 2]
+// Dependencies: [19, 17, 21, 4189, 8938, 8992, 4185, 1236, 5177, 4600, 2]
 // Exports: default
 
-// Module 8967 (CrunchyrollLinkDiscordSuccess)
-import "result";
+// Module 8991 (CrunchyrollLinkDiscordSuccess)
+import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_3;
-let closure_4;
-let closure_5;
+let c3;
+let c4;
+let c5;
 let closure_6;
 const require = arg1;
-({ Image: closure_3, View: closure_4 } = get_ActivityIndicator);
-({ jsx: closure_5, jsxs: closure_6 } = jsxProd);
-let closure_7 = _createForOfIteratorHelperLoose.createStyles({ image: { width: 232, height: 108, marginBottom: 24 } });
+({ Image: c3, View: c4 } = get_ActivityIndicator);
+({ jsx: c5, jsxs: closure_6 } = jsxProd);
+let closure_7 = createCacheKey.createStyles({ image: { width: 232, height: 108, marginBottom: 24 } });
 const result = require("jsxProd").fileFinishedImporting("modules/user_settings/connections/native/two_way_link/crunchyroll/CrunchyrollLinkSuccess.tsx");
 
 export default function CrunchyrollLinkDiscordSuccess(onClose) {
-  let obj = require(8914) /* styles */;
+  let obj = require(8938) /* styles */;
   const twoWayLinkStyles = obj.useTwoWayLinkStyles();
-  obj = { style: twoWayLinkStyles.container };
-  obj = { style: twoWayLinkStyles.content };
+  obj = { style: twoWayLinkStyles.container, children: null };
+  obj = { style: twoWayLinkStyles.content, children: null };
   const tmp = callback3();
-  const items = [callback(closure_3, { source: importDefault(8968), style: callback3().image }), , ];
-  const obj2 = { variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", style: twoWayLinkStyles.title };
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj2.children = intl.string(require(1212) /* getSystemLocale */.t.Fnvxvk);
-  items[1] = callback(require(4161) /* Text */.Text, obj2);
-  const obj3 = { variant: "text-md/normal", color: "text-default", style: twoWayLinkStyles.body };
-  const intl2 = require(1212) /* getSystemLocale */.intl;
-  obj3.children = intl2.string(require(1212) /* getSystemLocale */.t.YwXceg);
-  items[2] = callback(require(4161) /* Text */.Text, obj3);
-  obj.children = items;
+  const items = [callback(closure_3, { source: importDefault(8992), style: callback3().image }), , ];
+  const obj2 = { variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", style: twoWayLinkStyles.title, children: null };
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj2[3] = intl.string(require(1236) /* getSystemLocale */.t.Fnvxvk);
+  items[1] = callback(require(4185) /* Text */.Text, obj2);
+  const obj3 = { variant: "text-md/normal", color: "text-default", style: twoWayLinkStyles.body, children: null };
+  const intl2 = require(1236) /* getSystemLocale */.intl;
+  obj3[3] = intl2.string(require(1236) /* getSystemLocale */.t.YwXceg);
+  items[2] = callback(require(4185) /* Text */.Text, obj3);
+  obj[1] = items;
   const items1 = [callback2(closure_4, obj), ];
-  const obj4 = { bottom: true, style: twoWayLinkStyles.footerContainer };
-  const obj5 = { style: twoWayLinkStyles.footerButton };
-  const obj6 = { size: "md" };
-  const intl3 = require(1212) /* getSystemLocale */.intl;
-  obj6.text = intl3.string(require(1212) /* getSystemLocale */.t.i4jeWR);
-  obj6.onPress = onClose.onClose;
-  obj5.children = callback(require(4578) /* Button */.Button, obj6);
-  obj4.children = callback(closure_4, obj5);
-  items1[1] = callback(require(5155) /* SafeAreaPaddingView */.SafeAreaPaddingView, obj4);
-  obj.children = items1;
+  const obj4 = { bottom: true, style: twoWayLinkStyles.footerContainer, children: null };
+  const obj5 = { style: twoWayLinkStyles.footerButton, children: null };
+  const obj6 = { size: "md", text: null, onPress: null };
+  const intl3 = require(1236) /* getSystemLocale */.intl;
+  obj6[1] = intl3.string(require(1236) /* getSystemLocale */.t.i4jeWR);
+  obj6[2] = onClose.onClose;
+  obj5[1] = callback(require(4600) /* Button */.Button, obj6);
+  obj4[2] = callback(closure_4, obj5);
+  items1[1] = callback(require(5177) /* SafeAreaPaddingView */.SafeAreaPaddingView, obj4);
+  obj[1] = items1;
   return callback2(closure_4, obj);
 };

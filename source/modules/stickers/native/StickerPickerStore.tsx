@@ -1,22 +1,23 @@
-// Module ID: 9601
-// Function ID: 74778
+// Module ID: 9623
+// Function ID: 9624
 // Name: useStickerPickerStore
-// Dependencies: [621, 682, 2]
+// Dependencies: [644, 705, 2]
 
-// Module 9601 (useStickerPickerStore)
+// Module 9623 (useStickerPickerStore)
 import keys from "keys";
 
 let obj = keys.create((arg0) => {
   let closure_0 = arg0;
   return {
     packToScrollTo: null,
-    setPackToScrollTo(outer1_3) {
-      const callback = outer1_3;
+    setPackToScrollTo(pack_id) {
+      const callback = pack_id;
       return callback(outer1_1[1]).batchUpdates(() => {
-        outer1_3((packToScrollTo) => {
+        pack_id((packToScrollTo) => {
           let tmp = packToScrollTo;
-          if (packToScrollTo.packToScrollTo !== outer1_0) {
-            const obj = { packToScrollTo: outer1_0 };
+          if (packToScrollTo.packToScrollTo !== closure_0) {
+            const obj = { packToScrollTo: null };
+            obj[0] = tmp2;
             tmp = obj;
           }
           return tmp;

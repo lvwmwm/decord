@@ -1,38 +1,38 @@
-// Module ID: 15275
-// Function ID: 116133
+// Module ID: 15308
+// Function ID: 15309
 // Name: ForYouSuggestedFriendsSectionHeader
-// Dependencies: [31, 27, 33, 4165, 689, 4161, 1212, 2]
+// Dependencies: [19, 17, 21, 4189, 712, 4185, 1236, 2]
 // Exports: default
 
-// Module 15275 (ForYouSuggestedFriendsSectionHeader)
-import "result";
+// Module 15308 (ForYouSuggestedFriendsSectionHeader)
+import "noop";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
 const require = arg1;
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { borderTopWidth: 1, borderTopColor: require("_createForOfIteratorHelperLoose").colors.BORDER_SUBTLE, marginTop: 12, marginBottom: 8, paddingHorizontal: 24, flexDirection: "row", alignItems: "center", justifyContent: "space-between" };
-_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.noDivider = { borderTopWidth: 0, marginTop: 0 };
-_createForOfIteratorHelperLoose.text = { marginTop: require("_createForOfIteratorHelperLoose").space.PX_16 };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-const obj1 = { marginTop: require("_createForOfIteratorHelperLoose").space.PX_16 };
+createCacheKey = { container: null, noDivider: null, text: null };
+createCacheKey = { borderTopWidth: 1, borderTopColor: require("Themes").colors.BORDER_SUBTLE, marginTop: 12, marginBottom: 8, paddingHorizontal: 24, flexDirection: "row", alignItems: "center", justifyContent: "space-between" };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { borderTopWidth: 0, marginTop: 0 };
+createCacheKey[2] = { marginTop: require("Themes").space.PX_16 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+const obj1 = { marginTop: require("Themes").space.PX_16 };
 const result = require("jsxProd").fileFinishedImporting("modules/notification_center/native/ForYouSuggestedFriendsSectionHeader.tsx");
 
 export default function ForYouSuggestedFriendsSectionHeader(showDivider) {
-  const tmp = _createForOfIteratorHelperLoose();
-  let obj = {};
+  showDivider = showDivider.showDivider;
+  const tmp = createCacheKey();
   const items = [tmp.container, ];
-  let noDivider = !showDivider.showDivider;
-  if (noDivider) {
+  let noDivider = !showDivider;
+  if (!showDivider) {
     noDivider = tmp.noDivider;
   }
+  let obj = { style: items, children: null };
   items[1] = noDivider;
-  obj.style = items;
-  obj = { style: tmp.text, color: "text-muted", variant: "text-sm/semibold" };
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj.children = intl.string(require(1212) /* getSystemLocale */.t["1uAmCw"]);
-  obj.children = jsx(require(4161) /* Text */.Text, { style: tmp.text, color: "text-muted", variant: "text-sm/semibold" });
-  return <View style={tmp.text} color="text-muted" variant="text-sm/semibold" />;
+  obj = { style: tmp.text, color: "text-muted", variant: "text-sm/semibold", children: null };
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj[3] = intl.string(require(1236) /* getSystemLocale */.t["1uAmCw"]);
+  obj[1] = jsx(require(4185) /* Text */.Text, { style: tmp.text, color: "text-muted", variant: "text-sm/semibold", children: null });
+  return <View style={tmp.text} color="text-muted" variant="text-sm/semibold">{null}</View>;
 };

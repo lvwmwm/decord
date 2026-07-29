@@ -1,31 +1,31 @@
-// Module ID: 8306
-// Function ID: 66515
+// Module ID: 8330
+// Function ID: 8331
 // Name: GuildEventRecurrences
-// Dependencies: [31, 27, 33, 4165, 689, 8307, 4161, 1212, 21, 8309, 4578, 2]
+// Dependencies: [19, 17, 21, 4189, 712, 8331, 4185, 1236, 11, 8333, 4600, 2]
 // Exports: default
 
-// Module 8306 (GuildEventRecurrences)
-import result from "result";
+// Module 8330 (GuildEventRecurrences)
+import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_4;
-let closure_5;
+let c4;
+let c5;
 let closure_6;
-let closure_7;
+let error;
 const require = arg1;
-({ View: closure_4, ScrollView: closure_5 } = get_ActivityIndicator);
-({ jsx: closure_6, jsxs: closure_7 } = jsxProd);
-_createForOfIteratorHelperLoose = { container: { marginTop: 16 } };
-_createForOfIteratorHelperLoose = { marginTop: 8, marginBottom: 8, borderRadius: require("_createForOfIteratorHelperLoose").radii.sm, maxHeight: 140 };
-_createForOfIteratorHelperLoose.scrollView = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+({ View: c4, ScrollView: c5 } = get_ActivityIndicator);
+({ jsx: closure_6, jsxs: error } = jsxProd);
+createCacheKey = { container: { marginTop: 16 }, scrollView: null };
+createCacheKey = { marginTop: 8, marginBottom: 8, borderRadius: require("Themes").radii.sm, maxHeight: 140 };
+createCacheKey[1] = createCacheKey;
+createCacheKey = createCacheKey.createStyles(createCacheKey);
 const result = require("jsxProd").fileFinishedImporting("modules/guild_scheduled_events/native/components/GuildEventRecurrences.tsx");
 
 export default function GuildEventRecurrences(guildEventId) {
+  let c4;
   let canViewMoreRecurrences;
-  let closure_4;
   let dependencyMap;
   let guildId;
   let hideViewMoreButton;
@@ -34,15 +34,17 @@ export default function GuildEventRecurrences(guildEventId) {
   let recurrenceStartTimes;
   guildEventId = guildEventId.guildEventId;
   ({ onRecurrencePress: importDefault, activeRecurrenceId: dependencyMap } = guildEventId);
+  let ref;
+  c4 = undefined;
   ({ guildId, recurrenceRule, hideViewMoreButton } = guildEventId);
   ref = ref.useRef(null);
-  const tmp2 = _createForOfIteratorHelperLoose();
-  ({ recurrenceStartTimes, canViewMoreRecurrences, updateRecurrenceStartTimes: closure_4 } = importDefault(8307)(guildEventId, guildId, recurrenceRule));
-  let obj = { style: tmp2.container };
-  obj = { variant: "heading-md/semibold" };
-  const intl = guildEventId(1212).intl;
-  obj.children = intl.string(guildEventId(1212).t["D/jjoa"]);
-  const items = [callback(guildEventId(4161).Text, obj), , ];
+  const tmp2 = createCacheKey();
+  ({ recurrenceStartTimes, canViewMoreRecurrences, updateRecurrenceStartTimes: c4 } = importDefault(8331)(guildEventId, guildId, recurrenceRule));
+  let obj = { style: tmp2.container, children: null };
+  obj = { variant: "heading-md/semibold", children: null };
+  const intl = guildEventId(1236).intl;
+  obj[1] = intl.string(guildEventId(1236).t["D/jjoa"]);
+  const items = [callback(guildEventId(4185).Text, obj), , ];
   obj = {
     style: tmp2.scrollView,
     ref,
@@ -58,21 +60,20 @@ export default function GuildEventRecurrences(guildEventId) {
     canViewMoreRecurrences = !hideViewMoreButton;
   }
   if (canViewMoreRecurrences) {
-    const obj1 = {};
-    const intl2 = guildEventId(1212).intl;
-    obj1.text = intl2.string(guildEventId(1212).t["8O7Hpy"]);
-    obj1.onPress = function onPress(stopPropagation) {
+    const obj1 = { text: null, onPress: null, size: "sm" };
+    const intl2 = tmp8(1236).intl;
+    obj1[0] = intl2.string(tmp8(1236).t["8O7Hpy"]);
+    obj1[1] = function onPress(stopPropagation) {
       stopPropagation.stopPropagation();
-      callback();
+      _undefined();
       const current = ref.current;
-      if (null != current) {
+      if (current != null) {
         current.scrollToEnd();
       }
     };
-    obj1.size = "sm";
-    canViewMoreRecurrences = callback(guildEventId(4578).Button, obj1);
+    canViewMoreRecurrences = callback(tmp8(4600).Button, obj1);
   }
   items[2] = canViewMoreRecurrences;
-  obj.children = items;
-  return closure_7(closure_4, obj);
+  obj[1] = items;
+  return closure_7(c4, obj);
 };

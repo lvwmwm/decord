@@ -1,39 +1,25 @@
-// Module ID: 16268
-// Function ID: 126028
-// Name: _isNativeReflectConstruct
-// Dependencies: [7, 6, 15, 17, 18, 27, 1347, 4184, 4237, 8808, 477, 16269, 8809, 5112, 2]
+// Module ID: 16303
+// Function ID: 16304
+// Name: handleChange
+// Dependencies: [17, 1371, 4208, 4261, 8832, 500, 16304, 8833, 5134, 2]
 
-// Module 16268 (_isNativeReflectConstruct)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
-import closure_7 from "_createForOfIteratorHelperLoose";
-import closure_8 from "_isNativeReflectConstruct";
-import closure_9 from "_isNativeReflectConstruct";
-import closure_10 from "_isNativeReflectConstruct";
+// Module 16303 (handleChange)
+import participantFromServer from "participantFromServer";
+import reset from "reset";
+import createRTCConnection from "createRTCConnection";
+import handleAudioRouteChanged from "handleAudioRouteChanged";
 import set from "set";
-import tmp2 from "AutomaticLifecycleManager";
-import set from "_possibleConstructorReturn";
+import "initialize";
+import set from "reset";
 
 const require = arg1;
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
-  }
-  const result = _isNativeReflectConstruct();
-}
 function handleChange() {
   currentRouteType = currentRouteType.getCurrentRouteType();
   const tmp3 = null != currentEmbeddedActivity.getCurrentEmbeddedActivity();
   const isConnectedResult = connected.isConnected();
-  let tmp6 = currentRouteType === require(8809) /* RouteTypes */.RouteTypes.RECEIVER && isConnectedResult;
-  if (tmp6) {
-    let isIOSResult = require(477) /* set */.isIOS();
+  let tmp8 = currentRouteType === require(8833) /* RouteTypes */.RouteTypes.RECEIVER && isConnectedResult;
+  if (tmp8) {
+    let isIOSResult = require(500) /* set */.isIOS();
     if (!isIOSResult) {
       let tmp10 = !tmp3;
       if (!tmp3) {
@@ -41,17 +27,25 @@ function handleChange() {
       }
       isIOSResult = tmp10;
     }
-    tmp6 = isIOSResult;
-    const obj = require(477) /* set */;
+    tmp8 = isIOSResult;
+    const tmp6Result = require(500) /* set */;
   }
-  const result = ProximitySensorManager.setProximityMonitoringEnabled(tmp6);
+  const result = ProximitySensorManager.setProximityMonitoringEnabled(tmp8);
 }
 if (set.isIOS()) {
   let ProximitySensorManager = require("get ActivityIndicator").NativeModules.ProximitySensorManager;
 } else {
   ProximitySensorManager = require("enforcing");
 }
-tmp2 = new tmp2();
+let prototype = function ProximitySensorManager() {
+  const applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
+  const result = new Map().set(handleAudioRouteChanged, handleChange);
+  applyArgumentsResult.stores = result.set(createRTCConnection, handleChange);
+  return applyArgumentsResult;
+}.prototype;
+class prototype extends tmp2 {
+}
+prototype = new prototype();
 let result = set.fileFinishedImporting("modules/voice_calls/native/ProximitySensorManager.tsx");
 
-export default tmp2;
+export default prototype;

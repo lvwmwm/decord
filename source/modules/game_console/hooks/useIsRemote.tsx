@@ -1,22 +1,16 @@
-// Module ID: 6031
-// Function ID: 53476
+// Module ID: 6049
+// Function ID: 6050
 // Name: useIsRemote
-// Dependencies: [4179, 566, 2]
+// Dependencies: [4203, 589, 2]
 // Exports: default
 
-// Module 6031 (useIsRemote)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 6049 (useIsRemote)
+import set from "set";
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/game_console/hooks/useIsRemote.tsx");
 
 export default function useIsRemote() {
-  const items = [_isNativeReflectConstruct];
-  return require(566) /* initialize */.useStateFromStores(items, () => {
-    let tmp = null != outer1_2.getRemoteSessionId();
-    if (!tmp) {
-      tmp = null != outer1_2.getAwaitingRemoteSessionInfo();
-    }
-    return tmp;
-  });
+  const items = [set];
+  return require(589) /* initialize */.useStateFromStores(items, () => null != remoteSessionId.getRemoteSessionId() || null != remoteSessionId.getAwaitingRemoteSessionInfo());
 };

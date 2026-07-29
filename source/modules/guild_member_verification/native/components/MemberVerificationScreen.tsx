@@ -1,67 +1,71 @@
-// Module ID: 15539
-// Function ID: 119284
+// Module ID: 15573
+// Function ID: 15574
 // Name: Loading
-// Dependencies: [31, 27, 1908, 1838, 3983, 653, 33, 4165, 689, 5619, 9119, 566, 5485, 3985, 9124, 1198, 4016, 1557, 5620, 15540, 2]
+// Dependencies: [19, 17, 1932, 1862, 4007, 676, 21, 4189, 712, 5637, 9143, 589, 5503, 4009, 9148, 1222, 4040, 1581, 5638, 15574, 2]
 
-// Module 15539 (Loading)
-import result from "result";
-import { View } from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_7 from "_createForOfIteratorHelperLoose";
-import closure_8 from "_isNativeReflectConstruct";
+// Module 15573 (Loading)
+import closure_4 from "makeAuthenticated";
+import { View } from "useSafeAreaInsets";
+import comparator from "comparator";
+import createGuildRecordFromRust from "createGuildRecordFromRust";
+import handleGatewayJoinRequestUpdate from "handleGatewayJoinRequestUpdate";
 import { Routes } from "ME";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 import makeAuthenticated from "makeAuthenticated";
 
 const require = arg1;
 function Loading() {
-  return <View style={_createForOfIteratorHelperLoose().flexLoading}>{jsx(require(5619) /* ActivityIndicator */.ActivityIndicator, {})}</View>;
+  return <View style={createCacheKey().flexLoading}>{jsx(require(5637) /* ActivityIndicator */.ActivityIndicator, {})}</View>;
 }
 function MemberVerificationRouteView(arg0) {
   const merged = Object.assign(arg0);
-  return jsx(importDefault(9119), {});
+  return jsx(importDefault(9143), {});
 }
 function ExistingJoinRequestHandler(guildId) {
   guildId = guildId.guildId;
   const onClose = guildId.onClose;
-  const items = [closure_7];
-  const stateFromStores = guildId(stateFromStores1[11]).useStateFromStores(items, () => outer1_7.getGuild(guildId));
+  let stateFromStores;
+  let stateFromStores1;
+  let React;
+  const items = [createGuildRecordFromRust];
+  stateFromStores = guildId(stateFromStores1[11]).useStateFromStores(items, () => outer1_7.getGuild(guildId));
   let obj = guildId(stateFromStores1[11]);
-  const items1 = [_isNativeReflectConstruct];
+  const items1 = [comparator];
   const items2 = [stateFromStores];
   stateFromStores1 = guildId(stateFromStores1[11]).useStateFromStores(items1, () => {
-    let tmp = null;
+    let tmp2 = null;
     if (null != stateFromStores) {
-      const defaultChannel = outer1_6.getDefaultChannel(stateFromStores.id);
+      const defaultChannel = outer1_6.getDefaultChannel(tmp.id);
       let id;
-      if (null != defaultChannel) {
+      if (defaultChannel != null) {
         id = defaultChannel.id;
       }
-      tmp = id;
+      tmp2 = id;
     }
-    return tmp;
+    return tmp2;
   }, items2);
   const obj2 = guildId(stateFromStores1[11]);
-  const items3 = [closure_8];
+  const items3 = [handleGatewayJoinRequestUpdate];
   const stateFromStores2 = guildId(stateFromStores1[11]).useStateFromStores(items3, () => outer1_8.getRequest(guildId));
-  const tmp4 = onClose(stateFromStores1[12])(stateFromStores2);
-  const React = tmp4;
-  const items4 = [guildId, tmp4, onClose];
+  const tmp6 = onClose(stateFromStores1[12])(stateFromStores2);
+  React = tmp6;
+  const items4 = [guildId, tmp6, onClose];
   const effect = React.useEffect(() => {
     let applicationStatus;
-    if (null != tmp4) {
-      applicationStatus = tmp4.applicationStatus;
+    if (_undefined != null) {
+      applicationStatus = _undefined.applicationStatus;
     }
     if (guildId(stateFromStores1[13]).GuildJoinRequestApplicationStatuses.SUBMITTED === applicationStatus) {
       onClose();
-      const result = guildId(stateFromStores1[14]).openMemberVerificationPendingAlert(guildId);
-      const obj3 = guildId(stateFromStores1[14]);
-    } else if (guildId(stateFromStores1[13]).GuildJoinRequestApplicationStatuses.REJECTED === applicationStatus) {
+      let tmp2Result = tmp2(tmp3[14]);
+      const result = tmp2Result.openMemberVerificationPendingAlert(guildId);
+    } else if (tmp2(tmp3[13]).GuildJoinRequestApplicationStatuses.REJECTED === applicationStatus) {
       onClose();
-      let obj = guildId(stateFromStores1[14]);
-      obj = { guildId, canWithdraw: true };
-      const result1 = obj.openMemberVerificationRejectedAlert(obj);
+      tmp2Result = tmp2(tmp3[14]);
+      const obj = { guildId: null, canWithdraw: true };
+      obj[0] = guildId;
+      const result1 = tmp2Result.openMemberVerificationRejectedAlert(obj);
     }
   }, items4);
   const items5 = [stateFromStores, guildId, onClose, stateFromStores1];
@@ -69,7 +73,7 @@ function ExistingJoinRequestHandler(guildId) {
     if (null != stateFromStores) {
       if (null != guildId) {
         if (null != stateFromStores1) {
-          stateFromStores(stateFromStores1[15]).transitionTo(outer1_9.CHANNEL(guildId, stateFromStores1));
+          stateFromStores(stateFromStores1[15]).transitionTo(outer1_9.CHANNEL(tmp, tmp2));
           const obj = stateFromStores(stateFromStores1[15]);
         }
       }
@@ -79,22 +83,22 @@ function ExistingJoinRequestHandler(guildId) {
     }
   }, items5);
   let applicationStatus;
-  if (null != tmp4) {
-    applicationStatus = tmp4.applicationStatus;
+  if (tmp6 != null) {
+    applicationStatus = tmp6.applicationStatus;
   }
   if (guildId(stateFromStores1[13]).GuildJoinRequestApplicationStatuses.SUBMITTED !== applicationStatus) {
-    if (guildId(stateFromStores1[13]).GuildJoinRequestApplicationStatuses.APPROVED !== applicationStatus) {
-      if (guildId(stateFromStores1[13]).GuildJoinRequestApplicationStatuses.REJECTED !== applicationStatus) {
+    if (tmp(tmp2[13]).GuildJoinRequestApplicationStatuses.APPROVED !== applicationStatus) {
+      if (tmp(tmp2[13]).GuildJoinRequestApplicationStatuses.REJECTED !== applicationStatus) {
         return guildId.children;
       }
     }
   }
   return <Loading />;
 }
-_createForOfIteratorHelperLoose = { flex: { flex: 1 } };
-_createForOfIteratorHelperLoose = { flex: 1, alignItems: "center", justifyContent: "center", backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW };
-_createForOfIteratorHelperLoose.flexLoading = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+createCacheKey = { flex: { flex: 1 }, flexLoading: null };
+createCacheKey = { flex: 1, alignItems: "center", justifyContent: "center", backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW };
+createCacheKey[1] = createCacheKey;
+createCacheKey = createCacheKey.createStyles(createCacheKey);
 const authenticated = makeAuthenticated.makeAuthenticated(function MemberVerificationRouteContainer(navigation) {
   navigation = navigation.navigation;
   const guildId = navigation.route.params.guildId;
@@ -106,7 +110,7 @@ const authenticated = makeAuthenticated.makeAuthenticated(function MemberVerific
     ({ routes, index } = state);
     if (routes.length > 1) {
       let name;
-      if (null != routes[index - 1]) {
+      if (routes[index - 1] != null) {
         name = tmp5.name;
       }
       if ("member-verification" !== name) {
@@ -118,7 +122,6 @@ const authenticated = makeAuthenticated.makeAuthenticated(function MemberVerific
             if ("member-verification" !== tmp9.name) {
               let tmp11 = navigation;
               let tmp12 = outer1_3;
-              let num3 = 16;
               let obj3 = navigation(outer1_3[16]);
               let popScreensResult = obj3.popScreens(index - diff);
               break;
@@ -136,29 +139,34 @@ const authenticated = makeAuthenticated.makeAuthenticated(function MemberVerific
         }
       }
     } else {
-      let obj = navigation(outer1_3[16]);
-      obj = { screen: "messages" };
-      obj.navigateToRootTab(obj);
+      navigation(outer1_3[16]).navigateToRootTab({ screen: "messages" });
+      const obj2 = navigation(outer1_3[16]);
     }
   }, items);
-  importDefault(1557)();
+  importDefault(1581)();
   if (null == guildId) {
-    let tmp8 = <Loading />;
+    let tmp10 = <Loading />;
   } else {
-    let obj = { guildId, onClose: callback };
-    obj = {};
+    let obj = { guildId: null, onClose: null, children: null };
+    obj[0] = guildId;
+    obj[1] = callback;
+    obj = { style: null, children: null };
     const items1 = [tmp.flex, ];
-    obj = { marginLeft: tmp4, marginRight: tmp5 };
+    obj = { marginLeft: null, marginRight: null };
+    obj[0] = tmp6;
+    obj[1] = tmp7;
     items1[1] = obj;
-    obj.style = items1;
-    const obj1 = { guildId, onClose: callback };
-    obj.children = <MemberVerificationRouteView guildId={guildId} onClose={callback} />;
-    obj.children = jsx(importDefault(5620), { marginLeft: tmp4, marginRight: tmp5 });
-    tmp8 = <ExistingJoinRequestHandler marginLeft={tmp4} marginRight={tmp5} />;
-    const tmp14 = importDefault(5620);
+    obj[0] = items1;
+    const obj1 = { guildId: null, onClose: null };
+    obj1[0] = guildId;
+    obj1[1] = callback;
+    obj[1] = <MemberVerificationRouteView guildId={null} onClose={null} />;
+    obj[2] = jsx(importDefault(5638), { marginLeft: null, marginRight: null });
+    tmp10 = <ExistingJoinRequestHandler marginLeft={null} marginRight={null} />;
+    const tmp3Result = importDefault(5638);
   }
-  return tmp8;
+  return tmp10;
 });
-let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/guild_member_verification/native/components/MemberVerificationScreen.tsx");
+let result = require("comparator").fileFinishedImporting("modules/guild_member_verification/native/components/MemberVerificationScreen.tsx");
 
 export default authenticated;

@@ -1,20 +1,20 @@
-// Module ID: 16559
-// Function ID: 128907
+// Module ID: 16594
+// Function ID: 16595
 // Name: FormChannelPicker
-// Dependencies: [31, 1348, 33, 4165, 13013, 566, 4355, 8316, 4133, 16560, 1935, 4628, 4673, 4161, 1212, 1273, 10713, 2]
+// Dependencies: [19, 1372, 21, 4189, 13036, 589, 4380, 8340, 4157, 16595, 1959, 4650, 4695, 4185, 1236, 1297, 10737, 2]
 // Exports: default
 
-// Module 16559 (FormChannelPicker)
-import "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 16594 (FormChannelPicker)
+import "noop";
+import ensureGuildLoaded from "ensureGuildLoaded";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_4;
-let closure_5;
+let c4;
+let c5;
 const require = arg1;
-({ jsx: closure_4, jsxs: closure_5 } = jsxProd);
-let closure_6 = _createForOfIteratorHelperLoose.createStyles({ container: { alignItems: "center", flexDirection: "row" }, content: { marginStart: 8, flexGrow: 1 } });
+({ jsx: c4, jsxs: c5 } = jsxProd);
+let closure_6 = createCacheKey.createStyles({ container: { alignItems: "center", flexDirection: "row" }, content: { marginStart: 8, flexGrow: 1 } });
 const result = require("jsxProd").fileFinishedImporting("modules/guild_role_subscriptions/native/components/FormChannelPicker.tsx");
 
 export default function FormChannelPicker(channelId) {
@@ -22,14 +22,15 @@ export default function FormChannelPicker(channelId) {
   let onChange;
   channelId = channelId.channelId;
   ({ guildId: importDefault, onChange } = channelId);
+  let stateFromStores;
   onChange = undefined;
-  const tmp2 = callback2();
+  const tmp4 = callback2();
   let obj = channelId(stateFromStores[5]);
   const items = [onChange];
   const items1 = [channelId];
   stateFromStores = obj.useStateFromStores(items, () => onChange.getChannel(channelId), items1);
   let stringResult = importDefault(stateFromStores[6])(stateFromStores);
-  if (null == onChange) {
+  if (onChange == null) {
     onChange = () => {
 
     };
@@ -39,45 +40,46 @@ export default function FormChannelPicker(channelId) {
     accessibilityRole: "link",
     onPress() {
       let obj = outer1_1(stateFromStores[8]);
-      obj = { guildId: closure_1 };
+      obj = { guildId: closure_1, selectedChannelId: null, onChannelSelected: null };
       let id;
-      if (null != stateFromStores) {
+      if (stateFromStores != null) {
         id = stateFromStores.id;
       }
-      obj.selectedChannelId = id;
-      obj.onChannelSelected = onChange;
+      obj[1] = id;
+      obj[2] = onChange;
       obj.openLazy(channelId(stateFromStores[10])(stateFromStores[9], stateFromStores.paths), "ChannelSelectorActionSheet", obj);
-    }
+    },
+    children: null
   };
-  items2 = [tmp2.container, importDefault(stateFromStores[4])().textInput];
-  let tmp8 = null;
-  const tmp = importDefault(stateFromStores[4])();
-  const tmp5 = closure_5;
-  const tmp6 = stateFromStores;
+  items2 = [tmp4.container, importDefault(stateFromStores[4])().textInput];
+  let tmp10 = null;
+  const tmp3 = importDefault(stateFromStores[4])();
+  const tmp8 = closure_5;
   if (null != stateFromStores) {
-    let obj2 = channelId(stateFromStores[11]);
-    let TextIcon = obj2.getChannelIconComponent(stateFromStores);
-    if (null == TextIcon) {
-      TextIcon = channelId(stateFromStores[12]).TextIcon;
+    let TextIcon = tmp5(tmp2[11]).getChannelIconComponent(stateFromStores);
+    if (TextIcon == null) {
+      TextIcon = tmp5(tmp2[12]).TextIcon;
     }
-    obj = { size: "sm" };
-    tmp8 = callback(TextIcon, obj);
+    tmp10 = callback(TextIcon, { size: "sm" });
+    const tmp5Result = tmp5(tmp2[11]);
   }
-  const items3 = [tmp8, , ];
-  const obj1 = { style: tmp2.content, variant: "text-md/medium" };
-  let str2 = "text-muted";
+  const items3 = [tmp10, , ];
+  obj = { style: tmp4.content, variant: "text-md/medium", color: null, children: null };
+  let str = "text-muted";
   if (null != channelId) {
-    str2 = "text-default";
+    str = "text-default";
   }
-  obj1.color = str2;
-  if (null == stringResult) {
-    const intl = channelId(stateFromStores[14]).intl;
-    stringResult = intl.string(channelId(stateFromStores[14]).t.r2ptsz);
+  obj[2] = str;
+  if (stringResult == null) {
+    const intl = tmp5(tmp2[14]).intl;
+    stringResult = intl.string(tmp5(tmp2[14]).t.r2ptsz);
   }
-  obj1.children = stringResult;
-  items3[1] = callback(channelId(tmp6[13]).Text, obj1);
-  obj2 = { size: channelId(stateFromStores[15]).Icon.Sizes.MEDIUM, source: importDefault(stateFromStores[16]) };
-  items3[2] = callback(channelId(stateFromStores[15]).Icon, obj2);
-  obj.children = items3;
-  return tmp5(importDefault(stateFromStores[7]), obj);
+  obj[3] = stringResult;
+  items3[1] = callback(channelId(stateFromStores[13]).Text, obj);
+  const obj1 = { size: null, source: null };
+  obj1[0] = channelId(stateFromStores[15]).Icon.Sizes.MEDIUM;
+  obj1[1] = importDefault(stateFromStores[16]);
+  items3[2] = callback(channelId(stateFromStores[15]).Icon, obj1);
+  obj[3] = items3;
+  return tmp8(importDefault(stateFromStores[7]), obj);
 };

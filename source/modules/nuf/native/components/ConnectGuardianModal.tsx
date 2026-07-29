@@ -1,47 +1,50 @@
-// Module ID: 16244
-// Function ID: 125770
+// Module ID: 16279
+// Function ID: 16280
 // Name: ConnectGuardianModal
-// Dependencies: [31, 27, 653, 5776, 33, 4165, 689, 1557, 16245, 675, 5619, 4161, 1212, 2199, 13891, 4578, 2]
+// Dependencies: [19, 17, 676, 5794, 21, 4189, 712, 1581, 16280, 698, 5637, 4185, 1236, 2223, 13912, 4600, 2]
 // Exports: default
 
-// Module 16244 (ConnectGuardianModal)
-import result from "result";
+// Module 16279 (ConnectGuardianModal)
+import noop from "noop";
 import { View } from "get ActivityIndicator";
 import { AnalyticEvents } from "ME";
 import { FamilyCenterAction } from "items";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_7;
-let closure_8;
+let error;
+let metroImportAll;
 const require = arg1;
-({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { flex: 1, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW };
-_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
-let obj1 = { flex: 1, alignItems: "center", justifyContent: "center", paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16 };
-_createForOfIteratorHelperLoose.centered = obj1;
-_createForOfIteratorHelperLoose.header = { marginBottom: require("_createForOfIteratorHelperLoose").space.PX_40 };
-let obj2 = { marginBottom: require("_createForOfIteratorHelperLoose").space.PX_40 };
-_createForOfIteratorHelperLoose.title = { paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16, marginBottom: require("_createForOfIteratorHelperLoose").space.PX_8, textAlign: "center" };
-let obj3 = { paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16, marginBottom: require("_createForOfIteratorHelperLoose").space.PX_8, textAlign: "center" };
-_createForOfIteratorHelperLoose.description = { paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16, textAlign: "center" };
-_createForOfIteratorHelperLoose.cardSection = { alignItems: "center" };
-let obj4 = { paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16, textAlign: "center" };
-_createForOfIteratorHelperLoose.scanPrompt = { paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16, marginBottom: require("_createForOfIteratorHelperLoose").space.PX_24, textAlign: "center" };
-_createForOfIteratorHelperLoose.grow = { flexGrow: 1 };
-let obj5 = { paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16, marginBottom: require("_createForOfIteratorHelperLoose").space.PX_24, textAlign: "center" };
-_createForOfIteratorHelperLoose.footer = { paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16 };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-let obj6 = { paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16 };
+({ jsx: error, jsxs: metroImportAll } = jsxProd);
+createCacheKey = { container: null, centered: null, header: null, title: null, description: null, cardSection: null, scanPrompt: null, grow: null, footer: null };
+createCacheKey = { flex: 1, backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { flex: 1, alignItems: "center", justifyContent: "center", paddingHorizontal: require("Themes").space.PX_16 };
+let obj1 = { flex: 1, alignItems: "center", justifyContent: "center", paddingHorizontal: require("Themes").space.PX_16 };
+createCacheKey[2] = { marginBottom: require("Themes").space.PX_40 };
+let obj2 = { marginBottom: require("Themes").space.PX_40 };
+createCacheKey[3] = { paddingHorizontal: require("Themes").space.PX_16, marginBottom: require("Themes").space.PX_8, textAlign: "center" };
+let obj3 = { paddingHorizontal: require("Themes").space.PX_16, marginBottom: require("Themes").space.PX_8, textAlign: "center" };
+createCacheKey[4] = { paddingHorizontal: require("Themes").space.PX_16, textAlign: "center" };
+createCacheKey[5] = { alignItems: "center" };
+let obj4 = { paddingHorizontal: require("Themes").space.PX_16, textAlign: "center" };
+createCacheKey[6] = { paddingHorizontal: require("Themes").space.PX_16, marginBottom: require("Themes").space.PX_24, textAlign: "center" };
+createCacheKey[7] = { flexGrow: 1 };
+let obj5 = { paddingHorizontal: require("Themes").space.PX_16, marginBottom: require("Themes").space.PX_24, textAlign: "center" };
+createCacheKey[8] = { paddingHorizontal: require("Themes").space.PX_16 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let obj6 = { paddingHorizontal: require("Themes").space.PX_16 };
 const result = require("ME").fileFinishedImporting("modules/nuf/native/components/ConnectGuardianModal.tsx");
 
 export default function ConnectGuardianModal(route) {
-  const onComplete = route.route.params.onComplete;
-  let tmp = _createForOfIteratorHelperLoose();
-  let obj = onComplete(16245);
-  const connectGuardianGate = obj.useConnectGuardianGate();
-  const dependencyMap = React.useRef(false);
+  let onComplete;
+  let connectGuardianGate;
+  let dependencyMap;
+  onComplete = route.route.params.onComplete;
+  const tmp = createCacheKey();
+  let obj = onComplete(16280);
+  connectGuardianGate = obj.useConnectGuardianGate();
+  dependencyMap = React.useRef(false);
   const items = [connectGuardianGate.state, onComplete];
   const effect = React.useEffect(() => {
     let current = "error" !== connectGuardianGate.state;
@@ -51,65 +54,73 @@ export default function ConnectGuardianModal(route) {
     if (!current) {
       ref.current = true;
       let obj = connectGuardianGate(ref[9]);
-      obj = { action: outer1_6.NufConsentGateLinkCodeError, source: "NUF Connect Guardian" };
+      obj = { action: null, source: "NUF Connect Guardian" };
+      obj[0] = outer1_6.NufConsentGateLinkCodeError;
       obj.track(outer1_5.FAMILY_CENTER_ACTION, obj);
-      if (null != onComplete) {
+      if (onComplete != null) {
         onComplete(true);
       }
     }
   }, items);
   if ("gate" !== connectGuardianGate.state) {
-    obj = {};
+    obj = { style: null, children: null };
     const items1 = [, ];
     ({ container: arr2[0], centered: arr2[1] } = tmp);
-    obj.style = items1;
-    obj.children = callback(onComplete(5619).ActivityIndicator, {});
-    let tmp8 = callback(View, obj);
+    obj[0] = items1;
+    obj[1] = callback(tmp4(5637).ActivityIndicator, {});
+    let tmp9 = callback(View, obj);
   } else {
-    obj = { style: tmp.container };
-    const obj1 = { style: tmp.header };
-    const obj2 = { style: tmp.title, variant: "heading-xl/bold", color: "text-default" };
-    const intl = onComplete(1212).intl;
-    obj2.children = intl.string(connectGuardianGate(2199).ITlV6p);
-    const items2 = [callback(onComplete(4161).Text, obj2), ];
-    const obj3 = { style: tmp.description, variant: "text-sm/medium", color: "text-muted" };
-    const intl2 = onComplete(1212).intl;
-    const obj4 = { link: "https://support.discord.com/hc/articles/14155060633623" };
-    obj3.children = intl2.format(connectGuardianGate(2199).F4GT2S, obj4);
-    items2[1] = callback(onComplete(4161).Text, obj3);
-    obj1.children = items2;
+    obj = { style: null, children: null };
+    obj[0] = tmp.container;
+    const obj1 = { style: null, children: null };
+    obj1[0] = tmp.header;
+    const obj2 = { style: null, variant: "heading-xl/bold", color: "text-default", children: null };
+    obj2[0] = tmp.title;
+    const intl = tmp4(1236).intl;
+    obj2[3] = intl.string(tmp2(2223).ITlV6p);
+    const items2 = [callback(tmp4(4185).Text, obj2), ];
+    const obj3 = { style: null, variant: "text-sm/medium", color: "text-muted", children: null };
+    obj3[0] = tmp.description;
+    const intl2 = tmp4(1236).intl;
+    obj3[3] = intl2.format(tmp2(2223).F4GT2S, { link: "https://support.discord.com/hc/articles/14155060633623" });
+    items2[1] = callback(tmp4(4185).Text, obj3);
+    obj1[1] = items2;
     const items3 = [callback2(View, obj1), , , ];
-    const obj5 = { style: tmp.cardSection };
-    const obj6 = { style: tmp.scanPrompt, variant: "text-md/semibold", color: "text-default" };
-    const intl3 = onComplete(1212).intl;
-    obj6.children = intl3.string(connectGuardianGate(2199).Mi60fm);
-    const items4 = [callback(onComplete(4161).Text, obj6), ];
-    const obj7 = { shareActions: "compact" };
-    ({ linkCode: obj10.linkCode, expiresAt: obj10.expiresAt, refresh: obj10.onRefresh } = connectGuardianGate);
-    items4[1] = callback(onComplete(13891).ConnectGuardianCard, obj7);
-    obj5.children = items4;
-    items3[1] = callback2(View, obj5);
-    const obj8 = { style: tmp.grow };
-    items3[2] = callback(View, obj8);
-    const obj9 = {};
+    const obj4 = { style: null, children: null };
+    obj4[0] = tmp.cardSection;
+    const obj5 = { style: null, variant: "text-md/semibold", color: "text-default", children: null };
+    obj5[0] = tmp.scanPrompt;
+    const intl3 = tmp4(1236).intl;
+    obj5[3] = intl3.string(tmp2(2223).Mi60fm);
+    const items4 = [callback(tmp4(4185).Text, obj5), ];
+    ({ linkCode: obj9[1], expiresAt: obj9[2], refresh: obj9[3] } = connectGuardianGate);
+    items4[1] = callback(tmp4(13912).ConnectGuardianCard, { shareActions: "compact", linkCode: null, expiresAt: null, onRefresh: null });
+    obj4[1] = items4;
+    items3[1] = callback2(View, obj4);
+    const obj7 = { style: null };
+    obj7[0] = tmp.grow;
+    items3[2] = callback(View, obj7);
+    const obj8 = { style: null, children: null };
     const items5 = [tmp.footer, ];
-    const obj10 = { paddingBottom: connectGuardianGate(1557)().bottom + connectGuardianGate(689).space.PX_16 };
-    items5[1] = obj10;
-    obj9.style = items5;
-    const obj11 = { variant: "primary", size: "lg" };
-    const intl4 = onComplete(1212).intl;
-    obj11.text = intl4.string(onComplete(1212).t["3PatSz"]);
-    obj11.onPress = function onPress() {
-      let tmp;
-      if (null != onComplete) {
-        tmp = onComplete(false);
+    const obj9 = { paddingBottom: null };
+    obj9[0] = connectGuardianGate(1581)().bottom + tmp2(712).space.PX_16;
+    items5[1] = obj9;
+    obj8[0] = items5;
+    const obj10 = { variant: "primary", size: "lg", text: null, onPress: null };
+    const intl4 = tmp4(1236).intl;
+    obj10[2] = intl4.string(tmp4(1236).t["3PatSz"]);
+    obj10[3] = function onPress() {
+      let tmpResult;
+      if (onComplete != null) {
+        tmpResult = tmp(false);
       }
-      return tmp;
+      return tmpResult;
     };
-    obj9.children = callback(onComplete(4578).Button, obj11);
-    items3[3] = callback(View, obj9);
-    obj.children = items3;
-    tmp8 = callback2(View, obj);
+    obj8[1] = callback(tmp4(4600).Button, obj10);
+    items3[3] = callback(View, obj8);
+    obj[1] = items3;
+    tmp9 = callback2(View, obj);
+    const obj6 = { shareActions: "compact", linkCode: null, expiresAt: null, onRefresh: null };
   }
-  return tmp8;
+  return tmp9;
 };

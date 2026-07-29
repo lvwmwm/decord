@@ -1,27 +1,27 @@
-// Module ID: 6746
-// Function ID: 59328
+// Module ID: 6767
+// Function ID: 6768
 // Name: AgeVerificationQuestUnsupportedAlertModal
-// Dependencies: [31, 33, 4510, 1212, 2717, 4510, 2]
+// Dependencies: [19, 21, 4533, 1236, 2741, 4533, 2]
 // Exports: default
 
-// Module 6746 (AgeVerificationQuestUnsupportedAlertModal)
-import "result";
+// Module 6767 (AgeVerificationQuestUnsupportedAlertModal)
+import "noop";
 import { jsx } from "jsxProd";
 
 const require = arg1;
 const result = require("getAlertModalItemKey").fileFinishedImporting("modules/age_assurance/native/AgeVerificationQuestUnsupportedAlertModal.tsx");
 
 export default function AgeVerificationQuestUnsupportedAlertModal() {
-  let obj = {};
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj.title = intl.string(importDefault(2717).gUqXQN);
-  const intl2 = require(1212) /* getSystemLocale */.intl;
-  obj.content = intl2.string(importDefault(2717).yBHwMy);
-  obj = {};
-  obj = {};
-  const intl3 = require(1212) /* getSystemLocale */.intl;
-  obj.text = intl3.string(require(1212) /* getSystemLocale */.t["NX+WJN"]);
-  obj.children = jsx(require(4510) /* getAlertModalItemKey */.AlertActionButton, {}, "got-it");
-  obj.actions = jsx(require(4510) /* getAlertModalItemKey */.AlertActions, {});
-  return jsx(require(4510) /* getAlertModalItemKey */.AlertModal, {});
+  let obj = { title: null, content: null, actions: null };
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj[0] = intl.string(importDefault(2741).gUqXQN);
+  const intl2 = require(1236) /* getSystemLocale */.intl;
+  obj[1] = intl2.string(importDefault(2741).yBHwMy);
+  obj = { children: null };
+  obj = { text: null };
+  const intl3 = require(1236) /* getSystemLocale */.intl;
+  obj[0] = intl3.string(require(1236) /* getSystemLocale */.t["NX+WJN"]);
+  obj[0] = jsx(require(4533) /* getAlertModalItemKey */.AlertActionButton, { text: null }, "got-it");
+  obj[2] = jsx(require(4533) /* getAlertModalItemKey */.AlertActions, { text: null });
+  return jsx(require(4533) /* getAlertModalItemKey */.AlertModal, { text: null });
 };

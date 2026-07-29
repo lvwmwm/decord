@@ -1,127 +1,77 @@
-// Module ID: 16361
-// Function ID: 127245
-// Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 16362, 3982, 1362, 664, 566, 686, 2]
+// Module ID: 16396
+// Function ID: 16397
+// Name: initialize
+// Dependencies: [16397, 4006, 1386, 687, 589, 709, 2]
 
-// Module 16361 (_isNativeReflectConstruct)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import priv from "priv";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
-import closure_5 from "_isNativeReflectConstruct";
-import closure_6 from "_isNativeReflectConstruct";
+// Module 16396 (initialize)
+import prototype from "prototype";
+import handleConnectionOpen from "handleConnectionOpen";
 import importDefaultResult from "priv";
+import { Store } from "initialize";
 
-function _isNativeReflectConstruct() {
-  let _isNativeReflectConstruct = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return _isNativeReflectConstruct;
-  }
-  const result = _isNativeReflectConstruct();
-}
-let closure_7 = {};
-let closure_8 = {};
-let c9 = 0;
-let obj = { max: 5, maxAge: require("set").Millis.HOUR };
+let closure_2 = {};
+let closure_3 = {};
+let c4 = 0;
+let obj = { max: 5, maxAge: null };
+obj[1] = require("set").Millis.HOUR;
 importDefaultResult = new importDefaultResult(obj);
-let tmp4 = ((Store) => {
-  class GuildSettingsEmojiStore {
-    constructor() {
-      self = this;
-      tmp = GuildSettingsEmojiStore(this, GuildSettingsEmojiStore);
-      obj = outer1_3(GuildSettingsEmojiStore);
-      tmp2 = outer1_2;
-      if (outer1_11()) {
-        tmp6 = globalThis;
-        _Reflect = Reflect;
-        tmp7 = outer1_3;
-        tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, outer1_3(self).constructor);
-      } else {
-        tmp3 = arguments;
-        tmp4 = arguments;
-        constructResult = obj(...arguments);
-      }
-      return tmp2(self, constructResult);
-    }
+let c5 = importDefaultResult;
+class GuildSettingsEmojiStore extends Store {
+}
+const prototype = GuildSettingsEmojiStore.prototype;
+prototype["initialize"] = function initialize() {
+  this.waitFor(handleConnectionOpen);
+};
+prototype["isUploadingEmoji"] = function isUploadingEmoji() {
+  return c4 > 0;
+};
+prototype["getEmojiRevision"] = function getEmojiRevision(id) {
+  let num = dependencyMap[id];
+  if (num == null) {
+    num = 0;
   }
-  callback2(GuildSettingsEmojiStore, Store);
-  let obj = {
-    key: "initialize",
-    value() {
-      this.waitFor(outer1_6);
-    }
-  };
-  const items = [obj, , , , ];
-  obj = {
-    key: "isUploadingEmoji",
-    value() {
-      return outer1_9 > 0;
-    }
-  };
-  items[1] = obj;
-  obj = {
-    key: "getEmojiRevision",
-    value(arg0) {
-      let num = 0;
-      if (null != outer1_7[arg0]) {
-        num = tmp;
-      }
-      return num;
-    }
-  };
-  items[2] = obj;
-  items[3] = {
-    key: "getEmojis",
-    value(arg0) {
-      return outer1_8[arg0];
-    }
-  };
-  items[4] = {
-    key: "getEmojiRawAsset",
-    value(arg0) {
-      return outer1_10.get(arg0);
-    }
-  };
-  return callback(GuildSettingsEmojiStore, items);
-})(require("initialize").Store);
-tmp4.displayName = "GuildSettingsEmojiStore";
+  return num;
+};
+prototype["getEmojis"] = function getEmojis(id) {
+  return dependencyMap2[id];
+};
+prototype["getEmojiRawAsset"] = function getEmojiRawAsset(arg0) {
+  return importDefaultResult.get(arg0);
+};
+GuildSettingsEmojiStore.displayName = "GuildSettingsEmojiStore";
 obj = {
   EMOJI_DELETE: function handleEmojiDelete(arg0) {
-    let _isNativeReflectConstruct;
+    let prototype;
     let guildId;
-    ({ guildId, emojiId: _isNativeReflectConstruct } = arg0);
-    table2[guildId] = table2[guildId].filter((id) => id.id !== _isNativeReflectConstruct);
+    ({ guildId, emojiId: prototype } = arg0);
+    dependencyMap2[guildId] = dependencyMap2[guildId].filter((id) => id.id !== prototype);
   },
   EMOJI_FETCH_SUCCESS: function handleFetchSuccess(emojis) {
     emojis = emojis.emojis;
-    closure_8[emojis.guildId] = emojis.map((arg0) => new outer1_5(arg0));
+    closure_3[emojis.guildId] = emojis.map((arg0) => new prototype(arg0));
   },
   EMOJI_FETCH_FAILURE: function handleFetchFailure(guildId) {
-    closure_8[guildId.guildId] = [];
+    closure_3[guildId.guildId] = [];
   },
   EMOJI_UPLOAD_START: function handleStartUploading() {
-    closure_9 = closure_9 + 1;
+    closure_4 = closure_4 + 1;
   },
   EMOJI_UPLOAD_STOP: function handleStopUploading() {
-    closure_9 = closure_9 - 1;
+    closure_4 = closure_4 - 1;
   },
   EMOJI_CACHE_RAW_EMOJI_ASSET: function handleCacheRawEmojiAsset(emojiId) {
     const result = importDefaultResult.set(emojiId.emojiId, emojiId.userImage);
   },
   GUILD_EMOJIS_UPDATE: function handleGuildEmojiUpdate(guildId) {
     guildId = guildId.guildId;
-    let num = 0;
-    if (null != table[guildId]) {
-      num = tmp2;
+    let num = dependencyMap[guildId];
+    if (num == null) {
+      num = 0;
     }
-    table[guildId] = num + 1;
+    dependencyMap[guildId] = num + 1;
   }
 };
-tmp4 = new tmp4(require("dispatcher"), obj);
-let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/guild_settings/GuildSettingsEmojiStore.tsx");
+const guildSettingsEmojiStore = new GuildSettingsEmojiStore(require("dispatcher"), obj);
+let result = require("priv").fileFinishedImporting("modules/guild_settings/GuildSettingsEmojiStore.tsx");
 
-export default tmp4;
+export default guildSettingsEmojiStore;

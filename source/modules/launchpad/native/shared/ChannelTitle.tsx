@@ -1,16 +1,17 @@
-// Module ID: 15774
-// Function ID: 121518
-// Dependencies: [31, 4361, 33, 4165, 689, 15768, 4161, 2]
+// Module ID: 15809
+// Function ID: 15810
+// Dependencies: [19, 4386, 21, 4189, 712, 15803, 4185, 2]
 
-// Module 15774
-import importAllResult from "result";
+// Module 15809
+import importAllResult from "noop";
 import { UnreadSetting } from "ReadStateTypes";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
 const require = arg1;
-let closure_6 = _createForOfIteratorHelperLoose.createStyleProperties({ muted: require("_createForOfIteratorHelperLoose").colors.TEXT_MUTED, normal: require("_createForOfIteratorHelperLoose").colors.REDESIGN_CHANNEL_NAME_MUTED_TEXT, unreadOrConnected: require("_createForOfIteratorHelperLoose").colors.REDESIGN_CHANNEL_NAME_TEXT });
-let obj = { muted: require("_createForOfIteratorHelperLoose").colors.TEXT_MUTED, normal: require("_createForOfIteratorHelperLoose").colors.REDESIGN_CHANNEL_NAME_MUTED_TEXT, unreadOrConnected: require("_createForOfIteratorHelperLoose").colors.REDESIGN_CHANNEL_NAME_TEXT };
+let c3 = importAllResult;
+let closure_6 = createCacheKey.createStyleProperties({ muted: require("Themes").colors.TEXT_MUTED, normal: require("Themes").colors.REDESIGN_CHANNEL_NAME_MUTED_TEXT, unreadOrConnected: require("Themes").colors.REDESIGN_CHANNEL_NAME_TEXT });
+let obj = { muted: require("Themes").colors.TEXT_MUTED, normal: require("Themes").colors.REDESIGN_CHANNEL_NAME_MUTED_TEXT, unreadOrConnected: require("Themes").colors.REDESIGN_CHANNEL_NAME_TEXT };
 const memoResult = importAllResult.memo(function ChannelTitle(unread) {
   let muted;
   let title;
@@ -18,35 +19,34 @@ const memoResult = importAllResult.memo(function ChannelTitle(unread) {
   unread = unread.unread;
   const resolvedUnreadSetting = unread.resolvedUnreadSetting;
   const connected = unread.connected;
-  const tmp2 = callback();
-  const UnreadSetting = tmp2;
+  let c4;
+  let tmp2 = callback();
+  c4 = tmp2;
   const items = [unread, tmp2, connected, muted, resolvedUnreadSetting];
   const memo = connected.useMemo(() => {
-    let unreadOrConnected = tmp2.normal;
+    let color = _undefined.normal;
     if (muted) {
-      unreadOrConnected = tmp2.muted;
+      color = tmp.muted;
     } else {
-      let tmp = unread;
+      let tmp2 = unread;
       if (unread) {
-        tmp = resolvedUnreadSetting === tmp2.ALL_MESSAGES;
+        tmp2 = resolvedUnreadSetting === _undefined.ALL_MESSAGES;
       }
-      if (!tmp) {
-        tmp = connected;
+      if (!tmp2) {
+        tmp2 = connected;
       }
-      if (tmp) {
-        unreadOrConnected = tmp2.unreadOrConnected;
+      if (tmp2) {
+        color = tmp.unreadOrConnected;
       }
     }
-    const obj = { color: unreadOrConnected, paddingRight: 4, flexShrink: 1 };
-    return obj;
+    return { color, paddingRight: 4, flexShrink: 1 };
   }, items);
-  let obj = { variant: unread(resolvedUnreadSetting[5])().channelName.text.variant, lineClamp: 1, maxFontSizeMultiplier: 1.75, style: memo };
-  let str = "";
-  if (null != title) {
-    str = title;
+  const obj = { variant: unread(resolvedUnreadSetting[5])().channelName.text.variant, lineClamp: 1, maxFontSizeMultiplier: 1.75, style: memo, children: null };
+  if (title == null) {
+    title = "";
   }
-  obj.children = str;
-  return jsx(muted(resolvedUnreadSetting[6]).Text, { variant: unread(resolvedUnreadSetting[5])().channelName.text.variant, lineClamp: 1, maxFontSizeMultiplier: 1.75, style: memo });
+  obj[4] = title;
+  return jsx(muted(resolvedUnreadSetting[6]).Text, { variant: unread(resolvedUnreadSetting[5])().channelName.text.variant, lineClamp: 1, maxFontSizeMultiplier: 1.75, style: memo, children: null });
 });
 const result = require("jsxProd").fileFinishedImporting("modules/launchpad/native/shared/ChannelTitle.tsx");
 

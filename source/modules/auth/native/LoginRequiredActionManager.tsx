@@ -1,34 +1,55 @@
-// Module ID: 16204
-// Function ID: 125416
-// Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 1850, 1341, 653, 6590, 5623, 5112, 2]
+// Module ID: 16239
+// Function ID: 16240
+// Name: handleConnectionOpen
+// Dependencies: [1874, 1365, 676, 5134, 6611, 5641, 2]
 
-// Module 16204 (_isNativeReflectConstruct)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_4 from "ME";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
-import closure_8 from "_isNativeReflectConstruct";
-import closure_9 from "_isNativeReflectConstruct";
+// Module 16239 (handleConnectionOpen)
+import mergeGuildAvatar from "mergeGuildAvatar";
+import handleUpdateUser from "handleUpdateUser";
 import ME from "ME";
-import tmp3 from "AutomaticLifecycleManager";
+import "initialize";
 
-let closure_10;
-let closure_11;
-let closure_12;
+let c5;
+let closure_6;
+let error;
 const require = arg1;
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
+({ LoginRequiredActions: c5, Routes: closure_6, UserSettingsSections: error } = ME);
+class LoginRequiredActionManager extends tmp3 {
+  constructor() {
+    applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
+    applyArgumentsResult.actions = { POST_CONNECTION_OPEN: applyArgumentsResult.handleConnectionOpen };
+    return applyArgumentsResult;
   }
-  const result = _isNativeReflectConstruct();
 }
-({ LoginRequiredActions: closure_10, Routes: closure_11, UserSettingsSections: closure_12 } = ME);
-tmp3 = new tmp3();
-let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/auth/native/LoginRequiredActionManager.tsx");
+LoginRequiredActionManager.prototype["handleConnectionOpen"] = function handleConnectionOpen() {
+  currentUser = currentUser.getCurrentUser();
+  if (null != currentUser) {
+    let items = [constants.UPDATE_PASSWORD];
+    const result = handleUpdateUser.wasLoginAttemptedInSession(currentUser.id);
+    const result1 = handleUpdateUser.requiredActionsIncludes(currentUser.id, items);
+    if (result) {
+      if (result1) {
+        let obj = { screen: null, params: null, onClose: null };
+        obj[0] = constants3.ACCOUNT_CHANGE_PASSWORD;
+        obj[1] = { isLoginRequiredAction: true };
+        obj[2] = function onClose() {
+          const items = [outer1_5.UPDATE_PASSWORD];
+          if (outer1_4.requiredActionsIncludes(currentUser.id, items)) {
+            outer1_1(outer1_2[5]).logout("login_required_account_manager", outer1_6.LOGIN);
+            const obj = outer1_1(outer1_2[5]);
+          }
+        };
+        currentUser(6611).openUserSettings(obj);
+        const obj2 = currentUser(6611);
+      }
+    }
+    if (result1) {
+      obj = importDefault(5641);
+      obj.logout("login_required_account_manager", constants2.LOGIN);
+    }
+  }
+};
+const loginRequiredActionManager = new LoginRequiredActionManager();
+let result = require("ME").fileFinishedImporting("modules/auth/native/LoginRequiredActionManager.tsx");
 
-export default tmp3;
+export default loginRequiredActionManager;

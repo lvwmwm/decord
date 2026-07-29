@@ -1,13 +1,13 @@
-// Module ID: 9203
-// Function ID: 72041
+// Module ID: 9227
+// Function ID: 9228
 // Name: trackUserAvatarUpdated
-// Dependencies: [653, 7927, 675, 1392, 2]
+// Dependencies: [676, 7952, 698, 1416, 2]
 // Exports: trackUserAvatarUpdated
 
-// Module 9203 (trackUserAvatarUpdated)
+// Module 9227 (trackUserAvatarUpdated)
 import { AnalyticEvents } from "ME";
 
-const result = require("expandLocation").fileFinishedImporting("modules/user_profile/utils/trackUserAvatarUpdated.tsx");
+const result = require("expandEventProperties").fileFinishedImporting("modules/user_profile/utils/trackUserAvatarUpdated.tsx");
 
 export const trackUserAvatarUpdated = function trackUserAvatarUpdated(isGuildProfile) {
   let avatarHash;
@@ -19,16 +19,18 @@ export const trackUserAvatarUpdated = function trackUserAvatarUpdated(isGuildPro
   }
   let NEW_ASSET = isGuildProfile.avatarAssetOrigin;
   if (NEW_ASSET === undefined) {
-    NEW_ASSET = require(7927) /* AssetOriginTypes */.AssetOriginTypes.NEW_ASSET;
+    NEW_ASSET = require(7952) /* AssetOriginTypes */.AssetOriginTypes.NEW_ASSET;
   }
-  let obj = importDefault(675);
-  obj = { animated: require(1392) /* getAvatarURL */.isAnimatedIconHash(avatarHash), is_guild_profile: flag };
+  let obj = importDefault(698);
+  obj = { animated: null, is_guild_profile: null, recent_avatar_id: null, is_edited_recent_avatar: null };
+  obj[0] = require(1416) /* getAvatarURL */.isAnimatedIconHash(avatarHash);
+  obj[1] = flag;
   let NumberResult;
-  if (NEW_ASSET === require(7927) /* AssetOriginTypes */.AssetOriginTypes.ARCHIVED_ASSET) {
+  if (NEW_ASSET === require(7952) /* AssetOriginTypes */.AssetOriginTypes.ARCHIVED_ASSET) {
     const _Number = Number;
     NumberResult = Number(avatarId);
   }
-  obj.recent_avatar_id = NumberResult;
-  obj.is_edited_recent_avatar = NEW_ASSET === require(7927) /* AssetOriginTypes */.AssetOriginTypes.EDITED_ARCHIVED_ASSET;
+  obj[2] = NumberResult;
+  obj[3] = NEW_ASSET === require(7952) /* AssetOriginTypes */.AssetOriginTypes.EDITED_ARCHIVED_ASSET;
   obj.track(AnalyticEvents.USER_AVATAR_UPDATED, obj);
 };

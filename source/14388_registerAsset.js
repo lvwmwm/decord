@@ -1,11 +1,10 @@
 // Module ID: 14388
-// Function ID: 110120
+// Function ID: 14389
 // Name: registerAsset
-// Dependencies: [1217]
+// Dependencies: [1241]
 
 // Module 14388 (registerAsset)
 import registerAsset from "registerAsset";
 
-const obj = { __packager_asset: true, httpServerLocation: "/assets/../discord_common/js/shared/images/flags", width: 70, height: 47, scales: [1], hash: "da07da4bde6f81f16366b62e8fcc90ec", name: "th", type: "png" };
 
-export default registerAsset.registerAsset(obj);
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/../discord_common/js/shared/images/flags", width: 70, height: 47, scales: [1], hash: "7fa2adf98f26db34178bb30a63dabe8c", name: "de", type: "png" });

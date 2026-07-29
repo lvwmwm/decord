@@ -1,12 +1,13 @@
-// Module ID: 9374
-// Function ID: 73063
+// Module ID: 9398
+// Function ID: 9399
 // Name: context
-// Dependencies: [31, 2]
+// Dependencies: [19, 2]
 // Exports: useIsPortalKeyboardInModal
 
-// Module 9374 (context)
-import importAllResult from "result";
+// Module 9398 (context)
+import importAllResult from "noop";
 
+let c0 = importAllResult;
 const context = importAllResult.createContext(false);
 const result = require("set").fileFinishedImporting("modules/keyboard/native/PortalKeyboardModalContext.tsx");
 

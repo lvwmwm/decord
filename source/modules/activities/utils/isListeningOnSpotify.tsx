@@ -1,16 +1,16 @@
-// Module ID: 9055
-// Function ID: 71057
+// Module ID: 9079
+// Function ID: 9080
 // Name: isListeningOnSpotify
-// Dependencies: [653, 8151, 4849, 2]
+// Dependencies: [676, 8175, 4871, 2]
 // Exports: default
 
-// Module 9055 (isListeningOnSpotify)
+// Module 9079 (isListeningOnSpotify)
 import ME from "ME";
-import { isSpotifyParty } from "spotifyUtmParams";
+import { isSpotifyParty } from "WEB_OPEN";
 
-let closure_2;
-let closure_3;
-({ ActivityTypes: closure_2, PlatformTypes: closure_3 } = ME);
+let c3;
+let obj1;
+({ ActivityTypes: obj1, PlatformTypes: c3 } = ME);
 const result = require("getPlatformUserUrl").fileFinishedImporting("modules/activities/utils/isListeningOnSpotify.tsx");
 
 export default function isListeningOnSpotify(type) {
@@ -19,8 +19,8 @@ export default function isListeningOnSpotify(type) {
     tmp = type.type === constants.LISTENING;
   }
   if (tmp) {
-    tmp = type.name === importDefault(4849).get(constants2.SPOTIFY).name;
-    const obj = importDefault(4849);
+    tmp = type.name === importDefault(4871).get(constants2.SPOTIFY).name;
+    const obj = importDefault(4871);
   }
   if (tmp) {
     tmp = null != type.party;

@@ -1,11 +1,11 @@
-// Module ID: 5155
-// Function ID: 44529
+// Module ID: 5177
+// Function ID: 5178
 // Name: SafeAreaPaddingView
-// Dependencies: [31, 27, 33, 1557, 5156, 636, 2]
+// Dependencies: [19, 17, 21, 1581, 5178, 659, 2]
 // Exports: SafeAreaPaddingView
 
-// Module 5155 (SafeAreaPaddingView)
-import result from "result";
+// Module 5177 (SafeAreaPaddingView)
+import noop from "noop";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
 
@@ -29,55 +29,57 @@ export const SafeAreaPaddingView = function SafeAreaPaddingView(top) {
     flag4 = false;
   }
   let style = top.style;
-  let obj = { top: 0, bottom: 0, left: 0, right: 0, style: 0 };
-  Object.setPrototypeOf(null);
-  const merged = Object.assign(top, obj);
+  const merged = Object.assign(top, Object.create(null));
   let ref;
   let items;
   let React;
   const rect = ref(items[3])();
+  let obj1 = React;
   ref = React.useRef(null);
-  if (null == style) {
+  if (style == null) {
     style = {};
   }
   items = [style, , , , ];
-  let tmp8;
-  if (flag) {
-    obj = { paddingTop: rect.top + tmp4 };
-    tmp8 = obj;
-  }
-  items[1] = tmp8;
   let tmp9;
-  if (flag2) {
-    const obj1 = { paddingBottom: rect.bottom + tmp5 };
-    tmp9 = obj1;
+  if (flag) {
+    let obj = { paddingTop: null };
+    obj[0] = rect.top + tmp5;
+    tmp9 = obj;
   }
-  items[2] = tmp9;
+  items[1] = tmp9;
   let tmp10;
-  if (flag3) {
-    const obj2 = { paddingLeft: rect.left + tmp6 };
-    tmp10 = obj2;
+  if (flag2) {
+    obj = { paddingBottom: null };
+    obj[0] = rect.bottom + tmp6;
+    tmp10 = obj;
   }
-  items[3] = tmp10;
+  items[2] = tmp10;
   let tmp11;
+  if (flag3) {
+    obj1 = { paddingLeft: null };
+    obj1[0] = rect.left + tmp7;
+    tmp11 = obj1;
+  }
+  items[3] = tmp11;
+  let tmp12;
   if (flag4) {
-    const obj3 = { paddingRight: rect.right + tmp7 };
-    tmp11 = obj3;
+    const obj2 = { paddingRight: null };
+    obj2[0] = rect.right + tmp8;
+    tmp12 = obj2;
   }
-  items[4] = tmp11;
-  const tmp12 = ref(items[4])(ref);
-  const tmp13 = ref(items[5])(items, tmp12);
-  React = tmp13;
-  if (tmp13) {
-    items = tmp12;
-    items = tmp12;
+  items[4] = tmp12;
+  const tmp13 = ref(items[4])(ref);
+  const tmp14 = ref(items[5])(items, tmp13);
+  React = tmp14;
+  if (tmp14) {
+    items = tmp13;
+    items = tmp13;
   }
-  const insertionEffect = React.useInsertionEffect(() => {
+  const insertionEffect = obj1.useInsertionEffect(() => {
     if (!c2) {
       ref.current = items;
     }
   });
-  const obj4 = { style: items };
   const merged1 = Object.assign(merged);
   return <View style={items} />;
 };

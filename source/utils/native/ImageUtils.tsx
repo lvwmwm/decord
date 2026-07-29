@@ -1,24 +1,17 @@
-// Module ID: 1449
-// Function ID: 16939
-// Name: clampDimension
-// Dependencies: [57, 27, 653, 1427, 1450, 1440, 1824, 22, 1395, 1392, 2]
+// Module ID: 1473
+// Function ID: 1474
+// Name: getSrcWithWidthAndHeight
+// Dependencies: [32, 17, 676, 1451, 1474, 1464, 1848, 12, 1419, 1416, 2]
 // Exports: getMobileOptimizedSrc, getPaletteForAvatarMobile
 
-// Module 1449 (clampDimension)
+// Module 1473 (getSrcWithWidthAndHeight)
 import _slicedToArray from "_slicedToArray";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { MEDIA_PROXY_MAX_TARGET_RESOLUTION as closure_6 } from "ME";
 
-let closure_4;
-let closure_5;
+let c4;
+let c5;
 const require = arg1;
-function clampDimension(targetHeight) {
-  let tmp = targetHeight;
-  if (targetHeight > closure_6) {
-    tmp = closure_6;
-  }
-  return tmp;
-}
 function getSrcWithWidthAndHeight(animated) {
   let format;
   let sourceHeight;
@@ -26,10 +19,9 @@ function getSrcWithWidthAndHeight(animated) {
   let src;
   let targetHeight;
   let targetWidth;
-  let tmp3;
-  let tmp4;
-  ({ src, sourceWidth, sourceHeight, format } = animated);
-  ({ targetWidth, targetHeight } = animated);
+  let tmp5;
+  let tmp6;
+  ({ src, sourceWidth, sourceHeight, targetWidth, targetHeight, format } = animated);
   if (format === undefined) {
     format = null;
   }
@@ -39,44 +31,57 @@ function getSrcWithWidthAndHeight(animated) {
   }
   const tmp = callback(src.split("?"), 2);
   const items = [tmp[0], ];
-  let obj = importDefault(1440);
+  let obj = importDefault(1464);
   items[1] = obj.parse(tmp[1]);
-  [tmp3, tmp4] = callback(items, 2);
-  if (tmp4.test(tmp3)) {
-    tmp4.format = "webp";
+  const tmp4 = callback(items, 2);
+  [tmp5, tmp6] = tmp4;
+  if (tmp4.test(tmp5)) {
+    tmp6.format = "webp";
   } else if (null != format) {
-    tmp4.format = format;
+    tmp6.format = format;
   }
-  const tmp6 = clampDimension(targetWidth);
-  const tmp7 = clampDimension(targetHeight);
-  if (tmp6 !== sourceWidth) {
-    obj = { location: "native/ImageUtils.getSrcWithWidthAndHeight" };
-    while (true) {
-      if (true === require(1427) /* apexExperiment */.getAttachmentImageLadderConfig(obj).enabled) {
-        let tmp10 = require;
-        let tmp11 = dependencyMap;
-        let num2 = 6;
-        let obj3 = require(1824) /* _createForOfIteratorHelperLoose */;
-        obj = { targetWidth: tmp6, targetHeight: tmp7, sourceWidth, sourceHeight };
-        let size = obj3.snapAttachmentDimensions(obj);
-      } else {
-        size = { width: tmp6, height: tmp7 };
+  if (targetWidth > closure_6) {
+    targetWidth = tmp8;
+  }
+  if (targetHeight > closure_6) {
+    targetHeight = tmp8;
+  }
+  if (targetWidth !== sourceWidth) {
+    if ((function isAttachmentLadderEnabled(arg0) {
+      try {
+        const obj = { location: null };
+        obj[0] = "native/ImageUtils.getSrcWithWidthAndHeight";
+        return true === callback(table[3]).getAttachmentImageLadderConfig(obj).enabled;
+      } catch (err) {
+        return false;
       }
-      let tmp12 = size.width === sourceWidth && size.height === sourceHeight;
-      if (!tmp12) {
-        tmp4.width = size.width | 0;
-        tmp4.height = size.height | 0;
-      }
+    })("native/ImageUtils.getSrcWithWidthAndHeight")) {
+      obj = { targetWidth: null, targetHeight: null, sourceWidth: null, sourceHeight: null };
+      obj[0] = targetWidth;
+      obj[1] = targetHeight;
+      obj[2] = sourceWidth;
+      obj[3] = sourceHeight;
+      let size = require(1848) /* items */.snapAttachmentDimensions(obj);
+      const obj2 = require(1848) /* items */;
+    } else {
+      size = { width: null, height: null };
+      size[0] = targetWidth;
+      size[1] = targetHeight;
     }
+    if (!tmp10) {
+      tmp6.width = size.width | 0;
+      tmp6.height = size.height | 0;
+    }
+    tmp10 = size.width === sourceWidth && size.height === sourceHeight;
   }
   if (flag) {
-    tmp4.animated = true;
+    tmp6.animated = true;
   }
-  const tmp2 = callback(items, 2);
-  let text = tmp3;
-  if (!obj5.isEmpty(tmp4)) {
-    text = `${tmp3}?${importDefault(1440).stringify(tmp4)}`;
-    const obj6 = importDefault(1440);
+  let tmp2Result = tmp2(12);
+  let text = tmp5;
+  if (!tmp2Result.isEmpty(tmp6)) {
+    tmp2Result = tmp2(1464);
+    text = `${tmp5}?${obj5.stringify(tmp6)}`;
   }
   return text;
 }
@@ -89,12 +94,12 @@ function getMobileOptimizedSrc(proxy_url, width, height, png) {
   if (tmp3.test(proxy_url)) {
     num = 0.3;
   }
-  let obj = require(1450) /* useWindowDimensions */;
+  let obj = require(1474) /* useWindowDimensions */;
   const size = obj.getWindowDimensions();
   const result = store.getPixelSizeForLayoutSize(size.width) * num;
   const bound = Math.min(width > height ? result / width : store.getPixelSizeForLayoutSize(size.height / 2) * num / height, 1);
-  let rounded = width;
   let rounded1 = height;
+  let rounded = width;
   if (bound < 1) {
     const _Math = Math;
     rounded = Math.ceil(width * bound);
@@ -104,16 +109,16 @@ function getMobileOptimizedSrc(proxy_url, width, height, png) {
   obj = { src: proxy_url, sourceWidth: width, sourceHeight: height, targetWidth: rounded, targetHeight: rounded1, format: tmp };
   return getSrcWithWidthAndHeight(obj);
 }
-function getPaletteForAvatarMobile(emojiURL) {
-  const obj = require(1395) /* ensureAvatarSource */;
+function getPaletteForAvatarMobile(closure_0) {
+  const obj = require(1419) /* ensureAvatarSource */;
   ImageManager = ImageManager.ImageManager;
-  return ImageManager.getDominantColors(obj.ensureAvatarSource(require(1392) /* getAvatarURL */.makeSource(emojiURL)));
+  return ImageManager.getDominantColors(obj.ensureAvatarSource(require(1416) /* getAvatarURL */.makeSource(closure_0)));
 }
-({ NativeModules: closure_4, PixelRatio: closure_5 } = get_ActivityIndicator);
+({ NativeModules: c4, PixelRatio: c5 } = get_ActivityIndicator);
 const tmp3 = /\.(gif)$/i;
-let closure_7 = tmp3;
-const tmp4 = /\.(avif)$/i;
-let closure_8 = tmp4;
+const error = tmp3;
+let tmp4 = /\.(avif)$/i;
+const metroImportAll = tmp4;
 let result = require("ME").fileFinishedImporting("utils/native/ImageUtils.tsx");
 
 export default { getMobileOptimizedSrc, getPaletteForAvatarMobile };

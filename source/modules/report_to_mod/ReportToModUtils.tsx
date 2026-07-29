@@ -1,49 +1,19 @@
-// Module ID: 6034
-// Function ID: 53513
-// Name: isModeratorReportOrPostChannelId
-// Dependencies: [6035, 1348, 1838, 4384, 1850, 6042, 6043, 5773, 5772, 6044, 483, 3798, 5848, 5859, 5860, 6045, 2]
-// Exports: canAccessReportsChannel, canReportMessageToMods, getReportToModChannelId, isModeratorReportChannelId, isModeratorReportMessage, isModeratorReportPostChannelId, isModeratorReportThreadStarterMessage, isSafeToTransitionToReportForCurrentUser, isUserAuthorOfReportedMessage, sortedModeratorReportTags
+// Module ID: 6052
+// Function ID: 6053
+// Name: canReportMessageToMods
+// Dependencies: [6053, 1372, 1862, 4407, 1874, 6060, 6061, 5791, 5790, 6062, 506, 3822, 5866, 5877, 5878, 6063, 2]
+// Exports: canAccessReportsChannel, canReportMessageToMods, getReportToModChannelId, isModeratorReportChannel, isModeratorReportChannelId, isModeratorReportMessage, isModeratorReportOrPostChannel, isModeratorReportOrPostChannelId, isModeratorReportPostChannel, isModeratorReportPostChannelId, isModeratorReportThreadStarterMessage, isSafeToTransitionToReportForCurrentUser, isUserAuthorOfReportedMessage, sortedModeratorReportTags
 
-// Module 6034 (isModeratorReportOrPostChannelId)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_5 from "_isNativeReflectConstruct";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import closure_7 from "_isNativeReflectConstruct";
-import closure_8 from "_isNativeReflectConstruct";
+// Module 6052 (canReportMessageToMods)
+import handleLoadThreadsSuccess from "handleLoadThreadsSuccess";
+import ensureGuildLoaded from "ensureGuildLoaded";
+import createGuildRecordFromRust from "createGuildRecordFromRust";
+import reinjectEphemerals from "reinjectEphemerals";
+import mergeGuildAvatar from "mergeGuildAvatar";
 import { ReportToModPermissions } from "ReportToModPermissions";
 
 const require = arg1;
-function isModeratorReportOrPostChannelId(channelId) {
-  return isModeratorReportOrPostChannel(store.getChannel(channelId));
-}
-function isModeratorReportChannel(channel) {
-  let tmp = null != channel;
-  if (tmp) {
-    tmp = channel.isModeratorReportChannel() && channel.isForumChannel();
-    const tmp2 = channel.isModeratorReportChannel() && channel.isForumChannel();
-  }
-  return tmp;
-}
-function isModeratorReportPostChannel(channel) {
-  let tmp = null != channel;
-  if (tmp) {
-    tmp = channel.isModeratorReportChannel() && channel.isForumPost();
-    const tmp2 = channel.isModeratorReportChannel() && channel.isForumPost();
-  }
-  return tmp;
-}
-function isModeratorReportOrPostChannel(channel) {
-  let tmp = null != channel;
-  if (tmp) {
-    let tmp3 = isModeratorReportChannel(channel);
-    if (!tmp3) {
-      tmp3 = isModeratorReportPostChannel(channel);
-    }
-    tmp = tmp3;
-  }
-  return tmp;
-}
-const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/report_to_mod/ReportToModUtils.tsx");
+let result = require("createGuildRecordFromRust").fileFinishedImporting("modules/report_to_mod/ReportToModUtils.tsx");
 
 export const canReportMessageToMods = function canReportMessageToMods(message) {
   if (obj.canReportUser(message.author)) {
@@ -55,102 +25,197 @@ export const canReportMessageToMods = function canReportMessageToMods(message) {
       if (null == guild) {
         return false;
       } else {
-        let tmp8 = importDefault(5773)(guild);
-        if (tmp8) {
-          tmp8 = null != importDefault(5772)(guild);
-        }
-        return tmp8;
+        return importDefault(5791)(guild) && null != importDefault(5790)(guild);
       }
     }
   } else {
     return false;
   }
-  obj = require(6043) /* canReportUser */;
+  obj = require(6061) /* canReportUser */;
 };
-export const canAccessReportsChannel = function canAccessReportsChannel(guildId) {
+export const canAccessReportsChannel = function canAccessReportsChannel(arg0) {
   let tmp = arg1;
   if (arg1 === undefined) {
-    const items = [_createForOfIteratorHelperLoose, closure_8];
+    const items = [createGuildRecordFromRust, mergeGuildAvatar];
     tmp = items;
   }
-  let obj = require(6044) /* getContextForPermission */;
-  const contextForPermission = obj.getContextForPermission(guildId, tmp);
+  let obj = require(6062) /* getContextForPermission */;
+  const contextForPermission = obj.getContextForPermission(arg0, tmp);
   if (null == contextForPermission) {
     return false;
   } else {
     const guild = contextForPermission.guild;
     let tmp7 = null == guild;
     if (!tmp7) {
-      tmp7 = !importDefault(5773)(guild);
+      tmp7 = !importDefault(5791)(guild);
     }
     if (!tmp7) {
-      tmp7 = null == importDefault(5772)(guild);
+      tmp7 = null == importDefault(5790)(guild);
     }
     let hasAnyResult = !tmp7;
     if (!tmp7) {
-      const obj2 = importAll(483);
-      obj = { user: contextForPermission.user, context: guild, checkElevated: false };
-      hasAnyResult = obj2.hasAny(importAll(3798).computePermissions(obj), ReportToModPermissions);
-      const obj3 = importAll(3798);
+      const obj2 = importAll(506);
+      obj = { user: null, context: null, checkElevated: false };
+      obj[0] = contextForPermission.user;
+      obj[1] = guild;
+      hasAnyResult = obj2.hasAny(importAll(3822).computePermissions(obj), ReportToModPermissions);
+      const obj3 = importAll(3822);
     }
     return hasAnyResult;
   }
 };
-export const getReportToModChannelId = function getReportToModChannelId(guildId) {
-  const guild = store2.getGuild(guildId);
+export const getReportToModChannelId = function getReportToModChannelId(arg0) {
+  const guild = store2.getGuild(arg0);
   let tmp2 = null;
   if (null != guild) {
-    tmp2 = importDefault(5772)(guild);
+    tmp2 = importDefault(5790)(guild);
   }
   return tmp2;
 };
-export { isModeratorReportOrPostChannelId };
-export const isModeratorReportChannelId = function isModeratorReportChannelId(channelId) {
-  return isModeratorReportChannel(store.getChannel(channelId));
+export const isModeratorReportOrPostChannelId = function isModeratorReportOrPostChannelId(channelId) {
+  const channel = store.getChannel(channelId);
+  let tmp = null != channel;
+  if (tmp) {
+    let tmp2 = null != channel;
+    if (tmp2) {
+      tmp2 = channel.isModeratorReportChannel() && channel.isForumChannel();
+      const tmp3 = channel.isModeratorReportChannel() && channel.isForumChannel();
+    }
+    if (!tmp2) {
+      let tmp4 = null != channel;
+      if (tmp4) {
+        tmp4 = channel.isModeratorReportChannel() && channel.isForumPost();
+        const tmp5 = channel.isModeratorReportChannel() && channel.isForumPost();
+      }
+      tmp2 = tmp4;
+    }
+    tmp = tmp2;
+  }
+  return tmp;
 };
-export { isModeratorReportChannel };
-export const isModeratorReportPostChannelId = function isModeratorReportPostChannelId(channelId) {
-  return isModeratorReportPostChannel(store.getChannel(channelId));
+export const isModeratorReportChannelId = function isModeratorReportChannelId(arg0) {
+  const channel = store.getChannel(arg0);
+  let tmp = null != channel;
+  if (tmp) {
+    tmp = channel.isModeratorReportChannel() && channel.isForumChannel();
+    const tmp2 = channel.isModeratorReportChannel() && channel.isForumChannel();
+  }
+  return tmp;
 };
-export { isModeratorReportPostChannel };
-export { isModeratorReportOrPostChannel };
-export const isSafeToTransitionToReportForCurrentUser = function isSafeToTransitionToReportForCurrentUser(channelId) {
-  if (null == channelId) {
+export const isModeratorReportChannel = function isModeratorReportChannel(isModeratorReportChannel) {
+  let tmp = null != isModeratorReportChannel;
+  if (tmp) {
+    tmp = isModeratorReportChannel.isModeratorReportChannel() && isModeratorReportChannel.isForumChannel();
+    const tmp2 = isModeratorReportChannel.isModeratorReportChannel() && isModeratorReportChannel.isForumChannel();
+  }
+  return tmp;
+};
+export const isModeratorReportPostChannelId = function isModeratorReportPostChannelId(arg0) {
+  const channel = store.getChannel(arg0);
+  let tmp = null != channel;
+  if (tmp) {
+    tmp = channel.isModeratorReportChannel() && channel.isForumPost();
+    const tmp2 = channel.isModeratorReportChannel() && channel.isForumPost();
+  }
+  return tmp;
+};
+export const isModeratorReportPostChannel = function isModeratorReportPostChannel(isModeratorReportChannel) {
+  let tmp = null != isModeratorReportChannel;
+  if (tmp) {
+    tmp = isModeratorReportChannel.isModeratorReportChannel() && isModeratorReportChannel.isForumPost();
+    const tmp2 = isModeratorReportChannel.isModeratorReportChannel() && isModeratorReportChannel.isForumPost();
+  }
+  return tmp;
+};
+export const isModeratorReportOrPostChannel = function isModeratorReportOrPostChannel(isModeratorReportChannel) {
+  let tmp = null != isModeratorReportChannel;
+  if (tmp) {
+    let tmp2 = null != isModeratorReportChannel;
+    if (tmp2) {
+      tmp2 = isModeratorReportChannel.isModeratorReportChannel() && isModeratorReportChannel.isForumChannel();
+      const tmp3 = isModeratorReportChannel.isModeratorReportChannel() && isModeratorReportChannel.isForumChannel();
+    }
+    if (!tmp2) {
+      let tmp4 = null != isModeratorReportChannel;
+      if (tmp4) {
+        tmp4 = isModeratorReportChannel.isModeratorReportChannel() && isModeratorReportChannel.isForumPost();
+        const tmp5 = isModeratorReportChannel.isModeratorReportChannel() && isModeratorReportChannel.isForumPost();
+      }
+      tmp2 = tmp4;
+    }
+    tmp = tmp2;
+  }
+  return tmp;
+};
+export const isSafeToTransitionToReportForCurrentUser = function isSafeToTransitionToReportForCurrentUser(arg0) {
+  let firstMessage;
+  let loaded;
+  if (null == arg0) {
     return true;
   } else {
-    if (obj2.isCurrentUserTeen()) {
-      if (isModeratorReportOrPostChannelId(channelId)) {
-        message = message.getMessage(channelId);
-        const firstMessage = message.firstMessage;
-        let tmp4 = !message.loaded || null == firstMessage;
-        if (!tmp4) {
-          tmp4 = !require(5859) /* _createForOfIteratorHelperLoose */.messageHasObscurableMediaForBitmask(firstMessage, require(5860) /* ContentHarmType */.ContentHarmTypeBitMask.EXPLICIT);
-          const obj = require(5859) /* _createForOfIteratorHelperLoose */;
+    if (obj3.isCurrentUserTeen()) {
+      const channel = store.getChannel(arg0);
+      let tmp2 = null != channel;
+      if (tmp2) {
+        let tmp3 = null != channel;
+        if (tmp3) {
+          tmp3 = channel.isModeratorReportChannel() && channel.isForumChannel();
+          const tmp4 = channel.isModeratorReportChannel() && channel.isForumChannel();
         }
-        return tmp4;
+        if (!tmp3) {
+          let tmp5 = null != channel;
+          if (tmp5) {
+            tmp5 = channel.isModeratorReportChannel() && channel.isForumPost();
+            const tmp6 = channel.isModeratorReportChannel() && channel.isForumPost();
+          }
+          tmp3 = tmp5;
+        }
+        tmp2 = tmp3;
+      }
+      if (tmp2) {
+        message = message.getMessage(arg0);
+        ({ loaded, firstMessage } = message);
+        let tmp9 = !loaded;
+        if (loaded) {
+          tmp9 = null == firstMessage;
+        }
+        if (!tmp9) {
+          tmp9 = !tmp10(5877).messageHasObscurableMediaForBitmask(firstMessage, tmp10(5878).ContentHarmTypeBitMask.EXPLICIT);
+          const tmp10Result = tmp10(5877);
+        }
+        return tmp9;
       } else {
         return true;
       }
     } else {
       return true;
     }
-    obj2 = require(5848) /* isCurrentUserTeen */;
+    obj3 = require(5866) /* isCurrentUserTeen */;
   }
 };
-export const isModeratorReportThreadStarterMessage = function isModeratorReportThreadStarterMessage(isFirstMessageInForumPost, channel) {
-  const tmp = !isFirstMessageInForumPost.isFirstMessageInForumPost(channel) || !isFirstMessageInForumPost.isSystemDM();
-  let tmp2 = !tmp;
-  if (!tmp) {
-    tmp2 = isModeratorReportPostChannel(channel);
+export const isModeratorReportThreadStarterMessage = function isModeratorReportThreadStarterMessage(isFirstMessageInForumPost, isModeratorReportChannel) {
+  const result = isFirstMessageInForumPost.isFirstMessageInForumPost(isModeratorReportChannel);
+  let tmp2 = !result;
+  if (result) {
+    tmp2 = !isFirstMessageInForumPost.isSystemDM();
   }
-  return tmp2;
+  let tmp3 = !tmp2;
+  if (!tmp2) {
+    let tmp5 = null != isModeratorReportChannel;
+    if (tmp5) {
+      tmp5 = isModeratorReportChannel.isModeratorReportChannel() && isModeratorReportChannel.isForumPost();
+      const tmp6 = isModeratorReportChannel.isModeratorReportChannel() && isModeratorReportChannel.isForumPost();
+    }
+    tmp3 = tmp5;
+  }
+  return tmp3;
 };
 export const sortedModeratorReportTags = function sortedModeratorReportTags(found) {
   return found.sort((id, id2) => {
     let num = -1;
-    if (id.id != outer1_0(outer1_3[15]).ReservedTagIds.MULTIPLE_REPORTS) {
+    if (id.id != callback(table[15]).ReservedTagIds.MULTIPLE_REPORTS) {
       let num2 = 0;
-      if (id2.id == outer1_0(outer1_3[15]).ReservedTagIds.MULTIPLE_REPORTS) {
+      if (id2.id == callback(table[15]).ReservedTagIds.MULTIPLE_REPORTS) {
         num2 = 1;
       }
       num = num2;
@@ -162,20 +227,20 @@ export const isModeratorReportMessage = function isModeratorReportMessage(messag
   messageSnapshots = messageSnapshots.messageSnapshots;
   return messageSnapshots.some((moderatorReport) => null != moderatorReport.moderatorReport);
 };
-export const isUserAuthorOfReportedMessage = function isUserAuthorOfReportedMessage(channelId) {
-  const channel = store.getChannel(channelId);
+export const isUserAuthorOfReportedMessage = function isUserAuthorOfReportedMessage(arg0, arg1) {
+  const channel = store.getChannel(arg0);
   if (null != channel) {
     if (channel.isModeratorReportChannel()) {
-      messages = messages.getMessages(channelId);
+      messages = messages.getMessages(arg0);
       const firstResult = messages.first();
       let reported_user_id;
-      if (null != firstResult) {
+      if (firstResult != null) {
         const messageSnapshots = firstResult.messageSnapshots;
-        if (null != messageSnapshots) {
+        if (messageSnapshots != null) {
           const first = messageSnapshots[0];
-          if (null != first) {
+          if (first != null) {
             const moderatorReport = first.moderatorReport;
-            if (null != moderatorReport) {
+            if (moderatorReport != null) {
               reported_user_id = moderatorReport.reported_user_id;
             }
           }

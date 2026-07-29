@@ -1,33 +1,34 @@
-// Module ID: 13718
-// Function ID: 105197
+// Module ID: 13739
+// Function ID: 13740
 // Name: UserProfileUpsellCard
-// Dependencies: [31, 27, 5545, 6207, 33, 4165, 689, 1273, 6606, 4161, 4589, 668, 2]
+// Dependencies: [19, 17, 5563, 6227, 21, 4189, 712, 1297, 6627, 4185, 4611, 691, 2]
 // Exports: default
 
-// Module 13718 (UserProfileUpsellCard)
-import "result";
+// Module 13739 (UserProfileUpsellCard)
+import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { Gradients } from "items";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_3;
-let closure_4;
+let c3;
+let c4;
 let closure_6;
-let closure_7;
-let require = arg1;
-({ View: closure_3, ScrollView: closure_4 } = get_ActivityIndicator);
-({ jsx: closure_6, jsxs: closure_7 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { marginTop: 8, flexShrink: 0, borderRadius: require("_createForOfIteratorHelperLoose").radii.round, gap: 4 };
-_createForOfIteratorHelperLoose.upsellButton = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.titleContainer = { flexDirection: "row", alignItems: "center", gap: 4, marginBottom: 4 };
-_createForOfIteratorHelperLoose.linearGradient = { width: "100%", height: "100%", position: "absolute", overflow: "hidden" };
-_createForOfIteratorHelperLoose.outer = { marginHorizontal: require("ARBITRARY_LARGE_OFFSET").PROFILE_SIDE_PADDING - 1 };
-_createForOfIteratorHelperLoose.scroll = { borderRadius: require("_createForOfIteratorHelperLoose").radii.lg, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SURFACE_HIGH };
-_createForOfIteratorHelperLoose.inner = { paddingVertical: 12, paddingHorizontal: 14 };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-let obj1 = { borderRadius: require("_createForOfIteratorHelperLoose").radii.lg, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SURFACE_HIGH };
+let error;
+const require = arg1;
+({ View: c3, ScrollView: c4 } = get_ActivityIndicator);
+({ jsx: closure_6, jsxs: error } = jsxProd);
+createCacheKey = { upsellButton: null, titleContainer: null, linearGradient: null, outer: null, scroll: null, inner: null };
+createCacheKey = { marginTop: 8, flexShrink: 0, borderRadius: require("Themes").radii.round, gap: 4 };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { flexDirection: "row", alignItems: "center", gap: 4, marginBottom: 4 };
+createCacheKey[2] = { width: "100%", height: "100%", position: "absolute", overflow: "hidden" };
+createCacheKey[3] = { marginHorizontal: require("ARBITRARY_LARGE_OFFSET").PROFILE_SIDE_PADDING - 1 };
+let obj1 = { marginHorizontal: require("ARBITRARY_LARGE_OFFSET").PROFILE_SIDE_PADDING - 1 };
+createCacheKey[4] = { borderRadius: require("Themes").radii.lg, backgroundColor: require("Themes").colors.BACKGROUND_SURFACE_HIGH };
+createCacheKey[5] = { paddingVertical: 12, paddingHorizontal: 14 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let obj2 = { borderRadius: require("Themes").radii.lg, backgroundColor: require("Themes").colors.BACKGROUND_SURFACE_HIGH };
 const result = require("ARBITRARY_LARGE_OFFSET").fileFinishedImporting("modules/user_profile/native/UserProfileUpsellCard.tsx");
 
 export default function UserProfileUpsellCard(headerText) {
@@ -37,50 +38,49 @@ export default function UserProfileUpsellCard(headerText) {
   let showLinearGradient;
   let style;
   headerText = headerText.headerText;
+  let _require;
   ({ style, children, ctaText, showLinearGradient, onPress } = headerText);
-  let tmp = _createForOfIteratorHelperLoose();
-  const require = tmp;
-  let obj = { borderWidth: 1, style: items };
+  const tmp = createCacheKey();
+  _require = tmp;
+  let obj = { borderWidth: 1, style: items, direction: null, colors: null, borderRadius: null, children: null };
   items = [tmp.outer, style];
-  obj.direction = require(1273) /* Button */.GradientBorder.Direction.HORIZONTAL;
-  obj.colors = Gradients.PREMIUM_TIER_2;
-  obj.borderRadius = importDefault(689).radii.lg;
-  obj = { bounces: false, style: tmp.scroll, contentContainerStyle: tmp.inner };
-  let tmp5 = null;
+  obj[2] = _require(1297).GradientBorder.Direction.HORIZONTAL;
+  obj[3] = Gradients.PREMIUM_TIER_2;
+  obj[4] = importDefault(712).radii.lg;
+  obj = { bounces: false, style: tmp.scroll, contentContainerStyle: tmp.inner, children: null };
+  let tmp6Result = null;
   if (null != headerText) {
-    obj = { style: tmp.titleContainer };
-    const obj1 = { color: importDefault(689).colors.MOBILE_TEXT_HEADING_PRIMARY, size: "xs" };
-    const items1 = [callback(require(6606) /* NitroWheelIcon */.NitroWheelIcon, obj1), ];
-    const obj2 = { variant: "heading-sm/bold", children: headerText };
-    items1[1] = callback(require(4161) /* Text */.Text, obj2);
-    obj.children = items1;
-    tmp5 = callback2(closure_3, obj);
+    obj = { style: null, children: null };
+    obj[0] = tmp.titleContainer;
+    const obj1 = { color: null, size: "xs" };
+    obj1[0] = importDefault(712).colors.MOBILE_TEXT_HEADING_PRIMARY;
+    const items1 = [tmp2(tmp3(6627).NitroWheelIcon, obj1), ];
+    const obj2 = { variant: "heading-sm/bold", children: null };
+    obj2[1] = headerText;
+    items1[1] = tmp2(tmp3(4185).Text, obj2);
+    obj[1] = items1;
+    tmp6Result = tmp6(closure_3, obj);
   }
-  const items2 = [tmp5, children, ];
-  const obj3 = {
-    style: tmp.upsellButton,
-    onPress,
-    text: ctaText,
-    color: require(1273) /* Button */.ButtonColors.GREEN,
-    renderIcon() {
-      return outer1_6(tmp(outer1_2[8]).NitroWheelIcon, { color: "white", size: "xs" });
-    }
+  const items2 = [tmp6Result, children, ];
+  const obj3 = { style: tmp.upsellButton, onPress, text: ctaText, color: null, renderIcon: null, renderLinearGradient: null };
+  obj3[3] = _require(1297).ButtonColors.GREEN;
+  obj3[4] = function renderIcon() {
+    return callback(_undefined(table[8]).NitroWheelIcon, { color: "white", size: "xs" });
   };
   let fn;
   if (showLinearGradient) {
     fn = () => {
-      const obj = { style: items };
-      items = [tmp.linearGradient];
-      tmp = outer1_1(outer1_2[10]);
-      obj.start = tmp(outer1_2[11]).HorizontalGradient.START;
-      obj.end = tmp(outer1_2[11]).HorizontalGradient.END;
-      obj.colors = outer1_5.PREMIUM_TIER_2_TRI_COLOR;
-      return outer1_6(tmp, obj);
+      const obj = { style: items, start: null, end: null, colors: null };
+      items = [_undefined.linearGradient];
+      obj[1] = _undefined(outer1_2[11]).HorizontalGradient.START;
+      obj[2] = _undefined(outer1_2[11]).HorizontalGradient.END;
+      obj[3] = outer1_5.PREMIUM_TIER_2_TRI_COLOR;
+      return outer1_6(outer1_1(outer1_2[10]), obj);
     };
   }
-  obj3.renderLinearGradient = fn;
-  items2[2] = callback(require(1273) /* Button */.ShinyButton, obj3);
-  obj.children = items2;
-  obj.children = callback2(closure_4, obj);
-  return callback(require(1273) /* Button */.GradientBorder, obj);
+  obj3[5] = fn;
+  items2[2] = closure_6(_require(1297).ShinyButton, obj3);
+  obj[3] = items2;
+  obj[5] = closure_7(closure_4, obj);
+  return closure_6(_require(1297).GradientBorder, obj);
 };

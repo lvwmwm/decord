@@ -1,30 +1,29 @@
-// Module ID: 15338
-// Function ID: 116815
+// Module ID: 15371
+// Function ID: 15372
 // Name: items
-// Dependencies: [31, 27, 1850, 33, 11977, 7889, 11982, 15289, 689, 566, 4396, 8359, 5503, 7887, 8451, 8462, 7884, 15339, 1935, 8161, 4372, 15343, 1212, 15345, 4161, 4004, 5908, 21, 666, 4695, 5119, 15346, 2]
+// Dependencies: [19, 17, 1874, 21, 12001, 7914, 12006, 15322, 712, 589, 4419, 8383, 5521, 7912, 8475, 8486, 7909, 15372, 1959, 8185, 4395, 15376, 1236, 15378, 4185, 4028, 5927, 11, 689, 4717, 5141, 15379, 2]
 // Exports: default
 
-// Module 15338 (items)
-import ContentInventoryReplyRow from "ContentInventoryReplyRow";
-import { View } from "DISCORD_EPOCH";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import jsxProd from "jsxProd";
+// Module 15371 (items)
+import module_8185 from "module_8185";
+import { View } from "Screenshot";
+import mergeGuildAvatar from "mergeGuildAvatar";
+import jsxProd from "useReplyActions";
 import createICYMIStyles from "createICYMIStyles";
 
-let closure_7;
-let closure_8;
-let closure_9;
+let c9;
+let error;
+let metroImportAll;
 const require = arg1;
-({ jsx: closure_7, Fragment: closure_8, jsxs: closure_9 } = jsxProd);
+({ jsx: error, Fragment: metroImportAll, jsxs: c9 } = jsxProd);
 let obj = { Badge: require("ActiveTimestamp").NewGameBadge, predicate: require("calculateTimestampDurations").isEntryNew };
 let items = [obj, , , , ];
 obj = {
   Badge: require("ActiveTimestamp").StreakBadge,
   predicate(entry) {
-    const streakCount = require(7889) /* calculateTimestampDurations */.getStreakCount(entry);
-    let num = 0;
-    if (null != streakCount) {
-      num = streakCount;
+    let num = require(7914) /* calculateTimestampDurations */.getStreakCount(entry);
+    if (num == null) {
+      num = 0;
     }
     return num >= 2;
   }
@@ -33,12 +32,10 @@ items[1] = obj;
 obj = {
   Badge: require("ActiveTimestamp").TrendingBadge,
   predicate(entry) {
-    const trendingType = require(7889) /* calculateTimestampDurations */.getTrendingType(entry);
-    let tmp2 = null != trendingType;
-    if (tmp2) {
-      tmp2 = trendingType !== require(11982) /* TrendingType */.TrendingType.TRENDING_TYPE_UNSPECIFIED;
-    }
-    return tmp2;
+    const trendingType = require(7914) /* calculateTimestampDurations */.getTrendingType(entry);
+    const obj = require(7914) /* calculateTimestampDurations */;
+    const tmp = require;
+    return null != trendingType && trendingType !== require(12006) /* TrendingType */.TrendingType.TRENDING_TYPE_UNSPECIFIED;
   }
 };
 items[2] = obj;
@@ -57,84 +54,83 @@ let obj1 = {
 items[4] = {
   Badge: require("ActiveTimestamp").MarathonBadge,
   predicate(entry) {
-    return true === require(7889) /* calculateTimestampDurations */.isEntryMarathon(entry);
+    return true === require(7914) /* calculateTimestampDurations */.isEntryMarathon(entry);
   }
 };
-let closure_11 = createICYMIStyles.createICYMIStyles((arg0) => {
-  let obj = {};
-  obj = { flexDirection: "row", gap: null, alignItems: "center" };
-  ({ margin: obj2.gap, margin: obj2.padding, inset: obj2.marginLeft } = arg0);
-  obj.borderRadius = importDefault(689).radii.lg;
-  obj.backgroundColor = importDefault(689).colors.BACKGROUND_SURFACE_HIGH;
-  const merged = Object.assign(importDefault(689).shadows.SHADOW_HIGH);
-  obj.card = obj;
-  obj.cardInnerContainer = { overflow: "hidden", flex: 1 };
-  obj = { width: 72, height: 72, borderRadius: importDefault(689).radii.sm };
-  obj.image = obj;
-  obj.gameName = { maxWidth: 275, color: importDefault(689).colors.CONTENT_INVENTORY_OVERLAY_TEXT_PRIMARY };
-  const obj2 = { display: "flex", flexDirection: "row", gap: importDefault(689).space.PX_8, flexWrap: "wrap", alignItems: "center", marginTop: 6 };
-  obj.badges = obj2;
+let closure_11 = createICYMIStyles.createICYMIStyles((gap) => {
+  let obj = { card: null, cardInnerContainer: null, image: null, gameName: null, badges: null };
+  obj = { flexDirection: "row", gap: gap.margin, alignItems: "center", padding: gap.margin, marginLeft: gap.inset, borderRadius: importDefault(712).radii.lg, backgroundColor: importDefault(712).colors.BACKGROUND_SURFACE_HIGH };
+  const merged = Object.assign(importDefault(712).shadows.SHADOW_HIGH);
+  obj[0] = obj;
+  obj[1] = { overflow: "hidden", flex: 1 };
+  obj = { width: 72, height: 72, borderRadius: importDefault(712).radii.sm };
+  obj[2] = obj;
+  obj[3] = { maxWidth: 275, color: importDefault(712).colors.CONTENT_INVENTORY_OVERLAY_TEXT_PRIMARY };
+  const obj1 = { maxWidth: 275, color: importDefault(712).colors.CONTENT_INVENTORY_OVERLAY_TEXT_PRIMARY };
+  obj[4] = { display: "flex", flexDirection: "row", gap: importDefault(712).space.PX_8, flexWrap: "wrap", alignItems: "center", marginTop: 6 };
   return obj;
 });
 let obj2 = {
   Badge: require("ActiveTimestamp").MarathonBadge,
   predicate(entry) {
-    return true === require(7889) /* calculateTimestampDurations */.isEntryMarathon(entry);
+    return true === require(7914) /* calculateTimestampDurations */.isEntryMarathon(entry);
   }
 };
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/icymi/native/content_inventory/GamingLikeEntryRow.tsx");
+const result = require("mergeGuildAvatar").fileFinishedImporting("modules/icymi/native/content_inventory/GamingLikeEntryRow.tsx");
 
 export default function GamingLikeEntryRow(content) {
   content = content.content;
   const renderForScreenshot = content.renderForScreenshot;
+  let author_id;
   let c2;
   let openReplyActionSheet;
-  let tmp = callback2();
+  const tmp = callback();
   const application_id = content.extra.application_id;
-  const author_id = content.author_id;
+  author_id = content.author_id;
   let obj = content(openReplyActionSheet[9]);
-  let items = [_isNativeReflectConstruct];
+  let items = [mergeGuildAvatar];
   const stateFromStores = obj.useStateFromStores(items, () => outer1_6.getUser(author_id));
   let obj1 = content(openReplyActionSheet[11]);
   const displayNameStylesFont = obj1.useDisplayNameStylesFont({ displayNameStyles: author_id(openReplyActionSheet[10])({ userId: author_id }) });
   let obj2 = content(openReplyActionSheet[12]);
   const getOrFetchApplication = obj2.useGetOrFetchApplication(application_id);
   let iconURL;
-  if (null != getOrFetchApplication) {
+  if (getOrFetchApplication != null) {
     iconURL = getOrFetchApplication.getIconURL(72);
   }
-  const primaryColor = author_id(openReplyActionSheet[13])(iconURL).primaryColor;
-  if (null != getOrFetchApplication) {
+  const primaryColor = tmp5(tmp3[13])(iconURL).primaryColor;
+  if (getOrFetchApplication != null) {
     const iconURL1 = getOrFetchApplication.getIconURL(240);
   }
-  obj = { location: "ICYMI Activity Card", applicationId: application_id };
-  const tmp3 = author_id(openReplyActionSheet[10])({ userId: author_id });
-  obj.source = content(openReplyActionSheet[15]).GameProfileSources.ActivityCard;
-  obj.trackEntryPointImpression = true;
-  obj.sourceUserId = author_id;
-  const tmp7Result = author_id(openReplyActionSheet[14])(obj);
-  c2 = tmp7Result;
-  const items1 = [tmp7Result];
-  const callback = React.useCallback(() => {
-    if (null != _undefined) {
-      _undefined();
+  obj = { location: "ICYMI Activity Card", applicationId: application_id, source: null, trackEntryPointImpression: true, sourceUserId: null };
+  let tmp5Result = tmp5(tmp3[14]);
+  obj[2] = content(openReplyActionSheet[15]).GameProfileSources.ActivityCard;
+  obj[4] = author_id;
+  const tmp5ResultResult = tmp5Result(obj);
+  c2 = tmp5ResultResult;
+  const items1 = [tmp5ResultResult];
+  callback = React.useCallback(() => {
+    if (null != c2) {
+      tmp();
     }
   }, items1);
   const items2 = [content];
   const memo = React.useMemo(() => {
     if (content.content_type === content(openReplyActionSheet[16]).ContentInventoryEntryType.TOP_GAME) {
-      let obj = { entry: content };
+      let obj = { entry: null };
+      obj[0] = content;
       const items = [outer1_7(_undefined(openReplyActionSheet[4]).TopGameBadge, obj, "topgame")];
       let found = items;
     } else {
       const mapped = outer1_10.map((Badge) => {
         Badge = Badge.Badge;
-        let tmp = null;
-        if (Badge.predicate(outer1_0)) {
-          const obj = { entry: outer1_0 };
-          tmp = outer2_7(Badge, obj, Badge.name);
+        let tmp2 = null;
+        if (Badge.predicate(closure_0)) {
+          const obj = { entry: null };
+          obj[0] = closure_0;
+          tmp2 = outer1_7(Badge, obj, Badge.name);
         }
-        return tmp;
+        return tmp2;
       });
       const _Boolean = Boolean;
       found = mapped.filter(Boolean);
@@ -146,125 +142,141 @@ export default function GamingLikeEntryRow(content) {
     content(openReplyActionSheet[18])(openReplyActionSheet[17], openReplyActionSheet.paths).then((GameShareModal) => {
       GameShareModal = GameShareModal.GameShareModal;
       if (null != GameShareModal) {
-        let obj = author_id(openReplyActionSheet[19]);
-        obj.itemInteracted(outer1_0.id, "hotwheels_gaming_activity", "press_forward");
-        let obj1 = author_id(openReplyActionSheet[19]);
-        obj = { itemId: outer1_0.id, itemType: "hotwheels_gaming_activity", actionParameters: { actionGestureType: "press", actionTargetElement: "forward_button", actionIntentType: "share", actionDestinationType: null } };
-        obj1.feedItemActioned(obj);
-        const obj4 = author_id(openReplyActionSheet[20]);
-        obj = { content: outer1_0 };
-        obj1 = { presentation: "modal" };
-        obj4.pushLazy(() => Promise.resolve(GameShareModal), obj, "GameShareModal", obj1);
+        let obj = outer1_1(outer1_3[19]);
+        obj.itemInteracted(GameShareModal.id, "hotwheels_gaming_activity", "press_forward");
+        obj = { itemId: null, itemType: "hotwheels_gaming_activity", actionParameters: null };
+        obj[0] = GameShareModal.id;
+        obj[2] = { actionGestureType: "press", actionTargetElement: "forward_button", actionIntentType: "share", actionDestinationType: null };
+        outer1_1(outer1_3[19]).feedItemActioned(obj);
+        const obj4 = outer1_1(outer1_3[20]);
+        obj = { content: null };
+        obj[0] = GameShareModal;
+        obj4.pushLazy(() => Promise.resolve(GameShareModal), obj, "GameShareModal", { presentation: "modal" });
+        const obj2 = outer1_1(outer1_3[19]);
       }
     });
   }, items3);
-  let obj5 = content(openReplyActionSheet[21]);
-  openReplyActionSheet = obj5.useReplyActions({ content }).openReplyActionSheet;
+  let tmp2Result = tmp2(tmp3[21]);
+  openReplyActionSheet = tmp2Result.useReplyActions({ content }).openReplyActionSheet;
   const items4 = [content, openReplyActionSheet];
   if (null != getOrFetchApplication) {
     if (null != stateFromStores) {
       if (null != iconURL1) {
-        const obj34 = content(openReplyActionSheet[5]);
-        const intl4 = content(openReplyActionSheet[22]).intl;
+        tmp2Result = tmp2(tmp3[5]);
+        const intl4 = tmp2(tmp3[22]).intl;
         const string = intl4.string;
-        const t = content(openReplyActionSheet[22]).t;
+        const t = tmp2(tmp3[22]).t;
         if (isEntryActiveResult) {
           let stringResult = string(t.Gk1P8Z);
         } else {
           stringResult = string(t.ktOTRQ);
         }
-        obj = {};
-        ({ id: obj7.contentId, author_id: obj7.userId } = content);
-        obj.type = "hotwheels_gaming_activity";
-        obj.renderForScreenshot = renderForScreenshot;
-        obj.onPress = tmp11;
-        obj1 = {};
-        isEntryActiveResult = content(openReplyActionSheet[5]).isEntryActive(content);
-        obj2 = { variant: "text-md/semibold", color: "mobile-text-heading-primary" };
+        obj = { contentId: null, userId: null, type: "hotwheels_gaming_activity", renderForScreenshot: null, onPress: null, title: null, subtitle: null, children: null };
+        ({ id: obj7[0], author_id: obj7[1] } = content);
+        obj[3] = renderForScreenshot;
+        obj[4] = tmp14;
+        tmp5Result = tmp5(tmp3[23]);
         let tmp20;
         if (null != displayNameStylesFont) {
-          const obj3 = { fontFamily: displayNameStylesFont };
-          tmp20 = obj3;
+          obj1 = { fontFamily: null };
+          obj1[0] = displayNameStylesFont;
+          tmp20 = obj1;
         }
-        obj2.style = tmp20;
-        let obj10 = author_id(openReplyActionSheet[25]);
-        obj2.children = obj10.getName(stateFromStores);
-        const items5 = [callback(content(openReplyActionSheet[24]).Text, obj2), ];
-        let obj4 = { lineClamp: 1, variant: "text-xs/normal", color: "text-muted" };
-        let obj12 = content(openReplyActionSheet[26]);
-        let obj13 = author_id(openReplyActionSheet[27]);
-        obj4.children = obj12.getRelativeTimestamp(obj13.extractTimestamp(content.id));
-        items5[1] = callback(content(openReplyActionSheet[24]).Text, obj4);
-        obj1.children = items5;
-        obj.title = closure_9(closure_8, obj1);
-        obj5 = { variant: "text-sm/normal", lineClamp: 1 };
-        let obj15 = content(openReplyActionSheet[5]);
-        let str3 = "text-default";
-        if (obj15.isEntryActive(content)) {
-          str3 = "status-positive";
+        obj2 = { children: null };
+        const obj3 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", style: null, children: null };
+        obj3[2] = tmp20;
+        isEntryActiveResult = tmp2Result.isEntryActive(content);
+        const tmp19 = closure_8;
+        obj3[3] = tmp5(tmp3[25]).getName(stateFromStores);
+        const items5 = [closure_7(tmp2(tmp3[24]).Text, obj3), ];
+        let obj4 = { lineClamp: 1, variant: "text-xs/normal", color: "text-muted", children: null };
+        const tmp5Result1 = tmp5(tmp3[25]);
+        const tmp2Result1 = tmp2(tmp3[26]);
+        obj4[3] = tmp2Result1.getRelativeTimestamp(tmp5(tmp3[27]).extractTimestamp(content.id));
+        items5[1] = closure_7(tmp2(tmp3[24]).Text, obj4);
+        obj2[0] = items5;
+        obj[5] = closure_9(tmp19, obj2);
+        const tmp5Result2 = tmp5(tmp3[27]);
+        let str = "text-default";
+        if (tmp2Result2.isEntryActive(content)) {
+          str = "status-positive";
         }
-        obj5.color = str3;
-        obj5.children = stringResult;
-        obj.subtitle = callback(content(openReplyActionSheet[24]).Text, obj5);
-        const obj6 = {};
-        const obj7 = {};
+        const obj5 = { variant: "text-sm/normal", lineClamp: 1, color: null, children: null };
+        obj5[2] = str;
+        obj5[3] = stringResult;
+        obj[6] = closure_7(tmp2(tmp3[24]).Text, obj5);
         const items6 = [tmp.card, ];
-        let tmp27 = null;
+        let tmp22 = null;
         if (null != primaryColor) {
-          const obj8 = {};
-          let obj19 = author_id(openReplyActionSheet[28])(primaryColor);
-          obj8.backgroundColor = obj19.alpha(0.5).hex();
-          tmp27 = obj8;
-          const alphaResult = obj19.alpha(0.5);
+          const obj6 = { backgroundColor: null };
+          let obj17 = tmp5(tmp3[28])(primaryColor);
+          obj6[0] = obj17.alpha(0.5).hex();
+          tmp22 = obj6;
+          const alphaResult = obj17.alpha(0.5);
         }
-        items6[1] = tmp27;
-        obj7.style = items6;
-        const obj9 = { onPress: callback, disabled: null == tmp7Result, accessibilityRole: "button" };
-        const intl = content(openReplyActionSheet[22]).intl;
-        obj10 = { gameName: getOrFetchApplication.name };
-        obj9.accessibilityLabel = intl.formatToPlainString(content(openReplyActionSheet[22]).t["9sZWVp"], obj10);
-        const obj11 = {};
-        obj12 = { uri: iconURL1 };
-        obj11.source = obj12;
-        obj11.style = tmp.image;
-        obj9.children = callback(author_id(openReplyActionSheet[30]), obj11);
-        const items7 = [callback(content(openReplyActionSheet[29]).PressableOpacity, obj9), ];
-        obj13 = { style: tmp.cardInnerContainer };
-        const obj14 = { onPress: callback, disabled: null == tmp7Result, accessibilityRole: "button" };
-        const intl2 = content(openReplyActionSheet[22]).intl;
-        obj15 = { gameName: getOrFetchApplication.name };
-        obj14.accessibilityLabel = intl2.formatToPlainString(content(openReplyActionSheet[22]).t["9sZWVp"], obj15);
-        const obj16 = { variant: "text-md/semibold", style: tmp.gameName, children: getOrFetchApplication.name };
-        obj14.children = callback(content(openReplyActionSheet[24]).Text, obj16);
-        const items8 = [callback(content(openReplyActionSheet[29]).PressableOpacity, obj14), ];
-        let tmp36 = null != memo;
-        if (tmp36) {
-          tmp36 = memo.length > 0;
+        const obj7 = { style: null, children: null };
+        items6[1] = tmp22;
+        obj7[0] = items6;
+        const obj8 = { onPress: null, disabled: null, accessibilityRole: "button", accessibilityLabel: null, children: null };
+        obj8[0] = callback;
+        obj8[1] = null == tmp5ResultResult;
+        const intl = tmp2(tmp3[22]).intl;
+        const obj9 = { gameName: null };
+        obj9[0] = getOrFetchApplication.name;
+        obj8[3] = intl.formatToPlainString(tmp2(tmp3[22]).t["9sZWVp"], obj9);
+        const obj10 = { source: null, style: null };
+        const obj11 = { uri: null };
+        obj11[0] = iconURL1;
+        obj10[0] = obj11;
+        obj10[1] = tmp.image;
+        obj8[4] = closure_7(tmp5(tmp3[30]), obj10);
+        const items7 = [closure_7(tmp2(tmp3[29]).PressableOpacity, obj8), ];
+        const obj12 = { style: null, children: null };
+        obj12[0] = tmp.cardInnerContainer;
+        const obj13 = { onPress: null, disabled: null, accessibilityRole: "button", accessibilityLabel: null, children: null };
+        obj13[0] = callback;
+        obj13[1] = null == tmp5ResultResult;
+        const intl2 = tmp2(tmp3[22]).intl;
+        const obj14 = { gameName: null };
+        obj14[0] = getOrFetchApplication.name;
+        obj13[3] = intl2.formatToPlainString(tmp2(tmp3[22]).t["9sZWVp"], obj14);
+        const obj15 = { variant: "text-md/semibold", style: null, children: null };
+        obj15[1] = tmp.gameName;
+        obj15[2] = getOrFetchApplication.name;
+        obj13[4] = closure_7(tmp2(tmp3[24]).Text, obj15);
+        const items8 = [closure_7(tmp2(tmp3[29]).PressableOpacity, obj13), ];
+        let tmp16Result = null != memo;
+        if (tmp16Result) {
+          tmp16Result = memo.length > 0;
         }
-        if (tmp36) {
-          const obj17 = { style: tmp.badges, children: memo };
-          tmp36 = callback(View, obj17);
+        if (tmp16Result) {
+          const obj16 = { style: null, children: null };
+          obj16[0] = tmp.badges;
+          obj16[1] = memo;
+          tmp16Result = tmp16(tmp21, obj16);
         }
-        items8[1] = tmp36;
-        obj13.children = items8;
-        items7[1] = closure_9(View, obj13);
-        obj7.children = items7;
+        items8[1] = tmp16Result;
+        obj12[1] = items8;
+        items7[1] = closure_9(View, obj12);
+        obj7[1] = items7;
         const items9 = [closure_9(View, obj7), ];
-        let tmp39 = null;
+        tmp16Result = null;
         if (!renderForScreenshot) {
-          const obj18 = {};
-          const intl3 = content(openReplyActionSheet[22]).intl;
-          obj19 = { username: author_id(openReplyActionSheet[25]).getName(stateFromStores) };
-          obj18.reactText = intl3.formatToPlainString(content(openReplyActionSheet[22]).t.ghWi8V, obj19);
-          obj18.onReply = openReplyActionSheet;
-          obj18.onForward = callback1;
-          tmp39 = callback(content(openReplyActionSheet[31]).ContentInventoryReplyRow, obj18);
-          const obj33 = author_id(openReplyActionSheet[25]);
+          obj17 = { reactText: null, onReply: null, onForward: null };
+          const intl3 = tmp2(tmp3[22]).intl;
+          const obj18 = { username: null };
+          obj18[0] = tmp5(tmp3[25]).getName(stateFromStores);
+          obj17[0] = intl3.formatToPlainString(tmp2(tmp3[22]).t.ghWi8V, obj18);
+          obj17[1] = openReplyActionSheet;
+          obj17[2] = callback1;
+          tmp16Result = tmp16(tmp2(tmp3[31]).ContentInventoryReplyRow, obj17);
+          const tmp5Result3 = tmp5(tmp3[25]);
         }
-        items9[1] = tmp39;
-        obj6.children = items9;
-        obj.children = closure_9(View, obj6);
-        return callback(author_id(openReplyActionSheet[23]), obj);
+        const obj19 = { children: null };
+        items9[1] = tmp16Result;
+        obj19[0] = items9;
+        obj[7] = closure_9(View, obj19);
+        return closure_7(tmp5Result, obj);
       }
     }
   }

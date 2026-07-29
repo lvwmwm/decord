@@ -1,81 +1,165 @@
-// Module ID: 6224
-// Function ID: 55661
+// Module ID: 6244
+// Function ID: 6245
 // Name: hasUserTrialOfferExpired
-// Dependencies: [57, 31, 1850, 6191, 566, 3811, 4050, 2]
-// Exports: useTrialOffer
+// Dependencies: [32, 19, 1874, 6211, 589, 3835, 4074, 2]
+// Exports: hasUserTrialOfferExpired, useTrialOffer
 
-// Module 6224 (hasUserTrialOfferExpired)
+// Module 6244 (hasUserTrialOfferExpired)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import noop from "noop";
+import mergeGuildAvatar from "mergeGuildAvatar";
+import emitChanges from "emitChanges";
 
 const require = arg1;
-function hasUserTrialOfferExpired(stateFromStores) {
-  let tmp = null != stateFromStores && null != stateFromStores.expires_at;
+let result = require("mergeGuildAvatar").fileFinishedImporting("modules/premium/useTrialOffer.tsx");
+
+export const hasUserTrialOfferExpired = function hasUserTrialOfferExpired(expires_at) {
+  let tmp = null != expires_at && null != expires_at.expires_at;
   if (tmp) {
     const _Date = Date;
     const _Date2 = Date;
     const timestamp = Date.now();
-    tmp = timestamp > Date.parse(stateFromStores.expires_at);
+    tmp = timestamp > Date.parse(expires_at.expires_at);
   }
   return tmp;
-}
-let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/premium/useTrialOffer.tsx");
-
-export { hasUserTrialOfferExpired };
+};
 export const useTrialOffer = function useTrialOffer(closure_9) {
   const _require = closure_9;
-  const items = [_createForOfIteratorHelperLoose];
+  const items = [emitChanges];
   stateFromStores = _require(stateFromStores[4]).useStateFromStores(items, () => outer1_5.getUserTrialOffer(closure_0));
-  const tmp2 = first(React.useState(hasUserTrialOfferExpired(stateFromStores)), 2);
-  first = tmp2[0];
-  React = tmp2[1];
+  let tmp4 = null != stateFromStores;
+  if (tmp4) {
+    tmp4 = null != stateFromStores.expires_at;
+  }
+  if (tmp4) {
+    let _Date = Date;
+    let _Date2 = Date;
+    const timestamp = Date.now();
+    tmp4 = timestamp > Date.parse(stateFromStores.expires_at);
+  }
+  const tmp7 = first(React.useState(tmp4), 2);
+  first = tmp7[0];
+  React = tmp7[1];
   const obj = _require(stateFromStores[4]);
-  const items1 = [_isNativeReflectConstruct];
-  let result = !_require(stateFromStores[4]).useStateFromStores(items1, () => callback(stateFromStores[5]).isPremium(outer1_4.getCurrentUser()));
-  if (!result) {
-    result = _createForOfIteratorHelperLoose.canFractionalPremiumUserUseOffer();
+  const obj2 = emitChanges;
+  const obj3 = React;
+  const tmp = _require;
+  const tmp2 = stateFromStores;
+  const items1 = [mergeGuildAvatar];
+  const stateFromStores1 = _require(stateFromStores[4]).useStateFromStores(items1, () => callback(stateFromStores[5]).isPremium(currentUser.getCurrentUser()));
+  let result = !stateFromStores1;
+  if (stateFromStores1) {
+    result = obj2.canFractionalPremiumUserUseOffer();
   }
   const items2 = [first, stateFromStores];
-  const effect = React.useEffect(() => {
-    function startTimer() {
-      if (null != startTimer) {
-        let num = 0;
-        if (null != startTimer.expires_at) {
-          const _Date = Date;
-          const _Date2 = Date;
-          const parsed = Date.parse(startTimer.expires_at);
-          num = parsed - Date.now();
-        }
-        if (null != timeout) {
+  const effect = obj3.useEffect(() => {
+    if (null != stateFromStores) {
+      if (null != tmp.expires_at) {
+        const timeout = new callback(stateFromStores[6]).Timeout();
+        if (null != tmp) {
+          let num = 0;
+          if (null != tmp.expires_at) {
+            const _Date = Date;
+            const _Date2 = Date;
+            const parsed = Date.parse(tmp.expires_at);
+            num = parsed - Date.now();
+          }
           timeout.start(num, () => {
-            if (!outer2_2) {
-              if (outer3_6(startTimer)) {
-                outer2_3(true);
+            if (!outer1_2) {
+              let tmp = outer1_1;
+              let tmp3 = null != outer1_1 && null != tmp.expires_at;
+              if (tmp3) {
+                let _Date = Date;
+                let _Date2 = Date;
+                let timestamp = Date.now();
+                tmp3 = timestamp > Date.parse(tmp.expires_at);
+              }
+              if (tmp3) {
+                outer1_3(true);
               }
             }
-            outer1_1();
+            let tmp8 = outer1_1;
+            if (null != outer1_1) {
+              let num = 0;
+              if (null != tmp8.expires_at) {
+                let _Date3 = Date;
+                let _Date4 = Date;
+                let parsed = Date.parse(tmp8.expires_at);
+                num = parsed - Date.now();
+              }
+              if (closure_0 != null) {
+                obj.start(num, () => {
+                  if (!outer1_2) {
+                    let tmp = outer1_1;
+                    let tmp3 = null != outer1_1 && null != tmp.expires_at;
+                    if (tmp3) {
+                      let _Date = Date;
+                      let _Date2 = Date;
+                      let timestamp = Date.now();
+                      tmp3 = timestamp > Date.parse(tmp.expires_at);
+                    }
+                    if (tmp3) {
+                      outer1_3(true);
+                    }
+                  }
+                  let tmp8 = outer1_1;
+                  if (null != outer1_1) {
+                    let num = 0;
+                    if (null != tmp8.expires_at) {
+                      let _Date3 = Date;
+                      let _Date4 = Date;
+                      let parsed = Date.parse(tmp8.expires_at);
+                      num = parsed - Date.now();
+                    }
+                    if (closure_0 != null) {
+                      obj.start(num, () => {
+                        if (!outer1_2) {
+                          let tmp = outer1_1;
+                          let tmp3 = null != outer1_1 && null != tmp.expires_at;
+                          if (tmp3) {
+                            let _Date = Date;
+                            let _Date2 = Date;
+                            let timestamp = Date.now();
+                            tmp3 = timestamp > Date.parse(tmp.expires_at);
+                          }
+                          if (tmp3) {
+                            outer1_3(true);
+                          }
+                        }
+                        let tmp8 = outer1_1;
+                        if (null != outer1_1) {
+                          let num = 0;
+                          if (null != tmp8.expires_at) {
+                            let _Date3 = Date;
+                            let _Date4 = Date;
+                            let parsed = Date.parse(tmp8.expires_at);
+                            num = parsed - Date.now();
+                          }
+                          if (closure_0 != null) {
+                            obj.start(num, () => { ... });
+                          }
+                          obj = closure_0;
+                        }
+                      });
+                    }
+                    obj = closure_0;
+                  }
+                });
+              }
+              obj = closure_0;
+            }
           });
         }
-      }
-    }
-    if (null != startTimer) {
-      if (null != startTimer.expires_at) {
-        const Timeout = callback(stateFromStores[6]).Timeout;
-        const prototype = Timeout.prototype;
-        const timeout = new Timeout();
-        startTimer();
         return () => timeout.stop();
       }
     }
   }, items2);
-  let tmp7 = null;
+  let tmp12 = null;
   if (!first) {
-    tmp7 = null;
+    tmp12 = null;
     if (result) {
-      tmp7 = stateFromStores;
+      tmp12 = stateFromStores;
     }
   }
-  return tmp7;
+  return tmp12;
 };

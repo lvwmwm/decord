@@ -1,11 +1,11 @@
-// Module ID: 6724
-// Function ID: 59126
+// Module ID: 6745
+// Function ID: 6746
 // Name: useBottomSheetKeyboardHandling
-// Dependencies: [31, 5223, 2]
+// Dependencies: [19, 5245, 2]
 // Exports: default
 
-// Module 6724 (useBottomSheetKeyboardHandling)
-import result from "result";
+// Module 6745 (useBottomSheetKeyboardHandling)
+import noop from "noop";
 
 const require = arg1;
 let result = require("set").fileFinishedImporting("design/components/Sheet/native/useBottomSheetKeyboardHandling.tsx");
@@ -13,27 +13,29 @@ let result = require("set").fileFinishedImporting("design/components/Sheet/nativ
 export default function useBottomSheetKeyboardHandling(onFocus) {
   onFocus = onFocus.onFocus;
   const onBlur = onFocus.onBlur;
-  const bottomSheetInternal = onFocus(onBlur[1]).useBottomSheetInternal(true);
+  let bottomSheetInternal;
+  bottomSheetInternal = onFocus(onBlur[1]).useBottomSheetInternal(true);
   const items = [bottomSheetInternal, onBlur, onFocus];
   return bottomSheetInternal.useMemo(() => {
     if (null == bottomSheetInternal) {
-      let obj = { onFocus, onBlur };
+      let obj = { onFocus: null, onBlur: null };
+      obj[0] = onFocus;
+      obj[1] = onBlur;
     } else {
-      obj = {
-        onFocus(arg0) {
-            const shouldHandleKeyboardEvents = outer1_2.shouldHandleKeyboardEvents;
-            const result = shouldHandleKeyboardEvents.set(true);
-            if (null != outer1_0) {
-              outer1_0(arg0);
-            }
-          },
-        onBlur(arg0) {
-            const shouldHandleKeyboardEvents = outer1_2.shouldHandleKeyboardEvents;
-            const result = shouldHandleKeyboardEvents.set(false);
-            if (null != outer1_1) {
-              outer1_1(arg0);
-            }
-          }
+      obj = { onFocus: null, onBlur: null };
+      obj[0] = function onFocus(arg0) {
+        const shouldHandleKeyboardEvents = noop.shouldHandleKeyboardEvents;
+        const result = shouldHandleKeyboardEvents.set(true);
+        if (closure_0 != null) {
+          tmp2(arg0);
+        }
+      };
+      obj[1] = function onBlur(arg0) {
+        const shouldHandleKeyboardEvents = noop.shouldHandleKeyboardEvents;
+        const result = shouldHandleKeyboardEvents.set(false);
+        if (closure_1 != null) {
+          tmp2(arg0);
+        }
       };
     }
     return obj;

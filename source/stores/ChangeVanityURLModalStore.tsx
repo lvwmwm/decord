@@ -1,74 +1,32 @@
-// Module ID: 16448
-// Function ID: 128253
-// Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 653, 566, 686, 2]
+// Module ID: 16483
+// Function ID: 16484
+// Name: FormStates
+// Dependencies: [676, 589, 709, 2]
 
-// Module 16448 (_isNativeReflectConstruct)
-import initialize from "initialize";
-import dispatcher from "dispatcher";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
+// Module 16483 (FormStates)
 import { FormStates } from "ME";
+import { Store } from "initialize";
 
-function _isNativeReflectConstruct() {
-  let initialize = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return initialize;
-  }
-  const result = _isNativeReflectConstruct();
-}
-let closure_8 = {};
+let closure_3 = {};
 let CLOSED = FormStates.CLOSED;
-let c10 = null;
-let tmp2 = ((Store) => {
-  class ChangeVanityURLModalStore {
-    constructor() {
-      self = this;
-      tmp = ChangeVanityURLModalStore(this, ChangeVanityURLModalStore);
-      obj = outer1_3(ChangeVanityURLModalStore);
-      tmp2 = outer1_2;
-      if (outer1_11()) {
-        tmp6 = globalThis;
-        _Reflect = Reflect;
-        tmp7 = outer1_3;
-        tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, outer1_3(self).constructor);
-      } else {
-        tmp3 = arguments;
-        tmp4 = arguments;
-        constructResult = obj(...arguments);
-      }
-      return tmp2(self, constructResult);
-    }
-  }
-  callback2(ChangeVanityURLModalStore, Store);
-  let obj = {
-    key: "isOpen",
-    value() {
-      return outer1_9 !== outer1_5.CLOSED;
-    }
-  };
-  const items = [obj, ];
-  obj = {
-    key: "getProps",
-    value() {
-      return { submitting: outer1_9 === outer1_5.SUBMITTING, errorDetails: outer1_10, errors: outer1_8, guildId: outer1_6, code: outer1_7 };
-    }
-  };
-  items[1] = obj;
-  return callback(ChangeVanityURLModalStore, items);
-})(require("initialize").Store);
-tmp2.displayName = "ChangeVanityURLModalStore";
-tmp2 = new tmp2(require("dispatcher"), {
+let c5 = null;
+class ChangeVanityURLModalStore extends Store {
+}
+const prototype = ChangeVanityURLModalStore.prototype;
+prototype["isOpen"] = function isOpen() {
+  return CLOSED !== FormStates.CLOSED;
+};
+prototype["getProps"] = function getProps() {
+  return { submitting: CLOSED === FormStates.SUBMITTING, errorDetails: c5, errors: closure_3, guildId: closure_0, code: closure_1 };
+};
+ChangeVanityURLModalStore.displayName = "ChangeVanityURLModalStore";
+const changeVanityURLModalStore = new ChangeVanityURLModalStore(require("dispatcher"), {
   CHANGE_VANITY_URL_MODAL_OPEN: function handleOpen(arg0) {
-    let closure_6;
-    let closure_7;
+    let closure_0;
+    let closure_1;
     const OPEN = FormStates.OPEN;
-    ({ guildId: closure_6, code: closure_7 } = arg0);
-    let c10 = null;
+    ({ guildId: closure_0, code: closure_1 } = arg0);
+    let c5 = null;
   },
   CHANGE_VANITY_URL_MODAL_SUBMIT: function handleSubmit() {
     const SUBMITTING = FormStates.SUBMITTING;
@@ -79,11 +37,11 @@ tmp2 = new tmp2(require("dispatcher"), {
   },
   CHANGE_VANITY_URL_MODAL_CLOSE: function handleClose() {
     const CLOSED = FormStates.CLOSED;
-    let c6 = null;
-    let c7 = null;
-    let c10 = null;
+    let c0 = null;
+    let c1 = null;
+    let c5 = null;
   }
 });
-let result = require("_possibleConstructorReturn").fileFinishedImporting("stores/ChangeVanityURLModalStore.tsx");
+const result = require("dispatcher").fileFinishedImporting("stores/ChangeVanityURLModalStore.tsx");
 
-export default tmp2;
+export default changeVanityURLModalStore;

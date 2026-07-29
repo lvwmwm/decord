@@ -1,10 +1,10 @@
-// Module ID: 4190
-// Function ID: 35251
+// Module ID: 4214
+// Function ID: 4215
 // Name: items3
-// Dependencies: [653, 1882, 2]
+// Dependencies: [676, 1906, 2]
 // Exports: getAppIntentScheme
 
-// Module 4190 (items3)
+// Module 4214 (items3)
 import { ChannelTypes } from "ME";
 import set from "set";
 
@@ -14,18 +14,16 @@ let obj = { UNLOCKED: 1, [1]: "UNLOCKED", PORTRAIT: 2, [2]: "PORTRAIT", LANDSCAP
 const items2 = ["755600276941176913", "880218832743055411", "1050941315912835122", "880218394199220334"];
 let set = new Set(items2);
 obj = { label_type: require("PermissionOverwriteType").EmbeddedActivityLabelTypes.NONE, release_phase: "", label_from: null, label_until: null, omit_badge_from_surfaces: [] };
-obj = { application_id: "", requires_age_gate: false, legacy_responsive_aspect_ratio: false };
-({ UNLOCKED: obj3.default_orientation_lock_state, UNLOCKED: obj3.tablet_default_orientation_lock_state } = obj);
+obj = { application_id: "", requires_age_gate: false, legacy_responsive_aspect_ratio: false, default_orientation_lock_state: obj.UNLOCKED, tablet_default_orientation_lock_state: obj.UNLOCKED, supported_platforms: null, client_platform_config: null, has_csp_exception: false, displays_advertisements: false, blocked_locales: null, supported_locales: null };
 const items3 = [require("PermissionOverwriteType").EmbeddedActivitySupportedPlatforms.WEB];
-obj.supported_platforms = items3;
-obj.client_platform_config = { [require(1882).EmbeddedActivitySupportedPlatforms.WEB]: obj, [require(1882).EmbeddedActivitySupportedPlatforms.IOS]: obj, [require(1882).EmbeddedActivitySupportedPlatforms.ANDROID]: obj };
-obj.has_csp_exception = false;
-obj.displays_advertisements = false;
-obj.blocked_locales = [];
-obj.supported_locales = [];
+obj[5] = items3;
+obj[6] = { [require(1906).EmbeddedActivitySupportedPlatforms.WEB]: obj, [require(1906).EmbeddedActivitySupportedPlatforms.IOS]: obj, [require(1906).EmbeddedActivitySupportedPlatforms.ANDROID]: obj };
+obj[9] = [];
+obj[10] = [];
 const items4 = [, , ];
 ({ GUILD_TEXT: arr5[0], DM: arr5[1], GROUP_DM: arr5[2] } = ChannelTypes);
-const items5 = [...items4, ChannelTypes.GUILD_VOICE];
+const items5 = [];
+items5[HermesBuiltin.arraySpread(items4, 0)] = ChannelTypes.GUILD_VOICE;
 const result = set.fileFinishedImporting("modules/activities/Constants.tsx");
 
 export const ACTIVITY_INVITE_COVER_IMAGE_SIZE = 160;

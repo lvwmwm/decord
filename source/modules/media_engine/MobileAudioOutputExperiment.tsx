@@ -1,13 +1,14 @@
-// Module ID: 10744
-// Function ID: 83389
+// Module ID: 10768
+// Function ID: 10769
 // Name: apexExperiment
-// Dependencies: [1428, 2]
+// Dependencies: [1452, 2]
 
-// Module 10744 (apexExperiment)
+// Module 10768 (apexExperiment)
 import ApexExperiment from "ApexExperiment";
 
-const obj = { name: "2026-02-mobile-volume-output-slider-removal", kind: "user", defaultConfig: { audioOutputPresent: true, nonContextualStreamOutputPresent: true, showTileVolumeIndicator: false }, variations: { [1]: { audioOutputPresent: false, nonContextualStreamOutputPresent: false, showTileVolumeIndicator: true } } };
-const apexExperiment = ApexExperiment.createApexExperiment(obj);
+const obj = { 1: null };
+obj[1] = { audioOutputPresent: false, nonContextualStreamOutputPresent: false, showTileVolumeIndicator: true };
+const apexExperiment = ApexExperiment.createApexExperiment({ name: "2026-02-mobile-volume-output-slider-removal", kind: "user", defaultConfig: { audioOutputPresent: true, nonContextualStreamOutputPresent: true, showTileVolumeIndicator: false }, variations: obj });
 const result = require("set").fileFinishedImporting("modules/media_engine/MobileAudioOutputExperiment.tsx");
 
 export default apexExperiment;

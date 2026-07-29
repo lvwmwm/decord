@@ -1,55 +1,125 @@
-// Module ID: 13484
-// Function ID: 103408
-// Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 1194, 1348, 3802, 1850, 477, 3838, 4355, 4011, 1212, 686, 4565, 2]
+// Module ID: 13507
+// Function ID: 13508
+// Name: set
+// Dependencies: [1218, 1372, 3826, 1874, 500, 3862, 4380, 4035, 1236, 4368, 709, 2]
 
-// Module 13484 (_isNativeReflectConstruct)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_4 from "_isNativeReflectConstruct";
-import LifecycleManager from "LifecycleManager";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
-import closure_8 from "_isNativeReflectConstruct";
-import closure_9 from "_isNativeReflectConstruct";
-import closure_10 from "_isNativeReflectConstruct";
-import closure_11 from "_isNativeReflectConstruct";
-import tmp4 from "LifecycleManager";
-import set from "_possibleConstructorReturn";
+// Module 13507 (set)
+import fetchFingerprint from "fetchFingerprint";
+import ensureGuildLoaded from "ensureGuildLoaded";
+import upsertRelationship from "upsertRelationship";
+import mergeGuildAvatar from "mergeGuildAvatar";
+import "initialize";
+import set from "upsertRelationship";
 
 const require = arg1;
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
-  }
-  const result = _isNativeReflectConstruct();
-}
-function announceIncomingCall(channelId) {
-  if (!set.has(channelId)) {
-    let obj = require(477) /* set */;
-    if (!obj.isIOS()) {
-      channel = channel.getChannel(channelId);
-      if (null != channel) {
-        const channelName = require(4355) /* computeDefaultGroupDmNameFromUserIds */.computeChannelName(channel, closure_11, closure_10);
-        if (null != channelName) {
-          set.add(channelId);
-          const AccessibilityAnnouncer = require(4011) /* AccessibilityAnnouncer */.AccessibilityAnnouncer;
-          const intl = require(1212) /* getSystemLocale */.intl;
-          obj = { callLocation: channelName };
-          AccessibilityAnnouncer.announce(intl.formatToPlainString(require(1212) /* getSystemLocale */.t["Bm0A/p"], obj), "assertive");
-        }
-        const obj3 = require(4355) /* computeDefaultGroupDmNameFromUserIds */;
-      }
-    } else {
-      const NativePhoneIntegrationEnabled = require(3838) /* explicitContentFromProto */.NativePhoneIntegrationEnabled;
-    }
-  }
-}
 let set = new Set();
 const map = new Map();
-tmp4 = new tmp4();
+class AccessibilityCallManager extends tmp4 {
+  constructor() {
+    applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
+    applyArgumentsResult.handleCallCreate = function handleCallCreate(channelId) {
+      channelId = channelId.channelId;
+      const id = store.getId();
+      const result = store3.set(channelId, tmp2);
+      if (null != id && id in channelId.ongoingRings) {
+        let obj = set;
+        if (!set.has(channelId)) {
+          if (!obj2.isIOS()) {
+            const channel = store2.getChannel(channelId);
+            if (null != channel) {
+              const channelName = tmp4(4380).computeChannelName(channel, mergeGuildAvatar, upsertRelationship);
+              if (null != channelName) {
+                obj.add(channelId);
+                const AccessibilityAnnouncer = tmp4(4035).AccessibilityAnnouncer;
+                const intl = tmp4(1236).intl;
+                obj = { callLocation: null };
+                obj[0] = channelName;
+                AccessibilityAnnouncer.announce(intl.formatToPlainString(tmp4(1236).t["Bm0A/p"], obj), "assertive");
+              }
+              const tmp4Result = tmp4(4380);
+            }
+          } else {
+            const NativePhoneIntegrationEnabled = tmp4(3862).NativePhoneIntegrationEnabled;
+          }
+          obj2 = callback(500);
+        }
+      }
+    };
+    applyArgumentsResult.handleCallUpdate = function handleCallUpdate(channelId) {
+      channelId = channelId.channelId;
+      const id = store.getId();
+      let obj = store3;
+      let flag = store3.get(channelId);
+      if (flag == null) {
+        flag = false;
+      }
+      const result = obj.set(channelId, tmp2);
+      if (!flag) {
+        if (tmp2) {
+          if (!set.has(channelId)) {
+            if (!obj3.isIOS()) {
+              const channel = store2.getChannel(channelId);
+              if (null != channel) {
+                const channelName = tmp4(4380).computeChannelName(channel, mergeGuildAvatar, upsertRelationship);
+                if (null != channelName) {
+                  obj2.add(channelId);
+                  const AccessibilityAnnouncer = tmp4(4035).AccessibilityAnnouncer;
+                  const intl = tmp4(1236).intl;
+                  obj = { callLocation: null };
+                  obj[0] = channelName;
+                  AccessibilityAnnouncer.announce(intl.formatToPlainString(tmp4(1236).t["Bm0A/p"], obj), "assertive");
+                }
+                const tmp4Result = tmp4(4380);
+              }
+            } else {
+              const NativePhoneIntegrationEnabled = tmp4(3862).NativePhoneIntegrationEnabled;
+            }
+            obj3 = callback(500);
+          }
+          obj2 = set;
+        }
+      }
+      if (flag) {
+        flag = !tmp2;
+      }
+      if (flag) {
+        set.delete(channelId);
+      }
+    };
+    applyArgumentsResult.handleCallDelete = function handleCallDelete(channelId) {
+      channelId = channelId.channelId;
+      store3.delete(channelId);
+      set.delete(channelId);
+    };
+    applyArgumentsResult.handleConnectionOpen = function handleConnectionOpen() {
+      store3.clear();
+      set.clear();
+    };
+    return applyArgumentsResult;
+  }
+}
+const prototype = AccessibilityCallManager.prototype;
+prototype["_initialize"] = function _initialize() {
+  const subscription = importDefault(709).subscribe("CALL_CREATE", this.handleCallCreate);
+  const obj = importDefault(709);
+  const subscription1 = importDefault(709).subscribe("CALL_UPDATE", this.handleCallUpdate);
+  const obj2 = importDefault(709);
+  const subscription2 = importDefault(709).subscribe("CALL_DELETE", this.handleCallDelete);
+  const obj3 = importDefault(709);
+  const subscription3 = importDefault(709).subscribe("CONNECTION_OPEN", this.handleConnectionOpen);
+};
+prototype["_terminate"] = function _terminate() {
+  importDefault(709).unsubscribe("CALL_CREATE", this.handleCallCreate);
+  const obj = importDefault(709);
+  importDefault(709).unsubscribe("CALL_UPDATE", this.handleCallUpdate);
+  const obj2 = importDefault(709);
+  importDefault(709).unsubscribe("CALL_DELETE", this.handleCallDelete);
+  const obj3 = importDefault(709);
+  importDefault(709).unsubscribe("CONNECTION_OPEN", this.handleConnectionOpen);
+  map.clear();
+  set.clear();
+};
+const accessibilityCallManager = new AccessibilityCallManager();
 let result = set.fileFinishedImporting("modules/a11y/native/AccessibilityCallManager.tsx");
 
-export default tmp4;
+export default accessibilityCallManager;

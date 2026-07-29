@@ -1,10 +1,10 @@
-// Module ID: 1211
-// Function ID: 13913
+// Module ID: 1235
+// Function ID: 1236
 // Name: AbortCodes
-// Dependencies: [653, 1212, 2]
+// Dependencies: [676, 1236, 2]
 // Exports: getThreadNotificationOptions
 
-// Module 1211 (AbortCodes)
+// Module 1235 (AbortCodes)
 import { AbortCodes } from "ME";
 import set from "set";
 
@@ -24,17 +24,17 @@ export const MAX_THREAD_UNREAD_MESSAGE_COUNT = 25;
 export const ThreadMemberFlags = obj;
 export const OpenThreadAnalyticsLocations = { EMBED: "Embed", BROWSER: "Thread Browser", POPOUT: "Active Threads Popout", CHANNEL_LIST: "Channel List", GUILD_ACTIVE_THREADS_MODAL: "Guild Active Threads Modal", INBOX: "Inbox", FORUM: "Forum", VOICE_AUTO_OPEN: "Voice Auto Open" };
 export const getThreadNotificationOptions = function getThreadNotificationOptions() {
-  obj = { setting: obj.ALL_MESSAGES };
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj.label = intl.string(require(1212) /* getSystemLocale */.t["n/bTaY"]);
+  obj = { setting: obj.ALL_MESSAGES, label: null };
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj[1] = intl.string(require(1236) /* getSystemLocale */.t["n/bTaY"]);
   const items = [obj, , ];
-  obj = { setting: obj.ONLY_MENTIONS };
-  const intl2 = require(1212) /* getSystemLocale */.intl;
-  obj.label = intl2.format(require(1212) /* getSystemLocale */.t.L2hmYy, {});
+  obj = { setting: obj.ONLY_MENTIONS, label: null };
+  const intl2 = require(1236) /* getSystemLocale */.intl;
+  obj[1] = intl2.format(require(1236) /* getSystemLocale */.t.L2hmYy, {});
   items[1] = obj;
-  obj = { setting: obj.NO_MESSAGES };
-  const intl3 = require(1212) /* getSystemLocale */.intl;
-  obj.label = intl3.string(require(1212) /* getSystemLocale */.t.CtVGyQ);
+  obj = { setting: obj.NO_MESSAGES, label: null };
+  const intl3 = require(1236) /* getSystemLocale */.intl;
+  obj[1] = intl3.string(require(1236) /* getSystemLocale */.t.CtVGyQ);
   items[2] = obj;
   return items;
 };

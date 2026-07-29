@@ -1,27 +1,27 @@
-// Module ID: 10717
-// Function ID: 83287
+// Module ID: 10741
+// Function ID: 10742
 // Name: useHasVideoPermission
-// Dependencies: [1838, 3793, 566, 5991, 2]
+// Dependencies: [1862, 3817, 589, 6010, 2]
 // Exports: default, getVideoPermission
 
-// Module 10717 (useHasVideoPermission)
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 10741 (useHasVideoPermission)
+import createGuildRecordFromRust from "createGuildRecordFromRust";
+import getUncachedChannelPermissions from "getUncachedChannelPermissions";
 
 const require = arg1;
 const result = require("initialize").fileFinishedImporting("modules/video_calls/useHasVideoPermission.tsx");
 
 export default function useHasVideoPermission(arg0) {
   const _require = arg0;
-  const items = [_createForOfIteratorHelperLoose, _isNativeReflectConstruct];
+  const items = [createGuildRecordFromRust, getUncachedChannelPermissions];
   const items1 = [arg0];
-  return _require(566).useStateFromStores(items, () => {
-    let tmp = null != _private;
+  return _require(589).useStateFromStores(items, () => {
+    let tmp = null != callback;
     if (tmp) {
-      let isPrivateResult = _private.isPrivate();
+      let isPrivateResult = obj.isPrivate();
       if (!isPrivateResult) {
-        const obj = _private(outer1_1[3]);
-        isPrivateResult = obj.canStreamInChannel(_private, outer1_2, outer1_3, false);
+        const obj2 = callback(outer1_1[3]);
+        isPrivateResult = obj2.canStreamInChannel(obj, outer1_2, outer1_3, false);
       }
       tmp = isPrivateResult;
     }
@@ -31,8 +31,8 @@ export default function useHasVideoPermission(arg0) {
 export const getVideoPermission = function getVideoPermission(channel) {
   let isPrivateResult = channel.isPrivate();
   if (!isPrivateResult) {
-    const obj = require(5991) /* _createForOfIteratorHelperLoose */;
-    isPrivateResult = obj.canStreamInChannel(channel, _createForOfIteratorHelperLoose, _isNativeReflectConstruct, false);
+    const obj = require(6010) /* canStreamInChannel */;
+    isPrivateResult = obj.canStreamInChannel(channel, createGuildRecordFromRust, getUncachedChannelPermissions, false);
   }
   return isPrivateResult;
 };

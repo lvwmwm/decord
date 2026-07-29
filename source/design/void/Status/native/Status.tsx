@@ -1,86 +1,62 @@
-// Module ID: 13125
-// Function ID: 101260
-// Name: getStatusSource
-// Dependencies: [57, 31, 27, 1274, 653, 11998, 33, 4165, 13123, 689, 13126, 13127, 13128, 13129, 13130, 13131, 13132, 13124, 13133, 4026, 4577, 13110, 2]
+// Module ID: 13148
+// Function ID: 13149
+// Name: Status
+// Dependencies: [32, 19, 17, 1298, 676, 12022, 21, 4189, 13146, 712, 13149, 13150, 13151, 13152, 13153, 13154, 13155, 13147, 13156, 4050, 4599, 13133, 2]
 // Exports: StatusWithTyping, default
 
-// Module 13125 (getStatusSource)
+// Module 13148 (Status)
 import _slicedToArray from "_slicedToArray";
-import "result";
-import get_ActivityIndicator from "get ActivityIndicator";
+import "module_4050";
+import get_ActivityIndicator from "STATUS_PADDING";
 import { STATUS_PADDING } from "STATUS_PADDING";
 import { StatusTypes } from "ME";
 import n from "n";
-import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import jsxProd from "AnimatedEllipsisDot";
+import createCacheKey from "createCacheKey";
+import createCacheKey from "createCacheKey";
 
-let closure_10;
-let closure_11;
+let c10;
+let c4;
+let c5;
+let c9;
 let closure_12;
-let closure_4;
-let closure_5;
-let closure_8;
-let closure_9;
+let metroImportAll;
+let unpackModuleId;
 const require = arg1;
-function getStatusSource(status, streaming, flag, flag2) {
-  if (streaming) {
-    return importDefault(13126);
-  } else if (flag2) {
-    return importDefault(13127);
-  } else if (flag) {
-    return importDefault(13128);
-  } else if (StatusTypes.IDLE === status) {
-    return importDefault(13129);
-  } else if (StatusTypes.DND === status) {
-    return importDefault(13130);
-  } else {
-    if (StatusTypes.OFFLINE !== status) {
-      if (StatusTypes.INVISIBLE !== status) {
-        const ONLINE = StatusTypes.ONLINE;
-        return importDefault(13132);
-      }
-    }
-    return importDefault(13131);
-  }
-}
-({ Image: closure_4, View: closure_5 } = get_ActivityIndicator);
-({ TYPING_ENTERING: closure_8, TYPING_EXITING: closure_9, CHANNEL_SPRING_CONFIG: closure_10 } = n);
-({ jsx: closure_11, jsxs: closure_12 } = jsxProd);
-let closure_13 = _createForOfIteratorHelperLoose.createStyles({ statusIcon: { width: "100%", height: "100%" } });
-let closure_14 = _createForOfIteratorHelperLoose.createStyles((arg0, arg1) => {
+({ Image: c4, View: c5 } = get_ActivityIndicator);
+({ TYPING_ENTERING: metroImportAll, TYPING_EXITING: c9, CHANNEL_SPRING_CONFIG: c10 } = n);
+({ jsx: unpackModuleId, jsxs: closure_12 } = jsxProd);
+let closure_13 = createCacheKey.createStyles({ statusIcon: { width: "100%", height: "100%" } });
+let closure_14 = createCacheKey.createStyles((items) => {
   let dotSize;
   let height;
-  let obj = require(13123) /* getAnimatedTypingTranslateX */;
-  const statusTypingDimensions = obj.getStatusTypingDimensions(arg0);
+  let obj = require(13146) /* getAnimatedTypingTranslateX */;
+  const statusTypingDimensions = obj.getStatusTypingDimensions(items);
   ({ height, dotSize } = statusTypingDimensions);
-  obj = {};
-  obj = {};
   if (StatusTypes.ONLINE === arg1) {
-    let PRIMARY_400 = importDefault(689).unsafe_rawColors.GREEN_360;
-  } else if (StatusTypes.IDLE === arg1) {
-    PRIMARY_400 = importDefault(689).unsafe_rawColors.YELLOW_300;
-  } else if (StatusTypes.DND === arg1) {
-    PRIMARY_400 = importDefault(689).unsafe_rawColors.RED_400;
-  } else if (StatusTypes.STREAMING === arg1) {
-    PRIMARY_400 = importDefault(689).unsafe_rawColors.PLATFORM_TWITCH;
+    let PRIMARY_400 = importDefault(712).unsafe_rawColors.GREEN_360;
+    let tmp5 = importDefault;
+  } else if (tmp3.IDLE === arg1) {
+    PRIMARY_400 = importDefault(712).unsafe_rawColors.YELLOW_300;
+    tmp5 = importDefault;
+  } else if (tmp3.DND === arg1) {
+    PRIMARY_400 = importDefault(712).unsafe_rawColors.RED_400;
+    tmp5 = importDefault;
+  } else if (tmp3.STREAMING === arg1) {
+    PRIMARY_400 = importDefault(712).unsafe_rawColors.PLATFORM_TWITCH;
+    tmp5 = importDefault;
   } else {
-    if (StatusTypes.INVISIBLE !== arg1) {
-      if (StatusTypes.UNKNOWN !== arg1) {
-        const OFFLINE = StatusTypes.OFFLINE;
+    if (tmp3.INVISIBLE !== arg1) {
+      if (tmp3.UNKNOWN !== arg1) {
+        const OFFLINE = tmp3.OFFLINE;
       }
     }
-    PRIMARY_400 = importDefault(689).unsafe_rawColors.PRIMARY_400;
+    PRIMARY_400 = importDefault(712).unsafe_rawColors.PRIMARY_400;
+    tmp5 = importDefault;
   }
-  obj.backgroundColor = PRIMARY_400;
-  obj.borderRadius = height;
-  obj.height = height;
-  obj.width = statusTypingDimensions.width;
-  obj.paddingStart = 4;
-  obj.paddingEnd = 2;
-  obj.marginRight = 0;
-  obj.ellipsis = obj;
-  obj.ellipsisDot = { width: dotSize, height: dotSize, backgroundColor: importDefault(689).colors.WHITE };
+  obj = { ellipsis: { backgroundColor: PRIMARY_400, borderRadius: height, height, width: statusTypingDimensions.width, paddingStart: 4, paddingEnd: 2, marginRight: 0 }, ellipsisDot: null };
+  obj = { width: dotSize, height: dotSize, backgroundColor: tmp5(712).colors.WHITE };
+  obj[1] = obj;
   return obj;
 });
 let closure_15 = { code: "function StatusTsx1(){const{enableAnimation,withSpring,width,CHANNEL_SPRING_CONFIG,height,onAnimationFinished,borderRadius,translateX}=this.__closure;const shouldAnimate=enableAnimation.get()?'respect-motion-settings':'animate-never';return{width:withSpring(width,CHANNEL_SPRING_CONFIG,shouldAnimate),height:withSpring(height,CHANNEL_SPRING_CONFIG,shouldAnimate,onAnimationFinished),borderRadius:withSpring(borderRadius,CHANNEL_SPRING_CONFIG,shouldAnimate),transform:[{translateX:withSpring(translateX,CHANNEL_SPRING_CONFIG,shouldAnimate)}]};}" };
@@ -104,12 +80,32 @@ export default function Status(isMobileOnline) {
   if (streaming === undefined) {
     streaming = false;
   }
-  let obj = {};
-  const items = [importDefault(13124)(size, flag, flag2), style];
-  obj.style = items;
-  obj = { style: callback2().statusIcon, source: getStatusSource(status, streaming, flag, flag2), resizeMode: "stretch" };
-  obj.children = callback(closure_4, obj);
-  return callback(closure_5, obj);
+  let obj = { style: null, children: null };
+  const items = [importDefault(13147)(size, flag, flag2), style];
+  obj[0] = items;
+  obj = { style: callback2().statusIcon, source: null, resizeMode: "stretch" };
+  if (streaming) {
+    let tmp4Result = tmp4(13149);
+  } else if (flag2) {
+    tmp4Result = tmp4(13150);
+  } else if (flag) {
+    tmp4Result = tmp4(13151);
+  } else if (StatusTypes.IDLE === status) {
+    tmp4Result = tmp4(13152);
+  } else if (tmp7.DND === status) {
+    tmp4Result = tmp4(13153);
+  } else {
+    if (tmp7.OFFLINE !== status) {
+      if (tmp7.INVISIBLE !== status) {
+        const ONLINE = tmp7.ONLINE;
+        tmp4Result = tmp4(13155);
+      }
+    }
+    tmp4Result = tmp4(13154);
+  }
+  obj[1] = tmp4Result;
+  obj[1] = closure_11(closure_4, obj);
+  return closure_11(closure_5, obj);
 };
 export const StatusWithTyping = function StatusWithTyping(isMobileOnline) {
   let size;
@@ -136,95 +132,119 @@ export const StatusWithTyping = function StatusWithTyping(isMobileOnline) {
   let width;
   let height;
   let c4;
-  let num2;
   let num;
+  let num2;
   const tmp2 = callback3(size, status);
   const size2 = importDefault(width[17])(size, flag, flag2);
   let obj = first(width[18]);
-  let str = "";
-  if (null != userId) {
-    str = userId;
+  if (userId == null) {
+    userId = "";
   }
-  const tmp3 = height(obj.useFlashListAnimationDisabler(str), 2);
-  first = tmp3[0];
-  num = 1;
-  importDefault = tmp5;
+  const tmp6 = height(obj.useFlashListAnimationDisabler(userId), 2);
+  first = tmp6[0];
+  importDefault = tmp8;
   if (typing) {
-    width = tmp2.ellipsis.width + 2 * num;
+    width = tmp2.ellipsis.width + 2 * num2;
   } else {
     width = size2.width;
   }
   if (typing) {
-    height = tmp2.ellipsis.height + 2 * num;
+    height = tmp2.ellipsis.height + 2 * num2;
   } else {
     height = size2.height;
   }
-  const tmp8 = typing ? width / 2 : size2.borderRadius;
-  c4 = tmp8;
-  num2 = 0;
+  const tmp11 = typing ? width / 2 : size2.borderRadius;
+  c4 = tmp11;
+  num = 0;
   if (typing) {
-    let obj1 = first(width[8]);
-    num2 = obj1.getAnimatedTypingTranslateX(size2.width);
+    let tmp5Result = tmp5(tmp4[8]);
+    num = tmp5Result.getAnimatedTypingTranslateX(size2.width);
   }
-  let obj2 = first(width[19]);
+  tmp5Result = tmp5(tmp4[19]);
   class O {
     constructor() {
       str = "animate-never";
       if (c0.get()) {
         str = "respect-motion-settings";
       }
-      obj = {};
+      obj = { width: null, height: null, borderRadius: null, transform: null };
       obj2 = c0(width[20]);
-      obj.width = obj2.withSpring(width, outer1_10, str);
+      obj[0] = obj2.withSpring(width, outer1_10, str);
       obj3 = c0(width[20]);
-      obj.height = obj3.withSpring(height, outer1_10, str, c1);
+      obj[1] = obj3.withSpring(height, outer1_10, str, c1);
       obj4 = c0(width[20]);
-      obj.borderRadius = obj4.withSpring(borderRadius, outer1_10, str);
-      obj = {};
+      obj[2] = obj4.withSpring(borderRadius, outer1_10, str);
+      obj = { translateX: null };
       obj6 = c0(width[20]);
-      obj.translateX = obj6.withSpring(c5, outer1_10, str);
+      obj[0] = obj6.withSpring(c5, outer1_10, str);
       items = [];
       items[0] = obj;
-      obj.transform = items;
+      obj[3] = items;
       return obj;
     }
   }
-  obj = { enableAnimation: first, withSpring: first(width[20]).withSpring, width, CHANNEL_SPRING_CONFIG: closure_10, height, onAnimationFinished: tmp3[1], borderRadius: tmp8, translateX: num2 };
+  obj = { enableAnimation: first, withSpring: tmp5(tmp4[20]).withSpring, width, CHANNEL_SPRING_CONFIG: closure_10, height, onAnimationFinished: tmp8, borderRadius: tmp11, translateX: num };
   O.__closure = obj;
   O.__workletHash = 2188820017597;
   O.__initData = closure_15;
-  const animatedStyle = obj2.useAnimatedStyle(O);
+  num2 = 1;
+  const animatedStyle = tmp5Result.useAnimatedStyle(O);
   if (typing) {
-    num = 0;
+    num2 = 0;
   }
-  let obj4 = first(width[19]);
+  const tmp = callback2();
+  const tmp12 = closure_10;
   const fn = function f() {
-    const obj = { opacity: first(width[20]).withSpring(num, outer1_10) };
+    const obj = { opacity: null };
+    obj[0] = first(width[20]).withSpring(num2, outer1_10);
     return obj;
   };
-  obj = { withSpring: first(width[20]).withSpring, statusOpacity: num, CHANNEL_SPRING_CONFIG: closure_10 };
+  obj = { withSpring: tmp5(tmp4[20]).withSpring, statusOpacity: num2, CHANNEL_SPRING_CONFIG: tmp12 };
   fn.__closure = obj;
   fn.__workletHash = 7224613224414;
   fn.__initData = closure_16;
-  const animatedStyle1 = obj4.useAnimatedStyle(fn);
-  obj1 = { style: items, collapsable: false };
+  const animatedStyle1 = first(width[19]).useAnimatedStyle(fn);
+  const obj1 = { style: items, collapsable: false, children: null };
   items = [size2, animatedStyle, style];
   if (typing) {
-    obj2 = { collapsable: false, entering: closure_8, exiting: closure_9 };
-    let obj3 = { position: "absolute", left: num, top: num };
+    let obj2 = { collapsable: false, entering: null, exiting: null, style: null, children: null };
+    obj2[1] = closure_8;
+    obj2[2] = closure_9;
+    let obj3 = { position: "absolute", left: null, top: null };
+    obj3[1] = num2;
+    obj3[2] = num2;
     const items1 = [obj3];
-    obj2.style = items1;
-    obj4 = {};
-    ({ ellipsis: obj10.style, ellipsisDot: obj10.dotStyle } = tmp2);
-    obj4.disableScale = true;
-    obj2.children = callback(importDefault(width[21]), obj4);
-    typing = callback(importDefault(width[19]).View, obj2);
+    obj2[3] = items1;
+    ({ ellipsis: obj10[0], ellipsisDot: obj10[1] } = tmp2);
+    obj2[4] = callback(tmp3(tmp4[21]), { style: null, dotStyle: null, disableScale: true });
+    typing = callback(tmp3(tmp4[19]).View, obj2);
+    let obj4 = { style: null, dotStyle: null, disableScale: true };
   }
   const items2 = [typing, ];
-  const obj5 = { style: animatedStyle1 };
-  const obj6 = { style: callback2().statusIcon, source: getStatusSource(status, streaming, flag, flag2), resizeMode: "stretch" };
-  obj5.children = callback(c4, obj6);
+  const obj5 = { style: animatedStyle1, children: null };
+  const obj6 = { style: tmp.statusIcon, source: null, resizeMode: "stretch" };
+  if (streaming) {
+    let tmp3Result = tmp3(tmp4[10]);
+  } else if (flag2) {
+    tmp3Result = tmp3(tmp4[11]);
+  } else if (flag) {
+    tmp3Result = tmp3(tmp4[12]);
+  } else if (StatusTypes.IDLE === status) {
+    tmp3Result = tmp3(tmp4[13]);
+  } else if (tmp22.DND === status) {
+    tmp3Result = tmp3(tmp4[14]);
+  } else {
+    if (tmp22.OFFLINE !== status) {
+      if (tmp22.INVISIBLE !== status) {
+        const ONLINE = tmp22.ONLINE;
+        tmp3Result = tmp3(tmp4[16]);
+      }
+    }
+    tmp3Result = tmp3(tmp4[15]);
+  }
+  obj6[1] = tmp3Result;
+  obj5[1] = callback(c4, obj6);
   items2[1] = callback(importDefault(width[19]).View, obj5);
-  obj1.children = items2;
+  obj1[2] = items2;
   return closure_12(importDefault(width[19]).View, obj1);
 };

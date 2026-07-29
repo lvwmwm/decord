@@ -1,13 +1,14 @@
-// Module ID: 12719
-// Function ID: 98576
+// Module ID: 12741
+// Function ID: 12742
 // Name: apexExperiment
-// Dependencies: [1428, 2]
+// Dependencies: [1452, 2]
 
-// Module 12719 (apexExperiment)
+// Module 12741 (apexExperiment)
 import ApexExperiment from "ApexExperiment";
 
-const obj = { name: "2025-12-connection-indicator", kind: "user", defaultConfig: { timeoutMs: undefined, hidden: true }, variations: { [1]: { timeoutMs: 10000, hidden: false }, [2]: { timeoutMs: 15000, hidden: false }, [3]: { timeoutMs: 20000, hidden: false }, [4]: { timeoutMs: 10000, hidden: true } } };
-const apexExperiment = ApexExperiment.createApexExperiment(obj);
+const obj = { 1: null, 2: { timeoutMs: 10000, hidden: false }, 3: { timeoutMs: 15000, hidden: false }, 4: { timeoutMs: 20000, hidden: false } };
+obj[4] = { timeoutMs: 10000, hidden: true };
+const apexExperiment = ApexExperiment.createApexExperiment({ name: "2025-12-connection-indicator", kind: "user", defaultConfig: { timeoutMs: "HermesInternal", hidden: null }, variations: obj });
 const result = require("set").fileFinishedImporting("modules/main_tabs_v2/native/ConnectionIndicatorExperiment.tsx");
 
 export default apexExperiment;

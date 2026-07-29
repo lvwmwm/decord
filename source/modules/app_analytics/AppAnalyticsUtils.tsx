@@ -1,30 +1,30 @@
-// Module ID: 4359
-// Function ID: 38008
-// Name: _createForOfIteratorHelperLoose
-// Dependencies: [1352, 1194, 1348, 1908, 4086, 1918, 1911, 1838, 4212, 3793, 4252, 4237, 4177, 3802, 1907, 3982, 4360, 1850, 4181, 653, 1355, 3798, 483, 4362, 675, 664, 4363, 4367, 22, 2]
-// Exports: collectChannelAnalyticsMetadataFromId, collectVoiceAnalyticsMetadata, getChannelOpenedMetadata, getCustomStatusMetadata, trackWithMetadata
+// Module ID: 4384
+// Function ID: 4385
+// Name: collectGuildAnalyticsMetadata
+// Dependencies: [1376, 1218, 1372, 1932, 4110, 1942, 1935, 1862, 4236, 3817, 4276, 4261, 4201, 3826, 1931, 4006, 4385, 1874, 4205, 676, 1379, 3822, 506, 4387, 698, 687, 4388, 4390, 12, 2]
+// Exports: collectChannelAnalyticsMetadataFromId, collectStaticChannelRouteAnalyticsMetadata, collectVoiceAnalyticsMetadata, getChannelOpenedMetadata, getCustomStatusMetadata, getVoiceStateMetadata, trackWithMetadata
 
-// Module 4359 (_createForOfIteratorHelperLoose)
-import { THREAD_CHANNEL_TYPES } from "_callSuper";
-import closure_5 from "_isNativeReflectConstruct";
-import closure_6 from "_isNativeReflectConstruct";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_9 from "_isNativeReflectConstruct";
-import closure_10 from "_isNativeReflectConstruct";
-import closure_11 from "_isNativeReflectConstruct";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import closure_13 from "_createForOfIteratorHelperLoose";
-import closure_14 from "_isNativeReflectConstruct";
-import closure_15 from "_isNativeReflectConstruct";
-import closure_16 from "_isNativeReflectConstruct";
-import closure_17 from "_isNativeReflectConstruct";
-import closure_18 from "_isNativeReflectConstruct";
-import closure_19 from "_isNativeReflectConstruct";
-import closure_20 from "_isNativeReflectConstruct";
-import closure_21 from "_isNativeReflectConstruct";
-import closure_22 from "_isNativeReflectConstruct";
-import closure_23 from "_isNativeReflectConstruct";
-import closure_24 from "_isNativeReflectConstruct";
+// Module 4384 (collectGuildAnalyticsMetadata)
+import { THREAD_CHANNEL_TYPES } from "createChannelRecord";
+import fetchFingerprint from "fetchFingerprint";
+import ensureGuildLoaded from "ensureGuildLoaded";
+import comparator from "comparator";
+import closure_9 from "comparator";
+import handleInviteData from "handleInviteData";
+import trackCommunicationDisabled from "trackCommunicationDisabled";
+import createGuildRoleRecordFromRust from "createGuildRoleRecordFromRust";
+import createGuildRecordFromRust from "createGuildRecordFromRust";
+import _detectH265HardwareDecode from "_detectH265HardwareDecode";
+import getUncachedChannelPermissions from "getUncachedChannelPermissions";
+import sortActivity from "sortActivity";
+import createRTCConnection from "createRTCConnection";
+import generateOldThreadCutoff from "generateOldThreadCutoff";
+import upsertRelationship from "upsertRelationship";
+import handleConnectionOpen from "handleConnectionOpen";
+import closure_21 from "handleConnectionOpen";
+import updateUserGuildSettingsInternal from "updateUserGuildSettingsInternal";
+import mergeGuildAvatar from "mergeGuildAvatar";
+import updateVoiceState from "updateVoiceState";
 import ME from "ME";
 import { isStaticChannelRoute } from "set";
 
@@ -32,100 +32,8 @@ let closure_25;
 let closure_26;
 let closure_27;
 let closure_28;
-let closure_7;
-let closure_8;
-function _createForOfIteratorHelperLoose(iterable) {
-  let closure_0 = iterable;
-  iterable = "undefined" !== typeof Symbol;
-  if (iterable) {
-    const _Symbol = Symbol;
-    iterable = iterable[Symbol.iterator];
-  }
-  if (!iterable) {
-    iterable = iterable[Symbol.iterator];
-  }
-  if (iterable) {
-    const iter = iterable.call(iterable);
-    const next = iter.next;
-    return next.bind(iter);
-  } else {
-    const _Array = Array;
-    let tmp = iterable;
-    if (!Array.isArray(iterable)) {
-      let tmp2;
-      if (iterable) {
-        if ("string" === typeof iterable) {
-          tmp2 = _arrayLikeToArray(iterable, undefined);
-        } else {
-          const toString = {}.toString;
-          const substr = toString.call(iterable).slice(8, -1);
-          let name = substr;
-          if (tmp3) {
-            name = iterable.constructor.name;
-          }
-          if ("Map" !== name) {
-            if ("Set" !== name) {
-              if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(iterable, undefined);
-              } else {
-                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
-              }
-            }
-            tmp2 = arr;
-          }
-          const _Array2 = Array;
-          arr = Array.from(iterable);
-          const callResult = toString.call(iterable);
-          tmp3 = "Object" === substr && iterable.constructor;
-        }
-      }
-      tmp = tmp2;
-      if (!tmp2) {
-        const _TypeError = TypeError;
-        const typeError = new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
-        throw typeError;
-      }
-    }
-    if (tmp) {
-      closure_0 = tmp;
-    }
-    let c1 = 0;
-    return () => {
-      if (closure_1 >= length.length) {
-        let obj = { done: true };
-      } else {
-        obj = { done: false };
-        closure_1 = tmp3 + 1;
-        obj.value = length[+closure_1];
-      }
-      return obj;
-    };
-  }
-}
-function _arrayLikeToArray(arg0, arg1) {
-  let length;
-  if (tmp) {
-    length = arg0.length;
-  }
-  const ArrayResult = Array(length);
-  for (let num = 0; num < length; num = num + 1) {
-    ArrayResult[num] = arg0[num];
-  }
-  return ArrayResult;
-}
-function countKeys(voiceStates) {
-  let num = 0;
-  let num2 = 0;
-  const keys = Object.keys();
-  if (keys !== undefined) {
-    num2 = num;
-    while (keys[tmp] !== undefined) {
-      num = num + 1;
-      continue;
-    }
-  }
-  return num2;
-}
+let error;
+let metroImportAll;
 function collectGuildAnalyticsMetadata(guildId) {
   if (null == guildId) {
     return null;
@@ -137,90 +45,113 @@ function collectGuildAnalyticsMetadata(guildId) {
       numRoles = numRoles.getNumRoles(guild.id);
       member = member.getMember(guildId, id.getId());
       channels = channels.getChannels(guildId);
-      const obj = { guild_id: guild.id };
       const voiceStates = store4.getVoiceStates(guildId);
-      obj.guild_size_total = memberCount.getMemberCount(guildId);
-      obj.guild_num_channels = channels[closure_7].length + channels[closure_8].length;
-      obj.guild_num_text_channels = channels[closure_7].length;
-      obj.guild_num_voice_channels = channels[closure_8].length;
-      obj.guild_num_roles = numRoles;
+      const obj = { guild_id: null, guild_size_total: null, guild_num_channels: null, guild_num_text_channels: null, guild_num_voice_channels: null, guild_num_roles: null, guild_member_num_roles: null, guild_member_perms: null, guild_is_vip: null, is_member: null, num_voice_channels_active: null };
+      obj[0] = guild.id;
+      obj[1] = memberCount.getMemberCount(guildId);
+      obj[2] = channels[closure_7].length + channels[closure_8].length;
+      obj[3] = channels[closure_7].length;
+      obj[4] = channels[closure_8].length;
+      obj[5] = numRoles;
       let num = 0;
       if (null != member) {
         num = member.roles.length;
       }
-      obj.guild_member_num_roles = num;
+      obj[6] = num;
       let NONE = store3.getGuildPermissions(guild);
-      if (null == NONE) {
-        NONE = importAll(3798).NONE;
+      if (NONE == null) {
+        NONE = importAll(3822).NONE;
       }
-      obj.guild_member_perms = String(NONE);
+      obj[7] = String(NONE);
       const features = guild.features;
-      obj.guild_is_vip = features.has(constants.VIP_REGIONS);
-      obj.is_member = null != member;
-      obj.num_voice_channels_active = countKeys(voiceStates);
+      obj[8] = features.has(constants.VIP_REGIONS);
+      obj[9] = null != member;
+      let num3 = 0;
+      let num4 = 0;
+      const keys = Object.keys();
+      if (keys !== undefined) {
+        num4 = num3;
+        while (keys[tmp] !== undefined) {
+          num3 = num3 + 1;
+          continue;
+        }
+      }
+      obj[10] = num4;
       return obj;
     }
   }
 }
-function collectStaticChannelRouteAnalyticsMetadata(arg0, channel_id) {
-  return { channel_static_route: channel_id, channel_hidden: false };
-}
 function collectChannelAnalyticsMetadata(channel) {
-  function isHidden(channel) {
-    if (null == guildId) {
-      return false;
-    } else if (null == channel) {
-      return false;
-    } else {
-      let hasItem = null != tmp2;
-      if (hasItem) {
-        hasItem = outer1_2(outer1_3[22]).has(tmp2.deny, outer1_27.VIEW_CHANNEL);
-        const obj = outer1_2(outer1_3[22]);
-      }
-      return hasItem;
-    }
-  }
   if (null == channel) {
     return null;
   } else {
     const guildId = channel.getGuildId();
     if (null == guildId) {
-      let obj = {};
-      ({ id: obj.channel_id, type: obj.channel_type } = channel);
+      let obj = { channel_id: null, channel_type: null, channel_size_total: null, channel_member_perms: null, channel_hidden: null };
+      ({ id: obj3[0], type: obj3[1] } = channel);
       let num = 0;
       if (channel.isPrivate()) {
         num = channel.recipients.length;
       }
-      obj.channel_size_total = num;
-      if (null == guildId) {
-        let NONE = importAll(3798).NONE;
+      obj[2] = num;
+      if (null != guildId) {
+        let NONE2 = store3.getChannelPermissions(channel);
+        if (NONE2 == null) {
+          NONE2 = importAll(3822).NONE;
+        }
+        let NONE = NONE2;
       } else {
-        NONE = store3.getChannelPermissions(channel);
+        NONE = importAll(3822).NONE;
       }
-      obj.channel_member_perms = String(NONE);
-      obj.channel_hidden = false;
+      obj[3] = String(NONE);
+      obj[4] = false;
       return obj;
     } else {
       if (!THREAD_CHANNEL_TYPES.has(channel.type)) {
-        let isHiddenResult = isHidden(channel);
+        let flag = false;
+        if (null != guildId) {
+          flag = false;
+          if (null != channel) {
+            let hasItem = null != tmp2;
+            if (hasItem) {
+              obj = importAll(506);
+              hasItem = obj.has(tmp2.deny, constants3.VIEW_CHANNEL);
+            }
+            flag = hasItem;
+          }
+        }
       }
-      isHiddenResult = isHidden(store.getChannel(channel.parent_id));
+      channel = store.getChannel(channel.parent_id);
+      let flag2 = false;
+      if (null != guildId) {
+        flag2 = false;
+        if (null != channel) {
+          let hasItem1 = null != tmp9;
+          if (hasItem1) {
+            hasItem1 = importAll(506).has(tmp9.deny, constants3.VIEW_CHANNEL);
+            const obj2 = importAll(506);
+          }
+          flag2 = hasItem1;
+        }
+      }
+      flag = flag2;
     }
   }
 }
-function trackWithMetadata(TEXT_AREA_CTA_CLICKED, trackWithMetadataResult, hasItem) {
-  let obj = trackWithMetadataResult;
-  let flag = hasItem;
-  if (trackWithMetadataResult === undefined) {
+function trackWithMetadata(IAR_MODAL_OPEN, fileSizeLimitEventProperties, hasItem) {
+  let obj = fileSizeLimitEventProperties;
+  if (fileSizeLimitEventProperties === undefined) {
     obj = {};
   }
-  if (flag === undefined) {
+  let flag = hasItem;
+  if (hasItem === undefined) {
     flag = false;
   }
-  let num = 24;
-  if (!obj2.isThrottled(TEXT_AREA_CTA_CLICKED)) {
-    let tmp2 = !tmp;
-    if ("location" in obj) {
+  let track = importDefault;
+  let obj1 = importDefault(698);
+  if (!obj1.isThrottled(IAR_MODAL_OPEN)) {
+    let tmp2 = !("location" in obj);
+    if (!tmp2) {
       tmp2 = obj.location !== constants2.GUILD_CREATE_INVITE_SUGGESTION;
     }
     if ("guild_id" in obj) {
@@ -241,24 +172,22 @@ function trackWithMetadata(TEXT_AREA_CTA_CLICKED, trackWithMetadataResult, hasIt
     }
     const channel = store.getChannel(channel_id);
     if (null == channel) {
-      let tmp15 = null;
-      if (null != guild_id) {
-        tmp15 = guild_id;
+      let tmp13 = guild_id;
+      if (guild_id == null) {
+        tmp13 = null;
       }
-      let tmp11 = tmp15;
+      let tmp11 = tmp13;
     } else {
       tmp11 = null;
       if (!channel.isPrivate()) {
         guildId = channel.getGuildId();
-        let tmp13 = guild_id;
-        if (null != guildId) {
-          tmp13 = guildId;
+        if (guildId == null) {
+          guildId = guild_id;
         }
-        let tmp14 = null;
-        if (null != tmp13) {
-          tmp14 = tmp13;
+        if (guildId == null) {
+          guildId = null;
         }
-        tmp11 = tmp14;
+        tmp11 = guildId;
       }
     }
     obj = {};
@@ -266,60 +195,55 @@ function trackWithMetadata(TEXT_AREA_CTA_CLICKED, trackWithMetadataResult, hasIt
     const merged1 = Object.assign(collectGuildAnalyticsMetadata(tmp11));
     if (null != guild_id) {
       if (null != channel_id) {
-        const merged2 = Object.assign(tmp24);
-        num = importDefault(dependencyMap[num]);
-        obj = { flush: flag };
-        num.track(TEXT_AREA_CTA_CLICKED, obj, obj);
+        const merged2 = Object.assign(tmp22);
+        track = track(698).track;
+        obj = { flush: null };
+        obj[0] = flag;
+        track(IAR_MODAL_OPEN, obj, obj);
+        const trackResult = track(698);
       }
-      tmp24 = collectStaticChannelRouteAnalyticsMetadata(0, channel_id);
+      obj1 = { channel_static_route: null, channel_hidden: false };
+      obj1[0] = channel_id;
+      tmp22 = obj1;
     }
-    tmp24 = collectChannelAnalyticsMetadata(channel);
+    tmp22 = collectChannelAnalyticsMetadata(channel);
   }
 }
 function getRecipientFriendCounts(recipients) {
-  let iter3;
-  const tmp = _createForOfIteratorHelperLoose(recipients);
-  const iter = tmp();
-  let iter2 = iter;
   let num = 0;
-  let num2 = 0;
-  if (!iter.done) {
-    do {
-      let tmp2 = friend;
-      let sum = num;
-      if (friend.isFriend(iter2.value)) {
-        sum = num + 1;
-      }
-      iter3 = tmp();
-      num = sum;
-      iter2 = iter3;
-      num2 = sum;
-    } while (!iter3.done);
+  while (tmp !== undefined) {
+    let tmp3 = friend;
+    if (friend.isFriend(tmp2)) {
+      let tmp4 = num;
+      num = num + 1;
+    }
+    continue;
   }
-  const obj = { friendCount: num2, nonFriendCount: recipients.length - num2 };
-  return obj;
+  return { friendCount: num, nonFriendCount: recipients.length - num };
 }
 function getVoiceStateMetadata(guildId, channelId, videoEnabled) {
   let closure_0 = channelId;
   const obj = { voice_state_count: 0, video_stream_count: 0, video_enabled: videoEnabled };
-  const tmp = obj(22);
-  const found = obj(22)(store4.getVoiceStates(guildId)).filter((channelId) => channelId.channelId === closure_0);
-  const found1 = found.filter((userId) => userId.userId !== outer1_5.getId());
+  const tmp = obj(12);
+  const found = obj(12)(store4.getVoiceStates(guildId)).filter((channelId) => channelId.channelId === id);
+  const found1 = found.filter((userId) => userId.userId !== id.getId());
   const item = found1.forEach((selfVideo) => {
     obj.voice_state_count = obj.voice_state_count + 1;
-    if (tmp) {
-      obj.video_stream_count = obj.video_stream_count + 1;
+    if (tmp2) {
+      tmp.video_stream_count = tmp.video_stream_count + 1;
     }
   });
   return obj;
 }
-({ GUILD_SELECTABLE_CHANNELS_KEY: closure_7, GUILD_VOCAL_CHANNELS_KEY: closure_8 } = _isNativeReflectConstruct);
+({ GUILD_SELECTABLE_CHANNELS_KEY: error, GUILD_VOCAL_CHANNELS_KEY: metroImportAll } = comparator);
 ({ GuildFeatures: closure_25, AnalyticsLocations: closure_26, Permissions: closure_27, ActivityTypes: closure_28 } = ME);
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/app_analytics/AppAnalyticsUtils.tsx");
+const result = require("ensureGuildLoaded").fileFinishedImporting("modules/app_analytics/AppAnalyticsUtils.tsx");
 
 export default { trackWithMetadata, getVoiceStateMetadata };
 export { collectGuildAnalyticsMetadata };
-export { collectStaticChannelRouteAnalyticsMetadata };
+export function collectStaticChannelRouteAnalyticsMetadata(arg0, channel_static_route) {
+  return { channel_static_route, channel_hidden: false };
+}
 export const collectChannelAnalyticsMetadataFromId = function collectChannelAnalyticsMetadataFromId(channelId) {
   if (null == channelId) {
     return null;
@@ -341,14 +265,28 @@ export const collectVoiceAnalyticsMetadata = function collectVoiceAnalyticsMetad
     if (null == channel) {
       return null;
     } else {
-      const obj = {};
-      ({ id: obj2.channel_id, type: obj2.channel_type } = channel);
+      let obj = { channel_id: null, channel_type: null, guild_id: null, media_session_id: null };
+      ({ id: obj2[0], type: obj2[1] } = channel);
       mediaSessionId = mediaSessionId.getMediaSessionId();
-      obj.guild_id = channel.getGuildId();
-      obj.media_session_id = mediaSessionId;
-      const merged = Object.assign(getVoiceStateMetadata(channel.getGuildId(), channel.id, videoEnabled.isVideoEnabled()));
+      obj[2] = channel.getGuildId();
+      obj[3] = mediaSessionId;
+      id = channel.id;
+      obj = { voice_state_count: 0, video_stream_count: 0, video_enabled: null };
+      obj[2] = videoEnabled.isVideoEnabled();
+      const guildId = channel.getGuildId();
       const isVideoEnabledResult = videoEnabled.isVideoEnabled();
-      const merged1 = Object.assign(require(4362) /* getVoiceAnalyticsMetadataAdditional */.getVoiceAnalyticsMetadataAdditional());
+      const tmp9 = obj(12);
+      const found = obj(12)(store4.getVoiceStates(guildId)).filter((channelId) => channelId.channelId === id);
+      const found1 = found.filter((userId) => userId.userId !== id.getId());
+      const item = found1.forEach((selfVideo) => {
+        obj.voice_state_count = obj.voice_state_count + 1;
+        if (tmp2) {
+          tmp.video_stream_count = tmp.video_stream_count + 1;
+        }
+      });
+      const merged = Object.assign(obj);
+      const tmp9Result = obj(12)(store4.getVoiceStates(guildId));
+      const merged1 = Object.assign(id(4387).getVoiceAnalyticsMetadataAdditional());
       return obj;
     }
   }
@@ -356,12 +294,14 @@ export const collectVoiceAnalyticsMetadata = function collectVoiceAnalyticsMetad
 export { trackWithMetadata };
 export const getChannelOpenedMetadata = function getChannelOpenedMetadata(selectedChannelId) {
   if (isStaticChannelRoute(selectedChannelId)) {
-    let obj = { channel_static_route: selectedChannelId };
+    let obj = { channel_static_route: null };
+    obj[0] = selectedChannelId;
     return obj;
   } else {
     const channel = store.getChannel(selectedChannelId);
     if (null == channel) {
-      obj = { channel_id: selectedChannelId };
+      obj = { channel_id: null };
+      obj[0] = selectedChannelId;
       return obj;
     } else {
       const guild = store2.getGuild(channel.guild_id);
@@ -379,37 +319,39 @@ export const getChannelOpenedMetadata = function getChannelOpenedMetadata(select
         } else {
           tmp5 = null;
         }
-        const obj1 = { channel_id: selectedChannelId, is_app_dm: flag };
+        const obj1 = { channel_id: null, is_app_dm: null };
+        obj1[0] = selectedChannelId;
+        obj1[1] = flag;
         let tmp7 = null;
         if (null != tmp5) {
-          ({ friendCount: obj3.friend_recipient_count, nonFriendCount: obj3.non_friend_recipient_count } = tmp5);
-          tmp7 = {};
-          const obj2 = {};
+          ({ friendCount: obj3[0], nonFriendCount: obj3[1] } = tmp5);
+          tmp7 = { friend_recipient_count: null, non_friend_recipient_count: null };
+          const obj2 = { friend_recipient_count: null, non_friend_recipient_count: null };
         }
         const merged = Object.assign(tmp7);
         return obj1;
       } else {
-        snapshot = snapshot.getSnapshot(selectedChannelId, 10 * importDefault(664).Millis.SECOND);
-        const obj3 = { channel_id: selectedChannelId };
-        ({ unread: obj6.channel_was_unread, mentionCount: obj6.channel_mention_count } = snapshot);
-        obj3.channel_is_muted = closure_22.isChannelMuted(channel.guild_id, channel.id);
-        obj3.channel_is_nsfw = channel.isNSFW();
-        obj3.channel_is_spoiler = channel.isSpoilerChannel();
-        obj3.channel_resolved_unread_setting = closure_22.resolveUnreadSetting(channel);
-        const unreadSetting = closure_22.resolveUnreadSetting(channel);
-        obj3.channel_preset = require(4363) /* Presets */.presetFromSettings(unreadSetting, closure_22.resolvedMessageNotifications(channel));
-        obj3.guild_id = channel.guild_id;
-        ({ guildUnread: obj6.guild_was_unread, guildMentionCount: obj6.guild_mention_count } = snapshot);
-        obj3.guild_is_muted = closure_22.isMuted(channel.guild_id);
-        obj3.guild_resolved_unread_setting = closure_22.resolveGuildUnreadSetting(guild);
-        const obj7 = require(4363) /* Presets */;
-        const guildUnreadSetting = closure_22.resolveGuildUnreadSetting(guild);
-        obj3.guild_preset = require(4363) /* Presets */.presetFromSettings(guildUnreadSetting, closure_22.getMessageNotifications(channel.guild_id));
-        ({ parent_id: obj6.parent_id, parentChannelThreadType: obj6.parent_channel_type } = channel);
-        const obj8 = require(4363) /* Presets */;
-        obj3.has_pending_member_action = require(4367) /* hasPendingMemberAction */.hasPendingMemberAction(channel.guild_id, selectedChannelId);
-        obj3.can_send_message = store3.can(constants3.SEND_MESSAGES, channel);
-        obj3.is_app_dm = false;
+        snapshot = snapshot.getSnapshot(selectedChannelId, 10 * importDefault(687).Millis.SECOND);
+        const obj3 = { channel_id: null, channel_was_unread: null, channel_mention_count: null, channel_is_muted: null, channel_is_nsfw: null, channel_is_spoiler: null, channel_resolved_unread_setting: null, channel_preset: null, guild_id: null, guild_was_unread: null, guild_mention_count: null, guild_is_muted: null, guild_resolved_unread_setting: null, guild_preset: null, parent_id: null, parent_channel_type: null, has_pending_member_action: null, can_send_message: null, is_app_dm: false };
+        obj3[0] = selectedChannelId;
+        ({ unread: obj6[1], mentionCount: obj6[2] } = snapshot);
+        obj3[3] = updateUserGuildSettingsInternal.isChannelMuted(channel.guild_id, channel.id);
+        obj3[4] = channel.isNSFW();
+        obj3[5] = channel.isSpoilerChannel();
+        obj3[6] = updateUserGuildSettingsInternal.resolveUnreadSetting(channel);
+        const unreadSetting = updateUserGuildSettingsInternal.resolveUnreadSetting(channel);
+        obj3[7] = require(4388) /* Presets */.presetFromSettings(unreadSetting, updateUserGuildSettingsInternal.resolvedMessageNotifications(channel));
+        obj3[8] = channel.guild_id;
+        ({ guildUnread: obj6[9], guildMentionCount: obj6[10] } = snapshot);
+        obj3[11] = updateUserGuildSettingsInternal.isMuted(channel.guild_id);
+        obj3[12] = updateUserGuildSettingsInternal.resolveGuildUnreadSetting(guild);
+        const obj7 = require(4388) /* Presets */;
+        const guildUnreadSetting = updateUserGuildSettingsInternal.resolveGuildUnreadSetting(guild);
+        obj3[13] = require(4388) /* Presets */.presetFromSettings(guildUnreadSetting, updateUserGuildSettingsInternal.getMessageNotifications(channel.guild_id));
+        ({ parent_id: obj6[14], parentChannelThreadType: obj6[15] } = channel);
+        const obj8 = require(4388) /* Presets */;
+        obj3[16] = require(4390) /* hasPendingMemberAction */.hasPendingMemberAction(channel.guild_id, selectedChannelId);
+        obj3[17] = store3.can(constants3.SEND_MESSAGES, channel);
         return obj3;
       }
     }
@@ -420,11 +362,11 @@ export { getVoiceStateMetadata };
 export const getCustomStatusMetadata = function getCustomStatusMetadata(arg0, arg1) {
   let closure_0 = arg1;
   const obj = { custom_status_count: 0 };
-  let tmp = obj(22);
-  const item = obj(22)(store4.getVoiceStates(arg0)).forEach((channelId) => {
+  let tmp = obj(12);
+  const item = obj(12)(store4.getVoiceStates(arg0)).forEach((channelId) => {
     let tmp = channelId.channelId === closure_0;
     if (tmp) {
-      tmp = null != outer1_16.findActivity(channelId.userId, (type) => type.type === outer2_28.CUSTOM_STATUS);
+      tmp = null != outer1_16.findActivity(channelId.userId, (type) => type.type === constants.CUSTOM_STATUS);
     }
     if (tmp) {
       obj.custom_status_count = obj.custom_status_count + 1;

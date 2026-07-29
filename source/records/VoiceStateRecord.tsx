@@ -1,25 +1,47 @@
-// Module ID: 4182
-// Function ID: 35050
-// Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 1859, 2]
+// Module ID: 4206
+// Function ID: 4207
+// Name: isVoiceMuted
+// Dependencies: [1883, 2]
 
-// Module 4182 (_isNativeReflectConstruct)
-import set from "set";
-import _defineProperties from "_defineProperties";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
-import tmp2 from "Record";
+// Module 4206 (isVoiceMuted)
+import "toJS";
 
-function _isNativeReflectConstruct() {
-  let set = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return set;
+const result = require("set").fileFinishedImporting("records/VoiceStateRecord.tsx");
+class VoiceStateRecord extends tmp2 {
+  constructor(arg0) {
+    tmp2 = new VoiceStateRecord(tmp, new.target);
+    // ThrowIfThisInitialized (0x7c)
+    tmp3 = global.userId || "";
+    tmp2.userId = tmp3;
+    tmp2.channelId = global.channelId || null;
+    tmp2.sessionId = global.sessionId || null;
+    tmp2.mute = global.mute || false;
+    tmp2.deaf = global.deaf || false;
+    tmp2.selfMute = global.selfMute || false;
+    tmp2.selfDeaf = global.selfDeaf || false;
+    tmp2.selfVideo = global.selfVideo || false;
+    tmp2.selfStream = global.selfStream || false;
+    tmp2.suppress = global.suppress || false;
+    ({ requestToSpeakTimestamp: tmp2.requestToSpeakTimestamp, discoverable } = global);
+    if (discoverable == null) {
+      discoverable = true;
+    }
+    tmp2.discoverable = discoverable;
+    tmp2.connectedAt = global.connectedAt;
+    return tmp2;
   }
-  const result = _isNativeReflectConstruct();
 }
-let result = require("_possibleConstructorReturn").fileFinishedImporting("records/VoiceStateRecord.tsx");
+const prototype = VoiceStateRecord.prototype;
+prototype["isVoiceMuted"] = function isVoiceMuted() {
+  const self = this;
+  let tmp = this.selfMute || self.mute || self.suppress;
+  if (!tmp) {
+    tmp = null != self.requestToSpeakTimestamp;
+  }
+  return tmp;
+};
+prototype["isVoiceDeafened"] = function isVoiceDeafened() {
+  return this.selfDeaf || this.deaf;
+};
 
-export default tmp2;
+export default VoiceStateRecord;

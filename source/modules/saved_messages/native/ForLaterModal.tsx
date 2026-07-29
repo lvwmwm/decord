@@ -1,60 +1,61 @@
-// Module ID: 9915
-// Function ID: 76633
+// Module ID: 9937
+// Function ID: 9938
 // Name: ForLaterModal
-// Dependencies: [31, 27, 33, 4165, 689, 1212, 9530, 5128, 9094, 477, 5121, 4372, 9916, 2]
+// Dependencies: [19, 17, 21, 4189, 712, 1236, 9554, 5150, 9118, 500, 5143, 4395, 9938, 2]
 // Exports: default
 
-// Module 9915 (ForLaterModal)
-import "result";
+// Module 9937 (ForLaterModal)
+import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_4;
-let closure_5;
+let c4;
+let c5;
 const require = arg1;
-({ jsx: closure_4, jsxs: closure_5 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWER, borderBottomWidth: 0, shadowColor: "transparent", height: "100%" };
-_createForOfIteratorHelperLoose.modal = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.headerContainer = { paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16, paddingTop: require("_createForOfIteratorHelperLoose").space.PX_8 };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-let obj1 = { paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16, paddingTop: require("_createForOfIteratorHelperLoose").space.PX_8 };
+({ jsx: c4, jsxs: c5 } = jsxProd);
+createCacheKey = { modal: null, headerContainer: null };
+createCacheKey = { backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOWER, borderBottomWidth: 0, shadowColor: "transparent", height: "100%" };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { paddingHorizontal: require("Themes").space.PX_16, paddingTop: require("Themes").space.PX_8 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let obj1 = { paddingHorizontal: require("Themes").space.PX_16, paddingTop: require("Themes").space.PX_8 };
 const result = require("jsxProd").fileFinishedImporting("modules/saved_messages/native/ForLaterModal.tsx");
 
 export default function ForLaterModal(type) {
   type = type.type;
   let _require;
-  const tmp = _createForOfIteratorHelperLoose();
-  const intl = _require(1212).intl;
-  if (type === _require(9530).SavedMessageSortTypes.REMINDER) {
+  const tmp = createCacheKey();
+  const intl = _require(1236).intl;
+  if (type === _require(9554).SavedMessageSortTypes.REMINDER) {
   } else {
   }
   const stringResult = intl.string(_2pAkDA);
   _require = stringResult;
-  let obj = { style: tmp.modal };
-  obj = { style: tmp.headerContainer };
+  let obj = { style: tmp.modal, children: null };
+  obj = { style: tmp.headerContainer, children: null };
   obj = {
     title: stringResult,
     headerTitle() {
       return outer1_4(_undefined(outer1_2[8]).GenericHeaderTitle, { title: _undefined });
     },
-    headerTitleAlign: "center"
+    headerTitleAlign: "center",
+    headerStatusBarHeight: null,
+    headerLeft: null
   };
+  let tmp2Result = tmp2(500);
   let num;
-  if (obj4.isIOS()) {
+  if (tmp2Result.isIOS()) {
     num = 0;
   }
-  obj.headerStatusBarHeight = num;
-  obj4 = _require(477);
-  const tmp7 = closure_5;
-  obj.headerLeft = _require(5121).getHeaderCloseButton(importDefault(4372).pop);
-  obj.children = callback(_require(5128).Header, obj);
-  const items = [callback(View, obj), ];
-  const obj1 = { type };
-  const obj5 = _require(5121);
-  obj1.onClose = importDefault(4372).pop;
-  items[1] = callback(importDefault(9916), obj1, type);
-  obj.children = items;
-  return tmp7(View, obj);
+  obj[3] = num;
+  tmp2Result = tmp2(5143);
+  obj[4] = tmp2Result.getHeaderCloseButton(importDefault(4395).pop);
+  obj[1] = closure_4(_require(5150).Header, obj);
+  const items = [closure_4(View, obj), ];
+  const obj1 = { type, onClose: null };
+  obj1[1] = importDefault(4395).pop;
+  items[1] = closure_4(importDefault(9938), obj1, type);
+  obj[1] = items;
+  return closure_5(View, obj);
 };

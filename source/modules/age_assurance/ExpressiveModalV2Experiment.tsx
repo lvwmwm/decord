@@ -1,14 +1,15 @@
-// Module ID: 6749
-// Function ID: 59344
+// Module ID: 6770
+// Function ID: 6771
 // Name: useIsExpressiveModalV2Enabled
-// Dependencies: [1428, 2]
+// Dependencies: [1452, 2]
 // Exports: isExpressiveModalV2Enabled, useIsExpressiveModalV2Enabled
 
-// Module 6749 (useIsExpressiveModalV2Enabled)
+// Module 6770 (useIsExpressiveModalV2Enabled)
 import ApexExperiment from "ApexExperiment";
 
-const obj = { kind: "user", name: "2026-07-expressive-modal-v2", defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } };
-let closure_0 = ApexExperiment.createApexExperiment(obj);
+const obj = { 1: null };
+obj[1] = { enabled: true };
+let closure_0 = ApexExperiment.createApexExperiment({ kind: "user", name: "2026-07-expressive-modal-v2", defaultConfig: { enabled: false }, variations: obj });
 const result = require("set").fileFinishedImporting("modules/age_assurance/ExpressiveModalV2Experiment.tsx");
 
 export const useIsExpressiveModalV2Enabled = function useIsExpressiveModalV2Enabled(location) {

@@ -1,72 +1,72 @@
-// Module ID: 15872
-// Function ID: 122323
+// Module ID: 15907
+// Function ID: 15908
 // Name: isVoicePanelParticipantFocusable
-// Dependencies: [1347, 4178, 4184, 4212, 4183, 10021, 1327, 566, 2]
+// Dependencies: [1371, 4202, 4208, 4236, 4207, 10043, 1351, 589, 2]
 // Exports: default
 
-// Module 15872 (isVoicePanelParticipantFocusable)
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_4 from "_isNativeReflectConstruct";
-import closure_5 from "_isNativeReflectConstruct";
+// Module 15907 (isVoicePanelParticipantFocusable)
+import participantFromServer from "participantFromServer";
+import getParticipants from "getParticipants";
+import reset from "reset";
+import _detectH265HardwareDecode from "_detectH265HardwareDecode";
 import ParticipantTypes from "ParticipantTypes";
 
 let closure_6;
-let closure_7;
-let closure_8;
+let error;
+let metroImportAll;
 const require = arg1;
-function isVoicePanelParticipantFocusable(guildId, channelId, embeddedActivityParticipantId, arg3, outer1_4) {
+function isVoicePanelParticipantFocusable(sharedValue1, closure_1, id2, arg3, outer1_4) {
   let obj = arg3;
-  let tmp = outer1_4;
-  let obj2 = arg5;
-  let obj3 = arg6;
   if (arg3 === undefined) {
-    obj = _isNativeReflectConstruct;
+    obj = getParticipants;
   }
-  if (tmp === undefined) {
-    tmp = closure_5;
+  let tmp = outer1_4;
+  if (outer1_4 === undefined) {
+    tmp = _detectH265HardwareDecode;
   }
-  if (obj2 === undefined) {
-    obj2 = _createForOfIteratorHelperLoose;
+  let obj2 = arg5;
+  if (arg5 === undefined) {
+    obj2 = participantFromServer;
   }
-  if (obj3 === undefined) {
-    obj3 = closure_4;
+  let obj3 = arg6;
+  if (arg6 === undefined) {
+    obj3 = reset;
   }
-  if (null == embeddedActivityParticipantId) {
+  if (null == id2) {
     return false;
   } else {
-    const participant = obj.getParticipant(channelId, embeddedActivityParticipantId);
+    const participant = obj.getParticipant(closure_1, id2);
     if (null == participant) {
       return false;
     } else if (callback(participant)) {
       const currentEmbeddedActivity = obj2.getCurrentEmbeddedActivity();
       let applicationId;
-      if (null != currentEmbeddedActivity) {
+      if (currentEmbeddedActivity != null) {
         applicationId = currentEmbeddedActivity.applicationId;
       }
       return null != applicationId && participant.applicationId === currentEmbeddedActivity.applicationId;
     } else {
       if (callback2(participant)) {
-        let result = null != obj3.getActiveStreamForUser(participant.user.id, guildId);
+        let result = null != obj3.getActiveStreamForUser(participant.user.id, sharedValue1);
       } else if (callback3(participant)) {
-        let tmp4Result = tmp4(10021);
+        let tmp4Result = tmp4(10043);
         result = tmp4Result.canRenderParticipantVideo(participant, tmp);
       } else {
-        tmp4Result = tmp4(1327);
+        tmp4Result = tmp4(1351);
         tmp4Result.assertNever(participant);
       }
       return result;
     }
   }
 }
-({ isActivityParticipant: closure_6, isStreamParticipant: closure_7, isUserParticipant: closure_8 } = ParticipantTypes);
-let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/voice_panel/native/utils/useIsVoicePanelParticipantFocusable.tsx");
+({ isActivityParticipant: closure_6, isStreamParticipant: error, isUserParticipant: metroImportAll } = ParticipantTypes);
+let result = require("reset").fileFinishedImporting("modules/voice_panel/native/utils/useIsVoicePanelParticipantFocusable.tsx");
 
 export default function useIsVoicePanelParticipantFocusable(arg0, arg1, arg2) {
   const _require = arg0;
   const dependencyMap = arg1;
-  let _createForOfIteratorHelperLoose = arg2;
-  const items = [_isNativeReflectConstruct, closure_5, _createForOfIteratorHelperLoose, closure_4];
-  return _require(566).useStateFromStores(items, () => outer1_9(closure_0, closure_1, _createForOfIteratorHelperLoose, outer1_3, outer1_5, _createForOfIteratorHelperLoose, outer1_4));
+  let participantFromServer = arg2;
+  const items = [getParticipants, _detectH265HardwareDecode, participantFromServer, reset];
+  return _require(589).useStateFromStores(items, () => outer1_9(closure_0, closure_1, participantFromServer, outer1_3, outer1_5, participantFromServer, outer1_4));
 };
 export { isVoicePanelParticipantFocusable };

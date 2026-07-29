@@ -1,10 +1,10 @@
-// Module ID: 5704
-// Function ID: 49074
+// Module ID: 5722
+// Function ID: 5723
 // Name: isForegrounded
-// Dependencies: [27, 2]
+// Dependencies: [17, 2]
 // Exports: isForegrounded
 
-// Module 5704 (isForegrounded)
+// Module 5722 (isForegrounded)
 import { AppState } from "get ActivityIndicator";
 
 const result = require("set").fileFinishedImporting("modules/analytics_sessions/SessionForegroundUtils.native.tsx");

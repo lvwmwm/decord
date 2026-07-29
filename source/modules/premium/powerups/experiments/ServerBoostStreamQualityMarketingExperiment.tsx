@@ -1,13 +1,14 @@
-// Module ID: 12629
-// Function ID: 97620
+// Module ID: 12651
+// Function ID: 12652
 // Name: CONTROL_RESOLUTION
-// Dependencies: [1325, 2]
+// Dependencies: [1349, 2]
 // Exports: getServerBoostStreamQualityMarketingResolution
 
-// Module 12629 (CONTROL_RESOLUTION)
-const obj = { name: "2026-04-server-boost-copy-1440p", kind: "user", defaultConfig: { streamQualityMarketingResolution: "1080p" }, variations: { [1]: { streamQualityMarketingResolution: "1440p" } } };
-const tmp2 = require("getUnitId")(obj);
-let closure_0 = tmp2;
+// Module 12651 (CONTROL_RESOLUTION)
+const obj = { 1: null };
+obj[1] = { streamQualityMarketingResolution: "1440p" };
+const tmp2 = require("getUnitId")({ name: "2026-04-server-boost-copy-1440p", kind: "user", defaultConfig: { streamQualityMarketingResolution: "1080p" }, variations: obj });
+let c0 = tmp2;
 const result = require("set").fileFinishedImporting("modules/premium/powerups/experiments/ServerBoostStreamQualityMarketingExperiment.tsx");
 
 export default tmp2;

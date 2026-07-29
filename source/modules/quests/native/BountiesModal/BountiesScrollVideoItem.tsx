@@ -1,18 +1,18 @@
-// Module ID: 14022
-// Function ID: 107153
+// Module ID: 14044
+// Function ID: 14045
 // Name: BountiesScrollVideoItemInner
-// Dependencies: [5, 57, 31, 27, 8697, 5965, 5011, 33, 14023, 566, 10857, 14033, 10861, 14034, 14036, 14037, 14039, 10946, 5994, 5016, 14047, 2]
+// Dependencies: [5, 32, 19, 17, 8721, 5984, 5033, 21, 14045, 589, 10881, 14055, 10885, 14056, 14058, 14059, 14061, 10970, 6013, 5038, 14069, 2]
 // Exports: BountiesScrollVideoItem
 
-// Module 14022 (BountiesScrollVideoItemInner)
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+// Module 14044 (BountiesScrollVideoItemInner)
+import set from "set";
 import _slicedToArray from "_slicedToArray";
-import result from "result";
-import { View } from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_8 from "_createForOfIteratorHelperLoose";
+import closure_5 from "set";
+import { View } from "AdContentImpressionTrackerBaseNative";
+import redeemError from "redeemError";
+import closure_8 from "set";
 import { QuestsExperimentLocations } from "QuestsExperimentLocations";
-import { jsx } from "jsxProd";
+import { jsx } from "set";
 
 const require = arg1;
 function BountiesScrollVideoItemInner(bounty) {
@@ -44,15 +44,21 @@ function BountiesScrollVideoItemInner(bounty) {
   let scrollAffordance;
   let softDownloadCapsEnabled;
   let stage1Enabled;
-  let tmp21;
+  let tmp19;
+  let tmp20;
   let tmp22;
-  let tmp4;
-  let tmp5;
+  let tmp23;
+  let tmp7;
+  let tmp8;
   bounty = bounty.bounty;
+  let isActive = bounty;
   const sourceQuestContent = bounty.sourceQuestContent;
+  let ref = sourceQuestContent;
   const width = bounty.width;
+  let dependencyMap = width;
   const height = bounty.height;
-  let isActive = bounty.isActive;
+  let callback = height;
+  isActive = bounty.isActive;
   const isScrollingInBoundsSharedValue = bounty.isScrollingInBoundsSharedValue;
   let flag = bounty.isScrollIndicatorOverlayEnabled;
   ({ index, isRecapPageRevealed, isRecapPageOnTop } = bounty);
@@ -82,24 +88,25 @@ function BountiesScrollVideoItemInner(bounty) {
   let handleVideoPaused;
   let handleVideoResumed;
   let handleReplay;
-  let items = [width, height];
-  const memo = isScrollingInBoundsSharedValue.useMemo(() => ({ width, height }), items);
-  let obj = bounty(width[9]);
+  let obj = isScrollingInBoundsSharedValue;
+  const items = [width, height];
+  const memo = isScrollingInBoundsSharedValue.useMemo(() => ({ width: closure_2, height: set }), items);
+  let obj1 = isActive(589);
   const items1 = [c8];
-  stateFromStores = obj.useStateFromStores(items1, () => _undefined.isBountyCompleted(bounty.id));
-  [tmp4, tmp5] = isActive(isScrollingInBoundsSharedValue.useState(flag2), 2);
-  const tmp6 = isActive(isScrollingInBoundsSharedValue.useState(flag2), 2);
-  if (tmp6[0] !== flag2) {
-    tmp6[1](flag2);
+  stateFromStores = obj1.useStateFromStores(items1, () => _undefined.isBountyCompleted(isActive.id));
+  [tmp7, tmp8] = isActive(isScrollingInBoundsSharedValue.useState(flag2), 2);
+  const tmp9 = isActive(isScrollingInBoundsSharedValue.useState(flag2), 2);
+  if (tmp9[0] !== flag2) {
+    tmp9[1](flag2);
     if (flag2) {
-      tmp5(true);
+      tmp8(true);
     }
   }
-  let obj1 = bounty(width[10]);
-  const bountiesExperience = obj1.useBountiesExperience(QuestsExperimentLocations.VIDEO_MODAL_MOBILE);
+  let tmp2Result = tmp2(10881);
+  const bountiesExperience = tmp2Result.useBountiesExperience(QuestsExperimentLocations.VIDEO_MODAL_MOBILE);
   ({ loopingEnabled, ownedByVerticalScrollExperiment, orbAmount } = bountiesExperience);
   ({ stage1Enabled, rewardTimerSeconds } = bountiesExperience);
-  const BountyVideoEndMode = bounty(width[11]).BountyVideoEndMode;
+  const BountyVideoEndMode = tmp2(14055).BountyVideoEndMode;
   if (loopingEnabled) {
     let LOOP = BountyVideoEndMode.LOOP;
   } else {
@@ -110,215 +117,303 @@ function BountiesScrollVideoItemInner(bounty) {
       let result = 1000 * bounty.rewardTimerSeconds;
     }
     c8 = result;
-    const ref = isScrollingInBoundsSharedValue.useRef(null);
-    obj = { isActive, playerRef: ref };
-    const tmp16 = isActive(isScrollingInBoundsSharedValue.useState(isActive), 2);
-    let currentBalance = tmp16[1];
-    [tmp21, tmp22] = isActive(isScrollingInBoundsSharedValue.useState(() => {
+    ref = obj.useRef(null);
+    dependencyMap = undefined;
+    callback = undefined;
+    dependencyMap = obj.useRef(true);
+    callback = obj.useRef(null);
+    const items2 = [isActive, ref];
+    callback = obj.useCallback((current) => {
+      set.current = current;
+    }, []);
+    const effect = obj.useEffect(() => {
+      if (ref.current) {
+        tmp.current = false;
+      } else {
+        let tmp2 = isActive;
+        if (isActive) {
+          tmp2 = ref2.current === isActive(ref[8]).PlayerState.PAUSED;
+        }
+        if (tmp2) {
+          const current = ref.current;
+          if (current != null) {
+            current.play();
+          }
+        }
+      }
+    }, items2);
+    let tmp5Result = tmp5(obj.useState(isActive), 2);
+    [tmp19, tmp20] = tmp5Result;
+    tmp5Result = tmp5(obj.useState(() => {
       let currentBalance = null;
       if (isActive) {
         currentBalance = orbAmount.getCurrentBalance();
       }
       return currentBalance;
     }), 2);
-    QuestsExperimentLocations = tmp22;
-    const tmp20 = isActive(isScrollingInBoundsSharedValue.useState(() => {
-      let currentBalance = null;
+    [tmp22, tmp23] = tmp5Result;
+    QuestsExperimentLocations = tmp23;
+    if (tmp19 !== isActive) {
+      tmp20(isActive);
       if (isActive) {
-        currentBalance = orbAmount.getCurrentBalance();
-      }
-      return currentBalance;
-    }), 2);
-    if (tmp16[0] !== isActive) {
-      currentBalance = currentBalance(isActive);
-      if (isActive) {
-        currentBalance = orbAmount.getCurrentBalance();
-        tmp22(currentBalance);
-        if (currentBalance !== tmp21) {
-          currentBalance = tmp26((arg0) => arg0 + 1);
+        let currentBalance = orbAmount.getCurrentBalance();
+        tmp23(currentBalance);
+        if (currentBalance !== tmp22) {
+          tmp25((arg0) => arg0 + 1);
         }
       }
     }
-    // CreateGeneratorClosureLongIndex (0x67)
-    const items2 = [bounty.id, isActive, orbAmount, sourceQuestContent];
-    const callback = isScrollingInBoundsSharedValue.useCallback(height(currentBalance), items2);
-    let obj3 = bounty(width[14]);
-    obj = { bountyId: bounty.id, endMode: LOOP };
-    const bountyVideoProgressPersistence = obj3.useBountyVideoProgressPersistence(obj);
+    const items3 = [bounty.id, isActive, orbAmount, sourceQuestContent];
+    const callback1 = obj.useCallback(callback(function*() {
+      if (c5 === 2) {
+        c5 = 3;
+        HermesBuiltin.throwTypeError();
+      } else if (tmp6 === 3) {
+        if (arg0 === 1) {
+          throw arg1;
+        } else if (arg0 === 2) {
+          let obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
+        } else {
+          return { value: "HermesInternal", done: null };
+        }
+      } else {
+        try {
+          c5 = 2;
+          if (0 === c4) {
+            if (arg0 === 1) {
+              c5 = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              c5 = 3;
+              obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            } else {
+              let closure_1 = tmp3;
+              let c0 = tmp7;
+              c0 = false;
+              let c3 = 1;
+              c4 = 2;
+              c5 = 1;
+              let obj1 = { value: null, done: false };
+              obj1[0] = outer1_0(outer1_2[12]).claimBountyReward(outer1_0.id, outer1_1);
+              return obj1;
+            }
+          } else {
+            if (1 === tmp7) {
+              c3 = 0;
+              closure_1 = closure_2;
+              obj1 = outer1_0(outer1_2[13]);
+              const result = obj1.openBountyRewardClaimErrorToast(closure_1);
+            } else if (arg0 === 1) {
+              c5 = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              c3 = 0;
+              c5 = 3;
+              obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            } else {
+              c0 = true;
+              c3 = 0;
+            }
+            let tmp18 = c0;
+            if (c0) {
+              tmp18 = c4;
+            }
+            if (tmp18) {
+              outer1_9((arg0) => {
+                let sum = null;
+                if (null != arg0) {
+                  sum = arg0 + redeemError;
+                }
+                return sum;
+              });
+            }
+            c5 = 3;
+            return { value: "HermesInternal", done: null };
+          }
+        } catch (tmp27) {
+          closure_2 = tmp27;
+          if (tmp4 === c3) {
+            c5 = tmp2;
+            throw tmp27;
+          } else {
+            c4 = tmp;
+          }
+        }
+      }
+    }), items3);
+    tmp2Result = tmp2(14058);
+    obj = { bountyId: null, endMode: null };
+    obj[0] = bounty.id;
+    obj[1] = LOOP;
+    const bountyVideoProgressPersistence = tmp2Result.useBountyVideoProgressPersistence(obj);
     ({ initialProgress, handleProgress } = bountyVideoProgressPersistence);
     flushProgress = bountyVideoProgressPersistence.flushProgress;
-    const items3 = [flushProgress];
-    let effect = isScrollingInBoundsSharedValue.useEffect(() => () => outer1_11(), items3);
-    const tmp25 = isActive(isScrollingInBoundsSharedValue.useState(0), 2);
-    obj1 = { bountyId: bounty.id, sourceQuestContent, rewardDurationMs: result };
-    ({ timestampSec: obj7.initialPlaybackTimeSec, maxTimestampSec: obj7.initialMaxVideoProgressSec, duration: obj7.initialVideoDurationSec } = initialProgress);
-    obj1.wasPreloaded = false;
+    const items4 = [flushProgress];
+    const effect1 = obj.useEffect(() => () => callback(), items4);
+    const tmp5Result1 = tmp5(obj.useState(0), 2);
+    obj = { bountyId: null, sourceQuestContent: null, rewardDurationMs: null, initialPlaybackTimeSec: null, initialMaxVideoProgressSec: null, initialVideoDurationSec: null, wasPreloaded: false, startupPath: null, verticalScrollingPosition: null, isActive: null };
+    obj[0] = bounty.id;
+    obj[1] = sourceQuestContent;
+    obj[2] = result;
+    ({ timestampSec: obj7[3], maxTimestampSec: obj7[4], duration: obj7[5] } = initialProgress);
     let str = "carousel";
     if (ownedByVerticalScrollExperiment) {
       str = "active_only";
     }
-    obj1.startupPath = str;
-    obj1.verticalScrollingPosition = index;
-    obj1.isActive = isActive;
-    const bountiesModalVideoAnalytics = bounty(width[15]).useBountiesModalVideoAnalytics(obj1);
+    obj[7] = str;
+    obj[8] = index;
+    obj[9] = isActive;
+    const bountiesModalVideoAnalytics = tmp2(14059).useBountiesModalVideoAnalytics(obj);
     handleVideoProgressAnalytics = bountiesModalVideoAnalytics.handleVideoProgressAnalytics;
     onPlaybackTimeChange = undefined;
     ({ handleVideoEndAnalytics, handleVideoLoopedAnalytics, handleVideoPausedAnalytics, handleVideoResumedAnalytics, handleVideoErrorAnalytics, handleLoadStartAnalytics, handleVideoTracksAnalytics, handleReadyForDisplayAnalytics, handleBufferAnalytics } = bountiesModalVideoAnalytics);
-    if (null != scrollAffordance) {
+    if (scrollAffordance != null) {
       onPlaybackTimeChange = scrollAffordance.onPlaybackTimeChange;
     }
     onPaused = undefined;
-    if (null != scrollAffordance) {
+    if (scrollAffordance != null) {
       onPaused = scrollAffordance.onPaused;
     }
     onResumed = undefined;
-    if (null != scrollAffordance) {
+    if (scrollAffordance != null) {
       onResumed = scrollAffordance.onResumed;
     }
     onEndCardVisible = undefined;
-    if (null != scrollAffordance) {
+    if (scrollAffordance != null) {
       onEndCardVisible = scrollAffordance.onEndCardVisible;
     }
-    const items4 = [handleVideoProgressAnalytics, handleProgress, stateFromStores, onPlaybackTimeChange, result];
-    const callback1 = isScrollingInBoundsSharedValue.useCallback((arg0, arg1, arg2) => {
+    const items5 = [handleVideoProgressAnalytics, handleProgress, stateFromStores, onPlaybackTimeChange, result];
+    const callback2 = obj.useCallback((arg0, arg1, arg2) => {
       handleVideoProgressAnalytics(arg0, arg1, arg2);
       handleProgress(arg0, arg1, arg2);
-      if (null != onPlaybackTimeChange) {
-        let tmp4 = stateFromStores;
+      if (onPlaybackTimeChange != null) {
+        let tmp5 = stateFromStores;
         if (!stateFromStores) {
-          tmp4 = 1000 * arg0 >= c8;
+          tmp5 = 1000 * arg0 >= c8;
         }
-        onPlaybackTimeChange(arg2, arg1, tmp4, arg0, stateFromStores);
-        const tmp3 = onPlaybackTimeChange;
+        tmp3(arg2, arg1, tmp5, arg0, stateFromStores);
       }
-    }, items4);
-    const obj6 = bounty(width[15]);
-    const obj2 = { endMode: LOOP, rewardDurationMs: result, isCompleted: stateFromStores, onRewardEarned: callback, onVideoProgress: callback1, onVideoEnd: handleVideoEndAnalytics, onVideoLooped: handleVideoLoopedAnalytics, onVideoPaused: handleVideoPausedAnalytics, onVideoResumed: handleVideoResumedAnalytics, playerRef: ref };
-    ({ timestampSec: obj9.initialProgressSec, maxTimestampSec: obj9.initialMaxVideoProgressSec } = initialProgress);
+    }, items5);
+    const tmp2Result1 = tmp2(14059);
+    obj1 = { endMode: null, rewardDurationMs: null, isCompleted: null, onRewardEarned: null, onVideoProgress: null, onVideoEnd: null, onVideoLooped: null, onVideoPaused: null, onVideoResumed: null, playerRef: null, initialProgressSec: null, initialMaxVideoProgressSec: null, initialVideoDurationSec: null };
+    obj1[0] = LOOP;
+    obj1[1] = result;
+    obj1[2] = stateFromStores;
+    obj1[3] = callback1;
+    obj1[4] = callback2;
+    obj1[5] = handleVideoEndAnalytics;
+    obj1[6] = handleVideoLoopedAnalytics;
+    obj1[7] = handleVideoPausedAnalytics;
+    obj1[8] = handleVideoResumedAnalytics;
+    obj1[9] = ref;
+    ({ timestampSec: obj9[10], maxTimestampSec: obj9[11] } = initialProgress);
     let duration = null;
     if (initialProgress.duration > 0) {
       duration = initialProgress.duration;
     }
-    obj2.initialVideoDurationSec = duration;
-    const bountiesModalTiming = bounty(width[11]).useBountiesModalTiming(obj2);
+    obj1[12] = duration;
+    const bountiesModalTiming = tmp2(14055).useBountiesModalTiming(obj1);
     isEndCardVisible = bountiesModalTiming.isEndCardVisible;
     handleVideoPaused = bountiesModalTiming.handleVideoPaused;
     handleVideoResumed = bountiesModalTiming.handleVideoResumed;
     handleReplay = bountiesModalTiming.handleReplay;
-    const items5 = [handleVideoPaused, isEndCardVisible, onPaused];
+    const items6 = [handleVideoPaused, isEndCardVisible, onPaused];
     ({ isCtaVisible, handleVideoEnd, handleVideoProgress, rewardRemainingSeconds, rewardTotalSeconds, normalizedProgress } = bountiesModalTiming);
-    const items6 = [handleVideoResumed, onResumed];
-    const callback2 = isScrollingInBoundsSharedValue.useCallback((arg0) => {
+    const items7 = [handleVideoResumed, onResumed];
+    const callback3 = obj.useCallback((arg0) => {
       handleVideoPaused(arg0);
-      let tmp2 = isEndCardVisible;
       if (!isEndCardVisible) {
-        tmp2 = null == onPaused;
-      }
-      if (!tmp2) {
-        onPaused();
-      }
-    }, items5);
-    const items7 = [isActive, isEndCardVisible, onEndCardVisible];
-    const callback3 = isScrollingInBoundsSharedValue.useCallback((arg0) => {
-      handleVideoResumed(arg0);
-      if (null != onResumed) {
-        onResumed();
+        if (onPaused != null) {
+          onPaused();
+        }
       }
     }, items6);
-    const effect1 = isScrollingInBoundsSharedValue.useEffect(() => {
+    const items8 = [isActive, isEndCardVisible, onEndCardVisible];
+    const callback4 = obj.useCallback((arg0) => {
+      handleVideoResumed(arg0);
+      if (onResumed != null) {
+        onResumed();
+      }
+    }, items7);
+    const effect2 = obj.useEffect(() => {
       let tmp = isEndCardVisible;
       if (isEndCardVisible) {
         tmp = isActive;
       }
       if (tmp) {
-        if (null != onEndCardVisible) {
-          onEndCardVisible();
+        if (onEndCardVisible != null) {
+          tmp2();
         }
       }
-    }, items7);
-    obj3 = { style: memo };
-    const obj4 = { bounty, sourceQuestContent, isCompleted: stateFromStores, isCtaVisible, isEndCardVisible, isScrollIndicatorEnabled: flag };
-    let tmp59 = !isEndCardVisible;
-    if (tmp59) {
-      tmp59 = !isRecapPageOnTop;
+    }, items8);
+    const obj2 = { style: null, children: null };
+    obj2[0] = memo;
+    const obj3 = { bounty: null, sourceQuestContent: null, isCompleted: null, isCtaVisible: null, isEndCardVisible: null, isScrollIndicatorEnabled: null, isProgressBarVisible: null, orbsBalance: null, handleVideoEnd: null, handleVideoProgress: null, handleVideoPaused: null, handleVideoResumed: null, handleVideoError: null, onLoadStart: null, onBuffer: null, onFirstFrame: null, onVideoTracks: null, rewardRemainingSeconds: null, rewardTotalSeconds: null, normalizedProgress: null, repeat: null, initialProgress: null, isActive: null, isRecapPageRevealed: null, isScrollingInBoundsSharedValue: null, playerRef: null, onPlayerStateChange: null, balanceWidgetPillResetKey: null, shouldLoadHls: null, width: null, height: null, peekScale: null, softDownloadCapsEnabled: null, renderEndCard: null };
+    obj3[0] = bounty;
+    obj3[1] = sourceQuestContent;
+    obj3[2] = stateFromStores;
+    obj3[3] = isCtaVisible;
+    obj3[4] = isEndCardVisible;
+    obj3[5] = flag;
+    let tmp48 = !isEndCardVisible;
+    if (!isEndCardVisible) {
+      tmp48 = !isRecapPageOnTop;
     }
-    obj4.isProgressBarVisible = tmp59;
-    obj4.orbsBalance = tmp21;
-    obj4.handleVideoEnd = handleVideoEnd;
-    obj4.handleVideoProgress = handleVideoProgress;
-    obj4.handleVideoPaused = callback2;
-    obj4.handleVideoResumed = callback3;
-    obj4.handleVideoError = handleVideoErrorAnalytics;
-    obj4.onLoadStart = handleLoadStartAnalytics;
-    obj4.onBuffer = handleBufferAnalytics;
-    obj4.onFirstFrame = handleReadyForDisplayAnalytics;
-    obj4.onVideoTracks = handleVideoTracksAnalytics;
-    obj4.rewardRemainingSeconds = rewardRemainingSeconds;
-    obj4.rewardTotalSeconds = rewardTotalSeconds;
-    obj4.normalizedProgress = normalizedProgress;
-    obj4.repeat = loopingEnabled;
-    obj4.initialProgress = initialProgress;
-    obj4.isActive = isActive;
-    obj4.isRecapPageRevealed = isRecapPageRevealed;
-    obj4.isScrollingInBoundsSharedValue = isScrollingInBoundsSharedValue;
-    obj4.playerRef = ref;
-    obj4.onPlayerStateChange = (function useResumeOnActive(isActive) {
-      isActive = isActive.isActive;
-      const playerRef = isActive.playerRef;
-      let closure_2 = isScrollingInBoundsSharedValue.useRef(true);
-      let _createForOfIteratorHelperLoose = isScrollingInBoundsSharedValue.useRef(null);
-      const items = [isActive, playerRef];
-      const handlePlayerStateChange = isScrollingInBoundsSharedValue.useCallback((current) => {
-        _createForOfIteratorHelperLoose.current = current;
-      }, []);
-      const effect = isScrollingInBoundsSharedValue.useEffect(() => {
-        if (ref.current) {
-          ref.current = false;
-        } else {
-          let tmp = isActive;
-          if (isActive) {
-            tmp = ref2.current === bounty(width[8]).PlayerState.PAUSED;
-          }
-          if (tmp) {
-            const current = playerRef.current;
-            if (null != current) {
-              current.play();
-            }
-          }
-        }
-      }, items);
-      return { handlePlayerStateChange };
-    })(obj).handlePlayerStateChange;
-    obj4.balanceWidgetPillResetKey = tmp25[0];
-    obj4.shouldLoadHls = tmp4;
-    obj4.width = width;
-    obj4.height = height;
-    obj4.peekScale = peekScale;
-    obj4.softDownloadCapsEnabled = softDownloadCapsEnabled;
-    obj4.renderEndCard = function renderEndCard() {
-      const obj = {
-        adContentId: bounty.id,
-        adCreativeType: bounty(width[18]).AdCreativeType.BOUNTY,
-        questContent: bounty(width[19]).QuestContent.VIDEO_MODAL_END_CARD,
-        sourceQuestContent,
-        overrideVisibility: isEndCardVisible,
-        children() {
-          return handleProgress(sourceQuestContent(width[20]), { bounty: outer1_0, visible: outer1_17, onReplay: outer1_20, isActive: outer1_4, isScrollingInBoundsSharedValue: outer1_5, sourceQuestContent: outer1_1 });
-        }
+    obj3[6] = tmp48;
+    obj3[7] = tmp22;
+    obj3[8] = handleVideoEnd;
+    obj3[9] = handleVideoProgress;
+    obj3[10] = callback3;
+    obj3[11] = callback4;
+    obj3[12] = handleVideoErrorAnalytics;
+    obj3[13] = handleLoadStartAnalytics;
+    obj3[14] = handleBufferAnalytics;
+    obj3[15] = handleReadyForDisplayAnalytics;
+    obj3[16] = handleVideoTracksAnalytics;
+    obj3[17] = rewardRemainingSeconds;
+    obj3[18] = rewardTotalSeconds;
+    obj3[19] = normalizedProgress;
+    obj3[20] = loopingEnabled;
+    obj3[21] = initialProgress;
+    obj3[22] = isActive;
+    obj3[23] = isRecapPageRevealed;
+    obj3[24] = isScrollingInBoundsSharedValue;
+    obj3[25] = ref;
+    obj3[26] = callback;
+    obj3[27] = tmp5Result1[0];
+    obj3[28] = tmp7;
+    obj3[29] = width;
+    obj3[30] = height;
+    obj3[31] = peekScale;
+    obj3[32] = softDownloadCapsEnabled;
+    obj3[33] = function renderEndCard() {
+      const obj = { adContentId: isActive.id, adCreativeType: null, questContent: null, sourceQuestContent: null, overrideVisibility: null, children: null };
+      obj[1] = isActive(ref[18]).AdCreativeType.BOUNTY;
+      obj[2] = isActive(ref[19]).QuestContent.VIDEO_MODAL_END_CARD;
+      obj[3] = ref;
+      obj[4] = isEndCardVisible;
+      obj[5] = function children() {
+        return outer1_10(outer1_1(outer1_2[20]), { bounty: closure_0, visible: closure_17, onReplay: closure_20, isActive: _slicedToArray, isScrollingInBoundsSharedValue: closure_5, sourceQuestContent: closure_1 });
       };
-      return handleProgress(bounty(width[17]).QuestContentImpressionTrackerNative, obj);
+      return handleProgress(isActive(ref[17]).QuestContentImpressionTrackerNative, obj);
     };
-    obj3.children = handleProgress(bounty(width[16]).BountyVideo, obj4);
-    return handleProgress(stateFromStores, obj3);
+    obj2[1] = handleProgress(tmp2(14061).BountyVideo, obj3);
+    return handleProgress(stateFromStores, obj2);
   }
   result = 1000 * rewardTimerSeconds;
 }
-let result = require("result").fileFinishedImporting("modules/quests/native/BountiesModal/BountiesScrollVideoItem.tsx");
+let result = require("noop").fileFinishedImporting("modules/quests/native/BountiesModal/BountiesScrollVideoItem.tsx");
 
 export const BountiesScrollVideoItem = function BountiesScrollVideoItem(bounty) {
   let BountiesScrollVideoItemInner;
   let closure_12;
-  let _createForOfIteratorHelperLoose;
+  let set;
   let _slicedToArray;
   let closure_8;
   let dependencyMap;
@@ -327,7 +422,7 @@ export const BountiesScrollVideoItem = function BountiesScrollVideoItem(bounty) 
   let softDownloadCapsEnabled;
   bounty = bounty.bounty;
   const sourceQuestContent = bounty.sourceQuestContent;
-  ({ width: dependencyMap, height: _createForOfIteratorHelperLoose, index: _slicedToArray, isActive } = bounty);
+  ({ width: dependencyMap, height: set, index: _slicedToArray, isActive } = bounty);
   if (isActive === undefined) {
     isActive = false;
   }
@@ -351,15 +446,13 @@ export const BountiesScrollVideoItem = function BountiesScrollVideoItem(bounty) 
   if (softDownloadCapsEnabled === undefined) {
     softDownloadCapsEnabled = false;
   }
-  const obj = {
-    adContentId: bounty.id,
-    adCreativeType: bounty(5994).AdCreativeType.BOUNTY,
-    questContent: bounty(5016).QuestContent.VIDEO_MODAL_MOBILE,
-    sourceQuestContent,
-    overrideVisibility: isActive,
-    children() {
-      return flag3(outer1_11, { bounty, sourceQuestContent, width: closure_2, height: _createForOfIteratorHelperLoose, index: _slicedToArray, isActive, isRecapPageRevealed: flag, isRecapPageOnTop: flag2, isScrollingInBoundsSharedValue: closure_8, isScrollIndicatorOverlayEnabled, shouldLoadHls: flag3, scrollAffordance: closure_11, peekScale: closure_12, softDownloadCapsEnabled });
-    }
+  const obj = { adContentId: bounty.id, adCreativeType: null, questContent: null, sourceQuestContent: null, overrideVisibility: null, children: null };
+  obj[1] = bounty(6013).AdCreativeType.BOUNTY;
+  obj[2] = bounty(5038).QuestContent.VIDEO_MODAL_MOBILE;
+  obj[3] = sourceQuestContent;
+  obj[4] = isActive;
+  obj[5] = function children() {
+    return flag3(outer1_11, { bounty, sourceQuestContent, width: closure_2, height: set, index: _slicedToArray, isActive, isRecapPageRevealed: flag, isRecapPageOnTop: flag2, isScrollingInBoundsSharedValue: closure_8, isScrollIndicatorOverlayEnabled, shouldLoadHls: flag3, scrollAffordance: closure_11, peekScale: closure_12, softDownloadCapsEnabled });
   };
-  return flag3(bounty(10946).BillableAdPlacementImpressionTrackerNative, obj);
+  return flag3(bounty(10970).BillableAdPlacementImpressionTrackerNative, obj);
 };

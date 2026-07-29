@@ -1,111 +1,70 @@
-// Module ID: 6591
-// Function ID: 58434
-// Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 1850, 653, 566, 686, 2]
+// Module ID: 6612
+// Function ID: 6613
+// Name: handleFormClose
+// Dependencies: [1874, 676, 589, 709, 2]
 
-// Module 6591 (_isNativeReflectConstruct)
-import ME from "ME";
-import initialize from "initialize";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 6612 (handleFormClose)
+import mergeGuildAvatar from "mergeGuildAvatar";
 import { FormStates } from "ME";
+import { Store } from "initialize";
 
-function _isNativeReflectConstruct() {
-  let ME = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return ME;
-  }
-  const result = _isNativeReflectConstruct();
-}
-function handleFormInit() {
-  const currentUser = authStore.getCurrentUser();
-  if (null == currentUser) {
-    handleFormClose();
-  } else {
-    const OPEN = FormStates.OPEN;
-    let closure_8 = {};
-    let obj = {};
-    ({ id: obj2.userId, username: obj2.username, discriminator: obj2.discriminator, email: obj2.email, avatar: obj2.avatar } = currentUser);
-    obj.password = "";
-    obj.newPassword = null;
-    obj.claimed = currentUser.isClaimed();
-    obj = {};
-    const merged = Object.assign(obj);
-  }
-}
 function handleFormClose() {
   const CLOSED = FormStates.CLOSED;
-  let c9 = null;
-  let closure_8 = {};
-}
-function handleFormSubmitComplete() {
-  const OPEN = FormStates.OPEN;
-  let closure_8 = {};
+  let c4 = null;
+  let closure_3 = {};
 }
 let CLOSED = FormStates.CLOSED;
-let closure_8 = {};
-let c9 = null;
-let tmp2 = ((Store) => {
-  class UserSettingsAccountStore {
-    constructor() {
-      self = this;
-      tmp = UserSettingsAccountStore(this, UserSettingsAccountStore);
-      obj = outer1_3(UserSettingsAccountStore);
-      tmp2 = outer1_2;
-      if (outer1_10()) {
-        tmp6 = globalThis;
-        _Reflect = Reflect;
-        tmp7 = outer1_3;
-        tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, outer1_3(self).constructor);
-      } else {
-        tmp3 = arguments;
-        tmp4 = arguments;
-        constructResult = obj(...arguments);
-      }
-      return tmp2(self, constructResult);
-    }
-  }
-  callback2(UserSettingsAccountStore, Store);
-  let obj = {
-    key: "initialize",
-    value() {
-      this.waitFor(outer1_5);
-    }
-  };
-  const items = [obj, , , ];
-  obj = {
-    key: "getErrors",
-    value() {
-      return outer1_8;
-    }
-  };
-  items[1] = obj;
-  obj = {
-    key: "getSubmitting",
-    value() {
-      return outer1_7 === outer1_6.SUBMITTING;
-    }
-  };
-  items[2] = obj;
-  items[3] = {
-    key: "getSettings",
-    value() {
-      return outer1_9;
-    }
-  };
-  return callback(UserSettingsAccountStore, items);
-})(require("initialize").Store);
-tmp2.displayName = "UserSettingsAccountStore";
-tmp2 = new tmp2(require("dispatcher"), {
+let closure_3 = {};
+let c4 = null;
+class UserSettingsAccountStore extends Store {
+}
+const prototype = UserSettingsAccountStore.prototype;
+prototype["initialize"] = function initialize() {
+  this.waitFor(mergeGuildAvatar);
+};
+prototype["getErrors"] = function getErrors() {
+  return closure_3;
+};
+prototype["getSubmitting"] = function getSubmitting() {
+  return CLOSED === FormStates.SUBMITTING;
+};
+prototype["getSettings"] = function getSettings() {
+  return c4;
+};
+UserSettingsAccountStore.displayName = "UserSettingsAccountStore";
+const userSettingsAccountStore = new UserSettingsAccountStore(require("dispatcher"), {
   USER_SETTINGS_MODAL_OPEN: function handleFormOpen() {
-    handleFormInit();
+    const currentUser = authStore.getCurrentUser();
+    if (null == currentUser) {
+      let OPEN = FormStates.CLOSED;
+      let obj = null;
+      let closure_3 = {};
+    } else {
+      OPEN = FormStates.OPEN;
+      closure_3 = {};
+      obj = { userId: null, username: null, discriminator: null, email: null, avatar: null, password: "", newPassword: null, claimed: null };
+      ({ id: obj2[0], username: obj2[1], discriminator: obj2[2], email: obj2[3], avatar: obj2[4] } = currentUser);
+      obj[7] = currentUser.isClaimed();
+      obj = {};
+      const merged = Object.assign(obj);
+    }
   },
-  USER_SETTINGS_MODAL_INIT: handleFormInit,
+  USER_SETTINGS_MODAL_INIT: function handleFormInit() {
+    const currentUser = authStore.getCurrentUser();
+    if (null == currentUser) {
+      let OPEN = FormStates.CLOSED;
+      let obj = null;
+      let closure_3 = {};
+    } else {
+      OPEN = FormStates.OPEN;
+      closure_3 = {};
+      obj = { userId: null, username: null, discriminator: null, email: null, avatar: null, password: "", newPassword: null, claimed: null };
+      ({ id: obj2[0], username: obj2[1], discriminator: obj2[2], email: obj2[3], avatar: obj2[4] } = currentUser);
+      obj[7] = currentUser.isClaimed();
+      obj = {};
+      const merged = Object.assign(obj);
+    }
+  },
   USER_SETTINGS_MODAL_CLOSE: handleFormClose,
   LOGOUT: handleFormClose,
   USER_SETTINGS_MODAL_SUBMIT: function handleFormSubmit() {
@@ -115,9 +74,9 @@ tmp2 = new tmp2(require("dispatcher"), {
     if (OPEN !== FormStates.SUBMITTING) {
       return false;
     } else {
-      OPEN = FormStates.OPEN;
+      OPEN = tmp.OPEN;
       errors = errors.errors;
-      if (null == errors) {
+      if (errors == null) {
         errors = {};
       }
     }
@@ -130,21 +89,23 @@ tmp2 = new tmp2(require("dispatcher"), {
     const merged = Object.assign(obj);
     const merged1 = Object.assign(settings.settings);
   },
-  USER_SETTINGS_MODAL_SUBMIT_COMPLETE: handleFormSubmitComplete,
+  USER_SETTINGS_MODAL_SUBMIT_COMPLETE: function handleFormSubmitComplete() {
+    const OPEN = FormStates.OPEN;
+    let closure_3 = {};
+  },
   USER_SETTINGS_MODAL_RESET: function handleFormReset() {
     const currentUser = authStore.getCurrentUser();
-    handleFormSubmitComplete();
+    const OPEN = FormStates.OPEN;
+    let closure_3 = {};
     if (null != currentUser) {
-      let obj = {};
-      ({ id: obj2.userId, username: obj2.username, discriminator: obj2.discriminator, email: obj2.email, avatar: obj2.avatar } = currentUser);
-      obj.password = "";
-      obj.newPassword = null;
-      obj.claimed = currentUser.isClaimed();
+      let obj = { userId: null, username: null, discriminator: null, email: null, avatar: null, password: "", newPassword: null, claimed: null };
+      ({ id: obj2[0], username: obj2[1], discriminator: obj2[2], email: obj2[3], avatar: obj2[4] } = currentUser);
+      obj[7] = currentUser.isClaimed();
       obj = {};
       const merged = Object.assign(obj);
     }
   }
 });
-let result = require("_possibleConstructorReturn").fileFinishedImporting("stores/UserSettingsAccountStore.tsx");
+const result = require("initialize").fileFinishedImporting("stores/UserSettingsAccountStore.tsx");
 
-export default tmp2;
+export default userSettingsAccountStore;

@@ -1,9 +1,9 @@
-// Module ID: 1210
-// Function ID: 13912
+// Module ID: 1234
+// Function ID: 1235
 // Name: set
-// Dependencies: [1211, 2]
+// Dependencies: [1235, 2]
 
-// Module 1210 (set)
+// Module 1234 (set)
 import set from "set";
 
 const items = [, ];

@@ -1,8 +1,13 @@
 // Module ID: 242
-// Function ID: 3269
+// Function ID: 243
 // Name: SegmentFetcher
-// Dependencies: [55]
+// Dependencies: [243]
 
 // Module 242 (SegmentFetcher)
+for (const key10016 in require("SegmentFetcher")) {
+  let tmp2 = key10016;
+  arg5[key10016] = require("SegmentFetcher")[key10016];
+  continue;
+}
 
-export default require("requireModule").getEnforcing("SegmentFetcher");
+export { default } from "SegmentFetcher";

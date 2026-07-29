@@ -1,24 +1,25 @@
-// Module ID: 11387
-// Function ID: 88299
+// Module ID: 11411
+// Function ID: 11412
 // Name: ChatInputNativeComponent
-// Dependencies: [57, 31, 27, 3977, 33, 4165, 689, 1212, 4101, 4011, 4009, 477, 11135, 11141, 11143, 2]
+// Dependencies: [32, 19, 17, 4001, 21, 4189, 712, 1236, 4125, 4035, 4033, 500, 11159, 11165, 11167, 2]
 
-// Module 11387 (ChatInputNativeComponent)
+// Module 11411 (ChatInputNativeComponent)
 import _slicedToArray from "_slicedToArray";
-import importAllResult from "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import importAllResult from "noop";
+import isSyncedModeThemesEnabled from "isSyncedModeThemesEnabled";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 import set from "set";
 import set from "get ActivityIndicator";
 
 const require = arg1;
-let obj = { style: { flex: 1 } };
-obj = { color: require("_createForOfIteratorHelperLoose").colors.TEXT_DEFAULT };
-obj.textColor = obj;
-_createForOfIteratorHelperLoose = { color: require("_createForOfIteratorHelperLoose").colors.TEXT_MUTED };
-obj.placeholderColor = _createForOfIteratorHelperLoose;
-let closure_7 = _createForOfIteratorHelperLoose.createStyles(obj);
+let c4 = importAllResult;
+let obj = { style: { flex: 1 }, textColor: null, placeholderColor: null };
+obj = { color: require("Themes").colors.TEXT_DEFAULT };
+obj[1] = obj;
+createCacheKey = { color: require("Themes").colors.TEXT_MUTED };
+obj[2] = createCacheKey;
+let closure_7 = createCacheKey.createStyles(obj);
 const forwardRefResult = importAllResult.forwardRef((markAsSpoilerTitle, ref) => {
   let accessibilityLabel;
   let customKeyboard;
@@ -40,42 +41,48 @@ const forwardRefResult = importAllResult.forwardRef((markAsSpoilerTitle, ref) =>
   markAsSpoilerTitle = markAsSpoilerTitle.markAsSpoilerTitle;
   ({ accessibilityLabel, customKeyboard, placeholder, editable } = markAsSpoilerTitle);
   if (markAsSpoilerTitle === undefined) {
-    const intl = _require(1212).intl;
-    markAsSpoilerTitle = intl.string(_require(1212).t["gsI+xC"]);
+    const intl = _require(1236).intl;
+    markAsSpoilerTitle = intl.string(_require(1236).t["gsI+xC"]);
   }
   _require = undefined;
   ({ setNoExtractUI, shouldShowCursor, onBeginFocus, onEndBlur, onChangeContentSize, onMaxHeightChanged, onSelectionOrTextChange, onTextFlushed, onPasteImage, onPasteCommand, onTapAction, onRequestSend, verticalInset } = markAsSpoilerTitle);
   const tmp3 = callback2();
-  let obj = _require(4101);
+  let obj = _require(4125);
   const theme = obj.useTheme();
-  const isThemeDarkResult = _require(4011).isThemeDark(theme);
-  const obj2 = _require(4011);
-  const unsafe_rawColors = importDefault(689).unsafe_rawColors;
-  let num2 = 0.6;
-  if (null != gradientPreset.gradientPreset) {
-    num2 = 0.8;
-  }
-  const obj3 = _require(4009);
-  const tmp6 = isThemeDarkResult ? unsafe_rawColors.WHITE : unsafe_rawColors.PRIMARY_500;
-  const hexWithOpacityResult = _require(4009).hexWithOpacity(isThemeDarkResult ? unsafe_rawColors.WHITE : unsafe_rawColors.PRIMARY_500, num2);
-  let tmp8;
-  if (!obj4.isAndroid()) {
-    tmp8 = accessibilityLabel;
-  }
-  obj4 = _require(477);
-  let tmp9;
-  if (!obj5.isAndroid()) {
-    tmp9 = customKeyboard;
-  }
-  obj5 = _require(477);
-  let num3 = 2;
+  const isThemeDarkResult = _require(4035).isThemeDark(theme);
+  const obj2 = _require(4035);
+  const unsafe_rawColors = importDefault(712).unsafe_rawColors;
   if (isThemeDarkResult) {
-    num3 = 1;
+    let PRIMARY_500 = unsafe_rawColors.WHITE;
+    let tmp9 = tmp8;
+  } else {
+    PRIMARY_500 = unsafe_rawColors.PRIMARY_500;
+    tmp9 = tmp8;
   }
-  const obj6 = _require(477);
-  const tmp10 = importDefault(11135)(onMaxHeightChanged);
-  _require = _require(11141).useShouldUseFabricChatInput();
-  obj = { accessibilityLabel: tmp8, children: tmp9, editable, keyboardAppearance: num3, keyboardType: "default", markAsSpoilerTitle, maxHeight: tmp10, onBeginFocus, onEndBlur, onChangeContentSize, onSelectionOrTextChange, onTextFlushed, onPasteImage, onPasteCommand, onTapAction, onRequestSend, placeholder, placeholderColor: tmp3.placeholderColor.color, ref, selectionColor: hexWithOpacityResult, setNoExtractUI, shouldShowCursor, style: tmp3.style, textColor: tmp3.textColor.color, verticalInset };
+  let num = 0.6;
+  if (null != gradientPreset.gradientPreset) {
+    num = 0.8;
+  }
+  const obj3 = _require(4033);
+  let tmp4Result = tmp4(500);
+  let tmp11;
+  if (!tmp4Result.isAndroid()) {
+    tmp11 = accessibilityLabel;
+  }
+  tmp4Result = tmp4(500);
+  let tmp12;
+  if (!tmp4Result.isAndroid()) {
+    tmp12 = customKeyboard;
+  }
+  const hexWithOpacityResult = _require(4033).hexWithOpacity(PRIMARY_500, num);
+  let num2 = 2;
+  if (isThemeDarkResult) {
+    num2 = 1;
+  }
+  const tmp4Result1 = _require(500);
+  const tmp13 = tmp9(11159)(onMaxHeightChanged);
+  _require = _require(11165).useShouldUseFabricChatInput();
+  obj = { accessibilityLabel: tmp11, children: tmp12, editable, keyboardAppearance: num2, keyboardType: str, markAsSpoilerTitle, maxHeight: tmp13, onBeginFocus, onEndBlur, onChangeContentSize, onSelectionOrTextChange, onTextFlushed, onPasteImage, onPasteCommand, onTapAction, onRequestSend, placeholder, placeholderColor: tmp3.placeholderColor.color, ref, selectionColor: hexWithOpacityResult, setNoExtractUI, shouldShowCursor, style: tmp3.style, textColor: tmp3.textColor.color, verticalInset };
   return jsx(callback(importAllResult.useState(() => {
     if (callback) {
       let _default = callback(outer1_2[14]).default;
@@ -83,7 +90,7 @@ const forwardRefResult = importAllResult.forwardRef((markAsSpoilerTitle, ref) =>
       _default = outer1_8;
     }
     return _default;
-  }), 1)[0], { accessibilityLabel: tmp8, children: tmp9, editable, keyboardAppearance: num3, keyboardType: "default", markAsSpoilerTitle, maxHeight: tmp10, onBeginFocus, onEndBlur, onChangeContentSize, onSelectionOrTextChange, onTextFlushed, onPasteImage, onPasteCommand, onTapAction, onRequestSend, placeholder, placeholderColor: tmp3.placeholderColor.color, ref, selectionColor: hexWithOpacityResult, setNoExtractUI, shouldShowCursor, style: tmp3.style, textColor: tmp3.textColor.color, verticalInset });
+  }), 1)[0], { accessibilityLabel: tmp11, children: tmp12, editable, keyboardAppearance: num2, keyboardType: str, markAsSpoilerTitle, maxHeight: tmp13, onBeginFocus, onEndBlur, onChangeContentSize, onSelectionOrTextChange, onTextFlushed, onPasteImage, onPasteCommand, onTapAction, onRequestSend, placeholder, placeholderColor: tmp3.placeholderColor.color, ref, selectionColor: hexWithOpacityResult, setNoExtractUI, shouldShowCursor, style: tmp3.style, textColor: tmp3.textColor.color, verticalInset });
 });
 if (set.isAndroid()) {
   let _default = require("__INTERNAL_VIEW_CONFIG").default;

@@ -1,40 +1,58 @@
-// Module ID: 10635
-// Function ID: 82717
-// Name: useWakeLock
-// Dependencies: [31, 27, 477, 10636, 2]
-// Exports: default
+// Module ID: 10659
+// Function ID: 10660
+// Name: WakeLock
+// Dependencies: [19, 17, 500, 10660, 2]
+// Exports: default, useWakeLock
 
-// Module 10635 (useWakeLock)
-import result from "result";
+// Module 10659 (WakeLock)
+import noop from "noop";
 import { NativeModules } from "get ActivityIndicator";
 
 const require = arg1;
-function useWakeLock(VoiceMessageOverlay) {
+const result = require("set").fileFinishedImporting("modules/device/native/WakeLock.tsx");
+
+export default function WakeLock(wakeLockKey) {
+  wakeLockKey = wakeLockKey.wakeLockKey;
+  const items = [wakeLockKey];
+  const effect = React.useEffect(() => {
+    if (obj.isAndroid()) {
+      const lock = outer1_1(outer1_2[3]).requestLock(wakeLockKey);
+      let obj2 = outer1_1(outer1_2[3]);
+    } else {
+      let ScreenWakeLockManager = outer1_4.ScreenWakeLockManager;
+      const lock1 = ScreenWakeLockManager.requestLock(wakeLockKey);
+    }
+    return () => {
+      if (obj.isAndroid()) {
+        outer1_1(outer1_2[3]).releaseLock(closure_0);
+        const obj2 = outer1_1(outer1_2[3]);
+      } else {
+        const ScreenWakeLockManager = outer1_4.ScreenWakeLockManager;
+        ScreenWakeLockManager.releaseLock(closure_0);
+      }
+    };
+  }, items);
+  return null;
+};
+export const useWakeLock = function useWakeLock(VoiceMessageOverlay) {
   let closure_0 = VoiceMessageOverlay;
   const items = [VoiceMessageOverlay];
   const effect = React.useEffect(() => {
     if (obj.isAndroid()) {
-      const lock = outer1_1(outer1_2[3]).requestLock(VoiceMessageOverlay);
+      const lock = outer1_1(outer1_2[3]).requestLock(wakeLockKey);
       let obj2 = outer1_1(outer1_2[3]);
     } else {
       let ScreenWakeLockManager = outer1_4.ScreenWakeLockManager;
-      const lock1 = ScreenWakeLockManager.requestLock(VoiceMessageOverlay);
+      const lock1 = ScreenWakeLockManager.requestLock(wakeLockKey);
     }
     return () => {
       if (obj.isAndroid()) {
-        outer2_1(outer2_2[3]).releaseLock(outer1_0);
-        const obj2 = outer2_1(outer2_2[3]);
+        outer1_1(outer1_2[3]).releaseLock(closure_0);
+        const obj2 = outer1_1(outer1_2[3]);
       } else {
-        const ScreenWakeLockManager = outer2_4.ScreenWakeLockManager;
-        ScreenWakeLockManager.releaseLock(outer1_0);
+        const ScreenWakeLockManager = outer1_4.ScreenWakeLockManager;
+        ScreenWakeLockManager.releaseLock(closure_0);
       }
     };
   }, items);
-}
-const result = require("set").fileFinishedImporting("modules/device/native/WakeLock.tsx");
-
-export default function WakeLock(wakeLockKey) {
-  useWakeLock(wakeLockKey.wakeLockKey);
-  return null;
 };
-export { useWakeLock };

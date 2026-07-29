@@ -1,17 +1,14 @@
-// Module ID: 5643
-// Function ID: 47823
-// Name: items
-// Dependencies: [4077, 2]
+// Module ID: 5661
+// Function ID: 5662
+// Name: experiment
+// Dependencies: [4101, 2]
 // Exports: getGuildSpaceExperimentEnabled, useGuildSpaceExperimentEnabled
 
-// Module 5643 (items)
+// Module 5661 (experiment)
 import createExperiment from "createExperiment";
 
-let obj = { kind: "guild", id: "2026-06_guild_spaces", label: "Guild Space", defaultConfig: { enabled: false } };
-obj = { id: 1, label: "Enable Guild Space", config: { enabled: true } };
-const items = [obj];
-obj.treatments = items;
-const experiment = createExperiment.createExperiment(obj);
+const items = [{ id: 1, label: "Enable Guild Space", config: { enabled: true } }];
+const experiment = createExperiment.createExperiment({ kind: "guild", id: "2026-06_guild_spaces", label: "Guild Space", defaultConfig: { enabled: false }, treatments: items });
 const result = require("set").fileFinishedImporting("modules/guild_space/GuildSpaceExperiment.tsx");
 
 export const GuildSpaceExperiment = experiment;

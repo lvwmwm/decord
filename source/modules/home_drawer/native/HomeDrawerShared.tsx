@@ -1,19 +1,19 @@
-// Module ID: 14938
-// Function ID: 113829
+// Module ID: 14964
+// Function ID: 14965
 // Name: HomeDrawerSharedItem
-// Dependencies: [31, 27, 33, 4165, 2]
+// Dependencies: [19, 17, 21, 4189, 2]
 // Exports: HomeDrawerSharedItem
 
-// Module 14938 (HomeDrawerSharedItem)
-import "result";
+// Module 14964 (HomeDrawerSharedItem)
+import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
 let closure_1;
-let closure_2;
-({ jsxs: closure_1, jsx: closure_2 } = jsxProd);
-let closure_3 = _createForOfIteratorHelperLoose.createStyles({ container: { flex: 1, flexDirection: "row", alignItems: "center", justifyContent: "space-between", gap: 12 }, titleContainer: { flex: 1, flexDirection: "column", justifyContent: "center", gap: 2 }, rightContainer: { overflow: "hidden" } });
+let obj1;
+({ jsxs: closure_1, jsx: obj1 } = jsxProd);
+let closure_3 = createCacheKey.createStyles({ container: { flex: 1, flexDirection: "row", alignItems: "center", justifyContent: "space-between", gap: 12 }, titleContainer: { flex: 1, flexDirection: "column", justifyContent: "center", gap: 2 }, rightContainer: { overflow: "hidden" } });
 const result = require("jsxProd").fileFinishedImporting("modules/home_drawer/native/HomeDrawerShared.tsx");
 
 export const HomeDrawerSharedItem = function HomeDrawerSharedItem(right) {
@@ -22,16 +22,18 @@ export const HomeDrawerSharedItem = function HomeDrawerSharedItem(right) {
   right = right.right;
   ({ title, subtitle } = right);
   const tmp = callback3();
-  let obj = { style: tmp.container };
+  let obj = { style: tmp.container, children: null };
   obj = { style: tmp.titleContainer, children: items };
   items = [title, subtitle];
   const items1 = [callback(View, obj), ];
   let tmp4 = null;
   if (null != right) {
-    obj = { style: tmp.rightContainer, children: right };
-    tmp4 = callback2(View, obj);
+    obj = { style: null, children: null };
+    obj[0] = tmp.rightContainer;
+    obj[1] = right;
+    tmp4 = callback2(tmp3, obj);
   }
   items1[1] = tmp4;
-  obj.children = items1;
+  obj[1] = items1;
   return callback(View, obj);
 };

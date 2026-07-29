@@ -1,14 +1,14 @@
-// Module ID: 16654
-// Function ID: 129717
+// Module ID: 16690
+// Function ID: 16691
 // Name: AVErrorVideoStreamReceiverReadyTimeoutNoStreamDefinition
-// Dependencies: [1194, 10488, 8828, 2]
+// Dependencies: [1218, 10512, 8852, 2]
 
-// Module 16654 (AVErrorVideoStreamReceiverReadyTimeoutNoStreamDefinition)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_3 from "_isNativeReflectConstruct";
+// Module 16690 (AVErrorVideoStreamReceiverReadyTimeoutNoStreamDefinition)
+import fetchFingerprint from "fetchFingerprint";
+import makeTimeoutKey from "makeTimeoutKey";
 
 const require = arg1;
-const result = require("validateUniqueErrorCodes").fileFinishedImporting("modules/errors/av_errors/definitions/AVErrorVideoStreamReceiverReadyTimeoutNoStream.tsx");
+const result = require("mapped").fileFinishedImporting("modules/errors/av_errors/definitions/AVErrorVideoStreamReceiverReadyTimeoutNoStream.tsx");
 
 export const AVErrorVideoStreamReceiverReadyTimeoutNoStreamDefinition = {
   getActiveErrors() {
@@ -17,7 +17,7 @@ export const AVErrorVideoStreamReceiverReadyTimeoutNoStreamDefinition = {
       let userId;
       let videoStreamId;
       ({ userId, videoStreamId } = arg0);
-      let tmp = outer1_2.getId() !== userId;
+      let tmp = id.getId() !== userId;
       if (tmp) {
         tmp = null == videoStreamId;
       }
@@ -25,7 +25,7 @@ export const AVErrorVideoStreamReceiverReadyTimeoutNoStreamDefinition = {
     });
     return found.map((arg0) => {
       const merged = Object.assign(arg0);
-      return { type: outer1_0(outer1_1[2]).AVError.VIDEO_STREAM_RECEIVER_READY_TIMEOUT_NO_STREAM };
+      return { type: callback(table[2]).AVError.VIDEO_STREAM_RECEIVER_READY_TIMEOUT_NO_STREAM };
     });
   },
   makeErrorContextKey(mediaContext) {

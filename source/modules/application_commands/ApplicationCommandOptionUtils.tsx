@@ -1,92 +1,69 @@
-// Module ID: 7995
-// Function ID: 63458
-// Name: _createForOfIteratorHelperLoose
-// Dependencies: [4601, 44, 7996, 4153, 1882, 2]
-// Exports: getInitialValuesFromInteractionOptions, getOptionalBoolean, getOptionalChannelId, getOptionalRoleId, getOptionalString, getOptionalUserId, normalizeNumericString
+// Module ID: 8020
+// Function ID: 8021
+// Name: getString
+// Dependencies: [4623, 38, 8021, 4177, 1906, 2]
+// Exports: filterEmpty, getBoolean, getChannelId, getInitialValuesFromInteractionOptions, getOptionalBoolean, getOptionalChannelId, getOptionalRoleId, getOptionalString, getOptionalUserId, getRoleId, getUserId, normalizeNumericString
 
-// Module 7995 (_createForOfIteratorHelperLoose)
+// Module 8020 (getString)
 import { TRUE_OPTION_NAME } from "TRUE_OPTION_NAME";
 
-function _createForOfIteratorHelperLoose(iterable) {
-  let closure_0 = iterable;
-  iterable = "undefined" !== typeof Symbol;
-  if (iterable) {
-    const _Symbol = Symbol;
-    iterable = iterable[Symbol.iterator];
-  }
-  if (!iterable) {
-    iterable = iterable[Symbol.iterator];
-  }
-  if (iterable) {
-    const iter = iterable.call(iterable);
-    const next = iter.next;
-    return next.bind(iter);
-  } else {
-    const _Array = Array;
-    let tmp = iterable;
-    if (!Array.isArray(iterable)) {
-      let tmp2;
-      if (iterable) {
-        if ("string" === typeof iterable) {
-          tmp2 = _arrayLikeToArray(iterable, undefined);
-        } else {
-          const toString = {}.toString;
-          const substr = toString.call(iterable).slice(8, -1);
-          let name = substr;
-          if (tmp3) {
-            name = iterable.constructor.name;
+function getString(arg0, arg1) {
+  let str = "";
+  const iter = arg0[arg1][Symbol.iterator]();
+  const nextResult = iter.next();
+  for (; iter !== undefined; str = str + tmp2.text) {
+    tmp2 = nextResult;
+    let type = nextResult.type;
+    if ("text" !== type) {
+      if ("textMention" !== type) {
+        if ("userMention" === type) {
+          let tmp11 = str;
+          let tmp12 = nextResult;
+          let _HermesInternal4 = HermesInternal;
+          str = `${"<@" + tmp2.userId + ">"}`;
+        } else if ("channelMention" === type) {
+          let tmp9 = str;
+          let tmp10 = nextResult;
+          let _HermesInternal3 = HermesInternal;
+          str = `${"<@" + tmp2.userId + ">"}${"<#" + tmp2.channelId + ">"}`;
+        } else if ("roleMention" === type) {
+          let tmp7 = str;
+          let tmp8 = nextResult;
+          let _HermesInternal2 = HermesInternal;
+          str = `${"<@" + tmp2.userId + ">"}${"<#" + tmp2.channelId + ">"}${"<@&" + tmp2.roleId + ">"}`;
+        } else if ("emoji" === type) {
+          let tmp5 = str;
+          let tmp6 = nextResult;
+          str = `${"<@" + tmp2.userId + ">"}${"<#" + tmp2.channelId + ">"}${"<@&" + tmp2.roleId + ">"}${tmp2.surrogate}`;
+        } else if ("customEmoji" === type) {
+          let tmp15 = str;
+          let tmp16 = nextResult;
+          let str2 = "";
+          if (tmp2.animated) {
+            str2 = "a";
           }
-          if ("Map" !== name) {
-            if ("Set" !== name) {
-              if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(iterable, undefined);
-              } else {
-                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
-              }
-            }
-            tmp2 = arr;
-          }
-          const _Array2 = Array;
-          arr = Array.from(iterable);
-          const callResult = toString.call(iterable);
-          tmp3 = "Object" === substr && iterable.constructor;
+          let tmp3 = nextResult;
+          let str3 = tmp2.name;
+          let str4 = str3.replace(/:/g, "");
+          let _HermesInternal = HermesInternal;
+          let str5 = "<";
+          let tmp4 = str2;
+          let str6 = ":";
+          let str7 = ":";
+          let str8 = ">";
+          str = str + "<" + str2 + ":" + str4.split("~")[0] + ":" + tmp2.emojiId + ">";
         }
       }
-      tmp = tmp2;
-      if (!tmp2) {
-        const _TypeError = TypeError;
-        const typeError = new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
-        throw typeError;
-      }
+      continue;
     }
-    if (tmp) {
-      closure_0 = tmp;
-    }
-    let c1 = 0;
-    return () => {
-      if (closure_1 >= length.length) {
-        let obj = { done: true };
-      } else {
-        obj = { done: false };
-        closure_1 = tmp3 + 1;
-        obj.value = length[+closure_1];
-      }
-      return obj;
-    };
+    let tmp13 = str;
+    let tmp14 = nextResult;
   }
+  return str;
 }
-function _arrayLikeToArray(arg0, arg1) {
-  let length;
-  if (tmp) {
-    length = arg0.length;
-  }
-  const ArrayResult = Array(length);
-  for (let num = 0; num < length; num = num + 1) {
-    ArrayResult[num] = arg0[num];
-  }
-  return ArrayResult;
-}
-function filterEmpty(arr) {
+const result = require("numberParts").fileFinishedImporting("modules/application_commands/ApplicationCommandOptionUtils.tsx");
+
+export const filterEmpty = function filterEmpty(arr) {
   let closure_0 = arr;
   if (null == arr) {
     let items = [];
@@ -97,206 +74,314 @@ function filterEmpty(arr) {
         return tmp;
       } else {
         if (arg1 <= 0) {
-          let tmp3 = "" !== str.text.trim();
+          let tmp4 = "" !== str.text.trim();
           const str2 = str.text;
         }
         str = "";
-        tmp3 = "" !== str.text;
+        tmp4 = "" !== str.text;
       }
     });
   }
   return items;
-}
-function getBoolean(arg0, arg1) {
-  const arr = filterEmpty(arg0[arg1]);
-  importDefault(44)(1 === arr.length, "Contains multiple values");
-  const first = arr[0];
-  let type;
-  if (null != first) {
-    type = first.type;
-  }
-  importDefault(44)("text" === type, "First value is not text");
-  return arr[0].text === TRUE_OPTION_NAME;
-}
-function getChannelId(guildId, arg1) {
-  const arr = filterEmpty(guildId[arg1]);
-  importDefault(44)(1 === arr.length, "Contains multiple values");
-  const first = arr[0];
-  let type;
-  if (null != first) {
-    type = first.type;
-  }
-  importDefault(44)("channelMention" === type, "First value is not a channel mention");
-  return arr[0].channelId;
-}
-function getUserId(arg0, arg1) {
-  const arr = filterEmpty(arg0[arg1]);
-  importDefault(44)(1 === arr.length, "Contains multiple values");
-  const first = arr[0];
-  let type;
-  if (null != first) {
-    type = first.type;
-  }
-  importDefault(44)("userMention" === type, "First value is not a user mention");
-  return arr[0].userId;
-}
-function getRoleId(arg0, arg1) {
-  const arr = filterEmpty(arg0[arg1]);
-  importDefault(44)(1 === arr.length, "Contains multiple values");
-  const first = arr[0];
-  let type;
-  if (null != first) {
-    type = first.type;
-  }
-  importDefault(44)("roleMention" === type, "First value is not a role mention");
-  return arr[0].roleId;
-}
-function getString(arg0, arg1) {
-  const tmp = _createForOfIteratorHelperLoose(arg0[arg1]);
-  const iter = tmp();
-  let iter2 = iter;
-  let str = "";
-  let str2 = "";
-  if (!iter.done) {
-    while (true) {
-      let value = iter2.value;
-      let type = value.type;
-      if ("text" !== type) {
-        if ("textMention" !== type) {
-          if ("userMention" === type) {
-            let _HermesInternal4 = HermesInternal;
-            let text = `${"<@" + value.userId + ">"}`;
-          } else if ("channelMention" === type) {
-            let _HermesInternal3 = HermesInternal;
-            text = `${"<#" + value.channelId + ">"}`;
-          } else if ("roleMention" === type) {
-            let _HermesInternal2 = HermesInternal;
-            text = `${"<@&" + value.roleId + ">"}`;
-          } else if ("emoji" === type) {
-            text = `${value.surrogate}`;
-          } else {
-            text = str;
-            if ("customEmoji" === type) {
-              let str3 = "";
-              if (value.animated) {
-                str3 = "a";
-              }
-              let str4 = value.name;
-              let str5 = str4.replace(/:/g, "");
-              let _HermesInternal = HermesInternal;
-              let str6 = "<";
-              let tmp3 = str3;
-              let str7 = ":";
-              let str8 = ":";
-              let str9 = ">";
-              text = str + "<" + str3 + ":" + str5.split("~")[0] + ":" + value.emojiId + ">";
-            }
-          }
+};
+export const getBoolean = function getBoolean(arg0, arg1) {
+  const arr = arg0[arg1];
+  if (null == arr) {
+    let items = [];
+  } else {
+    items = arr.filter((type) => {
+      let str = type;
+      if ("text" !== type.type) {
+        return tmp;
+      } else {
+        if (arg1 <= 0) {
+          let tmp4 = "" !== str.text.trim();
+          const str2 = str.text;
         }
-        let iter3 = tmp();
-        str = text;
-        iter2 = iter3;
-        str2 = text;
-        if (iter3.done) {
-          break;
-        }
+        str = "";
+        tmp4 = "" !== str.text;
       }
-      text = str + value.text;
-    }
+    });
   }
-  return str2;
-}
-const result = require("numberParts").fileFinishedImporting("modules/application_commands/ApplicationCommandOptionUtils.tsx");
-
-export { filterEmpty };
-export { getBoolean };
+  importDefault(38)(1 === items.length, "Contains multiple values");
+  const first = items[0];
+  let type;
+  if (first != null) {
+    type = first.type;
+  }
+  importDefault(38)("text" === type, "First value is not text");
+  return items[0].text === TRUE_OPTION_NAME;
+};
 export const getOptionalBoolean = function getOptionalBoolean(arg0, arg1) {
   let tmp = null;
   if (null != arg0[arg1]) {
-    tmp = getBoolean(arg0, arg1);
+    const arr = arg0[arg1];
+    if (null == arr) {
+      let items = [];
+    } else {
+      items = arr.filter((type) => {
+        let str = type;
+        if ("text" !== type.type) {
+          return tmp;
+        } else {
+          if (arg1 <= 0) {
+            let tmp4 = "" !== str.text.trim();
+            const str2 = str.text;
+          }
+          str = "";
+          tmp4 = "" !== str.text;
+        }
+      });
+    }
+    importDefault(38)(1 === items.length, "Contains multiple values");
+    const first = items[0];
+    let type;
+    if (first != null) {
+      type = first.type;
+    }
+    importDefault(38)("text" === type, "First value is not text");
+    tmp = items[0].text === TRUE_OPTION_NAME;
+    const tmp5 = importDefault(38);
   }
   return tmp;
 };
-export { getChannelId };
-export const getOptionalChannelId = function getOptionalChannelId(guildId) {
-  let tmp = null;
-  if (null != guildId[arg1]) {
-    tmp = getChannelId(guildId, arg1);
+export const getChannelId = function getChannelId(arg0, arg1) {
+  const arr = arg0[arg1];
+  if (null == arr) {
+    let items = [];
+  } else {
+    items = arr.filter((type) => {
+      let str = type;
+      if ("text" !== type.type) {
+        return tmp;
+      } else {
+        if (arg1 <= 0) {
+          let tmp4 = "" !== str.text.trim();
+          const str2 = str.text;
+        }
+        str = "";
+        tmp4 = "" !== str.text;
+      }
+    });
   }
-  return tmp;
+  importDefault(38)(1 === items.length, "Contains multiple values");
+  const first = items[0];
+  let type;
+  if (first != null) {
+    type = first.type;
+  }
+  importDefault(38)("channelMention" === type, "First value is not a channel mention");
+  return items[0].channelId;
 };
-export { getUserId };
+export const getOptionalChannelId = function getOptionalChannelId(arg0, arg1) {
+  let channelId = null;
+  if (null != arg0[arg1]) {
+    const arr = arg0[arg1];
+    if (null == arr) {
+      let items = [];
+    } else {
+      items = arr.filter((type) => {
+        let str = type;
+        if ("text" !== type.type) {
+          return tmp;
+        } else {
+          if (arg1 <= 0) {
+            let tmp4 = "" !== str.text.trim();
+            const str2 = str.text;
+          }
+          str = "";
+          tmp4 = "" !== str.text;
+        }
+      });
+    }
+    importDefault(38)(1 === items.length, "Contains multiple values");
+    const first = items[0];
+    let type;
+    if (first != null) {
+      type = first.type;
+    }
+    importDefault(38)("channelMention" === type, "First value is not a channel mention");
+    channelId = items[0].channelId;
+    const tmp5 = importDefault(38);
+  }
+  return channelId;
+};
+export const getUserId = function getUserId(arg0, arg1) {
+  const arr = arg0[arg1];
+  if (null == arr) {
+    let items = [];
+  } else {
+    items = arr.filter((type) => {
+      let str = type;
+      if ("text" !== type.type) {
+        return tmp;
+      } else {
+        if (arg1 <= 0) {
+          let tmp4 = "" !== str.text.trim();
+          const str2 = str.text;
+        }
+        str = "";
+        tmp4 = "" !== str.text;
+      }
+    });
+  }
+  importDefault(38)(1 === items.length, "Contains multiple values");
+  const first = items[0];
+  let type;
+  if (first != null) {
+    type = first.type;
+  }
+  importDefault(38)("userMention" === type, "First value is not a user mention");
+  return items[0].userId;
+};
 export const getOptionalUserId = function getOptionalUserId(arg0, arg1) {
-  let tmp = null;
+  let userId = null;
   if (null != arg0[arg1]) {
-    tmp = getUserId(arg0, arg1);
+    const arr = arg0[arg1];
+    if (null == arr) {
+      let items = [];
+    } else {
+      items = arr.filter((type) => {
+        let str = type;
+        if ("text" !== type.type) {
+          return tmp;
+        } else {
+          if (arg1 <= 0) {
+            let tmp4 = "" !== str.text.trim();
+            const str2 = str.text;
+          }
+          str = "";
+          tmp4 = "" !== str.text;
+        }
+      });
+    }
+    importDefault(38)(1 === items.length, "Contains multiple values");
+    const first = items[0];
+    let type;
+    if (first != null) {
+      type = first.type;
+    }
+    importDefault(38)("userMention" === type, "First value is not a user mention");
+    userId = items[0].userId;
+    const tmp5 = importDefault(38);
   }
-  return tmp;
+  return userId;
 };
-export { getRoleId };
-export const getOptionalRoleId = function getOptionalRoleId(arg0, arg1) {
-  let tmp = null;
-  if (null != arg0[arg1]) {
-    tmp = getRoleId(arg0, arg1);
+export const getRoleId = function getRoleId(arg0, arg1) {
+  const arr = arg0[arg1];
+  if (null == arr) {
+    let items = [];
+  } else {
+    items = arr.filter((type) => {
+      let str = type;
+      if ("text" !== type.type) {
+        return tmp;
+      } else {
+        if (arg1 <= 0) {
+          let tmp4 = "" !== str.text.trim();
+          const str2 = str.text;
+        }
+        str = "";
+        tmp4 = "" !== str.text;
+      }
+    });
   }
-  return tmp;
+  importDefault(38)(1 === items.length, "Contains multiple values");
+  const first = items[0];
+  let type;
+  if (first != null) {
+    type = first.type;
+  }
+  importDefault(38)("roleMention" === type, "First value is not a role mention");
+  return items[0].roleId;
+};
+export const getOptionalRoleId = function getOptionalRoleId(arg0, arg1) {
+  let roleId = null;
+  if (null != arg0[arg1]) {
+    const arr = arg0[arg1];
+    if (null == arr) {
+      let items = [];
+    } else {
+      items = arr.filter((type) => {
+        let str = type;
+        if ("text" !== type.type) {
+          return tmp;
+        } else {
+          if (arg1 <= 0) {
+            let tmp4 = "" !== str.text.trim();
+            const str2 = str.text;
+          }
+          str = "";
+          tmp4 = "" !== str.text;
+        }
+      });
+    }
+    importDefault(38)(1 === items.length, "Contains multiple values");
+    const first = items[0];
+    let type;
+    if (first != null) {
+      type = first.type;
+    }
+    importDefault(38)("roleMention" === type, "First value is not a role mention");
+    roleId = items[0].roleId;
+    const tmp5 = importDefault(38);
+  }
+  return roleId;
 };
 export { getString };
-export const getOptionalString = function getOptionalString(optionValues, name) {
+export const getOptionalString = function getOptionalString(closure_1, name) {
   let tmp = null;
-  if (null != optionValues[name]) {
-    tmp = getString(optionValues, name);
+  if (null != closure_1[name]) {
+    tmp = getString(closure_1, name);
   }
   return tmp;
 };
-export const normalizeNumericString = function normalizeNumericString(locale, source) {
+export const normalizeNumericString = function normalizeNumericString(locale, trimmed) {
   let decimal;
   let group;
   if (locale !== closure_5) {
     closure_5 = locale;
-    en_US = require(7996) /* numberParts */.numberParts[locale];
-    if (null == en_US) {
-      en_US = require(7996) /* numberParts */.numberParts["en-US"];
+    en_US = require(8021) /* numberParts */.numberParts[locale];
+    if (en_US == null) {
+      en_US = tmp11(8021).numberParts["en-US"];
     }
     const _RegExp = RegExp;
     ({ group, decimal } = en_US);
-    const regExp = new RegExp(importDefault(4153).escape(group), "g");
+    const regExp = new RegExp(importDefault(4177).escape(group), "g");
     const _RegExp2 = RegExp;
-    const obj = importDefault(4153);
-    const regExp1 = new RegExp(importDefault(4153).escape(decimal), "g");
-    const obj2 = importDefault(4153);
+    const obj = importDefault(4177);
+    tmp11 = require;
+    const regExp1 = new RegExp(importDefault(4177).escape(decimal), "g");
+    const obj2 = importDefault(4177);
   }
-  return source.replace(regExp, "").replace(regExp1, ".");
+  return trimmed.replace(regExp, "").replace(regExp1, ".");
 };
 export const getInitialValuesFromInteractionOptions = function getInitialValuesFromInteractionOptions(command, interactionOptions) {
-  let done;
   let closure_0 = command;
   const obj = {};
-  function _loop(value) {
-    const command = value;
+  function _loop(iter) {
+    const command = iter;
     const options = command.options;
-    if (null != options) {
-      const found = options.find((name) => name.name === value.name);
+    if (options != null) {
+      const found = options.find((name) => name.name === iter.name);
     }
     let num = 0;
-    if (value.type !== command(outer1_2[4]).ApplicationCommandOptionType.ATTACHMENT) {
-      if (null == found) {
-        obj[value.name] = value;
-      } else {
-        num = 0;
+    if (iter.type !== command(outer1_2[4]).ApplicationCommandOptionType.ATTACHMENT) {
+      let autocomplete;
+      if (found != null) {
+        autocomplete = found.autocomplete;
+      }
+      num = 0;
+      if (!autocomplete) {
+        obj[iter.name] = iter;
       }
     }
     return num;
   }
-  const tmp = _createForOfIteratorHelperLoose(interactionOptions);
-  let iter = tmp();
-  if (!iter.done) {
-    do {
-      let _loopResult = _loop(iter.value);
-      let iter2 = tmp();
-      iter = iter2;
-      done = iter2.done;
-    } while (!done);
+  const iter = interactionOptions[Symbol.iterator]();
+  while (iter !== undefined) {
+    let _loopResult = _loop(iter.next());
+    continue;
   }
   return obj;
 };

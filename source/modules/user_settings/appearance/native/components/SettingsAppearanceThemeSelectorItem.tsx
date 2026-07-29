@@ -1,142 +1,142 @@
-// Module ID: 14268
-// Function ID: 109592
+// Module ID: 14290
+// Function ID: 14291
 // Name: GradientThemeBackground
-// Dependencies: [31, 27, 1278, 14267, 482, 33, 4165, 689, 4010, 3875, 4697, 1273, 14269, 624, 3869, 14270, 3979, 3883, 4695, 1212, 2]
+// Dependencies: [19, 17, 1302, 14289, 505, 21, 4189, 712, 4034, 3899, 4719, 1297, 14291, 647, 3893, 14292, 4003, 3907, 4717, 1236, 2]
 // Exports: default
 
-// Module 14268 (GradientThemeBackground)
-import "result";
-import { View } from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 14290 (GradientThemeBackground)
+import "getSystemLocale";
+import { View } from "useCheckboxA11yNative";
+import handleThemeChange from "handleThemeChange";
 import importDefaultResult from "THEME_ITEM_WIDTH";
 import { ThemeTypes } from "sum";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import importDefaultResult1 from "hslToRgb";
-import importDefaultResult2 from "hslToRgb";
+import createCacheKey from "createCacheKey";
+import createCacheKey from "createCacheKey";
 
 let closure_6;
-let closure_7;
+let error;
 const require = arg1;
 function GradientThemeBackground(arg0) {
   let isThemeLocked;
   let item;
   ({ item, isThemeLocked } = arg0);
-  let obj = require(3875) /* isThemeLight */;
+  let obj = require(3899) /* isThemeLight */;
   const isThemeDarkResult = obj.isThemeDark(item.theme);
-  const tmp2 = callback2(isThemeDarkResult);
-  obj = {};
-  const items = [tmp2.themeSelectorGradientBackground, ];
-  let tmp5 = isThemeLocked;
+  const tmp4 = callback2(isThemeDarkResult);
+  const items = [tmp4.themeSelectorGradientBackground, ];
+  obj = isThemeLocked;
   if (isThemeLocked) {
     obj = { opacity: 0.5 };
-    tmp5 = obj;
   }
-  items[1] = tmp5;
-  obj.style = items;
-  const obj1 = {};
-  const obj2 = { borderRadius: importDefault(689).radii.sm };
-  obj1.componentStyles = obj2;
-  obj1.gradientOverride = item;
-  obj1.mix = true;
-  obj1.mixColorOverride = isThemeDarkResult ? importDefaultResult1 : importDefaultResult2;
-  const items1 = [callback(importDefault(4697), obj1), ];
+  obj = { style: items, children: null };
+  items[1] = obj;
+  const obj1 = { componentStyles: null, gradientOverride: null, mix: true, mixColorOverride: null };
+  const obj2 = { borderRadius: null };
+  obj2[0] = importDefault(712).radii.sm;
+  obj1[0] = obj2;
+  obj1[1] = item;
+  obj1[3] = isThemeDarkResult ? closure_10 : closure_11;
+  const items1 = [closure_6(importDefault(4719), obj1), ];
   if (isThemeLocked) {
-    const obj3 = { source: importDefault(14269), style: tmp2.lock };
-    isThemeLocked = callback(require(1273) /* Button */.Icon, obj3);
+    const obj3 = { source: null, style: null };
+    obj3[0] = importDefault(14291);
+    obj3[1] = tmp4.lock;
+    isThemeLocked = tmp7(require(1297) /* Button */.Icon, obj3);
   }
   items1[1] = isThemeLocked;
-  obj.children = items1;
+  obj[1] = items1;
   return closure_7(View, obj);
 }
 function DefaultThemeBackground(item) {
   item = item.item;
-  require(624) /* defaultAreStatesEqual */;
-  [][0] = _isNativeReflectConstruct;
+  require(647) /* defaultAreStatesEqual */;
+  let obj = handleThemeChange;
+  [][0] = handleThemeChange;
   if ("system" === item.theme) {
-    let theme = _isNativeReflectConstruct.themePreferenceForSystemTheme(tmp2);
+    let theme = obj.themePreferenceForSystemTheme(tmp4);
   } else {
     theme = item.theme;
   }
-  let obj = require(3869) /* map */;
-  const token = obj.useToken(importDefault(689).colors.BACKGROUND_BASE_LOWER, theme);
-  let obj1 = require(3869) /* map */;
-  const token1 = obj1.useToken(importDefault(689).colors.BORDER_STRONG, theme);
-  let obj2 = require(3869) /* map */;
-  obj = {};
-  obj = { width: "100%", height: "100%", backgroundColor: token, borderColor: token1, borderWidth: 1 };
-  const token2 = obj2.useToken(importDefault(689).colors.ICON_STRONG, theme);
-  obj.borderRadius = importDefault(689).radii.sm;
-  obj.style = obj;
-  let tmp9 = null;
+  let tmpResult = tmp(3893);
+  const token = tmpResult.useToken(importDefault(712).colors.BACKGROUND_BASE_LOWER, theme);
+  tmpResult = tmp(3893);
+  const token1 = tmpResult.useToken(importDefault(712).colors.BORDER_STRONG, theme);
+  obj = { style: null, children: null };
+  obj = { width: "100%", height: "100%", backgroundColor: token, borderColor: token1, borderWidth: 1, borderRadius: null };
+  const token2 = require(3893) /* map */.useToken(importDefault(712).colors.ICON_STRONG, theme);
+  obj[5] = importDefault(712).radii.sm;
+  obj[0] = obj;
+  let tmp9Result = null;
   if ("system" === item.theme) {
-    obj1 = { style: { alignSelf: "center", justifyContent: "center", flex: 1 } };
-    obj2 = { fill: token2 };
-    obj1.children = callback(importDefault(14270), obj2);
-    tmp9 = callback(View, obj1);
+    const obj1 = { style: null, children: null };
+    obj1[0] = { alignSelf: "center", justifyContent: "center", flex: 1 };
+    const obj2 = { fill: null };
+    obj2[0] = token2;
+    obj1[1] = tmp9(importDefault(14292), obj2);
+    tmp9Result = tmp9(tmp10, obj1);
   }
-  obj.children = tmp9;
-  return callback(View, obj);
+  obj[1] = tmp9Result;
+  return closure_6(View, obj);
 }
 function CustomThemeBackground(arg0) {
   let isThemeLocked;
   let item;
   ({ item, isThemeLocked } = arg0);
-  let obj = require(3875) /* isThemeLight */;
+  let obj = require(3899) /* isThemeLight */;
   const isThemeDarkResult = obj.isThemeDark(item.theme);
-  const tmp2 = callback2(isThemeDarkResult);
-  obj = {};
-  const items = [tmp2.themeSelectorGradientBackground, ];
-  let tmp5 = isThemeLocked;
+  const tmp4 = callback2(isThemeDarkResult);
+  const items = [tmp4.themeSelectorGradientBackground, ];
+  obj = isThemeLocked;
   if (isThemeLocked) {
     obj = { opacity: 0.5 };
-    tmp5 = obj;
   }
-  items[1] = tmp5;
-  obj.style = items;
-  const obj1 = {};
-  const obj2 = { borderRadius: importDefault(689).radii.sm };
-  obj1.componentStyles = obj2;
-  obj1.mix = true;
-  obj1.mixColorOverride = isThemeDarkResult ? importDefaultResult1 : importDefaultResult2;
-  obj1.customTheme = item;
-  const items1 = [callback(require(4697) /* getThemeMixColor */.CustomThemedGradient, obj1), ];
+  obj = { style: items, children: null };
+  items[1] = obj;
+  const obj1 = { componentStyles: null, mix: true, mixColorOverride: null, customTheme: null };
+  const obj2 = { borderRadius: null };
+  obj2[0] = importDefault(712).radii.sm;
+  obj1[0] = obj2;
+  obj1[2] = isThemeDarkResult ? closure_10 : closure_11;
+  obj1[3] = item;
+  const items1 = [closure_6(require(4719) /* getMixedGradientColor */.CustomThemedGradient, obj1), ];
   if (isThemeLocked) {
-    const obj3 = { source: importDefault(14269), style: tmp2.lock };
-    isThemeLocked = callback(require(1273) /* Button */.Icon, obj3);
+    const obj3 = { source: null, style: null };
+    obj3[0] = importDefault(14291);
+    obj3[1] = tmp4.lock;
+    isThemeLocked = tmp7(tmp(1297).Icon, obj3);
   }
   items1[1] = isThemeLocked;
-  obj.children = items1;
+  obj[1] = items1;
   return closure_7(View, obj);
 }
-({ jsx: closure_6, jsxs: closure_7 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { color: require("_createForOfIteratorHelperLoose").unsafe_rawColors.TRANSPARENT };
-_createForOfIteratorHelperLoose.rippleColor = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.themeSelectorItemContainer = { width: importDefaultResult.THEME_ITEM_WIDTH, height: importDefaultResult.THEME_ITEM_HEIGHT };
-_createForOfIteratorHelperLoose.themeSelectorItem = { borderRadius: require("_createForOfIteratorHelperLoose").radii.sm, padding: importDefaultResult.THEME_ITEM_PADDING };
-let obj2 = { backgroundColor: require("_createForOfIteratorHelperLoose").unsafe_rawColors.RED_430, width: 12, height: 12, borderRadius: require("_createForOfIteratorHelperLoose").radii.sm, position: "absolute", top: 0, right: 0 };
-_createForOfIteratorHelperLoose.newRedCircle = obj2;
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-let closure_9 = _createForOfIteratorHelperLoose.createStyles((arg0) => {
-  let obj = { themeSelectorGradientBackground: { justifyContent: "center", width: "100%", height: "100%" } };
-  obj = { position: "absolute", alignSelf: "center", opacity: 0.6 };
-  const internal = importDefault(689).internal;
+({ jsx: closure_6, jsxs: error } = jsxProd);
+createCacheKey = { rippleColor: null, themeSelectorItemContainer: null, themeSelectorItem: null, newRedCircle: null };
+createCacheKey = { color: require("Themes").unsafe_rawColors.TRANSPARENT };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { width: importDefaultResult.THEME_ITEM_WIDTH, height: importDefaultResult.THEME_ITEM_HEIGHT };
+createCacheKey[2] = { borderRadius: require("Themes").radii.sm, padding: importDefaultResult.THEME_ITEM_PADDING };
+let obj1 = { borderRadius: require("Themes").radii.sm, padding: importDefaultResult.THEME_ITEM_PADDING };
+createCacheKey[3] = { backgroundColor: require("Themes").unsafe_rawColors.RED_430, width: 12, height: 12, borderRadius: require("Themes").radii.sm, position: "absolute", top: 0, right: 0 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let closure_9 = createCacheKey.createStyles((arg0) => {
+  const obj = { themeSelectorGradientBackground: { justifyContent: "center", width: "100%", height: "100%" }, lock: null };
+  const internal = importDefault(712).internal;
   const resolveSemanticColor = internal.resolveSemanticColor;
   if (arg0) {
-    let semanticColor = resolveSemanticColor(tmp3.DARKER, tmp(689).colors.INTERACTIVE_TEXT_DEFAULT);
+    let semanticColor = resolveSemanticColor(tmp3.DARKER, tmp(712).colors.INTERACTIVE_TEXT_DEFAULT);
   } else {
-    semanticColor = resolveSemanticColor(tmp3.LIGHT, tmp(689).colors.INTERACTIVE_TEXT_DEFAULT);
+    semanticColor = resolveSemanticColor(tmp3.LIGHT, tmp(712).colors.INTERACTIVE_TEXT_DEFAULT);
   }
-  obj.tintColor = semanticColor;
-  obj.lock = obj;
+  obj[1] = { position: "absolute", alignSelf: "center", opacity: 0.6, tintColor: semanticColor };
   return obj;
 });
-importDefaultResult1 = new importDefaultResult1(0, 0, 0, 0.2);
-importDefaultResult2 = new importDefaultResult2(255, 255, 255, 0.5);
-let obj1 = { borderRadius: require("_createForOfIteratorHelperLoose").radii.sm, padding: importDefaultResult.THEME_ITEM_PADDING };
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/user_settings/appearance/native/components/SettingsAppearanceThemeSelectorItem.tsx");
+let obj2 = { backgroundColor: require("Themes").unsafe_rawColors.RED_430, width: 12, height: 12, borderRadius: require("Themes").radii.sm, position: "absolute", top: 0, right: 0 };
+let c10 = new require("hslToRgb")(0, 0, 0, 0.2);
+const tmp5 = new require("hslToRgb")(0, 0, 0, 0.2);
+const unpackModuleId = new require("hslToRgb")(255, 255, 255, 0.5);
+const tmp6 = new require("hslToRgb")(255, 255, 255, 0.5);
+const result = require("handleThemeChange").fileFinishedImporting("modules/user_settings/appearance/native/components/SettingsAppearanceThemeSelectorItem.tsx");
 
 export default function ThemeSelectorItem(onPress) {
   let accessibilityRole;
@@ -146,42 +146,51 @@ export default function ThemeSelectorItem(onPress) {
   let isSelected;
   let themePreset;
   ({ themePreset, isPreview, isSelected, isNew } = onPress);
-  const tmp = _createForOfIteratorHelperLoose();
+  const tmp = createCacheKey();
   if (isPreview) {
-    isPreview = themePreset.type !== require(3979) /* ClientThemeType */.ClientThemeType.STANDARD_BACKGROUND_THEME;
+    isPreview = themePreset.type !== require(4003) /* ClientThemeType */.ClientThemeType.STANDARD_BACKGROUND_THEME;
   }
-  if (themePreset.type === require(3979) /* ClientThemeType */.ClientThemeType.STANDARD_BACKGROUND_THEME) {
-    let obj = { item: themePreset };
+  if (themePreset.type === require(4003) /* ClientThemeType */.ClientThemeType.STANDARD_BACKGROUND_THEME) {
+    let obj = { item: null };
+    obj[0] = themePreset;
     let tmp8 = callback(DefaultThemeBackground, obj);
-  } else if (themePreset.type === require(3979) /* ClientThemeType */.ClientThemeType.CUSTOM_BACKGROUND_GRADIENT) {
-    obj = { item: themePreset, isThemeLocked: isPreview };
+    let tmp9 = callback;
+  } else if (themePreset.type === tmp4(4003).ClientThemeType.CUSTOM_BACKGROUND_GRADIENT) {
+    obj = { item: null, isThemeLocked: null };
+    obj[0] = themePreset;
+    obj[1] = isPreview;
     tmp8 = callback(CustomThemeBackground, obj);
+    tmp9 = callback;
   } else {
-    obj = { isThemeLocked: isPreview, item: themePreset };
+    obj = { isThemeLocked: null, item: null };
+    obj[0] = isPreview;
+    obj[1] = themePreset;
     tmp8 = callback(GradientThemeBackground, obj);
+    tmp9 = callback;
   }
-  let obj3 = require(3883) /* useCheckboxA11yNative */;
-  const obj1 = { selected: isSelected, disabled: isPreview };
-  const radioA11yNative = obj3.useRadioA11yNative(obj1);
+  const radioA11yNative = require(3907) /* useCheckboxA11yNative */.useRadioA11yNative({ selected: isSelected, disabled: isPreview });
   ({ accessibilityRole, accessibilityState } = radioA11yNative);
-  const obj2 = { style: tmp.themeSelectorItemContainer, androidRippleConfig: tmp.rippleColor, onPress: onPress.onPress, accessibilityRole, accessibilityLabel: themePreset.getName(), accessibilityState };
+  const obj1 = { style: tmp.themeSelectorItemContainer, androidRippleConfig: tmp.rippleColor, onPress: onPress.onPress, accessibilityRole, accessibilityLabel: null, accessibilityState: null, accessibilityHint: null, children: null };
+  obj1[4] = themePreset.getName();
+  obj1[5] = accessibilityState;
   let stringResult;
   if (isPreview) {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    stringResult = intl.string(require(1212) /* getSystemLocale */.t.VqGKm0);
+    const intl = tmp4(1236).intl;
+    stringResult = intl.string(tmp4(1236).t.VqGKm0);
   }
-  obj2.accessibilityHint = stringResult;
-  obj3 = { style: tmp.themeSelectorItem };
+  obj1[6] = stringResult;
+  const obj2 = { style: tmp.themeSelectorItem, children: null };
   const items = [tmp8, ];
   if (isNew) {
     isNew = !isSelected;
   }
   if (isNew) {
-    const obj4 = { style: tmp.newRedCircle };
-    isNew = callback(View, obj4);
+    const obj3 = { style: null };
+    obj3[0] = tmp.newRedCircle;
+    isNew = tmp9(tmp17, obj3);
   }
   items[1] = isNew;
-  obj3.children = items;
-  obj2.children = closure_7(View, obj3);
-  return callback(require(4695) /* PressableBase */.PressableOpacity, obj2);
+  obj2[1] = items;
+  obj1[7] = closure_7(View, obj2);
+  return tmp9(require(4717) /* PressableBase */.PressableOpacity, obj1);
 };

@@ -1,29 +1,33 @@
-// Module ID: 16149
-// Function ID: 124840
-// Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 1348, 1355, 6046, 5112, 2]
+// Module ID: 16184
+// Function ID: 16185
+// Name: handleChannelPreload
+// Dependencies: [1372, 1379, 5134, 6064, 2]
 
-// Module 16149 (_isNativeReflectConstruct)
-import set from "set";
-import _shouldRequestFirstMessage from "_shouldRequestFirstMessage";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 16184 (handleChannelPreload)
+import ensureGuildLoaded from "ensureGuildLoaded";
 import { isStaticChannelRoute } from "set";
-import tmp2 from "AutomaticLifecycleManager";
+import "initialize";
 
 const require = arg1;
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
+class ForumManager extends tmp2 {
+  constructor() {
+    applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
+    applyArgumentsResult.actions = { CHANNEL_PRELOAD: applyArgumentsResult.handleChannelPreload };
+    return applyArgumentsResult;
   }
-  const result = _isNativeReflectConstruct();
 }
-tmp2 = new tmp2();
-let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/forums/ForumManager.tsx");
+ForumManager.prototype["handleChannelPreload"] = function handleChannelPreload(channelId) {
+  channelId = channelId.channelId;
+  if (!isStaticChannelRoute(channelId)) {
+    channel = channel.getChannel(channelId);
+    if (tmp3) {
+      require(6064) /* loadForumPostData */.preloadForumThreads(channel);
+      const obj2 = require(6064) /* loadForumPostData */;
+    }
+    tmp3 = null != channel && channel.isForumLikeChannel();
+  }
+};
+const forumManager = new ForumManager();
+const result = require("initialize").fileFinishedImporting("modules/forums/ForumManager.tsx");
 
-export default tmp2;
+export default forumManager;

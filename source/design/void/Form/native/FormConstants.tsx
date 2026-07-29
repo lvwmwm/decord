@@ -1,25 +1,25 @@
-// Module ID: 1277
-// Function ID: 14416
+// Module ID: 1301
+// Function ID: 1302
 // Name: semanticColor
-// Dependencies: [1278, 477, 689, 4145, 4011, 2]
+// Dependencies: [1302, 500, 712, 4169, 4035, 2]
 // Exports: getThemedRippleConfig
 
-// Module 1277 (semanticColor)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 1301 (semanticColor)
+import handleThemeChange from "handleThemeChange";
 import set from "set";
-import { internal } from "_createForOfIteratorHelperLoose";
-import { internal as internal2 } from "_createForOfIteratorHelperLoose";
-import getSystemVersion from "getSystemVersion";
-import set from "_createForOfIteratorHelperLoose";
+import { internal } from "Themes";
+import { internal as internal2 } from "Themes";
+import DCDDeviceManager from "DCDDeviceManager";
+import set from "Themes";
 
 const require = arg1;
 let num = 24;
 if (set.isAndroid()) {
   num = 32;
 }
-const semanticColor = internal.resolveSemanticColor(require("_createForOfIteratorHelperLoose").themes.DARK, require("_createForOfIteratorHelperLoose").colors.MOBILE_ANDROID_BUTTON_BACKGROUND_RIPPLE);
-const semanticColor1 = internal2.resolveSemanticColor(require("_createForOfIteratorHelperLoose").themes.LIGHT, require("_createForOfIteratorHelperLoose").colors.MOBILE_ANDROID_BUTTON_BACKGROUND_RIPPLE);
-getSystemVersion = getSystemVersion.getSystemVersionMajor();
+const semanticColor = internal.resolveSemanticColor(require("Themes").themes.DARK, require("Themes").colors.MOBILE_ANDROID_BUTTON_BACKGROUND_RIPPLE);
+const semanticColor1 = internal2.resolveSemanticColor(require("Themes").themes.LIGHT, require("Themes").colors.MOBILE_ANDROID_BUTTON_BACKGROUND_RIPPLE);
+DCDDeviceManager = DCDDeviceManager.getSystemVersionMajor();
 let frozen = Object.freeze({ foreground: true });
 let closure_6 = Object.freeze({});
 const map = new Map();
@@ -38,23 +38,29 @@ export const getThemedRippleConfig = function getThemedRippleConfig(arg0) {
   let radius;
   ({ radius, cornerRadius, color } = arg0);
   ({ foreground, borderless } = arg0);
-  let obj = require(477) /* set */;
+  let obj = require(500) /* set */;
   if (obj.isAndroid()) {
     if (null != color) {
-      const sum = "" + color.toString() + cornerRadius + radius + tmp3;
+      const sum = "" + color.toString() + cornerRadius + radius + tmp5;
       const value = map.get(sum);
       if (null != value) {
         return value;
       } else {
         const _Object = Object;
-        obj = { color, radius, borderless, cornerRadius, foreground: tmp3 };
+        obj = { color: null, radius: null, borderless: null, cornerRadius: null, foreground: null };
+        obj[0] = color;
+        obj[1] = radius;
+        obj[2] = borderless;
+        obj[3] = cornerRadius;
+        obj[4] = tmp5;
         const frozen = Object.freeze(obj);
-        const result = map.set(sum, frozen);
+        const result = obj3.set(sum, frozen);
         return frozen;
       }
+      obj3 = map;
     } else {
-      require(4011) /* AccessibilityAnnouncer */.isThemeLight(theme.theme) ? semanticColor1 : semanticColor;
-      const obj2 = require(4011) /* AccessibilityAnnouncer */;
+      require(4035) /* AccessibilityAnnouncer */.isThemeLight(theme.theme) ? semanticColor1 : semanticColor;
+      const tmpResult = require(4035) /* AccessibilityAnnouncer */;
     }
   } else {
     return closure_6;

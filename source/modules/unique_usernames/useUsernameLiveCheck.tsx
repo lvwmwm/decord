@@ -1,18 +1,17 @@
-// Module ID: 13771
-// Function ID: 105557
+// Module ID: 13792
+// Function ID: 13793
 // Name: useUsernameLiveCheck
-// Dependencies: [31, 13772, 624, 22, 13773, 13774, 2]
+// Dependencies: [19, 13793, 647, 12, 13794, 13795, 2]
 // Exports: useUsernameLiveCheck
 
-// Module 13771 (useUsernameLiveCheck)
-import result from "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 13792 (useUsernameLiveCheck)
+import noop from "noop";
+import isRateLimited from "isRateLimited";
 
 const require = arg1;
 let result = require("defaultAreStatesEqual").fileFinishedImporting("modules/unique_usernames/useUsernameLiveCheck.tsx");
 
 export const useUsernameLiveCheck = function useUsernameLiveCheck(arg0, flag, flag2) {
-  let flag3 = arg3;
   const _require = arg0;
   if (flag === undefined) {
     flag = true;
@@ -20,7 +19,8 @@ export const useUsernameLiveCheck = function useUsernameLiveCheck(arg0, flag, fl
   if (flag2 === undefined) {
     flag2 = false;
   }
-  if (flag3 === undefined) {
+  let flag3 = arg3;
+  if (arg3 === undefined) {
     flag3 = false;
   }
   let stateFromStores;
@@ -35,10 +35,10 @@ export const useUsernameLiveCheck = function useUsernameLiveCheck(arg0, flag, fl
   const items3 = [flag2, flag3];
   memo = flag3.useMemo(() => callback(flag2[3]).debounce((arg0) => {
     let str = "modal";
-    if (outer1_2) {
+    if (closure_2) {
       str = "registration";
     }
-    return flag(flag2[4]).attemptUsername(arg0, str, outer1_2, outer1_3);
+    return outer1_1(outer1_2[4]).attemptUsername(arg0, str, closure_2, noop);
   }, 800), items3);
   const items4 = [flag, stateFromStores1, stateFromStores, arg0, memo];
   const effect = flag3.useEffect(() => {
@@ -60,7 +60,7 @@ export const useUsernameLiveCheck = function useUsernameLiveCheck(arg0, flag, fl
   return flag3.useMemo(() => {
     let result;
     if (null != stateFromStores) {
-      result = callback(flag2[5]).formatUsernameLiveCheckValidation(stateFromStores);
+      result = callback(flag2[5]).formatUsernameLiveCheckValidation(tmp);
       const obj = callback(flag2[5]);
     }
     return result;

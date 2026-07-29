@@ -1,19 +1,19 @@
-// Module ID: 4979
-// Function ID: 42523
-// Dependencies: [4179, 1348, 4212, 653, 686, 1198, 4980, 9015, 2]
+// Module ID: 5001
+// Function ID: 5002
+// Dependencies: [4203, 1372, 4236, 676, 709, 1222, 5002, 9039, 2]
 
-// Module 4979
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_5 from "_isNativeReflectConstruct";
-import closure_6 from "_isNativeReflectConstruct";
+// Module 5001
+import set from "set";
+import ensureGuildLoaded from "ensureGuildLoaded";
+import _detectH265HardwareDecode from "_detectH265HardwareDecode";
 import ME from "ME";
 
 let PopoutWindowKeys;
-let closure_7;
-let closure_8;
+let error;
+let metroImportAll;
 const require = arg1;
-({ ME: closure_7, PopoutWindowKeys, Routes: closure_8 } = ME);
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("actions/SelectedChannelActionCreators.tsx");
+({ ME: error, PopoutWindowKeys, Routes: metroImportAll } = ME);
+const result = require("_detectH265HardwareDecode").fileFinishedImporting("actions/SelectedChannelActionCreators.tsx");
 
 export default {
   selectChannel(guildId) {
@@ -24,55 +24,46 @@ export default {
     let source;
     guildId = guildId.guildId;
     ({ channelId, messageId, jumpType, source, skipMessageFetch } = guildId);
-    let obj = importDefault(686);
-    obj = { type: "CHANNEL_SELECT" };
     let tmp = null;
     if (guildId !== closure_7) {
       tmp = guildId;
     }
-    obj.guildId = tmp;
-    obj.channelId = channelId;
-    obj.messageId = messageId;
-    obj.jumpType = jumpType;
-    obj.source = source;
-    obj.skipMessageFetch = skipMessageFetch;
-    obj.dispatch(obj);
+    importDefault(709).dispatch({ type: "CHANNEL_SELECT", guildId: tmp, channelId, messageId, jumpType, source, skipMessageFetch });
   },
   selectPrivateChannel(id) {
-    require(1198) /* shouldNavigate */.transitionTo(closure_8.CHANNEL(closure_7, id));
+    require(1222) /* transitionTo */.transitionTo(closure_8.CHANNEL(closure_7, id));
   },
-  selectVoiceChannel(channelId, outer2_1, flag2) {
-    let flag = outer2_1;
-    let obj = arg3;
-    if (outer2_1 === undefined) {
+  selectVoiceChannel(id, c1, flag2) {
+    let flag = c1;
+    if (c1 === undefined) {
       flag = false;
     }
     if (flag2 === undefined) {
       flag2 = false;
     }
-    if (obj === undefined) {
+    let obj = arg3;
+    if (arg3 === undefined) {
       obj = {};
     }
-    channel = channel.getChannel(channelId);
-    if (null != channel) {
+    channel = channel.getChannel(id);
+    if (channel != null) {
       const guildId = channel.getGuildId();
     }
-    if (closure_6.isSupported()) {
-      if (null != channelId) {
-        const mediaEngine = closure_6.getMediaEngine();
+    if (supported.isSupported()) {
+      if (null != id) {
+        const mediaEngine = supported.getMediaEngine();
         mediaEngine.interact();
       }
-      const obj4 = require(4980) /* selectVoiceChannelAdditional */;
-      const voiceChannelAdditional = obj4.selectVoiceChannelAdditional(channelId, guildId, flag, flag2, obj);
+      const obj5 = require(5002) /* selectVoiceChannelAdditional */;
+      const voiceChannelAdditional = obj5.selectVoiceChannelAdditional(id, guildId, flag, flag2, obj);
     }
   },
   disconnect() {
-    const self = this;
     remoteSessionId = remoteSessionId.getRemoteSessionId();
     if (null != remoteSessionId) {
-      importAll(9015).remoteDisconnect(remoteSessionId);
-      const obj = importAll(9015);
+      importAll(9039).remoteDisconnect(remoteSessionId);
+      const obj = importAll(9039);
     }
-    const voiceChannel = self.selectVoiceChannel(null);
+    const voiceChannel = this.selectVoiceChannel(null);
   }
 };

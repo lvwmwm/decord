@@ -1,83 +1,85 @@
-// Module ID: 12560
-// Function ID: 97094
+// Module ID: 12582
+// Function ID: 12583
 // Name: PremiumPlanSelectYearlyUpsellModal
-// Dependencies: [57, 31, 27, 1922, 5654, 12551, 1852, 482, 33, 4165, 5087, 5008, 6230, 566, 1827, 4596, 12561, 1273, 1212, 3811, 4578, 2]
+// Dependencies: [32, 19, 17, 1946, 5672, 12573, 1876, 505, 21, 4189, 5109, 5030, 6250, 589, 1851, 4618, 12583, 1297, 1236, 3835, 4600, 2]
 // Exports: default
 
-// Module 12560 (PremiumPlanSelectYearlyUpsellModal)
+// Module 12582 (PremiumPlanSelectYearlyUpsellModal)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
-import get_ActivityIndicator from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_8 from "_isNativeReflectConstruct";
+import getPremiumPlanItem from "getPremiumPlanItem";
+import get_ActivityIndicator from "Button";
+import _getSystemLocale from "_getSystemLocale";
+import updateProduct from "updateProduct";
 import { usePremiumPlanSelectStore } from "usePremiumPlanSelectStore";
 import { PREMIUM_YEARLY_DISCOUNT_PERCENT as closure_10 } from "GuildFeatures";
-import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import jsxProd from "set";
+import createCacheKey from "createCacheKey";
 
-let closure_11;
+let c5;
 let closure_12;
-let closure_5;
 let closure_6;
+let unpackModuleId;
 const require = arg1;
-({ Image: closure_5, View: closure_6 } = get_ActivityIndicator);
-({ jsx: closure_11, jsxs: closure_12 } = jsxProd);
-_createForOfIteratorHelperLoose = { container: { marginHorizontal: 26 }, image: { alignSelf: "center", marginVertical: 32 } };
-_createForOfIteratorHelperLoose = {};
+({ Image: c5, View: closure_6 } = get_ActivityIndicator);
+({ jsx: unpackModuleId, jsxs: closure_12 } = jsxProd);
+createCacheKey = { container: { marginHorizontal: 26 }, image: { alignSelf: "center", marginVertical: 32 }, header: null, description: null, upsellButton: null, continueButton: null, cancelButton: null };
+createCacheKey = {};
 const merged = Object.assign(require("createTextStyle")(require("sum").Fonts.DISPLAY_EXTRABOLD, undefined, 24));
-_createForOfIteratorHelperLoose["alignSelf"] = "center";
-_createForOfIteratorHelperLoose["textAlign"] = "center";
-_createForOfIteratorHelperLoose["paddingBottom"] = 8;
-_createForOfIteratorHelperLoose["color"] = require("result").DARK_WHITE_500_LIGHT_BLACK_500;
-_createForOfIteratorHelperLoose.header = _createForOfIteratorHelperLoose;
+createCacheKey.alignSelf = "center";
+createCacheKey.textAlign = "center";
+createCacheKey.paddingBottom = 8;
+createCacheKey.color = require("result").DARK_WHITE_500_LIGHT_BLACK_500;
+createCacheKey[2] = createCacheKey;
+createCacheKey[3] = { alignSelf: "center", textAlign: "center", paddingBottom: 32, color: require("result").DARK_WHITE_500_LIGHT_BLACK_500 };
+createCacheKey[4] = { marginBottom: 16 };
+createCacheKey[5] = { marginBottom: 4 };
+createCacheKey[6] = { marginTop: 8, marginBottom: 4 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
 let obj1 = { alignSelf: "center", textAlign: "center", paddingBottom: 32, color: require("result").DARK_WHITE_500_LIGHT_BLACK_500 };
-_createForOfIteratorHelperLoose.description = obj1;
-_createForOfIteratorHelperLoose.upsellButton = { marginBottom: 16 };
-_createForOfIteratorHelperLoose.continueButton = { marginBottom: 4 };
-_createForOfIteratorHelperLoose.cancelButton = { marginTop: 8, marginBottom: 4 };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
 const result = require("get ActivityIndicator").fileFinishedImporting("modules/premium/native/PremiumPlanSelectYearlyUpsellModal.tsx");
 
 export default function PremiumPlanSelectYearlyUpsellModal(arg0) {
+  let c3;
   let dependencyMap;
   let importDefault;
   let onClose;
   let orderPriceString;
   let productId;
+  let tmp4;
   ({ onClose, productId } = arg0);
   ({ orderPriceString, continueWithUpsell: importDefault, continueWithDefault: dependencyMap } = arg0);
+  let callback;
   let React;
-  const tmp = _createForOfIteratorHelperLoose();
+  const tmp = createCacheKey();
   const tmp2 = usePremiumPlanSelectStore((isPurchasing) => isPurchasing.isPurchasing);
-  const tmp3 = callback(React.useState(null), 2);
-  const first = tmp3[0];
-  callback = tmp3[1];
-  let obj = productId(6230);
-  const premiumBundledItemsFromProductId = obj.getPremiumBundledItemsFromProductId(productId);
-  let obj1 = productId(566);
-  let items = [_isNativeReflectConstruct];
-  const stateFromStores = obj1.useStateFromStores(items, () => outer1_7.locale);
-  let obj2 = productId(566);
-  const items1 = [closure_8];
-  const tmp7 = callback(obj2.useStateFromStoresArray(items1, () => {
+  let obj = React;
+  [tmp4, c3] = callback(React.useState(null), 2);
+  let obj1 = productId(6250);
+  const premiumBundledItemsFromProductId = obj1.getPremiumBundledItemsFromProductId(productId);
+  let obj2 = productId(589);
+  let items = [_getSystemLocale];
+  const stateFromStores = obj2.useStateFromStores(items, () => locale.locale);
+  let obj3 = productId(589);
+  const items1 = [updateProduct];
+  const tmp9 = callback(obj3.useStateFromStoresArray(items1, () => {
     const items = [outer1_8.getProduct(productId), outer1_8.isBusy()];
     return items;
   }), 2);
-  const first1 = tmp7[0];
-  let tmp9 = tmp2;
+  const first = tmp9[0];
+  let tmp11 = tmp2;
   if (!tmp2) {
-    tmp9 = tmp7[1];
+    tmp11 = tmp9[1];
   }
   const premiumTier = premiumBundledItemsFromProductId.premiumTier;
-  if (null == orderPriceString) {
+  if (orderPriceString == null) {
     let priceString;
-    if (null != first1) {
-      priceString = first1.priceString;
+    if (first != null) {
+      priceString = first.priceString;
     }
     orderPriceString = priceString;
   }
-  React = tmp11;
-  const effect = React.useEffect(() => {
+  React = tmp13;
+  const effect = obj.useEffect(() => {
     if (c4) {
       callback2();
     }
@@ -85,58 +87,71 @@ export default function PremiumPlanSelectYearlyUpsellModal(arg0) {
   if (null == premiumTier || null == orderPriceString) {
     return null;
   } else {
-    let obj3 = productId(1827);
-    const formatPercentResult = obj3.formatPercent(stateFromStores, closure_10 / 100);
-    obj = { onClose, noDefaultButtons: true };
-    obj = { style: tmp.container };
-    obj1 = { style: tmp.image, source: importDefault(12561) };
+    let tmp5Result = tmp5(1851);
+    const formatPercentResult = tmp5Result.formatPercent(stateFromStores, closure_10 / 100);
+    obj = { onClose: null, noDefaultButtons: true, children: null };
+    obj[0] = onClose;
+    obj = { style: null, children: null };
+    obj[0] = tmp.container;
+    obj1 = { style: null, source: null };
+    obj1[0] = tmp.image;
+    obj1[1] = importDefault(12583);
     const items2 = [callback2(closure_5, obj1), , , , , ];
-    obj2 = { style: tmp.header };
-    const intl = productId(1212).intl;
-    obj3 = { discountPercentage: formatPercentResult };
-    let obj9 = productId(3811);
-    obj3.planName = obj9.getPremiumTypeDisplayName(premiumTier);
-    obj2.children = intl.format(productId(1212).t.LQCVfK, obj3);
-    items2[1] = callback2(productId(1273).LegacyText, obj2);
-    const obj4 = { style: tmp.description };
-    const intl2 = productId(1212).intl;
-    const obj5 = { discountPercentage: formatPercentResult };
-    obj4.children = intl2.format(productId(1212).t["7chOVL"], obj5);
-    items2[2] = callback2(productId(1273).LegacyText, obj4);
-    const obj6 = { style: tmp.upsellButton };
-    const obj7 = { variant: "active" };
-    const intl3 = productId(1212).intl;
-    const obj8 = { price: orderPriceString };
-    obj7.text = intl3.formatToPlainString(productId(1212).t.Qvq6GE, obj8);
-    obj7.onPress = function onPress() {
-      callback3("upsell");
+    obj2 = { style: null, accessibilityRole: "header", children: null };
+    obj2[0] = tmp.header;
+    const intl = tmp5(1236).intl;
+    obj3 = { discountPercentage: null, planName: null };
+    obj3[0] = formatPercentResult;
+    tmp5Result = tmp5(3835);
+    obj3[1] = tmp5Result.getPremiumTypeDisplayName(premiumTier);
+    obj2[2] = intl.format(tmp5(1236).t.LQCVfK, obj3);
+    items2[1] = callback2(tmp5(1297).LegacyText, obj2);
+    const obj4 = { style: null, children: null };
+    obj4[0] = tmp.description;
+    const intl2 = tmp5(1236).intl;
+    const obj5 = { discountPercentage: null };
+    obj5[0] = formatPercentResult;
+    obj4[1] = intl2.format(tmp5(1236).t["7chOVL"], obj5);
+    items2[2] = callback2(tmp5(1297).LegacyText, obj4);
+    const obj6 = { style: null, children: null };
+    obj6[0] = tmp.upsellButton;
+    const obj7 = { variant: "active", text: null, onPress: null, disabled: null, loading: null };
+    const intl3 = tmp5(1236).intl;
+    const obj8 = { price: null };
+    obj8[0] = orderPriceString;
+    obj7[1] = intl3.formatToPlainString(tmp5(1236).t.Qvq6GE, obj8);
+    obj7[2] = function onPress() {
+      _undefined("upsell");
       callback();
     };
-    obj7.disabled = tmp9;
-    obj7.loading = "upsell" === first && tmp2;
-    obj6.children = callback2(productId(4578).Button, obj7);
+    obj7[3] = tmp11;
+    obj7[4] = "upsell" === tmp4 && tmp2;
+    obj6[1] = callback2(tmp5(4600).Button, obj7);
     items2[3] = callback2(closure_6, obj6);
-    obj9 = { style: tmp.continueButton };
-    const obj10 = { variant: "secondary" };
-    const intl4 = productId(1212).intl;
-    obj10.text = intl4.string(productId(1212).t.YwEyQM);
-    obj10.onPress = function onPress() {
-      callback3("default");
+    const obj9 = { style: null, children: null };
+    obj9[0] = tmp.continueButton;
+    const obj10 = { variant: "secondary", text: null, onPress: null, disabled: null, loading: null };
+    const intl4 = tmp5(1236).intl;
+    obj10[1] = intl4.string(tmp5(1236).t.YwEyQM);
+    obj10[2] = function onPress() {
+      _undefined("default");
       callback2();
     };
-    obj10.disabled = tmp9;
-    obj10.loading = "default" === first && tmp2;
-    obj9.children = callback2(productId(4578).Button, obj10);
+    obj10[3] = tmp11;
+    obj10[4] = "default" === tmp4 && tmp2;
+    obj9[1] = callback2(tmp5(4600).Button, obj10);
     items2[4] = callback2(closure_6, obj9);
-    const obj11 = { style: tmp.cancelButton };
-    const obj12 = { variant: "tertiary" };
-    const intl5 = productId(1212).intl;
-    obj12.text = intl5.string(productId(1212).t.cpT0Cq);
-    obj12.onPress = onClose;
-    obj11.children = callback2(productId(4578).Button, obj12);
+    const obj11 = { style: null, children: null };
+    obj11[0] = tmp.cancelButton;
+    const obj12 = { variant: "tertiary", text: null, onPress: null };
+    const intl5 = tmp5(1236).intl;
+    obj12[1] = intl5.string(tmp5(1236).t.cpT0Cq);
+    obj12[2] = onClose;
+    obj11[1] = callback2(tmp5(4600).Button, obj12);
     items2[5] = callback2(closure_6, obj11);
-    obj.children = items2;
-    obj.children = closure_12(closure_6, obj);
-    return callback2(importDefault(4596), obj);
+    obj[1] = items2;
+    obj[2] = closure_12(closure_6, obj);
+    return callback2(importDefault(4618), obj);
   }
+  const tmp3 = callback(React.useState(null), 2);
 };

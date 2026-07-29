@@ -1,55 +1,56 @@
-// Module ID: 14177
-// Function ID: 108837
+// Module ID: 14199
+// Function ID: 14200
 // Name: QuestThemePicker
-// Dependencies: [31, 27, 1279, 1278, 3978, 482, 33, 4165, 689, 5497, 5517, 4098, 566, 3979, 3869, 1832, 14178, 4161, 13618, 1212, 2]
+// Dependencies: [19, 17, 1303, 1302, 4002, 505, 21, 4189, 712, 5515, 5535, 4122, 589, 4003, 3893, 1856, 14200, 4185, 13639, 1236, 2]
 
-// Module 14177 (QuestThemePicker)
-import result from "result";
-import get_ActivityIndicator from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_7 from "_isNativeReflectConstruct";
+// Module 14199 (QuestThemePicker)
+import getSystemLocale from "getSystemLocale";
+import get_ActivityIndicator from "Text";
+import initialize from "initialize";
+import handleThemeChange from "handleThemeChange";
 import { LEGACY_STANDARD_BACKGROUND_THEMES as closure_8 } from "items1";
 import { ThemeTypes } from "sum";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_10;
-let closure_11;
-let closure_4;
-let closure_5;
+let c10;
+let c4;
+let c5;
+let unpackModuleId;
 let require = arg1;
 class QuestThemePicker {
   constructor() {
-    tmp = c12();
+    tmp = jsxs();
     closure_0 = tmp;
-    tmp2 = require("mergeLocations");
+    tmp2 = require("context");
     analyticsLocations = tmp2(require("QUICK_SWITCHER").USER_SETTINGS).analyticsLocations;
     obj = require("getCustomThemesName");
     allMobileThemes = obj.useAllMobileThemes();
     closure_2 = allMobileThemes;
     obj2 = require("initialize");
     items = [];
-    items[0] = useToken;
+    items[0] = TouchableOpacity;
     stateFromStores = obj2.useStateFromStores(items, () => token.theme);
-    f108839 = stateFromStores;
+    getSystemLocale = stateFromStores;
     obj3 = require("initialize");
     items1 = [];
-    items1[0] = c6;
+    items1[0] = TouchableOpacity;
     isSynced = obj3.useStateFromStoresObject(items1, () => ({ isSynced: memo.shouldSync("appearance") })).isSynced;
-    c5 = f108839.useRef(null);
+    useRef = getSystemLocale.useRef(null);
     items2 = [];
     items2[0] = stateFromStores;
-    effect = f108839.useEffect(() => {
+    effect = getSystemLocale.useEffect(() => {
       if (null == ref.current) {
-        ref.current = stateFromStores;
+        tmp.current = stateFromStores;
       }
     }, items2);
     items3 = [];
     items3[0] = allMobileThemes;
-    memo = f108839.useMemo(() => {
-      const items = [token2.LIGHT, token2.DARKER, token2.MIDNIGHT];
+    memo = getSystemLocale.useMemo(() => {
+      const items = [, , ];
+      ({ LIGHT: arr[0], DARKER: arr[1], MIDNIGHT: arr[2] } = token2);
       return allMobileThemes.filter((type) => {
-        let hasItem = type.type === items(allMobileThemes[13]).ClientThemeType.STANDARD_BACKGROUND_THEME;
+        let hasItem = type.type === items(outer1_2[13]).ClientThemeType.STANDARD_BACKGROUND_THEME;
         if (hasItem) {
           hasItem = items.includes(type.theme);
         }
@@ -59,26 +60,26 @@ class QuestThemePicker {
         return hasItem;
       });
     }, items3);
-    c6 = memo;
+    TouchableOpacity = memo;
     obj4 = require("map");
-    token = obj4.useToken(require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW, MIDNIGHT.LIGHT);
-    useToken = token;
+    token = obj4.useToken(require("Themes").colors.BACKGROUND_BASE_LOW, MIDNIGHT.LIGHT);
+    TouchableOpacity = token;
     obj5 = require("map");
-    token1 = obj5.useToken(require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW, MIDNIGHT.DARKER);
-    BACKGROUND_BASE_LOW = token1;
+    token1 = obj5.useToken(require("Themes").colors.BACKGROUND_BASE_LOW, MIDNIGHT.DARKER);
+    useToken = token1;
     obj6 = require("map");
-    token2 = obj6.useToken(require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW, MIDNIGHT.MIDNIGHT);
+    token2 = obj6.useToken(require("Themes").colors.BACKGROUND_BASE_LOW, MIDNIGHT.MIDNIGHT);
     MIDNIGHT = token2;
     items4 = [, , , ];
     items4[0] = memo;
     items4[1] = token;
     items4[2] = token1;
     items4[3] = token2;
-    memo1 = f108839.useMemo(() => {
+    memo1 = getSystemLocale.useMemo(() => {
       let obj = { [outer1_9.LIGHT]: token, [outer1_9.DARKER]: token1, [outer1_9.MIDNIGHT]: token2 };
       return memo.map((theme) => {
         theme = theme.theme;
-        obj = obj(allMobileThemes[15]);
+        obj = obj(outer1_2[15]);
         let str = "#000000";
         if (!obj.isNullOrEmpty(obj[theme])) {
           str = obj[theme];
@@ -90,21 +91,21 @@ class QuestThemePicker {
     items5 = [, ];
     items5[0] = analyticsLocations;
     items5[1] = isSynced;
-    callback = f108839.useCallback((arg0) => {
+    callback = getSystemLocale.useCallback((arg0) => {
       const found = token1.find((theme) => theme.theme === closure_0);
       if (null != found) {
         tmp(allMobileThemes[16]).handleSaveTheme(found, analyticsLocations, isSynced);
         const obj = tmp(allMobileThemes[16]);
       }
     }, items5);
-    f108846 = callback;
+    f93300 = callback;
     items6 = [];
     items6[0] = callback;
-    obj = { style: tmp.themeSection };
-    obj1 = { style: tmp.themeSelector };
-    callback1 = f108839.useCallback(() => {
+    obj = { style: tmp.themeSection, children: null };
+    obj1 = { style: tmp.themeSelector, children: null };
+    callback1 = getSystemLocale.useCallback(() => {
       if (null != ref.current) {
-        callback(ref.current);
+        callback(tmp.current);
       }
     }, items6);
     items7 = [, ];
@@ -114,59 +115,57 @@ class QuestThemePicker {
         style: tmp.themeOption,
         onPress() {
           return outer1_10(backgroundColor.theme);
-        }
+        },
+        children: null
       };
-      obj = {};
       const items = [tmp.themeCircle, { backgroundColor: backgroundColor.color }, ];
       let themeCircleSelected = stateFromStores === backgroundColor.theme;
       tmp = outer1_11;
       if (themeCircleSelected) {
-        themeCircleSelected = tmp.themeCircleSelected;
+        themeCircleSelected = tmp3.themeCircleSelected;
       }
       items[2] = themeCircleSelected;
-      obj.style = items;
-      const items1 = [callback(isSynced, obj), ];
-      obj = { variant: "text-xs/medium", color: "text-muted", style: tmp.themeLabel, children: backgroundColor.name };
+      const items1 = [callback(isSynced, { style: items }), ];
+      obj = { variant: "text-xs/medium", color: "text-muted", style: tmp3.themeLabel, children: backgroundColor.name };
       items1[1] = callback(tmp(allMobileThemes[17]).Text, obj);
-      obj.children = items1;
+      obj[2] = items1;
       return tmp(closure_5, obj, backgroundColor.theme);
     });
-    obj2 = { style: tmp.resetButton, onPress: callback1 };
-    obj3 = { style: tmp.resetIcon, children: f108846(require("RefreshIcon").RefreshIcon, { size: "sm" }) };
+    obj2 = { style: tmp.resetButton, onPress: callback1, children: null };
+    obj3 = { style: tmp.resetIcon, children: f93300(require("RefreshIcon").RefreshIcon, { size: "sm" }) };
     items8 = [, ];
-    items8[0] = f108846(isSynced, obj3);
-    obj4 = { variant: "text-xs/medium", color: "text-muted" };
-    obj4.style = tmp.themeLabel;
+    items8[0] = f93300(isSynced, obj3);
+    obj4 = { variant: "text-xs/medium", color: "text-muted", style: tmp.themeLabel, children: null };
     intl = require("getSystemLocale").intl;
-    obj4.children = intl.string(require("getSystemLocale").t.yBZMsQ);
-    items8[1] = f108846(require("Text").Text, obj4);
-    obj2.children = items8;
-    items7[1] = jsxs(c5, obj2);
-    obj1.children = items7;
-    obj.children = jsxs(isSynced, obj1);
-    return f108846(isSynced, obj);
+    obj4[3] = intl.string(require("getSystemLocale").t.yBZMsQ);
+    items8[1] = f93300(require("Text").Text, obj4);
+    obj2[2] = items8;
+    items7[1] = jsxs(useRef, obj2);
+    obj1[1] = items7;
+    obj[1] = jsxs(isSynced, obj1);
+    return f93300(isSynced, obj);
   }
 }
-({ View: closure_4, TouchableOpacity: closure_5 } = get_ActivityIndicator);
-({ jsx: closure_10, jsxs: closure_11 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { marginBottom: require("_createForOfIteratorHelperLoose").space.PX_8 };
-_createForOfIteratorHelperLoose.themeSection = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.themeSelector = { flexDirection: "row", gap: require("_createForOfIteratorHelperLoose").space.PX_12 };
-let obj1 = { flexDirection: "row", gap: require("_createForOfIteratorHelperLoose").space.PX_12 };
-_createForOfIteratorHelperLoose.themeOption = { alignItems: "center", gap: require("_createForOfIteratorHelperLoose").space.PX_4 };
-let obj3 = { width: 32, height: 32, borderRadius: require("_createForOfIteratorHelperLoose").radii.round, borderWidth: 2, borderColor: "transparent" };
-_createForOfIteratorHelperLoose.themeCircle = obj3;
-let obj2 = { alignItems: "center", gap: require("_createForOfIteratorHelperLoose").space.PX_4 };
-_createForOfIteratorHelperLoose.themeCircleSelected = { borderColor: require("_createForOfIteratorHelperLoose").colors.MOBILE_LEGACY_BUTTON_SECONDARY_BORDER_DEFAULT };
-_createForOfIteratorHelperLoose.themeLabel = { fontSize: 11 };
-const obj4 = { borderColor: require("_createForOfIteratorHelperLoose").colors.MOBILE_LEGACY_BUTTON_SECONDARY_BORDER_DEFAULT };
-_createForOfIteratorHelperLoose.resetButton = { alignItems: "center", gap: require("_createForOfIteratorHelperLoose").space.PX_4 };
-const obj6 = { width: 32, height: 32, borderRadius: require("_createForOfIteratorHelperLoose").radii.round, borderWidth: 2, borderColor: "transparent", justifyContent: "center", alignItems: "center" };
-_createForOfIteratorHelperLoose.resetIcon = obj6;
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-let obj5 = { alignItems: "center", gap: require("_createForOfIteratorHelperLoose").space.PX_4 };
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/user_settings/quests/native/QuestThemePicker.tsx");
+({ View: c4, TouchableOpacity: c5 } = get_ActivityIndicator);
+({ jsx: c10, jsxs: unpackModuleId } = jsxProd);
+createCacheKey = { themeSection: null, themeSelector: null, themeOption: null, themeCircle: null, themeCircleSelected: null, themeLabel: null, resetButton: null, resetIcon: null };
+createCacheKey = { marginBottom: require("Themes").space.PX_8 };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { flexDirection: "row", gap: require("Themes").space.PX_12 };
+let obj1 = { flexDirection: "row", gap: require("Themes").space.PX_12 };
+createCacheKey[2] = { alignItems: "center", gap: require("Themes").space.PX_4 };
+let obj2 = { alignItems: "center", gap: require("Themes").space.PX_4 };
+createCacheKey[3] = { width: 32, height: 32, borderRadius: require("Themes").radii.round, borderWidth: 2, borderColor: "transparent" };
+let obj3 = { width: 32, height: 32, borderRadius: require("Themes").radii.round, borderWidth: 2, borderColor: "transparent" };
+createCacheKey[4] = { borderColor: require("Themes").colors.MOBILE_LEGACY_BUTTON_SECONDARY_BORDER_DEFAULT };
+createCacheKey[5] = { fontSize: 11 };
+const obj4 = { borderColor: require("Themes").colors.MOBILE_LEGACY_BUTTON_SECONDARY_BORDER_DEFAULT };
+createCacheKey[6] = { alignItems: "center", gap: require("Themes").space.PX_4 };
+let obj5 = { alignItems: "center", gap: require("Themes").space.PX_4 };
+createCacheKey[7] = { width: 32, height: 32, borderRadius: require("Themes").radii.round, borderWidth: 2, borderColor: "transparent", justifyContent: "center", alignItems: "center" };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+const obj6 = { width: 32, height: 32, borderRadius: require("Themes").radii.round, borderWidth: 2, borderColor: "transparent", justifyContent: "center", alignItems: "center" };
+const result = require("initialize").fileFinishedImporting("modules/user_settings/quests/native/QuestThemePicker.tsx");
 
 export default QuestThemePicker;
 export { QuestThemePicker };

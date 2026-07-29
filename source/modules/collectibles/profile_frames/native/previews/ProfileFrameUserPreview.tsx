@@ -1,11 +1,11 @@
-// Module ID: 8721
-// Function ID: 69037
+// Module ID: 8745
+// Function ID: 8746
 // Name: ProfileFrameUserPreview
-// Dependencies: [31, 33, 8052, 1212, 2]
+// Dependencies: [19, 21, 8076, 1236, 2]
 // Exports: default
 
-// Module 8721 (ProfileFrameUserPreview)
-import "result";
+// Module 8745 (ProfileFrameUserPreview)
+import "noop";
 import { jsx } from "jsxProd";
 
 const require = arg1;
@@ -13,19 +13,18 @@ const result = require("filterLayer").fileFinishedImporting("modules/collectible
 
 export default function ProfileFrameUserPreview(profileFrame) {
   profileFrame = profileFrame.profileFrame;
-  let obj = Object.create(null);
-  obj.profileFrame = 0;
-  const merged = Object.assign(profileFrame, obj);
-  obj = { profileFrameOverride: profileFrame };
+  const merged = Object.assign(profileFrame, Object.create(null));
+  let obj = { profileFrameOverride: profileFrame, accessibilityLabel: null };
   if (null != profileFrame) {
-    const intl2 = require(1212) /* getSystemLocale */.intl;
-    obj = { a11y_text: profileFrame.label };
-    let formatToPlainStringResult = intl2.formatToPlainString(require(1212) /* getSystemLocale */.t["DT/PwH"], obj);
+    const intl2 = require(1236) /* getSystemLocale */.intl;
+    obj = { a11y_text: null };
+    obj[0] = profileFrame.label;
+    let formatToPlainStringResult = intl2.formatToPlainString(require(1236) /* getSystemLocale */.t["DT/PwH"], obj);
   } else {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    formatToPlainStringResult = intl.string(require(1212) /* getSystemLocale */.t.vQx51z);
+    const intl = require(1236) /* getSystemLocale */.intl;
+    formatToPlainStringResult = intl.string(require(1236) /* getSystemLocale */.t.vQx51z);
   }
-  obj.accessibilityLabel = formatToPlainStringResult;
+  obj[1] = formatToPlainStringResult;
   const merged1 = Object.assign(merged);
-  return jsx(importDefault(8052), { profileFrameOverride: profileFrame });
+  return jsx(importDefault(8076), { profileFrameOverride: profileFrame, accessibilityLabel: null });
 };

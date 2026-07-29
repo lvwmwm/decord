@@ -1,133 +1,39 @@
-// Module ID: 5638
-// Function ID: 47781
-// Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 1348, 1196, 2]
+// Module ID: 5656
+// Function ID: 5657
+// Name: processChannel
+// Dependencies: [1372, 1220, 2]
 
-// Module 5638 (_isNativeReflectConstruct)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_1 from "set";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
-import closure_5 from "_isNativeReflectConstruct";
-import tmp5 from "_isNativeReflectConstruct";
-import set from "_possibleConstructorReturn";
+// Module 5656 (processChannel)
+import prototype from "ensureGuildLoaded";
+import "clearAll";
+import set from "set";
 
-function _isNativeReflectConstruct() {
-  let _isNativeReflectConstruct = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return _isNativeReflectConstruct;
-  }
-  const result = _isNativeReflectConstruct();
-}
-function _createForOfIteratorHelperLoose(iterable) {
-  let _isNativeReflectConstruct = iterable;
-  iterable = "undefined" !== typeof Symbol;
-  if (iterable) {
-    const _Symbol = Symbol;
-    iterable = iterable[Symbol.iterator];
-  }
-  if (!iterable) {
-    iterable = iterable[Symbol.iterator];
-  }
-  if (iterable) {
-    const iter = iterable.call(iterable);
-    const next = iter.next;
-    return next.bind(iter);
-  } else {
-    const _Array = Array;
-    let tmp = iterable;
-    if (!Array.isArray(iterable)) {
-      let tmp2;
-      if (iterable) {
-        if ("string" === typeof iterable) {
-          tmp2 = _arrayLikeToArray(iterable, undefined);
-        } else {
-          const toString = {}.toString;
-          const substr = toString.call(iterable).slice(8, -1);
-          let name = substr;
-          if (tmp3) {
-            name = iterable.constructor.name;
-          }
-          if ("Map" !== name) {
-            if ("Set" !== name) {
-              if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(iterable, undefined);
-              } else {
-                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
-              }
-            }
-            tmp2 = arr;
-          }
-          const _Array2 = Array;
-          arr = Array.from(iterable);
-          const callResult = toString.call(iterable);
-          tmp3 = "Object" === substr && iterable.constructor;
-        }
-      }
-      tmp = tmp2;
-      if (!tmp2) {
-        const _TypeError = TypeError;
-        const typeError = new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
-        throw typeError;
-      }
-    }
-    if (tmp) {
-      _isNativeReflectConstruct = tmp;
-    }
-    let c1 = 0;
-    return () => {
-      if (closure_1 >= length.length) {
-        let obj = { done: true };
-      } else {
-        obj = { done: false };
-        closure_1 = tmp3 + 1;
-        obj.value = length[+closure_1];
-      }
-      return obj;
-    };
-  }
-}
-function _arrayLikeToArray(arg0, arg1) {
-  let length;
-  if (tmp) {
-    length = arg0.length;
-  }
-  const ArrayResult = Array(length);
-  for (let num = 0; num < length; num = num + 1) {
-    ArrayResult[num] = arg0[num];
-  }
-  return ArrayResult;
-}
-function isSpam(isSpam) {
-  return isSpam.isSpam;
-}
-function processChannel(id) {
-  let tmp = isSpam(id);
-  if (tmp) {
-    tmp = !set.has(id.id);
+function processChannel(isSpam) {
+  isSpam = isSpam.isSpam;
+  if (isSpam) {
+    isSpam = !set.has(isSpam.id);
   }
   let flag = false;
-  if (tmp) {
-    set.add(id.id);
+  if (isSpam) {
+    set.add(isSpam.id);
     flag = true;
   }
-  let hasItem = !isSpam(id);
-  if (hasItem) {
-    hasItem = set.has(id.id);
+  const isSpam2 = isSpam.isSpam;
+  let hasItem = !isSpam2;
+  if (!isSpam2) {
+    hasItem = set.has(isSpam.id);
   }
   if (hasItem) {
-    set.delete(id.id);
+    set.delete(isSpam.id);
     flag = true;
   }
-  let hasItem1 = !isSpam(id);
-  if (hasItem1) {
-    hasItem1 = set1.has(id.id);
+  const isSpam3 = isSpam.isSpam;
+  let hasItem1 = !isSpam3;
+  if (!isSpam3) {
+    hasItem1 = set1.has(isSpam.id);
   }
   if (hasItem1) {
-    set1.delete(id.id);
+    set1.delete(isSpam.id);
     flag = true;
   }
   return flag;
@@ -135,11 +41,11 @@ function processChannel(id) {
 function handleConnectionOpen() {
   set.clear();
   set1.clear();
-  const values = Object.values(mutablePrivateChannels.getMutablePrivateChannels());
+  const values = Object.values(prototype.getMutablePrivateChannels());
   const item = values.forEach((arg0) => {
-    outer1_13(arg0);
+    callback(arg0);
   });
-  let c8 = true;
+  let c3 = true;
 }
 function handleSpamAcceptOptimistic(channelId) {
   set1.add(channelId.channelId);
@@ -147,18 +53,11 @@ function handleSpamAcceptOptimistic(channelId) {
 function handleChannelCreate(channel) {
   return processChannel(channel.channel);
 }
-function handleChannelUpdates(channels) {
-  let done;
-  const tmp = _createForOfIteratorHelperLoose(channels.channels);
-  let iter = tmp();
-  if (!iter.done) {
-    do {
-      let tmp2 = processChannel;
-      let tmp3 = processChannel(iter.value);
-      let iter2 = tmp();
-      iter = iter2;
-      done = iter2.done;
-    } while (!done);
+function handleChannelUpdates(arg0) {
+  while (tmp !== undefined) {
+    let tmp3 = processChannel;
+    let tmp4 = processChannel(tmp2);
+    continue;
   }
 }
 function handleChannelDelete(channel) {
@@ -172,10 +71,73 @@ function handleChannelDelete(channel) {
 }
 let set = new Set();
 const set1 = new Set();
-let c8 = false;
-tmp5.displayName = "SpamMessageRequestStore";
-tmp5.LATEST_SNAPSHOT_VERSION = 1;
-tmp5 = new tmp5();
-let result = set.fileFinishedImporting("modules/message_request/SpamMessageRequestStore.tsx");
+let c3 = false;
+let SpamMessageRequestStore;
+class SpamMessageRequestStore extends tmp4 {
+  constructor() {
+    c0 = undefined;
+    obj = {
+      CONNECTION_OPEN: handleConnectionOpen,
+      CONNECTION_OPEN_SUPPLEMENTAL: handleConnectionOpen,
+      CACHE_LOADED_LAZY() {
+            return obj.loadCache();
+          },
+      CHANNEL_CREATE: handleChannelCreate,
+      CHANNEL_UPDATES: handleChannelUpdates,
+      CHANNEL_DELETE: handleChannelDelete,
+      MESSAGE_REQUEST_ACCEPT_OPTIMISTIC: handleSpamAcceptOptimistic
+    };
+    tmp = new tmp(obj, handleChannelDelete, new.target, tmp);
+    // ThrowIfThisInitialized (0x7c)
+    c0 = tmp;
+    return tmp;
+  }
+}
+prototype = SpamMessageRequestStore.prototype;
+prototype["initialize"] = function initialize() {
+  this.waitFor(prototype);
+};
+prototype["loadCache"] = function loadCache() {
+  const snapshot = this.readSnapshot(SpamMessageRequestStore.LATEST_SNAPSHOT_VERSION);
+  if (null != snapshot) {
+    const _Set = Set;
+    const set = new Set(snapshot);
+  }
+};
+prototype["takeSnapshot"] = function takeSnapshot() {
+  return { version: SpamMessageRequestStore.LATEST_SNAPSHOT_VERSION, data: Array.from(set) };
+};
+prototype["getSpamChannelIds"] = function getSpamChannelIds() {
+  return set;
+};
+prototype["getSpamChannelsCount"] = function getSpamChannelsCount() {
+  return set.size;
+};
+prototype["isSpam"] = function isSpam(arg0) {
+  return set.has(arg0);
+};
+prototype["isAcceptedOptimistic"] = function isAcceptedOptimistic(arg0) {
+  return set1.has(arg0);
+};
+prototype["isReady"] = function isReady() {
+  return c3;
+};
+SpamMessageRequestStore.displayName = "SpamMessageRequestStore";
+SpamMessageRequestStore.LATEST_SNAPSHOT_VERSION = 1;
+prototype = undefined;
+const obj = { CONNECTION_OPEN: handleConnectionOpen, CONNECTION_OPEN_SUPPLEMENTAL: handleConnectionOpen, CACHE_LOADED_LAZY: null, CHANNEL_CREATE: null, CHANNEL_UPDATES: null, CHANNEL_DELETE: null, MESSAGE_REQUEST_ACCEPT_OPTIMISTIC: null };
+class CACHE_LOADED_LAZY {
+  constructor() {
+    return obj.loadCache();
+  }
+}
+obj[2] = CACHE_LOADED_LAZY;
+obj[3] = handleChannelCreate;
+obj[4] = handleChannelUpdates;
+obj[5] = handleChannelDelete;
+obj[6] = handleSpamAcceptOptimistic;
+prototype = new prototype(obj, tmp2, tmp, Object, defineProperty, CACHE_LOADED_LAZY, handleChannelCreate, handleChannelUpdates, handleChannelDelete);
+// ThrowIfThisInitialized (0x7c)
+const result = set.fileFinishedImporting("modules/message_request/SpamMessageRequestStore.tsx");
 
-export default tmp5;
+export default prototype;

@@ -1,21 +1,21 @@
-// Module ID: 3866
-// Function ID: 32101
+// Module ID: 3890
+// Function ID: 3891
 // Name: dispatcher
-// Dependencies: [686, 2]
+// Dependencies: [709, 2]
 
-// Module 3866 (dispatcher)
+// Module 3890 (dispatcher)
 const result = require("set").fileFinishedImporting("modules/toast/native/ToastActionCreators.tsx");
 
 export default {
   open(arg0) {
     const importDefault = arg0;
-    importDefault(686).wait(() => {
+    importDefault(709).wait(() => {
       let obj = callback(outer1_1[0]);
       obj = { type: "TOAST_OPEN", toastProps: callback };
       return obj.dispatch(obj);
     });
   },
   close() {
-    importDefault(686).wait(() => outer1_0(outer1_1[0]).dispatch({ type: "TOAST_CLOSE" }));
+    importDefault(709).wait(() => callback(table[0]).dispatch({ type: "TOAST_CLOSE" }));
   }
 };

@@ -1,10 +1,10 @@
-// Module ID: 12947
-// Function ID: 100428
+// Module ID: 12970
+// Function ID: 12971
 // Name: getTitleFromPickedStreamContent
-// Dependencies: [1212, 2]
+// Dependencies: [1236, 2]
 // Exports: default
 
-// Module 12947 (getTitleFromPickedStreamContent)
+// Module 12970 (getTitleFromPickedStreamContent)
 const result = require("set").fileFinishedImporting("modules/go_live/utils/getTitleFromPickedStreamContent.tsx");
 
 export default function getTitleFromPickedStreamContent(windows) {
@@ -19,8 +19,8 @@ export default function getTitleFromPickedStreamContent(windows) {
   } else {
     joined = null;
     if (windows.displays.length > 0) {
-      const intl = require(1212) /* getSystemLocale */.intl;
-      joined = intl.string(require(1212) /* getSystemLocale */.t.R4wpLN);
+      const intl = require(1236) /* getSystemLocale */.intl;
+      joined = intl.string(require(1236) /* getSystemLocale */.t.R4wpLN);
     }
   }
   return joined;

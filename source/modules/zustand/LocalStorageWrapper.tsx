@@ -1,25 +1,24 @@
-// Module ID: 5970
-// Function ID: 52962
+// Module ID: 5989
+// Function ID: 5990
 // Name: frozen
-// Dependencies: [587, 2]
+// Dependencies: [595, 2]
 
-// Module 5970 (frozen)
+// Module 5989 (frozen)
 const frozen = Object.freeze({
   getItem(arg0) {
-    const Storage = require(587) /* Storage */.Storage;
-    const value = Storage.get(arg0);
-    let tmp2 = null;
-    if (null != value) {
-      tmp2 = value;
+    const Storage = require(595) /* Storage */.Storage;
+    let value = Storage.get(arg0);
+    if (value == null) {
+      value = null;
     }
-    return tmp2;
+    return value;
   },
   setItem(arg0, arg1) {
-    const Storage = require(587) /* Storage */.Storage;
+    const Storage = require(595) /* Storage */.Storage;
     return Storage.set(arg0, arg1);
   },
   removeItem(arg0) {
-    const Storage = require(587) /* Storage */.Storage;
+    const Storage = require(595) /* Storage */.Storage;
     return Storage.remove(arg0);
   }
 });

@@ -1,75 +1,76 @@
-// Module ID: 12244
-// Function ID: 95582
+// Module ID: 12268
+// Function ID: 12269
 // Name: keyExtractor
-// Dependencies: [31, 653, 33, 4165, 5087, 689, 1273, 1212, 4695, 4133, 4017, 4161, 11781, 5193, 5223, 2]
+// Dependencies: [19, 676, 21, 4189, 5109, 712, 1297, 1236, 4717, 4157, 4041, 4185, 11806, 5215, 5245, 2]
 // Exports: default
 
-// Module 12244 (keyExtractor)
-import result from "result";
+// Module 12268 (keyExtractor)
+import noop from "noop";
 import { Fonts } from "ME";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 import importDefaultResult from "createTextStyle";
 import importDefaultResult1 from "createTextStyle";
 
-let closure_4;
-let closure_5;
+let c4;
+let c5;
 let closure_6;
 const require = arg1;
 function keyExtractor(item) {
   return item.item.id;
 }
 function FriendsEmptyComponent() {
-  const tmp = _createForOfIteratorHelperLoose();
-  let obj = {};
-  obj = {};
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj.title = intl.string(require(1212) /* getSystemLocale */.t.dz4UlO);
-  const intl2 = require(1212) /* getSystemLocale */.intl;
-  obj.body = intl2.string(require(1212) /* getSystemLocale */.t.MBQBI7);
-  ({ emptyTitle: obj2.titleStyle, emptyBody: obj2.bodyStyle } = tmp);
-  const items = [callback(require(1273) /* Button */.RefreshEmptyState, obj), ];
+  const tmp = createCacheKey();
+  let obj = { children: null };
+  obj = { title: null, body: null, titleStyle: null, bodyStyle: null };
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj[0] = intl.string(require(1236) /* getSystemLocale */.t.dz4UlO);
+  const intl2 = require(1236) /* getSystemLocale */.intl;
+  obj[1] = intl2.string(require(1236) /* getSystemLocale */.t.MBQBI7);
+  ({ emptyTitle: obj2[2], emptyBody: obj2[3] } = tmp);
+  const items = [callback(require(1297) /* Button */.RefreshEmptyState, obj), ];
   obj = {
     onPress() {
-      let obj = outer1_1(outer1_2[9]);
+      let obj = callback2(4157);
       obj.hideActionSheet();
-      const rootNavigationRef = outer1_0(outer1_2[10]).getRootNavigationRef();
+      const rootNavigationRef = callback(4041).getRootNavigationRef();
       if (null != rootNavigationRef) {
-        obj = { screen: "add-friends" };
-        obj = { sourcePage: "Instant Invite Empty State" };
-        obj.params = obj;
+        obj = { screen: "add-friends", params: null };
+        obj[1] = { sourcePage: "Instant Invite Empty State" };
         rootNavigationRef.navigate("friends", obj);
       }
     },
-    accessibilityRole: "link"
+    accessibilityRole: "link",
+    accessibilityLabel: null,
+    hitSlop: null,
+    children: null
   };
-  const intl3 = require(1212) /* getSystemLocale */.intl;
-  obj.accessibilityLabel = intl3.string(require(1212) /* getSystemLocale */.t.a7FVbE);
-  obj.hitSlop = { top: 8, left: 8, bottom: 8, right: 8 };
-  const obj1 = { style: null, variant: "text-sm/semibold", color: "text-link" };
-  const items1 = [tmp.goToFriendsLink];
-  obj1.style = items1;
-  const intl4 = require(1212) /* getSystemLocale */.intl;
-  obj1.children = intl4.string(require(1212) /* getSystemLocale */.t.a7FVbE);
-  obj.children = callback(require(4161) /* Text */.Text, obj1);
-  items[1] = callback(require(4695) /* PressableBase */.PressableOpacity, obj);
-  obj.children = items;
+  const intl3 = require(1236) /* getSystemLocale */.intl;
+  obj[2] = intl3.string(require(1236) /* getSystemLocale */.t.a7FVbE);
+  obj[3] = { top: 8, left: 8, bottom: 8, right: 8 };
+  const obj1 = { style: items1, variant: "text-sm/semibold", color: "text-link", children: null };
+  items1 = [tmp.goToFriendsLink];
+  const intl4 = require(1236) /* getSystemLocale */.intl;
+  obj1[3] = intl4.string(require(1236) /* getSystemLocale */.t.a7FVbE);
+  obj[4] = callback(require(4185) /* Text */.Text, obj1);
+  items[1] = callback(require(4717) /* PressableBase */.PressableOpacity, obj);
+  obj[0] = items;
   return callback2(closure_5, obj);
 }
-({ jsx: closure_4, Fragment: closure_5, jsxs: closure_6 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = {};
-const merged = Object.assign(require("createTextStyle")(Fonts.DISPLAY_EXTRABOLD, require("_createForOfIteratorHelperLoose").colors.MOBILE_TEXT_HEADING_PRIMARY, 18));
-_createForOfIteratorHelperLoose["textTransform"] = "none";
-_createForOfIteratorHelperLoose["lineHeight"] = 24;
-_createForOfIteratorHelperLoose.emptyTitle = _createForOfIteratorHelperLoose;
+({ jsx: c4, Fragment: c5, jsxs: closure_6 } = jsxProd);
+createCacheKey = { emptyTitle: null, emptyBody: null, goToFriendsLink: null };
+createCacheKey = {};
+const merged = Object.assign(require("createTextStyle")(Fonts.DISPLAY_EXTRABOLD, require("Themes").colors.MOBILE_TEXT_HEADING_PRIMARY, 18));
+createCacheKey.textTransform = "none";
+createCacheKey.lineHeight = 24;
+createCacheKey[0] = createCacheKey;
 let obj1 = {};
-const merged1 = Object.assign(require("createTextStyle")(Fonts.PRIMARY_MEDIUM, require("_createForOfIteratorHelperLoose").colors.TEXT_SUBTLE, 16));
-obj1["lineHeight"] = 20;
-obj1["fontWeight"] = "600";
-_createForOfIteratorHelperLoose.emptyBody = obj1;
-_createForOfIteratorHelperLoose.goToFriendsLink = { textAlign: "center" };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+const merged1 = Object.assign(require("createTextStyle")(Fonts.PRIMARY_MEDIUM, require("Themes").colors.TEXT_SUBTLE, 16));
+obj1.lineHeight = 20;
+obj1.fontWeight = "600";
+createCacheKey[1] = obj1;
+createCacheKey[2] = { textAlign: "center" };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
 const result = require("jsxProd").fileFinishedImporting("modules/instant_invite/native/components/InstantInviteFriendsList.tsx");
 
 export default function InstantInviteFriendsList(code) {
@@ -83,14 +84,14 @@ export default function InstantInviteFriendsList(code) {
     index = index.index;
     return source(onPressAvatar(onInviteSent[12]), { start: 0 === index, end: index === data.length - 1, row: index.item, onPressAvatar, onInviteSent, code, source });
   }, items);
-  let obj = {};
-  obj = { paddingBottom: onPressAvatar(onInviteSent[5]).space.PX_16 + onPressAvatar(onInviteSent[13])({ isKeyboardAwareOnAndroid: false }).insets.bottom, paddingHorizontal: onPressAvatar(onInviteSent[5]).space.PX_12 };
-  obj.contentContainerStyle = obj;
-  obj.bounces = false;
-  obj.renderItem = callback;
-  obj.data = data;
-  obj.keyExtractor = keyExtractor;
-  obj.keyboardShouldPersistTaps = "always";
-  obj.ListEmptyComponent = FriendsEmptyComponent;
+  let obj = { contentContainerStyle: null, bounces: false, renderItem: null, data: null, keyExtractor: null, keyboardShouldPersistTaps: "always", ListEmptyComponent: null };
+  obj = { paddingBottom: null, paddingHorizontal: null };
+  obj[0] = onPressAvatar(onInviteSent[5]).space.PX_16 + onPressAvatar(onInviteSent[13])({ isKeyboardAwareOnAndroid: false }).insets.bottom;
+  obj[1] = onPressAvatar(onInviteSent[5]).space.PX_12;
+  obj[0] = obj;
+  obj[2] = callback;
+  obj[3] = data;
+  obj[4] = keyExtractor;
+  obj[6] = FriendsEmptyComponent;
   return source(code(onInviteSent[14]).BottomSheetFlatList, obj);
 };

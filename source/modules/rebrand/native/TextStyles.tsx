@@ -1,10 +1,10 @@
-// Module ID: 5087
-// Function ID: 43852
+// Module ID: 5109
+// Function ID: 5110
 // Name: createTextStyle
-// Dependencies: [653, 2]
+// Dependencies: [676, 2]
 // Exports: default
 
-// Module 5087 (createTextStyle)
+// Module 5109 (createTextStyle)
 import { Fonts } from "ME";
 
 let closure_1 = { 10: 10, 11: 11, 12: 12, 13: 13, 14: 14, 16: 16, 18: 17, 20: 20, 24: 25, 32: 34 };
@@ -17,25 +17,22 @@ export default function createTextStyle(fontFamily, color, arg2, uppercase) {
     obj.color = color;
   }
   uppercase = undefined;
-  if (null != uppercase) {
+  if (uppercase != null) {
     uppercase = uppercase.uppercase;
   }
   if (true === uppercase) {
     obj.textTransform = "uppercase";
     let tmp3 = tmp <= 14;
     if (tmp3) {
-      let tmp5 = fontFamily === Fonts.DISPLAY_EXTRABOLD;
-      if (!tmp5) {
-        tmp5 = fontFamily === Fonts.DISPLAY_SEMIBOLD;
-      }
-      tmp3 = tmp5;
+      tmp3 = fontFamily === Fonts.DISPLAY_EXTRABOLD || fontFamily === Fonts.DISPLAY_SEMIBOLD;
+      const tmp4 = fontFamily === Fonts.DISPLAY_EXTRABOLD || fontFamily === Fonts.DISPLAY_SEMIBOLD;
     }
     if (tmp3) {
       obj.letterSpacing = 0.2;
     }
   }
   let marginBottom;
-  if (null != uppercase) {
+  if (uppercase != null) {
     marginBottom = uppercase.marginBottom;
   }
   if (null != marginBottom) {

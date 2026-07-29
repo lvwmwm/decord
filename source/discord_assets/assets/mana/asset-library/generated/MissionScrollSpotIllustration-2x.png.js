@@ -1,9 +1,9 @@
-// Module ID: 7257
-// Function ID: 60157
+// Module ID: 7277
+// Function ID: 7278
 // Name: metadata
 // Dependencies: [2]
 
-// Module 7257 (metadata)
+// Module 7277 (metadata)
 const result = require("set").fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/MissionScrollSpotIllustration-2x.png.js");
 
 export default "https://cdn.discordapp.com/assets/content/87653cfd0d788f2ae18a8dc64c643cdf09d6d057c40c8e7d6b18335a4f57c49b.png";

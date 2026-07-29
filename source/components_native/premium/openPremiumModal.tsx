@@ -1,14 +1,12 @@
-// Module ID: 9297
-// Function ID: 72700
+// Module ID: 9321
+// Function ID: 9322
 // Name: openPremiumModal
-// Dependencies: [4372, 6305, 1935, 2]
+// Dependencies: [4395, 6326, 1959, 2]
 // Exports: default
 
-// Module 9297 (openPremiumModal)
-const result = require("maybeLoadBundle").fileFinishedImporting("components_native/premium/openPremiumModal.tsx");
+// Module 9321 (openPremiumModal)
+const result = require("asyncRequireImpl").fileFinishedImporting("components_native/premium/openPremiumModal.tsx");
 
-export default function openPremiumModal(merged) {
-  let obj = importDefault(4372);
-  obj = { presentation: "modal" };
-  return obj.pushLazy(require(1935) /* maybeLoadBundle */(6305, dependencyMap.paths), merged, "PREMIUM_KEY", obj);
+export default function openPremiumModal(closure_0) {
+  return importDefault(4395).pushLazy(require(1959) /* asyncRequireImpl */(6326, dependencyMap.paths), closure_0, "PREMIUM_KEY", { presentation: "modal" });
 };

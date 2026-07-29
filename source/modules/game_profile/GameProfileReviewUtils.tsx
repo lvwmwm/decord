@@ -1,27 +1,27 @@
-// Module ID: 8499
-// Function ID: 67531
+// Module ID: 8523
+// Function ID: 8524
 // Name: getSteamReviewScoreDescriptionColor
-// Dependencies: [4199, 1212, 2]
+// Dependencies: [4223, 1236, 2]
 // Exports: canShowLocalizedSteamReview, getSteamReviewScoreDescriptionColor, getSteamReviewScoreDescriptionIntl
 
-// Module 8499 (getSteamReviewScoreDescriptionColor)
+// Module 8523 (getSteamReviewScoreDescriptionColor)
 const result = require("set").fileFinishedImporting("modules/game_profile/GameProfileReviewUtils.tsx");
 
 export const getSteamReviewScoreDescriptionColor = function getSteamReviewScoreDescriptionColor(NO_USER_REVIEWS) {
-  if (require(4199) /* _isNativeReflectConstruct */.SteamReviewScoreDescription.NO_USER_REVIEWS === NO_USER_REVIEWS) {
+  if (require(4223) /* GameTheme */.SteamReviewScoreDescription.NO_USER_REVIEWS === NO_USER_REVIEWS) {
     return "text-subtle";
   } else {
-    if (require(4199) /* _isNativeReflectConstruct */.SteamReviewScoreDescription.OVERWHELMINGLY_POSITIVE !== NO_USER_REVIEWS) {
-      if (require(4199) /* _isNativeReflectConstruct */.SteamReviewScoreDescription.VERY_POSITIVE !== NO_USER_REVIEWS) {
-        if (require(4199) /* _isNativeReflectConstruct */.SteamReviewScoreDescription.POSITIVE !== NO_USER_REVIEWS) {
-          if (require(4199) /* _isNativeReflectConstruct */.SteamReviewScoreDescription.MOSTLY_POSITIVE !== NO_USER_REVIEWS) {
-            if (require(4199) /* _isNativeReflectConstruct */.SteamReviewScoreDescription.MIXED === NO_USER_REVIEWS) {
+    if (tmp(4223).SteamReviewScoreDescription.OVERWHELMINGLY_POSITIVE !== NO_USER_REVIEWS) {
+      if (tmp(4223).SteamReviewScoreDescription.VERY_POSITIVE !== NO_USER_REVIEWS) {
+        if (tmp(4223).SteamReviewScoreDescription.POSITIVE !== NO_USER_REVIEWS) {
+          if (tmp(4223).SteamReviewScoreDescription.MOSTLY_POSITIVE !== NO_USER_REVIEWS) {
+            if (tmp(4223).SteamReviewScoreDescription.MIXED === NO_USER_REVIEWS) {
               return "steam-review-text-mixed";
             } else {
-              if (require(4199) /* _isNativeReflectConstruct */.SteamReviewScoreDescription.MOSTLY_NEGATIVE !== NO_USER_REVIEWS) {
-                if (require(4199) /* _isNativeReflectConstruct */.SteamReviewScoreDescription.NEGATIVE !== NO_USER_REVIEWS) {
-                  if (require(4199) /* _isNativeReflectConstruct */.SteamReviewScoreDescription.VERY_NEGATIVE !== NO_USER_REVIEWS) {
-                    if (require(4199) /* _isNativeReflectConstruct */.SteamReviewScoreDescription.OVERWHELMINGLY_NEGATIVE !== NO_USER_REVIEWS) {
+              if (tmp(4223).SteamReviewScoreDescription.MOSTLY_NEGATIVE !== NO_USER_REVIEWS) {
+                if (tmp(4223).SteamReviewScoreDescription.NEGATIVE !== NO_USER_REVIEWS) {
+                  if (tmp(4223).SteamReviewScoreDescription.VERY_NEGATIVE !== NO_USER_REVIEWS) {
+                    if (tmp(4223).SteamReviewScoreDescription.OVERWHELMINGLY_NEGATIVE !== NO_USER_REVIEWS) {
                       return "text-subtle";
                     }
                   }
@@ -37,36 +37,36 @@ export const getSteamReviewScoreDescriptionColor = function getSteamReviewScoreD
   }
 };
 export const getSteamReviewScoreDescriptionIntl = function getSteamReviewScoreDescriptionIntl(result) {
-  if (require(4199) /* _isNativeReflectConstruct */.SteamReviewScoreDescription.NO_USER_REVIEWS === result) {
-    const intl10 = require(1212) /* getSystemLocale */.intl;
-    return intl10.string(require(1212) /* getSystemLocale */.t.CLMt8J);
-  } else if (require(4199) /* _isNativeReflectConstruct */.SteamReviewScoreDescription.OVERWHELMINGLY_POSITIVE === result) {
-    const intl9 = require(1212) /* getSystemLocale */.intl;
-    return intl9.string(require(1212) /* getSystemLocale */.t["75sx1S"]);
-  } else if (require(4199) /* _isNativeReflectConstruct */.SteamReviewScoreDescription.VERY_POSITIVE === result) {
-    const intl8 = require(1212) /* getSystemLocale */.intl;
-    return intl8.string(require(1212) /* getSystemLocale */.t["EkOVg+"]);
-  } else if (require(4199) /* _isNativeReflectConstruct */.SteamReviewScoreDescription.POSITIVE === result) {
-    const intl7 = require(1212) /* getSystemLocale */.intl;
-    return intl7.string(require(1212) /* getSystemLocale */.t.ZUkFtr);
-  } else if (require(4199) /* _isNativeReflectConstruct */.SteamReviewScoreDescription.MOSTLY_POSITIVE === result) {
-    const intl6 = require(1212) /* getSystemLocale */.intl;
-    return intl6.string(require(1212) /* getSystemLocale */.t.M7Z09a);
-  } else if (require(4199) /* _isNativeReflectConstruct */.SteamReviewScoreDescription.MIXED === result) {
-    const intl5 = require(1212) /* getSystemLocale */.intl;
-    return intl5.string(require(1212) /* getSystemLocale */.t.c8yuHR);
-  } else if (require(4199) /* _isNativeReflectConstruct */.SteamReviewScoreDescription.MOSTLY_NEGATIVE === result) {
-    const intl4 = require(1212) /* getSystemLocale */.intl;
-    return intl4.string(require(1212) /* getSystemLocale */.t.H0MSjG);
-  } else if (require(4199) /* _isNativeReflectConstruct */.SteamReviewScoreDescription.NEGATIVE === result) {
-    const intl3 = require(1212) /* getSystemLocale */.intl;
-    return intl3.string(require(1212) /* getSystemLocale */.t.vpLrgz);
-  } else if (require(4199) /* _isNativeReflectConstruct */.SteamReviewScoreDescription.VERY_NEGATIVE === result) {
-    const intl2 = require(1212) /* getSystemLocale */.intl;
-    return intl2.string(require(1212) /* getSystemLocale */.t["5spYuX"]);
-  } else if (require(4199) /* _isNativeReflectConstruct */.SteamReviewScoreDescription.OVERWHELMINGLY_NEGATIVE === result) {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(require(1212) /* getSystemLocale */.t.A8uk5J);
+  if (require(4223) /* GameTheme */.SteamReviewScoreDescription.NO_USER_REVIEWS === result) {
+    const intl10 = tmp(1236).intl;
+    return intl10.string(tmp(1236).t.CLMt8J);
+  } else if (tmp(4223).SteamReviewScoreDescription.OVERWHELMINGLY_POSITIVE === result) {
+    const intl9 = tmp(1236).intl;
+    return intl9.string(tmp(1236).t["75sx1S"]);
+  } else if (tmp(4223).SteamReviewScoreDescription.VERY_POSITIVE === result) {
+    const intl8 = tmp(1236).intl;
+    return intl8.string(tmp(1236).t["EkOVg+"]);
+  } else if (tmp(4223).SteamReviewScoreDescription.POSITIVE === result) {
+    const intl7 = tmp(1236).intl;
+    return intl7.string(tmp(1236).t.ZUkFtr);
+  } else if (tmp(4223).SteamReviewScoreDescription.MOSTLY_POSITIVE === result) {
+    const intl6 = tmp(1236).intl;
+    return intl6.string(tmp(1236).t.M7Z09a);
+  } else if (tmp(4223).SteamReviewScoreDescription.MIXED === result) {
+    const intl5 = tmp(1236).intl;
+    return intl5.string(tmp(1236).t.c8yuHR);
+  } else if (tmp(4223).SteamReviewScoreDescription.MOSTLY_NEGATIVE === result) {
+    const intl4 = tmp(1236).intl;
+    return intl4.string(tmp(1236).t.H0MSjG);
+  } else if (tmp(4223).SteamReviewScoreDescription.NEGATIVE === result) {
+    const intl3 = tmp(1236).intl;
+    return intl3.string(tmp(1236).t.vpLrgz);
+  } else if (tmp(4223).SteamReviewScoreDescription.VERY_NEGATIVE === result) {
+    const intl2 = tmp(1236).intl;
+    return intl2.string(tmp(1236).t["5spYuX"]);
+  } else if (tmp(4223).SteamReviewScoreDescription.OVERWHELMINGLY_NEGATIVE === result) {
+    const intl = tmp(1236).intl;
+    return intl.string(tmp(1236).t.A8uk5J);
   } else {
     return null;
   }

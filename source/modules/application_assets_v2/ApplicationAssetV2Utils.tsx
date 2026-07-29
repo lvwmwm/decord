@@ -1,10 +1,10 @@
-// Module ID: 12146
-// Function ID: 95037
+// Module ID: 12170
+// Function ID: 12171
 // Name: getApplicationAssetUrl
-// Dependencies: [507, 1426, 2]
+// Dependencies: [530, 1450, 2]
 // Exports: getApplicationAssetUrl
 
-// Module 12146 (getApplicationAssetUrl)
+// Module 12170 (getApplicationAssetUrl)
 let result = require("set").fileFinishedImporting("modules/application_assets_v2/ApplicationAssetV2Utils.tsx");
 
 export const getApplicationAssetUrl = function getApplicationAssetUrl(closure_1, asset_id, width) {
@@ -17,14 +17,14 @@ export const getApplicationAssetUrl = function getApplicationAssetUrl(closure_1,
   } else {
     const _URL = URL;
     const _HermesInternal = HermesInternal;
-    str5 = new URL("" + require(507) /* _isNativeReflectConstruct */.getAPIBaseURL() + "/applications/" + closure_1 + "/app-assets/" + asset_id.asset_id + ".webp");
-    const obj = require(507) /* _isNativeReflectConstruct */;
+    str5 = new URL("" + require(530) /* sendRequest */.getAPIBaseURL() + "/applications/" + closure_1 + "/app-assets/" + asset_id.asset_id + ".webp");
+    const obj = require(530) /* sendRequest */;
   }
   if (null != width) {
     const searchParams = str5.searchParams;
-    const obj2 = require(1426) /* isAttachmentLadderEnabled */;
-    const result = searchParams.set("size", require(1426) /* isAttachmentLadderEnabled */.getBestMediaProxySize(width).toString());
-    const str11 = require(1426) /* isAttachmentLadderEnabled */.getBestMediaProxySize(width);
+    const obj2 = require(1450) /* isAttachmentLadderEnabled */;
+    const result = searchParams.set("size", require(1450) /* isAttachmentLadderEnabled */.getBestMediaProxySize(width).toString());
+    const str11 = require(1450) /* isAttachmentLadderEnabled */.getBestMediaProxySize(width);
   }
   if (asset_id.metadata.is_animated) {
     const searchParams2 = str5.searchParams;

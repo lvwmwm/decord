@@ -1,199 +1,202 @@
-// Module ID: 14855
-// Function ID: 113148
-// Name: _createForOfIteratorHelperLoose
-// Dependencies: [5, 57, 31, 27, 13772, 14834, 14835, 33, 4165, 689, 1212, 9169, 1456, 14832, 14850, 14833, 668, 14849, 14852, 13773, 6731, 9181, 9191, 6706, 4578, 5620, 2]
+// Module ID: 14881
+// Function ID: 14882
+// Name: RegisterDisplayName
+// Dependencies: [5, 32, 19, 17, 13793, 14860, 14861, 21, 4189, 712, 1236, 9193, 1480, 14858, 14876, 14859, 691, 14875, 14878, 13794, 6752, 9205, 9215, 6727, 4600, 5638, 2]
 // Exports: default
 
-// Module 14855 (_createForOfIteratorHelperLoose)
+// Module 14881 (RegisterDisplayName)
 import closure_3 from "useRegistrationUIStore";
 import _slicedToArray from "_slicedToArray";
-import result from "result";
-import { View } from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import module_13794 from "module_13794";
+import { View } from "useInitialRegistrationStep";
+import isRateLimited from "isRateLimited";
 import useRegistrationUIStore from "useRegistrationUIStore";
 import RegistrationTransitionActionTypes from "RegistrationTransitionActionTypes";
-import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import jsxProd from "getError";
+import createCacheKey from "createCacheKey";
 
-let closure_10;
-let closure_11;
+let c10;
+let c9;
 let closure_12;
-let closure_13;
-let closure_8;
-let closure_9;
+let map1;
+let metroImportAll;
+let unpackModuleId;
 const require = arg1;
-function _createForOfIteratorHelperLoose(iterable) {
-  let closure_0 = iterable;
-  iterable = "undefined" !== typeof Symbol;
-  if (iterable) {
-    const _Symbol = Symbol;
-    iterable = iterable[Symbol.iterator];
-  }
-  if (!iterable) {
-    iterable = iterable[Symbol.iterator];
-  }
-  if (iterable) {
-    const iter = iterable.call(iterable);
-    const next = iter.next;
-    return next.bind(iter);
-  } else {
-    const _Array = Array;
-    let tmp = iterable;
-    if (!Array.isArray(iterable)) {
-      let tmp2;
-      if (iterable) {
-        if ("string" === typeof iterable) {
-          tmp2 = _arrayLikeToArray(iterable, undefined);
-        } else {
-          const toString = {}.toString;
-          const substr = toString.call(iterable).slice(8, -1);
-          let name = substr;
-          if (tmp3) {
-            name = iterable.constructor.name;
-          }
-          if ("Map" !== name) {
-            if ("Set" !== name) {
-              if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(iterable, undefined);
-              } else {
-                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
-              }
-            }
-            tmp2 = arr;
-          }
-          const _Array2 = Array;
-          arr = Array.from(iterable);
-          const callResult = toString.call(iterable);
-          tmp3 = "Object" === substr && iterable.constructor;
-        }
-      }
-      tmp = tmp2;
-      if (!tmp2) {
-        const _TypeError = TypeError;
-        const typeError = new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
-        throw typeError;
-      }
-    }
-    if (tmp) {
-      closure_0 = tmp;
-    }
-    let c1 = 0;
-    return () => {
-      if (closure_1 >= length.length) {
-        let obj = { done: true };
-      } else {
-        obj = { done: false };
-        closure_1 = tmp3 + 1;
-        obj.value = length[+closure_1];
-      }
-      return obj;
-    };
-  }
-}
-function _arrayLikeToArray(arg0, arg1) {
-  let length;
-  if (tmp) {
-    length = arg0.length;
-  }
-  const ArrayResult = Array(length);
-  for (let num = 0; num < length; num = num + 1) {
-    ArrayResult[num] = arg0[num];
-  }
-  return ArrayResult;
-}
-({ updateRegistrationOptions: closure_8, useRegistrationUIStore: closure_9 } = useRegistrationUIStore);
-({ RegisterTransitionSteps: closure_10, RegistrationTransitionActionTypes: closure_11 } = RegistrationTransitionActionTypes);
-({ jsx: closure_12, jsxs: closure_13 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { marginTop: require("_createForOfIteratorHelperLoose").space.PX_24 };
-_createForOfIteratorHelperLoose.globalName = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.button = { marginTop: require("_createForOfIteratorHelperLoose").space.PX_24 };
-_createForOfIteratorHelperLoose.page = { flex: 1 };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+({ updateRegistrationOptions: metroImportAll, useRegistrationUIStore: c9 } = useRegistrationUIStore);
+({ RegisterTransitionSteps: c10, RegistrationTransitionActionTypes: unpackModuleId } = RegistrationTransitionActionTypes);
+({ jsx: closure_12, jsxs: map1 } = jsxProd);
+createCacheKey = { globalName: null, button: null, page: null };
+createCacheKey = { marginTop: require("Themes").space.PX_24 };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { marginTop: require("Themes").space.PX_24 };
+createCacheKey[2] = { flex: 1 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
 let closure_15 = ["discord", "hypesquad", "snowsgiving", "system message", "system mesage", "sustem mesage", "sustem message"];
 let closure_16 = ["everyone", "here"];
-let obj1 = { marginTop: require("_createForOfIteratorHelperLoose").space.PX_24 };
-const result = require("result").fileFinishedImporting("modules/auth/native/components/RegisterDisplayName.tsx");
+let obj1 = { marginTop: require("Themes").space.PX_24 };
+let result = require("noop").fileFinishedImporting("modules/auth/native/components/RegisterDisplayName.tsx");
 
 export default function RegisterDisplayName() {
-  const tmp = _createForOfIteratorHelperLoose();
-  let obj = navigation(str[12]);
-  navigation = obj.useNavigation();
-  let obj1 = callback;
+  const tmp = createCacheKey();
+  let obj = _require(str[12]);
+  const navigation = obj.useNavigation();
+  _require = navigation;
   const tmp7 = context(callback.useState(false), 2);
   const importDefault = tmp7[1];
-  const tmp4 = importDefault(str[11])();
+  let tmp4 = importDefault(str[11])();
   const tmp9 = context(callback.useState(() => {
-    const globalName = outer1_9.getState().registrationOptions.globalName;
-    let str = "";
-    if (null != globalName) {
-      str = globalName;
+    let str = state.getState().registrationOptions.globalName;
+    if (str == null) {
+      str = "";
     }
     return str;
   }), 2);
   str = tmp9[0];
-  let closure_3 = tmp9[1];
-  if (closure_16.includes(str)) {
-    const intl2 = navigation(str[10]).intl;
-    let stringResult = intl2.string(navigation(str[10]).t.WeJZyy);
-  } else {
-    const tmp12 = _createForOfIteratorHelperLoose(closure_15);
-    let iter = tmp12();
-    if (!iter.done) {
-      const formatted = str.toLowerCase();
-      while (!formatted.includes(tmp14)) {
-        let iter2 = tmp12();
-        iter = iter2;
+  callback = tmp9[1];
+  const tmp10 = (function getGlobalNameError(str) {
+    if (closure_16.includes(str)) {
+      const intl2 = options(str[10]).intl;
+      return intl2.string(options(str[10]).t.WeJZyy);
+    } else {
+      for (const item10009 of closure_15) {
+        let formatted = arg0.toLowerCase();
+        if (formatted.includes(item10009)) {
+          let tmp3 = options;
+          let tmp4 = str;
+          let intl = options(str[10]).intl;
+          let tmp6 = obj;
+          let stringResult = intl.string(options(str[10]).t.WeJZyy);
+          obj.return();
+          return stringResult;
+        }
       }
-      let intl = navigation(str[10]).intl;
-      stringResult = intl.string(navigation(str[10]).t.WeJZyy);
     }
-  }
-  context = obj1.useContext(tmp5(tmp3[13]).TrackRegistrationContext);
-  let tmp2Result = tmp2(tmp3[14]);
-  const tmp8 = callback((errors) => errors.errors);
-  tmp2Result(navigation(str[15]).getPreviousRegistrationTransitionStep(navigation(str[16]).AuthStates.REGISTER_DISPLAY_NAME));
-  tmp2Result = tmp2(tmp3[17]);
-  tmp2Result(navigation(str[16]).AuthStates.REGISTER_DISPLAY_NAME);
+  })(str);
+  context = callback.useContext(_require(str[13]).TrackRegistrationContext);
+  const tmp8 = callback2((errors) => errors.errors);
+  let obj1 = _require(str[15]);
+  importDefault(str[14])(obj1.getPreviousRegistrationTransitionStep(_require(str[16]).AuthStates.REGISTER_DISPLAY_NAME));
+  const tmp12 = importDefault(str[14]);
+  importDefault(str[17])(_require(str[16]).AuthStates.REGISTER_DISPLAY_NAME);
   const items = [context];
-  const effect = obj1.useEffect(() => {
+  const effect = callback.useEffect(() => {
     context({ step: outer1_10.ACCOUNT_DISPLAY_NAME, actionType: outer1_11.VIEWED });
   }, items);
-  const ref = obj1.useRef(null);
+  const ref = callback.useRef(null);
   importDefault(str[18])({ inputRef: ref });
+  _require = undefined;
+  _require = callback((arg0) => {
+    let closure_0 = arg0;
+    let c2 = 0;
+    let c3 = 0;
+    return (function*(arg0) {
+      if (c3 === 2) {
+        c3 = 3;
+        HermesBuiltin.throwTypeError();
+      } else if (tmp4 === 3) {
+        if (arg0 === 1) {
+          throw arg1;
+        } else if (arg0 === 2) {
+          let obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
+        } else {
+          return { value: "HermesInternal", done: null };
+        }
+      } else {
+        try {
+          c3 = 2;
+          if (0 === c2) {
+            if (arg0 === 1) {
+              c3 = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              c3 = 3;
+              obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            } else {
+              const callback2 = tmp2;
+              let obj1 = { globalName: null };
+              obj1[0] = callback;
+              outer2_8(obj1);
+              const registrationOptions = outer2_9.getState().registrationOptions;
+              const obj2 = { step: null, actionType: null };
+              obj2[0] = outer2_10.ACCOUNT_DISPLAY_NAME;
+              obj2[1] = outer2_11.SUBMITTED;
+              outer1_4(obj2);
+              let tmp6 = null != registrationOptions.username;
+              if (tmp6) {
+                tmp6 = "" !== registrationOptions.username;
+              }
+              if (!tmp6) {
+                outer1_1(true);
+                if (!outer2_7.wasRegistrationSuggestionFetched(tmp28)) {
+                  obj1 = callback2(str[19]);
+                  c2 = 1;
+                  c3 = 1;
+                  let obj3 = { value: null, done: false };
+                  obj3[0] = obj1.fetchSuggestionsRegistration(tmp28);
+                  return obj3;
+                }
+              }
+              obj3 = callback(str[15]);
+              const result = obj3.handleNextOrSubmitRegistration(callback(str[16]).AuthStates.REGISTER_DISPLAY_NAME, callback, outer1_4);
+              c3 = 3;
+              return { value: "HermesInternal", done: null };
+            }
+          } else if (arg0 === 1) {
+            c3 = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            c3 = 3;
+            obj = { value: null, done: true };
+            obj[0] = arg1;
+            return obj;
+          }
+          outer1_1(false);
+        } catch (tmp22) {
+          c3 = tmp;
+          throw tmp22;
+        }
+      }
+    })();
+  });
   const items1 = [navigation, context];
-  callback = obj1.useCallback((() => {
-    // CreateGeneratorClosureLongIndex (0x67)
-    let closure_0 = callback(tmp);
-    return function() {
-      return callback(...arguments);
-    };
-  })(), items1);
+  callback = callback.useCallback(function() {
+    const self = this;
+    const apply = closure_0.apply;
+    if (typeof apply === "unknown") {
+      let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+    } else {
+      applyArgumentsResult = apply(self, arguments);
+    }
+    return applyArgumentsResult;
+  }, items1);
   const items2 = [callback, navigation];
-  const layoutEffect = obj1.useLayoutEffect(() => {
-    navigation.setOptions({
+  const layoutEffect = callback.useLayoutEffect(() => {
+    options.setOptions({
       headerRight() {
-        const obj = {};
-        const intl = navigation(str[10]).intl;
-        obj.text = intl.string(navigation(str[10]).t["5Wxrcd"]);
-        obj.onPress = function onPress() {
-          return outer2_5(null);
+        const obj = { text: null, onPress: null };
+        const intl = outer1_0(outer1_2[10]).intl;
+        obj[0] = intl.string(outer1_0(outer1_2[10]).t["5Wxrcd"]);
+        obj[1] = function onPress() {
+          return callback(null);
         };
-        return outer2_12(navigation(str[20]).HeaderActionButton, obj);
+        return outer1_12(outer1_0(outer1_2[20]).HeaderActionButton, obj);
       }
     });
   }, items2);
-  const tmp29 = importDefault(str[21])("global_name", tmp8);
-  let tmp30 = stringResult;
-  if (null != tmp29) {
-    tmp30 = tmp29;
+  let tmp21 = importDefault(str[21])("global_name", tmp8);
+  if (tmp21 == null) {
+    tmp21 = tmp10;
   }
-  obj = {};
-  const tmp31 = closure_13;
-  const tmp5Result = navigation(str[15]);
-  const intl3 = navigation(str[10]).intl;
-  obj.headerText = intl3.string(navigation(str[10]).t.LYIh7j);
-  obj = { style: tmp.globalName };
+  obj = { headerText: null, children: null };
+  const tmp14 = importDefault(str[17]);
+  const tmp22 = closure_13;
+  let intl = tmp5(tmp3[10]).intl;
+  obj[0] = intl.string(_require(str[10]).t.LYIh7j);
+  obj = { style: tmp.globalName, children: null };
   obj1 = {
     ref,
     value: str,
@@ -206,39 +209,43 @@ export default function RegisterDisplayName() {
       return callback(str);
     },
     textContentType: "nickname",
-    errorMessage: tmp30
+    errorMessage: tmp21,
+    label: null,
+    description: null,
+    isClearable: true
   };
-  const intl4 = navigation(str[10]).intl;
-  obj1.label = intl4.string(navigation(str[10]).t["9AjdkD"]);
-  let stringResult1;
-  if (null == tmp30) {
-    const intl5 = navigation(str[10]).intl;
-    stringResult1 = intl5.string(navigation(str[10]).t.fbKwSs);
+  let intl2 = tmp5(tmp3[10]).intl;
+  obj1[7] = intl2.string(_require(str[10]).t["9AjdkD"]);
+  let stringResult;
+  if (null == tmp21) {
+    const intl3 = tmp5(tmp3[10]).intl;
+    stringResult = intl3.string(tmp5(tmp3[10]).t.fbKwSs);
   }
-  obj1.description = stringResult1;
-  obj1.isClearable = true;
-  obj.children = callback2(navigation(str[23]).TextInput, obj1);
-  const items3 = [callback2(View, obj), ];
-  const obj2 = { style: tmp.button };
-  const obj3 = { size: "lg", loading: tmp7[0] };
-  const intl6 = navigation(str[10]).intl;
-  obj3.text = intl6.string(navigation(str[10]).t.PDTjLN);
-  obj3.onPress = function onPress() {
+  obj1[8] = stringResult;
+  obj[1] = closure_12(_require(str[23]).TextInput, obj1);
+  const items3 = [closure_12(View, obj), ];
+  let obj2 = { style: tmp.button, children: null };
+  let obj3 = { size: "lg", loading: tmp7[0], text: null, onPress: null, disabled: null };
+  const intl4 = tmp5(tmp3[10]).intl;
+  obj3[2] = intl4.string(_require(str[10]).t.PDTjLN);
+  obj3[3] = function onPress() {
     return callback(str);
   };
-  let tmp40 = null != stringResult;
-  if (!tmp40) {
-    tmp40 = "" === str.trim();
+  let tmp27 = null != tmp10;
+  if (!tmp27) {
+    tmp27 = "" === str.trim();
   }
-  obj3.disabled = tmp40;
-  obj2.children = callback2(navigation(str[24]).Button, obj3);
-  items3[1] = callback2(View, obj2);
-  obj.children = items3;
-  const tmp31Result = tmp31(importDefault(str[22]), obj);
-  let tmp42 = tmp31Result;
+  obj3[4] = tmp27;
+  obj2[1] = closure_12(_require(str[24]).Button, obj3);
+  items3[1] = closure_12(View, obj2);
+  obj[1] = items3;
+  const tmp22Result = tmp22(importDefault(str[22]), obj);
+  let tmp24Result = tmp22Result;
   if (!tmp4) {
-    const obj4 = { style: tmp.page, children: tmp31Result };
-    tmp42 = callback2(importDefault(str[25]), obj4);
+    const obj4 = { style: null, children: null };
+    obj4[0] = tmp.page;
+    obj4[1] = tmp22Result;
+    tmp24Result = tmp24(tmp2(tmp3[25]), obj4);
   }
-  return tmp42;
+  return tmp24Result;
 };

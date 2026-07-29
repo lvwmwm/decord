@@ -1,18 +1,18 @@
-// Module ID: 10897
-// Function ID: 84515
+// Module ID: 10921
+// Function ID: 10922
 // Name: handleTapCommandMention
-// Dependencies: [31, 1348, 1455, 4601, 4602, 33, 5686, 4017, 4133, 1555, 4506, 1212, 1273, 10898, 3865, 5525, 3838, 6755, 5530, 10900, 4161, 4024, 10902, 9969, 2]
+// Dependencies: [19, 1372, 1479, 4623, 4624, 21, 5704, 4041, 4157, 1579, 4529, 1236, 1297, 10922, 3889, 5543, 3862, 6776, 5548, 10924, 4185, 4048, 10926, 9991, 2]
 // Exports: default
 
-// Module 10897 (handleTapCommandMention)
-import result from "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 10921 (handleTapCommandMention)
+import context from "context";
+import ensureGuildLoaded from "ensureGuildLoaded";
 import APP_LAUNCHER_BUILT_IN_SECTION_ICON from "APP_LAUNCHER_BUILT_IN_SECTION_ICON";
 import { SUB_COMMAND_KEY_SEPARATOR } from "TRUE_OPTION_NAME";
 import { COMMAND_SENTINEL } from "regExp";
-import { jsxs } from "jsxProd";
+import { jsxs } from "getBestActiveInput";
 
-let closure_5;
+let c5;
 let closure_6;
 const require = arg1;
 function handleTapCommandMention(channelId) {
@@ -36,13 +36,17 @@ function handleTapCommandMention(channelId) {
       }
       if (null != appLauncherNavigator) {
         if (null != channel) {
-          let obj = { name: constants.COMMAND_VIEW };
-          obj = { analyticsLocation: onSetCommand(sum1[6]).ApplicationCommandTriggerLocations.MENTION };
-          let obj1 = { commandId: sum1 };
-          obj.preSelectedCommand = obj1;
-          const obj2 = { type: "channel", channel };
-          obj.context = obj2;
-          obj.params = obj;
+          let obj = { name: null, params: null };
+          obj[0] = constants.COMMAND_VIEW;
+          obj = { analyticsLocation: null, preSelectedCommand: null, context: null };
+          obj[0] = onSetCommand(sum1[6]).ApplicationCommandTriggerLocations.MENTION;
+          let obj1 = { commandId: null };
+          obj1[0] = sum1;
+          obj[1] = obj1;
+          const obj2 = { type: "channel", channel: null };
+          obj2[1] = channel;
+          obj[2] = obj2;
+          obj[1] = obj;
           appLauncherNavigator.navigate(obj);
         }
       }
@@ -51,30 +55,29 @@ function handleTapCommandMention(channelId) {
       if (null != rootNavigationRef) {
         const state = rootNavigationRef.getState();
         let length;
-        if (null != state) {
+        if (state != null) {
           const routes = state.routes;
-          if (null != routes) {
+          if (routes != null) {
             length = routes.length;
           }
         }
         if (length > 1) {
           const state1 = rootNavigationRef.getState();
-          let length1;
-          if (null != state1) {
+          let num3;
+          if (state1 != null) {
             const routes1 = state1.routes;
-            if (null != routes1) {
-              length1 = routes1.length;
+            if (routes1 != null) {
+              num3 = routes1.length;
             }
           }
-          let num4 = 0;
-          if (null != length1) {
-            num4 = length1;
+          if (num3 == null) {
+            num3 = 0;
           }
-          if (num4 > 1) {
+          if (num3 > 1) {
             do {
               let goBackResult = rootNavigationRef.goBack();
-              num4 = num4 - 1;
-            } while (num4 > 1);
+              num3 = num3 - 1;
+            } while (num3 > 1);
           }
         }
       }
@@ -82,10 +85,10 @@ function handleTapCommandMention(channelId) {
       obj3.hideActionSheet();
       const _setTimeout = setTimeout;
       const timerId = setTimeout(() => {
-        let obj = { type: onSetCommand(sum1[9]).KeyboardTypes.APP_LAUNCHER };
+        let obj = { type: onSetCommand(sum1[9]).KeyboardTypes.APP_LAUNCHER, context: null };
         obj = { initialRouteName: outer1_5.COMMAND_VIEW, analyticsLocation: onSetCommand(sum1[6]).ApplicationCommandTriggerLocations.MENTION, preSelectedCommand: obj };
         obj = { commandId: sum1 };
-        obj.context = obj;
+        obj[1] = obj;
         return callback(obj);
       }, 0);
     }
@@ -93,53 +96,52 @@ function handleTapCommandMention(channelId) {
   if ("" === channelId.currentText) {
     onSetCommand();
   } else {
-    obj3 = {};
+    obj3 = { title: null, confirmText: null, onConfirm: null, cancelText: null, confirmColor: null, body: null };
     const intl = onSetCommand(sum1[11]).intl;
-    obj3.title = intl.string(onSetCommand(sum1[11]).t.pe26Cj);
+    obj3[0] = intl.string(onSetCommand(sum1[11]).t.pe26Cj);
     const intl2 = onSetCommand(sum1[11]).intl;
-    obj3.confirmText = intl2.string(onSetCommand(sum1[11]).t.VkKicb);
-    obj3.onConfirm = function onConfirm() {
+    obj3[1] = intl2.string(onSetCommand(sum1[11]).t.VkKicb);
+    obj3[2] = function onConfirm() {
       return onSetCommand();
     };
     const intl3 = onSetCommand(sum1[11]).intl;
-    obj3.cancelText = intl3.string(onSetCommand(sum1[11]).t["ETE/oC"]);
-    obj3.confirmColor = onSetCommand(sum1[12]).ButtonColors.BRAND;
+    obj3[3] = intl3.string(onSetCommand(sum1[11]).t["ETE/oC"]);
+    obj3[4] = onSetCommand(sum1[12]).ButtonColors.BRAND;
     const intl4 = onSetCommand(sum1[11]).intl;
-    obj3.body = intl4.string(onSetCommand(sum1[11]).t["+awCIy"]);
+    obj3[5] = intl4.string(onSetCommand(sum1[11]).t["+awCIy"]);
     importDefault(sum1[10]).show(obj3);
     const obj9 = importDefault(sum1[10]);
   }
 }
-function handleLongPressCommandMention(commandName, commandId) {
-  const _require = commandName;
-  let closure_1 = commandId;
-  let obj = {};
-  const intl = _require(1212).intl;
-  obj.label = intl.string(_require(1212).t["42H+Nb"]);
-  obj.IconComponent = _require(10898).SlashBoxIcon;
-  obj.onPress = function onPress() {
-    commandName(outer1_2[14]).presentCommandCopied();
-    const obj = commandName(outer1_2[14]);
-    commandName(outer1_2[15]).copy("" + outer1_8 + commandName);
+function handleLongPressCommandMention(arg0, arg1) {
+  const _require = arg0;
+  let closure_1 = arg1;
+  let obj = { label: null, IconComponent: null, onPress: null };
+  const intl = _require(1236).intl;
+  obj[0] = intl.string(_require(1236).t["42H+Nb"]);
+  obj[1] = _require(10922).SlashBoxIcon;
+  obj[2] = function onPress() {
+    callback(outer1_2[14]).presentCommandCopied();
+    const obj = callback(outer1_2[14]);
+    callback(outer1_2[15]).copy("" + outer1_8 + callback);
   };
   const items = [obj];
-  const DeveloperMode = _require(3838).DeveloperMode;
+  const DeveloperMode = _require(3862).DeveloperMode;
   if (DeveloperMode.getSetting()) {
-    obj = {};
-    const intl2 = _require(1212).intl;
-    obj.label = intl2.string(_require(1212).t.oJ1Muw);
-    obj.IconComponent = _require(6755).IdIcon;
-    obj.onPress = function onPress() {
-      commandName(outer1_2[14]).presentIdCopied();
-      const obj = commandName(outer1_2[14]);
-      commandName(outer1_2[15]).copy(closure_1);
+    obj = { label: null, IconComponent: null, onPress: null };
+    const intl2 = tmp(1236).intl;
+    obj[0] = intl2.string(tmp(1236).t.oJ1Muw);
+    obj[1] = tmp(6776).IdIcon;
+    obj[2] = function onPress() {
+      callback(outer1_2[14]).presentIdCopied();
+      const obj = callback(outer1_2[14]);
+      callback(outer1_2[15]).copy(closure_1);
     };
     items.push(obj);
   }
-  obj = { key: "LongPressCommandMention", options: items, hasIcons: true };
-  const result = _require(5530).showSimpleActionSheet(obj);
+  const result = _require(5548).showSimpleActionSheet({ key: "LongPressCommandMention", options: items, hasIcons: true });
 }
-({ AppLauncherRouteName: closure_5, useAppLauncherNavigation: closure_6 } = APP_LAUNCHER_BUILT_IN_SECTION_ICON);
+({ AppLauncherRouteName: c5, useAppLauncherNavigation: closure_6 } = APP_LAUNCHER_BUILT_IN_SECTION_ICON);
 let result = require("APP_LAUNCHER_BUILT_IN_SECTION_ICON").fileFinishedImporting("modules/markup/native/MarkupReactCommandRule.tsx");
 
 export default function MarkupReactCommandRule(node) {
@@ -147,118 +149,110 @@ export default function MarkupReactCommandRule(node) {
   let state;
   let style;
   node = node.node;
+  let closure_1;
+  let dependencyMap;
   ({ output, state, style } = node);
-  let closure_1 = null != React.useContext(node(10900).AppLauncherContext);
-  const dependencyMap = callback();
+  closure_1 = null != React.useContext(node(10924).AppLauncherContext);
+  dependencyMap = callback();
   let obj = {
     style,
     variant: "text-md/bold",
     onPress() {
       let obj = node(table[21]);
       const bestActiveInput = obj.getBestActiveInput();
-      obj = {};
       let tmp2;
       if (closure_1) {
         tmp2 = table;
       }
-      obj.appLauncherNavigator = tmp2;
-      ({ channelId: obj3.channelId, commandId: obj3.commandId, commandName: obj3.commandName } = bestActiveInput);
-      let text;
-      if (null != bestActiveInput) {
-        text = bestActiveInput.getText();
+      obj = { appLauncherNavigator: tmp2, channelId: bestActiveInput.channelId, commandId: bestActiveInput.commandId, commandName: bestActiveInput.commandName, currentText: null, onOpenCustomKeyboard: null, onSetCommand: null };
+      let str;
+      if (bestActiveInput != null) {
+        str = bestActiveInput.getText();
       }
-      let str = "";
-      if (null != text) {
-        str = text;
+      if (str == null) {
+        str = "";
       }
-      obj.currentText = str;
-      obj.onOpenCustomKeyboard = function onOpenCustomKeyboard(arg0) {
+      obj[4] = str;
+      obj[5] = function onOpenCustomKeyboard(arg0) {
         let openCustomKeyboardResult;
-        if (null != bestActiveInput) {
+        if (bestActiveInput != null) {
           openCustomKeyboardResult = bestActiveInput.openCustomKeyboard(arg0);
         }
         return openCustomKeyboardResult;
       };
-      obj.onSetCommand = function onSetCommand() {
+      obj[6] = function onSetCommand() {
         let commandId;
         let commandName;
-        callback(10902)();
-        callback(4133).hideActionSheet();
-        if (null != bestActiveInput) {
-          bestActiveInput.openSystemKeyboard();
+        callback(10926)();
+        callback(4157).hideActionSheet();
+        if (bestActiveInput != null) {
+          obj2.openSystemKeyboard();
         }
-        let tmp5 = null == bestActiveInput;
-        if (!tmp5) {
-          const applicationCommandManager = bestActiveInput.getApplicationCommandManager();
-          tmp5 = null == applicationCommandManager;
-          const obj2 = applicationCommandManager;
-        }
-        if (!tmp5) {
-          ({ commandId, commandName } = bestActiveInput);
-          obj2.setPartialCommand(commandId, commandName, node(5686).ApplicationCommandTriggerLocations.MENTION);
+        if (bestActiveInput != null) {
+          const applicationCommandManager = obj2.getApplicationCommandManager();
+          if (applicationCommandManager != null) {
+            ({ commandId, commandName } = bestActiveInput);
+            applicationCommandManager.setPartialCommand(commandId, commandName, node(5704).ApplicationCommandTriggerLocations.MENTION);
+          }
         }
       };
       outer1_10(obj);
     },
     onLongPress() {
       outer1_11(node.commandName, node.commandId);
-    }
+    },
+    children: null
   };
-  const items = ["/", node(9969).smartOutput(node, output, state)];
-  obj.children = items;
-  return jsxs(node(4161).Text, {
+  const items = ["/", node(9991).smartOutput(node, output, state)];
+  obj[4] = items;
+  return jsxs(node(4185).Text, {
     style,
     variant: "text-md/bold",
     onPress() {
       let obj = node(table[21]);
       const bestActiveInput = obj.getBestActiveInput();
-      obj = {};
       let tmp2;
       if (closure_1) {
         tmp2 = table;
       }
-      obj.appLauncherNavigator = tmp2;
-      ({ channelId: obj3.channelId, commandId: obj3.commandId, commandName: obj3.commandName } = bestActiveInput);
-      let text;
-      if (null != bestActiveInput) {
-        text = bestActiveInput.getText();
+      obj = { appLauncherNavigator: tmp2, channelId: bestActiveInput.channelId, commandId: bestActiveInput.commandId, commandName: bestActiveInput.commandName, currentText: null, onOpenCustomKeyboard: null, onSetCommand: null };
+      let str;
+      if (bestActiveInput != null) {
+        str = bestActiveInput.getText();
       }
-      let str = "";
-      if (null != text) {
-        str = text;
+      if (str == null) {
+        str = "";
       }
-      obj.currentText = str;
-      obj.onOpenCustomKeyboard = function onOpenCustomKeyboard(arg0) {
+      obj[4] = str;
+      obj[5] = function onOpenCustomKeyboard(arg0) {
         let openCustomKeyboardResult;
-        if (null != bestActiveInput) {
+        if (bestActiveInput != null) {
           openCustomKeyboardResult = bestActiveInput.openCustomKeyboard(arg0);
         }
         return openCustomKeyboardResult;
       };
-      obj.onSetCommand = function onSetCommand() {
+      obj[6] = function onSetCommand() {
         let commandId;
         let commandName;
-        callback(10902)();
-        callback(4133).hideActionSheet();
-        if (null != bestActiveInput) {
-          bestActiveInput.openSystemKeyboard();
+        callback(10926)();
+        callback(4157).hideActionSheet();
+        if (bestActiveInput != null) {
+          obj2.openSystemKeyboard();
         }
-        let tmp5 = null == bestActiveInput;
-        if (!tmp5) {
-          const applicationCommandManager = bestActiveInput.getApplicationCommandManager();
-          tmp5 = null == applicationCommandManager;
-          const obj2 = applicationCommandManager;
-        }
-        if (!tmp5) {
-          ({ commandId, commandName } = bestActiveInput);
-          obj2.setPartialCommand(commandId, commandName, node(5686).ApplicationCommandTriggerLocations.MENTION);
+        if (bestActiveInput != null) {
+          const applicationCommandManager = obj2.getApplicationCommandManager();
+          if (applicationCommandManager != null) {
+            ({ commandId, commandName } = bestActiveInput);
+            applicationCommandManager.setPartialCommand(commandId, commandName, node(5704).ApplicationCommandTriggerLocations.MENTION);
+          }
         }
       };
       outer1_10(obj);
     },
     onLongPress() {
       outer1_11(node.commandName, node.commandId);
-    }
+    },
+    children: null
   });
 };
 export { handleTapCommandMention };

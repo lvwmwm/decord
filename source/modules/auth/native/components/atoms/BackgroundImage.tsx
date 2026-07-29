@@ -1,19 +1,19 @@
-// Module ID: 9194
-// Function ID: 71985
+// Module ID: 9218
+// Function ID: 9219
 // Name: BackgroundImage
-// Dependencies: [31, 27, 33, 4101, 4011, 9195, 9196, 2]
+// Dependencies: [19, 17, 21, 4125, 4035, 9219, 9220, 2]
 // Exports: default
 
-// Module 9194 (BackgroundImage)
-import result from "result";
+// Module 9218 (BackgroundImage)
+import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { jsx } from "jsxProd";
 
-let closure_4;
-let closure_5;
+let c4;
+let c5;
 let closure_6;
 const require = arg1;
-({ Image: closure_4, View: closure_5, StyleSheet: closure_6 } = get_ActivityIndicator);
+({ Image: c4, View: c5, StyleSheet: closure_6 } = get_ActivityIndicator);
 const result = require("jsxProd").fileFinishedImporting("modules/auth/native/components/atoms/BackgroundImage.tsx");
 
 export default function BackgroundImage(backgroundImageSource) {
@@ -23,34 +23,29 @@ export default function BackgroundImage(backgroundImageSource) {
     flag = false;
   }
   let dependencyMap;
-  const tmp = flag(4101)();
+  const tmp = flag(4125)();
   dependencyMap = tmp;
   let items = [backgroundImageSource, flag, tmp];
-  let obj = { style: absoluteFill.absoluteFill };
+  let obj = { style: absoluteFill.absoluteFill, children: null };
   obj = {};
   const merged = Object.assign(React.useMemo(() => {
-    let obj = {};
     const items = [outer1_6.absoluteFill, ];
-    if (flag) {
-      obj = { width: "100%", height: "100%" };
-    } else {
-      obj = { width: "100%" };
-    }
-    items[1] = obj;
-    obj.style = items;
+    const obj = { style: items, source: null };
+    items[1] = flag ? { width: "100%", height: "100%" } : { width: "100%" };
     if (null != backgroundImageSource) {
-      let tmp4Result = backgroundImageSource;
+      obj[1] = backgroundImageSource;
+      return obj;
     } else {
-      if (obj3.isThemeDark(_undefined)) {
-        tmp4Result = tmp4(tmp5[5]);
+      let tmp2 = _undefined;
+      if (obj2.isThemeDark(_undefined)) {
+        tmp2 = tmp2[5];
+        let tmp4Result = tmp4(tmp2);
       } else {
-        tmp4Result = tmp4(tmp5[6]);
+        tmp4Result = tmp4(tmp2[6]);
       }
-      obj3 = backgroundImageSource(_undefined[4]);
+      obj2 = backgroundImageSource(_undefined[4]);
     }
-    obj.source = tmp4Result;
-    return obj;
   }, items));
-  obj.children = <closure_4 />;
+  obj[1] = <closure_4 />;
   return <closure_5 />;
 };

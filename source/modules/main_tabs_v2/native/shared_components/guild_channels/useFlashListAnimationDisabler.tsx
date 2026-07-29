@@ -1,11 +1,11 @@
-// Module ID: 13133
-// Function ID: 101274
+// Module ID: 13156
+// Function ID: 13157
 // Name: useFlashListAnimationDisabler
-// Dependencies: [31, 4026, 2]
+// Dependencies: [19, 4050, 2]
 // Exports: useFlashListAnimationDisabler
 
-// Module 13133 (useFlashListAnimationDisabler)
-import result from "result";
+// Module 13156 (useFlashListAnimationDisabler)
+import noop from "noop";
 
 const require = arg1;
 let closure_3 = { code: "function useFlashListAnimationDisablerTsx1(){const{lastId}=this.__closure;return lastId.get();}" };
@@ -13,12 +13,12 @@ let closure_4 = { code: "function useFlashListAnimationDisablerTsx2(current,prev
 let closure_5 = { code: "function useFlashListAnimationDisablerTsx3(finished){const{enableAnimation}=this.__closure;if(finished&&!enableAnimation.get()){enableAnimation.set(true);}}" };
 let result = require("set").fileFinishedImporting("modules/main_tabs_v2/native/shared_components/guild_channels/useFlashListAnimationDisabler.tsx");
 
-export const useFlashListAnimationDisabler = function useFlashListAnimationDisabler(UNDETERMINED) {
-  const _require = UNDETERMINED;
+export const useFlashListAnimationDisabler = function useFlashListAnimationDisabler(userId) {
+  const _require = userId;
   sharedValue = _require(sharedValue[1]).useSharedValue(false);
   const obj = _require(sharedValue[1]);
-  const sharedValue1 = _require(sharedValue[1]).useSharedValue(UNDETERMINED);
-  const items = [sharedValue1, UNDETERMINED];
+  const sharedValue1 = _require(sharedValue[1]).useSharedValue(userId);
+  const items = [sharedValue1, userId];
   const effect = sharedValue1.useEffect(() => {
     const result = sharedValue1.set(closure_0);
   }, items);

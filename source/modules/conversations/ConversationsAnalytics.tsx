@@ -1,101 +1,221 @@
-// Module ID: 9248
-// Function ID: 72306
-// Name: channelProps
-// Dependencies: [1348, 653, 675, 2]
+// Module ID: 9272
+// Function ID: 9273
+// Name: ConversationsAnalytics
+// Dependencies: [1372, 676, 698, 2]
 
-// Module 9248 (channelProps)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 9272 (ConversationsAnalytics)
+import ensureGuildLoaded from "ensureGuildLoaded";
 import { AnalyticEvents } from "ME";
 
-function channelProps(channelId) {
-  channel = channel.getChannel(channelId);
-  const obj = { channel_id: channelId };
-  let type;
-  if (null != channel) {
-    type = channel.type;
-  }
-  let tmp3 = null;
-  if (null != type) {
-    tmp3 = type;
-  }
-  obj.channel_type = tmp3;
-  let guild_id;
-  if (null != channel) {
-    guild_id = channel.guild_id;
-  }
-  let tmp5 = null;
-  if (null != guild_id) {
-    tmp5 = guild_id;
-  }
-  obj.guild_id = tmp5;
-  return obj;
-}
-const result = require("expandLocation").fileFinishedImporting("modules/conversations/ConversationsAnalytics.tsx");
+const result = require("expandEventProperties").fileFinishedImporting("modules/conversations/ConversationsAnalytics.tsx");
 
 export const ConversationsAnalytics = {
   trackEntrypointImpression(channelId) {
-    let obj = importDefault(675);
+    let obj = importDefault(698);
+    channelId = channelId.channelId;
+    const channel = store.getChannel(channelId);
+    obj = { channel_id: channelId, channel_type: null, guild_id: null };
+    let type;
+    if (channel != null) {
+      type = channel.type;
+    }
+    if (type == null) {
+      type = null;
+    }
+    obj[1] = type;
+    let guild_id;
+    if (channel != null) {
+      guild_id = channel.guild_id;
+    }
+    if (guild_id == null) {
+      guild_id = null;
+    }
     obj = {};
-    const merged = Object.assign(channelProps(channelId.channelId));
-    obj["conversation_count"] = channelId.conversationCount;
+    obj[2] = guild_id;
+    const merged = Object.assign(obj);
+    obj.conversation_count = channelId.conversationCount;
     obj.track(AnalyticEvents.TOPICAL_NAV_ENTRYPOINT_IMPRESSION, obj);
   },
   trackTopicsUnitImpression(channelId) {
-    let obj = importDefault(675);
+    let obj = importDefault(698);
+    channelId = channelId.channelId;
+    const channel = store.getChannel(channelId);
+    obj = { channel_id: channelId, channel_type: null, guild_id: null };
+    let type;
+    if (channel != null) {
+      type = channel.type;
+    }
+    if (type == null) {
+      type = null;
+    }
+    obj[1] = type;
+    let guild_id;
+    if (channel != null) {
+      guild_id = channel.guild_id;
+    }
+    if (guild_id == null) {
+      guild_id = null;
+    }
     obj = {};
-    const merged = Object.assign(channelProps(channelId.channelId));
-    obj["conversation_ids"] = channelId.conversationIds;
-    obj["is_focus_mode"] = channelId.isFocusMode;
+    obj[2] = guild_id;
+    const merged = Object.assign(obj);
+    ({ conversationIds: obj3.conversation_ids, isFocusMode: obj3.is_focus_mode } = channelId);
     obj.track(AnalyticEvents.TOPICAL_NAV_TOPICS_UNIT_IMPRESSION, obj);
   },
   trackPreviewImpression(channelId) {
-    let obj = importDefault(675);
+    let obj = importDefault(698);
+    channelId = channelId.channelId;
+    const channel = store.getChannel(channelId);
+    obj = { channel_id: channelId, channel_type: null, guild_id: null };
+    let type;
+    if (channel != null) {
+      type = channel.type;
+    }
+    if (type == null) {
+      type = null;
+    }
+    obj[1] = type;
+    let guild_id;
+    if (channel != null) {
+      guild_id = channel.guild_id;
+    }
+    if (guild_id == null) {
+      guild_id = null;
+    }
     obj = {};
-    const merged = Object.assign(channelProps(channelId.channelId));
-    obj["conversation_id"] = channelId.conversationId;
-    obj["is_focus_mode"] = channelId.isFocusMode;
+    obj[2] = guild_id;
+    const merged = Object.assign(obj);
+    ({ conversationId: obj3.conversation_id, isFocusMode: obj3.is_focus_mode } = channelId);
     obj.track(AnalyticEvents.TOPICAL_NAV_PREVIEW_IMPRESSION, obj);
   },
   trackTopicsUnitClicked(channelId) {
-    let obj = importDefault(675);
+    let obj = importDefault(698);
+    channelId = channelId.channelId;
+    const channel = store.getChannel(channelId);
+    obj = { channel_id: channelId, channel_type: null, guild_id: null };
+    let type;
+    if (channel != null) {
+      type = channel.type;
+    }
+    if (type == null) {
+      type = null;
+    }
+    obj[1] = type;
+    let guild_id;
+    if (channel != null) {
+      guild_id = channel.guild_id;
+    }
+    if (guild_id == null) {
+      guild_id = null;
+    }
     obj = {};
-    const merged = Object.assign(channelProps(channelId.channelId));
-    obj["conversation_id"] = channelId.conversationId;
-    obj["is_focus_mode"] = channelId.isFocusMode;
+    obj[2] = guild_id;
+    const merged = Object.assign(obj);
+    ({ conversationId: obj3.conversation_id, isFocusMode: obj3.is_focus_mode } = channelId);
     obj.track(AnalyticEvents.TOPICAL_NAV_TOPICS_UNIT_CLICKED, obj);
   },
   trackFocusModeImpression(channelId) {
-    let obj = importDefault(675);
+    let obj = importDefault(698);
+    channelId = channelId.channelId;
+    const channel = store.getChannel(channelId);
+    obj = { channel_id: channelId, channel_type: null, guild_id: null };
+    let type;
+    if (channel != null) {
+      type = channel.type;
+    }
+    if (type == null) {
+      type = null;
+    }
+    obj[1] = type;
+    let guild_id;
+    if (channel != null) {
+      guild_id = channel.guild_id;
+    }
+    if (guild_id == null) {
+      guild_id = null;
+    }
     obj = {};
-    const merged = Object.assign(channelProps(channelId.channelId));
-    obj["conversation_id"] = channelId.conversationId;
+    obj[2] = guild_id;
+    const merged = Object.assign(obj);
+    obj.conversation_id = channelId.conversationId;
     obj.track(AnalyticEvents.TOPICAL_NAV_FOCUS_MODE_IMPRESSION, obj);
   },
   trackFocusModeDismissed(channelId) {
-    let obj = importDefault(675);
+    let obj = importDefault(698);
+    channelId = channelId.channelId;
+    const channel = store.getChannel(channelId);
+    obj = { channel_id: channelId, channel_type: null, guild_id: null };
+    let type;
+    if (channel != null) {
+      type = channel.type;
+    }
+    if (type == null) {
+      type = null;
+    }
+    obj[1] = type;
+    let guild_id;
+    if (channel != null) {
+      guild_id = channel.guild_id;
+    }
+    if (guild_id == null) {
+      guild_id = null;
+    }
     obj = {};
-    const merged = Object.assign(channelProps(channelId.channelId));
-    obj["conversation_id"] = channelId.conversationId;
-    obj["dismiss_reason"] = channelId.dismissReason;
+    obj[2] = guild_id;
+    const merged = Object.assign(obj);
+    ({ conversationId: obj3.conversation_id, dismissReason: obj3.dismiss_reason } = channelId);
     obj.track(AnalyticEvents.TOPICAL_NAV_FOCUS_MODE_DISMISSED, obj);
   },
   trackThumbsClicked(channelId) {
-    let obj = importDefault(675);
+    let obj = importDefault(698);
+    channelId = channelId.channelId;
+    const channel = store.getChannel(channelId);
+    obj = { channel_id: channelId, channel_type: null, guild_id: null };
+    let type;
+    if (channel != null) {
+      type = channel.type;
+    }
+    if (type == null) {
+      type = null;
+    }
+    obj[1] = type;
+    let guild_id;
+    if (channel != null) {
+      guild_id = channel.guild_id;
+    }
+    if (guild_id == null) {
+      guild_id = null;
+    }
     obj = {};
-    const merged = Object.assign(channelProps(channelId.channelId));
-    obj["conversation_id"] = channelId.conversationId;
-    obj["is_thumbs_up"] = channelId.isThumbsUp;
-    obj["is_focus_mode"] = channelId.isFocusMode;
+    obj[2] = guild_id;
+    const merged = Object.assign(obj);
+    ({ conversationId: obj3.conversation_id, isThumbsUp: obj3.is_thumbs_up, isFocusMode: obj3.is_focus_mode } = channelId);
     obj.track(AnalyticEvents.TOPICAL_NAV_THUMBS_CLICKED, obj);
   },
   trackThumbsDownReasonSelected(channelId) {
-    let obj = importDefault(675);
+    let obj = importDefault(698);
+    channelId = channelId.channelId;
+    const channel = store.getChannel(channelId);
+    obj = { channel_id: channelId, channel_type: null, guild_id: null };
+    let type;
+    if (channel != null) {
+      type = channel.type;
+    }
+    if (type == null) {
+      type = null;
+    }
+    obj[1] = type;
+    let guild_id;
+    if (channel != null) {
+      guild_id = channel.guild_id;
+    }
+    if (guild_id == null) {
+      guild_id = null;
+    }
     obj = {};
-    const merged = Object.assign(channelProps(channelId.channelId));
-    obj["conversation_id"] = channelId.conversationId;
-    obj["is_focus_mode"] = channelId.isFocusMode;
-    obj["reasons"] = channelId.reasons;
-    obj["other_text"] = channelId.otherText;
+    obj[2] = guild_id;
+    const merged = Object.assign(obj);
+    ({ conversationId: obj3.conversation_id, isFocusMode: obj3.is_focus_mode, reasons: obj3.reasons, otherText: obj3.other_text } = channelId);
     obj.track(AnalyticEvents.TOPICAL_NAV_THUMBS_DOWN_REASON_SELECTED, obj);
   }
 };

@@ -1,17 +1,17 @@
-// Module ID: 8927
-// Function ID: 70444
+// Module ID: 8951
+// Function ID: 8952
 // Name: get ActivityIndicator
-// Dependencies: [27, 2]
+// Dependencies: [17, 2]
 
-// Module 8927 (get ActivityIndicator)
+// Module 8951 (get ActivityIndicator)
 import { NativeModules } from "get ActivityIndicator";
 
 const result = require("set").fileFinishedImporting("modules/samsung/native/SamsungManager.android.tsx");
 
 export default {
-  checkIfOAuthRequest(clientId) {
+  checkIfOAuthRequest(closure_0) {
     const Samsung = NativeModules.Samsung;
-    return Samsung.checkIfOAuthRequest(clientId);
+    return Samsung.checkIfOAuthRequest(closure_0);
   },
   showConnectionDisclaimer() {
     const Samsung = NativeModules.Samsung;
@@ -21,8 +21,8 @@ export default {
     const Samsung = NativeModules.Samsung;
     return Samsung.getAccountUrlAndAuthCode();
   },
-  finishSamsungAuthorization(arg0, arg1, outer1_5) {
+  finishSamsungAuthorization(arg0, arg1, closure_5) {
     const Samsung = NativeModules.Samsung;
-    return Samsung.finishSamsungAuthorization(arg0, arg1, outer1_5);
+    return Samsung.finishSamsungAuthorization(arg0, arg1, closure_5);
   }
 };

@@ -1,48 +1,57 @@
-// Module ID: 5817
-// Function ID: 50881
-// Name: FramesProductShelfBlockRecord
-// Dependencies: [6, 7, 5811, 2]
+// Module ID: 5835
+// Function ID: 5836
+// Name: fromServer
+// Dependencies: [5829, 2]
 
-// Module 5817 (FramesProductShelfBlockRecord)
-import _classCallCheck from "_classCallCheck";
-import _defineProperties from "_defineProperties";
-
-const require = arg1;
-const tmp2 = (() => {
-  class FramesProductShelfBlockRecord {
-    constructor(arg0) {
-      self = this;
-      tmp = outer1_2(this, FramesProductShelfBlockRecord);
-      this.type = FramesProductShelfBlockRecord(outer1_1[2]).ShopBlockType.FRAMES_PRODUCT_SHELF;
-      ({ title: this.title, category_sku_id: this.categorySkuId, category_store_listing_id: this.categoryStoreListingId, ranked_sku_ids } = arg0);
-      if (null == ranked_sku_ids) {
-        ranked_sku_ids = [];
-      }
-      self.rankedSkuIds = ranked_sku_ids;
-      background_image = arg0.desktop_background_image;
-      if (null == background_image) {
-        background_image = arg0.background_image;
-      }
-      self.desktopBackgroundImage = background_image;
-      background_image2 = arg0.mobile_background_image;
-      if (null == background_image2) {
-        background_image2 = arg0.background_image;
-      }
-      self.mobileBackgroundImage = background_image2;
-      self.buttonText = arg0.button_text;
-      return;
-    }
+// Module 5835 (fromServer)
+let prototype;
+prototype = function FramesProductShelfBlockRecord(desktop_background_image) {
+  let ranked_sku_ids;
+  const obj = Object.create(new.target.prototype);
+  obj.type = require(5829) /* ShopBlockType */.ShopBlockType.FRAMES_PRODUCT_SHELF;
+  ({ title: tmp.title, category_sku_id: tmp.categorySkuId, category_store_listing_id: tmp.categoryStoreListingId, ranked_sku_ids } = desktop_background_image);
+  if (ranked_sku_ids == null) {
+    ranked_sku_ids = [];
   }
-  const items = [
-    {
-      key: "fromServer",
-      value(desktop_background_image) {
-        return new FramesProductShelfBlockRecord(desktop_background_image);
-      }
-    }
-  ];
-  return callback(FramesProductShelfBlockRecord, null, items);
-})();
-const result = require("ShopBlockType").fileFinishedImporting("modules/collectibles/records/FramesProductShelfBlockRecord.tsx");
+  obj.rankedSkuIds = ranked_sku_ids;
+  let background_image = desktop_background_image.desktop_background_image;
+  if (background_image == null) {
+    background_image = desktop_background_image.background_image;
+  }
+  obj.desktopBackgroundImage = background_image;
+  let background_image2 = desktop_background_image.mobile_background_image;
+  if (background_image2 == null) {
+    background_image2 = desktop_background_image.background_image;
+  }
+  obj.mobileBackgroundImage = background_image2;
+  obj.buttonText = desktop_background_image.button_text;
+  return obj;
+}.prototype;
+prototype["fromServer"] = function fromServer(desktop_background_image) {
+  let ranked_sku_ids;
+  if (typeof prototype !== "find") {
+    HermesBuiltin.throwTypeError();
+  }
+  const obj = Object.create(prototype.prototype);
+  obj.type = require(5829) /* ShopBlockType */.ShopBlockType.FRAMES_PRODUCT_SHELF;
+  ({ title: tmp2.title, category_sku_id: tmp2.categorySkuId, category_store_listing_id: tmp2.categoryStoreListingId, ranked_sku_ids } = desktop_background_image);
+  if (ranked_sku_ids == null) {
+    ranked_sku_ids = [];
+  }
+  obj.rankedSkuIds = ranked_sku_ids;
+  let background_image = desktop_background_image.desktop_background_image;
+  if (background_image == null) {
+    background_image = desktop_background_image.background_image;
+  }
+  obj.desktopBackgroundImage = background_image;
+  let background_image2 = desktop_background_image.mobile_background_image;
+  if (background_image2 == null) {
+    background_image2 = desktop_background_image.background_image;
+  }
+  obj.mobileBackgroundImage = background_image2;
+  obj.buttonText = desktop_background_image.button_text;
+  return obj;
+};
+const result = require("set").fileFinishedImporting("modules/collectibles/records/FramesProductShelfBlockRecord.tsx");
 
-export const FramesProductShelfBlockRecord = tmp2;
+export const FramesProductShelfBlockRecord = prototype;

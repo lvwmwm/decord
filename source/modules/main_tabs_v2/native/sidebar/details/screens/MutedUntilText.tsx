@@ -1,18 +1,18 @@
-// Module ID: 10288
-// Function ID: 79424
+// Module ID: 10309
+// Function ID: 10310
 // Name: MutedUntilText
-// Dependencies: [31, 33, 4165, 1212, 4161, 2]
+// Dependencies: [19, 21, 4189, 1236, 4185, 2]
 // Exports: default
 
-// Module 10288 (MutedUntilText)
-import "result";
+// Module 10309 (MutedUntilText)
+import "noop";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
 const require = arg1;
 let obj = { SERVER: 0, [0]: "SERVER", CHANNEL: 1, [1]: "CHANNEL", DM: 2, [2]: "DM", CATEGORY: 3, [3]: "CATEGORY" };
-let closure_4 = _createForOfIteratorHelperLoose.createStyles({ formHintText: { lineHeight: 18, marginBottom: 8, marginTop: 8, paddingHorizontal: 16 } });
-const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/main_tabs_v2/native/sidebar/details/screens/MutedUntilText.tsx");
+let closure_4 = createCacheKey.createStyles({ formHintText: { lineHeight: 18, marginBottom: 8, marginTop: 8, paddingHorizontal: 16 } });
+const result = require("createCacheKey").fileFinishedImporting("modules/main_tabs_v2/native/sidebar/details/screens/MutedUntilText.tsx");
 
 export default function MutedUntilText(arg0) {
   let muteConfig;
@@ -22,46 +22,54 @@ export default function MutedUntilText(arg0) {
   if (null != muteConfig) {
     if (null != muteConfig.end_time) {
       if (obj.SERVER === type) {
-        let N2NXMd = require(1212) /* getSystemLocale */.t.MQfdK9;
-      } else if (obj.CHANNEL === type) {
-        N2NXMd = require(1212) /* getSystemLocale */.t["N/kd49"];
-      } else if (obj.DM === type) {
-        N2NXMd = require(1212) /* getSystemLocale */.t.c4aY0P;
-      } else if (obj.CATEGORY === type) {
-        N2NXMd = require(1212) /* getSystemLocale */.t.N2NXMd;
+        let N2NXMd = require(1236) /* getSystemLocale */.t.MQfdK9;
+        let tmp15 = require;
+      } else if (tmp12.CHANNEL === type) {
+        N2NXMd = require(1236) /* getSystemLocale */.t["N/kd49"];
+        tmp15 = require;
+      } else if (tmp12.DM === type) {
+        N2NXMd = require(1236) /* getSystemLocale */.t.c4aY0P;
+        tmp15 = require;
+      } else if (tmp12.CATEGORY === type) {
+        N2NXMd = require(1236) /* getSystemLocale */.t.N2NXMd;
+        tmp15 = require;
       } else {
         return null;
       }
-      obj = { style: tmp.formHintText, variant: "text-sm/medium", color: "text-muted" };
-      const intl5 = require(1212) /* getSystemLocale */.intl;
-      obj = {};
+      obj = { style: null, variant: "text-sm/medium", color: "text-muted", children: null };
+      obj[0] = tmp.formHintText;
+      const intl5 = tmp15(1236).intl;
+      obj = { endTime: null, endTimeHook: null };
       const _Date = Date;
       const date = new Date(muteConfig.end_time);
-      obj.endTime = date.toLocaleString(require(1212) /* getSystemLocale */.intl.currentLocale, { month: "numeric", day: "numeric", hour: "numeric", minute: "2-digit" });
-      obj.endTimeHook = function endTimeHook(children) {
-        const obj = { variant: "text-sm/medium", color: "control-brand-foreground", children };
-        return outer1_2(outer1_0(outer1_1[4]).Text, obj, "muted");
+      obj[0] = date.toLocaleString(tmp15(1236).intl.currentLocale, { month: "numeric", day: "numeric", hour: "numeric", minute: "2-digit" });
+      obj[1] = function endTimeHook(children) {
+        return callback2(callback(table[4]).Text, { variant: "text-sm/medium", color: "control-brand-foreground", children }, "muted");
       };
-      obj.children = intl5.format(N2NXMd, obj);
-      return jsx(require(4161) /* Text */.Text, {});
+      obj[3] = intl5.format(N2NXMd, obj);
+      return jsx(tmp15(4185).Text, { endTime: null, endTimeHook: null });
     }
   }
   if (obj.SERVER === type) {
-    const intl4 = require(1212) /* getSystemLocale */.intl;
-    let stringResult = intl4.string(require(1212) /* getSystemLocale */.t["/b/DU7"]);
-  } else if (obj.CHANNEL === type) {
-    const intl3 = require(1212) /* getSystemLocale */.intl;
-    stringResult = intl3.string(require(1212) /* getSystemLocale */.t.utURT8);
-  } else if (obj.DM === type) {
-    const intl2 = require(1212) /* getSystemLocale */.intl;
-    stringResult = intl2.string(require(1212) /* getSystemLocale */.t.jxF9er);
-  } else if (obj.CATEGORY === type) {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    stringResult = intl.string(require(1212) /* getSystemLocale */.t["6+wqqt"]);
+    const intl4 = require(1236) /* getSystemLocale */.intl;
+    let stringResult = intl4.string(require(1236) /* getSystemLocale */.t["/b/DU7"]);
+    let tmp3 = require;
+  } else if (tmp2.CHANNEL === type) {
+    const intl3 = require(1236) /* getSystemLocale */.intl;
+    stringResult = intl3.string(require(1236) /* getSystemLocale */.t.utURT8);
+    tmp3 = require;
+  } else if (tmp2.DM === type) {
+    const intl2 = require(1236) /* getSystemLocale */.intl;
+    stringResult = intl2.string(require(1236) /* getSystemLocale */.t.jxF9er);
+    tmp3 = require;
+  } else if (tmp2.CATEGORY === type) {
+    tmp3 = require;
+    const intl = require(1236) /* getSystemLocale */.intl;
+    stringResult = intl.string(require(1236) /* getSystemLocale */.t["6+wqqt"]);
   } else {
     return null;
   }
   obj = { style: tmp.formHintText, variant: "text-sm/medium", color: "text-muted", children: stringResult };
-  return jsx(require(4161) /* Text */.Text, { style: tmp.formHintText, variant: "text-sm/medium", color: "text-muted", children: stringResult });
+  return jsx(tmp3(4185).Text, { style: tmp.formHintText, variant: "text-sm/medium", color: "text-muted", children: stringResult });
 };
 export const MuteSettingType = obj;

@@ -1,11 +1,11 @@
-// Module ID: 10368
-// Function ID: 79971
+// Module ID: 10392
+// Function ID: 10393
 // Name: getChildMapping
-// Dependencies: [31, 2]
+// Dependencies: [19, 2]
 // Exports: getChildMapping, mergeChildMappings
 
-// Module 10368 (getChildMapping)
-import result from "result";
+// Module 10392 (getChildMapping)
+import noop from "noop";
 
 const result = require("set").fileFinishedImporting("../discord_common/js/packages/transition-group/TransitionChildMapping.tsx");
 
@@ -14,7 +14,7 @@ export const getChildMapping = function getChildMapping(children) {
   if (children) {
     const Children = obj.Children;
     const mapped = Children.map(children, (arg0) => arg0);
-    if (null != mapped) {
+    if (mapped != null) {
       const item = mapped.forEach((key) => {
         if (null != key.key) {
           obj[key] = key;
@@ -25,73 +25,65 @@ export const getChildMapping = function getChildMapping(children) {
   return obj;
 };
 export const mergeChildMappings = function mergeChildMappings(children, childMapping) {
-  let length2;
   let obj = children;
-  obj = childMapping;
   if (children === undefined) {
     obj = {};
   }
-  if (obj === undefined) {
+  obj = childMapping;
+  if (childMapping === undefined) {
     obj = {};
   }
-  function getValueForKey(key10020) {
-    if (obj.hasOwnProperty(key10020)) {
-      let tmp2 = obj[key10020];
-    } else {
-      tmp2 = obj[key10020];
-    }
-    return tmp2;
-  }
   obj = {};
-  const items = [];
-  let items1 = items;
-  let arr3 = items;
+  let items = [];
+  let arr2 = items;
   const keys = Object.keys();
   if (keys !== undefined) {
-    arr3 = items1;
+    arr2 = items;
     while (keys[tmp] !== undefined) {
-      let tmp7 = tmp4;
+      let tmp12 = tmp4;
       if (obj.hasOwnProperty(tmp4)) {
-        if (items1.length <= 0) {
+        if (items.length <= 0) {
           continue;
         } else {
           obj[tmp4] = tmp3;
-          items1 = [];
+          items = [];
           continue;
         }
         continue;
       } else {
-        let arr = items1.push(tmp4);
+        let arr = items.push(tmp4);
         continue;
       }
       continue;
     }
   }
   const obj1 = {};
-  for (const key10020 in obj) {
-    let tmp8 = key10020;
-    if (obj.hasOwnProperty(key10020)) {
-      let num = 0;
-      let num2 = 0;
-      if (0 < obj[key10020].length) {
-        do {
-          obj1[obj[key10020][num]] = getValueForKey(obj[key10020][num]);
-          num = num + 1;
-          let tmp6 = num;
-          let length = obj[key10020].length;
-        } while (num < length);
+  for (const key10018 in obj) {
+    let tmp13 = key10018;
+    if (obj.hasOwnProperty(key10018)) {
+      for (let num = 0; num < obj[key10018].length; num = num + 1) {
+        let tmp6 = obj[key10018][num];
+        let tmp7 = num;
+        if (obj.hasOwnProperty(tmp6)) {
+          let tmp8 = obj[tmp6];
+        } else {
+          tmp8 = obj[tmp6];
+        }
+        obj1[obj[key10018][num]] = tmp8;
       }
     }
-    obj1[key10020] = getValueForKey(key10020);
+    if (obj.hasOwnProperty(key10018)) {
+      let tmp9 = obj[key10018];
+    } else {
+      tmp9 = obj[key10018];
+    }
+    obj1[key10018] = tmp9;
     continue;
   }
-  let num3 = 0;
-  if (0 < arr3.length) {
-    do {
-      obj1[arr3[num3]] = getValueForKey(arr3[num3]);
-      num3 = num3 + 1;
-      length2 = arr3.length;
-    } while (num3 < length2);
+  for (let num2 = 0; num2 < arr2.length; num2 = num2 + 1) {
+    let tmp10 = arr2[num2];
+    let tmp11 = num2;
+    obj1[arr2[num2]] = obj.hasOwnProperty(tmp10) ? obj[tmp10] : obj[tmp10];
   }
   return obj1;
 };

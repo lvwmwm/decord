@@ -1,21 +1,21 @@
-// Module ID: 9773
-// Function ID: 75946
+// Module ID: 9795
+// Function ID: 9796
 // Name: useFetchCollectiblesProductCategory
-// Dependencies: [57, 5780, 7933, 624, 2]
+// Dependencies: [32, 5798, 7958, 647, 2]
 // Exports: useFetchCollectiblesProductCategory
 
-// Module 9773 (useFetchCollectiblesProductCategory)
+// Module 9795 (useFetchCollectiblesProductCategory)
 import _slicedToArray from "_slicedToArray";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import updateCategoriesAndProducts from "updateCategoriesAndProducts";
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/collectibles/hooks/useFetchCollectiblesProductCategory.tsx");
 
 export const useFetchCollectiblesProductCategory = function useFetchCollectiblesProductCategory(skuId) {
   const _require = skuId;
-  importDefault(7933)();
-  let obj = _require(624);
-  let items = [_isNativeReflectConstruct];
+  importDefault(7958)();
+  let obj = _require(647);
+  let items = [updateCategoriesAndProducts];
   const tmp2 = callback(obj.useStateFromStoresArray(items, () => {
     const items = [outer1_4.isFetchingCategories, outer1_4.getCategoryForProduct(closure_0)];
     return items;

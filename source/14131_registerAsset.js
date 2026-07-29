@@ -1,11 +1,10 @@
 // Module ID: 14131
-// Function ID: 107980
+// Function ID: 14132
 // Name: registerAsset
-// Dependencies: [1217]
+// Dependencies: [1241]
 
 // Module 14131 (registerAsset)
 import registerAsset from "registerAsset";
 
-const obj = { __packager_asset: true, httpServerLocation: "/assets/modules/quests/native/images", width: 345, height: 82, scales: [1, 2, 3], hash: "91248bc802fa2159ae23ab96ddaf91db", name: "clouds_light_background", type: "png" };
 
-export default registerAsset.registerAsset(obj);
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/quests/native/images", width: 24, height: 24, scales: [1, 2, 3], hash: "d34103fd5e89ba1cd4ca70f2429c1570", name: "ic_wreath", type: "png" });

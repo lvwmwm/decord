@@ -1,218 +1,218 @@
-// Module ID: 11614
-// Function ID: 90164
+// Module ID: 11638
+// Function ID: 11639
 // Name: GuildPowerupsMultiPerkCard
-// Dependencies: [27, 33, 4165, 689, 666, 3875, 4101, 11581, 11567, 11564, 11587, 11615, 11588, 11600, 11601, 11606, 11591, 1273, 1212, 4161, 11592, 4578, 2231, 1557, 11616, 5221, 5223, 11619, 11612, 2]
+// Dependencies: [17, 21, 4189, 712, 689, 3899, 4125, 11605, 11591, 11588, 11611, 11639, 11612, 11624, 11625, 11630, 11615, 1297, 1236, 4185, 11616, 4600, 2255, 1581, 11640, 5243, 5245, 11643, 11636, 2]
 // Exports: default
 
-// Module 11614 (GuildPowerupsMultiPerkCard)
-import { View } from "GuildPowerupsSectionHeader";
-import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+// Module 11638 (GuildPowerupsMultiPerkCard)
+import { View } from "Button";
+import jsxProd from "Button";
+import createCacheKey from "createCacheKey";
+import createCacheKey from "createCacheKey";
 
-let closure_4;
-let closure_5;
+let c4;
+let c5;
 function GuildPowerupsMultiPerkCard(arg0) {
+  let c1;
   let forceStaticImage;
   let guildId;
+  let isLoading;
   let isNewPerk;
   let powerup;
   ({ guildId, powerup, isNewPerk, forceStaticImage } = arg0);
-  let obj = require(3875) /* isThemeLight */;
-  const tmp = callback2(obj.isThemeLight(onActivate(4101)()));
-  const tmp2 = onActivate(11581)(guildId);
-  const tmp3 = onActivate(11567)(guildId, powerup);
-  let obj1 = require(11587) /* useCalculatePowerupCardStatus */;
-  const calculatePowerupCardStatus = obj1.useCalculatePowerupCardStatus(powerup, tmp3, onActivate(11564)(guildId, powerup, "GuildPowerupsMultiPerkBottomSheet"));
-  let obj2 = require(11567) /* usePowerupsActiveStatuses */;
-  const result = obj2.isPowerupActiveStatusActive(tmp3);
-  require = result;
-  const tmp7 = onActivate(11588)(powerup, true, forceStaticImage);
-  const disabled = onActivate(11600)(guildId, powerup, result).disabled;
-  const tmp8 = onActivate(11601)(guildId, powerup);
-  onActivate = tmp8.onActivate;
-  const dependencyMap = onActivate(11606)(guildId, powerup);
-  obj = {};
-  const items = [tmp.container, ];
+  let _require;
+  let importDefault;
+  let dependencyMap;
+  let obj = _require(3899);
+  const tmp4 = callback2(obj.isThemeLight(importDefault(4125)()));
+  const tmp5 = importDefault(11605)(guildId);
+  const tmp6 = importDefault(11591)(guildId, powerup);
+  let obj1 = _require(11611);
+  const calculatePowerupCardStatus = obj1.useCalculatePowerupCardStatus(powerup, tmp6, importDefault(11588)(guildId, powerup, "GuildPowerupsMultiPerkBottomSheet"));
+  let obj2 = _require(11591);
+  const result = obj2.isPowerupActiveStatusActive(tmp6);
+  _require = result;
+  const tmp10 = importDefault(11612)(powerup, true, forceStaticImage);
+  const disabled = importDefault(11624)(guildId, powerup, result).disabled;
+  const tmp7 = importDefault(11588)(guildId, powerup, "GuildPowerupsMultiPerkBottomSheet");
+  ({ onActivate: c1, isLoading } = importDefault(11625)(guildId, powerup));
+  dependencyMap = importDefault(11630)(guildId, powerup);
+  const items = [tmp4.container, ];
   let disabled2 = disabled;
   if (disabled) {
-    disabled2 = tmp2;
+    disabled2 = tmp5;
   }
   if (disabled2) {
-    disabled2 = tmp.disabled;
+    disabled2 = tmp4.disabled;
   }
+  obj = { style: items, children: null };
   items[1] = disabled2;
-  obj.style = items;
-  obj = {};
-  const items1 = [tmp.imageContainer, , , ];
+  const items1 = [tmp4.imageContainer, , , ];
   let type;
-  if (null != calculatePowerupCardStatus) {
+  if (calculatePowerupCardStatus != null) {
     type = calculatePowerupCardStatus.type;
   }
-  items1[1] = "active" === type && tmp.imageContainerActive;
+  items1[1] = "active" === type && tmp4.imageContainerActive;
   let type1;
-  if (null != calculatePowerupCardStatus) {
+  if (calculatePowerupCardStatus != null) {
     type1 = calculatePowerupCardStatus.type;
   }
-  items1[2] = "expiring" === type1 && tmp.imageContainerExpiring;
+  items1[2] = "expiring" === type1 && tmp4.imageContainerExpiring;
   let type2;
-  if (null != calculatePowerupCardStatus) {
+  if (calculatePowerupCardStatus != null) {
     type2 = calculatePowerupCardStatus.type;
   }
-  items1[3] = "removing" === type2 && tmp.imageContainerRemoving;
-  obj.style = items1;
-  obj1 = {};
-  let str = "";
-  const tmp10 = View;
-  const tmp11 = closure_5;
-  const tmp12 = View;
-  const tmp16 = callback;
-  const tmp4 = onActivate(11564)(guildId, powerup, "GuildPowerupsMultiPerkBottomSheet");
-  const tmp9 = closure_5;
-  if (null != tmp7) {
-    str = tmp7;
+  obj = { style: items1, children: null };
+  items1[3] = "removing" === type2 && tmp4.imageContainerRemoving;
+  let str = tmp10;
+  let tmp3Result = tmp3(11615);
+  if (tmp10 == null) {
+    str = "";
   }
-  obj1.imageUrl = str;
-  obj1.isAnimated = !forceStaticImage;
-  obj1.style = tmp.image;
-  const items2 = [tmp16(onActivate(11591), obj1), ];
+  obj1 = { imageUrl: str, isAnimated: !forceStaticImage, style: tmp4.image };
+  const items2 = [closure_4(tmp3Result, obj1), ];
   if (isNewPerk) {
-    obj2 = {};
-    const intl = require(1212) /* getSystemLocale */.intl;
-    obj2.text = intl.string(require(1212) /* getSystemLocale */.t.y2b7CA);
-    obj2.style = tmp.badge;
-    isNewPerk = callback(require(1273) /* Button */.TextBadge, obj2);
+    obj2 = { text: null, style: null };
+    const intl = tmp(1236).intl;
+    obj2[0] = intl.string(tmp(1236).t.y2b7CA);
+    obj2[1] = tmp4.badge;
+    isNewPerk = tmp18(tmp(1297).TextBadge, obj2);
   }
   items2[1] = isNewPerk;
-  obj.children = items2;
-  const items3 = [tmp11(tmp12, obj), ];
-  const obj3 = { style: tmp.bodyContainer };
-  const obj4 = { style: tmp.titleContainer };
-  const tmp17 = onActivate(11591);
-  const tmp21 = closure_5;
-  const tmp22 = View;
-  const tmp23 = closure_5;
-  const tmp24 = View;
-  const items4 = [callback(require(4161) /* Text */.Text, { variant: "heading-md/semibold", color: onActivate(11615)(result).textColor, children: powerup.title }), ];
+  obj[1] = items2;
+  const items3 = [closure_5(View, obj), ];
+  const obj3 = { style: tmp4.bodyContainer, children: null };
+  const obj4 = { style: tmp4.titleContainer, children: null };
+  const tmp11 = importDefault(11625)(guildId, powerup);
+  const tmp17 = "removing" === type2 && tmp4.imageContainerRemoving;
+  const items4 = [closure_4(_require(4185).Text, { variant: "heading-md/semibold", color: importDefault(11639)(result).textColor, children: powerup.title }), ];
   if (null != calculatePowerupCardStatus) {
-    const obj6 = { status: calculatePowerupCardStatus };
-    let tmp28 = callback(require(11592) /* GuildPowerupCardFooterActive */.GuildPowerupCardFooterStatus, obj6);
+    const obj6 = { status: null };
+    obj6[0] = calculatePowerupCardStatus;
+    let tmp18Result = tmp18(tmp(11616).GuildPowerupCardFooterStatus, obj6);
   } else {
-    const obj7 = { cost: powerup.cost };
-    tmp28 = callback(require(11592) /* GuildPowerupCardFooterActive */.GuildPowerupCardFooterCost, obj7);
+    const obj7 = { cost: null };
+    obj7[0] = powerup.cost;
+    tmp18Result = tmp18(tmp(11616).GuildPowerupCardFooterCost, obj7);
   }
-  items4[1] = tmp28;
-  obj4.children = items4;
-  const items5 = [tmp23(tmp24, obj4), ];
-  if (!tmp2) {
-    items5[1] = tmp2;
-    obj3.children = items5;
-    items3[1] = tmp21(tmp22, obj3);
-    obj.children = items3;
-    return tmp9(tmp10, obj);
+  items4[1] = tmp18Result;
+  obj4[1] = items4;
+  const items5 = [closure_5(View, obj4), ];
+  if (!tmp5) {
+    items5[1] = tmp5;
+    obj3[1] = items5;
+    items3[1] = tmp12(tmp13, obj3);
+    obj[1] = items3;
+    return tmp12(tmp13, obj);
   } else {
-    const obj8 = { disabled, loading: tmp8.isLoading };
+    const obj8 = { disabled: null, loading: null, variant: null, text: null, onPress: null };
+    obj8[0] = disabled;
+    obj8[1] = isLoading;
     let str2 = "primary";
     if (result) {
       str2 = "secondary";
     }
-    obj8.variant = str2;
-    const intl2 = require(1212) /* getSystemLocale */.intl;
-    const tmp39 = onActivate(2231);
-    obj8.text = intl2.string(result ? tmp39.TZsu1U : tmp39.gSxlHf);
-    obj8.onPress = function onPress() {
-      if (closure_0) {
+    obj8[2] = str2;
+    const intl2 = tmp(1236).intl;
+    tmp3Result = tmp3(2255);
+    obj8[3] = intl2.string(result ? tmp3Result.TZsu1U : tmp3Result.gSxlHf);
+    obj8[4] = function onPress() {
+      if (c0) {
         callback();
       } else {
-        onActivate();
+        _undefined();
       }
     };
-    callback(require(4578) /* Button */.Button, obj8);
-    const tmp32 = callback;
+    tmp18Result = tmp18(tmp(4600).Button, obj8);
   }
 }
-({ jsx: closure_4, jsxs: closure_5 } = jsxProd);
-let closure_6 = _createForOfIteratorHelperLoose.createStyles((arg0) => {
-  let obj = {};
-  obj = { gap: importDefault(689).space.PX_8 };
-  obj.container = obj;
-  obj = { gap: importDefault(689).space.PX_24, marginHorizontal: importDefault(689).space.PX_16 };
-  obj.cardsContainer = obj;
-  obj.titleContainer = { flexDirection: "column", gap: 4 };
-  obj.bodyContainer = { justifyContent: "space-between", alignItems: "center", flexDirection: "row" };
-  const obj1 = { borderRadius: importDefault(689).radii.md, borderWidth: 1, borderColor: importDefault(689).colors.BACKGROUND_MOD_MUTED, borderStyle: "solid" };
+({ jsx: c4, jsxs: c5 } = jsxProd);
+let closure_6 = createCacheKey.createStyles((arg0) => {
+  let obj = { container: null, cardsContainer: null, titleContainer: null, bodyContainer: null, imageContainer: null, imageContainerActive: null, imageContainerExpiring: null, imageContainerRemoving: null, image: null, disabled: null, badge: null };
+  obj = { gap: importDefault(712).space.PX_8 };
+  obj[0] = obj;
+  obj = { gap: importDefault(712).space.PX_24, marginHorizontal: importDefault(712).space.PX_16 };
+  obj[1] = obj;
+  obj[2] = { flexDirection: "column", gap: 4 };
+  obj[3] = { justifyContent: "space-between", alignItems: "center", flexDirection: "row" };
+  const obj1 = { borderRadius: importDefault(712).radii.md, borderWidth: 1, borderColor: importDefault(712).colors.BACKGROUND_MOD_MUTED, borderStyle: "solid", backgroundColor: null };
   let str = "#ffffff";
   if (arg0) {
     str = "#000000";
   }
-  const tmp = importDefault(666);
-  const tmpResult = importDefault(666)(str);
-  obj1.backgroundColor = importDefault(666)(str).alpha(0.04).hex();
-  obj.imageContainer = obj1;
-  const obj2 = {};
-  const alphaResult = importDefault(666)(str).alpha(0.04);
-  const tmp2 = importDefault(666);
-  const tmp2Result = importDefault(666)(importDefault(689).unsafe_rawColors.GREEN_360);
-  obj2.borderColor = importDefault(666)(importDefault(689).unsafe_rawColors.GREEN_360).alpha(0.35).hex();
-  obj.imageContainerActive = obj2;
-  const obj3 = {};
-  const alphaResult1 = importDefault(666)(importDefault(689).unsafe_rawColors.GREEN_360).alpha(0.35);
-  const tmp3 = importDefault(666);
-  const tmp3Result = importDefault(666)(importDefault(689).unsafe_rawColors.YELLOW_300);
-  obj3.borderColor = importDefault(666)(importDefault(689).unsafe_rawColors.YELLOW_300).alpha(0.35).hex();
-  obj.imageContainerExpiring = obj3;
-  const obj4 = {};
-  const alphaResult2 = importDefault(666)(importDefault(689).unsafe_rawColors.YELLOW_300).alpha(0.35);
-  const tmp4 = importDefault(666);
-  const tmp4Result = importDefault(666)(importDefault(689).unsafe_rawColors.YELLOW_300);
-  obj4.borderColor = importDefault(666)(importDefault(689).unsafe_rawColors.YELLOW_300).alpha(0.35).hex();
-  obj.imageContainerRemoving = obj4;
-  obj.image = { width: "75%", height: 180, resizeMode: "contain" };
-  obj.disabled = { opacity: 0.5 };
-  const alphaResult3 = importDefault(666)(importDefault(689).unsafe_rawColors.YELLOW_300).alpha(0.35);
-  obj.badge = { position: "absolute", top: importDefault(689).space.PX_8, right: importDefault(689).space.PX_8 };
+  const tmp3 = importDefault(689);
+  const tmp3Result = importDefault(689)(str);
+  obj1[4] = importDefault(689)(str).alpha(0.04).hex();
+  obj[4] = obj1;
+  const obj2 = { borderColor: null };
+  let tmpResult = tmp(689);
+  const alphaResult = importDefault(689)(str).alpha(0.04);
+  const tmpResultResult = tmpResult(importDefault(712).unsafe_rawColors.GREEN_360);
+  obj2[0] = tmpResult(importDefault(712).unsafe_rawColors.GREEN_360).alpha(0.35).hex();
+  obj[5] = obj2;
+  const obj3 = { borderColor: null };
+  tmpResult = tmp(689);
+  const alphaResult1 = tmpResult(importDefault(712).unsafe_rawColors.GREEN_360).alpha(0.35);
+  const tmpResult1Result = tmpResult(importDefault(712).unsafe_rawColors.YELLOW_300);
+  obj3[0] = tmpResult(importDefault(712).unsafe_rawColors.YELLOW_300).alpha(0.35).hex();
+  obj[6] = obj3;
+  const obj4 = { borderColor: null };
+  const alphaResult2 = tmpResult(importDefault(712).unsafe_rawColors.YELLOW_300).alpha(0.35);
+  const tmpResult1 = importDefault(689);
+  const tmpResult2Result = importDefault(689)(importDefault(712).unsafe_rawColors.YELLOW_300);
+  obj4[0] = importDefault(689)(importDefault(712).unsafe_rawColors.YELLOW_300).alpha(0.35).hex();
+  obj[7] = obj4;
+  obj[8] = { width: "75%", height: 180, resizeMode: "contain" };
+  obj[9] = { opacity: 0.5 };
+  const alphaResult3 = importDefault(689)(importDefault(712).unsafe_rawColors.YELLOW_300).alpha(0.35);
+  obj[10] = { position: "absolute", top: importDefault(712).space.PX_8, right: importDefault(712).space.PX_8 };
   return obj;
 });
-let obj = {};
-obj = { gap: require("_createForOfIteratorHelperLoose").space.PX_24, marginHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16 };
-obj.cardsContainer = obj;
-obj.disabledReasonContainer = { marginHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16, marginBottom: require("_createForOfIteratorHelperLoose").space.PX_16 };
-let closure_7 = _createForOfIteratorHelperLoose.createStyles(obj);
-let obj1 = { marginHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16, marginBottom: require("_createForOfIteratorHelperLoose").space.PX_16 };
-let result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/premium/powerups/native/GuildPowerupsMultiPerkBottomSheet.tsx");
+let obj = { cardsContainer: null, disabledReasonContainer: null };
+obj = { gap: require("Themes").space.PX_24, marginHorizontal: require("Themes").space.PX_16 };
+obj[0] = obj;
+obj[1] = { marginHorizontal: require("Themes").space.PX_16, marginBottom: require("Themes").space.PX_16 };
+let closure_7 = createCacheKey.createStyles(obj);
+let obj1 = { marginHorizontal: require("Themes").space.PX_16, marginBottom: require("Themes").space.PX_16 };
+let result = require("createCacheKey").fileFinishedImporting("modules/premium/powerups/native/GuildPowerupsMultiPerkBottomSheet.tsx");
 
 export default function GuildPowerupsMultiPerkBottomSheet(guildId) {
   guildId = guildId.guildId;
   const listing = guildId.listing;
+  let importDefault;
   const tmp = callback3();
-  const tmp2 = importDefault(11616)(guildId, listing);
-  importDefault = tmp2;
-  let tmp4Result = null;
-  if (null != tmp2) {
-    let obj = { scrollable: true, startExpanded: true, onDismiss: guildId.onDismiss };
-    obj = {};
-    obj = { paddingBottom: importDefault(1557)().bottom };
-    obj.contentContainerStyle = obj;
-    ({ title: obj4.title, description: obj4.description } = tmp2);
-    const items = [callback(importDefault(11619), {}), , ];
-    let tmp10 = null != tmp2.disabledReason;
-    if (tmp10) {
-      const obj2 = { style: tmp.disabledReasonContainer };
-      const obj3 = { text: tmp2.disabledReason };
-      obj2.children = callback(importDefault(11612), obj3);
-      tmp10 = callback(View, obj2);
+  const tmp4 = importDefault(11640)(guildId, listing);
+  importDefault = tmp4;
+  let tmp6Result = null;
+  if (null != tmp4) {
+    let obj = { scrollable: true, startExpanded: true, onDismiss: null, children: null };
+    obj[2] = guildId.onDismiss;
+    obj = { contentContainerStyle: null, children: null };
+    obj = { paddingBottom: null };
+    obj[0] = importDefault(1581)().bottom;
+    obj[0] = obj;
+    ({ title: obj4[0], description: obj4[1] } = tmp4);
+    const items = [callback(tmp2(11643), { title: null, description: null }), , ];
+    tmp6Result = null != tmp4.disabledReason;
+    if (tmp6Result) {
+      const obj2 = { style: null, children: null };
+      obj2[0] = tmp.disabledReasonContainer;
+      const obj3 = { text: null };
+      obj3[0] = tmp4.disabledReason;
+      obj2[1] = tmp6(tmp2(11636), obj3);
+      tmp6Result = tmp6(View, obj2);
     }
-    items[1] = tmp10;
-    const obj4 = { style: tmp.cardsContainer };
+    items[1] = tmp6Result;
+    const obj4 = { style: null, children: null };
+    obj4[0] = tmp.cardsContainer;
     const powerups = listing.powerups;
-    obj4.children = powerups.map((powerup) => outer1_4(outer1_8, { guildId, powerup, forceStaticImage: tmp2.forceStaticImages }, powerup.skuId));
+    obj4[1] = powerups.map((powerup) => outer1_4(outer1_8, { guildId, powerup, forceStaticImage: _undefined.forceStaticImages }, powerup.skuId));
     items[2] = callback(View, obj4);
-    obj.children = items;
-    obj.children = closure_5(guildId(5223).BottomSheetScrollView, obj);
-    tmp4Result = callback(guildId(5221).BottomSheet, obj);
-    const obj1 = {};
-    const tmp4 = callback;
-    const tmp7 = closure_5;
+    obj[1] = items;
+    obj[3] = closure_5(guildId(5245).BottomSheetScrollView, obj);
+    tmp6Result = tmp6(guildId(5243).BottomSheet, obj);
+    const obj1 = { title: null, description: null };
+    const tmp8 = closure_5;
   }
-  return tmp4Result;
+  return tmp6Result;
 };

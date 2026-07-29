@@ -1,24 +1,23 @@
-// Module ID: 13806
-// Function ID: 105757
+// Module ID: 13827
+// Function ID: 13828
 // Name: showUserSettingsInputAlert
-// Dependencies: [31, 33, 4506, 13807, 1935, 1212, 4596, 2]
+// Dependencies: [19, 21, 4529, 13828, 1959, 1236, 4618, 2]
 // Exports: default
 
-// Module 13806 (showUserSettingsInputAlert)
-import "result";
+// Module 13827 (showUserSettingsInputAlert)
+import "noop";
 import { jsx } from "jsxProd";
 
 const require = arg1;
-const result = require("module_4506").fileFinishedImporting("modules/user_settings/account/native/showUserSettingsInputAlert.tsx");
+const result = require("module_4529").fileFinishedImporting("modules/user_settings/account/native/showUserSettingsInputAlert.tsx");
 
 export default function showUserSettingsInputAlert(arg0) {
   let dependencyMap;
   let importDefault;
   let require;
   ({ onSubmit: require, onSuccess: importDefault, onError: dependencyMap } = arg0);
-  let obj = { onSubmit: 0, onSuccess: 0, onError: 0 };
-  Object.setPrototypeOf(null);
-  let closure_3 = Object.assign(arg0, obj);
+  let closure_3 = Object.assign(arg0, Object.create(null));
+  let obj = importDefault(4529);
   obj = {
     importer() {
       return outer1_0(outer1_2[4])(outer1_2[3], outer1_2.paths).then((arg0) => {
@@ -26,24 +25,24 @@ export default function showUserSettingsInputAlert(arg0) {
         return (arg0) => {
           const obj = {};
           const merged = Object.assign(arg0);
-          const merged1 = Object.assign(outer2_3);
-          const intl = outer3_0(outer3_2[5]).intl;
-          obj["cancelText"] = intl.string(outer3_0(outer3_2[5]).t["ETE/oC"]);
-          const intl2 = outer3_0(outer3_2[5]).intl;
-          obj["confirmText"] = intl2.string(outer3_0(outer3_2[5]).t.BddRzS);
-          if (null != outer2_3.confirmColor) {
-            let RED = outer2_3.confirmColor;
+          const merged1 = Object.assign(outer1_3);
+          const intl = outer2_0(outer2_2[5]).intl;
+          obj.cancelText = intl.string(outer2_0(outer2_2[5]).t["ETE/oC"]);
+          const intl2 = outer2_0(outer2_2[5]).intl;
+          obj.confirmText = intl2.string(outer2_0(outer2_2[5]).t.BddRzS);
+          if (null != outer1_3.confirmColor) {
+            let RED = outer1_3.confirmColor;
           } else {
-            RED = outer3_1(outer3_2[6]).Colors.RED;
+            RED = outer2_1(outer2_2[6]).Colors.RED;
           }
-          obj["confirmColor"] = RED;
-          obj["onSubmit"] = outer2_0;
-          obj["onSuccess"] = outer2_1;
-          obj["onError"] = outer2_2;
-          return closure_3(closure_0, obj);
+          obj.confirmColor = RED;
+          obj.onSubmit = closure_0;
+          obj.onSuccess = outer1_1;
+          obj.onError = outer1_2;
+          return outer2_3(closure_0, obj);
         };
       });
     }
   };
-  importDefault(4506).openLazy(obj);
+  obj.openLazy(obj);
 };

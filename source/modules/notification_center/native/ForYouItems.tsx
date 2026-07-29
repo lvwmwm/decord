@@ -1,28 +1,29 @@
-// Module ID: 15255
-// Function ID: 116036
+// Module ID: 15288
+// Function ID: 15289
 // Name: ForYouFooter
-// Dependencies: [5, 57, 31, 27, 4157, 4202, 1348, 1838, 1850, 15249, 653, 5626, 33, 4165, 4161, 689, 4597, 15254, 1212, 1360, 7801, 6054, 9850, 9634, 7653, 566, 7853, 1273, 11697, 15256, 1456, 4146, 12965, 5907, 675, 7986, 15257, 9494, 3866, 9517, 1935, 4133, 15259, 4124, 15251, 5530, 15260, 15261, 21, 4695, 15262, 5908, 12195, 1457, 3838, 3843, 15272, 15273, 15274, 15275, 15276, 15282, 787, 15283, 15284, 1327, 15253, 6655, 15285, 2]
+// Dependencies: [5, 32, 19, 17, 4181, 4226, 1372, 1862, 1874, 15282, 676, 5644, 21, 4189, 4185, 712, 4619, 15287, 1236, 1384, 7824, 6072, 9872, 9656, 7676, 589, 7876, 1297, 11721, 15289, 1480, 4170, 12988, 5926, 698, 8011, 15290, 9518, 3890, 9541, 1959, 4157, 15292, 4148, 15284, 5548, 15293, 15294, 11, 4717, 15295, 5927, 12219, 1481, 3862, 3867, 15305, 15306, 15307, 15308, 15309, 15315, 810, 15316, 15317, 1351, 15286, 6676, 15318, 2]
 
-// Module 15255 (ForYouFooter)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import ForYouRecentActivitySectionHeader from "ForYouRecentActivitySectionHeader";
-import importAllResult from "parseQuery";
-import get_ActivityIndicator from "Button";
-import closure_9 from "_isNativeReflectConstruct";
-import closure_10 from "_isNativeReflectConstruct";
-import closure_11 from "_isNativeReflectConstruct";
-import closure_12 from "_createForOfIteratorHelperLoose";
-import closure_13 from "_isNativeReflectConstruct";
-import closure_14 from "_isNativeReflectConstruct";
+// Module 15288 (ForYouFooter)
+import addApplication from "addApplication";
+import handleSupportedURL from "handleSupportedURL";
+import importAllResult from "hasFlag";
+import get_ActivityIndicator from "ForYouMentionPlaceholder";
+import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
+import closure_10 from "addApplication";
+import ensureGuildLoaded from "ensureGuildLoaded";
+import createGuildRecordFromRust from "createGuildRecordFromRust";
+import mergeGuildAvatar from "mergeGuildAvatar";
+import handleLoadFinished from "handleLoadFinished";
 import ME from "ME";
 import { NotificationTypes } from "str2";
-import jsxProd from "NotificationCenterScenes";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import jsxProd from "getSampleOfVoterUsernamesForAnswer";
+import createCacheKey from "createCacheKey";
+import createCacheKey from "createCacheKey";
+import createCacheKey from "createCacheKey";
+import createCacheKey from "createCacheKey";
+import createCacheKey from "createCacheKey";
 
+let StyleSheet;
 let closure_15;
 let closure_16;
 let closure_17;
@@ -30,258 +31,252 @@ let closure_18;
 let closure_19;
 let closure_21;
 let closure_22;
-let closure_7;
-let closure_8;
+let error;
+let metroImportAll;
 const require = arg1;
 function ForYouFooter(loading) {
   let tmp = null;
   if (loading.loading) {
-    tmp = callback(require(15254) /* ForYouMentionPlaceholder */.ForYouMentionPlaceholder, {});
+    tmp = callback(require(15287) /* ForYouMentionPlaceholder */.ForYouMentionPlaceholder, {});
   }
   return tmp;
-}
-function getMessagePreviewIcon(iconType) {
-  if (constants2.ATTACHMENT === iconType) {
-    return importDefault(9850);
-  } else if (constants2.STICKER === iconType) {
-    return importDefault(9634);
-  } else if (constants2.VOICE_MESSAGE === iconType) {
-    return importDefault(7653);
-  } else {
-    return null;
-  }
 }
 function Callout(arg0) {
   let acked;
   let compactMode;
   let item;
   ({ item, acked, compactMode } = arg0);
-  const tmp = _createForOfIteratorHelperLoose();
-  let obj = importAll(4597);
-  obj = { style: tmp.calloutContainer, pointerEvents: "none" };
+  const tmp = createCacheKey();
+  let obj = importAll(4619);
+  obj = { style: tmp.calloutContainer, pointerEvents: "none", children: null };
   obj = { style: tmp.messagePreviewBarV2 };
   const parser = obj.getParser(callback3());
   const items = [callback(closure_7, obj), ];
-  const obj1 = { style: items1, variant: "redesign/message-preview/medium" };
+  const obj1 = { style: items1, variant: "redesign/message-preview/medium", lineClamp: null, children: null };
   items1 = [acked ? tmp.calloutTextAcked : tmp.calloutTextNotAcked];
   let num = 10;
   if (compactMode) {
     num = 3;
   }
-  obj1.lineClamp = num;
-  obj1.children = parser(item.callout);
-  items[1] = callback(require(4161) /* Text */.Text, obj1);
-  obj.children = items;
+  obj1[2] = num;
+  obj1[3] = parser(item.callout);
+  items[1] = callback(require(4185) /* Text */.Text, obj1);
+  obj[2] = items;
   return closure_22(closure_7, obj);
 }
 function ForYouMessagePreviewV2(item) {
   let acked;
   let compactMode;
-  let content;
-  let isSystemMessage;
   let roleStyle;
   item = item.item;
+  let guild_id;
+  let message_channel_id;
   ({ acked, compactMode, roleStyle } = item);
-  const tmp = _createForOfIteratorHelperLoose();
-  let obj = message_channel_id(4597);
-  const item2 = { item }.item;
+  let messagePreviewIconV2 = createCacheKey();
+  let SMALL = dependencyMap;
+  let obj = message_channel_id(4619);
   const notifCenterV2MessagePreviewParser = obj.getNotifCenterV2MessagePreviewParser(callback4(), closure_28, roleStyle);
-  const intl = item(1212).intl;
-  const stringResult = intl.string(item(1212).t.BOi07B);
-  let obj1 = item(1360);
-  let message = item2.message;
-  let flags;
-  if (null != message) {
-    flags = message.flags;
+  const intl = item(1236).intl;
+  const stringResult = intl.string(item(1236).t.BOi07B);
+  let obj1 = item(1384);
+  let message = item.message;
+  let num;
+  if (message != null) {
+    num = message.flags;
   }
-  let num = 0;
-  if (null != flags) {
-    num = flags;
+  if (num == null) {
+    num = 0;
   }
-  let message2 = item2.message;
+  let message2 = item.message;
   let type;
-  if (null != message2) {
+  if (message2 != null) {
     type = message2.type;
   }
-  const message3 = item2.message;
+  const message3 = item.message;
   let attachments;
-  if (null != message3) {
+  if (message3 != null) {
     attachments = message3.attachments;
   }
-  if (null == attachments) {
+  if (attachments == null) {
     attachments = [];
   }
-  const message4 = item2.message;
+  const message4 = item.message;
   let stickers;
-  if (null != message4) {
+  if (message4 != null) {
     stickers = message4.stickers;
   }
-  if (null == stickers) {
+  if (stickers == null) {
     stickers = [];
   }
-  const message5 = item2.message;
+  const message5 = item.message;
   let embeds;
-  if (null != message5) {
+  if (message5 != null) {
     embeds = message5.embeds;
   }
-  if (null == embeds) {
+  if (embeds == null) {
     embeds = [];
   }
-  const message6 = item2.message;
-  if (null != message6) {
+  const message6 = item.message;
+  if (message6 != null) {
     const interaction = message6.interaction;
   }
-  if (type === constants.POLL_RESULT) {
-    const message8 = item2.message;
+  if (type === constants2.POLL_RESULT) {
+    const message8 = item.message;
     let first;
-    if (null != message8) {
+    if (message8 != null) {
       embeds = message8.embeds;
-      if (null != embeds) {
+      if (embeds != null) {
         first = embeds[0];
       }
     }
-    const tmp25 = guild_id(7801)(first);
+    const tmp15 = guild_id(7824)(first);
     let result = stringResult;
-    if (null != tmp25) {
-      let obj3 = item(6054);
-      result = obj3.formatPollResultNotificationCenterText(tmp25);
+    if (null != tmp15) {
+      let tmp2Result = tmp2(6072);
+      result = tmp2Result.formatPollResultNotificationCenterText(tmp15);
     }
   } else if (stickers.length > 0) {
-    const intl6 = item(1212).intl;
-    result = intl6.string(item(1212).t["7K5Lma"]);
-    let ATTACHMENT = constants2.STICKER;
-  } else if (tmp8) {
-    const intl5 = tmp45(1212).intl;
-    result = intl5.string(tmp45(1212).t["2v7kfl"]);
+    const intl6 = tmp2(1236).intl;
+    result = intl6.string(tmp2(1236).t["7K5Lma"]);
+    let ATTACHMENT = constants3.STICKER;
+  } else if (tmp7) {
+    const intl5 = tmp2(1236).intl;
+    result = intl5.string(tmp2(1236).t["2v7kfl"]);
   } else if (hasFlagResult) {
-    const intl4 = tmp45(1212).intl;
-    result = intl4.string(tmp45(1212).t["6bhHrc"]);
-    ATTACHMENT = constants2.VOICE_MESSAGE;
+    const intl4 = tmp2(1236).intl;
+    result = intl4.string(tmp2(1236).t["6bhHrc"]);
+    ATTACHMENT = constants3.VOICE_MESSAGE;
   } else {
-    const message7 = item2.message;
-    let flags1;
-    if (null != message7) {
-      flags1 = message7.flags;
+    tmp2Result = tmp2(1384);
+    const message7 = item.message;
+    let num2;
+    if (message7 != null) {
+      num2 = message7.flags;
     }
-    let num2 = 0;
-    if (null != flags1) {
-      num2 = flags1;
+    if (num2 == null) {
+      num2 = 0;
     }
-    if (tmp45Result.hasFlag(num2, closure_16.IS_COMPONENTS_V2)) {
-      const intl3 = item(1212).intl;
-      result = intl3.string(item(1212).t.Xxm5i3);
+    if (tmp2Result.hasFlag(num2, tmp4.IS_COMPONENTS_V2)) {
+      const intl3 = tmp2(1236).intl;
+      result = intl3.string(tmp2(1236).t.Xxm5i3);
     } else {
       result = stringResult;
-      if (tmp11) {
-        const intl2 = item(1212).intl;
-        result = intl2.string(item(1212).t.JAKsM8);
-        ATTACHMENT = constants2.ATTACHMENT;
+      if (tmp8) {
+        const intl2 = tmp2(1236).intl;
+        result = intl2.string(tmp2(1236).t.JAKsM8);
+        ATTACHMENT = constants3.ATTACHMENT;
       }
-      tmp11 = attachments.length > 0 || embeds.length > 0;
+      tmp8 = attachments.length > 0 || embeds.length > 0;
     }
-    tmp45Result = tmp45(1360);
   }
-  const message9 = item2.message;
-  content = undefined;
-  if (null != message9) {
+  const message9 = item.message;
+  let content;
+  if (message9 != null) {
     content = message9.content;
   }
-  let tmp29 = null != content;
-  if (tmp29) {
-    tmp29 = "" !== content;
+  let tmp17 = null != content;
+  if (tmp17) {
+    tmp17 = "" !== content;
   }
-  obj = {};
-  if (tmp29) {
+  if (tmp17) {
     result = content;
   }
-  obj.content = result;
-  obj.isSystemMessage = !tmp29;
-  obj.iconType = ATTACHMENT;
-  const iconType = obj.iconType;
   guild_id = item.guild_id;
   message_channel_id = item.message_channel_id;
-  ({ content, isSystemMessage } = obj);
-  let obj5 = item(566);
-  let items = [closure_12];
-  const stateFromStores = obj5.useStateFromStores(items, () => outer1_12.getGuild(guild_id));
-  hasFlagResult = obj1.hasFlag(num, closure_16.IS_VOICE_MESSAGE);
-  const items1 = [closure_11];
-  const stateFromStores1 = item(566).useStateFromStores(items1, () => outer1_11.getChannel(message_channel_id));
-  const obj7 = item(566);
-  const items2 = [closure_13];
-  const stateFromStoresArray = item(566).useStateFromStoresArray(items2, () => {
+  hasFlagResult = obj1.hasFlag(num, constants.IS_VOICE_MESSAGE);
+  tmp4 = constants;
+  let items = [createGuildRecordFromRust];
+  const stateFromStores = item(589).useStateFromStores(items, () => outer1_12.getGuild(guild_id));
+  const tmp2Result1 = item(589);
+  const items1 = [ensureGuildLoaded];
+  const stateFromStores1 = item(589).useStateFromStores(items1, () => outer1_11.getChannel(message_channel_id));
+  const tmp2Result2 = item(589);
+  const items2 = [mergeGuildAvatar];
+  const stateFromStoresArray = item(589).useStateFromStoresArray(items2, () => {
     const message = item.message;
     let id;
-    if (null != message) {
+    if (message != null) {
       id = message.author.id;
     }
     const items = [outer1_13.getUser(id)];
     const message2 = item.message;
     let mapped;
-    if (null != message2) {
+    if (message2 != null) {
       const mentions = message2.mentions;
-      if (null != mentions) {
-        mapped = mentions.map((arg0) => outer2_13.getUser(arg0));
+      if (mentions != null) {
+        mapped = mentions.map((arg0) => user.getUser(arg0));
       }
     }
-    if (null == mapped) {
+    if (mapped == null) {
       mapped = [];
     }
     HermesBuiltin.arraySpread(mapped, 1);
     return items;
   });
-  obj = { style: tmp.messagePreviewContainerV2, pointerEvents: "none" };
-  obj1 = { style: tmp.messagePreviewBarV2 };
-  const items3 = [callback(closure_7, obj1), ];
-  const obj2 = {};
-  const items4 = [acked ? tmp.messagePreviewTextV2Acked : tmp.messagePreviewTextV2NotAcked, ];
+  obj = { style: messagePreviewIconV2.messagePreviewContainerV2, pointerEvents: "none", children: null };
+  obj = { style: messagePreviewIconV2.messagePreviewBarV2 };
+  const items3 = [callback(closure_7, obj), ];
+  const items4 = [acked ? messagePreviewIconV2.messagePreviewTextV2Acked : messagePreviewIconV2.messagePreviewTextV2NotAcked, ];
   let prop;
-  if (isSystemMessage) {
-    prop = tmp.messagePreviewSystemTextV2;
+  if (!tmp17) {
+    prop = messagePreviewIconV2.messagePreviewSystemTextV2;
   }
+  obj1 = { style: items4, variant: "redesign/message-preview/medium", lineClamp: null, children: null };
   items4[1] = prop;
-  obj2.style = items4;
-  obj2.variant = "redesign/message-preview/medium";
-  let num5 = 10;
+  let num3 = 10;
   if (compactMode) {
-    num5 = 3;
+    num3 = 3;
   }
-  obj2.lineClamp = num5;
-  const obj8 = item(566);
-  const tmp33 = closure_22;
-  const tmp34 = closure_7;
-  const tmp35 = closure_22;
-  obj3 = { content, guildId: guild_id, channelId: message_channel_id, messageId: item.message_id };
+  obj1[2] = num3;
+  const tmp2Result3 = item(589);
+  const obj2 = { content: result, guildId: guild_id, channelId: message_channel_id, messageId: item.message_id, authorId: null };
   const message10 = item.message;
   let id;
-  if (null != message10) {
+  if (message10 != null) {
     id = message10.author.id;
   }
-  obj3.authorId = id;
-  const items5 = [item(7853).renderMessageContentMarkup(notifCenterV2MessagePreviewParser, obj3, {}), ];
-  let tmp38 = null != iconType;
-  if (tmp38) {
-    const obj4 = { style: tmp.messagePreviewIconV2Container };
-    obj5 = { source: getMessagePreviewIcon(iconType), size: item(1273).IconSizes.SMALL, style: tmp.messagePreviewIconV2 };
-    obj4.children = callback(item(1273).Icon, obj5);
-    tmp38 = callback(closure_7, obj4);
+  obj2[4] = id;
+  const items5 = [item(7876).renderMessageContentMarkup(notifCenterV2MessagePreviewParser, obj2, {}), ];
+  if (null == ATTACHMENT) {
+    items5[1] = tmp26;
+    obj1[3] = items5;
+    items3[1] = tmp21(tmp2(4185).Text, obj1);
+    obj[2] = items3;
+    return tmp21(tmp22, obj);
+  } else {
+    const obj3 = { style: null, children: null };
+    obj3[0] = messagePreviewIconV2.messagePreviewIconV2Container;
+    if (constants3.ATTACHMENT === ATTACHMENT) {
+      let tmp29 = guild_id(9872);
+      const obj4 = { source: null, size: null, style: null };
+      obj4[0] = tmp29;
+      SMALL = tmp2(1297).IconSizes.SMALL;
+      obj4[1] = SMALL;
+      messagePreviewIconV2 = messagePreviewIconV2.messagePreviewIconV2;
+      obj4[2] = messagePreviewIconV2;
+      obj3[1] = tmp23(tmp27, obj4);
+      tmp23(tmp22, obj3);
+    } else if (tmp28.STICKER !== ATTACHMENT) {
+      tmp29 = null;
+      if (tmp28.VOICE_MESSAGE === ATTACHMENT) {
+        tmp29 = guild_id(7676);
+      }
+    }
+    tmp29 = guild_id(9656);
   }
-  items5[1] = tmp38;
-  obj2.children = items5;
-  items3[1] = tmp35(item(4161).Text, obj2);
-  obj.children = items3;
-  return tmp33(tmp34, obj);
 }
 function ApplicationName(applicationId) {
   applicationId = applicationId.applicationId;
-  let obj = applicationId(566);
+  let obj = applicationId(589);
   const items = [closure_10];
   const stateFromStores = obj.useStateFromStores(items, () => outer1_10.getApplication(applicationId));
   if (null == stateFromStores) {
     let tmp5 = callback(closure_7, {});
   } else {
-    obj = { application: stateFromStores, textVariant: applicationId.textVariant, iconSize: 16 };
-    tmp5 = callback(importDefault(11697), obj, stateFromStores.id);
+    obj = { application: null, textVariant: null, iconSize: 16 };
+    obj[0] = stateFromStores;
+    obj[1] = applicationId.textVariant;
+    tmp5 = callback(importDefault(11721), obj, stateFromStores.id);
   }
   return tmp5;
 }
@@ -291,7 +286,7 @@ function ScrollToTopRef(scrollRef) {
     scrollToTop() {
       const current = scrollRef.current;
       let scrollToTopResult;
-      if (null != current) {
+      if (current != null) {
         scrollToTopResult = current.scrollToTop();
       }
       return scrollToTopResult;
@@ -301,85 +296,87 @@ function ScrollToTopRef(scrollRef) {
     scrollToTop() {
       const current = scrollRef.current;
       let scrollToTopResult;
-      if (null != current) {
+      if (current != null) {
         scrollToTopResult = current.scrollToTop();
       }
       return scrollToTopResult;
     }
   });
-  const scrollToTop = scrollRef(1457).useScrollToTop(ref);
+  const scrollToTop = scrollRef(1481).useScrollToTop(ref);
   return null;
 }
 function extractKey(id) {
   return id.id;
 }
-({ View: closure_7, RefreshControl: closure_8 } = get_ActivityIndicator);
+({ View: error, RefreshControl: metroImportAll, StyleSheet } = get_ActivityIndicator);
 ({ AnalyticEvents: closure_15, MessageFlags: closure_16, AnalyticsLocations: closure_17, MessageTypes: closure_18, EMPTY_STRING_SNOWFLAKE_ID: closure_19 } = ME);
 ({ jsx: closure_21, jsxs: closure_22 } = jsxProd);
 let closure_23 = { waitForInteraction: false, viewAreaCoveragePercentThreshold: 100, minimumViewTime: 1000 };
-let obj = {};
+let obj = { strong: null };
 obj = {};
 const merged = Object.assign(require("Text").TextStyleSheet["text-md/medium"]);
-obj["color"] = require("_createForOfIteratorHelperLoose").colors.MOBILE_TEXT_HEADING_PRIMARY;
-obj.strong = obj;
-let closure_24 = _createForOfIteratorHelperLoose.createStyles(obj);
-_createForOfIteratorHelperLoose = {};
+obj.color = require("Themes").colors.MOBILE_TEXT_HEADING_PRIMARY;
+obj[0] = obj;
+let closure_24 = createCacheKey.createStyles(obj);
+createCacheKey = { strong: null };
 let obj2 = {};
 const merged1 = Object.assign(require("Text").TextStyleSheet["text-md/medium"]);
-obj2["color"] = require("_createForOfIteratorHelperLoose").colors.TEXT_MUTED;
-_createForOfIteratorHelperLoose.strong = obj2;
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-let obj3 = {};
-_createForOfIteratorHelperLoose = { color: require("_createForOfIteratorHelperLoose").colors.MENTION_FOREGROUND, backgroundColor: require("_createForOfIteratorHelperLoose").colors.MENTION_BACKGROUND };
-obj3.mention = _createForOfIteratorHelperLoose;
-let closure_26 = _createForOfIteratorHelperLoose.createStyles(obj3);
-let obj5 = { mention: { color: require("_createForOfIteratorHelperLoose").colors.MENTION_FOREGROUND, backgroundColor: "transparent" }, em: { fontStyle: "normal" } };
-let closure_27 = _createForOfIteratorHelperLoose.createStyles(obj5);
+obj2.color = require("Themes").colors.TEXT_MUTED;
+createCacheKey[0] = obj2;
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let obj3 = { mention: null };
+createCacheKey = { color: require("Themes").colors.MENTION_FOREGROUND, backgroundColor: require("Themes").colors.MENTION_BACKGROUND };
+obj3[0] = createCacheKey;
+let closure_26 = createCacheKey.createStyles(obj3);
+let obj5 = { mention: null, em: null };
+obj5[0] = { color: require("Themes").colors.MENTION_FOREGROUND, backgroundColor: "transparent" };
+obj5[1] = { fontStyle: "normal" };
+let closure_27 = createCacheKey.createStyles(obj5);
 let closure_28 = { channelMentionText: "redesign/message-preview/medium" };
-_createForOfIteratorHelperLoose = { container: { flex: 1 } };
-let obj8 = { marginHorizontal: 4, paddingHorizontal: 12, paddingVertical: 8, marginBottom: 4, borderRadius: require("_createForOfIteratorHelperLoose").radii.lg, flexDirection: "row", justifyContent: "space-between" };
-_createForOfIteratorHelperLoose.row = obj8;
-_createForOfIteratorHelperLoose.rowCompact = { paddingVertical: 6 };
-let obj6 = { color: require("_createForOfIteratorHelperLoose").colors.MENTION_FOREGROUND, backgroundColor: "transparent" };
-_createForOfIteratorHelperLoose.rowActive = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_MOD_MUTED };
-_createForOfIteratorHelperLoose.col = { flexDirection: "column", flex: 1 };
-_createForOfIteratorHelperLoose = { top: 28, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BRAND, height: 8, width: 8, borderRadius: require("_createForOfIteratorHelperLoose").radii.xs, position: "absolute", left: 4 };
-_createForOfIteratorHelperLoose.unreadIndicatorV2 = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.unreadIndicatorCompactV2 = { top: 18 };
-_createForOfIteratorHelperLoose.rowText = { flex: 1 };
-_createForOfIteratorHelperLoose.rowTextV2 = { flexDirection: "row", justifyContent: "space-between" };
-_createForOfIteratorHelperLoose.rowBody = { lineHeight: 20 };
-_createForOfIteratorHelperLoose.rowBodyV2 = { marginRight: 30 };
-let obj9 = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_MOD_MUTED };
-_createForOfIteratorHelperLoose.rowBodyAcked = { color: require("_createForOfIteratorHelperLoose").colors.TEXT_MUTED };
-_createForOfIteratorHelperLoose.rowTime = { lineHeight: 20 };
-_createForOfIteratorHelperLoose.rowTimeV2 = { marginLeft: -24 };
-_createForOfIteratorHelperLoose.itemV2 = { alignItems: "flex-start", marginRight: 4, marginLeft: 8 };
-_createForOfIteratorHelperLoose.calloutContainer = { marginTop: 4, flexDirection: "row", marginRight: 16 };
-let obj11 = { color: require("_createForOfIteratorHelperLoose").colors.TEXT_MUTED };
-_createForOfIteratorHelperLoose.calloutTextAcked = { color: require("_createForOfIteratorHelperLoose").colors.TEXT_MUTED };
-_createForOfIteratorHelperLoose = { color: require("_createForOfIteratorHelperLoose").colors.TEXT_DEFAULT };
-_createForOfIteratorHelperLoose.calloutTextNotAcked = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.messagePreviewContainerV2 = { marginTop: 4, flexDirection: "row", marginRight: 16 };
-const obj14 = { marginRight: 8, borderLeftColor: require("_createForOfIteratorHelperLoose").colors.BORDER_SUBTLE, borderLeftWidth: 3, borderRadius: 2, height: "auto" };
-_createForOfIteratorHelperLoose.messagePreviewBarV2 = obj14;
-_createForOfIteratorHelperLoose.messagePreviewIconV2Container = { paddingTop: 4 };
-let obj12 = { color: require("_createForOfIteratorHelperLoose").colors.TEXT_MUTED };
-_createForOfIteratorHelperLoose.messagePreviewIconV2 = { marginLeft: 4, tintColor: require("_createForOfIteratorHelperLoose").colors.TEXT_SUBTLE };
-const obj15 = { marginLeft: 4, tintColor: require("_createForOfIteratorHelperLoose").colors.TEXT_SUBTLE };
-_createForOfIteratorHelperLoose.messagePreviewTextV2Acked = { color: require("_createForOfIteratorHelperLoose").colors.TEXT_MUTED };
-const obj16 = { color: require("_createForOfIteratorHelperLoose").colors.TEXT_MUTED };
-_createForOfIteratorHelperLoose.messagePreviewTextV2NotAcked = { color: require("_createForOfIteratorHelperLoose").colors.TEXT_DEFAULT };
-_createForOfIteratorHelperLoose.messagePreviewSystemTextV2 = { fontStyle: "italic", fontWeight: "normal" };
-let obj17 = { color: require("_createForOfIteratorHelperLoose").colors.TEXT_DEFAULT };
-_createForOfIteratorHelperLoose.refreshSpinner = { color: require("_createForOfIteratorHelperLoose").colors.INTERACTIVE_TEXT_DEFAULT };
-const obj18 = { color: require("_createForOfIteratorHelperLoose").colors.INTERACTIVE_TEXT_DEFAULT };
-_createForOfIteratorHelperLoose.forYouDivider = { borderTopWidth: get_ActivityIndicator.StyleSheet.hairlineWidth, borderTopColor: require("_createForOfIteratorHelperLoose").colors.BORDER_SUBTLE, marginTop: require("_createForOfIteratorHelperLoose").space.PX_12, marginBottom: require("_createForOfIteratorHelperLoose").space.PX_8 };
-const obj19 = { borderTopWidth: get_ActivityIndicator.StyleSheet.hairlineWidth, borderTopColor: require("_createForOfIteratorHelperLoose").colors.BORDER_SUBTLE, marginTop: require("_createForOfIteratorHelperLoose").space.PX_12, marginBottom: require("_createForOfIteratorHelperLoose").space.PX_8 };
-_createForOfIteratorHelperLoose.friendRequestNoteContainer = { marginTop: 4, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_MOD_SUBTLE };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-let closure_30 = { STICKER: "sticker", VOICE_MESSAGE: "voice_message", ATTACHMENT: "attachment" };
-let closure_31 = importAllResult.memo((item) => {
+createCacheKey = { container: { flex: 1 }, row: null, rowCompact: null, rowActive: null, col: null, unreadIndicatorV2: null, unreadIndicatorCompactV2: null, rowText: null, rowTextV2: null, rowBody: null, rowBodyV2: null, rowBodyAcked: null, rowTime: null, rowTimeV2: null, itemV2: null, calloutContainer: null, calloutTextAcked: null, calloutTextNotAcked: null, messagePreviewContainerV2: null, messagePreviewBarV2: null, messagePreviewIconV2Container: null, messagePreviewIconV2: null, messagePreviewTextV2Acked: null, messagePreviewTextV2NotAcked: null, messagePreviewSystemTextV2: null, refreshSpinner: null, forYouDivider: null, friendRequestNoteContainer: null };
+let obj6 = { color: require("Themes").colors.MENTION_FOREGROUND, backgroundColor: "transparent" };
+createCacheKey[1] = { marginHorizontal: 4, paddingHorizontal: 12, paddingVertical: 8, marginBottom: 4, borderRadius: require("Themes").radii.lg, flexDirection: "row", justifyContent: "space-between" };
+createCacheKey[2] = { paddingVertical: 6 };
+let obj8 = { marginHorizontal: 4, paddingHorizontal: 12, paddingVertical: 8, marginBottom: 4, borderRadius: require("Themes").radii.lg, flexDirection: "row", justifyContent: "space-between" };
+createCacheKey[3] = { backgroundColor: require("Themes").colors.BACKGROUND_MOD_MUTED };
+createCacheKey[4] = { flexDirection: "column", flex: 1 };
+createCacheKey = { top: 28, backgroundColor: require("Themes").colors.BACKGROUND_BRAND, height: 8, width: 8, borderRadius: require("Themes").radii.xs, position: "absolute", left: 4 };
+createCacheKey[5] = createCacheKey;
+createCacheKey[6] = { top: 18 };
+createCacheKey[7] = { flex: 1 };
+createCacheKey[8] = { flexDirection: "row", justifyContent: "space-between" };
+createCacheKey[9] = { lineHeight: 20 };
+createCacheKey[10] = { marginRight: 30 };
+let obj9 = { backgroundColor: require("Themes").colors.BACKGROUND_MOD_MUTED };
+createCacheKey[11] = { color: require("Themes").colors.TEXT_MUTED };
+createCacheKey[12] = { lineHeight: 20 };
+createCacheKey[13] = { marginLeft: -24 };
+createCacheKey[14] = { alignItems: "flex-start", marginRight: 4, marginLeft: 8 };
+createCacheKey[15] = { marginTop: 4, flexDirection: "row", marginRight: 16 };
+let obj11 = { color: require("Themes").colors.TEXT_MUTED };
+createCacheKey[16] = { color: require("Themes").colors.TEXT_MUTED };
+createCacheKey = { color: require("Themes").colors.TEXT_DEFAULT };
+createCacheKey[17] = createCacheKey;
+createCacheKey[18] = { marginTop: 4, flexDirection: "row", marginRight: 16 };
+let obj12 = { color: require("Themes").colors.TEXT_MUTED };
+createCacheKey[19] = { marginRight: 8, borderLeftColor: require("Themes").colors.BORDER_SUBTLE, borderLeftWidth: 3, borderRadius: 2, height: "auto" };
+createCacheKey[20] = { paddingTop: 4 };
+const obj14 = { marginRight: 8, borderLeftColor: require("Themes").colors.BORDER_SUBTLE, borderLeftWidth: 3, borderRadius: 2, height: "auto" };
+createCacheKey[21] = { marginLeft: 4, tintColor: require("Themes").colors.TEXT_SUBTLE };
+const obj15 = { marginLeft: 4, tintColor: require("Themes").colors.TEXT_SUBTLE };
+createCacheKey[22] = { color: require("Themes").colors.TEXT_MUTED };
+const obj16 = { color: require("Themes").colors.TEXT_MUTED };
+createCacheKey[23] = { color: require("Themes").colors.TEXT_DEFAULT };
+createCacheKey[24] = { fontStyle: "italic", fontWeight: "normal" };
+const obj17 = { color: require("Themes").colors.TEXT_DEFAULT };
+createCacheKey[25] = { color: require("Themes").colors.INTERACTIVE_TEXT_DEFAULT };
+const obj18 = { color: require("Themes").colors.INTERACTIVE_TEXT_DEFAULT };
+createCacheKey[26] = { borderTopWidth: StyleSheet.hairlineWidth, borderTopColor: require("Themes").colors.BORDER_SUBTLE, marginTop: require("Themes").space.PX_12, marginBottom: require("Themes").space.PX_8 };
+const obj19 = { borderTopWidth: StyleSheet.hairlineWidth, borderTopColor: require("Themes").colors.BORDER_SUBTLE, marginTop: require("Themes").space.PX_12, marginBottom: require("Themes").space.PX_8 };
+createCacheKey[27] = { marginTop: 4, backgroundColor: require("Themes").colors.BACKGROUND_MOD_SUBTLE };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let closure_31 = { STICKER: "sticker", VOICE_MESSAGE: "voice_message", ATTACHMENT: "attachment" };
+let closure_35 = importAllResult.memo((item) => {
   let accessibilityActions;
   let ackedBeforeId;
   let actionButtons;
@@ -391,26 +388,30 @@ let closure_31 = importAllResult.memo((item) => {
   let onAccessibilityAction;
   let onSoftAckItem;
   let roleStyle;
+  let tmp10;
+  let tmp11;
   item = item.item;
   const rowIndex = item.rowIndex;
   ({ isSoftAcked, onSoftAckItem } = item);
   ({ forceHoistItem, isForceHoisted, compactMode } = item);
+  let notificationCenterItemAcked;
   let navigation;
   let callback;
   let str;
   ({ ackedBeforeId, roleStyle } = item);
-  const tmp = _createForOfIteratorHelperLoose();
+  const tmp = createCacheKey();
   let obj = item(notificationCenterItemAcked[29]);
   notificationCenterItemAcked = obj.useNotificationCenterItemAcked(item, ackedBeforeId);
   if (!isSoftAcked) {
     isSoftAcked = notificationCenterItemAcked;
   }
-  let obj1 = item(notificationCenterItemAcked[30]);
-  navigation = obj1.useNavigation();
+  let tmp2Result = tmp2(tmp3[30]);
+  navigation = tmp2Result.useNavigation();
   let items = [item];
   callback = str.useCallback(() => {
     if (null != item.deeplink) {
-      const obj = { payload: rowIndex(notificationCenterItemAcked[31])(item.deeplink).payload, safe: true, navigationReplace: false };
+      const obj = { payload: null, safe: true, navigationReplace: false };
+      obj[0] = rowIndex(notificationCenterItemAcked[31])(tmp.deeplink).payload;
       rowIndex(notificationCenterItemAcked[32])(obj);
     }
   }, items);
@@ -420,233 +421,337 @@ let closure_31 = importAllResult.memo((item) => {
       onSoftAckItem(item);
     }
     if (item.type === item(notificationCenterItemAcked[33]).NotificationCenterLocalItems.FRIEND_REQUESTS_GROUPED) {
-      if (null != navigation) {
-        let obj = { screen: "requests" };
-        navigation.navigate("friends", obj);
+      let obj = navigation;
+      if (navigation != null) {
+        obj.navigate("friends", { screen: "requests" });
       }
     }
     callback();
-    obj = { action_type: item(notificationCenterItemAcked[33]).NotificationCenterActionTypes.CLICKED, notification_center_id: item.id, item_type: item.type, acked: notificationCenterItemAcked, item_index: rowIndex, deeplink: item.deeplink };
+    obj = { action_type: item(tmp7[33]).NotificationCenterActionTypes.CLICKED, notification_center_id: tmp5.id, item_type: tmp5.type, acked: notificationCenterItemAcked, item_index: rowIndex, deeplink: tmp5.deeplink };
     rowIndex(notificationCenterItemAcked[34]).track(outer1_15.NOTIFICATION_CENTER_ACTION, obj);
   }, items1);
   const items2 = [item];
   const callback2 = str.useCallback(() => {
     const items = [];
     if (item.type === item(notificationCenterItemAcked[33]).NotificationCenterItems.TRENDING_CONTENT) {
-      let obj = {};
-      const intl = item(notificationCenterItemAcked[18]).intl;
-      obj.label = intl.string(item(notificationCenterItemAcked[18]).t["gSMz/x"]);
-      obj.icon = rowIndex(notificationCenterItemAcked[35]);
-      obj.IconComponent = item(notificationCenterItemAcked[36]).LightbulbIcon;
-      obj.onPress = function onPress() {
-        const deeplink = lib.deeplink;
-        let str = "";
-        if (null != deeplink) {
-          str = deeplink;
-        }
-        const match = str.match(/channels\/(\d*)\/(\d*)\/(\d*)\?summaryId=(\d*)/);
-        if (null == match) {
-          const _Error = Error;
-          const _HermesInternal = HermesInternal;
-          const error = new Error("Invalid deeplink: " + lib.deeplink);
-          throw error;
-        } else {
-          const tmp11 = callback(tmp2, 5);
-          const first = tmp11[0];
-          let obj = item(notificationCenterItemAcked[37]);
-          obj = { id: tmp11[3], channel_id: tmp11[2] };
-          obj = { summary_id: tmp11[4] };
-          const result = obj.openGuildHighlightNotificationForPush(tmp13, obj, outer2_20.TRENDING_CONTENT_PUSH, outer2_17.NOTIFICATION_CENTER, obj);
+      let obj = { label: null, icon: null, IconComponent: null, onPress: null };
+      let intl = tmp2(tmp3[18]).intl;
+      obj[0] = intl.string(tmp2(tmp3[18]).t["gSMz/x"]);
+      obj[1] = rowIndex(tmp3[35]);
+      obj[2] = tmp2(tmp3[36]).LightbulbIcon;
+      obj[3] = function onPress() {
+        let tmp21;
+        try {
+          let str = lib.deeplink;
+          if (str == null) {
+            str = "";
+          }
+          const match = str.match(/channels\/(\d*)\/(\d*)\/(\d*)\?summaryId=(\d*)/);
+          if (null == match) {
+            const _Error = Error;
+            const _HermesInternal = HermesInternal;
+            const error = new Error("Invalid deeplink: " + tmp2.deeplink);
+            throw error;
+          } else {
+            const tmp20 = outer1_5(tmp5, 5);
+            [r10045, tmp21] = tmp20;
+            const obj3 = lib(outer1_3[37]);
+            let obj = { id: null, channel_id: null };
+            obj[0] = tmp20[3];
+            obj[1] = tmp20[2];
+            obj = { summary_id: null };
+            obj[0] = tmp20[4];
+            const result = obj3.openGuildHighlightNotificationForPush(tmp21, obj, outer1_20.TRENDING_CONTENT_PUSH, outer1_17.NOTIFICATION_CENTER, obj);
+          }
+          tmp2 = lib;
+        } catch (err) {
+          obj = outer1_1(outer1_3[38]);
+          const obj1 = { key: "USER_SURVEY_ERROR", content: null };
+          const intl = lib(outer1_3[18]).intl;
+          obj1[1] = intl.string(lib(outer1_3[18]).t.HO9Lf2);
+          obj.open(obj1);
         }
       };
       items.push(obj);
+      let tmp6 = rowIndex;
     } else {
-      obj = {};
-      const intl2 = item(notificationCenterItemAcked[18]).intl;
-      obj.label = intl2.string(item(notificationCenterItemAcked[18]).t["08rqg5"]);
-      obj.icon = rowIndex(notificationCenterItemAcked[35]);
-      obj.IconComponent = item(notificationCenterItemAcked[36]).LightbulbIcon;
-      obj.onPress = function onPress() {
-        let obj = rowIndex(notificationCenterItemAcked[41]);
-        obj = { notificationType: lib.type, location: outer2_17.NOTIFICATION_CENTER };
-        obj.openLazy(item(notificationCenterItemAcked[40])(notificationCenterItemAcked[39], notificationCenterItemAcked.paths), "NotificationSurvey", obj);
+      obj = { label: null, icon: null, IconComponent: null, onPress: null };
+      const intl2 = tmp2(tmp3[18]).intl;
+      obj[0] = intl2.string(tmp2(tmp3[18]).t["08rqg5"]);
+      obj[1] = rowIndex(tmp3[35]);
+      obj[2] = tmp2(tmp3[36]).LightbulbIcon;
+      obj[3] = function onPress() {
+        try {
+          let obj = outer1_1(outer1_3[41]);
+          obj = { notificationType: null, location: null };
+          obj[0] = lib.type;
+          obj[1] = outer1_17.NOTIFICATION_CENTER;
+          obj.openLazy(lib(outer1_3[40])(outer1_3[39], outer1_3.paths), "NotificationSurvey", obj);
+        } catch (err) {
+          obj = { key: "USER_SURVEY_ERROR", content: null };
+          const intl = lib(outer1_3[18]).intl;
+          obj[1] = intl.string(lib(outer1_3[18]).t.HO9Lf2);
+          outer1_1(outer1_3[38]).open(obj);
+          const obj3 = outer1_1(outer1_3[38]);
+        }
       };
       items.push(obj);
+      tmp6 = rowIndex;
     }
     if (null == item.local_id) {
-      obj = {};
-      const intl3 = item(notificationCenterItemAcked[18]).intl;
-      obj.label = intl3.string(item(notificationCenterItemAcked[18]).t.D8z9ju);
-      obj.icon = rowIndex(notificationCenterItemAcked[42]);
-      const TrashIcon = item(notificationCenterItemAcked[43]).TrashIcon;
-      obj.IconComponent = TrashIcon;
-      // CreateGeneratorClosureLongIndex (0x67)
-      item = navigation(TrashIcon);
-      obj.onPress = function() {
-        return lib(...arguments);
+      obj = { label: null, icon: null, IconComponent: null, onPress: null };
+      const intl3 = tmp2(tmp3[18]).intl;
+      obj[0] = intl3.string(tmp2(tmp3[18]).t.D8z9ju);
+      obj[1] = tmp6(tmp3[42]);
+      obj[2] = tmp2(tmp3[43]).TrashIcon;
+      item = navigation(function*() {
+        if (c4 === 2) {
+          c4 = 3;
+          HermesBuiltin.throwTypeError();
+        } else if (tmp6 === 3) {
+          if (arg0 === 1) {
+            throw arg1;
+          } else if (arg0 === 2) {
+            let obj = { value: null, done: true };
+            obj[0] = arg1;
+            return obj;
+          } else {
+            return { value: "HermesInternal", done: null };
+          }
+        } else {
+          try {
+            c4 = 2;
+            if (0 === c1) {
+              if (arg0 === 1) {
+                c4 = 3;
+                throw arg1;
+              } else if (arg0 === 2) {
+                c4 = 3;
+                obj = { value: null, done: true };
+                obj[0] = arg1;
+                return obj;
+              } else {
+                const callback = tmp3;
+                let c3 = 1;
+                c1 = 2;
+                c4 = 1;
+                let obj1 = { value: null, done: false };
+                obj1[0] = callback(outer2_3[44]).deleteNotificationCenterItem(outer1_0);
+                return obj1;
+              }
+            } else {
+              if (1 === tmp7) {
+                c3 = 0;
+                obj1 = outer2_1(outer2_3[38]);
+                const obj2 = { key: "REMOVE_NOTIFICATION_ERROR", content: null };
+                const intl = callback(outer2_3[18]).intl;
+                obj2[1] = intl.string(callback(outer2_3[18]).t.WDxhvB);
+                obj1.open(obj2);
+                c4 = 3;
+              } else if (arg0 === 1) {
+                c4 = 3;
+                throw arg1;
+              } else if (arg0 !== 2) {
+                c3 = 0;
+              }
+              c3 = 0;
+              c4 = 3;
+              obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            }
+          } catch (tmp20) {
+            let closure_2 = tmp20;
+            if (tmp4 === c3) {
+              c4 = tmp2;
+              throw tmp20;
+            } else {
+              c1 = tmp;
+            }
+          }
+        }
+      });
+      obj[3] = function() {
+        const self = this;
+        const apply = closure_0.apply;
+        if (typeof apply === "unknown") {
+          let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+        } else {
+          applyArgumentsResult = apply(self, arguments);
+        }
+        return applyArgumentsResult;
       };
       items.unshift(obj);
     }
-    let obj1 = item(notificationCenterItemAcked[45]);
-    obj1 = { key: "ForYouItemLongPress", options: items, hasIcons: true };
-    let result = obj1.showSimpleActionSheet(obj1);
+    let result = item(notificationCenterItemAcked[45]).showSimpleActionSheet({ key: "ForYouItemLongPress", options: items, hasIcons: true });
   }, items2);
-  const tmp7 = callback(str.useState(undefined), 2);
-  let first = tmp7[0];
-  let obj2 = item(notificationCenterItemAcked[46]);
-  const itemActionButtonPropsV2 = obj2.useItemActionButtonPropsV2(item, callback, navigation, forceHoistItem, isForceHoisted, onSoftAckItem, tmp7[1], compactMode);
+  [tmp10, tmp11] = callback(str.useState(undefined), 2);
+  tmp2Result = tmp2(tmp3[46]);
+  const itemActionButtonPropsV2 = tmp2Result.useItemActionButtonPropsV2(item, callback, navigation, forceHoistItem, isForceHoisted, onSoftAckItem, tmp11, compactMode);
   ({ actionButtons, actionsNode, accessibilityActions, onAccessibilityAction } = itemActionButtonPropsV2);
-  let obj3 = onSoftAckItem(notificationCenterItemAcked[16]);
-  const parserWithoutLinks = obj3.getParserWithoutLinks(_createForOfIteratorHelperLoose());
-  let obj4 = onSoftAckItem(notificationCenterItemAcked[16]);
+  let obj3 = onSoftAckItem(tmp3[16]);
+  const parserWithoutLinks = obj3.getParserWithoutLinks(createCacheKey());
+  let obj4 = onSoftAckItem(tmp3[16]);
   const parserWithoutLinks1 = obj4.getParserWithoutLinks(callback2());
-  let tmp12 = item.type === item(notificationCenterItemAcked[33]).NotificationCenterItems.FRIEND_REQUEST_ACCEPTED;
-  if (!tmp12) {
-    tmp12 = item.type === item(notificationCenterItemAcked[33]).NotificationCenterItems.GAME_FRIEND_REQUEST_ACCEPTED;
+  let tmp15 = item.type === tmp2(tmp3[33]).NotificationCenterItems.FRIEND_REQUEST_ACCEPTED;
+  if (!tmp15) {
+    tmp15 = item.type === tmp2(tmp3[33]).NotificationCenterItems.GAME_FRIEND_REQUEST_ACCEPTED;
   }
   if (notificationCenterItemAcked) {
-    notificationCenterItemAcked = !tmp12;
+    notificationCenterItemAcked = !tmp15;
   }
-  let tmp15 = null;
+  let tmp16 = null;
   if (!notificationCenterItemAcked) {
-    obj = { "aria-hidden": true, accessibilityLabel: "", item, rowIndex, onSoftAckItem, actionButtons, actionsNode, compactMode };
-    tmp15 = callback(item(notificationCenterItemAcked[46]).ForYouItemActionButtons, obj);
+    obj = { "aria-hidden": true, accessibilityLabel: "", item: null, rowIndex: null, onSoftAckItem: null, actionButtons: null, actionsNode: null, compactMode: null };
+    obj[2] = item;
+    obj[3] = rowIndex;
+    obj[4] = onSoftAckItem;
+    obj[5] = actionButtons;
+    obj[6] = actionsNode;
+    obj[7] = compactMode;
+    tmp16 = callback(tmp2(tmp3[46]).ForYouItemActionButtons, obj);
   }
   str = "text-md/semibold";
   if (isSoftAcked) {
     str = "text-md/medium";
   }
-  if (null == first) {
-    obj = {
-      item,
-      renderApplication(applicationId) {
-          return outer1_21(outer1_36, { applicationId, textVariant: str });
-        }
+  if (tmp10 == null) {
+    obj = { item: null, renderApplication: null };
+    obj[0] = item;
+    obj[1] = function renderApplication(applicationId) {
+      return outer1_21(outer1_34, { applicationId, textVariant: str });
     };
-    first = rowIndex(notificationCenterItemAcked[47])(obj);
+    tmp10 = rowIndex(tmp3[47])(obj);
   }
-  let obj7 = rowIndex(notificationCenterItemAcked[48]);
+  let obj7 = rowIndex(tmp3[48]);
   const extractTimestampResult = obj7.extractTimestamp(item.id);
-  obj1 = { accessibilityRole: "button", accessibilityActions, onAccessibilityAction };
+  let obj1 = { accessibilityRole: "button", accessibilityActions, onAccessibilityAction, style: null, onPress: null, onAccessibilityTap: null, onLongPress: null, underlayColor: null, children: null };
   const items3 = [tmp.row, ];
-  let rowCompact = !tmp23;
-  if (!!compactMode) {
+  let rowCompact = compactMode;
+  if (rowCompact) {
     rowCompact = tmp.rowCompact;
   }
   items3[1] = rowCompact;
-  obj1.style = items3;
-  obj1.onPress = callback1;
-  obj1.onAccessibilityTap = callback1;
-  obj1.onLongPress = callback2;
-  obj1.underlayColor = tmp.rowActive.backgroundColor;
-  let tmp25Result = null;
+  obj1[3] = items3;
+  obj1[4] = callback1;
+  obj1[5] = callback1;
+  obj1[6] = callback2;
+  obj1[7] = tmp.rowActive.backgroundColor;
+  let tmp23Result = null;
   if (item.enableBadge) {
-    tmp25Result = null;
+    tmp23Result = null;
     if (!isSoftAcked) {
-      obj2 = {};
       const items4 = [tmp.unreadIndicatorV2, ];
-      let unreadIndicatorCompactV2 = !tmp27;
-      if (!!compactMode) {
+      let unreadIndicatorCompactV2 = compactMode;
+      if (unreadIndicatorCompactV2) {
         unreadIndicatorCompactV2 = tmp.unreadIndicatorCompactV2;
       }
+      let obj2 = { style: null };
       items4[1] = unreadIndicatorCompactV2;
-      obj2.style = items4;
-      tmp25Result = callback(closure_7, obj2);
-      const tmp25 = callback;
-      const tmp26 = closure_7;
+      obj2[0] = items4;
+      tmp23Result = callback(closure_7, obj2);
+      const tmp23 = callback;
+      const tmp24 = closure_7;
     }
   }
-  const items5 = [tmp25Result, , ];
-  obj3 = { style: tmp.itemV2, children: callback(item(notificationCenterItemAcked[50]).ForYouItemImage, { item, compactMode }) };
+  const items5 = [tmp23Result, , ];
+  obj3 = { style: tmp.itemV2, children: callback(tmp2(tmp3[50]).ForYouItemImage, { item, compactMode }) };
   items5[1] = callback(closure_7, obj3);
-  obj4 = { style: { flex: 1, flexDirection: "row" } };
-  const obj5 = { style: tmp.col };
-  const obj6 = { style: items6 };
+  obj4 = { style: { flex: 1, flexDirection: "row" }, children: null };
+  const obj5 = { style: tmp.col, children: null };
+  const obj6 = { style: items6, children: null };
   items6 = [, ];
   ({ rowText: arr7[0], rowTextV2: arr7[1] } = tmp);
-  obj7 = { variant: str };
+  obj7 = { variant: str, style: null, color: "text-default", children: null };
   const items7 = [, , ];
   ({ rowBody: arr8[0], rowBodyV2: arr8[1] } = tmp);
-  let rowBodyAcked = !tmp35;
-  if (!!isSoftAcked) {
+  let rowBodyAcked = isSoftAcked;
+  if (rowBodyAcked) {
     rowBodyAcked = tmp.rowBodyAcked;
   }
   items7[2] = rowBodyAcked;
-  obj7.style = items7;
-  obj7.color = "text-default";
-  if ("string" !== typeof first) {
-    obj7.children = first;
-    const items8 = [callback(item(notificationCenterItemAcked[14]).Text, obj7), ];
-    const obj8 = { variant: "text-xs/medium", style: null, color: "text-default" };
+  obj7[1] = items7;
+  if (typeof tmp10 === "init") {
+    obj7[3] = tmp10;
+    const items8 = [tmp25(tmp2(tmp3[14]).Text, obj7), ];
     const items9 = [, , ];
     ({ rowTime: arr10[0], rowTimeV2: arr10[1] } = tmp);
-    let rowBodyAcked2 = !tmp40;
-    if (!!isSoftAcked) {
+    let rowBodyAcked2 = isSoftAcked;
+    if (rowBodyAcked2) {
       rowBodyAcked2 = tmp.rowBodyAcked;
     }
+    const obj8 = { variant: "text-xs/medium", style: null, color: "text-default", accessibilityLabel: null, children: null };
     items9[2] = rowBodyAcked2;
-    obj8.style = items9;
-    obj8.accessibilityLabel = item(notificationCenterItemAcked[51]).getRelativeTimestamp(extractTimestampResult, false);
-    const obj17 = item(notificationCenterItemAcked[51]);
-    const tmp37 = callback;
-    obj8.children = item(notificationCenterItemAcked[51]).getRelativeTimestamp(extractTimestampResult);
-    items8[1] = tmp37(item(notificationCenterItemAcked[14]).Text, obj8);
-    obj6.children = items8;
-    const items10 = [closure_22(closure_7, obj6), , , , ];
-    let tmp44Result = item.type === item(notificationCenterItemAcked[33]).NotificationCenterLocalItems.INCOMING_FRIEND_REQUESTS;
-    if (tmp44Result) {
-      const obj9 = { styles: tmp.friendRequestNoteContainer, backgroundColor: tmp.friendRequestNoteContainer.backgroundColor };
+    obj8[1] = items9;
+    obj8[3] = tmp2(tmp3[51]).getRelativeTimestamp(extractTimestampResult, false);
+    const tmp2Result1 = tmp2(tmp3[51]);
+    obj8[4] = tmp2(tmp3[51]).getRelativeTimestamp(extractTimestampResult);
+    items8[1] = tmp25(tmp2(tmp3[14]).Text, obj8);
+    obj6[1] = items8;
+    const items10 = [tmp21(tmp26, obj6), , , , ];
+    let tmp25Result = item.type === tmp2(tmp3[33]).NotificationCenterLocalItems.INCOMING_FRIEND_REQUESTS;
+    if (tmp25Result) {
+      const obj9 = { styles: null, backgroundColor: null, userId: null, analyticsLocation: "Notifications Tab" };
+      obj9[0] = tmp.friendRequestNoteContainer;
+      obj9[1] = tmp.friendRequestNoteContainer.backgroundColor;
       const other_user = item.other_user;
       let id;
-      if (null != other_user) {
+      if (other_user != null) {
         id = other_user.id;
       }
-      if (null == id) {
+      if (id == null) {
         id = closure_19;
       }
-      obj9.userId = id;
-      obj9.analyticsLocation = "Notifications Tab";
-      tmp44Result = callback(rowIndex(notificationCenterItemAcked[52]), obj9);
-      const tmp44 = callback;
-      const tmp47 = rowIndex(notificationCenterItemAcked[52]);
+      obj9[2] = id;
+      tmp25Result = tmp25(rowIndex(tmp3[52]), obj9);
+      const tmp19Result = rowIndex(tmp3[52]);
     }
-    items10[1] = tmp44Result;
+    items10[1] = tmp25Result;
     const message = item.message;
     let content;
-    if (null != message) {
+    if (message != null) {
       content = message.content;
     }
-    let tmp50 = null;
+    tmp25Result = null;
     if (null != content) {
-      const obj10 = { item, acked: isSoftAcked, compactMode, roleStyle };
-      tmp50 = callback(ForYouMessagePreviewV2, obj10);
+      const obj10 = { item: null, acked: null, compactMode: null, roleStyle: null };
+      obj10[0] = item;
+      obj10[1] = isSoftAcked;
+      obj10[2] = compactMode;
+      obj10[3] = roleStyle;
+      tmp25Result = tmp25(ForYouMessagePreviewV2, obj10);
     }
-    items10[2] = tmp50;
-    let tmp53 = null;
+    items10[2] = tmp25Result;
+    let tmp25Result1 = null;
     if (null != item.callout) {
-      const obj11 = { item, acked: isSoftAcked, compactMode };
-      tmp53 = callback(Callout, obj11);
+      const obj11 = { item: null, acked: null, compactMode: null };
+      obj11[0] = item;
+      obj11[1] = isSoftAcked;
+      obj11[2] = compactMode;
+      tmp25Result1 = tmp25(Callout, obj11);
     }
-    items10[3] = tmp53;
-    const obj12 = { children: tmp15 };
-    items10[4] = callback(closure_7, obj12);
-    obj5.children = items10;
-    obj4.children = closure_22(closure_7, obj5);
-    items5[2] = callback(closure_7, obj4);
-    obj1.children = items5;
-    return closure_22(item(notificationCenterItemAcked[49]).PressableHighlight, obj1);
+    items10[3] = tmp25Result1;
+    const obj12 = { children: null };
+    obj12[0] = tmp16;
+    items10[4] = tmp25(tmp26, obj12);
+    obj5[1] = items10;
+    obj4[1] = tmp21(tmp26, obj5);
+    items5[2] = tmp25(tmp26, obj4);
+    obj1[8] = items5;
+    return tmp21(tmp2(tmp3[49]).PressableHighlight, obj1);
   } else {
-    isSoftAcked ? parserWithoutLinks(first) : parserWithoutLinks1(first);
+    isSoftAcked ? parserWithoutLinks(tmp10) : parserWithoutLinks1(tmp10);
   }
 });
-const obj20 = { marginTop: 4, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_MOD_SUBTLE };
+const obj20 = { marginTop: 4, backgroundColor: require("Themes").colors.BACKGROUND_MOD_SUBTLE };
 const memoResult = importAllResult.memo((loadMore) => {
   let items;
   let loadingMore;
   let nestedInLaunchPad;
   let onScroll;
+  let shouldScrollToTop;
   loadMore = loadMore.loadMore;
-  const shouldScrollToTop = loadMore.shouldScrollToTop;
+  ({ nestedInLaunchPad, shouldScrollToTop } = loadMore);
   const isSoftAcked = loadMore.isSoftAcked;
   const onSoftAckItem = loadMore.onSoftAckItem;
   const forceHoistItem = loadMore.forceHoistItem;
@@ -654,7 +759,7 @@ const memoResult = importAllResult.memo((loadMore) => {
   const suggestedFriendAdded = loadMore.suggestedFriendAdded;
   const onAddSuggestionAnimationFinish = loadMore.onAddSuggestionAnimationFinish;
   let flag = loadMore.panelVariant;
-  ({ items, onScroll, loadingMore, nestedInLaunchPad } = loadMore);
+  ({ items, onScroll, loadingMore } = loadMore);
   if (flag === undefined) {
     flag = false;
   }
@@ -666,7 +771,7 @@ const memoResult = importAllResult.memo((loadMore) => {
   let callback;
   let ref;
   let closure_16;
-  const tmp = _createForOfIteratorHelperLoose();
+  const tmp = createCacheKey();
   c9 = tmp;
   const NotificationCenterAckedBeforeId = loadMore(onSoftAckItem[54]).NotificationCenterAckedBeforeId;
   setting = NotificationCenterAckedBeforeId.useSetting();
@@ -678,58 +783,20 @@ const memoResult = importAllResult.memo((loadMore) => {
   stateFromStores1 = obj1.useStateFromStores(items1, () => callback.isRefreshing());
   const ChannelListLayoutSetting = loadMore(onSoftAckItem[54]).ChannelListLayoutSetting;
   const setting1 = ChannelListLayoutSetting.useSetting();
-  const tmp6 = setting1 === loadMore(onSoftAckItem[55]).ChannelListLayoutTypes.COMPACT;
-  c13 = tmp6;
+  const tmp8 = setting1 === loadMore(onSoftAckItem[55]).ChannelListLayoutTypes.COMPACT;
+  c13 = tmp8;
   const items2 = [loadMore];
   callback = suggestedFriendAdded.useCallback(() => {
     loadMore(true);
   }, items2);
-  const items3 = [tmp.forYouDivider, suggestedFriendAdded, onAddSuggestionAnimationFinish, stateFromStores, setting, isSoftAcked, onSoftAckItem, forceHoistItem, isForceHoisted, tmp6, callback, flag];
-  const callback1 = suggestedFriendAdded.useCallback((item) => {
-    item = item.item;
-    const kind = item.kind;
-    if ("read-section-header" === kind) {
-      return outer1_21(loadMore(onSoftAckItem[56]).ForYouReadSectionHeader, {});
-    } else if ("recent-activity-section-header" === kind) {
-      return outer1_21(loadMore(onSoftAckItem[57]).ForYouRecentActivitySectionHeader, {});
-    } else if ("hoisted-items-header" === kind) {
-      return outer1_21(loadMore(onSoftAckItem[58]).ForYouHoistedItemsHeader, {});
-    } else if ("suggested-friends-header" === kind) {
-      let obj = { showDivider: item.showDivider };
-      return outer1_21(shouldScrollToTop(onSoftAckItem[59]), obj);
-    } else if ("suggested-friends-row" === kind) {
-      obj = { suggestedFriend: item.suggestedFriend, onAddSuggestion: suggestedFriendAdded, onAddSuggestionAnimationFinish, panelVariant: flag };
-      return outer1_21(shouldScrollToTop(onSoftAckItem[60]), obj);
-    } else if ("suggested-friends-show-all-row" === kind) {
-      const obj1 = { suggestedFriends: item.suggestedFriends, panelVariant: flag };
-      return outer1_21(loadMore(onSoftAckItem[61]).ForYouSuggestedFriendShowAllRow, obj1);
-    } else if ("for-you-divider" === kind) {
-      const obj2 = { style: _undefined.forYouDivider };
-      return outer1_21(onAddSuggestionAnimationFinish, obj2);
-    } else if ("notification-center-item" === kind) {
-      const obj3 = {};
-      const obj4 = { item, ackedBeforeId: setting, isSoftAcked: isSoftAcked(item.id), onSoftAckItem, forceHoistItem, isForceHoisted, rowIndex: tmp, compactMode: c13, roleStyle: stateFromStores };
-      const _HermesInternal = HermesInternal;
-      obj3.children = outer1_21(outer1_31, obj4, "" + item.id + "-" + stateFromStores);
-      return outer1_21(loadMore(onSoftAckItem[62]).ErrorBoundary, obj3);
-    } else if ("mentions-placeholder" === kind) {
-      return outer1_21(loadMore(onSoftAckItem[17]).ForYouMentionPlaceholder, {});
-    } else if ("unread-cleared-placeholder" === kind) {
-      return outer1_21(loadMore(onSoftAckItem[63]).ForYouUnreadClearedState, {});
-    } else if ("load-more" === kind) {
-      const obj5 = { onPressLoad: callback };
-      return outer1_21(loadMore(onSoftAckItem[64]).ForYouLoadMore, obj5);
-    } else {
-      obj = loadMore(onSoftAckItem[65]);
-      obj.assertNever(item);
-    }
-  }, items3);
+  const items3 = [tmp.forYouDivider, suggestedFriendAdded, onAddSuggestionAnimationFinish, stateFromStores, setting, isSoftAcked, onSoftAckItem, forceHoistItem, isForceHoisted, tmp8, callback, flag];
+  const callback1 = suggestedFriendAdded.useCallback((arg0) => outer1_21(loadMore(onSoftAckItem[64]).ForYouLoadMore, { onPressLoad: callback }), items3);
   ref = suggestedFriendAdded.useRef(null);
   const items4 = [shouldScrollToTop];
   const effect = suggestedFriendAdded.useEffect(() => {
     if (shouldScrollToTop) {
       const current = ref.current;
-      if (null != current) {
+      if (current != null) {
         current.scrollToOffset({ animated: false, offset: 0 });
       }
     }
@@ -741,25 +808,36 @@ const memoResult = importAllResult.memo((loadMore) => {
       const obj = loadMore(onSoftAckItem[66]);
     }
   }, items5);
-  const tmp12 = isForceHoisted(suggestedFriendAdded.useState(0), 2);
-  closure_16 = tmp12[1];
+  const tmp14 = isForceHoisted(suggestedFriendAdded.useState(0), 2);
+  closure_16 = tmp14[1];
   obj = {
     style: tmp.container,
     onLayout(nativeEvent) {
       return callback(nativeEvent.nativeEvent.layout.height);
-    }
+    },
+    children: null
   };
-  let tmp15 = !nestedInLaunchPad;
-  if (tmp15) {
-    obj = { scrollRef: ref };
-    tmp15 = callback(ScrollToTopRef, obj);
+  let tmp17 = !nestedInLaunchPad;
+  if (!nestedInLaunchPad) {
+    obj = { scrollRef: null };
+    obj[0] = ref;
+    tmp17 = callback(ScrollToTopRef, obj);
   }
-  const items6 = [tmp15, ];
-  obj1 = { ref, data: items, ListEmptyComponent: callback(loadMore(onSoftAckItem[68]).ForYouEmptyState, { height: tmp12[0] }), onScroll, refreshControl: callback(flag, { onRefresh: callback2, refreshing: stateFromStores1, tintColor: tmp.refreshSpinner.color }), keyExtractor: extractKey, renderItem: callback1, extraData: setting, onEndReached: loadMore, onEndReachedThreshold: 0.8, ListFooterComponent: callback(ForYouFooter, { loading: loadingMore }), viewabilityConfig: closure_23 };
+  const items6 = [tmp17, ];
+  obj1 = { ref, data: items, ListEmptyComponent: null, onScroll: null, refreshControl: null, keyExtractor: null, renderItem: null, extraData: null, onEndReached: null, onEndReachedThreshold: 0.8, ListFooterComponent: null, viewabilityConfig: null };
+  obj1[2] = callback(loadMore(onSoftAckItem[68]).ForYouEmptyState, { height: tmp14[0] });
+  obj1[3] = onScroll;
+  obj1[4] = callback(flag, { onRefresh: callback2, refreshing: stateFromStores1, tintColor: tmp.refreshSpinner.color });
+  obj1[5] = extractKey;
+  obj1[6] = callback1;
+  obj1[7] = setting;
+  obj1[8] = loadMore;
+  obj1[10] = callback(ForYouFooter, { loading: loadingMore });
+  obj1[11] = closure_23;
   items6[1] = callback(loadMore(onSoftAckItem[67]).FlashList, obj1);
-  obj.children = items6;
+  obj[2] = items6;
   return closure_22(onAddSuggestionAnimationFinish, obj);
 });
-let result = require("result").fileFinishedImporting("modules/notification_center/native/ForYouItems.tsx");
+let result = require("noop").fileFinishedImporting("modules/notification_center/native/ForYouItems.tsx");
 
 export const ForYouItems = memoResult;

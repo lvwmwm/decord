@@ -1,23 +1,30 @@
-// Module ID: 10871
-// Function ID: 84188
+// Module ID: 10895
+// Function ID: 10896
 // Name: isSocialLayerApplication
-// Dependencies: [653, 5674, 8926, 2]
-// Exports: isSocialLayerSDKAuthorization
+// Dependencies: [676, 5692, 8950, 2]
+// Exports: default, isSocialLayerSDKAuthorization
 
-// Module 10871 (isSocialLayerApplication)
+// Module 10895 (isSocialLayerApplication)
 import { ApplicationFlags } from "ME";
 
-function isSocialLayerApplication(application) {
-  let hasApplicationFlagResult = require(5674) /* getApplicationFlags */.hasApplicationFlag(application, ApplicationFlags.SOCIAL_LAYER_INTEGRATION_LIMITED);
-  if (!hasApplicationFlagResult) {
-    hasApplicationFlagResult = require(5674) /* getApplicationFlags */.hasApplicationFlag(application, ApplicationFlags.SOCIAL_LAYER_INTEGRATION);
-    const obj2 = require(5674) /* getApplicationFlags */;
-  }
-  return hasApplicationFlagResult;
-}
 const result = require("items").fileFinishedImporting("modules/applications/isSocialLayerApplication.tsx");
 
-export default isSocialLayerApplication;
+export default function isSocialLayerApplication(application) {
+  let hasApplicationFlagResult = require(5692) /* getApplicationFlags */.hasApplicationFlag(application, ApplicationFlags.SOCIAL_LAYER_INTEGRATION_LIMITED);
+  if (!hasApplicationFlagResult) {
+    hasApplicationFlagResult = require(5692) /* getApplicationFlags */.hasApplicationFlag(application, ApplicationFlags.SOCIAL_LAYER_INTEGRATION);
+    const tmpResult = require(5692) /* getApplicationFlags */;
+  }
+  return hasApplicationFlagResult;
+};
 export const isSocialLayerSDKAuthorization = function isSocialLayerSDKAuthorization(application, scopes) {
-  return isSocialLayerApplication(application) && scopes.some((arg0) => outer1_0(outer1_1[2]).isSocialLayerUmbrellaScope(arg0));
+  let hasApplicationFlagResult = require(5692) /* getApplicationFlags */.hasApplicationFlag(application, ApplicationFlags.SOCIAL_LAYER_INTEGRATION_LIMITED);
+  if (!hasApplicationFlagResult) {
+    hasApplicationFlagResult = require(5692) /* getApplicationFlags */.hasApplicationFlag(application, ApplicationFlags.SOCIAL_LAYER_INTEGRATION);
+    const tmpResult = require(5692) /* getApplicationFlags */;
+  }
+  if (hasApplicationFlagResult) {
+    hasApplicationFlagResult = scopes.some((arg0) => callback(table[2]).isSocialLayerUmbrellaScope(arg0));
+  }
+  return hasApplicationFlagResult;
 };

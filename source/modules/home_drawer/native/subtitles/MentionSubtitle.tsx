@@ -1,18 +1,18 @@
-// Module ID: 14957
-// Function ID: 113949
+// Module ID: 14983
+// Function ID: 14984
 // Name: MentionSubtitle
-// Dependencies: [31, 27, 33, 14958, 4628, 4673, 4161, 1212, 2]
+// Dependencies: [19, 17, 21, 14984, 4650, 4695, 4185, 1236, 2]
 // Exports: default
 
-// Module 14957 (MentionSubtitle)
-import "result";
+// Module 14983 (MentionSubtitle)
+import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
 
-let closure_3;
-let closure_4;
+let c3;
+let c4;
 const require = arg1;
-({ jsx: closure_3, jsxs: closure_4 } = jsxProd);
+({ jsx: c3, jsxs: c4 } = jsxProd);
 const result = require("jsxProd").fileFinishedImporting("modules/home_drawer/native/subtitles/MentionSubtitle.tsx");
 
 export default function MentionSubtitle(channel) {
@@ -21,29 +21,29 @@ export default function MentionSubtitle(channel) {
   let guild;
   channel = channel.channel;
   ({ guild, channelName, count } = channel);
-  let obj = require(14958) /* styles */;
+  let obj = require(14984) /* styles */;
   const subtitleStyles = obj.useSubtitleStyles();
   let channelIconComponentWithGuild;
   if (null != channel) {
-    let obj1 = require(4628) /* getThreadChannelIcon */;
-    channelIconComponentWithGuild = obj1.getChannelIconComponentWithGuild(channel, guild);
+    channelIconComponentWithGuild = tmp(4650).getChannelIconComponentWithGuild(channel, guild);
+    const tmpResult = tmp(4650);
   }
-  if (null == channelIconComponentWithGuild) {
-    channelIconComponentWithGuild = require(4673) /* TextIcon */.TextIcon;
+  if (channelIconComponentWithGuild == null) {
+    channelIconComponentWithGuild = tmp(4695).TextIcon;
   }
-  obj = { style: subtitleStyles.subtitleRow };
+  obj = { style: subtitleStyles.subtitleRow, children: null };
   obj = { size: "xxs", color: "icon-muted", style: subtitleStyles.channelIcon };
   const items = [callback(channelIconComponentWithGuild, obj), ];
-  obj1 = { variant: "text-xs/medium", color: "text-muted", lineClamp: 1, style: subtitleStyles.subtitleText };
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj1.children = intl.format(require(1212) /* getSystemLocale */.t.L9YdGH, {
+  const obj1 = { variant: "text-xs/medium", color: "text-muted", lineClamp: 1, style: subtitleStyles.subtitleText, children: null };
+  const intl = tmp(1236).intl;
+  obj1[4] = intl.format(require(1236) /* getSystemLocale */.t.L9YdGH, {
     channelName,
     count: count - 1,
     channelHook(children) {
-      return outer1_3(outer1_0(outer1_1[6]).Text, { variant: "text-xs/medium", children }, arg1);
+      return callback2(callback(table[6]).Text, { variant: "text-xs/medium", children }, arg1);
     }
   });
-  items[1] = callback(require(4161) /* Text */.Text, obj1);
-  obj.children = items;
+  items[1] = callback(require(4185) /* Text */.Text, obj1);
+  obj[1] = items;
   return callback2(View, obj);
 };

@@ -1,11 +1,11 @@
-// Module ID: 13984
-// Function ID: 106836
+// Module ID: 14005
+// Function ID: 14006
 // Name: ClipsSettingsScreen
-// Dependencies: [31, 7733, 33, 10099, 13657, 2]
+// Dependencies: [19, 7756, 21, 10120, 13678, 2]
 // Exports: default
 
-// Module 13984 (ClipsSettingsScreen)
-import result from "result";
+// Module 14005 (ClipsSettingsScreen)
+import noop from "noop";
 import { MobileSetting } from "MobileSetting";
 import { jsx } from "jsxProd";
 
@@ -14,9 +14,9 @@ const result = require("jsxProd").fileFinishedImporting("modules/user_settings/c
 
 export default function ClipsSettingsScreen() {
   const node = React.useMemo(() => {
-    const items = [outer1_4.CLIPS_OPT_OUT_OF_VOICE_RECORDING];
+    const items = [constants.CLIPS_OPT_OUT_OF_VOICE_RECORDING];
     const sections = [{ settings: items }];
-    return outer1_0(outer1_2[3]).createList({ sections });
+    return callback(table[3]).createList({ sections });
   }, []);
-  return jsx(importDefault(13657), { node });
+  return jsx(importDefault(13678), { node });
 };

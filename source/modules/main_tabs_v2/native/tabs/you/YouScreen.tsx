@@ -1,41 +1,42 @@
-// Module ID: 15580
-// Function ID: 119748
+// Module ID: 15614
+// Function ID: 15615
 // Name: handleBackButtonPress
-// Dependencies: [57, 31, 27, 5878, 1922, 13659, 5902, 1850, 15211, 653, 655, 1345, 5545, 33, 4026, 8354, 4165, 478, 689, 666, 4017, 624, 1212, 4695, 15240, 8343, 8402, 480, 7958, 1557, 8053, 4101, 8352, 4019, 1450, 3838, 1457, 15581, 1392, 7954, 6540, 15582, 8083, 4698, 8058, 8342, 5517, 8072, 1334, 8417, 5119, 15583, 5484, 15586, 15587, 3877, 15595, 8073, 8064, 8349, 665, 8079, 8035, 15597, 10026, 7959, 8649, 6590, 5779, 11946, 5713, 2]
+// Dependencies: [32, 19, 17, 5896, 1946, 13680, 5921, 1874, 15244, 676, 678, 1369, 5563, 21, 4050, 8378, 4189, 501, 712, 689, 4041, 647, 1236, 4717, 15273, 8367, 8426, 503, 7983, 1581, 8077, 4125, 8376, 4043, 1474, 3862, 1481, 15615, 1416, 7979, 6561, 15616, 8107, 4720, 8082, 8366, 5535, 8096, 1358, 8441, 5141, 15617, 5502, 15620, 15621, 3901, 15629, 8097, 8088, 8373, 688, 8103, 8059, 15631, 10048, 7984, 8673, 6611, 5797, 11970, 5731, 2]
 // Exports: default
 
-// Module 15580 (handleBackButtonPress)
-import ProfileFrameLayer from "ProfileFrameLayer";
-import useTheme from "useTheme";
-import get_ActivityIndicator from "isThrottled";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_8 from "_isNativeReflectConstruct";
+// Module 15614 (handleBackButtonPress)
+import useUserProfileOverscrollStyles from "useUserProfileOverscrollStyles";
+import closure_4 from "n";
+import get_ActivityIndicator from "PlatformTypes";
+import createUserWidgetFromServer from "createUserWidgetFromServer";
+import _getSystemLocale from "_getSystemLocale";
 import zustandStore from "zustandStore";
-import closure_10 from "_isNativeReflectConstruct";
-import closure_11 from "_isNativeReflectConstruct";
+import updateGuildUnreadSentinel from "updateGuildUnreadSentinel";
+import mergeGuildAvatar from "mergeGuildAvatar";
 import YOU_SCREEN_ID from "YOU_SCREEN_ID";
 import { UserSettingsSections } from "ME";
 import { CollectiblesMobileShopScreen as closure_17 } from "items";
 import { ContentDismissActionType } from "ContentDismissActionType";
 import { UserProfileThemeTypes } from "ARBITRARY_LARGE_OFFSET";
-import jsxProd from "useChatLayout";
-import module_8354 from "module_8354";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import importDefaultResult from "module_4026";
-import importDefaultResult1 from "module_4026";
+import jsxProd from "defaultAreStatesEqual";
+import module_8378 from "module_8378";
+import createCacheKey from "createCacheKey";
+import createCacheKey from "createCacheKey";
+import importDefaultResult from "module_4050";
+import importDefaultResult1 from "module_4050";
 
+let ScrollView;
+let c5;
 let closure_12;
-let closure_13;
 let closure_14;
 let closure_15;
 let closure_20;
 let closure_21;
-let closure_5;
 let closure_6;
+let map1;
 const require = arg1;
 function handleBackButtonPress() {
-  const navigation = require(4017) /* getRootNavigationRef */.getRootNavigationRef();
+  const navigation = require(4041) /* getRootNavigationRef */.getRootNavigationRef();
   if (null != navigation) {
     if (navigation.canGoBack()) {
       navigation.goBack();
@@ -45,28 +46,31 @@ function handleBackButtonPress() {
   }
 }
 function BackButton(paddingTop) {
-  let obj = require(624) /* defaultAreStatesEqual */;
-  const items = [closure_10];
-  const stateFromStores = obj.useStateFromStores(items, () => outer1_10.getTotalMentionCount());
+  let obj = require(647) /* defaultAreStatesEqual */;
+  const items = [updateGuildUnreadSentinel];
+  const stateFromStores = obj.useStateFromStores(items, () => totalMentionCount.getTotalMentionCount());
   if (stateFromStores > 0) {
-    const intl2 = require(1212) /* getSystemLocale */.intl;
-    obj = { mentionCount: stateFromStores };
-    let formatToPlainStringResult = intl2.formatToPlainString(require(1212) /* getSystemLocale */.t.vxFYaM, obj);
+    const intl2 = tmp2(1236).intl;
+    obj = { mentionCount: null };
+    obj[0] = stateFromStores;
+    let formatToPlainStringResult = intl2.formatToPlainString(tmp2(1236).t.vxFYaM, obj);
   } else {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    formatToPlainStringResult = intl.string(require(1212) /* getSystemLocale */.t["13/7kX"]);
+    const intl = tmp2(1236).intl;
+    formatToPlainStringResult = intl.string(tmp2(1236).t["13/7kX"]);
   }
-  obj = { style: items1, accessibilityRole: "button" };
+  obj = { style: items1, accessibilityRole: "button", accessibilityLabel: formatToPlainStringResult, onPress: handleBackButtonPress, children: null };
   items1 = [callback4().backButton, { top: paddingTop.paddingTop }];
-  obj.accessibilityLabel = formatToPlainStringResult;
-  obj.onPress = handleBackButtonPress;
-  obj.children = callback2(require(15240) /* IconWithBadge */.CloseIconWithBadgeOnSide, { count: stateFromStores });
-  return callback2(require(4695) /* PressableBase */.PressableOpacity, obj);
+  obj[4] = callback2(require(15273) /* IconWithBadge */.CloseIconWithBadgeOnSide, { count: stateFromStores });
+  return callback2(require(4717) /* PressableBase */.PressableOpacity, obj);
 }
 function UnconnectedYouScreen(arg0) {
+  let bannerAnimatedStyle;
   let bannerImageAnimatedStyle;
   let blurAnimatedProps;
+  let c2;
   let contentAnimatedStyle;
+  let contentContainerStyle;
+  let dimensionStyle;
   let initialTab;
   let navigateToCustomStatus;
   let navigateToFriends;
@@ -78,678 +82,649 @@ function UnconnectedYouScreen(arg0) {
   let secondaryColor;
   let showBlur;
   let theme;
+  let tmp3;
   let user;
   ({ user, navigateToSettings } = arg0);
   ({ navigateToPremium, navigateToShop } = arg0);
+  let dependencyMap;
   let callback;
   let rect;
   let sharedValue;
   let bound;
-  let first1;
-  let closure_8;
-  let num12;
+  let first;
+  let _getSystemLocale;
+  let num2;
   let c10;
   let c11;
   let youSettingsCoachmark;
   let c13;
   let closure_14;
+  let obj = rect;
   ({ navigateToProfileCustomization, navigateToCustomStatus, navigateToFriends, initialTab } = arg0);
-  let merged = callback(rect.useState(0), 2);
-  const first = 57;
-  const dependencyMap = 31;
+  let tmp = callback;
+  [tmp3, c2] = callback(rect.useState(0), 2);
   callback = rect.useCallback((nativeEvent) => {
-    dependencyMap(nativeEvent.nativeEvent.layout.width);
+    _undefined(nativeEvent.nativeEvent.layout.width);
   }, []);
-  let tmp5;
-  if (first > 0) {
-    tmp5 = first;
+  let tmp8;
+  let tmp2 = callback(rect.useState(0), 2);
+  if (tmp3 > 0) {
+    tmp8 = tmp3;
   }
-  const tmp4Result = navigateToShop(8343)(tmp5);
-  callback = tmp4Result;
-  const tmp7 = callback3(tmp4Result);
-  let obj = {};
-  const tmp4 = navigateToShop(8343);
-  obj.type = navigateToSettings(480).ImpressionTypes.VIEW;
-  obj.name = navigateToSettings(480).ImpressionNames.USER_YOU_SCREEN;
-  navigateToShop(8402)(obj);
-  let obj1 = navigateToShop(7958)(user.id);
-  rect = navigateToShop(1557)();
-  const tmp8 = navigateToShop(8402);
-  ({ theme, primaryColor, secondaryColor } = navigateToShop(8053)({ user, displayProfile: obj1 }));
-  const tmp10 = navigateToShop(8053)({ user, displayProfile: obj1 });
-  const ref = rect.useRef(null);
-  let obj2 = navigateToSettings(4026);
-  sharedValue = obj2.useSharedValue(0);
-  let obj3 = navigateToSettings(4026);
-  class M {
+  const tmp7Result = navigateToShop(8367)(tmp8);
+  callback = tmp7Result;
+  const tmp10 = callback3(tmp7Result);
+  obj = { type: null, name: null };
+  let tmp5Result = tmp5(8426);
+  obj[0] = navigateToSettings(503).ImpressionTypes.VIEW;
+  obj[1] = navigateToSettings(503).ImpressionNames.USER_YOU_SCREEN;
+  tmp5Result(obj);
+  let obj2 = tmp5(7983)(user.id);
+  rect = tmp5(1581)();
+  const tmp7 = navigateToShop(8367);
+  ({ theme, primaryColor, secondaryColor } = navigateToShop(8077)({ user, displayProfile: obj2 }));
+  const tmp14 = navigateToShop(8077)({ user, displayProfile: obj2 });
+  const ref = obj.useRef(null);
+  let obj3 = navigateToSettings(4050);
+  sharedValue = obj3.useSharedValue(0);
+  let obj4 = navigateToSettings(4050);
+  class N {
     constructor(arg0) {
       result = USER_YOU_SCREEN.set(arg0.contentOffset.y);
       return;
     }
   }
-  M.__closure = { scrollPosition: sharedValue };
-  M.__workletHash = 952837799380;
-  M.__initData = closure_26;
-  const tmp11 = navigateToShop(4101)();
-  const tmp15 = navigateToShop(8352)({ scrollPosition: sharedValue, bannerHeight: tmp4Result });
-  const bannerAnimatedStyle = tmp15.bannerAnimatedStyle;
-  ({ bannerImageAnimatedStyle, contentAnimatedStyle, blurAnimatedProps, showBlur } = tmp15);
-  const size = navigateToShop(1450)();
+  N.__closure = { scrollPosition: sharedValue };
+  N.__workletHash = 952837799380;
+  N.__initData = closure_28;
+  const tmp15 = navigateToShop(4125)();
+  const animatedScrollHandler = obj4.useAnimatedScrollHandler(N);
+  ({ bannerAnimatedStyle, bannerImageAnimatedStyle, contentAnimatedStyle, blurAnimatedProps, showBlur } = navigateToShop(8376)({ scrollPosition: sharedValue, bannerHeight: tmp7Result }));
+  const size = tmp5(1474)();
   const height = size.height;
   let num = 0;
   const diff = size.width - rect.right - rect.left;
-  if (navigateToShop(4019)().isChatBesideChannelList) {
+  if (navigateToShop(4043)().isChatBesideChannelList) {
     num = 16;
   }
   const diff1 = diff - num;
   bound = diff1;
-  if (first > 0) {
+  if (tmp3 > 0) {
     const _Math = Math;
-    bound = Math.min(diff1, first);
+    bound = Math.min(diff1, tmp3);
   }
-  const tmp20 = callback(rect.useState(false), 2);
-  first1 = tmp20[0];
-  closure_8 = tmp20[1];
-  const GifAutoPlay = navigateToSettings(3838).GifAutoPlay;
+  let tmpResult = tmp(obj.useState(false), 2);
+  first = tmpResult[0];
+  _getSystemLocale = tmpResult[1];
+  const GifAutoPlay = tmp12(3862).GifAutoPlay;
   const setting = GifAutoPlay.getSetting();
-  let obj4 = navigateToSettings(1457);
-  const isFocused = obj4.useIsFocused();
-  let obj5 = navigateToSettings(15581);
-  const tmp24 = !isFocused && !obj5.useIsProfileModalTransitioning();
-  const animatedScrollHandler = obj3.useAnimatedScrollHandler(M);
-  const ref2 = rect.useRef(undefined);
-  const ref3 = rect.useRef(false);
+  let tmp12Result = tmp12(1481);
+  const isFocused = tmp12Result.useIsFocused();
+  tmp12Result = tmp12(15615);
+  let tmp28 = !isFocused;
+  if (!isFocused) {
+    tmp28 = !tmp12Result.useIsProfileModalTransitioning();
+  }
+  const tmp19 = navigateToShop(8376)({ scrollPosition: sharedValue, bannerHeight: tmp7Result });
+  const ref2 = obj.useRef(undefined);
+  const ref3 = obj.useRef(false);
   if (isFocused) {
     if (!ref3.current) {
       ref3.current = true;
       const _Date = Date;
       ref2.current = Date.now();
     }
-    let tmp28 = setting;
+    let obj32 = setting;
     if (!setting) {
-      tmp28 = first1;
+      obj32 = first;
     }
     let bannerURL;
-    if (null != obj1) {
-      obj = { canAnimate: tmp28, size: bound };
-      bannerURL = obj1.getBannerURL(obj);
+    if (obj2 != null) {
+      obj = { canAnimate: null, size: null };
+      obj[0] = obj32;
+      obj[1] = bound;
+      bannerURL = obj2.getBannerURL(obj);
     }
     let source = null;
     if (null != bannerURL) {
-      let obj7 = navigateToSettings(1392);
-      source = obj7.makeSource(bannerURL);
+      source = tmp12(1416).makeSource(bannerURL);
+      const tmp12Result1 = tmp12(1416);
     }
-    let obj8 = navigateToSettings(1392);
-    let intl = navigateToSettings(1212).intl;
-    obj = { username: user.username };
-    const formatToPlainStringResult = intl.formatToPlainString(navigateToSettings(1212).t.gVn4uJ, obj);
-    let obj10 = navigateToSettings(7954);
-    obj1 = { user };
-    obj1.displayProfile = obj1;
-    let tmp38 = null == obj1;
-    const userProfileBannerBackgroundColor = obj10.useUserProfileBannerBackgroundColor(obj1);
-    if (!tmp38) {
-      tmp38 = !obj1.isLoaded;
+    const tmp12Result2 = tmp12(1416);
+    let intl = tmp12(1236).intl;
+    const obj1 = { username: null };
+    obj1[0] = user.username;
+    const formatToPlainStringResult = intl.formatToPlainString(tmp12(1236).t.gVn4uJ, obj1);
+    const isAnimatedImageURLResult = tmp12(1416).isAnimatedImageURL(bannerURL);
+    obj2 = { user: null, displayProfile: null };
+    obj2[0] = user;
+    obj2[1] = obj2;
+    let tmp37 = null == obj2;
+    const userProfileBannerBackgroundColor = tmp12(7979).useUserProfileBannerBackgroundColor(obj2);
+    if (!tmp37) {
+      tmp37 = !obj2.isLoaded;
     }
-    let items = [tmp4Result, bound, rect.bottom];
-    const isAnimatedImageURLResult = obj8.isAnimatedImageURL(bannerURL);
-    const memo = rect.useMemo(() => {
-      obj = { dimensionStyle: obj };
+    let items = [tmp7Result, bound, rect.bottom];
+    const tmp12Result3 = tmp12(7979);
+    const memo = obj.useMemo(() => {
+      obj = { dimensionStyle: obj, contentContainerStyle: null };
       obj = { width: bound, height: c3 };
-      obj = {};
       let num = 0;
-      if (obj4.isYouNavFloating()) {
-        num = navigateToShop(689).space.PX_64;
+      if (obj3.isYouNavFloating()) {
+        num = navigateToShop(_undefined[18]).space.PX_64;
       }
-      obj.paddingBottom = rect.bottom + num;
-      obj.contentContainerStyle = obj;
+      obj[1] = { paddingBottom: rect.bottom + num };
       return obj;
     }, items);
-    let intl2 = memo.dimensionStyle;
-    let obj12 = navigateToSettings(8083);
-    obj2 = { layout: "YOU_SCREEN", userId: user.id };
-    const createUserProfileAnalyticsContext = obj12.useCreateUserProfileAnalyticsContext(obj2);
-    let obj14 = navigateToSettings(4698);
-    const isScreenLandscape = obj14.useIsScreenLandscape();
-    let skuId;
-    const tmp41 = navigateToShop(6540)();
+    ({ dimensionStyle, contentContainerStyle } = memo);
+    const tmp38 = tmp5(6561)();
+    obj3 = { layout: "YOU_SCREEN", userId: null };
+    obj3[1] = user.id;
+    const createUserProfileAnalyticsContext = tmp12(8107).useCreateUserProfileAnalyticsContext(obj3);
+    const tmp12Result4 = tmp12(8107);
+    const isScreenLandscape = tmp12(4720).useIsScreenLandscape();
+    let tmp43;
+    tmp5Result = tmp5(8082);
     if (!isScreenLandscape) {
-      if (null != obj1) {
-        const profileFrame = obj1.profileFrame;
-        if (null != profileFrame) {
+      let skuId;
+      if (obj2 != null) {
+        const profileFrame = obj2.profileFrame;
+        if (profileFrame != null) {
           skuId = profileFrame.skuId;
         }
       }
+      tmp43 = skuId;
     }
-    const tmp47Result = navigateToShop(8058)(skuId, "YouScreen");
-    obj3 = {};
-    let skuId1;
-    const tmp47 = navigateToShop(8058);
+    const tmp5Result1Result = tmp5Result(tmp43, "YouScreen");
+    let tmp47;
+    const tmp12Result5 = tmp12(4720);
     if (!isScreenLandscape) {
-      if (null != obj1) {
-        const profileFrame2 = obj1.profileFrame;
-        if (null != profileFrame2) {
+      let skuId1;
+      if (obj2 != null) {
+        const profileFrame2 = obj2.profileFrame;
+        if (profileFrame2 != null) {
           skuId1 = profileFrame2.skuId;
         }
       }
+      tmp47 = skuId1;
     }
-    obj3.skuId = skuId1;
-    obj3.openedAt = ref2.current;
-    const items1 = [navigateToShop(5517).YOU_SCREEN];
-    obj3.analyticsLocations = items1;
-    obj3.context = createUserProfileAnalyticsContext;
-    navigateToShop(8342)(obj3);
-    num12 = 0;
-    if (null != tmp47Result) {
-      num12 = navigateToShop(8072)(tmp47Result, bound).overflowTop;
+    obj4 = { skuId: null, openedAt: null, analyticsLocations: null, context: null };
+    obj4[0] = tmp47;
+    obj4[1] = ref2.current;
+    const items1 = [tmp5(5535).YOU_SCREEN];
+    obj4[2] = items1;
+    obj4[3] = createUserProfileAnalyticsContext;
+    tmp5(8366)(obj4);
+    num2 = 0;
+    if (null != tmp5Result1Result) {
+      num2 = tmp5(8096)(tmp5Result1Result, bound).overflowTop;
     }
-    const items2 = [];
-    class M {
-      constructor(arg0) {
-        result = USER_YOU_SCREEN.set(arg0.contentOffset.y);
-        return;
-      }
-    }
-    if (!tmp41) {
-      let obj16 = navigateToSettings(478);
-      if (!obj16.isIOS()) {
+    const items2 = [num2];
+    if (!tmp38) {
+      if (!tmp12Result6.isIOS()) {
         const _Math2 = Math;
-        let bound1 = Math.max(rect.top - num12, youSettingsCoachmark);
+        let bound1 = Math.max(rect.top - num2, youSettingsCoachmark);
       }
       let skuId2;
-      if (null != obj1) {
-        const profileEffect = obj1.profileEffect;
-        if (null != profileEffect) {
+      if (obj2 != null) {
+        const profileEffect = obj2.profileEffect;
+        if (profileEffect != null) {
           skuId2 = profileEffect.skuId;
         }
       }
-      let mergedResult = null != skuId2;
-      const memo1 = rect.useMemo(() => {
-        const items = [navigateToSettings(1334).DismissibleContent.WISHLIST_MOBILE_YOU_SCREEN_COACHMARK];
+      let tmp86Result = null != skuId2;
+      const memo1 = obj.useMemo(() => {
+        const items = [navigateToSettings(_undefined[48]).DismissibleContent.WISHLIST_MOBILE_YOU_SCREEN_COACHMARK];
         return items;
       }, []);
-      let obj17 = navigateToSettings(8417);
-      const tmp72 = callback(obj17.useSelectedDismissibleContent(memo1), 2);
-      c10 = tmp74;
-      const items3 = [null != tmp72[0]];
-      const memo2 = rect.useMemo(() => {
+      tmp12Result6 = tmp12(501);
+      tmpResult = tmp(tmp12(8441).useSelectedDismissibleContent(memo1), 2);
+      c10 = tmp58;
+      const items3 = [null != tmpResult[0]];
+      const memo2 = obj.useMemo(() => {
         let tmp = null;
         if (c10) {
-          const obj = {};
-          const intl = navigateToSettings(1212).intl;
-          obj.title = intl.string(navigateToSettings(1212).t.epBu6F);
-          const intl2 = navigateToSettings(1212).intl;
-          obj.description = intl2.string(navigateToSettings(1212).t["o8+3AX"]);
-          obj.avatarSrc = {};
-          obj.decorationAsset = "";
-          obj.renderImgComponent = function renderImgComponent() {
-            return outer2_20(navigateToShop(table[50]), { source: { uri: "https://cdn.discordapp.com/assets/content/1979309f7455b06e0bc1e8f5da89de9934155a0a9a74bfff5b680c82fb45d53f.png" }, style: { width: 80, height: 80 } });
+          const obj = { title: null, description: null, avatarSrc: null, decorationAsset: "", renderImgComponent: null };
+          const intl = navigateToSettings(_undefined[22]).intl;
+          obj[0] = intl.string(navigateToSettings(_undefined[22]).t.epBu6F);
+          const intl2 = navigateToSettings(_undefined[22]).intl;
+          obj[1] = intl2.string(navigateToSettings(_undefined[22]).t["o8+3AX"]);
+          obj[2] = {};
+          obj[4] = function renderImgComponent() {
+            return callback2(callback(table[50]), { source: { uri: "https://cdn.discordapp.com/assets/content/1979309f7455b06e0bc1e8f5da89de9934155a0a9a74bfff5b680c82fb45d53f.png" }, style: { width: 80, height: 80 } });
           };
           tmp = obj;
         }
         return tmp;
       }, items3);
-      const ref4 = rect.useRef(null);
-      const ref5 = rect.useRef(null);
-      c11 = tmp73;
-      const items4 = [tmp72[1], navigateToShop];
-      const callback1 = rect.useCallback(() => {
+      const ref4 = obj.useRef(null);
+      const ref5 = obj.useRef(null);
+      c11 = tmp57;
+      const items4 = [tmpResult[1], navigateToShop];
+      const callback1 = obj.useCallback(() => {
         navigateToShop();
-        _undefined(outer1_18.TAKE_ACTION);
+        _undefined2(outer1_18.TAKE_ACTION);
       }, items4);
-      let tmp83 = null != memo2;
-      let obj18 = navigateToSettings(15583);
-      obj4 = { disabled: tmp83 };
-      youSettingsCoachmark = obj18.useYouSettingsCoachmark(obj4);
-      let tmp85 = null != youSettingsCoachmark;
-      let tmp86 = tmp83;
-      if (!tmp83) {
-        tmp86 = tmp85;
+      let tmp63 = null != memo2;
+      const tmp12Result7 = tmp12(8441);
+      const obj5 = { disabled: null };
+      obj5[0] = tmp63;
+      youSettingsCoachmark = tmp12(15617).useYouSettingsCoachmark(obj5);
+      let tmp65 = null != youSettingsCoachmark;
+      let tmp66 = tmp63;
+      if (!tmp63) {
+        tmp66 = tmp65;
       }
-      c13 = tmp86;
-      let obj20 = navigateToSettings(15582);
-      closure_14 = callback(rect.useState(!obj20.isYouNavFloating()), 2)[1];
-      let tmp94Result = null;
-      if (tmp86) {
-        tmp94Result = null;
-        if (tmp92) {
-          obj5 = { zIndex: 1 };
-          if (tmp83) {
-            const obj6 = { buttonRef: ref4, markAsDismissed: tmp73, visible: tmp74 };
-            ({ title: obj23.title, description: obj23.description, avatarSrc: obj23.avatarSrc, decorationAsset: obj23.decorationAsset, renderImgComponent: obj23.renderImgComponent } = memo2);
-            obj6.navigateToShop = callback1;
-            tmp83 = callback2(navigateToShop(15586), obj6);
+      c13 = tmp66;
+      const tmp12Result8 = tmp12(15617);
+      const tmp12Result9 = tmp12(15616);
+      closure_14 = tmp(obj.useState(!tmp12(15616).isYouNavFloating()), 2)[1];
+      let tmp70Result = null;
+      if (tmp66) {
+        tmp70Result = null;
+        if (tmp68) {
+          if (tmp63) {
+            const obj6 = { buttonRef: null, markAsDismissed: null, visible: null, title: null, description: null, avatarSrc: null, decorationAsset: null, renderImgComponent: null, navigateToShop: null };
+            obj6[0] = ref4;
+            obj6[1] = tmp57;
+            obj6[2] = tmp58;
+            ({ title: obj24[3], description: obj24[4], avatarSrc: obj24[5], decorationAsset: obj24[6], renderImgComponent: obj24[7] } = memo2);
+            obj6[8] = callback1;
+            tmp63 = callback2(tmp5(15620), obj6);
           }
-          const items5 = [tmp83, ];
-          if (tmp85) {
-            merged = callback2;
-            merged = navigateToShop;
-            merged = dependencyMap;
-            obj7 = { buttonRef: ref5 };
-            merged = obj7;
-            merged = navigateToShop(15583);
-            merged = Object.assign(youSettingsCoachmark.props);
-            tmp85 = callback2(merged, obj7);
+          const items5 = [tmp63, ];
+          if (tmp65) {
+            const obj7 = { buttonRef: null };
+            obj7[0] = ref5;
+            const merged = Object.assign(youSettingsCoachmark.props);
+            tmp65 = callback2(tmp5(15617), obj7);
+            const tmp5Result2 = tmp5(15617);
           }
-          items5[1] = tmp85;
-          obj5.children = items5;
-          tmp94Result = closure_21(navigateToSettings(5484).LayerScope, obj5);
-          const tmp94 = closure_21;
+          const obj8 = { zIndex: 1, children: null };
+          items5[1] = tmp65;
+          obj8[1] = items5;
+          tmp70Result = closure_21(tmp12(5502).LayerScope, obj8);
+          const tmp70 = closure_21;
         }
       }
-      merged = rect;
-      const items6 = [tmp86];
-      merged = rect.useEffect(() => {
+      const items6 = [tmp66];
+      const effect = obj.useEffect(() => {
         if (c13) {
           if (obj.isYouNavFloating()) {
             const _setTimeout = setTimeout;
-            const timeout = setTimeout(() => outer1_14(true), 500);
+            const timeout = setTimeout(() => callback(true), 500);
             return () => clearTimeout(closure_0);
           }
-          obj = navigateToSettings(15582);
+          obj = navigateToSettings(_undefined[41]);
         }
       }, items6);
-      merged = rect;
       const items7 = [navigateToSettings, youSettingsCoachmark];
-      merged = navigateToShop;
-      merged = dependencyMap;
-      merged = rect.useCallback(() => {
-        let tmp = null == youSettingsCoachmark;
-        if (!tmp) {
-          tmp = null == youSettingsCoachmark.trackSettingsPress;
-        }
-        if (!tmp) {
-          youSettingsCoachmark.trackSettingsPress();
+      callback2 = obj.useCallback(() => {
+        if (youSettingsCoachmark != null) {
+          const trackSettingsPress = youSettingsCoachmark.trackSettingsPress;
+          if (trackSettingsPress != null) {
+            trackSettingsPress();
+          }
         }
         navigateToSettings();
       }, items7);
-      merged = callback2;
-      obj8 = { isLoading: tmp38, navigateToPremium, navigateToSettings: merged, navigateToShop: callback1, shopButtonRef: ref4, settingsButtonRef: ref5, paddingTop: bound1 };
-      merged = navigateToSettings;
-      class M {
+      const obj9 = { isLoading: null, navigateToPremium: null, navigateToSettings: null, navigateToShop: null, shopButtonRef: null, settingsButtonRef: null, paddingTop: null, paddingBottom: null, backButton: null };
+      obj9[0] = tmp37;
+      obj9[1] = navigateToPremium;
+      obj9[2] = callback2;
+      obj9[3] = callback1;
+      obj9[4] = ref4;
+      obj9[5] = ref5;
+      obj9[6] = bound1;
+      const tmpResult1 = tmp(obj.useState(!tmp12(15616).isYouNavFloating()), 2);
+      const tmp5Result3 = tmp5(15621);
+      let bottom;
+      if (tmp12Result10.isYouNavFloating()) {
+        bottom = rect.bottom;
+      }
+      obj9[7] = bottom;
+      const obj10 = { paddingTop: null };
+      obj10[0] = bound1;
+      obj9[8] = callback2(BackButton, obj10);
+      let tmp78Result = tmp78(tmp5Result3, obj9);
+      const obj11 = { theme: null, primaryColor: null, secondaryColor: null, children: null };
+      class N {
         constructor(arg0) {
           result = USER_YOU_SCREEN.set(arg0.contentOffset.y);
           return;
         }
       }
-      let obj25 = navigateToSettings(15582);
-      merged = undefined;
-      if (obj25.isYouNavFloating()) {
-        merged = rect.bottom;
+      obj11[1] = primaryColor;
+      obj11[2] = secondaryColor;
+      const obj12 = { value: null, openedAt: null, fetchStartedAt: null, fetchEndedAt: null, isLoaded: null, children: null };
+      obj12[0] = createUserProfileAnalyticsContext;
+      obj12[1] = ref1.current;
+      let fetchStartedAt;
+      if (obj2 != null) {
+        fetchStartedAt = obj2.fetchStartedAt;
       }
-      obj8.paddingBottom = merged;
-      merged = callback2;
-      merged = BackButton;
-      const obj9 = { paddingTop: bound1 };
-      obj8.backButton = callback2(BackButton, obj9);
-      merged = merged(merged, obj8);
-      merged = navigateToSettings;
-      merged = dependencyMap;
-      merged = callback2;
-      obj10 = {};
-      merged = callback2;
-      const obj11 = { theme, primaryColor, secondaryColor };
-      merged = callback2;
-      obj12 = { value: createUserProfileAnalyticsContext, openedAt: ref1.current };
-      merged = undefined;
-      if (null != obj1) {
-        merged = obj1.fetchStartedAt;
+      obj12[2] = fetchStartedAt;
+      let fetchEndedAt;
+      if (obj2 != null) {
+        fetchEndedAt = obj2.fetchEndedAt;
       }
-      obj12.fetchStartedAt = merged;
-      merged = undefined;
-      if (null != obj1) {
-        merged = obj1.fetchEndedAt;
+      obj12[3] = fetchEndedAt;
+      let isLoaded;
+      if (obj2 != null) {
+        isLoaded = obj2.isLoaded;
       }
-      obj12.fetchEndedAt = merged;
-      merged = undefined;
-      if (null != obj1) {
-        merged = obj1.isLoaded;
+      obj12[4] = isLoaded;
+      const obj13 = { style: null, nativeID: null, children: null };
+      const items8 = [tmp10.container, tmp50];
+      obj13[0] = items8;
+      obj13[1] = closure_14;
+      tmp78Result = null != tmp5Result1Result;
+      tmp12Result10 = tmp12(15616);
+      if (tmp78Result) {
+        const obj14 = { frame: null, profileThemeType: null, frameOrder: null, containerWidth: null };
+        obj14[0] = tmp5Result1Result;
+        obj14[1] = UserProfileThemeTypes.YOU_SCREEN;
+        obj14[2] = tmp12(8088).ProfileFrameLayerOrder.BACK;
+        obj14[3] = bound;
+        tmp78Result = tmp78(tmp5(8097), obj14);
+        const tmp5Result5 = tmp5(8097);
       }
-      obj12.isLoaded = merged;
-      merged = navigateToShop;
-      merged = dependencyMap;
-      merged = closure_21;
-      const obj13 = {};
-      const items8 = [tmp7.container, tmp60];
-      obj13.style = items8;
-      merged = closure_14;
-      obj13.nativeID = closure_14;
-      merged = null != tmp47Result;
-      merged = navigateToShop(15595);
-      if (merged) {
-        merged = callback2;
-        merged = navigateToShop;
-        merged = dependencyMap;
-        obj14 = { frame: tmp47Result };
-        merged = UserProfileThemeTypes;
-        obj14.profileThemeType = UserProfileThemeTypes.YOU_SCREEN;
-        merged = navigateToSettings;
-        merged = navigateToShop(8073);
-        obj14.frameOrder = navigateToSettings(8064).ProfileFrameLayerOrder.BACK;
-        obj14.containerWidth = bound;
-        merged = callback2(merged, obj14);
+      const items9 = [tmp78Result, , , , , , ];
+      const obj15 = { gradientHeight: null, bannerHeight: null, style: null };
+      obj15[0] = height;
+      obj15[1] = tmp7Result;
+      obj15[2] = tmp10.background;
+      items9[1] = callback2(tmp5(8373), obj15);
+      const tmp5Result4 = tmp5(15629);
+      const isYouNavFloatingResult = tmp12(15616).isYouNavFloating();
+      let tmp93 = !isYouNavFloatingResult;
+      if (!isYouNavFloatingResult) {
+        tmp93 = tmp70Result;
       }
-      const items9 = [merged, , , , , , ];
-      merged = callback2;
-      merged = navigateToShop;
-      merged = dependencyMap;
-      const obj15 = { gradientHeight: height, bannerHeight: tmp4Result, style: tmp7.background };
-      items9[1] = callback2(navigateToShop(8349), obj15);
-      merged = navigateToSettings;
-      let obj33 = navigateToSettings(15582);
-      merged = !obj33.isYouNavFloating() && tmp94Result;
-      items9[2] = merged;
-      obj16 = { contentContainerStyle: memo.contentContainerStyle, ref, onScroll: animatedScrollHandler, onLayout: callback };
-      merged = closure_15;
-      obj16.scrollEventThrottle = closure_15;
-      obj16.style = tmp7.scrollView;
-      merged = navigateToShop;
-      merged = dependencyMap;
-      merged = closure_21;
-      merged = closure_25;
-      merged = closure_21;
-      obj17 = {};
-      const items10 = [tmp7.banner, bannerAnimatedStyle];
-      obj17.style = items10;
-      merged = !mergedResult;
-      if (!mergedResult) {
-        merged = navigateToSettings;
-        merged = dependencyMap;
-        if (obj37.isYouNavFloating()) {
-          merged = callback2;
-          merged = BackButton;
-          obj18 = { paddingTop: bound1 };
-          merged = callback2(BackButton, obj18);
+      items9[2] = tmp93;
+      const obj16 = { contentContainerStyle: null, ref: null, onScroll: null, onLayout: null, scrollEventThrottle: null, style: null, children: null };
+      obj16[0] = contentContainerStyle;
+      obj16[1] = ref;
+      obj16[2] = animatedScrollHandler;
+      obj16[3] = callback;
+      obj16[4] = closure_15;
+      obj16[5] = tmp10.scrollView;
+      const obj17 = { style: null, children: null };
+      const items10 = [tmp10.banner, bannerAnimatedStyle];
+      obj17[0] = items10;
+      let tmp96 = !tmp86Result;
+      if (!tmp86Result) {
+        let tmp78Result1 = tmp78Result;
+        if (tmp12Result12.isYouNavFloating()) {
+          const obj18 = { paddingTop: null };
+          obj18[0] = bound1;
+          tmp78Result1 = tmp78(tmp81, obj18);
         }
-        obj37 = navigateToSettings(15582);
+        tmp96 = tmp78Result1;
+        tmp12Result12 = tmp12(15616);
       }
-      const items11 = [merged, ];
-      merged = navigateToShop;
-      merged = dependencyMap;
-      merged = closure_21;
-      const obj19 = {};
-      const items12 = [intl2, bannerImageAnimatedStyle];
-      obj19.style = items12;
-      merged = callback2;
-      merged = bound;
-      obj20 = {};
-      merged = sharedValue;
+      const items11 = [tmp96, ];
+      const obj19 = { style: null, children: null };
+      const items12 = [dimensionStyle, bannerImageAnimatedStyle];
+      obj19[0] = items12;
+      const obj20 = { style: null };
       const items13 = [sharedValue.absoluteFill, ];
-      const obj21 = {};
-      merged = navigateToSettings;
-      const tmp91 = callback(rect.useState(!obj20.isYouNavFloating()), 2);
-      obj21.backgroundColor = navigateToSettings(665).int2hex(userProfileBannerBackgroundColor);
+      const obj21 = { backgroundColor: null };
+      const tmp12Result11 = tmp12(15616);
+      const tmp94 = closure_25;
+      const tmp99 = sharedValue;
+      obj21[0] = tmp12(688).int2hex(userProfileBannerBackgroundColor);
       items13[1] = obj21;
-      obj20.style = items13;
+      obj20[0] = items13;
       const items14 = [callback2(bound, obj20), , ];
-      merged = null != source;
-      if (!merged) {
-        items14[1] = merged;
-        merged = navigateToSettings;
-        merged = dependencyMap;
-        merged = navigateToSettings(478).isIOS() && showBlur;
-        if (merged) {
-          merged = callback2;
-          merged = module_8354;
-          const obj22 = { animatedProps: blurAnimatedProps };
-          merged = sharedValue;
-          obj22.style = sharedValue.absoluteFillObject;
-          merged = callback2(module_8354, obj22);
+      tmp = null != source;
+      if (!tmp) {
+        items14[1] = tmp;
+        tmp = tmp12(501).isIOS() && showBlur;
+        if (tmp) {
+          tmp = module_8378;
+          const obj22 = { animatedProps: null, style: null };
+          obj22[0] = blurAnimatedProps;
+          obj22[1] = tmp99.absoluteFillObject;
+          tmp = tmp78(module_8378, obj22);
         }
-        items14[2] = merged;
-        obj19.children = items14;
-        items11[1] = merged(navigateToShop(4026).View, obj19);
-        obj17.children = items11;
-        const items15 = [merged(navigateToShop(4026).View, obj17), , , ];
-        if (mergedResult) {
-          merged = navigateToShop;
-          merged = dependencyMap;
-          merged = closure_21;
-          const obj23 = { pointerEvents: "box-none" };
-          const items16 = [tmp7.profileEffectLayer, , ];
-          const obj24 = { width: bound, height };
+        items14[2] = tmp;
+        obj19[1] = items14;
+        items11[1] = tmp86(tmp5(4050).View, obj19);
+        obj17[1] = items11;
+        const items15 = [tmp86(tmp5(4050).View, obj17), , , ];
+        if (tmp86Result) {
+          const obj23 = { pointerEvents: "box-none", style: null, children: null };
+          const items16 = [tmp10.profileEffectLayer, , ];
+          const obj24 = { width: null, height: null };
+          obj24[0] = bound;
+          obj24[1] = height;
           items16[1] = obj24;
           items16[2] = bannerAnimatedStyle;
-          obj23.style = items16;
-          merged = callback2;
-          obj25 = { skuId: skuId2, bannerAdjustment: 0, replayOnNavigationFocus: true, paused: tmp24 };
-          const items17 = [callback2(navigateToShop(8035), obj25), ];
-          merged = navigateToSettings;
-          if (obj53.isYouNavFloating()) {
-            merged = callback2;
-            merged = BackButton;
-            const obj26 = { paddingTop: bound1 };
-            merged = callback2(BackButton, obj26);
+          obj23[1] = items16;
+          const obj25 = { skuId: null, bannerAdjustment: 0, replayOnNavigationFocus: true, paused: null };
+          obj25[0] = skuId2;
+          obj25[3] = tmp28;
+          const items17 = [tmp78(tmp5(8059), obj25), ];
+          tmp = tmp78Result;
+          if (tmp12Result15.isYouNavFloating()) {
+            const obj26 = { paddingTop: null };
+            obj26[0] = bound1;
+            tmp = tmp78(tmp81, obj26);
           }
-          items17[1] = merged;
-          obj23.children = items17;
-          mergedResult = merged(navigateToShop(4026).View, obj23);
-          obj53 = navigateToSettings(15582);
+          items17[1] = tmp;
+          obj23[2] = items17;
+          tmp86Result = tmp86(tmp5(4050).View, obj23);
+          tmp12Result15 = tmp12(15616);
         }
-        items15[1] = mergedResult;
-        merged = callback2;
-        merged = navigateToShop;
-        merged = dependencyMap;
-        const obj27 = { user, userTheme: tmp11, scrollViewRef: ref };
-        const items18 = [tmp7.content, contentAnimatedStyle];
-        obj27.style = items18;
-        obj27.navigateToProfileCustomization = navigateToProfileCustomization;
-        obj27.navigateToCustomStatus = navigateToCustomStatus;
-        obj27.navigateToFriends = navigateToFriends;
-        obj27.navigateToPremium = navigateToPremium;
-        obj27.navigateToShop = navigateToShop;
-        obj27.initialTab = initialTab;
-        obj27.animateAvatar = !tmp24;
-        items15[2] = callback2(navigateToShop(15597), obj27);
-        merged = callback2;
-        merged = navigateToSettings;
-        const obj28 = { label: "you_screen" };
-        items15[3] = callback2(navigateToSettings(10026).TTIFirstContentfulPaint, obj28);
-        obj16.children = items15;
-        items9[3] = merged(merged, obj16);
-        merged = null != tmp47Result;
-        if (merged) {
-          merged = callback2;
-          merged = navigateToShop;
-          merged = dependencyMap;
-          const obj29 = { frame: tmp47Result };
-          merged = UserProfileThemeTypes;
-          obj29.profileThemeType = UserProfileThemeTypes.YOU_SCREEN;
-          merged = navigateToSettings;
-          merged = navigateToShop(8073);
-          obj29.frameOrder = navigateToSettings(8064).ProfileFrameLayerOrder.FRONT;
-          obj29.containerWidth = bound;
-          merged = callback2(merged, obj29);
+        items15[1] = tmp86Result;
+        const obj27 = { user: null, userTheme: null, scrollViewRef: null, style: null, navigateToProfileCustomization: null, navigateToCustomStatus: null, navigateToFriends: null, navigateToPremium: null, navigateToShop: null, initialTab: null, animateAvatar: null };
+        obj27[0] = user;
+        obj27[1] = tmp15;
+        obj27[2] = ref;
+        const items18 = [tmp10.content, contentAnimatedStyle];
+        obj27[3] = items18;
+        obj27[4] = navigateToProfileCustomization;
+        obj27[5] = navigateToCustomStatus;
+        obj27[6] = navigateToFriends;
+        obj27[7] = navigateToPremium;
+        obj27[8] = navigateToShop;
+        obj27[9] = initialTab;
+        obj27[10] = !tmp28;
+        items15[2] = tmp78(tmp5(15631), obj27);
+        items15[3] = tmp78(tmp12(10048).TTIFirstContentfulPaint, { label: "you_screen" });
+        obj16[6] = items15;
+        items9[3] = tmp86(tmp94, obj16);
+        tmp = null != tmp5Result1Result;
+        if (tmp) {
+          const obj28 = { frame: null, profileThemeType: null, frameOrder: null, containerWidth: null };
+          obj28[0] = tmp5Result1Result;
+          tmp = UserProfileThemeTypes;
+          obj28[1] = UserProfileThemeTypes.YOU_SCREEN;
+          tmp = tmp5(8097);
+          obj28[2] = tmp12(8088).ProfileFrameLayerOrder.FRONT;
+          obj28[3] = bound;
+          tmp = tmp78(tmp, obj28);
         }
-        items9[4] = merged;
-        merged = navigateToSettings;
-        merged = dependencyMap;
-        const obj48 = navigateToSettings(478);
-        merged = navigateToSettings(15582).isYouNavFloating() && merged;
-        items9[5] = merged;
-        merged = navigateToSettings;
-        merged = dependencyMap;
-        const obj58 = navigateToSettings(15582);
-        merged = navigateToSettings(15582).isYouNavFloating() && tmp94Result;
-        items9[6] = merged;
-        obj13.children = items9;
-        obj12.children = merged(merged, obj13);
-        obj11.children = merged(navigateToSettings(8083).UserProfileAnalyticsProvider, obj12);
-        obj10.children = merged(navigateToSettings(3877).ThemeContextProvider, obj11);
-        return merged(navigateToSettings(5484).LayerScope, obj10);
+        items9[4] = tmp;
+        const tmp12Result14 = tmp12(501);
+        tmp = tmp12(15616).isYouNavFloating() && tmp78Result;
+        items9[5] = tmp;
+        const tmp12Result16 = tmp12(15616);
+        tmp = tmp12(15616).isYouNavFloating() && tmp70Result;
+        const obj29 = { children: null };
+        items9[6] = tmp;
+        obj13[2] = items9;
+        obj12[5] = tmp86(tmp5Result4, obj13);
+        obj11[3] = tmp78(tmp12(8107).UserProfileAnalyticsProvider, obj12);
+        obj29[0] = tmp78(tmp12(3901).ThemeContextProvider, obj11);
+        return tmp78(tmp12(5502).LayerScope, obj29);
       } else if (isAnimatedImageURLResult) {
-        merged = navigateToSettings;
-        merged = dependencyMap;
-        merged = closure_21;
-        const obj30 = {
-          onPress() {
-                  return callback(!first1);
-                },
-          accessibilityRole: "image"
+        const obj30 = { onPress: null, accessibilityRole: "image", accessibilityLabel: null, children: null };
+        obj30[0] = function onPress() {
+          return callback(!first);
         };
-        const intl3 = navigateToSettings(1212).intl;
-        obj30.accessibilityLabel = intl3.string(navigateToSettings(1212).t["3fzj/l"]);
-        merged = callback2;
-        merged = navigateToShop;
-        const obj31 = { style: intl2, accessibilityRole: "image", accessibilityLabel: formatToPlainStringResult, source, paused: tmp24 };
-        const items19 = [callback2(navigateToShop(5119), obj31), ];
-        tmp28 = !tmp28;
-        if (tmp28) {
-          source = callback2;
-          merged = navigateToSettings;
-          merged = dependencyMap;
-          const obj32 = {};
-          intl2 = navigateToSettings(1212).intl;
-          obj32.label = intl2.string(navigateToSettings(1212).t.I5gL2H);
-          const items20 = [tmp7.gifTag, ];
-          obj33 = { top: bound1 };
-          items20[1] = obj33;
-          obj32.style = items20;
-          obj32.textStyle = tmp7.gifTagText;
-          tmp28 = callback2(navigateToSettings(8079).Caption, obj32);
+        let intl2 = tmp12(1236).intl;
+        obj30[2] = intl2.string(tmp12(1236).t["3fzj/l"]);
+        const obj31 = { style: null, accessibilityRole: "image", accessibilityLabel: null, source: null, paused: null };
+        obj31[0] = dimensionStyle;
+        obj31[2] = formatToPlainStringResult;
+        obj31[3] = source;
+        obj31[4] = tmp28;
+        const items19 = [tmp78(tmp5(5141), obj31), ];
+        tmp = !obj32;
+        if (!obj32) {
+          obj32 = { label: null, style: null, textStyle: null };
+          const intl3 = tmp12(1236).intl;
+          obj32[0] = intl3.string(tmp12(1236).t.I5gL2H);
+          const items20 = [tmp10.gifTag, ];
+          dimensionStyle = { top: null };
+          dimensionStyle[0] = bound1;
+          items20[1] = dimensionStyle;
+          obj32[1] = items20;
+          obj32[2] = tmp10.gifTagText;
+          tmp = tmp78(tmp12(8103).Caption, obj32);
         }
-        items19[1] = tmp28;
-        obj30.children = items19;
-        merged = merged(navigateToSettings(4695).PressableOpacity, obj30);
+        items19[1] = tmp;
+        obj30[3] = items19;
+        tmp = tmp86(tmp12(4717).PressableOpacity, obj30);
       } else {
-        merged = callback2;
-        merged = navigateToShop;
-        merged = dependencyMap;
-        const obj34 = { style: intl2, accessibilityRole: "image", accessibilityLabel: formatToPlainStringResult, source, paused: tmp24 };
-        merged = callback2(navigateToShop(5119), obj34);
+        const obj33 = { style: null, accessibilityRole: "image", accessibilityLabel: null, source: null, paused: null };
+        obj33[0] = dimensionStyle;
+        obj33[2] = formatToPlainStringResult;
+        obj33[3] = source;
+        obj33[4] = tmp28;
+        tmp = tmp78(tmp5(5141), obj33);
       }
-      const obj42 = navigateToSettings(665);
+      const tmp12Result13 = tmp12(688);
     }
     bound1 = youSettingsCoachmark;
-    const tmp52 = navigateToShop(8342);
+    const tmp5Result1 = tmp5(8366);
   }
   if (!isFocused) {
     ref3.current = false;
   }
 }
-({ StyleSheet: closure_5, View: closure_6 } = get_ActivityIndicator);
-({ YOU_ACTION_SHEET_TOP_INSET: closure_12, YOU_AVATAR_SIZE: closure_13, YOU_SCREEN_ID: closure_14, YOU_SCROLL_EVENT_THROTTLE: closure_15 } = YOU_SCREEN_ID);
+({ StyleSheet: c5, View: closure_6, ScrollView } = get_ActivityIndicator);
+({ YOU_ACTION_SHEET_TOP_INSET: closure_12, YOU_AVATAR_SIZE: map1, YOU_SCREEN_ID: closure_14, YOU_SCROLL_EVENT_THROTTLE: closure_15 } = YOU_SCREEN_ID);
 ({ jsx: closure_20, jsxs: closure_21 } = jsxProd);
-let closure_23 = _createForOfIteratorHelperLoose.createStyles((minHeight) => {
-  let obj = {};
-  let obj1 = require(478) /* isWindows */;
+let closure_23 = createCacheKey.createStyles((marginTop) => {
+  let obj = require(501) /* PlatformTypes */;
   let xl;
-  if (obj1.isIOS()) {
-    xl = importDefault(689).radii.xl;
+  if (obj.isIOS()) {
+    xl = importDefault(712).radii.xl;
   }
-  obj.borderTopLeftRadius = xl;
-  let obj2 = require(478) /* isWindows */;
+  obj = { borderTopLeftRadius: xl, borderTopRightRadius: null };
   let xl1;
-  if (obj2.isIOS()) {
-    xl1 = importDefault(689).radii.xl;
+  if (tmpResult.isIOS()) {
+    xl1 = importDefault(712).radii.xl;
   }
-  obj.borderTopRightRadius = xl1;
-  obj = {};
-  obj = { flex: 1, flexGrow: 1, position: "relative" };
+  obj[1] = xl1;
+  obj = { container: null, background: null, scrollView: null, profileEffectLayer: null, banner: null, gifTag: null, gifTagText: null, content: null };
   const merged = Object.assign(obj);
-  obj.container = obj;
-  obj1 = { overflow: "hidden" };
+  obj[0] = { flex: 1, flexGrow: 1, position: "relative" };
   const merged1 = Object.assign(obj);
-  obj.background = obj1;
-  obj2 = { flex: 1 };
+  obj[1] = { overflow: "hidden" };
   const merged2 = Object.assign(obj);
-  obj.scrollView = obj2;
-  obj.profileEffectLayer = { position: "absolute", top: 0, zIndex: 1 };
-  const obj3 = { minHeight, position: "absolute", top: 0, maxWidth: "100%" };
-  obj.banner = obj3;
-  const obj4 = { position: "absolute", left: 16, right: "auto", bottom: "auto", marginTop: 8 };
-  const tmp10 = importDefault(666);
-  const tmp10Result = importDefault(666)(importDefault(689).unsafe_rawColors.WHITE);
-  obj4.backgroundColor = importDefault(666)(importDefault(689).unsafe_rawColors.WHITE).alpha(0.9).css();
-  obj.gifTag = obj4;
-  const alphaResult = importDefault(666)(importDefault(689).unsafe_rawColors.WHITE).alpha(0.9);
-  obj.gifTagText = { color: importDefault(689).unsafe_rawColors.PRIMARY_800, fontSize: 14 };
-  const obj6 = { marginTop: minHeight, flex: 1, flexGrow: 1 };
-  obj.content = obj6;
+  obj[2] = { flex: 1 };
+  obj[3] = { position: "absolute", top: 0, zIndex: 1 };
+  obj[4] = { minHeight: marginTop, position: "absolute", top: 0, maxWidth: "100%" };
+  const obj4 = { position: "absolute", left: 16, right: "auto", bottom: "auto", marginTop: 8, backgroundColor: null };
+  const obj1 = { flex: 1, flexGrow: 1, position: "relative" };
+  const obj2 = { overflow: "hidden" };
+  const obj3 = { flex: 1 };
+  const tmp = require;
+  tmpResult = require(501) /* PlatformTypes */;
+  const tmp10 = importDefault(689);
+  const tmp10Result = importDefault(689)(importDefault(712).unsafe_rawColors.WHITE);
+  obj4[5] = importDefault(689)(importDefault(712).unsafe_rawColors.WHITE).alpha(0.9).css();
+  obj[5] = obj4;
+  const alphaResult = importDefault(689)(importDefault(712).unsafe_rawColors.WHITE).alpha(0.9);
+  obj[6] = { color: importDefault(712).unsafe_rawColors.PRIMARY_800, fontSize: 14 };
+  obj[7] = { marginTop, flex: 1, flexGrow: 1 };
   return obj;
 });
-let closure_24 = _createForOfIteratorHelperLoose.createStyles(() => {
-  let obj = {};
-  obj = { position: "absolute", marginTop: importDefault(689).space.PX_4, left: importDefault(689).space.PX_16, zIndex: 99, alignItems: "center", justifyContent: "center" };
-  obj.backButton = obj;
+let closure_24 = createCacheKey.createStyles(() => {
+  let obj = { backButton: null };
+  obj = { position: "absolute", marginTop: importDefault(712).space.PX_4, left: importDefault(712).space.PX_16, zIndex: 99, alignItems: "center", justifyContent: "center" };
+  obj[0] = obj;
   return obj;
 });
-let closure_25 = require("module_4026").createAnimatedComponent(get_ActivityIndicator.ScrollView);
-let closure_26 = { code: "function YouScreenTsx1(e){const{scrollPosition}=this.__closure;scrollPosition.set(e.contentOffset.y);}" };
+let closure_25 = require("module_4050").createAnimatedComponent(ScrollView);
+let closure_28 = { code: "function YouScreenTsx1(e){const{scrollPosition}=this.__closure;scrollPosition.set(e.contentOffset.y);}" };
 let result = require("get ActivityIndicator").fileFinishedImporting("modules/main_tabs_v2/native/tabs/you/YouScreen.tsx");
 
 export default function YouScreen(initialTab) {
+  let stateFromStores;
   let id;
   let memo;
   let callback;
   let obj = stateFromStores(memo[21]);
-  let items = [closure_11];
-  stateFromStores = obj.useStateFromStores(items, () => outer1_11.getCurrentUser());
-  let obj1 = stateFromStores(memo[21]);
-  const items1 = [closure_8];
+  let items = [mergeGuildAvatar];
+  stateFromStores = obj.useStateFromStores(items, () => currentUser.getCurrentUser());
+  const items1 = [_getSystemLocale];
   id = undefined;
-  const stateFromStores1 = obj1.useStateFromStores(items1, () => outer1_8.locale);
-  if (null != stateFromStores) {
+  const stateFromStores1 = stateFromStores(memo[21]).useStateFromStores(items1, () => locale.locale);
+  if (stateFromStores != null) {
     id = stateFromStores.id;
   }
   const items2 = [stateFromStores];
   memo = React.useMemo(() => {
     let avatarURL;
-    if (null != stateFromStores) {
+    if (stateFromStores != null) {
       avatarURL = stateFromStores.getAvatarURL(null, outer1_13);
     }
     return avatarURL;
   }, items2);
   const items3 = [id, memo, stateFromStores1];
   const layoutEffect = React.useLayoutEffect(() => {
-    let tmp = null != id;
-    if (tmp) {
-      tmp = null != memo;
+    let tmp2 = null != id;
+    if (tmp2) {
+      tmp2 = null != memo;
     }
-    if (tmp) {
-      const obj = { type: "you_screen" };
-      id(memo[65])(id, memo, obj);
+    if (tmp2) {
+      id(memo[65])(id, memo, { type: "you_screen" });
     }
   }, items3);
-  const items4 = [_isNativeReflectConstruct];
-  const stateFromStores2 = stateFromStores(memo[21]).useStateFromStores(items4, () => {
+  let tmpResult = tmp(tmp2[21]);
+  const items4 = [createUserWidgetFromServer];
+  const stateFromStores2 = tmpResult.useStateFromStores(items4, () => {
     let firstWishlistId = null;
     if (null != id) {
-      firstWishlistId = outer1_7.getFirstWishlistId(id);
+      firstWishlistId = outer1_7.getFirstWishlistId(tmp);
     }
     return firstWishlistId;
   });
-  const obj3 = stateFromStores(memo[21]);
-  obj = { wishlistId: stateFromStores2, userId: id };
-  const fetchWishlist = stateFromStores(memo[66]).useFetchWishlist(obj);
+  tmpResult = tmp(tmp2[66]);
+  const fetchWishlist = tmpResult.useFetchWishlist({ wishlistId: stateFromStores2, userId: id });
   callback = React.useCallback(() => {
-    outer1_9.setState({ query: "", isActive: false });
+    state.setState({ query: "", isActive: false });
     stateFromStores(memo[67]).openUserSettings();
   }, []);
   const callback1 = React.useCallback(() => {
     let obj = stateFromStores(memo[67]);
-    obj = { screen: outer1_16.PREMIUM };
+    obj = { screen: constants.PREMIUM };
     obj.openUserSettings(obj);
   }, []);
   const callback2 = React.useCallback(() => {
     let obj = stateFromStores(memo[68]);
-    obj = { analyticsSource: id(memo[46]).YOU_SCREEN };
+    obj = { analyticsSource: id(memo[46]).YOU_SCREEN, analyticsLocations: null, screen: null };
     const items = [id(memo[46]).YOU_SCREEN];
-    obj.analyticsLocations = items;
-    obj.screen = outer1_17.FEATURED_PAGE;
+    obj[1] = items;
+    obj[2] = constants2.FEATURED_PAGE;
     const result = obj.openCollectiblesShopMobile(obj);
   }, []);
   const callback3 = React.useCallback((autoFocusElement) => {
     let obj = stateFromStores(memo[67]);
-    obj = { screen: outer1_16.PROFILE_CUSTOMIZATION, params: obj };
+    obj = { screen: constants.PROFILE_CUSTOMIZATION, params: obj };
     obj = { autoFocusElement };
     obj.openUserSettings(obj);
   }, []);
   const callback4 = React.useCallback(() => {
     let obj = stateFromStores(memo[69]);
-    obj = {};
+    obj = { analyticsLocations: null };
     const items = [id(memo[46]).YOU_SCREEN];
-    obj.analyticsLocations = items;
+    obj[0] = items;
     const result = obj.openEditCustomStatusModal(obj);
   }, []);
   const callback5 = React.useCallback(() => {
@@ -762,17 +737,25 @@ export default function YouScreen(initialTab) {
     return false;
   }, []);
   const layoutEffect1 = React.useLayoutEffect(() => stateFromStores(memo[70]).trackAppUIViewed(), []);
-  const obj4 = stateFromStores(memo[66]);
+  const obj2 = stateFromStores(memo[21]);
   obj = {
     scrollToTop() {
       callback();
     }
   };
   const scrollToTop = stateFromStores(memo[36]).useScrollToTop(React.useRef(obj));
-  let tmp16 = null;
+  let tmp18 = null;
   if (null != stateFromStores) {
-    obj1 = { user: stateFromStores, navigateToSettings: callback, navigateToPremium: callback1, navigateToProfileCustomization: callback3, navigateToCustomStatus: callback4, navigateToFriends: callback5, navigateToShop: callback2, initialTab: initialTab.initialTab };
-    tmp16 = callback2(UnconnectedYouScreen, obj1);
+    obj = { user: null, navigateToSettings: null, navigateToPremium: null, navigateToProfileCustomization: null, navigateToCustomStatus: null, navigateToFriends: null, navigateToShop: null, initialTab: null };
+    obj[0] = stateFromStores;
+    obj[1] = callback;
+    obj[2] = callback1;
+    obj[3] = callback3;
+    obj[4] = callback4;
+    obj[5] = callback5;
+    obj[6] = callback2;
+    obj[7] = initialTab.initialTab;
+    tmp18 = callback2(UnconnectedYouScreen, obj);
   }
-  return tmp16;
+  return tmp18;
 };

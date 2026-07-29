@@ -1,34 +1,30 @@
-// Module ID: 3984
-// Function ID: 32736
+// Module ID: 4008
+// Function ID: 4009
 // Name: isActionedApplicationStatus
-// Dependencies: [3985, 2]
-// Exports: isActionedAndNotAcked, isApprovedAndAcked, isSubmittedApplicationStatus
+// Dependencies: [4009, 2]
+// Exports: isActionedAndNotAcked, isActionedApplicationStatus, isApprovedAndAcked, isSubmittedApplicationStatus
 
-// Module 3984 (isActionedApplicationStatus)
-function isActionedApplicationStatus(applicationStatus) {
-  let tmp = applicationStatus === require(3985) /* isTermsFormField */.GuildJoinRequestApplicationStatuses.APPROVED;
-  if (!tmp) {
-    tmp = applicationStatus === require(3985) /* isTermsFormField */.GuildJoinRequestApplicationStatuses.REJECTED;
-  }
-  return tmp;
-}
+// Module 4008 (isActionedApplicationStatus)
 const result = require("set").fileFinishedImporting("modules/guild_member_verification/GuildJoinRequestUtils.tsx");
 
-export { isActionedApplicationStatus };
+export const isActionedApplicationStatus = function isActionedApplicationStatus(applicationStatus) {
+  return applicationStatus === require(4009) /* MAX_RESULTS_PER_PAGE */.GuildJoinRequestApplicationStatuses.APPROVED || applicationStatus === require(4009) /* MAX_RESULTS_PER_PAGE */.GuildJoinRequestApplicationStatuses.REJECTED;
+};
 export const isSubmittedApplicationStatus = function isSubmittedApplicationStatus(applicationStatus) {
-  return applicationStatus === require(3985) /* isTermsFormField */.GuildJoinRequestApplicationStatuses.SUBMITTED;
+  return applicationStatus === require(4009) /* MAX_RESULTS_PER_PAGE */.GuildJoinRequestApplicationStatuses.SUBMITTED;
 };
 export const isApprovedAndAcked = function isApprovedAndAcked(applicationStatus) {
-  let tmp = applicationStatus.applicationStatus === require(3985) /* isTermsFormField */.GuildJoinRequestApplicationStatuses.APPROVED;
+  let tmp = applicationStatus.applicationStatus === require(4009) /* MAX_RESULTS_PER_PAGE */.GuildJoinRequestApplicationStatuses.APPROVED;
   if (tmp) {
     tmp = null != applicationStatus.lastSeen;
   }
   return tmp;
 };
 export const isActionedAndNotAcked = function isActionedAndNotAcked(request) {
-  let tmp = isActionedApplicationStatus(request.applicationStatus);
-  if (tmp) {
-    tmp = null == request.lastSeen;
+  const applicationStatus = request.applicationStatus;
+  let tmp3 = applicationStatus === require(4009) /* MAX_RESULTS_PER_PAGE */.GuildJoinRequestApplicationStatuses.APPROVED || applicationStatus === require(4009) /* MAX_RESULTS_PER_PAGE */.GuildJoinRequestApplicationStatuses.REJECTED;
+  if (tmp3) {
+    tmp3 = null == request.lastSeen;
   }
-  return tmp;
+  return tmp3;
 };

@@ -1,21 +1,21 @@
-// Module ID: 5537
-// Function ID: 47053
+// Module ID: 5555
+// Function ID: 5556
 // Name: TableSwitchRow
-// Dependencies: [57, 31, 27, 33, 4165, 477, 3871, 5198, 4161, 5538, 2]
+// Dependencies: [32, 19, 17, 21, 4189, 500, 3895, 5220, 4185, 5556, 2]
 // Exports: TableSwitchRow
 
-// Module 5537 (TableSwitchRow)
+// Module 5555 (TableSwitchRow)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
+import noop from "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_5;
+let c5;
 let closure_6;
 let require = arg1;
-({ jsx: closure_5, jsxs: closure_6 } = jsxProd);
-let closure_7 = _createForOfIteratorHelperLoose.createStyles(() => ({ labelWithTrailing: { flexDirection: "row", alignItems: "center", gap: 8 } }));
+({ jsx: c5, jsxs: closure_6 } = jsxProd);
+let closure_7 = createCacheKey.createStyles(() => ({ labelWithTrailing: { flexDirection: "row", alignItems: "center", gap: 8 } }));
 const result = require("get ActivityIndicator").fileFinishedImporting("design/components/TableRow/native/TableSwitchRow.native.tsx");
 
 export const TableSwitchRow = function TableSwitchRow(value) {
@@ -31,81 +31,77 @@ export const TableSwitchRow = function TableSwitchRow(value) {
     disabled = false;
   }
   const variant = value.variant;
-  let obj = { value: 0, onValueChange: 0, label: 0, subLabel: 0, trailing: 0, disabled: 0, accessibilityHint: 0, variant: 0 };
-  Object.setPrototypeOf(null);
-  const merged = Object.assign(value, obj);
+  const merged = Object.assign(value, Object.create(null));
   let callback;
-  function handleOnPress() {
-    let tmp;
-    if (null != callback) {
-      tmp = callback(!closure_0);
-    }
-    return tmp;
-  }
-  let obj1 = require(477) /* set */;
-  const tmp3 = callback3();
-  let obj2 = require(3871) /* getNodeText */;
-  const nodeText = obj2.getNodeText(label);
-  let obj3 = require(3871) /* getNodeText */;
-  const nodeText1 = obj3.getNodeText(subLabel);
-  const tmp7 = callback(React.useState(value), 2);
-  callback = tmp7[1];
+  let obj = require(500) /* set */;
+  const tmp2 = callback2();
+  let obj1 = require(3895) /* getNodeText */;
+  const nodeText = obj1.getNodeText(label);
+  const isAndroidResult = obj.isAndroid();
+  const nodeText1 = require(3895) /* getNodeText */.getNodeText(subLabel);
+  const tmp8 = callback(React.useState(value), 2);
+  callback = tmp8[1];
   const items = [value];
   const effect = React.useEffect(() => {
-    callback2(closure_0);
+    callback(closure_0);
   }, items);
   obj = {};
   const merged1 = Object.assign(merged);
-  obj["variant"] = variant;
-  obj["arrow"] = false;
-  let tmp17Result = label;
+  obj.variant = variant;
+  obj.arrow = false;
+  let tmp15Result = label;
   if (null != trailing) {
-    obj = { style: tmp3.labelWithTrailing };
-    let tmp12Result = label;
+    obj = { style: null, children: null };
+    obj[0] = tmp2.labelWithTrailing;
+    let tmp10Result = label;
     if (!React.isValidElement(label)) {
-      obj1 = { variant: "text-md/semibold", color: null, includeFontPadding: true };
       let str = "mobile-text-heading-primary";
       if ("danger" === variant) {
         str = "text-feedback-critical";
       }
-      obj1.color = str;
-      obj1.children = label;
-      tmp12Result = callback2(require(4161) /* Text */.Text, obj1);
-      const tmp12 = callback2;
+      obj1 = { variant: "text-md/semibold", color: null, includeFontPadding: true, children: null };
+      obj1[1] = str;
+      obj1[3] = label;
+      tmp10Result = tmp10(tmp3(4185).Text, obj1);
     }
-    const items1 = [tmp12Result, trailing];
-    obj.children = items1;
-    tmp17Result = closure_6(View, obj);
-    const tmp17 = closure_6;
-    const tmp18 = View;
+    const items1 = [tmp10Result, trailing];
+    obj[1] = items1;
+    tmp15Result = closure_6(View, obj);
+    const tmp15 = closure_6;
+    const tmp16 = View;
   }
-  obj["label"] = tmp17Result;
-  obj["subLabel"] = subLabel;
-  obj["disabled"] = disabled;
-  obj2 = { disabled, checked: tmp7[0] };
-  obj["accessibilityState"] = obj2;
-  obj["accessible"] = true;
-  obj["accessibilityRole"] = "switch";
-  let str3 = "";
-  if (null != nodeText1) {
-    str3 = nodeText1;
+  obj.label = tmp15Result;
+  obj.subLabel = subLabel;
+  obj.disabled = disabled;
+  obj.accessibilityState = { disabled, checked: tmp8[0] };
+  obj.accessible = true;
+  obj.accessibilityRole = "switch";
+  let str3 = nodeText1;
+  if (nodeText1 == null) {
+    str3 = "";
   }
-  obj["accessibilityLabel"] = "" + nodeText + ", " + str3;
-  obj["accessibilityHint"] = value.accessibilityHint;
-  let tmp16;
+  function handleOnPress() {
+    let tmpResult;
+    if (closure_1 != null) {
+      tmpResult = tmp(!closure_0);
+    }
+    return tmpResult;
+  }
+  obj.accessibilityLabel = "" + nodeText + ", " + str3;
+  obj.accessibilityHint = value.accessibilityHint;
+  let tmp14;
   if (isAndroidResult) {
-    tmp16 = handleOnPress;
+    tmp14 = handleOnPress;
   }
-  obj["onPress"] = tmp16;
-  obj["onAccessibilityTap"] = function onAccessibilityTap() {
-    callback2(!closure_0);
+  obj.onPress = tmp14;
+  obj.onAccessibilityTap = function onAccessibilityTap() {
+    callback(!closure_0);
     const timerId = setTimeout(() => {
-      if (null != outer1_1) {
-        outer1_1(!outer1_0);
+      if (closure_1 != null) {
+        tmp(!closure_0);
       }
     });
   };
-  obj3 = { "aria-hidden": true, value, onValueChange: handleOnPress, disabled };
-  obj["trailing"] = callback2(require(5538) /* FormSwitch */.FormSwitch, obj3);
-  return callback2(require(5198) /* TableRowInner */.TableRow, obj);
+  obj.trailing = closure_5(require(5556) /* FormSwitch */.FormSwitch, { "aria-hidden": true, value, onValueChange: handleOnPress, disabled });
+  return closure_5(require(5220) /* TableRowInner */.TableRow, obj);
 };

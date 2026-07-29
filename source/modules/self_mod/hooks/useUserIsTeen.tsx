@@ -1,21 +1,21 @@
-// Module ID: 7685
-// Function ID: 61370
+// Module ID: 7708
+// Function ID: 7709
 // Name: useUserIsTeen
-// Dependencies: [1850, 566, 2]
+// Dependencies: [1874, 589, 2]
 // Exports: useUserIsTeen
 
-// Module 7685 (useUserIsTeen)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 7708 (useUserIsTeen)
+import mergeGuildAvatar from "mergeGuildAvatar";
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/self_mod/hooks/useUserIsTeen.tsx");
 
 export const useUserIsTeen = function useUserIsTeen() {
-  const items = [_isNativeReflectConstruct];
-  return false === require(566) /* initialize */.useStateFromStores(items, () => {
-    const currentUser = outer1_2.getCurrentUser();
+  const items = [mergeGuildAvatar];
+  return false === require(589) /* initialize */.useStateFromStores(items, () => {
+    currentUser = currentUser.getCurrentUser();
     let nsfwAllowed;
-    if (null != currentUser) {
+    if (currentUser != null) {
       nsfwAllowed = currentUser.nsfwAllowed;
     }
     return nsfwAllowed;

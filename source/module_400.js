@@ -1,10 +1,10 @@
 // Module ID: 400
-// Function ID: 5788
-// Dependencies: [31, 380, 289]
+// Function ID: 401
+// Dependencies: [19, 387, 311]
 
 // Module 400
-import "result";
-import unstable_createAnimatedComponentWithAllowlist from "unstable_createAnimatedComponentWithAllowlist";
+import "noop";
+import createAnimatedComponent from "createAnimatedComponent";
 
 
-export default unstable_createAnimatedComponentWithAllowlist(require("useTextPressability"));
+export default createAnimatedComponent(require("_isNativeReflectConstruct"));

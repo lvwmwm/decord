@@ -1,104 +1,83 @@
-// Module ID: 8814
-// Function ID: 69577
-// Name: getInputDeviceName
-// Dependencies: [5, 4236, 1348, 4212, 4237, 1907, 1850, 653, 8815, 4226, 3, 675, 574, 686, 8816, 8818, 8819, 8827, 2]
+// Module ID: 8838
+// Function ID: 8839
+// Name: trackDeviceChanged
+// Dependencies: [5, 4260, 1372, 4236, 4261, 1931, 1874, 676, 8839, 4250, 3, 698, 636, 709, 8840, 8842, 8843, 8851, 2]
 
-// Module 8814 (getInputDeviceName)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_4 from "_isNativeReflectConstruct";
-import closure_5 from "_isNativeReflectConstruct";
-import closure_6 from "_isNativeReflectConstruct";
-import closure_7 from "_isNativeReflectConstruct";
-import closure_8 from "_isNativeReflectConstruct";
-import closure_9 from "_isNativeReflectConstruct";
+// Module 8838 (trackDeviceChanged)
+import handleConnectionOpen from "handleConnectionOpen";
+import initialize from "initialize";
+import ensureGuildLoaded from "ensureGuildLoaded";
+import _detectH265HardwareDecode from "_detectH265HardwareDecode";
+import createRTCConnection from "createRTCConnection";
+import closure_8 from "handleConnectionOpen";
+import mergeGuildAvatar from "mergeGuildAvatar";
 import ME from "ME";
 import { SoundOutputChannel } from "SoundOutputChannel";
 import { MediaEngineContextTypes } from "DesktopSources";
-import importDefaultResult from "_isNativeReflectConstruct";
 
-let closure_10;
-let closure_11;
-let closure_15;
-let closure_16;
-let closure_17;
+let c10;
+let unpackModuleId;
 const require = arg1;
-function getInputDeviceName() {
-  const inputDevices = store3.getInputDevices();
-  const tmp2 = inputDevices[store3.getInputDeviceId(store3)];
-  let str = "";
-  if (null != tmp2) {
-    str = tmp2.name;
-  }
-  return str;
-}
 function trackDeviceChanged(inputDevices, inputDeviceId, found, Video, arg4) {
-  if (arg4 === undefined) {
-    let obj = {};
-  }
   if (inputDeviceId !== found) {
-    const voiceChannelId = store5.getVoiceChannelId();
+    const voiceChannelId = store4.getVoiceChannelId();
     let channel = null;
     if (null != voiceChannelId) {
-      channel = store2.getChannel(voiceChannelId);
+      channel = store.getChannel(voiceChannelId);
     }
-    const mediaEngine = store3.getMediaEngine();
+    const mediaEngine = store2.getMediaEngine();
     const audioSubsystem = mediaEngine.getAudioSubsystem();
-    const mediaEngine1 = store3.getMediaEngine();
+    const mediaEngine1 = store2.getMediaEngine();
     const audioLayer = mediaEngine1.getAudioLayer();
-    obj = {};
     let str = "";
     let str2 = "";
     if (null != inputDevices[inputDeviceId]) {
-      str2 = tmp5.name;
+      str2 = tmp6.name;
     }
-    obj.device_from_name = store.getCertifiedDeviceName(inputDeviceId, str2);
+    const obj = { device_from_name: null, device_to_name: null, device_type: null, device_is_certified: null, location: null, location_stack: null, voice_channel_type: null, audio_subsystem: null, audio_layer: null };
+    obj[0] = certifiedDeviceName.getCertifiedDeviceName(inputDeviceId, str2);
     if (null != inputDevices[found]) {
-      str = tmp6.name;
+      str = tmp7.name;
     }
-    obj.device_to_name = store.getCertifiedDeviceName(found, str);
-    obj.device_type = Video;
-    obj.device_is_certified = store.isCertified(found);
-    obj.location = tmp;
-    obj.location_stack = tmp2;
+    obj[1] = certifiedDeviceName.getCertifiedDeviceName(found, str);
+    obj[2] = Video;
+    obj[3] = certifiedDeviceName.isCertified(found);
+    obj[4] = tmp;
+    obj[5] = tmp2;
     let type;
-    if (null != channel) {
+    if (channel != null) {
       type = channel.type;
     }
-    obj.voice_channel_type = type;
-    obj.audio_subsystem = audioSubsystem;
-    obj.audio_layer = audioLayer;
-    importDefault(675).track(constants2.MEDIA_DEVICE_CHANGED, obj);
-    const obj4 = importDefault(675);
+    obj[6] = type;
+    obj[7] = audioSubsystem;
+    obj[8] = audioLayer;
+    importDefault(698).track(constants2.MEDIA_DEVICE_CHANGED, obj);
+    const obj3 = importDefault(698);
   }
 }
-({ InputModes: closure_10, AnalyticEvents: closure_11 } = ME);
-importDefaultResult = new importDefaultResult("AudioActionCreators");
-importDefaultResult.enableNativeLogger(true);
-let closure_14 = require("debounce")((target_user_id, context, volume) => {
-  let obj = importDefault(675);
-  obj = { target_user_id, context, volume, media_session_id: store4.getMediaSessionId(), rtc_connection_id: store4.getRTCConnectionId() };
+({ InputModes: c10, AnalyticEvents: unpackModuleId } = ME);
+let obj = new require("_detectH265HardwareDecode")("AudioActionCreators");
+obj.enableNativeLogger(true);
+let closure_15 = require("debounce")((target_user_id, context, volume) => {
+  let obj = importDefault(698);
+  obj = { target_user_id, context, volume, media_session_id: store3.getMediaSessionId(), rtc_connection_id: store3.getRTCConnectionId() };
   obj.track(constants2.USER_VOLUME_SETTING_UPDATED, obj);
 }, 300);
-let obj = {
-  isNotSupported() {
-    return false;
-  },
+function isNotSupported() {
+  return false;
+}
+function trackToggleSelfMute() {
+
+}
+function trackToggleSelfDeaf() {
+
+}
+obj = {
   enable() {
     return Promise.resolve(true);
   },
-  trackToggleSelfMute() {
-
-  },
-  trackToggleSelfDeaf() {
-
-  }
-};
-({ isNotSupported: closure_15, trackToggleSelfMute: closure_16, trackToggleSelfDeaf: closure_17 } = obj);
-obj = {
-  enable: obj.enable,
   toggleSelfMute(arg0) {
     let obj = arg0;
-    const self = this;
     if (arg0 === undefined) {
       obj = {};
     }
@@ -110,68 +89,79 @@ obj = {
     if (flag === undefined) {
       flag = true;
     }
-    let flag2 = obj.usedKeybind;
-    if (flag2 === undefined) {
-      flag2 = false;
-    }
-    let flag3 = obj.playSoundEffect;
-    if (flag3 === undefined) {
-      flag3 = true;
-    }
-    if (callback3()) {
-      let resolved = Promise.resolve();
-    } else {
-      obj = { usedKeybind: flag2 };
-      obj.location = obj.location;
-      callback4(obj);
-      if (flag3) {
-        flag3 = !store3.hasActiveCallKitCall();
+    if (obj.usedKeybind !== undefined) {
+      let flag2 = obj.playSoundEffect;
+      if (flag2 === undefined) {
+        flag2 = true;
+      }
+      const _location = obj.location;
+      if (typeof isNotSupported !== "find") {
+        HermesBuiltin.throwTypeError();
+      }
+      if (typeof trackToggleSelfMute !== "find") {
+        HermesBuiltin.throwTypeError();
+      }
+      if (flag2) {
+        flag2 = !store2.hasActiveCallKitCall();
       }
       const currentUser = authStore.getCurrentUser();
-      if (tmp7) {
-        importDefaultResult.info("Toggling self mute");
+      let isStaffResult;
+      if (currentUser != null) {
+        isStaffResult = currentUser.isStaff();
       }
-      if (store3.isEnabled()) {
-        obj = { type: "AUDIO_TOGGLE_SELF_MUTE", context: DEFAULT, syncRemote: flag, playSoundEffect: flag3 };
-        resolved = importDefault(686).dispatch(obj);
-        const obj4 = importDefault(686);
+      if (isStaffResult) {
+        obj.info("Toggling self mute");
+      }
+      if (store2.isEnabled()) {
+        obj = { type: "AUDIO_TOGGLE_SELF_MUTE", context: null, syncRemote: null, playSoundEffect: null };
+        obj[1] = DEFAULT;
+        obj[2] = flag;
+        obj[3] = flag2;
+        let dispatchResult = importDefault(709).dispatch(obj);
+        const obj3 = importDefault(709);
       } else {
-        resolved = self.enable(true);
+        const self = this;
+        dispatchResult = this.enable(true);
       }
-      tmp7 = null != currentUser && currentUser.isStaff();
+      return dispatchResult;
     }
-    return resolved;
   },
-  setSelfMute(DEFAULT, pendingMutePreference, arg2) {
+  setSelfMute(context, mute) {
     let flag = arg2;
     if (arg2 === undefined) {
       flag = true;
     }
-    if (!callback3()) {
-      if (flag) {
-        flag = !store3.hasActiveCallKitCall();
-      }
-      const currentUser = authStore.getCurrentUser();
-      if (tmp4) {
-        importDefaultResult.info("Setting self mute", pendingMutePreference);
-      }
-      tmp4 = null != currentUser && currentUser.isStaff();
-      const obj = { type: "AUDIO_SET_SELF_MUTE", context: DEFAULT, mute: pendingMutePreference, playSoundEffect: flag };
-      importDefault(686).dispatch(obj);
-      const obj2 = importDefault(686);
+    if (typeof isNotSupported !== "find") {
+      HermesBuiltin.throwTypeError();
     }
+    if (flag) {
+      flag = !store2.hasActiveCallKitCall();
+    }
+    const currentUser = authStore.getCurrentUser();
+    let isStaffResult;
+    if (currentUser != null) {
+      isStaffResult = currentUser.isStaff();
+    }
+    if (isStaffResult) {
+      obj.info("Setting self mute", mute);
+    }
+    obj = { type: "AUDIO_SET_SELF_MUTE", context, mute, playSoundEffect: flag };
+    importDefault(709).dispatch(obj);
   },
   setTemporarySelfMute(mute) {
-    if (!callback3()) {
-      const currentUser = authStore.getCurrentUser();
-      if (tmp3) {
-        importDefaultResult.info("Setting temporary self mute", mute);
-      }
-      tmp3 = null != currentUser && currentUser.isStaff();
-      const obj = { type: "AUDIO_SET_TEMPORARY_SELF_MUTE", mute };
-      importDefault(686).dispatch(obj);
-      const obj2 = importDefault(686);
+    if (typeof isNotSupported !== "find") {
+      HermesBuiltin.throwTypeError();
     }
+    const currentUser = authStore.getCurrentUser();
+    let isStaffResult;
+    if (currentUser != null) {
+      isStaffResult = currentUser.isStaff();
+    }
+    if (isStaffResult) {
+      obj.info("Setting temporary self mute", mute);
+    }
+    obj = { type: "AUDIO_SET_TEMPORARY_SELF_MUTE", mute };
+    importDefault(709).dispatch(obj);
   },
   toggleSelfDeaf(arg0) {
     let obj = arg0;
@@ -186,231 +176,249 @@ obj = {
     if (flag === undefined) {
       flag = true;
     }
-    let flag2 = obj.usedKeybind;
-    if (flag2 === undefined) {
-      flag2 = false;
-    }
-    if (!callback3()) {
-      obj = { usedKeybind: flag2 };
-      obj.location = obj.location;
-      callback5(obj);
-      obj = { type: "AUDIO_TOGGLE_SELF_DEAF", context: DEFAULT, syncRemote: flag };
-      importDefault(686).dispatch(obj);
-      const obj3 = importDefault(686);
+    if (obj.usedKeybind !== undefined) {
+      const _location = obj.location;
+      if (typeof isNotSupported !== "find") {
+        HermesBuiltin.throwTypeError();
+      }
+      if (typeof trackToggleSelfDeaf !== "find") {
+        HermesBuiltin.throwTypeError();
+      }
+      obj = { type: "AUDIO_TOGGLE_SELF_DEAF", context: null, syncRemote: null };
+      obj[1] = DEFAULT;
+      obj[2] = flag;
+      importDefault(709).dispatch(obj);
     }
   },
-  toggleLocalMute(closure_0, closure_1) {
+  toggleLocalMute(id, closure_1) {
     let DEFAULT = closure_1;
     if (closure_1 === undefined) {
       DEFAULT = MediaEngineContextTypes.DEFAULT;
     }
-    if (!callback3()) {
-      let obj = importDefault(686);
-      obj = { type: "AUDIO_TOGGLE_LOCAL_MUTE", context: DEFAULT, userId: closure_0 };
-      obj.dispatch(obj);
+    if (typeof isNotSupported !== "find") {
+      HermesBuiltin.throwTypeError();
     }
+    let obj = importDefault(709);
+    obj = { type: "AUDIO_TOGGLE_LOCAL_MUTE", context: DEFAULT, userId: id };
+    obj.dispatch(obj);
   },
   toggleLocalSoundboardMute(id) {
     let DEFAULT = arg1;
     if (arg1 === undefined) {
       DEFAULT = MediaEngineContextTypes.DEFAULT;
     }
-    let obj = importDefault(686);
+    let obj = importDefault(709);
     obj = { type: "AUDIO_TOGGLE_LOCAL_SOUNDBOARD_MUTE", context: DEFAULT, userId: id };
     obj.dispatch(obj);
   },
-  setDisableLocalVideo(id, MANUAL_ENABLED, DEFAULT, arg3) {
-    let flag = arg3;
-    let flag2 = arg4;
+  setDisableLocalVideo(closure_0, MANUAL_ENABLED, DEFAULT, arg3) {
     if (DEFAULT === undefined) {
       DEFAULT = MediaEngineContextTypes.DEFAULT;
     }
-    if (flag === undefined) {
+    let flag = arg3;
+    if (arg3 === undefined) {
       flag = true;
     }
-    if (flag2 === undefined) {
+    let flag2 = arg4;
+    if (arg4 === undefined) {
       flag2 = false;
     }
-    if (!callback3()) {
-      let obj = importDefault(686);
-      obj = { type: "AUDIO_SET_LOCAL_VIDEO_DISABLED", context: DEFAULT, userId: id, videoToggleState: MANUAL_ENABLED, persist: flag, isAutomatic: flag2 };
-      obj.dispatch(obj);
+    if (typeof isNotSupported !== "find") {
+      HermesBuiltin.throwTypeError();
     }
+    let obj = importDefault(709);
+    obj = { type: "AUDIO_SET_LOCAL_VIDEO_DISABLED", context: DEFAULT, userId: closure_0, videoToggleState: MANUAL_ENABLED, persist: flag, isAutomatic: flag2 };
+    obj.dispatch(obj);
   },
-  setLocalVolume(closure_0, volume, STREAM) {
-    let DEFAULT = STREAM;
-    if (STREAM === undefined) {
+  setLocalVolume(userId, USER, DEFAULT) {
+    if (DEFAULT === undefined) {
       DEFAULT = MediaEngineContextTypes.DEFAULT;
     }
-    let obj = require(8816) /* snapVolumeToDefault */;
-    const snapVolumeToDefaultResult = obj.snapVolumeToDefault(volume, DEFAULT);
-    obj = { type: "AUDIO_SET_LOCAL_VOLUME", context: DEFAULT, userId: closure_0, volume: snapVolumeToDefaultResult };
-    importDefault(686).dispatch(obj);
-    callback2(closure_0, DEFAULT, snapVolumeToDefaultResult);
+    let obj = require(8840) /* snapVolumeToDefault */;
+    const snapVolumeToDefaultResult = obj.snapVolumeToDefault(USER, DEFAULT);
+    obj = { type: "AUDIO_SET_LOCAL_VOLUME", context: DEFAULT, userId, volume: snapVolumeToDefaultResult };
+    importDefault(709).dispatch(obj);
+    callback2(userId, DEFAULT, snapVolumeToDefaultResult);
   },
   setAudioMixerSettings(audioMixerSettings) {
     let DEFAULT = arg1;
     if (arg1 === undefined) {
       DEFAULT = MediaEngineContextTypes.DEFAULT;
     }
-    let obj = importDefault(686);
+    let obj = importDefault(709);
     obj = { type: "AUDIO_SET_AUDIO_MIXER_SETTINGS", context: DEFAULT, settings: audioMixerSettings };
     obj.dispatch(obj);
   },
-  setSpatialAudio(arg0, arg1) {
-    if (!callback3()) {
-      const audioMixerSettings = store3.getAudioMixerSettings();
-      importDefault(8818)("spatial_audio_enabled", arg0, audioMixerSettings.enabled, arg1);
-      let obj = importDefault(686);
-      obj = { type: "AUDIO_SET_AUDIO_MIXER_SETTINGS", context: MediaEngineContextTypes.DEFAULT };
-      obj = {};
-      const merged = Object.assign(audioMixerSettings);
-      obj["enabled"] = arg0;
-      obj.settings = obj;
-      obj.dispatch(obj);
+  setSpatialAudio(enabled) {
+    if (typeof isNotSupported !== "find") {
+      HermesBuiltin.throwTypeError();
     }
+    const audioMixerSettings = store2.getAudioMixerSettings();
+    importDefault(8842)("spatial_audio_enabled", enabled, audioMixerSettings.enabled, arg1);
+    let obj = importDefault(709);
+    obj = { type: "AUDIO_SET_AUDIO_MIXER_SETTINGS", context: MediaEngineContextTypes.DEFAULT, settings: null };
+    obj = {};
+    const merged = Object.assign(audioMixerSettings);
+    obj.enabled = enabled;
+    obj[2] = obj;
+    obj.dispatch(obj);
   },
-  setLocalPan(result2, left, right) {
+  setLocalPan(userId, left, right) {
     let DEFAULT = arg3;
     if (arg3 === undefined) {
       DEFAULT = MediaEngineContextTypes.DEFAULT;
     }
-    let obj = importDefault(686);
-    obj = { type: "AUDIO_SET_LOCAL_PAN", context: DEFAULT, userId: result2, left, right };
+    let obj = importDefault(709);
+    obj = { type: "AUDIO_SET_LOCAL_PAN", context: DEFAULT, userId, left, right };
     obj.dispatch(obj);
   },
   setMode(mode, arg1, DEFAULT) {
     let obj = arg1;
-    obj = arg3;
     if (arg1 === undefined) {
       obj = {};
     }
     if (DEFAULT === undefined) {
       DEFAULT = MediaEngineContextTypes.DEFAULT;
     }
-    if (obj === undefined) {
+    obj = arg3;
+    if (arg3 === undefined) {
       obj = {};
     }
     const analyticsLocations = obj.analyticsLocations;
-    if (!callback3()) {
-      mode = store3.getMode();
-      const modeOptions = store3.getModeOptions(DEFAULT);
-      let obj2 = importDefault(686);
-      obj = { type: "AUDIO_SET_MODE", context: DEFAULT, mode };
-      const obj1 = {};
-      const merged = Object.assign(modeOptions);
-      const merged1 = Object.assign(obj);
-      obj.options = obj1;
-      obj2.dispatch(obj);
-      if (mode !== mode) {
-        const mediaEngine = store3.getMediaEngine();
-        const audioSubsystem = mediaEngine.getAudioSubsystem();
-        const mediaEngine1 = store3.getMediaEngine();
-        const audioLayer = mediaEngine1.getAudioLayer();
-        const voiceChannelId = store5.getVoiceChannelId();
-        let channel = null;
-        if (null != voiceChannelId) {
-          channel = store2.getChannel(voiceChannelId);
+    if (typeof isNotSupported !== "find") {
+      HermesBuiltin.throwTypeError();
+    }
+    let obj2 = store2;
+    mode = store2.getMode();
+    const modeOptions = store2.getModeOptions(DEFAULT);
+    let obj3 = importDefault(709);
+    obj = { type: "AUDIO_SET_MODE", context: DEFAULT, mode, options: null };
+    const merged = Object.assign(modeOptions);
+    const merged1 = Object.assign(obj);
+    obj[3] = {};
+    obj3.dispatch(obj);
+    if (mode !== mode) {
+      const mediaEngine = obj2.getMediaEngine();
+      const audioSubsystem = mediaEngine.getAudioSubsystem();
+      const mediaEngine1 = obj2.getMediaEngine();
+      const audioLayer = mediaEngine1.getAudioLayer();
+      const voiceChannelId = store4.getVoiceChannelId();
+      let channel = null;
+      if (null != voiceChannelId) {
+        channel = store.getChannel(voiceChannelId);
+      }
+      const inputDevices = obj2.getInputDevices();
+      const tmp24 = inputDevices[obj2.getInputDeviceId(obj2)];
+      let str2 = "";
+      if (null != tmp24) {
+        str2 = tmp24.name;
+      }
+      let tmp4Result = tmp4(698);
+      obj2 = { mode: null, location_stack: null, voice_channel_type: null, input_device_name: null, audio_subsystem: null, audio_layer: null };
+      obj2[0] = mode;
+      obj2[1] = analyticsLocations;
+      let type;
+      if (channel != null) {
+        type = channel.type;
+      }
+      obj2[2] = type;
+      obj2[3] = str2;
+      obj2[4] = audioSubsystem;
+      obj2[5] = audioLayer;
+      tmp4Result.track(constants2.VOICE_ACTIVATION_MODE_CHANGED, obj2);
+    } else if (mode === constants.VOICE_ACTIVITY) {
+      if (modeOptions !== obj) {
+        const mediaEngine2 = obj2.getMediaEngine();
+        const audioSubsystem1 = mediaEngine2.getAudioSubsystem();
+        const mediaEngine3 = obj2.getMediaEngine();
+        const audioLayer1 = mediaEngine3.getAudioLayer();
+        const voiceChannelId1 = store4.getVoiceChannelId();
+        let channel1 = null;
+        if (null != voiceChannelId1) {
+          channel1 = store.getChannel(voiceChannelId1);
         }
-        const tmp34 = getInputDeviceName();
-        obj2 = { mode, location_stack: analyticsLocations };
-        let type;
-        if (null != channel) {
-          type = channel.type;
+        const inputDevices1 = obj2.getInputDevices();
+        const tmp12 = inputDevices1[obj2.getInputDeviceId(obj2)];
+        let str = "";
+        if (null != tmp12) {
+          str = tmp12.name;
         }
-        obj2.voice_channel_type = type;
-        obj2.input_device_name = tmp34;
-        obj2.audio_subsystem = audioSubsystem;
-        obj2.audio_layer = audioLayer;
-        importDefault(675).track(constants2.VOICE_ACTIVATION_MODE_CHANGED, obj2);
-        const obj10 = importDefault(675);
-      } else if (mode === constants.VOICE_ACTIVITY) {
-        if (modeOptions !== obj) {
-          const mediaEngine2 = store3.getMediaEngine();
-          const audioSubsystem1 = mediaEngine2.getAudioSubsystem();
-          const mediaEngine3 = store3.getMediaEngine();
-          const audioLayer1 = mediaEngine3.getAudioLayer();
-          const voiceChannelId1 = store5.getVoiceChannelId();
-          let channel1 = null;
-          if (null != voiceChannelId1) {
-            channel1 = store2.getChannel(voiceChannelId1);
-          }
-          const tmp18 = getInputDeviceName();
-          const obj3 = { location_stack: analyticsLocations };
-          let type1;
-          if (null != channel1) {
-            type1 = channel1.type;
-          }
-          obj3.voice_channel_type = type1;
-          obj3.input_device_name = tmp18;
-          obj3.audio_subsystem = audioSubsystem1;
-          obj3.audio_layer = audioLayer1;
-          obj3.old_threshold = modeOptions.threshold;
-          obj3.new_threshold = obj.threshold;
-          obj3.old_auto_threshold = modeOptions.autoThreshold;
-          obj3.new_auto_threshold = obj.autoThreshold;
-          importDefault(675).track(constants2.VOICE_ACTIVITY_THRESHOLD_CHANGED, obj3);
-          const obj6 = importDefault(675);
+        tmp4Result = tmp4(698);
+        obj3 = { location_stack: null, voice_channel_type: null, input_device_name: null, audio_subsystem: null, audio_layer: null, old_threshold: null, new_threshold: null, old_auto_threshold: null, new_auto_threshold: null };
+        obj3[0] = analyticsLocations;
+        let type1;
+        if (channel1 != null) {
+          type1 = channel1.type;
         }
+        obj3[1] = type1;
+        obj3[2] = str;
+        obj3[3] = audioSubsystem1;
+        obj3[4] = audioLayer1;
+        obj3[5] = modeOptions.threshold;
+        obj3[6] = obj.threshold;
+        obj3[7] = modeOptions.autoThreshold;
+        obj3[8] = obj.autoThreshold;
+        tmp4Result.track(constants2.VOICE_ACTIVITY_THRESHOLD_CHANGED, obj3);
       }
     }
   },
   setBypassSystemInputProcessing(bypassEnabled, location) {
-    if (!callback3()) {
-      let obj = importDefault(686);
-      obj = { type: "AUDIO_SET_BYPASS_SYSTEM_INPUT_PROCESSING", bypassEnabled, location };
-      obj.dispatch(obj);
+    if (typeof isNotSupported !== "find") {
+      HermesBuiltin.throwTypeError();
     }
+    let obj = importDefault(709);
+    obj = { type: "AUDIO_SET_BYPASS_SYSTEM_INPUT_PROCESSING", bypassEnabled, location };
+    obj.dispatch(obj);
   },
-  setInputVolume(inputVolume) {
+  setInputVolume(volume) {
     let obj = arg1;
     if (arg1 === undefined) {
       obj = {};
     }
-    if (!callback3()) {
-      obj = { type: "AUDIO_SET_INPUT_VOLUME", volume: inputVolume };
-      importDefault(686).dispatch(obj);
-      const voiceChannelId = store5.getVoiceChannelId();
-      let channel = null;
-      if (null != voiceChannelId) {
-        channel = store2.getChannel(voiceChannelId);
-      }
-      const obj2 = importDefault(686);
-      obj = { volume: inputVolume };
-      obj.location_stack = obj.analyticsLocations;
-      let type;
-      if (null != channel) {
-        type = channel.type;
-      }
-      obj.voice_channel_type = type;
-      importDefault(675).track(constants2.MEDIA_INPUT_VOLUME_CHANGED, obj);
-      const obj4 = importDefault(675);
+    if (typeof isNotSupported !== "find") {
+      HermesBuiltin.throwTypeError();
     }
+    obj = { type: "AUDIO_SET_INPUT_VOLUME", volume };
+    importDefault(709).dispatch(obj);
+    const voiceChannelId = store4.getVoiceChannelId();
+    let channel = null;
+    if (null != voiceChannelId) {
+      channel = store.getChannel(voiceChannelId);
+    }
+    const obj2 = importDefault(709);
+    const tmp = importDefault;
+    obj = { volume, location_stack: obj.analyticsLocations, voice_channel_type: null };
+    let type;
+    if (channel != null) {
+      type = channel.type;
+    }
+    obj[2] = type;
+    importDefault(698).track(constants2.MEDIA_INPUT_VOLUME_CHANGED, obj);
   },
-  setOutputVolume(closure_45) {
+  setOutputVolume(volume) {
     let obj = arg1;
     if (arg1 === undefined) {
       obj = {};
     }
-    if (!callback3()) {
-      obj = { type: "AUDIO_SET_OUTPUT_VOLUME", volume: closure_45 };
-      importDefault(686).dispatch(obj);
-      const voiceChannelId = store5.getVoiceChannelId();
-      let channel = null;
-      if (null != voiceChannelId) {
-        channel = store2.getChannel(voiceChannelId);
-      }
-      const obj2 = importDefault(686);
-      obj = { volume: closure_45 };
-      obj.location_stack = obj.analyticsLocations;
-      let type;
-      if (null != channel) {
-        type = channel.type;
-      }
-      obj.voice_channel_type = type;
-      importDefault(675).track(constants2.MEDIA_OUTPUT_VOLUME_CHANGED, obj);
-      const obj4 = importDefault(675);
+    if (typeof isNotSupported !== "find") {
+      HermesBuiltin.throwTypeError();
     }
+    obj = { type: "AUDIO_SET_OUTPUT_VOLUME", volume };
+    importDefault(709).dispatch(obj);
+    const voiceChannelId = store4.getVoiceChannelId();
+    let channel = null;
+    if (null != voiceChannelId) {
+      channel = store.getChannel(voiceChannelId);
+    }
+    const obj2 = importDefault(709);
+    const tmp = importDefault;
+    obj = { volume, location_stack: obj.analyticsLocations, voice_channel_type: null };
+    let type;
+    if (channel != null) {
+      type = channel.type;
+    }
+    obj[2] = type;
+    importDefault(698).track(constants2.MEDIA_OUTPUT_VOLUME_CHANGED, obj);
   },
   setInputDevice(id) {
     let _location;
@@ -420,16 +428,18 @@ obj = {
       obj = {};
     }
     ({ location: _location, analyticsLocations } = obj);
-    if (!callback3()) {
-      const inputDeviceId = store3.getInputDeviceId();
-      if (null != _location) {
-        obj = { location: _location, analyticsLocations };
-        trackDeviceChanged(store3.getInputDevices(), inputDeviceId, id, "Audio Input", obj);
-      }
-      obj = { type: "AUDIO_SET_INPUT_DEVICE", id, oldId: inputDeviceId };
-      importDefault(686).dispatch(obj);
-      const obj3 = importDefault(686);
+    if (typeof isNotSupported !== "find") {
+      HermesBuiltin.throwTypeError();
     }
+    const inputDeviceId = store2.getInputDeviceId();
+    if (null != _location) {
+      obj = { location: null, analyticsLocations: null };
+      obj[0] = _location;
+      obj[1] = analyticsLocations;
+      trackDeviceChanged(store2.getInputDevices(), inputDeviceId, id, "Audio Input", obj);
+    }
+    obj = { type: "AUDIO_SET_INPUT_DEVICE", id, oldId: inputDeviceId };
+    importDefault(709).dispatch(obj);
   },
   setOutputDevice(id) {
     let _location;
@@ -439,16 +449,18 @@ obj = {
       obj = {};
     }
     ({ location: _location, analyticsLocations } = obj);
-    if (!callback3()) {
-      const outputDeviceId = store3.getOutputDeviceId();
-      if (null != _location) {
-        obj = { location: _location, analyticsLocations };
-        trackDeviceChanged(store3.getOutputDevices(), outputDeviceId, id, "Audio Output", obj);
-      }
-      obj = { type: "AUDIO_SET_OUTPUT_DEVICE", id, oldId: outputDeviceId };
-      importDefault(686).dispatch(obj);
-      const obj3 = importDefault(686);
+    if (typeof isNotSupported !== "find") {
+      HermesBuiltin.throwTypeError();
     }
+    const outputDeviceId = store2.getOutputDeviceId();
+    if (null != _location) {
+      obj = { location: null, analyticsLocations: null };
+      obj[0] = _location;
+      obj[1] = analyticsLocations;
+      trackDeviceChanged(store2.getOutputDevices(), outputDeviceId, id, "Audio Output", obj);
+    }
+    obj = { type: "AUDIO_SET_OUTPUT_DEVICE", id, oldId: outputDeviceId };
+    importDefault(709).dispatch(obj);
   },
   setVideoDevice(found) {
     let _location;
@@ -458,266 +470,380 @@ obj = {
       obj = {};
     }
     ({ location: _location, analyticsLocations } = obj);
-    if (!callback3()) {
-      const videoDeviceId = store3.getVideoDeviceId();
-      if (null != _location) {
-        obj = { location: _location, analyticsLocations };
-        trackDeviceChanged(store3.getVideoDevices(), videoDeviceId, found, "Video", obj);
-      }
-      obj = { type: "MEDIA_ENGINE_SET_VIDEO_DEVICE", id: found, oldId: videoDeviceId };
-      importDefault(686).dispatch(obj);
-      const obj3 = importDefault(686);
+    if (typeof isNotSupported !== "find") {
+      HermesBuiltin.throwTypeError();
     }
+    const videoDeviceId = store2.getVideoDeviceId();
+    if (null != _location) {
+      obj = { location: null, analyticsLocations: null };
+      obj[0] = _location;
+      obj[1] = analyticsLocations;
+      trackDeviceChanged(store2.getVideoDevices(), videoDeviceId, found, "Video", obj);
+    }
+    obj = { type: "MEDIA_ENGINE_SET_VIDEO_DEVICE", id: found, oldId: videoDeviceId };
+    importDefault(709).dispatch(obj);
   },
   setActiveInputProfile(inputProfile) {
     let obj = arg1;
     if (arg1 === undefined) {
       obj = {};
     }
-    const analyticsLocations = obj.analyticsLocations;
-    if (!callback3()) {
-      const activeInputProfile = store3.getActiveInputProfile();
-      let tmp7;
-      if (null != activeInputProfile) {
-        tmp7 = activeInputProfile;
-      }
-      importDefault(8818)("active_input_profile", inputProfile, tmp7, analyticsLocations);
-      const tmp3 = importDefault(8818);
-      obj = { type: "AUDIO_SET_ACTIVE_INPUT_PROFILE", inputProfile };
-      importDefault(686).dispatch(obj);
-      const obj2 = importDefault(686);
+    if (typeof isNotSupported !== "find") {
+      HermesBuiltin.throwTypeError();
     }
+    const activeInputProfile = store2.getActiveInputProfile();
+    importDefault(8842)("active_input_profile", inputProfile, activeInputProfile, obj.analyticsLocations);
+    const tmp = importDefault;
+    const tmp3 = importDefault(8842);
+    obj = { type: "AUDIO_SET_ACTIVE_INPUT_PROFILE", inputProfile };
+    importDefault(709).dispatch(obj);
   },
-  setEchoCancellation(closure_0, location) {
-    if (!callback3()) {
-      let obj = importDefault(686);
-      obj = { type: "AUDIO_SET_ECHO_CANCELLATION", enabled: closure_0, location };
-      obj.dispatch(obj);
+  setEchoCancellation(enabled, location) {
+    if (typeof isNotSupported !== "find") {
+      HermesBuiltin.throwTypeError();
     }
+    let obj = importDefault(709);
+    obj = { type: "AUDIO_SET_ECHO_CANCELLATION", enabled, location };
+    obj.dispatch(obj);
   },
-  setSidechainCompression(sidechainCompression) {
+  setSidechainCompression(enabled) {
     let obj = arg1;
     if (arg1 === undefined) {
       obj = {};
     }
-    const analyticsLocations = obj.analyticsLocations;
-    if (!callback3()) {
-      importDefault(8818)("stream_attenuation_enabled", sidechainCompression, store3.getSidechainCompression(), analyticsLocations);
-      const tmp3 = importDefault(8818);
-      obj = { type: "AUDIO_SET_SIDECHAIN_COMPRESSION", enabled: sidechainCompression };
-      importDefault(686).dispatch(obj);
-      const obj2 = importDefault(686);
+    if (typeof isNotSupported !== "find") {
+      HermesBuiltin.throwTypeError();
     }
+    importDefault(8842)("stream_attenuation_enabled", enabled, store2.getSidechainCompression(), obj.analyticsLocations);
+    const tmp = importDefault(8842);
+    obj = { type: "AUDIO_SET_SIDECHAIN_COMPRESSION", enabled };
+    importDefault(709).dispatch(obj);
   },
-  setSidechainCompressionStrength(sidechainCompressionStrength) {
+  setSidechainCompressionStrength(strength) {
     let obj = arg1;
     if (arg1 === undefined) {
       obj = {};
     }
-    const analyticsLocations = obj.analyticsLocations;
-    if (!callback3()) {
-      importDefault(8818)("stream_attenuation_strength", sidechainCompressionStrength, store3.getSidechainCompressionStrength(), analyticsLocations);
-      const tmp3 = importDefault(8818);
-      obj = { type: "AUDIO_SET_SIDECHAIN_COMPRESSION_STRENGTH", strength: sidechainCompressionStrength };
-      importDefault(686).dispatch(obj);
-      const obj2 = importDefault(686);
+    if (typeof isNotSupported !== "find") {
+      HermesBuiltin.throwTypeError();
     }
+    importDefault(8842)("stream_attenuation_strength", strength, store2.getSidechainCompressionStrength(), obj.analyticsLocations);
+    const tmp = importDefault(8842);
+    obj = { type: "AUDIO_SET_SIDECHAIN_COMPRESSION_STRENGTH", strength };
+    importDefault(709).dispatch(obj);
   },
   setLoopback(loopbackReason, enabled) {
-    if (!callback3()) {
-      let obj = importDefault(686);
-      obj = { type: "AUDIO_SET_LOOPBACK", loopbackReason, enabled };
-      obj.dispatch(obj);
+    if (typeof isNotSupported !== "find") {
+      HermesBuiltin.throwTypeError();
     }
+    let obj = importDefault(709);
+    obj = { type: "AUDIO_SET_LOOPBACK", loopbackReason, enabled };
+    obj.dispatch(obj);
   },
-  setNoiseSuppression(closure_0, location) {
-    if (!callback3()) {
-      let obj = importDefault(686);
-      obj = { type: "AUDIO_SET_NOISE_SUPPRESSION", enabled: closure_0, location };
-      obj.dispatch(obj);
+  setNoiseSuppression(enabled, location) {
+    if (typeof isNotSupported !== "find") {
+      HermesBuiltin.throwTypeError();
     }
+    let obj = importDefault(709);
+    obj = { type: "AUDIO_SET_NOISE_SUPPRESSION", enabled, location };
+    obj.dispatch(obj);
   },
   setNoiseCancellation(enabled, location) {
-    if (!callback3()) {
-      let obj = importDefault(686);
-      obj = { type: "AUDIO_SET_NOISE_CANCELLATION", enabled, location };
-      obj.dispatch(obj);
-      obj = { type: "AUDIO_SET_NOISE_SUPPRESSION", enabled: !enabled, location };
-      importDefault(686).dispatch(obj);
-      const obj3 = importDefault(686);
+    if (typeof isNotSupported !== "find") {
+      HermesBuiltin.throwTypeError();
     }
+    let obj = importDefault(709);
+    obj = { type: "AUDIO_SET_NOISE_CANCELLATION", enabled, location };
+    obj.dispatch(obj);
+    obj = { type: "AUDIO_SET_NOISE_SUPPRESSION", enabled: !enabled, location };
+    importDefault(709).dispatch(obj);
   },
   setAutomaticGainControl(enabled, location) {
-    if (!callback3()) {
-      let obj = importDefault(686);
-      obj = { type: "AUDIO_SET_AUTOMATIC_GAIN_CONTROL", enabled, location };
-      obj.dispatch(obj);
+    if (typeof isNotSupported !== "find") {
+      HermesBuiltin.throwTypeError();
     }
+    let obj = importDefault(709);
+    obj = { type: "AUDIO_SET_AUTOMATIC_GAIN_CONTROL", enabled, location };
+    obj.dispatch(obj);
   },
   setAttenuation(attenuation, attenuateWhileSpeakingSelf, attenuateWhileSpeakingOthers) {
-    if (!callback3()) {
-      attenuation = store3.getAttenuation();
-      attenuateWhileSpeakingSelf = store3.getAttenuateWhileSpeakingSelf();
-      attenuateWhileSpeakingOthers = store3.getAttenuateWhileSpeakingOthers();
-      if (attenuation !== attenuation) {
-        attenuateWhileSpeakingSelf = dependencyMap;
-        importDefault(8818)("global_attenuation_strength", attenuation, attenuation);
-        let obj = importDefault(686);
-        obj = { type: "AUDIO_SET_ATTENUATION", attenuation, attenuateWhileSpeakingSelf, attenuateWhileSpeakingOthers };
-        obj.dispatch(obj);
-      } else if (attenuateWhileSpeakingSelf === attenuateWhileSpeakingSelf) {
-        if (attenuateWhileSpeakingOthers !== attenuateWhileSpeakingOthers) {
-          importDefault(8818)("global_attenuation_for_other_speak_enabled", attenuateWhileSpeakingOthers, attenuateWhileSpeakingOthers);
-        }
-      }
-      importDefault(8818)("global_attenuation_for_self_speak_enabled", attenuateWhileSpeakingSelf, attenuateWhileSpeakingSelf);
+    if (typeof isNotSupported !== "find") {
+      HermesBuiltin.throwTypeError();
     }
+    attenuation = store2.getAttenuation();
+    attenuateWhileSpeakingSelf = store2.getAttenuateWhileSpeakingSelf();
+    attenuateWhileSpeakingOthers = store2.getAttenuateWhileSpeakingOthers();
+    if (attenuation !== attenuation) {
+      importDefault(8842)("global_attenuation_strength", attenuation, attenuation);
+    } else if (attenuateWhileSpeakingSelf !== attenuateWhileSpeakingSelf) {
+      importDefault(8842)("global_attenuation_for_self_speak_enabled", attenuateWhileSpeakingSelf, attenuateWhileSpeakingSelf);
+    } else if (attenuateWhileSpeakingOthers !== attenuateWhileSpeakingOthers) {
+      importDefault(8842)("global_attenuation_for_other_speak_enabled", attenuateWhileSpeakingOthers, attenuateWhileSpeakingOthers);
+    }
+    let obj = importDefault(709);
+    obj = { type: "AUDIO_SET_ATTENUATION", attenuation, attenuateWhileSpeakingSelf, attenuateWhileSpeakingOthers };
+    obj.dispatch(obj);
   },
   setQoS(enabled) {
-    if (!callback3()) {
-      importDefault(8818)("quality_of_service_packets_enabled", enabled, store3.getQoS());
-      let obj = importDefault(686);
-      obj = { type: "AUDIO_SET_QOS", enabled };
-      obj.dispatch(obj);
-      const tmp3 = importDefault(8818);
+    if (typeof isNotSupported !== "find") {
+      HermesBuiltin.throwTypeError();
     }
+    importDefault(8842)("quality_of_service_packets_enabled", enabled, store2.getQoS());
+    let obj = importDefault(709);
+    obj = { type: "AUDIO_SET_QOS", enabled };
+    obj.dispatch(obj);
   },
   reset() {
-    if (!callback3()) {
-      let obj = importDefault(686);
-      obj = { type: "AUDIO_RESET" };
-      obj.dispatch(obj);
+    if (typeof isNotSupported !== "find") {
+      HermesBuiltin.throwTypeError();
     }
+    importDefault(709).dispatch({ type: "AUDIO_RESET" });
   },
   setSilenceWarning(enabled) {
-    if (!callback3()) {
-      importDefault(8818)("silence_warning_enabled", enabled, store3.getEnableSilenceWarning());
-      let obj = importDefault(686);
-      obj = { type: "AUDIO_SET_DISPLAY_SILENCE_WARNING", enabled };
-      obj.dispatch(obj);
-      const tmp3 = importDefault(8818);
+    if (typeof isNotSupported !== "find") {
+      HermesBuiltin.throwTypeError();
     }
+    importDefault(8842)("silence_warning_enabled", enabled, store2.getEnableSilenceWarning());
+    let obj = importDefault(709);
+    obj = { type: "AUDIO_SET_DISPLAY_SILENCE_WARNING", enabled };
+    obj.dispatch(obj);
   },
-  setDebugLogging(enabled) {
-    let closure_0 = enabled;
-    // CreateGeneratorClosureLongIndex (0x67)
-    return callback(tmp)();
+  setDebugLogging(arg0) {
+    let closure_0 = arg0;
+    return callback(function*() {
+      if (dependencyMap === 2) {
+        dependencyMap = 3;
+        HermesBuiltin.throwTypeError();
+      } else if (tmp4 === 3) {
+        if (arg0 === 1) {
+          throw arg1;
+        } else if (arg0 === 2) {
+          let obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
+        } else {
+          return { value: "HermesInternal", done: null };
+        }
+      } else {
+        try {
+          dependencyMap = 2;
+          if (0 === v0) {
+            if (arg0 === 1) {
+              dependencyMap = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              dependencyMap = 3;
+              obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            } else {
+              let closure_0 = tmp2;
+              outer1_16();
+              v0 = 1;
+              dependencyMap = 1;
+              const obj1 = { value: null, done: false };
+              obj1[0] = v0(8842)("debug_logging_enabled", outer1_0, outer1_6.getDebugLogging());
+              return obj1;
+            }
+          } else if (arg0 === 1) {
+            dependencyMap = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            dependencyMap = 3;
+            const obj2 = { value: null, done: true };
+            obj2[0] = arg1;
+            return obj2;
+          } else {
+            obj = v0(709);
+            const obj3 = { type: "AUDIO_SET_DEBUG_LOGGING", enabled: null };
+            obj3[1] = closure_0;
+            obj.dispatch(obj3);
+            dependencyMap = 3;
+            return { value: "HermesInternal", done: null };
+          }
+        } catch (tmp18) {
+          dependencyMap = tmp;
+          throw tmp18;
+        }
+      }
+    })();
   },
   setVideoHook(enabled) {
-    if (!callback3()) {
-      importDefault(8818)("video_hook_enabled", enabled, store3.getVideoHook());
-      let obj = importDefault(686);
-      obj = { type: "MEDIA_ENGINE_SET_VIDEO_HOOK", enabled };
-      obj.dispatch(obj);
-      const tmp3 = importDefault(8818);
+    if (typeof isNotSupported !== "find") {
+      HermesBuiltin.throwTypeError();
     }
+    importDefault(8842)("video_hook_enabled", enabled, store2.getVideoHook());
+    let obj = importDefault(709);
+    obj = { type: "MEDIA_ENGINE_SET_VIDEO_HOOK", enabled };
+    obj.dispatch(obj);
   },
   setExperimentalSoundshare(enabled) {
-    if (!callback3()) {
-      importDefault(8818)("experimental_soundshare_enabled", enabled, store3.getExperimentalSoundshare());
-      let obj = importDefault(686);
-      obj = { type: "MEDIA_ENGINE_SET_EXPERIMENTAL_SOUNDSHARE", enabled };
-      obj.dispatch(obj);
-      const tmp3 = importDefault(8818);
+    if (typeof isNotSupported !== "find") {
+      HermesBuiltin.throwTypeError();
     }
+    importDefault(8842)("experimental_soundshare_enabled", enabled, store2.getExperimentalSoundshare());
+    let obj = importDefault(709);
+    obj = { type: "MEDIA_ENGINE_SET_EXPERIMENTAL_SOUNDSHARE", enabled };
+    obj.dispatch(obj);
   },
   setUseSystemScreensharePicker(enabled) {
-    if (!callback3()) {
-      importDefault(8818)("system_screenshare_picker_enabled", enabled, store3.getUseSystemScreensharePicker());
-      let obj = importDefault(686);
-      obj = { type: "MEDIA_ENGINE_SET_USE_SYSTEM_SCREENSHARE_PICKER", enabled };
-      obj.dispatch(obj);
-      const tmp3 = importDefault(8818);
+    if (typeof isNotSupported !== "find") {
+      HermesBuiltin.throwTypeError();
     }
+    importDefault(8842)("system_screenshare_picker_enabled", enabled, store2.getUseSystemScreensharePicker());
+    let obj = importDefault(709);
+    obj = { type: "MEDIA_ENGINE_SET_USE_SYSTEM_SCREENSHARE_PICKER", enabled };
+    obj.dispatch(obj);
   },
   setAudioSubsystem(arg0) {
     let closure_0 = arg0;
-    // CreateGeneratorClosureLongIndex (0x67)
-    return callback(tmp)();
+    return callback(function*() {
+      if (dependencyMap === 2) {
+        dependencyMap = 3;
+        HermesBuiltin.throwTypeError();
+      } else if (tmp4 === 3) {
+        if (arg0 === 1) {
+          throw arg1;
+        } else if (arg0 === 2) {
+          let obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
+        } else {
+          return { value: "HermesInternal", done: null };
+        }
+      } else {
+        try {
+          dependencyMap = 2;
+          if (0 === v0) {
+            if (arg0 === 1) {
+              dependencyMap = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              dependencyMap = 3;
+              obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            } else {
+              let closure_0 = tmp2;
+              outer1_16();
+              v0 = 1;
+              dependencyMap = 1;
+              const obj1 = { value: null, done: false };
+              obj1[0] = v0(8842)("audio_subsystem", outer1_0, outer1_6.getAudioSubsystem());
+              return obj1;
+            }
+          } else if (arg0 === 1) {
+            dependencyMap = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            dependencyMap = 3;
+            const obj2 = { value: null, done: true };
+            obj2[0] = arg1;
+            return obj2;
+          } else {
+            obj = v0(709);
+            const obj3 = { type: "AUDIO_SET_SUBSYSTEM", subsystem: null };
+            obj3[1] = closure_0;
+            obj.dispatch(obj3);
+            dependencyMap = 3;
+            return { value: "HermesInternal", done: null };
+          }
+        } catch (tmp18) {
+          dependencyMap = tmp;
+          throw tmp18;
+        }
+      }
+    })();
   },
   setVideoEnabled(enabled) {
-    let obj = require(8819) /* _getFilterBlob */;
+    let obj = require(8843) /* _getFilterBlob */;
     const result = obj.applyInitialVideoBackgroundOption();
     obj = { type: "MEDIA_ENGINE_SET_VIDEO_ENABLED", enabled };
-    importDefault(686).dispatch(obj);
+    importDefault(709).dispatch(obj);
   },
-  setGoLiveSource(closure_1, STREAM) {
-    let qualityOptions;
-    if (null != closure_1) {
-      qualityOptions = closure_1.qualityOptions;
+  setGoLiveSource(qualityOptions) {
+    qualityOptions = undefined;
+    if (qualityOptions != null) {
+      qualityOptions = qualityOptions.qualityOptions;
     }
     if (null != qualityOptions) {
-      let obj = require(8827) /* isPremiumRequirement */;
-      const preset = closure_1.qualityOptions.preset;
-      const resolution = closure_1.qualityOptions.resolution;
-      const frameRate = closure_1.qualityOptions.frameRate;
-      const desktopSettings = closure_1.desktopSettings;
+      let obj = require(8851) /* isPremiumResolution */;
+      const preset = qualityOptions.qualityOptions.preset;
+      const resolution = qualityOptions.qualityOptions.resolution;
+      const frameRate = qualityOptions.qualityOptions.frameRate;
+      const desktopSettings = qualityOptions.desktopSettings;
       let sound;
-      if (null != desktopSettings) {
+      if (desktopSettings != null) {
         sound = desktopSettings.sound;
       }
       const result = obj.trackStreamSettingsUpdate(preset, resolution, frameRate, sound);
     }
-    obj = { type: "MEDIA_ENGINE_SET_GO_LIVE_SOURCE", settings: closure_1 };
-    importDefault(686).dispatch(obj);
+    obj = { type: "MEDIA_ENGINE_SET_GO_LIVE_SOURCE", settings: qualityOptions };
+    importDefault(709).dispatch(obj);
   },
-  setAecDump(aecDumpEnabled) {
-    if (!callback3()) {
-      importDefault(8818)("diagnostic_audio_recording_enabled", aecDumpEnabled, store3.getAecDump());
-      let obj = importDefault(686);
-      obj = { type: "MEDIA_ENGINE_SET_AEC_DUMP", enabled: aecDumpEnabled };
-      obj.dispatch(obj);
-      const tmp3 = importDefault(8818);
+  setAecDump(enabled) {
+    if (typeof isNotSupported !== "find") {
+      HermesBuiltin.throwTypeError();
     }
+    importDefault(8842)("diagnostic_audio_recording_enabled", enabled, store2.getAecDump());
+    let obj = importDefault(709);
+    obj = { type: "MEDIA_ENGINE_SET_AEC_DUMP", enabled };
+    obj.dispatch(obj);
   },
   interact() {
-    if (!callback3()) {
-      importDefault(686).dispatch({ type: "MEDIA_ENGINE_INTERACTION_REQUIRED", required: false });
-      const obj = importDefault(686);
+    if (typeof isNotSupported !== "find") {
+      HermesBuiltin.throwTypeError();
     }
+    importDefault(709).dispatch({ type: "MEDIA_ENGINE_INTERACTION_REQUIRED", required: false });
   },
   setEnableHardwareMuteNotice(enabled) {
-    if (!callback3()) {
-      let obj = importDefault(686);
-      obj = { type: "MEDIA_ENGINE_SET_ENABLE_HARDWARE_MUTE_NOTICE", enabled };
-      obj.dispatch(obj);
+    if (typeof isNotSupported !== "find") {
+      HermesBuiltin.throwTypeError();
     }
+    let obj = importDefault(709);
+    obj = { type: "MEDIA_ENGINE_SET_ENABLE_HARDWARE_MUTE_NOTICE", enabled };
+    obj.dispatch(obj);
   },
   setKrispSuppressionLevel(level) {
-    if (!callback3()) {
-      let obj = importDefault(686);
-      obj = { type: "AUDIO_SET_KRISP_SUPPRESSION_LEVEL", level };
-      obj.dispatch(obj);
+    if (typeof isNotSupported !== "find") {
+      HermesBuiltin.throwTypeError();
     }
+    let obj = importDefault(709);
+    obj = { type: "AUDIO_SET_KRISP_SUPPRESSION_LEVEL", level };
+    obj.dispatch(obj);
   },
   setKrispModelOverride(model) {
-    const self = this;
-    if (!callback3()) {
-      let obj = importDefault(686);
-      obj = { type: "AUDIO_SET_KRISP_MODEL_OVERRIDE", model };
-      obj.dispatch(obj);
-      if (store3.getNoiseCancellation()) {
-        self.setNoiseCancellation(false);
-        self.setNoiseCancellation(true);
-      }
+    if (typeof isNotSupported !== "find") {
+      HermesBuiltin.throwTypeError();
+    }
+    let obj = importDefault(709);
+    obj = { type: "AUDIO_SET_KRISP_MODEL_OVERRIDE", model };
+    obj.dispatch(obj);
+    if (store2.getNoiseCancellation()) {
+      const self = this;
+      this.setNoiseCancellation(false);
+      this.setNoiseCancellation(true);
     }
   },
-  setNoiseCancellationEnableStats(enabled) {
-    callback3();
+  setNoiseCancellationEnableStats(arg0) {
+    if (typeof isNotSupported !== "find") {
+      HermesBuiltin.throwTypeError();
+    }
   },
   setOpenH264Enabled(enabled) {
-    if (!callback3()) {
-      let obj = importDefault(686);
-      obj = { type: "MEDIA_ENGINE_SET_OPENH264_ENABLED", enabled };
-      obj.dispatch(obj);
+    if (typeof isNotSupported !== "find") {
+      HermesBuiltin.throwTypeError();
     }
+    let obj = importDefault(709);
+    obj = { type: "MEDIA_ENGINE_SET_OPENH264_ENABLED", enabled };
+    obj.dispatch(obj);
   },
   resetMediaEngineSettings(overrides) {
-    let obj = importDefault(686);
+    let obj = importDefault(709);
     obj = { type: "MEDIA_ENGINE_RESET_SETTINGS", overrides };
     return obj.dispatch(obj);
   }
 };
-let result = require("_isNativeReflectConstruct").fileFinishedImporting("actions/AudioActionCreators.tsx");
+let result = require("ensureGuildLoaded").fileFinishedImporting("actions/AudioActionCreators.tsx");
 
 export default obj;

@@ -1,17 +1,17 @@
-// Module ID: 13845
-// Function ID: 106003
+// Module ID: 13866
+// Function ID: 13867
 // Name: updateDmSafetyAlertsSetting
-// Dependencies: [1331, 1313, 2]
+// Dependencies: [1355, 1337, 2]
 // Exports: updateDmSafetyAlertsSetting
 
-// Module 13845 (updateDmSafetyAlertsSetting)
+// Module 13866 (updateDmSafetyAlertsSetting)
 const result = require("set").fileFinishedImporting("modules/self_mod/inappropriate_conversation/updateDmSafetyAlertsSetting.tsx");
 
 export const updateDmSafetyAlertsSetting = function updateDmSafetyAlertsSetting(arg0) {
   const _require = arg0;
-  const PreloadedUserSettingsActionCreators = _require(1331).PreloadedUserSettingsActionCreators;
+  const PreloadedUserSettingsActionCreators = _require(1355).PreloadedUserSettingsActionCreators;
   return PreloadedUserSettingsActionCreators.updateAsync("privacy", (arg0) => {
     const BoolValue = callback(outer1_1[1]).BoolValue;
     arg0.inappropriateConversationWarnings = BoolValue.create({ value: callback });
-  }, _require(1331).UserSettingsDelay.INFREQUENT_USER_ACTION);
+  }, _require(1355).UserSettingsDelay.INFREQUENT_USER_ACTION);
 };

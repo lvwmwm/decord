@@ -1,41 +1,44 @@
-// Module ID: 7945
-// Function ID: 63091
+// Module ID: 7970
+// Function ID: 7971
 // Name: SolidCutout
-// Dependencies: [31, 27, 33, 7946, 7948, 4026, 2]
+// Dependencies: [19, 17, 21, 7971, 7973, 4050, 2]
 // Exports: default
 
-// Module 7945 (SolidCutout)
-import "result";
+// Module 7970 (SolidCutout)
+import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
 import animatedComponent from "__INTERNAL_VIEW_CONFIG";
-import importDefaultResult from "module_4026";
+import importDefaultResult from "module_4050";
 
 let StyleSheet;
-let closure_3;
-let closure_4;
-let closure_5;
+let c3;
+let c4;
+let c5;
 const require = arg1;
 function SolidCutout(arg0) {
   let backgroundColor;
   let cutout;
   ({ backgroundColor, cutout } = arg0);
-  const style = [closure_8.solidCutout];
+  const style = [closure_10.solidCutout];
   if (cutout.shape === obj.Circle) {
-    obj = { backgroundColor, borderRadius: cutout.size / 2 };
-    ({ size: obj.height, size: obj.width, x: obj.left, y: obj.top } = cutout);
+    obj = { backgroundColor: null, borderRadius: null, height: null, width: null, left: null, top: null };
+    obj[0] = backgroundColor;
+    obj[1] = cutout.size / 2;
+    ({ size: obj[2], size: obj[3], x: obj[4], y: obj[5] } = cutout);
     style.push(obj);
   } else {
-    obj = { backgroundColor };
-    ({ cornerRadius: obj2.borderRadius, height: obj2.height, width: obj2.width, x: obj2.left, y: obj2.top } = cutout);
+    obj = { backgroundColor: null, borderRadius: null, height: null, width: null, left: null, top: null };
+    obj[0] = backgroundColor;
+    ({ cornerRadius: obj2[1], height: obj2[2], width: obj2[3], x: obj2[4], y: obj2[5] } = cutout);
     style.push(obj);
     if (null != cutout.rotationDegrees) {
-      obj = {};
-      const obj1 = {};
+      obj = { transform: null };
+      const obj1 = { rotate: null };
       const _HermesInternal = HermesInternal;
-      obj1.rotate = "" + cutout.rotationDegrees + "deg";
+      obj1[0] = "" + cutout.rotationDegrees + "deg";
       const items1 = [obj1];
-      obj.transform = items1;
+      obj[0] = items1;
       style.push(obj);
     }
   }
@@ -45,17 +48,17 @@ function SolidCutoutOverlay(arg0) {
   let cutouts;
   let require;
   ({ backgroundColor: require, cutouts } = arg0);
-  return callback(closure_3, { pointerEvents: "none", style: closure_8.solidCutoutContainer, children: cutouts.map((cutout) => outer1_4(outer1_9, { backgroundColor: closure_0, cutout }, arg1)) });
+  return callback(closure_3, { pointerEvents: "none", style: closure_10.solidCutoutContainer, children: cutouts.map((cutout) => outer1_4(outer1_8, { backgroundColor: closure_0, cutout }, arg1)) });
 }
-({ StyleSheet, View: closure_3 } = get_ActivityIndicator);
-({ jsx: closure_4, jsxs: closure_5 } = jsxProd);
+({ StyleSheet, View: c3 } = get_ActivityIndicator);
+({ jsx: c4, jsxs: c5 } = jsxProd);
 let obj = { Circle: "circle", RoundedRect: "rounded-rect" };
 let closure_7 = [];
-obj = {};
+obj = { solidCutoutContainer: null, solidCutout: null };
 obj = {};
 let merged = Object.assign(StyleSheet.absoluteFillObject);
-obj.solidCutoutContainer = obj;
-obj.solidCutout = { position: "absolute" };
+obj[0] = obj;
+obj[1] = { position: "absolute" };
 const styles = StyleSheet.create(obj);
 const result = require("jsxProd").fileFinishedImporting("design/components/Icon/native/ClipView.tsx");
 
@@ -63,13 +66,12 @@ export default function ClipView(cutouts) {
   let children;
   let style;
   cutouts = cutouts.cutouts;
-  let obj = { children: 0, cutouts: 0, style: 0 };
   ({ children, style } = cutouts);
-  Object.setPrototypeOf(null);
-  const merged = Object.assign(cutouts, obj);
-  const cutoutBackgroundColor = require(7946) /* useCutoutBackgroundColor */.useCutoutBackgroundColor();
-  let tmp4 = cutouts;
-  let tmp5 = null;
+  const merged = Object.assign(cutouts, Object.create(null));
+  let obj = require(7971) /* useCutoutBackgroundColor */;
+  const cutoutBackgroundColor = obj.useCutoutBackgroundColor();
+  let tmp4 = null;
+  let tmp5 = cutouts;
   if (null != cutoutBackgroundColor) {
     let tmp7 = null != cutouts;
     if (tmp7) {
@@ -77,21 +79,22 @@ export default function ClipView(cutouts) {
     }
     let tmp8 = null;
     if (tmp7) {
-      obj = { backgroundColor: cutoutBackgroundColor, cutouts };
+      obj = { backgroundColor: null, cutouts: null };
+      obj[0] = cutoutBackgroundColor;
+      obj[1] = cutouts;
       tmp8 = callback(SolidCutoutOverlay, obj);
     }
-    tmp5 = tmp8;
-    tmp4 = closure_7;
+    tmp4 = tmp8;
+    tmp5 = closure_7;
     const tmp6 = closure_7;
   }
   obj = {};
-  const obj2 = require(7946) /* useCutoutBackgroundColor */;
   const merged1 = Object.assign(merged);
-  obj["cutouts"] = tmp4;
-  obj["style"] = style;
-  const items = [children, tmp5];
-  obj["children"] = items;
-  return callback2(importDefault(7948), obj);
+  obj.cutouts = tmp5;
+  obj.style = style;
+  const items = [children, tmp4];
+  obj.children = items;
+  return callback2(importDefault(7973), obj);
 };
 export const ClipViewAnimated = animatedComponent;
 export const CutoutShape = obj;

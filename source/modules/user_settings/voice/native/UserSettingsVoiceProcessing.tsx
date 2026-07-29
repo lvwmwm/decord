@@ -1,154 +1,128 @@
-// Module ID: 10762
-// Function ID: 83495
+// Module ID: 10786
+// Function ID: 10787
 // Name: VoiceProcessingOptions
-// Dependencies: [31, 27, 4212, 33, 4165, 689, 566, 10763, 10764, 8814, 7632, 1212, 7631, 4161, 10767, 10741, 5537, 2]
+// Dependencies: [19, 17, 4236, 21, 4189, 712, 589, 10787, 10788, 8838, 7655, 1236, 7654, 4185, 10791, 10765, 5555, 2]
 // Exports: default
 
-// Module 10762 (VoiceProcessingOptions)
-import "result";
-import { View } from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 10786 (VoiceProcessingOptions)
+import "noop";
+import { View } from "set";
+import _detectH265HardwareDecode from "_detectH265HardwareDecode";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_5;
+let c5;
 let closure_6;
-let closure_7;
+let error;
 const require = arg1;
 class VoiceProcessingOptions {
   constructor() {
-    tmp = c8();
+    krisp = Fragment();
+    EUNgko = closure_0;
+    tmp = closure_2;
     obj = require("initialize");
     items = [];
-    items[0] = c4;
-    stateFromStores = obj.useStateFromStores(items, () => outer1_4.isNoiseCancellationSupported());
-    obj2 = require("getSelectedNoiseSuppressionOption");
+    items[0] = View;
+    stateFromStores = obj.useStateFromStores(items, () => _detectH265HardwareDecode.isNoiseCancellationSupported());
+    obj2 = require("handleAutomaticGainControlChange");
     selectedNoiseSuppressionOption = obj2.useSelectedNoiseSuppressionOption();
     obj3 = require("getNoiseCancellationDeferredToSystem");
     noiseCancellationDeferredToSystem = obj3.useNoiseCancellationDeferredToSystem();
     if (stateFromStores) {
-      obj = {};
-      obj.style = tmp.optionsParentContainer;
-      tmp11 = jsxs;
-      tmp12 = closure_0;
-      tmp13 = closure_2;
-      num4 = 10;
-      tmp9 = jsxs;
-      tmp10 = View;
-      obj1 = {};
-      obj1.value = selectedNoiseSuppressionOption;
-      obj1.onChange = function noiseCancellationChanged(arg0) {
-        outer1_1(outer1_2[9]).setNoiseCancellation(arg0 === outer1_0(outer1_2[7]).NoiseSuppressionOpt.KRISP);
-        const obj = outer1_1(outer1_2[9]);
-        outer1_1(outer1_2[9]).setNoiseSuppression(arg0 === outer1_0(outer1_2[7]).NoiseSuppressionOpt.STANDARD);
+      tmp6 = jsxs;
+      tmp7 = View;
+      obj = { style: null, children: null };
+      obj[0] = krisp.optionsParentContainer;
+      obj1 = { value: null, onChange: null, title: null, hasIcons: false, children: null };
+      obj1[0] = selectedNoiseSuppressionOption;
+      obj1[1] = function noiseCancellationChanged(arg0) {
+        callback2(8838).setNoiseCancellation(arg0 === callback(10787).NoiseSuppressionOpt.KRISP);
+        const obj = callback2(8838);
+        callback2(8838).setNoiseSuppression(arg0 === callback(10787).NoiseSuppressionOpt.STANDARD);
       };
-      num5 = 11;
       intl3 = require("getSystemLocale").intl;
-      obj1.title = intl3.string(require("getSystemLocale").t.t8Qhib);
-      flag2 = false;
-      obj1.hasIcons = false;
-      tmp14 = jsx;
-      num6 = 12;
-      obj2 = {};
-      obj2.value = require("getSelectedNoiseSuppressionOption").NoiseSuppressionOpt.KRISP;
+      obj1[2] = intl3.string(require("getSystemLocale").t.t8Qhib);
+      tmp8 = jsx;
+      obj2 = { value: null, label: null, disabled: null };
+      obj2[0] = require("handleAutomaticGainControlChange").NoiseSuppressionOpt.KRISP;
       intl4 = require("getSystemLocale").intl;
-      obj2.label = intl4.string(require("getSystemLocale").t.rdoNzt);
-      obj2.disabled = noiseCancellationDeferredToSystem;
+      obj2[1] = intl4.string(require("getSystemLocale").t.rdoNzt);
+      obj2[2] = noiseCancellationDeferredToSystem;
       items1 = [, , ];
       items1[0] = jsx(require("TableRadioRow").TableRadioRow, obj2);
-      tmp15 = jsx;
-      obj3 = {};
-      obj3.disabled = noiseCancellationDeferredToSystem;
-      obj3.value = require("getSelectedNoiseSuppressionOption").NoiseSuppressionOpt.STANDARD;
+      obj3 = { disabled: null, value: null, label: null };
+      obj3[0] = noiseCancellationDeferredToSystem;
+      obj3[1] = require("handleAutomaticGainControlChange").NoiseSuppressionOpt.STANDARD;
       intl5 = require("getSystemLocale").intl;
-      obj3.label = intl5.string(require("getSystemLocale").t.qXeYHw);
+      obj3[2] = intl5.string(require("getSystemLocale").t.qXeYHw);
       items1[1] = jsx(require("TableRadioRow").TableRadioRow, obj3);
-      tmp16 = jsx;
-      obj4 = {};
-      obj4.disabled = noiseCancellationDeferredToSystem;
-      obj4.value = require("getSelectedNoiseSuppressionOption").NoiseSuppressionOpt.NONE;
+      obj4 = { disabled: null, value: null, label: null };
+      obj4[0] = noiseCancellationDeferredToSystem;
+      obj4[1] = require("handleAutomaticGainControlChange").NoiseSuppressionOpt.NONE;
       intl6 = require("getSystemLocale").intl;
-      obj4.label = intl6.string(require("getSystemLocale").t.wkYAlz);
+      obj4[2] = intl6.string(require("getSystemLocale").t.wkYAlz);
       items1[2] = jsx(require("TableRadioRow").TableRadioRow, obj4);
-      obj1.children = items1;
+      obj1[4] = items1;
       items2 = [, ];
       items2[0] = jsxs(require("context").TableRadioGroup, obj1);
-      obj5 = {};
-      obj5.style = tmp.optionsDescriptionContainer;
-      tmp19 = jsx;
-      num7 = 13;
-      tmp17 = jsxs;
-      tmp18 = View;
+      obj5 = { style: null, children: null };
+      obj5[0] = krisp.optionsDescriptionContainer;
       Text = require("Text").Text;
-      obj6 = { variant: "text-xs/medium", color: "text-muted" };
-      tmp20 = closure_0;
-      tmp21 = closure_2;
       intl7 = require("getSystemLocale").intl;
       if (noiseCancellationDeferredToSystem) {
-        obj7 = {};
-        obj7.onSettingsClick = function onSettingsClick() {
-          const mediaEngine = outer1_4.getMediaEngine();
+        EUNgko = require("getSystemLocale").t.EUNgko;
+        obj6 = { onSettingsClick: null };
+        obj6[0] = function onSettingsClick() {
+          const mediaEngine = _detectH265HardwareDecode.getMediaEngine();
           const result = mediaEngine.showSystemCaptureConfigurationUI("microphone_modes");
         };
-        formatResult = intl7.format(require("getSystemLocale").t.EUNgko, obj7);
+        formatResult = intl7.format(EUNgko, obj6);
       } else {
         formatResult = intl7.string(require("getSystemLocale").t.k6h1F4);
       }
-      obj6.children = formatResult;
-      tmp19Result = tmp19(Text, obj6);
-      obj6 = [, ];
-      obj6[0] = tmp19Result;
-      tmp24 = jsx;
-      tmp19 = View;
-      obj8 = {};
-      obj8.style = tmp.krisp;
-      tmp21 = jsx;
-      tmp25 = closure_1;
-      tmp20 = closure_2;
-      num8 = 14;
-      tmp = require("handleKrispLinkPressed");
-      obj8.children = jsx(tmp, {});
-      Text = jsx(View, obj8);
-      obj6[1] = Text;
-      obj5.children = obj6;
-      obj5 = tmp17(tmp18, obj5);
+      obj7 = { variant: "text-xs/medium", color: "text-muted", children: null };
+      obj7[2] = formatResult;
+      items3 = [, ];
+      items3[0] = tmp8(Text, obj7);
+      obj8 = { style: null, children: null };
+      krisp = krisp.krisp;
+      obj8[0] = krisp;
+      tmp10 = closure_1;
+      tmp = tmp8(require("handleKrispLinkPressed"), {});
+      obj8[1] = tmp;
+      Text = tmp8(tmp7, obj8);
+      items3[1] = Text;
+      obj5[1] = items3;
+      obj5 = tmp6(tmp7, obj5);
       items2[1] = obj5;
-      obj.children = items2;
-      tmp9Result = tmp9(tmp10, obj);
+      obj[1] = items2;
+      tmp6Result = tmp6(tmp7, obj);
     } else {
       tmp5 = jsx;
-      tmp6 = closure_0;
-      tmp7 = closure_2;
-      num = 15;
-      obj9 = {};
-      flag = false;
-      obj9.hasIcons = false;
-      tmp8 = jsx;
-      num2 = 16;
-      obj10 = {};
-      num3 = 11;
+      obj9 = { hasIcons: false, children: null };
+      obj10 = { label: null, subLabel: null, value: null, onValueChange: null };
       intl = require("getSystemLocale").intl;
-      obj10.label = intl.string(require("getSystemLocale").t.t8Qhib);
+      obj10[0] = intl.string(require("getSystemLocale").t.t8Qhib);
       intl2 = require("getSystemLocale").intl;
-      obj10.subLabel = intl2.string(require("getSystemLocale").t.najZCV);
-      obj10.value = selectedNoiseSuppressionOption === require("getSelectedNoiseSuppressionOption").NoiseSuppressionOpt.STANDARD;
-      obj10.onValueChange = function onValueChange(arg0) {
-        const NoiseSuppressionOpt = outer1_0(outer1_2[7]).NoiseSuppressionOpt;
-        return outer1_0(outer1_2[7]).handleNoiseSuppressionChange(arg0 ? NoiseSuppressionOpt.STANDARD : NoiseSuppressionOpt.NONE);
+      obj10[1] = intl2.string(require("getSystemLocale").t.najZCV);
+      obj10[2] = selectedNoiseSuppressionOption === require("handleAutomaticGainControlChange").NoiseSuppressionOpt.STANDARD;
+      obj10[3] = function onValueChange(arg0) {
+        const NoiseSuppressionOpt = callback(10787).NoiseSuppressionOpt;
+        return callback(10787).handleNoiseSuppressionChange(arg0 ? NoiseSuppressionOpt.STANDARD : NoiseSuppressionOpt.NONE);
       };
-      obj9.children = jsx(require("TableSwitchRow").TableSwitchRow, obj10);
+      obj9[1] = jsx(require("TableSwitchRow").TableSwitchRow, obj10);
       return jsx(require("UserSettingsVoice").UserSettingsTableRowGroup, obj9);
     }
     return;
   }
 }
-({ jsx: closure_5, jsxs: closure_6, Fragment: closure_7 } = jsxProd);
-_createForOfIteratorHelperLoose = { optionsParentContainer: { marginTop: 12 } };
-_createForOfIteratorHelperLoose = { paddingTop: require("_createForOfIteratorHelperLoose").space.PX_4, gap: require("_createForOfIteratorHelperLoose").space.PX_4 };
-_createForOfIteratorHelperLoose.optionsDescriptionContainer = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.krisp = { marginStart: -20 };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/user_settings/voice/native/UserSettingsVoiceProcessing.tsx");
+({ jsx: c5, jsxs: closure_6, Fragment: error } = jsxProd);
+createCacheKey = { optionsParentContainer: { marginTop: 12 }, optionsDescriptionContainer: null, krisp: null };
+createCacheKey = { paddingTop: require("Themes").space.PX_4, gap: require("Themes").space.PX_4 };
+createCacheKey[1] = createCacheKey;
+createCacheKey[2] = { marginStart: -20 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let result = require("_detectH265HardwareDecode").fileFinishedImporting("modules/user_settings/voice/native/UserSettingsVoiceProcessing.tsx");
 
 export default function UserSettingsVoiceProcessing() {
   let advancedVoiceActivitySupported;
@@ -156,50 +130,47 @@ export default function UserSettingsVoiceProcessing() {
   let echoCancellation;
   let require;
   let vadUseKrisp;
-  let obj = require(566) /* initialize */;
-  const items = [_isNativeReflectConstruct];
-  const stateFromStoresObject = obj.useStateFromStoresObject(items, () => ({ echoCancellation: outer1_4.getEchoCancellation(), advancedVoiceActivitySupported: outer1_4.isAdvancedVoiceActivitySupported(), automaticGainControl: outer1_4.getAutomaticGainControl(), inputMode: outer1_4.getMode(), vadUseKrisp: outer1_4.getModeOptions().vadUseKrisp }));
+  let obj = require(589) /* initialize */;
+  const items = [_detectH265HardwareDecode];
+  const stateFromStoresObject = obj.useStateFromStoresObject(items, () => ({ echoCancellation: store.getEchoCancellation(), advancedVoiceActivitySupported: store.isAdvancedVoiceActivitySupported(), automaticGainControl: store.getAutomaticGainControl(), inputMode: store.getMode(), vadUseKrisp: store.getModeOptions().vadUseKrisp }));
   ({ advancedVoiceActivitySupported, inputMode: require } = stateFromStoresObject);
-  obj = {};
   ({ echoCancellation, automaticGainControl, vadUseKrisp } = stateFromStoresObject);
-  obj = {};
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj.title = intl.string(require(1212) /* getSystemLocale */.t["6I6GUv"]);
-  obj.hasIcons = false;
-  const obj1 = {};
-  const intl2 = require(1212) /* getSystemLocale */.intl;
-  obj1.label = intl2.string(require(1212) /* getSystemLocale */.t.iWTwu6);
-  obj1.value = echoCancellation;
-  obj1.onValueChange = require(10763) /* getSelectedNoiseSuppressionOption */.handleEchoCancellationChange;
-  obj.children = callback(require(5537) /* TableSwitchRow */.TableSwitchRow, obj1);
-  const items1 = [callback(require(10741) /* UserSettingsVoice */.UserSettingsTableRowGroup, obj), callback(VoiceProcessingOptions, {}), ];
-  const obj2 = { hasIcons: false };
-  const obj3 = {};
-  const intl3 = require(1212) /* getSystemLocale */.intl;
-  obj3.label = intl3.string(require(1212) /* getSystemLocale */.t.cUMdH0);
-  const intl4 = require(1212) /* getSystemLocale */.intl;
-  obj3.subLabel = intl4.string(require(1212) /* getSystemLocale */.t["6EjbvA"]);
-  obj3.value = automaticGainControl;
-  obj3.onValueChange = require(10763) /* getSelectedNoiseSuppressionOption */.handleAutomaticGainControlChange;
-  const items2 = [callback(require(5537) /* TableSwitchRow */.TableSwitchRow, obj3), ];
+  obj = { title: null, hasIcons: false, children: null };
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj[0] = intl.string(require(1236) /* getSystemLocale */.t["6I6GUv"]);
+  obj = { label: null, value: null, onValueChange: null };
+  const intl2 = require(1236) /* getSystemLocale */.intl;
+  obj[0] = intl2.string(require(1236) /* getSystemLocale */.t.iWTwu6);
+  obj[1] = echoCancellation;
+  obj[2] = require(10787) /* handleAutomaticGainControlChange */.handleEchoCancellationChange;
+  obj[2] = callback(require(5555) /* TableSwitchRow */.TableSwitchRow, obj);
+  const items1 = [callback(require(10765) /* UserSettingsVoice */.UserSettingsTableRowGroup, obj), callback(VoiceProcessingOptions, {}), ];
+  const obj1 = { label: null, subLabel: null, value: null, onValueChange: null };
+  const intl3 = require(1236) /* getSystemLocale */.intl;
+  obj1[0] = intl3.string(require(1236) /* getSystemLocale */.t.cUMdH0);
+  const intl4 = require(1236) /* getSystemLocale */.intl;
+  obj1[1] = intl4.string(require(1236) /* getSystemLocale */.t["6EjbvA"]);
+  obj1[2] = automaticGainControl;
+  obj1[3] = require(10787) /* handleAutomaticGainControlChange */.handleAutomaticGainControlChange;
+  const items2 = [callback(require(5555) /* TableSwitchRow */.TableSwitchRow, obj1), ];
   if (advancedVoiceActivitySupported) {
-    const obj4 = {};
-    const intl5 = require(1212) /* getSystemLocale */.intl;
-    obj4.label = intl5.string(require(1212) /* getSystemLocale */.t.BbESsg);
-    const intl6 = require(1212) /* getSystemLocale */.intl;
-    obj4.subLabel = intl6.string(require(1212) /* getSystemLocale */.t.LoOB1F);
-    obj4.value = vadUseKrisp;
-    obj4.onValueChange = function onValueChange(vadUseKrisp) {
+    const obj2 = { label: null, subLabel: null, value: null, onValueChange: null };
+    const intl5 = tmp(1236).intl;
+    obj2[0] = intl5.string(tmp(1236).t.BbESsg);
+    const intl6 = tmp(1236).intl;
+    obj2[1] = intl6.string(tmp(1236).t.LoOB1F);
+    obj2[2] = vadUseKrisp;
+    obj2[3] = function onValueChange(vadUseKrisp) {
       let obj = outer1_1(outer1_2[9]);
       obj = { vadUseKrisp };
       return obj.setMode(closure_0, obj);
     };
-    advancedVoiceActivitySupported = callback(require(5537) /* TableSwitchRow */.TableSwitchRow, obj4);
+    advancedVoiceActivitySupported = callback(tmp(5555).TableSwitchRow, obj2);
   }
+  const obj3 = { children: null };
   items2[1] = advancedVoiceActivitySupported;
-  obj2.children = items2;
-  items1[2] = closure_6(require(10741) /* UserSettingsVoice */.UserSettingsTableRowGroup, obj2);
-  obj.children = items1;
-  return closure_6(closure_7, obj);
+  items1[2] = closure_6(require(10765) /* UserSettingsVoice */.UserSettingsTableRowGroup, { hasIcons: false, children: items2 });
+  obj3[0] = items1;
+  return closure_6(closure_7, obj3);
 };
 export { VoiceProcessingOptions };

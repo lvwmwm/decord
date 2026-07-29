@@ -1,185 +1,128 @@
-// Module ID: 8645
-// Function ID: 68457
-// Name: resolveSize
-// Dependencies: [31, 27, 5784, 653, 33, 4165, 8646, 689, 8669, 8022, 8032, 1877, 8043, 8033, 8670, 8672, 7865, 8029, 3869, 3877, 1327, 2]
+// Module ID: 8669
+// Function ID: 8670
+// Name: CollectiblesPreview
+// Dependencies: [19, 17, 5802, 676, 21, 4189, 8670, 712, 8693, 8046, 8056, 1901, 8067, 8057, 8694, 8696, 7888, 8053, 3893, 3901, 1351, 2]
 // Exports: default
 
-// Module 8645 (resolveSize)
-import result from "result";
-import { View } from "get ActivityIndicator";
-import { transformSKUToCollectiblesItem as closure_5 } from "_createForOfIteratorHelperLoose";
+// Module 8669 (CollectiblesPreview)
+import ManaContext from "ManaContext";
+import { View } from "SlayerStorefrontItemCard";
+import { transformSKUToCollectiblesItem as closure_5 } from "createCollectiblesItemsFromServerResponse";
 import { SKUProductLines } from "ME";
-import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import { jsx } from "set";
+import createCacheKey from "createCacheKey";
 
 const require = arg1;
-function resolveSize(DEFAULT_ITEM_SIZE) {
-  let tmp = DEFAULT_ITEM_SIZE;
-  if ("number" === typeof DEFAULT_ITEM_SIZE) {
-    const obj = { width: DEFAULT_ITEM_SIZE, height: DEFAULT_ITEM_SIZE };
-    tmp = obj;
-  }
-  return tmp;
-}
 class CollectiblesPreview {
   constructor(arg0) {
     ({ collectiblesItemData, size } = global);
     if (size === undefined) {
       tmp = closure_0;
       tmp2 = closure_2;
-      num = 6;
       size = require("SourceIcon").DEFAULT_ITEM_SIZE;
     }
-    size2 = resolveSize(size);
-    tmp3 = f68464(size2.width, size2.height);
+    size2 = size;
+    if (typeof size !== "os") {
+      obj = { width: null, height: null };
+      obj[0] = size;
+      obj[1] = size;
+      size2 = obj;
+    }
+    tmp3 = f44788(size2.width, size2.height);
     if ("bundle" === collectiblesItemData.type) {
-      tmp35 = closure_0;
-      tmp36 = closure_2;
-      num9 = 8;
-      obj13 = require("extractBundleItemsFromArray");
+      tmp19 = closure_2;
+      tmp18 = closure_0;
+      obj13 = require("isValidCollectiblesBundle");
       if (obj13.isValidCollectiblesBundleItems(collectiblesItemData.items)) {
-        tmp38 = closure_0;
-        tmp39 = closure_2;
-        num10 = 9;
-        ItemsSortingHat = require("ItemsSortingHat").ItemsSortingHat;
-        prototype = ItemsSortingHat.prototype;
-        tmp40 = new.target;
-        tmp41 = new.target;
-        itemsSortingHat = new ItemsSortingHat(collectiblesItemData.items);
-        tmp43 = itemsSortingHat;
-        tmp44 = jsx;
-        tmp45 = View;
-        obj = {};
-        obj.style = tmp3.container;
-        tmp46 = jsx;
-        tmp47 = View;
-        obj1 = {};
+        tmp21 = new.target;
+        tmp22 = new.target;
+        itemsSortingHat = new require("firstAvatarDecoration").ItemsSortingHat(collectiblesItemData.items);
+        tmp24 = itemsSortingHat;
+        tmp25 = jsx;
+        tmp26 = View;
+        obj1 = { style: null, children: null };
+        obj1[0] = tmp3.container;
+        obj2 = { style: null, children: null };
         items = [, ];
         ({ scaler: arr2[0], bundleContainer: arr2[1] } = tmp3);
-        obj1.style = items;
-        tmp48 = jsx;
-        tmp49 = closure_1;
-        num11 = 10;
-        obj2 = {};
-        ({ firstAvatarDecoration: obj16.deco, firstProfileEffect: obj16.pfx, firstNameplate: obj16.nameplate } = itemsSortingHat);
-        str = "small";
-        obj2.size = "small";
-        obj2.previewAssets = collectiblesItemData.previewAssets;
-        flag2 = true;
-        obj2.disableStaticBackground = true;
-        tmp50 = f68464;
-        obj2.targetSize = f68464;
-        obj1.children = jsx(require("getSizedAssetUri"), obj2);
-        obj.children = jsx(View, obj1);
-        return jsx(View, obj);
+        obj2[0] = items;
+        tmp27 = closure_1;
+        obj3 = { deco: null, pfx: null, nameplate: null, size: "small", previewAssets: null, disableStaticBackground: true, targetSize: null };
+        ({ firstAvatarDecoration: obj16[0], firstProfileEffect: obj16[1], firstNameplate: obj16[2] } = itemsSortingHat);
+        obj3[4] = collectiblesItemData.previewAssets;
+        tmp28 = f44788;
+        obj3[6] = f44788;
+        obj2[1] = jsx(require("BundleStaticPreviewContent"), obj3);
+        obj1[1] = jsx(View, obj2);
+        return jsx(View, obj1);
       } else {
-        tmp37 = null;
+        tmp20 = null;
         return null;
       }
     } else {
       type = collectiblesItemData.item.type;
-      tmp51 = closure_0;
-      tmp52 = closure_2;
-      num12 = 11;
+      tmp29 = closure_0;
+      tmp30 = closure_2;
       if (require("CollectiblesItemType").CollectiblesItemType.AVATAR_DECORATION === type) {
-        tmp28 = jsx;
-        tmp29 = View;
-        obj3 = {};
-        obj3.style = tmp3.container;
-        tmp30 = jsx;
-        tmp31 = View;
-        obj4 = {};
-        obj4.style = tmp3.scaler;
-        tmp32 = jsx;
-        tmp33 = closure_1;
-        tmp34 = closure_2;
-        num7 = 12;
-        obj5 = {};
-        obj5.item = collectiblesItemData.item;
-        num8 = 100;
-        obj5.size = 100;
-        obj4.children = jsx(require("AvatarDecorationSampleV2"), obj5);
-        obj3.children = jsx(View, obj4);
-        return jsx(View, obj3);
+        tmp15 = jsx;
+        tmp16 = View;
+        obj4 = { style: null, children: null };
+        obj4[0] = tmp3.container;
+        obj5 = { style: null, children: null };
+        obj5[0] = tmp3.scaler;
+        tmp17 = closure_1;
+        obj6 = { item: null, size: 100 };
+        obj6[0] = collectiblesItemData.item;
+        obj5[1] = jsx(require("AvatarDecorationSampleV2"), obj6);
+        obj4[1] = jsx(View, obj5);
+        return jsx(View, obj4);
+      } else if (require("CollectiblesItemType").CollectiblesItemType.PROFILE_EFFECT === type) {
+        tmp12 = jsx;
+        tmp13 = View;
+        obj7 = { style: null, children: null };
+        obj7[0] = tmp3.container;
+        obj8 = { style: null, children: null };
+        obj8[0] = tmp3.scaler;
+        tmp14 = closure_1;
+        obj9 = { item: null, hideBackground: true };
+        obj9[0] = collectiblesItemData.item;
+        obj8[1] = jsx(require("ProfileEffectSample"), obj9);
+        obj7[1] = jsx(View, obj8);
+        return jsx(View, obj7);
+      } else if (require("CollectiblesItemType").CollectiblesItemType.PROFILE_FRAME === type) {
+        tmp8 = jsx;
+        tmp9 = View;
+        obj10 = { style: null, children: null };
+        obj10[0] = tmp3.container;
+        obj11 = { style: null, children: null };
+        items1 = [, ];
+        ({ scaler: arr[0], profileFrameContainer: arr[1] } = tmp3);
+        obj11[0] = items1;
+        tmp10 = closure_1;
+        obj12 = { profileFrame: null, previewWidth: null, previewHeight: null };
+        obj12[0] = collectiblesItemData.item;
+        tmp11 = require("filterLayer");
+        obj12[1] = require("SourceIcon").DEFAULT_ITEM_SIZE - require("Themes").space.PX_48;
+        obj12[2] = require("SourceIcon").DEFAULT_ITEM_SIZE;
+        obj11[1] = jsx(tmp11, obj12);
+        obj10[1] = jsx(View, obj11);
+        return jsx(View, obj10);
+      } else if (require("CollectiblesItemType").CollectiblesItemType.NAMEPLATE === type) {
+        tmp5 = jsx;
+        tmp6 = View;
+        obj = { style: null, children: null };
+        obj[0] = tmp3.container;
+        obj13 = { style: null, children: null };
+        obj13[0] = tmp3.scaler;
+        tmp7 = closure_1;
+        obj14 = { item: null };
+        obj14[0] = collectiblesItemData.item;
+        obj13[1] = jsx(require("NameplateCardPreview"), obj14);
+        obj[1] = jsx(View, obj13);
+        return jsx(View, obj);
       } else {
-        tmp53 = closure_0;
-        tmp54 = closure_2;
-        if (require("CollectiblesItemType").CollectiblesItemType.PROFILE_EFFECT === type) {
-          tmp21 = jsx;
-          tmp22 = View;
-          obj6 = {};
-          obj6.style = tmp3.container;
-          tmp23 = jsx;
-          tmp24 = View;
-          obj7 = {};
-          obj7.style = tmp3.scaler;
-          tmp25 = jsx;
-          tmp26 = closure_1;
-          tmp27 = closure_2;
-          num6 = 13;
-          obj8 = {};
-          obj8.item = collectiblesItemData.item;
-          flag = true;
-          obj8.hideBackground = true;
-          obj7.children = jsx(require("ProfileEffectSample"), obj8);
-          obj6.children = jsx(View, obj7);
-          return jsx(View, obj6);
-        } else {
-          tmp55 = closure_0;
-          tmp56 = closure_2;
-          if (require("CollectiblesItemType").CollectiblesItemType.PROFILE_FRAME === type) {
-            tmp12 = jsx;
-            tmp13 = View;
-            obj9 = {};
-            obj9.style = tmp3.container;
-            tmp14 = jsx;
-            tmp15 = View;
-            obj10 = {};
-            items1 = [, ];
-            ({ scaler: arr[0], profileFrameContainer: arr[1] } = tmp3);
-            obj10.style = items1;
-            tmp16 = jsx;
-            tmp17 = closure_1;
-            tmp18 = closure_2;
-            num3 = 14;
-            obj11 = {};
-            obj11.profileFrame = collectiblesItemData.item;
-            tmp20 = closure_0;
-            num4 = 6;
-            tmp19 = require("filterLayer");
-            num5 = 7;
-            obj11.previewWidth = require("SourceIcon").DEFAULT_ITEM_SIZE - require("_createForOfIteratorHelperLoose").space.PX_48;
-            obj11.previewHeight = require("SourceIcon").DEFAULT_ITEM_SIZE;
-            obj10.children = jsx(tmp19, obj11);
-            obj9.children = jsx(View, obj10);
-            return jsx(View, obj9);
-          } else {
-            tmp57 = closure_0;
-            tmp58 = closure_2;
-            if (require("CollectiblesItemType").CollectiblesItemType.NAMEPLATE === type) {
-              tmp5 = jsx;
-              tmp6 = View;
-              obj = {};
-              obj.style = tmp3.container;
-              tmp7 = jsx;
-              tmp8 = View;
-              obj12 = {};
-              obj12.style = tmp3.scaler;
-              tmp9 = jsx;
-              tmp10 = closure_1;
-              tmp11 = closure_2;
-              num2 = 15;
-              obj13 = {};
-              obj13.item = collectiblesItemData.item;
-              obj12.children = jsx(require("NameplateCardPreview"), obj13);
-              obj.children = jsx(View, obj12);
-              return jsx(View, obj);
-            } else {
-              tmp4 = null;
-              return null;
-            }
-          }
-        }
+        tmp4 = null;
+        return null;
       }
     }
   }
@@ -188,14 +131,16 @@ function CollectiblesSKUPreview(sku) {
   sku = sku.sku;
   let DEFAULT_ITEM_SIZE = sku.size;
   if (DEFAULT_ITEM_SIZE === undefined) {
-    DEFAULT_ITEM_SIZE = sku(8646).DEFAULT_ITEM_SIZE;
+    DEFAULT_ITEM_SIZE = sku(8670).DEFAULT_ITEM_SIZE;
   }
   const items = [sku];
   const memo = React.useMemo(() => outer1_5(sku), items);
   let tmp4 = null;
   if (null != memo) {
-    const obj = { collectiblesItemData: memo, size: DEFAULT_ITEM_SIZE };
-    tmp4 = <CollectiblesPreview collectiblesItemData={memo} size={DEFAULT_ITEM_SIZE} />;
+    const obj = { collectiblesItemData: null, size: null };
+    obj[0] = memo;
+    obj[1] = DEFAULT_ITEM_SIZE;
+    tmp4 = <CollectiblesPreview collectiblesItemData={null} size={null} />;
   }
   return tmp4;
 }
@@ -205,24 +150,28 @@ class SocialLayerStorefrontSKUPreview {
     if (DEFAULT_ITEM_SIZE === undefined) {
       tmp = closure_0;
       tmp2 = closure_2;
-      num = 6;
       DEFAULT_ITEM_SIZE = require("SourceIcon").DEFAULT_ITEM_SIZE;
     }
-    size = resolveSize(DEFAULT_ITEM_SIZE);
-    tmp3 = f68464(size.width, size.height);
-    obj = require("apexExperiment");
-    tmp4 = null;
-    if (obj.useIsEligibleForSocialLayerStorefrontMobilePurchasing({ location: "sku_preview" })) {
-      tmp5 = jsx;
-      tmp6 = closure_1;
-      tmp7 = closure_2;
-      num2 = 17;
-      obj = {};
-      obj.sku = global.sku;
-      obj.containerStyle = tmp3.socialLayerStorefrontContainer;
-      tmp4 = jsx(require("SlayerStorefrontItemCard"), obj);
+    size = DEFAULT_ITEM_SIZE;
+    if (typeof DEFAULT_ITEM_SIZE !== "os") {
+      obj = { width: null, height: null };
+      obj[0] = DEFAULT_ITEM_SIZE;
+      obj[1] = DEFAULT_ITEM_SIZE;
+      size = obj;
     }
-    return tmp4;
+    tmp3 = f44788(size.width, size.height);
+    tmp4 = closure_2;
+    obj = require("apexExperiment");
+    tmp5 = null;
+    if (obj.useIsEligibleForSocialLayerStorefrontMobilePurchasing({ location: "sku_preview" })) {
+      tmp6 = jsx;
+      tmp7 = closure_1;
+      obj1 = { sku: null, containerStyle: null };
+      obj1[0] = global.sku;
+      obj1[1] = tmp3.socialLayerStorefrontContainer;
+      tmp5 = jsx(require("SlayerStorefrontItemCard"), obj1);
+    }
+    return tmp5;
   }
 }
 class PremiumSKUPreview {
@@ -231,58 +180,68 @@ class PremiumSKUPreview {
     if (DEFAULT_ITEM_SIZE === undefined) {
       tmp = closure_0;
       tmp2 = closure_2;
-      num = 6;
       DEFAULT_ITEM_SIZE = require("SourceIcon").DEFAULT_ITEM_SIZE;
     }
-    size = resolveSize(DEFAULT_ITEM_SIZE);
-    tmp3 = f68464(size.width, size.height);
+    size = DEFAULT_ITEM_SIZE;
+    if (typeof DEFAULT_ITEM_SIZE !== "os") {
+      obj = { width: null, height: null };
+      obj[0] = DEFAULT_ITEM_SIZE;
+      obj[1] = DEFAULT_ITEM_SIZE;
+      size = obj;
+    }
+    tmp3 = f44788(size.width, size.height);
     obj = require("map");
-    obj = { style: tmp3.premiumRiveContainer };
-    token = obj.useToken(require("_createForOfIteratorHelperLoose").colors.TEXT_DEFAULT);
-    obj.children = jsx(require("ManaContext").ThemeAwareNitroWishlistingWumpusRive, { dataBinding: { logoColor: token } });
-    return jsx(View, obj);
+    obj1 = { style: tmp3.premiumRiveContainer, children: null };
+    token = obj.useToken(require("Themes").colors.TEXT_DEFAULT);
+    obj1[1] = jsx(require("ManaContext").ThemeAwareNitroWishlistingWumpusRive, { dataBinding: { logoColor: token } });
+    return jsx(View, obj1);
   }
 }
-let closure_8 = _createForOfIteratorHelperLoose.createStyles((width, height) => {
-  let obj = { container: { width: "100%", height: "100%", display: "flex", justifyContent: "center", alignItems: "center" } };
-  obj = { width: require(8646) /* SourceIcon */.DEFAULT_ITEM_SIZE, height: require(8646) /* SourceIcon */.DEFAULT_ITEM_SIZE, justifyContent: "center", alignItems: "center" };
-  obj = { scaleX: width / require(8646) /* SourceIcon */.DEFAULT_ITEM_SIZE };
-  const items = [obj, { scaleY: height / require(8646) /* SourceIcon */.DEFAULT_ITEM_SIZE }];
-  obj.transform = items;
-  obj.scaler = obj;
-  obj.bundleContainer = { paddingTop: 20 };
-  obj.socialLayerStorefrontContainer = { width, height };
-  const obj1 = { scaleY: height / require(8646) /* SourceIcon */.DEFAULT_ITEM_SIZE };
-  obj.profileFrameContainer = { padding: importDefault(689).space.PX_8 };
-  obj.premiumRiveContainer = { width, height };
+let closure_8 = createCacheKey.createStyles((width, height) => {
+  let obj = { container: { width: "100%", height: "100%", display: "flex", justifyContent: "center", alignItems: "center" }, scaler: null, bundleContainer: null, socialLayerStorefrontContainer: null, profileFrameContainer: null, premiumRiveContainer: null };
+  obj = { width: require(8670) /* SourceIcon */.DEFAULT_ITEM_SIZE, height: require(8670) /* SourceIcon */.DEFAULT_ITEM_SIZE, justifyContent: "center", alignItems: "center", transform: null };
+  obj = { scaleX: width / require(8670) /* SourceIcon */.DEFAULT_ITEM_SIZE };
+  const items = [obj, { scaleY: height / require(8670) /* SourceIcon */.DEFAULT_ITEM_SIZE }];
+  obj[4] = items;
+  obj[1] = obj;
+  obj[2] = { paddingTop: 20 };
+  obj[3] = { width, height };
+  const obj1 = { scaleY: height / require(8670) /* SourceIcon */.DEFAULT_ITEM_SIZE };
+  obj[4] = { padding: importDefault(712).space.PX_8 };
+  obj[5] = { width, height };
   return obj;
 });
-_createForOfIteratorHelperLoose = { width: require("SourceIcon").DEFAULT_ITEM_SIZE, height: require("SourceIcon").DEFAULT_ITEM_SIZE };
-const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/skus/native/SKUPreview.tsx");
+createCacheKey = { width: require("SourceIcon").DEFAULT_ITEM_SIZE, height: require("SourceIcon").DEFAULT_ITEM_SIZE };
+const result = require("createCollectiblesItemsFromServerResponse").fileFinishedImporting("modules/skus/native/SKUPreview.tsx");
 
 export default function SKUPreview(arg0) {
   let size;
   let sku;
   ({ sku, size } = arg0);
   if (size === undefined) {
-    size = require(8646) /* SourceIcon */.DEFAULT_ITEM_SIZE;
+    size = require(8670) /* SourceIcon */.DEFAULT_ITEM_SIZE;
   }
   const productLine = sku.productLine;
   if (SKUProductLines.COLLECTIBLES === productLine) {
-    let obj = { sku, size };
-    return <CollectiblesSKUPreview sku={sku} size={size} />;
-  } else if (SKUProductLines.SOCIAL_LAYER_GAME_ITEM === productLine) {
-    obj = { sku, size };
-    return <SocialLayerStorefrontSKUPreview sku={sku} size={size} />;
-  } else if (SKUProductLines.PREMIUM === productLine) {
-    const obj1 = { size };
-    return <PremiumSKUPreview size={size} />;
+    let obj = { sku: null, size: null };
+    obj[0] = sku;
+    obj[1] = size;
+    return <CollectiblesSKUPreview sku={null} size={null} />;
+  } else if (tmp3.SOCIAL_LAYER_GAME_ITEM === productLine) {
+    obj = { sku: null, size: null };
+    obj[0] = sku;
+    obj[1] = size;
+    return <SocialLayerStorefrontSKUPreview sku={null} size={null} />;
+  } else if (tmp3.PREMIUM === productLine) {
+    const obj1 = { size: null };
+    obj1[0] = size;
+    return <PremiumSKUPreview size={null} />;
   } else {
-    if (SKUProductLines.APPLICATION !== productLine) {
-      if (SKUProductLines.BOOST !== productLine) {
-        if (SKUProductLines.GUILD_ROLE !== productLine) {
-          if (SKUProductLines.GUILD_PRODUCT !== productLine) {
-            obj = require(1327) /* isDiscordFrontendDevelopment */;
+    if (tmp3.APPLICATION !== productLine) {
+      if (tmp3.BOOST !== productLine) {
+        if (tmp3.GUILD_ROLE !== productLine) {
+          if (tmp3.GUILD_PRODUCT !== productLine) {
+            obj = require(1351) /* isDiscordFrontendDevelopment */;
             obj.assertNever(sku.productLine);
           }
         }

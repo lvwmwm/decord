@@ -1,10 +1,10 @@
-// Module ID: 14930
-// Function ID: 113801
+// Module ID: 14956
+// Function ID: 14957
 // Name: computeGuildsBarCutout
-// Dependencies: [27, 14916, 1273, 7945, 2]
+// Dependencies: [17, 14942, 1297, 7970, 2]
 // Exports: default
 
-// Module 14930 (computeGuildsBarCutout)
+// Module 14956 (computeGuildsBarCutout)
 import { PixelRatio } from "get ActivityIndicator";
 import { GUILD_ITEM_SIZE } from "GUILD_ITEM_SIZE";
 
@@ -17,19 +17,23 @@ export default function computeGuildsBarCutout(containerSize) {
   }
   let BADGE_SIZE = containerSize.width;
   if (BADGE_SIZE === undefined) {
-    BADGE_SIZE = require(1273) /* Button */.BADGE_SIZE;
+    BADGE_SIZE = require(1297) /* Button */.BADGE_SIZE;
   }
   let BADGE_SIZE2 = containerSize.height;
   if (BADGE_SIZE2 === undefined) {
-    BADGE_SIZE2 = require(1273) /* Button */.BADGE_SIZE;
+    BADGE_SIZE2 = require(1297) /* Button */.BADGE_SIZE;
   }
   let BADGE_PADDING = containerSize.padding;
   if (BADGE_PADDING === undefined) {
-    BADGE_PADDING = require(1273) /* Button */.BADGE_PADDING;
+    BADGE_PADDING = require(1297) /* Button */.BADGE_PADDING;
   }
   const roundToNearestPixelResult = PixelRatio.roundToNearestPixel(BADGE_SIZE + 2 * BADGE_PADDING);
   const roundToNearestPixelResult1 = PixelRatio.roundToNearestPixel(BADGE_SIZE2 + 2 * BADGE_PADDING);
-  const obj = { shape: require(7945) /* SolidCutout */.CutoutShape.RoundedRect, x: 0, y: 0, width: roundToNearestPixelResult, height: roundToNearestPixelResult1, cornerRadius: PixelRatio.roundToNearestPixel(Math.min(roundToNearestPixelResult, roundToNearestPixelResult1) / 2) };
+  const obj = { shape: null, x: 0, y: 0, width: null, height: null, cornerRadius: null };
+  obj[0] = require(7970) /* SolidCutout */.CutoutShape.RoundedRect;
+  obj[3] = roundToNearestPixelResult;
+  obj[4] = roundToNearestPixelResult1;
+  obj[5] = PixelRatio.roundToNearestPixel(Math.min(roundToNearestPixelResult, roundToNearestPixelResult1) / 2);
   if ("top-right" === containerSize.position) {
     obj.x = containerSize - roundToNearestPixelResult + BADGE_PADDING;
     obj.y = -BADGE_PADDING;

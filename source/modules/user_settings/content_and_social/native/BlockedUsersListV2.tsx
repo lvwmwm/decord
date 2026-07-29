@@ -1,59 +1,65 @@
-// Module ID: 13811
-// Function ID: 105797
+// Module ID: 13832
+// Function ID: 13833
 // Name: BlockedUsersList
-// Dependencies: [31, 27, 3802, 33, 4165, 689, 5497, 5517, 1273, 13812, 1212, 5155, 4161, 5536, 13816, 566, 2]
+// Dependencies: [19, 17, 3826, 21, 4189, 712, 5515, 5535, 1297, 13833, 1236, 5177, 4185, 5554, 13837, 589, 2]
 // Exports: default
 
-// Module 13811 (BlockedUsersList)
-import "result";
+// Module 13832 (BlockedUsersList)
+import "noop";
 import { ScrollView } from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import upsertRelationship from "upsertRelationship";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_5;
+let c5;
 let closure_6;
 const require = arg1;
 function BlockedUsersList(userIds) {
   userIds = userIds.userIds;
-  const tmp = _createForOfIteratorHelperLoose();
-  importDefault(5497);
+  const tmp = createCacheKey();
+  importDefault(5515);
   if (0 === userIds.length) {
-    let obj = { Illustration: require(13812) /* getBlockedSource */.Blocked };
-    const intl = require(1212) /* getSystemLocale */.intl;
-    obj.body = intl.string(require(1212) /* getSystemLocale */.t.nnsFif);
-    let tmp7 = callback(require(1273) /* Button */.EmptyState, obj);
+    let obj = { Illustration: null, body: null };
+    obj[0] = require(13833) /* getBlockedSource */.Blocked;
+    const intl = require(1236) /* getSystemLocale */.intl;
+    obj[1] = intl.string(require(1236) /* getSystemLocale */.t.nnsFif);
+    let tmp7 = callback(require(1297) /* Button */.EmptyState, obj);
   } else {
-    obj = { value: tmp3 };
-    obj = { bottom: true, style: tmp.list };
-    const obj1 = {};
-    const obj2 = { style: tmp.sectionLabelStyle, variant: "text-sm/semibold", color: "text-default" };
-    const intl2 = require(1212) /* getSystemLocale */.intl;
-    const obj3 = { numberOfBlockedUsers: userIds.length };
-    obj2.children = intl2.formatToPlainString(require(1212) /* getSystemLocale */.t["c+JVEB"], obj3);
-    const items = [callback(require(4161) /* Text */.Text, obj2), ];
-    const obj4 = { hasIcons: true, children: userIds.map((userId) => outer1_5(outer1_1(outer1_2[14]), { userId }, userId)) };
-    const intl3 = require(1212) /* getSystemLocale */.intl;
-    items[1] = callback(require(5536) /* TableRowGroupTitle */.TableRowGroup, obj4, intl3.string(require(1212) /* getSystemLocale */.t.PFOUKW));
-    obj1.children = items;
-    obj.children = callback2(ScrollView, obj1);
-    obj.children = callback(require(5155) /* SafeAreaPaddingView */.SafeAreaPaddingView, obj);
-    tmp7 = callback(require(5497) /* mergeLocations */.AnalyticsLocationProvider, obj);
+    obj = { value: null, children: null };
+    obj[0] = tmp4;
+    obj = { bottom: true, style: null, children: null };
+    obj[1] = tmp.list;
+    const obj1 = { children: null };
+    const obj2 = { style: null, variant: "text-sm/semibold", color: "text-default", children: null };
+    obj2[0] = tmp.sectionLabelStyle;
+    const intl2 = require(1236) /* getSystemLocale */.intl;
+    const obj3 = { numberOfBlockedUsers: null };
+    obj3[0] = userIds.length;
+    obj2[3] = intl2.formatToPlainString(require(1236) /* getSystemLocale */.t["c+JVEB"], obj3);
+    const items = [callback(require(4185) /* Text */.Text, obj2), ];
+    const obj4 = { hasIcons: true, children: null };
+    obj4[1] = userIds.map((userId) => callback2(callback(table[14]), { userId }, userId));
+    const intl3 = require(1236) /* getSystemLocale */.intl;
+    items[1] = callback(require(5554) /* TableRowGroupTitle */.TableRowGroup, obj4, intl3.string(require(1236) /* getSystemLocale */.t.PFOUKW));
+    obj1[0] = items;
+    obj[2] = callback2(ScrollView, obj1);
+    obj[1] = callback(require(5177) /* SafeAreaPaddingView */.SafeAreaPaddingView, obj);
+    tmp7 = callback(require(5515) /* context */.AnalyticsLocationProvider, obj);
   }
   return tmp7;
 }
-({ jsx: closure_5, jsxs: closure_6 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { flex: 1, paddingTop: require("_createForOfIteratorHelperLoose").space.PX_8, paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16 };
-_createForOfIteratorHelperLoose.list = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.sectionLabelStyle = { marginTop: require("_createForOfIteratorHelperLoose").space.PX_12, marginBottom: require("_createForOfIteratorHelperLoose").space.PX_8 };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-let obj1 = { marginTop: require("_createForOfIteratorHelperLoose").space.PX_12, marginBottom: require("_createForOfIteratorHelperLoose").space.PX_8 };
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/user_settings/content_and_social/native/BlockedUsersListV2.tsx");
+({ jsx: c5, jsxs: closure_6 } = jsxProd);
+createCacheKey = { list: null, sectionLabelStyle: null };
+createCacheKey = { flex: 1, paddingTop: require("Themes").space.PX_8, paddingHorizontal: require("Themes").space.PX_16 };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { marginTop: require("Themes").space.PX_12, marginBottom: require("Themes").space.PX_8 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let obj1 = { marginTop: require("Themes").space.PX_12, marginBottom: require("Themes").space.PX_8 };
+const result = require("upsertRelationship").fileFinishedImporting("modules/user_settings/content_and_social/native/BlockedUsersListV2.tsx");
 
 export default function ConnectedBlockedUsersList() {
-  let obj = require(566) /* initialize */;
-  const items = [_isNativeReflectConstruct];
-  obj = { userIds: obj.useStateFromStoresArray(items, () => outer1_4.getBlockedIDs()) };
+  let obj = require(589) /* initialize */;
+  const items = [upsertRelationship];
+  obj = { userIds: obj.useStateFromStoresArray(items, () => blockedIDs.getBlockedIDs()) };
   return callback(BlockedUsersList, obj);
 };

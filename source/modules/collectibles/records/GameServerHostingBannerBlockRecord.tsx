@@ -1,32 +1,25 @@
-// Module ID: 5818
-// Function ID: 50885
-// Name: GameServerHostingBannerBlockRecord
-// Dependencies: [6, 7, 5811, 2]
+// Module ID: 5836
+// Function ID: 5837
+// Name: fromServer
+// Dependencies: [5829, 2]
 
-// Module 5818 (GameServerHostingBannerBlockRecord)
-import _classCallCheck from "_classCallCheck";
-import _defineProperties from "_defineProperties";
-
-const require = arg1;
-const tmp2 = (() => {
-  class GameServerHostingBannerBlockRecord {
-    constructor(arg0) {
-      tmp = outer1_2(this, GameServerHostingBannerBlockRecord);
-      this.type = GameServerHostingBannerBlockRecord(outer1_1[2]).ShopBlockType.GAME_SERVER_HOSTING_BANNER;
-      this.isDismissible = arg0.is_dismissible;
-      return;
-    }
+// Module 5836 (fromServer)
+let prototype;
+prototype = function GameServerHostingBannerBlockRecord(is_dismissible) {
+  const obj = Object.create(new.target.prototype);
+  obj.type = require(5829) /* ShopBlockType */.ShopBlockType.GAME_SERVER_HOSTING_BANNER;
+  obj.isDismissible = is_dismissible.is_dismissible;
+  return obj;
+}.prototype;
+prototype["fromServer"] = function fromServer(is_dismissible) {
+  if (typeof prototype !== "find") {
+    HermesBuiltin.throwTypeError();
   }
-  const items = [
-    {
-      key: "fromServer",
-      value(is_dismissible) {
-        return new GameServerHostingBannerBlockRecord(is_dismissible);
-      }
-    }
-  ];
-  return callback(GameServerHostingBannerBlockRecord, null, items);
-})();
-const result = require("ShopBlockType").fileFinishedImporting("modules/collectibles/records/GameServerHostingBannerBlockRecord.tsx");
+  const obj = Object.create(prototype.prototype);
+  obj.type = require(5829) /* ShopBlockType */.ShopBlockType.GAME_SERVER_HOSTING_BANNER;
+  obj.isDismissible = is_dismissible.is_dismissible;
+  return obj;
+};
+const result = require("set").fileFinishedImporting("modules/collectibles/records/GameServerHostingBannerBlockRecord.tsx");
 
-export const GameServerHostingBannerBlockRecord = tmp2;
+export const GameServerHostingBannerBlockRecord = prototype;

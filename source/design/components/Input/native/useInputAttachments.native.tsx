@@ -1,38 +1,19 @@
-// Module ID: 6718
-// Function ID: 59088
-// Name: estimateAttachmentWidth
-// Dependencies: [57, 31, 27, 33, 5546, 4161, 1324, 6719, 2]
-// Exports: useInputAttachments
+// Module ID: 6739
+// Function ID: 6740
+// Name: InputAttachmentContainer
+// Dependencies: [32, 19, 17, 21, 5564, 4185, 1348, 6740, 2]
+// Exports: estimateAttachmentWidth, renderInputAttachment, useInputAttachments
 
-// Module 6718 (estimateAttachmentWidth)
+// Module 6739 (InputAttachmentContainer)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
+import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { jsx } from "jsxProd";
 
 let Platform;
-let closure_5;
+let c5;
 let closure_6;
 const require = arg1;
-function estimateAttachmentWidth(arg0, arg1) {
-  let num = 0;
-  if (null != arg0) {
-    num = require(5546) /* ICON_SIZE */.ICON_SIZE.xs + arg1;
-  }
-  return num;
-}
-function renderInputAttachment(leadingIcon, leadingText, text) {
-  if (null != leadingIcon) {
-    let tmp = jsx(leadingIcon, { size: "xs", color: "input-icon-default" });
-  } else {
-    tmp = null;
-    if (null != leadingText) {
-      const obj = { variant: "text-md/normal", style: text, children: leadingText };
-      tmp = jsx(require(4161) /* Text */.Text, { variant: "text-md/normal", style: text, children: leadingText });
-    }
-  }
-  return tmp;
-}
 class InputAttachmentContainer {
   constructor(arg0) {
     ({ content, style } = global);
@@ -43,40 +24,34 @@ class InputAttachmentContainer {
       if (null != pressableProps) {
         tmp4 = jsx;
         tmp5 = Pressable;
-        obj = {};
-        str = "button";
-        obj.role = "button";
+        obj = { role: "button" };
         tmp6 = obj;
         tmp7 = pressableProps;
         merged = Object.assign(pressableProps);
-        str2 = "style";
-        obj["style"] = function style(pressed) {
+        pressableProps = function style(pressed) {
           const items = [style, { pointerEvents: "auto" }, ];
-          let tmp;
+          let obj;
           if (pressed.pressed) {
-            const obj = { opacity: 0.2 };
-            tmp = obj;
+            obj = { opacity: 0.2 };
           }
-          items[2] = tmp;
+          items[2] = obj;
           return items;
         };
-        pressableProps = function onLayout(nativeEvent) {
-          return callback(nativeEvent.nativeEvent.layout.width);
-        };
-        str3 = "onLayout";
-        obj["onLayout"] = pressableProps;
-        str4 = "children";
-        obj["children"] = content;
-        tmp3 = jsx(Pressable, obj);
-      } else {
-        tmp = jsx;
-        tmp2 = View;
-        obj = {};
-        obj.style = style;
+        obj.style = pressableProps;
         obj.onLayout = function onLayout(nativeEvent) {
           return callback(nativeEvent.nativeEvent.layout.width);
         };
         obj.children = content;
+        tmp3 = jsx(Pressable, obj);
+      } else {
+        tmp = jsx;
+        tmp2 = View;
+        obj = { style: null, onLayout: null, children: null };
+        obj[0] = style;
+        obj[1] = function onLayout(nativeEvent) {
+          return callback(nativeEvent.nativeEvent.layout.width);
+        };
+        obj[2] = content;
         tmp3 = jsx(View, obj);
       }
       tmp9 = tmp3;
@@ -84,96 +59,150 @@ class InputAttachmentContainer {
     return;
   }
 }
-({ Platform, Pressable: closure_5, View: closure_6 } = get_ActivityIndicator);
+({ Platform, Pressable: c5, View: closure_6 } = get_ActivityIndicator);
 const result = require("get ActivityIndicator").fileFinishedImporting("design/components/Input/native/useInputAttachments.native.tsx");
 
-export { estimateAttachmentWidth };
-export { renderInputAttachment };
+export const estimateAttachmentWidth = function estimateAttachmentWidth(arg0, arg1) {
+  let num = 0;
+  if (null != arg0) {
+    num = require(5564) /* ICON_SIZE */.ICON_SIZE.xs + arg1;
+  }
+  return num;
+};
+export const renderInputAttachment = function renderInputAttachment(arg0, leadingText, text) {
+  if (null != arg0) {
+    let tmp2 = jsx(arg0, { size: "xs", color: "input-icon-default" });
+  } else {
+    tmp2 = null;
+    if (null != leadingText) {
+      const obj = { variant: "text-md/normal", style: null, children: null };
+      obj[1] = text;
+      obj[2] = leadingText;
+      tmp2 = jsx(require(4185) /* Text */.Text, { variant: "text-md/normal", style: null, children: null });
+    }
+  }
+  return tmp2;
+};
 export { InputAttachmentContainer };
 export const useInputAttachments = function useInputAttachments(size, leading) {
   let leadingPressableProps;
   let leadingText;
+  let tmp22;
+  let tmp23;
   let trailingIcon;
-  let trailingText;
+  let trailingPressableProps;
   let obj = inputStyles(trailingIcon[7]);
   obj = { size: size.size, hasLeadingIcon: null != size.leadingIcon, isRefreshEnabled: leadingIcon(trailingIcon[6])("useInputAttachments") };
   inputStyles = obj.useInputStyles(obj);
   leadingIcon = size.leadingIcon;
-  ({ leadingPressableProps, trailingIcon } = size);
-  let trailingPressableProps = size.trailingPressableProps;
+  ({ leadingText, trailingIcon } = size);
+  const trailingText = size.trailingText;
   leading = undefined;
-  ({ leadingText, trailingText } = size);
-  if (null != leading) {
+  ({ leadingPressableProps, trailingPressableProps } = size);
+  if (leading != null) {
     leading = leading.leading;
   }
-  if (null == leading) {
-    leading = renderInputAttachment(leadingIcon, leadingText, inputStyles.text);
-  }
-  let trailing;
-  if (null != leading) {
-    trailing = leading.trailing;
-  }
-  if (null == trailing) {
-    trailing = renderInputAttachment(trailingIcon, trailingText, inputStyles.text);
-  }
-  if (null == leadingIcon) {
-    let leading1;
-    if (null != leading) {
-      leading1 = leading.leading;
+  if (leading != null) {
+    let trailing;
+    if (leading != null) {
+      trailing = leading.trailing;
     }
-    if (null == leading1) {
-      let leadingIcon2 = inputStyles.leadingText;
+    if (trailing != null) {
+      if (null == leadingIcon) {
+        let leading1;
+        if (leading != null) {
+          leading1 = leading.leading;
+        }
+        if (null == leading1) {
+          let leadingIcon2 = inputStyles.leadingText;
+        }
+        if (null == trailingIcon) {
+          let trailing1;
+          if (leading != null) {
+            trailing1 = leading.trailing;
+          }
+          if (null == trailing1) {
+            let trailingIcon2 = inputStyles.trailingText;
+          }
+          [tmp22, tmp23] = callback(React.useState(() => {
+            let num = 0;
+            if (null != leadingIcon) {
+              num = inputStyles(trailingIcon[4]).ICON_SIZE.xs + tmp;
+            }
+            return num;
+          }), 2);
+          const tmp24 = callback(React.useState(() => {
+            let num = 0;
+            if (null != trailingIcon) {
+              num = inputStyles(trailingIcon[4]).ICON_SIZE.xs + tmp;
+            }
+            return num;
+          }), 2);
+          const first = tmp24[0];
+          obj = { content: null, setWidth: null, pressableProps: null, style: null };
+          obj[0] = leading;
+          obj[1] = tmp23;
+          let prop;
+          if (leading != null) {
+            prop = leading.leadingPressableProps;
+          }
+          if (prop == null) {
+            prop = leadingPressableProps;
+          }
+          const obj1 = { leading: null, trailing: null, inputStyle: null };
+          obj[2] = prop;
+          obj[3] = leadingIcon2;
+          obj1[0] = <InputAttachmentContainer content={null} setWidth={null} pressableProps={null} style={null} />;
+          const obj2 = { content: null, setWidth: null, pressableProps: null, style: null };
+          obj2[0] = trailing;
+          obj2[1] = tmp24[1];
+          let prop1;
+          if (leading != null) {
+            prop1 = leading.trailingPressableProps;
+          }
+          if (prop1 == null) {
+            prop1 = trailingPressableProps;
+          }
+          obj2[2] = prop1;
+          obj2[3] = trailingIcon2;
+          obj1[1] = <InputAttachmentContainer content={null} setWidth={null} pressableProps={null} style={null} />;
+          let diff;
+          if (0 !== tmp22) {
+            diff = tmp22 - inputStyles.padding.paddingHorizontal;
+          }
+          const obj3 = { marginStart: null, marginEnd: null };
+          obj3[0] = diff;
+          let diff1;
+          if (0 !== first) {
+            diff1 = first - inputStyles.padding.paddingHorizontal;
+          }
+          obj3[1] = diff1;
+          obj1[2] = obj3;
+          return obj1;
+        }
+        trailingIcon2 = inputStyles.trailingIcon;
+      }
+      leadingIcon2 = inputStyles.leadingIcon;
+    } else if (null != trailingIcon) {
+      let tmp13 = <trailingIcon size="xs" color="input-icon-default" />;
+    } else {
+      tmp13 = null;
+      if (null != trailingText) {
+        const obj4 = { variant: "text-md/normal", style: null, children: null };
+        obj4[1] = tmp12;
+        obj4[2] = trailingText;
+        tmp13 = jsx(tmp3(tmp[5]).Text, { variant: "text-md/normal", style: null, children: null });
+      }
     }
-    if (null == trailingIcon) {
-      let trailing1;
-      if (null != leading) {
-        trailing1 = leading.trailing;
-      }
-      if (null == trailing1) {
-        let trailingIcon2 = inputStyles.trailingText;
-      }
-      const tmp11 = callback(React.useState(() => outer1_8(leadingIcon, inputStyles.leadingIcon.paddingStart + inputStyles.leadingIcon.paddingEnd)), 2);
-      const first = tmp11[0];
-      const tmp13 = callback(React.useState(() => outer1_8(trailingIcon, inputStyles.trailingIcon.paddingStart + inputStyles.trailingIcon.paddingEnd)), 2);
-      const first1 = tmp13[0];
-      obj = {};
-      const obj1 = { content: leading, setWidth: tmp11[1] };
-      let prop;
-      if (null != leading) {
-        prop = leading.leadingPressableProps;
-      }
-      if (null != prop) {
-        leadingPressableProps = prop;
-      }
-      obj1.pressableProps = leadingPressableProps;
-      obj1.style = leadingIcon2;
-      obj.leading = <InputAttachmentContainer content={leading} setWidth={tmp11[1]} />;
-      const obj2 = { content: trailing, setWidth: tmp13[1] };
-      let prop1;
-      if (null != leading) {
-        prop1 = leading.trailingPressableProps;
-      }
-      if (null != prop1) {
-        trailingPressableProps = prop1;
-      }
-      obj2.pressableProps = trailingPressableProps;
-      obj2.style = trailingIcon2;
-      obj.trailing = <InputAttachmentContainer content={trailing} setWidth={tmp13[1]} />;
-      const obj3 = {};
-      let diff;
-      if (0 !== first) {
-        diff = first - inputStyles.padding.paddingHorizontal;
-      }
-      obj3.marginStart = diff;
-      let diff1;
-      if (0 !== first1) {
-        diff1 = first1 - inputStyles.padding.paddingHorizontal;
-      }
-      obj3.marginEnd = diff1;
-      obj.inputStyle = obj3;
-      return obj;
+  } else if (null != leadingIcon) {
+    let tmp7 = <leadingIcon size="xs" color="input-icon-default" />;
+  } else {
+    tmp7 = null;
+    if (null != leadingText) {
+      const obj5 = { variant: "text-md/normal", style: null, children: null };
+      obj5[1] = tmp6;
+      obj5[2] = leadingText;
+      tmp7 = jsx(tmp3(tmp[5]).Text, { variant: "text-md/normal", style: null, children: null });
     }
-    trailingIcon2 = inputStyles.trailingIcon;
   }
-  leadingIcon2 = inputStyles.leadingIcon;
 };

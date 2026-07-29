@@ -1,11 +1,10 @@
 // Module ID: 10914
-// Function ID: 84565
+// Function ID: 10915
 // Name: registerAsset
-// Dependencies: [1217]
+// Dependencies: [1241]
 
 // Module 10914 (registerAsset)
 import registerAsset from "registerAsset";
 
-const obj = { __packager_asset: true, httpServerLocation: "/assets/images/native/icons", width: 24, height: 24.5, scales: [2, 3], hash: "8baf8e74a5de42544f8c13cd8c4c504d", name: "ic_share_android", type: "png" };
 
-export default registerAsset.registerAsset(obj);
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native", width: 275, height: 150, scales: [1, 2, 3], hash: "bbcef4a2b8c5f48f13fd62c2f6250775", name: "img_group_dm_illustration", type: "png" });

@@ -1,11 +1,10 @@
 // Module ID: 9005
-// Function ID: 70844
+// Function ID: 9006
 // Name: registerAsset
-// Dependencies: [1217]
+// Dependencies: [1241]
 
 // Module 9005 (registerAsset)
 import registerAsset from "registerAsset";
 
-const obj = { __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "9710a1ee79723d3b78a21470e6bc1f77", name: "ShieldIcon", type: "png" };
 
-export default registerAsset.registerAsset(obj);
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "5bfdb70bf70b33af737927fefb52cdba", name: "ServerIcon", type: "png" });

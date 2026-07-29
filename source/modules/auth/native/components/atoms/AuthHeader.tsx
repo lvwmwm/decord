@@ -1,29 +1,29 @@
-// Module ID: 9193
-// Function ID: 71983
+// Module ID: 9217
+// Function ID: 9218
 // Name: AuthHeader
-// Dependencies: [31, 653, 33, 4165, 5087, 689, 1273, 2]
+// Dependencies: [19, 676, 21, 4189, 5109, 712, 1297, 2]
 // Exports: default
 
-// Module 9193 (AuthHeader)
-import "result";
+// Module 9217 (AuthHeader)
+import "noop";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 import importDefaultResult from "createTextStyle";
 
 const require = arg1;
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = {};
-const merged = Object.assign(require("createTextStyle")(require("ME").Fonts.DISPLAY_EXTRABOLD, require("_createForOfIteratorHelperLoose").colors.MOBILE_TEXT_HEADING_PRIMARY, 24));
-_createForOfIteratorHelperLoose["textAlign"] = "center";
-_createForOfIteratorHelperLoose.header = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+createCacheKey = { header: null };
+createCacheKey = {};
+const merged = Object.assign(require("createTextStyle")(require("ME").Fonts.DISPLAY_EXTRABOLD, require("Themes").colors.MOBILE_TEXT_HEADING_PRIMARY, 24));
+createCacheKey.textAlign = "center";
+createCacheKey[0] = createCacheKey;
+createCacheKey = createCacheKey.createStyles(createCacheKey);
 const result = require("jsxProd").fileFinishedImporting("modules/auth/native/components/atoms/AuthHeader.tsx");
 
 export default function AuthHeader(arg0) {
   let children;
   let style;
   ({ children, style } = arg0);
-  style = [_createForOfIteratorHelperLoose().header, ];
+  style = [createCacheKey().header, ];
   style[1] = style;
-  return jsx(require(1273) /* Button */.LegacyText, { style, accessibilityRole: "header", children });
+  return jsx(require(1297) /* Button */.LegacyText, { style, accessibilityRole: "header", children });
 };

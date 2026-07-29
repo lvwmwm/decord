@@ -1,20 +1,16 @@
-// Module ID: 11975
-// Function ID: 92506
-// Name: dropMilliseconds
-// Dependencies: [57, 31, 4157, 664, 566, 4050, 2]
+// Module ID: 11999
+// Function ID: 12000
+// Name: useTimestampTickedNow
+// Dependencies: [32, 19, 4181, 687, 589, 4074, 2]
 // Exports: useTimestampTickedNow
 
-// Module 11975 (dropMilliseconds)
+// Module 11999 (useTimestampTickedNow)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import noop from "noop";
+import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
 
 const require = arg1;
-function dropMilliseconds(arg0) {
-  const rounded = Math.floor(arg0 / importDefault(664).Millis.SECOND);
-  return rounded * importDefault(664).Millis.SECOND;
-}
-let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/content_inventory/memberlist/useTimestampTickedNow.tsx");
+let result = require("maybeApplyNoTextColorForLightCustomTheme").fileFinishedImporting("modules/content_inventory/memberlist/useTimestampTickedNow.tsx");
 
 export const useTimestampTickedNow = function useTimestampTickedNow() {
   let hovered;
@@ -29,19 +25,23 @@ export const useTimestampTickedNow = function useTimestampTickedNow() {
   }
   let _require;
   let importDefault;
-  const tmp = callback(React.useState(() => outer1_6(Date.now())), 2);
-  _require = tmp[1];
-  const items = [_isNativeReflectConstruct];
-  let stateFromStores = _require(566).useStateFromStores(items, () => outer1_5.useReducedMotion);
-  let tmp3 = !isAppFocused;
-  if (!tmp3) {
+  const now = callback(React.useState(() => {
+    const timestamp = Date.now();
+    const rounded = Math.floor(timestamp / _undefined(687).Millis.SECOND);
+    return rounded * _undefined(687).Millis.SECOND;
+  }), 2);
+  _require = now[1];
+  const items = [maybeApplyNoTextColorForLightCustomTheme];
+  let stateFromStores = _require(589).useStateFromStores(items, () => useReducedMotion.useReducedMotion);
+  let slowTickMode = !isAppFocused;
+  if (isAppFocused) {
     if (stateFromStores) {
       stateFromStores = !hovered;
     }
-    tmp3 = stateFromStores;
+    slowTickMode = stateFromStores;
   }
-  const SECOND = importDefault(664).Millis.SECOND;
-  if (tmp3) {
+  const SECOND = importDefault(687).Millis.SECOND;
+  if (slowTickMode) {
     let result = 15 * SECOND;
   } else {
     result = SECOND;
@@ -51,10 +51,11 @@ export const useTimestampTickedNow = function useTimestampTickedNow() {
   const effect = React.useEffect(() => {
     const interval = new callback(outer1_2[5]).Interval();
     interval.start(c1, () => {
-      interval(outer2_6(Date.now()));
+      const timestamp = Date.now();
+      const rounded = Math.floor(timestamp / outer1_1(outer1_2[3]).Millis.SECOND);
+      interval(rounded * outer1_1(outer1_2[3]).Millis.SECOND);
     });
     return () => interval.stop();
   }, items1);
-  obj = { now: tmp[0], slowTickMode: tmp3 };
-  return obj;
+  return { now: now[0], slowTickMode };
 };

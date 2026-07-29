@@ -1,15 +1,15 @@
-// Module ID: 7719
-// Function ID: 61567
+// Module ID: 7742
+// Function ID: 7743
 // Name: createAddRecipientSystemMessage
-// Dependencies: [1352, 1348, 1850, 7720, 7722, 1212, 7723, 2]
+// Dependencies: [1376, 1372, 1874, 7743, 7745, 1236, 7746, 2]
 // Exports: createAddRecipientSystemMessage
 
-// Module 7719 (createAddRecipientSystemMessage)
-import { THREAD_CHANNEL_TYPES } from "_callSuper";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_5 from "_isNativeReflectConstruct";
+// Module 7742 (createAddRecipientSystemMessage)
+import { THREAD_CHANNEL_TYPES } from "createChannelRecord";
+import ensureGuildLoaded from "ensureGuildLoaded";
+import mergeGuildAvatar from "mergeGuildAvatar";
 
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/messages/native/renderer/system_messages/AddRecipientSystemMessage.tsx");
+const result = require("mergeGuildAvatar").fileFinishedImporting("modules/messages/native/renderer/system_messages/AddRecipientSystemMessage.tsx");
 
 export const createAddRecipientSystemMessage = function createAddRecipientSystemMessage(message) {
   let roleStyle;
@@ -21,20 +21,19 @@ export const createAddRecipientSystemMessage = function createAddRecipientSystem
   if (hasItem) {
     hasItem = THREAD_CHANNEL_TYPES.has(channel.type);
   }
-  let obj = require(7720) /* getMessageAuthorWithProcessedColor */;
+  let obj = require(7743) /* getMessageAuthorWithProcessedColor */;
   const messageAuthorWithProcessedColor = obj.getMessageAuthorWithProcessedColor(message);
-  const userAuthorWithProcessedColor = require(7720) /* getMessageAuthorWithProcessedColor */.getUserAuthorWithProcessedColor(user, channel);
-  obj = { username: messageAuthorWithProcessedColor.nick, usernameOnClick: importDefault(7722)({ message, author: messageAuthorWithProcessedColor, roleStyle }), otherUsername: userAuthorWithProcessedColor.nick, otherUsernameOnClick: importDefault(7722)({ userId: first, message, author: userAuthorWithProcessedColor, roleStyle }) };
-  obj = {};
-  const intl = require(1212) /* getSystemLocale */.intl;
+  const userAuthorWithProcessedColor = require(7743) /* getMessageAuthorWithProcessedColor */.getUserAuthorWithProcessedColor(user, channel);
+  obj = { username: messageAuthorWithProcessedColor.nick, usernameOnClick: importDefault(7745)({ message, author: messageAuthorWithProcessedColor, roleStyle }), otherUsername: userAuthorWithProcessedColor.nick, otherUsernameOnClick: importDefault(7745)({ userId: first, message, author: userAuthorWithProcessedColor, roleStyle }) };
+  const intl = require(1236) /* getSystemLocale */.intl;
   const formatToParts = intl.formatToParts;
-  const t = require(1212) /* getSystemLocale */.t;
+  const t = require(1236) /* getSystemLocale */.t;
   if (hasItem) {
     let formatToPartsResult = formatToParts(t.Vej1Nw, obj);
   } else {
     formatToPartsResult = formatToParts(t["7/Xl0S"], obj);
   }
-  obj.content = formatToPartsResult;
-  const merged = Object.assign(importDefault(7723)(message));
+  obj = { content: formatToPartsResult };
+  const merged = Object.assign(importDefault(7746)(message));
   return obj;
 };

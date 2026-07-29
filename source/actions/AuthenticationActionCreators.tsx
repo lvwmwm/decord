@@ -1,72 +1,70 @@
-// Module ID: 5623
-// Function ID: 47567
-// Name: dispatchLogout
-// Dependencies: [5, 5624, 1194, 5625, 653, 5626, 3, 4159, 686, 4017, 1198, 4372, 4977, 480, 507, 4064, 5627, 5628, 587, 684, 2]
+// Module ID: 5641
+// Function ID: 5642
+// Name: handleLogout
+// Dependencies: [5, 5642, 1218, 5643, 676, 5644, 3, 4183, 709, 4041, 1222, 4395, 4999, 503, 530, 4088, 5645, 5646, 595, 707, 2]
 
-// Module 5623 (dispatchLogout)
+// Module 5641 (handleLogout)
 import closure_5 from "str2";
 import { setPromoEmailConsentState } from "setPromoEmailConsentState";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_8 from "_isNativeReflectConstruct";
+import fetchFingerprint from "fetchFingerprint";
+import hasConsented from "hasConsented";
 import ME from "ME";
-import importDefaultResult from "_isNativeReflectConstruct";
 import str2 from "str2";
 
-let closure_10;
-let closure_11;
+let c10;
+let c9;
 let closure_12;
-let closure_13;
 let closure_14;
 let closure_15;
-let closure_9;
+let map1;
+let unpackModuleId;
 const require = arg1;
-function dispatchLogout(arg0) {
-  let obj = importDefault(4159);
+function handleLogout(arg0, CHANNELResult) {
+  let DEFAULT_LOGGED_OUT = CHANNELResult;
+  if (CHANNELResult === undefined) {
+    DEFAULT_LOGGED_OUT = constants.DEFAULT_LOGGED_OUT;
+  }
+  let obj = importDefault(4183);
   const result = obj.clearNavigationHistory();
   obj = { type: "LOGOUT" };
-  const merged = Object.assign(arg0);
-  const obj3 = importDefault(686);
-  importDefault(686).dispatch(obj).catch((error) => {
-    outer1_16.error("Error while dispatching LOGOUT", error);
-    if (null != DiscordErrors) {
+  const merged = Object.assign(undefined);
+  const obj3 = importDefault(709);
+  const tmp2 = importDefault;
+  importDefault(709).dispatch(obj).catch((error) => {
+    logger.error("Error while dispatching LOGOUT", error);
+    if (DiscordErrors != null) {
       DiscordErrors.softCrash(error);
     }
     throw error;
   });
-}
-function handleLogout(source, ME) {
-  let DEFAULT_LOGGED_OUT = ME;
-  if (ME === undefined) {
-    DEFAULT_LOGGED_OUT = constants.DEFAULT_LOGGED_OUT;
-  }
-  dispatchLogout();
   if (null != DEFAULT_LOGGED_OUT) {
-    const rootNavigationRef = require(4017) /* getRootNavigationRef */.getRootNavigationRef();
+    const rootNavigationRef = require(4041) /* getRootNavigationRef */.getRootNavigationRef();
     if (null != rootNavigationRef) {
-      importDefault(4372).popAll();
-      let obj = { index: 0 };
-      obj = { name: "auth" };
-      const items = [obj];
-      obj.routes = items;
+      tmp2(4395).popAll();
+      obj = { index: 0, routes: null };
+      const items = [{ name: "auth" }];
+      obj[1] = items;
       rootNavigationRef.reset(obj);
-      const obj3 = importDefault(4372);
+      const tmp2Result = tmp2(4395);
     } else {
-      obj = require(1198) /* shouldNavigate */;
-      const obj1 = { source };
-      obj.transitionTo(DEFAULT_LOGGED_OUT, obj1);
+      const obj1 = { source: null };
+      obj1[0] = arg0;
+      tmp11(1222).transitionTo(DEFAULT_LOGGED_OUT, obj1);
+      const tmp11Result = tmp11(1222);
     }
-    const obj6 = require(4017) /* getRootNavigationRef */;
+    const obj8 = require(4041) /* getRootNavigationRef */;
+    tmp11 = require;
   }
 }
-({ Endpoints: closure_9, DEVICE_TOKEN: closure_10, DEVICE_VOIP_TOKEN: closure_11, AbortCodes: closure_12, Routes: closure_13 } = ME);
+({ Endpoints: c9, DEVICE_TOKEN: c10, DEVICE_VOIP_TOKEN: unpackModuleId, AbortCodes: closure_12, Routes: map1 } = ME);
 ({ DEVICE_PUSH_VOIP_PROVIDER: closure_14, getDevicePushProvider: closure_15 } = require("str2"));
-importDefaultResult = new importDefaultResult("AuthenticationActionCreators");
+let closure_16 = new require("hasConsented")("AuthenticationActionCreators");
 let c17 = null;
 let obj = { MFA: "MFA", SUCCESS: "SUCCESS" };
 obj = {
   startSession(arg0) {
     let closure_0 = arg0;
-    importDefault(686).wait(() => {
+    importDefault(709).wait(() => {
       let obj = outer1_1(outer1_3[8]);
       obj = { type: "START_SESSION", token: closure_0 };
       obj.dispatch(obj);
@@ -83,31 +81,29 @@ obj = {
     const password = login.password;
     ({ invite, isMultiAccount } = login);
     ({ undelete, source, giftCodeSKUId } = login);
-    let obj = login(isMultiAccount[8]);
+    let obj = login(self[8]);
     obj.dispatch({ type: "LOGIN", isPasswordAttempt: true });
-    let obj1 = login(isMultiAccount[12]);
-    obj = { url: closure_9.LOGIN, body: { login, password, undelete, login_source: source, gift_code_sku_id: giftCodeSKUId }, retries: 2, oldFormErrors: true };
-    obj = { event: self(isMultiAccount[13]).NetworkActionNames.USER_LOGIN };
-    obj1 = {};
+    let obj1 = login(self[12]);
+    obj = { url: closure_9.LOGIN, body: { login, password, undelete, login_source: source, gift_code_sku_id: giftCodeSKUId }, retries: 2, oldFormErrors: true, trackedActionData: null };
+    obj = { event: isMultiAccount(self[13]).NetworkActionNames.USER_LOGIN, properties: null };
     let code;
-    if (null != invite) {
+    if (invite != null) {
       code = invite.code;
     }
-    obj1.invite_code = code;
-    obj1.is_multi_account = isMultiAccount;
-    obj.properties = obj1;
-    obj.trackedActionData = obj;
+    obj[1] = { invite_code: code, is_multi_account: isMultiAccount };
+    obj[4] = obj;
     if (isMultiAccount) {
-      let obj2 = {};
-      let obj3 = { authorization: "" };
-      obj2.headers = obj3;
-      let obj4 = obj2;
+      obj1 = { headers: null };
+      obj1[0] = { authorization: "" };
+      let obj2 = obj1;
     } else {
-      obj4 = {};
+      obj2 = {};
     }
-    const merged = Object.assign(obj4);
-    obj["rejectWithError"] = self(isMultiAccount[14]).rejectWithMigratedError();
-    let obj9 = self(isMultiAccount[14]);
+    const merged = Object.assign(obj2);
+    obj.rejectWithError = isMultiAccount(self[14]).rejectWithMigratedError();
+    const tmp = self;
+    const tmp3 = isMultiAccount;
+    const tmp3Result = isMultiAccount(self[14]);
     return obj1.post(obj).then((body) => {
       let backup;
       let login_instance_id;
@@ -121,76 +117,90 @@ obj = {
       body = body.body;
       const token = body.token;
       ({ mfa, sms, webauthn, ticket, backup, user_id, required_actions, totp, login_instance_id } = body);
-      let obj = login(isMultiAccount[8]);
+      let obj = login(self[8]);
       obj.dispatch({ type: "LOGIN_ATTEMPTED", user_id, required_actions });
       if (mfa) {
-        obj = { type: "LOGIN_MFA_STEP", ticket, sms, webauthn, totp, backup, loginInstanceId: login_instance_id };
-        login(isMultiAccount[8]).dispatch(obj);
-        const obj4 = login(isMultiAccount[8]);
+        let tmpResult = tmp(tmp2[8]);
+        obj = { type: "LOGIN_MFA_STEP", ticket: null, sms: null, webauthn: null, totp: null, backup: null, loginInstanceId: null };
+        obj[1] = ticket;
+        obj[2] = sms;
+        obj[3] = webauthn;
+        obj[4] = totp;
+        obj[5] = backup;
+        obj[6] = login_instance_id;
+        tmpResult.dispatch(obj);
       } else if (isMultiAccount) {
         self.switchAccountToken(token);
       } else {
-        obj = { type: "LOGIN_SUCCESS", token };
-        login(isMultiAccount[8]).dispatch(obj);
-        const obj2 = login(isMultiAccount[8]);
+        tmpResult = tmp(tmp2[8]);
+        obj = { type: "LOGIN_SUCCESS", token: null };
+        obj[1] = token;
+        tmpResult.dispatch(obj);
       }
     }, (body) => {
-      const v6OrEarlierAPIError = new self(isMultiAccount[15]).V6OrEarlierAPIError(body);
+      const v6OrEarlierAPIError = new isMultiAccount(self[15]).V6OrEarlierAPIError(body);
       if (null != body.body) {
         body = body.body;
         let suspended_user_token;
-        if (null != body) {
+        if (body != null) {
           suspended_user_token = body.suspended_user_token;
         }
         if (null != suspended_user_token) {
-          let obj = { type: "LOGIN_SUSPENDED_USER" };
           const body3 = body.body;
           let suspended_user_token1;
-          if (null != body3) {
+          if (body3 != null) {
             suspended_user_token1 = body3.suspended_user_token;
           }
-          obj.suspendedUserToken = suspended_user_token1;
-          login(isMultiAccount[8]).dispatch(obj);
+          let obj = { type: "LOGIN_SUSPENDED_USER", suspendedUserToken: null };
+          obj[1] = suspended_user_token1;
+          login(tmp[8]).dispatch(obj);
           throw v6OrEarlierAPIError;
         }
       }
       const body2 = body.body;
       let code;
-      if (null != body2) {
+      if (body2 != null) {
         code = body2.code;
       }
       if (code === outer1_12.ACCOUNT_SCHEDULED_FOR_DELETION) {
         if (null != password) {
-          if ("" !== password) {
-            obj = { type: "LOGIN_ACCOUNT_SCHEDULED_FOR_DELETION" };
-            const obj1 = { login, password };
-            obj.credentials = obj1;
-            login(isMultiAccount[8]).dispatch(obj);
-            const obj9 = login(isMultiAccount[8]);
+          if ("" !== tmp6) {
+            obj = { type: "LOGIN_ACCOUNT_SCHEDULED_FOR_DELETION", credentials: null };
+            const obj1 = { login: null, password: null };
+            obj1[0] = login;
+            obj1[1] = tmp6;
+            obj[1] = obj1;
+            login(tmp[8]).dispatch(obj);
+            const obj9 = login(tmp[8]);
           }
           throw v6OrEarlierAPIError;
         }
       }
       if (code === outer1_12.ACCOUNT_DISABLED) {
         if (null != password) {
-          if ("" !== password) {
-            let obj5 = login(isMultiAccount[8]);
-            let obj2 = { type: "LOGIN_ACCOUNT_DISABLED" };
-            const obj3 = { login, password };
-            obj2.credentials = obj3;
+          if ("" !== tmp7) {
+            let obj5 = login(tmp[8]);
+            let obj2 = { type: "LOGIN_ACCOUNT_DISABLED", credentials: null };
+            const obj3 = { login: null, password: null };
+            obj3[0] = login;
+            obj3[1] = tmp7;
+            obj2[1] = obj3;
             obj5.dispatch(obj2);
           }
         }
       }
       if (code === outer1_12.PHONE_VERIFICATION_REQUIRED) {
-        obj2 = login(isMultiAccount[8]);
-        const obj4 = { type: "LOGIN_PHONE_IP_AUTHORIZATION_REQUIRED" };
-        obj5 = { login, password };
-        obj4.credentials = obj5;
+        obj2 = login(tmp[8]);
+        const obj4 = { type: "LOGIN_PHONE_IP_AUTHORIZATION_REQUIRED", credentials: null };
+        obj5 = { login: null, password: null };
+        obj5[0] = login;
+        obj5[1] = password;
+        obj4[1] = obj5;
         obj2.dispatch(obj4);
       } else {
-        obj = login(isMultiAccount[8]);
-        const obj6 = { type: "LOGIN_FAILURE", error: v6OrEarlierAPIError };
+        obj = login(tmp[8]);
+        const obj6 = { type: "LOGIN_FAILURE", error: null };
+        obj6[1] = v6OrEarlierAPIError;
         obj.dispatch(obj6);
       }
     });
@@ -198,47 +208,49 @@ obj = {
   loginMFAv2(arg0) {
     let code;
     let giftCodeSKUId;
-    let importDefault;
     let loginInstanceId;
     let mfaType;
+    let require;
     let source;
     let ticket;
     const self = this;
-    ({ isMultiAccount: importDefault, loginInstanceId } = arg0);
+    ({ isMultiAccount: require, loginInstanceId } = arg0);
     ({ code, ticket, source, giftCodeSKUId, mfaType } = arg0);
-    let obj = importDefault(4977);
+    let obj = self(4999);
     obj = { url: closure_9.LOGIN_MFA(mfaType), body: null, retries: 2, oldFormErrors: true, trackedActionData: null, rejectWithError: true };
-    obj = { code, ticket, login_source: source, gift_code_sku_id: giftCodeSKUId };
-    if (null == loginInstanceId) {
+    obj = { code, ticket, login_source: source, gift_code_sku_id: giftCodeSKUId, login_instance_id: null };
+    if (loginInstanceId == null) {
       loginInstanceId = authStore.getLoginInstanceId();
     }
-    obj.login_instance_id = loginInstanceId;
-    obj.body = obj;
-    obj.trackedActionData = { event: self(480).NetworkActionNames.USER_LOGIN_MFA };
-    const obj1 = { event: self(480).NetworkActionNames.USER_LOGIN_MFA };
+    obj[4] = loginInstanceId;
+    obj[1] = obj;
+    obj[4] = { event: require(503) /* encodeProperties */.NetworkActionNames.USER_LOGIN_MFA };
+    const obj1 = { event: require(503) /* encodeProperties */.NetworkActionNames.USER_LOGIN_MFA };
     const postResult = obj.post(obj);
     return obj.post(obj).then((body) => {
-      if (closure_1) {
+      if (closure_0) {
         self.switchAccountToken(body.body.token);
       } else {
-        let obj = outer1_1(outer1_3[8]);
-        obj = { type: "LOGIN_SUCCESS", token: body.body.token };
+        let obj = self(outer1_3[8]);
+        obj = { type: "LOGIN_SUCCESS", token: null };
+        obj[1] = body.body.token;
         obj.dispatch(obj);
       }
     }).catch((body) => {
       if (null != body.body) {
         if (null != body.body.suspended_user_token) {
-          let obj = outer1_1(outer1_3[8]);
-          obj = { type: "LOGIN_SUSPENDED_USER", suspendedUserToken: body.body.suspended_user_token };
+          let obj = self(table[8]);
+          obj = { type: "LOGIN_SUSPENDED_USER", suspendedUserToken: null };
+          obj[1] = body.body.suspended_user_token;
           obj.dispatch(obj);
         }
       }
       body = body.body;
       let code;
-      if (null != body) {
+      if (body != null) {
         code = body.code;
       }
-      if (code === outer1_12.MFA_INVALID_CODE) {
+      if (code === constants.MFA_INVALID_CODE) {
         const _Error = Error;
         const error = new Error(body.body.message);
         throw error;
@@ -255,16 +267,166 @@ obj = {
     let require;
     ({ authenticateFunc: require, conditionalMediationAbortController: importDefault, source: importAll, giftCodeSKUId: dependencyMap, isMultiAccount: closure_4 } = arg0);
     const self = this;
-    return self(async () => {
-      if (null != outer1_1) {
-        outer1_1.abort("Starting non-conditional mediation");
+    return self(function*() {
+      if (c5 === 2) {
+        c5 = 3;
+        HermesBuiltin.throwTypeError();
+      } else if (tmp7 === 3) {
+        if (arg0 === 1) {
+          throw arg1;
+        } else if (arg0 === 2) {
+          let obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
+        } else {
+          return { value: "HermesInternal", done: null };
+        }
+      } else {
+        try {
+          c5 = 2;
+          if (0 === c4) {
+            if (arg0 === 1) {
+              c5 = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              c5 = 3;
+              obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            } else {
+              let c1 = tmp3;
+              let c0 = tmp8;
+              c0 = undefined;
+              c1 = undefined;
+              let c2;
+              let dependencyMap;
+              if (outer1_1 != null) {
+                obj17.abort("Starting non-conditional mediation");
+              }
+              outer1_1(709).dispatch({ type: "PASSWORDLESS_START" });
+              dependencyMap = 1;
+              const obj12 = outer1_1(709);
+              obj17 = outer1_1;
+              c4 = 2;
+              c5 = 1;
+              const obj1 = { value: null, done: false };
+              obj1[0] = outer1_0(5645).fetchWebAuthnPasswordlessChallenge();
+              return obj1;
+            }
+          } else if (1 === tmp8) {
+            dependencyMap = 0;
+            c5 = c2;
+            let obj9 = outer1_1(709);
+            let obj2 = { type: "PASSWORDLESS_FAILURE", error: null };
+            obj2[1] = c5;
+            obj9.dispatch(obj2);
+            throw c5;
+          } else if (2 === tmp8) {
+            if (arg0 === 1) {
+              c5 = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              dependencyMap = 0;
+              c5 = 3;
+              const obj3 = { value: null, done: true };
+              obj3[0] = arg1;
+              return obj3;
+            } else {
+              outer1_0 = arg1;
+              outer1_1 = outer1_0.challenge;
+              const outer1_2 = outer1_0.ticket;
+              c4 = 3;
+              c5 = 1;
+              const obj4 = { value: null, done: false };
+              obj4[0] = outer1_0(outer1_1);
+              return obj4;
+            }
+          } else if (3 === tmp8) {
+            if (arg0 === 1) {
+              c5 = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              dependencyMap = 0;
+              c5 = 3;
+              const obj5 = { value: null, done: true };
+              obj5[0] = arg1;
+              return obj5;
+            } else {
+              dependencyMap = arg1;
+              dependencyMap = 2;
+              const obj6 = { ticket: null, credential: null, source: null, giftCodeSKUId: null, isMultiAccount: null };
+              obj6[0] = c2;
+              obj6[1] = dependencyMap;
+              obj6[2] = c2;
+              obj6[3] = dependencyMap;
+              obj6[4] = c4;
+              c4 = 5;
+              c5 = 1;
+              const obj7 = { value: null, done: false };
+              obj7[0] = c5.loginWebAuthn(obj6);
+              return obj7;
+            }
+          } else {
+            if (4 === tmp8) {
+              dependencyMap = 1;
+              c4 = c2;
+              let tmp16 = c4 instanceof outer1_0(4088).APIError;
+              if (tmp16) {
+                tmp16 = null != c4.status;
+              }
+              if (tmp16) {
+                tmp16 = c4.status >= 400;
+              }
+              if (tmp16) {
+                tmp16 = c4.status < 500;
+              }
+              if (tmp16) {
+                obj2 = outer1_1(5646);
+                c4 = 6;
+                c5 = 1;
+                const obj8 = { value: null, done: false };
+                obj8[0] = obj2.signalUnknownCredential(dependencyMap);
+                return obj8;
+              }
+            } else if (5 === tmp8) {
+              if (arg0 === 1) {
+                c5 = 3;
+                throw arg1;
+              } else if (arg0 === 2) {
+                dependencyMap = 0;
+                c5 = 3;
+                obj9 = { value: null, done: true };
+                obj9[0] = arg1;
+                return obj9;
+              } else {
+                dependencyMap = 0;
+                c5 = 3;
+                return { value: "HermesInternal", done: null };
+              }
+            } else if (arg0 === 1) {
+              c5 = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              dependencyMap = 0;
+              c5 = 3;
+              obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            }
+            throw c4;
+          }
+        } catch (tmp59) {
+          c2 = tmp59;
+          if (tmp4 === dependencyMap) {
+            c5 = tmp2;
+            throw tmp59;
+          } else if (tmp === tmp61) {
+            c4 = tmp;
+          } else {
+            c4 = tmp5;
+          }
+        }
       }
-      let obj = outer2_1(outer2_3[8]);
-      obj.dispatch({ type: "PASSWORDLESS_START" });
-      const tmp4 = yield outer2_0(outer2_3[16]).fetchWebAuthnPasswordlessChallenge();
-      const obj2 = outer2_0(outer2_3[16]);
-      obj = { ticket: tmp4.ticket, credential: yield outer1_0(tmp4.challenge), source: outer1_2, giftCodeSKUId: outer1_3, isMultiAccount: outer1_4 };
-      yield outer1_5.loginWebAuthn(obj);
     })();
   },
   loginWebAuthn(isMultiAccount) {
@@ -275,11 +437,10 @@ obj = {
     const self = this;
     isMultiAccount = isMultiAccount.isMultiAccount;
     ({ ticket, credential, source, giftCodeSKUId } = isMultiAccount);
-    let obj = isMultiAccount(4977);
-    obj = { url: closure_9.WEBAUTHN_CONDITIONAL_UI_LOGIN, body: { credential, ticket, source, giftCodeSKUId }, retries: 1 };
-    obj = { event: self(480).NetworkActionNames.USER_LOGIN_PASSWORDLESS };
-    obj.trackedActionData = obj;
-    obj.rejectWithError = true;
+    let obj = self(4999);
+    obj = { url: closure_9.WEBAUTHN_CONDITIONAL_UI_LOGIN, body: { credential, ticket, source, giftCodeSKUId }, retries: 1, trackedActionData: null, rejectWithError: true };
+    obj = { event: isMultiAccount(503).NetworkActionNames.USER_LOGIN_PASSWORDLESS };
+    obj[3] = obj;
     const postResult = obj.post(obj);
     return obj.post(obj).then((body) => {
       let required_actions;
@@ -287,228 +448,509 @@ obj = {
       body = body.body;
       const token = body.token;
       ({ user_id, required_actions } = body);
-      let obj = isMultiAccount(outer1_3[8]);
+      let obj = self(outer1_3[8]);
       obj.dispatch({ type: "LOGIN_ATTEMPTED", user_id, required_actions });
       if (isMultiAccount) {
         self.switchAccountToken(token);
       } else {
-        obj = { type: "LOGIN_SUCCESS", token };
-        isMultiAccount(outer1_3[8]).dispatch(obj);
-        const obj2 = isMultiAccount(outer1_3[8]);
+        obj = { type: "LOGIN_SUCCESS", token: null };
+        obj[1] = token;
+        self(outer1_3[8]).dispatch(obj);
+        const tmpResult = self(outer1_3[8]);
       }
     }).catch((body) => {
       let aPIError = body;
-      if (body instanceof self(outer1_3[14]).HTTPResponseError) {
+      if (body instanceof isMultiAccount(table[14]).HTTPResponseError) {
         if (null != body.body.suspended_user_token) {
-          let obj = isMultiAccount(outer1_3[8]);
-          obj = { type: "LOGIN_SUSPENDED_USER", suspendedUserToken: body.body.suspended_user_token };
+          let obj = self(tmp2[8]);
+          obj = { type: "LOGIN_SUSPENDED_USER", suspendedUserToken: null };
+          obj[1] = body.body.suspended_user_token;
           obj.dispatch(obj);
         } else {
-          const APIError = self(outer1_3[15]).APIError;
-          const prototype = APIError.prototype;
-          aPIError = new APIError(body);
+          aPIError = new isMultiAccount(tmp2[15]).APIError(body);
         }
       }
       throw aPIError;
     });
   },
-  loginToken(Authorization, arg1) {
-    let flag = arg1;
+  loginToken(c0, arg1) {
     const self = this;
-    const importDefault = Authorization;
+    const importDefault = c0;
+    let flag = arg1;
     if (arg1 === undefined) {
       flag = true;
     }
-    importDefault(686).dispatch({ type: "LOGIN" });
-    let obj = importDefault(686);
+    importDefault(709).dispatch({ type: "LOGIN" });
+    let obj = importDefault(709);
     return new Promise((arg0) => {
       let closure_0 = arg0;
       setImmediate(() => {
-        let obj = callback(outer2_3[8]);
+        let obj = callback2(outer2_3[8]);
         obj = { type: "LOGIN_SUCCESS", token: outer1_1 };
         obj.dispatch(obj);
-        if (outer1_2) {
-          lib.startSession(outer1_1);
+        if (callback) {
+          outer1_2.startSession(outer1_1);
         }
-        lib();
+        callback();
       });
     });
   },
   oneTimeLogin(arg0) {
     let closure_0 = arg0;
     const self = this;
-    return callback(async () => {
-      let obj = self(outer2_3[8]);
-      obj.dispatch({ type: "LOGIN" });
-      let obj1 = self(outer2_3[12]);
-      obj = { url: outer2_9.ONE_TIME_LOGIN, body: obj, oldFormErrors: true };
-      obj = { ticket: outer1_0 };
-      obj1 = { event: callback(outer2_3[13]).NetworkActionNames.USER_ONE_TIME_LOGIN };
-      obj.trackedActionData = obj1;
-      obj.rejectWithError = true;
-      const token = yield obj1.post(obj).body.token;
-      if (token) {
-        yield outer1_1.loginToken(tmp2, false);
-        return token;
+    return callback(function*() {
+      if (c5 === 2) {
+        c5 = 3;
+        HermesBuiltin.throwTypeError();
+      } else if (tmp6 === 3) {
+        if (arg0 === 1) {
+          throw arg1;
+        } else if (arg0 === 2) {
+          let obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
+        } else {
+          return { value: "HermesInternal", done: null };
+        }
       } else {
-        const _Error = Error;
-        const error = new Error("No token in response");
-        throw error;
+        try {
+          c5 = 2;
+          if (0 === c4) {
+            if (arg0 === 1) {
+              c5 = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              c5 = 3;
+              obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            } else {
+              let closure_1 = tmp3;
+              let token = tmp7;
+              token = undefined;
+              outer1_1(709).dispatch({ type: "LOGIN" });
+              let dependencyMap = 1;
+              const obj10 = outer1_1(709);
+              const obj1 = { url: null, body: null, oldFormErrors: true, trackedActionData: null, rejectWithError: true };
+              obj1[0] = outer1_9.ONE_TIME_LOGIN;
+              const obj2 = { ticket: null };
+              obj2[0] = outer1_0;
+              obj1[1] = obj2;
+              const obj3 = { event: null };
+              obj3[0] = outer1_0(503).NetworkActionNames.USER_ONE_TIME_LOGIN;
+              obj1[3] = obj3;
+              c4 = 2;
+              c5 = 1;
+              let obj4 = { value: null, done: false };
+              obj4[0] = outer1_1(4999).post(obj1);
+              return obj4;
+            }
+          } else if (1 === tmp7) {
+            dependencyMap = 0;
+            closure_1 = closure_2;
+            obj4 = outer1_1(709);
+            const obj5 = { type: "LOGIN_FAILURE", error: null };
+            const v6OrEarlierAPIError = new outer1_0(4088).V6OrEarlierAPIError(closure_1);
+            obj5[1] = v6OrEarlierAPIError;
+            obj4.dispatch(obj5);
+            throw closure_1;
+          } else if (2 === tmp7) {
+            if (arg0 === 1) {
+              c5 = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              dependencyMap = 0;
+              c5 = 3;
+              const obj6 = { value: null, done: true };
+              obj6[0] = arg1;
+              return obj6;
+            } else {
+              token = arg1.body.token;
+              if (token) {
+                c4 = 3;
+                c5 = 1;
+                const obj7 = { value: null, done: false };
+                obj7[0] = closure_1.loginToken(token, false);
+                return obj7;
+              } else {
+                const _Error = Error;
+                const error = new Error("No token in response");
+                throw error;
+              }
+            }
+          } else if (arg0 === 1) {
+            c5 = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            dependencyMap = 0;
+            c5 = 3;
+            const obj8 = { value: null, done: true };
+            obj8[0] = arg1;
+            return obj8;
+          } else {
+            dependencyMap = 0;
+            c5 = 3;
+            obj = { value: null, done: true };
+            obj[0] = token;
+            return obj;
+          }
+        } catch (tmp34) {
+          closure_2 = tmp34;
+          if (tmp4 === dependencyMap) {
+            c5 = tmp2;
+            throw tmp34;
+          } else {
+            c4 = tmp;
+          }
+        }
       }
     })();
   },
   loginReset(isMultiAccount) {
-    let obj = importDefault(686);
+    let obj = importDefault(709);
     obj = { type: "LOGIN_RESET", isMultiAccount };
     obj.dispatch(obj);
   },
   loginStatusReset() {
-    importDefault(686).dispatch({ type: "LOGIN_STATUS_RESET" });
+    importDefault(709).dispatch({ type: "LOGIN_STATUS_RESET" });
   },
   logoutInternal(arg0) {
-    dispatchLogout(arg0);
+    let obj = importDefault(4183);
+    const result = obj.clearNavigationHistory();
+    obj = { type: "LOGOUT" };
+    const merged = Object.assign(arg0);
+    const obj3 = importDefault(709);
+    importDefault(709).dispatch(obj).catch((error) => {
+      logger.error("Error while dispatching LOGOUT", error);
+      if (DiscordErrors != null) {
+        DiscordErrors.softCrash(error);
+      }
+      throw error;
+    });
   },
-  logout(TTI_test, LOGIN) {
+  logout(login_required_account_manager, LOGIN) {
+    const _require = login_required_account_manager;
     let DEFAULT_LOGGED_OUT = LOGIN;
-    const _require = TTI_test;
     if (LOGIN === undefined) {
       DEFAULT_LOGGED_OUT = constants.DEFAULT_LOGGED_OUT;
     }
     const importAll = arg2;
-    let obj = DEFAULT_LOGGED_OUT(4977);
-    obj = { url: closure_9.LOGOUT };
-    obj = { provider: callback2() };
-    const Storage = _require(587).Storage;
-    obj.token = Storage.get(closure_10);
-    obj.voip_provider = closure_14;
-    const Storage2 = _require(587).Storage;
-    obj.voip_token = Storage2.get(closure_11);
-    obj.body = obj;
-    obj.oldFormErrors = true;
-    obj.trackedActionData = { event: _require(480).NetworkActionNames.USER_LOGOUT, properties: obj2 };
-    let tmp2 = null != arg2;
-    if (tmp2) {
-      const obj3 = {};
-      const obj4 = {};
-      const token = importAll(684).getToken(arg2);
-      let str = "";
-      if (null != token) {
-        str = token;
+    let obj = DEFAULT_LOGGED_OUT(4999);
+    obj = { url: closure_9.LOGOUT, body: null, oldFormErrors: true, trackedActionData: null };
+    obj = { provider: callback2(), token: null, voip_provider: null, voip_token: null };
+    const Storage = _require(595).Storage;
+    obj[1] = Storage.get(closure_10);
+    obj[2] = closure_14;
+    const Storage2 = _require(595).Storage;
+    obj[3] = Storage2.get(closure_11);
+    obj[1] = obj;
+    obj[3] = { event: _require(503).NetworkActionNames.USER_LOGOUT, properties: obj2 };
+    let tmp4 = null != arg2;
+    if (tmp4) {
+      let str = importAll(707).getToken(arg2);
+      if (str == null) {
+        str = "";
       }
-      obj4.authorization = str;
-      obj3.headers = obj4;
-      tmp2 = obj3;
-      const obj8 = importAll(684);
+      const obj3 = { headers: null };
+      const obj4 = { authorization: null };
+      obj4[0] = str;
+      obj3[0] = obj4;
+      tmp4 = obj3;
+      const obj6 = importAll(707);
     }
-    const merged = Object.assign(tmp2);
-    const obj1 = { event: _require(480).NetworkActionNames.USER_LOGOUT, properties: obj2 };
-    obj["rejectWithError"] = _require(507).rejectWithMigratedError();
-    const obj9 = _require(507);
+    const merged = Object.assign(tmp4);
+    const obj1 = { event: _require(503).NetworkActionNames.USER_LOGOUT, properties: obj2 };
+    const tmp3 = _require;
+    obj.rejectWithError = _require(530).rejectWithMigratedError();
+    const tmp3Result = _require(530);
     return obj.post(obj).finally(() => {
-      let tmp = null != closure_2;
-      if (tmp) {
-        tmp = closure_2 !== outer1_7.getId();
+      let tmp2 = null != closure_2;
+      if (tmp2) {
+        tmp2 = tmp !== outer1_7.getId();
       }
-      if (!tmp) {
-        outer1_20(closure_0, DEFAULT_LOGGED_OUT);
+      if (!tmp2) {
+        outer1_19(closure_0, DEFAULT_LOGGED_OUT);
       }
     });
   },
   switchAccountToken(token, switchSynchronously) {
-    let flag = switchSynchronously;
-    const self = this;
     let closure_0 = token;
+    let flag = switchSynchronously;
     if (switchSynchronously === undefined) {
       flag = true;
     }
     token = authStore.getToken();
     let obj = { wasLoggedIn: null != token, tokenHasChanged: token !== token };
-    importDefaultResult.log("Switching accounts", obj);
+    tmp4.log("Switching accounts", obj);
     obj = { isSwitchingAccount: true, goHomeAfterSwitching: flag };
-    dispatchLogout(obj);
-    return self.loginToken(token, true).then(() => {
+    const result = importDefault(4183).clearNavigationHistory();
+    obj = { type: "LOGOUT" };
+    const merged = Object.assign(obj);
+    const obj3 = importDefault(4183);
+    const obj5 = importDefault(709);
+    importDefault(709).dispatch(obj).catch((error) => {
+      logger.error("Error while dispatching LOGOUT", error);
+      if (DiscordErrors != null) {
+        DiscordErrors.softCrash(error);
+      }
+      throw error;
+    });
+    const dispatchResult = importDefault(709).dispatch(obj);
+    return this.loginToken(token, true).then(() => {
       const tmp = closure_0 === outer1_7.getToken();
       outer1_16.log("Switched accounts finished", { isCorrectToken: tmp });
       return tmp;
     });
   },
   verifySSOToken(arg0) {
-    let DEFAULT_LOGGED_OUT = arg1;
     const _require = arg0;
+    let DEFAULT_LOGGED_OUT = arg1;
     if (arg1 === undefined) {
       DEFAULT_LOGGED_OUT = constants.DEFAULT_LOGGED_OUT;
     }
-    const HTTP = _require(507).HTTP;
-    const obj = { url: closure_9.ME, oldFormErrors: true, rejectWithError: true };
-    const value = HTTP.get(obj);
+    const HTTP = _require(530).HTTP;
+    const value = HTTP.get({ url: closure_9.ME, oldFormErrors: true, rejectWithError: true });
     return value.catch(() => {
-      outer1_20(closure_0, DEFAULT_LOGGED_OUT);
+      outer1_19(closure_0, DEFAULT_LOGGED_OUT);
     });
   },
   verify(arg0) {
     let closure_0 = arg0;
-    return callback(async () => {
-      let obj = outer2_1(outer2_3[12]);
-      obj = { url: outer2_9.VERIFY, body: obj };
-      obj = { token: outer1_0, trackedActionData: { event: callback(outer2_3[13]).NetworkActionNames.USER_VERIFY } };
-      const obj1 = { event: callback(outer2_3[13]).NetworkActionNames.USER_VERIFY };
-      obj.rejectWithError = callback(outer2_3[14]).rejectWithMigratedError();
-      const tmp = yield obj.post(obj);
-      const obj5 = callback(outer2_3[14]);
-      outer2_1(outer2_3[8]).dispatch({ type: "LOGIN_SUCCESS", token: tmp.body.token });
-      return tmp.body.user_id;
+    return callback(function*() {
+      if (dependencyMap === 2) {
+        dependencyMap = 3;
+        HermesBuiltin.throwTypeError();
+      } else if (tmp4 === 3) {
+        if (arg0 === 1) {
+          throw arg1;
+        } else if (arg0 === 2) {
+          let obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
+        } else {
+          return { value: "HermesInternal", done: null };
+        }
+      } else {
+        try {
+          dependencyMap = 2;
+          if (0 === c2) {
+            if (arg0 === 1) {
+              dependencyMap = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              dependencyMap = 3;
+              obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            } else {
+              let closure_1 = tmp2;
+              let closure_0 = tmp5;
+              closure_0 = undefined;
+              let obj7 = outer1_1(4999);
+              const obj1 = { url: null, body: null, trackedActionData: null, rejectWithError: null };
+              obj1[0] = outer1_9.VERIFY;
+              const obj2 = { token: null };
+              obj2[0] = outer1_0;
+              obj1[1] = obj2;
+              const obj3 = { event: null };
+              obj3[0] = outer1_0(503).NetworkActionNames.USER_VERIFY;
+              obj1[2] = obj3;
+              obj1[3] = outer1_0(530).rejectWithMigratedError();
+              c2 = 1;
+              dependencyMap = 1;
+              const obj4 = { value: null, done: false };
+              obj4[0] = obj7.post(obj1);
+              return obj4;
+            }
+          } else if (arg0 === 1) {
+            dependencyMap = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            dependencyMap = 3;
+            const obj5 = { value: null, done: true };
+            obj5[0] = arg1;
+            return obj5;
+          } else {
+            closure_0 = arg1;
+            obj = outer1_1(709);
+            const obj6 = { type: "LOGIN_SUCCESS", token: null };
+            obj6[1] = closure_0.body.token;
+            obj.dispatch(obj6);
+            dependencyMap = 3;
+            obj7 = { value: null, done: true };
+            obj7[0] = closure_0.body.user_id;
+            return obj7;
+          }
+        } catch (tmp13) {
+          dependencyMap = tmp;
+          throw tmp13;
+        }
+      }
     })();
   },
   authorizePayment(token) {
-    let obj = importDefault(4977);
-    obj = { url: closure_9.AUTHORIZE_PAYMENT, body: obj };
-    obj = { token, trackedActionData: { event: require(480) /* isThrottled */.NetworkActionNames.AUTHORIZE_PAYMENT }, rejectWithError: true };
+    let obj = importDefault(4999);
+    obj = { url: closure_9.AUTHORIZE_PAYMENT, body: obj, trackedActionData: null, rejectWithError: true };
+    obj = { token };
+    obj[2] = { event: require(503) /* encodeProperties */.NetworkActionNames.AUTHORIZE_PAYMENT };
     return obj.post(obj);
   },
-  authorizeIPAddress(token) {
-    let obj = importDefault(4977);
-    obj = { url: closure_9.AUTHORIZE_IP, body: obj };
-    obj = { token, trackedActionData: { event: require(480) /* isThrottled */.NetworkActionNames.AUTHORIZE_IP }, rejectWithError: true };
+  authorizeIPAddress(closure_0) {
+    let obj = importDefault(4999);
+    obj = { url: closure_9.AUTHORIZE_IP, body: obj, trackedActionData: null, rejectWithError: true };
+    obj = { token: closure_0 };
+    obj[2] = { event: require(503) /* encodeProperties */.NetworkActionNames.AUTHORIZE_IP };
     return obj.post(obj);
   },
   verifyResend() {
-    let obj = importDefault(4977);
-    obj = { url: closure_9.VERIFY_RESEND, oldFormErrors: true };
-    obj = { event: require(480) /* isThrottled */.NetworkActionNames.USER_VERIFY_RESEND };
-    obj.trackedActionData = obj;
-    obj.rejectWithError = require(507) /* _isNativeReflectConstruct */.rejectWithMigratedError();
+    let obj = importDefault(4999);
+    obj = { url: closure_9.VERIFY_RESEND, oldFormErrors: true, trackedActionData: null, rejectWithError: null };
+    obj = { event: require(503) /* encodeProperties */.NetworkActionNames.USER_VERIFY_RESEND };
+    obj[2] = obj;
+    obj[3] = require(530) /* sendRequest */.rejectWithMigratedError();
     return obj.post(obj);
   },
   resetPassword(arg0, arg1, arg2) {
     let closure_0 = arg0;
     let closure_1 = arg1;
     let closure_2 = arg2;
-    return callback(async () => {
-      let obj = callback2(outer2_3[8]);
-      obj.dispatch({ type: "LOGIN" });
-      obj = { token: outer1_0, password: outer1_1, source: outer1_2 };
-      const Storage = callback(outer2_3[18]).Storage;
-      let value = Storage.get(outer2_10);
-      const tmp4 = outer2_15();
-      if (tmp5) {
-        tmp2.push_provider = tmp4;
-        tmp2.push_token = value;
+    return callback(function*() {
+      if (token === 2) {
+        token = 3;
+        HermesBuiltin.throwTypeError();
+      } else if (tmp6 === 3) {
+        if (arg0 === 1) {
+          throw arg1;
+        } else if (arg0 === 2) {
+          let obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
+        } else {
+          return { value: "HermesInternal", done: null };
+        }
+      } else {
+        try {
+          token = 2;
+          if (0 === ticket) {
+            if (arg0 === 1) {
+              token = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              token = 3;
+              obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            } else {
+              let mfa = tmp3;
+              let body = tmp7;
+              body = undefined;
+              mfa = undefined;
+              let sms;
+              let dependencyMap;
+              ticket = undefined;
+              token = undefined;
+              let backup;
+              let totp;
+              let c8;
+              outer1_1(709).dispatch({ type: "LOGIN" });
+              const obj1 = { token: null, password: null, source: null };
+              obj1[0] = outer1_0;
+              obj1[1] = outer1_1;
+              obj1[2] = outer1_2;
+              const Storage2 = outer1_0(595).Storage;
+              let value = Storage2.get(outer1_10);
+              const tmp75 = outer1_15();
+              let tmp31 = null != tmp75;
+              if (tmp31) {
+                tmp31 = null != value;
+              }
+              if (tmp31) {
+                obj1.push_provider = tmp75;
+                obj1.push_token = value;
+              }
+              const Storage = outer1_0(595).Storage;
+              value = Storage.get(outer1_11);
+              let tmp37 = null != outer1_14;
+              if (tmp37) {
+                tmp37 = null != value;
+              }
+              if (tmp37) {
+                obj1.push_voip_provider = tmp36;
+                obj1.push_voip_token = value;
+              }
+              dependencyMap = 1;
+              let obj4 = outer1_1(4999);
+              let obj2 = { url: null, body: null, oldFormErrors: true, trackedActionData: null, rejectWithError: null };
+              obj2[0] = outer1_9.RESET_PASSWORD;
+              obj2[1] = obj1;
+              const obj3 = { event: null };
+              obj3[0] = outer1_0(503).NetworkActionNames.USER_RESET_PASSWORD;
+              obj2[3] = obj3;
+              const obj12 = outer1_1(709);
+              tmp36 = outer1_14;
+              obj2[4] = outer1_0(530).rejectWithMigratedError();
+              ticket = 2;
+              token = 1;
+              obj4 = { value: null, done: false };
+              obj4[0] = obj4.post(obj2);
+              return obj4;
+            }
+          } else if (1 === tmp7) {
+            dependencyMap = 0;
+            outer1_9 = sms;
+            const v6OrEarlierAPIError = new outer1_0(4088).V6OrEarlierAPIError(outer1_9);
+            const outer1_8 = v6OrEarlierAPIError;
+            obj2 = outer1_1(709);
+            const obj5 = { type: "LOGIN_FAILURE", error: null };
+            obj5[1] = outer1_8;
+            obj2.dispatch(obj5);
+            throw outer1_8;
+          } else if (arg0 === 1) {
+            token = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            dependencyMap = 0;
+            token = 3;
+            const obj6 = { value: null, done: true };
+            obj6[0] = arg1;
+            return obj6;
+          } else {
+            body = arg1.body;
+            mfa = body.mfa;
+            sms = body.sms;
+            dependencyMap = body.webauthn;
+            ticket = body.ticket;
+            token = body.token;
+            backup = body.backup;
+            totp = body.totp;
+            let tmp14 = outer1_18;
+            if (mfa) {
+              let SUCCESS = tmp14.MFA;
+            } else {
+              SUCCESS = tmp14.SUCCESS;
+            }
+            obj = { result: null, sms: null, webauthn: null, ticket: null, token: null, backup: null, totp: null };
+            obj[0] = SUCCESS;
+            obj[1] = outer1_2;
+            obj[2] = dependencyMap;
+            obj[3] = c4;
+            obj[4] = token;
+            obj[5] = outer1_6;
+            tmp14 = outer1_7;
+            obj[6] = outer1_7;
+            dependencyMap = 0;
+            token = 3;
+          }
+        } catch (tmp45) {
+          sms = tmp45;
+          if (tmp4 === dependencyMap) {
+            token = tmp2;
+            throw tmp45;
+          } else {
+            ticket = tmp;
+          }
+        }
       }
-      const Storage2 = callback(outer2_3[18]).Storage;
-      value = Storage2.get(outer2_11);
-      if (tmp8) {
-        tmp2.push_voip_provider = outer2_14;
-        tmp2.push_voip_token = value;
-      }
-      let obj2 = callback2(outer2_3[12]);
-      obj = { url: outer2_9.RESET_PASSWORD, body: obj, oldFormErrors: true, trackedActionData: { event: callback(outer2_3[13]).NetworkActionNames.USER_RESET_PASSWORD } };
-      const obj1 = { event: callback(outer2_3[13]).NetworkActionNames.USER_RESET_PASSWORD };
-      tmp5 = null != tmp4 && null != value;
-      tmp8 = null != outer2_14 && null != value;
-      obj.rejectWithError = callback(outer2_3[14]).rejectWithMigratedError();
-      const body = yield obj2.post(obj).body;
-      obj2 = { result: body.mfa ? tmp11.MFA : tmp11.SUCCESS, sms: body.sms, webauthn: body.webauthn, ticket: body.ticket, token: body.token, backup: body.backup, totp: body.totp };
-      return obj2;
     })();
   },
   resetPasswordMFAv2(arg0) {
@@ -519,42 +961,187 @@ obj = {
     let importDefault;
     let require;
     ({ method: require, code: importDefault, ticket: importAll, password: dependencyMap, token: closure_4, source: closure_5 } = arg0);
-    return callback(async () => {
-      let obj = outer2_1(outer2_3[8]);
-      obj.dispatch({ type: "LOGIN_MFA" });
-      let obj1 = outer2_1(outer2_3[12]);
-      obj = { url: outer2_9.RESET_PASSWORD, body: obj, oldFormErrors: true };
-      obj = { code: outer1_1, ticket: outer1_2, password: outer1_3, token: outer1_4, source: outer1_5, method: outer1_0 };
-      obj1 = { event: outer2_0(outer2_3[13]).NetworkActionNames.USER_RESET_PASSWORD, properties: { mfa: true } };
-      obj.trackedActionData = obj1;
-      obj.rejectWithError = true;
-      return yield obj1.post(obj).body.token;
+    return callback(function*() {
+      if (v0 === 2) {
+        v0 = 3;
+        HermesBuiltin.throwTypeError();
+      } else if (tmp3 === 3) {
+        if (arg0 === 1) {
+          throw arg1;
+        } else if (arg0 === 2) {
+          let obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
+        } else {
+          return { value: "HermesInternal", done: null };
+        }
+      } else {
+        try {
+          v0 = 2;
+          if (0 === v02) {
+            if (arg0 === 1) {
+              v0 = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              v0 = 3;
+              obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            } else {
+              let obj5 = v02(outer1_3[8]);
+              obj5.dispatch({ type: "LOGIN_MFA" });
+              const obj1 = { url: null, body: null, oldFormErrors: true, trackedActionData: null, rejectWithError: true };
+              obj1[0] = outer1_9.RESET_PASSWORD;
+              const obj2 = { code: null, ticket: null, password: null, token: null, source: null, method: null };
+              obj2[0] = v02;
+              obj2[1] = outer1_2;
+              obj2[2] = outer1_3;
+              obj2[3] = outer1_4;
+              obj2[4] = outer1_5;
+              obj2[5] = v0;
+              obj1[1] = obj2;
+              const obj3 = { event: null, properties: null };
+              obj3[0] = v0(outer1_3[13]).NetworkActionNames.USER_RESET_PASSWORD;
+              obj3[1] = { mfa: true };
+              obj1[3] = obj3;
+              v02 = 1;
+              v0 = 1;
+              const obj4 = { value: null, done: false };
+              obj4[0] = v02(outer1_3[12]).post(obj1);
+              return obj4;
+            }
+          } else if (arg0 === 1) {
+            v0 = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            v0 = 3;
+            obj5 = { value: null, done: true };
+            obj5[0] = arg1;
+            return obj5;
+          } else {
+            v0 = 3;
+            obj = { value: null, done: true };
+            obj[0] = arg1.body.token;
+            return obj;
+          }
+        } catch (tmp5) {
+          v0 = tmp;
+          throw tmp5;
+        }
+      }
     })();
   },
-  forgotPassword(arg0) {
-    let closure_0 = arg0;
-    return callback(async () => {
-      let obj = outer2_1(outer2_3[8]);
-      obj.dispatch({ type: "FORGOT_PASSWORD_REQUEST" });
-      let obj1 = outer2_1(outer2_3[12]);
-      obj = { url: outer2_9.FORGOT_PASSWORD, body: obj, oldFormErrors: true };
-      obj = { login: outer1_0 };
-      obj1 = { event: callback(outer2_3[13]).NetworkActionNames.FORGOT_PASSWORD };
-      obj.trackedActionData = obj1;
-      obj.rejectWithError = callback(outer2_3[14]).rejectWithMigratedError();
-      const obj6 = callback(outer2_3[14]);
-      const tmp2 = yield obj1.post(obj);
-      outer2_1(outer2_3[8]).dispatch({ type: "FORGOT_PASSWORD_SENT" });
-      return tmp2.body.method;
+  forgotPassword(outer1_6) {
+    let closure_0 = outer1_6;
+    return callback(function*() {
+      if (c5 === 2) {
+        c5 = 3;
+        HermesBuiltin.throwTypeError();
+      } else if (tmp6 === 3) {
+        if (arg0 === 1) {
+          throw arg1;
+        } else if (arg0 === 2) {
+          let obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
+        } else {
+          return { value: "HermesInternal", done: null };
+        }
+      } else {
+        try {
+          c5 = 2;
+          if (0 === c4) {
+            if (arg0 === 1) {
+              c5 = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              c5 = 3;
+              obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            } else {
+              let c1 = tmp3;
+              let body = tmp7;
+              body = undefined;
+              c1 = undefined;
+              outer1_1(709).dispatch({ type: "FORGOT_PASSWORD_REQUEST" });
+              let dependencyMap = 1;
+              const obj12 = outer1_1(709);
+              const obj1 = { url: null, body: null, oldFormErrors: true, trackedActionData: null, rejectWithError: null };
+              obj1[0] = outer1_9.FORGOT_PASSWORD;
+              const obj2 = { login: null };
+              obj2[0] = outer1_0;
+              obj1[1] = obj2;
+              let obj3 = { event: null };
+              obj3[0] = outer1_0(503).NetworkActionNames.FORGOT_PASSWORD;
+              obj1[3] = obj3;
+              const obj13 = outer1_1(4999);
+              obj1[4] = outer1_0(530).rejectWithMigratedError();
+              c4 = 2;
+              c5 = 1;
+              const obj4 = { value: null, done: false };
+              obj4[0] = obj13.post(obj1);
+              return obj4;
+            }
+          } else if (1 === tmp7) {
+            dependencyMap = 0;
+            const outer1_2 = closure_2;
+            const v6OrEarlierAPIError = new outer1_0(4088).V6OrEarlierAPIError(outer1_2);
+            outer1_1 = v6OrEarlierAPIError;
+            if (outer1_1.code === outer1_12.PHONE_VERIFICATION_REQUIRED) {
+              let obj5 = outer1_1(709);
+              obj5 = { type: "LOGIN_PASSWORD_RECOVERY_PHONE_VERIFICATION", credentials: null };
+              const obj6 = { login: null };
+              obj6[0] = body;
+              obj5[1] = obj6;
+              obj5.dispatch(obj5);
+              c5 = 3;
+              return { value: false, done: true };
+            } else {
+              obj3 = outer1_1(709);
+              const obj7 = { type: "LOGIN_FAILURE", error: null };
+              obj7[1] = outer1_1;
+              obj3.dispatch(obj7);
+              throw outer1_1;
+            }
+          } else if (arg0 === 1) {
+            c5 = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            dependencyMap = 0;
+            c5 = 3;
+            const obj8 = { value: null, done: true };
+            obj8[0] = arg1;
+            return obj8;
+          } else {
+            body = arg1;
+            obj = outer1_1(709);
+            obj.dispatch({ type: "FORGOT_PASSWORD_SENT" });
+            dependencyMap = 0;
+            c5 = 3;
+            const obj9 = { value: null, done: true };
+            obj9[0] = body.body.method;
+            return obj9;
+          }
+        } catch (tmp39) {
+          closure_2 = tmp39;
+          if (tmp4 === dependencyMap) {
+            c5 = tmp2;
+            throw tmp39;
+          } else {
+            c4 = tmp;
+          }
+        }
+      }
     })();
   },
   setFingerprint(fingerprint) {
-    let obj = importDefault(686);
+    let obj = importDefault(709);
     obj = { type: "FINGERPRINT", fingerprint };
     obj.dispatch(obj);
   },
   getExperiments(withGuildExperiments) {
-    let obj = importDefault(686);
+    let obj = importDefault(709);
     obj = { type: "EXPERIMENTS_FETCH", withGuildExperiments };
     obj.dispatch(obj);
   },
@@ -564,64 +1151,65 @@ obj = {
       clearTimeout(timeout);
       const _setTimeout = setTimeout;
       timeout = setTimeout(() => {
-        outer1_1(outer1_3[8]).dispatch({ type: "SET_CONSENT_REQUIRED", consentRequired: true });
+        callback(709).dispatch({ type: "SET_CONSENT_REQUIRED", consentRequired: true });
       }, 5000);
-      const HTTP = require(507) /* _isNativeReflectConstruct */.HTTP;
-      let obj = { url: closure_9.AUTH_LOCATION_METADATA, retries: 2, oldFormErrors: true, rejectWithError: true };
+      const HTTP = require(530) /* sendRequest */.HTTP;
+      let obj = { url: null, retries: 2, oldFormErrors: true, rejectWithError: true };
+      obj[0] = closure_9.AUTH_LOCATION_METADATA;
       const value = HTTP.get(obj);
       nextPromise = value.then((body) => {
         clearTimeout(closure_4);
-        if (null == outer1_8.getAuthenticationConsentRequired()) {
-          let consent_required;
-          if (null != body) {
+        if (null == authenticationConsentRequired.getAuthenticationConsentRequired()) {
+          let flag;
+          if (body != null) {
             body = body.body;
-            if (null != body) {
-              consent_required = body.consent_required;
+            if (body != null) {
+              flag = body.consent_required;
             }
           }
-          let obj = outer1_1(outer1_3[8]);
-          obj = { type: "SET_CONSENT_REQUIRED", consentRequired: null == consent_required || consent_required };
+          if (flag == null) {
+            flag = true;
+          }
+          let obj = callback(709);
+          obj = { type: "SET_CONSENT_REQUIRED", consentRequired: null };
+          obj[1] = flag;
           obj.dispatch(obj);
-          const tmp3 = null == consent_required || consent_required;
         }
-        obj = { type: "SET_LOCATION_METADATA" };
         let country_code;
-        if (null != body) {
+        if (body != null) {
           const body2 = body.body;
-          if (null != body2) {
+          if (body2 != null) {
             country_code = body2.country_code;
           }
         }
-        let tmp8;
-        if (null != country_code) {
-          tmp8 = country_code;
-        }
-        obj.countryCode = tmp8;
-        outer1_1(outer1_3[8]).dispatch(obj);
+        callback(709).dispatch({ type: "SET_LOCATION_METADATA", countryCode: country_code });
+        let c17 = null;
         let prop;
-        if (null != body) {
+        if (body != null) {
           const body3 = body.body;
-          if (null != body3) {
+          if (body3 != null) {
             prop = body3.promotional_email_opt_in;
           }
         }
         if (null != prop) {
-          ({ required: obj5.required, pre_checked: obj5.checked, pre_checked: obj5.preChecked } = body.body.promotional_email_opt_in);
-          outer1_6({});
-          const obj1 = {};
+          obj = { required: null, checked: null, preChecked: null };
+          ({ required: obj4[0], pre_checked: obj4[1], pre_checked: obj4[2] } = body.body.promotional_email_opt_in);
+          callback2(obj);
         }
       }, () => {
         clearTimeout(closure_4);
-        outer1_1(outer1_3[8]).dispatch({ type: "SET_CONSENT_REQUIRED", consentRequired: true });
+        callback(709).dispatch({ type: "SET_CONSENT_REQUIRED", consentRequired: true });
+        let c17 = null;
       });
     }
     return nextPromise;
   },
   closeSuspendedUser() {
-    importDefault(686).dispatch({ type: "CLOSE_SUSPENDED_USER" });
+    importDefault(709).dispatch({ type: "CLOSE_SUSPENDED_USER" });
   }
 };
-let result = require("_isNativeReflectConstruct").fileFinishedImporting("actions/AuthenticationActionCreators.tsx");
+let tmp4 = new require("hasConsented")("AuthenticationActionCreators");
+let result = require("fetchFingerprint").fileFinishedImporting("actions/AuthenticationActionCreators.tsx");
 
 export default obj;
 export const PasswordResetResult = obj;

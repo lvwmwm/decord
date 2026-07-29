@@ -1,23 +1,23 @@
-// Module ID: 13810
-// Function ID: 105792
+// Module ID: 13831
+// Function ID: 13832
 // Name: route
-// Dependencies: [3802, 7733, 653, 566, 1212, 10099, 10428, 13811, 2]
+// Dependencies: [3826, 7756, 676, 589, 1236, 10120, 10452, 13832, 2]
 
-// Module 13810 (route)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 13831 (route)
+import upsertRelationship from "upsertRelationship";
 import createToggle from "createToggle";
 
 const require = arg1;
 createToggle = {
   useTitle() {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(require(1212) /* getSystemLocale */.t.PFOUKW);
+    const intl = require(1236) /* getSystemLocale */.intl;
+    return intl.string(require(1236) /* getSystemLocale */.t.PFOUKW);
   },
   useDescription: function useAccountBlockedUsersSettingDescription() {
-    const items = [_isNativeReflectConstruct];
-    const numberOfBlockedUsers = require(566) /* initialize */.useStateFromStores(items, () => "" + outer1_2.getBlockedIDs().length);
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.format(require(1212) /* getSystemLocale */.t["r91W/h"], { numberOfBlockedUsers });
+    const items = [upsertRelationship];
+    const numberOfBlockedUsers = require(589) /* initialize */.useStateFromStores(items, () => "" + blockedIDs.getBlockedIDs().length);
+    const intl = require(1236) /* getSystemLocale */.intl;
+    return intl.format(require(1236) /* getSystemLocale */.t["r91W/h"], { numberOfBlockedUsers });
   },
   IconComponent: require("DenyIcon").DenyIcon,
   parent: require("MobileSetting").MobileSetting.CONTENT_AND_SOCIAL_DISCORD,
@@ -26,7 +26,7 @@ createToggle = {
 createToggle = {
   route: require("ME").UserSettingsSections.BLOCKED_USERS_V2,
   getComponent() {
-    return require(13811) /* BlockedUsersList */.default;
+    return require(13832) /* BlockedUsersList */.default;
   }
 };
 createToggle = createToggle.createRoute(createToggle);

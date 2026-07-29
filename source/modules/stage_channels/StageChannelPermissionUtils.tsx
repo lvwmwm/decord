@@ -1,143 +1,159 @@
-// Module ID: 4983
-// Function ID: 42555
-// Name: createOrUpdateModeratorOverwrite
-// Dependencies: [3794, 1391, 1194, 1348, 1838, 3793, 1353, 653, 483, 3798, 1356, 566, 2]
-// Exports: canLurkerListen, createModeratorOverwrite, isEmptyOverwrite, removeModeratorOverwrite, useCanCreateStageChannelByGuild, useCanModerateRequestToSpeak, useCanUpdateStageChannelModerators
+// Module ID: 5005
+// Function ID: 5006
+// Name: createModeratorOverwrite
+// Dependencies: [3818, 1415, 1218, 1372, 1862, 3817, 1377, 676, 506, 3822, 1380, 589, 2]
+// Exports: canLurkerListen, createModeratorOverwrite, createOrUpdateModeratorOverwrite, isEmptyOverwrite, removeModeratorOverwrite, useCanCreateStageChannelByGuild, useCanModerateRequestToSpeak, useCanUpdateStageChannelModerators
 
-// Module 4983 (createOrUpdateModeratorOverwrite)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import { isGuildOwner } from "isGuildOwner";
-import closure_5 from "_isNativeReflectConstruct";
-import closure_6 from "_isNativeReflectConstruct";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import closure_8 from "_isNativeReflectConstruct";
-import closure_9 from "_isNativeReflectConstruct";
+// Module 5005 (createModeratorOverwrite)
+import initialize from "initialize";
+import { isGuildOwner } from "GuildNSFWContentLevel";
+import fetchFingerprint from "fetchFingerprint";
+import ensureGuildLoaded from "ensureGuildLoaded";
+import createGuildRecordFromRust from "createGuildRecordFromRust";
+import getUncachedChannelPermissions from "getUncachedChannelPermissions";
+import handleStageInstanceCreateOrUpdate from "handleStageInstanceCreateOrUpdate";
 import ME from "ME";
 
-let closure_10;
-let closure_11;
+let c10;
+let unpackModuleId;
 const require = arg1;
-function createOrUpdateModeratorOverwrite(id, type, deny) {
-  const obj = { id, type };
-  deny = undefined;
-  if (null != deny) {
-    deny = deny.deny;
-  }
-  if (null == deny) {
-    deny = importAll(3798).NONE;
-  }
-  obj.deny = importAll(483).remove(deny, require(1356) /* Permissions */.MODERATE_STAGE_CHANNEL_PERMISSIONS);
-  const obj2 = importAll(483);
-  let allow;
-  if (null != deny) {
-    allow = deny.allow;
-  }
-  if (null == allow) {
-    allow = importAll(3798).NONE;
-  }
-  obj.allow = importAll(483).combine(require(1356) /* Permissions */.MODERATE_STAGE_CHANNEL_PERMISSIONS, allow);
-  return obj;
-}
-({ GuildFeatures: closure_10, Permissions: closure_11 } = ME);
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/stage_channels/StageChannelPermissionUtils.tsx");
+({ GuildFeatures: c10, Permissions: unpackModuleId } = ME);
+const result = require("fetchFingerprint").fileFinishedImporting("modules/stage_channels/StageChannelPermissionUtils.tsx");
 
-export const createModeratorOverwrite = function createModeratorOverwrite(id, MEMBER, outer3_0) {
-  let tmp2;
-  if (null != outer3_0) {
-    tmp2 = outer3_0.permissionOverwrites[id];
-  }
-  return createOrUpdateModeratorOverwrite(id, MEMBER, tmp2);
-};
-export { createOrUpdateModeratorOverwrite };
-export const removeModeratorOverwrite = function removeModeratorOverwrite(id, MEMBER, closure_0) {
+export const createModeratorOverwrite = function createModeratorOverwrite(id, MEMBER, c0) {
   let tmp;
-  if (null != closure_0) {
-    tmp = closure_0.permissionOverwrites[id];
+  if (c0 != null) {
+    tmp = c0.permissionOverwrites[id];
   }
-  const obj = { id, type: MEMBER };
+  const obj = { id, type: MEMBER, deny: null, allow: null };
   let deny;
-  if (null != tmp) {
+  if (tmp != null) {
     deny = tmp.deny;
   }
-  if (null == deny) {
-    deny = importAll(3798).NONE;
+  if (deny == null) {
+    deny = tmp2(3822).NONE;
   }
-  obj.deny = deny;
+  obj[2] = importAll(506).remove(deny, require(1380) /* Permissions */.MODERATE_STAGE_CHANNEL_PERMISSIONS);
+  const obj2 = importAll(506);
   let allow;
-  if (null != tmp) {
+  if (tmp != null) {
     allow = tmp.allow;
   }
-  if (null == allow) {
-    allow = importAll(3798).NONE;
+  if (allow == null) {
+    allow = tmp2(3822).NONE;
   }
-  obj.allow = importAll(483).remove(allow, require(1356) /* Permissions */.MODERATE_STAGE_CHANNEL_PERMISSIONS);
+  obj[3] = importAll(506).combine(require(1380) /* Permissions */.MODERATE_STAGE_CHANNEL_PERMISSIONS, allow);
   return obj;
 };
-export const isEmptyOverwrite = function isEmptyOverwrite(arg0) {
+export const createOrUpdateModeratorOverwrite = function createOrUpdateModeratorOverwrite(id, type, deny) {
+  const obj = { id, type, deny: null, allow: null };
+  deny = undefined;
+  if (deny != null) {
+    deny = deny.deny;
+  }
+  if (deny == null) {
+    deny = tmp(3822).NONE;
+  }
+  obj[2] = importAll(506).remove(deny, require(1380) /* Permissions */.MODERATE_STAGE_CHANNEL_PERMISSIONS);
+  const obj2 = importAll(506);
+  let allow;
+  if (deny != null) {
+    allow = deny.allow;
+  }
+  if (allow == null) {
+    allow = tmp(3822).NONE;
+  }
+  obj[3] = importAll(506).combine(require(1380) /* Permissions */.MODERATE_STAGE_CHANNEL_PERMISSIONS, allow);
+  return obj;
+};
+export const removeModeratorOverwrite = function removeModeratorOverwrite(id, MEMBER, closure_0) {
+  let tmp;
+  if (closure_0 != null) {
+    tmp = closure_0.permissionOverwrites[id];
+  }
+  const obj = { id, type: MEMBER, deny: null, allow: null };
+  let deny;
+  if (tmp != null) {
+    deny = tmp.deny;
+  }
+  if (deny == null) {
+    deny = importAll(3822).NONE;
+  }
+  obj[2] = deny;
+  let allow;
+  if (tmp != null) {
+    allow = tmp.allow;
+  }
+  if (allow == null) {
+    allow = importAll(3822).NONE;
+  }
+  obj[3] = importAll(506).remove(allow, require(1380) /* Permissions */.MODERATE_STAGE_CHANNEL_PERMISSIONS);
+  return obj;
+};
+export const isEmptyOverwrite = function isEmptyOverwrite(c2) {
   let allow;
   let deny;
-  ({ allow, deny } = arg0);
-  let equalsResult = importAll(483).equals(allow, importAll(3798).NONE);
+  ({ allow, deny } = c2);
+  let equalsResult = importAll(506).equals(allow, importAll(3822).NONE);
   if (equalsResult) {
-    equalsResult = importAll(483).equals(deny, importAll(3798).NONE);
-    const obj2 = importAll(483);
+    equalsResult = tmp(506).equals(deny, tmp(3822).NONE);
+    const tmpResult = tmp(506);
   }
   return equalsResult;
 };
 export const useCanCreateStageChannelByGuild = function useCanCreateStageChannelByGuild(guildId) {
   const _require = guildId;
-  const items = [closure_8, closure_5, _createForOfIteratorHelperLoose];
+  const items = [getUncachedChannelPermissions, fetchFingerprint, createGuildRecordFromRust];
   const items1 = [guildId];
-  return _require(566).useStateFromStores(items, () => {
+  return _require(589).useStateFromStores(items, () => {
     const id = outer1_5.getId();
     const guild = outer1_7.getGuild(guildId);
     let tmp3 = null != guild;
     if (tmp3) {
       const features = guild.features;
-      const tmp5 = !features.has(outer1_10.COMMUNITY);
-      let tmp6 = !tmp5;
-      if (!tmp5) {
-        const tmp8 = !outer1_4(guild, id);
-        let canResult = !tmp8;
-        if (tmp8) {
+      let hasItem = features.has(outer1_10.COMMUNITY);
+      if (hasItem) {
+        let canResult = outer1_4(guild, id);
+        if (!canResult) {
           canResult = outer1_8.can(guildId(outer1_2[10]).CREATE_STAGE_CHANNEL_PERMISSIONS, guild);
         }
-        tmp6 = canResult;
+        hasItem = canResult;
       }
-      tmp3 = tmp6;
+      tmp3 = hasItem;
     }
     return tmp3;
   }, items1);
 };
 export const useCanUpdateStageChannelModerators = function useCanUpdateStageChannelModerators(id) {
   const _require = id;
-  const items = [closure_8, _createForOfIteratorHelperLoose, closure_6];
+  const items = [getUncachedChannelPermissions, createGuildRecordFromRust, ensureGuildLoaded];
   const items1 = [id];
-  return _require(566).useStateFromStores(items, () => {
+  return _require(589).useStateFromStores(items, () => {
     const channel = outer1_6.getChannel(id);
     let guildId;
-    if (null != channel) {
+    if (channel != null) {
       guildId = channel.getGuildId();
     }
-    let tmp3 = !outer1_8.can(outer1_11.ADMINISTRATOR, outer1_7.getGuild(guildId));
-    if (tmp3) {
-      tmp3 = !outer1_8.can(outer1_11.MANAGE_ROLES, channel, undefined, undefined, true);
+    let canResult = outer1_8.can(outer1_11.ADMINISTRATOR, outer1_7.getGuild(guildId));
+    let tmp5 = !canResult;
+    if (!canResult) {
+      tmp5 = !obj2.can(outer1_11.MANAGE_ROLES, channel, undefined, undefined, true);
     }
-    let canResult = !tmp3;
-    if (tmp3) {
-      canResult = outer1_8.can(id(outer1_2[10]).UPDATE_STAGE_CHANNEL_MODERATOR_PERMISSIONS, channel);
+    canResult = !tmp5;
+    if (tmp5) {
+      canResult = obj2.can(id(outer1_2[10]).UPDATE_STAGE_CHANNEL_MODERATOR_PERMISSIONS, channel);
     }
     return canResult;
   }, items1);
 };
 export const useCanModerateRequestToSpeak = function useCanModerateRequestToSpeak(id) {
   const _require = id;
-  const items = [closure_6, closure_8];
+  const items = [ensureGuildLoaded, getUncachedChannelPermissions];
   const items1 = [id];
-  return _require(566).useStateFromStores(items, () => {
+  return _require(589).useStateFromStores(items, () => {
     let canResult = null != closure_0;
     if (canResult) {
-      canResult = outer1_8.can(outer1_11.MUTE_MEMBERS, outer1_6.getChannel(closure_0));
+      canResult = outer1_8.can(outer1_11.MUTE_MEMBERS, outer1_6.getChannel(tmp));
     }
     return canResult;
   }, items1);
@@ -146,17 +162,15 @@ export const canLurkerListen = function canLurkerListen(channel) {
   const tmp = null == channel || !channel.isGuildStageVoice();
   let tmp2 = !tmp;
   if (!tmp) {
-    const tmp4 = !lurking.isLurking(channel.guild_id);
-    let tmp5 = !tmp4;
-    if (!tmp4) {
-      const tmp7 = !_public.isPublic(channel.id);
-      let canResult = !tmp7;
-      if (!tmp7) {
-        canResult = closure_8.can(require(1356) /* Permissions */.JOIN_VOCAL_CHANNEL_PERMISSIONS, channel);
+    let isLurkingResult = lurking.isLurking(channel.guild_id);
+    if (isLurkingResult) {
+      let canResult = _public.isPublic(channel.id);
+      if (canResult) {
+        canResult = getUncachedChannelPermissions.can(require(1380) /* Permissions */.JOIN_VOCAL_CHANNEL_PERMISSIONS, channel);
       }
-      tmp5 = canResult;
+      isLurkingResult = canResult;
     }
-    tmp2 = tmp5;
+    tmp2 = isLurkingResult;
   }
   return tmp2;
 };

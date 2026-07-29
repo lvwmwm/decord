@@ -1,23 +1,23 @@
-// Module ID: 14770
-// Function ID: 112429
+// Module ID: 14796
+// Function ID: 14797
 // Name: BalanceWidget
-// Dependencies: [31, 27, 653, 655, 1345, 5011, 33, 1324, 4695, 4161, 1212, 9642, 1334, 675, 10936, 5014, 14771, 8695, 4133, 9794, 1935, 5517, 5779, 9793, 3981, 4593, 4165, 689, 2]
+// Dependencies: [19, 17, 676, 678, 1369, 5033, 21, 1348, 4717, 4185, 1236, 9664, 1358, 698, 10960, 5036, 14797, 8719, 4157, 9816, 1959, 5535, 5797, 9815, 4005, 4615, 4189, 712, 2]
 // Exports: default
 
-// Module 14770 (BalanceWidget)
-import result from "result";
-import { View } from "_createForOfIteratorHelperLoose";
+// Module 14796 (BalanceWidget)
+import ref from "ref";
+import { View } from "module_8719";
 import { AnalyticEvents } from "ME";
 import { CollectiblesMobileShopScreen as closure_6 } from "items";
 import ContentDismissActionType from "ContentDismissActionType";
 import { RewardFilterTypes } from "QuestsExperimentLocations";
-import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import jsxProd from "QUICK_SWITCHER";
+import createCacheKey from "createCacheKey";
 
-let closure_10;
-let closure_11;
-let closure_7;
-let closure_8;
+let c10;
+let error;
+let metroImportAll;
+let unpackModuleId;
 const require = arg1;
 function BalanceWidget(arg0) {
   let accessibilityLabel;
@@ -26,43 +26,46 @@ function BalanceWidget(arg0) {
   let onPress;
   let style;
   ({ onPress, style, accessibilityLabel, accessibilityState, children } = arg0);
-  const tmp = callback3(importDefault(1324)("BalanceWidgetMenu"));
-  let obj = { onPress, style: items, accessible: true, accessibilityRole: "button", accessibilityLabel, accessibilityState, activeOpacity: 0.8 };
+  const tmp = callback3(importDefault(1348)("BalanceWidgetMenu"));
+  let obj = { onPress, style: items, accessible: true, accessibilityRole: "button", accessibilityLabel, accessibilityState, activeOpacity: 0.8, children: null };
   items = [tmp.pressable, style];
-  obj = { variant: "text-sm/semibold", color: "text-default", style: tmp.label };
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj.children = intl.string(require(1212) /* getSystemLocale */.t.gGtZpz);
-  const items1 = [callback(require(4161) /* Text */.Text, obj), ];
+  obj = { variant: "text-sm/semibold", color: "text-default", style: tmp.label, children: null };
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj[3] = intl.string(require(1236) /* getSystemLocale */.t.gGtZpz);
+  const items1 = [callback(require(4185) /* Text */.Text, obj), ];
   obj = { style: tmp.pill, children };
   items1[1] = callback(View, obj);
-  obj.children = items1;
-  return callback2(require(4695) /* PressableBase */.PressableOpacity, obj);
+  obj[7] = items1;
+  return callback2(require(4717) /* PressableBase */.PressableOpacity, obj);
 }
 class OrbsOnboardingMenuDismissibleContent {
   constructor(arg0) {
     style = global.style;
-    obj = {};
+    obj = { contentTypes: null, groupName: null, children: null };
     tmp = require("SelectedDismissibleContent");
     items = [];
     items[0] = require("DismissibleContent").DismissibleContent.VIRTUAL_CURRENCY_MOBILE_ONBOARDING_PILL;
-    obj.contentTypes = items;
-    obj.groupName = c8.VIRTUAL_CURRENCY_MOBILE_ONBOARDING;
-    obj.children = function children(markAsDismissed) {
+    obj[0] = items;
+    obj[1] = AnalyticEvents.VIRTUAL_CURRENCY_MOBILE_ONBOARDING;
+    obj[2] = function children(markAsDismissed) {
       markAsDismissed = markAsDismissed.markAsDismissed;
       if (markAsDismissed.visibleContent === style(outer1_2[12]).DismissibleContent.VIRTUAL_CURRENCY_MOBILE_ONBOARDING_PILL) {
         function handleOnboardingPress() {
-          markAsDismissed(outer2_7.TAKE_ACTION);
-          let obj = outer2_1(outer2_2[13]);
-          obj.track(outer2_5.USER_PROFILE_ACTION, { profile_action: "ORBS_BALANCE_PRESSED" });
-          obj = { filter: outer2_9.VIRTUAL_CURRENCY, fromContent: style(outer2_2[15]).QuestContent.MOBILE_ORBS_ONBOARDING_DC };
-          style(outer2_2[14]).openQuestHome(obj);
+          markAsDismissed(outer1_7.TAKE_ACTION);
+          let obj = outer1_1(outer1_2[13]);
+          obj.track(outer1_5.USER_PROFILE_ACTION, { profile_action: "ORBS_BALANCE_PRESSED" });
+          obj = { filter: outer1_9.VIRTUAL_CURRENCY, fromContent: markAsDismissed(outer1_2[15]).QuestContent.MOBILE_ORBS_ONBOARDING_DC };
+          markAsDismissed(outer1_2[14]).openQuestHome(obj);
         }
-        let obj = { onPress: handleOnboardingPress, style: markAsDismissed };
-        const intl = style(outer1_2[10]).intl;
-        obj.accessibilityLabel = intl.string(style(outer1_2[10]).t.Kt2QDh);
-        obj = { onPress: handleOnboardingPress, accessible: false };
-        obj.children = outer1_10(outer1_1(outer1_2[16]), obj);
-        return outer1_10(outer1_13, obj);
+        let obj = { onPress: null, style: null, accessibilityLabel: null, children: null };
+        obj[0] = handleOnboardingPress;
+        obj[1] = markAsDismissed;
+        const intl = tmp(tmp2[10]).intl;
+        obj[2] = intl.string(tmp(tmp2[10]).t.Kt2QDh);
+        obj = { onPress: null, accessible: false };
+        obj[0] = handleOnboardingPress;
+        obj[3] = outer1_10(outer1_1(tmp2[16]), obj);
+        return outer1_10(outer1_12, obj);
       } else {
         return null;
       }
@@ -71,114 +74,108 @@ class OrbsOnboardingMenuDismissibleContent {
   }
 }
 function BalanceWidgetMenu(style) {
-  let obj = str(8695);
+  let str;
+  let obj = str(8719);
   str = obj.useFetchVirtualCurrencyBalance().balance;
   let items = [str];
   const callback = React.useCallback(() => {
     let obj = outer1_1(outer1_2[13]);
     obj.track(outer1_5.USER_PROFILE_ACTION, { profile_action: "ORBS_BALANCE_PRESSED" });
     let obj1 = outer1_1(outer1_2[18]);
-    obj = { balance: str };
-    obj = {};
+    obj = { balance: str, primaryButtonConfig: null, secondaryButtonConfig: null, source: null };
+    obj = { buttonText: null, onButtonPress: null };
     const intl = str(outer1_2[10]).intl;
-    obj.buttonText = intl.string(str(outer1_2[10]).t.WrzJBf);
-    obj.onButtonPress = function onButtonPress() {
-      let obj = outer2_1(outer2_2[13]);
-      obj = { type: "GO_TO_SHOP", source: outer2_1(outer2_2[21]).YOU_SCREEN, balance: outer1_0 };
-      obj.track(outer2_5.ORB_BALANCE_ACTION_SHEET_ACTION, obj);
-      outer2_1(outer2_2[18]).hideActionSheet();
-      const obj3 = outer2_1(outer2_2[18]);
-      obj = {};
-      const items = [outer2_1(outer2_2[21]).COLLECTIBLES_SHOP];
-      obj.analyticsLocations = items;
-      obj.analyticsSource = outer2_1(outer2_2[21]).COLLECTIBLES_SHOP;
-      obj.screen = outer2_6.ORBS;
-      const result = str(outer2_2[22]).openCollectiblesShopMobile(obj);
+    obj[0] = intl.string(str(outer1_2[10]).t.WrzJBf);
+    obj[1] = function onButtonPress() {
+      let obj = outer1_1(outer1_2[13]);
+      obj = { type: "GO_TO_SHOP", source: outer1_1(outer1_2[21]).YOU_SCREEN, balance: closure_0 };
+      obj.track(outer1_5.ORB_BALANCE_ACTION_SHEET_ACTION, obj);
+      outer1_1(outer1_2[18]).hideActionSheet();
+      const obj3 = outer1_1(outer1_2[18]);
+      obj = { analyticsLocations: null, analyticsSource: null, screen: null };
+      const items = [outer1_1(outer1_2[21]).COLLECTIBLES_SHOP];
+      obj[0] = items;
+      obj[1] = outer1_1(outer1_2[21]).COLLECTIBLES_SHOP;
+      obj[2] = outer1_6.ORBS;
+      const result = outer1_0(outer1_2[22]).openCollectiblesShopMobile(obj);
     };
-    obj.primaryButtonConfig = obj;
-    obj1 = {};
+    obj[1] = obj;
+    obj1 = { buttonText: null, onButtonPress: null };
     const intl2 = str(outer1_2[10]).intl;
-    obj1.buttonText = intl2.string(str(outer1_2[10]).t.SymzJC);
-    obj1.onButtonPress = function onButtonPress() {
-      let obj = outer2_1(outer2_2[13]);
-      obj = { type: "GO_TO_QUEST_HOME", source: outer2_1(outer2_2[21]).YOU_SCREEN, balance: outer1_0 };
-      obj.track(outer2_5.ORB_BALANCE_ACTION_SHEET_ACTION, obj);
-      outer2_1(outer2_2[18]).hideActionSheet();
-      const obj3 = outer2_1(outer2_2[18]);
-      obj = { mergeExistingRoutes: true, filter: outer2_9.VIRTUAL_CURRENCY, fromContent: str(outer2_2[15]).QuestContent.ORBS_BALANCE_MENU };
-      str(outer2_2[14]).openQuestHome(obj);
+    obj1[0] = intl2.string(str(outer1_2[10]).t.SymzJC);
+    obj1[1] = function onButtonPress() {
+      let obj = outer1_1(outer1_2[13]);
+      obj = { type: "GO_TO_QUEST_HOME", source: outer1_1(outer1_2[21]).YOU_SCREEN, balance: closure_0 };
+      obj.track(outer1_5.ORB_BALANCE_ACTION_SHEET_ACTION, obj);
+      outer1_1(outer1_2[18]).hideActionSheet();
+      const obj3 = outer1_1(outer1_2[18]);
+      obj = { mergeExistingRoutes: true, filter: outer1_9.VIRTUAL_CURRENCY, fromContent: outer1_0(outer1_2[15]).QuestContent.ORBS_BALANCE_MENU };
+      outer1_0(outer1_2[14]).openQuestHome(obj);
     };
-    obj.secondaryButtonConfig = obj1;
-    obj.source = outer1_1(outer1_2[21]).YOU_SCREEN;
-    obj1.openLazy(() => str(outer2_2[20])(outer2_2[19], outer2_2.paths).then((arg0) => arg0.default), "BalanceWidgetMenu", obj);
+    obj[2] = obj1;
+    obj[3] = outer1_1(outer1_2[21]).YOU_SCREEN;
+    obj1.openLazy(() => callback(paths[20])(paths[19], paths.paths).then((arg0) => arg0.default), "BalanceWidgetMenu", obj);
   }, items);
-  obj = { onPress: callback, style: style.style };
-  let intl = str(1212).intl;
-  obj = {};
-  str = undefined;
-  if (null != str) {
-    str = str.toString();
+  obj = { onPress: callback, style: style.style, accessibilityLabel: null, children: null };
+  let intl = str(1236).intl;
+  let str2;
+  if (str != null) {
+    str2 = str.toString();
   }
-  let str2 = "";
-  if (null != str) {
-    str2 = str;
+  if (str2 == null) {
+    str2 = "";
   }
-  obj.balance = str2;
-  obj.accessibilityLabel = intl.formatToPlainString(str(1212).t.zPaLL9, obj);
-  obj.children = callback(importDefault(9793), { balance: str, onPress: callback, accessible: false });
-  return callback(BalanceWidget, obj);
+  obj[2] = intl.formatToPlainString(str(1236).t.zPaLL9, { balance: str2 });
+  obj[3] = closure_10(importDefault(9815), { balance: str, onPress: callback, accessible: false });
+  return closure_10(BalanceWidget, obj);
 }
-({ ContentDismissActionType: closure_7, DismissibleContentGroupName: closure_8 } = ContentDismissActionType);
-({ jsx: closure_10, jsxs: closure_11 } = jsxProd);
-let closure_12 = _createForOfIteratorHelperLoose.createStyles((arg0) => {
-  let obj = {};
-  obj = { flex: 1, flexDirection: "row", alignItems: "center", flexWrap: "wrap", gap: importDefault(689).space.PX_8 };
+({ ContentDismissActionType: error, DismissibleContentGroupName: metroImportAll } = ContentDismissActionType);
+({ jsx: c10, jsxs: unpackModuleId } = jsxProd);
+let closure_15 = createCacheKey.createStyles((arg0) => {
+  const pressable = { flex: 1, flexDirection: "row", alignItems: "center", flexWrap: "wrap", gap: importDefault(712).space.PX_8 };
   if (arg0) {
-    obj = { paddingHorizontal: importDefault(689).space.PX_8, paddingVertical: importDefault(689).space.PX_8 };
-    let obj1 = obj;
+    let obj = { paddingHorizontal: null, paddingVertical: null };
+    obj[0] = tmp(712).space.PX_8;
+    obj[1] = tmp(712).space.PX_8;
   } else {
-    obj1 = { padding: 16 };
+    obj = { padding: 16 };
   }
-  const merged = Object.assign(obj1);
-  const radii = importDefault(689).radii;
-  obj["borderRadius"] = arg0 ? radii.md : radii.lg;
-  obj.pressable = obj;
-  obj.label = { flex: 1 };
-  obj.pill = { alignItems: "center" };
-  obj.loadingContainer = { height: 36, justifyContent: "center" };
-  return obj;
+  const merged = Object.assign(obj);
+  const radii = tmp(712).radii;
+  pressable.borderRadius = arg0 ? radii.md : radii.lg;
+  return { pressable, label: { flex: 1 }, pill: { alignItems: "center" }, loadingContainer: { height: 36, justifyContent: "center" } };
 });
 let result = require("ME").fileFinishedImporting("modules/virtual_currency/native/BalanceWidgetMenu.tsx");
 
 export default function BalanceWidgetMenuWrapper(style) {
-  let obj = require(8695);
+  let obj = require(8719);
   const balance = obj.useFetchVirtualCurrencyBalance().balance;
-  require(3981) /* UNSAFE_isDismissibleContentDismissed */;
+  require(4005) /* UNSAFE_isDismissibleContentDismissed */;
   if (null == balance) {
-    obj = {
-      onPress() {
+    obj = { onPress: null, style: null, accessibilityLabel: null, accessibilityState: null, children: null };
+    obj[0] = function onPress() {
 
-        },
-      style: style.style
     };
-    const intl = require(1212) /* getSystemLocale */.intl;
-    obj.accessibilityLabel = intl.string(require(1212) /* getSystemLocale */.t.cKwv4k);
-    obj = { busy: true };
-    obj.accessibilityState = obj;
-    const obj1 = { style: tmp.loadingContainer, children: callback(require(4593) /* EllipsisCircle */.Ellipsis, { variant: "primary", size: "sm" }) };
-    obj.children = callback(View, obj1);
-    let tmp4Result = callback(BalanceWidget, obj);
+    obj[1] = style.style;
+    const intl = tmp3(1236).intl;
+    obj[2] = intl.string(tmp3(1236).t.cKwv4k);
+    obj[3] = { busy: true };
+    obj = { style: null, children: null };
+    obj[0] = tmp2.loadingContainer;
+    obj[1] = callback(tmp3(4615).Ellipsis, { variant: "primary", size: "sm" });
+    obj[4] = callback(View, obj);
+    let tmp6Result = callback(BalanceWidget, obj);
   } else {
     if (balance <= 0) {
-      if (!tmp3) {
-        let tmp5 = OrbsOnboardingMenuDismissibleContent;
+      if (!tmp5) {
+        let tmp7 = OrbsOnboardingMenuDismissibleContent;
       }
-      const obj2 = {};
+      const obj1 = {};
       const merged = Object.assign(style);
-      tmp4Result = tmp4(tmp5, obj2);
+      tmp6Result = tmp6(tmp7, obj1);
     }
-    tmp5 = BalanceWidgetMenu;
+    tmp7 = BalanceWidgetMenu;
   }
-  return tmp4Result;
+  return tmp6Result;
 };
 export { OrbsOnboardingMenuDismissibleContent };

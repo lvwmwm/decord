@@ -1,20 +1,17 @@
-// Module ID: 5740
-// Function ID: 49638
-// Name: pendingMemberRequestKey
-// Dependencies: [5, 653, 1212, 4849, 5741, 4101, 4011, 507, 2]
+// Module ID: 5758
+// Function ID: 5759
+// Name: createFetchKeys
+// Dependencies: [5, 676, 1236, 4871, 5759, 4125, 4035, 530, 2]
 // Exports: fetchMemberSupplemental, getIntegrationLabel, getJoinSourceTypeLabel, registerFetchedSupplementals, useGetIntegrationIconString
 
-// Module 5740 (pendingMemberRequestKey)
+// Module 5758 (createFetchKeys)
 import useTheme from "useTheme";
 import { Endpoints } from "ME";
 
 const require = arg1;
-function pendingMemberRequestKey(arg0, arg1) {
-  return arg0 + arg1;
-}
 function createFetchKeys(arg0, arr) {
   let closure_0 = arg0;
-  return arr.map((arg0) => outer1_9(closure_0, arg0));
+  return arr.map((arg0) => closure_0 + arg0);
 }
 function getUserIdFromFetchKey(arg0) {
   return arg0.split("-")[1];
@@ -28,39 +25,140 @@ function updateFetchRequests(arr) {
 function _transformFetchMemberSupplementalResponse(userId) {
   return { userId: userId.user_id, sourceInviteCode: userId.source_invite_code, joinSourceType: userId.join_source_type, inviterId: userId.inviter_id, integrationType: userId.integration_type };
 }
-async function _fetchMemberSupplemental(arg0, arg1, arg2) {
-  let items;
-  const tmp2 = outer2_10(arg0, arg1);
-  const arr = (function getFetchchableUsers(arr) {
-    const found = arr.filter((arg0) => outer4_5[arg0] <= outer4_6.UNFETCHED);
-    return found.map(outer3_11);
-  })(tmp2);
-  if (0 === arr.length) {
-    return [];
+function _fetchMemberSupplemental() {
+  const self = this;
+  const tmp = callback((arg0, arg1) => {
+    let closure_0 = arg0;
+    let closure_1 = arg1;
+    let c6 = 0;
+    let c7 = 0;
+    let c5 = 0;
+    return (function*(arg0, arg1) {
+      if (v0 === 2) {
+        v0 = 3;
+        HermesBuiltin.throwTypeError();
+      } else if (tmp6 === 3) {
+        if (arg0 === 1) {
+          throw arg1;
+        } else if (arg0 === 2) {
+          let obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
+        } else {
+          return { value: "HermesInternal", done: null };
+        }
+      } else {
+        try {
+          v0 = 2;
+          if (0 === constants) {
+            if (arg0 === 1) {
+              v0 = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              v0 = 3;
+              obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            } else {
+              let useTheme = tmp3;
+              let arr2 = tmp7;
+              let c1;
+              arr2 = undefined;
+              useTheme = undefined;
+              let closure_4;
+              let c5;
+              constants = undefined;
+              v0 = undefined;
+              const tmp53 = v0(callback, c1);
+              c1 = tmp53;
+              arr2 = (function getFetchchableUsers(arr) {
+                const found = arr.filter((arg0) => table[arg0] <= constants.UNFETCHED);
+                return found.map(closure_8);
+              })(tmp53);
+              if (0 === arr2.length) {
+                v0 = 3;
+                const obj1 = { value: null, done: true };
+                obj1[0] = [];
+                return obj1;
+              } else {
+                outer1_9(tmp53, constants.PENDING);
+                c5 = 1;
+                const HTTP = callback(outer1_2[7]).HTTP;
+                const obj2 = { url: null, body: null, rejectWithError: true };
+                obj2[0] = outer1_4.MEMBER_SAFETY_SUPPLEMENTAL(tmp50);
+                const obj3 = { user_ids: null };
+                obj3[0] = arr2;
+                obj2[1] = obj3;
+                constants = 2;
+                v0 = 1;
+                const obj4 = { value: null, done: false };
+                obj4[0] = HTTP.post(obj2);
+                return obj4;
+              }
+              tmp50 = callback;
+            }
+          } else if (1 === tmp7) {
+            c5 = 0;
+            callback2(c1, constants.FAILED);
+            v0 = 3;
+            const obj5 = { value: null, done: true };
+            obj5[0] = [];
+            return obj5;
+          } else if (arg0 === 1) {
+            v0 = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            c5 = 0;
+            v0 = 3;
+            const obj6 = { value: null, done: true };
+            obj6[0] = arg1;
+            return obj6;
+          } else {
+            useTheme = arg1;
+            const _Array = Array;
+            if (Array.isArray(useTheme.body)) {
+              const body = useTheme.body;
+              closure_4 = body.map(closure_12);
+              c5 = [];
+              const item = closure_4.forEach((userId) => arr.push(userId.userId));
+              constants = v0(callback, c5);
+              v0 = v0(callback, arr2.filter((arg0) => !arr.includes(arg0)));
+              callback2(constants, constants.SUCCEEDED);
+              callback2(v0, constants.FAILED);
+              c5 = 0;
+              v0 = 3;
+              const obj7 = { value: null, done: true };
+              obj7[0] = closure_4;
+              return obj7;
+            } else {
+              callback2(c1, constants.FAILED);
+              c5 = 0;
+              v0 = 3;
+              obj = { value: null, done: true };
+              obj[0] = [];
+              return obj;
+            }
+          }
+        } catch (tmp37) {
+          closure_4 = tmp37;
+          if (tmp4 === c5) {
+            v0 = tmp2;
+            throw tmp37;
+          } else {
+            constants = tmp;
+          }
+        }
+      }
+    })();
+  });
+  const _fetchMemberSupplemental = tmp;
+  const apply = tmp.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
   } else {
-    outer2_12(tmp3, outer2_6.PENDING);
-    const HTTP = outer2_0(outer2_2[7]).HTTP;
-    let obj = { url: outer2_4.MEMBER_SAFETY_SUPPLEMENTAL(tmp) };
-    obj = { user_ids: arr2 };
-    obj.body = obj;
-    obj.rejectWithError = true;
-    const tmp30 = yield HTTP.post(obj);
-    const _Array = Array;
-    if (Array.isArray(tmp30.body)) {
-      const body = tmp30.body;
-      const mapped = body.map(outer2_13);
-      items = [];
-      const item = mapped.forEach((userId) => items.push(userId.userId));
-      const tmp13 = outer2_10(arg0, items);
-      outer2_12(tmp13, outer2_6.SUCCEEDED);
-      outer2_12(outer2_10(arg0, arr2.filter((arg0) => !items.includes(arg0))), outer2_6.FAILED);
-      return mapped;
-    } else {
-      outer2_12(tmp3, outer2_6.FAILED);
-      return [];
-    }
+    applyArgumentsResult = apply(self, arguments);
   }
-  tmp = arg0;
+  return applyArgumentsResult;
 }
 let closure_5 = {};
 let closure_6 = { FAILED: 0, [0]: "FAILED", UNFETCHED: 1, [1]: "UNFETCHED", PENDING: 2, [2]: "PENDING", SUCCEEDED: 3, [3]: "SUCCEEDED", FAILED_NO_RETRY: 4, [4]: "FAILED_NO_RETRY" };
@@ -71,88 +169,96 @@ const result = require("getSystemLocale").fileFinishedImporting("modules/guild_m
 export const registerFetchedSupplementals = function registerFetchedSupplementals(guildId, memberIds) {
   let closure_0 = guildId;
   const item = memberIds.forEach((arg0) => {
-    outer1_5[outer1_9(closure_0, arg0)] = outer1_6.SUCCEEDED;
+    outer1_5[closure_0 + arg0] = outer1_6.SUCCEEDED;
   });
 };
 export const JoinSourceType = obj;
 export const getJoinSourceTypeLabel = function getJoinSourceTypeLabel(arg0) {
   let tmp = arg1;
-  let flag = arg2;
   if (arg1 === undefined) {
     tmp = null;
   }
-  if (flag === undefined) {
+  let flag = arg2;
+  if (arg2 === undefined) {
     flag = false;
   }
   if (obj.BOT === arg0) {
-    const intl10 = require(1212) /* getSystemLocale */.intl;
-    return intl10.string(require(1212) /* getSystemLocale */.t.HumZAi);
-  } else if (obj.INTEGRATION === arg0) {
-    const intl9 = require(1212) /* getSystemLocale */.intl;
-    return intl9.string(require(1212) /* getSystemLocale */.t.gmCUFw);
-  } else if (obj.DISCOVERY === arg0) {
-    const intl8 = require(1212) /* getSystemLocale */.intl;
-    return intl8.string(require(1212) /* getSystemLocale */.t["Ql/e9Y"]);
-  } else if (obj.HUB === arg0) {
-    const intl7 = require(1212) /* getSystemLocale */.intl;
-    return intl7.string(require(1212) /* getSystemLocale */.t.Op8B3O);
-  } else if (obj.INVITE === arg0) {
-    const intl6 = require(1212) /* getSystemLocale */.intl;
-    return intl6.string(require(1212) /* getSystemLocale */.t["/3vIRd"]);
-  } else if (obj.VANITY_URL === arg0) {
+    const intl10 = require(1236) /* getSystemLocale */.intl;
+    return intl10.string(require(1236) /* getSystemLocale */.t.HumZAi);
+  } else if (tmp2.INTEGRATION === arg0) {
+    const intl9 = require(1236) /* getSystemLocale */.intl;
+    return intl9.string(require(1236) /* getSystemLocale */.t.gmCUFw);
+  } else if (tmp2.DISCOVERY === arg0) {
+    const intl8 = require(1236) /* getSystemLocale */.intl;
+    return intl8.string(require(1236) /* getSystemLocale */.t["Ql/e9Y"]);
+  } else if (tmp2.HUB === arg0) {
+    const intl7 = require(1236) /* getSystemLocale */.intl;
+    return intl7.string(require(1236) /* getSystemLocale */.t.Op8B3O);
+  } else if (tmp2.INVITE === arg0) {
+    const intl6 = require(1236) /* getSystemLocale */.intl;
+    return intl6.string(require(1236) /* getSystemLocale */.t["/3vIRd"]);
+  } else if (tmp2.VANITY_URL === arg0) {
     if (null != tmp) {
       if (!flag) {
-        const intl4 = require(1212) /* getSystemLocale */.intl;
-        obj = { vanityUrl: tmp };
-        let formatToPlainStringResult = intl4.formatToPlainString(require(1212) /* getSystemLocale */.t.EIUjRy, obj);
+        const intl4 = require(1236) /* getSystemLocale */.intl;
+        obj = { vanityUrl: null };
+        obj[0] = tmp;
+        let formatToPlainStringResult = intl4.formatToPlainString(require(1236) /* getSystemLocale */.t.EIUjRy, obj);
       }
       return formatToPlainStringResult;
     }
-    const intl5 = require(1212) /* getSystemLocale */.intl;
-    formatToPlainStringResult = intl5.string(require(1212) /* getSystemLocale */.t.dGiD1O);
-  } else if (obj.MANUAL_MEMBER_VERIFICATION === arg0) {
-    const intl3 = require(1212) /* getSystemLocale */.intl;
-    return intl3.string(require(1212) /* getSystemLocale */.t.vdu7oS);
-  } else if (obj.SOCIAL_LAYER_INTEGRATION_LINKED_CHANNEL === arg0) {
-    const intl2 = require(1212) /* getSystemLocale */.intl;
-    return intl2.string(require(1212) /* getSystemLocale */.t["9/ZreX"]);
+    const intl5 = require(1236) /* getSystemLocale */.intl;
+    formatToPlainStringResult = intl5.string(require(1236) /* getSystemLocale */.t.dGiD1O);
+  } else if (tmp2.MANUAL_MEMBER_VERIFICATION === arg0) {
+    const intl3 = require(1236) /* getSystemLocale */.intl;
+    return intl3.string(require(1236) /* getSystemLocale */.t.vdu7oS);
+  } else if (tmp2.SOCIAL_LAYER_INTEGRATION_LINKED_CHANNEL === arg0) {
+    const intl2 = require(1236) /* getSystemLocale */.intl;
+    return intl2.string(require(1236) /* getSystemLocale */.t["9/ZreX"]);
   } else {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(require(1212) /* getSystemLocale */.t.DvMBkS);
+    const intl = require(1236) /* getSystemLocale */.intl;
+    return intl.string(require(1236) /* getSystemLocale */.t.DvMBkS);
   }
 };
 export const IntegrationType = obj;
 export const getIntegrationLabel = function getIntegrationLabel(arg0) {
   if (obj.TWITCH === arg0) {
-    const intl3 = require(1212) /* getSystemLocale */.intl;
-    return intl3.string(require(1212) /* getSystemLocale */.t.AVGAkw);
-  } else if (obj.YOUTUBE === arg0) {
-    const intl2 = require(1212) /* getSystemLocale */.intl;
-    return intl2.string(require(1212) /* getSystemLocale */.t.PHSAsn);
+    const intl3 = require(1236) /* getSystemLocale */.intl;
+    return intl3.string(require(1236) /* getSystemLocale */.t.AVGAkw);
+  } else if (tmp.YOUTUBE === arg0) {
+    const intl2 = require(1236) /* getSystemLocale */.intl;
+    return intl2.string(require(1236) /* getSystemLocale */.t.PHSAsn);
   } else {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(require(1212) /* getSystemLocale */.t.gmCUFw);
+    const intl = require(1236) /* getSystemLocale */.intl;
+    return intl.string(require(1236) /* getSystemLocale */.t.gmCUFw);
   }
 };
 export const useGetIntegrationIconString = function useGetIntegrationIconString(arg0) {
-  const obj = importDefault(4849);
-  const value = obj.get(require(5741) /* usePlatformAllowed */.useLegacyPlatformType(arg0));
-  let tmp3 = null;
+  const obj = importDefault(4871);
+  const value = obj.get(require(5759) /* PlatformTypes */.useLegacyPlatformType(arg0));
+  let tmp5 = null;
   if (null != value) {
     const items = [, ];
     ({ TWITCH: arr[0], YOUTUBE: arr[1] } = obj);
-    tmp3 = null;
+    tmp5 = null;
     if (items.includes(arg0)) {
       let str = value.icon;
       const _HermesInternal = HermesInternal;
-      const obj3 = require(4011) /* AccessibilityAnnouncer */;
-      str = "')";
-      const combined = "url('" + require(4011) /* AccessibilityAnnouncer */.isThemeDark(tmp2) ? str.darkSVG : str.lightSVG + "')";
-      const tmp7 = require(4011) /* AccessibilityAnnouncer */.isThemeDark(tmp2) ? str.darkSVG : str.lightSVG;
+      const tmp2Result = require(4035) /* AccessibilityAnnouncer */;
+      str = "url('";
+      const combined = "url('" + require(4035) /* AccessibilityAnnouncer */.isThemeDark(tmp4) ? str.darkSVG : str.lightSVG + "')";
+      const tmp7 = require(4035) /* AccessibilityAnnouncer */.isThemeDark(tmp4) ? str.darkSVG : str.lightSVG;
     }
   }
-  return tmp3;
+  return tmp5;
 };
 export const fetchMemberSupplemental = function fetchMemberSupplemental() {
-  return _fetchMemberSupplemental(...arguments);
+  const self = this;
+  const apply = _fetchMemberSupplemental.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
 };

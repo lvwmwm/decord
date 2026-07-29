@@ -1,454 +1,441 @@
-// Module ID: 4986
-// Function ID: 42581
-// Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 4184, 1194, 1348, 1838, 3793, 3802, 4987, 1850, 4181, 4238, 4989, 1353, 3789, 22, 4992, 4229, 636, 566, 686, 2]
+// Module ID: 5008
+// Function ID: 5009
+// Name: getActiveStageChannelIds
+// Dependencies: [4208, 1218, 1372, 1862, 3817, 3826, 5009, 1874, 4205, 4262, 5011, 1377, 3813, 12, 5014, 4253, 659, 589, 709, 2]
 
-// Module 4986 (_isNativeReflectConstruct)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_4 from "_isNativeReflectConstruct";
-import closure_5 from "_isNativeReflectConstruct";
-import sortedInsert from "sortedInsert";
-import apply from "apply";
-import closure_8 from "_isNativeReflectConstruct";
-import closure_9 from "_isNativeReflectConstruct";
-import closure_10 from "_isNativeReflectConstruct";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import closure_12 from "_isNativeReflectConstruct";
-import closure_13 from "_isNativeReflectConstruct";
-import closure_14 from "_isNativeReflectConstruct";
-import closure_15 from "_isNativeReflectConstruct";
-import closure_16 from "_isNativeReflectConstruct";
-import closure_17 from "_isNativeReflectConstruct";
-import closure_18 from "_isNativeReflectConstruct";
-import closure_19 from "_isNativeReflectConstruct";
-import set from "_possibleConstructorReturn";
+// Module 5008 (getActiveStageChannelIds)
+import reset from "reset";
+import fetchFingerprint from "fetchFingerprint";
+import ensureGuildLoaded from "ensureGuildLoaded";
+import createGuildRecordFromRust from "createGuildRecordFromRust";
+import getUncachedChannelPermissions from "getUncachedChannelPermissions";
+import upsertRelationship from "upsertRelationship";
+import anyoneHasFlagInContext from "anyoneHasFlagInContext";
+import mergeGuildAvatar from "mergeGuildAvatar";
+import updateVoiceState from "updateVoiceState";
+import getVoiceStatesForGuild from "getVoiceStatesForGuild";
+import buildStageChannelUserRoles from "buildStageChannelUserRoles";
+import handleStageInstanceCreateOrUpdate from "handleStageInstanceCreateOrUpdate";
+import { Store } from "initialize";
+import set from "ensureGuildLoaded";
 
 const require = arg1;
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
-  }
-  const result = _isNativeReflectConstruct();
-}
-function _createForOfIteratorHelperLoose(iterable) {
-  let closure_0 = iterable;
-  iterable = "undefined" !== typeof Symbol;
-  if (iterable) {
-    const _Symbol = Symbol;
-    iterable = iterable[Symbol.iterator];
-  }
-  if (!iterable) {
-    iterable = iterable[Symbol.iterator];
-  }
-  if (iterable) {
-    const iter = iterable.call(iterable);
-    const next = iter.next;
-    return next.bind(iter);
-  } else {
-    const _Array = Array;
-    let tmp = iterable;
-    if (!Array.isArray(iterable)) {
-      let tmp2;
-      if (iterable) {
-        if ("string" === typeof iterable) {
-          tmp2 = _arrayLikeToArray(iterable, undefined);
-        } else {
-          const toString = {}.toString;
-          const substr = toString.call(iterable).slice(8, -1);
-          let name = substr;
-          if (tmp3) {
-            name = iterable.constructor.name;
-          }
-          if ("Map" !== name) {
-            if ("Set" !== name) {
-              if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(iterable, undefined);
-              } else {
-                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
-              }
-            }
-            tmp2 = arr;
-          }
-          const _Array2 = Array;
-          arr = Array.from(iterable);
-          const callResult = toString.call(iterable);
-          tmp3 = "Object" === substr && iterable.constructor;
-        }
-      }
-      tmp = tmp2;
-      if (!tmp2) {
-        const _TypeError = TypeError;
-        const typeError = new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
-        throw typeError;
-      }
-    }
-    if (tmp) {
-      closure_0 = tmp;
-    }
-    let c1 = 0;
-    return () => {
-      if (closure_1 >= length.length) {
-        let obj = { done: true };
-      } else {
-        obj = { done: false };
-        closure_1 = tmp3 + 1;
-        obj.value = length[+closure_1];
-      }
-      return obj;
-    };
-  }
-}
-function _arrayLikeToArray(arg0, arg1) {
-  let length;
-  if (tmp) {
-    length = arg0.length;
-  }
-  const ArrayResult = Array(length);
-  for (let num = 0; num < length; num = num + 1) {
-    ArrayResult[num] = arg0[num];
-  }
-  return ArrayResult;
-}
-function getGuildId(getGuildId) {
-  let guildId = getGuildId.getGuildId();
-  if (null == guildId) {
-    guildId = NO_GUILD;
-  }
-  return guildId;
-}
 function getActiveStageChannelIds(guildId) {
-  let tmp2;
-  if (null != guildId) {
-    tmp2 = guildId;
-  }
-  const values = secondaryIndexMap.values(tmp2, true);
+  const values = secondaryIndexMap.values(guildId, true);
   return values.map((id) => id.id);
 }
-function buildActiveStageChannelIds(guild_id) {
-  if (!set.has(guild_id)) {
-    set.add(guild_id);
-    const tmp5 = importDefault(22);
-    const values = importDefault(22)(store.getMutableGuildChannelsForGuild(guild_id)).values();
-    const item = values.forEach((id) => {
-      if (outer1_33(id)) {
-        const result = outer1_21.set(id.id, id);
-      }
-    });
-    const tmp5Result = importDefault(22)(store.getMutableGuildChannelsForGuild(guild_id));
-  }
-}
-function maybeGetParticipants(channelId) {
-  if (null != dependencyMap[channelId]) {
+function maybeGetParticipants(id) {
+  if (null != dependencyMap[id]) {
     return tmp;
   } else {
-    const channel = store.getChannel(channelId);
-    let tmp3 = null;
+    const channel = store.getChannel(id);
+    let tmp2 = null;
     if (null != channel) {
-      tmp3 = null;
+      tmp2 = null;
       if (channel.isGuildStageVoice()) {
-        buildActiveStageChannelIds(channel.guild_id);
-        let tmp7 = null;
-        if (isActiveStageChannel(channel)) {
-          tmp7 = getOrCreateParticipants(channelId);
+        const guild_id = channel.guild_id;
+        if (!set.has(guild_id)) {
+          obj.add(guild_id);
+          const tmp6 = importDefault(12);
+          const values = importDefault(12)(store.getMutableGuildChannelsForGuild(guild_id)).values();
+          const item = values.forEach((isGuildStageVoice) => {
+            let tmp = null != isGuildStageVoice && isGuildStageVoice.isGuildStageVoice();
+            if (tmp) {
+              tmp = getVoiceStatesForGuild.countVoiceStatesForChannel(isGuildStageVoice.id) > 0;
+            }
+            if (tmp) {
+              const result = closure_16.set(isGuildStageVoice.id, isGuildStageVoice);
+            }
+          });
+          const tmp6Result = importDefault(12)(store.getMutableGuildChannelsForGuild(guild_id));
         }
-        tmp3 = tmp7;
+        let tmp8 = null != channel && channel.isGuildStageVoice();
+        if (tmp8) {
+          tmp8 = getVoiceStatesForGuild.countVoiceStatesForChannel(channel.id) > 0;
+        }
+        let tmp10 = null;
+        if (tmp8) {
+          let tmp12 = dependencyMap[id];
+          if (null == tmp12) {
+            const obj3 = new importDefault(5014)(id);
+            dependencyMap[id] = obj3;
+            obj3.rebuild();
+            tmp12 = obj3;
+          }
+          tmp10 = tmp12;
+        }
+        tmp2 = tmp10;
+        obj = set;
       }
     }
-    return tmp3;
+    return tmp2;
   }
 }
-function getOrCreateParticipants(value) {
-  let tmp = dependencyMap[value];
+function getOrCreateParticipants(item10010) {
+  let tmp = dependencyMap[item10010];
   if (null == tmp) {
-    let tmp4 = importDefault(4992);
-    const prototype = tmp4.prototype;
-    tmp4 = new tmp4(value);
-    dependencyMap[value] = tmp4;
-    tmp4.rebuild();
-    tmp = tmp4;
+    const obj = new importDefault(5014)(item10010);
+    dependencyMap[item10010] = obj;
+    obj.rebuild();
+    tmp = obj;
   }
   return tmp;
 }
-function isActiveStageChannel(channel) {
-  let tmp = null != channel && channel.isGuildStageVoice();
-  if (tmp) {
-    tmp = closure_17.countVoiceStatesForChannel(channel.id) > 0;
+function updateParticipant(arg0) {
+  let f75201 = arg0;
+  let mapped;
+  {
+    let values = secondaryIndexMap.values(undefined, true);
+    mapped = values.map((id) => id.id);
   }
-  return tmp;
-}
-function updateParticipants(arg0) {
-  let arr = arg1;
-  let closure_0 = arg0;
-  if (arg1 === undefined) {
-    arr = getActiveStageChannelIds();
+  f75201 = (updateParticipant) => updateParticipant.updateParticipant(f75201);
+  if (mapped === undefined) {
+    values = secondaryIndexMap.values(undefined, true);
+    mapped = values.map((id) => id.id);
   }
-  return arr.reduce((arg0, channelId) => {
+  return mapped.reduce((arg0, arg1) => {
+    let obj = outer1_18[arg1];
+    if (null == obj) {
+      const obj2 = new outer1_1(outer1_2[14])(arg1);
+      outer1_18[arg1] = obj2;
+      obj2.rebuild();
+      obj = obj2;
+    }
     let flag = arg0;
-    const obj = outer1_32(channelId);
-    if (callback(obj)) {
-      const channel = outer1_10.getChannel(channelId);
+    if (f75201(obj)) {
+      const channel = outer1_5.getChannel(arg1);
       if (null != channel) {
         if (channel.isGuildStageVoice()) {
           if (0 === obj.size()) {
-            outer1_36(channel.id);
+            const id = channel.id;
             flag = true;
-          } else {
-            flag = true;
-            if (null == outer1_21.get(channel.id)) {
-              const result = outer1_21.set(channel.id, channel);
+            if (null != id) {
+              delete tmp[tmp2];
+              outer1_16.delete(id);
               flag = true;
             }
+          } else {
+            flag = true;
+            if (null == outer1_16.get(channel.id)) {
+              const result = obj4.set(channel.id, channel);
+              flag = true;
+            }
+            obj4 = outer1_16;
           }
         }
       }
-      outer1_36(channelId);
       flag = true;
+      if (null != arg1) {
+        delete tmp2[tmp3];
+        outer1_16.delete(arg1);
+        flag = true;
+      }
     }
     return flag;
   }, false);
 }
-function updateParticipant(arg0) {
-  let tmp = arg1;
-  let closure_0 = arg0;
-  if (arg1 === undefined) {
-    tmp = getActiveStageChannelIds();
-  }
-  return updateParticipants((updateParticipant) => updateParticipant.updateParticipant(closure_0), tmp);
-}
-function clearChannel(arg0) {
-  let flag = null != arg0;
-  if (flag) {
-    delete tmp[tmp2];
-    secondaryIndexMap.delete(arg0);
-    flag = true;
-  }
-  return flag;
-}
 function handleRebuildActiveStageChannels() {
   set.clear();
   secondaryIndexMap.clear();
-  let closure_23 = {};
-}
-function maybeAddChannelIdToUpdate(has, add, channelId) {
-  if (null != channelId) {
-    if (!has.has(channelId)) {
-      const channel = store.getChannel(channelId);
-      if (tmp2) {
-        add.add(channelId);
-        if (null == dependencyMap[channelId]) {
-          has.add(channelId);
-        }
-      }
-      tmp2 = null != channel && channel.isGuildStageVoice();
-    }
-  }
+  let closure_18 = {};
 }
 function handleUserUpdate(user) {
-  return updateParticipant(user.user.id);
+  let f75201 = user.user.id;
+  let values = secondaryIndexMap.values(undefined, true);
+  const mapped = values.map((id) => id.id);
+  f75201 = (updateParticipant) => updateParticipant.updateParticipant(f75201);
+  let mapped1 = mapped;
+  if (mapped === undefined) {
+    values = secondaryIndexMap.values(undefined, true);
+    mapped1 = values.map((id) => id.id);
+  }
+  return mapped1.reduce((arg0, arg1) => {
+    let obj = outer1_18[arg1];
+    if (null == obj) {
+      const obj2 = new outer1_1(outer1_2[14])(arg1);
+      outer1_18[arg1] = obj2;
+      obj2.rebuild();
+      obj = obj2;
+    }
+    let flag = arg0;
+    if (f75201(obj)) {
+      const channel = outer1_5.getChannel(arg1);
+      if (null != channel) {
+        if (channel.isGuildStageVoice()) {
+          if (0 === obj.size()) {
+            const id = channel.id;
+            flag = true;
+            if (null != id) {
+              delete tmp[tmp2];
+              outer1_16.delete(id);
+              flag = true;
+            }
+          } else {
+            flag = true;
+            if (null == outer1_16.get(channel.id)) {
+              const result = obj4.set(channel.id, channel);
+              flag = true;
+            }
+            obj4 = outer1_16;
+          }
+        }
+      }
+      flag = true;
+      if (null != arg1) {
+        delete tmp2[tmp3];
+        outer1_16.delete(arg1);
+        flag = true;
+      }
+    }
+    return flag;
+  }, false);
 }
 function handleRelationshipUpdate(relationship) {
-  return updateParticipant(relationship.relationship.id);
+  let f75201 = relationship.relationship.id;
+  let values = secondaryIndexMap.values(undefined, true);
+  const mapped = values.map((id) => id.id);
+  f75201 = (updateParticipant) => updateParticipant.updateParticipant(f75201);
+  let mapped1 = mapped;
+  if (mapped === undefined) {
+    values = secondaryIndexMap.values(undefined, true);
+    mapped1 = values.map((id) => id.id);
+  }
+  return mapped1.reduce((arg0, arg1) => {
+    let obj = outer1_18[arg1];
+    if (null == obj) {
+      const obj2 = new outer1_1(outer1_2[14])(arg1);
+      outer1_18[arg1] = obj2;
+      obj2.rebuild();
+      obj = obj2;
+    }
+    let flag = arg0;
+    if (f75201(obj)) {
+      const channel = outer1_5.getChannel(arg1);
+      if (null != channel) {
+        if (channel.isGuildStageVoice()) {
+          if (0 === obj.size()) {
+            const id = channel.id;
+            flag = true;
+            if (null != id) {
+              delete tmp[tmp2];
+              outer1_16.delete(id);
+              flag = true;
+            }
+          } else {
+            flag = true;
+            if (null == outer1_16.get(channel.id)) {
+              const result = obj4.set(channel.id, channel);
+              flag = true;
+            }
+            obj4 = outer1_16;
+          }
+        }
+      }
+      flag = true;
+      if (null != arg1) {
+        delete tmp2[tmp3];
+        outer1_16.delete(arg1);
+        flag = true;
+      }
+    }
+    return flag;
+  }, false);
 }
 function handleGuildCreateOrDelete(guild) {
-  let done;
-  const id = guild.guild.id;
-  const tmp3 = _createForOfIteratorHelperLoose(secondaryIndexMap.values(id));
-  let iter = tmp3();
-  if (!iter.done) {
-    do {
-      let value = iter.value;
-      let tmp4 = secondaryIndexMap;
-      let deleteResult = secondaryIndexMap.delete(value.id);
-      let tmp6 = closure_23;
-      let id2 = value.id;
+  (function clearGuild(id) {
+    const values = set.values(id);
+    for (const item10008 of values) {
+      let tmp4 = set;
+      let deleteResult = set.delete(item10008.id);
+      let tmp6 = closure_18;
+      id = item10008.id;
       delete tmp2[tmp];
-      let iter2 = tmp3();
-      iter = iter2;
-      done = iter2.done;
-    } while (!done);
-  }
-  set.delete(id);
+      continue;
+    }
+    set2.delete(id);
+  })(guild.guild.id);
 }
 function handleStreamClose(streamKey) {
   let channelId;
   let ownerId;
-  const decodeStreamKeyResult = require(4229) /* isStreamKey */.decodeStreamKey(streamKey.streamKey);
+  const decodeStreamKeyResult = f75201(4253).decodeStreamKey(streamKey.streamKey);
   const guildId = decodeStreamKeyResult.guildId;
   let tmp2 = null == guildId;
   ({ channelId, ownerId } = decodeStreamKeyResult);
   if (!tmp2) {
     tmp2 = !set.has(guildId);
   }
-  let tmp4 = !tmp2;
+  let reduced = !tmp2;
   if (!tmp2) {
     const items = [channelId];
-    tmp4 = updateParticipant(ownerId, items);
+    f75201 = ownerId;
+    f75201 = (updateParticipant) => updateParticipant.updateParticipant(f75201);
+    reduced = items.reduce((arg0, arg1) => {
+      let obj = outer1_18[arg1];
+      if (null == obj) {
+        const obj2 = new outer1_1(outer1_2[14])(arg1);
+        outer1_18[arg1] = obj2;
+        obj2.rebuild();
+        obj = obj2;
+      }
+      let flag = arg0;
+      if (f75201(obj)) {
+        const channel = outer1_5.getChannel(arg1);
+        if (null != channel) {
+          if (channel.isGuildStageVoice()) {
+            if (0 === obj.size()) {
+              const id = channel.id;
+              flag = true;
+              if (null != id) {
+                delete tmp[tmp2];
+                outer1_16.delete(id);
+                flag = true;
+              }
+            } else {
+              flag = true;
+              if (null == outer1_16.get(channel.id)) {
+                const result = obj4.set(channel.id, channel);
+                flag = true;
+              }
+              obj4 = outer1_16;
+            }
+          }
+        }
+        flag = true;
+        if (null != arg1) {
+          delete tmp2[tmp3];
+          outer1_16.delete(arg1);
+          flag = true;
+        }
+      }
+      return flag;
+    }, false);
   }
-  return tmp4;
+  return reduced;
 }
 const NO_GUILD = "NO_GUILD";
-const secondaryIndexMap = new require("sortedInsert").SecondaryIndexMap((arg0) => {
-  const items = [getGuildId(arg0)];
+const secondaryIndexMap = new require("version").SecondaryIndexMap((getGuildId) => {
+  let guildId = getGuildId.getGuildId();
+  if (guildId == null) {
+    guildId = NO_GUILD;
+  }
+  const items = [guildId];
   return items;
 }, (id) => id.id);
 let set = new Set();
-let closure_23 = {};
-let closure_24 = [];
-let tmp4 = ((Store) => {
-  class StageChannelParticipantStore {
-    constructor() {
-      self = this;
-      tmp = outer1_3(this, StageChannelParticipantStore);
-      obj = outer1_6(StageChannelParticipantStore);
-      tmp2 = outer1_5;
-      if (outer1_25()) {
-        tmp6 = globalThis;
-        _Reflect = Reflect;
-        tmp7 = outer1_6;
-        tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, outer1_6(self).constructor);
-      } else {
-        tmp3 = arguments;
-        tmp4 = arguments;
-        constructResult = obj(...arguments);
-      }
-      return tmp2(self, constructResult);
+let closure_18 = {};
+let closure_23 = [];
+class StageChannelParticipantStore extends Store {
+}
+const prototype = StageChannelParticipantStore.prototype;
+prototype["initialize"] = function initialize() {
+  this.waitFor(fetchFingerprint, mergeGuildAvatar, ensureGuildLoaded, anyoneHasFlagInContext, updateVoiceState, getUncachedChannelPermissions, getVoiceStatesForGuild, createGuildRecordFromRust, buildStageChannelUserRoles, upsertRelationship, handleStageInstanceCreateOrUpdate, reset);
+};
+prototype["getParticipantsVersion"] = function getParticipantsVersion(id) {
+  let num = -1;
+  if (null != id) {
+    const tmp2 = maybeGetParticipants(id);
+    let num3;
+    if (tmp2 != null) {
+      num3 = tmp2.version;
+    }
+    if (num3 == null) {
+      num3 = -1;
+    }
+    num = num3;
+  }
+  return num;
+};
+prototype["getMutableParticipants"] = function getMutableParticipants(closure_0, SPEAKER) {
+  if (null == closure_0) {
+    let toArrayResult = closure_23;
+  } else {
+    const obj = maybeGetParticipants(closure_0);
+    toArrayResult = undefined;
+    if (obj != null) {
+      toArrayResult = obj.toArray(SPEAKER);
+    }
+    if (toArrayResult == null) {
+      toArrayResult = closure_23;
     }
   }
-  callback2(StageChannelParticipantStore, Store);
-  let obj = {
-    key: "initialize",
-    value() {
-      this.waitFor(outer1_9, outer1_15, outer1_10, outer1_14, outer1_16, outer1_12, outer1_17, outer1_11, outer1_18, outer1_13, outer1_19, outer1_8);
-    }
-  };
-  const items = [obj, , , , , , , , ];
-  obj = {
-    key: "getParticipantsVersion",
-    value(arg0) {
-      let num = -1;
-      let num2 = -1;
-      if (null != arg0) {
-        let version;
-        const tmp3 = outer1_31(arg0);
-        if (null != tmp3) {
-          version = tmp3.version;
-        }
-        if (null != version) {
-          num = version;
-        }
-        num2 = num;
+  return toArrayResult;
+};
+prototype["getMutableRequestToSpeakParticipants"] = function getMutableRequestToSpeakParticipants(closure_0) {
+  const obj = maybeGetParticipants(closure_0);
+  let requestToSpeakParticipants;
+  if (obj != null) {
+    requestToSpeakParticipants = obj.getRequestToSpeakParticipants();
+  }
+  if (requestToSpeakParticipants == null) {
+    requestToSpeakParticipants = closure_23;
+  }
+  return requestToSpeakParticipants;
+};
+prototype["getRequestToSpeakParticipantsVersion"] = function getRequestToSpeakParticipantsVersion(closure_0) {
+  const tmp = maybeGetParticipants(closure_0);
+  let num;
+  if (tmp != null) {
+    num = tmp.requestToSpeakVersion;
+  }
+  if (num == null) {
+    num = -1;
+  }
+  return num;
+};
+prototype["getParticipantCount"] = function getParticipantCount(id, AUDIENCE) {
+  const obj = maybeGetParticipants(id);
+  let num;
+  if (obj != null) {
+    num = obj.size(AUDIENCE);
+  }
+  if (num == null) {
+    num = 0;
+  }
+  return num;
+};
+prototype["getChannels"] = function getChannels(id) {
+  let tmp = id;
+  let tmp2 = id;
+  if (id == null) {
+    tmp2 = NO_GUILD;
+  }
+  if (!set.has(tmp2)) {
+    set.add(tmp2);
+    const tmp6 = importDefault(12);
+    const values = importDefault(12)(store.getMutableGuildChannelsForGuild(tmp2)).values();
+    const item = values.forEach((isGuildStageVoice) => {
+      let tmp = null != isGuildStageVoice && isGuildStageVoice.isGuildStageVoice();
+      if (tmp) {
+        tmp = getVoiceStatesForGuild.countVoiceStatesForChannel(isGuildStageVoice.id) > 0;
       }
-      return num2;
-    }
-  };
-  items[1] = obj;
-  obj = {
-    key: "getMutableParticipants",
-    value(arg0, arg1) {
-      if (null == arg0) {
-        let toArrayResult = outer1_24;
-      } else {
-        toArrayResult = undefined;
-        const obj = outer1_31(arg0);
-        if (null != obj) {
-          toArrayResult = obj.toArray(arg1);
-        }
-        if (null == toArrayResult) {
-          toArrayResult = outer1_24;
-        }
+      if (tmp) {
+        const result = closure_16.set(isGuildStageVoice.id, isGuildStageVoice);
       }
-      return toArrayResult;
-    }
-  };
-  items[2] = obj;
-  items[3] = {
-    key: "getMutableRequestToSpeakParticipants",
-    value(arg0) {
-      let requestToSpeakParticipants;
-      const obj = outer1_31(arg0);
-      if (null != obj) {
-        requestToSpeakParticipants = obj.getRequestToSpeakParticipants();
-      }
-      if (null == requestToSpeakParticipants) {
-        requestToSpeakParticipants = outer1_24;
-      }
-      return requestToSpeakParticipants;
-    }
-  };
-  items[4] = {
-    key: "getRequestToSpeakParticipantsVersion",
-    value(arg0) {
-      let prop;
-      const tmp2 = outer1_31(arg0);
-      if (null != tmp2) {
-        prop = tmp2.requestToSpeakVersion;
-      }
-      let num = -1;
-      if (null != prop) {
-        num = prop;
-      }
-      return num;
-    }
-  };
-  items[5] = {
-    key: "getParticipantCount",
-    value(arg0, arg1) {
-      let sizeResult;
-      const obj = outer1_31(arg0);
-      if (null != obj) {
-        sizeResult = obj.size(arg1);
-      }
-      let num = 0;
-      if (null != sizeResult) {
-        num = sizeResult;
-      }
-      return num;
-    }
-  };
-  items[6] = {
-    key: "getChannels",
-    value(arg0) {
-      let tmp = arg0;
-      let tmp3 = arg0;
-      if (null == arg0) {
-        tmp3 = outer1_20;
-      }
-      outer1_30(tmp3);
-      if (null == tmp) {
-        tmp = outer1_20;
-      }
-      return outer1_21.values(tmp);
-    }
-  };
-  items[7] = {
-    key: "getChannelsVersion",
-    value() {
-      return outer1_21.version;
-    }
-  };
-  items[8] = {
-    key: "getParticipant",
-    value(arg0, arg1) {
-      let participant;
-      const obj = outer1_31(arg0);
-      if (null != obj) {
-        participant = obj.getParticipant(arg1);
-      }
-      let tmp3 = null;
-      if (null != participant) {
-        tmp3 = participant;
-      }
-      return tmp3;
-    }
-  };
-  return callback(StageChannelParticipantStore, items);
-})(require("initialize").Store);
-tmp4.displayName = "StageChannelParticipantStore";
-tmp4 = new tmp4(require("dispatcher"), {
+    });
+    const tmp6Result = importDefault(12)(store.getMutableGuildChannelsForGuild(tmp2));
+  }
+  if (tmp == null) {
+    tmp = NO_GUILD;
+  }
+  return secondaryIndexMap.values(tmp);
+};
+prototype["getChannelsVersion"] = function getChannelsVersion() {
+  return secondaryIndexMap.version;
+};
+prototype["getParticipant"] = function getParticipant(id) {
+  const obj = maybeGetParticipants(id);
+  let participant;
+  if (obj != null) {
+    participant = obj.getParticipant(arg1);
+  }
+  if (participant == null) {
+    participant = null;
+  }
+  return participant;
+};
+StageChannelParticipantStore.displayName = "StageChannelParticipantStore";
+const stageChannelParticipantStore = new StageChannelParticipantStore(require("dispatcher"), {
   CONNECTION_OPEN: handleRebuildActiveStageChannels,
   OVERLAY_INITIALIZE: handleRebuildActiveStageChannels,
   VOICE_CHANNEL_SELECT: function handleVoiceChannelSelect(currentVoiceChannelId) {
@@ -457,17 +444,60 @@ tmp4 = new tmp4(require("dispatcher"), {
       return false;
     } else {
       const channel = store.getChannel(currentVoiceChannelId);
-      if (null != channel) {
-        if (channel.isGuildStageVoice()) {
-          if (set.has(channel.guild_id)) {
-            id = id.getId();
-            let tmp5 = null != id;
-            if (tmp5) {
-              const items = [currentVoiceChannelId];
-              tmp5 = updateParticipant(id, items);
-            }
-            return tmp5;
+      let isGuildStageVoiceResult;
+      if (channel != null) {
+        isGuildStageVoiceResult = channel.isGuildStageVoice();
+      }
+      if (isGuildStageVoiceResult) {
+        if (set.has(channel.guild_id)) {
+          id = id.getId();
+          let reduced = null != id;
+          if (reduced) {
+            const items = [currentVoiceChannelId];
+            let f75201 = id;
+            f75201 = (updateParticipant) => updateParticipant.updateParticipant(f75201);
+            reduced = items.reduce((arg0, arg1) => {
+              let obj = outer1_18[arg1];
+              if (null == obj) {
+                const obj2 = new outer1_1(outer1_2[14])(arg1);
+                outer1_18[arg1] = obj2;
+                obj2.rebuild();
+                obj = obj2;
+              }
+              let flag = arg0;
+              if (f75201(obj)) {
+                const channel = outer1_5.getChannel(arg1);
+                if (null != channel) {
+                  if (channel.isGuildStageVoice()) {
+                    if (0 === obj.size()) {
+                      const id = channel.id;
+                      flag = true;
+                      if (null != id) {
+                        delete tmp[tmp2];
+                        outer1_16.delete(id);
+                        flag = true;
+                      }
+                    } else {
+                      flag = true;
+                      if (null == outer1_16.get(channel.id)) {
+                        const result = obj4.set(channel.id, channel);
+                        flag = true;
+                      }
+                      obj4 = outer1_16;
+                    }
+                  }
+                }
+                flag = true;
+                if (null != arg1) {
+                  delete tmp2[tmp3];
+                  outer1_16.delete(arg1);
+                  flag = true;
+                }
+              }
+              return flag;
+            }, false);
           }
+          return reduced;
         }
       }
       return false;
@@ -475,61 +505,176 @@ tmp4 = new tmp4(require("dispatcher"), {
   },
   VOICE_STATE_UPDATES: function handleVoiceStateUpdates(voiceStates) {
     voiceStates = voiceStates.voiceStates;
-    let set = new Set();
+    let set;
+    set = new Set();
     return voiceStates.reduce((arg0, guildId) => {
       if (null != guildId.guildId) {
-        if (outer1_22.has(guildId.guildId)) {
+        if (outer1_17.has(guildId.guildId)) {
           const _Set = Set;
           const set = new Set();
-          outer1_37(set, set, guildId.oldChannelId);
-          outer1_37(set, set, guildId.channelId);
-          let tmp10 = arg0;
+          const oldChannelId = guildId.oldChannelId;
+          if (null != oldChannelId) {
+            if (!obj2.has(oldChannelId)) {
+              let channel = outer1_5.getChannel(oldChannelId);
+              let isGuildStageVoiceResult;
+              if (channel != null) {
+                isGuildStageVoiceResult = channel.isGuildStageVoice();
+              }
+              if (isGuildStageVoiceResult) {
+                set.add(oldChannelId);
+                if (null == outer1_18[oldChannelId]) {
+                  obj2.add(oldChannelId);
+                }
+              }
+            }
+          }
+          const channelId = guildId.channelId;
+          if (null != channelId) {
+            if (!obj2.has(channelId)) {
+              const channel1 = outer1_5.getChannel(channelId);
+              let isGuildStageVoiceResult1;
+              if (channel1 != null) {
+                isGuildStageVoiceResult1 = channel1.isGuildStageVoice();
+              }
+              if (isGuildStageVoiceResult1) {
+                set.add(channelId);
+                if (null == outer1_18[channelId]) {
+                  obj2.add(channelId);
+                }
+              }
+            }
+          }
+          let tmp15 = arg0;
           if (0 !== set.size) {
             const _Array = Array;
-            tmp10 = outer1_35(guildId.userId, Array.from(set)) || arg0;
-            const tmp12 = outer1_35(guildId.userId, Array.from(set)) || arg0;
+            const arr = Array.from(set);
+            let f75201 = guildId.userId;
+            let mapped = arr;
+            if (arr === undefined) {
+              let values = outer1_16.values(undefined, true);
+              mapped = values.map((id) => id.id);
+            }
+            f75201 = (updateParticipant) => updateParticipant.updateParticipant(f75201);
+            if (mapped === undefined) {
+              values = outer1_16.values(undefined, true);
+              mapped = values.map((id) => id.id);
+            }
+            tmp15 = mapped.reduce((arg0, arg1) => {
+              let obj = outer1_18[arg1];
+              if (null == obj) {
+                const obj2 = new outer1_1(outer1_2[14])(arg1);
+                outer1_18[arg1] = obj2;
+                obj2.rebuild();
+                obj = obj2;
+              }
+              let flag = arg0;
+              if (f75201(obj)) {
+                const channel = outer1_5.getChannel(arg1);
+                if (null != channel) {
+                  if (channel.isGuildStageVoice()) {
+                    if (0 === obj.size()) {
+                      const id = channel.id;
+                      flag = true;
+                      if (null != id) {
+                        delete tmp[tmp2];
+                        outer1_16.delete(id);
+                        flag = true;
+                      }
+                    } else {
+                      flag = true;
+                      if (null == outer1_16.get(channel.id)) {
+                        const result = obj4.set(channel.id, channel);
+                        flag = true;
+                      }
+                      obj4 = outer1_16;
+                    }
+                  }
+                }
+                flag = true;
+                if (null != arg1) {
+                  delete tmp2[tmp3];
+                  outer1_16.delete(arg1);
+                  flag = true;
+                }
+              }
+              return flag;
+            }, false) || arg0;
+            const tmp18 = mapped.reduce((arg0, arg1) => {
+              let obj = outer1_18[arg1];
+              if (null == obj) {
+                const obj2 = new outer1_1(outer1_2[14])(arg1);
+                outer1_18[arg1] = obj2;
+                obj2.rebuild();
+                obj = obj2;
+              }
+              let flag = arg0;
+              if (f75201(obj)) {
+                const channel = outer1_5.getChannel(arg1);
+                if (null != channel) {
+                  if (channel.isGuildStageVoice()) {
+                    if (0 === obj.size()) {
+                      const id = channel.id;
+                      flag = true;
+                      if (null != id) {
+                        delete tmp[tmp2];
+                        outer1_16.delete(id);
+                        flag = true;
+                      }
+                    } else {
+                      flag = true;
+                      if (null == outer1_16.get(channel.id)) {
+                        const result = obj4.set(channel.id, channel);
+                        flag = true;
+                      }
+                      obj4 = outer1_16;
+                    }
+                  }
+                }
+                flag = true;
+                if (null != arg1) {
+                  delete tmp2[tmp3];
+                  outer1_16.delete(arg1);
+                  flag = true;
+                }
+              }
+              return flag;
+            }, false) || arg0;
           }
-          return tmp10;
+          return tmp15;
         }
       }
       return arg0;
     }, false);
   },
   CHANNEL_DELETE: function handleChannelDelete(channel) {
-    return clearChannel(channel.channel.id);
-  },
-  GUILD_MEMBERS_CHUNK_BATCH: function handleGuildMembersChunkBatch(chunks) {
-    let iter6;
-    const tmp = _createForOfIteratorHelperLoose(chunks.chunks);
-    const iter = tmp();
-    let iter2 = iter;
-    let flag = false;
-    let flag2 = false;
-    if (!iter.done) {
-      do {
-        let tmp2 = _createForOfIteratorHelperLoose;
-        let tmp3 = _createForOfIteratorHelperLoose(iter2.value.members);
-        let iter3 = tmp3();
-        let tmp4 = flag;
-        let iter4 = iter3;
-        let tmp5 = flag;
-        if (!iter3.done) {
-          do {
-            let tmp6 = updateParticipant;
-            let tmp7 = updateParticipant(iter4.value.user.id) || tmp4;
-            iter5 = tmp3();
-            tmp4 = tmp7;
-            iter4 = iter5;
-            tmp5 = tmp7;
-          } while (!iter5.done);
-        }
-        iter6 = tmp();
-        flag = tmp5;
-        iter2 = iter6;
-        flag2 = tmp5;
-      } while (!iter6.done);
+    const id = channel.channel.id;
+    let flag = null != id;
+    if (flag) {
+      delete tmp[tmp2];
+      secondaryIndexMap.delete(id);
+      flag = true;
     }
-    return flag2;
+    return flag;
+  },
+  GUILD_MEMBERS_CHUNK_BATCH: function handleGuildMembersChunkBatch(arg0) {
+    let flag = false;
+    const iter = arg0.chunks[Symbol.iterator]();
+    while (iter !== undefined) {
+      let members = iter.next().members;
+      let tmp = members;
+      let tmp2 = members;
+      for (const item10014 of members) {
+        let tmp3 = updateParticipant;
+        let tmp4 = updateParticipant(item10014.user.id);
+        if (!tmp4) {
+          tmp4 = flag;
+        }
+        flag = tmp4;
+        continue;
+      }
+      continue;
+    }
+    return flag;
   },
   USER_UPDATE: handleUserUpdate,
   GUILD_MEMBER_REMOVE: handleUserUpdate,
@@ -538,28 +683,120 @@ tmp4 = new tmp4(require("dispatcher"), {
     channels = channels.channels;
     const reduced = channels.reduce((arr, isGuildStageVoice) => {
       if (isGuildStageVoice.isGuildStageVoice()) {
-        if (outer1_22.has(isGuildStageVoice.guild_id)) {
-          const value = outer1_21.get(isGuildStageVoice.id);
-          let tmp5 = null == value;
-          if (!tmp5) {
-            tmp5 = outer1_1(outer1_2[21])(isGuildStageVoice.permissionOverwrites, value.permissionOverwrites);
+        if (set.has(isGuildStageVoice.guild_id)) {
+          const value = closure_16.get(isGuildStageVoice.id);
+          let tmp4 = null == value;
+          if (!tmp4) {
+            tmp4 = callback(table[16])(isGuildStageVoice.permissionOverwrites, value.permissionOverwrites);
           }
-          if (!tmp5) {
+          if (!tmp4) {
             arr.push(isGuildStageVoice.id);
-            const result = outer1_21.set(isGuildStageVoice.id, isGuildStageVoice);
+            const result = closure_16.set(isGuildStageVoice.id, isGuildStageVoice);
           }
           return arr;
         }
       }
       return arr;
     }, []);
-    updateParticipants((rebuild) => rebuild.rebuild(), reduced);
+    const f75205 = (rebuild) => rebuild.rebuild();
+    let mapped = reduced;
+    if (reduced === undefined) {
+      const values = secondaryIndexMap.values(undefined, true);
+      mapped = values.map((id) => id.id);
+    }
+    const reduced1 = mapped.reduce((arg0, arg1) => {
+      let obj = outer1_18[arg1];
+      if (null == obj) {
+        const obj2 = new outer1_1(outer1_2[14])(arg1);
+        outer1_18[arg1] = obj2;
+        obj2.rebuild();
+        obj = obj2;
+      }
+      let flag = arg0;
+      if (f75201(obj)) {
+        const channel = outer1_5.getChannel(arg1);
+        if (null != channel) {
+          if (channel.isGuildStageVoice()) {
+            if (0 === obj.size()) {
+              const id = channel.id;
+              flag = true;
+              if (null != id) {
+                delete tmp[tmp2];
+                outer1_16.delete(id);
+                flag = true;
+              }
+            } else {
+              flag = true;
+              if (null == outer1_16.get(channel.id)) {
+                const result = obj4.set(channel.id, channel);
+                flag = true;
+              }
+              obj4 = outer1_16;
+            }
+          }
+        }
+        flag = true;
+        if (null != arg1) {
+          delete tmp2[tmp3];
+          outer1_16.delete(arg1);
+          flag = true;
+        }
+      }
+      return flag;
+    }, false);
     return reduced.length > 0;
   },
   GUILD_ROLE_UPDATE: function handleGuildRoleUpdate(guildId) {
     guildId = guildId.guildId;
     if (set.has(guildId)) {
-      return updateParticipants((rebuild) => rebuild.rebuild(), getActiveStageChannelIds(guildId));
+      const fn = (rebuild) => rebuild.rebuild();
+      let values = secondaryIndexMap.values(guildId, true);
+      const mapped = values.map((id) => id.id);
+      let mapped1 = mapped;
+      if (mapped === undefined) {
+        values = secondaryIndexMap.values(undefined, true);
+        mapped1 = values.map((id) => id.id);
+      }
+      return mapped1.reduce((arg0, arg1) => {
+        let obj = outer1_18[arg1];
+        if (null == obj) {
+          const obj2 = new outer1_1(outer1_2[14])(arg1);
+          outer1_18[arg1] = obj2;
+          obj2.rebuild();
+          obj = obj2;
+        }
+        let flag = arg0;
+        if (f75201(obj)) {
+          const channel = outer1_5.getChannel(arg1);
+          if (null != channel) {
+            if (channel.isGuildStageVoice()) {
+              if (0 === obj.size()) {
+                const id = channel.id;
+                flag = true;
+                if (null != id) {
+                  delete tmp[tmp2];
+                  outer1_16.delete(id);
+                  flag = true;
+                }
+              } else {
+                flag = true;
+                if (null == outer1_16.get(channel.id)) {
+                  const result = obj4.set(channel.id, channel);
+                  flag = true;
+                }
+                obj4 = outer1_16;
+              }
+            }
+          }
+          flag = true;
+          if (null != arg1) {
+            delete tmp2[tmp3];
+            outer1_16.delete(arg1);
+            flag = true;
+          }
+        }
+        return flag;
+      }, false);
     }
   },
   RTC_CONNECTION_VIDEO: function handleRTCConnectionVideo(guildId) {
@@ -571,12 +808,53 @@ tmp4 = new tmp4(require("dispatcher"), {
     if (!tmp) {
       tmp = !set.has(guildId);
     }
-    let tmp3 = !tmp;
+    let reduced = !tmp;
     if (!tmp) {
       const items = [channelId];
-      tmp3 = updateParticipant(userId, items);
+      let f75201 = userId;
+      f75201 = (updateParticipant) => updateParticipant.updateParticipant(f75201);
+      reduced = items.reduce((arg0, arg1) => {
+        let obj = outer1_18[arg1];
+        if (null == obj) {
+          const obj2 = new outer1_1(outer1_2[14])(arg1);
+          outer1_18[arg1] = obj2;
+          obj2.rebuild();
+          obj = obj2;
+        }
+        let flag = arg0;
+        if (f75201(obj)) {
+          const channel = outer1_5.getChannel(arg1);
+          if (null != channel) {
+            if (channel.isGuildStageVoice()) {
+              if (0 === obj.size()) {
+                const id = channel.id;
+                flag = true;
+                if (null != id) {
+                  delete tmp[tmp2];
+                  outer1_16.delete(id);
+                  flag = true;
+                }
+              } else {
+                flag = true;
+                if (null == outer1_16.get(channel.id)) {
+                  const result = obj4.set(channel.id, channel);
+                  flag = true;
+                }
+                obj4 = outer1_16;
+              }
+            }
+          }
+          flag = true;
+          if (null != arg1) {
+            delete tmp2[tmp3];
+            outer1_16.delete(arg1);
+            flag = true;
+          }
+        }
+        return flag;
+      }, false);
     }
-    return tmp3;
+    return reduced;
   },
   STREAM_CLOSE: handleStreamClose,
   STREAM_DELETE: handleStreamClose,
@@ -586,26 +864,20 @@ tmp4 = new tmp4(require("dispatcher"), {
   GUILD_CREATE: handleGuildCreateOrDelete,
   GUILD_DELETE: handleGuildCreateOrDelete,
   PASSIVE_UPDATE_V2: function handlePassiveUpdateV2(guildId) {
-    let iter3;
-    const tmp = _createForOfIteratorHelperLoose(getActiveStageChannelIds(guildId.guildId));
-    const iter = tmp();
-    let iter2 = iter;
     let flag = false;
-    let flag2 = false;
-    if (!iter.done) {
-      do {
-        let tmp2 = getOrCreateParticipants;
-        let obj = getOrCreateParticipants(iter2.value);
-        let tmp3 = obj.rebuild() || flag;
-        iter3 = tmp();
-        flag = tmp3;
-        iter2 = iter3;
-        flag2 = tmp3;
-      } while (!iter3.done);
+    for (const item10010 of tmp) {
+      let tmp2 = getOrCreateParticipants;
+      let obj = getOrCreateParticipants(item10010);
+      let rebuildResult = obj.rebuild();
+      if (!rebuildResult) {
+        rebuildResult = flag;
+      }
+      flag = rebuildResult;
+      continue;
     }
-    return flag2;
+    return flag;
   }
 });
 let result = set.fileFinishedImporting("modules/stage_channels/StageChannelParticipantStore.tsx");
 
-export default tmp4;
+export default stageChannelParticipantStore;

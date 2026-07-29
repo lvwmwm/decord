@@ -1,14 +1,14 @@
-// Module ID: 8403
-// Function ID: 67038
-// Dependencies: [31, 4157, 33, 566, 4578, 6606, 689, 2]
+// Module ID: 8427
+// Function ID: 8428
+// Dependencies: [19, 4181, 21, 589, 4600, 6627, 712, 2]
 
-// Module 8403
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 8427
+import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
 import { jsx } from "jsxProd";
-import importAllResult from "result";
+import importAllResult from "noop";
 
 const require = arg1;
-const memoResult = require("result").memo(function NitroUpsellButton(shiny) {
+const memoResult = require("noop").memo(function NitroUpsellButton(shiny) {
   let loading;
   let onPress;
   let text;
@@ -17,18 +17,18 @@ const memoResult = require("result").memo(function NitroUpsellButton(shiny) {
   if (flag === undefined) {
     flag = true;
   }
-  let obj = require(566) /* initialize */;
-  const items = [_isNativeReflectConstruct];
-  const stateFromStores = obj.useStateFromStores(items, () => outer1_3.useReducedMotion);
-  obj = { text, size: "lg", loading, onPress };
-  obj = { color: importDefault(689).colors.WHITE, size: "sm" };
-  obj.icon = jsx(require(6606) /* NitroWheelIcon */.NitroWheelIcon, { color: importDefault(689).colors.WHITE, size: "sm" });
-  obj.variant = "experimental_premium-primary";
+  let obj = require(589) /* initialize */;
+  const items = [maybeApplyNoTextColorForLightCustomTheme];
+  const stateFromStores = obj.useStateFromStores(items, () => useReducedMotion.useReducedMotion);
+  obj = { text, size: "lg", loading, onPress, icon: null, variant: "experimental_premium-primary", shiny: null };
+  obj = { color: null, size: "sm" };
+  obj[0] = importDefault(712).colors.WHITE;
+  obj[4] = jsx(require(6627) /* NitroWheelIcon */.NitroWheelIcon, { color: null, size: "sm" });
   if (flag) {
     flag = !stateFromStores;
   }
-  obj.shiny = flag;
-  return jsx(require(4578) /* Button */.Button, { color: importDefault(689).colors.WHITE, size: "sm" });
+  obj[6] = flag;
+  return jsx(require(4600) /* Button */.Button, { color: null, size: "sm" });
 });
 const result = require("jsxProd").fileFinishedImporting("modules/premium/components/native/NitroUpsellButton.tsx");
 

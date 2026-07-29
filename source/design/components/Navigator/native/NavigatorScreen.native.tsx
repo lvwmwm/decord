@@ -1,14 +1,14 @@
-// Module ID: 5614
-// Function ID: 47528
+// Module ID: 5632
+// Function ID: 5633
 // Name: NavigatorScreen
-// Dependencies: [31, 33, 5615, 5616, 2]
+// Dependencies: [19, 21, 5633, 5634, 2]
 
-// Module 5614 (NavigatorScreen)
+// Module 5632 (NavigatorScreen)
 import { jsxs } from "jsxProd";
-import importAllResult from "result";
+import importAllResult from "noop";
 
 const require = arg1;
-const memoResult = require("result").memo((arg0) => {
+const memoResult = require("noop").memo((arg0) => {
   let navigation;
   let route;
   let screen;
@@ -16,16 +16,16 @@ const memoResult = require("result").memo((arg0) => {
   ({ screen, route } = arg0);
   const customNavbar = screen.customNavbar;
   ({ navigation, viewStyle } = arg0);
-  const designConfig = require(5615) /* designConfig */.designConfig;
+  const designConfig = require(5633) /* designConfig */.designConfig;
   const trackNavigatorScreenImpression = designConfig.useTrackNavigatorScreenImpression(screen, route);
   let customNavbarResult = null;
   if (null != customNavbar) {
     customNavbarResult = customNavbar();
   }
-  const obj = { postpone: screen.postponeRender, ignoreKeyboard: screen.ignoreKeyboard, viewStyle };
+  const obj = { postpone: screen.postponeRender, ignoreKeyboard: screen.ignoreKeyboard, viewStyle, children: null };
   const items = [customNavbarResult, screen.render(route.params, navigation)];
-  obj.children = items;
-  return jsxs(require(5616) /* PostponeRender */.PostponeRender, { postpone: screen.postponeRender, ignoreKeyboard: screen.ignoreKeyboard, viewStyle });
+  obj[3] = items;
+  return jsxs(require(5634) /* PostponeRender */.PostponeRender, { postpone: screen.postponeRender, ignoreKeyboard: screen.ignoreKeyboard, viewStyle, children: null });
 });
 const result = require("designConfig").fileFinishedImporting("design/components/Navigator/native/NavigatorScreen.native.tsx");
 

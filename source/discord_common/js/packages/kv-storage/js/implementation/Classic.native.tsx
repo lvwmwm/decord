@@ -1,9 +1,9 @@
-// Module ID: 1886
-// Function ID: 21030
+// Module ID: 1910
+// Function ID: 1911
 // Name: __KvStorage
-// Dependencies: [27, 2]
+// Dependencies: [17, 2]
 
-// Module 1886 (__KvStorage)
+// Module 1910 (__KvStorage)
 import { NativeModules } from "get ActivityIndicator";
 
 if (null != global.__KvStorage) {

@@ -1,22 +1,22 @@
-// Module ID: 7959
-// Function ID: 63165
+// Module ID: 7984
+// Function ID: 7985
 // Name: maybeFetchUserProfile
-// Dependencies: [1348, 1918, 5878, 5779, 7886, 4974, 686, 7960, 7961, 2]
+// Dependencies: [1372, 1942, 5896, 5797, 7911, 4996, 709, 7985, 7986, 2]
 // Exports: default
 
-// Module 7959 (maybeFetchUserProfile)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_4 from "_isNativeReflectConstruct";
-import closure_5 from "_isNativeReflectConstruct";
+// Module 7984 (maybeFetchUserProfile)
+import ensureGuildLoaded from "ensureGuildLoaded";
+import trackCommunicationDisabled from "trackCommunicationDisabled";
+import createUserWidgetFromServer from "createUserWidgetFromServer";
 
 const require = arg1;
-let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/user_profile/maybeFetchUserProfile.tsx");
+let result = require("createUserWidgetFromServer").fileFinishedImporting("modules/user_profile/maybeFetchUserProfile.tsx");
 
 export default function maybeFetchUserProfile(id, closure_0, guildMember) {
   let type;
   let withMutualGuilds;
-  let obj = guildMember;
   const _require = id;
+  let obj = guildMember;
   if (guildMember === undefined) {
     obj = {};
   }
@@ -44,119 +44,130 @@ export default function maybeFetchUserProfile(id, closure_0, guildMember) {
   obj = undefined;
   if ("" === id) {
     return Promise.resolve();
-  } else if (authStore.isFetchingProfile(id, guildId)) {
+  } else if (fetchingProfile.isFetchingProfile(id, guildId)) {
     return Promise.resolve();
   } else {
-    const userProfile = authStore.getUserProfile(id);
-    const guildMemberProfile = authStore.getGuildMemberProfile(id, guildId);
-    let tmp8 = userProfile;
+    const userProfile = obj10.getUserProfile(id);
+    const guildMemberProfile = obj10.getGuildMemberProfile(id, guildId);
+    let tmp7 = userProfile;
     if (null != guildId) {
-      tmp8 = guildMemberProfile;
+      tmp7 = guildMemberProfile;
     }
     const _Date = Date;
-    let fetchEndedAt;
+    let num;
     const timestamp = Date.now();
-    if (null != tmp8) {
-      fetchEndedAt = tmp8.fetchEndedAt;
+    if (tmp7 != null) {
+      num = tmp7.fetchEndedAt;
     }
-    let num = 0;
-    if (null != fetchEndedAt) {
-      num = fetchEndedAt;
+    if (num == null) {
+      num = 0;
     }
-    let tmp12 = timestamp - num >= 60000;
     let status;
-    if (null != tmp8) {
-      const fetchError = tmp8.fetchError;
-      if (null != fetchError) {
+    const diff = timestamp - num;
+    if (tmp7 != null) {
+      const fetchError = tmp7.fetchError;
+      if (fetchError != null) {
         status = fetchError.status;
       }
     }
+    let tmp12 = diff >= 60000;
     if (404 === status) {
       if (!tmp12) {
         return Promise.resolve();
       }
     } else {
       let status1;
-      if (null != tmp8) {
-        const fetchError2 = tmp8.fetchError;
-        if (null != fetchError2) {
+      if (tmp7 != null) {
+        const fetchError2 = tmp7.fetchError;
+        if (fetchError2 != null) {
           status1 = fetchError2.status;
         }
       }
     }
-    const mutualGuilds = authStore.getMutualGuilds(id);
-    const mutualFriends = authStore.getMutualFriends(id);
-    const tmp19 = null == guildId ? null == userProfile : null == guildMemberProfile;
-    let tmp20 = !tmp19;
-    if (!tmp19) {
+    const mutualGuilds = obj10.getMutualGuilds(id);
+    const mutualFriends = obj10.getMutualFriends(id);
+    const tmp17 = null == guildId ? null == userProfile : null == guildMemberProfile;
+    let tmp18 = !tmp17;
+    if (!tmp17) {
       if (!tmp12) {
         tmp12 = null == mutualGuilds && withMutualGuilds;
-        const tmp21 = null == mutualGuilds && withMutualGuilds;
+        const tmp19 = null == mutualGuilds && withMutualGuilds;
       }
       if (!tmp12) {
         tmp12 = null == mutualFriends && flag2;
-        const tmp22 = null == mutualFriends && flag2;
+        const tmp20 = null == mutualFriends && flag2;
       }
       if (!tmp12) {
-        tmp12 = null == tmp18 && flag;
-        const tmp23 = null == tmp18 && flag;
+        tmp12 = null == tmp16 && flag;
+        const tmp21 = null == tmp16 && flag;
       }
-      tmp20 = tmp12;
+      tmp18 = tmp12;
     }
-    if (!tmp19) {
-      if (!tmp20) {
+    if (!tmp17) {
+      if (!tmp18) {
         return Promise.resolve();
       }
     }
     if (null != guildId) {
       let profileEffect;
-      if (null != guildMemberProfile) {
+      if (guildMemberProfile != null) {
         profileEffect = guildMemberProfile.profileEffect;
       }
-    } else if (null != userProfile) {
+    } else if (userProfile != null) {
       profileEffect = userProfile.profileEffect;
     }
     if (null != profileEffect) {
-      const result = _require(5779).maybeFetchCollectiblesProduct(profileEffect.skuId);
-      const obj2 = _require(5779);
+      const result = _require(5797).maybeFetchCollectiblesProduct(profileEffect.skuId);
+      const obj2 = _require(5797);
     }
     if (null != guildId) {
       let profileFrame;
-      if (null != guildMemberProfile) {
+      if (guildMemberProfile != null) {
         profileFrame = guildMemberProfile.profileFrame;
       }
-    } else if (null != userProfile) {
+    } else if (userProfile != null) {
       profileFrame = userProfile.profileFrame;
     }
     if (null != profileFrame) {
-      const result1 = _require(5779).maybeFetchCollectiblesProduct(profileFrame.skuId);
-      const obj3 = _require(5779);
+      const result1 = _require(5797).maybeFetchCollectiblesProduct(profileFrame.skuId);
+      const obj3 = _require(5797);
     }
     if (null != closure_0) {
-      _require(7886).maybeFetchColors(closure_0);
-      const obj4 = _require(7886);
+      _require(7911).maybeFetchColors(closure_0);
+      const obj4 = _require(7911);
     }
-    obj = { type, withMutualGuilds, withMutualFriends: flag2, withMutualFriendsCount: flag, guildId, joinRequestId: tmp2, abortSignal: tmp3 };
-    id = undefined;
+    obj = { type: null, withMutualGuilds: null, withMutualFriends: null, withMutualFriendsCount: null, guildId: null, joinRequestId: null, abortSignal: null, connectionsRoleId: null };
+    obj[0] = type;
+    obj[1] = withMutualGuilds;
+    obj[2] = flag2;
+    obj[3] = flag;
+    obj[4] = guildId;
+    obj[5] = tmp2;
+    obj[6] = tmp3;
+    let tmp34;
     if (null != guildId) {
-      obj = { guildMember: member.getMember(guildId, id), channel: channel.getChannel(tmp) };
-      const visibleConnectionsRole = _require(4974).getVisibleConnectionsRole(obj);
-      if (null != visibleConnectionsRole) {
+      obj = { guildMember: null, channel: null };
+      obj[0] = member.getMember(guildId, id);
+      obj[1] = channel.getChannel(tmp);
+      const visibleConnectionsRole = _require(4996).getVisibleConnectionsRole(obj);
+      id = undefined;
+      if (visibleConnectionsRole != null) {
         id = visibleConnectionsRole.id;
       }
-      const obj6 = _require(4974);
+      tmp34 = id;
+      const obj6 = _require(4996);
     }
-    obj.connectionsRoleId = id;
+    obj[7] = tmp34;
     if (flag3) {
-      obj(686).wait(() => {
+      obj(709).wait(() => {
         const obj = id(outer1_2[7]);
         return obj.fetchProfile(id, obj, obj(outer1_2[8]));
       });
       return Promise.resolve();
     } else {
-      const profile = _require(7960).fetchProfile(id, obj, obj(7961));
+      const profile = _require(7985).fetchProfile(id, obj, obj(7986));
       let resolved = profile;
-      if (tmp20) {
+      if (tmp18) {
         resolved = profile;
         if (!flag4) {
           resolved = Promise.resolve();

@@ -1,64 +1,64 @@
-// Module ID: 9327
-// Function ID: 72878
+// Module ID: 9351
+// Function ID: 9352
 // Name: EducationCoachmarkImg
-// Dependencies: [57, 31, 27, 1850, 1345, 33, 1334, 4165, 689, 6603, 566, 3811, 8417, 1212, 8406, 2]
+// Dependencies: [32, 19, 17, 1874, 1369, 21, 1358, 4189, 712, 6624, 589, 3835, 8441, 1236, 8430, 2]
 // Exports: default
 
-// Module 9327 (EducationCoachmarkImg)
+// Module 9351 (EducationCoachmarkImg)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
+import noop from "noop";
 import { View } from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import mergeGuildAvatar from "mergeGuildAvatar";
 import { ContentDismissActionType } from "ContentDismissActionType";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
 const require = arg1;
 function EducationCoachmarkImg() {
-  let obj = { style: _createForOfIteratorHelperLoose().upsellImageContainer };
-  obj = { color: importDefault(689).colors.WHITE, size: "md" };
-  obj.children = jsx(require(6603) /* SuperReactionIcon */.SuperReactionIcon, { color: importDefault(689).colors.WHITE, size: "md" });
-  return <View color={importDefault(689).colors.WHITE} size="md" />;
+  let obj = { style: createCacheKey().upsellImageContainer, children: null };
+  obj = { color: null, size: "md" };
+  obj[0] = importDefault(712).colors.WHITE;
+  obj[1] = jsx(require(6624) /* SuperReactionIcon */.SuperReactionIcon, { color: null, size: "md" });
+  return <View color={null} size="md" />;
 }
 let closure_9 = require("DismissibleContent").DismissibleContent.SUPER_REACTION_TOGGLE_EDUCATION_MOBILE;
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BRAND, borderRadius: require("_createForOfIteratorHelperLoose").radii.round, height: 40, width: 40, display: "flex", alignItems: "center", justifyContent: "center" };
-_createForOfIteratorHelperLoose.upsellImageContainer = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+createCacheKey = { upsellImageContainer: null };
+createCacheKey = { backgroundColor: require("Themes").colors.BACKGROUND_BRAND, borderRadius: require("Themes").radii.round, height: 40, width: 40, display: "flex", alignItems: "center", justifyContent: "center" };
+createCacheKey[0] = createCacheKey;
+createCacheKey = createCacheKey.createStyles(createCacheKey);
 const result = require("get ActivityIndicator").fileFinishedImporting("modules/reactions/native/useBurstToggleCoachmark.tsx");
 
 export default function useBurstToggleCoachmark(targetRef) {
-  const items = [_isNativeReflectConstruct];
-  const stateFromStores = first(566).useStateFromStores(items, () => outer1_6.getCurrentUser());
-  let obj = first(566);
+  const items = [mergeGuildAvatar];
+  const stateFromStores = first(589).useStateFromStores(items, () => currentUser.getCurrentUser());
+  let obj = first(589);
   if (obj2.isPremium(stateFromStores)) {
     const items1 = [closure_9];
     let items2 = items1;
   } else {
     items2 = [];
   }
-  obj2 = first(3811);
-  const tmp3 = callback(first(8417).useSelectedDismissibleContent(items2), 2);
-  first = tmp3[0];
-  const importDefault = tmp5;
-  const items3 = [first, tmp3[1]];
+  let tmpResult = tmp(8441);
+  const tmp5 = callback(tmpResult.useSelectedDismissibleContent(items2), 2);
+  first = tmp5[0];
+  const importDefault = tmp7;
+  const items3 = [first, tmp5[1]];
   const memo = React.useMemo(() => {
-    const obj = {};
+    const obj = { description: null, onDismiss: null, position: "bottom", renderImgComponent: null, title: null, visible: null };
     const intl = first(outer1_2[13]).intl;
-    obj.description = intl.string(first(outer1_2[13]).t.nyYohm);
-    obj.onDismiss = function onDismiss() {
-      outer1_1(outer2_7.UNKNOWN);
+    obj[0] = intl.string(first(outer1_2[13]).t.nyYohm);
+    obj[1] = function onDismiss() {
+      callback(outer1_7.UNKNOWN);
     };
-    obj.position = "bottom";
-    obj.renderImgComponent = function renderImgComponent() {
-      return outer2_8(outer2_11, {});
+    obj[3] = function renderImgComponent() {
+      return callback2(closure_11, {});
     };
     const intl2 = first(outer1_2[13]).intl;
-    obj.title = intl2.string(first(outer1_2[13]).t.ORK94p);
-    obj.visible = first === outer1_9;
+    obj[4] = intl2.string(first(outer1_2[13]).t.ORK94p);
+    obj[5] = first === outer1_9;
     return obj;
   }, items3);
-  const obj3 = first(8417);
-  const coachmark = first(8406).useCoachmark(targetRef, memo);
-  return tmp3[1];
+  tmpResult = tmp(8430);
+  const coachmark = tmpResult.useCoachmark(targetRef, memo);
+  return tmp5[1];
 };

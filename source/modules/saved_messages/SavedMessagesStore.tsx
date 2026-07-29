@@ -1,122 +1,30 @@
-// Module ID: 9529
-// Function ID: 74150
-// Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 1850, 3789, 9530, 4386, 566, 686, 2]
+// Module ID: 9553
+// Function ID: 9554
+// Name: getTimeSafe
+// Dependencies: [1874, 3813, 9554, 4409, 589, 709, 2]
+// Exports: getComparator
 
-// Module 9529 (_isNativeReflectConstruct)
-import sortedInsert from "sortedInsert";
-import savedMessageDataToClient from "savedMessageDataToClient";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import set from "_possibleConstructorReturn";
+// Module 9553 (getTimeSafe)
+import mergeGuildAvatar from "mergeGuildAvatar";
+import { Store } from "initialize";
+import set from "SavedMessageSortTypes";
 
 const require = arg1;
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
-  }
-  const result = _isNativeReflectConstruct();
-}
-function _createForOfIteratorHelperLoose(iterable) {
-  let closure_0 = iterable;
-  iterable = "undefined" !== typeof Symbol;
-  if (iterable) {
-    const _Symbol = Symbol;
-    iterable = iterable[Symbol.iterator];
-  }
-  if (!iterable) {
-    iterable = iterable[Symbol.iterator];
-  }
-  if (iterable) {
-    const iter = iterable.call(iterable);
-    const next = iter.next;
-    return next.bind(iter);
-  } else {
-    const _Array = Array;
-    let tmp = iterable;
-    if (!Array.isArray(iterable)) {
-      let tmp2;
-      if (iterable) {
-        if ("string" === typeof iterable) {
-          tmp2 = _arrayLikeToArray(iterable, undefined);
-        } else {
-          const toString = {}.toString;
-          const substr = toString.call(iterable).slice(8, -1);
-          let name = substr;
-          if (tmp3) {
-            name = iterable.constructor.name;
-          }
-          if ("Map" !== name) {
-            if ("Set" !== name) {
-              if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(iterable, undefined);
-              } else {
-                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
-              }
-            }
-            tmp2 = arr;
-          }
-          const _Array2 = Array;
-          arr = Array.from(iterable);
-          const callResult = toString.call(iterable);
-          tmp3 = "Object" === substr && iterable.constructor;
-        }
-      }
-      tmp = tmp2;
-      if (!tmp2) {
-        const _TypeError = TypeError;
-        const typeError = new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
-        throw typeError;
-      }
-    }
-    if (tmp) {
-      closure_0 = tmp;
-    }
-    let c1 = 0;
-    return () => {
-      if (closure_1 >= length.length) {
-        let obj = { done: true };
-      } else {
-        obj = { done: false };
-        closure_1 = tmp3 + 1;
-        obj.value = length[+closure_1];
-      }
-      return obj;
-    };
-  }
-}
-function _arrayLikeToArray(arg0, arg1) {
-  let length;
-  if (tmp) {
-    length = arg0.length;
-  }
-  const ArrayResult = Array(length);
-  for (let num = 0; num < length; num = num + 1) {
-    ArrayResult[num] = arg0[num];
-  }
-  return ArrayResult;
-}
 function getTimeSafe(dueAt) {
   if (null == dueAt) {
-    return c8;
+    return c3;
   } else {
-    const _Date = Date;
-    const date = new Date(tmp);
-    return date.getTime();
+    try {
+      const _Date = Date;
+      const date = new Date(dueAt);
+      return date.getTime();
+    } catch (err) {
+      const _Error = Error;
+      const _HermesInternal = HermesInternal;
+      const error = new Error("Invalid date given (" + tmp + ")");
+      throw error;
+    }
   }
-}
-function getComparator(dueAt) {
-  if (null != dueAt.dueAt) {
-    let diff = getTimeSafe(dueAt.dueAt);
-  } else {
-    diff = c8 - getTimeSafe(dueAt.savedAt);
-  }
-  return diff;
 }
 function isChannelRelevant(id) {
   const value = map.get(id);
@@ -126,20 +34,18 @@ function isChannelRelevant(id) {
   }
   return tmp2;
 }
-function getSavedMessageKey(saveData) {
-  return "" + saveData.channelId + "-" + saveData.messageId;
-}
 function upsertSavedMessage(saveData) {
-  const tmp = getSavedMessageKey(saveData.saveData);
-  if (null == secondaryIndexMap.get(tmp)) {
+  saveData = saveData.saveData;
+  const combined = "" + saveData.channelId + "-" + saveData.messageId;
+  if (null == secondaryIndexMap.get(combined)) {
     const _Date = Date;
-    let closure_11 = Date.now();
+    let closure_7 = Date.now();
   }
-  const result = secondaryIndexMap.set(tmp, saveData);
+  const result = secondaryIndexMap.set(combined, saveData);
   const messageId = saveData.saveData.messageId;
   const channelId = saveData.saveData.channelId;
   let set = map.get(channelId);
-  if (null == set) {
+  if (set == null) {
     const _Set = Set;
     set = new Set();
   }
@@ -157,12 +63,12 @@ function upsertSavedMessage(saveData) {
   }
   set.delete(messageId);
 }
-function nullifyMessageObject(messageId) {
-  let obj = { messageId: messageId.messageId, channelId: messageId.channelId };
+function nullifyMessageObject(channelId) {
+  const combined = "" + channelId.channelId + "-" + channelId.messageId;
+  let obj = secondaryIndexMap;
+  const value = secondaryIndexMap.get(combined);
   let message;
-  const tmp2 = getSavedMessageKey(obj);
-  const value = secondaryIndexMap.get(tmp2);
-  if (null != value) {
+  if (value != null) {
     message = value.message;
   }
   if (null == message) {
@@ -171,190 +77,125 @@ function nullifyMessageObject(messageId) {
     obj = {};
     const merged = Object.assign(value);
     obj.message = null;
-    const result = secondaryIndexMap.set(tmp2, obj);
+    const result = obj.set(combined, obj);
     return true;
   }
 }
 function handleGuild() {
   let tmp = 0 !== set1.size;
   if (tmp) {
-    if (!c10) {
-      c10 = true;
+    if (!c6) {
+      c6 = true;
     }
-    tmp = !c10;
-    const tmp3 = !c10;
+    tmp = !c6;
+    const tmp3 = !c6;
   }
   return tmp;
 }
-let c8 = 10000000000000;
-const secondaryIndexMap = new require("sortedInsert").SecondaryIndexMap((saveData) => {
-  const items = [require(9530) /* savedMessageDataToClient */.SavedMessageSortTypes.ALL, ];
+let c3 = 10000000000000;
+const secondaryIndexMap = new require("version").SecondaryIndexMap((saveData) => {
+  const items = [require(9554) /* SavedMessageSortTypes */.SavedMessageSortTypes.ALL, ];
   if (null != saveData.saveData.dueAt) {
-    let BOOKMARK = require(9530) /* savedMessageDataToClient */.SavedMessageSortTypes.REMINDER;
+    let BOOKMARK = tmp(9554).SavedMessageSortTypes.REMINDER;
   } else {
-    BOOKMARK = require(9530) /* savedMessageDataToClient */.SavedMessageSortTypes.BOOKMARK;
+    BOOKMARK = tmp(9554).SavedMessageSortTypes.BOOKMARK;
   }
   items[1] = BOOKMARK;
   return items;
-}, (saveData) => getComparator(saveData.saveData));
-let c10 = true;
-let c11 = 0;
+}, (saveData) => {
+  saveData = saveData.saveData;
+  if (null != saveData.dueAt) {
+    let diff = getTimeSafe(saveData.dueAt);
+  } else {
+    diff = c3 - getTimeSafe(saveData.savedAt);
+  }
+  return diff;
+});
+let c6 = true;
+let c7 = 0;
 let set = new Set();
 const set1 = new Set();
 const map = new Map();
-let tmp6 = ((Store) => {
-  class SavedMessagesStore {
-    constructor() {
-      self = this;
-      tmp = outer1_2(this, SavedMessagesStore);
-      obj = outer1_5(SavedMessagesStore);
-      tmp2 = outer1_4;
-      if (outer1_15()) {
-        tmp6 = globalThis;
-        _Reflect = Reflect;
-        tmp7 = outer1_5;
-        tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, outer1_5(self).constructor);
-      } else {
-        tmp3 = arguments;
-        tmp4 = arguments;
-        constructResult = obj(...arguments);
-      }
-      return tmp2(self, constructResult);
+class SavedMessagesStore extends Store {
+}
+const prototype = SavedMessagesStore.prototype;
+prototype["initialize"] = function initialize() {
+  this.waitFor(mergeGuildAvatar);
+};
+prototype["getSavedMessages"] = function getSavedMessages() {
+  return secondaryIndexMap.values(require(9554) /* SavedMessageSortTypes */.SavedMessageSortTypes.ALL);
+};
+prototype["getSavedMessage"] = function getSavedMessage(channelId, messageId) {
+  return secondaryIndexMap.get("" + channelId + "-" + messageId);
+};
+prototype["getMessageBookmarks"] = function getMessageBookmarks() {
+  return secondaryIndexMap.values(require(9554) /* SavedMessageSortTypes */.SavedMessageSortTypes.BOOKMARK);
+};
+prototype["getMessageReminders"] = function getMessageReminders() {
+  return secondaryIndexMap.values(require(9554) /* SavedMessageSortTypes */.SavedMessageSortTypes.REMINDER);
+};
+prototype["getOverdueMessageReminderCount"] = function getOverdueMessageReminderCount() {
+  return set.size;
+};
+prototype["hasOverdueReminder"] = function hasOverdueReminder() {
+  return set.size > 0;
+};
+prototype["getMostRecentOverdueDueAt"] = function getMostRecentOverdueDueAt() {
+  let num = 0;
+  const timestamp = Date.now();
+  const values = secondaryIndexMap.values(require(9554) /* SavedMessageSortTypes */.SavedMessageSortTypes.REMINDER);
+  for (const item10021 of values) {
+    let tmp3 = getTimeSafe;
+    let tmp4 = getTimeSafe(item10021.saveData.dueAt);
+    let tmp5 = tmp4;
+    if (tmp4 > timestamp) {
+      let tmp6 = obj;
+      obj.return();
+      break;
+    } else {
+      num = tmp4;
+      continue;
     }
+    return num;
   }
-  callback2(SavedMessagesStore, Store);
-  let obj = {
-    key: "initialize",
-    value() {
-      this.waitFor(outer1_7);
-    }
-  };
-  const items = [obj, , , , , , , , , , , , ];
-  obj = {
-    key: "getSavedMessages",
-    value() {
-      return outer1_9.values(SavedMessagesStore(outer1_1[7]).SavedMessageSortTypes.ALL);
-    }
-  };
-  items[1] = obj;
-  obj = {
-    key: "getSavedMessage",
-    value(channelId, messageId) {
-      return outer1_9.get(outer1_21({ channelId, messageId }));
-    }
-  };
-  items[2] = obj;
-  items[3] = {
-    key: "getMessageBookmarks",
-    value() {
-      return outer1_9.values(SavedMessagesStore(outer1_1[7]).SavedMessageSortTypes.BOOKMARK);
-    }
-  };
-  items[4] = {
-    key: "getMessageReminders",
-    value() {
-      return outer1_9.values(SavedMessagesStore(outer1_1[7]).SavedMessageSortTypes.REMINDER);
-    }
-  };
-  items[5] = {
-    key: "getOverdueMessageReminderCount",
-    value() {
-      return outer1_12.size;
-    }
-  };
-  items[6] = {
-    key: "hasOverdueReminder",
-    value() {
-      return outer1_12.size > 0;
-    }
-  };
-  items[7] = {
-    key: "getMostRecentOverdueDueAt",
-    value() {
-      const timestamp = Date.now();
-      const tmp2 = outer1_16(outer1_9.values(SavedMessagesStore(outer1_1[7]).SavedMessageSortTypes.REMINDER));
-      const iter = tmp2();
-      let iter2 = iter;
-      let num = 0;
-      let num2 = 0;
-      if (!iter.done) {
-        const tmp4 = outer1_18(iter2.value.saveData.dueAt);
-        num2 = num;
-        while (tmp4 <= timestamp) {
-          let iter3 = tmp2();
-          iter2 = iter3;
-          num = tmp4;
-          num2 = tmp4;
-          if (iter3.done) {
-            break;
-          }
-        }
-      }
-      return num2;
-    }
-  };
-  items[8] = {
-    key: "getSavedMessageCount",
-    value() {
-      return outer1_9.size();
-    }
-  };
-  items[9] = {
-    key: "getIsStale",
-    value() {
-      return outer1_10;
-    }
-  };
-  items[10] = {
-    key: "getLastChanged",
-    value() {
-      return outer1_11;
-    }
-  };
-  items[11] = {
-    key: "isMessageBookmarked",
-    value(channelId, messageId) {
-      const value = outer1_9.get(outer1_21({ channelId, messageId }));
-      return null != value && null == value.saveData.dueAt;
-    }
-  };
-  items[12] = {
-    key: "isMessageReminder",
-    value(channelId, messageId) {
-      const value = outer1_9.get(outer1_21({ channelId, messageId }));
-      return null != value && null != value.saveData.dueAt;
-    }
-  };
-  return callback(SavedMessagesStore, items);
-})(require("initialize").Store);
-tmp6.displayName = "SavedMessagesStore";
-tmp6 = new tmp6(require("dispatcher"), {
+};
+prototype["getSavedMessageCount"] = function getSavedMessageCount() {
+  return secondaryIndexMap.size();
+};
+prototype["getIsStale"] = function getIsStale() {
+  return c6;
+};
+prototype["getLastChanged"] = function getLastChanged() {
+  return c7;
+};
+prototype["isMessageBookmarked"] = function isMessageBookmarked(id, id2) {
+  const value = secondaryIndexMap.get("" + id + "-" + id2);
+  return null != value && null == value.saveData.dueAt;
+};
+prototype["isMessageReminder"] = function isMessageReminder(id, id2) {
+  const value = secondaryIndexMap.get("" + id + "-" + id2);
+  return null != value && null != value.saveData.dueAt;
+};
+SavedMessagesStore.displayName = "SavedMessagesStore";
+const savedMessagesStore = new SavedMessagesStore(require("dispatcher"), {
   POST_CONNECTION_OPEN: function handlePostConnectionOpen() {
-    let c10 = true;
+    let c6 = true;
   },
   LOGOUT: function handleLogout() {
-    let c10 = true;
+    let c6 = true;
     secondaryIndexMap.clear();
     map.clear();
     set1.clear();
   },
-  SAVED_MESSAGES_UPDATE: function handleUpdate(savedMessages) {
-    let done;
-    let c10 = false;
+  SAVED_MESSAGES_UPDATE: function handleUpdate(arg0) {
+    let c6 = false;
     secondaryIndexMap.clear();
     map.clear();
     set1.clear();
-    const tmp4 = _createForOfIteratorHelperLoose(savedMessages.savedMessages);
-    let iter = tmp4();
-    if (!iter.done) {
-      do {
-        let tmp5 = upsertSavedMessage;
-        let tmp6 = upsertSavedMessage(iter.value);
-        let iter2 = tmp4();
-        iter = iter2;
-        done = iter2.done;
-      } while (!done);
+    while (tmp4 !== undefined) {
+      let tmp6 = upsertSavedMessage;
+      let tmp7 = upsertSavedMessage(tmp5);
+      continue;
     }
   },
   SAVED_MESSAGE_CREATE: function handleCreate(savedMessage) {
@@ -362,60 +203,70 @@ tmp6 = new tmp6(require("dispatcher"), {
   },
   SAVED_MESSAGE_DELETE: function handleDelete(savedMessageData) {
     savedMessageData = savedMessageData.savedMessageData;
-    const tmp = getSavedMessageKey(savedMessageData);
-    let value = secondaryIndexMap.get(tmp);
+    const combined = "" + savedMessageData.channelId + "-" + savedMessageData.messageId;
+    let value = secondaryIndexMap.get(combined);
     if (null != value) {
-      secondaryIndexMap.delete(tmp);
+      secondaryIndexMap.delete(combined);
       const messageId = savedMessageData.messageId;
       value = map.get(value.saveData.channelId);
-      if (null != value) {
+      if (value != null) {
         value.delete(messageId);
       }
       set1.delete(messageId);
       set.delete(messageId);
       const _Date = Date;
-      let closure_11 = Date.now();
+      let closure_7 = Date.now();
     }
     return false;
   },
-  MESSAGE_DELETE: function handleMessageDelete(id) {
-    return nullifyMessageObject({ messageId: id.id, channelId: id.channelId });
+  MESSAGE_DELETE: function handleMessageDelete(channelId) {
+    const combined = "" + channelId.channelId + "-" + channelId.id;
+    let obj = secondaryIndexMap;
+    const value = secondaryIndexMap.get(combined);
+    let message;
+    if (value != null) {
+      message = value.message;
+    }
+    let flag = false;
+    if (null != message) {
+      obj = {};
+      const merged = Object.assign(value);
+      obj.message = null;
+      const result = obj.set(combined, obj);
+      flag = true;
+    }
+    return flag;
   },
-  MESSAGE_DELETE_BULK: function handleMessageDeleteBulk(ids) {
-    let done;
-    const tmp2 = _createForOfIteratorHelperLoose(ids.ids);
-    let iter = tmp2();
-    if (!iter.done) {
-      do {
-        let tmp3 = nullifyMessageObject;
-        let obj = { messageId: iter.value, channelId: tmp };
-        let tmp4 = nullifyMessageObject(obj);
-        let iter2 = tmp2();
-        iter = iter2;
-        done = iter2.done;
-      } while (!done);
+  MESSAGE_DELETE_BULK: function handleMessageDeleteBulk(arg0) {
+    while (tmp2 !== undefined) {
+      let tmp4 = nullifyMessageObject;
+      let obj = { messageId: null, channelId: null };
+      obj[0] = tmp3;
+      obj[1] = tmp;
+      let tmp5 = nullifyMessageObject(obj);
+      continue;
     }
   },
   MESSAGE_UPDATE: function handleMessageUpdate(message) {
     message = message.message;
     if (null != message.id) {
       if (null != message.channel_id) {
-        let obj = {};
-        ({ id: obj3.messageId, channel_id: obj3.channelId } = message);
-        const tmp10 = getSavedMessageKey(obj);
-        const value = secondaryIndexMap.get(tmp10);
+        const _HermesInternal = HermesInternal;
+        const combined = "" + message.channel_id + "-" + message.id;
+        const value = secondaryIndexMap.get(combined);
         message = undefined;
-        if (null != value) {
+        if (value != null) {
           message = value.message;
         }
         if (null == message) {
           return false;
         } else {
-          obj = {};
+          const obj = {};
           const merged = Object.assign(value);
-          obj.message = require(4386) /* createMinimalMessageRecord */.updateMessageRecord(value.message, message);
-          const result = secondaryIndexMap.set(tmp10, obj);
+          obj.message = require(4409) /* createMinimalMessageRecord */.updateMessageRecord(value.message, message);
+          const result = obj3.set(combined, obj);
         }
+        obj3 = secondaryIndexMap;
       }
     }
     return false;
@@ -426,58 +277,51 @@ tmp6 = new tmp6(require("dispatcher"), {
   CHANNEL_CREATE: function handleChannelCreate(arg0) {
     let tmp2 = 0 !== set1.size;
     if (tmp2) {
-      let tmp4 = !c10;
-      if (!c10) {
-        const tmp6 = isChannelRelevant(tmp.id);
-        if (tmp6) {
-          c10 = true;
+      let tmp4 = !c6;
+      if (!c6) {
+        const value = map.get(tmp.id);
+        if (null != value && value.size > 0) {
+          c6 = true;
         }
-        tmp4 = tmp6;
-        const tmp7 = tmp6;
+        tmp4 = tmp9;
+        const tmp8 = null != value && value.size > 0;
       }
       tmp2 = tmp4;
     }
     return tmp2;
   },
-  CHANNEL_UPDATES: function handleChannelUpdates(arg0) {
-    let c10;
-    let iter3;
+  CHANNEL_UPDATES: function handleChannelUpdates(channels) {
+    let c6;
+    channels = channels.channels;
     if (0 === set1.size) {
       return false;
-    } else if (c10) {
+    } else if (c6) {
       return false;
     } else {
-      const tmp4 = _createForOfIteratorHelperLoose(tmp);
-      const iter = tmp4();
-      let iter2 = iter;
       let flag2 = false;
-      let flag3 = false;
-      if (!iter.done) {
-        do {
-          let tmp5 = isChannelRelevant;
-          if (isChannelRelevant(iter2.value.id)) {
-            c10 = true;
-            flag2 = true;
-          }
-          iter3 = tmp4();
-          iter2 = iter3;
-          flag3 = flag2;
-        } while (!iter3.done);
+      const tmp3 = channels[Symbol.iterator]();
+      while (tmp3 !== undefined) {
+        let tmp7 = isChannelRelevant;
+        if (isChannelRelevant(tmp5.id)) {
+          c6 = true;
+          flag2 = true;
+        }
+        continue;
       }
-      return flag3;
+      return flag2;
     }
   },
   CHANNEL_DELETE: function handleChannelDelete(arg0) {
     let tmp2 = 0 !== set1.size;
     if (tmp2) {
-      let tmp4 = !c10;
-      if (!c10) {
-        const tmp6 = isChannelRelevant(tmp.id);
-        if (tmp6) {
-          c10 = true;
+      let tmp4 = !c6;
+      if (!c6) {
+        const value = map.get(tmp.id);
+        if (null != value && value.size > 0) {
+          c6 = true;
         }
-        tmp4 = tmp6;
-        const tmp7 = tmp6;
+        tmp4 = tmp9;
+        const tmp8 = null != value && value.size > 0;
       }
       tmp2 = tmp4;
     }
@@ -486,15 +330,15 @@ tmp6 = new tmp6(require("dispatcher"), {
   GUILD_MEMBER_UPDATE: function handleGuildMemberUpdate(arg0) {
     let tmp2 = 0 !== set1.size;
     if (tmp2) {
-      let tmp4 = !c10;
-      if (!c10) {
+      let tmp4 = !c6;
+      if (!c6) {
         currentUser = currentUser.getCurrentUser();
         let id;
-        if (null != currentUser) {
+        if (currentUser != null) {
           id = currentUser.id;
         }
         if (tmp.id === id) {
-          c10 = true;
+          c6 = true;
         }
         tmp4 = tmp9;
       }
@@ -511,5 +355,12 @@ tmp6 = new tmp6(require("dispatcher"), {
 });
 let result = set.fileFinishedImporting("modules/saved_messages/SavedMessagesStore.tsx");
 
-export default tmp6;
-export { getComparator };
+export default savedMessagesStore;
+export const getComparator = function getComparator(dueAt) {
+  if (null != dueAt.dueAt) {
+    let diff = getTimeSafe(dueAt.dueAt);
+  } else {
+    diff = c3 - getTimeSafe(dueAt.savedAt);
+  }
+  return diff;
+};

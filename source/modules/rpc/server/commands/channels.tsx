@@ -1,58 +1,58 @@
-// Module ID: 13507
-// Function ID: 103661
+// Module ID: 13530
+// Function ID: 13531
 // Name: items
-// Dependencies: [1352, 1348, 1838, 3793, 1907, 4181, 4068, 653, 8150, 10592, 10597, 22, 13504, 10595, 4979, 4347, 1198, 6672, 2]
+// Dependencies: [1376, 1372, 1862, 3817, 1931, 4205, 4092, 676, 8174, 10626, 10631, 12, 13527, 10629, 5001, 4372, 1222, 6693, 2]
 
-// Module 13507 (items)
-import _callSuper from "_callSuper";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import closure_7 from "_isNativeReflectConstruct";
-import closure_8 from "_isNativeReflectConstruct";
-import closure_9 from "_isNativeReflectConstruct";
+// Module 13530 (items)
+import createChannelRecord from "createChannelRecord";
+import ensureGuildLoaded from "ensureGuildLoaded";
+import createGuildRecordFromRust from "createGuildRecordFromRust";
+import getUncachedChannelPermissions from "getUncachedChannelPermissions";
+import handleConnectionOpen from "handleConnectionOpen";
+import updateVoiceState from "updateVoiceState";
 import { RPC_SCOPE_CONFIG } from "RPC_SCOPE_CONFIG";
 import ME from "ME";
 
 let RPCCommands;
-let closure_10;
-let closure_11;
+let c10;
+let c3;
+let c4;
 let closure_12;
-let closure_3;
-let closure_4;
-({ isVoiceChannel: closure_3, isTextChannel: closure_4 } = _callSuper);
-({ Routes: closure_10, Permissions: closure_11, RPCCommands, RPCErrors: closure_12 } = ME);
+let unpackModuleId;
+({ isVoiceChannel: c3, isTextChannel: c4 } = createChannelRecord);
+({ Routes: c10, Permissions: unpackModuleId, RPCCommands, RPCErrors: closure_12 } = ME);
 let obj = {};
-obj = {};
+obj = { scope: null, handler: null };
 obj = {};
 let items = [require("set").OAuth2Scopes.RPC, require("set").OAuth2Scopes.GUILDS, require("set").OAuth2Scopes.GUILDS_CHANNELS_READ];
 obj[RPC_SCOPE_CONFIG.ANY] = items;
-obj.scope = obj;
-obj.handler = function handler(args) {
+obj[0] = obj;
+obj[1] = function handler(args) {
   const channel_id = args.args.channel_id;
   const socket = args.socket;
   const channel = store.getChannel(channel_id);
   if (null == channel) {
-    let tmp18 = importDefault(10592);
-    let obj = { errorCode: constants2.INVALID_CHANNEL };
+    let obj = { errorCode: null };
+    obj[0] = constants2.INVALID_CHANNEL;
     const _HermesInternal = HermesInternal;
-    const prototype2 = tmp18.prototype;
-    tmp18 = new tmp18(obj, "Invalid channel id: " + channel_id);
-    throw tmp18;
+    let tmp14 = importDefault(10626);
+    tmp14 = new tmp14(obj, "Invalid channel id: " + channel_id);
+    throw tmp14;
   } else {
     if (channel.isPrivate()) {
       const scopes = socket.authorization.scopes;
-      if (!scopes.includes(require(8150) /* set */.OAuth2Scopes.RPC)) {
-        if (!scopes.includes(require(8150) /* set */.OAuth2Scopes.DM_CHANNELS_READ)) {
-          let tmp7 = importDefault(10592);
-          obj = { errorCode: constants2.INVALID_PERMISSIONS };
-          const prototype = tmp7.prototype;
-          tmp7 = new tmp7(obj, "Invalid scope");
-          throw tmp7;
+      if (!scopes.includes(require(8174) /* set */.OAuth2Scopes.RPC)) {
+        if (!scopes.includes(tmp(8174).OAuth2Scopes.DM_CHANNELS_READ)) {
+          obj = { errorCode: null };
+          obj[0] = constants2.INVALID_PERMISSIONS;
+          const tmp8 = new importDefault(10626)(obj, "Invalid scope");
+          throw tmp8;
         }
       }
+      tmp = require;
     }
-    const obj3 = require(10597) /* recurseReplaceContentTree */;
-    return obj3.transformChannel(channel, require(10597) /* recurseReplaceContentTree */.hasMessageReadPermission(channel, socket.application.id, socket.authorization.scopes));
+    const obj3 = require(10631) /* recurseReplaceContentTree */;
+    return obj3.transformChannel(channel, require(10631) /* recurseReplaceContentTree */.hasMessageReadPermission(channel, socket.application.id, socket.authorization.scopes));
   }
 };
 obj[RPCCommands.GET_CHANNEL] = obj;
@@ -61,45 +61,46 @@ obj[RPCCommands.GET_CHANNELS] = {
   handler(args) {
     const guild_id = args.args.guild_id;
     let guild;
-    let obj = importDefault(22);
+    let obj = importDefault(12);
     const values = obj.values(store.loadAllGuildAndPrivateChannelsFromDisk());
     let found = values;
     if (guild_id) {
       guild = guild.getGuild(guild_id);
       if (null == guild) {
-        let tmp6 = importDefault(10592);
-        obj = { errorCode: constants2.INVALID_GUILD };
+        obj = { errorCode: null };
+        obj[0] = constants2.INVALID_GUILD;
         const _HermesInternal = HermesInternal;
-        const prototype = tmp6.prototype;
-        tmp6 = new tmp6(obj, "Invalid guild id: " + guild_id);
-        throw tmp6;
+        let tmpResult = importDefault(10626);
+        tmpResult = new tmpResult(obj, "Invalid guild id: " + guild_id);
+        throw tmpResult;
       } else {
         found = values.filter((guild_id) => guild_id.guild_id === guild.id);
       }
     }
-    obj = {};
-    const found1 = found.filter((channel) => outer1_7.can(outer1_11.VIEW_CHANNEL, channel));
-    obj.channels = found1.map((id) => ({ id: id.id, name: id.name, type: id.type }));
+    obj = { channels: null };
+    const found1 = found.filter((arg0) => getUncachedChannelPermissions.can(constants.VIEW_CHANNEL, arg0));
+    obj[0] = found1.map((id) => ({ id: id.id, name: id.name, type: id.type }));
     return obj;
   }
 };
-let obj2 = {};
+let obj2 = { scope: null, handler: null };
 let obj3 = {};
 const items1 = [require("set").OAuth2Scopes.GUILDS_MEMBERS_READ, require("set").OAuth2Scopes.GUILDS_CHANNELS_READ];
 obj3[RPC_SCOPE_CONFIG.ANY] = items1;
-obj2.scope = obj3;
-obj2.handler = function handler() {
-  const tmp = importDefault(13504)();
-  if (null == tmp) {
-    let tmp5 = importDefault(10592);
-    let obj = { errorCode: constants2.INVALID_CHANNEL };
-    const prototype = tmp5.prototype;
-    tmp5 = new tmp5(obj, "Invalid channel");
-    throw tmp5;
+obj2[0] = obj3;
+obj2[1] = function handler() {
+  const tmp3 = importDefault(13527)();
+  if (null == tmp3) {
+    let obj = { errorCode: null };
+    obj[0] = constants2.INVALID_CHANNEL;
+    const tmp9 = new tmp(10626)(obj, "Invalid channel");
+    throw tmp9;
   } else {
-    obj = { permissions: closure_7.computePermissions(tmp) };
+    obj = { permissions: null };
+    obj[0] = getUncachedChannelPermissions.computePermissions(tmp3);
     return obj;
   }
+  tmp = importDefault;
 };
 obj[RPCCommands.GET_CHANNEL_PERMISSIONS] = obj2;
 const obj1 = {
@@ -107,40 +108,40 @@ const obj1 = {
   handler(args) {
     const guild_id = args.args.guild_id;
     let guild;
-    let obj = importDefault(22);
+    let obj = importDefault(12);
     const values = obj.values(store.loadAllGuildAndPrivateChannelsFromDisk());
     let found = values;
     if (guild_id) {
       guild = guild.getGuild(guild_id);
       if (null == guild) {
-        let tmp6 = importDefault(10592);
-        obj = { errorCode: constants2.INVALID_GUILD };
+        obj = { errorCode: null };
+        obj[0] = constants2.INVALID_GUILD;
         const _HermesInternal = HermesInternal;
-        const prototype = tmp6.prototype;
-        tmp6 = new tmp6(obj, "Invalid guild id: " + guild_id);
-        throw tmp6;
+        let tmpResult = importDefault(10626);
+        tmpResult = new tmpResult(obj, "Invalid guild id: " + guild_id);
+        throw tmpResult;
       } else {
         found = values.filter((guild_id) => guild_id.guild_id === guild.id);
       }
     }
-    obj = {};
-    const found1 = found.filter((channel) => outer1_7.can(outer1_11.VIEW_CHANNEL, channel));
-    obj.channels = found1.map((id) => ({ id: id.id, name: id.name, type: id.type }));
+    obj = { channels: null };
+    const found1 = found.filter((arg0) => getUncachedChannelPermissions.can(constants.VIEW_CHANNEL, arg0));
+    obj[0] = found1.map((id) => ({ id: id.id, name: id.name, type: id.type }));
     return obj;
   }
 };
 obj[RPCCommands.SELECT_VOICE_CHANNEL] = {
   scope: require("set").OAuth2Scopes.RPC,
   validation(string) {
-    let obj = importDefault(10595)(string);
-    obj = {};
+    let obj = importDefault(10629)(string);
+    obj = { channel_id: null, timeout: null, force: null, navigate: null };
     const requiredResult = obj.required();
-    obj.channel_id = string.string().allow(null);
+    obj[0] = string.string().allow(null);
     const stringResult = string.string();
     const numberResult = string.number();
-    obj.timeout = string.number().min(0).max(60);
-    obj.force = string.boolean();
-    obj.navigate = string.boolean();
+    obj[1] = string.number().min(0).max(60);
+    obj[2] = string.boolean();
+    obj[3] = string.boolean();
     return requiredResult.keys(obj);
   },
   handler(args) {
@@ -166,30 +167,25 @@ obj[RPCCommands.SELECT_VOICE_CHANNEL] = {
       if (null != voiceChannelId) {
         if (voiceChannelId !== channel_id) {
           if (false === flag) {
-            let tmp10 = channel_id(flag2[9]);
-            let obj = { errorCode: constants2.SELECT_VOICE_FORCE_REQUIRED };
-            let prototype = tmp10.prototype;
-            tmp10 = new tmp10(obj, "User is already joined to a voice channel.");
-            throw tmp10;
+            let obj = { errorCode: null };
+            obj[0] = constants2.SELECT_VOICE_FORCE_REQUIRED;
+            const tmp14 = new channel_id(flag2[9])(obj, "User is already joined to a voice channel.");
+            throw tmp14;
           }
         }
       }
       const storeWaitResult = server.storeWait(socket, () => outer1_5.getChannel(channel_id), num);
       const catchPromise = server.storeWait(socket, () => outer1_5.getChannel(channel_id), num).catch(() => {
-        let tmp = channel_id(flag2[9]);
-        tmp = new tmp({ errorCode: outer1_12.SELECT_CHANNEL_TIMED_OUT }, "Request to select voice channel timed out.");
-        throw tmp;
+        throw new channel_id(flag2[9])({ errorCode: constants.SELECT_CHANNEL_TIMED_OUT }, "Request to select voice channel timed out.");
       });
       return server.storeWait(socket, () => outer1_5.getChannel(channel_id), num).catch(() => {
-        let tmp = channel_id(flag2[9]);
-        tmp = new tmp({ errorCode: outer1_12.SELECT_CHANNEL_TIMED_OUT }, "Request to select voice channel timed out.");
-        throw tmp;
+        throw new channel_id(flag2[9])({ errorCode: constants.SELECT_CHANNEL_TIMED_OUT }, "Request to select voice channel timed out.");
       }).then((type) => {
         if (null == type) {
-          let tmp16 = channel_id(flag2[9]);
-          let obj = { errorCode: outer1_12.INVALID_CHANNEL };
+          let obj = { errorCode: null };
+          obj[0] = outer1_12.INVALID_CHANNEL;
           const _HermesInternal = HermesInternal;
-          const prototype2 = tmp16.prototype;
+          let tmp16 = channel_id(flag2[9]);
           tmp16 = new tmp16(obj, "Invalid channel id: " + channel_id);
           throw tmp16;
         } else if (outer1_3(type.type)) {
@@ -198,11 +194,10 @@ obj[RPCCommands.SELECT_VOICE_CHANNEL] = {
           items[1] = obj2.transformChannel(type, socket(flag2[10]).hasMessageReadPermission(type, socket.application.id, socket.authorization.scopes));
           return Promise.all(items);
         } else {
-          let tmp3 = channel_id(flag2[9]);
-          obj = { errorCode: outer1_12.INVALID_CHANNEL };
-          const prototype = tmp3.prototype;
-          tmp3 = new tmp3(obj, "Channel is not a voice channel");
-          throw tmp3;
+          obj = { errorCode: null };
+          obj[0] = outer1_12.INVALID_CHANNEL;
+          const tmp7 = new channel_id(flag2[9])(obj, "Channel is not a voice channel");
+          throw tmp7;
         }
       }).then((arg0) => {
         let tmp;
@@ -211,17 +206,15 @@ obj[RPCCommands.SELECT_VOICE_CHANNEL] = {
         if (tmp2.guild_id) {
           let obj = socket(flag2[15]);
           if (obj.isChannelFull(tmp, outer1_9, outer1_6)) {
-            let tmp25 = channel_id(flag2[9]);
-            obj = { errorCode: outer1_12.INVALID_CHANNEL };
-            const prototype2 = tmp25.prototype;
-            tmp25 = new tmp25(obj, "Channel is full");
-            throw tmp25;
+            obj = { errorCode: null };
+            obj[0] = outer1_12.INVALID_CHANNEL;
+            const tmp28 = new channel_id(flag2[9])(obj, "Channel is full");
+            throw tmp28;
           } else if (!outer1_7.can(outer1_11.CONNECT, tmp)) {
-            let tmp11 = channel_id(flag2[9]);
-            obj = { errorCode: outer1_12.INVALID_PERMISSIONS };
-            const prototype = tmp11.prototype;
-            tmp11 = new tmp11(obj, "Connect permission required to join channel");
-            throw tmp11;
+            obj = { errorCode: null };
+            obj[0] = outer1_12.INVALID_PERMISSIONS;
+            const tmp15 = new channel_id(flag2[9])(obj, "Connect permission required to join channel");
+            throw tmp15;
           }
         }
         const voiceChannel = channel_id(flag2[14]).selectVoiceChannel(tmp.id);
@@ -238,12 +231,12 @@ obj[RPCCommands.SELECT_VOICE_CHANNEL] = {
     }
   }
 };
-const obj5 = {};
+const obj5 = { scope: null, handler: null };
 const obj6 = {};
 const items2 = [require("set").OAuth2Scopes.RPC, require("set").OAuth2Scopes.RPC_VOICE_READ];
 obj6[RPC_SCOPE_CONFIG.ANY] = items2;
-obj5.scope = obj6;
-obj5.handler = function handler(socket) {
+obj5[0] = obj6;
+obj5[1] = function handler(socket) {
   socket = socket.socket;
   const voiceChannelId = store2.getVoiceChannelId();
   let channel = null;
@@ -252,9 +245,9 @@ obj5.handler = function handler(socket) {
   }
   let transformChannelResult = null;
   if (null != channel) {
-    const obj = require(10597) /* recurseReplaceContentTree */;
-    transformChannelResult = obj.transformChannel(channel, require(10597) /* recurseReplaceContentTree */.hasMessageReadPermission(channel, socket.application.id, socket.authorization.scopes));
-    const obj2 = require(10597) /* recurseReplaceContentTree */;
+    const obj = require(10631) /* recurseReplaceContentTree */;
+    transformChannelResult = obj.transformChannel(channel, require(10631) /* recurseReplaceContentTree */.hasMessageReadPermission(channel, socket.application.id, socket.authorization.scopes));
+    const obj2 = require(10631) /* recurseReplaceContentTree */;
   }
   return transformChannelResult;
 };
@@ -262,15 +255,15 @@ obj[RPCCommands.GET_SELECTED_VOICE_CHANNEL] = obj5;
 let obj4 = {
   scope: require("set").OAuth2Scopes.RPC,
   validation(string) {
-    let obj = importDefault(10595)(string);
-    obj = {};
+    let obj = importDefault(10629)(string);
+    obj = { channel_id: null, timeout: null, force: null, navigate: null };
     const requiredResult = obj.required();
-    obj.channel_id = string.string().allow(null);
+    obj[0] = string.string().allow(null);
     const stringResult = string.string();
     const numberResult = string.number();
-    obj.timeout = string.number().min(0).max(60);
-    obj.force = string.boolean();
-    obj.navigate = string.boolean();
+    obj[1] = string.number().min(0).max(60);
+    obj[2] = string.boolean();
+    obj[3] = string.boolean();
     return requiredResult.keys(obj);
   },
   handler(args) {
@@ -296,30 +289,25 @@ let obj4 = {
       if (null != voiceChannelId) {
         if (voiceChannelId !== channel_id) {
           if (false === flag) {
-            let tmp10 = channel_id(flag2[9]);
-            let obj = { errorCode: constants2.SELECT_VOICE_FORCE_REQUIRED };
-            let prototype = tmp10.prototype;
-            tmp10 = new tmp10(obj, "User is already joined to a voice channel.");
-            throw tmp10;
+            let obj = { errorCode: null };
+            obj[0] = constants2.SELECT_VOICE_FORCE_REQUIRED;
+            const tmp14 = new channel_id(flag2[9])(obj, "User is already joined to a voice channel.");
+            throw tmp14;
           }
         }
       }
       const storeWaitResult = server.storeWait(socket, () => outer1_5.getChannel(channel_id), num);
       const catchPromise = server.storeWait(socket, () => outer1_5.getChannel(channel_id), num).catch(() => {
-        let tmp = channel_id(flag2[9]);
-        tmp = new tmp({ errorCode: outer1_12.SELECT_CHANNEL_TIMED_OUT }, "Request to select voice channel timed out.");
-        throw tmp;
+        throw new channel_id(flag2[9])({ errorCode: constants.SELECT_CHANNEL_TIMED_OUT }, "Request to select voice channel timed out.");
       });
       return server.storeWait(socket, () => outer1_5.getChannel(channel_id), num).catch(() => {
-        let tmp = channel_id(flag2[9]);
-        tmp = new tmp({ errorCode: outer1_12.SELECT_CHANNEL_TIMED_OUT }, "Request to select voice channel timed out.");
-        throw tmp;
+        throw new channel_id(flag2[9])({ errorCode: constants.SELECT_CHANNEL_TIMED_OUT }, "Request to select voice channel timed out.");
       }).then((type) => {
         if (null == type) {
-          let tmp16 = channel_id(flag2[9]);
-          let obj = { errorCode: outer1_12.INVALID_CHANNEL };
+          let obj = { errorCode: null };
+          obj[0] = outer1_12.INVALID_CHANNEL;
           const _HermesInternal = HermesInternal;
-          const prototype2 = tmp16.prototype;
+          let tmp16 = channel_id(flag2[9]);
           tmp16 = new tmp16(obj, "Invalid channel id: " + channel_id);
           throw tmp16;
         } else if (outer1_3(type.type)) {
@@ -328,11 +316,10 @@ let obj4 = {
           items[1] = obj2.transformChannel(type, socket(flag2[10]).hasMessageReadPermission(type, socket.application.id, socket.authorization.scopes));
           return Promise.all(items);
         } else {
-          let tmp3 = channel_id(flag2[9]);
-          obj = { errorCode: outer1_12.INVALID_CHANNEL };
-          const prototype = tmp3.prototype;
-          tmp3 = new tmp3(obj, "Channel is not a voice channel");
-          throw tmp3;
+          obj = { errorCode: null };
+          obj[0] = outer1_12.INVALID_CHANNEL;
+          const tmp7 = new channel_id(flag2[9])(obj, "Channel is not a voice channel");
+          throw tmp7;
         }
       }).then((arg0) => {
         let tmp;
@@ -341,17 +328,15 @@ let obj4 = {
         if (tmp2.guild_id) {
           let obj = socket(flag2[15]);
           if (obj.isChannelFull(tmp, outer1_9, outer1_6)) {
-            let tmp25 = channel_id(flag2[9]);
-            obj = { errorCode: outer1_12.INVALID_CHANNEL };
-            const prototype2 = tmp25.prototype;
-            tmp25 = new tmp25(obj, "Channel is full");
-            throw tmp25;
+            obj = { errorCode: null };
+            obj[0] = outer1_12.INVALID_CHANNEL;
+            const tmp28 = new channel_id(flag2[9])(obj, "Channel is full");
+            throw tmp28;
           } else if (!outer1_7.can(outer1_11.CONNECT, tmp)) {
-            let tmp11 = channel_id(flag2[9]);
-            obj = { errorCode: outer1_12.INVALID_PERMISSIONS };
-            const prototype = tmp11.prototype;
-            tmp11 = new tmp11(obj, "Connect permission required to join channel");
-            throw tmp11;
+            obj = { errorCode: null };
+            obj[0] = outer1_12.INVALID_PERMISSIONS;
+            const tmp15 = new channel_id(flag2[9])(obj, "Connect permission required to join channel");
+            throw tmp15;
           }
         }
         const voiceChannel = channel_id(flag2[14]).selectVoiceChannel(tmp.id);
@@ -371,13 +356,13 @@ let obj4 = {
 obj[RPCCommands.SELECT_TEXT_CHANNEL] = {
   scope: require("set").OAuth2Scopes.RPC,
   validation(string) {
-    let obj = importDefault(10595)(string);
-    obj = {};
+    let obj = importDefault(10629)(string);
+    obj = { channel_id: null, timeout: null };
     const requiredResult = obj.required();
-    obj.channel_id = string.string().allow(null);
+    obj[0] = string.string().allow(null);
     const stringResult = string.string();
     const numberResult = string.number();
-    obj.timeout = string.number().min(0).max(60);
+    obj[1] = string.number().min(0).max(60);
     return requiredResult.keys(obj);
   },
   handler(args) {
@@ -393,20 +378,16 @@ obj[RPCCommands.SELECT_TEXT_CHANNEL] = {
     if (channel_id) {
       const storeWaitResult = server.storeWait(socket, () => outer1_5.getChannel(channel_id), num);
       const catchPromise = server.storeWait(socket, () => outer1_5.getChannel(channel_id), num).catch(() => {
-        let tmp = channel_id(outer1_2[9]);
-        tmp = new tmp({ errorCode: outer1_12.SELECT_CHANNEL_TIMED_OUT }, "Request to select text channel timed out.");
-        throw tmp;
+        throw new channel_id(10626)({ errorCode: constants2.SELECT_CHANNEL_TIMED_OUT }, "Request to select text channel timed out.");
       });
       let nextPromise1 = server.storeWait(socket, () => outer1_5.getChannel(channel_id), num).catch(() => {
-        let tmp = channel_id(outer1_2[9]);
-        tmp = new tmp({ errorCode: outer1_12.SELECT_CHANNEL_TIMED_OUT }, "Request to select text channel timed out.");
-        throw tmp;
+        throw new channel_id(10626)({ errorCode: constants2.SELECT_CHANNEL_TIMED_OUT }, "Request to select text channel timed out.");
       }).then((type) => {
         if (null == type) {
-          let tmp16 = channel_id(outer1_2[9]);
-          let obj = { errorCode: outer1_12.INVALID_CHANNEL };
+          let obj = { errorCode: null };
+          obj[0] = outer1_12.INVALID_CHANNEL;
           const _HermesInternal = HermesInternal;
-          const prototype2 = tmp16.prototype;
+          let tmp16 = channel_id(outer1_2[9]);
           tmp16 = new tmp16(obj, "Invalid channel id: " + channel_id);
           throw tmp16;
         } else if (outer1_4(type.type)) {
@@ -415,44 +396,40 @@ obj[RPCCommands.SELECT_TEXT_CHANNEL] = {
           items[1] = obj2.transformChannel(type, socket(outer1_2[10]).hasMessageReadPermission(type, socket.application.id, socket.authorization.scopes));
           return Promise.all(items);
         } else {
-          let tmp3 = channel_id(outer1_2[9]);
-          obj = { errorCode: outer1_12.INVALID_CHANNEL };
-          const prototype = tmp3.prototype;
-          tmp3 = new tmp3(obj, "Channel is not a text channel");
-          throw tmp3;
+          obj = { errorCode: null };
+          obj[0] = outer1_12.INVALID_CHANNEL;
+          const tmp7 = new channel_id(outer1_2[9])(obj, "Channel is not a text channel");
+          throw tmp7;
         }
       }).then((arg0) => {
         let tmp;
         let tmp2;
         [tmp, tmp2] = arg0;
         if (tmp2.guild_id) {
-          if (!outer1_7.can(outer1_11.VIEW_CHANNEL, tmp)) {
-            let tmp7 = channel_id(outer1_2[9]);
-            const obj = { errorCode: outer1_12.INVALID_CHANNEL };
-            const prototype = tmp7.prototype;
-            tmp7 = new tmp7(obj, "No permission to see channel");
-            throw tmp7;
+          if (!getUncachedChannelPermissions.can(constants.VIEW_CHANNEL, tmp)) {
+            const obj = { errorCode: null };
+            obj[0] = constants2.INVALID_CHANNEL;
+            const tmp11 = new channel_id(10626)(obj, "No permission to see channel");
+            throw tmp11;
           }
         }
         if (tmp2.guild_id) {
-          socket(outer1_2[16]).replaceWith(outer1_10.CHANNEL(tmp2.guild_id, tmp.id));
-          const obj3 = socket(outer1_2[16]);
+          socket(1222).replaceWith(closure_10.CHANNEL(tmp2.guild_id, tmp.id));
+          const obj3 = socket(1222);
         } else {
-          const privateChannel = channel_id(outer1_2[14]).selectPrivateChannel(tmp.id);
-          const obj2 = channel_id(outer1_2[14]);
+          const privateChannel = channel_id(5001).selectPrivateChannel(tmp.id);
+          const obj2 = channel_id(5001);
         }
         return tmp2;
       });
       const nextPromise = server.storeWait(socket, () => outer1_5.getChannel(channel_id), num).catch(() => {
-        let tmp = channel_id(outer1_2[9]);
-        tmp = new tmp({ errorCode: outer1_12.SELECT_CHANNEL_TIMED_OUT }, "Request to select text channel timed out.");
-        throw tmp;
+        throw new channel_id(10626)({ errorCode: constants2.SELECT_CHANNEL_TIMED_OUT }, "Request to select text channel timed out.");
       }).then((type) => {
         if (null == type) {
-          let tmp16 = channel_id(outer1_2[9]);
-          let obj = { errorCode: outer1_12.INVALID_CHANNEL };
+          let obj = { errorCode: null };
+          obj[0] = outer1_12.INVALID_CHANNEL;
           const _HermesInternal = HermesInternal;
-          const prototype2 = tmp16.prototype;
+          let tmp16 = channel_id(outer1_2[9]);
           tmp16 = new tmp16(obj, "Invalid channel id: " + channel_id);
           throw tmp16;
         } else if (outer1_4(type.type)) {
@@ -461,17 +438,16 @@ obj[RPCCommands.SELECT_TEXT_CHANNEL] = {
           items[1] = obj2.transformChannel(type, socket(outer1_2[10]).hasMessageReadPermission(type, socket.application.id, socket.authorization.scopes));
           return Promise.all(items);
         } else {
-          let tmp3 = channel_id(outer1_2[9]);
-          obj = { errorCode: outer1_12.INVALID_CHANNEL };
-          const prototype = tmp3.prototype;
-          tmp3 = new tmp3(obj, "Channel is not a text channel");
-          throw tmp3;
+          obj = { errorCode: null };
+          obj[0] = outer1_12.INVALID_CHANNEL;
+          const tmp7 = new channel_id(outer1_2[9])(obj, "Channel is not a text channel");
+          throw tmp7;
         }
       });
     } else {
-      socket(1198).transitionTo(constants.ME);
+      socket(1222).transitionTo(constants.ME);
       nextPromise1 = null;
-      let obj = socket(1198);
+      let obj = socket(1222);
     }
     return nextPromise1;
   }
@@ -479,13 +455,13 @@ obj[RPCCommands.SELECT_TEXT_CHANNEL] = {
 const obj7 = {
   scope: require("set").OAuth2Scopes.RPC,
   validation(string) {
-    let obj = importDefault(10595)(string);
-    obj = {};
+    let obj = importDefault(10629)(string);
+    obj = { channel_id: null, timeout: null };
     const requiredResult = obj.required();
-    obj.channel_id = string.string().allow(null);
+    obj[0] = string.string().allow(null);
     const stringResult = string.string();
     const numberResult = string.number();
-    obj.timeout = string.number().min(0).max(60);
+    obj[1] = string.number().min(0).max(60);
     return requiredResult.keys(obj);
   },
   handler(args) {
@@ -501,20 +477,16 @@ const obj7 = {
     if (channel_id) {
       const storeWaitResult = server.storeWait(socket, () => outer1_5.getChannel(channel_id), num);
       const catchPromise = server.storeWait(socket, () => outer1_5.getChannel(channel_id), num).catch(() => {
-        let tmp = channel_id(outer1_2[9]);
-        tmp = new tmp({ errorCode: outer1_12.SELECT_CHANNEL_TIMED_OUT }, "Request to select text channel timed out.");
-        throw tmp;
+        throw new channel_id(10626)({ errorCode: constants2.SELECT_CHANNEL_TIMED_OUT }, "Request to select text channel timed out.");
       });
       let nextPromise1 = server.storeWait(socket, () => outer1_5.getChannel(channel_id), num).catch(() => {
-        let tmp = channel_id(outer1_2[9]);
-        tmp = new tmp({ errorCode: outer1_12.SELECT_CHANNEL_TIMED_OUT }, "Request to select text channel timed out.");
-        throw tmp;
+        throw new channel_id(10626)({ errorCode: constants2.SELECT_CHANNEL_TIMED_OUT }, "Request to select text channel timed out.");
       }).then((type) => {
         if (null == type) {
-          let tmp16 = channel_id(outer1_2[9]);
-          let obj = { errorCode: outer1_12.INVALID_CHANNEL };
+          let obj = { errorCode: null };
+          obj[0] = outer1_12.INVALID_CHANNEL;
           const _HermesInternal = HermesInternal;
-          const prototype2 = tmp16.prototype;
+          let tmp16 = channel_id(outer1_2[9]);
           tmp16 = new tmp16(obj, "Invalid channel id: " + channel_id);
           throw tmp16;
         } else if (outer1_4(type.type)) {
@@ -523,44 +495,40 @@ const obj7 = {
           items[1] = obj2.transformChannel(type, socket(outer1_2[10]).hasMessageReadPermission(type, socket.application.id, socket.authorization.scopes));
           return Promise.all(items);
         } else {
-          let tmp3 = channel_id(outer1_2[9]);
-          obj = { errorCode: outer1_12.INVALID_CHANNEL };
-          const prototype = tmp3.prototype;
-          tmp3 = new tmp3(obj, "Channel is not a text channel");
-          throw tmp3;
+          obj = { errorCode: null };
+          obj[0] = outer1_12.INVALID_CHANNEL;
+          const tmp7 = new channel_id(outer1_2[9])(obj, "Channel is not a text channel");
+          throw tmp7;
         }
       }).then((arg0) => {
         let tmp;
         let tmp2;
         [tmp, tmp2] = arg0;
         if (tmp2.guild_id) {
-          if (!outer1_7.can(outer1_11.VIEW_CHANNEL, tmp)) {
-            let tmp7 = channel_id(outer1_2[9]);
-            const obj = { errorCode: outer1_12.INVALID_CHANNEL };
-            const prototype = tmp7.prototype;
-            tmp7 = new tmp7(obj, "No permission to see channel");
-            throw tmp7;
+          if (!getUncachedChannelPermissions.can(constants.VIEW_CHANNEL, tmp)) {
+            const obj = { errorCode: null };
+            obj[0] = constants2.INVALID_CHANNEL;
+            const tmp11 = new channel_id(10626)(obj, "No permission to see channel");
+            throw tmp11;
           }
         }
         if (tmp2.guild_id) {
-          socket(outer1_2[16]).replaceWith(outer1_10.CHANNEL(tmp2.guild_id, tmp.id));
-          const obj3 = socket(outer1_2[16]);
+          socket(1222).replaceWith(closure_10.CHANNEL(tmp2.guild_id, tmp.id));
+          const obj3 = socket(1222);
         } else {
-          const privateChannel = channel_id(outer1_2[14]).selectPrivateChannel(tmp.id);
-          const obj2 = channel_id(outer1_2[14]);
+          const privateChannel = channel_id(5001).selectPrivateChannel(tmp.id);
+          const obj2 = channel_id(5001);
         }
         return tmp2;
       });
       const nextPromise = server.storeWait(socket, () => outer1_5.getChannel(channel_id), num).catch(() => {
-        let tmp = channel_id(outer1_2[9]);
-        tmp = new tmp({ errorCode: outer1_12.SELECT_CHANNEL_TIMED_OUT }, "Request to select text channel timed out.");
-        throw tmp;
+        throw new channel_id(10626)({ errorCode: constants2.SELECT_CHANNEL_TIMED_OUT }, "Request to select text channel timed out.");
       }).then((type) => {
         if (null == type) {
-          let tmp16 = channel_id(outer1_2[9]);
-          let obj = { errorCode: outer1_12.INVALID_CHANNEL };
+          let obj = { errorCode: null };
+          obj[0] = outer1_12.INVALID_CHANNEL;
           const _HermesInternal = HermesInternal;
-          const prototype2 = tmp16.prototype;
+          let tmp16 = channel_id(outer1_2[9]);
           tmp16 = new tmp16(obj, "Invalid channel id: " + channel_id);
           throw tmp16;
         } else if (outer1_4(type.type)) {
@@ -569,17 +537,16 @@ const obj7 = {
           items[1] = obj2.transformChannel(type, socket(outer1_2[10]).hasMessageReadPermission(type, socket.application.id, socket.authorization.scopes));
           return Promise.all(items);
         } else {
-          let tmp3 = channel_id(outer1_2[9]);
-          obj = { errorCode: outer1_12.INVALID_CHANNEL };
-          const prototype = tmp3.prototype;
-          tmp3 = new tmp3(obj, "Channel is not a text channel");
-          throw tmp3;
+          obj = { errorCode: null };
+          obj[0] = outer1_12.INVALID_CHANNEL;
+          const tmp7 = new channel_id(outer1_2[9])(obj, "Channel is not a text channel");
+          throw tmp7;
         }
       });
     } else {
-      socket(1198).transitionTo(constants.ME);
+      socket(1222).transitionTo(constants.ME);
       nextPromise1 = null;
-      let obj = socket(1198);
+      let obj = socket(1222);
     }
     return nextPromise1;
   }
@@ -589,11 +556,8 @@ obj[RPCCommands.CREATE_CHANNEL_INVITE] = {
   handler(args) {
     args = args.args;
     const channel_id = args.channel_id;
-    let obj = Object.create(null);
-    obj.channel_id = 0;
-    const merged = Object.assign(args, obj);
-    obj = importDefault(6672);
-    const invite = obj.createInvite(channel_id, merged, "RPC");
+    const merged = Object.assign(args, Object.create(null));
+    const invite = importDefault(6693).createInvite(channel_id, merged, "RPC");
     return invite.catch(() => {
       let tmp = outer1_1(outer1_2[9]);
       tmp = new tmp({ errorCode: outer1_12.INVALID_PERMISSIONS }, "Unable to generate an invite for " + channel_id + ". Does this user have permissions?");
@@ -606,11 +570,8 @@ const obj8 = {
   handler(args) {
     args = args.args;
     const channel_id = args.channel_id;
-    let obj = Object.create(null);
-    obj.channel_id = 0;
-    const merged = Object.assign(args, obj);
-    obj = importDefault(6672);
-    const invite = obj.createInvite(channel_id, merged, "RPC");
+    const merged = Object.assign(args, Object.create(null));
+    const invite = importDefault(6693).createInvite(channel_id, merged, "RPC");
     return invite.catch(() => {
       let tmp = outer1_1(outer1_2[9]);
       tmp = new tmp({ errorCode: outer1_12.INVALID_PERMISSIONS }, "Unable to generate an invite for " + channel_id + ". Does this user have permissions?");
@@ -618,6 +579,6 @@ const obj8 = {
     });
   }
 };
-const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/rpc/server/commands/channels.tsx");
+const result = require("createGuildRecordFromRust").fileFinishedImporting("modules/rpc/server/commands/channels.tsx");
 
 export default obj;

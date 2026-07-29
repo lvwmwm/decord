@@ -1,34 +1,34 @@
-// Module ID: 5538
-// Function ID: 47060
+// Module ID: 5556
+// Function ID: 5557
 // Name: FormSwitch
-// Dependencies: [57, 31, 27, 33, 4026, 4165, 689, 4580, 3884, 1324, 4577, 4581, 3869, 5539, 5540, 4134, 4135, 2]
+// Dependencies: [32, 19, 17, 21, 4050, 4189, 712, 4602, 3908, 1348, 4599, 4603, 3893, 5557, 5558, 4158, 4159, 2]
 // Exports: FormSwitch
 
-// Module 5538 (FormSwitch)
+// Module 5556 (FormSwitch)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
+import noop from "noop";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import importDefaultResult from "module_4026";
-import getIconSize from "getIconSize";
-import importDefaultResult1 from "module_4026";
+import createCacheKey from "createCacheKey";
+import importDefaultResult from "module_4050";
+import IconSizes from "IconSizes";
+import importDefaultResult1 from "module_4050";
 
-let require = arg1;
-let closure_6 = require("module_4026").createAnimatedComponent(require("get ActivityIndicator").Pressable);
-let obj = {};
-obj = { width: require("_createForOfIteratorHelperLoose").modules.mobile.CONTROL_SWITCH_WIDTH, height: require("_createForOfIteratorHelperLoose").modules.mobile.CONTROL_SWITCH_HEIGHT, padding: require("_createForOfIteratorHelperLoose").space.PX_4 - 1, flexGrow: 0, flexShrink: 0, borderRadius: require("_createForOfIteratorHelperLoose").radii.lg, borderWidth: 1 };
-obj.switch = obj;
-_createForOfIteratorHelperLoose = { tintColor: require("_createForOfIteratorHelperLoose").colors.SWITCH_BACKGROUND_DEFAULT, borderColor: require("_createForOfIteratorHelperLoose").colors.SWITCH_BORDER_DEFAULT };
-obj.unselectedBackground = _createForOfIteratorHelperLoose;
-obj.unselectedIcon = { tintColor: require("_createForOfIteratorHelperLoose").colors.SWITCH_THUMB_ICON_DEFAULT };
-let obj2 = { tintColor: require("_createForOfIteratorHelperLoose").colors.SWITCH_THUMB_ICON_DEFAULT };
-obj.selectedIcon = { tintColor: require("_createForOfIteratorHelperLoose").colors.SWITCH_THUMB_ICON_ACTIVE };
-let obj3 = { tintColor: require("_createForOfIteratorHelperLoose").colors.SWITCH_THUMB_ICON_ACTIVE };
-obj.selected = { tintColor: require("_createForOfIteratorHelperLoose").colors.SWITCH_BACKGROUND_SELECTED_DEFAULT, borderColor: require("_createForOfIteratorHelperLoose").colors.SWITCH_BORDER_SELECTED_DEFAULT };
-let obj4 = { tintColor: require("_createForOfIteratorHelperLoose").colors.SWITCH_BACKGROUND_SELECTED_DEFAULT, borderColor: require("_createForOfIteratorHelperLoose").colors.SWITCH_BORDER_SELECTED_DEFAULT };
-obj.knob = { height: require("_createForOfIteratorHelperLoose").modules.mobile.CONTROL_SWITCH_KNOB_SIZE, width: require("_createForOfIteratorHelperLoose").modules.mobile.CONTROL_SWITCH_KNOB_SIZE, alignItems: "center", justifyContent: "center", borderRadius: require("_createForOfIteratorHelperLoose").radii.round };
-let closure_7 = _createForOfIteratorHelperLoose.createStyles(obj);
-const obj5 = { height: require("_createForOfIteratorHelperLoose").modules.mobile.CONTROL_SWITCH_KNOB_SIZE, width: require("_createForOfIteratorHelperLoose").modules.mobile.CONTROL_SWITCH_KNOB_SIZE, alignItems: "center", justifyContent: "center", borderRadius: require("_createForOfIteratorHelperLoose").radii.round };
+const require = arg1;
+let closure_6 = require("module_4050").createAnimatedComponent(require("set").Pressable);
+let obj = { switch: null, unselectedBackground: null, unselectedIcon: null, selectedIcon: null, selected: null, knob: null };
+obj = { width: require("Themes").modules.mobile.CONTROL_SWITCH_WIDTH, height: require("Themes").modules.mobile.CONTROL_SWITCH_HEIGHT, padding: require("Themes").space.PX_4 - 1, flexGrow: 0, flexShrink: 0, borderRadius: require("Themes").radii.lg, borderWidth: 1 };
+obj[0] = obj;
+createCacheKey = { tintColor: require("Themes").colors.SWITCH_BACKGROUND_DEFAULT, borderColor: require("Themes").colors.SWITCH_BORDER_DEFAULT };
+obj[1] = createCacheKey;
+obj[2] = { tintColor: require("Themes").colors.SWITCH_THUMB_ICON_DEFAULT };
+let obj2 = { tintColor: require("Themes").colors.SWITCH_THUMB_ICON_DEFAULT };
+obj[3] = { tintColor: require("Themes").colors.SWITCH_THUMB_ICON_ACTIVE };
+let obj3 = { tintColor: require("Themes").colors.SWITCH_THUMB_ICON_ACTIVE };
+obj[4] = { tintColor: require("Themes").colors.SWITCH_BACKGROUND_SELECTED_DEFAULT, borderColor: require("Themes").colors.SWITCH_BORDER_SELECTED_DEFAULT };
+let obj4 = { tintColor: require("Themes").colors.SWITCH_BACKGROUND_SELECTED_DEFAULT, borderColor: require("Themes").colors.SWITCH_BORDER_SELECTED_DEFAULT };
+obj[5] = { height: require("Themes").modules.mobile.CONTROL_SWITCH_KNOB_SIZE, width: require("Themes").modules.mobile.CONTROL_SWITCH_KNOB_SIZE, alignItems: "center", justifyContent: "center", borderRadius: require("Themes").radii.round };
+let closure_7 = createCacheKey.createStyles(obj);
+let obj5 = { height: require("Themes").modules.mobile.CONTROL_SWITCH_KNOB_SIZE, width: require("Themes").modules.mobile.CONTROL_SWITCH_KNOB_SIZE, alignItems: "center", justifyContent: "center", borderRadius: require("Themes").radii.round };
 let closure_9 = { code: "function FormSwitchNativeTsx1(){const{withSpring,checked,selected,unselectedBackground,SUBTLE_SPRING}=this.__closure;return{backgroundColor:withSpring(checked?selected.tintColor:unselectedBackground.tintColor,SUBTLE_SPRING,'animate-always'),borderColor:withSpring(checked?selected.borderColor:unselectedBackground.borderColor,SUBTLE_SPRING,'animate-always')};}" };
 let closure_10 = { code: "function FormSwitchNativeTsx2(){const{withSpring,checked,knobCheckedLeft,SUBTLE_SPRING,knobSelectedBackgroundColor,knobBackgroundColor}=this.__closure;return{left:withSpring(checked?knobCheckedLeft:0,SUBTLE_SPRING,'animate-always'),backgroundColor:withSpring(checked?knobSelectedBackgroundColor:knobBackgroundColor,SUBTLE_SPRING,'animate-always')};}" };
 let closure_11 = { code: "function FormSwitchNativeTsx3(){const{useReducedMotion,checked,on,off,withSpring,SUBTLE_SPRING}=this.__closure;const scale=useReducedMotion?1:checked?on:off;return{opacity:withSpring(checked?on:off,SUBTLE_SPRING,'animate-always'),transform:[{scale:withSpring(scale,SUBTLE_SPRING)}]};}" };
@@ -40,169 +40,186 @@ export const FormSwitch = function FormSwitch(onValueChange) {
   let disabled;
   let tmp;
   let value;
-  function useIconAnimation(on, off) {
-    let closure_0 = on;
-    let closure_1 = off;
-    let obj = value(enabled[4]);
-    const fn = function n() {
-      if (outer1_2) {
-        let obj = { opacity: value(enabled[10]).withSpring(outer1_3 ? closure_0 : closure_1, value(enabled[11]).SUBTLE_SPRING, "animate-always") };
-        obj = {};
-        const obj2 = value(enabled[10]);
-        const tmp6 = outer1_3 ? closure_0 : closure_1;
-        obj.scale = value(enabled[10]).withSpring(1, value(enabled[11]).SUBTLE_SPRING);
-        const items = [obj];
-        obj.transform = items;
-        return obj;
-      }
-    };
-    obj = { useReducedMotion: enabled, checked: first, on, off, withSpring: value(enabled[10]).withSpring, SUBTLE_SPRING: value(enabled[11]).SUBTLE_SPRING };
-    fn.__closure = obj;
-    fn.__workletHash = 14329332652102;
-    fn.__initData = outer1_11;
-    return obj.useAnimatedStyle(fn);
-  }
   ({ disabled, value } = onValueChange);
-  const require = value;
-  onValueChange = onValueChange.onValueChange;
+  let _require = value;
+  let importDefault = onValueChange.onValueChange;
   ({ accessibilityLabel, accessibilityHint, aria-hidden: tmp } = onValueChange);
-  const context = React.useContext(require(enabled[8]).AccessibilityPreferencesContext);
+  const context = React.useContext(_require(enabled[8]).AccessibilityPreferencesContext);
   enabled = context.reducedMotion.enabled;
-  const tmp3 = first(React.useState(value), 2);
-  first = tmp3[0];
-  React = tmp3[1];
+  let tmp4 = first(React.useState(value), 2);
+  first = tmp4[0];
+  React = tmp4[1];
   let items = [value];
   const effect = React.useEffect(() => {
-    callback(closure_0);
+    callback(c0);
   }, items);
-  let tmp6 = onValueChange(enabled[9])("FormSwitch");
-  const jsx = tmp6;
-  const tmp7 = unselectedBackground();
-  const selected = tmp7.selected;
-  unselectedBackground = tmp7.unselectedBackground;
-  let obj = require(enabled[4]);
+  const tmp8 = importDefault(enabled[9])("FormSwitch");
+  const jsx = tmp8;
+  const tmp9 = unselectedBackground();
+  const selected = tmp9.selected;
+  unselectedBackground = tmp9.unselectedBackground;
+  let obj = _require(enabled[4]);
   class G {
     constructor() {
-      obj = {};
-      obj2 = value(enabled[10]);
+      tmp = c0;
+      tmp2 = enabled;
+      obj = c0(enabled[10]);
+      tmp3 = _slicedToArray;
       if (_slicedToArray) {
-        tmp2 = selected;
+        tmp5 = selected;
         tintColor = selected.tintColor;
       } else {
-        tmp = unselectedBackground;
+        tmp4 = unselectedBackground;
         tintColor = unselectedBackground.tintColor;
       }
-      obj.backgroundColor = obj2.withSpring(tintColor, value(enabled[11]).SUBTLE_SPRING, "animate-always");
-      obj3 = value(enabled[10]);
-      if (_slicedToArray) {
-        tmp4 = selected;
+      obj = { backgroundColor: obj.withSpring(tintColor, tmp(tmp2[11]).SUBTLE_SPRING, "animate-always"), borderColor: null };
+      tmpResult = tmp(tmp2[10]);
+      if (tmp3) {
+        tmp7 = selected;
         borderColor = selected.borderColor;
       } else {
-        tmp3 = unselectedBackground;
+        tmp6 = unselectedBackground;
         borderColor = unselectedBackground.borderColor;
       }
-      obj.borderColor = obj3.withSpring(borderColor, value(enabled[11]).SUBTLE_SPRING, "animate-always");
+      obj[1] = tmpResult.withSpring(borderColor, tmp(tmp2[11]).SUBTLE_SPRING, "animate-always");
       return obj;
     }
   }
-  obj = { withSpring: require(enabled[10]).withSpring, checked: first, selected, unselectedBackground, SUBTLE_SPRING: require(enabled[11]).SUBTLE_SPRING };
+  obj = { withSpring: _require(enabled[10]).withSpring, checked: first, selected, unselectedBackground, SUBTLE_SPRING: _require(enabled[11]).SUBTLE_SPRING };
   G.__closure = obj;
   G.__workletHash = 2232234503354;
   G.__initData = token1;
   const animatedStyle = obj.useAnimatedStyle(G);
-  let obj2 = require(enabled[12]);
-  const token = obj2.useToken(onValueChange(enabled[6]).modules.mobile.CONTROL_SWITCH_KNOB_CHECKED_OFFSET);
-  let obj3 = require(enabled[12]);
-  token1 = obj3.useToken(onValueChange(enabled[6]).colors.SWITCH_THUMB_BACKGROUND_DEFAULT);
-  let obj4 = require(enabled[12]);
-  const token2 = obj4.useToken(onValueChange(enabled[6]).colors.SWITCH_THUMB_BACKGROUND_SELECTED_DEFAULT);
-  let fn = function f() {
-    const obj = {};
+  let obj2 = _require(enabled[12]);
+  const token = obj2.useToken(importDefault(enabled[6]).modules.mobile.CONTROL_SWITCH_KNOB_CHECKED_OFFSET);
+  let obj3 = _require(enabled[12]);
+  token1 = obj3.useToken(importDefault(enabled[6]).colors.SWITCH_THUMB_BACKGROUND_DEFAULT);
+  let obj4 = _require(enabled[12]);
+  const token2 = obj4.useToken(importDefault(enabled[6]).colors.SWITCH_THUMB_BACKGROUND_SELECTED_DEFAULT);
+  let obj5 = _require(enabled[4]);
+  const fn = function f() {
+    let obj = v0(enabled[10]);
     let num = 0;
     if (first) {
       num = token;
     }
-    obj.left = value(enabled[10]).withSpring(num, value(enabled[11]).SUBTLE_SPRING, "animate-always");
-    const obj2 = value(enabled[10]);
-    obj.backgroundColor = value(enabled[10]).withSpring(first ? token2 : token1, value(enabled[11]).SUBTLE_SPRING, "animate-always");
+    obj = { left: obj.withSpring(num, tmp(tmp2[11]).SUBTLE_SPRING, "animate-always"), backgroundColor: null };
+    obj[1] = v0(enabled[10]).withSpring(first ? token2 : token1, v0(enabled[11]).SUBTLE_SPRING, "animate-always");
     return obj;
   };
-  obj = { withSpring: require(enabled[10]).withSpring, checked: first, knobCheckedLeft: token, SUBTLE_SPRING: require(enabled[11]).SUBTLE_SPRING, knobSelectedBackgroundColor: token2, knobBackgroundColor: token1 };
+  obj = { withSpring: _require(enabled[10]).withSpring, checked: first, knobCheckedLeft: token, SUBTLE_SPRING: _require(enabled[11]).SUBTLE_SPRING, knobSelectedBackgroundColor: token2, knobBackgroundColor: token1 };
   fn.__closure = obj;
   fn.__workletHash = 3687946563898;
   fn.__initData = token2;
-  const animatedStyle1 = require(enabled[4]).useAnimatedStyle(fn);
-  const iconAnimation = useIconAnimation(1, 0);
-  let tmp15 = tmp6;
-  const iconAnimation1 = useIconAnimation(0, 1);
-  if (tmp6) {
-    tmp15 = !context.switchIconsEnabled;
+  _require = 1;
+  importDefault = 0;
+  const animatedStyle1 = obj5.useAnimatedStyle(fn);
+  const fn2 = function n() {
+    if (enabled) {
+      let obj = require(4599) /* CONFIG_NEVER_ANIMATE */;
+      obj = { opacity: null, transform: null };
+      obj[0] = obj.withSpring(first ? c0 : c1, require(4603) /* SUBTLE_SPRING */.SUBTLE_SPRING, "animate-always");
+      obj = { scale: null };
+      obj[0] = require(4599) /* CONFIG_NEVER_ANIMATE */.withSpring(1, require(4603) /* SUBTLE_SPRING */.SUBTLE_SPRING);
+      const items = [obj];
+      obj[1] = items;
+      return obj;
+    }
+  };
+  const obj8 = _require(enabled[4]);
+  fn2.__closure = { useReducedMotion: enabled, checked: first, on: 1, off: 0, withSpring: _require(enabled[10]).withSpring, SUBTLE_SPRING: _require(enabled[11]).SUBTLE_SPRING };
+  fn2.__workletHash = 14329332652102;
+  fn2.__initData = closure_11;
+  _require = 0;
+  importDefault = 1;
+  const animatedStyle2 = obj8.useAnimatedStyle(fn2);
+  const obj1 = { useReducedMotion: enabled, checked: first, on: 1, off: 0, withSpring: _require(enabled[10]).withSpring, SUBTLE_SPRING: _require(enabled[11]).SUBTLE_SPRING };
+  const fn3 = function n() {
+    if (enabled) {
+      let obj = require(4599) /* CONFIG_NEVER_ANIMATE */;
+      obj = { opacity: null, transform: null };
+      obj[0] = obj.withSpring(first ? c0 : c1, require(4603) /* SUBTLE_SPRING */.SUBTLE_SPRING, "animate-always");
+      obj = { scale: null };
+      obj[0] = require(4599) /* CONFIG_NEVER_ANIMATE */.withSpring(1, require(4603) /* SUBTLE_SPRING */.SUBTLE_SPRING);
+      const items = [obj];
+      obj[1] = items;
+      return obj;
+    }
+  };
+  obj2 = { useReducedMotion: enabled, checked: first, on: 0, off: 1, withSpring: _require(enabled[10]).withSpring, SUBTLE_SPRING: _require(enabled[11]).SUBTLE_SPRING };
+  fn3.__closure = obj2;
+  fn3.__workletHash = 14329332652102;
+  fn3.__initData = closure_11;
+  let tmp17 = tmp8;
+  const animatedStyle3 = _require(enabled[4]).useAnimatedStyle(fn3);
+  if (tmp8) {
+    tmp17 = !context.switchIconsEnabled;
   }
-  if (tmp15) {
-    const obj1 = {};
-    const items1 = [tmp7.switch, animatedStyle];
-    obj1.style = items1;
-    obj1.onPress = function onPress() {
+  if (tmp17) {
+    obj3 = { style: null, onPress: null, disabled: null, accessible: true, "aria-hidden": null, accessibilityRole: "switch", accessibilityLabel: null, accessibilityHint: null, accessibilityState: null, onAccessibilityTap: null, children: null };
+    const items1 = [tmp9.switch, animatedStyle];
+    obj3[0] = items1;
+    obj3[1] = function onPress() {
       if (closure_5) {
-        const triggerHapticFeedback = value(enabled[15]).triggerHapticFeedback;
-        const tmp6 = onValueChange(enabled[16]);
-        if (closure_0) {
-          const result = triggerHapticFeedback(tmp6.TOGGLE_OFF);
+        const triggerHapticFeedback = v0(enabled[15]).triggerHapticFeedback;
+        const tmp7 = v1(enabled[16]);
+        if (v0) {
+          const result = triggerHapticFeedback(tmp7.TOGGLE_OFF);
         } else {
-          const result1 = triggerHapticFeedback(tmp6.TOGGLE_ON);
+          const result1 = triggerHapticFeedback(tmp7.TOGGLE_ON);
         }
-        const tmp4 = value(enabled[15]);
+        const tmp4 = v0(enabled[15]);
       }
-      if (null != onValueChange) {
-        onValueChange(!closure_0);
+      if (v1 != null) {
+        tmp10(!v0);
       }
     };
-    obj1.disabled = disabled;
-    obj1.accessible = true;
-    obj1["aria-hidden"] = tmp;
-    obj1.accessibilityRole = "switch";
-    obj1.accessibilityLabel = accessibilityLabel;
-    obj1.accessibilityHint = accessibilityHint;
-    obj2 = { disabled, checked: first };
-    obj1.accessibilityState = obj2;
-    obj1.onAccessibilityTap = function onAccessibilityTap() {
+    obj3[2] = disabled;
+    obj3[4] = tmp;
+    obj3[6] = accessibilityLabel;
+    obj3[7] = accessibilityHint;
+    obj4 = { disabled: null, checked: null };
+    obj4[0] = disabled;
+    obj4[1] = first;
+    obj3[8] = obj4;
+    obj3[9] = function onAccessibilityTap() {
       if (closure_5) {
-        const triggerHapticFeedback = value(enabled[15]).triggerHapticFeedback;
-        const tmp6 = onValueChange(enabled[16]);
-        if (closure_0) {
-          const result = triggerHapticFeedback(tmp6.TOGGLE_OFF);
+        const triggerHapticFeedback = v0(enabled[15]).triggerHapticFeedback;
+        const tmp7 = v1(enabled[16]);
+        if (v0) {
+          const result = triggerHapticFeedback(tmp7.TOGGLE_OFF);
         } else {
-          const result1 = triggerHapticFeedback(tmp6.TOGGLE_ON);
+          const result1 = triggerHapticFeedback(tmp7.TOGGLE_ON);
         }
-        const tmp4 = value(enabled[15]);
+        const tmp4 = v0(enabled[15]);
       }
-      callback(!closure_0);
+      callback(!v0);
       const timerId = setTimeout(() => {
-        if (null != outer1_1) {
-          outer1_1(!outer1_0);
+        if (closure_1 != null) {
+          tmp(!closure_0);
         }
       });
     };
-    obj3 = {};
-    const items2 = [tmp7.knob, animatedStyle1];
-    obj3.style = items2;
-    obj3.children = null;
-    obj1.children = jsx(onValueChange(enabled[4]).View, {});
-    return <selected />;
+    obj5 = { style: null, children: null };
+    const items2 = [tmp9.knob, animatedStyle1];
+    obj5[0] = items2;
+    obj5[1] = null;
+    obj3[10] = jsx(tmp7(tmp2[4]).View, { style: null, children: null });
+    return <selected style={null} onPress={null} disabled={null} accessible aria-hidden={null} accessibilityRole="switch" accessibilityLabel={null} accessibilityHint={null} accessibilityState={null} onAccessibilityTap={null}>{null}</selected>;
   } else {
-    obj4 = {};
+    const obj6 = { source: null, size: null, style: null };
     if (!first) {
-      obj4.source = tmp18(tmp19[14]);
-      obj4.size = tmp18(tmp19[7]).Sizes.SMALL;
-      const items3 = [tmp7.unselectedIcon, iconAnimation1];
-      obj4.style = items3;
-      tmp16(tmp17, obj4);
+      obj6[0] = tmp7(tmp2[14]);
+      obj6[1] = tmp7(tmp2[7]).Sizes.SMALL;
+      const items3 = [tmp9.unselectedIcon, animatedStyle3];
+      obj6[2] = items3;
+      tmp18(tmp19, obj6);
     }
-    obj4.source = onValueChange(enabled[13]);
-    let selectedIcon = onValueChange(enabled[7]).Sizes;
-    obj4.size = tmp6 ? selectedIcon.SMALL_20 : selectedIcon.SMALL;
-    selectedIcon = tmp7.selectedIcon;
-    const items4 = [selectedIcon, iconAnimation];
-    obj4.style = items4;
+    obj6[0] = tmp7(tmp2[13]);
+    let selectedIcon = tmp7(tmp2[7]).Sizes;
+    obj6[1] = tmp8 ? selectedIcon.SMALL_20 : selectedIcon.SMALL;
+    selectedIcon = tmp9.selectedIcon;
+    const items4 = [selectedIcon, animatedStyle2];
+    obj6[2] = items4;
   }
 };

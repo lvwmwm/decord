@@ -1,12 +1,12 @@
-// Module ID: 8883
-// Function ID: 70175
+// Module ID: 8907
+// Function ID: 8908
 // Name: SecureFramesStreamVerificationBottomSheet
-// Dependencies: [31, 4251, 653, 33, 566, 8878, 8172, 8884, 1212, 8868, 2]
+// Dependencies: [19, 4275, 676, 21, 589, 8902, 8196, 8908, 1236, 8892, 2]
 // Exports: default
 
-// Module 8883 (SecureFramesStreamVerificationBottomSheet)
-import result from "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 8907 (SecureFramesStreamVerificationBottomSheet)
+import noop from "noop";
+import initialize from "initialize";
 import { AnalyticsSections } from "ME";
 import { jsx } from "jsxProd";
 
@@ -16,13 +16,13 @@ let result = require("ME").fileFinishedImporting("modules/rtc/native/SecureFrame
 export default function SecureFramesStreamVerificationBottomSheet(channelId) {
   channelId = channelId.channelId;
   const streamKey = channelId.streamKey;
-  let obj = channelId(566);
-  const items = [_isNativeReflectConstruct];
+  let obj = channelId(589);
+  const items = [initialize];
   const items1 = [channelId];
   const stateFromStores = obj.useStateFromStores(items, () => {
     const secureFramesState = outer1_4.getSecureFramesState(streamKey);
     let epochAuthenticator;
-    if (null != secureFramesState) {
+    if (secureFramesState != null) {
       epochAuthenticator = secureFramesState.epochAuthenticator;
     }
     return epochAuthenticator;
@@ -34,17 +34,17 @@ export default function SecureFramesStreamVerificationBottomSheet(channelId) {
     obj = { message };
     channelId(outer1_2[6]).showShareActionSheet(obj, outer1_5.SECURE_FRAMES_STREAM_BOTTOM_SHEET);
   }, items1);
-  obj = {};
-  const intl = channelId(1212).intl;
-  obj.title = intl.string(channelId(1212).t.QogHld);
-  const intl2 = channelId(1212).intl;
-  obj.subtitle = intl2.string(channelId(1212).t.qODBkW);
-  const intl3 = channelId(1212).intl;
-  obj = {};
-  const tmp3 = streamKey(8884);
-  obj.helpArticle = channelId(8868).getSecureFramesHelpdeskArticle();
-  obj.footer = intl3.format(channelId(1212).t["H3+ktv"], obj);
-  obj.epochAuthenticator = stateFromStores;
-  obj.onShareClick = callback;
-  return <tmp3 />;
+  obj = { title: null, subtitle: null, footer: null, epochAuthenticator: null, onShareClick: null };
+  const intl = channelId(1236).intl;
+  obj[0] = intl.string(channelId(1236).t.QogHld);
+  const intl2 = channelId(1236).intl;
+  obj[1] = intl2.string(channelId(1236).t.qODBkW);
+  const intl3 = channelId(1236).intl;
+  obj = { helpArticle: null };
+  const tmp3 = streamKey(8908);
+  obj[0] = channelId(8892).getSecureFramesHelpdeskArticle();
+  obj[2] = intl3.format(channelId(1236).t["H3+ktv"], obj);
+  obj[3] = stateFromStores;
+  obj[4] = callback;
+  return <tmp3 helpArticle={null} />;
 };

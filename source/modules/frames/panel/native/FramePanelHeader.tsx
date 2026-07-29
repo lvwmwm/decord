@@ -1,18 +1,18 @@
-// Module ID: 15839
-// Function ID: 121972
-// Dependencies: [57, 31, 27, 5668, 33, 566, 5503, 15815, 15817, 15821, 15822, 15840, 15832, 2]
+// Module ID: 15874
+// Function ID: 15875
+// Dependencies: [32, 19, 17, 5686, 21, 589, 5521, 15850, 15852, 15856, 15857, 15875, 15867, 2]
 
-// Module 15839
+// Module 15874
 import _slicedToArray from "_slicedToArray";
-import importAllResult from "result";
+import importAllResult from "noop";
 import { View } from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import map from "map";
 import jsxProd from "jsxProd";
 
 let closure_6;
-let closure_7;
+let error;
 const require = arg1;
-({ jsx: closure_6, jsxs: closure_7 } = jsxProd);
+({ jsx: closure_6, jsxs: error } = jsxProd);
 let closure_8 = importAllResult.memo(function FramePanelHeaderContentInner(arg0) {
   let gesture;
   let headerStyles;
@@ -23,80 +23,88 @@ let closure_8 = importAllResult.memo(function FramePanelHeaderContentInner(arg0)
   let wrapperOffset;
   ({ landscape, setMode } = arg0);
   ({ pipState, wrapperOffset } = arg0);
-  let obj = require(566) /* initialize */;
-  const items = [_isNativeReflectConstruct];
-  const stateFromStores = obj.useStateFromStores(items, () => outer1_5.getConnectedFrame(), []);
+  let obj = require(589) /* initialize */;
+  const items = [map];
+  const stateFromStores = obj.useStateFromStores(items, () => connectedFrame.getConnectedFrame(), []);
   let applicationId;
-  if (null != stateFromStores) {
+  if (stateFromStores != null) {
     applicationId = stateFromStores.applicationId;
   }
   const items1 = [applicationId];
-  const first = callback(importDefault(5503)(items1), 1)[0];
-  let obj1 = require(15815) /* useBaseActivityPanelHeaderContent */;
-  const baseActivityPanelHeaderContent = obj1.useBaseActivityPanelHeaderContent({ landscape, setMode, wrapperOffset, pipState });
+  const first = callback(importDefault(5521)(items1), 1)[0];
+  let tmpResult = tmp(15850);
+  const baseActivityPanelHeaderContent = tmpResult.useBaseActivityPanelHeaderContent({ landscape, setMode, wrapperOffset, pipState });
   ({ gesture, headerWrapperStyles, headerStyles } = baseActivityPanelHeaderContent);
-  let obj2 = require(15815) /* useBaseActivityPanelHeaderContent */;
-  const minimizeAndQuestButtonContainerStyles = obj2.useMinimizeAndQuestButtonContainerStyles();
+  tmpResult = tmp(15850);
+  const minimizeAndQuestButtonContainerStyles = tmpResult.useMinimizeAndQuestButtonContainerStyles();
   if (null == stateFromStores) {
     return null;
   } else {
-    obj = {};
     let id;
-    if (null != first) {
+    let tmp5Result = tmp5(15852);
+    if (first != null) {
       id = first.id;
     }
-    obj.applicationId = id;
-    const tmp27Result = callback2(importDefault(15817), obj);
-    obj = { hasConnectedActivity: null != stateFromStores, gesture, headerWrapperStyles, headerStyles, landscape };
-    obj1 = {};
+    obj = { applicationId: null };
+    obj[0] = id;
+    let tmp20Result = tmp20(tmp5Result, obj);
+    obj = { hasConnectedActivity: null, gesture: null, headerWrapperStyles: null, headerStyles: null, landscape: null, children: null };
+    obj[0] = null != stateFromStores;
+    obj[1] = gesture;
+    obj[2] = headerWrapperStyles;
+    obj[3] = headerStyles;
+    obj[4] = landscape;
     const items2 = [minimizeAndQuestButtonContainerStyles.buttonContainer, ];
     let prop;
     if (landscape) {
       prop = minimizeAndQuestButtonContainerStyles.buttonContainerLandscape;
     }
+    const obj1 = { style: null, children: null };
     items2[1] = prop;
-    obj1.style = items2;
-    obj2 = {};
-    let name;
-    const tmp11 = View;
-    const tmp13 = callback2;
-    const tmp27 = callback2;
-    const tmp30 = importDefault(15817);
+    obj1[0] = items2;
+    let tmp15;
+    tmp5Result = tmp5(15856);
     if (!landscape) {
-      if (null != first) {
+      let name;
+      if (first != null) {
         name = first.name;
       }
+      tmp15 = name;
     }
-    obj2.activityName = name;
-    obj2.setMode = setMode;
-    const items3 = [tmp13(importDefault(15821), obj2), , ];
-    let tmp18 = null != applicationId;
-    if (tmp18) {
-      const obj3 = { applicationId };
-      tmp18 = callback2(importDefault(15822), obj3);
+    const obj2 = { activityName: null, setMode: null };
+    obj2[0] = tmp15;
+    obj2[1] = setMode;
+    const items3 = [closure_6(tmp5Result, obj2), , ];
+    tmp20Result = null != applicationId;
+    if (tmp20Result) {
+      const obj3 = { applicationId: null };
+      obj3[0] = applicationId;
+      tmp20Result = tmp20(tmp5(15857), obj3);
     }
-    items3[1] = tmp18;
-    let tmp22 = null;
+    items3[1] = tmp20Result;
+    let tmp18 = null;
     if (landscape) {
-      tmp22 = tmp27Result;
+      tmp18 = tmp20Result;
     }
-    items3[2] = tmp22;
-    obj1.children = items3;
-    const items4 = [closure_7(tmp11, obj1), , ];
-    let tmp23 = null;
+    items3[2] = tmp18;
+    obj1[1] = items3;
+    const items4 = [closure_7(View, obj1), , ];
+    let tmp19 = null;
     if (!landscape) {
-      tmp23 = tmp27Result;
+      tmp19 = tmp20Result;
     }
-    items4[1] = tmp23;
-    const obj4 = { frame: stateFromStores, setMode };
-    items4[2] = callback2(importDefault(15840), obj4);
-    obj.children = items4;
-    return closure_7(require(15815) /* useBaseActivityPanelHeaderContent */.BaseActivityPanelContent, obj);
+    items4[1] = tmp19;
+    const obj4 = { frame: null, setMode: null };
+    obj4[0] = stateFromStores;
+    obj4[1] = setMode;
+    items4[2] = closure_6(tmp5(15875), obj4);
+    obj[5] = items4;
+    return closure_7(tmp(15850).BaseActivityPanelContent, obj);
   }
 });
 const memoResult = importAllResult.memo(() => {
-  let obj = require(15815) /* useBaseActivityPanelHeaderContent */;
-  obj = { context: importDefault(15832) };
+  let obj = require(15850) /* useBaseActivityPanelHeaderContent */;
+  obj = { context: importDefault(15867) };
   const baseActivityPanelHeader = obj.useBaseActivityPanelHeader(obj);
   obj = { style: baseActivityPanelHeader.headerStyles, children: callback2(closure_8, obj1) };
   return callback2(View, obj);

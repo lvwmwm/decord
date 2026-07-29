@@ -1,10 +1,10 @@
-// Module ID: 4014
-// Function ID: 33122
+// Module ID: 4038
+// Function ID: 4039
 // Name: items
-// Dependencies: [666, 2]
+// Dependencies: [689, 2]
 // Exports: generateRandomColorOptions
 
-// Module 4014 (items)
+// Module 4038 (items)
 let items = ["#94E0CF", "#9AF0B1", "#9A90FF", "#9A53FF", "#FDA6E4", "#FFE6C0", "#EFB4AA", "#56B69F", "#29C566", "#5348CA", "#6D24D4", "#CA48C8", "#F0AE29", "#DF4232"];
 let closure_3 = [0, 45, 90, 135, 180, 225, 270, 315];
 let closure_4 = [20, 40, 60, 80];
@@ -27,6 +27,7 @@ export const generateRandomColorOptions = function generateRandomColorOptions() 
   if ("path1" === str) {
     const _Math = Math;
     const _Math2 = Math;
+    let tmp3 = items;
     const rounded = Math.floor(Math.random() * items.length);
     const _Math3 = Math;
     const _Math4 = Math;
@@ -37,71 +38,83 @@ export const generateRandomColorOptions = function generateRandomColorOptions() 
         let _Math6 = Math;
         let tmp6 = items;
         rounded1 = Math.floor(Math.random() * items.length);
+        tmp3 = items;
       } while (rounded1 === rounded);
     }
-    items = [, ];
-    items[0] = items[rounded];
-    items[1] = items[rounded1];
-    let obj = {};
-    obj.type = obj.GRADIENT;
-    obj.colors = items;
-    obj.angle = tmp2;
-    obj.intensity = tmp;
-    obj.gradientType = obj.TWO_COLOR;
+    items = [tmp3[rounded], tmp3[rounded1]];
+    let obj = { type: null, colors: null, angle: null, intensity: null, gradientType: null };
+    obj[0] = obj.GRADIENT;
+    obj[1] = items;
+    obj[2] = tmp2;
+    obj[3] = tmp;
+    obj[4] = obj.TWO_COLOR;
     return obj;
   } else {
     const _Math7 = Math;
     const _Math8 = Math;
     const _Math9 = Math;
     const _Math10 = Math;
-    const tmp12 = items1[Math.floor(Math, Math.random(Math) * items1.length)];
-    obj = {};
-    obj.type = obj.GRADIENT;
-    obj.colors = (function generateColorHarmony(arg0, arg1) {
-      const obj = outer1_0(outer1_1[0])(arg0);
-      let value = obj.get("hsl.h");
-      value = obj.get("hsl.s");
-      const value1 = obj.get("hsl.l");
-      if (outer1_6.ANALOGOUS === arg1) {
-        const obj14 = outer1_0(outer1_1[0]);
-        const items = [outer1_0(outer1_1[0]).hsl(value - 30, value, value1).hex(), arg0, ];
-        const hslResult = outer1_0(outer1_1[0]).hsl(value - 30, value, value1);
-        const obj16 = outer1_0(outer1_1[0]);
-        items[2] = outer1_0(outer1_1[0]).hsl(value + 30, value, value1).hex();
-        return items;
-      } else if (outer1_6.COMPLEMENTARY === arg1) {
-        const obj10 = outer1_0(outer1_1[0]);
-        const hexResult = outer1_0(outer1_1[0]).hsl((value + 180) % 360, value, value1).hex();
-        const items1 = [arg0, , ];
-        const hslResult2 = outer1_0(outer1_1[0]).hsl((value + 180) % 360, value, value1);
-        const obj12 = outer1_0(outer1_1[0]);
-        items1[1] = outer1_0(outer1_1[0]).mix(arg0, hexResult, 0.5).hex();
-        items1[2] = hexResult;
+    const tmp11 = items1[Math.floor(Math, Math.random(Math) * items1.length)];
+    obj = { type: null, colors: null, angle: null, intensity: null, gradientType: null };
+    obj[0] = obj.GRADIENT;
+    obj[1] = (function generateColorHarmony(gradientSecondaryBackground, arg1) {
+      try {
+        let obj = callback(table[0])(gradientSecondaryBackground);
+        let value = obj.get("hsl.h");
+        value = obj.get("hsl.s");
+        const value1 = obj.get("hsl.l");
+        if (constants.ANALOGOUS === arg1) {
+          return (function generateAnalogousColors(gradientSecondaryBackground, value, value1, value2) {
+            const obj = callback(689);
+            const items = [callback(689).hsl(value2 - 30, value, value1).hex(), gradientSecondaryBackground, ];
+            const hslResult = callback(689).hsl(value2 - 30, value, value1);
+            const obj3 = callback(689);
+            items[2] = callback(689).hsl(value2 + 30, value, value1).hex();
+            return items;
+          })(gradientSecondaryBackground, value, value1, value);
+        } else if (tmp8.COMPLEMENTARY === arg1) {
+          return (function generateComplementaryColors(gradientSecondaryBackground, value, value1, value2) {
+            const obj = callback(689);
+            const hexResult = callback(689).hsl((value2 + 180) % 360, value, value1).hex();
+            const items = [gradientSecondaryBackground, , ];
+            const hslResult = callback(689).hsl((value2 + 180) % 360, value, value1);
+            const obj3 = callback(689);
+            items[1] = callback(689).mix(gradientSecondaryBackground, hexResult, 0.5).hex();
+            items[2] = hexResult;
+            return items;
+          })(gradientSecondaryBackground, value, value1, value);
+        } else if (tmp8.SPLIT_COMPLEMENTARY === arg1) {
+          return (function generateSplitComplementaryColors(gradientSecondaryBackground, value, value1, value2) {
+            const items = [gradientSecondaryBackground, , ];
+            const obj = callback(689);
+            items[1] = callback(689).hsl((value2 + 150) % 360, value, value1).hex();
+            const hslResult = callback(689).hsl((value2 + 150) % 360, value, value1);
+            const obj3 = callback(689);
+            items[2] = callback(689).hsl((value2 + 210) % 360, value, value1).hex();
+            return items;
+          })(gradientSecondaryBackground, value, value1, value);
+        } else if (tmp8.TRIADIC === arg1) {
+          return (function generateTriadicColors(gradientSecondaryBackground, value, value1, value2) {
+            const items = [gradientSecondaryBackground, , ];
+            const obj = callback(689);
+            items[1] = callback(689).hsl((value2 + 120) % 360, value, value1).hex();
+            const hslResult = callback(689).hsl((value2 + 120) % 360, value, value1);
+            const obj3 = callback(689);
+            items[2] = callback(689).hsl((value2 + 240) % 360, value, value1).hex();
+            return items;
+          })(gradientSecondaryBackground, value, value1, value);
+        } else {
+          let items = [gradientSecondaryBackground];
+          return items;
+        }
+      } catch (err) {
+        const items1 = [tmp];
         return items1;
-      } else if (outer1_6.SPLIT_COMPLEMENTARY === arg1) {
-        const items2 = [arg0, , ];
-        const obj6 = outer1_0(outer1_1[0]);
-        items2[1] = outer1_0(outer1_1[0]).hsl((value + 150) % 360, value, value1).hex();
-        const hslResult3 = outer1_0(outer1_1[0]).hsl((value + 150) % 360, value, value1);
-        const obj8 = outer1_0(outer1_1[0]);
-        items2[2] = outer1_0(outer1_1[0]).hsl((value + 210) % 360, value, value1).hex();
-        return items2;
-      } else if (outer1_6.TRIADIC === arg1) {
-        const items3 = [arg0, , ];
-        const obj2 = outer1_0(outer1_1[0]);
-        items3[1] = outer1_0(outer1_1[0]).hsl((value + 120) % 360, value, value1).hex();
-        const hslResult5 = outer1_0(outer1_1[0]).hsl((value + 120) % 360, value, value1);
-        const obj4 = outer1_0(outer1_1[0]);
-        items3[2] = outer1_0(outer1_1[0]).hsl((value + 240) % 360, value, value1).hex();
-        return items3;
-      } else {
-        const items4 = [arg0];
-        return items4;
       }
-    })(items[Math.floor(Math, Math.random(Math) * items.length)], tmp12);
-    obj.angle = tmp2;
-    obj.intensity = tmp;
-    obj.gradientType = tmp12;
+    })(items[Math.floor(Math, Math.random(Math) * items.length)], tmp11);
+    obj[2] = tmp2;
+    obj[3] = tmp;
+    obj[4] = tmp11;
     return obj;
   }
 };

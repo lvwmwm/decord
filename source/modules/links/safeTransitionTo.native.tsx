@@ -1,73 +1,177 @@
-// Module ID: 5661
-// Function ID: 48162
+// Module ID: 5679
+// Function ID: 5680
 // Name: _safeTransitionTo
-// Dependencies: [5, 1838, 653, 4356, 5662, 1198, 5663, 4506, 1212, 6034, 2299, 11788, 2]
+// Dependencies: [5, 1862, 676, 4381, 5680, 1222, 5681, 4529, 1236, 6052, 2323, 11813, 2]
 // Exports: default
 
-// Module 5661 (_safeTransitionTo)
-import shouldNavigate from "shouldNavigate";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+// Module 5679 (_safeTransitionTo)
+import transitionTo from "transitionTo";
+import createGuildRecordFromRust from "createGuildRecordFromRust";
 import { Routes } from "ME";
 
 const require = arg1;
-async function _safeTransitionTo(arg0, arg1, arg2) {
-  let diceCount;
-  let diceSides;
-  let guildId;
-  let obj = outer2_0(outer2_2[3]);
-  const tryParseDiceRollLinkResult = obj.tryParseDiceRollLink(arg0);
-  if (null != tryParseDiceRollLinkResult) {
-    const channelId = tryParseDiceRollLinkResult.channelId;
-    ({ guildId, diceCount, diceSides } = tryParseDiceRollLinkResult);
-    outer2_0(outer2_2[4]).startDiceRoll(channelId, diceCount, diceSides);
-    const obj10 = outer2_0(outer2_2[4]);
-    outer2_0(outer2_2[5]).transitionTo(outer2_5.CHANNEL(guildId, channelId), arg1);
-  } else {
-    let tryParseChannelPathResult = outer2_0(outer2_2[3]).tryParseChannelPath(arg0);
-    if (null != tryParseChannelPathResult) {
-      if (!yield outer2_1(outer2_2[6])(tryParseChannelPathResult)) {
-        let obj1 = outer2_1(outer2_2[7]);
-        obj = {};
-        const intl = outer2_0(outer2_2[8]).intl;
-        obj.title = intl.string(outer2_0(outer2_2[8]).t.r0DLNm);
-        const intl2 = outer2_0(outer2_2[8]).intl;
-        obj.body = intl2.string(outer2_0(outer2_2[8]).t["6Y0JlN"]);
-        const intl3 = outer2_0(outer2_2[8]).intl;
-        obj.confirmText = intl3.string(outer2_0(outer2_2[8]).t.BddRzS);
-        obj1.show(obj);
-      }
-    }
-    if (null != tryParseChannelPathResult) {
-      if (null != tryParseChannelPathResult.guildId) {
-        if (null != outer2_4.getGuild(tryParseChannelPathResult.guildId)) {
-          if (obj4.isModeratorReportOrPostChannelId(tmp7)) {
-            obj = {};
-            const intl4 = outer2_0(outer2_2[8]).intl;
-            obj.title = intl4.string(outer2_1(outer2_2[10]).iCIEAV);
-            const intl5 = outer2_0(outer2_2[8]).intl;
-            obj.body = intl5.string(outer2_1(outer2_2[10]).bvzo6p);
-            const intl6 = outer2_0(outer2_2[8]).intl;
-            obj.confirmText = intl6.string(outer2_0(outer2_2[8]).t.BddRzS);
-            outer2_1(outer2_2[7]).show(obj);
+function _safeTransitionTo() {
+  const self = this;
+  const tmp = callback((arg0, arg1) => {
+    let closure_0 = arg0;
+    let closure_1 = arg1;
+    let c5 = 0;
+    let c6 = 0;
+    return (function*(arg0, arg1) {
+      let diceCount;
+      let diceSides;
+      let guildId;
+      if (c6 === 2) {
+        c6 = 3;
+        HermesBuiltin.throwTypeError();
+      } else if (tmp4 === 3) {
+        if (arg0 === 1) {
+          throw arg1;
+        } else if (arg0 === 2) {
+          let obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
+        } else {
+          return { value: "HermesInternal", done: null };
+        }
+      } else {
+        try {
+          c6 = 2;
+          if (0 === c5) {
+            if (arg0 === 1) {
+              c6 = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              c6 = 3;
+              obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            } else {
+              let channelId = 0;
+              let guild = tmp2;
+              let closure_2;
+              guild = undefined;
+              channelId = undefined;
+              const tryParseDiceRollLinkResult = callback(outer1_2[3]).tryParseDiceRollLink(callback);
+              if (null != tryParseDiceRollLinkResult) {
+                channelId = tryParseDiceRollLinkResult.channelId;
+                ({ guildId, diceCount, diceSides } = tryParseDiceRollLinkResult);
+                callback(outer1_2[4]).startDiceRoll(channelId, diceCount, diceSides);
+                const obj13 = callback(outer1_2[4]);
+                callback(outer1_2[5]).transitionTo(c5.CHANNEL(guildId, channelId), tmp83);
+                c6 = 3;
+                const obj1 = { value: null, done: true };
+                obj1[0] = undefined;
+                return obj1;
+              } else {
+                const tryParseChannelPathResult = callback(outer1_2[3]).tryParseChannelPath(tmp82);
+                closure_2 = tryParseChannelPathResult;
+                if (null != tryParseChannelPathResult) {
+                  c5 = 1;
+                  c6 = 1;
+                  let obj2 = { value: null, done: false };
+                  obj2[0] = callback2(outer1_2[6])(tryParseChannelPathResult);
+                  return obj2;
+                }
+                const obj19 = callback(outer1_2[3]);
+              }
+              const obj18 = callback(outer1_2[3]);
+              tmp82 = callback;
+              tmp83 = callback2;
+            }
+          } else {
+            if (1 === tmp5) {
+              if (arg0 === 1) {
+                c6 = 3;
+                throw arg1;
+              } else if (arg0 === 2) {
+                c6 = 3;
+                const obj3 = { value: null, done: true };
+                obj3[0] = arg1;
+                return obj3;
+              } else if (!arg1) {
+                obj2 = callback2(closure_2[7]);
+                const obj4 = { title: null, body: null, confirmText: null };
+                const intl = callback(closure_2[8]).intl;
+                obj4[0] = intl.string(callback(closure_2[8]).t.r0DLNm);
+                const intl2 = callback(closure_2[8]).intl;
+                obj4[1] = intl2.string(callback(closure_2[8]).t["6Y0JlN"]);
+                const intl3 = callback(closure_2[8]).intl;
+                obj4[2] = intl3.string(callback(closure_2[8]).t.BddRzS);
+                obj2.show(obj4);
+                c6 = 3;
+              }
+            } else if (arg0 === 1) {
+              c6 = 3;
+              throw arg1;
+            } else if (arg0 !== 2) {
+              if (!arg1) {
+                obj = callback(closure_2[5]);
+                obj.transitionTo(callback, callback2);
+              }
+            }
+            c6 = 3;
+            const obj5 = { value: null, done: true };
+            obj5[0] = arg1;
+            return obj5;
           }
-          obj4 = outer2_0(outer2_2[9]);
+          if (null != closure_2) {
+            if (null != closure_2.guildId) {
+              guild = channelId.getGuild(closure_2.guildId);
+              channelId = closure_2.channelId;
+              if (null != guild) {
+                let obj6 = callback(closure_2[9]);
+                if (obj6.isModeratorReportOrPostChannelId(channelId)) {
+                  obj6 = { title: null, body: null, confirmText: null };
+                  const intl4 = callback(closure_2[8]).intl;
+                  obj6[0] = intl4.string(callback2(closure_2[10]).iCIEAV);
+                  const intl5 = callback(closure_2[8]).intl;
+                  obj6[1] = intl5.string(callback2(closure_2[10]).bvzo6p);
+                  const intl6 = callback(closure_2[8]).intl;
+                  obj6[2] = intl6.string(callback(closure_2[8]).t.BddRzS);
+                  callback2(closure_2[7]).show(obj6);
+                  c6 = 3;
+                  let obj7 = { value: null, done: true };
+                  obj7[0] = undefined;
+                  return obj7;
+                }
+              }
+            }
+          }
+          obj7 = callback2(closure_2[11]);
+          if (closure_2 == null) {
+            closure_2 = { guildId: "r" };
+          }
+          c5 = 2;
+          c6 = 1;
+          const obj8 = { value: null, done: false };
+          obj8[0] = obj7.maybePerformRoleSubscriptionUpsellRedirect(closure_2);
+          return obj8;
+        } catch (tmp76) {
+          c6 = tmp;
+          throw tmp76;
         }
       }
-    }
-    const obj12 = outer2_0(outer2_2[3]);
-    if (null == tryParseChannelPathResult) {
-      obj1 = { guildId: undefined };
-      tryParseChannelPathResult = obj1;
-    }
-    if (!yield obj5.maybePerformRoleSubscriptionUpsellRedirect(tryParseChannelPathResult)) {
-      outer2_0(outer2_2[5]).transitionTo(arg0, arg1);
-      const obj7 = outer2_0(outer2_2[5]);
-    }
-    obj5 = outer2_1(outer2_2[11]);
+    })();
+  });
+  const _safeTransitionTo = tmp;
+  const apply = tmp.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
   }
+  return applyArgumentsResult;
 }
 const result = require("ME").fileFinishedImporting("modules/links/safeTransitionTo.native.tsx");
 
 export default function safeTransitionTo() {
-  return _safeTransitionTo(...arguments);
+  const self = this;
+  const apply = _safeTransitionTo.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
 };

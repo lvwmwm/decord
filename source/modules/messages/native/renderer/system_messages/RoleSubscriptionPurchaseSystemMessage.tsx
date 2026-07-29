@@ -1,12 +1,12 @@
-// Module ID: 7781
-// Function ID: 61790
+// Module ID: 7804
+// Function ID: 7805
 // Name: createRoleSubscriptionPurchaseSystemMessage
-// Dependencies: [1348, 1838, 653, 4395, 7720, 7756, 7757, 7750, 1395, 1392, 7722, 1212, 7723, 2]
+// Dependencies: [1372, 1862, 676, 4418, 7743, 7779, 7780, 7773, 1419, 1416, 7745, 1236, 7746, 2]
 // Exports: createRoleSubscriptionPurchaseSystemMessage
 
-// Module 7781 (createRoleSubscriptionPurchaseSystemMessage)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+// Module 7804 (createRoleSubscriptionPurchaseSystemMessage)
+import ensureGuildLoaded from "ensureGuildLoaded";
+import createGuildRecordFromRust from "createGuildRecordFromRust";
 import { SystemChannelFlags } from "ME";
 
 const require = arg1;
@@ -21,13 +21,13 @@ export const createRoleSubscriptionPurchaseSystemMessage = function createRoleSu
     const author = message.author;
     channel = channel.getChannel(message.getChannelId());
     let guildId;
-    if (null != channel) {
+    if (channel != null) {
       guildId = channel.getGuildId();
     }
     guild = guild.getGuild(guildId);
-    let obj = require(4395) /* useNullableMessageAuthor */;
+    let obj = require(4418) /* useNullableMessageAuthor */;
     const guildMemberAvatar = obj.getMessageAuthor(message).guildMemberAvatar;
-    let obj1 = require(7720) /* getMessageAuthorWithProcessedColor */;
+    let obj1 = require(7743) /* getMessageAuthorWithProcessedColor */;
     const messageAuthorWithProcessedColor = obj1.getMessageAuthorWithProcessedColor(message);
     if (null != guildId) {
       if (null != channel) {
@@ -35,56 +35,62 @@ export const createRoleSubscriptionPurchaseSystemMessage = function createRoleSu
         if (tmp9) {
           tmp9 = !(guild.systemChannelFlags & SystemChannelFlags.SUPPRESS_ROLE_SUBSCRIPTION_PURCHASE_NOTIFICATION_REPLIES);
         }
-        let obj2 = require(7756) /* computeIsStickerReplyEnabled */;
-        if (obj2.computeIsStickerReplyEnabled(guildId, channel, message, tmp9)) {
-          let obj3 = require(7757) /* transform */;
-          const obj5 = require(7750) /* identityHook */;
-          const transformStickerResult = obj3.transformSticker(require(7750) /* identityHook */.pickRoleSubscriptionPurchaseSticker(message.id));
+        let tmp5Result = tmp5(7779);
+        if (tmp5Result.computeIsStickerReplyEnabled(guildId, channel, message, tmp9)) {
+          tmp5Result = tmp5(7780);
+          const tmp5Result1 = tmp5(7773);
+          const transformStickerResult = tmp5Result.transformSticker(tmp5(7773).pickRoleSubscriptionPurchaseSticker(message.id));
         }
       }
     }
-    require(1395) /* ensureAvatarSource */;
+    require(1419) /* ensureAvatarSource */;
     if (null != guildMemberAvatar) {
       if (null != guildId) {
-        obj = { userId: author.id, avatar: guildMemberAvatar, guildId };
-        let guildMemberAvatarSource = require(1392) /* getAvatarURL */.getGuildMemberAvatarSource(obj, author);
-        const obj6 = require(1392) /* getAvatarURL */;
+        obj = { userId: null, avatar: null, guildId: null };
+        obj[0] = author.id;
+        obj[1] = guildMemberAvatar;
+        obj[2] = guildId;
+        let guildMemberAvatarSource = tmp5(1416).getGuildMemberAvatarSource(obj, author);
+        const tmp5Result3 = tmp5(1416);
       }
-      obj = { action: "bindOpenRoleSubscriptionOverview", guildId, messageId: message.id };
+      obj = { action: "bindOpenRoleSubscriptionOverview", guildId: null, messageId: null, channelId: null, roleSubscriptionListingId: null };
+      obj[1] = guildId;
+      obj[2] = message.id;
       let id;
-      if (null != channel) {
+      if (channel != null) {
         id = channel.id;
       }
-      obj.channelId = id;
+      obj[3] = id;
       const roleSubscriptionData2 = message.roleSubscriptionData;
       let prop;
-      if (null != roleSubscriptionData2) {
+      if (roleSubscriptionData2 != null) {
         prop = roleSubscriptionData2.role_subscription_listing_id;
       }
-      obj.roleSubscriptionListingId = prop;
-      obj1 = {};
-      const tmp23Result = tmp23(guildMemberAvatarSource);
-      obj2 = { username: messageAuthorWithProcessedColor.nick };
-      let tmp32;
-      if (null != guildId) {
-        tmp32 = guildId;
-      }
-      obj2.guildId = tmp32;
-      obj3 = { message, author: messageAuthorWithProcessedColor, roleStyle: tmp };
-      obj2.usernameOnClickHandler = importDefault(7722)(obj3);
-      obj2.roleSubscriptionOnClickHandler = obj;
-      obj2.roleSubscriptionData = roleSubscriptionData;
-      obj1.content = require(7750) /* identityHook */.getRoleSubscriptionPurchaseSystemMessageContentMobile(obj2);
-      obj1.totalMonthsSubscribed = roleSubscriptionData.total_months_subscribed;
-      obj1.username = messageAuthorWithProcessedColor.nick;
-      obj1.avatarURL = tmp23Result.uri;
-      obj1.sticker = transformStickerResult;
-      const obj10 = require(7750) /* identityHook */;
-      obj1.stickerLabel = require(7750) /* identityHook */.getRoleSubscriptionPurchaseStickerCTA(message.id, false);
-      const intl = require(1212) /* getSystemLocale */.intl;
-      obj1.welcomeLabel = intl.string(require(1212) /* getSystemLocale */.t.piPHvY);
-      const merged = Object.assign(importDefault(7723)(message));
-      return obj1;
+      obj[4] = prop;
+      const tmp17Result = tmp17(guildMemberAvatarSource);
+      obj1 = { username: null, guildId: null, usernameOnClickHandler: null, roleSubscriptionOnClickHandler: null, roleSubscriptionData: null };
+      obj1[0] = messageAuthorWithProcessedColor.nick;
+      const obj2 = { content: null, totalMonthsSubscribed: null, username: null, avatarURL: null, sticker: null, stickerLabel: null, welcomeLabel: null };
+      obj1[1] = guildId;
+      const obj3 = { message: null, author: null, roleStyle: null };
+      obj3[0] = message;
+      obj3[1] = messageAuthorWithProcessedColor;
+      obj3[2] = tmp;
+      obj1[2] = importDefault(7745)(obj3);
+      obj1[3] = obj;
+      obj1[4] = roleSubscriptionData;
+      obj2[0] = tmp5(7773).getRoleSubscriptionPurchaseSystemMessageContentMobile(obj1);
+      obj2[1] = roleSubscriptionData.total_months_subscribed;
+      obj2[2] = messageAuthorWithProcessedColor.nick;
+      obj2[3] = tmp17Result.uri;
+      obj2[4] = transformStickerResult;
+      const tmp22 = guildId;
+      const tmp5Result4 = tmp5(7773);
+      obj2[5] = tmp5(7773).getRoleSubscriptionPurchaseStickerCTA(message.id, false);
+      const intl = tmp5(1236).intl;
+      obj2[6] = intl.string(tmp5(1236).t.piPHvY);
+      const merged = Object.assign(importDefault(7746)(message));
+      return obj2;
     }
     guildMemberAvatarSource = author.getAvatarSource(undefined);
   }

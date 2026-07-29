@@ -1,23 +1,23 @@
-// Module ID: 6639
-// Function ID: 58528
+// Module ID: 6660
+// Function ID: 6661
 // Name: BuyNitroPurchaseButton
-// Dependencies: [57, 31, 27, 5654, 1852, 33, 4165, 5517, 6533, 1212, 477, 6640, 5485, 6274, 6547, 566, 5497, 4506, 4578, 6641, 6642, 2]
+// Dependencies: [32, 19, 17, 5672, 1876, 21, 4189, 5535, 6554, 1236, 500, 6661, 5503, 6295, 6568, 589, 5515, 4529, 4600, 6662, 6663, 2]
 // Exports: default
 
-// Module 6639 (BuyNitroPurchaseButton)
+// Module 6660 (BuyNitroPurchaseButton)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
-import { View } from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import BuyNitroPurchaseButtonLegalDisclaimer from "BuyNitroPurchaseButtonLegalDisclaimer";
+import { View } from "module_4529";
+import updateProduct from "updateProduct";
 import { PremiumTypes } from "GuildFeatures";
-import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import jsxProd from "set";
+import createCacheKey from "createCacheKey";
 
-let closure_8;
-let closure_9;
+let c9;
+let metroImportAll;
 const require = arg1;
-({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
-let closure_10 = _createForOfIteratorHelperLoose.createStyles({ container: { width: "100%" }, buttonStack: { width: "100%" }, hiddenFlow: { position: "absolute", width: 0, height: 0, overflow: "hidden", opacity: 0 } });
+({ jsx: metroImportAll, jsxs: c9 } = jsxProd);
+let closure_10 = createCacheKey.createStyles({ container: { width: "100%" }, buttonStack: { width: "100%" }, hiddenFlow: { position: "absolute", width: 0, height: 0, overflow: "hidden", opacity: 0 } });
 let result = require("get ActivityIndicator").fileFinishedImporting("modules/premium_marketing/native/components/purchase_button/BuyNitroPurchaseButton.tsx");
 
 export default function BuyNitroPurchaseButton(sourceAnalyticsLocations) {
@@ -28,7 +28,7 @@ export default function BuyNitroPurchaseButton(sourceAnalyticsLocations) {
   let onPaymentDismiss;
   let onPaymentSuccess;
   let planSelection;
-  let tmp26;
+  let tmp19;
   ({ planSelection, location: _location } = sourceAnalyticsLocations);
   ({ onPaymentSuccess, onPaymentDismiss } = sourceAnalyticsLocations);
   if (_location === undefined) {
@@ -41,7 +41,7 @@ export default function BuyNitroPurchaseButton(sourceAnalyticsLocations) {
   let first;
   let React;
   c5 = undefined;
-  let _isNativeReflectConstruct;
+  let updateProduct;
   let callback;
   ({ applicationId, onHostSheetClose } = sourceAnalyticsLocations);
   const tmp3 = callback2();
@@ -51,71 +51,76 @@ export default function BuyNitroPurchaseButton(sourceAnalyticsLocations) {
   let obj = selection(applyOrderPriceOverride[8]);
   const result = obj.isMobileWebRedirectCheckoutEnabled();
   if (result) {
-    const intl4 = selection(applyOrderPriceOverride[9]).intl;
-    let stringResult = intl4.string(selection(applyOrderPriceOverride[9]).t.rylrdY);
+    const intl4 = tmp4(tmp5[9]).intl;
+    let stringResult = intl4.string(tmp4(tmp5[9]).t.rylrdY);
   } else if (selection.isTrial) {
-    const intl3 = selection(applyOrderPriceOverride[9]).intl;
-    let obj2 = selection(applyOrderPriceOverride[10]);
-    const t = selection(applyOrderPriceOverride[9]).t;
-    intl3.string(obj2.isAndroid() ? t.rKD72m : t.bboTul);
-    const isAndroidResult = obj2.isAndroid();
+    const intl3 = tmp4(tmp5[9]).intl;
+    let tmp4Result = tmp4(tmp5[10]);
+    const t = tmp4(tmp5[9]).t;
+    intl3.string(tmp4Result.isAndroid() ? t.rKD72m : t.bboTul);
+    const isAndroidResult = tmp4Result.isAndroid();
   } else if (null != selection.priceString) {
-    let intl2 = selection(applyOrderPriceOverride[9]).intl;
-    obj = { rate: selection.priceString };
-    stringResult = intl2.formatToPlainString(selection(applyOrderPriceOverride[9]).t.i4T8vz, obj);
+    let intl2 = tmp4(tmp5[9]).intl;
+    obj = { rate: null };
+    obj[0] = selection.priceString;
+    stringResult = intl2.formatToPlainString(tmp4(tmp5[9]).t.i4T8vz, obj);
   } else {
-    let intl = selection(applyOrderPriceOverride[9]).intl;
-    stringResult = intl.string(selection(applyOrderPriceOverride[9]).t.uuzaAK);
+    let intl = tmp4(tmp5[9]).intl;
+    stringResult = intl.string(tmp4(tmp5[9]).t.uuzaAK);
   }
   const item = selection.item;
   let premiumTier;
-  if (null != item) {
+  if (item != null) {
     premiumTier = item.premiumTier;
   }
   let str = "experimental_premium-primary";
   if (premiumTier === callback.TIER_0) {
     str = "experimental_premium-basic";
   }
-  let obj3 = selection(applyOrderPriceOverride[11]);
-  const buyNitroButtonCrossfade = obj3.useBuyNitroButtonCrossfade(str, stringResult);
+  tmp4Result = tmp4(tmp5[11]);
+  const buyNitroButtonCrossfade = tmp4Result.useBuyNitroButtonCrossfade(str, stringResult);
   const outgoing = buyNitroButtonCrossfade.outgoing;
-  const tmp21 = priceStringByProductId(applyOrderPriceOverride[12])(() => selection(applyOrderPriceOverride[13]).getNewAnalyticsLoadId());
-  const tmp23 = first(React.useState(null), 2);
-  first = tmp23[0];
-  React = tmp23[1];
+  let obj4 = React;
+  const tmp14 = priceStringByProductId(applyOrderPriceOverride[12])(() => selection(applyOrderPriceOverride[13]).getNewAnalyticsLoadId());
+  const tmp16 = first(React.useState(null), 2);
+  first = tmp16[0];
+  React = tmp16[1];
   const ref = React.useRef(false);
-  [tmp26, c5] = first(React.useState(null), 2);
-  _isNativeReflectConstruct = React.useRef(first);
+  [tmp19, c5] = first(React.useState(null), 2);
+  updateProduct = React.useRef(first);
   const items = [first];
   const effect = React.useEffect(() => {
-    _isNativeReflectConstruct.current = first;
+    updateProduct.current = first;
   }, items);
   const effect1 = React.useEffect(() => () => {
-    if (null != outer1_6.current) {
-      const BuyNitroPurchaseLock = selection(applyOrderPriceOverride[14]).BuyNitroPurchaseLock;
+    if (null != ref.current) {
+      const BuyNitroPurchaseLock = outer1_0(outer1_2[14]).BuyNitroPurchaseLock;
       BuyNitroPurchaseLock.end();
     }
   }, []);
-  let obj4 = selection(applyOrderPriceOverride[15]);
-  const items1 = [_isNativeReflectConstruct];
+  const tmp18 = first(React.useState(null), 2);
+  const items1 = [updateProduct];
   let stateFromStores = null != first;
   if (!stateFromStores) {
-    stateFromStores = obj4.useStateFromStores(items1, () => busy.isBusy());
+    stateFromStores = tmp4Result1.useStateFromStores(items1, () => busy.isBusy());
   }
-  let obj5 = selection(applyOrderPriceOverride[14]);
+  tmp4Result1 = selection(applyOrderPriceOverride[15]);
   let isBuyNitroPurchaseBlocked = stateFromStores;
   if (!stateFromStores) {
-    isBuyNitroPurchaseBlocked = obj5.useIsBuyNitroPurchaseBlocked();
+    isBuyNitroPurchaseBlocked = tmp4Result2.useIsBuyNitroPurchaseBlocked();
   }
   if (!isBuyNitroPurchaseBlocked) {
-    isBuyNitroPurchaseBlocked = !result && null == selection.priceString;
-    const tmp31 = !result && null == selection.priceString;
+    let tmp24 = !result;
+    if (!result) {
+      tmp24 = null == selection.priceString;
+    }
+    isBuyNitroPurchaseBlocked = tmp24;
   }
-  const tmp25 = first(React.useState(null), 2);
-  if (null == prop) {
+  tmp4Result2 = selection(applyOrderPriceOverride[14]);
+  if (prop == null) {
     prop = [];
   }
-  callback = React.useCallback(() => {
+  callback = obj4.useCallback(() => {
     callback(null);
     _undefined(null);
     const BuyNitroPurchaseLock = selection(applyOrderPriceOverride[14]).BuyNitroPurchaseLock;
@@ -123,64 +128,77 @@ export default function BuyNitroPurchaseButton(sourceAnalyticsLocations) {
   }, []);
   const items2 = [selection.item, applyOrderPriceOverride, callback];
   const items3 = [selection.item, priceStringByProductId];
-  const callback1 = React.useCallback((arg0) => {
+  const callback1 = obj4.useCallback((arg0) => {
     if (null != selection.item) {
-      applyOrderPriceOverride(selection.item.productId, arg0);
+      applyOrderPriceOverride(tmp.item.productId, arg0);
     }
     let obj = priceStringByProductId(applyOrderPriceOverride[17]);
-    obj = {};
+    obj = { title: null, body: null, hideActionSheet: false };
     const intl = selection(applyOrderPriceOverride[9]).intl;
-    obj.title = intl.string(selection(applyOrderPriceOverride[9]).t["2DyOxw"]);
+    obj[0] = intl.string(selection(applyOrderPriceOverride[9]).t["2DyOxw"]);
     const intl2 = selection(applyOrderPriceOverride[9]).intl;
-    obj.body = intl2.string(selection(applyOrderPriceOverride[9]).t["Xr94E+"]);
-    obj.hideActionSheet = false;
+    obj[1] = intl2.string(selection(applyOrderPriceOverride[9]).t["Xr94E+"]);
     obj.show(obj);
     callback();
   }, items2);
-  obj = { style: tmp3.container };
-  const obj1 = { style: tmp3.buttonStack };
-  callback2 = React.useCallback(() => {
+  obj = { style: tmp3.container, children: null };
+  const obj1 = { style: tmp3.buttonStack, children: null };
+  callback2 = obj4.useCallback(() => {
     let beginResult = null != selection.item;
     if (beginResult) {
       const BuyNitroPurchaseLock = selection(applyOrderPriceOverride[14]).BuyNitroPurchaseLock;
       beginResult = BuyNitroPurchaseLock.begin();
     }
     if (beginResult) {
-      const value = priceStringByProductId.get(selection.item.productId);
-      let tmp8 = null;
-      if (null != value) {
-        tmp8 = value;
+      let value = priceStringByProductId.get(tmp.item.productId);
+      if (value == null) {
+        value = null;
       }
-      c5(tmp8);
-      callback(selection.item);
-      const tmp4 = c5;
+      c5(value);
+      callback(tmp.item);
+      const tmp5 = c5;
     }
   }, items3);
-  obj2 = { text: stringResult, variant: str, size: "lg", grow: true, onPress: callback2, loading: stateFromStores, disabled: isBuyNitroPurchaseBlocked };
-  const items4 = [callback(selection(applyOrderPriceOverride[18]).Button, obj2), ];
-  let tmp38 = null != outgoing;
-  if (tmp38) {
-    obj3 = { snapshot: outgoing.snapshot, onDone: buyNitroButtonCrossfade.onOutgoingDone };
-    tmp38 = callback(priceStringByProductId(applyOrderPriceOverride[11]), obj3, outgoing.key);
+  const items4 = [callback(selection(applyOrderPriceOverride[18]).Button, { text: stringResult, variant: str, size: "lg", grow: true, onPress: callback2, loading: stateFromStores, disabled: isBuyNitroPurchaseBlocked }), ];
+  let tmp31Result = null != outgoing;
+  if (tmp31Result) {
+    const obj2 = { snapshot: null, onDone: null };
+    obj2[0] = outgoing.snapshot;
+    obj2[1] = buyNitroButtonCrossfade.onOutgoingDone;
+    tmp31Result = tmp31(tmp13(tmp5[11]), obj2, outgoing.key);
   }
-  items4[1] = tmp38;
-  obj1.children = items4;
+  items4[1] = tmp31Result;
+  obj1[1] = items4;
   const items5 = [closure_9(c5, obj1), , ];
-  let tmp42 = !result;
-  if (tmp42) {
-    obj4 = { item: selection.item, ctaText: stringResult };
-    ({ isTrial: obj11.isTrial, isDiscounted: obj11.isDiscounted } = selection);
-    tmp42 = callback(priceStringByProductId(applyOrderPriceOverride[19]), obj4);
+  tmp31Result = !result;
+  if (!result) {
+    const obj3 = { item: null, ctaText: null, isTrial: null, isDiscounted: null };
+    obj3[0] = selection.item;
+    obj3[1] = stringResult;
+    ({ isTrial: obj11[2], isDiscounted: obj11[3] } = selection);
+    tmp31Result = tmp31(tmp13(tmp5[19]), obj3);
   }
-  items5[1] = tmp42;
-  let tmp46 = null != first;
-  if (tmp46) {
-    obj5 = { style: tmp3.hiddenFlow, pointerEvents: "none" };
-    const obj6 = { item: first, analyticsLocations: tmp32(prop, _location, priceStringByProductId(applyOrderPriceOverride[7]).PREMIUM_PAYMENT_ACTION_SHEET).analyticsLocations, analyticsLoadId: tmp21, hasEmittedPaymentFlowStartedRef: ref, applicationId, expectedPriceString: tmp26, onExit: callback, onOrderPriceMismatch: callback1, onHostSheetClose, onPaymentSuccess, onPaymentDismiss };
-    obj5.children = callback(priceStringByProductId(applyOrderPriceOverride[20]), obj6);
-    tmp46 = callback(c5, obj5);
+  items5[1] = tmp31Result;
+  let tmp31Result1 = null != first;
+  if (tmp31Result1) {
+    obj4 = { style: null, pointerEvents: "none", children: null };
+    obj4[0] = tmp3.hiddenFlow;
+    const obj5 = { item: null, analyticsLocations: null, analyticsLoadId: null, hasEmittedPaymentFlowStartedRef: null, applicationId: null, expectedPriceString: null, onExit: null, onOrderPriceMismatch: null, onHostSheetClose: null, onPaymentSuccess: null, onPaymentDismiss: null };
+    obj5[0] = first;
+    obj5[1] = tmp13Result(prop, _location, tmp13(tmp5[7]).PREMIUM_PAYMENT_ACTION_SHEET).analyticsLocations;
+    obj5[2] = tmp14;
+    obj5[3] = ref;
+    obj5[4] = applicationId;
+    obj5[5] = tmp19;
+    obj5[6] = callback;
+    obj5[7] = callback1;
+    obj5[8] = onHostSheetClose;
+    obj5[9] = onPaymentSuccess;
+    obj5[10] = onPaymentDismiss;
+    obj4[2] = tmp31(tmp13(tmp5[20]), obj5);
+    tmp31Result1 = tmp31(tmp30, obj4);
   }
-  items5[2] = tmp46;
-  obj.children = items5;
+  items5[2] = tmp31Result1;
+  obj[1] = items5;
   return closure_9(c5, obj);
 };

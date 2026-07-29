@@ -1,21 +1,21 @@
-// Module ID: 9581
-// Function ID: 74605
+// Module ID: 9602
+// Function ID: 9603
 // Name: useFrecencySettings
-// Dependencies: [31, 1316, 1331, 566, 2]
+// Dependencies: [19, 1340, 1355, 589, 2]
 // Exports: useFrecencySettings
 
-// Module 9581 (useFrecencySettings)
-import result from "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 9602 (useFrecencySettings)
+import noop from "noop";
+import handleConnectionClosedOrResumed from "handleConnectionClosedOrResumed";
 
 const require = arg1;
-const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/user_settings/FrecencyUserSettingsHooks.tsx");
+const result = require("updateUserGuildSettings").fileFinishedImporting("modules/user_settings/FrecencyUserSettingsHooks.tsx");
 
 export const useFrecencySettings = function useFrecencySettings() {
   const effect = React.useEffect(() => {
-    const FrecencyUserSettingsActionCreators = outer1_0(outer1_1[2]).FrecencyUserSettingsActionCreators;
+    const FrecencyUserSettingsActionCreators = callback(table[2]).FrecencyUserSettingsActionCreators;
     const ifNecessary = FrecencyUserSettingsActionCreators.loadIfNecessary();
   }, []);
-  const items = [_isNativeReflectConstruct];
-  return require(566) /* initialize */.useStateFromStores(items, () => outer1_3.frecencyWithoutFetchingLatest);
+  const items = [handleConnectionClosedOrResumed];
+  return require(589) /* initialize */.useStateFromStores(items, () => obj.frecencyWithoutFetchingLatest);
 };

@@ -1,51 +1,58 @@
-// Module ID: 11232
-// Function ID: 87214
+// Module ID: 11256
+// Function ID: 11257
 // Name: AppRowLabel
-// Dependencies: [57, 31, 27, 1347, 5679, 4164, 11223, 3793, 11194, 1455, 653, 1345, 33, 689, 11227, 4165, 4161, 1212, 11206, 7990, 10261, 3843, 5198, 11201, 1392, 9891, 11233, 10646, 566, 5686, 11234, 5119, 8212, 11235, 11210, 1557, 11236, 8094, 8803, 10900, 1450, 7992, 5678, 11238, 11237, 11239, 11240, 11242, 11243, 11202, 5684, 11244, 22, 4359, 5617, 11246, 11247, 8402, 480, 3981, 1334, 11248, 11249, 11251, 9215, 11253, 1327, 11259, 11260, 11262, 11265, 11266, 11228, 11267, 11189, 11268, 11272, 7989, 11221, 8005, 11273, 11257, 11274, 1360, 11275, 11276, 2]
+// Dependencies: [32, 19, 17, 1371, 5697, 4188, 11247, 3817, 11218, 1479, 676, 1369, 21, 712, 11251, 4189, 4185, 1236, 11230, 8015, 10282, 3867, 5220, 11225, 1416, 9913, 11257, 10670, 589, 5704, 11258, 5141, 8236, 11259, 11234, 1581, 11260, 8118, 8827, 10924, 1474, 8017, 5696, 11262, 11261, 11263, 11264, 11266, 11267, 11226, 5702, 11268, 12, 4384, 5635, 11270, 11271, 8426, 503, 4005, 1358, 11272, 11273, 11275, 9239, 11277, 1351, 11283, 11284, 11286, 11289, 11290, 11252, 11291, 11213, 11292, 11296, 8014, 11245, 8029, 11297, 11281, 11298, 1384, 11299, 11300, 2]
 // Exports: default
 
-// Module 11232 (AppRowLabel)
-import trackImpression from "trackImpression";
-import preload from "preload";
-import get_ActivityIndicator from "useEmbeddedActivityBackground";
-import closure_7 from "_createForOfIteratorHelperLoose";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_10 from "_isNativeReflectConstruct";
-import closure_11 from "_isNativeReflectConstruct";
-import closure_12 from "_isNativeReflectConstruct";
-import closure_13 from "_isNativeReflectConstruct";
+// Module 11256 (AppRowLabel)
+import TwinButtons from "TwinButtons";
+import getShelfBadgeTypeIfActive from "getShelfBadgeTypeIfActive";
+import get_ActivityIndicator from "getSystemLocale";
+import participantFromServer from "participantFromServer";
+import getIndexKey from "getIndexKey";
+import getUserAgnosticState from "getUserAgnosticState";
+import getLastFetchTimeMs from "getLastFetchTimeMs";
+import getUncachedChannelPermissions from "getUncachedChannelPermissions";
+import initialize from "initialize";
 import APP_LAUNCHER_BUILT_IN_SECTION_ICON from "APP_LAUNCHER_BUILT_IN_SECTION_ICON";
 import ME from "ME";
 import { ContentDismissActionType } from "ContentDismissActionType";
-import jsxProd from "ActivityShelfBadge";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import jsxProd from "ChannelListLayoutTypes";
+import createCacheKey from "createCacheKey";
 
+let StyleSheet;
+let c9;
 let closure_16;
 let closure_17;
 let closure_19;
 let closure_20;
 let closure_21;
-let closure_8;
-let closure_9;
+let closure_6;
+let metroImportAll;
 const require = arg1;
 function AppRowLabel(renderedName) {
   renderedName = renderedName.renderedName;
-  const tmp = _createForOfIteratorHelperLoose();
+  const tmp = createCacheKey();
   if (renderedName.showsPromoted) {
-    let obj = { style: tmp.appRowLabelWithPromotedContainer };
-    obj = { style: tmp.appRowLabelWithPromotedTextContainer, variant: "text-md/semibold", color: "mobile-text-heading-primary", lineClamp: 1, children: renderedName };
-    const items = [callback2(require(4161) /* Text */.Text, obj), ];
-    const obj1 = { style: tmp.promotedLabel };
-    const obj2 = { variant: "text-xxs/semibold", color: "text-muted" };
-    const intl = require(1212) /* getSystemLocale */.intl;
-    obj2.children = intl.string(require(1212) /* getSystemLocale */.t["/eVltv"]);
-    obj1.children = callback2(require(4161) /* Text */.Text, obj2);
-    items[1] = callback2(View, obj1);
-    obj.children = items;
-    let tmp5 = callback3(View, obj);
+    let obj = { style: null, children: null };
+    obj[0] = tmp.appRowLabelWithPromotedContainer;
+    obj = { style: null, variant: "text-md/semibold", color: "mobile-text-heading-primary", lineClamp: 1, children: null };
+    obj[0] = tmp.appRowLabelWithPromotedTextContainer;
+    obj[4] = renderedName;
+    const items = [callback2(require(4185) /* Text */.Text, obj), ];
+    const obj1 = { style: null, children: null };
+    obj1[0] = tmp.promotedLabel;
+    const obj2 = { variant: "text-xxs/semibold", color: "text-muted", children: null };
+    const intl = require(1236) /* getSystemLocale */.intl;
+    obj2[2] = intl.string(require(1236) /* getSystemLocale */.t["/eVltv"]);
+    obj1[1] = callback2(require(4185) /* Text */.Text, obj2);
+    items[1] = callback2(closure_6, obj1);
+    obj[1] = items;
+    let tmp5 = callback3(closure_6, obj);
   } else {
-    obj = { variant: "text-md/semibold", color: "mobile-text-heading-primary", lineClamp: 1, children: renderedName };
-    tmp5 = callback2(require(4161) /* Text */.Text, obj);
+    obj = { variant: "text-md/semibold", color: "mobile-text-heading-primary", lineClamp: 1, children: null };
+    obj[3] = renderedName;
+    tmp5 = callback2(require(4185) /* Text */.Text, obj);
   }
   return tmp5;
 }
@@ -69,64 +76,54 @@ class BaseAppRow {
       tmp2 = jsx;
       tmp3 = closure_1;
       tmp4 = closure_3;
-      num = 18;
-      obj = {};
-      obj.iconSource = iconSource;
+      obj = { iconSource: null };
+      obj[0] = iconSource;
       tmp = jsx(require("EntityBorderAppIcon"), obj);
     }
-    obj2 = require("_createForOfIteratorHelperLoose");
+    tmp5 = application;
+    tmp6 = closure_3;
+    obj2 = require("getShelfBadgeTypeIfActive");
     FAKE_BUILT_IN_APP = application;
-    if (null == application) {
-      tmp5 = application;
-      tmp6 = closure_3;
-      FAKE_BUILT_IN_APP = require("_createForOfIteratorHelperLoose").FAKE_BUILT_IN_APP;
+    if (application == null) {
+      FAKE_BUILT_IN_APP = require("getShelfBadgeTypeIfActive").FAKE_BUILT_IN_APP;
     }
     sectionName = obj2.getSectionName(FAKE_BUILT_IN_APP);
     if (!flag2) {
-      tmp8 = application;
-      tmp9 = closure_3;
-      obj3 = require("_createForOfIteratorHelperLoose");
+      tmp5Result = require("getShelfBadgeTypeIfActive");
       FAKE_BUILT_IN_APP2 = application;
-      if (null == application) {
-        tmp10 = application;
-        tmp11 = closure_3;
-        FAKE_BUILT_IN_APP2 = require("_createForOfIteratorHelperLoose").FAKE_BUILT_IN_APP;
+      if (application == null) {
+        FAKE_BUILT_IN_APP2 = require("getShelfBadgeTypeIfActive").FAKE_BUILT_IN_APP;
       }
-      flag2 = obj3.isPromotedApplication(FAKE_BUILT_IN_APP2);
+      flag2 = tmp5Result.isPromotedApplication(FAKE_BUILT_IN_APP2);
     }
     items = [];
     items[0] = application;
-    memo = preload.useMemo(() => {
+    memo = getRecommendationItemsWithViewAll.useMemo(() => {
       let obj = application(outer1_3[19]);
-      if (null != application) {
-        let FAKE_BUILT_IN_APP = application;
-      } else {
-        FAKE_BUILT_IN_APP = application(outer1_3[19]).FAKE_BUILT_IN_APP;
+      let FAKE_BUILT_IN_APP = application;
+      if (application == null) {
+        FAKE_BUILT_IN_APP = tmp(tmp2[19]).FAKE_BUILT_IN_APP;
       }
       const sectionDescription = obj.getSectionDescription(FAKE_BUILT_IN_APP);
       let result = null;
       if (null != sectionDescription) {
         result = null;
         if ("" !== sectionDescription) {
-          obj = { content: sectionDescription, muted: false, layout: application(outer1_3[21]).ChannelListLayoutTypes.COMPACT, color: "text-muted" };
-          result = application(outer1_3[20]).renderMessagePreviewMarkup(obj);
-          const obj2 = application(outer1_3[20]);
+          obj = { content: null, muted: false, layout: null, color: "text-muted" };
+          obj[0] = sectionDescription;
+          obj[2] = tmp(tmp2[21]).ChannelListLayoutTypes.COMPACT;
+          result = tmp(tmp2[20]).renderMessagePreviewMarkup(obj);
+          const tmpResult = tmp(tmp2[20]);
         }
       }
       return result;
     }, items);
-    obj = {};
-    obj.icon = tmp;
-    obj1 = { renderedName: sectionName };
-    obj1.showsPromoted = flag2;
-    obj.label = jsx(AppRowLabel, obj1);
-    obj.labelLineClamp = 1;
-    obj.subLabel = memo;
-    obj.subLabelLineClamp = 1;
-    obj.start = isFirstRow;
-    obj.end = flag;
-    obj.arrow = true;
-    obj.onPress = global.onPress;
+    obj = { icon: tmp, label: null, labelLineClamp: 1, subLabel: null, subLabelLineClamp: 1, start: null, end: null, arrow: true, onPress: null };
+    obj[1] = jsx(AppRowLabel, { renderedName: sectionName, showsPromoted: flag2 });
+    obj[3] = memo;
+    obj[5] = isFirstRow;
+    obj[6] = flag;
+    obj[8] = global.onPress;
     return jsx(require("TableRowInner").TableRow, obj);
   }
 }
@@ -141,7 +138,7 @@ function AppRow(isLastRow) {
   if (flag === undefined) {
     flag = false;
   }
-  let obj = require(11201) /* handleApplicationSelected */;
+  let obj = require(11225) /* handleApplicationSelected */;
   obj = { application: section.application, iconSource: obj.getAppLauncherIconSource(section.application), onPress: isLastRow.onPress, isFirstRow, isLastRow: flag };
   return callback2(BaseAppRow, obj);
 }
@@ -156,20 +153,20 @@ function ActivityRow(section) {
   if (flag2 === undefined) {
     flag2 = false;
   }
-  let obj = onPress(1392);
-  obj = { id: section.application.id, icon: section.application.icon };
+  let obj = onPress(1416);
+  obj = { id: section.application.id, icon: section.application.icon, bot: null, botIconFirst: true };
   const application = section.application;
   let bot;
-  if (null != application) {
+  if (application != null) {
     bot = application.bot;
   }
-  obj.bot = bot;
-  obj.botIconFirst = true;
+  obj[2] = bot;
   const applicationIconSource = obj.getApplicationIconSource(obj);
-  let tmp3 = null != applicationIconSource;
-  if (tmp3) {
-    obj = { iconSource: applicationIconSource };
-    tmp3 = callback2(onPress(11206), obj);
+  let tmp5 = null != applicationIconSource;
+  if (tmp5) {
+    obj = { iconSource: null };
+    obj[0] = applicationIconSource;
+    tmp5 = callback2(onPress(11230), obj);
   }
   const items = [section];
   const items1 = [section, onPress];
@@ -180,7 +177,9 @@ function ActivityRow(section) {
       result = null;
       if ("" !== description) {
         let obj = section(outer1_3[20]);
-        obj = { content: description, muted: false, layout: section(outer1_3[21]).ChannelListLayoutTypes.COMPACT, color: "text-muted" };
+        obj = { content: null, muted: false, layout: null, color: "text-muted" };
+        obj[0] = description;
+        obj[2] = section(outer1_3[21]).ChannelListLayoutTypes.COMPACT;
         result = obj.renderMessagePreviewMarkup(obj);
       }
     }
@@ -189,8 +188,7 @@ function ActivityRow(section) {
   const callback = React.useCallback(() => {
     onPress(section);
   }, items1);
-  const obj1 = { icon: tmp3, label: section.application.name, subLabel: memo, subLabelLineClamp: 1, start: flag, end: flag2, arrow: true, onPress: callback };
-  return callback2(section(5198).TableRow, obj1);
+  return callback2(section(5220).TableRow, { icon: tmp5, label: section.application.name, subLabel: memo, subLabelLineClamp: 1, start: flag, end: flag2, arrow: true, onPress: callback });
 }
 function ActivityItemTuple(arg0) {
   let containerWidth;
@@ -205,36 +203,44 @@ function ActivityItemTuple(arg0) {
   let usesHandleActivityItemSelected;
   ({ context, sectionName, onPress, usesHandleActivityItemSelected, onActivityItemSelected, shelfItem2, entrypoint, containerWidth } = arg0);
   ({ shelfItem1, isLastTuple } = arg0);
-  const tmp = _createForOfIteratorHelperLoose();
+  const tmp = createCacheKey();
   const items = [containerWidth];
   const size = React.useMemo(() => {
     if (null == containerWidth) {
-      let obj = { width: undefined, height: undefined };
-      return obj;
+      return { width: "dispatch", height: "isArray" };
     } else {
-      const tmp5 = outer1_1(outer1_3[25])(containerWidth / 2 - outer1_14 - 6);
-      obj = { width: tmp5, height: outer1_1(outer1_3[25])(tmp5 / outer1_22) };
+      const tmp5 = outer1_1(outer1_3[25])(tmp / 2 - outer1_14 - 6);
+      const obj = { width: null, height: null };
+      obj[0] = tmp5;
+      obj[1] = outer1_1(outer1_3[25])(tmp5 / outer1_22);
       return obj;
     }
   }, items);
-  let obj = {};
   const items1 = [tmp.activityItemTupleContainer, ];
-  obj = { marginBottom: 12 };
-  items1[1] = obj;
-  obj.style = items1;
-  obj = { style: tmp.activityItemTupleShelfItemContainer, children: callback2(ActivityItem, obj1) };
-  const items2 = [callback2(View, obj), ];
-  let tmp4 = null != shelfItem2;
-  if (tmp4) {
-    const obj2 = { style: tmp.activityItemTupleShelfItemContainer };
-    const obj3 = { context, sectionName, onPress, usesHandleActivityItemSelected, onActivityItemSelected, shelfItem: shelfItem2, entrypoint };
-    ({ width: obj6.imageWidth, height: obj6.imageHeight } = size);
-    obj2.children = callback2(ActivityItem, obj3);
-    tmp4 = callback2(View, obj2);
+  let obj = { style: items1, children: null };
+  items1[1] = { marginBottom: 12 };
+  obj = { style: tmp.activityItemTupleShelfItemContainer, children: callback2(ActivityItem, obj) };
+  obj = { context, sectionName, onPress, usesHandleActivityItemSelected, onActivityItemSelected, shelfItem: shelfItem1, entrypoint, imageWidth: size.width, imageHeight: size.height };
+  const items2 = [callback2(closure_6, obj), ];
+  let tmp4Result = null != shelfItem2;
+  if (tmp4Result) {
+    const obj1 = { style: null, children: null };
+    obj1[0] = tmp.activityItemTupleShelfItemContainer;
+    const obj2 = { context: null, sectionName: null, onPress: null, usesHandleActivityItemSelected: null, onActivityItemSelected: null, shelfItem: null, entrypoint: null, imageWidth: null, imageHeight: null };
+    obj2[0] = context;
+    obj2[1] = sectionName;
+    obj2[2] = onPress;
+    obj2[3] = usesHandleActivityItemSelected;
+    obj2[4] = onActivityItemSelected;
+    obj2[5] = shelfItem2;
+    obj2[6] = entrypoint;
+    ({ width: obj5[7], height: obj5[8] } = size);
+    obj1[1] = tmp4(ActivityItem, obj2);
+    tmp4Result = tmp4(tmp3, obj1);
   }
-  items2[1] = tmp4;
-  obj.children = items2;
-  return closure_20(View, obj);
+  items2[1] = tmp4Result;
+  obj[1] = items2;
+  return closure_20(closure_6, obj);
 }
 function ActivityItem(context) {
   let entrypoint;
@@ -252,23 +258,24 @@ function ActivityItem(context) {
   let callback;
   let handleActivityItemSelected;
   ({ onActivityItemSelected, entrypoint } = context);
-  const tmp = _createForOfIteratorHelperLoose();
+  const tmp = createCacheKey();
   let obj = context(flag[26]);
+  let obj1 = handleActivityItemSelected;
   const heroMediaDimensions = obj.useHeroMediaDimensions();
-  const tmp3 = callback(handleActivityItemSelected.useState(false), 2);
-  callback = tmp3[1];
-  obj = { applicationId: shelfItem.application.id };
+  const tmp6 = callback(handleActivityItemSelected.useState(false), 2);
+  callback = tmp6[1];
+  obj = { applicationId: shelfItem.application.id, size: null, names: null };
   let width = imageWidth;
-  if (null == imageWidth) {
+  if (imageWidth == null) {
     width = heroMediaDimensions.width;
   }
-  obj.size = width;
-  obj.names = ["embedded_cover"];
-  const tmp4Result = shelfItem(flag[27])(obj);
-  let id = handleActivityItemSelected.useId();
-  let obj2 = context(flag[28]);
-  let items = [closure_7];
-  const tmp7 = callback(obj2.useStateFromStoresArray(items, () => {
+  obj[1] = width;
+  obj[2] = ["embedded_cover"];
+  const tmp8Result = shelfItem(flag[27])(obj);
+  let id = obj1.useId();
+  let tmp2Result = tmp2(tmp3[28]);
+  let items = [participantFromServer];
+  const tmp5Result = callback(tmp2Result.useStateFromStoresArray(items, () => {
     const items = [outer1_7.isLaunchingActivity(), ];
     let id;
     if ("channel" === context.type) {
@@ -277,73 +284,69 @@ function ActivityItem(context) {
     items[1] = outer1_7.getLaunchState(shelfItem.application.id, id);
     return items;
   }), 2);
-  let isLaunching = null != tmp8;
+  let isLaunching = null != tmp12;
   if (isLaunching) {
-    isLaunching = tmp8.isLaunching;
+    isLaunching = tmp12.isLaunching;
   }
   if (isLaunching) {
-    isLaunching = tmp8.componentId === id;
+    isLaunching = tmp12.componentId === id;
   }
-  let obj3 = context(flag[19]);
-  const shelfBadgeTypeIfActive = obj3.getShelfBadgeTypeIfActive(shelfItem.application);
-  let obj4 = context(flag[23]);
-  obj = { applicationId: shelfItem.application.id, context, sectionName: context.sectionName, onActivityItemSelected, location: context(flag[29]).ApplicationCommandTriggerLocations.APP_LAUNCHER_HOME, entrypoint, launchingComponentId: id, fetchesApplication: false };
-  handleActivityItemSelected = obj4.useHandleActivityItemSelected(obj).handleActivityItemSelected;
+  tmp2Result = tmp2(tmp3[19]);
+  const shelfBadgeTypeIfActive = tmp2Result.getShelfBadgeTypeIfActive(shelfItem.application);
+  const tmp5 = callback;
+  const tmp8 = shelfItem(flag[27]);
+  obj = { applicationId: shelfItem.application.id, context, sectionName: context.sectionName, onActivityItemSelected, location: tmp2(tmp3[29]).ApplicationCommandTriggerLocations.APP_LAUNCHER_HOME, entrypoint, launchingComponentId: id, fetchesApplication: false };
+  handleActivityItemSelected = context(flag[23]).useHandleActivityItemSelected(obj).handleActivityItemSelected;
   const items1 = [handleActivityItemSelected, onPress, shelfItem, flag];
-  let first = "not-found" === tmp4Result.state;
-  callback = handleActivityItemSelected.useCallback(() => {
+  let first = "not-found" === tmp8Result.state;
+  callback = obj1.useCallback(() => {
     if (flag) {
       handleActivityItemSelected();
     }
     onPress(shelfItem);
   }, items1);
   if (!first) {
-    first = tmp3[0];
+    first = tmp6[0];
   }
   if (first) {
-    let tmp13 = callback2(shelfItem(flag[30]), {});
+    let tmp17 = callback2(tmp7(tmp3[30]), {});
   } else {
-    tmp13 = null;
-    if (!tmp12) {
-      const obj1 = {
-        onError() {
-              return callback(true);
-            },
-        style: tmp.activityItemImage
+    tmp17 = null;
+    if (!tmp16) {
+      obj1 = { onError: null, style: null, source: null, resizeMode: "cover" };
+      obj1[0] = function onError() {
+        return callback(true);
       };
-      obj2 = { uri: tmp4Result.url };
-      obj1.source = obj2;
-      obj1.resizeMode = "cover";
-      tmp13 = callback2(shelfItem(flag[31]), obj1);
+      obj1[1] = tmp.activityItemImage;
+      const obj2 = { uri: null };
+      obj2[0] = tmp8Result.url;
+      obj1[2] = obj2;
+      tmp17 = callback2(tmp7(tmp3[31]), obj1);
     }
   }
-  obj3 = { style: tmp.activityItemContainer, disabled: tmp7[0], onPress: callback };
-  obj4 = {};
+  const obj3 = { style: tmp.activityItemContainer, disabled: tmp5Result[0], onPress: callback, children: null };
   const items2 = [tmp.activityImageContainer, ];
-  let tmp23 = null != imageWidth;
-  if (tmp23) {
-    tmp23 = null != imageHeight;
+  let tmp22 = null != imageWidth;
+  if (tmp22) {
+    tmp22 = null != imageHeight;
   }
-  if (tmp23) {
-    const obj5 = { width: imageWidth, height: imageHeight };
-    tmp23 = obj5;
+  if (tmp22) {
+    const obj4 = { width: null, height: null };
+    obj4[0] = imageWidth;
+    obj4[1] = imageHeight;
+    tmp22 = obj4;
   }
-  items2[1] = tmp23;
-  obj4.style = items2;
-  const items3 = [tmp13, callback2(shelfItem(flag[33]), { labelType: shelfBadgeTypeIfActive }), ];
+  const obj5 = { style: items2, children: null };
+  items2[1] = tmp22;
+  const items3 = [tmp17, callback2(shelfItem(flag[33]), { labelType: shelfBadgeTypeIfActive }), callback2(context(flag[34]).SubmittingOverlay, { submitting: isLaunching, style: tmp.submittingOverlay })];
+  obj5[1] = items3;
+  const items4 = [closure_20(closure_6, obj5), ];
   const obj6 = { submitting: isLaunching, style: tmp.submittingOverlay };
-  items3[2] = callback2(context(flag[34]).SubmittingOverlay, obj6);
-  obj4.children = items3;
-  const items4 = [closure_20(View, obj4), ];
-  tmp12 = "loading" === tmp4Result.state || null == tmp4Result.url;
-  const tmp20 = closure_20;
-  const tmp21 = closure_20;
-  const tmp22 = View;
-  const tmp4 = shelfItem(flag[27]);
-  const obj8 = { variant: "heading-sm/bold", color: "mobile-text-heading-primary", children: shelfItem.application.name };
-  items4[1] = callback2(View, { style: tmp.activityDetailsContainer, children: callback2(context(flag[16]).Text, obj8) });
-  obj3.children = items4;
-  return tmp20(context(flag[32]).PressableScale, obj3);
+  tmp16 = "loading" === tmp8Result.state || null == tmp8Result.url;
+  const tmp2Result1 = context(flag[23]);
+  items4[1] = callback2(closure_6, { style: tmp.activityDetailsContainer, children: callback2(context(flag[16]).Text, obj8) });
+  obj3[3] = items4;
+  return closure_20(context(flag[32]).PressableScale, obj3);
 }
 function RecommendationItemTuple(arg0) {
   let containerWidth;
@@ -356,36 +359,42 @@ function RecommendationItemTuple(arg0) {
   let sectionName;
   ({ context, sectionName, onPress, item2, entrypoint, containerWidth } = arg0);
   ({ item1, isLastTuple } = arg0);
-  const tmp = _createForOfIteratorHelperLoose();
+  const tmp = createCacheKey();
   const items = [containerWidth];
   const size = React.useMemo(() => {
     if (null == containerWidth) {
-      let obj = { width: undefined, height: undefined };
-      return obj;
+      return { width: "dispatch", height: "isArray" };
     } else {
-      const tmp5 = outer1_1(outer1_3[25])(containerWidth / 2 - outer1_14 - 6);
-      obj = { width: tmp5, height: outer1_1(outer1_3[25])(tmp5 / outer1_22) };
+      const tmp5 = outer1_1(outer1_3[25])(tmp / 2 - outer1_14 - 6);
+      const obj = { width: null, height: null };
+      obj[0] = tmp5;
+      obj[1] = outer1_1(outer1_3[25])(tmp5 / outer1_22);
       return obj;
     }
   }, items);
-  let obj = {};
   const items1 = [tmp.activityItemTupleContainer, ];
-  obj = { marginBottom: 12 };
-  items1[1] = obj;
-  obj.style = items1;
-  obj = { style: tmp.activityItemTupleShelfItemContainer, children: callback2(RecommendationItem, obj1) };
-  const items2 = [callback2(View, obj), ];
-  let tmp4 = null != item2;
-  if (tmp4) {
-    const obj2 = { style: tmp.activityItemTupleShelfItemContainer };
-    const obj3 = { context, sectionName, onPress, item: item2, entrypoint };
-    ({ width: obj6.imageWidth, height: obj6.imageHeight } = size);
-    obj2.children = callback2(RecommendationItem, obj3);
-    tmp4 = callback2(View, obj2);
+  let obj = { style: items1, children: null };
+  items1[1] = { marginBottom: 12 };
+  obj = { style: tmp.activityItemTupleShelfItemContainer, children: callback2(RecommendationItem, obj) };
+  obj = { context, sectionName, onPress, item: item1, entrypoint, imageWidth: size.width, imageHeight: size.height };
+  const items2 = [callback2(closure_6, obj), ];
+  let tmp4Result = null != item2;
+  if (tmp4Result) {
+    const obj1 = { style: null, children: null };
+    obj1[0] = tmp.activityItemTupleShelfItemContainer;
+    const obj2 = { context: null, sectionName: null, onPress: null, item: null, entrypoint: null, imageWidth: null, imageHeight: null };
+    obj2[0] = context;
+    obj2[1] = sectionName;
+    obj2[2] = onPress;
+    obj2[3] = item2;
+    obj2[4] = entrypoint;
+    ({ width: obj5[5], height: obj5[6] } = size);
+    obj1[1] = tmp4(RecommendationItem, obj2);
+    tmp4Result = tmp4(tmp3, obj1);
   }
-  items2[1] = tmp4;
-  obj.children = items2;
-  return closure_20(View, obj);
+  items2[1] = tmp4Result;
+  obj[1] = items2;
+  return closure_20(closure_6, obj);
 }
 function RecommendationItem(onPress) {
   let context;
@@ -397,113 +406,109 @@ function RecommendationItem(onPress) {
   ({ item, sectionName } = onPress);
   onPress = onPress.onPress;
   ({ imageWidth, imageHeight, context, entrypoint } = onPress);
-  const tmp = _createForOfIteratorHelperLoose();
+  let closure_2;
+  let application;
+  const tmp = createCacheKey();
   let obj = sectionName(application[26]);
+  let obj1 = React;
   const heroMediaDimensions = obj.useHeroMediaDimensions();
-  const tmp3 = callback(React.useState(false), 2);
-  let closure_2 = tmp3[1];
+  const tmp5 = callback(React.useState(false), 2);
+  closure_2 = tmp5[1];
   application = item.application;
-  let obj1 = sectionName(application[19]);
-  let isEmbeddedAppResult = obj1.isEmbeddedApp(application);
-  obj = { applicationId: application.id };
+  let obj2 = sectionName(application[19]);
+  let isEmbeddedAppResult = obj2.isEmbeddedApp(application);
+  obj = { applicationId: application.id, size: null, names: null };
   let width = imageWidth;
-  if (null == imageWidth) {
+  if (imageWidth == null) {
     width = heroMediaDimensions.width;
   }
-  obj.size = width;
-  obj.names = ["embedded_cover"];
-  let tmp5Result = onPress(application[27])(obj);
+  obj[1] = width;
+  obj[2] = ["embedded_cover"];
+  let tmp8Result = onPress(application[27])(obj);
   if (null != item.overrideImageUrl) {
-    obj = { state: "loaded", url: item.overrideImageUrl };
-    tmp5Result = obj;
+    obj = { state: "loaded", url: null };
+    obj[1] = item.overrideImageUrl;
+    tmp8Result = obj;
   }
   const items = [onPress, application, sectionName];
-  let first = "not-found" === tmp5Result.state;
-  callback = React.useCallback(() => {
+  let first = "not-found" === tmp8Result.state;
+  callback = obj1.useCallback(() => {
     onPress(application, sectionName);
   }, items);
   if (!first) {
-    first = tmp3[0];
+    first = tmp5[0];
   }
   if (first) {
-    let tmp10 = callback2(onPress(application[30]), {});
+    let tmp13 = callback2(tmp7(tmp3[30]), {});
   } else {
-    tmp10 = null;
-    if (!tmp9) {
-      obj1 = {
-        onError() {
-              return callback(true);
-            },
-        style: tmp.activityItemImage
+    tmp13 = null;
+    if (!tmp12) {
+      obj1 = { onError: null, style: null, source: null, resizeMode: "cover" };
+      obj1[0] = function onError() {
+        return callback(true);
       };
-      const obj2 = { uri: tmp5Result.url };
-      obj1.source = obj2;
-      obj1.resizeMode = "cover";
-      tmp10 = callback2(onPress(application[31]), obj1);
+      obj1[1] = tmp.activityItemImage;
+      obj2 = { uri: null };
+      obj2[0] = tmp8Result.url;
+      obj1[2] = obj2;
+      tmp13 = callback2(tmp7(tmp3[31]), obj1);
     }
   }
-  const obj3 = { style: tmp.activityItemContainer, onPress: callback };
-  const obj4 = {};
+  const obj3 = { style: tmp.activityItemContainer, onPress: callback, children: null };
   const items1 = [tmp.activityImageContainer, ];
-  let tmp20 = null != imageWidth;
-  if (tmp20) {
-    tmp20 = null != imageHeight;
+  let tmp18 = null != imageWidth;
+  if (tmp18) {
+    tmp18 = null != imageHeight;
   }
-  if (tmp20) {
-    const obj5 = { width: imageWidth, height: imageHeight };
-    tmp20 = obj5;
+  if (tmp18) {
+    const obj4 = { width: null, height: null };
+    obj4[0] = imageWidth;
+    obj4[1] = imageHeight;
+    tmp18 = obj4;
   }
-  items1[1] = tmp20;
-  obj4.style = items1;
-  const items2 = [tmp10, ];
+  const obj5 = { style: items1, children: null };
+  items1[1] = tmp18;
+  const items2 = [tmp13, ];
   if (isEmbeddedAppResult) {
-    const obj6 = {};
-    const tmp24 = onPress(application[33]);
-    obj6.labelType = sectionName(application[19]).getShelfBadgeTypeIfActive(application);
-    isEmbeddedAppResult = callback2(tmp24, obj6);
-    const obj11 = sectionName(application[19]);
+    const obj6 = { labelType: null };
+    const tmp7Result = tmp7(tmp3[33]);
+    obj6[0] = tmp2(tmp3[19]).getShelfBadgeTypeIfActive(application);
+    isEmbeddedAppResult = callback2(tmp7Result, obj6);
+    const tmp2Result = tmp2(tmp3[19]);
   }
   items2[1] = isEmbeddedAppResult;
-  obj4.children = items2;
-  const items3 = [closure_20(View, obj4), ];
-  const tmp17 = closure_20;
-  const tmp18 = closure_20;
-  const tmp19 = View;
-  const tmp5 = onPress(application[27]);
-  tmp9 = "loading" === tmp5Result.state || null == tmp5Result.url;
-  const obj8 = { variant: "heading-sm/bold", color: "mobile-text-heading-primary", children: application.name };
-  items3[1] = callback2(View, { style: tmp.activityDetailsContainer, children: callback2(sectionName(application[16]).Text, obj8) });
-  obj3.children = items3;
-  return tmp17(sectionName(application[32]).PressableScale, obj3);
+  obj5[1] = items2;
+  const items3 = [closure_20(closure_6, obj5), ];
+  tmp12 = "loading" === tmp8Result.state || null == tmp8Result.url;
+  const tmp8 = onPress(application[27]);
+  items3[1] = callback2(closure_6, { style: tmp.activityDetailsContainer, children: callback2(sectionName(application[16]).Text, obj8) });
+  obj3[2] = items3;
+  return closure_20(sectionName(application[32]).PressableScale, obj3);
 }
 function Divider() {
-  const rect = importDefault(1557)();
-  const style = [_createForOfIteratorHelperLoose().divider, { marginLeft: -DEFAULT_CONTENT_PADDING - rect.left, marginRight: -DEFAULT_CONTENT_PADDING - rect.right }];
-  return callback2(View, { style });
+  const rect = importDefault(1581)();
+  const style = [createCacheKey().divider, { marginLeft: -DEFAULT_CONTENT_PADDING - rect.left, marginRight: -DEFAULT_CONTENT_PADDING - rect.right }];
+  return callback2(closure_6, { style });
 }
 function RecommendationSectionHeader(arg0) {
   let children;
   let index;
   ({ index, children } = arg0);
-  let obj = { accessibilityRole: "header", variant: "heading-lg/bold", color: "mobile-text-heading-primary" };
-  const items = [_createForOfIteratorHelperLoose().sectionHeader, ];
-  let tmp3 = null;
+  const style = [createCacheKey().sectionHeader, ];
+  let obj = null;
   if (0 !== index) {
     obj = { marginTop: 24 };
-    tmp3 = obj;
   }
-  items[1] = tmp3;
-  obj.style = items;
-  obj.children = children;
-  return closure_19(require(4161) /* Text */.Text, obj);
+  style[1] = obj;
+  return closure_19(require(4185) /* Text */.Text, { accessibilityRole: "header", variant: "heading-lg/bold", color: "mobile-text-heading-primary", style, children });
 }
-function getRecommendationItemsWithViewAll(arr, sectionName, section) {
+function getRecommendationItemsWithViewAll(arr) {
+  const _require = arg1;
   let COLLAPSED_LIST_ITEM_MAX = arg3;
-  const _require = sectionName;
   if (arg3 === undefined) {
-    COLLAPSED_LIST_ITEM_MAX = _require(11257).COLLAPSED_LIST_ITEM_MAX;
+    COLLAPSED_LIST_ITEM_MAX = _require(11281).COLLAPSED_LIST_ITEM_MAX;
   }
-  const importDefault = tmp;
+  const importDefault = tmp3;
   let bound;
   let dependencyMap;
   let items;
@@ -512,43 +517,50 @@ function getRecommendationItemsWithViewAll(arr, sectionName, section) {
   } else {
     const _Math = Math;
     bound = Math.min(length, COLLAPSED_LIST_ITEM_MAX);
-    dependencyMap = tmp13;
+    dependencyMap = tmp12;
     items = [];
-    let obj = { type: _require(11237).AppLauncherHomeListItemType.RECOMMENDATION_SECTION_HEADER, section, sectionName, numItems: length, numVisibleItems: bound };
+    let obj = { type: null, section: null, sectionName: null, numItems: null, numVisibleItems: null };
+    obj[0] = _require(11261).AppLauncherHomeListItemType.RECOMMENDATION_SECTION_HEADER;
+    obj[1] = arg2;
+    obj[2] = arg1;
+    obj[3] = length;
+    obj[4] = bound;
     items.push(obj);
     const substr = arr.slice(0, bound);
-    const item = substr.forEach((application, sectionPosition) => {
-      const obj = { type: sectionName(_undefined[44]).AppLauncherHomeListItemType.RECOMMENDATION_APP, application: application.application, showsPromoted: application.showsPromoted, isFirstRow: 0 === sectionPosition };
-      let tmp2 = sectionPosition === bound - 1;
+    const item = substr.forEach((application) => {
+      const obj = { type: callback(_undefined[44]).AppLauncherHomeListItemType.RECOMMENDATION_APP, application: application.application, showsPromoted: application.showsPromoted, isFirstRow: 0 === arg1, isLastRow: null, sectionName: null, sectionPosition: null, sectionOverallPosition: null };
+      let tmp2 = arg1 === bound - 1;
       if (tmp2) {
         tmp2 = !_undefined;
       }
-      obj.isLastRow = tmp2;
-      obj.sectionName = sectionName;
-      obj.sectionPosition = sectionPosition;
-      obj.sectionOverallPosition = closure_1;
+      obj[4] = tmp2;
+      obj[5] = callback;
+      obj[6] = arg1;
+      obj[7] = closure_1;
       items.push(obj);
     });
     if (bound < length) {
-      obj = { type: _require(11237).AppLauncherHomeListItemType.VIEW_ALL, applications: arr.map((application) => application.application) };
+      obj = { type: null, applications: null, promotedApplicationIds: null, sectionName: null, sectionOverallPosition: null, title: null };
+      obj[0] = _require(11261).AppLauncherHomeListItemType.VIEW_ALL;
+      obj[1] = arr.map((application) => application.application);
       const _Set = Set;
       const set = new Set();
-      obj.promotedApplicationIds = arr.reduce((add, showsPromoted) => {
+      obj[2] = arr.reduce((add, showsPromoted) => {
         if (showsPromoted.showsPromoted) {
           add.add(showsPromoted.application.id);
         }
         return add;
       }, set);
-      obj.sectionName = sectionName;
-      obj.sectionOverallPosition = tmp;
-      obj.title = section;
+      obj[3] = arg1;
+      obj[4] = tmp3;
+      obj[5] = arg2;
       items.push(obj);
     }
     return items;
   }
 }
-let View = get_ActivityIndicator.View;
-({ useContextIndexState: closure_8, useUserIndexState: closure_9 } = _isNativeReflectConstruct);
+({ View: closure_6, StyleSheet } = get_ActivityIndicator);
+({ useContextIndexState: metroImportAll, useUserIndexState: c9 } = getIndexKey);
 const DEFAULT_CONTENT_PADDING = APP_LAUNCHER_BUILT_IN_SECTION_ICON.DEFAULT_CONTENT_PADDING;
 let closure_15 = APP_LAUNCHER_BUILT_IN_SECTION_ICON.FLASH_LIST_ITEM_IMPRESSION_VIEWABILITY_CONFIG;
 ({ AnalyticEvents: closure_16, Permissions: closure_17 } = ME);
@@ -556,104 +568,146 @@ let closure_15 = APP_LAUNCHER_BUILT_IN_SECTION_ICON.FLASH_LIST_ITEM_IMPRESSION_V
 let c22 = 1.7777777777777777;
 let closure_23 = [];
 const APP_LAUNCHER_IN_TEXT = require("ApplicationCollectionSurface").ApplicationCollectionSurface.APP_LAUNCHER_IN_TEXT;
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.MOBILE_KEYBOARD_PANEL_BACKGROUND, flex: 1 };
-_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
-let obj1 = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.MOBILE_KEYBOARD_PANEL_BACKGROUND, position: "absolute", top: -16, left: 0, right: 0, height: 16 };
-_createForOfIteratorHelperLoose.topBackgroundFill = obj1;
-_createForOfIteratorHelperLoose.sectionHeader = { marginBottom: 8, marginTop: 8 };
-_createForOfIteratorHelperLoose.list = { paddingHorizontal: DEFAULT_CONTENT_PADDING, backgroundColor: require("_createForOfIteratorHelperLoose").colors.MOBILE_KEYBOARD_PANEL_BACKGROUND };
-_createForOfIteratorHelperLoose.searchBarContainer = { paddingHorizontal: DEFAULT_CONTENT_PADDING, paddingBottom: DEFAULT_CONTENT_PADDING };
-let obj2 = { paddingHorizontal: DEFAULT_CONTENT_PADDING, backgroundColor: require("_createForOfIteratorHelperLoose").colors.MOBILE_KEYBOARD_PANEL_BACKGROUND };
-_createForOfIteratorHelperLoose.divider = { borderColor: require("_createForOfIteratorHelperLoose").colors.BORDER_STRONG, borderTopWidth: 1, marginTop: require("_createForOfIteratorHelperLoose").space.PX_24 };
-let obj4 = { overflow: "hidden", flexDirection: "row", alignItems: "center", gap: require("_createForOfIteratorHelperLoose").space.PX_4 };
-_createForOfIteratorHelperLoose.appRowLabelWithPromotedContainer = obj4;
-_createForOfIteratorHelperLoose.appRowLabelWithPromotedTextContainer = { flexShrink: 1 };
-let obj5 = { alignSelf: "center", justifyContent: "center", paddingVertical: 2, paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_4, backgroundColor: require("_createForOfIteratorHelperLoose").colors.INTERACTIVE_BACKGROUND_ACTIVE, borderRadius: require("_createForOfIteratorHelperLoose").radii.lg };
-_createForOfIteratorHelperLoose.promotedLabel = obj5;
-let obj6 = { borderRadius: require("_createForOfIteratorHelperLoose").radii.md, overflow: "hidden", height: "100%", backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_APP_LAUNCHER_CARD_DEFAULT, borderWidth: 1, borderColor: require("_createForOfIteratorHelperLoose").colors.BORDER_SUBTLE };
-_createForOfIteratorHelperLoose.activityItemContainer = obj6;
-let obj7 = { justifyContent: "center", alignItems: "center", height: 120, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWEST, borderBottomWidth: get_ActivityIndicator.StyleSheet.hairlineWidth, borderBottomColor: require("_createForOfIteratorHelperLoose").colors.BORDER_SUBTLE };
-_createForOfIteratorHelperLoose.activityImageContainer = obj7;
-let obj8 = { padding: require("_createForOfIteratorHelperLoose").space.PX_12, flexGrow: 1, flexShrink: 1 };
-_createForOfIteratorHelperLoose.activityDetailsContainer = obj8;
-_createForOfIteratorHelperLoose.activityItemTupleContainer = { flexDirection: "row", gap: 12 };
-_createForOfIteratorHelperLoose.activityItemTupleShelfItemContainer = { width: "50%", flexShrink: 1 };
-_createForOfIteratorHelperLoose.activityItemImage = { height: "100%", width: "100%" };
-_createForOfIteratorHelperLoose.submittingOverlay = { position: "absolute", top: 0, left: 0, height: "100%", width: "100%" };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-let obj3 = { borderColor: require("_createForOfIteratorHelperLoose").colors.BORDER_STRONG, borderTopWidth: 1, marginTop: require("_createForOfIteratorHelperLoose").space.PX_24 };
+createCacheKey = { container: null, topBackgroundFill: null, sectionHeader: null, list: null, searchBarContainer: null, divider: null, appRowLabelWithPromotedContainer: null, appRowLabelWithPromotedTextContainer: null, promotedLabel: null, activityItemContainer: null, activityImageContainer: null, activityDetailsContainer: null, activityItemTupleContainer: null, activityItemTupleShelfItemContainer: null, activityItemImage: null, submittingOverlay: null };
+createCacheKey = { backgroundColor: require("Themes").colors.MOBILE_KEYBOARD_PANEL_BACKGROUND, flex: 1 };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { backgroundColor: require("Themes").colors.MOBILE_KEYBOARD_PANEL_BACKGROUND, position: "absolute", top: -16, left: 0, right: 0, height: 16 };
+createCacheKey[2] = { marginBottom: 8, marginTop: 8 };
+let obj1 = { backgroundColor: require("Themes").colors.MOBILE_KEYBOARD_PANEL_BACKGROUND, position: "absolute", top: -16, left: 0, right: 0, height: 16 };
+createCacheKey[3] = { paddingHorizontal: DEFAULT_CONTENT_PADDING, backgroundColor: require("Themes").colors.MOBILE_KEYBOARD_PANEL_BACKGROUND };
+createCacheKey[4] = { paddingHorizontal: DEFAULT_CONTENT_PADDING, paddingBottom: DEFAULT_CONTENT_PADDING };
+let obj2 = { paddingHorizontal: DEFAULT_CONTENT_PADDING, backgroundColor: require("Themes").colors.MOBILE_KEYBOARD_PANEL_BACKGROUND };
+createCacheKey[5] = { borderColor: require("Themes").colors.BORDER_STRONG, borderTopWidth: 1, marginTop: require("Themes").space.PX_24 };
+createCacheKey[6] = { overflow: "hidden", flexDirection: "row", alignItems: "center", gap: require("Themes").space.PX_4 };
+createCacheKey[7] = { flexShrink: 1 };
+let obj3 = { borderColor: require("Themes").colors.BORDER_STRONG, borderTopWidth: 1, marginTop: require("Themes").space.PX_24 };
+createCacheKey[8] = { alignSelf: "center", justifyContent: "center", paddingVertical: 2, paddingHorizontal: require("Themes").space.PX_4, backgroundColor: require("Themes").colors.INTERACTIVE_BACKGROUND_ACTIVE, borderRadius: require("Themes").radii.lg };
+let obj4 = { alignSelf: "center", justifyContent: "center", paddingVertical: 2, paddingHorizontal: require("Themes").space.PX_4, backgroundColor: require("Themes").colors.INTERACTIVE_BACKGROUND_ACTIVE, borderRadius: require("Themes").radii.lg };
+createCacheKey[9] = { borderRadius: require("Themes").radii.md, overflow: "hidden", height: "100%", backgroundColor: require("Themes").colors.BACKGROUND_APP_LAUNCHER_CARD_DEFAULT, borderWidth: 1, borderColor: require("Themes").colors.BORDER_SUBTLE };
+let obj5 = { borderRadius: require("Themes").radii.md, overflow: "hidden", height: "100%", backgroundColor: require("Themes").colors.BACKGROUND_APP_LAUNCHER_CARD_DEFAULT, borderWidth: 1, borderColor: require("Themes").colors.BORDER_SUBTLE };
+createCacheKey[10] = { justifyContent: "center", alignItems: "center", height: 120, backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOWEST, borderBottomWidth: StyleSheet.hairlineWidth, borderBottomColor: require("Themes").colors.BORDER_SUBTLE };
+let obj6 = { justifyContent: "center", alignItems: "center", height: 120, backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOWEST, borderBottomWidth: StyleSheet.hairlineWidth, borderBottomColor: require("Themes").colors.BORDER_SUBTLE };
+createCacheKey[11] = { padding: require("Themes").space.PX_12, flexGrow: 1, flexShrink: 1 };
+createCacheKey[12] = { flexDirection: "row", gap: 12 };
+createCacheKey[13] = { width: "50%", flexShrink: 1 };
+createCacheKey[14] = { height: "100%", width: "100%" };
+createCacheKey[15] = { position: "absolute", top: 0, left: 0, height: "100%", width: "100%" };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let obj7 = { padding: require("Themes").space.PX_12, flexGrow: 1, flexShrink: 1 };
 let result = require("get ActivityIndicator").fileFinishedImporting("modules/app_launcher/native/screens/home/AppLauncherHomeScreen.tsx");
 
 export default function AppLauncherHomeScreen(route) {
+  let bottomVisibilityInsetRef;
+  let c23;
+  let c32;
+  let flashListRef;
+  let frecencyCommands;
+  let frecentApps;
   let hasViewedActivityItem;
   let hasViewedLearnMoreItem;
   let loading;
-  let showNoPermsState;
-  let showsEmptyState;
+  let sectionDescriptors;
+  let tmp51;
+  let tmp64;
   const params = route.route.params;
-  let context = params.context;
+  const context = params.context;
   const initialSearchQuery = params.initialSearchQuery;
+  let entrypoint = initialSearchQuery;
   const navigation = route.navigation;
+  let c2 = navigation;
+  let dependencyMap;
+  frecentApps = undefined;
+  let React;
+  let appsInThisServer;
+  let isActivitiesInTextEnabled;
+  let PREVIEW;
+  let stateFromStores1;
+  let memo3;
+  let memo4;
+  let c12;
+  let c13;
+  let memo2;
+  let memo8;
+  frecencyCommands = undefined;
+  let memo1;
+  sectionDescriptors = undefined;
+  let memo;
+  let callback3;
+  let clickOnHomeActivityOpensAppDetails;
+  let ref;
+  c23 = undefined;
+  let memo9;
+  let createCacheKey;
+  let callback5;
+  let closure_27;
+  let closure_28;
   let pinnedSearchBarBottomBorder;
   let ref1;
   let c31;
-  let closure_32;
-  let stateFromStores;
+  c32 = undefined;
+  let stateFromStores3;
   let callback6;
   let trackAppLauncherHomeItemImpression;
   let callback8;
-  let obj = context(handleViewableItemsChanged[36]);
+  let obj = context(11260);
   const viewableAppLauncherHomeItems = obj.useViewableAppLauncherHomeItems();
-  handleViewableItemsChanged = viewableAppLauncherHomeItems.handleViewableItemsChanged;
+  const handleViewableItemsChanged = viewableAppLauncherHomeItems.handleViewableItemsChanged;
+  dependencyMap = handleViewableItemsChanged;
   ({ hasViewedActivityItem, hasViewedLearnMoreItem } = viewableAppLauncherHomeItems);
-  let tmp2 = initialSearchQuery(handleViewableItemsChanged[37])(hasViewedActivityItem);
-  let tmp3 = initialSearchQuery(handleViewableItemsChanged[37])(hasViewedLearnMoreItem);
-  let callback = tmp3;
-  let tmp4 = _createForOfIteratorHelperLoose();
-  const React = tmp4;
-  let tmp5 = initialSearchQuery(handleViewableItemsChanged[38])();
-  const View = tmp5;
-  let obj1 = context(handleViewableItemsChanged[39]);
+  const tmp5 = entrypoint(8118)(hasViewedActivityItem);
+  const tmp6 = entrypoint(8118)(hasViewedLearnMoreItem);
+  frecentApps = tmp6;
+  let tmp7 = createCacheKey();
+  React = tmp7;
+  let tmp8 = entrypoint(8827)();
+  appsInThisServer = tmp8;
+  let obj1 = context(10924);
   const requiredAppLauncherContext = obj1.useRequiredAppLauncherContext();
   const chatInputRef = requiredAppLauncherContext.chatInputRef;
+  isActivitiesInTextEnabled = chatInputRef;
   const keyboardCloseReasonRef = requiredAppLauncherContext.keyboardCloseReasonRef;
+  PREVIEW = keyboardCloseReasonRef;
   const width = requiredAppLauncherContext.width;
-  let entrypoint = requiredAppLauncherContext.entrypoint;
+  stateFromStores1 = width;
+  entrypoint = requiredAppLauncherContext.entrypoint;
+  memo3 = entrypoint;
   const onActivityItemSelected = requiredAppLauncherContext.onActivityItemSelected;
-  const size = initialSearchQuery(handleViewableItemsChanged[40])();
-  let closure_12 = tmp7;
+  memo4 = onActivityItemSelected;
+  const size = entrypoint(1474)();
+  c12 = tmp10;
+  let obj2 = React;
   let items = [entrypoint];
-  let effect = React.useEffect(() => {
-    if (entrypoint === context(handleViewableItemsChanged[41]).AppLauncherEntrypoint.VOICE) {
-      const result = navigation(handleViewableItemsChanged[42]).dismissNewActivityIndicator();
-      const obj = navigation(handleViewableItemsChanged[42]);
+  const effect = React.useEffect(() => {
+    if (memo3 === context(_undefined2[41]).AppLauncherEntrypoint.VOICE) {
+      const result = _undefined(_undefined2[42]).dismissNewActivityIndicator();
+      const obj = _undefined(_undefined2[42]);
     }
   }, items);
   let items1 = [chatInputRef, keyboardCloseReasonRef];
-  let items2 = [context, entrypoint, navigation];
-  callback = React.useCallback(() => {
-    keyboardCloseReasonRef.current = context(handleViewableItemsChanged[39]).AppLauncherKeyboardCloseReason.COMMAND;
-    const current = chatInputRef.current;
-    if (null != current) {
+  const items2 = [context, entrypoint, navigation];
+  const callback = React.useCallback(() => {
+    PREVIEW.current = context(_undefined2[39]).AppLauncherKeyboardCloseReason.COMMAND;
+    const current = isActivitiesInTextEnabled.current;
+    if (current != null) {
       current.closeCustomKeyboard();
     }
   }, items1);
-  const callback1 = React.useCallback((application, sectionName) => {
-    let obj = context(handleViewableItemsChanged[23]);
-    obj = { location: context(handleViewableItemsChanged[29]).ApplicationCommandTriggerLocations.APP_LAUNCHER_HOME };
+  const callback1 = React.useCallback((application) => {
+    let obj = context(_undefined2[23]);
+    obj = { location: context(_undefined2[29]).ApplicationCommandTriggerLocations.APP_LAUNCHER_HOME, application: null, navigation: null, context: null, sectionName: null, entrypoint: null };
     let FAKE_BUILT_IN_APP = application.application;
-    if (null == FAKE_BUILT_IN_APP) {
-      FAKE_BUILT_IN_APP = context(handleViewableItemsChanged[19]).FAKE_BUILT_IN_APP;
+    if (FAKE_BUILT_IN_APP == null) {
+      FAKE_BUILT_IN_APP = context(_undefined2[19]).FAKE_BUILT_IN_APP;
     }
-    obj.application = FAKE_BUILT_IN_APP;
-    obj.navigation = navigation;
-    obj.context = context;
-    obj.sectionName = sectionName;
-    obj.entrypoint = entrypoint;
+    obj[1] = FAKE_BUILT_IN_APP;
+    obj[2] = c2;
+    obj[3] = context;
+    obj[4] = arg1;
+    obj[5] = memo3;
     const result = obj.handleApplicationSelected(obj);
   }, items2);
-  let items3 = [context, entrypoint, navigation];
+  c13 = callback1;
+  const items3 = [context, entrypoint, navigation];
   const callback2 = React.useCallback((navigates) => {
     let sectionName;
     let shelfData;
@@ -662,856 +716,830 @@ export default function AppLauncherHomeScreen(route) {
     if (flag === undefined) {
       flag = true;
     }
-    let obj = context(handleViewableItemsChanged[23]);
-    obj = { location: context(handleViewableItemsChanged[29]).ApplicationCommandTriggerLocations.APP_LAUNCHER_HOME, application: shelfData.application, navigation, context, sectionName, navigates: flag, entrypoint };
+    let obj = context(_undefined2[23]);
+    obj = { location: context(_undefined2[29]).ApplicationCommandTriggerLocations.APP_LAUNCHER_HOME, application: shelfData.application, navigation: c2, context, sectionName, navigates: flag, entrypoint: memo3 };
     const result = obj.handleApplicationSelected(obj);
   }, items3);
-  const tmp12 = (function useHomeData(context) {
-    let frecencyCommands;
-    let loading;
-    let sectionDescriptors;
-    context = context.context;
-    const entrypoint = context.entrypoint;
-    let c2;
-    let c3;
-    let frecentApps;
-    let c5;
-    let appsInThisServer;
-    let isActivitiesInTextEnabled;
-    let c8;
-    let stateFromStores;
-    let memo3;
-    let memo4;
-    let c12;
-    let c13;
-    let c14;
-    let memo6;
-    let memo7;
-    let obj = context(handleViewableItemsChanged[73]);
-    const fetchDeveloperActivityShelfItems = obj.useFetchDeveloperActivityShelfItems();
-    obj = {};
-    let guild_id;
-    if ("channel" === context.type) {
-      guild_id = context.channel.guild_id;
+  memo2 = callback2;
+  c2 = undefined;
+  dependencyMap = undefined;
+  frecentApps = undefined;
+  React = undefined;
+  appsInThisServer = undefined;
+  isActivitiesInTextEnabled = undefined;
+  PREVIEW = undefined;
+  stateFromStores1 = undefined;
+  memo3 = undefined;
+  memo4 = undefined;
+  c12 = undefined;
+  c13 = undefined;
+  memo2 = undefined;
+  memo8 = undefined;
+  frecencyCommands = undefined;
+  let obj3 = context(11291);
+  const fetchDeveloperActivityShelfItems = obj3.useFetchDeveloperActivityShelfItems();
+  let guild_id;
+  if ("channel" === context.type) {
+    guild_id = context.channel.guild_id;
+  }
+  const tmp16Result = entrypoint(11213)({ guildId: guild_id });
+  c2 = tmp16Result;
+  const tmp19 = entrypoint === context(8017).AppLauncherEntrypoint.VOICE;
+  dependencyMap = tmp19;
+  let tmp20 = entrypoint(11292)({ context, onlyActivityApps: tmp19 });
+  ({ frecencyCommands, frecentApps } = tmp20);
+  ({ sectionDescriptors, loading } = tmp20);
+  const tmp21 = entrypoint === context(8017).AppLauncherEntrypoint.TEXT;
+  React = tmp21;
+  appsInThisServer = tmp4(11296)({ context }).appsInThisServer;
+  const items4 = [appsInThisServer, tmp21];
+  memo = obj2.useMemo(() => {
+    const intl = context(_undefined2[17]).intl;
+    const mapped = c5 ? appsInThisServer : c23.map((application) => ({ application: application.application }));
+    return callback8(mapped, "in_this_server", intl.string(context(_undefined2[17]).t.oJyzCu), context(_undefined2[67]).IN_THIS_SERVER_ITEM_MAX);
+  }, items4);
+  const items5 = [frecentApps];
+  memo1 = obj2.useMemo(() => frecentApps.map((applicationId) => ({ type: outer1_0(outer1_3[44]).AppLauncherHomeListItemType.APP, applicationId: applicationId.id, section: applicationId, isFirstRow: 0 === arg1, isLastRow: arg1 === length.length - 1, sectionName: "recents" })), items5);
+  const items6 = [tmp21, frecentApps];
+  memo2 = obj2.useMemo(() => {
+    let tmp = !c5;
+    if (c5) {
+      tmp = !frecentApps.some((application) => null != application.application);
     }
-    obj.guildId = guild_id;
-    const tmp2Result = initialSearchQuery(handleViewableItemsChanged[74])(obj);
-    c2 = tmp2Result;
-    const tmp4 = entrypoint === context(handleViewableItemsChanged[41]).AppLauncherEntrypoint.VOICE;
-    c3 = tmp4;
-    let tmp5 = initialSearchQuery(handleViewableItemsChanged[75])({ context, onlyActivityApps: tmp4 });
-    frecentApps = tmp5.frecentApps;
-    ({ frecencyCommands, sectionDescriptors, loading } = tmp5);
-    const tmp6 = entrypoint === context(handleViewableItemsChanged[41]).AppLauncherEntrypoint.TEXT;
-    c5 = tmp6;
-    appsInThisServer = initialSearchQuery(handleViewableItemsChanged[76])({ context }).appsInThisServer;
-    let items = [appsInThisServer, tmp6];
-    let items1 = [frecentApps];
-    const memo = tmp4.useMemo(() => {
-      const intl = context(handleViewableItemsChanged[17]).intl;
-      const mapped = c5 ? appsInThisServer : closure_23.map((application) => ({ application: application.application }));
-      return callback8(mapped, "in_this_server", intl.string(context(handleViewableItemsChanged[17]).t.oJyzCu), context(handleViewableItemsChanged[67]).IN_THIS_SERVER_ITEM_MAX);
-    }, items);
-    const items2 = [tmp6, frecentApps];
-    const memo1 = tmp4.useMemo(() => frecentApps.map((applicationId) => ({ type: context(handleViewableItemsChanged[44]).AppLauncherHomeListItemType.APP, applicationId: applicationId.id, section: applicationId, isFirstRow: 0 === arg1, isLastRow: arg1 === outer1_4.length - 1, sectionName: "recents" })), items1);
-    const memo2 = tmp4.useMemo(() => {
-      let tmp = !c5;
-      if (c5) {
-        tmp = !frecentApps.some((application) => null != application.application);
-      }
-      return tmp;
-    }, items2);
-    let tmp2 = initialSearchQuery(handleViewableItemsChanged[74]);
-    let id;
-    if ("channel" === context.type) {
-      id = context.channel.id;
+    return tmp;
+  }, items6);
+  let tmpResult = tmp(8014);
+  let id;
+  if ("channel" === context.type) {
+    id = context.channel.id;
+  }
+  isActivitiesInTextEnabled = tmpResult.useIsActivitiesInTextEnabled(id);
+  const items7 = [isActivitiesInTextEnabled, context, entrypoint];
+  const effect1 = obj2.useEffect(() => {
+    let tmp = isActivitiesInTextEnabled;
+    if (!isActivitiesInTextEnabled) {
+      tmp = entrypoint === context(_undefined2[41]).AppLauncherEntrypoint.VOICE;
     }
-    isActivitiesInTextEnabled = context(handleViewableItemsChanged[77]).useIsActivitiesInTextEnabled(id);
-    const items3 = [isActivitiesInTextEnabled, context, entrypoint];
-    const effect = tmp4.useEffect(() => {
-      let tmp = isActivitiesInTextEnabled;
-      if (!isActivitiesInTextEnabled) {
-        tmp = entrypoint === context(handleViewableItemsChanged[41]).AppLauncherEntrypoint.VOICE;
+    if (tmp) {
+      let obj = context(_undefined2[42]);
+      let guild_id;
+      if ("channel" === context.type) {
+        guild_id = context.channel.guild_id;
       }
-      if (tmp) {
-        let guild_id;
-        let obj = context(handleViewableItemsChanged[42]);
-        obj = {};
-        if ("channel" === context.type) {
-          guild_id = context.channel.guild_id;
+      obj = { guildId: null, force: true };
+      obj[0] = guild_id;
+      const shelf = obj.fetchShelf(obj);
+    }
+  }, items7);
+  tmpResult = tmp(589);
+  const items8 = [memo3];
+  const stateFromStores = tmpResult.useStateFromStores(items8, () => memo3.get("only_show_preview_app_collections"));
+  let tmp4Result = tmp4(11290);
+  const ApplicationCollectionActiveState = tmp(11252).ApplicationCollectionActiveState;
+  if (stateFromStores) {
+    PREVIEW = ApplicationCollectionActiveState.PREVIEW;
+  } else {
+    PREVIEW = tmp4Result.getConfig({ location: "App Launcher Home (Mobile)" }).enabled ? ApplicationCollectionActiveState.NON_STAFF_PREVIEW : ApplicationCollectionActiveState.ACTIVE;
+  }
+  const tmp16 = entrypoint(11213);
+  const items9 = [memo4];
+  stateFromStores1 = context(589).useStateFromStores(items9, () => memo4.getCollections({ surface: memo9, activeState: PREVIEW }));
+  const items10 = [stateFromStores1, tmp19];
+  memo3 = obj2.useMemo(() => {
+    if (_undefined2) {
+      let result = context(_undefined2[19]).ensureRecommendationSectionsOnlyContainActivities(stateFromStores1);
+      const obj = context(_undefined2[19]);
+    } else {
+      result = stateFromStores1;
+    }
+    return result;
+  }, items10);
+  const items11 = [PREVIEW, entrypoint];
+  const effect2 = obj2.useEffect(() => {
+    let obj = context(_undefined2[19]);
+    if (obj.appLauncherShowsRecommendations(entrypoint)) {
+      obj = { surface: null, activeState: null };
+      obj[0] = memo9;
+      obj[1] = PREVIEW;
+      const collections = context(_undefined2[78]).fetchCollections(obj);
+      const tmpResult = context(_undefined2[78]);
+    }
+  }, items11);
+  const items12 = [entrypoint, tmp16Result];
+  memo4 = obj2.useMemo(() => {
+    let diff;
+    let arr = _undefined;
+    if (0 !== _undefined.length) {
+      let tmp7 = _undefined2;
+      if (entrypoint === context(_undefined2[41]).AppLauncherEntrypoint.VOICE) {
+        const items = [];
+        let tmp8 = tmp15;
+        let num = 0;
+        if (0 < arr.length - 1) {
+          do {
+            let sum = num + 1;
+            let tmp2 = _undefined;
+            let obj = { type: null, shelfItem1: null, shelfItem2: null, sectionName: "activities", shelfItem1SectionPosition: null, shelfItem2SectionPosition: null, sectionOverallPosition: 0, isLastTuple: false };
+            let tmp3 = context;
+            let tmp4 = _undefined2;
+            obj[0] = context(_undefined2[44]).AppLauncherHomeListItemType.SHELF_ITEM_TUPLE;
+            obj[1] = _undefined[num];
+            obj[2] = _undefined[sum];
+            obj[4] = num;
+            obj[5] = sum;
+            arr = items.push(obj);
+            num = num + 2;
+            tmp7 = _undefined2;
+            tmp8 = context;
+            arr = _undefined;
+            diff = _undefined.length - 1;
+          } while (num < diff);
         }
-        obj.guildId = guild_id;
-        obj.force = true;
-        const shelf = obj.fetchShelf(obj);
-      }
-    }, items3);
-    const tmp13 = (function useAppCollectionsActiveState() {
-      const items = [entrypoint];
-      const stateFromStores = context(handleViewableItemsChanged[28]).useStateFromStores(items, () => entrypoint.get("only_show_preview_app_collections"));
-      const obj = context(handleViewableItemsChanged[28]);
-      const ApplicationCollectionActiveState = context(handleViewableItemsChanged[72]).ApplicationCollectionActiveState;
-      if (stateFromStores) {
-        return ApplicationCollectionActiveState.PREVIEW;
-      } else if (obj2.getConfig({ location: "App Launcher Home (Mobile)" }).enabled) {
-        return ApplicationCollectionActiveState.NON_STAFF_PREVIEW;
-      } else {
-        return ApplicationCollectionActiveState.ACTIVE;
-      }
-      obj2 = initialSearchQuery(handleViewableItemsChanged[71]);
-    })();
-    c8 = tmp13;
-    let obj3 = context(handleViewableItemsChanged[77]);
-    const items4 = [onActivityItemSelected];
-    stateFromStores = context(handleViewableItemsChanged[28]).useStateFromStores(items4, () => onActivityItemSelected.getCollections({ surface: memo, activeState: c8 }));
-    const items5 = [stateFromStores, tmp4];
-    memo3 = tmp4.useMemo(() => {
-      if (c3) {
-        let result = context(handleViewableItemsChanged[19]).ensureRecommendationSectionsOnlyContainActivities(stateFromStores);
-        const obj = context(handleViewableItemsChanged[19]);
-      } else {
-        result = stateFromStores;
-      }
-      return result;
-    }, items5);
-    const items6 = [tmp13, entrypoint];
-    const effect1 = tmp4.useEffect(() => {
-      let obj = context(handleViewableItemsChanged[19]);
-      if (obj.appLauncherShowsRecommendations(entrypoint)) {
-        obj = { surface: memo, activeState: c8 };
-        const collections = context(handleViewableItemsChanged[78]).fetchCollections(obj);
-        const obj2 = context(handleViewableItemsChanged[78]);
-      }
-    }, items6);
-    const items7 = [entrypoint, tmp2Result];
-    memo4 = tmp4.useMemo(() => {
-      let diff;
-      function getTupleItem(arg0) {
-        let shelfItem1;
-        let shelfItem1SectionPosition;
-        let shelfItem2;
-        let shelfItem2SectionPosition;
-        ({ shelfItem1, shelfItem2, shelfItem1SectionPosition, shelfItem2SectionPosition } = arg0);
-        return { type: context(handleViewableItemsChanged[44]).AppLauncherHomeListItemType.SHELF_ITEM_TUPLE, shelfItem1, shelfItem2, sectionName: "activities", shelfItem1SectionPosition, shelfItem2SectionPosition, sectionOverallPosition: 0, isLastTuple: false };
-      }
-      if (0 !== _undefined.length) {
-        if (entrypoint === context(handleViewableItemsChanged[41]).AppLauncherEntrypoint.VOICE) {
-          const items = [];
-          let num = 0;
-          if (0 < _undefined.length - 1) {
-            do {
-              let sum = num + 1;
-              let obj = {};
-              let tmp2 = _undefined;
-              obj.shelfItem1 = _undefined[num];
-              let tmp3 = _undefined;
-              obj.shelfItem2 = _undefined[sum];
-              obj.shelfItem1SectionPosition = num;
-              obj.shelfItem2SectionPosition = sum;
-              let arr = items.push(getTupleItem(obj));
-              num = num + 2;
-              let tmp5 = _undefined;
-              diff = _undefined.length - 1;
-            } while (num < diff);
-          }
-          if (_undefined.length % 2 === 1) {
-            obj = { shelfItem1: _undefined[_undefined.length - 1], shelfItem2: undefined, shelfItem1SectionPosition: _undefined.length - 1, shelfItem2SectionPosition: undefined };
-            items.push(getTupleItem(obj));
-          }
-          items[items.length - 1].isLastTuple = true;
-          obj = { type: context(handleViewableItemsChanged[44]).AppLauncherHomeListItemType.SECTION_HEADER };
-          const intl = context(handleViewableItemsChanged[17]).intl;
-          obj.section = intl.string(context(handleViewableItemsChanged[17]).t.aeuOoh);
-          obj.sectionName = "activities";
-          obj.numItems = _undefined.length;
-          obj.numVisibleItems = _undefined.length;
-          const items1 = [obj];
-          HermesBuiltin.arraySpread(items, 1);
-          return items1;
+        if (arr.length % 2 === 1) {
+          obj = { type: null, shelfItem1: null, shelfItem2: null, sectionName: "activities", shelfItem1SectionPosition: null, shelfItem2SectionPosition: null, sectionOverallPosition: 0, isLastTuple: false };
+          const diff1 = arr.length - 1;
+          obj[0] = tmp8(tmp7[44]).AppLauncherHomeListItemType.SHELF_ITEM_TUPLE;
+          obj[1] = arr[arr.length - 1];
+          obj[2] = undefined;
+          obj[4] = diff1;
+          obj[5] = undefined;
+          arr = items.push(obj);
         }
+        items[items.length - 1].isLastTuple = true;
+        obj = { type: null, section: null, sectionName: "activities", numItems: null, numVisibleItems: null };
+        obj[0] = tmp8(tmp7[44]).AppLauncherHomeListItemType.SECTION_HEADER;
+        const intl = tmp8(tmp7[17]).intl;
+        obj[1] = intl.string(tmp8(tmp7[17]).t.aeuOoh);
+        ({ length: obj3[3], length: obj3[4] } = arr);
+        const items1 = [obj];
+        HermesBuiltin.arraySpread(items, 1);
+        return items1;
       }
-      return [];
-    }, items7);
-    const tmp18 = keyboardCloseReasonRef(context, true, false);
-    c12 = tmp18;
-    const tmp19 = width(true, false);
-    c13 = tmp19;
-    let result = tmp18.result;
+      tmp15 = context;
+    }
+    return [];
+  }, items12);
+  const tmp33 = PREVIEW(context, true, false);
+  c12 = tmp33;
+  const tmp34 = stateFromStores1(true, false);
+  c13 = tmp34;
+  let result = tmp33.result;
+  let sections;
+  if (result != null) {
+    sections = result.sections;
+  }
+  const items13 = [sections, ];
+  let result2 = tmp34.result;
+  let sections1;
+  if (result2 != null) {
+    sections1 = result2.sections;
+  }
+  items13[1] = sections1;
+  let memo5 = obj2.useMemo(() => {
+    const result = _undefined4.result;
     let sections;
-    if (null != result) {
+    if (result != null) {
       sections = result.sections;
     }
-    const items8 = [sections, ];
-    let result2 = tmp19.result;
+    if (sections == null) {
+      sections = {};
+    }
+    const result2 = _undefined5.result;
     let sections1;
-    if (null != result2) {
+    if (result2 != null) {
       sections1 = result2.sections;
     }
-    items8[1] = sections1;
-    const memo5 = tmp4.useMemo(() => {
-      function hasCommands(sections) {
-        const values = Object.values(sections);
-        return values.some((commands) => Object.keys(commands.commands).length > 0);
-      }
-      const result = _undefined2.result;
-      let sections;
-      if (null != result) {
-        sections = result.sections;
-      }
-      if (null == sections) {
-        sections = {};
-      }
-      const result2 = _undefined3.result;
-      let sections1;
-      if (null != result2) {
-        sections1 = result2.sections;
-      }
-      if (null == sections1) {
-        sections1 = {};
-      }
-      return hasCommands(sections) || hasCommands(sections1);
-    }, items8);
-    const obj4 = context(handleViewableItemsChanged[28]);
-    const items9 = [closure_12];
-    let channel = null;
-    const stateFromStores1 = context(handleViewableItemsChanged[28]).useStateFromStores(items9, () => {
-      let tmp = "channel" === context.type;
-      if (tmp) {
-        const channel = context.channel;
-        let isDMResult = channel.isDM();
-        if (!isDMResult) {
-          const channel2 = context.channel;
-          isDMResult = channel2.isMultiUserDM();
-        }
-        if (!isDMResult) {
-          isDMResult = _undefined2.can(frecencyUsedAppList.USE_APPLICATION_COMMANDS, context.channel);
-        }
-        tmp = isDMResult;
-      }
-      return tmp;
-    });
-    if ("channel" === context.type) {
-      channel = context.channel;
+    if (sections1 == null) {
+      sections1 = {};
     }
-    let tmp26 = memo5;
-    if (memo5) {
-      tmp26 = memo2;
+    let values = Object.values(sections);
+    let someResult = values.some((commands) => Object.keys(commands.commands).length > 0);
+    if (!someResult) {
+      const _Object = Object;
+      values = Object.values(sections1);
+      someResult = values.some((commands) => Object.keys(commands.commands).length > 0);
     }
-    if (!tmp26) {
-      tmp26 = !stateFromStores1;
+    return someResult;
+  }, items13);
+  const tmpResult1 = context(589);
+  const items14 = [c12];
+  let channel = null;
+  const stateFromStores2 = context(589).useStateFromStores(items14, () => {
+    let tmp2 = "channel" === context.type;
+    if (tmp2) {
+      const channel = tmp.channel;
+      let isDMResult = channel.isDM();
+      if (!isDMResult) {
+        const channel2 = tmp.channel;
+        isDMResult = channel2.isMultiUserDM();
+      }
+      if (!isDMResult) {
+        isDMResult = _undefined4.can(memo1.USE_APPLICATION_COMMANDS, tmp.channel);
+      }
+      tmp2 = isDMResult;
     }
-    let tmp27 = memo2;
+    return tmp2;
+  });
+  if ("channel" === context.type) {
+    channel = context.channel;
+  }
+  if (memo5) {
+    memo5 = memo2;
+  }
+  if (!memo5) {
+    memo5 = !stateFromStores2;
+  }
+  let tmp40 = memo2;
+  if (memo2) {
+    tmp40 = !memo5;
+  }
+  if (tmp40) {
+    let isPrivateResult;
+    if (channel != null) {
+      isPrivateResult = channel.isPrivate();
+    }
+    tmp40 = !isPrivateResult;
+  }
+  if (tmp40) {
+    tmp40 = !tmp19;
+  }
+  if (memo2) {
+    memo2 = memo5;
+  }
+  if (memo2) {
+    let isPrivateResult1;
+    if (channel != null) {
+      isPrivateResult1 = channel.isPrivate();
+    }
+    memo2 = !isPrivateResult1;
+  }
+  if (memo2) {
+    memo2 = !tmp19;
+  }
+  const items15 = [memo3, tmp16Result, memo2];
+  const memo6 = obj2.useMemo(() => {
+    const items = [];
     if (memo2) {
-      tmp27 = !tmp26;
+      return items;
+    } else {
+      const _Set = Set;
+      const set = new Set();
+      let item = memo3.forEach((application_directory_collection_items) => {
+        const prop = application_directory_collection_items.application_directory_collection_items;
+        const item = prop.forEach((type) => {
+          if (type.type === outer1_0(outer1_3[79]).ApplicationDirectoryCollectionItemType.APPLICATION) {
+            set.add(type.application.id);
+          }
+        });
+      });
+      const item1 = _undefined.forEach((application) => {
+        if (!set.has(application.application.id)) {
+          items.push(application);
+        }
+      });
+      return items;
     }
-    if (tmp27) {
-      tmp27 = !(null != channel && channel.isPrivate());
-      const tmp28 = null != channel && channel.isPrivate();
-    }
-    if (tmp27) {
-      tmp27 = !tmp4;
-    }
-    let tmp29 = memo2;
+  }, items15);
+  memo8 = memo6;
+  const items16 = [memo6, memo3, memo2];
+  const memo7 = obj2.useMemo(() => {
+    let items = [];
     if (memo2) {
-      tmp29 = tmp26;
-    }
-    if (tmp29) {
-      tmp29 = !(null != channel && channel.isPrivate());
-      let tmp30 = null != channel && channel.isPrivate();
-    }
-    if (tmp29) {
-      tmp29 = !tmp4;
-    }
-    c14 = tmp29;
-    const items10 = [memo3, tmp2Result, tmp29];
-    memo6 = tmp4.useMemo(() => {
-      const items = [];
-      if (c14) {
-        return items;
-      } else {
-        const _Set = Set;
-        const set = new Set();
-        let item = memo3.forEach((application_directory_collection_items) => {
-          const prop = application_directory_collection_items.application_directory_collection_items;
-          const item = prop.forEach((type) => {
-            if (type.type === context(handleViewableItemsChanged[79]).ApplicationDirectoryCollectionItemType.APPLICATION) {
-              outer1_1.add(type.application.id);
+      items = [];
+    } else {
+      let item = memo3.forEach((title) => {
+        let application_directory_collection_items;
+        let type;
+        ({ type, application_directory_collection_items } = title);
+        if (type === context(11297).ApplicationDirectoryCollectionType.BANNER_CARDS) {
+          const _Math = Math;
+          let obj = { type: null, section: null, sectionName: null, numItems: null, numVisibleItems: null };
+          const bound = Math.min(length, tmp(11281).COLLAPSED_LIST_ITEM_MAX);
+          obj[0] = tmp(11261).AppLauncherHomeListItemType.RECOMMENDATION_SECTION_HEADER;
+          ({ title: obj[1], title: obj[2] } = title);
+          obj[3] = application_directory_collection_items.length;
+          obj[4] = bound;
+          found.push(obj);
+          for (let num3 = 0; num3 < application_directory_collection_items.length; num3 = num3 + 2) {
+            let tmp20 = application_directory_collection_items[num3];
+            let sum = num3 + 1;
+            let tmp22 = num3;
+            if (sum < application_directory_collection_items.length) {
+              let tmp23 = application_directory_collection_items[sum];
+            }
+            let tmp24 = context;
+            let tmp25 = dependencyMap;
+            if (tmp20.type === context(8029).ApplicationDirectoryCollectionItemType.APPLICATION) {
+              let tmp26 = null != tmp20.id && null != tmp20.image_hash;
+              let collectionItemAssetUrl;
+              if (tmp26) {
+                let tmp24Result = tmp24(11298);
+                obj = { itemId: null, hash: null };
+                ({ id: obj3[0], image_hash: obj3[1] } = tmp20);
+                collectionItemAssetUrl = tmp24Result.getCollectionItemAssetUrl(obj);
+              }
+              obj = { application: null, showsPromoted: null, overrideImageUrl: null };
+              obj[0] = tmp20.application;
+              tmp24Result = tmp24(1384);
+              obj[1] = tmp24Result.hasFlag(tmp20.flags, tmp24(11299).ApplicationCollectionItemFlags.PROMOTED);
+              obj[2] = collectionItemAssetUrl;
+              let tmp28;
+              if (null != tmp23) {
+                if (tmp23.type === tmp24(8029).ApplicationDirectoryCollectionItemType.APPLICATION) {
+                  let tmp29 = null != tmp23.id && null != tmp23.image_hash;
+                  let collectionItemAssetUrl1;
+                  if (tmp29) {
+                    let tmp24Result1 = tmp24(11298);
+                    let obj1 = { itemId: null, hash: null };
+                    ({ id: obj7[0], image_hash: obj7[1] } = tmp23);
+                    collectionItemAssetUrl1 = tmp24Result1.getCollectionItemAssetUrl(obj1);
+                  }
+                  let obj2 = { application: null, showsPromoted: null, overrideImageUrl: null };
+                  obj2[0] = tmp23.application;
+                  let tmp24Result2 = tmp24(1384);
+                  obj2[1] = tmp24Result2.hasFlag(tmp23.flags, tmp24(11299).ApplicationCollectionItemFlags.PROMOTED);
+                  obj2[2] = collectionItemAssetUrl1;
+                  tmp28 = obj2;
+                }
+              }
+              let obj3 = { type: null, sectionName: null, sectionOverallPosition: null, item1: null, item2: null, isLastTuple: null, item1SectionPosition: null, item2SectionPosition: null };
+              let tmp31 = found;
+              obj3[0] = tmp24(11261).AppLauncherHomeListItemType.RECOMMENDATION_TUPLE;
+              obj3[1] = title.title;
+              obj3[2] = arg1;
+              obj3[3] = obj;
+              obj3[4] = tmp28;
+              obj3[5] = num3 + 2 >= application_directory_collection_items.length;
+              obj3[6] = num3;
+              let tmp32;
+              if (null != tmp28) {
+                tmp32 = sum;
+              }
+              obj3[7] = tmp32;
+              let arr = found.push(obj3);
+            }
+          }
+        } else if (type === tmp(11297).ApplicationDirectoryCollectionType.EXPANDABLE_LIST) {
+          const prop = title.application_directory_collection_items;
+          const mapped = prop.map((type) => {
+            if (type.type === found(table[79]).ApplicationDirectoryCollectionItemType.APPLICATION) {
+              const obj = { application: null, showsPromoted: null };
+              obj[0] = type.application;
+              obj[1] = tmp(tmp2[83]).hasFlag(type.flags, tmp(tmp2[84]).ApplicationCollectionItemFlags.PROMOTED);
+              return obj;
             }
           });
-        });
-        const item1 = _undefined.forEach((application) => {
-          if (!set.has(application.application.id)) {
-            items.push(application);
-          }
-        });
-        return items;
-      }
-    }, items10);
-    const items11 = [memo6, memo3, tmp29];
-    memo7 = tmp4.useMemo(() => {
-      let items = [];
-      if (c14) {
-        items = [];
-      } else {
-        let item = memo3.forEach((title, sectionOverallPosition) => {
-          let application_directory_collection_items;
-          let type;
-          ({ type, application_directory_collection_items } = title);
-          if (type === context(handleViewableItemsChanged[80]).ApplicationDirectoryCollectionType.BANNER_CARDS) {
-            const _Math = Math;
-            let obj = {};
-            const bound = Math.min(length, context(handleViewableItemsChanged[81]).COLLAPSED_LIST_ITEM_MAX);
-            obj.type = context(handleViewableItemsChanged[44]).AppLauncherHomeListItemType.RECOMMENDATION_SECTION_HEADER;
-            ({ title: obj.section, title: obj.sectionName } = title);
-            obj.numItems = application_directory_collection_items.length;
-            obj.numVisibleItems = bound;
-            found.push(obj);
-            let num4 = 0;
-            if (0 < application_directory_collection_items.length) {
-              do {
-                let tmp21 = application_directory_collection_items[num4];
-                let sum = num4 + 1;
-                if (sum < application_directory_collection_items.length) {
-                  let tmp23 = application_directory_collection_items[sum];
-                }
-                let tmp24 = context;
-                let tmp25 = handleViewableItemsChanged;
-                let tmp26 = tmp20;
-                if (tmp21.type === context(handleViewableItemsChanged[79]).ApplicationDirectoryCollectionItemType.APPLICATION) {
-                  let tmp27 = null != tmp21.id && null != tmp21.image_hash;
-                  let collectionItemAssetUrl;
-                  if (tmp27) {
-                    let tmp29 = context;
-                    let tmp30 = handleViewableItemsChanged;
-                    let obj1 = context(handleViewableItemsChanged[82]);
-                    obj = {};
-                    ({ id: obj3.itemId, image_hash: obj3.hash } = tmp21);
-                    collectionItemAssetUrl = obj1.getCollectionItemAssetUrl(obj);
-                  }
-                  obj = { application: tmp21.application };
-                  let tmp31 = context;
-                  let tmp32 = handleViewableItemsChanged;
-                  let obj5 = context(handleViewableItemsChanged[83]);
-                  obj.showsPromoted = obj5.hasFlag(tmp21.flags, context(handleViewableItemsChanged[84]).ApplicationCollectionItemFlags.PROMOTED);
-                  obj.overrideImageUrl = collectionItemAssetUrl;
-                  let tmp33;
-                  let tmp34 = tmp20;
-                  if (null != tmp23) {
-                    let tmp35 = context;
-                    let tmp36 = handleViewableItemsChanged;
-                    tmp34 = tmp20;
-                    if (tmp23.type === context(handleViewableItemsChanged[79]).ApplicationDirectoryCollectionItemType.APPLICATION) {
-                      let tmp37 = null != tmp23.id && null != tmp23.image_hash;
-                      let collectionItemAssetUrl1;
-                      if (tmp37) {
-                        let tmp39 = context;
-                        let tmp40 = handleViewableItemsChanged;
-                        let obj6 = context(handleViewableItemsChanged[82]);
-                        obj1 = {};
-                        ({ id: obj7.itemId, image_hash: obj7.hash } = tmp23);
-                        collectionItemAssetUrl1 = obj6.getCollectionItemAssetUrl(obj1);
-                      }
-                      let obj2 = { application: tmp23.application };
-                      let tmp41 = context;
-                      let tmp42 = handleViewableItemsChanged;
-                      let obj9 = context(handleViewableItemsChanged[83]);
-                      obj2.showsPromoted = obj9.hasFlag(tmp23.flags, context(handleViewableItemsChanged[84]).ApplicationCollectionItemFlags.PROMOTED);
-                      obj2.overrideImageUrl = collectionItemAssetUrl1;
-                      tmp34 = collectionItemAssetUrl1;
-                      tmp33 = obj2;
-                    }
-                  }
-                  let obj3 = {};
-                  let tmp44 = context;
-                  let tmp45 = handleViewableItemsChanged;
-                  let tmp43 = found;
-                  obj3.type = context(handleViewableItemsChanged[44]).AppLauncherHomeListItemType.RECOMMENDATION_TUPLE;
-                  obj3.sectionName = title.title;
-                  obj3.sectionOverallPosition = sectionOverallPosition;
-                  obj3.item1 = obj;
-                  obj3.item2 = tmp33;
-                  obj3.isLastTuple = num4 + 2 >= application_directory_collection_items.length;
-                  obj3.item1SectionPosition = num4;
-                  let tmp46;
-                  if (null != tmp33) {
-                    tmp46 = sum;
-                  }
-                  obj3.item2SectionPosition = tmp46;
-                  let arr = found.push(obj3);
-                  let tmp48 = collectionItemAssetUrl;
-                  let tmp49 = obj;
-                  let tmp50 = tmp33;
-                  tmp26 = tmp34;
-                }
-                num4 = num4 + 2;
-                tmp20 = tmp26;
-              } while (num4 < application_directory_collection_items.length);
-            }
-          } else if (type === context(handleViewableItemsChanged[80]).ApplicationDirectoryCollectionType.EXPANDABLE_LIST) {
-            const prop = title.application_directory_collection_items;
-            const mapped = prop.map((type) => {
-              if (type.type === context(handleViewableItemsChanged[79]).ApplicationDirectoryCollectionItemType.APPLICATION) {
-                const obj = { application: type.application, showsPromoted: context(handleViewableItemsChanged[83]).hasFlag(type.flags, context(handleViewableItemsChanged[84]).ApplicationCollectionItemFlags.PROMOTED) };
-                return obj;
-              }
+          found = mapped.filter(tmp(1351).isNotNullish);
+          if (tmpResult.hasFlag(title.flags, tmp(11300).ApplicationCollectionFlags.APPENDS_REMAINING_ACTIVITIES)) {
+            const item = outer1_15.forEach((application) => {
+              found.push({ application: application.application, showsPromoted: false });
             });
-            found = mapped.filter(context(handleViewableItemsChanged[66]).isNotNullish);
-            if (obj11.hasFlag(title.flags, context(handleViewableItemsChanged[85]).ApplicationCollectionFlags.APPENDS_REMAINING_ACTIVITIES)) {
-              const item = outer1_15.forEach((application) => {
-                found.push({ application: application.application, showsPromoted: false });
-              });
-            }
-            const push = found.push;
-            const items = [];
-            HermesBuiltin.arraySpread(callback8(found, title.title, title.title, undefined, sectionOverallPosition), 0);
-            HermesBuiltin.apply(items, found);
-            obj11 = context(handleViewableItemsChanged[83]);
           }
-        });
-      }
-      return items;
-    }, items11);
-    const items12 = [entrypoint, memo7, memo4];
-    obj = {
-      list: tmp4.useMemo(() => {
-        let obj = context(handleViewableItemsChanged[19]);
-        if (obj.appLauncherShowsRecommendations(entrypoint)) {
-          obj = { type: context(handleViewableItemsChanged[44]).AppLauncherHomeListItemType.LEARN_MORE };
+          const push = found.push;
           const items = [];
-          let arraySpreadResult = HermesBuiltin.arraySpread(memo7, 0);
-          items[arraySpreadResult] = obj;
-          const sum = arraySpreadResult + 1;
-          return items;
-        } else {
-          const items1 = [];
-          arraySpreadResult = HermesBuiltin.arraySpread(memo4, 0);
-          return items1;
+          HermesBuiltin.arraySpread(callback8(found, title.title, title.title, undefined, arg1), 0);
+          HermesBuiltin.apply(items, found);
+          tmpResult = tmp(1384);
         }
-      }, items12),
-      frecencyCommands,
-      frecencyUsedAppList: memo1,
-      sectionDescriptors,
-      loading,
-      hasNoCommands: memo2,
-      hasNoShelfItems: 0 === tmp2Result.length,
-      showsEmptyState: tmp27,
-      showNoPermsState: tmp29,
-      inThisServerItems: memo
-    };
-    return obj;
-  })({ context, entrypoint });
-  const list = tmp12.list;
-  const frecencyCommands = tmp12.frecencyCommands;
-  const frecencyUsedAppList = tmp12.frecencyUsedAppList;
-  const sectionDescriptors = tmp12.sectionDescriptors;
-  const inThisServerItems = tmp12.inThisServerItems;
-  let items4 = [context, entrypoint, navigation, sectionDescriptors];
-  ({ loading, showsEmptyState, showNoPermsState } = tmp12);
-  const callback3 = React.useCallback((application) => {
-    application = application.application;
-    let obj = context(handleViewableItemsChanged[19]);
-    let tmp = !obj.isEmbeddedApp(application);
-    if (tmp) {
-      tmp = null != sectionDescriptors.find((id) => id.id === application.id);
+      });
     }
-    obj = { location: context(handleViewableItemsChanged[29]).ApplicationCommandTriggerLocations.APP_LAUNCHER_HOME, application, navigation, context: application, installOnDemand: !tmp, sectionName: application.sectionName, entrypoint };
-    const result = context(handleViewableItemsChanged[23]).handleApplicationSelected(obj);
-  }, items4);
-  let obj2 = context(handleViewableItemsChanged[43]);
-  const clickOnHomeActivityOpensAppDetails = obj2.useClickOnHomeActivityOpensAppDetails();
-  let items5 = [clickOnHomeActivityOpensAppDetails, context, entrypoint, tmp3, size.width > size.height, list.length, navigation, onActivityItemSelected, callback2, callback1, callback3, tmp5, tmp4.sectionHeader, width];
-  const callback4 = React.useCallback((item) => {
+    return items;
+  }, items16);
+  frecencyCommands = memo7;
+  const items17 = [entrypoint, memo7, memo4];
+  memo8 = obj2.useMemo(() => {
+    let obj = context(_undefined2[19]);
+    if (obj.appLauncherShowsRecommendations(entrypoint)) {
+      obj = { type: null };
+      obj[0] = tmp(tmp2[44]).AppLauncherHomeListItemType.LEARN_MORE;
+      const items = [];
+      items[HermesBuiltin.arraySpread(frecencyCommands, 0)] = obj;
+      return items;
+    } else {
+      const items1 = [];
+      HermesBuiltin.arraySpread(memo4, 0);
+      return items1;
+    }
+    tmp = context;
+    tmp2 = _undefined2;
+  }, items17);
+  const items18 = [context, entrypoint, navigation, sectionDescriptors];
+  callback3 = obj2.useCallback((application) => {
+    application = application.application;
+    let obj = context(_undefined2[19]);
+    const isEmbeddedAppResult = obj.isEmbeddedApp(application);
+    let tmp4 = !isEmbeddedAppResult;
+    if (!isEmbeddedAppResult) {
+      tmp4 = null != sectionDescriptors.find((id) => id.id === application.id);
+    }
+    obj = { location: tmp(tmp2[29]).ApplicationCommandTriggerLocations.APP_LAUNCHER_HOME, application, navigation: c2, context: application, installOnDemand: !tmp4, sectionName: application.sectionName, entrypoint: memo3 };
+    const result = context(_undefined2[23]).handleApplicationSelected(obj);
+  }, items18);
+  const tmpResult2 = context(589);
+  clickOnHomeActivityOpensAppDetails = context(11262).useClickOnHomeActivityOpensAppDetails();
+  const items19 = [clickOnHomeActivityOpensAppDetails, context, entrypoint, tmp6, size.width > size.height, memo8.length, navigation, onActivityItemSelected, callback2, callback1, callback3, tmp8, tmp7.sectionHeader, width];
+  const callback4 = obj2.useCallback((item) => {
     item = item.item;
     const index = item.index;
     const type = item.type;
-    if (context(handleViewableItemsChanged[44]).AppLauncherHomeListItemType.PLACEHOLDER === type) {
-      let obj = { isFirstRow: 0 === index, isLastRow: index === list.length - 1 };
-      obj = { height: closure_6 };
-      obj.style = obj;
-      return inThisServerItems(initialSearchQuery(handleViewableItemsChanged[45]), obj);
-    } else if (context(handleViewableItemsChanged[44]).AppLauncherHomeListItemType.SECTION_HEADER === type) {
-      const obj1 = { accessibilityRole: "header", variant: "text-lg/bold", color: "mobile-text-heading-primary" };
-      const items = [tmp4.sectionHeader, ];
-      let tmp50 = null;
+    if (context(_undefined2[44]).AppLauncherHomeListItemType.PLACEHOLDER === type) {
+      let obj = { isFirstRow: null, isLastRow: null, style: null };
+      obj[0] = 0 === index;
+      obj[1] = index === memo8.length - 1;
+      obj = { height: null };
+      obj[0] = appsInThisServer;
+      obj[2] = obj;
+      return memo(entrypoint(tmp2[45]), obj);
+    } else if (tmp(tmp2[44]).AppLauncherHomeListItemType.SECTION_HEADER === type) {
+      const items = [_undefined3.sectionHeader, ];
+      let obj1 = null;
       if (0 !== index) {
-        const obj2 = { marginTop: 24 };
-        tmp50 = obj2;
+        obj1 = { marginTop: 24 };
       }
-      items[1] = tmp50;
-      obj1.style = items;
-      obj1.children = item.section;
-      return inThisServerItems(context(handleViewableItemsChanged[16]).Text, obj1);
-    } else if (context(handleViewableItemsChanged[44]).AppLauncherHomeListItemType.SHELF_ITEM === type) {
-      const obj3 = {
-        section: item.section,
-        onPress(shelfData) {
-            outer1_14({ shelfData, sectionName: item.sectionName });
-          }
+      const obj2 = { accessibilityRole: "header", variant: "text-lg/bold", color: "mobile-text-heading-primary", style: null, children: null };
+      items[1] = obj1;
+      obj2[3] = items;
+      obj2[4] = item.section;
+      return memo(tmp(tmp2[16]).Text, obj2);
+    } else if (tmp(tmp2[44]).AppLauncherHomeListItemType.SHELF_ITEM === type) {
+      const obj3 = { section: null, onPress: null, isFirstRow: null, isLastRow: null };
+      obj3[0] = item.section;
+      obj3[1] = function onPress(shelfData) {
+        outer1_14({ shelfData, sectionName: item.sectionName });
       };
-      ({ isFirstRow: obj10.isFirstRow, isLastRow: obj10.isLastRow } = item);
-      return inThisServerItems(pinnedSearchBarBottomBorder, obj3, item.section.application.id);
-    } else if (context(handleViewableItemsChanged[44]).AppLauncherHomeListItemType.SHELF_ITEM_TUPLE === type) {
-      const obj4 = {
-        context: item,
-        sectionName: context(handleViewableItemsChanged[41]).AppLauncherSectionName.ACTIVITIES,
-        onPress(shelfData) {
-            const obj = { shelfData, sectionName: item.sectionName };
-            let tmp3 = !tmp2;
-            if (!outer1_21) {
-              tmp3 = outer1_10 !== context(handleViewableItemsChanged[41]).AppLauncherEntrypoint.VOICE;
-            }
-            obj.navigates = tmp3;
-            outer1_14(obj);
-          }
+      ({ isFirstRow: obj10[2], isLastRow: obj10[3] } = item);
+      return memo(pinnedSearchBarBottomBorder, obj3, item.section.application.id);
+    } else if (tmp(tmp2[44]).AppLauncherHomeListItemType.SHELF_ITEM_TUPLE === type) {
+      const obj4 = { context: null, sectionName: null, onPress: null, usesHandleActivityItemSelected: null, onActivityItemSelected: null, shelfItem1: null, shelfItem2: null, isLastTuple: null, entrypoint: null, containerWidth: null };
+      obj4[0] = item;
+      obj4[1] = tmp(tmp2[41]).AppLauncherSectionName.ACTIVITIES;
+      obj4[2] = function onPress(shelfData) {
+        const obj = { shelfData, sectionName: item.sectionName, navigates: null };
+        let tmp2 = outer1_21;
+        if (!tmp2) {
+          tmp2 = outer1_10 !== context(8017).AppLauncherEntrypoint.VOICE;
+        }
+        obj[2] = tmp2;
+        outer1_14(obj);
       };
-      let tmp37 = !clickOnHomeActivityOpensAppDetails;
-      if (tmp37) {
-        tmp37 = entrypoint === context(handleViewableItemsChanged[41]).AppLauncherEntrypoint.VOICE;
+      let tmp31 = !clickOnHomeActivityOpensAppDetails;
+      if (!clickOnHomeActivityOpensAppDetails) {
+        tmp31 = memo3 === tmp(tmp2[41]).AppLauncherEntrypoint.VOICE;
       }
-      obj4.usesHandleActivityItemSelected = tmp37;
-      obj4.onActivityItemSelected = onActivityItemSelected;
-      ({ shelfItem1: obj9.shelfItem1, shelfItem2: obj9.shelfItem2, isLastTuple: obj9.isLastTuple } = item);
-      obj4.entrypoint = entrypoint;
-      obj4.containerWidth = width;
-      return inThisServerItems(ref1, obj4, item.shelfItem1.application.id);
-    } else if (context(handleViewableItemsChanged[44]).AppLauncherHomeListItemType.RECOMMENDATION_TUPLE === type) {
-      const obj5 = {
-        context: item,
-        sectionName: item.sectionName,
-        onPress(application, sectionName) {
-            return outer1_20({ application, sectionName });
-          }
+      obj4[3] = tmp31;
+      obj4[4] = memo4;
+      ({ shelfItem1: obj9[5], shelfItem2: obj9[6], isLastTuple: obj9[7] } = item);
+      obj4[8] = memo3;
+      obj4[9] = stateFromStores1;
+      return memo(ref1, obj4, item.shelfItem1.application.id);
+    } else if (tmp(tmp2[44]).AppLauncherHomeListItemType.RECOMMENDATION_TUPLE === type) {
+      const obj5 = { context: null, sectionName: null, onPress: null, item1: null, item2: null, isLastTuple: null, entrypoint: null, containerWidth: null };
+      obj5[0] = item;
+      obj5[1] = item.sectionName;
+      obj5[2] = function onPress(application, sectionName) {
+        return callback({ application, sectionName });
       };
-      ({ item1: obj8.item1, item2: obj8.item2, isLastTuple: obj8.isLastTuple } = item);
-      obj5.entrypoint = entrypoint;
-      obj5.containerWidth = width;
-      return inThisServerItems(closure_32, obj5);
-    } else if (context(handleViewableItemsChanged[44]).AppLauncherHomeListItemType.APP === type) {
-      const obj6 = {
-        section: item.section,
-        onPress() {
-            outer1_13(item.section, context(handleViewableItemsChanged[41]).AppLauncherSectionName.INSTALLED);
-          }
+      ({ item1: obj8[3], item2: obj8[4], isLastTuple: obj8[5] } = item);
+      obj5[6] = memo3;
+      obj5[7] = stateFromStores1;
+      return memo(c32, obj5);
+    } else if (tmp(tmp2[44]).AppLauncherHomeListItemType.APP === type) {
+      const obj6 = { section: null, onPress: null, isFirstRow: null, isLastRow: null, style: null };
+      obj6[0] = item.section;
+      obj6[1] = function onPress() {
+        outer1_13(item.section, context(8017).AppLauncherSectionName.INSTALLED);
       };
-      ({ isFirstRow: obj6.isFirstRow, isLastRow: obj6.isLastRow } = item);
-      const obj7 = { height: closure_6 };
-      obj6.style = obj7;
-      return inThisServerItems(closure_28, obj6, item.section.id);
-    } else if (context(handleViewableItemsChanged[44]).AppLauncherHomeListItemType.RECOMMENDATION_SECTION_HEADER === type) {
-      const obj8 = { index, children: item.section };
-      return inThisServerItems(trackAppLauncherHomeItemImpression, obj8);
-    } else if (context(handleViewableItemsChanged[44]).AppLauncherHomeListItemType.RECOMMENDATION_BANNER_CARD === type) {
-      const obj9 = { application: item.item.application };
-      ({ isFirst: obj4.isFirst, isLast: obj4.isLast } = item);
-      obj9.onPress = function onPress() {
+      ({ isFirstRow: obj6[2], isLastRow: obj6[3] } = item);
+      const obj7 = { height: null };
+      obj7[0] = appsInThisServer;
+      obj6[4] = obj7;
+      return memo(closure_28, obj6, item.section.id);
+    } else if (tmp(tmp2[44]).AppLauncherHomeListItemType.RECOMMENDATION_SECTION_HEADER === type) {
+      const obj8 = { index: null, children: null };
+      obj8[0] = index;
+      obj8[1] = item.section;
+      return memo(trackAppLauncherHomeItemImpression, obj8);
+    } else if (tmp(tmp2[44]).AppLauncherHomeListItemType.RECOMMENDATION_BANNER_CARD === type) {
+      const obj9 = { application: null, isFirst: null, isLast: null, onPress: null, isLandscape: null, showsPromoted: null, overrideImageUrl: null };
+      obj9[0] = item.item.application;
+      ({ isFirst: obj4[1], isLast: obj4[2] } = item);
+      obj9[3] = function onPress() {
         return outer1_20({ application: item.item.application, sectionName: item.sectionName });
       };
-      obj9.isLandscape = closure_12;
-      ({ showsPromoted: obj4.showsPromoted, overrideImageUrl: obj4.overrideImageUrl } = item);
-      return inThisServerItems(initialSearchQuery(handleViewableItemsChanged[46]), obj9);
-    } else if (context(handleViewableItemsChanged[44]).AppLauncherHomeListItemType.RECOMMENDATION_APP === type) {
-      const obj10 = {};
-      ({ application: obj3.application, isFirstRow: obj3.isFirstRow, isLastRow: obj3.isLastRow } = item);
-      obj10.onPress = function onPress() {
+      obj9[4] = c12;
+      ({ showsPromoted: obj4[5], overrideImageUrl: obj4[6] } = item);
+      return memo(entrypoint(tmp2[46]), obj9);
+    } else if (tmp(tmp2[44]).AppLauncherHomeListItemType.RECOMMENDATION_APP === type) {
+      const obj10 = { application: null, isFirstRow: null, isLastRow: null, onPress: null, showsPromoted: null };
+      ({ application: obj3[0], isFirstRow: obj3[1], isLastRow: obj3[2] } = item);
+      obj10[3] = function onPress() {
         return outer1_20({ application: item.application, sectionName: item.sectionName });
       };
-      obj10.showsPromoted = item.showsPromoted;
-      return inThisServerItems(initialSearchQuery(handleViewableItemsChanged[47]), obj10, item.application.id);
-    } else if (context(handleViewableItemsChanged[44]).AppLauncherHomeListItemType.VIEW_ALL === type) {
-      const obj11 = {
-        title: item.title,
-        onPress() {
-            const applications = item.applications;
-            const mapped = applications.map((arg0) => arg0);
-            let obj = context(handleViewableItemsChanged[23]);
-            obj = { location: context(handleViewableItemsChanged[29]).ApplicationCommandTriggerLocations.APP_LAUNCHER_HOME, navigation: outer1_2, context: item, sectionName: item.sectionName, sectionOverallPosition: item.sectionOverallPosition, applications: mapped, sectionItemType: context(handleViewableItemsChanged[49]).SectionItemType.APPS, commands: [], sectionDescriptors: mapped.map((application) => context(handleViewableItemsChanged[50]).getApplicationCommandSection(application)), title: item.title, promotedApplicationIds: item.promotedApplicationIds };
-            const result = obj.handleViewAllSelected(obj);
-          }
+      obj10[4] = item.showsPromoted;
+      return memo(entrypoint(tmp2[47]), obj10, item.application.id);
+    } else if (tmp(tmp2[44]).AppLauncherHomeListItemType.VIEW_ALL === type) {
+      const obj11 = { title: null, onPress: null };
+      obj11[0] = item.title;
+      obj11[1] = function onPress() {
+        const applications = item.applications;
+        const mapped = applications.map((arg0) => arg0);
+        let obj = context(11225);
+        obj = { location: context(5704).ApplicationCommandTriggerLocations.APP_LAUNCHER_HOME, navigation: outer1_2, context: item, sectionName: item.sectionName, sectionOverallPosition: item.sectionOverallPosition, applications: mapped, sectionItemType: context(11226).SectionItemType.APPS, commands: [], sectionDescriptors: mapped.map((application) => callback(table[50]).getApplicationCommandSection(application)), title: item.title, promotedApplicationIds: item.promotedApplicationIds };
+        const result = obj.handleViewAllSelected(obj);
       };
-      return inThisServerItems(initialSearchQuery(handleViewableItemsChanged[48]), obj11);
-    } else if (context(handleViewableItemsChanged[44]).AppLauncherHomeListItemType.DIVIDER_ITEM === type) {
-      return inThisServerItems(callback6, {});
-    } else if (context(handleViewableItemsChanged[44]).AppLauncherHomeListItemType.LEARN_MORE === type) {
-      obj = { visible: tmp3.valueOf() };
-      return inThisServerItems(initialSearchQuery(handleViewableItemsChanged[51]), obj);
+      return memo(entrypoint(tmp2[48]), obj11);
+    } else if (tmp(tmp2[44]).AppLauncherHomeListItemType.DIVIDER_ITEM === type) {
+      return memo(callback6, {});
+    } else if (tmp(tmp2[44]).AppLauncherHomeListItemType.LEARN_MORE === type) {
+      obj = { visible: null };
+      obj[0] = frecentApps.valueOf();
+      return memo(entrypoint(tmp2[51]), obj);
     } else {
       return null;
     }
-  }, items5);
-  const ref = React.useRef(null);
-  const tmp17 = callback(React.useState(false), 2);
-  const first = tmp17[0];
-  let closure_23 = tmp17[1];
-  let items6 = [entrypoint];
-  let memo = React.useMemo(() => initialSearchQuery(handleViewableItemsChanged[52]).debounce((query) => {
-    let obj = context(handleViewableItemsChanged[53]);
-    obj = { query, source: outer1_10 };
-    obj.trackWithMetadata(frecencyCommands.APP_LAUNCHER_SEARCH_QUERY_TYPED, obj);
-  }, 400, { leading: false, trailing: true }), items6);
-  _createForOfIteratorHelperLoose = React.useRef(null);
-  let effect1 = React.useEffect(() => () => {
-    const current = outer1_25.current;
-    if (null != current) {
+  }, items19);
+  ref = obj2.useRef(null);
+  const tmp49 = frecentApps;
+  const tmpResult3 = context(11262);
+  [tmp51, c23] = frecentApps(obj2.useState(false), 2);
+  const items20 = [entrypoint];
+  memo9 = obj2.useMemo(() => entrypoint(_undefined2[52]).debounce((query) => {
+    let obj = outer1_0(outer1_3[53]);
+    obj = { query, source: getUserAgnosticState };
+    obj.trackWithMetadata(outer1_16.APP_LAUNCHER_SEARCH_QUERY_TYPED, obj);
+  }, 400, { leading: false, trailing: true }), items20);
+  createCacheKey = obj2.useRef(null);
+  const effect3 = obj2.useEffect(() => () => {
+    const current = ref.current;
+    if (current != null) {
       current.cancel();
     }
   }, []);
-  let items7 = [memo];
-  const callback5 = React.useCallback((arg0) => {
+  const items21 = [memo9];
+  callback5 = obj2.useCallback((arg0) => {
     let closure_0 = arg0;
-    callback(0 !== arg0.length);
+    _undefined6(0 !== arg0.length);
     let current = ref.current;
-    if (null != current) {
+    if (current != null) {
       current.cancel();
     }
-    ref.current = context(handleViewableItemsChanged[54]).runAfterInteractions(() => {
+    ref.current = context(_undefined2[54]).runAfterInteractions(() => {
       const current = outer1_22.current;
-      if (null != current) {
+      if (current != null) {
         current.setQuery(closure_0);
       }
     }, 100);
-    memo(arg0);
-  }, items7);
-  let closure_27 = React.useRef(callback5);
-  let items8 = [callback5];
-  const effect2 = React.useEffect(() => {
+    memo9(arg0);
+  }, items21);
+  closure_27 = obj2.useRef(callback5);
+  const items22 = [callback5];
+  const effect4 = obj2.useEffect(() => {
     closure_27.current = callback5;
-  }, items8);
-  let items9 = [entrypoint];
-  let closure_28 = React.useCallback(() => {
-    let obj = context(handleViewableItemsChanged[53]);
-    obj = { source: entrypoint };
+  }, items22);
+  const items23 = [entrypoint];
+  closure_28 = obj2.useCallback(() => {
+    let obj = context(_undefined2[53]);
+    obj = { source: memo3 };
     obj.trackWithMetadata(frecencyCommands.APP_LAUNCHER_SEARCH_FOCUSED, obj);
-  }, items9);
-  let obj3 = context(handleViewableItemsChanged[55]);
-  obj = {};
+  }, items23);
+  const tmp50 = frecentApps(obj2.useState(false), 2);
   let str = "home-scroller";
-  if (first) {
+  if (tmp51) {
     str = "search-scroller";
   }
-  obj.key = str;
-  obj.triggerScrollHeight = 5;
-  pinnedSearchBarBottomBorder = obj3.usePinnedSearchBarBottomBorder(obj);
-  ref1 = React.useRef(null);
-  let items10 = [initialSearchQuery];
-  const layoutEffect = React.useLayoutEffect(() => {
-    if (null != initialSearchQuery) {
+  pinnedSearchBarBottomBorder = context(11270).usePinnedSearchBarBottomBorder({ key: str, triggerScrollHeight: 5 });
+  ref1 = obj2.useRef(null);
+  const items24 = [initialSearchQuery];
+  const layoutEffect = obj2.useLayoutEffect(() => {
+    if (null != entrypoint) {
       const current = ref1.current;
-      if (null != current) {
-        current.setText(initialSearchQuery);
+      if (current != null) {
+        current.setText(tmp);
       }
       const current2 = ref1.current;
-      if (null != current2) {
+      if (current2 != null) {
         current2.focus();
       }
-      ref2.current(initialSearchQuery);
+      ref2.current(tmp);
+      const tmp2 = ref1;
     }
-  }, items10);
-  let sum = initialSearchQuery(handleViewableItemsChanged[35])().bottom + callback2;
+  }, items24);
+  let sum = entrypoint(1581)().bottom + memo2;
   c31 = sum;
-  let obj5 = context(handleViewableItemsChanged[56]);
-  const bottomSheetFlashListBottomViewabilityInset = obj5.useBottomSheetFlashListBottomViewabilityInset();
-  let scrollerRef = bottomSheetFlashListBottomViewabilityInset.flashListRef;
-  obj = { type: context(handleViewableItemsChanged[58]).ImpressionTypes.VIEW, name: context(handleViewableItemsChanged[58]).ImpressionNames.APP_LAUNCHER_HOME_ACTIVITY_ITEM };
-  obj1 = { disableTrack: !tmp2 };
-  let items11 = [tmp2];
-  initialSearchQuery(handleViewableItemsChanged[57])(obj, obj1, items11);
-  let tmp30 = callback(React.useState(false), 2);
-  closure_32 = tmp30[1];
-  const effect3 = React.useEffect(() => {
-    callback3(true);
+  const tmpResult4 = context(11270);
+  const bottomSheetFlashListBottomViewabilityInset = context(11271).useBottomSheetFlashListBottomViewabilityInset();
+  ({ flashListRef, bottomVisibilityInsetRef } = bottomSheetFlashListBottomViewabilityInset);
+  obj = { type: null, name: null };
+  tmp4Result = tmp4(8426);
+  obj[0] = context(503).ImpressionTypes.VIEW;
+  obj[1] = context(503).ImpressionNames.APP_LAUNCHER_HOME_ACTIVITY_ITEM;
+  obj = { disableTrack: !tmp5 };
+  const items25 = [tmp5];
+  tmp4Result(obj, obj, items25);
+  const tmpResult5 = context(11271);
+  [tmp64, c32] = tmp49(obj2.useState(false), 2);
+  const effect5 = obj2.useEffect(() => {
+    _undefined7(true);
   }, []);
-  let obj8 = context(handleViewableItemsChanged[28]);
-  let items12 = [callback1];
-  stateFromStores = obj8.useStateFromStores(items12, () => callback1.getTriggeredOnboardingContentMetadata().willShowGlobalSearchOnboarding);
-  const items13 = [stateFromStores];
-  callback6 = React.useCallback((arg0) => {
-    if (stateFromStores) {
-      let obj = context(handleViewableItemsChanged[59]);
-      obj = { dismissAction: tmp };
-      const result = obj.UNSAFE_markDismissibleContentAsDismissed(context(handleViewableItemsChanged[60]).DismissibleContent.APP_LAUNCHER_GLOBAL_SEARCH_ONBOARDING, obj);
+  const tmp49Result = tmp49(obj2.useState(false), 2);
+  const items26 = [c13];
+  stateFromStores3 = context(589).useStateFromStores(items26, () => _undefined5.getTriggeredOnboardingContentMetadata().willShowGlobalSearchOnboarding);
+  const items27 = [stateFromStores3];
+  callback6 = obj2.useCallback((arg0) => {
+    if (stateFromStores3) {
+      let obj = context(_undefined2[59]);
+      obj = { dismissAction: null };
+      obj[0] = tmp;
+      const result = obj.UNSAFE_markDismissibleContentAsDismissed(context(_undefined2[60]).DismissibleContent.APP_LAUNCHER_GLOBAL_SEARCH_ONBOARDING, obj);
       obj = {};
-      const merged = Object.assign(callback1.getTriggeredOnboardingContentMetadata());
-      obj["willShowGlobalSearchOnboarding"] = false;
-      const result1 = context(handleViewableItemsChanged[61]).setTriggeredOnboardingContentMetadata(obj);
-      const obj3 = context(handleViewableItemsChanged[61]);
+      const merged = Object.assign(_undefined5.getTriggeredOnboardingContentMetadata());
+      obj.willShowGlobalSearchOnboarding = false;
+      const result1 = context(_undefined2[61]).setTriggeredOnboardingContentMetadata(obj);
+      const obj3 = context(_undefined2[61]);
     }
-  }, items13);
-  let obj9 = context(handleViewableItemsChanged[62]);
-  trackAppLauncherHomeItemImpression = obj9.useTrackAppLauncherHomeItemImpression().trackAppLauncherHomeItemImpression;
-  const items14 = [sum, tmp4.list];
-  const items15 = [sum];
-  let memo1 = React.useMemo(() => {
+  }, items27);
+  const tmpResult6 = context(589);
+  trackAppLauncherHomeItemImpression = context(11273).useTrackAppLauncherHomeItemImpression().trackAppLauncherHomeItemImpression;
+  const items28 = [sum, tmp7.list];
+  const items29 = [sum];
+  const memo10 = obj2.useMemo(() => {
     const obj = {};
-    const merged = Object.assign(tmp4.list);
-    obj["paddingBottom"] = c31;
+    const merged = Object.assign(_undefined3.list);
+    obj.paddingBottom = c31;
     return obj;
-  }, items14);
-  let memo2 = React.useMemo(() => ({ bottom: c31 }), items15);
-  const items16 = [pinnedSearchBarBottomBorder];
-  const callback7 = React.useCallback((type) => type.type, []);
-  callback8 = React.useCallback((arg0) => {
+  }, items28);
+  const memo11 = obj2.useMemo(() => ({ bottom: c31 }), items29);
+  const items30 = [pinnedSearchBarBottomBorder];
+  const callback7 = obj2.useCallback((type) => type.type, []);
+  callback8 = obj2.useCallback((arg0) => {
     pinnedSearchBarBottomBorder.scrollHandler(arg0);
-  }, items16);
-  const items17 = [callback8];
-  const callback9 = React.useCallback((nativeEvent) => {
+  }, items30);
+  const items31 = [callback8];
+  const callback9 = obj2.useCallback((nativeEvent) => {
     nativeEvent = nativeEvent.nativeEvent;
     callback8({ width: nativeEvent.layoutMeasurement.width, height: nativeEvent.layoutMeasurement.height, offset: nativeEvent.contentOffset.y, contentWidth: nativeEvent.contentSize.width, contentHeight: nativeEvent.contentSize.height });
-  }, items17);
-  let obj10 = context(handleViewableItemsChanged[63]);
-  const appLauncherFlashListProps = obj10.useAppLauncherFlashListProps({ onScrollHandler: callback8 });
-  const items18 = [handleViewableItemsChanged, trackAppLauncherHomeItemImpression];
-  obj2 = { style: tmp4.container };
-  obj3 = { style: tmp4.topBackgroundFill };
-  let memo3 = React.useMemo(() => {
-    let obj = { viewabilityConfig: {}, onViewableItemsChanged: handleViewableItemsChanged };
+  }, items31);
+  const tmpResult7 = context(11273);
+  const appLauncherFlashListProps = context(11275).useAppLauncherFlashListProps({ onScrollHandler: callback8 });
+  const items32 = [handleViewableItemsChanged, trackAppLauncherHomeItemImpression];
+  obj1 = { style: tmp7.container, children: null };
+  obj2 = { style: tmp7.topBackgroundFill };
+  const memo12 = obj2.useMemo(() => {
+    let obj = { viewabilityConfig: {}, onViewableItemsChanged: c3 };
     const items = [obj, ];
-    obj = { viewabilityConfig: list, onViewableItemsChanged: trackAppLauncherHomeItemImpression };
+    obj = { viewabilityConfig: memo8, onViewableItemsChanged: trackAppLauncherHomeItemImpression };
     items[1] = obj;
     return items;
-  }, items18);
-  const items19 = [inThisServerItems(View, obj3), , , ];
-  let obj4 = {};
-  obj5 = { style: tmp4.searchBarContainer };
-  let obj6 = { ref: ref1 };
-  if (entrypoint === context(handleViewableItemsChanged[41]).AppLauncherEntrypoint.VOICE) {
-    let intl2 = context(handleViewableItemsChanged[17]).intl;
-    let stringResult = intl2.string(context(handleViewableItemsChanged[17]).t["pw+r5b"]);
+  }, items32);
+  const items33 = [memo(appsInThisServer, obj2), , , ];
+  obj3 = { style: tmp7.searchBarContainer, children: null };
+  let obj4 = { ref: ref1, placeholder: null, isRound: true, size: "md", onChange: null, onFocus: null };
+  if (entrypoint === context(8017).AppLauncherEntrypoint.VOICE) {
+    let intl2 = tmp(1236).intl;
+    let stringResult = intl2.string(tmp(1236).t["pw+r5b"]);
   } else {
-    let intl = context(handleViewableItemsChanged[17]).intl;
-    stringResult = intl.string(context(handleViewableItemsChanged[17]).t.ziyFv2);
+    let intl = tmp(1236).intl;
+    stringResult = intl.string(tmp(1236).t.ziyFv2);
   }
-  obj6.placeholder = stringResult;
-  obj6.isRound = true;
-  obj6.size = "md";
-  obj6.onChange = callback5;
-  obj6.onFocus = function onFocus() {
-    callback2();
+  let obj5 = { children: null };
+  obj4[1] = stringResult;
+  obj4[4] = callback5;
+  obj4[5] = function onFocus() {
+    callback();
     callback6({ actionType: sectionDescriptors.TAKE_ACTION });
   };
-  obj5.children = inThisServerItems(context(handleViewableItemsChanged[64]).SearchField, obj6);
-  const items20 = [inThisServerItems(View, obj5), pinnedSearchBarBottomBorder.bottomBorderComponent];
-  obj4.children = items20;
-  items19[1] = callback3(clickOnHomeActivityOpensAppDetails, obj4);
-  if (first) {
-    let obj7 = { ref, context, onScroll: callback9, onSend: callback, entrypoint };
-    let tmp53Result = tmp53(context(handleViewableItemsChanged[65]).SearchLocalAndGlobalContentView, obj7);
+  obj3[1] = memo(context(9239).SearchField, obj4);
+  const items34 = [memo(appsInThisServer, obj3), pinnedSearchBarBottomBorder.bottomBorderComponent];
+  obj5[0] = items34;
+  items33[1] = callback3(clickOnHomeActivityOpensAppDetails, obj5);
+  if (tmp51) {
+    let obj6 = { ref: null, context: null, onScroll: null, onSend: null, entrypoint: null };
+    obj6[0] = ref;
+    obj6[1] = context;
+    obj6[2] = callback9;
+    obj6[3] = callback;
+    obj6[4] = entrypoint;
+    let tmp77Result = tmp77(tmp(11277).SearchLocalAndGlobalContentView, obj6);
   } else {
-    obj8 = {};
-    obj9 = {};
-    obj10 = {
-      context,
-      sectionDescriptors,
-      commands: frecencyCommands,
-      loading,
-      apps: frecencyUsedAppList,
-      onAppSelected: callback3,
-      onCommandSelected(command, section) {
-          let obj = context(handleViewableItemsChanged[23]);
-          obj = { location: context(handleViewableItemsChanged[29]).ApplicationCommandTriggerLocations.APP_LAUNCHER_HOME, context, command, section, sectionDescriptors, query: "", navigation, sectionName: context(handleViewableItemsChanged[41]).AppLauncherSectionName.RECENT_COMMANDS, entrypoint };
-          const result = obj.handleApplicationCommandSelected(obj);
-        },
-      onViewAllSelected(sectionItemType) {
-          let obj = context(handleViewableItemsChanged[23]);
-          obj = { location: context(handleViewableItemsChanged[29]).ApplicationCommandTriggerLocations.APP_LAUNCHER_APPLICATION_VIEW_FRECENCT, navigation, context };
-          let str = "recent_apps_view_more";
-          if (sectionItemType === context(handleViewableItemsChanged[49]).SectionItemType.COMMANDS) {
-            str = "recent_commands_view_more";
-          }
-          obj.sectionName = str;
-          const mapped = frecencyUsedAppList.map((section) => {
-            section = section.section;
-            let application;
-            if (null != section) {
-              application = section.application;
-            }
-            return application;
-          });
-          obj.applications = mapped.filter(context(handleViewableItemsChanged[66]).isNotNullish);
-          obj.sectionItemType = sectionItemType;
-          obj.commands = frecencyCommands;
-          obj.sectionDescriptors = sectionDescriptors;
-          if (entrypoint === context(handleViewableItemsChanged[41]).AppLauncherEntrypoint.VOICE) {
-            const intl3 = context(handleViewableItemsChanged[17]).intl;
-            let stringResult = intl3.string(context(handleViewableItemsChanged[17]).t["2pFD8L"]);
-          } else if (sectionItemType === context(handleViewableItemsChanged[49]).SectionItemType.COMMANDS) {
-            const intl2 = context(handleViewableItemsChanged[17]).intl;
-            stringResult = intl2.string(context(handleViewableItemsChanged[17]).t.V3Sq95);
-          } else {
-            const intl = context(handleViewableItemsChanged[17]).intl;
-            stringResult = intl.string(context(handleViewableItemsChanged[17]).t.SCViVk);
-          }
-          obj.title = stringResult;
-          const result = obj.handleViewAllSelected(obj);
-        }
+    let obj7 = { context: null, sectionDescriptors: null, commands: null, loading: null, apps: null, onAppSelected: null, onCommandSelected: null, onViewAllSelected: null };
+    obj7[0] = context;
+    obj7[1] = sectionDescriptors;
+    obj7[2] = frecencyCommands;
+    obj7[3] = loading;
+    obj7[4] = memo1;
+    obj7[5] = callback3;
+    obj7[6] = function onCommandSelected(command, section) {
+      let obj = context(_undefined2[23]);
+      obj = { location: context(_undefined2[29]).ApplicationCommandTriggerLocations.APP_LAUNCHER_HOME, context, command, section, sectionDescriptors, query: "", navigation: c2, sectionName: context(_undefined2[41]).AppLauncherSectionName.RECENT_COMMANDS, entrypoint: memo3 };
+      const result = obj.handleApplicationCommandSelected(obj);
     };
-    const items21 = [inThisServerItems(initialSearchQuery(handleViewableItemsChanged[49]), obj10), , , ];
-    let obj11 = {
-      items: inThisServerItems,
-      onAppSelected: callback3,
-      onViewAllSelected() {
-          const found = inThisServerItems.find((type) => type.type === context(handleViewableItemsChanged[44]).AppLauncherHomeListItemType.VIEW_ALL);
-          let mapped;
-          if (null != found) {
-            const applications = found.applications;
-            if (null != applications) {
-              mapped = applications.map((arg0) => arg0);
-            }
-          }
-          if (null != mapped) {
-            let obj = context(handleViewableItemsChanged[23]);
-            obj = { location: context(handleViewableItemsChanged[29]).ApplicationCommandTriggerLocations.APP_LAUNCHER_HOME, navigation, context, sectionName: context(handleViewableItemsChanged[41]).AppLauncherSectionName.APPS_IN_THIS_SERVER, applications: mapped, sectionItemType: context(handleViewableItemsChanged[49]).SectionItemType.APPS, commands: [], sectionDescriptors: mapped.map((application) => context(handleViewableItemsChanged[50]).getApplicationCommandSection(application)) };
-            const intl = context(handleViewableItemsChanged[17]).intl;
-            obj.title = intl.string(context(handleViewableItemsChanged[17]).t.oJyzCu);
-            const result = obj.handleViewAllSelected(obj);
-          }
+    obj7[7] = function onViewAllSelected(arg0) {
+      let obj = context(_undefined2[23]);
+      obj = { location: context(_undefined2[29]).ApplicationCommandTriggerLocations.APP_LAUNCHER_APPLICATION_VIEW_FRECENCT, navigation: c2, context, sectionName: null, applications: null, sectionItemType: null, commands: null, sectionDescriptors: null, title: null };
+      let str = "recent_apps_view_more";
+      if (arg0 === context(_undefined2[49]).SectionItemType.COMMANDS) {
+        str = "recent_commands_view_more";
+      }
+      obj[3] = str;
+      const mapped = memo1.map((section) => {
+        section = section.section;
+        let application;
+        if (section != null) {
+          application = section.application;
         }
+        return application;
+      });
+      obj[4] = mapped.filter(context(_undefined2[66]).isNotNullish);
+      obj[5] = arg0;
+      obj[6] = frecencyCommands;
+      obj[7] = sectionDescriptors;
+      if (memo3 === context(_undefined2[41]).AppLauncherEntrypoint.VOICE) {
+        const intl3 = tmp(tmp2[17]).intl;
+        let stringResult = intl3.string(tmp(tmp2[17]).t["2pFD8L"]);
+      } else if (arg0 === tmp(tmp2[49]).SectionItemType.COMMANDS) {
+        const intl2 = tmp(tmp2[17]).intl;
+        stringResult = intl2.string(tmp(tmp2[17]).t.V3Sq95);
+      } else {
+        const intl = tmp(tmp2[17]).intl;
+        stringResult = intl.string(tmp(tmp2[17]).t.SCViVk);
+      }
+      obj[8] = stringResult;
+      const result = obj.handleViewAllSelected(obj);
     };
-    items21[1] = inThisServerItems(initialSearchQuery(handleViewableItemsChanged[67]), obj11);
-    let tmp61 = null;
-    if (showsEmptyState) {
-      tmp61 = null;
-      if (tmp30[0]) {
-        tmp61 = inThisServerItems(initialSearchQuery(handleViewableItemsChanged[68]), {});
+    const items35 = [tmp77(tmp4(11226), obj7), , , ];
+    let obj8 = { items: null, onAppSelected: null, onViewAllSelected: null };
+    obj8[0] = memo;
+    obj8[1] = callback3;
+    obj8[2] = function onViewAllSelected() {
+      const found = memo.find((type) => type.type === callback(11261).AppLauncherHomeListItemType.VIEW_ALL);
+      let mapped;
+      if (found != null) {
+        const applications = found.applications;
+        if (applications != null) {
+          mapped = applications.map((arg0) => arg0);
+        }
+      }
+      if (null != mapped) {
+        let obj = context(_undefined2[23]);
+        obj = { location: null, navigation: null, context: null, sectionName: null, applications: null, sectionItemType: null, commands: null, sectionDescriptors: null, title: null };
+        obj[0] = context(_undefined2[29]).ApplicationCommandTriggerLocations.APP_LAUNCHER_HOME;
+        obj[1] = c2;
+        obj[2] = context;
+        obj[3] = context(_undefined2[41]).AppLauncherSectionName.APPS_IN_THIS_SERVER;
+        obj[4] = mapped;
+        obj[5] = context(_undefined2[49]).SectionItemType.APPS;
+        obj[6] = [];
+        obj[7] = mapped.map((application) => callback(5702).getApplicationCommandSection(application));
+        const intl = context(_undefined2[17]).intl;
+        obj[8] = intl.string(context(_undefined2[17]).t.oJyzCu);
+        const result = obj.handleViewAllSelected(obj);
+      }
+    };
+    items35[1] = tmp77(tmp4(11283), obj8);
+    tmp77Result = null;
+    if (tmp40) {
+      tmp77Result = null;
+      if (tmp64) {
+        tmp77Result = tmp77(tmp4(11284), {});
       }
     }
-    items21[2] = tmp61;
-    let tmp65 = null;
-    if (showNoPermsState) {
-      tmp65 = inThisServerItems(initialSearchQuery(handleViewableItemsChanged[69]), {});
+    items35[2] = tmp77Result;
+    let tmp77Result1 = null;
+    if (memo2) {
+      tmp77Result1 = tmp77(tmp4(11286), {});
     }
-    items21[3] = tmp65;
-    obj9.children = items21;
-    obj8.ListHeaderComponent = callback3(clickOnHomeActivityOpensAppDetails, obj9);
-    obj8.contentContainerStyle = memo1;
-    obj8.scrollIndicatorInsets = memo2;
-    obj8.renderItem = callback4;
-    obj8.getItemType = callback7;
-    obj8.data = list;
-    obj8.preserveScrollMomentum = true;
-    obj8.automaticallyAdjustsScrollIndicatorInsets = false;
-    obj8.keyboardDismissMode = "on-drag";
-    obj8.keyboardShouldPersistTaps = "always";
-    obj8.showsVerticalScrollIndicator = false;
-    obj8.viewabilityConfigCallbackPairs = memo3;
-    obj8.bottomViewabilityInsetRef = bottomSheetFlashListBottomViewabilityInset.bottomVisibilityInsetRef;
-    if (entrypoint === context(handleViewableItemsChanged[41]).AppLauncherEntrypoint.VOICE) {
-      scrollerRef = appLauncherFlashListProps.scrollerRef;
+    let obj9 = { ListHeaderComponent: null, contentContainerStyle: null, scrollIndicatorInsets: null, renderItem: null, getItemType: null, data: null, preserveScrollMomentum: true, automaticallyAdjustsScrollIndicatorInsets: false, keyboardDismissMode: "on-drag", keyboardShouldPersistTaps: "always", showsVerticalScrollIndicator: false, viewabilityConfigCallbackPairs: null, bottomViewabilityInsetRef: null, ref: null, onScroll: null, animatedOnScroll: null, simultaneousHandlers: null, animatedProps: null };
+    let obj10 = { children: null };
+    items35[3] = tmp77Result1;
+    obj10[0] = items35;
+    obj9[0] = tmp75(tmp78, obj10);
+    obj9[1] = memo10;
+    obj9[2] = memo11;
+    obj9[3] = callback4;
+    obj9[4] = callback7;
+    obj9[5] = memo8;
+    obj9[11] = memo12;
+    obj9[12] = bottomVisibilityInsetRef;
+    if (entrypoint === tmp(8017).AppLauncherEntrypoint.VOICE) {
+      flashListRef = appLauncherFlashListProps.scrollerRef;
     }
-    obj8.ref = scrollerRef;
-    obj8.onScroll = callback9;
-    ({ onScroll: obj17.animatedOnScroll, gestureRef: obj17.simultaneousHandlers, animatedProps: obj17.animatedProps } = appLauncherFlashListProps);
-    tmp53Result = tmp53(initialSearchQuery(handleViewableItemsChanged[63]), obj8);
-    const tmp56 = initialSearchQuery(handleViewableItemsChanged[63]);
-    const tmp57 = callback3;
-    const tmp58 = clickOnHomeActivityOpensAppDetails;
+    obj9[13] = flashListRef;
+    obj9[14] = callback9;
+    ({ onScroll: obj25[15], gestureRef: obj25[16], animatedProps: obj25[17] } = appLauncherFlashListProps);
+    tmp77Result = tmp77(tmp4(11275), obj9);
+    const tmp4Result1 = tmp4(11275);
   }
-  items19[2] = tmp53Result;
-  let tmp74 = entrypoint === context(handleViewableItemsChanged[41]).AppLauncherEntrypoint.TEXT;
-  if (tmp74) {
-    const obj12 = { windowDimensions: size, visible: stateFromStores, markAsDismissed: callback6 };
-    tmp74 = inThisServerItems(initialSearchQuery(handleViewableItemsChanged[70]), obj12);
+  items33[2] = tmp77Result;
+  let tmp77Result2 = entrypoint === tmp(8017).AppLauncherEntrypoint.TEXT;
+  if (tmp77Result2) {
+    let obj11 = { windowDimensions: null, visible: null, markAsDismissed: null };
+    obj11[0] = size;
+    obj11[1] = stateFromStores3;
+    obj11[2] = callback6;
+    tmp77Result2 = tmp77(tmp4(11289), obj11);
   }
-  items19[3] = tmp74;
-  obj2.children = items19;
-  return callback3(View, obj2);
+  items33[3] = tmp77Result2;
+  obj1[1] = items33;
+  return callback3(appsInThisServer, obj1);
 };
 export { BaseAppRow };

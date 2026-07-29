@@ -1,18 +1,17 @@
-// Module ID: 12867
-// Function ID: 100083
+// Module ID: 12889
+// Function ID: 12890
 // Name: HdrCaptureMode
-// Dependencies: [1428, 2]
+// Dependencies: [1452, 2]
 // Exports: getGoLiveHdrConfig
 
-// Module 12867 (HdrCaptureMode)
+// Module 12889 (HdrCaptureMode)
 import ApexExperiment from "ApexExperiment";
 
 let obj = { Never: "never", Always: "always", PermittedDevicesOnly: "permittedDevicesOnly" };
-obj = { name: "2026-02-go-live-hdr", kind: "user" };
-obj.defaultConfig = { hdrCaptureMode: obj.Never };
-obj = { hdrCaptureMode: obj.Always };
-obj.variations = { [1]: obj, [2]: { hdrCaptureMode: obj.PermittedDevicesOnly } };
-let closure_0 = ApexExperiment.createApexExperiment(obj);
+obj = { hdrCaptureMode: obj.Never };
+obj = { 1: null, 2: obj1 };
+obj[2] = { hdrCaptureMode: obj.PermittedDevicesOnly };
+let closure_0 = ApexExperiment.createApexExperiment({ name: "2026-02-go-live-hdr", kind: "user", defaultConfig: obj, variations: obj });
 const result = require("set").fileFinishedImporting("modules/media_engine/GoLiveHdrExperiment.tsx");
 
 export const HdrCaptureMode = obj;

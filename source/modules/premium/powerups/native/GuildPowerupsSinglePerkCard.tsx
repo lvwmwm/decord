@@ -1,35 +1,34 @@
-// Module ID: 11637
-// Function ID: 90294
+// Module ID: 11661
+// Function ID: 11662
 // Name: GuildPowerupsSinglePerkCard
-// Dependencies: [31, 33, 11588, 11567, 11564, 11587, 11634, 11638, 2]
+// Dependencies: [19, 21, 11612, 11591, 11588, 11611, 11658, 11662, 2]
 // Exports: default
 
-// Module 11637 (GuildPowerupsSinglePerkCard)
-import "result";
+// Module 11661 (GuildPowerupsSinglePerkCard)
+import "noop";
 import { jsx } from "jsxProd";
 
 const require = arg1;
-const result = require("getGuildPowerupBannerImage").fileFinishedImporting("modules/premium/powerups/native/GuildPowerupsSinglePerkCard.tsx");
+const result = require("useGetGuildPowerupBannerImage").fileFinishedImporting("modules/premium/powerups/native/GuildPowerupsSinglePerkCard.tsx");
 
 export default function GuildPowerupsSinglePerkCard(badge) {
   let guildId;
   let powerup;
   ({ guildId, powerup } = badge);
-  const tmp = importDefault(11588)(powerup, true);
-  const tmp2 = importDefault(11567)(guildId, powerup);
-  let obj = require(11587) /* useCalculatePowerupCardStatus */;
-  const calculatePowerupCardStatus = obj.useCalculatePowerupCardStatus(powerup, tmp2, importDefault(11564)(guildId, powerup, "GuildPowerupsSinglePerkCard"));
-  const tmp3 = importDefault(11564)(guildId, powerup, "GuildPowerupsSinglePerkCard");
-  obj = { title: powerup.title, description: powerup.description, cost: powerup.cost };
-  let str = "";
-  const tmp5 = importDefault(11634)(guildId, powerup);
-  const tmp6 = jsx;
-  if (null != tmp) {
-    str = tmp;
+  let str = importDefault(11612)(powerup, true);
+  const tmp = importDefault(11591)(guildId, powerup);
+  let obj = require(11611) /* useCalculatePowerupCardStatus */;
+  const calculatePowerupCardStatus = obj.useCalculatePowerupCardStatus(powerup, tmp, importDefault(11588)(guildId, powerup, "GuildPowerupsSinglePerkCard"));
+  const tmp2 = importDefault(11588)(guildId, powerup, "GuildPowerupsSinglePerkCard");
+  obj = { title: powerup.title, description: powerup.description, cost: powerup.cost, imageUrl: null, status: null, onPress: null, badge: null };
+  const tmp4 = importDefault(11658)(guildId, powerup);
+  const tmp5 = jsx;
+  if (str == null) {
+    str = "";
   }
-  obj.imageUrl = str;
-  obj.status = calculatePowerupCardStatus;
-  obj.onPress = tmp5;
-  obj.badge = badge.badge;
-  return tmp6(importDefault(11638), obj);
+  obj[3] = str;
+  obj[4] = calculatePowerupCardStatus;
+  obj[5] = tmp4;
+  obj[6] = badge.badge;
+  return tmp5(importDefault(11662), obj);
 };

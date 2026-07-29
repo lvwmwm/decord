@@ -1,27 +1,27 @@
-// Module ID: 12611
-// Function ID: 97486
+// Module ID: 12633
+// Function ID: 12634
 // Name: trackSearchStart
-// Dependencies: [5026, 653, 574, 675, 3806, 5080, 10752, 2]
+// Dependencies: [5048, 676, 636, 698, 3830, 5102, 10776, 2]
 // Exports: searchSounds, trackSearchResultViewed, trackSearchStart
 
-// Module 12611 (trackSearchStart)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 12633 (trackSearchStart)
+import getEmojiToGroupId from "getEmojiToGroupId";
 import ME from "ME";
 
-let closure_4;
-let closure_5;
+let c4;
+let c5;
 const require = arg1;
 function trackSearchStart(location_stack, channel_id) {
-  let obj = importDefault(675);
+  let obj = importDefault(698);
   obj = { channel_id, search_type: constants2.SOUNDBOARD, location_stack };
   obj.track(constants.SEARCH_STARTED, obj);
 }
 function trackSearchResultViewed(total_results, location_stack, channel_id, query) {
-  let obj = importDefault(675);
+  let obj = importDefault(698);
   obj = { search_type: constants2.SOUNDBOARD, channel_id, query, total_results: total_results.length, location_stack };
   obj.track(constants.SEARCH_RESULT_VIEWED, obj);
 }
-({ AnalyticEvents: closure_4, SearchTypes: closure_5 } = ME);
+({ AnalyticEvents: c4, SearchTypes: c5 } = ME);
 let closure_6 = require("debounce")(trackSearchStart, 350);
 let closure_7 = require("debounce")(trackSearchResultViewed, 350);
 let result = require("debounce").fileFinishedImporting("modules/soundboard/searchSounds.tsx");
@@ -32,93 +32,92 @@ export const searchSounds = function searchSounds(arg0, availableSounds, stateFr
   let closure_0 = arg0;
   let closure_1 = stateFromStores;
   let closure_2 = channel;
-  let _isNativeReflectConstruct = arg4;
-  let closure_4 = availableSounds.reduce((arg0, soundId) => {
+  let getEmojiToGroupId = arg4;
+  let closure_4 = availableSounds.reduce((arg0, name) => {
     let id;
-    if (null != id) {
-      id = id.id;
+    if (dependencyMap != null) {
+      id = tmp3.id;
     }
-    outer1_6(_isNativeReflectConstruct, id);
-    arg0[soundId.soundId] = (function getScore(id, name, closure_1, closure_2) {
-      const callback = id;
-      name = name.name;
-      const toLocaleLowerCaseResult = name.toLocaleLowerCase();
-      let customEmojiById = null;
-      if (null != name.emojiId) {
-        customEmojiById = customEmojiById.getCustomEmojiById(name.emojiId);
+    outer1_6(customEmojiById, id);
+    const toLocaleLowerCaseResult = lib.toLocaleLowerCase();
+    lib = toLocaleLowerCaseResult;
+    name = name.name;
+    const toLocaleLowerCaseResult1 = name.toLocaleLowerCase();
+    customEmojiById = null;
+    if (null != name.emojiId) {
+      customEmojiById = customEmojiById.getCustomEmojiById(name.emojiId);
+    }
+    let result = null;
+    if (null != name.emojiName) {
+      result = stateFromStores(3830).convertSurrogateToName(name.emojiName, false);
+      const obj2 = stateFromStores(3830);
+    }
+    let byName = null;
+    if (null != result) {
+      byName = stateFromStores(3830).getByName(result);
+      const obj3 = stateFromStores(3830);
+    }
+    if (null != customEmojiById) {
+      const items = [customEmojiById.name];
+      let names = items;
+    } else {
+      names = undefined;
+      if (byName != null) {
+        names = byName.names;
       }
-      let result = null;
-      if (null != name.emojiName) {
-        result = callback2(3806).convertSurrogateToName(name.emojiName, false);
-        const obj2 = callback2(3806);
+      if (names == null) {
+        names = [];
       }
-      let byName = null;
-      if (null != result) {
-        byName = callback2(3806).getByName(result);
-        const obj3 = callback2(3806);
-      }
-      if (null != customEmojiById) {
-        const items = [customEmojiById.name];
-        let names = items;
-      } else {
-        names = undefined;
-        if (null != byName) {
-          names = byName.names;
-        }
-        if (null == names) {
-          names = [];
-        }
-      }
-      let num3 = 0;
-      if (id === toLocaleLowerCaseResult) {
-        num3 = 8;
-      }
-      let sum = num3;
-      if (names.includes(id)) {
-        sum = num3 + 7;
-      }
-      let sum1 = sum;
-      if (toLocaleLowerCaseResult.startsWith(id)) {
-        sum1 = sum + 6;
-      }
-      let sum2 = sum1;
-      if (names.some((str) => str.startsWith(closure_0))) {
-        sum2 = sum1 + 5;
-      }
-      let sum3 = sum2;
-      if (toLocaleLowerCaseResult.endsWith(id)) {
-        sum3 = sum2 + 4;
-      }
-      let sum4 = sum3;
-      if (names.some((str) => str.endsWith(closure_0))) {
-        sum4 = sum3 + 3;
-      }
-      const name2 = name.name;
-      let sum5 = sum4;
-      if (tmp14(id, name2.toLocaleLowerCase())) {
-        sum5 = sum4 + 2;
-      }
-      let sum6 = sum5;
-      if (names.some((arg0) => callback(table[5])(closure_0, arg0))) {
-        sum6 = sum5 + 1;
-      }
-      let result1 = sum6 > 0;
-      if (result1) {
-        result1 = callback(10752).canUseSoundboardSound(closure_1, name, closure_2);
-        const obj4 = callback(10752);
-      }
-      let sum7 = sum6;
-      if (result1) {
-        sum7 = sum6 + 100;
-      }
-      return sum7;
-    })(closure_0.toLocaleLowerCase(), soundId, closure_1, id);
+    }
+    let num = 0;
+    if (toLocaleLowerCaseResult === toLocaleLowerCaseResult1) {
+      num = 8;
+    }
+    let sum = num;
+    if (names.includes(toLocaleLowerCaseResult)) {
+      sum = num + 7;
+    }
+    let sum1 = sum;
+    if (toLocaleLowerCaseResult1.startsWith(toLocaleLowerCaseResult)) {
+      sum1 = sum + 6;
+    }
+    let sum2 = sum1;
+    if (names.some((str) => str.startsWith(closure_0))) {
+      sum2 = sum1 + 5;
+    }
+    let sum3 = sum2;
+    if (toLocaleLowerCaseResult1.endsWith(toLocaleLowerCaseResult)) {
+      sum3 = sum2 + 4;
+    }
+    let sum4 = sum3;
+    if (names.some((str) => str.endsWith(closure_0))) {
+      sum4 = sum3 + 3;
+    }
+    const name2 = name.name;
+    let sum5 = sum4;
+    if (tmp22(toLocaleLowerCaseResult, name2.toLocaleLowerCase())) {
+      sum5 = sum4 + 2;
+    }
+    let sum6 = sum5;
+    if (names.some((arg0) => outer1_1(outer1_2[5])(closure_0, arg0))) {
+      sum6 = sum5 + 1;
+    }
+    let result1 = sum6 > 0;
+    if (0 < sum6) {
+      result1 = lib(10776).canUseSoundboardSound(stateFromStores, name, tmp3);
+      const obj4 = lib(10776);
+    }
+    let sum7 = sum6;
+    if (result1) {
+      sum7 = sum6 + 100;
+    }
+    arg0[name.soundId] = sum7;
     return arg0;
   }, {});
-  const found = availableSounds.filter((arg0) => dependencyMap[arg0.soundId] > 0);
-  const sorted = found.sort((arg0, arg1) => dependencyMap[arg1.soundId] - dependencyMap[arg0.soundId]);
+  const found = availableSounds.filter((arg0) => dependencyMap2[arg0.soundId] > 0);
+  const sorted = found.sort((arg0, arg1) => dependencyMap2[arg1.soundId] - dependencyMap2[arg0.soundId]);
   let id;
-  if (null != channel) {
+  if (channel != null) {
     id = channel.id;
   }
   closure_7(sorted, arg4, id, arg0);

@@ -1,18 +1,18 @@
-// Module ID: 11760
-// Function ID: 91161
+// Module ID: 11785
+// Function ID: 11786
 // Name: ContactSyncError
-// Dependencies: [31, 33, 4165, 4026, 4166, 4161, 2]
+// Dependencies: [19, 21, 4189, 4050, 4190, 4185, 2]
 // Exports: default
 
-// Module 11760 (ContactSyncError)
-import "result";
+// Module 11785 (ContactSyncError)
+import "noop";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
 const require = arg1;
-let closure_4 = _createForOfIteratorHelperLoose.createStyles({ container: { justifyContent: "center" }, error: { paddingHorizontal: 16, textAlign: "center" } });
+let closure_4 = createCacheKey.createStyles({ container: { justifyContent: "center" }, error: { paddingHorizontal: 16, textAlign: "center" } });
 let closure_5 = { code: "function ContactSyncErrorTsx1(){const{withTiming,hasError,ERROR_HEIGHT}=this.__closure;return{height:withTiming(hasError?ERROR_HEIGHT:0)};}" };
-const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/contact_sync/native/components/ContactSyncError.tsx");
+const result = require("createCacheKey").fileFinishedImporting("modules/contact_sync/native/components/ContactSyncError.tsx");
 
 export default function ContactSyncError(error) {
   error = error.error;
@@ -23,24 +23,23 @@ export default function ContactSyncError(error) {
     tmp2 = "" !== error;
   }
   _require = tmp2;
-  let obj = _require(4026);
+  let obj = _require(4050);
   const fn = function l() {
-    const obj = {};
+    let obj = _undefined(outer1_2[4]);
     let num = 0;
     if (_undefined) {
       num = 44;
     }
-    obj.height = _undefined(outer1_2[4]).withTiming(num);
+    obj = { height: obj.withTiming(num) };
     return obj;
   };
-  obj = { withTiming: _require(4166).withTiming, hasError: tmp2, ERROR_HEIGHT: 44 };
+  obj = { withTiming: _require(4190).withTiming, hasError: tmp2, ERROR_HEIGHT: 44 };
   fn.__closure = obj;
   fn.__workletHash = 14558247431913;
   fn.__initData = closure_5;
   const animatedStyle = obj.useAnimatedStyle(fn);
-  obj = { style: items };
+  obj = { style: items, children: null };
   items = [tmp.container, error.style, animatedStyle];
-  const obj1 = { variant: "text-sm/medium", color: "text-feedback-critical", style: tmp.error, children: error };
-  obj.children = jsx(_require(4161).Text, { variant: "text-sm/medium", color: "text-feedback-critical", style: tmp.error, children: error });
-  return jsx(importDefault(4026).View, { style: items });
+  obj[1] = jsx(_require(4185).Text, { variant: "text-sm/medium", color: "text-feedback-critical", style: tmp.error, children: error });
+  return jsx(importDefault(4050).View, { style: items, children: null });
 };

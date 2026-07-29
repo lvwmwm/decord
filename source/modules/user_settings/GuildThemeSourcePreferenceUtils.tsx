@@ -1,28 +1,33 @@
-// Module ID: 1320
-// Function ID: 15522
+// Module ID: 1344
+// Function ID: 1345
 // Name: resolveDefaultGuildThemePreference
-// Dependencies: [1282, 2]
-// Exports: resolveGuildThemeSourcePreference
+// Dependencies: [1306, 2]
+// Exports: resolveDefaultGuildThemePreference, resolveGuildThemeSourcePreference
 
-// Module 1320 (resolveDefaultGuildThemePreference)
-function resolveDefaultGuildThemePreference(defaultGuildThemePreference) {
-  if (defaultGuildThemePreference === require(1282) /* _callSuper */.GuildThemeSourcePreference.PERSONAL) {
-    let GUILD = require(1282) /* _callSuper */.GuildThemeSourcePreference.PERSONAL;
-  } else {
-    GUILD = require(1282) /* _callSuper */.GuildThemeSourcePreference.GUILD;
-  }
-  return GUILD;
-}
+// Module 1344 (resolveDefaultGuildThemePreference)
 const result = require("set").fileFinishedImporting("modules/user_settings/GuildThemeSourcePreferenceUtils.tsx");
 
-export { resolveDefaultGuildThemePreference };
-export const resolveGuildThemeSourcePreference = function resolveGuildThemeSourcePreference(closure_0, defaultGuildThemePreference) {
-  let tmp = closure_0;
-  if (closure_0 !== require(1282) /* _callSuper */.GuildThemeSourcePreference.GUILD) {
-    tmp = closure_0;
-    if (closure_0 !== require(1282) /* _callSuper */.GuildThemeSourcePreference.PERSONAL) {
-      tmp = resolveDefaultGuildThemePreference(defaultGuildThemePreference);
+export const resolveDefaultGuildThemePreference = function resolveDefaultGuildThemePreference(arg0) {
+  if (arg0 === require(1306) /* create */.GuildThemeSourcePreference.PERSONAL) {
+    let GUILD = tmp(1306).GuildThemeSourcePreference.PERSONAL;
+  } else {
+    GUILD = tmp(1306).GuildThemeSourcePreference.GUILD;
+  }
+  return GUILD;
+};
+export const resolveGuildThemeSourcePreference = function resolveGuildThemeSourcePreference(arg0, arg1) {
+  let GuildThemeSourcePreference = dependencyMap;
+  let tmp2 = arg0;
+  if (arg0 !== require(1306) /* create */.GuildThemeSourcePreference.GUILD) {
+    tmp2 = arg0;
+    if (arg0 !== tmp(1306).GuildThemeSourcePreference.PERSONAL) {
+      if (arg1 === tmp(1306).GuildThemeSourcePreference.PERSONAL) {
+        GuildThemeSourcePreference = tmp(1306).GuildThemeSourcePreference;
+        let GUILD = GuildThemeSourcePreference.PERSONAL;
+      } else {
+        GUILD = tmp(1306).GuildThemeSourcePreference.GUILD;
+      }
     }
   }
-  return tmp;
+  return tmp2;
 };

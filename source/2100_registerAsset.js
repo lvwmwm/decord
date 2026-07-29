@@ -1,11 +1,10 @@
 // Module ID: 2100
-// Function ID: 22383
+// Function ID: 2101
 // Name: registerAsset
-// Dependencies: [1217]
+// Dependencies: [1241]
 
 // Module 2100 (registerAsset)
 import registerAsset from "registerAsset";
 
-const obj = { __packager_asset: true, httpServerLocation: "/assets/modules/go_live", scales: [1], hash: "f6e3c365e8a3adf05325d11d5ed6a02b", name: "MobileGoLiveActionSheet.compiled.messages", type: "jsona" };
 
-export default registerAsset.registerAsset(obj);
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9nb19saXZl", scales: [1], hash: "4e70995463b5a11d3e807ed811fb7b44", name: "es-419.messages.4e70995463b5a11d3e807ed811fb7b44.compiled.messages", type: "jsona" });

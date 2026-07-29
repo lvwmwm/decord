@@ -1,10 +1,10 @@
-// Module ID: 6021
-// Function ID: 53380
+// Module ID: 6039
+// Function ID: 6040
 // Name: snowflakeSequence
-// Dependencies: [21, 2]
+// Dependencies: [11, 2]
 // Exports: createNonce
 
-// Module 6021 (snowflakeSequence)
+// Module 6039 (snowflakeSequence)
 let c2 = 0;
 const snowflakeSequence = new require("DISCORD_EPOCH").SnowflakeSequence();
 const result = require("set").fileFinishedImporting("modules/messages/createNonce.tsx");
@@ -14,5 +14,5 @@ export const createNonce = function createNonce() {
   if (timestamp !== timestamp) {
     snowflakeSequence.reset();
   }
-  return importDefault(21).fromTimestampWithSequence(timestamp, snowflakeSequence);
+  return importDefault(11).fromTimestampWithSequence(timestamp, snowflakeSequence);
 };

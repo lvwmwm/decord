@@ -1,11 +1,11 @@
-// Module ID: 10055
-// Function ID: 77636
+// Module ID: 10076
+// Function ID: 10077
 // Name: ListSelectionItem
-// Dependencies: [31, 33, 5198, 2]
+// Dependencies: [19, 21, 5220, 2]
 // Exports: default
 
-// Module 10055 (ListSelectionItem)
-import "result";
+// Module 10076 (ListSelectionItem)
+import "noop";
 import { jsx } from "jsxProd";
 
 const require = arg1;
@@ -16,6 +16,7 @@ export default function ListSelectionItem(arg0) {
   let message;
   let onPress;
   ({ Icon, message, onPress } = arg0);
-  const obj = { onPress, label: message, icon: <Icon size={24} /> };
-  return jsx(require(5198) /* TableRowInner */.TableRow, { onPress, label: message, icon: <Icon size={24} /> });
+  const obj = { onPress, label: message, icon: null };
+  obj[2] = <Icon size={24} />;
+  return jsx(require(5220) /* TableRowInner */.TableRow, { onPress, label: message, icon: null });
 };

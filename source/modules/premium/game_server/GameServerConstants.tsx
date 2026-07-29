@@ -1,13 +1,10 @@
-// Module ID: 4054
-// Function ID: 33556
-// Name: NewGamesCoachmarkContent
-// Dependencies: [7, 6, 1857, 4055, 2]
+// Module ID: 4078
+// Function ID: 4079
+// Name: str11
+// Dependencies: [1881, 4079, 2]
 // Exports: GAME_SERVER_SURVEY_URL
 
-// Module 4054 (NewGamesCoachmarkContent)
-import _classCallCheck from "_classCallCheck";
-import importDefaultResult from "_defineProperties";
-
+// Module 4078 (str11)
 let obj = { SELECT_GAME: "select-game", SERVER_SETTINGS: "server-settings" };
 obj = { type: "go-to-step", step: obj.SERVER_SETTINGS };
 obj = { type: "go-to-step", step: obj.SELECT_GAME };
@@ -43,32 +40,27 @@ if ("production" !== window.GLOBAL_ENV.PROJECT_ENV) {
   str8 = str9;
 }
 class NewGamesCoachmarkContent {
-  constructor() {
-    tmp = c0(this, NewGamesCoachmarkContent);
-    return;
-  }
 }
-const importDefaultResultResult = require("_defineProperties")(NewGamesCoachmarkContent);
 let str11 = "1497097140001046528";
 if ("production" === window.GLOBAL_ENV.PROJECT_ENV) {
   str11 = "1497100850261131334";
 }
-importDefaultResultResult.FEATURED_PRODUCT_ID = str11;
+NewGamesCoachmarkContent.FEATURED_PRODUCT_ID = str11;
 let str12 = "1497095960202051584";
 if ("production" === window.GLOBAL_ENV.PROJECT_ENV) {
   str12 = "1440133627899023452";
 }
-importDefaultResultResult.FEATURED_GAME_ID = str12;
-importDefaultResultResult.FEATURED_GAME_NAME = "Windrose";
-importDefaultResultResult.SECOND_GAME_NAME = "Factorio";
-importDefaultResultResult.THIRD_GAME_NAME = "V Rising";
-const obj1 = {};
+NewGamesCoachmarkContent.FEATURED_GAME_ID = str12;
+NewGamesCoachmarkContent.FEATURED_GAME_NAME = "Windrose";
+NewGamesCoachmarkContent.SECOND_GAME_NAME = "Factorio";
+NewGamesCoachmarkContent.THIRD_GAME_NAME = "V Rising";
 let str13 = "https://discord.shockbyte.com/support";
 if (window.GLOBAL_ENV.RELEASE_CHANNEL === require("Environments").Environments.STAGING) {
   str13 = "https://purple-prod.shockbyte.dev/support";
 }
+const obj1 = {};
 obj1[require("GameServerProviderType").GameServerProviderType.SHOCKBYTE] = str13;
-const result = require("Environments").fileFinishedImporting("modules/premium/game_server/GameServerConstants.tsx");
+const result = require("set").fileFinishedImporting("modules/premium/game_server/GameServerConstants.tsx");
 
 export const GameServerSetupStep = obj;
 export const GAME_SERVER_DEFAULT_STEP_CONFIG = { steps: { [obj.SELECT_GAME]: { onBack: { type: "close" }, onNext: obj }, [obj.SERVER_SETTINGS]: { onBack: obj, onNext: { type: "save" } } } };
@@ -76,15 +68,16 @@ export const GAME_SERVER_SLIDE_PADDING = 24;
 export const GAME_SERVER_SLIDE_WIDTH = 680;
 export const GAME_SERVER_SLIDE_CONTENT_WIDTH = 632;
 export const GAME_SERVER_MAX_INSTANCES = 10;
+export const GAME_SERVER_MAX_SERVERS_PER_USER = 5;
 export const GAME_SERVER_MAX_NAME_LENGTH = 32;
 export const GAME_SERVER_MIN_DELAY_TIME_MS = 1000;
 export const GAME_SERVER_COLLECTION_ID = str;
 export const RUNESCAPE_GAME_ID = str4;
 export const MINECRAFT_GAME_ID = str5;
 export const HYTALE_GAME_ID = str8;
-export const NewGamesCoachmarkContent = importDefaultResultResult;
+export { NewGamesCoachmarkContent };
 export const GameServerGameProvider = { SHOCKBYTE: 0, [0]: "SHOCKBYTE" };
 export const GAME_SERVER_SUPPORT_URLS = obj1;
-export const GAME_SERVER_TOS = { [arg1(4055).GameServerProviderType.SHOCKBYTE]: "https://shockbyte.com/legal/acceptable-use-policy" };
+export const GAME_SERVER_TOS = { [require(4079).GameServerProviderType.SHOCKBYTE]: "https://shockbyte.com/legal/acceptable-use-policy" };
 export const GAME_SERVER_SURVEY_URL = (arg0, arg1) => "https://discord.sjc1.qualtrics.com/jfe/form/SV_2h34PnQLPTCjTTM?user_id=" + arg0 + "&guild_id=" + arg1;
 export const GAME_SERVER_POWERUP_SKU_ID = "0";

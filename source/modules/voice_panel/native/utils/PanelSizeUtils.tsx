@@ -1,35 +1,31 @@
-// Module ID: 15871
-// Function ID: 122318
-// Name: getMaxPanelWidth
-// Dependencies: [10016, 2]
+// Module ID: 15906
+// Function ID: 15907
+// Name: VOICE_PANEL_DRAWER_MAX_WIDTH
+// Dependencies: [10038, 2]
+// Exports: getMaxPanelWidth, getPanelX
 
-// Module 15871 (getMaxPanelWidth)
-import { VOICE_PANEL_DRAWER_MAX_WIDTH as closure_0 } from "VoicePanelModes";
+// Module 15906 (VOICE_PANEL_DRAWER_MAX_WIDTH)
+import { VOICE_PANEL_DRAWER_MAX_WIDTH } from "VoicePanelModes";
 
-let closure_1 = { code: "function getMaxPanelWidth_PanelSizeUtilsTsx1({windowWidth:windowWidth,connected:connected,safeAreaLeft:safeAreaLeft,safeAreaRight:safeAreaRight}){const{VOICE_PANEL_DRAWER_MAX_WIDTH}=this.__closure;return Math.min(windowWidth,connected?windowWidth:Math.min(VOICE_PANEL_DRAWER_MAX_WIDTH,windowWidth-safeAreaLeft-safeAreaRight));}" };
-let closure_2 = { code: "function getPanelX_PanelSizeUtilsTsx2(windowWidth,width){return(windowWidth-width)/2;}" };
-const tmp2 = (() => {
-  export function getMaxPanelWidth(windowWidth) {
-    windowWidth = windowWidth.windowWidth;
-    let bound = windowWidth;
-    if (!windowWidth.connected) {
-      const _Math = Math;
-      bound = Math.min(outer1_0, windowWidth - tmp - tmp2);
-    }
-    return Math.min(windowWidth, bound);
+function getMaxPanelWidth(windowWidth) {
+  windowWidth = windowWidth.windowWidth;
+  let bound = windowWidth;
+  if (!windowWidth.connected) {
+    const _Math = Math;
+    bound = Math.min(VOICE_PANEL_DRAWER_MAX_WIDTH, windowWidth - tmp - tmp2);
   }
-  getMaxPanelWidth.__closure = { VOICE_PANEL_DRAWER_MAX_WIDTH: closure_0 };
-  getMaxPanelWidth.__workletHash = 6813992446153;
-  getMaxPanelWidth.__initData = closure_1;
-  return getMaxPanelWidth;
-})();
-const tmp3 = (() => {
-  export function getPanelX(width, maxPanelWidth) {
-    return (width - maxPanelWidth) / 2;
-  }
-  getPanelX.__closure = {};
-  getPanelX.__workletHash = 6050807520832;
-  getPanelX.__initData = closure_2;
-  return getPanelX;
-})();
+  return Math.min(windowWidth, bound);
+}
+getMaxPanelWidth.__closure = { VOICE_PANEL_DRAWER_MAX_WIDTH };
+getMaxPanelWidth.__workletHash = 6813992446153;
+getMaxPanelWidth.__initData = { code: "function getMaxPanelWidth_PanelSizeUtilsTsx1({windowWidth:windowWidth,connected:connected,safeAreaLeft:safeAreaLeft,safeAreaRight:safeAreaRight}){const{VOICE_PANEL_DRAWER_MAX_WIDTH}=this.__closure;return Math.min(windowWidth,connected?windowWidth:Math.min(VOICE_PANEL_DRAWER_MAX_WIDTH,windowWidth-safeAreaLeft-safeAreaRight));}" };
+function getPanelX(width, maxPanelWidth) {
+  return (width - maxPanelWidth) / 2;
+}
+getPanelX.__closure = {};
+getPanelX.__workletHash = 6050807520832;
+getPanelX.__initData = { code: "function getPanelX_PanelSizeUtilsTsx2(windowWidth,width){return(windowWidth-width)/2;}" };
 const result = require("set").fileFinishedImporting("modules/voice_panel/native/utils/PanelSizeUtils.tsx");
+
+export { getMaxPanelWidth };
+export { getPanelX };

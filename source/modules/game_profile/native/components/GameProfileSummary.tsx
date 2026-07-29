@@ -1,36 +1,40 @@
-// Module ID: 8619
-// Function ID: 68288
+// Module ID: 8643
+// Function ID: 8644
 // Name: GameProfileSummary
-// Dependencies: [57, 31, 27, 33, 4165, 8462, 1212, 4161, 2]
+// Dependencies: [32, 19, 17, 21, 4189, 8486, 1236, 4185, 2]
 // Exports: default
 
-// Module 8619 (GameProfileSummary)
+// Module 8643 (GameProfileSummary)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
+import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_4;
-let closure_5;
+let c4;
+let c5;
 let closure_6;
-let closure_7;
+let error;
 const require = arg1;
-({ View: closure_4, Pressable: closure_5 } = get_ActivityIndicator);
-({ jsx: closure_6, jsxs: closure_7 } = jsxProd);
-let closure_8 = _createForOfIteratorHelperLoose.createStyles({ container: { flexDirection: "column" } });
+({ View: c4, Pressable: c5 } = get_ActivityIndicator);
+({ jsx: closure_6, jsxs: error } = jsxProd);
+let closure_8 = createCacheKey.createStyles({ container: { flexDirection: "column" } });
 const result = require("get ActivityIndicator").fileFinishedImporting("modules/game_profile/native/components/GameProfileSummary.tsx");
 
 export default function GameProfileSummary(arg0) {
   let game;
   let trackAction;
   ({ game, trackAction } = arg0);
+  let first;
+  let callback;
+  let first1;
+  let closure_4;
   const tmp2 = callback(first1.useState(false), 2);
-  const first = tmp2[0];
+  first = tmp2[0];
   callback = tmp2[1];
   const tmp4 = callback(first1.useState(null), 2);
   first1 = tmp4[0];
-  let closure_4 = tmp4[1];
+  closure_4 = tmp4[1];
   const items = [first1];
   const items1 = [first, trackAction];
   callback = first1.useCallback((nativeEvent) => {
@@ -41,15 +45,15 @@ export default function GameProfileSummary(arg0) {
   let summaryLocalized;
   const callback1 = first1.useCallback(() => {
     const GameProfileTrackActionActions = trackAction(first[5]).GameProfileTrackActionActions;
-    trackAction(!first ? GameProfileTrackActionActions.ShowMore : GameProfileTrackActionActions.ShowLess);
+    trackAction(first ? GameProfileTrackActionActions.ShowLess : GameProfileTrackActionActions.ShowMore);
     callback(!first);
   }, items1);
-  if (null != game) {
+  if (game != null) {
     summaryLocalized = game.summaryLocalized;
   }
-  if (null == summaryLocalized) {
+  if (summaryLocalized == null) {
     let description;
-    if (null != game) {
+    if (game != null) {
       description = game.description;
     }
     summaryLocalized = description;
@@ -60,19 +64,26 @@ export default function GameProfileSummary(arg0) {
     const intl = trackAction(first[6]).intl;
     const t = trackAction(first[6]).t;
     const stringResult = intl.string(first ? t["6MwJo/"] : t.lBeKY2);
-    let obj = { style: tmp.container };
-    obj = { variant: "text-md/normal", color: "interactive-text-active", lineClamp: num2, onTextLayout: callback, children: summaryLocalized };
-    const items2 = [callback2(trackAction(first[7]).Text, obj), ];
-    let tmp16 = null;
+    let obj = { style: null, children: null };
+    obj[0] = tmp.container;
+    obj = { variant: "text-md/normal", color: "interactive-text-active", lineClamp: null, onTextLayout: null, children: null };
+    obj[2] = num;
+    obj[3] = callback;
+    obj[4] = summaryLocalized;
+    const items2 = [closure_6(trackAction(first[7]).Text, obj), ];
+    let tmp13Result = null;
     if (first1) {
-      obj = { onPress: callback1, accessibilityRole: "button", accessibilityLabel: stringResult };
-      const obj1 = { variant: "text-md/medium", color: "text-brand", children: stringResult };
-      obj.children = callback2(trackAction(first[7]).Text, obj1);
-      tmp16 = callback2(closure_5, obj);
+      obj = { onPress: null, accessibilityRole: "button", accessibilityLabel: null, children: null };
+      obj[0] = callback1;
+      obj[2] = stringResult;
+      const obj1 = { variant: "text-md/medium", color: "text-brand", children: null };
+      obj1[2] = stringResult;
+      obj[3] = tmp13(tmp16(tmp17[7]).Text, obj1);
+      tmp13Result = tmp13(closure_5, obj);
     }
-    items2[1] = tmp16;
-    obj.children = items2;
+    items2[1] = tmp13Result;
+    obj[1] = items2;
     return closure_7(closure_4, obj);
   }
-  tmp = callback3();
+  tmp = callback2();
 };

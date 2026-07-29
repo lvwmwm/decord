@@ -1,8 +1,8 @@
-// Module ID: 26
-// Function ID: 1109
+// Module ID: 16
+// Function ID: 17
 // Dependencies: [2]
 
-// Module 26
+// Module 16
 if (null == window.GLOBAL_ENV) {
   const _window = window;
   window.GLOBAL_ENV = {};

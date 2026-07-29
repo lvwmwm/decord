@@ -1,22 +1,50 @@
-// Module ID: 5671
-// Function ID: 48269
-// Name: getNonTestModeUrlForApplication
-// Dependencies: [5672, 5673, 2]
-// Exports: default
+// Module ID: 5689
+// Function ID: 5690
+// Name: getURLForApplication
+// Dependencies: [5690, 5691, 2]
+// Exports: default, getNonTestModeUrlForApplication, isUsingDevShelfActivityUrlOverride
 
-// Module 5671 (getNonTestModeUrlForApplication)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_1 from "_isNativeReflectConstruct";
+// Module 5689 (getURLForApplication)
+import reset from "reset";
+import initialize from "initialize";
 
-function getNonTestModeUrlForApplication(arg0) {
+const result = require("set").fileFinishedImporting("modules/activities/getURLForApplication.tsx");
+
+export default function getURLForApplication(arg0) {
+  const state = store.getState();
+  let useActivityUrlOverride = state.useActivityUrlOverride;
+  if (useActivityUrlOverride) {
+    useActivityUrlOverride = null != state.activityUrlOverride;
+  }
+  if (useActivityUrlOverride) {
+    useActivityUrlOverride = "" !== state.activityUrlOverride;
+  }
+  if (useActivityUrlOverride) {
+    let activityUrlOverride = store.getState().activityUrlOverride;
+  } else {
+    if (reset.inTestModeForEmbeddedApplication(arg0)) {
+      activityUrlOverride = tmp4.testModeOriginURL;
+    } else {
+      const _window = window;
+      activityUrlOverride = null;
+      if (null != ACTIVITY_APPLICATION_HOST) {
+        const _HermesInternal = HermesInternal;
+        activityUrlOverride = "https://" + arg0 + "." + ACTIVITY_APPLICATION_HOST;
+      }
+    }
+    tmp4 = reset;
+  }
+  return activityUrlOverride;
+};
+export const getNonTestModeUrlForApplication = function getNonTestModeUrlForApplication(arg0) {
   let combined = null;
   if (null != ACTIVITY_APPLICATION_HOST) {
     const _HermesInternal = HermesInternal;
     combined = "https://" + arg0 + "." + ACTIVITY_APPLICATION_HOST;
   }
   return combined;
-}
-function isUsingDevShelfActivityUrlOverride() {
+};
+export const isUsingDevShelfActivityUrlOverride = function isUsingDevShelfActivityUrlOverride() {
   const state = store.getState();
   let useActivityUrlOverride = state.useActivityUrlOverride;
   if (useActivityUrlOverride) {
@@ -26,18 +54,4 @@ function isUsingDevShelfActivityUrlOverride() {
     useActivityUrlOverride = "" !== state.activityUrlOverride;
   }
   return useActivityUrlOverride;
-}
-const result = require("set").fileFinishedImporting("modules/activities/getURLForApplication.tsx");
-
-export default function getURLForApplication(arg0) {
-  if (isUsingDevShelfActivityUrlOverride()) {
-    let testModeOriginURL = store.getState().activityUrlOverride;
-  } else if (_isNativeReflectConstruct.inTestModeForEmbeddedApplication(arg0)) {
-    testModeOriginURL = _isNativeReflectConstruct.testModeOriginURL;
-  } else {
-    testModeOriginURL = getNonTestModeUrlForApplication(arg0);
-  }
-  return testModeOriginURL;
 };
-export { getNonTestModeUrlForApplication };
-export { isUsingDevShelfActivityUrlOverride };

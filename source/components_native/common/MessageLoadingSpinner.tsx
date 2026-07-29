@@ -1,11 +1,11 @@
-// Module ID: 10538
-// Function ID: 81535
+// Module ID: 10562
+// Function ID: 10563
 // Name: result
-// Dependencies: [31, 27, 33, 477, 3869, 689, 5619, 2]
+// Dependencies: [19, 17, 21, 500, 3893, 712, 5637, 2]
 // Exports: default
 
-// Module 10538 (result)
-import "result";
+// Module 10562 (result)
+import "noop";
 import { jsx } from "jsxProd";
 import set from "set";
 import set from "jsxProd";
@@ -15,24 +15,25 @@ let result = null;
 if (!set.isAndroid()) {
   result = require("get ActivityIndicator").requireNativeComponent("DCDMessageLoadingSpinner");
 }
+let c4 = result;
 const result1 = set.fileFinishedImporting("components_native/common/MessageLoadingSpinner.tsx");
 
 export default function MessageLoadingSpinner(color) {
-  let obj = require(3869) /* map */;
-  let token = obj.useToken(importDefault(689).colors.BACKGROUND_BRAND);
+  let obj = require(3893) /* map */;
   color = color.color;
-  if (null != color) {
-    token = color;
+  if (color == null) {
+    color = obj.useToken(importDefault(712).colors.BACKGROUND_BRAND);
   }
   if (null != closure_4) {
     obj = {};
     const merged = Object.assign(color);
-    obj["color"] = token;
-    let tmp8 = <closure_4 />;
+    obj.color = color;
+    let tmp8 = <tmp3 />;
   } else {
-    obj = { animating: color.animate };
+    obj = { animating: null };
+    obj[0] = color.animate;
     const merged1 = Object.assign(color);
-    tmp8 = jsx(require(5619) /* ActivityIndicator */.ActivityIndicator, { animating: color.animate });
+    tmp8 = jsx(require(5637) /* ActivityIndicator */.ActivityIndicator, { animating: null });
   }
   return tmp8;
 };

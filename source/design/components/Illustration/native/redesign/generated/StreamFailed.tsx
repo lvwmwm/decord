@@ -1,37 +1,54 @@
-// Module ID: 10527
-// Function ID: 81475
+// Module ID: 10551
+// Function ID: 10552
 // Name: getStreamFailedSource
-// Dependencies: [31, 27, 33, 6517, 10528, 10529, 4011, 2]
-// Exports: StreamFailed
+// Dependencies: [19, 17, 21, 6538, 10552, 10553, 4035, 2]
+// Exports: StreamFailed, getStreamFailedSource, useStreamFailedSource
 
-// Module 10527 (getStreamFailedSource)
-import "result";
+// Module 10551 (getStreamFailedSource)
+import "noop";
 import { Image } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
 
 const require = arg1;
-function getStreamFailedSource(theme) {
-  let obj = require(6517) /* getIllustrationSource */;
+const result = require("jsxProd").fileFinishedImporting("design/components/Illustration/native/redesign/generated/StreamFailed.tsx");
+
+export const getStreamFailedSource = function getStreamFailedSource(theme) {
+  let obj = require(6538) /* getIllustrationSource */;
   obj = {
     dark() {
-      return outer1_0(outer1_1[4]);
+      return callback(10552);
     },
     darker() {
-      return outer1_0(outer1_1[5]);
+      return callback(10553);
     }
   };
   return obj.getIllustrationSource(theme, obj);
-}
-function useStreamFailedSource() {
-  return getStreamFailedSource(require(4011) /* AccessibilityAnnouncer */.useThemeContext().theme);
-}
-const result = require("jsxProd").fileFinishedImporting("design/components/Illustration/native/redesign/generated/StreamFailed.tsx");
-
-export { getStreamFailedSource };
-export { useStreamFailedSource };
+};
+export const useStreamFailedSource = function useStreamFailedSource() {
+  let obj = require(4035) /* AccessibilityAnnouncer */;
+  obj = {
+    dark() {
+      return callback(10552);
+    },
+    darker() {
+      return callback(10553);
+    }
+  };
+  return require(6538) /* getIllustrationSource */.getIllustrationSource(obj.useThemeContext().theme, obj);
+};
 export const StreamFailed = function StreamFailed(arg0) {
-  const obj = {};
+  let obj = require(4035) /* AccessibilityAnnouncer */;
+  obj = {
+    dark() {
+      return callback(10552);
+    },
+    darker() {
+      return callback(10553);
+    }
+  };
+  obj = {};
+  const illustrationSource = require(6538) /* getIllustrationSource */.getIllustrationSource(obj.useThemeContext().theme, obj);
   const merged = Object.assign(arg0);
-  obj["source"] = useStreamFailedSource();
+  obj.source = illustrationSource;
   return <Image />;
 };

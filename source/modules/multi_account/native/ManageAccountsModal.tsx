@@ -1,53 +1,125 @@
-// Module ID: 15216
-// Function ID: 115657
+// Module ID: 15249
+// Function ID: 15250
 // Name: RemoveMultiAccountUserButton
-// Dependencies: [57, 5, 31, 27, 1194, 4005, 1850, 11484, 11485, 15217, 653, 33, 9085, 4165, 689, 566, 1273, 4506, 1212, 11488, 4695, 14307, 14839, 4026, 4166, 8101, 675, 5155, 15218, 14840, 10367, 15219, 5209, 7611, 11284, 5552, 9094, 10163, 14865, 5623, 9167, 14864, 2]
+// Dependencies: [32, 5, 19, 17, 1218, 4029, 1874, 11508, 11509, 15250, 676, 21, 9109, 4189, 712, 589, 1297, 4529, 1236, 11512, 4717, 14329, 14865, 4050, 4190, 8125, 698, 5177, 15251, 14866, 10391, 15252, 5231, 7634, 11308, 5570, 9118, 10184, 14891, 5641, 9191, 14890, 2]
 
-// Module 15216 (RemoveMultiAccountUserButton)
-import _slicedToArray from "_slicedToArray";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import importAllResult from "module_15219";
-import { View } from "SafeAreaPaddingView";
-import closure_8 from "_isNativeReflectConstruct";
-import closure_9 from "_isNativeReflectConstruct";
-import closure_10 from "_isNativeReflectConstruct";
-import { MultiAccountTokenStatus } from "_isNativeReflectConstruct";
+// Module 15249 (RemoveMultiAccountUserButton)
+import DragIcon from "DragIcon";
+import initialize from "initialize";
+import importAllResult from "validateMultiAccountTokens";
+import { View } from "module_4529";
+import fetchFingerprint from "fetchFingerprint";
+import closure_9 from "initialize";
+import mergeGuildAvatar from "mergeGuildAvatar";
+import { MultiAccountTokenStatus } from "initialize";
 import MAX_ACCOUNTS from "MAX_ACCOUNTS";
 import { ManageAccountsScreens } from "ManageAccountsScreens";
 import ME from "ME";
-import jsxProd from "Form";
+import jsxProd from "CircleMinusIcon";
 import createNativeStackNavigator from "createNativeStackNavigator";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
 let closure_12;
-let closure_13;
 let closure_14;
 let closure_16;
 let closure_17;
 let closure_18;
 let closure_19;
+let map1;
 const require = arg1;
 function RemoveMultiAccountUserButton(user) {
   user = user.user;
   let importDefault;
   function _handlePressRemove() {
-    // CreateGeneratorClosureLongIndex (0x67)
-    const obj = outer1_5(tmp);
-    return obj(...arguments);
+    const self = this;
+    const tmp = outer1_5(function*() {
+      if (v02 === 2) {
+        v02 = 3;
+        HermesBuiltin.throwTypeError();
+      } else if (tmp4 === 3) {
+        if (arg0 === 1) {
+          throw arg1;
+        } else if (arg0 === 2) {
+          let obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
+        } else {
+          return { value: "HermesInternal", done: null };
+        }
+      } else {
+        try {
+          v02 = 2;
+          if (0 === v0) {
+            if (arg0 === 1) {
+              v02 = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              v02 = 3;
+              obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            } else {
+              const id = tmp2;
+              const obj1 = { title: null, body: null, confirmText: null, confirmColor: null, cancelText: null, isDismissable: true };
+              const intl = outer1_0(outer1_3[18]).intl;
+              obj1[0] = intl.string(outer1_0(outer1_3[18]).t.n0Fbg6);
+              const intl2 = outer1_0(outer1_3[18]).intl;
+              const obj2 = { username: null };
+              obj2[0] = v0;
+              obj1[1] = intl2.formatToPlainString(outer1_0(outer1_3[18]).t.phEQmS, obj2);
+              const intl3 = outer1_0(outer1_3[18]).intl;
+              obj1[2] = intl3.string(outer1_0(outer1_3[18]).t.N86XcP);
+              obj1[3] = outer1_0(outer1_3[16]).ButtonColors.RED;
+              const intl4 = outer1_0(outer1_3[18]).intl;
+              obj1[4] = intl4.string(outer1_0(outer1_3[18]).t["ETE/oC"]);
+              v0 = 1;
+              v02 = 1;
+              const obj3 = { value: null, done: false };
+              obj3[0] = v0(outer1_3[17]).confirm(obj1);
+              return obj3;
+            }
+          } else if (arg0 === 1) {
+            v02 = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            v02 = 3;
+            const obj4 = { value: null, done: true };
+            obj4[0] = arg1;
+            return obj4;
+          } else {
+            if (arg1) {
+              obj = v02(outer1_3[19]);
+              obj.removeAccount(id.id);
+            }
+            v02 = 3;
+            return { value: "HermesInternal", done: null };
+          }
+        } catch (tmp11) {
+          v02 = tmp;
+          throw tmp11;
+        }
+      }
+    });
+    const _handlePressRemove = tmp;
+    const apply = tmp.apply;
+    if (typeof apply === "unknown") {
+      let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+    } else {
+      applyArgumentsResult = apply(self, arguments);
+    }
+    return applyArgumentsResult;
   }
-  let obj = user(566);
+  let obj = user(589);
   const items = [closure_9];
-  let stateFromStores = obj.useStateFromStores(items, () => outer1_9.hidePersonalInformation);
-  let obj1 = user(566);
-  const items1 = [closure_10];
-  const stateFromStores1 = obj1.useStateFromStores(items1, () => outer1_10.getCurrentUser());
+  let stateFromStores = obj.useStateFromStores(items, () => obj.hidePersonalInformation);
+  const items1 = [mergeGuildAvatar];
+  const stateFromStores1 = user(589).useStateFromStores(items1, () => currentUser.getCurrentUser());
   let id;
-  if (null != stateFromStores1) {
+  if (stateFromStores1 != null) {
     id = stateFromStores1.id;
   }
   if (id === user.id) {
-    obj = { size: 21 };
-    return callback2(user(1273).Spacer, obj);
+    return callback2(tmp(1297).Spacer, { size: 21 });
   } else {
     const username = user.username;
     importDefault = username;
@@ -58,47 +130,63 @@ function RemoveMultiAccountUserButton(user) {
       const _HermesInternal = HermesInternal;
       importDefault = username + "#" + user.discriminator;
     }
-    obj = { accessibilityRole: "button" };
-    const intl = user(1212).intl;
-    obj.accessibilityLabel = intl.string(user(1212).t.lSLMaU);
-    obj.onPress = function handlePressRemove() {
-      return _handlePressRemove(...arguments);
+    obj = { accessibilityRole: "button", accessibilityLabel: null, onPress: null, children: null };
+    let intl = tmp(1236).intl;
+    obj[1] = intl.string(tmp(1236).t.lSLMaU);
+    obj[2] = function handlePressRemove() {
+      const self = this;
+      const apply = _handlePressRemove.apply;
+      if (typeof apply === "unknown") {
+        let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+      } else {
+        applyArgumentsResult = apply(self, arguments);
+      }
+      return applyArgumentsResult;
     };
-    obj1 = { color: importDefault(689).colors.ICON_FEEDBACK_CRITICAL };
-    obj.children = callback2(user(14307).CircleMinusIcon, obj1);
-    return callback2(user(4695).PressableOpacity, obj);
+    obj = { color: null };
+    obj[0] = importDefault(712).colors.ICON_FEEDBACK_CRITICAL;
+    obj[3] = callback2(tmp(14329).CircleMinusIcon, obj);
+    return callback2(tmp(4717).PressableOpacity, obj);
   }
+  let obj2 = user(589);
 }
 function ManageAccounts(isEditing) {
   isEditing = isEditing.isEditing;
   const navigation = isEditing.navigation;
-  let tmp = callback4();
-  const importAll = tmp;
+  let c2;
+  let multiAccountUsers;
+  let currentUserId;
+  let sharedValue;
+  let importAllResult;
+  let closure_7;
+  const tmp = callback4();
+  c2 = tmp;
   let obj = isEditing(multiAccountUsers[22]);
   multiAccountUsers = obj.useMultiAccountUsers().multiAccountUsers;
   let obj1 = isEditing(multiAccountUsers[15]);
-  const items = [closure_8];
-  const currentUserId = obj1.useStateFromStoresObject(items, () => ({ currentUserId: outer1_8.getId() })).currentUserId;
+  const items = [fetchFingerprint];
+  currentUserId = obj1.useStateFromStoresObject(items, () => ({ currentUserId: id.getId() })).currentUserId;
   let obj2 = isEditing(multiAccountUsers[23]);
-  const sharedValue = obj2.useSharedValue(0);
+  sharedValue = obj2.useSharedValue(0);
   let obj3 = isEditing(multiAccountUsers[23]);
-  let fn = function c() {
-    let obj = {};
+  let fn = function l() {
+    let obj = { width: null };
     obj = { duration: outer1_12 };
-    obj.width = isEditing(multiAccountUsers[24]).withTiming(sharedValue.get(), obj);
+    obj[0] = isEditing(multiAccountUsers[24]).withTiming(sharedValue.get(), obj);
     return obj;
   };
   obj = { withTiming: isEditing(multiAccountUsers[24]).withTiming, leadingWidth: sharedValue, MANAGE_EDIT_TRANSITION_DURATION: closure_12 };
   fn.__closure = obj;
   fn.__workletHash = 3389178545077;
-  fn.__initData = closure_22;
-  let closure_7 = navigation(multiAccountUsers[25])(isEditing);
-  const effect = obj3.useAnimatedStyle(fn).useEffect(() => {
-    let tmp = null != closure_7;
-    if (tmp) {
-      tmp = closure_7 !== isEditing;
+  fn.__initData = closure_23;
+  importAllResult = obj3.useAnimatedStyle(fn);
+  closure_7 = navigation(multiAccountUsers[25])(isEditing);
+  const effect = importAllResult.useEffect(() => {
+    let tmp2 = null != closure_7;
+    if (tmp2) {
+      tmp2 = tmp !== isEditing;
     }
-    if (tmp) {
+    if (tmp2) {
       let num = 0;
       if (isEditing) {
         num = 37;
@@ -106,20 +194,20 @@ function ManageAccounts(isEditing) {
       const result = sharedValue.set(num);
     }
   });
-  obj = { style: tmp.container, bottom: true };
+  obj = { style: tmp.container, bottom: true, children: null };
   obj1 = {
     data: multiAccountUsers,
     onRowMoved: function handleUserMove(arg0) {
       let from;
       let to;
       ({ from, to } = arg0);
-      tmp(multiAccountUsers[19]).moveAccount(from, to);
+      _undefined(multiAccountUsers[19]).moveAccount(from, to);
     },
     disableSorting: !isEditing,
     wrapperStyles: tmp.sortableListView,
     renderRow(user) {
       let closure_0 = user;
-      let obj = { user };
+      let obj = { user, onPressUser: null, showActiveAccountLabel: true, leading: null, trailing: null, delayLongPress: null };
       let fn = null;
       if (!closure_0) {
         fn = () => {
@@ -127,168 +215,170 @@ function ManageAccounts(isEditing) {
             if (tmp.id !== outer1_4) {
               if (tmp.tokenStatus === outer2_11.INVALID) {
                 outer1_1.push(outer2_17.LOGIN);
-                let obj = navigation(multiAccountUsers[26]);
-                obj = { source: "multi_account_invalid_user" };
-                obj.track(outer2_16.LOGIN_VIEWED, obj);
+                navigation(multiAccountUsers[26]).track(outer2_16.LOGIN_VIEWED, { source: "multi_account_invalid_user" });
+                const obj2 = navigation(multiAccountUsers[26]);
               } else {
-                callback(multiAccountUsers[19]).switchAccount(tmp.id, obj, outer2_14.MANAGE_ACCOUNTS_MODAL);
-                const obj2 = callback(multiAccountUsers[19]);
+                callback(multiAccountUsers[19]).switchAccount(tmp.id, undefined, outer2_14.MANAGE_ACCOUNTS_MODAL);
+                const obj = callback(multiAccountUsers[19]);
               }
             }
           }
         };
       }
-      obj.onPressUser = fn;
-      obj.showActiveAccountLabel = true;
-      obj = { component: navigation(multiAccountUsers[23]).View, transitionEnter: true, transitionLeave: true, style: closure_6 };
-      let tmp4 = closure_0;
+      obj[1] = fn;
+      obj = { component: null, transitionEnter: true, transitionLeave: true, style: null, children: null };
+      obj[0] = navigation(multiAccountUsers[23]).View;
+      obj[3] = closure_6;
+      let tmpResult = tmp5;
       if (closure_0) {
-        obj = { duration: outer1_12 };
-        const obj1 = { user };
-        obj.children = outer1_18(outer1_23, obj1);
-        tmp4 = outer1_18(navigation(multiAccountUsers[31]), obj);
-        const tmp8 = navigation(multiAccountUsers[31]);
+        obj = { duration: null, children: null };
+        obj[0] = outer1_12;
+        const obj1 = { user: null };
+        obj1[0] = user;
+        let tmp2Result = tmp2(tmp3[31]);
+        obj[1] = tmp(outer1_22, obj1);
+        tmpResult = tmp(tmp2Result, obj);
       }
-      obj.children = tmp4;
-      obj.leading = outer1_18(isEditing(multiAccountUsers[30]).TransitionGroup, obj);
-      let obj2 = { component: closure_7, transitionEnter: true, transitionLeave: true, transitionAppear: true, style: outer1_18.trailingIconContainer };
-      const tmp15 = navigation(multiAccountUsers[31]);
-      const obj3 = { duration: outer1_12, style: outer1_18.trailingIcon };
+      obj[4] = tmpResult;
+      obj[3] = outer1_18(isEditing(multiAccountUsers[30]).TransitionGroup, obj);
+      let obj2 = { component: closure_7, transitionEnter: true, transitionLeave: true, transitionAppear: true, style: _undefined.trailingIconContainer, children: null };
+      tmp2Result = tmp2(tmp3[31]);
+      const obj3 = { duration: outer1_12, style: _undefined.trailingIcon, children: null };
       if (closure_0) {
-        obj3.children = tmp16(tmp17(tmp14[32]).DragIcon, {});
-        let tmp13Result = tmp13(tmp15, obj3, "drag");
+        obj3[2] = tmp(tmp6(tmp3[32]).DragIcon, {});
+        tmpResult = tmp(tmp2Result, obj3, "drag");
       } else {
-        const obj4 = { user };
-        obj3.children = tmp16(tmp17(tmp14[29]).AccountStatusIcon, obj4);
-        tmp13Result = tmp13(tmp15, obj3, "status");
+        const obj4 = { user: null };
+        obj4[0] = user;
+        obj3[2] = tmp(tmp6(tmp3[29]).AccountStatusIcon, obj4);
+        tmpResult = tmp(tmp2Result, obj3, "status");
       }
-      obj2.children = tmp13Result;
-      obj.trailing = outer1_18(isEditing(multiAccountUsers[30]).TransitionGroup, obj2);
-      let num3;
+      obj2[5] = tmpResult;
+      obj[4] = outer1_18(isEditing(multiAccountUsers[30]).TransitionGroup, obj2);
+      let num;
       if (closure_0) {
-        num3 = 100;
+        num = 100;
       }
-      obj.delayLongPress = num3;
+      obj[5] = num;
       return outer1_18(navigation(multiAccountUsers[29]), obj, arg1);
     },
     keyboardShouldPersistTaps: "handled",
     scrollEventThrottle: 16,
-    scrollEnabled: true
+    scrollEnabled: true,
+    footer: null
   };
-  const importAllResult = obj3.useAnimatedStyle(fn);
-  let tmp4 = callback2;
-  const tmp5 = callback2;
-  obj2 = { component: closure_7, transitionEnter: true, transitionLeave: true, transitionAppear: true };
-  let tmp8 = !isEditing;
-  if (tmp8) {
-    obj3 = { duration: closure_12 };
-    let obj4 = {};
-    const obj5 = { color: navigation(multiAccountUsers[14]).colors.TEXT_LINK };
-    obj4.leading = callback2(isEditing(multiAccountUsers[34]).CirclePlusIcon, obj5);
-    const obj6 = { style: tmp.addAccountLabel };
-    let intl = isEditing(multiAccountUsers[18]).intl;
-    obj6.text = intl.string(isEditing(multiAccountUsers[18]).t.bPP34Q);
-    obj4.label = callback2(isEditing(multiAccountUsers[33]).FormRow.Label, obj6);
-    obj4.onPress = function handlePressAddAccount() {
+  obj2 = { component: closure_7, transitionEnter: true, transitionLeave: true, transitionAppear: true, children: null };
+  let tmp8Result = !isEditing;
+  if (!isEditing) {
+    obj3 = { duration: null, children: null };
+    obj3[0] = closure_12;
+    let obj4 = { leading: null, label: null, onPress: null };
+    const obj5 = { color: null };
+    obj5[0] = tmp6(tmp3[14]).colors.TEXT_LINK;
+    obj4[0] = tmp8(tmp2(tmp3[34]).CirclePlusIcon, obj5);
+    const obj6 = { style: null, text: null };
+    obj6[0] = tmp.addAccountLabel;
+    let intl = tmp2(tmp3[18]).intl;
+    obj6[1] = intl.string(tmp2(tmp3[18]).t.bPP34Q);
+    obj4[1] = tmp8(tmp2(tmp3[33]).FormRow.Label, obj6);
+    obj4[2] = function handlePressAddAccount() {
       if (multiAccountUsers.length >= outer1_13) {
-        let obj = {};
+        let obj = { title: null, body: null, isDismissable: true };
         const intl = isEditing(multiAccountUsers[18]).intl;
-        obj.title = intl.string(isEditing(multiAccountUsers[18]).t.w7wfXi);
+        obj[0] = intl.string(isEditing(multiAccountUsers[18]).t.w7wfXi);
         const intl2 = isEditing(multiAccountUsers[18]).intl;
-        obj = { maxNumAccounts: outer1_13 };
-        obj.body = intl2.formatToPlainString(isEditing(multiAccountUsers[18]).t.WOyelG, obj);
-        obj.isDismissable = true;
+        obj = { maxNumAccounts: null };
+        obj[0] = tmp;
+        obj[1] = intl2.formatToPlainString(isEditing(multiAccountUsers[18]).t.WOyelG, obj);
         navigation(multiAccountUsers[17]).show(obj);
-        const obj3 = navigation(multiAccountUsers[17]);
+        const obj2 = navigation(multiAccountUsers[17]);
       } else {
         navigation.push(outer1_17.LOGIN);
         obj = navigation(multiAccountUsers[26]);
-        const obj1 = { source: "multi_account_add_account" };
-        obj.track(outer1_16.LOGIN_VIEWED, obj1);
+        obj.track(outer1_16.LOGIN_VIEWED, { source: "multi_account_add_account" });
       }
     };
-    obj3.children = callback2(isEditing(multiAccountUsers[33]).FormRow, obj4);
-    tmp8 = callback2(navigation(multiAccountUsers[31]), obj3);
-    const tmp12 = navigation(multiAccountUsers[31]);
+    obj3[1] = tmp8(tmp2(tmp3[33]).FormRow, obj4);
+    tmp8Result = tmp8(tmp6(tmp3[31]), obj3);
+    const tmp6Result = tmp6(tmp3[31]);
   }
-  obj2.children = tmp8;
-  obj1.footer = callback2(isEditing(multiAccountUsers[30]).TransitionGroup, obj2);
-  obj.children = tmp5(navigation(multiAccountUsers[28]), obj1);
-  return tmp4(isEditing(multiAccountUsers[27]).SafeAreaPaddingView, obj);
+  obj2[4] = tmp8Result;
+  obj1[8] = closure_18(isEditing(multiAccountUsers[30]).TransitionGroup, obj2);
+  obj[2] = closure_18(navigation(multiAccountUsers[28]), obj1);
+  return closure_18(isEditing(multiAccountUsers[27]).SafeAreaPaddingView, obj);
 }
-({ MANAGE_EDIT_TRANSITION_DURATION: closure_12, MAX_ACCOUNTS: closure_13, MultiAccountSwitchLocation: closure_14 } = MAX_ACCOUNTS);
+({ MANAGE_EDIT_TRANSITION_DURATION: closure_12, MAX_ACCOUNTS: map1, MultiAccountSwitchLocation: closure_14 } = MAX_ACCOUNTS);
 ({ AnalyticEvents: closure_16, AuthStates: closure_17 } = ME);
 ({ jsx: closure_18, jsxs: closure_19 } = jsxProd);
 createNativeStackNavigator = createNativeStackNavigator.createNativeStackNavigator();
-let obj = {};
-obj = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW, flex: 1, paddingTop: 16 };
-obj.container = obj;
-createNativeStackNavigator = { flex: 1, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW };
-obj.sortableListView = createNativeStackNavigator;
-_createForOfIteratorHelperLoose = { color: require("_createForOfIteratorHelperLoose").colors.TEXT_LINK };
-obj.addAccountLabel = _createForOfIteratorHelperLoose;
-obj.trailingIconContainer = { width: 24, height: 24 };
-obj.trailingIcon = { position: "absolute" };
-let closure_21 = _createForOfIteratorHelperLoose.createStyles(obj);
-let closure_22 = { code: "function ManageAccountsModalTsx1(){const{withTiming,leadingWidth,MANAGE_EDIT_TRANSITION_DURATION}=this.__closure;return{width:withTiming(leadingWidth.get(),{duration:MANAGE_EDIT_TRANSITION_DURATION})};}" };
+let obj = { container: null, sortableListView: null, addAccountLabel: null, trailingIconContainer: null, trailingIcon: null };
+obj = { backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW, flex: 1, paddingTop: 16 };
+obj[0] = obj;
+createNativeStackNavigator = { flex: 1, backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW };
+obj[1] = createNativeStackNavigator;
+createCacheKey = { color: require("Themes").colors.TEXT_LINK };
+obj[2] = createCacheKey;
+obj[3] = { width: 24, height: 24 };
+obj[4] = { position: "absolute" };
+let closure_21 = createCacheKey.createStyles(obj);
+let closure_23 = { code: "function ManageAccountsModalTsx1(){const{withTiming,leadingWidth,MANAGE_EDIT_TRANSITION_DURATION}=this.__closure;return{width:withTiming(leadingWidth.get(),{duration:MANAGE_EDIT_TRANSITION_DURATION})};}" };
 const memoResult = importAllResult.memo(function ManageAccountsModal(initialRouteName) {
+  let c1;
+  let c2;
   let MANAGE_ACCOUNTS = initialRouteName.initialRouteName;
   if (MANAGE_ACCOUNTS === undefined) {
     MANAGE_ACCOUNTS = ManageAccountsScreens.MANAGE_ACCOUNTS;
   }
   let _require;
-  let closure_1;
-  let closure_2;
-  let obj = _require(5552);
+  c1 = undefined;
+  c2 = undefined;
+  let obj = _require(5570);
   _require = obj.useAccessibilityNativeStackOptions();
-  const tmp2 = callback(importAllResult.useState(false), 2);
-  closure_1 = tmp2[0];
-  closure_2 = tmp2[1];
+  [c1, c2] = callback(importAllResult.useState(false), 2);
   obj = {
     initialRouteName: MANAGE_ACCOUNTS,
     screenOptions(arg0) {
-      let obj = {
+      const obj = {
         headerTitle(children) {
-          let obj = Object.create(null);
-          obj.children = 0;
-          const merged = Object.assign(children, obj);
-          obj = { title: children.children };
+          const merged = Object.assign(children, Object.create(null));
           const merged1 = Object.assign(merged);
-          return outer2_18(callback(outer2_3[36]).GenericHeaderTitle, obj);
-        }
+          return callback2(callback(table[36]).GenericHeaderTitle, { title: children.children });
+        },
+        headerLeft: null,
+        headerTitleAlign: "center"
       };
       let renderModalCloseImage;
-      if (!callback2) {
+      if (!_undefined) {
         renderModalCloseImage = callback(outer1_3[36]).getRenderModalCloseImage(tmp);
         const obj2 = callback(outer1_3[36]);
       }
-      obj.headerLeft = renderModalCloseImage;
-      obj.headerTitleAlign = "center";
+      obj[1] = renderModalCloseImage;
       let merged = Object.assign(callback);
-      let merged1 = Object.assign(callback2(outer1_3[37])());
+      let merged1 = Object.assign(_undefined(outer1_3[37])());
       return obj;
-    }
+    },
+    children: null
   };
   obj = {
     name: ManageAccountsScreens.MANAGE_ACCOUNTS,
     options() {
-      const obj = {};
+      const obj = { title: null, headerRight: null };
       const intl = callback(outer1_3[18]).intl;
-      obj.title = intl.string(callback(outer1_3[18]).t.WbFpq4);
+      obj[0] = intl.string(callback(outer1_3[18]).t.WbFpq4);
       const getRenderHeaderTextButton = callback(outer1_3[36]).getRenderHeaderTextButton;
       const intl2 = callback(outer1_3[18]).intl;
       const string = intl2.string;
       const t = callback(outer1_3[18]).t;
-      if (closure_1) {
-        let renderHeaderTextButton = getRenderHeaderTextButton(string(t.i4jeWR), () => outer1_2(false));
+      if (c1) {
+        let renderHeaderTextButton = getRenderHeaderTextButton(string(t.i4jeWR), () => callback(false));
       } else {
-        renderHeaderTextButton = getRenderHeaderTextButton(string(t.bt75uw), () => outer1_2(true));
+        renderHeaderTextButton = getRenderHeaderTextButton(string(t.bt75uw), () => callback(true));
       }
-      obj.headerRight = renderHeaderTextButton;
+      obj[1] = renderHeaderTextButton;
       return obj;
     },
     children(navigation) {
-      return outer1_18(outer1_24, { isEditing: closure_1, navigation: navigation.navigation });
+      return outer1_18(outer1_24, { isEditing: c1, navigation: navigation.navigation });
     }
   };
   const items = [
@@ -296,20 +386,20 @@ const memoResult = importAllResult.memo(function ManageAccountsModal(initialRout
     callback2(createNativeStackNavigator.Screen, {
       name: ManageAccountsScreens.ACCOUNT_DISABLED_OR_DELETION_SCHEDULED,
       options() {
-        const obj = {};
-        const intl = callback(outer1_3[18]).intl;
-        obj.title = intl.string(callback(outer1_3[18]).t.WbFpq4);
+        const obj = { title: null };
+        const intl = callback(1236).intl;
+        obj[0] = intl.string(callback(1236).t.WbFpq4);
         return obj;
       },
       children() {
-        return outer1_18(callback2(outer1_3[38]), {
+        return callback2(_undefined(14891), {
           handleLogin(login, password, undelete) {
-            let obj = callback(outer2_3[39]);
+            let obj = callback(5641);
             obj = { login, password, undelete };
             obj.login(obj);
           },
           onReset(arg0, arg1, arg2) {
-            callback(outer2_3[39]).loginReset(true);
+            callback(5641).loginReset(true);
           }
         });
       }
@@ -320,7 +410,7 @@ const memoResult = importAllResult.memo(function ManageAccountsModal(initialRout
         return { headerShown: false };
       },
       children() {
-        return outer1_18(callback2(outer1_3[40]), { isMultiAccount: true });
+        return callback2(_undefined(9191), { isMultiAccount: true });
       }
     }),
     callback2(createNativeStackNavigator.Screen, {
@@ -329,13 +419,13 @@ const memoResult = importAllResult.memo(function ManageAccountsModal(initialRout
         return { headerShown: false };
       },
       children() {
-        return outer1_18(callback2(outer1_3[41]), { isMultiAccount: true });
+        return callback2(_undefined(14890), { isMultiAccount: true });
       }
     })
   ];
-  obj.children = items;
+  obj[2] = items;
   return callback3(createNativeStackNavigator.Navigator, obj);
 });
-let result = require("result").fileFinishedImporting("modules/multi_account/native/ManageAccountsModal.tsx");
+let result = require("noop").fileFinishedImporting("modules/multi_account/native/ManageAccountsModal.tsx");
 
 export default memoResult;

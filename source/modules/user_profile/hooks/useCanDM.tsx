@@ -1,49 +1,50 @@
-// Module ID: 12190
-// Function ID: 95322
+// Module ID: 12214
+// Function ID: 12215
 // Name: useCanDM
-// Dependencies: [5925, 3794, 1194, 1918, 3802, 3838, 566, 2]
+// Dependencies: [5944, 3818, 1218, 1942, 3826, 3862, 589, 2]
 // Exports: canDm, default
 
-// Module 12190 (useCanDM)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_3 from "_isNativeReflectConstruct";
-import closure_4 from "_isNativeReflectConstruct";
-import closure_5 from "_isNativeReflectConstruct";
-import closure_6 from "_isNativeReflectConstruct";
+// Module 12214 (useCanDM)
+import recountRelationshipTypes from "recountRelationshipTypes";
+import initialize from "initialize";
+import fetchFingerprint from "fetchFingerprint";
+import trackCommunicationDisabled from "trackCommunicationDisabled";
+import upsertRelationship from "upsertRelationship";
 
 const require = arg1;
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/user_profile/hooks/useCanDM.tsx");
+const result = require("fetchFingerprint").fileFinishedImporting("modules/user_profile/hooks/useCanDM.tsx");
 
 export default function useCanDM(arg0, arg1) {
   const _require = arg0;
   const dependencyMap = arg1;
-  const items = [closure_4];
-  let _isNativeReflectConstruct = _require(566).useStateFromStores(items, () => id.getId() === closure_0);
-  const obj = _require(566);
-  const items1 = [closure_3];
-  closure_3 = _require(566).useStateFromStores(items1, () => {
+  const items = [fetchFingerprint];
+  let recountRelationshipTypes = _require(589).useStateFromStores(items, () => id.getId() === closure_0);
+  const obj = _require(589);
+  const items1 = [initialize];
+  initialize = _require(589).useStateFromStores(items1, () => {
     let isLurkingResult = null != closure_1;
     if (isLurkingResult) {
-      isLurkingResult = lurking.isLurking(closure_1);
+      isLurkingResult = lurking.isLurking(tmp);
     }
     return isLurkingResult;
   });
-  const RestrictedGuildIds = _require(3838).RestrictedGuildIds;
-  closure_4 = RestrictedGuildIds.useSetting();
-  const obj2 = _require(566);
-  const items2 = [closure_6, closure_5, _isNativeReflectConstruct];
-  return _require(566).useStateFromStores(items2, () => {
+  const RestrictedGuildIds = _require(3862).RestrictedGuildIds;
+  fetchFingerprint = RestrictedGuildIds.useSetting();
+  const obj2 = _require(589);
+  const items2 = [upsertRelationship, trackCommunicationDisabled, recountRelationshipTypes];
+  return _require(589).useStateFromStores(items2, () => {
     let tmp = !gameFriendsForUser;
-    if (tmp) {
-      tmp = !closure_3;
+    if (!gameFriendsForUser) {
+      tmp = !initialize;
     }
     if (tmp) {
       let isFriendResult = outer1_6.isFriend(callback);
       if (!isFriendResult) {
-        isFriendResult = null != outer1_5.memberOf(callback).find((arg0) => !outer1_4.includes(arg0));
-        const memberOfResult = outer1_5.memberOf(callback);
+        isFriendResult = null != outer1_5.memberOf(tmp4).find((arg0) => !fetchFingerprint.includes(arg0));
+        const memberOfResult = outer1_5.memberOf(tmp4);
       }
       tmp = isFriendResult;
+      tmp4 = callback;
     }
     if (!tmp) {
       let setting = gameFriendsForUser.getGameFriendsForUser(callback).length > 0;
@@ -56,33 +57,33 @@ export default function useCanDM(arg0, arg1) {
     return tmp;
   });
 };
-export const canDm = function canDm(arg0, arg1) {
-  const tmp = id.getId() === arg0;
-  let isLurkingResult = null != arg1;
+export const canDm = function canDm(userId, guildId) {
+  let isLurkingResult = null != guildId;
+  id = id.getId();
   if (isLurkingResult) {
-    isLurkingResult = lurking.isLurking(arg1);
+    isLurkingResult = lurking.isLurking(guildId);
   }
-  const RestrictedGuildIds = _require(3838).RestrictedGuildIds;
+  const RestrictedGuildIds = _require(3862).RestrictedGuildIds;
   _require = RestrictedGuildIds.getSetting();
-  let isFriendResult = friend.isFriend(arg0);
-  let tmp5 = !tmp;
-  if (!tmp) {
-    tmp5 = !isLurkingResult;
+  let isFriendResult = friend.isFriend(userId);
+  let tmp8 = !tmp4;
+  if (id !== userId) {
+    tmp8 = !isLurkingResult;
   }
-  if (tmp5) {
+  if (tmp8) {
     if (!isFriendResult) {
-      isFriendResult = null != closure_5.memberOf(arg0).find((arg0) => !closure_0.includes(arg0));
-      const memberOfResult = closure_5.memberOf(arg0);
+      isFriendResult = null != trackCommunicationDisabled.memberOf(userId).find((arg0) => !closure_0.includes(arg0));
+      const memberOfResult = trackCommunicationDisabled.memberOf(userId);
     }
-    tmp5 = isFriendResult;
+    tmp8 = isFriendResult;
   }
-  if (!tmp5) {
-    let setting = gameFriendsForUser.getGameFriendsForUser(arg0).length > 0;
+  if (!tmp8) {
+    let setting = gameFriendsForUser.getGameFriendsForUser(userId).length > 0;
     if (setting) {
-      const AllowGameFriendDmsInDiscord = _require(3838).AllowGameFriendDmsInDiscord;
+      const AllowGameFriendDmsInDiscord = _require(3862).AllowGameFriendDmsInDiscord;
       setting = AllowGameFriendDmsInDiscord.getSetting();
     }
-    tmp5 = setting;
+    tmp8 = setting;
   }
-  return tmp5;
+  return tmp8;
 };

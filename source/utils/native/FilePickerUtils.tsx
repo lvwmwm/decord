@@ -1,100 +1,215 @@
-// Module ID: 9808
-// Function ID: 76088
-// Name: _createForOfIteratorHelperLoose
-// Dependencies: [5, 653, 9809, 477, 4506, 1212, 4359, 2]
+// Module ID: 9830
+// Function ID: 9831
+// Name: _handleDocumentSelection
+// Dependencies: [5, 676, 9831, 500, 4529, 1236, 4384, 2]
 // Exports: handleDocumentSelection
 
-// Module 9808 (_createForOfIteratorHelperLoose)
+// Module 9830 (_handleDocumentSelection)
 import getSystemLocale from "getSystemLocale";
 import { AnalyticEvents } from "ME";
 
 const require = arg1;
-function _createForOfIteratorHelperLoose(iterable) {
-  let closure_0 = iterable;
-  iterable = "undefined" !== typeof Symbol;
-  if (iterable) {
-    const _Symbol = Symbol;
-    iterable = iterable[Symbol.iterator];
-  }
-  if (!iterable) {
-    iterable = iterable[Symbol.iterator];
-  }
-  if (iterable) {
-    const iter = iterable.call(iterable);
-    const next = iter.next;
-    return next.bind(iter);
-  } else {
-    const _Array = Array;
-    let tmp = iterable;
-    if (!Array.isArray(iterable)) {
-      let tmp2;
-      if (iterable) {
-        if ("string" === typeof iterable) {
-          tmp2 = _arrayLikeToArray(iterable, undefined);
+function _handleDocumentSelection() {
+  const self = this;
+  const tmp = callback(() => {
+    let closure_0 = arg0;
+    let c5 = 0;
+    let c6 = 0;
+    let c4 = 0;
+    let iter = (function*() {
+      if (c6 === 2) {
+        c6 = 3;
+        HermesBuiltin.throwTypeError();
+      } else if (tmp6 === 3) {
+        if (arg0 === 1) {
+          throw arg1;
+        } else if (arg0 === 2) {
+          let obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
         } else {
-          const toString = {}.toString;
-          const substr = toString.call(iterable).slice(8, -1);
-          let name = substr;
-          if (tmp3) {
-            name = iterable.constructor.name;
-          }
-          if ("Map" !== name) {
-            if ("Set" !== name) {
-              if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(iterable, undefined);
+          return { value: "HermesInternal", done: null };
+        }
+      } else {
+        try {
+          c6 = 2;
+          if (0 === c5) {
+            if (arg0 === 1) {
+              c6 = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              c6 = 3;
+              obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            } else {
+              let dependencyMap = tmp3;
+              let extensions = tmp7;
+              let flag;
+              extensions = undefined;
+              let obj1 = flag;
+              if (flag === undefined) {
+                obj1 = {};
+              }
+              flag = obj1.pickMultiple;
+              if (flag === undefined) {
+                flag = true;
+              }
+              extensions = obj1.extensions;
+              dependencyMap = undefined;
+              let getSystemLocale;
+              c5 = 1;
+              c6 = 1;
+              return { value: "ct", done: null };
+            }
+          } else if (1 === tmp7) {
+            if (arg0 === 1) {
+              c6 = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              c6 = 3;
+              let obj2 = { value: null, done: true };
+              obj2[0] = arg1;
+              return obj2;
+            } else {
+              let tmp54;
+              if (null != extensions) {
+                if (extensions.length > 0) {
+                  tmp54 = (function getPickerTypesForExtensions(extensions) {
+                    const items = [];
+                    const iter = extensions[Symbol.iterator]();
+                    const nextResult = iter.next();
+                    while (iter !== undefined) {
+                      if ("jfif" !== nextResult) {
+                        let tmp10 = flag;
+                        let tmp11 = _undefined;
+                        let obj2 = flag(_undefined[2]);
+                        let obj = { kind: "extension", value: null };
+                        let tmp12 = nextResult;
+                        obj[1] = tmp2;
+                        let isKnownTypeResult = obj2.isKnownType(obj);
+                        if (isKnownTypeResult.isKnown) {
+                          let tmp10Result = tmp10(tmp11[3]);
+                          let tmp4 = tmp10Result.isIOS() ? tmp15 : tmp14;
+                          if (null == tmp4) {
+                            let tmp8 = iter;
+                            iter.return();
+                          } else {
+                            let tmp6 = tmp4;
+                            let arr = items.push(tmp5);
+                          }
+                        } else {
+                          let tmp3 = iter;
+                          iter.return();
+                        }
+                      }
+                      continue;
+                    }
+                    let tmp9;
+                    if (items.length > 0) {
+                      tmp9 = items;
+                    }
+                    return tmp9;
+                  })(extensions);
+                }
+              }
+              const outer1_2 = tmp54;
+              let c4 = 1;
+              let pick = callback(outer1_2[2]).pick;
+              let obj8 = callback(outer1_2[3]);
+              if (obj8.isIOS()) {
+                let obj3 = { mode: "open" };
               } else {
-                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                obj3 = { mode: "import" };
+              }
+              let obj4 = {};
+              const merged = Object.assign(obj3);
+              obj4.allowMultiSelection = flag;
+              obj4.type = dependencyMap;
+              pick = pick(obj4);
+              c5 = 3;
+              c6 = 1;
+              const tmp61 = callback(outer1_2[2]);
+            }
+          } else if (2 === tmp7) {
+            c4 = 0;
+            c4 = getSystemLocale;
+            obj3 = flag(9831);
+            if (obj3.isErrorWithCode(c4)) {
+              if (c4.code === flag(9831).errorCodes.OPERATION_CANCELED) {
+                c6 = 3;
+                return { value: "HermesInternal", done: null };
               }
             }
-            tmp2 = arr;
+            obj4 = flag(4384);
+            const obj5 = { error_message: null };
+            const _JSON = JSON;
+            obj5[0] = JSON.stringify(c4);
+            obj4.trackWithMetadata(c4.MOBILE_FILE_PICKER_ERROR, obj5);
+            let obj6 = extensions(4529);
+            obj6 = { title: null, body: null };
+            const intl3 = flag(1236).intl;
+            obj6[0] = intl3.string(flag(1236).t.rWHepR);
+            const intl4 = flag(1236).intl;
+            obj6[1] = intl4.string(flag(1236).t.fZRH9P);
+            obj6.show(obj6);
+            c6 = 3;
+            return { value: "HermesInternal", done: null };
+          } else if (arg0 === 1) {
+            c6 = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            c4 = 0;
+            c6 = 3;
+            const obj7 = { value: null, done: true };
+            obj7[0] = arg1;
+            return obj7;
+          } else {
+            getSystemLocale = arg1;
+            if (getSystemLocale.some((size) => 0 === size.size)) {
+              obj = extensions(4529);
+              obj8 = { title: null, body: null };
+              const intl = flag(1236).intl;
+              obj8[0] = intl.string(flag(1236).t.B3vFdU);
+              const intl2 = flag(1236).intl;
+              obj8[1] = intl2.string(flag(1236).t["9ZpT2C"]);
+              obj.show(obj8);
+            }
+            c4 = 0;
+            c6 = 3;
           }
-          const _Array2 = Array;
-          arr = Array.from(iterable);
-          const callResult = toString.call(iterable);
-          tmp3 = "Object" === substr && iterable.constructor;
+        } catch (tmp70) {
+          getSystemLocale = tmp70;
+          if (tmp4 === c4) {
+            c6 = tmp2;
+            throw tmp70;
+          } else {
+            c5 = tmp;
+          }
         }
       }
-      tmp = tmp2;
-      if (!tmp2) {
-        const _TypeError = TypeError;
-        const typeError = new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
-        throw typeError;
-      }
-    }
-    if (tmp) {
-      closure_0 = tmp;
-    }
-    let c1 = 0;
-    return () => {
-      if (closure_1 >= length.length) {
-        let obj = { done: true };
-      } else {
-        obj = { done: false };
-        closure_1 = tmp3 + 1;
-        obj.value = length[+closure_1];
-      }
-      return obj;
-    };
+    })();
+    iter.next();
+    return iter;
+  });
+  const _handleDocumentSelection = tmp;
+  const apply = tmp.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
   }
-}
-function _arrayLikeToArray(arg0, arg1) {
-  let length;
-  if (tmp) {
-    length = arg0.length;
-  }
-  const ArrayResult = Array(length);
-  for (let num = 0; num < length; num = num + 1) {
-    ArrayResult[num] = arg0[num];
-  }
-  return ArrayResult;
-}
-function _handleDocumentSelection() {
-  // CreateGeneratorClosureLongIndex (0x67)
-  const obj = callback(tmp);
-  return obj(...arguments);
+  return applyArgumentsResult;
 }
 const result = require("isKnownType").fileFinishedImporting("utils/native/FilePickerUtils.tsx");
 
 export const handleDocumentSelection = function handleDocumentSelection(arg0) {
-  return _handleDocumentSelection(...arguments);
+  const self = this;
+  const apply = _handleDocumentSelection.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
 };

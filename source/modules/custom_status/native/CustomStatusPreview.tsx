@@ -1,32 +1,39 @@
-// Module ID: 11954
-// Function ID: 92377
+// Module ID: 11978
+// Function ID: 11979
 // Name: CustomStatusPreview
-// Dependencies: [31, 27, 5545, 33, 4165, 689, 7958, 8071, 8053, 8055, 8057, 4024, 4133, 11955, 1935, 3877, 8077, 8080, 11956, 11945, 8355, 8035, 2]
+// Dependencies: [19, 17, 5563, 21, 4189, 712, 7983, 8095, 8077, 8079, 8081, 4048, 4157, 11979, 1959, 3901, 8101, 8104, 11980, 11969, 8379, 8059, 2]
 // Exports: default
 
-// Module 11954 (CustomStatusPreview)
-import result from "result";
-import { View } from "get ActivityIndicator";
+// Module 11978 (CustomStatusPreview)
+import EmojiImage from "EmojiImage";
+import { View } from "OpenableUserProfileAvatar";
 import ARBITRARY_LARGE_OFFSET from "ARBITRARY_LARGE_OFFSET";
-import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import jsxProd from "StaticEffect";
+import createCacheKey from "createCacheKey";
 
-let closure_5;
+let c5;
 let closure_6;
-let closure_7;
-let closure_8;
+let error;
+let metroImportAll;
 const require = arg1;
-({ PROFILE_CONTENT_WITHOUT_STATUS_TOP_PADDING: closure_5, UserProfileThemeTypes: closure_6 } = ARBITRARY_LARGE_OFFSET);
-({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-let closure_9 = _createForOfIteratorHelperLoose.createStyles((arg0) => {
-  let obj = {};
-  obj = { flex: 1, position: "relative", overflow: "hidden", width: 323, maxHeight: 301, borderWidth: 1 };
-  const colors = importDefault(689).colors;
-  obj.borderColor = arg0 ? colors.BORDER_MUTED : colors.BACKGROUND_SURFACE_HIGH;
-  obj.borderRadius = importDefault(689).radii.lg;
-  const merged = Object.assign(importDefault(689).shadows.SHADOW_HIGH);
-  obj.profileContainer = obj;
-  obj.profileEffect = { zIndex: 1 };
+({ PROFILE_CONTENT_WITHOUT_STATUS_TOP_PADDING: c5, UserProfileThemeTypes: closure_6 } = ARBITRARY_LARGE_OFFSET);
+({ jsx: error, jsxs: metroImportAll } = jsxProd);
+let closure_9 = createCacheKey.createStyles((arg0) => {
+  let obj = { flex: 1, position: "relative", overflow: "hidden", width: 323, maxHeight: 301, borderWidth: num, borderColor: null, borderRadius: null };
+  const colors = importDefault(712).colors;
+  if (arg0) {
+    let BACKGROUND_SURFACE_HIGH = colors.BORDER_MUTED;
+    let tmp4 = tmp;
+  } else {
+    BACKGROUND_SURFACE_HIGH = colors.BACKGROUND_SURFACE_HIGH;
+    tmp4 = tmp;
+  }
+  obj = { profileContainer: null, profileEffect: null };
+  obj[6] = BACKGROUND_SURFACE_HIGH;
+  obj[7] = tmp4(712).radii.lg;
+  const merged = Object.assign(tmp4(712).shadows.SHADOW_HIGH);
+  obj[0] = obj;
+  obj[1] = { zIndex: 1 };
   return obj;
 });
 const result = require("ARBITRARY_LARGE_OFFSET").fileFinishedImporting("modules/custom_status/native/CustomStatusPreview.tsx");
@@ -42,11 +49,11 @@ export default function CustomStatusPreview(user) {
   const pendingStatusText = user.pendingStatusText;
   const pendingStatusEmoji = user.pendingStatusEmoji;
   const placeholderText = user.placeholderText;
-  const tmp = pendingStatusText(pendingStatusEmoji[6])(user.id);
-  const tmp2 = pendingStatusText(pendingStatusEmoji[7])(tmp);
-  ({ theme, primaryColor, secondaryColor } = pendingStatusText(pendingStatusEmoji[8])({ user, displayProfile: tmp }));
-  const tmp5 = callback2(null != primaryColor);
-  const tmp6 = pendingStatusText(pendingStatusEmoji[9])();
+  const tmp3 = pendingStatusText(pendingStatusEmoji[6])(user.id);
+  const tmp4 = pendingStatusText(pendingStatusEmoji[7])(tmp3);
+  ({ theme, primaryColor, secondaryColor } = pendingStatusText(pendingStatusEmoji[8])({ user, displayProfile: tmp3 }));
+  const tmp7 = callback2(null != primaryColor);
+  const tmp8 = pendingStatusText(pendingStatusEmoji[9])();
   let obj = user(pendingStatusEmoji[10]);
   const userProfileColors = obj.useUserProfileColors({ theme, primaryColor, secondaryColor });
   const items = [user, pendingStatusText, pendingStatusEmoji];
@@ -57,68 +64,64 @@ export default function CustomStatusPreview(user) {
     obj = { user, previewText: pendingStatusText, previewEmoji: pendingStatusEmoji };
     pendingStatusText(pendingStatusEmoji[12]).openLazy(user(pendingStatusEmoji[14])(pendingStatusEmoji[13], pendingStatusEmoji.paths), "UserProfileCustomStatusActionSheet", obj, "stack");
   }, items);
-  obj = { theme, primaryColor, secondaryColor };
-  obj = { style: items1 };
-  items1 = [tmp5.profileContainer];
-  const items2 = [callback(pendingStatusText(pendingStatusEmoji[16]), { user, displayProfile: tmp, bannerHeight: 132, disableInteraction: true }), , ];
-  const obj1 = {};
+  obj = { theme, primaryColor, secondaryColor, children: null };
+  obj = { style: items1, children: null };
+  items1 = [tmp7.profileContainer];
+  const items2 = [callback(pendingStatusText(pendingStatusEmoji[16]), { user, displayProfile: tmp3, bannerHeight: 132, disableInteraction: true }), , ];
   const items3 = [callback(pendingStatusText(pendingStatusEmoji[17]), { user, backgroundColor: avatarBackground, disableStatus: true }), ];
-  const obj2 = { fallbackBackground: gradientFallbackBackground, primaryColor, secondaryColor: primaryColor };
+  const obj1 = { fallbackBackground: gradientFallbackBackground, primaryColor, secondaryColor: primaryColor, containerStyle: null, children: null };
   const items4 = [, , ];
-  ({ profileContentWrapper: arr5[0], profileContent: arr5[1] } = tmp6);
-  let tmp13 = "" !== pendingStatusText;
-  const tmp3 = pendingStatusText(pendingStatusEmoji[8])({ user, displayProfile: tmp });
-  const tmp9 = callback;
-  if (!tmp13) {
-    tmp13 = null !== pendingStatusEmoji;
+  ({ profileContentWrapper: arr5[0], profileContent: arr5[1] } = tmp8);
+  let tmp15 = "" !== pendingStatusText;
+  const tmp5 = pendingStatusText(pendingStatusEmoji[8])({ user, displayProfile: tmp3 });
+  if (!tmp15) {
+    tmp15 = null !== pendingStatusEmoji;
   }
-  if (!tmp13) {
-    tmp13 = "" !== placeholderText;
+  if (!tmp15) {
+    tmp15 = "" !== placeholderText;
   }
-  let tmp14 = !tmp13;
-  if (!tmp13) {
-    const obj3 = { paddingTop: closure_5 };
-    tmp14 = obj3;
+  let tmp16 = !tmp15;
+  if (!tmp15) {
+    const obj2 = { paddingTop: null };
+    obj2[0] = closure_5;
+    tmp16 = obj2;
   }
-  items4[2] = tmp14;
-  obj2.containerStyle = items4;
-  const items5 = [callback(pendingStatusText(pendingStatusEmoji[19]), { hasCustomProfileTheme: null != primaryColor, style: tmp6.customStatusBubble, emojiOnlyStyle: tmp6.emojiOnlyCustomStatusBubble, onPressTruncatedStatus: callback, previewEmoji: pendingStatusEmoji, previewText: pendingStatusText, placeholderText }), ];
-  const obj5 = { user, themeType: constants.PREVIEW };
+  items4[2] = tmp16;
+  obj1[3] = items4;
+  const items5 = [callback(pendingStatusText(pendingStatusEmoji[19]), { hasCustomProfileTheme: null != primaryColor, style: tmp8.customStatusBubble, emojiOnlyStyle: tmp8.emojiOnlyCustomStatusBubble, onPressTruncatedStatus: callback, previewEmoji: pendingStatusEmoji, previewText: pendingStatusText, placeholderText }), ];
+  const obj4 = { user, themeType: constants.PREVIEW, pronouns: null, badges: null, badgeContainerBackground: null, showBadgeToastOnPress: false };
   let pronouns;
-  const obj4 = { hasCustomProfileTheme: null != primaryColor, style: tmp6.customStatusBubble, emojiOnlyStyle: tmp6.emojiOnlyCustomStatusBubble, onPressTruncatedStatus: callback, previewEmoji: pendingStatusEmoji, previewText: pendingStatusText, placeholderText };
-  const tmp12 = pendingStatusText(pendingStatusEmoji[18]);
-  const tmp16 = callback;
-  if (null != tmp) {
-    pronouns = tmp.pronouns;
+  let tmpResult = tmp(tmp2[20]);
+  if (tmp3 != null) {
+    pronouns = tmp3.pronouns;
   }
-  obj5.pronouns = pronouns;
-  obj5.badges = tmp2;
-  obj5.badgeContainerBackground = containerBackground;
-  obj5.showBadgeToastOnPress = false;
-  items5[1] = tmp16(pendingStatusText(pendingStatusEmoji[20]), obj5);
-  obj2.children = items5;
-  items3[1] = closure_8(tmp12, obj2);
-  obj1.children = items3;
-  items2[1] = closure_8(View, obj1);
+  const obj5 = { children: null };
+  obj4[2] = pronouns;
+  obj4[3] = tmp4;
+  obj4[4] = containerBackground;
+  items5[1] = callback(tmpResult, obj4);
+  obj1[4] = items5;
+  items3[1] = closure_8(pendingStatusText(pendingStatusEmoji[18]), obj1);
+  obj5[0] = items3;
+  items2[1] = closure_8(View, obj5);
   let profileEffect;
-  if (null != tmp) {
-    profileEffect = tmp.profileEffect;
+  if (tmp3 != null) {
+    profileEffect = tmp3.profileEffect;
   }
-  let tmp21Result = null != profileEffect;
-  if (tmp21Result) {
-    const obj6 = {};
+  let tmp11Result = null != profileEffect;
+  if (tmp11Result) {
     let skuId;
-    if (null != tmp) {
-      skuId = tmp.profileEffect.skuId;
+    tmpResult = tmp(tmp2[21]);
+    if (tmp3 != null) {
+      skuId = tmp3.profileEffect.skuId;
     }
-    obj6.skuId = skuId;
-    obj6.style = tmp5.profileEffect;
-    tmp21Result = callback(pendingStatusText(pendingStatusEmoji[21]), obj6);
-    const tmp21 = callback;
-    const tmp24 = pendingStatusText(pendingStatusEmoji[21]);
+    const obj6 = { skuId: null, style: null };
+    obj6[0] = skuId;
+    obj6[1] = tmp7.profileEffect;
+    tmp11Result = tmp11(tmpResult, obj6);
   }
-  items2[2] = tmp21Result;
-  obj.children = items2;
-  obj.children = closure_8(View, obj);
-  return tmp9(user(pendingStatusEmoji[15]).ThemeContextProvider, obj);
+  items2[2] = tmp11Result;
+  obj[1] = items2;
+  obj[3] = closure_8(View, obj);
+  return callback(user(pendingStatusEmoji[15]).ThemeContextProvider, obj);
 };

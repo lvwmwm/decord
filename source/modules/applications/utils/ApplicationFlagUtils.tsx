@@ -1,32 +1,26 @@
-// Module ID: 5674
-// Function ID: 48330
+// Module ID: 5692
+// Function ID: 5693
 // Name: getApplicationFlags
-// Dependencies: [4188, 483, 2]
+// Dependencies: [4212, 506, 2]
 // Exports: hasApplicationFlag
 
-// Module 5674 (getApplicationFlags)
-import _callSuper from "_callSuper";
+// Module 5692 (getApplicationFlags)
+import createExecutable from "createExecutable";
 
 function getApplicationFlags(application) {
   if (null == application) {
-    let flags2 = importAll(483).deserialize(0);
-    const obj2 = importAll(483);
+    let flags = importAll(506).deserialize(0);
+    const obj2 = importAll(506);
   } else {
     let tmp5 = null != application;
     if (tmp5) {
-      let tmp2 = application instanceof _callSuper;
+      let tmp2 = application instanceof createExecutable;
       if (!tmp2) {
-        let tmp3 = "flags" in application;
-        if (tmp3) {
-          tmp3 = "bigint" === typeof application.flags;
-        }
-        tmp2 = tmp3;
+        tmp2 = "flags" in application && typeof application.flags === "accessibilityLabel";
+        const tmp3 = "flags" in application && typeof application.flags === "accessibilityLabel";
       }
       if (!tmp2) {
-        let tmp4 = "flags" in application && null != application.flags;
-        if (tmp4) {
-          tmp4 = "object" === typeof application.flags;
-        }
+        let tmp4 = "flags" in application && null != application.flags && typeof application.flags === "ay";
         if (tmp4) {
           tmp4 = "parts" in application.flags;
         }
@@ -35,25 +29,24 @@ function getApplicationFlags(application) {
       tmp5 = tmp2;
     }
     if (tmp5) {
-      flags2 = application.flags;
+      flags = application.flags;
     } else {
-      let flags = application.flags_new;
-      if (null == flags) {
-        flags = application.flags;
+      let num = application.flags_new;
+      if (num == null) {
+        num = application.flags;
       }
-      let num2 = 0;
-      if (null != flags) {
-        num2 = flags;
+      if (num == null) {
+        num = 0;
       }
-      flags2 = importAll(483).deserialize(num2);
-      const obj = importAll(483);
+      flags = importAll(506).deserialize(num);
+      const obj = importAll(506);
     }
   }
-  return flags2;
+  return flags;
 }
 const result = require("set").fileFinishedImporting("modules/applications/utils/ApplicationFlagUtils.tsx");
 
 export { getApplicationFlags };
 export const hasApplicationFlag = function hasApplicationFlag(application, EMBEDDED) {
-  return importAll(483).has(getApplicationFlags(application), EMBEDDED);
+  return importAll(506).has(getApplicationFlags(application), EMBEDDED);
 };

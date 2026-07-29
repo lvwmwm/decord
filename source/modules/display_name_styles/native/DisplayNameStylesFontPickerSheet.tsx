@@ -1,182 +1,181 @@
-// Module ID: 14336
-// Function ID: 109954
+// Module ID: 14358
+// Function ID: 14359
 // Name: DisplayNameStylesFontPickerSheet
-// Dependencies: [57, 31, 27, 1862, 482, 33, 4165, 689, 7928, 14331, 14333, 1864, 1861, 4134, 4133, 5221, 5220, 1212, 2557, 4578, 4576, 13693, 8359, 4161, 4121, 2]
+// Dependencies: [32, 19, 17, 1886, 505, 21, 4189, 712, 7953, 14353, 14355, 1888, 1885, 4158, 4157, 5243, 5242, 1236, 2581, 4600, 4598, 13714, 8383, 4185, 4145, 2]
 // Exports: default
 
-// Module 14336 (DisplayNameStylesFontPickerSheet)
+// Module 14358 (DisplayNameStylesFontPickerSheet)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
-import get_ActivityIndicator from "get ActivityIndicator";
+import Button from "Button";
+import get_ActivityIndicator from "getSystemLocale";
 import { FLYWHEEL_FONTS } from "items3";
 import { Fonts } from "sum";
-import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import jsxProd from "getDisplayNameStylesFontName";
+import createCacheKey from "createCacheKey";
 
-let closure_10;
-let closure_5;
+let c10;
+let c5;
+let c9;
 let closure_6;
-let closure_9;
 const require = arg1;
-({ View: closure_5, Pressable: closure_6 } = get_ActivityIndicator);
-({ jsx: closure_9, jsxs: closure_10 } = jsxProd);
-_createForOfIteratorHelperLoose = { header: { paddingTop: 4 }, headerTrailing: { justifyContent: "center", alignItems: "center" }, container: { flex: 1 } };
-_createForOfIteratorHelperLoose = { padding: require("_createForOfIteratorHelperLoose").space.PX_8, alignItems: "center" };
-_createForOfIteratorHelperLoose.contentContainer = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.gridContainer = { flexWrap: "wrap", maxWidth: 350 };
-let obj1 = { width: 79, height: 79, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_MOD_MUTED, borderRadius: require("_createForOfIteratorHelperLoose").radii.sm, borderWidth: 1, borderColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_MOD_SUBTLE, justifyContent: "center", alignItems: "center" };
-_createForOfIteratorHelperLoose.fontCard = obj1;
-_createForOfIteratorHelperLoose.fontCardSelected = { borderColor: require("_createForOfIteratorHelperLoose").colors.CONTROL_BRAND_FOREGROUND };
-_createForOfIteratorHelperLoose.fontText = { fontSize: 24, lineHeight: 34, textAlign: "center", textAlignVertical: "center" };
-let obj2 = { borderColor: require("_createForOfIteratorHelperLoose").colors.CONTROL_BRAND_FOREGROUND };
-_createForOfIteratorHelperLoose.tileNewDot = { position: "absolute", top: require("_createForOfIteratorHelperLoose").space.PX_8, right: require("_createForOfIteratorHelperLoose").space.PX_8, width: require("_createForOfIteratorHelperLoose").space.PX_8, height: require("_createForOfIteratorHelperLoose").space.PX_8, borderRadius: require("_createForOfIteratorHelperLoose").space.PX_8 / 2, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BADGE_BACKGROUND_BRAND, shadowColor: require("_createForOfIteratorHelperLoose").colors.BADGE_BACKGROUND_BRAND, shadowRadius: require("_createForOfIteratorHelperLoose").space.PX_4, shadowOpacity: 1, elevation: 4 };
-let obj4 = { position: "absolute", bottom: require("_createForOfIteratorHelperLoose").space.PX_4, left: 0, right: 0, textAlign: "center" };
-_createForOfIteratorHelperLoose.betaCaption = obj4;
-let obj5 = { flexDirection: "row", alignItems: "center", gap: require("_createForOfIteratorHelperLoose").space.PX_8, paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_12, paddingVertical: require("_createForOfIteratorHelperLoose").space.PX_8, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWEST, borderRadius: require("_createForOfIteratorHelperLoose").radii.sm, marginTop: require("_createForOfIteratorHelperLoose").space.PX_16 };
-_createForOfIteratorHelperLoose.nonLatinDisclaimer = obj5;
-_createForOfIteratorHelperLoose.disclaimerText = { flex: 1 };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-let obj3 = { position: "absolute", top: require("_createForOfIteratorHelperLoose").space.PX_8, right: require("_createForOfIteratorHelperLoose").space.PX_8, width: require("_createForOfIteratorHelperLoose").space.PX_8, height: require("_createForOfIteratorHelperLoose").space.PX_8, borderRadius: require("_createForOfIteratorHelperLoose").space.PX_8 / 2, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BADGE_BACKGROUND_BRAND, shadowColor: require("_createForOfIteratorHelperLoose").colors.BADGE_BACKGROUND_BRAND, shadowRadius: require("_createForOfIteratorHelperLoose").space.PX_4, shadowOpacity: 1, elevation: 4 };
+({ View: c5, Pressable: closure_6 } = get_ActivityIndicator);
+({ jsx: c9, jsxs: c10 } = jsxProd);
+createCacheKey = { header: { paddingTop: 4 }, headerTrailing: { justifyContent: "center", alignItems: "center" }, container: { flex: 1 }, contentContainer: null, gridContainer: null, fontCard: null, fontCardSelected: null, fontText: null, tileNewDot: null, betaCaption: null, nonLatinDisclaimer: null, disclaimerText: null };
+createCacheKey = { padding: require("Themes").space.PX_8, alignItems: "center" };
+createCacheKey[3] = createCacheKey;
+createCacheKey[4] = { flexWrap: "wrap", maxWidth: 350 };
+createCacheKey[5] = { width: 79, height: 79, backgroundColor: require("Themes").colors.BACKGROUND_MOD_MUTED, borderRadius: require("Themes").radii.sm, borderWidth: 1, borderColor: require("Themes").colors.BACKGROUND_MOD_SUBTLE, justifyContent: "center", alignItems: "center" };
+let obj1 = { width: 79, height: 79, backgroundColor: require("Themes").colors.BACKGROUND_MOD_MUTED, borderRadius: require("Themes").radii.sm, borderWidth: 1, borderColor: require("Themes").colors.BACKGROUND_MOD_SUBTLE, justifyContent: "center", alignItems: "center" };
+createCacheKey[6] = { borderColor: require("Themes").colors.CONTROL_BRAND_FOREGROUND };
+createCacheKey[7] = { fontSize: 24, lineHeight: 34, textAlign: "center", textAlignVertical: "center" };
+let obj2 = { borderColor: require("Themes").colors.CONTROL_BRAND_FOREGROUND };
+createCacheKey[8] = { position: "absolute", top: require("Themes").space.PX_8, right: require("Themes").space.PX_8, width: require("Themes").space.PX_8, height: require("Themes").space.PX_8, borderRadius: require("Themes").space.PX_8 / 2, backgroundColor: require("Themes").colors.BADGE_BACKGROUND_BRAND, shadowColor: require("Themes").colors.BADGE_BACKGROUND_BRAND, shadowRadius: require("Themes").space.PX_4, shadowOpacity: 1, elevation: 4 };
+let obj3 = { position: "absolute", top: require("Themes").space.PX_8, right: require("Themes").space.PX_8, width: require("Themes").space.PX_8, height: require("Themes").space.PX_8, borderRadius: require("Themes").space.PX_8 / 2, backgroundColor: require("Themes").colors.BADGE_BACKGROUND_BRAND, shadowColor: require("Themes").colors.BADGE_BACKGROUND_BRAND, shadowRadius: require("Themes").space.PX_4, shadowOpacity: 1, elevation: 4 };
+createCacheKey[9] = { position: "absolute", bottom: require("Themes").space.PX_4, left: 0, right: 0, textAlign: "center" };
+let obj4 = { position: "absolute", bottom: require("Themes").space.PX_4, left: 0, right: 0, textAlign: "center" };
+createCacheKey[10] = { flexDirection: "row", alignItems: "center", gap: require("Themes").space.PX_8, paddingHorizontal: require("Themes").space.PX_12, paddingVertical: require("Themes").space.PX_8, backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOWEST, borderRadius: require("Themes").radii.sm, marginTop: require("Themes").space.PX_16 };
+createCacheKey[11] = { flex: 1 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let obj5 = { flexDirection: "row", alignItems: "center", gap: require("Themes").space.PX_8, paddingHorizontal: require("Themes").space.PX_12, paddingVertical: require("Themes").space.PX_8, backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOWEST, borderRadius: require("Themes").radii.sm, marginTop: require("Themes").space.PX_16 };
 let result = require("get ActivityIndicator").fileFinishedImporting("modules/display_name_styles/native/DisplayNameStylesFontPickerSheet.tsx");
 
 export default function DisplayNameStylesFontPickerSheet(displayName) {
-  let _slicedToArray;
-  let dependencyMap;
+  let c2;
+  let c3;
   let onSelectFont;
   let selectedFontId;
   ({ selectedFontId, onSelectFont } = displayName);
-  const tmp = _createForOfIteratorHelperLoose();
-  const importDefault = tmp;
-  let obj = onSelectFont(7928);
-  let obj1 = onSelectFont(14331);
+  let importDefault;
+  let dependencyMap;
+  let callback;
+  let first;
+  let closure_5;
+  let c6;
+  let closure_7;
+  let tmp = createCacheKey();
+  importDefault = tmp;
+  let obj = onSelectFont(7953);
+  let obj1 = onSelectFont(14353);
   const visibleFontOrder = obj1.useVisibleFontOrder();
-  let obj2 = onSelectFont(14333);
+  let obj2 = onSelectFont(14355);
   const displayNameStylesNewFonts = obj2.useDisplayNameStylesNewFonts(visibleFontOrder);
-  ({ dotFontIds: dependencyMap, dismissFontDot: _slicedToArray } = displayNameStylesNewFonts);
-  const tmp3 = callback(first.useState(selectedFontId), 2);
-  first = tmp3[0];
-  let closure_5 = tmp3[1];
-  let tmp5 = first !== onSelectFont(1864).DisplayNameFont.DEFAULT;
-  let obj3 = onSelectFont(1861);
-  let closure_6 = tmp7;
-  let closure_7 = first.useCallback((arg0) => {
+  ({ dotFontIds: c2, dismissFontDot: c3 } = displayNameStylesNewFonts);
+  const tmp5 = callback(first.useState(selectedFontId), 2);
+  first = tmp5[0];
+  closure_5 = tmp5[1];
+  let tmp14Result = first !== onSelectFont(1888).DisplayNameFont.DEFAULT;
+  let obj3 = onSelectFont(1885);
+  c6 = tmp9;
+  closure_7 = first.useCallback((arg0) => {
     callback(arg0);
   }, []);
   let items = [first !== selectedFontId, first, onSelectFont];
   callback = first.useCallback(() => {
-    const result = onSelectFont(outer1_2[13]).triggerHapticFeedback(onSelectFont(outer1_2[13]).HapticFeedbackTypes.IMPACT_MEDIUM);
-    if (closure_6) {
+    const result = onSelectFont(_undefined2[13]).triggerHapticFeedback(onSelectFont(_undefined2[13]).HapticFeedbackTypes.IMPACT_MEDIUM);
+    if (c6) {
       onSelectFont(first);
     }
-    const obj = onSelectFont(outer1_2[13]);
-    tmp(outer1_2[14]).hideActionSheet();
+    const obj = onSelectFont(_undefined2[13]);
+    const tmp = _undefined2;
+    _undefined(_undefined2[14]).hideActionSheet();
   }, items);
-  obj = { ref: obj.useBottomSheetRef().bottomSheetRef };
-  obj = { style: tmp.header };
-  obj1 = {};
-  let intl = onSelectFont(1212).intl;
-  obj1.title = intl.string(importDefault(2557)["0JCuGm"]);
-  obj2 = { style: tmp.headerTrailing };
-  obj3 = {};
-  let intl2 = onSelectFont(1212).intl;
-  obj3.text = intl2.string(onSelectFont(1212).t.XqMe3N);
-  obj3.onPress = callback;
-  obj3.variant = "primary";
-  obj3.size = "sm";
-  obj2.children = callback2(onSelectFont(4578).Button, obj3);
-  obj1.trailing = callback2(closure_5, obj2);
-  obj.children = callback2(onSelectFont(5220).BottomSheetTitleHeader, obj1);
-  obj.header = callback2(closure_5, obj);
-  const obj4 = { style: tmp.container };
-  const obj5 = { style: tmp.contentContainer };
-  const obj6 = {
-    direction: "horizontal",
-    align: "center",
-    justify: "center",
-    spacing: 8,
-    style: tmp.gridContainer,
-    children: visibleFontOrder.map((arg0) => {
-      let closure_0 = arg0;
-      const intl = onSelectFont(outer1_2[17]).intl;
-      const stringResult = intl.string(arg0 === first(outer1_2[21])(arg0));
-      let PRIMARY_SEMIBOLD = onSelectFont(outer1_2[22]).DISPLAY_NAME_STYLES_FONT_FAMILY_MAP[arg0];
-      if (null == PRIMARY_SEMIBOLD) {
-        PRIMARY_SEMIBOLD = outer1_8.PRIMARY_SEMIBOLD;
-      }
-      let hasItem = set.has(arg0);
-      let hasItem1 = closure_7.includes(arg0);
-      let obj = {
-        onPress() {
-          outer1_7(closure_0);
-          if (hasItem) {
-            outer1_3(closure_0);
-          }
-        },
-        accessibilityRole: "button"
-      };
-      let combined = stringResult;
-      if (hasItem1) {
-        const intl2 = onSelectFont(outer1_2[17]).intl;
-        const _HermesInternal = HermesInternal;
-        combined = "" + stringResult + ", " + intl2.string(onSelectFont(outer1_2[17]).t.oW0eUd);
-      }
-      obj.accessibilityLabel = combined;
-      obj.accessibilityState = { selected: arg0 === first };
-      obj = {};
-      const items = [hasItem.fontCard, ];
-      let fontCardSelected = tmp;
-      if (arg0 === first) {
-        fontCardSelected = hasItem.fontCardSelected;
-      }
-      items[1] = fontCardSelected;
-      obj.style = items;
-      obj = { variant: "text-lg/semibold" };
-      let str3 = "text-default";
-      if (arg0 === first) {
-        str3 = "mobile-text-heading-primary";
-      }
-      obj.color = str3;
-      const items1 = [hasItem.fontText, ];
-      const obj1 = { fontFamily: PRIMARY_SEMIBOLD };
-      items1[1] = obj1;
-      obj.style = items1;
-      obj.children = "Gg";
-      const items2 = [outer1_9(onSelectFont(outer1_2[23]).Text, obj), , ];
-      if (hasItem) {
-        const obj2 = { style: hasItem.tileNewDot, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants" };
-        hasItem = outer1_9(closure_5, obj2);
-      }
-      items2[1] = hasItem;
-      if (hasItem1) {
-        const obj3 = { variant: "text-xs/normal", color: "text-subtle", style: hasItem.betaCaption };
-        const intl3 = onSelectFont(outer1_2[17]).intl;
-        obj3.children = intl3.string(onSelectFont(outer1_2[17]).t.oW0eUd);
-        hasItem1 = outer1_9(onSelectFont(outer1_2[23]).Text, obj3);
-      }
-      items2[2] = hasItem1;
-      obj.children = items2;
-      obj.children = outer1_10(closure_5, obj);
-      return outer1_9(closure_6, obj, arg0);
-    })
-  };
-  let items1 = [callback2(onSelectFont(4576).Stack, obj6), ];
-  if (tmp5) {
-    tmp5 = hasNonLatinLettersResult;
+  obj = { ref: obj.useBottomSheetRef().bottomSheetRef, header: null, children: null };
+  obj = { style: tmp.header, children: null };
+  obj1 = { title: null, trailing: null };
+  let intl = onSelectFont(1236).intl;
+  obj1[0] = intl.string(importDefault(2581)["0JCuGm"]);
+  obj2 = { style: tmp.headerTrailing, children: null };
+  obj3 = { text: null, onPress: null, variant: "primary", size: "sm" };
+  let intl2 = onSelectFont(1236).intl;
+  obj3[0] = intl2.string(onSelectFont(1236).t.XqMe3N);
+  obj3[1] = callback;
+  obj2[1] = callback2(onSelectFont(4600).Button, obj3);
+  obj1[1] = callback2(closure_5, obj2);
+  obj[1] = callback2(onSelectFont(5242).BottomSheetTitleHeader, obj1);
+  obj[1] = callback2(closure_5, obj);
+  const obj4 = { style: tmp.container, children: null };
+  const obj5 = { style: tmp.contentContainer, children: null };
+  const obj6 = { direction: "horizontal", align: "center", justify: "center", spacing: 8, style: tmp.gridContainer, children: null };
+  obj6[5] = visibleFontOrder.map((arg0) => {
+    let closure_0 = arg0;
+    const intl = onSelectFont(_undefined2[17]).intl;
+    const stringResult = intl.string(_undefined(_undefined2[21])(arg0));
+    let PRIMARY_SEMIBOLD = onSelectFont(_undefined2[22]).DISPLAY_NAME_STYLES_FONT_FAMILY_MAP[arg0];
+    if (PRIMARY_SEMIBOLD == null) {
+      PRIMARY_SEMIBOLD = outer1_8.PRIMARY_SEMIBOLD;
+    }
+    let hasItem = _undefined2.has(arg0);
+    let hasItem1 = closure_7.includes(arg0);
+    let obj = {
+      onPress() {
+        outer1_7(closure_0);
+        if (hasItem) {
+          outer1_3(closure_0);
+        }
+      },
+      accessibilityRole: "button",
+      accessibilityLabel: null,
+      accessibilityState: null,
+      children: null
+    };
+    let combined = stringResult;
+    if (hasItem1) {
+      const intl2 = tmp2(tmp3[17]).intl;
+      const _HermesInternal = HermesInternal;
+      combined = "" + stringResult + ", " + intl2.string(tmp2(tmp3[17]).t.oW0eUd);
+    }
+    obj[2] = combined;
+    obj[3] = { selected: arg0 === first };
+    const items = [hasItem.fontCard, ];
+    let fontCardSelected = tmp12;
+    if (arg0 === first) {
+      fontCardSelected = tmp15.fontCardSelected;
+    }
+    obj = { style: items, children: null };
+    items[1] = fontCardSelected;
+    let str3 = "text-default";
+    if (arg0 === first) {
+      str3 = "mobile-text-heading-primary";
+    }
+    const items1 = [hasItem.fontText, { fontFamily: PRIMARY_SEMIBOLD }];
+    const items2 = [outer1_9(onSelectFont(_undefined2[23]).Text, { variant: "text-lg/semibold", color: str3, style: items1, children: "Gg" }), , ];
+    if (hasItem) {
+      obj = { style: null, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants" };
+      obj[0] = tmp15.tileNewDot;
+      hasItem = tmp8(tmp14, obj);
+    }
+    items2[1] = hasItem;
+    if (hasItem1) {
+      const obj1 = { variant: "text-xs/normal", color: "text-subtle", style: null, children: null };
+      obj1[2] = tmp15.betaCaption;
+      const intl3 = tmp2(tmp3[17]).intl;
+      obj1[3] = intl3.string(tmp2(tmp3[17]).t.oW0eUd);
+      hasItem1 = tmp8(tmp2(tmp3[23]).Text, obj1);
+    }
+    items2[2] = hasItem1;
+    obj[1] = items2;
+    obj[4] = outer1_10(closure_5, obj);
+    return outer1_9(c6, obj, arg0);
+  });
+  let items1 = [callback2(onSelectFont(4598).Stack, obj6), ];
+  if (tmp14Result) {
+    tmp14Result = hasNonLatinLettersResult;
   }
-  if (tmp5) {
-    const obj7 = { style: tmp.nonLatinDisclaimer };
-    const obj8 = { size: "sm" };
-    let items2 = [callback2(onSelectFont(4121).CircleInformationIcon, obj8), ];
-    const obj9 = { variant: "text-xs/normal", color: "text-subtle", style: tmp.disclaimerText };
-    let intl3 = onSelectFont(1212).intl;
-    obj9.children = intl3.string(importDefault(2557)["+O1xL2"]);
-    items2[1] = callback2(onSelectFont(4161).Text, obj9);
-    obj7.children = items2;
-    tmp5 = callback3(closure_5, obj7);
+  if (tmp14Result) {
+    const obj7 = { style: null, children: null };
+    obj7[0] = tmp.nonLatinDisclaimer;
+    let items2 = [tmp11(tmp2(4145).CircleInformationIcon, { size: "sm" }), ];
+    const obj8 = { variant: "text-xs/normal", color: "text-subtle", style: null, children: null };
+    obj8[2] = tmp.disclaimerText;
+    let intl3 = tmp2(1236).intl;
+    obj8[3] = intl3.string(importDefault(2581)["+O1xL2"]);
+    items2[1] = tmp11(tmp2(4185).Text, obj8);
+    obj7[1] = items2;
+    tmp14Result = tmp14(tmp12, obj7);
   }
-  items1[1] = tmp5;
-  obj5.children = items1;
-  obj4.children = callback3(closure_5, obj5);
-  obj.children = callback2(closure_5, obj4);
-  return callback2(onSelectFont(5221).BottomSheet, obj);
+  items1[1] = tmp14Result;
+  obj5[1] = items1;
+  obj4[1] = closure_10(closure_5, obj5);
+  obj[2] = callback2(closure_5, obj4);
+  return callback2(onSelectFont(5243).BottomSheet, obj);
 };

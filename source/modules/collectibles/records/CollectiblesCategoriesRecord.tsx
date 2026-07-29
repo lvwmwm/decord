@@ -1,35 +1,32 @@
-// Module ID: 5798
-// Function ID: 50798
-// Name: CollectiblesCategoriesRecord
-// Dependencies: [6, 7, 5799, 5781, 2]
+// Module ID: 5816
+// Function ID: 5817
+// Name: fromServer
+// Dependencies: [5817, 5799, 2]
 
-// Module 5798 (CollectiblesCategoriesRecord)
-import _classCallCheck from "_classCallCheck";
-import _defineProperties from "_defineProperties";
-import StorefrontCollectionRecord from "StorefrontCollectionRecord";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 5816 (fromServer)
+import fromServer from "fromServer";
+import closure_1 from "fromServer";
 
-const tmp2 = (() => {
-  class CollectiblesCategoriesRecord {
-    constructor(arg0) {
-      tmp = CollectiblesCategoriesRecord(this, CollectiblesCategoriesRecord);
-      categories = arg0.categories;
-      this.categories = categories.map((arg0) => outer2_3.fromServer(arg0));
-      collections = arg0.collections;
-      this.collections = collections.map((arg0) => outer2_2.fromServer(arg0));
-      return;
-    }
+let prototype;
+prototype = function CollectiblesCategoriesRecord(categories) {
+  const obj = Object.create(new.target.prototype);
+  categories = categories.categories;
+  obj.categories = categories.map((arg0) => closure_1.fromServer(arg0));
+  const collections = categories.collections;
+  obj.collections = collections.map((arg0) => fromServer.fromServer(arg0));
+  return obj;
+}.prototype;
+prototype["fromServer"] = function fromServer(categories) {
+  if (typeof prototype !== "find") {
+    HermesBuiltin.throwTypeError();
   }
-  const items = [
-    {
-      key: "fromServer",
-      value(categories) {
-        return new CollectiblesCategoriesRecord(categories);
-      }
-    }
-  ];
-  return callback(CollectiblesCategoriesRecord, null, items);
-})();
-const result = require("StorefrontCollectionRecord").fileFinishedImporting("modules/collectibles/records/CollectiblesCategoriesRecord.tsx");
+  const obj = Object.create(prototype.prototype);
+  categories = categories.categories;
+  obj.categories = categories.map((arg0) => closure_1.fromServer(arg0));
+  const collections = categories.collections;
+  obj.collections = collections.map((arg0) => fromServer.fromServer(arg0));
+  return obj;
+};
+const result = require("set").fileFinishedImporting("modules/collectibles/records/CollectiblesCategoriesRecord.tsx");
 
-export const CollectiblesCategoriesRecord = tmp2;
+export const CollectiblesCategoriesRecord = prototype;

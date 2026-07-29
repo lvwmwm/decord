@@ -1,26 +1,21 @@
-// Module ID: 13483
-// Function ID: 103400
-// Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 4565, 2]
+// Module ID: 13506
+// Function ID: 13507
+// Name: _initialize
+// Dependencies: [4368, 2]
 
-// Module 13483 (_isNativeReflectConstruct)
-import set from "set";
-import _defineProperties from "_defineProperties";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
-import tmp2 from "LifecycleManager";
+// Module 13506 (_initialize)
+import "initialize";
 
-function _isNativeReflectConstruct() {
-  let set = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return set;
-  }
-  const result = _isNativeReflectConstruct();
+class CallKitLifecycleManager extends tmp2 {
 }
-tmp2 = new tmp2();
-let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/calls/mobile/CallKitManager.android.tsx");
+const prototype = CallKitLifecycleManager.prototype;
+prototype["_initialize"] = function _initialize() {
 
-export default tmp2;
+};
+prototype["_terminate"] = function _terminate() {
+
+};
+const callKitLifecycleManager = new CallKitLifecycleManager();
+const result = require("set").fileFinishedImporting("modules/calls/mobile/CallKitManager.android.tsx");
+
+export default callKitLifecycleManager;

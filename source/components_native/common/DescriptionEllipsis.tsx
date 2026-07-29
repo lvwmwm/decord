@@ -1,30 +1,30 @@
-// Module ID: 11478
-// Function ID: 89072
+// Module ID: 11502
+// Function ID: 11503
 // Name: DescriptionEllipsis
-// Dependencies: [31, 27, 33, 4165, 689, 2]
+// Dependencies: [19, 17, 21, 4189, 712, 2]
 // Exports: default
 
-// Module 11478 (DescriptionEllipsis)
-import "result";
+// Module 11502 (DescriptionEllipsis)
+import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
 let closure_1;
-let closure_2;
-({ jsx: closure_1, jsxs: closure_2 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWEST, justifyContent: "center", alignItems: "center", flexDirection: "row", borderRadius: require("_createForOfIteratorHelperLoose").radii.xs, marginTop: 4, height: 12, width: 24 };
-_createForOfIteratorHelperLoose.topicEllipsis = _createForOfIteratorHelperLoose;
-const obj1 = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.TEXT_MUTED, borderRadius: 2, margin: 1, height: 4, width: 4 };
-_createForOfIteratorHelperLoose.topicEllipsisDot = obj1;
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+let obj1;
+({ jsx: closure_1, jsxs: obj1 } = jsxProd);
+createCacheKey = { topicEllipsis: null, topicEllipsisDot: null };
+createCacheKey = { backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOWEST, justifyContent: "center", alignItems: "center", flexDirection: "row", borderRadius: require("Themes").radii.xs, marginTop: 4, height: 12, width: 24 };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { backgroundColor: require("Themes").colors.TEXT_MUTED, borderRadius: 2, margin: 1, height: 4, width: 4 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+obj1 = { backgroundColor: require("Themes").colors.TEXT_MUTED, borderRadius: 2, margin: 1, height: 4, width: 4 };
 const result = require("jsxProd").fileFinishedImporting("components_native/common/DescriptionEllipsis.tsx");
 
 export default function DescriptionEllipsis(dotStyle) {
   dotStyle = dotStyle.dotStyle;
-  const tmp = _createForOfIteratorHelperLoose();
-  const obj = { style: items };
+  const tmp = createCacheKey();
+  const obj = { style: items, children: null };
   items = [tmp.topicEllipsis, dotStyle.style];
   const items1 = [tmp.topicEllipsisDot, dotStyle];
   const items2 = [callback(View, { style: items1 }), , ];
@@ -32,6 +32,6 @@ export default function DescriptionEllipsis(dotStyle) {
   items2[1] = callback(View, { style: items3 });
   const items4 = [tmp.topicEllipsisDot, dotStyle];
   items2[2] = callback(View, { style: items4 });
-  obj.children = items2;
+  obj[1] = items2;
   return callback2(View, obj);
 };

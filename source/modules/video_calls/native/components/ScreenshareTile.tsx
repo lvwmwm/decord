@@ -1,30 +1,30 @@
-// Module ID: 10517
-// Function ID: 81430
+// Module ID: 10541
+// Function ID: 10542
 // Name: ScreenShareTile
-// Dependencies: [31, 27, 653, 33, 4165, 689, 10518, 5251, 1273, 10519, 4161, 1212, 2]
+// Dependencies: [19, 17, 676, 21, 4189, 712, 10542, 5273, 1297, 10543, 4185, 1236, 2]
 // Exports: default
 
-// Module 10517 (ScreenShareTile)
-import "result";
+// Module 10541 (ScreenShareTile)
+import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { NOOP } from "ME";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_3;
-let closure_4;
+let c3;
+let c4;
 let closure_6;
-let closure_7;
+let error;
 const require = arg1;
-({ View: closure_3, Image: closure_4 } = get_ActivityIndicator);
-({ jsx: closure_6, jsxs: closure_7 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { alignItems: "center", justifyContent: "center", backgroundColor: require("_createForOfIteratorHelperLoose").colors.BLACK, overflow: "hidden", flex: 1 };
-_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.image = { marginBottom: 8, width: 60, height: 40 };
-_createForOfIteratorHelperLoose.label = { lineHeight: 18, textAlign: "center" };
-_createForOfIteratorHelperLoose.liveContainer = { position: "absolute", top: 8, right: 8, zIndex: 2 };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+({ View: c3, Image: c4 } = get_ActivityIndicator);
+({ jsx: closure_6, jsxs: error } = jsxProd);
+createCacheKey = { container: null, image: null, label: null, liveContainer: null };
+createCacheKey = { alignItems: "center", justifyContent: "center", backgroundColor: require("Themes").colors.BLACK, overflow: "hidden", flex: 1 };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { marginBottom: 8, width: 60, height: 40 };
+createCacheKey[2] = { lineHeight: 18, textAlign: "center" };
+createCacheKey[3] = { position: "absolute", top: 8, right: 8, zIndex: 2 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
 const result = require("ME").fileFinishedImporting("modules/video_calls/native/components/ScreenshareTile.tsx");
 
 export default function ScreenShareTile(onSingleTap) {
@@ -36,19 +36,19 @@ export default function ScreenShareTile(onSingleTap) {
   if (onDoubleTap === undefined) {
     onDoubleTap = NOOP;
   }
-  const tmp = _createForOfIteratorHelperLoose();
-  let obj = { onSingleTapStart: onSingleTap, onDoubleTapStart: onDoubleTap };
-  obj = { gesture: importDefault(10518)(obj) };
-  obj = { style: tmp.container };
-  const obj1 = { style: tmp.liveContainer, children: callback(require(1273) /* Button */.LiveTag, {}) };
-  const items = [callback(closure_3, obj1), , ];
-  const tmp2 = importDefault(10518)(obj);
-  items[1] = callback(closure_4, { source: importDefault(10519), style: tmp.image, resizeMode: "contain" });
-  const obj3 = { style: tmp.label, variant: "text-xs/bold", color: "text-overlay-light" };
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj3.children = intl.string(require(1212) /* getSystemLocale */.t.G84gtR);
-  items[2] = callback(require(4161) /* Text */.Text, obj3);
-  obj.children = items;
-  obj.children = callback2(closure_3, obj);
-  return callback(require(5251) /* Directions */.GestureDetector, obj);
+  const tmp = createCacheKey();
+  let obj = { gesture: importDefault(10542)({ onSingleTapStart: onSingleTap, onDoubleTapStart: onDoubleTap }), children: null };
+  obj = { style: tmp.container, children: null };
+  obj = { style: tmp.liveContainer, children: null };
+  obj[1] = callback(require(1297) /* Button */.LiveTag, {});
+  const items = [callback(closure_3, obj), , ];
+  const tmp2 = importDefault(10542)({ onSingleTapStart: onSingleTap, onDoubleTapStart: onDoubleTap });
+  items[1] = callback(closure_4, { source: importDefault(10543), style: tmp.image, resizeMode: "contain" });
+  const obj2 = { style: tmp.label, variant: "text-xs/bold", color: "text-overlay-light", children: null };
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj2[3] = intl.string(require(1236) /* getSystemLocale */.t.G84gtR);
+  items[2] = callback(require(4185) /* Text */.Text, obj2);
+  obj[1] = items;
+  obj[1] = callback2(closure_3, obj);
+  return callback(require(5273) /* Directions */.GestureDetector, obj);
 };

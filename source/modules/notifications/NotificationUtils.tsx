@@ -1,88 +1,95 @@
-// Module ID: 10289
-// Function ID: 79427
+// Module ID: 10310
+// Function ID: 10311
 // Name: getMuteTimeOptions
-// Dependencies: [4360, 653, 662, 1212, 21, 1360, 3796, 566, 2]
+// Dependencies: [4385, 676, 685, 1236, 11, 1384, 3820, 589, 2]
 // Exports: filterOverrides, getMuteTimeOptions, shouldShowUseNewNotificationSystem, useShouldUseNewNotificationSystem
 
-// Module 10289 (getMuteTimeOptions)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 10310 (getMuteTimeOptions)
+import updateUserGuildSettingsInternal from "updateUserGuildSettingsInternal";
 import { UserNotificationSettings } from "ME";
 import MAX_FAVORITES from "MAX_FAVORITES";
 
 let closure_6;
-let closure_7;
+let error;
 const require = arg1;
-({ MuteUntilSeconds: closure_6, ChannelNotificationSettingsFlags: closure_7 } = MAX_FAVORITES);
+({ MuteUntilSeconds: closure_6, ChannelNotificationSettingsFlags: error } = MAX_FAVORITES);
 let closure_8 = { ignoreMute: false, ignoreUnreadSetting: true, ignoreNotificationSetting: false };
 const result = require("MAX_FAVORITES").fileFinishedImporting("modules/notifications/NotificationUtils.tsx");
 
 export const getMuteTimeOptions = function getMuteTimeOptions() {
-  let obj = { id: "15-minutes" };
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj.label = intl.string(require(1212) /* getSystemLocale */.t["8ot6gv"]);
-  obj.value = closure_6.MINUTES_15;
+  let obj = { id: "15-minutes", label: null, value: null };
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj[1] = intl.string(require(1236) /* getSystemLocale */.t["8ot6gv"]);
+  obj[2] = closure_6.MINUTES_15;
   const items = [obj, , , , , ];
-  obj = { id: "1-hour" };
-  const intl2 = require(1212) /* getSystemLocale */.intl;
-  obj.label = intl2.string(require(1212) /* getSystemLocale */.t.UMWBZr);
-  obj.value = closure_6.HOURS_1;
+  obj = { id: "1-hour", label: null, value: null };
+  const intl2 = require(1236) /* getSystemLocale */.intl;
+  obj[1] = intl2.string(require(1236) /* getSystemLocale */.t.UMWBZr);
+  obj[2] = closure_6.HOURS_1;
   items[1] = obj;
-  obj = { id: "3-hours" };
-  const intl3 = require(1212) /* getSystemLocale */.intl;
-  obj.label = intl3.string(require(1212) /* getSystemLocale */.t.QmYWtu);
-  obj.value = closure_6.HOURS_3;
+  obj = { id: "3-hours", label: null, value: null };
+  const intl3 = require(1236) /* getSystemLocale */.intl;
+  obj[1] = intl3.string(require(1236) /* getSystemLocale */.t.QmYWtu);
+  obj[2] = closure_6.HOURS_3;
   items[2] = obj;
-  const obj1 = { id: "8-hours" };
-  const intl4 = require(1212) /* getSystemLocale */.intl;
-  obj1.label = intl4.string(require(1212) /* getSystemLocale */.t.EpAXPC);
-  obj1.value = closure_6.HOURS_8;
+  const obj1 = { id: "8-hours", label: null, value: null };
+  const intl4 = require(1236) /* getSystemLocale */.intl;
+  obj1[1] = intl4.string(require(1236) /* getSystemLocale */.t.EpAXPC);
+  obj1[2] = closure_6.HOURS_8;
   items[3] = obj1;
-  const obj2 = { id: "24-hours" };
-  const intl5 = require(1212) /* getSystemLocale */.intl;
-  obj2.label = intl5.string(require(1212) /* getSystemLocale */.t["755t4q"]);
-  obj2.value = closure_6.HOURS_24;
+  const obj2 = { id: "24-hours", label: null, value: null };
+  const intl5 = require(1236) /* getSystemLocale */.intl;
+  obj2[1] = intl5.string(require(1236) /* getSystemLocale */.t["755t4q"]);
+  obj2[2] = closure_6.HOURS_24;
   items[4] = obj2;
-  const obj3 = { id: "forever" };
-  const intl6 = require(1212) /* getSystemLocale */.intl;
-  obj3.label = intl6.string(require(1212) /* getSystemLocale */.t.r3LawO);
-  obj3.value = closure_6.ALWAYS;
+  const obj3 = { id: "forever", label: null, value: null };
+  const intl6 = require(1236) /* getSystemLocale */.intl;
+  obj3[1] = intl6.string(require(1236) /* getSystemLocale */.t.r3LawO);
+  obj3[2] = closure_6.ALWAYS;
   items[5] = obj3;
   return items;
 };
 export const filterOverrides = function filterOverrides(channelOverrides, arg1) {
-  let tmp = arg1;
   let closure_0 = channelOverrides;
+  let tmp = arg1;
   if (arg1 === undefined) {
     tmp = closure_8;
   }
   const importDefault = tmp;
-  const keys = importDefault(21).keys(channelOverrides);
+  const keys = importDefault(11).keys(channelOverrides);
   return keys.filter((arg0) => {
-    const flags = dependencyMap[arg0].flags;
-    let num = 0;
-    if (null != flags) {
-      num = flags;
+    let num = dependencyMap[arg0].flags;
+    if (num == null) {
+      num = 0;
     }
     let hasFlagResult = outer1_2(outer1_3[5]).hasFlag(num, outer1_7.UNREADS_ALL_MESSAGES);
     if (!hasFlagResult) {
-      const flags2 = dependencyMap[arg0].flags;
-      let num2 = 0;
-      if (null != flags2) {
-        num2 = flags2;
+      let num2 = tmp[arg0].flags;
+      if (num2 == null) {
+        num2 = 0;
       }
-      hasFlagResult = outer1_2(outer1_3[5]).hasFlag(num2, outer1_7.UNREADS_ONLY_MENTIONS);
-      const obj2 = outer1_2(outer1_3[5]);
+      hasFlagResult = outer1_2(tmp3[5]).hasFlag(num2, outer1_7.UNREADS_ONLY_MENTIONS);
+      const tmp2Result = outer1_2(tmp3[5]);
     }
-    let tmp7 = !tmp.ignoreUnreadSetting && hasFlagResult;
-    if (!tmp7) {
-      tmp7 = !tmp.ignoreNotificationSetting && tmp;
-      const tmp9 = !tmp.ignoreNotificationSetting && tmp;
+    const ignoreUnreadSetting = tmp.ignoreUnreadSetting;
+    let tmp7 = !ignoreUnreadSetting;
+    if (!ignoreUnreadSetting) {
+      tmp7 = hasFlagResult;
     }
     if (!tmp7) {
-      let isMuted = !tmp.ignoreMute;
-      if (isMuted) {
-        isMuted = dependencyMap(outer1_3[6]).computeIsMuted(dependencyMap[arg0]);
-        const obj3 = dependencyMap(outer1_3[6]);
+      const ignoreNotificationSetting = tmp6.ignoreNotificationSetting;
+      let tmp8 = !ignoreNotificationSetting;
+      if (!ignoreNotificationSetting) {
+        tmp8 = dependencyMap[arg0].message_notifications !== outer1_5.NULL;
+      }
+      tmp7 = tmp8;
+    }
+    if (!tmp7) {
+      const ignoreMute = tmp6.ignoreMute;
+      let isMuted = !ignoreMute;
+      if (!ignoreMute) {
+        isMuted = dependencyMap(tmp3[6]).computeIsMuted(tmp[arg0]);
+        const obj3 = dependencyMap(tmp3[6]);
       }
       tmp7 = isMuted;
     }
@@ -90,8 +97,8 @@ export const filterOverrides = function filterOverrides(channelOverrides, arg1) 
   });
 };
 export const useShouldUseNewNotificationSystem = function useShouldUseNewNotificationSystem(GuildUnreadAction) {
-  const items = [_isNativeReflectConstruct];
-  return require(566) /* initialize */.useStateFromStores(items, () => outer1_4.useNewNotifications);
+  const items = [updateUserGuildSettingsInternal];
+  return require(589) /* initialize */.useStateFromStores(items, () => useNewNotifications.useNewNotifications);
 };
 export const shouldShowUseNewNotificationSystem = function shouldShowUseNewNotificationSystem(GuildPopoutMenu) {
   return useNewNotifications.useNewNotifications;

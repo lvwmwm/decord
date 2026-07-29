@@ -1,60 +1,142 @@
-// Module ID: 10169
-// Function ID: 78539
+// Module ID: 10190
+// Function ID: 10191
 // Name: GroupDMInviteManagement
-// Dependencies: [5, 57, 31, 27, 6676, 7664, 653, 33, 4165, 4594, 507, 22, 689, 10170, 5618, 1273, 10188, 10189, 1212, 5121, 480, 5552, 2]
+// Dependencies: [5, 32, 19, 17, 6697, 7687, 676, 21, 4189, 4616, 530, 12, 712, 10191, 5636, 1297, 10209, 10210, 1236, 5143, 503, 5570, 2]
 
-// Module 10169 (GroupDMInviteManagement)
-import closure_3 from "_isNativeReflectConstruct";
+// Module 10190 (GroupDMInviteManagement)
+import closure_3 from "normalizeChannelPropertyForCompare";
 import _slicedToArray from "_slicedToArray";
-import importAllResult from "result";
-import get_ActivityIndicator from "get ActivityIndicator";
-import closure_8 from "_isNativeReflectConstruct";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import importAllResult from "HeaderBackImage";
+import get_ActivityIndicator from "registerAsset";
+import createFromServer from "createFromServer";
+import normalizeChannelPropertyForCompare from "normalizeChannelPropertyForCompare";
 import ME from "ME";
-import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import { jsx } from "NavigationStack";
+import createCacheKey from "createCacheKey";
 
 let Platform;
-let closure_10;
+let c10;
+let c9;
 let closure_6;
-let closure_7;
-let closure_9;
+let error;
 const require = arg1;
 function GroupDMInviteManagement(channelId) {
   channelId = channelId.channelId;
+  let first;
+  let dependencyMap;
+  let closure_3;
+  let callback;
   const tmp2 = callback(importAllResult.useState([]), 2);
-  const first = tmp2[0];
-  const dependencyMap = tmp2[1];
+  first = tmp2[0];
+  dependencyMap = tmp2[1];
   const tmp3 = callback(importAllResult.useState(true), 2);
-  let closure_3 = tmp3[1];
-  first(4594)(() => {
+  closure_3 = tmp3[1];
+  first(4616)(() => {
     function _fetchInvites() {
-      // CreateGeneratorClosureLongIndex (0x67)
-      const obj = callback(tmp);
-      return obj(...arguments);
+      const self = this;
+      const tmp = callback(function*() {
+        if (v02 === 2) {
+          v02 = 3;
+          HermesBuiltin.throwTypeError();
+        } else if (tmp4 === 3) {
+          if (arg0 === 1) {
+            throw arg1;
+          } else if (arg0 === 2) {
+            let obj = { value: null, done: true };
+            obj[0] = arg1;
+            return obj;
+          } else {
+            return { value: "HermesInternal", done: null };
+          }
+        } else {
+          try {
+            v02 = 2;
+            if (0 === v0) {
+              if (arg0 === 1) {
+                v02 = 3;
+                throw arg1;
+              } else if (arg0 === 2) {
+                v02 = 3;
+                obj = { value: null, done: true };
+                obj[0] = arg1;
+                return obj;
+              } else {
+                let closure_1 = tmp2;
+                let callback = tmp5;
+                callback = undefined;
+                const HTTP = callback(outer2_2[10]).HTTP;
+                const obj1 = { url: null, retries: 3, oldFormErrors: true, rejectWithError: true };
+                obj1[0] = outer2_10.INSTANT_INVITES(outer1_0);
+                v0 = 1;
+                v02 = 1;
+                const obj2 = { value: null, done: false };
+                obj2[0] = HTTP.get(obj1);
+                return obj2;
+              }
+            } else if (arg0 === 1) {
+              v02 = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              v02 = 3;
+              obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            } else {
+              const body = arg1.body;
+              callback = body.map((arg0) => {
+                const obj = {};
+                const merged = Object.assign(arg0);
+                ({ max_uses: obj.maxUses, max_age: obj.maxAge, created_at: obj.createdAt } = arg0);
+                return new createFromServer(obj);
+              });
+              v0(callback);
+              v02(false);
+              v02 = 3;
+              return { value: "HermesInternal", done: null };
+            }
+          } catch (tmp13) {
+            v02 = tmp;
+            throw tmp13;
+          }
+        }
+      });
+      const _fetchInvites = tmp;
+      const apply = tmp.apply;
+      if (typeof apply === "unknown") {
+        let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+      } else {
+        applyArgumentsResult = apply(self, arguments);
+      }
+      return applyArgumentsResult;
     }
     (function fetchInvites() {
-      return _fetchInvites(...arguments);
+      const self = this;
+      const apply = _fetchInvites.apply;
+      if (typeof apply === "unknown") {
+        let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+      } else {
+        applyArgumentsResult = apply(self, arguments);
+      }
+      return applyArgumentsResult;
     })().catch(() => {
-      outer1_3(false);
+      callback(false);
     });
   });
-  const tmp5 = callback(importAllResult.useState(21), 2);
-  callback = tmp5[1];
+  const tmp7 = callback(importAllResult.useState(21), 2);
+  callback = tmp7[1];
   const items = [first];
-  const memo = importAllResult.useMemo(() => first(22).sortBy(first, (inviter) => {
+  const memo = importAllResult.useMemo(() => first(12).sortBy(first, (inviter) => {
     inviter = inviter.inviter;
-    let formatted;
-    if (null != inviter) {
-      if (null != inviter.username) {
-        formatted = str.toLowerCase();
+    let str;
+    if (inviter != null) {
+      if (inviter.username != null) {
+        str = str2.toLowerCase();
       }
     }
-    let str2 = "";
-    if (null != formatted) {
-      str2 = formatted;
+    if (str == null) {
+      str = "";
     }
-    return str2;
+    return str;
   }), items);
   const effect = importAllResult.useEffect(() => {
     callback(21);
@@ -62,43 +144,50 @@ function GroupDMInviteManagement(channelId) {
   [][0] = first;
   callback = importAllResult.useCallback((code) => code.code, []);
   if (tmp3[0]) {
-    let tmp12 = jsx(channelId(5618).SceneLoadingIndicator, {});
+    let tmp14 = jsx(channelId(5636).SceneLoadingIndicator, {});
   } else if (0 === first.length) {
-    let obj = { lightSource: first(10188), darkSource: first(10189) };
-    const intl = channelId(1212).intl;
-    obj.title = intl.string(channelId(1212).t["+nLJkZ"]);
-    const intl2 = channelId(1212).intl;
-    obj.body = intl2.string(channelId(1212).t.F53CAc);
-    tmp12 = jsx(channelId(1273).EmptyState, { lightSource: first(10188), darkSource: first(10189) });
+    let obj = { lightSource: null, darkSource: null, title: null, body: null };
+    obj[0] = tmp4(10209);
+    obj[1] = tmp4(10210);
+    const intl = channelId(1236).intl;
+    obj[2] = intl.string(channelId(1236).t["+nLJkZ"]);
+    const intl2 = channelId(1236).intl;
+    obj[3] = intl2.string(channelId(1236).t.F53CAc);
+    tmp14 = jsx(channelId(1297).EmptyState, { lightSource: null, darkSource: null, title: null, body: null });
   } else {
-    obj = { style: tmp.list, data: memo, keyExtractor: callback, renderItem: tmp9, initialNumToRender: 10, windowSize: tmp5[0] };
-    tmp12 = <closure_7 style={tmp.list} data={memo} keyExtractor={callback} renderItem={tmp9} initialNumToRender={10} windowSize={tmp5[0]} />;
+    obj = { style: null, data: null, keyExtractor: null, renderItem: null, initialNumToRender: 10, windowSize: null };
+    obj[0] = tmp.list;
+    obj[1] = memo;
+    obj[2] = callback;
+    obj[3] = tmp11;
+    obj[5] = tmp7[0];
+    tmp14 = <closure_7 style={null} data={null} keyExtractor={null} renderItem={null} initialNumToRender={10} windowSize={null} />;
   }
-  return tmp12;
+  return tmp14;
 }
-({ Platform, View: closure_6, FlatList: closure_7 } = get_ActivityIndicator);
-({ ChannelSettingsSections: closure_9, Endpoints: closure_10 } = ME);
-let closure_12 = _createForOfIteratorHelperLoose.createStyles({ list: { paddingTop: 8 } });
+let c5 = importAllResult;
+({ Platform, View: closure_6, FlatList: error } = get_ActivityIndicator);
+({ ChannelSettingsSections: c9, Endpoints: c10 } = ME);
+let closure_12 = createCacheKey.createStyles({ list: { paddingTop: 8 } });
 const memoResult = importAllResult.memo(function GroupDMInviteManagementScreen(channelId) {
   channelId = channelId.channelId;
   const onClose = channelId.onClose;
   const items = [channelId, onClose];
-  const memo = importAllResult.useMemo(() => (function getScreens(channelId, onClose) {
-    let closure_0 = channelId;
+  const memo = importAllResult.useMemo(() => {
     let obj = {};
-    obj = {};
-    const intl = channelId(outer2_2[18]).intl;
-    obj.title = intl.string(channelId(outer2_2[18]).t.OQ9MKu);
-    obj.headerLeft = channelId(outer2_2[19]).getHeaderCloseButton(onClose);
-    obj.render = function render() {
-      return outer3_11(outer3_13, { channelId: closure_0 });
+    obj = { title: null, headerLeft: null, render: null, impressionName: null };
+    const intl = channelId(outer1_2[18]).intl;
+    obj[0] = intl.string(channelId(outer1_2[18]).t.OQ9MKu);
+    obj[1] = channelId(outer1_2[19]).getHeaderCloseButton(onClose);
+    obj[2] = function render() {
+      return outer1_11(outer1_13, { channelId: closure_0 });
     };
-    obj.impressionName = channelId(outer2_2[20]).ImpressionNames.GDM_SETTINGS_INVITES;
-    obj[outer2_9.INSTANT_INVITES_MANAGEMENT] = obj;
+    obj[3] = channelId(outer1_2[20]).ImpressionNames.GDM_SETTINGS_INVITES;
+    obj[outer1_9.INSTANT_INVITES_MANAGEMENT] = obj;
     return obj;
-  })(channelId, onClose), items);
-  return jsx(channelId(5552).Navigator, { screens: memo, initialRouteName: constants.INSTANT_INVITES_MANAGEMENT });
+  }, items);
+  return jsx(channelId(5570).Navigator, { screens: memo, initialRouteName: constants.INSTANT_INVITES_MANAGEMENT });
 });
-const result = require("result").fileFinishedImporting("modules/instant_invite/native/components/GroupDMInviteManagementScreen.tsx");
+const result = require("noop").fileFinishedImporting("modules/instant_invite/native/components/GroupDMInviteManagementScreen.tsx");
 
 export default memoResult;

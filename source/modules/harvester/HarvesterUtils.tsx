@@ -1,25 +1,25 @@
-// Module ID: 13869
-// Function ID: 106189
+// Module ID: 13890
+// Function ID: 13891
 // Name: harvestDisabled
-// Dependencies: [57, 31, 1850, 12739, 13870, 566, 2]
+// Dependencies: [32, 19, 1874, 12761, 13891, 589, 2]
 // Exports: harvestDisabled, useRequestHarvestStatus
 
-// Module 13869 (harvestDisabled)
+// Module 13890 (harvestDisabled)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_5 from "_isNativeReflectConstruct";
+import noop from "noop";
+import mergeGuildAvatar from "mergeGuildAvatar";
+import harvestType from "harvestType";
 import { REQUEST_DATA_LIMIT_MS } from "REQUEST_DATA_LIMIT_DAYS";
 
 const require = arg1;
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/harvester/HarvesterUtils.tsx");
+const result = require("mergeGuildAvatar").fileFinishedImporting("modules/harvester/HarvesterUtils.tsx");
 
 export const harvestDisabled = function harvestDisabled(created_at, stateFromStores) {
-  let tmp = !stateFromStores.verified;
-  if (!tmp) {
-    const tmp2 = !stateFromStores.isStaff();
-    let tmp3 = !tmp2;
-    if (tmp2) {
+  const verified = stateFromStores.verified;
+  let tmp = !verified;
+  if (verified) {
+    let isStaffResult = stateFromStores.isStaff();
+    if (!isStaffResult) {
       let tmp5 = null != created_at;
       if (tmp5) {
         const _Date = Date;
@@ -28,57 +28,60 @@ export const harvestDisabled = function harvestDisabled(created_at, stateFromSto
         const date = new Date(created_at.created_at);
         tmp5 = REQUEST_DATA_LIMIT_MS > timestamp - date.getTime();
       }
-      tmp3 = tmp5;
+      isStaffResult = tmp5;
     }
-    tmp = tmp3;
+    tmp = isStaffResult;
   }
   return tmp;
 };
 export const useRequestHarvestStatus = function useRequestHarvestStatus() {
-  let obj = _require(566);
-  const items = [_isNativeReflectConstruct];
-  const stateFromStores = obj.useStateFromStores(items, () => outer1_4.getCurrentUser());
-  const items1 = [closure_5];
-  const stateFromStores1 = _require(566).useStateFromStores(items1, () => outer1_5.harvestType);
-  const tmp2 = callback(React.useState(() => Date.now()), 2);
-  const first = tmp2[0];
-  _require = tmp2[1];
-  let sum = first;
+  let require;
+  let tmp3;
+  let obj = require(589) /* initialize */;
+  const items = [mergeGuildAvatar];
+  const stateFromStores = obj.useStateFromStores(items, () => currentUser.getCurrentUser());
+  const items1 = [harvestType];
+  const stateFromStores1 = require(589) /* initialize */.useStateFromStores(items1, () => harvestType.harvestType);
+  const obj3 = require(589) /* initialize */;
+  [tmp3, require] = callback(React.useState(() => Date.now()), 2);
+  let sum = tmp3;
   if (null != stateFromStores1) {
     const _Date = Date;
     const date = new Date(stateFromStores1.created_at);
     sum = date.getTime() + REQUEST_DATA_LIMIT_MS;
   }
   const dependencyMap = sum;
-  callback = React.useRef(null);
+  callback = obj4.useRef(null);
   const items2 = [sum];
-  const effect = React.useEffect(() => {
+  const effect = obj4.useEffect(() => {
     const diff = closure_1 - Date.now();
     if (diff > 0) {
       const _setTimeout = setTimeout;
       const _clearTimeout = clearTimeout;
-      const timerId = setTimeout(() => outer1_0(Date.now()), diff);
+      const timerId = setTimeout(() => callback(Date.now()), diff);
       clearTimeout(ref.current);
       ref.current = timerId;
     }
-    return () => clearTimeout(outer1_2.current);
+    return () => clearTimeout(ref.current);
   }, items2);
-  if (null != stateFromStores) {
-    if (stateFromStores.verified) {
-      if (stateFromStores.isStaff()) {
-        obj = { allowed: false, reason: "staff" };
-      } else if (null == stateFromStores1) {
-        obj = { allowed: true };
-      } else if (sum > first) {
-        const obj1 = { allowed: false, reason: "rate_limited" };
-        const _Date2 = Date;
-        const date1 = new Date(sum);
-        obj1.nextAllowed = date1;
-        obj = obj1;
-      } else {
-        obj = { allowed: true };
-      }
-    }
+  let verified;
+  if (stateFromStores != null) {
+    verified = stateFromStores.verified;
   }
-  return { allowed: false, reason: "not_verified" };
+  if (verified) {
+    if (stateFromStores.isStaff()) {
+      obj = { allowed: false, reason: "staff" };
+    } else if (null == stateFromStores1) {
+      obj = { allowed: true };
+    } else if (sum > tmp3) {
+      obj = { allowed: false, reason: "rate_limited", nextAllowed: null };
+      const _Date2 = Date;
+      const date1 = new Date(sum);
+      obj[2] = date1;
+    } else {
+      obj = { allowed: true };
+    }
+  } else {
+    return { allowed: false, reason: "not_verified" };
+  }
 };

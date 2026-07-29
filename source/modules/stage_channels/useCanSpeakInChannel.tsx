@@ -1,18 +1,18 @@
-// Module ID: 10370
-// Function ID: 79979
+// Module ID: 10394
+// Function ID: 10395
 // Name: useCanCurrentUserSpeakInChannel
-// Dependencies: [1194, 566, 4349, 2]
+// Dependencies: [1218, 589, 4374, 2]
 // Exports: default
 
-// Module 10370 (useCanCurrentUserSpeakInChannel)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 10394 (useCanCurrentUserSpeakInChannel)
+import fetchFingerprint from "fetchFingerprint";
 
 const require = arg1;
-const result = require("getAudienceRequestToSpeakState").fileFinishedImporting("modules/stage_channels/useCanSpeakInChannel.tsx");
+const result = require("useAudienceRequestToSpeakState").fileFinishedImporting("modules/stage_channels/useCanSpeakInChannel.tsx");
 
 export default function useCanCurrentUserSpeakInChannel(arg0) {
-  const items = [_isNativeReflectConstruct];
-  const stateFromStores = require(566) /* initialize */.useStateFromStores(items, () => outer1_3.getId());
-  const obj = require(566) /* initialize */;
-  return importDefault(4349)(stateFromStores, arg0) === require(4349) /* getAudienceRequestToSpeakState */.RequestToSpeakStates.ON_STAGE;
+  const items = [fetchFingerprint];
+  const stateFromStores = require(589) /* initialize */.useStateFromStores(items, () => id.getId());
+  const obj = require(589) /* initialize */;
+  return importDefault(4374)(stateFromStores, arg0) === require(4374) /* useAudienceRequestToSpeakState */.RequestToSpeakStates.ON_STAGE;
 };

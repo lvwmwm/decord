@@ -1,76 +1,76 @@
-// Module ID: 11417
-// Function ID: 88551
+// Module ID: 11441
+// Function ID: 11442
 // Name: useMemberActionsForChannel
-// Dependencies: [1918, 4368, 4369, 3781, 5641, 624, 1360, 2]
+// Dependencies: [1942, 4391, 4392, 3805, 5659, 647, 1384, 2]
 // Exports: useAllActionsCompleted, useMemberActionsForChannel, useNextMemberAction
 
-// Module 11417 (useMemberActionsForChannel)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_4 from "_isNativeReflectConstruct";
-import closure_5 from "_isNativeReflectConstruct";
+// Module 11441 (useMemberActionsForChannel)
+import trackCommunicationDisabled from "trackCommunicationDisabled";
+import handleSettingsLoadSuccess from "handleSettingsLoadSuccess";
+import set from "set";
 import { GuildMemberFlags } from "GuildMemberFlags";
 
 const require = arg1;
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/guild_onboarding_home/MemberActionUtils.tsx");
+const result = require("set").fileFinishedImporting("modules/guild_onboarding_home/MemberActionUtils.tsx");
 
 export const useMemberActionsForChannel = function useMemberActionsForChannel(guild_id, channel) {
   const _require = guild_id;
   const importDefault = channel;
-  let obj = _require(624);
-  const items = [closure_4];
+  let obj = _require(647);
+  const items = [handleSettingsLoadSuccess];
   const items1 = [guild_id];
   const stateFromStores = obj.useStateFromStores(items, () => outer1_4.getNewMemberActions(closure_0), items1);
-  const tmp = importDefault(5641)(guild_id);
-  const items2 = [closure_5];
-  const stateFromStores1 = _require(624).useStateFromStores(items2, () => outer1_5.getCompletedActions(closure_0));
+  const tmp = importDefault(5659)(guild_id);
+  const items2 = [set];
+  const stateFromStores1 = _require(647).useStateFromStores(items2, () => outer1_5.getCompletedActions(closure_0));
   if (tmp) {
-    let findIndexResult;
-    if (null != stateFromStores) {
-      findIndexResult = stateFromStores.findIndex((channelId) => channelId.channelId === id.id);
+    let num;
+    if (stateFromStores != null) {
+      num = stateFromStores.findIndex((channelId) => channelId.channelId === id.id);
     }
-    let num2 = 0;
-    if (null != findIndexResult) {
-      num2 = findIndexResult;
+    if (num == null) {
+      num = 0;
     }
-    let tmp5 = null;
-    if (num2 >= 0) {
-      tmp5 = null;
+    let tmp4 = null;
+    if (num >= 0) {
+      tmp4 = null;
       if (null != stateFromStores) {
-        tmp5 = stateFromStores[num2];
+        tmp4 = stateFromStores[num];
       }
     }
-    obj = { channelAction: tmp5 };
-    let tmp6 = null != tmp5;
-    if (tmp6) {
-      let tmp7;
-      if (null != stateFromStores1) {
-        tmp7 = stateFromStores1[tmp5.channelId];
+    obj = { channelAction: null, completed: null };
+    obj[0] = tmp4;
+    let tmp5 = null != tmp4;
+    if (tmp5) {
+      let tmp6;
+      if (stateFromStores1 != null) {
+        tmp6 = stateFromStores1[tmp4.channelId];
       }
-      tmp6 = true === tmp7;
+      tmp5 = true === tmp6;
     }
-    obj.completed = tmp6;
+    obj[1] = tmp5;
     return obj;
   } else {
     return {};
   }
-  const obj3 = _require(624);
+  const obj3 = _require(647);
 };
 export const useNextMemberAction = function useNextMemberAction(guild_id, channelId) {
   const _require = guild_id;
   let closure_1 = channelId;
+  const items = [handleSettingsLoadSuccess];
+  const stateFromStores = _require(647).useStateFromStores(items, () => outer1_4.getNewMemberActions(closure_0));
+  const obj = _require(647);
+  const items1 = [set];
+  const dependencyMap = _require(647).useStateFromStores(items1, () => outer1_5.getCompletedActions(closure_0));
   let found;
-  const items = [closure_4];
-  const stateFromStores = _require(624).useStateFromStores(items, () => outer1_4.getNewMemberActions(closure_0));
-  const obj = _require(624);
-  const items1 = [closure_5];
-  const dependencyMap = _require(624).useStateFromStores(items1, () => outer1_5.getCompletedActions(closure_0));
-  if (null != stateFromStores) {
+  if (stateFromStores != null) {
     found = stateFromStores.find((channelId) => {
-      let tmp;
-      if (null != table) {
-        tmp = table[channelId.channelId];
+      let tmp2;
+      if (closure_2 != null) {
+        tmp2 = tmp[channelId.channelId];
       }
-      let tmp3 = true !== tmp;
+      let tmp3 = true !== tmp2;
       if (tmp3) {
         tmp3 = channelId.channelId !== closure_1;
       }
@@ -81,16 +81,15 @@ export const useNextMemberAction = function useNextMemberAction(guild_id, channe
 };
 export const useAllActionsCompleted = function useAllActionsCompleted(guild_id) {
   const _require = guild_id;
-  let flags;
-  const items = [_isNativeReflectConstruct];
-  const stateFromStores = _require(624).useStateFromStores(items, () => outer1_3.getSelfMember(closure_0));
-  const obj = _require(624);
-  if (null != stateFromStores) {
-    flags = stateFromStores.flags;
+  const items = [trackCommunicationDisabled];
+  const stateFromStores = _require(647).useStateFromStores(items, () => outer1_3.getSelfMember(closure_0));
+  const obj = _require(647);
+  let num;
+  if (stateFromStores != null) {
+    num = stateFromStores.flags;
   }
-  let num = 0;
-  if (null != flags) {
-    num = flags;
+  if (num == null) {
+    num = 0;
   }
-  return _require(1360).hasFlag(num, GuildMemberFlags.COMPLETED_HOME_ACTIONS);
+  return _require(1384).hasFlag(num, GuildMemberFlags.COMPLETED_HOME_ACTIONS);
 };

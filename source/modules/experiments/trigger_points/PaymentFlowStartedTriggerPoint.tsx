@@ -1,14 +1,14 @@
-// Module ID: 6275
-// Function ID: 56261
+// Module ID: 6296
+// Function ID: 6297
 // Name: commonTriggerPointConfiguration
-// Dependencies: [4080, 653, 6276, 675, 2]
+// Dependencies: [4104, 676, 6297, 698, 2]
 // Exports: trackPaymentFlowStartedAnalyticsAndCTP
 
-// Module 6275 (commonTriggerPointConfiguration)
+// Module 6296 (commonTriggerPointConfiguration)
 import { AnalyticEvents } from "ME";
 
-const commonTriggerPointConfiguration = new require("CommonTriggerPointConfiguration").CommonTriggerPointConfiguration([], require("ExperimentBuckets").CommonTriggerPoints.PAYMENT_FLOW_STARTED, { location: "payment flow started" });
-const result = require("CommonTriggerPointConfiguration").fileFinishedImporting("modules/experiments/trigger_points/PaymentFlowStartedTriggerPoint.tsx");
+const commonTriggerPointConfiguration = new require("registeredExperimentIds").CommonTriggerPointConfiguration([], require("ExperimentBuckets").CommonTriggerPoints.PAYMENT_FLOW_STARTED, { location: "payment flow started" });
+const result = require("registeredExperimentIds").fileFinishedImporting("modules/experiments/trigger_points/PaymentFlowStartedTriggerPoint.tsx");
 
 export const PaymentFlowStartedTriggerPoint = commonTriggerPointConfiguration;
 export const trackPaymentFlowStartedAnalyticsAndCTP = function trackPaymentFlowStartedAnalyticsAndCTP(basePurchaseAnalytics) {
@@ -16,6 +16,6 @@ export const trackPaymentFlowStartedAnalyticsAndCTP = function trackPaymentFlowS
   if (arg1 === undefined) {
     obj = {};
   }
-  importDefault(675).track(AnalyticEvents.PAYMENT_FLOW_STARTED, basePurchaseAnalytics, obj);
+  importDefault(698).track(AnalyticEvents.PAYMENT_FLOW_STARTED, basePurchaseAnalytics, obj);
   commonTriggerPointConfiguration.trigger();
 };

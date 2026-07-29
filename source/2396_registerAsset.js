@@ -1,11 +1,10 @@
 // Module ID: 2396
-// Function ID: 23305
+// Function ID: 2397
 // Name: registerAsset
-// Dependencies: [1217]
+// Dependencies: [1241]
 
 // Module 2396 (registerAsset)
 import registerAsset from "registerAsset";
 
-const obj = { __packager_asset: true, httpServerLocation: "/assets/modules/notifications/profile_updates/sender", scales: [1], hash: "7f05ad73b5da2adbe55e7968cf15ccf8", name: "NotifyFriendsOnProfileUpdate.compiled.messages", type: "jsona" };
 
-export default registerAsset.registerAsset(obj);
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9ub3RpZmljYXRpb25zL3Byb2ZpbGVfdXBkYXRlcy9zZW5kZXI=", scales: [1], hash: "63cffe250617ea330223cbdb991da415", name: "es-419.messages.63cffe250617ea330223cbdb991da415.compiled.messages", type: "jsona" });

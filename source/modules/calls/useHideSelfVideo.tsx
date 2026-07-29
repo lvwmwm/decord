@@ -1,19 +1,19 @@
-// Module ID: 15997
-// Function ID: 123446
+// Module ID: 16032
+// Function ID: 16033
 // Name: useHideSelfVideo
-// Dependencies: [1194, 4212, 653, 4226, 566, 8814, 2]
+// Dependencies: [1218, 4236, 676, 4250, 589, 8838, 2]
 // Exports: default
 
-// Module 15997 (useHideSelfVideo)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_4 from "_isNativeReflectConstruct";
+// Module 16032 (useHideSelfVideo)
+import fetchFingerprint from "fetchFingerprint";
+import _detectH265HardwareDecode from "_detectH265HardwareDecode";
 import { VideoToggleState } from "ME";
 import DesktopSources from "DesktopSources";
 
 let closure_6;
-let closure_7;
+let error;
 const require = arg1;
-({ MediaEngineContextTypes: closure_6, Features: closure_7 } = DesktopSources);
+({ MediaEngineContextTypes: closure_6, Features: error } = DesktopSources);
 const result = require("ME").fileFinishedImporting("modules/calls/useHideSelfVideo.tsx");
 
 export default function useHideSelfVideo(arg0) {
@@ -22,16 +22,16 @@ export default function useHideSelfVideo(arg0) {
     DEFAULT = constants.DEFAULT;
   }
   let stateFromStores;
-  const items = [_isNativeReflectConstruct];
-  stateFromStores = DEFAULT(566).useStateFromStores(items, () => outer1_3.getId());
-  const obj = DEFAULT(566);
-  const items1 = [closure_4];
-  const stateFromStores1 = DEFAULT(566).useStateFromStores(items1, () => outer1_4.supports(outer1_7.DISABLE_VIDEO));
-  const obj2 = DEFAULT(566);
-  const items2 = [closure_4];
+  const items = [fetchFingerprint];
+  stateFromStores = DEFAULT(589).useStateFromStores(items, () => id.getId());
+  const obj = DEFAULT(589);
+  const items1 = [_detectH265HardwareDecode];
+  const stateFromStores1 = DEFAULT(589).useStateFromStores(items1, () => _detectH265HardwareDecode.supports(constants.DISABLE_VIDEO));
+  const obj2 = DEFAULT(589);
+  const items2 = [_detectH265HardwareDecode];
   const items3 = [stateFromStores, DEFAULT];
   let tmp5 = null == arg0;
-  const stateFromStores2 = DEFAULT(566).useStateFromStores(items2, () => outer1_4.isLocalVideoDisabled(stateFromStores, DEFAULT), items3);
+  const stateFromStores2 = DEFAULT(589).useStateFromStores(items2, () => outer1_4.isLocalVideoDisabled(stateFromStores, DEFAULT), items3);
   if (!tmp5) {
     tmp5 = arg0 === stateFromStores;
   }

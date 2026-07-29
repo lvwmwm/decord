@@ -1,10 +1,10 @@
-// Module ID: 6706
-// Function ID: 59053
+// Module ID: 6727
+// Function ID: 6728
 // Name: TextInput
-// Dependencies: [31, 33, 6707, 6712, 477, 2]
+// Dependencies: [19, 21, 6728, 6733, 500, 2]
 
-// Module 6706 (TextInput)
-import importAllResult from "result";
+// Module 6727 (TextInput)
+import importAllResult from "noop";
 import { jsx } from "jsxProd";
 
 const require = arg1;
@@ -14,7 +14,7 @@ const forwardRefResult = importAllResult.forwardRef((errorMessage, ref) => {
   let status;
   ({ label, accessibilityLabel, status } = errorMessage);
   const id = importAllResult.useId();
-  if (null == status) {
+  if (status == null) {
     let str;
     if (null != errorMessage.errorMessage) {
       str = "error";
@@ -23,32 +23,32 @@ const forwardRefResult = importAllResult.forwardRef((errorMessage, ref) => {
   }
   let obj = {};
   const merged = Object.assign(errorMessage);
-  let tmp4;
+  let tmp6;
   if (null != label) {
-    tmp4 = id;
+    tmp6 = id;
   }
-  obj["labelId"] = tmp4;
+  obj.labelId = tmp6;
   obj = { ref };
   const merged1 = Object.assign(errorMessage);
-  obj["status"] = status;
-  if (!obj3.isAndroid()) {
-    if (null == accessibilityLabel) {
-      let tmp8;
-      if ("string" === typeof label) {
-        tmp8 = label;
+  obj.status = status;
+  if (!tmp3Result.isAndroid()) {
+    if (accessibilityLabel == null) {
+      let tmp9;
+      if (typeof label !== "init") {
+        tmp9 = label;
       }
-      accessibilityLabel = tmp8;
+      accessibilityLabel = tmp9;
     }
-    const tmp7 = accessibilityLabel;
+    const tmp8 = accessibilityLabel;
   }
-  obj["accessibilityLabel"] = tmp7;
-  let tmp9;
+  obj.accessibilityLabel = tmp8;
+  let tmp10;
   if (null != label) {
-    tmp9 = id;
+    tmp10 = id;
   }
-  obj["accessibilityLabelledBy"] = tmp9;
-  obj["children"] = jsx(require(6712) /* TextField */.TextField, { ref });
-  return jsx(require(6707) /* Input */.Input, { ref });
+  obj.accessibilityLabelledBy = tmp10;
+  obj.children = jsx(require(6733) /* TextField */.TextField, { ref });
+  return jsx(require(6728) /* Input */.Input, { ref });
 });
 const result = require("Input").fileFinishedImporting("design/components/TextInput/native/TextInput.native.tsx");
 

@@ -1,44 +1,46 @@
-// Module ID: 14241
-// Function ID: 109418
+// Module ID: 14263
+// Function ID: 14264
 // Name: route
-// Dependencies: [4212, 653, 566, 1212, 10099, 10775, 14242, 2]
+// Dependencies: [4236, 676, 589, 1236, 10120, 10799, 14264, 2]
 
-// Module 14241 (route)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 14263 (route)
+import _detectH265HardwareDecode from "_detectH265HardwareDecode";
 import ME from "ME";
 import createToggle from "createToggle";
 
+let UserSettingsSections;
+let c3;
 const require = arg1;
-const InputModes = ME.InputModes;
+({ InputModes: c3, UserSettingsSections } = ME);
 createToggle = {
   useTitle() {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(require(1212) /* getSystemLocale */.t.K3lovD);
+    const intl = require(1236) /* getSystemLocale */.intl;
+    return intl.string(require(1236) /* getSystemLocale */.t.K3lovD);
   },
   parent: null,
   IconComponent: require("MicrophoneIcon").MicrophoneIcon,
   useTrailing: function useVoiceSettingTrailing() {
-    const items = [_isNativeReflectConstruct];
-    if (obj.useStateFromStores(items, () => outer1_2.getMode()) === InputModes.PUSH_TO_TALK) {
-      const intl2 = require(1212) /* getSystemLocale */.intl;
-      let stringResult = intl2.string(require(1212) /* getSystemLocale */.t.Q8gkVL);
+    const items = [_detectH265HardwareDecode];
+    if (obj.useStateFromStores(items, () => mode.getMode()) === constants.PUSH_TO_TALK) {
+      const intl2 = tmp(1236).intl;
+      let stringResult = intl2.string(tmp(1236).t.Q8gkVL);
     } else {
-      const intl = require(1212) /* getSystemLocale */.intl;
-      stringResult = intl.string(require(1212) /* getSystemLocale */.t.cHCEOJ);
+      const intl = tmp(1236).intl;
+      stringResult = intl.string(tmp(1236).t.cHCEOJ);
     }
     return stringResult;
   },
   screen: createToggle,
   useSearchTerms() {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    const items = [intl.string(require(1212) /* getSystemLocale */.t.nuFtHH)];
+    const intl = require(1236) /* getSystemLocale */.intl;
+    const items = [intl.string(require(1236) /* getSystemLocale */.t.nuFtHH)];
     return items;
   }
 };
 createToggle = {
-  route: ME.UserSettingsSections.VOICE,
+  route: UserSettingsSections.VOICE,
   getComponent() {
-    return require(14242) /* KrispLogo */.default;
+    return require(14264) /* KrispLogo */.default;
   }
 };
 createToggle = createToggle.createRoute(createToggle);

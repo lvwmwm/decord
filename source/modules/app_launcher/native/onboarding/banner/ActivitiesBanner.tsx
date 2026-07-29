@@ -1,33 +1,36 @@
-// Module ID: 11199
-// Function ID: 86870
+// Module ID: 11223
+// Function ID: 11224
 // Name: ActivitiesBanner
-// Dependencies: [57, 31, 33, 11188, 11200, 11211, 1212, 2]
+// Dependencies: [32, 19, 21, 11212, 11224, 11235, 1236, 2]
 // Exports: default
 
-// Module 11199 (ActivitiesBanner)
+// Module 11223 (ActivitiesBanner)
 import _slicedToArray from "_slicedToArray";
-import "result";
+import "noop";
 import { jsx } from "jsxProd";
 
 const require = arg1;
 const result = require("jsxProd").fileFinishedImporting("modules/app_launcher/native/onboarding/banner/ActivitiesBanner.tsx");
 
 export default function ActivitiesBanner(context) {
-  let obj = require(11188) /* useActivityApplications */;
+  let tmp4;
+  let tmp5;
+  let obj = require(11212) /* useActivityApplications */;
   obj = { guildId: context.context.channel.guild_id, fetchesShelf: false };
-  const tmp = callback(obj.useActivityApplications(obj), 2);
-  const first = tmp[0];
-  let tmp4 = null;
-  if (null != first) {
-    tmp4 = null;
-    if (null != tmp[1]) {
-      obj = { image: tmp3 };
-      const intl = require(1212) /* getSystemLocale */.intl;
-      const obj1 = { activityName: first.name };
-      obj.text = intl.formatToPlainString(require(1212) /* getSystemLocale */.t.zHMWuV, obj1);
-      tmp4 = jsx(importDefault(11211), { image: tmp3 });
-      const tmp8 = importDefault(11211);
+  [tmp4, tmp5] = callback(obj.useActivityApplications(obj), 2);
+  let tmp6Result = null;
+  if (null != tmp4) {
+    tmp6Result = null;
+    if (null != tmp5) {
+      obj = { image: null, text: null };
+      obj[0] = tmp8;
+      const intl = tmp(1236).intl;
+      const obj1 = { activityName: null };
+      obj1[0] = tmp4.name;
+      obj[1] = intl.formatToPlainString(tmp(1236).t.zHMWuV, obj1);
+      tmp6Result = jsx(importDefault(11235), { image: null, text: null });
+      const tmp7Result = importDefault(11235);
     }
   }
-  return tmp4;
+  return tmp6Result;
 };

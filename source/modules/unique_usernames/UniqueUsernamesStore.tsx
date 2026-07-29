@@ -1,125 +1,57 @@
-// Module ID: 13772
-// Function ID: 105565
-// Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 1362, 664, 566, 686, 2]
+// Module ID: 13793
+// Function ID: 13794
+// Name: isRateLimited
+// Dependencies: [1386, 687, 589, 709, 2]
 
-// Module 13772 (_isNativeReflectConstruct)
-import set from "set";
-import initialize from "initialize";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
-import importDefaultResult from "priv";
+// Module 13793 (isRateLimited)
+import { Store } from "initialize";
 
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
-  }
-  const result = _isNativeReflectConstruct();
+let closure_2 = { taken: null, error: "HermesInternal", rateLimited: null };
+let obj = { validations: null, currentUsernameInvalid: false, retryAfterTime: null, suggestions: null };
+obj[0] = new require("priv")({ max: 100, maxAge: 60000 });
+obj[3] = { migration: { suggestion: { username: "r" }, fetched: false, usernameSuggestionLoading: false }, registration: { suggestion: { username: "r" }, source: "ct", fetched: "flex" } };
+class UniqueUsernamesStore extends Store {
 }
-let obj = { taken: null, error: undefined, rateLimited: true };
-obj = { validations: null, currentUsernameInvalid: false, retryAfterTime: null };
-importDefaultResult = new importDefaultResult({ max: 100, maxAge: 60000 });
-obj.validations = importDefaultResult;
-obj = { suggestion: { username: undefined }, fetched: false, usernameSuggestionLoading: false };
-obj.suggestions = { migration: obj, registration: { suggestion: { username: undefined }, source: undefined, fetched: false } };
-let tmp4 = ((Store) => {
-  class UniqueUsernamesStore {
-    constructor() {
-      self = this;
-      tmp = outer1_2(this, UniqueUsernamesStore);
-      obj = outer1_5(UniqueUsernamesStore);
-      tmp2 = outer1_4;
-      if (outer1_9()) {
-        tmp6 = globalThis;
-        _Reflect = Reflect;
-        tmp7 = outer1_5;
-        tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, outer1_5(self).constructor);
-      } else {
-        tmp3 = arguments;
-        tmp4 = arguments;
-        constructResult = obj(...arguments);
-      }
-      return tmp2(self, constructResult);
-    }
+const prototype = UniqueUsernamesStore.prototype;
+prototype["isRateLimited"] = function isRateLimited() {
+  let tmp2 = null != obj.retryAfterTime;
+  if (tmp2) {
+    const _Date = Date;
+    tmp2 = Date.now() < tmp.retryAfterTime;
   }
-  callback2(UniqueUsernamesStore, Store);
-  let obj = {
-    key: "isRateLimited",
-    value() {
-      let tmp = null != outer1_8.retryAfterTime;
-      if (tmp) {
-        const _Date = Date;
-        tmp = Date.now() < outer1_8.retryAfterTime;
-      }
-      return tmp;
-    }
-  };
-  const items = [obj, , , , , , , ];
-  obj = {
-    key: "validate",
-    value(arg0) {
-      const self = this;
-      const validations = outer1_8.validations;
-      const value = validations.get(arg0);
-      if (!this.isRateLimited()) {
-        let tmp4 = value;
-      } else {
-        tmp4 = outer1_7;
-      }
-      return tmp4;
-    }
-  };
-  items[1] = obj;
-  obj = {
-    key: "registrationUsernameSuggestion",
-    value() {
-      return outer1_8.suggestions.registration.suggestion.username;
-    }
-  };
-  items[2] = obj;
-  items[3] = {
-    key: "usernameSuggestion",
-    value() {
-      return outer1_8.suggestions.migration.suggestion.username;
-    }
-  };
-  items[4] = {
-    key: "usernameSuggestionLoading",
-    value() {
-      return outer1_8.suggestions.migration.usernameSuggestionLoading;
-    }
-  };
-  items[5] = {
-    key: "isCurrentUsernameInvalid",
-    value() {
-      return outer1_8.currentUsernameInvalid;
-    }
-  };
-  items[6] = {
-    key: "wasRegistrationSuggestionFetched",
-    value(arg0) {
-      let fetched = outer1_8.suggestions.registration.source === arg0;
-      if (fetched) {
-        fetched = outer1_8.suggestions.registration.fetched;
-      }
-      return fetched;
-    }
-  };
-  items[7] = {
-    key: "wasSuggestionsFetched",
-    value() {
-      return outer1_8.suggestions.migration.fetched;
-    }
-  };
-  return callback(UniqueUsernamesStore, items);
-})(require("initialize").Store);
-tmp4.displayName = "UniqueUsernamesStore";
-tmp4 = new tmp4(require("dispatcher"), {
+  return tmp2;
+};
+prototype["validate"] = function validate(arg0) {
+  const self = this;
+  const validations = obj.validations;
+  const value = validations.get(arg0);
+  if (!this.isRateLimited()) {
+    let tmp4 = value;
+  } else {
+    tmp4 = closure_2;
+  }
+  return tmp4;
+};
+prototype["registrationUsernameSuggestion"] = function registrationUsernameSuggestion() {
+  return obj.suggestions.registration.suggestion.username;
+};
+prototype["usernameSuggestion"] = function usernameSuggestion() {
+  return obj.suggestions.migration.suggestion.username;
+};
+prototype["usernameSuggestionLoading"] = function usernameSuggestionLoading() {
+  return obj.suggestions.migration.usernameSuggestionLoading;
+};
+prototype["isCurrentUsernameInvalid"] = function isCurrentUsernameInvalid() {
+  return obj.currentUsernameInvalid;
+};
+prototype["wasRegistrationSuggestionFetched"] = function wasRegistrationSuggestionFetched(arg0) {
+  return obj.suggestions.registration.source === arg0 && obj.suggestions.registration.fetched;
+};
+prototype["wasSuggestionsFetched"] = function wasSuggestionsFetched() {
+  return obj.suggestions.migration.fetched;
+};
+UniqueUsernamesStore.displayName = "UniqueUsernamesStore";
+obj = {
   UNIQUE_USERNAME_ATTEMPT_SUCCESS: function handleUniqueUsernameAttemptSuccess(taken) {
     const validations = obj.validations;
     obj = { taken: taken.taken };
@@ -132,34 +64,37 @@ tmp4 = new tmp4(require("dispatcher"), {
     ({ username, error, retryAfter } = statusCode);
     if (429 === statusCode.statusCode) {
       let validations = obj.validations;
-      obj = { taken: null, error, rateLimited: true };
-      let num = 7;
-      if (null != retryAfter) {
-        num = retryAfter;
+      obj = { taken: null, error: null, rateLimited: true };
+      obj[1] = error;
+      let num = retryAfter;
+      if (retryAfter == null) {
+        num = 7;
       }
-      const result = validations.set(username, obj, num * importDefault(664).Millis.SECOND);
+      const result = validations.set(username, obj, num * importDefault(687).Millis.SECOND);
+      let tmp = obj;
+      const tmp3 = obj;
     } else {
+      tmp = obj;
       validations = obj.validations;
-      obj = { taken: null, error };
+      obj = { taken: null, error: null };
+      obj[1] = error;
       const result1 = validations.set(username, obj);
     }
     if (null != retryAfter) {
       const _Date = Date;
       const timestamp = Date.now();
-      obj.retryAfterTime = timestamp + retryAfter * importDefault(664).Millis.SECOND;
+      tmp.retryAfterTime = timestamp + retryAfter * importDefault(687).Millis.SECOND;
     }
   },
   UNIQUE_USERNAME_SUGGESTIONS_RESET: function handleUniqueUsernameSuggestionsReset() {
-    const obj = { suggestion: { username: undefined }, fetched: false, usernameSuggestionLoading: false };
-    obj.suggestions.migration = obj;
-    obj.suggestions.registration = { suggestion: { username: undefined }, source: undefined, fetched: false };
+    obj.suggestions.migration = { suggestion: { username: "r" }, fetched: false, usernameSuggestionLoading: false };
+    obj.suggestions.registration = { suggestion: { username: "r" }, source: "ct", fetched: "flex" };
   },
   UNIQUE_USERNAME_SUGGESTIONS_SUCCESS: function handleUniqueUsernameSuggestionsSuccess(suggestion) {
     suggestion = suggestion.suggestion;
-    const obj = { suggestion, fetched: true, usernameSuggestionLoading: false };
-    obj.suggestions.migration = obj;
+    obj.suggestions.migration = { suggestion, fetched: true, usernameSuggestionLoading: false };
     let prop;
-    if (null != suggestion) {
+    if (suggestion != null) {
       prop = suggestion.invalid_current_username;
     }
     if (true === prop) {
@@ -168,19 +103,19 @@ tmp4 = new tmp4(require("dispatcher"), {
   },
   UNIQUE_USERNAME_REGISTRATION_SUGGESTIONS_SUCCESS: function handleUniqueUsernameRegistrationSuggestionsSuccess(source) {
     const suggestion = source.suggestion;
-    let obj = { suggestion, source: source.source, fetched: true };
-    obj.suggestions.registration = obj;
+    obj.suggestions.registration = { suggestion, source: source.source, fetched: true };
     let username;
-    if (null != suggestion) {
+    if (suggestion != null) {
       username = suggestion.username;
     }
     if (null != username) {
       const validations = obj.validations;
-      obj = { taken: false };
-      const result = validations.set(suggestion.username, obj);
+      const result = validations.set(suggestion.username, { taken: false });
     }
   }
-});
-let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/unique_usernames/UniqueUsernamesStore.tsx");
+};
+const uniqueUsernamesStore = new UniqueUsernamesStore(require("dispatcher"), obj);
+let tmp2 = new require("priv")({ max: 100, maxAge: 60000 });
+let result = require("initialize").fileFinishedImporting("modules/unique_usernames/UniqueUsernamesStore.tsx");
 
-export default tmp4;
+export default uniqueUsernamesStore;

@@ -1,11 +1,10 @@
 // Module ID: 3032
-// Function ID: 25245
+// Function ID: 3033
 // Name: registerAsset
-// Dependencies: [1217]
+// Dependencies: [1241]
 
 // Module 3032 (registerAsset)
 import registerAsset from "registerAsset";
 
-const obj = { __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9wcmVtaXVtL2xvZ2l0ZWNoXzNwcA==", scales: [1], hash: "172c9b811683bfe263d0162cfdde04a3", name: "ru.messages.172c9b811683bfe263d0162cfdde04a3.compiled.messages", type: "jsona" };
 
-export default registerAsset.registerAsset(obj);
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/premium/call_of_duty_3pp", scales: [1], hash: "11d34bfaf58dae63618b0f9e7cb2f98a", name: "CallOfDuty3PP.compiled.messages", type: "jsona" });

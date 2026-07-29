@@ -1,30 +1,28 @@
-// Module ID: 8794
-// Function ID: 69418
+// Module ID: 8818
+// Function ID: 8819
 // Name: UserFlashListActions
-// Dependencies: [31, 27, 33, 8795, 5536, 5198, 2]
+// Dependencies: [19, 17, 21, 8819, 5554, 5220, 2]
 // Exports: useUserListActionsProps
 
-// Module 8794 (UserFlashListActions)
-import result from "result";
+// Module 8818 (UserFlashListActions)
+import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { jsx } from "jsxProd";
 
-let closure_4;
-let closure_5;
+let c4;
+let c5;
 const require = arg1;
 class UserFlashListActions {
   constructor(arg0) {
     actions = global.actions;
-    obj = { style: items };
+    tmp = jsx;
+    obj = { style: items, children: null };
     items = [, ];
     items[0] = { flex: 1 };
     items[1] = global.style;
-    tmp = jsx;
     tmp2 = View;
-    tmp3 = jsx;
-    obj = { hasIcons: true };
     mapped = undefined;
-    if (null != actions) {
+    if (actions != null) {
       mapped = actions.map((arg0, arg1) => {
         let IconComponent;
         let icon;
@@ -33,26 +31,32 @@ class UserFlashListActions {
         let onPress;
         let subLabel;
         ({ label, subLabel, icon, IconComponent, iconVariant, onPress } = arg0);
-        const obj = { label, subLabel, icon: outer1_6(outer1_0(outer1_2[5]).TableRow.Icon, { source: icon, IconComponent, variant: iconVariant }), onPress, arrow: true };
-        return outer1_6(outer1_0(outer1_2[5]).TableRow, obj, arg1);
+        const obj = { label, subLabel, icon: null, onPress: null, arrow: true };
+        obj[2] = callback2(callback(5220).TableRow.Icon, { source: icon, IconComponent, variant: iconVariant });
+        obj[3] = onPress;
+        return callback2(callback(5220).TableRow, obj, arg1);
       });
     }
-    obj.children = mapped;
-    obj.children = tmp3(require("TableRowGroupTitle").TableRowGroup, obj);
+    obj[1] = tmp(require("TableRowGroupTitle").TableRowGroup, { hasIcons: true, children: mapped });
     return tmp(tmp2, obj);
   }
 }
-({ View: closure_4, StyleSheet: closure_5 } = get_ActivityIndicator);
+({ View: c4, StyleSheet: c5 } = get_ActivityIndicator);
 const result = require("jsxProd").fileFinishedImporting("modules/main_tabs_v2/native/shared_components/user_list/SearchableUserListActions.tsx");
 
 export const useUserListActionsProps = function useUserListActionsProps(actions) {
   actions = actions.actions;
   const style = actions.style;
-  const tmp = style(8795)();
-  const dependencyMap = tmp;
+  let dependencyMap;
+  const tmp = style(8819)();
+  dependencyMap = tmp;
   const items = [actions, tmp, style];
   return React.useMemo(() => {
-    const flattenResult = outer1_5.flatten(null != style ? style : {});
+    let obj = style;
+    if (style == null) {
+      obj = {};
+    }
+    const flattenResult = outer1_5.flatten(obj);
     const paddingTop = flattenResult.paddingTop;
     let num = 0;
     if (undefined !== paddingTop) {
@@ -63,24 +67,24 @@ export const useUserListActionsProps = function useUserListActionsProps(actions)
     if (undefined !== paddingBottom) {
       num2 = paddingBottom;
     }
-    if ("number" === typeof num) {
-      if ("number" === typeof num2) {
-        const obj = {};
+    if (typeof num !== "os") {
+      if (typeof num2 !== "os") {
         let num3 = 0;
         if (null != actions) {
           num3 = 0;
-          if (actions.length > 0) {
-            num3 = actions.length * closure_2 + num + num2;
+          if (arr.length > 0) {
+            num3 = arr.length * c2 + num + num2;
           }
         }
-        obj.headerSize = num3;
+        obj = { headerSize: null, renderHeader: null };
+        obj[0] = num3;
         let fn;
         if (null != actions) {
-          if (actions.length > 0) {
-            fn = () => outer2_6(outer2_7, { actions: outer1_0, style: outer1_1 });
+          if (arr.length > 0) {
+            fn = () => outer1_6(outer1_7, { actions: closure_0, style: closure_1 });
           }
         }
-        obj.renderHeader = fn;
+        obj[1] = fn;
         return obj;
       }
     }

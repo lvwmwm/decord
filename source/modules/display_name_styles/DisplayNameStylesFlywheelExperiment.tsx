@@ -1,17 +1,19 @@
-// Module ID: 8358
-// Function ID: 66930
+// Module ID: 8382
+// Function ID: 8383
 // Name: apexExperiment
-// Dependencies: [1428, 2]
+// Dependencies: [1452, 2]
 // Exports: useIsDisplayNameStylesFlywheelSettersEnabled, useIsDisplayNameStylesFlywheelViewersEnabled
 
-// Module 8358 (apexExperiment)
+// Module 8382 (apexExperiment)
 import ApexExperiment from "ApexExperiment";
 import ApexExperiment from "ApexExperiment";
 
-let obj = { kind: "user", name: "2026-06-gummy-bears", defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } };
-const apexExperiment = ApexExperiment.createApexExperiment(obj);
-obj = { kind: "user", name: "2026-06-gummy-viewers", defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } };
-const apexExperiment1 = ApexExperiment.createApexExperiment(obj);
+let obj = { 1: null };
+obj[1] = { enabled: true };
+const apexExperiment = ApexExperiment.createApexExperiment({ kind: "user", name: "2026-06-gummy-bears", defaultConfig: { enabled: false }, variations: obj });
+obj = { 1: null };
+obj[1] = { enabled: true };
+const apexExperiment1 = ApexExperiment.createApexExperiment({ kind: "user", name: "2026-06-gummy-viewers", defaultConfig: { enabled: false }, variations: obj });
 const result = require("set").fileFinishedImporting("modules/display_name_styles/DisplayNameStylesFlywheelExperiment.tsx");
 
 export const DisplayNameStylesFlywheelSettersExperiment = apexExperiment;

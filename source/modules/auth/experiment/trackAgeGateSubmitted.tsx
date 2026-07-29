@@ -1,26 +1,21 @@
-// Module ID: 14847
-// Function ID: 113115
+// Module ID: 14873
+// Function ID: 14874
 // Name: trackAgeGateSubmitted
-// Dependencies: [653, 675, 3747, 2]
+// Dependencies: [676, 698, 3771, 2]
 // Exports: default
 
-// Module 14847 (trackAgeGateSubmitted)
+// Module 14873 (trackAgeGateSubmitted)
 import { AnalyticEvents } from "ME";
 
 const result = require("t").fileFinishedImporting("modules/auth/experiment/trackAgeGateSubmitted.tsx");
 
 export default function trackAgeGateSubmitted(format, section) {
-  let obj = importDefault(675);
-  obj = {};
+  let obj = importDefault(698);
   let formatResult = null;
-  if (obj3.diff(format, "years") < 18) {
+  if (obj2.diff(format, "years") < 18) {
     formatResult = format.format("YYYY-MM-DD");
   }
-  obj.dob = formatResult;
-  obj.dob_day = format.date();
-  obj.dob_month = format.month() + 1;
-  obj.dob_year = format.year();
+  obj = { dob: formatResult, dob_day: format.date(), dob_month: format.month() + 1, dob_year: format.year(), source: obj };
   obj = { section };
-  obj.source = obj;
   obj.track(AnalyticEvents.AGE_GATE_SUBMITTED, obj);
 };

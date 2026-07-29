@@ -1,29 +1,36 @@
-// Module ID: 8030
-// Function ID: 63822
+// Module ID: 8054
+// Function ID: 8055
 // Name: getCachedSourceFromURI
-// Dependencies: [57, 31, 27, 1362, 4009, 689, 620, 2]
-// Exports: useDominantColorFromImage
+// Dependencies: [32, 19, 17, 1386, 4033, 712, 643, 2]
+// Exports: getCachedSourceFromURI, useDominantColorFromImage, useDominantRGBFromImage
 
-// Module 8030 (getCachedSourceFromURI)
+// Module 8054 (getCachedSourceFromURI)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
+import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
-import importDefaultResult from "priv";
-import importDefaultResult1 from "priv";
 
-let closure_5;
+let c5;
 let closure_6;
 const require = arg1;
-function getCachedSourceFromURI(avatarURI) {
-  let value = importDefaultResult1.get(avatarURI);
-  if (null == value) {
+({ NativeModules: c5, Image: closure_6 } = get_ActivityIndicator);
+const error = new require("priv")({ max: 1000 });
+let tmp3 = new require("priv")({ max: 1000 });
+const metroImportAll = new require("priv")({ max: 1000 });
+const tmp4 = new require("priv")({ max: 1000 });
+let result = require("get ActivityIndicator").fileFinishedImporting("modules/voice_panel/native/card/DominantColorUtils.tsx");
+
+export const getCachedSourceFromURI = function getCachedSourceFromURI(avatarURI) {
+  let obj = tmp4;
+  let value = tmp4.get(avatarURI);
+  if (value == null) {
     let tmp2 = avatarURI;
-    if ("number" !== typeof avatarURI) {
+    if (typeof avatarURI !== "Object") {
       let tmp3 = null;
       if (null != avatarURI) {
         tmp3 = null;
         if ("" !== avatarURI.trim()) {
-          const obj = { uri: avatarURI };
+          obj = { uri: null };
+          obj[0] = avatarURI;
           tmp3 = obj;
         }
       }
@@ -31,88 +38,175 @@ function getCachedSourceFromURI(avatarURI) {
     }
     value = tmp2;
   }
-  const result = importDefaultResult1.set(avatarURI, value);
+  const result = obj.set(avatarURI, value);
   return value;
-}
-function useDominantRGBFromImage(arg0) {
+};
+export const useDominantRGBFromImage = function useDominantRGBFromImage(arg0) {
   const _require = arg0;
   const importDefault = React.useRef(true);
   const effect = React.useEffect(() => () => {
-    outer1_1.current = false;
+    closure_1.current = false;
   }, []);
   let hexToRgbResult;
   if (null != arg0) {
-    hexToRgbResult = importDefaultResult.get(arg0);
+    hexToRgbResult = tmp3.get(arg0);
   }
-  if (null == hexToRgbResult) {
-    hexToRgbResult = _require(4009).hexToRgb(importDefault(689).unsafe_rawColors.PRIMARY_800);
-    let obj = _require(4009);
+  if (hexToRgbResult == null) {
+    hexToRgbResult = _require(4033).hexToRgb(importDefault(712).unsafe_rawColors.PRIMARY_800);
+    const obj2 = _require(4033);
   }
-  let tmp8 = callback(React.useState(hexToRgbResult), 2);
-  const dependencyMap = tmp8[1];
+  const tmp7 = callback(React.useState(hexToRgbResult), 2);
+  const dependencyMap = tmp7[1];
   const items = [arg0];
   const effect1 = React.useEffect(() => {
     let value;
     if (null != closure_0) {
-      value = outer1_7.get(closure_0);
+      value = outer1_7.get(str);
     }
     closure_0 = value;
     if (null != closure_0) {
       if (null == value) {
-        const tmp8 = outer1_9(closure_0);
-        if (null != tmp8) {
-          if ("number" === typeof tmp8) {
-            const ImageManager2 = outer1_5.ImageManager;
-            let dominantColorsLocalAsset = ImageManager2.getDominantColorsLocalAsset(outer1_6.resolveAssetSource(tmp8));
-          } else {
+        let obj = outer1_8;
+        value = outer1_8.get(str);
+        if (value == null) {
+          let tmp6 = str;
+          if (typeof str !== "Object") {
+            let tmp7 = null;
+            if (null != str) {
+              tmp7 = null;
+              if ("" !== str.trim()) {
+                obj = { uri: null };
+                obj[0] = str;
+                tmp7 = obj;
+              }
+            }
+            tmp6 = tmp7;
+          }
+          value = tmp6;
+        }
+        let result = obj.set(str, value);
+        if (null != value) {
+          if (typeof value === "Object") {
             const ImageManager = outer1_5.ImageManager;
-            dominantColorsLocalAsset = ImageManager.getDominantColors(outer1_6.resolveAssetSource(tmp8));
+            let dominantColorsLocalAsset = ImageManager.getDominantColorsLocalAsset(outer1_6.resolveAssetSource(value));
+          } else {
+            const ImageManager2 = outer1_5.ImageManager;
+            dominantColorsLocalAsset = ImageManager2.getDominantColors(outer1_6.resolveAssetSource(value));
           }
           dominantColorsLocalAsset.then((arg0) => {
-            const tmp = outer2_3(arg0[0], 3);
+            const tmp = outer1_3(arg0[0], 3);
             const obj = { r: tmp[0], g: tmp[1], b: tmp[2] };
-            const result = outer2_7.set(value, obj);
-            if (outer1_1.current) {
-              outer1_2(obj);
+            const result = outer1_7.set(closure_0, obj);
+            if (ref.current) {
+              callback(obj);
             }
           }).catch(() => {
 
           });
           const nextPromise = dominantColorsLocalAsset.then((arg0) => {
-            const tmp = outer2_3(arg0[0], 3);
+            const tmp = outer1_3(arg0[0], 3);
             const obj = { r: tmp[0], g: tmp[1], b: tmp[2] };
-            const result = outer2_7.set(value, obj);
-            if (outer1_1.current) {
-              outer1_2(obj);
+            const result = outer1_7.set(closure_0, obj);
+            if (ref.current) {
+              callback(obj);
             }
           });
         }
       } else {
         callback((arg0) => {
-          let tmp = arg0;
-          if (closure_0 !== arg0) {
+          let tmp = closure_0;
+          if (closure_0 === arg0) {
             tmp = arg0;
-            if (!callback(table[6])(closure_0, arg0)) {
-              tmp = closure_0;
-            }
           }
           return tmp;
         });
       }
     }
   }, items);
-  return tmp8[0];
-}
-({ NativeModules: closure_5, Image: closure_6 } = get_ActivityIndicator);
-let obj = { max: 1000 };
-importDefaultResult = new importDefaultResult(obj);
-obj = { max: 1000 };
-importDefaultResult1 = new importDefaultResult1(obj);
-let result = require("get ActivityIndicator").fileFinishedImporting("modules/voice_panel/native/card/DominantColorUtils.tsx");
-
-export { getCachedSourceFromURI };
-export { useDominantRGBFromImage };
+  return tmp7[0];
+};
 export const useDominantColorFromImage = function useDominantColorFromImage(arg0) {
-  const tmp = useDominantRGBFromImage(arg0);
-  return "rgb(" + tmp.r + ", " + tmp.g + ", " + tmp.b + ")";
+  let dependencyMap;
+  let tmp8;
+  const _require = arg0;
+  const importDefault = React.useRef(true);
+  const effect = React.useEffect(() => () => {
+    closure_1.current = false;
+  }, []);
+  let hexToRgbResult;
+  if (null != arg0) {
+    hexToRgbResult = tmp3.get(arg0);
+  }
+  if (hexToRgbResult == null) {
+    hexToRgbResult = _require(4033).hexToRgb(importDefault(712).unsafe_rawColors.PRIMARY_800);
+    const obj2 = _require(4033);
+  }
+  [tmp8, dependencyMap] = callback(React.useState(hexToRgbResult), 2);
+  const items = [arg0];
+  const effect1 = React.useEffect(() => {
+    let value;
+    if (null != closure_0) {
+      value = outer1_7.get(str);
+    }
+    closure_0 = value;
+    if (null != closure_0) {
+      if (null == value) {
+        let obj = outer1_8;
+        value = outer1_8.get(str);
+        if (value == null) {
+          let tmp6 = str;
+          if (typeof str !== "Object") {
+            let tmp7 = null;
+            if (null != str) {
+              tmp7 = null;
+              if ("" !== str.trim()) {
+                obj = { uri: null };
+                obj[0] = str;
+                tmp7 = obj;
+              }
+            }
+            tmp6 = tmp7;
+          }
+          value = tmp6;
+        }
+        let result = obj.set(str, value);
+        if (null != value) {
+          if (typeof value === "Object") {
+            const ImageManager = outer1_5.ImageManager;
+            let dominantColorsLocalAsset = ImageManager.getDominantColorsLocalAsset(outer1_6.resolveAssetSource(value));
+          } else {
+            const ImageManager2 = outer1_5.ImageManager;
+            dominantColorsLocalAsset = ImageManager2.getDominantColors(outer1_6.resolveAssetSource(value));
+          }
+          dominantColorsLocalAsset.then((arg0) => {
+            const tmp = outer1_3(arg0[0], 3);
+            const obj = { r: tmp[0], g: tmp[1], b: tmp[2] };
+            const result = outer1_7.set(closure_0, obj);
+            if (ref.current) {
+              callback(obj);
+            }
+          }).catch(() => {
+
+          });
+          const nextPromise = dominantColorsLocalAsset.then((arg0) => {
+            const tmp = outer1_3(arg0[0], 3);
+            const obj = { r: tmp[0], g: tmp[1], b: tmp[2] };
+            const result = outer1_7.set(closure_0, obj);
+            if (ref.current) {
+              callback(obj);
+            }
+          });
+        }
+      } else {
+        callback((arg0) => {
+          let tmp = closure_0;
+          if (closure_0 === arg0) {
+            tmp = arg0;
+          }
+          return tmp;
+        });
+      }
+    }
+  }, items);
+  return "rgb(" + tmp8.r + ", " + tmp8.g + ", " + tmp8.b + ")";
 };

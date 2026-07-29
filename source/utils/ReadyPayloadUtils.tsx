@@ -1,234 +1,122 @@
-// Module ID: 12714
-// Function ID: 98492
-// Name: _createForOfIteratorHelperLoose
-// Dependencies: [1352, 1883, 5916, 5920, 1903, 5921, 1899, 22, 44, 2]
+// Module ID: 12736
+// Function ID: 12737
+// Name: hydrateGuild
+// Dependencies: [1376, 1907, 5935, 5939, 1927, 5940, 1923, 12, 38, 2]
 // Exports: hydrateInitialGuild, hydrateReadyPayloadPrioritized, hydrateReadySupplementalPayload, preloadReadyPayloadData
 
-// Module 12714 (_createForOfIteratorHelperLoose)
-import { createChannelRecordFromServer as closure_3 } from "_callSuper";
+// Module 12736 (hydrateGuild)
+import { createChannelRecordFromServer as closure_3 } from "createChannelRecord";
 
-function _createForOfIteratorHelperLoose(iterable) {
-  let closure_0 = iterable;
-  iterable = "undefined" !== typeof Symbol;
-  if (iterable) {
-    const _Symbol = Symbol;
-    iterable = iterable[Symbol.iterator];
-  }
-  if (!iterable) {
-    iterable = iterable[Symbol.iterator];
-  }
-  if (iterable) {
-    const iter = iterable.call(iterable);
-    const next = iter.next;
-    return next.bind(iter);
-  } else {
-    const _Array = Array;
-    let tmp = iterable;
-    if (!Array.isArray(iterable)) {
-      let tmp2;
-      if (iterable) {
-        if ("string" === typeof iterable) {
-          tmp2 = _arrayLikeToArray(iterable, undefined);
-        } else {
-          const toString = {}.toString;
-          const substr = toString.call(iterable).slice(8, -1);
-          let name = substr;
-          if (tmp3) {
-            name = iterable.constructor.name;
-          }
-          if ("Map" !== name) {
-            if ("Set" !== name) {
-              if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(iterable, undefined);
-              } else {
-                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
-              }
-            }
-            tmp2 = arr;
-          }
-          const _Array2 = Array;
-          arr = Array.from(iterable);
-          const callResult = toString.call(iterable);
-          tmp3 = "Object" === substr && iterable.constructor;
-        }
-      }
-      tmp = tmp2;
-      if (!tmp2) {
-        const _TypeError = TypeError;
-        const typeError = new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
-        throw typeError;
-      }
-    }
-    if (tmp) {
-      closure_0 = tmp;
-    }
-    let c1 = 0;
-    return () => {
-      if (closure_1 >= length.length) {
-        let obj = { done: true };
-      } else {
-        obj = { done: false };
-        closure_1 = tmp3 + 1;
-        obj.value = length[+closure_1];
-      }
-      return obj;
-    };
-  }
-}
-function _arrayLikeToArray(arg0, arg1) {
-  let length;
-  if (tmp) {
-    length = arg0.length;
-  }
-  const ArrayResult = Array(length);
-  for (let num = 0; num < length; num = num + 1) {
-    ArrayResult[num] = arg0[num];
-  }
-  return ArrayResult;
-}
-function maybeIncludeInitialGuild(identifyStartTime, guilds, arg2) {
-  let tmp = null;
-  if (null != _null) {
-    tmp = null;
-    if (_null.identifyTime === identifyStartTime) {
-      if (null == guilds) {
-        tmp = arg2(_null.guild);
-      } else {
-        tmp = null;
-      }
-    }
-  }
-  return tmp;
-}
-function restoreUsers(arg0, arr) {
-  let closure_0 = arg0;
-  const items = [];
-  if (null != arr) {
-    const item = arr.forEach((user_id) => {
-      if (null != user_id) {
-        user_id = user_id.user_id;
-        if (null != user_id) {
-          const _HermesInternal = HermesInternal;
-          items(outer1_2[8])(null != dependencyMap[user_id], "Missing user[" + user_id + "] in compressed ready payload");
-          user_id.user = dependencyMap[user_id];
-          const tmp4 = items(outer1_2[8]);
-          const tmp6 = null != dependencyMap[user_id];
-        }
-        delete tmp.user_id;
-        items.push(user_id);
-      }
-    });
-  }
-  return items;
-}
-function hydrateGuild(data_mode) {
+function hydrateGuild(guild) {
   let properties;
   let threads;
-  let closure_0 = data_mode;
-  if ("partial" !== data_mode.data_mode) {
-    let obj = {};
-    ({ id: obj4.id, data_mode: obj4.dataMode } = data_mode);
-    obj = { op: "full_sync", items: data_mode.emojis };
-    obj.emojis = obj;
-    ({ guild_scheduled_events: obj4.guild_scheduled_events, experiments: obj4.experiments, joined_at: obj4.joined_at, last_messages: obj4.lastMessages, member_count: obj4.member_count, members: obj4.members, premium_subscription_count: obj4.premium_subscription_count, properties: obj4.properties } = data_mode);
-    const obj1 = { op: "full_sync", items: data_mode.roles };
-    obj.roles = obj1;
-    obj.stage_instances = data_mode.stage_instances;
-    const obj2 = { op: "full_sync", items: data_mode.stickers };
-    obj.stickers = obj2;
-    threads = data_mode.threads;
+  let closure_0 = guild;
+  if ("partial" !== guild.data_mode) {
+    let obj = { id: null, dataMode: null, emojis: null, guild_scheduled_events: null, experiments: null, joined_at: null, lastMessages: null, member_count: null, members: null, premium_subscription_count: null, properties: null, roles: null, stage_instances: null, stickers: null, threads: null, threadMessages: null, channels: null, version: null, hasThreadsSubscription: null };
+    ({ id: obj5[0], data_mode: obj5[1] } = guild);
+    obj = { op: "full_sync", items: null };
+    obj[1] = guild.emojis;
+    obj[2] = obj;
+    ({ guild_scheduled_events: obj5[3], experiments: obj5[4], joined_at: obj5[5], last_messages: obj5[6], member_count: obj5[7], members: obj5[8], premium_subscription_count: obj5[9], properties: obj5[10] } = guild);
+    const obj1 = { op: "full_sync", items: null };
+    obj1[1] = guild.roles;
+    obj[11] = obj1;
+    obj[12] = guild.stage_instances;
+    const obj2 = { op: "full_sync", items: null };
+    obj2[1] = guild.stickers;
+    obj[13] = obj2;
+    threads = guild.threads;
     let mapped;
-    if (null != threads) {
-      mapped = threads.map((arg0) => outer1_3(arg0, data_mode.id));
+    if (threads != null) {
+      mapped = threads.map((arg0) => outer1_3(arg0, guild.id));
     }
-    if (null == mapped) {
+    if (mapped == null) {
       mapped = [];
     }
-    obj.threads = mapped;
-    obj.threadMessages = collectThreadMessages(data_mode.threads);
-    const obj3 = { op: "full_sync" };
-    const channels = data_mode.channels;
-    obj3.items = channels.map((arg0) => {
-      arg0.guild_id = data_mode.id;
-      return outer1_3(arg0, data_mode.id);
+    obj[14] = mapped;
+    obj[15] = collectThreadMessages(guild.threads);
+    const obj3 = { op: "full_sync", items: null };
+    const channels = guild.channels;
+    obj3[1] = channels.map((arg0) => {
+      arg0.guild_id = guild.id;
+      return outer1_3(arg0, guild.id);
     });
-    obj.channels = obj3;
-    ({ version: obj4.version, has_threads_subscription: obj4.hasThreadsSubscription } = data_mode);
+    obj[16] = obj3;
+    ({ version: obj5[17], has_threads_subscription: obj5[18] } = guild);
     let obj4 = obj;
   } else {
-    obj4 = {};
-    ({ id: obj9.id, data_mode: obj9.dataMode } = data_mode);
-    const obj5 = { op: "update" };
-    const channels1 = data_mode.partial_updates.channels;
+    obj4 = { id: null, dataMode: null, channels: null, channelTimestampUpdates: null, emojis: null, guild_scheduled_events: null, experiments: null, joined_at: null, lastMessages: null, member_count: null, members: null, premium_subscription_count: null, properties: null, roles: null, stage_instances: null, stickers: null, unableToSyncDeletes: null, threads: null, threadMessages: null, version: null, hasThreadsSubscription: null };
+    ({ id: obj10[0], data_mode: obj10[1] } = guild);
+    const channels1 = guild.partial_updates.channels;
     let mapped1;
-    if (null != channels1) {
-      mapped1 = channels1.map((arg0) => outer1_3(arg0, data_mode.id));
+    if (channels1 != null) {
+      mapped1 = channels1.map((arg0) => outer1_3(arg0, guild.id));
     }
-    if (null == mapped1) {
+    if (mapped1 == null) {
       mapped1 = [];
     }
-    obj5.writes = mapped1;
-    let deleted_channel_ids = data_mode.partial_updates.deleted_channel_ids;
-    if (null == deleted_channel_ids) {
+    obj = { op: "update", writes: null, deletes: null };
+    obj[1] = mapped1;
+    let deleted_channel_ids = guild.partial_updates.deleted_channel_ids;
+    if (deleted_channel_ids == null) {
       deleted_channel_ids = [];
     }
-    obj5.deletes = deleted_channel_ids;
-    obj4.channels = obj5;
-    obj4.channelTimestampUpdates = data_mode.channel_updates;
-    obj = { op: "update" };
-    let emojis = data_mode.partial_updates.emojis;
-    if (null == emojis) {
+    obj[2] = deleted_channel_ids;
+    obj4[2] = obj;
+    obj4[3] = guild.channel_updates;
+    let emojis = guild.partial_updates.emojis;
+    if (emojis == null) {
       emojis = [];
     }
-    obj.writes = emojis;
-    let deleted_emoji_ids = data_mode.partial_updates.deleted_emoji_ids;
-    if (null == deleted_emoji_ids) {
+    const obj5 = { op: "update", writes: null, deletes: null };
+    obj5[1] = emojis;
+    let deleted_emoji_ids = guild.partial_updates.deleted_emoji_ids;
+    if (deleted_emoji_ids == null) {
       deleted_emoji_ids = [];
     }
-    obj.deletes = deleted_emoji_ids;
-    obj4.emojis = obj;
-    ({ guild_scheduled_events: obj9.guild_scheduled_events, experiments: obj9.experiments, joined_at: obj9.joined_at, last_messages: obj9.lastMessages, member_count: obj9.member_count, members: obj9.members, premium_subscription_count: obj9.premium_subscription_count, properties } = data_mode);
-    let tmp = null;
-    if (null != properties) {
-      tmp = properties;
+    obj5[2] = deleted_emoji_ids;
+    obj4[4] = obj5;
+    ({ guild_scheduled_events: obj10[5], experiments: obj10[6], joined_at: obj10[7], last_messages: obj10[8], member_count: obj10[9], members: obj10[10], premium_subscription_count: obj10[11], properties } = guild);
+    if (properties == null) {
+      properties = null;
     }
-    obj4.properties = tmp;
-    const obj6 = { op: "update" };
-    let roles = data_mode.partial_updates.roles;
-    if (null == roles) {
+    obj4[12] = properties;
+    let roles = guild.partial_updates.roles;
+    if (roles == null) {
       roles = [];
     }
-    obj6.writes = roles;
-    let deleted_role_ids = data_mode.partial_updates.deleted_role_ids;
-    if (null == deleted_role_ids) {
+    const obj6 = { op: "update", writes: null, deletes: null };
+    obj6[1] = roles;
+    let deleted_role_ids = guild.partial_updates.deleted_role_ids;
+    if (deleted_role_ids == null) {
       deleted_role_ids = [];
     }
-    obj6.deletes = deleted_role_ids;
-    obj4.roles = obj6;
-    obj4.stage_instances = data_mode.stage_instances;
-    const obj7 = { op: "update" };
-    let stickers = data_mode.partial_updates.stickers;
-    if (null == stickers) {
+    obj6[2] = deleted_role_ids;
+    obj4[13] = obj6;
+    obj4[14] = guild.stage_instances;
+    let stickers = guild.partial_updates.stickers;
+    if (stickers == null) {
       stickers = [];
     }
-    obj7.writes = stickers;
-    let deleted_sticker_ids = data_mode.partial_updates.deleted_sticker_ids;
-    if (null == deleted_sticker_ids) {
+    const obj7 = { op: "update", writes: null, deletes: null };
+    obj7[1] = stickers;
+    let deleted_sticker_ids = guild.partial_updates.deleted_sticker_ids;
+    if (deleted_sticker_ids == null) {
       deleted_sticker_ids = [];
     }
-    obj7.deletes = deleted_sticker_ids;
-    obj4.stickers = obj7;
-    ({ unable_to_sync_deletes: obj9.unableToSyncDeletes, threads } = data_mode);
+    obj7[2] = deleted_sticker_ids;
+    obj4[15] = obj7;
+    ({ unable_to_sync_deletes: obj10[16], threads } = guild);
     let mapped2;
-    if (null != threads) {
-      mapped2 = threads.map((arg0) => outer1_3(arg0, data_mode.id));
+    if (threads != null) {
+      mapped2 = threads.map((arg0) => outer1_3(arg0, guild.id));
     }
-    if (null == mapped2) {
+    if (mapped2 == null) {
       mapped2 = [];
     }
-    obj4.threads = mapped2;
-    obj4.threadMessages = collectThreadMessages(data_mode.threads);
-    ({ version: obj9.version, has_threads_subscription: obj9.hasThreadsSubscription } = data_mode);
+    obj4[17] = mapped2;
+    obj4[18] = collectThreadMessages(guild.threads);
+    ({ version: obj10[19], has_threads_subscription: obj10[20] } = guild);
   }
   return obj4;
 }
@@ -238,124 +126,123 @@ function hydratePreviouslyUnavailableGuild(data_mode) {
   let threads2;
   let closure_0 = data_mode;
   if ("partial" !== data_mode.data_mode) {
-    let obj = {};
-    ({ id: obj4.id, guild_scheduled_events: obj4.guild_scheduled_events, experiments: obj4.experiments, joined_at: obj4.joined_at, last_messages: obj4.lastMessages, member_count: obj4.member_count, members: obj4.members, premium_subscription_count: obj4.premium_subscription_count, properties: obj4.properties } = data_mode);
-    obj = { op: "full_sync", items: data_mode.roles };
-    obj.roles = obj;
-    ({ stage_instances: obj4.stage_instances, threads: threads2 } = data_mode);
+    let obj = { id: null, guild_scheduled_events: null, experiments: null, joined_at: null, lastMessages: null, member_count: null, members: null, premium_subscription_count: null, properties: null, roles: null, stage_instances: null, threads: null, threadMessages: null, presences: null, activity_instances: null, voice_states: null, version: null, hasThreadsSubscription: null, emojis: null, stickers: null, channels: null };
+    ({ id: obj5[0], guild_scheduled_events: obj5[1], experiments: obj5[2], joined_at: obj5[3], last_messages: obj5[4], member_count: obj5[5], members: obj5[6], premium_subscription_count: obj5[7], properties: obj5[8] } = data_mode);
+    obj = { op: "full_sync", items: null };
+    obj[1] = data_mode.roles;
+    obj[9] = obj;
+    ({ stage_instances: obj5[10], threads: threads2 } = data_mode);
     let mapped;
-    if (null != threads2) {
+    if (threads2 != null) {
       mapped = threads2.map((arg0) => outer1_3(arg0, data_mode.id));
     }
-    if (null == mapped) {
+    if (mapped == null) {
       mapped = [];
     }
-    obj.threads = mapped;
-    obj.threadMessages = collectThreadMessages(data_mode.threads);
-    ({ presences: obj4.presences, activity_instances: obj4.activity_instances, voice_states: obj4.voice_states, version: obj4.version, has_threads_subscription: obj4.hasThreadsSubscription } = data_mode);
-    const obj1 = { op: "full_sync", items: data_mode.emojis };
-    obj.emojis = obj1;
-    const obj2 = { op: "full_sync", items: data_mode.stickers };
-    obj.stickers = obj2;
-    const obj3 = { op: "full_sync" };
+    obj[11] = mapped;
+    obj[12] = collectThreadMessages(data_mode.threads);
+    ({ presences: obj5[13], activity_instances: obj5[14], voice_states: obj5[15], version: obj5[16], has_threads_subscription: obj5[17] } = data_mode);
+    const obj1 = { op: "full_sync", items: null };
+    obj1[1] = data_mode.emojis;
+    obj[18] = obj1;
+    const obj2 = { op: "full_sync", items: null };
+    obj2[1] = data_mode.stickers;
+    obj[19] = obj2;
+    const obj3 = { op: "full_sync", items: null };
     const channels = data_mode.channels;
-    obj3.items = channels.map((arg0) => {
+    obj3[1] = channels.map((arg0) => {
       arg0.guild_id = data_mode.id;
       return outer1_3(arg0, data_mode.id);
     });
-    obj.channels = obj3;
+    obj[20] = obj3;
     let obj4 = obj;
   } else {
-    obj4 = { id: data_mode.id };
-    const obj5 = { op: "update" };
+    obj4 = { id: null, channels: null, channelTimestampUpdates: null, activity_instances: null, emojis: null, guild_scheduled_events: null, experiments: null, joined_at: null, lastMessages: null, member_count: null, members: null, premium_subscription_count: null, presences: null, properties: null, roles: null, stage_instances: null, stickers: null, unableToSyncDeletes: null, threads: null, threadMessages: null, voice_states: null, version: null, hasThreadsSubscription: null };
+    obj4[0] = data_mode.id;
     const channels1 = data_mode.partial_updates.channels;
     let mapped1;
-    if (null != channels1) {
+    if (channels1 != null) {
       mapped1 = channels1.map((arg0) => outer1_3(arg0, data_mode.id));
     }
-    if (null == mapped1) {
+    if (mapped1 == null) {
       mapped1 = [];
     }
-    obj5.writes = mapped1;
+    obj = { op: "update", writes: null, deletes: null };
+    obj[1] = mapped1;
     let deleted_channel_ids = data_mode.partial_updates.deleted_channel_ids;
-    if (null == deleted_channel_ids) {
+    if (deleted_channel_ids == null) {
       deleted_channel_ids = [];
     }
-    obj5.deletes = deleted_channel_ids;
-    obj4.channels = obj5;
-    ({ channel_updates: obj9.channelTimestampUpdates, activity_instances: obj9.activity_instances } = data_mode);
-    obj = { op: "update" };
+    obj[2] = deleted_channel_ids;
+    obj4[1] = obj;
+    ({ channel_updates: obj10[2], activity_instances: obj10[3] } = data_mode);
     let emojis = data_mode.partial_updates.emojis;
-    if (null == emojis) {
+    if (emojis == null) {
       emojis = [];
     }
-    obj.writes = emojis;
+    const obj5 = { op: "update", writes: null, deletes: null };
+    obj5[1] = emojis;
     let deleted_emoji_ids = data_mode.partial_updates.deleted_emoji_ids;
-    if (null == deleted_emoji_ids) {
+    if (deleted_emoji_ids == null) {
       deleted_emoji_ids = [];
     }
-    obj.deletes = deleted_emoji_ids;
-    obj4.emojis = obj;
-    ({ guild_scheduled_events: obj9.guild_scheduled_events, experiments: obj9.experiments, joined_at: obj9.joined_at, last_messages: obj9.lastMessages, member_count: obj9.member_count, members: obj9.members, premium_subscription_count: obj9.premium_subscription_count, presences: obj9.presences, properties } = data_mode);
-    let tmp = null;
-    if (null != properties) {
-      tmp = properties;
+    obj5[2] = deleted_emoji_ids;
+    obj4[4] = obj5;
+    ({ guild_scheduled_events: obj10[5], experiments: obj10[6], joined_at: obj10[7], last_messages: obj10[8], member_count: obj10[9], members: obj10[10], premium_subscription_count: obj10[11], presences: obj10[12], properties } = data_mode);
+    if (properties == null) {
+      properties = null;
     }
-    obj4.properties = tmp;
-    const obj6 = { op: "update" };
+    obj4[13] = properties;
     let roles = data_mode.partial_updates.roles;
-    if (null == roles) {
+    if (roles == null) {
       roles = [];
     }
-    obj6.writes = roles;
+    const obj6 = { op: "update", writes: null, deletes: null };
+    obj6[1] = roles;
     let deleted_role_ids = data_mode.partial_updates.deleted_role_ids;
-    if (null == deleted_role_ids) {
+    if (deleted_role_ids == null) {
       deleted_role_ids = [];
     }
-    obj6.deletes = deleted_role_ids;
-    obj4.roles = obj6;
-    obj4.stage_instances = data_mode.stage_instances;
-    const obj7 = { op: "update" };
+    obj6[2] = deleted_role_ids;
+    obj4[14] = obj6;
+    obj4[15] = data_mode.stage_instances;
     let stickers = data_mode.partial_updates.stickers;
-    if (null == stickers) {
+    if (stickers == null) {
       stickers = [];
     }
-    obj7.writes = stickers;
+    const obj7 = { op: "update", writes: null, deletes: null };
+    obj7[1] = stickers;
     let deleted_sticker_ids = data_mode.partial_updates.deleted_sticker_ids;
-    if (null == deleted_sticker_ids) {
+    if (deleted_sticker_ids == null) {
       deleted_sticker_ids = [];
     }
-    obj7.deletes = deleted_sticker_ids;
-    obj4.stickers = obj7;
-    ({ unable_to_sync_deletes: obj9.unableToSyncDeletes, threads } = data_mode);
+    obj7[2] = deleted_sticker_ids;
+    obj4[16] = obj7;
+    ({ unable_to_sync_deletes: obj10[17], threads } = data_mode);
     let mapped2;
-    if (null != threads) {
+    if (threads != null) {
       mapped2 = threads.map((arg0) => outer1_3(arg0, data_mode.id));
     }
-    if (null == mapped2) {
+    if (mapped2 == null) {
       mapped2 = [];
     }
-    obj4.threads = mapped2;
-    obj4.threadMessages = collectThreadMessages(data_mode.threads);
-    ({ voice_states: obj9.voice_states, version: obj9.version, has_threads_subscription: obj9.hasThreadsSubscription } = data_mode);
+    obj4[18] = mapped2;
+    obj4[19] = collectThreadMessages(data_mode.threads);
+    ({ voice_states: obj10[20], version: obj10[21], has_threads_subscription: obj10[22] } = data_mode);
   }
   return obj4;
 }
 function collectThreadMessages(threads) {
-  let iter2;
   const items = [];
   if (null != threads) {
-    const tmp2 = _createForOfIteratorHelperLoose(threads);
-    let iter = tmp2();
-    if (!iter.done) {
-      do {
-        let value = iter.value;
-        if (null != value.most_recent_message) {
-          let arr = items.push(value.most_recent_message);
-        }
-        iter2 = tmp2();
-        iter = iter2;
-      } while (!iter2.done);
+    const iter = threads[Symbol.iterator]();
+    const nextResult = iter.next();
+    while (iter !== undefined) {
+      if (null != nextResult.most_recent_message) {
+        let tmp6 = nextResult;
+        let arr = items.push(tmp5.most_recent_message);
+      }
+      continue;
     }
   }
   return items;
@@ -364,82 +251,144 @@ let c4 = null;
 let closure_5 = {};
 let result = require("isCacheEnabled").fileFinishedImporting("utils/ReadyPayloadUtils.tsx");
 
-export const hydrateReadySupplementalPayload = function hydrateReadySupplementalPayload(outer2_0, identifyStartTime) {
+export const hydrateReadySupplementalPayload = function hydrateReadySupplementalPayload(arg0, identifyStartTime) {
   let guilds;
   let merged_presences;
   let require;
-  ({ guilds, merged_members: require, merged_presences } = outer2_0);
-  let obj = { guilds: 0, merged_members: 0, merged_presences: 0 };
-  Object.setPrototypeOf(null);
-  let merged = Object.assign(outer2_0, obj);
+  ({ guilds, merged_members: require, merged_presences } = arg0);
+  let items = merged_presences;
+  let merged = Object.assign(arg0, Object.create(null));
   let friends;
-  if (null != merged_presences) {
+  if (merged_presences != null) {
     friends = merged_presences.friends;
   }
-  let mapped;
-  if (null != guilds) {
-    mapped = guilds.map((voice_states) => {
-      let tmp3;
-      if (null != merged_presences) {
-        tmp3 = merged_presences.guilds[arg1];
+  require = closure_5;
+  items = [];
+  if (friends != null) {
+    let item = friends.forEach((user_id) => {
+      if (null != user_id) {
+        user_id = user_id.user_id;
+        if (null != user_id) {
+          const _HermesInternal = HermesInternal;
+          items(outer1_2[8])(null != tmp2[user_id], "Missing user[" + user_id + "] in compressed ready payload");
+          user_id.user = tmp2[user_id];
+          const tmp5 = items(outer1_2[8]);
+          const tmp7 = null != tmp2[user_id];
+        }
+        delete tmp2[tmp];
+        items.push(user_id);
       }
-      let tmp8;
-      if (null != table) {
-        tmp8 = table[arg1];
+    });
+  }
+  let mapped;
+  if (guilds != null) {
+    mapped = guilds.map((voice_states) => {
+      let tmp2;
+      if (items1 != null) {
+        tmp2 = items1.guilds[arg1];
+      }
+      tmp2 = closure_5;
+      const items = [];
+      items1 = items;
+      if (tmp2 != null) {
+        const item = tmp2.forEach((user_id) => {
+          if (null != user_id) {
+            user_id = user_id.user_id;
+            if (null != user_id) {
+              const _HermesInternal = HermesInternal;
+              items(outer1_2[8])(null != tmp2[user_id], "Missing user[" + user_id + "] in compressed ready payload");
+              user_id.user = tmp2[user_id];
+              const tmp5 = items(outer1_2[8]);
+              const tmp7 = null != tmp2[user_id];
+            }
+            delete tmp2[tmp];
+            items.push(user_id);
+          }
+        });
+      }
+      let tmp5;
+      if (tmp2 != null) {
+        tmp5 = tmp2[arg1];
+      }
+      tmp2 = closure_5;
+      items1 = [];
+      if (tmp5 != null) {
+        const item1 = tmp5.forEach((user_id) => {
+          if (null != user_id) {
+            user_id = user_id.user_id;
+            if (null != user_id) {
+              const _HermesInternal = HermesInternal;
+              items(outer1_2[8])(null != tmp2[user_id], "Missing user[" + user_id + "] in compressed ready payload");
+              user_id.user = tmp2[user_id];
+              const tmp5 = items(outer1_2[8]);
+              const tmp7 = null != tmp2[user_id];
+            }
+            delete tmp2[tmp];
+            items.push(user_id);
+          }
+        });
       }
       const obj = {};
-      const tmp = outer1_9;
-      const tmp2 = closure_5;
-      const tmp6 = outer1_9;
-      const tmp7 = closure_5;
-      const tmpResult = outer1_9(closure_5, tmp3);
       const merged = Object.assign(voice_states);
-      obj["unavailable"] = undefined === voice_states.voice_states;
-      obj["presences"] = tmpResult;
-      obj["members"] = outer1_9(closure_5, tmp8);
+      obj.unavailable = undefined === voice_states.voice_states;
+      obj.presences = items;
+      obj.members = items1;
       return obj;
     });
   }
-  if (null == mapped) {
+  if (mapped == null) {
     mapped = [];
   }
-  let tmp7 = maybeIncludeInitialGuild(identifyStartTime, guilds, (id) => ({ id: id.id, members: id.members, presences: id.presences, activity_instances: id.activity_instances, voice_states: id.voice_states, unavailable: false }));
-  if (null != tmp7) {
-    mapped.push(tmp7);
+  let tmp5 = null;
+  if (null != _null) {
+    tmp5 = null;
+    if (_null.identifyTime === identifyStartTime) {
+      if (null == guilds) {
+        let obj = { id: null, members: null, presences: null, activity_instances: null, voice_states: null, unavailable: false };
+        ({ id: obj[0], members: obj[1], presences: obj[2], activity_instances: obj[3], voice_states: obj[4] } = _null.guild);
+        tmp5 = obj;
+      } else {
+        tmp5 = null;
+      }
+    }
   }
-  let closure_5 = {};
+  if (null != tmp5) {
+    mapped.push(tmp5);
+  }
+  closure_5 = {};
   obj = {};
   const merged1 = Object.assign(merged);
-  obj["presences"] = restoreUsers(closure_5, friends);
-  obj["guilds"] = mapped;
+  obj.presences = items;
+  obj.guilds = mapped;
   return obj;
 };
 export const preloadReadyPayloadData = function preloadReadyPayloadData() {
-  const databaseResult = importDefault(1883).database();
-  const obj = importDefault(1883);
+  const databaseResult = importDefault(1907).database();
+  const obj = importDefault(1907);
+  const tmp4 = require;
   if (obj2.isCacheEnabled()) {
-    let committedVersions = importDefault(5920).getCommittedVersions();
-    const obj3 = importDefault(5920);
+    let tmpResult = tmp(5939);
+    let committedVersions = tmpResult.getCommittedVersions();
   } else {
     committedVersions = Promise.resolve({});
   }
-  obj2 = require(5916) /* isCacheEnabled */;
-  if (obj4.isCacheEnabled()) {
-    let guildIds = importDefault(1903).getGuildIds();
-    const obj5 = importDefault(1903);
+  obj2 = require(5935) /* isCacheEnabled */;
+  if (tmp4Result.isCacheEnabled()) {
+    tmpResult = tmp(1927);
+    let guildIds = tmpResult.getGuildIds();
   } else {
     const _Set = Set;
     const set = new Set();
     guildIds = Promise.resolve(set);
   }
   if (null != databaseResult) {
-    let okAsyncResult = importDefault(5921).okAsync(databaseResult);
-    const obj6 = importDefault(5921);
+    let okAsyncResult = tmp(5940).okAsync(databaseResult);
+    const tmpResult1 = tmp(5940);
   } else {
     okAsyncResult = Promise.resolve(false);
   }
   const items = [committedVersions, guildIds, okAsyncResult];
-  obj4 = require(5916) /* isCacheEnabled */;
+  tmp4Result = tmp4(5935);
   return Promise.all(items).then((arg0) => {
     let tmp;
     let tmp2;
@@ -448,74 +397,100 @@ export const preloadReadyPayloadData = function preloadReadyPayloadData() {
     return { guildVersions, guildChannels, databaseOk };
   });
 };
-export const hydrateReadyPayloadPrioritized = function hydrateReadyPayloadPrioritized(outer2_0, identifyStartTime, outer2_1) {
+export const hydrateReadyPayloadPrioritized = function hydrateReadyPayloadPrioritized(arg0, identifyStartTime, closure_1) {
   let guilds;
   let private_channels;
   let require;
   let users;
-  ({ users, private_channels, merged_members: require, guilds } = outer2_0);
-  let obj = { users: 0, private_channels: 0, merged_members: 0, guilds: 0 };
-  Object.setPrototypeOf(null);
-  const merged = Object.assign(outer2_0, obj);
-  let tmp3 = null != importDefault(1883).database();
-  if (tmp3) {
-    tmp3 = false === outer2_1.databaseOk;
+  ({ users, private_channels, merged_members: require, guilds } = arg0);
+  const merged = Object.assign(arg0, Object.create(null));
+  let obj = importDefault(1907);
+  let tmp4 = null != obj.database();
+  if (tmp4) {
+    tmp4 = false === closure_1.databaseOk;
   }
-  if (tmp3) {
-    const result = importDefault(1899).replaceDisableAllDatabases("ReadyPayloadUtils: database was not ok");
-    const obj3 = importDefault(1899);
+  if (tmp4) {
+    let tmp2Result = tmp2(1923);
+    const result = tmp2Result.replaceDisableAllDatabases("ReadyPayloadUtils: database was not ok");
   }
-  const obj2 = importDefault(1883);
-  let closure_5 = importDefault(22).keyBy(users, (id) => id.id);
-  if (null != private_channels) {
-    const item = private_channels.forEach((recipient_ids) => {
+  tmp2Result = tmp2(12);
+  let closure_5 = tmp2Result.keyBy(users, (id) => id.id);
+  if (private_channels != null) {
+    let item = private_channels.forEach((recipient_ids) => {
       recipient_ids = recipient_ids.recipient_ids;
       if (null != recipient_ids) {
         recipient_ids.recipients = recipient_ids.map((arg0) => {
-          outer2_1(outer2_2[8])(null != dependencyMap[arg0], "Missing user in compressed ready payload");
+          callback(table[8])(null != dependencyMap[arg0], "Missing user in compressed ready payload");
           return dependencyMap[arg0];
         });
       }
-      delete tmp.recipient_ids;
+      delete tmp2[tmp];
     });
   }
   let mapped;
-  if (null != guilds) {
+  if (guilds != null) {
     mapped = guilds.map((unavailable) => {
       let tmp = unavailable;
       if (true !== unavailable.unavailable) {
-        let tmp6;
-        if (null != table) {
-          tmp6 = table[arg1];
+        let tmp5;
+        if (closure_0 != null) {
+          tmp5 = tmp3[arg1];
         }
-        unavailable.members = outer1_9(closure_5, tmp6);
-        tmp = outer1_10(unavailable);
-        const tmp2 = outer1_9;
-        const tmp3 = closure_5;
+        closure_0 = closure_5;
+        const items = [];
+        if (tmp5 != null) {
+          const item = tmp5.forEach((user_id) => {
+            if (null != user_id) {
+              user_id = user_id.user_id;
+              if (null != user_id) {
+                const _HermesInternal = HermesInternal;
+                items(outer1_2[8])(null != tmp2[user_id], "Missing user[" + user_id + "] in compressed ready payload");
+                user_id.user = tmp2[user_id];
+                const tmp5 = items(outer1_2[8]);
+                const tmp7 = null != tmp2[user_id];
+              }
+              delete tmp2[tmp];
+              items.push(user_id);
+            }
+          });
+        }
+        unavailable.members = items;
+        tmp = outer1_6(unavailable);
+        const tmp2 = closure_5;
       }
       return tmp;
     });
   }
-  if (null == mapped) {
+  if (mapped == null) {
     mapped = [];
   }
-  const tmp9 = maybeIncludeInitialGuild(identifyStartTime, guilds, (arg0) => outer1_10(arg0));
-  if (null != tmp9) {
-    mapped.push(tmp9);
+  let tmp8 = null;
+  if (null != _null) {
+    tmp8 = null;
+    if (_null.identifyTime === identifyStartTime) {
+      if (null == guilds) {
+        tmp8 = hydrateGuild(_null.guild);
+      } else {
+        tmp8 = null;
+      }
+    }
+  }
+  if (null != tmp8) {
+    mapped.push(tmp8);
   }
   obj = {};
   const merged1 = Object.assign(merged);
-  obj["users"] = users;
-  obj["presences"] = [];
-  obj["guilds"] = mapped;
-  if (null == private_channels) {
+  obj.users = users;
+  obj.presences = [];
+  obj.guilds = mapped;
+  if (private_channels == null) {
     private_channels = [];
   }
-  obj["private_channels"] = private_channels;
+  obj.private_channels = private_channels;
   return obj;
 };
-export const hydrateInitialGuild = function hydrateInitialGuild(outer1_0, identifyStartTime) {
-  const obj = { guild: outer1_0, identifyTime: identifyStartTime };
-  return hydratePreviouslyUnavailableGuild(outer1_0);
+export const hydrateInitialGuild = function hydrateInitialGuild(guild, identifyStartTime) {
+  const obj = { guild, identifyTime: identifyStartTime };
+  return hydratePreviouslyUnavailableGuild(guild);
 };
 export { hydratePreviouslyUnavailableGuild };

@@ -1,12 +1,56 @@
-// Module ID: 4484
-// Function ID: 39083
-// Name: getChromeVersion
-// Dependencies: [4485, 2]
-// Exports: canUseWebp, isFirefox, supportsHEVCAlpha
+// Module ID: 4507
+// Function ID: 4508
+// Name: num2
+// Dependencies: [4508, 2]
+// Exports: canUseWebp, getChromeVersion, getEdgeVersion, getElectronVersion, getFirefoxVersion, getSafariVersion, isFirefox, isSafari, supportsHEVCAlpha
 
-// Module 4484 (getChromeVersion)
-import { name } from "capitalize";
+// Module 4507 (num2)
+import { name as str } from "format";
 
+if (str == null) {
+  str = "unknown";
+}
+const str2 = str.toLowerCase();
+let num = -1;
+let num2 = -1;
+if ("chrome" === str2.toLowerCase()) {
+  let str3 = require("format").version;
+  if (str3 == null) {
+    str3 = "";
+  }
+  num2 = parseInt(str3, 10);
+}
+let parsed = num;
+if ("electron" === str2.toLowerCase()) {
+  let str4 = require("format").version;
+  if (str4 == null) {
+    str4 = "";
+  }
+  parsed = parseInt(str4, 10);
+}
+let parsed1 = num;
+if ("firefox" === str2.toLowerCase()) {
+  let str5 = require("format").version;
+  if (str5 == null) {
+    str5 = "";
+  }
+  parsed1 = parseInt(str5, 10);
+}
+let parsed2 = num;
+if ("edge" === str2.toLowerCase()) {
+  let str6 = require("format").version;
+  if (str6 == null) {
+    str6 = "";
+  }
+  parsed2 = parseInt(str6, 10);
+}
+if ("safari" === str2.toLowerCase()) {
+  let str7 = require("format").version;
+  if (str7 == null) {
+    str7 = "";
+  }
+  num = parseInt(str7, 10);
+}
 function getChromeVersion() {
   return num2;
 }
@@ -22,9 +66,9 @@ function getEdgeVersion() {
 function getSafariVersion() {
   return num;
 }
-function isSafari(userAgent) {
-  let str = userAgent;
-  if (userAgent === undefined) {
+function isSafari() {
+  let str = arg0;
+  if (arg0 === undefined) {
     const _navigator = navigator;
     str = navigator.userAgent;
   }
@@ -38,56 +82,6 @@ function isSafari(userAgent) {
   }
   return tmp2;
 }
-let str = "unknown";
-if (null != name) {
-  str = name;
-}
-const str2 = str.toLowerCase();
-let num = -1;
-let num2 = -1;
-if ("chrome" === str2.toLowerCase()) {
-  const version = require("capitalize").version;
-  let str3 = "";
-  if (null != version) {
-    str3 = version;
-  }
-  num2 = parseInt(str3, 10);
-}
-let parsed = num;
-if ("electron" === str2.toLowerCase()) {
-  const version2 = require("capitalize").version;
-  let str4 = "";
-  if (null != version2) {
-    str4 = version2;
-  }
-  parsed = parseInt(str4, 10);
-}
-let parsed1 = num;
-if ("firefox" === str2.toLowerCase()) {
-  const version3 = require("capitalize").version;
-  let str5 = "";
-  if (null != version3) {
-    str5 = version3;
-  }
-  parsed1 = parseInt(str5, 10);
-}
-let parsed2 = num;
-if ("edge" === str2.toLowerCase()) {
-  const version4 = require("capitalize").version;
-  let str6 = "";
-  if (null != version4) {
-    str6 = version4;
-  }
-  parsed2 = parseInt(str6, 10);
-}
-if ("safari" === str2.toLowerCase()) {
-  const version5 = require("capitalize").version;
-  let str7 = "";
-  if (null != version5) {
-    str7 = version5;
-  }
-  num = parseInt(str7, 10);
-}
 const result = require("set").fileFinishedImporting("utils/BrowserUtils.tsx");
 
 export { getChromeVersion };
@@ -96,18 +90,18 @@ export { getFirefoxVersion };
 export { getEdgeVersion };
 export { getSafariVersion };
 export const canUseWebp = function canUseWebp() {
-  let tmp = -1 !== getChromeVersion();
+  let tmp = -1 !== num2;
   if (!tmp) {
-    tmp = -1 !== getElectronVersion();
+    tmp = -1 !== parsed;
   }
   if (!tmp) {
-    tmp = -1 !== getFirefoxVersion();
+    tmp = -1 !== parsed1;
   }
   if (!tmp) {
-    tmp = -1 !== getEdgeVersion();
+    tmp = -1 !== parsed2;
   }
   if (!tmp) {
-    tmp = getSafariVersion() >= 14;
+    tmp = num >= 14;
   }
   return tmp;
 };
@@ -125,8 +119,24 @@ export const supportsHEVCAlpha = function supportsHEVCAlpha() {
   const _navigator = window.navigator;
   const mediaCapabilities = _navigator.mediaCapabilities;
   let decodingInfo;
-  if (null != mediaCapabilities) {
+  if (mediaCapabilities != null) {
     decodingInfo = mediaCapabilities.decodingInfo;
   }
-  return isSafari(_navigator.userAgent) && null != decodingInfo;
+  let str = _navigator.userAgent;
+  if (str === undefined) {
+    const _navigator2 = navigator;
+    str = navigator.userAgent;
+  }
+  const formatted = str.toLowerCase();
+  let tmp3 = -1 !== formatted.indexOf("safari");
+  if (tmp3) {
+    tmp3 = -1 === formatted.indexOf("chrome");
+  }
+  if (tmp3) {
+    tmp3 = -1 !== formatted.indexOf("version/");
+  }
+  if (tmp3) {
+    tmp3 = tmp2;
+  }
+  return tmp3;
 };

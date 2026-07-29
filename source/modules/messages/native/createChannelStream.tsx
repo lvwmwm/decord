@@ -1,150 +1,81 @@
-// Module ID: 11121
-// Function ID: 86220
-// Name: _createForOfIteratorHelperLoose
-// Dependencies: [10446, 5947, 6131, 7691, 653, 21, 9479, 11122, 1212, 3835, 7734, 9965, 6030, 2]
+// Module ID: 11145
+// Function ID: 11146
+// Name: createChannelStream
+// Dependencies: [10470, 5966, 6149, 7714, 676, 11, 9503, 11146, 1236, 3859, 7757, 9987, 6048, 2]
 // Exports: default
 
-// Module 11121 (_createForOfIteratorHelperLoose)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_4 from "_isNativeReflectConstruct";
-import closure_5 from "_isNativeReflectConstruct";
+// Module 11145 (createChannelStream)
+import initialize from "initialize";
+import closure_4 from "initialize";
+import closure_5 from "initialize";
 import Changeset from "Changeset";
 import { MessageFlags } from "ME";
 
+let c9;
 let closure_6;
-let closure_7;
-let closure_8;
-let closure_9;
+let error;
+let metroImportAll;
 const require = arg1;
-function _createForOfIteratorHelperLoose(iterable) {
-  let closure_0 = iterable;
-  iterable = "undefined" !== typeof Symbol;
-  if (iterable) {
-    const _Symbol = Symbol;
-    iterable = iterable[Symbol.iterator];
-  }
-  if (!iterable) {
-    iterable = iterable[Symbol.iterator];
-  }
-  if (iterable) {
-    const iter = iterable.call(iterable);
-    const next = iter.next;
-    return next.bind(iter);
-  } else {
-    const _Array = Array;
-    let tmp = iterable;
-    if (!Array.isArray(iterable)) {
-      let tmp2;
-      if (iterable) {
-        if ("string" === typeof iterable) {
-          tmp2 = _arrayLikeToArray(iterable, undefined);
-        } else {
-          const toString = {}.toString;
-          const substr = toString.call(iterable).slice(8, -1);
-          let name = substr;
-          if (tmp3) {
-            name = iterable.constructor.name;
-          }
-          if ("Map" !== name) {
-            if ("Set" !== name) {
-              if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(iterable, undefined);
-              } else {
-                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
-              }
-            }
-            tmp2 = arr;
-          }
-          const _Array2 = Array;
-          arr = Array.from(iterable);
-          const callResult = toString.call(iterable);
-          tmp3 = "Object" === substr && iterable.constructor;
-        }
-      }
-      tmp = tmp2;
-      if (!tmp2) {
-        const _TypeError = TypeError;
-        const typeError = new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
-        throw typeError;
-      }
-    }
-    if (tmp) {
-      closure_0 = tmp;
-    }
-    let c1 = 0;
-    return () => {
-      if (closure_1 >= length.length) {
-        let obj = { done: true };
-      } else {
-        obj = { done: false };
-        closure_1 = tmp3 + 1;
-        obj.value = length[+closure_1];
-      }
-      return obj;
-    };
-  }
-}
-function _arrayLikeToArray(arg0, arg1) {
-  let length;
-  if (tmp) {
-    length = arg0.length;
-  }
-  const ArrayResult = Array(length);
-  for (let num = 0; num < length; num = num + 1) {
-    ArrayResult[num] = arg0[num];
-  }
-  return ArrayResult;
-}
-({ Changeset: closure_6, LoadingType: closure_7, RowType: closure_8, SeparatorType: closure_9 } = Changeset);
-let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/messages/native/createChannelStream.tsx");
+({ Changeset: closure_6, LoadingType: error, RowType: metroImportAll, SeparatorType: c9 } = Changeset);
+let result = require("initialize").fileFinishedImporting("modules/messages/native/createChannelStream.tsx");
 
 export default function createChannelStream(forceRender) {
   let MessageFlags;
-  let _arrayLikeToArray;
-  let _createForOfIteratorHelperLoose;
-  let _isNativeReflectConstruct;
+  let closure_11;
+  let closure_12;
+  let initialize;
   let closure_4;
   let closure_5;
   let closure_6;
   let closure_7;
   let dependencyMap;
-  let iter2;
   let messages;
   let require;
   let roleStyle;
   let uploads;
   ({ channel: require, messages } = forceRender);
-  ({ uploads, oldestUnreadMessageId: dependencyMap, replyingMessageId: _isNativeReflectConstruct, currentUserId: closure_4, canAddNewReactions: closure_5, selectedSummary: closure_6, chatManager: closure_7, roleStyle } = forceRender);
+  ({ uploads, oldestUnreadMessageId: dependencyMap, replyingMessageId: initialize, currentUserId: closure_4, canAddNewReactions: closure_5, selectedSummary: closure_6, chatManager: closure_7, roleStyle } = forceRender);
   forceRender = forceRender.forceRender;
-  ({ updateMessageIds: MessageFlags, isResourceChannel: _createForOfIteratorHelperLoose, unloadableContentEntryMessageIds: _arrayLikeToArray } = forceRender);
+  ({ updateMessageIds: MessageFlags, isResourceChannel: closure_11, unloadableContentEntryMessageIds: closure_12 } = forceRender);
   let items1;
   function unreadFilter(id) {
     if (closure_0.isForumPost()) {
-      let tmp3 = tmp;
-      if (tmp) {
-        tmp3 = id.id !== messages(outer1_2[5]).castChannelIdAsMessageId(closure_0.id);
+      let tmp4 = tmp2;
+      if (tmp2) {
+        tmp4 = id.id !== messages(outer1_2[5]).castChannelIdAsMessageId(closure_0.id);
         const obj = messages(outer1_2[5]);
       }
-      let tmp2 = tmp3;
+      let tmp3 = tmp4;
     } else {
-      tmp2 = tmp;
+      tmp3 = tmp2;
     }
-    return tmp2;
+    return tmp3;
   }
   function insertMessage(message) {
+    let arr = items1;
     const first = items1[0];
     if (null != first) {
-      if (!unreadFilter(message)) {
-        if (messages(outer1_2[6])(closure_0, first[first.length - 1], message)) {
+      if (closure_0.isForumPost()) {
+        let tmp2 = tmp12;
+        if (tmp12) {
+          tmp2 = message.id !== messages(outer1_2[5]).castChannelIdAsMessageId(tmp10.id);
+          const obj = messages(outer1_2[5]);
+        }
+        let tmp = tmp2;
+      } else {
+        tmp = tmp12;
+      }
+      if (!tmp) {
+        if (messages(outer1_2[6])(tmp10, first[first.length - 1], message)) {
           const items = [message];
-          items1.unshift(items);
+          arr = arr.unshift(items);
         } else {
-          first.unshift(message);
+          arr = first.unshift(message);
         }
       }
     }
     items1 = [message];
-    items1.unshift(items1);
+    arr.unshift(items1);
   }
   function determineChangeType(message) {
     let flag = arg1;
@@ -156,23 +87,24 @@ export default function createChannelStream(forceRender) {
   let items = [];
   let arr = {};
   const substr = uploads.slice();
-  let tmp = _createForOfIteratorHelperLoose(substr.reverse());
-  let iter = tmp();
-  if (!iter.done) {
-    do {
-      let value = iter.value;
-      let tmp2 = messageForFile;
-      messageForFile = messageForFile.getMessageForFile(value.id);
-      let nonce;
-      if (null != messageForFile) {
-        nonce = messageForFile.nonce;
-      }
-      if (null != nonce) {
-        arr[messageForFile.nonce] = value;
-      }
-      iter2 = tmp();
-      iter = iter2;
-    } while (!iter2.done);
+  const reversed = substr.reverse();
+  let iter = reversed[Symbol.iterator]();
+  let nextResult = iter.next();
+  while (iter !== undefined) {
+    let tmp4 = messageForFile;
+    let tmp3 = nextResult;
+    messageForFile = messageForFile.getMessageForFile(nextResult.id);
+    let nonce;
+    let tmp6 = messageForFile;
+    if (messageForFile != null) {
+      nonce = messageForFile.nonce;
+    }
+    if (null != nonce) {
+      let tmp8 = messageForFile;
+      let tmp9 = nextResult;
+      arr[tmp6.nonce] = tmp3;
+    }
+    continue;
   }
   items1 = [];
   const item = messages.forEach((id) => {
@@ -188,108 +120,102 @@ export default function createChannelStream(forceRender) {
       }
     }
     insertMessage(id);
-    let tmp7 = null != result;
-    if (tmp7) {
-      tmp7 = "after" === result.position;
+    let tmp8 = null != result;
+    if (tmp8) {
+      tmp8 = "after" === result.position;
     }
-    if (tmp7) {
+    if (tmp8) {
       insertMessage(result.message);
     }
   });
-  const item1 = items1.forEach((closure_0) => {
-    let iter2;
-    function processHiddenMessageRow(merged) {
-      let iter2;
-      let obj;
-      const tmp = outer2_11(systemDM);
-      let iter = tmp();
-      if (!iter.done) {
-        do {
-          let value = iter.value;
-          let tmp2 = outer1_18;
-          let tmp3 = outer2_6;
-          let tmp4 = outer1_18(value) !== outer2_6.NOOP;
-          if (tmp4) {
-            let tmp5 = outer2_6;
-            tmp4 = merged.changeType === outer2_6.NOOP;
-          }
-          if (tmp4) {
-            let tmp6 = outer2_6;
-            merged.changeType = outer2_6.UPDATE;
-          }
-          let content = merged.content;
-          obj = {};
-          let tmp7 = roleStyle;
-          obj.rowType = roleStyle.MESSAGE;
-          let tmp8 = outer2_6;
-          obj.changeType = outer2_6.NOOP;
-          let tmp9 = outer1_8;
-          obj.roleStyle = outer1_8;
-          obj.message = value;
-          let tmp10 = systemDM;
-          let tmp11 = systemDM.isSystemDM() && value.isSystemDM();
-          obj.isSystemDM = tmp11;
-          let tmp12 = obj;
-          obj.isFirst = value === obj;
-          let tmp13 = outer1_5;
-          obj.canAddNewReactions = outer1_5;
-          let arr = content.unshift(obj);
-          iter2 = tmp();
-          iter = iter2;
-        } while (!iter2.done);
-      }
-      merged.revealed = obj.id === obj.revealedMessageId;
-      merged.context = obj.id;
-      return merged;
-    }
-    let obj = closure_0[closure_0.length - 1];
-    let merged = arg1 === items1.length - 1;
+  const item1 = items1.forEach((id) => {
+    let closure_0 = id;
+    let obj = id[id.length - 1];
     let hasMoreAfter = 0 === arg1;
+    let merged = items1;
+    const diff = items1.length - 1;
     if (hasMoreAfter) {
       hasMoreAfter = obj.hasMoreAfter;
     }
     if (!hasMoreAfter) {
-      let tmp11 = obj.hasMoreBefore && merged;
-      let tmp13 = unreadFilter(obj);
+      let tmp17 = obj.hasMoreBefore && tmp15;
+      let tmp19 = unreadFilter(obj);
       let timestamp = null;
-      if (!merged) {
-        timestamp = items1[arg1 + 1][0].timestamp;
+      if (arg1 !== diff) {
+        timestamp = merged[arg1 + 1][0].timestamp;
       }
-      if (merged) {
-        let isDMResult = closure_0.isDM();
-        if (isDMResult) {
-          isDMResult = !obj.hasMoreBefore;
-        }
-        if (isDMResult) {
-          isDMResult = merged;
-        }
-        if (!isDMResult) {
-          let isThreadResult = closure_0.isThread();
+      if (arg1 === diff) {
+        let obj3 = closure_0;
+        let tmp25 = closure_0.isDM() && !tmp16.hasMoreBefore && tmp15;
+        if (!tmp25) {
+          let isThreadResult = obj3.isThread();
           if (isThreadResult) {
-            isThreadResult = !closure_0.isForumPost();
+            isThreadResult = !obj3.isForumPost();
           }
           if (isThreadResult) {
-            isThreadResult = !obj.hasMoreBefore;
+            isThreadResult = !tmp16.hasMoreBefore;
           }
           if (isThreadResult) {
-            isThreadResult = merged;
+            isThreadResult = tmp15;
           }
-          isDMResult = isThreadResult;
+          tmp25 = isThreadResult;
         }
         let flag = false;
-        if (isDMResult) {
+        if (tmp25) {
           flag = true;
         }
       } else {
         let obj2 = outer1_0(outer1_2[9]);
         flag = true;
       }
-      obj = { roleStyle, message: null, isFirst: true, content: null, text: "", revealed: false };
-      obj.message = obj;
-      obj.content = [];
-      let tmp28 = items[items.length - 1];
+      function processHiddenMessageRow(merged) {
+        let obj;
+        const iter = systemDM[Symbol.iterator]();
+        const nextResult = iter.next();
+        while (iter !== undefined) {
+          obj = nextResult;
+          let tmp3 = outer1_18;
+          let tmp4 = outer2_6;
+          let tmp5 = outer1_18(nextResult) !== outer2_6.NOOP && merged.changeType === tmp4.NOOP;
+          if (tmp5) {
+            merged.changeType = tmp4.UPDATE;
+          }
+          let content = merged.content;
+          obj = { rowType: null, changeType: null, roleStyle: null, message: null, isSystemDM: null, isFirst: null, canAddNewReactions: null };
+          let tmp6 = roleStyle;
+          obj[0] = roleStyle.MESSAGE;
+          obj[1] = tmp4.NOOP;
+          let tmp7 = outer1_8;
+          obj[2] = outer1_8;
+          let tmp8 = nextResult;
+          obj[3] = obj;
+          let tmp9 = systemDM;
+          let isSystemDMResult = systemDM.isSystemDM();
+          if (isSystemDMResult) {
+            let tmp11 = nextResult;
+            isSystemDMResult = obj.isSystemDM();
+          }
+          obj[4] = isSystemDMResult;
+          let tmp12 = nextResult;
+          let tmp13 = obj;
+          obj[5] = obj === obj;
+          let tmp14 = outer1_5;
+          obj[6] = outer1_5;
+          let arr = content.unshift(obj);
+          continue;
+        }
+        merged.revealed = obj.id === obj.revealedMessageId;
+        merged.context = obj.id;
+        return merged;
+      }
+      obj = { roleStyle: null, message: null, isFirst: true, content: null, text: "", revealed: false };
+      obj[0] = roleStyle;
+      obj[1] = obj;
+      obj[3] = [];
+      let arr = items;
+      let tmp32 = items[items.length - 1];
       if (obj.hasFlag(outer1_10.HIDDEN_SUSPENDED_USER)) {
-        if (null == tmp28) {
+        if (null == tmp32) {
           merged = determineChangeType;
           obj = {};
           merged = obj;
@@ -297,32 +223,34 @@ export default function createChannelStream(forceRender) {
           merged = determineChangeType(obj);
           merged = Object.assign(obj);
           merged = roleStyle;
-          obj["rowType"] = roleStyle.SUSPENDED_USER_GROUP;
-          obj["changeType"] = merged;
-          obj["canUncollapse"] = false;
-          merged = items;
-          merged = items.push(obj);
-          tmp28 = obj;
+          obj.rowType = roleStyle.SUSPENDED_USER_GROUP;
+          obj.changeType = merged;
+          obj.canUncollapse = false;
+          merged = tmp31;
+          merged = arr.push(obj);
+          tmp32 = obj;
         } else {
           merged = roleStyle;
         }
-        merged = processHiddenMessageRow(tmp28);
+        merged = processHiddenMessageRow(tmp32);
         merged = outer1_0;
         merged = outer1_2;
         const intl4 = outer1_0(outer1_2[8]).intl;
-        const obj1 = { count: tmp28.content.length };
-        tmp28.text = intl4.formatToPlainString(outer1_0(outer1_2[8]).t.rHRovo, obj1);
+        merged = outer1_0;
+        merged = outer1_2;
+        const obj1 = { count: null };
+        obj1[0] = tmp32.content.length;
+        tmp32.text = intl4.formatToPlainString(outer1_0(outer1_2[8]).t.rHRovo, obj1);
       } else if (obj.blocked) {
-        if (null == tmp28) {
+        if (null == tmp32) {
           merged = determineChangeType;
-          merged = determineChangeType(obj);
+          let INSERT2 = determineChangeType(obj);
           merged = outer1_6;
-          merged = merged === outer1_6.NOOP;
+          merged = INSERT2 === outer1_6.NOOP;
           if (merged) {
             merged = store;
             merged = store.getBlocked(obj);
           }
-          let INSERT2 = merged;
           if (merged) {
             merged = outer1_6;
             INSERT2 = outer1_6.INSERT;
@@ -332,208 +260,240 @@ export default function createChannelStream(forceRender) {
           merged = obj;
           merged = Object.assign(obj);
           merged = roleStyle;
-          obj2["rowType"] = roleStyle.BLOCKED_GROUP;
-          obj2["changeType"] = INSERT2;
-          merged = items;
-          merged = items.push(obj2);
+          obj2.rowType = roleStyle.BLOCKED_GROUP;
+          obj2.changeType = INSERT2;
+          merged = tmp31;
+          merged = arr.push(obj2);
           merged = obj2;
         } else {
           merged = roleStyle;
-          merged = tmp28;
+          merged = tmp32;
         }
         merged = processHiddenMessageRow(merged);
         merged = outer1_0;
         merged = outer1_2;
         const intl3 = outer1_0(outer1_2[8]).intl;
-        const obj3 = { count: merged.content.length };
+        merged = outer1_0;
+        merged = outer1_2;
+        obj3 = { count: null };
+        obj3[0] = merged.content.length;
         merged.text = intl3.formatToPlainString(outer1_0(outer1_2[8]).t["+FcYM/"], obj3);
       } else if (obj.ignored) {
-        if (null == tmp28) {
-          const tmp99 = determineChangeType(obj);
+        if (null == tmp32) {
+          merged = determineChangeType;
+          let INSERT = determineChangeType(obj);
           merged = outer1_6;
-          merged = tmp99 === outer1_6.NOOP;
+          merged = INSERT === outer1_6.NOOP;
           if (merged) {
             merged = store;
             merged = store.getIgnored(obj);
           }
-          let INSERT = tmp99;
           if (merged) {
             merged = outer1_6;
             INSERT = outer1_6.INSERT;
           }
-          let obj4 = {};
+          const obj4 = {};
           merged = obj4;
           merged = obj;
           merged = Object.assign(obj);
           merged = roleStyle;
-          obj4["rowType"] = roleStyle.IGNORED_GROUP;
-          obj4["changeType"] = INSERT;
-          merged = items;
-          merged = items.push(obj4);
-          let tmp97 = obj4;
+          obj4.rowType = roleStyle.IGNORED_GROUP;
+          obj4.changeType = INSERT;
+          merged = tmp31;
+          merged = arr.push(obj4);
+          merged = obj4;
         } else {
-          tmp97 = tmp28;
+          merged = roleStyle;
+          merged = tmp32;
         }
-        merged = processHiddenMessageRow(tmp97);
+        merged = processHiddenMessageRow(merged);
         merged = outer1_0;
         merged = outer1_2;
         const intl2 = outer1_0(outer1_2[8]).intl;
-        let obj5 = { count: tmp97.content.length };
-        tmp97.text = intl2.formatToPlainString(outer1_0(outer1_2[8]).t["VFWjc+"], obj5);
+        merged = outer1_0;
+        merged = outer1_2;
+        let obj5 = { count: null };
+        obj5[0] = merged.content.length;
+        merged.text = intl2.formatToPlainString(outer1_0(outer1_2[8]).t["VFWjc+"], obj5);
       } else {
-        const tmp31 = outer1_11(closure_0);
-        let iter = tmp31();
-        if (!iter.done) {
-          do {
-            let value = iter.value;
-            let tmp32 = value !== obj;
-            let tmp33 = outer1_4;
-            let tmp34 = closure_0;
-            let isEditingResult = outer1_4.isEditing(closure_0.id, value.id);
-            if (!isEditingResult) {
-              let tmp36 = _isNativeReflectConstruct;
-              isEditingResult = _isNativeReflectConstruct === value.id;
+        let iter = id[Symbol.iterator]();
+        let nextResult = iter.next();
+        while (iter !== undefined) {
+          obj5 = nextResult;
+          let tmp38 = nextResult !== obj;
+          let tmp39 = outer1_4;
+          let tmp40 = closure_0;
+          let obj6 = closure_0;
+          let isEditingResult = outer1_4.isEditing(closure_0.id, nextResult.id);
+          if (!isEditingResult) {
+            let tmp42 = initialize;
+            let tmp43 = nextResult;
+            isEditingResult = initialize === obj5.id;
+          }
+          let tmp45 = outer1_3;
+          let tmp46 = nextResult;
+          let tmp44 = isEditingResult;
+          let pushFeedback = outer1_3.getPushFeedback(obj5.channel_id, obj5.id);
+          let tmp48 = outer1_0;
+          let tmp49 = outer1_2;
+          let obj7 = outer1_0(outer1_2[10]);
+          let tmp50 = tmp40;
+          let tmp53 = outer1_2;
+          let canReplyToMessageResult = obj7.canReplyToMessage(obj6, obj5);
+          let tmp52 = messages;
+          let tmp54 = closure_4;
+          let tmp55 = messages(outer1_2[11])(obj5, closure_4);
+          if (tmp55) {
+            let tmp56 = outer1_0;
+            let tmp57 = outer1_2;
+            let obj8 = outer1_0(outer1_2[12]);
+            let tmp58 = tmp40;
+            tmp55 = !obj8.isNonModInLockedThread(obj6);
+          }
+          let tmp59 = tmp55;
+          let tmp61 = nextResult;
+          let tmp60 = arr;
+          if (arr.hasOwnProperty(obj5.id)) {
+            let tmp65 = nextResult;
+            let tmp66 = store;
+            let result = store.determineChangeTypeForUploadProgress(tmp60[obj5.id]);
+          } else {
+            let tmp62 = determineChangeType;
+            let tmp63 = nextResult;
+            result = determineChangeType(obj5, true);
+          }
+          let tmp67 = closure_6;
+          let tmp68 = null != closure_6;
+          if (tmp68) {
+            let tmp69 = nextResult;
+            tmp68 = tmp67.endId === obj5.id;
+          }
+          if (tmp68) {
+            tmp68 = tmp67.count > 1;
+          }
+          if (tmp68) {
+            let tmp70 = items;
+            let tmp71 = items;
+            obj6 = { rowType: null, changeType: null, roleStyle: null, summary: null, isBeforeContent: false };
+            let tmp72 = forceRender;
+            obj6[0] = forceRender.SUMMARY;
+            let tmp73 = determineChangeType;
+            let tmp74 = nextResult;
+            obj6[1] = determineChangeType(obj5);
+            let tmp75 = roleStyle;
+            let tmp76 = roleStyle;
+            obj6[2] = roleStyle;
+            obj6[3] = tmp67;
+            arr = items.push(obj6);
+          }
+          let tmp78 = items;
+          let arr2 = items;
+          obj7 = { roleStyle: null, message: null, isSystemDM: null, isFirst: null, isEditing: null, separatorBefore: null, canAddNewReactions: null, alwaysShowAddReaction: null, renderContentOnly: null, pushFeedbackType: null, canReply: null, canEdit: null, rowType: null, changeType: null, showContentInventoryEntryFallbackEmbed: null };
+          obj7[0] = roleStyle;
+          let tmp81 = nextResult;
+          obj7[1] = obj5;
+          let tmp82 = tmp40;
+          let tmp79 = roleStyle;
+          let tmp80 = roleStyle;
+          let isSystemDMResult = obj6.isSystemDM();
+          if (isSystemDMResult) {
+            let tmp84 = nextResult;
+            isSystemDMResult = obj5.isSystemDM();
+          }
+          obj7[2] = isSystemDMResult;
+          let tmp85 = nextResult;
+          obj7[3] = obj5 === obj;
+          let tmp86 = isEditingResult;
+          obj7[4] = tmp44;
+          let tmp87 = tmp38;
+          let tmp88 = !tmp38;
+          if (!tmp38) {
+            let tmp89 = closure_11;
+            let tmp90 = closure_11;
+            tmp88 = !closure_11;
+          }
+          if (tmp88) {
+            let tmp91 = flag;
+            if (!flag) {
+              tmp91 = tmp19;
             }
-            let tmp37 = outer1_3;
-            let pushFeedback = outer1_3.getPushFeedback(value.channel_id, value.id);
-            let tmp39 = outer1_0;
-            let tmp40 = outer1_2;
-            obj4 = outer1_0(outer1_2[10]);
-            let tmp41 = closure_0;
-            let tmp43 = messages;
-            let canReplyToMessageResult = obj4.canReplyToMessage(closure_0, value);
-            let tmp44 = closure_4;
-            let tmp45 = messages(outer1_2[11])(value, closure_4);
-            if (tmp45) {
-              let tmp46 = outer1_0;
-              let tmp47 = outer1_2;
-              obj5 = outer1_0(outer1_2[12]);
-              let tmp48 = closure_0;
-              tmp45 = !obj5.isNonModInLockedThread(closure_0);
+            if (!tmp91) {
+              tmp91 = tmp17;
             }
-            let tmp49 = arr;
-            if (arr.hasOwnProperty(value.id)) {
-              let tmp52 = arr;
-              let tmp53 = store;
-              let result = store.determineChangeTypeForUploadProgress(arr[value.id]);
-            } else {
-              let tmp50 = determineChangeType;
-              result = determineChangeType(value, true);
-            }
-            let tmp54 = closure_6;
-            let tmp55 = null != closure_6;
-            if (tmp55) {
-              let tmp56 = closure_6;
-              tmp55 = closure_6.endId === value.id;
-            }
-            if (tmp55) {
-              let tmp57 = closure_6;
-              tmp55 = closure_6.count > 1;
-            }
-            if (tmp55) {
-              let tmp58 = items;
-              let obj6 = {};
-              let tmp59 = forceRender;
-              obj6.rowType = forceRender.SUMMARY;
-              let tmp60 = determineChangeType;
-              obj6.changeType = determineChangeType(value);
-              let tmp61 = roleStyle;
-              obj6.roleStyle = roleStyle;
-              let tmp62 = closure_6;
-              obj6.summary = closure_6;
-              obj6.isBeforeContent = false;
-              arr = items.push(obj6);
-            }
-            let obj7 = {};
-            let tmp65 = roleStyle;
-            obj7.roleStyle = roleStyle;
-            obj7.message = value;
-            let tmp66 = closure_0;
-            let tmp64 = items;
-            let tmp67 = closure_0.isSystemDM() && value.isSystemDM();
-            obj7.isSystemDM = tmp67;
-            obj7.isFirst = value === obj;
-            obj7.isEditing = isEditingResult;
-            let tmp68 = !tmp32;
-            if (!tmp32) {
-              let tmp69 = closure_11;
-              tmp68 = !closure_11;
-            }
-            if (tmp68) {
-              let tmp70 = flag;
-              if (!flag) {
-                tmp70 = tmp13;
-              }
-              if (!tmp70) {
-                tmp70 = tmp11;
-              }
-              tmp68 = tmp70;
-            }
-            obj7.separatorBefore = tmp68;
-            let tmp71 = closure_5;
-            obj7.canAddNewReactions = closure_5;
-            let tmp72 = closure_0;
-            let isForumPostResult = closure_0.isForumPost();
-            if (isForumPostResult) {
-              let tmp74 = messages;
-              let tmp75 = outer1_2;
-              let obj8 = messages(outer1_2[5]);
-              let tmp76 = closure_0;
-              isForumPostResult = value.id === obj8.castChannelIdAsMessageId(closure_0.id);
-            }
-            obj7.alwaysShowAddReaction = isForumPostResult;
-            let tmp77 = closure_11;
-            obj7.renderContentOnly = closure_11;
-            let pushType;
-            if (null != pushFeedback) {
-              pushType = pushFeedback.pushType;
-            }
-            obj7.pushFeedbackType = pushType;
-            let tmp79 = closure_11;
-            obj7.canReply = !closure_11 && canReplyToMessageResult;
-            let tmp80 = closure_11;
-            obj7.canEdit = !closure_11 && tmp45;
-            let tmp81 = roleStyle;
-            obj7.rowType = roleStyle.MESSAGE;
-            obj7.changeType = result;
-            let tmp82 = set;
-            let hasItem;
-            if (null != set) {
-              let tmp84 = set;
-              hasItem = set.has(value.id);
-            }
-            obj7.showContentInventoryEntryFallbackEmbed = hasItem;
-            arr = items.push(obj7);
-            let tmp86 = closure_6;
-            let tmp87 = null != closure_6;
-            if (tmp87) {
-              let tmp88 = closure_6;
-              tmp87 = closure_6.startId === value.id;
-            }
-            if (tmp87) {
-              let tmp89 = closure_6;
-              tmp87 = closure_6.count > 1;
-            }
-            if (tmp87) {
-              let tmp90 = items;
-              obj8 = {};
-              let tmp91 = forceRender;
-              obj8.rowType = forceRender.SUMMARY;
-              let tmp92 = determineChangeType;
-              obj8.changeType = determineChangeType(value);
-              let tmp93 = roleStyle;
-              obj8.roleStyle = roleStyle;
-              let tmp94 = closure_6;
-              obj8.summary = closure_6;
-              obj8.isBeforeContent = true;
-              let arr1 = items.push(obj8);
-            }
-            iter2 = tmp31();
-            iter = iter2;
-          } while (!iter2.done);
+            tmp88 = tmp91;
+          }
+          obj7[5] = tmp88;
+          let tmp92 = closure_5;
+          obj7[6] = closure_5;
+          let tmp93 = tmp40;
+          let isForumPostResult = obj6.isForumPost();
+          if (isForumPostResult) {
+            let tmp95 = nextResult;
+            let tmp96 = outer1_2;
+            let tmp52Result = tmp52(outer1_2[5]);
+            let tmp97 = tmp40;
+            isForumPostResult = obj5.id === tmp52Result.castChannelIdAsMessageId(obj6.id);
+          }
+          obj7[7] = isForumPostResult;
+          let tmp98 = closure_11;
+          let tmp99 = closure_11;
+          obj7[8] = closure_11;
+          merged = pushFeedback;
+          merged = undefined;
+          if (pushFeedback != null) {
+            merged = pushFeedback.pushType;
+          }
+          obj7[9] = merged;
+          merged = tmp98;
+          merged = !tmp99;
+          if (!tmp99) {
+            merged = canReplyToMessageResult;
+          }
+          obj7[10] = merged;
+          merged = tmp98;
+          merged = !tmp99;
+          if (!tmp99) {
+            merged = tmp55;
+          }
+          obj7[11] = merged;
+          merged = roleStyle;
+          obj7[12] = roleStyle.MESSAGE;
+          merged = result;
+          obj7[13] = result;
+          let obj12 = closure_12;
+          merged = undefined;
+          if (closure_12 != null) {
+            merged = nextResult;
+            merged = obj12.has(obj5.id);
+          }
+          obj7[14] = merged;
+          merged = items.push(obj7);
+          merged = null != tmp67;
+          if (merged) {
+            merged = nextResult;
+            merged = tmp67.startId === obj5.id;
+          }
+          if (merged) {
+            merged = tmp67.count > 1;
+          }
+          if (merged) {
+            merged = tmp78;
+            obj8 = { rowType: null, changeType: null, roleStyle: null, summary: null, isBeforeContent: true };
+            merged = forceRender;
+            obj8[0] = forceRender.SUMMARY;
+            merged = determineChangeType;
+            merged = nextResult;
+            obj8[1] = determineChangeType(obj5);
+            merged = tmp79;
+            obj8[2] = tmp80;
+            obj8[3] = tmp67;
+            merged = arr2.push(obj8);
+          }
+          continue;
         }
       }
       if (flag) {
+        merged = closure_11;
         merged = closure_11;
         if (!closure_11) {
           merged = determineChangeType;
@@ -546,87 +506,99 @@ export default function createChannelStream(forceRender) {
           merged = outer1_0;
           merged = outer1_2;
           merged = items;
-          const obj9 = {};
+          merged = items;
+          const obj9 = { rowType: null, changeType: null, roleStyle: null, text: null };
           merged = forceRender;
-          obj9.rowType = forceRender.DAY;
-          obj9.changeType = NOOP;
+          obj9[0] = forceRender.DAY;
+          obj9[1] = NOOP;
           merged = roleStyle;
-          obj9.roleStyle = roleStyle;
-          obj9.text = outer1_0(outer1_2[9]).dateFormat(obj.timestamp, "LL");
+          merged = roleStyle;
+          obj9[2] = roleStyle;
+          obj9[3] = outer1_0(outer1_2[9]).dateFormat(obj.timestamp, "LL");
           merged = items.push(obj9);
-          const obj17 = outer1_0(outer1_2[9]);
+          const obj21 = outer1_0(outer1_2[9]);
         }
       }
-      if (tmp13) {
+      if (tmp19) {
         merged = closure_11;
-        tmp13 = !closure_11;
+        merged = closure_11;
+        tmp19 = !closure_11;
       }
-      if (tmp13) {
+      if (tmp19) {
         merged = items;
-        const obj10 = {};
+        merged = items;
+        const obj10 = { rowType: null, changeType: null, roleStyle: null, text: null };
         merged = forceRender;
-        obj10.rowType = forceRender.UNREAD;
+        obj10[0] = forceRender.UNREAD;
         merged = determineChangeType;
-        obj10.changeType = determineChangeType(obj);
+        obj10[1] = determineChangeType(obj);
         merged = roleStyle;
-        obj10.roleStyle = roleStyle;
+        merged = roleStyle;
+        obj10[2] = roleStyle;
         merged = outer1_0;
         merged = outer1_2;
         const intl5 = outer1_0(outer1_2[8]).intl;
-        obj10.text = intl5.string(outer1_0(outer1_2[8]).t.q7hm3m).toUpperCase();
+        merged = outer1_0;
+        merged = outer1_2;
+        obj10[3] = intl5.string(outer1_0(outer1_2[8]).t.q7hm3m).toUpperCase();
         merged = items.push(obj10);
-        const str9 = intl5.string(outer1_0(outer1_2[8]).t.q7hm3m);
+        const str2 = intl5.string(outer1_0(outer1_2[8]).t.q7hm3m);
       }
-      if (tmp11) {
+      if (tmp17) {
         merged = closure_11;
-        tmp11 = !closure_11;
+        merged = closure_11;
+        tmp17 = !closure_11;
       }
-      if (tmp11) {
-        let obj11 = {};
+      if (tmp17) {
+        merged = items;
+        let obj11 = { rowType: null, changeType: null, roleStyle: null, isLoading: null, text: null };
         merged = outer1_7;
-        obj11.rowType = outer1_7.LOAD_BEFORE;
+        obj11[0] = outer1_7.LOAD_BEFORE;
         merged = forceRender;
         merged = outer1_6;
-        obj11.changeType = forceRender ? merged.UPDATE : merged.NOOP;
+        obj11[1] = forceRender ? merged.UPDATE : merged.NOOP;
         merged = roleStyle;
-        obj11.roleStyle = roleStyle;
+        merged = roleStyle;
+        obj11[2] = roleStyle;
         merged = obj;
-        obj11.isLoading = obj.loadingMore;
+        obj11[3] = obj.loadingMore;
         merged = outer1_0;
         merged = outer1_2;
         merged = items;
         const intl6 = outer1_0(outer1_2[8]).intl;
-        obj11.text = intl6.string(outer1_0(outer1_2[8]).t.XBlaiC);
+        merged = outer1_0;
+        merged = outer1_2;
+        obj11[4] = intl6.string(outer1_0(outer1_2[8]).t.XBlaiC);
         obj11 = items.push(obj11);
       }
     } else {
-      let obj12 = { rowType: outer1_7.LOAD_AFTER };
+      obj12 = { rowType: null, changeType: null, roleStyle: null, isLoading: null, text: null };
+      obj12[0] = outer1_7.LOAD_AFTER;
       let intl = outer1_6;
-      obj12.changeType = forceRender ? intl.UPDATE : intl.NOOP;
-      obj12.roleStyle = roleStyle;
-      obj12.isLoading = obj.loadingMore;
+      obj12[1] = forceRender ? intl.UPDATE : intl.NOOP;
+      obj12[2] = roleStyle;
+      obj12[3] = obj.loadingMore;
       intl = outer1_0(outer1_2[8]).intl;
-      obj12.text = intl.string(outer1_0(outer1_2[8]).t.XBlaiC);
+      obj12[4] = intl.string(outer1_0(outer1_2[8]).t.XBlaiC);
       obj12 = items.push(obj12);
     }
   });
-  let tmp7 = 0 === items1.length && !messages.loadingMore;
-  if (tmp7) {
-    tmp7 = messages.hasMoreAfter || messages.hasMoreBefore;
-    let tmp8 = messages.hasMoreAfter || messages.hasMoreBefore;
+  let tmp12 = 0 === items1.length && !messages.loadingMore;
+  if (tmp12) {
+    tmp12 = messages.hasMoreAfter || messages.hasMoreBefore;
+    let tmp13 = messages.hasMoreAfter || messages.hasMoreBefore;
   }
-  if (!tmp7) {
+  if (!tmp12) {
     return items;
   } else {
-    arr = { rowType: messages.hasMoreBefore ? closure_7.LOAD_BEFORE : closure_7.LOAD_AFTER };
-    let tmp10 = closure_6;
-    arr.changeType = forceRender ? tmp10.UPDATE : tmp10.NOOP;
-    arr.roleStyle = roleStyle;
-    arr.isLoading = messages.loadingMore;
-    tmp10 = dependencyMap;
-    roleStyle = require(1212) /* getSystemLocale */.intl;
+    arr = { rowType: null, changeType: null, roleStyle: null, isLoading: null, text: null };
+    arr[0] = messages.hasMoreBefore ? closure_7.LOAD_BEFORE : closure_7.LOAD_AFTER;
+    arr[1] = forceRender ? closure_6.UPDATE : closure_6.NOOP;
+    arr[2] = roleStyle;
+    arr[3] = messages.loadingMore;
+    roleStyle = require(1236) /* getSystemLocale */.intl;
     messages = roleStyle.string;
-    arr.text = messages(require(1212) /* getSystemLocale */.t.XBlaiC);
+    arr[4] = messages(require(1236) /* getSystemLocale */.t.XBlaiC);
     arr = items.push(arr);
   }
 };

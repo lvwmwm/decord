@@ -1,15 +1,15 @@
-// Module ID: 12026
-// Function ID: 92774
+// Module ID: 12050
+// Function ID: 12051
 // Name: UserProfileEditNoteModal
-// Dependencies: [31, 33, 4372, 5552, 478, 1212, 4161, 5121, 12027, 2]
+// Dependencies: [19, 21, 4395, 5570, 501, 1236, 4185, 5143, 12051, 2]
 // Exports: default
 
-// Module 12026 (UserProfileEditNoteModal)
-import "result";
+// Module 12050 (UserProfileEditNoteModal)
+import "noop";
 import { jsx } from "jsxProd";
 
 const require = arg1;
-const result = require("module_4372").fileFinishedImporting("modules/user_profile/native/UserProfileEditNoteModal.tsx");
+const result = require("module_4395").fileFinishedImporting("modules/user_profile/native/UserProfileEditNoteModal.tsx");
 
 export default function UserProfileEditNoteModal(arg0) {
   let dependencyMap;
@@ -19,36 +19,34 @@ export default function UserProfileEditNoteModal(arg0) {
   function handleClose() {
     let arr = outer1_1(outer1_2[2]);
     arr = arr.pop();
-    if (null != callback) {
-      callback();
+    if (dependencyMap != null) {
+      dependencyMap();
     }
   }
-  let obj = { initialRouteName: "root" };
-  let obj1 = require(478) /* isWindows */;
-  obj.headerStatusBarHeight = 12;
-  let tmp2;
-  if (!obj3.isAndroid()) {
+  let obj = require(501) /* PlatformTypes */;
+  obj = { initialRouteName: "root", headerStatusBarHeight: num, headerStyle: null, screens: null };
+  let tmp2Result = tmp2(501);
+  obj = undefined;
+  if (!tmp2Result.isAndroid()) {
     obj = { height: 56 };
-    tmp2 = obj;
   }
-  obj.headerStyle = tmp2;
-  obj = {};
-  obj1 = {};
-  let intl = require(1212) /* getSystemLocale */.intl;
-  obj1.title = intl.string(require(1212) /* getSystemLocale */.t.sHHsOM);
-  obj1.headerTitle = function headerTitle() {
-    const obj = { variant: "redesign/heading-18/bold", accessibilityRole: "header" };
-    const intl = outer1_0(outer1_2[5]).intl;
-    obj.children = intl.string(outer1_0(outer1_2[5]).t.sHHsOM);
-    return handleClose(outer1_0(outer1_2[6]).Text, obj);
+  obj[2] = obj;
+  const obj1 = { root: null };
+  const obj2 = { title: null, headerTitle: null, headerLeft: null, render: null };
+  let intl = tmp2(1236).intl;
+  obj2[0] = intl.string(require(1236) /* getSystemLocale */.t.sHHsOM);
+  obj2[1] = function headerTitle() {
+    const obj = { variant: "redesign/heading-18/bold", accessibilityRole: "header", children: null };
+    const intl = callback(1236).intl;
+    obj[2] = intl.string(callback(1236).t.sHHsOM);
+    return handleClose(callback(4185).Text, obj);
   };
-  obj3 = require(478) /* isWindows */;
-  const tmp = handleClose;
-  obj1.headerLeft = require(5121) /* HeaderBackImage */.getHeaderCloseButton(handleClose);
-  obj1.render = function render() {
+  tmp2Result = tmp2(5143);
+  obj2[2] = tmp2Result.getHeaderCloseButton(handleClose);
+  obj2[3] = function render() {
     return handleClose(outer1_0(outer1_2[8]).default, { userId: closure_0, onSave: closure_1, onClose: handleClose });
   };
-  obj.root = obj1;
-  obj.screens = obj;
-  return tmp(require(5552) /* NavigationStack */.Navigator, obj);
+  obj1[0] = obj2;
+  obj[3] = obj1;
+  return handleClose(require(5570) /* NavigationStack */.Navigator, obj);
 };

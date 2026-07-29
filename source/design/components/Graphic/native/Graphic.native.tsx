@@ -1,19 +1,19 @@
-// Module ID: 6637
-// Function ID: 58520
+// Module ID: 6658
+// Function ID: 6659
 // Name: ImageGraphic
-// Dependencies: [31, 27, 33, 4165, 5119, 3877, 3975, 2]
+// Dependencies: [19, 17, 21, 4189, 5141, 3901, 3999, 2]
 // Exports: Graphic
 
-// Module 6637 (ImageGraphic)
-import result from "result";
+// Module 6658 (ImageGraphic)
+import noop from "noop";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
 const require = arg1;
 function ImageGraphic(source) {
   const tmp = callback();
-  return jsx(importDefault(5119), { source: source.src, style: callback().image, resizeMode: "contain", accessibilityElementsHidden: true });
+  return jsx(importDefault(5141), { source: source.src, style: callback().image, resizeMode: "contain", accessibilityElementsHidden: true });
 }
 function RiveGraphic(riveProps) {
   riveProps = riveProps.riveProps;
@@ -21,15 +21,15 @@ function RiveGraphic(riveProps) {
     riveProps = {};
   }
   const tmp = callback();
-  let obj = { style: tmp.image };
+  let obj = { style: tmp.image, children: null };
   obj = {};
   const merged = Object.assign(riveProps);
-  obj["style"] = tmp.image;
-  obj.children = jsx(riveProps.rive, {});
+  obj.style = tmp.image;
+  obj[1] = jsx(riveProps.rive, {});
   return <View />;
 }
 let closure_6 = { "21/9": 2.3333333333333335, "16/9": 1.7777777777777777, "6/4": 1.5, "2/1": 2, "1/1": 1 };
-let closure_7 = _createForOfIteratorHelperLoose.createStyles({ container: { width: "100%", justifyContent: "center", alignItems: "center", overflow: "hidden" }, image: { width: "100%", height: "100%" } });
+let closure_7 = createCacheKey.createStyles({ container: { width: "100%", justifyContent: "center", alignItems: "center", overflow: "hidden" }, image: { width: "100%", height: "100%" } });
 const result = require("jsxProd").fileFinishedImporting("design/components/Graphic/native/Graphic.native.tsx");
 
 export const Graphic = function Graphic(aspectRatio) {
@@ -37,27 +37,24 @@ export const Graphic = function Graphic(aspectRatio) {
   if (str === undefined) {
     str = "16/9";
   }
-  let obj = Object.create(null);
-  obj.aspectRatio = 0;
-  obj.style = 0;
-  let merged = Object.assign(aspectRatio, obj);
+  let merged = Object.assign(aspectRatio, Object.create(null));
   const items = [merged];
-  obj = {
+  let obj = {
     style: items1,
     children: React.useMemo(() => {
       let obj = merged(outer1_2[5]);
       if (obj.isImage(merged)) {
         obj = {};
-        merged = Object.assign(merged);
+        merged = Object.assign(tmp3);
         let tmp4 = outer1_5(outer1_8, obj);
       } else {
         tmp4 = null;
-        if (obj2.isRive(merged)) {
+        if (tmpResult.isRive(tmp3)) {
           obj = {};
-          const merged1 = Object.assign(merged);
+          const merged1 = Object.assign(tmp3);
           tmp4 = outer1_5(outer1_9, obj);
         }
-        obj2 = merged(outer1_2[6]);
+        tmpResult = merged(outer1_2[6]);
       }
       return tmp4;
     }, items)

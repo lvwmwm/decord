@@ -1,107 +1,101 @@
-// Module ID: 8943
-// Function ID: 70606
+// Module ID: 8967
+// Function ID: 8968
 // Name: CloseButton
-// Dependencies: [31, 8944, 33, 6731, 7676, 8942, 1212, 8945, 8915, 8947, 8949, 8952, 8954, 8914, 8958, 5552, 2]
+// Dependencies: [19, 8968, 21, 6752, 7699, 8966, 1236, 8969, 8939, 8971, 8973, 8976, 8978, 8938, 8982, 5570, 2]
 // Exports: default
 
-// Module 8943 (CloseButton)
-import result from "result";
+// Module 8967 (CloseButton)
+import noop from "noop";
 import { PlayStationLinkModalScenes as closure_4 } from "PlayStationLinkModalScenes";
 import { jsx } from "jsxProd";
 
 const require = arg1;
 function CloseButton() {
-  const obj = {
-    source: importDefault(7676),
-    onPress() {
-      return outer1_1(outer1_2[5]).hideModal();
-    }
+  const obj = { source: null, onPress: null, accessibilityLabel: null };
+  obj[0] = importDefault(7699);
+  obj[1] = function onPress() {
+    return callback(table[5]).hideModal();
   };
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj.accessibilityLabel = intl.string(require(1212) /* getSystemLocale */.t.cpT0Cq);
-  return jsx(require(6731) /* HeaderActionButton */.HeaderActionButton, {
-    source: importDefault(7676),
-    onPress() {
-      return outer1_1(outer1_2[5]).hideModal();
-    }
-  });
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj[2] = intl.string(require(1236) /* getSystemLocale */.t.cpT0Cq);
+  return jsx(require(6752) /* HeaderActionButton */.HeaderActionButton, { source: null, onPress: null, accessibilityLabel: null });
 }
 const result = require("jsxProd").fileFinishedImporting("modules/user_settings/connections/native/two_way_link/playstation/PlayStationLinkModal.tsx");
 
 export default function PlayStationLinkModal(platformType) {
   platformType = platformType.platformType;
-  let obj = platformType(8914);
-  const twoWayLinkStyles = obj.useTwoWayLinkStyles();
+  let twoWayLinkStyles;
+  let obj = platformType(8938);
+  twoWayLinkStyles = obj.useTwoWayLinkStyles();
   const items = [platformType, twoWayLinkStyles];
-  const memo = React.useMemo(() => (function getScreens(platformType, twoWayLinkStyles) {
-    let closure_0 = platformType;
+  const memo = React.useMemo(() => {
     function onClose() {
-      return twoWayLinkStyles(outer3_2[5]).hideModal();
+      return onClose(8966).hideModal();
     }
     function blank() {
       return null;
     }
     let obj = {
       headerLeft: blank,
-      headerRight: outer2_6,
+      headerRight: outer1_6,
       headerTitle: blank,
-      headerStyle: twoWayLinkStyles.navHeader,
+      headerStyle: onClose.navHeader,
       render() {
-        return outer3_5(platformType(outer3_2[7]).PlayStationLinkLanding, { platformType: closure_0 });
+        return outer1_5(callback(outer1_2[7]).PlayStationLinkLanding, { platformType: callback });
       }
     };
     obj = {
       headerLeft: blank,
-      headerRight: outer2_6,
-      headerStyle: twoWayLinkStyles.navHeader,
+      headerRight: outer1_6,
+      headerStyle: onClose.navHeader,
       headerTitle() {
-        return outer3_5(platformType(outer3_2[8]).TwoWayLinkStepHeader, { idx: 1, total: 2 });
+        return callback2(callback(8939).TwoWayLinkStepHeader, { idx: 1, total: 2 });
       },
       render() {
-        return outer3_5(platformType(outer3_2[9]).PlayStationLinkPreConnect, { platformType: closure_0 });
+        return outer1_5(callback(outer1_2[9]).PlayStationLinkPreConnect, { platformType: callback });
       }
     };
     obj = {
       headerLeft: blank,
-      headerRight: outer2_6,
-      headerStyle: twoWayLinkStyles.navHeader,
+      headerRight: outer1_6,
+      headerStyle: onClose.navHeader,
       headerTitle() {
-        return outer3_5(platformType(outer3_2[8]).TwoWayLinkStepHeader, { idx: 2, total: 2 });
+        return callback2(callback(8939).TwoWayLinkStepHeader, { idx: 2, total: 2 });
       },
       render(arg0) {
         let callbackCode;
         let callbackState;
         ({ callbackCode, callbackState } = arg0);
-        return outer3_5(platformType(outer3_2[10]).PlayStationLinkDiscordConsent, { platformType: closure_0, callbackCode, callbackState });
+        return outer1_5(callback(outer1_2[10]).PlayStationLinkDiscordConsent, { platformType: callback, callbackCode, callbackState });
       }
     };
     return {
-      [outer2_4.LANDING]: obj,
-      [outer2_4.PRE_CONNECT]: obj,
-      [outer2_4.DISCORD_CONSENT]: obj,
-      [outer2_4.SUCCESS]: {
+      [outer1_4.LANDING]: obj,
+      [outer1_4.PRE_CONNECT]: obj,
+      [outer1_4.DISCORD_CONSENT]: obj,
+      [outer1_4.SUCCESS]: {
         headerLeft: blank,
-        headerRight: outer2_6,
+        headerRight: outer1_6,
         headerTitle: blank,
-        headerStyle: twoWayLinkStyles.navHeader,
+        headerStyle: onClose.navHeader,
         render() {
-          return outer3_5(platformType(outer3_2[11]).PlayStationLinkSuccess, { onClose });
+          return outer1_5(callback(outer1_2[11]).PlayStationLinkSuccess, { onClose });
         }
       },
-      [outer2_4.ERROR]: {
+      [outer1_4.ERROR]: {
         headerLeft: blank,
-        headerRight: outer2_6,
+        headerRight: outer1_6,
         headerTitle: blank,
-        headerStyle: twoWayLinkStyles.navHeader,
+        headerStyle: onClose.navHeader,
         render(errorCode) {
-          return outer3_5(platformType(outer3_2[12]).PlayStationLinkError, { onClose, errorCode: errorCode.errorCode });
+          return outer1_5(callback(outer1_2[12]).PlayStationLinkError, { onClose, errorCode: errorCode.errorCode });
         }
       }
     };
-  })(platformType, twoWayLinkStyles), items);
-  const accountLinkStepTracking = platformType(8958).useAccountLinkStepTracking(platformType, platformType.locationStack);
-  obj = { onStateChange: accountLinkStepTracking, screens: memo, initialRouteName: constants.LANDING };
-  const intl = platformType(1212).intl;
-  obj.headerBackTitle = intl.string(platformType(1212).t["13/7kX"]);
-  return jsx(platformType(5552).Navigator, { onStateChange: accountLinkStepTracking, screens: memo, initialRouteName: constants.LANDING });
+  }, items);
+  const accountLinkStepTracking = platformType(8982).useAccountLinkStepTracking(platformType, platformType.locationStack);
+  obj = { onStateChange: accountLinkStepTracking, screens: memo, initialRouteName: constants.LANDING, headerBackTitle: null };
+  const intl = platformType(1236).intl;
+  obj[3] = intl.string(platformType(1236).t["13/7kX"]);
+  return jsx(platformType(5570).Navigator, { onStateChange: accountLinkStepTracking, screens: memo, initialRouteName: constants.LANDING, headerBackTitle: null });
 };

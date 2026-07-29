@@ -1,50 +1,50 @@
-// Module ID: 10459
-// Function ID: 80667
-// Dependencies: [5, 1348, 653, 4158, 686, 507, 5948, 5695, 4359, 4175, 2]
+// Module ID: 10483
+// Function ID: 10484
+// Dependencies: [5, 1372, 676, 4182, 709, 530, 5967, 5713, 4384, 4199, 2]
 
-// Module 10459
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_4 from "_isNativeReflectConstruct";
+// Module 10483
+import sendRequest from "sendRequest";
+import ensureGuildLoaded from "ensureGuildLoaded";
 import ME from "ME";
 import { MessageSendLocation } from "MESSAGE_GROUP_SPACING";
 
-let closure_5;
+let c5;
 let closure_6;
-let closure_7;
-let closure_8;
+let error;
+let metroImportAll;
 const require = arg1;
-({ Endpoints: closure_5, ActivityTypes: closure_6, AnalyticEvents: closure_7, LoggingInviteTypes: closure_8 } = ME);
+({ Endpoints: c5, ActivityTypes: closure_6, AnalyticEvents: error, LoggingInviteTypes: metroImportAll } = ME);
 const result = require("ME").fileFinishedImporting("actions/ActivitiesActionCreators.tsx");
 
 export default {
-  updateActivity(applicationId) {
-    applicationId = applicationId.applicationId;
-    const distributor = applicationId.distributor;
-    let token = applicationId.token;
+  updateActivity(share_activity) {
+    const applicationId = share_activity.applicationId;
+    const distributor = share_activity.distributor;
+    let token = share_activity.token;
     if (token === undefined) {
       token = null;
     }
-    let num = applicationId.duration;
+    let num = share_activity.duration;
     if (num === undefined) {
       num = 0;
     }
-    let flag = applicationId.closed;
+    let flag = share_activity.closed;
     if (flag === undefined) {
       flag = false;
     }
-    let exePath = applicationId.exePath;
+    let exePath = share_activity.exePath;
     if (exePath === undefined) {
       exePath = null;
     }
-    let voiceChannelId = applicationId.voiceChannelId;
+    let voiceChannelId = share_activity.voiceChannelId;
     if (voiceChannelId === undefined) {
       voiceChannelId = null;
     }
-    let sessionId = applicationId.sessionId;
+    let sessionId = share_activity.sessionId;
     if (sessionId === undefined) {
       sessionId = null;
     }
-    let mediaSessionId = applicationId.mediaSessionId;
+    let mediaSessionId = share_activity.mediaSessionId;
     if (mediaSessionId === undefined) {
       mediaSessionId = null;
     }
@@ -55,9 +55,7 @@ export default {
       return obj.dispatch(obj);
     });
     const HTTP = applicationId(num[5]).HTTP;
-    obj = { url: constants.ACTIVITIES, body: null, retries: 1, oldFormErrors: true, rejectWithError: true };
-    obj = { application_id: applicationId, token, duration: num, share_activity: applicationId.shareActivity, distributor, closed: flag, exePath, voice_channel_id: voiceChannelId, session_id: sessionId, media_session_id: mediaSessionId };
-    obj.body = obj;
+    obj = { url: constants.ACTIVITIES, body: { application_id: applicationId, token, duration: num, share_activity: share_activity.shareActivity, distributor, closed: flag, exePath, voice_channel_id: voiceChannelId, session_id: sessionId, media_session_id: mediaSessionId }, retries: 1, oldFormErrors: true, rejectWithError: true };
     const postResult = HTTP.post(obj);
     HTTP.post(obj).then((body) => {
       let obj = distributor(num[4]);
@@ -76,66 +74,200 @@ export default {
     let type;
     activity = activity.activity;
     ({ content, location: importDefault } = activity);
+    let channel;
     ({ type, targetUserId } = activity);
     channel = channel.getChannel(activity.channelId);
     if (null == channel) {
       return Promise.resolve(null);
     } else {
-      let str = "";
-      if (null != content) {
-        str = content;
+      if (content == null) {
+        content = "";
       }
-      const parsed = importDefault(channel[6]).parse(channel, str);
-      let obj = importDefault(channel[7]);
-      obj = {};
-      obj = { type, activity, targetUserId };
-      obj.activityAction = obj;
-      obj.location = MessageSendLocation.ACTIVITY_SHARE;
+      const parsed = importDefault(channel[6]).parse(channel, content);
+      const tmp7Result = importDefault(channel[7]);
+      let obj = { activityAction: null, location: null };
+      obj = { type: null, activity: null, targetUserId: null };
+      obj[0] = type;
+      obj[1] = activity;
+      obj[2] = targetUserId;
+      obj[0] = obj;
+      obj[1] = MessageSendLocation.ACTIVITY_SHARE;
       const obj4 = importDefault(channel[6]);
-      return obj.sendMessage(channel.id, parsed, false, obj).then((body) => {
+      const tmp7 = importDefault;
+      const tmp8 = channel;
+      return tmp7Result.sendMessage(channel.id, parsed, false, obj).then((body) => {
         let obj = outer1_1(channel[8]);
-        obj = { location: closure_1 };
+        obj = { location: closure_1, invite_type: null, application_id: null, guild_id: null, channel_id: null, message_id: null };
         if (activity.type === outer1_6.LISTENING) {
           let APPLICATION = outer1_8.SPOTIFY;
         } else {
           APPLICATION = outer1_8.APPLICATION;
         }
-        obj.invite_type = APPLICATION;
-        obj.application_id = activity.application_id;
-        obj.guild_id = channel.getGuildId();
-        obj.channel_id = channel.id;
+        obj[1] = APPLICATION;
+        obj[2] = activity.application_id;
+        obj[3] = channel.getGuildId();
+        obj[4] = channel.id;
         let id = null;
         if (null != body) {
           id = body.body.id;
         }
-        obj.message_id = id;
+        obj[5] = id;
         obj.trackWithMetadata(outer1_7.INVITE_SENT, obj);
         return Promise.resolve(channel);
       }, (arg0) => Promise.reject(arg0));
     }
   },
   sendActivityInviteUser(userId) {
-    let _isNativeReflectConstruct;
-    let closure_4;
+    let sendRequest;
     let dependencyMap;
     let importDefault;
+    let require;
     const self = this;
-    ({ type: importDefault, activity: dependencyMap, content: _isNativeReflectConstruct, location: closure_4 } = userId);
-    const obj = importDefault(4175);
-    return importDefault(4175).ensurePrivateChannel(userId.userId).then((channelId) => self.sendActivityInvite({ channelId, type: closure_1, activity: closure_2, content: _isNativeReflectConstruct, location: closure_4 }));
+    ({ type: importDefault, activity: dependencyMap, content: sendRequest, location: require } = userId);
+    const obj = importDefault(4199);
+    return importDefault(4199).ensurePrivateChannel(userId.userId).then((channelId) => self.sendActivityInvite({ channelId, type: closure_1, activity: closure_2, content: sendRequest, location: closure_0 }));
   },
   getJoinSecret(arg0, arg1, arg2, arg3, arg4) {
     let closure_0 = arg0;
     let closure_1 = arg1;
     let closure_2 = arg2;
     const callback = arg3;
-    let closure_4 = arg4;
-    // CreateGeneratorClosureLongIndex (0x67)
-    return callback(tmp)();
+    let ensureGuildLoaded = arg4;
+    return callback(function*() {
+      if (dependencyMap === 2) {
+        dependencyMap = 3;
+        HermesBuiltin.throwTypeError();
+      } else if (tmp3 === 3) {
+        if (arg0 === 1) {
+          throw arg1;
+        } else if (arg0 === 2) {
+          let obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
+        } else {
+          return { value: "HermesInternal", done: null };
+        }
+      } else {
+        try {
+          dependencyMap = 2;
+          if (0 === c1) {
+            if (arg0 === 1) {
+              dependencyMap = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              dependencyMap = 3;
+              obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            } else {
+              let closure_0 = tmp4;
+              closure_0 = undefined;
+              const obj1 = {};
+              if (null != outer1_3) {
+                obj1.channel_id = outer1_3;
+              }
+              if (null != outer1_4) {
+                obj1.message_id = outer1_4;
+              }
+              const HTTP = outer1_0(530).HTTP;
+              const obj2 = { url: null, retries: 3, query: null, rejectWithError: null };
+              obj2[0] = outer1_5.USER_ACTIVITY_JOIN(outer1_0, c1, dependencyMap);
+              obj2[2] = obj1;
+              let obj4 = outer1_0(530);
+              obj2[3] = obj4.rejectWithMigratedError();
+              c1 = 1;
+              dependencyMap = 1;
+              const obj3 = { value: null, done: false };
+              obj3[0] = HTTP.get(obj2);
+              return obj3;
+            }
+          } else if (arg0 === 1) {
+            dependencyMap = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            dependencyMap = 3;
+            obj4 = { value: null, done: true };
+            obj4[0] = arg1;
+            return obj4;
+          } else {
+            closure_0 = arg1;
+            obj = { secret: null, joinUrl: null };
+            obj[0] = closure_0.body.secret;
+            obj[1] = closure_0.body.join_url;
+            dependencyMap = 3;
+            const obj5 = { value: null, done: true };
+            obj5[0] = obj;
+            return obj5;
+          }
+        } catch (tmp14) {
+          dependencyMap = tmp;
+          throw tmp14;
+        }
+      }
+    })();
   },
   subscribeActivities(items) {
     let closure_0 = items;
-    // CreateGeneratorClosureLongIndex (0x67)
-    return callback(tmp)();
+    return callback(function*() {
+      if (v0 === 2) {
+        v0 = 3;
+        HermesBuiltin.throwTypeError();
+      } else if (tmp3 === 3) {
+        if (arg0 === 1) {
+          throw arg1;
+        } else if (arg0 === 2) {
+          let obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
+        } else {
+          return { value: "HermesInternal", done: null };
+        }
+      } else {
+        try {
+          v0 = 2;
+          if (0 === c1) {
+            if (arg0 === 1) {
+              v0 = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              v0 = 3;
+              obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            } else {
+              const mapped = v0.map((userId) => ({ user_id: userId.userId, application_id: userId.applicationId, party_id: userId.partyId, message_id: userId.messageId, channel_id: userId.channelId }));
+              const HTTP = v0(outer1_2[5]).HTTP;
+              const obj1 = { url: null, body: null, retries: 1, rejectWithError: null };
+              obj1[0] = outer1_5.USER_ACTIVITY_SUBSCRIBE;
+              const obj2 = { subscriptions: null };
+              obj2[0] = mapped;
+              obj1[1] = obj2;
+              obj1[3] = v0(outer1_2[5]).rejectWithMigratedError();
+              c1 = 1;
+              v0 = 1;
+              const obj3 = { value: null, done: false };
+              obj3[0] = HTTP.post(obj1);
+              return obj3;
+            }
+          } else if (arg0 === 1) {
+            v0 = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            v0 = 3;
+            const obj4 = { value: null, done: true };
+            obj4[0] = arg1;
+            return obj4;
+          } else {
+            v0 = 3;
+            obj = { value: null, done: true };
+            obj[0] = arg1.body;
+            return obj;
+          }
+        } catch (tmp5) {
+          v0 = tmp;
+          throw tmp5;
+        }
+      }
+    })();
   }
 };

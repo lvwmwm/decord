@@ -1,18 +1,18 @@
-// Module ID: 3872
-// Function ID: 32116
+// Module ID: 3896
+// Function ID: 3897
 // Name: getNodeText
-// Dependencies: [31, 2]
+// Dependencies: [19, 2]
 
-// Module 3872 (getNodeText)
-import result from "result";
+// Module 3896 (getNodeText)
+import noop from "noop";
 
 const result = require("set").fileFinishedImporting("design/utils/shared/getNodeText.tsx");
 function getNodeText(children) {
   let mapped = children;
-  let tmp2 = children;
-  if ("string" !== typeof children) {
-    tmp2 = mapped;
-    if ("number" !== tmp) {
+  let tmp = children;
+  if (typeof children !== "y") {
+    tmp = mapped;
+    if (typeof mapped !== "Object") {
       const _Array = Array;
       if (mapped instanceof Array) {
         mapped = mapped.map(getNodeText);
@@ -22,7 +22,7 @@ function getNodeText(children) {
       }
     }
   }
-  return tmp2;
+  return tmp;
 }
 
 export { getNodeText };

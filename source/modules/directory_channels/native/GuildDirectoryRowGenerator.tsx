@@ -1,10 +1,10 @@
-// Module ID: 11736
-// Function ID: 90905
+// Module ID: 11761
+// Function ID: 11762
 // Name: RowType
-// Dependencies: [10036, 10035, 1212, 2]
+// Dependencies: [10057, 10056, 1236, 2]
 // Exports: generateDirectoryRows
 
-// Module 11736 (RowType)
+// Module 11761 (RowType)
 import { DirectoryEntryCategories } from "DirectoryEntryTypes";
 import ArrayResult from "module_20";
 
@@ -14,8 +14,8 @@ let closure_4 = require("module_20").fill(obj);
 let result = require("getSystemLocale").fileFinishedImporting("modules/directory_channels/native/GuildDirectoryRowGenerator.tsx");
 
 export const RowType = obj;
-export const generateDirectoryRows = function generateDirectoryRows(directoryIsFetching, arr, currentCategoryId) {
-  if (directoryIsFetching) {
+export const generateDirectoryRows = function generateDirectoryRows(arg0, arr, currentCategoryId) {
+  if (arg0) {
     if (0 === arr.length) {
       return closure_4;
     }
@@ -23,33 +23,33 @@ export const generateDirectoryRows = function generateDirectoryRows(directoryIsF
   if (0 === arr.length) {
     return [];
   } else if (currentCategoryId !== DirectoryEntryCategories.ALL) {
-    const obj4 = set(10035);
-    return set(10035).rankGuildEntries(arr).map((entry) => ({ type: outer1_3.ENTRY, entry }));
+    const obj4 = set(10056);
+    return set(10056).rankGuildEntries(arr).map((entry) => ({ type: constants.ENTRY, entry }));
   } else {
     const items = [];
-    const rankByDateAddedResult = set(10035).rankByDateAdded(arr);
+    const rankByDateAddedResult = set(10056).rankByDateAdded(arr);
     const _Set = Set;
     set = new Set(rankByDateAddedResult.map((guildId) => guildId.guildId));
     let combined = items;
     if (rankByDateAddedResult.length > 0) {
-      let obj = {};
-      obj.type = obj.HEADER;
-      const intl = set(1212).intl;
-      obj.header = intl.string(set(1212).t.CbaapP);
+      let obj = { type: null, header: null };
+      obj[0] = obj.HEADER;
+      const intl = tmp12(1236).intl;
+      obj[1] = intl.string(tmp12(1236).t.CbaapP);
       items.push(obj);
-      combined = items.concat(rankByDateAddedResult.map((entry) => ({ type: outer1_3.ENTRY, entry })));
+      combined = items.concat(rankByDateAddedResult.map((entry) => ({ type: constants.ENTRY, entry })));
     }
     const found = arr.filter((guildId) => !set.has(guildId.guildId));
-    const obj5 = set(10035);
-    const result = set(10035).orderByTotalMemberCount(found);
+    const obj5 = set(10056);
+    const result = set(10056).orderByTotalMemberCount(found);
     let combined1 = combined;
     if (result.length > 0) {
-      obj = {};
-      obj.type = obj.HEADER;
-      const intl2 = set(1212).intl;
-      obj.header = intl2.string(set(1212).t.wxbhEe);
+      obj = { type: null, header: null };
+      obj[0] = obj.HEADER;
+      const intl2 = tmp12(1236).intl;
+      obj[1] = intl2.string(tmp12(1236).t.wxbhEe);
       combined.push(obj);
-      combined1 = combined.concat(result.map((entry) => ({ type: outer1_3.ENTRY, entry })));
+      combined1 = combined.concat(result.map((entry) => ({ type: constants.ENTRY, entry })));
     }
     return combined1;
   }

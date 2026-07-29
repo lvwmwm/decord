@@ -1,90 +1,163 @@
-// Module ID: 11154
-// Function ID: 86625
+// Module ID: 11178
+// Function ID: 11179
 // Name: set
-// Dependencies: [7, 6, 1348, 1358, 1357, 1359, 682, 44, 6065, 621, 566, 2]
+// Dependencies: [1372, 1382, 1381, 1383, 705, 38, 6083, 644, 589, 2]
 // Exports: useForumChannelStore, useForumChannelStoreApi
 
-// Module 11154 (set)
-import batchUpdates from "batchUpdates";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 11178 (set)
+import ensureGuildLoaded from "ensureGuildLoaded";
 import keys from "keys";
-import set from "_isNativeReflectConstruct";
+import set from "set";
 
 const require = arg1;
 let set = new Set();
 let obj = { layoutType: require("set").ForumLayout.LIST, sortOrder: require("set").ThreadSortOrder.CREATION_DATE, tagFilter: set, tagSetting: require("set").ThreadSearchTagSetting.MATCH_SOME };
-class ForumChannelStoreState {
-  constructor(arg0, arg1) {
-    self = this;
-    tmp = c3(this, ForumChannelStoreState);
-    this.set = global;
-    this.get = arg1;
-    this.channelStates = {};
-    this.setChannelState = (arg0, arg1) => {
-      const value = obj.get();
-      const channelState = obj.getChannelState(arg0);
-      obj = {};
-      const merged = Object.assign(value.channelStates);
-      obj = {};
-      const merged1 = Object.assign(channelState);
-      const merged2 = Object.assign(arg1);
-      obj[arg0] = obj;
-      self(outer1_2[6]).batchUpdates(() => {
-        obj = { channelStates: obj };
-        return obj.set(obj);
-      });
-    };
-    this.getChannelState = (channelId) => {
-      if (null == channelId) {
-        return outer1_6;
-      } else {
-        let tmp6 = self.get().channelStates[channelId];
-        if (null == tmp6) {
-          const channel = outer1_4.getChannel(channelId);
-          outer1_1(outer1_2[7])(null != channel, "[Forum Channel Store] The channel should not be missing.");
-          const obj = { layoutType: channel.getDefaultLayout(), sortOrder: channel.getDefaultSortOrder(), tagFilter: outer1_5, tagSetting: channel.getDefaultTagSetting() };
-          tmp6 = obj;
-        }
-        return tmp6;
+let closure_6 = function ForumChannelStoreState(set, get) {
+  const obj = Object.create(new.target.prototype);
+  obj.channelStates = {};
+  obj.setChannelState = function setChannelState(channelId, arg1) {
+    const value = obj.get();
+    const channelState = obj.getChannelState(channelId);
+    obj = {};
+    const merged = Object.assign(value.channelStates);
+    obj = {};
+    const merged1 = Object.assign(channelState);
+    const merged2 = Object.assign(arg1);
+    obj[channelId] = obj;
+    obj(outer1_2[4]).batchUpdates(() => {
+      obj = { channelStates: obj };
+      return obj.set(obj);
+    });
+  };
+  obj.getChannelState = function getChannelState(channelId) {
+    if (null == channelId) {
+      return outer1_5;
+    } else {
+      let tmp6 = obj.get().channelStates[channelId];
+      if (null == tmp6) {
+        const channel = outer1_3.getChannel(channelId);
+        outer1_1(outer1_2[5])(null != channel, "[Forum Channel Store] The channel should not be missing.");
+        obj = { layoutType: null, sortOrder: null, tagFilter: null, tagSetting: null };
+        obj[0] = channel.getDefaultLayout();
+        obj[1] = channel.getDefaultSortOrder();
+        obj[2] = outer1_4;
+        obj[3] = channel.getDefaultTagSetting();
+        tmp6 = obj;
       }
-    };
-    this.toggleTagFilter = (arg0, arg1) => {
-      const set = new Set(self.getChannelState(arg0).tagFilter);
-      if (set.has(arg1)) {
-        set.delete(arg1);
-      } else {
-        set.add(arg1);
-      }
-      self.setTagFilter(arg0, set);
-    };
-    this.setTagFilter = (arg0, tagFilter) => {
-      self.setChannelState(arg0, { tagFilter });
-      outer1_1(outer1_2[8]).setFilterTagIds(tagFilter);
-    };
-    this.setSortOrder = (arg0, sortOrder) => {
-      self.setChannelState(arg0, { sortOrder });
-      outer1_1(outer1_2[8]).setSortOrder(sortOrder);
-    };
-    this.setLayoutType = (arg0, layoutType) => {
-      self.setChannelState(arg0, { layoutType });
-      outer1_1(outer1_2[8]).setLayout(layoutType);
-    };
-    this.setTagSetting = (arg0, tagSetting) => {
-      self.setChannelState(arg0, { tagSetting });
-      outer1_1(outer1_2[8]).setTagSetting(tagSetting);
-    };
-    return;
+      return tmp6;
+    }
+  };
+  obj.toggleTagFilter = function toggleTagFilter(channelId) {
+    const set = new Set(obj.getChannelState(channelId).tagFilter);
+    if (set.has(arg1)) {
+      set.delete(arg1);
+    } else {
+      set.add(arg1);
+    }
+    obj.setTagFilter(channelId, set);
+  };
+  obj.setTagFilter = function setTagFilter(id, first) {
+    const obj = { tagFilter: first };
+    obj.setChannelState(id, obj);
+    outer1_1(outer1_2[6]).setFilterTagIds(first);
+  };
+  obj.setSortOrder = function setSortOrder(channelId, sortOrder) {
+    const obj = { sortOrder };
+    obj.setChannelState(channelId, obj);
+    outer1_1(outer1_2[6]).setSortOrder(sortOrder);
+  };
+  obj.setLayoutType = function setLayoutType(channelId, layoutType) {
+    const obj = { layoutType };
+    obj.setChannelState(channelId, obj);
+    outer1_1(outer1_2[6]).setLayout(layoutType);
+  };
+  obj.setTagSetting = function setTagSetting(channelId, tagSetting) {
+    const obj = { tagSetting };
+    obj.setChannelState(channelId, obj);
+    outer1_1(outer1_2[6]).setTagSetting(tagSetting);
+  };
+  obj.set = set;
+  obj.get = get;
+  return obj;
+}.prototype;
+let closure_7 = keys.create((set, get) => {
+  if (typeof closure_6 !== "find") {
+    HermesBuiltin.throwTypeError();
   }
-}
-let closure_7 = require("invariant")(ForumChannelStoreState);
-let closure_8 = keys.create((arg0, arg1) => new closure_7(arg0, arg1));
+  let obj = Object.create(closure_6.prototype);
+  obj.channelStates = {};
+  obj.setChannelState = function setChannelState(channelId, arg1) {
+    const value = obj.get();
+    const channelState = obj.getChannelState(channelId);
+    obj = {};
+    const merged = Object.assign(value.channelStates);
+    obj = {};
+    const merged1 = Object.assign(channelState);
+    const merged2 = Object.assign(arg1);
+    obj[channelId] = obj;
+    obj(outer1_2[4]).batchUpdates(() => {
+      obj = { channelStates: obj };
+      return obj.set(obj);
+    });
+  };
+  obj.getChannelState = function getChannelState(channelId) {
+    if (null == channelId) {
+      return outer1_5;
+    } else {
+      let tmp6 = obj.get().channelStates[channelId];
+      if (null == tmp6) {
+        const channel = outer1_3.getChannel(channelId);
+        outer1_1(outer1_2[5])(null != channel, "[Forum Channel Store] The channel should not be missing.");
+        obj = { layoutType: null, sortOrder: null, tagFilter: null, tagSetting: null };
+        obj[0] = channel.getDefaultLayout();
+        obj[1] = channel.getDefaultSortOrder();
+        obj[2] = outer1_4;
+        obj[3] = channel.getDefaultTagSetting();
+        tmp6 = obj;
+      }
+      return tmp6;
+    }
+  };
+  obj.toggleTagFilter = function toggleTagFilter(channelId) {
+    const set = new Set(obj.getChannelState(channelId).tagFilter);
+    if (set.has(arg1)) {
+      set.delete(arg1);
+    } else {
+      set.add(arg1);
+    }
+    obj.setTagFilter(channelId, set);
+  };
+  obj.setTagFilter = function setTagFilter(id, first) {
+    const obj = { tagFilter: first };
+    obj.setChannelState(id, obj);
+    outer1_1(outer1_2[6]).setFilterTagIds(first);
+  };
+  obj.setSortOrder = function setSortOrder(channelId, sortOrder) {
+    const obj = { sortOrder };
+    obj.setChannelState(channelId, obj);
+    outer1_1(outer1_2[6]).setSortOrder(sortOrder);
+  };
+  obj.setLayoutType = function setLayoutType(channelId, layoutType) {
+    const obj = { layoutType };
+    obj.setChannelState(channelId, obj);
+    outer1_1(outer1_2[6]).setLayout(layoutType);
+  };
+  obj.setTagSetting = function setTagSetting(channelId, tagSetting) {
+    const obj = { tagSetting };
+    obj.setChannelState(channelId, obj);
+    outer1_1(outer1_2[6]).setTagSetting(tagSetting);
+  };
+  obj.set = set;
+  obj.get = get;
+  return obj;
+});
 const result = set.fileFinishedImporting("modules/forums/ForumChannelStore.tsx");
 
 export const useForumChannelStore = function useForumChannelStore(parent_id) {
   const _require = parent_id;
-  const obj = callback2();
-  const items = [_isNativeReflectConstruct];
-  if (null == obj2.useStateFromStores(items, () => outer1_4.getChannel(closure_0))) {
+  const obj = callback();
+  const items = [ensureGuildLoaded];
+  if (null == obj2.useStateFromStores(items, () => outer1_3.getChannel(closure_0))) {
     let channelState = obj;
   } else {
     channelState = obj.getChannelState(parent_id);
@@ -92,5 +165,5 @@ export const useForumChannelStore = function useForumChannelStore(parent_id) {
   return channelState;
 };
 export function useForumChannelStoreApi() {
-  return closure_8;
+  return closure_7;
 }

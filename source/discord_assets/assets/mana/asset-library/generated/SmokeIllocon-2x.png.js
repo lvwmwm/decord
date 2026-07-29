@@ -1,9 +1,9 @@
-// Module ID: 7473
-// Function ID: 60481
+// Module ID: 7495
+// Function ID: 7496
 // Name: metadata
 // Dependencies: [2]
 
-// Module 7473 (metadata)
+// Module 7495 (metadata)
 const result = require("set").fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/SmokeIllocon-2x.png.js");
 
 export default "https://cdn.discordapp.com/assets/content/0db748d33ab524c4cf136e330e81bf8b6e1fbec4179c747c05b1b9fdc37f626b.png";

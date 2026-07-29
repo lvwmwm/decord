@@ -1,24 +1,25 @@
-// Module ID: 5905
-// Function ID: 51971
+// Module ID: 5924
+// Function ID: 5925
 // Name: shouldRemoveSelfMention
-// Dependencies: [653, 2]
+// Dependencies: [676, 2]
 // Exports: default
 
-// Module 5905 (shouldRemoveSelfMention)
+// Module 5924 (shouldRemoveSelfMention)
 import { MessageTypesSets } from "ME";
 
 const result = require("set").fileFinishedImporting("modules/messages/shouldRemoveSelfMention.tsx");
 
 export default function shouldRemoveSelfMention(type) {
   const SELF_MENTIONABLE_SYSTEM = MessageTypesSets.SELF_MENTIONABLE_SYSTEM;
-  let tmp = !SELF_MENTIONABLE_SYSTEM.has(type.type);
-  if (tmp) {
+  const hasItem = SELF_MENTIONABLE_SYSTEM.has(type.type);
+  let tmp2 = !hasItem;
+  if (!hasItem) {
     const author = type.author;
     let id;
-    if (null != author) {
+    if (author != null) {
       id = author.id;
     }
-    tmp = id === arg1;
+    tmp2 = id === arg1;
   }
-  return tmp;
+  return tmp2;
 };

@@ -1,35 +1,33 @@
-// Module ID: 11398
-// Function ID: 88406
+// Module ID: 11422
+// Function ID: 11423
 // Name: ChatInputAccessibilityDivider
-// Dependencies: [31, 27, 33, 4563, 477, 1212, 2]
+// Dependencies: [19, 17, 21, 4586, 500, 1236, 2]
 
-// Module 11398 (ChatInputAccessibilityDivider)
+// Module 11422 (ChatInputAccessibilityDivider)
 import get_ActivityIndicator from "get ActivityIndicator";
 import { jsx } from "jsxProd";
-import importAllResult from "result";
+import importAllResult from "noop";
 
-let closure_2;
-let closure_3;
+let c3;
+let obj1;
 const require = arg1;
-({ StyleSheet: closure_2, View: closure_3 } = get_ActivityIndicator);
-const memoResult = require("result").memo(() => {
-  let obj = require(4563) /* SCREEN_READER_ENABLED_GETTER */;
-  let tmp = null;
+({ StyleSheet: obj1, View: c3 } = get_ActivityIndicator);
+const memoResult = require("noop").memo(() => {
+  let obj = require(4586) /* SCREEN_READER_ENABLED_GETTER */;
+  let tmp3 = null;
   if (obj.useIsScreenReaderEnabled()) {
-    tmp = null;
-    if (!obj2.isAndroid()) {
-      obj = { nativeID: "chat-input-accessibility-divider", accessible: true, accessibilityLabel: null, accessibilityRole: "header" };
-      const intl = require(1212) /* getSystemLocale */.intl;
-      obj.accessibilityLabel = intl.string(require(1212) /* getSystemLocale */.t["uKZtC/"]);
-      const items = [absoluteFill.absoluteFill, ];
-      obj = { height: 1 };
-      items[1] = obj;
-      obj.style = items;
-      tmp = <closure_3 height={1} />;
+    tmp3 = null;
+    if (!tmpResult.isAndroid()) {
+      obj = { nativeID: "chat-input-accessibility-divider", accessible: true, accessibilityLabel: null, accessibilityRole: "header", style: null };
+      const intl = tmp(1236).intl;
+      obj[2] = intl.string(tmp(1236).t["uKZtC/"]);
+      const items = [absoluteFill.absoluteFill, { height: 1 }];
+      obj[4] = items;
+      tmp3 = <closure_3 nativeID="chat-input-accessibility-divider" accessible accessibilityLabel={null} accessibilityRole="header" style={null} />;
     }
-    obj2 = require(477) /* set */;
+    tmpResult = tmp(500);
   }
-  return tmp;
+  return tmp3;
 });
 const result = require("jsxProd").fileFinishedImporting("modules/chat_input/native/accessories/ChatInputAccessibilityDivider.tsx");
 

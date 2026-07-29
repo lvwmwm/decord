@@ -1,11 +1,11 @@
-// Module ID: 8885
-// Function ID: 70183
+// Module ID: 8909
+// Function ID: 8910
 // Name: SecureFramesCopyIcon
-// Dependencies: [31, 33, 3865, 5525, 6661, 4113, 1212, 2]
+// Dependencies: [19, 21, 3889, 5543, 6682, 4137, 1236, 2]
 // Exports: default
 
-// Module 8885 (SecureFramesCopyIcon)
-import result from "result";
+// Module 8909 (SecureFramesCopyIcon)
+import noop from "noop";
 import { jsx } from "jsxProd";
 
 const require = arg1;
@@ -13,17 +13,19 @@ let result = require("presentAddedFriendToast").fileFinishedImporting("modules/r
 
 export default function SecureFramesCopyIcon(chunks) {
   chunks = chunks.chunks;
+  let memo;
   const items = [chunks];
-  const memo = React.useMemo(() => chunks.join(" "), items);
+  memo = React.useMemo(() => chunks.join(" "), items);
   const items1 = [memo];
   const callback = React.useCallback(() => {
     const result = chunks(memo[2]).presentCopiedToClipboard();
     const obj = chunks(memo[2]);
     chunks(memo[3]).copy(memo);
   }, items1);
-  let obj = { icon: jsx(chunks(memo[5]).CopyIcon, { size: "sm" }), variant: "secondary", onPress: callback };
+  let obj = { icon: null, variant: "secondary", onPress: null, accessibilityLabel: null, size: "sm" };
+  obj[0] = jsx(chunks(memo[5]).CopyIcon, { size: "sm" });
+  obj[2] = callback;
   const intl = chunks(memo[6]).intl;
-  obj.accessibilityLabel = intl.string(chunks(memo[6]).t.e7GWjQ);
-  obj.size = "sm";
-  return jsx(chunks(memo[4]).IconButton, { icon: jsx(chunks(memo[5]).CopyIcon, { size: "sm" }), variant: "secondary", onPress: callback });
+  obj[3] = intl.string(chunks(memo[6]).t.e7GWjQ);
+  return jsx(chunks(memo[4]).IconButton, { icon: null, variant: "secondary", onPress: null, accessibilityLabel: null, size: "sm" });
 };

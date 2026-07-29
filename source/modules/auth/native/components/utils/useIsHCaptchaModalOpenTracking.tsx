@@ -1,39 +1,41 @@
-// Module ID: 14883
-// Function ID: 113369
+// Module ID: 14909
+// Function ID: 14910
 // Name: useIsHCaptchaModalOpenTracking
-// Dependencies: [31, 14834, 14835, 14832, 4017, 4016, 2]
+// Dependencies: [19, 14860, 14861, 14858, 4041, 4040, 2]
 // Exports: useIsHCaptchaModalOpenTracking
 
-// Module 14883 (useIsHCaptchaModalOpenTracking)
-import result from "result";
+// Module 14909 (useIsHCaptchaModalOpenTracking)
+import noop from "noop";
 import { doesRegistrationHaveIdentityType as closure_3 } from "useRegistrationUIStore";
 import RegistrationTransitionActionTypes from "RegistrationTransitionActionTypes";
 
-let closure_4;
-let closure_5;
+let c4;
+let c5;
 const require = arg1;
-({ RegisterTransitionSteps: closure_4, RegistrationTransitionActionTypes: closure_5 } = RegistrationTransitionActionTypes);
+({ RegisterTransitionSteps: c4, RegistrationTransitionActionTypes: c5 } = RegistrationTransitionActionTypes);
 const result = require("RegistrationTransitionActionTypes").fileFinishedImporting("modules/auth/native/components/utils/useIsHCaptchaModalOpenTracking.tsx");
 
 export const useIsHCaptchaModalOpenTracking = function useIsHCaptchaModalOpenTracking() {
-  context = React.useContext(context(14832).TrackRegistrationContext);
+  context = React.useContext(context(14858).TrackRegistrationContext);
   const items = [context];
   const layoutEffect = React.useLayoutEffect(() => {
     const rootNavigationRef = context(outer1_1[4]).getRootNavigationRef();
     let current;
-    if (null != rootNavigationRef) {
+    if (rootNavigationRef != null) {
       current = rootNavigationRef.current;
     }
     if (null != current) {
       return rootNavigationRef.addListener("state", () => {
-        let obj = context(outer2_1[5]);
+        let obj = outer1_0(outer1_1[5]);
         let isModalOpenResult = obj.isModalOpen("hcaptcha");
         if (isModalOpenResult) {
-          isModalOpenResult = outer2_3();
+          isModalOpenResult = outer1_3();
         }
         if (isModalOpenResult) {
-          obj = { step: outer2_4.CAPTCHA, actionType: outer2_5.VIEWED };
-          outer1_0(obj);
+          obj = { step: null, actionType: null };
+          obj[0] = outer1_4.CAPTCHA;
+          obj[1] = outer1_5.VIEWED;
+          callback(obj);
         }
       });
     }

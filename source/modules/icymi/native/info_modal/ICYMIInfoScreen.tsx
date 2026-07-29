@@ -1,67 +1,130 @@
-// Module ID: 15305
-// Function ID: 116321
+// Module ID: 15338
+// Function ID: 15339
 // Name: ICYMIInfoScreen
-// Dependencies: [57, 5, 31, 27, 482, 33, 4165, 689, 5118, 1557, 4101, 1456, 8170, 15306, 4372, 9094, 9102, 1212, 5119, 15308, 15309, 15310, 15311, 4161, 8980, 11978, 4126, 4133, 15312, 1935, 4578, 2]
+// Dependencies: [32, 5, 19, 17, 505, 21, 4189, 712, 5140, 1581, 4125, 1480, 8194, 15339, 4395, 9118, 9126, 1236, 5141, 15341, 15342, 15343, 15344, 4185, 9004, 12002, 4150, 4157, 15345, 1959, 4600, 2]
 // Exports: default
 
-// Module 15305 (ICYMIInfoScreen)
+// Module 15338 (ICYMIInfoScreen)
 import _slicedToArray from "_slicedToArray";
 import closure_4 from "jsxProd";
-import set from "set";
-import get_ActivityIndicator from "showActionSheet";
+import metadata from "metadata";
+import get_ActivityIndicator from "getSystemLocale";
 import { ThemeTypes } from "sum";
-import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import jsxProd from "metadata";
+import createCacheKey from "createCacheKey";
 
-let closure_10;
-let closure_11;
+let c10;
+let c9;
 let closure_6;
-let closure_7;
-let closure_9;
+let error;
+let unpackModuleId;
 const require = arg1;
-({ View: closure_6, ScrollView: closure_7 } = get_ActivityIndicator);
-({ jsx: closure_9, jsxs: closure_10, Fragment: closure_11 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWER, position: "relative", flex: 1 };
-_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
+({ View: closure_6, ScrollView: error } = get_ActivityIndicator);
+({ jsx: c9, jsxs: c10, Fragment: unpackModuleId } = jsxProd);
+createCacheKey = { container: null, closeIcon: null, closeIconColor: null, bgImage: null, headerImg: null, flashIcon: null, subContainer: null, header: null, headerText: null, body: null, divider: null, infoRow: null, infoIcon: null, infoText: null, hint: null, footer: null };
+createCacheKey = { backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOWER, position: "relative", flex: 1 };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { position: "absolute", justifyContent: "center", left: 12, width: 24, height: require("NAV_BAR_HEIGHT").NAV_BAR_HEIGHT, zIndex: 2 };
 let obj1 = { position: "absolute", justifyContent: "center", left: 12, width: 24, height: require("NAV_BAR_HEIGHT").NAV_BAR_HEIGHT, zIndex: 2 };
-_createForOfIteratorHelperLoose.closeIcon = obj1;
-_createForOfIteratorHelperLoose.closeIconColor = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.MOBILE_TEXT_HEADING_PRIMARY };
-_createForOfIteratorHelperLoose.bgImage = { position: "absolute", top: 0, left: 0, width: "100%", aspectRatio: 1.2515923566878981, overflow: "visible" };
-_createForOfIteratorHelperLoose.headerImg = { position: "absolute", top: 16, width: 361, height: 240 };
-_createForOfIteratorHelperLoose.flashIcon = { marginBottom: 32, marginTop: 132 };
-_createForOfIteratorHelperLoose.subContainer = { flex: 1, paddingHorizontal: 16, paddingTop: 16 };
-_createForOfIteratorHelperLoose.header = { alignItems: "center", paddingHorizontal: 12 };
-_createForOfIteratorHelperLoose.headerText = { textAlign: "center", marginTop: 8 };
-let obj3 = { gap: 16, padding: 16, backgroundColor: require("_createForOfIteratorHelperLoose").colors.CARD_BACKGROUND_DEFAULT, borderRadius: require("_createForOfIteratorHelperLoose").radii.lg, marginTop: 40 };
-_createForOfIteratorHelperLoose.body = obj3;
-let obj4 = { height: 1, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BORDER_SUBTLE, marginLeft: 48 };
-_createForOfIteratorHelperLoose.divider = obj4;
-_createForOfIteratorHelperLoose.infoRow = { display: "flex", flexDirection: "row", alignItems: "center", overflow: "hidden", gap: 16 };
-let obj2 = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.MOBILE_TEXT_HEADING_PRIMARY };
-_createForOfIteratorHelperLoose.infoIcon = { padding: 8, backgroundColor: require("_createForOfIteratorHelperLoose").colors.REDESIGN_BUTTON_TERTIARY_BACKGROUND, borderRadius: require("_createForOfIteratorHelperLoose").radii.round };
-_createForOfIteratorHelperLoose.infoText = { flexShrink: 1 };
-_createForOfIteratorHelperLoose.hint = { margin: 12 };
-let obj6 = { position: "absolute", bottom: 0, left: require("_createForOfIteratorHelperLoose").space.PX_24, right: require("_createForOfIteratorHelperLoose").space.PX_24, paddingBottom: require("_createForOfIteratorHelperLoose").space.PX_8 };
-_createForOfIteratorHelperLoose.footer = obj6;
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-let obj5 = { padding: 8, backgroundColor: require("_createForOfIteratorHelperLoose").colors.REDESIGN_BUTTON_TERTIARY_BACKGROUND, borderRadius: require("_createForOfIteratorHelperLoose").radii.round };
-const result = require("result").fileFinishedImporting("modules/icymi/native/info_modal/ICYMIInfoScreen.tsx");
+createCacheKey[2] = { backgroundColor: require("Themes").colors.MOBILE_TEXT_HEADING_PRIMARY };
+createCacheKey[3] = { position: "absolute", top: 0, left: 0, width: "100%", aspectRatio: 1.2515923566878981, overflow: "visible" };
+createCacheKey[4] = { position: "absolute", top: 16, width: 361, height: 240 };
+createCacheKey[5] = { marginBottom: 32, marginTop: 132 };
+createCacheKey[6] = { flex: 1, paddingHorizontal: 16, paddingTop: 16 };
+createCacheKey[7] = { alignItems: "center", paddingHorizontal: 12 };
+createCacheKey[8] = { textAlign: "center", marginTop: 8 };
+let obj2 = { backgroundColor: require("Themes").colors.MOBILE_TEXT_HEADING_PRIMARY };
+createCacheKey[9] = { gap: 16, padding: 16, backgroundColor: require("Themes").colors.CARD_BACKGROUND_DEFAULT, borderRadius: require("Themes").radii.lg, marginTop: 40 };
+let obj3 = { gap: 16, padding: 16, backgroundColor: require("Themes").colors.CARD_BACKGROUND_DEFAULT, borderRadius: require("Themes").radii.lg, marginTop: 40 };
+createCacheKey[10] = { height: 1, backgroundColor: require("Themes").colors.BORDER_SUBTLE, marginLeft: 48 };
+createCacheKey[11] = { display: "flex", flexDirection: "row", alignItems: "center", overflow: "hidden", gap: 16 };
+let obj4 = { height: 1, backgroundColor: require("Themes").colors.BORDER_SUBTLE, marginLeft: 48 };
+createCacheKey[12] = { padding: 8, backgroundColor: require("Themes").colors.REDESIGN_BUTTON_TERTIARY_BACKGROUND, borderRadius: require("Themes").radii.round };
+createCacheKey[13] = { flexShrink: 1 };
+createCacheKey[14] = { margin: 12 };
+let obj5 = { padding: 8, backgroundColor: require("Themes").colors.REDESIGN_BUTTON_TERTIARY_BACKGROUND, borderRadius: require("Themes").radii.round };
+createCacheKey[15] = { position: "absolute", bottom: 0, left: require("Themes").space.PX_24, right: require("Themes").space.PX_24, paddingBottom: require("Themes").space.PX_8 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let obj6 = { position: "absolute", bottom: 0, left: require("Themes").space.PX_24, right: require("Themes").space.PX_24, paddingBottom: require("Themes").space.PX_8 };
+let result = require("noop").fileFinishedImporting("modules/icymi/native/info_modal/ICYMIInfoScreen.tsx");
 
 export default function ICYMIInfoScreen(extendedOnboarding) {
   let bottom;
   let top;
   extendedOnboarding = extendedOnboarding.extendedOnboarding;
+  let navigation;
   let dependencyMap;
-  const tmp = _createForOfIteratorHelperLoose();
-  ({ top, bottom } = navigation(1557)());
-  const tmp2 = navigation(1557)();
-  let obj = extendedOnboarding(1456);
+  const tmp = createCacheKey();
+  ({ top, bottom } = navigation(1581)());
+  const tmp4 = navigation(1581)();
+  let obj = extendedOnboarding(1480);
   navigation = obj.useNavigation();
-  // CreateGeneratorClosureLongIndex (0x67)
   const items = [extendedOnboarding, navigation];
   const items1 = [navigation];
-  const callback = React.useCallback(callback2(obj), items);
+  const callback = React.useCallback(callback2(function*() {
+    if (dependencyMap === 2) {
+      dependencyMap = 3;
+      HermesBuiltin.throwTypeError();
+    } else if (tmp4 === 3) {
+      if (arg0 === 1) {
+        throw arg1;
+      } else if (arg0 === 2) {
+        let obj = { value: null, done: true };
+        obj[0] = arg1;
+        return obj;
+      } else {
+        return { value: "HermesInternal", done: null };
+      }
+    } else {
+      try {
+        dependencyMap = 2;
+        if (0 === v0) {
+          if (arg0 === 1) {
+            dependencyMap = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            dependencyMap = 3;
+            obj = { value: null, done: true };
+            obj[0] = arg1;
+            return obj;
+          } else {
+            let closure_0 = tmp2;
+            if (outer1_0) {
+              const ICYMIAnalytics = outer1_0(8194).ICYMIAnalytics;
+              const result = ICYMIAnalytics.trackFeedOnboardingScreenSkipped({ location: "overview" });
+              dependencyMap(true);
+              let obj1 = outer1_0(15339);
+              v0 = 1;
+              dependencyMap = 1;
+              obj1 = { value: null, done: false };
+              obj1[0] = obj1.maybeFetchGuildDiscoveryCategories();
+              return obj1;
+            } else {
+              let arr = v0(4395);
+              arr = arr.pop();
+              dependencyMap = 3;
+            }
+          }
+        } else if (arg0 === 1) {
+          dependencyMap = 3;
+          throw arg1;
+        } else if (arg0 !== 2) {
+          const _setTimeout = setTimeout;
+          let timerId = setTimeout(() => {
+            navigation.navigate("topics_cloud");
+            const timerId = setTimeout(() => callback(false), 500);
+          }, 100);
+        }
+        dependencyMap = 3;
+        obj = { value: null, done: true };
+        obj[0] = arg1;
+        return obj;
+      } catch (tmp18) {
+        dependencyMap = tmp;
+        throw tmp18;
+      }
+    }
+  }), items);
   const layoutEffect = React.useLayoutEffect(() => {
     navigation.setOptions({
       header() {
@@ -69,139 +132,131 @@ export default function ICYMIInfoScreen(extendedOnboarding) {
       }
     });
   }, items1);
-  const tmp7 = callback(React.useState(false), 2);
-  dependencyMap = tmp7[1];
-  obj = {};
-  obj = { style: items2 };
+  const tmp10 = callback(React.useState(false), 2);
+  dependencyMap = tmp10[1];
+  obj = { style: items2, children: null };
   items2 = [{ marginTop: top }, tmp.closeIcon];
-  const obj1 = {
-    source: navigation(9102),
-    onPress() {
-      return navigation(4372).pop();
-    }
+  obj = { source: null, onPress: null, accessibilityLabel: null, color: null };
+  obj[0] = navigation(9126);
+  obj[1] = function onPress() {
+    return navigation(4395).pop();
   };
-  const intl = extendedOnboarding(1212).intl;
-  obj1.accessibilityLabel = intl.string(extendedOnboarding(1212).t.cpT0Cq);
-  obj1.color = tmp.closeIconColor.backgroundColor;
-  obj.children = callback3(extendedOnboarding(9094).HeaderIconButton, obj1);
+  const intl = extendedOnboarding(1236).intl;
+  obj[2] = intl.string(extendedOnboarding(1236).t.cpT0Cq);
+  obj[3] = tmp.closeIconColor.backgroundColor;
+  obj[1] = callback3(extendedOnboarding(9118).HeaderIconButton, obj);
   const items3 = [callback3(closure_6, obj), , ];
-  const obj2 = { style: items4 };
+  let obj1 = { style: items4, children: null };
   items4 = [tmp.container, { marginBottom: bottom }];
-  const obj3 = {};
-  const obj4 = {};
-  const tmp10 = callback3;
-  const tmp12 = closure_7;
-  const tmp3 = navigation(4101)();
-  const tmp9 = closure_11;
-  obj4.uri = navigation(15308);
-  obj3.source = obj4;
-  obj3.style = tmp.bgImage;
-  const items5 = [callback3(navigation(5119), obj3), ];
-  const obj5 = {};
+  const obj2 = { source: null, style: null };
+  const obj3 = { uri: null };
+  const tmp12 = closure_11;
+  const tmp15 = closure_7;
+  const tmp5 = navigation(4125)();
+  obj3[0] = navigation(15341);
+  obj2[0] = obj3;
+  obj2[1] = tmp.bgImage;
+  const items5 = [callback3(navigation(5141), obj2), ];
+  const obj4 = { style: null, children: null };
   const items6 = [tmp.subContainer, ];
-  const tmp13 = navigation(5119);
-  items6[1] = { marginTop: top + navigation(689).space.PX_12 };
-  obj5.style = items6;
-  const obj7 = { style: tmp.header };
-  const obj8 = {};
-  const obj9 = {};
-  const obj6 = { marginTop: top + navigation(689).space.PX_12 };
-  if (tmp3 === ThemeTypes.LIGHT) {
-    let tmp17 = navigation(15309);
+  const tmp16 = navigation(5141);
+  items6[1] = { marginTop: top + navigation(712).space.PX_12 };
+  obj4[0] = items6;
+  const obj6 = { style: tmp.header, children: null };
+  const obj5 = { marginTop: top + navigation(712).space.PX_12 };
+  if (tmp5 === ThemeTypes.LIGHT) {
+    let tmp2Result = tmp2(15342);
   } else {
-    tmp17 = navigation(15310);
+    tmp2Result = tmp2(15343);
   }
-  obj9.uri = tmp17;
-  obj8.source = obj9;
-  obj8.style = tmp.headerImg;
-  const items7 = [tmp10(navigation(5119), obj8), , , ];
-  const obj10 = {};
-  const tmp14 = navigation(5119);
-  obj10.source = navigation(15311);
-  obj10.style = tmp.flashIcon;
-  items7[1] = callback3(navigation(5119), obj10);
-  const obj11 = { variant: "heading-xl/bold", color: "mobile-text-heading-primary" };
-  const intl2 = extendedOnboarding(1212).intl;
-  obj11.children = intl2.string(extendedOnboarding(1212).t["jnXV/V"]);
-  items7[2] = callback3(extendedOnboarding(4161).Text, obj11);
-  const obj12 = { variant: "text-md/normal", color: "text-default", style: tmp.headerText };
-  const intl3 = extendedOnboarding(1212).intl;
-  obj12.children = intl3.string(extendedOnboarding(1212).t["9SjvoK"]);
-  items7[3] = callback3(extendedOnboarding(4161).Text, obj12);
-  obj7.children = items7;
-  const items8 = [callback4(closure_6, obj7), ];
-  const obj13 = {};
-  const obj14 = { style: tmp.body };
-  const obj15 = { style: tmp.infoRow };
-  const tmp21 = navigation(5119);
-  const items9 = [callback3(closure_6, { style: tmp.infoIcon, children: callback3(extendedOnboarding(8980).ServerIcon, { size: "sm", color: "interactive-text-active" }) }), ];
-  const obj17 = { variant: "text-md/medium", color: "mobile-text-heading-primary", style: tmp.infoText };
-  const intl4 = extendedOnboarding(1212).intl;
-  obj17.children = intl4.string(extendedOnboarding(1212).t.knxfqR);
-  items9[1] = callback3(extendedOnboarding(4161).Text, obj17);
-  obj15.children = items9;
-  const items10 = [callback4(closure_6, obj15), callback3(closure_6, { style: tmp.divider }), , , ];
-  const obj19 = { style: tmp.infoRow };
-  const obj16 = { style: tmp.infoIcon, children: callback3(extendedOnboarding(8980).ServerIcon, { size: "sm", color: "interactive-text-active" }) };
-  const obj18 = { style: tmp.divider };
-  const tmp22 = closure_6;
-  const items11 = [callback3(closure_6, { style: tmp.infoIcon, children: callback3(extendedOnboarding(11978).NewUserIcon, { size: "sm", color: "interactive-text-active" }) }), ];
-  const obj21 = { variant: "text-md/medium", color: "mobile-text-heading-primary", style: tmp.infoText };
-  const intl5 = extendedOnboarding(1212).intl;
-  obj21.children = intl5.string(extendedOnboarding(1212).t.BnUXZi);
-  items11[1] = callback3(extendedOnboarding(4161).Text, obj21);
-  obj19.children = items11;
-  items10[2] = callback4(closure_6, obj19);
+  const items7 = [callback3(navigation(5141), { source: { uri: tmp2Result }, style: tmp.headerImg }), , , ];
+  const obj8 = { source: null, style: null };
+  tmp2Result = tmp2(5141);
+  obj8[0] = navigation(15344);
+  obj8[1] = tmp.flashIcon;
+  items7[1] = callback3(tmp2Result, obj8);
+  const obj9 = { variant: "heading-xl/bold", color: "mobile-text-heading-primary", children: null };
+  const intl2 = tmp6(1236).intl;
+  obj9[2] = intl2.string(extendedOnboarding(1236).t["jnXV/V"]);
+  items7[2] = callback3(extendedOnboarding(4185).Text, obj9);
+  const obj10 = { variant: "text-md/normal", color: "text-default", style: tmp.headerText, children: null };
+  const intl3 = tmp6(1236).intl;
+  obj10[3] = intl3.string(extendedOnboarding(1236).t["9SjvoK"]);
+  items7[3] = callback3(extendedOnboarding(4185).Text, obj10);
+  obj6[1] = items7;
+  const items8 = [closure_10(closure_6, obj6), ];
+  const obj11 = { children: null };
+  const obj12 = { style: tmp.body, children: null };
+  const obj13 = { style: tmp.infoRow, children: null };
+  const obj7 = { source: { uri: tmp2Result }, style: tmp.headerImg };
+  const tmp17 = navigation(5141);
+  const items9 = [callback3(closure_6, { style: tmp.infoIcon, children: callback3(extendedOnboarding(9004).ServerIcon, { size: "sm", color: "interactive-text-active" }) }), ];
+  const obj15 = { variant: "text-md/medium", color: "mobile-text-heading-primary", style: tmp.infoText, children: null };
+  const intl4 = tmp6(1236).intl;
+  obj15[3] = intl4.string(extendedOnboarding(1236).t.knxfqR);
+  items9[1] = callback3(extendedOnboarding(4185).Text, obj15);
+  obj13[1] = items9;
+  const items10 = [closure_10(closure_6, obj13), callback3(closure_6, { style: tmp.divider }), , , ];
+  const obj17 = { style: tmp.infoRow, children: null };
+  const obj14 = { style: tmp.infoIcon, children: callback3(extendedOnboarding(9004).ServerIcon, { size: "sm", color: "interactive-text-active" }) };
+  const obj16 = { style: tmp.divider };
+  const items11 = [callback3(closure_6, { style: tmp.infoIcon, children: callback3(extendedOnboarding(12002).NewUserIcon, { size: "sm", color: "interactive-text-active" }) }), ];
+  const obj19 = { variant: "text-md/medium", color: "mobile-text-heading-primary", style: tmp.infoText, children: null };
+  const intl5 = tmp6(1236).intl;
+  obj19[3] = intl5.string(extendedOnboarding(1236).t.BnUXZi);
+  items11[1] = callback3(extendedOnboarding(4185).Text, obj19);
+  obj17[1] = items11;
+  items10[2] = closure_10(closure_6, obj17);
   items10[3] = callback3(closure_6, { style: tmp.divider });
-  const obj23 = { style: tmp.infoRow };
-  const obj20 = { style: tmp.infoIcon, children: callback3(extendedOnboarding(11978).NewUserIcon, { size: "sm", color: "interactive-text-active" }) };
-  const obj22 = { style: tmp.divider };
-  const items12 = [callback3(closure_6, { style: tmp.infoIcon, children: callback3(extendedOnboarding(4126).CircleCheckIcon, { size: "sm", color: "interactive-text-active" }) }), ];
-  const obj25 = { variant: "text-md/medium", color: "mobile-text-heading-primary", style: tmp.infoText };
-  const intl6 = extendedOnboarding(1212).intl;
-  obj25.children = intl6.string(extendedOnboarding(1212).t.itb1rh);
-  items12[1] = callback3(extendedOnboarding(4161).Text, obj25);
-  obj23.children = items12;
-  items10[4] = callback4(closure_6, obj23);
-  obj14.children = items10;
-  const items13 = [callback4(closure_6, obj14), ];
-  const obj26 = { variant: "text-xs/medium", color: "text-muted", style: tmp.hint };
-  const intl7 = extendedOnboarding(1212).intl;
-  obj26.children = intl7.format(extendedOnboarding(1212).t["jVS/hc"], {
+  const obj21 = { style: tmp.infoRow, children: null };
+  const obj18 = { style: tmp.infoIcon, children: callback3(extendedOnboarding(12002).NewUserIcon, { size: "sm", color: "interactive-text-active" }) };
+  const obj20 = { style: tmp.divider };
+  const items12 = [callback3(closure_6, { style: tmp.infoIcon, children: callback3(extendedOnboarding(4150).CircleCheckIcon, { size: "sm", color: "interactive-text-active" }) }), ];
+  const obj23 = { variant: "text-md/medium", color: "mobile-text-heading-primary", style: tmp.infoText, children: null };
+  const intl6 = tmp6(1236).intl;
+  obj23[3] = intl6.string(extendedOnboarding(1236).t.itb1rh);
+  items12[1] = callback3(extendedOnboarding(4185).Text, obj23);
+  obj21[1] = items12;
+  items10[4] = closure_10(closure_6, obj21);
+  obj12[1] = items10;
+  const items13 = [closure_10(closure_6, obj12), ];
+  const obj24 = { variant: "text-xs/medium", color: "text-muted", style: tmp.hint, children: null };
+  const intl7 = tmp6(1236).intl;
+  obj24[3] = intl7.format(extendedOnboarding(1236).t["jVS/hc"], {
     feedbackHook(children) {
-      const obj = {
+      return callback(extendedOnboarding(4185).Text, {
         variant: "text-xs/medium",
         color: "text-link",
         onPress() {
-          return navigation(paths[27]).openLazy(extendedOnboarding(paths[29])(paths[28], paths.paths), "ICYMIFeedbackSheet", {});
+          return callback2(paths[27]).openLazy(callback(paths[29])(paths[28], paths.paths), "ICYMIFeedbackSheet", {});
         },
         children
-      };
-      return outer1_9(extendedOnboarding(4161).Text, obj, arg1);
+      }, arg1);
     }
   });
-  items13[1] = callback3(extendedOnboarding(4161).Text, obj26);
-  obj13.children = items13;
-  items8[1] = callback4(closure_6, obj13);
-  obj5.children = items8;
-  items5[1] = callback4(closure_6, obj5);
-  obj2.children = items5;
-  items3[1] = callback4(tmp12, obj2);
-  const obj28 = { style: items14 };
+  items13[1] = callback3(extendedOnboarding(4185).Text, obj24);
+  obj11[0] = items13;
+  items8[1] = closure_10(closure_6, obj11);
+  obj4[1] = items8;
+  items5[1] = closure_10(closure_6, obj4);
+  obj1[1] = items5;
+  items3[1] = closure_10(tmp15, obj1);
+  const obj26 = { style: items14, children: null };
   items14 = [{ marginBottom: bottom }, tmp.footer];
-  const obj29 = { size: "lg", loading: tmp7[0] };
-  const intl8 = extendedOnboarding(1212).intl;
+  const obj27 = { size: "lg", loading: tmp10[0], text: null, onPress: null };
+  const intl8 = tmp6(1236).intl;
   const string = intl8.string;
-  const t = extendedOnboarding(1212).t;
+  const t = tmp6(1236).t;
   if (extendedOnboarding) {
     let stringResult = string(t.LhlgY9);
   } else {
     stringResult = string(t["+IrDzN"]);
   }
-  obj29.text = stringResult;
-  obj29.onPress = callback;
-  obj28.children = callback3(extendedOnboarding(4578).Button, obj29);
-  items3[2] = callback3(tmp22, obj28);
-  obj.children = items3;
-  return callback4(tmp9, obj);
+  const obj28 = { children: null };
+  obj27[2] = stringResult;
+  obj27[3] = callback;
+  obj26[1] = callback3(extendedOnboarding(4600).Button, obj27);
+  items3[2] = callback3(closure_6, obj26);
+  obj28[0] = items3;
+  return closure_10(tmp12, obj28);
 };

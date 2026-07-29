@@ -1,11 +1,11 @@
-// Module ID: 15028
-// Function ID: 114434
+// Module ID: 15058
+// Function ID: 15059
 // Name: findActivityWithMostParticipants
-// Dependencies: [3802, 2]
+// Dependencies: [3826, 2]
 // Exports: default, findActivityWithMostNonBlockedOrIgnoredParticipants
 
-// Module 15028 (findActivityWithMostParticipants)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 15058 (findActivityWithMostParticipants)
+import upsertRelationship from "upsertRelationship";
 
 const result = require("set").fileFinishedImporting("modules/activities/utils/findActivityWithMostParticipants.tsx");
 
@@ -25,7 +25,7 @@ export default function findActivityWithMostParticipants(arr) {
   }
 };
 export const findActivityWithMostNonBlockedOrIgnoredParticipants = function findActivityWithMostNonBlockedOrIgnoredParticipants(embeddedActivitiesForChannel) {
-  let _isNativeReflectConstruct;
+  let upsertRelationship;
   let closure_1;
   if (0 === embeddedActivitiesForChannel.length) {
     return null;
@@ -35,15 +35,15 @@ export const findActivityWithMostNonBlockedOrIgnoredParticipants = function find
     let items = [embeddedActivitiesForChannel[0], ];
     const items1 = [];
     HermesBuiltin.arraySpread(embeddedActivitiesForChannel[0].userIds, 0);
-    items[1] = items1.map((arg0) => !outer1_0.isBlockedOrIgnored(arg0)).length;
-    [_isNativeReflectConstruct, closure_1] = items;
+    items[1] = items1.map((id) => !blockedOrIgnored.isBlockedOrIgnored(id)).length;
+    [upsertRelationship, closure_1] = items;
     const item = embeddedActivitiesForChannel.forEach((userIds) => {
       const items = [...userIds.userIds];
-      const length = items.filter((arg0) => !outer2_0.isBlockedOrIgnored(arg0)).length;
+      const length = items.filter((id) => !userIds.isBlockedOrIgnored(id)).length;
       if (length > length) {
-        let _isNativeReflectConstruct = userIds;
+        let upsertRelationship = userIds;
       }
     });
-    return _isNativeReflectConstruct;
+    return upsertRelationship;
   }
 };

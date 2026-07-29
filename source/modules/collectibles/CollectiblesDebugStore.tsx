@@ -1,10 +1,10 @@
-// Module ID: 5795
-// Function ID: 50747
+// Module ID: 5813
+// Function ID: 5814
 // Name: useCollectiblesDebugStore
-// Dependencies: [621, 2]
+// Dependencies: [644, 2]
 // Exports: addDebugLog
 
-// Module 5795 (useCollectiblesDebugStore)
+// Module 5813 (useCollectiblesDebugStore)
 import keys from "keys";
 
 let obj = keys.create((arg0) => {
@@ -14,11 +14,11 @@ let obj = keys.create((arg0) => {
     addLog(arg0) {
       const callback = arg0;
       return callback((logs) => {
-        const obj = {};
+        const obj = { logs: null };
         const items = [...logs.logs];
         const date = new Date();
         items[tmp] = "[" + new Date().toISOString().split("T")[0] + "] " + closure_0;
-        obj.logs = items;
+        obj[0] = items;
         return obj;
       });
     },

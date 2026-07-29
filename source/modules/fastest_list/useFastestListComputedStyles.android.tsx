@@ -1,11 +1,11 @@
-// Module ID: 9219
-// Function ID: 72154
+// Module ID: 9243
+// Function ID: 9244
 // Name: useFastestListComputedStyles
-// Dependencies: [31, 27, 2]
+// Dependencies: [19, 17, 2]
 // Exports: default
 
-// Module 9219 (useFastestListComputedStyles)
-import result from "result";
+// Module 9243 (useFastestListComputedStyles)
+import noop from "noop";
 import { StyleSheet } from "get ActivityIndicator";
 
 const result = require("set").fileFinishedImporting("modules/fastest_list/useFastestListComputedStyles.android.tsx");
@@ -14,148 +14,146 @@ export default function useFastestListComputedStyles(style) {
   style = style.style;
   let items = [style];
   return style.useMemo(() => {
+    let obj = style;
     if (null != style) {
-      if (null != style) {
-        let obj = style;
-      } else {
+      if (obj == null) {
         obj = { flex: 1 };
       }
       const items = [obj];
+      obj = items;
     } else {
       obj = { flex: 1 };
-      const tmp2Result = tmp2(obj);
-      let marginStart;
-      if (null != tmp2Result) {
-        marginStart = tmp2Result.marginStart;
-      }
-      if (null == marginStart) {
-        let marginLeft;
-        if (null != tmp2Result) {
-          marginLeft = tmp2Result.marginLeft;
-        }
-        marginStart = marginLeft;
-      }
-      if (null == marginStart) {
-        let marginHorizontal;
-        if (null != tmp2Result) {
-          marginHorizontal = tmp2Result.marginHorizontal;
-        }
-        marginStart = marginHorizontal;
-      }
-      if (null == marginStart) {
-        let margin;
-        if (null != tmp2Result) {
-          margin = tmp2Result.margin;
-        }
-        marginStart = margin;
-      }
-      let num3 = 0;
-      if (null != marginStart) {
-        num3 = marginStart;
-      }
-      let paddingStart;
-      if (null != tmp2Result) {
-        paddingStart = tmp2Result.paddingStart;
-      }
-      if (null == paddingStart) {
-        let paddingLeft;
-        if (null != tmp2Result) {
-          paddingLeft = tmp2Result.paddingLeft;
-        }
-        paddingStart = paddingLeft;
-      }
-      if (null == paddingStart) {
-        let paddingHorizontal;
-        if (null != tmp2Result) {
-          paddingHorizontal = tmp2Result.paddingHorizontal;
-        }
-        paddingStart = paddingHorizontal;
-      }
-      if (null == paddingStart) {
-        let padding;
-        if (null != tmp2Result) {
-          padding = tmp2Result.padding;
-        }
-        paddingStart = padding;
-      }
-      let num4 = 0;
-      if (null != paddingStart) {
-        num4 = paddingStart;
-      }
-      if ("number" === typeof num3) {
-        if ("number" === typeof num4) {
-          let marginEnd;
-          if (null != tmp2Result) {
-            marginEnd = tmp2Result.marginEnd;
-          }
-          if (null == marginEnd) {
-            let marginRight;
-            if (null != tmp2Result) {
-              marginRight = tmp2Result.marginRight;
-            }
-            marginEnd = marginRight;
-          }
-          if (null == marginEnd) {
-            let marginHorizontal1;
-            if (null != tmp2Result) {
-              marginHorizontal1 = tmp2Result.marginHorizontal;
-            }
-            marginEnd = marginHorizontal1;
-          }
-          if (null == marginEnd) {
-            let margin1;
-            if (null != tmp2Result) {
-              margin1 = tmp2Result.margin;
-            }
-            marginEnd = margin1;
-          }
-          let num5 = 0;
-          if (null != marginEnd) {
-            num5 = marginEnd;
-          }
-          let paddingEnd;
-          if (null != tmp2Result) {
-            paddingEnd = tmp2Result.paddingEnd;
-          }
-          if (null == paddingEnd) {
-            let paddingRight;
-            if (null != tmp2Result) {
-              paddingRight = tmp2Result.paddingRight;
-            }
-            paddingEnd = paddingRight;
-          }
-          if (null == paddingEnd) {
-            let paddingHorizontal1;
-            if (null != tmp2Result) {
-              paddingHorizontal1 = tmp2Result.paddingHorizontal;
-            }
-            paddingEnd = paddingHorizontal1;
-          }
-          if (null == paddingEnd) {
-            let padding1;
-            if (null != tmp2Result) {
-              padding1 = tmp2Result.padding;
-            }
-            paddingEnd = padding1;
-          }
-          let num6 = 0;
-          if (null != paddingEnd) {
-            num6 = paddingEnd;
-          }
-          if ("number" === typeof num5) {
-            if ("number" === typeof num6) {
-              obj = { style: tmp2Result, marginEnd: num5 + num6, marginStart: num3 + num4 };
-              return obj;
-            }
-          }
-          const _Error = Error;
-          const error = new Error("FastestList: paddingStart and paddingEnd must be numbers.");
-          throw error;
-        }
-      }
-      const _Error2 = Error;
-      const error1 = new Error("FastestList: marginStart and marginEnd must be numbers.");
-      throw error1;
     }
+    const flattenResult = outer1_1.flatten(obj);
+    let num;
+    if (flattenResult != null) {
+      num = flattenResult.marginStart;
+    }
+    if (num == null) {
+      let marginLeft;
+      if (flattenResult != null) {
+        marginLeft = flattenResult.marginLeft;
+      }
+      num = marginLeft;
+    }
+    if (num == null) {
+      let marginHorizontal;
+      if (flattenResult != null) {
+        marginHorizontal = flattenResult.marginHorizontal;
+      }
+      num = marginHorizontal;
+    }
+    if (num == null) {
+      let margin;
+      if (flattenResult != null) {
+        margin = flattenResult.margin;
+      }
+      num = margin;
+    }
+    if (num == null) {
+      num = 0;
+    }
+    let num2;
+    if (flattenResult != null) {
+      num2 = flattenResult.paddingStart;
+    }
+    if (num2 == null) {
+      let paddingLeft;
+      if (flattenResult != null) {
+        paddingLeft = flattenResult.paddingLeft;
+      }
+      num2 = paddingLeft;
+    }
+    if (num2 == null) {
+      let paddingHorizontal;
+      if (flattenResult != null) {
+        paddingHorizontal = flattenResult.paddingHorizontal;
+      }
+      num2 = paddingHorizontal;
+    }
+    if (num2 == null) {
+      let padding;
+      if (flattenResult != null) {
+        padding = flattenResult.padding;
+      }
+      num2 = padding;
+    }
+    if (num2 == null) {
+      num2 = 0;
+    }
+    if (typeof num !== "os") {
+      if (typeof num2 !== "os") {
+        let num3;
+        if (flattenResult != null) {
+          num3 = flattenResult.marginEnd;
+        }
+        if (num3 == null) {
+          let marginRight;
+          if (flattenResult != null) {
+            marginRight = flattenResult.marginRight;
+          }
+          num3 = marginRight;
+        }
+        if (num3 == null) {
+          let marginHorizontal1;
+          if (flattenResult != null) {
+            marginHorizontal1 = flattenResult.marginHorizontal;
+          }
+          num3 = marginHorizontal1;
+        }
+        if (num3 == null) {
+          let margin1;
+          if (flattenResult != null) {
+            margin1 = flattenResult.margin;
+          }
+          num3 = margin1;
+        }
+        if (num3 == null) {
+          num3 = 0;
+        }
+        let num4;
+        if (flattenResult != null) {
+          num4 = flattenResult.paddingEnd;
+        }
+        if (num4 == null) {
+          let paddingRight;
+          if (flattenResult != null) {
+            paddingRight = flattenResult.paddingRight;
+          }
+          num4 = paddingRight;
+        }
+        if (num4 == null) {
+          let paddingHorizontal1;
+          if (flattenResult != null) {
+            paddingHorizontal1 = flattenResult.paddingHorizontal;
+          }
+          num4 = paddingHorizontal1;
+        }
+        if (num4 == null) {
+          let padding1;
+          if (flattenResult != null) {
+            padding1 = flattenResult.padding;
+          }
+          num4 = padding1;
+        }
+        if (num4 == null) {
+          num4 = 0;
+        }
+        if (typeof num3 !== "os") {
+          if (typeof num4 !== "os") {
+            obj = { style: null, marginEnd: null, marginStart: null };
+            obj[0] = flattenResult;
+            obj[1] = num3 + num4;
+            obj[2] = num + num2;
+            return obj;
+          }
+        }
+        const _Error = Error;
+        const error = new Error("FastestList: paddingStart and paddingEnd must be numbers.");
+        throw error;
+      }
+    }
+    const error1 = new Error("FastestList: marginStart and marginEnd must be numbers.");
+    throw error1;
   }, items);
 };

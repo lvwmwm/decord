@@ -1,40 +1,38 @@
 // Module ID: 231
-// Function ID: 3230
+// Function ID: 232
 // Name: Alert
-// Dependencies: [6, 7, 232]
+// Dependencies: [41, 42, 232]
 
 // Module 231 (Alert)
 import _classCallCheck from "_classCallCheck";
-import _defineProperties from "_defineProperties";
+import _createClass from "_createClass";
 
-const require = arg1;
-
-export default (() => {
-  class Alert {
-    constructor() {
-      tmp = outer1_2(this, Alert);
-      return;
-    }
+let Alert = arg1;
+class Alert {
+  constructor() {
+    tmp = outer1_2(this, Alert);
+    return;
   }
-  let obj = {
+}
+const items = [
+  {
     key: "alert",
-    value: function alert(Alert, captureScreenshotError, items) {
-      let str = Alert;
-      let str2 = captureScreenshotError;
-      let closure_0 = arg3;
-      const _default = Alert(outer1_1[2]).default;
+    value: function alert(Alert, arg1, items) {
+      Alert = arg3;
+      const _default = Alert(232).default;
       if (_default) {
-        const constants = _default.getConstants();
-        let obj = {};
-        if (!str) {
+        let str = Alert;
+        const dependencyMap = _default.getConstants();
+        if (!Alert) {
           str = "";
         }
-        obj.title = str;
-        if (!str2) {
+        let str2 = arg1;
+        let obj = { title: null, message: null, cancelable: false };
+        obj[0] = str;
+        if (!arg1) {
           str2 = "";
         }
-        obj.message = str2;
-        obj.cancelable = false;
+        obj[1] = str2;
         let cancelable = arg3;
         if (arg3) {
           cancelable = arg3.cancelable;
@@ -45,8 +43,7 @@ export default (() => {
         if (items) {
           let substr = items.slice(0, 3);
         } else {
-          obj = { text: "OK" };
-          substr = [obj];
+          substr = [{ text: "OK" }];
         }
         let arr = substr.pop();
         arr = substr.pop();
@@ -60,20 +57,20 @@ export default (() => {
         if (arr) {
           obj.buttonPositive = arr.text || "OK";
         }
-        _default.showAlert(obj, function onError(arg0) {
-          return console.warn(arg0);
-        }, function onAction(arg0, arg1) {
-          if (arg0 === closure_1.buttonClicked) {
-            if (arg1 === closure_1.buttonNeutral) {
+        _default.showAlert(obj, (arg0) => console.warn(arg0), (arg0, arg1) => {
+          if (arg0 === buttonClicked.buttonClicked) {
+            if (arg1 === tmp.buttonNeutral) {
               if (arr1.onPress) {
-                arr1.onPress();
+                obj2.onPress();
               }
-            } else if (arg1 === closure_1.buttonNegative) {
+              obj2 = arr1;
+            } else if (arg1 === tmp.buttonNegative) {
               if (arr.onPress) {
-                arr.onPress();
+                obj.onPress();
               }
+              obj = arr;
             } else {
-              let onPress = arg1 === closure_1.buttonPositive;
+              let onPress = arg1 === tmp.buttonPositive;
               if (onPress) {
                 onPress = arr.onPress;
               }
@@ -82,7 +79,7 @@ export default (() => {
               }
             }
           } else {
-            let onDismiss = arg0 === closure_1.dismissed && closure_0;
+            let onDismiss = arg0 === tmp.dismissed && closure_0;
             if (onDismiss) {
               onDismiss = closure_0.onDismiss;
             }
@@ -93,14 +90,13 @@ export default (() => {
         });
       }
     }
-  };
-  const items = [obj, ];
-  obj = {
+  },
+  {
     key: "prompt",
-    value: function prompt(arg0, arg1, arg2) {
+    value: function prompt(arg0) {
 
     }
-  };
-  items[1] = obj;
-  return callback(Alert, null, items);
-})();
+  }
+];
+
+export default _createClass(Alert, null, items);

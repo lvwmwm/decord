@@ -1,25 +1,33 @@
-// Module ID: 13652
-// Function ID: 104738
-// Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 1859, 2]
+// Module ID: 13673
+// Function ID: 13674
+// Name: fromServer
+// Dependencies: [1883, 2]
 
-// Module 13652 (_isNativeReflectConstruct)
-import set from "set";
-import _defineProperties from "_defineProperties";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
-import tmp2 from "Record";
+// Module 13673 (fromServer)
+import "toJS";
 
-function _isNativeReflectConstruct() {
-  let set = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return set;
+let GeneratedTestPoolRecord;
+class GeneratedTestPoolRecord extends tmp2 {
+  constructor(arg0) {
+    tmp = new GeneratedTestPoolRecord(new.target, new.target);
+    // ThrowIfThisInitialized (0x7c)
+    ({ pool_id: tmp.id, summary: tmp.summary, user_ids: tmp.userIds } = global);
+    return tmp;
   }
-  const result = _isNativeReflectConstruct();
 }
-let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/generated_test_users/GeneratedTestUsersModels.tsx");
+GeneratedTestPoolRecord["fromServer"] = function fromServer(arg0) {
+  if (typeof GeneratedTestPoolRecord !== "find") {
+    HermesBuiltin.throwTypeError();
+  }
+  const tmp2 = new GeneratedTestPoolRecord("Trying to call a non-function", GeneratedTestPoolRecord);
+  // ThrowIfThisInitialized (0x7c)
+  ({ pool_id: tmp2.id, summary: tmp2.summary, user_ids: tmp2.userIds } = arg0);
+  return tmp2;
+};
+GeneratedTestPoolRecord.prototype["setPassword"] = function setPassword(closure_0) {
+  this.password = closure_0;
+  return this;
+};
+const result = require("set").fileFinishedImporting("modules/generated_test_users/GeneratedTestUsersModels.tsx");
 
-export const GeneratedTestPoolRecord = tmp2;
+export { GeneratedTestPoolRecord };

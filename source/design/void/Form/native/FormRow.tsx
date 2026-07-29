@@ -1,56 +1,44 @@
-// Module ID: 5191
-// Function ID: 45065
-// Name: renderCustom
-// Dependencies: [31, 27, 33, 4165, 689, 5192, 5197, 5198, 5211, 5212, 4695, 5213, 5214, 5217, 5218, 5219, 2]
+// Module ID: 5213
+// Function ID: 5214
+// Dependencies: [19, 17, 21, 4189, 712, 5214, 5219, 5220, 5233, 5234, 4717, 5235, 5236, 5239, 5240, 5241, 2]
 
-// Module 5191 (renderCustom)
-import importAllResult from "result";
+// Module 5213
+import importAllResult from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
 let Platform;
-let closure_4;
-let closure_5;
+let c4;
+let c5;
 let closure_6;
 const require = arg1;
-function renderCustom(icon) {
-  let tmp = null;
-  if (null != icon) {
-    let tmp3 = icon;
-    if (!importAllResult.isValidElement(icon)) {
-      tmp3 = callback(icon, {});
-    }
-    tmp = tmp3;
-  }
-  return tmp;
-}
-({ Platform, View: closure_4 } = get_ActivityIndicator);
-({ jsx: closure_5, jsxs: closure_6 } = jsxProd);
-let closure_7 = _createForOfIteratorHelperLoose.createStyles(() => {
-  function getPadding(arg0) {
-    let num = arg0;
-    if (arg0 === undefined) {
-      num = 0;
-    }
-    const paddingHorizontal = 16 + num;
-    return { paddingHorizontal, paddingVertical: paddingHorizontal };
-  }
-  let obj = {};
+let c3 = importAllResult;
+({ Platform, View: c4 } = get_ActivityIndicator);
+({ jsx: c5, jsxs: closure_6 } = jsxProd);
+let closure_7 = createCacheKey.createStyles(() => {
+  let obj = { container: null, label: null, leading: null, trailing: null, disabled: null, error: null };
   obj = { flexDirection: "row", justifyContent: "flex-start", alignItems: "center" };
-  const merged = Object.assign(getPadding());
-  obj.container = obj;
-  obj.label = { flexShrink: 1, flexGrow: 1, flexBasis: "30%" };
-  obj.leading = { flexGrow: 0, marginRight: 16 };
-  obj.trailing = { marginLeft: "auto", paddingLeft: 16, textAlign: "right", flexShrink: 0 };
-  obj.disabled = { opacity: 0.5 };
-  obj = { borderColor: importDefault(689).colors.BORDER_FEEDBACK_CRITICAL, borderWidth: 2 };
-  const merged1 = Object.assign(getPadding(-2));
-  obj.error = obj;
+  obj = { paddingHorizontal: 16, paddingVertical: 16 };
+  const merged = Object.assign(obj);
+  obj[0] = obj;
+  obj[1] = { flexShrink: 1, flexGrow: 1, flexBasis: "30%" };
+  obj[2] = { flexGrow: 0, marginRight: 16 };
+  obj[3] = { marginLeft: "auto", paddingLeft: 16, textAlign: "right", flexShrink: 0 };
+  obj[4] = { opacity: 0.5 };
+  const merged1 = Object.assign({ paddingHorizontal: 14, paddingVertical: 14 });
+  obj[5] = { borderColor: importDefault(712).colors.BORDER_FEEDBACK_CRITICAL, borderWidth: 2 };
   return obj;
 });
-let obj = { Arrow: require("FormArrow"), Label: require("FormLabel"), SubLabel: require("FormSubLabel"), Radio: require("FormRadio"), Checkbox: require("FormCheckbox"), Checkmark: require("RowCheckmark"), Icon: require("FormIcon") };
-let merged = Object.assign({}, importAllResult.forwardRef((label, ref) => {
+let obj = { Arrow: null, Label: null, SubLabel: null, Radio: null, Checkbox: null, Checkmark: null, Icon: null };
+obj[0] = require("FormArrow");
+obj[1] = require("FormLabel");
+obj[2] = require("FormSubLabel");
+obj[3] = require("FormRadio");
+obj[4] = require("FormCheckbox");
+obj[5] = require("RowCheckmark");
+obj[6] = require("FormIcon");
+let merged = Object.assign({}, importAllResult.forwardRef((label) => {
   let DEPRECATED_style;
   let accessibilityActions;
   let accessibilityHint;
@@ -94,98 +82,189 @@ let merged = Object.assign({}, importAllResult.forwardRef((label, ref) => {
   if (flag4 === undefined) {
     flag4 = false;
   }
-  let callback3;
-  function renderInnerView() {
-    if ("function" !== typeof label) {
-      if (!trailing.isValidElement(label)) {
-        let obj = { numberOfLines, text: label, style: closure_5 };
-        let tmp9 = outer1_5(leading(subLabel[8]), obj);
-      }
-      if ("function" !== typeof subLabel) {
-        if (!trailing.isValidElement(subLabel)) {
-          let tmp14 = null;
-          if (null != subLabel) {
-            obj = { text: subLabel, numberOfLines };
-            tmp14 = outer1_5(leading(subLabel[9]), obj);
-          }
-        }
-        if ("function" !== typeof leading) {
-          if (!trailing.isValidElement(leading)) {
-            let tmp25 = leading;
-          }
-          if ("function" !== typeof trailing) {
-            if (!trailing.isValidElement(trailing)) {
-              let tmp31 = trailing;
-            }
-            obj = {};
-            let tmp38 = null;
-            if (null != leading) {
-              const obj1 = {};
-              const items = [_undefined.leading, closure_7];
-              obj1.style = items;
-              obj1.children = tmp25;
-              tmp38 = outer1_5(numberOfLines, obj1);
-            }
-            const items1 = [tmp38, , ];
-            const obj2 = { style: _undefined.label };
-            const items2 = [tmp9, tmp14];
-            obj2.children = items2;
-            items1[1] = outer1_6(numberOfLines, obj2);
-            let tmp47 = null;
-            if (null != trailing) {
-              const obj3 = {};
-              const items3 = [_undefined.trailing, closure_6];
-              obj3.style = items3;
-              obj3.children = tmp31;
-              tmp47 = outer1_5(numberOfLines, obj3);
-            }
-            items1[2] = tmp47;
-            obj.children = items1;
-            return outer1_6(trailing.Fragment, obj);
-          }
-          tmp31 = _undefined(trailing);
-        }
-        tmp25 = _undefined(leading);
-      }
-      tmp14 = _undefined(subLabel);
-    }
-    tmp9 = _undefined(label);
-  }
+  let c8;
   const tmp = callback2();
-  callback3 = tmp;
+  c8 = tmp;
+  let obj = trailing;
   if (trailing.useContext(label(subLabel[6]).RedesignCompatContext)) {
-    if ("function" === typeof label) {
-      let tmp15 = callback3(label);
+    if (typeof label === "find") {
+      let tmp15 = null;
+      if (null != label) {
+        let tmp16 = label;
+        if (!obj.isValidElement(label)) {
+          tmp16 = callback(label, {});
+        }
+        tmp15 = tmp16;
+      }
+      let tmp18 = tmp15;
     } else {
-      tmp15 = label;
+      tmp18 = label;
     }
-    if ("function" !== typeof subLabel) {
-      if (!trailing.isValidElement(subLabel)) {
+    if (typeof subLabel !== "find") {
+      if (!obj.isValidElement(subLabel)) {
+        let tmp19 = null;
+        if (null != subLabel) {
+          tmp19 = subLabel;
+        }
+      }
+      if (typeof leading === "find") {
+        let tmp23 = null;
+        if (null != leading) {
+          let tmp24 = leading;
+          if (!obj.isValidElement(leading)) {
+            tmp24 = callback(leading, {});
+          }
+          tmp23 = tmp24;
+        }
+        let tmp26 = tmp23;
+      } else {
+        tmp26 = leading;
+      }
+      if (typeof trailing === "find") {
+        let tmp27 = null;
+        if (null != trailing) {
+          let tmp28 = trailing;
+          if (!obj.isValidElement(trailing)) {
+            tmp28 = callback(trailing, {});
+          }
+          tmp27 = tmp28;
+        }
+        let tmp30 = tmp27;
+      } else {
+        tmp30 = trailing;
+      }
+      obj = { variant: null, start: null, end: null, label: null, subLabel: null, icon: null, trailing: null, disabled: null, accessible: null, accessibilityLabel: null, accessibilityHint: null, accessibilityRole: null, accessibilityState: null, accessibilityActions: null, onAccessibilityAction: null, onAccessibilityTap: null, labelLineClamp: null, delayLongPress: null, onPress: null, onLongPress: null };
+      obj[0] = label.variant;
+      obj[1] = start;
+      obj[2] = flag4;
+      obj[3] = tmp18;
+      obj[4] = tmp19;
+      obj[5] = tmp26;
+      obj[6] = tmp30;
+      obj[7] = flag;
+      obj[8] = flag3;
+      obj[9] = accessibilityLabel;
+      obj[10] = accessibilityHint;
+      obj[11] = accessibilityRole;
+      obj[12] = accessibilityState;
+      obj[13] = accessibilityActions;
+      obj[14] = onAccessibilityAction;
+      obj[15] = onAccessibilityTap;
+      obj[16] = numberOfLines;
+      obj[17] = delayLongPress;
+      obj[18] = onPress;
+      obj[19] = onLongPress;
+      return callback(tmp2(tmp3[7]).TableRow, obj);
+    }
+    let tmp20 = null;
+    if (null != subLabel) {
+      let tmp21 = subLabel;
+      if (!obj.isValidElement(subLabel)) {
+        tmp21 = callback(subLabel, {});
+      }
+      tmp20 = tmp21;
+    }
+    tmp19 = tmp20;
+  } else {
+    function renderInnerView() {
+      if (typeof label !== "find") {
+        if (!trailing.isValidElement(tmp)) {
+          let obj = { numberOfLines: null, text: null, style: null };
+          obj[0] = numberOfLines;
+          obj[1] = tmp;
+          obj[2] = closure_5;
+          let tmp7 = outer1_5(leading(subLabel[8]), obj);
+        }
+        if (typeof subLabel !== "find") {
+          if (!trailing.isValidElement(tmp12)) {
+            let tmp13 = null;
+            if (null != tmp12) {
+              obj = { text: null, numberOfLines: null };
+              obj[0] = tmp12;
+              obj[1] = numberOfLines;
+              tmp13 = outer1_5(leading(subLabel[9]), obj);
+            }
+          }
+          if (typeof leading === "find") {
+            let tmp23 = null;
+            if (null != tmp22) {
+              let tmp25 = tmp22;
+              if (!trailing.isValidElement(tmp22)) {
+                tmp25 = outer1_5(tmp22, {});
+              }
+              tmp23 = tmp25;
+            }
+            let tmp27 = tmp23;
+          } else {
+            tmp27 = tmp22;
+          }
+          if (typeof trailing === "find") {
+            let tmp29 = null;
+            if (null != tmp28) {
+              let tmp31 = tmp28;
+              if (!trailing.isValidElement(tmp28)) {
+                tmp31 = outer1_5(tmp28, {});
+              }
+              tmp29 = tmp31;
+            }
+            let tmp33 = tmp29;
+          } else {
+            tmp33 = tmp28;
+          }
+          let tmp37 = null;
+          if (null != leading) {
+            obj = { style: null, children: null };
+            const items = [_undefined.leading, closure_7];
+            obj[0] = items;
+            obj[1] = tmp27;
+            tmp37 = outer1_5(numberOfLines, obj);
+          }
+          const items1 = [tmp37, , ];
+          const obj1 = { style: null, children: null };
+          obj1[0] = _undefined.label;
+          const items2 = [tmp7, tmp13];
+          obj1[1] = items2;
+          items1[1] = outer1_6(numberOfLines, obj1);
+          let tmp44 = null;
+          if (null != trailing) {
+            const obj2 = { style: null, children: null };
+            const items3 = [_undefined.trailing, closure_6];
+            obj2[0] = items3;
+            obj2[1] = tmp33;
+            tmp44 = outer1_5(numberOfLines, obj2);
+          }
+          const obj3 = { children: null };
+          items1[2] = tmp44;
+          obj3[0] = items1;
+          return outer1_6(trailing.Fragment, obj3);
+        }
         let tmp18 = null;
         if (null != subLabel) {
-          tmp18 = subLabel;
+          let tmp20 = tmp12;
+          if (!trailing.isValidElement(tmp12)) {
+            tmp20 = outer1_5(tmp12, {});
+          }
+          tmp18 = tmp20;
         }
+        tmp13 = tmp18;
       }
-      if ("function" === typeof leading) {
-        let tmp21 = callback3(leading);
-      } else {
-        tmp21 = leading;
+      let tmp8 = null;
+      if (null != label) {
+        let tmp10 = tmp;
+        if (!trailing.isValidElement(tmp)) {
+          tmp10 = outer1_5(tmp, {});
+        }
+        tmp8 = tmp10;
       }
-      if ("function" === typeof trailing) {
-        let tmp24 = callback3(trailing);
-      } else {
-        tmp24 = trailing;
-      }
-      let obj = { variant: label.variant, start, end: flag4, label: tmp15, subLabel: tmp18, icon: tmp21, trailing: tmp24, disabled: flag, accessible: flag3, accessibilityLabel, accessibilityHint, accessibilityRole, accessibilityState, accessibilityActions, onAccessibilityAction, onAccessibilityTap, labelLineClamp: numberOfLines, delayLongPress, onPress, onLongPress };
-      return callback(label(subLabel[7]).TableRow, obj);
+      tmp7 = tmp8;
     }
-    tmp18 = callback3(subLabel);
-  } else {
-    obj = { disabled: flag };
+    obj = { disabled: null };
+    obj[0] = flag;
     const merged = Object.assign(accessibilityState);
     if (null == onPress) {
       if (null == onLongPress) {
-        obj = { ref };
+        let obj1 = { ref: null, style: null, accessible: null, accessibilityRole: null, accessibilityState: null, accessibilityLabel: null, accessibilityHint: null, accessibilityActions: null, onAccessibilityAction: null, onAccessibilityTap: null, children: null };
+        obj1[0] = arg1;
         let items = [tmp.container, DEPRECATED_style, style, , ];
         let error = flag2;
         if (flag2) {
@@ -197,23 +276,24 @@ let merged = Object.assign({}, importAllResult.forwardRef((label, ref) => {
           disabled = tmp.disabled;
         }
         items[4] = disabled;
-        obj.style = items;
-        obj.accessible = flag3;
-        obj.accessibilityRole = accessibilityRole;
-        obj.accessibilityState = obj;
-        obj.accessibilityLabel = accessibilityLabel;
-        obj.accessibilityHint = accessibilityHint;
-        obj.accessibilityActions = accessibilityActions;
-        obj.onAccessibilityAction = onAccessibilityAction;
-        obj.onAccessibilityTap = onAccessibilityTap;
-        obj.children = renderInnerView();
-        let tmp8Result = callback(numberOfLines, obj);
-        const tmp29 = callback;
-        const tmp30 = numberOfLines;
+        obj1[1] = items;
+        obj1[2] = flag3;
+        obj1[3] = accessibilityRole;
+        obj1[4] = obj;
+        obj1[5] = accessibilityLabel;
+        obj1[6] = accessibilityHint;
+        obj1[7] = accessibilityActions;
+        obj1[8] = onAccessibilityAction;
+        obj1[9] = onAccessibilityTap;
+        obj1[10] = renderInnerView();
+        let tmp11Result = callback(numberOfLines, obj1);
+        const tmp32 = callback;
+        let tmp33 = numberOfLines;
       }
-      return tmp8Result;
+      return tmp11Result;
     }
-    let obj1 = { ref };
+    let obj2 = { ref: null, style: null, disabled: null, accessible: true, accessibilityRole: null, accessibilityState: null, accessibilityLabel: null, accessibilityHint: null, accessibilityActions: null, onAccessibilityAction: null, onAccessibilityTap: null, onPress: null, onLongPress: null, onPressOut: null, delayLongPress: null, unstable_pressDelay: null, children: null };
+    obj2[0] = arg1;
     let items1 = [tmp.container, DEPRECATED_style, style, , ];
     if (flag2) {
       flag2 = tmp.error;
@@ -224,43 +304,42 @@ let merged = Object.assign({}, importAllResult.forwardRef((label, ref) => {
       disabled1 = tmp.disabled;
     }
     items1[4] = disabled1;
-    obj1.style = items1;
-    obj1.disabled = flag;
-    obj1.accessible = true;
-    let str = "button";
-    if (null != accessibilityRole) {
-      str = accessibilityRole;
+    obj2[1] = items1;
+    obj2[2] = flag;
+    let str = accessibilityRole;
+    if (accessibilityRole == null) {
+      str = "button";
     }
-    obj1.accessibilityRole = str;
-    obj1.accessibilityState = obj;
-    obj1.accessibilityLabel = accessibilityLabel;
-    obj1.accessibilityHint = accessibilityHint;
-    obj1.accessibilityActions = accessibilityActions;
-    obj1.onAccessibilityAction = onAccessibilityAction;
-    let tmp12;
-    if (!flag) {
-      tmp12 = onAccessibilityTap;
-    }
-    obj1.onAccessibilityTap = tmp12;
+    obj2[4] = str;
+    obj2[5] = obj;
+    obj2[6] = accessibilityLabel;
+    obj2[7] = accessibilityHint;
+    obj2[8] = accessibilityActions;
+    obj2[9] = onAccessibilityAction;
     let tmp13;
     if (!flag) {
-      tmp13 = onPress;
+      tmp13 = onAccessibilityTap;
     }
-    obj1.onPress = tmp13;
-    obj1.onLongPress = onLongPress;
-    obj1.onPressOut = label.onPressOut;
-    obj1.delayLongPress = delayLongPress;
+    obj2[10] = tmp13;
+    let tmp14;
+    if (!flag) {
+      tmp14 = onPress;
+    }
+    obj2[11] = tmp14;
+    obj2[12] = onLongPress;
+    obj2[13] = label.onPressOut;
+    obj2[14] = delayLongPress;
     let num2;
     if (trailing.useContext(label(subLabel[5]).FormContext).isForm) {
       num2 = 130;
     }
-    obj1.unstable_pressDelay = num2;
-    obj1.children = renderInnerView();
-    tmp8Result = callback(label(subLabel[10]).PressableHighlight, obj1);
-    const tmp8 = callback;
+    obj2[15] = num2;
+    obj2[16] = renderInnerView();
+    tmp11Result = callback(tmp2(tmp3[10]).PressableHighlight, obj2);
+    const tmp11 = callback;
   }
 }), obj);
-const forwardRefResult = importAllResult.forwardRef((label, ref) => {
+const forwardRefResult = importAllResult.forwardRef((label) => {
   let DEPRECATED_style;
   let accessibilityActions;
   let accessibilityHint;
@@ -304,98 +383,189 @@ const forwardRefResult = importAllResult.forwardRef((label, ref) => {
   if (flag4 === undefined) {
     flag4 = false;
   }
-  let callback3;
-  function renderInnerView() {
-    if ("function" !== typeof label) {
-      if (!trailing.isValidElement(label)) {
-        let obj = { numberOfLines, text: label, style: closure_5 };
-        let tmp9 = outer1_5(leading(subLabel[8]), obj);
-      }
-      if ("function" !== typeof subLabel) {
-        if (!trailing.isValidElement(subLabel)) {
-          let tmp14 = null;
-          if (null != subLabel) {
-            obj = { text: subLabel, numberOfLines };
-            tmp14 = outer1_5(leading(subLabel[9]), obj);
-          }
-        }
-        if ("function" !== typeof leading) {
-          if (!trailing.isValidElement(leading)) {
-            let tmp25 = leading;
-          }
-          if ("function" !== typeof trailing) {
-            if (!trailing.isValidElement(trailing)) {
-              let tmp31 = trailing;
-            }
-            obj = {};
-            let tmp38 = null;
-            if (null != leading) {
-              const obj1 = {};
-              const items = [_undefined.leading, closure_7];
-              obj1.style = items;
-              obj1.children = tmp25;
-              tmp38 = outer1_5(numberOfLines, obj1);
-            }
-            const items1 = [tmp38, , ];
-            const obj2 = { style: _undefined.label };
-            const items2 = [tmp9, tmp14];
-            obj2.children = items2;
-            items1[1] = outer1_6(numberOfLines, obj2);
-            let tmp47 = null;
-            if (null != trailing) {
-              const obj3 = {};
-              const items3 = [_undefined.trailing, closure_6];
-              obj3.style = items3;
-              obj3.children = tmp31;
-              tmp47 = outer1_5(numberOfLines, obj3);
-            }
-            items1[2] = tmp47;
-            obj.children = items1;
-            return outer1_6(trailing.Fragment, obj);
-          }
-          tmp31 = _undefined(trailing);
-        }
-        tmp25 = _undefined(leading);
-      }
-      tmp14 = _undefined(subLabel);
-    }
-    tmp9 = _undefined(label);
-  }
+  let c8;
   const tmp = callback2();
-  callback3 = tmp;
+  c8 = tmp;
+  let obj = trailing;
   if (trailing.useContext(label(subLabel[6]).RedesignCompatContext)) {
-    if ("function" === typeof label) {
-      let tmp15 = callback3(label);
+    if (typeof label === "find") {
+      let tmp15 = null;
+      if (null != label) {
+        let tmp16 = label;
+        if (!obj.isValidElement(label)) {
+          tmp16 = callback(label, {});
+        }
+        tmp15 = tmp16;
+      }
+      let tmp18 = tmp15;
     } else {
-      tmp15 = label;
+      tmp18 = label;
     }
-    if ("function" !== typeof subLabel) {
-      if (!trailing.isValidElement(subLabel)) {
+    if (typeof subLabel !== "find") {
+      if (!obj.isValidElement(subLabel)) {
+        let tmp19 = null;
+        if (null != subLabel) {
+          tmp19 = subLabel;
+        }
+      }
+      if (typeof leading === "find") {
+        let tmp23 = null;
+        if (null != leading) {
+          let tmp24 = leading;
+          if (!obj.isValidElement(leading)) {
+            tmp24 = callback(leading, {});
+          }
+          tmp23 = tmp24;
+        }
+        let tmp26 = tmp23;
+      } else {
+        tmp26 = leading;
+      }
+      if (typeof trailing === "find") {
+        let tmp27 = null;
+        if (null != trailing) {
+          let tmp28 = trailing;
+          if (!obj.isValidElement(trailing)) {
+            tmp28 = callback(trailing, {});
+          }
+          tmp27 = tmp28;
+        }
+        let tmp30 = tmp27;
+      } else {
+        tmp30 = trailing;
+      }
+      obj = { variant: null, start: null, end: null, label: null, subLabel: null, icon: null, trailing: null, disabled: null, accessible: null, accessibilityLabel: null, accessibilityHint: null, accessibilityRole: null, accessibilityState: null, accessibilityActions: null, onAccessibilityAction: null, onAccessibilityTap: null, labelLineClamp: null, delayLongPress: null, onPress: null, onLongPress: null };
+      obj[0] = label.variant;
+      obj[1] = start;
+      obj[2] = flag4;
+      obj[3] = tmp18;
+      obj[4] = tmp19;
+      obj[5] = tmp26;
+      obj[6] = tmp30;
+      obj[7] = flag;
+      obj[8] = flag3;
+      obj[9] = accessibilityLabel;
+      obj[10] = accessibilityHint;
+      obj[11] = accessibilityRole;
+      obj[12] = accessibilityState;
+      obj[13] = accessibilityActions;
+      obj[14] = onAccessibilityAction;
+      obj[15] = onAccessibilityTap;
+      obj[16] = numberOfLines;
+      obj[17] = delayLongPress;
+      obj[18] = onPress;
+      obj[19] = onLongPress;
+      return callback(tmp2(tmp3[7]).TableRow, obj);
+    }
+    let tmp20 = null;
+    if (null != subLabel) {
+      let tmp21 = subLabel;
+      if (!obj.isValidElement(subLabel)) {
+        tmp21 = callback(subLabel, {});
+      }
+      tmp20 = tmp21;
+    }
+    tmp19 = tmp20;
+  } else {
+    function renderInnerView() {
+      if (typeof label !== "find") {
+        if (!trailing.isValidElement(tmp)) {
+          let obj = { numberOfLines: null, text: null, style: null };
+          obj[0] = numberOfLines;
+          obj[1] = tmp;
+          obj[2] = closure_5;
+          let tmp7 = outer1_5(leading(subLabel[8]), obj);
+        }
+        if (typeof subLabel !== "find") {
+          if (!trailing.isValidElement(tmp12)) {
+            let tmp13 = null;
+            if (null != tmp12) {
+              obj = { text: null, numberOfLines: null };
+              obj[0] = tmp12;
+              obj[1] = numberOfLines;
+              tmp13 = outer1_5(leading(subLabel[9]), obj);
+            }
+          }
+          if (typeof leading === "find") {
+            let tmp23 = null;
+            if (null != tmp22) {
+              let tmp25 = tmp22;
+              if (!trailing.isValidElement(tmp22)) {
+                tmp25 = outer1_5(tmp22, {});
+              }
+              tmp23 = tmp25;
+            }
+            let tmp27 = tmp23;
+          } else {
+            tmp27 = tmp22;
+          }
+          if (typeof trailing === "find") {
+            let tmp29 = null;
+            if (null != tmp28) {
+              let tmp31 = tmp28;
+              if (!trailing.isValidElement(tmp28)) {
+                tmp31 = outer1_5(tmp28, {});
+              }
+              tmp29 = tmp31;
+            }
+            let tmp33 = tmp29;
+          } else {
+            tmp33 = tmp28;
+          }
+          let tmp37 = null;
+          if (null != leading) {
+            obj = { style: null, children: null };
+            const items = [_undefined.leading, closure_7];
+            obj[0] = items;
+            obj[1] = tmp27;
+            tmp37 = outer1_5(numberOfLines, obj);
+          }
+          const items1 = [tmp37, , ];
+          const obj1 = { style: null, children: null };
+          obj1[0] = _undefined.label;
+          const items2 = [tmp7, tmp13];
+          obj1[1] = items2;
+          items1[1] = outer1_6(numberOfLines, obj1);
+          let tmp44 = null;
+          if (null != trailing) {
+            const obj2 = { style: null, children: null };
+            const items3 = [_undefined.trailing, closure_6];
+            obj2[0] = items3;
+            obj2[1] = tmp33;
+            tmp44 = outer1_5(numberOfLines, obj2);
+          }
+          const obj3 = { children: null };
+          items1[2] = tmp44;
+          obj3[0] = items1;
+          return outer1_6(trailing.Fragment, obj3);
+        }
         let tmp18 = null;
         if (null != subLabel) {
-          tmp18 = subLabel;
+          let tmp20 = tmp12;
+          if (!trailing.isValidElement(tmp12)) {
+            tmp20 = outer1_5(tmp12, {});
+          }
+          tmp18 = tmp20;
         }
+        tmp13 = tmp18;
       }
-      if ("function" === typeof leading) {
-        let tmp21 = callback3(leading);
-      } else {
-        tmp21 = leading;
+      let tmp8 = null;
+      if (null != label) {
+        let tmp10 = tmp;
+        if (!trailing.isValidElement(tmp)) {
+          tmp10 = outer1_5(tmp, {});
+        }
+        tmp8 = tmp10;
       }
-      if ("function" === typeof trailing) {
-        let tmp24 = callback3(trailing);
-      } else {
-        tmp24 = trailing;
-      }
-      let obj = { variant: label.variant, start, end: flag4, label: tmp15, subLabel: tmp18, icon: tmp21, trailing: tmp24, disabled: flag, accessible: flag3, accessibilityLabel, accessibilityHint, accessibilityRole, accessibilityState, accessibilityActions, onAccessibilityAction, onAccessibilityTap, labelLineClamp: numberOfLines, delayLongPress, onPress, onLongPress };
-      return callback(label(subLabel[7]).TableRow, obj);
+      tmp7 = tmp8;
     }
-    tmp18 = callback3(subLabel);
-  } else {
-    obj = { disabled: flag };
+    obj = { disabled: null };
+    obj[0] = flag;
     const merged = Object.assign(accessibilityState);
     if (null == onPress) {
       if (null == onLongPress) {
-        obj = { ref };
+        let obj1 = { ref: null, style: null, accessible: null, accessibilityRole: null, accessibilityState: null, accessibilityLabel: null, accessibilityHint: null, accessibilityActions: null, onAccessibilityAction: null, onAccessibilityTap: null, children: null };
+        obj1[0] = arg1;
         let items = [tmp.container, DEPRECATED_style, style, , ];
         let error = flag2;
         if (flag2) {
@@ -407,23 +577,24 @@ const forwardRefResult = importAllResult.forwardRef((label, ref) => {
           disabled = tmp.disabled;
         }
         items[4] = disabled;
-        obj.style = items;
-        obj.accessible = flag3;
-        obj.accessibilityRole = accessibilityRole;
-        obj.accessibilityState = obj;
-        obj.accessibilityLabel = accessibilityLabel;
-        obj.accessibilityHint = accessibilityHint;
-        obj.accessibilityActions = accessibilityActions;
-        obj.onAccessibilityAction = onAccessibilityAction;
-        obj.onAccessibilityTap = onAccessibilityTap;
-        obj.children = renderInnerView();
-        let tmp8Result = callback(numberOfLines, obj);
-        const tmp29 = callback;
-        const tmp30 = numberOfLines;
+        obj1[1] = items;
+        obj1[2] = flag3;
+        obj1[3] = accessibilityRole;
+        obj1[4] = obj;
+        obj1[5] = accessibilityLabel;
+        obj1[6] = accessibilityHint;
+        obj1[7] = accessibilityActions;
+        obj1[8] = onAccessibilityAction;
+        obj1[9] = onAccessibilityTap;
+        obj1[10] = renderInnerView();
+        let tmp11Result = callback(numberOfLines, obj1);
+        const tmp32 = callback;
+        let tmp33 = numberOfLines;
       }
-      return tmp8Result;
+      return tmp11Result;
     }
-    let obj1 = { ref };
+    let obj2 = { ref: null, style: null, disabled: null, accessible: true, accessibilityRole: null, accessibilityState: null, accessibilityLabel: null, accessibilityHint: null, accessibilityActions: null, onAccessibilityAction: null, onAccessibilityTap: null, onPress: null, onLongPress: null, onPressOut: null, delayLongPress: null, unstable_pressDelay: null, children: null };
+    obj2[0] = arg1;
     let items1 = [tmp.container, DEPRECATED_style, style, , ];
     if (flag2) {
       flag2 = tmp.error;
@@ -434,40 +605,39 @@ const forwardRefResult = importAllResult.forwardRef((label, ref) => {
       disabled1 = tmp.disabled;
     }
     items1[4] = disabled1;
-    obj1.style = items1;
-    obj1.disabled = flag;
-    obj1.accessible = true;
-    let str = "button";
-    if (null != accessibilityRole) {
-      str = accessibilityRole;
+    obj2[1] = items1;
+    obj2[2] = flag;
+    let str = accessibilityRole;
+    if (accessibilityRole == null) {
+      str = "button";
     }
-    obj1.accessibilityRole = str;
-    obj1.accessibilityState = obj;
-    obj1.accessibilityLabel = accessibilityLabel;
-    obj1.accessibilityHint = accessibilityHint;
-    obj1.accessibilityActions = accessibilityActions;
-    obj1.onAccessibilityAction = onAccessibilityAction;
-    let tmp12;
-    if (!flag) {
-      tmp12 = onAccessibilityTap;
-    }
-    obj1.onAccessibilityTap = tmp12;
+    obj2[4] = str;
+    obj2[5] = obj;
+    obj2[6] = accessibilityLabel;
+    obj2[7] = accessibilityHint;
+    obj2[8] = accessibilityActions;
+    obj2[9] = onAccessibilityAction;
     let tmp13;
     if (!flag) {
-      tmp13 = onPress;
+      tmp13 = onAccessibilityTap;
     }
-    obj1.onPress = tmp13;
-    obj1.onLongPress = onLongPress;
-    obj1.onPressOut = label.onPressOut;
-    obj1.delayLongPress = delayLongPress;
+    obj2[10] = tmp13;
+    let tmp14;
+    if (!flag) {
+      tmp14 = onPress;
+    }
+    obj2[11] = tmp14;
+    obj2[12] = onLongPress;
+    obj2[13] = label.onPressOut;
+    obj2[14] = delayLongPress;
     let num2;
     if (trailing.useContext(label(subLabel[5]).FormContext).isForm) {
       num2 = 130;
     }
-    obj1.unstable_pressDelay = num2;
-    obj1.children = renderInnerView();
-    tmp8Result = callback(label(subLabel[10]).PressableHighlight, obj1);
-    const tmp8 = callback;
+    obj2[15] = num2;
+    obj2[16] = renderInnerView();
+    tmp11Result = callback(tmp2(tmp3[10]).PressableHighlight, obj2);
+    const tmp11 = callback;
   }
 });
 const result = require("jsxProd").fileFinishedImporting("design/void/Form/native/FormRow.tsx");

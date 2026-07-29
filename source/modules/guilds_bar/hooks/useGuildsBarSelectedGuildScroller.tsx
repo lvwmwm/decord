@@ -1,12 +1,12 @@
-// Module ID: 14992
-// Function ID: 114146
+// Module ID: 15018
+// Function ID: 15019
 // Name: useGuildsBarSelectedGuildScroller
-// Dependencies: [31, 3982, 2]
+// Dependencies: [19, 4006, 2]
 // Exports: default
 
-// Module 14992 (useGuildsBarSelectedGuildScroller)
-import result from "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 15018 (useGuildsBarSelectedGuildScroller)
+import noop from "noop";
+import handleConnectionOpen from "handleConnectionOpen";
 
 const result = require("set").fileFinishedImporting("modules/guilds_bar/hooks/useGuildsBarSelectedGuildScroller.tsx");
 
@@ -15,18 +15,17 @@ export default function useGuildsBarSelectedGuildScroller(arg0) {
   const items = [arg0];
   const effect = React.useEffect(() => {
     function handleSelectedGuildChange() {
-      const guildId = outer2_1.getGuildId();
+      let guildId = outer2_1.getGuildId();
       if (guildId !== c0) {
-        let tmp3 = null;
-        if (null != guildId) {
-          tmp3 = guildId;
+        let tmp3 = guildId;
+        if (guildId == null) {
+          tmp3 = null;
         }
         c0 = tmp3;
-        let tmp5 = null;
-        if (null != guildId) {
-          tmp5 = guildId;
+        if (guildId == null) {
+          guildId = null;
         }
-        c0(tmp5, false);
+        c0(guildId, false);
         const tmp4 = c0;
       }
     }

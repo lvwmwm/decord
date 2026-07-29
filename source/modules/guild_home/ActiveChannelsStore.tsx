@@ -1,147 +1,74 @@
-// Module ID: 12737
-// Function ID: 98752
-// Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 1348, 3982, 1355, 21, 22, 566, 686, 2]
+// Module ID: 12759
+// Function ID: 12760
+// Name: truncateOldMessageData
+// Dependencies: [1372, 4006, 1379, 11, 12, 589, 709, 2]
 
-// Module 12737 (_isNativeReflectConstruct)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import set from "set";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
-import closure_7 from "_isNativeReflectConstruct";
-import closure_8 from "_isNativeReflectConstruct";
+// Module 12759 (truncateOldMessageData)
+import ensureGuildLoaded from "ensureGuildLoaded";
+import handleConnectionOpen from "handleConnectionOpen";
 import { isGuildHomeChannel } from "set";
+import { Store } from "initialize";
 
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
-  }
-  const result = _isNativeReflectConstruct();
-}
-function resetStore() {
-  let closure_11 = {};
-  let closure_12 = {};
-  let closure_13 = {};
-  let closure_14 = {};
-}
-function truncateOldMessageData(arg0) {
-  if (null != dependencyMap2[arg0]) {
+function truncateOldMessageData(channelId) {
+  if (null != dependencyMap2[channelId]) {
     let nowResult = globalThis;
     const _Date2 = Date;
-    importDefault = importDefault(21).fromTimestamp(Date.now() - c10);
-    const obj = importDefault(21);
-    const findIndexResult = importDefault(22).findIndex(arr, (id) => callback(outer1_1[8]).compare(id.id, callback) > 0);
+    importDefault = importDefault(11).fromTimestamp(Date.now() - c5);
+    const obj = importDefault(11);
+    const tmp6 = importDefault;
+    const findIndexResult = importDefault(12).findIndex(arr, (id) => callback(outer1_1[3]).compare(id.id, callback) > 0);
     if (-1 === findIndexResult) {
-      dependencyMap2[arg0] = [];
+      dependencyMap2[channelId] = [];
     } else {
       const _Math = Math;
       const bound = Math.max(findIndexResult, arr.length - 26);
-      dependencyMap2[arg0] = importDefault(22).slice(arr, bound);
-      const arr2 = importDefault(22);
+      dependencyMap2[channelId] = tmp6(12).slice(arr, bound);
+      const tmp6Result = tmp6(12);
     }
     const _Date = nowResult.Date;
     nowResult = _Date.now();
-    closure_13[arg0] = nowResult;
-    const obj2 = importDefault(22);
+    closure_8[channelId] = nowResult;
+    const obj2 = importDefault(12);
   }
-}
-function addMessage(arg0, arg1, id, userId) {
-  let obj = dependencyMap[arg0];
-  obj.add(arg1);
-  let tmp3 = null == tmp2;
-  if (!tmp3) {
-    const _Date = Date;
-    const sum = tmp2 + 300000;
-    tmp3 = sum > Date.now();
-  }
-  if (tmp3) {
-    truncateOldMessageData(arg1);
-  }
-  if (null == dependencyMap2[arg1]) {
-    dependencyMap2[arg1] = [];
-  }
-  let arr = dependencyMap2[arg1];
-  obj = { id, userId };
-  arr = arr.push(obj);
 }
 function handleChannelDelete(channel) {
   channel = channel.channel;
   delete tmp4[tmp3];
   delete tmp2[tmp];
 }
-let c10 = 900000;
-let closure_11 = {};
-let closure_12 = {};
-let closure_13 = {};
-let closure_14 = {};
-let tmp2 = ((Store) => {
-  class ActiveChannelsStore {
-    constructor() {
-      self = this;
-      tmp = outer1_2(this, ActiveChannelsStore);
-      obj = outer1_5(ActiveChannelsStore);
-      tmp2 = outer1_4;
-      if (outer1_15()) {
-        tmp6 = globalThis;
-        _Reflect = Reflect;
-        tmp7 = outer1_5;
-        tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, outer1_5(self).constructor);
-      } else {
-        tmp3 = arguments;
-        tmp4 = arguments;
-        constructResult = obj(...arguments);
-      }
-      return tmp2(self, constructResult);
+let c5 = 900000;
+let closure_6 = {};
+let closure_7 = {};
+let closure_8 = {};
+let closure_9 = {};
+class ActiveChannelsStore extends Store {
+}
+const prototype = ActiveChannelsStore.prototype;
+prototype["initialize"] = function initialize() {
+  this.waitFor(ensureGuildLoaded, handleConnectionOpen);
+};
+prototype["getActiveChannelsFetchStatus"] = function getActiveChannelsFetchStatus(arg0) {
+  return dependencyMap3[arg0];
+};
+prototype["getActiveChannelIds"] = function getActiveChannelIds(guildId) {
+  return dependencyMap[guildId];
+};
+prototype["getChannelMessageData"] = function getChannelMessageData(channelId) {
+  return dependencyMap2[channelId];
+};
+prototype["shouldFetch"] = function shouldFetch(arg0) {
+  let tmp = null == dependencyMap[arg0];
+  if (tmp) {
+    let loading;
+    if (dependencyMap3[arg0] != null) {
+      loading = tmp3.loading;
     }
+    tmp = !loading;
   }
-  callback2(ActiveChannelsStore, Store);
-  let obj = {
-    key: "initialize",
-    value() {
-      this.waitFor(outer1_7, outer1_8);
-    }
-  };
-  const items = [obj, , , , ];
-  obj = {
-    key: "getActiveChannelsFetchStatus",
-    value(arg0) {
-      return outer1_14[arg0];
-    }
-  };
-  items[1] = obj;
-  obj = {
-    key: "getActiveChannelIds",
-    value(arg0) {
-      return outer1_11[arg0];
-    }
-  };
-  items[2] = obj;
-  items[3] = {
-    key: "getChannelMessageData",
-    value(arg0) {
-      return outer1_12[arg0];
-    }
-  };
-  items[4] = {
-    key: "shouldFetch",
-    value(arg0) {
-      let tmp = null == outer1_11[arg0];
-      if (tmp) {
-        tmp = !(null != outer1_14[arg0] && outer1_14[arg0].loading);
-        const tmp4 = null != outer1_14[arg0] && outer1_14[arg0].loading;
-      }
-      return tmp;
-    }
-  };
-  return callback(ActiveChannelsStore, items);
-})(require("initialize").Store);
-tmp2.displayName = "ActiveChannelsStore";
-tmp2 = new tmp2(require("dispatcher"), {
+  return tmp;
+};
+ActiveChannelsStore.displayName = "ActiveChannelsStore";
+const activeChannelsStore = new ActiveChannelsStore(require("dispatcher"), {
   CHANNEL_SELECT: function handleRefreshChannels(guildId) {
     guildId = guildId.guildId;
     if (isGuildHomeChannel(guildId.channelId)) {
@@ -150,9 +77,9 @@ tmp2 = new tmp2(require("dispatcher"), {
           return false;
         } else {
           const item = arr.forEach((arg0) => {
-            outer1_17(arg0);
+            callback(arg0);
             let length;
-            if (null != outer1_12[arg0]) {
+            if (dependencyMap[arg0] != null) {
               length = arr.length;
             }
             if (0 === length) {
@@ -160,18 +87,17 @@ tmp2 = new tmp2(require("dispatcher"), {
             }
           });
           const _Array = Array;
-          const obj = importDefault(22);
-          const found = importDefault(22).chain(Array.from(arr)).filter((arg0) => arg0 in outer1_12);
-          const chainResult = importDefault(22).chain(Array.from(arr));
+          const obj = importDefault(12);
+          const found = importDefault(12).chain(Array.from(arr)).filter((arg0) => arg0 in closure_7);
+          const chainResult = importDefault(12).chain(Array.from(arr));
           const _Set = Set;
           const set = new Set(found.sortBy((arg0) => {
-            let length;
-            if (null != outer1_12[arg0]) {
-              length = arr.length;
+            let num;
+            if (dependencyMap[arg0] != null) {
+              num = arr.length;
             }
-            let num = 0;
-            if (null != length) {
-              num = length;
+            if (num == null) {
+              num = 0;
             }
             return -num;
           }).value());
@@ -182,9 +108,7 @@ tmp2 = new tmp2(require("dispatcher"), {
     return false;
   },
   MESSAGE_CREATE: function handleMessageCreate(optimistic) {
-    let author;
     let channelId;
-    let id;
     let message;
     ({ channelId, message } = optimistic);
     if (!optimistic.optimistic) {
@@ -194,20 +118,37 @@ tmp2 = new tmp2(require("dispatcher"), {
           return false;
         } else {
           const guild_id = channel.guild_id;
-          let tmp4 = null != guild_id;
-          if (tmp4) {
+          let tmp20 = null != guild_id;
+          if (tmp20) {
             if (null != dependencyMap[guild_id]) {
-              ({ id, author } = message);
-              id = undefined;
-              if (null != author) {
+              const author = message.author;
+              let id;
+              if (author != null) {
                 id = author.id;
               }
-              addMessage(guild_id, channelId, id, id);
-              const tmp7 = addMessage;
+              let obj = dependencyMap[guild_id];
+              obj.add(channelId);
+              let tmp11 = null == tmp10;
+              if (!tmp11) {
+                const _Date = Date;
+                const sum = tmp10 + 300000;
+                tmp11 = sum > Date.now();
+              }
+              if (tmp11) {
+                truncateOldMessageData(channelId);
+              }
+              if (null == dependencyMap2[channelId]) {
+                dependencyMap2[channelId] = [];
+              }
+              let arr = dependencyMap2[channelId];
+              obj = { id: null, userId: null };
+              obj[0] = message.id;
+              obj[1] = id;
+              arr = arr.push(obj);
             }
-            tmp4 = tmp6;
+            tmp20 = tmp5;
           }
-          return tmp4;
+          return tmp20;
         }
       }
     }
@@ -219,69 +160,92 @@ tmp2 = new tmp2(require("dispatcher"), {
   CHANNEL_DELETE: handleChannelDelete,
   THREAD_DELETE: handleChannelDelete,
   ACTIVE_CHANNELS_FETCH_START: function handleActiveChannelsFetchStart(guildId) {
-    const obj = { loading: true, error: null, fetchedAt: Date.now() };
-    closure_14[guildId.guildId] = obj;
+    closure_9[guildId.guildId] = { loading: true, error: null, fetchedAt: Date.now() };
   },
   ACTIVE_CHANNELS_FETCH_SUCCESS: function handleActiveChannelsFetchSuccess(guildId) {
     guildId = guildId.guildId;
     const channels = guildId.channels;
+    closure_9[guildId] = { loading: false, error: null, fetchedAt: Date.now() };
     const obj = { loading: false, error: null, fetchedAt: Date.now() };
-    closure_14[guildId] = obj;
-    closure_11[guildId] = new Set();
+    closure_6[guildId] = new Set();
     let item = channels.forEach((arg0) => {
       let guildId;
       let messages;
       ({ channel_id: guildId, messages } = arg0);
-      const item = messages.forEach((message_id) => {
-        outer2_18(outer1_0, closure_0, message_id.message_id, message_id.user_id);
+      const item = messages.forEach((arg0) => {
+        let message_id;
+        let user_id;
+        ({ message_id, user_id } = arg0);
+        outer2_6[outer1_0].add(closure_0);
+        let tmp4 = null == tmp3;
+        if (!tmp4) {
+          const _Date = Date;
+          const sum = tmp3 + 300000;
+          tmp4 = sum > Date.now();
+        }
+        if (tmp4) {
+          outer2_10(tmp);
+        }
+        if (null == outer2_7[closure_0]) {
+          outer2_7[tmp] = [];
+        }
+        let arr = outer2_7[tmp];
+        arr = arr.push({ id: message_id, userId: user_id });
       });
     });
   },
   ACTIVE_CHANNELS_FETCH_FAILURE: function handleActiveChannelsFetchFailure(error) {
-    const obj = { loading: false, error: error.error, fetchedAt: null };
-    closure_14[error.guildId] = obj;
+    closure_9[error.guildId] = { loading: false, error: error.error, fetchedAt: null };
   },
   CONNECTION_OPEN: function handleConnectionOpen() {
     guildId = guildId.getGuildId();
     if (null != guildId) {
-      let items = tmp7;
-      if (null == obj[guildId]) {
+      let items = tmp5;
+      if (dependencyMap[guildId] == null) {
         items = [];
       }
       const reduced = Array.from(items).reduce((arg0, arg1) => {
-        let items = obj[arg1];
-        if (null == items) {
+        let items = table[arg1];
+        if (items == null) {
           items = [];
         }
         arg0[arg1] = items;
         return arg0;
       }, {});
-      let fetchedAt;
-      resetStore();
+      dependencyMap = {};
+      let closure_7 = {};
+      let closure_8 = {};
+      let dependencyMap3 = {};
       const _Date = Date;
+      let num;
       const timestamp = Date.now();
-      if (null != obj[guildId]) {
-        fetchedAt = tmp5.fetchedAt;
+      if (dependencyMap3[guildId] != null) {
+        num = tmp3.fetchedAt;
       }
-      let num = 0;
-      if (null != fetchedAt) {
-        num = fetchedAt;
+      if (num == null) {
+        num = 0;
       }
-      if (timestamp - num < c10) {
+      if (timestamp - num < c5) {
+        let obj = {};
+        obj[guildId] = tmp3;
+        dependencyMap3 = obj;
         obj = {};
         obj[guildId] = tmp5;
-        obj = {};
-        obj[guildId] = tmp7;
+        dependencyMap = obj;
         obj = {};
         const merged = Object.assign(reduced);
+        closure_7 = obj;
       }
       const arr = Array.from(items);
     } else {
-      resetStore();
+      dependencyMap = {};
+      closure_7 = {};
+      closure_8 = {};
+      dependencyMap3 = {};
     }
   }
 });
-let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/guild_home/ActiveChannelsStore.tsx");
+const result = require("set").fileFinishedImporting("modules/guild_home/ActiveChannelsStore.tsx");
 
-export default tmp2;
+export default activeChannelsStore;
 export const MAX_STORED_MESSAGES = 26;

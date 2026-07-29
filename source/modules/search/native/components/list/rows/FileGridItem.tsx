@@ -1,112 +1,122 @@
-// Module ID: 15481
-// Function ID: 117979
-// Name: getAttachmentIcon
-// Dependencies: [31, 27, 1348, 9077, 33, 4165, 4352, 4679, 6616, 10277, 566, 7971, 15469, 15471, 4705, 2]
+// Module ID: 15515
+// Function ID: 15516
+// Dependencies: [19, 17, 1372, 9101, 21, 4189, 4377, 4701, 6637, 10298, 589, 7996, 15503, 15505, 4727, 2]
 
-// Module 15481 (getAttachmentIcon)
-import importAllResult from "result";
+// Module 15515
+import importAllResult from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import ensureGuildLoaded from "ensureGuildLoaded";
 import SearchAutocompleteSelectAnalyticsActions from "SearchAutocompleteSelectAnalyticsActions";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_10;
-let closure_4;
-let closure_5;
-let closure_7;
-let closure_8;
-let closure_9;
+let c10;
+let c4;
+let c5;
+let c9;
+let error;
+let metroImportAll;
 const require = arg1;
-function getAttachmentIcon(filename) {
-  if (obj.isImageFile(filename)) {
-    let tmp3Result = callback(require(4679) /* ImageIcon */.ImageIcon, { size: "lg", color: "interactive-text-default" });
-  } else {
-    if (obj2.isVideoFile(filename)) {
-      tmp3Result = tmp3(tmp4(6616).VideoIcon, { size: "lg", color: "interactive-text-default" });
-    } else {
-      tmp3Result = tmp3(tmp4(10277).FileIcon, { size: "lg", color: "interactive-text-default" });
-    }
-    obj2 = require(4352) /* urlMatchesFileExtension */;
-  }
-  return tmp3Result;
-}
-({ View: closure_4, useWindowDimensions: closure_5 } = get_ActivityIndicator);
-({ FILE_OR_LINK_IMAGE_BUFFER: closure_7, SearchFileTypes: closure_8 } = SearchAutocompleteSelectAnalyticsActions);
-({ jsx: closure_9, jsxs: closure_10 } = jsxProd);
-let closure_11 = _createForOfIteratorHelperLoose.createStyles({ icon: { alignItems: "center", justifyContent: "center" } });
+let c3 = importAllResult;
+({ View: c4, useWindowDimensions: c5 } = get_ActivityIndicator);
+({ FILE_OR_LINK_IMAGE_BUFFER: error, SearchFileTypes: metroImportAll } = SearchAutocompleteSelectAnalyticsActions);
+({ jsx: c9, jsxs: c10 } = jsxProd);
+let closure_11 = createCacheKey.createStyles({ icon: { alignItems: "center", justifyContent: "center" } });
 const memoResult = importAllResult.memo(function FileGridItem(containerStyle) {
   const data = containerStyle.data;
   const onPress = containerStyle.onPress;
   const imageStyle = containerStyle.imageStyle;
+  let importAllResult;
+  let scale;
+  let stateFromStores;
   let c6;
   const tmp = callback2();
-  const scale = stateFromStores().scale;
+  importAllResult = tmp;
+  scale = stateFromStores().scale;
   let obj = data(imageStyle[10]);
   let items = [c6];
   stateFromStores = obj.useStateFromStores(items, () => _undefined.getChannel(data.channelId));
+  let obj1 = importAllResult;
   const items1 = [data.author, ];
   let guild_id;
-  if (null != stateFromStores) {
+  if (stateFromStores != null) {
     guild_id = stateFromStores.guild_id;
   }
   items1[1] = guild_id;
   const memo = importAllResult.useMemo(() => {
     const author = data.author;
     let guild_id;
-    if (null != stateFromStores) {
+    if (stateFromStores != null) {
       guild_id = stateFromStores.guild_id;
     }
     return author.getAvatarSource(guild_id);
   }, items1);
-  const tmp6 = onPress(imageStyle[11])(data.attachment);
-  c6 = tmp6;
+  const tmp7 = onPress(imageStyle[11])(data.attachment);
+  c6 = tmp7;
   const size = data.attachment.size;
   const items2 = [, , ];
   ({ channelId: arr3[0], messageId: arr3[1] } = data);
   items2[2] = onPress;
-  const items3 = [data, tmp6, imageStyle, scale, tmp.icon];
-  const callback = importAllResult.useCallback(() => {
+  const items3 = [data, tmp7, imageStyle, scale, tmp.icon];
+  const callback = obj1.useCallback(() => {
     onPress({ channelId: data.channelId, messageId: data.messageId });
   }, items2);
-  const memo1 = importAllResult.useMemo(() => {
+  const memo1 = obj1.useMemo(() => {
     const type = data.type;
     if (outer1_8.MEDIA_ATTACHMENT === type) {
-      let obj = { containerStyle: imageStyle };
-      ({ attachment: obj3.attachment, channelId: obj3.channelId } = data);
-      obj.authorId = data.author.id;
-      obj.scale = scale;
-      obj.containerHeight = imageStyle.height + outer1_7;
-      obj.containerWidth = imageStyle.width + outer1_7;
-      obj.renderFallback = function renderFallback() {
-        const items = [outer1_3.icon, outer1_2];
-        return outer2_9(scale, { style: items, children: outer2_12(outer1_0.attachment.filename) });
+      let obj = { containerStyle: null, attachment: null, channelId: null, authorId: null, scale: null, containerHeight: null, containerWidth: null, renderFallback: null };
+      obj[0] = imageStyle;
+      ({ attachment: obj3[1], channelId: obj3[2] } = tmp);
+      obj[3] = tmp.author.id;
+      obj[4] = scale;
+      obj[5] = imageStyle.height + outer1_7;
+      obj[6] = imageStyle.width + outer1_7;
+      obj[7] = function renderFallback() {
+        const obj = { style: items, children: null };
+        items = [icon.icon, closure_2];
+        const filename = attachment.attachment.filename;
+        if (obj2.isImageFile(filename)) {
+          let tmpResult = tmp(tmp3(tmp4[7]).ImageIcon, { size: "lg", color: "interactive-text-default" });
+        } else {
+          if (tmp3Result.isVideoFile(filename)) {
+            tmpResult = tmp(tmp3(tmp4[8]).VideoIcon, { size: "lg", color: "interactive-text-default" });
+          } else {
+            tmpResult = tmp(tmp3(tmp4[9]).FileIcon, { size: "lg", color: "interactive-text-default" });
+          }
+          tmp3Result = tmp3(tmp4[6]);
+        }
+        obj[1] = tmpResult;
+        return outer1_9(outer1_4, obj);
       };
       return outer1_9(data(imageStyle[12]).SearchAttachmentMediaImage, obj);
-    } else if (outer1_8.ATTACHMENT === type) {
-      obj = { fileName: c6, containerStyle: imageStyle };
-      ({ height: obj2.height, width: obj2.width } = imageStyle);
+    } else if (tmp2.ATTACHMENT === type) {
+      obj = { fileName: null, containerStyle: null, height: null, width: null };
+      obj[0] = c6;
+      obj[1] = imageStyle;
+      ({ height: obj2[2], width: obj2[3] } = imageStyle);
       return outer1_9(data(imageStyle[12]).SearchFileMediaImage, obj);
-    } else if (outer1_8.AUDIO === type) {
-      obj = { containerStyle: imageStyle };
-      ({ height: obj.height, width: obj.width } = imageStyle);
+    } else if (tmp2.AUDIO === type) {
+      obj = { containerStyle: null, height: null, width: null };
+      obj[0] = imageStyle;
+      ({ height: obj[1], width: obj[2] } = imageStyle);
       return outer1_9(data(imageStyle[12]).SearchSoundMediaImage, obj);
     }
   }, items3);
-  obj = { containerStyle: containerStyle.containerStyle, onPress: callback };
+  obj = { containerStyle: containerStyle.containerStyle, onPress: callback, children: null };
   const items4 = [callback(data(imageStyle[13]).SearchListCardThumbnail, { thumbnail: memo1 }), , ];
-  obj = { label: tmp6 };
+  obj = { label: tmp7, subLabel: null };
   let sizeStringResult;
   if (size > 0) {
-    sizeStringResult = data(imageStyle[14]).sizeString(size);
-    const obj4 = data(imageStyle[14]);
+    sizeStringResult = tmp2(tmp3[14]).sizeString(size);
+    const tmp2Result = tmp2(tmp3[14]);
   }
-  obj.subLabel = sizeStringResult;
+  obj[1] = sizeStringResult;
   items4[1] = callback(data(imageStyle[13]).SearchListCardContent, obj);
-  items4[2] = callback(data(imageStyle[13]).SearchListCardFooter, { author: data.author, avatarSource: memo, channel: stateFromStores });
-  obj.children = items4;
+  obj1 = { author: data.author, avatarSource: memo, channel: stateFromStores };
+  items4[2] = callback(data(imageStyle[13]).SearchListCardFooter, obj1);
+  obj[2] = items4;
   return closure_10(data(imageStyle[13]).SearchListCardContainer, obj);
 });
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/search/native/components/list/rows/FileGridItem.tsx");
+const result = require("ensureGuildLoaded").fileFinishedImporting("modules/search/native/components/list/rows/FileGridItem.tsx");
 
 export default memoResult;

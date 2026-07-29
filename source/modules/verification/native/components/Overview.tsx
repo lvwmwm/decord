@@ -1,134 +1,128 @@
-// Module ID: 16311
-// Function ID: 126445
+// Module ID: 16346
+// Function ID: 16347
 // Name: Overview
-// Dependencies: [31, 27, 1342, 1850, 653, 33, 4165, 689, 1921, 566, 9161, 1456, 4575, 4578, 1212, 16073, 507, 9202, 4161, 14476, 2]
+// Dependencies: [19, 17, 1366, 1874, 676, 21, 4189, 712, 1945, 589, 9185, 1480, 4597, 4600, 1236, 16108, 530, 9226, 4185, 14498, 2]
 // Exports: default
 
-// Module 16311 (Overview)
-import result from "result";
-import { View } from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_6 from "_isNativeReflectConstruct";
+// Module 16346 (Overview)
+import _emailSupport from "_emailSupport";
+import { View } from "saveProfileAndAccountRequest";
+import handleRequiredAction from "handleRequiredAction";
+import mergeGuildAvatar from "mergeGuildAvatar";
 import ME from "ME";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import importDefaultResult from "wrapURL";
+import createCacheKey from "createCacheKey";
+import importDefaultResult from "combined";
 
-let closure_10;
-let closure_11;
+let HelpdeskArticles;
+let c10;
+let c9;
 let closure_12;
-let closure_7;
-let closure_8;
-let closure_9;
+let error;
+let metroImportAll;
+let unpackModuleId;
 let require = arg1;
-({ Endpoints: closure_7, VerificationModalScenes: closure_8, VerificationTypes: closure_9 } = ME);
-({ jsx: closure_10, Fragment: closure_11, jsxs: closure_12 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { flex: 1, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW };
-_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.containerInner = { flex: 1, padding: 20, justifyContent: "center", alignItems: "center" };
-let obj1 = { marginTop: 20, fontSize: 17, textAlign: "center", color: require("_createForOfIteratorHelperLoose").colors.MOBILE_TEXT_HEADING_PRIMARY };
-_createForOfIteratorHelperLoose.title = obj1;
-let obj2 = { marginTop: 4, marginBottom: 20, fontSize: 14, textAlign: "center", color: require("_createForOfIteratorHelperLoose").unsafe_rawColors.PRIMARY_400 };
-_createForOfIteratorHelperLoose.body = obj2;
-_createForOfIteratorHelperLoose.blocks = { width: "60%", justifyContent: "center" };
-_createForOfIteratorHelperLoose.verificationType = { marginBottom: 20 };
-_createForOfIteratorHelperLoose.button = { marginBottom: 20, marginHorizontal: 20, alignSelf: "center" };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-const articleURL = require("wrapURL").getArticleURL(ME.HelpdeskArticles.VERIFICATION_FAQ);
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/verification/native/components/Overview.tsx");
+({ Endpoints: error, VerificationModalScenes: metroImportAll, VerificationTypes: c9, HelpdeskArticles } = ME);
+({ jsx: c10, Fragment: unpackModuleId, jsxs: closure_12 } = jsxProd);
+createCacheKey = { container: null, containerInner: null, title: null, body: null, blocks: null, verificationType: null, button: null };
+createCacheKey = { flex: 1, backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { flex: 1, padding: 20, justifyContent: "center", alignItems: "center" };
+createCacheKey[2] = { marginTop: 20, fontSize: 17, textAlign: "center", color: require("Themes").colors.MOBILE_TEXT_HEADING_PRIMARY };
+let obj1 = { marginTop: 20, fontSize: 17, textAlign: "center", color: require("Themes").colors.MOBILE_TEXT_HEADING_PRIMARY };
+createCacheKey[3] = { marginTop: 4, marginBottom: 20, fontSize: 14, textAlign: "center", color: require("Themes").unsafe_rawColors.PRIMARY_400 };
+createCacheKey[4] = { width: "60%", justifyContent: "center" };
+createCacheKey[5] = { marginBottom: 20 };
+createCacheKey[6] = { marginBottom: 20, marginHorizontal: 20, alignSelf: "center" };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let obj2 = { marginTop: 4, marginBottom: 20, fontSize: 14, textAlign: "center", color: require("Themes").unsafe_rawColors.PRIMARY_400 };
+const articleURL = require("combined").getArticleURL(HelpdeskArticles.VERIFICATION_FAQ);
+const result = require("handleRequiredAction").fileFinishedImporting("modules/verification/native/components/Overview.tsx");
 
 export default function Overview() {
-  let tmp = _createForOfIteratorHelperLoose();
+  const tmp = createCacheKey();
   const require = tmp;
   let obj = require(navigation[9]);
-  const items = [_isNativeReflectConstruct];
+  const items = [handleRequiredAction];
   stateFromStores = obj.useStateFromStores(items, () => {
-    const action = outer1_5.getAction();
+    action = action.getAction();
     return stateFromStores(navigation[10]).getVerificationTypes(action);
   }, [], stateFromStores(navigation[10]).areVerificationTypesEqual);
   let obj1 = require(navigation[11]);
   navigation = obj1.useNavigation();
   stateFromStores(navigation[12])(require(navigation[12]).BackPressHandler.minimize);
   const items1 = [navigation, stateFromStores, tmp.verificationType];
-  obj = { style: tmp.container };
-  obj = { style: tmp.containerInner };
-  let callback = React.useCallback(() => outer1_10(outer1_11, {
+  obj = { style: tmp.container, children: null };
+  obj = { style: tmp.containerInner, children: null };
+  const callback = React.useCallback(() => outer1_10(outer1_11, {
     children: stateFromStores.map((arg0) => {
-      const callback = arg0;
-      if (arg0 === outer2_9.CAPTCHA) {
-        let obj = {};
-        const intl = callback(navigation[14]).intl;
-        obj.text = intl.string(callback(navigation[14]).t["3413d0"]);
-        obj.onPress = function onPress() {
-          let obj = stateFromStores(navigation[15]);
-          stateFromStores(navigation[15]).showCaptcha().then((captcha_key) => {
-            const HTTP = callback(navigation[16]).HTTP;
-            obj = { url: outer4_7.CAPTCHA, body: obj, oldFormErrors: true, rejectWithError: true };
+      const verificationType = arg0;
+      if (arg0 === outer1_9.CAPTCHA) {
+        let obj = { text: null, onPress: null, grow: true };
+        const intl = outer1_0(outer1_2[14]).intl;
+        obj[0] = intl.string(outer1_0(outer1_2[14]).t["3413d0"]);
+        obj[1] = function onPress() {
+          let obj = callback(table[15]);
+          callback(table[15]).showCaptcha().then((captcha_key) => {
+            const HTTP = callback(table[16]).HTTP;
+            obj = { url: constants.CAPTCHA, body: obj, oldFormErrors: true, rejectWithError: true };
             obj = { captcha_key };
             HTTP.post(obj);
           });
         };
-        obj.grow = true;
-        let tmp4 = outer2_10(callback(navigation[13]).Button, obj);
+        let tmp4 = outer1_10(outer1_0(outer1_2[13]).Button, obj);
       } else {
-        obj = { style: outer1_0.verificationType };
-        obj = {
-          text: stateFromStores(navigation[10]).getButtonTitle(arg0),
-          onPress() {
-              let tmp = callback !== outer3_9.EMAIL_OR_PHONE;
-              if (tmp) {
-                tmp = callback !== outer3_9.EMAIL;
-              }
-              if (tmp) {
-                tmp = callback !== outer3_9.REVERIFY_EMAIL;
-              }
-              if (tmp) {
-                outer2_2.push(outer3_8.ADD_PHONE);
-              } else {
-                let email;
-                callback(navigation[17]).accountDetailsInit();
-                const currentUser = outer3_6.getCurrentUser();
-                if (null != currentUser) {
-                  email = currentUser.email;
-                }
-                if (null != email) {
-                  let ENTER_EMAIL = outer3_8.RESEND_EMAIL;
-                } else {
-                  ENTER_EMAIL = outer3_8.ENTER_EMAIL;
-                }
-                const obj = callback(navigation[17]);
-              }
-            },
-          grow: true
+        obj = { style: null, children: null };
+        obj[0] = verificationType.verificationType;
+        obj = { text: null, onPress: null, grow: true };
+        obj[0] = outer1_1(outer1_2[10]).getButtonTitle(arg0);
+        obj[1] = function onPress() {
+          let tmp4 = closure_0 !== outer2_9.EMAIL_OR_PHONE;
+          if (tmp4) {
+            tmp4 = tmp2 !== tmp3.EMAIL;
+          }
+          if (tmp4) {
+            tmp4 = tmp2 !== tmp3.REVERIFY_EMAIL;
+          }
+          if (tmp4) {
+            outer1_2.push(outer2_8.ADD_PHONE);
+          } else {
+            outer2_0(outer2_2[17]).accountDetailsInit();
+            const currentUser = outer2_6.getCurrentUser();
+            let email;
+            if (currentUser != null) {
+              email = currentUser.email;
+            }
+            const obj = outer2_0(outer2_2[17]);
+          }
         };
-        obj.children = outer2_10(callback(navigation[13]).Button, obj);
-        tmp4 = outer2_10(outer2_4, obj, arg0);
-        const obj4 = stateFromStores(navigation[10]);
+        obj[1] = outer1_10(outer1_0(outer1_2[13]).Button, obj);
+        tmp4 = outer1_10(outer1_4, obj, arg0);
+        const obj4 = outer1_1(outer1_2[10]);
       }
       return tmp4;
     })
   }), items1);
-  obj1 = { variant: "heading-lg/semibold", style: tmp.title, accessibilityRole: "header" };
+  obj1 = { variant: "heading-lg/semibold", style: tmp.title, accessibilityRole: "header", children: null };
   let intl = require(navigation[14]).intl;
-  obj1.children = intl.string(require(navigation[14]).t.Iz0kDg);
+  obj1[3] = intl.string(require(navigation[14]).t.Iz0kDg);
   const items2 = [callback(require(navigation[18]).Text, obj1), , ];
-  const obj2 = { variant: "text-sm/medium", style: tmp.body };
+  const obj2 = { variant: "text-sm/medium", style: tmp.body, children: null };
   const intl2 = require(navigation[14]).intl;
-  obj2.children = intl2.format(require(navigation[14]).t["0rqMV5"], { helpCenterURL: closure_14 });
+  obj2[2] = intl2.format(require(navigation[14]).t["0rqMV5"], { helpCenterURL: closure_14 });
   items2[1] = callback(require(navigation[18]).Text, obj2);
   const obj3 = { helpCenterURL: closure_14 };
   let tmp4 = stateFromStores(navigation[12]);
   items2[2] = callback(View, { style: tmp.blocks, children: callback() });
-  obj.children = items2;
+  obj[1] = items2;
   const items3 = [callback2(View, obj), ];
-  const obj5 = { style: tmp.button, accessibilityRole: "link" };
-  const obj6 = { variant: "secondary" };
+  const obj5 = { style: tmp.button, accessibilityRole: "link", children: null };
+  const obj6 = { variant: "secondary", text: null, onPress: null };
   const intl3 = require(navigation[14]).intl;
-  obj6.text = intl3.string(require(navigation[14]).t["Yl/Riu"]);
-  obj6.onPress = require(navigation[19]).emailSupport;
-  obj5.children = callback(require(navigation[13]).Button, obj6);
+  obj6[1] = intl3.string(require(navigation[14]).t["Yl/Riu"]);
+  obj6[2] = require(navigation[19]).emailSupport;
+  obj5[2] = callback(require(navigation[13]).Button, obj6);
   items3[1] = callback(View, obj5);
-  obj.children = items3;
+  obj[1] = items3;
   return callback2(View, obj);
 };

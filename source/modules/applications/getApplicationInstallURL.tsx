@@ -1,10 +1,10 @@
-// Module ID: 11282
-// Function ID: 87596
+// Module ID: 11306
+// Function ID: 11307
 // Name: getActivityLaunchURL
-// Dependencies: [653, 2]
+// Dependencies: [676, 2]
 // Exports: getActivityLaunchURL, getApplicationInstallURL
 
-// Module 11282 (getActivityLaunchURL)
+// Module 11306 (getActivityLaunchURL)
 import { Routes } from "ME";
 
 let result = require("set").fileFinishedImporting("modules/applications/getApplicationInstallURL.tsx");
@@ -46,13 +46,13 @@ export const getApplicationInstallURL = function getApplicationInstallURL(applic
       const values = Object.values(integrationTypesConfig);
       someResult = values.some((oauth2_install_params) => {
         let prop;
-        if (null != oauth2_install_params) {
+        if (oauth2_install_params != null) {
           prop = oauth2_install_params.oauth2_install_params;
         }
         let tmp2 = null != prop;
         if (!tmp2) {
           let oauth2InstallParams;
-          if (null != oauth2_install_params) {
+          if (oauth2_install_params != null) {
             oauth2InstallParams = oauth2_install_params.oauth2InstallParams;
           }
           tmp2 = null != oauth2InstallParams;

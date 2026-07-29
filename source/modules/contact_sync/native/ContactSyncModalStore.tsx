@@ -1,26 +1,22 @@
-// Module ID: 11743
-// Function ID: 90969
-// Name: initialValues
-// Dependencies: [4847, 1850, 11744, 653, 621, 682, 2]
+// Module ID: 11768
+// Function ID: 11769
+// Name: ContactSyncModes
+// Dependencies: [4869, 1874, 11769, 676, 644, 705, 2]
 // Exports: getIsOnboarding, initialize, setAllowEmail, setAllowPhone, setAllowSync, setError, setName, setPermissionState, setPhone, setPhoneToken, setSuggestions, useIsOnboarding
 
-// Module 11743 (initialValues)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_3 from "_isNativeReflectConstruct";
+// Module 11768 (ContactSyncModes)
+import set from "set";
+import mergeGuildAvatar from "mergeGuildAvatar";
 import { ContactPermissions } from "ContactSyncLandingPage";
 import { PlatformTypes } from "ME";
 import keys from "keys";
 
 const require = arg1;
-function initialValues() {
-  const obj = { mode: null, permissionState: null, error: "", phone: null, phoneToken: null, name: null, isNameFromContactBook: false, allowPhone: true, allowEmail: true, bulkAddToken: null };
-  obj.mode = obj.NORMAL;
-  obj.permissionState = ContactPermissions.NOT_DETERMINED;
-  obj.suggestions = [];
-  return obj;
-}
 let obj = { NORMAL: 0, [0]: "NORMAL", ONBOARDING: 1, [1]: "ONBOARDING", ONBOARDING_INVITE: 2, [2]: "ONBOARDING_INVITE" };
-obj = keys.create(() => initialValues());
+obj = keys.create(() => {
+  obj = { mode: obj.NORMAL, permissionState: ContactPermissions.NOT_DETERMINED, error: "", phone: null, phoneToken: null, name: null, isNameFromContactBook: false, allowPhone: true, allowEmail: true, bulkAddToken: null, suggestions: [] };
+  return obj;
+});
 const result = require("ContactSyncLandingPage").fileFinishedImporting("modules/contact_sync/native/ContactSyncModalStore.tsx");
 
 export const ContactSyncModes = obj;
@@ -29,53 +25,54 @@ export const initialize = function initialize(arg0) {
   const _require = arg0;
   const localAccount = phone.getLocalAccount(PlatformTypes.CONTACTS);
   let name;
-  if (null != localAccount) {
+  if (localAccount != null) {
     name = localAccount.name;
   }
   currentUser = currentUser.getCurrentUser();
   phone = undefined;
-  if (null != currentUser) {
+  if (currentUser != null) {
     phone = currentUser.phone;
   }
   _require(name[5]).batchUpdates(() => outer1_7.setState(() => {
-    const obj = {};
-    const merged = Object.assign(outer2_8());
-    obj["mode"] = outer1_0;
-    obj["phone"] = outer1_2;
-    obj["name"] = outer1_1;
+    let obj = {};
+    obj = { mode: outer1_6.NORMAL, permissionState: outer1_4.NOT_DETERMINED, error: "", phone: null, phoneToken: null, name: null, isNameFromContactBook: false, allowPhone: true, allowEmail: true, bulkAddToken: null, suggestions: [] };
+    const merged = Object.assign(obj);
+    obj.mode = closure_0;
+    obj.phone = set;
+    obj.name = closure_1;
     return obj;
   }));
 };
 export const setAllowSync = function setAllowSync(arg0) {
   const _require = arg0;
-  _require(682).batchUpdates(() => {
+  _require(705).batchUpdates(() => {
     outer1_7.setState((arg0) => {
       const obj = {};
       const merged = Object.assign(arg0);
-      obj["allowPhone"] = outer1_0;
-      obj["allowEmail"] = outer1_0;
+      obj.allowPhone = closure_0;
+      obj.allowEmail = closure_0;
       return obj;
     });
   });
 };
 export const setAllowPhone = function setAllowPhone(arg0) {
   const _require = arg0;
-  _require(682).batchUpdates(() => {
+  _require(705).batchUpdates(() => {
     outer1_7.setState((arg0) => {
       const obj = {};
       const merged = Object.assign(arg0);
-      obj["allowPhone"] = outer1_0;
+      obj.allowPhone = closure_0;
       return obj;
     });
   });
 };
 export const setAllowEmail = function setAllowEmail(arg0) {
   const _require = arg0;
-  _require(682).batchUpdates(() => {
+  _require(705).batchUpdates(() => {
     outer1_7.setState((arg0) => {
       const obj = {};
       const merged = Object.assign(arg0);
-      obj["allowEmail"] = outer1_0;
+      obj.allowEmail = closure_0;
       return obj;
     });
   });
@@ -83,41 +80,41 @@ export const setAllowEmail = function setAllowEmail(arg0) {
 export const setSuggestions = function setSuggestions(arg0, arg1) {
   const _require = arg0;
   const dependencyMap = arg1;
-  _require(682).batchUpdates(() => {
+  _require(705).batchUpdates(() => {
     outer1_7.setState((arg0) => {
       const obj = {};
       const merged = Object.assign(arg0);
-      obj["suggestions"] = outer1_0;
-      obj["bulkAddToken"] = outer1_1;
+      obj.suggestions = closure_0;
+      obj.bulkAddToken = closure_1;
       return obj;
     });
   });
 };
 export const setPhone = function setPhone(arg0) {
   const _require = arg0;
-  _require(682).batchUpdates(() => {
+  _require(705).batchUpdates(() => {
     outer1_7.setState((arg0) => {
       const obj = {};
       const merged = Object.assign(arg0);
-      obj["phone"] = outer1_0;
+      obj.phone = closure_0;
       return obj;
     });
   });
 };
 export const setPhoneToken = function setPhoneToken(arg0) {
   const _require = arg0;
-  _require(682).batchUpdates(() => {
+  _require(705).batchUpdates(() => {
     outer1_7.setState((arg0) => {
       const obj = {};
       const merged = Object.assign(arg0);
-      obj["phoneToken"] = outer1_0;
+      obj.phoneToken = closure_0;
       return obj;
     });
   });
 };
 export const setName = function setName(arg0) {
-  let flag = arg1;
   const _require = arg0;
+  let flag = arg1;
   if (arg1 === undefined) {
     flag = false;
   }
@@ -125,47 +122,39 @@ export const setName = function setName(arg0) {
     outer1_7.setState((arg0) => {
       const obj = {};
       const merged = Object.assign(arg0);
-      obj["name"] = outer1_0;
-      obj["isNameFromContactBook"] = outer1_1;
+      obj.name = closure_0;
+      obj.isNameFromContactBook = closure_1;
       return obj;
     });
   });
 };
 export const setPermissionState = function setPermissionState(arg0) {
   const _require = arg0;
-  _require(682).batchUpdates(() => {
+  _require(705).batchUpdates(() => {
     outer1_7.setState((arg0) => {
       const obj = {};
       const merged = Object.assign(arg0);
-      obj["permissionState"] = outer1_0;
+      obj.permissionState = closure_0;
       return obj;
     });
   });
 };
-export const setError = function setError(intl) {
-  const _require = intl;
-  _require(682).batchUpdates(() => {
+export const setError = function setError(arg0) {
+  const _require = arg0;
+  _require(705).batchUpdates(() => {
     outer1_7.setState((arg0) => {
       const obj = {};
       const merged = Object.assign(arg0);
-      obj["error"] = outer1_0;
+      obj.error = closure_0;
       return obj;
     });
   });
 };
 export const useIsOnboarding = function useIsOnboarding() {
   const mode = obj().mode;
-  let tmp = mode === obj.ONBOARDING;
-  if (!tmp) {
-    tmp = mode === obj.ONBOARDING_INVITE;
-  }
-  return tmp;
+  return mode === obj.ONBOARDING || mode === obj.ONBOARDING_INVITE;
 };
 export const getIsOnboarding = function getIsOnboarding() {
   const mode = obj.getState().mode;
-  let tmp = mode === obj.ONBOARDING;
-  if (!tmp) {
-    tmp = mode === obj.ONBOARDING_INVITE;
-  }
-  return tmp;
+  return mode === obj.ONBOARDING || mode === obj.ONBOARDING_INVITE;
 };

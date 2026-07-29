@@ -1,90 +1,91 @@
-// Module ID: 9335
-// Function ID: 72923
+// Module ID: 9359
+// Function ID: 9360
 // Name: NsfwGateGuild
-// Dependencies: [31, 27, 1918, 1850, 9336, 653, 33, 4165, 689, 1212, 1921, 675, 5688, 9194, 9337, 4161, 4578, 2]
+// Dependencies: [19, 17, 1942, 1874, 9360, 676, 21, 4189, 712, 1236, 1945, 698, 5706, 9218, 9361, 4185, 4600, 2]
 // Exports: default
 
-// Module 9335 (NsfwGateGuild)
-import result from "result";
-import get_ActivityIndicator from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_7 from "_isNativeReflectConstruct";
+// Module 9359 (NsfwGateGuild)
+import noop from "noop";
+import get_ActivityIndicator from "set";
+import trackCommunicationDisabled from "trackCommunicationDisabled";
+import mergeGuildAvatar from "mergeGuildAvatar";
 import { NsfwGateSource } from "NsfwGateSource";
 import ME from "ME";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_10;
-let closure_11;
+let c10;
+let c4;
+let c5;
+let c9;
 let closure_12;
-let closure_4;
-let closure_5;
-let closure_9;
+let unpackModuleId;
 const require = arg1;
-({ View: closure_4, Image: closure_5 } = get_ActivityIndicator);
-({ AnalyticEvents: closure_9, HelpdeskArticles: closure_10 } = ME);
-({ jsx: closure_11, jsxs: closure_12 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { flex: 1, alignItems: "center", justifyContent: "center", padding: 16, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW };
-_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.header = { textAlign: "center", marginBottom: 8 };
-_createForOfIteratorHelperLoose.description = { textAlign: "center", marginBottom: 16 };
-_createForOfIteratorHelperLoose.image = { marginBottom: 16 };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/age_gate/native/components/NsfwGateGuild.tsx");
+({ View: c4, Image: c5 } = get_ActivityIndicator);
+({ AnalyticEvents: c9, HelpdeskArticles: c10 } = ME);
+({ jsx: unpackModuleId, jsxs: closure_12 } = jsxProd);
+createCacheKey = { container: null, header: null, description: null, image: null };
+createCacheKey = { flex: 1, alignItems: "center", justifyContent: "center", padding: 16, backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { textAlign: "center", marginBottom: 8 };
+createCacheKey[2] = { textAlign: "center", marginBottom: 16 };
+createCacheKey[3] = { marginBottom: 16 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+const result = require("trackCommunicationDisabled").fileFinishedImporting("modules/age_gate/native/components/NsfwGateGuild.tsx");
 
 export default function NsfwGateGuild(guildId) {
   guildId = guildId.guildId;
-  const tmp = _createForOfIteratorHelperLoose();
-  const intl = guildId(1212).intl;
-  const intl2 = guildId(1212).intl;
-  const stringResult = intl.string(guildId(1212).t.vAymlG);
-  const intl3 = guildId(1212).intl;
-  let obj = {};
-  let obj1 = currentUser(1921);
-  obj.helpURL = obj1.getArticleURL(constants.NSFW_GUILD_GUIDELINES);
-  const stringResult1 = intl2.string(guildId(1212).t.Crj6eC);
+  let currentUser;
+  const tmp = createCacheKey();
+  const intl = guildId(1236).intl;
+  const intl2 = guildId(1236).intl;
+  const stringResult = intl.string(guildId(1236).t.vAymlG);
+  const intl3 = guildId(1236).intl;
+  let obj = { helpURL: null };
+  let obj1 = currentUser(1945);
+  obj[0] = obj1.getArticleURL(constants.NSFW_GUILD_GUIDELINES);
+  const stringResult1 = intl2.string(guildId(1236).t.Crj6eC);
   currentUser = currentUser.getCurrentUser();
   const items = [guildId, currentUser];
   const effect = React.useEffect(() => {
     let obj = currentUser(outer1_2[11]);
-    obj = { guild_id: guildId };
+    obj = { guild_id: guildId, user_id: null, is_member: null, is_user_opted_in_to_age_restricted_servers: null, source: null };
     let id;
-    if (null != currentUser) {
-      id = currentUser.id;
+    if (currentUser != null) {
+      id = tmp3.id;
     }
-    obj.user_id = id;
+    obj[1] = id;
     let id1;
-    if (null != currentUser) {
-      id1 = currentUser.id;
+    if (currentUser != null) {
+      id1 = tmp3.id;
     }
-    obj.is_member = outer1_6.isMember(guildId, id1);
+    obj[2] = outer1_6.isMember(guildId, id1);
     let nsfwAllowed;
-    if (null != currentUser) {
-      nsfwAllowed = currentUser.nsfwAllowed;
+    if (currentUser != null) {
+      nsfwAllowed = tmp3.nsfwAllowed;
     }
     if (nsfwAllowed) {
       nsfwAllowed = guildId(outer1_2[12]).getViewNsfwGuildsOrDefault();
       const obj3 = guildId(outer1_2[12]);
     }
-    obj.is_user_opted_in_to_age_restricted_servers = nsfwAllowed;
-    obj.source = outer1_8.MODAL;
+    obj[3] = nsfwAllowed;
+    obj[4] = outer1_8.MODAL;
     obj.track(outer1_9.GUILD_NSFW_GATE_VIEWED, obj);
   }, items);
-  obj = { style: tmp.container };
-  const items1 = [callback(currentUser(9194), {}), , , , , ];
-  obj = { source: currentUser(9337), style: tmp.image };
+  obj = { style: tmp.container, children: null };
+  const items1 = [callback(currentUser(9218), {}), , , , , ];
+  obj = { source: currentUser(9361), style: tmp.image };
   items1[1] = callback(closure_5, obj);
   obj1 = { style: tmp.header, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: stringResult };
-  items1[2] = callback(guildId(4161).Text, obj1);
+  items1[2] = callback(guildId(4185).Text, obj1);
+  items1[3] = callback(guildId(4185).Text, { style: tmp.description, variant: "text-md/normal", color: "text-default", children: stringResult1 });
+  const formatResult = intl3.format(guildId(1236).t.Z12LNW, obj);
   const obj2 = { style: tmp.description, variant: "text-md/normal", color: "text-default", children: stringResult1 };
-  items1[3] = callback(guildId(4161).Text, obj2);
-  let obj3 = { style: tmp.description, variant: "text-md/normal", color: "text-default", children: intl3.format(guildId(1212).t.Z12LNW, obj) };
-  items1[4] = callback(guildId(4161).Text, obj3);
-  const obj4 = { onPress: guildId.onClose, size: "md" };
-  const intl4 = guildId(1212).intl;
-  obj4.text = intl4.string(guildId(1212).t.gRqiWV);
-  items1[5] = callback(guildId(4578).Button, obj4);
-  obj.children = items1;
+  items1[4] = callback(guildId(4185).Text, { style: tmp.description, variant: "text-md/normal", color: "text-default", children: intl3.format(guildId(1236).t.Z12LNW, obj) });
+  const obj4 = { onPress: guildId.onClose, size: "md", text: null };
+  const intl4 = guildId(1236).intl;
+  obj4[2] = intl4.string(guildId(1236).t.gRqiWV);
+  items1[5] = callback(guildId(4600).Button, obj4);
+  obj[1] = items1;
   return callback2(closure_4, obj);
 };

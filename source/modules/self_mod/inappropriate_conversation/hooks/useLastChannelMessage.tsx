@@ -1,21 +1,21 @@
-// Module ID: 10140
-// Function ID: 78408
+// Module ID: 10161
+// Function ID: 10162
 // Name: useLastChannelMessage
-// Dependencies: [4384, 566, 2]
+// Dependencies: [4407, 589, 2]
 // Exports: useLastChannelMessage
 
-// Module 10140 (useLastChannelMessage)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 10161 (useLastChannelMessage)
+import reinjectEphemerals from "reinjectEphemerals";
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/self_mod/inappropriate_conversation/hooks/useLastChannelMessage.tsx");
 
 export const useLastChannelMessage = function useLastChannelMessage(channelId) {
   const _require = channelId;
-  const items = [_isNativeReflectConstruct];
-  return _require(566).useStateFromStores(items, () => {
+  const items = [reinjectEphemerals];
+  return _require(589).useStateFromStores(items, () => {
     let lastNonCurrentUserMessage = outer1_2.getLastNonCurrentUserMessage(closure_0);
-    if (null == lastNonCurrentUserMessage) {
+    if (lastNonCurrentUserMessage == null) {
       lastNonCurrentUserMessage = outer1_2.getLastMessage(closure_0);
     }
     return lastNonCurrentUserMessage;

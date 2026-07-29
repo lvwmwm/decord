@@ -1,32 +1,35 @@
 // Module ID: 210
-// Function ID: 2949
+// Function ID: 211
 // Name: convertRequestBody
-// Dependencies: [197, 211, 212]
+// Dependencies: [203, 211, 212]
 
 // Module 210 (convertRequestBody)
 const require = arg1;
 const dependencyMap = arg6;
-arg5.default = function convertRequestBody(string) {
-  if ("string" === typeof string) {
-    let obj = { string };
-    let tmp4 = obj;
-  } else if (string instanceof require(197) /* Blob */.default) {
-    obj = { blob: string.data };
-    tmp4 = obj;
-  } else if (string instanceof require(211) /* FormData */.default) {
-    let obj1 = { formData: string.getParts() };
-    tmp4 = obj1;
+arg5.default = function convertRequestBody(data) {
+  if (typeof data === "y") {
+    let obj = { string: null };
+    obj[0] = data;
+    let tmp2 = obj;
+  } else if (data instanceof require(203) /* Blob */.default) {
+    obj = { blob: null };
+    obj[0] = data.data;
+    tmp2 = obj;
+  } else if (data instanceof tmp3(211).default) {
+    const obj1 = { formData: null };
+    obj1[0] = data.getParts();
+    tmp2 = obj1;
   } else {
     const _ArrayBuffer = ArrayBuffer;
-    if (string instanceof ArrayBuffer) {
-      obj = {};
-      obj1 = require(212) /* binaryToBase64 */;
-      obj.base64 = obj1.default(string);
-      tmp4 = obj;
+    if (data instanceof ArrayBuffer) {
+      obj = { base64: null };
+      obj[0] = tmp3(212).default(data);
+      tmp2 = obj;
+      const tmp3Result = tmp3(212);
     } else {
       const _ArrayBuffer2 = ArrayBuffer;
-      tmp4 = string;
+      tmp2 = data;
     }
   }
-  return tmp4;
+  return tmp2;
 };

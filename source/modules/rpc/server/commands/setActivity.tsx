@@ -1,148 +1,148 @@
-// Module ID: 13526
-// Function ID: 103817
+// Module ID: 13549
+// Function ID: 13550
 // Name: RPC_LOCAL_SCOPE
-// Dependencies: [4202, 4068, 653, 8150, 10595, 9053, 10592, 686, 10453, 10481, 22, 664, 7892, 675, 2]
+// Dependencies: [4226, 4092, 676, 8174, 10629, 9077, 10626, 709, 10477, 10505, 12, 687, 7917, 698, 2]
 
-// Module 13526 (RPC_LOCAL_SCOPE)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 13549 (RPC_LOCAL_SCOPE)
+import addApplication from "addApplication";
 import RPC_SCOPE_CONFIG from "RPC_SCOPE_CONFIG";
 import ME from "ME";
 
 let RPC_LOCAL_SCOPE;
 let RPC_SCOPE_CONFIG;
-let closure_5;
+let c4;
+let c5;
+let c9;
 let closure_6;
-let closure_7;
-let closure_8;
-let closure_9;
+let error;
+let metroImportAll;
 const require = arg1;
-const TransportTypes = RPC_SCOPE_CONFIG.TransportTypes;
-({ RPC_SCOPE_CONFIG, RPC_LOCAL_SCOPE } = RPC_SCOPE_CONFIG);
-({ ActivityGamePlatforms: closure_5, ActivityPartyPrivacy: closure_6, ActivityTypes: closure_7, AnalyticEvents: closure_8, RPCErrors: closure_9 } = ME);
+({ TransportTypes: c4, RPC_SCOPE_CONFIG, RPC_LOCAL_SCOPE } = RPC_SCOPE_CONFIG);
+({ ActivityGamePlatforms: c5, ActivityPartyPrivacy: closure_6, ActivityTypes: error, AnalyticEvents: metroImportAll, RPCErrors: c9 } = ME);
 let closure_10 = ["1402418171662569542"];
 let obj = {};
-obj = {};
+obj = { scope: null, validation: null, handler: null };
 obj = {};
 let items = [require("set").OAuth2Scopes.RPC, require("set").OAuth2Scopes.RPC_ACTIVITIES_WRITE, RPC_LOCAL_SCOPE];
 obj[RPC_SCOPE_CONFIG.ANY] = items;
-obj.scope = obj;
-obj.validation = function validation(number) {
-  let obj = importDefault(10595)(number);
-  obj = {};
+obj[0] = obj;
+obj[1] = function validation(number) {
+  let obj = importDefault(10629)(number);
+  obj = { pid: null, activity: null };
   const requiredResult = obj.required();
-  obj.pid = number.number().min(0);
-  let obj4 = importDefault(10595)(number);
-  obj = {};
+  obj[0] = number.number().min(0);
+  let obj4 = importDefault(10629)(number);
+  obj = { name: null, state: null, state_url: null, details: null, details_url: null, timestamps: null, assets: null, party: null, secrets: null, buttons: null, instance: null, supported_platforms: null, type: null, status_display_type: null };
   const numberResult = number.number();
   const stringResult = number.string();
-  obj.name = number.string().min(1).max(128);
+  obj[0] = number.string().min(1).max(128);
   const minResult = number.string().min(1);
   const stringResult1 = number.string();
-  obj.state = number.string().min(2).max(128);
+  obj[1] = number.string().min(2).max(128);
   const minResult1 = number.string().min(2);
   const stringResult2 = number.string();
   const uriResult = number.string().uri();
-  obj.state_url = number.string().uri().min(1).max(256);
+  obj[2] = number.string().uri().min(1).max(256);
   const minResult2 = number.string().uri().min(1);
   const stringResult3 = number.string();
-  obj.details = number.string().min(2).max(128);
+  obj[3] = number.string().min(2).max(128);
   const minResult3 = number.string().min(2);
   const stringResult4 = number.string();
   const uriResult1 = number.string().uri();
-  obj.details_url = number.string().uri().min(1).max(256);
+  obj[4] = number.string().uri().min(1).max(256);
   const minResult4 = number.string().uri().min(1);
-  const obj1 = {};
-  const obj19 = importDefault(10595)(number);
-  obj1.start = number.number().min(1);
+  const obj1 = { start: null, end: null };
+  const obj19 = importDefault(10629)(number);
+  obj1[0] = number.number().min(1);
   const numberResult1 = number.number();
-  obj1.end = number.number().min(1);
-  obj.timestamps = obj19.keys(obj1);
+  obj1[1] = number.number().min(1);
+  obj[5] = obj19.keys(obj1);
   const numberResult2 = number.number();
-  const obj2 = {};
-  const obj23 = importDefault(10595)(number);
+  const obj2 = { large_image: null, large_text: null, large_url: null, small_image: null, small_text: null, small_url: null, invite_cover_image: null };
+  const obj23 = importDefault(10629)(number);
   const stringResult5 = number.string();
-  obj2.large_image = number.string().min(1).max(300);
+  obj2[0] = number.string().min(1).max(300);
   const minResult5 = number.string().min(1);
   const stringResult6 = number.string();
-  obj2.large_text = number.string().min(2).max(128);
+  obj2[1] = number.string().min(2).max(128);
   const minResult6 = number.string().min(2);
   const stringResult7 = number.string();
   const uriResult2 = number.string().uri();
-  obj2.large_url = number.string().uri().min(1).max(256);
+  obj2[2] = number.string().uri().min(1).max(256);
   const minResult7 = number.string().uri().min(1);
   const stringResult8 = number.string();
-  obj2.small_image = number.string().min(1).max(300);
+  obj2[3] = number.string().min(1).max(300);
   const minResult8 = number.string().min(1);
   const stringResult9 = number.string();
-  obj2.small_text = number.string().min(2).max(128);
+  obj2[4] = number.string().min(2).max(128);
   const minResult9 = number.string().min(2);
   const stringResult10 = number.string();
   const uriResult3 = number.string().uri();
-  obj2.small_url = number.string().uri().min(1).max(256);
+  obj2[5] = number.string().uri().min(1).max(256);
   const minResult10 = number.string().uri().min(1);
   const stringResult11 = number.string();
-  obj2.invite_cover_image = number.string().min(1).max(300);
-  obj.assets = obj23.keys(obj2);
+  obj2[6] = number.string().min(1).max(300);
+  obj[6] = obj23.keys(obj2);
   const minResult11 = number.string().min(1);
-  const obj3 = {};
-  const obj41 = importDefault(10595)(number);
+  const obj3 = { id: null, size: null, privacy: null };
+  const obj41 = importDefault(10629)(number);
   const stringResult12 = number.string();
-  obj3.id = number.string().min(2).max(128);
+  obj3[0] = number.string().min(2).max(128);
   let arrayResult = number.array();
   const minResult12 = number.string().min(2);
   const numberResult3 = number.number();
-  obj3.size = arrayResult.items(number.number().min(0)).length(2);
+  obj3[1] = arrayResult.items(number.number().min(0)).length(2);
   const itemsResult = arrayResult.items(number.number().min(0));
   const numberResult4 = number.number();
   const items = [, ];
   ({ PRIVATE: arr2[0], PUBLIC: arr2[1] } = constants);
-  obj3.privacy = number.number().default(constants.PRIVATE).valid(items);
-  obj.party = obj41.keys(obj3);
+  obj3[2] = number.number().default(constants.PRIVATE).valid(items);
+  obj[7] = obj41.keys(obj3);
   const defaultResult = number.number().default(constants.PRIVATE);
-  obj4 = {};
-  const obj49 = importDefault(10595)(number);
+  obj4 = { match: null, join: null, spectate: null };
+  const obj49 = importDefault(10629)(number);
   const stringResult13 = number.string();
-  obj4.match = number.string().min(2).max(128);
+  obj4[0] = number.string().min(2).max(128);
   const minResult13 = number.string().min(2);
   const stringResult14 = number.string();
-  obj4.join = number.string().min(2).max(128);
+  obj4[1] = number.string().min(2).max(128);
   const minResult14 = number.string().min(2);
   const stringResult15 = number.string();
-  obj4.spectate = number.string().min(2).max(128);
-  obj.secrets = obj49.keys(obj4);
+  obj4[2] = number.string().min(2).max(128);
+  obj[8] = obj49.keys(obj4);
   arrayResult = number.array();
   const minResult15 = number.string().min(2);
-  const obj5 = {};
-  const obj58 = importDefault(10595)(number);
+  const obj5 = { label: null, url: null };
+  const obj58 = importDefault(10629)(number);
   const stringResult16 = number.string();
   const minResult16 = number.string().min(1);
-  obj5.label = number.string().min(1).max(32).required();
+  obj5[0] = number.string().min(1).max(32).required();
   const maxResult = number.string().min(1).max(32);
   const stringResult17 = number.string();
   const uriResult4 = number.string().uri();
   const minResult17 = number.string().uri().min(1);
-  obj5.url = number.string().uri().min(1).max(512).required();
+  obj5[1] = number.string().uri().min(1).max(512).required();
   const maxResult1 = number.string().uri().min(1).max(512);
   const itemsResult1 = arrayResult.items(obj58.keys(obj5));
-  obj.buttons = arrayResult.items(obj58.keys(obj5)).min(1).max(2);
-  obj.instance = number.boolean();
+  obj[9] = arrayResult.items(obj58.keys(obj5)).min(1).max(2);
+  obj[10] = number.boolean();
   const minResult18 = arrayResult.items(obj58.keys(obj5)).min(1);
   const arrayResult1 = number.array();
   const stringResult18 = number.string();
   const minResult19 = number.string().min(1);
   const itemsResult2 = arrayResult1.items(number.string().min(1).max(32));
-  obj.supported_platforms = arrayResult1.items(number.string().min(1).max(32)).min(1).max(10);
+  obj[11] = arrayResult1.items(number.string().min(1).max(32)).min(1).max(10);
   const minResult20 = arrayResult1.items(number.string().min(1).max(32)).min(1);
   const numberResult5 = number.number();
-  obj.type = number.number().default(constants2.PLAYING).valid(constants2.PLAYING, constants2.LISTENING, constants2.WATCHING, constants2.COMPETING);
+  obj[12] = number.number().default(constants2.PLAYING).valid(constants2.PLAYING, constants2.LISTENING, constants2.WATCHING, constants2.COMPETING);
   const defaultResult1 = number.number().default(constants2.PLAYING);
   const numberResult6 = number.number();
-  obj.status_display_type = number.number().optional().valid(require(9053) /* StatusDisplayTypes */.StatusDisplayTypes.NAME, require(9053) /* StatusDisplayTypes */.StatusDisplayTypes.STATE, require(9053) /* StatusDisplayTypes */.StatusDisplayTypes.DETAILS);
+  obj[13] = number.number().optional().valid(require(9077) /* StatusDisplayTypes */.StatusDisplayTypes.NAME, require(9077) /* StatusDisplayTypes */.StatusDisplayTypes.STATE, require(9077) /* StatusDisplayTypes */.StatusDisplayTypes.DETAILS);
   const keys = obj4.keys(obj);
-  obj.activity = keys.allow(null);
+  obj[1] = keys.allow(null);
   return requiredResult.keys(obj);
 };
-obj.handler = function handler(socket) {
+obj[2] = function handler(socket) {
   let buttons;
   let party2;
   let secrets;
@@ -158,51 +158,51 @@ obj.handler = function handler(socket) {
   ({ IPC: arr[0], WEBSOCKET: arr[1], POST_MESSAGE: arr[2] } = privacy);
   if (items.includes(socket.transport)) {
     if (null == pid) {
-      if (privacy.IPC === socket.transport) {
-        let tmp83 = pid(activity[6]);
-        let obj = { errorCode: constants3.INVALID_COMMAND };
-        const prototype6 = tmp83.prototype;
-        tmp83 = new tmp83(obj, "nonzero pid required");
-        throw tmp83;
+      if (tmp4.IPC === socket.transport) {
+        let obj = { errorCode: null };
+        obj[0] = constants3.INVALID_COMMAND;
+        const tmp95 = new pid(activity[6])(obj, "nonzero pid required");
+        throw tmp95;
       }
     }
     if (null == activity) {
-      obj = { type: "LOCAL_ACTIVITY_UPDATE", socketId: socket.id, pid, activity };
+      obj = { type: "LOCAL_ACTIVITY_UPDATE", socketId: null, pid: null, activity: null };
+      obj[1] = socket.id;
+      obj[2] = pid;
+      obj[3] = activity;
       pid(activity[7]).dispatch(obj);
       return Promise.resolve(activity);
     } else {
-      let obj1 = {};
       if (!activity.name) {
         activity.name = socket.application.name;
       }
       const id = socket.application.id;
       activity.application_id = id;
-      activity.platform = socket.transport === privacy.POST_MESSAGE ? assets.EMBEDDED : assets.DESKTOP;
-      let tmp19;
-      if (null != id) {
-        tmp19 = id;
+      activity.platform = socket.transport === tmp4.POST_MESSAGE ? assets.EMBEDDED : assets.DESKTOP;
+      const application = isSocketConnected.getApplication(id);
+      let flag = activity.instance;
+      if (flag == null) {
+        flag = false;
       }
-      const application = isSocketConnected.getApplication(tmp19);
-      const instance = activity.instance;
       const party = activity.party;
       privacy = undefined;
-      if (null != party) {
+      if (party != null) {
         privacy = party.privacy;
       }
-      delete tmp.instance;
-      if (null != activity.party) {
-        delete tmp2.privacy;
+      delete tmp2[tmp];
+      if (activity.party != null) {
+        delete tmp3[tmp];
       }
-      obj1 = socket(activity[8]);
+      let obj1 = socket(activity[8]);
       let canLaunchFrameResult = null != application;
       if (canLaunchFrameResult) {
-        let obj2 = socket(activity[9]);
-        canLaunchFrameResult = obj2.canLaunchFrame(application);
+        canLaunchFrameResult = socket(tmp25[9]).canLaunchFrame(application);
+        const tmp23Result = socket(tmp25[9]);
       }
       if (canLaunchFrameResult) {
-        canLaunchFrameResult = tmp16;
+        canLaunchFrameResult = tmp18;
       }
-      const activityFlags = obj1.computeActivityFlags(activity, tmp21, tmp16, canLaunchFrameResult, privacy);
+      const activityFlags = obj1.computeActivityFlags(activity, flag, tmp18, canLaunchFrameResult, privacy);
       if (activityFlags > 0) {
         activity.flags = activityFlags;
       }
@@ -212,56 +212,63 @@ obj.handler = function handler(socket) {
         activity.type = constants2.PLAYING;
       }
       if (null != secrets) {
-        const values = pid(activity[10]).values(secrets);
+        const values = pid(tmp25[10]).values(secrets);
         const found = values.filter((arg0) => arg0);
         if (null != party2) {
+          let keys = tmp97;
+          keys = tmp24;
+          let tmp98Result = tmp98(tmp25[10]);
           const items1 = [party2.id];
-          if (obj14.intersection(found, items1).length > 0) {
+          if (tmp98Result.intersection(found, items1).length > 0) {
             if (!closure_10.includes(socket.application.id)) {
-              let tmp39 = pid(activity[6]);
-              obj2 = { errorCode: constants3.INVALID_ACTIVITY_SECRET };
-              const prototype2 = tmp39.prototype;
-              tmp39 = new tmp39(obj2, "secrets cannot match the party id");
-              throw tmp39;
+              obj1 = { errorCode: null };
+              obj1[0] = constants3.INVALID_ACTIVITY_SECRET;
+              const tmp43 = new tmp98(tmp25[6])(obj1, "secrets cannot match the party id");
+              throw tmp43;
             }
           }
-          obj14 = pid(activity[10]);
         }
-        let obj4 = pid(activity[10]);
-        if (obj4.uniq(found).length < found.length) {
-          let tmp70 = pid(activity[6]);
-          const obj3 = { errorCode: constants3.INVALID_ACTIVITY_SECRET };
-          const prototype5 = tmp70.prototype;
-          tmp70 = new tmp70(obj3, "secrets must be unique");
-          throw tmp70;
+        tmp98Result = tmp98(tmp25[10]);
+        if (tmp98Result.uniq(found).length < found.length) {
+          const obj2 = { errorCode: null };
+          obj2[0] = constants3.INVALID_ACTIVITY_SECRET;
+          const tmp79 = new tmp98(tmp25[6])(obj2, "secrets must be unique");
+          throw tmp79;
         } else if (null != buttons) {
-          let tmp61 = pid(activity[6]);
-          obj4 = { errorCode: constants3.INVALID_ACTIVITY_SECRET };
-          const prototype4 = tmp61.prototype;
-          tmp61 = new tmp61(obj4, "secrets cannot currently be sent with buttons");
-          throw tmp61;
+          const obj3 = { errorCode: null };
+          obj3[0] = constants3.INVALID_ACTIVITY_SECRET;
+          const tmp71 = new tmp98(tmp25[6])(obj3, "secrets cannot currently be sent with buttons");
+          throw tmp71;
         }
-        const obj13 = pid(activity[10]);
+        const obj13 = pid(tmp25[10]);
       }
+      const obj4 = {};
       if (null != buttons) {
-        obj1.button_urls = buttons.map((url) => url.url);
+        obj4.button_urls = buttons.map((url) => url.url);
         activity.buttons = buttons.map((label) => label.label);
       }
-      activity.metadata = obj1;
+      activity.metadata = obj4;
       if (null != timestamps) {
+        keys = globalThis;
         const _Object = Object;
-        const keys = Object.keys(timestamps);
-        for (let num6 = 0; num6 < keys.length; num6 = num6 + 1) {
-          let tmp48 = keys[num6];
+        keys = Object.keys(timestamps);
+        const iter = keys[Symbol.iterator]();
+        const nextResult = iter.next();
+        while (iter !== undefined) {
+          let tmp50 = nextResult;
           let _Date = Date;
-          let str4 = Date.now();
-          let str5 = timestamps[tmp48];
-          if (str4.toString().length - str5.toString().length > 2) {
+          let str6 = Date.now();
+          let str7 = timestamps[nextResult];
+          if (str6.toString().length - str7.toString().length > 2) {
+            let tmp51 = nextResult;
             let _Math = Math;
-            let tmp49 = pid;
-            let tmp50 = activity;
-            timestamps[tmp48] = Math.floor(timestamps[tmp48] * pid(activity[11]).Millis.SECOND);
+            let tmp52 = pid;
+            let tmp53 = pid;
+            let tmp54 = activity;
+            let tmp55 = activity;
+            timestamps[tmp50] = Math.floor(timestamps[tmp50] * pid(activity[11]).Millis.SECOND);
           }
+          continue;
         }
       }
       if (null == assets) {
@@ -272,7 +279,7 @@ obj.handler = function handler(socket) {
             const items2 = [, , ];
             ({ large_image: arr2[0], small_image: arr2[1], invite_cover_image: arr2[2] } = assets);
             resolved = socket(activity[12]).fetchAssetIds(socket.application.id, items2);
-            const obj6 = socket(activity[12]);
+            const obj7 = socket(activity[12]);
           }
         }
         const _Error = Error;
@@ -283,88 +290,82 @@ obj.handler = function handler(socket) {
         let details;
         let party;
         let secrets;
-        let tmp2;
-        let tmp3;
-        let tmp4;
-        [tmp2, tmp3, tmp4] = arg0;
+        let tmp5;
+        let tmp6;
+        let tmp7;
+        [tmp5, tmp6, tmp7] = arg0;
         if (null != assets) {
-          if (null != tmp2) {
-            assets.large_image = tmp2;
+          if (null != tmp5) {
+            tmp8.large_image = tmp5;
           } else {
-            delete tmp.large_image;
+            delete tmp4[tmp3];
           }
-          if (null != tmp3) {
-            assets.small_image = tmp3;
+          if (null != tmp6) {
+            tmp8.small_image = tmp6;
           } else {
-            delete tmp.small_image;
+            delete tmp4[tmp2];
           }
-          if (null != tmp4) {
-            assets.invite_cover_image = tmp4;
+          if (null != tmp7) {
+            tmp8.invite_cover_image = tmp7;
           } else {
-            delete tmp.invite_cover_image;
+            delete tmp4[tmp];
           }
         }
         if (isSocketConnected()) {
           let obj = pid(activity[7]);
-          obj = { type: "LOCAL_ACTIVITY_UPDATE", socketId: socket.id, pid, activity, partyPrivacy: privacy };
+          obj = { type: "LOCAL_ACTIVITY_UPDATE", socketId: null, pid: null, activity: null, partyPrivacy: null };
+          obj[1] = socket.id;
+          obj[2] = pid;
+          obj[3] = activity;
+          obj[4] = privacy;
           obj.dispatch(obj);
           ({ secrets, party } = activity);
-          obj = { application_id: socket.application.id };
-          ({ type: obj3.type, name: obj3.name, status_display_type: obj3.status_display_type, details } = activity);
-          let str2 = "";
-          let str3 = "";
-          if (null != details) {
-            str3 = details;
+          obj = { application_id: null, type: null, name: null, status_display_type: null, details: null, state: null, has_urls: null };
+          obj[0] = socket.application.id;
+          ({ type: obj3[1], name: obj3[2], status_display_type: obj3[3], details } = activity);
+          if (details == null) {
+            details = "";
           }
-          obj.details = str3;
-          const state = activity.state;
-          if (null != state) {
-            str2 = state;
+          obj[4] = details;
+          let str4 = tmp13.state;
+          if (str4 == null) {
+            str4 = "";
           }
-          obj.state = str2;
-          let tmp20 = null != activity.state_url;
-          if (!tmp20) {
-            tmp20 = null != activity.details_url;
-          }
-          if (!tmp20) {
-            assets = activity.assets;
+          obj[5] = str4;
+          let tmp16 = null != tmp13.state_url || null != tmp13.details_url;
+          if (!tmp16) {
+            assets = tmp13.assets;
             let large_url;
-            if (null != assets) {
+            if (assets != null) {
               large_url = assets.large_url;
             }
-            tmp20 = null != large_url;
+            tmp16 = null != large_url;
           }
-          if (!tmp20) {
-            const assets2 = activity.assets;
+          if (!tmp16) {
+            const assets2 = tmp13.assets;
             let small_url;
-            if (null != assets2) {
+            if (assets2 != null) {
               small_url = assets2.small_url;
             }
-            tmp20 = null != small_url;
+            tmp16 = null != small_url;
           }
-          obj.has_urls = tmp20;
+          obj[6] = tmp16;
           if (null != secrets) {
             obj.has_match_secret = secrets.match;
             obj.has_join_secret = secrets.join;
           }
-          if (null != assets) {
-            let invite_cover_image = assets.large_image;
-            if (!invite_cover_image) {
-              invite_cover_image = assets.small_image;
-            }
-            if (!invite_cover_image) {
-              invite_cover_image = assets.invite_cover_image;
-            }
-            obj.has_images = invite_cover_image;
+          if (null != tmp8) {
+            obj.has_images = tmp8.large_image || tmp8.small_image || tmp8.invite_cover_image;
+            const tmp19 = tmp8.large_image || tmp8.small_image || tmp8.invite_cover_image;
           }
           if (null != party) {
-            let tmp30;
+            let tmp20;
             if (null != party.size) {
               if (party.size[1] > 0) {
-                tmp30 = party.size[1];
+                tmp20 = party.size[1];
               }
             }
-            obj.party_max = tmp30;
+            obj.party_max = tmp20;
             obj.party_id = party.id;
           }
           pid(activity[13]).track(outer1_8.ACTIVITY_UPDATED, obj);
@@ -373,12 +374,12 @@ obj.handler = function handler(socket) {
       });
     }
   } else {
-    let tmp5 = pid(activity[6]);
-    obj = { errorCode: constants3.INVALID_COMMAND };
+    obj = { errorCode: null };
+    obj[0] = constants3.INVALID_COMMAND;
     const _HermesInternal = HermesInternal;
-    const prototype = tmp5.prototype;
-    tmp5 = new tmp5(obj, "command not available from \"" + socket.transport + "\" transport");
-    throw tmp5;
+    let tmp9 = pid(activity[6]);
+    tmp9 = new tmp9(obj, "command not available from \"" + socket.transport + "\" transport");
+    throw tmp9;
   }
 };
 obj[ME.RPCCommands.SET_ACTIVITY] = obj;

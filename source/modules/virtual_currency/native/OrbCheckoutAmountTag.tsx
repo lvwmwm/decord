@@ -1,46 +1,46 @@
-// Module ID: 11862
-// Function ID: 91876
+// Module ID: 11886
+// Function ID: 11887
 // Name: OrbCheckoutAmountTag
-// Dependencies: [27, 33, 4165, 689, 8681, 4161, 1212, 2]
+// Dependencies: [17, 21, 4189, 712, 8705, 4185, 1236, 2]
 // Exports: default
 
-// Module 11862 (OrbCheckoutAmountTag)
+// Module 11886 (OrbCheckoutAmountTag)
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_3;
-let closure_4;
-({ jsx: closure_3, jsxs: closure_4 } = jsxProd);
-let obj = {};
-obj = { flexDirection: "row", alignItems: "center", gap: require("_createForOfIteratorHelperLoose").space.PX_4 };
-obj.orbAmountTag = obj;
-obj.orbsIcon = { width: 14, height: 14 };
-let closure_5 = _createForOfIteratorHelperLoose.createStyles(obj);
-const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/virtual_currency/native/OrbCheckoutAmountTag.tsx");
+let c3;
+let c4;
+({ jsx: c3, jsxs: c4 } = jsxProd);
+let obj = { orbAmountTag: null, orbsIcon: null };
+obj = { flexDirection: "row", alignItems: "center", gap: require("Themes").space.PX_4 };
+obj[0] = obj;
+obj[1] = { width: 14, height: 14 };
+let closure_5 = createCacheKey.createStyles(obj);
+const result = require("createCacheKey").fileFinishedImporting("modules/virtual_currency/native/OrbCheckoutAmountTag.tsx");
 
 export default function OrbCheckoutAmountTag(orbAmount) {
   orbAmount = orbAmount.orbAmount;
   const tmp = callback2();
-  let obj = { style: tmp.orbAmountTag };
+  let obj = { style: tmp.orbAmountTag, children: null };
   obj = { size: "custom", color: "icon-strong", style: tmp.orbsIcon };
-  const items = [callback(require(8681) /* OrbsIcon */.OrbsIcon, obj), ];
-  obj = { variant: "text-md/semibold" };
+  const items = [callback(require(8705) /* OrbsIcon */.OrbsIcon, obj), ];
   if (null == orbAmount) {
-    const intl2 = require(1212) /* getSystemLocale */.intl;
-    let stringResult = intl2.string(require(1212) /* getSystemLocale */.t.pfChQr);
+    const intl2 = tmp5(1236).intl;
+    let stringResult = intl2.string(tmp5(1236).t.pfChQr);
   } else {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    const obj1 = { orbAmount };
-    stringResult = intl.formatToPlainString(require(1212) /* getSystemLocale */.t.W4DfeF, obj1);
+    const intl = tmp5(1236).intl;
+    obj = { orbAmount: null };
+    obj[0] = orbAmount;
+    stringResult = intl.formatToPlainString(tmp5(1236).t.W4DfeF, obj);
   }
-  obj.accessibilityLabel = stringResult;
+  const obj1 = { variant: "text-md/semibold", accessibilityLabel: stringResult, children: null };
   let str = "--";
   if (null != orbAmount) {
     str = orbAmount;
   }
-  obj.children = str;
-  items[1] = callback(require(4161) /* Text */.Text, obj);
-  obj.children = items;
+  obj1[2] = str;
+  items[1] = callback(require(4185) /* Text */.Text, obj1);
+  obj[1] = items;
   return closure_4(View, obj);
 };

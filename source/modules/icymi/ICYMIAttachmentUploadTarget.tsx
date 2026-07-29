@@ -1,66 +1,39 @@
-// Module ID: 4744
-// Function ID: 41099
-// Name: ICYMIAttachmentUploadTarget
-// Dependencies: [6, 7, 653, 4701, 2]
+// Module ID: 4766
+// Function ID: 4767
+// Name: getCreateAttachmentURL
+// Dependencies: [676, 4723, 2]
 
-// Module 4744 (ICYMIAttachmentUploadTarget)
-import _classCallCheck from "_classCallCheck";
-import _defineProperties from "_defineProperties";
+// Module 4766 (getCreateAttachmentURL)
 import ME from "ME";
 
-let closure_4;
-let closure_5;
-let closure_6;
-const require = arg1;
-({ Endpoints: closure_4, MAX_ATTACHMENT_SIZE: closure_5, MAX_UPLOAD_COUNT: closure_6 } = ME);
-const tmp3 = (() => {
-  class ICYMIAttachmentUploadTarget {
-    constructor() {
-      tmp = outer1_2(this, ICYMIAttachmentUploadTarget);
-      return;
-    }
-  }
-  let obj = {
-    key: "getCreateAttachmentURL",
-    value() {
-      return outer1_4.GRAVITY_ATTACHMENTS;
-    }
-  };
-  const items = [obj, , , , , ];
-  obj = {
-    key: "getDeleteUploadURL",
-    value(arg0) {
-      return outer1_4.MESSAGE_DELETE_UPLOAD(arg0);
-    }
-  };
-  items[1] = obj;
-  obj = {
-    key: "getMaxFileSize",
-    value() {
-      return outer1_5;
-    }
-  };
-  items[2] = obj;
-  items[3] = {
-    key: "getMaxAttachmentsCount",
-    value() {
-      return outer1_6;
-    }
-  };
-  items[4] = {
-    key: "getMaxTotalAttachmentSize",
-    value() {
-      return ICYMIAttachmentUploadTarget(outer1_1[3]).MAX_TOTAL_ATTACHMENT_SIZE;
-    }
-  };
-  items[5] = {
-    key: "shouldReactNativeCompressUploads",
-    get() {
-      return true;
-    }
-  };
-  return callback(ICYMIAttachmentUploadTarget, items);
-})();
-const result = require("ME").fileFinishedImporting("modules/icymi/ICYMIAttachmentUploadTarget.tsx");
+let c3;
+let c4;
+let obj1;
+({ Endpoints: obj1, MAX_ATTACHMENT_SIZE: c3, MAX_UPLOAD_COUNT: c4 } = ME);
+const result = require("set").fileFinishedImporting("modules/icymi/ICYMIAttachmentUploadTarget.tsx");
+class ICYMIAttachmentUploadTarget {
+}
+const prototype = ICYMIAttachmentUploadTarget.prototype;
+prototype["getCreateAttachmentURL"] = function getCreateAttachmentURL() {
+  return closure_2.GRAVITY_ATTACHMENTS;
+};
+prototype["getDeleteUploadURL"] = function getDeleteUploadURL(arg0) {
+  return closure_2.MESSAGE_DELETE_UPLOAD(arg0);
+};
+prototype["getMaxFileSize"] = function getMaxFileSize() {
+  return closure_3;
+};
+prototype["getMaxAttachmentsCount"] = function getMaxAttachmentsCount() {
+  return closure_4;
+};
+prototype["getMaxTotalAttachmentSize"] = function getMaxTotalAttachmentSize() {
+  return require(4723) /* items */.MAX_TOTAL_ATTACHMENT_SIZE;
+};
+Object.defineProperty(prototype, "shouldReactNativeCompressUploads", {
+  get: function shouldReactNativeCompressUploads() {
+    return true;
+  },
+  set: undefined
+});
 
-export default tmp3;
+export default ICYMIAttachmentUploadTarget;

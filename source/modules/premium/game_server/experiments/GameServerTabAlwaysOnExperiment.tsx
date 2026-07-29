@@ -1,14 +1,15 @@
-// Module ID: 15192
-// Function ID: 115429
+// Module ID: 15225
+// Function ID: 15226
 // Name: useIsGameServerTabAlwaysOnEnabled
-// Dependencies: [1428, 2]
+// Dependencies: [1452, 2]
 // Exports: useIsGameServerTabAlwaysOnEnabled
 
-// Module 15192 (useIsGameServerTabAlwaysOnEnabled)
+// Module 15225 (useIsGameServerTabAlwaysOnEnabled)
 import ApexExperiment from "ApexExperiment";
 
-const obj = { name: "2026-02-game-server-tab-always-on", kind: "user", defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } };
-let closure_0 = ApexExperiment.createApexExperiment(obj);
+const obj = { 1: null };
+obj[1] = { enabled: true };
+let closure_0 = ApexExperiment.createApexExperiment({ name: "2026-02-game-server-tab-always-on", kind: "user", defaultConfig: { enabled: false }, variations: obj });
 const result = require("set").fileFinishedImporting("modules/premium/game_server/experiments/GameServerTabAlwaysOnExperiment.tsx");
 
 export const useIsGameServerTabAlwaysOnEnabled = function useIsGameServerTabAlwaysOnEnabled(useGuildActionRows) {

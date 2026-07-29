@@ -1,38 +1,38 @@
-// Module ID: 10048
-// Function ID: 77586
+// Module ID: 10069
+// Function ID: 10070
 // Name: GuildDirectoryEditDescriptionTemplate
-// Dependencies: [5, 57, 31, 27, 10043, 10036, 33, 4165, 566, 4065, 7621, 1212, 7632, 7631, 4578, 2]
+// Dependencies: [5, 32, 19, 17, 10064, 10057, 21, 4189, 589, 4089, 7644, 1236, 7655, 7654, 4600, 2]
 // Exports: default
 
-// Module 10048 (GuildDirectoryEditDescriptionTemplate)
+// Module 10069 (GuildDirectoryEditDescriptionTemplate)
 import closure_3 from "DirectoryEntryTypes";
 import _slicedToArray from "_slicedToArray";
-import result from "result";
+import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import isFetching from "isFetching";
 import DirectoryEntryTypes from "DirectoryEntryTypes";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_10;
-let closure_11;
+let c10;
+let c9;
 let closure_12;
 let closure_6;
-let closure_7;
-let closure_9;
+let error;
+let unpackModuleId;
 const require = arg1;
-({ View: closure_6, Keyboard: closure_7 } = get_ActivityIndicator);
-({ DirectoryEntryCategories: closure_9, getHubCategories: closure_10 } = DirectoryEntryTypes);
-({ jsx: closure_11, jsxs: closure_12 } = jsxProd);
-let closure_13 = _createForOfIteratorHelperLoose.createStyles({ container: { marginHorizontal: 16, gap: 24 } });
-const result = require("result").fileFinishedImporting("modules/directory_channels/native/components/GuildDirectoryEditDescriptionTemplate.tsx");
+({ View: closure_6, Keyboard: error } = get_ActivityIndicator);
+({ DirectoryEntryCategories: c9, getHubCategories: c10 } = DirectoryEntryTypes);
+({ jsx: unpackModuleId, jsxs: closure_12 } = jsxProd);
+let closure_13 = createCacheKey.createStyles({ container: { marginHorizontal: 16, gap: 24 } });
+const result = require("noop").fileFinishedImporting("modules/directory_channels/native/components/GuildDirectoryEditDescriptionTemplate.tsx");
 
 export default function GuildDirectoryEditDescriptionTemplate(buttonLabel) {
   let c5;
   let c6;
   let directoryChannelId;
   let entry;
-  let obj2;
+  let obj3;
   let require;
   let tmp11;
   ({ onSubmit: require, entry, directoryChannelId } = buttonLabel);
@@ -42,86 +42,172 @@ export default function GuildDirectoryEditDescriptionTemplate(buttonLabel) {
   let React;
   c6 = undefined;
   function _handleSubmit() {
-    // CreateGeneratorClosureLongIndex (0x67)
-    const obj = callback(tmp);
-    return obj(...arguments);
+    const self = this;
+    const tmp = callback2(function*() {
+      if (v0 === 2) {
+        v0 = 3;
+        HermesBuiltin.throwTypeError();
+      } else if (tmp7 === 3) {
+        if (arg0 === 1) {
+          throw arg1;
+        } else if (arg0 === 2) {
+          let obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
+        } else {
+          return { value: "HermesInternal", done: null };
+        }
+      } else {
+        try {
+          v0 = 2;
+          if (0 === c4) {
+            if (arg0 === 1) {
+              v0 = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              v0 = 3;
+              obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            } else {
+              let closure_1 = tmp4;
+              let closure_0 = tmp8;
+              v0(true);
+              let c3 = 2;
+              c4 = 3;
+              v0 = 1;
+              const obj1 = { value: null, done: false };
+              obj1[0] = outer1_0(c4, outer1_2);
+              return obj1;
+            }
+          } else if (1 === tmp8) {
+            c3 = 0;
+            v0(false);
+            throw closure_2;
+          } else {
+            if (2 === tmp8) {
+              c3 = 1;
+              closure_0 = closure_2;
+              const tmp22 = new outer1_1(outer1_2[9])(closure_0);
+              callback(tmp22);
+              c3 = 0;
+              v0(false);
+              v0 = 3;
+            } else if (arg0 === 1) {
+              v0 = 3;
+              throw arg1;
+            } else if (arg0 !== 2) {
+              c3 = 1;
+            }
+            c3 = 0;
+            v0(false);
+            v0 = 3;
+            obj = { value: null, done: true };
+            obj[0] = arg1;
+            return obj;
+          }
+        } catch (tmp38) {
+          closure_2 = tmp38;
+          if (tmp5 === c3) {
+            v0 = tmp3;
+            throw tmp38;
+          } else if (tmp2 === tmp40) {
+            c4 = tmp2;
+          } else {
+            c4 = tmp;
+          }
+        }
+      }
+    });
+    const _handleSubmit = tmp;
+    const apply = tmp.apply;
+    if (typeof apply === "unknown") {
+      let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+    } else {
+      applyArgumentsResult = apply(self, arguments);
+    }
+    return applyArgumentsResult;
   }
-  const tmp = callback3();
+  let tmp = callback2();
   let obj = require(first[8]);
-  const items = [_isNativeReflectConstruct];
-  let stateFromStores = obj.useStateFromStores(items, () => outer1_8.getCurrentCategoryId(directoryChannelId));
+  const items = [isFetching];
+  let obj1 = React;
   let primaryCategoryId;
-  if (null != entry) {
+  const stateFromStores = obj.useStateFromStores(items, () => outer1_8.getCurrentCategoryId(directoryChannelId));
+  if (entry != null) {
     primaryCategoryId = entry.primaryCategoryId;
   }
-  if (null != primaryCategoryId) {
-    stateFromStores = primaryCategoryId;
+  if (primaryCategoryId == null) {
+    primaryCategoryId = stateFromStores;
   }
-  const tmp5 = first1(React.useState(stateFromStores), 2);
-  first = tmp5[0];
-  closure_3 = tmp5[1];
-  let description;
-  if (null != entry) {
-    description = entry.description;
+  const tmp7 = first1(React.useState(primaryCategoryId), 2);
+  first = tmp7[0];
+  closure_3 = tmp7[1];
+  let str;
+  if (entry != null) {
+    str = entry.description;
   }
-  let str = "";
-  if (null != description) {
-    str = description;
+  if (str == null) {
+    str = "";
   }
-  const tmp9 = first1(React.useState(str), 2);
-  first1 = tmp9[0];
+  let tmp6Result = tmp6(obj1.useState(str), 2);
+  first1 = tmp6Result[0];
+  tmp6Result = tmp6(obj1.useState(false), 2);
+  [tmp11, c5] = tmp6Result;
   const arr = callback(directoryChannelId);
-  [tmp11, c5] = first1(React.useState(false), 2);
-  const tmp10 = first1(React.useState(false), 2);
-  [obj2, c6] = first1(React.useState(null), 2);
-  obj = { style: tmp.container };
-  obj = {};
-  const intl = require(first[11]).intl;
-  obj.label = intl.string(require(first[11]).t.FFFAGt);
-  const intl2 = require(first[11]).intl;
-  obj.description = intl2.string(require(first[11]).t["/zbXqm"]);
-  obj.value = first1;
-  obj.onChange = tmp9[1];
-  const intl3 = require(first[11]).intl;
-  obj.placeholder = intl3.string(require(first[11]).t.VzuITC);
-  obj.maxLength = 200;
+  [obj3, c6] = first1(obj1.useState(null), 2);
+  obj = { style: tmp.container, children: null };
+  obj = { label: null, description: null, value: null, onChange: null, placeholder: null, maxLength: 200, status: null, errorMessage: null, submitBehavior: "blurAndSubmit", returnKeyType: "done" };
+  const intl = tmp2(tmp3[11]).intl;
+  obj[0] = intl.string(require(first[11]).t.FFFAGt);
+  const intl2 = tmp2(tmp3[11]).intl;
+  obj[1] = intl2.string(require(first[11]).t["/zbXqm"]);
+  obj[2] = first1;
+  obj[3] = tmp6Result[1];
+  const intl3 = tmp2(tmp3[11]).intl;
+  obj[4] = intl3.string(require(first[11]).t.VzuITC);
   let str2 = "default";
-  if (null != obj1) {
+  if (null != obj2) {
     str2 = "error";
   }
-  obj.status = str2;
+  obj[6] = str2;
   let anyErrorMessage;
-  if (null != obj1) {
-    anyErrorMessage = obj1.getAnyErrorMessage();
+  if (obj2 != null) {
+    anyErrorMessage = obj2.getAnyErrorMessage();
   }
-  obj.errorMessage = anyErrorMessage;
-  obj.submitBehavior = "blurAndSubmit";
-  obj.returnKeyType = "done";
-  const items1 = [callback2(require(first[10]).TextArea, obj), , ];
-  obj1 = {};
-  const intl4 = require(first[11]).intl;
-  obj1.title = intl4.string(require(first[11]).t.Olo8FB);
-  obj1.defaultValue = first;
-  obj1.onChange = function onChange(arg0) {
+  obj[7] = anyErrorMessage;
+  const items1 = [closure_11(require(first[10]).TextArea, obj), , ];
+  obj1 = { title: null, defaultValue: null, onChange: null, hasIcons: false, children: null };
+  const intl4 = tmp2(tmp3[11]).intl;
+  obj1[0] = intl4.string(require(first[11]).t.Olo8FB);
+  obj1[1] = first;
+  obj1[2] = function onChange(arg0) {
     _handleSubmit.dismiss();
-    callback(arg0);
+    callback2(arg0);
   };
-  obj1.hasIcons = false;
-  obj1.children = arr.map((label) => outer1_11(outer1_0(first[13]).TableRadioRow, { label: label.label, value: label.value }, label.value));
-  items1[1] = callback2(require(first[12]).TableRadioGroup, obj1);
-  obj2 = {};
-  let tmp18 = 0 === first1.length;
-  if (!tmp18) {
-    tmp18 = first === constants.ALL;
+  obj1[4] = arr.map((label) => callback3(callback(first[13]).TableRadioRow, { label: label.label, value: label.value }, label.value));
+  items1[1] = closure_11(require(first[12]).TableRadioGroup, obj1);
+  let tmp17 = 0 === first1.length;
+  if (!tmp17) {
+    tmp17 = first === constants.ALL;
   }
-  obj2.disabled = tmp18;
-  obj2.onPress = function handleSubmit() {
-    return _handleSubmit(...arguments);
+  obj2 = {
+    disabled: tmp17,
+    onPress: function handleSubmit() {
+      const self = this;
+      const apply = _handleSubmit.apply;
+      if (typeof apply === "unknown") {
+        let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+      } else {
+        applyArgumentsResult = apply(self, arguments);
+      }
+      return applyArgumentsResult;
+    },
+    loading: tmp11,
+    text: buttonLabel.buttonLabel,
+    size: "lg"
   };
-  obj2.loading = tmp11;
-  obj2.text = buttonLabel.buttonLabel;
-  obj2.size = "lg";
-  items1[2] = callback2(require(first[14]).Button, obj2);
-  obj.children = items1;
+  items1[2] = closure_11(require(first[14]).Button, obj2);
+  obj[1] = items1;
   return closure_12(c6, obj);
 };

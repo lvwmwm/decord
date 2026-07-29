@@ -1,50 +1,48 @@
-// Module ID: 12287
-// Function ID: 95763
-// Dependencies: [31, 33, 4165, 689, 1557, 3838, 4695, 10874, 4161, 1212, 2]
+// Module ID: 12309
+// Function ID: 12310
+// Dependencies: [19, 21, 4189, 712, 1581, 3862, 4717, 10898, 4185, 1236, 2]
 
-// Module 12287
+// Module 12309
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import importAllResult from "result";
+import createCacheKey from "createCacheKey";
+import importAllResult from "noop";
 
 const require = arg1;
-let closure_4 = _createForOfIteratorHelperLoose.createStyles((arg0) => {
-  let obj = {};
-  obj = { backgroundColor: importDefault(689).colors.CONTROL_OVERLAY_SECONDARY_BACKGROUND_ACTIVE, marginVertical: importDefault(689).space.PX_8, marginHorizontal: importDefault(689).space.PX_8, marginRight: importDefault(689).space.PX_8 + arg0, paddingHorizontal: importDefault(689).space.PX_8, paddingVertical: importDefault(689).space.PX_4, borderRadius: importDefault(689).radii.sm, alignSelf: "flex-end" };
-  obj.container = obj;
+let closure_4 = createCacheKey.createStyles((arg0) => {
+  let obj = { container: null };
+  obj = { backgroundColor: importDefault(712).colors.CONTROL_OVERLAY_SECONDARY_BACKGROUND_ACTIVE, marginVertical: importDefault(712).space.PX_8, marginHorizontal: importDefault(712).space.PX_8, marginRight: importDefault(712).space.PX_8 + arg0, paddingHorizontal: importDefault(712).space.PX_8, paddingVertical: importDefault(712).space.PX_4, borderRadius: importDefault(712).radii.sm, alignSelf: "flex-end" };
+  obj[0] = obj;
   return obj;
 });
-const memoResult = require("result").memo(function MediaModalOverlayAltTextButton(description) {
-  description = description.description;
-  let str;
-  str = "";
-  if (null != description) {
-    str = description;
+const memoResult = require("noop").memo(function MediaModalOverlayAltTextButton(description) {
+  let str = description.description;
+  str = undefined;
+  if (str == null) {
+    str = "";
   }
-  const ViewImageDescriptions = str(3838).ViewImageDescriptions;
-  let tmp2 = null;
+  const ViewImageDescriptions = str(3862).ViewImageDescriptions;
+  let tmp4 = null;
   if (ViewImageDescriptions.useSetting()) {
-    tmp2 = null;
+    tmp4 = null;
     if (0 !== str.length) {
-      let obj = {
-        style: tmp.container,
-        onPress() {
-              const obj = {};
-              const str = "";
-              obj.description = str;
-              outer1_1(outer1_2[7])(obj);
-            },
-        hitSlop: { top: 6, bottom: 6, left: 6, right: 6 }
+      let obj = { style: null, onPress: null, hitSlop: null, children: null };
+      obj[0] = tmp2.container;
+      obj[1] = function onPress() {
+        if (str == null) {
+          str = "";
+        }
+        outer1_1(outer1_2[7])({ description: str });
       };
-      obj = { variant: "text-xs/semibold", color: "text-overlay-light" };
-      const intl = str(1212).intl;
-      obj.children = intl.string(str(1212).t.Q5VqrN);
-      obj.children = jsx(str(4161).Text, { variant: "text-xs/semibold", color: "text-overlay-light" });
-      tmp2 = jsx(str(4695).PressableOpacity, { variant: "text-xs/semibold", color: "text-overlay-light" });
+      obj[2] = { top: 6, bottom: 6, left: 6, right: 6 };
+      obj = { variant: "text-xs/semibold", color: "text-overlay-light", children: null };
+      const intl = tmp3(1236).intl;
+      obj[2] = intl.string(tmp3(1236).t.Q5VqrN);
+      obj[3] = jsx(tmp3(4185).Text, { variant: "text-xs/semibold", color: "text-overlay-light", children: null });
+      tmp4 = jsx(tmp3(4717).PressableOpacity, { variant: "text-xs/semibold", color: "text-overlay-light", children: null });
     }
   }
-  return tmp2;
+  return tmp4;
 });
-const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/media_viewer/native/components/overlay/MediaModalOverlayAltText.tsx");
+const result = require("createCacheKey").fileFinishedImporting("modules/media_viewer/native/components/overlay/MediaModalOverlayAltText.tsx");
 
 export default memoResult;

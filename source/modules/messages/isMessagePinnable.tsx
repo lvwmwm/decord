@@ -1,37 +1,35 @@
-// Module ID: 9536
-// Function ID: 74211
+// Module ID: 9560
+// Function ID: 9561
 // Name: isMessagePinnable
-// Dependencies: [3793, 653, 5904, 6030, 2]
+// Dependencies: [3817, 676, 5923, 6048, 2]
 // Exports: default
 
-// Module 9536 (isMessagePinnable)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 9560 (isMessagePinnable)
+import getUncachedChannelPermissions from "getUncachedChannelPermissions";
 import ME from "ME";
 
-let closure_4;
-let closure_5;
+let c4;
+let c5;
 const require = arg1;
-({ ChannelTypes: closure_4, Permissions: closure_5 } = ME);
+({ ChannelTypes: c4, Permissions: c5 } = ME);
 const result = require("isSystemMessage").fileFinishedImporting("modules/messages/isMessagePinnable.tsx");
 
 export default function isMessagePinnable(arg0, isSystemDM) {
-  let isActiveChannelOrUnarchivableThread = !isSystemDM.isSystemDM();
-  if (isActiveChannelOrUnarchivableThread) {
-    isActiveChannelOrUnarchivableThread = !importDefault(5904)(arg0);
+  const isSystemDMResult = isSystemDM.isSystemDM();
+  let isActiveChannelOrUnarchivableThread = !isSystemDMResult;
+  if (!isSystemDMResult) {
+    isActiveChannelOrUnarchivableThread = !importDefault(5923)(arg0);
   }
-  let canResult = _isNativeReflectConstruct.can(constants2.PIN_MESSAGES, isSystemDM);
-  if (canResult) {
-    canResult = _isNativeReflectConstruct.can(constants2.READ_MESSAGE_HISTORY, isSystemDM);
-  }
+  let isPrivateResult = getUncachedChannelPermissions.can(constants2.PIN_MESSAGES, isSystemDM) && getUncachedChannelPermissions.can(constants2.READ_MESSAGE_HISTORY, isSystemDM);
   if (isActiveChannelOrUnarchivableThread) {
-    if (!canResult) {
-      canResult = isSystemDM.isPrivate();
+    if (!isPrivateResult) {
+      isPrivateResult = isSystemDM.isPrivate();
     }
-    isActiveChannelOrUnarchivableThread = canResult;
+    isActiveChannelOrUnarchivableThread = isPrivateResult;
   }
   if (isActiveChannelOrUnarchivableThread) {
-    isActiveChannelOrUnarchivableThread = require(6030) /* useCanStartPublicThread */.getIsActiveChannelOrUnarchivableThread(isSystemDM);
-    const obj = require(6030) /* useCanStartPublicThread */;
+    isActiveChannelOrUnarchivableThread = require(6048) /* useCanUnarchiveThread */.getIsActiveChannelOrUnarchivableThread(isSystemDM);
+    const obj2 = require(6048) /* useCanUnarchiveThread */;
   }
   if (isActiveChannelOrUnarchivableThread) {
     isActiveChannelOrUnarchivableThread = isSystemDM.type !== constants.GUILD_VOICE;

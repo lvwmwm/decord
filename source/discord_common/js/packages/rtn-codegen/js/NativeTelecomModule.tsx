@@ -1,9 +1,9 @@
-// Module ID: 16290
-// Function ID: 126255
+// Module ID: 16325
+// Function ID: 16326
 // Name: enforcing
-// Dependencies: [27, 2]
+// Dependencies: [17, 2]
 
-// Module 16290 (enforcing)
+// Module 16325 (enforcing)
 import { TurboModuleRegistry } from "get ActivityIndicator";
 
 const enforcing = TurboModuleRegistry.getEnforcing("NativeTelecomModule");

@@ -1,16 +1,16 @@
-// Module ID: 14313
-// Function ID: 109753
+// Module ID: 14335
+// Function ID: 14336
 // Name: useLatestChannelMessage
-// Dependencies: [57, 31, 12747, 566, 14314, 2]
+// Dependencies: [32, 19, 12769, 589, 14336, 2]
 // Exports: default
 
-// Module 14313 (useLatestChannelMessage)
+// Module 14335 (useLatestChannelMessage)
 import _slicedToArray from "_slicedToArray";
-import { useEffect } from "result";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import { useEffect } from "noop";
+import initialize from "initialize";
 
 const require = arg1;
-const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/message_previews/useLatestChannelMessage.tsx");
+const result = require("initialize").fileFinishedImporting("modules/message_previews/useLatestChannelMessage.tsx");
 
 export default function useLatestChannelMessage(arg0) {
   let c1;
@@ -23,7 +23,7 @@ export default function useLatestChannelMessage(arg0) {
   id = undefined;
   let callback;
   ({ guild_id: c1, id } = arg0);
-  let items = [_createForOfIteratorHelperLoose];
+  let items = [initialize];
   const tmp = callback(flag(id[3]).useStateFromStoresArray(items, () => {
     if (flag) {
       const items = [null, true];
@@ -36,7 +36,11 @@ export default function useLatestChannelMessage(arg0) {
   callback = tmp2;
   let items1 = [id, tmp[1]];
   useEffect(() => {
-    if (!tmp) {
+    let tmp2 = null == id;
+    if (!tmp2) {
+      tmp2 = c3;
+    }
+    if (!tmp2) {
       _undefined(id[4]).addWant(id);
       const obj = _undefined(id[4]);
     }

@@ -1,14 +1,13 @@
-// Module ID: 4735
-// Function ID: 41065
+// Module ID: 4757
+// Function ID: 4758
 // Name: useMobileLosslessImageUploadV2Experiment
-// Dependencies: [1428, 2]
+// Dependencies: [1452, 2]
 // Exports: useMobileLosslessImageUploadV2Experiment
 
-// Module 4735 (useMobileLosslessImageUploadV2Experiment)
+// Module 4757 (useMobileLosslessImageUploadV2Experiment)
 import ApexExperiment from "ApexExperiment";
 
-const obj = { kind: "user", name: "2025-12-mobile-lossless-image-upload-v2", defaultConfig: { enabled: false }, variations: { [0]: { enabled: false }, [1]: { enabled: true } } };
-let closure_0 = ApexExperiment.createApexExperiment(obj);
+let closure_0 = ApexExperiment.createApexExperiment({ kind: "user", name: "2025-12-mobile-lossless-image-upload-v2", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true } } });
 const result = require("set").fileFinishedImporting("modules/image_upload/MobileLosslessImageUploadV2Experiment.tsx");
 
 export const useMobileLosslessImageUploadV2Experiment = function useMobileLosslessImageUploadV2Experiment(location) {

@@ -1,207 +1,138 @@
-// Module ID: 5099
-// Function ID: 44022
-// Name: _createForOfIteratorHelperLoose
-// Dependencies: [1348, 1908, 1918, 1911, 3793, 1907, 4360, 1910, 653, 1355, 675, 4359, 1916, 686, 1198, 2]
-// Exports: startImpersonating, stopImpersonating, updateImpersonatedData, updateImpersonatedRoles
+// Module ID: 5121
+// Function ID: 5122
+// Name: updateImpersonating
+// Dependencies: [1372, 1932, 1942, 1935, 3817, 1931, 4385, 1934, 676, 1379, 698, 4384, 1940, 709, 1222, 2]
+// Exports: startImpersonating, stopImpersonating, updateImpersonatedChannels, updateImpersonatedData, updateImpersonatedRoles
 
-// Module 5099 (_createForOfIteratorHelperLoose)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_4 from "_isNativeReflectConstruct";
-import closure_5 from "_isNativeReflectConstruct";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import closure_7 from "_isNativeReflectConstruct";
-import closure_8 from "_isNativeReflectConstruct";
-import closure_9 from "_isNativeReflectConstruct";
-import closure_10 from "_isNativeReflectConstruct";
+// Module 5121 (updateImpersonating)
+import ensureGuildLoaded from "ensureGuildLoaded";
+import comparator from "comparator";
+import trackCommunicationDisabled from "trackCommunicationDisabled";
+import createGuildRoleRecordFromRust from "createGuildRoleRecordFromRust";
+import getUncachedChannelPermissions from "getUncachedChannelPermissions";
+import handleConnectionOpen from "handleConnectionOpen";
+import updateUserGuildSettingsInternal from "updateUserGuildSettingsInternal";
+import initialize from "initialize";
 import ME from "ME";
 import { isStaticChannelRoute } from "set";
 
-let closure_11;
 let closure_12;
-let closure_13;
+let map1;
+let unpackModuleId;
 const require = arg1;
-function _createForOfIteratorHelperLoose(iterable) {
-  let closure_0 = iterable;
-  iterable = "undefined" !== typeof Symbol;
-  if (iterable) {
-    const _Symbol = Symbol;
-    iterable = iterable[Symbol.iterator];
-  }
-  if (!iterable) {
-    iterable = iterable[Symbol.iterator];
-  }
-  if (iterable) {
-    const iter = iterable.call(iterable);
-    const next = iter.next;
-    return next.bind(iter);
-  } else {
-    const _Array = Array;
-    let tmp = iterable;
-    if (!Array.isArray(iterable)) {
-      let tmp2;
-      if (iterable) {
-        if ("string" === typeof iterable) {
-          tmp2 = _arrayLikeToArray(iterable, undefined);
-        } else {
-          const toString = {}.toString;
-          const substr = toString.call(iterable).slice(8, -1);
-          let name = substr;
-          if (tmp3) {
-            name = iterable.constructor.name;
-          }
-          if ("Map" !== name) {
-            if ("Set" !== name) {
-              if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(iterable, undefined);
-              } else {
-                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
-              }
-            }
-            tmp2 = arr;
-          }
-          const _Array2 = Array;
-          arr = Array.from(iterable);
-          const callResult = toString.call(iterable);
-          tmp3 = "Object" === substr && iterable.constructor;
-        }
-      }
-      tmp = tmp2;
-      if (!tmp2) {
-        const _TypeError = TypeError;
-        const typeError = new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
-        throw typeError;
-      }
-    }
-    if (tmp) {
-      closure_0 = tmp;
-    }
-    let c1 = 0;
-    return () => {
-      if (closure_1 >= length.length) {
-        let obj = { done: true };
-      } else {
-        obj = { done: false };
-        closure_1 = tmp3 + 1;
-        obj.value = length[+closure_1];
-      }
-      return obj;
-    };
-  }
-}
-function _arrayLikeToArray(arg0, arg1) {
-  let length;
-  if (tmp) {
-    length = arg0.length;
-  }
-  const ArrayResult = Array(length);
-  for (let num = 0; num < length; num = num + 1) {
-    ArrayResult[num] = arg0[num];
-  }
-  return ArrayResult;
-}
-function updateImpersonating(guildId, type) {
-  data = data.getData(guildId);
+function updateImpersonating(closure_0, type) {
+  data = data.getData(closure_0);
   if (tmp2) {
-    let obj = importDefault(675);
-    obj = {};
+    let obj = importDefault(698);
+    obj = { num_roles: null };
     const _Object = Object;
-    obj.num_roles = Object.keys(data.roles).length;
-    const merged = Object.assign(require(4359) /* _createForOfIteratorHelperLoose */.collectGuildAnalyticsMetadata(guildId));
-    obj["is_viewing_as_member"] = data.type === require(1916) /* ImpersonateType */.ImpersonateType.NEW_MEMBER;
+    obj[0] = Object.keys(data.roles).length;
+    const merged = Object.assign(require(4384) /* collectGuildAnalyticsMetadata */.collectGuildAnalyticsMetadata(closure_0));
+    obj.is_viewing_as_member = data.type === require(1940) /* ImpersonateType */.ImpersonateType.NEW_MEMBER;
     obj.track(constants2.VIEW_AS_ROLES_SELECTED, obj);
-    const obj3 = require(4359) /* _createForOfIteratorHelperLoose */;
-    obj = { type: "IMPERSONATE_UPDATE", guildId };
+    const obj3 = require(4384) /* collectGuildAnalyticsMetadata */;
+    const tmp7 = require;
+    obj = { type: "IMPERSONATE_UPDATE", guildId: null, data: null };
+    obj[1] = closure_0;
     const obj1 = {};
     const merged1 = Object.assign(data);
     const merged2 = Object.assign(type);
-    obj.data = obj1;
-    importDefault(686).dispatch(obj);
-    puntFromSelectedChannelIfInaccessible(guildId);
-    const obj4 = importDefault(686);
+    obj[2] = obj1;
+    importDefault(709).dispatch(obj);
+    const channelId = store2.getChannelId(closure_0);
+    if (null == channelId) {
+      if (!getUncachedChannelPermissions.can(constants.VIEW_CHANNEL, tmp21)) {
+        const defaultChannel = store.getDefaultChannel(closure_0);
+        if (null != defaultChannel) {
+          tmp7(1222).transitionTo(closure_12.CHANNEL(closure_0, defaultChannel.id));
+          const tmp7Result = tmp7(1222);
+        }
+      }
+    }
+    const obj4 = importDefault(709);
   }
 }
-function puntFromSelectedChannelIfInaccessible(guildId) {
-  channelId = channelId.getChannelId(guildId);
+({ Permissions: unpackModuleId, Routes: closure_12, AnalyticEvents: map1 } = ME);
+let result = require("trackCommunicationDisabled").fileFinishedImporting("modules/impersonate/ImpersonateActionCreators.tsx");
+
+export const startImpersonating = function startImpersonating(guildId, data) {
+  let obj = importDefault(698);
+  obj = { num_roles: Object.keys(data.roles).length };
+  const merged = Object.assign(require(4384) /* collectGuildAnalyticsMetadata */.collectGuildAnalyticsMetadata(guildId));
+  obj.is_viewing_as_member = data.type === require(1940) /* ImpersonateType */.ImpersonateType.NEW_MEMBER;
+  obj.track(constants2.VIEW_AS_ROLES_SELECTED, obj);
+  const obj3 = require(4384) /* collectGuildAnalyticsMetadata */;
+  const tmp2 = require;
+  obj = { type: "IMPERSONATE_UPDATE", guildId, data };
+  importDefault(709).dispatch(obj);
+  const channelId = store2.getChannelId(guildId);
   if (null == channelId) {
-    if (!closure_7.can(constants.VIEW_CHANNEL, tmp2)) {
-      defaultChannel = defaultChannel.getDefaultChannel(guildId);
+    if (!getUncachedChannelPermissions.can(constants.VIEW_CHANNEL, tmp7)) {
+      const defaultChannel = store.getDefaultChannel(guildId);
       if (null != defaultChannel) {
-        require(1198) /* shouldNavigate */.transitionTo(closure_12.CHANNEL(guildId, defaultChannel.id));
-        const obj = require(1198) /* shouldNavigate */;
+        tmp2(1222).transitionTo(closure_12.CHANNEL(guildId, defaultChannel.id));
+        const tmp2Result = tmp2(1222);
       }
     }
   }
-}
-function updateImpersonatedChannels(guildId, items1, items2) {
-  const set = new Set(optedInChannels.getOptedInChannels(guildId));
-  const item = items1.forEach((arg0) => set.add(arg0));
-  const item1 = items2.forEach((arg0) => set.delete(arg0));
-  updateImpersonating(guildId, { type: set(1916).ImpersonateType.NEW_MEMBER, optInChannels: set });
-}
-({ Permissions: closure_11, Routes: closure_12, AnalyticEvents: closure_13 } = ME);
-let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/impersonate/ImpersonateActionCreators.tsx");
-
-export const startImpersonating = function startImpersonating(guildId, data) {
-  let obj = importDefault(675);
-  obj = { num_roles: Object.keys(data.roles).length };
-  const merged = Object.assign(require(4359) /* _createForOfIteratorHelperLoose */.collectGuildAnalyticsMetadata(guildId));
-  obj["is_viewing_as_member"] = data.type === require(1916) /* ImpersonateType */.ImpersonateType.NEW_MEMBER;
-  obj.track(constants2.VIEW_AS_ROLES_SELECTED, obj);
-  const obj3 = require(4359) /* _createForOfIteratorHelperLoose */;
-  obj = { type: "IMPERSONATE_UPDATE", guildId, data };
-  importDefault(686).dispatch(obj);
-  puntFromSelectedChannelIfInaccessible(guildId);
 };
 export { updateImpersonating };
 export const stopImpersonating = function stopImpersonating(guildId) {
-  let obj = importDefault(686);
+  let obj = importDefault(709);
   obj = { type: "IMPERSONATE_STOP", guildId };
   obj.dispatch(obj);
 };
-export { updateImpersonatedChannels };
-export const updateImpersonatedRoles = function updateImpersonatedRoles(guildId, arg1) {
-  let done;
-  (function optIntoPrivateChannelsForGrantedRolesForPreview(guildId, arg1) {
+export const updateImpersonatedChannels = function updateImpersonatedChannels(guildId1, items1, items2) {
+  const set = new Set(optedInChannels.getOptedInChannels(guildId1));
+  const item = items1.forEach((arg0) => set.add(arg0));
+  const item1 = items2.forEach((arg0) => set.delete(arg0));
+  updateImpersonating(guildId1, { type: set(1940).ImpersonateType.NEW_MEMBER, optInChannels: set });
+};
+export const updateImpersonatedRoles = function updateImpersonatedRoles(guildId, c2) {
+  (function optIntoPrivateChannelsForGrantedRolesForPreview(guildId, c2) {
     let closure_0 = guildId;
-    let items = [...outer1_4.getSelectableChannelIds(guildId), ...outer1_4.getVocalChannelIds(guildId)];
-    let closure_2 = Array.from(arg1);
-    const result = outer1_4.addConditionalChangeListener(() => {
-      selfMember = outer2_5.getSelfMember(selfMember);
+    let items = [...comparator.getSelectableChannelIds(guildId), ...comparator.getVocalChannelIds(guildId)];
+    let closure_2 = Array.from(c2);
+    const result = store.addConditionalChangeListener(() => {
+      const selfMember = outer1_5.getSelfMember(set);
+      set = selfMember;
       if (null == selfMember) {
         return false;
       } else if (closure_2.some((arg0) => {
-        const roles = selfMember.roles;
+        const roles = set.roles;
         return !roles.includes(arg0);
       })) {
         return true;
       } else {
         const items = [];
-        let arraySpreadResult = HermesBuiltin.arraySpread(outer2_4.getSelectableChannelIds(selfMember), 0);
-        arraySpreadResult = HermesBuiltin.arraySpread(outer2_4.getVocalChannelIds(selfMember), arraySpreadResult);
-        const found = items.filter((arg0) => !outer1_1.includes(arg0));
+        let arraySpreadResult = HermesBuiltin.arraySpread(outer1_4.getSelectableChannelIds(tmp), 0);
+        arraySpreadResult = HermesBuiltin.arraySpread(outer1_4.getVocalChannelIds(tmp), arraySpreadResult);
+        const found = items.filter((arg0) => !closure_1.includes(arg0));
         if (found.length > 0) {
-          outer2_19(selfMember, found, []);
+          const items1 = [];
+          const _Set = Set;
+          set = new Set(outer1_9.getOptedInChannels(tmp));
+          const item = found.forEach((arg0) => set.add(arg0));
+          const item1 = items1.forEach((arg0) => set.delete(arg0));
+          const obj = { type: null, optInChannels: null };
+          obj[0] = guildId(closure_2[12]).ImpersonateType.NEW_MEMBER;
+          obj[1] = set;
+          outer1_15(tmp, obj);
         }
         return false;
       }
     });
-  })(guildId, arg1);
+  })(guildId, c2);
   let obj = {};
-  const tmp2 = _createForOfIteratorHelperLoose(manyRoles.getManyRoles(guildId, arg1));
-  let iter = tmp2();
-  if (!iter.done) {
-    do {
-      let value = iter.value;
-      obj[value.id] = value;
-      let iter2 = tmp2();
-      iter = iter2;
-      done = iter2.done;
-    } while (!done);
+  manyRoles = manyRoles.getManyRoles(guildId, c2);
+  for (const item10013 of manyRoles) {
+    obj[item10013.id] = item10013;
+    continue;
   }
-  obj = { type: require(1916) /* ImpersonateType */.ImpersonateType.NEW_MEMBER, roles: obj };
+  obj = { type: require(1940) /* ImpersonateType */.ImpersonateType.NEW_MEMBER, roles: obj };
   updateImpersonating(guildId, obj);
 };
-export const updateImpersonatedData = function updateImpersonatedData(id, arg1) {
+export const updateImpersonatedData = function updateImpersonatedData(closure_0, arg1) {
   const merged = Object.assign(arg1);
-  updateImpersonating(id, { type: require(1916) /* ImpersonateType */.ImpersonateType.NEW_MEMBER });
+  updateImpersonating(closure_0, { type: require(1940) /* ImpersonateType */.ImpersonateType.NEW_MEMBER });
 };

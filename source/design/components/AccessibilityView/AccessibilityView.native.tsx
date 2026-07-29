@@ -1,15 +1,15 @@
-// Module ID: 4560
-// Function ID: 39893
+// Module ID: 4583
+// Function ID: 4584
 // Name: AccessibilityView
-// Dependencies: [31, 27, 33, 4561, 4026, 2]
+// Dependencies: [19, 17, 21, 4584, 4050, 2]
 
-// Module 4560 (AccessibilityView)
+// Module 4583 (AccessibilityView)
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
-import importAllResult from "result";
-import importDefaultResult from "module_4026";
+import importAllResult from "noop";
+import importDefaultResult from "module_4050";
 
-const forwardRefResult = require("result").forwardRef((accessibilityViewIsModal, ref) => {
+const forwardRefResult = require("noop").forwardRef((accessibilityViewIsModal, ref) => {
   let nativeID;
   let onAccessibilityEscape;
   let flag = accessibilityViewIsModal.accessibilityViewIsModal;
@@ -17,9 +17,7 @@ const forwardRefResult = require("result").forwardRef((accessibilityViewIsModal,
     flag = false;
   }
   ({ nativeID, onAccessibilityEscape } = accessibilityViewIsModal);
-  let obj = { accessibilityViewIsModal: 0, nativeID: 0, collapsable: 0, onAccessibilityEscape: 0 };
-  Object.setPrototypeOf(null);
-  const merged = Object.assign(accessibilityViewIsModal, obj);
+  const merged = Object.assign(accessibilityViewIsModal, Object.create(null));
   if (flag) {
     if (null == onAccessibilityEscape) {
       const _Error = Error;
@@ -27,20 +25,19 @@ const forwardRefResult = require("result").forwardRef((accessibilityViewIsModal,
       throw error;
     }
   }
-  obj = { accessibilityViewIsModal: flag, nativeID };
-  importDefault(4561)(obj);
-  obj = { ref, nativeID };
+  importDefault(4584)({ accessibilityViewIsModal: flag, nativeID });
+  const obj = { ref, nativeID, collapsable: null, onAccessibilityEscape: null, accessibilityViewIsModal: null };
   let collapsable = null == nativeID;
   if (collapsable) {
     collapsable = accessibilityViewIsModal.collapsable;
   }
-  obj.collapsable = collapsable;
-  obj.onAccessibilityEscape = onAccessibilityEscape;
-  obj.accessibilityViewIsModal = flag;
+  obj[2] = collapsable;
+  obj[3] = onAccessibilityEscape;
+  obj[4] = flag;
   const merged1 = Object.assign(merged);
-  return <View ref={arg1} nativeID={nativeID} />;
+  return <View ref={arg1} nativeID={nativeID} collapsable={null} onAccessibilityEscape={null} accessibilityViewIsModal={null} />;
 });
-const animatedComponent = require("module_4026").createAnimatedComponent(forwardRefResult);
+const animatedComponent = require("module_4050").createAnimatedComponent(forwardRefResult);
 const result = require("jsxProd").fileFinishedImporting("design/components/AccessibilityView/AccessibilityView.native.tsx");
 
 export const AccessibilityView = forwardRefResult;

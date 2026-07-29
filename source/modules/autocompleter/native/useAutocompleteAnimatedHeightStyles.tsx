@@ -1,24 +1,25 @@
-// Module ID: 11467
-// Function ID: 88979
+// Module ID: 11491
+// Function ID: 11492
 // Name: useAutocompleteAnimatedHeightStyles
-// Dependencies: [4025, 4026, 4166, 4169, 2]
+// Dependencies: [4049, 4050, 4190, 4193, 2]
 // Exports: default
 
-// Module 11467 (useAutocompleteAnimatedHeightStyles)
+// Module 11491 (useAutocompleteAnimatedHeightStyles)
 let closure_2 = { code: "function useAutocompleteAnimatedHeightStylesTsx1(){const{withTiming,height,timingStandard,isFrozenSharedValue}=this.__closure;return{height:withTiming(height,timingStandard),display:!isFrozenSharedValue.get()?'flex':'none'};}" };
-const result = require("withTiming").fileFinishedImporting("modules/autocompleter/native/useAutocompleteAnimatedHeightStyles.tsx");
+const result = require("CONFIG_NEVER_ANIMATE_TIMING").fileFinishedImporting("modules/autocompleter/native/useAutocompleteAnimatedHeightStyles.tsx");
 
 export default function useAutocompleteAnimatedHeightStyles(height) {
   const _require = height;
   let obj = _require(isScreenIndexFrozenSharedValue[0]);
   isScreenIndexFrozenSharedValue = obj.useIsScreenIndexFrozenSharedValue(arg1);
   const fn = function s() {
-    const obj = { height: height(isScreenIndexFrozenSharedValue[2]).withTiming(height, height(isScreenIndexFrozenSharedValue[3]).timingStandard) };
+    const obj = { height: null, display: null };
+    obj[0] = height(isScreenIndexFrozenSharedValue[2]).withTiming(height, height(isScreenIndexFrozenSharedValue[3]).timingStandard);
     let str = "flex";
     if (isScreenIndexFrozenSharedValue.get()) {
       str = "none";
     }
-    obj.display = str;
+    obj[1] = str;
     return obj;
   };
   obj = { withTiming: _require(isScreenIndexFrozenSharedValue[2]).withTiming, height, timingStandard: _require(isScreenIndexFrozenSharedValue[3]).timingStandard, isFrozenSharedValue: isScreenIndexFrozenSharedValue };

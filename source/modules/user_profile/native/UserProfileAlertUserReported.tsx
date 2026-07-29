@@ -1,27 +1,27 @@
-// Module ID: 11694
-// Function ID: 90572
+// Module ID: 11718
+// Function ID: 11719
 // Name: UserProfileAlertUserReported
-// Dependencies: [31, 33, 4510, 1212, 4510, 2]
+// Dependencies: [19, 21, 4533, 1236, 4533, 2]
 // Exports: default
 
-// Module 11694 (UserProfileAlertUserReported)
-import "result";
+// Module 11718 (UserProfileAlertUserReported)
+import "noop";
 import { jsx } from "jsxProd";
 
 const require = arg1;
 const result = require("getAlertModalItemKey").fileFinishedImporting("modules/user_profile/native/UserProfileAlertUserReported.tsx");
 
 export default function UserProfileAlertUserReported() {
-  let obj = {};
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj.title = intl.string(require(1212) /* getSystemLocale */.t.IwHU3R);
-  const intl2 = require(1212) /* getSystemLocale */.intl;
-  obj.content = intl2.string(require(1212) /* getSystemLocale */.t.qxyRaq);
-  obj = {};
-  obj = {};
-  const intl3 = require(1212) /* getSystemLocale */.intl;
-  obj.text = intl3.string(require(1212) /* getSystemLocale */.t.BddRzS);
-  obj.children = jsx(require(4510) /* getAlertModalItemKey */.AlertActionButton, {}, "okay");
-  obj.actions = jsx(require(4510) /* getAlertModalItemKey */.AlertActions, {});
-  return jsx(require(4510) /* getAlertModalItemKey */.AlertModal, {});
+  let obj = { title: null, content: null, actions: null };
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj[0] = intl.string(require(1236) /* getSystemLocale */.t.IwHU3R);
+  const intl2 = require(1236) /* getSystemLocale */.intl;
+  obj[1] = intl2.string(require(1236) /* getSystemLocale */.t.qxyRaq);
+  obj = { children: null };
+  obj = { text: null };
+  const intl3 = require(1236) /* getSystemLocale */.intl;
+  obj[0] = intl3.string(require(1236) /* getSystemLocale */.t.BddRzS);
+  obj[0] = jsx(require(4533) /* getAlertModalItemKey */.AlertActionButton, { text: null }, "okay");
+  obj[2] = jsx(require(4533) /* getAlertModalItemKey */.AlertActions, { text: null });
+  return jsx(require(4533) /* getAlertModalItemKey */.AlertModal, { text: null });
 };

@@ -1,12 +1,12 @@
-// Module ID: 11287
-// Function ID: 87609
+// Module ID: 11311
+// Function ID: 11312
 // Name: useSortedSectionCommands
-// Dependencies: [57, 31, 11288, 11221, 664, 2]
+// Dependencies: [32, 19, 11312, 11245, 687, 2]
 // Exports: default
 
-// Module 11287 (useSortedSectionCommands)
+// Module 11311 (useSortedSectionCommands)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
+import noop from "noop";
 import { CommandListSortOrder } from "CommandListSortOrder";
 
 const result = require("CommandListSortOrder").fileFinishedImporting("modules/app_launcher/hooks/useSortedSectionCommands.tsx");
@@ -14,87 +14,85 @@ const result = require("CommandListSortOrder").fileFinishedImporting("modules/ap
 export default function useSortedSectionCommands(sectionId) {
   let canSort;
   let popularSortedCommands;
+  let tmp3;
+  let tmp4;
   sectionId = sectionId.sectionId;
+  let memo = sectionId;
   const commandsByActiveSection = sectionId.commandsByActiveSection;
-  let tmp = canSort(React.useState(CommandListSortOrder.ALPHABETICAL), 2);
-  const first = tmp[0];
-  const dependencyMap = tmp3;
-  let items = [commandsByActiveSection, sectionId];
-  const memo = React.useMemo(() => {
-    const found = commandsByActiveSection.find((section) => section.section.id === outer1_0);
+  let setSortOrder;
+  canSort = undefined;
+  [tmp3, tmp4] = canSort(React.useState(CommandListSortOrder.ALPHABETICAL), 2);
+  const items = [commandsByActiveSection, sectionId];
+  memo = React.useMemo(() => {
+    const found = commandsByActiveSection.find((section) => section.section.id === closure_0);
     let data;
-    if (null != found) {
+    if (found != null) {
       data = found.data;
     }
-    if (null == data) {
+    if (data == null) {
       data = [];
     }
     return data;
   }, items);
-  ({ popularSortedCommands, canSort } = (function usePopularSortedCommands(alphabeticalSortedCommands) {
-    alphabeticalSortedCommands = alphabeticalSortedCommands.alphabeticalSortedCommands;
-    const items = [alphabeticalSortedCommands];
-    return outer1_4.useMemo(() => {
-      if (alphabeticalSortedCommands.length <= 1) {
-        let obj = { popularSortedCommands: alphabeticalSortedCommands, canSort: false };
-        return obj;
-      } else {
-        alphabeticalSortedCommands = false;
-        const mapped = alphabeticalSortedCommands.map((command, alphabeticalSortIndex) => {
-          let tmp = c0;
-          if (!c0) {
-            tmp = null != command.global_popularity_rank;
-          }
-          c0 = tmp;
-          return { command, alphabeticalSortIndex };
-        });
-        obj = {};
-        if (alphabeticalSortedCommands) {
-          const sorted = mapped.sort((command, command2) => {
-            const global_popularity_rank = command.command.global_popularity_rank;
-            const global_popularity_rank2 = command2.command.global_popularity_rank;
-            if (null != global_popularity_rank) {
-              if (null != global_popularity_rank2) {
-                if (global_popularity_rank !== global_popularity_rank2) {
-                  return global_popularity_rank - global_popularity_rank2;
-                }
-              }
-              return command.alphabeticalSortIndex - command2.alphabeticalSortIndex;
-            }
-            if (null != global_popularity_rank) {
-              return -1;
-            } else if (null != global_popularity_rank2) {
-              return 1;
-            }
-          });
-          obj.popularSortedCommands = mapped.map((command) => command.command);
-          obj.canSort = true;
-          let tmp4 = obj;
-        } else {
-          obj.popularSortedCommands = alphabeticalSortedCommands;
-          obj.canSort = false;
-          tmp4 = obj;
+  const items1 = [memo];
+  const memo1 = React.useMemo(() => {
+    if (memo.length <= 1) {
+      let obj = { popularSortedCommands: null, canSort: false };
+      obj[0] = arr;
+      return obj;
+    } else {
+      memo = false;
+      const mapped = arr.map((command, alphabeticalSortIndex) => {
+        let tmp = c0;
+        if (!c0) {
+          tmp = null != command.global_popularity_rank;
         }
-        return tmp4;
+        c0 = tmp;
+        return { command, alphabeticalSortIndex };
+      });
+      if (memo) {
+        const sorted = mapped.sort((command, command2) => {
+          const global_popularity_rank = command.command.global_popularity_rank;
+          const global_popularity_rank2 = command2.command.global_popularity_rank;
+          if (null != global_popularity_rank) {
+            if (null != global_popularity_rank2) {
+              if (global_popularity_rank !== global_popularity_rank2) {
+                return global_popularity_rank - global_popularity_rank2;
+              }
+            }
+            return command.alphabeticalSortIndex - command2.alphabeticalSortIndex;
+          }
+          if (null != global_popularity_rank) {
+            return -1;
+          } else if (null != global_popularity_rank2) {
+            return 1;
+          }
+        });
+        obj = { popularSortedCommands: null, canSort: true };
+        obj[0] = mapped.map((command) => command.command);
+      } else {
+        obj = { popularSortedCommands: null, canSort: false };
+        obj[0] = arr;
       }
-    }, items);
-  })({ alphabeticalSortedCommands: memo }));
-  const items1 = [sectionId];
-  const effect = React.useEffect(() => {
-    let obj = commandsByActiveSection(tmp3[3]);
-    obj = { dontRefetchMs: sectionId(tmp3[4]).Millis.DAY };
-    const application = obj.getApplication(sectionId, obj);
+      return obj;
+    }
   }, items1);
-  const items2 = [canSort];
+  ({ popularSortedCommands, canSort } = memo1);
+  const items2 = [sectionId];
+  const effect = React.useEffect(() => {
+    let obj = commandsByActiveSection(setSortOrder[3]);
+    obj = { dontRefetchMs: memo(setSortOrder[4]).Millis.DAY };
+    const application = obj.getApplication(memo, obj);
+  }, items2);
+  const items3 = [canSort];
   const layoutEffect = React.useLayoutEffect(() => {
     if (canSort) {
-      tmp3 = tmp3(outer1_5.POPULAR);
+      setSortOrder(outer1_5.POPULAR);
     }
-  }, items2);
-  if (CommandListSortOrder.POPULAR !== first) {
+  }, items3);
+  if (CommandListSortOrder.POPULAR !== sortOrder) {
     const ALPHABETICAL = CommandListSortOrder.ALPHABETICAL;
-    popularSortedCommands = memo;
+    const commands = memo;
   }
-  let obj = { sortOrder: first, setSortOrder: tmp[1], commands: popularSortedCommands, canSort };
-  return obj;
+  return { sortOrder, setSortOrder, commands, canSort };
 };

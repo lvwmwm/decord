@@ -1,28 +1,27 @@
-// Module ID: 12941
-// Function ID: 100412
+// Module ID: 12964
+// Function ID: 12965
 // Name: apexExperiment
-// Dependencies: [1428, 2]
+// Dependencies: [1452, 2]
 
-// Module 12941 (apexExperiment)
+// Module 12964 (apexExperiment)
 import ApexExperiment from "ApexExperiment";
 
-let obj = { resetSilenceWarningOnDeviceChange: false, resetSilenceWarningAfterNMinutes: undefined, enableHardwareSilenceWarning: false };
-obj = { name: "2026-02-silence-warning-aggression", kind: "user" };
-obj.defaultConfig = obj;
-obj = {};
+let obj = { resetSilenceWarningOnDeviceChange: false, resetSilenceWarningAfterNMinutes: "ct", enableHardwareSilenceWarning: "Array" };
+obj = { name: "2026-02-silence-warning-aggression", kind: "user", defaultConfig: obj, variations: null };
+obj = { 1: null, 2: null, 3: null };
 const obj1 = {};
 const merged = Object.assign(obj);
-obj1["resetSilenceWarningOnDeviceChange"] = true;
+obj1.resetSilenceWarningOnDeviceChange = true;
 obj[1] = obj1;
 const obj2 = {};
 const merged1 = Object.assign(obj);
-obj2["resetSilenceWarningAfterNMinutes"] = 10;
+obj2.resetSilenceWarningAfterNMinutes = 10;
 obj[2] = obj2;
 const obj3 = {};
 const merged2 = Object.assign(obj);
-obj3["enableHardwareSilenceWarning"] = true;
+obj3.enableHardwareSilenceWarning = true;
 obj[3] = obj3;
-obj.variations = obj;
+obj[3] = obj;
 const apexExperiment = ApexExperiment.createApexExperiment(obj);
 const result = require("set").fileFinishedImporting("modules/media_engine/SilenceWarningExperiment.tsx");
 

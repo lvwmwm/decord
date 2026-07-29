@@ -1,73 +1,74 @@
-// Module ID: 15087
-// Function ID: 114821
+// Module ID: 15120
+// Function ID: 15121
 // Name: ChannelListStickyHeader
-// Dependencies: [31, 27, 3794, 653, 33, 4026, 4165, 689, 1324, 1841, 1212, 15088, 13022, 15086, 5203, 3869, 566, 6670, 9395, 4161, 8440, 1273, 5547, 15091, 11426, 11503, 15096, 2]
+// Dependencies: [19, 17, 3818, 676, 21, 4050, 4189, 712, 1348, 1865, 1236, 15121, 13045, 15119, 5225, 3893, 589, 6691, 9419, 4185, 8464, 1297, 5565, 15124, 11450, 11527, 15129, 2]
 // Exports: default
 
-// Module 15087 (ChannelListStickyHeader)
-import result from "result";
-import get_ActivityIndicator from "set";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 15120 (ChannelListStickyHeader)
+import Text from "Text";
+import get_ActivityIndicator from "MobileLurkerServerPreviewExperiment";
+import initialize from "initialize";
 import { JoinGuildSources } from "ME";
-import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import importDefaultResult from "module_4026";
+import jsxProd from "Button";
+import createCacheKey from "createCacheKey";
+import importDefaultResult from "module_4050";
 
-let closure_7;
-let closure_8;
+let Pressable;
+let c4;
+let error;
+let metroImportAll;
 const require = arg1;
-const View = get_ActivityIndicator.View;
-({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-let closure_9 = require("module_4026").createAnimatedComponent(get_ActivityIndicator.Pressable);
-let closure_10 = _createForOfIteratorHelperLoose.createStyles((arg0) => {
+({ View: c4, Pressable } = get_ActivityIndicator);
+({ jsx: error, jsxs: metroImportAll } = jsxProd);
+let closure_9 = require("module_4050").createAnimatedComponent(Pressable);
+let closure_10 = createCacheKey.createStyles((arg0) => {
   let flag = arg1;
   if (arg1 === undefined) {
     flag = true;
   }
-  let obj = { chevron: { flexShrink: 0, flexGrow: 0 } };
-  obj = { gap: importDefault(689).space.PX_8, paddingTop: importDefault(689).space.PX_16 };
+  let obj = { chevron: { flexShrink: 0, flexGrow: 0 }, container: null, divider: null, guildBadge: null, flex: null, header: null, headerRow: null, headerRowTitle: null, headerRowInset: null, headerIcon: null, subheader: null, ellipse: null, joinButton: null };
+  obj = { gap: importDefault(712).space.PX_8, paddingTop: importDefault(712).space.PX_16, paddingBottom: null };
   if (flag) {
     let num = 0;
     if (!arg0) {
-      num = importDefault(689).space.PX_8;
+      num = tmp(712).space.PX_8;
     }
     let PX_12 = num;
   } else {
-    PX_12 = importDefault(689).space.PX_12;
+    PX_12 = tmp(712).space.PX_12;
   }
-  obj.paddingBottom = PX_12;
+  obj[2] = PX_12;
   if (arg0) {
     obj = {};
   } else {
-    obj = { borderBottomColor: importDefault(689).colors.BORDER_SUBTLE, borderBottomWidth: 1 };
+    obj = { borderBottomColor: null, borderBottomWidth: 1 };
+    obj[0] = tmp(712).colors.BORDER_SUBTLE;
   }
   const merged = Object.assign(obj);
-  obj["zIndex"] = 1;
-  obj.container = obj;
-  obj.divider = { height: 1, backgroundColor: importDefault(689).colors.BORDER_SUBTLE, marginHorizontal: importDefault(689).space.PX_16 };
-  obj.guildBadge = { margin: 0 };
-  obj.flex = { flexShrink: 1 };
-  const obj2 = { alignItems: "center", flexDirection: "row", gap: importDefault(689).space.PX_4, paddingHorizontal: importDefault(689).space.PX_16 };
-  obj.header = obj2;
-  const obj3 = { alignItems: "center", flexDirection: "row", gap: importDefault(689).space.PX_8 };
-  obj.headerRow = obj3;
-  obj.headerRowTitle = { flexGrow: 1, flexShrink: 1 };
-  const obj1 = { height: 1, backgroundColor: importDefault(689).colors.BORDER_SUBTLE, marginHorizontal: importDefault(689).space.PX_16 };
-  obj.headerRowInset = { paddingEnd: importDefault(689).space.PX_16 };
-  const obj4 = { paddingEnd: importDefault(689).space.PX_16 };
-  obj.headerIcon = { marginRight: importDefault(689).space.PX_4 };
-  const obj6 = { flexDirection: "row", alignItems: "center", paddingHorizontal: importDefault(689).space.PX_16, gap: importDefault(689).space.PX_8 };
-  obj.subheader = obj6;
-  const obj7 = { width: 4, height: 4 };
-  const colors = importDefault(689).colors;
-  obj7.backgroundColor = arg0 ? colors.TEXT_SUBTLE : colors.BACKGROUND_MOD_STRONG;
-  obj7.borderRadius = importDefault(689).radii.round;
-  obj.ellipse = obj7;
-  const obj5 = { marginRight: importDefault(689).space.PX_4 };
-  obj.joinButton = { marginHorizontal: importDefault(689).space.PX_16, marginVertical: importDefault(689).space.PX_4 };
+  obj.zIndex = 1;
+  obj[1] = obj;
+  obj[2] = { height: 1, backgroundColor: importDefault(712).colors.BORDER_SUBTLE, marginHorizontal: importDefault(712).space.PX_16 };
+  obj[3] = { margin: 0 };
+  obj[4] = { flexShrink: 1 };
+  const obj1 = { height: 1, backgroundColor: importDefault(712).colors.BORDER_SUBTLE, marginHorizontal: importDefault(712).space.PX_16 };
+  obj[5] = { alignItems: "center", flexDirection: "row", gap: importDefault(712).space.PX_4, paddingHorizontal: importDefault(712).space.PX_16 };
+  const obj2 = { alignItems: "center", flexDirection: "row", gap: importDefault(712).space.PX_4, paddingHorizontal: importDefault(712).space.PX_16 };
+  obj[6] = { alignItems: "center", flexDirection: "row", gap: importDefault(712).space.PX_8 };
+  obj[7] = { flexGrow: 1, flexShrink: 1 };
+  const obj3 = { alignItems: "center", flexDirection: "row", gap: importDefault(712).space.PX_8 };
+  obj[8] = { paddingEnd: importDefault(712).space.PX_16 };
+  const obj4 = { paddingEnd: importDefault(712).space.PX_16 };
+  obj[9] = { marginRight: importDefault(712).space.PX_4 };
+  const obj5 = { marginRight: importDefault(712).space.PX_4 };
+  obj[10] = { flexDirection: "row", alignItems: "center", paddingHorizontal: importDefault(712).space.PX_16, gap: importDefault(712).space.PX_8 };
+  const colors = tmp(712).colors;
+  const obj6 = { flexDirection: "row", alignItems: "center", paddingHorizontal: importDefault(712).space.PX_16, gap: importDefault(712).space.PX_8 };
+  obj[11] = { width: 4, height: 4, backgroundColor: arg0 ? colors.TEXT_SUBTLE : colors.BACKGROUND_MOD_STRONG, borderRadius: importDefault(712).radii.round };
+  const obj7 = { width: 4, height: 4, backgroundColor: arg0 ? colors.TEXT_SUBTLE : colors.BACKGROUND_MOD_STRONG, borderRadius: importDefault(712).radii.round };
+  obj[12] = { marginHorizontal: importDefault(712).space.PX_16, marginVertical: importDefault(712).space.PX_4 };
   return obj;
 });
-let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/channel_list_v2/native/components/ChannelListStickyHeader.tsx");
+let result = require("initialize").fileFinishedImporting("modules/channel_list_v2/native/components/ChannelListStickyHeader.tsx");
 
 export default function ChannelListStickyHeader(guild) {
   let onPressIn;
@@ -87,18 +88,19 @@ export default function ChannelListStickyHeader(guild) {
     flag3 = false;
   }
   let importDefault;
-  const tmp = importDefault(1324)("ChannelListStickyHeader");
-  const tmp2 = callback3(tmp, flag);
+  const tmp3 = importDefault(1348)("ChannelListStickyHeader");
+  const tmp4 = callback2(tmp3, flag);
+  let obj = React;
   const ref = React.useRef(null);
-  let obj = guild(1841);
-  const isFavoritesGuildIdResult = obj.isFavoritesGuildId(guild.id);
+  let obj1 = guild(1865);
+  const isFavoritesGuildIdResult = obj1.isFavoritesGuildId(guild.id);
   importDefault = isFavoritesGuildIdResult;
   if (!flag2) {
     flag2 = isFavoritesGuildIdResult;
   }
-  const t = guild(1212).t;
+  const t = tmp6(1236).t;
   const items = [guild, isFavoritesGuildIdResult];
-  const callback = React.useCallback(() => {
+  const callback = obj.useCallback(() => {
     if (_undefined) {
       const result = guild(outer1_2[11]).openFavoritesGuildActionSheet();
       const obj = guild(outer1_2[11]);
@@ -106,146 +108,157 @@ export default function ChannelListStickyHeader(guild) {
       _undefined(outer1_2[12])(guild);
     }
   }, items);
-  const tmp7 = importDefault(15086)(guild);
-  let obj1 = guild(5203);
-  const iOSPressEffects = obj1.useIOSPressEffects(4);
+  const tmp10 = importDefault(15119)(guild);
+  let tmp6Result = tmp6(5225);
+  const iOSPressEffects = tmp6Result.useIOSPressEffects(4);
   ({ onPressIn, onPressOut, pressableStyles } = iOSPressEffects);
-  let obj2 = guild(1841);
-  const favoritesAwareGuildName = obj2.getFavoritesAwareGuildName(guild);
-  let obj3 = guild(3869);
-  const token = obj3.useToken(importDefault(689).modules.mobile.CHANNEL_LIST_TITLE_TEXT_STYLE);
-  let obj4 = guild(3869);
-  const token1 = obj4.useToken(importDefault(689).modules.mobile.CHANNEL_LIST_SUBTITLE_TEXT_STYLE);
-  let obj5 = guild(566);
-  const items1 = [_isNativeReflectConstruct];
-  const stateFromStores = obj5.useStateFromStores(items1, () => outer1_5.isLurking(guild.id));
-  let obj6 = guild(6670);
-  let enabled = stateFromStores;
-  if (stateFromStores) {
-    enabled = obj6.useMobileLurkerServerPreview("ChannelListStickyHeader").enabled;
+  tmp6Result = tmp6(1865);
+  const favoritesAwareGuildName = tmp6Result.getFavoritesAwareGuildName(guild);
+  const token = guild(3893).useToken(tmp(712).modules.mobile.CHANNEL_LIST_TITLE_TEXT_STYLE);
+  const tmp6Result1 = guild(3893);
+  const tmp8 = isFavoritesGuildIdResult ? t.hW8QDk : t["Gpyp/e"];
+  const token1 = guild(3893).useToken(tmp(712).modules.mobile.CHANNEL_LIST_SUBTITLE_TEXT_STYLE);
+  const tmp6Result2 = guild(3893);
+  const items1 = [initialize];
+  let enabled = guild(589).useStateFromStores(items1, () => outer1_5.isLurking(guild.id));
+  const tmp6Result3 = guild(589);
+  if (enabled) {
+    enabled = tmp6Result4.useMobileLurkerServerPreview("ChannelListStickyHeader").enabled;
   }
-  obj = { style: items2 };
-  items2 = [pressableStyles, tmp2.headerRowTitle];
-  let tmp15;
-  if (flag2) {
-    tmp15 = callback;
-  }
-  obj.onPress = tmp15;
-  let tmp16;
-  if (flag2) {
-    tmp16 = onPressIn;
-  }
-  obj.onPressIn = tmp16;
+  obj = { style: items2, onPress: null, onPressIn: null, onPressOut: null, accessible: true, accessibilityRole: null, accessibilityHint: null, children: null };
+  items2 = [pressableStyles, tmp4.headerRowTitle];
   let tmp17;
   if (flag2) {
-    tmp17 = onPressOut;
+    tmp17 = callback;
   }
-  obj.onPressOut = tmp17;
-  obj.accessible = true;
+  obj[1] = tmp17;
+  let tmp18;
+  if (flag2) {
+    tmp18 = onPressIn;
+  }
+  obj[2] = tmp18;
+  let tmp19;
+  if (flag2) {
+    tmp19 = onPressOut;
+  }
+  obj[3] = tmp19;
   let str = "header";
   if (flag2) {
     str = "button";
   }
-  obj.accessibilityRole = str;
+  obj[5] = str;
   let stringResult;
   if (flag2) {
-    const intl = guild(1212).intl;
-    stringResult = intl.string(tmp5);
+    const intl = tmp6(1236).intl;
+    stringResult = intl.string(tmp8);
   }
-  obj.accessibilityHint = stringResult;
-  obj = { style: tmp2.header };
-  let tmp23 = null;
+  obj[6] = stringResult;
+  obj = { style: tmp4.header, children: null };
+  let tmp22 = null;
   if (isFavoritesGuildIdResult) {
-    obj1 = { style: tmp2.headerIcon, size: "sm", color: importDefault(689).colors.MOBILE_TEXT_HEADING_PRIMARY };
-    tmp23 = callback(guild(9395).StarIcon, obj1);
+    obj1 = { style: null, size: "sm", color: null };
+    obj1[0] = tmp4.headerIcon;
+    obj1[2] = tmp(712).colors.MOBILE_TEXT_HEADING_PRIMARY;
+    tmp22 = callback(tmp6(9419).StarIcon, obj1);
   }
-  const items3 = [tmp23, , , ];
-  obj2 = { ref, collapsable: false, style: tmp2.flex, children: callback(guild(4161).Text, obj3) };
-  obj3 = { experimental_useNativeText: true, color: "mobile-text-heading-primary", variant: token, lineClamp: 1, children: favoritesAwareGuildName };
-  items3[1] = callback(View, obj2);
-  obj4 = { guild, size: guild(1273).Icon.Sizes.REFRESH_SMALL_16, style: tmp2.guildBadge };
-  items3[2] = callback(importDefault(8440), obj4);
-  let tmp29 = null;
+  const items3 = [tmp22, , , ];
+  const tmp16 = closure_9;
+  tmp6Result4 = guild(6691);
+  items3[1] = callback(closure_4, { ref, collapsable: false, style: tmp4.flex, children: callback(guild(4185).Text, { experimental_useNativeText: true, color: "mobile-text-heading-primary", variant: token, lineClamp: 1, children: favoritesAwareGuildName }) });
+  const obj3 = { guild, size: null, style: null };
+  const obj2 = { ref, collapsable: false, style: tmp4.flex, children: callback(guild(4185).Text, { experimental_useNativeText: true, color: "mobile-text-heading-primary", variant: token, lineClamp: 1, children: favoritesAwareGuildName }) };
+  obj3[1] = guild(1297).Icon.Sizes.REFRESH_SMALL_16;
+  obj3[2] = tmp4.guildBadge;
+  items3[2] = callback(importDefault(8464), obj3);
+  let tmp24Result = null;
   if (flag2) {
-    obj5 = { size: "xxs", color: importDefault(689).colors.TEXT_SUBTLE, style: tmp2.chevron };
-    tmp29 = callback(guild(5547).ChevronSmallRightIcon, obj5);
+    const obj4 = { size: "xxs", color: null, style: null };
+    obj4[1] = tmp(712).colors.TEXT_SUBTLE;
+    obj4[2] = tmp4.chevron;
+    tmp24Result = tmp24(tmp6(5565).ChevronSmallRightIcon, obj4);
   }
-  items3[3] = tmp29;
-  obj.children = items3;
-  const items4 = [callback2(View, obj), ];
-  let tmp34 = null;
-  if (null != tmp7) {
-    tmp34 = null;
-    if (tmp7 > 0) {
-      obj6 = { style: tmp2.subheader };
-      const obj7 = { experimental_useNativeText: true, color: "text-muted", variant: token1, lineClamp: 1 };
-      const intl2 = guild(1212).intl;
-      const obj8 = { count: tmp7 };
-      obj7.children = intl2.format(guild(1212).t.zRl6XR, obj8);
-      const items5 = [callback(guild(4161).Text, obj7), , ];
-      const obj9 = { style: tmp2.ellipse };
-      items5[1] = callback(View, obj9);
-      const obj10 = { experimental_useNativeText: true, color: "text-muted", variant: token1, lineClamp: 1 };
-      const intl3 = guild(1212).intl;
-      obj10.children = intl3.string(guild(1212).t["1g9A/f"]);
-      items5[2] = callback(guild(4161).Text, obj10);
-      obj6.children = items5;
-      tmp34 = callback2(View, obj6);
+  items3[3] = tmp24Result;
+  obj[1] = items3;
+  const items4 = [closure_8(closure_4, obj), ];
+  let tmp15Result = null;
+  if (null != tmp10) {
+    tmp15Result = null;
+    if (tmp10 > 0) {
+      const obj5 = { style: null, children: null };
+      obj5[0] = tmp4.subheader;
+      const obj6 = { experimental_useNativeText: true, color: "text-muted", variant: null, lineClamp: 1, children: null };
+      obj6[2] = token1;
+      const intl2 = tmp6(1236).intl;
+      const obj7 = { count: null };
+      obj7[0] = tmp10;
+      obj6[4] = intl2.format(tmp6(1236).t.zRl6XR, obj7);
+      const items5 = [tmp24(tmp6(4185).Text, obj6), , ];
+      const obj8 = { style: null };
+      obj8[0] = tmp4.ellipse;
+      items5[1] = tmp24(tmp21, obj8);
+      const obj9 = { experimental_useNativeText: true, color: "text-muted", variant: null, lineClamp: 1, children: null };
+      obj9[2] = token1;
+      const intl3 = tmp6(1236).intl;
+      obj9[4] = intl3.string(tmp6(1236).t["1g9A/f"]);
+      items5[2] = tmp24(tmp6(4185).Text, obj9);
+      obj5[1] = items5;
+      tmp15Result = tmp15(tmp21, obj5);
     }
   }
-  items4[1] = tmp34;
-  obj.children = items4;
-  const obj11 = { style: tmp2.container };
-  const obj12 = {};
-  const items6 = [tmp2.headerRow, ];
+  items4[1] = tmp15Result;
+  obj[7] = items4;
+  const obj10 = { style: tmp4.container, children: null };
+  const items6 = [tmp4.headerRow, ];
   let headerRowInset = null;
-  const tmp13 = callback2;
-  const tmp14 = closure_9;
-  const tmp21 = callback2;
-  const tmp22 = View;
-  const tmp28 = importDefault(8440);
-  tmp5 = isFavoritesGuildIdResult ? t.hW8QDk : t["Gpyp/e"];
+  tmp15Result = tmp15(tmp16, obj);
   if (isFavoritesGuildIdResult) {
-    headerRowInset = tmp2.headerRowInset;
+    headerRowInset = tmp4.headerRowInset;
   }
+  const obj11 = { style: items6, children: null };
   items6[1] = headerRowInset;
-  obj12.style = items6;
-  const items7 = [callback2(closure_9, obj), ];
-  let tmp44 = null;
+  const items7 = [tmp15Result, ];
+  tmp24Result = null;
   if (isFavoritesGuildIdResult) {
-    tmp44 = callback(guild(15091).FavoritesGuildHeaderActionButton, {});
+    tmp24Result = tmp24(tmp6(15124).FavoritesGuildHeaderActionButton, {});
   }
-  items7[1] = tmp44;
-  obj12.children = items7;
-  const items8 = [callback2(View, obj12), , , , ];
-  let tmp48 = null;
+  items7[1] = tmp24Result;
+  obj11[1] = items7;
+  const items8 = [closure_8(closure_4, obj11), , , , ];
+  let tmp24Result1 = null;
   if (flag) {
-    tmp48 = null;
+    tmp24Result1 = null;
     if (!enabled) {
-      const obj13 = { guild, useButtonComponent: true, useEventsButton: true };
-      tmp48 = callback(importDefault(11426), obj13);
+      const obj12 = { guild: null, useButtonComponent: true, useEventsButton: true };
+      obj12[0] = guild;
+      tmp24Result1 = tmp24(tmp(11450), obj12);
     }
   }
-  items8[1] = tmp48;
+  items8[1] = tmp24Result1;
   if (enabled) {
-    const obj14 = { style: tmp2.joinButton };
-    const obj15 = { guildId: guild.id, joinSource: JoinGuildSources.CHANNEL_LIST_STICKY_HEADER_LURKER };
-    obj14.children = callback(importDefault(11503), obj15);
-    enabled = callback(View, obj14);
+    const obj13 = { style: null, children: null };
+    obj13[0] = tmp4.joinButton;
+    const obj14 = { guildId: null, joinSource: null };
+    obj14[0] = guild.id;
+    obj14[1] = JoinGuildSources.CHANNEL_LIST_STICKY_HEADER_LURKER;
+    obj13[1] = tmp24(tmp(11527), obj14);
+    enabled = tmp24(tmp21, obj13);
   }
   items8[2] = enabled;
-  let tmp57 = null;
-  if (tmp) {
-    const obj16 = { style: tmp2.divider };
-    tmp57 = callback(View, obj16);
+  let tmp24Result2 = null;
+  if (tmp3) {
+    const obj15 = { style: null };
+    obj15[0] = tmp4.divider;
+    tmp24Result2 = tmp24(tmp21, obj15);
   }
-  items8[3] = tmp57;
-  let tmp60 = null;
+  items8[3] = tmp24Result2;
+  let tmp24Result3 = null;
   if (flag3) {
-    const obj17 = { targetRef: ref, guild };
-    tmp60 = callback(importDefault(15096), obj17);
+    const obj16 = { targetRef: null, guild: null };
+    obj16[0] = ref;
+    obj16[1] = guild;
+    tmp24Result3 = tmp24(tmp(15129), obj16);
   }
-  items8[4] = tmp60;
-  obj11.children = items8;
-  return callback2(View, obj11);
+  items8[4] = tmp24Result3;
+  obj10[1] = items8;
+  return closure_8(closure_4, obj10);
 };

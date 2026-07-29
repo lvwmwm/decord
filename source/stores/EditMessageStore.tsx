@@ -1,128 +1,67 @@
-// Module ID: 5947
-// Function ID: 52613
-// Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 4384, 3838, 5948, 5951, 566, 686, 2]
+// Module ID: 5966
+// Function ID: 5967
+// Name: initialize
+// Dependencies: [4407, 3862, 5967, 5970, 589, 709, 2]
 
-// Module 5947 (_isNativeReflectConstruct)
-import explicitContentFromProto from "explicitContentFromProto";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 5966 (initialize)
+import reinjectEphemerals from "reinjectEphemerals";
+import { Store } from "initialize";
 
 const require = arg1;
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
-  }
-  const result = _isNativeReflectConstruct();
+let closure_4 = {};
+let closure_5 = {};
+class EditMessageStore extends Store {
 }
-let closure_9 = {};
-let closure_10 = {};
-let tmp2 = ((Store) => {
-  class EditMessageStore {
-    constructor() {
-      self = this;
-      tmp = outer1_3(this, EditMessageStore);
-      obj = outer1_6(EditMessageStore);
-      tmp2 = outer1_5;
-      if (outer1_11()) {
-        tmp6 = globalThis;
-        _Reflect = Reflect;
-        tmp7 = outer1_6;
-        tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, outer1_6(self).constructor);
-      } else {
-        tmp3 = arguments;
-        tmp4 = arguments;
-        constructResult = obj(...arguments);
-      }
-      return tmp2(self, constructResult);
+const prototype = EditMessageStore.prototype;
+prototype["initialize"] = function initialize() {
+  this.waitFor(reinjectEphemerals);
+};
+prototype["isEditing"] = function isEditing(arg0, arg1) {
+  let messageId;
+  if (dependencyMap[arg0] != null) {
+    messageId = tmp.messageId;
+  }
+  return messageId === arg1;
+};
+prototype["isEditingAny"] = function isEditingAny(arg0) {
+  return null != dependencyMap[arg0];
+};
+prototype["getEditingTextValue"] = function getEditingTextValue(id) {
+  let textValue;
+  if (dependencyMap[id] != null) {
+    textValue = tmp.textValue;
+  }
+  return textValue;
+};
+prototype["getEditingRichValue"] = function getEditingRichValue(arg0) {
+  let richValue;
+  if (dependencyMap[arg0] != null) {
+    richValue = tmp.richValue;
+  }
+  return richValue;
+};
+prototype["getEditingMessageId"] = function getEditingMessageId(memo1) {
+  let messageId;
+  if (dependencyMap[memo1] != null) {
+    messageId = tmp.messageId;
+  }
+  return messageId;
+};
+prototype["getEditingMessage"] = function getEditingMessage(id) {
+  let message = null;
+  if (null != dependencyMap[id]) {
+    message = null;
+    if (null != tmp.messageId) {
+      message = message.getMessage(id, tmp.messageId);
     }
   }
-  callback2(EditMessageStore, Store);
-  let obj = {
-    key: "initialize",
-    value() {
-      this.waitFor(outer1_8);
-    }
-  };
-  const items = [obj, , , , , , , ];
-  obj = {
-    key: "isEditing",
-    value(arg0, arg1) {
-      let messageId;
-      if (null != outer1_9[arg0]) {
-        messageId = tmp.messageId;
-      }
-      return messageId === arg1;
-    }
-  };
-  items[1] = obj;
-  obj = {
-    key: "isEditingAny",
-    value(arg0) {
-      return null != outer1_9[arg0];
-    }
-  };
-  items[2] = obj;
-  items[3] = {
-    key: "getEditingTextValue",
-    value(arg0) {
-      let textValue;
-      if (null != outer1_9[arg0]) {
-        textValue = tmp.textValue;
-      }
-      return textValue;
-    }
-  };
-  items[4] = {
-    key: "getEditingRichValue",
-    value(arg0) {
-      let richValue;
-      if (null != outer1_9[arg0]) {
-        richValue = tmp.richValue;
-      }
-      return richValue;
-    }
-  };
-  items[5] = {
-    key: "getEditingMessageId",
-    value(arg0) {
-      let messageId;
-      if (null != outer1_9[arg0]) {
-        messageId = tmp.messageId;
-      }
-      return messageId;
-    }
-  };
-  items[6] = {
-    key: "getEditingMessage",
-    value(arg0) {
-      let message = null;
-      if (null != outer1_9[arg0]) {
-        message = null;
-        if (null != tmp.messageId) {
-          message = outer1_8.getMessage(arg0, tmp.messageId);
-        }
-      }
-      return message;
-    }
-  };
-  items[7] = {
-    key: "getEditActionSource",
-    value(arg0) {
-      return outer1_10[arg0];
-    }
-  };
-  return callback(EditMessageStore, items);
-})(require("initialize").Store);
-tmp2.displayName = "EditMessageStore";
-tmp2 = new tmp2(require("dispatcher"), {
+  return message;
+};
+prototype["getEditActionSource"] = function getEditActionSource(outer1_0) {
+  return table[outer1_0];
+};
+EditMessageStore.displayName = "EditMessageStore";
+const editMessageStore = new EditMessageStore(require("dispatcher"), {
   MESSAGE_START_EDIT: function handleMessageStartEdit(arg0) {
     let channelId;
     let content;
@@ -130,17 +69,17 @@ tmp2 = new tmp2(require("dispatcher"), {
     let source;
     ({ channelId, content } = arg0);
     ({ messageId, source } = arg0);
-    const UseLegacyChatInput = require(3838) /* explicitContentFromProto */.UseLegacyChatInput;
+    const UseLegacyChatInput = require(3862) /* explicitContentFromProto */.UseLegacyChatInput;
     const setting = UseLegacyChatInput.getSetting();
-    let obj = importDefault(5948);
+    let obj = importDefault(5967);
     const unparseResult = obj.unparse(content, channelId);
-    obj = { channelId, messageId, textValue: unparseResult };
+    obj = { channelId, messageId, textValue: unparseResult, richValue: null };
     if (setting) {
       content = unparseResult;
     }
-    obj.richValue = require(5951) /* toRichValue */.toRichValue(content);
-    closure_9[channelId] = obj;
-    closure_10[channelId] = source;
+    obj[3] = require(5970) /* createEmptyState */.toRichValue(content);
+    closure_4[channelId] = obj;
+    closure_5[channelId] = source;
   },
   MESSAGE_UPDATE_EDIT: function handleMessageUpdateEdit(channelId) {
     channelId = channelId.channelId;
@@ -149,8 +88,8 @@ tmp2 = new tmp2(require("dispatcher"), {
     } else {
       const obj = {};
       const merged = Object.assign(tmp3);
-      obj["textValue"] = tmp;
-      obj["richValue"] = tmp2;
+      obj.textValue = tmp;
+      obj.richValue = tmp2;
       dependencyMap[channelId] = obj;
     }
   },
@@ -166,7 +105,7 @@ tmp2 = new tmp2(require("dispatcher"), {
   },
   MESSAGE_DELETE: function handleMessageDelete(id) {
     let messageId;
-    if (null != dependencyMap[id.channelId]) {
+    if (dependencyMap[id.channelId] != null) {
       messageId = tmp4.messageId;
     }
     if (messageId === id.id) {
@@ -175,10 +114,10 @@ tmp2 = new tmp2(require("dispatcher"), {
     }
   },
   LOGOUT: function handleLogout() {
-    let closure_9 = {};
-    let closure_10 = {};
+    let closure_4 = {};
+    let closure_5 = {};
   }
 });
-let result = require("_possibleConstructorReturn").fileFinishedImporting("stores/EditMessageStore.tsx");
+const result = require("rebuild").fileFinishedImporting("stores/EditMessageStore.tsx");
 
-export default tmp2;
+export default editMessageStore;

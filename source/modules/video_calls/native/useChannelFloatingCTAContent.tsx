@@ -1,32 +1,32 @@
-// Module ID: 15852
-// Function ID: 122173
+// Module ID: 15887
+// Function ID: 15888
 // Name: useChannelFloatingCTAContent
-// Dependencies: [31, 4212, 4237, 624, 8904, 1334, 2]
+// Dependencies: [19, 4236, 4261, 647, 8928, 1358, 2]
 // Exports: default
 
-// Module 15852 (useChannelFloatingCTAContent)
-import result from "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_5 from "_isNativeReflectConstruct";
+// Module 15887 (useChannelFloatingCTAContent)
+import noop from "noop";
+import _detectH265HardwareDecode from "_detectH265HardwareDecode";
+import createRTCConnection from "createRTCConnection";
 
 const require = arg1;
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/video_calls/native/useChannelFloatingCTAContent.tsx");
+const result = require("createRTCConnection").fileFinishedImporting("modules/video_calls/native/useChannelFloatingCTAContent.tsx");
 
 export default function useChannelFloatingCTAContent(arg0) {
   const _require = arg0;
-  let items = [closure_5];
+  let items = [createRTCConnection];
   stateFromStores = _require(stateFromStores[3]).useStateFromStores(items, () => {
-    let tmp = null != closure_0;
-    if (tmp) {
-      tmp = outer1_5.getChannelId() === closure_0;
+    let tmp2 = null != closure_0;
+    if (tmp2) {
+      tmp2 = outer1_5.getChannelId() === tmp;
     }
-    return tmp;
+    return tmp2;
   });
   let tmp2 = importDefault(stateFromStores[4])();
   importDefault = tmp2;
   const obj = _require(stateFromStores[3]);
-  const items1 = [_isNativeReflectConstruct];
-  const stateFromStores1 = _require(stateFromStores[3]).useStateFromStores(items1, () => outer1_4.isAnyLocalVideoAutoDisabled());
+  const items1 = [_detectH265HardwareDecode];
+  const stateFromStores1 = _require(stateFromStores[3]).useStateFromStores(items1, () => anyLocalVideoAutoDisabled.isAnyLocalVideoAutoDisabled());
   const items2 = [stateFromStores1, tmp2, stateFromStores];
   return stateFromStores1.useMemo(() => {
     const items = [];

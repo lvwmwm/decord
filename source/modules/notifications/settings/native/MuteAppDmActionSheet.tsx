@@ -1,85 +1,88 @@
-// Module ID: 11669
-// Function ID: 90455
+// Module ID: 11693
+// Function ID: 11694
 // Name: MuteAppDMActionSheet
-// Dependencies: [31, 27, 33, 4165, 689, 5221, 11375, 10208, 1212, 4161, 4578, 5113, 5108, 4133, 3866, 1273, 7709, 2]
+// Dependencies: [19, 17, 21, 4189, 712, 5243, 11399, 10229, 1236, 4185, 4600, 5135, 5130, 4157, 3890, 1297, 7732, 2]
 // Exports: default
 
-// Module 11669 (MuteAppDMActionSheet)
-import "result";
-import { View } from "get ActivityIndicator";
+// Module 11693 (MuteAppDMActionSheet)
+import "noop";
+import { View } from "set";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_4;
-let closure_5;
+let c4;
+let c5;
 let require = arg1;
-({ jsx: closure_4, jsxs: closure_5 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWEST };
-_createForOfIteratorHelperLoose.sheet = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.iconContainer = { alignItems: "center", marginBottom: 8 };
-_createForOfIteratorHelperLoose.iconBackground = { width: 48, height: 48 };
-_createForOfIteratorHelperLoose.content = { padding: 16 };
-_createForOfIteratorHelperLoose.headerText = { textAlign: "center", marginBottom: 8, paddingHorizontal: 16 };
-_createForOfIteratorHelperLoose.infoText = { textAlign: "center", marginBottom: 16, paddingHorizontal: 16 };
-_createForOfIteratorHelperLoose.dismissButtonContainer = { marginTop: 8 };
-let obj1 = { borderRadius: require("_createForOfIteratorHelperLoose").radii.round, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_FEEDBACK_NOTIFICATION, height: 24, width: 24, padding: 4, alignContent: "center" };
-_createForOfIteratorHelperLoose.mutedNotificationContainer = obj1;
-_createForOfIteratorHelperLoose.mutedNotification = { width: 16, height: 16 };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+({ jsx: c4, jsxs: c5 } = jsxProd);
+createCacheKey = { sheet: null, iconContainer: null, iconBackground: null, content: null, headerText: null, infoText: null, dismissButtonContainer: null, mutedNotificationContainer: null, mutedNotification: null };
+createCacheKey = { backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOWEST };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { alignItems: "center", marginBottom: 8 };
+createCacheKey[2] = { width: 48, height: 48 };
+createCacheKey[3] = { padding: 16 };
+createCacheKey[4] = { textAlign: "center", marginBottom: 8, paddingHorizontal: 16 };
+createCacheKey[5] = { textAlign: "center", marginBottom: 16, paddingHorizontal: 16 };
+createCacheKey[6] = { marginTop: 8 };
+createCacheKey[7] = { borderRadius: require("Themes").radii.round, backgroundColor: require("Themes").colors.BACKGROUND_FEEDBACK_NOTIFICATION, height: 24, width: 24, padding: 4, alignContent: "center" };
+createCacheKey[8] = { width: 16, height: 16 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let obj1 = { borderRadius: require("Themes").radii.round, backgroundColor: require("Themes").colors.BACKGROUND_FEEDBACK_NOTIFICATION, height: 24, width: 24, padding: 4, alignContent: "center" };
 let result = require("jsxProd").fileFinishedImporting("modules/notifications/settings/native/MuteAppDmActionSheet.tsx");
 
 export default function MuteAppDMActionSheet(channel) {
-  const tmp = _createForOfIteratorHelperLoose();
+  const tmp = createCacheKey();
   const require = tmp;
   channel = channel.channel;
-  let obj = { startExpanded: true, backgroundStyles: tmp.sheet };
-  obj = { style: tmp.content };
-  obj = { style: tmp.iconContainer };
-  const obj1 = { style: tmp.iconBackground, IconComponent: require(10208) /* BellIcon */.BellIcon, active: true };
-  let intl = require(1212) /* getSystemLocale */.intl;
-  obj1.accessibilityLabel = intl.string(require(1212) /* getSystemLocale */.t.uAmAiL);
-  obj.children = callback(channel(11375), obj1);
+  let obj = { startExpanded: true, backgroundStyles: tmp.sheet, children: null };
+  obj = { style: tmp.content, children: null };
+  obj = { style: tmp.iconContainer, children: null };
+  const obj1 = { style: tmp.iconBackground, IconComponent: null, active: true, accessibilityLabel: null };
+  obj1[1] = require(10229) /* BellIcon */.BellIcon;
+  let intl = require(1236) /* getSystemLocale */.intl;
+  obj1[3] = intl.string(require(1236) /* getSystemLocale */.t.uAmAiL);
+  obj[1] = callback(channel(11399), obj1);
   const items = [callback(View, obj), , , , ];
-  const obj2 = { variant: "heading-lg/bold", color: "mobile-text-heading-primary", style: tmp.headerText };
-  const intl2 = require(1212) /* getSystemLocale */.intl;
-  obj2.children = intl2.string(require(1212) /* getSystemLocale */.t.uAmAiL);
-  items[1] = callback(require(4161) /* Text */.Text, obj2);
-  let obj3 = { variant: "text-md/normal", color: "text-default", style: tmp.infoText };
-  const intl3 = require(1212) /* getSystemLocale */.intl;
-  obj3.children = intl3.string(require(1212) /* getSystemLocale */.t.mscFJU);
-  items[2] = callback(require(4161) /* Text */.Text, obj3);
-  const obj4 = { variant: "destructive" };
-  const intl4 = require(1212) /* getSystemLocale */.intl;
-  obj4.text = intl4.string(require(1212) /* getSystemLocale */.t.uAmAiL);
-  obj4.onPress = function onPress() {
+  let obj2 = { variant: "heading-lg/bold", color: "mobile-text-heading-primary", style: tmp.headerText, children: null };
+  const intl2 = require(1236) /* getSystemLocale */.intl;
+  obj2[3] = intl2.string(require(1236) /* getSystemLocale */.t.uAmAiL);
+  items[1] = callback(require(4185) /* Text */.Text, obj2);
+  const obj3 = { variant: "text-md/normal", color: "text-default", style: tmp.infoText, children: null };
+  const intl3 = require(1236) /* getSystemLocale */.intl;
+  obj3[3] = intl3.string(require(1236) /* getSystemLocale */.t.mscFJU);
+  items[2] = callback(require(4185) /* Text */.Text, obj3);
+  const obj4 = { variant: "destructive", text: null, onPress: null };
+  const intl4 = require(1236) /* getSystemLocale */.intl;
+  obj4[1] = intl4.string(require(1236) /* getSystemLocale */.t.uAmAiL);
+  obj4[2] = function onPress() {
     let obj = channel(outer1_2[11]);
-    obj = { muted: true };
-    const result = obj.updateChannelOverrideSettings(null, channel.id, obj, tmp(outer1_2[12]).NotificationLabels.Muted);
+    const result = obj.updateChannelOverrideSettings(null, channel.id, { muted: true }, tmp(outer1_2[12]).NotificationLabels.Muted);
     channel(outer1_2[13]).hideActionSheet();
-    const obj3 = channel(outer1_2[13]);
-    obj = { key: "NOTIFICATIONS_MUTED" };
+    const obj2 = channel(outer1_2[13]);
+    obj = { key: "NOTIFICATIONS_MUTED", content: null, icon: null };
     const intl = tmp(outer1_2[8]).intl;
-    obj.content = intl.string(tmp(outer1_2[8]).t.EgGpkx);
-    obj.icon = function icon() {
-      let obj = { style: outer1_0.mutedNotificationContainer };
-      obj = { source: channel(outer2_2[16]), color: channel(outer2_2[4]).unsafe_rawColors.WHITE, style: outer1_0.mutedNotification };
-      obj.children = outer2_4(callback(outer2_2[15]).Icon, obj);
-      return outer2_4(outer2_3, obj);
+    obj[1] = intl.string(tmp(outer1_2[8]).t.EgGpkx);
+    obj[2] = function icon() {
+      let obj = { style: closure_0.mutedNotificationContainer, children: null };
+      obj = { source: null, color: null, style: null };
+      obj[0] = outer1_1(outer1_2[16]);
+      obj[1] = outer1_1(outer1_2[4]).unsafe_rawColors.WHITE;
+      obj[2] = closure_0.mutedNotification;
+      obj[1] = outer1_4(outer1_0(outer1_2[15]).Icon, obj);
+      return outer1_4(outer1_3, obj);
     };
     channel(outer1_2[14]).open(obj);
   };
-  items[3] = callback(require(4578) /* Button */.Button, obj4);
-  const obj5 = { style: tmp.dismissButtonContainer };
-  const obj6 = { variant: "secondary" };
-  const intl5 = require(1212) /* getSystemLocale */.intl;
-  obj6.text = intl5.string(require(1212) /* getSystemLocale */.t.WAI6xu);
-  obj6.onPress = function onPress() {
-    channel(outer1_2[13]).hideActionSheet();
+  items[3] = callback(require(4600) /* Button */.Button, obj4);
+  const obj5 = { style: tmp.dismissButtonContainer, children: null };
+  const obj6 = { variant: "secondary", text: null, onPress: null };
+  const intl5 = require(1236) /* getSystemLocale */.intl;
+  obj6[1] = intl5.string(require(1236) /* getSystemLocale */.t.WAI6xu);
+  obj6[2] = function onPress() {
+    channel(table[13]).hideActionSheet();
   };
-  obj5.children = callback(require(4578) /* Button */.Button, obj6);
+  obj5[1] = callback(require(4600) /* Button */.Button, obj6);
   items[4] = callback(View, obj5);
-  obj.children = items;
-  obj.children = callback2(View, obj);
-  return callback(require(5221) /* Background */.BottomSheet, obj);
+  obj[1] = items;
+  obj[2] = callback2(View, obj);
+  return callback(require(5243) /* Background */.BottomSheet, obj);
 };

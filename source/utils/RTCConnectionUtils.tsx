@@ -1,13 +1,13 @@
-// Module ID: 10808
-// Function ID: 83738
-// Dependencies: [653, 1212, 2]
+// Module ID: 10832
+// Function ID: 10833
+// Dependencies: [676, 1236, 2]
 
-// Module 10808
+// Module 10832
 import ME from "ME";
 
-let closure_2;
-let closure_3;
-({ RTCConnectionStates: closure_2, ConnectionStatus: closure_3 } = ME);
+let c3;
+let obj1;
+({ RTCConnectionStates: obj1, ConnectionStatus: c3 } = ME);
 const result = require("set").fileFinishedImporting("utils/RTCConnectionUtils.tsx");
 
 export default {
@@ -17,56 +17,55 @@ export default {
       flag = false;
     }
     if (constants.CONNECTING === arg0) {
-      let ERROR = constants2.CONNECTING;
-      const intl10 = require(1212) /* getSystemLocale */.intl;
-      let stringResult = intl10.string(require(1212) /* getSystemLocale */.t.MzW9sN);
-    } else if (constants.AUTHENTICATING === arg0) {
-      ERROR = constants2.CONNECTING;
-      const intl9 = require(1212) /* getSystemLocale */.intl;
-      stringResult = intl9.string(require(1212) /* getSystemLocale */.t.GxXwE2);
-    } else if (constants.AWAITING_ENDPOINT === arg0) {
-      ERROR = constants2.CONNECTING;
-      const intl8 = require(1212) /* getSystemLocale */.intl;
-      stringResult = intl8.string(require(1212) /* getSystemLocale */.t.uQle7a);
-    } else if (constants.RTC_CONNECTED === arg0) {
-      const intl7 = require(1212) /* getSystemLocale */.intl;
+      let connectionStatus = constants2.CONNECTING;
+      const intl10 = require(1236) /* getSystemLocale */.intl;
+      let connectionStatusText = intl10.string(require(1236) /* getSystemLocale */.t.MzW9sN);
+    } else if (tmp.AUTHENTICATING === arg0) {
+      connectionStatus = constants2.CONNECTING;
+      const intl9 = require(1236) /* getSystemLocale */.intl;
+      connectionStatusText = intl9.string(require(1236) /* getSystemLocale */.t.GxXwE2);
+    } else if (tmp.AWAITING_ENDPOINT === arg0) {
+      connectionStatus = constants2.CONNECTING;
+      const intl8 = require(1236) /* getSystemLocale */.intl;
+      connectionStatusText = intl8.string(require(1236) /* getSystemLocale */.t.uQle7a);
+    } else if (tmp.RTC_CONNECTED === arg0) {
+      const intl7 = require(1236) /* getSystemLocale */.intl;
       const string = intl7.string;
-      const t = require(1212) /* getSystemLocale */.t;
+      const t = require(1236) /* getSystemLocale */.t;
       if (flag) {
         let stringResult1 = string(t.HtVOdd);
       } else {
         stringResult1 = string(t.daXg45);
       }
-      stringResult = stringResult1;
-      ERROR = constants2.CONNECTED;
-    } else if (constants.RTC_CONNECTING === arg0) {
-      ERROR = constants2.CONNECTING;
-      const intl6 = require(1212) /* getSystemLocale */.intl;
-      stringResult = intl6.string(require(1212) /* getSystemLocale */.t.Gp51dl);
-    } else if (constants.ICE_CHECKING === arg0) {
-      ERROR = constants2.CONNECTING;
-      const intl5 = require(1212) /* getSystemLocale */.intl;
-      stringResult = intl5.string(require(1212) /* getSystemLocale */.t["rdCyA/"]);
-    } else if (constants.DTLS_CONNECTING === arg0) {
-      ERROR = constants2.CONNECTING;
-      const intl4 = require(1212) /* getSystemLocale */.intl;
-      stringResult = intl4.string(require(1212) /* getSystemLocale */.t.UvB3gV);
-    } else if (constants.NO_ROUTE === arg0) {
-      ERROR = constants2.ERROR;
-      const intl3 = require(1212) /* getSystemLocale */.intl;
-      stringResult = intl3.string(require(1212) /* getSystemLocale */.t.mGhOIi);
-    } else if (constants.RTC_DISCONNECTED === arg0) {
-      ERROR = constants2.ERROR;
-      const intl2 = require(1212) /* getSystemLocale */.intl;
-      stringResult = intl2.string(require(1212) /* getSystemLocale */.t.M7LDmE);
+      connectionStatusText = stringResult1;
+      connectionStatus = constants2.CONNECTED;
+    } else if (tmp.RTC_CONNECTING === arg0) {
+      connectionStatus = constants2.CONNECTING;
+      const intl6 = require(1236) /* getSystemLocale */.intl;
+      connectionStatusText = intl6.string(require(1236) /* getSystemLocale */.t.Gp51dl);
+    } else if (tmp.ICE_CHECKING === arg0) {
+      connectionStatus = constants2.CONNECTING;
+      const intl5 = require(1236) /* getSystemLocale */.intl;
+      connectionStatusText = intl5.string(require(1236) /* getSystemLocale */.t["rdCyA/"]);
+    } else if (tmp.DTLS_CONNECTING === arg0) {
+      connectionStatus = constants2.CONNECTING;
+      const intl4 = require(1236) /* getSystemLocale */.intl;
+      connectionStatusText = intl4.string(require(1236) /* getSystemLocale */.t.UvB3gV);
+    } else if (tmp.NO_ROUTE === arg0) {
+      connectionStatus = constants2.ERROR;
+      const intl3 = require(1236) /* getSystemLocale */.intl;
+      connectionStatusText = intl3.string(require(1236) /* getSystemLocale */.t.mGhOIi);
+    } else if (tmp.RTC_DISCONNECTED === arg0) {
+      connectionStatus = constants2.ERROR;
+      const intl2 = require(1236) /* getSystemLocale */.intl;
+      connectionStatusText = intl2.string(require(1236) /* getSystemLocale */.t.M7LDmE);
     } else {
-      const DISCONNECTED = constants.DISCONNECTED;
-      ERROR = constants2.ERROR;
-      const intl = require(1212) /* getSystemLocale */.intl;
-      stringResult = intl.string(require(1212) /* getSystemLocale */.t.NLKQbx);
+      const DISCONNECTED = tmp.DISCONNECTED;
+      connectionStatus = constants2.ERROR;
+      const intl = require(1236) /* getSystemLocale */.intl;
+      connectionStatusText = intl.string(require(1236) /* getSystemLocale */.t.NLKQbx);
     }
-    const obj = { connectionStatus: ERROR, connectionStatusText: stringResult };
-    return obj;
+    return { connectionStatus, connectionStatusText };
   },
   getShortHostname(hostname) {
     let str = "";

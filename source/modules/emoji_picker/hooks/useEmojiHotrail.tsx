@@ -1,14 +1,31 @@
-// Module ID: 9321
-// Function ID: 72844
-// Name: getEmojiHotrail
-// Dependencies: [31, 5030, 2]
-// Exports: default
+// Module ID: 9345
+// Function ID: 9346
+// Name: useEmojiHotrail
+// Dependencies: [19, 5052, 2]
+// Exports: default, getEmojiHotrail
 
-// Module 9321 (getEmojiHotrail)
-import result from "result";
+// Module 9345 (useEmojiHotrail)
+import noop from "noop";
 import { EMOJI_ROW_SIZE } from "EmojiCategoryTypes";
 
-function getEmojiHotrail(arg0) {
+const result = require("set").fileFinishedImporting("modules/emoji_picker/hooks/useEmojiHotrail.tsx");
+
+export default function useEmojiHotrail(arg0) {
+  const React = arg0;
+  const items = [arg0];
+  return React.useMemo(() => {
+    let newlyAddedEmojis;
+    let rowSize;
+    let topEmojis;
+    ({ topEmojis, newlyAddedEmojis, rowSize } = noop);
+    if (rowSize === undefined) {
+      rowSize = outer1_1;
+    }
+    const substr = topEmojis.slice(0, rowSize - newlyAddedEmojis.length);
+    return { visibleTopEmojis: substr, visibleNewlyAddedEmojis: newlyAddedEmojis, allEmojis: substr.concat(newlyAddedEmojis) };
+  }, items);
+};
+export const getEmojiHotrail = function getEmojiHotrail(arg0) {
   let newlyAddedEmojis;
   let rowSize;
   let topEmojis;
@@ -18,12 +35,4 @@ function getEmojiHotrail(arg0) {
   }
   const substr = topEmojis.slice(0, rowSize - newlyAddedEmojis.length);
   return { visibleTopEmojis: substr, visibleNewlyAddedEmojis: newlyAddedEmojis, allEmojis: substr.concat(newlyAddedEmojis) };
-}
-const result = require("set").fileFinishedImporting("modules/emoji_picker/hooks/useEmojiHotrail.tsx");
-
-export default function useEmojiHotrail(arg0) {
-  const React = arg0;
-  const items = [arg0];
-  return React.useMemo(() => outer1_2(result), items);
 };
-export { getEmojiHotrail };

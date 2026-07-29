@@ -1,51 +1,47 @@
-// Module ID: 14326
-// Function ID: 109864
+// Module ID: 14348
+// Function ID: 14349
 // Name: useOfficialMessageStyleSettingValue
-// Dependencies: [31, 4157, 7733, 566, 13479, 1212, 10099, 2]
+// Dependencies: [19, 4181, 7756, 589, 13502, 1236, 10120, 2]
 // Exports: onOfficialMessageStyleSettingValueChange, useOfficialMessageStyleSettingOptions, useOfficialMessageStyleSettingValue
 
-// Module 14326 (useOfficialMessageStyleSettingValue)
-import result from "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 14348 (useOfficialMessageStyleSettingValue)
+import noop from "noop";
+import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
 import createToggle from "createToggle";
 
 const require = arg1;
 function useOfficialMessageStyleSettingValue() {
-  const items = [_isNativeReflectConstruct];
-  return require(566) /* initialize */.useStateFromStores(items, () => outer1_3.officialMessageStyle);
+  const items = [maybeApplyNoTextColorForLightCustomTheme];
+  return require(589) /* initialize */.useStateFromStores(items, () => officialMessageStyle.officialMessageStyle);
 }
 function onOfficialMessageStyleSettingValueChange(officialMessageStyle) {
-  const result = require(13479) /* setFontSize */.setOfficialMessageStyle(officialMessageStyle);
+  const result = require(13502) /* setFontSize */.setOfficialMessageStyle(officialMessageStyle);
 }
 function useOfficialMessageStyleSettingOptions() {
   return React.useMemo(() => {
-    let obj = {};
-    const intl = outer1_0(outer1_1[5]).intl;
-    obj.label = intl.string(outer1_0(outer1_1[5]).t.ERaS6f);
-    obj.value = "default";
+    let obj = { label: null, value: "default" };
+    const intl = callback(1236).intl;
+    obj[0] = intl.string(callback(1236).t.ERaS6f);
     const items = [obj, , , ];
-    obj = {};
-    const intl2 = outer1_0(outer1_1[5]).intl;
-    obj.label = intl2.string(outer1_0(outer1_1[5]).t.JKfipk);
-    obj.value = "no_text_color";
+    obj = { label: null, value: "no_text_color" };
+    const intl2 = callback(1236).intl;
+    obj[0] = intl2.string(callback(1236).t.JKfipk);
     items[1] = obj;
-    obj = {};
-    const intl3 = outer1_0(outer1_1[5]).intl;
-    obj.label = intl3.string(outer1_0(outer1_1[5]).t.O2vBoY);
-    obj.value = "no_gradient";
+    obj = { label: null, value: "no_gradient" };
+    const intl3 = callback(1236).intl;
+    obj[0] = intl3.string(callback(1236).t.O2vBoY);
     items[2] = obj;
-    const obj1 = {};
-    const intl4 = outer1_0(outer1_1[5]).intl;
-    obj1.label = intl4.string(outer1_0(outer1_1[5]).t["+loyQl"]);
-    obj1.value = "hidden";
+    const obj1 = { label: null, value: "hidden" };
+    const intl4 = callback(1236).intl;
+    obj1[0] = intl4.string(callback(1236).t["+loyQl"]);
     items[3] = obj1;
     return items;
   }, []);
 }
 createToggle = {
   useTitle() {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(require(1212) /* getSystemLocale */.t.nC2XBl);
+    const intl = require(1236) /* getSystemLocale */.intl;
+    return intl.string(require(1236) /* getSystemLocale */.t.nC2XBl);
   },
   parent: require("MobileSetting").MobileSetting.ACCESSIBILITY,
   useValue: useOfficialMessageStyleSettingValue,

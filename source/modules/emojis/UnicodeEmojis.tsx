@@ -1,466 +1,343 @@
-// Module ID: 3806
-// Function ID: 29074
-// Name: _createForOfIteratorHelperLoose
-// Dependencies: [6, 7, 3807, 3808, 3809, 3810, 22, 13099, 2]
+// Module ID: 3830
+// Function ID: 3831
+// Name: parseRawEmojiObject
+// Dependencies: [3831, 3832, 3833, 3834, 12, 13122, 2]
 // Exports: asUnicodeEmoji
 
-// Module 3806 (_createForOfIteratorHelperLoose)
-import apply from "apply";
-import module_13099 from "module_13099";
-import createText from "createText";
+// Module 3830 (parseRawEmojiObject)
+import defaultImageSrcGenerator from "defaultImageSrcGenerator";
 import module_917631 from "module_917631";
 import module_127988 from "module_127988";
 
 const require = arg1;
-function _createForOfIteratorHelperLoose(iterable) {
-  let closure_0 = iterable;
-  iterable = "undefined" !== typeof Symbol;
-  if (iterable) {
-    const _Symbol = Symbol;
-    iterable = iterable[Symbol.iterator];
-  }
-  if (!iterable) {
-    iterable = iterable[Symbol.iterator];
-  }
-  if (iterable) {
-    const iter = iterable.call(iterable);
-    const next = iter.next;
-    return next.bind(iter);
-  } else {
-    const _Array = Array;
-    let tmp = iterable;
-    if (!Array.isArray(iterable)) {
-      let tmp2;
-      if (iterable) {
-        if ("string" === typeof iterable) {
-          tmp2 = _arrayLikeToArray(iterable, undefined);
-        } else {
-          const toString = {}.toString;
-          const substr = toString.call(iterable).slice(8, -1);
-          let name = substr;
-          if (tmp3) {
-            name = iterable.constructor.name;
-          }
-          if ("Map" !== name) {
-            if ("Set" !== name) {
-              if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(iterable, undefined);
-              } else {
-                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
-              }
-            }
-            tmp2 = arr;
-          }
-          const _Array2 = Array;
-          arr = Array.from(iterable);
-          const callResult = toString.call(iterable);
-          tmp3 = "Object" === substr && iterable.constructor;
-        }
-      }
-      tmp = tmp2;
-      if (!tmp2) {
-        const _TypeError = TypeError;
-        const typeError = new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
-        throw typeError;
-      }
-    }
-    if (tmp) {
-      closure_0 = tmp;
-    }
-    let c1 = 0;
-    return () => {
-      if (closure_1 >= length.length) {
-        let obj = { done: true };
-      } else {
-        obj = { done: false };
-        closure_1 = tmp3 + 1;
-        obj.value = length[+closure_1];
-      }
-      return obj;
-    };
-  }
-}
-function _arrayLikeToArray(arg0, arg1) {
-  let length;
-  if (tmp) {
-    length = arg0.length;
-  }
-  const ArrayResult = Array(length);
-  for (let num = 0; num < length; num = num + 1) {
-    ArrayResult[num] = arg0[num];
-  }
-  return ArrayResult;
-}
-function getEmojiObjectByName(emojiName) {
-  const tmp = require(3808).nameToEmoji[emojiName];
-  let tmp2 = null;
-  if (null != tmp) {
-    tmp2 = require(3808).emojis[tmp];
-  }
-  return tmp2;
-}
-function getEmojiObjectBySurrogate(surrogate) {
-  const tmp = require(3808).surrogateToEmoji[surrogate];
-  let tmp2 = null;
-  if (null != tmp) {
-    tmp2 = require(3808).emojis[tmp];
-  }
-  return tmp2;
-}
-function parseRawEmojiObject(value) {
-  value = weakMap.get(value);
+function parseRawEmojiObject(arg0) {
+  const value = weakMap.get(arg0);
   if (null != value) {
     return value;
   } else {
-    const prototype = tmp4.prototype;
-    const tmp6 = new new.target(value);
-    const result = weakMap.set(value, tmp6);
-    return tmp6;
+    const tmp5 = new Emoji(arg0);
+    const result = obj.set(arg0, tmp5);
+    return tmp5;
   }
+  obj = weakMap;
 }
-function getByName(emojiName) {
-  const tmp = getEmojiObjectByName(emojiName);
-  let tmp2 = null;
-  if (null != tmp) {
-    tmp2 = parseRawEmojiObject(tmp);
-  }
-  return tmp2;
-}
-function contentHasUnicodeOrEmoji(text) {
-  return regex.test(text);
-}
-function emojiNameOrUnicodeSequence(surrogate) {
-  let first;
-  const tmp2 = getEmojiObjectBySurrogate(surrogate);
-  if (null != tmp2) {
-    first = tmp2.names[0];
-  }
-  if (null != first) {
-    let obj = { type: "emoji", surrogate };
-    const _HermesInternal = HermesInternal;
-    obj.emojiName = ":" + first + ":";
-  } else {
-    obj = { type: "text", text: surrogate };
-  }
-  return obj;
-}
-function findInlineEmojisFromSurrogates(text, arg1) {
+function findInlineEmojisFromSurrogates(content, arg1) {
   if (true !== arg1) {
-    if (!contentHasUnicodeOrEmoji(text)) {
-      const obj = { type: "text", text };
+    if (!regex.test(content)) {
+      let obj = { type: "text", text: null };
+      obj[1] = content;
       const items = [obj];
       return items;
     }
   }
-  const items1 = [];
-  let match = text.match(closure_11);
-  if (null == match) {
+  let match = content.match(closure_9);
+  if (match == null) {
     match = [];
   }
-  let str2 = "";
+  const items1 = [];
+  let combined = globalThis;
   let num = 0;
-  let str3 = "";
+  let str = "";
+  let str2 = "";
   if (0 < match.length) {
     while (true) {
-      let tmp4 = match[num];
+      let tmp3 = match[num];
+      let tmp4 = num;
+      let tmp5 = str;
       if (null != ``) {
         if ("" !== ``) {
-          let tmp10 = module_917631;
-          if (tmp4 === module_917631) {
-            text = `${tmp4}`;
-            let str4 = "";
-            let tmp14 = emojiNameOrUnicodeSequence;
-            let tmp15 = emojiNameOrUnicodeSequence(`${tmp4}`);
+          let tmp9 = module_917631;
+          if (tmp3 === module_917631) {
+            let text = `${tmp3}`;
+            let str3 = "";
+            let tmp16 = require;
+            let tmp17 = dependencyMap;
+            let tmp18 = require(3832).surrogateToEmoji[`${tmp3}`];
+            let tmp19 = null;
+            if (null != tmp18) {
+              tmp19 = tmp16(3832).emojis[tmp18];
+            }
+            let first;
+            if (tmp19 != null) {
+              first = tmp19.names[0];
+            }
+            if (null != first) {
+              obj = { type: "emoji", surrogate: null, emojiName: null };
+              obj[1] = text;
+              let _HermesInternal2 = HermesInternal;
+              obj[2] = ":" + first + ":";
+            } else {
+              obj = { type: "text", text: null };
+              obj[1] = text;
+            }
             if (items1.length > 0) {
-              let tmp16 = items1[items1.length - 1];
-              let tmp3 = tmp16;
-              if ("text" === tmp15.type) {
-                tmp3 = tmp16;
-                if ("text" === tmp16.type) {
-                  tmp16.text = tmp16.text + tmp15.text;
-                  let sum = str4;
-                  let tmp7 = tmp15;
-                  let tmp8 = tmp16;
+              let tmp21 = items1[items1.length - 1];
+              if ("text" === obj.type) {
+                if ("text" === tmp21.type) {
+                  tmp21.text = tmp21.text + obj.text;
+                  let sum = str3;
                 }
               }
             }
-            let arr = items1.push(tmp15);
-            tmp8 = tmp3;
-            sum = str4;
-            tmp7 = tmp15;
+            let arr = items1.push(obj);
+            sum = str3;
           } else {
-            let tmp11 = regex2;
-            if (regex2.test(tmp4)) {
-              sum = str2 + tmp4;
-              tmp7 = tmp2;
-              tmp8 = tmp3;
+            let tmp30 = regex2;
+            if (regex2.test(tmp3)) {
+              sum = str + tmp3;
             } else {
-              let tmp12 = emojiNameOrUnicodeSequence;
-              arr = items1.push(emojiNameOrUnicodeSequence(str2));
-              str4 = "";
-              text = tmp4;
+              let tmp10 = require;
+              let tmp11 = dependencyMap;
+              let tmp12 = require(3832).surrogateToEmoji[str];
+              let tmp13 = null;
+              if (null != tmp12) {
+                tmp13 = tmp10(3832).emojis[tmp12];
+              }
+              let first1;
+              if (tmp13 != null) {
+                first1 = tmp13.names[0];
+              }
+              if (null != first1) {
+                let obj1 = { type: "emoji", surrogate: null, emojiName: null };
+                obj1[1] = str;
+                let _HermesInternal = HermesInternal;
+                obj1[2] = ":" + first1 + ":";
+                let obj2 = obj1;
+              } else {
+                obj2 = { type: "text", text: null };
+                obj2[1] = str;
+              }
+              arr = items1.push(obj2);
+              text = tmp3;
+              str3 = "";
             }
           }
           num = num + 1;
+          str = sum;
           str2 = sum;
-          tmp2 = tmp7;
-          tmp3 = tmp8;
-          str3 = sum;
           if (num >= match.length) {
             break;
           }
         }
       }
-      let tmp5 = module_127988;
-      str4 = str2;
-      text = tmp4;
-      tmp7 = tmp2;
-      tmp8 = tmp3;
-      sum = tmp4;
+      let tmp6 = module_127988;
+      text = tmp3;
+      str3 = str;
+      sum = tmp3;
     }
   }
-  if (tmp18) {
-    items1.push(emojiNameOrUnicodeSequence(str3));
+  if (!tmp23) {
+    return items1;
+  } else {
+    const tmp26 = require(3832).surrogateToEmoji[str2];
+    let tmp27 = null;
+    if (null != tmp26) {
+      tmp27 = tmp24(3832).emojis[tmp26];
+    }
+    let first2;
+    if (tmp27 != null) {
+      first2 = tmp27.names[0];
+    }
+    if (null != first2) {
+      const obj3 = { type: "emoji", surrogate: null, emojiName: null };
+      obj3[1] = str2;
+      combined = ":" + first2 + ":";
+      obj3[2] = combined;
+      let obj4 = obj3;
+    } else {
+      obj4 = { type: "text", text: null };
+      obj4[1] = str2;
+    }
+    items1.push(obj4);
+    tmp24 = require;
   }
-  return items1;
 }
-function convertNameToSurrogate(emojiName) {
-  let str = arg1;
-  if (arg1 === undefined) {
-    str = "";
-  }
-  const tmp = getEmojiObjectByName(emojiName);
-  let surrogates;
-  if (null != tmp) {
-    surrogates = tmp.surrogates;
-  }
-  if (null != surrogates) {
-    str = surrogates;
-  }
-  return str;
-}
-function convertSurrogateToName(name, arg1) {
-  let flag = arg1;
-  let str = arg2;
-  if (arg1 === undefined) {
-    flag = true;
-  }
-  if (str === undefined) {
-    str = "";
-  }
-  const tmp = getEmojiObjectBySurrogate(name);
-  let first;
-  if (null != tmp) {
-    first = tmp.names[0];
-  }
-  if (null != first) {
-    str = first;
-  }
-  let combined = str;
-  if (flag) {
-    const _HermesInternal = HermesInternal;
-    combined = ":" + str + ":";
-  }
-  return combined;
-}
-let c6 = null;
+let c4 = null;
 const weakMap = new WeakMap();
 let items = ["\u{1F3FB}", "\u{1F3FC}", "\u{1F3FD}", "\u{1F3FE}", "\u{1F3FF}"];
 let tmp3 = /^:([^\s:]+?(?:::skin-tone-\d)?):/;
-let closure_9 = tmp3;
-const re10 = /[\u200d\ud800-\udfff\u0300-\u036f\ufe20-\ufe2f\u20d0-\u20ff\ufe0e\ufe0f\u270b\u2b50\u2728\u26a1\u26c5\u26c4\u2614\u2615\u26bd\u26be\u26f3\u26f5\u2693\u26fd\u26f2\u26fa\u26ea\u231a\u23f0\u231b\u23f3\u26ce\u2648\u2649\u264a\u264b\u264c\u264d\u264e\u264f\u2650\u2651\u2652\u2653\u270a\u274c\u2b55\u26d4\u2757\u2755\u2753\u2754\u2705\u274e\u267f\u23e9\u23ea\u23eb\u23ec\u2795\u2796\u2797\u27b0\u27bf\u26aa\u26ab\u25fe\u25fd\u2b1b\u2b1c\u26a7]/;
-const re11 = /\ud83c[\udffb-\udfff](?=\ud83c[\udffb-\udfff])|(?:[^\ud800-\udfff][\u0300-\u036f\ufe20-\ufe2f\u20d0-\u20ff]?|[\u0300-\u036f\ufe20-\ufe2f\u20d0-\u20ff]|(?:\ud83c[\udde6-\uddff]){2}|[\ud800-\udbff][\udc00-\udfff]|[\ud800-\udfff])[\ufe0e\ufe0f]?(?:[\u0300-\u036f\ufe20-\ufe2f\u20d0-\u20ff]|\ud83c[\udffb-\udfff])?(?:\u200d(?:[^\ud800-\udfff]|(?:\ud83c[\udde6-\uddff]){2}|[\ud800-\udbff][\udc00-\udfff])[\ufe0e\ufe0f]?(?:[\u0300-\u036f\ufe20-\ufe2f\u20d0-\u20ff]|\ud83c[\udffb-\udfff])?)*/g;
-let tmp4 = (() => {
-  class Emoji {
-    constructor(arg0) {
-      tmp = outer1_3(this, Emoji);
-      this.emojiObject = arg0;
-      this.type = Emoji(outer1_2[4]).EmojiTypes.UNICODE;
-      this.uniqueName = arg0.names[0];
-      this.surrogates = arg0.surrogates;
-      this.diversityChildren = {};
-      if (null != arg0.diversityChildren) {
-        tmp12 = outer1_17;
-        tmp13 = outer1_17(arg0.diversityChildren);
-        iter2 = tmp13();
-        str = "-";
-        num = 3;
-        if (!iter2.done) {
-          do {
-            tmp2 = Emoji;
-            tmp3 = outer1_2;
-            tmp4 = Emoji(outer1_2[3]).emojis[iter2.value];
-            if (null != tmp4.diversity) {
-              diversity = tmp4.diversity;
-              tmp6 = Emoji;
-              prototype = Emoji.prototype;
-              tmp7 = new.target;
-              tmp8 = new.target;
-              tmp9 = tmp4;
-              joined = diversity.join("-");
-              tmp10 = new Emoji(tmp4);
-              tmp11 = tmp10;
-              this.diversityChildren[joined] = tmp10;
-            }
-            iter = tmp13();
-            iter2 = iter;
-          } while (!iter.done);
+const error = tmp3;
+const re8 = /[\u200d\ud800-\udfff\u0300-\u036f\ufe20-\ufe2f\u20d0-\u20ff\ufe0e\ufe0f\u270b\u2b50\u2728\u26a1\u26c5\u26c4\u2614\u2615\u26bd\u26be\u26f3\u26f5\u2693\u26fd\u26f2\u26fa\u26ea\u231a\u23f0\u231b\u23f3\u26ce\u2648\u2649\u264a\u264b\u264c\u264d\u264e\u264f\u2650\u2651\u2652\u2653\u270a\u274c\u2b55\u26d4\u2757\u2755\u2753\u2754\u2705\u274e\u267f\u23e9\u23ea\u23eb\u23ec\u2795\u2796\u2797\u27b0\u27bf\u26aa\u26ab\u25fe\u25fd\u2b1b\u2b1c\u26a7]/;
+const re9 = /\ud83c[\udffb-\udfff](?=\ud83c[\udffb-\udfff])|(?:[^\ud800-\udfff][\u0300-\u036f\ufe20-\ufe2f\u20d0-\u20ff]?|[\u0300-\u036f\ufe20-\ufe2f\u20d0-\u20ff]|(?:\ud83c[\udde6-\uddff]){2}|[\ud800-\udbff][\udc00-\udfff]|[\ud800-\udfff])[\ufe0e\ufe0f]?(?:[\u0300-\u036f\ufe20-\ufe2f\u20d0-\u20ff]|\ud83c[\udffb-\udfff])?(?:\u200d(?:[^\ud800-\udfff]|(?:\ud83c[\udde6-\uddff]){2}|[\ud800-\udbff][\udc00-\udfff])[\ufe0e\ufe0f]?(?:[\u0300-\u036f\ufe20-\ufe2f\u20d0-\u20ff]|\ud83c[\udffb-\udfff])?)*/g;
+let Emoji;
+class Emoji {
+  constructor(arg0) {
+    obj = Object.create(new.target.prototype);
+    obj.emojiObject = global;
+    obj.type = require("EmojiTypes").EmojiTypes.UNICODE;
+    obj.uniqueName = global.names[0];
+    obj.surrogates = global.surrogates;
+    obj.diversityChildren = {};
+    if (null != global.diversityChildren) {
+      diversityChildren = global.diversityChildren;
+      tmp14 = diversityChildren;
+      tmp15 = diversityChildren[Symbol.iterator]();
+      str = "-";
+      tmp2 = diversityChildren;
+      tmp4 = tmp15;
+      while (tmp15 !== undefined) {
+        tmp5 = closure_0;
+        tmp6 = closure_2;
+        tmp7 = require("module_3832").emojis[tmp3];
+        tmp8 = tmp7;
+        if (null != tmp7.diversity) {
+          tmp9 = tmp7;
+          diversity = tmp8.diversity;
+          tmp11 = Emoji;
+          tmp12 = new.target;
+          tmp13 = tmp8;
+          joined = diversity.join("-");
+          obj.diversityChildren[joined] = new Emoji(tmp7);
         }
+        continue;
       }
-      return;
     }
+    return obj;
   }
-  let obj = {
-    key: "names",
-    get() {
-      return this.emojiObject.names;
+}
+const prototype = Emoji.prototype;
+Object.defineProperty(prototype, "names", {
+  get: function names(arg0) {
+    return this.emojiObject.names;
+  },
+  set: undefined
+});
+Object.defineProperty(prototype, "allNamesString", {
+  get: function allNamesString() {
+    const self = this;
+    if (this.names.length > 1) {
+      const names = self.names;
+      const _HermesInternal2 = HermesInternal;
+      let combined = ":" + names.join(": :") + ":";
+    } else {
+      const _HermesInternal = HermesInternal;
+      combined = ":" + self.uniqueName + ":";
     }
-  };
-  const items = [obj, , , , , , , , , , , , , , ];
-  obj = {
-    key: "allNamesString",
-    get() {
-      const self = this;
-      if (this.names.length > 1) {
-        const names = self.names;
-        const _HermesInternal2 = HermesInternal;
-        let combined = ":" + names.join(": :") + ":";
-      } else {
+    return combined;
+  },
+  set: undefined
+});
+Object.defineProperty(prototype, "unicodeVersion", {
+  get: function unicodeVersion() {
+    let num = this.emojiObject.unicodeVersion;
+    if (num == null) {
+      num = 0;
+    }
+    return num;
+  },
+  set: undefined
+});
+Object.defineProperty(prototype, "hasDiversity", {
+  get: function hasDiversity() {
+    return this.emojiObject.hasDiversity;
+  },
+  set: undefined
+});
+Object.defineProperty(prototype, "hasMultiDiversity", {
+  get: function hasMultiDiversity() {
+    return this.emojiObject.hasMultiDiversity;
+  },
+  set: undefined
+});
+Object.defineProperty(prototype, "hasDiversityParent", {
+  get: function hasDiversityParent() {
+    return this.emojiObject.hasDiversityParent;
+  },
+  set: undefined
+});
+Object.defineProperty(prototype, "hasMultiDiversityParent", {
+  get: function hasMultiDiversityParent() {
+    return this.emojiObject.hasMultiDiversityParent;
+  },
+  set: undefined
+});
+Object.defineProperty(prototype, "managed", {
+  get: function managed() {
+    return true;
+  },
+  set: undefined
+});
+Object.defineProperty(prototype, "animated", {
+  get: function animated() {
+    return false;
+  },
+  set: undefined
+});
+Object.defineProperty(prototype, "defaultDiversityChild", {
+  get: function defaultDiversityChild() {
+    if (this.hasDiversity) {
+      if (null != c4) {
+        convert = convert.convert;
+        let str = convert.toCodePoint(c4);
+        if (str == null) {
+          str = "";
+        }
+        return tmp.diversityChildren[str];
+      }
+    }
+    return null;
+  },
+  set: undefined
+});
+Object.defineProperty(prototype, "url", {
+  get: function url() {
+    const defaultDiversityChild = this.defaultDiversityChild;
+    if (null != defaultDiversityChild) {
+      let uRL = importDefault(3834).getURL(defaultDiversityChild.surrogates);
+      const obj2 = importDefault(3834);
+    } else {
+      uRL = importDefault(3834).getURL(tmp.surrogates);
+      const obj = importDefault(3834);
+    }
+    return uRL;
+  },
+  set: undefined
+});
+Object.defineProperty(prototype, "name", {
+  get: function name() {
+    const self = this;
+    if (this.hasDiversity) {
+      if (null != c4) {
+        const tmp6 = require(3832).surrogateToEmoji[c4];
+        let tmp7 = null;
+        if (null != tmp6) {
+          tmp7 = tmp4(3832).emojis[tmp6];
+        }
+        let first;
+        if (tmp7 != null) {
+          first = tmp7.names[0];
+        }
         const _HermesInternal = HermesInternal;
-        combined = ":" + self.uniqueName + ":";
+        let uniqueName = "" + self.uniqueName + "::" + first;
+        tmp4 = require;
       }
-      return combined;
+      return uniqueName;
     }
-  };
-  items[1] = obj;
-  obj = {
-    key: "unicodeVersion",
-    get() {
-      const unicodeVersion = this.emojiObject.unicodeVersion;
-      let num = 0;
-      if (null != unicodeVersion) {
-        num = unicodeVersion;
-      }
-      return num;
-    }
-  };
-  items[2] = obj;
-  items[3] = {
-    key: "hasDiversity",
-    get() {
-      return this.emojiObject.hasDiversity;
-    }
-  };
-  items[4] = {
-    key: "hasMultiDiversity",
-    get() {
-      return this.emojiObject.hasMultiDiversity;
-    }
-  };
-  items[5] = {
-    key: "hasDiversityParent",
-    get() {
-      return this.emojiObject.hasDiversityParent;
-    }
-  };
-  items[6] = {
-    key: "hasMultiDiversityParent",
-    get() {
-      return this.emojiObject.hasMultiDiversityParent;
-    }
-  };
-  items[7] = {
-    key: "managed",
-    get() {
-      return true;
-    }
-  };
-  items[8] = {
-    key: "animated",
-    get() {
-      return false;
-    }
-  };
-  items[9] = {
-    key: "defaultDiversityChild",
-    get() {
-      if (this.hasDiversity) {
-        if (null != outer1_6) {
-          const convert = outer1_5.convert;
-          const toCodePointResult = convert.toCodePoint(outer1_6);
-          let str = "";
-          if (null != toCodePointResult) {
-            str = toCodePointResult;
-          }
-          return tmp.diversityChildren[str];
-        }
-      }
-      return null;
-    }
-  };
-  items[10] = {
-    key: "url",
-    get() {
-      const defaultDiversityChild = this.defaultDiversityChild;
-      if (null != defaultDiversityChild) {
-        let uRL = outer1_1(outer1_2[5]).getURL(defaultDiversityChild.surrogates);
-        const obj2 = outer1_1(outer1_2[5]);
-      } else {
-        uRL = outer1_1(outer1_2[5]).getURL(tmp.surrogates);
-        const obj = outer1_1(outer1_2[5]);
-      }
-      return uRL;
-    }
-  };
-  items[11] = {
-    key: "name",
-    get() {
-      const self = this;
-      if (this.hasDiversity) {
-        if (null != outer1_6) {
-          const tmp5 = outer1_20(outer1_6);
-          let first;
-          if (null != tmp5) {
-            first = tmp5.names[0];
-          }
-          const _HermesInternal = HermesInternal;
-          let uniqueName = "" + self.uniqueName + "::" + first;
-        }
-        return uniqueName;
-      }
-      uniqueName = self.uniqueName;
-    }
-  };
-  items[12] = {
-    key: "optionallyDiverseSequence",
-    get() {
-      const defaultDiversityChild = this.defaultDiversityChild;
-      return null != defaultDiversityChild ? defaultDiversityChild.surrogates : this.surrogates;
-    }
-  };
-  items[13] = {
-    key: "forEachDiversity",
-    value(disambiguateEmoji) {
-      if (null != this.diversityChildren) {
-        outer1_1(outer1_2[6]).each(tmp.diversityChildren, disambiguateEmoji);
-        const obj = outer1_1(outer1_2[6]);
-      }
-    }
-  };
-  items[14] = {
-    key: "forEachName",
-    value(disambiguateEmoji) {
-      outer1_1(outer1_2[6]).each(this.names, disambiguateEmoji);
-    }
-  };
-  return callback(Emoji, items);
-})();
-let closure_12 = tmp4;
+    uniqueName = self.uniqueName;
+  },
+  set: undefined
+});
+Object.defineProperty(prototype, "optionallyDiverseSequence", {
+  get: function optionallyDiverseSequence() {
+    const defaultDiversityChild = this.defaultDiversityChild;
+    return null != defaultDiversityChild ? defaultDiversityChild.surrogates : this.surrogates;
+  },
+  set: undefined
+});
+prototype["forEachDiversity"] = function forEachDiversity(arg0) {
+  if (null != this.diversityChildren) {
+    importDefault(12).each(tmp.diversityChildren, arg0);
+    const obj = importDefault(12);
+  }
+};
+prototype["forEachName"] = function forEachName(arg0) {
+  importDefault(12).each(this.names, arg0);
+};
 const map = new Map();
-const re16 = /^(?:\uDB40[\uDC61-\uDC7A])$/;
+const re15 = /^(?:\uDB40[\uDC61-\uDC7A])$/;
 let obj = {
   getDefaultDiversitySurrogate() {
-    return c6;
+    return c4;
   },
   setDefaultDiversitySurrogate(value) {
     let tmp = null;
@@ -470,35 +347,73 @@ let obj = {
         tmp = value;
       }
     }
-    let c6 = tmp;
+    let c4 = tmp;
   },
   getCategories() {
-    return Object.keys(require(3808).emojisByCategory);
+    return Object.keys(require(3832).emojisByCategory);
   },
-  getByName,
+  getByName(arg0) {
+    const tmp3 = require(3832).nameToEmoji[arg0];
+    let tmp4 = null;
+    if (null != tmp3) {
+      tmp4 = require(3832).emojis[tmp3];
+    }
+    let tmp5 = null;
+    if (null != tmp4) {
+      let value = weakMap.get(tmp4);
+      if (null == value) {
+        const tmp10 = new Emoji(tmp4);
+        const result = obj.set(tmp4, tmp10);
+        value = tmp10;
+      }
+      tmp5 = value;
+      obj = weakMap;
+    }
+    return tmp5;
+  },
   getByCategory(name) {
     let value = map.get(name);
     if (null == value) {
-      const tmp4 = require(3808).emojisByCategory[name];
-      const emojis = require(3808).emojis;
-      const result = importDefault(3810).filterUnsupportedEmojis(emojis.slice(tmp4[0], tmp4[1]));
+      const tmp4 = require(3832).emojisByCategory[name];
+      const emojis = require(3832).emojis;
+      const result = importDefault(3834).filterUnsupportedEmojis(emojis.slice(tmp4[0], tmp4[1]));
       const mapped = result.map(parseRawEmojiObject);
       const result1 = map.set(name, mapped);
       value = mapped;
-      const obj = importDefault(3810);
+      const obj2 = importDefault(3834);
     }
     return value;
   },
-  contentHasUnicodeOrEmoji,
-  translateInlineEmojiToSurrogates(emojiName) {
-    return emojiName.replace(closure_9, (arg0, arg1) => outer1_26(arg1, arg0));
+  contentHasUnicodeOrEmoji(arg0) {
+    return regex.test(arg0);
   },
-  maybeTranslateSurrogatesToInlineEmoji(text) {
-    if (contentHasUnicodeOrEmoji(text)) {
-      const mapped = findInlineEmojisFromSurrogates(text, true).map((type) => "text" === type.type ? type.text : type.emojiName);
+  translateInlineEmojiToSurrogates(emojiName) {
+    return emojiName.replace(closure_7, (arg0, arg1) => {
+      let str = arg0;
+      if (arg0 === undefined) {
+        str = "";
+      }
+      const tmp3 = callback(table[1]).nameToEmoji[arg1];
+      let tmp4 = null;
+      if (null != tmp3) {
+        tmp4 = callback(table[1]).emojis[tmp3];
+      }
+      let surrogates;
+      if (tmp4 != null) {
+        surrogates = tmp4.surrogates;
+      }
+      if (surrogates == null) {
+        surrogates = str;
+      }
+      return surrogates;
+    });
+  },
+  maybeTranslateSurrogatesToInlineEmoji(content) {
+    if (regex.test(content)) {
+      const mapped = findInlineEmojisFromSurrogates(content, true).map((type) => "text" === type.type ? type.text : type.emojiName);
       const joined = mapped.join("");
       let tmp4 = null;
-      if (joined !== text) {
+      if (joined !== content) {
         tmp4 = joined;
       }
       return tmp4;
@@ -511,19 +426,65 @@ let obj = {
     const mapped = findInlineEmojisFromSurrogates(content).map((type) => "text" === type.type ? type.text : type.emojiName);
     return mapped.join("");
   },
-  convertNameToSurrogate,
-  convertSurrogateToName,
-  convertShortcutToName(arg0) {
+  convertNameToSurrogate(emojiName) {
+    let str = arg1;
+    if (arg1 === undefined) {
+      str = "";
+    }
+    const tmp3 = require(3832).nameToEmoji[emojiName];
+    let tmp4 = null;
+    if (null != tmp3) {
+      tmp4 = require(3832).emojis[tmp3];
+    }
+    let surrogates;
+    if (tmp4 != null) {
+      surrogates = tmp4.surrogates;
+    }
+    if (surrogates == null) {
+      surrogates = str;
+    }
+    return surrogates;
+  },
+  convertSurrogateToName(name, arg1) {
     let flag = arg1;
-    let str = arg2;
     if (arg1 === undefined) {
       flag = true;
     }
-    if (str === undefined) {
+    let str = arg2;
+    if (arg2 === undefined) {
       str = "";
     }
-    if (hasOwnProperty.call(require(13099), arg0)) {
-      str = require(13099)[arg0];
+    const tmp3 = require(3832).surrogateToEmoji[name];
+    let tmp4 = null;
+    if (null != tmp3) {
+      tmp4 = require(3832).emojis[tmp3];
+    }
+    let first;
+    if (tmp4 != null) {
+      first = tmp4.names[0];
+    }
+    if (first == null) {
+      first = str;
+    }
+    let combined = first;
+    if (flag) {
+      const _HermesInternal = HermesInternal;
+      combined = ":" + first + ":";
+    }
+    return combined;
+  },
+  convertShortcutToName(key10009) {
+    let flag = arg1;
+    if (arg1 === undefined) {
+      flag = true;
+    }
+    let str = arg2;
+    if (arg2 === undefined) {
+      str = "";
+    }
+    const call = hasOwnProperty.call;
+    if (typeof call === "unknown" ? hasOwnProperty(key10009) : call(tmp3, key10009)) {
+      str = require(13122)[key10009];
     }
     let combined = str;
     if (flag) {
@@ -533,40 +494,68 @@ let obj = {
     return combined;
   },
   convertSurrogateToBase(surrogates) {
-    return getByName(convertSurrogateToName(items.reduce((str) => str.replace(arg1, ""), surrogates), false));
+    const reduced = items.reduce((str) => str.replace(arg1, ""), surrogates);
+    const tmp4 = require(3832).surrogateToEmoji[reduced];
+    let tmp5 = null;
+    if (null != tmp4) {
+      tmp5 = tmp2(3832).emojis[tmp4];
+    }
+    let str;
+    if (tmp5 != null) {
+      str = tmp5.names[0];
+    }
+    if (str == null) {
+      str = "";
+    }
+    const tmp6 = require(3832).nameToEmoji[str];
+    let tmp7 = null;
+    if (null != tmp6) {
+      tmp7 = tmp2(3832).emojis[tmp6];
+    }
+    let tmp8 = null;
+    if (null != tmp7) {
+      let value = weakMap.get(tmp7);
+      if (null == value) {
+        const tmp13 = new Emoji(tmp7);
+        const result = obj.set(tmp7, tmp13);
+        value = tmp13;
+      }
+      tmp8 = value;
+      obj = weakMap;
+    }
+    return tmp8;
   },
   forEach(arg0) {
-    let iter2;
-    const tmp = _createForOfIteratorHelperLoose(require(3808).emojis);
-    let iter = tmp();
-    if (!iter.done) {
-      do {
-        let value = iter.value;
-        let tmp2 = value.hasDiversityParent || value.hasMultiDiversityParent;
-        if (!tmp2) {
-          let tmp3 = parseRawEmojiObject;
-          let tmp4 = arg0(parseRawEmojiObject(value));
-        }
-        iter2 = tmp();
-        iter = iter2;
-      } while (!iter2.done);
+    for (const item10011 of tmp) {
+      let tmp2 = item10011;
+      let hasMultiDiversityParent = item10011.hasDiversityParent;
+      if (!hasMultiDiversityParent) {
+        let tmp3 = item10011;
+        hasMultiDiversityParent = tmp2.hasMultiDiversityParent;
+      }
+      if (!hasMultiDiversityParent) {
+        let tmp4 = parseRawEmojiObject;
+        let tmp5 = item10011;
+        let tmp6 = arg0(parseRawEmojiObject(tmp2));
+      }
+      continue;
     }
   },
-  numDiversitySprites: require("module_3808").numDiversitySprites,
-  numNonDiversitySprites: require("module_3808").numNonDiversitySprites,
+  numDiversitySprites: require("module_3832").numDiversitySprites,
+  numNonDiversitySprites: require("module_3832").numNonDiversitySprites,
   EMOJI_NAME_RE: /^:([^\s:]+?(?:::skin-tone-\d)?):/,
   EMOJI_NAME_AND_DIVERSITY_RE: tmp3,
   EMOJI_SHORTCUT_RE: /^(>:\(|>:\-\(|>=\(|>=\-\(|:"\)|:\-"\)|="\)|=\-"\)|<\/3|<\\3|:\-\\|:\-\/|=\-\\|=\-\/|:'\(|:'\-\(|:,\(|:,\-\(|='\(|='\-\(|=,\(|=,\-\(|:\(|:\-\(|=\(|=\-\(|<3|♡|\]:\(|\]:\-\(|\]=\(|\]=\-\(|o:\)|O:\)|o:\-\)|O:\-\)|0:\)|0:\-\)|o=\)|O=\)|o=\-\)|O=\-\)|0=\)|0=\-\)|:'D|:'\-D|:,D|:,\-D|='D|='\-D|=,D|=,\-D|:\*|:\-\*|=\*|=\-\*|x\-\)|X\-\)|:\||:\-\||=\||=\-\||:o|:\-o|:O|:\-O|=o|=\-o|=O|=\-O|:@|:\-@|=@|=\-@|:D|:\-D|=D|=\-D|:'\)|:'\-\)|:,\)|:,\-\)|='\)|='\-\)|=,\)|=,\-\)|:\)|:\-\)|=\)|=\-\)|\]:\)|\]:\-\)|\]=\)|\]=\-\)|:,'\(|:,'\-\(|;\(|;\-\(|=,'\(|=,'\-\(|:P|:\-P|=P|=\-P|8\-\)|B\-\)|,:\(|,:\-\(|,=\(|,=\-\(|,:\)|,:\-\)|,=\)|,=\-\)|:s|:\-S|:z|:\-Z|:\$|:\-\$|=s|=\-S|=z|=\-Z|=\$|=\-\$|;\)|;\-\))/,
   hasSurrogates(tags) {
-    const obj = importDefault(22);
-    return importDefault(22).toArray(tags).some((arg0) => null != outer1_0(outer1_2[3]).surrogateToEmoji[arg0]);
+    const obj = importDefault(12);
+    return importDefault(12).toArray(tags).some((arg0) => null != callback(table[1]).surrogateToEmoji[arg0]);
   }
 };
-let result = require("createText").fileFinishedImporting("modules/emojis/UnicodeEmojis.tsx");
+let result = require("EmojiTypes").fileFinishedImporting("modules/emojis/UnicodeEmojis.tsx");
 
 export default obj;
 export const DIVERSITY_SURROGATES = items;
-export const Emoji = tmp4;
+export { Emoji };
 export const asUnicodeEmoji = function asUnicodeEmoji(id) {
   let tmp = null;
   if (null == id.id) {
@@ -574,7 +563,8 @@ export const asUnicodeEmoji = function asUnicodeEmoji(id) {
     if (null != id.name) {
       tmp = null;
       if (id.name.length > 0) {
-        const obj = { name: id.name, id: null };
+        const obj = { name: null, id: null };
+        obj[0] = id.name;
         tmp = obj;
       }
     }

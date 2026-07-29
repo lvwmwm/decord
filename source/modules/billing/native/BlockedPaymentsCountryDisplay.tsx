@@ -1,57 +1,57 @@
-// Module ID: 6337
-// Function ID: 56803
+// Module ID: 6358
+// Function ID: 6359
 // Name: BlockedPaymentsCountryDisplay
-// Dependencies: [31, 27, 653, 33, 4165, 689, 4101, 1273, 1212, 1921, 4011, 6338, 6339, 2]
+// Dependencies: [19, 17, 676, 21, 4189, 712, 4125, 1297, 1236, 1945, 4035, 6359, 6360, 2]
 // Exports: default
 
-// Module 6337 (BlockedPaymentsCountryDisplay)
-import "result";
+// Module 6358 (BlockedPaymentsCountryDisplay)
+import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { HelpdeskArticles } from "ME";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_3;
-let closure_4;
+let c3;
+let c4;
 let closure_6;
-let closure_7;
+let error;
 const require = arg1;
-({ View: closure_3, Image: closure_4 } = get_ActivityIndicator);
-({ jsx: closure_6, jsxs: closure_7 } = jsxProd);
-_createForOfIteratorHelperLoose = { container: { alignItems: "center" } };
-_createForOfIteratorHelperLoose = { fontSize: 20, fontWeight: "700", color: require("_createForOfIteratorHelperLoose").colors.TEXT_SUBTLE, marginBottom: 16 };
-_createForOfIteratorHelperLoose.header = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.image = { marginTop: 38 };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+({ View: c3, Image: c4 } = get_ActivityIndicator);
+({ jsx: closure_6, jsxs: error } = jsxProd);
+createCacheKey = { container: { alignItems: "center" }, header: null, image: null };
+createCacheKey = { fontSize: 20, fontWeight: "700", color: require("Themes").colors.TEXT_SUBTLE, marginBottom: 16 };
+createCacheKey[1] = createCacheKey;
+createCacheKey[2] = { marginTop: 38 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
 const result = require("ME").fileFinishedImporting("modules/billing/native/BlockedPaymentsCountryDisplay.tsx");
 
 export default function BlockedPaymentsCountryDisplay() {
-  const tmp = _createForOfIteratorHelperLoose();
-  let obj = { style: tmp.container };
-  obj = { style: tmp.header };
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj.children = intl.string(require(1212) /* getSystemLocale */.t.vwMEHS);
-  const items = [callback(require(1273) /* Button */.LegacyText, obj), , ];
-  obj = {};
-  const intl2 = require(1212) /* getSystemLocale */.intl;
-  const obj1 = {};
-  const tmp2 = importDefault(4101)();
-  const tmp3 = closure_7;
-  const tmp4 = closure_3;
-  const tmp5 = callback;
-  obj1.helpdeskArticle = importDefault(1921).getArticleURL(HelpdeskArticles.BLOCKED_PAYMENTS);
-  obj.children = intl2.format(require(1212) /* getSystemLocale */.t.IHxEJU, obj1);
-  items[1] = callback(require(1273) /* Button */.LegacyText, obj);
-  const obj2 = { style: tmp.image };
-  const obj5 = importDefault(1921);
-  const tmp6 = closure_4;
-  if (obj7.isThemeDark(tmp2)) {
-    let tmp7Result = tmp7(6338);
+  const tmp = createCacheKey();
+  let obj = { style: tmp.container, children: null };
+  obj = { style: tmp.header, children: null };
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj[1] = intl.string(require(1236) /* getSystemLocale */.t.vwMEHS);
+  const items = [callback(require(1297) /* Button */.LegacyText, obj), , ];
+  obj = { children: null };
+  const intl2 = require(1236) /* getSystemLocale */.intl;
+  const obj1 = { helpdeskArticle: null };
+  const tmp4 = importDefault(4125)();
+  const tmp5 = closure_7;
+  const tmp6 = closure_3;
+  const tmp7 = callback;
+  obj1[0] = importDefault(1945).getArticleURL(HelpdeskArticles.BLOCKED_PAYMENTS);
+  obj[0] = intl2.format(require(1236) /* getSystemLocale */.t.IHxEJU, obj1);
+  items[1] = callback(require(1297) /* Button */.LegacyText, obj);
+  const obj2 = { style: tmp.image, source: null };
+  const obj5 = importDefault(1945);
+  const tmp8 = closure_4;
+  if (obj7.isThemeDark(tmp4)) {
+    let tmp2Result = tmp2(6359);
   } else {
-    tmp7Result = tmp7(6339);
+    tmp2Result = tmp2(6360);
   }
-  obj2.source = tmp7Result;
-  items[2] = tmp5(tmp6, obj2);
-  obj.children = items;
-  return tmp3(tmp4, obj);
+  obj2[1] = tmp2Result;
+  items[2] = tmp7(tmp8, obj2);
+  obj[1] = items;
+  return tmp5(tmp6, obj);
 };

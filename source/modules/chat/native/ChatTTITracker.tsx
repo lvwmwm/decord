@@ -1,49 +1,43 @@
-// Module ID: 11126
-// Function ID: 86246
+// Module ID: 11150
+// Function ID: 11151
 // Name: ChatTTITracker
-// Dependencies: [33, 10027, 14, 2]
+// Dependencies: [21, 10049, 9, 2]
 // Exports: ChatTTITracker
 
-// Module 11126 (ChatTTITracker)
+// Module 11150 (ChatTTITracker)
 import jsxProd from "jsxProd";
 
-let closure_3;
-let closure_4;
-let closure_5;
-({ jsx: closure_3, Fragment: closure_4, jsxs: closure_5 } = jsxProd);
-const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/chat/native/ChatTTITracker.tsx");
+let c3;
+let c4;
+let c5;
+({ jsx: c3, Fragment: c4, jsxs: c5 } = jsxProd);
+const result = require("serialize").fileFinishedImporting("modules/chat/native/ChatTTITracker.tsx");
 
 export const ChatTTITracker = function ChatTTITracker(messages) {
   messages = messages.messages;
-  let obj = {};
   let tmp3 = null;
   if (messages.length > 0) {
-    obj = {
-      nativeID: "cached_messages_tti",
-      onMeasurement(nativeEvent) {
-          const displayMessagesWithCache = outer1_1(outer1_2[2]).displayMessagesWithCache;
-          displayMessagesWithCache.record(nativeEvent.nativeEvent.timestamp);
-        }
+    let obj = { nativeID: "cached_messages_tti", onMeasurement: null };
+    obj[1] = function onMeasurement(nativeEvent) {
+      const displayMessagesWithCache = callback(9).displayMessagesWithCache;
+      displayMessagesWithCache.record(nativeEvent.nativeEvent.timestamp);
     };
-    tmp3 = callback(require(10027) /* TTIMeasurementView */.TTIMeasurementView, obj, "cached_messages_tti");
+    tmp3 = callback(require(10049) /* TTIMeasurementView */.TTIMeasurementView, obj, "cached_messages_tti");
   }
-  const items = [tmp3, ];
+  const children = [tmp3, ];
   if (messages.hasFetched) {
-    obj = {
-      nativeID: "latest_messages_tti",
-      onMeasurement(nativeEvent) {
-          const displayLatestMessages = outer1_1(outer1_2[2]).displayLatestMessages;
-          displayLatestMessages.record(nativeEvent.nativeEvent.timestamp);
-        }
+    obj = { nativeID: "latest_messages_tti", onMeasurement: null };
+    obj[1] = function onMeasurement(nativeEvent) {
+      const displayLatestMessages = callback(9).displayLatestMessages;
+      displayLatestMessages.record(nativeEvent.nativeEvent.timestamp);
     };
-    let tmp7 = callback(require(10027) /* TTIMeasurementView */.TTIMeasurementView, obj, "latest_messages_tti");
+    let tmp7 = callback(require(10049) /* TTIMeasurementView */.TTIMeasurementView, obj, "latest_messages_tti");
   } else {
     tmp7 = null;
     if (messages.ready) {
       tmp7 = null;
     }
   }
-  items[1] = tmp7;
-  obj.children = items;
-  return closure_5(closure_4, obj);
+  children[1] = tmp7;
+  return closure_5(closure_4, { children });
 };

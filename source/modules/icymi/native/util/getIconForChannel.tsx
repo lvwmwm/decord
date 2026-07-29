@@ -1,29 +1,29 @@
-// Module ID: 15331
-// Function ID: 116702
+// Module ID: 15364
+// Function ID: 15365
 // Name: getIconForChannel
-// Dependencies: [653, 4686, 4693, 4689, 4673, 4680, 4679, 2]
+// Dependencies: [676, 4708, 4715, 4711, 4695, 4702, 4701, 2]
 // Exports: getIconForChannel
 
-// Module 15331 (getIconForChannel)
+// Module 15364 (getIconForChannel)
 import { ChannelTypes } from "ME";
 
 const result = require("VoiceNormalIcon").fileFinishedImporting("modules/icymi/native/util/getIconForChannel.tsx");
 
-export const getIconForChannel = function getIconForChannel(stateFromStores) {
-  const type = stateFromStores.type;
+export const getIconForChannel = function getIconForChannel(type) {
+  type = type.type;
   if (ChannelTypes.GUILD_ANNOUNCEMENT === type) {
-    return require(4686) /* AnnouncementsIcon */.AnnouncementsIcon;
-  } else if (ChannelTypes.GUILD_VOICE === type) {
-    return require(4693) /* VoiceNormalIcon */.VoiceNormalIcon;
-  } else if (ChannelTypes.GUILD_STAGE_VOICE === type) {
-    return require(4689) /* StageIcon */.StageIcon;
-  } else if (ChannelTypes.GUILD_TEXT === type) {
-    return require(4673) /* TextIcon */.TextIcon;
-  } else if (ChannelTypes.GUILD_FORUM === type) {
-    return require(4680) /* ForumIcon */.ForumIcon;
-  } else if (ChannelTypes.GUILD_MEDIA === type) {
-    return require(4679) /* ImageIcon */.ImageIcon;
+    return require(4708) /* AnnouncementsIcon */.AnnouncementsIcon;
+  } else if (tmp.GUILD_VOICE === type) {
+    return require(4715) /* VoiceNormalIcon */.VoiceNormalIcon;
+  } else if (tmp.GUILD_STAGE_VOICE === type) {
+    return require(4711) /* StageIcon */.StageIcon;
+  } else if (tmp.GUILD_TEXT === type) {
+    return require(4695) /* TextIcon */.TextIcon;
+  } else if (tmp.GUILD_FORUM === type) {
+    return require(4702) /* ForumIcon */.ForumIcon;
+  } else if (tmp.GUILD_MEDIA === type) {
+    return require(4701) /* ImageIcon */.ImageIcon;
   } else {
-    return require(4673) /* TextIcon */.TextIcon;
+    return require(4695) /* TextIcon */.TextIcon;
   }
 };

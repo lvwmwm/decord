@@ -1,71 +1,72 @@
-// Module ID: 11070
-// Function ID: 85939
+// Module ID: 11094
+// Function ID: 11095
 // Name: AppealIngestionFreeTextAppealReasonActionSheet
-// Dependencies: [57, 31, 27, 11048, 33, 4165, 689, 566, 1212, 5221, 4576, 4695, 5153, 11063, 7621, 4161, 4578, 2]
+// Dependencies: [32, 19, 17, 11072, 21, 4189, 712, 589, 1236, 5243, 4598, 4717, 5175, 11087, 7644, 4185, 4600, 2]
 // Exports: default
 
-// Module 11070 (AppealIngestionFreeTextAppealReasonActionSheet)
+// Module 11094 (AppealIngestionFreeTextAppealReasonActionSheet)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
-import { View } from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import noop from "noop";
+import { View } from "set";
+import handleSafetyHubRequestAgeVerificationResetModalAction from "handleSafetyHubRequestAgeVerificationResetModalAction";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
 let closure_6;
-let closure_7;
+let error;
 const require = arg1;
-({ jsx: closure_6, jsxs: closure_7 } = jsxProd);
-_createForOfIteratorHelperLoose = { footerText: { textAlign: "center" }, textArea: { marginTop: -16, marginBottom: 36 } };
-_createForOfIteratorHelperLoose = { height: 1, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BORDER_SUBTLE, marginHorizontal: -16 };
-_createForOfIteratorHelperLoose.separator = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.closeIcon = { alignSelf: "flex-end", flexDirection: "row", marginBottom: -26 };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+({ jsx: closure_6, jsxs: error } = jsxProd);
+createCacheKey = { footerText: { textAlign: "center" }, textArea: { marginTop: -16, marginBottom: 36 }, separator: null, closeIcon: null };
+createCacheKey = { height: 1, backgroundColor: require("Themes").colors.BORDER_SUBTLE, marginHorizontal: -16 };
+createCacheKey[2] = createCacheKey;
+createCacheKey[3] = { alignSelf: "flex-end", flexDirection: "row", marginBottom: -26 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
 const result = require("get ActivityIndicator").fileFinishedImporting("modules/safety_hub/native/AppealIngestionFreeTextAppealReasonActionSheet.tsx");
 
 export default function AppealIngestionFreeTextAppealReasonActionSheet(onPress) {
   const onSave = onPress.onSave;
-  const tmp = _createForOfIteratorHelperLoose();
+  let first;
+  const tmp = createCacheKey();
   let obj = onSave(first[7]);
-  const items = [_isNativeReflectConstruct];
-  const stateFromStores = obj.useStateFromStores(items, () => outer1_5.getFreeTextAppealReason());
-  const tmp3 = callback(React.useState(stateFromStores), 2);
-  first = tmp3[0];
+  const items = [handleSafetyHubRequestAgeVerificationResetModalAction];
+  const stateFromStores = obj.useStateFromStores(items, () => freeTextAppealReason.getFreeTextAppealReason());
+  const tmp5 = callback(React.useState(stateFromStores), 2);
+  first = tmp5[0];
   if ("" === stateFromStores) {
-    const intl2 = onSave(first[8]).intl;
-    let stringResult = intl2.string(onSave(first[8]).t.uoQFIp);
+    const intl2 = tmp2(tmp3[8]).intl;
+    let stringResult = intl2.string(tmp2(tmp3[8]).t.uoQFIp);
   } else {
-    const intl = onSave(first[8]).intl;
-    stringResult = intl.string(onSave(first[8]).t.tnE3bZ);
+    const intl = tmp2(tmp3[8]).intl;
+    stringResult = intl.string(tmp2(tmp3[8]).t.tnE3bZ);
   }
-  const intl3 = onSave(first[8]).intl;
-  obj = { startExpanded: true };
-  obj = { spacing: 16 };
-  const obj1 = { onPress: onPress.onClose, style: tmp.closeIcon, children: callback2(onSave(first[12]).XSmallIcon, { size: "md" }) };
-  const items1 = [callback2(onSave(first[11]).PressableOpacity, obj1), , , , , ];
-  const obj2 = { headerText: stringResult, subHeaderText: intl3.string(onSave(first[8]).t["Rk+uJx"]) };
-  items1[1] = callback2(onSave(first[13]).AppealIngestionModalHeader, obj2);
-  const obj3 = { maxLength: 1024 };
-  const intl4 = onSave(first[8]).intl;
-  obj3.placeholder = intl4.string(onSave(first[8]).t.bQrZIN);
-  obj3.containerStyle = tmp.textArea;
-  obj3.value = first;
-  obj3.onChange = tmp3[1];
-  items1[2] = callback2(onSave(first[14]).TextArea, obj3);
+  const intl3 = tmp2(tmp3[8]).intl;
+  obj = { startExpanded: true, children: null };
+  obj = { spacing: 16, children: null };
+  const obj1 = { onPress: onPress.onClose, style: tmp.closeIcon, children: null };
+  obj1[2] = callback2(onSave(first[12]).XSmallIcon, { size: "md" });
+  const items1 = [callback2(onSave(first[11]).PressableOpacity, obj1), callback2(onSave(first[13]).AppealIngestionModalHeader, { headerText: stringResult, subHeaderText: intl3.string(onSave(first[8]).t["Rk+uJx"]) }), , , , ];
+  const obj2 = { maxLength: 1024, placeholder: null, containerStyle: null, value: null, onChange: null };
+  const intl4 = tmp2(tmp3[8]).intl;
+  obj2[1] = intl4.string(onSave(first[8]).t.bQrZIN);
+  obj2[2] = tmp.textArea;
+  obj2[3] = first;
+  obj2[4] = tmp5[1];
+  items1[2] = callback2(onSave(first[14]).TextArea, obj2);
   items1[3] = callback2(View, { style: tmp.separator });
-  const obj5 = { variant: "text-xs/medium", color: "text-default", style: tmp.footerText };
-  const intl5 = onSave(first[8]).intl;
-  obj5.children = intl5.string(onSave(first[8]).t.xfNY3L);
-  items1[4] = callback2(onSave(first[15]).Text, obj5);
-  const obj6 = {
+  const obj4 = { variant: "text-xs/medium", color: "text-default", style: tmp.footerText, children: null };
+  const intl5 = tmp2(tmp3[8]).intl;
+  obj4[3] = intl5.string(onSave(first[8]).t.xfNY3L);
+  items1[4] = callback2(onSave(first[15]).Text, obj4);
+  const obj5 = {
     onPress() {
       return onSave(first);
-    }
+    },
+    text: null
   };
-  const intl6 = onSave(first[8]).intl;
-  obj6.text = intl6.string(onSave(first[8]).t["R3BPH+"]);
-  items1[5] = callback2(onSave(first[16]).Button, obj6);
-  obj.children = items1;
-  obj.children = callback3(onSave(first[10]).Stack, obj);
+  const intl6 = tmp2(tmp3[8]).intl;
+  obj5[1] = intl6.string(onSave(first[8]).t["R3BPH+"]);
+  items1[5] = callback2(onSave(first[16]).Button, obj5);
+  obj[1] = items1;
+  obj[1] = callback3(onSave(first[10]).Stack, obj);
   return callback2(onSave(first[9]).BottomSheet, obj);
 };

@@ -1,17 +1,17 @@
-// Module ID: 9431
-// Function ID: 73352
+// Module ID: 9455
+// Function ID: 9456
 // Name: SlideoutButton
-// Dependencies: [31, 27, 653, 33, 4165, 4009, 689, 4695, 1273, 2]
+// Dependencies: [19, 17, 676, 21, 4189, 4033, 712, 4717, 1297, 2]
 
-// Module 9431 (SlideoutButton)
-import "result";
+// Module 9455 (SlideoutButton)
+import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import hexToRgb from "hexToRgb";
+import createCacheKey from "createCacheKey";
+import hexToRgba from "hexToRgba";
 
-let closure_4;
-let closure_5;
+let c4;
+let c5;
 const require = arg1;
 class SlideoutButton {
   constructor(arg0) {
@@ -20,33 +20,31 @@ class SlideoutButton {
     if (height === undefined) {
       height = 60;
     }
-    tmp = c6();
-    obj = { accessibilityRole: "button", onPress };
-    obj = { style: items };
+    tmp = jsxs();
+    obj = { accessibilityRole: "button", onPress, children: null };
+    obj = { style: items, children: null };
     items = [, ];
     items[0] = tmp.button;
-    obj1 = { backgroundColor: color, width: 72 };
-    obj1.height = height;
-    items[1] = obj1;
-    obj2 = {};
-    obj2.color = require("_createForOfIteratorHelperLoose").colors.WHITE;
+    items[1] = { backgroundColor: color, width: 72, height };
+    obj1 = { color: null };
+    obj1[0] = require("Themes").colors.WHITE;
     items1 = [, ];
-    items1[0] = jsx(IconComponent, obj2);
-    obj3 = { style: tmp.buttonText };
-    obj3.children = title.toUpperCase();
-    items1[1] = jsx(require("Button").LegacyText, obj3);
-    obj.children = items1;
-    obj.children = jsxs(View, obj);
+    items1[0] = jsx(IconComponent, obj1);
+    obj2 = { style: tmp.buttonText, children: null };
+    obj2[1] = title.toUpperCase();
+    items1[1] = jsx(require("Button").LegacyText, obj2);
+    obj[1] = items1;
+    obj[2] = jsxs(View, obj);
     return jsx(require("PressableBase").PressableOpacity, obj);
   }
 }
-({ jsx: closure_4, jsxs: closure_5 } = jsxProd);
-_createForOfIteratorHelperLoose = { button: { alignSelf: "flex-end", justifyContent: "center", alignItems: "center" } };
-_createForOfIteratorHelperLoose = { color: null, fontSize: 12, fontFamily: null, marginTop: 2, marginHorizontal: 2, textAlign: "center" };
-_createForOfIteratorHelperLoose.color = hexToRgb.hexWithOpacity(require("_createForOfIteratorHelperLoose").unsafe_rawColors.WHITE, 0.6);
-_createForOfIteratorHelperLoose.fontFamily = require("ME").Fonts.PRIMARY_SEMIBOLD;
-_createForOfIteratorHelperLoose.buttonText = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+({ jsx: c4, jsxs: c5 } = jsxProd);
+createCacheKey = { button: { alignSelf: "flex-end", justifyContent: "center", alignItems: "center" }, buttonText: null };
+createCacheKey = { color: null, fontSize: 12, fontFamily: null, marginTop: 2, marginHorizontal: 2, textAlign: "center" };
+createCacheKey[0] = hexToRgba.hexWithOpacity(require("Themes").unsafe_rawColors.WHITE, 0.6);
+createCacheKey[2] = require("ME").Fonts.PRIMARY_SEMIBOLD;
+createCacheKey[1] = createCacheKey;
+createCacheKey = createCacheKey.createStyles(createCacheKey);
 SlideoutButton.width = 72;
 const result = require("ME").fileFinishedImporting("components_native/common/SlideoutButton.tsx");
 

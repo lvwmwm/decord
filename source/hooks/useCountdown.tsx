@@ -1,22 +1,22 @@
-// Module ID: 6214
-// Function ID: 55630
+// Module ID: 6234
+// Function ID: 6235
 // Name: useCountdown
-// Dependencies: [31, 3835, 6215, 6220, 2]
+// Dependencies: [19, 3859, 6235, 6240, 2]
 // Exports: default
 
-// Module 6214 (useCountdown)
-require("result").useCallback;
+// Module 6234 (useCountdown)
+require("noop").useCallback;
 const result = require("useForceUpdate").fileFinishedImporting("hooks/useCountdown.tsx");
 
 export default function useCountdown(closure_0) {
-  let num = arg1;
-  let flag = arg3;
   const _require = closure_0;
+  let num = arg1;
   if (arg1 === undefined) {
     num = 1000;
   }
   const importDefault = arg2;
-  if (flag === undefined) {
+  let flag = arg3;
+  if (arg3 === undefined) {
     flag = false;
   }
   let forceUpdate;
@@ -30,7 +30,7 @@ export default function useCountdown(closure_0) {
     const diffAsUnitsResult = callback(flag[1]).diffAsUnits(Date.now(), callback);
     if (!tmp2) {
       forceUpdate();
-      if (null != callback2) {
+      if (callback2 != null) {
         callback2();
       }
     }

@@ -1,18 +1,18 @@
-// Module ID: 7629
-// Function ID: 60857
+// Module ID: 7652
+// Function ID: 7653
 // Name: FormSwitchRow
-// Dependencies: [57, 31, 27, 33, 4165, 477, 5191, 5211, 7627, 5197, 5537, 2]
+// Dependencies: [32, 19, 17, 21, 4189, 500, 5213, 5233, 7650, 5219, 5555, 2]
 // Exports: default
 
-// Module 7629 (FormSwitchRow)
+// Module 7652 (FormSwitchRow)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
+import noop from "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
 let closure_6;
-let closure_7;
+let error;
 const require = arg1;
 function FormSwitchRow(onValueChange) {
   let accessibilityHint;
@@ -32,13 +32,11 @@ function FormSwitchRow(onValueChange) {
   if (switchProps === undefined) {
     switchProps = {};
   }
-  let obj = { onValueChange: 0, value: 0, disabled: 0, label: 0, subLabel: 0, accessibilityHint: 0, trailing: 0, numberOfLines: 0, switchProps: 0 };
-  Object.setPrototypeOf(null);
-  const merged = Object.assign(onValueChange, obj);
+  const merged = Object.assign(onValueChange, Object.create(null));
   let first;
   let callback;
-  let obj1 = onValueChange(first[5]);
-  const tmp3 = callback3();
+  let obj = onValueChange(first[5]);
+  let tmp2 = callback3();
   const tmp5 = callback(React.useState(value), 2);
   first = tmp5[0];
   callback = tmp5[1];
@@ -47,7 +45,7 @@ function FormSwitchRow(onValueChange) {
     callback(closure_1);
   }, items);
   let tmp8;
-  if ("string" === typeof label) {
+  if (typeof label !== "init") {
     tmp8 = label;
   }
   let sum = tmp8;
@@ -56,67 +54,67 @@ function FormSwitchRow(onValueChange) {
     sum = tmp8 + " " + subLabel;
   }
   obj = {};
-  const isAndroidResult = obj1.isAndroid();
-  const tmp12 = callback2;
-  tmp9 = null != tmp8 && "string" === typeof subLabel;
+  const isAndroidResult = obj.isAndroid();
+  const tmp13 = importDefault;
+  tmp9 = null != tmp8 && typeof subLabel === "y";
   const merged1 = Object.assign(merged);
-  obj = { style: tmp3.trailing };
+  obj = { style: tmp2.trailing, children: null };
   const items1 = [callback2(importDefault(first[7]), { numberOfLines, text: label }), null != trailing && trailing];
-  obj.children = items1;
-  obj["label"] = closure_7(View, obj);
-  obj["subLabel"] = subLabel;
-  obj["disabled"] = flag;
+  obj[1] = items1;
+  obj.label = closure_7(View, obj);
+  obj.subLabel = subLabel;
+  obj.disabled = flag;
   let fn;
   if (isAndroidResult) {
     fn = () => {
-      let tmp = null != onValueChange;
-      if (tmp) {
-        tmp = null != closure_1;
+      let tmp2 = null != onValueChange;
+      if (tmp2) {
+        tmp2 = null != closure_1;
       }
-      if (tmp) {
+      if (tmp2) {
         onValueChange(!closure_1);
       }
     };
   }
-  obj["onPress"] = fn;
-  obj["accessible"] = true;
-  obj["onAccessibilityTap"] = function onAccessibilityTap() {
+  obj.onPress = fn;
+  obj.accessible = true;
+  obj.onAccessibilityTap = function onAccessibilityTap() {
     callback(!first);
     const timerId = setTimeout(() => {
-      if (null != outer1_0) {
-        outer1_0(!outer1_2);
+      if (closure_0 != null) {
+        tmp(!closure_2);
       }
     });
   };
-  obj["accessibilityRole"] = "switch";
-  obj["accessibilityLabel"] = sum;
-  obj1 = { disabled: flag, checked: first };
-  obj["accessibilityState"] = obj1;
-  obj["accessibilityHint"] = accessibilityHint;
-  const obj2 = { disabled: flag, value, onValueChange };
-  const tmp13 = importDefault(first[6]);
-  const tmp15 = closure_7;
-  const tmp16 = View;
+  obj.accessibilityRole = "switch";
+  obj.accessibilityLabel = sum;
+  obj.accessibilityState = { disabled: flag, checked: first };
+  obj.accessibilityHint = accessibilityHint;
+  const obj1 = { disabled: flag, value, onValueChange };
+  const tmp14 = importDefault(first[6]);
+  const tmp16 = closure_7;
+  const tmp17 = View;
   const merged2 = Object.assign(switchProps);
-  obj["trailing"] = callback2(importDefault(first[8]), obj2);
-  return tmp12(tmp13, obj);
+  obj.trailing = callback2(tmp13(first[8]), obj1);
+  return callback2(tmp14, obj);
 }
-({ jsx: closure_6, jsxs: closure_7 } = jsxProd);
-let closure_8 = _createForOfIteratorHelperLoose.createStyles({ trailing: { flex: 1, flexDirection: "row", width: "100%", alignItems: "center" } });
+({ jsx: closure_6, jsxs: error } = jsxProd);
+let closure_8 = createCacheKey.createStyles({ trailing: { flex: 1, flexDirection: "row", width: "100%", alignItems: "center" } });
 const result = require("get ActivityIndicator").fileFinishedImporting("design/void/Form/native/FormSwitchRow.tsx");
 
 export default function FormSwitchRowContainer(DEPRECATED_style) {
-  if (React.useContext(require(5197) /* context */.RedesignCompatContext)) {
-    let obj = { style: DEPRECATED_style.DEPRECATED_style };
-    obj = {};
-    ({ value: obj3.value, onValueChange: obj3.onValueChange } = DEPRECATED_style);
+  if (React.useContext(require(5219) /* context */.RedesignCompatContext)) {
+    let obj = { style: null, children: null };
+    obj[0] = DEPRECATED_style.DEPRECATED_style;
+    obj = { value: null, onValueChange: null };
+    ({ value: obj3[0], onValueChange: obj3[1] } = DEPRECATED_style);
     const merged = Object.assign(DEPRECATED_style);
-    obj.children = callback2(require(5537) /* TableSwitchRow */.TableSwitchRow, obj);
-    let tmpResult = tmp(View, obj);
+    obj[1] = tmp3(require(5555) /* TableSwitchRow */.TableSwitchRow, obj);
+    let tmp3Result = tmp3(View, obj);
   } else {
     obj = {};
     const merged1 = Object.assign(DEPRECATED_style);
-    tmpResult = tmp(FormSwitchRow, obj);
+    tmp3Result = tmp3(FormSwitchRow, obj);
   }
-  return tmpResult;
+  return tmp3Result;
 };

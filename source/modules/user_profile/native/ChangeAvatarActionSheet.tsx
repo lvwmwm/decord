@@ -1,38 +1,38 @@
-// Module ID: 13688
-// Function ID: 105029
+// Module ID: 13709
+// Function ID: 13710
 // Name: ChangeAvatarActionSheet
-// Dependencies: [31, 27, 1850, 653, 33, 4165, 689, 566, 3811, 5533, 5220, 1212, 6606, 5536, 5198, 7611, 13673, 2]
+// Dependencies: [19, 17, 1874, 676, 21, 4189, 712, 589, 3835, 5551, 5242, 1236, 6627, 5554, 5220, 7634, 13694, 2]
 // Exports: default
 
-// Module 13688 (ChangeAvatarActionSheet)
-import "result";
-import { View } from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 13709 (ChangeAvatarActionSheet)
+import "noop";
+import { View } from "set";
+import mergeGuildAvatar from "mergeGuildAvatar";
 import { AnalyticsObjects } from "ME";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
 let closure_6;
-let closure_7;
-let closure_8;
+let error;
+let metroImportAll;
 const require = arg1;
-({ jsx: closure_6, jsxs: closure_7, Fragment: closure_8 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { marginLeft: require("_createForOfIteratorHelperLoose").space.PX_8 };
-_createForOfIteratorHelperLoose.nitroWheel = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.sublabel = { color: require("_createForOfIteratorHelperLoose").colors.TEXT_DEFAULT };
-let obj2 = { marginBottom: 4, color: require("_createForOfIteratorHelperLoose").colors.INTERACTIVE_TEXT_ACTIVE, alignItems: "center", flexDirection: "row" };
-_createForOfIteratorHelperLoose.label = obj2;
-let obj1 = { color: require("_createForOfIteratorHelperLoose").colors.TEXT_DEFAULT };
-_createForOfIteratorHelperLoose.remove = { color: require("_createForOfIteratorHelperLoose").colors.TEXT_FEEDBACK_CRITICAL };
-let obj3 = { color: require("_createForOfIteratorHelperLoose").colors.TEXT_FEEDBACK_CRITICAL };
-_createForOfIteratorHelperLoose.upsellButton = { marginTop: require("_createForOfIteratorHelperLoose").space.PX_12, marginBottom: require("_createForOfIteratorHelperLoose").space.PX_8 };
-_createForOfIteratorHelperLoose.upsellTitleContainer = { flexDirection: "row", alignItems: "flex-end" };
-_createForOfIteratorHelperLoose.titleWrapper = { flex: 0 };
-_createForOfIteratorHelperLoose.titleContainer = { justifyContent: "flex-start" };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-let obj4 = { marginTop: require("_createForOfIteratorHelperLoose").space.PX_12, marginBottom: require("_createForOfIteratorHelperLoose").space.PX_8 };
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/user_profile/native/ChangeAvatarActionSheet.tsx");
+({ jsx: closure_6, jsxs: error, Fragment: metroImportAll } = jsxProd);
+createCacheKey = { nitroWheel: null, sublabel: null, label: null, remove: null, upsellButton: null, upsellTitleContainer: null, titleWrapper: null, titleContainer: null };
+createCacheKey = { marginLeft: require("Themes").space.PX_8 };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { color: require("Themes").colors.TEXT_DEFAULT };
+let obj1 = { color: require("Themes").colors.TEXT_DEFAULT };
+createCacheKey[2] = { marginBottom: 4, color: require("Themes").colors.INTERACTIVE_TEXT_ACTIVE, alignItems: "center", flexDirection: "row" };
+let obj2 = { marginBottom: 4, color: require("Themes").colors.INTERACTIVE_TEXT_ACTIVE, alignItems: "center", flexDirection: "row" };
+createCacheKey[3] = { color: require("Themes").colors.TEXT_FEEDBACK_CRITICAL };
+let obj3 = { color: require("Themes").colors.TEXT_FEEDBACK_CRITICAL };
+createCacheKey[4] = { marginTop: require("Themes").space.PX_12, marginBottom: require("Themes").space.PX_8 };
+createCacheKey[5] = { flexDirection: "row", alignItems: "flex-end" };
+createCacheKey[6] = { flex: 0 };
+createCacheKey[7] = { justifyContent: "flex-start" };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let obj4 = { marginTop: require("Themes").space.PX_12, marginBottom: require("Themes").space.PX_8 };
+const result = require("mergeGuildAvatar").fileFinishedImporting("modules/user_profile/native/ChangeAvatarActionSheet.tsx");
 
 export default function ChangeAvatarActionSheet(showRemoveAvatar) {
   let handleEditAvatarDecorationSelect;
@@ -49,95 +49,99 @@ export default function ChangeAvatarActionSheet(showRemoveAvatar) {
   if (flag === undefined) {
     flag = false;
   }
-  const tmp = _createForOfIteratorHelperLoose();
-  let obj = require(566) /* initialize */;
-  const items = [_isNativeReflectConstruct];
-  const stateFromStores = obj.useStateFromStores(items, () => outer1_4.getCurrentUser());
-  let obj1 = importDefault(3811);
+  const tmp = createCacheKey();
+  let obj = require(589) /* initialize */;
+  const items = [mergeGuildAvatar];
+  const stateFromStores = obj.useStateFromStores(items, () => currentUser.getCurrentUser());
+  let obj1 = importDefault(3835);
   let isPremiumResult = obj1.isPremium(stateFromStores);
-  obj = {};
-  obj = {};
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj.title = intl.string(require(1212) /* getSystemLocale */.t.lqaIxI);
+  obj = { title: null, trailing: null, titleWrapperStyle: null, titleContainerStyle: null };
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj[0] = intl.string(require(1236) /* getSystemLocale */.t.lqaIxI);
   if (isPremiumResult) {
-    isPremiumResult = callback(require(6606) /* NitroWheelIcon */.NitroWheelIcon, {});
+    isPremiumResult = tmp8(tmp2(6627).NitroWheelIcon, {});
   }
-  obj.trailing = isPremiumResult;
-  ({ titleWrapper: obj4.titleWrapperStyle, titleContainer: obj4.titleContainerStyle } = tmp);
-  const items1 = [callback(require(5220) /* RedesignBottomSheetTitleHeaderBase */.BottomSheetTitleHeader, obj), ];
-  obj1 = { hasIcons: false };
-  const obj2 = {};
-  const intl2 = require(1212) /* getSystemLocale */.intl;
-  obj2.label = intl2.string(require(1212) /* getSystemLocale */.t["MsUY/S"]);
-  const intl3 = require(1212) /* getSystemLocale */.intl;
-  obj2.subLabel = intl3.string(require(1212) /* getSystemLocale */.t.r5hKOy);
-  obj2.onPress = handleUploadAvatarSelect;
-  const items2 = [callback(require(5198) /* TableRowInner */.TableRow, obj2), , , , ];
-  let tmp10 = null != handleUploadGIFAvatarSelect && !showAnimatedAvatarUpsell;
-  if (tmp10) {
-    const obj3 = {};
-    const intl4 = require(1212) /* getSystemLocale */.intl;
-    obj3.label = intl4.string(require(1212) /* getSystemLocale */.t["xsC+/y"]);
-    obj3.onPress = handleUploadGIFAvatarSelect;
-    tmp10 = callback(require(5198) /* TableRowInner */.TableRow, obj3);
+  obj[1] = isPremiumResult;
+  ({ titleWrapper: obj3[2], titleContainer: obj3[3] } = tmp);
+  const items1 = [closure_6(require(5242) /* RedesignBottomSheetTitleHeaderBase */.BottomSheetTitleHeader, obj), ];
+  obj = { label: null, subLabel: null, onPress: null };
+  const intl2 = tmp2(1236).intl;
+  obj[0] = intl2.string(require(1236) /* getSystemLocale */.t["MsUY/S"]);
+  const intl3 = tmp2(1236).intl;
+  obj[1] = intl3.string(require(1236) /* getSystemLocale */.t.r5hKOy);
+  obj[2] = handleUploadAvatarSelect;
+  const items2 = [closure_6(require(5220) /* TableRowInner */.TableRow, obj), , , , ];
+  let tmp8Result = null != handleUploadGIFAvatarSelect && !showAnimatedAvatarUpsell;
+  if (tmp8Result) {
+    obj1 = { label: null, onPress: null };
+    const intl4 = tmp2(1236).intl;
+    obj1[0] = intl4.string(tmp2(1236).t["xsC+/y"]);
+    obj1[1] = handleUploadGIFAvatarSelect;
+    tmp8Result = tmp8(tmp2(5220).TableRow, obj1);
   }
-  items2[1] = tmp10;
+  items2[1] = tmp8Result;
   if (showAnimatedAvatarUpsell) {
-    const obj4 = {};
-    const obj5 = { style: tmp.upsellTitleContainer };
-    const obj6 = {};
-    const intl5 = require(1212) /* getSystemLocale */.intl;
-    obj6.text = intl5.string(require(1212) /* getSystemLocale */.t.xZ0Wot);
-    const items3 = [callback(require(7611) /* Form */.FormLabel, obj6), ];
-    const obj7 = { style: tmp.nitroWheel, size: "sm" };
-    items3[1] = callback(require(6606) /* NitroWheelIcon */.NitroWheelIcon, obj7);
-    obj5.children = items3;
-    obj4.label = callback2(View, obj5);
-    const obj8 = {};
-    const obj9 = { style: tmp.sublabel, numberOfLines: 3 };
-    const intl6 = require(1212) /* getSystemLocale */.intl;
-    obj9.text = intl6.string(require(1212) /* getSystemLocale */.t.L3UPqR);
-    const items4 = [callback(require(7611) /* Form */.FormSubLabel, obj9), ];
-    const obj10 = { style: tmp.upsellButton };
-    const obj11 = { analyticsObject: AnalyticsObjects.ANIMATED_AVATAR };
-    const intl7 = require(1212) /* getSystemLocale */.intl;
-    obj11.label = intl7.string(require(1212) /* getSystemLocale */.t.mr4K7D);
-    obj10.children = callback(importDefault(13673), obj11);
-    items4[1] = callback(View, obj10);
-    obj8.children = items4;
-    obj4.subLabel = callback2(closure_8, obj8);
-    showAnimatedAvatarUpsell = callback(require(5198) /* TableRowInner */.TableRow, obj4);
-    const tmp21 = importDefault(13673);
+    const obj2 = { label: null, subLabel: null };
+    const obj3 = { style: null, children: null };
+    obj3[0] = tmp.upsellTitleContainer;
+    const obj4 = { text: null };
+    const intl5 = tmp2(1236).intl;
+    obj4[0] = intl5.string(tmp2(1236).t.xZ0Wot);
+    const items3 = [tmp8(tmp2(7634).FormLabel, obj4), ];
+    const obj5 = { style: null, size: "sm" };
+    obj5[0] = tmp.nitroWheel;
+    items3[1] = tmp8(tmp2(6627).NitroWheelIcon, obj5);
+    obj3[1] = items3;
+    obj2[0] = tmp7(View, obj3);
+    const obj6 = { children: null };
+    const obj7 = { style: null, numberOfLines: 3, text: null };
+    obj7[0] = tmp.sublabel;
+    const intl6 = tmp2(1236).intl;
+    obj7[2] = intl6.string(tmp2(1236).t.L3UPqR);
+    const items4 = [tmp8(tmp2(7634).FormSubLabel, obj7), ];
+    const obj8 = { style: null, children: null };
+    obj8[0] = tmp.upsellButton;
+    const obj9 = { analyticsObject: null, label: null };
+    obj9[0] = AnalyticsObjects.ANIMATED_AVATAR;
+    const intl7 = tmp2(1236).intl;
+    obj9[1] = intl7.string(tmp2(1236).t.mr4K7D);
+    obj8[1] = tmp8(importDefault(13694), obj9);
+    items4[1] = tmp8(View, obj8);
+    obj6[0] = items4;
+    obj2[1] = tmp7(closure_8, obj6);
+    showAnimatedAvatarUpsell = tmp8(tmp2(5220).TableRow, obj2);
+    const tmp5Result = importDefault(13694);
   }
   items2[2] = showAnimatedAvatarUpsell;
-  let tmp23 = null != handleEditAvatarDecorationSelect;
-  if (tmp23) {
-    const obj12 = {};
-    const obj13 = { style: tmp.upsellTitleContainer };
-    const obj14 = {};
-    const intl8 = require(1212) /* getSystemLocale */.intl;
-    obj14.text = intl8.string(require(1212) /* getSystemLocale */.t.BVcYCx);
-    obj13.children = callback(require(7611) /* Form */.FormLabel, obj14);
-    obj12.label = callback(View, obj13);
-    obj12.onPress = handleEditAvatarDecorationSelect;
-    tmp23 = callback(require(5198) /* TableRowInner */.TableRow, obj12);
+  tmp8Result = null != handleEditAvatarDecorationSelect;
+  if (tmp8Result) {
+    const obj10 = { label: null, onPress: null };
+    const obj11 = { style: null, children: null };
+    obj11[0] = tmp.upsellTitleContainer;
+    const obj12 = { text: null };
+    const intl8 = tmp2(1236).intl;
+    obj12[0] = intl8.string(tmp2(1236).t.BVcYCx);
+    obj11[1] = tmp8(tmp2(7634).FormLabel, obj12);
+    obj10[0] = tmp8(View, obj11);
+    obj10[1] = handleEditAvatarDecorationSelect;
+    tmp8Result = tmp8(tmp2(5220).TableRow, obj10);
   }
-  items2[3] = tmp23;
+  items2[3] = tmp8Result;
   if (flag) {
-    const obj15 = {};
-    const obj16 = {};
+    const obj13 = { label: null, onPress: null };
+    const obj14 = { style: null, text: null };
     const items5 = [, ];
     ({ label: arr6[0], remove: arr6[1] } = tmp);
-    obj16.style = items5;
-    const intl9 = require(1212) /* getSystemLocale */.intl;
-    obj16.text = intl9.string(require(1212) /* getSystemLocale */.t.twB3fz);
-    obj15.label = callback(require(7611) /* Form */.FormLabel, obj16);
-    obj15.onPress = handleRemoveAvatarSelect;
-    flag = callback(require(5198) /* TableRowInner */.TableRow, obj15);
+    obj14[0] = items5;
+    const intl9 = tmp2(1236).intl;
+    obj14[1] = intl9.string(tmp2(1236).t.twB3fz);
+    obj13[0] = tmp8(tmp2(7634).FormLabel, obj14);
+    obj13[1] = handleRemoveAvatarSelect;
+    flag = tmp8(tmp2(5220).TableRow, obj13);
   }
+  const obj15 = { children: null };
   items2[4] = flag;
-  obj1.children = items2;
-  items1[1] = callback2(require(5536) /* TableRowGroupTitle */.TableRowGroup, obj1);
-  obj.children = items1;
-  return callback2(require(5533) /* ActionSheet */.ActionSheet, obj);
+  items1[1] = closure_7(require(5554) /* TableRowGroupTitle */.TableRowGroup, { hasIcons: false, children: items2 });
+  obj15[0] = items1;
+  return closure_7(require(5551) /* ActionSheet */.ActionSheet, obj15);
 };

@@ -1,93 +1,13 @@
-// Module ID: 10325
-// Function ID: 79650
-// Name: _createForOfIteratorHelperLoose
-// Dependencies: [5, 3, 491, 4709, 1184, 2]
+// Module ID: 10346
+// Function ID: 10347
+// Name: uriScheme
+// Dependencies: [5, 3, 514, 4731, 1208, 2]
 // Exports: getAttachments
 
-// Module 10325 (_createForOfIteratorHelperLoose)
+// Module 10346 (uriScheme)
 import set from "set";
-import importDefaultResult from "openImagePickerUnhandled";
 
 const require = arg1;
-function _createForOfIteratorHelperLoose(iterable) {
-  let closure_0 = iterable;
-  iterable = "undefined" !== typeof Symbol;
-  if (iterable) {
-    const _Symbol = Symbol;
-    iterable = iterable[Symbol.iterator];
-  }
-  if (!iterable) {
-    iterable = iterable[Symbol.iterator];
-  }
-  if (iterable) {
-    const iter = iterable.call(iterable);
-    const next = iter.next;
-    return next.bind(iter);
-  } else {
-    const _Array = Array;
-    let tmp = iterable;
-    if (!Array.isArray(iterable)) {
-      let tmp2;
-      if (iterable) {
-        if ("string" === typeof iterable) {
-          tmp2 = _arrayLikeToArray(iterable, undefined);
-        } else {
-          const toString = {}.toString;
-          const substr = toString.call(iterable).slice(8, -1);
-          let name = substr;
-          if (tmp3) {
-            name = iterable.constructor.name;
-          }
-          if ("Map" !== name) {
-            if ("Set" !== name) {
-              if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(iterable, undefined);
-              } else {
-                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
-              }
-            }
-            tmp2 = arr;
-          }
-          const _Array2 = Array;
-          arr = Array.from(iterable);
-          const callResult = toString.call(iterable);
-          tmp3 = "Object" === substr && iterable.constructor;
-        }
-      }
-      tmp = tmp2;
-      if (!tmp2) {
-        const _TypeError = TypeError;
-        const typeError = new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
-        throw typeError;
-      }
-    }
-    if (tmp) {
-      closure_0 = tmp;
-    }
-    let c1 = 0;
-    return () => {
-      if (closure_1 >= length.length) {
-        let obj = { done: true };
-      } else {
-        obj = { done: false };
-        closure_1 = tmp3 + 1;
-        obj.value = length[+closure_1];
-      }
-      return obj;
-    };
-  }
-}
-function _arrayLikeToArray(arg0, arg1) {
-  let length;
-  if (tmp) {
-    length = arg0.length;
-  }
-  const ArrayResult = Array(length);
-  for (let num = 0; num < length; num = num + 1) {
-    ArrayResult[num] = arg0[num];
-  }
-  return ArrayResult;
-}
 function uriScheme(str) {
   if (null == str) {
     return "none";
@@ -102,13 +22,204 @@ function uriScheme(str) {
   }
 }
 function _getAttachments() {
-  // CreateGeneratorClosureLongIndex (0x67)
-  const obj = callback(tmp);
-  return obj(...arguments);
+  const self = this;
+  const tmp = callback((arg0) => {
+    let closure_0 = arg0;
+    let c7 = 0;
+    let c8 = 0;
+    let c6 = 0;
+    return (function*(arg0) {
+      if (c8 === 2) {
+        c8 = 3;
+        HermesBuiltin.throwTypeError();
+      } else if (tmp4 === 3) {
+        if (arg0 === 1) {
+          throw arg1;
+        } else if (arg0 === 2) {
+          let obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
+        } else {
+          return { value: "HermesInternal", done: null };
+        }
+      } else {
+        while (true) {
+          let num = 2;
+          c8 = 2;
+          let tmp5 = c7;
+          if (0 === c7) {
+            if (arg0 === 1) {
+              let num8 = 3;
+              c8 = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              let num7 = 3;
+              c8 = 3;
+              obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            } else {
+              let logger = tmp;
+              let name = tmp2;
+              let tmp63 = arr;
+              let lib;
+              let dependencyMap;
+              name = undefined;
+              logger = undefined;
+              let error;
+              arr = [];
+              dependencyMap = arr;
+              let tmp64 = arr;
+              dependencyMap = arr;
+              lib = arr[Symbol.iterator]();
+            }
+          } else if (1 === tmp5) {
+            let tmp45 = error;
+            let tmp46 = error;
+            let c6 = 0;
+            let tmp47 = lib;
+            lib.return();
+            throw error;
+          } else if (2 === tmp5) {
+            let tmp13 = name;
+            let tmp14 = logger;
+            let tmp15 = error;
+            let tmp16 = error;
+            c6 = 1;
+            c6 = error;
+            let tmp18 = lib;
+            let uri;
+            let tmp17 = error;
+            if ("uri" in lib.item) {
+              let tmp20 = name;
+              let tmp21 = lib;
+              uri = lib.item.uri;
+            }
+            let tmp22 = name;
+            let tmp23 = logger;
+            logger = tmp17(uri);
+            let tmp24 = logger;
+            let obj1 = { scheme: null, filename: null, mimeType: null, isImage: null, error: null };
+            let tmp25 = logger;
+            obj1[0] = logger;
+            let tmp26 = lib;
+            obj1[1] = lib.filename;
+            let tmp27 = lib;
+            obj1[2] = lib.mimeType;
+            let tmp28 = lib;
+            obj1[3] = lib.isImage;
+            let tmp29 = c6;
+            obj1[4] = c6;
+            let errorResult = logger.error("Failed to resolve bug report attachment", obj1);
+            let tmp31 = c6;
+            let _Error = Error;
+            let tmp32 = name;
+            if (c6 instanceof Error) {
+              error = c6;
+            } else {
+              let _Error2 = Error;
+              let _String = String;
+              let tmp33 = c6;
+              let tmp34 = new.target;
+              let tmp35 = new.target;
+              error = new Error(String(c6));
+            }
+            let tmp37 = name;
+            let tmp38 = logger;
+            let tmp39 = lib;
+            let tmp40 = dependencyMap;
+            let obj3 = lib(1208);
+            let tmp41 = error;
+            let obj2 = { tags: null };
+            obj3 = { feature: "bug_reporter", attachment_uri_scheme: null };
+            let tmp42 = logger;
+            obj3[1] = logger;
+            obj2[0] = obj3;
+            let captureExceptionResult = obj3.captureException(error, obj2);
+            c6 = 0;
+            let tmp44 = lib;
+            lib.return();
+            let num4 = 3;
+            c8 = 3;
+          } else if (arg0 === 1) {
+            let num3 = 3;
+            c8 = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            c6 = 0;
+            let tmp12 = lib;
+            lib.return();
+            let num2 = 3;
+            c8 = 3;
+            let obj4 = { value: null, done: true };
+            obj4[0] = arg1;
+            return obj4;
+          } else {
+            let tmp6 = name;
+            name = arg1;
+            let tmp7 = arr;
+            obj = { file: null, name: null, filename: null };
+            let tmp8 = name;
+            obj[0] = name;
+            let tmp9 = dependencyMap;
+            obj[1] = dependencyMap;
+            let tmp10 = name;
+            obj[2] = name.name;
+            arr = arr.push(obj);
+            c6 = 0;
+          }
+          let tmp48 = dependencyMap;
+          let tmp49 = lib;
+          if (lib === undefined) {
+            let tmp57 = name;
+            let num6 = 3;
+            c8 = 3;
+            let obj5 = { value: null, done: true };
+            obj5[0] = arr;
+            return obj5;
+          } else {
+            let tmp51 = name;
+            lib = tmp50;
+            let tmp52 = logger;
+            c6 = 2;
+            let tmp53 = arr;
+            let tmp54 = dependencyMap;
+            let obj6 = arr(514);
+            dependencyMap = obj6.v4();
+            let tmp55 = dependencyMap;
+            let obj8 = arr(4731);
+            let tmp56 = lib;
+            c7 = 3;
+            let num5 = 1;
+            c8 = 1;
+            obj6 = { value: null, done: false };
+            obj6[0] = obj8.getFileInfo(lib);
+            return obj6;
+          }
+        }
+      }
+    })();
+  });
+  const _getAttachments = tmp;
+  const apply = tmp.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
 }
-importDefaultResult = new importDefaultResult("BugReportUtils.tsx");
+let c4 = new require("openImagePickerUnhandled")("BugReportUtils.tsx");
+const tmp2 = new require("openImagePickerUnhandled")("BugReportUtils.tsx");
 const result = require("v1").fileFinishedImporting("modules/bug_reporter/native/BugReportUtils.tsx");
 
-export const getAttachments = function getAttachments(items) {
-  return _getAttachments(...arguments);
+export const getAttachments = function getAttachments(outer1_7) {
+  const self = this;
+  const apply = _getAttachments.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
 };

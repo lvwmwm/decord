@@ -1,66 +1,67 @@
-// Module ID: 6661
-// Function ID: 58681
+// Module ID: 6682
+// Function ID: 6683
 // Name: IconButton
-// Dependencies: [31, 33, 4165, 689, 4585, 6662, 4161, 2]
+// Dependencies: [19, 21, 4189, 712, 4607, 6683, 4185, 2]
 
-// Module 6661 (IconButton)
+// Module 6682 (IconButton)
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import importAllResult from "result";
+import createCacheKey from "createCacheKey";
+import importAllResult from "noop";
 
-let closure_3;
-let closure_4;
+let c3;
+let c4;
 const require = arg1;
-({ jsx: closure_3, jsxs: closure_4 } = jsxProd);
-let closure_5 = _createForOfIteratorHelperLoose.createStyles((arg0) => {
-  let obj = {};
-  obj = { paddingBottom: importDefault(689).space.PX_4, gap: importDefault(689).space.PX_8, alignItems: "center", alignSelf: "center" };
+({ jsx: c3, jsxs: c4 } = jsxProd);
+let closure_5 = createCacheKey.createStyles((arg0) => {
+  const labelPressable = { paddingBottom: importDefault(712).space.PX_4, gap: importDefault(712).space.PX_8, alignItems: "center", alignSelf: "center", flexGrow: null };
   let num = 0;
   if (arg0) {
     num = 1;
   }
-  obj.flexGrow = num;
-  obj.labelPressable = obj;
-  obj.label = { textAlign: "center" };
-  return obj;
+  labelPressable[4] = num;
+  return { labelPressable, label: { textAlign: "center" } };
 });
-const forwardRefResult = require("result").forwardRef((grow, ref) => {
+const forwardRefResult = require("noop").forwardRef((grow) => {
   let accessibilityHint;
   let accessibilityLabel;
   let label;
   let maxFontSizeMultiplier;
   ({ label, accessibilityLabel, maxFontSizeMultiplier, accessibilityHint } = grow);
-  let obj = { label: 0, grow: 0, accessibilityLabel: 0, maxFontSizeMultiplier: 0, accessibilityHint: 0 };
-  Object.setPrototypeOf(null);
-  const merged = Object.assign(grow, obj);
-  const tmp3 = callback3(grow.grow);
+  const merged = Object.assign(grow, Object.create(null));
+  const tmp2 = callback3(grow.grow);
   if (null != label) {
-    obj = { style: tmp3.labelPressable };
+    let obj = { style: null };
+    obj[0] = tmp2.labelPressable;
     const merged1 = Object.assign(merged);
-    obj["variant"] = "none";
-    obj["accessibilityLabel"] = accessibilityLabel;
-    obj["accessibilityHint"] = accessibilityHint;
-    obj = { ref };
+    obj.variant = "none";
+    obj.accessibilityLabel = accessibilityLabel;
+    obj.accessibilityHint = accessibilityHint;
+    obj = { ref: null };
+    obj[0] = arg1;
     const merged2 = Object.assign(merged);
-    obj["accessibilityRole"] = "none";
-    obj["accessibilityLabel"] = "";
-    obj["size"] = "lg";
-    obj["maxFontSizeMultiplier"] = maxFontSizeMultiplier;
-    const items = [callback(require(6662) /* BaseIconButton */.BaseIconButton, obj), ];
-    const obj1 = { style: tmp3.label, variant: "text-xs/medium", color: "interactive-text-default", maxFontSizeMultiplier, children: label };
-    items[1] = callback(require(4161) /* Text */.Text, obj1);
-    obj["children"] = items;
-    let tmp10 = callback2(require(4585) /* BaseButton */.BaseButton, obj);
+    obj.accessibilityRole = "none";
+    obj.accessibilityLabel = "";
+    obj.size = "lg";
+    obj.maxFontSizeMultiplier = maxFontSizeMultiplier;
+    const items = [callback(require(6683) /* BaseIconButton */.BaseIconButton, obj), ];
+    const obj1 = { style: null, variant: "text-xs/medium", color: "interactive-text-default", maxFontSizeMultiplier: null, children: null };
+    obj1[0] = tmp2.label;
+    obj1[3] = maxFontSizeMultiplier;
+    obj1[4] = label;
+    items[1] = callback(require(4185) /* Text */.Text, obj1);
+    obj.children = items;
+    let tmp9 = callback2(require(4607) /* BaseButton */.BaseButton, obj);
   } else {
-    const obj2 = { ref };
+    obj = { ref: null };
+    obj[0] = arg1;
     const merged3 = Object.assign(merged);
-    obj2["accessibilityLabel"] = accessibilityLabel;
-    obj2["accessibilityHint"] = accessibilityHint;
-    obj2["maxFontSizeMultiplier"] = maxFontSizeMultiplier;
-    tmp10 = callback(require(6662) /* BaseIconButton */.BaseIconButton, obj2);
+    obj.accessibilityLabel = accessibilityLabel;
+    obj.accessibilityHint = accessibilityHint;
+    obj.maxFontSizeMultiplier = maxFontSizeMultiplier;
+    tmp9 = callback(require(6683) /* BaseIconButton */.BaseIconButton, obj);
   }
-  return tmp10;
+  return tmp9;
 });
-const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("design/components/Button/native/IconButton.native.tsx");
+const result = require("createCacheKey").fileFinishedImporting("design/components/Button/native/IconButton.native.tsx");
 
 export const IconButton = forwardRefResult;

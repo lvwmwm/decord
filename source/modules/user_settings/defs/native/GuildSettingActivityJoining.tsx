@@ -1,67 +1,67 @@
-// Module ID: 14648
-// Function ID: 111588
+// Module ID: 14673
+// Function ID: 14674
 // Name: toggle
-// Dependencies: [14636, 7733, 3838, 6485, 10099, 1212, 2]
+// Dependencies: [14661, 7756, 3862, 6506, 10120, 1236, 2]
 
-// Module 14648 (toggle)
+// Module 14673 (toggle)
 import GUILD_SELECT_ALL_SERVERS_OPTION_ID from "GUILD_SELECT_ALL_SERVERS_OPTION_ID";
 import createToggle from "createToggle";
 
-let closure_2;
-let closure_3;
-({ getSelectedGuildId: closure_2, useUserSafetySettingsSelectedGuildStore: closure_3 } = GUILD_SELECT_ALL_SERVERS_OPTION_ID);
+let c3;
+let obj1;
+({ getSelectedGuildId: obj1, useUserSafetySettingsSelectedGuildStore: c3 } = GUILD_SELECT_ALL_SERVERS_OPTION_ID);
 const toggle = createToggle.createToggle({
   useTitle() {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(require(1212) /* getSystemLocale */.t["T+nevN"]);
+    const intl = require(1236) /* getSystemLocale */.intl;
+    return intl.string(require(1236) /* getSystemLocale */.t["T+nevN"]);
   },
   useDescription() {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(require(1212) /* getSystemLocale */.t["b+bVSw"]);
+    const intl = require(1236) /* getSystemLocale */.intl;
+    return intl.string(require(1236) /* getSystemLocale */.t["b+bVSw"]);
   },
   parent: require("MobileSetting").MobileSetting.CONTENT_AND_SOCIAL_DISCORD,
   useValue() {
-    const ActivityJoiningRestrictedGuilds = require(3838) /* explicitContentFromProto */.ActivityJoiningRestrictedGuilds;
+    const ActivityJoiningRestrictedGuilds = require(3862) /* explicitContentFromProto */.ActivityJoiningRestrictedGuilds;
     const setting = ActivityJoiningRestrictedGuilds.useSetting();
     return !setting.includes(callback2().selectedGuildId);
   },
   onValueChange(arg0) {
     const tmp = callback();
-    const sanitizedActivityJoiningRestrictedGuilds = require(6485) /* getSanitizedRestrictedGuilds */.getSanitizedActivityJoiningRestrictedGuilds();
+    const sanitizedActivityJoiningRestrictedGuilds = require(6506) /* getSanitizedRestrictedGuilds */.getSanitizedActivityJoiningRestrictedGuilds();
     if (arg0) {
       sanitizedActivityJoiningRestrictedGuilds.delete(tmp);
     } else {
       sanitizedActivityJoiningRestrictedGuilds.add(tmp);
     }
-    const ActivityJoiningRestrictedGuilds = require(3838) /* explicitContentFromProto */.ActivityJoiningRestrictedGuilds;
+    const ActivityJoiningRestrictedGuilds = require(3862) /* explicitContentFromProto */.ActivityJoiningRestrictedGuilds;
     const items = [...sanitizedActivityJoiningRestrictedGuilds];
     ActivityJoiningRestrictedGuilds.updateSetting(items);
   }
 });
 const obj = {
   useTitle() {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(require(1212) /* getSystemLocale */.t["T+nevN"]);
+    const intl = require(1236) /* getSystemLocale */.intl;
+    return intl.string(require(1236) /* getSystemLocale */.t["T+nevN"]);
   },
   useDescription() {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(require(1212) /* getSystemLocale */.t["b+bVSw"]);
+    const intl = require(1236) /* getSystemLocale */.intl;
+    return intl.string(require(1236) /* getSystemLocale */.t["b+bVSw"]);
   },
   parent: require("MobileSetting").MobileSetting.CONTENT_AND_SOCIAL_DISCORD,
   useValue() {
-    const ActivityJoiningRestrictedGuilds = require(3838) /* explicitContentFromProto */.ActivityJoiningRestrictedGuilds;
+    const ActivityJoiningRestrictedGuilds = require(3862) /* explicitContentFromProto */.ActivityJoiningRestrictedGuilds;
     const setting = ActivityJoiningRestrictedGuilds.useSetting();
     return !setting.includes(callback2().selectedGuildId);
   },
   onValueChange(arg0) {
     const tmp = callback();
-    const sanitizedActivityJoiningRestrictedGuilds = require(6485) /* getSanitizedRestrictedGuilds */.getSanitizedActivityJoiningRestrictedGuilds();
+    const sanitizedActivityJoiningRestrictedGuilds = require(6506) /* getSanitizedRestrictedGuilds */.getSanitizedActivityJoiningRestrictedGuilds();
     if (arg0) {
       sanitizedActivityJoiningRestrictedGuilds.delete(tmp);
     } else {
       sanitizedActivityJoiningRestrictedGuilds.add(tmp);
     }
-    const ActivityJoiningRestrictedGuilds = require(3838) /* explicitContentFromProto */.ActivityJoiningRestrictedGuilds;
+    const ActivityJoiningRestrictedGuilds = require(3862) /* explicitContentFromProto */.ActivityJoiningRestrictedGuilds;
     const items = [...sanitizedActivityJoiningRestrictedGuilds];
     ActivityJoiningRestrictedGuilds.updateSetting(items);
   }

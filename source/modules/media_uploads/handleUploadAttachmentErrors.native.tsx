@@ -1,72 +1,76 @@
-// Module ID: 6169
-// Function ID: 55170
+// Module ID: 6187
+// Function ID: 6188
 // Name: handleUploadMessageAttachmentsErrors
-// Dependencies: [653, 4746, 6170, 4705, 4505, 1212, 12586, 2]
+// Dependencies: [676, 4768, 4727, 6188, 4528, 1236, 12608, 2]
 // Exports: handleUploadMessageAttachmentsErrors
 
-// Module 6169 (handleUploadMessageAttachmentsErrors)
+// Module 6187 (handleUploadMessageAttachmentsErrors)
 import ME from "ME";
 
-let closure_3;
-let closure_4;
-({ AbortCodes: closure_3, MAX_UPLOAD_COUNT: closure_4 } = ME);
-const result = require("showUploadFileSizeError").fileFinishedImporting("modules/media_uploads/handleUploadAttachmentErrors.native.tsx");
+let c3;
+let c4;
+({ AbortCodes: c3, MAX_UPLOAD_COUNT: c4 } = ME);
+const result = require("getUploadFileSizeSum").fileFinishedImporting("modules/media_uploads/handleUploadAttachmentErrors.native.tsx");
 
 export const handleUploadMessageAttachmentsErrors = function handleUploadMessageAttachmentsErrors(arg0) {
   let code;
+  let guildId;
   let reason;
-  ({ code, reason } = arg0);
+  ({ guildId, code, reason } = arg0);
   if (undefined === code) {
     return false;
   } else if (code === constants.ENTITY_TOO_LARGE) {
-    let obj = { location: "native.handleUploadMessageAttachmentsErrors" };
-    const kestrelConfig = require(4746) /* getKestrelConfig */.getKestrelConfig(obj);
-    obj = { file: tmp };
-    const obj10 = require(4746) /* getKestrelConfig */;
-    const tmp28 = importDefault(6170);
-    const obj13 = require(4746) /* getKestrelConfig */;
-    obj.maxSize = obj13.getEffectiveKestrelLimit(kestrelConfig, require(4705) /* _createForOfIteratorHelperLoose */.maxFileSize(tmp2));
-    obj.analyticsLocations = tmp3;
+    const kestrelConfig = require(4768) /* getKestrelConfig */.getKestrelConfig({ location: "native.handleUploadMessageAttachmentsErrors" });
+    const obj10 = require(4768) /* getKestrelConfig */;
+    const maxFileSizeResult = require(4727) /* getUploadFileSizeSum */.maxFileSize(guildId);
+    let obj = { file: null, maxSize: null, baseMaxSize: null, guildId: null, analyticsLocations: null, errorReason: null };
+    obj[0] = tmp;
+    const obj11 = require(4727) /* getUploadFileSizeSum */;
+    const tmp27 = importDefault(6188);
+    obj[1] = require(4768) /* getKestrelConfig */.getEffectiveKestrelLimit(kestrelConfig, maxFileSizeResult);
+    obj[2] = maxFileSizeResult;
+    obj[3] = guildId;
+    obj[4] = tmp2;
     let type;
-    if (null != reason) {
+    if (reason != null) {
       type = reason.type;
     }
-    obj.errorReason = type;
-    tmp28(obj);
+    obj[5] = type;
+    tmp27(obj);
     return true;
-  } else if (code === constants.TOO_MANY_ATTACHMENTS) {
-    let obj1 = {};
-    const intl5 = require(1212) /* getSystemLocale */.intl;
-    obj1.title = intl5.string(require(1212) /* getSystemLocale */.t.wOr6hB);
-    const intl6 = require(1212) /* getSystemLocale */.intl;
-    let obj2 = { limit: closure_4 };
-    obj1.body = intl6.formatToPlainString(require(1212) /* getSystemLocale */.t["qqyp/e"], obj2);
-    importDefault(4505).show(obj1);
+  } else if (code === tmp31.TOO_MANY_ATTACHMENTS) {
+    obj = { title: null, body: null };
+    const intl5 = require(1236) /* getSystemLocale */.intl;
+    obj[0] = intl5.string(require(1236) /* getSystemLocale */.t.wOr6hB);
+    const intl6 = require(1236) /* getSystemLocale */.intl;
+    let obj1 = { limit: null };
+    obj1[0] = closure_4;
+    obj[1] = intl6.formatToPlainString(require(1236) /* getSystemLocale */.t["qqyp/e"], obj1);
+    importDefault(4528).show(obj);
     return true;
-  } else if (code === constants.ENTITY_EMPTY) {
-    let obj4 = importDefault(4505);
-    const obj3 = {};
-    const intl3 = require(1212) /* getSystemLocale */.intl;
-    obj3.title = intl3.string(require(1212) /* getSystemLocale */.t.B3vFdU);
-    const intl4 = require(1212) /* getSystemLocale */.intl;
-    obj3.body = intl4.string(require(1212) /* getSystemLocale */.t["9ZpT2C"]);
-    obj4.show(obj3);
+  } else if (code === tmp31.ENTITY_EMPTY) {
+    let obj2 = { title: null, body: null };
+    const intl3 = require(1236) /* getSystemLocale */.intl;
+    obj2[0] = intl3.string(require(1236) /* getSystemLocale */.t.B3vFdU);
+    const intl4 = require(1236) /* getSystemLocale */.intl;
+    obj2[1] = intl4.string(require(1236) /* getSystemLocale */.t["9ZpT2C"]);
+    importDefault(4528).show(obj2);
     return true;
-  } else if (code === constants.INVALID_FILE_ASSET) {
-    obj2 = importDefault(4505);
-    obj4 = {};
-    const intl = require(1212) /* getSystemLocale */.intl;
-    obj4.title = intl.string(require(1212) /* getSystemLocale */.t.B3vFdU);
-    const intl2 = require(1212) /* getSystemLocale */.intl;
-    obj4.body = intl2.string(require(1212) /* getSystemLocale */.t.zMEjJg);
-    obj2.show(obj4);
+  } else if (code === tmp31.INVALID_FILE_ASSET) {
+    obj2 = importDefault(4528);
+    const obj3 = { title: null, body: null };
+    const intl = require(1236) /* getSystemLocale */.intl;
+    obj3[0] = intl.string(require(1236) /* getSystemLocale */.t.B3vFdU);
+    const intl2 = require(1236) /* getSystemLocale */.intl;
+    obj3[1] = intl2.string(require(1236) /* getSystemLocale */.t.zMEjJg);
+    obj2.show(obj3);
     return true;
   } else {
-    obj = require(12586) /* getAttachmentUploadAbortAlertContent */;
+    obj = require(12608) /* getAttachmentUploadAbortAlertContent */;
     const attachmentUploadAbortAlertContent = obj.getAttachmentUploadAbortAlertContent(code);
     let flag = null != attachmentUploadAbortAlertContent;
     if (flag) {
-      obj1 = importDefault(4505);
+      obj1 = importDefault(4528);
       obj1.show(attachmentUploadAbortAlertContent);
       flag = true;
     }

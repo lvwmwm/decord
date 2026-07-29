@@ -1,108 +1,118 @@
-// Module ID: 8893
-// Function ID: 70222
-// Dependencies: [1348, 3802, 1850, 653, 4979, 507, 675, 4505, 1212, 8894, 8891, 686, 2]
+// Module ID: 8917
+// Function ID: 8918
+// Dependencies: [1372, 3826, 1874, 676, 5001, 530, 698, 4528, 1236, 8918, 8915, 709, 2]
 
-// Module 8893
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_4 from "_isNativeReflectConstruct";
-import closure_5 from "_isNativeReflectConstruct";
+// Module 8917
+import ensureGuildLoaded from "ensureGuildLoaded";
+import upsertRelationship from "upsertRelationship";
+import mergeGuildAvatar from "mergeGuildAvatar";
 import ME from "ME";
 
+let c9;
 let closure_6;
-let closure_7;
-let closure_8;
-let closure_9;
+let error;
+let metroImportAll;
 const require = arg1;
-({ Endpoints: closure_6, AnalyticEvents: closure_7, ChannelTypesSets: closure_8, ChannelTypes: closure_9 } = ME);
-let result = require("_isNativeReflectConstruct").fileFinishedImporting("actions/CallActionCreators.tsx");
+({ Endpoints: closure_6, AnalyticEvents: error, ChannelTypesSets: metroImportAll, ChannelTypes: c9 } = ME);
+let result = require("mergeGuildAvatar").fileFinishedImporting("actions/CallActionCreators.tsx");
 
 export default {
-  call(arg0, arg1, arg2, arg3, arg4) {
-    const self = this;
-    let closure_1 = arg0;
-    const dependencyMap = arg1;
-    let _isNativeReflectConstruct = arg2;
+  call(id, c1) {
+    let self = this;
+    self = this;
+    const importDefault = id;
+    const dependencyMap = c1;
+    let ensureGuildLoaded = arg2;
     const blocked = arg3;
     const user = arg4;
-    function doCall(arg0) {
-      const voiceChannel = callback(4979).selectVoiceChannel(callback, dependencyMap);
-      if (arg0) {
-        self.ring(callback);
-      }
-      if (null != callback2) {
-        callback2(callback);
-      }
-    }
     if (null != arg3) {
       if (!blocked.isBlocked(arg3)) {
-        const user2 = user.getUser(arg3);
-        const HTTP = self(507).HTTP;
-        let obj = { url: doCall.CALL(arg0), oldFormErrors: true, rejectWithError: true };
+        const _require = user.getUser(arg3);
+        const HTTP = _require(530).HTTP;
+        let obj = { url: null, oldFormErrors: true, rejectWithError: true };
+        obj[0] = self.CALL(id);
         const value = HTTP.get(obj);
         value.then((body) => {
-          let ringable = _isNativeReflectConstruct;
-          if (_isNativeReflectConstruct) {
+          let ringable = ensureGuildLoaded;
+          if (ensureGuildLoaded) {
             ringable = body.body.ringable;
           }
-          doCall(ringable);
-        }, () => {
-          let obj = callback(675);
-          obj.track(closure_7.OPEN_POPOUT, { type: "Not Friend", source: "Call" });
-          obj = {};
-          const intl = self(1212).intl;
-          obj.title = intl.string(self(1212).t.My50nf);
-          const intl2 = self(1212).intl;
-          obj = {};
-          let str = "";
-          if (null != closure_7) {
-            str = closure_7.username;
+          const voiceChannel = id(5001).selectVoiceChannel(id, dependencyMap);
+          if (ringable) {
+            self.ring(tmp2);
           }
-          obj.username = str;
-          obj.body = intl2.format(self(1212).t.IdKo2z, obj);
-          const intl3 = self(1212).intl;
-          obj.confirmText = intl3.string(self(1212).t["PMsq/b"]);
-          const intl4 = self(1212).intl;
-          obj.cancelText = intl4.string(self(1212).t.BddRzS);
-          obj.onConfirm = function onConfirm() {
-            let obj = callback(table[9]);
-            obj = { userId: outer1_4, context: { location: "Call" } };
+          if (callback != null) {
+            callback(tmp2);
+          }
+        }, () => {
+          let obj = id(698);
+          obj.track(outer1_7.OPEN_POPOUT, { type: "Not Friend", source: "Call" });
+          obj = { title: null, body: null, confirmText: null, cancelText: null, onConfirm: null };
+          const intl = lib(1236).intl;
+          obj[0] = intl.string(lib(1236).t.My50nf);
+          const intl2 = lib(1236).intl;
+          let str = "";
+          if (null != lib) {
+            str = lib.username;
+          }
+          obj[1] = intl2.format(lib(1236).t.IdKo2z, { username: str });
+          const intl3 = tmp3(1236).intl;
+          obj[2] = intl3.string(lib(1236).t["PMsq/b"]);
+          const intl4 = tmp3(1236).intl;
+          obj[3] = intl4.string(lib(1236).t.BddRzS);
+          obj[4] = function onConfirm() {
+            let obj = outer1_1(outer1_2[9]);
+            obj = { userId: upsertRelationship, context: { location: "Call" } };
             obj.addRelationship(obj);
           };
-          callback(4505).show(obj);
+          id(4528).show(obj);
         });
       }
     } else {
-      doCall(arg2);
+      obj = importDefault(5001);
+      let voiceChannel = obj.selectVoiceChannel(id, c1);
+      if (arg2) {
+        self.ring(id);
+      }
+      if (arg4 != null) {
+        arg4(id);
+      }
     }
   },
   ring(channelId, items, gdm_invite) {
     channel = channel.getChannel(channelId);
     if (null != channel) {
-      let obj = require(8891) /* useCanRingToGuildVoiceChannel */;
+      let obj = require(8915) /* useCanRingToGuildVoiceChannel */;
       const CALLABLE = constants.CALLABLE;
       const result = obj.canRingUsersInChannel(channel);
       if (result) {
-        const HTTP = require(507) /* _isNativeReflectConstruct */.HTTP;
-        obj = { url: closure_6.CALL_RING(channelId) };
-        obj = { recipients: items, analytics_location: gdm_invite };
-        obj.body = obj;
-        obj.oldFormErrors = true;
-        obj.rejectWithError = true;
+        const HTTP = tmp3(530).HTTP;
+        obj = { url: null, body: null, oldFormErrors: true, rejectWithError: true };
+        obj[0] = closure_6.CALL_RING(channelId);
+        obj = { recipients: null, analytics_location: null };
+        obj[0] = items;
+        obj[1] = gdm_invite;
+        obj[1] = obj;
         HTTP.post(obj);
-        if (tmp16) {
-          let obj1 = { type: "GUILD_LOCAL_RING_START", ringing: items, guildId: channel.guild_id };
-          importDefault(686).dispatch(obj1);
-          const obj6 = importDefault(686);
+        if (tmp14) {
+          let obj1 = { type: "GUILD_LOCAL_RING_START", ringing: null, guildId: null };
+          obj1[1] = items;
+          obj1[2] = channel.guild_id;
+          importDefault(709).dispatch(obj1);
+          const obj6 = importDefault(709);
         }
-      } else if (tmp6) {
-        obj1 = importDefault(686);
-        const obj2 = { type: "CALL_ENQUEUE_RING", channelId, recipients: items };
+      } else if (tmp7) {
+        obj1 = importDefault(709);
+        const obj2 = { type: "CALL_ENQUEUE_RING", channelId: null, recipients: null };
+        obj2[1] = channelId;
+        obj2[2] = items;
         obj1.dispatch(obj2);
       }
+      tmp3 = require;
     }
   },
   stopRinging(channelId, items) {
-    const HTTP = require(507) /* _isNativeReflectConstruct */.HTTP;
+    const HTTP = require(530) /* sendRequest */.HTTP;
     obj = { url: closure_6.CALL_STOP_RINGING(channelId), body: obj, oldFormErrors: true, rejectWithError: true };
     obj = { recipients: items };
     return HTTP.post(obj);

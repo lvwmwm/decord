@@ -1,38 +1,303 @@
-// Module ID: 9913
-// Function ID: 76617
+// Module ID: 9935
+// Function ID: 9936
 // Name: _upsertSavedMessage
-// Dependencies: [5, 9529, 653, 507, 9530, 686, 4386, 2]
-// Exports: deleteSavedMessage, fetchAndUpdateSavedMessages, upsertSavedMessage
+// Dependencies: [5, 9553, 676, 709, 530, 9554, 4409, 2]
+// Exports: deleteSavedMessage, dismissBookmarkNudge, fetchAndUpdateSavedMessages, upsertSavedMessage
 
-// Module 9913 (_upsertSavedMessage)
-import dispatcher from "dispatcher";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 9935 (_upsertSavedMessage)
+import SavedMessageSortTypes from "SavedMessageSortTypes";
+import getTimeSafe from "getTimeSafe";
 import { Endpoints } from "ME";
 
 const require = arg1;
 function _upsertSavedMessage() {
-  // CreateGeneratorClosureLongIndex (0x67)
-  const obj = callback(tmp);
-  return obj(...arguments);
+  const self = this;
+  const tmp = callback((arg0) => {
+    let closure_0 = arg0;
+    let c3 = 0;
+    let c4 = 0;
+    return (function*(arg0) {
+      if (c4 === 2) {
+        c4 = 3;
+        HermesBuiltin.throwTypeError();
+      } else if (tmp4 === 3) {
+        if (arg0 === 1) {
+          throw arg1;
+        } else if (arg0 === 2) {
+          let obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
+        } else {
+          return { value: "HermesInternal", done: null };
+        }
+      } else {
+        try {
+          c4 = 2;
+          if (0 === c3) {
+            if (arg0 === 1) {
+              c4 = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              c4 = 3;
+              obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            } else {
+              const table = tmp2;
+              let closure_1 = tmp5;
+              let lib;
+              const HTTP = lib(outer1_2[4]).HTTP;
+              const obj1 = { url: null, body: null, rejectWithError: null };
+              obj1[0] = outer1_5.PUT_SAVED_MESSAGE(lib.channelId, lib.messageId);
+              const obj2 = { due_at: null };
+              obj2[0] = lib.dueAt;
+              obj1[1] = obj2;
+              obj1[2] = lib(outer1_2[4]).rejectWithMigratedError();
+              c3 = 1;
+              c4 = 1;
+              const obj3 = { value: null, done: false };
+              obj3[0] = HTTP.put(obj1);
+              return obj3;
+            }
+          } else if (arg0 === 1) {
+            c4 = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            c4 = 3;
+            const obj4 = { value: null, done: true };
+            obj4[0] = arg1;
+            return obj4;
+          } else {
+            lib = arg1;
+            if (lib.ok) {
+              obj = lib(table[5]);
+              c4 = 3;
+              const obj5 = { value: null, done: true };
+              obj5[0] = obj.savedMessageCreateObjectToClient(lib.body);
+              return obj5;
+            } else {
+              c4 = 3;
+              return { value: "HermesInternal", done: null };
+            }
+          }
+        } catch (tmp13) {
+          c4 = tmp;
+          throw tmp13;
+        }
+      }
+    })();
+  });
+  const _upsertSavedMessage = tmp;
+  const apply = tmp.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
 }
 function _deleteSavedMessage() {
-  // CreateGeneratorClosureLongIndex (0x67)
-  const obj = callback(tmp);
-  return obj(...arguments);
+  const self = this;
+  const tmp = callback((arg0) => {
+    let closure_0 = arg0;
+    let c2 = 0;
+    let c1 = 0;
+    return (function*(arg0, ok) {
+      if (c1 === 2) {
+        c1 = 3;
+        HermesBuiltin.throwTypeError();
+      } else if (tmp3 === 3) {
+        if (arg0 === 1) {
+          throw ok;
+        } else if (arg0 === 2) {
+          let obj = { value: null, done: true };
+          obj[0] = ok;
+          return obj;
+        } else {
+          return { value: "HermesInternal", done: null };
+        }
+      } else {
+        try {
+          c1 = 2;
+          if (0 === dependencyMap) {
+            if (arg0 === 1) {
+              c1 = 3;
+              throw ok;
+            } else if (arg0 === 2) {
+              c1 = 3;
+              obj = { value: null, done: true };
+              obj[0] = ok;
+              return obj;
+            } else {
+              const HTTP = lib(530).HTTP;
+              const obj1 = { url: null, rejectWithError: null };
+              obj1[0] = outer1_5.DELETE_SAVED_MESSAGE(lib.channelId, lib.messageId);
+              obj1[1] = lib(530).rejectWithMigratedError();
+              dependencyMap = 1;
+              c1 = 1;
+              const obj2 = { value: null, done: false };
+              obj2[0] = HTTP.del(obj1);
+              return obj2;
+            }
+          } else if (arg0 === 1) {
+            c1 = 3;
+            throw ok;
+          } else if (arg0 === 2) {
+            c1 = 3;
+            obj = { value: null, done: true };
+            obj[0] = ok;
+            return obj;
+          } else {
+            c1 = 3;
+            return ok.ok ? { value: true, done: true } : { value: "HermesInternal", done: null };
+          }
+        } catch (tmp5) {
+          c1 = tmp;
+          throw tmp5;
+        }
+      }
+    })();
+  });
+  const _deleteSavedMessage = tmp;
+  const apply = tmp.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
 }
 function _fetchAndUpdateSavedMessages() {
-  // CreateGeneratorClosureLongIndex (0x67)
-  const obj = callback(tmp);
-  return obj(...arguments);
+  const self = this;
+  const tmp = callback(function*() {
+    if (c3 === 2) {
+      c3 = 3;
+      HermesBuiltin.throwTypeError();
+    } else if (tmp4 === 3) {
+      if (arg0 === 1) {
+        throw arg1;
+      } else if (arg0 === 2) {
+        let obj = { value: null, done: true };
+        obj[0] = arg1;
+        return obj;
+      } else {
+        return { value: "HermesInternal", done: null };
+      }
+    } else {
+      try {
+        c3 = 2;
+        if (0 === dependencyMap) {
+          if (arg0 === 1) {
+            c3 = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            c3 = 3;
+            obj = { value: null, done: true };
+            obj[0] = arg1;
+            return obj;
+          } else {
+            let callback = tmp2;
+            let closure_0 = tmp5;
+            closure_0 = undefined;
+            callback = undefined;
+            if (outer1_4.getIsStale()) {
+              const HTTP = outer1_0(530).HTTP;
+              const obj1 = { url: null, rejectWithError: null };
+              obj1[0] = outer1_5.GET_SAVED_MESSAGES;
+              obj1[1] = outer1_0(530).rejectWithMigratedError();
+              dependencyMap = 1;
+              c3 = 1;
+              let obj2 = { value: null, done: false };
+              obj2[0] = HTTP.get(obj1);
+              return obj2;
+            } else {
+              c3 = 3;
+              const obj3 = { value: null, done: true };
+              obj3[0] = Promise.resolve();
+              return obj3;
+            }
+          }
+        } else if (arg0 === 1) {
+          c3 = 3;
+          throw arg1;
+        } else if (arg0 === 2) {
+          c3 = 3;
+          const obj4 = { value: null, done: true };
+          obj4[0] = arg1;
+          return obj4;
+        } else {
+          closure_0 = arg1;
+          if (closure_0.ok) {
+            const results = closure_0.body.results;
+            callback = results.map((message) => {
+              let messageRecord = null;
+              if (null != message.message) {
+                let obj = callback(4409);
+                messageRecord = obj.createMessageRecord(message.message);
+              }
+              obj = { message: messageRecord, saveData: null };
+              obj[1] = callback(9554).savedMessageDataToClient(message.save_data);
+              return obj;
+            });
+            obj2 = callback(709);
+            const obj5 = { type: "SAVED_MESSAGES_UPDATE", savedMessages: null };
+            obj5[1] = callback;
+            obj2.dispatch(obj5);
+          } else {
+            obj = callback(709);
+            const obj6 = { type: "SAVED_MESSAGES_UPDATE", savedMessages: null };
+            obj6[1] = [];
+            obj.dispatch(obj6);
+          }
+          c3 = 3;
+        }
+      } catch (tmp22) {
+        c3 = tmp;
+        throw tmp22;
+      }
+    }
+  });
+  const _fetchAndUpdateSavedMessages = tmp;
+  const apply = tmp.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
 }
 const result = require("ME").fileFinishedImporting("modules/saved_messages/SavedMessagesActions.tsx");
 
-export const upsertSavedMessage = function upsertSavedMessage() {
-  return _upsertSavedMessage(...arguments);
+export const dismissBookmarkNudge = function dismissBookmarkNudge() {
+  importDefault(709).dispatch({ type: "BOOKMARK_NUDGE_DISMISS" });
 };
-export const deleteSavedMessage = function deleteSavedMessage(merged) {
-  return _deleteSavedMessage(...arguments);
+export const upsertSavedMessage = function upsertSavedMessage() {
+  const self = this;
+  const apply = _upsertSavedMessage.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
+};
+export const deleteSavedMessage = function deleteSavedMessage(closure_2) {
+  const self = this;
+  const apply = _deleteSavedMessage.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
 };
 export const fetchAndUpdateSavedMessages = function fetchAndUpdateSavedMessages() {
-  return _fetchAndUpdateSavedMessages(...arguments);
+  const self = this;
+  const apply = _fetchAndUpdateSavedMessages.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
 };

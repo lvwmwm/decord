@@ -1,24 +1,24 @@
-// Module ID: 14526
-// Function ID: 110809
+// Module ID: 14551
+// Function ID: 14552
 // Name: ExampleButton
-// Dependencies: [57, 31, 27, 3978, 33, 14527, 4578, 14528, 6661, 8988, 12243, 13185, 10207, 7709, 8846, 4165, 689, 1456, 4133, 14529, 1935, 4576, 4161, 9668, 12234, 12239, 12241, 12240, 12238, 12237, 5000, 3877, 665, 4589, 5200, 4697, 8219, 2]
+// Dependencies: [32, 19, 17, 4002, 21, 14552, 4600, 14553, 6682, 9012, 12267, 13208, 10228, 7732, 8870, 4189, 712, 1480, 4157, 14554, 1959, 4598, 4185, 9690, 12258, 12263, 12265, 12264, 12262, 12261, 5022, 3901, 688, 4611, 5222, 4719, 8243, 2]
 // Exports: default
 
-// Module 14526 (ExampleButton)
-import _slicedToArray from "_slicedToArray";
-import ManaContext from "ManaContext";
-import get_ActivityIndicator from "registerAsset";
+// Module 14551 (ExampleButton)
+import int2hslRaw from "int2hslRaw";
+import items from "items";
+import get_ActivityIndicator from "useNavigation";
 import items1 from "items1";
-import jsxProd from "LinearGradient";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import jsxProd from "Stack";
+import createCacheKey from "createCacheKey";
 
-let closure_10;
-let closure_11;
-let closure_5;
+let c10;
+let c5;
+let c9;
 let closure_6;
-let closure_7;
-let closure_8;
-let closure_9;
+let error;
+let metroImportAll;
+let unpackModuleId;
 let require = arg1;
 function ExampleButton(arg0) {
   let buttonScale;
@@ -30,56 +30,61 @@ function ExampleButton(arg0) {
   let text;
   let variant;
   ({ variant, text, grow } = arg0);
-  const tmp = importDefault(14527)();
-  const enableLoadingState = tmp.enableLoadingState;
-  ({ buttonScale, buttonSize, iconPosition, showIcon, showDisabled } = tmp);
+  let enableLoadingState;
+  let importDefault;
+  let dependencyMap;
+  const tmp3 = importDefault(14552)();
+  enableLoadingState = tmp3.enableLoadingState;
+  ({ buttonScale, buttonSize, iconPosition, showIcon, showDisabled } = tmp3);
   importDefault = React.useRef(null);
-  const tmp2 = callback(React.useState(false), 2);
-  const dependencyMap = tmp2[1];
+  const tmp4 = callback(React.useState(false), 2);
+  dependencyMap = tmp4[1];
   const items = [enableLoadingState];
   callback = React.useCallback(() => {
     if (enableLoadingState) {
       if (null != ref.current) {
         const _clearTimeout = clearTimeout;
-        clearTimeout(ref.current);
+        clearTimeout(tmp.current);
       }
       callback(true);
       const _setTimeout = setTimeout;
       ref.current = setTimeout(() => {
-        outer1_2(false);
+        callback(false);
       }, 5000);
     }
   }, items);
   const callback1 = React.useCallback(() => {
     callback(true);
     closure_1.current = setTimeout(() => {
-      outer1_2(false);
+      callback(false);
     }, 5000);
   }, []);
-  const obj = { disabled: showDisabled, onPress: callback, onLongPress: callback1, loading: tmp2[0], variant };
-  if (null != text) {
-    variant = text;
+  const obj = { disabled: showDisabled, onPress: callback, onLongPress: callback1, loading: tmp4[0], variant, text: null, grow: null, size: null, icon: null, iconPosition: null, scaleAmountInPx: null };
+  if (text == null) {
+    text = variant;
   }
-  let str = "";
-  if (null != variant) {
-    str = variant;
+  if (text == null) {
+    text = "";
   }
-  obj.text = str;
-  obj.grow = null != grow && grow;
-  obj.size = buttonSize;
-  let tmp6;
+  obj[5] = text;
+  if (grow == null) {
+    grow = false;
+  }
+  obj[6] = grow;
+  obj[7] = buttonSize;
+  let tmpResult;
   if (showIcon) {
-    tmp6 = importDefault(14528);
+    tmpResult = importDefault(14553);
   }
-  obj.icon = tmp6;
-  obj.iconPosition = iconPosition;
-  obj.scaleAmountInPx = buttonScale;
-  return closure_9(enableLoadingState(4578).Button, obj);
+  obj[8] = tmpResult;
+  obj[9] = iconPosition;
+  obj[10] = buttonScale;
+  return closure_9(enableLoadingState(4600).Button, obj);
 }
 function ExampleIconButton(arg0) {
-  let buttonSize;
-  let showDisabled;
+  let c2;
   let showLabel;
+  let tmp5;
   let variant;
   ({ variant, showLabel } = arg0);
   if (showLabel === undefined) {
@@ -89,65 +94,63 @@ function ExampleIconButton(arg0) {
   let importDefault;
   let dependencyMap;
   let callback;
-  const tmp = importDefault(14527)();
-  enableLoadingState = tmp.enableLoadingState;
-  ({ buttonSize, showDisabled } = tmp);
+  const tmp3 = importDefault(14552)();
+  enableLoadingState = tmp3.enableLoadingState;
+  const showDisabled = tmp3.showDisabled;
   importDefault = React.useRef(null);
-  const tmp2 = callback(React.useState(false), 2);
-  const first = tmp2[0];
-  dependencyMap = tmp2[1];
+  [tmp5, c2] = callback(React.useState(false), 2);
   const items = [enableLoadingState];
   callback = React.useCallback(() => {
     if (enableLoadingState) {
       if (null != ref.current) {
         const _clearTimeout = clearTimeout;
-        clearTimeout(ref.current);
+        clearTimeout(tmp.current);
       }
-      callback(true);
+      _undefined(true);
       const _setTimeout = setTimeout;
       ref.current = setTimeout(() => {
-        outer1_2(false);
+        callback(false);
       }, 5000);
     }
   }, items);
-  const obj = { disabled: showDisabled };
   if (showLabel) {
-    obj.onPress = function onPress() {
-      return callback2();
+    let obj = { disabled: null, onPress: null, label: null, grow: true, loading: null, variant: null, icon: null };
+    obj[0] = showDisabled;
+    obj[1] = function onPress() {
+      return callback();
     };
-    let str2 = "";
-    if (null != variant) {
-      str2 = variant;
+    let str2 = variant;
+    if (variant == null) {
+      str2 = "";
     }
-    obj.label = str2;
-    obj.grow = true;
-    obj.loading = first;
-    obj.variant = variant;
-    obj.icon = importDefault(8988);
-    let tmp7 = obj;
+    obj[2] = str2;
+    obj[4] = tmp5;
+    obj[5] = variant;
+    obj[6] = tmp(9012);
   } else {
-    obj.onPress = function onPress() {
-      return callback2();
+    obj = { disabled: null, onPress: null, accessibilityLabel: null, loading: null, variant: null, size: null, icon: null };
+    obj[0] = showDisabled;
+    obj[1] = function onPress() {
+      return callback();
     };
-    let str = "";
-    if (null != variant) {
-      str = variant;
+    let str = variant;
+    if (variant == null) {
+      str = "";
     }
-    obj.accessibilityLabel = str;
-    obj.loading = first;
-    obj.variant = variant;
-    obj.size = buttonSize;
-    obj.icon = importDefault(8988);
-    tmp7 = obj;
+    obj[2] = str;
+    obj[3] = tmp5;
+    obj[4] = variant;
+    obj[5] = tmp3.buttonSize;
+    obj[6] = tmp(9012);
   }
-  return closure_9(enableLoadingState(6661).IconButton, tmp7);
+  return closure_9(enableLoadingState(6682).IconButton, obj);
 }
 function ExampleImageButton(arg0) {
-  let buttonSize;
+  let c2;
   let image;
   let label;
-  let showDisabled;
   let showLabel;
+  let tmp3;
   ({ image, label, showLabel } = arg0);
   if (showLabel === undefined) {
     showLabel = false;
@@ -156,258 +159,265 @@ function ExampleImageButton(arg0) {
   let importDefault;
   let dependencyMap;
   let callback;
-  const tmp = importDefault(14527)();
+  const tmp = importDefault(14552)();
   enableLoadingState = tmp.enableLoadingState;
-  ({ buttonSize, showDisabled } = tmp);
+  const showDisabled = tmp.showDisabled;
   importDefault = React.useRef(null);
-  const tmp2 = callback(React.useState(false), 2);
-  const first = tmp2[0];
-  dependencyMap = tmp2[1];
+  [tmp3, c2] = callback(React.useState(false), 2);
   const items = [enableLoadingState];
   callback = React.useCallback(() => {
     if (enableLoadingState) {
       if (null != ref.current) {
         const _clearTimeout = clearTimeout;
-        clearTimeout(ref.current);
+        clearTimeout(tmp.current);
       }
-      callback(true);
+      _undefined(true);
       const _setTimeout = setTimeout;
       ref.current = setTimeout(() => {
-        outer1_2(false);
+        callback(false);
       }, 5000);
     }
   }, items);
-  const obj = { disabled: showDisabled };
   if (showLabel) {
-    obj.onPress = function onPress() {
-      return callback2();
+    let obj = { disabled: null, onPress: null, label: null, grow: true, loading: null, image: null };
+    obj[0] = showDisabled;
+    obj[1] = function onPress() {
+      return callback();
     };
-    obj.label = label;
-    obj.grow = true;
-    obj.loading = first;
-    obj.image = image;
-    let tmp5 = obj;
+    obj[2] = label;
+    obj[4] = tmp3;
+    obj[5] = image;
   } else {
-    obj.onPress = function onPress() {
-      return callback2();
+    obj = { disabled: null, onPress: null, accessibilityLabel: null, loading: null, size: null, image: null };
+    obj[0] = showDisabled;
+    obj[1] = function onPress() {
+      return callback();
     };
-    obj.accessibilityLabel = label;
-    obj.loading = first;
-    obj.size = buttonSize;
-    obj.image = image;
-    tmp5 = obj;
+    obj[2] = label;
+    obj[3] = tmp3;
+    obj[4] = tmp.buttonSize;
+    obj[5] = image;
   }
-  return closure_9(enableLoadingState(12243).ImageButton, tmp5);
+  return closure_9(enableLoadingState(12267).ImageButton, obj);
 }
 function ExampleToggleButton() {
   const tmp = callback(React.useState(false), 2);
   const first = tmp[0];
   const importDefault = tmp[1];
-  let obj = first(13185);
-  obj = {};
-  obj = { text: "Unfollow", icon: importDefault(10207) };
-  obj.on = obj;
-  obj.off = { text: "Follow", icon: importDefault(7709) };
+  let obj = first(13208);
+  obj = { on: null, off: null };
+  obj = { text: "Unfollow", icon: importDefault(10228) };
+  obj[0] = obj;
+  obj[1] = { text: "Follow", icon: importDefault(7732) };
   const toggleButtonProps = obj.useToggleButtonProps(obj, first);
   const obj2 = {};
   const merged = Object.assign(toggleButtonProps);
-  obj2["onPress"] = function onPress() {
+  obj2.onPress = function onPress() {
     callback(!first);
   };
-  obj2["variant"] = "secondary";
-  obj2["size"] = "md";
-  return callback2(first(4578).Button, obj2);
+  obj2.variant = "secondary";
+  obj2.size = "md";
+  return callback2(first(4600).Button, obj2);
 }
 function ExampleIconToggleButton() {
   const tmp = callback(React.useState(false), 2);
   const first = tmp[0];
   const importDefault = tmp[1];
-  let obj = first(13185);
-  obj = {};
-  obj = { variant: "destructive", accessibilityLabel: "Mute", icon: importDefault(8846) };
-  obj.on = obj;
-  const obj1 = { variant: "secondary", accessibilityLabel: "Mute", icon: importDefault(8846) };
-  obj.off = obj1;
+  let obj = first(13208);
+  obj = { on: null, off: null };
+  obj = { variant: "destructive", accessibilityLabel: "Mute", icon: importDefault(8870) };
+  obj[0] = obj;
+  obj[1] = { variant: "secondary", accessibilityLabel: "Mute", icon: importDefault(8870) };
   const toggleIconButtonProps = obj.useToggleIconButtonProps(obj, first);
   const obj2 = {};
   const merged = Object.assign(toggleIconButtonProps);
-  obj2["onPress"] = function onPress() {
+  obj2.onPress = function onPress() {
     callback(!first);
   };
-  obj2["size"] = "md";
-  return callback2(first(6661).IconButton, obj2);
+  obj2.size = "md";
+  return callback2(first(6682).IconButton, obj2);
 }
-({ View: closure_5, ScrollView: closure_6 } = get_ActivityIndicator);
-({ LIGHT_BACKGROUND_GRADIENT_PRESETS: closure_7, DARK_BACKGROUND_GRADIENT_PRESETS: closure_8 } = items1);
-({ jsx: closure_9, jsxs: closure_10, Fragment: closure_11 } = jsxProd);
+({ View: c5, ScrollView: closure_6 } = get_ActivityIndicator);
+({ LIGHT_BACKGROUND_GRADIENT_PRESETS: error, DARK_BACKGROUND_GRADIENT_PRESETS: metroImportAll } = items1);
+({ jsx: c9, jsxs: c10, Fragment: unpackModuleId } = jsxProd);
 let closure_12 = ["primary", "secondary", "tertiary"];
 let closure_13 = ["primary-overlay", "secondary-overlay"];
 let closure_14 = ["destructive", "active"];
 let closure_15 = ["expressive"];
 let closure_16 = ["experimental_premium-primary", "experimental_premium-secondary"];
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16 };
-_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.buttonContainer = { paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16, paddingVertical: require("_createForOfIteratorHelperLoose").space.PX_8 };
-let obj1 = { paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16, paddingVertical: require("_createForOfIteratorHelperLoose").space.PX_8 };
-_createForOfIteratorHelperLoose.overlayButtonContainer = { backgroundColor: require("_createForOfIteratorHelperLoose").unsafe_rawColors.BG_GRADIENT_CHROMA_GLOW_1, paddingVertical: require("_createForOfIteratorHelperLoose").space.PX_48 };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-let obj2 = { backgroundColor: require("_createForOfIteratorHelperLoose").unsafe_rawColors.BG_GRADIENT_CHROMA_GLOW_1, paddingVertical: require("_createForOfIteratorHelperLoose").space.PX_48 };
+createCacheKey = { container: null, buttonContainer: null, overlayButtonContainer: null };
+createCacheKey = { paddingHorizontal: require("Themes").space.PX_16 };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { paddingHorizontal: require("Themes").space.PX_16, paddingVertical: require("Themes").space.PX_8 };
+let obj1 = { paddingHorizontal: require("Themes").space.PX_16, paddingVertical: require("Themes").space.PX_8 };
+createCacheKey[2] = { backgroundColor: require("Themes").unsafe_rawColors.BG_GRADIENT_CHROMA_GLOW_1, paddingVertical: require("Themes").space.PX_48 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let obj2 = { backgroundColor: require("Themes").unsafe_rawColors.BG_GRADIENT_CHROMA_GLOW_1, paddingVertical: require("Themes").space.PX_48 };
 const result = require("get ActivityIndicator").fileFinishedImporting("modules/user_settings/design_system/native/UserSettingsDesignSystemButton.tsx");
 
 export default function UserSettingsDesignSystemButton() {
-  const tmp = _createForOfIteratorHelperLoose();
+  const tmp = createCacheKey();
   const require = tmp;
-  let obj = require(1456) /* useNavigation */;
+  let obj = require(1480) /* useNavigation */;
   const navigation = obj.useNavigation();
   const importDefault = React.useCallback(() => {
-    callback(outer1_2[18]).openLazy(tmp(outer1_2[20])(outer1_2[19], outer1_2.paths), "UserSettingsDesignSystemButtonActionSheet");
+    callback(paths[18]).openLazy(tmp(paths[20])(paths[19], paths.paths), "UserSettingsDesignSystemButtonActionSheet");
   }, []);
   obj = {
     headerRight() {
-      const obj = { onPress: callback, icon: callback(outer1_2[9]), size: "sm", variant: "secondary", accessibilityLabel: "Settings" };
+      const obj = { onPress: callback, icon: null, size: "sm", variant: "secondary", accessibilityLabel: "Settings" };
+      obj[1] = callback(outer1_2[9]);
       return outer1_9(tmp(outer1_2[8]).IconButton, obj);
     }
   };
   navigation.setOptions(obj);
-  obj = {};
-  const obj1 = {};
-  const obj2 = { spacing: 24 };
-  const obj3 = {};
-  const obj4 = { style: tmp.container, children: callback2(require(4161) /* Text */.Text, { variant: "heading-lg/bold", children: "Hierarchical buttons" }) };
+  obj = { children: null };
+  const obj1 = { children: null };
+  const obj2 = { spacing: 24, children: null };
+  const obj3 = { children: null };
+  const obj4 = { style: tmp.container, children: null };
+  obj4[1] = callback2(require(4185) /* Text */.Text, { variant: "heading-lg/bold", children: "Hierarchical buttons" });
   let items = [
-    callback2(require(4576) /* Stack */.Stack, obj4),
+    callback2(require(4598) /* Stack */.Stack, obj4),
     callback2(closure_5, {
       children: closure_12.map((variant) => {
-        obj = { style: tmp.buttonContainer, children: outer1_9(outer1_18, obj) };
+        obj = { style: tmp.buttonContainer, children: outer1_9(outer1_17, obj) };
         obj = { variant };
         return outer1_9(outer1_5, obj, variant);
       })
     })
   ];
-  obj3.children = items;
-  const items1 = [callback3(require(4576) /* Stack */.Stack, obj3), , , , , , , , , , , , , , , , , , , ];
-  const obj6 = {};
-  const obj7 = { style: tmp.container, children: callback2(require(4161) /* Text */.Text, { variant: "heading-lg/bold", children: "Sentiment buttons" }) };
-  const items2 = [callback2(require(4576) /* Stack */.Stack, obj7), ];
+  obj3[0] = items;
+  const items1 = [callback3(require(4598) /* Stack */.Stack, obj3), , , , , , , , , , , , , , , , , , , ];
+  const obj6 = { children: null };
+  const obj7 = { style: tmp.container, children: null };
+  obj7[1] = callback2(require(4185) /* Text */.Text, { variant: "heading-lg/bold", children: "Sentiment buttons" });
+  const items2 = [callback2(require(4598) /* Stack */.Stack, obj7), ];
   const obj5 = {
     children: closure_12.map((variant) => {
-      obj = { style: tmp.buttonContainer, children: outer1_9(outer1_18, obj) };
+      obj = { style: tmp.buttonContainer, children: outer1_9(outer1_17, obj) };
       obj = { variant };
       return outer1_9(outer1_5, obj, variant);
     })
   };
   items2[1] = callback2(closure_5, {
     children: closure_14.map((variant) => {
-      obj = { style: tmp.buttonContainer, children: outer1_9(outer1_18, obj) };
+      obj = { style: tmp.buttonContainer, children: outer1_9(outer1_17, obj) };
       obj = { variant };
       return outer1_9(outer1_5, obj, variant);
     })
   });
-  obj6.children = items2;
-  items1[1] = callback3(require(4576) /* Stack */.Stack, obj6);
-  const obj9 = {};
-  const obj10 = { style: tmp.container, children: callback2(require(4161) /* Text */.Text, { variant: "heading-lg/bold", children: "Expressive buttons" }) };
-  const items3 = [callback2(require(4576) /* Stack */.Stack, obj10), ];
+  obj6[0] = items2;
+  items1[1] = callback3(require(4598) /* Stack */.Stack, obj6);
+  const obj9 = { children: null };
+  const obj10 = { style: tmp.container, children: null };
+  obj10[1] = callback2(require(4185) /* Text */.Text, { variant: "heading-lg/bold", children: "Expressive buttons" });
+  const items3 = [callback2(require(4598) /* Stack */.Stack, obj10), ];
   const obj8 = {
     children: closure_14.map((variant) => {
-      obj = { style: tmp.buttonContainer, children: outer1_9(outer1_18, obj) };
+      obj = { style: tmp.buttonContainer, children: outer1_9(outer1_17, obj) };
       obj = { variant };
       return outer1_9(outer1_5, obj, variant);
     })
   };
   items3[1] = callback2(closure_5, {
     children: closure_15.map((variant) => {
-      obj = { style: tmp.buttonContainer, children: outer1_9(outer1_18, obj) };
+      obj = { style: tmp.buttonContainer, children: outer1_9(outer1_17, obj) };
       obj = { variant };
       return outer1_9(outer1_5, obj, variant);
     })
   });
-  obj9.children = items3;
-  items1[2] = callback3(require(4576) /* Stack */.Stack, obj9);
-  const obj12 = {};
-  const obj13 = { style: tmp.container, children: callback2(require(4161) /* Text */.Text, { variant: "heading-lg/bold", children: "Experimental premium buttons" }) };
-  const items4 = [callback2(require(4576) /* Stack */.Stack, obj13), ];
+  obj9[0] = items3;
+  items1[2] = callback3(require(4598) /* Stack */.Stack, obj9);
+  const obj12 = { children: null };
+  const obj13 = { style: tmp.container, children: null };
+  obj13[1] = callback2(require(4185) /* Text */.Text, { variant: "heading-lg/bold", children: "Experimental premium buttons" });
+  const items4 = [callback2(require(4598) /* Stack */.Stack, obj13), ];
   const obj11 = {
     children: closure_15.map((variant) => {
-      obj = { style: tmp.buttonContainer, children: outer1_9(outer1_18, obj) };
+      obj = { style: tmp.buttonContainer, children: outer1_9(outer1_17, obj) };
       obj = { variant };
       return outer1_9(outer1_5, obj, variant);
     })
   };
   items4[1] = callback2(closure_5, {
     children: closure_16.map((variant) => {
-      obj = { style: tmp.buttonContainer, children: outer1_9(outer1_18, obj) };
+      obj = { style: tmp.buttonContainer, children: outer1_9(outer1_17, obj) };
       obj = { variant };
       return outer1_9(outer1_5, obj, variant);
     })
   });
-  obj12.children = items4;
-  items1[3] = callback3(require(4576) /* Stack */.Stack, obj12);
-  const obj15 = {};
-  const obj16 = { style: tmp.container };
-  const items5 = [callback2(require(4161) /* Text */.Text, { variant: "heading-lg/bold", children: "Overlay buttons" }), callback2(require(4161) /* Text */.Text, { variant: "text-sm/normal", children: "Overlay buttons are meant to be used overlayed on top of an image or background color. They do not change colors with the theme." })];
-  obj16.children = items5;
-  const items6 = [callback3(require(4576) /* Stack */.Stack, obj16), ];
+  obj12[0] = items4;
+  items1[3] = callback3(require(4598) /* Stack */.Stack, obj12);
+  const obj15 = { children: null };
+  const obj16 = { style: tmp.container, children: null };
+  const items5 = [callback2(require(4185) /* Text */.Text, { variant: "heading-lg/bold", children: "Overlay buttons" }), callback2(require(4185) /* Text */.Text, { variant: "text-sm/normal", children: "Overlay buttons are meant to be used overlayed on top of an image or background color. They do not change colors with the theme." })];
+  obj16[1] = items5;
+  const items6 = [callback3(require(4598) /* Stack */.Stack, obj16), ];
   const obj14 = {
     children: closure_16.map((variant) => {
-      obj = { style: tmp.buttonContainer, children: outer1_9(outer1_18, obj) };
+      obj = { style: tmp.buttonContainer, children: outer1_9(outer1_17, obj) };
       obj = { variant };
       return outer1_9(outer1_5, obj, variant);
     })
   };
   items6[1] = callback2(closure_5, {
     children: closure_13.map((variant) => {
-      obj = { style: items, children: outer1_9(outer1_18, obj) };
+      obj = { style: items, children: outer1_9(outer1_17, obj) };
       items = [, ];
       ({ buttonContainer: arr[0], overlayButtonContainer: arr[1] } = closure_0);
       obj = { variant };
       return outer1_9(outer1_5, obj, variant);
     })
   });
-  obj15.children = items6;
-  items1[4] = callback3(require(4576) /* Stack */.Stack, obj15);
-  const obj18 = {};
-  const obj19 = { style: tmp.container };
-  const items7 = [callback2(require(4161) /* Text */.Text, { variant: "heading-lg/bold", children: "Custom color icons" }), callback2(require(4161) /* Text */.Text, { variant: "text-sm/normal", children: "If a button needs to have an icon which has its own custom color, then create your own Button.Icon to pass as the icon prop." })];
-  obj19.children = items7;
-  const items8 = [callback3(require(4576) /* Stack */.Stack, obj19), ];
-  const obj20 = {};
-  const obj21 = { style: tmp.buttonContainer };
+  obj15[0] = items6;
+  items1[4] = callback3(require(4598) /* Stack */.Stack, obj15);
+  const obj18 = { children: null };
+  const obj19 = { style: tmp.container, children: null };
+  const items7 = [callback2(require(4185) /* Text */.Text, { variant: "heading-lg/bold", children: "Custom color icons" }), callback2(require(4185) /* Text */.Text, { variant: "text-sm/normal", children: "If a button needs to have an icon which has its own custom color, then create your own Button.Icon to pass as the icon prop." })];
+  obj19[1] = items7;
+  const items8 = [callback3(require(4598) /* Stack */.Stack, obj19), ];
+  const obj20 = { children: null };
+  const obj21 = { style: tmp.buttonContainer, children: null };
   const obj22 = {
     onPress() {
 
     },
     variant: "secondary",
     text: "Button with a custom color icon",
-    size: "md"
+    size: "md",
+    icon: null
   };
-  const obj23 = { source: importDefault(9668) };
-  obj22.icon = callback2(require(4578) /* Button */.Button.Icon, obj23);
-  obj21.children = callback2(require(4578) /* Button */.Button, obj22);
+  const obj23 = { source: null };
+  obj23[0] = importDefault(9690);
+  obj22[4] = callback2(require(4600) /* Button */.Button.Icon, obj23);
+  obj21[1] = callback2(require(4600) /* Button */.Button, obj22);
   const items9 = [callback2(closure_5, obj21), ];
-  const obj24 = { style: tmp.buttonContainer };
+  const obj24 = { style: tmp.buttonContainer, children: null };
   const obj25 = {
     onPress() {
 
     },
     variant: "secondary",
     text: "Button with a entity variant icon",
-    size: "md"
+    size: "md",
+    icon: null
   };
-  const obj26 = { variant: "entity", source: importDefault(12234) };
-  obj25.icon = callback2(require(4578) /* Button */.Button.Icon, obj26);
-  obj24.children = callback2(require(4578) /* Button */.Button, obj25);
+  const obj26 = { variant: "entity", source: null };
+  obj26[1] = importDefault(12258);
+  obj25[4] = callback2(require(4600) /* Button */.Button.Icon, obj26);
+  obj24[1] = callback2(require(4600) /* Button */.Button, obj25);
   items9[1] = callback2(closure_5, obj24);
-  obj20.children = items9;
+  obj20[0] = items9;
   items8[1] = callback3(closure_5, obj20);
-  obj18.children = items8;
-  items1[5] = callback3(require(4576) /* Stack */.Stack, obj18);
-  const obj27 = {};
-  const obj28 = { style: tmp.container, children: callback2(require(4161) /* Text */.Text, { variant: "heading-lg/bold", children: "Buttons with various text lengths" }) };
-  const items10 = [callback2(require(4576) /* Stack */.Stack, obj28), ];
-  const obj29 = {};
-  const obj30 = { style: tmp.buttonContainer };
+  obj18[0] = items8;
+  items1[5] = callback3(require(4598) /* Stack */.Stack, obj18);
+  const obj27 = { children: null };
+  const obj28 = { style: tmp.container, children: null };
+  obj28[1] = callback2(require(4185) /* Text */.Text, { variant: "heading-lg/bold", children: "Buttons with various text lengths" });
+  const items10 = [callback2(require(4598) /* Stack */.Stack, obj28), ];
+  const obj29 = { children: null };
+  const obj30 = { style: tmp.buttonContainer, children: null };
   const obj31 = {
     onPress() {
 
@@ -415,11 +425,12 @@ export default function UserSettingsDesignSystemButton() {
     variant: "secondary",
     text: "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur",
     size: "md",
-    icon: importDefault(9668)
+    icon: null
   };
-  obj30.children = callback2(require(4578) /* Button */.Button, obj31);
+  obj31[4] = importDefault(9690);
+  obj30[1] = callback2(require(4600) /* Button */.Button, obj31);
   const items11 = [callback2(closure_5, obj30), , , ];
-  const obj32 = { style: tmp.buttonContainer };
+  const obj32 = { style: tmp.buttonContainer, children: null };
   const obj33 = {
     onPress() {
 
@@ -427,12 +438,108 @@ export default function UserSettingsDesignSystemButton() {
     variant: "secondary",
     text: "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur",
     size: "md",
-    icon: importDefault(9668),
+    icon: null,
     iconPosition: "end"
   };
-  obj32.children = callback2(require(4578) /* Button */.Button, obj33);
+  obj33[4] = importDefault(9690);
+  obj32[1] = callback2(require(4600) /* Button */.Button, obj33);
   items11[1] = callback2(closure_5, obj32);
   const obj17 = {
+    children: closure_13.map((variant) => {
+      obj = { style: items, children: outer1_9(outer1_17, obj) };
+      items = [, ];
+      ({ buttonContainer: arr[0], overlayButtonContainer: arr[1] } = closure_0);
+      obj = { variant };
+      return outer1_9(outer1_5, obj, variant);
+    })
+  };
+  items11[2] = callback2(closure_5, { style: tmp.buttonContainer, children: callback2(require(4600) /* Button */.Button, obj35) });
+  const obj34 = { style: tmp.buttonContainer, children: callback2(require(4600) /* Button */.Button, obj35) };
+  items11[3] = callback2(closure_5, { style: tmp.buttonContainer, children: callback2(require(4600) /* Button */.Button, obj37) });
+  obj29[0] = items11;
+  items10[1] = callback3(closure_5, obj29);
+  obj27[0] = items10;
+  items1[6] = callback3(require(4598) /* Stack */.Stack, obj27);
+  const obj38 = { children: null };
+  const obj39 = { style: tmp.container, children: null };
+  const items12 = [callback2(require(4185) /* Text */.Text, { variant: "heading-lg/bold", children: "Toggling button states" }), callback2(require(4185) /* Text */.Text, { variant: "text-sm/normal", children: "Use the useToggleButtonProps hook or the useToggleIconButtonProps hook to toggle a button between two states." }), callback2(require(4185) /* Text */.Text, { variant: "text-sm/normal", children: "This hook changes the button presentation and adds some important accessibility attributes for a toggle button." })];
+  obj39[1] = items12;
+  const items13 = [callback3(require(4598) /* Stack */.Stack, obj39), ];
+  const obj40 = { children: null };
+  const obj36 = { style: tmp.buttonContainer, children: callback2(require(4600) /* Button */.Button, obj37) };
+  const items14 = [callback2(closure_5, { style: tmp.buttonContainer, children: callback2(ExampleToggleButton, {}) }), ];
+  const obj41 = { style: tmp.buttonContainer, children: callback2(ExampleToggleButton, {}) };
+  items14[1] = callback2(closure_5, { style: tmp.buttonContainer, children: callback2(ExampleIconToggleButton, {}) });
+  obj40[0] = items14;
+  items13[1] = callback3(closure_5, obj40);
+  obj38[0] = items13;
+  items1[7] = callback3(require(4598) /* Stack */.Stack, obj38);
+  const obj43 = { children: null };
+  const obj44 = { style: tmp.container, children: null };
+  const items15 = [callback2(require(4185) /* Text */.Text, { variant: "heading-lg/bold", children: "Hierarchical icon buttons" }), callback2(require(4185) /* Text */.Text, { variant: "text-sm/normal", children: "While the primary variants of IconButton are supported, these should be used very rarely." }), callback2(require(4185) /* Text */.Text, { variant: "text-sm/normal", children: "An icon button usually has a secondary function and should use the secondary variants." })];
+  obj44[1] = items15;
+  const items16 = [callback3(require(4598) /* Stack */.Stack, obj44), ];
+  const obj42 = { style: tmp.buttonContainer, children: callback2(ExampleIconToggleButton, {}) };
+  items16[1] = callback2(closure_5, {
+    children: closure_12.map((variant) => {
+      obj = { style: tmp.buttonContainer, children: outer1_9(outer1_18, obj) };
+      obj = { variant };
+      return outer1_9(outer1_5, obj, variant);
+    })
+  });
+  obj43[0] = items16;
+  items1[8] = callback3(require(4598) /* Stack */.Stack, obj43);
+  const obj46 = { children: null };
+  const obj47 = { style: tmp.container, children: null };
+  obj47[1] = callback2(require(4185) /* Text */.Text, { variant: "heading-lg/bold", children: "Sentiment icon buttons" });
+  const items17 = [callback2(require(4598) /* Stack */.Stack, obj47), ];
+  const obj45 = {
+    children: closure_12.map((variant) => {
+      obj = { style: tmp.buttonContainer, children: outer1_9(outer1_18, obj) };
+      obj = { variant };
+      return outer1_9(outer1_5, obj, variant);
+    })
+  };
+  items17[1] = callback2(closure_5, {
+    children: closure_14.map((variant) => {
+      obj = { style: tmp.buttonContainer, children: outer1_9(outer1_18, obj) };
+      obj = { variant };
+      return outer1_9(outer1_5, obj, variant);
+    })
+  });
+  obj46[0] = items17;
+  items1[9] = callback3(require(4598) /* Stack */.Stack, obj46);
+  const obj49 = { children: null };
+  const obj50 = { style: tmp.container, children: null };
+  obj50[1] = callback2(require(4185) /* Text */.Text, { variant: "heading-lg/bold", children: "Overlay icon buttons" });
+  const items18 = [callback2(require(4598) /* Stack */.Stack, obj50), ];
+  const obj48 = {
+    children: closure_14.map((variant) => {
+      obj = { style: tmp.buttonContainer, children: outer1_9(outer1_18, obj) };
+      obj = { variant };
+      return outer1_9(outer1_5, obj, variant);
+    })
+  };
+  items18[1] = callback2(closure_5, {
+    children: closure_13.map((variant) => {
+      obj = { style: items, children: outer1_9(outer1_18, obj) };
+      items = [, ];
+      ({ buttonContainer: arr[0], overlayButtonContainer: arr[1] } = closure_0);
+      obj = { variant };
+      return outer1_9(outer1_5, obj, variant);
+    })
+  });
+  obj49[0] = items18;
+  items1[10] = callback3(require(4598) /* Stack */.Stack, obj49);
+  const obj52 = { children: null };
+  const obj53 = { style: tmp.container, children: null };
+  const items19 = [callback2(require(4185) /* Text */.Text, { variant: "heading-lg/bold", children: "Image buttons" }), callback2(require(4185) /* Text */.Text, { variant: "text-sm/normal", children: "Image buttons are rereserved for more branded buttons, like social media sharing buttons." })];
+  obj53[1] = items19;
+  const items20 = [callback3(require(4598) /* Stack */.Stack, obj53), ];
+  const obj54 = { children: null };
+  const obj55 = { style: items21, children: null };
+  items21 = [tmp.buttonContainer];
+  const obj51 = {
     children: closure_13.map((variant) => {
       obj = { style: items, children: outer1_9(outer1_18, obj) };
       items = [, ];
@@ -441,328 +548,209 @@ export default function UserSettingsDesignSystemButton() {
       return outer1_9(outer1_5, obj, variant);
     })
   };
-  const obj35 = {
-    onPress() {
-
-    },
-    variant: "secondary",
-    text: "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur",
-    size: "md"
-  };
-  items11[2] = callback2(closure_5, { style: tmp.buttonContainer, children: callback2(require(4578) /* Button */.Button, obj35) });
-  const obj34 = { style: tmp.buttonContainer, children: callback2(require(4578) /* Button */.Button, obj35) };
-  const obj37 = {
-    onPress() {
-
-    },
-    variant: "secondary",
-    text: "A",
-    size: "md"
-  };
-  items11[3] = callback2(closure_5, { style: tmp.buttonContainer, children: callback2(require(4578) /* Button */.Button, obj37) });
-  obj29.children = items11;
-  items10[1] = callback3(closure_5, obj29);
-  obj27.children = items10;
-  items1[6] = callback3(require(4576) /* Stack */.Stack, obj27);
-  const obj38 = {};
-  const obj39 = { style: tmp.container };
-  const items12 = [callback2(require(4161) /* Text */.Text, { variant: "heading-lg/bold", children: "Toggling button states" }), callback2(require(4161) /* Text */.Text, { variant: "text-sm/normal", children: "Use the useToggleButtonProps hook or the useToggleIconButtonProps hook to toggle a button between two states." }), callback2(require(4161) /* Text */.Text, { variant: "text-sm/normal", children: "This hook changes the button presentation and adds some important accessibility attributes for a toggle button." })];
-  obj39.children = items12;
-  const items13 = [callback3(require(4576) /* Stack */.Stack, obj39), ];
-  const obj40 = {};
-  const obj36 = { style: tmp.buttonContainer, children: callback2(require(4578) /* Button */.Button, obj37) };
-  const items14 = [callback2(closure_5, { style: tmp.buttonContainer, children: callback2(ExampleToggleButton, {}) }), ];
-  const obj41 = { style: tmp.buttonContainer, children: callback2(ExampleToggleButton, {}) };
-  items14[1] = callback2(closure_5, { style: tmp.buttonContainer, children: callback2(ExampleIconToggleButton, {}) });
-  obj40.children = items14;
-  items13[1] = callback3(closure_5, obj40);
-  obj38.children = items13;
-  items1[7] = callback3(require(4576) /* Stack */.Stack, obj38);
-  const obj43 = {};
-  const obj44 = { style: tmp.container };
-  const items15 = [callback2(require(4161) /* Text */.Text, { variant: "heading-lg/bold", children: "Hierarchical icon buttons" }), callback2(require(4161) /* Text */.Text, { variant: "text-sm/normal", children: "While the primary variants of IconButton are supported, these should be used very rarely." }), callback2(require(4161) /* Text */.Text, { variant: "text-sm/normal", children: "An icon button usually has a secondary function and should use the secondary variants." })];
-  obj44.children = items15;
-  const items16 = [callback3(require(4576) /* Stack */.Stack, obj44), ];
-  const obj42 = { style: tmp.buttonContainer, children: callback2(ExampleIconToggleButton, {}) };
-  items16[1] = callback2(closure_5, {
-    children: closure_12.map((variant) => {
-      obj = { style: tmp.buttonContainer, children: outer1_9(outer1_19, obj) };
-      obj = { variant };
-      return outer1_9(outer1_5, obj, variant);
-    })
-  });
-  obj43.children = items16;
-  items1[8] = callback3(require(4576) /* Stack */.Stack, obj43);
-  const obj46 = {};
-  const obj47 = { style: tmp.container, children: callback2(require(4161) /* Text */.Text, { variant: "heading-lg/bold", children: "Sentiment icon buttons" }) };
-  const items17 = [callback2(require(4576) /* Stack */.Stack, obj47), ];
-  const obj45 = {
-    children: closure_12.map((variant) => {
-      obj = { style: tmp.buttonContainer, children: outer1_9(outer1_19, obj) };
-      obj = { variant };
-      return outer1_9(outer1_5, obj, variant);
-    })
-  };
-  items17[1] = callback2(closure_5, {
-    children: closure_14.map((variant) => {
-      obj = { style: tmp.buttonContainer, children: outer1_9(outer1_19, obj) };
-      obj = { variant };
-      return outer1_9(outer1_5, obj, variant);
-    })
-  });
-  obj46.children = items17;
-  items1[9] = callback3(require(4576) /* Stack */.Stack, obj46);
-  const obj49 = {};
-  const obj50 = { style: tmp.container, children: callback2(require(4161) /* Text */.Text, { variant: "heading-lg/bold", children: "Overlay icon buttons" }) };
-  const items18 = [callback2(require(4576) /* Stack */.Stack, obj50), ];
-  const obj48 = {
-    children: closure_14.map((variant) => {
-      obj = { style: tmp.buttonContainer, children: outer1_9(outer1_19, obj) };
-      obj = { variant };
-      return outer1_9(outer1_5, obj, variant);
-    })
-  };
-  items18[1] = callback2(closure_5, {
-    children: closure_13.map((variant) => {
-      obj = { style: items, children: outer1_9(outer1_19, obj) };
-      items = [, ];
-      ({ buttonContainer: arr[0], overlayButtonContainer: arr[1] } = closure_0);
-      obj = { variant };
-      return outer1_9(outer1_5, obj, variant);
-    })
-  });
-  obj49.children = items18;
-  items1[10] = callback3(require(4576) /* Stack */.Stack, obj49);
-  const obj52 = {};
-  const obj53 = { style: tmp.container };
-  const items19 = [callback2(require(4161) /* Text */.Text, { variant: "heading-lg/bold", children: "Image buttons" }), callback2(require(4161) /* Text */.Text, { variant: "text-sm/normal", children: "Image buttons are rereserved for more branded buttons, like social media sharing buttons." })];
-  obj53.children = items19;
-  const items20 = [callback3(require(4576) /* Stack */.Stack, obj53), ];
-  const obj54 = {};
-  const obj55 = { style: items21 };
-  items21 = [tmp.buttonContainer];
-  const obj51 = {
-    children: closure_13.map((variant) => {
-      obj = { style: items, children: outer1_9(outer1_19, obj) };
-      items = [, ];
-      ({ buttonContainer: arr[0], overlayButtonContainer: arr[1] } = closure_0);
-      obj = { variant };
-      return outer1_9(outer1_5, obj, variant);
-    })
-  };
-  obj55.children = callback2(ExampleImageButton, { image: importDefault(12239), label: "Telegram" });
+  obj55[1] = callback2(ExampleImageButton, { image: importDefault(12263), label: "Telegram" });
   const items22 = [callback2(closure_5, obj55), , ];
-  const obj57 = { style: items23 };
+  const obj57 = { style: items23, children: null };
   items23 = [tmp.buttonContainer];
-  const obj56 = { image: importDefault(12239), label: "Telegram" };
-  obj57.children = callback2(ExampleImageButton, { image: importDefault(12241), label: "WhatsApp" });
+  const obj56 = { image: importDefault(12263), label: "Telegram" };
+  obj57[1] = callback2(ExampleImageButton, { image: importDefault(12265), label: "WhatsApp" });
   items22[1] = callback2(closure_5, obj57);
-  const obj59 = { style: items24 };
+  const obj59 = { style: items24, children: null };
   items24 = [tmp.buttonContainer];
-  const obj58 = { image: importDefault(12241), label: "WhatsApp" };
-  obj59.children = callback2(ExampleImageButton, { image: importDefault(12240), label: "Twitter" });
+  const obj58 = { image: importDefault(12265), label: "WhatsApp" };
+  obj59[1] = callback2(ExampleImageButton, { image: importDefault(12264), label: "Twitter" });
   items22[2] = callback2(closure_5, obj59);
-  obj54.children = items22;
+  obj54[0] = items22;
   items20[1] = callback3(closure_5, obj54);
-  obj52.children = items20;
-  items1[11] = callback3(require(4576) /* Stack */.Stack, obj52);
-  const obj61 = { spacing: 24 };
-  const obj62 = { style: tmp.container };
-  const items25 = [callback2(require(4161) /* Text */.Text, { variant: "heading-lg/bold", children: "IconButton with a label" }), callback2(require(4161) /* Text */.Text, { variant: "text-sm/normal", children: "Icon buttons with a label require a different combination of props and will only appear in the 'lg' size." }), callback2(require(4161) /* Text */.Text, { variant: "text-sm/normal", children: "It is highly recommended that a list of these buttons appear wrapped in a ScrollView, so that they will horizontally scroll when there are many buttons, when the text is longer through internationalization, or the text is larger through OS font size settings." })];
-  obj62.children = items25;
-  const items26 = [callback3(require(4576) /* Stack */.Stack, obj62), , ];
-  const obj63 = { horizontal: true, contentContainerStyle: { minWidth: "100%" } };
-  const obj64 = { direction: "horizontal", justify: "center", style: tmp.buttonContainer, children: closure_12.map((variant) => outer1_9(outer1_19, { variant, showLabel: true }, variant)) };
-  obj63.children = callback2(require(4576) /* Stack */.Stack, obj64);
+  obj52[0] = items20;
+  items1[11] = callback3(require(4598) /* Stack */.Stack, obj52);
+  const obj61 = { spacing: 24, children: null };
+  const obj62 = { style: tmp.container, children: null };
+  const items25 = [callback2(require(4185) /* Text */.Text, { variant: "heading-lg/bold", children: "IconButton with a label" }), callback2(require(4185) /* Text */.Text, { variant: "text-sm/normal", children: "Icon buttons with a label require a different combination of props and will only appear in the 'lg' size." }), callback2(require(4185) /* Text */.Text, { variant: "text-sm/normal", children: "It is highly recommended that a list of these buttons appear wrapped in a ScrollView, so that they will horizontally scroll when there are many buttons, when the text is longer through internationalization, or the text is larger through OS font size settings." })];
+  obj62[1] = items25;
+  const items26 = [callback3(require(4598) /* Stack */.Stack, obj62), , ];
+  const obj63 = { horizontal: true, contentContainerStyle: { minWidth: "100%" }, children: null };
+  const obj64 = { direction: "horizontal", justify: "center", style: tmp.buttonContainer, children: null };
+  obj64[3] = closure_12.map((variant) => callback2(closure_18, { variant, showLabel: true }, variant));
+  obj63[2] = callback2(require(4598) /* Stack */.Stack, obj64);
   items26[1] = callback2(closure_6, obj63);
-  const obj65 = { horizontal: true, contentContainerStyle: { minWidth: "100%" } };
-  const obj66 = { direction: "horizontal", justify: "center", style: tmp.buttonContainer };
-  const obj67 = {
-    variant: "secondary",
-    icon: importDefault(8988),
-    label: "Supercalifragilisticexpialidocious",
-    grow: true,
-    onPress() {
+  const obj65 = { horizontal: true, contentContainerStyle: { minWidth: "100%" }, children: null };
+  const obj66 = { direction: "horizontal", justify: "center", style: tmp.buttonContainer, children: null };
+  const obj67 = { variant: "secondary", icon: null, label: "Supercalifragilisticexpialidocious", grow: true, onPress: null };
+  obj67[1] = importDefault(9012);
+  obj67[4] = function onPress() {
 
-    }
   };
-  const items27 = [callback2(require(6661) /* IconButton */.IconButton, obj67), , ];
-  const obj68 = {
-    variant: "secondary",
-    icon: importDefault(8988),
-    label: "Supercalifragilisticexpialidocious",
-    grow: true,
-    onPress() {
+  const items27 = [callback2(require(6682) /* IconButton */.IconButton, obj67), , ];
+  const obj68 = { variant: "secondary", icon: null, label: "Supercalifragilisticexpialidocious", grow: true, onPress: null };
+  obj68[1] = importDefault(9012);
+  obj68[4] = function onPress() {
 
-    }
   };
-  items27[1] = callback2(require(6661) /* IconButton */.IconButton, obj68);
-  const obj69 = {
-    variant: "secondary",
-    icon: importDefault(8988),
-    label: "Supercalifragilisticexpialidocious",
-    grow: true,
-    onPress() {
+  items27[1] = callback2(require(6682) /* IconButton */.IconButton, obj68);
+  const obj69 = { variant: "secondary", icon: null, label: "Supercalifragilisticexpialidocious", grow: true, onPress: null };
+  obj69[1] = importDefault(9012);
+  obj69[4] = function onPress() {
 
-    }
   };
-  items27[2] = callback2(require(6661) /* IconButton */.IconButton, obj69);
-  obj66.children = items27;
-  obj65.children = callback3(require(4576) /* Stack */.Stack, obj66);
+  items27[2] = callback2(require(6682) /* IconButton */.IconButton, obj69);
+  obj66[3] = items27;
+  obj65[2] = callback3(require(4598) /* Stack */.Stack, obj66);
   items26[2] = callback2(closure_6, obj65);
-  obj61.children = items26;
-  items1[12] = callback3(require(4576) /* Stack */.Stack, obj61);
-  const obj70 = { spacing: 24 };
-  const obj71 = { style: tmp.container, children: callback2(require(4161) /* Text */.Text, { variant: "heading-lg/bold", children: "ImageButton with a label" }) };
-  const items28 = [callback2(require(4576) /* Stack */.Stack, obj71), , ];
-  const obj72 = { horizontal: true, contentContainerStyle: { minWidth: "100%" } };
-  const obj73 = { direction: "horizontal", justify: "center", style: tmp.buttonContainer };
-  const obj74 = { image: importDefault(12238), label: "Label", showLabel: true };
+  obj61[1] = items26;
+  items1[12] = callback3(require(4598) /* Stack */.Stack, obj61);
+  const obj70 = { spacing: 24, children: null };
+  const obj71 = { style: tmp.container, children: null };
+  obj71[1] = callback2(require(4185) /* Text */.Text, { variant: "heading-lg/bold", children: "ImageButton with a label" });
+  const items28 = [callback2(require(4598) /* Stack */.Stack, obj71), , ];
+  const obj72 = { horizontal: true, contentContainerStyle: { minWidth: "100%" }, children: null };
+  const obj73 = { direction: "horizontal", justify: "center", style: tmp.buttonContainer, children: null };
+  const obj74 = { image: null, label: "Label", showLabel: true };
+  obj74[0] = importDefault(12262);
   const items29 = [callback2(ExampleImageButton, obj74), , ];
-  const obj75 = { image: importDefault(12234), label: "Label", showLabel: true };
-  items29[1] = callback2(ExampleImageButton, obj75);
-  const obj76 = { image: importDefault(12237), label: "Label", showLabel: true };
-  items29[2] = callback2(ExampleImageButton, obj76);
-  obj73.children = items29;
-  obj72.children = callback3(require(4576) /* Stack */.Stack, obj73);
+  const obj60 = { image: importDefault(12264), label: "Twitter" };
+  items29[1] = callback2(ExampleImageButton, { image: importDefault(12258), label: "Label", showLabel: true });
+  const obj75 = { image: importDefault(12258), label: "Label", showLabel: true };
+  items29[2] = callback2(ExampleImageButton, { image: importDefault(12261), label: "Label", showLabel: true });
+  obj73[3] = items29;
+  obj72[2] = callback3(require(4598) /* Stack */.Stack, obj73);
   items28[1] = callback2(closure_6, obj72);
-  const obj77 = { horizontal: true, contentContainerStyle: { minWidth: "100%" } };
-  const obj78 = { direction: "horizontal", justify: "center", style: tmp.buttonContainer };
-  const obj79 = { image: importDefault(12239), label: "Supercalifragilisticexpialidocious", showLabel: true };
+  const obj77 = { horizontal: true, contentContainerStyle: { minWidth: "100%" }, children: null };
+  const obj78 = { direction: "horizontal", justify: "center", style: tmp.buttonContainer, children: null };
+  const obj79 = { image: null, label: "Supercalifragilisticexpialidocious", showLabel: true };
+  obj79[0] = importDefault(12263);
   const items30 = [callback2(ExampleImageButton, obj79), , ];
-  const obj80 = { image: importDefault(12241), label: "Supercalifragilisticexpialidocious", showLabel: true };
-  items30[1] = callback2(ExampleImageButton, obj80);
-  const obj81 = { image: importDefault(12240), label: "Supercalifragilisticexpialidocious", showLabel: true };
-  items30[2] = callback2(ExampleImageButton, obj81);
-  obj78.children = items30;
-  obj77.children = callback3(require(4576) /* Stack */.Stack, obj78);
+  const obj76 = { image: importDefault(12261), label: "Label", showLabel: true };
+  items30[1] = callback2(ExampleImageButton, { image: importDefault(12265), label: "Supercalifragilisticexpialidocious", showLabel: true });
+  const obj80 = { image: importDefault(12265), label: "Supercalifragilisticexpialidocious", showLabel: true };
+  items30[2] = callback2(ExampleImageButton, { image: importDefault(12264), label: "Supercalifragilisticexpialidocious", showLabel: true });
+  obj78[3] = items30;
+  obj77[2] = callback3(require(4598) /* Stack */.Stack, obj78);
   items28[2] = callback2(closure_6, obj77);
-  obj70.children = items28;
-  items1[13] = callback3(require(4576) /* Stack */.Stack, obj70);
-  const obj82 = { spacing: 24 };
-  const obj83 = { style: tmp.container, children: callback2(require(4161) /* Text */.Text, { variant: "heading-lg/bold", children: "Mixing buttons" }) };
-  const items31 = [callback2(require(4576) /* Stack */.Stack, obj83), ];
-  const obj84 = { direction: "horizontal", style: tmp.container };
+  obj70[1] = items28;
+  items1[13] = callback3(require(4598) /* Stack */.Stack, obj70);
+  const obj82 = { spacing: 24, children: null };
+  const obj83 = { style: tmp.container, children: null };
+  obj83[1] = callback2(require(4185) /* Text */.Text, { variant: "heading-lg/bold", children: "Mixing buttons" });
+  const items31 = [callback2(require(4598) /* Stack */.Stack, obj83), ];
+  const obj84 = { direction: "horizontal", style: tmp.container, children: null };
   const items32 = [callback2(ExampleButton, { variant: "secondary", text: "Search", grow: true }), callback2(ExampleIconButton, { variant: "secondary" })];
-  obj84.children = items32;
-  items31[1] = callback3(require(5000) /* ButtonGroup */.ButtonGroup, obj84);
-  obj82.children = items31;
-  items1[14] = callback3(require(4576) /* Stack */.Stack, obj82);
-  const obj85 = {};
-  const obj86 = { style: tmp.container };
-  const items33 = [callback2(require(4161) /* Text */.Text, { variant: "heading-lg/bold", children: "Light Profile Themes" }), callback2(require(4161) /* Text */.Text, { variant: "text-sm/normal", children: "All buttons as they appear on a light profile theme" })];
-  obj86.children = items33;
-  const items34 = [callback3(require(4576) /* Stack */.Stack, obj86), ];
-  const obj87 = { theme: "light" };
-  let obj91 = require(665) /* pad2 */;
-  obj87.primaryColor = obj91.hex2int("#ffae70");
-  let obj92 = require(665) /* pad2 */;
-  obj87.secondaryColor = obj92.hex2int("#cc2300");
-  const obj88 = { style: { padding: 16 }, start: { x: 0, y: 0 }, end: { x: 0, y: 1 }, colors: ["#ffae70", "#cc2300"] };
-  const obj60 = { image: importDefault(12240), label: "Twitter" };
-  const obj89 = {};
-  const obj90 = { spacing: 16 };
-  const items35 = [closure_12.map((variant) => outer1_9(outer1_18, { variant }, variant)), closure_14.map((variant) => outer1_9(outer1_18, { variant }, variant))];
-  obj90.children = items35;
-  obj89.children = callback3(require(4576) /* Stack */.Stack, obj90);
-  obj88.children = callback2(require(5200) /* getCardBackgroundToken */.Card, obj89);
-  obj87.children = callback2(importDefault(4589), obj88);
-  items34[1] = callback2(require(3877) /* ManaContext */.ThemeContextProvider, obj87);
-  obj85.children = items34;
-  items1[15] = callback3(require(4576) /* Stack */.Stack, obj85);
-  obj91 = {};
-  obj92 = { style: tmp.container };
-  const items36 = [callback2(require(4161) /* Text */.Text, { variant: "heading-lg/bold", children: "Dark Profile Themes" }), callback2(require(4161) /* Text */.Text, { variant: "text-sm/normal", children: "All buttons as they appear on a dark profile theme" })];
-  obj92.children = items36;
-  const items37 = [callback3(require(4576) /* Stack */.Stack, obj92), ];
-  const obj93 = { theme: "dark" };
-  obj = require(665) /* pad2 */;
-  obj93.primaryColor = obj.hex2int("#490000");
-  obj = require(665) /* pad2 */;
-  obj93.secondaryColor = obj.hex2int("#cc2300");
-  obj = { style: { padding: 16 }, start: { x: 0, y: 0 }, end: { x: 0, y: 1 }, colors: ["#490000", "#cc2300"] };
-  const tmp3 = importDefault(4589);
-  obj = {};
-  obj = { spacing: 16 };
-  const items38 = [closure_12.map((variant) => outer1_9(outer1_18, { variant }, variant)), closure_14.map((variant) => outer1_9(outer1_18, { variant }, variant))];
-  obj.children = items38;
-  obj.children = callback3(require(4576) /* Stack */.Stack, obj);
-  obj.children = callback2(require(5200) /* getCardBackgroundToken */.Card, obj);
-  obj93.children = callback2(importDefault(4589), obj);
-  items37[1] = callback2(require(3877) /* ManaContext */.ThemeContextProvider, obj93);
-  obj91.children = items37;
-  items1[16] = callback3(require(4576) /* Stack */.Stack, obj91);
-  obj = {};
-  obj = { style: tmp.container };
-  const items39 = [callback2(require(4161) /* Text */.Text, { variant: "heading-lg/bold", children: "Light Client Theme" }), callback2(require(4161) /* Text */.Text, { variant: "text-sm/normal", children: "All buttons as they appear on a light client theme" })];
-  obj.children = items39;
-  const items40 = [callback3(require(4576) /* Stack */.Stack, obj), ];
-  obj = { theme: 57.theme, gradient: 57 };
-  obj = require(3877) /* ManaContext */;
-  obj.flags = obj.setThemeFlag(0, require(3877) /* ManaContext */.ThemeContextFlags.MOBILE_LIGHT_GRADIENT_THEME_ENABLED);
-  obj = { style: { position: "relative", padding: 16 } };
-  obj = { absolute: true, gradient: 57 };
-  const items41 = [callback2(require(4697) /* getThemeMixColor */.Gradient, obj), ];
-  obj = {};
+  obj84[2] = items32;
+  items31[1] = callback3(require(5022) /* ButtonGroup */.ButtonGroup, obj84);
+  obj82[1] = items31;
+  items1[14] = callback3(require(4598) /* Stack */.Stack, obj82);
+  const obj85 = { children: null };
+  const obj86 = { style: tmp.container, children: null };
+  const items33 = [callback2(require(4185) /* Text */.Text, { variant: "heading-lg/bold", children: "Light Profile Themes" }), callback2(require(4185) /* Text */.Text, { variant: "text-sm/normal", children: "All buttons as they appear on a light profile theme" })];
+  obj86[1] = items33;
+  const items34 = [callback3(require(4598) /* Stack */.Stack, obj86), ];
+  const obj87 = { theme: "light", primaryColor: null, secondaryColor: null, children: null };
+  let obj91 = require(688) /* int2hslRaw */;
+  obj87[1] = obj91.hex2int("#ffae70");
+  let obj92 = require(688) /* int2hslRaw */;
+  obj87[2] = obj92.hex2int("#cc2300");
+  const obj88 = { style: { padding: 16 }, start: { x: 0, y: 0 }, end: { x: 0, y: 1 }, colors: ["#ffae70", "#cc2300"], children: null };
+  const obj81 = { image: importDefault(12264), label: "Supercalifragilisticexpialidocious", showLabel: true };
+  const obj89 = { children: null };
+  const obj90 = { spacing: 16, children: null };
+  const items35 = [closure_12.map((variant) => callback2(closure_17, { variant }, variant)), closure_14.map((variant) => callback2(closure_17, { variant }, variant))];
+  obj90[1] = items35;
+  obj89[0] = callback3(require(4598) /* Stack */.Stack, obj90);
+  obj88[4] = callback2(require(5222) /* PressableCard */.Card, obj89);
+  obj87[3] = callback2(importDefault(4611), obj88);
+  items34[1] = callback2(require(3901) /* ManaContext */.ThemeContextProvider, obj87);
+  obj85[0] = items34;
+  items1[15] = callback3(require(4598) /* Stack */.Stack, obj85);
+  obj91 = { children: null };
+  obj92 = { style: tmp.container, children: null };
+  const items36 = [callback2(require(4185) /* Text */.Text, { variant: "heading-lg/bold", children: "Dark Profile Themes" }), callback2(require(4185) /* Text */.Text, { variant: "text-sm/normal", children: "All buttons as they appear on a dark profile theme" })];
+  obj92[1] = items36;
+  const items37 = [callback3(require(4598) /* Stack */.Stack, obj92), ];
+  const obj93 = { theme: "dark", primaryColor: null, secondaryColor: null, children: null };
+  obj = require(688) /* int2hslRaw */;
+  obj93[1] = obj.hex2int("#490000");
+  obj = require(688) /* int2hslRaw */;
+  obj93[2] = obj.hex2int("#cc2300");
+  obj = { style: { padding: 16 }, start: { x: 0, y: 0 }, end: { x: 0, y: 1 }, colors: ["#490000", "#cc2300"], children: null };
+  const tmp3 = importDefault(4611);
+  obj = { children: null };
+  obj = { spacing: 16, children: null };
+  const items38 = [closure_12.map((variant) => callback2(closure_17, { variant }, variant)), closure_14.map((variant) => callback2(closure_17, { variant }, variant))];
+  obj[1] = items38;
+  obj[0] = callback3(require(4598) /* Stack */.Stack, obj);
+  obj[4] = callback2(require(5222) /* PressableCard */.Card, obj);
+  obj93[3] = callback2(importDefault(4611), obj);
+  items37[1] = callback2(require(3901) /* ManaContext */.ThemeContextProvider, obj93);
+  obj91[0] = items37;
+  items1[16] = callback3(require(4598) /* Stack */.Stack, obj91);
+  obj = { children: null };
+  obj = { style: tmp.container, children: null };
+  const items39 = [callback2(require(4185) /* Text */.Text, { variant: "heading-lg/bold", children: "Light Client Theme" }), callback2(require(4185) /* Text */.Text, { variant: "text-sm/normal", children: "All buttons as they appear on a light client theme" })];
+  obj[1] = items39;
+  const items40 = [callback3(require(4598) /* Stack */.Stack, obj), ];
+  obj = { theme: 32.theme, gradient: 32, flags: null, children: null };
+  obj = require(3901) /* ManaContext */;
+  obj[2] = obj.setThemeFlag(0, require(3901) /* ManaContext */.ThemeContextFlags.MOBILE_LIGHT_GRADIENT_THEME_ENABLED);
+  obj = { style: { position: "relative", padding: 16 }, children: null };
+  obj = { absolute: true, gradient: 32 };
+  const items41 = [callback2(require(4719) /* getMixedGradientColor */.Gradient, obj), ];
+  obj = { style: null, children: null };
   obj = { backgroundColor: null, padding: 16, borderRadius: 16 };
-  obj = require(3877) /* ManaContext */;
-  obj.backgroundColor = obj.setColorOpacity("white", 0.7);
-  obj.style = obj;
-  obj = { spacing: 16 };
-  const items42 = [closure_12.map((variant) => outer1_9(outer1_18, { variant }, variant)), closure_14.map((variant) => outer1_9(outer1_18, { variant }, variant))];
-  obj.children = items42;
-  obj.children = callback3(require(4576) /* Stack */.Stack, obj);
+  obj = require(3901) /* ManaContext */;
+  obj[0] = obj.setColorOpacity("white", 0.7);
+  obj[0] = obj;
+  obj = { spacing: 16, children: null };
+  const items42 = [closure_12.map((variant) => callback2(closure_17, { variant }, variant)), closure_14.map((variant) => callback2(closure_17, { variant }, variant))];
+  obj[1] = items42;
+  obj[1] = callback3(require(4598) /* Stack */.Stack, obj);
   items41[1] = callback2(closure_5, obj);
-  obj.children = items41;
-  obj.children = callback3(closure_5, obj);
-  items40[1] = callback2(require(3877) /* ManaContext */.ThemeContextProvider, obj);
-  obj.children = items40;
-  items1[17] = callback3(require(4576) /* Stack */.Stack, obj);
-  obj = {};
-  obj = { style: tmp.container };
-  const items43 = [callback2(require(4161) /* Text */.Text, { variant: "heading-lg/bold", children: "Dark Client Theme" }), callback2(require(4161) /* Text */.Text, { variant: "text-sm/normal", children: "All buttons as they appear on a dark client theme" })];
-  obj.children = items43;
-  const items44 = [callback3(require(4576) /* Stack */.Stack, obj), ];
-  obj = { theme: 57.theme, gradient: 57 };
-  obj = require(3877) /* ManaContext */;
-  obj.flags = obj.setThemeFlag(0, require(3877) /* ManaContext */.ThemeContextFlags.MOBILE_DARK_GRADIENT_THEME_ENABLED);
-  obj = { style: { position: "relative", padding: 16 } };
-  obj = { absolute: true, gradient: 57 };
-  const items45 = [callback2(require(4697) /* getThemeMixColor */.Gradient, obj), ];
-  obj = {};
+  obj[1] = items41;
+  obj[3] = callback3(closure_5, obj);
+  items40[1] = callback2(require(3901) /* ManaContext */.ThemeContextProvider, obj);
+  obj[0] = items40;
+  items1[17] = callback3(require(4598) /* Stack */.Stack, obj);
+  obj = { children: null };
+  obj = { style: tmp.container, children: null };
+  const items43 = [callback2(require(4185) /* Text */.Text, { variant: "heading-lg/bold", children: "Dark Client Theme" }), callback2(require(4185) /* Text */.Text, { variant: "text-sm/normal", children: "All buttons as they appear on a dark client theme" })];
+  obj[1] = items43;
+  const items44 = [callback3(require(4598) /* Stack */.Stack, obj), ];
+  obj = { theme: 32.theme, gradient: 32, flags: null, children: null };
+  obj = require(3901) /* ManaContext */;
+  obj[2] = obj.setThemeFlag(0, require(3901) /* ManaContext */.ThemeContextFlags.MOBILE_DARK_GRADIENT_THEME_ENABLED);
+  obj = { style: { position: "relative", padding: 16 }, children: null };
+  obj = { absolute: true, gradient: 32 };
+  const items45 = [callback2(require(4719) /* getMixedGradientColor */.Gradient, obj), ];
+  obj = { style: null, children: null };
   obj = { backgroundColor: null, padding: 16, borderRadius: 16 };
-  obj = require(3877) /* ManaContext */;
-  obj.backgroundColor = obj.setColorOpacity("black", 0.7);
-  obj.style = obj;
-  obj = { spacing: 16 };
-  const items46 = [closure_12.map((variant) => outer1_9(outer1_18, { variant }, variant)), closure_14.map((variant) => outer1_9(outer1_18, { variant }, variant))];
-  obj.children = items46;
-  obj.children = callback3(require(4576) /* Stack */.Stack, obj);
+  obj = require(3901) /* ManaContext */;
+  obj[0] = obj.setColorOpacity("black", 0.7);
+  obj[0] = obj;
+  obj = { spacing: 16, children: null };
+  const items46 = [closure_12.map((variant) => callback2(closure_17, { variant }, variant)), closure_14.map((variant) => callback2(closure_17, { variant }, variant))];
+  obj[1] = items46;
+  obj[1] = callback3(require(4598) /* Stack */.Stack, obj);
   items45[1] = callback2(closure_5, obj);
-  obj.children = items45;
-  obj.children = callback3(closure_5, obj);
-  items44[1] = callback2(require(3877) /* ManaContext */.ThemeContextProvider, obj);
-  obj.children = items44;
-  items1[18] = callback3(require(4576) /* Stack */.Stack, obj);
-  obj = {};
-  obj = { style: tmp.container };
-  const items47 = [callback2(require(4161) /* Text */.Text, { variant: "heading-lg/bold", children: "Floating Action Button" }), callback2(require(4161) /* Text */.Text, { variant: "text-sm/normal", children: "An ever-present icon button, giving the most important call to action in a compact way." })];
-  obj.children = items47;
-  const items48 = [callback3(require(4576) /* Stack */.Stack, obj), callback2(closure_5, { style: { padding: 48 } })];
-  obj.children = items48;
-  items1[19] = callback3(require(4576) /* Stack */.Stack, obj);
-  obj2.children = items1;
-  obj1.children = callback3(require(4576) /* Stack */.Stack, obj2);
+  obj[1] = items45;
+  obj[3] = callback3(closure_5, obj);
+  items44[1] = callback2(require(3901) /* ManaContext */.ThemeContextProvider, obj);
+  obj[0] = items44;
+  items1[18] = callback3(require(4598) /* Stack */.Stack, obj);
+  obj = { children: null };
+  obj = { style: tmp.container, children: null };
+  const items47 = [callback2(require(4185) /* Text */.Text, { variant: "heading-lg/bold", children: "Floating Action Button" }), callback2(require(4185) /* Text */.Text, { variant: "text-sm/normal", children: "An ever-present icon button, giving the most important call to action in a compact way." })];
+  obj[1] = items47;
+  const items48 = [callback3(require(4598) /* Stack */.Stack, obj), callback2(closure_5, { style: { padding: 48 } })];
+  obj[0] = items48;
+  items1[19] = callback3(require(4598) /* Stack */.Stack, obj);
+  obj2[1] = items1;
+  obj1[0] = callback3(require(4598) /* Stack */.Stack, obj2);
   const items49 = [callback2(closure_6, obj1), ];
-  obj = {
-    icon: importDefault(8988),
-    onPress() {
+  obj = { icon: null, onPress: null, positionBottom: 32, accessibilityLabel: "Floating Action Button" };
+  obj[0] = importDefault(9012);
+  obj[1] = function onPress() {
 
-    },
-    positionBottom: 32,
-    accessibilityLabel: "Floating Action Button"
   };
-  items49[1] = callback2(require(8219) /* styles */.FloatingActionButton, obj);
-  obj.children = items49;
+  items49[1] = callback2(require(8243) /* styles */.FloatingActionButton, obj);
+  obj[0] = items49;
   return callback3(closure_11, obj);
 };

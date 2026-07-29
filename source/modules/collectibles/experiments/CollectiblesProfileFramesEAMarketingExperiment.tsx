@@ -1,14 +1,13 @@
-// Module ID: 15739
-// Function ID: 121246
+// Module ID: 15775
+// Function ID: 15776
 // Name: apexExperiment
-// Dependencies: [1428, 2]
+// Dependencies: [1452, 2]
 // Exports: getIsProfileFramesEAMarketingEnabled, useIsProfileFramesEAMarketingEnabled
 
-// Module 15739 (apexExperiment)
+// Module 15775 (apexExperiment)
 import ApexExperiment from "ApexExperiment";
 
-const obj = { name: "2026-04-profile-frames-ea-marketing", kind: "user", defaultConfig: { enabled: false }, variations: { [0]: { enabled: false }, [1]: { enabled: true } } };
-const apexExperiment = ApexExperiment.createApexExperiment(obj);
+const apexExperiment = ApexExperiment.createApexExperiment({ name: "2026-04-profile-frames-ea-marketing", kind: "user", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true } } });
 const result = require("set").fileFinishedImporting("modules/collectibles/experiments/CollectiblesProfileFramesEAMarketingExperiment.tsx");
 
 export default apexExperiment;

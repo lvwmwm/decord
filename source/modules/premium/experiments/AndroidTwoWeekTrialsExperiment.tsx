@@ -1,14 +1,15 @@
-// Module ID: 6225
-// Function ID: 55670
+// Module ID: 6245
+// Function ID: 6246
 // Name: apexExperiment
-// Dependencies: [1428, 2]
+// Dependencies: [1452, 2]
 // Exports: isAndroidTwoWeekTrialsExperimentEnabled, isAndroidTwoWeekTrialsTrialCTAEnabled
 
-// Module 6225 (apexExperiment)
+// Module 6245 (apexExperiment)
 import ApexExperiment from "ApexExperiment";
 
-const obj = { name: "2026-06-android-two-week-trials", kind: "user", defaultConfig: { enabled: false, trialCTAEnabled: false }, variations: { [1]: { enabled: true, trialCTAEnabled: true }, [2]: { enabled: true, trialCTAEnabled: false } } };
-const apexExperiment = ApexExperiment.createApexExperiment(obj);
+const obj = { 1: null, 2: { enabled: true, trialCTAEnabled: true } };
+obj[2] = { enabled: true, trialCTAEnabled: false };
+const apexExperiment = ApexExperiment.createApexExperiment({ name: "2026-06-android-two-week-trials", kind: "user", defaultConfig: { enabled: false, trialCTAEnabled: false }, variations: obj });
 const result = require("set").fileFinishedImporting("modules/premium/experiments/AndroidTwoWeekTrialsExperiment.tsx");
 
 export const AndroidTwoWeekTrialsExperiment = apexExperiment;

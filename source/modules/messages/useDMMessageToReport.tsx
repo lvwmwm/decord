@@ -1,41 +1,40 @@
-// Module ID: 11662
-// Function ID: 90404
+// Module ID: 11686
+// Function ID: 11687
 // Name: useDMMessageToReport
-// Dependencies: [11663, 11518, 11664, 2]
+// Dependencies: [11687, 11542, 11688, 2]
 // Exports: useDMMessageToReport
 
-// Module 11662 (useDMMessageToReport)
-const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/messages/useDMMessageToReport.tsx");
+// Module 11686 (useDMMessageToReport)
+const result = require("loadMessageRequestData").fileFinishedImporting("modules/messages/useDMMessageToReport.tsx");
 
 export const useDMMessageToReport = function useDMMessageToReport(channel, id, arg2) {
   let error;
   let loaded;
-  let isRelationshipTypeSpamReportable = arg2;
-  let obj = require(11663) /* useIsRelationshipTypeSpamReportable */;
+  let isReportable = arg2;
   if (!arg2) {
-    isRelationshipTypeSpamReportable = obj.useIsRelationshipTypeSpamReportable(id);
+    isReportable = obj.useIsRelationshipTypeSpamReportable(id);
   }
-  const longestChannelMessageBeforeReply = require(11518) /* _createForOfIteratorHelperLoose */.useLongestChannelMessageBeforeReply(channel.id, id);
-  const obj2 = require(11518) /* _createForOfIteratorHelperLoose */;
-  obj = { enabled: isRelationshipTypeSpamReportable };
-  const messageRequestPreview = require(11664) /* _createForOfIteratorHelperLoose */.useMessageRequestPreview(channel, obj);
-  const message = messageRequestPreview.message;
-  let tmp4 = longestChannelMessageBeforeReply;
+  let tmp2Result = tmp2(11542);
+  const longestChannelMessageBeforeReply = tmp2Result.useLongestChannelMessageBeforeReply(channel.id, id);
+  tmp2Result = tmp2(11688);
+  const messageRequestPreview = tmp2Result.useMessageRequestPreview(channel, { enabled: isReportable });
+  let message = messageRequestPreview.message;
+  message = longestChannelMessageBeforeReply;
   ({ loaded, error } = messageRequestPreview);
-  if (null == longestChannelMessageBeforeReply) {
+  if (longestChannelMessageBeforeReply == null) {
     id = undefined;
-    if (null != message) {
+    if (message != null) {
       const author = message.author;
-      if (null != author) {
+      if (author != null) {
         id = author.id;
       }
     }
-    let tmp6 = null;
+    let tmp8 = null;
     if (id === id) {
-      tmp6 = message;
+      tmp8 = message;
     }
-    tmp4 = tmp6;
+    message = tmp8;
   }
-  obj = { message: tmp4, isReportable: isRelationshipTypeSpamReportable, isLoaded: null != tmp4 || loaded || error };
-  return obj;
+  const isLoaded = null != message || loaded || error;
+  return { message, isReportable, isLoaded };
 };

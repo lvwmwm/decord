@@ -1,35 +1,35 @@
-// Module ID: 11041
-// Function ID: 85651
+// Module ID: 11065
+// Function ID: 11066
 // Name: logMediaAttachmentPlaybackStarted
-// Dependencies: [653, 675, 2]
+// Dependencies: [676, 698, 2]
 // Exports: logMediaAttachmentPlaybackEnded, logMediaAttachmentPlaybackStarted
 
-// Module 11041 (logMediaAttachmentPlaybackStarted)
+// Module 11065 (logMediaAttachmentPlaybackStarted)
 import { AnalyticEvents } from "ME";
 
 const result = require("set").fileFinishedImporting("modules/media/MediaAnalytics.tsx");
 
 export const logMediaAttachmentPlaybackStarted = function logMediaAttachmentPlaybackStarted(messageChannel, found, totalDurationSecs, messageId, startDurationSecs, id) {
-  let obj = importDefault(675);
-  obj = { guild_id: messageChannel.guild_id, channel_id: messageChannel.id, channel_type: messageChannel.type, type: found.content_type, flags: found.flags, size: found.size, duration: totalDurationSecs, message_id: messageId, attachment_id: found.id };
-  let tmp = startDurationSecs;
-  if (null != totalDurationSecs) {
-    tmp = totalDurationSecs;
+  let tmp = totalDurationSecs;
+  let obj = importDefault(698);
+  obj = { guild_id: messageChannel.guild_id, channel_id: messageChannel.id, channel_type: messageChannel.type, type: found.content_type, flags: found.flags, size: found.size, duration: totalDurationSecs, message_id: messageId, attachment_id: found.id, start_duration_secs: null, sender_user_id: null };
+  if (totalDurationSecs == null) {
+    tmp = startDurationSecs;
   }
-  obj.start_duration_secs = Math.min(tmp, startDurationSecs);
-  obj.sender_user_id = id;
+  obj[9] = Math.min(tmp, startDurationSecs);
+  obj[10] = id;
   obj.track(AnalyticEvents.MEDIA_ATTACHMENT_PLAYBACK_STARTED, obj);
 };
 export const logMediaAttachmentPlaybackEnded = function logMediaAttachmentPlaybackEnded(messageId, totalDurationSecs, endDurationSecs, id, durationListeningSecs, found) {
-  let obj = importDefault(675);
-  obj = { message_id: messageId, total_duration_secs: totalDurationSecs };
-  let tmp = endDurationSecs;
-  if (null != totalDurationSecs) {
-    tmp = totalDurationSecs;
+  let tmp = totalDurationSecs;
+  let obj = importDefault(698);
+  obj = { message_id: messageId, total_duration_secs: totalDurationSecs, end_duration_secs: null, sender_user_id: null, duration_listening_secs: null, type: null };
+  if (totalDurationSecs == null) {
+    tmp = endDurationSecs;
   }
-  obj.end_duration_secs = Math.min(tmp, endDurationSecs);
-  obj.sender_user_id = id;
-  obj.duration_listening_secs = durationListeningSecs;
-  obj.type = found.content_type;
+  obj[2] = Math.min(tmp, endDurationSecs);
+  obj[3] = id;
+  obj[4] = durationListeningSecs;
+  obj[5] = found.content_type;
   obj.track(AnalyticEvents.MEDIA_ATTACHMENT_PLAYBACK_ENDED, obj);
 };

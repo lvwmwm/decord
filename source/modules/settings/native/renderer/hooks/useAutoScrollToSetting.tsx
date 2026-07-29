@@ -1,11 +1,11 @@
-// Module ID: 14683
-// Function ID: 111758
+// Module ID: 14708
+// Function ID: 14709
 // Name: useAutoScrollToSearchResultSetting
-// Dependencies: [31, 13659, 10100, 13664, 13662, 1456, 2]
+// Dependencies: [19, 13680, 10121, 13685, 13683, 1480, 2]
 // Exports: useAutoScrollToSearchResultSetting
 
-// Module 14683 (useAutoScrollToSearchResultSetting)
-import result from "result";
+// Module 14708 (useAutoScrollToSearchResultSetting)
+import noop from "noop";
 import zustandStore from "zustandStore";
 import { NodeType } from "GUILD_SELECT_ALL_SERVERS_OPTION_ID";
 
@@ -16,44 +16,42 @@ export const useAutoScrollToSearchResultSetting = function useAutoScrollToSearch
   const _require = ref;
   const dependencyMap = memo;
   let current = ref.useField("selected");
-  const navigation = _require(1456).useNavigation();
+  const navigation = _require(1480).useNavigation();
   ref = navigation.useRef(scrollTarget);
-  if (null == current) {
+  if (current == null) {
     current = ref.current;
   }
   let flag = false;
   if (null != current) {
     flag = false;
-    if (_require(13664).SETTING_RENDERER_CONFIG[current].type !== current.ROUTE) {
-      let initialScrollIndex = _require(13662).getInitialScrollIndex(current, memo);
-      let tmp9 = 0 !== initialScrollIndex;
-      if (tmp9) {
-        tmp9 = 1 !== initialScrollIndex;
+    if (tmp(13685).SETTING_RENDERER_CONFIG[current].type !== current.ROUTE) {
+      let initialScrollIndex = tmp(13683).getInitialScrollIndex(current, memo);
+      let tmp7 = 0 !== initialScrollIndex;
+      if (tmp7) {
+        tmp7 = 1 !== initialScrollIndex;
       }
-      flag = tmp9;
-      let obj2 = _require(13662);
+      flag = tmp7;
+      const tmpResult = tmp(13683);
     }
   }
   const items = [memo, flag, ref, navigation, current];
   const effect = navigation.useEffect(() => {
     let closure_0 = navigation.addListener("transitionEnd", () => {
-      if (outer1_5) {
-        let obj = ref(table[4]);
-        const initialScrollIndex = obj.getInitialScrollIndex(outer1_4, outer1_1);
+      if (closure_5) {
+        let obj = ref(outer1_1[4]);
+        const initialScrollIndex = obj.getInitialScrollIndex(closure_4, closure_1);
         if (null != initialScrollIndex) {
-          let tmp8 = null == ref;
-          if (!tmp8) {
+          if (ref != null) {
             const current = ref.current;
-            tmp8 = null == current;
-            const obj2 = current;
-          }
-          if (!tmp8) {
-            obj = { index: initialScrollIndex, animated: false, viewOffset: 300 };
-            obj2.scrollToIndex(obj);
+            if (current != null) {
+              obj = { index: null, animated: false, viewOffset: 300 };
+              obj[0] = initialScrollIndex;
+              current.scrollToIndex(obj);
+            }
           }
         }
       }
-      outer1_3.current = undefined;
+      zustandStore.current = undefined;
     });
     return () => {
       ref();

@@ -1,18 +1,12 @@
-// Module ID: 12170
-// Function ID: 95196
-// Name: calculateTotalGaps
-// Dependencies: [5545, 1450, 2]
+// Module ID: 12194
+// Function ID: 12195
+// Name: useCardGridLayout
+// Dependencies: [5563, 1474, 2]
 // Exports: default
 
-// Module 12170 (calculateTotalGaps)
+// Module 12194 (useCardGridLayout)
 import { PROFILE_SIDE_PADDING } from "ARBITRARY_LARGE_OFFSET";
 
-function calculateTotalGaps(arg0, arg1) {
-  return arg1 * (arg0 - 1);
-}
-function calculateCardWidth(arg0, arg1, arg2) {
-  return (arg1 - calculateTotalGaps(arg0, arg2)) / arg0;
-}
 let result = require("set").fileFinishedImporting("modules/user_profile/hooks/native/useCardGridLayout.tsx");
 
 export default function useCardGridLayout() {
@@ -39,32 +33,30 @@ export default function useCardGridLayout() {
   if (sidePadding === undefined) {
     sidePadding = PROFILE_SIDE_PADDING;
   }
-  let width = importDefault(1450)().width;
-  if (null != containerWidth) {
-    width = containerWidth;
+  if (containerWidth == null) {
+    containerWidth = importDefault(1474)().width;
   }
-  let num4 = Infinity;
-  if (null != maxWidth) {
-    num4 = maxWidth;
+  if (maxWidth == null) {
+    maxWidth = Infinity;
   }
-  const diff = Math.min(width, num4) - 2 * sidePadding;
+  const diff = Math.min(containerWidth, maxWidth) - 2 * sidePadding;
   const bound = Math.max(1, Math.floor((diff + num3) / (num + num3)));
-  const tmp3 = calculateCardWidth(1, diff, num3);
-  let num5 = 1;
-  let tmp4 = tmp3;
-  if (tmp3 > num2) {
-    let num6 = 1;
-    num5 = 1;
-    tmp4 = tmp3;
+  const diff1 = diff;
+  let tmp4 = diff1;
+  let num4 = 1;
+  if (diff1 > num2) {
+    let num5 = 1;
+    tmp4 = diff1;
+    num4 = 1;
     if (1 < bound) {
-      const sum = num6 + 1;
-      const tmp7 = calculateCardWidth(sum, diff, num3);
-      num5 = sum;
-      tmp4 = tmp7;
-      while (tmp7 > num2) {
-        num6 = sum;
-        tmp4 = tmp7;
+      const sum = num5 + 1;
+      const result = (diff - num3 * (sum - 1)) / sum;
+      tmp4 = result;
+      num4 = sum;
+      while (result > num2) {
         num5 = sum;
+        tmp4 = result;
+        num4 = sum;
         if (sum >= bound) {
           break;
         }
@@ -72,11 +64,16 @@ export default function useCardGridLayout() {
     }
   }
   const bound1 = Math.min(Math.max(tmp4, num), num2);
-  const result = bound1 * num5;
-  if (result + calculateTotalGaps(num5, num3) > diff) {
-    obj = { columns: 1, cardWidth: undefined, rowWidth: undefined, gap: num3 };
+  const diff2 = num4 - 1;
+  if (diff < bound1 * num4 + num3 * diff2) {
+    obj = { columns: 1, cardWidth: "Array", rowWidth: "call", gap: "\u0E19\u0E49\u0E2D\u0E22\u0E01\u0E27\u0E48\u0E32 1 \u0E27\u0E34\u0E19\u0E32\u0E17\u0E35" };
+    obj[3] = num3;
   } else {
-    obj = { columns: num5, cardWidth: bound1, rowWidth: bound1 * num5 + num3 * (num5 - 1), gap: num3 };
+    obj = { columns: null, cardWidth: null, rowWidth: null, gap: null };
+    obj[0] = num4;
+    obj[1] = bound1;
+    obj[2] = bound1 * num4 + num3 * diff2;
+    obj[3] = num3;
   }
   return obj;
 };

@@ -1,31 +1,34 @@
-// Module ID: 13545
-// Function ID: 103975
+// Module ID: 13568
+// Function ID: 13569
 // Name: toggleVoiceChannelChat
-// Dependencies: [1348, 4237, 4178, 4358, 2]
+// Dependencies: [1372, 4261, 4202, 4383, 2]
 // Exports: toggleVoiceChannelChat
 
-// Module 13545 (toggleVoiceChannelChat)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_3 from "_isNativeReflectConstruct";
-import closure_4 from "_isNativeReflectConstruct";
+// Module 13568 (toggleVoiceChannelChat)
+import ensureGuildLoaded from "ensureGuildLoaded";
+import createRTCConnection from "createRTCConnection";
+import getParticipants from "getParticipants";
 
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/calls/toggleVoiceChannelChat.tsx");
+const result = require("getParticipants").fileFinishedImporting("modules/calls/toggleVoiceChannelChat.tsx");
 
 export const toggleVoiceChannelChat = function toggleVoiceChannelChat(open) {
-  let tmp = open;
-  if (closure_3.isConnected()) {
-    const channelId = closure_3.getChannelId();
+  let obj = connected;
+  if (connected.isConnected()) {
+    const channelId = obj.getChannelId();
     if (null == channelId) {
       return null;
     } else {
       channel = channel.getChannel(channelId);
       if (null != channel) {
         if (channel.isGuildVoice()) {
-          if (null == tmp) {
-            tmp = !chatOpen.getChatOpen(channelId);
+          let tmp3 = open;
+          if (open == null) {
+            tmp3 = !chatOpen.getChatOpen(channelId);
           }
-          importDefault(4358).updateChatOpen(channelId, tmp);
-          const obj = { channelId, chatOpen: tmp };
+          importDefault(4383).updateChatOpen(channelId, tmp3);
+          obj = { channelId: null, chatOpen: null };
+          obj[0] = channelId;
+          obj[1] = tmp3;
           return obj;
         }
       }

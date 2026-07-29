@@ -1,23 +1,20 @@
-// Module ID: 14008
-// Function ID: 106951
-// Name: isFilterOptionEqual
-// Dependencies: [57, 31, 27, 5011, 33, 4165, 689, 5155, 5000, 4578, 1212, 4563, 4011, 4133, 10468, 5221, 5220, 5223, 4576, 7632, 7631, 5536, 9068, 9465, 2]
+// Module ID: 14029
+// Function ID: 14030
+// Name: FilterFooter
+// Dependencies: [32, 19, 17, 5033, 21, 4189, 712, 5177, 5022, 4600, 1236, 4586, 4035, 4157, 10492, 5243, 5242, 5245, 4598, 7655, 7654, 5554, 9092, 9489, 2]
 // Exports: default
 
-// Module 14008 (isFilterOptionEqual)
+// Module 14029 (FilterFooter)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
-import { View } from "get ActivityIndicator";
+import context from "context";
+import { View } from "BottomSheetModal";
 import { QuestHomeSortMethods } from "QuestsExperimentLocations";
-import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import jsxProd from "TableRowGroupTitle";
+import createCacheKey from "createCacheKey";
 
-let closure_7;
-let closure_8;
+let error;
+let metroImportAll;
 const require = arg1;
-function isFilterOptionEqual(group, group2) {
-  return group.group === group2.group && group.filter === group2.filter;
-}
 function FilterFooter(inline) {
   let onConfirm;
   let onLayout;
@@ -27,45 +24,43 @@ function FilterFooter(inline) {
   if (flag === undefined) {
     flag = false;
   }
-  const tmp = _createForOfIteratorHelperLoose();
-  let obj = {};
+  const tmp = createCacheKey();
   if (flag) {
     let footerInline = tmp.footerInline;
   } else {
     footerInline = [, ];
     ({ footer: arr[0], content: arr[1] } = tmp);
   }
-  obj.style = footerInline;
-  obj.onLayout = onLayout;
-  obj = { bottom: true };
-  obj = { direction: "vertical", style: tmp.footerButtonGroup };
-  const obj1 = { size: "lg", grow: true };
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj1.text = intl.string(require(1212) /* getSystemLocale */.t.i4jeWR);
-  obj1.onPress = onConfirm;
-  const items = [callback2(require(4578) /* Button */.Button, obj1), ];
+  let obj = { style: footerInline, onLayout, children: null };
+  obj = { bottom: true, children: null };
+  obj = { direction: "vertical", style: tmp.footerButtonGroup, children: null };
+  const obj1 = { size: "lg", grow: true, text: null, onPress: null };
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj1[2] = intl.string(require(1236) /* getSystemLocale */.t.i4jeWR);
+  obj1[3] = onConfirm;
+  const items = [closure_7(require(4600) /* Button */.Button, obj1), ];
   const obj2 = { size: "lg", grow: true, text: null, onPress: null, variant: "secondary" };
-  const intl2 = require(1212) /* getSystemLocale */.intl;
-  obj2.text = intl2.string(require(1212) /* getSystemLocale */.t.yBZMsQ);
-  obj2.onPress = onReset;
-  items[1] = callback2(require(4578) /* Button */.Button, obj2);
-  obj.children = items;
-  obj.children = callback3(require(5000) /* ButtonGroup */.ButtonGroup, obj);
-  obj.children = callback2(require(5155) /* SafeAreaPaddingView */.SafeAreaPaddingView, obj);
-  return callback2(View, obj);
+  const intl2 = require(1236) /* getSystemLocale */.intl;
+  obj2[2] = intl2.string(require(1236) /* getSystemLocale */.t.yBZMsQ);
+  obj2[3] = onReset;
+  items[1] = closure_7(require(4600) /* Button */.Button, obj2);
+  obj[2] = items;
+  obj[1] = callback2(require(5022) /* ButtonGroup */.ButtonGroup, obj);
+  obj[2] = closure_7(require(5177) /* SafeAreaPaddingView */.SafeAreaPaddingView, obj);
+  return closure_7(View, obj);
 }
-({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16 };
-_createForOfIteratorHelperLoose.content = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.bodyContainer = { flex: 1, minHeight: 0 };
-_createForOfIteratorHelperLoose.footerInline = { paddingTop: require("_createForOfIteratorHelperLoose").space.PX_16 };
-let obj1 = { paddingTop: require("_createForOfIteratorHelperLoose").space.PX_16 };
-_createForOfIteratorHelperLoose.footer = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.MOBILE_ACTIONSHEET_BACKGROUND };
-_createForOfIteratorHelperLoose.footerButtonGroup = { paddingBottom: 0 };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+({ jsx: error, jsxs: metroImportAll } = jsxProd);
+createCacheKey = { content: null, bodyContainer: null, footerInline: null, footer: null, footerButtonGroup: null };
+createCacheKey = { paddingHorizontal: require("Themes").space.PX_16 };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { flex: 1, minHeight: 0 };
+createCacheKey[2] = { paddingTop: require("Themes").space.PX_16 };
+let obj1 = { paddingTop: require("Themes").space.PX_16 };
+createCacheKey[3] = { backgroundColor: require("Themes").colors.MOBILE_ACTIONSHEET_BACKGROUND };
+createCacheKey[4] = { paddingBottom: 0 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
 let closure_10 = [];
-let obj2 = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.MOBILE_ACTIONSHEET_BACKGROUND };
+let obj2 = { backgroundColor: require("Themes").colors.MOBILE_ACTIONSHEET_BACKGROUND };
 const result = require("get ActivityIndicator").fileFinishedImporting("modules/quests/native/QuestHomeSortingFilteringBottomSheet.tsx");
 
 export default function QuestHomeSortingFilteringBottomSheet(onSortMethodChange) {
@@ -76,40 +71,37 @@ export default function QuestHomeSortingFilteringBottomSheet(onSortMethodChange)
   ({ initialSortMethod, initialFilters } = onSortMethodChange);
   let obj = onSortMethodChange(first[11]);
   let isScreenReaderEnabled = obj.useIsScreenReaderEnabled();
-  const tmp3 = callback(first1.useState(initialSortMethod), 2);
-  first = tmp3[0];
-  callback = tmp5;
-  const tmp6 = callback(first1.useState(initialFilters), 2);
-  first1 = tmp6[0];
-  let closure_5 = tmp6[1];
-  const tmp8 = callback(first1.useState(0), 2);
-  let closure_6 = tmp8[1];
-  let tmp9 = null;
+  const tmp5 = callback(first1.useState(initialSortMethod), 2);
+  first = tmp5[0];
+  callback = tmp7;
+  const tmp8 = callback(first1.useState(initialFilters), 2);
+  first1 = tmp8[0];
+  let closure_5 = tmp8[1];
+  const tmp10 = callback(first1.useState(0), 2);
+  let closure_6 = tmp10[1];
   const ref = first1.useRef(null);
   callback = first1.useCallback((nativeEvent) => {
     lib(nativeEvent.nativeEvent.layout.height);
   }, []);
-  const callback3 = first1.useCallback((arg0, arg1) => {
+  let closure_8 = first1.useCallback((arg0, arg1) => {
     let closure_0 = arg0;
     let closure_1 = arg1;
     callback((arr) => {
       if (closure_1) {
         const items = [];
-        const arraySpreadResult = HermesBuiltin.arraySpread(arr, 0);
-        items[arraySpreadResult] = closure_0;
-        const sum = arraySpreadResult + 1;
+        items[HermesBuiltin.arraySpread(arr, 0)] = closure_0;
         let found = items;
       } else {
-        found = arr.filter((arg0) => !outer3_11(arg0, outer1_0));
+        found = arr.filter((group) => !(group.group === group.group && group.filter === arr.filter));
       }
       return found;
     });
   }, []);
   const callback1 = first1.useCallback(() => {
-    tmp5(lib.SUGGESTED);
+    tmp7(lib.SUGGESTED);
     callback(outer1_10);
     const current = ref.current;
-    if (null != current) {
+    if (current != null) {
       current.setValue(lib.SUGGESTED);
     }
     const AccessibilityAnnouncer = onSortMethodChange(first[12]).AccessibilityAnnouncer;
@@ -126,60 +118,63 @@ export default function QuestHomeSortingFilteringBottomSheet(onSortMethodChange)
   const questHomeSortOptions = obj1.useQuestHomeSortOptions();
   let obj2 = onSortMethodChange(first[14]);
   const questHomeFilterOptions = obj2.useQuestHomeFilterOptions();
-  obj = {};
-  obj = {};
+  obj = { header: null, footer: null, scrollable: true, startExpanded: true, children: null };
+  obj = { title: null };
   let intl = onSortMethodChange(first[10]).intl;
-  obj.title = intl.string(onSortMethodChange(first[10]).t.UdhTtk);
-  obj.header = ref(onSortMethodChange(first[16]).BottomSheetTitleHeader, obj);
+  obj[0] = intl.string(onSortMethodChange(first[10]).t.UdhTtk);
+  obj[0] = ref(onSortMethodChange(first[16]).BottomSheetTitleHeader, obj);
+  let tmp15Result = null;
   if (!isScreenReaderEnabled) {
-    obj1 = { onConfirm: callback2, onReset: callback1, onLayout: callback };
-    tmp9 = ref(FilterFooter, obj1);
+    obj1 = { onConfirm: null, onReset: null, onLayout: null };
+    obj1[0] = callback2;
+    obj1[1] = callback1;
+    obj1[2] = callback;
+    tmp15Result = tmp15(FilterFooter, obj1);
   }
-  obj.footer = tmp9;
-  obj.scrollable = true;
-  obj.startExpanded = true;
-  obj2 = {};
-  let tmp18;
+  obj[1] = tmp15Result;
+  let tmp19;
   if (!isScreenReaderEnabled) {
-    const obj3 = { paddingBottom: tmp8[0] };
-    tmp18 = obj3;
+    obj2 = { paddingBottom: null };
+    obj2[0] = tmp10[0];
+    tmp19 = obj2;
   }
-  obj2.contentContainerStyle = tmp18;
-  const items1 = [, ];
-  ({ content: arr4[0], bodyContainer: arr4[1] } = _createForOfIteratorHelperLoose());
-  obj2.style = items1;
-  const obj4 = { spacing: onFiltersChange(first[6]).space.PX_32 };
-  const obj5 = { groupRef: ref, hasIcons: false, defaultValue: first, onChange: tmp3[1] };
-  const intl2 = onSortMethodChange(first[10]).intl;
-  obj5.title = intl2.string(onSortMethodChange(first[10]).t.tZXJIS);
-  obj5.children = questHomeSortOptions.map((label) => ref(onSortMethodChange(first[20]).TableRadioRow, { label: label.label, value: label.value }, arg1));
+  const obj3 = { contentContainerStyle: tmp19, style: items1, children: null };
+  items1 = [, ];
+  ({ content: arr4[0], bodyContainer: arr4[1] } = createCacheKey());
+  const obj4 = { spacing: null, children: null };
+  obj4[0] = onFiltersChange(first[6]).space.PX_32;
+  const obj5 = { groupRef: ref, hasIcons: false, defaultValue: first, onChange: tmp5[1], title: null, children: null };
+  const intl2 = tmp2(tmp3[10]).intl;
+  obj5[4] = intl2.string(onSortMethodChange(first[10]).t.tZXJIS);
+  obj5[5] = questHomeSortOptions.map((label) => ref(onSortMethodChange(first[20]).TableRadioRow, { label: label.label, value: label.value }, arg1));
   const items2 = [
     ref(onSortMethodChange(first[19]).TableRadioGroup, obj5),
     questHomeFilterOptions.map((heading) => {
-      let obj = { title: heading.heading, hasIcons: false };
+      let obj = { title: heading.heading, hasIcons: false, children: null };
       const options = heading.options;
-      obj.children = options.map((arg0, arg1) => {
+      obj[2] = options.map((arg0, arg1) => {
         let closure_0 = arg0;
-        const obj = {
-          label: onSortMethodChange(first[23]).getFilterTypeText(arg0.filter),
-          onPress(arg0) {
-            return outer2_8(closure_0, arg0);
-          },
-          checked: outer1_4.some((arg0) => outer3_11(arg0, closure_0))
+        const obj = { label: null, onPress: null, checked: null };
+        obj[0] = outer1_0(outer1_2[23]).getFilterTypeText(arg0.filter);
+        obj[1] = function onPress(arg0) {
+          return outer1_8(closure_0, arg0);
         };
-        return ref(onSortMethodChange(first[22]).TableCheckboxRow, obj, arg1);
+        obj[2] = context.some((group) => group.group === group.group && group.filter === arr.filter);
+        return outer1_7(outer1_0(outer1_2[22]).TableCheckboxRow, obj, arg1);
       });
       return ref(onSortMethodChange(first[21]).TableRowGroup, obj, arg1);
     })
   ];
-  obj4.children = items2;
-  const items3 = [callback3(onSortMethodChange(first[18]).Stack, obj4), ];
+  obj4[1] = items2;
+  const items3 = [closure_8(onSortMethodChange(first[18]).Stack, obj4), ];
   if (isScreenReaderEnabled) {
-    const obj6 = { onConfirm: callback2, onReset: callback1, inline: true };
-    isScreenReaderEnabled = ref(FilterFooter, obj6);
+    const obj6 = { onConfirm: null, onReset: null, inline: true };
+    obj6[0] = callback2;
+    obj6[1] = callback1;
+    isScreenReaderEnabled = tmp15(FilterFooter, obj6);
   }
   items3[1] = isScreenReaderEnabled;
-  obj2.children = items3;
-  obj.children = callback3(onSortMethodChange(first[17]).BottomSheetScrollView, obj2);
+  obj3[2] = items3;
+  obj[4] = closure_8(onSortMethodChange(first[17]).BottomSheetScrollView, obj3);
   return ref(onSortMethodChange(first[15]).BottomSheet, obj);
 };

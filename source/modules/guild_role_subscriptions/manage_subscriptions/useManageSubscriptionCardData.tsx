@@ -1,47 +1,45 @@
-// Module ID: 14218
-// Function ID: 109171
+// Module ID: 14240
+// Function ID: 14241
 // Name: useManageSubscriptionCardData
-// Dependencies: [57, 31, 1838, 3787, 653, 3747, 5651, 1212, 14209, 566, 14207, 2]
+// Dependencies: [32, 19, 1862, 3811, 676, 3771, 5669, 1236, 14231, 589, 14229, 2]
 // Exports: default
 
-// Module 14218 (useManageSubscriptionCardData)
+// Module 14240 (useManageSubscriptionCardData)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import noop from "noop";
+import createGuildRecordFromRust from "createGuildRecordFromRust";
+import makeGroupListingIndexSubscriptionListingTag from "makeGroupListingIndexSubscriptionListingTag";
 import { SubscriptionStatusTypes } from "ME";
 
 const require = arg1;
-const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/guild_role_subscriptions/manage_subscriptions/useManageSubscriptionCardData.tsx");
+const result = require("createGuildRecordFromRust").fileFinishedImporting("modules/guild_role_subscriptions/manage_subscriptions/useManageSubscriptionCardData.tsx");
 
-export default function useManageSubscriptionCardData(subscription) {
-  let hasActiveTrial;
-  let status;
+export default function useManageSubscriptionCardData(currentPeriodEnd) {
   let obj = _require(stateFromStores1[8]);
-  _require = obj.getRoleSubscriptionPlanId(subscription);
-  let obj1 = _require(stateFromStores1[9]);
+  _require = obj.getRoleSubscriptionPlanId(currentPeriodEnd);
   const items = [fetchSubscriptionsSettings];
-  const stateFromStores = obj1.useStateFromStores(items, () => fetchSubscriptionsSettings.getSubscriptionListingForPlan(closure_0));
+  const stateFromStores = _require(stateFromStores1[9]).useStateFromStores(items, () => fetchSubscriptionsSettings.getSubscriptionListingForPlan(closure_0));
+  const obj2 = _require(stateFromStores1[9]);
   const items1 = [fetchSubscriptionsSettings];
   stateFromStores1 = _require(stateFromStores1[9]).useStateFromStores(items1, () => {
     let subscriptionGroupListingForSubscriptionListing = null;
     if (null != stateFromStores) {
-      subscriptionGroupListingForSubscriptionListing = fetchSubscriptionsSettings.getSubscriptionGroupListingForSubscriptionListing(stateFromStores.id);
+      subscriptionGroupListingForSubscriptionListing = fetchSubscriptionsSettings.getSubscriptionGroupListingForSubscriptionListing(tmp.id);
     }
     return subscriptionGroupListingForSubscriptionListing;
   });
   const obj3 = _require(stateFromStores1[9]);
-  const items2 = [_createForOfIteratorHelperLoose];
+  const items2 = [createGuildRecordFromRust];
   const stateFromStores2 = _require(stateFromStores1[9]).useStateFromStores(items2, () => {
     let guild_id;
-    if (null != stateFromStores1) {
+    if (stateFromStores1 != null) {
       guild_id = stateFromStores1.guild_id;
     }
     return guild.getGuild(guild_id);
   });
-  const tmp4 = stateFromStores2(first.useState(false), 2);
-  first = tmp4[0];
-  _createForOfIteratorHelperLoose = tmp4[1];
+  const tmp6 = stateFromStores2(first.useState(false), 2);
+  first = tmp6[0];
+  createGuildRecordFromRust = tmp6[1];
   const obj4 = _require(stateFromStores1[9]);
   fetchSubscriptionsSettings = _require(stateFromStores1[10]).useFetchSubscriptionsSettings().fetchSubscriptionsSettings;
   const items3 = [first, stateFromStores2, fetchSubscriptionsSettings];
@@ -58,45 +56,42 @@ export default function useManageSubscriptionCardData(subscription) {
     }
   }, items3);
   if (null == stateFromStores) {
-    obj = {
-      guild: stateFromStores2,
-      expanded: first,
-      handleToggleExpanded() {
-          return guild((arg0) => !arg0);
-        },
-      listing: stateFromStores,
-      groupListing: stateFromStores1,
-      subscriptionInfo: undefined
+    obj = { guild: null, expanded: null, handleToggleExpanded: null, listing: null, groupListing: null, subscriptionInfo: null };
+    obj[0] = stateFromStores2;
+    obj[1] = first;
+    obj[2] = function handleToggleExpanded() {
+      return guild((arg0) => !arg0);
     };
+    obj[3] = stateFromStores;
+    obj[4] = stateFromStores1;
+    obj[5] = undefined;
     return obj;
   } else {
-    obj = { subscription };
-    subscription = obj.subscription;
     let str2 = "";
-    const obj7 = stateFromStores(stateFromStores1[5])(subscription.currentPeriodEnd);
-    if (null != subscription.price) {
-      str2 = _require(stateFromStores1[6]).formatPrice(subscription.price, subscription.currency);
-      const obj8 = _require(stateFromStores1[6]);
+    const obj6 = stateFromStores(tmp2[5])(currentPeriodEnd.currentPeriodEnd);
+    const tmp9 = stateFromStores;
+    if (null != currentPeriodEnd.price) {
+      str2 = tmp(tmp2[6]).formatPrice(currentPeriodEnd.price, currentPeriodEnd.currency);
+      const tmpResult = tmp(tmp2[6]);
     }
-    const formatResult = stateFromStores(stateFromStores1[5])(subscription.currentPeriodEnd).format("M/D/YY");
-    let PAST_DUE = SubscriptionStatusTypes.PAST_DUE;
-    obj1 = { memberSince: stateFromStores(stateFromStores1[5])(subscription.createdAt).format("M/D/YY"), nextRenewalDate: formatResult };
-    ({ status, hasActiveTrial } = subscription);
-    const intl = _require(stateFromStores1[7]).intl;
+    const formatResult = stateFromStores(tmp2[5])(currentPeriodEnd.currentPeriodEnd).format("M/D/YY");
+    obj = { memberSince: null, nextRenewalDate: null, nextRenewalLabel: null, subscriptionPrice: null, isCancelled: null, isPastDue: null, isTrial: null };
+    obj[0] = tmp9(tmp2[5])(currentPeriodEnd.createdAt).format("M/D/YY");
+    obj[1] = formatResult;
+    const intl = tmp(tmp2[7]).intl;
     const string = intl.string;
-    let UAfot2 = _require(stateFromStores1[7]).t;
-    if (subscription.status === SubscriptionStatusTypes.CANCELED) {
+    let UAfot2 = tmp(tmp2[7]).t;
+    if (currentPeriodEnd.status === SubscriptionStatusTypes.CANCELED) {
       UAfot2 = UAfot2.UAfot2;
       let stringResult = string(UAfot2);
     } else {
       stringResult = string(UAfot2.CVjLcM);
     }
-    obj1.nextRenewalLabel = stringResult;
-    obj1.subscriptionPrice = str2;
-    obj1.isCancelled = subscription.status === SubscriptionStatusTypes.CANCELED;
-    PAST_DUE = status === PAST_DUE;
-    obj1.isPastDue = PAST_DUE;
-    obj1.isTrial = hasActiveTrial;
-    const obj9 = stateFromStores(stateFromStores1[5])(subscription.createdAt);
+    obj[2] = stringResult;
+    obj[3] = str2;
+    obj[4] = currentPeriodEnd.status === SubscriptionStatusTypes.CANCELED;
+    obj[5] = currentPeriodEnd.status === SubscriptionStatusTypes.PAST_DUE;
+    obj[6] = currentPeriodEnd.hasActiveTrial;
+    const obj8 = tmp9(tmp2[5])(currentPeriodEnd.createdAt);
   }
 };

@@ -1,20 +1,25 @@
-// Module ID: 5963
-// Function ID: 52764
+// Module ID: 5982
+// Function ID: 5983
 // Name: __handleIntersections
 // Dependencies: [2]
 // Exports: getIntersectionObserver, unwatch, watch
 
-// Module 5963 (__handleIntersections)
+// Module 5982 (__handleIntersections)
 function __handleIntersections(arr) {
   let closure_0 = arg1;
   const item = arr.forEach((target) => {
     let value = outer1_1.get(closure_0);
     value = undefined;
-    if (null != value) {
+    if (value != null) {
       value = value.get(target.target);
     }
     if (null != value) {
-      value.call(null, target);
+      const call = value.call;
+      if (typeof call === "unknown") {
+        value(target);
+      } else {
+        call(null, target);
+      }
     }
   });
 }
@@ -25,7 +30,6 @@ let result = require("set").fileFinishedImporting("../discord_common/js/shared/u
 export const getIntersectionObserver = function getIntersectionObserver(current) {
   let value = weakMap.get(current);
   if (null == value) {
-    const prototype = globalThis.IntersectionObserver.prototype;
     const intersectionObserver = new globalThis.IntersectionObserver(__handleIntersections, current);
     const result = weakMap.set(current, intersectionObserver);
     const _WeakMap = WeakMap;
@@ -35,21 +39,21 @@ export const getIntersectionObserver = function getIntersectionObserver(current)
   }
   return value;
 };
-export const watch = function watch(current2, current, closure_0) {
+export const watch = function watch(current2, current, current2) {
   let weakMap = weakMap1.get(current2);
-  if (null == weakMap) {
+  if (weakMap == null) {
     const _WeakMap = WeakMap;
     weakMap = new WeakMap();
   }
   if (!weakMap.has(current)) {
     current2.observe(current);
   }
-  const result = weakMap.set(current, closure_0);
+  const result = weakMap.set(current, current2);
   const result1 = weakMap1.set(current2, weakMap);
 };
 export const unwatch = function unwatch(current2, current) {
   let weakMap = weakMap1.get(current2);
-  if (null == weakMap) {
+  if (weakMap == null) {
     const _WeakMap = WeakMap;
     weakMap = new WeakMap();
   }

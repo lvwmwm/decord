@@ -1,18 +1,10 @@
-// Module ID: 665
-// Function ID: 8038
-// Name: pad2
-// Dependencies: [666, 2]
-// Exports: getContrast, getDarkness, hex2int, hex2rgb, hsv2int, int2hex, int2hsl, int2hslValues, int2hsv, int2rgba, isValidHex, rgb2int
+// Module ID: 688
+// Function ID: 689
+// Name: int2hslRaw
+// Dependencies: [689, 2]
+// Exports: getContrast, getDarkness, getLuminance, hex2int, hex2rgb, hsv2int, int2hex, int2hsl, int2hslValues, int2hsv, int2rgbArray, int2rgba, isValidHex, rgb2int
 
-// Module 665 (pad2)
-function pad2(arg0) {
-  let combined = arg0;
-  if (1 === arg0.length) {
-    const _HermesInternal = HermesInternal;
-    combined = "0" + arg0;
-  }
-  return combined;
-}
+// Module 688 (int2hslRaw)
 function int2hslRaw(initialColor) {
   const result = (initialColor >> 16 & 255) / 255;
   let result1 = (initialColor >> 8 & 255) / 255;
@@ -28,14 +20,15 @@ function int2hslRaw(initialColor) {
       sum = rounded + 360;
     }
     const result2 = (bound1 + bound) / 2;
-    const obj = { h: sum };
+    const obj = { h: null, s: null, l: null };
+    obj[0] = sum;
     let num7 = 0;
     if (!tmp6) {
       const _Math2 = Math;
       num7 = diff / (1 - Math.abs(2 * result2 - 1));
     }
-    obj.s = +num7.toFixed(3);
-    obj.l = +result2.toFixed(3);
+    obj[1] = +num7.toFixed(3);
+    obj[2] = +result2.toFixed(3);
     return obj;
   } else if (bound1 === result) {
     result1 = (result1 - num) / diff;
@@ -47,58 +40,75 @@ function int2hslRaw(initialColor) {
     result3 = (result - result1) / diff + 4;
   }
 }
-function int2rgbArray(modalV2BackgroundColor) {
-  const items = [modalV2BackgroundColor >> 16 & 255, modalV2BackgroundColor >> 8 & 255, 255 & modalV2BackgroundColor];
-  return items;
-}
-function getLuminance(arg0, arg1, arg2) {
-  const items = [arg0, arg1, arg2];
-  const mapped = items.map((arg0) => {
-    const result = arg0 / 255;
-    if (result <= 0.03928) {
-      let result1 = result / 12.92;
-    } else {
-      const _Math = Math;
-      result1 = Math.pow((result + 0.055) / 1.055, 2.4);
-    }
-    return result1;
-  });
-  return 0.2126 * mapped[0] + 0.7152 * mapped[1] + 0.0722 * mapped[2];
-}
 const re2 = /rgba?\((\d{1,3}), ?(\d{1,3}), ?(\d{1,3})\)?(?:, ?(\d(?:\.\d*)?)\))?/;
 let result = require("set").fileFinishedImporting("../discord_common/js/shared/utils/ColorUtils.tsx");
 
-export const hex2int = function hex2int(first) {
-  return importDefault(666)(first).num();
+export const hex2int = function hex2int(callback) {
+  return importDefault(689)(callback).num();
 };
 export const int2hex = function int2hex(color) {
   if (color <= 16777215) {
-    const str5 = color >> 16 & 255;
-    const str6 = color >> 8 & 255;
-    const str7 = 255 & color;
-    const tmp7 = pad2(color >> 16 & 255.toString(16));
-    const _HermesInternal2 = HermesInternal;
-    let combined = "#" + tmp7 + pad2(color >> 8 & 255.toString(16)) + pad2(str7.toString(16));
-    const tmp8 = pad2(color >> 8 & 255.toString(16));
+    let str = color >> 16 & 255.toString(16);
+    let combined = str;
+    if (1 === str.length) {
+      const _HermesInternal5 = HermesInternal;
+      combined = "0" + str;
+    }
+    const str1 = color >> 8 & 255.toString(16);
+    let combined1 = str1;
+    if (1 === str1.length) {
+      const _HermesInternal6 = HermesInternal;
+      combined1 = "0" + str1;
+    }
+    let str2 = 255 & color.toString(16);
+    let combined2 = str2;
+    if (1 === str2.length) {
+      const _HermesInternal7 = HermesInternal;
+      combined2 = "0" + str2;
+    }
+    const _HermesInternal8 = HermesInternal;
+    let combined3 = "#" + combined + combined1 + combined2;
+    const str11 = 255 & color;
+    const str7 = color >> 16 & 255;
+    const str9 = color >> 8 & 255;
   } else {
-    const str = color >> 24 & 255;
-    const str2 = color >> 16 & 255;
-    const str3 = color >> 8 & 255;
-    const tmp2 = pad2(color >> 24 & 255.toString(16));
-    const _HermesInternal = HermesInternal;
-    combined = "#" + tmp2 + pad2(color >> 16 & 255.toString(16)) + pad2(str3.toString(16));
-    const tmp3 = pad2(color >> 16 & 255.toString(16));
+    let str3 = color >> 24 & 255.toString(16);
+    let combined4 = str3;
+    if (1 === str3.length) {
+      const _HermesInternal = HermesInternal;
+      str = "0";
+      combined4 = "0" + str3;
+    }
+    str2 = color >> 16 & 255;
+    let str4 = str2.toString(16);
+    let combined5 = str4;
+    if (1 === str4.length) {
+      const _HermesInternal2 = HermesInternal;
+      str3 = "0";
+      combined5 = "0" + str4;
+    }
+    str4 = color >> 8 & 255;
+    let str5 = str4.toString(16);
+    let combined6 = str5;
+    if (1 === str5.length) {
+      const _HermesInternal3 = HermesInternal;
+      str5 = "0";
+      combined6 = "0" + str5;
+    }
+    const _HermesInternal4 = HermesInternal;
+    combined3 = "#" + combined4 + combined5 + combined6;
+    const str14 = color >> 24 & 255;
   }
-  return combined;
+  return combined3;
 };
 export { int2hslRaw };
 export const int2hslValues = function int2hslValues(initialColor) {
   let flag = arg1;
-  let tmp = arg2;
   if (arg1 === undefined) {
     flag = false;
   }
-  if (tmp === undefined) {
+  let tmp = arg2;
+  if (arg2 === undefined) {
     tmp = null;
   }
   const tmp2 = int2hslRaw(initialColor);
@@ -121,15 +131,15 @@ export const int2hslValues = function int2hslValues(initialColor) {
 };
 export const int2hsl = function int2hsl(accent_color, arg1) {
   let flag = arg1;
-  let tmp = arg2;
-  let num = arg3;
   if (arg1 === undefined) {
     flag = false;
   }
-  if (tmp === undefined) {
+  let tmp = arg2;
+  if (arg2 === undefined) {
     tmp = null;
   }
-  if (num === undefined) {
+  let num = arg3;
+  if (arg3 === undefined) {
     num = 1;
   }
   const tmp2 = int2hslRaw(accent_color);
@@ -150,39 +160,39 @@ export const int2hsl = function int2hsl(accent_color, arg1) {
   }
   return combined;
 };
-export const hex2rgb = function hex2rgb(token, self) {
-  let alphaResult = self;
-  if (self === undefined) {
+export const hex2rgb = function hex2rgb(PRIMARY_200, alphaResult) {
+  if (alphaResult === undefined) {
     alphaResult = null;
   }
-  if (obj.valid(token)) {
-    const obj2 = importDefault(666)(token);
-    if (null == alphaResult) {
+  if (obj.valid(PRIMARY_200)) {
+    const obj2 = tmp2(689)(PRIMARY_200);
+    if (alphaResult == null) {
       alphaResult = obj2.alpha();
     }
     return obj2.alpha(alphaResult).css();
   } else {
     return null;
   }
-  obj = importDefault(666);
+  obj = importDefault(689);
+  tmp2 = importDefault;
 };
-export const int2rgba = function int2rgba(pad2, arg1) {
+export const int2rgba = function int2rgba(int2hslRaw, arg1) {
   let result = arg1;
   if (null == arg1) {
-    result = (pad2 >> 24 & 255) / 255;
+    result = (int2hslRaw >> 24 & 255) / 255;
   }
-  return "rgba(" + pad2 >> 16 & 255 + ", " + pad2 >> 8 & 255 + ", " + 255 & pad2 + ", " + result + ")";
+  return "rgba(" + int2hslRaw >> 16 & 255 + ", " + int2hslRaw >> 8 & 255 + ", " + 255 & int2hslRaw + ", " + result + ")";
 };
-export const rgb2int = function rgb2int(str) {
-  const match = str.match(closure_2);
+export const rgb2int = function rgb2int(tmp2Result1) {
+  const match = tmp2Result1.match(closure_2);
   if (null != match) {
-    let obj = {};
+    let obj = { red: null, green: null, blue: null };
     const _parseInt = parseInt;
-    obj.red = parseInt(match[1]);
+    obj[0] = parseInt(match[1]);
     const _parseInt2 = parseInt;
-    obj.green = parseInt(match[2]);
+    obj[1] = parseInt(match[2]);
     const _parseInt3 = parseInt;
-    obj.blue = parseInt(match[3]);
+    obj[2] = parseInt(match[3]);
   } else {
     obj = { red: 0, green: 0, blue: 0 };
   }
@@ -200,7 +210,10 @@ export const int2hsv = function int2hsv(color) {
     num2 = diff / bound;
   }
   if (bound === bound1) {
-    const obj = { h: 0, s: num2, v: bound };
+    const obj = { h: null, s: null, v: null };
+    obj[0] = 0;
+    obj[1] = num2;
+    obj[2] = bound;
     return obj;
   } else {
     if (num === bound) {
@@ -224,18 +237,58 @@ export const int2hsv = function int2hsv(color) {
 export const getDarkness = function getDarkness(hex2intResult) {
   return 1 - (0.299 * (hex2intResult >> 16 & 255) + 0.587 * (hex2intResult >> 8 & 255) + 0.114 * (255 & hex2intResult)) / 255;
 };
-export const isValidHex = function isValidHex(arg0) {
-  return importDefault(666).valid(arg0);
+export const isValidHex = function isValidHex(variantValue) {
+  return importDefault(689).valid(variantValue);
 };
-export { int2rgbArray };
-export { getLuminance };
+export const int2rgbArray = function int2rgbArray(modalV2BackgroundColor) {
+  const items = [modalV2BackgroundColor >> 16 & 255, modalV2BackgroundColor >> 8 & 255, 255 & modalV2BackgroundColor];
+  return items;
+};
+export const getLuminance = function getLuminance(arg0, arg1, arg2) {
+  const items = [arg0, arg1, arg2];
+  const mapped = items.map((arg0) => {
+    const result = arg0 / 255;
+    if (result <= 0.03928) {
+      let result1 = result / 12.92;
+    } else {
+      const _Math = Math;
+      result1 = Math.pow((result + 0.055) / 1.055, 2.4);
+    }
+    return result1;
+  });
+  return 0.2126 * mapped[0] + 0.7152 * mapped[1] + 0.0722 * mapped[2];
+};
 export const getContrast = function getContrast(hex2intResult, hex2intResult1) {
-  const tmp = int2rgbArray(hex2intResult);
-  const tmp2 = int2rgbArray(hex2intResult1);
-  const tmp3 = getLuminance(tmp[0], tmp[1], tmp[2]);
-  const tmp4 = getLuminance(tmp2[0], tmp2[1], tmp2[2]);
-  const sum = Math.max(tmp3, tmp4) + 0.05;
-  return sum / (Math.min(tmp3, tmp4) + 0.05);
+  const items = [hex2intResult >> 16 & 255, hex2intResult >> 8 & 255, 255 & hex2intResult];
+  const items1 = [hex2intResult1 >> 16 & 255, hex2intResult1 >> 8 & 255, 255 & hex2intResult1];
+  const items2 = [, , ];
+  [arr3[0], arr3[1], arr3[2]] = items;
+  const mapped = items2.map((arg0) => {
+    const result = arg0 / 255;
+    if (result <= 0.03928) {
+      let result1 = result / 12.92;
+    } else {
+      const _Math = Math;
+      result1 = Math.pow((result + 0.055) / 1.055, 2.4);
+    }
+    return result1;
+  });
+  const sum = 0.2126 * mapped[0] + 0.7152 * mapped[1] + 0.0722 * mapped[2];
+  const items3 = [, , ];
+  [arr4[0], arr4[1], arr4[2]] = items1;
+  const mapped1 = items3.map((arg0) => {
+    const result = arg0 / 255;
+    if (result <= 0.03928) {
+      let result1 = result / 12.92;
+    } else {
+      const _Math = Math;
+      result1 = Math.pow((result + 0.055) / 1.055, 2.4);
+    }
+    return result1;
+  });
+  const sum1 = 0.2126 * mapped1[0] + 0.7152 * mapped1[1] + 0.0722 * mapped1[2];
+  const sum2 = Math.max(sum, sum1) + 0.05;
+  return sum2 / (Math.min(sum, sum1) + 0.05);
 };
 export const hsv2int = function hsv2int(value, value2, sharedValue2) {
   const result = 6 * (value / 360);
@@ -246,35 +299,35 @@ export const hsv2int = function hsv2int(value, value2, sharedValue2) {
   const result3 = sharedValue2 * (1 - (1 - diff) * value2);
   const result4 = rounded % 6;
   if (0 === result4) {
-    let num5 = sharedValue2;
+    let num5 = result1;
     let num6 = result3;
-    let num7 = result1;
+    let num7 = sharedValue2;
   } else if (1 === result4) {
-    num5 = result2;
+    num5 = result1;
+    num6 = sharedValue2;
+    num7 = result2;
+  } else if (2 === result4) {
+    num5 = result3;
     num6 = sharedValue2;
     num7 = result1;
-  } else if (2 === result4) {
-    num5 = result1;
-    num6 = sharedValue2;
-    num7 = result3;
   } else if (3 === result4) {
-    num5 = result1;
+    num5 = sharedValue2;
     num6 = result2;
-    num7 = sharedValue2;
+    num7 = result1;
   } else if (4 === result4) {
-    num5 = result3;
+    num5 = sharedValue2;
     num6 = result1;
-    num7 = sharedValue2;
+    num7 = result3;
   } else {
     num5 = 0;
     num6 = 0;
     num7 = 0;
     if (5 === result4) {
-      num5 = sharedValue2;
+      num5 = result2;
       num6 = result1;
-      num7 = result2;
+      num7 = sharedValue2;
     }
   }
-  const tmp8 = Math.round(255 * num5) << 16;
-  return tmp8 + (Math.round(255 * num6) << 8) + Math.round(255 * num7);
+  const tmp8 = Math.round(255 * num7) << 16;
+  return tmp8 + (Math.round(255 * num6) << 8) + Math.round(255 * num5);
 };

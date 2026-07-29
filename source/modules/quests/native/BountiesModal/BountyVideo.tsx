@@ -1,51 +1,50 @@
-// Module ID: 14039
-// Function ID: 107289
+// Module ID: 14061
+// Function ID: 14062
 // Name: BountyVideo
-// Dependencies: [57, 31, 27, 5011, 33, 478, 9455, 689, 4165, 14040, 10857, 10858, 4026, 3869, 4166, 4169, 14020, 14023, 14041, 5119, 14042, 14044, 14046, 9783, 2]
+// Dependencies: [32, 19, 17, 5033, 21, 501, 9479, 712, 4189, 14062, 10881, 10882, 4050, 3893, 4190, 4193, 14042, 14045, 14063, 5141, 14064, 14066, 14068, 9805, 2]
 // Exports: BountyVideo
 
-// Module 14039 (BountyVideo)
+// Module 14061 (BountyVideo)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
-import get_ActivityIndicator from "get ActivityIndicator";
+import preload from "preload";
+import get_ActivityIndicator from "hasVideoEnded";
 import { QuestsExperimentLocations } from "QuestsExperimentLocations";
-import jsxProd from "jsxProd";
-import isWindows from "isWindows";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import jsxProd from "BountiesModalAdvertiserCtaContent";
+import PlatformTypes from "PlatformTypes";
+import createCacheKey from "createCacheKey";
 
-let closure_10;
-let closure_11;
-let closure_5;
+let c10;
+let c5;
+let c9;
 let closure_6;
-let closure_7;
-let closure_9;
+let error;
+let unpackModuleId;
 const require = arg1;
+({ View: c5, StyleSheet: closure_6, ActivityIndicator: error } = get_ActivityIndicator);
+({ jsx: c9, jsxs: c10, Fragment: unpackModuleId } = jsxProd);
 let num = 0;
-({ View: closure_5, StyleSheet: closure_6, ActivityIndicator: closure_7 } = get_ActivityIndicator);
-({ jsx: closure_9, jsxs: closure_10, Fragment: closure_11 } = jsxProd);
-if (isWindows.isAndroid()) {
+if (PlatformTypes.isAndroid()) {
   num = 150;
 }
 let closure_13 = { top: 48, bottom: 16, left: 16, right: 16 };
-const lg = require("_createForOfIteratorHelperLoose").radii.lg;
-let closure_15 = _createForOfIteratorHelperLoose.createStyles(() => {
-  let obj = {};
+const lg = require("Themes").radii.lg;
+let closure_15 = createCacheKey.createStyles(() => {
+  let obj = { videoContainer: null, leftRow: null, progress: null, poster: null, peekOrigin: null };
   obj = {};
   const merged = Object.assign(closure_6.absoluteFillObject);
-  obj["overflow"] = "hidden";
-  obj["borderRadius"] = lg;
-  obj.videoContainer = obj;
-  obj = { position: "absolute", top: importDefault(689).space.PX_8, left: importDefault(689).space.PX_8, flexDirection: "row", alignItems: "center", gap: importDefault(689).space.PX_8 };
-  obj.leftRow = obj;
-  const obj1 = { position: "absolute", bottom: 0, height: require(14040) /* BountiesModalProgress */.PROGRESS_BAR_HEIGHT, left: lg, right: lg };
-  obj.progress = obj1;
+  obj.overflow = "hidden";
+  obj.borderRadius = lg;
+  obj[0] = obj;
+  obj = { position: "absolute", top: importDefault(712).space.PX_8, left: importDefault(712).space.PX_8, flexDirection: "row", alignItems: "center", gap: importDefault(712).space.PX_8 };
+  obj[1] = obj;
+  obj[2] = { position: "absolute", bottom: 0, height: require(14062) /* BountiesModalProgress */.PROGRESS_BAR_HEIGHT, left: lg, right: lg };
   const obj2 = {};
   const merged1 = Object.assign(closure_6.absoluteFillObject);
-  obj2["backgroundColor"] = "#000000";
-  obj2["justifyContent"] = "center";
-  obj2["alignItems"] = "center";
-  obj.poster = obj2;
-  obj.peekOrigin = { transformOrigin: "top" };
+  obj2.backgroundColor = "#000000";
+  obj2.justifyContent = "center";
+  obj2.alignItems = "center";
+  obj[3] = obj2;
+  obj[4] = { transformOrigin: "top" };
   return obj;
 });
 let closure_16 = { code: "function BountyVideoTsx1(){const{posterOpacity}=this.__closure;return{opacity:posterOpacity.get()};}" };
@@ -81,7 +80,7 @@ export const BountyVideo = function BountyVideo(bounty) {
   let shouldLoadHls;
   let sourceQuestContent;
   let stage1Enabled;
-  let tmp5;
+  let tmp7;
   bounty = bounty.bounty;
   ({ isCtaVisible, isEndCardVisible, isScrollIndicatorEnabled, handleVideoProgress } = bounty);
   const handleVideoError = bounty.handleVideoError;
@@ -116,86 +115,87 @@ export const BountyVideo = function BountyVideo(bounty) {
   const tmp = callback2();
   let obj = bounty(handleVideoError[10]);
   const bountiesExperience = obj.useBountiesExperience(peekScale.VIDEO_MODAL_MOBILE);
-  ({ ownedByVerticalScrollExperiment, stage1Enabled } = bountiesExperience);
+  ({ stage1Enabled, ownedByVerticalScrollExperiment } = bountiesExperience);
   let obj1 = bounty(handleVideoError[11]);
   const isBountiesVerticalScrollExperimentEnabled = obj1.useIsBountiesVerticalScrollExperimentEnabled("BountyVideo");
   if (flag3) {
     flag3 = !flag;
   }
-  [tmp5, c9] = onFirstFrame(flag.useState(false), 2);
-  const tmp6 = onFirstFrame(flag.useState(false), 2);
-  first = tmp6[0];
-  c11 = tmp8;
+  let obj2 = flag;
+  [tmp7, c9] = onFirstFrame(flag.useState(false), 2);
+  const tmp8 = onFirstFrame(flag.useState(false), 2);
+  first = tmp8[0];
+  c11 = tmp10;
   closure_12 = flag.useRef(null);
-  let obj2 = bounty(handleVideoError[12]);
-  sharedValue = obj2.useSharedValue(1);
+  let tmp2Result = tmp2(tmp3[12]);
+  sharedValue = tmp2Result.useSharedValue(1);
   let items = [bounty, width, height];
   const memo = flag.useMemo(() => {
     let obj = bounty(handleVideoError[6]);
     obj = { assetUrl: bounty.videoHls, width, height };
     return obj.getScaledFirstFrameImageUrl(obj);
   }, items);
-  let obj4 = bounty(handleVideoError[13]);
-  const token = obj4.useToken(handleVideoProgress(handleVideoError[7]).colors.TEXT_DEFAULT);
+  tmp2Result = tmp2(tmp3[13]);
+  const token = tmp2Result.useToken(handleVideoProgress(tmp3[7]).colors.TEXT_DEFAULT);
   const combined = "" + bounty.id + ":" + shouldLoadHls;
-  const tmp12 = onFirstFrame(flag.useState(combined), 2);
-  if (tmp12[0] !== combined) {
-    tmp12[1](combined);
-    tmp8(false);
+  const tmp15 = onFirstFrame(flag.useState(combined), 2);
+  if (tmp15[0] !== combined) {
+    tmp15[1](combined);
+    tmp10(false);
     let result = sharedValue.set(1);
   }
   const items1 = [combined];
-  const effect = flag.useEffect(() => () => {
-    if (null != outer1_12.current) {
+  const effect = obj2.useEffect(() => () => {
+    if (null != ref.current) {
       const _clearTimeout = clearTimeout;
-      clearTimeout(outer1_12.current);
-      outer1_12.current = null;
+      clearTimeout(tmp.current);
+      tmp.current = null;
     }
   }, items1);
   const items2 = [first, sharedValue];
-  const effect1 = flag.useEffect(() => {
+  const effect1 = obj2.useEffect(() => {
     if (first) {
       const result = sharedValue.set(bounty(handleVideoError[14]).withTiming(0, bounty(handleVideoError[15]).timingFast));
       const obj = bounty(handleVideoError[14]);
     }
   }, items2);
-  callback = flag.useCallback(() => {
-    if (null != closure_12.current) {
+  callback = obj2.useCallback(() => {
+    if (null != ref.current) {
       const _clearTimeout = clearTimeout;
-      clearTimeout(closure_12.current);
-      closure_12.current = null;
+      clearTimeout(tmp.current);
+      tmp.current = null;
     }
     _undefined2(true);
   }, []);
   const items3 = [onFirstFrame];
   const items4 = [callback, handleVideoError];
-  const callback1 = flag.useCallback(() => {
-    if (null != onFirstFrame) {
-      onFirstFrame();
+  const callback1 = obj2.useCallback(() => {
+    if (onFirstFrame != null) {
+      tmp();
     }
-    if (null != closure_12.current) {
+    if (null != ref.current) {
       const _clearTimeout = clearTimeout;
-      clearTimeout(closure_12.current);
+      clearTimeout(tmp3.current);
     }
-    closure_12.current = setTimeout(() => {
-      outer1_11(true);
-      outer1_12.current = null;
-    }, closure_12);
+    ref.current = setTimeout(() => {
+      callback(true);
+      closure_12.current = null;
+    }, ref);
   }, items3);
   const items5 = [handleVideoProgress];
-  callback2 = flag.useCallback((arg0) => {
+  callback2 = obj2.useCallback((arg0) => {
     callback();
-    if (null != handleVideoError) {
-      handleVideoError(arg0);
+    if (handleVideoError != null) {
+      tmp2(arg0);
     }
   }, items4);
-  const callback3 = flag.useCallback((currentTime) => {
+  const callback3 = obj2.useCallback((currentTime) => {
     if (currentTime.currentTime > 0) {
       _undefined(true);
     }
     handleVideoProgress(currentTime);
   }, items5);
-  let obj5 = bounty(handleVideoError[12]);
+  const tmp6 = onFirstFrame(flag.useState(false), 2);
   class Ce {
     constructor() {
       obj = { opacity: useSharedValue.get() };
@@ -205,15 +205,16 @@ export const BountyVideo = function BountyVideo(bounty) {
   Ce.__closure = { posterOpacity: sharedValue };
   Ce.__workletHash = 4975136521719;
   Ce.__initData = closure_16;
-  const animatedStyle = obj5.useAnimatedStyle(Ce);
-  let obj6 = bounty(handleVideoError[12]);
+  const animatedStyle = bounty(handleVideoError[12]).useAnimatedStyle(Ce);
+  const tmp2Result1 = bounty(handleVideoError[12]);
   class Ae {
     constructor() {
-      if (null != closure_5) {
-        tmp2 = closure_5;
-        value = closure_5.get();
+      obj = closure_5;
+      if (closure_5 != null) {
+        value = obj.get();
       }
-      obj = {};
+      tmp2 = bounty;
+      tmp3 = handleVideoError;
       obj2 = bounty(handleVideoError[14]);
       num = 0;
       if (c4) {
@@ -223,169 +224,174 @@ export const BountyVideo = function BountyVideo(bounty) {
           num = 1;
         }
       }
-      obj.opacity = obj2.withTiming(num, bounty(handleVideoError[15]).timingStandard);
+      obj = { opacity: obj2.withTiming(num, tmp2(tmp3[15]).timingStandard) };
       return obj;
     }
   }
-  obj = { isScrollingInBoundsSharedValue, withTiming: bounty(handleVideoError[14]).withTiming, isActive: flag, timingStandard: bounty(handleVideoError[15]).timingStandard };
+  obj = { isScrollingInBoundsSharedValue, withTiming: tmp2(tmp3[14]).withTiming, isActive: flag, timingStandard: tmp2(tmp3[15]).timingStandard };
   Ae.__closure = obj;
   Ae.__workletHash = 12676706441349;
   Ae.__initData = closure_17;
-  const animatedStyle1 = obj6.useAnimatedStyle(Ae);
-  let obj8 = bounty(handleVideoError[12]);
+  const animatedStyle1 = bounty(handleVideoError[12]).useAnimatedStyle(Ae);
+  const tmp2Result2 = bounty(handleVideoError[12]);
   class Fe {
     constructor() {
+      obj = peekScale;
       if (null == peekScale) {
         return {};
       } else {
-        tmp = peekScale;
-        value = peekScale.get();
-        obj = {};
-        obj = {};
+        value = obj.get();
+        obj = { transform: null };
+        obj1 = { translateY: null };
         num = 1;
-        tmp4 = bounty;
-        tmp5 = handleVideoError;
-        num2 = 16;
+        tmp3 = bounty;
+        tmp4 = handleVideoError;
         diff = 1 - value;
         diff1 = 1 - bounty(handleVideoError[16]).AUTO_SCROLL_PEEK_SCALE;
-        obj.translateY = diff / diff1 * bounty(handleVideoError[16]).AUTO_SCROLL_PEEK_TOP_OFFSET;
+        obj1[0] = diff / diff1 * bounty(handleVideoError[16]).AUTO_SCROLL_PEEK_TOP_OFFSET;
         items = [, ];
-        items[0] = obj;
-        obj1 = {};
-        obj1.scale = value;
-        items[1] = obj1;
-        obj.transform = items;
+        items[0] = obj1;
+        obj2 = { scale: null };
+        obj2[0] = value;
+        items[1] = obj2;
+        obj[0] = items;
         return obj;
       }
     }
   }
-  obj = { peekScale, AUTO_SCROLL_PEEK_SCALE: bounty(handleVideoError[16]).AUTO_SCROLL_PEEK_SCALE, AUTO_SCROLL_PEEK_TOP_OFFSET: bounty(handleVideoError[16]).AUTO_SCROLL_PEEK_TOP_OFFSET };
+  obj = { peekScale, AUTO_SCROLL_PEEK_SCALE: tmp2(tmp3[16]).AUTO_SCROLL_PEEK_SCALE, AUTO_SCROLL_PEEK_TOP_OFFSET: tmp2(tmp3[16]).AUTO_SCROLL_PEEK_TOP_OFFSET };
   Fe.__closure = obj;
   Fe.__workletHash = 7501077341815;
   Fe.__initData = closure_18;
-  let tmp25 = isCtaVisible;
-  const animatedStyle2 = obj8.useAnimatedStyle(Fe);
+  let tmp28 = isCtaVisible;
+  const animatedStyle2 = bounty(handleVideoError[12]).useAnimatedStyle(Fe);
   if (isBountiesVerticalScrollExperimentEnabled) {
-    let tmp26 = isCtaVisible;
+    let tmp29 = isCtaVisible;
     if (isCtaVisible) {
-      tmp26 = !isEndCardVisible;
+      tmp29 = !isEndCardVisible;
     }
-    tmp25 = tmp26;
+    tmp28 = tmp29;
   }
-  obj1 = {};
-  obj2 = { style: items6 };
+  obj1 = { style: items6, children: null };
   items6 = [width.absoluteFillObject, tmp.peekOrigin, animatedStyle2];
-  const obj3 = { style: tmp.videoContainer };
-  let tmp31Result = null;
+  obj2 = { style: tmp.videoContainer, children: null };
+  let tmp35Result = null;
   if (shouldLoadHls) {
-    obj4 = { ref: playerRef };
-    obj5 = { uri: bounty.videoHls };
-    obj4.source = obj5;
-    let tmp34 = !stage1Enabled;
-    if (tmp34) {
-      tmp34 = !ownedByVerticalScrollExperiment;
+    const obj3 = { ref: null, source: null, automaticallyWaitsToMinimizeStalling: null, maxBitRate: null, bufferConfig: null, preferredForwardBufferDuration: null, initialProgress: null, isFullscreen: false, externallyPaused: null, style: null, contentInsets: null, onProgress: null, onEnd: null, onPausePlayback: null, onResumePlayback: null, onError: null, onLoadStart: null, onBuffer: null, onReadyForDisplay: null, onVideoTracks: null, hideControls: null, showSkipButtons: false, repeat: null, bufferingSpinnerPlacement: "center", onPlayerStateChange: null };
+    obj3[0] = playerRef;
+    const obj4 = { uri: null };
+    obj4[0] = bounty.videoHls;
+    obj3[1] = obj4;
+    let tmp36 = !stage1Enabled;
+    if (!stage1Enabled) {
+      tmp36 = !ownedByVerticalScrollExperiment;
     }
-    obj4.automaticallyWaitsToMinimizeStalling = tmp34;
+    obj3[2] = tmp36;
     let prop;
     if (flag3) {
-      prop = bounty(handleVideoError[18]).SOFT_CAP_PRELOAD_MAX_BITRATE;
+      prop = tmp2(tmp3[18]).SOFT_CAP_PRELOAD_MAX_BITRATE;
     }
-    obj4.maxBitRate = prop;
+    obj3[3] = prop;
     let prop1;
     if (flag3) {
-      prop1 = bounty(handleVideoError[18]).SOFT_CAP_PRELOAD_BUFFER_CONFIG;
+      prop1 = tmp2(tmp3[18]).SOFT_CAP_PRELOAD_BUFFER_CONFIG;
     }
-    obj4.bufferConfig = prop1;
+    obj3[4] = prop1;
     let prop2;
     if (flag3) {
-      prop2 = bounty(handleVideoError[18]).SOFT_CAP_PRELOAD_FORWARD_BUFFER_SEC;
+      prop2 = tmp2(tmp3[18]).SOFT_CAP_PRELOAD_FORWARD_BUFFER_SEC;
     }
-    obj4.preferredForwardBufferDuration = prop2;
-    obj4.initialProgress = initialProgress;
-    obj4.isFullscreen = false;
-    obj4.externallyPaused = !flag || isEndCardVisible || flag2;
-    obj4.style = width.absoluteFillObject;
-    obj4.contentInsets = sharedValue;
-    obj4.onProgress = callback3;
-    obj4.onEnd = handleVideoEnd;
-    obj4.onPausePlayback = handleVideoPaused;
-    obj4.onResumePlayback = handleVideoResumed;
-    obj4.onError = callback2;
-    obj4.onLoadStart = onLoadStart;
-    obj4.onBuffer = onBuffer;
-    obj4.onReadyForDisplay = callback1;
-    obj4.onVideoTracks = onVideoTracks;
-    obj4.hideControls = isEndCardVisible;
-    obj4.showSkipButtons = false;
-    obj4.repeat = repeat;
-    obj4.bufferingSpinnerPlacement = "center";
-    obj4.onPlayerStateChange = onPlayerStateChange;
-    tmp31Result = callback(bounty(handleVideoError[17]).AdVideoPlayer, obj4);
-    const tmp31 = callback;
+    obj3[5] = prop2;
+    obj3[6] = initialProgress;
+    let tmp40 = !flag;
+    if (flag) {
+      tmp40 = isEndCardVisible;
+    }
+    if (!tmp40) {
+      tmp40 = flag2;
+    }
+    obj3[8] = tmp40;
+    obj3[9] = tmp32.absoluteFillObject;
+    obj3[10] = sharedValue;
+    obj3[11] = callback3;
+    obj3[12] = handleVideoEnd;
+    obj3[13] = handleVideoPaused;
+    obj3[14] = handleVideoResumed;
+    obj3[15] = callback2;
+    obj3[16] = onLoadStart;
+    obj3[17] = onBuffer;
+    obj3[18] = callback1;
+    obj3[19] = onVideoTracks;
+    obj3[20] = isEndCardVisible;
+    obj3[22] = repeat;
+    obj3[24] = onPlayerStateChange;
+    tmp35Result = callback(tmp2(tmp3[17]).AdVideoPlayer, obj3);
+    const tmp35 = callback;
   }
-  const items7 = [tmp31Result, , , , ];
+  const items7 = [tmp35Result, , , , ];
   if (null != memo) {
-    obj6 = {};
+    const obj5 = { style: null, pointerEvents: "none", children: null };
     const items8 = [tmp.poster, animatedStyle];
-    obj6.style = items8;
-    obj6.pointerEvents = "none";
-    const obj7 = { style: width.absoluteFillObject };
-    obj8 = { uri: memo };
-    obj7.source = obj8;
-    obj7.resizeMode = "cover";
-    const items9 = [callback(handleVideoProgress(handleVideoError[19]), obj7), ];
-    let tmp55 = !first;
-    if (tmp55) {
-      const obj9 = { animating: true, size: "small", color: token };
-      tmp55 = callback(height, obj9);
+    obj5[0] = items8;
+    const obj6 = { style: null, source: null, resizeMode: "cover" };
+    obj6[0] = tmp32.absoluteFillObject;
+    const obj7 = { uri: null };
+    obj7[0] = memo;
+    obj6[1] = obj7;
+    const items9 = [callback(tmp12(tmp3[19]), obj6), ];
+    let tmp44Result = !first;
+    if (!first) {
+      const obj8 = { animating: true, size: "small", color: null };
+      obj8[2] = token;
+      tmp44Result = tmp44(height, obj8);
     }
-    items9[1] = tmp55;
-    obj6.children = items9;
-    let tmp50Result = first(handleVideoProgress(handleVideoError[12]).View, obj6);
-    const tmp50 = first;
+    items9[1] = tmp44Result;
+    obj5[2] = items9;
+    let tmp30Result = tmp30(tmp12(tmp3[12]).View, obj5);
+    let tmp42 = tmp44;
   } else {
-    const obj10 = {};
+    tmp42 = callback;
+    const obj9 = { style: null, pointerEvents: "none" };
     const items10 = [tmp.poster, animatedStyle];
-    obj10.style = items10;
-    obj10.pointerEvents = "none";
-    tmp50Result = callback(handleVideoProgress(handleVideoError[12]).View, obj10);
+    obj9[0] = items10;
+    tmp30Result = callback(tmp12(tmp3[12]).View, obj9);
   }
-  items7[1] = tmp50Result;
+  items7[1] = tmp30Result;
   let renderEndCardResult;
-  if (null != renderEndCard) {
+  if (renderEndCard != null) {
     renderEndCardResult = renderEndCard();
   }
   items7[2] = renderEndCardResult;
   if (isScrollIndicatorEnabled) {
-    const obj11 = { opacityStyle: animatedStyle1 };
+    const obj10 = { opacityStyle: null, enabled: null, isEndCardVisible: null };
+    obj10[0] = animatedStyle1;
     if (flag) {
-      flag = tmp5;
+      flag = tmp7;
     }
-    obj11.enabled = flag;
-    obj11.isEndCardVisible = isEndCardVisible;
-    isScrollIndicatorEnabled = callback(handleVideoProgress(handleVideoError[20]), obj11);
-    const tmp59 = callback;
-    const tmp62 = handleVideoProgress(handleVideoError[20]);
+    obj10[1] = flag;
+    obj10[2] = isEndCardVisible;
+    isScrollIndicatorEnabled = tmp42(tmp12(tmp3[20]), obj10);
+    const tmp12Result = tmp12(tmp3[20]);
   }
+  const obj11 = { children: null };
   items7[3] = isScrollIndicatorEnabled;
-  const obj12 = { style: items11, pointerEvents: "box-none" };
+  const obj12 = { style: items11, pointerEvents: "box-none", children: null };
   items11 = [width.absoluteFillObject, animatedStyle1];
-  const obj13 = { bounty, visible: tmp25, sourceQuestContent };
-  obj12.children = callback(handleVideoProgress(handleVideoError[21]), obj13);
-  items7[4] = callback(handleVideoProgress(handleVideoError[12]).View, obj12);
-  obj3.children = items7;
-  const items12 = [first(isScrollingInBoundsSharedValue, obj3), ];
-  const obj14 = { style: items13 };
+  obj12[2] = tmp42(handleVideoProgress(handleVideoError[21]), { bounty, visible: tmp28, sourceQuestContent });
+  items7[4] = tmp42(handleVideoProgress(handleVideoError[12]).View, obj12);
+  obj2[1] = items7;
+  const items12 = [first(isScrollingInBoundsSharedValue, obj2), ];
+  const obj13 = { style: items13, children: null };
   items13 = [tmp.progress, animatedStyle1];
-  obj14.children = callback(handleVideoProgress(handleVideoError[9]), { progress: normalizedProgress, visible: isProgressBarVisible });
-  items12[1] = callback(handleVideoProgress(handleVideoError[12]).View, obj14);
-  obj2.children = items12;
-  const items14 = [first(handleVideoProgress(handleVideoError[12]).View, obj2), ];
-  const obj15 = { style: items15 };
+  obj13[1] = tmp42(handleVideoProgress(handleVideoError[9]), { progress: normalizedProgress, visible: isProgressBarVisible });
+  items12[1] = tmp42(handleVideoProgress(handleVideoError[12]).View, obj13);
+  obj1[1] = items12;
+  const items14 = [first(handleVideoProgress(handleVideoError[12]).View, obj1), ];
+  const obj14 = { style: items15, children: null };
   items15 = [tmp.leftRow, animatedStyle1];
-  const items16 = [callback(handleVideoProgress(handleVideoError[22]), { isCompleted, totalSeconds: rewardTotalSeconds, remainingSeconds: rewardRemainingSeconds }), callback(bounty(handleVideoError[23]).BalanceWidgetPill, { balance: orbsBalance }, balanceWidgetPillResetKey)];
-  obj15.children = items16;
-  items14[1] = first(handleVideoProgress(handleVideoError[12]).View, obj15);
-  obj1.children = items14;
-  return first(c11, obj1);
+  const items16 = [tmp42(handleVideoProgress(handleVideoError[22]), { isCompleted, totalSeconds: rewardTotalSeconds, remainingSeconds: rewardRemainingSeconds }), tmp42(bounty(handleVideoError[23]).BalanceWidgetPill, { balance: orbsBalance }, balanceWidgetPillResetKey)];
+  obj14[1] = items16;
+  items14[1] = first(handleVideoProgress(handleVideoError[12]).View, obj14);
+  obj11[0] = items14;
+  return first(c11, obj11);
 };

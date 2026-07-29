@@ -1,27 +1,27 @@
-// Module ID: 10540
-// Function ID: 81542
+// Module ID: 10564
+// Function ID: 10565
 // Name: __INTERNAL_VIEW_CONFIG
-// Dependencies: [110, 42, 117, 2]
+// Dependencies: [106, 65, 114, 2]
 
-// Module 10540 (__INTERNAL_VIEW_CONFIG)
+// Module 10564 (__INTERNAL_VIEW_CONFIG)
 import weakSet from "weakSet";
-import get from "get";
+import setRuntimeConfigProvider from "setRuntimeConfigProvider";
 
-let obj = { uiViewClassName: "DCDZoomLayoutAndroid", directEventTypes: { topZoomChanged: { registrationName: "onZoomChanged" } } };
+let obj = { uiViewClassName: "DCDZoomLayoutAndroid", directEventTypes: { topZoomChanged: { registrationName: "onZoomChanged" } }, validAttributes: null };
 obj = { gestureEnabled: true, minimumZoomScale: true, maximumZoomScale: true };
 const merged = Object.assign(weakSet.ConditionallyIgnoredEventHandlers({ onZoomChanged: true }));
-obj.validAttributes = obj;
+obj[2] = obj;
 obj = {
-  zoomTo(nodeFromPublicInstance) {
+  zoomTo(arg0, arg1, arg2, arg3, arg4) {
     const items = [arg1, arg2, arg3, arg4];
-    require(117) /* renderElement */.dispatchCommand(nodeFromPublicInstance, "zoomTo", items);
+    require(114) /* renderElement */.dispatchCommand(arg0, "zoomTo", items);
   },
-  unzoom(nodeFromPublicInstance) {
+  unzoom(arg0, arg1) {
     const items = [arg1];
-    require(117) /* renderElement */.dispatchCommand(nodeFromPublicInstance, "unzoom", items);
+    require(114) /* renderElement */.dispatchCommand(arg0, "unzoom", items);
   }
 };
-const value = get.get("DCDZoomLayoutAndroid", () => obj);
+const value = setRuntimeConfigProvider.get("DCDZoomLayoutAndroid", () => obj);
 const result = require("renderElement").fileFinishedImporting("../discord_common/js/packages/rtn-codegen/js/ZoomLayoutNativeComponent.tsx");
 
 export default value;

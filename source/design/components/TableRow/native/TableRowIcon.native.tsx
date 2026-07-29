@@ -1,42 +1,42 @@
-// Module ID: 5204
-// Function ID: 45121
+// Module ID: 5226
+// Function ID: 5227
 // Name: TableRowIcon
-// Dependencies: [29, 31, 27, 33, 4165, 689, 4580, 2]
+// Dependencies: [109, 19, 17, 21, 4189, 712, 4602, 2]
 // Exports: TableRowIcon
 
-// Module 5204 (TableRowIcon)
+// Module 5226 (TableRowIcon)
 import _objectWithoutProperties from "_objectWithoutProperties";
-import "result";
+import "noop";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
 const require = arg1;
 let closure_3 = ["color"];
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { width: require("_createForOfIteratorHelperLoose").modules.mobile.TABLE_ROW_ICON_SIZE, height: require("_createForOfIteratorHelperLoose").modules.mobile.TABLE_ROW_ICON_SIZE, justifyContent: "center", alignItems: "center", borderRadius: require("_createForOfIteratorHelperLoose").radii.lg };
-_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.default = { color: require("_createForOfIteratorHelperLoose").colors.TABLEROW_ICON_COLOR_DEFAULT };
-const obj1 = { color: require("_createForOfIteratorHelperLoose").colors.TABLEROW_ICON_COLOR_DEFAULT };
-_createForOfIteratorHelperLoose.statusOnline = { color: require("_createForOfIteratorHelperLoose").colors.TEXT_STATUS_ONLINE };
-const obj2 = { color: require("_createForOfIteratorHelperLoose").colors.TEXT_STATUS_ONLINE };
-_createForOfIteratorHelperLoose.statusIdle = { color: require("_createForOfIteratorHelperLoose").colors.TEXT_STATUS_IDLE };
-const obj3 = { color: require("_createForOfIteratorHelperLoose").colors.TEXT_STATUS_IDLE };
-_createForOfIteratorHelperLoose.statusDND = { color: require("_createForOfIteratorHelperLoose").colors.TEXT_STATUS_DND };
-const obj4 = { color: require("_createForOfIteratorHelperLoose").colors.TEXT_STATUS_DND };
-_createForOfIteratorHelperLoose.statusOffline = { color: require("_createForOfIteratorHelperLoose").colors.TEXT_STATUS_OFFLINE };
-const obj5 = { color: require("_createForOfIteratorHelperLoose").colors.TEXT_STATUS_OFFLINE };
-_createForOfIteratorHelperLoose.xbox = { backgroundColor: require("_createForOfIteratorHelperLoose").unsafe_rawColors.PLATFORM_XBOX, color: require("_createForOfIteratorHelperLoose").colors.WHITE };
-const obj6 = { backgroundColor: require("_createForOfIteratorHelperLoose").unsafe_rawColors.PLATFORM_XBOX, color: require("_createForOfIteratorHelperLoose").colors.WHITE };
-_createForOfIteratorHelperLoose.playstation = { backgroundColor: require("_createForOfIteratorHelperLoose").unsafe_rawColors.PLATFORM_PLAYSTATION, color: require("_createForOfIteratorHelperLoose").colors.WHITE };
-const obj7 = { backgroundColor: require("_createForOfIteratorHelperLoose").unsafe_rawColors.PLATFORM_PLAYSTATION, color: require("_createForOfIteratorHelperLoose").colors.WHITE };
-_createForOfIteratorHelperLoose.danger = { color: require("_createForOfIteratorHelperLoose").colors.TEXT_FEEDBACK_CRITICAL };
-const obj8 = { color: require("_createForOfIteratorHelperLoose").colors.TEXT_FEEDBACK_CRITICAL };
-_createForOfIteratorHelperLoose.secondary = { color: require("_createForOfIteratorHelperLoose").colors.INTERACTIVE_TEXT_DEFAULT };
-const obj9 = { color: require("_createForOfIteratorHelperLoose").colors.INTERACTIVE_TEXT_DEFAULT };
-_createForOfIteratorHelperLoose.translucent = { color: require("_createForOfIteratorHelperLoose").colors.WHITE };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-const obj10 = { color: require("_createForOfIteratorHelperLoose").colors.WHITE };
+createCacheKey = { container: null, default: null, statusOnline: null, statusIdle: null, statusDND: null, statusOffline: null, xbox: null, playstation: null, danger: null, secondary: null, translucent: null };
+createCacheKey = { width: require("Themes").modules.mobile.TABLE_ROW_ICON_SIZE, height: require("Themes").modules.mobile.TABLE_ROW_ICON_SIZE, justifyContent: "center", alignItems: "center", borderRadius: require("Themes").radii.lg };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { color: require("Themes").colors.TABLEROW_ICON_COLOR_DEFAULT };
+const obj1 = { color: require("Themes").colors.TABLEROW_ICON_COLOR_DEFAULT };
+createCacheKey[2] = { color: require("Themes").colors.TEXT_STATUS_ONLINE };
+const obj2 = { color: require("Themes").colors.TEXT_STATUS_ONLINE };
+createCacheKey[3] = { color: require("Themes").colors.TEXT_STATUS_IDLE };
+const obj3 = { color: require("Themes").colors.TEXT_STATUS_IDLE };
+createCacheKey[4] = { color: require("Themes").colors.TEXT_STATUS_DND };
+const obj4 = { color: require("Themes").colors.TEXT_STATUS_DND };
+createCacheKey[5] = { color: require("Themes").colors.TEXT_STATUS_OFFLINE };
+const obj5 = { color: require("Themes").colors.TEXT_STATUS_OFFLINE };
+createCacheKey[6] = { backgroundColor: require("Themes").unsafe_rawColors.PLATFORM_XBOX, color: require("Themes").colors.WHITE };
+const obj6 = { backgroundColor: require("Themes").unsafe_rawColors.PLATFORM_XBOX, color: require("Themes").colors.WHITE };
+createCacheKey[7] = { backgroundColor: require("Themes").unsafe_rawColors.PLATFORM_PLAYSTATION, color: require("Themes").colors.WHITE };
+const obj7 = { backgroundColor: require("Themes").unsafe_rawColors.PLATFORM_PLAYSTATION, color: require("Themes").colors.WHITE };
+createCacheKey[8] = { color: require("Themes").colors.TEXT_FEEDBACK_CRITICAL };
+const obj8 = { color: require("Themes").colors.TEXT_FEEDBACK_CRITICAL };
+createCacheKey[9] = { color: require("Themes").colors.INTERACTIVE_TEXT_DEFAULT };
+const obj9 = { color: require("Themes").colors.INTERACTIVE_TEXT_DEFAULT };
+createCacheKey[10] = { color: require("Themes").colors.WHITE };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+const obj10 = { color: require("Themes").colors.WHITE };
 const result = require("get ActivityIndicator").fileFinishedImporting("design/components/TableRow/native/TableRowIcon.native.tsx");
 
 export const TableRowIcon = function TableRowIcon(arg0) {
@@ -47,61 +47,66 @@ export const TableRowIcon = function TableRowIcon(arg0) {
   if (variant === undefined) {
     variant = "default";
   }
-  const tmp = _createForOfIteratorHelperLoose();
-  if ("default" === variant) {
-    let translucent = tmp.default;
-  } else if ("text-status-online" === variant) {
-    translucent = tmp.statusOnline;
-  } else if ("text-status-idle" === variant) {
-    translucent = tmp.statusIdle;
-  } else if ("text-status-dnd" === variant) {
-    translucent = tmp.statusDND;
-  } else if ("text-status-offline" === variant) {
-    translucent = tmp.statusOffline;
-  } else if ("xbox" === variant) {
-    translucent = tmp.xbox;
-  } else if ("playstation" === variant) {
-    translucent = tmp.playstation;
-  } else if ("danger" === variant) {
-    translucent = tmp.danger;
-  } else if ("secondary" === variant) {
-    translucent = tmp.secondary;
-  } else if ("translucent" === variant) {
-    translucent = tmp.translucent;
-  }
-  const color = translucent.color;
-  if ("default" === variant) {
-    let REFRESH_SMALL_16 = require(4580) /* getIconSize */.IconSizes.MEDIUM;
-  } else {
-    REFRESH_SMALL_16 = require(4580) /* getIconSize */.IconSizes.REFRESH_SMALL_16;
-  }
-  let str8 = "md";
-  if ("default" !== variant) {
-    str8 = "md";
-    if ("danger" !== variant) {
-      str8 = "md";
-      if ("secondary" !== variant) {
-        str8 = "md";
-        if ("translucent" !== variant) {
-          str8 = "sm";
+  const translucent = tmp.translucent;
+  while (true) {
+    let color = translucent.color;
+    let tmp2 = callback;
+    let tmp3 = closure_3;
+    let str = "default";
+    let tmp4 = callback(translucent, closure_3);
+    if ("default" === variant) {
+      let tmp7 = require;
+      let tmp8 = dependencyMap;
+      let REFRESH_SMALL_16 = require(4602) /* IconSizes */.IconSizes.MEDIUM;
+      let tmp6 = dependencyMap;
+    } else {
+      let tmp5 = require;
+      tmp6 = dependencyMap;
+      REFRESH_SMALL_16 = require(4602) /* IconSizes */.IconSizes.REFRESH_SMALL_16;
+    }
+    let str2 = "md";
+    let str3 = "md";
+    if ("default" !== variant) {
+      let str4 = "danger";
+      str3 = "md";
+      if ("danger" !== variant) {
+        let str5 = "secondary";
+        str3 = "md";
+        if ("secondary" !== variant) {
+          let str6 = "translucent";
+          str3 = "md";
+          if ("translucent" !== variant) {
+            str3 = "sm";
+          }
         }
       }
     }
-  }
-  if (null == source) {
-    if (null == IconComponent) {
-      return null;
+    let tmp9 = null;
+    if (null == source) {
+      let tmp10 = null;
+      if (null == IconComponent) {
+        return null;
+      }
     }
+    let tmp11 = jsx;
+    let obj = { style: null, children: null };
+    let items = [tmp.container, tmp4];
+    obj[0] = items;
+    let tmp12 = View;
+    if (null != IconComponent) {
+      obj = { size: null, color: null };
+      obj[0] = str3;
+      obj[1] = color;
+      let tmp11Result = tmp11(IconComponent, obj);
+    } else {
+      let tmp13 = importDefault;
+      obj = { color: null, source: null, size: null };
+      obj[0] = color;
+      obj[1] = source;
+      obj[2] = REFRESH_SMALL_16;
+      tmp11Result = tmp11(importDefault(4602), obj);
+    }
+    obj[1] = tmp11Result;
+    tmp11Result = tmp11(tmp12, obj);
   }
-  let obj = { style: items };
-  items = [tmp.container, callback(translucent, closure_3)];
-  if (null != IconComponent) {
-    obj = { size: str8, color };
-    let tmp13 = <IconComponent size={str8} color={color} />;
-  } else {
-    obj = { color, source, size: REFRESH_SMALL_16 };
-    tmp13 = jsx(importDefault(4580), { color, source, size: REFRESH_SMALL_16 });
-  }
-  obj.children = tmp13;
-  <View style={items} />;
 };

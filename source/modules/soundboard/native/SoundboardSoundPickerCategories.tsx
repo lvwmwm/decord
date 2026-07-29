@@ -1,24 +1,25 @@
-// Module ID: 15870
-// Function ID: 122304
+// Module ID: 15905
+// Function ID: 15906
 // Name: SoundCategoryItem
-// Dependencies: [31, 27, 15855, 1850, 653, 33, 4165, 689, 4620, 5548, 1212, 9602, 4129, 15868, 4695, 1273, 4687, 4134, 4135, 566, 3811, 6189, 1557, 4036, 8354, 2]
+// Dependencies: [19, 17, 15890, 1874, 676, 21, 4189, 712, 4642, 5566, 1236, 9624, 4153, 15903, 4717, 1297, 4709, 4158, 4159, 589, 3835, 6209, 1581, 4060, 8378, 2]
 
-// Module 15870 (SoundCategoryItem)
-import importAllResult from "result";
-import get_ActivityIndicator from "get ActivityIndicator";
-import { setSearchQuery } from "openExpressionPicker";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 15905 (SoundCategoryItem)
+import importAllResult from "initialize";
+import get_ActivityIndicator from "HapticFeedbackTypes";
+import { setSearchQuery } from "withEqualityFn";
+import mergeGuildAvatar from "mergeGuildAvatar";
 import ME from "ME";
-import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import jsxProd from "isSoundboardSectionNitroLocked";
+import createCacheKey from "createCacheKey";
 
 let CATEGORY_ICON_SIZE;
+let NODE_MARGIN;
 let NODE_SIZE;
-let closure_10;
-let closure_11;
-let closure_5;
+let c10;
+let c5;
+let c9;
 let closure_6;
-let closure_9;
+let unpackModuleId;
 const require = arg1;
 function SoundCategoryItem(style) {
   let category;
@@ -31,43 +32,46 @@ function SoundCategoryItem(style) {
   }
   const tmp = callback3();
   const type = category.categoryInfo.type;
-  if (require(4620) /* SoundButtonOverlay */.SoundboardSoundGridSectionType.GUILD === type) {
+  if (require(4642) /* SoundButtonOverlay */.SoundboardSoundGridSectionType.GUILD === type) {
     const guild = category.categoryInfo.guild;
     let name = guild.name;
-    let obj = { guild, style: tmp.guildItem };
-    let tmp7 = callback(importDefault(5548), obj);
-    let tmp8 = null;
-    let tmp6 = null;
-  } else if (require(4620) /* SoundButtonOverlay */.SoundboardSoundGridSectionType.FAVORITES === type) {
-    const intl3 = require(1212) /* getSystemLocale */.intl;
-    name = intl3.string(require(1212) /* getSystemLocale */.t.y3LQCG);
-    tmp6 = importDefault(9602);
-    tmp7 = null;
-    tmp8 = null;
-  } else if (require(4620) /* SoundButtonOverlay */.SoundboardSoundGridSectionType.FREQUENTLY_USED === type) {
-    const intl2 = require(1212) /* getSystemLocale */.intl;
-    name = intl2.string(require(1212) /* getSystemLocale */.t["+cGVV6"]);
-    obj = { style: tmp.keyboardItem };
-    tmp8 = callback(require(4129) /* ClockIcon */.ClockIcon, obj);
-    tmp7 = null;
-    tmp6 = null;
-  } else if (require(4620) /* SoundButtonOverlay */.SoundboardSoundGridSectionType.DEFAULTS === type) {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    name = intl.string(require(1212) /* getSystemLocale */.t.Rtvk9X);
-    tmp6 = importDefault(15868);
-    tmp7 = null;
-    tmp8 = null;
+    let obj = { guild: null, style: null };
+    obj[0] = guild;
+    obj[1] = tmp.guildItem;
+    let tmp13Result = callback(importDefault(5566), obj);
+    let tmp4 = null;
+    let tmp5 = null;
+  } else if (tmp2(4642).SoundboardSoundGridSectionType.FAVORITES === type) {
+    const intl3 = tmp2(1236).intl;
+    name = intl3.string(tmp2(1236).t.y3LQCG);
+    tmp4 = importDefault(9624);
+    tmp5 = null;
+    tmp13Result = null;
+  } else if (tmp2(4642).SoundboardSoundGridSectionType.FREQUENTLY_USED === type) {
+    const intl2 = tmp2(1236).intl;
+    name = intl2.string(tmp2(1236).t["+cGVV6"]);
+    obj = { style: null };
+    obj[0] = tmp.keyboardItem;
+    tmp5 = callback(tmp2(4153).ClockIcon, obj);
+    tmp4 = null;
+    tmp13Result = null;
+  } else if (tmp2(4642).SoundboardSoundGridSectionType.DEFAULTS === type) {
+    const intl = tmp2(1236).intl;
+    name = intl.string(tmp2(1236).t.Rtvk9X);
+    tmp4 = importDefault(15903);
+    tmp5 = null;
+    tmp13Result = null;
   } else {
+    tmp4 = null;
+    tmp5 = null;
+    tmp13Result = null;
     name = null;
-    tmp7 = null;
-    tmp8 = null;
-    tmp6 = null;
-    if (require(4620) /* SoundButtonOverlay */.SoundboardSoundGridSectionType.SEARCH === type) {
-      const intl4 = require(1212) /* getSystemLocale */.intl;
-      name = intl4.string(require(1212) /* getSystemLocale */.t.sKt3xS);
-      tmp6 = importDefault(15868);
-      tmp7 = null;
-      tmp8 = null;
+    if (tmp2(4642).SoundboardSoundGridSectionType.SEARCH === type) {
+      const intl4 = tmp2(1236).intl;
+      name = intl4.string(tmp2(1236).t.sKt3xS);
+      tmp4 = importDefault(15903);
+      tmp5 = null;
+      tmp13Result = null;
     }
   }
   obj = {
@@ -75,82 +79,94 @@ function SoundCategoryItem(style) {
       return callback(closure_1);
     },
     accessibilityRole: "button",
-    accessibilityLabel: name
+    accessibilityLabel: name,
+    children: null
   };
-  const obj1 = { style: items };
+  const obj1 = { style: items, children: null };
   items = [tmp.item, style.style];
-  if (null != tmp7) {
-    tmp8 = tmp7;
+  if (tmp13Result == null) {
+    tmp13Result = tmp5;
   }
-  if (null == tmp8) {
-    const obj2 = { style: tmp.keyboardItem, source: tmp6 };
-    tmp8 = callback(require(1273) /* Button */.Icon, obj2);
+  if (tmp13Result == null) {
+    const obj2 = { style: null, source: null };
+    obj2[0] = tmp.keyboardItem;
+    obj2[1] = tmp4;
+    tmp13Result = tmp13(tmp2(1297).Icon, obj2);
   }
-  const items1 = [tmp8, ];
+  const items1 = [tmp13Result, ];
   if (locked) {
-    const obj3 = { style: tmp.lockContainer };
-    const obj4 = { style: tmp.lock };
-    obj3.children = callback(require(4687) /* LockIcon */.LockIcon, obj4);
-    locked = callback(closure_5, obj3);
+    const obj3 = { style: null, children: null };
+    obj3[0] = tmp.lockContainer;
+    const obj4 = { style: null };
+    obj4[0] = tmp.lock;
+    obj3[1] = tmp13(tmp2(4709).LockIcon, obj4);
+    locked = tmp13(tmp15, obj3);
   }
   items1[1] = locked;
-  obj1.children = items1;
-  obj.children = closure_11(closure_5, obj1);
-  return callback(require(4695) /* PressableBase */.PressableOpacity, obj, name);
+  obj1[1] = items1;
+  obj[3] = closure_11(closure_5, obj1);
+  return callback(require(4717) /* PressableBase */.PressableOpacity, obj, name);
 }
 function getItemLayout(arg0, index) {
   return { length: closure_9, offset: closure_9 * index, index };
 }
+let c3 = importAllResult;
 const StyleSheet = get_ActivityIndicator.StyleSheet;
-({ View: closure_5, FlatList: closure_6 } = get_ActivityIndicator);
-({ CATEGORY_ICON_SIZE, EXPRESSION_FOOTER_HEIGHT: closure_9, NODE_SIZE } = ME);
-({ jsx: closure_10, jsxs: closure_11 } = jsxProd);
-let obj = {};
-obj = { borderTopWidth: StyleSheet.hairlineWidth, paddingHorizontal: 8, flexDirection: "row", alignItems: "center", backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SURFACE_HIGH, borderTopColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWEST };
-obj.container = obj;
-obj.item = { margin: ME.NODE_MARGIN, height: NODE_SIZE, width: NODE_SIZE, borderRadius: NODE_SIZE / 2, alignItems: "center", justifyContent: "center" };
-obj.fadedItem = { opacity: 0.5 };
-_createForOfIteratorHelperLoose = { opacity: 1, backgroundColor: require("_createForOfIteratorHelperLoose").colors.INTERACTIVE_BACKGROUND_ACTIVE };
-obj.activeItem = _createForOfIteratorHelperLoose;
-obj.guildItem = { height: CATEGORY_ICON_SIZE, width: CATEGORY_ICON_SIZE, borderRadius: CATEGORY_ICON_SIZE / 2 };
-obj.keyboardItem = { height: CATEGORY_ICON_SIZE, width: CATEGORY_ICON_SIZE };
-let obj2 = { width: 12, height: 12, position: "absolute", bottom: 0, end: 0, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW, borderRadius: require("_createForOfIteratorHelperLoose").radii.round, alignItems: "center", justifyContent: "center" };
-obj.lockContainer = obj2;
-let obj3 = { width: 7.5, height: 7.5, tintColor: require("_createForOfIteratorHelperLoose").colors.TEXT_DEFAULT };
-obj.lock = obj3;
-let closure_12 = _createForOfIteratorHelperLoose.createStyles(obj);
-let closure_13 = importAllResult.memo(importAllResult.forwardRef((arg0, arg1) => {
+({ View: c5, FlatList: closure_6 } = get_ActivityIndicator);
+({ CATEGORY_ICON_SIZE, EXPRESSION_FOOTER_HEIGHT: c9, NODE_SIZE, NODE_MARGIN } = ME);
+({ jsx: c10, jsxs: unpackModuleId } = jsxProd);
+let obj = { container: null, item: null, fadedItem: null, activeItem: null, guildItem: null, keyboardItem: null, lockContainer: null, lock: null };
+obj = { borderTopWidth: StyleSheet.hairlineWidth, paddingHorizontal: 8, flexDirection: "row", alignItems: "center", backgroundColor: require("Themes").colors.BACKGROUND_SURFACE_HIGH, borderTopColor: require("Themes").colors.BACKGROUND_BASE_LOWEST };
+obj[0] = obj;
+createCacheKey = { margin: NODE_MARGIN, height: NODE_SIZE, width: NODE_SIZE, borderRadius: NODE_SIZE / 2, alignItems: "center", justifyContent: "center" };
+obj[1] = createCacheKey;
+obj[2] = { opacity: 0.5 };
+obj[3] = { opacity: 1, backgroundColor: require("Themes").colors.INTERACTIVE_BACKGROUND_ACTIVE };
+obj[4] = { height: CATEGORY_ICON_SIZE, width: CATEGORY_ICON_SIZE, borderRadius: CATEGORY_ICON_SIZE / 2 };
+obj[5] = { height: CATEGORY_ICON_SIZE, width: CATEGORY_ICON_SIZE };
+let obj2 = { opacity: 1, backgroundColor: require("Themes").colors.INTERACTIVE_BACKGROUND_ACTIVE };
+obj[6] = { width: 12, height: 12, position: "absolute", bottom: 0, end: 0, backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW, borderRadius: require("Themes").radii.round, alignItems: "center", justifyContent: "center" };
+let obj3 = { width: 12, height: 12, position: "absolute", bottom: 0, end: 0, backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW, borderRadius: require("Themes").radii.round, alignItems: "center", justifyContent: "center" };
+obj[7] = { width: 7.5, height: 7.5, tintColor: require("Themes").colors.TEXT_DEFAULT };
+let closure_12 = createCacheKey.createStyles(obj);
+let closure_14 = importAllResult.memo(importAllResult.forwardRef((arg0, ref) => {
   const obj = {};
   const merged = Object.assign(arg0);
-  obj["ref"] = arg1;
+  obj.ref = ref;
   return callback(closure_6, obj);
 }));
+let obj4 = { width: 7.5, height: 7.5, tintColor: require("Themes").colors.TEXT_DEFAULT };
 const memoResult = importAllResult.memo(function SoundboardSoundPickerCategories(guildId) {
   let categories;
   let style;
   guildId = guildId.guildId;
   const categoryIndex = guildId.categoryIndex;
   const listRef = guildId.listRef;
+  let importAllResult;
+  let ref;
+  let closure_5;
+  let closure_6;
+  let callback2;
+  let stateFromStores;
   ({ categories, style } = guildId);
   const tmp = callback3();
-  const ref = importAllResult.useRef(null);
-  let closure_5 = importAllResult.useRef(null);
-  let closure_6 = importAllResult.useRef(null);
+  importAllResult = tmp;
+  ref = importAllResult.useRef(null);
+  closure_5 = importAllResult.useRef(null);
+  closure_6 = importAllResult.useRef(null);
   const items = [categoryIndex];
   const effect = importAllResult.useEffect(() => {
     if (null != ref.current) {
       if (null != ref2.current) {
         if (null != ref.current) {
           const result = categoryIndex * outer1_9;
-          let tmp7 = result > ref2.current;
-          if (!tmp7) {
-            tmp7 = result < ref.current;
-          }
           if (tmp7) {
-            const current = ref.current;
-            const obj = { offset: result };
+            const current = tmp3.current;
+            const obj = { offset: null };
+            obj[0] = result;
             current.scrollToOffset(obj);
           }
+          tmp7 = result > tmp2.current || result < tmp.current;
         }
       }
     }
@@ -166,17 +182,18 @@ const memoResult = importAllResult.memo(function SoundboardSoundPickerCategories
     closure_5.current = contentOffset.x;
     closure_6.current = contentOffset.x + nativeEvent.layoutMeasurement.width;
   }, []);
-  const callback2 = importAllResult.useCallback((arg0) => {
+  callback2 = importAllResult.useCallback((arg0) => {
     let closure_0 = arg0;
     callback2("");
     setImmediate(() => {
       let current;
-      if (null != outer1_2) {
-        current = outer1_2.current;
+      if (outer1_2 != null) {
+        current = tmp.current;
       }
       if (null != current) {
-        current = outer1_2.current;
-        const obj = { section: closure_0, item: 0 };
+        current = tmp.current;
+        const obj = { section: null, item: 0 };
+        obj[0] = closure_0;
         current.scrollToLocation(obj);
         const result = guildId(listRef[17]).triggerHapticFeedback(categoryIndex(listRef[18]).IMPACT_LIGHT);
         const obj2 = guildId(listRef[17]);
@@ -193,28 +210,28 @@ const memoResult = importAllResult.memo(function SoundboardSoundPickerCategories
     let item;
     ({ item, index } = arg0);
     let result = !stateFromStores;
-    if (result) {
+    if (!stateFromStores) {
       let obj = guildId(listRef[21]);
       result = obj.isSoundboardSectionNitroLocked(guildId, item.categoryInfo);
     }
-    obj = { category: item, index };
+    obj = { category: item, index, style: null, handlePressCategory: null, locked: null };
     if (null != categoryIndex) {
       if (index === categoryIndex) {
-        let fadedItem = tmp.activeItem;
+        let fadedItem = _undefined.activeItem;
       }
-      obj.style = fadedItem;
-      obj.handlePressCategory = callback2;
-      obj.locked = result;
+      obj[2] = fadedItem;
+      obj[3] = callback2;
+      obj[4] = result;
       return tmp5(tmp6, obj);
     }
-    fadedItem = tmp.fadedItem;
+    fadedItem = _undefined.fadedItem;
   }, items3);
-  obj = { hostName: "soundboard-footer" };
-  obj = { style: items4 };
+  obj = { hostName: "soundboard-footer", children: null };
+  obj = { style: items4, children: null };
   items4 = [tmp.container, { paddingBottom: categoryIndex(listRef[22])().bottom }, style];
   const items5 = [
     callback(categoryIndex(listRef[24]), { style: ref.absoluteFill }),
-    callback(closure_13, {
+    callback(closure_14, {
       ref,
       getItemLayout,
       onLayout: callback,
@@ -229,10 +246,10 @@ const memoResult = importAllResult.memo(function SoundboardSoundPickerCategories
       showsHorizontalScrollIndicator: false
     })
   ];
-  obj.children = items5;
-  obj.children = callback2(closure_5, obj);
+  obj[1] = items5;
+  obj[1] = callback2(closure_5, obj);
   return callback(guildId(listRef[23]).Portal, obj);
 });
-let result = require("openExpressionPicker").fileFinishedImporting("modules/soundboard/native/SoundboardSoundPickerCategories.tsx");
+let result = require("withEqualityFn").fileFinishedImporting("modules/soundboard/native/SoundboardSoundPickerCategories.tsx");
 
 export default memoResult;

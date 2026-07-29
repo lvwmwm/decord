@@ -1,17 +1,17 @@
-// Module ID: 5934
-// Function ID: 52494
+// Module ID: 5953
+// Function ID: 5954
 // Name: promise
 // Dependencies: [2]
 // Exports: notifyAboutTTI, schedulePostTTIEvent
 
-// Module 5934 (promise)
-let closure_0 = {
+// Module 5953 (promise)
+const obj = {
   resolve() {
 
   }
 };
 const promise = new Promise((resolve) => {
-  closure_0.resolve = resolve;
+  obj.resolve = resolve;
 });
 const result = require("set").fileFinishedImporting("modules/app_startup/PostTTIScheduler/PostTTIScheduler.tsx");
 
@@ -22,5 +22,5 @@ export const schedulePostTTIEvent = function schedulePostTTIEvent(arg0) {
   });
 };
 export const notifyAboutTTI = function notifyAboutTTI() {
-  closure_0.resolve(null);
+  obj.resolve(null);
 };

@@ -1,12 +1,12 @@
-// Module ID: 15904
-// Function ID: 122646
+// Module ID: 15939
+// Function ID: 15940
 // Name: SecureFramesCallVerificationBottomSheet
-// Dependencies: [31, 4237, 653, 33, 566, 8878, 8172, 8884, 1212, 8868, 2]
+// Dependencies: [19, 4261, 676, 21, 589, 8902, 8196, 8908, 1236, 8892, 2]
 // Exports: default
 
-// Module 15904 (SecureFramesCallVerificationBottomSheet)
-import result from "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 15939 (SecureFramesCallVerificationBottomSheet)
+import noop from "noop";
+import createRTCConnection from "createRTCConnection";
 import { AnalyticsSections } from "ME";
 import { jsx } from "jsxProd";
 
@@ -15,13 +15,13 @@ let result = require("ME").fileFinishedImporting("modules/rtc/native/SecureFrame
 
 export default function SecureFramesCallVerificationBottomSheet(channelId) {
   channelId = channelId.channelId;
-  let obj = channelId(566);
-  const items = [_isNativeReflectConstruct];
+  let obj = channelId(589);
+  const items = [createRTCConnection];
   const items1 = [channelId];
   const stateFromStores = obj.useStateFromStores(items, () => {
-    const secureFramesState = outer1_4.getSecureFramesState();
+    secureFramesState = secureFramesState.getSecureFramesState();
     let epochAuthenticator;
-    if (null != secureFramesState) {
+    if (secureFramesState != null) {
       epochAuthenticator = secureFramesState.epochAuthenticator;
     }
     return epochAuthenticator;
@@ -33,17 +33,17 @@ export default function SecureFramesCallVerificationBottomSheet(channelId) {
     obj = { message };
     channelId(outer1_2[6]).showShareActionSheet(obj, outer1_5.SECURE_FRAMES_STREAM_BOTTOM_SHEET);
   }, items1);
-  obj = {};
-  const intl = channelId(1212).intl;
-  obj.title = intl.string(channelId(1212).t.cTQI5t);
-  const intl2 = channelId(1212).intl;
-  obj.subtitle = intl2.string(channelId(1212).t["MPp7+C"]);
-  const intl3 = channelId(1212).intl;
-  obj = {};
-  const tmp3 = importDefault(8884);
-  obj.helpArticle = channelId(8868).getSecureFramesHelpdeskArticle();
-  obj.footer = intl3.format(channelId(1212).t.wKxADe, obj);
-  obj.epochAuthenticator = stateFromStores;
-  obj.onShareClick = callback;
-  return <tmp3 />;
+  obj = { title: null, subtitle: null, footer: null, epochAuthenticator: null, onShareClick: null };
+  const intl = channelId(1236).intl;
+  obj[0] = intl.string(channelId(1236).t.cTQI5t);
+  const intl2 = channelId(1236).intl;
+  obj[1] = intl2.string(channelId(1236).t["MPp7+C"]);
+  const intl3 = channelId(1236).intl;
+  obj = { helpArticle: null };
+  const tmp3 = importDefault(8908);
+  obj[0] = channelId(8892).getSecureFramesHelpdeskArticle();
+  obj[2] = intl3.format(channelId(1236).t.wKxADe, obj);
+  obj[3] = stateFromStores;
+  obj[4] = callback;
+  return <tmp3 helpArticle={null} />;
 };

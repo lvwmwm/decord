@@ -1,113 +1,104 @@
-// Module ID: 14903
-// Function ID: 113510
+// Module ID: 14929
+// Function ID: 14930
 // Name: DM_WIDTH
-// Dependencies: [57, 31, 27, 653, 33, 14904, 5156, 4165, 689, 4019, 14905, 14910, 14911, 14912, 4026, 14995, 14996, 15065, 10872, 2]
+// Dependencies: [32, 19, 17, 676, 21, 14930, 5178, 4189, 712, 4043, 14931, 14936, 14937, 14938, 4050, 15021, 15022, 15098, 10896, 2]
 
-// Module 14903 (DM_WIDTH)
+// Module 14929 (DM_WIDTH)
 import _slicedToArray from "_slicedToArray";
-import importAllResult from "result";
-import get_ActivityIndicator from "get ActivityIndicator";
+import importAllResult from "set";
+import get_ActivityIndicator from "GuildChannels";
 import ME from "ME";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_10;
-let closure_5;
+let c10;
+let c5;
+let c9;
 let closure_6;
-let closure_9;
-let require = arg1;
-({ View: closure_5, StyleSheet: closure_6 } = get_ActivityIndicator);
+const require = arg1;
+let c4 = importAllResult;
+({ View: c5, StyleSheet: closure_6 } = get_ActivityIndicator);
 const DM_WIDTH = ME.DM_WIDTH;
 ME = ME.ME;
-({ jsx: closure_9, jsxs: closure_10 } = jsxProd);
-let obj = {};
-obj = { position: "absolute", top: 0, left: DM_WIDTH, bottom: 0, right: 0, flexDirection: "row", borderLeftWidth: 1, borderTopWidth: 1, borderColor: require("_createForOfIteratorHelperLoose").colors.APP_FRAME_BORDER, borderTopLeftRadius: require("_createForOfIteratorHelperLoose").radii.xl };
-obj.sideContainer = obj;
-_createForOfIteratorHelperLoose = { borderTopLeftRadius: require("_createForOfIteratorHelperLoose").radii.xl - 1, borderTopRightRadius: require("_createForOfIteratorHelperLoose").radii.none };
-obj.side = _createForOfIteratorHelperLoose;
-obj.sideTablet = { borderTopRightRadius: require("_createForOfIteratorHelperLoose").modules.mobile.CHANNEL_DRAWER_CORNER_RADIUS };
-let closure_11 = _createForOfIteratorHelperLoose.createStyles(obj);
+({ jsx: c9, jsxs: c10 } = jsxProd);
+let obj = { sideContainer: null, side: null, sideTablet: null };
+obj = { position: "absolute", top: 0, left: DM_WIDTH, bottom: 0, right: 0, flexDirection: "row", borderLeftWidth: 1, borderTopWidth: 1, borderColor: require("Themes").colors.APP_FRAME_BORDER, borderTopLeftRadius: require("Themes").radii.xl };
+obj[0] = obj;
+createCacheKey = { borderTopLeftRadius: require("Themes").radii.xl - 1, borderTopRightRadius: require("Themes").radii.none };
+obj[1] = createCacheKey;
+obj[2] = { borderTopRightRadius: require("Themes").modules.mobile.CHANNEL_DRAWER_CORNER_RADIUS };
+let closure_11 = createCacheKey.createStyles(obj);
 let closure_12 = importAllResult.memo(function LeftMenuTabsInner() {
   let gesture;
   let homeDrawerState;
-  let isGuildSelected;
   let panelStyles;
-  let selectedChannelId;
-  let selectedGuildId;
-  let tmp = callback2();
-  const require = tmp;
-  ({ isGuildSelected, selectedGuildId, selectedChannelId } = (function useMainChannelsRouteInfo() {
-    let obj = tmp(outer1_2[5]);
-    tmp = outer1_3(obj.useGuildsRouteGuildAndChannelId(), 2);
-    const first = tmp[0];
-    const ref = outer1_4.useRef(first);
-    const items = [first];
-    const effect = outer1_4.useEffect(() => {
-      ref.current = first;
-    }, items);
-    let tmp5 = null != first;
-    if (tmp5) {
-      tmp5 = first !== outer1_8;
-    }
-    let tmp7 = isChatBesideChannelList(outer1_2[6])(ref);
-    obj = { isGuildSelected: tmp5 };
-    if (tmp5) {
-      tmp7 = first;
-    }
-    obj.selectedGuildId = tmp7;
-    obj.selectedChannelId = tmp[1];
-    return obj;
-  })());
-  isChatBesideChannelList = isChatBesideChannelList(4019)().isChatBesideChannelList;
-  let items = [tmp, isChatBesideChannelList];
-  const memo = importAllResult.useMemo(() => {
-    const items = [tmp.side, ];
+  const tmp = callback3();
+  let first;
+  let isChatBesideChannelList;
+  let obj = first(14930);
+  const tmp4 = callback(obj.useGuildsRouteGuildAndChannelId(), 2);
+  first = tmp4[0];
+  let obj1 = importAllResult;
+  const ref = importAllResult.useRef(first);
+  isChatBesideChannelList = ref;
+  let items = [first];
+  const effect = importAllResult.useEffect(() => {
+    isChatBesideChannelList.current = first;
+  }, items);
+  let tmp8 = null != first;
+  if (tmp8) {
+    tmp8 = first !== ME;
+  }
+  let tmp11 = isChatBesideChannelList(5178)(ref);
+  if (tmp8) {
+    tmp11 = first;
+  }
+  isChatBesideChannelList = tmp10(4043)().isChatBesideChannelList;
+  const items1 = [tmp, isChatBesideChannelList];
+  const memo = obj1.useMemo(() => {
+    const items = [first.side, ];
     let sideTablet = isChatBesideChannelList;
     if (isChatBesideChannelList) {
-      sideTablet = tmp.sideTablet;
+      sideTablet = first.sideTablet;
     }
     items[1] = sideTablet;
     return items;
-  }, items);
-  let obj = require(14905) /* HOME_DRAWER_FLING_PHYSICS */;
-  const homeGesture = obj.useHomeGesture();
+  }, items1);
+  const homeGesture = first(14931).useHomeGesture();
   ({ gesture, panelStyles, homeDrawerState } = homeGesture);
-  const sum = DM_WIDTH + isChatBesideChannelList(14910)();
-  obj = { value: homeDrawerState };
-  obj = { gesture };
-  const obj1 = {};
-  const items1 = [absoluteFill.absoluteFill, ];
-  const obj2 = {};
-  let tmp9;
+  const sum = DM_WIDTH + tmp10(14936)();
+  obj = { value: homeDrawerState, children: null };
+  obj = { gesture, children: null };
+  const items2 = [absoluteFill.absoluteFill, ];
+  let tmp18;
   if (isChatBesideChannelList) {
-    tmp9 = sum;
+    tmp18 = sum;
   }
-  obj2.width = tmp9;
-  items1[1] = obj2;
-  obj1.style = items1;
-  const items2 = [callback(require(14912) /* HomePanelContent */.HomePanelContent, {}), ];
-  const obj3 = { style: null, pointerEvents: "box-none", nativeID: "messages-parent-view" };
-  const items3 = [panelStyles, tmp.sideContainer];
-  obj3.style = items3;
-  const obj4 = {};
+  obj1 = { style: items2, children: null };
+  items2[1] = { width: tmp18 };
+  const items3 = [closure_9(first(14938).HomePanelContent, {}), ];
+  const obj2 = { style: items4, pointerEvents: "box-none", nativeID: "messages-parent-view", children: null };
+  items4 = [panelStyles, tmp.sideContainer];
   let num = 0;
-  if (isGuildSelected) {
+  if (tmp8) {
     num = 1;
   }
-  obj4.activeIndex = num;
-  const items4 = [callback(isChatBesideChannelList(14996), { style: memo }), callback(isChatBesideChannelList(15065), { style: memo, selectedGuildId, selectedChannelId })];
-  obj4.children = items4;
-  obj3.children = closure_10(require(14995) /* NativeFreezeScreens */.NativeFreezeScreens, obj4);
-  items2[1] = callback(isChatBesideChannelList(4026).View, obj3);
-  obj1.children = items2;
-  obj.children = closure_10(closure_5, obj1);
-  obj.children = callback(require(14911) /* NonCollapsableGestureDetector */.NonCollapsableGestureDetector, obj);
-  return callback(require(14905) /* HOME_DRAWER_FLING_PHYSICS */.HomeDrawerStateContext.Provider, obj);
+  const obj3 = { activeIndex: num, children: null };
+  const items5 = [closure_9(isChatBesideChannelList(15022), { style: memo }), closure_9(isChatBesideChannelList(15098), { style: memo, selectedGuildId: tmp11, selectedChannelId: tmp4[1] })];
+  obj3[1] = items5;
+  obj2[3] = closure_10(first(15021).NativeFreezeScreens, obj3);
+  items3[1] = closure_9(isChatBesideChannelList(4050).View, obj2);
+  obj1[1] = items3;
+  obj[1] = closure_10(closure_5, obj1);
+  obj[1] = closure_9(first(14937).NonCollapsableGestureDetector, obj);
+  return closure_9(first(14931).HomeDrawerStateContext.Provider, obj);
 });
-let obj2 = { borderTopRightRadius: require("_createForOfIteratorHelperLoose").modules.mobile.CHANNEL_DRAWER_CORNER_RADIUS };
+let obj2 = { borderTopRightRadius: require("Themes").modules.mobile.CHANNEL_DRAWER_CORNER_RADIUS };
 const memoResult = importAllResult.memo(function MainChannelsRedesignInner() {
-  const obj = { profile: require(10872) /* setLevels */.Profiles.LeftPanel, children: callback(closure_12, {}) };
-  return callback(importDefault(10872), obj);
+  const obj = { profile: null, children: null };
+  obj[0] = require(10896) /* setLevels */.Profiles.LeftPanel;
+  obj[1] = callback2(closure_12, {});
+  return callback2(importDefault(10896), obj);
 });
 const result = require("get ActivityIndicator").fileFinishedImporting("components_native/MainChannels.tsx");
 

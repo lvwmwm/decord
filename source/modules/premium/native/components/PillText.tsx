@@ -1,30 +1,30 @@
-// Module ID: 12443
-// Function ID: 96437
+// Module ID: 12465
+// Function ID: 12466
 // Name: PillText
-// Dependencies: [653, 33, 4165, 689, 12444, 4589, 4161, 2]
+// Dependencies: [676, 21, 4189, 712, 12466, 4611, 4185, 2]
 // Exports: default
 
-// Module 12443 (PillText)
+// Module 12465 (PillText)
 import { HorizontalGradient } from "ME";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let obj = {};
-obj = { paddingHorizontal: 8, borderRadius: require("_createForOfIteratorHelperLoose").radii.lg, justifyContent: "center" };
-obj.pillTextContainer = obj;
-obj.pillText = { textTransform: "uppercase" };
-let closure_5 = _createForOfIteratorHelperLoose.createStyles(obj);
-const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/premium/native/components/PillText.tsx");
+let obj = { pillTextContainer: null, pillText: null };
+obj = { paddingHorizontal: 8, borderRadius: require("Themes").radii.lg, justifyContent: "center" };
+obj[0] = obj;
+obj[1] = { textTransform: "uppercase" };
+let closure_5 = createCacheKey.createStyles(obj);
+const result = require("createCacheKey").fileFinishedImporting("modules/premium/native/components/PillText.tsx");
 
 export default function PillText(arg0) {
   let pillText;
   let style;
   ({ pillText, style } = arg0);
   const tmp = callback();
-  let obj = { style: items, start: HorizontalGradient.START, end: HorizontalGradient.END, colors: importDefault(12444)() };
+  let obj = { style: items, start: HorizontalGradient.START, end: HorizontalGradient.END, colors: importDefault(12466)(), children: null };
   items = [tmp.pillTextContainer, style];
-  const tmp2 = importDefault(12444)();
+  const tmp2 = importDefault(12466)();
   obj = { variant: "text-xs/semibold", color: "text-overlay-light", style: tmp.pillText, children: pillText };
-  obj.children = jsx(require(4161) /* Text */.Text, { variant: "text-xs/semibold", color: "text-overlay-light", style: tmp.pillText, children: pillText });
-  return jsx(importDefault(4589), { variant: "text-xs/semibold", color: "text-overlay-light", style: tmp.pillText, children: pillText });
+  obj[4] = jsx(require(4185) /* Text */.Text, { variant: "text-xs/semibold", color: "text-overlay-light", style: tmp.pillText, children: pillText });
+  return jsx(importDefault(4611), { variant: "text-xs/semibold", color: "text-overlay-light", style: tmp.pillText, children: pillText });
 };

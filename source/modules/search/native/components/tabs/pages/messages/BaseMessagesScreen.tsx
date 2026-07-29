@@ -1,18 +1,18 @@
-// Module ID: 15496
-// Function ID: 118097
+// Module ID: 15530
+// Function ID: 15531
 // Name: BaseMessagesScreen
-// Dependencies: [31, 5857, 10081, 9105, 33, 10080, 566, 10082, 15487, 15497, 11428, 15498, 15499, 15443, 15454, 2]
+// Dependencies: [19, 5875, 10102, 9129, 21, 10101, 589, 10103, 15521, 15531, 11452, 15532, 15533, 15476, 15488, 2]
 // Exports: default, trackMessageItemPress
 
-// Module 15496 (BaseMessagesScreen)
-import result from "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_5 from "_isNativeReflectConstruct";
+// Module 15530 (BaseMessagesScreen)
+import noop from "noop";
+import handleReaction from "handleReaction";
+import prototype from "prototype";
 import { SearchResultContentEntityTypes as closure_6 } from "SearchEntrypointAnalyticsLocations";
 import { jsx } from "jsxProd";
 
 const require = arg1;
-let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/search/native/components/tabs/pages/messages/BaseMessagesScreen.tsx");
+let result = require("prototype").fileFinishedImporting("modules/search/native/components/tabs/pages/messages/BaseMessagesScreen.tsx");
 
 export default function BaseMessagesScreen(data) {
   let ItemSeparatorComponent;
@@ -96,17 +96,25 @@ export default function BaseMessagesScreen(data) {
   }, items3);
   const items4 = [documentsIndexed, isHistoricalIndexing, searchContext, tab];
   if (stateFromStoresObject.isIndexing) {
-    obj = { searchContext };
-    let tmp11 = hasError(searchContext(tab[12]), obj);
+    obj = { searchContext: null };
+    obj[0] = searchContext;
+    let tmp11 = hasError(searchContext(tmp[12]), obj);
   } else {
     if (isErrorFullscreen) {
       if (!isNextPageLoading) {
-        obj1 = { text: errorText };
-        tmp11 = hasError(searchContext(tab[13]), obj1);
+        obj1 = { text: null };
+        obj1[0] = errorText;
+        tmp11 = hasError(searchContext(tmp[13]), obj1);
       }
     }
-    const obj2 = { contentContainerStyle, data, onEndReached: callback, ListHeaderComponent: tmp7, ItemSeparatorComponent, numColumns };
-    tmp11 = hasError(searchContext(tab[14]), obj2);
+    const obj2 = { contentContainerStyle: null, data: null, onEndReached: null, ListHeaderComponent: null, ItemSeparatorComponent: null, numColumns: null };
+    obj2[0] = contentContainerStyle;
+    obj2[1] = data;
+    obj2[2] = callback;
+    obj2[3] = tmp8;
+    obj2[4] = ItemSeparatorComponent;
+    obj2[5] = numColumns;
+    tmp11 = hasError(searchContext(tmp[14]), obj2);
   }
   return tmp11;
 };
@@ -117,17 +125,17 @@ export const trackMessageItemPress = function trackMessageItemPress(messageId) {
   messageId = messageId.messageId;
   ({ searchContext, channelId, index } = messageId);
   message = message.getMessage(messageId);
-  let obj = importDefault(10080);
-  obj = { searchContext, channelId, messageId };
+  let obj = importDefault(10101);
+  obj = { searchContext, channelId, messageId, userId: null, index: null, entityType: null };
   let id;
-  if (null != message) {
+  if (message != null) {
     const author = message.author;
-    if (null != author) {
+    if (author != null) {
       id = author.id;
     }
   }
-  obj.userId = id;
-  obj.index = index;
-  obj.entityType = constants.MESSAGE;
+  obj[3] = id;
+  obj[4] = index;
+  obj[5] = constants.MESSAGE;
   const result = obj.trackSearchResultClicked(obj);
 };

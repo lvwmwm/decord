@@ -1,64 +1,65 @@
-// Module ID: 5893
-// Function ID: 51796
+// Module ID: 5912
+// Function ID: 5913
 // Name: frozen
-// Dependencies: [483, 2]
+// Dependencies: [506, 2]
 
-// Module 5893 (frozen)
-import importAllResult from "fromHexReverseArray";
-import importAllResult1 from "fromHexReverseArray";
-import importAllResult2 from "fromHexReverseArray";
-import importAllResult3 from "fromHexReverseArray";
-import importAllResult4 from "fromHexReverseArray";
-import importAllResult5 from "fromHexReverseArray";
-import importAllResult6 from "fromHexReverseArray";
-import importAllResult7 from "fromHexReverseArray";
-import importAllResult8 from "fromHexReverseArray";
-import importAllResult9 from "fromHexReverseArray";
-import importAllResult10 from "fromHexReverseArray";
-import importAllResult11 from "fromHexReverseArray";
-import importAllResult12 from "fromHexReverseArray";
-import importAllResult13 from "fromHexReverseArray";
-import importAllResult14 from "fromHexReverseArray";
-import importAllResult15 from "fromHexReverseArray";
-import importAllResult16 from "fromHexReverseArray";
-import importAllResult17 from "fromHexReverseArray";
-import importAllResult18 from "fromHexReverseArray";
-import importAllResult19 from "fromHexReverseArray";
-import importAllResult20 from "fromHexReverseArray";
-import importAllResult21 from "fromHexReverseArray";
-import importAllResult22 from "fromHexReverseArray";
-import importAllResult23 from "fromHexReverseArray";
-import importAllResult24 from "fromHexReverseArray";
-import importAllResult25 from "fromHexReverseArray";
+// Module 5912 (frozen)
+import importAllResult from "fromString";
+import importAllResult1 from "fromString";
+import importAllResult2 from "fromString";
+import importAllResult3 from "fromString";
+import importAllResult4 from "fromString";
+import importAllResult5 from "fromString";
+import importAllResult6 from "fromString";
+import importAllResult7 from "fromString";
+import importAllResult8 from "fromString";
+import importAllResult9 from "fromString";
+import importAllResult10 from "fromString";
+import importAllResult11 from "fromString";
+import importAllResult12 from "fromString";
+import importAllResult13 from "fromString";
+import importAllResult14 from "fromString";
+import importAllResult15 from "fromString";
+import importAllResult16 from "fromString";
+import importAllResult17 from "fromString";
+import importAllResult18 from "fromString";
+import importAllResult19 from "fromString";
+import importAllResult20 from "fromString";
+import importAllResult21 from "fromString";
+import importAllResult22 from "fromString";
+import importAllResult23 from "fromString";
+import importAllResult24 from "fromString";
+import importAllResult25 from "fromString";
 
-let obj = { EMERGENCY_ONLY_USE_IF_YOU_HAVE_TO_FORCE_MARK_AGE_RESTRICTED: require("fromHexReverseArray") };
-obj.SEXUALLY_SUGGESTIVE_IMAGERY = require("set");
-obj.SEXUALLY_SUGGESTIVE_TEXT = require("set");
-obj.SEXUALLY_EXPLICIT_IMAGERY = require("module_3");
-obj.SEXUALLY_EXPLICIT_TEXT = require("module_4");
-obj.NUDITY = require("module_5");
-obj.DATING = require("module_6");
-obj.REGULATED_GOODS_USAGE = require("module_7");
-obj.REGULATED_GOODS_DEPICTION = require("module_8");
-obj.VIOLENCE_DOMESTIC_SIMULATED = require("module_9");
-obj.VIOLENCE_ANIMALS = require("module_10");
-obj.VIOLENCE_FANTASY = require("module_11");
-obj.VIOLENCE_GRAPHIC = require("module_12");
-obj.SELF_HARM_DEPICTION = require("module_13");
-obj.SELF_HARM_REFERENCE = require("module_14");
-obj.GAMBLING_REAL = require("module_15");
-obj.GAMBLING_SIMULATED = require("module_16");
-obj.PROFANITY_MILD = require("module_17");
-obj.PROFANITY_SEVERE = require("module_18");
-obj.SLURS = require("module_19");
-obj.DANGEROUS_PHYSICALLY_HARMFUL = require("module_20");
-obj.DANGEROUS_MENTALLY_HARMFUL = require("module_21");
-obj.TRAGEDY_SIMULATED_HISTORICAL = require("module_22");
-obj.TRAGEDY_SIMULATED_NATURAL_DISASTER = require("module_23");
-obj.TRAGEDY_REAL_MILITARY_CONFLICT = require("module_24");
+let obj = { EMERGENCY_ONLY_USE_IF_YOU_HAVE_TO_FORCE_MARK_AGE_RESTRICTED: null, SEXUALLY_SUGGESTIVE_IMAGERY: null, SEXUALLY_SUGGESTIVE_TEXT: null, SEXUALLY_EXPLICIT_IMAGERY: null, SEXUALLY_EXPLICIT_TEXT: null, NUDITY: null, DATING: null, REGULATED_GOODS_USAGE: null, REGULATED_GOODS_DEPICTION: null, VIOLENCE_DOMESTIC_SIMULATED: null, VIOLENCE_ANIMALS: null, VIOLENCE_FANTASY: null, VIOLENCE_GRAPHIC: null, SELF_HARM_DEPICTION: null, SELF_HARM_REFERENCE: null, GAMBLING_REAL: null, GAMBLING_SIMULATED: null, PROFANITY_MILD: null, PROFANITY_SEVERE: null, SLURS: null, DANGEROUS_PHYSICALLY_HARMFUL: null, DANGEROUS_MENTALLY_HARMFUL: null, TRAGEDY_SIMULATED_HISTORICAL: null, TRAGEDY_SIMULATED_NATURAL_DISASTER: null, TRAGEDY_REAL_MILITARY_CONFLICT: null };
+obj[0] = require("fromString");
+obj[1] = require("set");
+obj[2] = require("set");
+obj[3] = require("module_3");
+obj[4] = require("module_4");
+obj[5] = require("module_5");
+obj[6] = require("module_6");
+obj[7] = require("module_7");
+obj[8] = require("module_8");
+obj[9] = require("module_9");
+obj[10] = require("module_10");
+obj[11] = require("module_11");
+obj[12] = require("module_12");
+obj[13] = require("module_13");
+obj[14] = require("module_14");
+obj[15] = require("module_15");
+obj[16] = require("module_16");
+obj[17] = require("module_17");
+obj[18] = require("module_18");
+obj[19] = require("module_19");
+obj[20] = require("module_20");
+obj[21] = require("module_21");
+obj[22] = require("module_22");
+obj[23] = require("module_23");
+obj[24] = require("module_24");
 const frozen = Object.freeze(obj);
-obj = {};
-obj.RESTRICTED_TO_ADULT = require("fromHexReverseArray").combine(frozen.EMERGENCY_ONLY_USE_IF_YOU_HAVE_TO_FORCE_MARK_AGE_RESTRICTED, frozen.SEXUALLY_EXPLICIT_IMAGERY, frozen.SEXUALLY_EXPLICIT_TEXT);
+obj = { RESTRICTED_TO_ADULT: null };
+obj[0] = require("fromString").combine(frozen.EMERGENCY_ONLY_USE_IF_YOU_HAVE_TO_FORCE_MARK_AGE_RESTRICTED, frozen.SEXUALLY_EXPLICIT_IMAGERY, frozen.SEXUALLY_EXPLICIT_TEXT);
 const frozen1 = Object.freeze(obj);
 const result = require("set").fileFinishedImporting("../discord_common/js/shared/shared-constants/DiscordContentClassificationFlags.tsx");
 

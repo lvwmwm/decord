@@ -1,131 +1,133 @@
-// Module ID: 16406
-// Function ID: 127646
+// Module ID: 16441
+// Function ID: 16442
 // Name: GuildSettingsModalSecurity
-// Dependencies: [31, 27, 1391, 1838, 1850, 8281, 653, 33, 4165, 689, 566, 8280, 4161, 1212, 4578, 13802, 5483, 2]
+// Dependencies: [19, 17, 1415, 1862, 1874, 8305, 676, 21, 4189, 712, 589, 8304, 4185, 1236, 4600, 13823, 5501, 2]
 // Exports: default
 
-// Module 16406 (GuildSettingsModalSecurity)
-import result from "result";
-import get_ActivityIndicator from "get ActivityIndicator";
-import { isGuildOwnerWithRequiredMfaLevel as closure_6 } from "isGuildOwner";
-import closure_7 from "_createForOfIteratorHelperLoose";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_9 from "_isNativeReflectConstruct";
+// Module 16441 (GuildSettingsModalSecurity)
+import noop from "noop";
+import get_ActivityIndicator from "set";
+import { isGuildOwnerWithRequiredMfaLevel as closure_6 } from "GuildNSFWContentLevel";
+import createGuildRecordFromRust from "createGuildRecordFromRust";
+import mergeGuildAvatar from "mergeGuildAvatar";
+import handleFormInit from "handleFormInit";
 import ME from "ME";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_10;
-let closure_11;
+let c10;
+let c4;
+let c5;
 let closure_12;
-let closure_13;
 let closure_14;
-let closure_4;
-let closure_5;
+let map1;
+let unpackModuleId;
 const require = arg1;
-({ View: closure_4, Image: closure_5 } = get_ActivityIndicator);
-({ GuildFeatures: closure_10, MFALevels: closure_11 } = ME);
-({ jsx: closure_12, jsxs: closure_13, Fragment: closure_14 } = jsxProd);
-_createForOfIteratorHelperLoose = { wrapper: { flex: 1, justifyContent: "space-between", paddingTop: 99 } };
-_createForOfIteratorHelperLoose = { alignItems: "center", flexDirection: "column", paddingHorizontal: require("_createForOfIteratorHelperLoose").modules.mobile.TABLE_ROW_PADDING };
-_createForOfIteratorHelperLoose.center = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.label = { textAlign: "center", marginBottom: 8 };
-_createForOfIteratorHelperLoose.image = { width: 295, height: 142, marginHorizontal: 35 };
-_createForOfIteratorHelperLoose.infoWrapper = { marginBottom: 40 };
-_createForOfIteratorHelperLoose.button = { alignSelf: "center", paddingHorizontal: 16, marginTop: 16 };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-const result = require("isGuildOwner").fileFinishedImporting("modules/guild_settings/safety/native/GuildSettingsModalSecurity.tsx");
+({ View: c4, Image: c5 } = get_ActivityIndicator);
+({ GuildFeatures: c10, MFALevels: unpackModuleId } = ME);
+({ jsx: closure_12, jsxs: map1, Fragment: closure_14 } = jsxProd);
+createCacheKey = { wrapper: { flex: 1, justifyContent: "space-between", paddingTop: 99 }, center: null, label: null, image: null, infoWrapper: null, button: null };
+createCacheKey = { alignItems: "center", flexDirection: "column", paddingHorizontal: require("Themes").modules.mobile.TABLE_ROW_PADDING };
+createCacheKey[1] = createCacheKey;
+createCacheKey[2] = { textAlign: "center", marginBottom: 8 };
+createCacheKey[3] = { width: 295, height: 142, marginHorizontal: 35 };
+createCacheKey[4] = { marginBottom: 40 };
+createCacheKey[5] = { alignSelf: "center", paddingHorizontal: 16, marginTop: 16 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+const result = require("GuildNSFWContentLevel").fileFinishedImporting("modules/guild_settings/safety/native/GuildSettingsModalSecurity.tsx");
 
 export default function GuildSettingsModalSecurity(guildId) {
   guildId = guildId.guildId;
-  const tmp = _createForOfIteratorHelperLoose();
-  let obj = guildId(566);
-  const items = [closure_7];
-  const stateFromStores = obj.useStateFromStores(items, () => outer1_7.getGuild(guildId));
-  let obj1 = guildId(566);
-  const items1 = [closure_9];
-  const stateFromStores1 = obj1.useStateFromStores(items1, () => outer1_9.getProps().mfaLevel);
+  let stateFromStores;
+  let dependencyMap;
+  const tmp = createCacheKey();
+  let obj = guildId(589);
+  const items = [createGuildRecordFromRust];
+  stateFromStores = obj.useStateFromStores(items, () => outer1_7.getGuild(guildId));
+  let obj1 = guildId(589);
+  const items1 = [handleFormInit];
+  const stateFromStores1 = obj1.useStateFromStores(items1, () => props.getProps().mfaLevel);
   currentUser = currentUser.getCurrentUser();
-  const dependencyMap = tmp5;
+  dependencyMap = tmp7;
   let mfaEnabled;
-  if (null != currentUser) {
+  if (currentUser != null) {
     mfaEnabled = currentUser.mfaEnabled;
   }
-  let tmp7 = true === mfaEnabled && null != stateFromStores;
-  if (tmp7) {
-    tmp7 = callback(stateFromStores, currentUser);
+  let tmp9 = true === mfaEnabled && null != stateFromStores;
+  if (tmp9) {
+    tmp9 = callback(stateFromStores, currentUser);
   }
-  if (tmp7) {
-    let tmp9 = !tmp5;
-    if (tmp5) {
+  if (tmp9) {
+    let tmp11 = !tmp7;
+    if (tmp7) {
       const features = stateFromStores.features;
-      tmp9 = !features.has(constants.DISCOVERABLE);
+      tmp11 = !features.has(constants.DISCOVERABLE);
     }
-    tmp7 = tmp9;
+    tmp9 = tmp11;
   }
   const items2 = [stateFromStores, stateFromStores1 === constants2.ELEVATED];
-  obj = {};
-  obj = { style: items3 };
+  obj = { style: items3, children: null };
   items3 = [tmp.wrapper, guildId.contentContainerStyle];
-  obj1 = { style: tmp.center };
+  obj = { style: tmp.center, children: null };
   callback = React.useCallback(() => {
     if (null != stateFromStores) {
-      let updateMFALevelResult = stateFromStores(tmp5[11]);
-      updateMFALevelResult = { guildId: stateFromStores.id, level: outer1_11 ? outer1_11.NONE : outer1_11.ELEVATED };
+      let updateMFALevelResult = stateFromStores(_undefined[11]);
+      updateMFALevelResult = { guildId: null, level: null };
+      updateMFALevelResult[0] = tmp.id;
+      updateMFALevelResult[1] = _undefined ? outer1_11.NONE : outer1_11.ELEVATED;
       updateMFALevelResult = updateMFALevelResult.updateMFALevel(updateMFALevelResult);
     }
   }, items2);
-  const obj2 = { style: tmp.label, variant: "text-md/medium", color: "mobile-text-heading-primary" };
-  const intl = guildId(1212).intl;
-  obj2.children = intl.string(guildId(1212).t.Wi9LEV);
-  const items4 = [callback2(guildId(4161).Text, obj2), , ];
-  const obj3 = { style: tmp.button };
-  const obj4 = {};
-  const intl2 = guildId(1212).intl;
+  obj1 = { style: tmp.label, variant: "text-md/medium", color: "mobile-text-heading-primary", children: null };
+  const intl = tmp2(1236).intl;
+  obj1[3] = intl.string(guildId(1236).t.Wi9LEV);
+  const items4 = [callback2(guildId(4185).Text, obj1), , ];
+  const obj2 = { style: tmp.button, children: null };
+  const intl2 = tmp2(1236).intl;
   const string = intl2.string;
-  const t = guildId(1212).t;
+  const t = tmp2(1236).t;
   if (stateFromStores1 === constants2.ELEVATED) {
     let stringResult = string(t["MP0Ho+"]);
   } else {
     stringResult = string(t.yZcYGa);
   }
-  obj4.text = stringResult;
-  obj4.disabled = !tmp7;
+  const obj3 = { text: stringResult, disabled: !tmp9, variant: null, onPress: null, shrink: true };
   let str = "primary";
   if (stateFromStores1 === constants2.ELEVATED) {
     str = "destructive";
   }
-  obj4.variant = str;
-  obj4.onPress = callback;
-  obj4.shrink = true;
-  obj3.children = callback2(guildId(4578).Button, obj4);
-  items4[1] = callback2(closure_4, obj3);
-  let tmp17 = null;
-  if (null != stateFromStores) {
+  obj3[2] = str;
+  obj3[3] = callback;
+  obj2[1] = callback2(guildId(4600).Button, obj3);
+  items4[1] = callback2(closure_4, obj2);
+  let hasItem;
+  if (stateFromStores != null) {
     const features2 = stateFromStores.features;
-    tmp17 = null;
-    if (features2.has(constants.DISCOVERABLE)) {
-      const obj5 = { variant: "text-sm/normal", color: "text-feedback-critical" };
-      const intl3 = guildId(1212).intl;
-      obj5.children = intl3.string(guildId(1212).t["KG1V/E"]);
-      tmp17 = callback2(guildId(4161).Text, obj5);
-    }
+    hasItem = features2.has(constants.DISCOVERABLE);
   }
-  items4[2] = tmp17;
-  obj1.children = items4;
-  const items5 = [callback3(closure_4, obj1), ];
-  const obj6 = { style: tmp.center };
-  const items6 = [callback2(closure_5, { source: stateFromStores(13802), style: tmp.image, resizeMode: "contain" }), ];
-  const obj8 = { style: tmp.infoWrapper };
-  const obj9 = { variant: "text-sm/medium", color: "text-muted" };
-  const intl4 = guildId(1212).intl;
-  obj9.children = intl4.format(guildId(1212).t["FK0+iX"], {});
-  obj8.children = callback2(guildId(4161).Text, obj9);
+  let tmp17Result = null;
+  if (hasItem) {
+    const obj4 = { variant: "text-sm/normal", color: "text-feedback-critical", children: null };
+    const intl3 = tmp2(1236).intl;
+    obj4[2] = intl3.string(tmp2(1236).t["KG1V/E"]);
+    tmp17Result = tmp17(tmp2(4185).Text, obj4);
+  }
+  const obj5 = { children: null };
+  items4[2] = tmp17Result;
+  obj[1] = items4;
+  const items5 = [closure_13(closure_4, obj), ];
+  const obj6 = { style: tmp.center, children: null };
+  const items6 = [callback2(closure_5, { source: stateFromStores(13823), style: tmp.image, resizeMode: "contain" }), ];
+  const obj8 = { style: tmp.infoWrapper, children: null };
+  const obj9 = { variant: "text-sm/medium", color: "text-muted", children: null };
+  const intl4 = tmp2(1236).intl;
+  obj9[2] = intl4.format(guildId(1236).t["FK0+iX"], {});
+  obj8[1] = callback2(guildId(4185).Text, obj9);
   items6[1] = callback2(closure_4, obj8);
-  obj6.children = items6;
-  items5[1] = callback3(closure_4, obj6);
-  obj.children = items5;
-  const items7 = [callback3(closure_4, obj), callback2(guildId(5483).NavScrim, {})];
-  obj.children = items7;
-  return callback3(closure_14, obj);
+  obj6[1] = items6;
+  items5[1] = closure_13(closure_4, obj6);
+  obj[1] = items5;
+  const items7 = [closure_13(closure_4, obj), callback2(guildId(5501).NavScrim, {})];
+  obj5[0] = items7;
+  return closure_13(closure_14, obj5);
 };

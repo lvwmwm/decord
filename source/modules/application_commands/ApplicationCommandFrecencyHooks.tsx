@@ -1,29 +1,29 @@
-// Module ID: 5691
-// Function ID: 48646
+// Module ID: 5709
+// Function ID: 5710
 // Name: useTopCommands
-// Dependencies: [31, 5681, 662, 1331, 566, 2]
+// Dependencies: [19, 5699, 685, 1355, 589, 2]
 // Exports: useTopCommands, useTopRealCommands
 
-// Module 5691 (useTopCommands)
-import result from "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_5 from "_isNativeReflectConstruct";
+// Module 5709 (useTopCommands)
+import noop from "noop";
+import handleUserSettingsProtoStoreChange from "handleUserSettingsProtoStoreChange";
+import closure_5 from "handleUserSettingsProtoStoreChange";
 import { UserSettingsTypes } from "MAX_FAVORITES";
 
-let closure_3;
-let closure_4;
+let c3;
+let c4;
 const require = arg1;
-({ getFilteredTopCommands: closure_3, getTopRealCommands: closure_4 } = _isNativeReflectConstruct);
+({ getFilteredTopCommands: c3, getTopRealCommands: c4 } = handleUserSettingsProtoStoreChange);
 const result = require("MAX_FAVORITES").fileFinishedImporting("modules/application_commands/ApplicationCommandFrecencyHooks.tsx");
 
 export const useTopCommands = function useTopCommands(commandContext) {
   const _require = commandContext;
   const effect = React.useEffect(() => {
     const FrecencyUserSettingsActionCreators = commandContext(stateFromStores[3]).FrecencyUserSettingsActionCreators;
-    const ifUncached = FrecencyUserSettingsActionCreators.loadIfUncached(outer1_6.FRECENCY_AND_FAVORITES_SETTINGS);
+    const ifUncached = FrecencyUserSettingsActionCreators.loadIfUncached(constants.FRECENCY_AND_FAVORITES_SETTINGS);
   }, []);
   const items = [closure_5];
-  stateFromStores = _require(stateFromStores[4]).useStateFromStores(items, () => outer1_5.getTopCommandsWithoutLoadingLatest());
+  stateFromStores = _require(stateFromStores[4]).useStateFromStores(items, () => topCommandsWithoutLoadingLatest.getTopCommandsWithoutLoadingLatest());
   const items1 = [stateFromStores, commandContext];
   return React.useMemo(() => outer1_3(stateFromStores, closure_0), items1);
 };
@@ -34,7 +34,7 @@ export const useTopRealCommands = function useTopRealCommands(arg0) {
     const ifNecessary = FrecencyUserSettingsActionCreators.loadIfNecessary();
   }, []);
   const items = [closure_5];
-  stateFromStores = _require(stateFromStores[4]).useStateFromStores(items, () => outer1_5.getTopCommandsWithoutLoadingLatest());
+  stateFromStores = _require(stateFromStores[4]).useStateFromStores(items, () => topCommandsWithoutLoadingLatest.getTopCommandsWithoutLoadingLatest());
   const items1 = [stateFromStores, arg0];
   return React.useMemo(() => outer1_4(outer1_3(stateFromStores, closure_0)), items1);
 };

@@ -1,11 +1,10 @@
 // Module ID: 10827
-// Function ID: 83857
+// Function ID: 10828
 // Name: registerAsset
-// Dependencies: [1217]
+// Dependencies: [1241]
 
 // Module 10827 (registerAsset)
 import registerAsset from "registerAsset";
 
-const obj = { __packager_asset: true, httpServerLocation: "/assets/images/native/application_streaming", width: 300, height: 120, scales: [2, 3], hash: "af3947e9ef22aa54f0b32942d9a564e5", name: "img_preview_not_available_dark", type: "png" };
 
-export default registerAsset.registerAsset(obj);
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/video_calls/native/images", width: 20, height: 20, scales: [2, 3], hash: "40d8dc40d3509844c13de0abfc4c355d", name: "camera_swap", type: "png" });

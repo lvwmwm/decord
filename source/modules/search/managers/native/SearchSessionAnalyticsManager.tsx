@@ -1,28 +1,50 @@
-// Module ID: 10095
-// Function ID: 78103
-// Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 9105, 10082, 10096, 2]
+// Module ID: 10116
+// Function ID: 10117
+// Name: _initialize
+// Dependencies: [9129, 10117, 10103, 2]
 
-// Module 10095 (_isNativeReflectConstruct)
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import createDefaultSessionState from "createDefaultSessionState";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
-import { SEARCH_TAB_TO_ANALYTICS_SEARCH_TAB as closure_7 } from "SearchEntrypointAnalyticsLocations";
-import tmp2 from "createDefaultSessionState";
+// Module 10116 (_initialize)
+import { SEARCH_TAB_TO_ANALYTICS_SEARCH_TAB as closure_2 } from "SearchEntrypointAnalyticsLocations";
+import "getSession";
 
-const require = arg1;
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
+class SearchSessionAnalyticsManager extends tmp2 {
+  constructor() {
+    applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
+    map = new Map();
+    applyArgumentsResult.locations = map;
+    map1 = new Map();
+    applyArgumentsResult.selectedTabs = map1;
+    return applyArgumentsResult;
   }
-  const result = _isNativeReflectConstruct();
 }
-tmp2 = new tmp2();
-let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/search/managers/native/SearchSessionAnalyticsManager.tsx");
+const prototype = SearchSessionAnalyticsManager.prototype;
+prototype["_initialize"] = function _initialize(searchContext) {
+  const locations = this.locations;
+  const result = locations.set(require(10103) /* SearchTokenTypes */.getSearchContextId(searchContext), arg1);
+};
+prototype["_terminate"] = function _terminate(searchContext) {
+  const searchContextId = require(10103) /* SearchTokenTypes */.getSearchContextId(searchContext);
+  const locations = this.locations;
+  locations.delete(searchContextId);
+  const selectedTabs = this.selectedTabs;
+  selectedTabs.delete(searchContextId);
+};
+prototype["_transferSession"] = function _transferSession(arg0, searchContext) {
 
-export default tmp2;
+};
+prototype["getLocation"] = function getLocation(searchContext) {
+  const locations = this.locations;
+  return locations.get(require(10103) /* SearchTokenTypes */.getSearchContextId(searchContext));
+};
+prototype["getSelectedTab"] = function getSelectedTab(searchContext) {
+  const selectedTabs = this.selectedTabs;
+  return selectedTabs.get(require(10103) /* SearchTokenTypes */.getSearchContextId(searchContext));
+};
+prototype["setSelectedTab"] = function setSelectedTab(visibleTabs, arg1) {
+  const selectedTabs = this.selectedTabs;
+  const result = selectedTabs.set(require(10103) /* SearchTokenTypes */.getSearchContextId(visibleTabs), table[arg1]);
+};
+const searchSessionAnalyticsManager = new SearchSessionAnalyticsManager();
+let result = require("SearchTokenTypes").fileFinishedImporting("modules/search/managers/native/SearchSessionAnalyticsManager.tsx");
+
+export default searchSessionAnalyticsManager;

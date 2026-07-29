@@ -1,32 +1,66 @@
-// Module ID: 10612
-// Function ID: 82559
-// Name: _isNativeReflectConstruct
-// Dependencies: [7, 6, 15, 17, 18, 5668, 653, 10606, 10613, 675, 5112, 2]
+// Module ID: 10620
+// Function ID: 10621
+// Name: prototype
+// Dependencies: [5686, 676, 5134, 10612, 10621, 698, 2]
 
-// Module 10612 (_isNativeReflectConstruct)
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import closure_4 from "ME";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 10620 (prototype)
+import map from "map";
 import ME from "ME";
-import tmp3 from "AutomaticLifecycleManager";
+import "initialize";
 
-let closure_10;
-let closure_9;
-const require = arg1;
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
-  }
-  const result = _isNativeReflectConstruct();
+let c4;
+let c5;
+let require = arg1;
+({ AnalyticEvents: c4, RPCCloseCodes: c5 } = ME);
+const prototype = function FramesManager() {
+  const applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
+  const require = applyArgumentsResult;
+  applyArgumentsResult.actions = {
+    RPC_APP_DISCONNECTED(arg0) {
+      applyArgumentsResult.handleRPCDisconnect(arg0);
+    },
+    FRAME_LAUNCH(applicationId) {
+      const result = applyArgumentsResult(10612).trackFrameSessionStart(applicationId.applicationId);
+    },
+    FRAME_LAUNCH_FAIL(applicationId) {
+      const result = applyArgumentsResult(10621).discardPendingFrameLaunch(applicationId.applicationId);
+    },
+    FRAME_STOP(applicationId) {
+      applyArgumentsResult(10612).trackFrameSessionEnd(applicationId.applicationId);
+    }
+  };
+  applyArgumentsResult.handleRPCDisconnect = function handleRPCDisconnect(reason) {
+    reason = reason.reason;
+    const id = reason.application.id;
+    if (null != id) {
+      if (null != reason) {
+        const connectedFrame = outer1_3.getConnectedFrame();
+        let applicationId;
+        if (connectedFrame != null) {
+          applicationId = connectedFrame.applicationId;
+        }
+        if (applicationId === id) {
+          let obj = { applicationId: null };
+          obj[0] = id;
+          applyArgumentsResult.leaveFrame(obj);
+          if (reason.code !== outer1_5.CLOSE_NORMAL) {
+            obj = outer1_1(outer1_2[5]);
+            obj = { rpc_close_code: null, rpc_message: null, application_id: null };
+            ({ code: obj2[0], message: obj2[1] } = reason);
+            obj[2] = id;
+            obj.track(outer1_4.ACTIVITY_CLOSED_RPC_ERROR, obj);
+            const result = obj3.showRPCDisconnectErrorUI(reason);
+          }
+          obj3 = applyArgumentsResult;
+        }
+      }
+    }
+  };
+  return applyArgumentsResult;
+}.prototype;
+class prototype extends tmp3 {
 }
-({ AnalyticEvents: closure_9, RPCCloseCodes: closure_10 } = ME);
-tmp3.displayName = "FramesManager";
-let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/frames/FramesManager.tsx");
+prototype.displayName = "FramesManager";
+let result = require("initialize").fileFinishedImporting("modules/frames/FramesManager.tsx");
 
-export default tmp3;
+export default prototype;

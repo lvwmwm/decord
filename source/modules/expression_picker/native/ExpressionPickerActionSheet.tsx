@@ -1,25 +1,25 @@
-// Module ID: 9564
-// Function ID: 74463
+// Module ID: 9588
+// Function ID: 9589
 // Name: ExpressionPickerActionSheet
-// Dependencies: [31, 1348, 5222, 9565, 33, 4026, 4031, 1555, 566, 9566, 4133, 1450, 1557, 5118, 477, 9328, 5221, 9567, 2]
+// Dependencies: [19, 1372, 5244, 9589, 21, 4050, 4055, 1579, 589, 9590, 4157, 1474, 1581, 5140, 500, 9352, 5243, 9591, 2]
 // Exports: default
 
-// Module 9564 (ExpressionPickerActionSheet)
-import result from "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 9588 (ExpressionPickerActionSheet)
+import noop from "noop";
+import ensureGuildLoaded from "ensureGuildLoaded";
 import { ACTION_SHEET_START_HEIGHT_RATIO as closure_5 } from "ACTION_SHEET_START_HEIGHT_RATIO";
 import { STICKER_FORMATS } from "PADDING_HORIZONTAL";
 import jsxProd from "jsxProd";
 
-let closure_7;
-let closure_8;
-let closure_9;
+let c9;
+let error;
+let metroImportAll;
 const require = arg1;
-({ jsx: closure_7, Fragment: closure_8, jsxs: closure_9 } = jsxProd);
+({ jsx: error, Fragment: metroImportAll, jsxs: c9 } = jsxProd);
 const result = require("ACTION_SHEET_START_HEIGHT_RATIO").fileFinishedImporting("modules/expression_picker/native/ExpressionPickerActionSheet.tsx");
 
 export default function ExpressionPickerActionSheet(arg0) {
-  let result;
+  let noop;
   let dependencyMap;
   let hideGifFavorites;
   let importDefault;
@@ -27,62 +27,67 @@ export default function ExpressionPickerActionSheet(arg0) {
   let onDismiss;
   let require;
   let visibleTabs;
-  ({ channelId: require, onPressEmoji: importDefault, onPressSticker: dependencyMap, onPressGIF: result } = arg0);
-  function dismissSheet() {
-    outer1_0(outer1_2[9]).dismissKeyboard();
-    const obj = outer1_0(outer1_2[9]);
-    outer1_1(outer1_2[10]).hideActionSheet();
-  }
-  let tmp = null;
+  ({ channelId: require, onPressEmoji: importDefault, onPressSticker: dependencyMap, onPressGIF: noop } = arg0);
   ({ hideGifFavorites, onDismiss, visibleTabs, initialGifQuery } = arg0);
-  let obj = require(4026);
+  let obj = require(4050);
   const sharedValue = obj.useSharedValue(-1);
-  let obj1 = require(4031) /* getKeyboardContextForType */;
-  const keyboardContextForType = obj1.useKeyboardContextForType(require(1555) /* KeyboardTypes */.KeyboardTypes.EXPRESSION);
-  let obj2 = require(566) /* initialize */;
-  const items = [dismissSheet];
-  const stateFromStores = obj2.useStateFromStores(items, () => dismissSheet.getChannel(closure_0));
-  const height = importDefault(1450)({ ignoreKeyboard: true }).height;
-  const diff = height - require(5118) /* NAV_BAR_HEIGHT */.NAV_BAR_HEIGHT_MULTILINE - importDefault(1557)().top;
+  let obj1 = require(4055) /* useKeyboardType */;
+  const keyboardContextForType = obj1.useKeyboardContextForType(require(1579) /* KeyboardTypes */.KeyboardTypes.EXPRESSION);
+  let obj2 = require(589) /* initialize */;
+  const items = [ensureGuildLoaded];
+  const stateFromStores = obj2.useStateFromStores(items, () => outer1_4.getChannel(closure_0));
+  const height = importDefault(1474)({ ignoreKeyboard: true }).height;
+  const diff = height - require(5140) /* NAV_BAR_HEIGHT */.NAV_BAR_HEIGHT_MULTILINE - importDefault(1581)().top;
+  let tmp15Result = null;
   if (undefined !== stateFromStores) {
-    obj = {};
-    let isIOSResult = require(477) /* set */.isIOS();
+    let isIOSResult = tmp2(500).isIOS();
     if (isIOSResult) {
-      obj = { animatedSheetIndex: sharedValue, followSystemKeyboard: true };
-      isIOSResult = callback(importDefault(9328), obj);
+      obj = { animatedSheetIndex: null, followSystemKeyboard: true };
+      obj[0] = sharedValue;
+      isIOSResult = callback(tmp7(9352), obj);
     }
+    obj = { children: null };
     const items1 = [isIOSResult, ];
-    obj1 = { scrollable: true, animatedIndex: sharedValue, startHeight: height * closure_5, containerHeight: diff, onDismiss };
-    obj2 = {
-      bottomSheetRef: ref,
-      bottomSheetIndex: sharedValue,
-      channel: stateFromStores,
-      expressionType: keyboardContextForType,
-      hideGifFavorites,
-      onPressEmoji(arg0) {
-          callback(arg0);
-          dismissSheet();
-        },
-      onPressGIF(arg0) {
-          callback3(arg0);
-          dismissSheet();
-        },
-      onPressSticker(arg0) {
-          callback2(arg0);
-          dismissSheet();
-        },
-      visibleTabs,
-      initialGifQuery,
-      stickerFormats: STICKER_FORMATS,
-      height: diff
+    obj1 = { scrollable: true, animatedIndex: null, startHeight: null, containerHeight: null, onDismiss: null, children: null };
+    obj1[1] = sharedValue;
+    obj1[2] = height * closure_5;
+    obj1[3] = diff;
+    obj1[4] = onDismiss;
+    obj2 = { bottomSheetRef: null, bottomSheetIndex: null, channel: null, expressionType: null, hideGifFavorites: null, onPressEmoji: null, onPressGIF: null, onPressSticker: null, visibleTabs: null, initialGifQuery: null, stickerFormats: null, height: null };
+    obj2[0] = ref;
+    obj2[1] = sharedValue;
+    obj2[2] = stateFromStores;
+    obj2[3] = keyboardContextForType;
+    obj2[4] = hideGifFavorites;
+    obj2[5] = function onPressEmoji(arg0) {
+      callback(arg0);
+      outer1_0(outer1_2[9]).dismissKeyboard();
+      const obj = outer1_0(outer1_2[9]);
+      outer1_1(outer1_2[10]).hideActionSheet();
     };
-    obj1.children = callback(importDefault(9567), obj2);
-    items1[1] = callback(require(5221) /* Background */.BottomSheet, obj1);
-    obj.children = items1;
-    tmp = closure_9(closure_8, obj);
-    const obj8 = require(477) /* set */;
-    const tmp17 = closure_9;
-    const tmp18 = closure_8;
+    obj2[6] = function onPressGIF(arg0) {
+      callback3(arg0);
+      outer1_0(outer1_2[9]).dismissKeyboard();
+      const obj = outer1_0(outer1_2[9]);
+      outer1_1(outer1_2[10]).hideActionSheet();
+    };
+    obj2[7] = function onPressSticker(arg0) {
+      callback2(arg0);
+      outer1_0(outer1_2[9]).dismissKeyboard();
+      const obj = outer1_0(outer1_2[9]);
+      outer1_1(outer1_2[10]).hideActionSheet();
+    };
+    obj2[8] = visibleTabs;
+    obj2[9] = initialGifQuery;
+    obj2[10] = STICKER_FORMATS;
+    obj2[11] = diff;
+    obj1[5] = callback(tmp7(9591), obj2);
+    items1[1] = callback(tmp2(5243).BottomSheet, obj1);
+    obj[0] = items1;
+    tmp15Result = closure_9(closure_8, obj);
+    const tmp15 = closure_9;
+    const tmp16 = closure_8;
+    const tmp2Result = tmp2(500);
   }
-  return tmp;
+  return tmp15Result;
 };

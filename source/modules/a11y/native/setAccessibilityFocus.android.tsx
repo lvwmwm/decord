@@ -1,17 +1,17 @@
-// Module ID: 4574
-// Function ID: 39957
+// Module ID: 4596
+// Function ID: 4597
 // Name: setAccessibilityFocus
-// Dependencies: [27, 3, 4564, 4029, 2]
+// Dependencies: [17, 3, 4587, 4053, 2]
 // Exports: setAccessibilityFocus
 
-// Module 4574 (setAccessibilityFocus)
+// Module 4596 (setAccessibilityFocus)
 import get_ActivityIndicator from "get ActivityIndicator";
-import importDefaultResult from "isFabric";
 
-let closure_3;
-let closure_4;
-({ AccessibilityInfo: closure_3, findNodeHandle: closure_4 } = get_ActivityIndicator);
-importDefaultResult = new importDefaultResult("setAccessibilityFocus");
+let c3;
+let c4;
+({ AccessibilityInfo: c3, findNodeHandle: c4 } = get_ActivityIndicator);
+let c5 = new require("isFabric")("setAccessibilityFocus");
+const tmp3 = new require("isFabric")("setAccessibilityFocus");
 let result = require("enforcing").fileFinishedImporting("modules/a11y/native/setAccessibilityFocus.android.tsx");
 
 export const setAccessibilityFocus = function setAccessibilityFocus(arg0) {
@@ -32,7 +32,7 @@ export const setAccessibilityFocus = function setAccessibilityFocus(arg0) {
           const result = outer1_3.setAccessibilityFocus(_undefined);
         } else {
           const result1 = outer1_1(outer1_2[2]).setAccessibilityFocus(_undefined);
-          result1.catch((arg0) => outer2_5.warn("Failed with reason:", arg0));
+          result1.catch((arg0) => logger.warn("Failed with reason:", arg0));
           const obj2 = outer1_1(outer1_2[2]);
         }
       }, delay);

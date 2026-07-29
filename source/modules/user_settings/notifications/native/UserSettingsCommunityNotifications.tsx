@@ -1,63 +1,61 @@
-// Module ID: 14458
-// Function ID: 110392
+// Module ID: 14480
+// Function ID: 14481
 // Name: UserSettingsCommunityNotifications
-// Dependencies: [31, 10223, 33, 4165, 566, 21, 7611, 4576, 5536, 5537, 1212, 1331, 2]
+// Dependencies: [19, 10244, 21, 4189, 589, 11, 7634, 4598, 5554, 5555, 1236, 1355, 2]
 // Exports: default
 
-// Module 14458 (UserSettingsCommunityNotifications)
-import "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 14480 (UserSettingsCommunityNotifications)
+import "noop";
+import computeAlertSettings from "computeAlertSettings";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_4;
-let closure_5;
+let c4;
+let c5;
 const require = arg1;
-({ jsx: closure_4, jsxs: closure_5 } = jsxProd);
-let closure_6 = _createForOfIteratorHelperLoose.createStyles({ container: { paddingHorizontal: 16 } });
+({ jsx: c4, jsxs: c5 } = jsxProd);
+let closure_6 = createCacheKey.createStyles({ container: { paddingHorizontal: 16 } });
 let result = require("jsxProd").fileFinishedImporting("modules/user_settings/notifications/native/UserSettingsCommunityNotifications.tsx");
 
 export default function UserSettingsCommunityNotifications() {
-  let obj = stateFromStores(566);
-  let items = [_isNativeReflectConstruct];
-  stateFromStores = obj.useStateFromStores(items, () => outer1_3.getGuildAlertSettings());
+  let obj = stateFromStores(589);
+  let items = [computeAlertSettings];
+  stateFromStores = obj.useStateFromStores(items, () => guildAlertSettings.getGuildAlertSettings());
   const tmp = callback2();
-  const keys = importDefault(21).keys(stateFromStores);
-  let tmp3 = null;
+  const keys = importDefault(11).keys(stateFromStores);
+  let tmp5 = null;
   if (0 !== keys.length) {
-    obj = {};
-    obj = {
-      spacing: 24,
-      style: tmp.container,
-      children: keys.map((arg0) => {
-          const stateFromStores = arg0;
-          let obj = { title: stateFromStores[arg0].guildName, hasIcons: false };
-          obj = {};
-          const intl = stateFromStores(outer1_2[10]).intl;
-          obj.label = intl.string(stateFromStores(outer1_2[10]).t.u6dc5B);
-          obj.value = !stateFromStores[arg0].disableRaidAlertNag;
-          obj.onValueChange = function onValueChange() {
-            const result = stateFromStores(outer2_2[11]).updateUserGuildSettings(closure_0, (disableRaidAlertNag) => {
-              disableRaidAlertNag.disableRaidAlertNag = !disableRaidAlertNag.disableRaidAlertNag;
-            }, stateFromStores(outer2_2[11]).UserSettingsDelay.INFREQUENT_USER_ACTION);
-          };
-          const items = [outer1_4(stateFromStores(outer1_2[9]).TableSwitchRow, obj), ];
-          obj = {};
-          const intl2 = stateFromStores(outer1_2[10]).intl;
-          obj.label = intl2.string(stateFromStores(outer1_2[10]).t.P8MG6q);
-          obj.value = !stateFromStores[arg0].disableRaidAlertPush;
-          obj.onValueChange = function onValueChange() {
-            const result = stateFromStores(outer2_2[11]).updateUserGuildSettings(closure_0, (disableRaidAlertPush) => {
-              disableRaidAlertPush.disableRaidAlertPush = !disableRaidAlertPush.disableRaidAlertPush;
-            }, stateFromStores(outer2_2[11]).UserSettingsDelay.INFREQUENT_USER_ACTION);
-          };
-          items[1] = outer1_4(stateFromStores(outer1_2[9]).TableSwitchRow, obj);
-          obj.children = items;
-          return outer1_5(stateFromStores(outer1_2[8]).TableRowGroup, obj, arg0);
-        })
-    };
-    obj.children = callback(stateFromStores(4576).Stack, obj);
-    tmp3 = callback(stateFromStores(7611).Form, obj);
+    obj = { children: null };
+    obj = { spacing: 24, style: null, children: null };
+    obj[1] = tmp.container;
+    obj[2] = keys.map((arg0) => {
+      const stateFromStores = arg0;
+      let obj = { title: stateFromStores[arg0].guildName, hasIcons: false, children: null };
+      obj = { label: null, value: null, onValueChange: null };
+      const intl = stateFromStores(outer1_2[10]).intl;
+      obj[0] = intl.string(stateFromStores(outer1_2[10]).t.u6dc5B);
+      obj[1] = !stateFromStores[arg0].disableRaidAlertNag;
+      obj[2] = function onValueChange() {
+        const result = callback(outer1_2[11]).updateUserGuildSettings(callback, (disableRaidAlertNag) => {
+          disableRaidAlertNag.disableRaidAlertNag = !disableRaidAlertNag.disableRaidAlertNag;
+        }, callback(outer1_2[11]).UserSettingsDelay.INFREQUENT_USER_ACTION);
+      };
+      const items = [outer1_4(stateFromStores(outer1_2[9]).TableSwitchRow, obj), ];
+      obj = { label: null, value: null, onValueChange: null };
+      const intl2 = stateFromStores(outer1_2[10]).intl;
+      obj[0] = intl2.string(stateFromStores(outer1_2[10]).t.P8MG6q);
+      obj[1] = !stateFromStores[arg0].disableRaidAlertPush;
+      obj[2] = function onValueChange() {
+        const result = callback(outer1_2[11]).updateUserGuildSettings(callback, (disableRaidAlertPush) => {
+          disableRaidAlertPush.disableRaidAlertPush = !disableRaidAlertPush.disableRaidAlertPush;
+        }, callback(outer1_2[11]).UserSettingsDelay.INFREQUENT_USER_ACTION);
+      };
+      items[1] = outer1_4(stateFromStores(outer1_2[9]).TableSwitchRow, obj);
+      obj[2] = items;
+      return outer1_5(stateFromStores(outer1_2[8]).TableRowGroup, obj, arg0);
+    });
+    obj[0] = callback(tmp2(4598).Stack, obj);
+    tmp5 = callback(tmp2(7634).Form, obj);
   }
-  return tmp3;
+  return tmp5;
 };

@@ -1,10 +1,10 @@
-// Module ID: 13234
-// Function ID: 101794
+// Module ID: 13257
+// Function ID: 13258
 // Name: IGNORE_ANALYTICS_BREADCRUMB_EVENTS
 // Dependencies: [2]
 // Exports: filterThrottle
 
-// Module 13234 (IGNORE_ANALYTICS_BREADCRUMB_EVENTS)
+// Module 13257 (IGNORE_ANALYTICS_BREADCRUMB_EVENTS)
 const result = require("set").fileFinishedImporting("modules/errors/CommonSentryInitUtils.tsx");
 
 export const IGNORE_ANALYTICS_BREADCRUMB_EVENTS = ["notification_clicked", "experiment_user_triggered", "experiment_dm_triggered", "experiment_guild_triggered", "device_event", "react_soft_exception", "network_capabilities_changed", "foreground_service", "app_lifecycle", "ui_lifecycle", "touch_event", "http_request", "websocket_message_received"];
@@ -17,22 +17,22 @@ export const filterThrottle = function filterThrottle(arg0) {
     const timestamp = Date.now();
     const rounded = Math.round(timestamp / 1000 / 60);
     const rounded1 = Math.round(timestamp / 1000 / 60 / 60);
-    if (closure_2.minute.slot !== rounded) {
-      closure_2.minute.slot = rounded;
-      closure_2.minute.budgetUsed = 0;
+    if (minute.minute.slot !== rounded) {
+      tmp4.minute.slot = rounded;
+      tmp4.minute.budgetUsed = 0;
     }
-    if (closure_2.hour.slot !== rounded1) {
-      closure_2.hour.slot = rounded1;
-      closure_2.hour.budgetUsed = 0;
+    if (minute.hour.slot !== rounded1) {
+      tmp4.hour.slot = rounded1;
+      tmp4.hour.budgetUsed = 0;
     }
-    let flag = closure_2.minute.budgetUsed < closure_0;
+    let flag = tmp4.minute.budgetUsed < closure_0;
     if (flag) {
-      const minute = closure_2.minute;
+      minute = tmp4.minute;
       minute.budgetUsed = minute.budgetUsed + 1;
-      flag = closure_2.hour.budgetUsed < closure_1;
+      flag = tmp4.hour.budgetUsed < closure_1;
     }
     if (flag) {
-      const hour = closure_2.hour;
+      const hour = tmp4.hour;
       hour.budgetUsed = hour.budgetUsed + 1;
       flag = true;
     }

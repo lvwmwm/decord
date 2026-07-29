@@ -1,35 +1,37 @@
-// Module ID: 14174
-// Function ID: 108814
+// Module ID: 14196
+// Function ID: 14197
 // Name: MobileQuestPreviewContainer
-// Dependencies: [27, 33, 4165, 689, 4161, 2]
+// Dependencies: [17, 21, 4189, 712, 4185, 2]
 // Exports: default
 
-// Module 14174 (MobileQuestPreviewContainer)
+// Module 14196 (MobileQuestPreviewContainer)
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_3;
-let closure_4;
-({ jsx: closure_3, jsxs: closure_4 } = jsxProd);
-let obj = {};
-obj = { marginTop: require("_createForOfIteratorHelperLoose").space.PX_12, paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16 };
-obj.container = obj;
-obj.title = { marginBottom: require("_createForOfIteratorHelperLoose").space.PX_16 };
-let closure_5 = _createForOfIteratorHelperLoose.createStyles(obj);
-const obj1 = { marginBottom: require("_createForOfIteratorHelperLoose").space.PX_16 };
-const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/user_settings/quests/native/MobileQuestPreviewContainer.tsx");
+let c3;
+let c4;
+({ jsx: c3, jsxs: c4 } = jsxProd);
+let obj = { container: null, title: null };
+obj = { marginTop: require("Themes").space.PX_12, paddingHorizontal: require("Themes").space.PX_16 };
+obj[0] = obj;
+obj[1] = { marginBottom: require("Themes").space.PX_16 };
+let closure_5 = createCacheKey.createStyles(obj);
+const obj1 = { marginBottom: require("Themes").space.PX_16 };
+const result = require("createCacheKey").fileFinishedImporting("modules/user_settings/quests/native/MobileQuestPreviewContainer.tsx");
 
 export default function MobileQuestPreviewContainer(title) {
   title = title.title;
   const tmp = callback2();
-  let obj = { style: tmp.container };
+  let obj = { style: tmp.container, children: null };
   let tmp4 = null != title;
   if (tmp4) {
-    obj = { variant: "text-lg/semibold", color: "text-default", style: tmp.title, children: title };
-    tmp4 = callback(require(4161) /* Text */.Text, obj);
+    obj = { variant: "text-lg/semibold", color: "text-default", style: null, children: null };
+    obj[2] = tmp.title;
+    obj[3] = title;
+    tmp4 = callback(require(4185) /* Text */.Text, obj);
   }
   const items = [tmp4, title.children];
-  obj.children = items;
+  obj[1] = items;
   return closure_4(View, obj);
 };

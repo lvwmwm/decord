@@ -1,9 +1,9 @@
-// Module ID: 6765
-// Function ID: 59419
+// Module ID: 6787
+// Function ID: 6788
 // Name: vanityUrl
 // Dependencies: [2]
 
-// Module 6765 (vanityUrl)
+// Module 6787 (vanityUrl)
 const result = require("set").fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/AccountAgeTier10LargeBadge-2x.png.js");
 
 export default "https://cdn.discordapp.com/assets/content/e65fc4ed10cd57aefbd3a09ab0651841b8492e50ccb09141754aad3b306c6b8a.png";

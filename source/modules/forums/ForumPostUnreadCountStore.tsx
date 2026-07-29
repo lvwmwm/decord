@@ -1,107 +1,65 @@
-// Module ID: 9110
-// Function ID: 71443
-// Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 5075, 1348, 4177, 44, 566, 686, 2]
+// Module ID: 9134
+// Function ID: 9135
+// Name: set
+// Dependencies: [5097, 1372, 4201, 589, 38, 709, 2]
 
-// Module 9110 (_isNativeReflectConstruct)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_3 from "_isNativeReflectConstruct";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
-import closure_7 from "_isNativeReflectConstruct";
-import closure_8 from "_isNativeReflectConstruct";
-import closure_9 from "_isNativeReflectConstruct";
-import set from "_possibleConstructorReturn";
+// Module 9134 (set)
+import handleThreadCreateOrUpdate from "handleThreadCreateOrUpdate";
+import ensureGuildLoaded from "ensureGuildLoaded";
+import generateOldThreadCutoff from "generateOldThreadCutoff";
+import { Store } from "initialize";
+import set from "generateOldThreadCutoff";
 
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
-  }
-  const result = _isNativeReflectConstruct();
-}
-let closure_10 = {};
+let closure_5 = {};
 let set = new Set();
-let tmp3 = ((Store) => {
-  class ForumPostUnreadCountStore {
-    constructor() {
-      self = this;
-      tmp = outer1_2(this, ForumPostUnreadCountStore);
-      obj = outer1_5(ForumPostUnreadCountStore);
-      tmp2 = outer1_4;
-      if (outer1_12()) {
-        tmp6 = globalThis;
-        _Reflect = Reflect;
-        tmp7 = outer1_5;
-        tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, outer1_5(self).constructor);
-      } else {
-        tmp3 = arguments;
-        tmp4 = arguments;
-        constructResult = obj(...arguments);
-      }
-      return tmp2(self, constructResult);
+class ForumPostUnreadCountStore extends Store {
+}
+const prototype = ForumPostUnreadCountStore.prototype;
+prototype["initialize"] = function initialize() {
+  this.waitFor(handleThreadCreateOrUpdate, ensureGuildLoaded, generateOldThreadCutoff);
+};
+prototype["getCount"] = function getCount(arg0) {
+  return dependencyMap[arg0];
+};
+prototype["getThreadIdsMissingCounts"] = function getThreadIdsMissingCounts(guild_id, threadIds) {
+  importDefault(38)(handleThreadCreateOrUpdate.hasLoaded(guild_id), "must wait for THREAD_LIST_SYNC before calling this");
+  return threadIds.filter((arg0) => {
+    let tmp = !(arg0 in closure_5);
+    if (tmp) {
+      tmp = !set.has(arg0);
     }
-  }
-  callback2(ForumPostUnreadCountStore, Store);
-  let obj = {
-    key: "initialize",
-    value() {
-      this.waitFor(outer1_7, outer1_8, outer1_9);
-    }
-  };
-  const items = [obj, , ];
-  obj = {
-    key: "getCount",
-    value(arg0) {
-      return outer1_10[arg0];
-    }
-  };
-  items[1] = obj;
-  obj = {
-    key: "getThreadIdsMissingCounts",
-    value(FRECENCY_AND_FAVORITES_SETTINGS, arr) {
-      ForumPostUnreadCountStore(outer1_1[8])(outer1_7.hasLoaded(FRECENCY_AND_FAVORITES_SETTINGS), "must wait for THREAD_LIST_SYNC before calling this");
-      return arr.filter((arg0) => {
-        let tmp2 = !tmp;
-        if (!(arg0 in outer2_10)) {
-          tmp2 = !outer2_11.has(arg0);
-        }
-        return tmp2;
-      });
-    }
-  };
-  items[2] = obj;
-  return callback(ForumPostUnreadCountStore, items);
-})(require("initialize").Store);
-tmp3.displayName = "ForumPostUnreadCountStore";
-tmp3 = new tmp3(require("dispatcher"), {
+    return tmp;
+  });
+};
+ForumPostUnreadCountStore.displayName = "ForumPostUnreadCountStore";
+const forumPostUnreadCountStore = new ForumPostUnreadCountStore(require("dispatcher"), {
   CONNECTION_OPEN: function handleConnectionOpen() {
-    let closure_10 = {};
+    let closure_5 = {};
     const set = new Set();
   },
   THREAD_CREATE: function handleThreadCreate(channel) {
     channel = channel.channel;
-    let tmp2 = !tmp;
-    if (!!channel.isNewlyCreated) {
-      const tmp4 = !closure_7.hasLoaded(channel.guild_id);
-      if (!tmp4) {
-        closure_10[channel.id] = 0;
+    let isNewlyCreated = channel.isNewlyCreated;
+    if (isNewlyCreated) {
+      const hasLoadedResult = handleThreadCreateOrUpdate.hasLoaded(channel.guild_id);
+      if (hasLoadedResult) {
+        closure_5[channel.id] = 0;
       }
-      tmp2 = !tmp4;
-      const tmp5 = !tmp4;
+      isNewlyCreated = hasLoadedResult;
     }
-    return tmp2;
+    return isNewlyCreated;
   },
-  MESSAGE_CREATE: function handleMessageCreate(channelId) {
-    channelId = channelId.channelId;
-    let tmp = !channelId.optimistic && !channelId.isPushNotification;
+  MESSAGE_CREATE: function handleMessageCreate(isPushNotification) {
+    let channelId;
+    let optimistic;
+    ({ channelId, optimistic } = isPushNotification);
+    let tmp = !optimistic;
+    if (!optimistic) {
+      tmp = !isPushNotification.isPushNotification;
+    }
     if (tmp) {
-      if (channelId in table) {
-        table[channelId] = +table[channelId] + 1;
+      if (channelId in dependencyMap) {
+        dependencyMap[channelId] = +dependencyMap[channelId] + 1;
       }
       tmp = tmp3;
     }
@@ -111,28 +69,34 @@ tmp3 = new tmp3(require("dispatcher"), {
     threads = threads.threads;
     const item = threads.forEach((count) => {
       if (null != count.count) {
-        outer1_10[count.threadId] = count.count;
+        closure_5[count.threadId] = count.count;
       }
     });
   },
   MESSAGE_ACK: function handleMessageAck(channelId) {
     channelId = channelId.channelId;
-    if (!(channelId in closure_10)) {
+    if (!(channelId in closure_5)) {
       const channel = store.getChannel(channelId);
       let parent_id;
-      if (null != channel) {
+      if (channel != null) {
         parent_id = channel.parent_id;
       }
       const channel1 = store.getChannel(parent_id);
-      return false;
+      let isForumLikeChannelResult;
+      if (channel1 != null) {
+        isForumLikeChannelResult = channel1.isForumLikeChannel();
+      }
+      if (!isForumLikeChannelResult) {
+        return false;
+      }
     }
-    closure_10[channelId] = unreadCount.getUnreadCount(channelId);
+    closure_5[channelId] = unreadCount.getUnreadCount(channelId);
   },
   REQUEST_FORUM_UNREADS: function handleRequestForumUnreads(threads) {
     threads = threads.threads;
-    const item = threads.forEach((threadId) => outer1_11.add(threadId.threadId));
+    const item = threads.forEach((threadId) => set.add(threadId.threadId));
   }
 });
-let result = set.fileFinishedImporting("modules/forums/ForumPostUnreadCountStore.tsx");
+const result = set.fileFinishedImporting("modules/forums/ForumPostUnreadCountStore.tsx");
 
-export default tmp3;
+export default forumPostUnreadCountStore;

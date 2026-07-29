@@ -1,43 +1,46 @@
-// Module ID: 13089
-// Function ID: 101115
+// Module ID: 13112
+// Function ID: 13113
 // Name: GuildActionSheetProgress
-// Dependencies: [31, 33, 4165, 689, 11542, 5200, 13090, 2]
+// Dependencies: [19, 21, 4189, 712, 11566, 5222, 13113, 2]
 // Exports: default
 
-// Module 13089 (GuildActionSheetProgress)
-import "result";
+// Module 13112 (GuildActionSheetProgress)
+import "noop";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
 const require = arg1;
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { color: require("_createForOfIteratorHelperLoose").colors.TEXT_DEFAULT };
-_createForOfIteratorHelperLoose.title = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.cardStyle = { marginHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16, padding: 0, marginBottom: require("_createForOfIteratorHelperLoose").space.PX_24 };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-const obj1 = { marginHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16, padding: 0, marginBottom: require("_createForOfIteratorHelperLoose").space.PX_24 };
-const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/guild_action_sheet/native/components/GuildActionSheetProgress.tsx");
+createCacheKey = { title: null, cardStyle: null };
+createCacheKey = { color: require("Themes").colors.TEXT_DEFAULT };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { marginHorizontal: require("Themes").space.PX_16, padding: 0, marginBottom: require("Themes").space.PX_24 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+const obj1 = { marginHorizontal: require("Themes").space.PX_16, padding: 0, marginBottom: require("Themes").space.PX_24 };
+const result = require("createCacheKey").fileFinishedImporting("modules/guild_action_sheet/native/components/GuildActionSheetProgress.tsx");
 
 export default function GuildActionSheetProgress(guild) {
   let completed;
   let dismissed;
   guild = guild.guild;
-  const tmp = _createForOfIteratorHelperLoose();
-  let obj = require(11542) /* useIOSCompletionStates */;
+  const tmp = createCacheKey();
+  let obj = require(11566) /* useIOSCompletionStates */;
   const iOSCompletionStates = obj.useIOSCompletionStates(guild);
   ({ completed, dismissed } = iOSCompletionStates);
-  let tmp3 = null;
+  let tmp5 = null;
   if (obj2.useIsEligibleForGuildProgress(guild)) {
-    tmp3 = null;
+    tmp5 = null;
     if (!completed) {
-      tmp3 = null;
+      tmp5 = null;
       if (dismissed) {
-        obj = { style: tmp.cardStyle };
-        obj = { guild, titleStyle: tmp.title, longPressDisabled: true, resume: true };
-        obj.children = jsx(importDefault(13090), { guild, titleStyle: tmp.title, longPressDisabled: true, resume: true });
-        tmp3 = jsx(require(5200) /* getCardBackgroundToken */.Card, { guild, titleStyle: tmp.title, longPressDisabled: true, resume: true });
+        obj = { style: null, children: null };
+        obj[0] = tmp.cardStyle;
+        obj = { guild: null, titleStyle: null, longPressDisabled: true, resume: true };
+        obj[0] = guild;
+        obj[1] = tmp.title;
+        obj[1] = jsx(importDefault(13113), { guild: null, titleStyle: null, longPressDisabled: true, resume: true });
+        tmp5 = jsx(require(5222) /* PressableCard */.Card, { guild: null, titleStyle: null, longPressDisabled: true, resume: true });
       }
     }
   }
-  return tmp3;
+  return tmp5;
 };

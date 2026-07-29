@@ -1,173 +1,95 @@
-// Module ID: 14531
-// Function ID: 110889
-// Name: _createForOfIteratorHelperLoose
-// Dependencies: [31, 27, 33, 1273, 4161, 4578, 4165, 689, 4576, 7611, 2]
+// Module ID: 14556
+// Function ID: 14557
+// Name: ComparisonRow
+// Dependencies: [19, 17, 21, 1297, 4185, 4600, 4189, 712, 4598, 7634, 2]
 // Exports: default
 
-// Module 14531 (_createForOfIteratorHelperLoose)
-import "result";
+// Module 14556 (ComparisonRow)
+import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 import set from "jsxProd";
 
-let closure_2;
-let closure_3;
-let closure_4;
-let closure_5;
+let c3;
+let c4;
+let c5;
+let obj1;
 const require = arg1;
-function _createForOfIteratorHelperLoose(iterable) {
-  let closure_0 = iterable;
-  iterable = "undefined" !== typeof Symbol;
-  if (iterable) {
-    const _Symbol = Symbol;
-    iterable = iterable[Symbol.iterator];
-  }
-  if (!iterable) {
-    iterable = iterable[Symbol.iterator];
-  }
-  if (iterable) {
-    const iter = iterable.call(iterable);
-    const next = iter.next;
-    return next.bind(iter);
-  } else {
-    const _Array = Array;
-    let tmp = iterable;
-    if (!Array.isArray(iterable)) {
-      let tmp2;
-      if (iterable) {
-        if ("string" === typeof iterable) {
-          tmp2 = _arrayLikeToArray(iterable, undefined);
-        } else {
-          const toString = {}.toString;
-          const substr = toString.call(iterable).slice(8, -1);
-          let name = substr;
-          if (tmp3) {
-            name = iterable.constructor.name;
-          }
-          if ("Map" !== name) {
-            if ("Set" !== name) {
-              if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(iterable, undefined);
-              } else {
-                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
-              }
-            }
-            tmp2 = arr;
-          }
-          const _Array2 = Array;
-          arr = Array.from(iterable);
-          const callResult = toString.call(iterable);
-          tmp3 = "Object" === substr && iterable.constructor;
-        }
-      }
-      tmp = tmp2;
-      if (!tmp2) {
-        const _TypeError = TypeError;
-        const typeError = new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
-        throw typeError;
-      }
-    }
-    if (tmp) {
-      closure_0 = tmp;
-    }
-    let c1 = 0;
-    return () => {
-      if (closure_1 >= length.length) {
-        let obj = { done: true };
-      } else {
-        obj = { done: false };
-        closure_1 = tmp3 + 1;
-        obj.value = length[+closure_1];
-      }
-      return obj;
-    };
-  }
-}
-function _arrayLikeToArray(arg0, arg1) {
-  let length;
-  if (tmp) {
-    length = arg0.length;
-  }
-  const ArrayResult = Array(length);
-  for (let num = 0; num < length; num = num + 1) {
-    ArrayResult[num] = arg0[num];
-  }
-  return ArrayResult;
-}
 function ComparisonRow(entry) {
   entry = entry.entry;
   const tmp = callback3();
   const hasItem = set.has(entry.color);
   const combined = "" + entry.color;
   let redesignVariant = null;
-  if (entry.look !== require(1273) /* Button */.ButtonLooks.LINK) {
-    let obj = require(1273) /* Button */;
-    redesignVariant = obj.getRedesignVariant(entry.color);
+  if (entry.look !== require(1297) /* Button */.ButtonLooks.LINK) {
+    redesignVariant = tmp4(1297).getRedesignVariant(entry.color);
+    const tmp4Result = tmp4(1297);
   }
-  obj = {};
   const items = [tmp.comparisonRow, ];
   let darkBg = hasItem;
   if (hasItem) {
     darkBg = tmp.darkBg;
   }
+  let obj = { style: items, children: null };
   items[1] = darkBg;
-  obj.style = items;
-  obj = { variant: "text-xs/medium" };
   let str = "text-muted";
   if (hasItem) {
     str = "text-default";
   }
-  obj.color = str;
+  obj = { variant: "text-xs/medium", color: str, children: null };
   const items1 = [combined, " \u2192 ", ];
-  let str2 = "unmapped";
-  if (null != redesignVariant) {
-    str2 = redesignVariant;
+  let str2 = redesignVariant;
+  if (redesignVariant == null) {
+    str2 = "unmapped";
   }
   items1[2] = str2;
-  obj.children = items1;
-  const items2 = [callback(require(4161) /* Text */.Text, obj), ];
-  const obj1 = { style: tmp.comparisonButtons };
-  const obj2 = { style: tmp.comparisonSide };
-  const items3 = [callback2(require(4161) /* Text */.Text, { variant: "text-xxs/medium", color: "text-muted", children: "legacy" }), ];
-  const obj3 = { look: entry.look, color: entry.color, size: require(1273) /* Button */.ButtonSizes.MEDIUM, shrink: true, text: combined };
+  obj[2] = items1;
+  const items2 = [closure_4(require(4185) /* Text */.Text, obj), ];
+  const obj1 = { style: tmp.comparisonButtons, children: null };
+  const obj2 = { style: tmp.comparisonSide, children: null };
+  const items3 = [callback2(require(4185) /* Text */.Text, { variant: "text-xxs/medium", color: "text-muted", children: "legacy" }), ];
+  const obj3 = { look: entry.look, color: entry.color, size: null, shrink: true, text: null, textStyle: null, onPress: null };
+  obj3[2] = require(1297) /* Button */.ButtonSizes.MEDIUM;
+  obj3[4] = combined;
   let darkText = null;
   if (hasItem) {
     darkText = null;
-    if (entry.look === require(1273) /* Button */.ButtonLooks.FILLED) {
+    if (entry.look === tmp4(1297).ButtonLooks.FILLED) {
       darkText = tmp.darkText;
     }
   }
-  obj3.textStyle = darkText;
-  obj3.onPress = function onPress() {
+  obj3[5] = darkText;
+  obj3[6] = function onPress() {
 
   };
-  items3[1] = callback2(require(1273) /* Button */.Button, obj3);
-  obj2.children = items3;
-  const items4 = [callback(closure_3, obj2), ];
+  items3[1] = callback2(require(1297) /* Button */.Button, obj3);
+  obj2[1] = items3;
+  const items4 = [closure_4(closure_3, obj2), ];
   if (null != redesignVariant) {
-    const obj4 = { style: tmp.comparisonSide };
-    const items5 = [callback2(require(4161) /* Text */.Text, { variant: "text-xxs/medium", color: "text-muted", children: "mana" }), ];
-    const obj5 = {
-      variant: redesignVariant,
-      size: "md",
-      text: redesignVariant,
-      onPress() {
+    const obj4 = { style: null, children: null };
+    obj4[0] = tmp.comparisonSide;
+    const items5 = [tmp9(tmp4(4185).Text, { variant: "text-xxs/medium", color: "text-muted", children: "mana" }), ];
+    const obj5 = { variant: null, size: "md", text: null, onPress: null };
+    obj5[0] = redesignVariant;
+    obj5[2] = redesignVariant;
+    obj5[3] = function onPress() {
 
-        }
     };
-    items5[1] = callback2(require(4578) /* Button */.Button, obj5);
-    obj4.children = items5;
-    let tmp23 = callback(closure_3, obj4);
+    items5[1] = tmp9(tmp4(4600).Button, obj5);
+    obj4[1] = items5;
+    let tmp9Result = tmp7(tmp8, obj4);
   } else {
-    const obj6 = { style: tmp.comparisonSide, children: callback2(require(4161) /* Text */.Text, { variant: "text-xs/medium", color: "text-muted", children: "no mapping" }) };
-    tmp23 = callback2(closure_3, obj6);
+    const obj6 = { style: null, children: null };
+    obj6[0] = tmp.comparisonSide;
+    obj6[1] = tmp9(tmp4(4185).Text, { variant: "text-xs/medium", color: "text-muted", children: "no mapping" });
+    tmp9Result = tmp9(tmp8, obj6);
   }
-  items4[1] = tmp23;
-  obj1.children = items4;
-  items2[1] = callback(closure_3, obj1);
-  obj.children = items2;
-  return callback(closure_3, obj);
+  items4[1] = tmp9Result;
+  obj1[1] = items4;
+  items2[1] = closure_4(closure_3, obj1);
+  obj[1] = items2;
+  return closure_4(closure_3, obj);
 }
 function ComboRow(combo) {
   let color;
@@ -181,41 +103,37 @@ function ComboRow(combo) {
   }
   const combined = "" + color + " / " + size + str;
   const hasItem = set.has(combo.color);
-  let obj = {};
   const items = [tmp.comboRow, ];
   let darkBg = hasItem;
   if (hasItem) {
     darkBg = tmp.darkBg;
   }
+  let obj = { style: items, children: null };
   items[1] = darkBg;
-  obj.style = items;
-  obj = { variant: "text-xs/medium" };
   let str2 = "text-muted";
   if (hasItem) {
     str2 = "text-default";
   }
-  obj.color = str2;
   const items1 = [combined, " (", combo.count, ")"];
-  obj.children = items1;
-  const items2 = [closure_4(require(4161) /* Text */.Text, obj), ];
-  obj = { look: combo.look, color: combo.color, size: combo.size, shrink: combo.shrink, text: combined };
+  const items2 = [closure_4(require(4185) /* Text */.Text, { variant: "text-xs/medium", color: str2, children: items1 }), ];
+  obj = { look: combo.look, color: combo.color, size: combo.size, shrink: combo.shrink, text: combined, textStyle: null, onPress: null };
   let darkText = null;
   if (hasItem) {
     darkText = null;
-    if (combo.look === require(1273) /* Button */.ButtonLooks.FILLED) {
+    if (combo.look === tmp6(1297).ButtonLooks.FILLED) {
       darkText = tmp.darkText;
     }
   }
-  obj.textStyle = darkText;
-  obj.onPress = function onPress() {
+  obj[5] = darkText;
+  obj[6] = function onPress() {
 
   };
-  items2[1] = closure_5(require(1273) /* Button */.Button, obj);
-  obj.children = items2;
+  items2[1] = closure_5(require(1297) /* Button */.Button, obj);
+  obj[1] = items2;
   return closure_4(closure_3, obj);
 }
-({ ScrollView: closure_2, View: closure_3 } = get_ActivityIndicator);
-({ jsxs: closure_4, jsx: closure_5 } = jsxProd);
+({ ScrollView: obj1, View: c3 } = get_ActivityIndicator);
+({ jsxs: c4, jsx: c5 } = jsxProd);
 let obj = { look: require("Button").ButtonLooks.FILLED, color: require("Button").ButtonColors.BRAND, size: require("Button").ButtonSizes.LARGE, shrink: false, count: 1 };
 let items = [obj, , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , ];
 obj = { look: require("Button").ButtonLooks.FILLED, color: require("Button").ButtonColors.BRAND, size: require("Button").ButtonSizes.MEDIUM, shrink: false, count: 116 };
@@ -223,7 +141,7 @@ items[1] = obj;
 obj = { look: require("Button").ButtonLooks.FILLED, color: require("Button").ButtonColors.BRAND, size: require("Button").ButtonSizes.MEDIUM, shrink: true, count: 12 };
 items[2] = obj;
 items[3] = { look: require("Button").ButtonLooks.FILLED, color: require("Button").ButtonColors.BRAND, size: require("Button").ButtonSizes.SMALL, shrink: false, count: 5 };
-let obj1 = { look: require("Button").ButtonLooks.FILLED, color: require("Button").ButtonColors.BRAND, size: require("Button").ButtonSizes.SMALL, shrink: false, count: 5 };
+obj1 = { look: require("Button").ButtonLooks.FILLED, color: require("Button").ButtonColors.BRAND, size: require("Button").ButtonSizes.SMALL, shrink: false, count: 5 };
 items[4] = { look: require("Button").ButtonLooks.FILLED, color: require("Button").ButtonColors.BRAND, size: require("Button").ButtonSizes.SMALL, shrink: true, count: 2 };
 let obj2 = { look: require("Button").ButtonLooks.FILLED, color: require("Button").ButtonColors.BRAND, size: require("Button").ButtonSizes.SMALL, shrink: true, count: 2 };
 items[5] = { look: require("Button").ButtonLooks.FILLED, color: require("Button").ButtonColors.BRAND, size: require("Button").ButtonSizes.XSMALL, shrink: false, count: 4 };
@@ -299,105 +217,110 @@ const obj37 = { look: require("Button").ButtonLooks.OUTLINED, color: require("Bu
 items[40] = { look: require("Button").ButtonLooks.OUTLINED, color: require("Button").ButtonColors.WHITE, size: require("Button").ButtonSizes.SMALL, shrink: false, count: 1 };
 let items1 = [require("Button").ButtonColors.WHITE];
 let set = new Set(items1);
-const obj39 = {};
+const obj39 = { comboRow: null, darkText: null, darkBg: null, comparisonRow: null, comparisonButtons: null, comparisonSide: null, container: null, header: null };
 const obj38 = { look: require("Button").ButtonLooks.OUTLINED, color: require("Button").ButtonColors.WHITE, size: require("Button").ButtonSizes.SMALL, shrink: false, count: 1 };
-obj39.comboRow = { gap: 4, paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16, paddingVertical: require("_createForOfIteratorHelperLoose").space.PX_4 };
-_createForOfIteratorHelperLoose = { color: require("_createForOfIteratorHelperLoose").unsafe_rawColors.GREEN_360 };
-obj39.darkText = _createForOfIteratorHelperLoose;
-const obj40 = { gap: 4, paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16, paddingVertical: require("_createForOfIteratorHelperLoose").space.PX_4 };
-obj39.darkBg = { backgroundColor: require("_createForOfIteratorHelperLoose").unsafe_rawColors.PRIMARY_600, borderRadius: require("_createForOfIteratorHelperLoose").radii.sm, marginHorizontal: require("_createForOfIteratorHelperLoose").space.PX_8, paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_8, paddingVertical: require("_createForOfIteratorHelperLoose").space.PX_8 };
-const obj42 = { backgroundColor: require("_createForOfIteratorHelperLoose").unsafe_rawColors.PRIMARY_600, borderRadius: require("_createForOfIteratorHelperLoose").radii.sm, marginHorizontal: require("_createForOfIteratorHelperLoose").space.PX_8, paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_8, paddingVertical: require("_createForOfIteratorHelperLoose").space.PX_8 };
-obj39.comparisonRow = { gap: 4, paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16, paddingVertical: require("_createForOfIteratorHelperLoose").space.PX_8 };
-const obj44 = { flexDirection: "row", gap: require("_createForOfIteratorHelperLoose").space.PX_12, alignItems: "flex-end" };
-obj39.comparisonButtons = obj44;
-obj39.comparisonSide = { flex: 1, gap: 2 };
-const obj43 = { gap: 4, paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16, paddingVertical: require("_createForOfIteratorHelperLoose").space.PX_8 };
-obj39.container = { paddingBottom: require("_createForOfIteratorHelperLoose").space.PX_48 };
-const obj45 = { paddingBottom: require("_createForOfIteratorHelperLoose").space.PX_48 };
-obj39.header = { paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16, paddingTop: require("_createForOfIteratorHelperLoose").space.PX_16, paddingBottom: require("_createForOfIteratorHelperLoose").space.PX_8 };
-let closure_8 = _createForOfIteratorHelperLoose.createStyles(obj39);
+obj39[0] = { gap: 4, paddingHorizontal: require("Themes").space.PX_16, paddingVertical: require("Themes").space.PX_4 };
+createCacheKey = { color: require("Themes").unsafe_rawColors.GREEN_360 };
+obj39[1] = createCacheKey;
+const obj40 = { gap: 4, paddingHorizontal: require("Themes").space.PX_16, paddingVertical: require("Themes").space.PX_4 };
+obj39[2] = { backgroundColor: require("Themes").unsafe_rawColors.PRIMARY_600, borderRadius: require("Themes").radii.sm, marginHorizontal: require("Themes").space.PX_8, paddingHorizontal: require("Themes").space.PX_8, paddingVertical: require("Themes").space.PX_8 };
+const obj42 = { backgroundColor: require("Themes").unsafe_rawColors.PRIMARY_600, borderRadius: require("Themes").radii.sm, marginHorizontal: require("Themes").space.PX_8, paddingHorizontal: require("Themes").space.PX_8, paddingVertical: require("Themes").space.PX_8 };
+obj39[3] = { gap: 4, paddingHorizontal: require("Themes").space.PX_16, paddingVertical: require("Themes").space.PX_8 };
+const obj43 = { gap: 4, paddingHorizontal: require("Themes").space.PX_16, paddingVertical: require("Themes").space.PX_8 };
+obj39[4] = { flexDirection: "row", gap: require("Themes").space.PX_12, alignItems: "flex-end" };
+obj39[5] = { flex: 1, gap: 2 };
+const obj44 = { flexDirection: "row", gap: require("Themes").space.PX_12, alignItems: "flex-end" };
+obj39[6] = { paddingBottom: require("Themes").space.PX_48 };
+const obj45 = { paddingBottom: require("Themes").space.PX_48 };
+obj39[7] = { paddingHorizontal: require("Themes").space.PX_16, paddingTop: require("Themes").space.PX_16, paddingBottom: require("Themes").space.PX_8 };
+let closure_10 = createCacheKey.createStyles(obj39);
 const result = set.fileFinishedImporting("modules/user_settings/design_system/native/UserSettingsDesignSystemLegacyButton.tsx");
 
 export default function UserSettingsDesignSystemLegacyButton() {
-  let iter2;
-  let iter4;
-  let iter6;
   const tmp = callback3();
-  let obj = {};
-  const tmp2 = _createForOfIteratorHelperLoose(items);
-  let iter = tmp2();
-  if (!iter.done) {
-    do {
-      let value = iter.value;
-      let look = value.look;
+  let tmp2 = (function groupByLook(items) {
+    const obj = {};
+    const iter = items[Symbol.iterator]();
+    const nextResult = iter.next();
+    while (iter !== undefined) {
+      let look = nextResult.look;
+      let tmp3 = look;
+      let tmp2 = nextResult;
       if (null == obj[look]) {
-        obj[look] = [];
+        let tmp4 = look;
+        obj[tmp3] = [];
       }
-      let arr = obj[look];
-      arr = arr.push(value);
-      iter2 = tmp2();
-      iter = iter2;
-    } while (!iter2.done);
-  }
-  const set = new Set();
-  items = [];
-  const tmp4 = _createForOfIteratorHelperLoose(items);
-  let iter3 = tmp4();
-  if (!iter3.done) {
-    do {
-      value = iter3.value;
+      let tmp5 = look;
+      let arr = obj[tmp3];
+      let tmp6 = nextResult;
+      arr = arr.push(tmp2);
+      continue;
+    }
+    return obj;
+  })(items);
+  let obj = {};
+  let iter = (function getUniqueComparisons() {
+    const set = new Set();
+    const items = [];
+    const iter = dependencyMap2[Symbol.iterator]();
+    const nextResult = iter.next();
+    while (iter !== undefined) {
+      let tmp3 = nextResult;
       let _HermesInternal = HermesInternal;
-      let combined = "" + value.look + "/" + value.color;
+      let combined = "" + nextResult.look + "/" + nextResult.color;
+      let tmp5 = combined;
       if (!set.has(combined)) {
-        let addResult = set.add(combined);
-        obj = {};
-        ({ look: obj3.look, color: obj3.color } = value);
-        arr = items.push(obj);
+        let tmp6 = combined;
+        let addResult = set.add(tmp5);
+        let obj = { look: null, color: null };
+        let tmp8 = nextResult;
+        ({ look: obj2[0], color: obj2[1] } = tmp3);
+        let arr = items.push(obj);
       }
-      iter4 = tmp4();
-      iter3 = iter4;
-    } while (!iter4.done);
+      continue;
+    }
+    return items;
+  })()[Symbol.iterator]();
+  let nextResult = iter.next();
+  while (iter !== undefined) {
+    let tmp5 = nextResult;
+    if (null == obj[nextResult.look]) {
+      let tmp6 = nextResult;
+      obj[tmp5.look] = [];
+    }
+    let tmp7 = nextResult;
+    let arr = obj[tmp5.look];
+    arr = arr.push(tmp5);
+    continue;
   }
-  obj = {};
-  const tmp8 = _createForOfIteratorHelperLoose(items);
-  let iter5 = tmp8();
-  if (!iter5.done) {
-    do {
-      value = iter5.value;
-      if (null == obj[value.look]) {
-        obj[value.look] = [];
-      }
-      let arr3 = obj[value.look];
-      let arr1 = arr3.push(value);
-      iter6 = tmp8();
-      iter5 = iter6;
-    } while (!iter6.done);
-  }
-  const obj1 = { style: tmp.container };
-  const obj2 = { spacing: 4, style: tmp.header };
-  const items1 = [callback2(require(4161) /* Text */.Text, { variant: "heading-xl/bold", children: "Migration Mapping" }), callback2(require(4161) /* Text */.Text, { variant: "text-sm/normal", color: "text-muted", children: "Legacy (uikit-native) \u2192 Mana side-by-side" })];
-  obj2.children = items1;
-  const items2 = [callback(require(4576) /* Stack */.Stack, obj2), , , ];
+  obj = { style: tmp.container, children: null };
+  obj = { spacing: 4, style: tmp.header, children: null };
+  items = [callback2(require(4185) /* Text */.Text, { variant: "heading-xl/bold", children: "Migration Mapping" }), callback2(require(4185) /* Text */.Text, { variant: "text-sm/normal", color: "text-muted", children: "Legacy (uikit-native) \u2192 Mana side-by-side" })];
+  obj[2] = items;
+  const items1 = [callback(require(4598) /* Stack */.Stack, obj), , , ];
   const entries = Object.entries(obj);
-  items2[1] = entries.map((arg0) => {
+  items1[1] = entries.map((arg0) => {
     let arr;
     let tmp;
     [tmp, arr] = arg0;
-    const obj = { title: tmp, children: arr.map((entry) => outer2_5(outer2_11, { entry }, arg1)) };
-    return outer1_5(outer1_0(outer1_1[9]).FormSection, obj, "cmp-" + tmp);
+    const obj = { title: tmp, children: null };
+    obj[1] = arr.map((entry) => callback(closure_8, { entry }, arg1));
+    return callback2(callback(7634).FormSection, obj, "cmp-" + tmp);
   });
-  const obj3 = { spacing: 4, style: tmp.header };
-  const items3 = [callback2(require(4161) /* Text */.Text, { variant: "heading-xl/bold", children: "Legacy Button Audit" }), callback2(require(4161) /* Text */.Text, { variant: "text-sm/normal", color: "text-muted", children: "41 combinations across 185 importers" })];
-  obj3.children = items3;
-  items2[2] = callback(require(4576) /* Stack */.Stack, obj3);
-  const entries1 = Object.entries(obj);
-  items2[3] = entries1.map((arg0) => {
+  const obj1 = { spacing: 4, style: tmp.header, children: null };
+  const items2 = [callback2(require(4185) /* Text */.Text, { variant: "heading-xl/bold", children: "Legacy Button Audit" }), callback2(require(4185) /* Text */.Text, { variant: "text-sm/normal", color: "text-muted", children: "41 combinations across 185 importers" })];
+  obj1[2] = items2;
+  items1[2] = callback(require(4598) /* Stack */.Stack, obj1);
+  const entries1 = Object.entries(tmp2);
+  items1[3] = entries1.map((arg0) => {
     let arr;
     let tmp;
     [tmp, arr] = arg0;
-    const obj = { title: "" + tmp + " (" + arr.reduce((arg0, count) => arg0 + count.count, 0) + " usages)", children: arr.map((combo) => outer2_5(outer2_12, { combo }, arg1)) };
-    return outer1_5(outer1_0(outer1_1[9]).FormSection, obj, tmp);
+    const obj = { title: null, children: null };
+    obj[0] = "" + tmp + " (" + arr.reduce((arg0, count) => arg0 + count.count, 0) + " usages)";
+    obj[1] = arr.map((combo) => callback(closure_9, { combo }, arg1));
+    return callback2(callback(7634).FormSection, obj, tmp);
   });
-  obj1.children = items2;
-  return callback(closure_2, obj1);
+  obj[1] = items1;
+  return callback(closure_2, obj);
 };

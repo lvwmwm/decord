@@ -1,408 +1,309 @@
-// Module ID: 4050
-// Function ID: 33456
-// Name: _createForOfIteratorHelperLoose
-// Dependencies: [5, 15, 17, 18, 162, 6, 7, 2]
+// Module ID: 4074
+// Function ID: 4075
+// Name: start
+// Dependencies: [5, 2]
 // Exports: timeoutPromise
 
-// Module 4050 (_createForOfIteratorHelperLoose)
-import _classCallCheck from "_classCallCheck";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
-import _defineProperties from "_defineProperties";
-import set from "set";
-import importDefaultResult from "_wrapNativeSuper";
+// Module 4074 (start)
+import asyncGeneratorStep from "asyncGeneratorStep";
 
-function _createForOfIteratorHelperLoose(iterable) {
-  let _classCallCheck = iterable;
-  iterable = "undefined" !== typeof Symbol;
-  if (iterable) {
-    const _Symbol = Symbol;
-    iterable = iterable[Symbol.iterator];
+class Timeout {
+}
+const prototype = Timeout.prototype;
+prototype["start"] = function start(arg0, arg1) {
+  let self = this;
+  self = this;
+  let asyncGeneratorStep = arg1;
+  let flag = arg2;
+  if (arg2 === undefined) {
+    flag = true;
   }
-  if (!iterable) {
-    iterable = iterable[Symbol.iterator];
+  if (!tmp) {
+    self.stop();
+    const _window = window;
+    self._ref = window.setTimeout(() => {
+      self._ref = null;
+      callback();
+    }, arg0);
   }
-  if (iterable) {
-    const iter = iterable.call(iterable);
-    const next = iter.next;
-    return next.bind(iter);
-  } else {
-    const _Array = Array;
-    let tmp = iterable;
-    if (!Array.isArray(iterable)) {
-      let tmp2;
-      if (iterable) {
-        if ("string" === typeof iterable) {
-          tmp2 = _arrayLikeToArray(iterable, undefined);
-        } else {
-          const toString = {}.toString;
-          const substr = toString.call(iterable).slice(8, -1);
-          let name = substr;
-          if (tmp3) {
-            name = iterable.constructor.name;
-          }
-          if ("Map" !== name) {
-            if ("Set" !== name) {
-              if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(iterable, undefined);
-              } else {
-                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
-              }
-            }
-            tmp2 = arr;
-          }
-          const _Array2 = Array;
-          arr = Array.from(iterable);
-          const callResult = toString.call(iterable);
-          tmp3 = "Object" === substr && iterable.constructor;
-        }
-      }
-      tmp = tmp2;
-      if (!tmp2) {
-        const _TypeError = TypeError;
-        const typeError = new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
-        throw typeError;
-      }
+};
+prototype["stop"] = function stop() {
+  const self = this;
+  if (null != this._ref) {
+    const _clearTimeout = clearTimeout;
+    clearTimeout(self._ref);
+    self._ref = null;
+  }
+};
+prototype["isStarted"] = function isStarted() {
+  return null != this._ref;
+};
+class DelayedCall {
+  constructor(arg0, arg1) {
+    obj = Object.create(new.target.prototype);
+    obj._delay = global;
+    obj._handler = arg1;
+    tmp2 = Timeout;
+    if (typeof Timeout !== "find") {
+      str = "Trying to call a non-function";
+      throwTypeErrorResult = HermesBuiltin.throwTypeError();
     }
-    if (tmp) {
-      _classCallCheck = tmp;
-    }
-    let c1 = 0;
-    return () => {
-      if (_possibleConstructorReturn >= length.length) {
-        let obj = { done: true };
-      } else {
-        obj = { done: false };
-        _possibleConstructorReturn = tmp3 + 1;
-        obj.value = length[+_possibleConstructorReturn];
-      }
-      return obj;
-    };
+    obj._timeout = Object.create(tmp2.prototype);
+    return obj;
   }
 }
-function _arrayLikeToArray(arg0, arg1) {
-  let length;
-  if (tmp) {
-    length = arg0.length;
+const prototype2 = DelayedCall.prototype;
+prototype2["set"] = function set(_delay) {
+  this._delay = _delay;
+  return this;
+};
+prototype2["delay"] = function delay() {
+  let flag = arg0;
+  if (arg0 === undefined) {
+    flag = true;
   }
-  const ArrayResult = Array(length);
-  for (let num = 0; num < length; num = num + 1) {
-    ArrayResult[num] = arg0[num];
-  }
-  return ArrayResult;
+  const _timeout = this._timeout;
+  _timeout.start(this._delay, this._handler, flag);
+};
+prototype2["cancel"] = function cancel() {
+  const _timeout = this._timeout;
+  _timeout.stop();
+};
+prototype2["isDelayed"] = function isDelayed() {
+  const _timeout = this._timeout;
+  return _timeout.isStarted();
+};
+const prototype3 = function BatchInvocationManagerResetError() {
+  const applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
+  applyArgumentsResult.name = "BatchInvocationManagerResetError";
+  return applyArgumentsResult;
+}.prototype;
+class prototype3 extends Error {
 }
-function _isNativeReflectConstruct() {
-  let _classCallCheck = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return _classCallCheck;
-  }
-  const result = _isNativeReflectConstruct();
+const result = require("set").fileFinishedImporting("../discord_common/js/packages/timers/Timers.tsx");
+class Interval {
 }
-let tmp3 = (() => {
-  class Timeout {
-    constructor() {
-      tmp = outer1_4(this, Timeout);
-      return;
-    }
+const prototype4 = Interval.prototype;
+prototype4["start"] = function start(arg0, arg1) {
+  this.stop();
+  this._ref = window.setInterval(arg1, arg0);
+};
+prototype4["stop"] = function stop() {
+  const self = this;
+  if (null != this._ref) {
+    const _clearInterval = clearInterval;
+    clearInterval(self._ref);
+    self._ref = null;
   }
-  let obj = {
-    key: "start",
-    value(arg0, arg1) {
-      let flag = arg2;
-      let self = this;
-      self = this;
-      let _possibleConstructorReturn = arg1;
-      if (arg2 === undefined) {
-        flag = true;
-      }
-      if (!tmp) {
-        self.stop();
-        const _window = window;
-        self._ref = window.setTimeout(() => {
-          self._ref = null;
-          callback();
-        }, arg0);
-      }
+};
+prototype4["isStarted"] = function isStarted() {
+  return null != this._ref;
+};
+class BatchInvocationManager {
+  constructor(arg0) {
+    obj = arg1;
+    if (arg1 === undefined) {
+      obj = {};
     }
-  };
-  const items = [obj, , ];
-  obj = {
-    key: "stop",
-    value() {
-      const self = this;
-      if (null != this._ref) {
-        const _clearTimeout = clearTimeout;
-        clearTimeout(self._ref);
-        self._ref = null;
-      }
-    }
-  };
-  items[1] = obj;
-  obj = {
-    key: "isStarted",
-    value() {
-      return null != this._ref;
-    }
-  };
-  items[2] = obj;
-  return callback3(Timeout, items);
-})();
-let closure_6 = tmp3;
-let tmp4 = (() => {
-  class DelayedCall {
-    constructor(arg0, arg1) {
-      tmp = outer1_4(this, DelayedCall);
-      this._delay = arg0;
-      this._handler = arg1;
-      tmp2 = new outer1_6();
-      this._timeout = tmp2;
-      return;
-    }
-  }
-  let obj = {
-    key: "set",
-    value(_delay) {
-      this._delay = _delay;
-      return this;
-    }
-  };
-  const items = [obj, , , ];
-  obj = {
-    key: "delay",
-    value() {
-      let flag = arg0;
-      const self = this;
-      if (arg0 === undefined) {
-        flag = true;
-      }
-      const _timeout = self._timeout;
-      _timeout.start(self._delay, self._handler, flag);
-    }
-  };
-  items[1] = obj;
-  obj = {
-    key: "cancel",
-    value() {
-      const _timeout = this._timeout;
-      _timeout.stop();
-    }
-  };
-  items[2] = obj;
-  items[3] = {
-    key: "isDelayed",
-    value() {
-      const _timeout = this._timeout;
-      return _timeout.isStarted();
-    }
-  };
-  return callback3(DelayedCall, items);
-})();
-let closure_7 = tmp4;
-const tmp6 = ((arg0) => {
-  class BatchInvocationManagerResetError {
-    constructor(arg0) {
-      self = this;
-      items = [...arguments];
-      tmp = outer1_4(this, BatchInvocationManagerResetError);
-      items1 = [...items];
-      obj = outer1_2(BatchInvocationManagerResetError);
-      tmp2 = outer1_1;
-      if (outer1_11()) {
-        tmp4 = globalThis;
-        _Reflect = Reflect;
-        tmp5 = outer1_2;
-        constructResult = Reflect.construct(obj, items1, outer1_2(self).constructor);
-      } else {
-        constructResult = obj.apply(self, items1);
-      }
-      tmp2Result = tmp2(self, constructResult);
-      tmp2Result.name = "BatchInvocationManagerResetError";
-      return tmp2Result;
-    }
-  }
-  callback2(BatchInvocationManagerResetError, arg0);
-  return callback3(BatchInvocationManagerResetError);
-})(importDefaultResult(Error));
-let closure_8 = tmp6;
-const tmp5 = (() => {
-  class Interval {
-    constructor() {
-      tmp = outer1_4(this, Interval);
-      return;
-    }
-  }
-  let obj = {
-    key: "start",
-    value(arg0, arg1) {
-      this.stop();
-      this._ref = window.setInterval(arg1, arg0);
-    }
-  };
-  const items = [obj, , ];
-  obj = {
-    key: "stop",
-    value() {
-      const self = this;
-      if (null != this._ref) {
-        const _clearInterval = clearInterval;
-        clearInterval(self._ref);
-        self._ref = null;
-      }
-    }
-  };
-  items[1] = obj;
-  obj = {
-    key: "isStarted",
-    value() {
-      return null != this._ref;
-    }
-  };
-  items[2] = obj;
-  return callback3(Interval, items);
-})();
-const tmp7 = (() => {
-  class BatchInvocationManager {
-    constructor(arg0) {
-      obj = arg1;
-      self = this;
-      self = this;
-      if (arg1 === undefined) {
-        obj = {};
-      }
-      tmp = outer1_4(self, BatchInvocationManager);
-      self.invoke = arg0;
-      self.options = obj;
-      set = new Set();
-      self._promises = set;
-      set1 = new Set();
-      self._pending = set1;
-      tmp4 = outer1_7;
-      delay = self.options.delay;
+    obj = Object.create(new.target.prototype);
+    asyncGeneratorStep = obj;
+    set = new Set();
+    obj._promises = set;
+    set1 = new Set();
+    obj._pending = set1;
+    obj.invoke = global;
+    obj.options = obj;
+    tmp4 = DelayedCall;
+    num = obj.options.delay;
+    if (num == null) {
       num = 32;
-      if (null != delay) {
-        num = delay;
-      }
-      tmp4 = new tmp4(num, () => self._flush());
-      self._flushHandler = tmp4;
-      return;
+    }
+    if (typeof tmp4 !== "find") {
+      str = "Trying to call a non-function";
+      throwTypeErrorResult = HermesBuiltin.throwTypeError();
+    }
+    fn = () => obj._flush();
+    obj1 = Object.create(tmp4.prototype);
+    obj1._delay = num;
+    obj1._handler = fn;
+    tmp6 = Timeout;
+    if (typeof Timeout !== "find") {
+      str2 = "Trying to call a non-function";
+      throwTypeErrorResult1 = HermesBuiltin.throwTypeError();
+    }
+    obj1._timeout = Object.create(tmp6.prototype);
+    obj._flushHandler = obj1;
+    return obj;
+  }
+}
+const prototype5 = BatchInvocationManager.prototype;
+prototype5["queue"] = function queue(arg0) {
+  let self = this;
+  self = this;
+  let tmp = arg0;
+  if (!Array.isArray(arg0)) {
+    const items = [arg0];
+    tmp = items;
+  }
+  const items1 = [];
+  const iter = tmp[Symbol.iterator]();
+  const nextResult = iter.next();
+  while (iter !== undefined) {
+    let tmp3 = nextResult;
+    let options = self.options;
+    let predicate = options.predicate;
+    let num;
+    if (predicate != null) {
+      let tmp4 = nextResult;
+      num = predicate(tmp3);
+    }
+    if (num == null) {
+      num = 1;
+    }
+    if (num) {
+      let _pending = self._pending;
+      let tmp5 = nextResult;
+      num = !_pending.has(tmp3);
+    }
+    if (num) {
+      let _pending2 = self._pending;
+      let tmp6 = nextResult;
+      let addResult = _pending2.add(tmp3);
+      let arr = items1.push(tmp3);
+    }
+    continue;
+  }
+  if (items1.length > 0) {
+    const options2 = self.options;
+    const onQueued = options2.onQueued;
+    if (onQueued != null) {
+      onQueued(items1);
     }
   }
-  let obj = {
-    key: "queue",
-    value(arg0) {
-      let iter2;
-      let self = this;
-      self = this;
-      const items = [];
-      let tmp2 = arg0;
-      if (!Array.isArray(arg0)) {
-        const items1 = [arg0];
-        tmp2 = items1;
-      }
-      const tmpResult = outer1_9(tmp2);
-      let iter = tmpResult();
-      if (!iter.done) {
-        do {
-          let value = iter.value;
-          let options = self.options;
-          let predicate = options.predicate;
-          let callResult;
-          if (null != predicate) {
-            callResult = predicate.call(options, value);
-          }
-          let hasItem = null != callResult && !callResult;
-          if (!hasItem) {
-            let _pending = self._pending;
-            hasItem = _pending.has(value);
-          }
-          if (!hasItem) {
-            let _pending2 = self._pending;
-            let addResult = _pending2.add(value);
-            let arr = items.push(value);
-          }
-          iter2 = tmpResult();
-          iter = iter2;
-        } while (!iter2.done);
-      }
-      if (items.length > 0) {
-        const options2 = self.options;
-        const onQueued = options2.onQueued;
-        if (null != onQueued) {
-          onQueued.call(options2, items);
-        }
-      }
-      if (0 === self._pending.size) {
-        let resolved = Promise.resolve();
+  if (0 === self._pending.size) {
+    let resolved = Promise.resolve();
+  } else {
+    resolved = new Promise((resolve, reject) => {
+      const _promises = self._promises;
+      _promises.add({ resolve, reject });
+      self._flushHandler.delay(false);
+    });
+  }
+  return resolved;
+};
+prototype5["reset"] = function reset() {
+  const items = [...this._pending];
+  const items1 = [...this._promises];
+  let asyncGeneratorStep = new prototype3("BatchInvocationManager was reset");
+  const _pending = this._pending;
+  _pending.clear();
+  const _promises = this._promises;
+  _promises.clear();
+  this._flushHandler.cancel();
+  if (items.length > 0) {
+    const options = this.options;
+    const onCancelled = options.onCancelled;
+    if (onCancelled != null) {
+      onCancelled(items);
+    }
+  }
+  const item = items1.forEach((reject) => reject.reject(asyncGeneratorStep));
+};
+prototype5["_flush"] = function _flush() {
+  const self = this;
+  return self(function*() {
+    if (c6 === 2) {
+      c6 = 3;
+      HermesBuiltin.throwTypeError();
+    } else if (tmp5 === 3) {
+      if (arg0 === 1) {
+        throw arg1;
+      } else if (arg0 === 2) {
+        let obj = { value: null, done: true };
+        obj[0] = arg1;
+        return obj;
       } else {
-        resolved = new Promise((resolve, reject) => {
-          const _promises = self._promises;
-          _promises.add({ resolve, reject });
-          self._flushHandler.delay(false);
-        });
+        return { value: "HermesInternal", done: null };
       }
-      return resolved;
-    }
-  };
-  let items = [obj, , ];
-  obj = {
-    key: "reset",
-    value() {
-      const items = [...this._pending];
-      const items1 = [...this._promises];
-      let _classCallCheck = new outer1_8("BatchInvocationManager was reset");
-      const _pending = this._pending;
-      _pending.clear();
-      const _promises = this._promises;
-      _promises.clear();
-      this._flushHandler.cancel();
-      if (items.length > 0) {
-        const options = this.options;
-        const onCancelled = options.onCancelled;
-        if (null != onCancelled) {
-          onCancelled.call(options, items);
+    } else {
+      try {
+        c6 = 2;
+        if (0 === c3) {
+          if (arg0 === 1) {
+            c6 = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            c6 = 3;
+            obj = { value: null, done: true };
+            obj[0] = arg1;
+            return obj;
+          } else {
+            let closure_2 = tmp6;
+            let items1;
+            items1 = 0;
+            const items = [];
+            items1 = HermesBuiltin.arraySpread(outer1_0._pending, items1);
+            const _pending = outer1_0._pending;
+            _pending.clear();
+            let closure_1 = 0;
+            items1 = [];
+            closure_1 = HermesBuiltin.arraySpread(outer1_0._promises, closure_1);
+            const _promises = outer1_0._promises;
+            _promises.clear();
+            if (0 !== items.length) {
+              let c5 = 1;
+              c3 = 2;
+              c6 = 1;
+              const obj1 = { value: null, done: false };
+              obj1[0] = obj5.invoke(items);
+              return obj1;
+            } else {
+              const item = items1.forEach((resolve) => resolve.resolve());
+            }
+            obj5 = outer1_0;
+          }
+        } else {
+          if (1 === tmp6) {
+            c5 = 0;
+            closure_1 = closure_4;
+            const item1 = items1.forEach((reject) => reject.reject(closure_1));
+          } else if (arg0 === 1) {
+            c6 = 3;
+            throw arg1;
+          } else if (arg0 !== 2) {
+            const item2 = items1.forEach((resolve) => resolve.resolve());
+            c5 = 0;
+          }
+          c5 = 0;
+          c6 = 3;
+          obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
+        }
+        c6 = 3;
+      } catch (tmp16) {
+        closure_4 = tmp16;
+        if (tmp3 === c5) {
+          c6 = tmp2;
+          throw tmp16;
+        } else {
+          c3 = tmp;
         }
       }
-      const item = items1.forEach((reject) => reject.reject(_classCallCheck));
     }
-  };
-  items[1] = obj;
-  obj = { key: "_flush" };
-  callback = callback(async function() {
-    const self = this;
-    const items = [...self._pending];
-    const _pending = self._pending;
-    _pending.clear();
-    const items1 = [...self._promises];
-    const _promises = self._promises;
-    _promises.clear();
-    if (0 !== items.length) {
-      yield self.invoke(items);
-      const item = arr3.forEach((resolve) => resolve.resolve());
-    } else {
-      const item1 = arr3.forEach((resolve) => resolve.resolve());
-    }
-  });
-  obj.value = function _flush() {
-    return callback(...arguments);
-  };
-  items[2] = obj;
-  return callback3(BatchInvocationManager, items);
-})();
-let result = require("_getPrototypeOf").fileFinishedImporting("../discord_common/js/packages/timers/Timers.tsx");
+  })();
+};
 
-export const Timeout = tmp3;
-export const DelayedCall = tmp4;
-export const Interval = tmp5;
+export { Timeout };
+export { DelayedCall };
+export { Interval };
 export const timeoutPromise = function timeoutPromise(arg0) {
-  let _classCallCheck = arg0;
+  let asyncGeneratorStep = arg0;
   return new Promise((arg0) => {
-    let _classCallCheck = arg0;
-    const timerId = setTimeout(() => callback(), _classCallCheck);
+    let asyncGeneratorStep = arg0;
+    const timerId = setTimeout(() => callback(), asyncGeneratorStep);
   });
 };
 export const DEFAULT_BATCH_INVOCATION_DELAY_MS = 32;
-export const BatchInvocationManagerResetError = tmp6;
-export const BatchInvocationManager = tmp7;
+export const BatchInvocationManagerResetError = prototype3;
+export { BatchInvocationManager };

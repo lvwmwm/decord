@@ -1,139 +1,92 @@
-// Module ID: 1341
-// Function ID: 15802
-// Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 566, 686, 2]
+// Module ID: 1365
+// Function ID: 1366
+// Name: handleUpdateUser
+// Dependencies: [589, 709, 2]
 
-// Module 1341 (_isNativeReflectConstruct)
-import dispatcher from "dispatcher";
-import set from "set";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
+// Module 1365 (handleUpdateUser)
+import { PersistedStore } from "initialize";
 
-function _isNativeReflectConstruct() {
-  let dispatcher = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return dispatcher;
-  }
-  const result = _isNativeReflectConstruct();
-}
-function updateRequiredActions(userId, required_actions) {
-  if (null == required_actions) {
-    if (userId in closure_5) {
-      delete tmp[tmp2];
-    }
-  } else if (null != userId) {
-    closure_5[userId] = required_actions;
-  }
-}
 function handleUpdateUser(user) {
   const id = user.user.id;
 }
-let closure_5 = {};
-let c6 = null;
-let c7 = null;
-let tmp2 = ((PersistedStore) => {
-  class LoginRequiredActionStore {
-    constructor() {
-      self = this;
-      tmp = LoginRequiredActionStore(this, LoginRequiredActionStore);
-      obj = outer1_3(LoginRequiredActionStore);
-      tmp2 = outer1_2;
-      if (outer1_8()) {
-        tmp6 = globalThis;
-        _Reflect = Reflect;
-        tmp7 = outer1_3;
-        tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, outer1_3(self).constructor);
-      } else {
-        tmp3 = arguments;
-        tmp4 = arguments;
-        constructResult = obj(...arguments);
-      }
-      return tmp2(self, constructResult);
-    }
+let closure_0 = {};
+let c1 = null;
+let c2 = null;
+class LoginRequiredActionStore extends PersistedStore {
+}
+const prototype = LoginRequiredActionStore.prototype;
+prototype["initialize"] = function initialize(arg0) {
+  if (null != arg0) {
+    let closure_0 = arg0;
   }
-  callback2(LoginRequiredActionStore, PersistedStore);
-  let obj = {
-    key: "initialize",
-    value(arg0) {
-      if (null != arg0) {
-        const outer1_5 = arg0;
+};
+prototype["requiredActions"] = function requiredActions(id) {
+  let tmp = table[id];
+  if (tmp == null) {
+    tmp = null;
+  }
+  return tmp;
+};
+prototype["requiredActionsIncludes"] = function requiredActionsIncludes(id, items) {
+  const requiredActionsResult = this.requiredActions(id);
+  let closure_0 = requiredActionsResult;
+  let reduced = null != requiredActionsResult;
+  if (reduced) {
+    reduced = items.reduce((arg0, arg1) => {
+      let hasItem = arg0;
+      if (!arg0) {
+        hasItem = closure_0.includes(arg1);
       }
-    }
-  };
-  const items = [obj, , , , ];
-  obj = {
-    key: "requiredActions",
-    value(arg0) {
-      let tmp2 = null;
-      if (null != outer1_5[arg0]) {
-        tmp2 = tmp;
+      return hasItem;
+    }, false);
+  }
+  return reduced;
+};
+prototype["wasLoginAttemptedInSession"] = function wasLoginAttemptedInSession(id) {
+  return c1 === id;
+};
+prototype["getState"] = function getState() {
+  return closure_0;
+};
+LoginRequiredActionStore.displayName = "LoginRequiredActionStore";
+LoginRequiredActionStore.persistKey = "LoginRequiredActionStore";
+const loginRequiredActionStore = new LoginRequiredActionStore(require("dispatcher"), {
+  LOGIN_ATTEMPTED: function handleLoginAttempted(arg0) {
+    let required_actions;
+    let user_id;
+    ({ required_actions, user_id } = arg0);
+    if (null == required_actions) {
+      if (user_id in closure_0) {
+        delete tmp[tmp2];
       }
-      return tmp2;
+    } else if (null != user_id) {
+      closure_0[user_id] = required_actions;
     }
-  };
-  items[1] = obj;
-  obj = {
-    key: "requiredActionsIncludes",
-    value(arg0, arr) {
-      const requiredActionsResult = this.requiredActions(arg0);
-      const LoginRequiredActionStore = requiredActionsResult;
-      let reduced = null != requiredActionsResult;
-      if (reduced) {
-        reduced = arr.reduce((arg0, arg1) => {
-          let hasItem = arg0;
-          if (!arg0) {
-            hasItem = dispatcher.includes(arg1);
-          }
-          return hasItem;
-        }, false);
-      }
-      return reduced;
-    }
-  };
-  items[2] = obj;
-  items[3] = {
-    key: "wasLoginAttemptedInSession",
-    value(arg0) {
-      return outer1_6 === arg0;
-    }
-  };
-  items[4] = {
-    key: "getState",
-    value() {
-      return outer1_5;
-    }
-  };
-  return callback(LoginRequiredActionStore, items);
-})(require("initialize").PersistedStore);
-tmp2.displayName = "LoginRequiredActionStore";
-tmp2.persistKey = "LoginRequiredActionStore";
-tmp2 = new tmp2(require("dispatcher"), {
-  LOGIN_ATTEMPTED: function handleLoginAttempted(user_id) {
-    user_id = user_id.user_id;
-    updateRequiredActions(user_id, user_id.required_actions);
   },
   CONNECTION_OPEN: handleUpdateUser,
   CURRENT_USER_UPDATE: handleUpdateUser,
   LOGOUT: function handleLogout(isSwitchingAccount) {
     isSwitchingAccount = isSwitchingAccount.isSwitchingAccount;
     if (!isSwitchingAccount) {
-      isSwitchingAccount = null == c7;
+      isSwitchingAccount = null == c2;
     }
     if (!isSwitchingAccount) {
-      updateRequiredActions(c7, null);
+      if (c2 in closure_0) {
+        delete tmp[tmp2];
+      }
     }
   },
   PASSWORD_UPDATED: function handlePasswordUpdated(userId) {
-    updateRequiredActions(userId.userId, null);
+    if (userId.userId in closure_0) {
+      delete tmp[tmp2];
+    }
   },
   MULTI_ACCOUNT_REMOVE_ACCOUNT: function handleRemoveMultiAccount(userId) {
-    updateRequiredActions(userId.userId, null);
+    if (userId.userId in closure_0) {
+      delete tmp[tmp2];
+    }
   }
 });
-let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/auth/LoginRequiredActionStore.tsx");
+const result = require("set").fileFinishedImporting("modules/auth/LoginRequiredActionStore.tsx");
 
-export default tmp2;
+export default loginRequiredActionStore;

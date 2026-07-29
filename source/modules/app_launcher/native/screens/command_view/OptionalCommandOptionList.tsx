@@ -1,23 +1,24 @@
-// Module ID: 11342
-// Function ID: 88021
+// Module ID: 11366
+// Function ID: 11367
 // Name: OptionList
-// Dependencies: [31, 27, 33, 4165, 689, 5198, 4695, 4161, 1212, 2]
+// Dependencies: [19, 17, 21, 4189, 712, 5220, 4717, 4185, 1236, 2]
 // Exports: default
 
-// Module 11342 (OptionList)
-import "result";
+// Module 11366 (OptionList)
+import "noop";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
 const require = arg1;
 function OptionList(options) {
   options = options.options;
   const onSelectOption = options.onSelectOption;
-  const tmp = _createForOfIteratorHelperLoose();
-  const View = tmp;
+  let c2;
+  const tmp = createCacheKey();
+  c2 = tmp;
   const items = [tmp.container, options.style];
-  return <View style={items} collapsable={false}>{options.map((displayName) => {
+  return <c2 style={items} collapsable={false}>{options.map((displayName) => {
     const options = displayName;
     let obj = {
       onPress() {
@@ -26,40 +27,45 @@ function OptionList(options) {
       start: false,
       end: arg1 === options.length - 1,
       label: displayName.displayName,
-      subLabel: displayName.displayDescription
+      subLabel: displayName.displayDescription,
+      trailing: null
     };
     obj = {
       accessibilityRole: "button",
-      style: tmp.addButton,
+      style: _undefined.addButton,
       onPress() {
         return outer1_1(closure_0);
-      }
+      },
+      children: null
     };
-    obj = { variant: "text-sm/semibold", style: tmp.addButtonText };
+    obj = { variant: "text-sm/semibold", style: _undefined.addButtonText, children: null };
     const intl = options(onSelectOption[8]).intl;
-    obj.children = intl.string(options(onSelectOption[8]).t.OYkgVk);
-    obj.children = outer1_3(options(onSelectOption[7]).Text, obj);
-    obj.trailing = outer1_3(options(onSelectOption[6]).PressableOpacity, obj);
+    obj[2] = intl.string(options(onSelectOption[8]).t.OYkgVk);
+    obj[3] = outer1_3(options(onSelectOption[7]).Text, obj);
+    obj[5] = outer1_3(options(onSelectOption[6]).PressableOpacity, obj);
     return outer1_3(options(onSelectOption[5]).TableRow, obj, displayName.name);
-  })}</View>;
+  })}</c2>;
 }
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { overflow: "hidden", borderWidth: 1, borderColor: require("_createForOfIteratorHelperLoose").colors.BORDER_SUBTLE, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SURFACE_HIGH, borderRadius: require("_createForOfIteratorHelperLoose").radii.lg };
-const merged = Object.assign(require("_createForOfIteratorHelperLoose").shadows.SHADOW_BORDER);
-_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
-const obj1 = { borderRadius: require("_createForOfIteratorHelperLoose").radii.round, minWidth: 48, height: 32, justifyContent: "center", alignItems: "center", paddingHorizontal: 12, backgroundColor: require("_createForOfIteratorHelperLoose").colors.REDESIGN_BUTTON_TERTIARY_BACKGROUND };
-_createForOfIteratorHelperLoose.addButton = obj1;
-_createForOfIteratorHelperLoose.addButtonText = { color: require("_createForOfIteratorHelperLoose").colors.REDESIGN_BUTTON_TERTIARY_TEXT };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-const obj2 = { color: require("_createForOfIteratorHelperLoose").colors.REDESIGN_BUTTON_TERTIARY_TEXT };
+createCacheKey = { container: null, addButton: null, addButtonText: null };
+createCacheKey = { overflow: "hidden", borderWidth: 1, borderColor: require("Themes").colors.BORDER_SUBTLE, backgroundColor: require("Themes").colors.BACKGROUND_SURFACE_HIGH, borderRadius: require("Themes").radii.lg };
+const merged = Object.assign(require("Themes").shadows.SHADOW_BORDER);
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { borderRadius: require("Themes").radii.round, minWidth: 48, height: 32, justifyContent: "center", alignItems: "center", paddingHorizontal: 12, backgroundColor: require("Themes").colors.REDESIGN_BUTTON_TERTIARY_BACKGROUND };
+const obj1 = { borderRadius: require("Themes").radii.round, minWidth: 48, height: 32, justifyContent: "center", alignItems: "center", paddingHorizontal: 12, backgroundColor: require("Themes").colors.REDESIGN_BUTTON_TERTIARY_BACKGROUND };
+createCacheKey[2] = { color: require("Themes").colors.REDESIGN_BUTTON_TERTIARY_TEXT };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+const obj2 = { color: require("Themes").colors.REDESIGN_BUTTON_TERTIARY_TEXT };
 const result = require("jsxProd").fileFinishedImporting("modules/app_launcher/native/screens/command_view/OptionalCommandOptionList.tsx");
 
 export default function OptionalCommandOptionList(options) {
   options = options.options;
   let tmp3 = null;
   if (options.length > 0) {
-    const obj = { style: tmp2, options, onSelectOption: tmp };
-    tmp3 = <OptionList style={tmp2} options={options} onSelectOption={tmp} />;
+    const obj = { style: null, options: null, onSelectOption: null };
+    obj[0] = tmp2;
+    obj[1] = options;
+    obj[2] = tmp;
+    tmp3 = <OptionList style={null} options={null} onSelectOption={null} />;
   }
   return tmp3;
 };

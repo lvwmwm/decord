@@ -1,22 +1,22 @@
-// Module ID: 10662
-// Function ID: 82904
+// Module ID: 10686
+// Function ID: 10687
 // Name: useIsInvitedToSpeak
-// Dependencies: [1194, 1907, 566, 4349, 2]
+// Dependencies: [1218, 1931, 589, 4374, 2]
 // Exports: default
 
-// Module 10662 (useIsInvitedToSpeak)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_4 from "_isNativeReflectConstruct";
+// Module 10686 (useIsInvitedToSpeak)
+import fetchFingerprint from "fetchFingerprint";
+import handleConnectionOpen from "handleConnectionOpen";
 
 const require = arg1;
 const result = require("initialize").fileFinishedImporting("modules/stage_channels/useIsInvitedToSpeak.tsx");
 
 export default function useIsInvitedToSpeak() {
-  const items = [closure_4];
-  const stateFromStores = require(566) /* initialize */.useStateFromStores(items, () => outer1_4.getVoiceChannelId());
-  const obj = require(566) /* initialize */;
-  const items1 = [_isNativeReflectConstruct];
-  const stateFromStores1 = require(566) /* initialize */.useStateFromStores(items1, () => outer1_3.getId());
-  const obj2 = require(566) /* initialize */;
-  return importDefault(4349)(stateFromStores1, stateFromStores) === require(4349) /* getAudienceRequestToSpeakState */.RequestToSpeakStates.REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK;
+  const items = [handleConnectionOpen];
+  const stateFromStores = require(589) /* initialize */.useStateFromStores(items, () => voiceChannelId.getVoiceChannelId());
+  const obj = require(589) /* initialize */;
+  const items1 = [fetchFingerprint];
+  const stateFromStores1 = require(589) /* initialize */.useStateFromStores(items1, () => id.getId());
+  const obj2 = require(589) /* initialize */;
+  return importDefault(4374)(stateFromStores1, stateFromStores) === require(4374) /* useAudienceRequestToSpeakState */.RequestToSpeakStates.REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK;
 };

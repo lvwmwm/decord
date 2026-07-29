@@ -1,13 +1,14 @@
-// Module ID: 8781
-// Function ID: 69303
+// Module ID: 8805
+// Function ID: 8806
 // Name: apexExperiment
-// Dependencies: [1428, 2]
+// Dependencies: [1452, 2]
 
-// Module 8781 (apexExperiment)
+// Module 8805 (apexExperiment)
 import ApexExperiment from "ApexExperiment";
 
-const obj = { name: "2026-06-nitro-gifting-price-copy-tweaks", kind: "user", defaultConfig: { showGiftPrice: true, useNewCopy: false, monthlyDefaultSelected: false }, variations: { [1]: { showGiftPrice: false, useNewCopy: false, monthlyDefaultSelected: false }, [2]: { showGiftPrice: true, useNewCopy: true, monthlyDefaultSelected: false }, [3]: { showGiftPrice: true, useNewCopy: true, monthlyDefaultSelected: true } } };
-const apexExperiment = ApexExperiment.createApexExperiment(obj);
+const obj = { 1: null, 2: { showGiftPrice: false, useNewCopy: false, monthlyDefaultSelected: false }, 3: { showGiftPrice: true, useNewCopy: true, monthlyDefaultSelected: false } };
+obj[3] = { showGiftPrice: true, useNewCopy: true, monthlyDefaultSelected: true };
+const apexExperiment = ApexExperiment.createApexExperiment({ name: "2026-06-nitro-gifting-price-copy-tweaks", kind: "user", defaultConfig: { showGiftPrice: true, useNewCopy: false, monthlyDefaultSelected: false }, variations: obj });
 const result = require("set").fileFinishedImporting("modules/premium/gifting/experiments/NitroGiftPriceCopyExperiment.tsx");
 
 export default apexExperiment;

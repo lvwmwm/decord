@@ -1,11 +1,11 @@
-// Module ID: 11023
-// Function ID: 85532
+// Module ID: 11047
+// Function ID: 11048
 // Name: KickConfirmModal
-// Dependencies: [31, 33, 9082, 9084, 1212, 11016, 2]
+// Dependencies: [19, 21, 9106, 9108, 1236, 11040, 2]
 // Exports: default
 
-// Module 11023 (KickConfirmModal)
-import "result";
+// Module 11047 (KickConfirmModal)
+import "noop";
 import { jsx } from "jsxProd";
 
 const require = arg1;
@@ -15,12 +15,13 @@ export default function KickConfirmModal(onBeforeGoBack) {
   let importDefault;
   let require;
   ({ guildId: require, userId: importDefault } = onBeforeGoBack);
+  let onGoBack;
   onGoBack = importDefault(onGoBack[2])({ onBeforeGoBack: onBeforeGoBack.cancelButtonCallback }).onGoBack;
-  const obj = { screenKey: "kick" };
+  const obj = { screenKey: "kick", title: null, render: null };
   const intl = require(onGoBack[4]).intl;
-  obj.title = intl.string(require(onGoBack[4]).t.R3QeLQ);
-  obj.render = function render() {
+  obj[1] = intl.string(require(onGoBack[4]).t.R3QeLQ);
+  obj[2] = function render() {
     return outer1_3(outer1_1(onGoBack[5]), { onKick: onGoBack, guildId: closure_0, userId: closure_1 });
   };
-  return jsx(importDefault(onGoBack[3]), { screenKey: "kick" });
+  return jsx(importDefault(onGoBack[3]), { screenKey: "kick", title: null, render: null });
 };

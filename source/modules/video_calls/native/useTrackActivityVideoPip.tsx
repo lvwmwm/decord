@@ -1,12 +1,12 @@
-// Module ID: 10649
-// Function ID: 82811
+// Module ID: 10673
+// Function ID: 10674
 // Name: useTrackActivityPip
-// Dependencies: [31, 10494, 653, 624, 8101, 10579, 675, 2]
+// Dependencies: [19, 10518, 676, 647, 8125, 10603, 698, 2]
 // Exports: default
 
-// Module 10649 (useTrackActivityPip)
-import result from "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 10673 (useTrackActivityPip)
+import noop from "noop";
+import initialize from "initialize";
 import { AnalyticEvents } from "ME";
 
 const require = arg1;
@@ -14,23 +14,26 @@ const result = require("ME").fileFinishedImporting("modules/video_calls/native/u
 
 export default function useTrackActivityPip(arg0) {
   const _require = arg0;
-  const items = [_isNativeReflectConstruct];
-  const stateFromStores = _require(624).useStateFromStores(items, () => outer1_4.isPipEnabledWhileFocusedOnActivityOrStream());
-  let tmp2 = stateFromStores(8101)(stateFromStores);
+  const items = [initialize];
+  const stateFromStores = _require(647).useStateFromStores(items, () => pipEnabledWhileFocusedOnActivityOrStream.isPipEnabledWhileFocusedOnActivityOrStream());
+  let tmp2 = stateFromStores(8125)(stateFromStores);
   const dependencyMap = tmp2;
-  const tmp3 = stateFromStores(10579)();
+  const tmp3 = stateFromStores(10603)();
   const React = tmp3;
   const items1 = [stateFromStores, tmp2, arg0, tmp3];
   const effect = React.useEffect(() => {
-    if (null != result) {
+    let compositeInstanceId;
+    compositeInstanceId = noop;
+    if (null != noop) {
       if (null != tmp2) {
-        if (stateFromStores !== tmp2) {
+        if (stateFromStores !== tmp8) {
           let track = outer1_5;
-          tmp2 = stateFromStores ? track.ACTIVITY_VIDEO_PIP_SHOWN : track.ACTIVITY_VIDEO_PIP_HIDDEN;
+          tmp2 = tmp ? track.ACTIVITY_VIDEO_PIP_SHOWN : track.ACTIVITY_VIDEO_PIP_HIDDEN;
           track = stateFromStores(tmp2[6]).track;
-          const obj = {};
-          ({ id: obj.channel_id, guild_id: obj.guild_id } = closure_0);
-          ({ applicationId: obj.application_id, compositeInstanceId: obj.activity_session_id } = result);
+          const obj = { channel_id: null, guild_id: null, application_id: null, activity_session_id: null };
+          ({ id: obj[0], guild_id: obj[1] } = closure_0);
+          ({ applicationId: obj[2], compositeInstanceId } = compositeInstanceId);
+          obj[3] = compositeInstanceId;
           track(tmp2, obj);
           const tmp5 = stateFromStores(tmp2[6]);
         }

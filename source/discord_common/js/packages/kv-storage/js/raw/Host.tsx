@@ -1,98 +1,126 @@
-// Module ID: 1893
-// Function ID: 21160
-// Name: Host
-// Dependencies: [5, 6, 7, 1892, 1885, 2]
+// Module ID: 1916
+// Function ID: 1917
+// Name: open
+// Dependencies: [5, 1917, 1909, 2]
 
-// Module 1893 (Host)
-import set from "set";
-import _classCallCheck from "_classCallCheck";
-import _defineProperties from "_defineProperties";
+// Module 1916 (open)
+import asyncGeneratorStep from "asyncGeneratorStep";
 
 const require = arg1;
-const tmp2 = (() => {
-  class Host {
-    constructor() {
-      tmp = outer1_3(this, Host);
-      return;
+const result = require("set").fileFinishedImporting("../discord_common/js/packages/kv-storage/js/raw/Host.tsx");
+const prototype = function Host() {
+  return Object.create(new.target.prototype);
+}.prototype;
+prototype["open"] = function open(arg0, arg1) {
+  const _require = arg0;
+  const dependencyMap = arg1;
+  const Runtime = _require(1917).Runtime;
+  return Runtime.executeAsync("database_open", (arg0) => {
+    const KV_RAW = callback(obj[2]).KV_RAW;
+    obj = { database: callback, invalidateDisabledHandles: null };
+    let flag;
+    if (obj != null) {
+      flag = obj.invalidateDisabledHandles;
     }
-  }
-  let obj = {
-    key: "open",
-    value(arg0, arg1) {
-      const callback = arg0;
-      let closure_1 = arg1;
-      const Runtime = callback(Host[3]).Runtime;
-      return Runtime.executeAsync("database_open", (arg0) => {
-        let prop;
-        const KV_RAW = callback(Host[4]).KV_RAW;
-        const obj = { database: callback };
-        if (null != obj) {
-          prop = obj.invalidateDisabledHandles;
-        }
-        obj.invalidateDisabledHandles = null != prop && prop;
-        return KV_RAW.databaseOpen(arg0, obj);
-      });
+    if (flag == null) {
+      flag = false;
     }
-  };
-  const items = [obj, , , , , ];
-  obj = {
-    key: "openSyncUnsafe",
-    value(database, invalidateDisabledHandles) {
-      let prop;
-      const KV_RAW = callback(Host[4]).KV_RAW;
-      const obj = { database };
-      if (null != invalidateDisabledHandles) {
-        prop = invalidateDisabledHandles.invalidateDisabledHandles;
-      }
-      obj.invalidateDisabledHandles = null != prop && prop;
-      return KV_RAW.databaseOpen(null, obj, { synchronous: true });
-    }
-  };
-  items[1] = obj;
-  obj = {
-    key: "delete",
-    value(arg0) {
-      const callback = arg0;
-      const Runtime = callback(Host[3]).Runtime;
-      return Runtime.executeAsync("database_delete", (arg0) => {
-        const KV_RAW = callback(Host[4]).KV_RAW;
-        return KV_RAW.databaseDelete(arg0, { database: callback });
-      });
-    }
-  };
-  items[2] = obj;
-  const obj1 = { key: "list" };
-  let closure_0 = callback(async () => {
-    const Runtime = callback(Host[3]).Runtime;
-    return yield Runtime.executeAsync("database_list", (arg0) => {
-      const KV_RAW = callback(Host[4]).KV_RAW;
-      return KV_RAW.databaseList(arg0);
-    }).map((data) => data.data);
+    obj[1] = flag;
+    return KV_RAW.databaseOpen(arg0, obj);
   });
-  obj1.value = function list() {
-    return callback(...arguments);
-  };
-  items[3] = obj1;
-  items[4] = {
-    key: "optimize",
-    value(arg0) {
-      const callback = arg0;
-      const Runtime = callback(Host[3]).Runtime;
-      return Runtime.executeAsync("database_optimize", (arg0) => {
-        const KV_RAW = callback(Host[4]).KV_RAW;
-        return KV_RAW.databaseOptimize(arg0, { aggressive: callback });
-      });
+};
+prototype["openSyncUnsafe"] = function openSyncUnsafe(database, invalidateDisabledHandles) {
+  const KV_RAW = require(1909) /* set */.KV_RAW;
+  const obj = { database, invalidateDisabledHandles: null };
+  let flag;
+  if (invalidateDisabledHandles != null) {
+    flag = invalidateDisabledHandles.invalidateDisabledHandles;
+  }
+  if (flag == null) {
+    flag = false;
+  }
+  obj[1] = flag;
+  return KV_RAW.databaseOpen(null, obj, { synchronous: true });
+};
+prototype["delete"] = function delete(arg0) {
+  const _require = arg0;
+  const Runtime = _require(1917).Runtime;
+  return Runtime.executeAsync("database_delete", (arg0) => {
+    const KV_RAW = callback(outer1_1[2]).KV_RAW;
+    return KV_RAW.databaseDelete(arg0, { database: callback });
+  });
+};
+prototype["list"] = function list() {
+  return callback(function*() {
+    if (c2 === 2) {
+      c2 = 3;
+      HermesBuiltin.throwTypeError();
+    } else if (tmp3 === 3) {
+      if (arg0 === 1) {
+        throw arg1;
+      } else if (arg0 === 2) {
+        let obj = { value: null, done: true };
+        obj[0] = arg1;
+        return obj;
+      } else {
+        return { value: "HermesInternal", done: null };
+      }
+    } else {
+      try {
+        c2 = 2;
+        if (0 === table) {
+          if (arg0 === 1) {
+            c2 = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            c2 = 3;
+            obj = { value: null, done: true };
+            obj[0] = arg1;
+            return obj;
+          } else {
+            let closure_0 = tmp4;
+            const Runtime = outer1_0(table[1]).Runtime;
+            table = 1;
+            c2 = 1;
+            const obj1 = { value: null, done: false };
+            obj1[0] = Runtime.executeAsync("database_list", (arg0) => {
+              const KV_RAW = tmp4(table[2]).KV_RAW;
+              return KV_RAW.databaseList(arg0);
+            });
+            return obj1;
+          }
+        } else if (arg0 === 1) {
+          c2 = 3;
+          throw arg1;
+        } else if (arg0 === 2) {
+          c2 = 3;
+          const obj2 = { value: null, done: true };
+          obj2[0] = arg1;
+          return obj2;
+        } else {
+          c2 = 3;
+          obj = { value: null, done: true };
+          obj[0] = arg1.map((data) => data.data);
+          return obj;
+        }
+      } catch (tmp7) {
+        c2 = tmp;
+        throw tmp7;
+      }
     }
-  };
-  items[5] = {
-    key: "raise",
-    value(arg0) {
-      const KV_RAW = callback(Host[4]).KV_RAW;
-      KV_RAW.raise(arg0);
-    }
-  };
-  return callback2(Host, null, items);
-})();
-const result = require("_defineProperties").fileFinishedImporting("../discord_common/js/packages/kv-storage/js/raw/Host.tsx");
+  })();
+};
+prototype["optimize"] = function optimize(arg0) {
+  const _require = arg0;
+  const Runtime = _require(1917).Runtime;
+  return Runtime.executeAsync("database_optimize", (arg0) => {
+    const KV_RAW = callback(outer1_1[2]).KV_RAW;
+    return KV_RAW.databaseOptimize(arg0, { aggressive: callback });
+  });
+};
+prototype["raise"] = function raise(arg0) {
+  const KV_RAW = require(1909) /* set */.KV_RAW;
+  KV_RAW.raise(arg0);
+};
 
-export const Host = tmp2;
+export const Host = prototype;

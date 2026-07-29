@@ -1,10 +1,10 @@
-// Module ID: 11752
-// Function ID: 91142
+// Module ID: 11777
+// Function ID: 11778
 // Name: RedesignContactSyncDiscoverabilityFooter
-// Dependencies: [653, 33, 5536, 1212, 1921, 5537, 2]
+// Dependencies: [676, 21, 5554, 1236, 1945, 5555, 2]
 // Exports: default
 
-// Module 11752 (RedesignContactSyncDiscoverabilityFooter)
+// Module 11777 (RedesignContactSyncDiscoverabilityFooter)
 import { HelpdeskArticles } from "ME";
 import { jsx } from "jsxProd";
 
@@ -14,15 +14,16 @@ export default function RedesignContactSyncDiscoverabilityFooter(arg0) {
   let discoverabilityEnabled;
   let onValueChanged;
   ({ discoverabilityEnabled, onValueChanged } = arg0);
-  let obj = { hasIcons: false };
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj = { helpdeskUrl: importDefault(1921).getArticleURL(HelpdeskArticles.CONTACT_SYNC) };
-  obj.helperText = intl.format(require(1212) /* getSystemLocale */.t.zopgpe, obj);
-  obj = {};
-  const intl2 = require(1212) /* getSystemLocale */.intl;
-  obj.label = intl2.string(require(1212) /* getSystemLocale */.t.a5QL24);
-  obj.onValueChange = onValueChanged;
-  obj.value = discoverabilityEnabled;
-  obj.children = jsx(require(5537) /* TableSwitchRow */.TableSwitchRow, {});
-  return jsx(require(5536) /* TableRowGroupTitle */.TableRowGroup, {});
+  let obj = { hasIcons: false, helperText: null, children: null };
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj = { helpdeskUrl: null };
+  obj[0] = importDefault(1945).getArticleURL(HelpdeskArticles.CONTACT_SYNC);
+  obj[1] = intl.format(require(1236) /* getSystemLocale */.t.zopgpe, obj);
+  obj = { label: null, onValueChange: null, value: null };
+  const intl2 = require(1236) /* getSystemLocale */.intl;
+  obj[0] = intl2.string(require(1236) /* getSystemLocale */.t.a5QL24);
+  obj[1] = onValueChanged;
+  obj[2] = discoverabilityEnabled;
+  obj[2] = jsx(require(5555) /* TableSwitchRow */.TableSwitchRow, { label: null, onValueChange: null, value: null });
+  return jsx(require(5554) /* TableRowGroupTitle */.TableRowGroup, { label: null, onValueChange: null, value: null });
 };

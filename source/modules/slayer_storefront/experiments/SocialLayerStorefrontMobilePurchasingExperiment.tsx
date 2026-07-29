@@ -1,14 +1,13 @@
-// Module ID: 7865
-// Function ID: 62548
+// Module ID: 7888
+// Function ID: 7889
 // Name: apexExperiment
-// Dependencies: [1428, 2]
+// Dependencies: [1452, 2]
 // Exports: getIsEligibleForSocialLayerStorefrontMobilePurchasing, useIsEligibleForSocialLayerStorefrontMobilePurchasing
 
-// Module 7865 (apexExperiment)
+// Module 7888 (apexExperiment)
 import ApexExperiment from "ApexExperiment";
 
-const obj = { name: "2026-04-social-layer-storefront-mobile-purchasing", kind: "user", defaultConfig: { enabled: false }, variations: { [0]: { enabled: false }, [1]: { enabled: true } } };
-const apexExperiment = ApexExperiment.createApexExperiment(obj);
+const apexExperiment = ApexExperiment.createApexExperiment({ name: "2026-04-social-layer-storefront-mobile-purchasing", kind: "user", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true } } });
 const result = require("set").fileFinishedImporting("modules/slayer_storefront/experiments/SocialLayerStorefrontMobilePurchasingExperiment.tsx");
 
 export const SocialLayerStorefrontMobilePurchasingExperiment = apexExperiment;

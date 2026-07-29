@@ -1,21 +1,21 @@
-// Module ID: 11176
-// Function ID: 86730
+// Module ID: 11200
+// Function ID: 11201
 // Name: ForumPostListBody
-// Dependencies: [31, 27, 6050, 33, 4165, 11168, 11158, 11167, 11169, 11177, 11162, 2]
+// Dependencies: [19, 17, 6068, 21, 4189, 11192, 11182, 11191, 11193, 11201, 11186, 2]
 // Exports: default
 
-// Module 11176 (ForumPostListBody)
-import "result";
+// Module 11200 (ForumPostListBody)
+import "noop";
 import { View } from "get ActivityIndicator";
 import { ForumTimestampFormats } from "FORUM_GUIDELINES_ACTION_SHEET";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_5;
+let c5;
 let closure_6;
 const require = arg1;
-({ jsx: closure_5, jsxs: closure_6 } = jsxProd);
-let closure_7 = _createForOfIteratorHelperLoose.createStyles({ body: { display: "flex", flexDirection: "row", alignItems: "flex-start" }, contentContainer: { flex: 1 }, thumbnailContainer: { marginLeft: 12 }, details: { flexDirection: "row", alignItems: "center", marginBottom: 6 }, newTagContainer: { marginEnd: 8 } });
+({ jsx: c5, jsxs: closure_6 } = jsxProd);
+let closure_7 = createCacheKey.createStyles({ body: { display: "flex", flexDirection: "row", alignItems: "flex-start" }, contentContainer: { flex: 1 }, thumbnailContainer: { marginLeft: 12 }, details: { flexDirection: "row", alignItems: "center", marginBottom: 6 }, newTagContainer: { marginEnd: 8 } });
 const result = require("FORUM_GUIDELINES_ACTION_SHEET").fileFinishedImporting("modules/forums/native/posts/list/ForumPostListBody.tsx");
 
 export default function ForumPostListBody(arg0) {
@@ -33,39 +33,43 @@ export default function ForumPostListBody(arg0) {
   ({ thread, firstMessage, hasUnreads, isNew, media } = arg0);
   ({ containerStyle, firstMessageLoaded, messageContent, isEmbed, isLocalDeviceMedia, senderModifier } = arg0);
   const tmp = callback2();
-  let obj = { style: items };
+  let obj = { style: items, children: null };
   items = [tmp.body, containerStyle];
-  obj = { style: tmp.contentContainer };
-  obj = { style: tmp.details };
+  obj = { style: tmp.contentContainer, children: null };
+  obj = { style: tmp.details, children: null };
   if (isNew) {
-    const obj1 = { containerStyle: tmp.newTagContainer };
-    isNew = callback(importDefault(11168), obj1);
+    const obj1 = { containerStyle: null };
+    obj1[0] = tmp.newTagContainer;
+    isNew = callback(importDefault(11192), obj1);
   }
-  const items1 = [isNew, callback(require(11158) /* ForumPostUsername */.ForumPostAuthor, { thread, hasUnreads }), callback(importDefault(11167), { thread, hasUnreads, format: ForumTimestampFormats.POSTED_DURATION_AGO })];
-  obj.children = items1;
-  const items2 = [closure_6(View, obj), , ];
-  const obj3 = { title: thread.name, lineClamp: 2, ellipsizeMode: "tail", hasUnreads };
-  items2[1] = callback(importDefault(11169), obj3);
-  items2[2] = callback(importDefault(11177), { messageContent, message: firstMessage, isMessageDeleted: false, messageLoaded: firstMessageLoaded, hasUnreads, senderModifier });
-  obj.children = items2;
+  const items1 = [isNew, callback(require(11182) /* ForumPostUsername */.ForumPostAuthor, { thread, hasUnreads }), callback(importDefault(11191), { thread, hasUnreads, format: ForumTimestampFormats.POSTED_DURATION_AGO })];
+  obj[1] = items1;
+  const items2 = [closure_6(View, obj), callback(importDefault(11193), { title: thread.name, lineClamp: 2, ellipsizeMode: "tail", hasUnreads }), callback(importDefault(11201), { messageContent, message: firstMessage, isMessageDeleted: false, messageLoaded: firstMessageLoaded, hasUnreads, senderModifier })];
+  obj[1] = items2;
   const items3 = [closure_6(View, obj), ];
-  if (null == firstMessage) {
-    let tmp8Result = null;
+  let blocked;
+  if (firstMessage != null) {
+    blocked = firstMessage.blocked;
+  }
+  let tmp7Result = null;
+  if (!blocked) {
+    tmp7Result = null;
     if (null != media) {
-      const obj4 = { channel: thread, media, isEmbed, isLocalDeviceMedia };
+      const obj4 = { channel: null, media: null, isEmbed: null, isLocalDeviceMedia: null, firstMessageId: null, containerStyle: null };
+      obj4[0] = thread;
+      obj4[1] = media;
+      obj4[2] = isEmbed;
+      obj4[3] = isLocalDeviceMedia;
       let id;
-      if (null != firstMessage) {
+      if (firstMessage != null) {
         id = firstMessage.id;
       }
-      obj4.firstMessageId = id;
-      obj4.containerStyle = tmp.thumbnailContainer;
-      tmp8Result = callback(require(11162) /* ForumPostMediaAndroid */.ForumPostMediaThumbnail, obj4);
-      const tmp8 = callback;
+      obj4[4] = id;
+      obj4[5] = tmp.thumbnailContainer;
+      tmp7Result = callback(require(11186) /* ForumPostMediaAndroid */.ForumPostMediaThumbnail, obj4);
     }
-  } else {
-    tmp8Result = null;
   }
-  items3[1] = tmp8Result;
-  obj.children = items3;
+  items3[1] = tmp7Result;
+  obj[1] = items3;
   return closure_6(View, obj);
 };

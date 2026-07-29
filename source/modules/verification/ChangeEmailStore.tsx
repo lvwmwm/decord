@@ -1,52 +1,59 @@
-// Module ID: 9155
-// Function ID: 71772
-// Name: setChangeEmailError
-// Dependencies: [621, 682, 2]
-// Exports: resetChangeEmailStore, setEmailToken, useChangeEmailError
+// Module ID: 9179
+// Function ID: 9180
+// Name: ChangeEmailFields
+// Dependencies: [644, 705, 2]
+// Exports: resetChangeEmailStore, setChangeEmailError, setEmailToken, useChangeEmailError
 
-// Module 9155 (setChangeEmailError)
+// Module 9179 (ChangeEmailFields)
 import keys from "keys";
 
-function setChangeEmailError(arg0, arg1) {
-  const _require = arg0;
-  const dependencyMap = arg1;
-  _require(682).batchUpdates(() => outer1_3.setState((errors) => {
-    let obj = {};
-    obj = {};
-    const merged = Object.assign(errors.errors);
-    obj[outer1_0] = outer1_1;
-    obj.errors = obj;
-    return obj;
-  }));
-}
 let closure_2 = { errors: null, emailToken: null };
 let obj = keys.create(() => closure_2);
 const result = require("set").fileFinishedImporting("modules/verification/ChangeEmailStore.tsx");
 
 export const ChangeEmailFields = { EMAIL: "email", EMAIL_TOKEN: "email_token", PASSWORD: "password" };
 export const useChangeEmailStore = obj;
-export { setChangeEmailError };
+export const setChangeEmailError = function setChangeEmailError(arg0, arg1) {
+  const _require = arg0;
+  const dependencyMap = arg1;
+  _require(705).batchUpdates(() => outer1_3.setState((errors) => {
+    let obj = { errors: null };
+    obj = {};
+    const merged = Object.assign(errors.errors);
+    obj[closure_0] = closure_1;
+    obj[0] = obj;
+    return obj;
+  }));
+};
 export const useChangeEmailError = function useChangeEmailError(arg0) {
   let closure_0 = arg0;
   const items = [
     obj((errors) => {
       errors = errors.errors;
       let tmp;
-      if (null != errors) {
+      if (errors != null) {
         tmp = errors[closure_0];
       }
       return tmp;
     }),
     (arg0) => {
-      outer1_4(closure_0, arg0);
+      let closure_1 = arg0;
+      callback(outer1_1[1]).batchUpdates(() => outer1_3.setState((errors) => {
+        let obj = { errors: null };
+        obj = {};
+        const merged = Object.assign(errors.errors);
+        obj[closure_0] = closure_1;
+        obj[0] = obj;
+        return obj;
+      }));
     }
   ];
   return items;
 };
 export const setEmailToken = function setEmailToken(arg0) {
   const _require = arg0;
-  _require(682).batchUpdates(() => outer1_3.setState({ emailToken: closure_0 }));
+  _require(705).batchUpdates(() => outer1_3.setState({ emailToken: closure_0 }));
 };
 export const resetChangeEmailStore = function resetChangeEmailStore() {
-  require(682) /* batchUpdates */.batchUpdates(() => outer1_3.setState(outer1_2, true));
+  require(705) /* batchUpdates */.batchUpdates(() => state.setState(closure_2, true));
 };

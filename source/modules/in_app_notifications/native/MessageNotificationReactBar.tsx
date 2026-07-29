@@ -1,91 +1,95 @@
-// Module ID: 10318
-// Function ID: 79584
+// Module ID: 10339
+// Function ID: 10340
 // Name: PX_12
-// Dependencies: [31, 27, 10241, 9315, 1853, 33, 689, 4165, 1450, 9946, 10240, 10319, 9312, 6057, 6056, 4026, 9947, 2]
+// Dependencies: [19, 17, 10262, 9339, 1877, 21, 712, 4189, 1474, 9968, 10261, 10340, 9336, 6074, 6075, 4050, 9969, 2]
 // Exports: MessageNotificationReactBar
 
-// Module 10318 (PX_12)
-import result from "result";
-import get_ActivityIndicator from "get ActivityIndicator";
+// Module 10339 (PX_12)
+import noop from "noop";
+import get_ActivityIndicator from "set";
 import set from "set";
 import { EmojiPickerSource } from "IMAGE_SIZE";
 import { EmojiIntention } from "set";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 import set from "set";
 
-let closure_10;
-let closure_11;
-let closure_4;
-let closure_5;
+let c10;
+let c4;
+let c5;
 let closure_6;
-let closure_7;
+let error;
+let unpackModuleId;
 const require = arg1;
-({ Keyboard: closure_4, View: closure_5 } = get_ActivityIndicator);
-({ NOTIFICATION_CONTAINER_MARGIN: closure_6, NOTIFICATION_MAX_WIDTH: closure_7 } = set);
-({ jsx: closure_10, jsxs: closure_11 } = jsxProd);
-const PX_12 = require("_createForOfIteratorHelperLoose").space.PX_12;
-_createForOfIteratorHelperLoose = { container: _createForOfIteratorHelperLoose };
-_createForOfIteratorHelperLoose = { alignSelf: "center", flexDirection: "row", gap: 8, alignItems: "center", justifyContent: "space-between", paddingHorizontal: PX_12, paddingVertical: 10, width: "100%" };
-let obj1 = { height: 1, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BORDER_SUBTLE, margin: 0, padding: 0 };
-_createForOfIteratorHelperLoose.divider = obj1;
-_createForOfIteratorHelperLoose.roundButton = { borderRadius: require("_createForOfIteratorHelperLoose").radii.round };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+({ Keyboard: c4, View: c5 } = get_ActivityIndicator);
+({ NOTIFICATION_CONTAINER_MARGIN: closure_6, NOTIFICATION_MAX_WIDTH: error } = set);
+({ jsx: c10, jsxs: unpackModuleId } = jsxProd);
+const PX_12 = require("Themes").space.PX_12;
+createCacheKey = { container: { alignSelf: "center", flexDirection: "row", gap: 8, alignItems: "center", justifyContent: "space-between", paddingHorizontal: PX_12, paddingVertical: 10, width: "100%" }, divider: null, roundButton: null };
+createCacheKey = { height: 1, backgroundColor: require("Themes").colors.BORDER_SUBTLE, margin: 0, padding: 0 };
+createCacheKey[1] = createCacheKey;
+createCacheKey[2] = { borderRadius: require("Themes").radii.round };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
 let result = set.fileFinishedImporting("modules/in_app_notifications/native/MessageNotificationReactBar.tsx");
 
 export const MessageNotificationReactBar = function MessageNotificationReactBar(notification) {
   notification = notification.notification;
   const onReactionPress = notification.onReactionPress;
-  const tmp = _createForOfIteratorHelperLoose();
-  const dependencyMap = tmp;
-  const width = onReactionPress(1450)().width;
+  let dependencyMap;
+  let width;
+  let closure_4;
+  const tmp = createCacheKey();
+  dependencyMap = tmp;
+  width = onReactionPress(1474)().width;
   const items = [width];
   const memo = width.useMemo(() => {
     const result = 2 * outer1_12;
     return Math.min(outer1_7 - result, width - result - 2 * outer1_6);
   }, items);
-  let obj = notification(9946);
+  let obj = notification(9968);
   const emojisForReactionRow = obj.useEmojisForReactionRow(notification.channel, memo, 48);
   const items1 = [onReactionPress, notification];
   const items2 = [notification, onReactionPress];
   const callback = width.useCallback(() => {
     closure_4.dismiss();
-    let obj = notification(tmp[10]);
-    const result = obj.trackInAppNotificationAccessoryClicked(notification, notification(tmp[11]).InAppNotificationAccessoryTypes.REACTION_PICKER_BUTTON);
-    obj = { onPressEmoji: onReactionPress, channel: notification.channel, pickerIntention: outer1_9.REACTION, reactionType: notification(tmp[13]).ReactionTypes.NORMAL, analyticsObject: notification(tmp[14]).ReactionLocations.IN_APP_NOTIFICATION, startExpanded: false, source: outer1_8.NOTIFICATION };
-    const result1 = notification(tmp[12]).openEmojiPickerActionSheet(obj);
+    let obj = notification(_undefined[10]);
+    const result = obj.trackInAppNotificationAccessoryClicked(notification, notification(_undefined[11]).InAppNotificationAccessoryTypes.REACTION_PICKER_BUTTON);
+    obj = { onPressEmoji: onReactionPress, channel: notification.channel, pickerIntention: outer1_9.REACTION, reactionType: notification(_undefined[13]).ReactionTypes.NORMAL, analyticsObject: notification(_undefined[14]).ReactionLocations.IN_APP_NOTIFICATION, startExpanded: false, source: outer1_8.NOTIFICATION };
+    const result1 = notification(_undefined[12]).openEmojiPickerActionSheet(obj);
   }, items1);
-  let closure_4 = width.useCallback((MessageNotificationReactBar) => {
-    const result = notification(tmp[10]).trackInAppNotificationAccessoryClicked(notification, notification(tmp[11]).InAppNotificationAccessoryTypes.REACTION_BUTTON);
-    if (null != MessageNotificationReactBar) {
-      onReactionPress(MessageNotificationReactBar);
+  closure_4 = width.useCallback((arg0) => {
+    const result = notification(_undefined[10]).trackInAppNotificationAccessoryClicked(notification, notification(_undefined[11]).InAppNotificationAccessoryTypes.REACTION_BUTTON);
+    if (null != arg0) {
+      onReactionPress(arg0);
     }
   }, items2);
-  obj = { style: notification.animationStyle };
+  obj = { style: notification.animationStyle, children: null };
   obj = { style: tmp.divider };
   const items3 = [callback(closure_5, obj), ];
-  const obj1 = { style: tmp.container };
+  const obj1 = { style: tmp.container, children: null };
   const items4 = [
     emojisForReactionRow.map((type) => {
       let closure_0 = type;
-      const obj = { emoji: null, onPress: null, emojiSize: 20, emojiFontSize: 16, emojiContainerSize: 40, emojiLineHeight: 22 };
-      let tmp2 = null;
-      if (null != type) {
-        tmp2 = type;
+      let tmp4 = type;
+      if (type == null) {
+        tmp4 = null;
       }
-      obj.emoji = tmp2;
-      obj.onPress = function onPress() {
-        return outer1_4(closure_0);
-      };
-      obj.styles = outer1_10.roundButton;
-      return outer1_10(notification(outer1_10[16]).EmojiReactionRowButton, obj, notification(outer1_10[16]).getEmojiKey(type, arg1));
+      return outer1_10(notification(_undefined[16]).EmojiReactionRowButton, {
+        emoji: tmp4,
+        onPress() {
+          return outer1_4(closure_0);
+        },
+        emojiSize: 20,
+        emojiFontSize: 16,
+        emojiContainerSize: 40,
+        emojiLineHeight: 22,
+        styles: _undefined.roundButton
+      }, notification(_undefined[16]).getEmojiKey(type, arg1));
     }),
-
+    callback(notification(9969).EmojiPickerRowButton, { emojiContainerSize: 40, onPress: callback, iconSize: "sm", styles: tmp.roundButton })
   ];
-  const obj2 = { emojiContainerSize: 40, onPress: callback, iconSize: "sm", styles: tmp.roundButton };
-  items4[1] = callback(notification(9947).EmojiPickerRowButton, obj2);
-  obj1.children = items4;
+  obj1[1] = items4;
   items3[1] = callback2(closure_5, obj1);
-  obj.children = items3;
-  return callback2(onReactionPress(4026).View, obj);
+  obj[1] = items3;
+  return callback2(onReactionPress(4050).View, obj);
 };

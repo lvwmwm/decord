@@ -1,12 +1,12 @@
-// Module ID: 9339
-// Function ID: 72933
+// Module ID: 9363
+// Function ID: 9364
 // Name: RoleSubscriptionEmojiUpsellAlert
-// Dependencies: [31, 1838, 1355, 33, 6172, 1212, 1450, 566, 5083, 4596, 9340, 9343, 2]
+// Dependencies: [19, 1862, 1379, 21, 6192, 1236, 1474, 589, 5105, 4618, 9364, 9367, 2]
 // Exports: default
 
-// Module 9339 (RoleSubscriptionEmojiUpsellAlert)
-import result from "result";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+// Module 9363 (RoleSubscriptionEmojiUpsellAlert)
+import noop from "noop";
+import createGuildRecordFromRust from "createGuildRecordFromRust";
 import { StaticChannelRoute } from "set";
 import { jsx } from "jsxProd";
 
@@ -17,51 +17,51 @@ export default function RoleSubscriptionEmojiUpsellAlert(arg0) {
   let onClose;
   let require;
   ({ guildId: require, onClose } = arg0);
+  let stateFromStores;
   function handleConfirm() {
     const result = onClose(stateFromStores[8]).transitionToGuildSync(closure_0, undefined, outer1_5.ROLE_SUBSCRIPTIONS);
-    if (null != onClose) {
+    if (onClose != null) {
       onClose();
     }
   }
   const size = onClose(stateFromStores[6])();
   const diff = Math.min(0.9 * Math.min(size.width, size.height), 500) - 32;
   let obj = require(stateFromStores[7]);
-  const items = [_createForOfIteratorHelperLoose];
+  const items = [createGuildRecordFromRust];
   stateFromStores = obj.useStateFromStores(items, () => {
     let guild = null;
     if (null != closure_0) {
-      guild = outer1_4.getGuild(closure_0);
+      guild = outer1_4.getGuild(tmp);
     }
     return guild;
   });
   let name;
-  if (null != stateFromStores) {
+  if (stateFromStores != null) {
     name = stateFromStores.name;
   }
   const items1 = [name];
   const memo = handleConfirm.useMemo(() => {
     let name;
-    if (null != stateFromStores) {
+    if (stateFromStores != null) {
       name = stateFromStores.name;
     }
-    let obj = { image: onClose(stateFromStores[4]) };
+    const obj = { image: onClose(stateFromStores[4]), title: null, description: null };
     const intl = outer1_0(stateFromStores[5]).intl;
-    obj.title = intl.string(outer1_0(stateFromStores[5]).t.cBjkcx);
+    obj[1] = intl.string(outer1_0(stateFromStores[5]).t.cBjkcx);
     const intl2 = outer1_0(stateFromStores[5]).intl;
-    obj = { serverName: name };
-    obj.description = intl2.formatToPlainString(outer1_0(stateFromStores[5]).t["h0u/Hi"], obj);
+    obj[2] = intl2.formatToPlainString(outer1_0(stateFromStores[5]).t["h0u/Hi"], { serverName: name });
     return obj;
   }, items1);
-  obj = {};
-  let intl = require(stateFromStores[5]).intl;
-  obj.cancelText = intl.string(require(stateFromStores[5]).t.cpT0Cq);
-  obj.onClose = onClose;
-  obj.renderConfirmButton = function renderConfirmButton() {
-    const obj = { onPress: handleConfirm };
+  obj = { cancelText: null, onClose: null, renderConfirmButton: null, children: null };
+  let intl = tmp4(tmp2[5]).intl;
+  obj[0] = intl.string(require(stateFromStores[5]).t.cpT0Cq);
+  obj[1] = onClose;
+  obj[2] = function renderConfirmButton() {
+    const obj = { onPress: handleConfirm, text: null };
     const intl = outer1_0(stateFromStores[5]).intl;
-    obj.text = intl.string(outer1_0(stateFromStores[5]).t.p8FG1D);
+    obj[1] = intl.string(outer1_0(stateFromStores[5]).t.p8FG1D);
     return outer1_6(outer1_0(stateFromStores[10]).CreatorRevenueButton, obj);
   };
-  obj.children = jsx(require(stateFromStores[11]).PremiumUpsellItem, { alertWidth: diff, upsellItem: memo });
-  return jsx(onClose(stateFromStores[9]), {});
+  obj[3] = jsx(require(stateFromStores[11]).PremiumUpsellItem, { alertWidth: diff, upsellItem: memo });
+  return jsx(onClose(stateFromStores[9]), { cancelText: null, onClose: null, renderConfirmButton: null, children: null });
 };

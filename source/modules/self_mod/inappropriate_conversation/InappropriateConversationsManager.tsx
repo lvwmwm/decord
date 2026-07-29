@@ -1,83 +1,102 @@
-// Module ID: 16614
-// Function ID: 129405
-// Name: _isNativeReflectConstruct
-// Dependencies: [7, 6, 15, 17, 18, 10250, 4305, 5112, 2]
+// Module ID: 16649
+// Function ID: 16650
+// Name: fadeIn
+// Dependencies: [10271, 4354, 5134, 2]
 
-// Module 16614 (_isNativeReflectConstruct)
-import AutomaticLifecycleManager from "AutomaticLifecycleManager";
-import clamp from "clamp";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
-import createSound from "createSound";
-import tmp2 from "AutomaticLifecycleManager";
+// Module 16649 (fadeIn)
+import createSoundForPack from "createSoundForPack";
+import "initialize";
 
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
-  }
-  const result = _isNativeReflectConstruct();
-}
-function fade(arg0, arg1) {
-  const rounded = Math.round(100 * arg0);
-  const rounded1 = Math.round(100 * c9);
-  const rounded2 = Math.round(100 * closure_8);
-  if (rounded <= 0) {
-    closure_8 = (rounded2 + rounded) / 100;
-    closure_7.volume = importDefault(4305)(closure_8, 0, 0.5);
-  }
-  clearInterval(c10);
-  let tmp9 = 0 === rounded1;
-  if (tmp9) {
-    tmp9 = null != arg1;
-  }
-  if (tmp9) {
-    arg1();
-  }
-}
-function fadeOut(pause) {
-  let closure_0 = pause;
-  if (null != interval) {
-    const _clearInterval = clearInterval;
-    clearInterval(interval);
-  }
-  let c9 = 0;
-  let closure_1 = getVolumeChangeAmount();
-  interval = setInterval(() => {
-    outer1_12(closure_1, closure_0);
-  }, 100);
-}
 function fadeIn() {
   if (null != interval) {
     const _clearInterval = clearInterval;
     clearInterval(interval);
   }
-  closure_7.loop();
-  let c9 = 0.5;
-  let closure_0 = getVolumeChangeAmount();
+  closure_2.loop();
+  let c4 = 0.5;
+  let closure_0 = 0.2 * (0.5 - c3);
   interval = setInterval(() => {
-    outer1_12(closure_0);
+    const rounded = Math.round(100 * callback);
+    const rounded1 = Math.round(100 * c4);
+    const rounded2 = Math.round(100 * outer1_3);
+    if (rounded <= 0) {
+      outer1_3 = (rounded2 + rounded) / 100;
+      outer1_2.volume = callback(outer1_1[1])(outer1_3, 0, 0.5);
+    }
+    clearInterval(closure_5);
+    if (tmp9) {
+      undefined();
+    }
   }, 100);
 }
 function handlePauseMusic() {
-  const pause = closure_7.pause;
-  fadeOut(pause.bind(closure_7));
+  const pause = closure_2.pause;
+  let closure_0 = pause.bind(closure_2);
+  let closure_1;
+  if (null != interval) {
+    const _clearInterval = clearInterval;
+    clearInterval(interval);
+  }
+  let c4 = 0;
+  closure_1 = 0.2 * (0 - c3);
+  interval = setInterval(() => {
+    const rounded = Math.round(100 * table);
+    const rounded1 = Math.round(100 * c4);
+    const rounded2 = Math.round(100 * outer1_3);
+    if (rounded <= 0) {
+      outer1_3 = (rounded2 + rounded) / 100;
+      outer1_2.volume = callback(table[1])(outer1_3, 0, 0.5);
+    }
+    clearInterval(closure_5);
+    let tmp10 = 0 === rounded1;
+    if (tmp10) {
+      tmp10 = null != tmp;
+    }
+    if (tmp10) {
+      tmp();
+    }
+  }, 100);
 }
 function handleStopMusic() {
-  const stop = closure_7.stop;
-  fadeOut(stop.bind(closure_7));
+  const stop = closure_2.stop;
+  let closure_0 = stop.bind(closure_2);
+  let closure_1;
+  if (null != interval) {
+    const _clearInterval = clearInterval;
+    clearInterval(interval);
+  }
+  let c4 = 0;
+  closure_1 = 0.2 * (0 - c3);
+  interval = setInterval(() => {
+    const rounded = Math.round(100 * table);
+    const rounded1 = Math.round(100 * c4);
+    const rounded2 = Math.round(100 * outer1_3);
+    if (rounded <= 0) {
+      outer1_3 = (rounded2 + rounded) / 100;
+      outer1_2.volume = callback(table[1])(outer1_3, 0, 0.5);
+    }
+    clearInterval(closure_5);
+    let tmp10 = 0 === rounded1;
+    if (tmp10) {
+      tmp10 = null != tmp;
+    }
+    if (tmp10) {
+      tmp();
+    }
+  }, 100);
 }
-function getVolumeChangeAmount() {
-  return 0.2 * (c9 - c8);
+let closure_2 = createSoundForPack.createSound("vibing_wumpus", "vibing_wumpus", 0);
+let c3 = 0;
+let c4 = 0;
+let c5 = null;
+let prototype = function InappropriateConversationsManager() {
+  const applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
+  applyArgumentsResult.actions = { VIBING_WUMPUS_PLAY_MUSIC: fadeIn, VIBING_WUMPUS_STOP_MUSIC: handleStopMusic, VIBING_WUMPUS_PAUSE_MUSIC: handlePauseMusic };
+  return applyArgumentsResult;
+}.prototype;
+class prototype extends tmp2 {
 }
-let closure_7 = createSound.createSound("vibing_wumpus", "vibing_wumpus", 0);
-let c8 = 0;
-let c9 = 0;
-let c10 = null;
-tmp2 = new tmp2();
-let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/self_mod/inappropriate_conversation/InappropriateConversationsManager.tsx");
+prototype = new prototype();
+const result = require("initialize").fileFinishedImporting("modules/self_mod/inappropriate_conversation/InappropriateConversationsManager.tsx");
 
-export default tmp2;
+export default prototype;

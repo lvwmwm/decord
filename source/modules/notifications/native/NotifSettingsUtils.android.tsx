@@ -1,100 +1,21 @@
-// Module ID: 13490
-// Function ID: 103452
-// Name: _createForOfIteratorHelperLoose
-// Dependencies: [13486, 1212, 13491, 13492, 1184, 2]
+// Module ID: 13513
+// Function ID: 13514
+// Name: inferImportanceFromBehavior
+// Dependencies: [13509, 1236, 13514, 13515, 1208, 2]
 
-// Module 13490 (_createForOfIteratorHelperLoose)
+// Module 13513 (inferImportanceFromBehavior)
 import items2 from "items2";
 
-let closure_3;
-let closure_4;
-let closure_5;
-function _createForOfIteratorHelperLoose(iterable) {
-  let closure_0 = iterable;
-  iterable = "undefined" !== typeof Symbol;
-  if (iterable) {
-    const _Symbol = Symbol;
-    iterable = iterable[Symbol.iterator];
-  }
-  if (!iterable) {
-    iterable = iterable[Symbol.iterator];
-  }
-  if (iterable) {
-    const iter = iterable.call(iterable);
-    const next = iter.next;
-    return next.bind(iter);
-  } else {
-    const _Array = Array;
-    let tmp = iterable;
-    if (!Array.isArray(iterable)) {
-      let tmp2;
-      if (iterable) {
-        if ("string" === typeof iterable) {
-          tmp2 = _arrayLikeToArray(iterable, undefined);
-        } else {
-          const toString = {}.toString;
-          const substr = toString.call(iterable).slice(8, -1);
-          let name = substr;
-          if (tmp3) {
-            name = iterable.constructor.name;
-          }
-          if ("Map" !== name) {
-            if ("Set" !== name) {
-              if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(iterable, undefined);
-              } else {
-                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
-              }
-            }
-            tmp2 = arr;
-          }
-          const _Array2 = Array;
-          arr = Array.from(iterable);
-          const callResult = toString.call(iterable);
-          tmp3 = "Object" === substr && iterable.constructor;
-        }
-      }
-      tmp = tmp2;
-      if (!tmp2) {
-        const _TypeError = TypeError;
-        const typeError = new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
-        throw typeError;
-      }
-    }
-    if (tmp) {
-      closure_0 = tmp;
-    }
-    let c1 = 0;
-    return () => {
-      if (closure_1 >= length.length) {
-        let obj = { done: true };
-      } else {
-        obj = { done: false };
-        closure_1 = tmp3 + 1;
-        obj.value = length[+closure_1];
-      }
-      return obj;
-    };
-  }
-}
-function _arrayLikeToArray(arg0, arg1) {
-  let length;
-  if (tmp) {
-    length = arg0.length;
-  }
-  const ArrayResult = Array(length);
-  for (let num = 0; num < length; num = num + 1) {
-    ArrayResult[num] = arg0[num];
-  }
-  return ArrayResult;
-}
-function inferImportanceFromBehavior(behavior) {
-  if (!("ringtone" in behavior)) {
-    if ("popup" !== behavior.visibility) {
-      if ("hidden" === behavior.visibility) {
+let c3;
+let c4;
+let c5;
+function inferImportanceFromBehavior(visibility) {
+  if (!("ringtone" in visibility)) {
+    if ("popup" !== visibility.visibility) {
+      if ("hidden" === visibility.visibility) {
         let HIGH = constants.MIN;
       } else {
-        HIGH = behavior.sound ? tmp2.DEFAULT : tmp2.LOW;
+        HIGH = visibility.sound ? tmp2.DEFAULT : tmp2.LOW;
       }
     }
     return HIGH;
@@ -102,173 +23,136 @@ function inferImportanceFromBehavior(behavior) {
   HIGH = constants.HIGH;
 }
 function formatCategory(id) {
-  const obj = { id: id.string_id };
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj.name = intl.string(id.title);
+  const obj = { id: id.string_id, name: null };
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj[1] = intl.string(id.title);
   return obj;
 }
-function formatSetting(value4, map) {
-  let tmp = map;
-  const obj = { id: value4.string_id, groupId: value4.category };
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj.name = intl.string(value4.title);
-  if (null == map) {
-    tmp = inferImportanceFromBehavior(value4.behavior);
+function formatSetting(item10022, arg1) {
+  const obj = { id: item10022.string_id, groupId: item10022.category, name: null, importance: null, ringtone: null, badge: null, vibrate: null };
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj[2] = intl.string(item10022.title);
+  if (arg1 != null) {
+    obj[3] = arg1;
+    let ringtone;
+    if ("ringtone" in item10022.behavior) {
+      ringtone = item10022.behavior.ringtone;
+    }
+    obj[4] = ringtone;
+    obj[5] = item10022.behavior.badge;
+    obj[6] = item10022.behavior.vibrate;
+    return obj;
+  } else {
+    const behavior = item10022.behavior;
+    if (!("ringtone" in behavior)) {
+      if ("popup" !== behavior.visibility) {
+        if ("hidden" === behavior.visibility) {
+          let HIGH = constants.MIN;
+        } else {
+          HIGH = behavior.sound ? tmp.DEFAULT : tmp.LOW;
+        }
+      }
+    }
+    HIGH = constants.HIGH;
   }
-  obj.importance = tmp;
-  let ringtone;
-  if ("ringtone" in value4.behavior) {
-    ringtone = value4.behavior.ringtone;
-  }
-  obj.ringtone = ringtone;
-  obj.badge = value4.behavior.badge;
-  obj.vibrate = value4.behavior.vibrate;
-  return obj;
 }
 function buildChannelsAndMapping() {
-  let done;
-  let done2;
-  let done3;
-  let iter9;
-  let obj = map3(13492);
+  let mappings;
+  let settings;
+  let obj = map(13515);
   const assignedNotifSettingsAndMappings = obj.getAssignedNotifSettingsAndMappings();
-  const mappings = assignedNotifSettingsAndMappings.mappings;
-  const map = new Map();
-  let prop;
-  if (null != importDefault(13491)) {
-    prop = importDefault(13491).getAndroidNotifChannelStates;
-  }
-  if (null != prop) {
-    const _Map2 = Map;
-    const map1 = new Map();
-    const tmp43 = _createForOfIteratorHelperLoose(prop());
-    let iter2 = tmp43();
-    if (!iter2.done) {
-      do {
-        let value = iter2.value;
-        let result = map1.set(value.channelId, value.importance);
-        let iter = tmp43();
-        iter2 = iter;
-        done = iter.done;
-      } while (!done);
+  ({ settings, mappings } = assignedNotifSettingsAndMappings);
+  const obj2 = (function computeInheritedImportances(mappings) {
+    const map = new Map();
+    const tmp = callback(table[2]);
+    let prop;
+    if (tmp != null) {
+      prop = tmp.getAndroidNotifChannelStates;
     }
-    const _Map = Map;
-    const map2 = new Map();
-    const tmp11 = _createForOfIteratorHelperLoose(closure_5);
-    let iter3 = tmp11();
-    if (!iter3.done) {
-      do {
-        value = iter3.value;
-        let result1 = map2.set(value.id, value);
-        let iter4 = tmp11();
-        iter3 = iter4;
-        done2 = iter4.done;
-      } while (!done2);
-    }
-    const tmp14 = _createForOfIteratorHelperLoose(mappings);
-    const iter5 = tmp14();
-    let iter6 = iter5;
-    if (!iter5.done) {
-      do {
-        value = iter6.value;
-        let notifSetting = value.notifSetting;
-        let tmp18 = table;
-        let tmp19 = table[value.notifType];
-        let tmp20 = tmp15;
-        let tmp21 = tmp16;
-        let tmp22 = tmp17;
-        if (null != tmp19) {
-          let tmp44 = _createForOfIteratorHelperLoose;
-          let tmp45 = _createForOfIteratorHelperLoose(tmp19);
-          let iter12 = tmp45();
-          let iter8 = iter12;
-          let tmp26 = tmp16;
-          let tmp29 = tmp17;
-          let tmp46 = iter12;
-          let tmp47 = tmp45;
-          tmp20 = tmp15;
-          tmp21 = tmp16;
-          tmp22 = tmp17;
-          if (!iter12.done) {
-            while (true) {
-              let value1 = iter8.value;
-              let tmp23 = iter8;
-              let tmp24 = tmp29;
-              if (value1 !== notifSetting) {
-                let value2 = map2.get(value1);
-                tmp26 = value2;
-                tmp24 = tmp29;
-                if (null != value2) {
-                  let value3 = map1.get(value2.string_id);
-                  tmp26 = value2;
-                  tmp24 = value3;
-                  if (null != value3) {
-                    let tmp28 = inferImportanceFromBehavior;
-                    tmp26 = value2;
-                    tmp24 = value3;
-                    if (value3 !== inferImportanceFromBehavior(value2.behavior)) {
-                      break;
-                    }
+    if (null == prop) {
+      return map;
+    } else {
+      const _Map2 = Map;
+      const map1 = new Map();
+      const propResult = prop();
+      for (const item10020 of propResult) {
+        let result = map1.set(item10020.channelId, item10020.importance);
+        continue;
+      }
+      const _Map = Map;
+      const map2 = new Map();
+      for (const item10036 of closure_5) {
+        let result1 = map2.set(item10036.id, item10036);
+        continue;
+      }
+      const iter = mappings[Symbol.iterator]();
+      const nextResult = iter.next();
+      while (iter !== undefined) {
+        let notifSetting = nextResult.notifSetting;
+        let tmp16 = table2;
+        let tmp17 = table2[nextResult.notifType];
+        if (null != tmp17) {
+          let tmp40 = tmp18;
+          let tmp19 = tmp17;
+          for (const item10055 of tmp17) {
+            let tmp21 = notifSetting;
+            if (item10055 !== notifSetting) {
+              let tmp22 = item10055;
+              let value = map2.get(tmp20);
+              let tmp24 = value;
+              if (null != value) {
+                let tmp25 = value;
+                value = map1.get(tmp24.string_id);
+                let tmp27 = value;
+                if (null != value) {
+                  let tmp28 = value;
+                  let tmp29 = callback2;
+                  let tmp30 = value;
+                  if (tmp27 !== callback2(tmp24.behavior)) {
+                    let tmp31 = notifSetting;
+                    let tmp32 = value;
+                    let result2 = map.set(notifSetting, tmp27);
+                    let tmp34 = obj4;
+                    obj4.return();
+                    break;
                   }
                 }
               }
-              let iter7 = tmp45();
-              tmp29 = tmp24;
-              iter8 = iter7;
-              let tmp30 = iter7;
-              let tmp31 = tmp45;
-              tmp20 = value1;
-              tmp21 = tmp26;
-              tmp22 = tmp24;
-              continue;
             }
-            let result2 = map.set(notifSetting, value3);
-            let tmp33 = iter8;
-            let tmp34 = tmp45;
-            tmp20 = value1;
-            tmp21 = value2;
-            tmp22 = value3;
+            continue;
           }
         }
-        iter9 = tmp14();
-        tmp15 = tmp20;
-        tmp16 = tmp21;
-        tmp17 = tmp22;
-        iter6 = iter9;
-      } while (!iter9.done);
+        continue;
+      }
+      return map;
     }
-  }
+  })(mappings);
   let items = [];
-  map3 = new Map();
-  const tmp35 = _createForOfIteratorHelperLoose(assignedNotifSettingsAndMappings.settings);
-  let iter10 = tmp35();
-  if (!iter10.done) {
-    do {
-      let value4 = iter10.value;
-      let tmp36 = formatSetting;
-      let arr = items.push(formatSetting(value4, map.get(value4.id)));
-      let result3 = map3.set(value4.id, value4.string_id);
-      let iter11 = tmp35();
-      iter10 = iter11;
-      done3 = iter11.done;
-    } while (!done3);
+  map = new Map();
+  for (const item10022 of settings) {
+    let tmp2 = formatSetting;
+    let arr = items.push(formatSetting(item10022, obj2.get(item10022.id)));
+    let result = map.set(item10022.id, item10022.string_id);
+    continue;
   }
   obj = {
     mapping: mappings.flatMap((notifSetting) => {
-      const value = map3.get(notifSetting.notifSetting);
+      const value = map.get(notifSetting.notifSetting);
       if (null == value) {
         let items = [];
       } else {
-        items = { type: notifSetting.notifType, channel: value };
+        items = { type: null, channel: null };
+        items[0] = notifSetting.notifType;
+        items[1] = value;
       }
       return items;
     }),
     channels: items,
-    inheritedImportances: map
+    inheritedImportances: obj2
   };
   return obj;
 }
-({ NOTIF_CATEGORIES: closure_3, NOTIF_SETTING_MAPPING: closure_4, NOTIF_SETTINGS: closure_5 } = items2);
+({ NOTIF_CATEGORIES: c3, NOTIF_SETTING_MAPPING: c4, NOTIF_SETTINGS: c5 } = items2);
 let closure_6 = { NONE: 0, [0]: "NONE", MIN: 1, [1]: "MIN", LOW: 2, [2]: "LOW", DEFAULT: 3, [3]: "DEFAULT", HIGH: 4, [4]: "HIGH" };
 let result = require("NativeNotifSettingsModule").fileFinishedImporting("modules/notifications/native/NotifSettingsUtils.android.tsx");
 
@@ -276,9 +160,8 @@ export default {
   clear() {
     let registerAndroidNotifGroupsAndChannels;
     let registerAndroidNotifTypeMappings;
-    if (null != importDefault(13491)) {
-      let obj = importDefault(13491);
-    } else {
+    let obj = importDefault(13514);
+    if (obj == null) {
       obj = {};
     }
     ({ registerAndroidNotifGroupsAndChannels, registerAndroidNotifTypeMappings } = obj);
@@ -292,32 +175,33 @@ export default {
   registerDeclarativeNotificationCategories() {
     let channels;
     let inheritedImportances;
+    let mapping;
     let registerAndroidNotifGroupsAndChannels;
     let registerAndroidNotifTypeMappings;
-    if (null != importDefault(13491)) {
-      let obj = importDefault(13491);
-    } else {
+    let obj = importDefault(13514);
+    if (obj == null) {
       obj = {};
     }
     ({ registerAndroidNotifGroupsAndChannels, registerAndroidNotifTypeMappings } = obj);
     if (null != registerAndroidNotifGroupsAndChannels) {
       if (null != registerAndroidNotifTypeMappings) {
+        ({ channels, inheritedImportances, mapping } = buildChannelsAndMapping());
         const tmp4 = buildChannelsAndMapping();
-        ({ channels, inheritedImportances } = tmp4);
-        obj = { message: "Registering declarative notification categories" };
-        obj = { channels: channels.map((id) => id.id) };
+        obj = { message: "Registering declarative notification categories", data: null };
+        obj = { channels: null, inheritedImportances: null };
+        obj[0] = channels.map((id) => id.id);
         const _Array = Array;
-        const obj2 = importDefault(1184);
-        obj.inheritedImportances = Array.from(inheritedImportances.entries()).map((arg0) => {
+        const tmpResult = importDefault(1208);
+        obj[1] = Array.from(inheritedImportances.entries()).map((arg0) => {
           let tmp;
           let tmp2;
           [tmp, tmp2] = arg0;
           return "NotifSettings#" + tmp + " -> " + tmp2;
         });
-        obj.data = obj;
-        obj2.addBreadcrumb(obj);
+        obj[1] = obj;
+        tmpResult.addBreadcrumb(obj);
         const result = registerAndroidNotifGroupsAndChannels(closure_3.map(formatCategory), channels);
-        const result1 = registerAndroidNotifTypeMappings(tmp4.mapping);
+        const result1 = registerAndroidNotifTypeMappings(mapping);
         return true;
       }
     }

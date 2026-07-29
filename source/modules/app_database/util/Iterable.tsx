@@ -1,48 +1,43 @@
-// Module ID: 5720
-// Function ID: 49391
-// Name: Chained
-// Dependencies: [6, 7, 2]
+// Module ID: 5738
+// Function ID: 5739
+// Name: next
+// Dependencies: [2]
 // Exports: chain
 
-// Module 5720 (Chained)
-import _classCallCheck from "_classCallCheck";
-import _defineProperties from "_defineProperties";
-
-let closure_2 = (() => {
-  class Chained {
-    constructor(arg0) {
-      tmp = Chained(this, Chained);
-      this.index = 0;
-      this.items = arg0;
-      return;
-    }
+// Module 5738 (next)
+class Chained {
+  constructor(arg0) {
+    obj = Object.create(new.target.prototype);
+    obj.index = 0;
+    obj.items = global;
+    return obj;
   }
-  let obj = {
-    key: Symbol.iterator,
-    value() {
-      return this;
+}
+const prototype = Chained.prototype;
+// ToPropertyKey (0xa4)
+prototype[prototype] = function() {
+  return this;
+};
+prototype["next"] = function next() {
+  const self = this;
+  if (this.index < this.items.length) {
+    const iter2 = self.items[self.index].next();
+    while (iter2.done) {
+      self.index = self.index + 1;
     }
-  };
-  const items = [obj, ];
-  obj = {
-    key: "next",
-    value() {
-      const self = this;
-      if (this.index < this.items.length) {
-        const iter2 = self.items[self.index].next();
-        while (iter2.done) {
-          self.index = self.index + 1;
-        }
-        return iter2;
-      }
-      return { done: true, value: undefined };
-    }
-  };
-  items[1] = obj;
-  return callback(Chained, items);
-})();
+    return iter2;
+  }
+  return { done: true, value: "a" };
+};
 const result = require("set").fileFinishedImporting("modules/app_database/util/Iterable.tsx");
 
-export const chain = function chain(arg0) {
-  return new closure_2(HermesBuiltin.copyRestArgs());
+export const chain = function chain() {
+  const items = [...arguments];
+  if (typeof Chained !== "find") {
+    HermesBuiltin.throwTypeError();
+  }
+  const obj = Object.create(Chained.prototype);
+  obj.index = 0;
+  obj.items = items;
+  return obj;
 };

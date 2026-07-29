@@ -1,81 +1,87 @@
-// Module ID: 9159
-// Function ID: 71798
+// Module ID: 9183
+// Function ID: 9184
 // Name: ChangeEmailWarning
-// Dependencies: [31, 27, 1850, 9157, 653, 33, 4165, 689, 1456, 566, 675, 668, 6763, 4161, 1212, 4578, 9153, 2]
+// Dependencies: [19, 17, 1874, 9181, 676, 21, 4189, 712, 1480, 589, 698, 691, 6785, 4185, 1236, 4600, 9177, 2]
 // Exports: default
 
-// Module 9159 (ChangeEmailWarning)
-import result from "result";
-import get_ActivityIndicator from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 9183 (ChangeEmailWarning)
+import noop from "noop";
+import get_ActivityIndicator from "set";
+import mergeGuildAvatar from "mergeGuildAvatar";
 import { COMMON_SCAMS_EDUCATION_HC_ARTICLE as closure_7 } from "ChangeEmailReasons";
 import { AnalyticEvents } from "ME";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_10;
-let closure_4;
-let closure_5;
-let closure_9;
+let c10;
+let c4;
+let c5;
+let c9;
 const require = arg1;
-({ View: closure_4, ScrollView: closure_5 } = get_ActivityIndicator);
-({ jsx: closure_9, jsxs: closure_10 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { flex: 1, padding: require("_createForOfIteratorHelperLoose").space.PX_16, alignItems: "center", justifyContent: "center" };
-_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.title = { marginTop: require("_createForOfIteratorHelperLoose").space.PX_16 };
-let obj1 = { marginTop: require("_createForOfIteratorHelperLoose").space.PX_16 };
-_createForOfIteratorHelperLoose.body = { marginTop: require("_createForOfIteratorHelperLoose").space.PX_8, textAlign: "center" };
-let obj2 = { marginTop: require("_createForOfIteratorHelperLoose").space.PX_8, textAlign: "center" };
-_createForOfIteratorHelperLoose.buttonContainer = { flexDirection: "row", gap: require("_createForOfIteratorHelperLoose").space.PX_8, marginTop: require("_createForOfIteratorHelperLoose").space.PX_16 };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-let obj3 = { flexDirection: "row", gap: require("_createForOfIteratorHelperLoose").space.PX_8, marginTop: require("_createForOfIteratorHelperLoose").space.PX_16 };
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/verification/native/components/ChangeEmailWarning.tsx");
+({ View: c4, ScrollView: c5 } = get_ActivityIndicator);
+({ jsx: c9, jsxs: c10 } = jsxProd);
+createCacheKey = { container: null, title: null, body: null, buttonContainer: null };
+createCacheKey = { flex: 1, padding: require("Themes").space.PX_16, alignItems: "center", justifyContent: "center" };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { marginTop: require("Themes").space.PX_16 };
+let obj1 = { marginTop: require("Themes").space.PX_16 };
+createCacheKey[2] = { marginTop: require("Themes").space.PX_8, textAlign: "center" };
+let obj2 = { marginTop: require("Themes").space.PX_8, textAlign: "center" };
+createCacheKey[3] = { flexDirection: "row", gap: require("Themes").space.PX_8, marginTop: require("Themes").space.PX_16 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let obj3 = { flexDirection: "row", gap: require("Themes").space.PX_8, marginTop: require("Themes").space.PX_16 };
+const result = require("mergeGuildAvatar").fileFinishedImporting("modules/verification/native/components/ChangeEmailWarning.tsx");
 
 export default function ChangeEmailWarning(changeEmailReason) {
   changeEmailReason = changeEmailReason.changeEmailReason;
-  const tmp = _createForOfIteratorHelperLoose();
-  let obj = changeEmailReason(1456);
-  const navigation = obj.useNavigation();
-  let obj1 = changeEmailReason(566);
-  const items = [_isNativeReflectConstruct];
+  let navigation;
+  const tmp = createCacheKey();
+  let obj = changeEmailReason(1480);
+  navigation = obj.useNavigation();
+  let obj1 = changeEmailReason(589);
+  const items = [mergeGuildAvatar];
   const items1 = [navigation, changeEmailReason];
-  const stateFromStores = obj1.useStateFromStores(items, () => outer1_6.getCurrentUser());
-  let tmp5 = null;
+  const stateFromStores = obj1.useStateFromStores(items, () => currentUser.getCurrentUser());
+  let tmp7 = null;
   if (null != stateFromStores) {
-    obj = { keyboardShouldPersistTaps: "handled", alwaysBounceVertical: false };
-    obj = { style: tmp.container };
-    const items2 = [callback(changeEmailReason(6763).TrafficConeSpotIllustration, {}), , , ];
-    obj1 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary" };
-    const intl = changeEmailReason(1212).intl;
-    obj1.children = intl.string(changeEmailReason(1212).t.hhR7gX);
-    items2[1] = callback(changeEmailReason(4161).Text, obj1);
-    const obj2 = { style: tmp.body, accessibilityRole: "header", variant: "text-md/normal", color: "mobile-text-heading-primary" };
-    const intl2 = changeEmailReason(1212).intl;
-    const obj3 = { hcArticle: closure_7 };
-    const items3 = [intl2.format(changeEmailReason(1212).t.rqWXUf, obj3), "\n\n", ];
-    const intl3 = changeEmailReason(1212).intl;
-    items3[2] = intl3.string(changeEmailReason(1212).t["3LW10C"]);
-    obj2.children = items3;
-    items2[2] = callback2(changeEmailReason(4161).Text, obj2);
-    const obj4 = { style: tmp.buttonContainer };
+    obj = { keyboardShouldPersistTaps: "handled", alwaysBounceVertical: false, children: null };
+    obj = { style: null, children: null };
+    obj[0] = tmp.container;
+    const items2 = [callback(tmp2(6785).TrafficConeSpotIllustration, {}), , , ];
+    obj1 = { style: null, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: null };
+    obj1[0] = tmp.title;
+    const intl = tmp2(1236).intl;
+    obj1[4] = intl.string(tmp2(1236).t.hhR7gX);
+    items2[1] = callback(tmp2(4185).Text, obj1);
+    const obj2 = { style: null, accessibilityRole: "header", variant: "text-md/normal", color: "mobile-text-heading-primary", children: null };
+    obj2[0] = tmp.body;
+    const intl2 = tmp2(1236).intl;
+    const obj3 = { hcArticle: null };
+    obj3[0] = closure_7;
+    const items3 = [intl2.format(tmp2(1236).t.rqWXUf, obj3), "\n\n", ];
+    const intl3 = tmp2(1236).intl;
+    items3[2] = intl3.string(tmp2(1236).t["3LW10C"]);
+    obj2[4] = items3;
+    items2[2] = callback2(tmp2(4185).Text, obj2);
+    const obj4 = { style: null, children: null };
+    obj4[0] = tmp.buttonContainer;
     const obj5 = { size: "md", variant: "tertiary", text: null, onPress: null, shrink: true };
-    const intl4 = changeEmailReason(1212).intl;
-    obj5.text = intl4.string(changeEmailReason(1212).t.rwTBFs);
-    obj5.onPress = tmp4;
-    const items4 = [callback(changeEmailReason(4578).Button, obj5), ];
+    const intl4 = tmp2(1236).intl;
+    obj5[2] = intl4.string(tmp2(1236).t.rwTBFs);
+    obj5[3] = tmp6;
+    const items4 = [callback(tmp2(4600).Button, obj5), ];
     const obj6 = { size: "md", variant: "primary", text: null, onPress: null, shrink: true };
-    const intl5 = changeEmailReason(1212).intl;
-    obj6.text = intl5.string(changeEmailReason(1212).t["ETE/oC"]);
-    obj6.onPress = function onPress() {
-      return navigation(outer1_2[16]).close();
+    const intl5 = tmp2(1236).intl;
+    obj6[2] = intl5.string(tmp2(1236).t["ETE/oC"]);
+    obj6[3] = function onPress() {
+      return navigation(table[16]).close();
     };
-    items4[1] = callback(changeEmailReason(4578).Button, obj6);
-    obj4.children = items4;
+    items4[1] = callback(tmp2(4600).Button, obj6);
+    obj4[1] = items4;
     items2[3] = callback2(closure_4, obj4);
-    obj.children = items2;
-    obj.children = callback2(closure_4, obj);
-    tmp5 = callback(closure_5, obj);
+    obj[1] = items2;
+    obj[2] = callback2(closure_4, obj);
+    tmp7 = callback(closure_5, obj);
   }
-  return tmp5;
+  return tmp7;
 };

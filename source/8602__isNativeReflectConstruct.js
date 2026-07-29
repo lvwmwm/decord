@@ -1,69 +1,117 @@
 // Module ID: 8602
-// Function ID: 68161
+// Function ID: 8603
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 31]
+// Dependencies: [41, 42, 93, 95, 98, 19, 17, 21, 8544, 8603, 8546, 8555]
 
 // Module 8602 (_isNativeReflectConstruct)
 import _classCallCheck from "_classCallCheck";
-import _defineProperties from "_defineProperties";
 import _possibleConstructorReturn from "_possibleConstructorReturn";
 import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
+import importDefaultResult from "_createClass";
+import "noop";
+import { Image } from "get ActivityIndicator";
+import { jsx } from "jsxProd";
 
+const SvgImage = arg1;
 function _isNativeReflectConstruct() {
-  let _classCallCheck = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return _classCallCheck;
+  try {
+    const _Boolean = Boolean;
+    const call = valueOf.call;
+    const _Reflect = Reflect;
+    const _Boolean2 = Boolean;
+    if (typeof call === "unknown") {
+      let callResult = valueOf();
+    } else {
+      callResult = call(constructResult);
+    }
+    let closure_0 = !callResult;
+    function _isNativeReflectConstruct() {
+      return closure_0;
+    }
+    return _isNativeReflectConstruct();
+  } catch (err) {
   }
-  const result = _isNativeReflectConstruct();
 }
-const tmp2 = ((Component) => {
-  class Stop {
-    constructor() {
-      self = this;
-      tmp = Stop(this, apply);
-      length = arguments.length;
-      array = new Array(length);
-      for (let num = 0; num < length; num = num + 1) {
-        array[num] = arguments[num];
+const re9 = /\s+/;
+class SvgImage {
+  constructor() {
+    self = this;
+    tmp = _isNativeReflectConstruct(this, SvgImage);
+    tmp2 = __esModule;
+    obj = __esModule(SvgImage);
+    tmp3 = __esModule;
+    if (_isNativeReflectConstruct()) {
+      tmp7 = globalThis;
+      _Reflect = Reflect;
+      tmp8 = arguments;
+      constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
+    } else {
+      tmp4 = arguments;
+      tmp5 = arguments;
+      constructResult = obj(...arguments);
+    }
+    return tmp3(self, constructResult);
+  }
+}
+require("_inherits")(SvgImage, require("_isNativeReflectConstruct"));
+const items = [
+  {
+    key: "render",
+    value: function render() {
+      let height;
+      let href;
+      let preserveAspectRatio;
+      let tmp2;
+      let tmp3;
+      let width;
+      let x;
+      let y;
+      const self = this;
+      const props = this.props;
+      ({ preserveAspectRatio, href } = props);
+      ({ x, y, width, height } = props);
+      if (undefined === href) {
+        href = props.xlinkHref;
       }
-      items = [];
-      combined = items.concat(array);
-      obj = outer1_3(apply);
-      tmp3 = outer1_2;
-      if (outer1_5()) {
-        if (!combined) {
-          combined = [];
-        }
-        tmp5 = outer1_3;
-        constructResult = Reflect.construct(obj, combined, outer1_3(self).constructor);
+      if (preserveAspectRatio) {
+        let parts = preserveAspectRatio.trim().split(closure_9);
+        const str = preserveAspectRatio.trim();
       } else {
-        constructResult = obj.apply(self, combined);
+        parts = [];
       }
-      tmp3Result = tmp3(self, constructResult);
-      apply = tmp3Result;
-      tmp3Result.setNativeProps = () => {
-        const parent = tmp3Result.props.parent;
-        if (parent) {
-          parent.forceUpdate();
+      let obj = { x, y, width, height, onLoad: props.onLoad, meetOrSlice: null, align: null, src: null };
+      [tmp2, tmp3] = parts;
+      obj[5] = self(8544).meetOrSliceTypes[tmp3] || 0;
+      const tmp6 = self(8544).meetOrSliceTypes[tmp3] || 0;
+      obj[6] = self(8544).alignEnum[tmp2] || "xMidYMid";
+      let assetSource = null;
+      if (href) {
+        let tmp10 = href;
+        if (typeof href !== "init") {
+          obj = { uri: null };
+          obj[0] = href;
+          tmp10 = obj;
+        }
+        assetSource = Image.resolveAssetSource(tmp10);
+      }
+      obj[7] = assetSource;
+      obj = {
+        ref(arg0) {
+          return self.refMethod(arg0);
         }
       };
-      return tmp3Result;
+      const tmp7 = self(8544).alignEnum[tmp2] || "xMidYMid";
+      const tmp11 = importDefault(8603);
+      const merged = Object.assign(self(8546).withoutXY(this, props));
+      const merged1 = Object.assign(obj);
+      return <tmp11 ref={function ref(arg0) {
+        return self.refMethod(arg0);
+      }} />;
     }
   }
-  callback2(Stop, Component);
-  let items = [
-    {
-      key: "render",
-      value: function render() {
-        return null;
-      }
-    }
-  ];
-  return callback(Stop, items);
-})(require("result").Component);
-tmp2.displayName = "Stop";
+];
+const importDefaultResultResult = importDefaultResult(SvgImage, items);
+importDefaultResultResult.displayName = "Image";
+importDefaultResultResult.defaultProps = { x: 0, y: 0, width: 0, height: 0, preserveAspectRatio: "xMidYMid meet" };
 
-export default tmp2;
+export default importDefaultResultResult;

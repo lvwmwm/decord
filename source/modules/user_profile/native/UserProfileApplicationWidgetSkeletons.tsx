@@ -1,27 +1,27 @@
-// Module ID: 12134
-// Function ID: 94902
+// Module ID: 12158
+// Function ID: 12159
 // Name: ImageSkeleton
-// Dependencies: [31, 27, 33, 4165, 689, 4161, 2]
+// Dependencies: [19, 17, 21, 4189, 712, 4185, 2]
 // Exports: ImageSkeleton, TextSkeleton
 
-// Module 12134 (ImageSkeleton)
-import "result";
+// Module 12158 (ImageSkeleton)
+import "noop";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
 const require = arg1;
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { borderRadius: require("_createForOfIteratorHelperLoose").radii.sm, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_MOD_NORMAL };
-_createForOfIteratorHelperLoose.skeleton = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+createCacheKey = { skeleton: null };
+createCacheKey = { borderRadius: require("Themes").radii.sm, backgroundColor: require("Themes").colors.BACKGROUND_MOD_NORMAL };
+createCacheKey[0] = createCacheKey;
+createCacheKey = createCacheKey.createStyles(createCacheKey);
 const result = require("jsxProd").fileFinishedImporting("modules/user_profile/native/UserProfileApplicationWidgetSkeletons.tsx");
 
 export const ImageSkeleton = function ImageSkeleton(style) {
-  const obj = {};
-  const items = [_createForOfIteratorHelperLoose().skeleton, style.style];
-  obj.style = items;
-  return <View />;
+  const obj = { style: null };
+  const items = [createCacheKey().skeleton, style.style];
+  obj[0] = items;
+  return <View style={null} />;
 };
 export const APPROX_CHAR_WIDTH_RATIO = 0.46;
 export const TextSkeleton = function TextSkeleton(widthChars) {
@@ -29,9 +29,7 @@ export const TextSkeleton = function TextSkeleton(widthChars) {
   if (num === undefined) {
     num = 15;
   }
-  const tmp2 = require(4161) /* Text */.TextStyleSheet[widthChars.variant];
-  const style = [_createForOfIteratorHelperLoose().skeleton, ];
-  const obj = { width: 0.46 * tmp2.fontSize * num, height: 0.8 * tmp2.lineHeight };
-  style[1] = obj;
+  const tmp2 = require(4185) /* Text */.TextStyleSheet[widthChars.variant];
+  const style = [createCacheKey().skeleton, { width: 0.46 * tmp2.fontSize * num, height: 0.8 * tmp2.lineHeight }];
   return <View style={style} />;
 };

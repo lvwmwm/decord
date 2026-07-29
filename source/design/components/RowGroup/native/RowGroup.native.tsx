@@ -1,48 +1,46 @@
-// Module ID: 13093
-// Function ID: 101137
+// Module ID: 13116
+// Function ID: 13117
 // Name: RowGroup
-// Dependencies: [31, 27, 33, 4165, 689, 4576, 5536, 2]
+// Dependencies: [19, 17, 21, 4189, 712, 4598, 5554, 2]
 // Exports: RowGroup
 
-// Module 13093 (RowGroup)
-import "result";
+// Module 13116 (RowGroup)
+import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_3;
-let closure_4;
+let c3;
+let c4;
 const require = arg1;
-({ jsx: closure_3, jsxs: closure_4 } = jsxProd);
-_createForOfIteratorHelperLoose = { container: { overflow: "hidden" } };
-_createForOfIteratorHelperLoose = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.TABLEROW_BACKGROUND_DEFAULT, borderRadius: require("_createForOfIteratorHelperLoose").modules.mobile.TABLE_ROW_BORDER_RADIUS, padding: require("_createForOfIteratorHelperLoose").modules.mobile.TABLE_ROW_PADDING };
-_createForOfIteratorHelperLoose.content = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+({ jsx: c3, jsxs: c4 } = jsxProd);
+createCacheKey = { container: { overflow: "hidden" }, content: null };
+createCacheKey = { backgroundColor: require("Themes").colors.TABLEROW_BACKGROUND_DEFAULT, borderRadius: require("Themes").modules.mobile.TABLE_ROW_BORDER_RADIUS, padding: require("Themes").modules.mobile.TABLE_ROW_PADDING };
+createCacheKey[1] = createCacheKey;
+createCacheKey = createCacheKey.createStyles(createCacheKey);
 const result = require("jsxProd").fileFinishedImporting("design/components/RowGroup/native/RowGroup.native.tsx");
 
 export const RowGroup = function RowGroup(children) {
   let title;
   let trailing;
   ({ title, trailing } = children);
-  const tmp = _createForOfIteratorHelperLoose();
-  let obj = { style: tmp.container };
-  let tmp5Result = null != title;
-  if (!tmp5Result) {
-    tmp5Result = null != trailing;
-  }
-  if (tmp5Result) {
-    obj = { direction: "horizontal", spacing: 4 };
-    let tmp8 = null != title;
-    if (tmp8) {
-      obj = { title };
-      tmp8 = callback(require(5536) /* TableRowGroupTitle */.TableRowGroupTitle, obj);
+  const tmp = createCacheKey();
+  let obj = { style: tmp.container, children: null };
+  let tmp2Result = null != title || null != trailing;
+  if (tmp2Result) {
+    let tmp7 = null != title;
+    if (tmp7) {
+      obj = { title: null };
+      obj[0] = title;
+      tmp7 = callback(tmp5(5554).TableRowGroupTitle, obj);
     }
-    const items = [tmp8, trailing];
-    obj.children = items;
-    tmp5Result = closure_4(require(4576) /* Stack */.Stack, obj);
-    const tmp5 = closure_4;
+    obj = { direction: "horizontal", spacing: 4, children: null };
+    const items = [tmp7, trailing];
+    obj[2] = items;
+    tmp2Result = tmp2(require(4598) /* Stack */.Stack, obj);
+    tmp5 = require;
   }
-  const items1 = [tmp5Result, callback(View, { style: tmp.content, children: children.children })];
-  obj.children = items1;
+  const items1 = [tmp2Result, callback(View, { style: tmp.content, children: children.children })];
+  obj[1] = items1;
   return closure_4(View, obj);
 };

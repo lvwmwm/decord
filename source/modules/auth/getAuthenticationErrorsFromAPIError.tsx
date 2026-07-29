@@ -1,44 +1,39 @@
-// Module ID: 9172
-// Function ID: 71892
+// Module ID: 9196
+// Function ID: 9197
 // Name: getAuthenticationErrorsFromAPIError
 // Dependencies: [2]
 // Exports: getAuthenticationErrorsFromAPIError, getAuthenticationErrorsFromV6OrEarlierAPIError
 
-// Module 9172 (getAuthenticationErrorsFromAPIError)
+// Module 9196 (getAuthenticationErrorsFromAPIError)
 const result = require("set").fileFinishedImporting("modules/auth/getAuthenticationErrorsFromAPIError.tsx");
 
-export const getAuthenticationErrorsFromAPIError = function getAuthenticationErrorsFromAPIError(error) {
-  let length;
-  const obj = { error_code: error.code };
-  if (null != error.errors) {
+export const getAuthenticationErrorsFromAPIError = function getAuthenticationErrorsFromAPIError(c6) {
+  const obj = { error_code: c6.code };
+  if (null != c6.errors) {
     const _Object = Object;
-    const keys = Object.keys(error.errors);
-    let num = 0;
-    if (0 < keys.length) {
-      do {
-        let tmp2 = keys[num];
-        let items = [error.getFirstFieldErrorMessage(tmp2)];
-        obj[tmp2] = items;
-        num = num + 1;
-        length = keys.length;
-      } while (num < length);
+    const keys = Object.keys(c6.errors);
+    for (const item10017 of keys) {
+      let items = [arg0.getFirstFieldErrorMessage(item10017)];
+      obj[item10017] = items;
+      continue;
     }
     return obj;
   } else {
-    obj.message = error.message;
-    if (null != error.retryAfter) {
-      obj.retry_after = error.retryAfter;
+    obj.message = c6.message;
+    if (null != c6.retryAfter) {
+      obj.retry_after = c6.retryAfter;
     }
     return obj;
   }
 };
-export const getAuthenticationErrorsFromV6OrEarlierAPIError = function getAuthenticationErrorsFromV6OrEarlierAPIError(error) {
-  if (Object.keys(error.fields).length > 0) {
-    return error.fields;
+export const getAuthenticationErrorsFromV6OrEarlierAPIError = function getAuthenticationErrorsFromV6OrEarlierAPIError(closure_4) {
+  if (Object.keys(closure_4.fields).length > 0) {
+    return closure_4.fields;
   } else {
-    const obj = { message: error.message };
-    if (null != error.retryAfter) {
-      obj.retry_after = error.retryAfter;
+    const obj = { message: null };
+    obj[0] = closure_4.message;
+    if (null != closure_4.retryAfter) {
+      obj.retry_after = closure_4.retryAfter;
     }
     return obj;
   }

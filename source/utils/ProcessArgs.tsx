@@ -1,107 +1,82 @@
-// Module ID: 4712
-// Function ID: 40876
-// Name: ProcessArgs
-// Dependencies: [6, 7, 3776, 2]
+// Module ID: 4734
+// Function ID: 4735
+// Name: get
+// Dependencies: [3800, 2]
 
-// Module 4712 (ProcessArgs)
-import _classCallCheck from "_classCallCheck";
-import _defineProperties from "_defineProperties";
-
-const tmp2 = (() => {
-  class ProcessArgs {
-    constructor() {
-      tmp = outer1_2(this, ProcessArgs);
-      return;
+// Module 4734 (get)
+let prototype;
+prototype = function ProcessArgs() {
+  return Object.create(new.target.prototype);
+}.prototype;
+prototype["get"] = function get() {
+  if (null == prototype.cached) {
+    const tmp4 = importDefault(3800);
+    let mainArgvSync;
+    if (tmp4 != null) {
+      const processUtils = tmp4.processUtils;
+      if (processUtils != null) {
+        const getMainArgvSync = processUtils.getMainArgvSync;
+        if (getMainArgvSync != null) {
+          mainArgvSync = getMainArgvSync();
+        }
+      }
     }
+    let tmp5 = null != mainArgvSync;
+    if (tmp5) {
+      tmp5 = mainArgvSync.length > 1;
+    }
+    if (tmp5) {
+      mainArgvSync.shift();
+    }
+    if (mainArgvSync == null) {
+      mainArgvSync = [];
+    }
+    tmp.cached = mainArgvSync;
   }
-  let obj = {
-    key: "get",
-    value() {
-      if (null == ProcessArgs.cached) {
-        let mainArgvSync;
-        if (null != ProcessArgs(outer1_1[2])) {
-          const processUtils = ProcessArgs(outer1_1[2]).processUtils;
-          if (null != processUtils) {
-            if (null != processUtils.getMainArgvSync) {
-              mainArgvSync = processUtils.getMainArgvSync();
-            }
-          }
+  return prototype.cached;
+};
+prototype["contains"] = function contains(arg0) {
+  const value = prototype.get();
+  return value.includes(arg0);
+};
+prototype["isEnvVariableTrue"] = function isEnvVariableTrue(DISCORD_DISALLOW_POPUPS) {
+  if (undefined === importDefault(3800)) {
+    return false;
+  } else {
+    const tmpResult = tmp(3800);
+    let tmp5;
+    if (tmpResult != null) {
+      const _process = tmpResult.process;
+      if (_process != null) {
+        const env = _process.env;
+        if (env != null) {
+          tmp5 = env[DISCORD_DISALLOW_POPUPS];
         }
-        let tmp3 = null != mainArgvSync;
-        if (tmp3) {
-          tmp3 = mainArgvSync.length > 1;
-        }
-        if (tmp3) {
-          mainArgvSync.shift();
-        }
-        if (null == mainArgvSync) {
-          mainArgvSync = [];
-        }
-        ProcessArgs.cached = mainArgvSync;
-        const tmp5 = ProcessArgs;
       }
-      return ProcessArgs.cached;
     }
-  };
-  const items = [obj, , , , , ];
-  obj = {
-    key: "contains",
-    value(arg0) {
-      const value = ProcessArgs.get();
-      return value.includes(arg0);
-    }
-  };
-  items[1] = obj;
-  obj = {
-    key: "isEnvVariableTrue",
-    value(arg0) {
-      if (undefined === ProcessArgs(outer1_1[2])) {
+    if ("1" !== tmp5) {
+      if ("true" !== tmp5) {
         return false;
-      } else {
-        let tmp4;
-        if (null != ProcessArgs(outer1_1[2])) {
-          const _process = ProcessArgs(outer1_1[2]).process;
-          if (null != _process) {
-            const env = _process.env;
-            if (null != env) {
-              tmp4 = env[arg0];
-            }
-          }
-        }
-        if ("1" !== tmp4) {
-          if ("true" !== tmp4) {
-            return false;
-          }
-        }
-        return true;
       }
     }
-  };
-  items[2] = obj;
-  items[3] = {
-    key: "isDisallowPopupsSet",
-    value() {
-      let tmp = !ProcessArgs.contains("--disallow-popups");
-      if (tmp) {
-        tmp = !ProcessArgs.isEnvVariableTrue("DISCORD_DISALLOW_POPUPS");
-      }
-      return !tmp;
-    }
-  };
-  items[4] = {
-    key: "isDiscordTestSet",
-    value() {
-      return ProcessArgs.isEnvVariableTrue("DISCORD_TEST");
-    }
-  };
-  items[5] = {
-    key: "isDiscordGatewayPlaintextSet",
-    value() {
-      return false;
-    }
-  };
-  return callback(ProcessArgs, null, items);
-})();
+    return true;
+  }
+  tmp = importDefault;
+};
+prototype["isDisallowPopupsSet"] = function isDisallowPopupsSet() {
+  const hasItem = prototype.contains("--disallow-popups");
+  let tmp2 = !hasItem;
+  if (!hasItem) {
+    tmp2 = !prototype.isEnvVariableTrue("DISCORD_DISALLOW_POPUPS");
+  }
+  return !tmp2;
+};
+prototype["isDiscordTestSet"] = function isDiscordTestSet() {
+  return prototype.isEnvVariableTrue("DISCORD_TEST");
+};
+prototype["isDiscordGatewayPlaintextSet"] = function isDiscordGatewayPlaintextSet() {
+  return false;
+};
 const result = require("set").fileFinishedImporting("utils/ProcessArgs.tsx");
 
-export const ProcessArgs = tmp2;
+export const ProcessArgs = prototype;

@@ -1,59 +1,66 @@
-// Module ID: 13579
-// Function ID: 104325
-// Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 1850, 13227, 13580, 4565, 2]
+// Module ID: 13602
+// Function ID: 13603
+// Name: updateEnabledState
+// Dependencies: [1874, 13248, 13603, 4368, 2]
 
-// Module 13579 (_isNativeReflectConstruct)
-import apexExperiment from "apexExperiment";
-import enforcing from "enforcing";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import tmp2 from "LifecycleManager";
+// Module 13602 (updateEnabledState)
+import mergeGuildAvatar from "mergeGuildAvatar";
+import "initialize";
 
 const require = arg1;
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
-  }
-  const result = _isNativeReflectConstruct();
-}
 function updateEnabledState() {
-  currentUser = currentUser.getCurrentUser();
+  const currentUser = mergeGuildAvatar.getCurrentUser();
   let isStaffResult;
-  if (null != currentUser) {
+  if (currentUser != null) {
     isStaffResult = currentUser.isStaff();
   }
   let result = true === isStaffResult;
   if (!result) {
-    result = require(13227) /* apexExperiment */.isZoomedExperimentEnabled();
-    const obj2 = require(13227) /* apexExperiment */;
+    result = require(13248) /* apexExperiment */.isZoomedExperimentEnabled();
+    const obj2 = require(13248) /* apexExperiment */;
   }
   if (result) {
-    if (!c9) {
-      importDefault(13580).enableTouchLogging();
-      c9 = true;
-      const obj3 = importDefault(13580);
+    if (!c4) {
+      try {
+        importDefault(13603).enableTouchLogging();
+        c4 = true;
+        const obj3 = importDefault(13603);
+      } catch (err) {
+        c4 = false;
+      }
     }
   }
   if (!result) {
-    if (c9) {
-      importDefault(13580).disableTouchLogging();
-      c9 = false;
-      while (true) {
-        let tmp13 = __exception;
-        continue;
+    if (c4) {
+      try {
+        importDefault(13603).disableTouchLogging();
+        c4 = false;
+        const obj4 = importDefault(13603);
+      } catch (err) {
       }
-      const obj4 = importDefault(13580);
     }
   }
 }
-let c9 = false;
-tmp2 = new tmp2();
-let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/touch_analytics/TouchEventAnalyticsManager.android.tsx");
+let c4 = false;
+class TouchEventAnalyticsManager extends tmp2 {
+}
+const prototype = TouchEventAnalyticsManager.prototype;
+prototype["_initialize"] = function _initialize() {
+  updateEnabledState();
+  mergeGuildAvatar.addChangeListener(updateEnabledState);
+};
+prototype["_terminate"] = function _terminate() {
+  mergeGuildAvatar.removeChangeListener(updateEnabledState);
+  if (c4) {
+    try {
+      importDefault(13603).disableTouchLogging();
+      c4 = false;
+      const obj = importDefault(13603);
+    } catch (err) {
+    }
+  }
+};
+const touchEventAnalyticsManager = new TouchEventAnalyticsManager();
+let result = require("enforcing").fileFinishedImporting("modules/touch_analytics/TouchEventAnalyticsManager.android.tsx");
 
-export default tmp2;
+export default touchEventAnalyticsManager;

@@ -1,39 +1,46 @@
-// Module ID: 15623
-// Function ID: 120293
+// Module ID: 15658
+// Function ID: 15659
 // Name: isGuildEligibleForStageChannels
-// Dependencies: [1838, 653, 566, 2]
-// Exports: useGuildEligibleForStageChannels
+// Dependencies: [1862, 676, 589, 2]
+// Exports: isGuildEligibleForStageChannels, useGuildEligibleForStageChannels
 
-// Module 15623 (isGuildEligibleForStageChannels)
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+// Module 15658 (isGuildEligibleForStageChannels)
+import createGuildRecordFromRust from "createGuildRecordFromRust";
 import { GuildFeatures } from "ME";
 
 const require = arg1;
-function isGuildEligibleForStageChannels(id) {
+const result = require("initialize").fileFinishedImporting("modules/stage_channels/useGuildEligibleForStageChannels.tsx");
+
+export const isGuildEligibleForStageChannels = function isGuildEligibleForStageChannels(id) {
   let obj;
   let tmp = arg1;
   if (arg1 === undefined) {
-    const items = [_createForOfIteratorHelperLoose];
+    const items = [createGuildRecordFromRust];
     tmp = items;
   }
   [obj] = tmp;
   const guild = obj.getGuild(id);
   let hasItem;
-  if (null != guild) {
+  if (guild != null) {
     const features = guild.features;
     hasItem = features.has(GuildFeatures.COMMUNITY);
   }
   return Boolean(hasItem);
-}
-const result = require("initialize").fileFinishedImporting("modules/stage_channels/useGuildEligibleForStageChannels.tsx");
-
-export { isGuildEligibleForStageChannels };
+};
 export const useGuildEligibleForStageChannels = function useGuildEligibleForStageChannels(arg0) {
   const _require = arg0;
-  let items = [_createForOfIteratorHelperLoose];
+  let items = [createGuildRecordFromRust];
   const items1 = [arg0];
-  return _require(566).useStateFromStores(items, () => {
+  return _require(589).useStateFromStores(items, () => {
+    let obj;
     const items = [outer1_2];
-    return outer1_4(closure_0, items);
+    [obj] = items;
+    const guild = obj.getGuild(closure_0);
+    let hasItem;
+    if (guild != null) {
+      const features = guild.features;
+      hasItem = features.has(outer1_3.COMMUNITY);
+    }
+    return Boolean(hasItem);
   }, items1);
 };

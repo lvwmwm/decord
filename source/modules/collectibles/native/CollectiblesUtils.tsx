@@ -1,93 +1,159 @@
-// Module ID: 8692
-// Function ID: 68838
-// Name: _createForOfIteratorHelperLoose
-// Dependencies: [653, 5651, 3824, 5654, 5792, 3811, 5791, 8693, 8694, 2]
-// Exports: createOrbProfileBadge, filterGPlaySyncedCategories, filterHiddenCategories, getCollectibleGoogleSkuId, getFormattedPriceForCollectiblesProduct
+// Module ID: 8716
+// Function ID: 8717
+// Name: hasAtLeastOneGPlaySynced
+// Dependencies: [676, 5669, 3848, 5672, 5810, 3835, 5809, 8717, 8718, 2]
+// Exports: createOrbProfileBadge, extractPriceByPurchaseTypes, filterGPlaySyncedCategories, filterHiddenCategories, getCollectibleGoogleSkuId, getFormattedPriceForCollectiblesProduct, isGPlaySynced
 
-// Module 8692 (_createForOfIteratorHelperLoose)
+// Module 8716 (hasAtLeastOneGPlaySynced)
 import { PriceSetAssignmentPurchaseTypes as closure_3 } from "ME";
 
-function _createForOfIteratorHelperLoose(iterable) {
-  let closure_0 = iterable;
-  iterable = "undefined" !== typeof Symbol;
-  if (iterable) {
-    const _Symbol = Symbol;
-    iterable = iterable[Symbol.iterator];
-  }
-  if (!iterable) {
-    iterable = iterable[Symbol.iterator];
-  }
-  if (iterable) {
-    const iter = iterable.call(iterable);
-    const next = iter.next;
-    return next.bind(iter);
-  } else {
-    const _Array = Array;
-    let tmp = iterable;
-    if (!Array.isArray(iterable)) {
-      let tmp2;
-      if (iterable) {
-        if ("string" === typeof iterable) {
-          tmp2 = _arrayLikeToArray(iterable, undefined);
-        } else {
-          const toString = {}.toString;
-          const substr = toString.call(iterable).slice(8, -1);
-          let name = substr;
-          if (tmp3) {
-            name = iterable.constructor.name;
-          }
-          if ("Map" !== name) {
-            if ("Set" !== name) {
-              if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(iterable, undefined);
-              } else {
-                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+function hasAtLeastOneGPlaySynced(nextResult) {
+  const products = nextResult.products;
+  return products.filter((variants) => {
+    if (obj.getIsVariantProduct(variants)) {
+      variants = variants.variants;
+      let everyResult = variants.every((variants) => {
+        if (obj.getIsVariantProduct(variants)) {
+          variants = variants.variants;
+          let everyResult = variants.every((variants) => {
+            if (obj.getIsVariantProduct(variants)) {
+              variants = variants.variants;
+              let everyResult = variants.every((variants) => {
+                if (obj.getIsVariantProduct(variants)) {
+                  variants = variants.variants;
+                  let everyResult = variants.every(() => { ... });
+                } else {
+                  const googleSkuIds = variants.googleSkuIds;
+                  let tmp4;
+                  if (googleSkuIds != null) {
+                    tmp4 = googleSkuIds[closure_3.MOBILE];
+                  }
+                  const product = callback2(tmp[3]).getProduct(tmp4);
+                  const obj2 = callback2(tmp[3]);
+                  const tmp2 = callback2;
+                  const googleSkuIds2 = variants.googleSkuIds;
+                  let tmp7;
+                  if (googleSkuIds2 != null) {
+                    tmp7 = googleSkuIds2[closure_3.MOBILE_PREMIUM_TIER_2];
+                  }
+                  everyResult = null != product && null != callback2(tmp[3]).getProduct(tmp7);
+                  const tmp2Result = callback2(tmp[3]);
+                }
+                return everyResult;
+              });
+            } else {
+              const googleSkuIds = variants.googleSkuIds;
+              let tmp4;
+              if (googleSkuIds != null) {
+                tmp4 = googleSkuIds[closure_3.MOBILE];
               }
+              const product = callback2(tmp[3]).getProduct(tmp4);
+              const obj2 = callback2(tmp[3]);
+              const tmp2 = callback2;
+              const googleSkuIds2 = variants.googleSkuIds;
+              let tmp7;
+              if (googleSkuIds2 != null) {
+                tmp7 = googleSkuIds2[closure_3.MOBILE_PREMIUM_TIER_2];
+              }
+              everyResult = null != product && null != callback2(tmp[3]).getProduct(tmp7);
+              const tmp2Result = callback2(tmp[3]);
             }
-            tmp2 = arr;
+            return everyResult;
+          });
+        } else {
+          const googleSkuIds = variants.googleSkuIds;
+          let tmp4;
+          if (googleSkuIds != null) {
+            tmp4 = googleSkuIds[closure_3.MOBILE];
           }
-          const _Array2 = Array;
-          arr = Array.from(iterable);
-          const callResult = toString.call(iterable);
-          tmp3 = "Object" === substr && iterable.constructor;
+          const product = callback2(tmp[3]).getProduct(tmp4);
+          const obj2 = callback2(tmp[3]);
+          const tmp2 = callback2;
+          const googleSkuIds2 = variants.googleSkuIds;
+          let tmp7;
+          if (googleSkuIds2 != null) {
+            tmp7 = googleSkuIds2[closure_3.MOBILE_PREMIUM_TIER_2];
+          }
+          everyResult = null != product && null != callback2(tmp[3]).getProduct(tmp7);
+          const tmp2Result = callback2(tmp[3]);
         }
+        return everyResult;
+      });
+    } else {
+      let googleSkuIds = variants.googleSkuIds;
+      let tmp4;
+      if (googleSkuIds != null) {
+        tmp4 = googleSkuIds[closure_3.MOBILE];
       }
-      tmp = tmp2;
-      if (!tmp2) {
-        const _TypeError = TypeError;
-        const typeError = new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
-        throw typeError;
+      let product = callback2(tmp[3]).getProduct(tmp4);
+      let obj2 = callback2(tmp[3]);
+      let tmp2 = callback2;
+      let googleSkuIds2 = variants.googleSkuIds;
+      let tmp7;
+      if (googleSkuIds2 != null) {
+        tmp7 = googleSkuIds2[closure_3.MOBILE_PREMIUM_TIER_2];
       }
+      everyResult = null != product && null != callback2(tmp[3]).getProduct(tmp7);
+      let tmp2Result = callback2(tmp[3]);
     }
-    if (tmp) {
-      closure_0 = tmp;
+    return everyResult;
+  }).length > 0;
+}
+let result = require("isPremiumGiftingSupported").fileFinishedImporting("modules/collectibles/native/CollectiblesUtils.tsx");
+
+export const getFormattedPriceForCollectiblesProduct = function getFormattedPriceForCollectiblesProduct(googleSkuIds) {
+  if (arg2) {
+    if (arg1) {
+      let MOBILE = tmp.MOBILE_PREMIUM_TIER_2;
+      let tmp3 = tmp;
+    } else {
+      MOBILE = tmp.MOBILE;
+      tmp3 = tmp;
     }
-    let c1 = 0;
-    return () => {
-      if (closure_1 >= length.length) {
-        let obj = { done: true };
+  } else {
+    if (arg1) {
+      let DEFAULT = tmp.PREMIUM_TIER_2;
+      let tmp2 = tmp;
+    } else {
+      DEFAULT = tmp.DEFAULT;
+      tmp2 = tmp;
+    }
+    let obj = require(3848) /* isPremiumGiftingSupported */;
+    if (obj.isGooglePlayBillingSupported()) {
+      if (DEFAULT === tmp2.MOBILE) {
+        googleSkuIds = googleSkuIds.googleSkuIds;
+        let tmp12;
+        if (googleSkuIds != null) {
+          tmp12 = googleSkuIds[DEFAULT];
+        }
+        const product = importDefault(5672).getProduct(tmp12);
+        let tmp14;
+        if (null != product) {
+          obj = { amount: null, currency: null, priceString: null, tax: 0, taxInclusive: false };
+          ({ price: obj4[0], currencyCode: obj4[1], priceString: obj4[2] } = product);
+          tmp14 = obj;
+        }
+        let result = tmp14;
+        const obj3 = importDefault(5672);
       } else {
-        obj = { done: false };
-        closure_1 = tmp3 + 1;
-        obj.value = length[+closure_1];
+        result = null;
       }
-      return obj;
-    };
+    } else {
+      let tmp7Result = tmp7(5810);
+      result = tmp7Result.extractPriceByPurchaseTypes(googleSkuIds, DEFAULT);
+    }
+    if (null == result) {
+      return null;
+    } else if (null != result.priceString) {
+      let priceString = result.priceString;
+    } else {
+      tmp7Result = tmp7(5669);
+      priceString = tmp7Result.formatPrice(result.amount, result.currency);
+    }
   }
-}
-function _arrayLikeToArray(arg0, arg1) {
-  let length;
-  if (tmp) {
-    length = arg0.length;
-  }
-  const ArrayResult = Array(length);
-  for (let num = 0; num < length; num = num + 1) {
-    ArrayResult[num] = arg0[num];
-  }
-  return ArrayResult;
-}
-function extractPriceByPurchaseTypes(googleSkuIds) {
-  let obj = require(3824) /* isPremiumGiftingSupported */;
+};
+export const extractPriceByPurchaseTypes = function extractPriceByPurchaseTypes(googleSkuIds) {
+  let obj = require(3848) /* isPremiumGiftingSupported */;
   if (obj.isGooglePlayBillingSupported()) {
     if (arg1 !== closure_3.MOBILE) {
       if (arg1 !== closure_3.MOBILE_PREMIUM_TIER_2) {
@@ -95,102 +161,166 @@ function extractPriceByPurchaseTypes(googleSkuIds) {
       }
     }
     googleSkuIds = googleSkuIds.googleSkuIds;
-    let tmp8;
-    if (null != googleSkuIds) {
-      tmp8 = googleSkuIds[arg1];
+    let tmp5;
+    if (googleSkuIds != null) {
+      tmp5 = googleSkuIds[arg1];
     }
-    const product = importDefault(5654).getProduct(tmp8);
-    let tmp10;
+    const product = importDefault(5672).getProduct(tmp5);
+    let tmp7;
     if (null != product) {
-      obj = {};
-      ({ price: obj4.amount, currencyCode: obj4.currency, priceString: obj4.priceString } = product);
-      obj.tax = 0;
-      obj.taxInclusive = false;
-      tmp10 = obj;
+      obj = { amount: null, currency: null, priceString: null, tax: 0, taxInclusive: false };
+      ({ price: obj4[0], currencyCode: obj4[1], priceString: obj4[2] } = product);
+      tmp7 = obj;
     }
-    return tmp10;
+    return tmp7;
   } else {
-    return require(5792) /* getPriceForCollectiblesProduct */.extractPriceByPurchaseTypes(googleSkuIds, arg1);
+    return tmp(5810).extractPriceByPurchaseTypes(googleSkuIds, arg1);
   }
-}
-function isGPlaySynced(variants) {
-  if (obj.getIsVariantProduct(variants)) {
-    variants = variants.variants;
-    return variants.every((arg0) => outer1_7(arg0));
-  } else {
-    const googleSkuIds = variants.googleSkuIds;
-    let tmp4;
-    if (null != googleSkuIds) {
-      tmp4 = googleSkuIds[closure_3.MOBILE];
-    }
-    const product = importDefault(5654).getProduct(tmp4);
-    const obj2 = importDefault(5654);
-    const googleSkuIds2 = variants.googleSkuIds;
-    let tmp9;
-    if (null != googleSkuIds2) {
-      tmp9 = googleSkuIds2[closure_3.MOBILE_PREMIUM_TIER_2];
-    }
-    const obj3 = importDefault(5654);
-    return null != product && null != importDefault(5654).getProduct(tmp9);
-  }
-  obj = require(5791) /* getProductOrbPrice */;
-}
-function hasAtLeastOneGPlaySynced(value) {
-  const products = value.products;
-  return products.filter((arg0) => outer1_7(arg0)).length > 0;
-}
-const result = require("isPremiumGiftingSupported").fileFinishedImporting("modules/collectibles/native/CollectiblesUtils.tsx");
-
-export const getFormattedPriceForCollectiblesProduct = function getFormattedPriceForCollectiblesProduct(arg0, arg1, arg2) {
-  if (!arg2) {
-    const tmpResult = tmp(arg0, arg1 ? tmp2.PREMIUM_TIER_2 : tmp2.DEFAULT);
-    if (null == tmpResult) {
-      return null;
-    } else if (null != tmpResult.priceString) {
-      let priceString = tmpResult.priceString;
-    } else {
-      priceString = require(5651) /* formatSingleCurrencyPrice */.formatPrice(tmpResult.amount, tmpResult.currency);
-      const obj = require(5651) /* formatSingleCurrencyPrice */;
-    }
-  }
+  tmp = require;
 };
-export { extractPriceByPurchaseTypes };
 export const getCollectibleGoogleSkuId = function getCollectibleGoogleSkuId(closure_0, stateFromStores) {
   if (null == stateFromStores) {
     return null;
   } else {
-    const obj = importDefault(3811);
+    const obj = importDefault(3835);
     const googleSkuIds = closure_0.googleSkuIds;
     let tmp5;
-    if (null != googleSkuIds) {
+    if (googleSkuIds != null) {
       tmp5 = googleSkuIds[obj.canUseShopDiscounts(obj, stateFromStores) ? tmp3.MOBILE_PREMIUM_TIER_2 : tmp3.MOBILE];
     }
-    let tmp6 = null;
-    if (null != tmp5) {
-      tmp6 = tmp5;
+    if (tmp5 == null) {
+      tmp5 = null;
     }
-    return tmp6;
+    return tmp5;
   }
 };
-export { isGPlaySynced };
+export const isGPlaySynced = function isGPlaySynced(variants) {
+  if (obj.getIsVariantProduct(variants)) {
+    variants = variants.variants;
+    return variants.every((variants) => {
+      if (obj.getIsVariantProduct(variants)) {
+        variants = variants.variants;
+        let everyResult = variants.every((variants) => {
+          if (obj.getIsVariantProduct(variants)) {
+            variants = variants.variants;
+            let everyResult = variants.every((variants) => {
+              if (obj.getIsVariantProduct(variants)) {
+                variants = variants.variants;
+                let everyResult = variants.every((variants) => {
+                  if (obj.getIsVariantProduct(variants)) {
+                    variants = variants.variants;
+                    let everyResult = variants.every(() => { ... });
+                  } else {
+                    const googleSkuIds = variants.googleSkuIds;
+                    let tmp4;
+                    if (googleSkuIds != null) {
+                      tmp4 = googleSkuIds[closure_3.MOBILE];
+                    }
+                    const product = callback2(tmp[3]).getProduct(tmp4);
+                    const obj2 = callback2(tmp[3]);
+                    const tmp2 = callback2;
+                    const googleSkuIds2 = variants.googleSkuIds;
+                    let tmp7;
+                    if (googleSkuIds2 != null) {
+                      tmp7 = googleSkuIds2[closure_3.MOBILE_PREMIUM_TIER_2];
+                    }
+                    everyResult = null != product && null != callback2(tmp[3]).getProduct(tmp7);
+                    const tmp2Result = callback2(tmp[3]);
+                  }
+                  return everyResult;
+                });
+              } else {
+                const googleSkuIds = variants.googleSkuIds;
+                let tmp4;
+                if (googleSkuIds != null) {
+                  tmp4 = googleSkuIds[closure_3.MOBILE];
+                }
+                const product = callback2(tmp[3]).getProduct(tmp4);
+                const obj2 = callback2(tmp[3]);
+                const tmp2 = callback2;
+                const googleSkuIds2 = variants.googleSkuIds;
+                let tmp7;
+                if (googleSkuIds2 != null) {
+                  tmp7 = googleSkuIds2[closure_3.MOBILE_PREMIUM_TIER_2];
+                }
+                everyResult = null != product && null != callback2(tmp[3]).getProduct(tmp7);
+                const tmp2Result = callback2(tmp[3]);
+              }
+              return everyResult;
+            });
+          } else {
+            const googleSkuIds = variants.googleSkuIds;
+            let tmp4;
+            if (googleSkuIds != null) {
+              tmp4 = googleSkuIds[closure_3.MOBILE];
+            }
+            const product = callback2(tmp[3]).getProduct(tmp4);
+            const obj2 = callback2(tmp[3]);
+            const tmp2 = callback2;
+            const googleSkuIds2 = variants.googleSkuIds;
+            let tmp7;
+            if (googleSkuIds2 != null) {
+              tmp7 = googleSkuIds2[closure_3.MOBILE_PREMIUM_TIER_2];
+            }
+            everyResult = null != product && null != callback2(tmp[3]).getProduct(tmp7);
+            const tmp2Result = callback2(tmp[3]);
+          }
+          return everyResult;
+        });
+      } else {
+        const googleSkuIds = variants.googleSkuIds;
+        let tmp4;
+        if (googleSkuIds != null) {
+          tmp4 = googleSkuIds[closure_3.MOBILE];
+        }
+        const product = callback2(tmp[3]).getProduct(tmp4);
+        const obj2 = callback2(tmp[3]);
+        const tmp2 = callback2;
+        const googleSkuIds2 = variants.googleSkuIds;
+        let tmp7;
+        if (googleSkuIds2 != null) {
+          tmp7 = googleSkuIds2[closure_3.MOBILE_PREMIUM_TIER_2];
+        }
+        everyResult = null != product && null != callback2(tmp[3]).getProduct(tmp7);
+        const tmp2Result = callback2(tmp[3]);
+      }
+      return everyResult;
+    });
+  } else {
+    const googleSkuIds = variants.googleSkuIds;
+    let tmp4;
+    if (googleSkuIds != null) {
+      tmp4 = googleSkuIds[closure_3.MOBILE];
+    }
+    const product = importDefault(5672).getProduct(tmp4);
+    const obj2 = importDefault(5672);
+    const tmp2 = importDefault;
+    const googleSkuIds2 = variants.googleSkuIds;
+    let tmp7;
+    if (googleSkuIds2 != null) {
+      tmp7 = googleSkuIds2[closure_3.MOBILE_PREMIUM_TIER_2];
+    }
+    const tmp2Result = importDefault(5672);
+    return null != product && null != importDefault(5672).getProduct(tmp7);
+  }
+  obj = require(5809) /* getProductOrbPrice */;
+};
 export const filterGPlaySyncedCategories = function filterGPlaySyncedCategories(items) {
-  let iter2;
   if (null == items) {
     return [];
   } else {
     items = [];
-    const tmp2 = _createForOfIteratorHelperLoose(items.values());
-    let iter = tmp2();
-    if (!iter.done) {
-      do {
-        let value = iter.value;
-        let tmp3 = hasAtLeastOneGPlaySynced;
-        if (hasAtLeastOneGPlaySynced(value)) {
-          let arr = items.push(value);
-        }
-        iter2 = tmp2();
-        iter = iter2;
-      } while (!iter2.done);
+    const values = items.values();
+    const iter = values[Symbol.iterator]();
+    const nextResult = iter.next();
+    while (iter !== undefined) {
+      let tmp7 = hasAtLeastOneGPlaySynced;
+      let tmp6 = nextResult;
+      if (hasAtLeastOneGPlaySynced(nextResult)) {
+        let tmp8 = nextResult;
+        let arr = items.push(tmp6);
+      }
+      continue;
     }
     return items;
   }
@@ -210,5 +340,5 @@ export const filterHiddenCategories = function filterHiddenCategories(result) {
   });
 };
 export const createOrbProfileBadge = function createOrbProfileBadge() {
-  return { id: require(8693) /* BalanceWidgetMode */.OrbBadges.ORB_PROFILE_BADGE, icon: require(8693) /* BalanceWidgetMode */.OrbBadges.ORB_PROFILE_BADGE, iconSrc: importDefault(8694), description: "", isPreviewMode: true };
+  return { id: require(8717) /* BalanceWidgetMode */.OrbBadges.ORB_PROFILE_BADGE, icon: require(8717) /* BalanceWidgetMode */.OrbBadges.ORB_PROFILE_BADGE, iconSrc: importDefault(8718), description: "", isPreviewMode: true };
 };

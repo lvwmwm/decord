@@ -1,14 +1,13 @@
-// Module ID: 4737
-// Function ID: 41068
+// Module ID: 4759
+// Function ID: 4760
 // Name: getIosJpegliConfig
-// Dependencies: [1428, 2]
+// Dependencies: [1452, 2]
 // Exports: getIosJpegliConfig
 
-// Module 4737 (getIosJpegliConfig)
+// Module 4759 (getIosJpegliConfig)
 import ApexExperiment from "ApexExperiment";
 
-const obj = { name: "2025-11-enhanced-jpeg-encoding-on-ios", kind: "user", defaultConfig: { useJpegliEncoder: false }, variations: { [0]: { useJpegliEncoder: false }, [1]: { useJpegliEncoder: true } } };
-let closure_0 = ApexExperiment.createApexExperiment(obj);
+let closure_0 = ApexExperiment.createApexExperiment({ name: "2025-11-enhanced-jpeg-encoding-on-ios", kind: "user", defaultConfig: { useJpegliEncoder: false }, variations: { 0: { useJpegliEncoder: false }, 1: { useJpegliEncoder: true } } });
 const result = require("set").fileFinishedImporting("modules/media_uploads/experiments/IosJpegliExperiment.tsx");
 
 export const getIosJpegliConfig = function getIosJpegliConfig(location) {

@@ -1,56 +1,55 @@
-// Module ID: 7713
-// Function ID: 61533
+// Module ID: 7736
+// Function ID: 7737
 // Name: result
-// Dependencies: [4165, 4011, 689, 2]
+// Dependencies: [4189, 4035, 712, 2]
 // Exports: default
 
-// Module 7713 (result)
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+// Module 7736 (result)
+import createCacheKey from "createCacheKey";
+import createCacheKey from "createCacheKey";
+import createCacheKey from "createCacheKey";
 
-const result = _createForOfIteratorHelperLoose.experimental_createToken((theme) => {
-  const obj = require(4011) /* AccessibilityAnnouncer */;
-  const unsafe_rawColors = importDefault(689).unsafe_rawColors;
-  return require(4011) /* AccessibilityAnnouncer */.isThemeDark(theme.theme) ? unsafe_rawColors.PRIMARY_300 : unsafe_rawColors.PRIMARY_630;
+const result = createCacheKey.experimental_createToken((theme) => {
+  const obj = require(4035) /* AccessibilityAnnouncer */;
+  const unsafe_rawColors = importDefault(712).unsafe_rawColors;
+  return require(4035) /* AccessibilityAnnouncer */.isThemeDark(theme.theme) ? unsafe_rawColors.PRIMARY_300 : unsafe_rawColors.PRIMARY_630;
 });
-let obj = {};
-const result1 = _createForOfIteratorHelperLoose.experimental_createToken((theme) => {
-  const obj = require(4011) /* AccessibilityAnnouncer */;
-  const unsafe_rawColors = importDefault(689).unsafe_rawColors;
-  return require(4011) /* AccessibilityAnnouncer */.isThemeDark(theme.theme) ? unsafe_rawColors.BRAND_260 : unsafe_rawColors.BRAND_200;
+let obj = { textColor: null, linkColor: null, timestampColor: null, highlightColor: null, unsupportedColor: null, embedProviderColor: null, embedBorderLeftColor: null, embedBodyTextColor: null, embedHeaderTextColor: null, opTagTextColor: null, opTagBackgroundColor: null, failedMessageBodyTextColor: null, automodBlockedBodyTextColor: null, aiBotTagColor: null, editedColor: null, defaultUsernameColor: null, feedbackColor: null, reportFpTextColor: null, reportFpBackgroundColor: null, retryTextColor: null, retryBackgroundColor: null, clipTagBackgroundColor: null, clipTagTextColor: null };
+const result1 = createCacheKey.experimental_createToken((theme) => {
+  const obj = require(4035) /* AccessibilityAnnouncer */;
+  const unsafe_rawColors = importDefault(712).unsafe_rawColors;
+  return require(4035) /* AccessibilityAnnouncer */.isThemeDark(theme.theme) ? unsafe_rawColors.BRAND_260 : unsafe_rawColors.BRAND_200;
 });
-obj.textColor = require("_createForOfIteratorHelperLoose").colors.TEXT_STRONG;
-obj.linkColor = require("_createForOfIteratorHelperLoose").colors.TEXT_LINK;
-obj.timestampColor = require("_createForOfIteratorHelperLoose").colors.TEXT_MUTED;
-obj.highlightColor = require("_createForOfIteratorHelperLoose").colors.MESSAGE_HIGHLIGHT_BACKGROUND_DEFAULT;
-obj.unsupportedColor = require("_createForOfIteratorHelperLoose").colors.TEXT_MUTED;
-obj.embedProviderColor = result;
-obj.embedBorderLeftColor = require("_createForOfIteratorHelperLoose").colors.BORDER_NORMAL;
-obj.embedBodyTextColor = require("_createForOfIteratorHelperLoose").colors.TEXT_DEFAULT;
-obj.embedHeaderTextColor = require("_createForOfIteratorHelperLoose").colors.MOBILE_TEXT_HEADING_PRIMARY;
-obj.opTagTextColor = require("_createForOfIteratorHelperLoose").unsafe_rawColors.BRAND_560;
-obj.opTagBackgroundColor = result1;
-obj.failedMessageBodyTextColor = require("_createForOfIteratorHelperLoose").unsafe_rawColors.RED_400;
-obj.automodBlockedBodyTextColor = require("_createForOfIteratorHelperLoose").colors.TEXT_MUTED;
-obj.aiBotTagColor = require("_createForOfIteratorHelperLoose").colors.TEXT_FEEDBACK_POSITIVE;
-obj.editedColor = require("_createForOfIteratorHelperLoose").colors.TEXT_MUTED;
-obj.defaultUsernameColor = require("_createForOfIteratorHelperLoose").colors.INTERACTIVE_TEXT_ACTIVE;
-obj.feedbackColor = require("_createForOfIteratorHelperLoose").colors.BACKGROUND_MOD_MUTED;
-obj.reportFpTextColor = require("_createForOfIteratorHelperLoose").colors.CONTROL_SECONDARY_TEXT_DEFAULT;
-obj.reportFpBackgroundColor = require("_createForOfIteratorHelperLoose").colors.CONTROL_SECONDARY_BACKGROUND_DEFAULT;
-obj.retryTextColor = require("_createForOfIteratorHelperLoose").colors.WHITE;
-obj.retryBackgroundColor = require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BRAND;
-obj.clipTagBackgroundColor = require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BRAND;
-obj.clipTagTextColor = require("_createForOfIteratorHelperLoose").unsafe_rawColors.WHITE;
-let closure_4 = _createForOfIteratorHelperLoose.createNativeStyleProperties((arg0) => {
-  const obj = {};
-  const colors = importDefault(689).colors;
-  obj.embedBackgroundColor = arg0 ? colors.EMBED_BACKGROUND_ALTERNATE : colors.EMBED_BACKGROUND;
+obj[0] = require("Themes").colors.TEXT_STRONG;
+obj[1] = require("Themes").colors.TEXT_LINK;
+obj[2] = require("Themes").colors.TEXT_MUTED;
+obj[3] = require("Themes").colors.MESSAGE_HIGHLIGHT_BACKGROUND_DEFAULT;
+obj[4] = require("Themes").colors.TEXT_MUTED;
+obj[5] = result;
+obj[6] = require("Themes").colors.BORDER_NORMAL;
+obj[7] = require("Themes").colors.TEXT_DEFAULT;
+obj[8] = require("Themes").colors.MOBILE_TEXT_HEADING_PRIMARY;
+obj[9] = require("Themes").unsafe_rawColors.BRAND_560;
+obj[10] = result1;
+obj[11] = require("Themes").unsafe_rawColors.RED_400;
+obj[12] = require("Themes").colors.TEXT_MUTED;
+obj[13] = require("Themes").colors.TEXT_FEEDBACK_POSITIVE;
+obj[14] = require("Themes").colors.TEXT_MUTED;
+obj[15] = require("Themes").colors.INTERACTIVE_TEXT_ACTIVE;
+obj[16] = require("Themes").colors.BACKGROUND_MOD_MUTED;
+obj[17] = require("Themes").colors.CONTROL_SECONDARY_TEXT_DEFAULT;
+obj[18] = require("Themes").colors.CONTROL_SECONDARY_BACKGROUND_DEFAULT;
+obj[19] = require("Themes").colors.WHITE;
+obj[20] = require("Themes").colors.BACKGROUND_BRAND;
+obj[21] = require("Themes").colors.BACKGROUND_BRAND;
+obj[22] = require("Themes").unsafe_rawColors.WHITE;
+let closure_4 = createCacheKey.createNativeStyleProperties((arg0) => {
+  const colors = importDefault(712).colors;
+  const obj = { embedBackgroundColor: arg0 ? colors.EMBED_BACKGROUND_ALTERNATE : colors.EMBED_BACKGROUND };
   const merged = Object.assign(obj);
   return obj;
 });
-const result2 = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/messages/native/renderer/resolveMessageContentColors.tsx");
+const result2 = require("Themes").fileFinishedImporting("modules/messages/native/renderer/resolveMessageContentColors.tsx");
 
 export default function resolveMessageContentColors(arg0) {
   let flag = arg1;

@@ -1,11 +1,11 @@
-// Module ID: 9534
-// Function ID: 74205
+// Module ID: 9558
+// Function ID: 9559
 // Name: useShouldHideMediaOptions
-// Dependencies: [1348, 1355, 624, 2]
+// Dependencies: [1372, 1379, 647, 2]
 // Exports: default
 
-// Module 9534 (useShouldHideMediaOptions)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 9558 (useShouldHideMediaOptions)
+import ensureGuildLoaded from "ensureGuildLoaded";
 import { ChannelFlags } from "set";
 
 const require = arg1;
@@ -13,12 +13,11 @@ const result = require("defaultAreStatesEqual").fileFinishedImporting("modules/m
 
 export default function useShouldHideMediaOptions(arg0) {
   const _require = arg0;
-  let hasFlagResult;
-  const items = [_isNativeReflectConstruct];
-  const stateFromStores = _require(624).useStateFromStores(items, () => {
+  const items = [ensureGuildLoaded];
+  const stateFromStores = _require(647).useStateFromStores(items, () => {
     const channel = outer1_2.getChannel(closure_0);
     let parent_id;
-    if (null != channel) {
+    if (channel != null) {
       parent_id = channel.parent_id;
     }
     let channel1 = null;
@@ -26,7 +25,7 @@ export default function useShouldHideMediaOptions(arg0) {
       channel1 = null;
       if (channel.isForumPost()) {
         let parent_id1;
-        if (null != channel) {
+        if (channel != null) {
           parent_id1 = channel.parent_id;
         }
         channel1 = outer1_2.getChannel(parent_id1);
@@ -34,7 +33,8 @@ export default function useShouldHideMediaOptions(arg0) {
     }
     return channel1;
   });
-  if (null != stateFromStores) {
+  let hasFlagResult;
+  if (stateFromStores != null) {
     hasFlagResult = stateFromStores.hasFlag(ChannelFlags.HIDE_MEDIA_DOWNLOAD_OPTIONS);
   }
   return true === hasFlagResult;

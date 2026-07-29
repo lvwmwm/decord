@@ -1,40 +1,38 @@
-// Module ID: 10688
-// Function ID: 83182
+// Module ID: 10712
+// Function ID: 10713
 // Name: shouldShowEndStageModal
-// Dependencies: [1194, 4986, 4989, 1353, 4992, 2]
+// Dependencies: [1218, 5008, 5011, 1377, 5014, 2]
 // Exports: default
 
-// Module 10688 (shouldShowEndStageModal)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_3 from "_isNativeReflectConstruct";
-import closure_4 from "_isNativeReflectConstruct";
-import closure_5 from "_isNativeReflectConstruct";
+// Module 10712 (shouldShowEndStageModal)
+import fetchFingerprint from "fetchFingerprint";
+import getActiveStageChannelIds from "getActiveStageChannelIds";
+import buildStageChannelUserRoles from "buildStageChannelUserRoles";
+import handleStageInstanceCreateOrUpdate from "handleStageInstanceCreateOrUpdate";
 
 const require = arg1;
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/stage_channels/shouldShowEndStageModal.tsx");
+const result = require("buildStageChannelUserRoles").fileFinishedImporting("modules/stage_channels/shouldShowEndStageModal.tsx");
 
 export default function shouldShowEndStageModal(isGuildStageVoice) {
   const _require = isGuildStageVoice;
   if (isGuildStageVoice.isGuildStageVoice()) {
     if (live.isLive(isGuildStageVoice.id)) {
       id = id.getId();
-      const tmp5 = !closure_4.isModerator(id, isGuildStageVoice.id);
-      let tmp6 = !tmp5;
-      if (!tmp5) {
-        const tmp8 = !closure_4.isSpeaker(id, isGuildStageVoice.id);
-        let tmp9 = !tmp8;
-        if (!tmp8) {
-          const mutableParticipants = store.getMutableParticipants(isGuildStageVoice.id);
-          let tmp12 = null == mutableParticipants.find((user) => {
+      let isModeratorResult = moderator.isModerator(id, isGuildStageVoice.id);
+      if (isModeratorResult) {
+        let isSpeakerResult = moderator.isSpeaker(id, isGuildStageVoice.id);
+        if (isSpeakerResult) {
+          mutableParticipants = mutableParticipants.getMutableParticipants(isGuildStageVoice.id);
+          let tmp7 = null == mutableParticipants.find((user) => {
             let isModeratorResult = user.user.id !== id;
             if (isModeratorResult) {
               isModeratorResult = outer1_4.isModerator(user.user.id, isGuildStageVoice.id);
             }
             return isModeratorResult;
           });
-          if (!tmp12) {
-            const mutableParticipants1 = store.getMutableParticipants(isGuildStageVoice.id, _require(id[4]).StageChannelParticipantNamedIndex.SPEAKER);
-            tmp12 = null == mutableParticipants1.find((user) => {
+          if (!tmp7) {
+            const mutableParticipants1 = obj2.getMutableParticipants(isGuildStageVoice.id, _require(id[4]).StageChannelParticipantNamedIndex.SPEAKER);
+            tmp7 = null == mutableParticipants1.find((user) => {
               let isModeratorResult = user.user.id !== id;
               if (isModeratorResult) {
                 isModeratorResult = outer1_4.isModerator(user.user.id, isGuildStageVoice.id);
@@ -42,11 +40,12 @@ export default function shouldShowEndStageModal(isGuildStageVoice) {
               return isModeratorResult;
             });
           }
-          tmp9 = tmp12;
+          isSpeakerResult = tmp7;
+          obj2 = mutableParticipants;
         }
-        tmp6 = tmp9;
+        isModeratorResult = isSpeakerResult;
       }
-      return tmp6;
+      return isModeratorResult;
     } else {
       return false;
     }

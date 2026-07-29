@@ -1,29 +1,29 @@
-// Module ID: 14209
-// Function ID: 109137
+// Module ID: 14231
+// Function ID: 14232
 // Name: getRoleSubscriptionPlanId
-// Dependencies: [44, 2]
+// Dependencies: [38, 2]
 // Exports: getRoleSubscriptionMutationPlanId, getRoleSubscriptionPlanId
 
-// Module 14209 (getRoleSubscriptionPlanId)
+// Module 14231 (getRoleSubscriptionPlanId)
 const result = require("set").fileFinishedImporting("modules/guild_role_subscriptions/subscriptionUtils.tsx");
 
 export const getRoleSubscriptionPlanId = function getRoleSubscriptionPlanId(items) {
   items = items.items;
-  importDefault(44)(1 === items.length, "more than 1 subscription item for role subscription");
+  importDefault(38)(1 === items.length, "more than 1 subscription item for role subscription");
   return items[0].planId;
 };
 export const getRoleSubscriptionMutationPlanId = function getRoleSubscriptionMutationPlanId(renewalMutations) {
   let items;
-  if (null != renewalMutations) {
+  if (renewalMutations != null) {
     renewalMutations = renewalMutations.renewalMutations;
-    if (null != renewalMutations) {
+    if (renewalMutations != null) {
       items = renewalMutations.items;
     }
   }
   if (null != items) {
-    importDefault(44)(items.length <= 1, "more than 1 renewal mutation for role subscription");
+    importDefault(38)(items.length <= 1, "more than 1 renewal mutation for role subscription");
     let planId;
-    if (null != items) {
+    if (items != null) {
       planId = items[0].planId;
     }
     return planId;

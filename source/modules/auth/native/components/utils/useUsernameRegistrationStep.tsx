@@ -1,112 +1,125 @@
-// Module ID: 14859
-// Function ID: 113197
+// Module ID: 14885
+// Function ID: 14886
 // Name: useUsernameRegistrationStep
-// Dependencies: [57, 31, 13772, 14834, 14835, 14832, 1456, 9181, 13770, 13769, 14833, 1212, 2]
+// Dependencies: [32, 19, 13793, 14860, 14861, 14858, 1480, 9205, 13791, 13790, 14859, 1236, 2]
 // Exports: useUsernameRegistrationStep
 
-// Module 14859 (useUsernameRegistrationStep)
+// Module 14885 (useUsernameRegistrationStep)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import noop from "noop";
+import isRateLimited from "isRateLimited";
 import { useRegistrationUIStore } from "useRegistrationUIStore";
 import RegistrationTransitionActionTypes from "RegistrationTransitionActionTypes";
 
-let closure_7;
-let closure_8;
+let error;
+let metroImportAll;
 const require = arg1;
-({ authStateToRegisterTransitionStep: closure_7, RegistrationTransitionActionTypes: closure_8 } = RegistrationTransitionActionTypes);
-let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/auth/native/components/utils/useUsernameRegistrationStep.tsx");
+({ authStateToRegisterTransitionStep: error, RegistrationTransitionActionTypes: metroImportAll } = RegistrationTransitionActionTypes);
+let result = require("isRateLimited").fileFinishedImporting("modules/auth/native/components/utils/useUsernameRegistrationStep.tsx");
 
 export const useUsernameRegistrationStep = function useUsernameRegistrationStep(REGISTER_ACCOUNT_INFORMATION) {
   const _require = REGISTER_ACCOUNT_INFORMATION;
   const context = obj.useContext(_require(navigation[5]).TrackRegistrationContext);
-  obj = _require(navigation[6]);
-  navigation = obj.useNavigation();
-  let username = useRegistrationUIStore((registrationOptions) => registrationOptions.registrationOptions).username;
-  if (null == username) {
-    username = _isNativeReflectConstruct.registrationUsernameSuggestion();
+  navigation = _require(navigation[6]).useNavigation();
+  let str = useRegistrationUIStore((registrationOptions) => registrationOptions.registrationOptions).username;
+  if (str == null) {
+    str = isRateLimited.registrationUsernameSuggestion();
   }
-  let str = "";
-  if (null != username) {
-    str = username;
+  if (str == null) {
+    str = "";
   }
-  const tmp5 = first(obj.useState(str), 2);
-  first = tmp5[0];
-  const tmp8 = context(navigation[7])("username", useRegistrationUIStore((errors) => errors.errors));
-  const tmp7 = useRegistrationUIStore((errors) => errors.errors);
+  const tmp7 = first(obj.useState(str), 2);
+  first = tmp7[0];
+  const obj2 = _require(navigation[6]);
+  const tmp5 = useRegistrationUIStore;
+  const tmp10 = context(navigation[7])("username", useRegistrationUIStore((errors) => errors.errors));
+  const tmp5Result = useRegistrationUIStore((errors) => errors.errors);
   const usernameStatus = _require(navigation[8]).useUsernameStatus(first, true, true);
   obj = usernameStatus;
-  let tmp10 = usernameStatus;
-  if (null != tmp8) {
-    obj = { type: _require(navigation[9]).NameValidationState.ERROR, message: tmp8 };
-    tmp10 = obj;
+  let tmp12 = usernameStatus;
+  if (null != tmp10) {
+    obj = { type: null, message: null };
+    obj[0] = tmp(tmp2[9]).NameValidationState.ERROR;
+    obj[1] = tmp10;
+    tmp12 = obj;
   }
-  let items = [tmp10, navigation, context, REGISTER_ACCOUNT_INFORMATION];
-  const items1 = [first, tmp10];
+  let items = [tmp12, navigation, context, REGISTER_ACCOUNT_INFORMATION];
+  const items1 = [first, tmp12];
   const callback = obj.useCallback((arg0) => {
     let type;
-    if (null != obj) {
-      type = obj.type;
+    if (obj != null) {
+      type = tmp.type;
     }
     if (type === REGISTER_ACCOUNT_INFORMATION(navigation[9]).NameValidationState.ERROR) {
-      obj = { step: outer1_7(REGISTER_ACCOUNT_INFORMATION), actionType: outer1_8.INPUT_ERROR };
-      const items = [obj.message];
-      obj.details = items;
+      obj = { step: null, actionType: null, details: null };
+      obj[0] = outer1_7(REGISTER_ACCOUNT_INFORMATION);
+      obj[1] = outer1_8.INPUT_ERROR;
+      const items = [tmp.message];
+      obj[2] = items;
       context(obj);
     }
     if (arg0) {
-      const result = REGISTER_ACCOUNT_INFORMATION(navigation[10]).handleRegistrationSubmit(REGISTER_ACCOUNT_INFORMATION, navigation, context);
-      const obj5 = REGISTER_ACCOUNT_INFORMATION(navigation[10]);
+      let tmp3Result = tmp3(tmp4[10]);
+      const result = tmp3Result.handleRegistrationSubmit(REGISTER_ACCOUNT_INFORMATION, navigation, context);
     } else {
-      obj = { step: outer1_7(REGISTER_ACCOUNT_INFORMATION), toStep: REGISTER_ACCOUNT_INFORMATION(navigation[10]).getNextRegistrationTransitionStep(REGISTER_ACCOUNT_INFORMATION), actionType: outer1_8.SUCCESS };
+      obj = { step: null, toStep: null, actionType: null };
+      obj[0] = outer1_7(REGISTER_ACCOUNT_INFORMATION);
+      tmp3Result = tmp3(tmp4[10]);
+      obj[1] = tmp3Result.getNextRegistrationTransitionStep(REGISTER_ACCOUNT_INFORMATION);
+      obj[2] = outer1_8.SUCCESS;
       context(obj);
-      const obj3 = REGISTER_ACCOUNT_INFORMATION(navigation[10]);
-      navigation.push(REGISTER_ACCOUNT_INFORMATION(navigation[10]).getNextAuthState(REGISTER_ACCOUNT_INFORMATION));
-      const obj4 = REGISTER_ACCOUNT_INFORMATION(navigation[10]);
+      navigation.push(tmp3(tmp4[10]).getNextAuthState(REGISTER_ACCOUNT_INFORMATION));
+      const tmp3Result1 = tmp3(tmp4[10]);
     }
   }, items);
   const items2 = [first, , ];
   let message;
   const memo = obj.useMemo(() => {
-    let tmp = null == first;
-    if (!tmp) {
-      tmp = "" === first;
+    let tmp2 = null == first;
+    if (!tmp2) {
+      tmp2 = "" === tmp;
     }
-    if (!tmp) {
+    if (!tmp2) {
       let type;
-      if (null != obj) {
+      if (obj != null) {
         type = obj.type;
       }
-      tmp = type === REGISTER_ACCOUNT_INFORMATION(navigation[9]).NameValidationState.ERROR;
+      tmp2 = type === REGISTER_ACCOUNT_INFORMATION(navigation[9]).NameValidationState.ERROR;
     }
-    return tmp;
+    return tmp2;
   }, items1);
-  if (null != tmp10) {
-    message = tmp10.message;
+  if (tmp12 != null) {
+    message = tmp12.message;
   }
   items2[1] = message;
   let type;
-  if (null != tmp10) {
-    type = tmp10.type;
+  if (tmp12 != null) {
+    type = tmp12.type;
   }
   items2[2] = type;
-  obj = { username: first, setUsername: tmp5[1], usernameStatus: tmp10, transitionToNextStepOrSubmit: callback, preventSubmitUsername: memo };
-  obj.validateUsername = obj.useCallback(() => {
-    if (null != first) {
-      if ("" !== first) {
-        let type;
-        if (null != obj) {
-          type = obj.type;
+  obj = {
+    username: first,
+    setUsername: tmp7[1],
+    usernameStatus: tmp12,
+    transitionToNextStepOrSubmit: callback,
+    preventSubmitUsername: memo,
+    validateUsername: obj.useCallback(() => {
+      if (null != first) {
+        if ("" !== tmp) {
+          let type;
+          if (obj != null) {
+            type = tmp2.type;
+          }
+          let message = null;
+          if (type === REGISTER_ACCOUNT_INFORMATION(navigation[9]).NameValidationState.ERROR) {
+            message = tmp2.message;
+          }
         }
-        let message = null;
-        if (type === REGISTER_ACCOUNT_INFORMATION(navigation[9]).NameValidationState.ERROR) {
-          message = obj.message;
-        }
+        return message;
       }
-      return message;
-    }
-    const intl = REGISTER_ACCOUNT_INFORMATION(navigation[11]).intl;
-    message = intl.string(REGISTER_ACCOUNT_INFORMATION(navigation[11]).t.GPfy3L);
-  }, items2);
+      const intl = REGISTER_ACCOUNT_INFORMATION(navigation[11]).intl;
+      message = intl.string(REGISTER_ACCOUNT_INFORMATION(navigation[11]).t.GPfy3L);
+    }, items2)
+  };
   return obj;
 };

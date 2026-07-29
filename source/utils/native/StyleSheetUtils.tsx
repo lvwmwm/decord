@@ -1,24 +1,24 @@
-// Module ID: 4696
-// Function ID: 40505
+// Module ID: 4718
+// Function ID: 4719
 // Name: getStyleProp
 // Dependencies: [2]
 
-// Module 4696 (getStyleProp)
+// Module 4718 (getStyleProp)
 function getStyleProp(style, borderRadius) {
   if (null != borderRadius) {
     if ("" !== borderRadius) {
       const _Array = Array;
       if (Array.isArray(style)) {
         let diff = style.length - 1;
-        if (diff >= 0) {
-          const tmp4 = getStyleProp(style[diff], borderRadius);
-          while (null == tmp4) {
+        if (0 <= diff) {
+          const tmp5 = getStyleProp(style[diff], borderRadius);
+          while (null == tmp5) {
             diff = diff - 1;
           }
-          return tmp4;
+          return tmp5;
         }
       } else if (null != style) {
-        if ("object" === typeof style) {
+        if (typeof style !== "window") {
           return style[borderRadius];
         }
       }

@@ -1,13 +1,13 @@
-// Module ID: 4400
-// Function ID: 38829
+// Module ID: 4423
+// Function ID: 4424
 // Name: isMentioned
-// Dependencies: [1348, 1918, 1838, 2]
+// Dependencies: [1372, 1942, 1862, 2]
 // Exports: default, isRawMessageMentioned
 
-// Module 4400 (isMentioned)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_1 from "_isNativeReflectConstruct";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+// Module 4423 (isMentioned)
+import ensureGuildLoaded from "ensureGuildLoaded";
+import trackCommunicationDisabled from "trackCommunicationDisabled";
+import createGuildRecordFromRust from "createGuildRecordFromRust";
 
 function isMentioned(suppressRoles) {
   let channelId;
@@ -60,7 +60,7 @@ function isMentioned(suppressRoles) {
     return false;
   }
 }
-const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/messages/isMessageMentioned.tsx");
+const result = require("createGuildRecordFromRust").fileFinishedImporting("modules/messages/isMessageMentioned.tsx");
 
 export default function isMessageMentioned(suppressRoles) {
   let message;
@@ -73,8 +73,7 @@ export default function isMessageMentioned(suppressRoles) {
   if (flag === undefined) {
     flag = false;
   }
-  const obj = { userId: suppressRoles.userId, channelId: message.channel_id, mentionEveryone: message.mentionEveryone, mentionUsers: message.mentions, mentionRoles: message.mentionRoles, suppressEveryone, suppressRoles: flag };
-  return isMentioned(obj);
+  return isMentioned({ userId: suppressRoles.userId, channelId: message.channel_id, mentionEveryone: message.mentionEveryone, mentionUsers: message.mentions, mentionRoles: message.mentionRoles, suppressEveryone, suppressRoles: flag });
 };
 export const isRawMessageMentioned = function isRawMessageMentioned(suppressRoles) {
   let rawMessage;
@@ -87,29 +86,28 @@ export const isRawMessageMentioned = function isRawMessageMentioned(suppressRole
   if (flag === undefined) {
     flag = false;
   }
-  const obj = { userId: suppressRoles.userId, channelId: rawMessage.channel_id };
-  const mention_everyone = rawMessage.mention_everyone;
-  let tmp2 = null != mention_everyone;
-  if (tmp2) {
-    tmp2 = mention_everyone;
+  const obj = { userId: suppressRoles.userId, channelId: rawMessage.channel_id, mentionEveryone: null, mentionUsers: null, mentionRoles: null, suppressEveryone: null, suppressRoles: null };
+  let flag2 = rawMessage.mention_everyone;
+  if (flag2 == null) {
+    flag2 = false;
   }
-  obj.mentionEveryone = tmp2;
+  obj[2] = flag2;
   const mentions = rawMessage.mentions;
   let mapped;
-  if (null != mentions) {
+  if (mentions != null) {
     mapped = mentions.map((id) => id.id);
   }
-  if (null == mapped) {
+  if (mapped == null) {
     mapped = [];
   }
-  obj.mentionUsers = mapped;
+  obj[3] = mapped;
   let mention_roles = rawMessage.mention_roles;
-  if (null == mention_roles) {
+  if (mention_roles == null) {
     mention_roles = [];
   }
-  obj.mentionRoles = mention_roles;
-  obj.suppressEveryone = suppressEveryone;
-  obj.suppressRoles = flag;
+  obj[4] = mention_roles;
+  obj[5] = suppressEveryone;
+  obj[6] = flag;
   return isMentioned(obj);
 };
 export { isMentioned };

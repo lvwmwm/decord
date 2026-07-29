@@ -1,83 +1,55 @@
-// Module ID: 15600
-// Function ID: 119904
-// Name: getNoticeCTAColor
-// Dependencies: [31, 27, 12752, 653, 6207, 1852, 33, 664, 4165, 689, 15601, 675, 1212, 3747, 624, 6222, 6214, 15599, 1921, 4161, 3811, 4695, 1273, 6606, 4589, 5544, 2]
+// Module ID: 15634
+// Function ID: 15635
+// Name: YouExpiringTrialOfferCard
+// Dependencies: [19, 17, 12774, 676, 6227, 1876, 21, 687, 4189, 712, 15635, 698, 1236, 3771, 647, 6242, 6234, 15633, 1945, 4185, 3835, 4717, 1297, 6627, 4611, 5562, 2]
 // Exports: default
 
-// Module 15600 (getNoticeCTAColor)
-import result from "result";
-import { View } from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 15634 (YouExpiringTrialOfferCard)
+import Text from "Text";
+import { View } from "useShouldShowExpiringTrialOfferCard";
+import clearDismissUntil from "clearDismissUntil";
 import ME from "ME";
 import { Gradients } from "items";
 import { PREMIUM_TIER_2_TRIAL_FOR_EVERYONE_TRIAL_ID as closure_11 } from "GuildFeatures";
-import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import jsxProd from "PressableBase";
+import createCacheKey from "createCacheKey";
 
+let c9;
 let closure_12;
-let closure_13;
 let closure_14;
 let closure_6;
-let closure_7;
-let closure_8;
-let closure_9;
+let error;
+let map1;
+let metroImportAll;
 const require = arg1;
-function getNoticeCTAColor(arg0) {
-  if (closure_9.PREMIUM_TIER_0_TRIAL_ENDING === arg0) {
-    return Gradients.PREMIUM_TIER_0;
-  } else if (closure_9.PREMIUM_TIER_2_TRIAL_ENDING === arg0) {
-    return Gradients.PREMIUM_TIER_2_TRI_COLOR;
-  } else {
-    const _Error = Error;
-    const _HermesInternal = HermesInternal;
-    const error = new Error("Unsupported notice type: " + arg0);
-    throw error;
-  }
-}
-function getNoticeCopy(days, trialPeriod, termsUrl) {
-  if (days.days > 0) {
-    const intl3 = require(1212) /* getSystemLocale */.intl;
-    let obj = { days: days.days, trialPeriod, termsUrl };
-    let formatResult = intl3.format(require(1212) /* getSystemLocale */.t.GPqVWT, obj);
-  } else if (days.hours > 0) {
-    const intl2 = require(1212) /* getSystemLocale */.intl;
-    obj = { hours: days.hours, trialPeriod, termsUrl };
-    formatResult = intl2.format(require(1212) /* getSystemLocale */.t.WFMtg1, obj);
-  } else {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    obj = {};
-    const _Math = Math;
-    obj.minutes = Math.max(days.minutes, 1);
-    obj.trialPeriod = trialPeriod;
-    obj.termsUrl = termsUrl;
-    formatResult = intl.format(require(1212) /* getSystemLocale */.t.SxXB42, obj);
-  }
-  return formatResult;
-}
-({ AnalyticEvents: closure_6, HelpdeskArticles: closure_7, HorizontalGradient: closure_8, NoticeTypes: closure_9 } = ME);
-({ jsx: closure_12, Fragment: closure_13, jsxs: closure_14 } = jsxProd);
+({ AnalyticEvents: closure_6, HelpdeskArticles: error, HorizontalGradient: metroImportAll, NoticeTypes: c9 } = ME);
+({ jsx: closure_12, Fragment: map1, jsxs: closure_14 } = jsxProd);
 let closure_15 = 10 * require("set").Millis.SECOND;
-_createForOfIteratorHelperLoose = { header: { flexDirection: "row", alignItems: "flex-start", marginBottom: 16, marginRight: 32 }, closeButton: { position: "absolute", top: 16, right: 16 } };
-_createForOfIteratorHelperLoose = { color: require("_createForOfIteratorHelperLoose").colors.INTERACTIVE_TEXT_DEFAULT };
-_createForOfIteratorHelperLoose.closeIcon = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.linearGradient = { width: "100%", height: "100%", position: "absolute", overflow: "hidden" };
-_createForOfIteratorHelperLoose.primaryCTA = { borderRadius: require("_createForOfIteratorHelperLoose").radii.round, gap: 4 };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-let obj1 = { borderRadius: require("_createForOfIteratorHelperLoose").radii.round, gap: 4 };
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/main_tabs_v2/native/tabs/you/YouExpiringTrialOfferCard.tsx");
+createCacheKey = { header: { flexDirection: "row", alignItems: "flex-start", marginBottom: 16, marginRight: 32 }, closeButton: { position: "absolute", top: 16, right: 16 }, closeIcon: null, linearGradient: null, primaryCTA: null };
+createCacheKey = { color: require("Themes").colors.INTERACTIVE_TEXT_DEFAULT };
+createCacheKey[2] = createCacheKey;
+createCacheKey[3] = { width: "100%", height: "100%", position: "absolute", overflow: "hidden" };
+createCacheKey[4] = { borderRadius: require("Themes").radii.round, gap: 4 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let obj1 = { borderRadius: require("Themes").radii.round, gap: 4 };
+let result = require("clearDismissUntil").fileFinishedImporting("modules/main_tabs_v2/native/tabs/you/YouExpiringTrialOfferCard.tsx");
 
 export default function YouExpiringTrialOfferCard(navigateToPremium) {
   navigateToPremium = navigateToPremium.navigateToPremium;
+  let importDefault;
+  let dependencyMap;
+  let stateFromStores;
+  let premiumTrialOffer;
   let shouldShowExpiringTrialOfferCard;
-  let obj = importDefault(3747)();
+  let obj = importDefault(3771)();
   importDefault = obj.add(5, "days");
-  let tmp = _createForOfIteratorHelperLoose();
-  const dependencyMap = tmp;
-  let obj1 = navigateToPremium(624);
+  const tmp3 = createCacheKey();
+  dependencyMap = tmp3;
+  let obj1 = navigateToPremium(647);
   let items = [shouldShowExpiringTrialOfferCard];
-  const stateFromStores = obj1.useStateFromStores(items, () => shouldShowExpiringTrialOfferCard.getNoticeType());
-  let obj2 = navigateToPremium(6222);
-  const premiumTrialOffer = obj2.usePremiumTrialOffer();
+  stateFromStores = obj1.useStateFromStores(items, () => shouldShowExpiringTrialOfferCard.getNoticeType());
+  let obj2 = navigateToPremium(6242);
+  premiumTrialOffer = obj2.usePremiumTrialOffer();
   let num = 0;
   if (null != premiumTrialOffer) {
     num = 0;
@@ -86,9 +58,9 @@ export default function YouExpiringTrialOfferCard(navigateToPremium) {
       num = Date.parse(premiumTrialOffer.expires_at);
     }
   }
-  const tmp4 = importDefault(6214);
-  let obj3 = navigateToPremium(15599);
-  shouldShowExpiringTrialOfferCard = obj3.useShouldShowExpiringTrialOfferCard();
+  const tmp7Result = importDefault(6234)(num, closure_15);
+  let tmp4Result = tmp4(15633);
+  shouldShowExpiringTrialOfferCard = tmp4Result.useShouldShowExpiringTrialOfferCard();
   const items1 = [stateFromStores, shouldShowExpiringTrialOfferCard, premiumTrialOffer];
   const effect = stateFromStores.useEffect(() => {
     let tmp = shouldShowExpiringTrialOfferCard;
@@ -99,8 +71,10 @@ export default function YouExpiringTrialOfferCard(navigateToPremium) {
       tmp = null != premiumTrialOffer;
     }
     if (tmp) {
-      let obj = callback(tmp[11]);
-      obj = { notice_type: stateFromStores, trial_id: premiumTrialOffer.trial_id };
+      let obj = callback(_undefined[11]);
+      obj = { notice_type: null, trial_id: null };
+      obj[0] = stateFromStores;
+      obj[1] = premiumTrialOffer.trial_id;
       obj.track(outer1_6.APP_NOTICE_VIEWED, obj);
     }
   }, items1);
@@ -112,78 +86,120 @@ export default function YouExpiringTrialOfferCard(navigateToPremium) {
         } else {
           PREMIUM_TRIAL = constants.PREMIUM_TRIAL;
         }
-        obj = {};
-        obj = { style: tmp.header };
-        const articleURL = importDefault(1921).getArticleURL(PREMIUM_TRIAL);
-        obj1 = { variant: "heading-sm/medium", color: "text-default" };
-        const obj14 = importDefault(1921);
-        const tmp12 = closure_14;
-        const tmp13 = closure_13;
-        const tmp15 = premiumTrialOffer;
-        const tmp18 = getNoticeCopy;
-        obj2 = {};
+        const articleURL = tmp(1945).getArticleURL(PREMIUM_TRIAL);
+        obj = { style: null, children: null };
+        obj[0] = tmp3.header;
+        tmp4Result = tmp4(3835);
         const subscription_trial = premiumTrialOffer.subscription_trial;
         let interval;
-        if (null != subscription_trial) {
+        if (subscription_trial != null) {
           interval = subscription_trial.interval;
         }
-        obj2.intervalType = interval;
+        obj = { intervalType: null, intervalCount: null };
+        obj[0] = interval;
         const subscription_trial2 = premiumTrialOffer.subscription_trial;
         let interval_count;
-        if (null != subscription_trial2) {
+        if (subscription_trial2 != null) {
           interval_count = subscription_trial2.interval_count;
         }
-        obj2.intervalCount = interval_count;
-        obj1.children = tmp18(tmp4Result, navigateToPremium(3811).formatIntervalDuration(obj2), articleURL);
-        obj.children = callback(navigateToPremium(4161).Text, obj1);
-        const items2 = [callback(tmp15, obj), , ];
-        obj3 = { style: tmp.closeButton, accessibilityRole: "button" };
-        const intl = navigateToPremium(1212).intl;
-        obj3.accessibilityLabel = intl.string(navigateToPremium(1212).t.cpT0Cq);
-        obj3.hitSlop = { top: 8, right: 8, bottom: 8, left: 8 };
-        obj3.onPress = function onPress() {
+        obj[1] = interval_count;
+        const result = tmp4Result.formatIntervalDuration(obj);
+        if (tmp7Result.days > 0) {
+          const intl3 = tmp4(1236).intl;
+          obj1 = { days: null, trialPeriod: null, termsUrl: null };
+          obj1[0] = tmp7Result.days;
+          obj1[1] = result;
+          obj1[2] = articleURL;
+          let formatResult = intl3.format(tmp4(1236).t.GPqVWT, obj1);
+        } else if (tmp7Result.hours > 0) {
+          const intl2 = tmp4(1236).intl;
+          obj2 = { hours: null, trialPeriod: null, termsUrl: null };
+          obj2[0] = tmp7Result.hours;
+          obj2[1] = result;
+          obj2[2] = articleURL;
+          formatResult = intl2.format(tmp4(1236).t.WFMtg1, obj2);
+        } else {
+          const intl = tmp4(1236).intl;
+          const obj3 = { minutes: null, trialPeriod: null, termsUrl: null };
+          const _Math = Math;
+          obj3[0] = Math.max(tmp7Result.minutes, 1);
+          obj3[1] = result;
+          obj3[2] = articleURL;
+          formatResult = intl.format(tmp4(1236).t.SxXB42, obj3);
+        }
+        const obj4 = { children: null };
+        const obj5 = { variant: "heading-sm/medium", color: "text-default", children: null };
+        obj5[2] = formatResult;
+        obj[1] = closure_12(tmp4(4185).Text, obj5);
+        const items2 = [closure_12(premiumTrialOffer, obj), , ];
+        const obj6 = { style: null, accessibilityRole: "button", accessibilityLabel: null, hitSlop: null, onPress: null, children: null };
+        obj6[0] = tmp3.closeButton;
+        const intl4 = tmp4(1236).intl;
+        obj6[2] = intl4.string(tmp4(1236).t.cpT0Cq);
+        obj6[3] = { top: 8, right: 8, bottom: 8, left: 8 };
+        obj6[4] = function onPress() {
           if (null != stateFromStores) {
-            let obj = callback(tmp[11]);
-            obj = { notice_type: tmp, trial_id: tmp2 };
+            let obj = callback(_undefined[11]);
+            obj = { notice_type: null, trial_id: null };
+            obj[0] = tmp;
+            obj[1] = tmp2;
             obj.track(outer1_6.APP_NOTICE_CLOSED, obj);
           }
           obj = { untilAtLeast: callback };
-          callback(tmp[10]).dismiss(obj);
+          callback(_undefined[10]).dismiss(obj);
         };
-        const obj4 = { width: 16, height: 16, color: tmp.closeIcon.color };
-        obj3.children = callback(navigateToPremium(1273).CloseIcon, obj4);
-        items2[1] = callback(navigateToPremium(4695).PressableOpacity, obj3);
-        const obj5 = { style: tmp.primaryCTA };
-        const intl2 = navigateToPremium(1212).intl;
-        obj5.text = intl2.string(navigateToPremium(1212).t.J61px0);
-        obj5.onPress = function onPress() {
+        const obj7 = { width: 16, height: 16, color: null };
+        obj7[2] = tmp3.closeIcon.color;
+        obj6[5] = closure_12(tmp4(1297).CloseIcon, obj7);
+        items2[1] = closure_12(tmp4(4717).PressableOpacity, obj6);
+        const obj8 = { style: null, text: null, onPress: null, renderIcon: null, renderLinearGradient: null };
+        obj8[0] = tmp3.primaryCTA;
+        const intl5 = tmp4(1236).intl;
+        obj8[1] = intl5.string(tmp4(1236).t.J61px0);
+        obj8[2] = function onPress() {
           if (null != stateFromStores) {
-            let obj = callback(tmp[11]);
-            obj = { notice_type: tmp, trial_id: tmp2 };
+            let obj = callback(_undefined[11]);
+            obj = { notice_type: null, trial_id: null };
+            obj[0] = tmp;
+            obj[1] = tmp2;
             obj.track(outer1_6.APP_NOTICE_PRIMARY_CTA_OPENED, obj);
           }
           navigateToPremium();
         };
-        obj5.renderIcon = function renderIcon() {
-          return outer1_12(navigateToPremium(tmp[23]).NitroWheelIcon, { color: "white", size: "sm" });
+        obj8[3] = function renderIcon() {
+          return callback2(navigateToPremium(_undefined[23]).NitroWheelIcon, { color: "white", size: "sm" });
         };
-        obj5.renderLinearGradient = function renderLinearGradient() {
-          const obj = { style: items, start: outer1_8.START, end: outer1_8.END };
-          items = [tmp.linearGradient];
-          tmp = callback(tmp[24]);
-          obj.colors = outer1_17(stateFromStores);
-          return outer1_12(tmp, obj);
+        obj8[4] = function renderLinearGradient() {
+          const obj = { style: items, start: outer1_8.START, end: outer1_8.END, colors: null };
+          items = [_undefined.linearGradient];
+          if (outer1_9.PREMIUM_TIER_0_TRIAL_ENDING === stateFromStores) {
+            let PREMIUM_TIER_2_TRI_COLOR = outer1_10.PREMIUM_TIER_0;
+          } else if (tmp4.PREMIUM_TIER_2_TRIAL_ENDING === tmp3) {
+            PREMIUM_TIER_2_TRI_COLOR = outer1_10.PREMIUM_TIER_2_TRI_COLOR;
+          } else {
+            const _Error = Error;
+            const _HermesInternal = HermesInternal;
+            const error = new Error("Unsupported notice type: " + tmp3);
+            throw error;
+          }
+          obj[3] = PREMIUM_TIER_2_TRI_COLOR;
+          return outer1_12(callback(_undefined[24]), obj);
         };
-        items2[2] = callback(navigateToPremium(1273).ShinyButton, obj5);
-        obj.children = items2;
-        const obj8 = navigateToPremium(3811);
-        const obj6 = { style: navigateToPremium.style, children: tmp12(tmp13, obj) };
-        return callback(importDefault(5544), obj6);
+        items2[2] = closure_12(tmp4(1297).ShinyButton, obj8);
+        obj4[0] = items2;
+        const tmp15 = closure_14;
+        const tmp16 = closure_13;
+        const tmp18 = premiumTrialOffer;
+        const tmpResult = tmp(1945);
+        const obj9 = { style: null, children: null };
+        obj9[0] = navigateToPremium.style;
+        obj9[1] = closure_14(closure_13, obj4);
+        return closure_12(tmp(5562), obj9);
       }
     }
     return null;
   } else {
     return null;
   }
-  tmp4Result = importDefault(6214)(num, closure_15);
+  const tmp7 = importDefault(6234);
 };

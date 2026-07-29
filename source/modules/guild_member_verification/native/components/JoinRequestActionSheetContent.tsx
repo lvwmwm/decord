@@ -1,20 +1,20 @@
-// Module ID: 15417
-// Function ID: 117395
+// Module ID: 15450
+// Function ID: 15451
 // Name: OpenInterviewButton
-// Dependencies: [31, 27, 1348, 5222, 5545, 33, 4165, 689, 8055, 8343, 8053, 8057, 8335, 15415, 8077, 8080, 11956, 12029, 12192, 566, 11702, 3984, 4578, 4664, 1212, 3985, 11973, 4161, 6715, 3835, 21, 4126, 5000, 6661, 4117, 4119, 1557, 15418, 2]
+// Dependencies: [19, 17, 1372, 5244, 5563, 21, 4189, 712, 8079, 8367, 8077, 8081, 8359, 15448, 8101, 8104, 11980, 12053, 12216, 589, 11726, 4008, 4600, 4686, 1236, 4009, 11997, 4185, 6736, 3859, 11, 4150, 5022, 6682, 4141, 4143, 1581, 15451, 2]
 
-// Module 15417 (OpenInterviewButton)
-import importAllResult from "CircleCheckIcon";
-import { View } from "Text";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 15450 (OpenInterviewButton)
+import importAllResult from "initialize";
+import { View } from "CustomStatusBubble";
+import ensureGuildLoaded from "ensureGuildLoaded";
 import { ACTION_SHEET_MAX_WIDTH } from "ACTION_SHEET_START_HEIGHT_RATIO";
 import { PROFILE_CONTENT_WITHOUT_STATUS_TOP_PADDING as closure_7 } from "ARBITRARY_LARGE_OFFSET";
-import jsxProd from "IconButton";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import jsxProd from "isActionedApplicationStatus";
+import createCacheKey from "createCacheKey";
 
-let closure_10;
-let closure_8;
-let closure_9;
+let c10;
+let c9;
+let metroImportAll;
 const require = arg1;
 function OpenInterviewButton(arg0) {
   let handleOpenInterview;
@@ -22,60 +22,62 @@ function OpenInterviewButton(arg0) {
   let label;
   let submitting;
   ({ joinRequest, label } = arg0);
-  const interviewChannelId = joinRequest.interviewChannelId;
-  let obj = interviewChannelId(566);
-  const items = [_isNativeReflectConstruct];
+  let interviewChannelId;
+  interviewChannelId = joinRequest.interviewChannelId;
+  let obj = interviewChannelId(589);
+  const items = [ensureGuildLoaded];
   const items1 = [interviewChannelId];
   const stateFromStores = obj.useStateFromStores(items, () => {
-    let tmp = null != interviewChannelId;
-    if (tmp) {
-      tmp = null != outer1_5.getChannel(interviewChannelId);
+    let tmp2 = null != interviewChannelId;
+    if (tmp2) {
+      tmp2 = null != outer1_5.getChannel(tmp);
     }
-    return tmp;
+    return tmp2;
   }, items1);
-  const joinRequestButtonActions = interviewChannelId(11702).useJoinRequestButtonActions(joinRequest, interviewChannelId);
+  const joinRequestButtonActions = interviewChannelId(11726).useJoinRequestButtonActions(joinRequest, interviewChannelId);
   ({ handleOpenInterview, submitting } = joinRequestButtonActions);
-  const obj2 = interviewChannelId(11702);
+  const obj2 = interviewChannelId(11726);
   if (!obj3.isActionedApplicationStatus(joinRequest.applicationStatus)) {
-    obj = { variant: "secondary", size: "md" };
-    obj = { color: importDefault(689).colors.CONTROL_SECONDARY_TEXT_DEFAULT, size: "sm" };
-    obj.icon = callback(interviewChannelId(4664).ChatIcon, obj);
-    if (null == label) {
-      const intl = interviewChannelId(1212).intl;
-      label = intl.string(interviewChannelId(1212).t["2simqN"]);
+    obj = { variant: "secondary", size: "md", icon: null, text: null, onPress: null, disabled: null };
+    obj = { color: null, size: "sm" };
+    obj[0] = importDefault(712).colors.CONTROL_SECONDARY_TEXT_DEFAULT;
+    obj[2] = callback(tmp(4686).ChatIcon, obj);
+    if (label == null) {
+      const intl = tmp(1236).intl;
+      label = intl.string(tmp(1236).t["2simqN"]);
     }
-    obj.text = label;
-    obj.onPress = handleOpenInterview;
-    obj.disabled = submitting;
-    let tmp4Result = callback(interviewChannelId(4578).Button, obj);
-    const tmp4 = callback;
+    obj[3] = label;
+    obj[4] = handleOpenInterview;
+    obj[5] = submitting;
+    let tmp6Result = callback(tmp(4600).Button, obj);
+    const tmp6 = callback;
   } else {
-    tmp4Result = null;
+    tmp6Result = null;
   }
-  return tmp4Result;
+  return tmp6Result;
 }
-({ jsx: closure_8, jsxs: closure_9, Fragment: closure_10 } = jsxProd);
-let obj = {};
-obj = { paddingHorizontal: 16, paddingTop: 24, borderTopColor: require("_createForOfIteratorHelperLoose").colors.BORDER_SUBTLE, borderTopWidth: 1 };
-obj.responsesContainer = obj;
-obj.formQuestion = { marginBottom: 8 };
-_createForOfIteratorHelperLoose = { padding: 12, width: "100%", borderRadius: require("_createForOfIteratorHelperLoose").radii.md, lineHeight: 20, backgroundColor: require("_createForOfIteratorHelperLoose").colors.INPUT_BACKGROUND_DEFAULT };
-obj.formResponse = _createForOfIteratorHelperLoose;
-obj.formResponseMargin = { marginBottom: 16 };
-obj.termsField = { flexDirection: "row", alignItems: "center", justifyContent: "space-between" };
-let obj2 = { flexDirection: "column", gap: 12, paddingHorizontal: 16, paddingVertical: 12, marginTop: 8, marginBottom: 16, marginHorizontal: 16, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SURFACE_HIGH, borderRadius: require("_createForOfIteratorHelperLoose").radii.md };
-obj.statusContainer = obj2;
-obj.statusRow = { flexDirection: "row", alignItems: "center", gap: 12 };
-obj.actionedInfo = { flexDirection: "row", gap: 8, alignItems: "center" };
-let obj3 = { height: 4, width: 4, borderRadius: require("_createForOfIteratorHelperLoose").radii.xs, backgroundColor: require("_createForOfIteratorHelperLoose").colors.TEXT_DEFAULT };
-obj.dot = obj3;
-obj.accountInfoLabel = { marginTop: 16, marginHorizontal: 16, marginBottom: 8 };
-let obj4 = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SURFACE_HIGH, marginHorizontal: 16, marginBottom: 16, borderRadius: require("_createForOfIteratorHelperLoose").radii.md };
-obj.accountInfoContainer = obj4;
-obj.accountInfoRow = { flexDirection: "row", justifyContent: "space-between", alignItems: "center", padding: 16 };
-let obj5 = { width: "100%", height: 1, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BORDER_SUBTLE };
-obj.divider = obj5;
-let closure_11 = _createForOfIteratorHelperLoose.createStyles(obj);
+let c3 = importAllResult;
+({ jsx: metroImportAll, jsxs: c9, Fragment: c10 } = jsxProd);
+let obj = { responsesContainer: null, formQuestion: null, formResponse: null, formResponseMargin: null, termsField: null, statusContainer: null, statusRow: null, actionedInfo: null, dot: null, accountInfoLabel: null, accountInfoContainer: null, accountInfoRow: null, divider: null };
+obj = { paddingHorizontal: 16, paddingTop: 24, borderTopColor: require("Themes").colors.BORDER_SUBTLE, borderTopWidth: 1 };
+obj[0] = obj;
+obj[1] = { marginBottom: 8 };
+createCacheKey = { padding: 12, width: "100%", borderRadius: require("Themes").radii.md, lineHeight: 20, backgroundColor: require("Themes").colors.INPUT_BACKGROUND_DEFAULT };
+obj[2] = createCacheKey;
+obj[3] = { marginBottom: 16 };
+obj[4] = { flexDirection: "row", alignItems: "center", justifyContent: "space-between" };
+obj[5] = { flexDirection: "column", gap: 12, paddingHorizontal: 16, paddingVertical: 12, marginTop: 8, marginBottom: 16, marginHorizontal: 16, backgroundColor: require("Themes").colors.BACKGROUND_SURFACE_HIGH, borderRadius: require("Themes").radii.md };
+obj[6] = { flexDirection: "row", alignItems: "center", gap: 12 };
+obj[7] = { flexDirection: "row", gap: 8, alignItems: "center" };
+let obj2 = { flexDirection: "column", gap: 12, paddingHorizontal: 16, paddingVertical: 12, marginTop: 8, marginBottom: 16, marginHorizontal: 16, backgroundColor: require("Themes").colors.BACKGROUND_SURFACE_HIGH, borderRadius: require("Themes").radii.md };
+obj[8] = { height: 4, width: 4, borderRadius: require("Themes").radii.xs, backgroundColor: require("Themes").colors.TEXT_DEFAULT };
+obj[9] = { marginTop: 16, marginHorizontal: 16, marginBottom: 8 };
+let obj3 = { height: 4, width: 4, borderRadius: require("Themes").radii.xs, backgroundColor: require("Themes").colors.TEXT_DEFAULT };
+obj[10] = { backgroundColor: require("Themes").colors.BACKGROUND_SURFACE_HIGH, marginHorizontal: 16, marginBottom: 16, borderRadius: require("Themes").radii.md };
+obj[11] = { flexDirection: "row", justifyContent: "space-between", alignItems: "center", padding: 16 };
+let obj4 = { backgroundColor: require("Themes").colors.BACKGROUND_SURFACE_HIGH, marginHorizontal: 16, marginBottom: 16, borderRadius: require("Themes").radii.md };
+obj[12] = { width: "100%", height: 1, backgroundColor: require("Themes").colors.BORDER_SUBTLE };
+let closure_11 = createCacheKey.createStyles(obj);
 let closure_12 = importAllResult.memo((user) => {
   let avatarBackground;
   let containerBackground;
@@ -85,49 +87,65 @@ let closure_12 = importAllResult.memo((user) => {
   let primaryColor;
   let secondaryColor;
   let statusBackground;
+  let theme;
   user = user.user;
   ({ displayProfile, joinRequest } = user);
-  const tmp = joinRequest(8055)();
-  const tmp3 = joinRequest(8053)({ user, displayProfile });
-  ({ primaryColor, secondaryColor } = tmp3);
-  let obj = user(8057);
-  const userProfileColors = obj.useUserProfileColors({ theme: tmp3.theme, primaryColor, secondaryColor });
+  const tmp3 = joinRequest(8079)();
+  const tmp4 = joinRequest(8367)(ACTION_SHEET_MAX_WIDTH);
+  ({ primaryColor, secondaryColor, theme } = joinRequest(8077)({ user, displayProfile }));
+  let obj = user(8081);
+  const userProfileColors = obj.useUserProfileColors({ theme, primaryColor, secondaryColor });
   const items = [joinRequest, user.id];
   ({ gradientFallbackBackground, containerBackground, avatarBackground, statusBackground } = userProfileColors);
-  let tmp6 = null;
+  let tmp9 = null;
   if (null != user) {
-    obj = {};
-    obj = { user, displayProfile, bannerHeight: tmp2 };
-    const items1 = [callback(joinRequest(8077), obj), ];
-    const obj1 = {};
-    const obj2 = { user, disableStatus: true, backgroundColor: avatarBackground };
-    const obj3 = { backgroundColor: statusBackground };
-    obj2.statusStyle = obj3;
-    obj2.onPress = tmp5;
-    const items2 = [callback(joinRequest(8080), obj2), ];
-    const obj4 = { fallbackBackground: gradientFallbackBackground, primaryColor, secondaryColor };
+    obj = { children: null };
+    obj = { user: null, displayProfile: null, bannerHeight: null };
+    obj[0] = user;
+    obj[1] = displayProfile;
+    obj[2] = tmp4;
+    const items1 = [callback(tmp(8101), obj), ];
+    const obj1 = { children: null };
+    const obj2 = { user: null, disableStatus: true, backgroundColor: null, statusStyle: null, onPress: null };
+    obj2[0] = user;
+    obj2[2] = avatarBackground;
+    const obj3 = { backgroundColor: null };
+    obj3[0] = statusBackground;
+    obj2[3] = obj3;
+    obj2[4] = tmp8;
+    const items2 = [callback(tmp(8104), obj2), ];
+    const obj4 = { fallbackBackground: null, primaryColor: null, secondaryColor: null, containerStyle: null, children: null };
+    obj4[0] = gradientFallbackBackground;
+    obj4[1] = primaryColor;
+    obj4[2] = secondaryColor;
     const items3 = [, , ];
-    ({ profileContentWrapper: arr4[0], profileContent: arr4[1] } = tmp);
-    const obj5 = { paddingTop: closure_7, paddingBottom: 0 };
+    ({ profileContentWrapper: arr4[0], profileContent: arr4[1] } = tmp3);
+    const obj5 = { paddingTop: null, paddingBottom: 0 };
+    obj5[0] = closure_7;
     items3[2] = obj5;
-    obj4.containerStyle = items3;
-    const obj6 = { style: tmp.primaryInfo };
-    const obj7 = { user, displayProfile, badgeContainerBackground: containerBackground, isPreviewingChanges: false };
-    const items4 = [callback(user(12029).PrimaryInfo, obj7), ];
-    const obj8 = { user };
-    items4[1] = callback(joinRequest(12192), obj8);
-    obj6.children = items4;
-    obj4.children = callback2(View, obj6);
-    items2[1] = callback(joinRequest(11956), obj4);
-    obj1.children = items2;
+    obj4[3] = items3;
+    const obj6 = { style: null, children: null };
+    obj6[0] = tmp3.primaryInfo;
+    const obj7 = { user: null, displayProfile: null, badgeContainerBackground: null, isPreviewingChanges: false };
+    obj7[0] = user;
+    obj7[1] = displayProfile;
+    obj7[2] = containerBackground;
+    const items4 = [callback(user(12053).PrimaryInfo, obj7), ];
+    const obj8 = { user: null };
+    obj8[0] = user;
+    items4[1] = callback(tmp(12216), obj8);
+    obj6[1] = items4;
+    obj4[4] = callback2(View, obj6);
+    items2[1] = callback(tmp(11980), obj4);
+    obj1[0] = items2;
     items1[1] = callback2(View, obj1);
-    obj.children = items1;
-    tmp6 = callback2(closure_10, obj);
-    const tmp15 = joinRequest(11956);
+    obj[0] = items1;
+    tmp9 = callback2(closure_10, obj);
+    const tmpResult = tmp(11980);
   }
-  return tmp6;
+  return tmp9;
 });
-let closure_13 = importAllResult.memo((joinRequest) => {
+let closure_14 = importAllResult.memo((joinRequest) => {
   let actionedAt;
   let actionedByUser;
   let applicationStatus;
@@ -135,343 +153,368 @@ let closure_13 = importAllResult.memo((joinRequest) => {
   joinRequest = joinRequest.joinRequest;
   ({ actionedAt, actionedByUser, rejectionReason, applicationStatus } = joinRequest);
   const tmp = callback3();
-  if (applicationStatus === require(3985) /* isTermsFormField */.GuildJoinRequestApplicationStatuses.SUBMITTED) {
+  if (applicationStatus === require(4009) /* MAX_RESULTS_PER_PAGE */.GuildJoinRequestApplicationStatuses.SUBMITTED) {
     if (null != joinRequest.interviewChannelId) {
-      let obj = { style: tmp.statusContainer };
-      obj = { style: tmp.statusRow };
-      const obj1 = { size: "lg", color: importDefault(689).colors.STATUS_WARNING };
-      const items = [callback(require(11973) /* HourglassIcon */.HourglassIcon, obj1), ];
-      const obj2 = {};
-      const obj3 = { variant: "text-md/medium", color: "mobile-text-heading-primary" };
-      const intl6 = require(1212) /* getSystemLocale */.intl;
-      obj3.children = intl6.string(require(1212) /* getSystemLocale */.t["Vr+7eO"]);
-      obj2.children = callback(require(4161) /* Text */.Text, obj3);
+      let obj = { style: null, children: null };
+      obj[0] = tmp.statusContainer;
+      obj = { style: null, children: null };
+      obj[0] = tmp.statusRow;
+      const obj1 = { size: "lg", color: null };
+      obj1[1] = importDefault(712).colors.STATUS_WARNING;
+      const items = [callback(tmp2(11997).HourglassIcon, obj1), ];
+      const obj2 = { children: null };
+      const obj3 = { variant: "text-md/medium", color: "mobile-text-heading-primary", children: null };
+      const intl6 = tmp2(1236).intl;
+      obj3[2] = intl6.string(tmp2(1236).t["Vr+7eO"]);
+      obj2[0] = callback(tmp2(4185).Text, obj3);
       items[1] = callback(View, obj2);
-      obj.children = items;
+      obj[1] = items;
       const items1 = [callback2(View, obj), ];
-      const obj4 = { joinRequest };
-      const intl7 = require(1212) /* getSystemLocale */.intl;
-      obj4.label = intl7.string(require(1212) /* getSystemLocale */.t.rcqdhN);
+      const obj4 = { joinRequest: null, label: null };
+      obj4[0] = joinRequest;
+      const intl7 = tmp2(1236).intl;
+      obj4[1] = intl7.string(tmp2(1236).t.rcqdhN);
       items1[1] = callback(OpenInterviewButton, obj4);
-      obj.children = items1;
+      obj[1] = items1;
       return callback2(View, obj);
     }
   }
-  if (require(3985) /* isTermsFormField */.GuildJoinRequestApplicationStatuses.REJECTED === applicationStatus) {
-    const obj5 = { style: tmp.statusContainer };
-    const obj6 = { style: tmp.statusRow };
-    const obj7 = { size: "lg", color: importDefault(689).colors.ICON_FEEDBACK_CRITICAL, secondaryColor: importDefault(689).colors.WHITE };
-    const items2 = [callback(require(6715) /* CircleXIcon */.CircleXIcon, obj7), ];
-    const obj8 = {};
-    const obj9 = { variant: "text-md/medium", color: "mobile-text-heading-primary" };
-    const intl3 = require(1212) /* getSystemLocale */.intl;
-    obj9.children = intl3.string(require(1212) /* getSystemLocale */.t.bSZkla);
-    const items3 = [callback(require(4161) /* Text */.Text, obj9), , ];
-    let tmp40Result = null;
+  if (require(4009) /* MAX_RESULTS_PER_PAGE */.GuildJoinRequestApplicationStatuses.REJECTED === applicationStatus) {
+    const obj5 = { style: null, children: null };
+    obj5[0] = tmp.statusContainer;
+    const obj6 = { style: null, children: null };
+    obj6[0] = tmp.statusRow;
+    const obj7 = { size: "lg", color: null, secondaryColor: null };
+    obj7[1] = importDefault(712).colors.ICON_FEEDBACK_CRITICAL;
+    obj7[2] = importDefault(712).colors.WHITE;
+    const items2 = [callback(tmp2(6736).CircleXIcon, obj7), ];
+    const obj8 = { variant: "text-md/medium", color: "mobile-text-heading-primary", children: null };
+    const intl3 = tmp2(1236).intl;
+    obj8[2] = intl3.string(tmp2(1236).t.bSZkla);
+    const items3 = [callback(tmp2(4185).Text, obj8), , ];
+    let tmp18Result = null;
     if (null != actionedByUser) {
-      tmp40Result = null;
+      tmp18Result = null;
       if (null != actionedAt) {
-        let obj10 = { style: tmp.actionedInfo };
-        let obj11 = { variant: "text-sm/normal", color: "text-default" };
-        const intl4 = require(1212) /* getSystemLocale */.intl;
-        const obj12 = {};
+        const obj9 = { style: null, children: null };
+        obj9[0] = tmp.actionedInfo;
+        const intl4 = tmp2(1236).intl;
         let username2 = actionedByUser.global_name;
-        if (null == username2) {
+        if (username2 == null) {
           username2 = actionedByUser.username;
         }
-        obj12.username = username2;
-        obj11.children = intl4.formatToPlainString(require(1212) /* getSystemLocale */.t.qnimbL, obj12);
-        const items4 = [callback(require(4161) /* Text */.Text, obj11), , ];
-        const obj13 = { style: tmp.dot };
-        items4[1] = callback(View, obj13);
-        const obj14 = { variant: "text-sm/normal", color: "text-default" };
-        let obj23 = require(3835) /* resetCache */;
+        const obj10 = { variant: "text-sm/normal", color: "text-default", children: null };
+        const obj11 = { username: null };
+        obj11[0] = username2;
+        obj10[2] = intl4.formatToPlainString(tmp2(1236).t.qnimbL, obj11);
+        const items4 = [tmp20(tmp2(4185).Text, obj10), , ];
+        const obj12 = { style: null };
+        obj12[0] = tmp.dot;
+        items4[1] = tmp20(tmp19, obj12);
+        const obj13 = { variant: "text-sm/normal", color: "text-default", children: null };
+        let tmp2Result = tmp2(3859);
         const _Date2 = Date;
-        let obj24 = importDefault(21);
-        const date = new Date(obj24.extractTimestamp(actionedAt));
-        obj14.children = obj23.dateFormat(date, "LL");
-        items4[2] = callback(require(4161) /* Text */.Text, obj14);
-        obj10.children = items4;
-        tmp40Result = callback2(View, obj10);
-        const tmp40 = callback2;
-        const tmp41 = View;
-        const tmp42 = callback;
+        const date = new Date(importDefault(11).extractTimestamp(actionedAt));
+        obj13[2] = tmp2Result.dateFormat(date, "LL");
+        items4[2] = tmp20(tmp2(4185).Text, obj13);
+        obj9[1] = items4;
+        tmp18Result = tmp18(tmp19, obj9);
+        const tmp21Result = importDefault(11);
       }
     }
-    items3[1] = tmp40Result;
-    let tmp56 = null != rejectionReason;
-    if (tmp56) {
-      const obj15 = { variant: "text-sm/normal", color: "text-default" };
-      const intl5 = require(1212) /* getSystemLocale */.intl;
-      const obj16 = { rejectionReason };
-      obj15.children = intl5.formatToPlainString(require(1212) /* getSystemLocale */.t.fU5PPM, obj16);
-      tmp56 = callback(require(4161) /* Text */.Text, obj15);
+    items3[1] = tmp18Result;
+    let tmp20Result = null != rejectionReason;
+    if (tmp20Result) {
+      const obj14 = { variant: "text-sm/normal", color: "text-default", children: null };
+      const intl5 = tmp2(1236).intl;
+      const obj15 = { rejectionReason: null };
+      obj15[0] = rejectionReason;
+      obj14[2] = intl5.formatToPlainString(tmp2(1236).t.fU5PPM, obj15);
+      tmp20Result = tmp20(tmp2(4185).Text, obj14);
     }
-    items3[2] = tmp56;
-    obj8.children = items3;
-    items2[1] = callback2(View, obj8);
-    obj6.children = items2;
+    const obj16 = { children: null };
+    items3[2] = tmp20Result;
+    obj16[0] = items3;
+    items2[1] = callback2(View, obj16);
+    obj6[1] = items2;
     const items5 = [callback2(View, obj6), ];
-    const obj17 = { joinRequest };
+    const obj17 = { joinRequest: null };
+    obj17[0] = joinRequest;
     items5[1] = callback(OpenInterviewButton, obj17);
-    obj5.children = items5;
+    obj5[1] = items5;
     return callback2(View, obj5);
-  } else if (require(3985) /* isTermsFormField */.GuildJoinRequestApplicationStatuses.APPROVED === applicationStatus) {
-    obj = { style: tmp.statusContainer };
-    const obj18 = { style: tmp.statusRow };
-    const obj19 = { size: "lg", color: importDefault(689).colors.STATUS_POSITIVE_BACKGROUND, secondaryColor: importDefault(689).colors.STATUS_POSITIVE_TEXT };
-    const items6 = [callback(require(4126) /* CircleCheckIcon */.CircleCheckIcon, obj19), ];
-    const obj20 = {};
-    const obj21 = { variant: "text-md/medium", color: "mobile-text-heading-primary" };
-    const intl = require(1212) /* getSystemLocale */.intl;
-    obj21.children = intl.string(require(1212) /* getSystemLocale */.t.aURgY2);
-    const items7 = [callback(require(4161) /* Text */.Text, obj21), ];
-    let tmp13Result = null;
+  } else if (tmp2(4009).GuildJoinRequestApplicationStatuses.APPROVED === applicationStatus) {
+    obj = { style: null, children: null };
+    obj[0] = tmp.statusContainer;
+    const obj18 = { style: null, children: null };
+    obj18[0] = tmp.statusRow;
+    const obj19 = { size: "lg", color: null, secondaryColor: null };
+    obj19[1] = importDefault(712).colors.STATUS_POSITIVE_BACKGROUND;
+    obj19[2] = importDefault(712).colors.STATUS_POSITIVE_TEXT;
+    const items6 = [callback(tmp2(4150).CircleCheckIcon, obj19), ];
+    const obj20 = { variant: "text-md/medium", color: "mobile-text-heading-primary", children: null };
+    const intl = tmp2(1236).intl;
+    obj20[2] = intl.string(tmp2(1236).t.aURgY2);
+    const items7 = [callback(tmp2(4185).Text, obj20), ];
+    let tmp6Result = null;
     if (null != actionedByUser) {
-      tmp13Result = null;
+      tmp6Result = null;
       if (null != actionedAt) {
-        const obj22 = { style: tmp.actionedInfo };
-        obj23 = { variant: "text-sm/normal", color: "text-default" };
-        const intl2 = require(1212) /* getSystemLocale */.intl;
-        obj24 = {};
+        const obj21 = { style: null, children: null };
+        obj21[0] = tmp.actionedInfo;
+        const intl2 = tmp2(1236).intl;
         let username = actionedByUser.global_name;
-        if (null == username) {
+        if (username == null) {
           username = actionedByUser.username;
         }
-        obj24.username = username;
-        obj23.children = intl2.formatToPlainString(require(1212) /* getSystemLocale */.t.qnimbL, obj24);
-        const items8 = [callback(require(4161) /* Text */.Text, obj23), , ];
-        const obj25 = { style: tmp.dot };
-        items8[1] = callback(View, obj25);
-        const obj26 = { variant: "text-sm/normal", color: "text-default" };
-        obj10 = require(3835) /* resetCache */;
+        const obj22 = { variant: "text-sm/normal", color: "text-default", children: null };
+        const obj23 = { username: null };
+        obj23[0] = username;
+        obj22[2] = intl2.formatToPlainString(tmp2(1236).t.qnimbL, obj23);
+        const items8 = [tmp8(tmp2(4185).Text, obj22), , ];
+        const obj24 = { style: null };
+        obj24[0] = tmp.dot;
+        items8[1] = tmp8(tmp7, obj24);
+        const obj25 = { variant: "text-sm/normal", color: "text-default", children: null };
+        tmp2Result = tmp2(3859);
         const _Date = Date;
-        obj11 = importDefault(21);
-        const date1 = new Date(obj11.extractTimestamp(actionedAt));
-        obj26.children = obj10.dateFormat(date1, "LL");
-        items8[2] = callback(require(4161) /* Text */.Text, obj26);
-        obj22.children = items8;
-        tmp13Result = callback2(View, obj22);
-        const tmp13 = callback2;
-        const tmp14 = View;
-        const tmp15 = callback;
+        const date1 = new Date(importDefault(11).extractTimestamp(actionedAt));
+        obj25[2] = tmp2Result.dateFormat(date1, "LL");
+        items8[2] = tmp8(tmp2(4185).Text, obj25);
+        obj21[1] = items8;
+        tmp6Result = tmp6(tmp7, obj21);
+        const tmp9Result = importDefault(11);
       }
     }
-    items7[1] = tmp13Result;
-    obj20.children = items7;
-    items6[1] = callback2(View, obj20);
-    obj18.children = items6;
+    const obj26 = { children: null };
+    items7[1] = tmp6Result;
+    obj26[0] = items7;
+    items6[1] = callback2(View, obj26);
+    obj18[1] = items6;
     const items9 = [callback2(View, obj18), ];
-    const obj27 = { joinRequest };
+    const obj27 = { joinRequest: null };
+    obj27[0] = joinRequest;
     items9[1] = callback(OpenInterviewButton, obj27);
-    obj.children = items9;
+    obj[1] = items9;
     return callback2(View, obj);
   } else {
     return null;
   }
 });
-let closure_14 = importAllResult.memo((joinRequest) => {
+let closure_15 = importAllResult.memo((joinRequest) => {
   let approveRequest;
   let handleOpenInterview;
   let rejectRequest;
+  let submitting;
   joinRequest = joinRequest.joinRequest;
   const items = [joinRequest];
   const callback = importAllResult.useCallback(() => {
     outer1_1(outer1_2[13])(joinRequest);
   }, items);
-  let obj = joinRequest(11702);
+  let obj = joinRequest(11726);
   const joinRequestButtonActions = obj.useJoinRequestButtonActions(joinRequest, joinRequest.interviewChannelId, callback);
-  const submitting = joinRequestButtonActions.submitting;
-  ({ approveRequest, rejectRequest, handleOpenInterview } = joinRequestButtonActions);
-  obj = { direction: "horizontal", align: "flex-start", justify: "space-evenly" };
-  obj = { variant: "primary" };
-  const obj1 = { color: importDefault(689).colors.WHITE, size: "lg" };
-  obj.icon = callback(joinRequest(4117).CheckmarkLargeIcon, obj1);
-  const intl = joinRequest(1212).intl;
-  obj.label = intl.string(joinRequest(1212).t.BzjDQJ);
-  obj.onPress = approveRequest;
-  obj.disabled = submitting;
-  const items1 = [callback(joinRequest(6661).IconButton, obj), , ];
-  const obj2 = { variant: "destructive" };
-  const obj3 = { color: importDefault(689).colors.WHITE, size: "lg" };
-  obj2.icon = callback(joinRequest(4119).XLargeIcon, obj3);
-  const intl2 = joinRequest(1212).intl;
-  obj2.label = intl2.string(joinRequest(1212).t.hDtbsz);
-  obj2.onPress = rejectRequest;
-  obj2.disabled = submitting;
-  items1[1] = callback(joinRequest(6661).IconButton, obj2);
-  let tmp4 = null == joinRequest.interviewChannelId;
-  if (tmp4) {
-    const obj4 = { variant: "secondary" };
-    const obj5 = { color: importDefault(689).colors.CONTROL_SECONDARY_TEXT_DEFAULT, size: "lg" };
-    obj4.icon = callback(joinRequest(4664).ChatIcon, obj5);
-    const intl3 = joinRequest(1212).intl;
-    obj4.label = intl3.string(joinRequest(1212).t.KQeYoC);
-    obj4.onPress = handleOpenInterview;
-    obj4.disabled = submitting;
-    tmp4 = callback(joinRequest(6661).IconButton, obj4);
+  ({ submitting, approveRequest, rejectRequest, handleOpenInterview } = joinRequestButtonActions);
+  obj = { variant: "primary", icon: null, label: null, onPress: null, disabled: null };
+  obj = { color: null, size: "lg" };
+  obj[0] = importDefault(712).colors.WHITE;
+  obj[1] = callback(joinRequest(4141).CheckmarkLargeIcon, obj);
+  const intl = joinRequest(1236).intl;
+  obj[2] = intl.string(joinRequest(1236).t.BzjDQJ);
+  obj[3] = approveRequest;
+  obj[4] = submitting;
+  const children = [callback(joinRequest(6682).IconButton, obj), , ];
+  const obj1 = { variant: "destructive", icon: null, label: null, onPress: null, disabled: null };
+  const obj2 = { color: null, size: "lg" };
+  obj2[0] = importDefault(712).colors.WHITE;
+  obj1[1] = callback(joinRequest(4143).XLargeIcon, obj2);
+  const intl2 = joinRequest(1236).intl;
+  obj1[2] = intl2.string(joinRequest(1236).t.hDtbsz);
+  obj1[3] = rejectRequest;
+  obj1[4] = submitting;
+  children[1] = callback(joinRequest(6682).IconButton, obj1);
+  let tmp6Result = null == joinRequest.interviewChannelId;
+  if (tmp6Result) {
+    const obj3 = { variant: "secondary", icon: null, label: null, onPress: null, disabled: null };
+    const obj4 = { color: null, size: "lg" };
+    obj4[0] = importDefault(712).colors.CONTROL_SECONDARY_TEXT_DEFAULT;
+    obj3[1] = tmp6(tmp2(4686).ChatIcon, obj4);
+    const intl3 = tmp2(1236).intl;
+    obj3[2] = intl3.string(tmp2(1236).t.KQeYoC);
+    obj3[3] = handleOpenInterview;
+    obj3[4] = submitting;
+    tmp6Result = tmp6(tmp2(6682).IconButton, obj3);
   }
-  items1[2] = tmp4;
-  obj.children = items1;
-  return closure_9(joinRequest(5000).ButtonGroup, obj);
+  children[2] = tmp6Result;
+  return closure_9(joinRequest(5022).ButtonGroup, { direction: "horizontal", align: "flex-start", justify: "space-evenly", children });
 });
-let closure_15 = importAllResult.memo((arg0) => {
+let closure_16 = importAllResult.memo((arg0) => {
   let field;
   let isLastField;
   ({ field, isLastField } = arg0);
   const tmp = callback3();
   const field_type = field.field_type;
-  if (require(3985) /* isTermsFormField */.VerificationFormFieldTypes.TERMS === field_type) {
-    let obj = {};
+  if (require(4009) /* MAX_RESULTS_PER_PAGE */.VerificationFormFieldTypes.TERMS === field_type) {
     const items = [, , ];
     ({ termsField: arr3[0], formResponse: arr3[1] } = tmp);
     let formResponseMargin = null;
     if (!isLastField) {
       formResponseMargin = tmp.formResponseMargin;
     }
+    let obj = { style: null, children: null };
     items[2] = formResponseMargin;
-    obj.style = items;
-    obj = { variant: "text-md/medium", color: "text-default", children: field.label };
-    const items1 = [callback(require(4161) /* Text */.Text, obj), ];
-    const obj1 = { size: "sm", color: importDefault(689).colors.STATUS_POSITIVE_BACKGROUND, secondaryColor: importDefault(689).colors.STATUS_POSITIVE_TEXT };
-    items1[1] = callback(require(4126) /* CircleCheckIcon */.CircleCheckIcon, obj1);
-    obj.children = items1;
+    obj[0] = items;
+    obj = { variant: "text-md/medium", color: "text-default", children: null };
+    obj[2] = field.label;
+    const items1 = [callback(tmp2(4185).Text, obj), ];
+    const obj1 = { size: "sm", color: null, secondaryColor: null };
+    obj1[1] = importDefault(712).colors.STATUS_POSITIVE_BACKGROUND;
+    obj1[2] = importDefault(712).colors.STATUS_POSITIVE_TEXT;
+    items1[1] = callback(tmp2(4150).CircleCheckIcon, obj1);
+    obj[1] = items1;
     return closure_9(View, obj);
-  } else if (require(3985) /* isTermsFormField */.VerificationFormFieldTypes.MULTIPLE_CHOICE === field_type) {
-    const obj2 = {};
-    const obj3 = { style: tmp.formQuestion, variant: "text-sm/semibold", color: "text-subtle", children: field.label };
-    const items2 = [callback(require(4161) /* Text */.Text, obj3), ];
-    const obj4 = {};
+  } else if (tmp2(4009).VerificationFormFieldTypes.MULTIPLE_CHOICE === field_type) {
+    const obj2 = { style: null, variant: "text-sm/semibold", color: "text-subtle", children: null };
+    obj2[0] = tmp.formQuestion;
+    obj2[3] = field.label;
+    const items2 = [callback(tmp2(4185).Text, obj2), ];
     const items3 = [tmp.formResponse, ];
     let formResponseMargin1 = null;
     if (!isLastField) {
       formResponseMargin1 = tmp.formResponseMargin;
     }
+    const obj3 = { style: null, children: null };
     items3[1] = formResponseMargin1;
-    obj4.style = items3;
-    const obj5 = { variant: "text-md/medium", color: "text-default" };
-    let tmp17 = null;
+    obj3[0] = items3;
+    let tmp10 = null;
     if (null != field.response) {
-      tmp17 = field.choices[field.response];
+      tmp10 = field.choices[field.response];
     }
-    obj5.children = tmp17;
-    obj4.children = callback(require(4161) /* Text */.Text, obj5);
-    items2[1] = callback(View, obj4);
-    obj2.children = items2;
-    return closure_9(View, obj2);
+    const obj4 = { children: null };
+    const obj5 = { variant: "text-md/medium", color: "text-default", children: null };
+    obj5[2] = tmp10;
+    obj3[1] = callback(tmp2(4185).Text, obj5);
+    items2[1] = callback(View, obj3);
+    obj4[0] = items2;
+    return closure_9(View, obj4);
   } else {
-    const obj6 = {};
-    const obj7 = { style: tmp.formQuestion, variant: "text-sm/semibold", color: "text-subtle", children: field.label };
-    const items4 = [callback(require(4161) /* Text */.Text, obj7), ];
-    const obj8 = {};
+    const obj6 = { style: null, variant: "text-sm/semibold", color: "text-subtle", children: null };
+    obj6[0] = tmp.formQuestion;
+    obj6[3] = field.label;
+    const items4 = [callback(tmp2(4185).Text, obj6), ];
     const items5 = [tmp.formResponse, ];
     let formResponseMargin2 = null;
     if (!isLastField) {
       formResponseMargin2 = tmp.formResponseMargin;
     }
+    obj = { children: null };
+    const obj7 = { style: null, children: null };
     items5[1] = formResponseMargin2;
-    obj8.style = items5;
-    obj = { variant: "text-md/medium", color: "text-default", children: field.response };
-    obj8.children = callback(require(4161) /* Text */.Text, obj);
-    items4[1] = callback(View, obj8);
-    obj6.children = items4;
-    return closure_9(View, obj6);
+    obj7[0] = items5;
+    const obj8 = { variant: "text-md/medium", color: "text-default", children: null };
+    obj8[2] = field.response;
+    obj7[1] = callback(tmp2(4185).Text, obj8);
+    items4[1] = callback(View, obj7);
+    obj[0] = items4;
+    return closure_9(View, obj);
   }
 });
-let closure_16 = importAllResult.memo((arg0) => {
+let closure_17 = importAllResult.memo((arg0) => {
   let joinRequest;
   let user;
   ({ joinRequest, user } = arg0);
   const tmp = callback3();
-  let obj = {};
-  obj = { variant: "text-sm/semibold", color: "text-subtle", style: tmp.accountInfoLabel };
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj.children = intl.string(require(1212) /* getSystemLocale */.t["ldCE/p"]);
-  const items = [callback(require(4161) /* Text */.Text, obj), ];
-  obj = { style: tmp.accountInfoContainer };
-  const obj1 = { style: tmp.accountInfoRow };
-  const obj2 = { variant: "text-sm/semibold", color: "text-strong" };
-  const intl2 = require(1212) /* getSystemLocale */.intl;
-  obj2.children = intl2.string(require(1212) /* getSystemLocale */.t.SaDIpL);
-  const items1 = [callback(require(4161) /* Text */.Text, obj2), ];
-  const obj3 = { variant: "text-sm/normal", color: "text-subtle" };
-  let obj6 = require(3835) /* resetCache */;
-  let obj7 = importDefault(21);
-  obj3.children = obj6.dateFormat(new Date(obj7.extractTimestamp(user.id)), "LL");
-  items1[1] = callback(require(4161) /* Text */.Text, obj3);
-  obj1.children = items1;
+  let obj = { children: null };
+  obj = { variant: "text-sm/semibold", color: "text-subtle", style: tmp.accountInfoLabel, children: null };
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj[3] = intl.string(require(1236) /* getSystemLocale */.t["ldCE/p"]);
+  const items = [callback(require(4185) /* Text */.Text, obj), ];
+  obj = { style: tmp.accountInfoContainer, children: null };
+  const obj1 = { style: tmp.accountInfoRow, children: null };
+  const obj2 = { variant: "text-sm/semibold", color: "text-strong", children: null };
+  const intl2 = require(1236) /* getSystemLocale */.intl;
+  obj2[2] = intl2.string(require(1236) /* getSystemLocale */.t.SaDIpL);
+  const items1 = [callback(require(4185) /* Text */.Text, obj2), ];
+  const obj3 = { variant: "text-sm/normal", color: "text-subtle", children: null };
+  let obj6 = require(3859) /* resetCache */;
+  let obj7 = importDefault(11);
+  obj3[2] = obj6.dateFormat(new Date(obj7.extractTimestamp(user.id)), "LL");
+  items1[1] = callback(require(4185) /* Text */.Text, obj3);
+  obj1[1] = items1;
   const items2 = [callback2(View, obj1), callback(View, { style: tmp.divider }), ];
-  const obj5 = { style: tmp.accountInfoRow };
-  obj6 = { variant: "text-sm/semibold", color: "text-strong" };
-  const intl3 = require(1212) /* getSystemLocale */.intl;
-  obj6.children = intl3.string(require(1212) /* getSystemLocale */.t["Vt4cn+"]);
-  const items3 = [callback(require(4161) /* Text */.Text, obj6), ];
-  obj7 = { variant: "text-sm/normal", color: "text-subtle" };
+  const obj5 = { style: tmp.accountInfoRow, children: null };
+  obj6 = { variant: "text-sm/semibold", color: "text-strong", children: null };
+  const intl3 = require(1236) /* getSystemLocale */.intl;
+  obj6[2] = intl3.string(require(1236) /* getSystemLocale */.t["Vt4cn+"]);
+  const items3 = [callback(require(4185) /* Text */.Text, obj6), ];
+  obj7 = { variant: "text-sm/normal", color: "text-subtle", children: null };
   const date = new Date(obj7.extractTimestamp(user.id));
   const obj4 = { style: tmp.divider };
-  const obj13 = require(3835) /* resetCache */;
-  obj7.children = obj13.dateFormat(new Date(joinRequest.createdAt), "LL");
-  items3[1] = callback(require(4161) /* Text */.Text, obj7);
-  obj5.children = items3;
+  const obj13 = require(3859) /* resetCache */;
+  obj7[2] = obj13.dateFormat(new Date(joinRequest.createdAt), "LL");
+  items3[1] = callback(require(4185) /* Text */.Text, obj7);
+  obj5[1] = items3;
   items2[2] = callback2(View, obj5);
-  obj.children = items2;
+  obj[1] = items2;
   items[1] = callback2(View, obj);
-  obj.children = items;
+  obj[0] = items;
   return callback2(closure_10, obj);
 });
+let obj5 = { width: "100%", height: 1, backgroundColor: require("Themes").colors.BORDER_SUBTLE };
 const memoResult = importAllResult.memo(function JoinRequestActionSheetContent(displayProfile) {
   let joinRequest;
   let user;
   ({ user, joinRequest } = displayProfile);
   let memo;
   let formResponses;
-  if (null != joinRequest) {
+  if (joinRequest != null) {
     formResponses = joinRequest.formResponses;
   }
   const items = [formResponses];
   memo = importAllResult.useMemo(() => {
     let formResponses;
-    if (null != joinRequest) {
+    if (joinRequest != null) {
       formResponses = joinRequest.formResponses;
     }
-    if (null == formResponses) {
+    if (formResponses == null) {
       formResponses = [];
     }
     return formResponses;
   }, items);
-  let obj = { style: { paddingBottom: memo(1557)().bottom } };
+  let obj = { style: { paddingBottom: memo(1581)().bottom }, children: null };
   const items1 = [callback(closure_12, { joinRequest, user, displayProfile: displayProfile.displayProfile }), , , , ];
-  if (joinRequest.applicationStatus === joinRequest(3985).GuildJoinRequestApplicationStatuses.SUBMITTED) {
-    obj = {};
-    let tmp11 = null != joinRequest.interviewChannelId;
-    if (tmp11) {
-      obj = { joinRequest };
-      tmp11 = callback(closure_13, obj);
+  if (joinRequest.applicationStatus === joinRequest(4009).GuildJoinRequestApplicationStatuses.SUBMITTED) {
+    let tmp8Result = null != joinRequest.interviewChannelId;
+    if (tmp8Result) {
+      obj = { joinRequest: null };
+      obj[0] = joinRequest;
+      tmp8Result = tmp8(closure_14, obj);
     }
-    const items2 = [tmp11, ];
-    const obj1 = { joinRequest };
-    items2[1] = callback(closure_14, obj1);
-    obj.children = items2;
-    let tmp9Result = closure_9(closure_10, obj);
-    const tmp10 = closure_10;
-    const tmp9 = closure_9;
+    obj = { children: null };
+    const items2 = [tmp8Result, ];
+    const obj1 = { joinRequest: null };
+    obj1[0] = joinRequest;
+    items2[1] = tmp8(closure_15, obj1);
+    obj[0] = items2;
+    tmp8Result = tmp6(closure_10, obj);
+    const tmp11 = closure_10;
   } else {
-    const obj2 = { joinRequest };
-    tmp9Result = callback(closure_13, obj2);
+    const obj2 = { joinRequest: null };
+    obj2[0] = joinRequest;
+    tmp8Result = tmp8(closure_14, obj2);
   }
-  items1[1] = tmp9Result;
-  const obj3 = { style: callback3().responsesContainer };
+  items1[1] = tmp8Result;
+  const obj3 = { style: callback3().responsesContainer, children: null };
   let mapped;
-  if (null != memo) {
-    mapped = memo.map((field) => outer1_8(outer1_15, { field, isLastField: arg1 === memo.length - 1 }, "response-" + arg1 + "-" + field.field_type + "-" + field.label + "-" + arg1 === memo.length - 1));
+  if (memo != null) {
+    mapped = memo.map((field) => outer1_8(outer1_16, { field, isLastField: arg1 === memo.length - 1 }, "response-" + arg1 + "-" + field.field_type + "-" + field.label + "-" + arg1 === memo.length - 1));
   }
-  obj3.children = mapped;
+  obj3[1] = mapped;
   items1[2] = callback(View, obj3);
-  items1[3] = callback(closure_16, { joinRequest, user });
-  items1[4] = callback(memo(15418), { guildId: joinRequest.guildId, userId: joinRequest.userId, selectedJoinRequestId: joinRequest.joinRequestId });
-  obj.children = items1;
+  items1[3] = callback(closure_17, { joinRequest, user });
+  items1[4] = callback(memo(15451), { guildId: joinRequest.guildId, userId: joinRequest.userId, selectedJoinRequestId: joinRequest.joinRequestId });
+  obj[1] = items1;
   return closure_9(View, obj);
 });
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/guild_member_verification/native/components/JoinRequestActionSheetContent.tsx");
+const result = require("ensureGuildLoaded").fileFinishedImporting("modules/guild_member_verification/native/components/JoinRequestActionSheetContent.tsx");
 
 export default memoResult;

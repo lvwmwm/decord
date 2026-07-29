@@ -1,10 +1,12 @@
-// Module ID: 15845
-// Function ID: 122127
-// Dependencies: [1325, 2]
+// Module ID: 15880
+// Function ID: 15881
+// Name: getUnitId
+// Dependencies: [1349, 2]
 
-// Module 15845
-const obj = { kind: "user", name: "2026-02-mobile-mute-indicator", defaultConfig: { enableMuteWarning: false }, variations: { [1]: { enableMuteWarning: true } } };
-const tmp2 = require("getUnitId")(obj);
+// Module 15880 (getUnitId)
+const obj = { 1: null };
+obj[1] = { enableMuteWarning: true };
+const tmp2 = require("getUnitId")({ kind: "user", name: "2026-02-mobile-mute-indicator", defaultConfig: { enableMuteWarning: false }, variations: obj });
 const result = require("set").fileFinishedImporting("modules/calls/MobileMuteIndicatorExperiment.tsx");
 
 export default tmp2;

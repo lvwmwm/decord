@@ -1,20 +1,20 @@
-// Module ID: 16566
-// Function ID: 128955
+// Module ID: 16601
+// Function ID: 16602
 // Name: Row
-// Dependencies: [31, 27, 14223, 653, 33, 4165, 689, 5087, 3883, 8316, 1273, 16567, 1212, 16568, 2]
+// Dependencies: [19, 17, 14245, 676, 21, 4189, 712, 5109, 3907, 8340, 1297, 16602, 1236, 16603, 2]
 // Exports: default
 
-// Module 16566 (Row)
-import "result";
+// Module 16601 (Row)
+import "noop";
 import { View } from "get ActivityIndicator";
 import { AllChannelAccessOptions } from "AllChannelAccessOptions";
 import { Fonts } from "ME";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 import importDefaultResult from "createTextStyle";
 import importDefaultResult1 from "createTextStyle";
 
-let closure_5;
+let c5;
 let closure_6;
 const require = arg1;
 function Row(arg0) {
@@ -30,51 +30,49 @@ function Row(arg0) {
   if (disabled === undefined) {
     disabled = false;
   }
-  const tmp = _createForOfIteratorHelperLoose();
-  let obj = require(3883) /* useCheckboxA11yNative */;
-  obj = { selected, disabled };
-  const radioA11yNative = obj.useRadioA11yNative(obj);
+  const tmp = createCacheKey();
+  let obj = require(3907) /* useCheckboxA11yNative */;
+  const radioA11yNative = obj.useRadioA11yNative({ selected, disabled });
   ({ accessibilityRole, accessibilityState } = radioA11yNative);
-  obj = { style: tmp.row, accessibilityRole, accessibilityState };
-  let tmp5 = selected;
+  obj = { style: tmp.row, accessibilityRole, accessibilityState, disabled: null, onPress: null, children: null };
+  let tmp7 = selected;
   if (!selected) {
-    tmp5 = disabled;
+    tmp7 = disabled;
   }
-  obj.disabled = tmp5;
-  obj.onPress = onPress;
-  const obj1 = { size: require(1273) /* Button */.Icon.Sizes.MEDIUM, source: icon };
-  const items = [callback(require(1273) /* Button */.Icon, obj1), , ];
-  const obj2 = { style: null, numberOfLines: 1, ellipsizeMode: "tail" };
+  obj[3] = tmp7;
+  obj[4] = onPress;
+  obj = { size: null, source: null };
+  obj[0] = require(1297) /* Button */.Icon.Sizes.MEDIUM;
+  obj[1] = icon;
+  const items = [callback(require(1297) /* Button */.Icon, obj), , ];
   const items1 = [tmp.rowLabel, ];
   let rowLabelSelected = selected;
   if (selected) {
     rowLabelSelected = tmp.rowLabelSelected;
   }
   items1[1] = rowLabelSelected;
-  obj2.style = items1;
-  obj2.children = label;
-  items[1] = callback(require(1273) /* Button */.LegacyText, obj2);
-  items[2] = callback(require(1273) /* Button */.RadioIndicator, { style: tmp.rowIndicator, active: selected });
-  obj.children = items;
-  return closure_6(importDefault(8316), obj);
+  items[1] = callback(require(1297) /* Button */.LegacyText, { style: items1, numberOfLines: 1, ellipsizeMode: "tail", children: label });
+  items[2] = callback(require(1297) /* Button */.RadioIndicator, { style: tmp.rowIndicator, active: selected });
+  obj[5] = items;
+  return closure_6(importDefault(8340), obj);
 }
-({ jsx: closure_5, jsxs: closure_6 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SURFACE_HIGH, borderRadius: require("_createForOfIteratorHelperLoose").radii.sm };
-_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.row = { alignSelf: "stretch", alignItems: "center", flexDirection: "row", justifyContent: "flex-start", padding: 16 };
+({ jsx: c5, jsxs: closure_6 } = jsxProd);
+createCacheKey = { container: null, row: null, rowLabel: null, rowLabelSelected: null, rowIndicator: null, separator: null };
+createCacheKey = { backgroundColor: require("Themes").colors.BACKGROUND_SURFACE_HIGH, borderRadius: require("Themes").radii.sm };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { alignSelf: "stretch", alignItems: "center", flexDirection: "row", justifyContent: "flex-start", padding: 16 };
 let obj1 = {};
-const merged = Object.assign(require("createTextStyle")(Fonts.PRIMARY_MEDIUM, require("_createForOfIteratorHelperLoose").colors.TEXT_SUBTLE, 16));
-obj1["flexShrink"] = 1;
-obj1["marginHorizontal"] = 16;
-_createForOfIteratorHelperLoose.rowLabel = obj1;
-let obj2 = {};
-const merged1 = Object.assign(require("createTextStyle")(Fonts.PRIMARY_SEMIBOLD, require("_createForOfIteratorHelperLoose").colors.MOBILE_TEXT_HEADING_PRIMARY, 16));
-_createForOfIteratorHelperLoose.rowLabelSelected = obj2;
-_createForOfIteratorHelperLoose.rowIndicator = { marginStart: "auto" };
-const obj3 = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BORDER_SUBTLE, height: 1, marginStart: 56 };
-_createForOfIteratorHelperLoose.separator = obj3;
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+const merged = Object.assign(require("createTextStyle")(Fonts.PRIMARY_MEDIUM, require("Themes").colors.TEXT_SUBTLE, 16));
+obj1.flexShrink = 1;
+obj1.marginHorizontal = 16;
+createCacheKey[2] = obj1;
+const obj2 = {};
+const merged1 = Object.assign(require("createTextStyle")(Fonts.PRIMARY_SEMIBOLD, require("Themes").colors.MOBILE_TEXT_HEADING_PRIMARY, 16));
+createCacheKey[3] = obj2;
+createCacheKey[4] = { marginStart: "auto" };
+createCacheKey[5] = { backgroundColor: require("Themes").colors.BORDER_SUBTLE, height: 1, marginStart: 56 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+const obj3 = { backgroundColor: require("Themes").colors.BORDER_SUBTLE, height: 1, marginStart: 56 };
 const result = require("AllChannelAccessOptions").fileFinishedImporting("modules/guild_role_subscriptions/native/components/AllChannelsSwitch.tsx");
 
 export default function AllChannelsSwitch(style) {
@@ -85,28 +83,29 @@ export default function AllChannelsSwitch(style) {
   if (disabled === undefined) {
     disabled = false;
   }
-  const tmp = _createForOfIteratorHelperLoose();
-  obj = { style: items, accessibilityRole: "radiogroup", accessibilityState: obj };
+  const tmp = createCacheKey();
+  let obj = { style: items, accessibilityRole: "radiogroup", accessibilityState: { disabled }, children: null };
   items = [tmp.container, style.style];
-  obj = { disabled };
-  obj = { icon: importDefault(16567) };
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj.label = intl.string(require(1212) /* getSystemLocale */.t["vs2T+B"]);
-  obj.selected = channelAccessFormat === AllChannelAccessOptions.SOME_CHANNELS_ACCESS;
-  obj.onPress = function onPress() {
+  obj = { icon: importDefault(16602), label: null, selected: null, onPress: null, disabled: null };
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj[1] = intl.string(require(1236) /* getSystemLocale */.t["vs2T+B"]);
+  obj[2] = channelAccessFormat === AllChannelAccessOptions.SOME_CHANNELS_ACCESS;
+  obj[3] = function onPress() {
     return callback(outer1_4.SOME_CHANNELS_ACCESS);
   };
-  obj.disabled = disabled;
-  const items1 = [callback(Row, obj), callback(View, { style: tmp.separator }), ];
-  const obj2 = { icon: importDefault(16568) };
-  const intl2 = require(1212) /* getSystemLocale */.intl;
-  obj2.label = intl2.string(require(1212) /* getSystemLocale */.t.l4Tr7X);
-  obj2.selected = channelAccessFormat === AllChannelAccessOptions.ALL_CHANNELS_ACCESS;
-  obj2.onPress = function onPress() {
+  obj[4] = disabled;
+  const items1 = [callback(Row, obj), , ];
+  obj = { style: tmp.separator };
+  items1[1] = callback(View, obj);
+  const obj1 = { icon: importDefault(16603), label: null, selected: null, onPress: null, disabled: null };
+  const intl2 = require(1236) /* getSystemLocale */.intl;
+  obj1[1] = intl2.string(require(1236) /* getSystemLocale */.t.l4Tr7X);
+  obj1[2] = channelAccessFormat === AllChannelAccessOptions.ALL_CHANNELS_ACCESS;
+  obj1[3] = function onPress() {
     return callback(outer1_4.ALL_CHANNELS_ACCESS);
   };
-  obj2.disabled = disabled;
-  items1[2] = callback(Row, obj2);
-  obj.children = items1;
+  obj1[4] = disabled;
+  items1[2] = callback(Row, obj1);
+  obj[3] = items1;
   return callback2(View, obj);
 };

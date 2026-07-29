@@ -1,100 +1,56 @@
-// Module ID: 15634
-// Function ID: 120384
-// Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 15635, 22, 566, 686, 2]
+// Module ID: 15669
+// Function ID: 15670
+// Name: handleWebhookCreateUpdate
+// Dependencies: [15670, 12, 589, 709, 2]
 
-// Module 15634 (_isNativeReflectConstruct)
-import apply from "apply";
-import initialize from "initialize";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
+// Module 15669 (handleWebhookCreateUpdate)
+import { Store } from "initialize";
 
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
+function handleWebhookCreateUpdate(arg0) {
+  let guildId;
+  let webhook;
+  ({ guildId, webhook } = arg0);
+  if (null == dependencyMap[guildId]) {
+    tmp[guildId] = {};
   }
-  const result = _isNativeReflectConstruct();
+  dependencyMap[guildId][webhook.id] = webhook;
 }
-function fetchingKey(guildId, channelId) {
-  let str = channelId;
-  if (null == channelId) {
+let closure_3 = {};
+let closure_4 = {};
+class WebhooksStore extends Store {
+}
+const prototype = WebhooksStore.prototype;
+prototype["isFetching"] = function isFetching(arg0, arg1) {
+  let str = arg1;
+  if (null == arg1) {
     str = "guild";
   }
-  return "" + guildId + ":" + str;
-}
-function getOrCreateGuild(guildId) {
-  if (null == dependencyMap[guildId]) {
-    dependencyMap[guildId] = {};
+  return null != closure_4["" + arg0 + ":" + str];
+};
+prototype["getWebhooksForGuild"] = function getWebhooksForGuild(arg0) {
+  if (null == dependencyMap[arg0]) {
+    tmp[arg0] = {};
   }
-  return dependencyMap[guildId];
-}
-function handleWebhookCreateUpdate(webhook) {
-  webhook = webhook.webhook;
-  getOrCreateGuild(webhook.guildId)[webhook.id] = webhook;
-}
-let closure_8 = {};
-let closure_9 = {};
-let tmp2 = ((Store) => {
-  class WebhooksStore {
-    constructor() {
-      self = this;
-      tmp = outer1_2(this, WebhooksStore);
-      obj = outer1_5(WebhooksStore);
-      tmp2 = outer1_4;
-      if (outer1_10()) {
-        tmp6 = globalThis;
-        _Reflect = Reflect;
-        tmp7 = outer1_5;
-        tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, outer1_5(self).constructor);
-      } else {
-        tmp3 = arguments;
-        tmp4 = arguments;
-        constructResult = obj(...arguments);
-      }
-      return tmp2(self, constructResult);
-    }
+  return importDefault(12).values(dependencyMap[arg0]);
+};
+prototype["getWebhooksForChannel"] = function getWebhooksForChannel(arg0, arg1) {
+  const importDefault = arg1;
+  if (null == dependencyMap[arg0]) {
+    tmp2[arg0] = {};
   }
-  callback2(WebhooksStore, Store);
-  let obj = {
-    key: "isFetching",
-    value(arg0, arg1) {
-      return null != outer1_9[outer1_11(undefined, arg0, arg1)];
-    }
-  };
-  const items = [obj, , , ];
-  obj = {
-    key: "getWebhooksForGuild",
-    value(arg0) {
-      return WebhooksStore(outer1_1[6]).values(outer1_12(arg0));
-    }
-  };
-  items[1] = obj;
-  obj = {
-    key: "getWebhooksForChannel",
-    value(arg0, arg1) {
-      let closure_0 = arg1;
-      const tmp = WebhooksStore(outer1_1[6]);
-      const values = WebhooksStore(outer1_1[6])(outer1_12(arg0)).values();
-      const tmpResult = WebhooksStore(outer1_1[6])(outer1_12(arg0));
-      return values.filter((channel_id) => channel_id.channel_id === closure_0).value();
-    }
-  };
-  items[2] = obj;
-  items[3] = {
-    key: "error",
-    get() {
-      return outer1_7;
-    }
-  };
-  return callback(WebhooksStore, items);
-})(require("initialize").Store);
-tmp2.displayName = "WebhooksStore";
-tmp2 = new tmp2(require("dispatcher"), {
+  const tmp = importDefault(12);
+  const values = importDefault(12)(dependencyMap[arg0]).values();
+  const tmpResult = importDefault(12)(dependencyMap[arg0]);
+  return values.filter((channel_id) => channel_id.channel_id === closure_0).value();
+};
+Object.defineProperty(prototype, "error", {
+  get: function error() {
+    return closure_2;
+  },
+  set: undefined
+});
+WebhooksStore.displayName = "WebhooksStore";
+const webhooksStore = new WebhooksStore(require("dispatcher"), {
   WEBHOOKS_UPDATE: function handleWebhooksUpdate(arg0) {
     let channelId;
     let error;
@@ -104,12 +60,15 @@ tmp2 = new tmp2(require("dispatcher"), {
     ({ webhooks, error } = arg0);
     let obj;
     if (null != webhooks) {
-      let c7 = null;
+      let c2 = null;
       let items = [];
       if (null != channelId) {
-        const tmp14 = channelId(obj[6]);
-        const values = channelId(obj[6])(getOrCreateGuild(guildId)).values();
-        const tmp14Result = channelId(obj[6])(getOrCreateGuild(guildId));
+        if (null == dependencyMap[guildId]) {
+          tmp16[guildId] = {};
+        }
+        const tmp15 = channelId(obj[1]);
+        const values = channelId(obj[1])(dependencyMap[guildId]).values();
+        const tmp15Result = channelId(obj[1])(dependencyMap[guildId]);
         items = values.filter((channel_id) => channel_id.channel_id !== channelId).value();
         const iter = values.filter((channel_id) => channel_id.channel_id !== channelId);
       }
@@ -120,34 +79,53 @@ tmp2 = new tmp2(require("dispatcher"), {
         obj[id.id] = id;
         return id;
       });
-      fetchingKey(guildId, channelId);
+      let str4 = channelId;
+      if (null == channelId) {
+        str4 = "guild";
+      }
+      const _HermesInternal2 = HermesInternal;
+      const combined1 = "" + guildId + ":" + str4;
       delete tmp2[tmp];
     } else if (null != error) {
-      c7 = error;
-      fetchingKey(guildId, channelId);
-      delete tmp3[tmp];
-    } else {
-      let tmp4 = null != channelId;
-      if (tmp4) {
-        tmp4 = null != dependencyMap[guildId];
+      c2 = error;
+      let str = channelId;
+      if (null == channelId) {
+        str = "guild";
       }
-      if (tmp4) {
-        c7 = null;
-        obj = channelId(obj[5]);
+      const _HermesInternal = HermesInternal;
+      const combined2 = "" + guildId + ":" + str;
+      delete tmp4[tmp3];
+    } else {
+      let tmp5 = null != channelId;
+      if (tmp5) {
+        tmp5 = null != dependencyMap[guildId];
+      }
+      if (tmp5) {
+        c2 = null;
+        obj = channelId(obj[0]);
         const forChannel = obj.fetchForChannel(guildId, channelId);
       }
     }
   },
-  WEBHOOKS_FETCHING: function handleWebhooksFetching(guildId) {
-    closure_9[fetchingKey(guildId.guildId, guildId.channelId)] = true;
+  WEBHOOKS_FETCHING: function handleWebhooksFetching(channelId) {
+    let str = channelId.channelId;
+    if (null == str) {
+      str = "guild";
+    }
+    closure_4["" + channelId.guildId + ":" + str] = true;
   },
   WEBHOOK_CREATE: handleWebhookCreateUpdate,
   WEBHOOK_UPDATE: handleWebhookCreateUpdate,
-  WEBHOOK_DELETE: function handleWebhookDelete(guildId) {
-    getOrCreateGuild(guildId.guildId);
+  WEBHOOK_DELETE: function handleWebhookDelete(arg0) {
+    let guildId;
+    let webhookId;
+    ({ guildId, webhookId } = arg0);
+    if (null == dependencyMap[guildId]) {
+      dependencyMap[guildId] = {};
+    }
     delete tmp[tmp2];
   }
 });
-let result = require("_possibleConstructorReturn").fileFinishedImporting("stores/WebhooksStore.tsx");
+const result = require("initialize").fileFinishedImporting("stores/WebhooksStore.tsx");
 
-export default tmp2;
+export default webhooksStore;

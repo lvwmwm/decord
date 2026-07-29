@@ -1,11 +1,11 @@
-// Module ID: 15086
-// Function ID: 114818
+// Module ID: 15119
+// Function ID: 15120
 // Name: useStickyServerHeaderSubtitle
-// Dependencies: [4086, 653, 566, 2]
+// Dependencies: [4110, 676, 589, 2]
 // Exports: default
 
-// Module 15086 (useStickyServerHeaderSubtitle)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 15119 (useStickyServerHeaderSubtitle)
+import handleInviteData from "handleInviteData";
 import { GuildFeatures } from "ME";
 
 const require = arg1;
@@ -13,12 +13,12 @@ const result = require("initialize").fileFinishedImporting("modules/channel_list
 
 export default function useStickyServerHeaderSubtitle(arg0) {
   const _require = arg0;
-  const items = [_isNativeReflectConstruct];
-  return _require(566).useStateFromStores(items, () => {
-    const features = closure_0.features;
+  const items = [handleInviteData];
+  return _require(589).useStateFromStores(items, () => {
+    features = features.features;
     let memberCount;
     if (features.has(outer1_3.COMMUNITY)) {
-      memberCount = outer1_2.getMemberCount(closure_0.id);
+      memberCount = outer1_2.getMemberCount(features.id);
     }
     return memberCount;
   });

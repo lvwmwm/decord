@@ -1,70 +1,148 @@
-// Module ID: 6134
-// Function ID: 54643
+// Module ID: 6153
+// Function ID: 6154
 // Name: _stageAttachmentFiles
-// Dependencies: [5, 653, 4699, 2]
+// Dependencies: [5, 676, 4721, 2]
 // Exports: default
 
-// Module 6134 (_stageAttachmentFiles)
+// Module 6153 (_stageAttachmentFiles)
 import asyncGeneratorStep from "asyncGeneratorStep";
 import { AbortCodes } from "ME";
 
 const require = arg1;
-async function _stageAttachmentFiles(arg0, arg1) {
-  let iter = (function*(arr) {
-    let flag = arg1;
-    if (flag === undefined) {
-      flag = false;
-    }
-    let closure_1 = arg2;
-    yield undefined;
-    yield Promise.all(arr.map((arg0) => {
-      let closure_0 = arg0;
-      return new Promise((arg0, arg1) => {
-        let closure_0 = arg0;
-        let closure_1 = arg1;
-        const status = closure_0.status;
-        if (outer4_0(outer4_1[2]).CloudUploadStatus.NOT_STARTED === status) {
-          closure_0.upload();
-        } else if (outer4_0(outer4_1[2]).CloudUploadStatus.COMPLETED === status) {
-          arg0("complete");
-        } else if (outer4_0(outer4_1[2]).CloudUploadStatus.ERROR === status) {
-          if (closure_0) {
-            if (closure_0.error !== outer4_3.ENTITY_TOO_LARGE) {
-              closure_0.upload();
-            }
-          }
-          const _Error2 = Error;
-          let error = new Error("File failed to upload");
-          arg1(error);
-        } else if (outer4_0(outer4_1[2]).CloudUploadStatus.CANCELED === status) {
-          const _Error = Error;
-          const error1 = new Error("Upload is canceled");
-          arg1(error1);
-        } else if (outer4_0(outer4_1[2]).CloudUploadStatus.REMOVED_FROM_MSG_DRAFT === status) {
-          const _Error3 = Error;
-          const error2 = new Error("Upload is removed from draft");
-          arg1(error2);
+function _stageAttachmentFiles() {
+  const self = this;
+  const tmp = callback((arg0) => {
+    let closure_0 = arg0;
+    let closure_1 = arg1;
+    let asyncGeneratorStep = arg2;
+    let c4 = 0;
+    let c5 = 0;
+    const iter = (function*(arg0) {
+      if (c5 === 2) {
+        c5 = 3;
+        HermesBuiltin.throwTypeError();
+      } else if (tmp4 === 3) {
+        if (arg0 === 1) {
+          throw arg1;
+        } else if (arg0 === 2) {
+          let obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
+        } else {
+          return { value: "HermesInternal", done: null };
         }
-        closure_0.on("complete", () => {
-          lib("complete");
-        });
-        closure_0.on("error", () => {
-          const error = new Error("File " + lib.id + " failed to upload");
-          callback(error);
-        });
-        closure_0.on("progress", (arg0, arg1) => {
-          if (null != outer2_1) {
-            outer2_1(arg0, arg1);
+      } else {
+        try {
+          c5 = 2;
+          if (0 === c4) {
+            if (arg0 === 1) {
+              c5 = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              c5 = 3;
+              obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            } else {
+              let closure_3 = tmp2;
+              let flag;
+              let asyncGeneratorStep;
+              if (flag === undefined) {
+                flag = false;
+              }
+              closure_3 = undefined;
+              c4 = 1;
+              c5 = 1;
+              return { value: "ct", done: null };
+            }
+          } else if (1 === tmp5) {
+            if (arg0 === 1) {
+              c5 = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              c5 = 3;
+              const obj1 = { value: null, done: true };
+              obj1[0] = arg1;
+              return obj1;
+            } else {
+              closure_3 = closure_0.map((arg0) => {
+                let closure_0 = arg0;
+                return new Promise((arg0, arg1) => {
+                  const lib = arg0;
+                  let closure_1 = arg1;
+                  const status = lib.status;
+                  if (lib(flag[2]).CloudUploadStatus.NOT_STARTED === status) {
+                    obj.upload();
+                  } else if (tmp(tmp2[2]).CloudUploadStatus.COMPLETED === status) {
+                    arg0("complete");
+                  } else if (tmp(tmp2[2]).CloudUploadStatus.ERROR === status) {
+                    if (outer1_1) {
+                      if (obj.error !== constants.ENTITY_TOO_LARGE) {
+                        obj.upload();
+                      }
+                    }
+                    const _Error2 = Error;
+                    let error = new Error("File failed to upload");
+                    arg1(error);
+                  } else if (tmp(tmp2[2]).CloudUploadStatus.CANCELED === status) {
+                    const _Error = Error;
+                    const error1 = new Error("Upload is canceled");
+                    arg1(error1);
+                  } else if (tmp(tmp2[2]).CloudUploadStatus.REMOVED_FROM_MSG_DRAFT === status) {
+                    const _Error3 = Error;
+                    const error2 = new Error("Upload is removed from draft");
+                    arg1(error2);
+                  }
+                  lib.on("complete", () => { ... });
+                  lib.on("error", () => { ... });
+                  lib.on("progress", () => { ... });
+                });
+              });
+              c4 = 2;
+              c5 = 1;
+              const obj2 = { value: null, done: false };
+              obj2[0] = Promise.all(closure_3);
+              return obj2;
+            }
+          } else if (arg0 === 1) {
+            c5 = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            c5 = 3;
+            obj = { value: null, done: true };
+            obj[0] = arg1;
+            return obj;
+          } else {
+            c5 = 3;
+            return { value: "HermesInternal", done: null };
           }
-        });
-      });
-    }));
-  })();
-  iter.next();
-  return iter;
+        } catch (tmp12) {
+          c5 = tmp;
+          throw tmp12;
+        }
+      }
+    })();
+    iter.next();
+    return iter;
+  });
+  const _stageAttachmentFiles = tmp;
+  const apply = tmp.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
 }
-const result = require("_callSuper").fileFinishedImporting("lib/uploader/stageAttachmentFiles.tsx");
+const result = require("set").fileFinishedImporting("lib/uploader/stageAttachmentFiles.tsx");
 
 export default function stageAttachmentFiles() {
-  return _stageAttachmentFiles(...arguments);
+  const self = this;
+  const apply = _stageAttachmentFiles.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
 };

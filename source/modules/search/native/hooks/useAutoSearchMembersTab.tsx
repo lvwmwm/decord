@@ -1,12 +1,12 @@
-// Module ID: 15522
-// Function ID: 119128
+// Module ID: 15556
+// Function ID: 15557
 // Name: useAutoSearchMembersTab
-// Dependencies: [31, 10081, 11429, 653, 22, 10082, 11436, 11428, 2]
+// Dependencies: [19, 10102, 11453, 676, 12, 10103, 11460, 11452, 2]
 // Exports: useAutoSearchMembersTab
 
-// Module 15522 (useAutoSearchMembersTab)
-import result from "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 15556 (useAutoSearchMembersTab)
+import noop from "noop";
+import prototype from "prototype";
 import { SEARCH_TEXT_INPUT_DEBOUNCE_TIME as closure_5 } from "SEARCH_TEXT_INPUT_DEBOUNCE_TIME";
 import { SearchTypes } from "ME";
 
@@ -20,12 +20,12 @@ export const useAutoSearchMembersTab = function useAutoSearchMembersTab(searchCo
   const effect = React.useEffect(() => {
     if (!callback) {
       let obj = searchContext(outer1_2[4]);
-      const debounceResult = searchContext(outer1_2[4]).debounce((searchQueryString) => {
-        if (!outer2_4.isAutocompleteVisible(outer1_0)) {
-          let obj = callback(outer2_2[5]);
-          const guildIdFromSearchContext = obj.getGuildIdFromSearchContext(outer1_0);
+      const debounceResult = searchContext(outer1_2[4]).debounce((arg0) => {
+        let obj = outer1_4;
+        if (!outer1_4.isAutocompleteVisible(closure_0)) {
+          const guildIdFromSearchContext = outer1_0(outer1_2[5]).getGuildIdFromSearchContext(tmp);
           if (null != guildIdFromSearchContext) {
-            const channelIds = outer2_4.getChannelIds(outer1_0);
+            const channelIds = obj.getChannelIds(tmp);
             let tmp8 = null;
             if (0 !== channelIds.size) {
               let first = null;
@@ -35,15 +35,21 @@ export const useAutoSearchMembersTab = function useAutoSearchMembersTab(searchCo
               }
               tmp8 = first;
             }
-            obj = { searchContext: outer1_0, searchQueryString, guildId: guildIdFromSearchContext, channelId: tmp8 };
-            let tmp13 = null;
-            if (outer1_0.type === outer2_6.THREAD) {
-              tmp13 = tmp8;
+            obj = { searchContext: null, searchQueryString: null, guildId: null, channelId: null, threadId: null };
+            obj[0] = tmp;
+            obj[1] = arg0;
+            obj[2] = guildIdFromSearchContext;
+            obj[3] = tmp8;
+            let tmp12 = null;
+            if (tmp.type === outer1_6.THREAD) {
+              tmp12 = tmp8;
             }
-            obj.threadId = tmp13;
-            callback2(outer2_2[6]).searchGuildMemberTab(obj);
-            const obj2 = callback2(outer2_2[6]);
+            obj[4] = tmp12;
+            outer1_1(tmp3[6]).searchGuildMemberTab(obj);
+            const obj3 = outer1_1(tmp3[6]);
           }
+          const obj2 = outer1_0(outer1_2[5]);
+          tmp3 = outer1_2;
         }
       }, outer1_5);
       return callback(outer1_2[7]).subscribeTextInputValue(searchContext, debounceResult);
@@ -51,6 +57,6 @@ export const useAutoSearchMembersTab = function useAutoSearchMembersTab(searchCo
   }, items);
   const items1 = [searchContext];
   const effect1 = React.useEffect(() => () => {
-    const result = callback(outer2_2[6]).cleanupGuildMemberTab(outer1_0);
+    const result = outer1_1(outer1_2[6]).cleanupGuildMemberTab(closure_0);
   }, items1);
 };

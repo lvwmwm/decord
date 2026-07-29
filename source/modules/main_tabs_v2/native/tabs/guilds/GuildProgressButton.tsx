@@ -1,11 +1,11 @@
-// Module ID: 15135
-// Function ID: 115141
+// Module ID: 15168
+// Function ID: 15169
 // Name: GuildProgressButton
-// Dependencies: [31, 33, 1324, 689, 9889, 11542, 11545, 7614, 15136, 1212, 11660, 2]
+// Dependencies: [19, 21, 1348, 712, 9911, 11566, 11569, 7637, 15169, 1236, 11684, 2]
 // Exports: default, getScaledGuildProgressButtonHeight
 
-// Module 15135 (GuildProgressButton)
-import result from "result";
+// Module 15168 (GuildProgressButton)
+import noop from "noop";
 import { jsx } from "jsxProd";
 
 const require = arg1;
@@ -15,9 +15,10 @@ export default function GuildProgressButton(guild) {
   let percentComplete;
   let subtitle;
   guild = guild.guild;
-  let obj = guild(11542);
+  let completed;
+  let obj = guild(11566);
   const guildProgressStep = obj.useGuildProgressStep(guild);
-  const completed = guildProgressStep.completed;
+  completed = guildProgressStep.completed;
   const items = [completed, guild.id];
   ({ percentComplete, subtitle } = guildProgressStep);
   const effect = React.useEffect(() => {
@@ -34,20 +35,21 @@ export default function GuildProgressButton(guild) {
     }
     guild(outer1_2[5]).openActionSheet(guild);
   }, items1);
-  obj = {};
-  obj = { source: completed(15136) };
-  obj.icon = jsx(guild(7614).RowButton.Icon, { source: completed(15136) });
-  const intl = guild(1212).intl;
-  obj.label = intl.string(guild(1212).t.o3HK3d);
-  obj.subLabel = subtitle;
-  obj.onPress = callback;
-  obj.trailing = jsx(completed(11660), { percent: percentComplete });
-  return jsx(guild(7614).RowButton, { source: completed(15136) });
+  obj = { icon: null, label: null, subLabel: null, onPress: null, trailing: null };
+  obj = { source: null };
+  obj[0] = completed(15169);
+  obj[0] = jsx(guild(7637).RowButton.Icon, { source: null });
+  const intl = guild(1236).intl;
+  obj[1] = intl.string(guild(1236).t.o3HK3d);
+  obj[2] = subtitle;
+  obj[3] = callback;
+  obj[4] = jsx(completed(11684), { percent: percentComplete });
+  return jsx(guild(7637).RowButton, { source: null });
 };
 export const getScaledGuildProgressButtonHeight = function getScaledGuildProgressButtonHeight(fontScale, isRefreshEnabled) {
-  const refreshToken = require(1324) /* useIsMobileVisualRefreshExperimentEnabled */.resolveRefreshToken(importDefault(689).modules.mobile.TABLE_ROW_PADDING, isRefreshEnabled);
-  const obj = require(1324) /* useIsMobileVisualRefreshExperimentEnabled */;
-  const sum = refreshToken + require(9889) /* scaleLineHeight */.scaleTextLineHeight("text-md/semibold", fontScale);
-  const obj2 = require(9889) /* scaleLineHeight */;
-  return sum + 2 * require(9889) /* scaleLineHeight */.scaleTextLineHeight("text-xs/medium", fontScale) + refreshToken;
+  const refreshToken = require(1348) /* useIsMobileVisualRefreshExperimentEnabled */.resolveRefreshToken(importDefault(712).modules.mobile.TABLE_ROW_PADDING, isRefreshEnabled);
+  const obj = require(1348) /* useIsMobileVisualRefreshExperimentEnabled */;
+  const sum = refreshToken + require(9911) /* map */.scaleTextLineHeight("text-md/semibold", fontScale);
+  const obj2 = require(9911) /* map */;
+  return sum + 2 * require(9911) /* map */.scaleTextLineHeight("text-xs/medium", fontScale) + refreshToken;
 };

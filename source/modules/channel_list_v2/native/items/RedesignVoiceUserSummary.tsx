@@ -1,32 +1,36 @@
-// Module ID: 15083
-// Function ID: 114791
+// Module ID: 15116
+// Function ID: 15117
 // Name: RedesignVoiceUserSummary
-// Dependencies: [31, 1907, 4238, 33, 566, 4347, 15082, 2]
+// Dependencies: [19, 1931, 4262, 21, 589, 4372, 15115, 2]
 // Exports: default
 
-// Module 15083 (RedesignVoiceUserSummary)
-import result from "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_5 from "_isNativeReflectConstruct";
+// Module 15116 (RedesignVoiceUserSummary)
+import noop from "noop";
+import handleConnectionOpen from "handleConnectionOpen";
+import getVoiceStatesForGuild from "getVoiceStatesForGuild";
 import { jsx } from "jsxProd";
 
 const require = arg1;
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/channel_list_v2/native/items/RedesignVoiceUserSummary.tsx");
+const result = require("getVoiceStatesForGuild").fileFinishedImporting("modules/channel_list_v2/native/items/RedesignVoiceUserSummary.tsx");
 
 export default function RedesignVoiceUserSummary(channels) {
   channels = channels.channels;
   const guildId = channels.guildId;
+  let stateFromStores;
+  let stateFromStores1;
   let obj = channels(stateFromStores[4]);
-  const items = [closure_5];
+  const items = [getVoiceStatesForGuild];
   const items1 = [guildId];
   stateFromStores = obj.useStateFromStores(items, () => outer1_5.getVoiceStates(guildId), items1);
-  const items2 = [_isNativeReflectConstruct];
-  const stateFromStores1 = channels(stateFromStores[4]).useStateFromStores(items2, () => outer1_4.getVoiceChannelId());
+  const items2 = [handleConnectionOpen];
+  stateFromStores1 = channels(stateFromStores[4]).useStateFromStores(items2, () => voiceChannelId.getVoiceChannelId());
   const items3 = [channels, stateFromStores1, stateFromStores];
-  const memo = stateFromStores1.useMemo(() => channels(stateFromStores[5]).isAnyVoiceStateStage(channels, stateFromStores1, stateFromStores), items3);
+  const stageIcon = stateFromStores1.useMemo(() => channels(stateFromStores[5]).isAnyVoiceStateStage(channels, stateFromStores1, stateFromStores), items3);
   const obj2 = channels(stateFromStores[4]);
-  const summarizedVoiceUsers = channels(stateFromStores[5]).computeSummarizedVoiceUsers({ channels, selectedChannelId: undefined, selectedVoiceChannelId: stateFromStores1, voiceStates: stateFromStores });
-  const found = summarizedVoiceUsers.filter((arg0) => null != arg0);
-  obj = { users: found, max: 8, renderIcon: true, guildId, stageIcon: memo };
-  return jsx(guildId(stateFromStores[6]), { users: found, max: 8, renderIcon: true, guildId, stageIcon: memo });
+  obj = { channels, selectedChannelId: "r", selectedVoiceChannelId: "mode", voiceStates: "Array" };
+  obj[2] = stateFromStores1;
+  obj[3] = stateFromStores;
+  const summarizedVoiceUsers = channels(stateFromStores[5]).computeSummarizedVoiceUsers(obj);
+  const users = summarizedVoiceUsers.filter((arg0) => null != arg0);
+  return jsx(guildId(stateFromStores[6]), { users, max: 8, renderIcon: true, guildId, stageIcon });
 };

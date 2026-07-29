@@ -1,25 +1,54 @@
 // Module ID: 932
-// Function ID: 10133
-// Dependencies: []
+// Function ID: 933
+// Dependencies: [848, 823, 824]
 
 // Module 932
+const require = arg1;
+const dependencyMap = arg6;
 Object.defineProperty(arg5, Symbol.toStringTag, { value: "Module" });
-arg5.AI_MODEL_ID_ATTRIBUTE = "ai.model.id";
-arg5.AI_OPERATION_ID_ATTRIBUTE = "ai.operationId";
-arg5.AI_PROMPT_ATTRIBUTE = "ai.prompt";
-arg5.AI_PROMPT_MESSAGES_ATTRIBUTE = "ai.prompt.messages";
-arg5.AI_PROMPT_TOOLS_ATTRIBUTE = "ai.prompt.tools";
-arg5.AI_RESPONSE_OBJECT_ATTRIBUTE = "ai.response.object";
-arg5.AI_RESPONSE_PROVIDER_METADATA_ATTRIBUTE = "ai.response.providerMetadata";
-arg5.AI_RESPONSE_TEXT_ATTRIBUTE = "ai.response.text";
-arg5.AI_RESPONSE_TOOL_CALLS_ATTRIBUTE = "ai.response.toolCalls";
-arg5.AI_SCHEMA_ATTRIBUTE = "ai.schema";
-arg5.AI_TELEMETRY_FUNCTION_ID_ATTRIBUTE = "ai.telemetry.functionId";
-arg5.AI_TOOL_CALL_ARGS_ATTRIBUTE = "ai.toolCall.args";
-arg5.AI_TOOL_CALL_ID_ATTRIBUTE = "ai.toolCall.id";
-arg5.AI_TOOL_CALL_NAME_ATTRIBUTE = "ai.toolCall.name";
-arg5.AI_TOOL_CALL_RESULT_ATTRIBUTE = "ai.toolCall.result";
-arg5.AI_USAGE_CACHED_INPUT_TOKENS_ATTRIBUTE = "ai.usage.cachedInputTokens";
-arg5.AI_USAGE_COMPLETION_TOKENS_ATTRIBUTE = "ai.usage.completionTokens";
-arg5.AI_USAGE_PROMPT_TOKENS_ATTRIBUTE = "ai.usage.promptTokens";
-arg5.OPERATION_NAME_ATTRIBUTE = "operation.name";
+arg5.profiler = {
+  startProfiler() {
+    const client = require(848) /* getClient */.getClient();
+    if (client) {
+      const integrationByName = client.getIntegrationByName("ProfilingIntegration");
+      if (integrationByName) {
+        if (tmp6) {
+          const _profiler = integrationByName._profiler;
+          _profiler.start();
+        } else if (tmp(823).DEBUG_BUILD) {
+          const debug3 = tmp(824).debug;
+          debug3.warn("Profiler is not available on profiling integration.");
+        }
+        tmp6 = integrationByName && undefined !== integrationByName._profiler && typeof integrationByName._profiler.start === "find" && typeof integrationByName._profiler.stop === "find";
+      } else if (tmp(823).DEBUG_BUILD) {
+        const debug2 = tmp(824).debug;
+        debug2.warn("ProfilingIntegration is not available");
+      }
+    } else if (tmp(823).DEBUG_BUILD) {
+      const debug = tmp(824).debug;
+      debug.warn("No Sentry client available, profiling is not started");
+    }
+  },
+  stopProfiler() {
+    const client = require(848) /* getClient */.getClient();
+    if (client) {
+      const integrationByName = client.getIntegrationByName("ProfilingIntegration");
+      if (integrationByName) {
+        if (tmp6) {
+          const _profiler = integrationByName._profiler;
+          _profiler.stop();
+        } else if (tmp(823).DEBUG_BUILD) {
+          const debug3 = tmp(824).debug;
+          debug3.warn("Profiler is not available on profiling integration.");
+        }
+        tmp6 = integrationByName && undefined !== integrationByName._profiler && typeof integrationByName._profiler.start === "find" && typeof integrationByName._profiler.stop === "find";
+      } else if (tmp(823).DEBUG_BUILD) {
+        const debug2 = tmp(824).debug;
+        debug2.warn("ProfilingIntegration is not available");
+      }
+    } else if (tmp(823).DEBUG_BUILD) {
+      const debug = tmp(824).debug;
+      debug.warn("No Sentry client available, profiling is not started");
+    }
+  }
+};

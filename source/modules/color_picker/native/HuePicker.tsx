@@ -1,34 +1,34 @@
-// Module ID: 13680
-// Function ID: 104978
+// Module ID: 13701
+// Function ID: 13702
 // Name: HuePicker
-// Dependencies: [57, 31, 27, 33, 4165, 689, 13677, 4026, 5251, 4589, 2]
+// Dependencies: [32, 19, 17, 21, 4189, 712, 13698, 4050, 5273, 4611, 2]
 // Exports: default
 
-// Module 13680 (HuePicker)
+// Module 13701 (HuePicker)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
+import noop from "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
 let closure_6;
-let closure_7;
+let error;
 const require = arg1;
-({ jsx: closure_6, jsxs: closure_7 } = jsxProd);
+({ jsx: closure_6, jsxs: error } = jsxProd);
 let closure_8 = [0, 60, 120, 180, 240, 300, 360];
-_createForOfIteratorHelperLoose = { container: { justifyContent: "center", alignItems: "center" }, containerFullWidth: { alignSelf: "stretch", overflow: "visible" } };
-_createForOfIteratorHelperLoose = { left: 0, position: "absolute", borderColor: require("_createForOfIteratorHelperLoose").colors.MOBILE_TEXT_HEADING_PRIMARY, width: 24, height: 36, borderRadius: require("_createForOfIteratorHelperLoose").radii.sm, borderWidth: 2 };
-_createForOfIteratorHelperLoose.slider = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.colorBar = { borderRadius: require("_createForOfIteratorHelperLoose").radii.xs };
-_createForOfIteratorHelperLoose.colorBarFullWidth = { width: "100%" };
-_createForOfIteratorHelperLoose.colorBarInner = { minWidth: 240, height: 32 };
-_createForOfIteratorHelperLoose.colorBarInnerFullWidth = { minWidth: 0, width: "100%" };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+createCacheKey = { container: { justifyContent: "center", alignItems: "center" }, containerFullWidth: { alignSelf: "stretch", overflow: "visible" }, slider: null, colorBar: null, colorBarFullWidth: null, colorBarInner: null, colorBarInnerFullWidth: null };
+createCacheKey = { left: 0, position: "absolute", borderColor: require("Themes").colors.MOBILE_TEXT_HEADING_PRIMARY, width: 24, height: 36, borderRadius: require("Themes").radii.sm, borderWidth: 2 };
+createCacheKey[2] = createCacheKey;
+createCacheKey[3] = { borderRadius: require("Themes").radii.xs };
+createCacheKey[4] = { width: "100%" };
+createCacheKey[5] = { minWidth: 240, height: 32 };
+createCacheKey[6] = { minWidth: 0, width: "100%" };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
 let closure_10 = { code: "function setSatVal_HuePickerTsx1({x:x}){const{hue,normalizeValue,barWidth,onPanUpdate,runOnJS}=this.__closure;hue.set(normalizeValue(x/barWidth.get())*360);onPanUpdate!=null&&runOnJS(onPanUpdate)();}" };
 let closure_11 = { code: "function HuePickerTsx2(){const{onPanFinalize,runOnJS}=this.__closure;onPanFinalize!=null&&runOnJS(onPanFinalize)();}" };
 let closure_12 = { code: "function HuePickerTsx3(){const{hslToRgbWorklet,hue,saturation,lightness,fullWidth,sliderWidth,barWidth}=this.__closure;const rgb=hslToRgbWorklet({h:hue.get(),s:saturation,l:lightness});const centerOffset=fullWidth?sliderWidth.get()/2:0;return{backgroundColor:\"rgb(\"+rgb[0]+\", \"+rgb[1]+\", \"+rgb[2]+\")\",transform:[{translateX:barWidth.get()*hue.get()/360-centerOffset}]};}" };
 let closure_13 = { code: "function HuePickerTsx4(){const{sliderHeight,barHeight,fullWidth,sliderWidth}=this.__closure;const paddingTop=sliderHeight.get()-barHeight.get()>0?(sliderHeight.get()-barHeight.get())/2:0;const paddingLeft=fullWidth?0:sliderWidth.get()/2;return{paddingTop:paddingTop,paddingBottom:paddingTop,paddingLeft:paddingLeft,paddingRight:paddingLeft};}" };
-let obj1 = { borderRadius: require("_createForOfIteratorHelperLoose").radii.xs };
+let obj1 = { borderRadius: require("Themes").radii.xs };
 let result = require("get ActivityIndicator").fileFinishedImporting("modules/color_picker/native/HuePicker.tsx");
 
 export default function HuePicker(hue) {
@@ -44,160 +44,150 @@ export default function HuePicker(hue) {
   if (saturation === undefined) {
     saturation = 1;
   }
+  let sharedValue3 = saturation;
   let num = hue.lightness;
   if (num === undefined) {
     num = 0.5;
   }
+  onPanUpdate = num;
   let flag = hue.fullWidth;
   if (flag === undefined) {
     flag = false;
   }
+  onPanFinalize = flag;
   let sharedValue;
   let sharedValue1;
   let sharedValue2;
-  let sharedValue3;
-  let tmp = _createForOfIteratorHelperLoose();
-  let obj = hue(num[7]);
+  sharedValue3 = undefined;
+  let tmp = createCacheKey();
+  let obj = hue(onPanUpdate[7]);
   sharedValue = obj.useSharedValue(0);
-  let obj1 = hue(num[7]);
+  let obj1 = hue(onPanUpdate[7]);
   sharedValue1 = obj1.useSharedValue(0);
-  let obj2 = hue(num[7]);
+  let obj2 = hue(onPanUpdate[7]);
   sharedValue2 = obj2.useSharedValue(0);
-  let obj3 = hue(num[7]);
+  let obj3 = hue(onPanUpdate[7]);
   sharedValue3 = obj3.useSharedValue(0);
-  let items = [saturation, num];
-  const memo = sharedValue.useMemo(() => outer1_8.map((h) => {
-    let obj = hue(num[6]);
-    obj = { h, s: outer1_1, l: outer1_2 };
-    const tmp = flag(obj.hslToRgbWorklet(obj), 3);
+  let items = [hue, sharedValue3, onPanUpdate, onPanFinalize];
+  const items1 = [saturation, num];
+  const memo = sharedValue.useMemo(() => {
+    function setSatVal(arg0) {
+      const result = closure_0.set(360 * outer1_0(outer1_2[6]).normalizeValue(arg0.x / closure_1.get()));
+      if (null != closure_2) {
+        outer1_0(outer1_2[7]).runOnJS(tmp4)();
+        const tmpResult = outer1_0(outer1_2[7]);
+      }
+    }
+    let obj = { hue, normalizeValue: hue(onPanUpdate[6]).normalizeValue, barWidth: sharedValue3, onPanUpdate, runOnJS: hue(onPanUpdate[7]).runOnJS };
+    setSatVal.__closure = obj;
+    setSatVal.__workletHash = 17165611898087;
+    setSatVal.__initData = outer1_10;
+    const Gesture = hue(onPanUpdate[8]).Gesture;
+    const PanResult = Gesture.Pan();
+    const onBeginResult = Gesture.Pan().onBegin(setSatVal);
+    const fn = function n() {
+      if (null != _slicedToArray) {
+        outer1_0(outer1_2[7]).runOnJS(tmp)();
+        const obj = outer1_0(outer1_2[7]);
+      }
+    };
+    obj = { onPanFinalize, runOnJS: hue(onPanUpdate[7]).runOnJS };
+    fn.__closure = obj;
+    fn.__workletHash = 182773971449;
+    fn.__initData = outer1_11;
+    return Gesture.Pan().onBegin(setSatVal).onUpdate(setSatVal).onFinalize(fn);
+  }, items);
+  const memo1 = sharedValue.useMemo(() => outer1_8.map((h) => {
+    let obj = outer1_0(outer1_2[6]);
+    obj = { h, s: closure_1, l: closure_2 };
+    const tmp = outer1_3(obj.hslToRgbWorklet(obj), 3);
     return "rgb(" + tmp[0] + ", " + tmp[1] + ", " + tmp[2] + ")";
-  }), items);
-  let obj4 = hue(num[7]);
+  }), items1);
   let fn = function y() {
-    let obj = hue(num[6]);
-    obj = { h: hue.get(), s: saturation, l: num };
+    let obj = hue(onPanUpdate[6]);
+    obj = { h: hue.get(), s: sharedValue3, l: onPanUpdate };
     const hslToRgbWorkletResult = obj.hslToRgbWorklet(obj);
-    num = 0;
-    if (flag) {
+    let num = 0;
+    if (onPanFinalize) {
       num = sharedValue.get() / 2;
     }
-    obj = { backgroundColor: "rgb(" + hslToRgbWorkletResult[0] + ", " + hslToRgbWorkletResult[1] + ", " + hslToRgbWorkletResult[2] + ")" };
-    const obj1 = {};
+    obj = { backgroundColor: "rgb(" + hslToRgbWorkletResult[0] + ", " + hslToRgbWorkletResult[1] + ", " + hslToRgbWorkletResult[2] + ")", transform: null };
+    const obj1 = { translateX: null };
     const value = sharedValue3.get();
-    obj1.translateX = value * hue.get() / 360 - num;
+    obj1[0] = value * hue.get() / 360 - num;
     const items = [obj1];
-    obj.transform = items;
+    obj[1] = items;
     return obj;
   };
-  obj = { hslToRgbWorklet: hue(num[6]).hslToRgbWorklet, hue, saturation, lightness: num, fullWidth: flag, sliderWidth: sharedValue, barWidth: sharedValue3 };
+  obj = { hslToRgbWorklet: hue(onPanUpdate[6]).hslToRgbWorklet, hue, saturation, lightness: num, fullWidth: flag, sliderWidth: sharedValue, barWidth: sharedValue3 };
   fn.__closure = obj;
   fn.__workletHash = 11845890180264;
   fn.__initData = closure_12;
-  const items1 = [sharedValue1, sharedValue];
-  const animatedStyle = obj4.useAnimatedStyle(fn);
-  const items2 = [sharedValue2, sharedValue3];
+  const items2 = [sharedValue1, sharedValue];
+  const animatedStyle = hue(onPanUpdate[7]).useAnimatedStyle(fn);
+  const items3 = [sharedValue2, sharedValue3];
   const callback = sharedValue.useCallback((nativeEvent) => {
     const layout = nativeEvent.nativeEvent.layout;
     const result = sharedValue1.set(layout.height);
     const result1 = sharedValue.set(layout.width);
-  }, items1);
+  }, items2);
   const callback1 = sharedValue.useCallback((nativeEvent) => {
     const layout = nativeEvent.nativeEvent.layout;
     const result = sharedValue2.set(layout.height);
     const result1 = sharedValue3.set(layout.width);
-  }, items2);
+  }, items3);
+  const obj5 = hue(onPanUpdate[7]);
+  const tmp2 = hue;
   const fn2 = function x() {
     let value = sharedValue1.get();
-    let num = 0;
+    let paddingTop = 0;
     if (value - sharedValue2.get() > 0) {
       value = sharedValue1.get();
-      num = (value - sharedValue2.get()) / 2;
+      paddingTop = (value - sharedValue2.get()) / 2;
     }
-    let num3 = 0;
-    if (!flag) {
-      num3 = sharedValue.get() / 2;
+    let paddingLeft = 0;
+    if (!onPanFinalize) {
+      paddingLeft = sharedValue.get() / 2;
     }
-    const obj = { paddingTop: num, paddingBottom: num, paddingLeft: num3, paddingRight: num3 };
-    return obj;
+    return { paddingTop, paddingBottom: paddingTop, paddingLeft, paddingRight: paddingLeft };
   };
-  obj = { sliderHeight: sharedValue1, barHeight: sharedValue2, fullWidth: flag, sliderWidth: sharedValue };
-  fn2.__closure = obj;
+  fn2.__closure = { sliderHeight: sharedValue1, barHeight: sharedValue2, fullWidth: flag, sliderWidth: sharedValue };
   fn2.__workletHash = 3108469558001;
   fn2.__initData = closure_13;
-  const animatedStyle1 = hue(num[7]).useAnimatedStyle(fn2);
-  obj1 = {};
-  const items3 = [tmp.container, , , ];
+  const animatedStyle1 = hue(onPanUpdate[7]).useAnimatedStyle(fn2);
+  const items4 = [tmp.container, , , ];
   let containerFullWidth = flag;
   if (flag) {
     containerFullWidth = tmp.containerFullWidth;
   }
-  items3[1] = containerFullWidth;
-  items3[2] = style;
-  items3[3] = animatedStyle1;
-  obj1.style = items3;
-  obj2 = {
-    gesture: (function useHuePickerGesture(hue, sharedValue3, onPanUpdate, onPanFinalize) {
-      let closure_0 = hue;
-      let closure_1 = sharedValue3;
-      let closure_2 = onPanUpdate;
-      let _slicedToArray = onPanFinalize;
-      const items = [hue, sharedValue3, onPanUpdate, onPanFinalize];
-      return {
-        gesture: sharedValue.useMemo(() => {
-          const tmp = (() => {
-            function setSatVal(arg0) {
-              const result = outer2_0.set(360 * hue(num[6]).normalizeValue(arg0.x / outer2_1.get()));
-              if (null != outer2_2) {
-                hue(7[7]).runOnJS(outer2_2)();
-                const obj2 = hue(7[7]);
-              }
-            }
-            setSatVal.__closure = { hue: outer1_0, normalizeValue: hue(num[6]).normalizeValue, barWidth: outer1_1, onPanUpdate: outer1_2, runOnJS: hue(num[7]).runOnJS };
-            setSatVal.__workletHash = 17165611898087;
-            setSatVal.__initData = outer3_10;
-            return setSatVal;
-          })();
-          const Gesture = hue(num[8]).Gesture;
-          const PanResult = Gesture.Pan();
-          const onBeginResult = Gesture.Pan().onBegin(tmp);
-          const fn = function n() {
-            if (null != outer1_3) {
-              hue(7[7]).runOnJS(outer1_3)();
-              const obj = hue(7[7]);
-            }
-          };
-          const onUpdateResult = Gesture.Pan().onBegin(tmp).onUpdate(tmp);
-          fn.__closure = { onPanFinalize: _slicedToArray, runOnJS: hue(num[7]).runOnJS };
-          fn.__workletHash = 182773971449;
-          fn.__initData = outer2_11;
-          return onUpdateResult.onFinalize(fn);
-        }, items)
-      };
-    })(hue, sharedValue3, onPanUpdate, onPanFinalize).gesture
-  };
-  obj3 = { colors: memo, start: { x: 0, y: 0.5 }, end: { x: 1, y: 0.5 } };
-  const items4 = [tmp.colorBar, ];
+  obj = { style: items4, children: null };
+  items4[1] = containerFullWidth;
+  items4[2] = style;
+  items4[3] = animatedStyle1;
+  obj1 = { gesture: memo, children: null };
+  obj2 = { colors: memo1, start: { x: 0, y: 0.5 }, end: { x: 1, y: 0.5 }, style: null, children: null };
+  const items5 = [tmp.colorBar, ];
   let colorBarFullWidth = flag;
-  const obj7 = hue(num[7]);
-  const tmp11 = sharedValue3;
+  const obj7 = hue(onPanUpdate[7]);
+  const tmp14 = sharedValue3;
   if (flag) {
     colorBarFullWidth = tmp.colorBarFullWidth;
   }
-  items4[1] = colorBarFullWidth;
-  obj3.style = items4;
-  obj4 = { onLayout: callback1 };
-  const items5 = [tmp.colorBarInner, , ];
+  items5[1] = colorBarFullWidth;
+  obj2[3] = items5;
+  obj3 = { onLayout: callback1, style: null };
+  const items6 = [tmp.colorBarInner, , ];
   if (flag) {
     flag = tmp.colorBarInnerFullWidth;
   }
-  items5[1] = flag;
-  items5[2] = colorBarInnerStyle;
-  obj4.style = items5;
-  obj3.children = sharedValue2(sharedValue1, obj4);
-  obj2.children = sharedValue2(saturation(num[9]), obj3);
-  const items6 = [sharedValue2(hue(num[8]).GestureDetector, obj2), ];
-  const items7 = [tmp.slider, sliderStyle, animatedStyle];
-  items6[1] = sharedValue2(saturation(num[7]).View, { onLayout: callback, pointerEvents: "box-none", style: items7 });
-  obj1.children = items6;
-  return tmp11(saturation(num[7]).View, obj1);
+  items6[1] = flag;
+  items6[2] = colorBarInnerStyle;
+  obj3[1] = items6;
+  obj2[4] = sharedValue2(sharedValue1, obj3);
+  obj1[1] = sharedValue2(sharedValue3(onPanUpdate[9]), obj2);
+  const items7 = [sharedValue2(tmp2(onPanUpdate[8]).GestureDetector, obj1), ];
+  const items8 = [tmp.slider, sliderStyle, animatedStyle];
+  items7[1] = sharedValue2(sharedValue3(onPanUpdate[7]).View, { onLayout: callback, pointerEvents: "box-none", style: items8 });
+  obj[1] = items7;
+  return tmp14(sharedValue3(onPanUpdate[7]).View, obj);
 };

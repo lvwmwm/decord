@@ -1,41 +1,45 @@
-// Module ID: 13482
-// Function ID: 103390
-// Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 27, 9276, 4031, 1555, 1454, 477, 4565, 2]
+// Module ID: 13505
+// Function ID: 13506
+// Name: handleBackPress
+// Dependencies: [17, 9300, 4055, 1579, 1478, 4368, 500, 2]
 
-// Module 13482 (_isNativeReflectConstruct)
-import updateContextMenuState from "updateContextMenuState";
-import getKeyboardContextForType from "getKeyboardContextForType";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
-import tmp2 from "LifecycleManager";
+// Module 13505 (handleBackPress)
+import "initialize";
 
-const require = arg1;
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
-  }
-  const result = _isNativeReflectConstruct();
-}
 function handleBackPress() {
-  let obj = require(9276) /* updateContextMenuState */;
+  let obj = require(9300) /* updateContextMenuState */;
   obj.hideContextMenu();
-  const keyboardType = require(4031) /* getKeyboardContextForType */.getKeyboardType();
-  let flag = keyboardType !== require(1555) /* KeyboardTypes */.KeyboardTypes.SYSTEM;
+  const keyboardType = require(4055) /* useKeyboardType */.getKeyboardType();
+  let flag = keyboardType !== require(1579) /* KeyboardTypes */.KeyboardTypes.SYSTEM;
   if (flag) {
-    obj = { type: require(1555) /* KeyboardTypes */.KeyboardTypes.SYSTEM };
-    require(1454) /* _createForOfIteratorHelperLoose */.setKeyboardType(obj);
+    obj = { type: null };
+    obj[0] = tmp(1579).KeyboardTypes.SYSTEM;
+    tmp(1478).setKeyboardType(obj);
     flag = true;
-    const obj3 = require(1454) /* _createForOfIteratorHelperLoose */;
+    const tmpResult = tmp(1478);
   }
   return flag;
 }
 require("get ActivityIndicator").BackHandler;
-tmp2 = new tmp2();
-let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/routing/native/BackPressManager.tsx");
+class BackPressManager extends tmp2 {
+}
+const prototype = BackPressManager.prototype;
+prototype["_initialize"] = function _initialize() {
+  if (obj.isAndroid()) {
+    const self = this;
+    const result = this._initializeGlobalBackPressListener();
+  }
+};
+prototype["_initializeGlobalBackPressListener"] = function _initializeGlobalBackPressListener() {
+  this._backPressEventSubscription = BackHandler.addEventListener("hardwareBackPress", handleBackPress);
+};
+prototype["_terminate"] = function _terminate() {
+  const _backPressEventSubscription = this._backPressEventSubscription;
+  if (_backPressEventSubscription != null) {
+    _backPressEventSubscription.remove();
+  }
+};
+const backPressManager = new BackPressManager();
+let result = require("useKeyboardType").fileFinishedImporting("modules/routing/native/BackPressManager.tsx");
 
-export default tmp2;
+export default backPressManager;

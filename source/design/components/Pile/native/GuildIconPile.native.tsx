@@ -1,18 +1,18 @@
-// Module ID: 11687
-// Function ID: 90552
+// Module ID: 11711
+// Function ID: 11712
 // Name: GuildIconPile
-// Dependencies: [31, 33, 5548, 9909, 11688, 7945, 9910, 2]
+// Dependencies: [19, 21, 5566, 9931, 11712, 7970, 9932, 2]
 // Exports: GuildIconPile
 
-// Module 11687 (GuildIconPile)
-import result from "result";
+// Module 11711 (GuildIconPile)
+import noop from "noop";
 import jsxProd from "jsxProd";
 
-let closure_3;
-let closure_4;
+let c3;
+let c4;
 const require = arg1;
-({ jsx: closure_3, jsxs: closure_4 } = jsxProd);
-const result = require("makeSizeStyle").fileFinishedImporting("design/components/Pile/native/GuildIconPile.native.tsx");
+({ jsx: c3, jsxs: c4 } = jsxProd);
+const result = require("GuildIconSizes").fileFinishedImporting("design/components/Pile/native/GuildIconPile.native.tsx");
 
 export const GuildIconPile = function GuildIconPile(arg0) {
   let children;
@@ -23,21 +23,26 @@ export const GuildIconPile = function GuildIconPile(arg0) {
   const Children = React.Children;
   ({ size, names } = arg0);
   const countResult = Children.count(children);
-  const tmp2 = require(5548) /* makeSizeStyle */.ImageSizes[size];
-  let obj = { "aria-label": require(11688) /* getListSummaryLabel */.getListSummaryLabel(names, totalCount), shape: require(7945) /* SolidCutout */.CutoutShape.RoundedRect, size: tmp2 };
+  const tmp4 = require(5566) /* GuildIconSizes */.ImageSizes[size];
+  let obj = { "aria-label": null, shape: null, size: null, gap: null, depthX: 0.25, children: null };
+  obj[0] = require(11712) /* getListSummaryLabel */.getListSummaryLabel(names, totalCount);
+  obj[1] = require(7970) /* SolidCutout */.CutoutShape.RoundedRect;
+  obj[2] = tmp4;
   let num = 3;
-  if (tmp2 <= 40) {
+  if (tmp4 <= 40) {
     num = 2;
   }
-  obj.gap = num;
-  obj.depthX = 0.25;
+  obj[3] = num;
   const items = [children, ];
-  let tmp4 = null != totalCount && countResult < totalCount;
-  if (tmp4) {
-    obj = { size: tmp2, borderRadius: tmp2 / 3, value: totalCount - countResult };
-    tmp4 = callback(require(9910) /* map */.PileOverflow, obj);
+  let tmp6 = null != totalCount && countResult < totalCount;
+  if (tmp6) {
+    obj = { size: null, borderRadius: null, value: null };
+    obj[0] = tmp4;
+    obj[1] = tmp4 / 3;
+    obj[2] = totalCount - countResult;
+    tmp6 = callback(require(9932) /* map */.PileOverflow, obj);
   }
-  items[1] = tmp4;
-  obj.children = items;
-  return closure_4(require(9909) /* Pile */.Pile, obj);
+  items[1] = tmp6;
+  obj[5] = items;
+  return closure_4(require(9931) /* Pile */.Pile, obj);
 };

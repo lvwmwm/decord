@@ -1,26 +1,27 @@
-// Module ID: 16281
-// Function ID: 126133
-// Name: _isNativeReflectConstruct
-// Dependencies: [7, 6, 15, 17, 18, 14680, 5112, 2]
+// Module ID: 16316
+// Function ID: 16317
+// Name: prototype
+// Dependencies: [5134, 14705, 2]
 
-// Module 16281 (_isNativeReflectConstruct)
-import set from "set";
-import AutomaticLifecycleManager from "AutomaticLifecycleManager";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
-import tmp2 from "AutomaticLifecycleManager";
+// Module 16316 (prototype)
+import "initialize";
 
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
-  }
-  const result = _isNativeReflectConstruct();
+let prototype = function SettingTreeManagerLifecycleManager() {
+  const applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
+  const importDefault = applyArgumentsResult;
+  applyArgumentsResult.actions = {
+    POST_CONNECTION_OPEN() {
+      return applyArgumentsResult.handleConnectionOpen();
+    }
+  };
+  applyArgumentsResult.handleConnectionOpen = function handleConnectionOpen() {
+    applyArgumentsResult(table[1]).clearCaches();
+  };
+  return applyArgumentsResult;
+}.prototype;
+class prototype extends tmp2 {
 }
-tmp2 = new tmp2();
-let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/settings/native/renderer/SettingTreeCacheLifecycleManager.tsx");
+prototype = new prototype();
+const result = require("set").fileFinishedImporting("modules/settings/native/renderer/SettingTreeCacheLifecycleManager.tsx");
 
-export default tmp2;
+export default prototype;

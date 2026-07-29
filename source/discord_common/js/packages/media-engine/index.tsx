@@ -1,26 +1,16 @@
-// Module ID: 4262
-// Function ID: 37019
-// Name: getMediaEngineImpl
-// Dependencies: [4226, 4263, 4333, 2, 4315, 4334]
+// Module ID: 4286
+// Function ID: 4287
+// Name: BaseConnectionEvent
+// Dependencies: [4250, 4287, 4357, 2, 4297, 4358]
 // Exports: determineMediaEngine, initializeMediaEngine
 
-// Module 4262 (getMediaEngineImpl)
+// Module 4286 (BaseConnectionEvent)
 import DesktopSources from "DesktopSources";
 
-function getMediaEngineImpl(getMediaEngineImpl) {
-  if (constants.NATIVE === getMediaEngineImpl) {
-    return require(4263) /* _isNativeReflectConstruct */.default;
-  } else {
-    if (constants.WEBRTC !== getMediaEngineImpl) {
-      const DUMMY = constants.DUMMY;
-    }
-    return require(4333) /* _isNativeReflectConstruct */.default;
-  }
-}
 let closure_2 = DesktopSources.MediaEngineImplementations;
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("../discord_common/js/packages/media-engine/index.tsx");
+const result = require("Video").fileFinishedImporting("../discord_common/js/packages/media-engine/index.tsx");
 
-export const BaseConnectionEvent = require("_isNativeReflectConstruct").BaseConnectionEvent;
+export const BaseConnectionEvent = require("destroy").BaseConnectionEvent;
 export const MediaEngineEvent = require("MediaEngineEvent").MediaEngineEvent;
 export const MediaEngineContextTypes = DesktopSources.MediaEngineContextTypes;
 export const DesktopSourceEndReason = { SOURCE_NOT_FOUND: 0, [0]: "SOURCE_NOT_FOUND", USER_STOPPED: 1, [1]: "USER_STOPPED", OTHER_ERROR: 2, [2]: "OTHER_ERROR" };
@@ -28,15 +18,33 @@ export const FilterTargetType = { INPUT_DEVICE: "input_device", STREAM: "stream"
 export const FilterSettingsGraph = { NONE: "", BACKGROUND_BLUR: "background_blur", BACKGROUND_REPLACEMENT: "background_replacement" };
 export const FilterSettingsKey = { CAMERA_BACKGROUND_PREVIEW: "cameraBackgroundPreview", CAMERA_BACKGROUND_LIVE: "cameraBackgroundLive" };
 export const determineMediaEngine = function determineMediaEngine() {
-  const items = [constants.NATIVE, constants.WEBRTC];
-  let DUMMY = items.find((arg0) => outer1_3(arg0).supported());
-  if (null == DUMMY) {
-    DUMMY = constants.DUMMY;
+  const items = [, ];
+  ({ NATIVE: arr[0], WEBRTC: arr[1] } = closure_2);
+  let DUMMY = items.find((arg0) => {
+    if (constants.NATIVE === arg0) {
+      let _default = callback(4287).default;
+    } else {
+      if (tmp.WEBRTC !== arg0) {
+        const DUMMY = tmp.DUMMY;
+      }
+      _default = callback(4357).default;
+    }
+    return _default.supported();
+  });
+  if (DUMMY == null) {
+    DUMMY = closure_2.DUMMY;
   }
   return DUMMY;
 };
-export const initializeMediaEngine = function initializeMediaEngine(getMediaEngineImpl) {
-  let tmp = getMediaEngineImpl(getMediaEngineImpl);
-  tmp = new tmp();
-  return tmp;
+export const initializeMediaEngine = function initializeMediaEngine(BaseConnectionEvent) {
+  if (constants.NATIVE === BaseConnectionEvent) {
+    let _default = require(4287) /* destroy */.default;
+  } else {
+    if (tmp.WEBRTC !== BaseConnectionEvent) {
+      const DUMMY = tmp.DUMMY;
+    }
+    _default = require(4357) /* Video */.default;
+  }
+  _default = new _default();
+  return _default;
 };

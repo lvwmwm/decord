@@ -1,34 +1,33 @@
-// Module ID: 14329
-// Function ID: 109899
+// Module ID: 14351
+// Function ID: 14352
 // Name: useDisplayNameStylesPendingName
-// Dependencies: [7913, 1918, 4004, 566, 2]
+// Dependencies: [7938, 1942, 4028, 589, 2]
 // Exports: useDisplayNameStylesPendingName
 
-// Module 14329 (useDisplayNameStylesPendingName)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_4 from "_isNativeReflectConstruct";
+// Module 14351 (useDisplayNameStylesPendingName)
+import handleFormOpen from "handleFormOpen";
+import trackCommunicationDisabled from "trackCommunicationDisabled";
 
 const require = arg1;
-const result = require("conceal").fileFinishedImporting("modules/display_name_styles/hooks/useDisplayNameStylesPendingName.tsx");
+const result = require("nameFromUser").fileFinishedImporting("modules/display_name_styles/hooks/useDisplayNameStylesPendingName.tsx");
 
 export const useDisplayNameStylesPendingName = function useDisplayNameStylesPendingName(stateFromStores, guildId) {
   const _require = stateFromStores;
   const importDefault = guildId;
-  let name = importDefault(4004).useName(stateFromStores);
-  const obj = importDefault(4004);
-  const items = [_isNativeReflectConstruct, closure_4];
+  const name = importDefault(4028).useName(stateFromStores);
+  const obj = importDefault(4028);
+  const items = [handleFormOpen, trackCommunicationDisabled];
   const items1 = [guildId, stateFromStores];
-  stateFromStores = _require(566).useStateFromStores(items, () => {
+  let str = _require(589).useStateFromStores(items, () => {
     const pendingChanges = outer1_3.getPendingChanges(closure_1);
     if (null != closure_1) {
       let pendingNickname = pendingChanges.pendingNickname;
-      if (null == pendingNickname) {
+      if (pendingNickname == null) {
         let id;
-        if (null != stateFromStores) {
+        if (stateFromStores != null) {
           id = stateFromStores.id;
         }
         pendingNickname = outer1_4.getNick(closure_1, id);
-        const tmp3 = closure_1;
       }
       let pendingGlobalName = pendingNickname;
     } else {
@@ -36,12 +35,11 @@ export const useDisplayNameStylesPendingName = function useDisplayNameStylesPend
     }
     return pendingGlobalName;
   }, items1);
-  if (null != stateFromStores) {
-    name = stateFromStores;
-  }
-  let str = "";
-  if (null != name) {
+  if (str == null) {
     str = name;
+  }
+  if (str == null) {
+    str = "";
   }
   return str;
 };

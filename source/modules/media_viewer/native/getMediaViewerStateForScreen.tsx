@@ -1,55 +1,59 @@
-// Module ID: 12300
-// Function ID: 95902
+// Module ID: 12322
+// Function ID: 12323
 // Name: getMediaViewerStateForScreen
-// Dependencies: [8093, 2]
+// Dependencies: [8117, 2]
 // Exports: default
 
-// Module 12300 (getMediaViewerStateForScreen)
+// Module 12322 (getMediaViewerStateForScreen)
 let result = require("set").fileFinishedImporting("modules/media_viewer/native/getMediaViewerStateForScreen.tsx");
 
-export default function getMediaViewerStateForScreen(width, height, closure_1) {
-  let obj = require(8093) /* _createForOfIteratorHelperLoose */;
+export default function getMediaViewerStateForScreen(arg0, arg1, closure_1) {
+  let obj = require(8117) /* isValidImageAttachment */;
   const size = obj.flattenSource(closure_1, true);
   if (null == size) {
-    obj = { maximumZoomScale: 1, width, height };
+    obj = { maximumZoomScale: 1, width: null, height: null };
+    obj[1] = arg0;
+    obj[2] = arg1;
     return obj;
   } else {
-    const result = width / height;
+    const result = arg0 / arg1;
     const result1 = size.width / size.height;
-    if (size.width < width) {
-      if (size.height < height) {
+    if (size.width < arg0) {
+      if (size.height < arg1) {
         if (result1 > result) {
-          let result2 = size.width / width;
+          let result2 = size.width / arg0;
         } else {
-          result2 = size.height / height;
+          result2 = size.height / arg1;
         }
         const _Math5 = Math;
         const bound = Math.min(0.5, result2 / 1.01);
-        obj = {};
-        let num6 = 1;
+        let num7 = 1;
         if (0 !== bound) {
-          num6 = 1 / bound;
+          num7 = 1 / bound;
         }
-        obj.maximumZoomScale = num6;
-        ({ width: obj4.width, height: obj4.height } = size);
+        obj = { maximumZoomScale: null, width: null, height: null };
+        obj[0] = num7;
+        ({ width: obj4[1], height: obj4[2] } = size);
         return obj;
       }
     }
     if (result1 > result) {
-      const result3 = width / size.width;
-      const obj1 = { maximumZoomScale: 1 / result3 + 1 };
+      const result3 = arg0 / size.width;
+      const obj1 = { maximumZoomScale: null, width: null, height: null };
+      obj1[0] = 1 / result3 + 1;
       const _Math3 = Math;
-      obj1.width = Math.floor(width);
+      obj1[1] = Math.floor(arg0);
       const _Math4 = Math;
-      obj1.height = Math.floor(size.height * result3);
+      obj1[2] = Math.floor(size.height * result3);
       return obj1;
     } else {
-      const result4 = height / size.height;
-      const obj2 = { maximumZoomScale: 1 / result4 + 1 };
+      const result4 = arg1 / size.height;
+      const obj2 = { maximumZoomScale: null, width: null, height: null };
+      obj2[0] = 1 / result4 + 1;
       const _Math = Math;
-      obj2.width = Math.floor(size.width * result4);
+      obj2[1] = Math.floor(size.width * result4);
       const _Math2 = Math;
-      obj2.height = Math.floor(height);
+      obj2[2] = Math.floor(arg1);
       return obj2;
     }
   }

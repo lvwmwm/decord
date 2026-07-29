@@ -1,17 +1,17 @@
-// Module ID: 8097
-// Function ID: 64265
+// Module ID: 8121
+// Function ID: 8122
 // Name: __INTERNAL_VIEW_CONFIG
-// Dependencies: [110, 42, 2]
+// Dependencies: [106, 65, 2]
 
-// Module 8097 (__INTERNAL_VIEW_CONFIG)
+// Module 8121 (__INTERNAL_VIEW_CONFIG)
 import weakSet from "weakSet";
-import get from "get";
+import setRuntimeConfigProvider from "setRuntimeConfigProvider";
 
-let obj = { uiViewClassName: "DCDPortalView", directEventTypes: { topPortalViewLoaded: { registrationName: "onPortalViewLoaded" } } };
+let obj = { uiViewClassName: "DCDPortalView", directEventTypes: { topPortalViewLoaded: { registrationName: "onPortalViewLoaded" } }, validAttributes: null };
 obj = { portal: true };
 const merged = Object.assign(weakSet.ConditionallyIgnoredEventHandlers({ onPortalViewLoaded: true }));
-obj.validAttributes = obj;
-const value = get.get("DCDPortalView", () => obj);
+obj[2] = obj;
+const value = setRuntimeConfigProvider.get("DCDPortalView", () => obj);
 const result = require("set").fileFinishedImporting("../discord_common/js/packages/rtn-codegen/js/PortalViewNativeComponent.tsx");
 
 export default value;

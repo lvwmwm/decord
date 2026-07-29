@@ -1,11 +1,9 @@
 // Module ID: 1241
-// Function ID: 14063
+// Function ID: 1242
 // Name: registerAsset
-// Dependencies: [1217]
+// Dependencies: [84]
 
 // Module 1241 (registerAsset)
-import registerAsset from "registerAsset";
 
-const obj = { __packager_asset: true, httpServerLocation: "/assets/.cache/intl/aW50bA==", scales: [1], hash: "a3977510efc5071a6f36b7b5ddbacd46", name: "tr.messages.a3977510efc5071a6f36b7b5ddbacd46.compiled.messages", type: "jsona" };
-
-export default registerAsset.registerAsset(obj);
+export const registerAsset = require("module_84").registerAsset;
+export const getAssetByID = require("module_84").getAssetByID;

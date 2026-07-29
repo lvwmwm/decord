@@ -1,17 +1,17 @@
-// Module ID: 9547
-// Function ID: 74370
+// Module ID: 9571
+// Function ID: 9572
 // Name: useCreateThread
-// Dependencies: [5, 31, 4503, 4158, 5497, 6165, 5695, 5948, 6169, 6168, 6132, 4746, 4705, 6170, 2]
+// Dependencies: [5, 19, 4526, 4182, 5515, 6183, 5713, 5967, 6187, 6186, 6150, 4768, 4727, 6188, 2]
 // Exports: default, useCreateForumPost
 
-// Module 9547 (useCreateThread)
+// Module 9571 (useCreateThread)
 import getIsPrivate from "getIsPrivate";
-import result from "result";
-import { DraftType } from "_isNativeReflectConstruct";
+import noop from "noop";
+import { DraftType } from "handleChanged";
 import { MessageSendLocation } from "MESSAGE_GROUP_SPACING";
 
 const require = arg1;
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/threads/native/useCreateThread.tsx");
+const result = require("handleChanged").fileFinishedImporting("modules/threads/native/useCreateThread.tsx");
 
 export default function useCreateThread(arg0) {
   let _location;
@@ -21,9 +21,10 @@ export default function useCreateThread(arg0) {
   let privateThreadMode;
   let threadSettings;
   let useDefaultThreadName;
+  let analyticsLocations;
   ({ parentChannel, parentMessageId, threadSettings, privateThreadMode, location: _location, onThreadCreated, useDefaultThreadName } = arg0);
-  const analyticsLocations = importDefault(5497)().analyticsLocations;
-  let obj = analyticsLocations(6165);
+  analyticsLocations = importDefault(5515)().analyticsLocations;
+  let obj = analyticsLocations(6183);
   obj = {
     parentChannel,
     parentMessageId,
@@ -43,7 +44,10 @@ export default function useCreateThread(arg0) {
           let obj = analyticsLocations(outer2_2[8]);
           obj = { file, guildId: guildId.getGuildId(), analyticsLocations: guildId, code, reason };
           if (obj.handleUploadMessageAttachmentsErrors(obj)) {
-            obj = { channelId: guildId.id, uploads: closure_1, draftType: outer2_5.FirstThreadMessage, resetState: true };
+            obj = { channelId: null, uploads: null, draftType: null, resetState: true };
+            obj[0] = guildId.id;
+            obj[1] = closure_1;
+            obj[2] = outer2_5.FirstThreadMessage;
             outer2_1(outer2_2[9]).setUploads(obj);
             const obj3 = outer2_1(outer2_2[9]);
           }
@@ -58,31 +62,129 @@ export const useCreateForumPost = function useCreateForumPost(parentChannel) {
   let appliedTags;
   let onThreadCreated;
   parentChannel = parentChannel.parentChannel;
+  let _require = parentChannel;
   const threadSettings = parentChannel.threadSettings;
-  let name;
+  let analyticsLocations;
   ({ appliedTags, onThreadCreated } = parentChannel);
-  analyticsLocations = analyticsLocations(5497)().analyticsLocations;
+  analyticsLocations = analyticsLocations(5515)().analyticsLocations;
+  _require = undefined;
+  _require = callback((arg0) => {
+    let closure_0 = arg0;
+    let c2 = 0;
+    let c3 = 0;
+    return (function*(arg0) {
+      if (effectiveKestrelLimit === 2) {
+        effectiveKestrelLimit = 3;
+        HermesBuiltin.throwTypeError();
+      } else if (tmp3 === 3) {
+        if (arg0 === 1) {
+          throw arg1;
+        } else if (arg0 === 2) {
+          let obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
+        } else {
+          return { value: "HermesInternal", done: null };
+        }
+      } else {
+        try {
+          effectiveKestrelLimit = 2;
+          if (0 === c2) {
+            if (arg0 === 1) {
+              effectiveKestrelLimit = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              effectiveKestrelLimit = 3;
+              obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            } else {
+              let obj7 = tmp4;
+              obj7 = undefined;
+              c2 = undefined;
+              effectiveKestrelLimit = undefined;
+              let noop;
+              obj7 = new analyticsLocations(outer2_2[10])();
+              const kestrelConfig = guildId(outer2_2[11]).getKestrelConfig({ location: "native.useCreateForumPost" });
+              const obj8 = guildId(outer2_2[11]);
+              const maxFileSizeResult = guildId(outer2_2[12]).maxFileSize(guildId.getGuildId());
+              c2 = maxFileSizeResult;
+              const obj9 = guildId(outer2_2[12]);
+              effectiveKestrelLimit = guildId(outer2_2[11]).getEffectiveKestrelLimit(kestrelConfig, maxFileSizeResult);
+              obj7.on("progress", (currentSize) => {
+                if (currentSize.currentSize > c3) {
+                  obj7.cancel();
+                  let obj = outer2_1(6186);
+                  obj = { channelId: null, uploads: null, draftType: null, resetState: true };
+                  obj[0] = guildId.id;
+                  obj[1] = guildId;
+                  obj[2] = outer2_5.FirstThreadMessage;
+                  obj.setUploads(obj);
+                  obj = { file: null, maxSize: null, baseMaxSize: null, guildId: null, analyticsLocations: null };
+                  obj[0] = currentSize;
+                  obj[1] = tmp;
+                  obj[2] = dependencyMap;
+                  obj[3] = guildId.getGuildId();
+                  obj[4] = obj7;
+                  outer2_1(6188)(obj);
+                  const tmp10 = outer2_1(6188);
+                }
+              });
+              c2 = 1;
+              effectiveKestrelLimit = 1;
+              const obj1 = { value: null, done: false };
+              obj1[0] = obj7.uploadFiles(guildId);
+              return obj1;
+            }
+          } else if (arg0 === 1) {
+            effectiveKestrelLimit = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            effectiveKestrelLimit = 3;
+            const obj2 = { value: null, done: true };
+            obj2[0] = arg1;
+            return obj2;
+          } else {
+            noop = arg1;
+            obj = { uploaderFile: null, files: null };
+            obj[0] = obj7._file;
+            obj[1] = noop;
+            effectiveKestrelLimit = 3;
+            const obj3 = { value: null, done: true };
+            obj3[0] = obj;
+            return obj3;
+          }
+        } catch (tmp8) {
+          effectiveKestrelLimit = tmp;
+          throw tmp8;
+        }
+      }
+    })();
+  });
   const items = [analyticsLocations, parentChannel];
-  const callback = React.useCallback((() => {
-    // CreateGeneratorClosureLongIndex (0x67)
-    let closure_0 = outer1_3(tmp);
-    return function() {
-      return callback(...arguments);
-    };
-  })(), items);
-  let obj = parentChannel(6165);
-  obj = { parentChannel };
-  if (null != threadSettings) {
-    name = threadSettings.name;
+  callback = React.useCallback(function() {
+    const self = this;
+    const apply = closure_0.apply;
+    if (typeof apply === "unknown") {
+      let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+    } else {
+      applyArgumentsResult = apply(self, arguments);
+    }
+    return applyArgumentsResult;
+  }, items);
+  let obj = _require(6183);
+  obj = { parentChannel, name: null, appliedTags: null, analyticsLocations: null, onThreadCreated: null, upload: null };
+  let str;
+  if (threadSettings != null) {
+    str = threadSettings.name;
   }
-  let str = "";
-  if (null != name) {
-    str = name;
+  if (str == null) {
+    str = "";
   }
-  obj.name = str;
-  obj.appliedTags = appliedTags;
-  obj.analyticsLocations = analyticsLocations;
-  obj.onThreadCreated = onThreadCreated;
-  obj.upload = callback;
+  obj[1] = str;
+  obj[2] = appliedTags;
+  obj[3] = analyticsLocations;
+  obj[4] = onThreadCreated;
+  obj[5] = callback;
   return obj.useCreateForumPostCommon(obj);
 };

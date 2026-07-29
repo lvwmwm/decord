@@ -1,18 +1,17 @@
-// Module ID: 9443
-// Function ID: 73443
+// Module ID: 9467
+// Function ID: 9468
 // Name: weakMap
 // Dependencies: [2]
 // Exports: getAndIncrementChangesetIdForChat, getChangesetIdForChat
 
-// Module 9443 (weakMap)
+// Module 9467 (weakMap)
 const weakMap = new WeakMap();
 let result = require("set").fileFinishedImporting("modules/chat/native/ChatChangesetUpdateTracker.tsx");
 
 export const getAndIncrementChangesetIdForChat = function getAndIncrementChangesetIdForChat(arg0) {
-  const value = weakMap.get(arg0);
-  let num = 0;
-  if (null != value) {
-    num = value;
+  let num = weakMap.get(arg0);
+  if (num == null) {
+    num = 0;
   }
   const sum = num + 1;
   const result = weakMap.set(arg0, sum);
@@ -21,10 +20,9 @@ export const getAndIncrementChangesetIdForChat = function getAndIncrementChanges
 export const getChangesetIdForChat = function getChangesetIdForChat(current) {
   let num = 0;
   if (null != current) {
-    const value = weakMap.get(current);
-    let num2 = 0;
-    if (null != value) {
-      num2 = value;
+    let num2 = weakMap.get(current);
+    if (num2 == null) {
+      num2 = 0;
     }
     num = num2;
   }

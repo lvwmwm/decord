@@ -1,19 +1,10 @@
-// Module ID: 4222
-// Function ID: 36158
-// Name: getClipCropAspectRatio
+// Module ID: 4246
+// Function ID: 4247
+// Name: ClipSignalTypes
 // Dependencies: [2]
-// Exports: getClipCropBounds
+// Exports: getClipCropAspectRatio, getClipCropBounds
 
-// Module 4222 (getClipCropAspectRatio)
-function getClipCropAspectRatio(arg0) {
-  if (obj.PORTRAIT_9_16 === arg0) {
-    return 0.5625;
-  } else if (obj.LANDSCAPE_16_9 === arg0) {
-    return 1.7777777777777777;
-  } else {
-    return null;
-  }
-}
+// Module 4246 (ClipSignalTypes)
 let obj = { ORIGINAL: "original", PORTRAIT_9_16: "9:16", LANDSCAPE_16_9: "16:9" };
 const result = require("set").fileFinishedImporting("modules/clips/ClipsTypes.tsx");
 
@@ -22,26 +13,41 @@ export const ClipsHardwareClassification = { UNKNOWN: "unknown", BELOW_MINIMUM: 
 export const ClipsSaveNoOpReason = { MAX_CONCURRENT_SAVES: "max_concurrent_saves", NO_ELIGIBLE_SOURCE: "no_eligible_source", MODULE_NOT_LOADED: "module_not_loaded", BUFFER_WARMING_UP: "buffer_warming_up", BRIDGE_SHUTDOWN: "bridge_shutdown", RECORDING_NOT_READY: "recording_not_ready" };
 export const Emotion = { ANGER: "anger", CALM: "calm", DISGUST: "disgust", FEAR: "fear", HAPPY: "happy", NEUTRAL: "neutral", SAD: "sad", SURPRISED: "surprised" };
 export const ClipCropPreset = obj;
-export { getClipCropAspectRatio };
+export const getClipCropAspectRatio = function getClipCropAspectRatio(arg0) {
+  if (obj.PORTRAIT_9_16 === arg0) {
+    return 0.5625;
+  } else if (tmp.LANDSCAPE_16_9 === arg0) {
+    return 1.7777777777777777;
+  } else {
+    return null;
+  }
+};
 export const getClipCropBounds = function getClipCropBounds(bounds) {
   bounds = undefined;
-  if (null != bounds) {
+  if (bounds != null) {
     bounds = bounds.bounds;
   }
   if (null != bounds) {
     return bounds.bounds;
   } else {
     let preset;
-    if (null != bounds) {
+    if (bounds != null) {
       preset = bounds.preset;
     }
-    const tmp2Result = getClipCropAspectRatio(preset);
-    let tmp5 = null;
-    if (null != tmp2Result) {
-      const obj = { aspectRatio: tmp2Result };
-      tmp5 = obj;
+    let num = 0.5625;
+    if (obj.PORTRAIT_9_16 !== preset) {
+      num = null;
+      if (obj.LANDSCAPE_16_9 === preset) {
+        num = 1.7777777777777777;
+      }
     }
-    return tmp5;
+    let tmp3 = null;
+    if (null != num) {
+      obj = { aspectRatio: null };
+      obj[0] = num;
+      tmp3 = obj;
+    }
+    return tmp3;
   }
 };
 export const ClipType = { CLIP: "clip", SCREENSHOT: "screenshot", VOICE_CLIP: "voice_clip" };

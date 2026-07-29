@@ -1,33 +1,39 @@
-// Module ID: 9806
-// Function ID: 76081
+// Module ID: 9828
+// Function ID: 9829
 // Name: PremiumGiftAnalytics
-// Dependencies: [31, 653, 8780, 6274, 477, 675, 1212, 6275, 2]
+// Dependencies: [19, 676, 8804, 6295, 500, 698, 1236, 6296, 2]
 // Exports: default
 
-// Module 9806 (PremiumGiftAnalytics)
-import result from "result";
+// Module 9828 (PremiumGiftAnalytics)
+import noop from "noop";
 import { AnalyticEvents } from "ME";
 
 const require = arg1;
-let result = require("importDefaultResult1").fileFinishedImporting("modules/premium/native/gifting/PremiumGiftAnalytics.tsx");
+let result = require("NativeGiftContextProvider").fileFinishedImporting("modules/premium/native/gifting/PremiumGiftAnalytics.tsx");
 
 export default function PremiumGiftAnalytics(currentStep) {
   currentStep = currentStep.currentStep;
+  let customGiftMessage;
+  let productId;
+  let basePurchaseAnalytics;
+  let ref;
+  let closure_5;
+  let closure_6;
   const nativeGiftContext = currentStep(productId[2]).useNativeGiftContext();
-  const customGiftMessage = nativeGiftContext.customGiftMessage;
+  customGiftMessage = nativeGiftContext.customGiftMessage;
   productId = nativeGiftContext.productId;
-  const basePurchaseAnalytics = nativeGiftContext.basePurchaseAnalytics;
-  const ref = basePurchaseAnalytics.useRef(null);
+  basePurchaseAnalytics = nativeGiftContext.basePurchaseAnalytics;
+  ref = basePurchaseAnalytics.useRef(null);
   let timestamp = Date.now();
-  let closure_5 = basePurchaseAnalytics.useRef(timestamp);
-  let closure_6 = basePurchaseAnalytics.useRef(timestamp);
+  closure_5 = basePurchaseAnalytics.useRef(timestamp);
+  closure_6 = basePurchaseAnalytics.useRef(timestamp);
   const items = [basePurchaseAnalytics, currentStep, ref, customGiftMessage, productId];
   const effect = basePurchaseAnalytics.useEffect(() => {
     if (currentStep !== ref.current) {
       const _Date = Date;
       const timestamp = Date.now();
-      if (null != ref.current) {
-        let isIOSResult = currentStep === currentStep(productId[3]).PaymentFlowStep.CONFIRM;
+      if (null != tmp2.current) {
+        let isIOSResult = tmp === currentStep(productId[3]).PaymentFlowStep.CONFIRM;
         if (isIOSResult) {
           let obj = currentStep(productId[4]);
           isIOSResult = obj.isIOS();
@@ -36,16 +42,22 @@ export default function PremiumGiftAnalytics(currentStep) {
           let obj1 = customGiftMessage(productId[5]);
           obj = {};
           let obj3 = currentStep(productId[3]);
-          obj = { subscription_plan_gateway_plan_id: productId };
+          obj = { subscription_plan_gateway_plan_id: null };
+          obj[0] = productId;
           const merged = Object.assign(obj3.getPaymentFlowStepAnalyticsFields(basePurchaseAnalytics, obj));
           const intl = currentStep(productId[6]).intl;
-          obj["is_custom_message_edited"] = customGiftMessage !== intl.string(currentStep(productId[6]).t.ZkOo1U);
-          obj["is_custom_emoji_sound_available"] = false;
+          obj.is_custom_message_edited = customGiftMessage !== intl.string(currentStep(productId[6]).t.ZkOo1U);
+          obj.is_custom_emoji_sound_available = false;
           obj1.track(ref.PAYMENT_FLOW_SUCCEEDED, obj);
         }
         obj1 = {};
         const obj6 = customGiftMessage(productId[5]);
-        const obj2 = { from_step: ref.current, to_step: currentStep, step_duration_ms: timestamp - ref2.current, flow_duration_ms: timestamp - ref.current, subscription_plan_gateway_plan_id: productId };
+        const obj2 = { from_step: null, to_step: null, step_duration_ms: null, flow_duration_ms: null, subscription_plan_gateway_plan_id: null };
+        obj2[0] = tmp2.current;
+        obj2[1] = tmp;
+        obj2[2] = timestamp - ref2.current;
+        obj2[3] = timestamp - ref.current;
+        obj2[4] = productId;
         const merged1 = Object.assign(currentStep(productId[3]).getPaymentFlowStepAnalyticsFields(basePurchaseAnalytics, obj2));
         obj6.track(ref.PAYMENT_FLOW_STEP, obj1);
         const obj8 = currentStep(productId[3]);
@@ -54,20 +66,21 @@ export default function PremiumGiftAnalytics(currentStep) {
         const obj10 = currentStep(productId[7]);
         obj3 = {};
         const obj11 = customGiftMessage(productId[5]);
-        const obj4 = { initial_step: currentStep };
+        const obj4 = { initial_step: null };
+        obj4[0] = tmp;
         const merged2 = Object.assign(currentStep(productId[3]).getPaymentFlowStepAnalyticsFields(basePurchaseAnalytics, obj4));
         obj11.track(ref.PAYMENT_FLOW_LOADED, obj3);
         const obj13 = currentStep(productId[3]);
       }
-      ref.current = currentStep;
+      tmp2.current = tmp;
       ref2.current = timestamp;
     }
   }, items);
   const items1 = [basePurchaseAnalytics, ref];
   const effect1 = basePurchaseAnalytics.useEffect(() => () => {
-    if (outer1_4.current !== currentStep(productId[3]).PaymentFlowStep.CONFIRM) {
-      customGiftMessage(productId[5]).track(ref.PAYMENT_FLOW_CANCELED, outer1_3);
-      const obj = customGiftMessage(productId[5]);
+    if (ref.current !== outer1_0(outer1_2[3]).PaymentFlowStep.CONFIRM) {
+      outer1_1(outer1_2[5]).track(outer1_4.PAYMENT_FLOW_CANCELED, noop);
+      const obj = outer1_1(outer1_2[5]);
     }
   }, items1);
   return currentStep.children;

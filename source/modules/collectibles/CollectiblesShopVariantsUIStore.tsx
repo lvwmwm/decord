@@ -1,37 +1,38 @@
-// Module ID: 8674
-// Function ID: 68757
+// Module ID: 8698
+// Function ID: 8699
 // Name: useSelectedVariantIndex
-// Dependencies: [677, 3778, 8637, 5791, 2]
+// Dependencies: [700, 3802, 8661, 5809, 2]
 // Exports: setSelectedVariantIndex, useSelectedVariantIndex
 
-// Module 8674 (useSelectedVariantIndex)
-import useStoreWithEqualityFn from "useStoreWithEqualityFn";
+// Module 8698 (useSelectedVariantIndex)
+import identity from "identity";
 
-let closure_2 = useStoreWithEqualityFn.createWithEqualityFn(() => {
-  const obj = { selectionStates: new Map() };
+let closure_2 = identity.createWithEqualityFn(() => {
+  const obj = { selectionStates: null };
+  obj[0] = new Map();
   return obj;
 }, require("isIterable").shallow);
 const result = require("useDefaultVariantIndex").fileFinishedImporting("modules/collectibles/CollectiblesShopVariantsUIStore.tsx");
 
 export const useSelectedVariantIndex = function useSelectedVariantIndex(product) {
   const _require = product;
-  let defaultVariantIndex = _require(8637).useDefaultVariantIndex(product);
-  const tmp2 = state((selectionStates) => {
-    let tmp = null;
+  let defaultVariantIndex = _require(8661).useDefaultVariantIndex(product);
+  let tmp2 = state((selectionStates) => {
+    let tmp2 = null;
     if (null != product) {
-      tmp = null;
-      if (obj.getIsVariantProduct(product)) {
+      tmp2 = null;
+      if (obj.getIsVariantProduct(tmp)) {
         selectionStates = selectionStates.selectionStates;
-        const value = selectionStates.get(product.storeListingId);
+        const value = selectionStates.get(tmp.storeListingId);
         let selectedVariantIndex;
-        if (null != value) {
+        if (value != null) {
           selectedVariantIndex = value.selectedVariantIndex;
         }
-        tmp = selectedVariantIndex;
+        tmp2 = selectedVariantIndex;
       }
       obj = product(outer1_1[3]);
     }
-    return tmp;
+    return tmp2;
   });
   if (null != tmp2) {
     const _Math = Math;
@@ -44,20 +45,21 @@ export const setSelectedVariantIndex = function setSelectedVariantIndex(arg0, ar
   let closure_1 = arg1;
   state.setState((selectionStates) => {
     selectionStates = selectionStates.selectionStates;
-    const value = selectionStates.get(closure_0.storeListingId);
+    const value = selectionStates.get(storeListingId.storeListingId);
     let selectedVariantIndex;
-    if (null != value) {
+    if (value != null) {
       selectedVariantIndex = value.selectedVariantIndex;
     }
-    let tmp3 = selectionStates;
+    let tmp5 = selectionStates;
     if (selectedVariantIndex !== closure_1) {
-      let obj = {};
+      let obj = { selectionStates: null };
       const _Map = Map;
       const map = new Map(selectionStates.selectionStates);
-      obj = { selectedVariantIndex: closure_1 };
-      obj.selectionStates = map.set(closure_0.storeListingId, obj);
-      tmp3 = obj;
+      obj = { selectedVariantIndex: null };
+      obj[0] = tmp4;
+      obj[0] = map.set(storeListingId.storeListingId, obj);
+      tmp5 = obj;
     }
-    return tmp3;
+    return tmp5;
   });
 };

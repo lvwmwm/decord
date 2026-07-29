@@ -1,35 +1,15 @@
-// Module ID: 4133
-// Function ID: 34059
-// Name: showActionSheet
-// Dependencies: [29, 31, 33, 686, 4134, 4135, 1820, 2]
+// Module ID: 4157
+// Function ID: 4158
+// Name: ACTION_SHEET_HEIGHT_HALF
+// Dependencies: [109, 19, 21, 709, 4158, 4159, 1844, 2]
+// Exports: showActionSheet
 
-// Module 4133 (showActionSheet)
+// Module 4157 (ACTION_SHEET_HEIGHT_HALF)
 import _objectWithoutProperties from "_objectWithoutProperties";
-import "result";
+import "noop";
 import { jsx } from "jsxProd";
 
 const require = arg1;
-function showActionSheet(arg0) {
-  let closure_3;
-  let _objectWithoutProperties;
-  let closure_7;
-  let dependencyMap;
-  let importDefault;
-  let jsx;
-  let require;
-  let showActionSheet;
-  ({ content: require, key: importDefault, impressionName: dependencyMap, impressionProperties: closure_3, backdropKind: _objectWithoutProperties, stackingBehavior: jsx, disableHapticOnOpen: showActionSheet, appEntryKey: closure_7 } = arg0);
-  importDefault(686).wait(() => {
-    if (!closure_6) {
-      let obj = outer1_0(outer1_2[4]);
-      const result = obj.triggerHapticFeedback(outer1_1(outer1_2[5]).IMPACT_LIGHT);
-    }
-    const result1 = outer1_0(outer1_2[6]).dismissGlobalKeyboard();
-    const obj2 = outer1_0(outer1_2[6]);
-    obj = { type: "SHOW_ACTION_SHEET", content: closure_0, key: closure_1, impressionName: closure_2, impressionProperties: closure_3, backdropKind: _objectWithoutProperties, stackingBehavior: closure_5, appEntryKey: closure_7 };
-    outer1_1(outer1_2[3]).dispatch(obj);
-  });
-}
 let closure_3 = ["impressionName", "impressionProperties", "backdropKind", "disableHapticOnOpen", "appEntryKey"];
 let result = require("jsxProd").fileFinishedImporting("modules/action_sheet/native/ActionSheetActionCreators.tsx");
 
@@ -49,41 +29,67 @@ export default {
       let disableHapticOnOpen;
       let impressionName;
       let impressionProperties;
-      const tmp = null != closure_1 ? closure_1 : {};
-      ({ impressionName, impressionProperties, backdropKind, disableHapticOnOpen, appEntryKey } = tmp);
-      let obj = {};
+      let obj = callback;
+      if (callback == null) {
+        obj = {};
+      }
+      ({ impressionName, impressionProperties, backdropKind, disableHapticOnOpen, appEntryKey } = obj);
       obj = {};
-      const merged = Object.assign(outer1_4(tmp, outer1_3));
-      obj.content = outer1_5(arg0, obj);
-      obj.key = closure_0;
-      obj.impressionName = impressionName;
-      obj.impressionProperties = impressionProperties;
-      obj.backdropKind = backdropKind;
-      obj.stackingBehavior = closure_2;
-      obj.disableHapticOnOpen = disableHapticOnOpen;
-      obj.appEntryKey = appEntryKey;
-      outer1_6(obj);
+      const merged = Object.assign(outer1_4(obj, outer1_3));
+      let closure_0 = outer1_5(arg0, obj);
+      callback = closure_0;
+      let closure_5 = impressionName;
+      callback(table[3]).wait(() => {
+        if (!disableHapticOnOpen) {
+          let obj = callback(impressionName[4]);
+          const result = obj.triggerHapticFeedback(callback2(impressionName[5]).IMPACT_LIGHT);
+        }
+        const result1 = callback(impressionName[6]).dismissGlobalKeyboard();
+        const obj2 = callback(impressionName[6]);
+        obj = { type: "SHOW_ACTION_SHEET", content: callback, key: callback2, impressionName, impressionProperties, backdropKind, stackingBehavior: closure_5, appEntryKey };
+        callback2(impressionName[3]).dispatch(obj);
+      });
     });
   },
   hideActionSheet(key) {
-    let obj = importDefault(686);
+    let obj = importDefault(709);
     obj = { type: "HIDE_ACTION_SHEET", key };
     obj.dispatch(obj);
   },
   hideAllActionSheets() {
-    importDefault(686).dispatch({ type: "HIDE_ALL_ACTION_SHEETS" });
+    importDefault(709).dispatch({ type: "HIDE_ALL_ACTION_SHEETS" });
   },
   setActionSheetZIndex(zIndex) {
-    let obj = importDefault(686);
+    let obj = importDefault(709);
     obj = { type: "SET_ACTION_SHEET_Z_INDEX", zIndex };
     obj.dispatch(obj);
   },
-  resetActionSheetsForAppEntryKey(outer1_0) {
-    let obj = importDefault(686);
-    obj = { type: "RESET_ACTION_SHEETS_FOR_APP_ENTRY_KEY", appEntryKey: outer1_0 };
+  resetActionSheetsForAppEntryKey(closure_0) {
+    let obj = importDefault(709);
+    obj = { type: "RESET_ACTION_SHEETS_FOR_APP_ENTRY_KEY", appEntryKey: closure_0 };
     obj.dispatch(obj);
   }
 };
 export const ACTION_SHEET_HEIGHT_HALF = "start";
 export const ACTION_SHEET_HEIGHT_EXPANDED = "expanded";
-export { showActionSheet };
+export const showActionSheet = function showActionSheet(arg0) {
+  let closure_3;
+  let _objectWithoutProperties;
+  let closure_6;
+  let closure_7;
+  let dependencyMap;
+  let importDefault;
+  let jsx;
+  let require;
+  ({ content: require, key: importDefault, impressionName: dependencyMap, impressionProperties: closure_3, backdropKind: _objectWithoutProperties, stackingBehavior: jsx, disableHapticOnOpen: closure_6, appEntryKey: closure_7 } = arg0);
+  importDefault(709).wait(() => {
+    if (!disableHapticOnOpen) {
+      let obj = callback(impressionName[4]);
+      const result = obj.triggerHapticFeedback(callback2(impressionName[5]).IMPACT_LIGHT);
+    }
+    const result1 = callback(impressionName[6]).dismissGlobalKeyboard();
+    const obj2 = callback(impressionName[6]);
+    obj = { type: "SHOW_ACTION_SHEET", content: callback, key: callback2, impressionName, impressionProperties, backdropKind, stackingBehavior: closure_5, appEntryKey };
+    callback2(impressionName[3]).dispatch(obj);
+  });
+};

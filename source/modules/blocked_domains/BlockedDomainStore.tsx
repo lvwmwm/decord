@@ -1,42 +1,29 @@
-// Module ID: 8177
-// Function ID: 65056
-// Name: BlockedDomainStore
-// Dependencies: [6, 7, 653, 1845, 675, 2]
+// Module ID: 8201
+// Function ID: 8202
+// Name: isBlockedDomain
+// Dependencies: [676, 1869, 698, 2]
 
-// Module 8177 (BlockedDomainStore)
-import _classCallCheck from "_classCallCheck";
-import _defineProperties from "_defineProperties";
+// Module 8201 (isBlockedDomain)
 import { AnalyticEvents } from "ME";
 
-const require = arg1;
-const tmp2 = (() => {
-  class BlockedDomainStore {
-    constructor() {
-      tmp = outer1_3(this, BlockedDomainStore);
-      return;
-    }
+const prototype = function BlockedDomainStore() {
+  return Object.create(new.target.prototype);
+}.prototype;
+prototype["isBlockedDomain"] = function isBlockedDomain(arg0) {
+  let obj = require(1869) /* isBlockedDomain */;
+  let isBlockedDomainResult = null;
+  if (obj.isLibdiscoreInitialized()) {
+    isBlockedDomainResult = require(1869) /* isBlockedDomain */.isBlockedDomain(arg0);
+    const tmpResult = require(1869) /* isBlockedDomain */;
   }
-  const items = [
-    {
-      key: "isBlockedDomain",
-      value(arg0) {
-        let obj = BlockedDomainStore(outer1_2[3]);
-        let isBlockedDomainResult = null;
-        if (obj.isLibdiscoreInitialized()) {
-          isBlockedDomainResult = BlockedDomainStore(outer1_2[3]).isBlockedDomain(arg0);
-          const obj2 = BlockedDomainStore(outer1_2[3]);
-        }
-        if (tmp5) {
-          obj = { blocked_domain: isBlockedDomainResult };
-          outer1_1(outer1_2[4]).track(outer1_5.LINK_SECURITY_CHECK_BLOCKED, obj);
-          const obj3 = outer1_1(outer1_2[4]);
-        }
-        return isBlockedDomainResult;
-      }
-    }
-  ];
-  return callback(BlockedDomainStore, null, items);
-})();
-const result = require("ME").fileFinishedImporting("modules/blocked_domains/BlockedDomainStore.tsx");
+  if (tmp5) {
+    obj = { blocked_domain: null };
+    obj[0] = isBlockedDomainResult;
+    importDefault(698).track(AnalyticEvents.LINK_SECURITY_CHECK_BLOCKED, obj);
+    const obj3 = importDefault(698);
+  }
+  return isBlockedDomainResult;
+};
+const result = require("expandEventProperties").fileFinishedImporting("modules/blocked_domains/BlockedDomainStore.tsx");
 
-export default tmp2;
+export default prototype;

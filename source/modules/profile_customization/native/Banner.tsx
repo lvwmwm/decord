@@ -1,18 +1,18 @@
-// Module ID: 8078
-// Function ID: 64059
+// Module ID: 8102
+// Function ID: 8103
 // Name: ProfileBanner
-// Dependencies: [31, 27, 653, 33, 4165, 665, 5119, 2]
+// Dependencies: [19, 17, 676, 21, 4189, 688, 5141, 2]
 // Exports: default
 
-// Module 8078 (ProfileBanner)
-import "result";
+// Module 8102 (ProfileBanner)
+import "noop";
 import { View } from "get ActivityIndicator";
 import { BANNER_HEIGHT } from "ME";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
 const require = arg1;
-let closure_6 = _createForOfIteratorHelperLoose.createStyles({ root: { width: "100%" }, image: { width: "100%", height: "100%" } });
+let closure_6 = createCacheKey.createStyles({ root: { width: "100%" }, image: { width: "100%", height: "100%" } });
 const result = require("ME").fileFinishedImporting("modules/profile_customization/native/Banner.tsx");
 
 export default function ProfileBanner(bannerHeight) {
@@ -30,14 +30,18 @@ export default function ProfileBanner(bannerHeight) {
     bannerHeight = BANNER_HEIGHT;
   }
   const tmp = callback();
-  let obj = { backgroundColor: require(665) /* pad2 */.int2hex(backgroundColor), height: bannerHeight + bannerSafeArea };
-  obj = { style: items };
+  let obj = { backgroundColor: null, height: null };
+  obj[0] = require(688) /* int2hslRaw */.int2hex(backgroundColor);
+  obj[1] = bannerHeight + bannerSafeArea;
+  obj = { style: items, children: null };
   items = [tmp.root, obj, style];
-  let tmp4 = null;
+  let tmp3Result = null;
   if (null != bannerSource) {
-    obj = { style: tmp.image, source: bannerSource };
-    tmp4 = jsx(importDefault(5119), { style: tmp.image, source: bannerSource });
+    obj = { style: null, source: null };
+    obj[0] = tmp.image;
+    obj[1] = bannerSource;
+    tmp3Result = tmp3(importDefault(5141), obj);
   }
-  obj.children = tmp4;
-  return <View style={items} />;
+  obj[1] = tmp3Result;
+  return <View style={items}>{null}</View>;
 };

@@ -1,40 +1,40 @@
-// Module ID: 15360
-// Function ID: 117029
+// Module ID: 15393
+// Function ID: 15394
 // Name: useNotificationPermissionPrompt
-// Dependencies: [31, 1341, 4843, 1342, 11480, 566, 1344, 11489, 15361, 15363, 2]
+// Dependencies: [19, 1365, 4865, 1366, 11504, 589, 1368, 11513, 15394, 15396, 2]
 // Exports: default
 
-// Module 15360 (useNotificationPermissionPrompt)
-import result from "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_5 from "_isNativeReflectConstruct";
-import closure_6 from "_isNativeReflectConstruct";
-import closure_7 from "_isNativeReflectConstruct";
+// Module 15393 (useNotificationPermissionPrompt)
+import noop from "noop";
+import handleUpdateUser from "handleUpdateUser";
+import _handleConnectionOpen from "_handleConnectionOpen";
+import handleRequiredAction from "handleRequiredAction";
+import set from "set";
 
 const require = arg1;
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/nuf/native/useNotificationPermissionPrompt.tsx");
+const result = require("_handleConnectionOpen").fileFinishedImporting("modules/nuf/native/useNotificationPermissionPrompt.tsx");
 
 export default function useNotificationPermissionPrompt() {
-  const items = [closure_5];
-  stateFromStores = stateFromStores(566).useStateFromStores(items, () => outer1_5.isConnected());
-  let obj = stateFromStores(566);
-  const items1 = [closure_6, _isNativeReflectConstruct];
-  const stateFromStores1 = stateFromStores(566).useStateFromStores(items1, () => stateFromStores1(outer1_2[6])(outer1_4, outer1_6));
+  const items = [_handleConnectionOpen];
+  stateFromStores = stateFromStores(589).useStateFromStores(items, () => connected.isConnected());
+  const obj = stateFromStores(589);
+  const items1 = [handleRequiredAction, handleUpdateUser];
+  const stateFromStores1 = stateFromStores(589).useStateFromStores(items1, () => stateFromStores1(table[6])(handleUpdateUser, handleRequiredAction));
   const items2 = [stateFromStores, stateFromStores1];
   const effect = React.useEffect(() => {
     if (stateFromStores) {
       if (!stateFromStores1) {
         if (tmp5) {
-          const permission = stateFromStores1(outer1_2[7]).requestPermission();
-          stateFromStores1(outer1_2[7]).shouldRequestNotification = false;
-          const obj = stateFromStores1(outer1_2[7]);
+          const permission = tmp3(tmp4[7]).requestPermission();
+          tmp3(tmp4[7]).shouldRequestNotification = false;
+          const tmp3Result = tmp3(tmp4[7]);
         }
         tmp5 = stateFromStores1(outer1_2[7]).shouldRequestNotification && !outer1_7.promptSeen;
       }
     }
   }, items2);
-  const obj2 = stateFromStores(566);
-  const guildOpenNudge = stateFromStores(15361).useGuildOpenNudge();
-  const obj3 = stateFromStores(15361);
-  const postCallDisconnectNudge = stateFromStores(15363).usePostCallDisconnectNudge();
+  const obj2 = stateFromStores(589);
+  const guildOpenNudge = stateFromStores(15394).useGuildOpenNudge();
+  const obj3 = stateFromStores(15394);
+  const postCallDisconnectNudge = stateFromStores(15396).usePostCallDisconnectNudge();
 };

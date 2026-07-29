@@ -1,11 +1,10 @@
 // Module ID: 4660
-// Function ID: 40432
+// Function ID: 4661
 // Name: registerAsset
-// Dependencies: [1217]
+// Dependencies: [1241]
 
 // Module 4660 (registerAsset)
 import registerAsset from "registerAsset";
 
-const obj = { __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "c8317c4f4d8b58f3dca330d49b866ea3", name: "ImageLockIcon", type: "png" };
 
-export default registerAsset.registerAsset(obj);
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "e3a50d090de2ca1d8928677d5f100909", name: "HubIcon", type: "png" });

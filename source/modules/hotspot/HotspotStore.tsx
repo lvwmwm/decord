@@ -1,132 +1,76 @@
-// Module ID: 5632
-// Function ID: 47702
-// Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 660, 4712, 566, 686, 2]
+// Module ID: 5650
+// Function ID: 5651
+// Name: set
+// Dependencies: [683, 589, 4734, 709, 2]
 
-// Module 5632 (_isNativeReflectConstruct)
-import ProcessArgs from "ProcessArgs";
-import initialize from "initialize";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
+// Module 5650 (set)
 import { CONFERENCE_MODE_ENABLED } from "CONFERENCE_MODE_ENABLED";
-import set from "_possibleConstructorReturn";
+import { PersistedStore } from "initialize";
+import set from "get";
 
-const require = arg1;
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
-  }
-  const result = _isNativeReflectConstruct();
-}
 let set = new Set();
-let closure_9 = {};
-let tmp3 = ((PersistedStore) => {
-  class HotspotStore {
-    constructor() {
-      self = this;
-      tmp = outer1_2(this, HotspotStore);
-      obj = outer1_5(HotspotStore);
-      tmp2 = outer1_4;
-      if (outer1_10()) {
-        tmp6 = globalThis;
-        _Reflect = Reflect;
-        tmp7 = outer1_5;
-        tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, outer1_5(self).constructor);
-      } else {
-        tmp3 = arguments;
-        tmp4 = arguments;
-        constructResult = obj(...arguments);
-      }
-      return tmp2(self, constructResult);
+let closure_4 = {};
+class HotspotStore extends PersistedStore {
+}
+const prototype = HotspotStore.prototype;
+prototype["initialize"] = function initialize(hiddenHotspots) {
+  if (null != hiddenHotspots) {
+    const _Array = Array;
+    if (Array.isArray(hiddenHotspots.hiddenHotspots)) {
+      const _Set = Set;
+      const set = new Set(hiddenHotspots.hiddenHotspots);
+    }
+    if (null != hiddenHotspots.hotspotOverrides) {
+      const hotspotOverrides = hiddenHotspots.hotspotOverrides;
     }
   }
-  callback2(HotspotStore, PersistedStore);
-  let obj = {
-    key: "initialize",
-    value(hiddenHotspots) {
-      if (null != hiddenHotspots) {
-        const _Array = Array;
-        if (Array.isArray(hiddenHotspots.hiddenHotspots)) {
-          const _Set = Set;
-          const set = new Set(hiddenHotspots.hiddenHotspots);
-          const outer1_8 = set;
-        }
-        if (null != hiddenHotspots.hotspotOverrides) {
-          const outer1_9 = hiddenHotspots.hotspotOverrides;
-        }
+};
+prototype["hasHotspot"] = function hasHotspot(LIVE_STAGE_NOTIFICATION_BADGE) {
+  let flag = arg1;
+  if (arg1 === undefined) {
+    flag = false;
+  }
+  let tmp = !flag;
+  if (!flag) {
+    tmp = dependencyMap[LIVE_STAGE_NOTIFICATION_BADGE];
+  }
+  let tmp3 = !CONFERENCE_MODE_ENABLED;
+  if (!CONFERENCE_MODE_ENABLED) {
+    const ProcessArgs = require(4734) /* get */.ProcessArgs;
+    const isDisallowPopupsSetResult = ProcessArgs.isDisallowPopupsSet();
+    let tmp7 = !isDisallowPopupsSetResult;
+    if (!isDisallowPopupsSetResult) {
+      if (!tmp) {
+        tmp = !set.has(LIVE_STAGE_NOTIFICATION_BADGE);
       }
+      tmp7 = tmp;
     }
-  };
-  const items = [obj, , , , ];
-  obj = {
-    key: "hasHotspot",
-    value(arg0) {
-      let flag = arg1;
-      if (arg1 === undefined) {
-        flag = false;
-      }
-      let tmp = !flag;
-      if (tmp) {
-        tmp = outer1_9[arg0];
-      }
-      let tmp3 = !outer1_7;
-      if (tmp3) {
-        const ProcessArgs = HotspotStore(outer1_1[6]).ProcessArgs;
-        let tmp6 = !ProcessArgs.isDisallowPopupsSet();
-        if (tmp6) {
-          if (!tmp) {
-            tmp = !outer1_8.has(arg0);
-          }
-          tmp6 = tmp;
-        }
-        tmp3 = tmp6;
-      }
-      return tmp3;
-    }
-  };
-  items[1] = obj;
-  obj = {
-    key: "hasHiddenHotspot",
-    value(arg0) {
-      return outer1_8.has(arg0);
-    }
-  };
-  items[2] = obj;
-  items[3] = {
-    key: "getHotspotOverride",
-    value(arg0) {
-      return outer1_9[arg0];
-    }
-  };
-  items[4] = {
-    key: "getState",
-    value() {
-      return { hiddenHotspots: outer1_8, hotspotOverrides: outer1_9 };
-    }
-  };
-  return callback(HotspotStore, items);
-})(require("initialize").PersistedStore);
-tmp3.displayName = "HotspotStore";
-tmp3.persistKey = "hotspots";
-let items = [
+    tmp3 = tmp7;
+  }
+  return tmp3;
+};
+prototype["hasHiddenHotspot"] = function hasHiddenHotspot(HUB_SECOND_EMAIL_CONNECTION_UPSELL) {
+  return set.has(HUB_SECOND_EMAIL_CONNECTION_UPSELL);
+};
+prototype["getHotspotOverride"] = function getHotspotOverride(arg0) {
+  return dependencyMap[arg0];
+};
+prototype["getState"] = function getState() {
+  return { hiddenHotspots: set, hotspotOverrides: closure_4 };
+};
+HotspotStore.displayName = "HotspotStore";
+HotspotStore.persistKey = "hotspots";
+const items = [
   (arg0) => {
-    let items = arg0;
-    const obj = {};
-    if (null == arg0) {
-      items = [];
+    let hiddenHotspots = arg0;
+    if (arg0 == null) {
+      hiddenHotspots = [];
     }
-    obj.hiddenHotspots = items;
-    obj.hotspotOverrides = {};
-    return obj;
+    return { hiddenHotspots, hotspotOverrides: {} };
   }
 ];
-tmp3.migrations = items;
-tmp3 = new tmp3(require("dispatcher"), {
+HotspotStore.migrations = items;
+const hotspotStore = new HotspotStore(require("dispatcher"), {
   OVERLAY_INITIALIZE: function handleOverlayInitialize(hiddenHotspots) {
     const set = new Set(hiddenHotspots.hiddenHotspots);
   },
@@ -139,16 +83,16 @@ tmp3 = new tmp3(require("dispatcher"), {
     }
   },
   HOTSPOT_OVERRIDE_SET: function handleSetHotspotOverride(location) {
-    closure_9[location.location] = location.enabled;
+    closure_4[location.location] = location.enabled;
   },
   HOTSPOT_OVERRIDE_CLEAR: function handleClearHotspotOverride(arg0) {
-    if (null == table[arg0.location]) {
+    if (null == dependencyMap[arg0.location]) {
       return false;
     } else {
       delete tmp[tmp2];
     }
   }
 });
-let result = set.fileFinishedImporting("modules/hotspot/HotspotStore.tsx");
+const result = set.fileFinishedImporting("modules/hotspot/HotspotStore.tsx");
 
-export default tmp3;
+export default hotspotStore;

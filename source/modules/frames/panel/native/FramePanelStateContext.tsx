@@ -1,12 +1,12 @@
-// Module ID: 15832
-// Function ID: 121939
+// Module ID: 15867
+// Function ID: 15868
 // Name: context
-// Dependencies: [31, 15806, 2]
+// Dependencies: [19, 15841, 2]
 
-// Module 15832 (context)
-import importAllResult from "result";
+// Module 15867 (context)
+import importAllResult from "noop";
 
-const context = require("result").createContext(require("useActivityWebViewLock").activityPanelStateContextDefault);
+const context = require("noop").createContext(require("useActivityWebViewLock").activityPanelStateContextDefault);
 const result = require("set").fileFinishedImporting("modules/frames/panel/native/FramePanelStateContext.tsx");
 
 export default context;

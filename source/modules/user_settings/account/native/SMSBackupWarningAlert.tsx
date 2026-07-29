@@ -1,44 +1,44 @@
-// Module ID: 9234
-// Function ID: 72208
+// Module ID: 9258
+// Function ID: 9259
 // Name: SMSBackupWarningAlert
-// Dependencies: [31, 33, 4165, 4596, 1212, 4506, 4161, 2]
+// Dependencies: [19, 21, 4189, 4618, 1236, 4529, 4185, 2]
 // Exports: default
 
-// Module 9234 (SMSBackupWarningAlert)
-import "result";
+// Module 9258 (SMSBackupWarningAlert)
+import "noop";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_3;
-let closure_4;
+let c3;
+let c4;
 const require = arg1;
-({ jsx: closure_3, jsxs: closure_4 } = jsxProd);
-let closure_5 = _createForOfIteratorHelperLoose.createStyles({ title: { textAlign: "center" }, body: { marginTop: 8, textAlign: "center", lineHeight: 18 } });
-const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/user_settings/account/native/SMSBackupWarningAlert.tsx");
+({ jsx: c3, jsxs: c4 } = jsxProd);
+let closure_5 = createCacheKey.createStyles({ title: { textAlign: "center" }, body: { marginTop: 8, textAlign: "center", lineHeight: 18 } });
+const result = require("createCacheKey").fileFinishedImporting("modules/user_settings/account/native/SMSBackupWarningAlert.tsx");
 
 export default function SMSBackupWarningAlert(onConfirm) {
   onConfirm = onConfirm.onConfirm;
   const tmp = callback3();
-  let obj = {};
-  const intl = onConfirm(1212).intl;
-  obj.cancelText = intl.string(onConfirm(1212).t["ETE/oC"]);
-  const intl2 = onConfirm(1212).intl;
-  obj.confirmText = intl2.string(onConfirm(1212).t.N86XcP);
-  obj.onConfirm = function onConfirm() {
+  let obj = { cancelText: null, confirmText: null, onConfirm: null, onCancel: null, children: null };
+  const intl = onConfirm(1236).intl;
+  obj[0] = intl.string(onConfirm(1236).t["ETE/oC"]);
+  const intl2 = onConfirm(1236).intl;
+  obj[1] = intl2.string(onConfirm(1236).t.N86XcP);
+  obj[2] = function onConfirm() {
     onConfirm();
     outer1_1(outer1_2[5]).close();
   };
-  obj.onCancel = function onCancel() {
-    return outer1_1(outer1_2[5]).close();
+  obj[3] = function onCancel() {
+    return callback(table[5]).close();
   };
-  obj = { style: tmp.title, accessibilityRole: "header", variant: "heading-lg/extrabold", color: "mobile-text-heading-primary" };
-  const intl3 = onConfirm(1212).intl;
-  obj.children = intl3.string(onConfirm(1212).t.Ed4XQB);
-  const items = [callback(onConfirm(4161).Text, obj), ];
-  obj = { style: tmp.body, variant: "text-sm/medium", color: "text-default" };
-  const intl4 = onConfirm(1212).intl;
-  obj.children = intl4.string(onConfirm(1212).t.EDU2Eg);
-  items[1] = callback(onConfirm(4161).Text, obj);
-  obj.children = items;
-  return callback2(importDefault(4596), obj);
+  obj = { style: tmp.title, accessibilityRole: "header", variant: "heading-lg/extrabold", color: "mobile-text-heading-primary", children: null };
+  const intl3 = onConfirm(1236).intl;
+  obj[4] = intl3.string(onConfirm(1236).t.Ed4XQB);
+  const items = [callback(onConfirm(4185).Text, obj), ];
+  obj = { style: tmp.body, variant: "text-sm/medium", color: "text-default", children: null };
+  const intl4 = onConfirm(1236).intl;
+  obj[3] = intl4.string(onConfirm(1236).t.EDU2Eg);
+  items[1] = callback(onConfirm(4185).Text, obj);
+  obj[4] = items;
+  return callback2(importDefault(4618), obj);
 };

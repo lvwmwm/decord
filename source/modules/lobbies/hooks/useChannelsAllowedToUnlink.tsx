@@ -1,39 +1,52 @@
-// Module ID: 16323
-// Function ID: 126614
+// Module ID: 16358
+// Function ID: 16359
 // Name: getChannelsAllowedToUnlink
-// Dependencies: [1908, 3793, 10171, 566, 2]
-// Exports: useChannelsAllowedToUnlink
+// Dependencies: [1932, 3817, 10192, 589, 2]
+// Exports: getChannelsAllowedToUnlink, useChannelsAllowedToUnlink
 
-// Module 16323 (getChannelsAllowedToUnlink)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import { GUILD_SELECTABLE_CHANNELS_KEY as closure_3 } from "_isNativeReflectConstruct";
-import closure_4 from "_isNativeReflectConstruct";
+// Module 16358 (getChannelsAllowedToUnlink)
+import comparator from "comparator";
+import { GUILD_SELECTABLE_CHANNELS_KEY as closure_3 } from "comparator";
+import getUncachedChannelPermissions from "getUncachedChannelPermissions";
 
 let require = arg1;
-function getChannelsAllowedToUnlink(arg0) {
+const result = require("canUnlinkLobbyChannel").fileFinishedImporting("modules/lobbies/hooks/useChannelsAllowedToUnlink.tsx");
+
+export const getChannelsAllowedToUnlink = function getChannelsAllowedToUnlink(arg0) {
   let obj = arg1;
-  let tmp = arg2;
   if (arg1 === undefined) {
-    obj = _isNativeReflectConstruct;
+    obj = comparator;
   }
-  if (tmp === undefined) {
-    tmp = closure_4;
+  let tmp = arg2;
+  if (arg2 === undefined) {
+    tmp = getUncachedChannelPermissions;
   }
   const require = tmp;
   if (null == arg0) {
     let items = [];
   } else {
-    const found = obj.getChannels(arg0)[closure_3].filter((channel) => tmp(outer1_1[2]).canUnlinkLobbyChannel(channel.channel, tmp));
+    const found = obj.getChannels(arg0)[closure_3].filter((channel) => tmp2(outer1_1[2]).canUnlinkLobbyChannel(channel.channel, tmp2));
     items = found.map((channel) => channel.channel);
     const arr = obj.getChannels(arg0)[closure_3];
   }
   return items;
-}
-const result = require("canUnlinkLobbyChannel").fileFinishedImporting("modules/lobbies/hooks/useChannelsAllowedToUnlink.tsx");
-
-export { getChannelsAllowedToUnlink };
+};
 export const useChannelsAllowedToUnlink = function useChannelsAllowedToUnlink(id) {
   const _require = id;
-  const items = [closure_4, _isNativeReflectConstruct];
-  return _require(566).useStateFromStoresArray(items, () => outer1_5(closure_0, outer1_2, outer1_4));
+  let items = [getUncachedChannelPermissions, comparator];
+  return _require(589).useStateFromStoresArray(items, () => {
+    if (outer1_2 !== undefined) {
+      if (tmp2 !== undefined) {
+        let closure_0 = tmp2;
+        if (null == tmp) {
+          let items = [];
+        } else {
+          const found = outer1_2.getChannels(tmp)[outer1_3].filter((channel) => tmp2(outer1_1[2]).canUnlinkLobbyChannel(channel.channel, tmp2));
+          items = found.map((channel) => channel.channel);
+          const arr = outer1_2.getChannels(tmp)[outer1_3];
+        }
+        return items;
+      }
+    }
+  });
 };

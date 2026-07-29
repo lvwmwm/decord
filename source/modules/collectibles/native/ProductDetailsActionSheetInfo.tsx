@@ -1,102 +1,106 @@
-// Module ID: 8733
-// Function ID: 69125
+// Module ID: 8757
+// Function ID: 8758
 // Name: ProductNameAndDescription
-// Dependencies: [27, 33, 4165, 689, 8734, 4161, 5792, 8686, 1212, 8735, 8050, 1877, 2]
+// Dependencies: [17, 21, 4189, 712, 8758, 4185, 5810, 8710, 1236, 8759, 8074, 1901, 2]
 // Exports: default
 
-// Module 8733 (ProductNameAndDescription)
+// Module 8757 (ProductNameAndDescription)
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_4;
-let closure_5;
+let c4;
+let c5;
 function ProductNameAndDescription(product) {
   product = product.product;
   const tmp = callback3();
-  let obj = require(8734) /* _createForOfIteratorHelperLoose */;
-  obj = { style: tmp.description };
+  let obj = require(8758) /* getBundleDescription */;
+  obj = { style: tmp.description, children: null };
   const productDescription = obj.useProductDescription(product);
   obj = { variant: "heading-xl/bold", color: "mobile-text-heading-primary", style: tmp.title, accessibilityRole: "header", children: product.name };
-  const items = [callback(require(4161) /* Text */.Text, obj), ];
-  const obj1 = { variant: "text-md/medium", color: "text-default", children: productDescription };
-  items[1] = callback(require(4161) /* Text */.Text, obj1);
-  obj.children = items;
+  const items = [callback(require(4185) /* Text */.Text, obj), callback(require(4185) /* Text */.Text, { variant: "text-md/medium", color: "text-default", children: productDescription })];
+  obj[1] = items;
   return callback2(View, obj);
 }
 function ProductPurchaseStatus(product) {
   product = product.product;
-  let obj = require(5792) /* getPriceForCollectiblesProduct */;
+  let obj = require(5810) /* getItemRecordsFromPurchases */;
   const result = obj.isPremiumCollectiblesProduct(product);
-  let obj1 = require(8686) /* getProductPurchaseState */;
+  let obj1 = require(8710) /* getProductPurchaseState */;
   const productPurchaseState = obj1.useProductPurchaseState(product);
-  obj = {};
   if (productPurchaseState.isPurchased) {
-    obj = { variant: "text-md/semibold", color: "interactive-text-active" };
-    const intl2 = require(1212) /* getSystemLocale */.intl;
-    obj.children = intl2.string(require(1212) /* getSystemLocale */.t["6cfuDj"]);
-    let tmp6 = callback(require(4161) /* Text */.Text, obj);
-  } else if (tmp3) {
-    obj1 = { variant: "text-md/semibold", color: "interactive-text-active" };
-    const intl = require(1212) /* getSystemLocale */.intl;
-    obj1.children = intl.string(require(1212) /* getSystemLocale */.t.BEjTij);
-    tmp6 = callback(require(4161) /* Text */.Text, obj1);
+    obj = { variant: "text-md/semibold", color: "interactive-text-active", children: null };
+    const intl2 = tmp(1236).intl;
+    obj[2] = intl2.string(tmp(1236).t["6cfuDj"]);
+    let children = tmp6(tmp(4185).Text, obj);
+  } else if (tmp5) {
+    obj = { variant: "text-md/semibold", color: "interactive-text-active", children: null };
+    const intl = tmp(1236).intl;
+    obj[2] = intl.string(tmp(1236).t.BEjTij);
+    children = tmp6(tmp(4185).Text, obj);
   } else {
-    tmp6 = !result;
-    if (tmp6) {
-      const obj2 = { product, onTrackPress: product.onTrackPress };
-      tmp6 = callback(importDefault(8735), obj2);
+    children = !result;
+    if (!result) {
+      obj1 = { product: null, onTrackPress: null };
+      obj1[0] = product;
+      obj1[1] = product.onTrackPress;
+      children = tmp6(importDefault(8759), obj1);
     }
   }
-  obj.children = tmp6;
-  return callback(View, obj);
+  return closure_4(View, { children });
 }
 function BundleProductDetailsActionSheetInfo(onTrackPress) {
   const product = onTrackPress.product;
   const tmp = callback3();
-  let obj = require(8050) /* useCollectiblesMobileFlexibleBundlesExperiment */;
+  let obj = require(8074) /* useCollectiblesMobileFlexibleBundlesExperiment */;
   const enabled = obj.useCollectiblesMobileFlexibleBundlesExperiment("BundleProductDetailsActionSheetInfo").enabled;
-  obj = {};
   const items = [tmp.body, ];
   let bundleBody = enabled;
   if (enabled) {
     bundleBody = tmp.bundleBody;
   }
+  obj = { style: items, children: null };
   items[1] = bundleBody;
-  obj.style = items;
   let tmp4 = !enabled;
-  if (tmp4) {
-    obj = { product };
+  if (!enabled) {
+    obj = { product: null };
+    obj[0] = product;
     tmp4 = callback(ProductNameAndDescription, obj);
   }
   const items1 = [tmp4, callback(ProductPurchaseStatus, { product, onTrackPress: onTrackPress.onTrackPress })];
-  obj.children = items1;
+  obj[1] = items1;
   return closure_5(View, obj);
 }
-({ jsx: closure_4, jsxs: closure_5 } = jsxProd);
-let obj = { title: { marginBottom: 2 } };
-obj = { marginTop: require("_createForOfIteratorHelperLoose").space.PX_24, marginHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16, flexDirection: "column", gap: 20 };
-obj.body = obj;
-obj.bundleBody = { marginTop: 0 };
-obj.description = { flexDirection: "column", gap: 6 };
-let closure_6 = _createForOfIteratorHelperLoose.createStyles(obj);
-let result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/collectibles/native/ProductDetailsActionSheetInfo.tsx");
+({ jsx: c4, jsxs: c5 } = jsxProd);
+let obj = { title: { marginBottom: 2 }, body: null, bundleBody: null, description: null };
+obj = { marginTop: require("Themes").space.PX_24, marginHorizontal: require("Themes").space.PX_16, flexDirection: "column", gap: 20 };
+obj[1] = obj;
+obj[2] = { marginTop: 0 };
+obj[3] = { flexDirection: "column", gap: 6 };
+let closure_6 = createCacheKey.createStyles(obj);
+let result = require("createCacheKey").fileFinishedImporting("modules/collectibles/native/ProductDetailsActionSheetInfo.tsx");
 
 export default function ProductDetailsActionSheetInfo(arg0) {
   let onTrackPress;
   let product;
   ({ product, onTrackPress } = arg0);
-  if (product.type === require(1877) /* CollectiblesItemType */.CollectiblesItemType.BUNDLE) {
-    let obj = { product, onTrackPress };
-    let tmp8 = callback(BundleProductDetailsActionSheetInfo, obj);
+  if (product.type === require(1901) /* CollectiblesItemType */.CollectiblesItemType.BUNDLE) {
+    let obj = { product: null, onTrackPress: null };
+    obj[0] = product;
+    obj[1] = onTrackPress;
+    let tmp7 = callback(BundleProductDetailsActionSheetInfo, obj);
   } else {
-    obj = { style: tmp.body };
-    obj = { product };
+    obj = { style: null, children: null };
+    obj[0] = tmp.body;
+    obj = { product: null };
+    obj[0] = product;
     const items = [callback(ProductNameAndDescription, obj), ];
-    const obj1 = { product, onTrackPress };
+    const obj1 = { product: null, onTrackPress: null };
+    obj1[0] = product;
+    obj1[1] = onTrackPress;
     items[1] = callback(ProductPurchaseStatus, obj1);
-    obj.children = items;
-    tmp8 = callback2(View, obj);
+    obj[1] = items;
+    tmp7 = callback2(View, obj);
   }
-  return tmp8;
+  return tmp7;
 };

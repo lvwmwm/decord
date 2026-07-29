@@ -1,30 +1,61 @@
-// Module ID: 11782
-// Function ID: 91361
-// Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 1348, 664, 3, 5695, 4175, 6129, 2]
+// Module ID: 11807
+// Function ID: 11808
+// Name: sum
+// Dependencies: [1372, 687, 6146, 3, 5713, 4199, 2]
 
-// Module 11782 (_isNativeReflectConstruct)
-import set from "set";
-import timestamp from "timestamp";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import tmp2 from "Queue";
+// Module 11807 (sum)
+import ensureGuildLoaded from "ensureGuildLoaded";
+import "enqueue";
 
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
-  }
-  const result = _isNativeReflectConstruct();
-}
-let closure_8 = require("set").Millis.SECOND + 10;
+const sum = require("set").Millis.SECOND + 10;
+let c3 = sum;
 let obj = { GROUP_DM: 0, [0]: "GROUP_DM", USER: 1, [1]: "USER", CHANNEL: 2, [2]: "CHANNEL" };
-tmp2 = new tmp2();
-let result = require("_possibleConstructorReturn").fileFinishedImporting("lib/InviteQueue.tsx");
+class InviteQueue extends tmp4 {
+  constructor() {
+    tmp2 = require("timestamp");
+    tmp2 = new tmp2("InviteQueue");
+    tmp = new tmp(tmp2, c3, tmp2);
+    // ThrowIfThisInitialized (0x7c)
+    return tmp;
+  }
+}
+const prototype = InviteQueue.prototype;
+prototype["_sendInvite"] = function _sendInvite(channel, inviteKey, _location, inviteAnalyticsMetadata, ensureGuildLoaded) {
+  const importDefault = ensureGuildLoaded;
+  const obj = importDefault(5713);
+  importDefault(5713).sendInvite(channel.id, inviteKey, _location, inviteAnalyticsMetadata).then(() => callback(null, true), () => callback(null, false));
+};
+function drain(location, sum, arg2, prototype, arg4, InviteQueue, drain, dependencyMap, arg8) {
+  let self = this;
+  self = this;
+  dependencyMap = location;
+  let ensureGuildLoaded = sum;
+  const _location = location.location;
+  const inviteAnalyticsMetadata = location.inviteAnalyticsMetadata;
+  const type = location.type;
+  if (self.GROUP_DM !== type) {
+    if (tmp.CHANNEL !== type) {
+      if (tmp.USER === type) {
+        const obj = inviteAnalyticsMetadata(4199);
+        inviteAnalyticsMetadata(4199).ensurePrivateChannel(location.user.id).then((arg0) => {
+          const channel = sum.getChannel(arg0);
+          if (null != channel) {
+            self._sendInvite(channel, _location.inviteKey, _location, inviteAnalyticsMetadata, sum);
+          } else {
+            sum(null, false);
+          }
+        }, () => sum(null, false));
+        const ensurePrivateChannelResult = inviteAnalyticsMetadata(4199).ensurePrivateChannel(location.user.id);
+      }
+    }
+  }
+  self._sendInvite(location.channel, location.inviteKey, _location, inviteAnalyticsMetadata, sum);
+}
+prototype["drain"] = drain;
+drain = new drain(new require("timestamp")("InviteQueue"), sum, tmp, prototype, new.target, InviteQueue, drain, dependencyMap, new.target);
+// ThrowIfThisInitialized (0x7c)
+const tmp5 = new require("timestamp")("InviteQueue");
+const result = require("enqueue").fileFinishedImporting("lib/InviteQueue.tsx");
 
-export default tmp2;
+export default drain;
 export const InvitePropertiesType = obj;

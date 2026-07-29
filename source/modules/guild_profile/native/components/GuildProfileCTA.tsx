@@ -1,19 +1,19 @@
-// Module ID: 11932
-// Function ID: 92188
+// Module ID: 11956
+// Function ID: 11957
 // Name: GuildProfileCTA
-// Dependencies: [31, 653, 662, 33, 10959, 9778, 4133, 6669, 6672, 11933, 3985, 9124, 5164, 9117, 6668, 11503, 4578, 1212, 2]
+// Dependencies: [19, 676, 685, 21, 10983, 9800, 4157, 6690, 6693, 11957, 4009, 9148, 5186, 9141, 6689, 11527, 4600, 1236, 2]
 // Exports: default
 
-// Module 11932 (GuildProfileCTA)
-import result from "result";
+// Module 11956 (GuildProfileCTA)
+import noop from "noop";
 import ME from "ME";
 import { ProfileCustomizationScrollPositions as closure_6 } from "MAX_FAVORITES";
 import { jsx } from "jsxProd";
 
-let closure_4;
-let closure_5;
+let c4;
+let c5;
 const require = arg1;
-({ AnalyticsObjects: closure_4, JoinGuildSources: closure_5 } = ME);
+({ AnalyticsObjects: c4, JoinGuildSources: c5 } = ME);
 let result = require("MAX_FAVORITES").fileFinishedImporting("modules/guild_profile/native/components/GuildProfileCTA.tsx");
 
 export default function GuildProfileCTA(profile) {
@@ -30,12 +30,13 @@ export default function GuildProfileCTA(profile) {
   let React;
   let callback1;
   let constants;
-  const tmp = guildId(validInviteKey[4])(profile, context, inviteKey);
-  guildId = tmp.guildId;
-  validInviteKey = tmp.validInviteKey;
-  const ctaType = tmp.ctaType;
+  const tmp3 = guildId(validInviteKey[4])(profile, context, inviteKey);
+  guildId = tmp3.guildId;
+  validInviteKey = tmp3.validInviteKey;
+  const ctaType = tmp3.ctaType;
   let obj = { scrollPosition: constants2.GUILD_TAG };
   React = guildId(validInviteKey[5])(obj);
+  let obj1 = React;
   const items = [guildId];
   const items1 = [guildId, validInviteKey];
   const callback = React.useCallback(() => {
@@ -48,41 +49,42 @@ export default function GuildProfileCTA(profile) {
       let obj = guildId(validInviteKey[6]);
       const _HermesInternal = HermesInternal;
       obj.hideActionSheet("GuildProfileActionSheet:" + guildId);
-      obj = { inviteKey: validInviteKey };
-      obj = { location: "guild_profile" };
-      obj.context = obj;
+      obj = { inviteKey: null, context: null };
+      obj[0] = tmp;
+      obj[1] = { location: "guild_profile" };
       const result = guildId(validInviteKey[8]).acceptInviteAndTransitionToInviteChannel(obj);
       const obj2 = guildId(validInviteKey[8]);
     }
   }, items1);
-  const tmp5 = guildId(validInviteKey[9])(guildId);
-  constants = tmp5;
+  const tmp6 = guildId(validInviteKey[9])(guildId);
+  constants = tmp6;
   const items2 = [guildId, ];
   let applicationStatus;
-  if (null != tmp5) {
-    applicationStatus = tmp5.applicationStatus;
+  if (tmp6 != null) {
+    applicationStatus = tmp6.applicationStatus;
   }
   items2[1] = applicationStatus;
   const items3 = [guildId, callback1, profile.visibility, validInviteKey];
   const callback2 = React.useCallback(() => {
     let applicationStatus;
-    if (null != _undefined) {
+    if (_undefined != null) {
       applicationStatus = _undefined.applicationStatus;
     }
     if (profile(validInviteKey[10]).GuildJoinRequestApplicationStatuses.SUBMITTED === applicationStatus) {
-      const result = profile(validInviteKey[11]).openMemberVerificationPendingAlert(guildId);
-      const obj3 = profile(validInviteKey[11]);
-    } else if (profile(validInviteKey[10]).GuildJoinRequestApplicationStatuses.REJECTED === applicationStatus) {
-      let obj = profile(validInviteKey[11]);
-      obj = { guildId, canWithdraw: true };
-      const result1 = obj.openMemberVerificationRejectedAlert(obj);
-    } else if (profile(validInviteKey[10]).GuildJoinRequestApplicationStatuses.STARTED === applicationStatus) {
-      const result2 = profile(validInviteKey[11]).openMemberVerificationIncompleteAlert(guildId);
-      const obj4 = profile(validInviteKey[11]);
+      let tmp2Result = tmp2(tmp3[11]);
+      const result = tmp2Result.openMemberVerificationPendingAlert(guildId);
+    } else if (tmp2(tmp3[10]).GuildJoinRequestApplicationStatuses.REJECTED === applicationStatus) {
+      tmp2Result = tmp2(tmp3[11]);
+      const obj = { guildId: null, canWithdraw: true };
+      obj[0] = guildId;
+      const result1 = tmp2Result.openMemberVerificationRejectedAlert(obj);
+    } else if (tmp2(tmp3[10]).GuildJoinRequestApplicationStatuses.STARTED === applicationStatus) {
+      const result2 = tmp2(tmp3[11]).openMemberVerificationIncompleteAlert(guildId);
+      const tmp2Result1 = tmp2(tmp3[11]);
     }
   }, items2);
   const items4 = [guildId];
-  const callback3 = React.useCallback(() => {
+  const callback3 = obj1.useCallback(() => {
     guildId(validInviteKey[6]).hideActionSheet("GuildProfileActionSheet:" + guildId);
     if (profile.visibility !== profile(validInviteKey[12]).GuildProfileVisibility.PUBLIC_WITH_RECRUITMENT) {
       if (null != validInviteKey) {
@@ -90,71 +92,77 @@ export default function GuildProfileCTA(profile) {
       }
     }
     const obj = guildId(validInviteKey[6]);
-    const result = profile(validInviteKey[13]).openMemberVerificationModal(guildId);
+    const tmp = validInviteKey;
+    const tmp2 = guildId;
+    const tmp4 = profile;
+    const result = profile(validInviteKey[13]).openMemberVerificationModal(tmp2);
   }, items3);
-  const callback4 = React.useCallback(() => {
+  const callback4 = obj1.useCallback(() => {
     let obj = guildId(validInviteKey[6]);
     obj.hideActionSheet("GuildProfileActionSheet:" + guildId);
     obj = { object: callback1.GUILD_PROFILE };
     profile(validInviteKey[14]).startLurking(guildId, obj);
   }, items4);
-  const memo = React.useMemo(() => ({ grow: true, size: "lg", variant: "active" }), []);
+  const memo = obj1.useMemo(() => ({ grow: true, size: "lg", variant: "active" }), []);
   if (flag) {
-    obj = { guildId, joinSource: constants.GUILD_PROFILE_LURKER };
-    return jsx(guildId(validInviteKey[15]), { guildId, joinSource: constants.GUILD_PROFILE_LURKER });
-  } else if (profile(validInviteKey[4]).CTATypes.IS_MEMBER === ctaType) {
+    obj = { guildId: null, joinSource: null };
+    obj[0] = guildId;
+    obj[1] = constants.GUILD_PROFILE_LURKER;
+    return jsx(tmp(tmp2[15]), { guildId: null, joinSource: null });
+  } else if (profile(tmp2[4]).CTATypes.IS_MEMBER === ctaType) {
     obj = {};
     const merged = Object.assign(memo);
-    obj["onPress"] = callback;
-    const intl7 = profile(validInviteKey[17]).intl;
-    obj["text"] = intl7.string(profile(validInviteKey[17]).t.KLOhbO);
-    return jsx(profile(validInviteKey[16]).Button, {});
-  } else if (profile(validInviteKey[4]).CTATypes.ADOPT_TAG === ctaType) {
-    const obj1 = {};
+    obj.onPress = callback;
+    const intl7 = tmp12(tmp2[17]).intl;
+    obj.text = intl7.string(tmp12(tmp2[17]).t.KLOhbO);
+    return jsx(tmp12(tmp2[16]).Button, {});
+  } else if (tmp12(tmp2[4]).CTATypes.ADOPT_TAG === ctaType) {
+    obj1 = {};
     const merged1 = Object.assign(memo);
-    obj1["onPress"] = function handleGoToTagSettings() {
+    obj1.onPress = function handleGoToTagSettings() {
       guildId(validInviteKey[6]).hideActionSheet("GuildProfileActionSheet:" + guildId);
       callback();
     };
-    const intl6 = profile(validInviteKey[17]).intl;
-    obj1["text"] = intl6.string(profile(validInviteKey[17]).t.cQDYRu);
-    return jsx(profile(validInviteKey[16]).Button, {});
-  } else if (profile(validInviteKey[4]).CTATypes.HAS_APPLICATION === ctaType) {
+    const intl6 = tmp12(tmp2[17]).intl;
+    obj1.text = intl6.string(tmp12(tmp2[17]).t.cQDYRu);
+    return jsx(tmp12(tmp2[16]).Button, {});
+  } else if (tmp12(tmp2[4]).CTATypes.HAS_APPLICATION === ctaType) {
     let obj2 = {};
     const merged2 = Object.assign(memo);
-    obj2["onPress"] = callback2;
-    const intl5 = profile(validInviteKey[17]).intl;
-    obj2["text"] = intl5.string(profile(validInviteKey[17]).t["4yfIDk"]);
-    return jsx(profile(validInviteKey[16]).Button, {});
-  } else if (profile(validInviteKey[4]).CTATypes.APPLY_TO_JOIN === ctaType) {
-    let obj3 = {};
+    obj2.onPress = callback2;
+    const intl5 = tmp12(tmp2[17]).intl;
+    obj2.text = intl5.string(tmp12(tmp2[17]).t["4yfIDk"]);
+    return jsx(tmp12(tmp2[16]).Button, {});
+  } else if (tmp12(tmp2[4]).CTATypes.APPLY_TO_JOIN === ctaType) {
+    const obj3 = {};
     const merged3 = Object.assign(memo);
-    obj3["onPress"] = callback3;
-    const intl4 = profile(validInviteKey[17]).intl;
-    obj3["text"] = intl4.string(profile(validInviteKey[17]).t["7XdMW2"]);
-    return jsx(profile(validInviteKey[16]).Button, {});
-  } else if (profile(validInviteKey[4]).CTATypes.LURK_DISCOVERABLE === ctaType) {
-    let obj4 = {};
+    obj3.onPress = callback3;
+    const intl4 = tmp12(tmp2[17]).intl;
+    obj3.text = intl4.string(tmp12(tmp2[17]).t["7XdMW2"]);
+    return jsx(tmp12(tmp2[16]).Button, {});
+  } else if (tmp12(tmp2[4]).CTATypes.LURK_DISCOVERABLE === ctaType) {
+    const obj4 = {};
     const merged4 = Object.assign(memo);
-    obj4["onPress"] = callback4;
-    const intl3 = profile(validInviteKey[17]).intl;
-    obj4["text"] = intl3.string(profile(validInviteKey[17]).t.XpeFYr);
-    return jsx(profile(validInviteKey[16]).Button, {});
-  } else if (profile(validInviteKey[4]).CTATypes.JOIN_VIA_INVITE === ctaType) {
+    obj4.onPress = callback4;
+    const intl3 = tmp12(tmp2[17]).intl;
+    obj4.text = intl3.string(tmp12(tmp2[17]).t.XpeFYr);
+    return jsx(tmp12(tmp2[16]).Button, {});
+  } else if (tmp12(tmp2[4]).CTATypes.JOIN_VIA_INVITE === ctaType) {
     const obj5 = {};
     const merged5 = Object.assign(memo);
-    obj5["onPress"] = callback1;
-    const intl2 = profile(validInviteKey[17]).intl;
-    obj5["text"] = intl2.string(profile(validInviteKey[17]).t.XpeFYr);
-    return jsx(profile(validInviteKey[16]).Button, {});
-  } else if (profile(validInviteKey[4]).CTATypes.ACCEPT_ROLES === ctaType) {
+    obj5.onPress = callback1;
+    const intl2 = tmp12(tmp2[17]).intl;
+    obj5.text = intl2.string(tmp12(tmp2[17]).t.XpeFYr);
+    return jsx(tmp12(tmp2[16]).Button, {});
+  } else if (tmp12(tmp2[4]).CTATypes.ACCEPT_ROLES === ctaType) {
     const obj6 = {};
     const merged6 = Object.assign(memo);
-    obj6["onPress"] = callback1;
-    const intl = profile(validInviteKey[17]).intl;
-    obj6["text"] = intl.string(profile(validInviteKey[17]).t.MMlhsr);
-    return jsx(profile(validInviteKey[16]).Button, {});
+    obj6.onPress = callback1;
+    const intl = tmp12(tmp2[17]).intl;
+    obj6.text = intl.string(tmp12(tmp2[17]).t.MMlhsr);
+    return jsx(tmp12(tmp2[16]).Button, {});
   } else {
     return null;
   }
+  tmp = guildId;
 };

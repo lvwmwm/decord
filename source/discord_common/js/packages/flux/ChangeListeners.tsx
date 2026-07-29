@@ -1,86 +1,68 @@
-// Module ID: 569
-// Function ID: 6904
-// Name: ChangeListeners
-// Dependencies: [6, 7, 2]
+// Module ID: 592
+// Function ID: 593
+// Name: has
+// Dependencies: [2]
 
-// Module 569 (ChangeListeners)
-import _classCallCheck from "_classCallCheck";
-import _defineProperties from "_defineProperties";
-
-const tmp2 = (() => {
-  class ChangeListeners {
-    constructor() {
-      self = this;
-      tmp = ChangeListeners(this, self);
-      set = new Set();
-      this.listeners = set;
-      set1 = new Set();
-      this.conditionalListeners = set1;
-      this.add = (arg0) => {
-        const listeners = self.listeners;
-        listeners.add(arg0);
-      };
-      this.remove = (arg0) => {
-        const listeners = self.listeners;
-        listeners.delete(arg0);
-        const conditionalListeners = self.conditionalListeners;
-        conditionalListeners.delete(arg0);
-      };
-      this.addConditional = (arg0) => {
-        let flag = arg1;
-        const _self = arg0;
-        if (arg1 === undefined) {
-          flag = true;
-        }
-        let conditionalCallback;
-        if (!flag) {
-          conditionalCallback = function conditionalCallback() {
-            if (false === lib()) {
-              lib.remove(conditionalCallback);
-            }
-          };
-          _self.add(conditionalCallback);
-          const conditionalListeners = _self.conditionalListeners;
-          conditionalListeners.add(conditionalCallback);
-        }
-      };
-      this.removeAllConditional = () => {
-        let conditionalListeners = self.conditionalListeners;
-        const item = conditionalListeners.forEach((arg0) => {
-          const listeners = outer1_0.listeners;
-          return listeners.delete(arg0);
-        });
-        conditionalListeners = self.conditionalListeners;
-        conditionalListeners.clear();
-      };
-      return;
-    }
-  }
-  let obj = {
-    key: "has",
-    value(arg0) {
-      const listeners = this.listeners;
-      return listeners.has(arg0);
-    }
-  };
-  const items = [obj, , ];
-  obj = {
-    key: "hasAny",
-    value() {
-      return this.listeners.size > 0;
-    }
-  };
-  items[1] = obj;
-  obj = {
-    key: "invokeAll",
-    value() {
-      const listeners = this.listeners;
-      const item = listeners.forEach((arg0) => arg0());
-    }
-  };
-  items[2] = obj;
-  return callback(ChangeListeners, items);
-})();
+// Module 592 (has)
 const result = require("set").fileFinishedImporting("../discord_common/js/packages/flux/ChangeListeners.tsx");
+class ChangeListeners {
+  constructor() {
+    obj = Object.create(new.target.prototype);
+    closure_0 = obj;
+    set = new Set();
+    obj.listeners = set;
+    set1 = new Set();
+    obj.conditionalListeners = set1;
+    obj.add = function add(arg0) {
+      const listeners = obj.listeners;
+      listeners.add(arg0);
+    };
+    obj.remove = function remove(arg0) {
+      const listeners = obj.listeners;
+      listeners.delete(arg0);
+      const conditionalListeners = obj.conditionalListeners;
+      conditionalListeners.delete(arg0);
+    };
+    obj.addConditional = function addConditional(arg0) {
+      let flag = arg1;
+      if (arg1 === undefined) {
+        flag = true;
+      }
+      let conditionalCallback;
+      if (!flag) {
+        conditionalCallback = function conditionalCallback() {
+          if (false === lib()) {
+            lib.remove(conditionalCallback);
+          }
+        };
+        obj.add(conditionalCallback);
+        const conditionalListeners = obj.conditionalListeners;
+        conditionalListeners.add(conditionalCallback);
+      }
+    };
+    obj.removeAllConditional = function removeAllConditional() {
+      let conditionalListeners = obj.conditionalListeners;
+      const item = conditionalListeners.forEach((arg0) => {
+        listeners = listeners.listeners;
+        return listeners.delete(arg0);
+      });
+      conditionalListeners = obj.conditionalListeners;
+      conditionalListeners.clear();
+    };
+    return obj;
+  }
+}
+const prototype = ChangeListeners.prototype;
+prototype["has"] = function has(arg0) {
+  const listeners = this.listeners;
+  return listeners.has(arg0);
+};
+prototype["hasAny"] = function hasAny() {
+  return this.listeners.size > 0;
+};
+prototype["invokeAll"] = function invokeAll() {
+  const listeners = this.listeners;
+  const item = listeners.forEach((arg0) => arg0());
+};
 
-export const ChangeListeners = tmp2;
+export { ChangeListeners };

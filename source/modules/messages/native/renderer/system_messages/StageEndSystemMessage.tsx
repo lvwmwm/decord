@@ -1,20 +1,22 @@
-// Module ID: 7785
-// Function ID: 61798
+// Module ID: 7808
+// Function ID: 7809
 // Name: createStageEndSystemMessage
-// Dependencies: [7720, 1212, 7722, 7723, 2]
+// Dependencies: [7743, 1236, 7745, 7746, 2]
 // Exports: createStageEndSystemMessage
 
-// Module 7785 (createStageEndSystemMessage)
+// Module 7808 (createStageEndSystemMessage)
 const result = require("formatUsernameOnClick").fileFinishedImporting("modules/messages/native/renderer/system_messages/StageEndSystemMessage.tsx");
 
 export const createStageEndSystemMessage = function createStageEndSystemMessage(roleStyle) {
   const message = roleStyle.message;
-  let obj = require(7720) /* getMessageAuthorWithProcessedColor */;
+  let obj = require(7743) /* getMessageAuthorWithProcessedColor */;
   const messageAuthorWithProcessedColor = obj.getMessageAuthorWithProcessedColor(message);
-  obj = {};
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj = { username: messageAuthorWithProcessedColor.nick, usernameOnClick: importDefault(7722)({ message, author: messageAuthorWithProcessedColor, roleStyle: roleStyle.roleStyle }), topic: message.content };
-  obj.content = intl.formatToParts(require(1212) /* getSystemLocale */.t.vMJhvG, obj);
-  const merged = Object.assign(importDefault(7723)(roleStyle));
+  obj = { content: null };
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj = { username: messageAuthorWithProcessedColor.nick, usernameOnClick: null, topic: null };
+  obj[1] = importDefault(7745)({ message, author: messageAuthorWithProcessedColor, roleStyle: roleStyle.roleStyle });
+  obj[2] = message.content;
+  obj[0] = intl.formatToParts(require(1236) /* getSystemLocale */.t.vMJhvG, obj);
+  const merged = Object.assign(importDefault(7746)(roleStyle));
   return obj;
 };

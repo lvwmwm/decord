@@ -1,27 +1,20 @@
-// Module ID: 12402
-// Function ID: 96282
-// Dependencies: [4150, 22, 11821, 2]
+// Module ID: 12424
+// Function ID: 12425
+// Dependencies: [4174, 12, 11846, 2]
 
-// Module 12402
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 12424
+import updateInvite from "updateInvite";
 import importDefaultResult from "apply";
 
 let closure_3 = require("apply").throttle((code) => {
   invite = invite.getInvite(code.code);
-  let obj = importDefault(11821);
-  obj = {};
-  let tmp2;
-  if (null != invite) {
-    tmp2 = invite;
-  }
-  obj.invite = tmp2;
-  obj.open(obj);
+  importDefault(11846).open({ invite });
 }, 1000, { trailing: false });
-let obj = {
+const obj = {
   onOpenHubInvite(invite) {
     callback(invite);
   }
 };
-const result = require("module_11821").fileFinishedImporting("modules/hub/HubUtils.native.tsx");
+const result = require("module_11846").fileFinishedImporting("modules/hub/HubUtils.native.tsx");
 
 export default obj;

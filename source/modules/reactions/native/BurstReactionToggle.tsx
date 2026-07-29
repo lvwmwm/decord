@@ -1,110 +1,124 @@
-// Module ID: 9326
-// Function ID: 72871
+// Module ID: 9350
+// Function ID: 9351
 // Name: BurstReactionToggle
-// Dependencies: [31, 27, 4157, 1345, 33, 4026, 566, 3869, 689, 4166, 4577, 4165, 9327, 1212, 6603, 2]
+// Dependencies: [19, 17, 4181, 1369, 21, 4050, 589, 3893, 712, 4190, 4599, 4189, 9351, 1236, 6624, 2]
 // Exports: default
 
-// Module 9326 (BurstReactionToggle)
-import result from "result";
+// Module 9350 (BurstReactionToggle)
+import noop from "noop";
 import { Pressable } from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
 import { ContentDismissActionType } from "ContentDismissActionType";
 import { jsx } from "jsxProd";
-import { Easing } from "module_4026";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import { Easing } from "module_4050";
+import createCacheKey from "createCacheKey";
 
 const require = arg1;
-let obj = { duration: 100 };
-obj.easing = Easing.out(require("module_4026").Easing.quad);
+let obj = { duration: 100, easing: null };
+obj[1] = Easing.out(require("module_4050").Easing.quad);
 let closure_9 = { stiffness: 750, mass: 2.5, damping: 70 };
 let closure_10 = { code: "function BurstReactionToggleTsx1(){const{reducedMotion,targetBackgroundColor,backgroundColor,rotation}=this.__closure;const _backgroundColor=reducedMotion?targetBackgroundColor:backgroundColor.get();const _rotation=reducedMotion?0:rotation.get();return{backgroundColor:_backgroundColor,transform:[{rotate:_rotation+\"deg\"}]};}" };
-obj = {};
-obj = { borderRadius: require("_createForOfIteratorHelperLoose").modules.button.BORDER_RADIUS, padding: 8, marginLeft: 8, width: 40, height: 40 };
-obj.container = obj;
-let closure_11 = _createForOfIteratorHelperLoose.createStyles(obj);
-let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/reactions/native/BurstReactionToggle.tsx");
+obj = { container: null };
+obj = { borderRadius: require("Themes").modules.button.BORDER_RADIUS, padding: 8, marginLeft: 8, width: 40, height: 40 };
+obj[0] = obj;
+let closure_11 = createCacheKey.createStyles(obj);
+let result = require("maybeApplyNoTextColorForLightCustomTheme").fileFinishedImporting("modules/reactions/native/BurstReactionToggle.tsx");
 
 export default function BurstReactionToggle(arg0) {
   let isActive;
-  let require;
-  ({ onPress: require, isActive } = arg0);
-  let importDefault;
-  let colors = importDefault(689).colors;
-  const ref = React.useRef(null);
-  importDefault = importDefault(9327)(ref);
-  let obj = {
-    onPress() {
-      callback2(outer1_6.AUTO);
-      callback();
-    },
-    accessible: true
+  let stateFromStores;
+  ({ onPress: stateFromStores, isActive } = arg0);
+  let str;
+  const colors = str(num[8]).colors;
+  if (isActive) {
+    let INTERACTIVE_TEXT_DEFAULT = colors.WHITE;
+    let tmp4 = tmp2;
+    let tmp5 = tmp3;
+    let tmp6 = tmp3;
+    let tmp7 = tmp2;
+  } else {
+    INTERACTIVE_TEXT_DEFAULT = colors.INTERACTIVE_TEXT_DEFAULT;
+    tmp4 = tmp2;
+    tmp5 = tmp3;
+    tmp6 = tmp3;
+    tmp7 = tmp2;
+  }
+  let obj = sharedValue;
+  const ref = sharedValue.useRef(null);
+  str = tmp7(tmp6[12])(ref);
+  stateFromStores = undefined;
+  str = undefined;
+  num = undefined;
+  sharedValue = undefined;
+  let sharedValue1;
+  const tmp = callback();
+  let items = [maybeApplyNoTextColorForLightCustomTheme];
+  stateFromStores = stateFromStores(tmp5[6]).useStateFromStores(items, () => useReducedMotion.useReducedMotion);
+  const obj2 = stateFromStores(tmp5[6]);
+  const colors2 = tmp4(tmp5[8]).colors;
+  str = stateFromStores(tmp5[7]).useToken(isActive ? colors2.BACKGROUND_BRAND : colors2.INPUT_BACKGROUND_DEFAULT);
+  if (str == null) {
+    str = "";
+  }
+  num = 0;
+  if (isActive) {
+    num = 360;
+  }
+  let tmp9Result = tmp9(tmp5[5]);
+  sharedValue = tmp9Result.useSharedValue(str);
+  tmp9Result = tmp9(tmp5[5]);
+  sharedValue1 = tmp9Result.useSharedValue(num);
+  const obj3 = stateFromStores(tmp5[7]);
+  const fn = function s() {
+    if (stateFromStores) {
+      let value = str;
+    } else {
+      value = sharedValue.get();
+    }
+    let obj = { backgroundColor: value, transform: null };
+    let num = 0;
+    if (!stateFromStores) {
+      num = sharedValue1.get();
+    }
+    obj = { rotate: "" + num + "deg" };
+    const items = [obj];
+    obj[1] = items;
+    return obj;
   };
-  const intl = require(1212) /* getSystemLocale */.intl;
+  fn.__closure = { reducedMotion: stateFromStores, targetBackgroundColor: str, backgroundColor: sharedValue, rotation: sharedValue1 };
+  fn.__workletHash = 1525758595013;
+  fn.__initData = closure_10;
+  const items1 = [sharedValue, str, sharedValue1, num];
+  const animatedStyle = stateFromStores(tmp5[5]).useAnimatedStyle(fn);
+  const effect = obj.useEffect(() => {
+    const result = sharedValue.set(stateFromStores(num[9]).withTiming(str, outer1_8));
+    const obj = stateFromStores(num[9]);
+    const result1 = sharedValue1.set(stateFromStores(num[10]).withSpring(num, outer1_9));
+  }, items1);
+  obj = {
+    onPress() {
+      str(outer1_6.AUTO);
+      stateFromStores();
+    },
+    accessible: true,
+    accessibilityLabel: null,
+    accessibilityRole: "switch",
+    accessibilityState: null,
+    children: null
+  };
+  const intl = tmp9(tmp6[13]).intl;
   const string = intl.string;
-  const t = require(1212) /* getSystemLocale */.t;
+  const t = tmp9(tmp6[13]).t;
   if (isActive) {
     let stringResult = string(t["5cRA/b"]);
   } else {
     stringResult = string(t.buV4av);
   }
-  obj.accessibilityLabel = stringResult;
-  obj.accessibilityRole = "switch";
-  obj.accessibilityState = { checked: isActive };
-  obj = { style: items, ref };
-  items = [
-    callback().container,
-    (function useBurstToggleStyles(isActive) {
-      let obj = outer1_0(outer1_2[6]);
-      let items = [outer1_5];
-      const stateFromStores = obj.useStateFromStores(items, () => outer2_5.useReducedMotion);
-      const colors = callback2(outer1_2[8]).colors;
-      const token = outer1_0(outer1_2[7]).useToken(isActive ? colors.BACKGROUND_BRAND : colors.INPUT_BACKGROUND_DEFAULT);
-      let str = "";
-      if (null != token) {
-        str = token;
-      }
-      let num = 0;
-      if (isActive) {
-        num = 360;
-      }
-      const obj2 = outer1_0(outer1_2[7]);
-      const sharedValue = outer1_0(outer1_2[5]).useSharedValue(str);
-      const obj3 = outer1_0(outer1_2[5]);
-      const sharedValue1 = outer1_0(outer1_2[5]).useSharedValue(num);
-      const obj4 = outer1_0(outer1_2[5]);
-      const fn = function c() {
-        let obj = {};
-        if (stateFromStores) {
-          let value = str;
-        } else {
-          value = sharedValue.get();
-        }
-        obj.backgroundColor = value;
-        obj = {};
-        let num = 0;
-        if (!stateFromStores) {
-          num = sharedValue1.get();
-        }
-        obj.rotate = "" + num + "deg";
-        const items = [obj];
-        obj.transform = items;
-        return obj;
-      };
-      obj = { reducedMotion: stateFromStores, targetBackgroundColor: str, backgroundColor: sharedValue, rotation: sharedValue1 };
-      fn.__closure = obj;
-      fn.__workletHash = 1525758595013;
-      fn.__initData = outer1_10;
-      const items1 = [sharedValue, str, sharedValue1, num];
-      const containerStyle = outer1_0(outer1_2[5]).useAnimatedStyle(fn);
-      const effect = outer1_3.useEffect(() => {
-        const result = sharedValue.set(outer2_0(outer2_2[9]).withTiming(str, outer2_8));
-        const obj = outer2_0(outer2_2[9]);
-        const result1 = sharedValue1.set(outer2_0(outer2_2[10]).withSpring(num, outer2_9));
-      }, items1);
-      return { containerStyle };
-    })(isActive).containerStyle
-  ];
-  obj.children = jsx(require(6603) /* SuperReactionIcon */.SuperReactionIcon, { color: isActive ? colors.WHITE : colors.INTERACTIVE_TEXT_DEFAULT });
-  obj.children = jsx(importDefault(4026).View, { style: items, ref });
-  return <Pressable style={items} ref={ref} />;
+  obj[2] = stringResult;
+  obj[4] = { checked: isActive };
+  obj = { style: items2, ref, children: null };
+  items2 = [tmp.container, animatedStyle];
+  obj[2] = jsx(stateFromStores(tmp6[14]).SuperReactionIcon, { color: INTERACTIVE_TEXT_DEFAULT });
+  obj[5] = jsx(tmp7(tmp6[5]).View, { style: items2, ref, children: null });
+  return <sharedValue1 style={items2} ref={ref}>{null}</sharedValue1>;
 };

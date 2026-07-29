@@ -1,30 +1,29 @@
-// Module ID: 11896
-// Function ID: 92025
+// Module ID: 11920
+// Function ID: 11921
 // Name: useGameProfileShopCollection
-// Dependencies: [31, 8458, 566, 8632, 2]
+// Dependencies: [19, 8482, 589, 8656, 2]
 // Exports: useGameProfileShopCollection
 
-// Module 11896 (useGameProfileShopCollection)
-import { useEffect } from "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 11920 (useGameProfileShopCollection)
+import { useEffect } from "noop";
+import getSimilarGames from "getSimilarGames";
 
 let result = require("initialize").fileFinishedImporting("modules/game_profile/hooks/useGameProfileShopCollection.tsx");
 
 export const useGameProfileShopCollection = function useGameProfileShopCollection(collectionId) {
   const _require = collectionId;
-  const items = [_isNativeReflectConstruct];
+  const items = [getSimilarGames];
   const stateFromStoresObject = _require(hasFetched[2]).useStateFromStoresObject(items, () => {
-    const obj = {};
     let result = null != closure_0;
     if (result) {
-      result = outer1_3.hasShopCollectionBeenFetched(closure_0);
+      result = outer1_3.hasShopCollectionBeenFetched(tmp);
     }
-    obj.hasFetched = result;
+    const obj = { hasFetched: result, skuIds: null };
     let shopCollectionSkuIds;
     if (null != closure_0) {
-      shopCollectionSkuIds = outer1_3.getShopCollectionSkuIds(closure_0);
+      shopCollectionSkuIds = outer1_3.getShopCollectionSkuIds(tmp);
     }
-    obj.skuIds = shopCollectionSkuIds;
+    obj[1] = shopCollectionSkuIds;
     return obj;
   });
   hasFetched = stateFromStoresObject.hasFetched;
@@ -33,14 +32,14 @@ export const useGameProfileShopCollection = function useGameProfileShopCollectio
   useEffect(() => {
     let result = null == collectionId || hasFetched;
     if (!result) {
-      result = outer1_3.isShopCollectionFetching(collectionId);
+      result = outer1_3.isShopCollectionFetching(tmp);
     }
     if (!result) {
-      const shopCollection = collectionId(hasFetched[3]).getShopCollection(collectionId);
+      const shopCollection = collectionId(hasFetched[3]).getShopCollection(tmp);
       const obj = collectionId(hasFetched[3]);
     }
   }, items1);
-  if (null == skuIds) {
+  if (skuIds == null) {
     skuIds = [];
   }
   return skuIds;

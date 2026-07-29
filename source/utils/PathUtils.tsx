@@ -1,11 +1,22 @@
-// Module ID: 4221
-// Function ID: 36153
-// Name: pathBasename
-// Dependencies: [477, 2]
-// Exports: pathFilenameWithoutExt, pathJoin
+// Module ID: 4245
+// Function ID: 4246
+// Name: pathJoin
+// Dependencies: [500, 2]
+// Exports: pathBasename, pathFilenameWithoutExt, pathJoin
 
-// Module 4221 (pathBasename)
-function pathBasename(str) {
+// Module 4245 (pathJoin)
+const result = require("set").fileFinishedImporting("utils/PathUtils.tsx");
+
+export const pathJoin = function pathJoin(closure_1, closure_13) {
+  const items = [...arguments];
+  let str = "/";
+  if (obj.isWindows()) {
+    str = "\\";
+  }
+  const found = items.filter((arg0) => arg0.length > 0);
+  return found.join(str);
+};
+export const pathBasename = function pathBasename(str) {
   let arr = str;
   const parts = str.split(/[/\\]/);
   if ("" !== parts[parts.length - 1]) {
@@ -16,21 +27,13 @@ function pathBasename(str) {
     substr = arr.slice(0, -arg1.length);
   }
   return substr;
-}
-const result = require("set").fileFinishedImporting("utils/PathUtils.tsx");
-
-export const pathJoin = function pathJoin(arg0, outer2_18) {
-  const items = [...arguments];
-  let str = "/";
-  if (obj.isWindows()) {
-    str = "\\";
-  }
-  const found = items.filter((arg0) => arg0.length > 0);
-  return found.join(str);
 };
-export { pathBasename };
-export const pathFilenameWithoutExt = function pathFilenameWithoutExt(arg0) {
-  const arr = pathBasename(arg0);
+export const pathFilenameWithoutExt = function pathFilenameWithoutExt(str) {
+  let arr = str;
+  const parts = str.split(/[/\\]/);
+  if ("" !== parts[parts.length - 1]) {
+    arr = parts[parts.length - 1];
+  }
   const lastIndexOfResult = arr.lastIndexOf(".");
   let substr = arr;
   if (lastIndexOfResult > 0) {

@@ -1,73 +1,74 @@
-// Module ID: 13612
-// Function ID: 104552
+// Module ID: 13633
+// Function ID: 13634
 // Name: navigateToDevTools
-// Dependencies: [31, 27, 33, 9085, 5552, 9094, 13613, 9000, 4161, 689, 13615, 4133, 4372, 2]
+// Dependencies: [19, 17, 21, 9109, 5570, 9118, 13634, 9024, 4185, 712, 13636, 4157, 4395, 2]
 // Exports: navigateToDevTools
 
-// Module 13612 (navigateToDevTools)
+// Module 13633 (navigateToDevTools)
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
 import createNativeStackNavigator from "createNativeStackNavigator";
-import importAllResult from "result";
+import importAllResult from "noop";
 
-let closure_4;
-let closure_5;
+let c4;
+let c5;
 const require = arg1;
-({ jsx: closure_4, jsxs: closure_5 } = jsxProd);
+({ jsx: c4, jsxs: c5 } = jsxProd);
 createNativeStackNavigator = createNativeStackNavigator.createNativeStackNavigator();
-let closure_7 = require("result").memo((screenKey) => {
-  screenKey = screenKey.screenKey;
-  let obj = _require(5552);
+let closure_7 = require("noop").memo((screenKey) => {
+  let str = screenKey.screenKey;
+  let _require;
+  let obj = _require(5570);
   _require = obj.useAccessibilityNativeStackOptions();
-  obj = {};
-  let str = "home";
-  if (null != screenKey) {
-    str = screenKey;
+  if (str == null) {
+    str = "home";
   }
-  obj.initialRouteName = str;
-  obj.screenOptions = function screenOptions(navigation) {
-    let obj = {
-      headerTitle(children) {
-        let obj = Object.create(null);
-        obj.children = 0;
-        const merged = Object.assign(children, obj);
-        obj = { title: children.children };
-        const merged1 = Object.assign(merged);
-        return outer2_4(callback(outer2_2[5]).GenericHeaderTitle, obj);
-      },
-      headerLeft: callback(outer1_2[5]).getRenderModalCloseImage(navigation.navigation),
-      headerTitleAlign: "center"
-    };
-    let merged = Object.assign(callback);
-    return obj;
+  obj = {
+    initialRouteName: str,
+    screenOptions(navigation) {
+      const obj = {
+        headerTitle(children) {
+          const merged = Object.assign(children, Object.create(null));
+          const merged1 = Object.assign(merged);
+          return callback2(callback(table[5]).GenericHeaderTitle, { title: children.children });
+        },
+        headerLeft: null,
+        headerTitleAlign: "center"
+      };
+      obj[1] = callback(outer1_2[5]).getRenderModalCloseImage(navigation.navigation);
+      let merged = Object.assign(callback);
+      return obj;
+    },
+    children: null
   };
   obj = {
     name: "home",
-    component: importDefault(13613),
+    component: importDefault(13634),
     options() {
       return {
         headerTitle() {
-          let obj = { style: { flexDirection: "row" } };
-          const items = [outer2_4(callback(outer2_2[7]).HammerIcon, { size: "sm" }), ];
+          let obj = { style: { flexDirection: "row" }, children: null };
+          const items = [callback3(callback(9024).HammerIcon, { size: "sm" }), ];
           obj = { style: null, variant: "heading-md/semibold", color: "mobile-text-heading-primary", children: "DevTools" };
-          obj = { marginLeft: outer2_1(outer2_2[9]).space.PX_8 };
-          obj.style = obj;
-          items[1] = outer2_4(callback(outer2_2[8]).Text, obj);
-          obj.children = items;
-          return outer2_5(outer2_3, obj);
+          obj = { marginLeft: null };
+          obj[0] = callback2(712).space.PX_8;
+          obj[0] = obj;
+          items[1] = callback3(callback(4185).Text, obj);
+          obj[1] = items;
+          return callback4(closure_3, obj);
         },
         title: "DevTools"
       };
     }
   };
   let items = [callback(createNativeStackNavigator.Screen, obj), ];
-  let merged = Object.assign(_require(13615).DevToolsScreens);
-  let merged1 = Object.assign(_require(13615).PerformanceTestingScreens);
+  let merged = Object.assign(tmp(13636).DevToolsScreens);
+  let merged1 = Object.assign(tmp(13636).PerformanceTestingScreens);
   const entries = Object.entries({});
   items[1] = entries.map((arg0) => {
     let tmp;
     [tmp, ] = arg0;
-    return outer1_4(outer1_6.Screen, {
+    return callback2(Screen.Screen, {
       name: tmp,
       children: tmp2,
       options() {
@@ -75,7 +76,7 @@ let closure_7 = require("result").memo((screenKey) => {
       }
     }, tmp);
   });
-  obj.children = items;
+  obj[2] = items;
   return closure_5(createNativeStackNavigator.Navigator, obj);
 });
 const result = require("jsxProd").fileFinishedImporting("modules/devtools/native/components/DevToolsNavigator.tsx");
@@ -85,7 +86,7 @@ export const navigateToDevTools = function navigateToDevTools(arg0) {
   if (arg0 === undefined) {
     obj = {};
   }
-  importDefault(4133).hideActionSheet();
-  const obj2 = importDefault(4133);
-  importDefault(4372).pushLazy(() => Promise.resolve(outer1_7), { screenKey: obj.screenKey }, "DevToolsNavigator");
+  importDefault(4157).hideActionSheet();
+  const obj2 = importDefault(4157);
+  importDefault(4395).pushLazy(() => Promise.resolve(closure_7), { screenKey: obj.screenKey }, "DevToolsNavigator");
 };

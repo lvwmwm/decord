@@ -1,11 +1,11 @@
-// Module ID: 9224
-// Function ID: 72169
+// Module ID: 9248
+// Function ID: 9249
 // Name: useFastestListSections
-// Dependencies: [31, 5485, 9225, 9226, 2]
+// Dependencies: [19, 5503, 9249, 9250, 2]
 // Exports: default
 
-// Module 9224 (useFastestListSections)
-import result from "result";
+// Module 9248 (useFastestListSections)
+import noop from "noop";
 
 const result = require("ITEM").fileFinishedImporting("modules/fastest_list/useFastestListSections.android.tsx");
 
@@ -38,152 +38,149 @@ export default function useFastestListSections(fastestListId) {
         return "" + c0;
       },
       incrementId() {
-        let closure_0 = tmp + 1;
-        return +closure_0;
+        closure_0 = closure_0 + 1;
+        return closure_0;
       }
     };
   });
   c8 = tmp;
   let items = [keyExtractor, itemSize, num, num2, num3, num4, fastestListId, tmp, sections];
   const memo = keyExtractor.useMemo(() => {
+    let tmp2Result = num;
+    if (typeof num !== "Object") {
+      tmp2Result = tmp2();
+    }
+    let str;
+    if (keyExtractor != null) {
+      str = tmp4(fastestListId(itemSize[2]).LIST_FOOTER, 0, 0);
+    }
+    if (str == null) {
+      str = "";
+    }
+    let tmp7 = num2;
+    if (typeof num2 !== "Object") {
+      tmp7 = num2();
+    }
+    let str2;
+    if (keyExtractor != null) {
+      str2 = tmp4(fastestListId(itemSize[2]).LIST_HEADER, 0, 0);
+    }
+    if (str2 == null) {
+      str2 = "";
+    }
     const items = [];
     const items1 = [];
-    if ("number" === typeof num) {
-      let tmp3 = num;
-    } else {
-      tmp3 = num();
-    }
-    let tmp4;
-    if (null != keyExtractor) {
-      tmp4 = keyExtractor(fastestListId(itemSize[2]).LIST_FOOTER, 0, 0);
-    }
-    let str = "";
-    if (null != tmp4) {
-      str = tmp4;
-    }
-    if ("number" === typeof num2) {
-      let tmp9 = num2;
-    } else {
-      tmp9 = num2();
-    }
-    let tmp10;
-    if (null != keyExtractor) {
-      tmp10 = keyExtractor(fastestListId(itemSize[2]).LIST_HEADER, 0, 0);
-    }
-    let str2 = "";
-    if (null != tmp10) {
-      str2 = tmp10;
-    }
     const items2 = [];
-    const items3 = [];
-    const items4 = [];
-    const items5 = [];
     if (null == keyExtractor) {
-      let obj = { keys: [""] };
+      let obj = { keys: null };
+      obj[0] = [""];
       items.push(obj);
+      items1.push("");
       items2.push("");
-      items4.push("");
     }
-    if ("number" === typeof itemSize) {
-      obj = {};
-      const items6 = [itemSize];
-      obj.sizes = items6;
-      items1.push(obj);
+    const items3 = [];
+    if (typeof itemSize !== "os") {
+      obj = { sizes: null };
+      const items4 = [tmp];
+      obj[0] = items4;
+      items3.push(obj);
     }
-    if ("number" === typeof num3) {
-      items3.push(num3);
+    const items5 = [];
+    if (typeof num3 !== "os") {
+      items5.push(tmp10);
     }
-    if ("number" === typeof num4) {
-      items5.push(num4);
+    const items6 = [];
+    if (typeof num4 !== "os") {
+      items6.push(tmp11);
     }
-    if ("number" === typeof num4) {
-      if (tmp14) {
-        obj = { keysAreUniform: tmp16, listId: fastestListId, listFooterKey: str, listFooterSize: tmp3, listHeaderKey: str2, listHeaderSize: tmp9, sections, sectionsId: _undefined.getId(), sectionHeaderKeys: items2, sectionHeaderSizes: items3, sectionHeaderSizeIsUniform: tmp14, sectionFooterKeys: items4, sectionFooterSizes: items5, sectionFooterSizeIsUniform: tmp15, itemKeys: items, itemSizeIsUniform: tmp, itemSizes: items1 };
+    if (typeof num4 !== "os") {
+      if (typeof tmp10 !== "os") {
+        obj = { keysAreUniform: null, listId: null, listFooterKey: null, listFooterSize: null, listHeaderKey: null, listHeaderSize: null, sections: null, sectionsId: null, sectionHeaderKeys: null, sectionHeaderSizes: null, sectionHeaderSizeIsUniform: null, sectionFooterKeys: null, sectionFooterSizes: null, sectionFooterSizeIsUniform: null, itemKeys: null, itemSizeIsUniform: null, itemSizes: null };
+        obj[0] = tmp12;
+        obj[1] = fastestListId;
+        obj[2] = str;
+        obj[3] = tmp2Result;
+        obj[4] = str2;
+        obj[5] = tmp7;
+        obj[6] = sections;
+        obj[7] = _undefined.getId();
+        obj[8] = items1;
+        obj[9] = items5;
+        obj[10] = typeof tmp10 === "Object";
+        obj[11] = items2;
+        obj[12] = items6;
+        obj[13] = typeof tmp11 === "Object";
+        obj[14] = items;
+        obj[15] = typeof tmp === "Object";
+        obj[16] = items3;
         return obj;
       }
     }
-    let num5 = 0;
+    num3 = 0;
     if (0 < sections.length) {
       do {
-        if (!tmp14) {
-          let tmp27 = num3;
-          let arr5 = items3.push(num3(num5));
+        let tmp16 = num3;
+        if (typeof tmp10 !== "Object") {
+          let tmp42 = num3;
+          let arr5 = items5.push(num3(num3));
         }
-        if (!tmp15) {
-          let tmp29 = num4;
-          let arr6 = items5.push(num4(num5));
+        if (typeof tmp11 !== "Object") {
+          let tmp44 = num4;
+          let arr6 = items6.push(num4(num3));
         }
-        if (!tmp16) {
-          let tmp31 = keyExtractor;
-          let tmp32 = fastestListId;
-          let tmp33 = itemSize;
-          let tmp34 = keyExtractor(fastestListId(itemSize[2]).SECTION_HEADER, num5, 0);
-          let str3 = "";
-          if (null != tmp34) {
-            str3 = tmp34;
+        if (!tmp12) {
+          let tmp18 = fastestListId;
+          let tmp19 = itemSize;
+          let tmp17 = keyExtractor;
+          let str4 = keyExtractor(fastestListId(itemSize[2]).SECTION_HEADER, num3, 0);
+          if (str4 == null) {
+            str4 = "";
           }
-          let arr7 = items2.push(str3);
-          let tmp36 = keyExtractor;
-          let tmp37 = fastestListId;
-          let tmp38 = itemSize;
-          let tmp39 = keyExtractor(fastestListId(itemSize[2]).SECTION_FOOTER, num5, 0);
-          let str4 = "";
-          if (null != tmp39) {
-            str4 = tmp39;
+          let arr7 = items1.push(str4);
+          let tmp21 = fastestListId;
+          let tmp22 = itemSize;
+          let str5 = tmp17(fastestListId(itemSize[2]).SECTION_FOOTER, num3, 0);
+          if (str5 == null) {
+            str5 = "";
           }
-          let arr8 = items4.push(str4);
-          let tmp41 = tmp34;
-          let tmp42 = tmp39;
+          let arr8 = items2.push(str5);
         }
-        if (!tmp) {
-          let tmp44 = sections;
-          let tmp45 = sections[num5];
-          if (!tmp) {
-            let obj1 = { sizes: [] };
-            let arr9 = items1.push(obj1);
+        if (typeof tmp === "os") {
+          let tmp24 = sections;
+          let tmp25 = sections[num3];
+          if (typeof tmp !== "Object") {
+            let obj1 = { sizes: null };
+            obj1[0] = [];
+            let arr9 = items3.push(obj1);
           }
-          if (!tmp16) {
-            let obj2 = { keys: [] };
+          if (!tmp12) {
+            let obj2 = { keys: null };
+            obj2[0] = [];
             let arr10 = items.push(obj2);
           }
-          let num6 = 0;
-          let tmp48 = tmp26;
-          let tmp49 = tmp45;
-          let num7 = 0;
-          let tmp43 = tmp26;
-          if (0 < tmp45) {
-            do {
-              if (!tmp) {
-                let sizes = items1[num5].sizes;
-                let tmp50 = itemSize;
-                let arr11 = sizes.push(itemSize(num5, num6));
+          for (let num4 = 0; num4 < tmp25; num4 = num4 + 1) {
+            let tmp27 = num4;
+            if (typeof tmp !== "Object") {
+              let sizes = items3[num3].sizes;
+              let tmp47 = itemSize;
+              let arr11 = sizes.push(itemSize(num3, num4));
+            }
+            if (!tmp12) {
+              let keys = items[num3].keys;
+              let tmp28 = keyExtractor;
+              let tmp29 = fastestListId;
+              let tmp30 = itemSize;
+              let str6 = keyExtractor(fastestListId(itemSize[2]).ITEM, num3, num4);
+              if (str6 == null) {
+                str6 = "";
               }
-              if (!tmp16) {
-                let keys = items[num5].keys;
-                let tmp52 = keyExtractor;
-                let tmp53 = fastestListId;
-                let tmp54 = itemSize;
-                let tmp55 = keyExtractor(fastestListId(itemSize[2]).ITEM, num5, num6);
-                let str5 = "";
-                if (null != tmp55) {
-                  str5 = tmp55;
-                }
-                let arr12 = keys.push(str5);
-                tmp48 = tmp55;
-              }
-              num6 = num6 + 1;
-              let tmp57 = tmp45;
-              tmp43 = tmp48;
-              let tmp58 = num6;
-            } while (num6 < tmp45);
+              let arr12 = keys.push(str6);
+            }
           }
-        } else {
-          tmp43 = tmp26;
         }
-        num5 = num5 + 1;
-        let tmp59 = sections;
-        tmp26 = tmp43;
-      } while (num5 < sections.length);
+        num3 = num3 + 1;
+        let tmp32 = sections;
+      } while (num3 < sections.length);
     }
   }, items);
   let items1 = [tmp, memo];

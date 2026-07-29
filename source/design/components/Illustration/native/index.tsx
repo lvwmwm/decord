@@ -1,10 +1,10 @@
-// Module ID: 6517
-// Function ID: 58092
+// Module ID: 6538
+// Function ID: 6539
 // Name: getIllustrationSource
-// Dependencies: [3877, 2]
+// Dependencies: [3901, 2]
 // Exports: getIllustrationSource, useIllustrationSource
 
-// Module 6517 (getIllustrationSource)
+// Module 6538 (getIllustrationSource)
 const result = require("set").fileFinishedImporting("design/components/Illustration/native/index.tsx");
 
 export const getIllustrationSource = function getIllustrationSource(theme, light) {
@@ -12,13 +12,13 @@ export const getIllustrationSource = function getIllustrationSource(theme, light
     light = light.light;
   } else if ("darker" === theme) {
     let midnight = light.darker;
-    if (null == midnight) {
+    if (midnight == null) {
       midnight = light.midnight;
     }
     light = midnight;
   } else if ("midnight" === theme) {
     let darker = light.midnight;
-    if (null == darker) {
+    if (darker == null) {
       darker = light.darker;
     }
     light = darker;
@@ -31,5 +31,5 @@ export const getIllustrationSource = function getIllustrationSource(theme, light
   return lightResult;
 };
 export const useIllustrationSource = function useIllustrationSource(arg0) {
-  return arg0(require(3877) /* ManaContext */.useThemeContext().theme);
+  return arg0(require(3901) /* ManaContext */.useThemeContext().theme);
 };

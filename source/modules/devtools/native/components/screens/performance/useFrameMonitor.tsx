@@ -1,32 +1,32 @@
-// Module ID: 14805
-// Function ID: 112727
+// Module ID: 14831
+// Function ID: 14832
 // Name: useFrameMonitor
-// Dependencies: [57, 31, 14803, 2]
+// Dependencies: [32, 19, 14829, 2]
 // Exports: default
 
-// Module 14805 (useFrameMonitor)
+// Module 14831 (useFrameMonitor)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
+import noop from "noop";
 
 const require = arg1;
 const result = require("FRAME_BUDGET_MS").fileFinishedImporting("modules/devtools/native/components/screens/performance/useFrameMonitor.tsx");
 
-export default function useFrameMonitor(arg0) {
-  let closure_0 = arg0;
+export default function useFrameMonitor(stateFromStores) {
+  let closure_0 = stateFromStores;
   const monitoring = callback(React.useState(false), 2);
   let closure_1 = monitoring[1];
   callback = React.useRef(null);
-  React = React.useRef(arg0);
-  const items = [arg0];
+  React = React.useRef(stateFromStores);
+  const items = [stateFromStores];
   const effect = React.useEffect(() => {
-    result.current = closure_0;
+    noop.current = closure_0;
   }, items);
   const start = React.useCallback(() => {
     const current = ref.current;
-    if (null != current) {
+    if (current != null) {
       current.stop();
     }
-    ref.current = callback(14803).startFrameMonitor();
+    ref.current = stateFromStores(14829).startFrameMonitor();
     dependencyMap(true);
   }, []);
   const stop = React.useCallback(() => {
@@ -39,11 +39,11 @@ export default function useFrameMonitor(arg0) {
     }
   }, []);
   const effect1 = React.useEffect(() => () => {
-    const current = outer1_2.current;
-    if (null != current) {
+    const current = ref.current;
+    if (current != null) {
       current.stop();
     }
-    outer1_2.current = null;
+    ref.current = null;
   }, []);
   return { monitoring: monitoring[0], start, stop };
 };

@@ -1,61 +1,61 @@
-// Module ID: 16389
-// Function ID: 127438
+// Module ID: 16424
+// Function ID: 16425
 // Name: useGuildTagBadgeCollection
-// Dependencies: [31, 8281, 4052, 7701, 566, 2]
+// Dependencies: [19, 8305, 4076, 7724, 589, 2]
 // Exports: default
 
-// Module 16389 (useGuildTagBadgeCollection)
-import { useMemo } from "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_4 from "_isNativeReflectConstruct";
+// Module 16424 (useGuildTagBadgeCollection)
+import { useMemo } from "noop";
+import handleFormInit from "handleFormInit";
+import calculateAppliedBoosts from "calculateAppliedBoosts";
 import items from "items";
 
-let closure_5;
+let c5;
 let closure_6;
-let closure_7;
-({ BADGE_PACKS: closure_5, BADGES: closure_6, BADGE_PACK_TO_SKU_ID: closure_7 } = items);
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/guild_tag/useGuildTagBadgeCollection.tsx");
+let error;
+({ BADGE_PACKS: c5, BADGES: closure_6, BADGE_PACK_TO_SKU_ID: error } = items);
+const result = require("calculateAppliedBoosts").fileFinishedImporting("modules/guild_tag/useGuildTagBadgeCollection.tsx");
 
 export default function useGuildTagBadgeCollection() {
-  let items = [_isNativeReflectConstruct];
-  stateFromStores = stateFromStores(stateFromStores1[4]).useStateFromStores(items, () => outer1_3.getGuild());
+  let items = [handleFormInit];
+  stateFromStores = stateFromStores(stateFromStores1[4]).useStateFromStores(items, () => guild.getGuild());
   const obj = stateFromStores(stateFromStores1[4]);
-  let items1 = [closure_4];
+  let items1 = [calculateAppliedBoosts];
   stateFromStores1 = stateFromStores(stateFromStores1[4]).useStateFromStores(items1, () => {
     let id;
-    if (null != stateFromStores) {
+    if (stateFromStores != null) {
       id = stateFromStores.id;
     }
     const stateForGuild = outer1_4.getStateForGuild(id);
     let allPowerups;
-    if (null != stateForGuild) {
+    if (stateForGuild != null) {
       allPowerups = stateForGuild.allPowerups;
     }
     return allPowerups;
   });
   let features;
-  if (null != stateFromStores) {
+  if (stateFromStores != null) {
     features = stateFromStores.features;
   }
   const items2 = [features, stateFromStores1];
   return useMemo(() => {
+    let features;
     const unlockedBadges = outer1_6.map((kind) => ({ kind }));
     const lockedBadges = [];
-    let features;
-    if (null != unlockedBadges) {
+    if (unlockedBadges != null) {
       features = unlockedBadges.features;
     }
     if (null != features) {
       const _Object = Object;
       const keys = Object.keys(outer1_5);
       const item = keys.forEach((arg0) => {
-        let tmp2;
-        if (null != lockedBadges) {
-          tmp2 = lockedBadges[tmp];
+        let tmp;
+        if (lockedBadges != null) {
+          tmp = lockedBadges[outer2_7[arg0]];
         }
         let title;
-        if (null != tmp2) {
-          title = tmp2.title;
+        if (tmp != null) {
+          title = tmp.title;
         }
         const mapped = outer2_5[arg0].map((kind) => ({ kind, packName: title }));
         const features = unlockedBadges.features;

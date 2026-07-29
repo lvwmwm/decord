@@ -1,8 +1,8 @@
-// Module ID: 15609
-// Function ID: 120089
-// Dependencies: [653, 507, 686, 2]
+// Module ID: 15642
+// Function ID: 15643
+// Dependencies: [676, 530, 709, 2]
 
-// Module 15609
+// Module 15642
 import { Endpoints } from "ME";
 
 const result = require("dispatcher").fileFinishedImporting("actions/RegionActionCreators.tsx");
@@ -10,9 +10,8 @@ const result = require("dispatcher").fileFinishedImporting("actions/RegionAction
 export default {
   fetchRegions(id) {
     const _require = id;
-    const HTTP = _require(507).HTTP;
-    let obj = { url: Endpoints.REGIONS(id), retries: 1, oldFormErrors: true, rejectWithError: true };
-    const value = HTTP.get(obj);
+    const HTTP = _require(530).HTTP;
+    const value = HTTP.get({ url: Endpoints.REGIONS(id), retries: 1, oldFormErrors: true, rejectWithError: true });
     value.then((body) => {
       let obj = outer1_1(outer1_2[2]);
       obj = { type: "LOAD_REGIONS", regions: body.body, guildId: closure_0 };
@@ -23,9 +22,9 @@ export default {
       return obj.dispatch(obj);
     });
   },
-  changeCallRegion(arg0, region) {
-    const HTTP = require(507) /* _isNativeReflectConstruct */.HTTP;
-    obj = { url: Endpoints.CALL(arg0), body: obj, oldFormErrors: true, rejectWithError: true };
+  changeCallRegion(id, region) {
+    const HTTP = require(530) /* sendRequest */.HTTP;
+    obj = { url: Endpoints.CALL(id), body: obj, oldFormErrors: true, rejectWithError: true };
     obj = { region };
     HTTP.patch(obj);
   }

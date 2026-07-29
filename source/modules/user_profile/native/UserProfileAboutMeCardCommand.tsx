@@ -1,19 +1,19 @@
-// Module ID: 11938
-// Function ID: 92236
-// Dependencies: [31, 653, 33, 4165, 689, 4161, 4024, 10897, 675, 4359, 4133, 10902, 5684, 5686, 2]
+// Module ID: 11962
+// Function ID: 11963
+// Dependencies: [19, 676, 21, 4189, 712, 4185, 4048, 10921, 698, 4384, 4157, 10926, 5702, 5704, 2]
 
-// Module 11938
+// Module 11962
 import { AnalyticEvents } from "ME";
 import { jsxs } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import importAllResult from "result";
+import createCacheKey from "createCacheKey";
+import importAllResult from "noop";
 
 const require = arg1;
-let obj = {};
-obj = { color: require("_createForOfIteratorHelperLoose").colors.MENTION_FOREGROUND, backgroundColor: require("_createForOfIteratorHelperLoose").colors.MENTION_BACKGROUND, marginEnd: require("_createForOfIteratorHelperLoose").space.PX_12, marginBottom: require("_createForOfIteratorHelperLoose").space.PX_12 };
-obj.commandClickable = obj;
-let closure_5 = _createForOfIteratorHelperLoose.createStyles(obj);
-const memoResult = require("result").memo(function UserProfileAboutMeCardCommand(channel) {
+let obj = { commandClickable: null };
+obj = { color: require("Themes").colors.MENTION_FOREGROUND, backgroundColor: require("Themes").colors.MENTION_BACKGROUND, marginEnd: require("Themes").space.PX_12, marginBottom: require("Themes").space.PX_12 };
+obj[0] = obj;
+let closure_5 = createCacheKey.createStyles(obj);
+const memoResult = require("noop").memo(function UserProfileAboutMeCardCommand(channel) {
   let command;
   let require;
   ({ application: require, command } = channel);
@@ -25,58 +25,55 @@ const memoResult = require("result").memo(function UserProfileAboutMeCardCommand
     onPress() {
       let obj = outer1_0(channel[6]);
       const bestActiveInput = obj.getBestActiveInput();
-      obj = { channelId: channel.id };
-      let text;
-      if (null != bestActiveInput) {
-        text = bestActiveInput.getText();
+      obj = { channelId: channel.id, currentText: null, commandId: null, commandName: null, onOpenCustomKeyboard: null, onSetCommand: null };
+      let str;
+      if (bestActiveInput != null) {
+        str = bestActiveInput.getText();
       }
-      let str = "";
-      if (null != text) {
-        str = text;
+      if (str == null) {
+        str = "";
       }
-      obj.currentText = str;
-      ({ id: obj4.commandId, displayName: obj4.commandName } = command);
-      obj.onOpenCustomKeyboard = function onOpenCustomKeyboard(arg0) {
+      obj[1] = str;
+      ({ id: obj4[2], displayName: obj4[3] } = command);
+      obj[4] = function onOpenCustomKeyboard(arg0) {
         let openCustomKeyboardResult;
-        if (null != bestActiveInput) {
+        if (bestActiveInput != null) {
           openCustomKeyboardResult = bestActiveInput.openCustomKeyboard(arg0);
         }
         return openCustomKeyboardResult;
       };
-      obj.onSetCommand = function onSetCommand() {
+      obj[5] = function onSetCommand() {
         let obj = command(channel[8]);
-        obj = {};
         let id;
-        if (null != bestActiveInput) {
-          id = bestActiveInput.id;
+        if (bestActiveInput != null) {
+          id = tmp3.id;
         }
-        obj.application_id = id;
-        obj.command_id = outer1_1.id;
-        obj.guild_id = outer1_2.getGuildId();
+        obj = { application_id: id, command_id: outer1_1.id, guild_id: outer1_2.getGuildId() };
         const merged = Object.assign(outer2_0(channel[9]).collectChannelAnalyticsMetadata(outer1_2));
         obj.track(outer2_3.POPULAR_APPLICATION_COMMAND_CLICKED, obj);
         const obj3 = outer2_0(channel[9]);
+        const tmp5 = outer1_1;
+        const tmp6 = outer1_2;
         command(channel[10]).hideActionSheet();
         command(channel[11])();
-        if (null != bestActiveInput) {
-          bestActiveInput.openSystemKeyboard();
+        if (bestActiveInput != null) {
+          obj5.openSystemKeyboard();
         }
-        let tmp9 = null == bestActiveInput;
-        if (!tmp9) {
-          const applicationCommandManager = bestActiveInput.getApplicationCommandManager();
-          tmp9 = null == applicationCommandManager;
-          const obj5 = applicationCommandManager;
-        }
-        if (!tmp9) {
-          obj = { channelId: outer1_2.id, command: outer1_1 };
-          let applicationCommandSection = null;
-          if (null != bestActiveInput) {
-            applicationCommandSection = outer2_0(channel[12]).getApplicationCommandSection(bestActiveInput);
-            const obj7 = outer2_0(channel[12]);
+        if (bestActiveInput != null) {
+          const applicationCommandManager = obj5.getApplicationCommandManager();
+          if (applicationCommandManager != null) {
+            obj = { channelId: null, command: null, section: null, location: null };
+            obj[0] = tmp6.id;
+            obj[1] = tmp5;
+            let applicationCommandSection = null;
+            if (null != tmp3) {
+              applicationCommandSection = tmp7(tmp2[12]).getApplicationCommandSection(tmp3);
+              const tmp7Result = tmp7(tmp2[12]);
+            }
+            obj[2] = applicationCommandSection;
+            obj[3] = tmp7(tmp2[13]).ApplicationCommandTriggerLocations.POPULAR_COMMANDS;
+            applicationCommandManager.setCommand(obj);
           }
-          obj.section = applicationCommandSection;
-          obj.location = outer2_0(channel[13]).ApplicationCommandTriggerLocations.POPULAR_COMMANDS;
-          obj5.setCommand(obj);
         }
       };
       const result = outer1_0(channel[7]).handleTapCommandMention(obj);

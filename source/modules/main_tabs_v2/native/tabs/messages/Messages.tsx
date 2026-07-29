@@ -1,282 +1,151 @@
-// Module ID: 14996
-// Function ID: 114178
-// Dependencies: [29, 31, 27, 4157, 4843, 33, 4165, 689, 5497, 5517, 4026, 14105, 14096, 14997, 15015, 15017, 15018, 12418, 15019, 1324, 477, 4017, 4016, 5195, 5713, 14, 15001, 15020, 15012, 15011, 15021, 7946, 15022, 15060, 15062, 9225, 8799, 14104, 14998, 15064, 9217, 1212, 10026, 2]
+// Module ID: 15022
+// Function ID: 15023
+// Dependencies: [19, 17, 4181, 4865, 21, 4189, 712, 5515, 5535, 4050, 14127, 14118, 15023, 15042, 15044, 15045, 15046, 12440, 15047, 1348, 500, 4041, 4040, 5217, 5731, 9, 14126, 1236, 7971, 15024, 15048, 15050, 15096, 15097, 10048, 2]
 
-// Module 14996
-import module_15011 from "module_15011";
-import importAllResult from "useCutoutBackgroundColor";
-import { View } from "PX_12";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_8 from "_isNativeReflectConstruct";
-import jsxProd from "MESSAGES_ITEM_EMPTY_STATE_HEIGHT";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+// Module 15022
+import importAllResult from "useIsMobileVisualRefreshExperimentEnabled";
+import { View } from "useCommonTriggerPoint";
+import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
+import _handleConnectionOpen from "_handleConnectionOpen";
+import jsxProd from "getRootNavigationRef";
+import createCacheKey from "createCacheKey";
 
-let closure_10;
-let closure_9;
-let require = arg1;
-let closure_3 = ["height"];
-({ jsx: closure_9, jsxs: closure_10 } = jsxProd);
-let closure_11 = _createForOfIteratorHelperLoose.createStyles(() => {
-  let obj = {};
-  obj = { flex: 1, backgroundColor: importDefault(689).colors.PANEL_BG };
-  obj.container = obj;
-  obj = { backgroundColor: importDefault(689).colors.BORDER_SUBTLE };
-  obj.placeholder = obj;
+let error;
+let metroImportAll;
+const require = arg1;
+let c3 = importAllResult;
+({ jsx: error, jsxs: metroImportAll } = jsxProd);
+let closure_9 = createCacheKey.createStyles(() => {
+  let obj = { container: null };
+  obj = { flex: 1, backgroundColor: importDefault(712).colors.PANEL_BG };
+  obj[0] = obj;
   return obj;
 });
-let closure_12 = { code: "function MessagesTsx1(event){const{scrollPosition,handleGuildsNavigationScroll}=this.__closure;scrollPosition.set(event.contentOffset.y);handleGuildsNavigationScroll(event.contentOffset.y,event.contentSize.height,event.layoutMeasurement.height);}" };
+let closure_10 = { code: "function MessagesTsx1(event){const{scrollPosition,handleGuildsNavigationScroll}=this.__closure;scrollPosition.set(event.contentOffset.y);handleGuildsNavigationScroll(event.contentOffset.y,event.contentSize.height,event.layoutMeasurement.height);}" };
 const memoResult = importAllResult.memo(function Messages(style) {
-  let tmp = renderHeader();
-  const require = tmp;
-  let obj = require(height[10]);
-  const sharedValue = obj.useSharedValue(0);
-  let obj1 = require(height[11]);
+  let headerSize;
+  let list;
+  let listItemHeight;
+  let listItemSizes;
+  let listItemSuggestedFriendHeight;
+  let listLeft;
+  let listTop;
+  let recycleItems;
+  let sharedValue;
+  let dataKey;
+  let sections;
+  let externalScrollEventHandler;
+  const tmp = callback2();
+  let obj = sharedValue(sections[9]);
+  sharedValue = obj.useSharedValue(0);
+  let obj1 = sharedValue(sections[10]);
   const youBarTotalHeight = obj1.useYouBarTotalHeight();
-  let obj2 = require(height[12]);
+  let obj2 = sharedValue(sections[11]);
   const sum = youBarTotalHeight + obj2.useMobileQuestDockHeight();
-  const tmp2 = sharedValue(height[8]);
-  const youBarTotalHeight1 = require(height[11]).useYouBarTotalHeight(-16);
-  const tmp7 = sharedValue(height[13])();
-  const listItemSizes = tmp7.listItemSizes;
-  height = listItemSizes.height;
-  const tmp8 = listItemSuggestedFriendHeight(listItemSizes, closure_3);
-  closure_3 = tmp8;
-  listItemSuggestedFriendHeight = tmp7.listItemSuggestedFriendHeight;
-  const listLeft = tmp7.listLeft;
-  const listTop = tmp7.listTop;
-  const tmp9 = sharedValue(height[14])();
-  const channels = tmp9.channels;
-  const channelFavorites = tmp9.channelFavorites;
-  const dataKey = tmp9.dataKey;
-  const friendSuggestions = tmp9.friendSuggestions;
-  renderHeader = tmp9.renderHeader;
-  const renderFooter = tmp9.renderFooter;
-  const sections = tmp9.sections;
-  const setAddedFriendSuggestions = tmp9.setAddedFriendSuggestions;
-  const ref = listLeft.useRef(null);
-  const ref1 = listLeft.useRef(null);
-  sharedValue(height[15])({ listRef: ref, listRefHappeningNow: ref1 });
-  sharedValue(height[16])();
-  let obj4 = require(height[11]);
-  const commonTriggerPoint = require(height[17]).useCommonTriggerPoint(require(height[18]).DmGdmListRenderTriggerPoint);
-  const tmp15 = sharedValue(height[19])("Messages");
-  let closure_16 = tmp15;
+  let obj3 = sharedValue(sections[10]);
+  const youBarTotalHeight1 = obj3.useYouBarTotalHeight(-16);
+  const tmp4 = dataKey(sections[7]);
+  const tmp5 = sharedValue;
+  ({ headerSize, listItemHeight, listItemSizes, listItemSuggestedFriendHeight, listLeft, listTop } = dataKey(sections[12])());
+  const tmp11 = dataKey(sections[13])();
+  dataKey = tmp11.dataKey;
+  sections = tmp11.sections;
+  const ref = externalScrollEventHandler.useRef(null);
+  const ref1 = externalScrollEventHandler.useRef(null);
+  const tmp10 = dataKey(sections[12])();
+  const config = dataKey(sections[14]).useConfig({ location: "Messages Tab" });
+  ({ list, recycleItems } = config);
+  dataKey(sections[15])({ listRef: ref, listRefHappeningNow: ref1 });
+  dataKey(sections[16])();
+  const obj5 = dataKey(sections[14]);
+  const commonTriggerPoint = sharedValue(sections[17]).useCommonTriggerPoint(sharedValue(sections[18]).DmGdmListRenderTriggerPoint);
   const items = [dataKey];
-  const effect = listLeft.useEffect(() => {
+  const obj6 = sharedValue(sections[17]);
+  const effect = externalScrollEventHandler.useEffect(() => {
     if (null != dataKey) {
       if (!obj7.isAndroid()) {
-        if (!channels.useReducedMotion) {
-          const rootNavigationRef = tmp(height[21]).getRootNavigationRef();
-          let tmp4 = null != rootNavigationRef && rootNavigationRef.isReady();
-          if (tmp4) {
-            const obj3 = tmp(height[22]);
-            const rootNavigationRef1 = tmp(height[21]).getRootNavigationRef();
+        if (!outer1_5.useReducedMotion) {
+          let tmp5Result = tmp5(tmp6[21]);
+          const rootNavigationRef = tmp5Result.getRootNavigationRef();
+          let tmp2 = null != rootNavigationRef && rootNavigationRef.isReady();
+          if (tmp2) {
+            tmp5Result = tmp5(tmp6[22]);
+            const rootNavigationRef1 = tmp5(tmp6[21]).getRootNavigationRef();
             let currentRoute;
-            if (null != rootNavigationRef1) {
+            if (rootNavigationRef1 != null) {
               currentRoute = rootNavigationRef1.getCurrentRoute();
             }
-            tmp4 = null != obj3.coerceGuildsRoute(currentRoute);
-            const obj4 = tmp(height[21]);
+            tmp2 = null != tmp5Result.coerceGuildsRoute(currentRoute);
+            const tmp5Result1 = tmp5(tmp6[21]);
           }
-          if (tmp4) {
-            const result = tmp(height[23]).DeprecatedLayoutAnimation();
-            const obj6 = tmp(height[23]);
+          if (tmp2) {
+            const result = tmp5(tmp6[23]).DeprecatedLayoutAnimation();
+            const tmp5Result2 = tmp5(tmp6[23]);
           }
-          const obj = tmp(height[21]);
         }
       }
-      obj7 = tmp(height[20]);
+      obj7 = sharedValue(sections[20]);
     }
   }, items);
-  const layoutEffect = listLeft.useLayoutEffect(() => {
-    tmp(height[24]).trackAppUIViewed();
-    const obj = tmp(height[24]);
+  const layoutEffect = externalScrollEventHandler.useLayoutEffect(() => {
+    sharedValue(sections[24]).trackAppUIViewed();
+    const obj = sharedValue(sections[24]);
     const reduced = sections.reduce((arg0, arg1) => arg0 + arg1, 0);
-    sharedValue(height[25]).recordRender(reduced, channelFavorites.isConnected());
+    dataKey(sections[25]).recordRender(reduced, outer1_6.isConnected());
   });
-  const items1 = [channelFavorites, height, channels, friendSuggestions, setAddedFriendSuggestions, listItemSuggestedFriendHeight];
-  const items2 = [listTop, listLeft, sharedValue];
-  const callback = listLeft.useCallback((arg0, row) => {
-    if (tmp(height[14]).MessagesDataSections.FavoriteChannels === arg0) {
-      let obj = { channelId: channelFavorites[row].channelId, placeholderHeight: height, row };
-      return dataKey(sharedValue(height[26]), obj);
-    } else if (tmp(height[14]).MessagesDataSections.Channels === arg0) {
-      obj = { channelId: channels[row].channelId, placeholderHeight: height, row };
-      return dataKey(sharedValue(height[26]), obj);
-    } else if (tmp(height[14]).MessagesDataSections.Separator === arg0) {
-      return dataKey(sharedValue(height[27]), {});
-    } else if (tmp(height[14]).MessagesDataSections.SuggestedFriends === arg0) {
-      const obj1 = { suggestedFriend: friendSuggestions[row], onAddFriendSuggestions: setAddedFriendSuggestions };
-      const obj2 = { height: listItemSuggestedFriendHeight };
-      const merged = Object.assign(obj1);
-      return dataKey(sharedValue(height[28]), obj2);
-    } else if (tmp(height[14]).MessagesDataSections.Placeholders === arg0) {
-      obj = { row, height };
-      return dataKey(sharedValue(height[29]), obj);
-    } else {
-      const _Error = Error;
-      const _HermesInternal = HermesInternal;
-      const error = new Error("Invalid section " + arg0 + " in Messages renderItem");
-      throw error;
-    }
-  }, items1);
-  const memo = listLeft.useMemo(() => ({
-    getComponent(arg0, arg1, stickyAt) {
-      let tmp = null;
-      if (arg0 === callback(height[14]).MessagesDataSections.SuggestedFriends) {
-        const obj = { scrollPosition: outer1_1, stickyAt, stickyTop: outer1_6, stickyLeft: outer1_5 };
-        tmp = dataKey(sharedValue(height[30]), obj);
-      }
-      return tmp;
-    },
-    getSize(arg0) {
-      let num = 0;
-      if (arg0 === callback(height[14]).MessagesDataSections.SuggestedFriends) {
-        num = callback(height[30]).MESSAGES_ITEM_SUGGESTED_FRIENDS_HEADER_HEIGHT;
-      }
-      return num;
-    }
-  }), items2);
-  const items3 = [renderHeader, tmp15];
-  const memo1 = listLeft.useMemo(() => ({
-    getComponent() {
-      if (callback(height[14]).MessagesDataHeader.HappeningNow === outer1_11) {
-        let obj = { backgroundColor: null };
-        obj = { listRef: outer1_15 };
-        obj.children = dataKey(sharedValue(height[32]), obj);
-        return dataKey(callback(height[31]).CutoutBackgroundProvider, obj);
-      } else if (callback(height[14]).MessagesDataHeader.EmptyState === tmp) {
-        return dataKey(sharedValue(height[33]), {});
-      } else {
-        return null;
-      }
-      tmp = outer1_11;
-    },
-    getSize() {
-      if (callback(height[14]).MessagesDataHeader.HappeningNow === outer1_11) {
-        return callback(height[32]).getMessagesItemHappeningNowHeight(outer1_16);
-      } else if (callback(height[14]).MessagesDataHeader.EmptyState === tmp) {
-        return callback(height[33]).MESSAGES_ITEM_EMPTY_STATE_HEIGHT;
-      } else {
-        return 0;
-      }
-      tmp = outer1_11;
-    }
-  }), items3);
-  const items4 = [renderFooter];
-  const memo2 = listLeft.useMemo(() => ({
-    getComponent() {
-      let tmp = null;
-      if (outer1_12) {
-        tmp = dataKey(sharedValue(height[34]), {});
-      }
-      return tmp;
-    },
-    getSize() {
-      let num = 0;
-      if (outer1_12) {
-        num = callback(height[34]).MESSAGES_ITEM_ADD_FRIENDS_WIDGET_HEIGHT;
-      }
-      return num;
-    }
-  }), items4);
-  const items5 = [height, listItemSuggestedFriendHeight];
-  const items6 = [channels, channelFavorites];
-  const callback1 = listLeft.useCallback((arg0) => {
-    if (tmp(height[14]).MessagesDataSections.FavoriteChannels !== arg0) {
-      if (tmp(height[14]).MessagesDataSections.Channels !== arg0) {
-        if (tmp(height[14]).MessagesDataSections.Placeholders !== arg0) {
-          if (tmp(height[14]).MessagesDataSections.SuggestedFriends === arg0) {
-            return listItemSuggestedFriendHeight;
-          } else if (tmp(height[14]).MessagesDataSections.Separator === arg0) {
-            return tmp(height[27]).MESSAGES_ITEM_SEPERATOR_HEIGHT;
-          } else {
-            const _Error = Error;
-            const _HermesInternal = HermesInternal;
-            const error = new Error("Invalid section " + arg0 + " in Messages renderItem");
-            throw error;
-          }
-        }
-      }
-    }
-    return height;
-  }, items5);
-  const items7 = [tmp, tmp8];
-  const callback2 = listLeft.useCallback((arg0, arg1, arg2) => {
-    if (sharedValue(height[35]).SECTION_HEADER !== arg0) {
-      if (sharedValue(height[35]).SECTION_FOOTER !== arg0) {
-        if (sharedValue(height[35]).ITEM === arg0) {
-          if (tmp(height[14]).MessagesDataSections.FavoriteChannels === arg1) {
-            return channelFavorites[arg2].channelId;
-          } else if (tmp(height[14]).MessagesDataSections.Channels === arg1) {
-            return channels[arg2].channelId;
-          }
-        }
-      }
-    }
-  }, items6);
-  const memo3 = listLeft.useMemo(() => {
-    let obj = {};
-    obj = { type: tmp(height[36]).FastestListPropsPlaceholderType.SHAPE, colorHex: tmp.placeholder.backgroundColor, shape: "rect", borderRadius: sharedValue(height[7]).radii.lg, paddingHorizontal: sharedValue(height[7]).space.PX_8, paddingVertical: sharedValue(height[7]).space.PX_4 };
-    obj.listHeader = obj;
-    obj = { type: tmp(height[36]).FastestListPropsPlaceholderType.FEED_ITEM, colorHex: tmp.placeholder.backgroundColor, labelPadding: sharedValue(height[7]).space.PX_4, labelSize: tmp8.label, labelSecondarySize: tmp8.labelSecondary, padding: sharedValue(height[7]).space.PX_16, shape: "circle", shapeSize: tmp8.avatar };
-    obj.sectionItem = obj;
-    return obj;
-  }, items7);
-  const obj5 = require(height[17]);
-  const externalScrollEventHandler = require(height[37]).useExternalScrollEventHandler({ id: "messages" });
-  let obj6 = require(height[37]);
-  class Y {
-    constructor(arg0) {
-      result = closure_1.set(style.contentOffset.y);
-      tmp2 = useMemo(style.contentOffset.y, style.contentSize.height, style.layoutMeasurement.height);
-      return;
-    }
-  }
-  Y.__closure = { scrollPosition: sharedValue, handleGuildsNavigationScroll: externalScrollEventHandler };
-  Y.__workletHash = 5461403437592;
-  Y.__initData = renderFooter;
-  let obj7 = require(height[10]);
-  obj = { value: tmp2(sharedValue(height[9]).MESSAGES).analyticsLocations };
-  obj = { style: items8 };
-  items8 = [tmp.container, style.style];
-  obj1 = { backgroundColor: tmp.container.backgroundColor };
-  const items9 = [dataKey(sharedValue(height[38]), { height: tmp7.headerSize, scrollPosition: sharedValue }), , ];
-  if (tmp9.showFullscreenEmptyState) {
-    let tmp30Result = tmp30(tmp31(tmp32[39]), {});
+  const tmp18 = dataKey(sections[19])("Messages");
+  externalScrollEventHandler = sharedValue(sections[26]).useExternalScrollEventHandler({ id: "messages" });
+  let obj7 = sharedValue(sections[26]);
+  const fn = function z(contentOffset) {
+    const result = sharedValue.set(contentOffset.contentOffset.y);
+    externalScrollEventHandler(contentOffset.contentOffset.y, contentOffset.contentSize.height, contentOffset.layoutMeasurement.height);
+  };
+  fn.__closure = { scrollPosition: sharedValue, handleGuildsNavigationScroll: externalScrollEventHandler };
+  fn.__workletHash = 5461403437592;
+  fn.__initData = closure_10;
+  obj = { accessibilityLabel: null, data: null, handleScrollAnimated: null, insetEnd: null, isRefreshEnabled: null, listItemHeight: null, listItemSizes: null, listItemSuggestedFriendHeight: null, listLeft: null, listRefHappeningNow: null, listTop: null, recycleItems: null, scrollIndicatorInsetBottom: null, scrollPosition: null };
+  const obj8 = sharedValue(sections[9]);
+  const intl = sharedValue(sections[27]).intl;
+  obj[0] = intl.string(sharedValue(sections[27]).t.OIgYlQ);
+  obj[1] = tmp11;
+  obj[2] = sharedValue(sections[9]).useAnimatedScrollHandler(fn);
+  obj[3] = sum;
+  obj[4] = tmp18;
+  obj[5] = listItemHeight;
+  obj[6] = listItemSizes;
+  obj[7] = listItemSuggestedFriendHeight;
+  obj[8] = listLeft;
+  obj[9] = ref1;
+  obj[10] = listTop;
+  obj[11] = recycleItems;
+  obj[12] = youBarTotalHeight1;
+  obj[13] = sharedValue;
+  obj = { value: tmp4(dataKey(sections[8]).MESSAGES).analyticsLocations, children: null };
+  obj1 = { style: items1, children: null };
+  items1 = [tmp.container, style.style];
+  obj2 = { backgroundColor: tmp.container.backgroundColor, children: null };
+  const items2 = [callback(dataKey(sections[29]), { height: headerSize, scrollPosition: sharedValue }), , ];
+  if (tmp11.showFullscreenEmptyState) {
+    let tmp23Result = tmp23(tmp2(tmp3[30]), {});
   } else {
-    obj2 = { insetEnd: sum };
-    const intl = require(tmp32[41]).intl;
-    obj2.accessibilityLabel = intl.string(require(tmp32[41]).t.OIgYlQ);
-    obj2.estimatedListSize = "windowSize";
-    obj2.keyExtractor = callback2;
-    obj2.itemSize = callback1;
-    obj2.listId = "dm-messages-list";
-    obj2.listFooterSize = memo2.getSize;
-    obj2.listFooterAlwaysMounted = true;
-    obj2.listHeaderSize = memo1.getSize;
-    obj2.listHeaderAlwaysMounted = true;
-    obj2.placeholderConfig = memo3;
-    obj2.ref = ref;
-    obj2.renderItem = callback;
-    obj2.renderListFooter = memo2.getComponent;
-    obj2.renderListHeader = memo1.getComponent;
-    obj2.renderSectionHeader = memo.getComponent;
-    obj2.scrollIndicatorInsetEnd = youBarTotalHeight1;
-    obj2.scrollReporting = "animatedCallbacks";
-    obj2.scrollHandlerAnimated = animatedScrollHandler;
-    obj2.sections = sections;
-    obj2.sectionHeaderSize = memo.getSize;
-    tmp30Result = tmp30(tmp31(tmp32[40]), obj2);
-    const tmp31Result = tmp31(tmp32[40]);
+    if ("legend" === list) {
+      let tmp26 = tmp3[31];
+    } else {
+      tmp26 = "flash" === list ? tmp3[32] : tmp3[33];
+    }
+    obj3 = { ref: null };
+    obj3[0] = ref;
+    const merged = Object.assign(obj);
+    tmp23Result = tmp23(tmp2(tmp26), obj3);
+    const tmp2Result = tmp2(tmp26);
   }
-  items9[1] = tmp30Result;
-  items9[2] = dataKey(require(height[42]).TTIFirstContentfulPaint, { label: "messages_tabs" });
-  obj1.children = items9;
-  obj.children = friendSuggestions(require(height[31]).CutoutBackgroundProvider, obj1);
-  obj.children = dataKey(listTop, obj);
-  return dataKey(require(height[8]).AnalyticsLocationProvider, obj);
+  items2[1] = tmp23Result;
+  items2[2] = callback(tmp5(sections[34]).TTIFirstContentfulPaint, { label: "messages_tabs" });
+  obj2[1] = items2;
+  obj1[1] = closure_8(sharedValue(sections[28]).CutoutBackgroundProvider, obj2);
+  obj[1] = callback(View, obj1);
+  return callback(sharedValue(sections[7]).AnalyticsLocationProvider, obj);
 });
-let result = require("get ActivityIndicator").fileFinishedImporting("modules/main_tabs_v2/native/tabs/messages/Messages.tsx");
+let result = require("maybeApplyNoTextColorForLightCustomTheme").fileFinishedImporting("modules/main_tabs_v2/native/tabs/messages/Messages.tsx");
 
 export default memoResult;

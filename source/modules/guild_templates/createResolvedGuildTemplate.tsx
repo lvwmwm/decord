@@ -1,22 +1,21 @@
-// Module ID: 5699
-// Function ID: 48985
+// Module ID: 5717
+// Function ID: 5718
 // Name: createResolvedGuildTemplate
-// Dependencies: [5698, 2]
+// Dependencies: [5716, 2]
 // Exports: default
 
-// Module 5699 (createResolvedGuildTemplate)
+// Module 5717 (createResolvedGuildTemplate)
 import { GuildTemplateStates } from "GUILD_TEMPLATES_MEMBER_COUNT_PROMOTION_THRESHOLD";
 
 const result = require("set").fileFinishedImporting("modules/guild_templates/createResolvedGuildTemplate.tsx");
 
 export default function createResolvedGuildTemplate(code) {
-  const obj = { code: code.code, state: GuildTemplateStates.RESOLVED, name: code.name };
-  const description = code.description;
-  let str = "";
-  if (null != description) {
-    str = description;
+  const obj = { code: code.code, state: GuildTemplateStates.RESOLVED, name: code.name, description: null, creatorId: null, creator: null, createdAt: null, updatedAt: null, sourceGuildId: null, serializedSourceGuild: null, usageCount: null, isDirty: null };
+  let str = code.description;
+  if (str == null) {
+    str = "";
   }
-  obj.description = str;
-  ({ creator_id: obj.creatorId, creator: obj.creator, created_at: obj.createdAt, updated_at: obj.updatedAt, source_guild_id: obj.sourceGuildId, serialized_source_guild: obj.serializedSourceGuild, usage_count: obj.usageCount, is_dirty: obj.isDirty } = code);
+  obj[3] = str;
+  ({ creator_id: obj[4], creator: obj[5], created_at: obj[6], updated_at: obj[7], source_guild_id: obj[8], serialized_source_guild: obj[9], usage_count: obj[10], is_dirty: obj[11] } = code);
   return obj;
 };

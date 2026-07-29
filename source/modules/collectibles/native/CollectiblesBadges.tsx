@@ -1,48 +1,48 @@
-// Module ID: 7942
-// Function ID: 63077
+// Module ID: 7967
+// Function ID: 7968
 // Name: NewBadge
-// Dependencies: [31, 27, 1852, 33, 4165, 689, 4161, 1212, 7943, 4687, 6606, 2]
+// Dependencies: [19, 17, 1876, 21, 4189, 712, 4185, 1236, 7968, 4709, 6627, 2]
 // Exports: IconBadgePill, IconTextBadge, LimitedTimeBadge, LockBadge, NewBadge, PremiumBadge
 
-// Module 7942 (NewBadge)
-import "result";
+// Module 7967 (NewBadge)
+import "noop";
 import { View } from "get ActivityIndicator";
 import { PremiumTypes } from "GuildFeatures";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_5;
+let c5;
 let closure_6;
 const require = arg1;
-({ jsx: closure_5, jsxs: closure_6 } = jsxProd);
-_createForOfIteratorHelperLoose = { badgeTextUppercase: { textTransform: "uppercase" } };
-_createForOfIteratorHelperLoose = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.WHITE };
-_createForOfIteratorHelperLoose.badgeSurfaceDarkMode = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.badgeSurfaceLightMode = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BADGE_BACKGROUND_BRAND };
-let obj1 = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BADGE_BACKGROUND_BRAND };
-_createForOfIteratorHelperLoose.newIconBadge = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BRAND, borderRadius: require("_createForOfIteratorHelperLoose").radii.round, paddingHorizontal: 6, paddingVertical: 2 };
-let obj2 = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BRAND, borderRadius: require("_createForOfIteratorHelperLoose").radii.round, paddingHorizontal: 6, paddingVertical: 2 };
-_createForOfIteratorHelperLoose.limitedTimeBadge = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.WHITE, borderRadius: require("_createForOfIteratorHelperLoose").radii.md, paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_8, paddingVertical: require("_createForOfIteratorHelperLoose").space.PX_4 };
-const obj3 = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.WHITE, borderRadius: require("_createForOfIteratorHelperLoose").radii.md, paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_8, paddingVertical: require("_createForOfIteratorHelperLoose").space.PX_4 };
-_createForOfIteratorHelperLoose.lockIconBadge = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.ICON_OVERLAY_DARK, padding: 5, borderRadius: require("_createForOfIteratorHelperLoose").radii.round };
-const obj5 = { backgroundColor: require("_createForOfIteratorHelperLoose").unsafe_rawColors.PREMIUM_TIER_2_PINK_FOR_GRADIENTS_2, flexDirection: "row", paddingHorizontal: 5, paddingVertical: 3, borderRadius: require("_createForOfIteratorHelperLoose").radii.round, alignItems: "center", gap: 2 };
-_createForOfIteratorHelperLoose.newLockIconBadge = obj5;
-const obj4 = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.ICON_OVERLAY_DARK, padding: 5, borderRadius: require("_createForOfIteratorHelperLoose").radii.round };
-_createForOfIteratorHelperLoose.badgePill = { paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_4, paddingVertical: 1.5, borderRadius: require("_createForOfIteratorHelperLoose").radii.round, flexShrink: 1 };
-const obj7 = { flexDirection: "row", alignItems: "center", gap: 4, paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_8, paddingVertical: 2, borderRadius: require("_createForOfIteratorHelperLoose").radii.round };
-_createForOfIteratorHelperLoose.iconTextBadge = obj7;
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-const obj6 = { paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_4, paddingVertical: 1.5, borderRadius: require("_createForOfIteratorHelperLoose").radii.round, flexShrink: 1 };
+({ jsx: c5, jsxs: closure_6 } = jsxProd);
+createCacheKey = { badgeTextUppercase: { textTransform: "uppercase" }, badgeSurfaceDarkMode: null, badgeSurfaceLightMode: null, newIconBadge: null, limitedTimeBadge: null, lockIconBadge: null, newLockIconBadge: null, badgePill: null, iconTextBadge: null };
+createCacheKey = { backgroundColor: require("Themes").colors.WHITE };
+createCacheKey[1] = createCacheKey;
+createCacheKey[2] = { backgroundColor: require("Themes").colors.BADGE_BACKGROUND_BRAND };
+let obj1 = { backgroundColor: require("Themes").colors.BADGE_BACKGROUND_BRAND };
+createCacheKey[3] = { backgroundColor: require("Themes").colors.BACKGROUND_BRAND, borderRadius: require("Themes").radii.round, paddingHorizontal: 6, paddingVertical: 2 };
+let obj2 = { backgroundColor: require("Themes").colors.BACKGROUND_BRAND, borderRadius: require("Themes").radii.round, paddingHorizontal: 6, paddingVertical: 2 };
+createCacheKey[4] = { backgroundColor: require("Themes").colors.WHITE, borderRadius: require("Themes").radii.md, paddingHorizontal: require("Themes").space.PX_8, paddingVertical: require("Themes").space.PX_4 };
+const obj3 = { backgroundColor: require("Themes").colors.WHITE, borderRadius: require("Themes").radii.md, paddingHorizontal: require("Themes").space.PX_8, paddingVertical: require("Themes").space.PX_4 };
+createCacheKey[5] = { backgroundColor: require("Themes").colors.ICON_OVERLAY_DARK, padding: 5, borderRadius: require("Themes").radii.round };
+const obj4 = { backgroundColor: require("Themes").colors.ICON_OVERLAY_DARK, padding: 5, borderRadius: require("Themes").radii.round };
+createCacheKey[6] = { backgroundColor: require("Themes").unsafe_rawColors.PREMIUM_TIER_2_PINK_FOR_GRADIENTS_2, flexDirection: "row", paddingHorizontal: 5, paddingVertical: 3, borderRadius: require("Themes").radii.round, alignItems: "center", gap: 2 };
+const obj5 = { backgroundColor: require("Themes").unsafe_rawColors.PREMIUM_TIER_2_PINK_FOR_GRADIENTS_2, flexDirection: "row", paddingHorizontal: 5, paddingVertical: 3, borderRadius: require("Themes").radii.round, alignItems: "center", gap: 2 };
+createCacheKey[7] = { paddingHorizontal: require("Themes").space.PX_4, paddingVertical: 1.5, borderRadius: require("Themes").radii.round, flexShrink: 1 };
+const obj6 = { paddingHorizontal: require("Themes").space.PX_4, paddingVertical: 1.5, borderRadius: require("Themes").radii.round, flexShrink: 1 };
+createCacheKey[8] = { flexDirection: "row", alignItems: "center", gap: 4, paddingHorizontal: require("Themes").space.PX_8, paddingVertical: 2, borderRadius: require("Themes").radii.round };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+const obj7 = { flexDirection: "row", alignItems: "center", gap: 4, paddingHorizontal: require("Themes").space.PX_8, paddingVertical: 2, borderRadius: require("Themes").radii.round };
 const result = require("GuildFeatures").fileFinishedImporting("modules/collectibles/native/CollectiblesBadges.tsx");
 
 export const NewBadge = function NewBadge(style) {
-  const tmp = _createForOfIteratorHelperLoose();
-  let obj = { style: items };
+  const tmp = createCacheKey();
+  let obj = { style: items, children: null };
   items = [tmp.newIconBadge, style.style];
-  obj = { variant: "text-sm/bold", color: "text-overlay-light", style: tmp.badgeTextUppercase };
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj.children = intl.string(require(1212) /* getSystemLocale */.t.y2b7CA);
-  obj.children = callback(require(4161) /* Text */.Text, obj);
+  obj = { variant: "text-sm/bold", color: "text-overlay-light", style: tmp.badgeTextUppercase, children: null };
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj[3] = intl.string(require(1236) /* getSystemLocale */.t.y2b7CA);
+  obj[1] = callback(require(4185) /* Text */.Text, obj);
   return callback(View, obj);
 };
 export const LockBadge = function LockBadge(isNew) {
@@ -51,26 +51,30 @@ export const LockBadge = function LockBadge(isNew) {
     flag = false;
   }
   const style = isNew.style;
-  const tmp = _createForOfIteratorHelperLoose();
+  const tmp = createCacheKey();
   if (flag) {
-    let obj = { premiumType: PremiumTypes.TIER_2 };
+    let obj = { premiumType: null, style: null, children: null };
+    obj[0] = PremiumTypes.TIER_2;
     const items = [tmp.newLockIconBadge, style];
-    obj.style = items;
-    obj = { size: "xxs", color: importDefault(689).colors.WHITE };
-    const items1 = [callback(require(4687) /* LockIcon */.LockIcon, obj), ];
-    const obj1 = { variant: "text-xs/bold", color: "text-overlay-light", style: tmp.badgeTextUppercase };
-    const intl = require(1212) /* getSystemLocale */.intl;
-    obj1.children = intl.string(require(1212) /* getSystemLocale */.t.y2b7CA);
-    items1[1] = callback(require(4161) /* Text */.Text, obj1);
-    obj.children = items1;
-    let tmp7 = callback2(importDefault(7943), obj);
-    const tmp11 = importDefault(7943);
+    obj[1] = items;
+    obj = { size: "xxs", color: null };
+    obj[1] = importDefault(712).colors.WHITE;
+    const items1 = [callback(require(4709) /* LockIcon */.LockIcon, obj), ];
+    const obj1 = { variant: "text-xs/bold", color: "text-overlay-light", style: null, children: null };
+    obj1[2] = tmp.badgeTextUppercase;
+    const intl = require(1236) /* getSystemLocale */.intl;
+    obj1[3] = intl.string(require(1236) /* getSystemLocale */.t.y2b7CA);
+    items1[1] = callback(require(4185) /* Text */.Text, obj1);
+    obj[2] = items1;
+    let tmp7 = callback2(importDefault(7968), obj);
+    const tmp11 = importDefault(7968);
   } else {
-    obj = {};
+    obj = { style: null, children: null };
     const items2 = [tmp.lockIconBadge, style];
-    obj.style = items2;
-    const obj2 = { size: "sm", color: importDefault(689).colors.WHITE };
-    obj.children = callback(require(4687) /* LockIcon */.LockIcon, obj2);
+    obj[0] = items2;
+    const obj2 = { size: "sm", color: null };
+    obj2[1] = importDefault(712).colors.WHITE;
+    obj[1] = callback(require(4709) /* LockIcon */.LockIcon, obj2);
     tmp7 = callback(View, obj);
   }
   return tmp7;
@@ -81,38 +85,42 @@ export const PremiumBadge = function PremiumBadge(isNew) {
     flag = false;
   }
   const style = isNew.style;
-  const tmp = _createForOfIteratorHelperLoose();
+  const tmp = createCacheKey();
   if (flag) {
-    let obj = { premiumType: PremiumTypes.TIER_2 };
+    let obj = { premiumType: null, style: null, children: null };
+    obj[0] = PremiumTypes.TIER_2;
     const items = [tmp.newLockIconBadge, style];
-    obj.style = items;
-    obj = { size: "xxs", color: importDefault(689).colors.WHITE };
-    const items1 = [callback(require(6606) /* NitroWheelIcon */.NitroWheelIcon, obj), ];
-    const obj1 = { variant: "text-xs/bold", color: "text-overlay-light", style: tmp.badgeTextUppercase };
-    const intl = require(1212) /* getSystemLocale */.intl;
-    obj1.children = intl.string(require(1212) /* getSystemLocale */.t.y2b7CA);
-    items1[1] = callback(require(4161) /* Text */.Text, obj1);
-    obj.children = items1;
-    let tmp7 = callback2(importDefault(7943), obj);
-    const tmp11 = importDefault(7943);
+    obj[1] = items;
+    obj = { size: "xxs", color: null };
+    obj[1] = importDefault(712).colors.WHITE;
+    const items1 = [callback(require(6627) /* NitroWheelIcon */.NitroWheelIcon, obj), ];
+    const obj1 = { variant: "text-xs/bold", color: "text-overlay-light", style: null, children: null };
+    obj1[2] = tmp.badgeTextUppercase;
+    const intl = require(1236) /* getSystemLocale */.intl;
+    obj1[3] = intl.string(require(1236) /* getSystemLocale */.t.y2b7CA);
+    items1[1] = callback(require(4185) /* Text */.Text, obj1);
+    obj[2] = items1;
+    let tmp7 = callback2(importDefault(7968), obj);
+    const tmp11 = importDefault(7968);
   } else {
-    obj = {};
+    obj = { style: null, children: null };
     const items2 = [tmp.lockIconBadge, style];
-    obj.style = items2;
-    const obj2 = { size: "sm", color: importDefault(689).colors.WHITE };
-    obj.children = callback(require(6606) /* NitroWheelIcon */.NitroWheelIcon, obj2);
+    obj[0] = items2;
+    const obj2 = { size: "sm", color: null };
+    obj2[1] = importDefault(712).colors.WHITE;
+    obj[1] = callback(require(6627) /* NitroWheelIcon */.NitroWheelIcon, obj2);
     tmp7 = callback(View, obj);
   }
   return tmp7;
 };
 export const LimitedTimeBadge = function LimitedTimeBadge(style) {
-  const tmp = _createForOfIteratorHelperLoose();
-  let obj = { style: items };
+  const tmp = createCacheKey();
+  let obj = { style: items, children: null };
   items = [tmp.limitedTimeBadge, style.style];
-  obj = { variant: "text-xs/bold", color: "text-overlay-dark", style: tmp.badgeTextUppercase };
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj.children = intl.string(require(1212) /* getSystemLocale */.t["h/uBCR"]);
-  obj.children = callback(require(4161) /* Text */.Text, obj);
+  obj = { variant: "text-xs/bold", color: "text-overlay-dark", style: tmp.badgeTextUppercase, children: null };
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj[3] = intl.string(require(1236) /* getSystemLocale */.t["h/uBCR"]);
+  obj[1] = callback(require(4185) /* Text */.Text, obj);
   return callback(View, obj);
 };
 export const IconBadgePill = function IconBadgePill(isDark) {
@@ -120,16 +128,15 @@ export const IconBadgePill = function IconBadgePill(isDark) {
   let icon;
   isDark = isDark.isDark;
   ({ icon, accessibilityLabel } = isDark);
-  const tmp = _createForOfIteratorHelperLoose();
-  let obj = { style: items, accessibilityLabel };
-  items = [tmp.badgePill, isDark ? tmp.badgeSurfaceDarkMode : tmp.badgeSurfaceLightMode];
-  obj = { size: "xs" };
+  const tmp = createCacheKey();
+  const items = [tmp.badgePill, ];
+  const obj = { style: items, accessibilityLabel, children: null };
+  items[1] = isDark ? tmp.badgeSurfaceDarkMode : tmp.badgeSurfaceLightMode;
   let str = "white";
   if (isDark) {
     str = "black";
   }
-  obj.color = str;
-  obj.children = closure_5(icon, obj);
+  obj[2] = closure_5(icon, { size: "xs", color: str });
   return closure_5(View, obj);
 };
 export const IconTextBadge = function IconTextBadge(isDark) {
@@ -137,25 +144,21 @@ export const IconTextBadge = function IconTextBadge(isDark) {
   let label;
   isDark = isDark.isDark;
   ({ icon, label } = isDark);
-  const tmp = _createForOfIteratorHelperLoose();
-  let obj = { style: items };
-  items = [tmp.iconTextBadge, isDark ? tmp.badgeSurfaceDarkMode : tmp.badgeSurfaceLightMode];
-  obj = { size: "xs" };
+  const tmp = createCacheKey();
+  const items = [tmp.iconTextBadge, ];
+  let obj = { style: items, children: null };
+  items[1] = isDark ? tmp.badgeSurfaceDarkMode : tmp.badgeSurfaceLightMode;
   let str = "white";
   if (isDark) {
     str = "black";
   }
-  obj.color = str;
-  const items1 = [closure_5(icon, obj), ];
-  obj = { variant: "text-xs/bold" };
+  const items1 = [closure_5(icon, { size: "xs", color: str }), ];
   let str2 = "text-overlay-light";
   if (isDark) {
     str2 = "text-overlay-dark";
   }
-  obj.color = str2;
-  obj.style = tmp.badgeTextUppercase;
-  obj.children = label;
-  items1[1] = closure_5(require(4161) /* Text */.Text, obj);
-  obj.children = items1;
+  obj = { variant: "text-xs/bold", color: str2, style: tmp.badgeTextUppercase, children: label };
+  items1[1] = closure_5(require(4185) /* Text */.Text, obj);
+  obj[1] = items1;
   return closure_6(View, obj);
 };

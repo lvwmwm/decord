@@ -1,60 +1,60 @@
-// Module ID: 13675
-// Function ID: 104939
+// Module ID: 13696
+// Function ID: 13697
 // Name: SuggestedColors
-// Dependencies: [57, 31, 27, 33, 4165, 689, 13676, 665, 4026, 13677, 4009, 666, 4133, 5221, 5220, 1212, 4578, 6706, 22, 13678, 2]
+// Dependencies: [32, 19, 17, 21, 4189, 712, 13697, 688, 4050, 13698, 4033, 689, 4157, 5243, 5242, 1236, 4600, 6727, 12, 13699, 2]
 // Exports: default
 
-// Module 13675 (SuggestedColors)
+// Module 13696 (SuggestedColors)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
-import { View } from "get ActivityIndicator";
+import HSVColorPicker from "HSVColorPicker";
+import { View } from "TextInput";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
 let closure_6;
-let closure_7;
+let error;
 const require = arg1;
 function SuggestedColors(arg0) {
   let importDefault;
   let require;
   let suggestedColors;
   ({ suggestedColors, onSelect: require, color: importDefault } = arg0);
-  let tmp = _createForOfIteratorHelperLoose();
-  const dependencyMap = tmp;
+  let c2;
+  const tmp = createCacheKey();
+  c2 = tmp;
   let tmp2 = null;
   if (null != suggestedColors) {
     tmp2 = null;
     if (0 !== suggestedColors.length) {
-      const obj = {
-        style: tmp.suggestedColorsContainer,
-        children: suggestedColors.map((color) => {
-              let closure_0 = color;
-              tmp = outer1_1(tmp[6]);
-              return outer1_6(tmp, {
-                color,
-                style: tmp.suggestedColor,
-                selected: color === closure_1,
-                onSelect() {
-                  if (null != color) {
-                    color(color);
-                  }
-                }
-              }, "" + color + "-" + arg1);
-            })
-      };
+      const obj = { style: null, children: null };
+      obj[0] = tmp.suggestedColorsContainer;
+      obj[1] = suggestedColors.map((color) => {
+        let closure_0 = color;
+        return outer1_6(outer1_1(_undefined[6]), {
+          color,
+          style: _undefined.suggestedColor,
+          selected: color === closure_1,
+          onSelect() {
+            if (null != closure_0) {
+              tmp(closure_0);
+            }
+          }
+        }, "" + color + "-" + arg1);
+      });
       tmp2 = callback(View, obj);
     }
   }
   return tmp2;
 }
-({ jsx: closure_6, jsxs: closure_7 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16, paddingBottom: require("_createForOfIteratorHelperLoose").space.PX_16 };
-_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
-let obj1 = { minWidth: 32, height: 32, borderRadius: require("_createForOfIteratorHelperLoose").radii.xs };
-_createForOfIteratorHelperLoose.suggestedColor = obj1;
-_createForOfIteratorHelperLoose.suggestedColorsContainer = { flexDirection: "row", justifyContent: "center" };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+({ jsx: closure_6, jsxs: error } = jsxProd);
+let c8 = "#000000";
+createCacheKey = { container: null, suggestedColor: null, suggestedColorsContainer: null };
+createCacheKey = { paddingHorizontal: require("Themes").space.PX_16, paddingBottom: require("Themes").space.PX_16 };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { minWidth: 32, height: 32, borderRadius: require("Themes").radii.xs };
+createCacheKey[2] = { flexDirection: "row", justifyContent: "center" };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let obj1 = { minWidth: 32, height: 32, borderRadius: require("Themes").radii.xs };
 let result = require("get ActivityIndicator").fileFinishedImporting("modules/color_picker/native/CustomColorPickerActionSheet.tsx");
 
 export default function CustomColorPickerActionSheet(arg0) {
@@ -78,70 +78,75 @@ export default function CustomColorPickerActionSheet(arg0) {
   let sharedValue2;
   let callback;
   function updateInputHexValueFromHsv(h) {
-    const hsvToRgbWorkletResult = onSelect(13677).hsvToRgbWorklet(h);
-    const obj = onSelect(13677);
-    dependencyMap(onSelect(4009).rgbToHex(hsvToRgbWorkletResult[0], hsvToRgbWorkletResult[1], hsvToRgbWorkletResult[2]));
+    const hsvToRgbWorkletResult = onSelect(13698).hsvToRgbWorklet(h);
+    const obj = onSelect(13698);
+    dependencyMap(onSelect(4033).rgbToHex(hsvToRgbWorkletResult[0], hsvToRgbWorkletResult[1], hsvToRgbWorkletResult[2]));
   }
-  let obj = onSelect(665);
-  let tmp = updateInputHexValueFromHsv();
-  let obj1 = onSelect(665);
+  let obj = onSelect(688);
+  let tmp = createCacheKey();
+  let obj1 = onSelect(688);
   const int2hexResult = obj.int2hex(color);
+  let obj2 = sharedValue;
   ({ h, s, v } = obj1.int2hsv(color));
-  const tmp4 = memo(sharedValue.useState(int2hexResult), 2);
-  first = tmp4[0];
-  dependencyMap = tmp4[1];
+  const tmp6 = memo(sharedValue.useState(int2hexResult), 2);
+  first = tmp6[0];
+  dependencyMap = tmp6[1];
   const items = [first];
   memo = sharedValue.useMemo(() => {
     if (null == first) {
-      return onSelect(665).hex2int("#000000");
+      return onSelect(688).hex2int(callback);
     } else {
-      return onSelect(665).hex2int(first);
+      try {
+        return onSelect(688).hex2int(tmp);
+      } catch (err) {
+        return onSelect(688).hex2int(callback);
+      }
     }
   }, items);
-  let obj2 = onSelect(4026);
-  sharedValue = obj2.useSharedValue(h);
-  let obj4 = onSelect(4026);
-  sharedValue1 = obj4.useSharedValue(s);
+  let obj3 = onSelect(4050);
+  sharedValue = obj3.useSharedValue(h);
+  let obj5 = onSelect(4050);
+  sharedValue1 = obj5.useSharedValue(s);
   let int2hsvResult = obj1.int2hsv(color);
-  sharedValue2 = onSelect(4026).useSharedValue(v);
+  sharedValue2 = onSelect(4050).useSharedValue(v);
   let combined;
-  if (null != suggestedColors) {
-    const mapped = suggestedColors.map((first) => onSelect(665).hex2int(first));
+  if (suggestedColors != null) {
+    const mapped = suggestedColors.map((callback) => onSelect(688).hex2int(callback));
     combined = mapped.concat(color);
   }
   const items1 = [sharedValue, sharedValue1, sharedValue2, onSelect, memo, first];
-  callback = sharedValue.useCallback(() => {
+  callback = obj2.useCallback(() => {
     if (null != first) {
-      if (null != obj.hex2rgb2hsv(first)) {
+      if (null != obj.hex2rgb2hsv(tmp)) {
         onSelect(memo);
       }
     }
     let value = sharedValue.get();
     value = sharedValue1.get();
-    const obj2 = first(666);
-    onSelect(first(666).hsv(value, value, sharedValue2.get()).num());
+    const obj2 = first(689);
+    onSelect(first(689).hsv(value, value, sharedValue2.get()).num());
   }, items1);
   const items2 = [callback];
-  const callback1 = sharedValue.useCallback(() => {
+  const callback1 = obj2.useCallback(() => {
     callback();
-    first(4133).hideActionSheet();
+    first(4157).hideActionSheet();
   }, items2);
-  obj = { onDismiss: callback, startExpanded: true };
-  obj = {};
-  const intl = onSelect(1212).intl;
-  obj.title = intl.string(onSelect(1212).t.WTqQ5e);
-  obj1 = { variant: actionButtonVariant, size: "sm" };
-  const intl2 = onSelect(1212).intl;
-  obj1.text = intl2.string(onSelect(1212).t.XqMe3N);
-  obj1.onPress = callback1;
-  obj.trailing = sharedValue2(onSelect(4578).Button, obj1);
-  obj.header = sharedValue2(onSelect(5220).BottomSheetTitleHeader, obj);
-  obj2 = { style: tmp.container };
-  const obj3 = {};
-  const intl3 = onSelect(1212).intl;
-  obj3.accessibilityLabel = intl3.string(onSelect(1212).t["ozfa/h"]);
-  obj3.value = first;
-  obj3.onChange = function onChange(first4) {
+  obj = { onDismiss: callback, startExpanded: true, header: null, children: null };
+  obj = { title: null, trailing: null };
+  const intl = tmp2(1236).intl;
+  obj[0] = intl.string(onSelect(1236).t.WTqQ5e);
+  obj1 = { variant: actionButtonVariant, size: "sm", text: null, onPress: null };
+  const intl2 = tmp2(1236).intl;
+  obj1[2] = intl2.string(onSelect(1236).t.XqMe3N);
+  obj1[3] = callback1;
+  obj[1] = sharedValue2(onSelect(4600).Button, obj1);
+  obj[2] = sharedValue2(onSelect(5242).BottomSheetTitleHeader, obj);
+  obj2 = { style: tmp.container, children: null };
+  obj3 = { accessibilityLabel: null, value: null, onChange: null, maxLength: 7 };
+  const intl3 = tmp2(1236).intl;
+  obj3[0] = intl3.string(onSelect(1236).t["ozfa/h"]);
+  obj3[1] = first;
+  obj3[2] = function onChange(first4) {
     let tmp = first4.length > 0;
     if (tmp) {
       tmp = "#" !== first4.charAt(0);
@@ -150,7 +155,7 @@ export default function CustomColorPickerActionSheet(arg0) {
     if (tmp) {
       text = `#${first4}`;
     }
-    const hex2rgb2hsvResult = onSelect(4009).hex2rgb2hsv(text);
+    const hex2rgb2hsvResult = onSelect(4033).hex2rgb2hsv(text);
     dependencyMap(text);
     if (null != hex2rgb2hsvResult) {
       const result = sharedValue.set(hex2rgb2hsvResult.h);
@@ -158,22 +163,20 @@ export default function CustomColorPickerActionSheet(arg0) {
       const result2 = sharedValue2.set(hex2rgb2hsvResult.v / 100);
     }
   };
-  obj3.maxLength = 7;
-  const items3 = [sharedValue2(onSelect(6706).TextInput, obj3), , ];
-  obj4 = {};
-  const obj7 = onSelect(4026);
-  const tmp10 = sharedValue2;
-  const tmp11 = callback;
-  const tmp12 = sharedValue1;
-  const tmp13 = sharedValue2;
-  const tmp14 = SuggestedColors;
-  obj4.suggestedColors = first(22).uniq(combined);
-  obj4.onSelect = function onSelect(color) {
+  const items3 = [sharedValue2(onSelect(6727).TextInput, obj3), , ];
+  const obj4 = { suggestedColors: null, onSelect: null, color: null };
+  const obj8 = onSelect(4050);
+  const tmp13 = updateInputHexValueFromHsv;
+  const tmp14 = sharedValue1;
+  const tmp15 = SuggestedColors;
+  const tmp16 = first;
+  obj4[0] = first(12).uniq(combined);
+  obj4[1] = function onSelect(color) {
     let s;
     let v;
-    dependencyMap(onSelect(665).int2hex(color));
-    const obj = onSelect(665);
-    const int2hsvResult = onSelect(665).int2hsv(color);
+    dependencyMap(onSelect(688).int2hex(color));
+    const obj = onSelect(688);
+    const int2hsvResult = onSelect(688).int2hsv(color);
     ({ s, v } = int2hsvResult);
     const result = sharedValue.set(int2hsvResult.h);
     const result1 = sharedValue1.set(s);
@@ -182,22 +185,26 @@ export default function CustomColorPickerActionSheet(arg0) {
   if (null == first) {
     let value = sharedValue.get();
     value = sharedValue1.get();
-    memo = onSelect(665).hsv2int(value, value, sharedValue2.get());
-    const obj17 = onSelect(665);
+    memo = tmp2(688).hsv2int(value, value, sharedValue2.get());
+    const tmp2Result = tmp2(688);
   }
-  obj4.color = memo;
-  items3[1] = tmp13(tmp14, obj4);
-  items3[2] = sharedValue2(first(13678), {
+  obj4[2] = memo;
+  items3[1] = sharedValue2(tmp15, obj4);
+  obj5 = {
     hue: sharedValue,
     saturation: sharedValue1,
     value: sharedValue2,
     onPanFinalize() {
-      let obj = onSelect(4026);
-      obj = { h: sharedValue.get(), s: sharedValue1.get(), v: sharedValue2.get() };
+      let obj = onSelect(4050);
+      obj = { h: null, s: null, v: null };
+      obj[0] = sharedValue.get();
+      obj[1] = sharedValue1.get();
+      obj[2] = sharedValue2.get();
       obj.runOnJS(updateInputHexValueFromHsv)(obj);
     }
-  });
-  obj2.children = items3;
-  obj.children = tmp11(tmp12, obj2);
-  return tmp10(onSelect(5221).BottomSheet, obj);
+  };
+  items3[2] = sharedValue2(tmp16(13699), obj5);
+  obj2[1] = items3;
+  obj[3] = tmp13(tmp14, obj2);
+  return sharedValue2(onSelect(5243).BottomSheet, obj);
 };

@@ -1,11 +1,11 @@
-// Module ID: 8954
-// Function ID: 70644
+// Module ID: 8978
+// Function ID: 8979
 // Name: PlayStationLinkError
-// Dependencies: [31, 8944, 653, 33, 1456, 8955, 1212, 8956, 2]
+// Dependencies: [19, 8968, 676, 21, 1480, 8979, 1236, 8980, 2]
 // Exports: PlayStationLinkError
 
-// Module 8954 (PlayStationLinkError)
-import "result";
+// Module 8978 (PlayStationLinkError)
+import "noop";
 import { PlayStationLinkModalScenes as closure_2 } from "PlayStationLinkModalScenes";
 import { AbortCodes } from "ME";
 import { jsx } from "jsxProd";
@@ -17,21 +17,21 @@ export const PlayStationLinkError = function PlayStationLinkError(arg0) {
   let errorCode;
   let onClose;
   ({ onClose, errorCode } = arg0);
-  let obj = require(1456) /* useNavigation */;
+  let obj = require(1480) /* useNavigation */;
   const navigation = obj.useNavigation();
-  const connectRetry = require(8955) /* useConnectRetry */.useConnectRetry(navigation, constants.PRE_CONNECT);
+  const connectRetry = require(8979) /* useConnectRetry */.useConnectRetry(navigation, constants.PRE_CONNECT);
   if (errorCode === AbortCodes.UNDER_MINIMUM_AGE) {
-    const intl2 = require(1212) /* getSystemLocale */.intl;
-    let stringResult = intl2.string(require(1212) /* getSystemLocale */.t["3dIn2A"]);
+    const intl2 = tmp(1236).intl;
+    let stringResult = intl2.string(tmp(1236).t["3dIn2A"]);
   } else {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    stringResult = intl.string(require(1212) /* getSystemLocale */.t.qE9nqE);
+    const intl = tmp(1236).intl;
+    stringResult = intl.string(tmp(1236).t.qE9nqE);
   }
-  obj = {};
-  const intl3 = require(1212) /* getSystemLocale */.intl;
-  obj.title = intl3.string(require(1212) /* getSystemLocale */.t.eY3qHd);
-  obj.body = stringResult;
-  obj.onClose = onClose;
-  obj.onRetry = connectRetry;
-  return jsx(require(8956) /* TwoWayLinkError */.TwoWayLinkError, {});
+  obj = { title: null, body: null, onClose: null, onRetry: null };
+  const intl3 = tmp(1236).intl;
+  obj[0] = intl3.string(require(1236) /* getSystemLocale */.t.eY3qHd);
+  obj[1] = stringResult;
+  obj[2] = onClose;
+  obj[3] = connectRetry;
+  return jsx(require(8980) /* TwoWayLinkError */.TwoWayLinkError, { title: null, body: null, onClose: null, onRetry: null });
 };

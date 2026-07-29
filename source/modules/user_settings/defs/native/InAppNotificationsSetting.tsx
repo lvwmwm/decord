@@ -1,36 +1,40 @@
-// Module ID: 14423
-// Function ID: 110258
+// Module ID: 14445
+// Function ID: 14446
 // Name: toggle
-// Dependencies: [7733, 653, 3838, 10234, 1212, 675, 10099, 2]
+// Dependencies: [7756, 676, 3862, 10255, 1236, 698, 10120, 2]
 
-// Module 14423 (toggle)
+// Module 14445 (toggle)
 import { AnalyticEvents } from "ME";
 import createToggle from "createToggle";
 
 const toggle = createToggle.createToggle({
   useTitle() {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(require(1212) /* getSystemLocale */.t.rqEZdu);
+    const intl = require(1236) /* getSystemLocale */.intl;
+    return intl.string(require(1236) /* getSystemLocale */.t.rqEZdu);
   },
   parent: require("MobileSetting").MobileSetting.NOTIFICATIONS,
   useValue: function useInAppNotificationsSettingValue() {
-    const FocusMode = require(3838) /* explicitContentFromProto */.FocusMode;
+    const FocusMode = require(3862) /* explicitContentFromProto */.FocusMode;
     const setting = FocusMode.useSetting();
-    const ShowInAppNotifications = require(3838) /* explicitContentFromProto */.ShowInAppNotifications;
-    return !setting && ShowInAppNotifications.useSetting();
+    const ShowInAppNotifications = require(3862) /* explicitContentFromProto */.ShowInAppNotifications;
+    let setting1 = !setting;
+    if (!setting) {
+      setting1 = ShowInAppNotifications.useSetting();
+    }
+    return setting1;
   },
   onValueChange: function updateInAppNotificationSettings(notifications_in_app_enabled) {
-    const ShowInAppNotifications = require(3838) /* explicitContentFromProto */.ShowInAppNotifications;
+    const ShowInAppNotifications = require(3862) /* explicitContentFromProto */.ShowInAppNotifications;
     ShowInAppNotifications.updateSetting(notifications_in_app_enabled);
-    let obj = importDefault(675);
+    let obj = importDefault(698);
     obj = { notifications_in_app_enabled };
     obj.track(AnalyticEvents.LOCAL_SETTINGS_UPDATED, obj);
   },
   useDescription: function useInAppNotificationsDescription() {
     let stringResult;
     if (obj.useFocusModeEnabled()) {
-      const intl = require(1212) /* getSystemLocale */.intl;
-      stringResult = intl.string(require(1212) /* getSystemLocale */.t.cIRG0s);
+      const intl = tmp(1236).intl;
+      stringResult = intl.string(tmp(1236).t.cIRG0s);
     }
     return stringResult;
   },
@@ -38,28 +42,32 @@ const toggle = createToggle.createToggle({
 });
 let obj = {
   useTitle() {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(require(1212) /* getSystemLocale */.t.rqEZdu);
+    const intl = require(1236) /* getSystemLocale */.intl;
+    return intl.string(require(1236) /* getSystemLocale */.t.rqEZdu);
   },
   parent: require("MobileSetting").MobileSetting.NOTIFICATIONS,
   useValue: function useInAppNotificationsSettingValue() {
-    const FocusMode = require(3838) /* explicitContentFromProto */.FocusMode;
+    const FocusMode = require(3862) /* explicitContentFromProto */.FocusMode;
     const setting = FocusMode.useSetting();
-    const ShowInAppNotifications = require(3838) /* explicitContentFromProto */.ShowInAppNotifications;
-    return !setting && ShowInAppNotifications.useSetting();
+    const ShowInAppNotifications = require(3862) /* explicitContentFromProto */.ShowInAppNotifications;
+    let setting1 = !setting;
+    if (!setting) {
+      setting1 = ShowInAppNotifications.useSetting();
+    }
+    return setting1;
   },
   onValueChange: function updateInAppNotificationSettings(notifications_in_app_enabled) {
-    const ShowInAppNotifications = require(3838) /* explicitContentFromProto */.ShowInAppNotifications;
+    const ShowInAppNotifications = require(3862) /* explicitContentFromProto */.ShowInAppNotifications;
     ShowInAppNotifications.updateSetting(notifications_in_app_enabled);
-    let obj = importDefault(675);
+    let obj = importDefault(698);
     obj = { notifications_in_app_enabled };
     obj.track(AnalyticEvents.LOCAL_SETTINGS_UPDATED, obj);
   },
   useDescription: function useInAppNotificationsDescription() {
     let stringResult;
     if (obj.useFocusModeEnabled()) {
-      const intl = require(1212) /* getSystemLocale */.intl;
-      stringResult = intl.string(require(1212) /* getSystemLocale */.t.cIRG0s);
+      const intl = tmp(1236).intl;
+      stringResult = intl.string(tmp(1236).t.cIRG0s);
     }
     return stringResult;
   },

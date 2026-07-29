@@ -1,69 +1,150 @@
-// Module ID: 13573
-// Function ID: 104259
-// Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 27, 4157, 1907, 477, 13574, 4564, 686, 4565, 2]
+// Module ID: 13596
+// Function ID: 13597
+// Name: _terminate
+// Dependencies: [17, 4181, 1931, 500, 13597, 4368, 709, 4587, 2]
+// Exports: handleVoiceMessageDeleted, pauseCurrentAudioPlayer, playCurrentAudioPlayer
 
-// Module 13573 (_isNativeReflectConstruct)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_4 from "_isNativeReflectConstruct";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
+// Module 13596 (_terminate)
 import get_ActivityIndicator from "get ActivityIndicator";
-import closure_10 from "_isNativeReflectConstruct";
-import closure_11 from "_isNativeReflectConstruct";
-import tmp3 from "LifecycleManager";
+import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
+import handleConnectionOpen from "handleConnectionOpen";
+import "initialize";
 
-let closure_8;
-let closure_9;
-const require = arg1;
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
+let c3;
+let c4;
+({ AppState: c3, NativeModules: c4 } = get_ActivityIndicator);
+class VoiceMessagesPlaybackManager extends tmp3 {
+  constructor() {
+    applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
+    closure_0 = applyArgumentsResult;
+    applyArgumentsResult.appState = AppState.currentState;
+    applyArgumentsResult.handleSetPrefersReducedMotion = function handleSetPrefersReducedMotion(prefersReducedMotion) {
+      if (obj.isAndroid()) {
+        const result = callback(4587).handleSetPrefersReducedMotion(prefersReducedMotion.prefersReducedMotion);
+        const obj2 = callback(4587);
+      } else {
+        const DCDAccessibilityManager = closure_4.DCDAccessibilityManager;
+        const result1 = DCDAccessibilityManager.handleSetPrefersReducedMotion(prefersReducedMotion.prefersReducedMotion);
+      }
+    };
+    applyArgumentsResult.handleMessageDelete = function handleMessageDelete(id) {
+      id = id.id;
+      if (id.channelId === currentlySelectedChannelId.getCurrentlySelectedChannelId()) {
+        if (obj.isAndroid()) {
+          const result = callback(13597).handleVoiceMessageDeleted(id);
+          const obj2 = callback(13597);
+        } else {
+          const DCDAudioPlayerManager = closure_4.DCDAudioPlayerManager;
+          if (DCDAudioPlayerManager != null) {
+            const result1 = DCDAudioPlayerManager.handleVoiceMessageDeleted(id);
+          }
+        }
+        obj = applyArgumentsResult(500);
+      }
+    };
+    applyArgumentsResult.handleLogout = function handleLogout() {
+      if (obj.isAndroid()) {
+        callback(13597).pauseCurrentPlayer(false);
+        const obj2 = callback(13597);
+      } else {
+        const DCDAudioPlayerManager = closure_4.DCDAudioPlayerManager;
+        if (DCDAudioPlayerManager != null) {
+          DCDAudioPlayerManager.pauseCurrentPlayer(false);
+        }
+      }
+    };
+    applyArgumentsResult.handleAppStateChanged = function handleAppStateChanged(state) {
+      state = state.state;
+      if (obj.isAndroid()) {
+        const appState = applyArgumentsResult.appState;
+        applyArgumentsResult.appState = state;
+        if ("active" === state) {
+          if ("active" !== appState) {
+            let tmpResult = tmp(tmp2[3]);
+            if (tmpResult.isAndroid()) {
+              const result = outer1_1(tmp2[4]).maybePlayCurrentPlayer();
+              const obj5 = outer1_1(tmp2[4]);
+            } else {
+              const DCDAudioPlayerManager2 = outer1_4.DCDAudioPlayerManager;
+              if (DCDAudioPlayerManager2 != null) {
+                const result1 = DCDAudioPlayerManager2.maybePlayCurrentPlayer();
+              }
+            }
+          }
+        }
+        if (tmp4) {
+          tmpResult = tmp(tmp2[3]);
+          if (tmpResult.isAndroid()) {
+            outer1_1(tmp2[4]).pauseCurrentPlayer(true);
+            const obj3 = outer1_1(tmp2[4]);
+          } else {
+            const DCDAudioPlayerManager = outer1_4.DCDAudioPlayerManager;
+            if (DCDAudioPlayerManager != null) {
+              DCDAudioPlayerManager.pauseCurrentPlayer(true);
+            }
+          }
+        }
+        tmp4 = "active" !== state && "active" === appState;
+      }
+    };
+    return applyArgumentsResult;
   }
-  const result = _isNativeReflectConstruct();
 }
-function pauseCurrentAudioPlayer(arg0) {
+const prototype = VoiceMessagesPlaybackManager.prototype;
+prototype["_terminate"] = function _terminate() {
+  importDefault(709).unsubscribe("LOGOUT", this.handleLogout);
+  const obj = importDefault(709);
+  importDefault(709).unsubscribe("MESSAGE_DELETE", this.handleMessageDelete);
+  const obj2 = importDefault(709);
+  importDefault(709).unsubscribe("APP_STATE_UPDATE", this.handleAppStateChanged);
+  const obj3 = importDefault(709);
+  importDefault(709).unsubscribe("ACCESSIBILITY_SET_PREFERS_REDUCED_MOTION", this.handleSetPrefersReducedMotion);
+};
+prototype["_initialize"] = function _initialize() {
+  let obj = importDefault(709);
+  const subscription = obj.subscribe("LOGOUT", this.handleLogout);
+  const subscription1 = importDefault(709).subscribe("MESSAGE_DELETE", this.handleMessageDelete);
+  const obj2 = importDefault(709);
+  const subscription2 = importDefault(709).subscribe("APP_STATE_UPDATE", this.handleAppStateChanged);
+  const obj3 = importDefault(709);
+  const subscription3 = importDefault(709).subscribe("ACCESSIBILITY_SET_PREFERS_REDUCED_MOTION", this.handleSetPrefersReducedMotion);
+  obj = { type: "ACCESSIBILITY_SET_PREFERS_REDUCED_MOTION", prefersReducedMotion: obj.rawPrefersReducedMotion };
+  const result = this.handleSetPrefersReducedMotion(obj);
+};
+const voiceMessagesPlaybackManager = new VoiceMessagesPlaybackManager();
+let result = require("handleConnectionOpen").fileFinishedImporting("modules/voice_messages/native/VoiceMessagesPlaybackManager.tsx");
+
+export default voiceMessagesPlaybackManager;
+export const pauseCurrentAudioPlayer = function pauseCurrentAudioPlayer(arg0) {
   if (obj.isAndroid()) {
-    importDefault(13574).pauseCurrentPlayer(arg0);
-    const obj2 = importDefault(13574);
+    importDefault(13597).pauseCurrentPlayer(arg0);
+    const obj2 = importDefault(13597);
   } else {
-    const DCDAudioPlayerManager = closure_9.DCDAudioPlayerManager;
-    if (null != DCDAudioPlayerManager) {
+    const DCDAudioPlayerManager = closure_4.DCDAudioPlayerManager;
+    if (DCDAudioPlayerManager != null) {
       DCDAudioPlayerManager.pauseCurrentPlayer(arg0);
     }
   }
-}
-function playCurrentAudioPlayer() {
+};
+export const playCurrentAudioPlayer = function playCurrentAudioPlayer() {
   if (obj.isAndroid()) {
-    const result = importDefault(13574).maybePlayCurrentPlayer();
-    const obj2 = importDefault(13574);
+    const result = importDefault(13597).maybePlayCurrentPlayer();
+    const obj2 = importDefault(13597);
   } else {
-    const DCDAudioPlayerManager = closure_9.DCDAudioPlayerManager;
-    if (null != DCDAudioPlayerManager) {
+    const DCDAudioPlayerManager = closure_4.DCDAudioPlayerManager;
+    if (DCDAudioPlayerManager != null) {
       const result1 = DCDAudioPlayerManager.maybePlayCurrentPlayer();
     }
   }
-}
-function handleVoiceMessageDeleted(arg0) {
+};
+export const handleVoiceMessageDeleted = function handleVoiceMessageDeleted(id) {
   if (obj.isAndroid()) {
-    const result = importDefault(13574).handleVoiceMessageDeleted(arg0);
-    const obj2 = importDefault(13574);
+    const result = importDefault(13597).handleVoiceMessageDeleted(id);
+    const obj2 = importDefault(13597);
   } else {
-    const DCDAudioPlayerManager = closure_9.DCDAudioPlayerManager;
-    if (null != DCDAudioPlayerManager) {
-      const result1 = DCDAudioPlayerManager.handleVoiceMessageDeleted(arg0);
+    const DCDAudioPlayerManager = closure_4.DCDAudioPlayerManager;
+    if (DCDAudioPlayerManager != null) {
+      const result1 = DCDAudioPlayerManager.handleVoiceMessageDeleted(id);
     }
   }
-}
-({ AppState: closure_8, NativeModules: closure_9 } = get_ActivityIndicator);
-tmp3 = new tmp3();
-let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/voice_messages/native/VoiceMessagesPlaybackManager.tsx");
-
-export default tmp3;
-export { pauseCurrentAudioPlayer };
-export { playCurrentAudioPlayer };
-export { handleVoiceMessageDeleted };
+};

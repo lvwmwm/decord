@@ -1,10 +1,10 @@
-// Module ID: 7406
-// Function ID: 60380
+// Module ID: 7428
+// Function ID: 7429
 // Name: SafetyBookletSpotIllustration
-// Dependencies: [33, 5119, 7407, 2]
+// Dependencies: [21, 5141, 7429, 2]
 // Exports: SafetyBookletSpotIllustration
 
-// Module 7406 (SafetyBookletSpotIllustration)
+// Module 7428 (SafetyBookletSpotIllustration)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/SafetyBookletSpotIllustration.native.tsx");
@@ -26,14 +26,15 @@ export const SafetyBookletSpotIllustration = function SafetyBookletSpotIllustrat
   if (num3 === undefined) {
     num3 = 1;
   }
-  let obj = { fadeDuration: 0 };
-  obj = { uri: importDefault(7407) };
-  obj.source = obj;
+  let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
+  obj = { uri: null };
+  obj[0] = importDefault(7429);
+  obj[1] = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
-  obj.style = items;
-  obj.accessible = accessible;
-  obj.accessibilityLabel = accessibilityLabel;
-  obj.resizeMode = resizeMode;
-  return jsx(importDefault(5119), { width: num * num3, height: num2 * num3 });
+  obj[2] = items;
+  obj[3] = accessible;
+  obj[4] = accessibilityLabel;
+  obj[5] = resizeMode;
+  return jsx(importDefault(5141), { width: num * num3, height: num2 * num3 });
 };

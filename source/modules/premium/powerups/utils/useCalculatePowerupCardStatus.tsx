@@ -1,11 +1,11 @@
-// Module ID: 11587
-// Function ID: 90055
+// Module ID: 11611
+// Function ID: 11612
 // Name: useCalculatePowerupCardStatus
-// Dependencies: [31, 4053, 1212, 2231, 2]
+// Dependencies: [19, 4077, 1236, 2255, 2]
 // Exports: useCalculatePowerupCardStatus
 
-// Module 11587 (useCalculatePowerupCardStatus)
-import result from "result";
+// Module 11611 (useCalculatePowerupCardStatus)
+import noop from "noop";
 import { PowerupActiveStatusType } from "BoostedGuildTiers";
 
 const require = arg1;
@@ -19,42 +19,44 @@ export const useCalculatePowerupCardStatus = function useCalculatePowerupCardSta
   return React.useMemo(() => {
     const sourceEntitlement = lib.sourceEntitlement;
     let ends_at;
-    if (null != sourceEntitlement) {
+    if (sourceEntitlement != null) {
       ends_at = sourceEntitlement.ends_at;
     }
     if (null != ends_at) {
-      let obj = { type: "expiring", expiringAt: lib.sourceEntitlement.ends_at };
-      let tmp7 = obj;
+      let obj = { type: "expiring", expiringAt: null };
+      obj[1] = tmp.sourceEntitlement.ends_at;
+      let tmp5 = obj;
     } else {
       if (dependencyMap) {
         if (null != powerup.storeRemovalDate) {
-          obj = { type: "removing", removingAt: powerup.storeRemovalDate };
-          tmp7 = obj;
+          obj = { type: "removing", removingAt: null };
+          obj[1] = tmp3.storeRemovalDate;
+          tmp5 = obj;
         }
       }
-      if (lib.type === outer1_4.LEVEL_ACTIVATED) {
-        const obj1 = { type: "active" };
-        const intl2 = powerup(1212).intl;
-        const obj2 = {};
-        const sourcePowerup = lib.sourcePowerup;
+      if (tmp.type === outer1_4.LEVEL_ACTIVATED) {
+        const intl2 = powerup(1236).intl;
+        const sourcePowerup = tmp.sourcePowerup;
         let title;
-        if (null != sourcePowerup) {
+        if (sourcePowerup != null) {
           title = sourcePowerup.title;
         }
-        if (null == title) {
-          const intl3 = powerup(1212).intl;
-          title = intl3.string(powerup(1212).t.BfF6ED);
+        if (title == null) {
+          const intl3 = tmp9(1236).intl;
+          title = intl3.string(tmp9(1236).t.BfF6ED);
         }
-        obj2.perkName = title;
-        obj1.statusText = intl2.formatToPlainString(lib(2231).WRRYUT, obj2);
-        tmp7 = obj1;
-      } else if (lib.type !== outer1_4.INACTIVE) {
-        obj = { type: "active" };
-        const intl = powerup(1212).intl;
-        obj.statusText = intl.string(lib(2231).FFLkmx);
-        tmp7 = obj;
+        const obj1 = { type: "active", statusText: null };
+        const obj2 = { perkName: null };
+        obj2[0] = title;
+        obj1[1] = intl2.formatToPlainString(lib(2255).WRRYUT, obj2);
+        tmp5 = obj1;
+      } else if (tmp.type !== tmp4.INACTIVE) {
+        obj = { type: "active", statusText: null };
+        const intl = powerup(1236).intl;
+        obj[1] = intl.string(lib(2255).FFLkmx);
+        tmp5 = obj;
       }
     }
-    return tmp7;
+    return tmp5;
   }, items);
 };

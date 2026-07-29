@@ -1,12 +1,12 @@
-// Module ID: 8053
-// Function ID: 63933
+// Module ID: 8077
+// Function ID: 8078
 // Name: useProfileTheme
-// Dependencies: [57, 4157, 8054, 653, 4101, 566, 688, 7886, 665, 7964, 4011, 2]
+// Dependencies: [32, 4181, 8078, 676, 4125, 589, 711, 7911, 688, 7989, 4035, 2]
 // Exports: default
 
-// Module 8053 (useProfileTheme)
+// Module 8077 (useProfileTheme)
 import _slicedToArray from "_slicedToArray";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
 import { useEffectiveThemeOverride } from "useProfileThemeOverrideStore";
 import { ThemeTypes } from "ME";
 
@@ -22,83 +22,90 @@ export default function useProfileTheme(arg0) {
   let user;
   ({ user, displayProfile, pendingAvatarSrc } = arg0);
   ({ pendingThemeColors, isPreview, forceUserTheme } = arg0);
-  const tmp = importDefault(4101)();
-  const tmp2 = useEffectiveThemeOverride();
-  let obj = require(566) /* initialize */;
-  const items = [_isNativeReflectConstruct];
-  const stateFromStores = obj.useStateFromStores(items, () => outer1_4.syncProfileThemeWithUserTheme);
-  if (null == pendingAvatarSrc) {
+  const tmp2 = importDefault(4125)();
+  const tmp3 = useEffectiveThemeOverride();
+  let obj = require(589) /* initialize */;
+  const items = [maybeApplyNoTextColorForLightCustomTheme];
+  const stateFromStores = obj.useStateFromStores(items, () => obj.syncProfileThemeWithUserTheme);
+  if (pendingAvatarSrc == null) {
     let avatarURL;
-    if (null != user) {
+    if (user != null) {
       let guildId;
-      if (null != displayProfile) {
+      if (displayProfile != null) {
         guildId = displayProfile.guildId;
       }
       avatarURL = user.getAvatarURL(guildId, 80);
     }
     pendingAvatarSrc = avatarURL;
   }
-  const result = require(688) /* unsafe_getRawColor */.unsafe_getResolvedRawColor("PRIMARY_530", { saturation: 1 });
-  const obj2 = require(688) /* unsafe_getRawColor */;
-  callback(require(7886) /* hasFetchedColors */.useAvatarColors(pendingAvatarSrc, result, false), 2);
-  if (null != tmp2) {
-    return tmp2;
+  let tmp4Result = tmp4(711);
+  const result = tmp4Result.unsafe_getResolvedRawColor("PRIMARY_530", { saturation: 1 });
+  tmp4Result = tmp4(7911);
+  callback(tmp4Result.useAvatarColors(pendingAvatarSrc, result, false), 2);
+  if (null != tmp3) {
+    return tmp3;
   } else {
-    if (null == displayProfile) {
+    let canEditThemes;
+    if (displayProfile != null) {
+      canEditThemes = displayProfile.canEditThemes;
+    }
+    if (!canEditThemes) {
       if (!isPreview) {
-        obj = { theme: tmp, primaryColor: null, secondaryColor: null };
+        obj = { theme: null, primaryColor: null, secondaryColor: null };
+        obj[0] = tmp2;
         return obj;
       }
     }
     let previewThemeColors;
-    if (null != displayProfile) {
+    if (displayProfile != null) {
       previewThemeColors = displayProfile.getPreviewThemeColors(pendingThemeColors);
     }
     let first;
-    if (null != previewThemeColors) {
+    if (previewThemeColors != null) {
       first = previewThemeColors[0];
     }
-    if (null == first) {
-      first = require(665) /* pad2 */.hex2int(tmp8);
-      const obj5 = require(665) /* pad2 */;
+    if (first == null) {
+      first = tmp4(688).hex2int(tmp10);
+      const tmp4Result1 = tmp4(688);
     }
     let hex2intResult;
-    if (null != previewThemeColors) {
+    if (previewThemeColors != null) {
       hex2intResult = previewThemeColors[1];
     }
-    if (null == hex2intResult) {
-      hex2intResult = require(665) /* pad2 */.hex2int(tmp9);
-      const obj6 = require(665) /* pad2 */;
+    if (hex2intResult == null) {
+      hex2intResult = tmp4(688).hex2int(tmp11);
+      const tmp4Result2 = tmp4(688);
     }
-    let tmp17 = tmp;
+    let tmp16 = tmp2;
     if (!stateFromStores) {
-      tmp17 = tmp;
+      tmp16 = tmp2;
       if (!forceUserTheme) {
-        const profileTheme = require(7964) /* getProfileTheme */.getProfileTheme(first);
-        let tmp21 = tmp;
-        if (null != profileTheme) {
-          tmp21 = profileTheme;
+        let profileTheme = tmp4(7989).getProfileTheme(first);
+        if (profileTheme == null) {
+          profileTheme = tmp2;
         }
-        tmp17 = tmp21;
-        const obj7 = require(7964) /* getProfileTheme */;
+        tmp16 = profileTheme;
+        const tmp4Result3 = tmp4(7989);
       }
     }
-    if (tmp17 !== ThemeTypes.DARK) {
-      let isThemeLightResult = tmp17 === ThemeTypes.DARK;
+    if (tmp16 !== ThemeTypes.DARK) {
+      let isThemeLightResult = tmp16 === tmp18.DARK;
       if (isThemeLightResult) {
-        isThemeLightResult = require(4011) /* AccessibilityAnnouncer */.isThemeLight(tmp);
-        const obj9 = require(4011) /* AccessibilityAnnouncer */;
+        isThemeLightResult = tmp4(4035).isThemeLight(tmp2);
+        const tmp4Result4 = tmp4(4035);
       }
-      let DARKER = tmp17;
+      let DARKER = tmp16;
       if (isThemeLightResult) {
-        DARKER = ThemeTypes.DARKER;
+        DARKER = tmp18.DARKER;
       }
     } else {
-      DARKER = tmp;
-      const obj8 = require(4011) /* AccessibilityAnnouncer */;
+      DARKER = tmp2;
+      const tmp4Result5 = tmp4(4035);
     }
-    obj = { theme: DARKER, primaryColor: first, secondaryColor: hex2intResult };
+    obj = { theme: null, primaryColor: null, secondaryColor: null };
+    obj[0] = DARKER;
+    obj[1] = first;
+    obj[2] = hex2intResult;
     return obj;
   }
-  const obj3 = require(7886) /* hasFetchedColors */;
 };

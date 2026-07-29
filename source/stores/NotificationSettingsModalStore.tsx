@@ -1,114 +1,68 @@
-// Module ID: 16303
-// Function ID: 126375
-// Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 1352, 5105, 1908, 4086, 1838, 4360, 653, 5106, 566, 686, 2]
+// Module ID: 16338
+// Function ID: 16339
+// Name: FormStates
+// Dependencies: [1376, 5127, 1932, 4110, 1862, 4385, 676, 589, 5128, 709, 2]
 
-// Module 16303 (_isNativeReflectConstruct)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_3 from "_isNativeReflectConstruct";
-import set from "set";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
-import { isGuildSelectableChannelType as closure_7 } from "_callSuper";
-import closure_8 from "_isNativeReflectConstruct";
-import closure_9 from "_isNativeReflectConstruct";
-import closure_10 from "_isNativeReflectConstruct";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import closure_12 from "_isNativeReflectConstruct";
+// Module 16338 (FormStates)
+import { isGuildSelectableChannelType as closure_3 } from "createChannelRecord";
+import setIndex from "setIndex";
+import comparator from "comparator";
+import handleInviteData from "handleInviteData";
+import createGuildRecordFromRust from "createGuildRecordFromRust";
+import updateUserGuildSettingsInternal from "updateUserGuildSettingsInternal";
 import ME from "ME";
+import { Store } from "initialize";
 
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
-  }
-  const result = _isNativeReflectConstruct();
-}
 const FormStates = ME.FormStates;
 const ChannelTypes = ME.ChannelTypes;
 let CLOSED = FormStates.CLOSED;
-let tmp3 = ((Store) => {
-  class NotificationSettingsModalStore {
-    constructor() {
-      self = this;
-      tmp = outer1_2(this, NotificationSettingsModalStore);
-      obj = outer1_5(NotificationSettingsModalStore);
-      tmp2 = outer1_4;
-      if (outer1_17()) {
-        tmp6 = globalThis;
-        _Reflect = Reflect;
-        tmp7 = outer1_5;
-        tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, outer1_5(self).constructor);
-      } else {
-        tmp3 = arguments;
-        tmp4 = arguments;
-        constructResult = obj(...arguments);
+class NotificationSettingsModalStore extends Store {
+}
+const prototype = NotificationSettingsModalStore.prototype;
+prototype["initialize"] = function initialize() {
+  const self = this;
+  this.waitFor(setIndex, comparator, handleInviteData, createGuildRecordFromRust, updateUserGuildSettingsInternal);
+  const items = [updateUserGuildSettingsInternal, comparator, createGuildRecordFromRust];
+  this.syncWith(items, () => self.isOpen());
+};
+prototype["isOpen"] = function isOpen() {
+  return CLOSED !== FormStates.CLOSED;
+};
+prototype["getProps"] = function getProps() {
+  categories = categories.getCategories(closure_2);
+  return {
+    guildId: closure_2,
+    categories,
+    guild: guild.getGuild(closure_2),
+    memberCount: memberCount.getMemberCount(closure_2),
+    suppressEveryone: store.isSuppressEveryoneEnabled(closure_2),
+    suppressRoles: store.isSuppressRolesEnabled(closure_2),
+    mobilePush: store.isMobilePushEnabled(closure_2),
+    muted: store.isMuted(closure_2),
+    muteConfig: store.getMuteConfig(closure_2),
+    messageNotifications: store.getMessageNotifications(closure_2),
+    channelOverrides: store.getChannelOverrides(closure_2),
+    channels: importDefault(5128)(categories._categories, categories, (channel) => {
+      const type = channel.channel.type;
+      let tmp = callback(type);
+      if (!tmp) {
+        tmp = type === constants.GUILD_CATEGORY;
       }
-      return tmp2(self, constructResult);
-    }
-  }
-  callback2(NotificationSettingsModalStore, Store);
-  let obj = {
-    key: "initialize",
-    value() {
-      const self = this;
-      this.waitFor(outer1_8, outer1_9, outer1_10, outer1_11, outer1_12);
-      const items = [outer1_12, outer1_9, outer1_11];
-      this.syncWith(items, () => self.isOpen());
-    }
+      return tmp;
+    })
   };
-  let items = [obj, , ];
-  obj = {
-    key: "isOpen",
-    value() {
-      return outer1_16 !== outer1_13.CLOSED;
-    }
-  };
-  items[1] = obj;
-  obj = {
-    key: "getProps",
-    value() {
-      const categories = outer1_8.getCategories(outer1_15);
-      return {
-        guildId: outer1_15,
-        categories,
-        guild: outer1_11.getGuild(outer1_15),
-        memberCount: outer1_10.getMemberCount(outer1_15),
-        suppressEveryone: outer1_12.isSuppressEveryoneEnabled(outer1_15),
-        suppressRoles: outer1_12.isSuppressRolesEnabled(outer1_15),
-        mobilePush: outer1_12.isMobilePushEnabled(outer1_15),
-        muted: outer1_12.isMuted(outer1_15),
-        muteConfig: outer1_12.getMuteConfig(outer1_15),
-        messageNotifications: outer1_12.getMessageNotifications(outer1_15),
-        channelOverrides: outer1_12.getChannelOverrides(outer1_15),
-        channels: NotificationSettingsModalStore(outer1_1[12])(categories._categories, categories, (channel) => {
-          const type = channel.channel.type;
-          let tmp = outer2_7(type);
-          if (!tmp) {
-            tmp = type === outer2_14.GUILD_CATEGORY;
-          }
-          return tmp;
-        })
-      };
-    }
-  };
-  items[2] = obj;
-  return callback(NotificationSettingsModalStore, items);
-})(require("initialize").Store);
-tmp3.displayName = "NotificationSettingsModalStore";
-tmp3 = new tmp3(require("dispatcher"), {
+};
+NotificationSettingsModalStore.displayName = "NotificationSettingsModalStore";
+const notificationSettingsModalStore = new NotificationSettingsModalStore(require("dispatcher"), {
   NOTIFICATION_SETTINGS_MODAL_OPEN: function handleFormOpen(guildId) {
     const OPEN = FormStates.OPEN;
     guildId = guildId.guildId;
   },
   NOTIFICATION_SETTINGS_MODAL_CLOSE: function handleFormClose() {
     const CLOSED = FormStates.CLOSED;
-    let c15 = null;
+    let c2 = null;
   }
 });
-let result = require("_possibleConstructorReturn").fileFinishedImporting("stores/NotificationSettingsModalStore.tsx");
+const result = require("comparator").fileFinishedImporting("stores/NotificationSettingsModalStore.tsx");
 
-export default tmp3;
+export default notificationSettingsModalStore;

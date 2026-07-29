@@ -1,100 +1,118 @@
-// Module ID: 10818
-// Function ID: 83798
+// Module ID: 10842
+// Function ID: 10843
 // Name: VoiceStatus
-// Dependencies: [31, 27, 4212, 4181, 4989, 33, 4165, 689, 566, 10777, 10572, 10573, 1273, 10819, 10820, 8340, 2]
+// Dependencies: [19, 17, 4236, 4205, 5011, 21, 4189, 712, 589, 10801, 10596, 10597, 1297, 10843, 10844, 8364, 2]
 // Exports: BlockedStatus, IgnoredStatus
 
-// Module 10818 (VoiceStatus)
-import importAllResult from "result";
+// Module 10842 (VoiceStatus)
+import importAllResult from "noop";
 import { View } from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_5 from "_isNativeReflectConstruct";
-import closure_6 from "_isNativeReflectConstruct";
+import _detectH265HardwareDecode from "_detectH265HardwareDecode";
+import updateVoiceState from "updateVoiceState";
+import buildStageChannelUserRoles from "buildStageChannelUserRoles";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
 const require = arg1;
-let obj = {};
-obj = { position: "absolute", top: 4, left: 4, backgroundColor: require("_createForOfIteratorHelperLoose").colors.WHITE, borderRadius: require("_createForOfIteratorHelperLoose").radii.md, width: 24, height: 24, justifyContent: "center", alignItems: "center" };
-obj.voiceStatusWrapper = obj;
-_createForOfIteratorHelperLoose = { position: "absolute", top: 4, right: 4, backgroundColor: require("_createForOfIteratorHelperLoose").colors.WHITE, borderRadius: require("_createForOfIteratorHelperLoose").radii.md, width: 24, height: 24, justifyContent: "center", alignItems: "center" };
-obj.moderatorStatusWrapper = _createForOfIteratorHelperLoose;
-obj.restricted = { marginEnd: require("_createForOfIteratorHelperLoose").space.PX_4 };
-let closure_8 = _createForOfIteratorHelperLoose.createStyles(obj);
-const obj2 = { marginEnd: require("_createForOfIteratorHelperLoose").space.PX_4 };
+let obj = { voiceStatusWrapper: null, moderatorStatusWrapper: null, restricted: null };
+obj = { position: "absolute", top: 4, left: 4, backgroundColor: require("Themes").colors.WHITE, borderRadius: require("Themes").radii.md, width: 24, height: 24, justifyContent: "center", alignItems: "center" };
+obj[0] = obj;
+createCacheKey = { position: "absolute", top: 4, right: 4, backgroundColor: require("Themes").colors.WHITE, borderRadius: require("Themes").radii.md, width: 24, height: 24, justifyContent: "center", alignItems: "center" };
+obj[1] = createCacheKey;
+obj[2] = { marginEnd: require("Themes").space.PX_4 };
+let closure_8 = createCacheKey.createStyles(obj);
+const obj2 = { marginEnd: require("Themes").space.PX_4 };
 const memoResult = importAllResult.memo((userId) => {
   userId = userId.userId;
   const channelId = userId.channelId;
-  let obj = userId(566);
-  const items = [_isNativeReflectConstruct];
+  let obj = userId(589);
+  const items = [_detectH265HardwareDecode];
   const items1 = [userId];
   const stateFromStores = obj.useStateFromStores(items, () => outer1_4.isLocalMute(userId), items1);
   const tmp = callback();
-  const items2 = [closure_5];
+  const items2 = [updateVoiceState];
   const items3 = [channelId, userId];
-  const stateFromStores1 = userId(566).useStateFromStores(items2, () => outer1_5.getVoiceStateForChannel(channelId, userId), items3);
-  let isVoiceMutedResult;
-  if (null != stateFromStores1) {
-    isVoiceMutedResult = stateFromStores1.isVoiceMuted();
+  const stateFromStores1 = userId(589).useStateFromStores(items2, () => outer1_5.getVoiceStateForChannel(channelId, userId), items3);
+  let flag;
+  if (stateFromStores1 != null) {
+    flag = stateFromStores1.isVoiceMuted();
   }
-  let isVoiceDeafenedResult;
-  if (null != stateFromStores1) {
-    isVoiceDeafenedResult = stateFromStores1.isVoiceDeafened();
+  if (flag == null) {
+    flag = false;
+  }
+  let flag2;
+  if (stateFromStores1 != null) {
+    flag2 = stateFromStores1.isVoiceDeafened();
+  }
+  if (flag2 == null) {
+    flag2 = false;
   }
   if (stateFromStores) {
-    let tmp7 = channelId(10777);
-    let flag = true;
-  } else if (tmp6) {
-    tmp7 = channelId(10572);
-    flag = false;
+    let tmp5 = channelId(10801);
+    let flag3 = true;
+  } else if (flag2) {
+    tmp5 = channelId(10596);
+    flag3 = false;
   } else {
-    flag = false;
-    if (tmp4) {
-      tmp7 = channelId(10573);
-      flag = false;
+    flag3 = false;
+    if (flag) {
+      tmp5 = channelId(10597);
+      flag3 = false;
     }
   }
-  let tmp14 = null;
-  if (null != tmp7) {
-    obj = {};
+  let tmp9 = null;
+  if (null != tmp5) {
+    obj = { style: null, children: null };
     const items4 = [tmp.voiceStatusWrapper, userId.style];
-    obj.style = items4;
-    obj = { source: tmp7, size: userId(1273).Icon.Sizes.SMALL, color: channelId(689).unsafe_rawColors.BLACK, disableColor: flag };
-    obj.children = jsx(userId(1273).Icon, { source: tmp7, size: userId(1273).Icon.Sizes.SMALL, color: channelId(689).unsafe_rawColors.BLACK, disableColor: flag });
-    tmp14 = <View source={tmp7} size={userId(1273).Icon.Sizes.SMALL} color={channelId(689).unsafe_rawColors.BLACK} disableColor={flag} />;
+    obj[0] = items4;
+    obj = { source: null, size: null, color: null, disableColor: null };
+    obj[0] = tmp5;
+    obj[1] = tmp2(1297).Icon.Sizes.SMALL;
+    obj[2] = channelId(712).unsafe_rawColors.BLACK;
+    obj[3] = flag3;
+    obj[1] = jsx(tmp2(1297).Icon, { source: null, size: null, color: null, disableColor: null });
+    tmp9 = <View source={null} size={null} color={null} disableColor={null} />;
   }
-  return tmp14;
+  return tmp9;
 });
 const memoResult1 = importAllResult.memo((userId) => {
   userId = userId.userId;
   const channelId = userId.channelId;
-  let obj = userId(566);
-  const items = [closure_6];
+  let obj = userId(589);
+  const items = [buildStageChannelUserRoles];
   const items1 = [channelId, userId];
-  let tmp2;
+  let tmp4;
   if (obj.useStateFromStores(items, () => outer1_6.isModerator(userId, channelId), items1)) {
-    tmp2 = channelId(10819);
+    tmp4 = channelId(10843);
   }
-  let tmp5 = null;
-  if (null != tmp2) {
-    obj = {};
+  let tmp6 = null;
+  if (null != tmp4) {
+    obj = { style: null, children: null };
     const items2 = [tmp.moderatorStatusWrapper, userId.style];
-    obj.style = items2;
-    obj = { source: tmp2, size: userId(1273).Icon.Sizes.SMALL, color: channelId(689).unsafe_rawColors.BLACK };
-    obj.children = jsx(userId(1273).Icon, { source: tmp2, size: userId(1273).Icon.Sizes.SMALL, color: channelId(689).unsafe_rawColors.BLACK });
-    tmp5 = <View source={tmp2} size={userId(1273).Icon.Sizes.SMALL} color={channelId(689).unsafe_rawColors.BLACK} />;
+    obj[0] = items2;
+    obj = { source: null, size: null, color: null };
+    obj[0] = tmp4;
+    obj[1] = tmp2(1297).Icon.Sizes.SMALL;
+    obj[2] = channelId(712).unsafe_rawColors.BLACK;
+    obj[1] = jsx(tmp2(1297).Icon, { source: null, size: null, color: null });
+    tmp6 = <View source={null} size={null} color={null} />;
   }
-  return tmp5;
+  return tmp6;
 });
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/stage_channels/native/components/SpeakerTileStatuses.tsx");
+const result = require("_detectH265HardwareDecode").fileFinishedImporting("modules/stage_channels/native/components/SpeakerTileStatuses.tsx");
 
 export const VoiceStatus = memoResult;
 export const ModeratorStatus = memoResult1;
 export const BlockedStatus = function BlockedStatus() {
-  const obj = { style: callback().restricted, source: importDefault(10820), size: require(1273) /* Button */.Icon.Sizes.EXTRA_SMALL, color: importDefault(689).unsafe_rawColors.RED_400 };
-  return jsx(require(1273) /* Button */.Icon, { style: callback().restricted, source: importDefault(10820), size: require(1273) /* Button */.Icon.Sizes.EXTRA_SMALL, color: importDefault(689).unsafe_rawColors.RED_400 });
+  const obj = { style: callback().restricted, source: null, size: null, color: null };
+  obj[1] = importDefault(10844);
+  obj[2] = require(1297) /* Button */.Icon.Sizes.EXTRA_SMALL;
+  obj[3] = importDefault(712).unsafe_rawColors.RED_400;
+  return jsx(require(1297) /* Button */.Icon, { style: callback().restricted, source: null, size: null, color: null });
 };
 export const IgnoredStatus = function IgnoredStatus() {
-  const obj = { style: callback().restricted, source: importDefault(8340), size: require(1273) /* Button */.Icon.Sizes.EXTRA_SMALL };
-  return jsx(require(1273) /* Button */.Icon, { style: callback().restricted, source: importDefault(8340), size: require(1273) /* Button */.Icon.Sizes.EXTRA_SMALL });
+  const obj = { style: callback().restricted, source: null, size: null };
+  obj[1] = importDefault(8364);
+  obj[2] = require(1297) /* Button */.Icon.Sizes.EXTRA_SMALL;
+  return jsx(require(1297) /* Button */.Icon, { style: callback().restricted, source: null, size: null });
 };

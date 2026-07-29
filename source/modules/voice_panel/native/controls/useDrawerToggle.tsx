@@ -1,11 +1,11 @@
-// Module ID: 15957
-// Function ID: 123209
+// Module ID: 15992
+// Function ID: 15993
 // Name: useDrawerToggle
-// Dependencies: [31, 10014, 10015, 4026, 8094, 15958, 1212, 2]
+// Dependencies: [19, 10036, 10037, 4050, 8118, 15993, 1236, 2]
 // Exports: default
 
-// Module 15957 (useDrawerToggle)
-import result from "result";
+// Module 15992 (useDrawerToggle)
+import noop from "noop";
 import { VoicePanelControlsModes } from "VoicePanelControlsModes";
 
 const require = arg1;
@@ -33,15 +33,15 @@ export default function useDrawerToggle(arg0) {
     if (controlsSpecs.get().mode === outer1_4.DRAWER) {
       dismissPanel();
     } else {
-      const obj = { tab: "settings" };
       const value = connected.get();
       const VoicePanelTabAnalyticsSources = callback(connected[5]).VoicePanelTabAnalyticsSources;
-      obj.source = value ? VoicePanelTabAnalyticsSources.CONNECTED_BUTTON : VoicePanelTabAnalyticsSources.PREJOIN_BUTTON;
+      const obj = { tab: "settings", source: null };
+      obj[1] = value ? VoicePanelTabAnalyticsSources.CONNECTED_BUTTON : VoicePanelTabAnalyticsSources.PREJOIN_BUTTON;
       callback(obj);
       const tmp = callback;
     }
   }, items);
-  obj = { isDrawerOpen: tmp3, handlePress: callback };
+  obj = { isDrawerOpen: tmp3, handlePress: callback, accessibilityLabel: null, ariaHidden: null };
   const intl = _require(connected[6]).intl;
   const string = intl.string;
   const t = _require(connected[6]).t;
@@ -50,7 +50,7 @@ export default function useDrawerToggle(arg0) {
   } else {
     stringResult = string(t.OXW7dL);
   }
-  obj.accessibilityLabel = stringResult;
-  obj.ariaHidden = !controlsSpecs(connected[4])(connected);
+  obj[2] = stringResult;
+  obj[3] = !controlsSpecs(connected[4])(connected);
   return obj;
 };

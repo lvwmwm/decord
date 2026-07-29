@@ -1,40 +1,38 @@
-// Module ID: 11229
-// Function ID: 87186
+// Module ID: 11253
+// Function ID: 11254
 // Name: PortalKeyboardBottomSheetHeader
-// Dependencies: [57, 31, 27, 9544, 33, 477, 4165, 689, 8212, 4563, 4026, 1324, 11230, 4511, 5480, 566, 5223, 4134, 10232, 1820, 4594, 3869, 1557, 1450, 4036, 4012, 3877, 4560, 9328, 5483, 2]
+// Dependencies: [32, 19, 17, 9568, 21, 500, 4189, 712, 8236, 4586, 4050, 1348, 11254, 4534, 5498, 589, 5245, 4158, 10253, 1844, 4616, 3893, 1581, 1474, 4060, 4036, 3901, 4583, 9352, 5501, 2]
 
-// Module 11229 (PortalKeyboardBottomSheetHeader)
+// Module 11253 (PortalKeyboardBottomSheetHeader)
 import _slicedToArray from "_slicedToArray";
-import importAllResult from "result";
-import get_ActivityIndicator from "AccessibilityView";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import jsxProd from "jsxProd";
+import importAllResult from "dismissGlobalKeyboard";
+import get_ActivityIndicator from "HapticFeedbackTypes";
+import initialize from "initialize";
+import jsxProd from "map";
 import set from "set";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 import set from "get ActivityIndicator";
 
 let Platform;
-let closure_5;
-let closure_7;
-let closure_8;
+let c5;
+let error;
+let metroImportAll;
 const require = arg1;
 function PortalKeyboardBottomSheetHeader(arg0) {
   let handleCollapse;
   let style;
   ({ style, handleCollapse } = arg0);
   const tmp = callback2();
-  let obj = require(4563) /* SCREEN_READER_ENABLED_GETTER */;
-  obj = {};
+  let obj = require(4586) /* SCREEN_READER_ENABLED_GETTER */;
   const items = [tmp.headerContainer, , ];
   let prop;
   if (obj.useIsScreenReaderEnabled()) {
     prop = tmp.headerContainerScreenReaderEnabled;
   }
+  obj = { style: items, children: tmp4(require(8236) /* TwinButtons */.ActionSheetDragHandle, { onPress: handleCollapse }) };
   items[1] = prop;
   items[2] = style;
-  obj.style = items;
-  obj.children = callback(require(8212) /* TwinButtons */.ActionSheetDragHandle, { onPress: handleCollapse });
-  return callback(closure_5, obj);
+  return closure_7(closure_5, obj);
 }
 function PortalKeyboardBackground(arg0) {
   let pointerEvents;
@@ -45,29 +43,30 @@ function PortalKeyboardBackground(arg0) {
   style[0] = style;
   style[1] = callback2().background;
   style[2] = roundingStyle;
-  return callback(importDefault(4026).View, { pointerEvents, style });
+  return callback(importDefault(4050).View, { pointerEvents, style });
 }
-({ Platform, View: closure_5 } = get_ActivityIndicator);
-({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
+let c4 = importAllResult;
+({ Platform, View: c5 } = get_ActivityIndicator);
+({ jsx: error, jsxs: metroImportAll } = jsxProd);
 set = set.isIOS();
-let obj = { container: { position: "absolute", top: 0, left: 0 } };
-obj = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.MOBILE_KEYBOARD_PANEL_BACKGROUND, overflow: "hidden" };
-obj.background = obj;
-set = { borderTopLeftRadius: require("_createForOfIteratorHelperLoose").radii.none, borderTopRightRadius: require("_createForOfIteratorHelperLoose").radii.none, width: "100%", height: require("TwinButtons").ACTION_SHEET_DRAG_HANDLE_HEIGHT, marginBottom: -require("TwinButtons").ACTION_SHEET_DRAG_HANDLE_HEIGHT };
-obj.headerContainer = set;
-_createForOfIteratorHelperLoose = { marginBottom: -require("_createForOfIteratorHelperLoose").space.PX_8 };
-obj.headerContainerScreenReaderEnabled = _createForOfIteratorHelperLoose;
-obj.roundingView = { overflow: "hidden", display: "flex" };
-let closure_10 = _createForOfIteratorHelperLoose.createStyles(obj);
-let closure_11 = { code: "function PortalKeyboardBottomSheetTsx1(){const{animatedIndex}=this.__closure;return animatedIndex.get()>0.975;}" };
-let closure_12 = { code: "function PortalKeyboardBottomSheetTsx2(){const{isFullyExpanded}=this.__closure;return isFullyExpanded.get();}" };
-let closure_13 = { code: "function PortalKeyboardBottomSheetTsx3(isFullyExpanded,isFullExpandedPrevious){const{forceMaxHeight,runOnJS,dismissGlobalKeyboard}=this.__closure;if(isFullExpandedPrevious==null){return;}if(!isFullyExpanded&&!forceMaxHeight){runOnJS(dismissGlobalKeyboard)();}}" };
-let closure_14 = { code: "function PortalKeyboardBottomSheetTsx4(){const{interpolate,animatedIndex,cornerRadiusInputStart,cornerRadiusInputEnd,cornerRadius}=this.__closure;return{borderTopLeftRadius:interpolate(animatedIndex.get(),[cornerRadiusInputStart,cornerRadiusInputEnd],[0,cornerRadius],'clamp'),borderTopRightRadius:interpolate(animatedIndex.get(),[cornerRadiusInputStart,cornerRadiusInputEnd],[0,cornerRadius],'clamp')};}" };
-let closure_15 = { code: "function PortalKeyboardBottomSheetTsx5(){const{animatedIndex}=this.__closure;return Math.max(animatedIndex.get(),0)>0;}" };
-let closure_16 = { code: "function PortalKeyboardBottomSheetTsx6(result,previous){const{runOnJS,setAccessibilityViewIsModal}=this.__closure;if(result===previous)return;runOnJS(setAccessibilityViewIsModal)(result);}" };
+let obj = { container: { position: "absolute", top: 0, left: 0 }, background: null, headerContainer: null, headerContainerScreenReaderEnabled: null, roundingView: null };
+obj = { backgroundColor: require("Themes").colors.MOBILE_KEYBOARD_PANEL_BACKGROUND, overflow: "hidden" };
+obj[1] = obj;
+set = { borderTopLeftRadius: require("Themes").radii.none, borderTopRightRadius: require("Themes").radii.none, width: "100%", height: require("TwinButtons").ACTION_SHEET_DRAG_HANDLE_HEIGHT, marginBottom: -require("TwinButtons").ACTION_SHEET_DRAG_HANDLE_HEIGHT };
+obj[2] = set;
+createCacheKey = { marginBottom: -require("Themes").space.PX_8 };
+obj[3] = createCacheKey;
+obj[4] = { overflow: "hidden", display: "flex" };
+let closure_10 = createCacheKey.createStyles(obj);
+let closure_13 = { code: "function PortalKeyboardBottomSheetTsx1(){const{animatedIndex}=this.__closure;return animatedIndex.get()>0.975;}" };
+let closure_14 = { code: "function PortalKeyboardBottomSheetTsx2(){const{isFullyExpanded}=this.__closure;return isFullyExpanded.get();}" };
+let closure_15 = { code: "function PortalKeyboardBottomSheetTsx3(isFullyExpanded,isFullExpandedPrevious){const{forceMaxHeight,runOnJS,dismissGlobalKeyboard}=this.__closure;if(isFullExpandedPrevious==null){return;}if(!isFullyExpanded&&!forceMaxHeight){runOnJS(dismissGlobalKeyboard)();}}" };
+let closure_16 = { code: "function PortalKeyboardBottomSheetTsx4(){const{interpolate,animatedIndex,cornerRadiusInputStart,cornerRadiusInputEnd,cornerRadius}=this.__closure;return{borderTopLeftRadius:interpolate(animatedIndex.get(),[cornerRadiusInputStart,cornerRadiusInputEnd],[0,cornerRadius],'clamp'),borderTopRightRadius:interpolate(animatedIndex.get(),[cornerRadiusInputStart,cornerRadiusInputEnd],[0,cornerRadius],'clamp')};}" };
+let closure_17 = { code: "function PortalKeyboardBottomSheetTsx5(){const{animatedIndex}=this.__closure;return Math.max(animatedIndex.get(),0)>0;}" };
+let closure_18 = { code: "function PortalKeyboardBottomSheetTsx6(result,previous){const{runOnJS,setAccessibilityViewIsModal}=this.__closure;if(result===previous)return;runOnJS(setAccessibilityViewIsModal)(result);}" };
 let result = set.fileFinishedImporting("modules/keyboard/native/PortalKeyboardBottomSheet.tsx");
 
-export default importAllResult.forwardRef(function PortalKeyboardBottomSheet(animatedIndex) {
+export default importAllResult.forwardRef(function PortalKeyboardBottomSheet(animatedIndex, ref) {
   let animatedPosition;
   let animationConfigs;
   let backdropComponent;
@@ -110,7 +109,7 @@ export default importAllResult.forwardRef(function PortalKeyboardBottomSheet(ani
   if (flag3 === undefined) {
     flag3 = false;
   }
-  let ref;
+  ref = undefined;
   let c9;
   let isScreenReaderEnabled;
   let derivedValue;
@@ -120,20 +119,20 @@ export default importAllResult.forwardRef(function PortalKeyboardBottomSheet(ani
   let c15;
   let c16;
   let tmp = isScreenReaderEnabled();
+  let obj = headerStyle;
   ref = headerStyle.useRef(null);
-  let obj = animatedIndex(flag[11]);
-  const mobileVisualRefreshConfig = obj.useMobileVisualRefreshConfig({ location: "AutocompleteWrapper" });
+  let obj1 = animatedIndex(flag[11]);
+  const mobileVisualRefreshConfig = obj1.useMobileVisualRefreshConfig({ location: "AutocompleteWrapper" });
   const chatInputFloating = mobileVisualRefreshConfig.chatInputFloating;
-  obj = { forceMaxHeight, enablePanDownToClose: flag2 };
-  const tmp5 = transitionState === animatedIndex(flag[13]).TransitionStates.YEETED;
-  c9 = tmp5;
+  const tmp8 = transitionState === animatedIndex(flag[13]).TransitionStates.YEETED;
+  c9 = tmp8;
   let obj2 = animatedIndex(flag[14]);
-  const bottomSheetImperativeHandle = obj2.useBottomSheetImperativeHandle(arg1, ref);
-  let items = [ref, tmp5];
+  const bottomSheetImperativeHandle = obj2.useBottomSheetImperativeHandle(ref, ref);
+  let items = [ref, tmp8];
   const layoutEffect = headerStyle.useLayoutEffect(() => {
     if (c9) {
       const current = ref.current;
-      if (null != current) {
+      if (current != null) {
         current.forceClose();
       }
     }
@@ -142,46 +141,51 @@ export default importAllResult.forwardRef(function PortalKeyboardBottomSheet(ani
   let items1 = [rendersHandle];
   const stateFromStores = obj3.useStateFromStores(items1, () => rendersHandle.isOpen());
   if (flag3) {
-    flag3 = !tmp5;
+    flag3 = !tmp8;
   }
-  let obj4 = animatedIndex(flag[9]);
-  isScreenReaderEnabled = obj4.useIsScreenReaderEnabled();
-  let items2 = [chatInputRef, tmp5, onAnimate, onClose, flag];
-  const callback = headerStyle.useCallback((arg0, arg1, arg2) => {
+  let tmp3Result = tmp3(tmp4[9]);
+  isScreenReaderEnabled = tmp3Result.useIsScreenReaderEnabled();
+  let items2 = [chatInputRef, tmp8, onAnimate, onClose, flag];
+  const callback = obj.useCallback((arg0, arg1, arg2) => {
     if (c9) {
       if (-1 !== arg1) {
-        if (null != onClose) {
-          onClose();
+        if (onClose != null) {
+          tmp17();
         }
       }
     }
-    if (arg0 !== arg1) {
-      if (-1 !== arg1) {
-        if (null != onAnimate) {
-          onAnimate(arg0, arg1, arg2);
+    let tmp = arg0 !== arg1;
+    if (tmp) {
+      tmp = -1 !== arg1;
+    }
+    if (tmp) {
+      if (onAnimate != null) {
+        tmp3(arg0, arg1, arg2);
+      }
+      if (0 === arg0) {
+        if (arg2 !== animatedIndex(flag[16]).ANIMATION_SOURCE.KEYBOARD) {
+          const result = animatedIndex(flag[17]).triggerHapticFeedback(animatedIndex(flag[17]).HapticFeedbackTypes.IMPACT_LIGHT);
+          const obj2 = animatedIndex(flag[17]);
         }
-        if (0 === arg0) {
-          if (arg2 !== animatedIndex(flag[16]).ANIMATION_SOURCE.KEYBOARD) {
-            const result = animatedIndex(flag[17]).triggerHapticFeedback(animatedIndex(flag[17]).HapticFeedbackTypes.IMPACT_LIGHT);
-            const obj = animatedIndex(flag[17]);
-          }
-        } else if (1 === arg0) {
-          if (0 === arg1) {
-            if (!obj2.isChannelFocused()) {
-              if (flag) {
-                const current = chatInputRef.current;
-                if (null != current) {
-                  current.closeCustomKeyboard();
-                }
-              }
-            }
-            obj2 = animatedIndex(flag[18]);
+      } else {
+        let tmp6 = 1 === arg0 && 0 === arg1;
+        if (tmp6) {
+          tmp6 = !animatedIndex(flag[18]).isChannelFocused();
+          const obj = animatedIndex(flag[18]);
+        }
+        if (tmp6) {
+          tmp6 = flag;
+        }
+        if (tmp6) {
+          const current = chatInputRef.current;
+          if (current != null) {
+            current.closeCustomKeyboard();
           }
         }
       }
     }
   }, items2);
-  let obj5 = animatedIndex(flag[10]);
+  tmp3Result = tmp3(tmp4[10]);
   class U {
     constructor() {
       return animatedIndex.get() > 0.975;
@@ -189,9 +193,9 @@ export default importAllResult.forwardRef(function PortalKeyboardBottomSheet(ani
   }
   U.__closure = { animatedIndex };
   U.__workletHash = 2001839633402;
-  U.__initData = derivedValue;
-  derivedValue = obj5.useDerivedValue(U);
-  let obj6 = animatedIndex(flag[10]);
+  U.__initData = num;
+  derivedValue = tmp3Result.useDerivedValue(U);
+  const tmp7 = chatInputRef(flag[12])({ forceMaxHeight, enablePanDownToClose: flag2 });
   class W {
     constructor() {
       return U.get();
@@ -199,68 +203,65 @@ export default importAllResult.forwardRef(function PortalKeyboardBottomSheet(ani
   }
   W.__closure = { isFullyExpanded: derivedValue };
   W.__workletHash = 9531298805666;
-  W.__initData = token;
+  W.__initData = num2;
   class X {
     constructor(arg0, arg1) {
-      tmp = animatedIndex;
-      if (null != arg1) {
-        if (!tmp) {
+      if (null != ref) {
+        tmp = animatedIndex;
+        if (!animatedIndex) {
           tmp = c7;
         }
         if (!tmp) {
           tmp2 = animatedIndex;
           tmp3 = c2;
-          num = 10;
           obj = animatedIndex(c2[10]);
-          num2 = 19;
           tmp4 = obj.runOnJS(animatedIndex(c2[19]).dismissGlobalKeyboard)();
         }
       }
       return;
     }
   }
-  obj = { forceMaxHeight, runOnJS: animatedIndex(flag[10]).runOnJS, dismissGlobalKeyboard: animatedIndex(flag[19]).dismissGlobalKeyboard };
+  obj = { forceMaxHeight, runOnJS: tmp3(tmp4[10]).runOnJS, dismissGlobalKeyboard: tmp3(tmp4[19]).dismissGlobalKeyboard };
   X.__closure = obj;
   X.__workletHash = 14649856286006;
-  X.__initData = num;
-  const animatedReaction = obj6.useAnimatedReaction(W, X);
+  X.__initData = c15;
+  const animatedReaction = animatedIndex(flag[10]).useAnimatedReaction(W, X);
   chatInputRef(flag[20])(() => () => {
-    if (null != outer1_3) {
-      outer1_3();
+    if (_slicedToArray != null) {
+      tmp();
     }
   });
-  let callback1 = headerStyle.useCallback((arg0) => {
+  let items3 = [headerStyle, ref, rendersHandle, derivedValue, isScreenReaderEnabled];
+  const callback1 = obj.useCallback((arg0) => {
     const obj = {};
     const merged = Object.assign(arg0);
-    obj["pressBehavior"] = "collapse";
+    obj.pressBehavior = "collapse";
     return forceMaxHeight(animatedIndex(flag[16]).BottomSheetBackdrop, obj);
   }, []);
-  let items3 = [headerStyle, ref, rendersHandle, derivedValue, isScreenReaderEnabled];
-  const callback2 = headerStyle.useCallback(() => {
+  const callback2 = obj.useCallback(() => {
     let tmp = null;
     if (false !== rendersHandle) {
-      const obj = {
-        style: headerStyle,
-        handleCollapse() {
-            const current = outer1_8.current;
-            if (null != current) {
-              current.collapse();
-            }
-            if (outer1_10) {
-              const current2 = outer1_8.current;
-              if (null != current2) {
-                current2.forceClose();
-              }
-            }
-          },
-        isFullyExpanded: derivedValue
+      const obj = { style: null, handleCollapse: null, isFullyExpanded: null };
+      obj[0] = headerStyle;
+      obj[1] = function handleCollapse() {
+        const current = ref.current;
+        if (current != null) {
+          current.collapse();
+        }
+        if (closure_10) {
+          const current2 = ref.current;
+          if (current2 != null) {
+            current2.forceClose();
+          }
+        }
       };
-      tmp = forceMaxHeight(outer1_17, obj);
+      obj[2] = derivedValue;
+      tmp = forceMaxHeight(derivedValue, obj);
     }
     return tmp;
   }, items3);
-  let obj8 = animatedIndex(flag[21]);
-  token = obj8.useToken(chatInputRef(flag[7]).modules.mobile.MOBILE_KEYBOARD_TOP_BORDER_RADIUS);
+  const tmp3Result1 = animatedIndex(flag[10]);
+  token = animatedIndex(flag[21]).useToken(tmp6(tmp4[7]).modules.mobile.MOBILE_KEYBOARD_TOP_BORDER_RADIUS);
   num = 0;
   if (chatInputFloating) {
     num = -1;
@@ -269,152 +270,146 @@ export default importAllResult.forwardRef(function PortalKeyboardBottomSheet(ani
   if (chatInputFloating) {
     num2 = 0;
   }
-  const tmp4 = chatInputRef(flag[12])(obj);
+  const tmp3Result2 = animatedIndex(flag[21]);
   function ee() {
-    const obj = {};
+    const obj = { borderTopLeftRadius: null, borderTopRightRadius: null };
     const items = [num, num2];
     const items1 = [0, token];
-    obj.borderTopLeftRadius = animatedIndex(flag[10]).interpolate(animatedIndex.get(), items, items1, "clamp");
+    obj[0] = animatedIndex(flag[10]).interpolate(animatedIndex.get(), items, items1, "clamp");
     const obj2 = animatedIndex(flag[10]);
     const items2 = [num, num2];
     const items3 = [0, token];
-    obj.borderTopRightRadius = animatedIndex(flag[10]).interpolate(animatedIndex.get(), items2, items3, "clamp");
+    obj[1] = animatedIndex(flag[10]).interpolate(animatedIndex.get(), items2, items3, "clamp");
     return obj;
   }
-  const obj1 = { interpolate: animatedIndex(flag[10]).interpolate, animatedIndex, cornerRadiusInputStart: num, cornerRadiusInputEnd: num2, cornerRadius: token };
-  ee.__closure = obj1;
+  obj = { interpolate: tmp3(tmp4[10]).interpolate, animatedIndex, cornerRadiusInputStart: num, cornerRadiusInputEnd: num2, cornerRadius: token };
+  ee.__closure = obj;
   ee.__workletHash = 6979425892410;
-  ee.__initData = num2;
+  ee.__initData = c16;
   const animatedStyle = animatedIndex(flag[10]).useAnimatedStyle(ee);
-  let tmp18;
+  let tmp21;
   if (chatInputFloating) {
     if (!disableHeaderRoundingAnimation) {
-      tmp18 = animatedStyle;
+      tmp21 = animatedStyle;
     }
   }
-  c15 = tmp18;
-  const items4 = [tmp18];
-  const callback3 = headerStyle.useCallback((arg0) => {
+  c15 = tmp21;
+  const items4 = [tmp21];
+  const callback3 = obj.useCallback((arg0) => {
     const obj = {};
     const merged = Object.assign(arg0);
-    obj["roundingStyle"] = c15;
-    return forceMaxHeight(outer1_18, obj);
+    obj.roundingStyle = c15;
+    return forceMaxHeight(token, obj);
   }, items4);
-  const obj10 = animatedIndex(flag[10]);
+  const tmp3Result3 = animatedIndex(flag[10]);
   ({ left, right } = chatInputRef(flag[22])());
-  const tmp20 = chatInputRef(flag[22])();
+  const tmp23 = chatInputRef(flag[22])();
   ({ height, width: width2 } = chatInputRef(flag[23])({ ignoreKeyboard: true }));
-  const callback4 = headerStyle.useCallback((arg0) => {
+  const callback4 = obj.useCallback((arg0) => {
     const obj = {};
     const merged = Object.assign(arg0);
-    obj["children"] = forceMaxHeight(animatedIndex(flag[24]).PortalHost, { name: "expression-footer" });
+    obj.children = forceMaxHeight(animatedIndex(flag[24]).PortalHost, { name: "expression-footer" });
     return forceMaxHeight(animatedIndex(flag[16]).BottomSheetFooter, obj);
   }, []);
-  const tmp23 = onClose(headerStyle.useState(false), 2);
-  c16 = tmp24;
-  const tmp21 = chatInputRef(flag[23])({ ignoreKeyboard: true });
+  const tmp26 = onClose(obj.useState(false), 2);
+  c16 = tmp27;
+  const tmp24 = chatInputRef(flag[23])({ ignoreKeyboard: true });
   function ne() {
     return Math.max(animatedIndex.get(), 0) > 0;
   }
   ne.__closure = { animatedIndex };
   ne.__workletHash = 8952872079740;
-  ne.__initData = c15;
+  ne.__initData = closure_17;
   function te(arg0, arg1) {
     if (arg0 !== arg1) {
       animatedIndex(flag[10]).runOnJS(c16)(arg0);
       const obj = animatedIndex(flag[10]);
     }
   }
-  obj2 = { runOnJS: animatedIndex(flag[10]).runOnJS, setAccessibilityViewIsModal: tmp24 };
-  te.__closure = obj2;
+  obj1 = { runOnJS: tmp3(tmp4[10]).runOnJS, setAccessibilityViewIsModal: tmp27 };
+  te.__closure = obj1;
   te.__workletHash = 16051387075966;
-  te.__initData = c16;
+  te.__initData = closure_18;
   const animatedReaction1 = animatedIndex(flag[10]).useAnimatedReaction(ne, te);
-  let tmp26 = isScreenReaderEnabled;
+  let tmp29 = isScreenReaderEnabled;
   if (!isScreenReaderEnabled) {
-    tmp26 = tmp5;
+    tmp29 = tmp8;
   }
-  const obj12 = animatedIndex(flag[10]);
-  obj3 = {};
-  let tmp29 = null;
+  const tmp3Result4 = animatedIndex(flag[10]);
+  let tmp32 = null;
   if (mobileVisualRefreshConfig.enabled) {
-    tmp29 = tmp27;
+    tmp32 = tmp30;
   }
-  obj3.gradient = tmp29;
-  obj4 = {};
+  obj2 = { gradient: tmp32, children: null };
   let str;
   if (stateFromStores) {
     str = "no-hide-descendants";
   }
-  obj4.importantForAccessibility = str;
+  obj3 = { importantForAccessibility: str, style: null, pointerEvents: "box-none", children: null };
   const items5 = [tmp.container, { marginLeft: left, marginRight: right }, ];
-  obj5 = {};
-  if (null == width) {
+  if (width == null) {
     const _Number = Number;
     width = Number.MAX_SAFE_INTEGER;
   }
-  obj5.width = Math.min(width, width2 - left - right);
-  obj5.height = height;
-  items5[2] = obj5;
-  obj4.style = items5;
-  obj4.pointerEvents = "box-none";
-  obj6 = { ref, animatedIndex, animatedPosition, animationConfigs, onClose, onAnimate: callback, enableContentPanningGesture: !tmp26, enableHandlePanningGesture: !tmp26, handleComponent: callback2 };
-  tmp27 = chatInputRef(flag[25])();
-  const tmp28 = forceMaxHeight;
-  const tmp30 = ref;
-  const tmp31 = forceMaxHeight;
-  const tmp32 = chatInputRef(flag[16]);
-  let tmp33;
-  if (obj18.isAndroid()) {
+  tmp30 = chatInputRef(flag[25])();
+  const tmp33 = ref;
+  items5[2] = { width: Math.min(width, width2 - left - right), height };
+  obj3[1] = items5;
+  const obj5 = { ref, animatedIndex, animatedPosition, animationConfigs, onClose, onAnimate: callback, enableContentPanningGesture: !tmp29, enableHandlePanningGesture: !tmp29, handleComponent: callback2, renderFooter: null, backgroundComponent: null, backgroundStyle: null, backdropComponent: null, activeOffsetY: null, handleHeight: null };
+  const obj4 = { width: Math.min(width, width2 - left - right), height };
+  const tmp6Result = chatInputRef(flag[16]);
+  let tmp35;
+  if (tmp3Result5.isAndroid()) {
     if (flag3) {
-      tmp33 = callback4;
+      tmp35 = callback4;
     }
   }
-  obj6.renderFooter = tmp33;
-  obj6.backgroundComponent = callback3;
-  obj6.backgroundStyle = tmp.background;
-  if (null != backdropComponent) {
-    callback1 = backdropComponent;
+  obj5[9] = tmp35;
+  obj5[10] = callback3;
+  obj5[11] = tmp.background;
+  if (backdropComponent == null) {
+    backdropComponent = callback1;
   }
-  obj6.backdropComponent = callback1;
-  const items6 = [-10, 10];
-  obj6.activeOffsetY = items6;
+  obj5[12] = backdropComponent;
+  obj5[13] = [-10, 10];
   let num3 = 0;
   if (rendersHandle) {
-    num3 = animatedIndex(flag[8]).ACTION_SHEET_DRAG_HANDLE_HEIGHT;
+    num3 = tmp3(tmp4[8]).ACTION_SHEET_DRAG_HANDLE_HEIGHT;
   }
-  obj6.handleHeight = num3;
-  let merged = Object.assign(tmp4);
-  const obj7 = { nativeID: "portal-keyboard-sheet" };
-  const items7 = [tmp.roundingView, , ];
-  let tmp38 = !disableHeaderRoundingAnimation;
-  if (tmp38) {
-    tmp38 = animatedStyle;
+  obj5[14] = num3;
+  let merged = Object.assign(tmp7);
+  const items6 = [tmp.roundingView, , ];
+  let tmp37 = !disableHeaderRoundingAnimation;
+  if (!disableHeaderRoundingAnimation) {
+    tmp37 = animatedStyle;
   }
-  items7[1] = tmp38;
-  items7[2] = roundingViewStyle;
-  obj7.style = items7;
-  obj7.onAccessibilityEscape = function onAccessibilityEscape() {
-    const current = ref.current;
-    if (null != current) {
-      current.collapse();
-    }
-  };
-  obj7.accessibilityViewIsModal = tmp23[0];
-  obj7.children = children;
-  obj6["children"] = forceMaxHeight(animatedIndex(flag[27]).AccessibilityViewAnimated, obj7);
-  const items8 = [tmp31(tmp32, obj6), , ];
-  let tmp39 = c9;
+  items6[1] = tmp37;
+  items6[2] = roundingViewStyle;
+  obj5.children = forceMaxHeight(animatedIndex(flag[27]).AccessibilityViewAnimated, {
+    nativeID: "portal-keyboard-sheet",
+    style: items6,
+    onAccessibilityEscape() {
+      const current = ref.current;
+      if (current != null) {
+        current.collapse();
+      }
+    },
+    accessibilityViewIsModal: tmp26[0],
+    children
+  });
+  const items7 = [forceMaxHeight(tmp6Result, obj5), , ];
+  let tmp31Result = c9;
   if (c9) {
-    tmp39 = flag3;
+    tmp31Result = flag3;
   }
-  if (tmp39) {
-    obj8 = { animatedSheetIndex: animatedIndex };
-    tmp39 = forceMaxHeight(chatInputRef(flag[28]), obj8);
+  if (tmp31Result) {
+    const obj7 = { animatedSheetIndex: null };
+    obj7[0] = animatedIndex;
+    tmp31Result = tmp31(tmp6(tmp4[28]), obj7);
   }
-  items8[1] = tmp39;
-  items8[2] = forceMaxHeight(animatedIndex(flag[29]).NavScrim, {});
-  obj4.children = items8;
-  obj3.children = tmp30(chatInputRef(flag[10]).View, obj4);
-  return tmp28(animatedIndex(flag[26]).ThemeContextProvider, obj3);
+  items7[1] = tmp31Result;
+  items7[2] = forceMaxHeight(animatedIndex(flag[29]).NavScrim, {});
+  obj3[3] = items7;
+  obj2[1] = tmp33(chatInputRef(flag[10]).View, obj3);
+  return forceMaxHeight(animatedIndex(flag[26]).ThemeContextProvider, obj2);
 });

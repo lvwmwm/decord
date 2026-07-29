@@ -1,22 +1,22 @@
-// Module ID: 9100
-// Function ID: 71321
+// Module ID: 9124
+// Function ID: 9125
 // Name: DEFAULT_BADGE_SIZE
-// Dependencies: [31, 27, 33, 4165, 689, 2]
+// Dependencies: [19, 17, 21, 4189, 712, 2]
 
-// Module 9100 (DEFAULT_BADGE_SIZE)
+// Module 9124 (DEFAULT_BADGE_SIZE)
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import importAllResult from "result";
+import createCacheKey from "createCacheKey";
+import importAllResult from "noop";
 
-let obj = {};
-obj = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BRAND };
-obj.badge = obj;
-_createForOfIteratorHelperLoose = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.INTERACTIVE_TEXT_ACTIVE };
-obj.badgeClassic = _createForOfIteratorHelperLoose;
-obj.mask = { alignItems: "center", justifyContent: "center" };
-let closure_2 = _createForOfIteratorHelperLoose.createStyles(obj);
-const memoResult = require("result").memo(function Badge(size) {
+let obj = { badge: null, badgeClassic: null, mask: null };
+obj = { backgroundColor: require("Themes").colors.BACKGROUND_BRAND };
+obj[0] = obj;
+createCacheKey = { backgroundColor: require("Themes").colors.INTERACTIVE_TEXT_ACTIVE };
+obj[1] = createCacheKey;
+obj[2] = { alignItems: "center", justifyContent: "center" };
+let closure_2 = createCacheKey.createStyles(obj);
+const memoResult = require("noop").memo(function Badge(size) {
   let badgeStyle;
   let style;
   let num = size.size;
@@ -37,16 +37,17 @@ const memoResult = require("result").memo(function Badge(size) {
   const sum = num + 2 * num2;
   let tmp3;
   if (null != maskColor) {
-    let obj = { backgroundColor: maskColor, height: sum, width: sum, borderRadius: sum / 2 };
+    let obj = { backgroundColor: null, height: null, width: null, borderRadius: null };
+    obj[0] = maskColor;
+    obj[1] = sum;
+    obj[2] = sum;
+    obj[3] = sum / 2;
     tmp3 = obj;
   }
   obj = { style: items, children: tmp4(tmp5, { style: items1 }) };
   items = [tmp.mask, tmp3, style];
-  items1 = [flag ? tmp.badgeClassic : tmp.badge, , ];
-  obj = { height: num, width: num, borderRadius: num / 2 };
-  items1[1] = obj;
-  items1[2] = badgeStyle;
-  return <View height={num} width={num} borderRadius={num / 2} />;
+  items1 = [flag ? tmp.badgeClassic : tmp.badge, { height: num, width: num, borderRadius: num / 2 }, badgeStyle];
+  return <View style={items}>{tmp4(tmp5, { style: items1 })}</View>;
 });
 const result = require("jsxProd").fileFinishedImporting("modules/main_tabs_v2/native/shared_components/Badge.tsx");
 

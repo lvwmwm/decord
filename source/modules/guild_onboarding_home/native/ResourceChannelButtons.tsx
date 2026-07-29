@@ -1,87 +1,97 @@
-// Module ID: 11412
-// Function ID: 88484
+// Module ID: 11436
+// Function ID: 11437
 // Name: ResourceChannelButtons
-// Dependencies: [57, 31, 27, 33, 4165, 689, 1457, 11413, 11414, 4578, 1273, 10006, 6663, 2]
+// Dependencies: [32, 19, 17, 21, 4189, 712, 1481, 11437, 11438, 4600, 1297, 10028, 6684, 2]
 // Exports: default
 
-// Module 11412 (ResourceChannelButtons)
+// Module 11436 (ResourceChannelButtons)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
+import noop from "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
 let closure_6;
-let closure_7;
+let error;
 const require = arg1;
-({ jsx: closure_6, jsxs: closure_7 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { display: "flex", flexDirection: "row", padding: 12, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW };
-_createForOfIteratorHelperLoose.wrapper = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.buttonWrapper = { flex: 1 };
-_createForOfIteratorHelperLoose.spacer = { width: 8 };
-_createForOfIteratorHelperLoose.iconColor = { color: require("_createForOfIteratorHelperLoose").colors.WHITE };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-let obj1 = { color: require("_createForOfIteratorHelperLoose").colors.WHITE };
+({ jsx: closure_6, jsxs: error } = jsxProd);
+createCacheKey = { wrapper: null, buttonWrapper: null, spacer: null, iconColor: null };
+createCacheKey = { display: "flex", flexDirection: "row", padding: 12, backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { flex: 1 };
+createCacheKey[2] = { width: 8 };
+createCacheKey[3] = { color: require("Themes").colors.WHITE };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let obj1 = { color: require("Themes").colors.WHITE };
 const result = require("get ActivityIndicator").fileFinishedImporting("modules/guild_onboarding_home/native/ResourceChannelButtons.tsx");
 
 export default function ResourceChannelButtons(channel) {
   channel = channel.channel;
+  let navigation;
+  let first;
+  let callback;
+  let React;
   let obj = channel(first[6]);
-  const navigation = obj.useNavigation();
-  const tmp2 = _createForOfIteratorHelperLoose();
+  navigation = obj.useNavigation();
+  const tmp4 = createCacheKey();
   let obj1 = channel(first[7]);
-  const tmp3 = callback(obj1.usePreviousAndNextResourceChannel(channel.guild_id, channel.id), 2);
-  first = tmp3[0];
-  callback = tmp5;
+  const tmp5 = callback(obj1.usePreviousAndNextResourceChannel(channel.guild_id, channel.id), 2);
+  first = tmp5[0];
+  callback = tmp7;
   const items = [channel.guild_id, navigation];
   React = React.useCallback((channelId) => {
     navigation.goBack();
     const homeResourceChannel = channel(first[8]).selectHomeResourceChannel(channel.guild_id, channelId);
   }, items);
   if (null != first) {
-    obj = { style: tmp2.wrapper };
-    let tmp9 = null != first;
-    if (tmp9) {
-      obj = { style: tmp2.buttonWrapper };
-      obj1 = { variant: "secondary", text: first.title };
-      const obj2 = { color: tmp2.iconColor.color, source: navigation(first[11]) };
-      obj1.icon = callback2(channel(first[10]).Icon, obj2);
-      obj1.onPress = function onPress() {
+    obj = { style: null, children: null };
+    obj[0] = tmp4.wrapper;
+    let tmp11 = null != first;
+    if (tmp11) {
+      obj = { style: null, children: null };
+      obj[0] = tmp4.buttonWrapper;
+      obj1 = { variant: "secondary", text: null, icon: null, onPress: null, grow: true };
+      obj1[1] = first.title;
+      const obj2 = { color: null, source: null };
+      obj2[0] = tmp4.iconColor.color;
+      obj2[1] = navigation(tmp2[11]);
+      obj1[2] = callback2(tmp(tmp2[10]).Icon, obj2);
+      obj1[3] = function onPress() {
         return callback(first.channelId);
       };
-      obj1.grow = true;
-      obj.children = callback2(channel(first[9]).Button, obj1);
-      tmp9 = callback2(View, obj);
+      obj[1] = callback2(tmp(tmp2[9]).Button, obj1);
+      tmp11 = callback2(tmp10, obj);
     }
-    const items1 = [tmp9, , ];
-    let tmp15 = null != first && null != tmp5;
-    if (tmp15) {
-      const obj3 = { style: tmp2.spacer };
-      tmp15 = callback2(View, obj3);
+    const items1 = [tmp11, , ];
+    let tmp14 = null != first && null != tmp7;
+    if (tmp14) {
+      const obj3 = { style: null };
+      obj3[0] = tmp4.spacer;
+      tmp14 = callback2(tmp10, obj3);
     }
-    items1[1] = tmp15;
-    let tmp18 = null != tmp5;
-    if (tmp18) {
-      const obj4 = { style: tmp2.buttonWrapper };
-      const obj5 = { text: tmp5.title };
-      const obj6 = { color: tmp2.iconColor.color, source: navigation(first[12]) };
-      obj5.icon = callback2(channel(first[10]).Icon, obj6);
-      obj5.iconPosition = "end";
-      obj5.onPress = function onPress() {
-        return callback(tmp5.channelId);
+    items1[1] = tmp14;
+    let tmp16 = null != tmp7;
+    if (tmp16) {
+      const obj4 = { style: null, children: null };
+      obj4[0] = tmp4.buttonWrapper;
+      const obj5 = { text: null, icon: null, iconPosition: "end", onPress: null, grow: true };
+      obj5[0] = tmp7.title;
+      const obj6 = { color: null, source: null };
+      obj6[0] = tmp4.iconColor.color;
+      obj6[1] = navigation(tmp2[12]);
+      obj5[1] = callback2(tmp(tmp2[10]).Icon, obj6);
+      obj5[3] = function onPress() {
+        return callback(_undefined.channelId);
       };
-      obj5.grow = true;
-      obj4.children = callback2(channel(first[9]).Button, obj5);
-      tmp18 = callback2(View, obj4);
+      obj4[1] = callback2(tmp(tmp2[9]).Button, obj5);
+      tmp16 = callback2(tmp10, obj4);
     }
-    items1[2] = tmp18;
-    obj.children = items1;
-    let tmp7Result = closure_7(View, obj);
-    const tmp7 = closure_7;
-    const tmp8 = View;
+    items1[2] = tmp16;
+    obj[1] = items1;
+    let tmp9Result = closure_7(tmp10, obj);
+    const tmp9 = closure_7;
   } else {
-    tmp7Result = null;
+    tmp9Result = null;
   }
-  return tmp7Result;
+  return tmp9Result;
 };

@@ -1,11 +1,11 @@
-// Module ID: 11475
-// Function ID: 89042
+// Module ID: 11499
+// Function ID: 11500
 // Name: ApplicationCommandList
-// Dependencies: [31, 27, 9555, 33, 7999, 1882, 5690, 5686, 11473, 11474, 2]
+// Dependencies: [19, 17, 9579, 21, 8024, 1906, 5708, 5704, 11497, 11498, 2]
 // Exports: default
 
-// Module 11475 (ApplicationCommandList)
-import result from "result";
+// Module 11499 (ApplicationCommandList)
+import noop from "noop";
 import { FlatList } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
 
@@ -21,56 +21,56 @@ export default function ApplicationCommandList(channel) {
   channel = channel.channel;
   const onPressCommandItem = channel.onPressCommandItem;
   const onCommandsChange = channel.onCommandsChange;
+  let commands;
+  let sections;
+  let scrollDown;
   ({ style, query, ItemSeparatorComponent, getItemLayout } = channel);
   let obj = onCommandsChange(commands[4]);
-  obj = { text: query };
+  obj = { text: query, commandTypes: null };
   const items = [channel(commands[5]).ApplicationCommandType.CHAT];
-  obj.commandTypes = items;
+  obj[1] = items;
   obj = { placeholderCount: 3, limit: 7, scoreMethod: channel(commands[6]).ScoreMethod.COMMAND_OR_APPLICATION };
   query = obj.useQuery({ channel, type: "channel" }, obj, obj);
   commands = query.commands;
-  const sections = query.sections;
-  const scrollDown = query.scrollDown;
+  sections = query.sections;
+  scrollDown = query.scrollDown;
   const items1 = [sections, channel.guild_id, onPressCommandItem];
   let length;
   const callback = sections.useCallback((item) => {
     item = item.item;
     let found;
     if (item.inputType === channel(commands[7]).ApplicationCommandInputType.PLACEHOLDER) {
-      return outer1_6(onPressCommandItem(commands[8]), {});
+      return outer1_6(onPressCommandItem(tmp[8]), {});
     } else {
       found = undefined;
-      if (null != sections) {
+      if (sections != null) {
         found = sections.find((id) => id.id === item.applicationId);
       }
-      const obj = {
-        command: item,
-        section: found,
-        onPress() {
-            return found(item, found);
-          },
-        guildId: item.guild_id,
-        highlighted: 0 === item.index
+      const obj = { command: null, section: null, onPress: null, guildId: null, highlighted: null };
+      obj[0] = item;
+      obj[1] = found;
+      obj[2] = function onPress() {
+        return found(item, found);
       };
-      return outer1_6(onPressCommandItem(commands[9]), obj);
+      obj[3] = item.guild_id;
+      obj[4] = 0 === item.index;
+      return outer1_6(onPressCommandItem(tmp[9]), obj);
     }
   }, items1);
-  if (null != commands) {
+  if (commands != null) {
     length = commands.length;
   }
   const items2 = [length, onCommandsChange];
   const effect = sections.useEffect(() => {
-    if (null != onCommandsChange) {
-      let length;
-      if (null != commands) {
-        length = commands.length;
+    if (onCommandsChange != null) {
+      let num;
+      if (commands != null) {
+        num = commands.length;
       }
-      let num = 0;
-      if (null != length) {
-        num = length;
+      if (num == null) {
+        num = 0;
       }
-      onCommandsChange(num);
-      const tmp = onCommandsChange;
+      tmp(num);
     }
   }, items2);
   const items3 = [scrollDown];

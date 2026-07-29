@@ -1,38 +1,38 @@
-// Module ID: 15355
-// Function ID: 116994
+// Module ID: 15388
+// Function ID: 15389
 // Name: ICYMIHeader
-// Dependencies: [31, 27, 33, 15289, 689, 4161, 1212, 2]
+// Dependencies: [19, 17, 21, 15322, 712, 4185, 1236, 2]
 // Exports: default
 
-// Module 15355 (ICYMIHeader)
-import "result";
+// Module 15388 (ICYMIHeader)
+import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
 import createICYMIStyles from "createICYMIStyles";
 
-let closure_4;
-let closure_5;
+let c4;
+let c5;
 let closure_6;
 const require = arg1;
-({ jsx: closure_4, Fragment: closure_5, jsxs: closure_6 } = jsxProd);
+({ jsx: c4, Fragment: c5, jsxs: closure_6 } = jsxProd);
 let closure_7 = createICYMIStyles.createICYMIStyles((margin) => {
-  obj = { text: obj };
+  obj = { text: obj, separator: null };
   obj = { flexDirection: "row", justifyContent: "space-between", marginHorizontal: margin.margin };
-  obj = { height: 1, width: "100%", backgroundColor: importDefault(689).colors.BORDER_SUBTLE, marginBottom: importDefault(689).space.PX_16 };
-  obj.separator = obj;
+  obj = { height: 1, width: "100%", backgroundColor: importDefault(712).colors.BORDER_SUBTLE, marginBottom: importDefault(712).space.PX_16 };
+  obj[1] = obj;
   return obj;
 });
 const result = require("jsxProd").fileFinishedImporting("modules/icymi/native/ICYMIHeader.tsx");
 
 export default function ICYMIHeader() {
   const tmp = callback3();
-  let obj = {};
+  let obj = { children: null };
   obj = { style: tmp.separator };
   const items = [callback(View, obj), ];
-  obj = { style: tmp.text, variant: "heading-md/semibold", color: "mobile-text-heading-primary" };
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj.children = intl.string(require(1212) /* getSystemLocale */.t["jnXV/V"]);
-  items[1] = callback(require(4161) /* Text */.Text, obj);
-  obj.children = items;
+  obj = { style: tmp.text, variant: "heading-md/semibold", color: "mobile-text-heading-primary", children: null };
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj[3] = intl.string(require(1236) /* getSystemLocale */.t["jnXV/V"]);
+  items[1] = callback(require(4185) /* Text */.Text, obj);
+  obj[0] = items;
   return callback2(closure_5, obj);
 };

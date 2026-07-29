@@ -1,23 +1,23 @@
-// Module ID: 8415
-// Function ID: 67109
+// Module ID: 8439
+// Function ID: 8440
 // Name: Coachmark
-// Dependencies: [29, 57, 31, 27, 33, 4026, 4165, 689, 8410, 4583, 6637, 1324, 4574, 4161, 4578, 1212, 5153, 8212, 6636, 477, 3877, 2]
+// Dependencies: [109, 32, 19, 17, 21, 4050, 4189, 712, 8434, 4605, 6658, 1348, 4596, 4185, 4600, 1236, 5175, 8236, 6657, 500, 3901, 2]
 // Exports: CoachmarkContainer
 
-// Module 8415 (Coachmark)
+// Module 8439 (Coachmark)
 import _objectWithoutProperties from "_objectWithoutProperties";
 import _slicedToArray from "_slicedToArray";
-import result from "result";
-import get_ActivityIndicator from "get ActivityIndicator";
-import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import importDefaultResult from "module_4026";
+import set from "set";
+import get_ActivityIndicator from "TwinButtons";
+import jsxProd from "set";
+import createCacheKey from "createCacheKey";
+import importDefaultResult from "module_4050";
 
 let Pressable;
-let closure_10;
-let closure_11;
+let c10;
 let closure_12;
-let closure_7;
+let error;
+let unpackModuleId;
 const require = arg1;
 class Coachmark {
   constructor(arg0) {
@@ -30,76 +30,81 @@ class Coachmark {
     graphic = global.graphic;
     imgSource = global.imgSource;
     ({ position, onDismiss, buttonLabel, buttonVariant, onButtonPress, gradientColor, experimental_withBlurBackground, renderImgComponent } = global);
-    tmp = c14();
+    tmp = createAnimatedComponent();
     Cursor = tmp;
-    ref = result.useRef(null);
-    _objectWithoutProperties = ref;
-    tmp3 = c5(result.useState(null), 2);
-    first = tmp3[0];
-    c5 = tmp3[1];
-    tmp5 = require("useTooltipPosition")(first, surfaceMeasurements, targetMeasurements, position, -8 + num);
-    adjustmentX = tmp5.adjustmentX;
-    ({ tooltipX, tooltipY } = tmp5);
-    obj = require("module_4026");
+    ref = set.useRef(null);
+    Cursor = ref;
+    tmp3 = Cursor(set.useState(null), 2);
+    [tmp4, Cursor] = tmp3;
+    tmp5 = imgSource;
+    tmp6 = renderImgComponent;
+    tmp7 = require("useTooltipPosition")(tmp4, surfaceMeasurements, targetMeasurements, position, -8 + num);
+    adjustmentX = tmp7.adjustmentX;
+    tmp8 = graphic;
+    ({ tooltipX, tooltipY } = tmp7);
+    obj = require("module_4050");
     sharedValue = require("_objectWithoutProperties");
-    result = sharedValue;
+    set = sharedValue;
     items = [];
     items[0] = sharedValue;
     items1 = [];
     items1[0] = sharedValue;
-    callback = result.useCallback(() => {
+    callback = set.useCallback(() => {
       const result = sharedValue.set(1);
     }, items);
-    callback1 = result.useCallback(() => {
+    callback1 = set.useCallback(() => {
       const result = sharedValue.set(0);
     }, items1);
-    obj2 = require("useProfileThemedButtonStyles");
+    obj2 = require("styleProperties");
     buttonPressAnimationProps = obj2.useButtonPressAnimationProps(sharedValue);
-    tmp10 = _objectWithoutProperties(buttonPressAnimationProps, Cursor);
+    tmp13 = Cursor(buttonPressAnimationProps, Cursor);
     items2 = [, , , ];
     items2[0] = graphic;
     items2[1] = imgSource;
     items2[2] = renderImgComponent;
     items2[3] = tmp;
-    memo = result.useMemo(() => {
+    memo = set.useMemo(() => {
       if (null != graphic) {
-        let obj = {};
+        let obj = { style: null, children: null };
         const items = [tmp.bottomMargin];
-        obj.style = items;
+        obj[0] = items;
         obj = {};
-        const merged = Object.assign(graphic);
-        const obj1 = {};
-        const aspectRatio = graphic.aspectRatio;
-        let str = "1/1";
-        if (null != aspectRatio) {
-          str = aspectRatio;
+        const merged = Object.assign(tmp);
+        let str = tmp.aspectRatio;
+        if (str == null) {
+          str = "1/1";
         }
-        obj1.height = outer1_15[str];
-        obj1.width = "auto";
-        obj["style"] = obj1;
-        obj.children = outer1_10(graphic(renderImgComponent[10]).Graphic, obj);
+        const obj1 = { height: null, width: "auto" };
+        obj1[0] = outer1_15[str];
+        obj.style = obj1;
+        obj[1] = outer1_10(graphic(renderImgComponent[10]).Graphic, obj);
         return outer1_10(outer1_7, obj);
       } else {
         let tmp2 = null;
         if (null != renderImgComponent) {
-          tmp2 = renderImgComponent();
+          tmp2 = tmp21();
         }
         if (null != imgSource) {
-          obj = { source: imgSource, style: tmp.image };
+          obj = { source: null, style: null };
+          obj[0] = tmp3;
+          obj[1] = tmp.image;
           tmp2 = outer1_10(outer1_9, obj);
         }
-        let tmp8 = null;
+        let tmp7 = null;
         if (null != tmp2) {
-          const obj2 = { style: tmp.bottomMargin, children: tmp2 };
-          tmp8 = outer1_10(outer1_7, obj2);
+          const obj2 = { style: null, children: null };
+          obj2[0] = tmp.bottomMargin;
+          obj2[1] = tmp2;
+          tmp7 = outer1_10(outer1_7, obj2);
         }
-        return tmp8;
+        return tmp7;
       }
     }, items2);
-    tmp12 = require("useIsMobileVisualRefreshExperimentEnabled")("Coachmark");
-    tmp13 = jsxs;
-    obj = {};
-    obj1 = {
+    tmp15 = require("useIsMobileVisualRefreshExperimentEnabled")("Coachmark");
+    tmp16 = jsxs;
+    tmp17 = Fragment;
+    tmp18 = View;
+    obj = {
       ref,
       accessibilityRole: "alert",
       style: tmp.center,
@@ -108,213 +113,169 @@ class Coachmark {
             let obj = graphic(renderImgComponent[12]);
             obj = { ref, delay: 100 };
             const result = obj.setAccessibilityFocus(obj);
-          }
+          },
+      children: null
     };
     items3 = [, ];
     items3[0] = memo;
-    obj2 = {};
     textGap = undefined;
-    tmp14 = Fragment;
-    tmp15 = View;
-    tmp16 = jsxs;
-    tmp17 = View;
-    if (tmp12) {
+    if (tmp15) {
       textGap = tmp.textGap;
     }
-    obj2.style = textGap;
-    tmp19 = jsx;
-    obj3 = {};
+    obj1 = { style: textGap, children: null };
+    tmp20 = jsx;
     items4 = [, ];
     items4[0] = tmp.text;
     textOnlyPadding = undefined;
     if (null == graphic) {
       textOnlyPadding = tmp.textOnlyPadding;
     }
+    obj2 = { style: items4, variant: null, color: "mobile-text-heading-primary", children: null };
     items4[1] = textOnlyPadding;
-    obj3.style = items4;
     str = "heading-md/bold";
-    if (tmp12) {
+    if (tmp15) {
       str = "text-md/semibold";
     }
-    obj3.variant = str;
-    obj3.color = "mobile-text-heading-primary";
-    obj3.children = title;
+    obj2[1] = str;
+    obj2[3] = title;
     items5 = [, ];
-    items5[0] = tmp19(require("Text").Text, obj3);
-    tmp21 = jsx;
-    obj4 = { style: tmp.text, variant: "text-sm/medium" };
+    items5[0] = tmp20(require("Text").Text, obj2);
+    obj3 = { style: tmp.text, variant: "text-sm/medium", color: null, children: null };
     str2 = "text-default";
-    if (tmp12) {
+    if (tmp15) {
       str2 = "text-subtle";
     }
-    obj4.color = str2;
-    obj4.children = description;
-    items5[1] = tmp21(require("Text").Text, obj4);
-    obj2.children = items5;
-    items3[1] = tmp16(tmp17, obj2);
-    obj1.children = items3;
+    obj3[2] = str2;
+    obj3[3] = description;
+    items5[1] = tmp20(require("Text").Text, obj3);
+    obj1[1] = items5;
+    items3[1] = tmp16(tmp18, obj1);
+    obj[5] = items3;
     items6 = [, , ];
-    items6[0] = tmp13(tmp15, obj1);
+    items6[0] = tmp16(tmp18, obj);
     tmp22 = null;
     if (null != buttonLabel) {
       tmp22 = null;
       if (null != onButtonPress) {
-        obj5 = {};
-        tmp25 = jsx;
-        tmp26 = View;
-        obj6 = {};
-        obj6.style = tmp.buttonSpacing;
-        tmp23 = jsxs;
-        tmp24 = Fragment;
+        obj4 = { style: null };
+        obj4[0] = tmp.buttonSpacing;
         items7 = [, ];
-        items7[0] = jsx(View, obj6);
-        tmp28 = graphic;
-        tmp29 = renderImgComponent;
-        num2 = 14;
-        tmp27 = jsx;
+        items7[0] = tmp20(tmp18, obj4);
         if (experimental_withBlurBackground) {
-          obj7 = { variant: "secondary-overlay", size: "lg", text: null, onPress: null, grow: true };
-          obj7.text = buttonLabel;
-          obj7.onPress = onButtonPress;
-          obj8 = obj7;
+          obj5 = { variant: "secondary-overlay", size: "lg", text: null, onPress: null, grow: true };
+          obj5[2] = buttonLabel;
+          obj5[3] = onButtonPress;
+          obj6 = obj5;
         } else {
-          obj8 = {};
-          str3 = "secondary";
-          if (null != buttonVariant) {
-            str3 = buttonVariant;
+          if (buttonVariant == null) {
+            buttonVariant = "secondary";
           }
-          obj8.variant = str3;
-          str4 = "lg";
-          if (tmp12) {
-            str4 = "sm";
+          obj6 = { variant: null, size: null, text: null, onPress: null, grow: true };
+          obj6[0] = buttonVariant;
+          str3 = "lg";
+          if (tmp15) {
+            str3 = "sm";
           }
-          obj8.size = str4;
-          obj8.text = buttonLabel;
-          obj8.onPress = onButtonPress;
-          obj8.grow = true;
+          obj6[1] = str3;
+          obj6[2] = buttonLabel;
+          obj6[3] = onButtonPress;
         }
-        items7[1] = tmp27(require("Button").Button, obj8);
-        obj5.children = items7;
-        tmp23Result = tmp23(tmp24, obj5);
+        obj7 = { children: null };
+        items7[1] = tmp20(require("Button").Button, obj6);
+        obj7[0] = items7;
+        tmp16Result = tmp16(tmp17, obj7);
       }
     }
     items6[1] = tmp22;
-    obj9 = { accessibilityRole: "button" };
-    tmp31 = jsx;
-    tmp32 = Pressable;
+    obj8 = { accessibilityRole: "button", accessibilityLabel: null, style: null, onPress: null, onPressIn: null, onPressOut: null, children: null };
+    tmp24 = Pressable;
     intl = require("getSystemLocale").intl;
-    obj9.accessibilityLabel = intl.string(require("getSystemLocale").t.cpT0Cq);
-    obj9.style = tmp.closeButton;
-    obj9.onPress = onDismiss;
-    obj9.onPressIn = callback;
-    obj9.onPressOut = callback1;
-    tmp33 = jsx;
-    if (tmp12) {
+    obj8[1] = intl.string(require("getSystemLocale").t.cpT0Cq);
+    obj8[2] = tmp.closeButton;
+    obj8[3] = onDismiss;
+    obj8[4] = callback;
+    obj8[5] = callback1;
+    if (tmp15) {
+      obj9 = { size: "xs", color: null };
+      obj9[1] = require("Themes").colors.ICON_STRONG;
+      obj10 = obj9;
+    } else {
       obj10 = {};
-      str5 = "xs";
-      obj10.size = "xs";
-      tmp34 = imgSource;
-      tmp35 = renderImgComponent;
-      num3 = 7;
-      obj10.color = require("_createForOfIteratorHelperLoose").colors.ICON_STRONG;
-      obj11 = obj10;
-    } else {
-      obj11 = {};
     }
-    obj9.children = tmp33(require("XSmallIcon").XSmallIcon, obj11);
-    items6[2] = tmp31(tmp32, obj9);
-    obj.children = items6;
-    tmp13Result = tmp13(tmp14, obj);
+    obj11 = { children: null };
+    obj8[6] = tmp20(require("XSmallIcon").XSmallIcon, obj10);
+    items6[2] = tmp20(tmp24, obj8);
+    obj11[0] = items6;
+    tmp16Result1 = tmp16(tmp17, obj11);
     if (experimental_withBlurBackground) {
-      tmp45 = jsx;
-      tmp46 = graphic;
-      tmp47 = renderImgComponent;
-      num6 = 17;
-      obj12 = {};
-      obj12.style = tmp.bodyContainer;
-      str6 = "dark";
-      obj12.blurTheme = "dark";
-      obj12.pressed = sharedValue;
-      obj12.children = tmp13Result;
-      tmp37Result = jsx(require("TwinButtons").BackgroundBlurView, obj12);
+      obj12 = { style: null, blurTheme: "dark", pressed: null, children: null };
+      obj12[0] = tmp.bodyContainer;
+      obj12[2] = sharedValue;
+      obj12[3] = tmp16Result1;
+      tmp20Result = tmp20(require("TwinButtons").BackgroundBlurView, obj12);
     } else {
-      obj13 = {};
+      obj13 = { style: null, children: null };
       items8 = [, ];
       ({ bodyContainer: arr9[0], bodyBgColor: arr9[1] } = tmp);
-      obj13.style = items8;
-      tmp39 = null;
-      tmp37 = jsxs;
-      tmp38 = View;
-      if (tmp12) {
-        tmp39 = null;
+      obj13[0] = items8;
+      tmp20Result1 = null;
+      if (tmp15) {
+        tmp20Result1 = null;
         if (null != gradientColor) {
-          tmp40 = jsx;
-          tmp41 = graphic;
-          tmp42 = renderImgComponent;
-          num4 = 18;
-          obj14 = {};
-          obj14.style = tmp.gradient;
-          obj14.color = gradientColor;
-          tmp43 = imgSource;
-          num5 = 7;
-          obj14.backgroundColor = require("_createForOfIteratorHelperLoose").colors.MOBILE_COACHMARK_BACKGROUND_DEFAULT;
-          tmp39 = jsx(require("ExpressiveGradient").ExpressiveGradient, obj14);
+          obj14 = { style: null, color: null, backgroundColor: null };
+          obj14[0] = tmp.gradient;
+          obj14[1] = gradientColor;
+          obj14[2] = require("Themes").colors.MOBILE_COACHMARK_BACKGROUND_DEFAULT;
+          tmp20Result1 = tmp20(require("ExpressiveGradient").ExpressiveGradient, obj14);
         }
       }
       items9 = [, ];
-      items9[0] = tmp39;
-      items9[1] = tmp13Result;
-      obj13.children = items9;
-      tmp37Result = tmp37(tmp38, obj13);
+      items9[0] = tmp20Result1;
+      items9[1] = tmp16Result1;
+      obj13[1] = items9;
+      tmp20Result = tmp16(tmp18, obj13);
     }
     obj15 = {
       onLayout(nativeEvent) {
             nativeEvent = nativeEvent.nativeEvent;
             callback({ width: nativeEvent.layout.width, height: nativeEvent.layout.height });
-          }
+          },
+      style: null,
+      children: null
     };
     items10 = [, , ];
     items10[0] = tmp.container;
-    tmp48 = jsxs;
-    tmp49 = View;
-    obj19 = require("set");
+    tmp8Result = require("set");
     shadow = undefined;
-    if (obj19.isIOS()) {
+    if (tmp8Result.isIOS()) {
       shadow = tmp.shadow;
     }
     items10[1] = shadow;
-    obj16 = {};
-    num7 = 0;
-    if (null != first) {
-      num7 = 1;
+    num2 = 0;
+    if (null != tmp4) {
+      num2 = 1;
     }
-    obj16.opacity = num7;
-    obj16.top = tooltipY;
-    obj16.left = tooltipX;
-    items10[2] = obj16;
-    obj15.style = items10;
-    tmp51 = "bottom" === position;
-    if (tmp51) {
-      tmp52 = jsx;
-      tmp53 = Cursor;
-      obj17 = {};
-      obj17.position = "bottom";
-      obj17.adjustmentX = adjustmentX;
-      tmp51 = jsx(Cursor, obj17);
+    items10[2] = { opacity: num2, top: tooltipY, left: tooltipX };
+    obj15[1] = items10;
+    tmp20Result2 = "bottom" === position;
+    if (tmp20Result2) {
+      tmp30 = Cursor;
+      obj16 = { position: "bottom", adjustmentX: null };
+      obj16[1] = adjustmentX;
+      tmp20Result2 = tmp20(Cursor, obj16);
     }
     items11 = [, , ];
-    items11[0] = tmp51;
-    obj18 = {};
-    tmp54 = jsx;
-    tmp55 = createAnimatedComponent;
-    merged = Object.assign(tmp10);
-    obj18["onAccessibilityEscape"] = onDismiss;
-    obj18["accessible"] = false;
-    obj18["onPress"] = onDismiss;
+    items11[0] = tmp20Result2;
+    obj17 = {};
+    tmp31 = createAnimatedComponent;
+    merged = Object.assign(tmp13);
+    obj17.onAccessibilityEscape = onDismiss;
+    obj17.accessible = false;
+    obj17.onPress = onDismiss;
     items12 = [, ];
     items12[0] = tmp.body;
-    obj23 = require("set");
-    if (obj23.isAndroid()) {
+    tmp8Result1 = require("set");
+    if (tmp8Result1.isAndroid()) {
       items13 = [, ];
       items13[0] = tmp.shadow;
       items13[1] = global.enterExitAnimatedStyles;
@@ -322,23 +283,20 @@ class Coachmark {
     } else {
       items14 = [];
     }
-    arraySpreadResult = HermesBuiltin.arraySpread(items14, 1);
-    items12[arraySpreadResult] = buttonPressAnimationProps.style;
-    obj18["style"] = items12;
-    obj18["children"] = tmp37Result;
-    items11[1] = tmp54(tmp55, obj18);
-    tmp58 = "top" === position;
-    if (tmp58) {
-      tmp59 = jsx;
-      tmp60 = Cursor;
-      obj19 = {};
-      obj19.position = "top";
-      obj19.adjustmentX = adjustmentX;
-      tmp58 = jsx(Cursor, obj19);
+    items12[HermesBuiltin.arraySpread(items14, 1)] = buttonPressAnimationProps.style;
+    obj17.style = items12;
+    obj17.children = tmp20Result;
+    items11[1] = tmp20(tmp31, obj17);
+    tmp20Result3 = "top" === position;
+    if (tmp20Result3) {
+      tmp34 = Cursor;
+      obj18 = { position: "top", adjustmentX: null };
+      obj18[1] = adjustmentX;
+      tmp20Result3 = tmp20(Cursor, obj18);
     }
-    items11[2] = tmp58;
-    obj15.children = items11;
-    return tmp48(tmp49, obj15);
+    items11[2] = tmp20Result3;
+    obj15[2] = items11;
+    return tmp16(tmp18, obj15);
   }
 }
 function Cursor(arg0) {
@@ -350,70 +308,63 @@ function Cursor(arg0) {
   if ("top" === position) {
     str = "column-reverse";
   }
-  let obj = {};
-  if ("top" === position) {
-    obj.marginTop = -6;
-    let tmp3 = obj;
-  } else {
-    obj.marginBottom = -6;
-    tmp3 = obj;
-  }
-  obj = { style: items };
-  items = [tmp.cursorContainer, tmp3, ];
-  obj = { flexDirection: str, left: -adjustmentX };
-  items[2] = obj;
-  const items1 = [callback2(closure_7, { style: tmp.cursorHead }), callback2(closure_7, { style: tmp.cursorSpine })];
-  obj.children = items1;
+  let obj = { style: items, children: null };
+  items = [tmp.cursorContainer, "top" === position ? { marginTop: -6 } : { marginBottom: -6 }, { flexDirection: str, left: -adjustmentX }];
+  obj = { style: tmp.cursorHead };
+  const items1 = [callback2(closure_7, obj), ];
+  obj = { style: tmp.cursorSpine };
+  items1[1] = callback2(closure_7, obj);
+  obj[1] = items1;
   return callback3(closure_7, obj);
 }
 let closure_3 = ["style"];
-({ View: closure_7, Pressable } = get_ActivityIndicator);
+({ View: error, Pressable } = get_ActivityIndicator);
 const Image = get_ActivityIndicator.Image;
-({ jsx: closure_10, jsxs: closure_11, Fragment: closure_12 } = jsxProd);
-let closure_13 = require("module_4026").createAnimatedComponent(Pressable);
-let obj = { container: { position: "absolute", alignItems: "center" } };
+({ jsx: c10, jsxs: unpackModuleId, Fragment: closure_12 } = jsxProd);
+let closure_13 = require("module_4050").createAnimatedComponent(Pressable);
+let obj = { container: { position: "absolute", alignItems: "center" }, shadow: null, body: null, textGap: null, textOnlyPadding: null, bodyBgColor: null, gradient: null, bodyContainer: null, center: null, buttonSpacing: null, text: null, cursorContainer: null, cursorHead: null, cursorSpine: null, image: null, bottomMargin: null, closeButton: null };
 obj = {};
-let merged = Object.assign(require("_createForOfIteratorHelperLoose").shadows.SHADOW_BUTTON_OVERLAY);
-obj.shadow = obj;
-_createForOfIteratorHelperLoose = { width: require("_createForOfIteratorHelperLoose").modules.mobile.COACHMARK_BODY_WIDTH, borderRadius: require("_createForOfIteratorHelperLoose").radii.lg, overflow: "hidden", zIndex: 1 };
-obj.body = _createForOfIteratorHelperLoose;
-obj.textGap = { gap: 4 };
-obj.textOnlyPadding = { paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_24 };
-let obj2 = { paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_24 };
-obj.bodyBgColor = { borderWidth: 1, borderColor: require("_createForOfIteratorHelperLoose").colors.MOBILE_COACHMARK_BORDER_DEFAULT, backgroundColor: require("_createForOfIteratorHelperLoose").colors.MOBILE_COACHMARK_BACKGROUND_DEFAULT, borderRadius: require("_createForOfIteratorHelperLoose").radii.lg };
-let obj3 = { borderWidth: 1, borderColor: require("_createForOfIteratorHelperLoose").colors.MOBILE_COACHMARK_BORDER_DEFAULT, backgroundColor: require("_createForOfIteratorHelperLoose").colors.MOBILE_COACHMARK_BACKGROUND_DEFAULT, borderRadius: require("_createForOfIteratorHelperLoose").radii.lg };
-obj.gradient = { borderRadius: require("_createForOfIteratorHelperLoose").radii.lg, overflow: "hidden" };
-let obj5 = { padding: require("_createForOfIteratorHelperLoose").space.PX_16, alignItems: "center", justifyContent: "center" };
-obj.bodyContainer = obj5;
-obj.center = { alignItems: "center", justifyContent: "center" };
-let obj4 = { borderRadius: require("_createForOfIteratorHelperLoose").radii.lg, overflow: "hidden" };
-obj.buttonSpacing = { height: require("_createForOfIteratorHelperLoose").modules.mobile.COACHMARK_BUTTON_SPACING };
-obj.text = { maxWidth: 200, textAlign: "center" };
-obj.cursorContainer = { alignItems: "center", zIndex: 0 };
-let obj7 = { height: 8, width: 8, borderRadius: require("_createForOfIteratorHelperLoose").radii.xs, borderWidth: 2, backgroundColor: "transparent", borderColor: require("_createForOfIteratorHelperLoose").colors.INTERACTIVE_TEXT_ACTIVE };
-obj.cursorHead = obj7;
-let obj8 = { width: 2, height: 16, backgroundColor: require("_createForOfIteratorHelperLoose").colors.INTERACTIVE_TEXT_ACTIVE };
-obj.cursorSpine = obj8;
-obj.image = { height: 40, width: 40 };
-let obj6 = { height: require("_createForOfIteratorHelperLoose").modules.mobile.COACHMARK_BUTTON_SPACING };
-obj.bottomMargin = { marginBottom: require("_createForOfIteratorHelperLoose").modules.mobile.COACHMARK_BUTTON_SPACING };
-let obj9 = { marginBottom: require("_createForOfIteratorHelperLoose").modules.mobile.COACHMARK_BUTTON_SPACING };
-obj.closeButton = { position: "absolute", top: require("_createForOfIteratorHelperLoose").modules.mobile.COACHMARK_BUTTON_SPACING, right: require("_createForOfIteratorHelperLoose").modules.mobile.COACHMARK_BUTTON_SPACING };
-let closure_14 = _createForOfIteratorHelperLoose.createStyles(obj);
+let merged = Object.assign(require("Themes").shadows.SHADOW_BUTTON_OVERLAY);
+obj[1] = obj;
+createCacheKey = { width: require("Themes").modules.mobile.COACHMARK_BODY_WIDTH, borderRadius: require("Themes").radii.lg, overflow: "hidden", zIndex: 1 };
+obj[2] = createCacheKey;
+obj[3] = { gap: 4 };
+obj[4] = { paddingHorizontal: require("Themes").space.PX_24 };
+let obj2 = { paddingHorizontal: require("Themes").space.PX_24 };
+obj[5] = { borderWidth: 1, borderColor: require("Themes").colors.MOBILE_COACHMARK_BORDER_DEFAULT, backgroundColor: require("Themes").colors.MOBILE_COACHMARK_BACKGROUND_DEFAULT, borderRadius: require("Themes").radii.lg };
+let obj3 = { borderWidth: 1, borderColor: require("Themes").colors.MOBILE_COACHMARK_BORDER_DEFAULT, backgroundColor: require("Themes").colors.MOBILE_COACHMARK_BACKGROUND_DEFAULT, borderRadius: require("Themes").radii.lg };
+obj[6] = { borderRadius: require("Themes").radii.lg, overflow: "hidden" };
+let obj4 = { borderRadius: require("Themes").radii.lg, overflow: "hidden" };
+obj[7] = { padding: require("Themes").space.PX_16, alignItems: "center", justifyContent: "center" };
+obj[8] = { alignItems: "center", justifyContent: "center" };
+let obj5 = { padding: require("Themes").space.PX_16, alignItems: "center", justifyContent: "center" };
+obj[9] = { height: require("Themes").modules.mobile.COACHMARK_BUTTON_SPACING };
+obj[10] = { maxWidth: 200, textAlign: "center" };
+obj[11] = { alignItems: "center", zIndex: 0 };
+let obj6 = { height: require("Themes").modules.mobile.COACHMARK_BUTTON_SPACING };
+obj[12] = { height: 8, width: 8, borderRadius: require("Themes").radii.xs, borderWidth: 2, backgroundColor: "transparent", borderColor: require("Themes").colors.INTERACTIVE_TEXT_ACTIVE };
+let obj7 = { height: 8, width: 8, borderRadius: require("Themes").radii.xs, borderWidth: 2, backgroundColor: "transparent", borderColor: require("Themes").colors.INTERACTIVE_TEXT_ACTIVE };
+obj[13] = { width: 2, height: 16, backgroundColor: require("Themes").colors.INTERACTIVE_TEXT_ACTIVE };
+obj[14] = { height: 40, width: 40 };
+let obj8 = { width: 2, height: 16, backgroundColor: require("Themes").colors.INTERACTIVE_TEXT_ACTIVE };
+obj[15] = { marginBottom: require("Themes").modules.mobile.COACHMARK_BUTTON_SPACING };
+let obj9 = { marginBottom: require("Themes").modules.mobile.COACHMARK_BUTTON_SPACING };
+obj[16] = { position: "absolute", top: require("Themes").modules.mobile.COACHMARK_BUTTON_SPACING, right: require("Themes").modules.mobile.COACHMARK_BUTTON_SPACING };
+let closure_14 = createCacheKey.createStyles(obj);
 let closure_15 = { "21/9": 90, "16/9": 90, "6/4": 60, "2/1": 40, "1/1": 40 };
-let obj10 = { position: "absolute", top: require("_createForOfIteratorHelperLoose").modules.mobile.COACHMARK_BUTTON_SPACING, right: require("_createForOfIteratorHelperLoose").modules.mobile.COACHMARK_BUTTON_SPACING };
-let result = require("result").fileFinishedImporting("design/components/Coachmark/native/Coachmark.native.tsx");
+let obj10 = { position: "absolute", top: require("Themes").modules.mobile.COACHMARK_BUTTON_SPACING, right: require("Themes").modules.mobile.COACHMARK_BUTTON_SPACING };
+let result = require("noop").fileFinishedImporting("design/components/Coachmark/native/Coachmark.native.tsx");
 
 export { Coachmark };
 export const CoachmarkContainer = function CoachmarkContainer(experimental_withBlurBackground) {
-  let obj = require(3877) /* ManaContext */;
+  let obj = require(3901) /* ManaContext */;
   let str = "dark";
   if (!experimental_withBlurBackground.experimental_withBlurBackground) {
     str = obj.useThemeContext().theme;
   }
-  obj = { theme: str };
+  obj = { theme: str, children: null };
   obj = {};
   const merged = Object.assign(experimental_withBlurBackground);
-  obj.children = callback2(Coachmark, obj);
-  return callback2(require(3877) /* ManaContext */.ThemeContextProvider, obj);
+  obj[1] = callback2(Coachmark, obj);
+  return callback2(require(3901) /* ManaContext */.ThemeContextProvider, obj);
 };

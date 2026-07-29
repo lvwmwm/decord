@@ -1,11 +1,11 @@
-// Module ID: 12598
-// Function ID: 97414
+// Module ID: 12620
+// Function ID: 12621
 // Name: useGuildEligibleForGuildProducts
-// Dependencies: [1838, 653, 566, 2]
+// Dependencies: [1862, 676, 589, 2]
 // Exports: isGuildEligibleForGuildProducts, useGuildEligibleForGuildProducts
 
-// Module 12598 (useGuildEligibleForGuildProducts)
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+// Module 12620 (useGuildEligibleForGuildProducts)
+import createGuildRecordFromRust from "createGuildRecordFromRust";
 import { GuildFeatures } from "ME";
 
 const require = arg1;
@@ -13,22 +13,23 @@ const result = require("initialize").fileFinishedImporting("modules/guild_produc
 
 export const useGuildEligibleForGuildProducts = function useGuildEligibleForGuildProducts(id) {
   const _require = id;
-  const items = [_createForOfIteratorHelperLoose];
+  const items = [createGuildRecordFromRust];
   const items1 = [id];
-  return _require(566).useStateFromStores(items, () => {
+  return _require(589).useStateFromStores(items, () => {
     if (null == closure_0) {
       return false;
     } else {
-      const guild = outer1_2.getGuild(closure_0);
+      const guild = outer1_2.getGuild(tmp);
       let tmp4 = null != guild;
       if (tmp4) {
         const features = guild.features;
         let hasItem = features.has(outer1_3.COMMUNITY);
         if (!hasItem) {
           const features2 = guild.features;
-          hasItem = features2.has(outer1_3.GUILD_PRODUCTS);
+          hasItem = features2.has(tmp5.GUILD_PRODUCTS);
         }
         tmp4 = hasItem;
+        tmp5 = outer1_3;
       }
       return tmp4;
     }
@@ -45,9 +46,10 @@ export const isGuildEligibleForGuildProducts = function isGuildEligibleForGuildP
       let hasItem = features.has(GuildFeatures.COMMUNITY);
       if (!hasItem) {
         const features2 = guild.features;
-        hasItem = features2.has(GuildFeatures.GUILD_PRODUCTS);
+        hasItem = features2.has(tmp4.GUILD_PRODUCTS);
       }
       tmp3 = hasItem;
+      tmp4 = GuildFeatures;
     }
     return tmp3;
   }

@@ -1,36 +1,283 @@
-// Module ID: 16288
-// Function ID: 126172
-// Name: _isNativeReflectConstruct
-// Dependencies: [5, 7, 6, 15, 17, 18, 1850, 3813, 3817, 5831, 1852, 1873, 4486, 5832, 5112, 2]
+// Module ID: 16323
+// Function ID: 16324
+// Name: prototype
+// Dependencies: [5, 1874, 3837, 3841, 5849, 1876, 5134, 1897, 4509, 5850, 2]
 
-// Module 16288 (_isNativeReflectConstruct)
-import _inherits from "_inherits";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_4 from "_isNativeReflectConstruct";
-import set from "set";
-import _getPrototypeOf from "_getPrototypeOf";
-import closure_7 from "_inherits";
-import closure_8 from "_isNativeReflectConstruct";
-import closure_9 from "_isNativeReflectConstruct";
-import closure_10 from "_isNativeReflectConstruct";
-import closure_11 from "_isNativeReflectConstruct";
+// Module 16323 (prototype)
+import closure_2 from "GuildFeatures";
+import mergeGuildAvatar from "mergeGuildAvatar";
+import handlePaymentSourceCreateEnd from "handlePaymentSourceCreateEnd";
+import reset from "reset";
+import addEntitlement from "addEntitlement";
 import GuildFeatures from "GuildFeatures";
-import tmp3 from "AutomaticLifecycleManager";
+import "initialize";
 
-let closure_12;
-let closure_13;
-const require = arg1;
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
-  }
-  const result = _isNativeReflectConstruct();
+let error;
+let metroImportAll;
+let require = arg1;
+({ PREMIUM_SUBSCRIPTION_APPLICATION: error, PremiumTypes: metroImportAll } = GuildFeatures);
+let prototype = function SubscriptionManager() {
+  const applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
+  let require = applyArgumentsResult;
+  applyArgumentsResult.actions = {
+    POST_CONNECTION_OPEN() {
+      const result = applyArgumentsResult.maybeFetchSubscriptions();
+      const result1 = applyArgumentsResult.maybeFetchCountryCode();
+      const result2 = applyArgumentsResult.maybeFetchMostRecentSubscription();
+    }
+  };
+  applyArgumentsResult.maybeFetchSubscriptions = callback(function*() {
+    if (currentUser === 2) {
+      currentUser = 3;
+      HermesBuiltin.throwTypeError();
+    } else if (tmp4 === 3) {
+      if (arg0 === 1) {
+        throw arg1;
+      } else if (arg0 === 2) {
+        let obj = { value: null, done: true };
+        obj[0] = arg1;
+        return obj;
+      } else {
+        return { value: "HermesInternal", done: null };
+      }
+    } else {
+      try {
+        currentUser = 2;
+        if (0 === c2) {
+          if (arg0 === 1) {
+            currentUser = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            currentUser = 3;
+            obj = { value: null, done: true };
+            obj[0] = arg1;
+            return obj;
+          } else {
+            let closure_1 = tmp5;
+            let paymentSourceId = tmp2;
+            paymentSourceId = undefined;
+            currentUser = currentUser.getCurrentUser();
+            if (obj9.isPremium(currentUser)) {
+              let isSubscriptionFetching = outer1_5.hasFetchedSubscriptions();
+              if (!isSubscriptionFetching) {
+                isSubscriptionFetching = outer1_4.isSubscriptionFetching;
+              }
+              if (!isSubscriptionFetching) {
+                let obj2 = outer1_0(outer1_1[8]);
+                c2 = 1;
+                currentUser = 1;
+                const obj1 = { value: null, done: false };
+                obj1[0] = obj2.fetchSubscriptions();
+                return obj1;
+              }
+            }
+            currentUser = 3;
+            return { value: "HermesInternal", done: null };
+          }
+        } else if (1 === tmp5) {
+          if (arg0 === 1) {
+            currentUser = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            currentUser = 3;
+            obj2 = { value: null, done: true };
+            obj2[0] = arg1;
+            return obj2;
+          }
+        } else if (arg0 === 1) {
+          currentUser = 3;
+          throw arg1;
+        } else if (arg0 === 2) {
+          currentUser = 3;
+          obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
+        }
+        paymentSourceId = outer1_5.getPremiumSubscription();
+        paymentSourceId = undefined;
+        if (paymentSourceId != null) {
+          paymentSourceId = paymentSourceId.paymentSourceId;
+        }
+        let hasItem = null != paymentSourceId;
+        if (!hasItem) {
+          const applicationIdsFetched = outer1_6.applicationIdsFetched;
+          hasItem = applicationIdsFetched.has(outer1_7);
+        }
+        if (!hasItem) {
+          c2 = 2;
+          currentUser = 1;
+          const obj3 = { value: null, done: false };
+          obj3[0] = outer1_0(outer1_1[9]).fetchUserEntitlementsForApplication(outer1_7);
+          return obj3;
+        }
+      } catch (tmp22) {
+        currentUser = tmp;
+        throw tmp22;
+      }
+    }
+  });
+  applyArgumentsResult.maybeFetchMostRecentSubscription = function maybeFetchMostRecentSubscription() {
+    currentUser = currentUser.getCurrentUser();
+    let premiumType;
+    if (currentUser != null) {
+      premiumType = currentUser.premiumType;
+    }
+    if (premiumType == null) {
+      premiumType = null;
+    }
+    const obj2 = applyArgumentsResult(table[7]);
+    const tmp = applyArgumentsResult;
+    const tmp2 = table;
+    let hasHadPremiumResult = null != currentUser;
+    isFetchingMostRecentSubscription = isFetchingMostRecentSubscription.getIsFetchingMostRecentSubscription();
+    if (hasHadPremiumResult) {
+      hasHadPremiumResult = isPremiumAtMostResult;
+    }
+    if (hasHadPremiumResult) {
+      hasHadPremiumResult = currentUser.hasHadPremium();
+    }
+    if (hasHadPremiumResult) {
+      hasHadPremiumResult = !isFetchingMostRecentSubscription;
+    }
+    if (hasHadPremiumResult) {
+      const mostRecentSubscription = tmp(tmp2[8]).fetchMostRecentSubscription();
+      const tmpResult = tmp(tmp2[8]);
+    }
+  };
+  require = applyArgumentsResult;
+  applyArgumentsResult.maybeFetchCountryCode = callback(function*() {
+    if (v0 === 2) {
+      v0 = 3;
+      HermesBuiltin.throwTypeError();
+    } else if (tmp3 === 3) {
+      if (arg0 === 1) {
+        throw arg1;
+      } else if (arg0 === 2) {
+        let obj = { value: null, done: true };
+        obj[0] = arg1;
+        return obj;
+      } else {
+        return { value: "HermesInternal", done: null };
+      }
+    } else {
+      try {
+        v0 = 2;
+        if (0 === table) {
+          if (arg0 === 1) {
+            v0 = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            v0 = 3;
+            obj = { value: null, done: true };
+            obj[0] = arg1;
+            return obj;
+          } else {
+            const currentUser = outer1_3.getCurrentUser();
+            let isPremiumResult = v0(table[7]).isPremium(currentUser);
+            if (isPremiumResult) {
+              isPremiumResult = !outer1_4.ipCountryCodeLoaded;
+            }
+            if (isPremiumResult) {
+              table = 1;
+              v0 = 1;
+              const obj1 = { value: null, done: false };
+              obj1[0] = v0.fetchCountryCode();
+              return obj1;
+            }
+            const obj5 = v0(table[7]);
+          }
+        } else if (arg0 === 1) {
+          v0 = 3;
+          throw arg1;
+        } else if (arg0 === 2) {
+          v0 = 3;
+          obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
+        }
+        v0 = 3;
+        return { value: "HermesInternal", done: null };
+      } catch (tmp8) {
+        v0 = tmp;
+        throw tmp8;
+      }
+    }
+  });
+  applyArgumentsResult.fetchCountryCode = callback(function*() {
+    if (c2 === 2) {
+      c2 = 3;
+      HermesBuiltin.throwTypeError();
+    } else if (tmp3 === 3) {
+      if (arg0 === 1) {
+        throw arg1;
+      } else if (arg0 === 2) {
+        let obj = { value: null, done: true };
+        obj[0] = arg1;
+        return obj;
+      } else {
+        return { value: "HermesInternal", done: null };
+      }
+    } else {
+      try {
+        c2 = 2;
+        if (0 === dependencyMap) {
+          if (arg0 === 1) {
+            c2 = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            c2 = 3;
+            obj = { value: null, done: true };
+            obj[0] = arg1;
+            return obj;
+          } else {
+            let closure_0 = tmp4;
+            dependencyMap = 1;
+            c2 = 1;
+            let obj1 = { value: null, done: false };
+            obj1[0] = outer1_0(4509).fetchIpCountryCode();
+            return obj1;
+          }
+        } else {
+          if (1 === tmp4) {
+            if (arg0 === 1) {
+              c2 = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              c2 = 3;
+              const obj2 = { value: null, done: true };
+              obj2[0] = arg1;
+              return obj2;
+            } else if (null != outer1_4.ipCountryCode) {
+              obj1 = outer1_0(4509);
+              dependencyMap = 2;
+              c2 = 1;
+              const obj3 = { value: null, done: false };
+              obj3[0] = obj1.fetchPaymentSources();
+              return obj3;
+            }
+          } else if (arg0 === 1) {
+            c2 = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            c2 = 3;
+            obj = { value: null, done: true };
+            obj[0] = arg1;
+            return obj;
+          }
+          c2 = 3;
+          return { value: "HermesInternal", done: null };
+        }
+      } catch (tmp13) {
+        c2 = tmp;
+        throw tmp13;
+      }
+    }
+  });
+  return applyArgumentsResult;
+}.prototype;
+class prototype extends tmp3 {
 }
-({ PREMIUM_SUBSCRIPTION_APPLICATION: closure_12, PremiumTypes: closure_13 } = GuildFeatures);
-tmp3 = new tmp3();
-let result = require("_classCallCheck").fileFinishedImporting("modules/premium/SubscriptionManager.tsx");
+prototype = new prototype();
+let result = require("handlePaymentSourceCreateEnd").fileFinishedImporting("modules/premium/SubscriptionManager.tsx");
 
-export default tmp3;
+export default prototype;

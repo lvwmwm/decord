@@ -1,11 +1,11 @@
-// Module ID: 16184
-// Function ID: 125258
+// Module ID: 16219
+// Function ID: 16220
 // Name: ActionRowLayoutComponent
-// Dependencies: [31, 27, 33, 2]
+// Dependencies: [19, 17, 21, 2]
 // Exports: default
 
-// Module 16184 (ActionRowLayoutComponent)
-import "result";
+// Module 16219 (ActionRowLayoutComponent)
+import "noop";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
 
@@ -17,8 +17,9 @@ export default function ActionRowLayoutComponent(components) {
   if (null != components) {
     tmp2 = null;
     if (0 !== components.length) {
-      const obj = { children: tmp(components) };
-      tmp2 = <View>{tmp(components)}</View>;
+      const obj = { children: null };
+      obj[0] = tmp(components);
+      tmp2 = <View>{null}</View>;
     }
   }
   return tmp2;

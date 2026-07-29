@@ -1,34 +1,40 @@
-// Module ID: 10510
-// Function ID: 81367
+// Module ID: 10534
+// Function ID: 10535
 // Name: useIsPrivateChannelWithEnabledActivities
-// Dependencies: [1348, 624, 2]
+// Dependencies: [1372, 647, 2]
 // Exports: default, isPrivateChannelWithEnabledActivities
 
-// Module 10510 (useIsPrivateChannelWithEnabledActivities)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 10534 (useIsPrivateChannelWithEnabledActivities)
+import ensureGuildLoaded from "ensureGuildLoaded";
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/activities/utils/useIsPrivateChannelWithEnabledActivities.tsx");
 
 export default function useIsPrivateChannelWithEnabledActivities(arg0) {
   const _require = arg0;
-  let isPrivateResult;
-  const items = [_isNativeReflectConstruct];
-  const stateFromStores = _require(624).useStateFromStores(items, () => outer1_2.getChannel(closure_0));
-  if (null != stateFromStores) {
-    isPrivateResult = stateFromStores.isPrivate();
+  const items = [ensureGuildLoaded];
+  const stateFromStores = _require(647).useStateFromStores(items, () => outer1_2.getChannel(closure_0));
+  let flag;
+  if (stateFromStores != null) {
+    flag = stateFromStores.isPrivate();
   }
-  return null != isPrivateResult && isPrivateResult;
+  if (flag == null) {
+    flag = false;
+  }
+  return flag;
 };
-export const isPrivateChannelWithEnabledActivities = function isPrivateChannelWithEnabledActivities(channelId) {
-  if (null == channelId) {
+export const isPrivateChannelWithEnabledActivities = function isPrivateChannelWithEnabledActivities(arg0) {
+  if (null == arg0) {
     return false;
   } else {
-    channel = channel.getChannel(channelId);
-    let isPrivateResult;
-    if (null != channel) {
-      isPrivateResult = channel.isPrivate();
+    channel = channel.getChannel(arg0);
+    let flag;
+    if (channel != null) {
+      flag = channel.isPrivate();
     }
-    return null != isPrivateResult && isPrivateResult;
+    if (flag == null) {
+      flag = false;
+    }
+    return flag;
   }
 };

@@ -1,9 +1,9 @@
-// Module ID: 5850
-// Function ID: 51267
+// Module ID: 5868
+// Function ID: 5869
 // Name: isStable
-// Dependencies: [1554, 477, 2]
+// Dependencies: [1578, 500, 2]
 
-// Module 5850 (isStable)
+// Module 5868 (isStable)
 import set from "set";
 import set from "set";
 
@@ -15,19 +15,16 @@ if (set) {
 if (set) {
   set = -1 === ReleaseChannel.indexOf("beta");
 }
-let tmp3 = "stable" === ReleaseChannel;
-let tmp4 = -1 !== ReleaseChannel.indexOf("debug");
-if (!tmp4) {
-  tmp4 = -1 !== ReleaseChannel.indexOf("developer");
+let tmp3 = -1 !== ReleaseChannel.indexOf("debug");
+if (!tmp3) {
+  tmp3 = -1 !== ReleaseChannel.indexOf("developer");
 }
-let tmp5 = !tmp4;
-if (!tmp4) {
-  if (!tmp3) {
-    tmp3 = set;
-  }
-  tmp5 = tmp3;
+let tmp4 = !tmp3;
+if (!tmp3) {
+  tmp4 = "stable" === ReleaseChannel || set;
+  const tmp5 = "stable" === ReleaseChannel || set;
 }
 const result = set.fileFinishedImporting("utils/ReleaseChannelUtils.native.tsx");
 
-export const isStable = tmp5;
+export const isStable = tmp4;
 export const CurrentReleaseChannel = ReleaseChannel;

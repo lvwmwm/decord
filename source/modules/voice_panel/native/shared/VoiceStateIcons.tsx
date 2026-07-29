@@ -1,58 +1,53 @@
-// Module ID: 8837
-// Function ID: 69794
+// Module ID: 8861
+// Function ID: 8862
 // Name: VideoDisabledSvgIcon
-// Dependencies: [31, 27, 33, 4165, 689, 8838, 8839, 8841, 8843, 8845, 1327, 1273, 8507, 8847, 8848, 2]
+// Dependencies: [19, 17, 21, 4189, 712, 8862, 8863, 8865, 8867, 8869, 1351, 1297, 8531, 8871, 8872, 2]
 
-// Module 8837 (VideoDisabledSvgIcon)
-import importAllResult from "result";
+// Module 8861 (VideoDisabledSvgIcon)
+import importAllResult from "noop";
 import { StyleSheet } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_4;
-let closure_5;
+let c4;
+let c5;
 const require = arg1;
 function VideoDisabledSvgIcon(size) {
   let MEDIUM = size.size;
   if (MEDIUM === undefined) {
-    MEDIUM = require(1273) /* Button */.IconSizes.MEDIUM;
+    MEDIUM = require(1297) /* Button */.IconSizes.MEDIUM;
   }
-  let obj = Object.create(null);
-  obj.size = 0;
-  obj.style = 0;
-  const merged = Object.assign(size, obj);
-  const tmp5 = callback3();
-  obj = require(1273) /* Button */;
+  const merged = Object.assign(size, Object.create(null));
+  const tmp4 = callback3();
+  let obj = require(1297) /* Button */;
   const iconStyle = obj.getIconStyle(MEDIUM);
   const flattenResult = StyleSheet.flatten(size.style);
   let tintColor;
-  if (null != flattenResult) {
+  if (flattenResult != null) {
     tintColor = flattenResult.tintColor;
   }
-  if (null == tintColor) {
-    tintColor = tmp5.defaultTint.tintColor;
+  if (tintColor == null) {
+    tintColor = tmp4.defaultTint.tintColor;
   }
   obj = {};
   const merged1 = Object.assign(merged);
   const items = [iconStyle, flattenResult];
-  obj["style"] = items;
-  obj["viewBox"] = "0 0 24 24";
-  const obj1 = { d: "M8.48485 19H13C15.2091 19 17 17.2091 17 15L19.563 17.0504C20.5451 17.8361 22 17.1368 22 15.8791V8.12094C22 7.35968 21.467 6.80301 20.8285 6.65636L8.48485 19Z", fill: tintColor };
-  const items1 = [callback(require(8507) /* inlineStyles */.Path, obj1), , ];
-  const obj2 = { d: "M14.9873 5.52783C14.4019 5.192 13.7233 5 13 5H6C3.79086 5 2 6.79086 2 9V15C2 15.9811 2.35325 16.8798 2.93949 17.5757L14.9873 5.52783Z", fill: tintColor };
-  items1[1] = callback(require(8507) /* inlineStyles */.Path, obj2);
-  items1[2] = callback(require(8507) /* inlineStyles */.Path, { d: "M21.2785 2.70712C20.888 2.31659 20.2549 2.31659 19.8643 2.70711L2.70711 19.8643C2.31658 20.2549 2.31658 20.888 2.70711 21.2785L2.72146 21.2929C3.11199 21.6834 3.74515 21.6834 4.13567 21.2929L21.2929 4.13568C21.6834 3.74515 21.6834 3.11199 21.2929 2.72147L21.2785 2.70712Z", fill: tmp5.redTint.tintColor });
-  obj["children"] = items1;
-  return callback2(importDefault(8507), obj);
+  obj.style = items;
+  obj.viewBox = "0 0 24 24";
+  const items1 = [callback(require(8531) /* inlineStyles */.Path, { d: "M8.48485 19H13C15.2091 19 17 17.2091 17 15L19.563 17.0504C20.5451 17.8361 22 17.1368 22 15.8791V8.12094C22 7.35968 21.467 6.80301 20.8285 6.65636L8.48485 19Z", fill: tintColor }), callback(require(8531) /* inlineStyles */.Path, { d: "M14.9873 5.52783C14.4019 5.192 13.7233 5 13 5H6C3.79086 5 2 6.79086 2 9V15C2 15.9811 2.35325 16.8798 2.93949 17.5757L14.9873 5.52783Z", fill: tintColor }), ];
+  obj = { d: "M21.2785 2.70712C20.888 2.31659 20.2549 2.31659 19.8643 2.70711L2.70711 19.8643C2.31658 20.2549 2.31658 20.888 2.70711 21.2785L2.72146 21.2929C3.11199 21.6834 3.74515 21.6834 4.13567 21.2929L21.2929 4.13568C21.6834 3.74515 21.6834 3.11199 21.2929 2.72147L21.2785 2.70712Z", fill: tmp4.redTint.tintColor };
+  items1[2] = callback(require(8531) /* inlineStyles */.Path, obj);
+  obj.children = items1;
+  return callback2(importDefault(8531), obj);
 }
-({ jsx: closure_4, jsxs: closure_5 } = jsxProd);
-let obj = {};
-obj = { tintColor: require("_createForOfIteratorHelperLoose").colors.ICON_FEEDBACK_CRITICAL };
-obj.redTint = obj;
-_createForOfIteratorHelperLoose = { tintColor: require("_createForOfIteratorHelperLoose").colors.INTERACTIVE_TEXT_DEFAULT };
-obj.defaultTint = _createForOfIteratorHelperLoose;
-obj.noTint = { tintColor: undefined };
-let closure_6 = _createForOfIteratorHelperLoose.createStyles(obj);
+({ jsx: c4, jsxs: c5 } = jsxProd);
+let obj = { redTint: null, defaultTint: null, noTint: null };
+obj = { tintColor: require("Themes").colors.ICON_FEEDBACK_CRITICAL };
+obj[0] = obj;
+createCacheKey = { tintColor: require("Themes").colors.INTERACTIVE_TEXT_DEFAULT };
+obj[1] = createCacheKey;
+obj[2] = { tintColor: "r" };
+let closure_6 = createCacheKey.createStyles(obj);
 const memoResult = importAllResult.memo((arg0) => {
   let alwaysWhite;
   let state;
@@ -62,77 +57,68 @@ const memoResult = importAllResult.memo((arg0) => {
     alwaysWhite = false;
   }
   const tmp = callback3();
-  if (require(8838) /* isStableVoiceStateEqual */.MuteDeafenIconState.DEAFENED_SERVER === state) {
-    let obj = {};
+  if (require(8862) /* isStableVoiceStateEqual */.MuteDeafenIconState.DEAFENED_SERVER === state) {
     const items = [style, ];
     let redTint = null;
     if (!alwaysWhite) {
       redTint = tmp.redTint;
     }
+    let obj = { style: null, size: "xs" };
     items[1] = redTint;
-    obj.style = items;
-    obj.size = "xs";
-    return callback(require(8839) /* HeadphonesDenyIcon */.HeadphonesDenyIcon, obj);
-  } else if (require(8838) /* isStableVoiceStateEqual */.MuteDeafenIconState.DEAFENED === state) {
-    obj = {};
+    obj[0] = items;
+    return callback(tmp2(8863).HeadphonesDenyIcon, obj);
+  } else if (tmp2(8862).MuteDeafenIconState.DEAFENED === state) {
+    obj = { style: null, size: "xs" };
     const items1 = [style];
-    obj.style = items1;
-    obj.size = "xs";
-    return callback(require(8841) /* HeadphonesSlashIcon */.HeadphonesSlashIcon, obj);
-  } else if (require(8838) /* isStableVoiceStateEqual */.MuteDeafenIconState.MUTED_SERVER === state) {
-    const obj1 = {};
+    obj[0] = items1;
+    return callback(tmp2(8865).HeadphonesSlashIcon, obj);
+  } else if (tmp2(8862).MuteDeafenIconState.MUTED_SERVER === state) {
     const items2 = [style, ];
     let redTint1 = null;
     if (!alwaysWhite) {
       redTint1 = tmp.redTint;
     }
+    const obj1 = { style: null, size: "xs" };
     items2[1] = redTint1;
-    obj1.style = items2;
-    obj1.size = "xs";
-    return callback(require(8843) /* MicrophoneDenyIcon */.MicrophoneDenyIcon, obj1);
-  } else if (require(8838) /* isStableVoiceStateEqual */.MuteDeafenIconState.MUTED_LOCAL === state) {
-    const obj2 = {};
+    obj1[0] = items2;
+    return callback(tmp2(8867).MicrophoneDenyIcon, obj1);
+  } else if (tmp2(8862).MuteDeafenIconState.MUTED_LOCAL === state) {
+    const obj2 = { style: null, size: "xs" };
     const items3 = [style];
-    obj2.style = items3;
-    obj2.size = "xs";
-    return callback(require(8843) /* MicrophoneDenyIcon */.MicrophoneDenyIcon, obj2);
-  } else if (require(8838) /* isStableVoiceStateEqual */.MuteDeafenIconState.MUTED === state) {
-    const obj3 = {};
+    obj2[0] = items3;
+    return callback(tmp2(8867).MicrophoneDenyIcon, obj2);
+  } else if (tmp2(8862).MuteDeafenIconState.MUTED === state) {
+    const obj3 = { style: null, size: "xs" };
     const items4 = [style];
-    obj3.style = items4;
-    obj3.size = "xs";
-    return callback(require(8845) /* MicrophoneSlashIcon */.MicrophoneSlashIcon, obj3);
+    obj3[0] = items4;
+    return callback(tmp2(8869).MicrophoneSlashIcon, obj3);
   } else {
-    obj = require(1327) /* isDiscordFrontendDevelopment */;
-    obj.assertNever(state);
+    tmp2(1351).assertNever(state);
   }
 });
 const memoResult1 = importAllResult.memo((state) => {
   state = state.state;
-  let obj = Object.create(null);
-  obj.state = 0;
-  const merged = Object.assign(state, obj);
-  if (require(8838) /* isStableVoiceStateEqual */.VideoIconState.VIDEO_DISABLED_LOCAL_AUTO === state) {
-    obj = {};
+  const merged = Object.assign(state, Object.create(null));
+  if (require(8862) /* isStableVoiceStateEqual */.VideoIconState.VIDEO_DISABLED_LOCAL_AUTO === state) {
+    let obj = {};
     const merged1 = Object.assign(merged);
-    obj["source"] = importDefault(8847);
-    const items = [merged.style, tmp3.noTint];
-    obj["style"] = items;
-    return callback(require(1273) /* Button */.Icon, obj);
-  } else if (require(8838) /* isStableVoiceStateEqual */.VideoIconState.VIDEO_DISABLED_LOCAL === state) {
-    const obj1 = {};
+    obj.source = importDefault(8871);
+    const items = [merged.style, tmp2.noTint];
+    obj.style = items;
+    return callback(tmp3(1297).Icon, obj);
+  } else if (tmp3(8862).VideoIconState.VIDEO_DISABLED_LOCAL === state) {
+    obj = {};
     const merged2 = Object.assign(merged);
-    return callback(VideoDisabledSvgIcon, obj1);
-  } else if (require(8838) /* isStableVoiceStateEqual */.VideoIconState.VIDEO_ACTIVE === state) {
-    const obj2 = {};
+    return callback(VideoDisabledSvgIcon, obj);
+  } else if (tmp3(8862).VideoIconState.VIDEO_ACTIVE === state) {
+    const obj1 = {};
     const merged3 = Object.assign(merged);
-    obj2["source"] = importDefault(8848);
-    return callback(require(1273) /* Button */.Icon, obj2);
+    obj1.source = importDefault(8872);
+    return callback(tmp3(1297).Icon, obj1);
   } else {
-    obj = require(1327) /* isDiscordFrontendDevelopment */;
-    obj.assertNever(state);
+    tmp3(1351).assertNever(state);
   }
-  tmp3 = callback3();
+  tmp2 = callback3();
 });
 const result = require("jsxProd").fileFinishedImporting("modules/voice_panel/native/shared/VoiceStateIcons.tsx");
 

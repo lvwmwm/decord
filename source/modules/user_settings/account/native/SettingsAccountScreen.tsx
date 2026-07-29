@@ -1,77 +1,78 @@
-// Module ID: 13729
-// Function ID: 105273
+// Module ID: 13750
+// Function ID: 13751
 // Name: PasswordlessUpsell
-// Dependencies: [57, 31, 27, 13730, 7733, 11046, 653, 13731, 33, 4165, 689, 1456, 5200, 5119, 13732, 4161, 1212, 4578, 4372, 13733, 1935, 566, 13755, 9175, 5627, 5536, 10099, 13756, 13657, 13759, 6309, 8200, 675, 8731, 8729, 2]
+// Dependencies: [32, 19, 17, 13751, 7756, 11070, 676, 13752, 21, 4189, 712, 1480, 5222, 5141, 13753, 4185, 1236, 4600, 4395, 13754, 1959, 589, 13776, 9199, 5645, 5554, 10120, 13777, 13678, 13780, 6330, 8224, 698, 8755, 8753, 2]
 
-// Module 13729 (PasswordlessUpsell)
-import _slicedToArray from "_slicedToArray";
-import importAllResult from "useSegmentedControlState";
-import { View } from "RestrictedAccountRedirect";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 13750 (PasswordlessUpsell)
+import expandEventProperties from "expandEventProperties";
+import importAllResult from "UserSettingsWebAuthn";
+import { View } from "Button";
+import hasFetchedCredentials from "hasFetchedCredentials";
 import { MobileSetting } from "MobileSetting";
 import { AccountSettingsTabs } from "AccountSettingsTabs";
 import { AnalyticEvents } from "ME";
 import { WebAuthnScreens } from "WebAuthnScreens";
-import jsxProd from "SegmentedControl";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import jsxProd from "initialize";
+import createCacheKey from "createCacheKey";
 
-let closure_11;
 let closure_12;
-let closure_13;
+let map1;
+let unpackModuleId;
 const require = arg1;
 function PasswordlessUpsell() {
   const tmp = callback4();
-  let obj = _require(1456);
+  let obj = _require(1480);
   _require = obj.useNavigation();
-  obj = { style: tmp.upsellPasswordless };
-  obj = { border: "none", shadow: "none" };
-  const obj1 = { style: { flexDirection: "row", gap: 8 } };
-  const obj2 = { style: { width: 70, height: 70 } };
-  const obj3 = { source: _require(13732), resizeMode: "contain", style: tmp.upsellImagePasswordless };
-  obj2.children = callback2(importDefault(5119), obj3);
+  obj = { style: tmp.upsellPasswordless, children: null };
+  obj = { border: "none", shadow: "none", children: null };
+  const obj1 = { style: { flexDirection: "row", gap: 8 }, children: null };
+  const obj2 = { style: { width: 70, height: 70 }, children: null };
+  const obj3 = { source: null, resizeMode: "contain", style: null };
+  obj3[0] = _require(13753);
+  obj3[2] = tmp.upsellImagePasswordless;
+  obj2[1] = callback2(importDefault(5141), obj3);
   const items = [callback2(View, obj2), ];
-  const obj4 = { style: { flex: 1 } };
-  const obj5 = { style: { flexShrink: 1, width: "90%", gap: 8 } };
-  const obj6 = { variant: "heading-lg/medium", color: "mobile-text-heading-primary" };
-  const intl = _require(1212).intl;
-  obj6.children = intl.string(_require(1212).t["+Svv46"]);
-  const items1 = [callback2(_require(4161).Heading, obj6), , ];
-  const obj7 = { variant: "text-md/normal", color: "text-muted" };
-  const intl2 = _require(1212).intl;
-  obj7.children = intl2.string(_require(1212).t.S0g2K9);
-  items1[1] = callback2(_require(4161).Text, obj7);
-  const obj8 = { style: { flexDirection: "row" } };
-  const obj9 = {};
-  const intl3 = _require(1212).intl;
-  obj9.text = intl3.string(_require(1212).t.piGf5c);
-  obj9.onPress = function onPress() {
+  const obj4 = { style: { flex: 1 }, children: null };
+  const obj5 = { style: { flexShrink: 1, width: "90%", gap: 8 }, children: null };
+  const obj6 = { variant: "heading-lg/medium", color: "mobile-text-heading-primary", children: null };
+  const intl = _require(1236).intl;
+  obj6[2] = intl.string(_require(1236).t["+Svv46"]);
+  const items1 = [callback2(_require(4185).Heading, obj6), , ];
+  const obj7 = { variant: "text-md/normal", color: "text-muted", children: null };
+  const intl2 = _require(1236).intl;
+  obj7[2] = intl2.string(_require(1236).t.S0g2K9);
+  items1[1] = callback2(_require(4185).Text, obj7);
+  const obj8 = { style: { flexDirection: "row" }, children: null };
+  const obj9 = { text: null, onPress: null, size: "sm" };
+  const intl3 = _require(1236).intl;
+  obj9[0] = intl3.string(_require(1236).t.piGf5c);
+  obj9[1] = function onPress() {
     let obj = outer1_1(outer1_2[18]);
     obj = { navigation: callback, initialRouteName: outer1_10.REGISTER, showNav: true };
     obj.pushLazy(callback(outer1_2[20])(outer1_2[19], outer1_2.paths), obj);
   };
-  obj9.size = "sm";
-  const items2 = [callback2(_require(4578).Button, obj9), callback2(View, {})];
-  obj8.children = items2;
+  const items2 = [callback2(_require(4600).Button, obj9), callback2(View, {})];
+  obj8[1] = items2;
   items1[2] = callback3(View, obj8);
-  obj5.children = items1;
-  obj4.children = callback3(View, obj5);
+  obj5[1] = items1;
+  obj4[1] = callback3(View, obj5);
   items[1] = callback2(View, obj4);
-  obj1.children = items;
-  obj.children = callback3(View, obj1);
-  obj.children = callback2(_require(5200).Card, obj);
+  obj1[1] = items;
+  obj[2] = callback3(View, obj1);
+  obj[1] = callback2(_require(5222).Card, obj);
   return callback2(View, obj);
 }
 function AccountTwoFALabel() {
   let obj = first(isUserVerified[21]);
-  let items = [_isNativeReflectConstruct];
-  let tmp = callback(obj.useStateFromStoresObject(items, () => {
-    const items = [outer1_6.hasCredentials, outer1_6.hasFetchedCredentials()];
+  let items = [hasFetchedCredentials];
+  const tmp3 = callback(obj.useStateFromStoresObject(items, () => {
+    const items = [hasFetchedCredentials.hasCredentials, hasFetchedCredentials.hasFetchedCredentials()];
     return items;
   }), 2);
-  first = tmp[0];
-  const importDefault = tmp3;
+  first = tmp3[0];
+  const importDefault = tmp5;
   isUserVerified = first(isUserVerified[22]).useIsUserVerified();
-  const items1 = [tmp[1], first, isUserVerified];
+  const items1 = [tmp3[1], first, isUserVerified];
   const memo = importAllResult.useMemo(() => {
     let tmp = first(isUserVerified[23]).hasWebAuthn && isUserVerified && closure_1;
     if (tmp) {
@@ -79,116 +80,119 @@ function AccountTwoFALabel() {
     }
     return tmp;
   }, items1);
-  const items2 = [tmp[1]];
+  const items2 = [tmp3[1]];
   const effect = importAllResult.useEffect(() => {
     if (!closure_1) {
       const webAuthnCredentials = first(isUserVerified[24]).fetchWebAuthnCredentials();
       const obj = first(isUserVerified[24]);
     }
   }, items2);
-  obj = {};
-  let tmp9 = memo;
+  let tmp11 = memo;
   if (memo) {
-    tmp9 = callback2(PasswordlessUpsell, {});
+    tmp11 = callback2(PasswordlessUpsell, {});
   }
-  const items3 = [tmp9, ];
-  obj = {};
-  const intl = first(isUserVerified[16]).intl;
-  obj.title = intl.string(first(isUserVerified[16]).t.fuTmEJ);
+  obj = { children: null };
+  const items3 = [tmp11, ];
+  obj = { title: null };
+  const intl = tmp(tmp2[16]).intl;
+  obj[0] = intl.string(first(isUserVerified[16]).t.fuTmEJ);
   items3[1] = callback2(first(isUserVerified[25]).TableRowGroupTitle, obj);
-  obj.children = items3;
+  obj[0] = items3;
   return closure_12(closure_13, obj);
 }
 function AccountSecurityPage() {
   const node = importAllResult.useMemo(() => {
-    let obj = outer1_0(outer1_2[26]);
-    obj = {};
-    obj = {};
-    const intl = outer1_0(outer1_2[16]).intl;
-    obj.label = intl.string(outer1_0(outer1_2[16]).t.e262Nn);
-    const items = [outer1_7.ACCOUNT_USERNAME, outer1_7.ACCOUNT_DISPLAY_NAME, outer1_7.ACCOUNT_EMAIL, outer1_7.ACCOUNT_PHONE, outer1_7.ACCOUNT_AGE_GROUP_ADULT, outer1_7.ACCOUNT_AGE_GROUP_NON_ADULT, outer1_7.ACCOUNT_AGE_GROUP_ASSIGNED_ADULT];
-    obj.settings = items;
+    let obj = callback(10120);
+    obj = { sections: null, ListHeaderComponent: null };
+    obj = { label: null, settings: null };
+    const intl = callback(1236).intl;
+    obj[0] = intl.string(callback(1236).t.e262Nn);
+    const items = [, , , , , , ];
+    ({ ACCOUNT_USERNAME: arr[0], ACCOUNT_DISPLAY_NAME: arr[1], ACCOUNT_EMAIL: arr[2], ACCOUNT_PHONE: arr[3], ACCOUNT_AGE_GROUP_ADULT: arr[4], ACCOUNT_AGE_GROUP_NON_ADULT: arr[5], ACCOUNT_AGE_GROUP_ASSIGNED_ADULT: arr[6] } = closure_7);
+    obj[1] = items;
     const items1 = [obj, , ];
-    const items2 = [outer1_7.ACCOUNT_CHANGE_PASSWORD, outer1_7.ACCOUNT_WEB_AUTHN_VIEW, outer1_7.ACCOUNT_ENABLE_2FA, outer1_7.ACCOUNT_VIEW_BACKUP_CODES, outer1_7.ACCOUNT_REMOVE_2FA, outer1_7.ACCOUNT_SMS_BACKUP];
-    items1[1] = { label: outer1_11(outer1_16, {}), settings: items2 };
-    const obj2 = {};
-    const intl2 = outer1_0(outer1_2[16]).intl;
-    obj2.label = intl2.string(outer1_0(outer1_2[16]).t["5V0AkP"]);
-    const items3 = [outer1_7.ACCOUNT_DISABLE, outer1_7.ACCOUNT_DELETE];
-    obj2.settings = items3;
+    const items2 = [, , , , , ];
+    ({ ACCOUNT_CHANGE_PASSWORD: arr3[0], ACCOUNT_WEB_AUTHN_VIEW: arr3[1], ACCOUNT_ENABLE_2FA: arr3[2], ACCOUNT_VIEW_BACKUP_CODES: arr3[3], ACCOUNT_REMOVE_2FA: arr3[4], ACCOUNT_SMS_BACKUP: arr3[5] } = closure_7);
+    items1[1] = { label: callback3(closure_16, {}), settings: items2 };
+    const obj2 = { label: null, settings: null };
+    const intl2 = callback(1236).intl;
+    obj2[0] = intl2.string(callback(1236).t["5V0AkP"]);
+    const items3 = [, ];
+    ({ ACCOUNT_DISABLE: arr4[0], ACCOUNT_DELETE: arr4[1] } = closure_7);
+    obj2[1] = items3;
     items1[2] = obj2;
-    obj.sections = items1.filter(Boolean);
-    obj.ListHeaderComponent = outer1_1(outer1_2[27]);
+    obj[0] = items1.filter(Boolean);
+    obj[1] = callback2(13777);
     return obj.createList(obj);
   }, []);
-  return callback2(importDefault(13657), { node });
+  return callback2(importDefault(13678), { node });
 }
 function AccountStandingPage() {
-  return callback2(require(13759) /* AutomatedUnderageAppealStatus */.default, { visible: true });
+  return callback2(require(13780) /* AutomatedUnderageAppealStatus */.default, { visible: true });
 }
-({ jsx: closure_11, jsxs: closure_12, Fragment: closure_13 } = jsxProd);
-let obj = {};
-obj = { marginBottom: 16, borderColor: require("_createForOfIteratorHelperLoose").colors.REDESIGN_INPUT_CONTROL_SELECTED, borderWidth: 1, borderRadius: require("_createForOfIteratorHelperLoose").radii.lg };
-obj.upsellPasswordless = obj;
-obj.upsellImagePasswordless = { height: "100%", width: "100%" };
-_createForOfIteratorHelperLoose = { paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16, paddingTop: require("_createForOfIteratorHelperLoose").space.PX_16 };
-obj.controlContainer = _createForOfIteratorHelperLoose;
-obj.pageContainer = { flex: 1 };
-obj.standingPage = { paddingTop: require("_createForOfIteratorHelperLoose").space.PX_24 };
-let closure_14 = _createForOfIteratorHelperLoose.createStyles(obj);
-let obj2 = { paddingTop: require("_createForOfIteratorHelperLoose").space.PX_24 };
+let c4 = importAllResult;
+({ jsx: unpackModuleId, jsxs: closure_12, Fragment: map1 } = jsxProd);
+let obj = { upsellPasswordless: null, upsellImagePasswordless: null, controlContainer: null, pageContainer: null, standingPage: null };
+obj = { marginBottom: 16, borderColor: require("Themes").colors.REDESIGN_INPUT_CONTROL_SELECTED, borderWidth: 1, borderRadius: require("Themes").radii.lg };
+obj[0] = obj;
+obj[1] = { height: "100%", width: "100%" };
+createCacheKey = { paddingHorizontal: require("Themes").space.PX_16, paddingTop: require("Themes").space.PX_16 };
+obj[2] = createCacheKey;
+obj[3] = { flex: 1 };
+obj[4] = { paddingTop: require("Themes").space.PX_24 };
+let closure_14 = createCacheKey.createStyles(obj);
+let obj2 = { paddingTop: require("Themes").space.PX_24 };
 const memoResult = importAllResult.memo(() => {
+  let require;
+  let tmp3;
   const tmp = callback4();
-  const tmp2 = callback(importAllResult.useState(0), 2);
-  const _require = tmp2[1];
+  [tmp3, require] = callback(importAllResult.useState(0), 2);
   callback = importAllResult.useCallback((nativeEvent) => {
     callback(nativeEvent.nativeEvent.layout.width);
   }, []);
-  let obj = _require(6309);
+  let obj = require(6330) /* useSettingNavigationRoute */;
   const params = obj.useSettingNavigationRoute().params;
   let initialTab;
-  if (null != params) {
+  if (params != null) {
     initialTab = params.initialTab;
   }
-  let obj1 = _require(8200);
-  obj = {};
-  obj = {};
-  const intl = _require(1212).intl;
-  obj.label = intl.string(_require(1212).t.Am9YHi);
-  obj.id = AccountSettingsTabs.SECURITY;
-  obj.page = callback2(AccountSecurityPage, {});
+  const tmp2 = callback(importAllResult.useState(0), 2);
+  obj = { items: null, pageWidth: null, defaultIndex: null, onSetActiveIndex: null };
+  obj = { label: null, id: null, page: null };
+  const intl = tmp5(1236).intl;
+  obj[0] = intl.string(require(1236) /* getSystemLocale */.t.Am9YHi);
+  obj[1] = AccountSettingsTabs.SECURITY;
+  obj[2] = callback2(AccountSecurityPage, {});
   const items = [obj, ];
-  obj1 = {};
-  const intl2 = _require(1212).intl;
-  obj1.label = intl2.string(_require(1212).t["00Sfl/"]);
-  obj1.id = AccountSettingsTabs.STANDING;
-  obj1.page = callback2(View, { style: tmp.standingPage, children: callback2(AccountStandingPage, {}) });
+  const obj1 = { label: null, id: null, page: null };
+  const intl2 = tmp5(1236).intl;
+  obj1[0] = intl2.string(require(1236) /* getSystemLocale */.t["00Sfl/"]);
+  obj1[1] = AccountSettingsTabs.STANDING;
+  const tmp5Result = require(8224) /* useSegmentedControlState */;
+  obj1[2] = callback2(View, { style: tmp.standingPage, children: callback2(AccountStandingPage, {}) });
   items[1] = obj1;
-  obj.items = items;
-  obj.pageWidth = tmp2[0];
+  obj[0] = items;
+  obj[1] = tmp3;
   let num = 0;
   if (initialTab === AccountSettingsTabs.STANDING) {
     num = 1;
   }
-  obj.defaultIndex = num;
-  obj.onSetActiveIndex = function onSetActiveIndex(arg0) {
-    let obj = outer1_1(outer1_2[32]);
-    obj = {};
+  obj[2] = num;
+  obj[3] = function onSetActiveIndex(arg0) {
     if (0 === arg0) {
-      let STANDING = outer1_8.SECURITY;
+      let STANDING = constants.SECURITY;
     } else {
-      STANDING = outer1_8.STANDING;
+      STANDING = constants.STANDING;
     }
-    obj.target_tab_name = STANDING;
-    obj.track(outer1_9.MY_ACCOUNT_PAGE_TAB_NAVIGATE, obj);
+    callback2(table[32]).track(constants2.MY_ACCOUNT_PAGE_TAB_NAVIGATE, { target_tab_name: STANDING });
   };
-  const segmentedControlState = obj1.useSegmentedControlState(obj);
-  const obj3 = {};
+  const segmentedControlState = tmp5Result.useSegmentedControlState(obj);
+  const obj3 = { children: null };
   const obj2 = { style: tmp.standingPage, children: callback2(AccountStandingPage, {}) };
-  const items1 = [callback2(View, { style: tmp.controlContainer, onLayout: callback, children: callback2(_require(8731).SegmentedControl, { state: segmentedControlState }) }), ];
-  const obj4 = { style: tmp.controlContainer, onLayout: callback, children: callback2(_require(8731).SegmentedControl, { state: segmentedControlState }) };
-  items1[1] = callback2(View, { style: tmp.pageContainer, children: callback2(_require(8729).SegmentedControlPages, { state: segmentedControlState }) });
-  obj3.children = items1;
+  const items1 = [callback2(View, { style: tmp.controlContainer, onLayout: callback, children: callback2(require(8755) /* SegmentedControl */.SegmentedControl, { state: segmentedControlState }) }), ];
+  const obj4 = { style: tmp.controlContainer, onLayout: callback, children: callback2(require(8755) /* SegmentedControl */.SegmentedControl, { state: segmentedControlState }) };
+  items1[1] = callback2(View, { style: tmp.pageContainer, children: callback2(require(8753) /* SegmentedControlPage */.SegmentedControlPages, { state: segmentedControlState }) });
+  obj3[0] = items1;
   return callback3(closure_13, obj3);
 });
 const result = require("get ActivityIndicator").fileFinishedImporting("modules/user_settings/account/native/SettingsAccountScreen.tsx");

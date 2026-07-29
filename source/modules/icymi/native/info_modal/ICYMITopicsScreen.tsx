@@ -1,24 +1,25 @@
-// Module ID: 15313
-// Function ID: 116391
+// Module ID: 15346
+// Function ID: 15347
 // Name: WordTopic
-// Dependencies: [5, 57, 31, 27, 15307, 15314, 33, 8911, 9045, 4680, 15315, 9050, 4668, 6623, 11094, 9002, 15316, 9411, 15318, 9413, 9830, 4165, 689, 3883, 4578, 1557, 1456, 15320, 1935, 8161, 3866, 1212, 566, 8170, 4161, 2]
+// Dependencies: [5, 32, 19, 17, 15340, 15347, 21, 8935, 9069, 4702, 15348, 9074, 4690, 6644, 11118, 9026, 15349, 9435, 15351, 9437, 9852, 4189, 712, 3907, 4600, 1581, 1480, 15353, 1959, 8185, 3890, 1236, 589, 8194, 4185, 2]
 // Exports: default
 
-// Module 15313 (WordTopic)
+// Module 15346 (WordTopic)
 import GuildPrimaryCategory from "GuildPrimaryCategory";
-import _slicedToArray from "_slicedToArray";
-import getSystemLocale from "getSystemLocale";
-import get_ActivityIndicator from "_isNativeReflectConstruct";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import initialize from "initialize";
+import BicycleIcon from "BicycleIcon";
+import get_ActivityIndicator from "FoodIcon";
+import getPrimaryCategories from "getPrimaryCategories";
 import { GuildPrimaryCategory } from "GuildPrimaryCategory";
-import jsxProd from "listItemToType";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import jsxProd from "createCacheKey";
+import createCacheKey from "createCacheKey";
 
-let closure_10;
-let closure_11;
+let StyleSheet;
+let c10;
 let closure_12;
 let closure_6;
-let closure_7;
+let error;
+let unpackModuleId;
 const require = arg1;
 function WordTopic(categoryid) {
   let importDefault;
@@ -26,91 +27,172 @@ function WordTopic(categoryid) {
   categoryid = categoryid.categoryid;
   ({ selected, handlePress: importDefault } = categoryid);
   if (GuildPrimaryCategory.GAMING === categoryid) {
-    let tmp = callback2(categoryid(8911).GameControllerIcon, { size: "md", color: "redesign-button-tertiary-text" });
-  } else if (GuildPrimaryCategory.ENTERTAINMENT === categoryid) {
-    tmp = callback2(categoryid(9045).TvIcon, { size: "md", color: "redesign-button-tertiary-text" });
-  } else if (GuildPrimaryCategory.GENERAL_CHATTING === categoryid) {
-    tmp = callback2(categoryid(4680).ForumIcon, { size: "md", color: "redesign-button-tertiary-text" });
-  } else if (GuildPrimaryCategory.SCIENCE_AND_TECH === categoryid) {
-    tmp = callback2(categoryid(15315).ScienceIcon, { size: "md", color: "redesign-button-tertiary-text" });
-  } else if (GuildPrimaryCategory.MUSIC === categoryid) {
-    tmp = callback2(categoryid(9050).MusicIcon, { size: "md", color: "redesign-button-tertiary-text" });
-  } else if (GuildPrimaryCategory.EDUCATION === categoryid) {
-    tmp = callback2(categoryid(4668).BookCheckIcon, { size: "md", color: "redesign-button-tertiary-text" });
-  } else if (GuildPrimaryCategory.CREATIVE_ARTS === categoryid) {
-    tmp = callback2(categoryid(6623).PaintPaletteIcon, { size: "md", color: "redesign-button-tertiary-text" });
-  } else if (GuildPrimaryCategory.FINANCE === categoryid) {
-    tmp = callback2(categoryid(11094).PiggyBankIcon, { size: "md", color: "redesign-button-tertiary-text" });
-  } else if (GuildPrimaryCategory.BOTS === categoryid) {
-    tmp = callback2(categoryid(9002).RobotIcon, { size: "md", color: "redesign-button-tertiary-text" });
-  } else if (GuildPrimaryCategory.SPORTS === categoryid) {
-    tmp = callback2(categoryid(15316).MedalIcon, { size: "md", color: "redesign-button-tertiary-text" });
-  } else if (GuildPrimaryCategory.TRAVEL_AND_FOOD === categoryid) {
-    tmp = callback2(categoryid(9411).FoodIcon, { size: "md", color: "redesign-button-tertiary-text" });
-  } else if (GuildPrimaryCategory.FASHION_AND_BEAUTY === categoryid) {
-    tmp = callback2(categoryid(15318).PaintbrushThinIcon, { size: "md", color: "redesign-button-tertiary-text" });
-  } else if (GuildPrimaryCategory.FITNESS_AND_HEALTH === categoryid) {
-    tmp = callback2(categoryid(9413).BicycleIcon, { size: "md", color: "redesign-button-tertiary-text" });
+    let tmp2 = callback2(categoryid(8935).GameControllerIcon, { size: "md", color: "redesign-button-tertiary-text" });
+  } else if (tmp.ENTERTAINMENT === categoryid) {
+    tmp2 = callback2(categoryid(9069).TvIcon, { size: "md", color: "redesign-button-tertiary-text" });
+  } else if (tmp.GENERAL_CHATTING === categoryid) {
+    tmp2 = callback2(categoryid(4702).ForumIcon, { size: "md", color: "redesign-button-tertiary-text" });
+  } else if (tmp.SCIENCE_AND_TECH === categoryid) {
+    tmp2 = callback2(categoryid(15348).ScienceIcon, { size: "md", color: "redesign-button-tertiary-text" });
+  } else if (tmp.MUSIC === categoryid) {
+    tmp2 = callback2(categoryid(9074).MusicIcon, { size: "md", color: "redesign-button-tertiary-text" });
+  } else if (tmp.EDUCATION === categoryid) {
+    tmp2 = callback2(categoryid(4690).BookCheckIcon, { size: "md", color: "redesign-button-tertiary-text" });
+  } else if (tmp.CREATIVE_ARTS === categoryid) {
+    tmp2 = callback2(categoryid(6644).PaintPaletteIcon, { size: "md", color: "redesign-button-tertiary-text" });
+  } else if (tmp.FINANCE === categoryid) {
+    tmp2 = callback2(categoryid(11118).PiggyBankIcon, { size: "md", color: "redesign-button-tertiary-text" });
+  } else if (tmp.BOTS === categoryid) {
+    tmp2 = callback2(categoryid(9026).RobotIcon, { size: "md", color: "redesign-button-tertiary-text" });
+  } else if (tmp.SPORTS === categoryid) {
+    tmp2 = callback2(categoryid(15349).MedalIcon, { size: "md", color: "redesign-button-tertiary-text" });
+  } else if (tmp.TRAVEL_AND_FOOD === categoryid) {
+    tmp2 = callback2(categoryid(9435).FoodIcon, { size: "md", color: "redesign-button-tertiary-text" });
+  } else if (tmp.FASHION_AND_BEAUTY === categoryid) {
+    tmp2 = callback2(categoryid(15351).PaintbrushThinIcon, { size: "md", color: "redesign-button-tertiary-text" });
+  } else if (tmp.FITNESS_AND_HEALTH === categoryid) {
+    tmp2 = callback2(categoryid(9437).BicycleIcon, { size: "md", color: "redesign-button-tertiary-text" });
   } else if (16 === categoryid) {
-    tmp = callback2(categoryid(9830).PencilSparkleIcon, { size: "md", color: "redesign-button-tertiary-text" });
+    tmp2 = callback2(categoryid(9852).PencilSparkleIcon, { size: "md", color: "redesign-button-tertiary-text" });
   }
-  let obj = categoryid(3883);
+  let obj = categoryid(3907);
   const checkboxA11yNative = obj.useCheckboxA11yNative({ checked: selected });
-  let tmp45Result = null;
-  if (null != tmp) {
-    obj = { accessibilityRole: tmp42, accessibilityState: tmp43 };
+  let tmp48Result = null;
+  if (null != tmp2) {
+    obj = { accessibilityRole: null, accessibilityState: null, variant: null, text: null, onPress: null, icon: null };
+    obj[0] = tmp45;
+    obj[1] = tmp46;
     let str = "tertiary";
     if (selected) {
       str = "primary";
     }
-    obj.variant = str;
-    obj.text = categoryid.topic;
-    obj.onPress = function onPress() {
+    obj[2] = str;
+    obj[3] = categoryid.topic;
+    obj[4] = function onPress() {
       return callback(categoryid);
     };
-    obj.icon = tmp;
-    tmp45Result = callback2(categoryid(4578).Button, obj);
-    const tmp45 = callback2;
+    obj[5] = tmp2;
+    tmp48Result = callback2(categoryid(4600).Button, obj);
+    const tmp48 = callback2;
   }
-  return tmp45Result;
+  return tmp48Result;
 }
-({ View: closure_6, ScrollView: closure_7 } = get_ActivityIndicator);
-({ jsx: closure_10, Fragment: closure_11, jsxs: closure_12 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWER, flex: 1 };
-_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
-let obj1 = { position: "absolute", bottom: 0, left: require("_createForOfIteratorHelperLoose").space.PX_24, right: require("_createForOfIteratorHelperLoose").space.PX_24, paddingBottom: require("_createForOfIteratorHelperLoose").space.PX_8 };
-_createForOfIteratorHelperLoose.footer = obj1;
-_createForOfIteratorHelperLoose.title = { marginTop: require("_createForOfIteratorHelperLoose").space.PX_24, marginBottom: require("_createForOfIteratorHelperLoose").space.PX_8, marginHorizontal: require("_createForOfIteratorHelperLoose").space.PX_24 };
-let obj2 = { marginTop: require("_createForOfIteratorHelperLoose").space.PX_24, marginBottom: require("_createForOfIteratorHelperLoose").space.PX_8, marginHorizontal: require("_createForOfIteratorHelperLoose").space.PX_24 };
-_createForOfIteratorHelperLoose.subtitle = { marginBottom: require("_createForOfIteratorHelperLoose").space.PX_24, marginHorizontal: require("_createForOfIteratorHelperLoose").space.PX_24 };
-let obj3 = { marginBottom: require("_createForOfIteratorHelperLoose").space.PX_24, marginHorizontal: require("_createForOfIteratorHelperLoose").space.PX_24 };
-_createForOfIteratorHelperLoose.separator = { height: get_ActivityIndicator.StyleSheet.hairlineWidth, width: "100%", backgroundColor: require("_createForOfIteratorHelperLoose").colors.BORDER_SUBTLE };
-const obj5 = { flex: 1, marginHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16, flexWrap: "wrap", flexDirection: "row", gap: require("_createForOfIteratorHelperLoose").space.PX_12 };
-_createForOfIteratorHelperLoose.topicsContainer = obj5;
-let obj4 = { height: get_ActivityIndicator.StyleSheet.hairlineWidth, width: "100%", backgroundColor: require("_createForOfIteratorHelperLoose").colors.BORDER_SUBTLE };
-_createForOfIteratorHelperLoose.scrollContentContainer = { paddingTop: require("_createForOfIteratorHelperLoose").space.PX_24 };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-let obj6 = { paddingTop: require("_createForOfIteratorHelperLoose").space.PX_24 };
-let result = require("result").fileFinishedImporting("modules/icymi/native/info_modal/ICYMITopicsScreen.tsx");
+({ View: closure_6, ScrollView: error, StyleSheet } = get_ActivityIndicator);
+({ jsx: c10, Fragment: unpackModuleId, jsxs: closure_12 } = jsxProd);
+createCacheKey = { container: null, footer: null, title: null, subtitle: null, separator: null, topicsContainer: null, scrollContentContainer: null };
+createCacheKey = { backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOWER, flex: 1 };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { position: "absolute", bottom: 0, left: require("Themes").space.PX_24, right: require("Themes").space.PX_24, paddingBottom: require("Themes").space.PX_8 };
+let obj1 = { position: "absolute", bottom: 0, left: require("Themes").space.PX_24, right: require("Themes").space.PX_24, paddingBottom: require("Themes").space.PX_8 };
+createCacheKey[2] = { marginTop: require("Themes").space.PX_24, marginBottom: require("Themes").space.PX_8, marginHorizontal: require("Themes").space.PX_24 };
+let obj2 = { marginTop: require("Themes").space.PX_24, marginBottom: require("Themes").space.PX_8, marginHorizontal: require("Themes").space.PX_24 };
+createCacheKey[3] = { marginBottom: require("Themes").space.PX_24, marginHorizontal: require("Themes").space.PX_24 };
+let obj3 = { marginBottom: require("Themes").space.PX_24, marginHorizontal: require("Themes").space.PX_24 };
+createCacheKey[4] = { height: StyleSheet.hairlineWidth, width: "100%", backgroundColor: require("Themes").colors.BORDER_SUBTLE };
+let obj4 = { height: StyleSheet.hairlineWidth, width: "100%", backgroundColor: require("Themes").colors.BORDER_SUBTLE };
+createCacheKey[5] = { flex: 1, marginHorizontal: require("Themes").space.PX_16, flexWrap: "wrap", flexDirection: "row", gap: require("Themes").space.PX_12 };
+let obj5 = { flex: 1, marginHorizontal: require("Themes").space.PX_16, flexWrap: "wrap", flexDirection: "row", gap: require("Themes").space.PX_12 };
+createCacheKey[6] = { paddingTop: require("Themes").space.PX_24 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let obj6 = { paddingTop: require("Themes").space.PX_24 };
+let result = require("noop").fileFinishedImporting("modules/icymi/native/info_modal/ICYMITopicsScreen.tsx");
 
 export default function ICYMITopicsScreen() {
-  const tmp = _createForOfIteratorHelperLoose();
-  const bottom = importDefault(1557)().bottom;
-  const tmp3 = callback(React.useState(new Set()), 2);
-  const first = tmp3[0];
-  importDefault = tmp3[1];
-  const tmp5 = callback(React.useState(false), 2);
-  const dependencyMap = tmp5[1];
-  const set = new Set();
-  const useNavigation = first(1456).useNavigation;
-  const navigation = useNavigation();
-  // CreateGeneratorClosureLongIndex (0x67)
+  const tmp = createCacheKey();
+  const bottom = importDefault(1581)().bottom;
+  const tmp4 = callback(React.useState(new Set()), 2);
+  const first = tmp4[0];
+  importDefault = tmp4[1];
+  const tmp6 = callback(React.useState(false), 2);
+  const dependencyMap = tmp6[1];
+  let obj = first(1480);
+  const navigation = obj.useNavigation();
   const items = [navigation, first];
-  callback = React.useCallback(navigation(useNavigation), items);
-  let obj = first(566);
-  const items1 = [_isNativeReflectConstruct];
-  const stateFromStoresArray = obj.useStateFromStoresArray(items1, () => outer1_8.getAllCategories());
+  callback = React.useCallback(navigation(function*() {
+    if (arr === 2) {
+      arr = 3;
+      HermesBuiltin.throwTypeError();
+    } else if (tmp3 === 3) {
+      if (arg0 === 1) {
+        throw arg1;
+      } else if (arg0 === 2) {
+        let obj = { value: null, done: true };
+        obj[0] = arg1;
+        return obj;
+      } else {
+        return { value: "HermesInternal", done: null };
+      }
+    } else {
+      try {
+        arr = 2;
+        if (0 === v0) {
+          if (arg0 === 1) {
+            arr = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            arr = 3;
+            obj = { value: null, done: true };
+            obj[0] = arg1;
+            return obj;
+          } else {
+            let closure_1 = tmp4;
+            let closure_0 = tmp4;
+            v0(true);
+            v0 = 1;
+            arr = 1;
+            const obj1 = { value: null, done: false };
+            obj1[0] = outer1_0(v0[28])(v0[27], v0.paths);
+            return obj1;
+          }
+        } else if (1 === tmp4) {
+          if (arg0 === 1) {
+            arr = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            arr = 3;
+            const obj2 = { value: null, done: true };
+            obj2[0] = arg1;
+            return obj2;
+          } else {
+            let obj3 = outer1_1(v0[29]);
+            const _Array = Array;
+            v0 = 2;
+            arr = 1;
+            obj3 = { value: null, done: false };
+            obj3[0] = obj3.fetchPopularGuildsFromCategories(Array.from(closure_0), 0);
+            return obj3;
+          }
+        } else if (arg0 === 1) {
+          arr = 3;
+          throw arg1;
+        } else if (arg0 === 2) {
+          arr = 3;
+          const obj4 = { value: null, done: true };
+          obj4[0] = arg1;
+          return obj4;
+        } else {
+          if (arg1) {
+            arr = arr.push("join_guilds");
+          } else {
+            obj = outer1_1(v0[30]);
+            const obj5 = { key: "ICYMIInfoModal", content: null };
+            const intl = outer1_0(v0[31]).intl;
+            obj5[1] = intl.string(outer1_0(v0[31]).t.CG4Hks);
+            obj.open(obj5);
+          }
+          const _setTimeout = setTimeout;
+          const timerId = setTimeout(() => v2(false), 500);
+          arr = 3;
+        }
+      } catch (tmp28) {
+        arr = tmp;
+        throw tmp28;
+      }
+    }
+  }), items);
+  let obj1 = first(589);
+  const items1 = [getPrimaryCategories];
+  const stateFromStoresArray = obj1.useStateFromStoresArray(items1, () => allCategories.getAllCategories());
   const items2 = [first];
   callback = React.useCallback((categoryId) => {
     const ICYMIAnalytics = first(table[33]).ICYMIAnalytics;
@@ -127,38 +209,39 @@ export default function ICYMITopicsScreen() {
       });
     }
   }, items2);
-  obj = {};
-  obj = { variant: "heading-xl/semibold", color: "mobile-text-heading-primary", style: tmp.title };
-  const intl = first(1212).intl;
-  obj.children = intl.string(first(1212).t.Y5d99L);
-  const items3 = [callback2(first(4161).Text, obj), , , , ];
-  const obj1 = { variant: "text-sm/normal", color: "text-muted", style: tmp.subtitle };
-  const intl2 = first(1212).intl;
-  obj1.children = intl2.string(first(1212).t.MGZsfv);
-  items3[1] = callback2(first(4161).Text, obj1);
-  items3[2] = callback2(closure_6, { style: tmp.separator });
-  const obj3 = { showsVerticalScrollIndicator: false, style: tmp.container, contentContainerStyle: tmp.scrollContentContainer, contentInset: obj4 };
-  const obj2 = { style: tmp.separator };
-  obj4 = { bottom: 72 + bottom };
-  const tmp10 = closure_11;
-  const tmp6 = first(1456);
-  const tmp9 = closure_12;
-  obj3.children = callback2(closure_6, { style: tmp.topicsContainer, children: stateFromStoresArray.map((categoryId) => outer1_10(outer1_14, { selected: first.has(categoryId.categoryId), topic: categoryId.name, categoryid: categoryId.categoryId, handlePress: _slicedToArray }, categoryId.categoryId)) });
-  items3[3] = callback2(closure_7, obj3);
-  let tmp11 = first.size > 0;
-  if (tmp11) {
-    const obj6 = {};
-    const obj7 = { marginBottom: bottom };
-    const items4 = [obj7, tmp.footer];
-    obj6.style = items4;
-    const obj8 = { loading: tmp5[0], size: "lg" };
-    const intl3 = first(1212).intl;
-    obj8.text = intl3.string(first(1212).t.PDTjLN);
-    obj8.onPress = callback;
-    obj6.children = callback2(first(4578).Button, obj8);
-    tmp11 = callback2(closure_6, obj6);
+  obj = { variant: "heading-xl/semibold", color: "mobile-text-heading-primary", style: tmp.title, children: null };
+  let intl = first(1236).intl;
+  obj[3] = intl.string(first(1236).t.Y5d99L);
+  const children = [callback2(first(4185).Text, obj), , , , ];
+  obj = { variant: "text-sm/normal", color: "text-muted", style: tmp.subtitle, children: null };
+  const intl2 = first(1236).intl;
+  obj[3] = intl2.string(first(1236).t.MGZsfv);
+  children[1] = callback2(first(4185).Text, obj);
+  obj1 = { style: tmp.separator };
+  children[2] = callback2(closure_6, obj1);
+  let obj2 = { showsVerticalScrollIndicator: false, style: tmp.container, contentContainerStyle: tmp.scrollContentContainer, contentInset: obj3, children: null };
+  obj3 = { bottom: 72 + bottom };
+  const set = new Set();
+  const tmp10 = closure_12;
+  const tmp11 = closure_11;
+  const tmp13 = closure_6;
+  obj2[4] = callback2(closure_6, { style: tmp.topicsContainer, children: stateFromStoresArray.map((categoryId) => outer1_10(outer1_14, { selected: first.has(categoryId.categoryId), topic: categoryId.name, categoryid: categoryId.categoryId, handlePress: initialize }, categoryId.categoryId)) });
+  children[3] = callback2(closure_7, obj2);
+  let tmp12Result = first.size > 0;
+  if (tmp12Result) {
+    let obj5 = { style: null, children: null };
+    const obj6 = { marginBottom: null };
+    obj6[0] = bottom;
+    const items4 = [obj6, tmp.footer];
+    obj5[0] = items4;
+    const obj7 = { loading: null, size: "lg", text: null, onPress: null };
+    obj7[0] = tmp6[0];
+    const intl3 = tmp7(1236).intl;
+    obj7[2] = intl3.string(tmp7(1236).t.PDTjLN);
+    obj7[3] = callback;
+    obj5[1] = tmp12(tmp7(4600).Button, obj7);
+    tmp12Result = tmp12(tmp13, obj5);
   }
-  items3[4] = tmp11;
-  obj.children = items3;
-  return tmp9(tmp10, obj);
+  children[4] = tmp12Result;
+  return tmp10(tmp11, { children });
 };

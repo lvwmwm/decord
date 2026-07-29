@@ -1,53 +1,52 @@
-// Module ID: 14113
-// Function ID: 107862
+// Module ID: 14135
+// Function ID: 14136
 // Name: QuestDockDismissalNotification
-// Dependencies: [31, 27, 33, 4165, 689, 4161, 1212, 6663, 3866, 6529, 2]
+// Dependencies: [19, 17, 21, 4189, 712, 4185, 1236, 6684, 3890, 6550, 2]
 // Exports: displayQuestDismissalToast
 
-// Module 14113 (QuestDockDismissalNotification)
-import "result";
+// Module 14135 (QuestDockDismissalNotification)
+import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_3;
-let closure_4;
+let c3;
+let c4;
 const require = arg1;
 function QuestDockDismissalNotification() {
   const _require = callback();
-  let obj = { color: "mobile-text-heading-primary", variant: "text-sm/semibold" };
-  const intl = _require(1212).intl;
+  let obj = { color: "mobile-text-heading-primary", variant: "text-sm/semibold", children: null };
+  const intl = _require(1236).intl;
   obj = {
     arrowHook() {
-      let obj = { style: closure_0.toastArrowForwardIconContainer };
+      let obj = { style: closure_0.toastArrowForwardIconContainer, children: null };
       obj = { resizeMode: "contain", source: outer1_1(outer1_2[7]), style: closure_0.toastArrowForwardIcon };
-      obj.children = outer1_5(outer1_3, obj);
+      obj[1] = outer1_5(outer1_3, obj);
       return outer1_5(outer1_4, obj);
     }
   };
-  obj.children = intl.format(_require(1212).t.dYE1px, obj);
-  return jsx(_require(4161).Text, {
+  obj[2] = intl.format(_require(1236).t.dYE1px, obj);
+  return jsx(_require(4185).Text, {
     arrowHook() {
-      let obj = { style: closure_0.toastArrowForwardIconContainer };
+      let obj = { style: closure_0.toastArrowForwardIconContainer, children: null };
       obj = { resizeMode: "contain", source: outer1_1(outer1_2[7]), style: closure_0.toastArrowForwardIcon };
-      obj.children = outer1_5(outer1_3, obj);
+      obj[1] = outer1_5(outer1_3, obj);
       return outer1_5(outer1_4, obj);
     }
   });
 }
-({ Image: closure_3, View: closure_4 } = get_ActivityIndicator);
-let closure_6 = _createForOfIteratorHelperLoose.createStyles(() => {
-  let obj = { toastArrowForwardIconContainer: { height: 6, width: 16 } };
-  obj = { opacity: 0.35, position: "absolute", top: "50%", left: 0, height: 16, width: 16, tintColor: importDefault(689).colors.INTERACTIVE_TEXT_ACTIVE };
-  const items = [{ translateY: -10 }];
-  obj.transform = items;
-  obj.toastArrowForwardIcon = obj;
+({ Image: c3, View: c4 } = get_ActivityIndicator);
+let closure_6 = createCacheKey.createStyles(() => {
+  let obj = { toastArrowForwardIconContainer: { height: 6, width: 16 }, toastArrowForwardIcon: null };
+  obj = { opacity: 0.35, position: "absolute", top: "50%", left: 0, height: 16, width: 16, tintColor: importDefault(712).colors.INTERACTIVE_TEXT_ACTIVE, transform: items };
+  items = [{ translateY: -10 }];
+  obj[1] = obj;
   return obj;
 });
 const result = require("jsxProd").fileFinishedImporting("modules/quests/native/QuestDockDismissalToast.tsx");
 
 export const displayQuestDismissalToast = function displayQuestDismissalToast() {
-  let obj = importDefault(3866);
-  obj = { key: "QUEST_BAR_DISMISS_TOAST", content: QuestDockDismissalNotification, icon: importDefault(6529), position: "bottom" };
+  let obj = importDefault(3890);
+  obj = { key: "QUEST_BAR_DISMISS_TOAST", content: QuestDockDismissalNotification, icon: importDefault(6550), position: "bottom" };
   obj.open(obj);
 };

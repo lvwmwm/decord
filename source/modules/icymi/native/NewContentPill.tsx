@@ -1,148 +1,151 @@
-// Module ID: 15358
-// Function ID: 117009
+// Module ID: 15391
+// Function ID: 15392
 // Name: CutoutGuildIcon
-// Dependencies: [57, 31, 27, 1838, 8146, 33, 4165, 689, 7945, 5548, 566, 4101, 6138, 8160, 4026, 4577, 1459, 4695, 14060, 4161, 1212, 4011, 2]
+// Dependencies: [32, 19, 17, 1862, 8170, 21, 4189, 712, 7970, 5566, 589, 4125, 6156, 8184, 4050, 4599, 1483, 4717, 14082, 4185, 1236, 4035, 2]
 // Exports: default
 
-// Module 15358 (CutoutGuildIcon)
+// Module 15391 (CutoutGuildIcon)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
-import get_ActivityIndicator from "get ActivityIndicator";
-import closure_7 from "_createForOfIteratorHelperLoose";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import Text from "Text";
+import get_ActivityIndicator from "PressableBase";
+import createGuildRecordFromRust from "createGuildRecordFromRust";
+import filterStaffGuild from "filterStaffGuild";
+import jsxProd from "AccessibilityAnnouncer";
+import createCacheKey from "createCacheKey";
 
-let closure_10;
-let closure_5;
+let c10;
+let c5;
+let c9;
 let closure_6;
-let closure_9;
 const require = arg1;
 function CutoutGuildIcon(guild) {
-  let obj = { style: { width: 24, height: 24 } };
-  obj = {};
-  obj = { shape: null, x: 18, y: -4, width: 32, height: 32 };
-  const tmp = _createForOfIteratorHelperLoose();
-  obj.shape = require(7945) /* SolidCutout */.CutoutShape.RoundedRect;
-  obj.cornerRadius = importDefault(689).radii.md;
+  let obj = { style: { width: 24, height: 24 }, children: null };
+  obj = { cutouts: null, children: null };
+  obj = { shape: null, x: 18, y: -4, width: 32, height: 32, cornerRadius: null };
+  const tmp = createCacheKey();
+  obj[0] = require(7970) /* SolidCutout */.CutoutShape.RoundedRect;
+  obj[5] = importDefault(712).radii.md;
   const items = [obj];
-  obj.cutouts = items;
-  const obj1 = { guild: guild.guild };
-  const tmp2 = importDefault(7945);
-  obj1.size = require(5548) /* makeSizeStyle */.GuildIconSizes.XSMALL;
-  obj1.style = tmp.guildIconBG;
-  obj.children = callback(importDefault(5548), obj1);
-  obj.children = callback(tmp2, obj);
+  obj[0] = items;
+  const obj1 = { guild: guild.guild, size: null, style: null };
+  const tmp2 = importDefault(7970);
+  obj1[1] = require(5566) /* GuildIconSizes */.GuildIconSizes.XSMALL;
+  obj1[2] = tmp.guildIconBG;
+  obj[1] = callback(importDefault(5566), obj1);
+  obj[1] = callback(tmp2, obj);
   return callback(closure_6, obj);
 }
-({ ActivityIndicator: closure_5, View: closure_6 } = get_ActivityIndicator);
-({ jsx: closure_9, jsxs: closure_10 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { alignSelf: "center", alignItems: "center", flexDirection: "row", paddingRight: 12, paddingLeft: 8, paddingVertical: 6, borderRadius: require("_createForOfIteratorHelperLoose").radii.round, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BRAND };
-_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.guildIconBG = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWER };
-_createForOfIteratorHelperLoose.refreshMorePillContainer = { position: "absolute", top: 0, left: 0, height: 32, width: "100%", zIndex: 100 };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+({ ActivityIndicator: c5, View: closure_6 } = get_ActivityIndicator);
+({ jsx: c9, jsxs: c10 } = jsxProd);
+createCacheKey = { container: null, guildIconBG: null, refreshMorePillContainer: null };
+createCacheKey = { alignSelf: "center", alignItems: "center", flexDirection: "row", paddingRight: 12, paddingLeft: 8, paddingVertical: 6, borderRadius: require("Themes").radii.round, backgroundColor: require("Themes").colors.BACKGROUND_BRAND };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOWER };
+createCacheKey[2] = { position: "absolute", top: 0, left: 0, height: 32, width: "100%", zIndex: 100 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
 let closure_12 = { overshootClamping: true, stiffness: 20, damping: 15, mass: 0.03 };
-let closure_13 = { code: "function NewContentPillTsx1(){const{withSpring,showingPill,springConfig}=this.__closure;return{transform:[{translateY:withSpring(showingPill?12:0,springConfig)}],opacity:withSpring(showingPill?1:0,springConfig,'respect-motion-settings')};}" };
-let closure_14 = { code: "function NewContentPillTsx2(){const{showingPill}=this.__closure;return{pointerEvents:showingPill?'box-none':'none'};}" };
-let obj1 = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWER };
+let closure_14 = { code: "function NewContentPillTsx1(){const{withSpring,showingPill,springConfig}=this.__closure;return{transform:[{translateY:withSpring(showingPill?12:0,springConfig)}],opacity:withSpring(showingPill?1:0,springConfig,'respect-motion-settings')};}" };
+let closure_15 = { code: "function NewContentPillTsx2(){const{showingPill}=this.__closure;return{pointerEvents:showingPill?'box-none':'none'};}" };
+let obj1 = { backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOWER };
 const result = require("get ActivityIndicator").fileFinishedImporting("modules/icymi/native/NewContentPill.tsx");
 
 export default function NewContentPill(onPress) {
   onPress = onPress.onPress;
   const isRefreshing = onPress.isRefreshing;
+  let stateFromStoresArray;
+  let stateFromStores;
+  let first;
+  let closure_5;
+  let closure_6;
+  let createGuildRecordFromRust;
   let first1;
   let isFocused;
   let first2;
-  let _createForOfIteratorHelperLoose;
-  const tmp = _createForOfIteratorHelperLoose();
+  let createCacheKey;
+  let tmp = createCacheKey();
   let obj = onPress(stateFromStoresArray[10]);
   let items = [first1];
   stateFromStoresArray = obj.useStateFromStoresArray(items, () => first1.getNewUnreadDehydratedItems());
   let obj1 = onPress(stateFromStoresArray[10]);
   const items1 = [first1];
-  const stateFromStores = obj1.useStateFromStores(items1, () => first1.hasNewContent(), []);
-  const tmp4 = stateFromStores(first.useState(stateFromStoresArray), 2);
-  first = tmp4[0];
-  let closure_5 = tmp4[1];
+  stateFromStores = obj1.useStateFromStores(items1, () => first1.hasNewContent(), []);
+  let obj2 = first;
+  const tmp7 = stateFromStores(first.useState(stateFromStoresArray), 2);
+  first = tmp7[0];
+  closure_5 = tmp7[1];
   const items2 = [first];
-  let closure_6 = first.useMemo(() => {
+  closure_6 = first.useMemo(() => {
     const items = [];
     const item = first.forEach((data) => {
-      if (items.length < onPress(stateFromStoresArray[12]).MIN_ITEMS_FOR_NEW_PILL) {
-        let isGuildItemResult = onPress(stateFromStoresArray[13]).isGuildItem(data);
-        if (isGuildItemResult) {
-          isGuildItemResult = !items.includes(data.data.guild_id);
+      let arr = items;
+      if (items.length < items(outer1_2[12]).MIN_ITEMS_FOR_NEW_PILL) {
+        const tmpResult = items(outer1_2[13]);
+        if (tmp4) {
+          arr = arr.push(data.data.guild_id);
         }
-        if (isGuildItemResult) {
-          items.push(data.data.guild_id);
-        }
-        const obj = onPress(stateFromStoresArray[13]);
+        tmp4 = items(outer1_2[13]).isGuildItem(data) && !arr.includes(data.data.guild_id);
       }
     });
     return items;
   }, items2);
-  let obj2 = onPress(stateFromStoresArray[10]);
-  const items3 = [closure_7];
-  const stateFromStoresArray1 = obj2.useStateFromStoresArray(items3, () => {
-    const mapped = closure_6.map((guildId) => guild.getGuild(guildId));
+  let obj3 = onPress(stateFromStoresArray[10]);
+  const items3 = [createGuildRecordFromRust];
+  const stateFromStoresArray1 = obj3.useStateFromStoresArray(items3, () => {
+    const mapped = closure_6.map((arg0) => guild.getGuild(arg0));
     return mapped.filter(Boolean);
   });
-  const tmp7 = stateFromStores(first.useState(false), 2);
-  closure_7 = tmp7[1];
+  const tmp11 = stateFromStores(first.useState(false), 2);
+  createGuildRecordFromRust = tmp11[1];
   first1 = stateFromStores;
   if (stateFromStores) {
-    first1 = tmp7[0];
+    first1 = tmp11[0];
   }
-  let obj3 = onPress(stateFromStoresArray[14]);
+  let tmp2Result = tmp2(tmp3[14]);
   const fn = function y() {
-    let obj = {};
-    obj = {};
+    let obj = onPress(stateFromStoresArray[15]);
     let num = 0;
     if (first1) {
       num = 12;
     }
-    obj.translateY = onPress(stateFromStoresArray[15]).withSpring(num, outer1_12);
+    obj = { transform: null, opacity: null };
+    obj = { translateY: obj.withSpring(num, outer1_12) };
     const items = [obj];
-    obj.transform = items;
-    const obj3 = onPress(stateFromStoresArray[15]);
+    obj[0] = items;
     let num2 = 0;
     if (first1) {
       num2 = 1;
     }
-    obj.opacity = onPress(stateFromStoresArray[15]).withSpring(num2, outer1_12, "respect-motion-settings");
+    obj[1] = onPress(stateFromStoresArray[15]).withSpring(num2, outer1_12, "respect-motion-settings");
     return obj;
   };
-  obj = { withSpring: onPress(stateFromStoresArray[15]).withSpring, showingPill: first1, springConfig: closure_12 };
+  obj = { withSpring: tmp2(tmp3[15]).withSpring, showingPill: first1, springConfig: closure_12 };
   fn.__closure = obj;
   fn.__workletHash = 13655660855782;
-  fn.__initData = closure_13;
-  const animatedStyle = obj3.useAnimatedStyle(fn);
-  let obj5 = onPress(stateFromStoresArray[14]);
+  fn.__initData = closure_14;
+  const animatedStyle = tmp2Result.useAnimatedStyle(fn);
+  tmp2Result = tmp2(tmp3[14]);
   class C {
     constructor() {
-      obj = {};
-      str = "none";
+      pointerEvents = "none";
       if (c8) {
-        str = "box-none";
+        pointerEvents = "box-none";
       }
-      obj.pointerEvents = str;
-      return obj;
+      return { pointerEvents };
     }
   }
-  obj = { showingPill: first1 };
-  C.__closure = obj;
+  C.__closure = { showingPill: first1 };
   C.__workletHash = 876312391659;
-  C.__initData = closure_14;
-  const animatedProps = obj5.useAnimatedProps(C);
-  let obj7 = onPress(stateFromStoresArray[16]);
-  isFocused = obj7.useIsFocused();
-  const tmp12 = stateFromStores(first.useState(false), 2);
-  first2 = tmp12[0];
-  _createForOfIteratorHelperLoose = tmp12[1];
+  C.__initData = closure_15;
+  const animatedProps = tmp2Result.useAnimatedProps(C);
+  const tmp10 = isRefreshing(stateFromStoresArray[11])();
+  const tmp6 = stateFromStores;
+  isFocused = onPress(stateFromStoresArray[16]).useIsFocused();
+  const tmp6Result = tmp6(obj2.useState(false), 2);
+  first2 = tmp6Result[0];
+  createCacheKey = tmp6Result[1];
   const items4 = [stateFromStores, isFocused, first2];
-  const layoutEffect = first.useLayoutEffect(() => {
+  const layoutEffect = obj2.useLayoutEffect(() => {
+    let tmp = first2;
     if (!first2) {
       if (isFocused) {
         if (stateFromStores) {
@@ -151,93 +154,93 @@ export default function NewContentPill(onPress) {
         callback3(isFocused);
       }
     }
-    let tmp5 = first2;
-    if (first2) {
-      tmp5 = isFocused;
+    if (tmp) {
+      tmp = isFocused;
     }
-    if (tmp5) {
-      tmp5 = !stateFromStores;
+    if (tmp) {
+      tmp = !stateFromStores;
     }
-    if (tmp5) {
+    if (tmp) {
       callback2(true);
     }
   }, items4);
   const items5 = [isRefreshing, stateFromStoresArray, stateFromStores];
-  const effect = first.useEffect(() => {
+  const effect = obj2.useEffect(() => {
     if (!isRefreshing) {
       callback(stateFromStoresArray);
     }
   }, items5);
   const items6 = [onPress];
-  const callback = first.useCallback(() => {
+  const callback = obj2.useCallback(() => {
     onPress();
   }, items6);
   if (0 === stateFromStoresArray1.length) {
-    obj1 = {};
+    obj = { style: null, animatedProps: null, children: null };
     const items7 = [tmp.refreshMorePillContainer, animatedStyle];
-    obj1.style = items7;
-    obj1.animatedProps = animatedProps;
-    obj2 = { onPress: callback, style: tmp.container };
-    const items8 = [isFocused(onPress(stateFromStoresArray[18]).ArrowSmallUpIcon, { size: "md", color: "interactive-text-active" }), ];
-    obj3 = { style: null, variant: "heading-md/bold", color: "interactive-text-active" };
-    const obj4 = { marginLeft: 4 };
-    obj3.style = obj4;
-    const intl = onPress(stateFromStoresArray[20]).intl;
-    obj3.children = intl.string(onPress(stateFromStoresArray[20]).t["4Nl0Rl"]);
-    items8[1] = isFocused(onPress(stateFromStoresArray[19]).Text, obj3);
-    obj2.children = items8;
-    obj1.children = first2(onPress(stateFromStoresArray[17]).PressableOpacity, obj2);
-    let tmp41Result = isFocused(isRefreshing(stateFromStoresArray[14]).View, obj1);
+    obj[0] = items7;
+    obj[1] = animatedProps;
+    obj1 = { onPress: null, style: null, children: null };
+    obj1[0] = callback;
+    obj1[1] = tmp.container;
+    const items8 = [isFocused(tmp2(tmp3[18]).ArrowSmallUpIcon, { size: "md", color: "interactive-text-active" }), ];
+    obj2 = { style: null, variant: "heading-md/bold", color: "interactive-text-active", children: null };
+    obj2[0] = { marginLeft: 4 };
+    const intl = tmp2(tmp3[20]).intl;
+    obj2[3] = intl.string(tmp2(tmp3[20]).t["4Nl0Rl"]);
+    items8[1] = isFocused(tmp2(tmp3[19]).Text, obj2);
+    obj1[2] = items8;
+    obj[2] = first2(tmp2(tmp3[17]).PressableOpacity, obj1);
+    let tmp30Result = isFocused(tmp9(tmp3[14]).View, obj);
   } else {
-    obj5 = {};
+    obj3 = { style: null, animatedProps: null, children: null };
     const items9 = [tmp.refreshMorePillContainer, animatedStyle];
-    obj5.style = items9;
-    obj5.animatedProps = animatedProps;
-    const obj6 = { onPress: callback, style: tmp.container };
+    obj3[0] = items9;
+    obj3[1] = animatedProps;
+    const obj4 = { onPress: null, style: null, children: null };
+    obj4[0] = callback;
+    obj4[1] = tmp.container;
     if (isRefreshing) {
-      obj7 = {};
-      let obj9 = onPress(stateFromStoresArray[21]);
-      const unsafe_rawColors = isRefreshing(stateFromStoresArray[7]).unsafe_rawColors;
-      obj7.color = obj9.isThemeDark(tmp6) ? unsafe_rawColors.WHITE : unsafe_rawColors.PRIMARY_500;
-      tmp47(closure_5, obj7);
-      const isThemeDarkResult = obj9.isThemeDark(tmp6);
-      const tmp19 = closure_5;
+      const tmp21 = closure_5;
+      const tmp2Result2 = tmp2(tmp3[21]);
+      let unsafe_rawColors = tmp9(tmp3[7]).unsafe_rawColors;
+      const isThemeDarkResult = tmp2(tmp3[21]).isThemeDark(tmp10);
+      unsafe_rawColors = { color: null };
+      unsafe_rawColors[0] = tmp2(tmp3[21]).isThemeDark(tmp10) ? unsafe_rawColors.WHITE : unsafe_rawColors.PRIMARY_500;
+      tmp30Result = tmp30(tmp21, unsafe_rawColors);
+      const tmp23 = tmp2(tmp3[21]).isThemeDark(tmp10) ? unsafe_rawColors.WHITE : unsafe_rawColors.PRIMARY_500;
     } else {
-      const items10 = [tmp47(onPress(stateFromStoresArray[18]).ArrowSmallUpIcon, { size: "md", color: "interactive-text-active" }), , ];
+      const items10 = [tmp30(tmp2(tmp3[18]).ArrowSmallUpIcon, { size: "md", color: "interactive-text-active" }), , ];
       const substr = stateFromStoresArray1.slice(0, stateFromStoresArray1.length - 1);
       items10[1] = substr.map((guild) => {
-        let obj = {};
-        obj = {};
         let num = 4;
         if (arg1 > 0) {
           num = -2;
         }
-        obj.marginLeft = num;
-        obj.style = obj;
+        obj = { style: { marginLeft: num }, children: tmp(closure_13, obj) };
         obj = { guild };
-        obj.children = isFocused(outer1_15, obj);
         return isFocused(closure_6, obj, guild.id);
       });
-      const obj8 = {};
-      obj9 = {};
-      let num4 = 4;
+      let num2 = 4;
       if (stateFromStoresArray1.length > 1) {
-        num4 = -2;
+        num2 = -2;
       }
-      obj9.marginLeft = num4;
-      obj8.style = obj9;
-      const obj10 = { guild: stateFromStoresArray1[stateFromStoresArray1.length - 1], size: onPress(stateFromStoresArray[9]).GuildIconSizes.XSMALL, style: tmp.guildIconBG };
-      obj8.children = isFocused(isRefreshing(stateFromStoresArray[9]), obj10);
-      items10[2] = isFocused(closure_6, obj8);
-      obj6.children = items10;
-      obj5.children = tmp44(tmp46, obj6);
-      tmp41Result = tmp41(isRefreshing(stateFromStoresArray[14]).View, obj5);
-      const tmp26 = isFocused;
-      const tmp27 = closure_6;
-      const tmp31 = isRefreshing(stateFromStoresArray[9]);
+      const obj5 = { style: null, children: null };
+      const obj6 = { marginLeft: null };
+      obj6[0] = num2;
+      obj5[0] = obj6;
+      const obj7 = { guild: null, size: null, style: null };
+      obj7[0] = stateFromStoresArray1[stateFromStoresArray1.length - 1];
+      obj7[1] = tmp2(tmp3[9]).GuildIconSizes.XSMALL;
+      obj7[2] = tmp.guildIconBG;
+      obj5[1] = tmp30(tmp9(tmp3[9]), obj7);
+      items10[2] = tmp30(closure_6, obj5);
+      obj4[2] = items10;
+      obj3[2] = tmp31(tmp32, obj4);
+      tmp30Result = tmp30(tmp9(tmp3[14]).View, obj3);
+      const tmp25 = closure_6;
+      const tmp9Result = tmp9(tmp3[9]);
     }
-    tmp41 = isFocused;
-    tmp44 = first2;
+    tmp31 = first2;
   }
-  return tmp41Result;
+  return tmp30Result;
 };

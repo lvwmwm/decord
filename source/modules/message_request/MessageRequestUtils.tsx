@@ -1,12 +1,12 @@
-// Module ID: 12955
-// Function ID: 100472
+// Module ID: 12978
+// Function ID: 12979
 // Name: filterOutMessageRequestsAndSpam
-// Dependencies: [5637, 5638, 21, 2]
+// Dependencies: [5655, 5656, 11, 2]
 // Exports: filterOutMessageRequestsAndSpam, filterOutMessageRequestsAndSpamById, isMessageRequestOrSpamRequest, shouldShowMessageRequests
 
-// Module 12955 (filterOutMessageRequestsAndSpam)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_3 from "_isNativeReflectConstruct";
+// Module 12978 (filterOutMessageRequestsAndSpam)
+import processChannel from "processChannel";
+import closure_3 from "processChannel";
 
 const result = require("DISCORD_EPOCH").fileFinishedImporting("modules/message_request/MessageRequestUtils.tsx");
 
@@ -14,48 +14,47 @@ export const filterOutMessageRequestsAndSpam = function filterOutMessageRequests
   let importDefault;
   let tmp = arg1;
   if (arg1 === undefined) {
-    let items = [_isNativeReflectConstruct, closure_3];
+    let items = [processChannel, closure_3];
     tmp = items;
   }
   [importDefault, ] = tmp;
-  return (function channelArrayToObject(arr2) {
-    return Array.from(arr2).reduce((arg0, arg1) => {
-      let tmp;
-      [r10006, tmp] = arg1;
-      return Object.assign(arg0, { [r10006]: tmp });
-    }, {});
-  })((function channelRecordToArray(arg0) {
-    let closure_0 = arg0;
-    const keys = nextResult(nextResult1[2]).keys(arg0);
-    return keys.map((arg0) => {
-      const items = [arg0, table[arg0]];
-      return items;
-    });
-  })(arg0).filter((arg0) => {
-    let tmp2;
-    [, tmp2] = arg0;
-    const tmp3 = !nextResult.isMessageRequest(tmp2.id);
-    let tmp4 = tmp3;
-    if (tmp3) {
-      tmp4 = !nextResult1.isSpam(tmp.id);
+  importDefault = arg0;
+  const keys = importDefault(nextResult1[2]).keys(arg0);
+  const mapped = keys.map((arg0) => {
+    const items = [arg0, messageRequest[arg0]];
+    return items;
+  });
+  const obj = importDefault(nextResult1[2]);
+  return Array.from(mapped.filter((arg0) => {
+    let tmp;
+    [, tmp] = arg0;
+    const isMessageRequestResult = messageRequest.isMessageRequest(tmp.id);
+    let tmp3 = !isMessageRequestResult;
+    if (!isMessageRequestResult) {
+      tmp3 = !nextResult1.isSpam(tmp.id);
     }
-    return tmp4;
-  }));
+    return tmp3;
+  })).reduce((arg0, arg1) => {
+    let tmp;
+    [r10007, tmp] = arg1;
+    return Object.assign(arg0, { [r10007]: tmp });
+  }, {});
 };
 export const filterOutMessageRequestsAndSpamById = function filterOutMessageRequestsAndSpamById(unreadPrivateChannelIds, items) {
   let importDefault;
   let tmp = items;
   if (items === undefined) {
-    items = [_isNativeReflectConstruct, closure_3];
+    items = [processChannel, closure_3];
     tmp = items;
   }
   [importDefault, ] = tmp;
   return unreadPrivateChannelIds.filter((id) => {
-    let tmp = !nextResult.isMessageRequest(id);
-    if (tmp) {
-      tmp = !nextResult1.isSpam(id);
+    const isMessageRequestResult = nextResult.isMessageRequest(id);
+    let tmp2 = !isMessageRequestResult;
+    if (!isMessageRequestResult) {
+      tmp2 = !nextResult1.isSpam(id);
     }
-    return tmp;
+    return tmp2;
   });
 };
 export const isMessageRequestOrSpamRequest = function isMessageRequestOrSpamRequest(channelId, items) {
@@ -63,7 +62,7 @@ export const isMessageRequestOrSpamRequest = function isMessageRequestOrSpamRequ
   let obj2;
   let tmp = items;
   if (items === undefined) {
-    items = [_isNativeReflectConstruct, closure_3];
+    items = [processChannel, closure_3];
     tmp = items;
   }
   [obj, obj2] = tmp;
@@ -74,7 +73,7 @@ export const shouldShowMessageRequests = function shouldShowMessageRequests() {
   let obj2;
   let tmp = arg0;
   if (arg0 === undefined) {
-    const items = [_isNativeReflectConstruct, closure_3];
+    const items = [processChannel, closure_3];
     tmp = items;
   }
   [obj, obj2] = tmp;

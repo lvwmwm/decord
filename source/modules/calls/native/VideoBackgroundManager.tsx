@@ -1,27 +1,30 @@
-// Module ID: 7957
-// Function ID: 63151
-// Name: _isNativeReflectConstruct
-// Dependencies: [7, 6, 15, 17, 18, 1907, 5112, 2]
+// Module ID: 7982
+// Function ID: 7983
+// Name: prototype
+// Dependencies: [1931, 5134, 2]
 
-// Module 7957 (_isNativeReflectConstruct)
-import set from "set";
-import AutomaticLifecycleManager from "AutomaticLifecycleManager";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import tmp2 from "AutomaticLifecycleManager";
+// Module 7982 (prototype)
+import handleConnectionOpen from "handleConnectionOpen";
+import "initialize";
 
-function _isNativeReflectConstruct() {
-  let set = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return set;
-  }
-  const result = _isNativeReflectConstruct();
+let prototype = function VideoBackgroundManager() {
+  const applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
+  const voiceChannelId = applyArgumentsResult;
+  applyArgumentsResult.previousSelectedVoiceChannelId = voiceChannelId.getVoiceChannelId();
+  applyArgumentsResult.cachedDominantColors = {};
+  applyArgumentsResult._handleSelectVoiceChannel = function _handleSelectVoiceChannel(channelId) {
+    channelId = channelId.channelId;
+    if (applyArgumentsResult.previousSelectedVoiceChannelId !== channelId) {
+      tmp.cachedDominantColors = {};
+    }
+    applyArgumentsResult.previousSelectedVoiceChannelId = channelId;
+  };
+  applyArgumentsResult.actions = { VOICE_CHANNEL_SELECT: applyArgumentsResult._handleSelectVoiceChannel };
+  return applyArgumentsResult;
+}.prototype;
+class prototype extends tmp2 {
 }
-tmp2 = new tmp2();
-let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/calls/native/VideoBackgroundManager.tsx");
+prototype = new prototype();
+const result = require("set").fileFinishedImporting("modules/calls/native/VideoBackgroundManager.tsx");
 
-export default tmp2;
+export default prototype;

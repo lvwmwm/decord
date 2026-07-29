@@ -1,31 +1,31 @@
-// Module ID: 6707
-// Function ID: 59055
+// Module ID: 6728
+// Function ID: 6729
 // Name: Input
-// Dependencies: [31, 27, 33, 4165, 689, 1212, 4161, 6708, 2]
+// Dependencies: [19, 17, 21, 4189, 712, 1236, 4185, 6729, 2]
 // Exports: Input
 
-// Module 6707 (Input)
-import "result";
+// Module 6728 (Input)
+import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_3;
-let closure_4;
+let c3;
+let c4;
 const require = arg1;
-({ jsx: closure_3, jsxs: closure_4 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { flexDirection: "row", gap: require("_createForOfIteratorHelperLoose").space.PX_8, marginTop: require("_createForOfIteratorHelperLoose").space.PX_4, marginBottom: require("_createForOfIteratorHelperLoose").space.PX_4 };
-_createForOfIteratorHelperLoose.inputRow = _createForOfIteratorHelperLoose;
-let obj1 = { marginBottom: require("_createForOfIteratorHelperLoose").space.PX_4, flexDirection: "row", alignItems: "center" };
-_createForOfIteratorHelperLoose.labelWrapper = obj1;
-_createForOfIteratorHelperLoose.label = { marginBottom: require("_createForOfIteratorHelperLoose").space.PX_4 };
-let obj2 = { marginBottom: require("_createForOfIteratorHelperLoose").space.PX_4 };
-_createForOfIteratorHelperLoose.description = { marginTop: require("_createForOfIteratorHelperLoose").space.PX_4 };
-let obj3 = { marginTop: require("_createForOfIteratorHelperLoose").space.PX_4 };
-_createForOfIteratorHelperLoose.error = { marginTop: require("_createForOfIteratorHelperLoose").space.PX_4, width: "auto" };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-let obj4 = { marginTop: require("_createForOfIteratorHelperLoose").space.PX_4, width: "auto" };
+({ jsx: c3, jsxs: c4 } = jsxProd);
+createCacheKey = { inputRow: null, labelWrapper: null, label: null, description: null, error: null };
+createCacheKey = { flexDirection: "row", gap: require("Themes").space.PX_8, marginTop: require("Themes").space.PX_4, marginBottom: require("Themes").space.PX_4 };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { marginBottom: require("Themes").space.PX_4, flexDirection: "row", alignItems: "center" };
+let obj1 = { marginBottom: require("Themes").space.PX_4, flexDirection: "row", alignItems: "center" };
+createCacheKey[2] = { marginBottom: require("Themes").space.PX_4 };
+let obj2 = { marginBottom: require("Themes").space.PX_4 };
+createCacheKey[3] = { marginTop: require("Themes").space.PX_4 };
+let obj3 = { marginTop: require("Themes").space.PX_4 };
+createCacheKey[4] = { marginTop: require("Themes").space.PX_4, width: "auto" };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let obj4 = { marginTop: require("Themes").space.PX_4, width: "auto" };
 const result = require("jsxProd").fileFinishedImporting("design/components/Input/native/Input.native.tsx");
 
 export const Input = function Input(arg0) {
@@ -37,52 +37,65 @@ export const Input = function Input(arg0) {
   let labelId;
   let labelTrailing;
   let required;
-  const tmp = _createForOfIteratorHelperLoose();
+  const tmp = createCacheKey();
   ({ label, labelTrailing, labelId, description, errorMessage, required } = arg0);
   ({ children, containerStyle } = arg0);
-  if ("string" === typeof label) {
+  if (typeof label !== "init") {
     if (true === required) {
-      const intl = require(1212) /* getSystemLocale */.intl;
+      const intl = require(1236) /* getSystemLocale */.intl;
       const _HermesInternal = HermesInternal;
-      const combined = "" + label + " (" + intl.string(require(1212) /* getSystemLocale */.t.EkokLy) + ")";
+      const combined = "" + label + " (" + intl.string(require(1236) /* getSystemLocale */.t.EkokLy) + ")";
     }
   }
-  let obj = { style: containerStyle };
+  let obj = { style: containerStyle, children: null };
   if (null == label) {
     const items = [null, , , ];
-    obj = { style: tmp.inputRow, children };
-    items[1] = callback(View, obj);
-    let tmp22 = null;
+    obj = { style: null, children: null };
+    obj[0] = tmp.inputRow;
+    obj[1] = children;
+    items[1] = callback(tmp8, obj);
+    let tmp15Result = null;
     if (null != description) {
-      obj = { variant: "text-xs/medium", color: "text-muted", style: tmp.description, children: description };
-      tmp22 = callback(require(4161) /* Text */.Text, obj);
+      obj = { variant: "text-xs/medium", color: "text-muted", style: null, children: null };
+      obj[2] = tmp.description;
+      obj[3] = description;
+      tmp15Result = tmp15(require(4185) /* Text */.Text, obj);
     }
-    items[2] = tmp22;
-    let tmp26 = null;
+    items[2] = tmp15Result;
+    tmp15Result = null;
     if (null != errorMessage) {
-      const obj1 = { style: tmp.error, children: errorMessage };
-      tmp26 = callback(require(6708) /* ErrorText */.ErrorText, obj1);
+      const obj1 = { style: null, children: null };
+      obj1[0] = tmp.error;
+      obj1[1] = errorMessage;
+      tmp15Result = tmp15(require(6729) /* ErrorText */.ErrorText, obj1);
     }
-    items[3] = tmp26;
-    obj.children = items;
+    items[3] = tmp15Result;
+    obj[1] = items;
     return tmp7(tmp8, obj);
   } else if (null != labelTrailing) {
-    const obj2 = { style: tmp.labelWrapper };
-    const obj3 = { variant: "text-sm/semibold", color: "text-subtle", nativeID: labelId, children: label };
-    const items1 = [callback(require(4161) /* Text */.Text, obj3), labelTrailing];
-    obj2.children = items1;
-    let tmp30Result = callback2(View, obj2);
+    const obj2 = { style: null, children: null };
+    obj2[0] = tmp.labelWrapper;
+    const obj3 = { variant: "text-sm/semibold", color: "text-subtle", nativeID: null, children: null };
+    obj3[2] = labelId;
+    obj3[3] = label;
+    const items1 = [callback(require(4185) /* Text */.Text, obj3), labelTrailing];
+    obj2[1] = items1;
+    let tmp7Result = tmp7(tmp8, obj2);
   } else {
-    const obj4 = { variant: "text-sm/semibold", color: "text-subtle", style: tmp.label, nativeID: labelId, accessibilityLabel: combined };
+    const obj4 = { variant: "text-sm/semibold", color: "text-subtle", style: null, nativeID: null, accessibilityLabel: null, children: null };
+    obj4[2] = tmp.label;
+    obj4[3] = labelId;
+    obj4[4] = combined;
     const items2 = [label, ];
-    let tmp12 = null;
+    tmp7Result = null;
     if (required) {
-      const obj5 = { variant: "text-sm/bold", color: "text-feedback-critical", "aria-hidden": true, children: [" ", "*"] };
-      tmp12 = callback2(require(4161) /* Text */.Text, obj5);
+      const obj5 = { variant: "text-sm/bold", color: "text-feedback-critical", "aria-hidden": true, children: null };
+      obj5[3] = [" ", "*"];
+      tmp7Result = tmp7(tmp22(4185).Text, obj5);
     }
-    items2[1] = tmp12;
-    obj4.children = items2;
-    tmp30Result = callback2(require(4161) /* Text */.Text, obj4);
-    const tmp30 = callback2;
+    items2[1] = tmp7Result;
+    obj4[5] = items2;
+    tmp7Result = tmp7(require(4185) /* Text */.Text, obj4);
+    tmp22 = require;
   }
 };

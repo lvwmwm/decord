@@ -1,28 +1,39 @@
-// Module ID: 16607
-// Function ID: 129274
-// Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 4219, 3866, 1212, 16608, 2]
+// Module ID: 16642
+// Function ID: 16643
+// Name: showClipsToast
+// Dependencies: [4243, 16643, 3890, 1236, 2]
 
-// Module 16607 (_isNativeReflectConstruct)
-import dispatcher from "dispatcher";
-import getSystemLocale from "getSystemLocale";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
+// Module 16642 (showClipsToast)
 import { CLIPS_TOAST_DURATION } from "result";
-import tmp2 from "_isNativeReflectConstruct";
+import "handleRTCConnectionState";
 
-const require = arg1;
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
-  }
-  const result = _isNativeReflectConstruct();
+class ClipsManager extends tmp2 {
 }
-tmp2 = new tmp2();
-let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/clips/native/ClipsManager.tsx");
+const prototype = ClipsManager.prototype;
+prototype["showClipsToast"] = function showClipsToast() {
+  let obj = importDefault(3890);
+  obj = { key: "CLIPS_IN_CALL_WARNING", content: null, toastDurationMs: null };
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj[1] = intl.string(require(1236) /* getSystemLocale */.t["d+41qJ"]);
+  obj[2] = CLIPS_TOAST_DURATION;
+  obj.open(obj);
+};
+prototype["applyNativeClipsSettings"] = function applyNativeClipsSettings(arg0) {
 
-export default tmp2;
+};
+prototype["handleClipsInitOnToggleDetection"] = function handleClipsInitOnToggleDetection(arg0) {
+
+};
+prototype["handleClipsInitOnGamesChange"] = function handleClipsInitOnGamesChange(arg0) {
+
+};
+prototype["fireClipsInitEvent"] = function fireClipsInitEvent(arg0) {
+
+};
+prototype["handleStreamEnded"] = function handleStreamEnded(arg0) {
+
+};
+const clipsManager = new ClipsManager();
+const result = require("dispatcher").fileFinishedImporting("modules/clips/native/ClipsManager.tsx");
+
+export default clipsManager;

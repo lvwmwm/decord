@@ -1,88 +1,44 @@
-// Module ID: 4369
-// Function ID: 38398
-// Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 566, 686, 2]
+// Module ID: 4392
+// Function ID: 4393
+// Name: set
+// Dependencies: [589, 709, 2]
 
-// Module 4369 (_isNativeReflectConstruct)
-import dispatcher from "dispatcher";
-import closure_1 from "set";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
-import set from "_possibleConstructorReturn";
+// Module 4392 (set)
+import { Store } from "initialize";
+import set from "set";
 
-function _isNativeReflectConstruct() {
-  let dispatcher = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return dispatcher;
-  }
-  const result = _isNativeReflectConstruct();
-}
 let obj = {};
-let closure_6 = {};
+let closure_1 = {};
 let set = new Set();
-let tmp3 = ((Store) => {
-  class GuildOnboardingMemberActionStore {
-    constructor() {
-      self = this;
-      tmp = GuildOnboardingMemberActionStore(this, GuildOnboardingMemberActionStore);
-      obj = outer1_3(GuildOnboardingMemberActionStore);
-      tmp2 = outer1_2;
-      if (outer1_8()) {
-        tmp6 = globalThis;
-        _Reflect = Reflect;
-        tmp7 = outer1_3;
-        tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, outer1_3(self).constructor);
-      } else {
-        tmp3 = arguments;
-        tmp4 = arguments;
-        constructResult = obj(...arguments);
-      }
-      return tmp2(self, constructResult);
-    }
+class GuildOnboardingMemberActionStore extends Store {
+}
+const prototype = GuildOnboardingMemberActionStore.prototype;
+prototype["getCompletedActions"] = function getCompletedActions(closure_0) {
+  let tmp = null;
+  if (null != closure_0) {
+    tmp = dependencyMap[closure_0];
   }
-  callback2(GuildOnboardingMemberActionStore, Store);
-  let obj = {
-    key: "getCompletedActions",
-    value(arg0) {
-      let tmp = null;
-      if (null != arg0) {
-        tmp = outer1_6[arg0];
-      }
-      return tmp;
-    }
-  };
-  const items = [obj, , ];
-  obj = {
-    key: "hasCompletedActionForChannel",
-    value(arg0, arg1) {
-      const completedActions = this.getCompletedActions(arg0);
-      let tmp2 = null != completedActions;
-      if (tmp2) {
-        tmp2 = null != completedActions[arg1];
-      }
-      return tmp2;
-    }
-  };
-  items[1] = obj;
-  obj = {
-    key: "getState",
-    value(arg0) {
-      if (null == arg0) {
-        let obj = {};
-      } else {
-        obj = { completedActions: outer1_6[arg0], loading: outer1_7.has(arg0) };
-      }
-      return obj;
-    }
-  };
-  items[2] = obj;
-  return callback(GuildOnboardingMemberActionStore, items);
-})(require("initialize").Store);
-tmp3.displayName = "GuildOnboardingMemberActionStore";
+  return tmp;
+};
+prototype["hasCompletedActionForChannel"] = function hasCompletedActionForChannel(id, id2) {
+  const completedActions = this.getCompletedActions(id);
+  let tmp2 = null != completedActions;
+  if (tmp2) {
+    tmp2 = null != completedActions[id2];
+  }
+  return tmp2;
+};
+prototype["getState"] = function getState(arg0) {
+  if (null == arg0) {
+    let obj = {};
+  } else {
+    obj = { completedActions: null, loading: null };
+    obj[0] = dependencyMap[arg0];
+    obj[1] = set.has(arg0);
+  }
+  return obj;
+};
+GuildOnboardingMemberActionStore.displayName = "GuildOnboardingMemberActionStore";
 obj = {
   GUILD_NEW_MEMBER_ACTIONS_FETCH_START: function handleMemberActionsFetchStart(guildId) {
     set.add(guildId.guildId);
@@ -92,10 +48,10 @@ obj = {
     let memberActions;
     ({ memberActions, guildId } = arg0);
     if (null != memberActions) {
-      closure_6[guildId] = memberActions;
+      closure_1[guildId] = memberActions;
       set.delete(guildId);
     } else {
-      closure_6[guildId] = obj;
+      closure_1[guildId] = obj;
     }
   },
   GUILD_NEW_MEMBER_ACTIONS_FETCH_FAIL: function handleMemberActionsFetchFail(guildId) {
@@ -127,8 +83,8 @@ obj = {
     }
   }
 };
-tmp3 = new tmp3(require("dispatcher"), obj);
-let result = set.fileFinishedImporting("modules/guild_onboarding_home/GuildOnboardingMemberActionStore.tsx");
+const guildOnboardingMemberActionStore = new GuildOnboardingMemberActionStore(require("dispatcher"), obj);
+const result = set.fileFinishedImporting("modules/guild_onboarding_home/GuildOnboardingMemberActionStore.tsx");
 
-export default tmp3;
+export default guildOnboardingMemberActionStore;
 export const NO_ACTIONS = obj;

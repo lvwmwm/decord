@@ -1,28 +1,28 @@
-// Module ID: 10292
-// Function ID: 79453
+// Module ID: 10313
+// Function ID: 10314
 // Name: resetGuildUnreadFlags
-// Dependencies: [662, 1360, 2]
-// Exports: withChannelUnreadFlags, withGuildUnreadFlags
+// Dependencies: [685, 1384, 2]
+// Exports: resetChannelUnreadFlags, resetGuildUnreadFlags, withChannelUnreadFlags, withGuildUnreadFlags
 
-// Module 10292 (resetGuildUnreadFlags)
+// Module 10313 (resetGuildUnreadFlags)
 import MAX_FAVORITES from "MAX_FAVORITES";
 
-let closure_2;
-let closure_3;
-function resetGuildUnreadFlags(guildFlags) {
-  return importAll(1360).removeFlags(guildFlags, constants.UNREADS_ALL_MESSAGES, constants.UNREADS_ONLY_MENTIONS);
-}
-function resetChannelUnreadFlags(channelIdFlags) {
-  return importAll(1360).removeFlags(channelIdFlags, constants2.UNREADS_ALL_MESSAGES, constants2.UNREADS_ONLY_MENTIONS);
-}
-({ GuildNotificationSettingsFlags: closure_2, ChannelNotificationSettingsFlags: closure_3 } = MAX_FAVORITES);
+let c3;
+let obj1;
+({ GuildNotificationSettingsFlags: obj1, ChannelNotificationSettingsFlags: c3 } = MAX_FAVORITES);
 const result = require("set").fileFinishedImporting("modules/notifications/settings/utils/notificationSettingsFlagUtils.tsx");
 
-export { resetGuildUnreadFlags };
-export const withGuildUnreadFlags = function withGuildUnreadFlags(guildFlags, UNREADS_ONLY_MENTIONS) {
-  return importAll(1360).addFlag(resetGuildUnreadFlags(guildFlags), UNREADS_ONLY_MENTIONS);
+export const resetGuildUnreadFlags = function resetGuildUnreadFlags(setting) {
+  return importAll(1384).removeFlags(setting, constants.UNREADS_ALL_MESSAGES, constants.UNREADS_ONLY_MENTIONS);
 };
-export { resetChannelUnreadFlags };
+export const withGuildUnreadFlags = function withGuildUnreadFlags(guildFlags, UNREADS_ONLY_MENTIONS) {
+  const obj = importAll(1384);
+  return obj.addFlag(importAll(1384).removeFlags(guildFlags, constants.UNREADS_ALL_MESSAGES, constants.UNREADS_ONLY_MENTIONS), UNREADS_ONLY_MENTIONS);
+};
+export const resetChannelUnreadFlags = function resetChannelUnreadFlags(channelIdFlags) {
+  return importAll(1384).removeFlags(channelIdFlags, constants2.UNREADS_ALL_MESSAGES, constants2.UNREADS_ONLY_MENTIONS);
+};
 export const withChannelUnreadFlags = function withChannelUnreadFlags(channelIdFlags, UNREADS_ONLY_MENTIONS) {
-  return importAll(1360).addFlag(resetChannelUnreadFlags(channelIdFlags), UNREADS_ONLY_MENTIONS);
+  const obj = importAll(1384);
+  return obj.addFlag(importAll(1384).removeFlags(channelIdFlags, constants2.UNREADS_ALL_MESSAGES, constants2.UNREADS_ONLY_MENTIONS), UNREADS_ONLY_MENTIONS);
 };

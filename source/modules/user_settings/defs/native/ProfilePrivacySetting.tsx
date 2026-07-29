@@ -1,121 +1,121 @@
-// Module ID: 13860
-// Function ID: 106106
+// Module ID: 13881
+// Function ID: 13882
 // Name: radio
-// Dependencies: [7733, 3838, 12159, 13861, 4133, 13862, 1935, 1212, 1282, 10099, 2]
+// Dependencies: [7756, 3862, 12183, 13882, 4157, 13883, 1959, 1236, 1306, 10120, 2]
 
-// Module 13860 (radio)
+// Module 13881 (radio)
 import createToggle from "createToggle";
 
 const radio = createToggle.createRadio({
   useTitle() {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(require(1212) /* getSystemLocale */.t.Qnf32C);
+    const intl = require(1236) /* getSystemLocale */.intl;
+    return intl.string(require(1236) /* getSystemLocale */.t.Qnf32C);
   },
   parent: require("MobileSetting").MobileSetting.DATA_AND_PRIVACY,
   useValue() {
-    const ProfileVisibility = require(3838) /* explicitContentFromProto */.ProfileVisibility;
+    const ProfileVisibility = require(3862) /* explicitContentFromProto */.ProfileVisibility;
     return ProfileVisibility.useSetting();
   },
   onValueChange(arg0) {
     const NumberResult = Number(arg0);
-    const ProfileVisibility = require(3838) /* explicitContentFromProto */.ProfileVisibility;
+    const ProfileVisibility = require(3862) /* explicitContentFromProto */.ProfileVisibility;
     const setting = ProfileVisibility.getSetting();
-    const ProfileVisibility2 = require(3838) /* explicitContentFromProto */.ProfileVisibility;
+    const ProfileVisibility2 = require(3862) /* explicitContentFromProto */.ProfileVisibility;
     ProfileVisibility2.updateSetting(NumberResult);
-    let obj = require(12159) /* apexExperiment */;
+    let obj = require(12183) /* apexExperiment */;
     if (obj.getIsInPrivateProfilesExperiment("ProfilePrivacySetting")) {
-      const profileToActivityUpsell = require(13861) /* getPermissiveness */.computeProfileToActivityUpsell(setting, NumberResult);
+      const profileToActivityUpsell = tmp2(13882).computeProfileToActivityUpsell(setting, NumberResult);
       if (null != profileToActivityUpsell) {
-        obj = {};
-        ({ direction: obj4.direction, affectedGuildIds: obj4.affectedGuildIds, settingName: obj4.settingName, mappedActivityValue: obj4.mappedActivityValue } = profileToActivityUpsell);
-        importDefault(4133).openLazy(require(1935) /* maybeLoadBundle */(13862, dependencyMap.paths), "ProfileToActivityPrivacyUpsellActionSheet", obj);
-        const obj3 = importDefault(4133);
+        obj = { direction: null, affectedGuildIds: null, settingName: null, mappedActivityValue: null };
+        ({ direction: obj4[0], affectedGuildIds: obj4[1], settingName: obj4[2], mappedActivityValue: obj4[3] } = profileToActivityUpsell);
+        importDefault(4157).openLazy(tmp2(1959)(13883, dependencyMap.paths), "ProfileToActivityPrivacyUpsellActionSheet", obj);
+        const obj3 = importDefault(4157);
       }
-      const obj2 = require(13861) /* getPermissiveness */;
+      const tmp2Result = tmp2(13882);
     }
   },
   useOptions() {
-    let obj = {};
-    const intl = require(1212) /* getSystemLocale */.intl;
-    obj.label = intl.string(require(1212) /* getSystemLocale */.t.Boxc8R);
-    const intl2 = require(1212) /* getSystemLocale */.intl;
-    obj.subLabel = intl2.string(require(1212) /* getSystemLocale */.t["nLj+nc"]);
-    obj.value = require(1282) /* _callSuper */.ProfileVisibility.FRIENDS_AND_ALL_GUILDS;
+    let obj = { label: null, subLabel: null, value: null };
+    const intl = require(1236) /* getSystemLocale */.intl;
+    obj[0] = intl.string(require(1236) /* getSystemLocale */.t.Boxc8R);
+    const intl2 = require(1236) /* getSystemLocale */.intl;
+    obj[1] = intl2.string(require(1236) /* getSystemLocale */.t["nLj+nc"]);
+    obj[2] = require(1306) /* create */.ProfileVisibility.FRIENDS_AND_ALL_GUILDS;
     const items = [obj, , ];
-    obj = {};
-    const intl3 = require(1212) /* getSystemLocale */.intl;
-    obj.label = intl3.string(require(1212) /* getSystemLocale */.t.YOIKBt);
-    const intl4 = require(1212) /* getSystemLocale */.intl;
-    obj.subLabel = intl4.string(require(1212) /* getSystemLocale */.t.y0JZ4s);
-    obj.value = require(1282) /* _callSuper */.ProfileVisibility.FRIENDS_AND_SMALL_GUILDS;
+    obj = { label: null, subLabel: null, value: null };
+    const intl3 = require(1236) /* getSystemLocale */.intl;
+    obj[0] = intl3.string(require(1236) /* getSystemLocale */.t.YOIKBt);
+    const intl4 = require(1236) /* getSystemLocale */.intl;
+    obj[1] = intl4.string(require(1236) /* getSystemLocale */.t.y0JZ4s);
+    obj[2] = require(1306) /* create */.ProfileVisibility.FRIENDS_AND_SMALL_GUILDS;
     items[1] = obj;
-    obj = {};
-    const intl5 = require(1212) /* getSystemLocale */.intl;
-    obj.label = intl5.string(require(1212) /* getSystemLocale */.t.u0nlJv);
-    const intl6 = require(1212) /* getSystemLocale */.intl;
-    obj.subLabel = intl6.string(require(1212) /* getSystemLocale */.t["4jnKHu"]);
-    obj.value = require(1282) /* _callSuper */.ProfileVisibility.FRIENDS_ONLY;
+    obj = { label: null, subLabel: null, value: null };
+    const intl5 = require(1236) /* getSystemLocale */.intl;
+    obj[0] = intl5.string(require(1236) /* getSystemLocale */.t.u0nlJv);
+    const intl6 = require(1236) /* getSystemLocale */.intl;
+    obj[1] = intl6.string(require(1236) /* getSystemLocale */.t["4jnKHu"]);
+    obj[2] = require(1306) /* create */.ProfileVisibility.FRIENDS_ONLY;
     items[2] = obj;
     return items;
   },
   usePredicate() {
-    return require(12159) /* apexExperiment */.useIsInPrivateProfilesExperiment("ProfilePrivacySetting");
+    return require(12183) /* apexExperiment */.useIsInPrivateProfilesExperiment("ProfilePrivacySetting");
   }
 });
 let obj = {
   useTitle() {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(require(1212) /* getSystemLocale */.t.Qnf32C);
+    const intl = require(1236) /* getSystemLocale */.intl;
+    return intl.string(require(1236) /* getSystemLocale */.t.Qnf32C);
   },
   parent: require("MobileSetting").MobileSetting.DATA_AND_PRIVACY,
   useValue() {
-    const ProfileVisibility = require(3838) /* explicitContentFromProto */.ProfileVisibility;
+    const ProfileVisibility = require(3862) /* explicitContentFromProto */.ProfileVisibility;
     return ProfileVisibility.useSetting();
   },
   onValueChange(arg0) {
     const NumberResult = Number(arg0);
-    const ProfileVisibility = require(3838) /* explicitContentFromProto */.ProfileVisibility;
+    const ProfileVisibility = require(3862) /* explicitContentFromProto */.ProfileVisibility;
     const setting = ProfileVisibility.getSetting();
-    const ProfileVisibility2 = require(3838) /* explicitContentFromProto */.ProfileVisibility;
+    const ProfileVisibility2 = require(3862) /* explicitContentFromProto */.ProfileVisibility;
     ProfileVisibility2.updateSetting(NumberResult);
-    let obj = require(12159) /* apexExperiment */;
+    let obj = require(12183) /* apexExperiment */;
     if (obj.getIsInPrivateProfilesExperiment("ProfilePrivacySetting")) {
-      const profileToActivityUpsell = require(13861) /* getPermissiveness */.computeProfileToActivityUpsell(setting, NumberResult);
+      const profileToActivityUpsell = tmp2(13882).computeProfileToActivityUpsell(setting, NumberResult);
       if (null != profileToActivityUpsell) {
-        obj = {};
-        ({ direction: obj4.direction, affectedGuildIds: obj4.affectedGuildIds, settingName: obj4.settingName, mappedActivityValue: obj4.mappedActivityValue } = profileToActivityUpsell);
-        importDefault(4133).openLazy(require(1935) /* maybeLoadBundle */(13862, dependencyMap.paths), "ProfileToActivityPrivacyUpsellActionSheet", obj);
-        const obj3 = importDefault(4133);
+        obj = { direction: null, affectedGuildIds: null, settingName: null, mappedActivityValue: null };
+        ({ direction: obj4[0], affectedGuildIds: obj4[1], settingName: obj4[2], mappedActivityValue: obj4[3] } = profileToActivityUpsell);
+        importDefault(4157).openLazy(tmp2(1959)(13883, dependencyMap.paths), "ProfileToActivityPrivacyUpsellActionSheet", obj);
+        const obj3 = importDefault(4157);
       }
-      const obj2 = require(13861) /* getPermissiveness */;
+      const tmp2Result = tmp2(13882);
     }
   },
   useOptions() {
-    let obj = {};
-    const intl = require(1212) /* getSystemLocale */.intl;
-    obj.label = intl.string(require(1212) /* getSystemLocale */.t.Boxc8R);
-    const intl2 = require(1212) /* getSystemLocale */.intl;
-    obj.subLabel = intl2.string(require(1212) /* getSystemLocale */.t["nLj+nc"]);
-    obj.value = require(1282) /* _callSuper */.ProfileVisibility.FRIENDS_AND_ALL_GUILDS;
+    let obj = { label: null, subLabel: null, value: null };
+    const intl = require(1236) /* getSystemLocale */.intl;
+    obj[0] = intl.string(require(1236) /* getSystemLocale */.t.Boxc8R);
+    const intl2 = require(1236) /* getSystemLocale */.intl;
+    obj[1] = intl2.string(require(1236) /* getSystemLocale */.t["nLj+nc"]);
+    obj[2] = require(1306) /* create */.ProfileVisibility.FRIENDS_AND_ALL_GUILDS;
     const items = [obj, , ];
-    obj = {};
-    const intl3 = require(1212) /* getSystemLocale */.intl;
-    obj.label = intl3.string(require(1212) /* getSystemLocale */.t.YOIKBt);
-    const intl4 = require(1212) /* getSystemLocale */.intl;
-    obj.subLabel = intl4.string(require(1212) /* getSystemLocale */.t.y0JZ4s);
-    obj.value = require(1282) /* _callSuper */.ProfileVisibility.FRIENDS_AND_SMALL_GUILDS;
+    obj = { label: null, subLabel: null, value: null };
+    const intl3 = require(1236) /* getSystemLocale */.intl;
+    obj[0] = intl3.string(require(1236) /* getSystemLocale */.t.YOIKBt);
+    const intl4 = require(1236) /* getSystemLocale */.intl;
+    obj[1] = intl4.string(require(1236) /* getSystemLocale */.t.y0JZ4s);
+    obj[2] = require(1306) /* create */.ProfileVisibility.FRIENDS_AND_SMALL_GUILDS;
     items[1] = obj;
-    obj = {};
-    const intl5 = require(1212) /* getSystemLocale */.intl;
-    obj.label = intl5.string(require(1212) /* getSystemLocale */.t.u0nlJv);
-    const intl6 = require(1212) /* getSystemLocale */.intl;
-    obj.subLabel = intl6.string(require(1212) /* getSystemLocale */.t["4jnKHu"]);
-    obj.value = require(1282) /* _callSuper */.ProfileVisibility.FRIENDS_ONLY;
+    obj = { label: null, subLabel: null, value: null };
+    const intl5 = require(1236) /* getSystemLocale */.intl;
+    obj[0] = intl5.string(require(1236) /* getSystemLocale */.t.u0nlJv);
+    const intl6 = require(1236) /* getSystemLocale */.intl;
+    obj[1] = intl6.string(require(1236) /* getSystemLocale */.t["4jnKHu"]);
+    obj[2] = require(1306) /* create */.ProfileVisibility.FRIENDS_ONLY;
     items[2] = obj;
     return items;
   },
   usePredicate() {
-    return require(12159) /* apexExperiment */.useIsInPrivateProfilesExperiment("ProfilePrivacySetting");
+    return require(12183) /* apexExperiment */.useIsInPrivateProfilesExperiment("ProfilePrivacySetting");
   }
 };
 const result = require("apexExperiment").fileFinishedImporting("modules/user_settings/defs/native/ProfilePrivacySetting.tsx");

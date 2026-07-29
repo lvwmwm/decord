@@ -1,139 +1,164 @@
-// Module ID: 10958
-// Function ID: 84968
+// Module ID: 10982
+// Function ID: 10983
 // Name: BundleUpdaterManager
-// Dependencies: [5, 6, 7, 27, 653, 3, 477, 90, 1935, 4364, 675, 5849, 2]
+// Dependencies: [5, 17, 676, 3, 500, 81, 1959, 4389, 698, 5867, 2]
 
-// Module 10958 (BundleUpdaterManager)
-import timestamp from "timestamp";
-import set from "set";
-import getSourceCodeScriptURL from "getSourceCodeScriptURL";
+// Module 10982 (BundleUpdaterManager)
+import resolveAssetSource from "resolveAssetSource";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { AnalyticEvents } from "ME";
-import importDefaultResult from "get ActivityIndicator";
 
+let NativeEventEmitter;
+let NativeModules;
 const require = arg1;
-importDefaultResult = new importDefaultResult("BundleUpdater");
-const BundleUpdaterManager = get_ActivityIndicator.NativeModules.BundleUpdaterManager;
-const nativeEventEmitter = new get_ActivityIndicator.NativeEventEmitter(BundleUpdaterManager);
-let closure_10 = { downloaded: "BundleDownloaded", otaUpdateChecked: "OtaUpdateChecked" };
-const tmp6 = (() => {
-  class BundleUpdater {
-    constructor() {
-      tmp = outer1_4(this, BundleUpdater);
-      return;
-    }
-  }
-  let obj = {
-    key: "getInitialBundleDownloaded",
-    value() {
-      return outer1_8.getInitialBundleDownloaded();
-    }
-  };
-  let items = [obj, , , , , , , , , , , , ];
-  obj = {
-    key: "getInitialOtaUpdateChecked",
-    value() {
-      return outer1_8.getInitialOtaUpdateChecked();
-    }
-  };
-  items[1] = obj;
-  obj = {
-    key: "addEventListener",
-    value(arg0, arg1) {
-      outer1_9.addListener(outer1_10[arg0], arg1);
-    }
-  };
-  items[2] = obj;
-  items[3] = {
-    key: "checkForUpdateAndReload",
-    value() {
-      const result = outer1_8.checkForUpdateAndReload();
-    }
-  };
-  items[4] = {
-    key: "verifyOtaFiles",
-    value() {
-      return outer1_8.verifyOtaFiles();
-    }
-  };
-  items[5] = {
-    key: "getBuildOverrideCookieContents",
-    value() {
-      return outer1_8.getBuildOverrideCookieContents();
-    }
-  };
-  items[6] = {
-    key: "setBuildOverrideCookieHeader",
-    value(arg0) {
-      return outer1_8.setBuildOverrideCookieHeader(arg0);
-    }
-  };
-  items[7] = {
-    key: "getOtaRootPath",
-    value() {
-      return outer1_8.getOtaRootPath();
-    }
-  };
-  items[8] = {
-    key: "getOtaStatus",
-    value() {
-      return outer1_8.getOtaStatus();
-    }
-  };
-  items[9] = {
-    key: "getManifestInfo",
-    value() {
-      return outer1_8.getManifestInfo();
-    }
-  };
-  const obj8 = { key: "setupOTAAssetFallback" };
-  // CreateGeneratorClosureLongIndex (0x67)
-  let closure_0 = callback("setupOTAAssetFallback");
-  obj8.value = function setupOTAAssetFallback() {
-    return callback(...arguments);
-  };
-  items[10] = obj8;
-  items[11] = {
-    key: "emitOtaMetric",
-    value(arg0) {
-      const match = callback(outer1_2[9]).match(arg0);
-      const str = callback(outer1_2[9]);
-      const withResult = match.with({ type: "OtaCheckAttempt" }, (result) => {
-        outer2_7.verbose("OTA check attempt", result);
-        let obj = BundleUpdater(outer2_2[10]);
-        obj = { result: result.result, duration_seconds: result.durationSeconds, bytes_received: result.bytesReceived, error: result.error, used_streaming: result.usedStreaming };
-        obj.track(outer2_6.MOBILE_OTA_CHECK_ATTEMPT, obj);
-        return BundleUpdater(outer2_2[11]).increment(outer1_1.prepareOtaMetricForDatadog(result, ["result"]));
-      });
-      match.with({ type: "OtaCheckAttempt" }, (result) => {
-        outer2_7.verbose("OTA check attempt", result);
-        let obj = BundleUpdater(outer2_2[10]);
-        obj = { result: result.result, duration_seconds: result.durationSeconds, bytes_received: result.bytesReceived, error: result.error, used_streaming: result.usedStreaming };
-        obj.track(outer2_6.MOBILE_OTA_CHECK_ATTEMPT, obj);
-        return BundleUpdater(outer2_2[11]).increment(outer1_1.prepareOtaMetricForDatadog(result, ["result"]));
-      }).with({ type: "OtaAssetDownloadAttempt" }, (result) => {
-        outer2_7.verbose("OTA asset download attempt", result);
-        let obj = BundleUpdater(outer2_2[10]);
-        obj = { result: result.result, duration_seconds: result.durationSeconds, error: result.error, url: result.url, status_code: result.statusCode, bytes_received: result.bytesReceived };
-        obj.track(outer2_6.MOBILE_OTA_ASSET_DOWNLOAD_ATTEMPT, obj);
-        return BundleUpdater(outer2_2[11]).increment(outer1_1.prepareOtaMetricForDatadog(result, ["result", "statusCode"]));
-      }).exhaustive();
-    }
-  };
-  items[12] = {
-    key: "prepareOtaMetricForDatadog",
-    value(name) {
-      let items = arg1;
-      let closure_0 = name;
-      if (arg1 === undefined) {
-        items = [];
+({ NativeModules, NativeEventEmitter } = get_ActivityIndicator);
+let c5 = new require("timestamp")("BundleUpdater");
+const BundleUpdaterManager = NativeModules.BundleUpdaterManager;
+const nativeEventEmitter = new NativeEventEmitter(BundleUpdaterManager);
+let closure_8 = { downloaded: "BundleDownloaded", otaUpdateChecked: "OtaUpdateChecked" };
+let prototype;
+prototype = function BundleUpdater() {
+  return Object.create(new.target.prototype);
+}.prototype;
+prototype["getInitialBundleDownloaded"] = function getInitialBundleDownloaded() {
+  return BundleUpdaterManager.getInitialBundleDownloaded();
+};
+prototype["getInitialOtaUpdateChecked"] = function getInitialOtaUpdateChecked() {
+  return BundleUpdaterManager.getInitialOtaUpdateChecked();
+};
+prototype["addEventListener"] = function addEventListener(arg0, arg1) {
+  nativeEventEmitter.addListener(table[arg0], arg1);
+};
+prototype["checkForUpdateAndReload"] = function checkForUpdateAndReload() {
+  const result = BundleUpdaterManager.checkForUpdateAndReload();
+};
+prototype["verifyOtaFiles"] = function verifyOtaFiles() {
+  return BundleUpdaterManager.verifyOtaFiles();
+};
+prototype["getBuildOverrideCookieContents"] = function getBuildOverrideCookieContents() {
+  return BundleUpdaterManager.getBuildOverrideCookieContents();
+};
+prototype["setBuildOverrideCookieHeader"] = function setBuildOverrideCookieHeader(set_cookie) {
+  return BundleUpdaterManager.setBuildOverrideCookieHeader(set_cookie);
+};
+prototype["getOtaRootPath"] = function getOtaRootPath() {
+  return BundleUpdaterManager.getOtaRootPath();
+};
+prototype["getOtaStatus"] = function getOtaStatus() {
+  return BundleUpdaterManager.getOtaStatus();
+};
+prototype["getManifestInfo"] = function getManifestInfo() {
+  return BundleUpdaterManager.getManifestInfo();
+};
+prototype["setupOTAAssetFallback"] = function setupOTAAssetFallback() {
+  return callback(function*() {
+    if (c3 === 2) {
+      c3 = 3;
+      HermesBuiltin.throwTypeError();
+    } else if (tmp4 === 3) {
+      if (arg0 === 1) {
+        throw arg1;
+      } else if (arg0 === 2) {
+        let obj = { value: null, done: true };
+        obj[0] = arg1;
+        return obj;
+      } else {
+        return { value: "HermesInternal", done: null };
       }
-      const obj = { name: name.type, tags: items.map((arg0) => "" + arg0 + ":" + name[arg0]) };
-      return obj;
+    } else {
+      try {
+        c3 = 2;
+        if (0 === table) {
+          if (arg0 === 1) {
+            c3 = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            c3 = 3;
+            obj = { value: null, done: true };
+            obj[0] = arg1;
+            return obj;
+          } else {
+            let closure_1 = tmp2;
+            let closure_0;
+            let obj1 = outer1_0(table[4]);
+            if (obj1.isIOS()) {
+              table = 1;
+              c3 = 1;
+              obj1 = { value: null, done: false };
+              obj1[0] = tmp14(tmp15[6])(tmp15[5], tmp15.paths);
+              return obj1;
+            } else {
+              c3 = 3;
+            }
+            tmp14 = outer1_0;
+          }
+        } else if (arg0 === 1) {
+          c3 = 3;
+          throw arg1;
+        } else if (arg0 !== 2) {
+          closure_0 = arg1;
+          closure_0 = _default;
+          let result = closure_0.addCustomSourceTransformer((isLoadedFromFileSystem) => {
+            if (isLoadedFromFileSystem.isLoadedFromFileSystem()) {
+              const result = isLoadedFromFileSystem.scaledAssetURLNearBundle();
+              const resolvedOTAAssetURIResult = closure_6.resolvedOTAAssetURI(result.uri);
+              let tmp5 = null;
+              if (resolvedOTAAssetURIResult !== result.uri) {
+                const obj = {};
+                const merged = Object.assign(result);
+                obj.uri = resolvedOTAAssetURIResult;
+                tmp5 = obj;
+              }
+              return tmp5;
+            } else {
+              return null;
+            }
+          });
+        }
+        c3 = 3;
+        obj = { value: null, done: true };
+        obj[0] = arg1;
+        return obj;
+      } catch (tmp16) {
+        c3 = tmp;
+        throw tmp16;
+      }
     }
-  };
-  return callback2(BundleUpdater, null, items);
-})();
-let result = require("_defineProperties").fileFinishedImporting("lib/native/BundleUpdater.tsx");
+  })();
+};
+prototype["emitOtaMetric"] = function emitOtaMetric(item10010) {
+  const match = require(4389) /* t */.match(item10010);
+  const str = require(4389) /* t */;
+  const withResult = match.with({ type: "OtaCheckAttempt" }, (result) => {
+    closure_5.verbose("OTA check attempt", result);
+    let obj = callback(698);
+    obj = { result: result.result, duration_seconds: result.durationSeconds, bytes_received: result.bytesReceived, error: result.error, used_streaming: result.usedStreaming };
+    obj.track(constants.MOBILE_OTA_CHECK_ATTEMPT, obj);
+    return callback(5867).increment(closure_9.prepareOtaMetricForDatadog(result, ["result"]));
+  });
+  match.with({ type: "OtaCheckAttempt" }, (result) => {
+    closure_5.verbose("OTA check attempt", result);
+    let obj = callback(698);
+    obj = { result: result.result, duration_seconds: result.durationSeconds, bytes_received: result.bytesReceived, error: result.error, used_streaming: result.usedStreaming };
+    obj.track(constants.MOBILE_OTA_CHECK_ATTEMPT, obj);
+    return callback(5867).increment(closure_9.prepareOtaMetricForDatadog(result, ["result"]));
+  }).with({ type: "OtaAssetDownloadAttempt" }, (result) => {
+    closure_5.verbose("OTA asset download attempt", result);
+    let obj = callback(698);
+    obj = { result: result.result, duration_seconds: result.durationSeconds, error: result.error, url: result.url, status_code: result.statusCode, bytes_received: result.bytesReceived };
+    obj.track(constants.MOBILE_OTA_ASSET_DOWNLOAD_ATTEMPT, obj);
+    return callback(5867).increment(closure_9.prepareOtaMetricForDatadog(result, ["result", "statusCode"]));
+  }).exhaustive();
+};
+prototype["prepareOtaMetricForDatadog"] = function prepareOtaMetricForDatadog(name, arg1) {
+  let closure_0 = name;
+  let items = arg1;
+  if (arg1 === undefined) {
+    items = [];
+  }
+  return { name: name.type, tags: items.map((arg0) => "" + arg0 + ":" + name[arg0]) };
+};
+const tmp3 = new require("timestamp")("BundleUpdater");
+let result = require("ME").fileFinishedImporting("lib/native/BundleUpdater.tsx");
 
-export default tmp6;
+export default prototype;

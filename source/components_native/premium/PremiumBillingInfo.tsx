@@ -1,99 +1,105 @@
-// Module ID: 6530
-// Function ID: 58155
+// Module ID: 6551
+// Function ID: 6552
 // Name: GoogleManagementLink
-// Dependencies: [57, 31, 27, 653, 33, 4165, 689, 3824, 4161, 1212, 3811, 6526, 5497, 5517, 6531, 6536, 2]
+// Dependencies: [32, 19, 17, 676, 21, 4189, 712, 3848, 4185, 1236, 3835, 6547, 5515, 5535, 6552, 6557, 2]
 // Exports: default
 
-// Module 6530 (GoogleManagementLink)
+// Module 6551 (GoogleManagementLink)
 import _slicedToArray from "_slicedToArray";
-import "result";
+import "noop";
 import { View } from "get ActivityIndicator";
 import ME from "ME";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
 let USER_SETTINGS_CONTAINER_HORIZONTAL_PADDING;
-let closure_5;
+let c5;
 let closure_6;
-let closure_7;
+let error;
 const require = arg1;
 class GoogleManagementLink {
   constructor(arg0) {
     subscription = global.subscription;
+    tmp = closure_0;
+    tmp2 = closure_2;
     obj = require("isPremiumGiftingSupported");
-    tmp = null;
+    tmp3 = null;
     if (obj.isGooglePlayBillingSupported()) {
-      tmp = null;
+      tmp3 = null;
       if (subscription.isPurchasedViaGoogle) {
-        tmp2 = jsx;
-        tmp3 = closure_0;
-        tmp4 = closure_2;
-        num = 8;
-        obj = { style: null, variant: "text-sm/medium", color: "text-link" };
+        tmp4 = jsx;
+        obj = { style: null, variant: "text-sm/medium", color: "text-link", children: null };
         items = [];
         items[0] = global.style;
-        obj.style = items;
-        num2 = 9;
+        obj[0] = items;
         intl = require("getSystemLocale").intl;
-        obj1 = {};
-        num3 = 10;
-        obj4 = require("_createForOfIteratorHelperLoose");
+        obj1 = { onClick: null };
+        tmpResult = require("getPremiumPlanItem");
         str = "SUBSCRIPTION_MANAGEMENT";
-        obj1.onClick = obj4.getExternalSubscriptionMethodUrl(subscription.paymentGateway, "SUBSCRIPTION_MANAGEMENT");
-        obj.children = intl.format(require("getSystemLocale").t["9NPc+O"], obj1);
-        tmp = jsx(require("Text").Text, obj);
+        obj1[0] = tmpResult.getExternalSubscriptionMethodUrl(subscription.paymentGateway, "SUBSCRIPTION_MANAGEMENT");
+        obj[3] = intl.format(require("getSystemLocale").t["9NPc+O"], obj1);
+        tmp3 = jsx(require("Text").Text, obj);
       }
     }
-    return tmp;
+    return tmp3;
   }
 }
-({ SubscriptionStatusTypes: closure_5, USER_SETTINGS_CONTAINER_HORIZONTAL_PADDING } = ME);
-({ jsx: closure_6, jsxs: closure_7 } = jsxProd);
-_createForOfIteratorHelperLoose = { title: { paddingHorizontal: USER_SETTINGS_CONTAINER_HORIZONTAL_PADDING }, externalSubtext: { marginTop: 8, paddingHorizontal: USER_SETTINGS_CONTAINER_HORIZONTAL_PADDING } };
-_createForOfIteratorHelperLoose = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SURFACE_HIGH, padding: 16, marginTop: 8 };
-_createForOfIteratorHelperLoose.billingContainer = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.billingRenewalInfo = { marginTop: 4 };
-_createForOfIteratorHelperLoose.billingManageGoogle = { marginTop: 8 };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+({ SubscriptionStatusTypes: c5, USER_SETTINGS_CONTAINER_HORIZONTAL_PADDING } = ME);
+({ jsx: closure_6, jsxs: error } = jsxProd);
+createCacheKey = { title: { paddingHorizontal: USER_SETTINGS_CONTAINER_HORIZONTAL_PADDING }, externalSubtext: { marginTop: 8, paddingHorizontal: USER_SETTINGS_CONTAINER_HORIZONTAL_PADDING }, billingContainer: null, billingRenewalInfo: null, billingManageGoogle: null };
+createCacheKey = { backgroundColor: require("Themes").colors.BACKGROUND_SURFACE_HIGH, padding: 16, marginTop: 8 };
+createCacheKey[2] = createCacheKey;
+createCacheKey[3] = { marginTop: 4 };
+createCacheKey[4] = { marginTop: 8 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
 const result = require("get ActivityIndicator").fileFinishedImporting("components_native/premium/PremiumBillingInfo.tsx");
 
 export default function PremiumBillingInfo(subscription) {
   subscription = subscription.subscription;
-  const tmp = _createForOfIteratorHelperLoose();
-  let obj = require(6526) /* createSubscriptionInvoicePreview */;
-  obj = { subscriptionId: subscription.id, renewal: true, applyEntitlements: true, analyticsLocations: importDefault(5497)(), analyticsLocation: importDefault(5517).PREMIUM_BILLING_INFO };
+  const tmp = createCacheKey();
+  let obj = require(6547) /* createSubscriptionInvoicePreview */;
+  obj = { subscriptionId: subscription.id, renewal: true, applyEntitlements: true, analyticsLocations: importDefault(5515)(), analyticsLocation: importDefault(5535).PREMIUM_BILLING_INFO };
   const first = callback(obj.useFetchSubscriptionInvoicePreview(obj), 1)[0];
-  require(6526) /* createSubscriptionInvoicePreview */;
+  require(6547) /* createSubscriptionInvoicePreview */;
   if (null == first) {
     return null;
   } else {
-    let obj3 = require(6531) /* getPremiumManagementMethod */;
-    obj = { shouldAllowExternalManagement: true };
-    const externalManagementMessage = obj3.getExternalManagementMessage(subscription, obj);
-    const obj1 = { style: subscription.style };
-    const obj2 = { style: tmp.title, accessibilityRole: "header", variant: "eyebrow", color: "text-default" };
-    const intl = require(1212) /* getSystemLocale */.intl;
-    obj2.children = intl.string(require(1212) /* getSystemLocale */.t.Sb6wI1);
-    const items = [callback2(require(4161) /* Text */.Text, obj2), , ];
-    obj3 = { style: tmp.billingContainer };
-    const obj4 = { variant: "text-md/semibold" };
-    const intl2 = require(1212) /* getSystemLocale */.intl;
-    obj4.children = intl2.string(require(1212) /* getSystemLocale */.t.KXQjfc);
-    const items1 = [callback2(require(4161) /* Text */.Text, obj4), , ];
-    const obj5 = { style: tmp.billingRenewalInfo, variant: "text-sm/medium", children: require(6536) /* getBillingInformationStringNative */.getBillingInformationStringNative(subscription, first, tmp4) };
-    items1[1] = callback2(require(4161) /* Text */.Text, obj5);
-    const obj6 = { style: tmp.billingManageGoogle, subscription };
-    items1[2] = callback2(GoogleManagementLink, obj6);
-    obj3.children = items1;
-    items[1] = callback3(View, obj3);
-    let tmp8 = null;
+    let tmp2Result = tmp2(6552);
+    const externalManagementMessage = tmp2Result.getExternalManagementMessage(subscription, { shouldAllowExternalManagement: true });
+    obj = { style: null, children: null };
+    obj[0] = subscription.style;
+    const obj1 = { style: null, accessibilityRole: "header", variant: "eyebrow", color: "text-default", children: null };
+    obj1[0] = tmp.title;
+    const intl = tmp2(1236).intl;
+    obj1[4] = intl.string(tmp2(1236).t.Sb6wI1);
+    const items = [callback2(tmp2(4185).Text, obj1), , ];
+    const obj2 = { style: null, children: null };
+    obj2[0] = tmp.billingContainer;
+    const obj3 = { variant: "text-md/semibold", children: null };
+    const intl2 = tmp2(1236).intl;
+    obj3[1] = intl2.string(tmp2(1236).t.KXQjfc);
+    const items1 = [callback2(tmp2(4185).Text, obj3), , ];
+    const obj4 = { style: null, variant: "text-sm/medium", children: null };
+    obj4[0] = tmp.billingRenewalInfo;
+    tmp2Result = tmp2(6557);
+    obj4[2] = tmp2Result.getBillingInformationStringNative(subscription, first, tmp6);
+    items1[1] = callback2(tmp2(4185).Text, obj4);
+    const obj5 = { style: null, subscription: null };
+    obj5[0] = tmp.billingManageGoogle;
+    obj5[1] = subscription;
+    items1[2] = callback2(GoogleManagementLink, obj5);
+    obj2[1] = items1;
+    items[1] = callback3(View, obj2);
+    let tmp11Result = null;
     if (null != externalManagementMessage) {
-      const obj7 = { style: tmp.externalSubtext, variant: "text-sm/medium", children: externalManagementMessage };
-      tmp8 = callback2(require(4161) /* Text */.Text, obj7);
+      const obj6 = { style: null, variant: "text-sm/medium", children: null };
+      obj6[0] = tmp.externalSubtext;
+      obj6[2] = externalManagementMessage;
+      tmp11Result = callback2(tmp2(4185).Text, obj6);
     }
-    items[2] = tmp8;
-    obj1.children = items;
-    return callback3(View, obj1);
+    items[2] = tmp11Result;
+    obj[1] = items;
+    return callback3(View, obj);
   }
 };
 export { GoogleManagementLink };

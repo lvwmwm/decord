@@ -1,15 +1,16 @@
-// Module ID: 3964
-// Function ID: 32541
+// Module ID: 3988
+// Function ID: 3989
 // Name: MicrophoneRive
-// Dependencies: [29, 31, 33, 3894, 3965, 3945, 2]
+// Dependencies: [109, 19, 21, 3918, 3989, 3969, 2]
 
-// Module 3964 (MicrophoneRive)
+// Module 3988 (MicrophoneRive)
 import _objectWithoutProperties from "_objectWithoutProperties";
-import importAllResult from "result";
+import importAllResult from "noop";
 import { jsx } from "jsxProd";
 
 const require = arg1;
 let closure_3 = ["fallback", "artboard", "stateMachine", "defaultViewModelInstance", "dataBinding", "onDataBindingChange"];
+let c5 = importAllResult;
 let closure_7 = { "Icon Microphone": { reducedMotion: "boolean", fill: "color", on: "boolean" }, "Animation Main": { reducedMotion: "boolean", fill: "color", on: "boolean" } };
 let closure_8 = { "Icon Microphone": ["Off", "On"], "Animation Main": ["Off", "On"] };
 let closure_9 = {
@@ -19,27 +20,28 @@ let closure_9 = {
     let onDataBindingChange;
     let playIfNeeded;
     ({ instance, dataBinding, onDataBindingChange, playIfNeeded } = reducedMotionEnabled);
-    const booleanBinding = require(3894) /* useObservedValue */.useBooleanBinding("reducedMotion", instance, reducedMotionEnabled.reducedMotionEnabled, undefined, playIfNeeded);
-    const obj = require(3894) /* useObservedValue */;
+    const booleanBinding = require(3918) /* BaseRive */.useBooleanBinding("reducedMotion", instance, reducedMotionEnabled.reducedMotionEnabled, undefined, playIfNeeded);
+    const obj = require(3918) /* BaseRive */;
+    const tmp = require;
     let fill;
-    if (null != dataBinding) {
+    if (dataBinding != null) {
       fill = dataBinding.fill;
     }
     let fill1;
-    if (null != onDataBindingChange) {
+    if (onDataBindingChange != null) {
       fill1 = onDataBindingChange.fill;
     }
-    const colorBinding = require(3894) /* useObservedValue */.useColorBinding("fill", instance, fill, fill1, playIfNeeded);
-    const obj2 = require(3894) /* useObservedValue */;
+    const colorBinding = require(3918) /* BaseRive */.useColorBinding("fill", instance, fill, fill1, playIfNeeded);
+    const obj2 = require(3918) /* BaseRive */;
     let on;
-    if (null != dataBinding) {
+    if (dataBinding != null) {
       on = dataBinding.on;
     }
     let on1;
-    if (null != onDataBindingChange) {
+    if (onDataBindingChange != null) {
       on1 = onDataBindingChange.on;
     }
-    const booleanBinding1 = require(3894) /* useObservedValue */.useBooleanBinding("on", instance, on, on1, playIfNeeded);
+    const booleanBinding1 = tmp(3918).useBooleanBinding("on", instance, on, on1, playIfNeeded);
     return null;
   },
   "Animation Main": function AnimationMainBindings(reducedMotionEnabled) {
@@ -48,27 +50,28 @@ let closure_9 = {
     let onDataBindingChange;
     let playIfNeeded;
     ({ instance, dataBinding, onDataBindingChange, playIfNeeded } = reducedMotionEnabled);
-    const booleanBinding = require(3894) /* useObservedValue */.useBooleanBinding("reducedMotion", instance, reducedMotionEnabled.reducedMotionEnabled, undefined, playIfNeeded);
-    const obj = require(3894) /* useObservedValue */;
+    const booleanBinding = require(3918) /* BaseRive */.useBooleanBinding("reducedMotion", instance, reducedMotionEnabled.reducedMotionEnabled, undefined, playIfNeeded);
+    const obj = require(3918) /* BaseRive */;
+    const tmp = require;
     let fill;
-    if (null != dataBinding) {
+    if (dataBinding != null) {
       fill = dataBinding.fill;
     }
     let fill1;
-    if (null != onDataBindingChange) {
+    if (onDataBindingChange != null) {
       fill1 = onDataBindingChange.fill;
     }
-    const colorBinding = require(3894) /* useObservedValue */.useColorBinding("fill", instance, fill, fill1, playIfNeeded);
-    const obj2 = require(3894) /* useObservedValue */;
+    const colorBinding = require(3918) /* BaseRive */.useColorBinding("fill", instance, fill, fill1, playIfNeeded);
+    const obj2 = require(3918) /* BaseRive */;
     let on;
-    if (null != dataBinding) {
+    if (dataBinding != null) {
       on = dataBinding.on;
     }
     let on1;
-    if (null != onDataBindingChange) {
+    if (onDataBindingChange != null) {
       on1 = onDataBindingChange.on;
     }
-    const booleanBinding1 = require(3894) /* useObservedValue */.useBooleanBinding("on", instance, on, on1, playIfNeeded);
+    const booleanBinding1 = tmp(3918).useBooleanBinding("on", instance, on, on1, playIfNeeded);
     return null;
   }
 };
@@ -93,22 +96,29 @@ let closure_10 = importAllResult.forwardRef(function MicrophoneRiveInner(default
     if (null != outer1_9[str]) {
       const obj = {};
       const merged = Object.assign(arg0);
-      obj["dataBinding"] = dataBinding;
-      obj["onDataBindingChange"] = onDataBindingChange;
+      obj.dataBinding = dataBinding;
+      obj.onDataBindingChange = onDataBindingChange;
       tmp2 = outer1_6(tmp, obj);
     }
     return tmp2;
   }, items);
-  let obj = { ref, src: dataBinding(onDataBindingChange[4]), artboard: str, artboardProperties: closure_7, artboardViewModelInstances: closure_8, defaultViewModelInstance: str2, stateMachine: defaultViewModelInstance.stateMachine, renderDataBinding: callback };
+  let obj = { ref, src: null, artboard: null, artboardProperties: null, artboardViewModelInstances: null, defaultViewModelInstance: null, stateMachine: null, renderDataBinding: null };
+  obj[1] = dataBinding(onDataBindingChange[4]);
+  obj[2] = str;
+  obj[3] = closure_7;
+  obj[4] = closure_8;
+  obj[5] = str2;
+  obj[6] = defaultViewModelInstance.stateMachine;
+  obj[7] = callback;
   let merged = Object.assign(callback(defaultViewModelInstance, closure_3));
-  return jsx(str(onDataBindingChange[3]).BaseRive, { ref, src: dataBinding(onDataBindingChange[4]), artboard: str, artboardProperties: closure_7, artboardViewModelInstances: closure_8, defaultViewModelInstance: str2, stateMachine: defaultViewModelInstance.stateMachine, renderDataBinding: callback });
+  return jsx(str(onDataBindingChange[3]).BaseRive, { ref, src: null, artboard: null, artboardProperties: null, artboardViewModelInstances: null, defaultViewModelInstance: null, stateMachine: null, renderDataBinding: null });
 });
 const forwardRefResult = importAllResult.forwardRef(function MicrophoneRiveWithBoundary(fallback, ref) {
-  let obj = { fallback: fallback.fallback };
+  let obj = { fallback: fallback.fallback, children: null };
   obj = { ref };
   const merged = Object.assign(fallback);
-  obj.children = <closure_10 ref={arg1} />;
-  return jsx(require(3945) /* _isNativeReflectConstruct */.RiveErrorBoundary, { ref });
+  obj[1] = <closure_10 ref={arg1} />;
+  return jsx(require(3969) /* getDerivedStateFromError */.RiveErrorBoundary, { ref });
 });
 const result = require("jsxProd").fileFinishedImporting("../discord_common/js/packages/design/components/Rive/native/generated/MicrophoneRive.tsx");
 

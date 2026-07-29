@@ -1,62 +1,22 @@
-// Module ID: 12257
-// Function ID: 95660
-// Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 12258, 566, 686, 2]
+// Module ID: 12281
+// Function ID: 12282
+// Name: getOne
+// Dependencies: [12282, 589, 709, 2]
 
-// Module 12257 (_isNativeReflectConstruct)
-import initialize from "initialize";
-import dispatcher from "dispatcher";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
-import CustomActivityLinkRecord from "CustomActivityLinkRecord";
+// Module 12281 (getOne)
+import getAssetURL from "getAssetURL";
+import { Store } from "initialize";
 
-function _isNativeReflectConstruct() {
-  let initialize = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return initialize;
-  }
-  const result = _isNativeReflectConstruct();
+let closure_1 = {};
+class CustomActivityLinksStore extends Store {
 }
-let closure_6 = {};
-let tmp2 = ((Store) => {
-  class CustomActivityLinksStore {
-    constructor() {
-      self = this;
-      tmp = CustomActivityLinksStore(this, CustomActivityLinksStore);
-      obj = outer1_3(CustomActivityLinksStore);
-      tmp2 = outer1_2;
-      if (outer1_7()) {
-        tmp6 = globalThis;
-        _Reflect = Reflect;
-        tmp7 = outer1_3;
-        tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, outer1_3(self).constructor);
-      } else {
-        tmp3 = arguments;
-        tmp4 = arguments;
-        constructResult = obj(...arguments);
-      }
-      return tmp2(self, constructResult);
-    }
+CustomActivityLinksStore.prototype["getOne"] = function getOne(id, linkId) {
+  if (null != dependencyMap[id]) {
+    return dependencyMap[id][linkId];
   }
-  callback2(CustomActivityLinksStore, Store);
-  const items = [
-    {
-      key: "getOne",
-      value(arg0, arg1) {
-        if (null != outer1_6[arg0]) {
-          return outer1_6[arg0][arg1];
-        }
-      }
-    }
-  ];
-  return callback(CustomActivityLinksStore, items);
-})(require("initialize").Store);
-tmp2.displayName = "CustomActivityLinksStore";
-tmp2 = new tmp2(require("dispatcher"), {
+};
+CustomActivityLinksStore.displayName = "CustomActivityLinksStore";
+const customActivityLinksStore = new CustomActivityLinksStore(require("dispatcher"), {
   CUSTOM_ACTIVITY_LINK_FETCH_SUCCESS: function handleFetchSuccess(arg0) {
     let applicationId;
     let link;
@@ -65,12 +25,12 @@ tmp2 = new tmp2(require("dispatcher"), {
       const _Object = Object;
       dependencyMap[applicationId] = Object.create(null);
     }
-    dependencyMap[applicationId][link.link_id] = new CustomActivityLinkRecord(link);
+    dependencyMap[applicationId][link.link_id] = new getAssetURL(link);
   },
   LOGOUT: function handleLogout() {
-    let closure_6 = {};
+    let closure_1 = {};
   }
 });
-let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/activities/stores/CustomActivityLinksStore.tsx");
+const result = require("dispatcher").fileFinishedImporting("modules/activities/stores/CustomActivityLinksStore.tsx");
 
-export default tmp2;
+export default customActivityLinksStore;

@@ -1,138 +1,86 @@
-// Module ID: 1279
-// Function ID: 14448
-// Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 653, 566, 587, 22, 686, 2]
+// Module ID: 1303
+// Function ID: 1304
+// Name: initialize
+// Dependencies: [676, 589, 595, 12, 709, 2]
 
-// Module 1279 (_isNativeReflectConstruct)
-import initialize from "initialize";
-import Storage from "Storage";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
+// Module 1303 (initialize)
 import { UserSettingsSections } from "ME";
+import { PersistedStore } from "initialize";
 
-const require = arg1;
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
-  }
-  const result = _isNativeReflectConstruct();
+let closure_4 = {};
+class SelectivelySyncedUserSettingsStore extends PersistedStore {
 }
-let closure_9 = {};
-let tmp2 = ((PersistedStore) => {
-  class SelectivelySyncedUserSettingsStore {
-    constructor() {
-      self = this;
-      tmp = outer1_3(this, SelectivelySyncedUserSettingsStore);
-      obj = outer1_6(SelectivelySyncedUserSettingsStore);
-      tmp2 = outer1_5;
-      if (outer1_10()) {
-        tmp6 = globalThis;
-        _Reflect = Reflect;
-        tmp7 = outer1_6;
-        tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, outer1_6(self).constructor);
-      } else {
-        tmp3 = arguments;
-        tmp4 = arguments;
-        constructResult = obj(...arguments);
-      }
-      return tmp2(self, constructResult);
-    }
+const prototype = SelectivelySyncedUserSettingsStore.prototype;
+prototype["initialize"] = function initialize(arg0) {
+  let obj = arg0;
+  if (arg0 == null) {
+    obj = {};
   }
-  callback2(SelectivelySyncedUserSettingsStore, PersistedStore);
-  let obj = {
-    key: "initialize",
-    value(arg0) {
-      let obj = arg0;
-      if (null == arg0) {
-        obj = {};
-      }
-      const outer1_9 = obj;
-    }
-  };
-  const items = [obj, , , , ];
-  obj = {
-    key: "getState",
-    value() {
-      return outer1_9;
-    }
-  };
-  items[1] = obj;
-  obj = {
-    key: "shouldSync",
-    value(arg0) {
-      let shouldSync;
-      if (null != outer1_9[arg0]) {
-        shouldSync = tmp.shouldSync;
-      }
-      return false !== shouldSync;
-    }
-  };
-  items[2] = obj;
-  items[3] = {
-    key: "getTextSettings",
-    value() {
-      const text = outer1_9.text;
-      let settings;
-      if (null != text) {
-        settings = text.settings;
-      }
-      return settings;
-    }
-  };
-  items[4] = {
-    key: "getAppearanceSettings",
-    value() {
-      const appearance = outer1_9.appearance;
-      let settings;
-      if (null != appearance) {
-        settings = appearance.settings;
-      }
-      return settings;
-    }
-  };
-  return callback(SelectivelySyncedUserSettingsStore, items);
-})(require("initialize").PersistedStore);
-tmp2.displayName = "SelectivelySyncedUserSettingsStore";
-tmp2.persistKey = "SelectivelySyncedUserSettingsStore";
-let items = [
+};
+prototype["getState"] = function getState() {
+  return closure_4;
+};
+prototype["shouldSync"] = function shouldSync(appearance) {
+  let shouldSync;
+  if (closure_4[appearance] != null) {
+    shouldSync = tmp.shouldSync;
+  }
+  return false !== shouldSync;
+};
+prototype["getTextSettings"] = function getTextSettings() {
+  const text = closure_4.text;
+  let settings;
+  if (text != null) {
+    settings = text.settings;
+  }
+  return settings;
+};
+prototype["getAppearanceSettings"] = function getAppearanceSettings() {
+  const appearance = closure_4.appearance;
+  let settings;
+  if (appearance != null) {
+    settings = appearance.settings;
+  }
+  return settings;
+};
+SelectivelySyncedUserSettingsStore.displayName = "SelectivelySyncedUserSettingsStore";
+SelectivelySyncedUserSettingsStore.persistKey = "SelectivelySyncedUserSettingsStore";
+const items = [
   () => {
-    const Storage = require(587) /* Storage */.Storage;
+    const Storage = require(595) /* Storage */.Storage;
     let obj = Storage.get("UserSettingsSync");
-    if (null == obj) {
+    if (obj == null) {
       obj = {};
     }
-    const Storage2 = require(587) /* Storage */.Storage;
+    const Storage2 = tmp(595).Storage;
     let value = Storage2.get("UserSettingsStore");
-    if (null == value) {
+    if (value == null) {
       value = {};
     }
-    const Storage3 = require(587) /* Storage */.Storage;
+    const Storage3 = tmp(595).Storage;
     Storage3.remove("UserSettingsSync");
     obj = {};
     if (false === obj[UserSettingsSections.TEXT]) {
-      const obj1 = { shouldSync: false, settings: importDefault(22).pick(value, ["inlineAttachmentMedia", "inlineEmbedMedia", "renderEmbeds", "renderReactions", "animateEmoji", "animateStickers", "gifAutoPlay", "defaultReactionEmoji"]) };
+      const obj1 = { shouldSync: false, settings: null };
+      obj1[1] = importDefault(12).pick(value, ["inlineAttachmentMedia", "inlineEmbedMedia", "renderEmbeds", "renderReactions", "animateEmoji", "animateStickers", "gifAutoPlay", "defaultReactionEmoji"]);
       obj.text = obj1;
-      const obj5 = importDefault(22);
+      const obj5 = importDefault(12);
     }
-    if (false === obj[UserSettingsSections.APPEARANCE]) {
-      const obj2 = { shouldSync: false, settings: importDefault(22).pick(value, ["theme", "clientThemeSettings", "developerMode"]) };
+    if (false === obj[tmp4.APPEARANCE]) {
+      const obj2 = { shouldSync: false, settings: null };
+      obj2[1] = importDefault(12).pick(value, ["theme", "clientThemeSettings", "developerMode"]);
       obj.appearance = obj2;
-      const obj7 = importDefault(22);
+      const obj7 = importDefault(12);
     }
     return obj;
   },
   (appearance) => {
     let theme;
-    if (null != appearance) {
+    if (appearance != null) {
       appearance = appearance.appearance;
-      if (null != appearance) {
+      if (appearance != null) {
         const settings = appearance.settings;
-        if (null != settings) {
+        if (settings != null) {
           theme = settings.theme;
         }
       }
@@ -144,52 +92,49 @@ let items = [
       const merged1 = Object.assign(appearance.appearance);
       obj = {};
       const merged2 = Object.assign(appearance.appearance.settings);
-      obj["theme"] = "midnight";
-      obj["settings"] = obj;
-      obj["appearance"] = obj;
+      obj.theme = "midnight";
+      obj.settings = obj;
+      obj.appearance = obj;
       return obj;
     }
   }
 ];
-tmp2.migrations = items;
-tmp2 = new tmp2(require("dispatcher"), {
+SelectivelySyncedUserSettingsStore.migrations = items;
+const selectivelySyncedUserSettingsStore = new SelectivelySyncedUserSettingsStore(require("dispatcher"), {
   SELECTIVELY_SYNCED_USER_SETTINGS_UPDATE: function handleSelectivelySyncedUserSettingsUpdate(changes) {
     let settings;
     let shouldSync;
     changes = changes.changes;
-    for (const key10009 in changes) {
-      let tmp14 = key10009;
-      ({ shouldSync, settings } = changes[key10009]);
+    for (const key10008 in changes) {
+      let tmp12 = key10008;
+      ({ shouldSync, settings } = changes[key10008]);
       if (true !== shouldSync) {
         if (false === shouldSync) {
-          let tmp4 = dependencyMap;
-          let obj = { shouldSync };
-          shouldSync = {};
-          obj.settings = shouldSync;
-          dependencyMap[key10009] = obj;
+          let tmp5 = closure_4;
+          let obj = { shouldSync: null, settings: null };
+          obj[0] = shouldSync;
+          obj[1] = {};
+          closure_4[key10008] = obj;
         }
-        let tmp5 = dependencyMap;
-        let tmp6 = dependencyMap[key10009];
+        let tmp6 = closure_4;
+        let tmp7 = closure_4[key10008];
         shouldSync = undefined;
-        if (null != tmp6) {
-          shouldSync = tmp6.shouldSync;
+        if (tmp7 != null) {
+          shouldSync = tmp7.shouldSync;
         }
-        let tmp8 = tmp6;
         if (false !== shouldSync) {
           continue;
         } else {
           let tmp9 = settings;
-          let tmp10 = tmp6;
           let keys = Object.keys();
           if (keys === undefined) {
             continue;
           } else {
-            let tmp12 = tmp6;
-            let tmp13 = keys[shouldSync];
-            while (tmp13 !== undefined) {
-              let tmp15 = tmp13;
-              let tmp16 = dependencyMap;
-              dependencyMap[key10009].settings[tmp13] = settings[tmp13];
+            let tmp11 = keys[tmp];
+            while (tmp11 !== undefined) {
+              let tmp13 = tmp11;
+              let tmp14 = closure_4;
+              closure_4[key10008].settings[tmp11] = settings[tmp11];
               continue;
             }
           }
@@ -197,17 +142,17 @@ tmp2 = new tmp2(require("dispatcher"), {
         }
         continue;
       } else {
-        let tmp3 = dependencyMap;
-        delete tmp[tmp2];
+        let tmp4 = closure_4;
+        delete tmp2[tmp3];
         continue;
       }
       continue;
     }
   },
   LOGOUT: function handleLogOut() {
-    let closure_9 = {};
+    let closure_4 = {};
   }
 });
-let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/user_settings/SelectivelySyncedUserSettingsStore.tsx");
+const result = require("Storage").fileFinishedImporting("modules/user_settings/SelectivelySyncedUserSettingsStore.tsx");
 
-export default tmp2;
+export default selectivelySyncedUserSettingsStore;

@@ -1,10 +1,10 @@
-// Module ID: 10779
-// Function ID: 83549
+// Module ID: 10803
+// Function ID: 10804
 // Name: coercePlatformTypeToConsoleType
-// Dependencies: [8921, 653, 2]
+// Dependencies: [8945, 676, 2]
 // Exports: coerceConsoleTypeToPlatformType, coercePlatformTypeToConsoleType
 
-// Module 10779 (coercePlatformTypeToConsoleType)
+// Module 10803 (coercePlatformTypeToConsoleType)
 import { GameConsoleTypes } from "XBOX_URL_BASE";
 import { PlatformTypes } from "ME";
 
@@ -14,26 +14,26 @@ export const coercePlatformTypeToConsoleType = function coercePlatformTypeToCons
   if (PlatformTypes.XBOX === type) {
     return GameConsoleTypes.XBOX;
   } else {
-    if (PlatformTypes.PLAYSTATION !== type) {
-      if (PlatformTypes.PLAYSTATION_STAGING !== type) {
+    if (tmp.PLAYSTATION !== type) {
+      if (tmp.PLAYSTATION_STAGING !== type) {
         return null;
       }
     }
     return GameConsoleTypes.PLAYSTATION;
   }
 };
-export const coerceConsoleTypeToPlatformType = function coerceConsoleTypeToPlatformType(stateFromStores1, closure_3) {
-  if (GameConsoleTypes.XBOX === stateFromStores1) {
+export const coerceConsoleTypeToPlatformType = function coerceConsoleTypeToPlatformType(arg0, c3) {
+  if (GameConsoleTypes.XBOX === arg0) {
     return PlatformTypes.XBOX;
-  } else if (GameConsoleTypes.PLAYSTATION === stateFromStores1) {
-    if (!closure_3.some((type) => type.type === outer1_1.PLAYSTATION && type.twoWayLink)) {
+  } else if (tmp.PLAYSTATION === arg0) {
+    if (!c3.some((type) => type.type === constants.PLAYSTATION && type.twoWayLink)) {
       if (someResult) {
         let PLAYSTATION = PlatformTypes.PLAYSTATION_STAGING;
       }
       return PLAYSTATION;
     }
     PLAYSTATION = PlatformTypes.PLAYSTATION;
-    someResult = closure_3.some((type) => type.type === outer1_1.PLAYSTATION_STAGING && type.twoWayLink);
+    someResult = c3.some((type) => type.type === constants.PLAYSTATION_STAGING && type.twoWayLink);
   } else {
     return null;
   }

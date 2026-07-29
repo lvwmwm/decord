@@ -1,61 +1,64 @@
-// Module ID: 8800
-// Function ID: 69447
+// Module ID: 8824
+// Function ID: 8825
 // Name: useGradientBottom
-// Dependencies: [31, 4165, 3976, 8801, 2]
+// Dependencies: [19, 4189, 4000, 8825, 2]
 // Exports: useClientThemesOverride, useGradientBottom, useGradientMidpoint, useGradientTop
 
-// Module 8800 (useGradientBottom)
-import result from "result";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+// Module 8824 (useGradientBottom)
+import noop from "noop";
+import createCacheKey from "createCacheKey";
 
 const require = arg1;
-let closure_4 = _createForOfIteratorHelperLoose.createStyles({ none: { backgroundColor: "transparent" } });
-const result = require("colorToHex").fileFinishedImporting("modules/client_themes/native/ClientThemesOverrides.tsx");
+let closure_4 = createCacheKey.createStyles({ none: { backgroundColor: "transparent" } });
+const result = require("getGradientColorByPercentage").fileFinishedImporting("modules/client_themes/native/ClientThemesOverrides.tsx");
 
 export const useGradientBottom = function useGradientBottom() {
-  gradientValue = gradientValue(3976).useGradientValue(gradientValue(3976).GradientPercentage.END);
+  gradientValue = gradientValue(4000).useGradientValue(gradientValue(4000).GradientPercentage.END);
   const items = [gradientValue];
   return React.useMemo(() => {
-    let tmp;
+    let tmp2;
     if (null != gradientValue) {
-      const obj = { backgroundColor: gradientValue };
-      tmp = obj;
+      const obj = { backgroundColor: null };
+      obj[0] = tmp;
+      tmp2 = obj;
     }
-    return tmp;
+    return tmp2;
   }, items);
 };
 export const useGradientTop = function useGradientTop() {
-  gradientValue = gradientValue(3976).useGradientValue(gradientValue(3976).GradientPercentage.START);
+  gradientValue = gradientValue(4000).useGradientValue(gradientValue(4000).GradientPercentage.START);
   const items = [gradientValue];
   return React.useMemo(() => {
-    let tmp;
+    let tmp2;
     if (null != gradientValue) {
-      const obj = { backgroundColor: gradientValue };
-      tmp = obj;
+      const obj = { backgroundColor: null };
+      obj[0] = tmp;
+      tmp2 = obj;
     }
-    return tmp;
+    return tmp2;
   }, items);
 };
 export const useGradientMidpoint = function useGradientMidpoint() {
-  gradientValue = gradientValue(3976).useGradientValue(gradientValue(3976).GradientPercentage.MID);
+  gradientValue = gradientValue(4000).useGradientValue(gradientValue(4000).GradientPercentage.MID);
   const items = [gradientValue];
   return React.useMemo(() => {
-    let tmp;
+    let tmp2;
     if (null != gradientValue) {
-      const obj = { backgroundColor: gradientValue };
-      tmp = obj;
+      const obj = { backgroundColor: null };
+      obj[0] = tmp;
+      tmp2 = obj;
     }
-    return tmp;
+    return tmp2;
   }, items);
 };
 export const useClientThemesOverride = function useClientThemesOverride(themedChatInput) {
-  let none = themedChatInput;
-  let tmp;
-  if (importDefault(8801)()) {
-    if (null == none) {
-      none = tmp2.none;
+  let tmp2;
+  if (importDefault(8825)()) {
+    let none = themedChatInput;
+    if (themedChatInput == null) {
+      none = tmp.none;
     }
-    tmp = none;
+    tmp2 = none;
   }
-  return tmp;
+  return tmp2;
 };

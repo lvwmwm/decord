@@ -1,69 +1,84 @@
-// Module ID: 15735
-// Function ID: 121224
+// Module ID: 15771
+// Function ID: 15772
 // Name: IncentivizedAccountLinkConfirmationBottomSheet
-// Dependencies: [31, 27, 4157, 653, 33, 566, 14603, 477, 6188, 14604, 5119, 4578, 1212, 10161, 689, 4133, 3862, 1921, 6635, 2845, 2]
+// Dependencies: [19, 17, 4181, 676, 21, 589, 14628, 500, 6208, 14629, 5141, 4600, 1236, 10182, 712, 4157, 3886, 1945, 6656, 2869, 2]
 // Exports: default
 
-// Module 15735 (IncentivizedAccountLinkConfirmationBottomSheet)
-import "result";
-import { Image } from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 15771 (IncentivizedAccountLinkConfirmationBottomSheet)
+import "messagesProxy";
+import { Image } from "combined";
+import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
 import { HelpdeskArticles } from "ME";
 import { jsx } from "jsxProd";
 
 const require = arg1;
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/application_account_linking/native/IncentivizedAccountLinkConfirmationBottomSheet.tsx");
+let c7 = 150;
+const result = require("maybeApplyNoTextColorForLightCustomTheme").fileFinishedImporting("modules/application_account_linking/native/IncentivizedAccountLinkConfirmationBottomSheet.tsx");
 
 export default function IncentivizedAccountLinkConfirmationBottomSheet() {
-  let obj = require(566) /* initialize */;
-  const items = [_isNativeReflectConstruct];
-  if (obj.useStateFromStores(items, () => outer1_4.useReducedMotion)) {
-    obj = {};
-    obj = { uri: importDefault(14603) };
-    obj.source = obj;
-    obj.style = { width: 150, height: 150 };
-    let tmp3Result = <Image uri={importDefault(14603)} />;
+  let obj = require(589) /* initialize */;
+  const items = [maybeApplyNoTextColorForLightCustomTheme];
+  if (obj.useStateFromStores(items, () => useReducedMotion.useReducedMotion)) {
+    obj = { source: null, style: null };
+    obj = { uri: null };
+    obj[0] = importDefault(14628);
+    obj[0] = obj;
+    const obj1 = { width: null, height: null };
+    obj1[0] = c7;
+    obj1[1] = c7;
+    obj[1] = obj1;
+    let tmp3Result = <Image uri={null} />;
+    let tmp8 = importDefault;
+    let tmp9 = jsx;
   } else {
-    let obj1 = require(477) /* set */;
-    if (obj1.isAndroid()) {
-      obj1 = {};
-      let tmp4Result = tmp4(6188);
-      obj1.url = tmp4(14604);
-      obj1.style = { width: 150, height: 150 };
-      tmp3Result = tmp3(tmp4Result, obj1);
-    } else {
-      let obj2 = {};
-      const obj3 = {};
-      tmp4Result = tmp4(5119);
-      obj3.uri = tmp4(14604);
-      obj2.source = obj3;
-      obj2.resizeMode = "contain";
-      obj2.style = { width: 150, height: 150 };
+    if (tmpResult.isAndroid()) {
+      let obj2 = { url: null, style: null };
+      let tmp4Result = tmp4(6208);
+      obj2[0] = tmp4(14629);
+      const obj3 = { width: null, height: null };
+      obj3[0] = c7;
+      obj3[1] = c7;
+      obj2[1] = obj3;
       tmp3Result = tmp3(tmp4Result, obj2);
+      tmp8 = tmp4;
+      tmp9 = tmp3;
+    } else {
+      const obj4 = { source: null, resizeMode: "contain", style: null };
+      const obj5 = { uri: null };
+      tmp4Result = tmp4(5141);
+      obj5[0] = tmp4(14629);
+      obj4[0] = obj5;
+      const obj6 = { width: null, height: null };
+      obj6[0] = c7;
+      obj6[1] = c7;
+      obj4[2] = obj6;
+      tmp3Result = tmp3(tmp4Result, obj4);
+      tmp8 = tmp4;
+      tmp9 = tmp3;
     }
+    tmpResult = tmp(500);
   }
-  const obj4 = {};
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj4.text = intl.string(require(1212) /* getSystemLocale */.t.aRIFWD);
-  const obj5 = { size: "sm", color: importDefault(689).colors.WHITE };
-  obj4.icon = jsx(require(10161) /* WindowLaunchIcon */.WindowLaunchIcon, { size: "sm", color: importDefault(689).colors.WHITE });
-  obj4.iconPosition = "end";
-  obj4.size = "lg";
-  obj4.onPress = function onPress() {
-    outer1_1(outer1_2[15]).hideActionSheet();
-    const obj = outer1_1(outer1_2[15]);
-    const obj2 = outer1_1(outer1_2[16]);
-    obj2.openURL(outer1_1(outer1_2[17]).getArticleURL(outer1_5.IN_GAME_FEATURES));
+  const obj7 = { text: null, icon: null, iconPosition: "end", size: "lg", onPress: null };
+  const intl = tmp(1236).intl;
+  obj7[0] = intl.string(require(1236) /* getSystemLocale */.t.aRIFWD);
+  const obj8 = { size: "sm", color: null };
+  obj8[1] = tmp8(712).colors.WHITE;
+  obj7[1] = tmp9(require(10182) /* WindowLaunchIcon */.WindowLaunchIcon, obj8);
+  obj7[4] = function onPress() {
+    callback(4157).hideActionSheet();
+    const obj = callback(4157);
+    const obj2 = callback(3886);
+    obj2.openURL(callback(1945).getArticleURL(constants.IN_GAME_FEATURES));
   };
-  const obj6 = {};
-  const intl2 = require(1212) /* getSystemLocale */.intl;
-  obj6.title = intl2.string(importDefault(2845).ublzTG);
-  const intl3 = require(1212) /* getSystemLocale */.intl;
-  obj6.description = intl3.string(importDefault(2845).JgM2xu);
-  obj6.actions = jsx(require(4578) /* Button */.Button, {});
-  obj6.illustration = tmp3Result;
-  obj6.onDismiss = function onDismiss() {
-    outer1_1(outer1_2[15]).hideActionSheet();
+  const obj9 = { title: null, description: null, actions: null, illustration: null, onDismiss: null };
+  const intl2 = tmp(1236).intl;
+  obj9[0] = intl2.string(tmp8(2869).ublzTG);
+  const intl3 = tmp(1236).intl;
+  obj9[1] = intl3.string(tmp8(2869).JgM2xu);
+  obj9[2] = tmp9(require(4600) /* Button */.Button, obj7);
+  obj9[3] = tmp3Result;
+  obj9[4] = function onDismiss() {
+    callback(4157).hideActionSheet();
   };
-  return jsx(require(6635) /* PromoSheet */.PromoSheet, {});
+  return tmp9(require(6656) /* PromoSheet */.PromoSheet, obj9);
 };

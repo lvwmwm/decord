@@ -1,45 +1,46 @@
-// Module ID: 12523
-// Function ID: 96932
+// Module ID: 12545
+// Function ID: 12546
 // Name: handlePress
-// Dependencies: [27, 3825, 33, 4165, 689, 4133, 12524, 1935, 1212, 2781, 4161, 2]
+// Dependencies: [17, 3849, 21, 4189, 712, 4157, 12546, 1959, 1236, 2805, 4185, 2]
 // Exports: default
 
-// Module 12523 (handlePress)
+// Module 12545 (handlePress)
 import get_ActivityIndicator from "get ActivityIndicator";
-import { getPremiumGroupProductName as closure_5 } from "TOTAL_PREMIUM_GROUP_MEMBER_SEATS";
+import { getPremiumGroupProductName as closure_5 } from "SubscriptionStatusTypes";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_3;
-let closure_4;
+let c3;
+let c4;
 function handlePress() {
-  let obj = importDefault(4133);
-  obj = {};
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj = { premiumGroupProductName: callback() };
-  obj.aboutText = intl.formatToPlainString(importDefault(2781)["5xN/C1"], obj);
-  obj.openLazy(require(1935) /* maybeLoadBundle */(12524, dependencyMap.paths), "PremiumGroupEducationActionSheet", obj);
+  let obj = importDefault(4157);
+  obj = { aboutText: null };
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj = { premiumGroupProductName: null };
+  obj[0] = callback();
+  obj[0] = intl.formatToPlainString(importDefault(2805)["5xN/C1"], obj);
+  obj.openLazy(require(1959) /* asyncRequireImpl */(12546, dependencyMap.paths), "PremiumGroupEducationActionSheet", obj);
 }
-({ TouchableOpacity: closure_3, View: closure_4 } = get_ActivityIndicator);
-let obj = {};
-obj = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SURFACE_HIGH, flexDirection: "row", gap: 12, padding: 12, justifyContent: "center", borderColor: require("_createForOfIteratorHelperLoose").colors.STATUS_WARNING, borderWidth: 1, borderRadius: require("_createForOfIteratorHelperLoose").radii.lg, marginBottom: 12 };
-obj.premiumGroupBanner = obj;
-obj.pgUnavailable = { flex: 1, justifyContent: "center" };
-obj.pgUnavailableText = { textAlign: "center" };
-let closure_7 = _createForOfIteratorHelperLoose.createStyles(obj);
+({ TouchableOpacity: c3, View: c4 } = get_ActivityIndicator);
+let obj = { premiumGroupBanner: null, pgUnavailable: null, pgUnavailableText: null };
+obj = { backgroundColor: require("Themes").colors.BACKGROUND_SURFACE_HIGH, flexDirection: "row", gap: 12, padding: 12, justifyContent: "center", borderColor: require("Themes").colors.STATUS_WARNING, borderWidth: 1, borderRadius: require("Themes").radii.lg, marginBottom: 12 };
+obj[0] = obj;
+obj[1] = { flex: 1, justifyContent: "center" };
+obj[2] = { textAlign: "center" };
+let closure_7 = createCacheKey.createStyles(obj);
 const result = require("jsxProd").fileFinishedImporting("modules/premium/premium_group/native/BoostingUnavailablePill.tsx");
 
 export default function BoostingUnavailablePill(style) {
   const tmp = callback2();
-  let obj = { activeOpacity: 0.7, onPress: handlePress };
-  obj = { style: items };
+  let obj = { activeOpacity: 0.7, onPress: handlePress, children: null };
+  obj = { style: items, children: null };
   items = [tmp.premiumGroupBanner, style.style];
-  obj = { style: tmp.pgUnavailable };
-  const obj1 = { variant: "text-md/normal", color: "interactive-text-active", style: tmp.pgUnavailableText };
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj1.children = intl.string(require(1212) /* getSystemLocale */.t["5nrJDO"]);
-  obj.children = jsx(require(4161) /* Text */.Text, { variant: "text-md/normal", color: "interactive-text-active", style: tmp.pgUnavailableText });
-  obj.children = <closure_4 style={tmp.pgUnavailable} />;
-  obj.children = <closure_4 style={tmp.pgUnavailable} />;
-  return <closure_3 style={tmp.pgUnavailable} />;
+  obj = { style: tmp.pgUnavailable, children: null };
+  const obj1 = { variant: "text-md/normal", color: "interactive-text-active", style: tmp.pgUnavailableText, children: null };
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj1[3] = intl.string(require(1236) /* getSystemLocale */.t["5nrJDO"]);
+  obj[1] = jsx(require(4185) /* Text */.Text, { variant: "text-md/normal", color: "interactive-text-active", style: tmp.pgUnavailableText, children: null });
+  obj[1] = <closure_4 style={tmp.pgUnavailable}>{null}</closure_4>;
+  obj[2] = <closure_4 style={tmp.pgUnavailable}>{null}</closure_4>;
+  return <closure_3 style={tmp.pgUnavailable}>{null}</closure_3>;
 };

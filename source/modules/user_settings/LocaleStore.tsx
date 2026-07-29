@@ -1,54 +1,110 @@
-// Module ID: 1922
-// Function ID: 21750
-// Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 5, 1923, 1316, 3776, 1212, 566, 686, 2]
+// Module ID: 1946
+// Function ID: 1947
+// Name: _getSystemLocale
+// Dependencies: [5, 1947, 1340, 3800, 1236, 589, 709, 2]
 
-// Module 1922 (_isNativeReflectConstruct)
-import _setAppLocale from "_setAppLocale";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
-import asyncGeneratorStep from "asyncGeneratorStep";
+// Module 1946 (_getSystemLocale)
+import initialize from "initialize";
 import { setAppLocale } from "_setAppLocale";
-import closure_10 from "_isNativeReflectConstruct";
+import handleConnectionClosedOrResumed from "handleConnectionClosedOrResumed";
 import { systemLocale } from "getSystemLocale";
+import { Store } from "initialize";
 
 const require = arg1;
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
-  }
-  const result = _isNativeReflectConstruct();
-}
-async function _getSystemLocale() {
-  let prop;
-  if (null != outer2_1(outer2_2[8])) {
-    const app = outer2_1(outer2_2[8]).app;
-    if (null != app) {
-      prop = app.getPreferredSystemLanguages;
-    }
-  }
-  if (null != prop) {
-    const app2 = outer2_1(outer2_2[8]).app;
-    const preferredSystemLanguages = app2.getPreferredSystemLanguages();
-    const tmp6 = yield preferredSystemLanguages.then((arg0) => arg0[0]);
-    if (null != tmp6) {
-      if ("" !== tmp6) {
-        return tmp6;
+function _getSystemLocale() {
+  const self = this;
+  const tmp = callback(function*() {
+    if (c3 === 2) {
+      c3 = 3;
+      HermesBuiltin.throwTypeError();
+    } else if (tmp5 === 3) {
+      if (arg0 === 1) {
+        throw arg1;
+      } else if (arg0 === 2) {
+        let obj = { value: null, done: true };
+        obj[0] = arg1;
+        return obj;
+      } else {
+        return { value: "HermesInternal", done: null };
+      }
+    } else {
+      try {
+        c3 = 2;
+        if (0 === dependencyMap) {
+          if (arg0 === 1) {
+            c3 = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            c3 = 3;
+            obj = { value: null, done: true };
+            obj[0] = arg1;
+            return obj;
+          } else {
+            let closure_1 = tmp2;
+            let callback = tmp3;
+            callback = undefined;
+            const tmp25 = outer1_1(3800);
+            let prop;
+            if (tmp25 != null) {
+              const app = tmp25.app;
+              if (app != null) {
+                prop = app.getPreferredSystemLanguages;
+              }
+            }
+            if (null != prop) {
+              const app2 = tmp23(3800).app;
+              const preferredSystemLanguages = app2.getPreferredSystemLanguages();
+              dependencyMap = 1;
+              c3 = 1;
+              const obj1 = { value: null, done: false };
+              obj1[0] = preferredSystemLanguages.then((arg0) => arg0[0]);
+              return obj1;
+            }
+            tmp23 = outer1_1;
+          }
+        } else if (arg0 === 1) {
+          c3 = 3;
+          throw arg1;
+        } else if (arg0 === 2) {
+          c3 = 3;
+          const obj2 = { value: null, done: true };
+          obj2[0] = arg1;
+          return obj2;
+        } else {
+          callback = arg1;
+          if (null != callback) {
+            if ("" !== callback) {
+              c3 = 3;
+              obj = { value: null, done: true };
+              obj[0] = callback;
+              return obj;
+            }
+          }
+        }
+        c3 = 3;
+        const obj3 = { value: null, done: true };
+        obj3[0] = callback(1236).systemLocale;
+        return obj3;
+      } catch (tmp15) {
+        c3 = tmp;
+        throw tmp15;
       }
     }
+  });
+  const _getSystemLocale = tmp;
+  const apply = tmp.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
   }
-  return outer2_0(outer2_2[9]).systemLocale;
+  return applyArgumentsResult;
 }
 function handleUpdate() {
-  const localization = settings.settings.localization;
+  const localization = handleConnectionClosedOrResumed.settings.localization;
   let value;
-  if (null != localization) {
-    if (null != localization.locale) {
+  if (localization != null) {
+    if (localization.locale != null) {
       value = iter.value;
     }
   }
@@ -68,59 +124,56 @@ function handleUpdate() {
 }
 let currentLocale = require("getSystemLocale").intl.currentLocale;
 (function getSystemLocale() {
-  return _getSystemLocale(...arguments);
+  const self = this;
+  const apply = _getSystemLocale.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
 })().then((arg0) => {
-  let closure_12 = arg0;
+  let closure_8 = arg0;
 });
-let tmp3 = ((Store) => {
-  class LocaleStore {
-    constructor() {
-      self = this;
-      tmp = outer1_3(this, LocaleStore);
-      obj = outer1_6(LocaleStore);
-      tmp2 = outer1_5;
-      if (outer1_13()) {
-        tmp6 = globalThis;
-        _Reflect = Reflect;
-        tmp7 = outer1_6;
-        tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, outer1_6(self).constructor);
-      } else {
-        tmp3 = arguments;
-        tmp4 = arguments;
-        constructResult = obj(...arguments);
-      }
-      return tmp2(self, constructResult);
+class LocaleStore extends Store {
+}
+const prototype = LocaleStore.prototype;
+prototype["initialize"] = function initialize() {
+  this.waitFor(handleConnectionClosedOrResumed);
+  const localization = handleConnectionClosedOrResumed.settings.localization;
+  let value;
+  if (localization != null) {
+    if (localization.locale != null) {
+      value = iter.value;
     }
   }
-  callback2(LocaleStore, Store);
-  let obj = {
-    key: "initialize",
-    value() {
-      this.waitFor(outer1_10);
-      outer1_15();
-      outer1_9(outer1_11);
-    }
-  };
-  const items = [obj, , ];
-  obj = {
-    key: "locale",
-    get() {
-      return outer1_11;
-    }
-  };
-  items[1] = obj;
-  obj = {
-    key: "systemLocale",
-    get() {
-      return outer1_12;
-    }
-  };
-  items[2] = obj;
-  return callback(LocaleStore, items);
-})(require("initialize").Store);
-tmp3.displayName = "LocaleStore";
-tmp3 = new tmp3(require("dispatcher"), {
+  let tmp3 = null != value;
+  if (tmp3) {
+    tmp3 = "" !== value;
+  }
+  if (tmp3) {
+    tmp3 = value !== currentLocale;
+  }
+  if (tmp3) {
+    currentLocale = value;
+    setAppLocale(value);
+  }
+  setAppLocale(currentLocale);
+};
+Object.defineProperty(prototype, "locale", {
+  get: function locale() {
+    return currentLocale;
+  },
+  set: undefined
+});
+Object.defineProperty(prototype, "systemLocale", {
+  get: function systemLocale() {
+    return systemLocale;
+  },
+  set: undefined
+});
+LocaleStore.displayName = "LocaleStore";
+const localeStore = new LocaleStore(require("dispatcher"), {
   OVERLAY_INITIALIZE: handleUpdate,
   CACHE_LOADED: handleUpdate,
   CONNECTION_OPEN: handleUpdate,
@@ -141,8 +194,15 @@ let obj = {
   }
 };
 const promise = (function getSystemLocale() {
-  return _getSystemLocale(...arguments);
+  const self = this;
+  const apply = _getSystemLocale.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
 })();
-let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/user_settings/LocaleStore.tsx");
+const result = require("handleConnectionClosedOrResumed").fileFinishedImporting("modules/user_settings/LocaleStore.tsx");
 
-export default tmp3;
+export default localeStore;

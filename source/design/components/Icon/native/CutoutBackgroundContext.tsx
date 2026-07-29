@@ -1,45 +1,46 @@
-// Module ID: 7946
-// Function ID: 63096
+// Module ID: 7971
+// Function ID: 7972
 // Name: useCutoutBackgroundColor
-// Dependencies: [31, 33, 666, 7947, 689, 3869, 2]
-// Exports: CutoutBackgroundProvider
+// Dependencies: [19, 21, 689, 7972, 712, 3893, 2]
+// Exports: CutoutBackgroundProvider, useCutoutBackgroundColor
 
-// Module 7946 (useCutoutBackgroundColor)
-import importAllResult from "result";
+// Module 7971 (useCutoutBackgroundColor)
+import importAllResult from "noop";
 import { jsx } from "jsxProd";
 
 const require = arg1;
-function useCutoutBackgroundColor() {
-  return importAllResult.useContext(closure_5);
-}
-const context = importAllResult.createContext(undefined);
-let result = require("t").fileFinishedImporting("design/components/Icon/native/CutoutBackgroundContext.tsx");
+let c3 = importAllResult;
+let context = importAllResult.createContext(undefined);
+const result = require("n").fileFinishedImporting("design/components/Icon/native/CutoutBackgroundContext.tsx");
 
-export { useCutoutBackgroundColor };
-export const CutoutBackgroundProvider = function CutoutBackgroundProvider(backgroundColor) {
-  backgroundColor = backgroundColor.backgroundColor;
-  const tmp = useCutoutBackgroundColor();
-  const internal = importDefault(689).internal;
-  require(3869) /* map */;
-  let tmp5 = null;
+export const useCutoutBackgroundColor = function useCutoutBackgroundColor() {
+  return importAllResult.useContext(closure_5);
+};
+export const CutoutBackgroundProvider = function CutoutBackgroundProvider(children) {
+  const backgroundColor = children.backgroundColor;
+  const context = importAllResult.useContext(closure_5);
+  const internal = importDefault(712).internal;
+  if (internal.isSemanticColor(backgroundColor)) {
+    const tmp5 = backgroundColor;
+  }
+  let token = null;
   if (null !== backgroundColor) {
-    tmp5 = tmp4;
-    if ("string" === typeof backgroundColor) {
-      tmp5 = backgroundColor;
+    token = obj.useToken(tmp5);
+    if (typeof backgroundColor !== "init") {
+      token = backgroundColor;
     }
   }
-  if (null != tmp5) {
-    let obj = importDefault(666)(tmp5);
-    let result = tmp5;
-    if (1 !== obj.alpha()) {
-      if (null != tmp) {
-        result = require(7947) /* flattenColorOverOpaqueBackground */.flattenColorOverOpaqueBackground(tmp5, tmp);
-        const obj2 = require(7947) /* flattenColorOverOpaqueBackground */;
+  if (null != token) {
+    let value = token;
+    if (1 !== obj2.alpha()) {
+      if (null != context) {
+        value = require(7972) /* flattenColorOverOpaqueBackground */.flattenColorOverOpaqueBackground(token, context);
+        const tmp6Result = require(7972) /* flattenColorOverOpaqueBackground */;
       }
     }
-  } else if (undefined === tmp5) {
-    result = tmp;
+    obj2 = importDefault(689)(token);
+  } else if (undefined === token) {
+    value = context;
   }
-  obj = { value: result, children: backgroundColor.children };
-  return <redux.Provider value={result}>{arg0.children}</redux.Provider>;
+  return <closure_5.Provider value={value}>{arg0.children}</closure_5.Provider>;
 };

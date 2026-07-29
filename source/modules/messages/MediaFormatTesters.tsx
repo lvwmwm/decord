@@ -1,59 +1,25 @@
-// Module ID: 4352
-// Function ID: 37952
+// Module ID: 4377
+// Function ID: 4378
 // Name: urlMatchesFileExtension
-// Dependencies: [57, 477, 4353, 2]
-// Exports: isAnimatedImageUrl, isAudioFile, isImageContentType, isImageFile, isImageUrl, isRiveFile, isVideoContentType, isVideoFile, isVideoUrl
+// Dependencies: [32, 500, 4378, 2]
+// Exports: isAnimatedImageUrl, isAudioFile, isImageContentType, isImageFile, isImageUrl, isRiveFile, isVideoContentType, isVideoFile, isVideoUrl, isWebPlayerVideoFile, isWebPlayerVideoUrl, urlMatchesFileExtension
 
-// Module 4352 (urlMatchesFileExtension)
+// Module 4377 (urlMatchesFileExtension)
 import _slicedToArray from "_slicedToArray";
 import set from "set";
 import set from "set";
 import set from "isIOSWithWebM";
 
 const require = arg1;
-function urlMatchesFileExtension(sourceURI, GIF_RE_IOS) {
-  if (null == sourceURI) {
-    return false;
-  } else {
-    const tmp2 = callback(sourceURI.split(/\?/, 1), 2);
-    return GIF_RE_IOS.test(tmp2[0]);
-  }
-}
-function contentTypeMatches(contentType, image) {
-  if (null == contentType) {
-    return false;
-  } else {
-    const tmp2 = callback(contentType.split("/"), 2);
-    return tmp2[0] === image;
-  }
-}
-function isWebPlayerVideoUrl(mediaUrl) {
-  let isIOSWithWebMResult = require(4353) /* isIOSWithWebM */.isIOSWithWebM();
-  if (isIOSWithWebMResult) {
-    isIOSWithWebMResult = urlMatchesFileExtension(mediaUrl, closure_6);
-  }
-  return isIOSWithWebMResult;
-}
-function isWebPlayerVideoFile(filename) {
-  let isIOSWithWebMResult = null != filename;
-  if (isIOSWithWebMResult) {
-    isIOSWithWebMResult = require(4353) /* isIOSWithWebM */.isIOSWithWebM();
-    const obj = require(4353) /* isIOSWithWebM */;
-  }
-  if (isIOSWithWebMResult) {
-    isIOSWithWebMResult = regex2.test(filename);
-  }
-  return isIOSWithWebMResult;
-}
 const re3 = /\.(png|jpe?g|jfif|webp|gif|heic|heif|dng|avif)$/i;
 const re4 = /\.(webp|gif|avif)$/i;
 if (set.isIOS()) {
   let tmp2 = /\.(mp3|m4a|wav|aif|aiff|ogg|opus|flac)$/i;
 } else {
   tmp2 = require("set").isAndroid() ? /\.(mp3|m4a|wav|ogg|opus|flac)$/i : /\.(mp3|m4a|wav|aif|aiff|ogg|opus|flac)$/i;
-  const obj2 = require("set");
+  let obj2 = require("set");
 }
-let closure_5 = tmp2;
+let c5 = tmp2;
 const re6 = /\.(webm)$/i;
 const re7 = /\.(riv)$/i;
 if (set.isIOS()) {
@@ -63,12 +29,49 @@ if (set.isIOS()) {
   tmp4 = /\.(mp4|webm|mov|qt)$/i;
   const obj4 = require("set");
 }
-let closure_8 = tmp4;
+const metroImportAll = tmp4;
+function urlMatchesFileExtension(sourceURI, GIF_RE_IOS) {
+  if (null == sourceURI) {
+    return false;
+  } else {
+    const tmp3 = callback(sourceURI.split(/\?/, 1), 2);
+    return GIF_RE_IOS.test(tmp3[0]);
+  }
+}
+function isWebPlayerVideoUrl(mediaUrl) {
+  let isIOSWithWebMResult = require(4378) /* isIOSWithWebM */.isIOSWithWebM();
+  if (isIOSWithWebMResult) {
+    let flag = false;
+    if (null != mediaUrl) {
+      const tmp5 = callback(mediaUrl.split(/\?/, 1), 2);
+      flag = obj2.test(tmp5[0]);
+    }
+    isIOSWithWebMResult = flag;
+    obj2 = closure_6;
+  }
+  return isIOSWithWebMResult;
+}
+function isWebPlayerVideoFile(filename) {
+  let isIOSWithWebMResult = null != filename;
+  if (isIOSWithWebMResult) {
+    isIOSWithWebMResult = require(4378) /* isIOSWithWebM */.isIOSWithWebM();
+    const obj = require(4378) /* isIOSWithWebM */;
+  }
+  if (isIOSWithWebMResult) {
+    isIOSWithWebMResult = regex2.test(filename);
+  }
+  return isIOSWithWebMResult;
+}
 const result = set.fileFinishedImporting("modules/messages/MediaFormatTesters.tsx");
 
 export { urlMatchesFileExtension };
 export const isImageUrl = function isImageUrl(url) {
-  return urlMatchesFileExtension(url, closure_3);
+  let flag = false;
+  if (null != url) {
+    const tmp2 = callback(url.split(/\?/, 1), 2);
+    flag = closure_3.test(tmp2[0]);
+  }
+  return flag;
 };
 export const isImageFile = function isImageFile(filename) {
   let isMatch = null != filename;
@@ -78,10 +81,20 @@ export const isImageFile = function isImageFile(filename) {
   return isMatch;
 };
 export const isImageContentType = function isImageContentType(contentType) {
-  return contentTypeMatches(contentType, "image");
+  let flag = false;
+  if (null != contentType) {
+    const tmp2 = callback(contentType.split("/"), 2);
+    flag = tmp2[0] === "image";
+  }
+  return flag;
 };
 export const isAnimatedImageUrl = function isAnimatedImageUrl(coverImage) {
-  return urlMatchesFileExtension(coverImage, closure_4);
+  let flag = false;
+  if (null != coverImage) {
+    const tmp2 = callback(coverImage.split(/\?/, 1), 2);
+    flag = closure_4.test(tmp2[0]);
+  }
+  return flag;
 };
 export const isAudioFile = function isAudioFile(filename) {
   let isMatch = null != filename;
@@ -92,11 +105,26 @@ export const isAudioFile = function isAudioFile(filename) {
 };
 export { isWebPlayerVideoUrl };
 export const isVideoUrl = function isVideoUrl(url) {
-  let tmp = urlMatchesFileExtension(url, closure_8);
-  if (!tmp) {
-    tmp = isWebPlayerVideoUrl(url);
+  let flag = false;
+  if (null != url) {
+    const tmp2 = callback(url.split(/\?/, 1), 2);
+    flag = closure_8.test(tmp2[0]);
   }
-  return tmp;
+  if (!flag) {
+    let isIOSWithWebMResult = require(4378) /* isIOSWithWebM */.isIOSWithWebM();
+    if (isIOSWithWebMResult) {
+      let flag2 = false;
+      if (null != url) {
+        const tmp8 = callback(url.split(/\?/, 1), 2);
+        flag2 = obj3.test(tmp8[0]);
+      }
+      isIOSWithWebMResult = flag2;
+      obj3 = closure_6;
+    }
+    flag = isIOSWithWebMResult;
+    const obj2 = require(4378) /* isIOSWithWebM */;
+  }
+  return flag;
 };
 export { isWebPlayerVideoFile };
 export const isVideoFile = function isVideoFile(filename) {
@@ -104,7 +132,15 @@ export const isVideoFile = function isVideoFile(filename) {
   if (tmp) {
     let isMatch = tmp4.test(filename);
     if (!isMatch) {
-      isMatch = isWebPlayerVideoFile(filename);
+      let isIOSWithWebMResult = null != filename;
+      if (isIOSWithWebMResult) {
+        isIOSWithWebMResult = require(4378) /* isIOSWithWebM */.isIOSWithWebM();
+        const obj = require(4378) /* isIOSWithWebM */;
+      }
+      if (isIOSWithWebMResult) {
+        isIOSWithWebMResult = regex2.test(filename);
+      }
+      isMatch = isIOSWithWebMResult;
     }
     tmp = isMatch;
   }
@@ -118,5 +154,10 @@ export const isRiveFile = function isRiveFile(arg0) {
   return isMatch;
 };
 export const isVideoContentType = function isVideoContentType(contentType) {
-  return contentTypeMatches(contentType, "video");
+  let flag = false;
+  if (null != contentType) {
+    const tmp2 = callback(contentType.split("/"), 2);
+    flag = tmp2[0] === "video";
+  }
+  return flag;
 };

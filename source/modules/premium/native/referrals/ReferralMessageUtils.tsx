@@ -1,18 +1,18 @@
-// Module ID: 10980
-// Function ID: 85142
+// Module ID: 11004
+// Function ID: 11005
 // Name: canOpenPremiumPlanDirectlyForReferralTrial
-// Dependencies: [3817, 6191, 2]
+// Dependencies: [3841, 6211, 2]
 // Exports: canOpenPremiumPlanDirectlyForReferralTrial
 
-// Module 10980 (canOpenPremiumPlanDirectlyForReferralTrial)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+// Module 11004 (canOpenPremiumPlanDirectlyForReferralTrial)
+import reset from "reset";
+import emitChanges from "emitChanges";
 
 let result = require("set").fileFinishedImporting("modules/premium/native/referrals/ReferralMessageUtils.tsx");
 
 export const canOpenPremiumPlanDirectlyForReferralTrial = function canOpenPremiumPlanDirectlyForReferralTrial() {
-  const premiumTypeSubscription = _isNativeReflectConstruct.getPremiumTypeSubscription(false);
-  let result = _isNativeReflectConstruct.hasFetchedSubscriptions();
+  const premiumTypeSubscription = reset.getPremiumTypeSubscription(false);
+  let result = reset.hasFetchedSubscriptions();
   if (result) {
     result = null == premiumTypeSubscription;
   }

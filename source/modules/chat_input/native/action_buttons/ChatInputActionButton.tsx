@@ -1,37 +1,35 @@
-// Module ID: 11375
-// Function ID: 88234
-// Dependencies: [31, 27, 33, 4165, 689, 1324, 3869, 4695, 2]
+// Module ID: 11399
+// Function ID: 11400
+// Dependencies: [19, 17, 21, 4189, 712, 1348, 3893, 4717, 2]
 
-// Module 11375
-import importAllResult from "result";
+// Module 11399
+import importAllResult from "noop";
 import { StyleSheet } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
 const require = arg1;
-let closure_5 = _createForOfIteratorHelperLoose.createStyles((arg0, height, marginHorizontal) => {
-  let obj = {};
-  obj = {};
-  const radii = importDefault(689).radii;
-  obj.borderRadius = arg0 ? radii.sm : radii.round;
-  obj.height = height;
-  obj.width = height;
-  obj.marginHorizontal = marginHorizontal;
-  obj.flexShrink = 0;
-  obj.flexDirection = "row";
-  obj.alignItems = "center";
-  obj.justifyContent = "center";
+let closure_5 = createCacheKey.createStyles((arg0, height, marginHorizontal) => {
+  const radii = importDefault(712).radii;
+  if (arg0) {
+    let round = radii.sm;
+    let tmp4 = tmp;
+  } else {
+    round = radii.round;
+    tmp4 = tmp;
+  }
+  let obj = { borderRadius: round, height, width: height, marginHorizontal, flexShrink: 0, flexDirection: "row", alignItems: "center", justifyContent: "center", backgroundColor: null };
   let prop;
   if (!arg0) {
-    prop = importDefault(689).colors.REDESIGN_BUTTON_TERTIARY_BACKGROUND;
+    prop = tmp4(712).colors.REDESIGN_BUTTON_TERTIARY_BACKGROUND;
   }
-  obj.backgroundColor = prop;
-  obj.actionButton = obj;
-  obj = { tintColor: importDefault(689).colors.CHAT_INPUT_ACTION_BUTTON_ICON_DEFAULT_TINT, width: importDefault(689).modules.mobile.CHAT_INPUT_ACTION_ICON_PIXEL_SIZE, height: importDefault(689).modules.mobile.CHAT_INPUT_ACTION_ICON_PIXEL_SIZE };
-  obj.actionButtonIcon = obj;
-  obj.actionButtonIconActive = { tintColor: importDefault(689).colors.REDESIGN_BUTTON_TERTIARY_PRESSED_TEXT };
-  const obj1 = { tintColor: importDefault(689).colors.REDESIGN_BUTTON_TERTIARY_PRESSED_TEXT };
-  obj.actionButtonIconDisabled = { tintColor: importDefault(689).colors.ICON_MUTED };
+  obj = { actionButton: obj, actionButtonIcon: null, actionButtonIconActive: null, actionButtonIconDisabled: null };
+  obj[8] = prop;
+  obj = { tintColor: tmp4(712).colors.CHAT_INPUT_ACTION_BUTTON_ICON_DEFAULT_TINT, width: tmp4(712).modules.mobile.CHAT_INPUT_ACTION_ICON_PIXEL_SIZE, height: tmp4(712).modules.mobile.CHAT_INPUT_ACTION_ICON_PIXEL_SIZE };
+  obj[1] = obj;
+  obj[2] = { tintColor: tmp4(712).colors.REDESIGN_BUTTON_TERTIARY_PRESSED_TEXT };
+  const obj1 = { tintColor: tmp4(712).colors.REDESIGN_BUTTON_TERTIARY_PRESSED_TEXT };
+  obj[3] = { tintColor: tmp4(712).colors.ICON_MUTED };
   return obj;
 });
 const memoResult = importAllResult.memo(importAllResult.forwardRef((active, ref) => {
@@ -53,62 +51,61 @@ const memoResult = importAllResult.memo(importAllResult.forwardRef((active, ref)
   if (flag === undefined) {
     flag = false;
   }
-  ({ style, disabled, accessibilityState } = active);
-  ({ activeStyle, activeIconStyle, onPress, accessible, accessibilityLabel, accessibilityHint, accessibilityActions, onAccessibilityAction, IconComponent } = active);
-  let obj = require(1324) /* useIsMobileVisualRefreshExperimentEnabled */;
+  ({ style, disabled, accessibilityState, activeStyle, activeIconStyle, onPress, accessible, accessibilityLabel, accessibilityHint, accessibilityActions, onAccessibilityAction, IconComponent } = active);
+  let obj = require(1348) /* useIsMobileVisualRefreshExperimentEnabled */;
   const mobileVisualRefreshConfig = obj.useMobileVisualRefreshConfig({ location: "ChatInputActionButton" });
   ({ enabled, chatInputFloating } = mobileVisualRefreshConfig);
-  let obj1 = require(3869) /* map */;
-  let token = obj1.useToken(importDefault(689).modules.mobile.CHAT_INPUT_ACTION_BUTTON_SIZE);
-  const token1 = require(3869) /* map */.useToken(importDefault(689).modules.mobile.CHAT_INPUT_ACTION_BUTTON_MARGIN);
-  const obj3 = require(3869) /* map */;
-  const token2 = require(3869) /* map */.useToken(importDefault(689).modules.mobile.CHAT_INPUT_BUTTON_MIN_TOUCH_TARGET_SIZE);
-  const tmp5 = callback(enabled, token, token1);
-  let tmp6;
+  const token = require(3893) /* map */.useToken(importDefault(712).modules.mobile.CHAT_INPUT_ACTION_BUTTON_SIZE);
+  const obj2 = require(3893) /* map */;
+  const tmp = require;
+  const token1 = require(3893) /* map */.useToken(importDefault(712).modules.mobile.CHAT_INPUT_ACTION_BUTTON_MARGIN);
+  const obj3 = require(3893) /* map */;
+  const token2 = require(3893) /* map */.useToken(importDefault(712).modules.mobile.CHAT_INPUT_BUTTON_MIN_TOUCH_TARGET_SIZE);
+  const tmp7 = callback(enabled, token, token1);
+  let tmp8;
   if (chatInputFloating) {
     const flattenResult = StyleSheet.flatten(style);
     let height;
-    if (null != flattenResult) {
+    if (flattenResult != null) {
       height = flattenResult.height;
     }
-    tmp6 = height;
+    tmp8 = height;
   }
-  if ("number" === typeof tmp6) {
-    token = tmp6;
+  let tmp13 = token;
+  if (typeof tmp8 !== "os") {
+    tmp13 = tmp8;
   }
-  const bound = Math.max(0, (token2 - token) / 2);
-  obj = { ref };
-  const items = [tmp5.actionButton, style, ];
-  let tmp13 = flag;
+  const bound = Math.max(0, (token2 - tmp13) / 2);
+  obj = { ref, style: null, hitSlop: null, disabled: null, accessible: null, accessibilityRole: "button", accessibilityState: null, accessibilityLabel: null, accessibilityHint: null, accessibilityActions: null, onAccessibilityAction: null, onPress: null, children: null };
+  const items = [tmp7.actionButton, style, ];
+  let tmp16 = flag;
   if (flag) {
-    tmp13 = !disabled;
+    tmp16 = !disabled;
   }
-  if (tmp13) {
-    tmp13 = activeStyle;
+  if (tmp16) {
+    tmp16 = activeStyle;
   }
-  items[2] = tmp13;
-  obj.style = items;
-  let tmp14;
+  items[2] = tmp16;
+  obj[1] = items;
+  let tmp17;
   if (bound > 0) {
-    tmp14 = bound;
+    tmp17 = bound;
   }
-  obj.hitSlop = tmp14;
-  obj.disabled = disabled;
-  obj.accessible = accessible;
-  obj.accessibilityRole = "button";
+  obj[2] = tmp17;
+  obj[3] = disabled;
+  obj[4] = accessible;
   obj = { disabled };
   const merged = Object.assign(accessibilityState);
-  obj.accessibilityState = obj;
-  obj.accessibilityLabel = accessibilityLabel;
-  obj.accessibilityHint = accessibilityHint;
-  obj.accessibilityActions = accessibilityActions;
-  obj.onAccessibilityAction = onAccessibilityAction;
-  obj.onPress = onPress;
-  obj1 = { size: "custom" };
-  const items1 = [tmp5.actionButtonIcon, , , ];
+  obj[6] = obj;
+  obj[7] = accessibilityLabel;
+  obj[8] = accessibilityHint;
+  obj[9] = accessibilityActions;
+  obj[10] = onAccessibilityAction;
+  obj[11] = onPress;
+  const items1 = [tmp7.actionButtonIcon, , , ];
   let actionButtonIconActive = flag;
   if (flag) {
-    actionButtonIconActive = tmp5.actionButtonIconActive;
+    actionButtonIconActive = tmp7.actionButtonIconActive;
   }
   items1[1] = actionButtonIconActive;
   if (flag) {
@@ -116,12 +113,11 @@ const memoResult = importAllResult.memo(importAllResult.forwardRef((active, ref)
   }
   items1[2] = flag;
   if (disabled) {
-    disabled = tmp5.actionButtonIconDisabled;
+    disabled = tmp7.actionButtonIconDisabled;
   }
   items1[3] = disabled;
-  obj1.style = items1;
-  obj.children = <IconComponent size="custom" />;
-  return jsx(require(4695) /* PressableBase */.PressableOpacity, { disabled });
+  obj[12] = <IconComponent size="custom" style={items1} />;
+  return jsx(tmp(4717).PressableOpacity, { disabled });
 }));
 const result = require("jsxProd").fileFinishedImporting("modules/chat_input/native/action_buttons/ChatInputActionButton.tsx");
 

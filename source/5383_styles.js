@@ -1,10 +1,10 @@
 // Module ID: 5383
-// Function ID: 46086
+// Function ID: 5384
 // Name: styles
-// Dependencies: [27]
+// Dependencies: [17]
 
 // Module 5383 (styles)
 import { StyleSheet } from "get ActivityIndicator";
 
 
-export const styles = StyleSheet.create({ container: { flex: 1, overflow: "visible" } });
+export const styles = StyleSheet.create({ container: { position: "absolute", top: 0, left: 0, right: 0, zIndex: 9999, pointerEvents: "box-none" } });

@@ -1,38 +1,38 @@
-// Module ID: 14034
-// Function ID: 107244
-// Name: resolveBountyRewardClaimErrorMessage
-// Dependencies: [14035, 1212, 3866, 9148, 2]
+// Module ID: 14056
+// Function ID: 14057
+// Name: set
+// Dependencies: [14057, 1236, 3890, 9172, 2]
 // Exports: openBountyRewardClaimErrorToast
 
-// Module 14034 (resolveBountyRewardClaimErrorMessage)
+// Module 14056 (set)
 import { BOUNTY_REWARD_CLAIM_FAILED_TOAST_DURATION_MS as closure_3 } from "BOUNTY_REWARD_CLAIM_FAILED_TOAST_DURATION_MS";
 import set from "dispatcher";
 
-function resolveBountyRewardClaimErrorMessage(code) {
-  code = undefined;
-  if (null != code) {
-    code = code.code;
-  }
-  if (null != code) {
-    if (set.has(code.code)) {
-      let message;
-      if (null != code) {
-        message = code.message;
-      }
-      if (null != message) {
-        message = code.message;
-      }
-      return message;
-    }
-  }
-  const intl = require(1212) /* getSystemLocale */.intl;
-  message = intl.string(require(1212) /* getSystemLocale */.t.uLjCfn);
-}
 let set = new Set([260021]);
 const result = set.fileFinishedImporting("modules/quests/native/BountiesModal/bountyError.tsx");
 
-export const openBountyRewardClaimErrorToast = function openBountyRewardClaimErrorToast(code) {
-  let obj = importDefault(3866);
-  obj = { key: "QUESTS_BOUNTIES_REWARD_CLAIM_FAILED", content: resolveBountyRewardClaimErrorMessage(code), icon: importDefault(9148), toastDurationMs: closure_3 };
-  obj.open(obj);
+export const openBountyRewardClaimErrorToast = function openBountyRewardClaimErrorToast(closure_0) {
+  let obj = importDefault(3890);
+  let code;
+  if (closure_0 != null) {
+    code = closure_0.code;
+  }
+  if (null != code) {
+    if (set.has(closure_0.code)) {
+      let message;
+      if (closure_0 != null) {
+        message = closure_0.message;
+      }
+      if (null != message) {
+        message = closure_0.message;
+      }
+      obj = { key: "QUESTS_BOUNTIES_REWARD_CLAIM_FAILED", content: null, icon: null, toastDurationMs: null };
+      obj[1] = message;
+      obj[2] = importDefault(9172);
+      obj[3] = closure_3;
+      obj.open(obj);
+    }
+  }
+  const intl = require(1236) /* getSystemLocale */.intl;
+  message = intl.string(require(1236) /* getSystemLocale */.t.uLjCfn);
 };

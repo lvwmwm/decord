@@ -1,104 +1,100 @@
-// Module ID: 12210
-// Function ID: 95432
-// Name: onCopy
-// Dependencies: [31, 27, 8325, 33, 4165, 689, 566, 1273, 12211, 1212, 8973, 4695, 8987, 4161, 8326, 4578, 2]
+// Module ID: 12234
+// Function ID: 12235
+// Name: stateFromStores
+// Dependencies: [19, 17, 8349, 21, 4189, 712, 589, 1297, 12235, 1236, 8997, 4717, 9011, 4185, 8350, 4600, 2]
 // Exports: default
 
-// Module 12210 (onCopy)
-import "result";
+// Module 12234 (stateFromStores)
+import "noop";
 import { View } from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import updateWithLatestInvite from "updateWithLatestInvite";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_5;
+let c5;
 let closure_6;
 const require = arg1;
-({ jsx: closure_5, jsxs: closure_6 } = jsxProd);
-_createForOfIteratorHelperLoose = { container: { padding: 16 }, emptyStateContainer: { padding: 0, marginBottom: 16 }, emptyStateArt: { marginBottom: 16 }, emptyStateTitle: { marginBottom: 4 }, linkContainer: { maxWidth: "100%", flexDirection: "row", marginBottom: 8, gap: 8 }, inviteInput: { flexShrink: 1 }, expireCaption: { marginBottom: 16 } };
-_createForOfIteratorHelperLoose = { width: 48, height: 48, justifyContent: "center", alignItems: "center", backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWEST, borderRadius: require("_createForOfIteratorHelperLoose").radii.xs };
-_createForOfIteratorHelperLoose.settingsButton = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/instant_invite/native/components/InstantInviteEmptyState.tsx");
+({ jsx: c5, jsxs: closure_6 } = jsxProd);
+createCacheKey = { container: { padding: 16 }, emptyStateContainer: { padding: 0, marginBottom: 16 }, emptyStateArt: { marginBottom: 16 }, emptyStateTitle: { marginBottom: 4 }, linkContainer: { maxWidth: "100%", flexDirection: "row", marginBottom: 8, gap: 8 }, inviteInput: { flexShrink: 1 }, expireCaption: { marginBottom: 16 }, settingsButton: null };
+createCacheKey = { width: 48, height: 48, justifyContent: "center", alignItems: "center", backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOWEST, borderRadius: require("Themes").radii.xs };
+createCacheKey[7] = createCacheKey;
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+const result = require("updateWithLatestInvite").fileFinishedImporting("modules/instant_invite/native/components/InstantInviteEmptyState.tsx");
 
 export default function _default(link) {
   let onCopy;
   let onPressSettings;
   let onShare;
-  link = link.link;
+  let str = link.link;
+  let stateFromStores;
   ({ onCopy, onShare, onPressSettings } = link);
-  let tmp = _createForOfIteratorHelperLoose();
-  let obj = _require(566);
-  const items = [_isNativeReflectConstruct];
-  _require = obj.useStateFromStores(items, () => outer1_4.getInviteSettings());
-  obj = { style: tmp.container };
-  obj = { containerStyle: tmp.emptyStateContainer, imageStyle: tmp.emptyStateArt, titleStyle: tmp.emptyStateTitle, source: importDefault(12211) };
-  let intl = _require(1212).intl;
-  obj.title = intl.string(_require(1212).t.tQc0l8);
-  const intl2 = _require(1212).intl;
-  obj.body = intl2.string(_require(1212).t.DXgdcD);
-  const items1 = [callback(_require(1273).RefreshEmptyState, obj), , , ];
-  const obj1 = { style: tmp.linkContainer };
-  const obj2 = { accessibilityRole: "button", onPress: onCopy, editable: false, value: null, style: null, forceAccessibleContainer: true };
-  let str = "";
-  if (null != link) {
-    str = link;
+  const tmp = createCacheKey();
+  let obj = stateFromStores(589);
+  const items = [updateWithLatestInvite];
+  stateFromStores = obj.useStateFromStores(items, () => inviteSettings.getInviteSettings());
+  obj = { style: tmp.container, children: null };
+  obj = { containerStyle: tmp.emptyStateContainer, imageStyle: tmp.emptyStateArt, titleStyle: tmp.emptyStateTitle, source: null, title: null, body: null };
+  obj[3] = importDefault(12235);
+  const intl = stateFromStores(1236).intl;
+  obj[4] = intl.string(stateFromStores(1236).t.tQc0l8);
+  const intl2 = stateFromStores(1236).intl;
+  obj[5] = intl2.string(stateFromStores(1236).t.DXgdcD);
+  const items1 = [callback(stateFromStores(1297).RefreshEmptyState, obj), , , ];
+  const obj1 = { style: tmp.linkContainer, children: null };
+  const obj2 = { accessibilityRole: "button", onPress: onCopy, editable: false, value: null, style: null, forceAccessibleContainer: true, clearButtonVisibility: null };
+  if (str == null) {
+    str = "";
   }
-  obj2.value = str;
-  obj2.style = tmp.inviteInput;
-  obj2.clearButtonVisibility = _require(1273).ClearButtonVisibility.NEVER;
-  const items2 = [callback(importDefault(8973), obj2), ];
-  const obj3 = {};
-  const intl3 = _require(1212).intl;
-  obj3.accessibilityLabel = intl3.string(_require(1212).t["3D5yo/"]);
-  obj3.accessibilityRole = "button";
-  obj3.onPress = onPressSettings;
-  obj3.style = tmp.settingsButton;
-  obj3.children = callback(_require(8987).SettingsIcon, {});
-  items2[1] = callback(_require(4695).PressableOpacity, obj3);
-  obj1.children = items2;
+  obj2[3] = str;
+  obj2[4] = tmp.inviteInput;
+  obj2[6] = stateFromStores(1297).ClearButtonVisibility.NEVER;
+  const items2 = [callback(importDefault(8997), obj2), ];
+  const obj3 = { accessibilityLabel: null, accessibilityRole: "button", onPress: null, style: null, children: null };
+  const intl3 = tmp2(1236).intl;
+  obj3[0] = intl3.string(stateFromStores(1236).t["3D5yo/"]);
+  obj3[2] = onPressSettings;
+  obj3[3] = tmp.settingsButton;
+  obj3[4] = callback(stateFromStores(9011).SettingsIcon, {});
+  items2[1] = callback(stateFromStores(4717).PressableOpacity, obj3);
+  obj1[1] = items2;
   items1[1] = closure_6(View, obj1);
-  const obj4 = {
-    style: tmp.expireCaption,
-    variant: "text-xs/medium",
-    color: "text-muted",
-    children: (() => {
-      if (null == lib) {
-        return null;
-      } else {
-        const maxAgeOptionByValue = outer1_1(outer1_2[14]).getMaxAgeOptionByValue(lib.maxAge);
-        let str2 = "";
-        let str = "";
-        if (null != maxAgeOptionByValue) {
-          const descriptiveLabel = maxAgeOptionByValue.descriptiveLabel;
-          let tmp = str2;
-          if (null != descriptiveLabel) {
-            tmp = descriptiveLabel;
-          }
-          str = tmp;
-        }
-        const getMaxUsesOptions = outer1_1(outer1_2[14]).getMaxUsesOptions;
-        const found = getMaxUsesOptions.find((value) => value.value === outer1_0.maxUses);
-        if (null != found) {
-          str2 = found.descriptiveLabel;
-        }
-        if (0 === lib.maxAge) {
-          let dqPWMN = lib(outer1_2[9]).t["99ISmn"];
-        } else {
-          dqPWMN = lib(outer1_2[9]).t.dqPWMN;
-        }
-        const intl = lib(outer1_2[9]).intl;
-        const obj = { maxAge: str, maxUses: str2 };
-        return intl.format(dqPWMN, obj);
+  const obj4 = { style: tmp.expireCaption, variant: "text-xs/medium", color: "text-muted", children: null };
+  if (null == stateFromStores) {
+    obj4[3] = null;
+    items1[2] = tmp7(tmp10, obj4);
+    const obj5 = { text: null, onPress: null };
+    const intl5 = tmp2(1236).intl;
+    obj5[0] = intl5.string(tmp2(1236).t.Ej3B3Y);
+    obj5[1] = onShare;
+    items1[3] = tmp7(tmp2(4600).Button, obj5);
+    obj[1] = items1;
+    return tmp5(tmp6, obj);
+  } else {
+    const maxAgeOptionByValue = tmp8(8350).getMaxAgeOptionByValue(stateFromStores.maxAge);
+    let str2 = "";
+    let str3 = "";
+    if (null != maxAgeOptionByValue) {
+      let descriptiveLabel = maxAgeOptionByValue.descriptiveLabel;
+      if (descriptiveLabel == null) {
+        descriptiveLabel = str2;
       }
-    })()
-  };
-  items1[2] = callback(_require(4161).Text, obj4);
-  const obj5 = {};
-  const intl4 = _require(1212).intl;
-  obj5.text = intl4.string(_require(1212).t.Ej3B3Y);
-  obj5.onPress = onShare;
-  items1[3] = callback(_require(4578).Button, obj5);
-  obj.children = items1;
-  return closure_6(View, obj);
+      str3 = descriptiveLabel;
+    }
+    const getMaxUsesOptions = tmp8(8350).getMaxUsesOptions;
+    const found = getMaxUsesOptions.find((value) => value.value === stateFromStores.maxUses);
+    if (null != found) {
+      str2 = found.descriptiveLabel;
+    }
+    if (0 === stateFromStores.maxAge) {
+      let dqPWMN = tmp2(1236).t["99ISmn"];
+    } else {
+      dqPWMN = tmp2(1236).t.dqPWMN;
+    }
+    const intl4 = tmp2(1236).intl;
+    const obj6 = { maxAge: null, maxUses: null };
+    obj6[0] = str3;
+    obj6[1] = str2;
+    intl4.format(dqPWMN, obj6);
+    const tmp8Result = tmp8(8350);
+  }
 };

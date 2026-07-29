@@ -1,45 +1,41 @@
-// Module ID: 14736
-// Function ID: 112075
+// Module ID: 14762
+// Function ID: 14763
 // Name: DevToolsProfilingUseStateFromStores
-// Dependencies: [57, 31, 33, 14737, 4161, 5536, 5537, 5198, 6712, 10891, 9594, 6626, 4124, 1212, 2]
+// Dependencies: [32, 19, 21, 14763, 4185, 5554, 5555, 5220, 6733, 10915, 9616, 6647, 4148, 1236, 2]
 // Exports: DevToolsProfilingUseStateFromStores
 
-// Module 14736 (DevToolsProfilingUseStateFromStores)
+// Module 14762 (DevToolsProfilingUseStateFromStores)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
+import noop from "noop";
 import jsxProd from "jsxProd";
 
-let closure_4;
-let closure_5;
+let c4;
+let c5;
 let closure_6;
 const require = arg1;
-({ jsx: closure_4, Fragment: closure_5, jsxs: closure_6 } = jsxProd);
+({ jsx: c4, Fragment: c5, jsxs: closure_6 } = jsxProd);
 let result = require("jsxProd").fileFinishedImporting("modules/devtools/native/components/screens/DevToolsProfilingUseStateFromStores.tsx");
 
 export const DevToolsProfilingUseStateFromStores = function DevToolsProfilingUseStateFromStores() {
-  function renderLabel(children) {
-    const obj = { variant: "text-xs/medium", color: "text-subtle", style: { marginBottom: 4 }, children };
-    return callback2(first(str[4]).Text, obj);
-  }
   let obj = first(str[3]);
-  const tmp = callback(str2.useState(obj.getUseStateFromStoresDebuggingEnabled()), 2);
-  first = tmp[0];
+  const tmp3 = callback(str2.useState(obj.getUseStateFromStoresDebuggingEnabled()), 2);
+  first = tmp3[0];
   let obj1 = first(str[3]);
-  const tmp3 = callback(str2.useState(obj1.getUseStateFromStoresExecutionWindowThresholdMs()), 2);
-  str = tmp3[0];
-  callback = tmp3[1];
+  const tmp5 = callback(str2.useState(obj1.getUseStateFromStoresExecutionWindowThresholdMs()), 2);
+  str = tmp5[0];
+  callback = tmp5[1];
   let obj2 = first(str[3]);
-  const tmp4 = callback(str2.useState(obj2.getUseStateFromStoresExecutionTimeWarningThresholdMs()), 2);
-  str2 = tmp4[0];
-  const callback2 = tmp4[1];
+  const tmp6 = callback(str2.useState(obj2.getUseStateFromStoresExecutionTimeWarningThresholdMs()), 2);
+  str2 = tmp6[0];
+  const callback2 = tmp6[1];
   let obj3 = first(str[3]);
-  const tmp5 = callback(str2.useState(obj3.getUseStateFromStoresExecutionCountWarningThreshold()), 2);
-  const str3 = tmp5[0];
-  const callback3 = tmp5[1];
+  const tmp7 = callback(str2.useState(obj3.getUseStateFromStoresExecutionCountWarningThreshold()), 2);
+  const str3 = tmp7[0];
+  let closure_6 = tmp7[1];
   let obj4 = first(str[3]);
-  const tmp6 = callback(str2.useState(obj4.getUseStateFromStoresSpecificHookFilter()), 2);
-  const first1 = tmp6[0];
-  let closure_8 = tmp6[1];
+  const tmp8 = callback(str2.useState(obj4.getUseStateFromStoresSpecificHookFilter()), 2);
+  const first1 = tmp8[0];
+  let closure_8 = tmp8[1];
   const items = [first];
   const effect = str2.useEffect(() => {
     const result = first(str[3]).setUseStateFromStoresDebuggingEnabled(first);
@@ -60,98 +56,94 @@ export const DevToolsProfilingUseStateFromStores = function DevToolsProfilingUse
   const effect4 = str2.useEffect(() => {
     const result = first(str[3]).setUseStateFromStoresSpecificHookFilter(first1);
   }, items4);
-  let tmp13 = null;
   const ref = str2.useRef(null);
-  obj = {};
-  obj = { title: "useStateFromStores Profiling", hasIcons: false };
-  obj1 = { label: "Enable useStateFromStores profiling", subLabel: "May require app restart after changes.", onValueChange: tmp[1], value: first };
-  obj.children = callback2(first(str[6]).TableSwitchRow, obj1);
-  const items5 = [callback2(first(str[5]).TableRowGroup, obj), ];
+  obj = { title: "useStateFromStores Profiling", hasIcons: false, children: null };
+  obj[2] = callback2(first(str[6]).TableSwitchRow, { label: "Enable useStateFromStores profiling", subLabel: "May require app restart after changes.", onValueChange: tmp3[1], value: first });
+  const children = [callback2(first(str[5]).TableRowGroup, obj), ];
+  let tmp16Result = null;
   if (first) {
-    obj2 = { title: "useStateFromStores Config", hasIcons: false };
-    obj3 = { label: "Execution time window threshold" };
-    obj4 = {};
-    const items6 = [renderLabel("Time window to wait for before reporting violations."), ];
-    const obj5 = {
-      size: "sm",
-      defaultValue: str.toString(),
-      onChange(arg0) {
-          const NumberResult = Number(arg0);
-          if (!isNaN(NumberResult)) {
-            if (NumberResult > 1000) {
-              callback(NumberResult);
-            }
-          }
-          const current = ref.current;
-          if (null != current) {
-            current.setText("60000");
-          }
-        },
-      keyboardType: "numeric",
-      leadingIcon: first(str[9]).TimerIcon,
-      trailingText: "ms",
-      ref
-    };
-    items6[1] = callback2(first(str[8]).TextField, obj5);
-    obj4.children = items6;
-    obj3.subLabel = callback3(str3, obj4);
-    const items7 = [callback2(first(str[7]).TableRow, obj3), , , ];
-    const obj6 = { label: "Cumulative execution time warning threshold" };
-    const obj7 = {};
-    const items8 = [renderLabel("Total execution time limit for hooks before reporting violations."), ];
-    const obj8 = {
-      size: "sm",
-      defaultValue: str2.toString(),
-      keyboardType: "numeric",
-      leadingIcon: first(str[9]).TimerIcon,
-      trailingText: "ms",
-      onChange(arg0) {
-          callback2(Number(arg0));
+    obj = { title: "useStateFromStores Config", hasIcons: false, children: null };
+    obj1 = { label: "Execution time window threshold", subLabel: null };
+    obj2 = { children: null };
+    obj3 = { variant: "text-xs/medium", color: "text-subtle", style: null, children: "Time window to wait for before reporting violations." };
+    obj3[2] = { marginBottom: 4 };
+    const items6 = [tmp18(tmp(tmp2[4]).Text, obj3), ];
+    obj4 = { size: "sm", defaultValue: null, onChange: null, keyboardType: "numeric", leadingIcon: null, trailingText: "ms", ref: null };
+    obj4[1] = str.toString();
+    obj4[2] = function onChange(arg0) {
+      const NumberResult = Number(arg0);
+      if (!isNaN(NumberResult)) {
+        if (NumberResult > 1000) {
+          callback(NumberResult);
         }
+      }
+      const current = ref.current;
+      if (current != null) {
+        current.setText("60000");
+      }
     };
-    items8[1] = callback2(first(str[8]).TextField, obj8);
-    obj7.children = items8;
-    obj6.subLabel = callback3(str3, obj7);
-    items7[1] = callback2(first(str[7]).TableRow, obj6);
-    const obj9 = { label: "Cumulative execution count warning threshold" };
-    const obj10 = {};
-    const items9 = [renderLabel("Execution counts limit for hooks before reporting violations."), ];
-    const obj11 = {
-      size: "sm",
-      defaultValue: str3.toString(),
-      keyboardType: "numeric",
-      leadingIcon: first(str[10]).AnalyticsIcon,
-      trailingText: "times",
-      onChange(arg0) {
-          callback3(Number(arg0));
-        }
+    obj4[4] = tmp(tmp2[9]).TimerIcon;
+    obj4[6] = ref;
+    items6[1] = tmp18(tmp(tmp2[8]).TextField, obj4);
+    obj2[0] = items6;
+    obj1[1] = tmp16(tmp17, obj2);
+    const items7 = [tmp18(tmp(tmp2[7]).TableRow, obj1), , , ];
+    const obj5 = { label: "Cumulative execution time warning threshold", subLabel: null };
+    const obj6 = { children: null };
+    const obj7 = { variant: "text-xs/medium", color: "text-subtle", style: null, children: "Total execution time limit for hooks before reporting violations." };
+    obj7[2] = { marginBottom: 4 };
+    const items8 = [tmp18(tmp(tmp2[4]).Text, obj7), ];
+    const obj8 = { size: "sm", defaultValue: null, keyboardType: "numeric", leadingIcon: null, trailingText: "ms", onChange: null };
+    obj8[1] = str2.toString();
+    obj8[3] = tmp(tmp2[9]).TimerIcon;
+    obj8[5] = function onChange(arg0) {
+      callback2(Number(arg0));
     };
-    items9[1] = callback2(first(str[8]).TextField, obj11);
-    obj10.children = items9;
-    obj9.subLabel = callback3(str3, obj10);
-    items7[2] = callback2(first(str[7]).TableRow, obj9);
-    const obj12 = { label: "Track specific hook" };
-    const obj13 = {};
-    const items10 = [renderLabel("Include a specific hook in the profiling regardless of limits."), ];
-    const obj14 = { size: "sm", keyboardType: "email-address", autoCapitalize: "none", autoCorrect: false, defaultValue: first1, placeholder: "hookName", leadingIcon: first(str[11]).LettersIcon, trailingIcon: first(str[12]).TrashIcon };
-    const obj15 = {};
-    const intl = first(str[13]).intl;
-    obj15.accessibilityLabel = intl.string(first(str[13]).t.VkKicb);
-    obj15.onPress = function onPress() {
+    items8[1] = tmp18(tmp(tmp2[8]).TextField, obj8);
+    obj6[0] = items8;
+    obj5[1] = tmp16(tmp17, obj6);
+    items7[1] = tmp18(tmp(tmp2[7]).TableRow, obj5);
+    const obj9 = { label: "Cumulative execution count warning threshold", subLabel: null };
+    const obj10 = { children: null };
+    const obj11 = { variant: "text-xs/medium", color: "text-subtle", style: null, children: "Execution counts limit for hooks before reporting violations." };
+    obj11[2] = { marginBottom: 4 };
+    const items9 = [tmp18(tmp(tmp2[4]).Text, obj11), ];
+    const obj12 = { size: "sm", defaultValue: null, keyboardType: "numeric", leadingIcon: null, trailingText: "times", onChange: null };
+    obj12[1] = str3.toString();
+    obj12[3] = tmp(tmp2[10]).AnalyticsIcon;
+    obj12[5] = function onChange(arg0) {
+      callback3(Number(arg0));
+    };
+    items9[1] = tmp18(tmp(tmp2[8]).TextField, obj12);
+    obj10[0] = items9;
+    obj9[1] = tmp16(tmp17, obj10);
+    items7[2] = tmp18(tmp(tmp2[7]).TableRow, obj9);
+    const obj13 = { label: "Track specific hook", subLabel: null };
+    const obj14 = { children: null };
+    const obj15 = { variant: "text-xs/medium", color: "text-subtle", style: null, children: "Include a specific hook in the profiling regardless of limits." };
+    obj15[2] = { marginBottom: 4 };
+    const items10 = [tmp18(tmp(tmp2[4]).Text, obj15), ];
+    const obj16 = { size: "sm", keyboardType: "email-address", autoCapitalize: "none", autoCorrect: false, defaultValue: null, placeholder: "hookName", leadingIcon: null, trailingIcon: null, trailingPressableProps: null, onChange: null };
+    obj16[4] = first1;
+    obj16[6] = tmp(tmp2[11]).LettersIcon;
+    obj16[7] = tmp(tmp2[12]).TrashIcon;
+    const obj17 = { accessibilityLabel: null, onPress: null };
+    const intl = tmp(tmp2[13]).intl;
+    obj17[0] = intl.string(tmp(tmp2[13]).t.VkKicb);
+    obj17[1] = function onPress() {
       callback4("");
     };
-    obj14.trailingPressableProps = obj15;
-    obj14.onChange = function onChange(arg0) {
+    obj16[8] = obj17;
+    obj16[9] = function onChange(arg0) {
       callback4(arg0);
     };
-    items10[1] = callback2(first(str[8]).TextField, obj14);
-    obj13.children = items10;
-    obj12.subLabel = callback3(str3, obj13);
-    items7[3] = callback2(first(str[7]).TableRow, obj12);
-    obj2.children = items7;
-    tmp13 = callback3(first(str[5]).TableRowGroup, obj2);
+    items10[1] = tmp18(tmp(tmp2[8]).TextField, obj16);
+    obj14[0] = items10;
+    obj13[1] = tmp16(tmp17, obj14);
+    items7[3] = tmp18(tmp(tmp2[7]).TableRow, obj13);
+    obj[2] = items7;
+    tmp16Result = tmp16(tmp(tmp2[5]).TableRowGroup, obj);
   }
-  items5[1] = tmp13;
-  obj.children = items5;
-  return callback3(str3, obj);
+  children[1] = tmp16Result;
+  return closure_6(str3, { children });
 };

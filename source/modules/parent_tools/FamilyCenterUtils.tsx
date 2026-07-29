@@ -1,138 +1,117 @@
-// Module ID: 5837
-// Function ID: 51035
-// Name: getActivityTypeTextConfigs
-// Dependencies: [5775, 5776, 1212, 2199, 3747, 5777, 2]
-// Exports: displayTypeFromString, formatLinkTimestamp, formatTotalTime, formatUserActivityTimestamp, getActivityWindowTimestampFormatter, getEmptyActivityFormatter, getFailureCodeForAPIError, getOrFetchLinkedUsers, getSortedActivityTypeConfigs, getTopUserOrGuildDescription, isGift, isGuildAction, isParentallyControlled, isPurchase, isUserAction
+// Module ID: 5855
+// Function ID: 5856
+// Name: getEmptyActivityFormatter
+// Dependencies: [5793, 5794, 1236, 2223, 3771, 5795, 2]
+// Exports: displayTypeFromString, formatLinkTimestamp, formatTotalTime, formatUserActivityTimestamp, getActivityTypeTextConfigs, getActivityWindowTimestampFormatter, getEmptyActivityFormatter, getFailureCodeForAPIError, getOrFetchLinkedUsers, getSortedActivityTypeConfigs, getTopUserOrGuildDescription, hasActiveParentLinks, isGift, isGuildAction, isParentallyControlled, isPurchase, isUserAction
 
-// Module 5837 (getActivityTypeTextConfigs)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 5855 (getEmptyActivityFormatter)
+import freshTeenActivityWithMap from "freshTeenActivityWithMap";
 import items from "items";
 
-let closure_4;
-let closure_5;
+let c4;
+let c5;
+let c9;
 let closure_6;
-let closure_7;
-let closure_8;
-let closure_9;
+let error;
+let metroImportAll;
 const require = arg1;
-function getActivityTypeTextConfigs() {
-  return new Map(closure_4);
-}
-function hasActiveParentLinks() {
-  const values = Object.values(authStore.getLinkedUsers());
-  return values.some((link_status) => {
-    let tmp = link_status.link_status === outer1_8.ACTIVE;
-    if (tmp) {
-      tmp = link_status.link_type === outer1_9.PARENT;
-    }
-    return tmp;
-  });
-}
-({ ACTION_TO_TEXT: closure_4, FAMILY_CENTER_ERROR_CODE_TO_FAILURE: closure_5, FamilyCenterFailureCode: closure_6, TeenActionDisplayType: closure_7, UserLinkStatus: closure_8, UserLinkType: closure_9 } = items);
+({ ACTION_TO_TEXT: c4, FAMILY_CENTER_ERROR_CODE_TO_FAILURE: c5, FamilyCenterFailureCode: closure_6, TeenActionDisplayType: error, UserLinkStatus: metroImportAll, UserLinkType: c9 } = items);
+let c10 = 86400;
+let c11 = 172800;
 let result = require("getSystemLocale").fileFinishedImporting("modules/parent_tools/FamilyCenterUtils.tsx");
 
 export const getEmptyActivityFormatter = function getEmptyActivityFormatter() {
-  const obj = {};
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj.today = intl.string(importDefault(2199).VjIAQQ);
-  const intl2 = require(1212) /* getSystemLocale */.intl;
-  obj.yesterday = intl2.string(importDefault(2199)["2a8xHY"]);
-  obj.days = importDefault(2199).Xt6oND;
+  const obj = { today: null, yesterday: null, days: null };
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj[0] = intl.string(importDefault(2223).VjIAQQ);
+  const intl2 = require(1236) /* getSystemLocale */.intl;
+  obj[1] = intl2.string(importDefault(2223)["2a8xHY"]);
+  obj[2] = importDefault(2223).Xt6oND;
   return obj;
 };
 export const getActivityWindowTimestampFormatter = function getActivityWindowTimestampFormatter(arg0) {
-  const obj = {};
-  const intl = require(1212) /* getSystemLocale */.intl;
+  const obj = { today: null, yesterday: null, days: null };
+  const intl = require(1236) /* getSystemLocale */.intl;
   const string = intl.string;
-  const tmp4 = importDefault(2199);
+  const tmp4 = importDefault(2223);
   if (arg0) {
-    obj.today = string(tmp4["2AtcIs"]);
-    const intl3 = tmp(1212).intl;
-    obj.yesterday = intl3.string(tmp3(2199).stOECr);
-    obj.days = tmp3(2199).n8n5Ba;
+    obj[0] = string(tmp4["2AtcIs"]);
+    const intl3 = tmp(1236).intl;
+    obj[1] = intl3.string(tmp3(2223).stOECr);
+    obj[2] = tmp3(2223).n8n5Ba;
     let tmp5 = obj;
   } else {
-    obj.today = string(tmp4.g1ZX6m);
-    const intl2 = tmp(1212).intl;
-    obj.yesterday = intl2.string(tmp3(2199).s3qSVt);
-    obj.days = tmp3(2199).f1UJiC;
+    obj[0] = string(tmp4.g1ZX6m);
+    const intl2 = tmp(1236).intl;
+    obj[1] = intl2.string(tmp3(2223).s3qSVt);
+    obj[2] = tmp3(2223).f1UJiC;
     tmp5 = obj;
   }
   return tmp5;
 };
 export const formatUserActivityTimestamp = function formatUserActivityTimestamp(time, timestampFormatter, arg2) {
-  let obj = importDefault(3747)();
-  const diffResult = obj.diff(importDefault(3747)(time), "s");
-  const tmp2 = timestampFormatter();
-  importDefault(3747)(time).format("LL");
-  if (diffResult < 86400) {
-    let yesterday = tmp2.today;
-  } else if (diffResult < 172800) {
-    yesterday = tmp2.yesterday;
+  let obj = importDefault(3771)();
+  const diffResult = obj.diff(importDefault(3771)(time), "s");
+  const tmp3 = timestampFormatter();
+  importDefault(3771)(time).format("LL");
+  if (diffResult < c10) {
+    let yesterday = tmp3.today;
+  } else if (diffResult < c11) {
+    yesterday = tmp3.yesterday;
   } else {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    obj = {};
+    let num = arg2;
+    const intl = require(1236) /* getSystemLocale */.intl;
     const _Math = Math;
-    let num2 = 999;
-    const rounded = Math.floor(diffResult / 86400);
-    if (null != arg2) {
-      num2 = arg2;
+    const rounded = Math.floor(diffResult / tmp5);
+    if (arg2 == null) {
+      num = 999;
     }
-    obj.days = Math.min(rounded, num2);
-    yesterday = intl.formatToPlainString(tmp2.days, obj);
+    obj = { days: null };
+    obj[0] = Math.min(rounded, num);
+    yesterday = intl.formatToPlainString(tmp3.days, obj);
   }
   return yesterday;
 };
 export const formatLinkTimestamp = function formatLinkTimestamp(arg0, SENT_TIMESTAMP_FORMATTER) {
-  let obj = importDefault(3747)();
-  const diffResult = obj.diff(importDefault(3747)(arg0), "s");
-  const tmp2 = SENT_TIMESTAMP_FORMATTER();
-  importDefault(3747)(arg0);
+  let obj = importDefault(3771)();
+  const diffResult = obj.diff(importDefault(3771)(arg0), "s");
+  const tmp3 = SENT_TIMESTAMP_FORMATTER();
+  importDefault(3771)(arg0);
   if (diffResult < 60) {
-    let yesterday = tmp2.seconds;
+    let yesterday = tmp3.seconds;
   } else if (diffResult < 3600) {
-    const intl4 = require(1212) /* getSystemLocale */.intl;
-    obj = {};
+    const intl4 = require(1236) /* getSystemLocale */.intl;
+    obj = { count: null };
     const _Math3 = Math;
-    obj.count = Math.floor(diffResult / 60);
-    yesterday = intl4.formatToPlainString(tmp2.minutes, obj);
-  } else if (diffResult < 86400) {
-    const intl3 = require(1212) /* getSystemLocale */.intl;
-    obj = {};
+    obj[0] = Math.floor(diffResult / 60);
+    yesterday = intl4.formatToPlainString(tmp3.minutes, obj);
+  } else if (diffResult < c10) {
+    const intl3 = require(1236) /* getSystemLocale */.intl;
+    obj = { count: null };
     const _Math2 = Math;
-    obj.count = Math.floor(diffResult / 3600);
-    yesterday = intl3.formatToPlainString(tmp2.hours, obj);
-  } else if (diffResult < 172800) {
-    yesterday = tmp2.yesterday;
+    obj[0] = Math.floor(diffResult / 3600);
+    yesterday = intl3.formatToPlainString(tmp3.hours, obj);
+  } else if (diffResult < c11) {
+    yesterday = tmp3.yesterday;
   } else if (diffResult < 604800) {
-    const intl2 = require(1212) /* getSystemLocale */.intl;
-    const obj1 = {};
+    const intl2 = require(1236) /* getSystemLocale */.intl;
+    const obj1 = { count: null };
     const _Math = Math;
-    obj1.count = Math.floor(diffResult / 86400);
-    yesterday = intl2.formatToPlainString(tmp2.days, obj1);
+    obj1[0] = Math.floor(diffResult / tmp13);
+    yesterday = intl2.formatToPlainString(tmp3.days, obj1);
   } else {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    const obj2 = { date: tmp4 };
-    yesterday = intl.formatToPlainString(tmp2.date, obj2);
+    const intl = require(1236) /* getSystemLocale */.intl;
+    const obj2 = { date: null };
+    obj2[0] = tmp5;
+    yesterday = intl.formatToPlainString(tmp3.date, obj2);
   }
   return yesterday;
 };
 export const isUserAction = function isUserAction(action) {
-  let tmp = action.display_type === constants2.USER_ADD;
-  if (!tmp) {
-    tmp = action.display_type === constants2.USER_INTERACTION;
-  }
-  if (!tmp) {
-    tmp = action.display_type === constants2.USER_CALLED;
-  }
-  return tmp;
+  return action.display_type === constants2.USER_ADD || action.display_type === constants2.USER_INTERACTION || action.display_type === constants2.USER_CALLED;
 };
 export const isGuildAction = function isGuildAction(action) {
-  let tmp = action.display_type === constants2.GUILD_ADD;
-  if (!tmp) {
-    tmp = action.display_type === constants2.GUILD_INTERACTION;
-  }
-  return tmp;
+  return action.display_type === constants2.GUILD_ADD || action.display_type === tmp.GUILD_INTERACTION;
 };
 export const isPurchase = function isPurchase(action) {
   return action.display_type === constants2.PURCHASES;
@@ -142,33 +121,36 @@ export const isGift = function isGift(action) {
 };
 export const displayTypeFromString = function displayTypeFromString(arg0) {
   const values = Object.values(closure_7);
-  let num = 0;
-  if (0 < values.length) {
-    while (values[num].toString() !== arg0) {
-      num = num + 1;
+  for (const item10011 of values) {
+    let tmp2 = item10011;
+    if (item10011.toString() === arg0) {
+      let tmp3 = obj;
+      obj.return();
+      return item10011;
     }
-    return values[num];
   }
 };
 export const getFailureCodeForAPIError = function getFailureCodeForAPIError(arg0) {
   let GENERIC_ERROR = table[arg0.code];
-  if (null == GENERIC_ERROR) {
+  if (GENERIC_ERROR == null) {
     GENERIC_ERROR = constants.GENERIC_ERROR;
   }
   return GENERIC_ERROR;
 };
 export const getSortedActivityTypeConfigs = function getSortedActivityTypeConfigs() {
-  const obj = getActivityTypeTextConfigs();
-  if (0 === obj.size) {
+  const map = new Map(closure_4);
+  if (0 === map.size) {
     let items = [];
   } else {
     const _Array = Array;
-    items = Array.from(obj.entries()).sort((arg0, arg1) => arg0[1].priority - arg1[1].priority);
-    const arr = Array.from(obj.entries());
+    items = Array.from(map.entries()).sort((arg0, arg1) => arg0[1].priority - arg1[1].priority);
+    const arr = Array.from(map.entries());
   }
   return items;
 };
-export { getActivityTypeTextConfigs };
+export const getActivityTypeTextConfigs = function getActivityTypeTextConfigs() {
+  return new Map(closure_4);
+};
 export const formatTotalTime = function formatTotalTime(arg0) {
   const rounded = Math.floor(arg0 / 60);
   const result = arg0 % 60;
@@ -183,32 +165,51 @@ export const formatTotalTime = function formatTotalTime(arg0) {
 };
 export const getOrFetchLinkedUsers = function getOrFetchLinkedUsers() {
   if (authStore.getAreLinkedUsersProcessed()) {
-    return authStore.getLinkedUsers();
+    return obj.getLinkedUsers();
   } else {
-    const linkedUsers = importDefault(5777).fetchLinkedUsers();
+    const linkedUsers = importDefault(5795).fetchLinkedUsers();
   }
+  obj = authStore;
 };
-export { hasActiveParentLinks };
+export const hasActiveParentLinks = function hasActiveParentLinks() {
+  const values = Object.values(authStore.getLinkedUsers());
+  return values.some((link_status) => {
+    let tmp = link_status.link_status === constants.ACTIVE;
+    if (tmp) {
+      tmp = link_status.link_type === constants2.PARENT;
+    }
+    return tmp;
+  });
+};
 export const isParentallyControlled = function isParentallyControlled() {
-  return hasActiveParentLinks();
+  const values = Object.values(authStore.getLinkedUsers());
+  return values.some((link_status) => {
+    let tmp = link_status.link_status === constants.ACTIVE;
+    if (tmp) {
+      tmp = link_status.link_type === constants2.PARENT;
+    }
+    return tmp;
+  });
 };
 export const getTopUserOrGuildDescription = function getTopUserOrGuildDescription(dms_sent, call_count) {
   if (call_count > 0) {
     if (0 === dms_sent) {
-      const intl3 = require(1212) /* getSystemLocale */.intl;
-      let obj = { callCount: call_count };
-      let formatToPlainStringResult = intl3.formatToPlainString(importDefault(2199)["L/Cj7S"], obj);
+      const intl3 = require(1236) /* getSystemLocale */.intl;
+      let obj = { callCount: null };
+      obj[0] = call_count;
+      let formatToPlainStringResult = intl3.formatToPlainString(importDefault(2223)["L/Cj7S"], obj);
     }
     return formatToPlainStringResult;
   }
   if (dms_sent > 0) {
     if (0 === call_count) {
-      const intl2 = require(1212) /* getSystemLocale */.intl;
-      obj = { messageCount: dms_sent };
-      formatToPlainStringResult = intl2.formatToPlainString(importDefault(2199)["6X1F0i"], obj);
+      const intl2 = require(1236) /* getSystemLocale */.intl;
+      obj = { messageCount: null };
+      obj[0] = dms_sent;
+      formatToPlainStringResult = intl2.formatToPlainString(importDefault(2223)["6X1F0i"], obj);
     }
   }
-  const intl = require(1212) /* getSystemLocale */.intl;
+  const intl = require(1236) /* getSystemLocale */.intl;
   obj = { messageCount: dms_sent, callCount: call_count };
-  formatToPlainStringResult = intl.formatToPlainString(importDefault(2199).IYqGMG, obj);
+  formatToPlainStringResult = intl.formatToPlainString(importDefault(2223).IYqGMG, obj);
 };

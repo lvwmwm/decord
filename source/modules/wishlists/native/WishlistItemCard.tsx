@@ -1,11 +1,11 @@
-// Module ID: 9749
-// Function ID: 75808
+// Module ID: 9771
+// Function ID: 9772
 // Name: WishlistItemCard
-// Dependencies: [31, 653, 33, 7865, 9750, 9752, 9753, 2]
+// Dependencies: [19, 676, 21, 7888, 9772, 9774, 9775, 2]
 // Exports: default
 
-// Module 9749 (WishlistItemCard)
-import "result";
+// Module 9771 (WishlistItemCard)
+import "noop";
 import { SKUProductLines } from "ME";
 import { jsx } from "jsxProd";
 
@@ -18,26 +18,34 @@ export default function WishlistItemCard(arg0) {
   let source;
   let wishlistOwnerId;
   ({ sku, isOwned, source, wishlistOwnerId } = arg0);
-  let obj = { sku: 0, isOwned: 0, source: 0, wishlistOwnerId: 0 };
-  Object.setPrototypeOf(null);
-  const merged = Object.assign(arg0, obj);
-  require(7865) /* apexExperiment */;
+  const merged = Object.assign(arg0, Object.create(null));
+  require(7888) /* apexExperiment */;
   const productLine = sku.productLine;
   if (SKUProductLines.COLLECTIBLES === productLine) {
-    obj = { sku, isOwned, source, wishlistOwnerId };
+    let obj = { sku: null, isOwned: null, source: null, wishlistOwnerId: null };
+    obj[0] = sku;
+    obj[1] = isOwned;
+    obj[2] = source;
+    obj[3] = wishlistOwnerId;
     const merged1 = Object.assign(merged);
-    return jsx(importDefault(9750), { sku, isOwned, source, wishlistOwnerId });
-  } else if (SKUProductLines.PREMIUM === productLine) {
-    obj = { sku, source };
+    return jsx(importDefault(9772), { sku: null, isOwned: null, source: null, wishlistOwnerId: null });
+  } else if (tmp5.PREMIUM === productLine) {
+    obj = { sku: null, source: null };
+    obj[0] = sku;
+    obj[1] = source;
     const merged2 = Object.assign(merged);
-    return jsx(importDefault(9752), { sku, source });
-  } else if (SKUProductLines.SOCIAL_LAYER_GAME_ITEM === productLine) {
+    return jsx(importDefault(9774), { sku: null, source: null });
+  } else if (tmp5.SOCIAL_LAYER_GAME_ITEM === productLine) {
     let tmp6 = null;
     if (tmp4) {
-      const obj1 = { sku, isOwned, source, wishlistOwnerId };
+      obj = { sku: null, isOwned: null, source: null, wishlistOwnerId: null };
+      obj[0] = sku;
+      obj[1] = isOwned;
+      obj[2] = source;
+      obj[3] = wishlistOwnerId;
       const merged3 = Object.assign(merged);
-      tmp6 = jsx(importDefault(9753), { sku, isOwned, source, wishlistOwnerId });
-      const tmp10 = importDefault(9753);
+      tmp6 = jsx(importDefault(9775), { sku: null, isOwned: null, source: null, wishlistOwnerId: null });
+      const tmp9 = importDefault(9775);
     }
     return tmp6;
   } else {

@@ -1,24 +1,11 @@
-// Module ID: 5769
-// Function ID: 50158
-// Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 566, 686, 2]
+// Module ID: 5787
+// Function ID: 5788
+// Name: handleChange
+// Dependencies: [589, 709, 2]
 
-// Module 5769 (_isNativeReflectConstruct)
-import dispatcher from "dispatcher";
-import set from "set";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
+// Module 5787 (handleChange)
+import { PersistedStore } from "initialize";
 
-function _isNativeReflectConstruct() {
-  let dispatcher = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return dispatcher;
-  }
-  const result = _isNativeReflectConstruct();
-}
 function handleChange(expand) {
   if (expand.expand) {
     tmp4[tmp3] = true;
@@ -26,69 +13,35 @@ function handleChange(expand) {
     delete tmp[tmp2];
   }
 }
-let closure_5 = {};
-let tmp2 = ((PersistedStore) => {
-  class ChannelListVoiceCategoryStore {
-    constructor() {
-      self = this;
-      tmp = ChannelListVoiceCategoryStore(this, ChannelListVoiceCategoryStore);
-      obj = outer1_3(ChannelListVoiceCategoryStore);
-      tmp2 = outer1_2;
-      if (outer1_6()) {
-        tmp6 = globalThis;
-        _Reflect = Reflect;
-        tmp7 = outer1_3;
-        tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, outer1_3(self).constructor);
-      } else {
-        tmp3 = arguments;
-        tmp4 = arguments;
-        constructResult = obj(...arguments);
-      }
-      return tmp2(self, constructResult);
-    }
+let closure_0 = {};
+class ChannelListVoiceCategoryStore extends PersistedStore {
+}
+const prototype = ChannelListVoiceCategoryStore.prototype;
+prototype["initialize"] = function initialize(arg0) {
+  let obj = arg0;
+  if (arg0 == null) {
+    obj = {};
   }
-  callback2(ChannelListVoiceCategoryStore, PersistedStore);
-  let obj = {
-    key: "initialize",
-    value(arg0) {
-      let obj = arg0;
-      if (null == arg0) {
-        obj = {};
-      }
-      const outer1_5 = obj;
-    }
-  };
-  const items = [obj, , , ];
-  obj = {
-    key: "isVoiceCategoryExpanded",
-    value(arg0) {
-      let tmp = null != arg0;
-      if (tmp) {
-        tmp = outer1_5[arg0];
-      }
-      return null != tmp && tmp;
-    }
-  };
-  items[1] = obj;
-  obj = {
-    key: "isVoiceCategoryCollapsed",
-    value(arg0) {
-      return !this.isVoiceCategoryExpanded(arg0);
-    }
-  };
-  items[2] = obj;
-  items[3] = {
-    key: "getState",
-    value() {
-      return outer1_5;
-    }
-  };
-  return callback(ChannelListVoiceCategoryStore, items);
-})(require("initialize").PersistedStore);
-tmp2.displayName = "ChannelListVoiceCategoryStore";
-tmp2.persistKey = "ChannelListVoiceCategoryStore";
-tmp2 = new tmp2(require("dispatcher"), { VOICE_CATEGORY_COLLAPSE: handleChange, VOICE_CATEGORY_EXPAND: handleChange });
-let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/guild_sidebar/ChannelListVoiceCategoryStore.tsx");
+};
+prototype["isVoiceCategoryExpanded"] = function isVoiceCategoryExpanded(id) {
+  let flag = null != id;
+  if (flag) {
+    flag = table[id];
+  }
+  if (flag == null) {
+    flag = false;
+  }
+  return flag;
+};
+prototype["isVoiceCategoryCollapsed"] = function isVoiceCategoryCollapsed(id) {
+  return !this.isVoiceCategoryExpanded(id);
+};
+prototype["getState"] = function getState() {
+  return closure_0;
+};
+ChannelListVoiceCategoryStore.displayName = "ChannelListVoiceCategoryStore";
+ChannelListVoiceCategoryStore.persistKey = "ChannelListVoiceCategoryStore";
+const channelListVoiceCategoryStore = new ChannelListVoiceCategoryStore(require("dispatcher"), { VOICE_CATEGORY_COLLAPSE: handleChange, VOICE_CATEGORY_EXPAND: handleChange });
+const result = require("set").fileFinishedImporting("modules/guild_sidebar/ChannelListVoiceCategoryStore.tsx");
 
-export default tmp2;
+export default channelListVoiceCategoryStore;

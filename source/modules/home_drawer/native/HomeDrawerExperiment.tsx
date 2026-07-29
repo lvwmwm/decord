@@ -1,11 +1,12 @@
-// Module ID: 4022
-// Function ID: 33209
+// Module ID: 4046
+// Function ID: 4047
 // Name: MobileHomeDrawerExperiment
-// Dependencies: [1325, 2]
+// Dependencies: [1349, 2]
 
-// Module 4022 (MobileHomeDrawerExperiment)
-const obj = { name: "2025-10-mobile-home-drawer", kind: "user", defaultConfig: { enableHome: false, landOnHome: false, enablePeekHint: false }, variations: { [1]: { enableHome: true, landOnHome: false, enablePeekHint: true }, [2]: { enableHome: true, landOnHome: true, enablePeekHint: false } } };
-const tmp2 = require("getUnitId")(obj);
+// Module 4046 (MobileHomeDrawerExperiment)
+const obj = { 1: null, 2: { enableHome: true, landOnHome: false, enablePeekHint: true } };
+obj[2] = { enableHome: true, landOnHome: true, enablePeekHint: false };
+const tmp2 = require("getUnitId")({ name: "2025-10-mobile-home-drawer", kind: "user", defaultConfig: { enableHome: false, landOnHome: false, enablePeekHint: false }, variations: obj });
 const result = require("set").fileFinishedImporting("modules/home_drawer/native/HomeDrawerExperiment.tsx");
 
 export const MobileHomeDrawerExperiment = tmp2;

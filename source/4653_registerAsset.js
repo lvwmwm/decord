@@ -1,11 +1,10 @@
 // Module ID: 4653
-// Function ID: 40415
+// Function ID: 4654
 // Name: registerAsset
-// Dependencies: [1217]
+// Dependencies: [1241]
 
 // Module 4653 (registerAsset)
 import registerAsset from "registerAsset";
 
-const obj = { __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "d71daeef64b152476fb485143e6c3f6e", name: "TextLockIcon", type: "png" };
 
-export default registerAsset.registerAsset(obj);
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "8aacc7898585bec38aca6cf682c01533", name: "FolderIcon", type: "png" });

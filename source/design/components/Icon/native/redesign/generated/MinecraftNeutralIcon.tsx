@@ -1,18 +1,18 @@
-// Module ID: 8481
-// Function ID: 67450
+// Module ID: 8505
+// Function ID: 8506
 // Name: MinecraftNeutralIcon
-// Dependencies: [31, 27, 33, 689, 3868, 8482, 8483, 8484, 2]
+// Dependencies: [19, 17, 21, 712, 3892, 8506, 8507, 8508, 2]
 // Exports: MinecraftNeutralIcon
 
-// Module 8481 (MinecraftNeutralIcon)
-import "result";
+// Module 8505 (MinecraftNeutralIcon)
+import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
 
-let closure_4;
-let closure_5;
+let c4;
+let c5;
 const require = arg1;
-({ jsx: closure_4, jsxs: closure_5 } = jsxProd);
+({ jsx: c4, jsxs: c5 } = jsxProd);
 const result = require("jsxProd").fileFinishedImporting("design/components/Icon/native/redesign/generated/MinecraftNeutralIcon.tsx");
 
 export const MinecraftNeutralIcon = function MinecraftNeutralIcon(secondaryColor) {
@@ -20,7 +20,7 @@ export const MinecraftNeutralIcon = function MinecraftNeutralIcon(secondaryColor
   let style;
   ({ style, color } = secondaryColor);
   if (color === undefined) {
-    color = importDefault(689).colors.INTERACTIVE_ICON_DEFAULT;
+    color = importDefault(712).colors.INTERACTIVE_ICON_DEFAULT;
   }
   let str = secondaryColor.secondaryColor;
   if (str === undefined) {
@@ -30,25 +30,32 @@ export const MinecraftNeutralIcon = function MinecraftNeutralIcon(secondaryColor
   if (str2 === undefined) {
     str2 = "#fff";
   }
-  let obj = { style: 0, color: 0, secondaryColor: 0, tertiaryColor: 0 };
-  Object.setPrototypeOf(null);
-  const merged = Object.assign(secondaryColor, obj);
-  obj = {};
-  obj = { source: require(8482) /* registerAsset */, color, style };
+  const merged = Object.assign(secondaryColor, Object.create(null));
+  let obj = { children: null };
+  obj = { source: null, color: null, style: null };
+  obj[0] = require(8506) /* registerAsset */;
+  obj[1] = color;
+  obj[2] = style;
   const merged1 = Object.assign(merged);
-  const items = [callback(require(3868) /* BaseIconImage */.BaseIconImage, obj), , ];
-  const obj1 = { source: require(8483) /* registerAsset */, color: str };
+  const items = [callback(require(3892) /* BaseIconImage */.BaseIconImage, obj), , ];
+  obj = { source: null, color: null, style: null };
+  obj[0] = require(8507) /* registerAsset */;
+  obj[1] = str;
   const items1 = [style];
-  const items2 = [...items1.flat(), { position: "absolute", top: 0 }];
-  obj1.style = items2;
+  const items2 = [];
+  items2[HermesBuiltin.arraySpread(items1.flat(), 0)] = { position: "absolute", top: 0 };
+  obj[2] = items2;
   const merged2 = Object.assign(merged);
-  items[1] = callback(require(3868) /* BaseIconImage */.BaseIconImage, obj1);
-  const obj2 = { source: require(8484) /* registerAsset */, color: str2 };
+  items[1] = callback(require(3892) /* BaseIconImage */.BaseIconImage, obj);
+  const obj1 = { source: null, color: null, style: null };
+  obj1[0] = require(8508) /* registerAsset */;
+  obj1[1] = str2;
   const items3 = [style];
-  const items4 = [...items3.flat(), { position: "absolute", top: 0 }];
-  obj2.style = items4;
+  const items4 = [];
+  items4[HermesBuiltin.arraySpread(items3.flat(), 0)] = { position: "absolute", top: 0 };
+  obj1[2] = items4;
   const merged3 = Object.assign(merged);
-  items[2] = callback(require(3868) /* BaseIconImage */.BaseIconImage, obj2);
-  obj.children = items;
+  items[2] = callback(require(3892) /* BaseIconImage */.BaseIconImage, obj1);
+  obj[0] = items;
   return callback2(View, obj);
 };

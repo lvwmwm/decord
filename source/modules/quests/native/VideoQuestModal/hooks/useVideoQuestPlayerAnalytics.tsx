@@ -1,17 +1,17 @@
-// Module ID: 14136
-// Function ID: 108047
+// Module ID: 14158
+// Function ID: 14159
 // Name: useVideoQuestPlayerAnalytics
-// Dependencies: [31, 27, 4257, 653, 10472, 5983, 10476, 14137, 14138, 5969, 5014, 14038, 5849, 5854, 2]
+// Dependencies: [19, 17, 4281, 676, 10496, 6002, 10500, 14159, 14160, 5988, 5036, 14060, 5867, 5872, 2]
 // Exports: default
 
-// Module 14136 (useVideoQuestPlayerAnalytics)
-import result from "result";
+// Module 14158 (useVideoQuestPlayerAnalytics)
+import noop from "noop";
 import { AppState } from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import handleConnectionInfoChange from "handleConnectionInfoChange";
 import { AnalyticEvents } from "ME";
 
 const require = arg1;
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/quests/native/VideoQuestModal/hooks/useVideoQuestPlayerAnalytics.tsx");
+const result = require("handleConnectionInfoChange").fileFinishedImporting("modules/quests/native/VideoQuestModal/hooks/useVideoQuestPlayerAnalytics.tsx");
 
 export default function useVideoQuestPlayerAnalytics(duration) {
   duration = duration.duration;
@@ -31,55 +31,65 @@ export default function useVideoQuestPlayerAnalytics(duration) {
   let items = [questId, videoSessionId, playerState, questImpression, sourceQuestContent];
   const effect1 = questId.useEffect(() => {
     let closure_0 = sourceQuestContent.addEventListener("change", (arg0) => {
-      if (null != outer1_7.current) {
-        let obj = { questId: outer1_3 };
+      if (null != ref.current) {
+        let obj = { questId: null, event: null, properties: null, sourceQuestContent: null };
+        obj[0] = noop;
         if ("active" === arg0) {
-          let QUEST_VIDEO_APP_UNFOCUSED = videoSessionId.QUEST_VIDEO_APP_FOCUSED;
+          let QUEST_VIDEO_APP_UNFOCUSED = outer1_6.QUEST_VIDEO_APP_FOCUSED;
         } else {
-          QUEST_VIDEO_APP_UNFOCUSED = videoSessionId.QUEST_VIDEO_APP_UNFOCUSED;
+          QUEST_VIDEO_APP_UNFOCUSED = outer1_6.QUEST_VIDEO_APP_UNFOCUSED;
         }
-        obj.event = QUEST_VIDEO_APP_UNFOCUSED;
-        obj = { video_timestamp_seconds: outer1_7.current, video_state: outer1_2, video_session_id: outer1_6 };
+        obj[1] = QUEST_VIDEO_APP_UNFOCUSED;
+        obj = { video_timestamp_seconds: null, video_state: null, video_session_id: null, impression_id: null };
+        obj[0] = tmp.current;
+        obj[1] = closure_2;
+        obj[2] = closure_6;
         let id;
-        if (null != outer1_9) {
-          id = outer1_9.getId();
+        if (closure_9 != null) {
+          id = obj2.getId();
         }
-        obj.impression_id = id;
-        obj.properties = obj;
-        obj.sourceQuestContent = outer1_4;
-        duration(playerState[5]).trackQuestEvent(obj);
-        const obj2 = duration(playerState[5]);
+        obj[3] = id;
+        obj[2] = obj;
+        obj[3] = closure_4;
+        lib(outer1_2[5]).trackQuestEvent(obj);
+        obj2 = closure_9;
+        const obj3 = lib(outer1_2[5]);
       }
     });
     return () => {
-      closure_0.remove();
+      lib.remove();
     };
   }, items);
   const items1 = [questId, videoAssetId, isQuestCompleted, videoSessionId, duration, questImpression, sourceQuestContent];
   const callback = questId.useCallback((segment_end_sec) => {
     if (null != closure_7.current) {
-      let id;
       let obj = duration(playerState[5]);
-      obj = { questId, event: videoSessionId.QUEST_VIDEO_SEGMENT_WATCHED };
+      obj = { questId: null, event: null, properties: null, sourceQuestContent: null };
+      obj[0] = questId;
+      obj[1] = videoSessionId.QUEST_VIDEO_SEGMENT_WATCHED;
       obj = {};
       const merged = Object.assign(segment_end_sec);
-      obj["video_asset_id"] = videoAssetId;
-      obj["quest_completed"] = isQuestCompleted;
-      obj["video_duration_sec"] = duration;
-      obj["video_progress"] = duration(playerState[6]).formatVideoProgressRatio(segment_end_sec.segment_end_sec, closure_7.current);
-      obj["video_session_id"] = videoSessionId;
-      if (null != questImpression) {
-        id = questImpression.getId();
+      obj.video_asset_id = videoAssetId;
+      obj.quest_completed = isQuestCompleted;
+      obj.video_duration_sec = duration;
+      obj.video_progress = duration(playerState[6]).formatVideoProgressRatio(segment_end_sec.segment_end_sec, tmp.current);
+      obj.video_session_id = videoSessionId;
+      let id;
+      if (questImpression != null) {
+        id = obj5.getId();
       }
-      obj["impression_id"] = id;
-      obj.properties = obj;
-      obj.sourceQuestContent = sourceQuestContent;
+      obj.impression_id = id;
+      obj[2] = obj;
+      obj[3] = sourceQuestContent;
       obj.trackQuestEvent(obj);
       const obj4 = duration(playerState[6]);
+      obj5 = questImpression;
     }
   }, items1);
   const callback1 = questId.useCallback(() => closure_7.current, []);
-  obj = { getCurrentVideoTime: callback1, onAnalytics: callback, emitIntervalMs: duration(playerState[7]).SEGMENT_ANALYTICS_EMIT_INTERVAL_MS, minSegmentDurationMs: duration(playerState[7]).SEGMENT_ANALYTICS_MIN_DURATION_MS };
+  obj = { getCurrentVideoTime: callback1, onAnalytics: callback, emitIntervalMs: null, minSegmentDurationMs: null };
+  obj[2] = duration(playerState[7]).SEGMENT_ANALYTICS_EMIT_INTERVAL_MS;
+  obj[3] = duration(playerState[7]).SEGMENT_ANALYTICS_MIN_DURATION_MS;
   const tmp6Result = isQuestCompleted(playerState[7])(obj);
   const handlePlayerStateChange = tmp6Result.handlePlayerStateChange;
   const handleLoadEnd = tmp6Result.handleLoadEnd;
@@ -88,13 +98,13 @@ export default function useVideoQuestPlayerAnalytics(duration) {
   const items2 = [playerState, handlePlayerStateChange];
   const effect2 = questId.useEffect(() => {
     if (duration(playerState[8]).PlayerState.PLAYING === playerState) {
-      handlePlayerStateChange(duration(playerState[9]).VideoPlayerState.PLAYING, null);
-    } else if (duration(playerState[8]).PlayerState.PAUSED === tmp) {
-      handlePlayerStateChange(duration(playerState[9]).VideoPlayerState.PAUSED, null);
-    } else if (duration(playerState[8]).PlayerState.ENDED === tmp) {
-      handlePlayerStateChange(duration(playerState[9]).VideoPlayerState.ENDED, null);
-    } else if (duration(playerState[8]).PlayerState.ERRORED === tmp) {
-      handlePlayerStateChange(duration(playerState[9]).VideoPlayerState.PAUSED, null);
+      handlePlayerStateChange(tmp2(tmp3[9]).VideoPlayerState.PLAYING, null);
+    } else if (tmp2(tmp3[8]).PlayerState.PAUSED === tmp) {
+      handlePlayerStateChange(tmp2(tmp3[9]).VideoPlayerState.PAUSED, null);
+    } else if (tmp2(tmp3[8]).PlayerState.ENDED === tmp) {
+      handlePlayerStateChange(tmp2(tmp3[9]).VideoPlayerState.ENDED, null);
+    } else if (tmp2(tmp3[8]).PlayerState.ERRORED === tmp) {
+      handlePlayerStateChange(tmp2(tmp3[9]).VideoPlayerState.PAUSED, null);
     }
   }, items2);
   let closure_14 = questId.useRef(null);
@@ -104,20 +114,20 @@ export default function useVideoQuestPlayerAnalytics(duration) {
     let diff = null;
     if (null != ref2.current) {
       const _Date = Date;
-      diff = Date.now() - ref2.current;
+      diff = Date.now() - tmp.current;
     }
     handleLoadEnd(diff);
     handleFirstFrame(0);
     let obj = duration(playerState[5]);
-    obj = { questId, event: videoSessionId.QUEST_VIDEO_LOADING_ENDED };
-    obj = { video_asset_id: videoAssetId, network_connection_speed: videoAssetId.getEffectiveConnectionSpeed(), duration: diff, video_session_id: videoSessionId };
+    obj = { questId, event: videoSessionId.QUEST_VIDEO_LOADING_ENDED, properties: null, sourceQuestContent: null };
+    obj = { video_asset_id: videoAssetId, network_connection_speed: videoAssetId.getEffectiveConnectionSpeed(), duration: diff, video_session_id: videoSessionId, impression_id: null };
     let id;
-    if (null != questImpression) {
+    if (questImpression != null) {
       id = questImpression.getId();
     }
-    obj.impression_id = id;
-    obj.properties = obj;
-    obj.sourceQuestContent = sourceQuestContent;
+    obj[4] = id;
+    obj[2] = obj;
+    obj[3] = sourceQuestContent;
     obj.trackQuestEvent(obj);
   }, items3);
   const items5 = [questId, videoSessionId, videoAssetId, questImpression, sourceQuestContent];
@@ -127,15 +137,15 @@ export default function useVideoQuestPlayerAnalytics(duration) {
   const callback4 = questId.useCallback(() => {
     closure_14.current = Date.now();
     let obj = duration(playerState[5]);
-    obj = { questId, event: videoSessionId.QUEST_VIDEO_LOADING_STARTED };
-    obj = { video_asset_id: videoAssetId, network_connection_speed: videoAssetId.getEffectiveConnectionSpeed(), video_session_id: videoSessionId, is_hls_supported: true };
+    obj = { questId, event: videoSessionId.QUEST_VIDEO_LOADING_STARTED, properties: null, sourceQuestContent: null };
+    obj = { video_asset_id: videoAssetId, network_connection_speed: videoAssetId.getEffectiveConnectionSpeed(), video_session_id: videoSessionId, is_hls_supported: true, impression_id: null };
     let id;
-    if (null != questImpression) {
+    if (questImpression != null) {
       id = questImpression.getId();
     }
-    obj.impression_id = id;
-    obj.properties = obj;
-    obj.sourceQuestContent = sourceQuestContent;
+    obj[4] = id;
+    obj[2] = obj;
+    obj[3] = sourceQuestContent;
     obj.trackQuestEvent(obj);
   }, items5);
   let closure_15 = questId.useRef(null);
@@ -147,172 +157,192 @@ export default function useVideoQuestPlayerAnalytics(duration) {
     if (arg0) {
       const _Date2 = Date;
       tmp2.current = Date.now();
-      ref4.current = ref4.current + 1;
+      ref3.current = ref3.current + 1;
+      let obj = { questId: null, event: null, properties: null, sourceQuestContent: null };
+      obj[0] = questId;
+      obj[1] = videoSessionId.QUEST_VIDEO_BUFFERING_STARTED;
+      obj = { video_asset_id: null, network_connection_speed: null, buffer_index: null, video_session_id: null, impression_id: null };
+      obj[0] = videoAssetId;
+      obj[1] = effectiveConnectionSpeed;
+      obj[2] = ref3.current;
+      obj[3] = videoSessionId;
       let id;
-      let obj = { questId, event: videoSessionId.QUEST_VIDEO_BUFFERING_STARTED };
-      obj = { video_asset_id: videoAssetId, network_connection_speed: effectiveConnectionSpeed, buffer_index: ref4.current, video_session_id: videoSessionId };
-      if (null != questImpression) {
-        id = questImpression.getId();
+      if (questImpression != null) {
+        id = obj8.getId();
       }
-      obj.impression_id = id;
-      obj.properties = obj;
-      obj.sourceQuestContent = sourceQuestContent;
+      obj[4] = id;
+      obj[2] = obj;
+      obj[3] = sourceQuestContent;
       duration(playerState[5]).trackQuestEvent(obj);
-      const obj4 = duration(playerState[5]);
+      const obj5 = duration(playerState[5]);
+      obj8 = questImpression;
     } else {
       let diff = null;
       if (null != tmp2.current) {
         const _Date = Date;
-        diff = Date.now() - ref3.current;
+        diff = Date.now() - tmp2.current;
       }
-      let id1;
       obj = duration(playerState[5]);
-      const obj1 = { questId, event: videoSessionId.QUEST_VIDEO_BUFFERING_ENDED };
-      const obj2 = { video_asset_id: videoAssetId, network_connection_speed: effectiveConnectionSpeed, duration: diff, buffer_index: ref4.current, video_session_id: videoSessionId };
-      if (null != questImpression) {
-        id1 = questImpression.getId();
+      const obj1 = { questId: null, event: null, properties: null, sourceQuestContent: null };
+      obj1[0] = questId;
+      obj1[1] = videoSessionId.QUEST_VIDEO_BUFFERING_ENDED;
+      const obj2 = { video_asset_id: null, network_connection_speed: null, duration: null, buffer_index: null, video_session_id: null, impression_id: null };
+      obj2[0] = videoAssetId;
+      obj2[1] = effectiveConnectionSpeed;
+      obj2[2] = diff;
+      obj2[3] = ref3.current;
+      obj2[4] = videoSessionId;
+      let id1;
+      if (questImpression != null) {
+        id1 = obj4.getId();
       }
-      obj2.impression_id = id1;
-      obj1.properties = obj2;
-      obj1.sourceQuestContent = sourceQuestContent;
+      obj2[5] = id1;
+      obj1[2] = obj2;
+      obj1[3] = sourceQuestContent;
       obj.trackQuestEvent(obj1);
+      obj4 = questImpression;
     }
   }, items6);
   const items8 = [questId, videoSessionId, questImpression, sourceQuestContent];
   const callback6 = questId.useCallback(() => {
     if (null != ref.current) {
-      let id;
       let obj = duration(playerState[5]);
-      obj = { questId, event: videoSessionId.QUEST_VIDEO_TIME_TO_FIRST_FRAME };
-      obj = {};
+      obj = { questId: null, event: null, properties: null, sourceQuestContent: null };
+      obj[0] = questId;
+      obj[1] = videoSessionId.QUEST_VIDEO_TIME_TO_FIRST_FRAME;
+      obj = { duration_ms: null, video_session_id: null, video_asset_id: null, impression_id: null };
       const _Date = Date;
-      obj.duration_ms = Date.now() - ref.current;
-      obj.video_session_id = videoSessionId;
-      obj.video_asset_id = videoAssetId;
-      if (null != questImpression) {
-        id = questImpression.getId();
+      obj[0] = Date.now() - tmp.current;
+      obj[1] = videoSessionId;
+      obj[2] = videoAssetId;
+      let id;
+      if (questImpression != null) {
+        id = obj4.getId();
       }
-      obj.impression_id = id;
-      obj.properties = obj;
-      obj.sourceQuestContent = sourceQuestContent;
+      obj[3] = id;
+      obj[2] = obj;
+      obj[3] = sourceQuestContent;
       obj.trackQuestEvent(obj);
+      obj4 = questImpression;
     }
   }, items7);
   const items9 = [questId, videoSessionId, questImpression, sourceQuestContent];
   const callback7 = questId.useCallback(() => {
     let obj = duration(playerState[5]);
-    obj = { questId, event: videoSessionId.QUEST_VIDEO_RESUMED };
-    obj = { video_timestamp_seconds: closure_7.current, pause_reason: duration(playerState[10]).VideoPauseReason.PAUSE_BUTTON, video_session_id: videoSessionId };
+    obj = { questId, event: videoSessionId.QUEST_VIDEO_RESUMED, properties: null, sourceQuestContent: null };
+    obj = { video_timestamp_seconds: closure_7.current, pause_reason: duration(playerState[10]).VideoPauseReason.PAUSE_BUTTON, video_session_id: videoSessionId, impression_id: null };
     let id;
-    if (null != questImpression) {
+    if (questImpression != null) {
       id = questImpression.getId();
     }
-    obj.impression_id = id;
-    obj.properties = obj;
-    obj.sourceQuestContent = sourceQuestContent;
+    obj[3] = id;
+    obj[2] = obj;
+    obj[3] = sourceQuestContent;
     obj.trackQuestEvent(obj);
   }, items8);
-  obj = { handleBufferAnalytics: callback5, handleEndAnalytics: callback3 };
+  obj = { handleBufferAnalytics: callback5, handleEndAnalytics: callback3, handleErrorAnalytics: null, handleLoadAnalytics: null, handleLoadStartAnalytics: null, handlePausePlaybackAnalytics: null, handleProgressAnalytics: null, handleReadyForDisplayAnalytics: null, handleResumePlaybackAnalytics: null, handleSeekAnalytics: null };
   const items10 = [duration, questId, videoAssetId, videoSessionId, questImpression, sourceQuestContent];
   const callback8 = questId.useCallback(() => {
     let obj = duration(playerState[5]);
-    obj = { questId, event: videoSessionId.QUEST_VIDEO_PAUSED };
-    obj = { video_timestamp_seconds: closure_7.current, reason: duration(playerState[10]).VideoPauseReason.PAUSE_BUTTON, video_session_id: videoSessionId };
+    obj = { questId, event: videoSessionId.QUEST_VIDEO_PAUSED, properties: null, sourceQuestContent: null };
+    obj = { video_timestamp_seconds: closure_7.current, reason: duration(playerState[10]).VideoPauseReason.PAUSE_BUTTON, video_session_id: videoSessionId, impression_id: null };
     let id;
-    if (null != questImpression) {
+    if (questImpression != null) {
       id = questImpression.getId();
     }
-    obj.impression_id = id;
-    obj.properties = obj;
-    obj.sourceQuestContent = sourceQuestContent;
+    obj[3] = id;
+    obj[2] = obj;
+    obj[3] = sourceQuestContent;
     obj.trackQuestEvent(obj);
   }, items9);
-  obj.handleErrorAnalytics = questId.useCallback((error) => {
+  obj[2] = questId.useCallback((error) => {
     let obj = duration(playerState[5]);
-    obj = { questId, event: videoSessionId.QUEST_VIDEO_ERROR };
-    obj = {};
-    const current = closure_7.current;
-    let num = 0;
-    if (null != current) {
-      num = current;
+    obj = { questId, event: videoSessionId.QUEST_VIDEO_ERROR, properties: null, sourceQuestContent: null };
+    let num = closure_7.current;
+    if (num == null) {
+      num = 0;
     }
-    obj.video_progress = duration(playerState[6]).formatVideoProgressRatio(duration, num);
-    obj.video_error_type = null;
-    obj.video_asset_id = videoAssetId;
-    obj.network_connection_speed = null;
-    obj.video_session_id = videoSessionId;
+    obj = { video_progress: duration(playerState[6]).formatVideoProgressRatio(duration, num), video_error_type: null, video_asset_id: videoAssetId, network_connection_speed: null, video_session_id: videoSessionId, video_error_code: null, video_error_message: null, video_network_state: null, impression_id: null };
     let code;
-    if (null != error) {
+    if (error != null) {
       code = error.error.code;
     }
-    obj.video_error_code = code;
+    obj[5] = code;
     let localizedDescription;
-    if (null != error) {
+    if (error != null) {
       localizedDescription = error.error.localizedDescription;
     }
-    if (null == localizedDescription) {
+    if (localizedDescription == null) {
       let errorString;
-      if (null != error) {
+      if (error != null) {
         errorString = error.error.errorString;
       }
       localizedDescription = errorString;
     }
-    obj.video_error_message = localizedDescription;
-    obj.video_network_state = null;
+    obj[6] = localizedDescription;
     let id;
-    if (null != questImpression) {
-      id = questImpression.getId();
+    if (questImpression != null) {
+      id = obj5.getId();
     }
-    obj.impression_id = id;
-    obj.properties = obj;
-    obj.sourceQuestContent = sourceQuestContent;
+    obj[8] = id;
+    obj[2] = obj;
+    obj[3] = sourceQuestContent;
     obj.trackQuestEvent(obj);
-    const obj4 = duration(playerState[6]);
-    const tmp = duration;
-    if (obj5.isSourceError(error)) {
-      const obj1 = { name: duration(playerState[13]).MetricEvents.QUEST_VIDEO_ERROR };
+    const obj3 = duration(playerState[6]);
+    obj5 = questImpression;
+    const tmp3 = questId;
+    const tmp4 = duration;
+    if (tmpResult.isSourceError(error)) {
+      const obj1 = { name: null, tags: null };
+      obj1[0] = tmp(tmp2[13]).MetricEvents.QUEST_VIDEO_ERROR;
       const _HermesInternal = HermesInternal;
-      const items = ["quest_id:" + questId, "error_type:SOURCE_ERROR"];
-      obj1.tags = items;
-      isQuestCompleted(playerState[12]).increment(obj1);
-      const obj6 = isQuestCompleted(playerState[12]);
+      const items = ["quest_id:" + tmp3, "error_type:SOURCE_ERROR"];
+      obj1[1] = items;
+      isQuestCompleted(tmp2[12]).increment(obj1);
+      const obj7 = isQuestCompleted(tmp2[12]);
     }
   }, items10);
-  obj.handleLoadAnalytics = callback2;
-  obj.handleLoadStartAnalytics = callback4;
-  obj.handlePausePlaybackAnalytics = callback8;
+  obj[3] = callback2;
+  obj[4] = callback4;
+  obj[5] = callback8;
   const items11 = [questId, videoSessionId, questImpression, sourceQuestContent];
-  obj.handleProgressAnalytics = questId.useCallback((progress, video_timestamp_seconds, current) => {
+  obj[6] = questId.useCallback((progress, video_timestamp_seconds, current) => {
     closure_7.current = current;
     let obj = duration(playerState[5]);
-    obj = { questId, event: videoSessionId.QUEST_VIDEO_PROGRESSED };
-    obj = { progress, video_timestamp_seconds, video_session_id: videoSessionId };
+    obj = { questId, event: videoSessionId.QUEST_VIDEO_PROGRESSED, properties: null, sourceQuestContent: null };
+    obj = { progress, video_timestamp_seconds, video_session_id: videoSessionId, impression_id: null };
     let id;
-    if (null != questImpression) {
+    if (questImpression != null) {
       id = questImpression.getId();
     }
-    obj.impression_id = id;
-    obj.properties = obj;
-    obj.sourceQuestContent = sourceQuestContent;
+    obj[3] = id;
+    obj[2] = obj;
+    obj[3] = sourceQuestContent;
     obj.trackQuestEvent(obj);
   }, items11);
-  obj.handleReadyForDisplayAnalytics = callback6;
-  obj.handleResumePlaybackAnalytics = callback7;
+  obj[7] = callback6;
+  obj[8] = callback7;
   const items12 = [handleSeek, questId, videoSessionId, questImpression, sourceQuestContent];
-  obj.handleSeekAnalytics = questId.useCallback((from_time_sec, to_time_sec) => {
+  obj[9] = questId.useCallback((arg0, arg1) => {
     handleSeek();
-    if (null != from_time_sec) {
+    if (null != arg0) {
       let obj = duration(playerState[5]);
-      obj = { questId, event: videoSessionId.QUEST_VIDEO_SEEKED };
-      obj = { from_time_sec, to_time_sec, video_session_id: videoSessionId };
+      obj = { questId: null, event: null, properties: null, sourceQuestContent: null };
+      obj[0] = questId;
+      obj[1] = videoSessionId.QUEST_VIDEO_SEEKED;
+      obj = { from_time_sec: null, to_time_sec: null, video_session_id: null, impression_id: null };
+      obj[0] = arg0;
+      obj[1] = arg1;
+      obj[2] = videoSessionId;
       let id;
-      if (null != questImpression) {
-        id = questImpression.getId();
+      if (questImpression != null) {
+        id = obj4.getId();
       }
-      obj.impression_id = id;
-      obj.properties = obj;
-      obj.sourceQuestContent = sourceQuestContent;
+      obj[3] = id;
+      obj[2] = obj;
+      obj[3] = sourceQuestContent;
       obj.trackQuestEvent(obj);
+      obj4 = questImpression;
     }
   }, items12);
   return obj;

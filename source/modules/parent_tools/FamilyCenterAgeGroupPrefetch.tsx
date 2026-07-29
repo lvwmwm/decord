@@ -1,25 +1,26 @@
-// Module ID: 14422
-// Function ID: 110256
+// Module ID: 14444
+// Function ID: 14445
 // Name: prefetchFamilyCenterAgeGroupWhen
-// Dependencies: [5775, 5777, 2]
+// Dependencies: [5793, 5795, 2]
 // Exports: prefetchFamilyCenterAgeGroupWhen
 
-// Module 14422 (prefetchFamilyCenterAgeGroupWhen)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 14444 (prefetchFamilyCenterAgeGroupWhen)
+import freshTeenActivityWithMap from "freshTeenActivityWithMap";
 
 const result = require("set").fileFinishedImporting("modules/parent_tools/FamilyCenterAgeGroupPrefetch.tsx");
 
 export const prefetchFamilyCenterAgeGroupWhen = function prefetchFamilyCenterAgeGroupWhen(isFamilyCenterV3Enabled) {
   let tmp = isFamilyCenterV3Enabled;
   if (isFamilyCenterV3Enabled) {
-    tmp = null == _isNativeReflectConstruct.getAgeGroup();
+    tmp = null == freshTeenActivityWithMap.getAgeGroup();
   }
   if (tmp) {
-    if (!_isNativeReflectConstruct.isLoading()) {
-      if (_isNativeReflectConstruct.canRefetch()) {
-        importDefault(5777).initialPageLoad();
-        const obj = importDefault(5777);
+    if (!freshTeenActivityWithMap.isLoading()) {
+      if (obj.canRefetch()) {
+        importDefault(5795).initialPageLoad();
+        const obj2 = importDefault(5795);
       }
     }
+    obj = freshTeenActivityWithMap;
   }
 };

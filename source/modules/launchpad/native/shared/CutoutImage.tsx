@@ -1,23 +1,26 @@
-// Module ID: 15764
-// Function ID: 121475
-// Dependencies: [57, 31, 27, 33, 491, 8507, 12000, 2]
+// Module ID: 15799
+// Function ID: 15800
+// Dependencies: [32, 19, 17, 21, 514, 8531, 12024, 2]
 
-// Module 15764
+// Module 15799
 import _slicedToArray from "_slicedToArray";
-import importAllResult from "result";
+import importAllResult from "noop";
 import { Image } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
 
 let closure_6;
-let closure_7;
+let error;
 const require = arg1;
-({ jsx: closure_6, jsxs: closure_7 } = jsxProd);
+let c4 = importAllResult;
+({ jsx: closure_6, jsxs: error } = jsxProd);
 const memoResult = importAllResult.memo(function CutoutImage(cutoutTopLeftSize) {
+  let c1;
   let imageBackgroundColor;
   let imageBorderRadius;
   let imageSize;
   let imageSource;
   let imageTintColor;
+  let tmp4;
   let num = cutoutTopLeftSize.cutoutTopLeftSize;
   if (num === undefined) {
     num = 0;
@@ -71,140 +74,200 @@ const memoResult = importAllResult.memo(function CutoutImage(cutoutTopLeftSize) 
     imageBorderRadius = imageSize / 2;
   }
   ({ imageBackgroundColor, imageTintColor } = cutoutTopLeftSize);
-  let str = cutoutTopLeftSize.clipInnerAmount;
-  if (str === undefined) {
-    str = 0;
-  }
-  let num14 = cutoutTopLeftSize.clipOuterAmount;
+  let num14 = cutoutTopLeftSize.clipInnerAmount;
   if (num14 === undefined) {
     num14 = 0;
   }
+  let num15 = cutoutTopLeftSize.clipOuterAmount;
+  if (num15 === undefined) {
+    num15 = 0;
+  }
   const borderStroke = cutoutTopLeftSize.borderStroke;
   let importDefault;
-  let str2 = 4;
-  let obj = imageTintColor(491);
-  const tmp = callback(importAllResult.useState(obj.v4()), 2);
-  const first = tmp[0];
-  importDefault = tmp[1];
-  if (null != first) {
+  let obj = importAllResult;
+  let obj1 = imageTintColor(514);
+  [tmp4, c1] = callback(importAllResult.useState(obj1.v4()), 2);
+  if (null != tmp4) {
     const _HermesInternal = HermesInternal;
-    const combined = "url(#" + first + ")";
+    const combined = "url(#" + tmp4 + ")";
   }
   let v4Result;
-  if (num14 > 0) {
-    let obj1 = imageTintColor(dependencyMap[str2]);
-    v4Result = obj1.v4();
+  if (num15 > 0) {
+    v4Result = tmp(514).v4();
+    const tmpResult = tmp(514);
   }
   if (null != v4Result) {
     const _HermesInternal2 = HermesInternal;
     const combined1 = "url(#" + v4Result + ")";
   }
   const items = [imageTintColor];
-  callback = importAllResult.useCallback(() => {
-    callback(imageTintColor(outer1_2[4]).v4());
+  callback = obj.useCallback(() => {
+    _undefined(imageTintColor(outer1_2[4]).v4());
   }, []);
-  const layoutEffect = importAllResult.useLayoutEffect(() => {
+  const layoutEffect = obj.useLayoutEffect(() => {
     if (null != imageTintColor) {
-      callback(imageTintColor(outer1_2[4]).v4());
+      _undefined(imageTintColor(outer1_2[4]).v4());
       const obj = imageTintColor(outer1_2[4]);
     }
   }, items);
-  obj = { style: cutoutTopLeftSize.style, height: imageSize, width: imageSize };
-  obj = {};
-  obj1 = { width: imageSize, height: imageSize, id: first };
+  obj = { style: cutoutTopLeftSize.style, height: imageSize, width: imageSize, children: null };
+  const tmp13 = importDefault;
+  const tmp3 = callback(importAllResult.useState(obj1.v4()), 2);
+  obj = { width: imageSize, height: imageSize, id: tmp4, children: null };
   if (imageBorderRadius === imageSize / 2) {
-    const obj2 = { cx: imageSize / 2, cy: imageSize / 2, r: imageSize / 2, fill: "white" };
-    let tmp17 = callback2(imageTintColor(8507).Circle, obj2);
+    obj1 = { cx: null, cy: null, r: null, fill: "white" };
+    obj1[0] = imageSize / 2;
+    obj1[1] = imageSize / 2;
+    obj1[2] = imageSize / 2;
+    let tmp16 = callback2(tmp(8531).Circle, obj1);
+    let tmp15 = callback2;
   } else {
-    const obj3 = { x: 0, y: 0, width: imageSize, height: imageSize, rx: imageBorderRadius, ry: imageBorderRadius, fill: "white" };
-    tmp17 = callback2(imageTintColor(8507).Rect, obj3);
+    tmp15 = callback2;
+    const obj2 = { x: 0, y: 0, width: null, height: null, rx: null, ry: null, fill: "white" };
+    obj2[2] = imageSize;
+    obj2[3] = imageSize;
+    obj2[4] = imageBorderRadius;
+    obj2[5] = imageBorderRadius;
+    tmp16 = callback2(tmp(8531).Rect, obj2);
   }
-  const items1 = [tmp17, , , , , ];
-  let tmp21 = null;
+  const items1 = [tmp16, , , , , ];
+  let tmp15Result = null;
   if (num > 0) {
-    const obj4 = { cx: num2, cy: num3, r: num, fill: "black" };
-    tmp21 = callback2(imageTintColor(8507).Circle, obj4);
+    const obj3 = { cx: null, cy: null, r: null, fill: "black" };
+    obj3[0] = num2;
+    obj3[1] = num3;
+    obj3[2] = num;
+    tmp15Result = tmp15(tmp(8531).Circle, obj3);
   }
-  items1[1] = tmp21;
-  let tmp25 = null;
+  items1[1] = tmp15Result;
+  tmp15Result = null;
   if (num4 > 0) {
-    const obj5 = { cx: imageSize - num5, cy: num6, r: num4, fill: "black" };
-    tmp25 = callback2(imageTintColor(8507).Circle, obj5);
+    const obj4 = { cx: null, cy: null, r: null, fill: "black" };
+    obj4[0] = imageSize - num5;
+    obj4[1] = num6;
+    obj4[2] = num4;
+    tmp15Result = tmp15(tmp(8531).Circle, obj4);
   }
-  items1[2] = tmp25;
-  let tmp29 = null;
+  items1[2] = tmp15Result;
+  let tmp15Result1 = null;
   if (num7 > 0) {
-    const obj6 = { cx: num8, cy: imageSize - num9, r: num7, fill: "black" };
-    tmp29 = callback2(imageTintColor(8507).Circle, obj6);
+    const obj5 = { cx: null, cy: null, r: null, fill: "black" };
+    obj5[0] = num8;
+    obj5[1] = imageSize - num9;
+    obj5[2] = num7;
+    tmp15Result1 = tmp15(tmp(8531).Circle, obj5);
   }
-  items1[3] = tmp29;
-  let tmp33 = null;
+  items1[3] = tmp15Result1;
+  let tmp15Result2 = null;
   if (num10 > 0) {
-    const obj7 = { cx: imageSize - num11, cy: imageSize - num12, r: num10, fill: "black" };
-    tmp33 = callback2(imageTintColor(8507).Circle, obj7);
+    const obj6 = { cx: null, cy: null, r: null, fill: "black" };
+    obj6[0] = imageSize - num11;
+    obj6[1] = imageSize - num12;
+    obj6[2] = num10;
+    tmp15Result2 = tmp15(tmp(8531).Circle, obj6);
   }
-  items1[4] = tmp33;
-  if (str <= 0) {
+  items1[4] = tmp15Result2;
+  if (num14 <= 0) {
     items1[5] = null;
-    obj1.children = items1;
-    const items2 = [tmp12(imageTintColor(8507).Mask, obj1), ];
+    obj[3] = items1;
+    const items2 = [tmp12(tmp(8531).Mask, obj), ];
     if (null == v4Result) {
+      const obj7 = { children: null };
       items2[1] = null;
-      obj.children = items2;
-      const items3 = [tmp12(imageTintColor(8507).Defs, obj), , , ];
-      let tmp57 = null;
+      obj7[0] = items2;
+      const items3 = [tmp12(tmp(8531).Defs, obj7), , , ];
+      let tmp15Result3 = null;
       if (null != imageBackgroundColor) {
-        const obj8 = { height: imageSize, width: imageSize, fill: imageBackgroundColor, mask: combined, clipPath: combined1 };
-        tmp57 = callback2(imageTintColor(8507).Rect, obj8);
+        const obj8 = { height: null, width: null, fill: null, mask: null, clipPath: null };
+        obj8[0] = imageSize;
+        obj8[1] = imageSize;
+        obj8[2] = imageBackgroundColor;
+        obj8[3] = combined;
+        obj8[4] = combined1;
+        tmp15Result3 = tmp15(tmp(8531).Rect, obj8);
       }
-      items3[1] = tmp57;
+      items3[1] = tmp15Result3;
       if (null == imageSource) {
         items3[2] = null;
-        let tmp72 = null;
+        let tmp15Result4 = null;
         if (null != borderStroke) {
-          const obj9 = { height: imageSize, width: imageSize, fill: "transparent", stroke: cutoutTopLeftSize.borderStrokeColor, strokeWidth: 2 * borderStroke, mask: combined, clipPath: combined1, rx: imageBorderRadius, ry: imageBorderRadius };
-          tmp72 = callback2(imageTintColor(8507).Rect, obj9);
+          const obj9 = { height: null, width: null, fill: "transparent", stroke: null, strokeWidth: null, mask: null, clipPath: null, rx: null, ry: null };
+          obj9[0] = imageSize;
+          obj9[1] = imageSize;
+          obj9[3] = cutoutTopLeftSize.borderStrokeColor;
+          obj9[4] = 2 * borderStroke;
+          obj9[5] = combined;
+          obj9[6] = combined1;
+          obj9[7] = imageBorderRadius;
+          obj9[8] = imageBorderRadius;
+          tmp15Result4 = tmp15(tmp(8531).Rect, obj9);
         }
-        items3[3] = tmp72;
-        obj.children = items3;
-        return tmp12(tmp13, obj);
+        items3[3] = tmp15Result4;
+        obj[3] = items3;
+        return tmp12(tmp14, obj);
       } else {
-        if ("number" !== typeof imageSource) {
-          const obj10 = { height: imageSize, width: imageSize, href: importDefault(12000)(imageSource), mask: combined, clipPath: combined1 };
-          let tmp66 = callback2(imageTintColor(8507).Image, obj10);
+        if (typeof imageSource === "os") {
+          const obj10 = { height: null, width: null, href: null, mask: null, clipPath: null };
+          obj10[0] = imageSize;
+          obj10[1] = imageSize;
+          obj10[2] = tmp13(12024)(imageSource);
+          obj10[3] = combined;
+          obj10[4] = combined1;
+          let tmp15Result5 = tmp15(tmp(8531).Image, obj10);
         }
-        const obj11 = { height: imageSize, width: imageSize, mask: combined, clipPath: combined1 };
-        const obj12 = {};
-        const obj13 = { width: imageSize, height: imageSize, tintColor: imageTintColor };
-        obj12.style = obj13;
-        obj12.source = imageSource;
-        obj12.onLoad = callback;
-        obj11.children = callback2(Image, obj12);
-        tmp66 = callback2(imageTintColor(8507).ForeignObject, obj11);
+        const obj11 = { height: null, width: null, mask: null, clipPath: null, children: null };
+        obj11[0] = imageSize;
+        obj11[1] = imageSize;
+        obj11[2] = combined;
+        obj11[3] = combined1;
+        const obj12 = { style: null, source: null, onLoad: null };
+        const obj13 = { width: null, height: null, tintColor: null };
+        obj13[0] = imageSize;
+        obj13[1] = imageSize;
+        obj13[2] = imageTintColor;
+        obj12[0] = obj13;
+        obj12[1] = imageSource;
+        obj12[2] = callback;
+        obj11[4] = tmp15(Image, obj12);
+        tmp15Result5 = tmp15(tmp(8531).ForeignObject, obj11);
       }
     } else {
-      const obj14 = { id: v4Result };
+      const obj14 = { id: null, children: null };
+      obj14[0] = v4Result;
       if (imageBorderRadius === imageSize / 2) {
-        const obj15 = { cx: imageSize / 2, cy: imageSize / 2, r: imageSize / str2 };
-        str2 = "white";
-        obj15.fill = "white";
-        let tmp52 = callback2(imageTintColor(8507).Circle, obj15);
+        const obj15 = { cx: null, cy: null, r: null, fill: "white" };
+        obj15[0] = imageSize / 2;
+        obj15[1] = imageSize / 2;
+        obj15[2] = imageSize / 4;
+        let tmp15Result6 = tmp15(tmp(8531).Circle, obj15);
       } else {
-        const obj16 = { x: num14, y: num14, width: imageSize - 2 * num14, height: imageSize - 2 * num14, rx: imageBorderRadius * ((imageSize - 2 * num14) / imageSize), ry: imageBorderRadius * ((imageSize - 2 * num14) / imageSize), fill: "white" };
-        tmp52 = callback2(imageTintColor(8507).Rect, obj16);
+        const obj16 = { x: null, y: null, width: null, height: null, rx: null, ry: null, fill: "white" };
+        obj16[0] = num15;
+        obj16[1] = num15;
+        obj16[2] = imageSize - 2 * num15;
+        obj16[3] = imageSize - 2 * num15;
+        obj16[4] = imageBorderRadius * ((imageSize - 2 * num15) / imageSize);
+        obj16[5] = imageBorderRadius * ((imageSize - 2 * num15) / imageSize);
+        tmp15Result6 = tmp15(tmp(8531).Rect, obj16);
       }
-      obj14.children = tmp52;
-      callback2(imageTintColor(8507).ClipPath, obj14);
-      const tmp46 = callback2;
+      obj14[1] = tmp15Result6;
+      tmp15(tmp(8531).ClipPath, obj14);
     }
   } else if (imageBorderRadius === imageSize / 2) {
-    const obj17 = { cx: imageSize / 2, cy: imageSize / 2, r: str / 2 };
-    str = "black";
-    obj17.fill = "black";
-    let tmp40 = callback2(imageTintColor(8507).Circle, obj17);
+    const obj17 = { cx: null, cy: null, r: null, fill: "black" };
+    obj17[0] = imageSize / 2;
+    obj17[1] = imageSize / 2;
+    obj17[2] = num14 / 2;
+    let tmp15Result8 = tmp15(tmp(8531).Circle, obj17);
   } else {
-    const obj18 = { x: (imageSize - `black`) / 2, y: (imageSize - `black`) / 2, width: str, height: str, rx: imageBorderRadius * (`black` / imageSize), ry: imageBorderRadius * (`black` / imageSize), fill: "black" };
-    tmp40 = callback2(imageTintColor(8507).Rect, obj18);
+    const obj18 = { x: null, y: null, width: null, height: null, rx: null, ry: null, fill: "black" };
+    obj18[0] = (imageSize - num14) / 2;
+    obj18[1] = (imageSize - num14) / 2;
+    obj18[2] = num14;
+    obj18[3] = num14;
+    obj18[4] = imageBorderRadius * (num14 / imageSize);
+    obj18[5] = imageBorderRadius * (num14 / imageSize);
+    tmp15Result8 = tmp15(tmp(8531).Rect, obj18);
   }
 });
 const result = require("get ActivityIndicator").fileFinishedImporting("modules/launchpad/native/shared/CutoutImage.tsx");

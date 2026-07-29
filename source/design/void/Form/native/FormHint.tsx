@@ -1,22 +1,22 @@
-// Module ID: 7619
-// Function ID: 60817
+// Module ID: 7642
+// Function ID: 7643
 // Name: FormHint
-// Dependencies: [31, 27, 33, 4165, 689, 5197, 4161, 1273, 2]
+// Dependencies: [19, 17, 21, 4189, 712, 5219, 4185, 1297, 2]
 // Exports: default
 
-// Module 7619 (FormHint)
-import result from "result";
+// Module 7642 (FormHint)
+import noop from "noop";
 import { Platform } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
 const require = arg1;
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { fontSize: 14, marginBottom: 0, color: require("_createForOfIteratorHelperLoose").colors.TEXT_MUTED };
-_createForOfIteratorHelperLoose.formHintText = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.redesignHorizontalPadding = { paddingHorizontal: 12 };
-_createForOfIteratorHelperLoose.horizonatalPadding = { paddingHorizontal: 16 };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+createCacheKey = { formHintText: null, redesignHorizontalPadding: null, horizonatalPadding: null };
+createCacheKey = { fontSize: 14, marginBottom: 0, color: require("Themes").colors.TEXT_MUTED };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { paddingHorizontal: 12 };
+createCacheKey[2] = { paddingHorizontal: 16 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
 const result = require("jsxProd").fileFinishedImporting("design/void/Form/native/FormHint.tsx");
 
 export default function FormHint(inset) {
@@ -27,29 +27,29 @@ export default function FormHint(inset) {
     flag = false;
   }
   ({ style, children } = inset);
-  const tmp = _createForOfIteratorHelperLoose();
-  if (React.useContext(require(5197) /* context */.RedesignCompatContext)) {
-    let obj = { variant: "text-sm/medium", color: "text-muted" };
+  const tmp = createCacheKey();
+  if (React.useContext(require(5219) /* context */.RedesignCompatContext)) {
     let redesignHorizontalPadding = !flag;
-    if (redesignHorizontalPadding) {
+    if (!flag) {
       redesignHorizontalPadding = tmp.redesignHorizontalPadding;
     }
+    let obj = { variant: "text-sm/medium", color: "text-muted", style: null, children: null };
     const items = [redesignHorizontalPadding, style];
-    obj.style = items;
-    obj.children = children;
-    let tmp2Result = tmp2(tmp3(4161).Text, obj);
+    obj[2] = items;
+    obj[3] = children;
+    let tmp4Result = tmp4(tmp2(4185).Text, obj);
   } else {
-    obj = {};
     const items1 = [tmp.formHintText, , ];
     let horizonatalPadding = !flag;
-    if (horizonatalPadding) {
+    if (!flag) {
       horizonatalPadding = tmp.horizonatalPadding;
     }
+    obj = { style: null, children: null };
     items1[1] = horizonatalPadding;
     items1[2] = style;
-    obj.style = items1;
-    obj.children = children;
-    tmp2Result = tmp2(tmp3(1273).LegacyText, obj);
+    obj[0] = items1;
+    obj[1] = children;
+    tmp4Result = tmp4(tmp2(1297).LegacyText, obj);
   }
-  return tmp2Result;
+  return tmp4Result;
 };

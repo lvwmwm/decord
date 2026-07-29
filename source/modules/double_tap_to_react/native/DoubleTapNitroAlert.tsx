@@ -1,57 +1,58 @@
-// Module ID: 7732
-// Function ID: 61612
+// Module ID: 7755
+// Function ID: 7756
 // Name: DoubleTapNitroAlert
-// Dependencies: [31, 27, 7728, 653, 7733, 33, 4165, 6590, 4507, 4510, 6709, 1212, 2]
+// Dependencies: [19, 17, 7751, 676, 7756, 21, 4189, 6611, 4530, 4533, 6730, 1236, 2]
 // Exports: default
 
-// Module 7732 (DoubleTapNitroAlert)
-import result from "result";
+// Module 7755 (DoubleTapNitroAlert)
+import noop from "noop";
 import { View } from "get ActivityIndicator";
 import { NITRO_UPSELL_ALERT_KEY } from "NITRO_UPSELL_ALERT_KEY";
 import { UserSettingsSections } from "ME";
 import { MobileSetting } from "MobileSetting";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_7;
-let closure_8;
-let closure_9;
+let c9;
+let error;
+let metroImportAll;
 const require = arg1;
-({ jsx: closure_7, Fragment: closure_8, jsxs: closure_9 } = jsxProd);
-let closure_10 = _createForOfIteratorHelperLoose.createStyles({ icon: { alignItems: "center", justifyContent: "center" } });
+({ jsx: error, Fragment: metroImportAll, jsxs: c9 } = jsxProd);
+let closure_10 = createCacheKey.createStyles({ icon: { alignItems: "center", justifyContent: "center" } });
 const result = require("NITRO_UPSELL_ALERT_KEY").fileFinishedImporting("modules/double_tap_to_react/native/DoubleTapNitroAlert.tsx");
 
 export default function DoubleTapNitroAlert(emojiName) {
   const callback = React.useCallback(() => {
-    let obj = outer1_0(outer1_1[7]);
-    obj = { screen: outer1_5.TEXT, params: obj };
-    obj = { initialSetting: outer1_6.DOUBLE_TAP_EMOJI };
+    let obj = callback(6611);
+    obj = { screen: constants.TEXT, params: obj };
+    obj = { initialSetting: constants2.DOUBLE_TAP_EMOJI };
     obj.openUserSettings(obj);
   }, []);
   const callback1 = React.useCallback(() => {
-    let obj = outer1_0(outer1_1[7]);
-    obj = { screen: outer1_5.PREMIUM };
+    let obj = callback(6611);
+    obj = { screen: constants.PREMIUM };
     obj.openUserSettings(obj, () => {
-      outer2_0(outer2_1[8]).dismissAlert(outer2_4);
+      callback(table[8]).dismissAlert(closure_4);
     });
   }, []);
-  let obj = {};
-  obj = { style: callback3().icon, children: callback(require(6709) /* CircleErrorIcon */.CircleErrorIcon, { size: "custom", style: { width: 40, height: 40 } }) };
-  obj.header = callback(View, obj);
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj.title = intl.string(require(1212) /* getSystemLocale */.t.HRAWfC);
-  const intl2 = require(1212) /* getSystemLocale */.intl;
-  obj.content = intl2.format(require(1212) /* getSystemLocale */.t["3u/Je4"], { emojiName: emojiName.emojiName, onRenewNitro: callback1 });
-  obj = {};
-  const obj1 = { onPress: callback };
-  const intl3 = require(1212) /* getSystemLocale */.intl;
-  obj1.text = intl3.string(require(1212) /* getSystemLocale */.t.LIIHRy);
-  const items = [callback(require(4510) /* getAlertModalItemKey */.AlertActionButton, obj1, "confirm"), ];
-  const obj2 = { variant: "secondary" };
-  const intl4 = require(1212) /* getSystemLocale */.intl;
-  obj2.text = intl4.string(require(1212) /* getSystemLocale */.t["Nr6v2+"]);
-  items[1] = callback(require(4510) /* getAlertModalItemKey */.AlertActionButton, obj2, "cancel");
-  obj.children = items;
-  obj.actions = callback2(closure_8, obj);
-  return callback(require(4510) /* getAlertModalItemKey */.AlertModal, obj);
+  let obj = { header: null, title: null, content: null, actions: null };
+  obj = { style: callback3().icon, children: null };
+  obj[1] = callback(require(6730) /* CircleErrorIcon */.CircleErrorIcon, { size: "custom", style: { width: 40, height: 40 } });
+  obj[0] = callback(View, obj);
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj[1] = intl.string(require(1236) /* getSystemLocale */.t.HRAWfC);
+  const intl2 = require(1236) /* getSystemLocale */.intl;
+  obj[2] = intl2.format(require(1236) /* getSystemLocale */.t["3u/Je4"], { emojiName: emojiName.emojiName, onRenewNitro: callback1 });
+  obj = { children: null };
+  const obj1 = { onPress: callback, text: null };
+  const intl3 = require(1236) /* getSystemLocale */.intl;
+  obj1[1] = intl3.string(require(1236) /* getSystemLocale */.t.LIIHRy);
+  const items = [callback(require(4533) /* getAlertModalItemKey */.AlertActionButton, obj1, "confirm"), ];
+  const obj2 = { variant: "secondary", text: null };
+  const intl4 = require(1236) /* getSystemLocale */.intl;
+  obj2[1] = intl4.string(require(1236) /* getSystemLocale */.t["Nr6v2+"]);
+  items[1] = callback(require(4533) /* getAlertModalItemKey */.AlertActionButton, obj2, "cancel");
+  obj[0] = items;
+  obj[3] = callback2(closure_8, obj);
+  return callback(require(4533) /* getAlertModalItemKey */.AlertModal, obj);
 };

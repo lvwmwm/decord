@@ -1,101 +1,22 @@
-// Module ID: 16187
-// Function ID: 125266
-// Name: _createForOfIteratorHelperLoose
-// Dependencies: [5, 31, 27, 1348, 4503, 653, 33, 4165, 4060, 5198, 13653, 1212, 4388, 4126, 9832, 6661, 5153, 7868, 44, 566, 11311, 4746, 4705, 16188, 1882, 4505, 4709, 11150, 6168, 9651, 1820, 9650, 4707, 4576, 689, 5536, 2]
+// Module ID: 16222
+// Function ID: 16223
+// Name: MainAreaCanUpload
+// Dependencies: [5, 19, 17, 1372, 4526, 676, 21, 4189, 4084, 5220, 13674, 1236, 4411, 4150, 9854, 6682, 5175, 7891, 38, 589, 11335, 4768, 4727, 16223, 1906, 4528, 4731, 11174, 6186, 9673, 1844, 9672, 4729, 4598, 712, 5554, 2]
 // Exports: default
 
-// Module 16187 (_createForOfIteratorHelperLoose)
+// Module 16222 (MainAreaCanUpload)
 import ME from "ME";
-import closure_4 from "_createForOfIteratorHelperLoose";
-import { View } from "_createForOfIteratorHelperLoose";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import { DraftType } from "_isNativeReflectConstruct";
+import initialize from "initialize";
+import { View } from "isInteractionComponent";
+import ensureGuildLoaded from "ensureGuildLoaded";
+import { DraftType } from "handleChanged";
 import { NOOP } from "ME";
-import jsxProd from "Stack";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import jsxProd from "getKestrelConfig";
+import createCacheKey from "createCacheKey";
 
-let closure_10;
-let closure_9;
+let c10;
+let c9;
 const require = arg1;
-function _createForOfIteratorHelperLoose(iterable) {
-  let closure_0 = iterable;
-  iterable = "undefined" !== typeof Symbol;
-  if (iterable) {
-    const _Symbol = Symbol;
-    iterable = iterable[Symbol.iterator];
-  }
-  if (!iterable) {
-    iterable = iterable[Symbol.iterator];
-  }
-  if (iterable) {
-    const iter = iterable.call(iterable);
-    const next = iter.next;
-    return next.bind(iter);
-  } else {
-    const _Array = Array;
-    let tmp = iterable;
-    if (!Array.isArray(iterable)) {
-      let tmp2;
-      if (iterable) {
-        if ("string" === typeof iterable) {
-          tmp2 = _arrayLikeToArray(iterable, undefined);
-        } else {
-          const toString = {}.toString;
-          const substr = toString.call(iterable).slice(8, -1);
-          let name = substr;
-          if (tmp3) {
-            name = iterable.constructor.name;
-          }
-          if ("Map" !== name) {
-            if ("Set" !== name) {
-              if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(iterable, undefined);
-              } else {
-                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
-              }
-            }
-            tmp2 = arr;
-          }
-          const _Array2 = Array;
-          arr = Array.from(iterable);
-          const callResult = toString.call(iterable);
-          tmp3 = "Object" === substr && iterable.constructor;
-        }
-      }
-      tmp = tmp2;
-      if (!tmp2) {
-        const _TypeError = TypeError;
-        const typeError = new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
-        throw typeError;
-      }
-    }
-    if (tmp) {
-      closure_0 = tmp;
-    }
-    let c1 = 0;
-    return () => {
-      if (closure_1 >= length.length) {
-        let obj = { done: true };
-      } else {
-        obj = { done: false };
-        closure_1 = tmp3 + 1;
-        obj.value = length[+closure_1];
-      }
-      return obj;
-    };
-  }
-}
-function _arrayLikeToArray(arg0, arg1) {
-  let length;
-  if (tmp) {
-    length = arg0.length;
-  }
-  const ArrayResult = Array(length);
-  for (let num = 0; num < length; num = num + 1) {
-    ArrayResult[num] = arg0[num];
-  }
-  return ArrayResult;
-}
 function MainAreaCanUpload(arg0) {
   let maxSizeBytes;
   let maxValues;
@@ -104,119 +25,301 @@ function MainAreaCanUpload(arg0) {
   let types;
   ({ minValues, maxValues } = arg0);
   ({ openFilePicker, types, maxSizeBytes } = arg0);
-  let obj = require(4060) /* formatSize */;
-  obj = { onPress: openFilePicker };
-  obj = { IconComponent: require(13653) /* FileUpIcon */.FileUpIcon };
-  obj.icon = callback(require(5198) /* TableRowInner */.TableRow.Icon, obj);
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj.label = intl.format(require(1212) /* getSystemLocale */.t["/2JwTv"], { maxValues });
-  const formatSizeResult = obj.formatSize(maxSizeBytes / require(4060) /* formatSize */.BYTE_IN_KB, { useKibibytes: true, useSpace: true });
-  obj.subLabel = require(4388) /* _createForOfIteratorHelperLoose */.getFileUploadComponentSubtitle(minValues, maxValues, types, formatSizeResult);
-  obj.start = true;
-  obj.end = true;
-  obj.arrow = true;
-  return callback(require(5198) /* TableRowInner */.TableRow, obj);
+  let obj = require(4084) /* formatSize */;
+  obj = { onPress: openFilePicker, icon: null, label: null, subLabel: null, start: true, end: true, arrow: true };
+  obj = { IconComponent: null };
+  obj[0] = require(13674) /* FileUpIcon */.FileUpIcon;
+  obj[1] = callback(require(5220) /* TableRowInner */.TableRow.Icon, obj);
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj[2] = intl.format(require(1236) /* getSystemLocale */.t["/2JwTv"], { maxValues });
+  const formatSizeResult = obj.formatSize(maxSizeBytes / require(4084) /* formatSize */.BYTE_IN_KB, { useKibibytes: true, useSpace: true });
+  obj[3] = require(4411) /* flattenComponents */.getFileUploadComponentSubtitle(minValues, maxValues, types, formatSizeResult);
+  return callback(require(5220) /* TableRowInner */.TableRow, obj);
 }
 function MainAreaLimitReached() {
   let obj = { icon: null, label: null, subLabel: null, disabled: true, start: true, end: true };
-  obj = { IconComponent: require(4126) /* CircleCheckIcon */.CircleCheckIcon };
-  obj.icon = callback(require(5198) /* TableRowInner */.TableRow.Icon, obj);
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj.label = intl.string(require(1212) /* getSystemLocale */.t["0PhgpK"]);
-  const intl2 = require(1212) /* getSystemLocale */.intl;
-  obj.subLabel = intl2.string(require(1212) /* getSystemLocale */.t.HYg2Hn);
-  return callback(require(5198) /* TableRowInner */.TableRow, obj);
+  obj = { IconComponent: null };
+  obj[0] = require(4150) /* CircleCheckIcon */.CircleCheckIcon;
+  obj[0] = callback(require(5220) /* TableRowInner */.TableRow.Icon, obj);
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj[1] = intl.string(require(1236) /* getSystemLocale */.t["0PhgpK"]);
+  const intl2 = require(1236) /* getSystemLocale */.intl;
+  obj[2] = intl2.string(require(1236) /* getSystemLocale */.t.HYg2Hn);
+  return callback(require(5220) /* TableRowInner */.TableRow, obj);
 }
 function File(upload) {
   upload = upload.upload;
   const handleRemoveFile = upload.handleRemoveFile;
-  let obj = {};
-  obj = { uri: upload.item.uri, isImage: upload.isImage, isVideo: upload.isVideo, width: 32, height: 32 };
-  obj = { style: callback2().defaultAttachmentIconWrapper };
+  let obj = { icon: null, label: null, trailing: null, start: true, end: true };
+  obj = { uri: upload.item.uri, isImage: upload.isImage, isVideo: upload.isVideo, width: 32, height: 32, defaultPreview: null };
+  obj = { style: callback2().defaultAttachmentIconWrapper, children: null };
   const tmp = callback2();
-  const tmp2 = callback;
-  obj.children = callback(upload(9832).AttachmentIcon, { fileName: upload.filename });
-  obj.defaultPreview = callback(View, obj);
-  obj.icon = callback(handleRemoveFile(9832), obj);
+  obj[1] = callback(upload(9854).AttachmentIcon, { fileName: upload.filename });
+  obj[5] = callback(View, obj);
+  obj[0] = callback(handleRemoveFile(9854), obj);
   let filename = upload.filename;
-  if (null == filename) {
-    const intl = upload(1212).intl;
-    filename = intl.string(upload(1212).t.ZMirp0);
+  if (filename == null) {
+    const intl = tmp3(1236).intl;
+    filename = intl.string(tmp3(1236).t.ZMirp0);
   }
-  obj.label = filename;
-  const obj2 = {
-    variant: "tertiary",
-    size: "sm",
-    icon: callback(upload(5153).XSmallIcon, { size: "sm" }),
-    onPress() {
-      return handleRemoveFile(upload.id);
-    }
+  obj[1] = filename;
+  const obj2 = { variant: "tertiary", size: "sm", icon: null, onPress: null, accessibilityLabel: null };
+  obj2[2] = callback(upload(5175).XSmallIcon, { size: "sm" });
+  obj2[3] = function onPress() {
+    return handleRemoveFile(upload.id);
   };
-  const intl2 = upload(1212).intl;
-  obj2.accessibilityLabel = intl2.string(upload(1212).t.N86XcP);
-  obj.trailing = callback(upload(6661).IconButton, obj2);
-  obj.start = true;
-  obj.end = true;
-  return tmp2(upload(5198).TableRow, obj);
+  const intl2 = tmp3(1236).intl;
+  obj2[4] = intl2.string(upload(1236).t.N86XcP);
+  obj[2] = callback(upload(6682).IconButton, obj2);
+  return callback(upload(5220).TableRow, obj);
 }
-({ jsx: closure_9, jsxs: closure_10 } = jsxProd);
-let closure_11 = _createForOfIteratorHelperLoose.createStyles({ defaultAttachmentIconWrapper: { width: 32, alignItems: "center" } });
+({ jsx: c9, jsxs: c10 } = jsxProd);
+let closure_11 = createCacheKey.createStyles({ defaultAttachmentIconWrapper: { width: 32, alignItems: "center" } });
 let result = require("get ActivityIndicator").fileFinishedImporting("modules/interaction_components/native/actions/FileUploadActionComponent.tsx");
 
 export default function FileUploadActionComponent(maxValues) {
   maxValues = maxValues.maxValues;
-  let obj = maxValues(customId[17]);
+  let _require = maxValues;
+  let obj = _require(customId[17]);
   const componentStateContext = obj.useComponentStateContext();
   channelId(customId[18])(null != componentStateContext, "FileUploadActionComponent must be used within a ComponentStateContextProvider");
   channelId = componentStateContext.channelId;
   channelId(customId[18])(null != channelId, "FileUploadActionComponent must be used inside a channel");
   const modal = componentStateContext.modal;
   customId = undefined;
-  if (null != modal) {
+  if (modal != null) {
     customId = modal.customId;
   }
   channelId(customId[18])(null != customId, "FileUploadActionComponent requires modalCustomId from context");
-  let obj2 = maxValues(customId[19]);
+  let tmpResult = tmp(tmp2[19]);
   let items = [showInvalidFileTypeAlert];
-  const stateFromStores = obj2.useStateFromStores(items, () => showInvalidFileTypeAlert.getChannel(channelId));
+  const stateFromStores = tmpResult.useStateFromStores(items, () => showInvalidFileTypeAlert.getChannel(channelId));
   channelId(customId[18])(null != stateFromStores, "FileUploadActionComponent requires a valid channel");
-  const fileTypeFiltering = maxValues(customId[20]).useFileTypeFiltering(maxValues.fileTypes);
+  tmpResult = tmp(tmp2[20]);
+  const fileTypeFiltering = tmpResult.useFileTypeFiltering(maxValues.fileTypes);
   const allowedExtensions = fileTypeFiltering.allowedExtensions;
   const validateFilenames = fileTypeFiltering.validateFilenames;
   showInvalidFileTypeAlert = fileTypeFiltering.showInvalidFileTypeAlert;
   const mediaFilesAllowed = fileTypeFiltering.mediaFilesAllowed;
-  const obj4 = maxValues(customId[20]);
-  const kestrelConfig = maxValues(customId[21]).getKestrelConfig({ location: "native.FileUploadActionComponent" });
-  const obj5 = maxValues(customId[21]);
-  const obj6 = maxValues(customId[21]);
-  const effectiveKestrelLimit = obj6.getEffectiveKestrelLimit(kestrelConfig, maxValues(customId[22]).maxFileSize(stateFromStores.guild_id));
-  const obj7 = maxValues(customId[22]);
-  const fileUploadComponentState = maxValues(customId[23]).useFileUploadComponentState(maxValues);
+  const kestrelConfig = _require(customId[21]).getKestrelConfig({ location: "native.FileUploadActionComponent" });
+  const tmpResult1 = _require(customId[21]);
+  const tmpResult2 = _require(customId[21]);
+  const effectiveKestrelLimit = tmpResult2.getEffectiveKestrelLimit(kestrelConfig, _require(customId[22]).maxFileSize(stateFromStores.guild_id));
+  const tmpResult3 = _require(customId[22]);
+  const fileUploadComponentState = _require(customId[23]).useFileUploadComponentState(maxValues);
   const uploadIds = fileUploadComponentState.uploadIds;
   const setUploadIds = fileUploadComponentState.setUploadIds;
   const currentUploads = fileUploadComponentState.currentUploads;
   const parents = componentStateContext.getParents(maxValues);
   let first;
-  if (null != parents) {
+  if (parents != null) {
     first = parents[0];
   }
   let type;
-  if (null != first) {
+  if (first != null) {
     type = first.type;
   }
-  let tmp14;
-  if (type === maxValues(customId[24]).ComponentType.LABEL) {
-    tmp14 = first;
+  let tmp17;
+  if (type === _require(customId[24]).ComponentType.LABEL) {
+    tmp17 = first;
   }
-  channelId(customId[18])(null != tmp14, "FileUploadActionComponent must be used within a label Component");
+  channelId(customId[18])(null != tmp17, "FileUploadActionComponent must be used within a label Component");
+  _require = undefined;
+  _require = stateFromStores((arg0) => {
+    let closure_0 = arg0;
+    let c7 = 0;
+    let c8 = 0;
+    let c6 = 0;
+    return (function*(arg0) {
+      if (c8 === 2) {
+        c8 = 3;
+        HermesBuiltin.throwTypeError();
+      } else if (tmp4 === 3) {
+        if (arg0 === 1) {
+          throw arg1;
+        } else if (arg0 === 2) {
+          let obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
+        } else {
+          return { value: "HermesInternal", done: null };
+        }
+      } else {
+        while (true) {
+          let num = 2;
+          c8 = 2;
+          if (0 === c7) {
+            if (arg0 === 1) {
+              let num10 = 3;
+              c8 = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              let num9 = 3;
+              c8 = 3;
+              obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            } else {
+              let initialize = tmp;
+              let c3 = tmp2;
+              let arr = lib;
+              let closure_1;
+              let closure_2;
+              c3 = undefined;
+              if (0 !== lib.length) {
+                let tmp59 = outer1_9;
+                if (outer1_9.length + arr.length > lib) {
+                  let tmp41 = channelId;
+                  let tmp42 = customId;
+                  let obj6 = channelId(customId[25]);
+                  let obj1 = { title: null, body: null };
+                  let tmp43 = lib;
+                  let tmp44 = customId;
+                  let intl = lib(customId[11]).intl;
+                  let tmp45 = lib;
+                  let tmp46 = customId;
+                  obj1[0] = intl.string(lib(customId[11]).t.wOr6hB);
+                  let tmp47 = lib;
+                  let tmp48 = customId;
+                  let intl2 = lib(customId[11]).intl;
+                  let tmp49 = lib;
+                  let tmp50 = customId;
+                  let obj2 = { maxValues: null };
+                  obj2[0] = tmp60;
+                  obj1[1] = intl2.formatToPlainString(lib(customId[11]).t.dy6viJ, obj2);
+                  let num8 = 3;
+                  c8 = 3;
+                  let obj3 = { value: null, done: true };
+                  obj3[0] = obj6.show(obj1);
+                  return obj3;
+                } else {
+                  closure_2 = arr;
+                  let tmp61 = arr;
+                  closure_2 = arr;
+                  closure_1 = arr[Symbol.iterator]();
+                }
+              }
+              let num7 = 3;
+              c8 = 3;
+              return { value: "HermesInternal", done: null };
+            }
+          } else if (1 === tmp5) {
+            let tmp15 = closure_5;
+            let tmp16 = closure_5;
+            let v0 = 0;
+            let tmp17 = closure_1;
+            closure_1.return();
+            throw closure_5;
+          } else if (arg0 === 1) {
+            let num4 = 3;
+            c8 = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            v0 = 0;
+            let tmp14 = closure_1;
+            closure_1.return();
+            let num3 = 3;
+            c8 = 3;
+            let obj4 = { value: null, done: true };
+            obj4[0] = arg1;
+            return obj4;
+          } else {
+            let tmp55 = c3;
+            let tmp56 = initialize;
+            closure_2 = arg1;
+            let tmp57 = closure_2;
+            let tmp58 = c8;
+            if (closure_2 > c8) {
+              let tmp6 = c3;
+              let tmp7 = initialize;
+              let tmp8 = lib;
+              let tmp9 = customId;
+              obj = lib(customId[27]);
+              let tmp10 = c8;
+              let tmp11 = outer1_2;
+              v0 = 0;
+              let tmp13 = closure_1;
+              let result = obj.showFileSizeExceededAlert(c8, outer1_2);
+              closure_1.return();
+              let num2 = 3;
+              c8 = 3;
+              let obj5 = { value: null, done: true };
+              obj5[0] = result;
+              return obj5;
+            } else {
+              v0 = 0;
+            }
+          }
+          let tmp18 = closure_2;
+          let tmp19 = closure_1;
+          if (closure_1 === undefined) {
+            let tmp26 = initialize;
+            let tmp27 = outer1_4;
+            if (outer1_4.length > 0) {
+              let tmp28 = c3;
+              let tmp29 = initialize;
+              let tmp30 = outer1_5;
+              let tmp31 = lib;
+              if (!outer1_5(lib.map((result1) => callback(4731).getFileFromUploadItem(result1).filename))) {
+                let tmp32 = initialize;
+                let tmp33 = v0;
+                let num6 = 3;
+                c8 = 3;
+                obj6 = { value: null, done: true };
+                obj6[0] = v0();
+                return obj6;
+              }
+            }
+            let tmp34 = c3;
+            let tmp35 = initialize;
+            let tmp36 = lib;
+            let outer1_3 = lib.map((arg0) => {
+              let obj = callback(4411);
+              const componentUploadId = obj.makeComponentUploadId(dependencyMap);
+              obj = { channelId: callback2, id: componentUploadId, file: null, draftType: null, allowOptimization: false };
+              obj = {};
+              const merged = Object.assign(arg0);
+              obj.id = componentUploadId;
+              obj[2] = obj;
+              obj[3] = InteractionModal.InteractionModal;
+              callback2(6186).setFile(obj);
+              return componentUploadId;
+            });
+            let tmp37 = outer1_10;
+            let tmp38 = outer1_9;
+            let tmp39 = outer1_3;
+            let tmp40 = outer1_10(outer1_9.concat(outer1_3));
+          } else {
+            let tmp21 = c3;
+            let tmp22 = initialize;
+            v0 = 1;
+            let outer1_1 = tmp20;
+            let tmp23 = lib;
+            let tmp24 = customId;
+            obj3 = lib(customId[26]);
+            let tmp25 = outer1_1;
+            c7 = 2;
+            let num5 = 1;
+            c8 = 1;
+            let obj7 = { value: null, done: false };
+            obj7[0] = obj3.getFileSize(outer1_1.uri);
+            return obj7;
+          }
+        }
+      }
+    })();
+  });
   const items1 = [uploadIds, maxValues, allowedExtensions.length, validateFilenames, setUploadIds, effectiveKestrelLimit, showInvalidFileTypeAlert, customId, channelId];
-  const callback = allowedExtensions.useCallback((() => {
-    // CreateGeneratorClosureLongIndex (0x67)
-    let closure_0 = stateFromStores(tmp);
-    return function() {
-      return callback(...arguments);
-    };
-  })(), items1);
+  const callback = allowedExtensions.useCallback(function() {
+    const self = this;
+    const apply = closure_0.apply;
+    if (typeof apply === "unknown") {
+      let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+    } else {
+      applyArgumentsResult = apply(self, arguments);
+    }
+    return applyArgumentsResult;
+  }, items1);
   const items2 = [channelId, uploadIds, setUploadIds];
   const callback1 = allowedExtensions.useCallback((arg0) => {
     let closure_0 = arg0;
@@ -231,95 +334,104 @@ export default function FileUploadActionComponent(maxValues) {
       extensions: allowedExtensions,
       uploadLimit: InteractionModal,
       onDismissKeyboard() {
-        return maxValues(customId[29]).hideMediaKeyboardActionSheet();
+        return InteractionModal(9673).hideMediaKeyboardActionSheet();
       },
       onRestoreKeyboard: effectiveKestrelLimit,
       onSelectFiles(arg0) {
-        outer1_12(arg0);
+        callback(arg0);
       }
     };
-    let result = maxValues(customId[30]).dismissGlobalKeyboard();
+    let result = callback(customId[30]).dismissGlobalKeyboard();
     if (mediaFilesAllowed) {
-      let tmp2Result = tmp2(tmp3[29]);
-      obj = {
-        channel: stateFromStores,
-        draftType: InteractionModal,
-        extensions: allowedExtensions,
-        uploadLimit: InteractionModal,
-        disableWhenReachedLimit: true,
-        includedUploadIds: uploadIds,
-        onAttachPress() {
-            let obj = maxValues(customId[31]);
-            obj = {};
-            const merged = Object.assign(obj);
-            obj.handleAttachFile(obj);
-          },
-        onPressCamera(arg0) {
-            let obj = maxValues(customId[31]);
-            obj = {};
-            const merged = Object.assign(obj);
-            obj["previewType"] = arg0;
-            obj.handleCameraDialog(obj);
-          },
-        onPressItem(item) {
-            item = item.item;
-            const result = maxValues(customId[29]).hideMediaKeyboardActionSheet();
-            if (item.isIncluded) {
-              const found = outer1_11.find((closure_0) => maxValues(customId[32]).doesImageMatchUpload(item.node.image, closure_0));
-              if (null != found) {
-                outer1_13(found.id);
-              }
-            } else {
-              const items = [maxValues(customId[31]).mediaNodeToUploadItem(item)];
-              outer1_12(items);
-              const obj2 = maxValues(customId[31]);
-            }
-          },
-        onViewAll() {
-            let obj = maxValues(customId[31]);
-            obj = {};
-            const merged = Object.assign(obj);
-            obj["draftType"] = InteractionModal;
-            obj["includedUploadIds"] = outer1_9;
-            obj.handleViewAllDialog(obj);
-          },
-        onManageLimited() {
-            let obj = maxValues(customId[31]);
-            obj = { onDismissKeyboard: maxValues(customId[29]).hideMediaKeyboardActionSheet, onRestoreKeyboard: effectiveKestrelLimit };
-            const result = obj.handleLimitedPickerDialog(obj);
-          },
-        onClose: tmp2(tmp3[29]).hideMediaKeyboardActionSheet,
-        onBack: tmp2(tmp3[29]).hideMediaKeyboardActionSheet
+      let tmp4Result = tmp4(tmp5[29]);
+      obj = { channel: null, draftType: null, extensions: null, uploadLimit: null, disableWhenReachedLimit: true, includedUploadIds: null, onAttachPress: null, onPressCamera: null, onPressItem: null, onViewAll: null, onManageLimited: null, onClose: null, onBack: null };
+      obj[0] = stateFromStores;
+      obj[1] = InteractionModal;
+      obj[2] = allowedExtensions;
+      obj[3] = InteractionModal;
+      obj[5] = uploadIds;
+      obj[6] = function onAttachPress() {
+        let obj = InteractionModal(customId[31]);
+        obj = {};
+        const merged = Object.assign(obj);
+        obj.handleAttachFile(obj);
       };
-      const result1 = tmp2Result.showMediaKeyboardActionSheet(obj);
+      obj[7] = function onPressCamera(previewType) {
+        let obj = InteractionModal(customId[31]);
+        obj = {};
+        const merged = Object.assign(obj);
+        obj.previewType = previewType;
+        obj.handleCameraDialog(obj);
+      };
+      obj[8] = function onPressItem(item) {
+        item = item.item;
+        const result = InteractionModal(outer1_2[29]).hideMediaKeyboardActionSheet();
+        if (item.isIncluded) {
+          const found = closure_11.find((closure_0) => item(outer1_2[32]).doesImageMatchUpload(item.node.image, closure_0));
+          if (null != found) {
+            callback2(found.id);
+          }
+        } else {
+          const items = [InteractionModal(outer1_2[31]).mediaNodeToUploadItem(item)];
+          callback(items);
+          const tmpResult = InteractionModal(outer1_2[31]);
+        }
+      };
+      obj[9] = function onViewAll() {
+        let obj = InteractionModal(customId[31]);
+        obj = {};
+        const merged = Object.assign(obj);
+        obj.draftType = InteractionModal;
+        obj.includedUploadIds = outer1_9;
+        obj.handleViewAllDialog(obj);
+      };
+      obj[10] = function onManageLimited() {
+        let obj = InteractionModal(9672);
+        obj = { onDismissKeyboard: InteractionModal(9673).hideMediaKeyboardActionSheet, onRestoreKeyboard: closure_8 };
+        const result = obj.handleLimitedPickerDialog(obj);
+      };
+      obj[11] = tmp4(tmp5[29]).hideMediaKeyboardActionSheet;
+      obj[12] = tmp4(tmp5[29]).hideMediaKeyboardActionSheet;
+      const result1 = tmp4Result.showMediaKeyboardActionSheet(obj);
     } else {
-      tmp2Result = tmp2(tmp3[31]);
+      tmp4Result = tmp4(tmp5[31]);
       obj = {};
       let merged = Object.assign(obj);
-      tmp2Result.handleAttachFile(obj);
+      tmp4Result.handleAttachFile(obj);
     }
   }, items3);
   if (1 === maxValues) {
     if (1 === currentUploads.length) {
-      obj = { upload: currentUploads[0], handleRemoveFile: callback1 };
-      let tmp19Result = uploadIds(File, obj);
+      obj = { upload: null, handleRemoveFile: null };
+      obj[0] = currentUploads[0];
+      obj[1] = callback1;
+      let tmp22Result = uploadIds(File, obj);
     }
-    return tmp19Result;
+    return tmp22Result;
   }
-  obj = { spacing: channelId(customId[34]).space.PX_12 };
+  obj = { spacing: null, children: null };
+  obj[0] = channelId(customId[34]).space.PX_12;
   if (uploadIds.length >= maxValues) {
-    let tmp22 = uploadIds(MainAreaLimitReached, {});
+    let tmp26 = uploadIds(callback1, {});
+    let tmp25 = uploadIds;
   } else {
-    const obj1 = { openFilePicker: callback2, minValues: maxValues.minValues, maxValues, types: fileTypeFiltering.typesFormattedString, maxSizeBytes: effectiveKestrelLimit };
-    tmp22 = uploadIds(MainAreaCanUpload, obj1);
+    let obj1 = { openFilePicker: null, minValues: null, maxValues: null, types: null, maxSizeBytes: null };
+    obj1[0] = callback2;
+    obj1[1] = maxValues.minValues;
+    obj1[2] = maxValues;
+    obj1[3] = fileTypeFiltering.typesFormattedString;
+    obj1[4] = effectiveKestrelLimit;
+    tmp25 = uploadIds;
+    tmp26 = uploadIds(callback, obj1);
   }
-  const items4 = [tmp22, ];
-  let tmp25 = currentUploads.length > 0;
-  if (tmp25) {
-    obj2 = { hasIcons: true, children: currentUploads.map((id) => uploadIds(outer1_16, { upload: id, handleRemoveFile: callback1 }, id.id)) };
-    tmp25 = uploadIds(maxValues(customId[35]).TableRowGroup, obj2);
+  const items4 = [tmp26, ];
+  let tmp25Result = currentUploads.length > 0;
+  if (tmp25Result) {
+    let obj2 = { hasIcons: true, children: null };
+    obj2[1] = currentUploads.map((id) => uploadIds(outer1_14, { upload: id, handleRemoveFile: callback1 }, id.id));
+    tmp25Result = tmp25(tmp(tmp2[35]).TableRowGroup, obj2);
   }
-  items4[1] = tmp25;
-  obj.children = items4;
-  tmp19Result = setUploadIds(maxValues(customId[33]).Stack, obj);
+  items4[1] = tmp25Result;
+  obj[1] = items4;
+  tmp22Result = setUploadIds(tmp(tmp2[33]).Stack, obj);
 };

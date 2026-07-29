@@ -1,11 +1,10 @@
 // Module ID: 9974
-// Function ID: 76988
+// Function ID: 9975
 // Name: registerAsset
-// Dependencies: [1217]
+// Dependencies: [1241]
 
 // Module 9974 (registerAsset)
 import registerAsset from "registerAsset";
 
-const obj = { __packager_asset: true, httpServerLocation: "/assets/images/native/community", width: 120, height: 80, scales: [2, 3], hash: "4ca23515516a1452487c5deb66a2aa5c", name: "customize_empty_light", type: "png" };
 
-export default registerAsset.registerAsset(obj);
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "4efa5140d546996fe7cb2ba013410d48", name: "ArrowAngleLeftUpIcon", type: "png" });

@@ -1,95 +1,96 @@
-// Module ID: 9519
-// Function ID: 74036
+// Module ID: 9543
+// Function ID: 9544
 // Name: FeedbackForm
-// Dependencies: [57, 31, 27, 33, 4165, 7611, 1212, 4161, 1921, 4578, 4372, 5552, 5121, 2]
+// Dependencies: [32, 19, 17, 21, 4189, 7634, 1236, 4185, 1945, 4600, 4395, 5570, 5143, 2]
 // Exports: default
 
-// Module 9519 (FeedbackForm)
+// Module 9543 (FeedbackForm)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
+import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_5;
+let c5;
 let closure_6;
-let closure_7;
-let closure_8;
+let error;
+let metroImportAll;
 let require = arg1;
 function FeedbackForm(result) {
   let descriptionLabel;
+  let hideHelpdeskLink;
   let importDefault;
   let titleLabel;
   result = result.result;
   const require = result;
-  ({ trackReport: importDefault, titleLabel, descriptionLabel } = result);
+  ({ trackReport: importDefault, titleLabel, descriptionLabel, hideHelpdeskLink } = result);
+  let first;
   const tmp = callback3();
   const reason = result.reason;
   const tmp2 = callback(React.useState(""), 2);
-  const first = tmp2[0];
-  let obj = { keyboardShouldPersistTaps: "handled" };
-  obj = {};
-  obj = {};
+  first = tmp2[0];
   let label;
-  if (null != reason) {
+  if (reason != null) {
     label = reason.label;
   }
-  obj.value = label;
-  if (null == titleLabel) {
-    const intl = require(first[6]).intl;
-    titleLabel = intl.string(require(first[6]).t.vcqwCj);
+  let obj = { value: label, title: null, disabled: true };
+  if (titleLabel == null) {
+    const intl = tmp6(tmp7[6]).intl;
+    titleLabel = intl.string(tmp6(tmp7[6]).t.vcqwCj);
   }
-  obj.title = titleLabel;
-  obj.disabled = true;
-  const items = [callback2(require(first[5]).FormInput, obj, "channel-input"), callback2(require(first[5]).FormDivider, {}), ];
-  const obj1 = { value: first, title: null, onChange: null, multiline: true, numberOfLines: 4, autoCorrect: true };
-  if (null == descriptionLabel) {
-    const intl2 = require(first[6]).intl;
-    descriptionLabel = intl2.string(require(first[6]).t.h95hcn);
+  obj[1] = titleLabel;
+  const items = [closure_7(require(first[5]).FormInput, obj, "channel-input"), closure_7(require(first[5]).FormDivider, {}), ];
+  obj = { value: first, title: null, onChange: null, multiline: true, numberOfLines: 4, autoCorrect: true };
+  if (descriptionLabel == null) {
+    const intl2 = tmp6(tmp7[6]).intl;
+    descriptionLabel = intl2.string(tmp6(tmp7[6]).t.h95hcn);
   }
-  obj1.title = descriptionLabel;
-  obj1.onChange = tmp2[1];
-  items[2] = callback2(require(first[5]).FormInput, obj1);
-  obj.children = items;
+  obj = { children: null };
+  obj[1] = descriptionLabel;
+  obj[2] = tmp2[1];
+  items[2] = closure_7(require(first[5]).FormInput, obj);
+  obj[0] = items;
   const items1 = [closure_8(require(first[5]).FormSection, obj), ];
-  const obj2 = { style: tmp.bottomContainer };
-  let tmp16 = !result.hideHelpdeskLink;
-  if (tmp16) {
-    const obj3 = { style: tmp.helpDeskLabel, variant: "text-xs/medium", color: "text-muted" };
-    const intl3 = require(first[6]).intl;
-    const obj4 = { helpdeskURL: importDefault(first[8]).getSubmitRequestURL() };
-    obj3.children = intl3.format(require(first[6]).t.ybi2tD, obj4);
-    tmp16 = callback2(require(first[7]).Text, obj3);
-    const obj8 = importDefault(first[8]);
+  const obj1 = { style: tmp.bottomContainer, children: null };
+  let tmp8Result = !hideHelpdeskLink;
+  if (!hideHelpdeskLink) {
+    const obj2 = { style: null, variant: "text-xs/medium", color: "text-muted", children: null };
+    obj2[0] = tmp.helpDeskLabel;
+    const intl3 = tmp6(tmp7[6]).intl;
+    const obj3 = { helpdeskURL: null };
+    let obj6 = importDefault(tmp7[8]);
+    obj3[0] = obj6.getSubmitRequestURL();
+    obj2[3] = intl3.format(tmp6(tmp7[6]).t.ybi2tD, obj3);
+    tmp8Result = tmp8(tmp6(tmp7[7]).Text, obj2);
   }
-  const items2 = [tmp16, ];
-  const obj5 = { style: tmp.submitButton };
-  const obj6 = {};
-  let tmp24 = null == first;
-  if (!tmp24) {
-    tmp24 = "" === first;
+  const items2 = [tmp8Result, ];
+  const obj4 = { style: tmp.submitButton, children: null };
+  let tmp13 = null == first;
+  if (!tmp13) {
+    tmp13 = "" === first;
   }
-  obj6.disabled = tmp24;
-  const intl4 = require(first[6]).intl;
-  obj6.text = intl4.string(require(first[6]).t.geKm7t);
-  obj6.onPress = function onPress() {
+  const obj5 = { keyboardShouldPersistTaps: "handled", children: null };
+  obj6 = { disabled: tmp13, text: null, onPress: null };
+  const intl4 = tmp6(tmp7[6]).intl;
+  obj6[1] = intl4.string(require(first[6]).t.geKm7t);
+  obj6[2] = function onPress() {
     let arr = outer1_1(first[10]);
     arr = arr.pop();
     const obj = {};
     const merged = Object.assign(closure_0);
-    obj["feedback"] = first;
+    obj.feedback = first;
     callback(obj);
   };
-  obj5.children = callback2(require(first[9]).Button, obj6);
-  items2[1] = callback2(closure_5, obj5);
-  obj2.children = items2;
-  items1[1] = closure_8(closure_5, obj2);
-  obj.children = items1;
-  return closure_8(closure_6, obj);
+  obj4[1] = closure_7(require(first[9]).Button, obj6);
+  items2[1] = closure_7(closure_5, obj4);
+  obj1[1] = items2;
+  items1[1] = closure_8(closure_5, obj1);
+  obj5[1] = items1;
+  return closure_8(closure_6, obj5);
 }
-({ View: closure_5, ScrollView: closure_6 } = get_ActivityIndicator);
-({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-let closure_9 = _createForOfIteratorHelperLoose.createStyles({ helpDeskLabel: { lineHeight: 16, marginTop: 8 }, bottomContainer: { paddingHorizontal: 16 }, submitButton: { marginTop: 24, marginBottom: 24 } });
+({ View: c5, ScrollView: closure_6 } = get_ActivityIndicator);
+({ jsx: error, jsxs: metroImportAll } = jsxProd);
+let closure_9 = createCacheKey.createStyles({ helpDeskLabel: { lineHeight: 16, marginTop: 8 }, bottomContainer: { paddingHorizontal: 16 }, submitButton: { marginTop: 24, marginBottom: 24 } });
 let result = require("get ActivityIndicator").fileFinishedImporting("modules/feedback/native/FeedbackModal.tsx");
 
 export default function FeedbackModal(result) {
@@ -107,17 +108,17 @@ export default function FeedbackModal(result) {
     const current = ref.current;
     current.trackReport(current.result);
   }, []);
-  let obj = { initialRouteName: "Feedback" };
-  obj = {};
-  obj = {};
+  let obj = { initialRouteName: "Feedback", screens: null };
+  obj = { Feedback: null };
+  obj = { title: null, headerLeft: null, render: null };
   const intl = _require(trackReport[6]).intl;
-  obj.title = intl.string(_require(trackReport[6]).t["dBx+Cn"]);
-  obj.headerLeft = _require(trackReport[12]).getHeaderCloseButton(callback);
-  obj.render = function render() {
+  obj[0] = intl.string(_require(trackReport[6]).t["dBx+Cn"]);
+  obj[1] = _require(trackReport[12]).getHeaderCloseButton(callback);
+  obj[2] = function render() {
     const merged = Object.assign(closure_0);
     return outer1_7(outer1_10, {});
   };
-  obj.Feedback = obj;
-  obj.screens = obj;
+  obj[0] = obj;
+  obj[1] = obj;
   return callback2(_require(trackReport[11]).Navigator, obj);
 };

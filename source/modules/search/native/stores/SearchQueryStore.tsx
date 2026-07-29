@@ -1,385 +1,332 @@
-// Module ID: 10081
-// Function ID: 77746
-// Name: _isNativeReflectConstruct
-// Dependencies: [15, 17, 18, 7, 6, 1348, 3802, 1850, 9077, 9105, 653, 4355, 1212, 10082, 10094, 1917, 566, 686, 2]
+// Module ID: 10102
+// Function ID: 10103
+// Name: prototype
+// Dependencies: [1372, 3826, 1874, 9101, 9129, 676, 4380, 1236, 10103, 10115, 1941, 589, 709, 2]
 
-// Module 10081 (_isNativeReflectConstruct)
-import closure_3 from "areArraysShallowlyEqual";
-import dispatcher from "dispatcher";
-import set from "set";
-import importDefaultResult from "_isNativeReflectConstruct";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_8 from "_isNativeReflectConstruct";
-import closure_9 from "_isNativeReflectConstruct";
-import closure_10 from "_isNativeReflectConstruct";
+// Module 10102 (prototype)
+import ensureGuildLoaded from "ensureGuildLoaded";
+import upsertRelationship from "upsertRelationship";
+import mergeGuildAvatar from "mergeGuildAvatar";
 import SearchAutocompleteSelectAnalyticsActions from "SearchAutocompleteSelectAnalyticsActions";
 import { SearchFilterAddLocations } from "SearchEntrypointAnalyticsLocations";
 import ME from "ME";
 import areArraysShallowlyEqual from "areArraysShallowlyEqual";
+import { Store } from "initialize";
 
-let closure_11;
-let closure_12;
-let closure_14;
-let closure_15;
+let c10;
+let c9;
+let closure_6;
+let error;
 const require = arg1;
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
-  }
-  const result = _isNativeReflectConstruct();
-}
-function getState(searchContext) {
-  let value = map.get(require(10082) /* _createForOfIteratorHelperLoose */.getSearchContextId(searchContext));
-  if (null == value) {
-    value = callback3(searchContext);
-  }
-  return value;
-}
-({ EMPTY_SEARCH_QUERY_STRING: closure_11, SearchQueryTagTypes: closure_12 } = SearchAutocompleteSelectAnalyticsActions);
-({ SearchTokenTypes: closure_14, SearchTypes: closure_15 } = ME);
-class SearchQueryStateManager {
-  constructor(arg0) {
-    self = this;
-    self = this;
-    tmp = c7(this, SearchQueryStateManager);
-    this.isExplicitSearchSubmitted = false;
-    this.getQueryString = () => {
-      let flag = arg0;
-      if (arg0 === undefined) {
-        flag = false;
-      }
-      const tagsManager = self.tagsManager;
-      const queryString = tagsManager.getQueryString(flag);
-      if (0 !== queryString.length) {
-        const _HermesInternal = HermesInternal;
-        let textInputValue = "" + queryString + " " + self.textInputValue;
-      } else {
-        textInputValue = self.textInputValue;
-      }
-      return textInputValue;
-    };
-    this.isQueryStringEmpty = () => 0 === self.getQueryString().trim().length;
-    this.getTextInputValue = () => self.textInputValue;
-    this.setTextInputValue = (textInputValue) => {
-      let flag = arg1;
-      if (arg1 === undefined) {
-        flag = false;
-      }
-      self.textInputValue = textInputValue;
-      self.textInputChangedFromInput = flag;
-      const result = self.resetExplicitSearchSubmitted();
-    };
-    this.isInitialSearchQuery = () => {
-      let tmp = !self.isExplicitSearchSubmitted;
-      if (tmp) {
-        let tmp3 = 0 === self.textInputValue.trim().length;
-        if (tmp3) {
-          const tagsManager = self.tagsManager;
-          tmp3 = !tagsManager.hasUserAddedTags();
-        }
-        tmp = tmp3;
-        const str = self.textInputValue;
-      }
-      return tmp;
-    };
-    this.markExplicitSearchSubmitted = () => {
-      self.isExplicitSearchSubmitted = true;
-    };
-    this.resetExplicitSearchSubmitted = () => {
-      self.isExplicitSearchSubmitted = false;
-    };
-    this.getSearchResultsQuery = () => self.searchResultsQuery;
-    this.setSearchResultsQuery = (searchResultsQuery) => {
-      self.searchResultsQuery = searchResultsQuery;
-    };
-    this.isTextInputValueEmpty = () => 0 === self.textInputValue.trim().length;
-    this.getTextValueChangedFromInput = () => self.textInputChangedFromInput;
-    this.hasUserAddedTags = () => {
-      const tagsManager = self.tagsManager;
-      return tagsManager.hasUserAddedTags();
-    };
-    this.getTags = () => {
-      const tagsManager = self.tagsManager;
-      return tagsManager.get();
-    };
-    this.getPrefixTag = () => {
-      const tagsManager = self.tagsManager;
-      return tagsManager.getPrefixTag();
-    };
-    this.isAutocompleteVisible = () => null != self.getPrefixTag();
-    this.setTags = (arg0) => {
-      const tagsManager = self.tagsManager;
-      const result = tagsManager.set(arg0);
-      const result1 = self.resetExplicitSearchSubmitted();
-    };
-    this.addTag = (arg0) => {
-      const tagsManager = self.tagsManager;
-      tagsManager.add(arg0);
-      const result = self.resetExplicitSearchSubmitted();
-    };
-    this.removeTag = (arg0) => {
-      const tagsManager = self.tagsManager;
-      tagsManager.removeAtIndex(arg0);
-      const result = self.resetExplicitSearchSubmitted();
-    };
-    this.removePrefixTags = () => {
-      const tagsManager = self.tagsManager;
-      tagsManager.removeAnyPrefixTags();
-      const result = self.resetExplicitSearchSubmitted();
-    };
-    this.getChannelIds = () => {
-      const tagsManager = self.tagsManager;
-      return tagsManager.getChannelIds();
-    };
-    this.getUserIds = (arg0) => {
-      const tagsManager = self.tagsManager;
-      return tagsManager.getUserIds(arg0);
-    };
-    this.isTagsEmpty = () => {
-      const tagsManager = self.tagsManager;
-      return tagsManager.isEmpty();
-    };
-    this.saveDraftTextInputValue = () => {
-      let result = null != self.draftTextInputValue;
-      if (!result) {
-        result = self.isTextInputValueEmpty();
-      }
-      if (!result) {
-        self.draftTextInputValue = self.textInputValue;
-      }
-    };
-    this.restoreDraftTextInputValue = () => {
-      if (null != self.draftTextInputValue) {
-        self.textInputValue = self.draftTextInputValue;
-        self.textInputChangedFromInput = false;
-        self.draftTextInputValue = null;
-      }
-    };
-    this.reset = () => {
-      self.textInputValue = outer1_11;
-      self.textInputChangedFromInput = false;
-      self.searchResultsQuery = outer1_11;
-      self.draftTextInputValue = null;
-      self.isExplicitSearchSubmitted = false;
-      const tagsManager = self.tagsManager;
-      const result = tagsManager.set(self.initialTagsSnapshot);
-    };
-    this.textInputValue = EMPTY_SEARCH_QUERY_STRING;
-    this.textInputChangedFromInput = false;
-    this.searchResultsQuery = EMPTY_SEARCH_QUERY_STRING;
-    type = global.type;
-    if (SearchTypes.THREAD !== type) {
-      tmp2 = SearchTypes;
-      if (SearchTypes.GUILD_CHANNEL !== type) {
-        items = [];
-      }
-      self.initialTagsSnapshot = items;
-      tmp8 = closure_1;
-      tmp9 = closure_2;
-      num2 = 14;
-      tmp10 = require("isPrefix");
-      prototype = tmp10.prototype;
-      tmp11 = new.target;
-      tmp12 = new.target;
-      tmp10 = new tmp10();
-      tmp14 = tmp10;
-      self.tagsManager = tmp10;
-      tagsManager = self.tagsManager;
-      result = tagsManager.set(self.initialTagsSnapshot);
-      tmp16 = null;
-      self.draftTextInputValue = null;
-      return;
+({ EMPTY_SEARCH_QUERY_STRING: closure_6, SearchQueryTagTypes: error } = SearchAutocompleteSelectAnalyticsActions);
+({ SearchTokenTypes: c9, SearchTypes: c10 } = ME);
+const prototype = function SearchQueryStateManager(type) {
+  let obj = Object.create(new.target.prototype);
+  obj.isExplicitSearchSubmitted = false;
+  obj.getQueryString = function getQueryString() {
+    let flag = arg0;
+    if (arg0 === undefined) {
+      flag = false;
     }
-    channel = c8.getChannel(global.channelId);
-    if (null != channel) {
-      if (channel.isObfuscated()) {
-        items = [];
-      }
+    const tagsManager = obj.tagsManager;
+    const queryString = tagsManager.getQueryString(flag);
+    if (0 !== queryString.length) {
+      const _HermesInternal = HermesInternal;
+      let textInputValue = "" + queryString + " " + tmp.textInputValue;
+    } else {
+      textInputValue = tmp.textInputValue;
     }
-    channelName = undefined;
+    return textInputValue;
+  };
+  obj.isQueryStringEmpty = function isQueryStringEmpty() {
+    return 0 === obj.getQueryString().trim().length;
+  };
+  obj.getTextInputValue = function getTextInputValue() {
+    return obj.textInputValue;
+  };
+  obj.setTextInputValue = function setTextInputValue(closure_0, arg1) {
+    let flag = arg1;
+    if (arg1 === undefined) {
+      flag = false;
+    }
+    obj.textInputValue = closure_0;
+    obj.textInputChangedFromInput = flag;
+    const result = obj.resetExplicitSearchSubmitted();
+  };
+  obj.isInitialSearchQuery = function isInitialSearchQuery() {
+    const isExplicitSearchSubmitted = obj.isExplicitSearchSubmitted;
+    let tmp2 = !isExplicitSearchSubmitted;
+    if (!isExplicitSearchSubmitted) {
+      let tmp3 = 0 === tmp.textInputValue.trim().length;
+      if (tmp3) {
+        const tagsManager = tmp.tagsManager;
+        tmp3 = !tagsManager.hasUserAddedTags();
+      }
+      tmp2 = tmp3;
+      const str = tmp.textInputValue;
+    }
+    return tmp2;
+  };
+  obj.markExplicitSearchSubmitted = function markExplicitSearchSubmitted() {
+    obj.isExplicitSearchSubmitted = true;
+  };
+  obj.resetExplicitSearchSubmitted = function resetExplicitSearchSubmitted() {
+    obj.isExplicitSearchSubmitted = false;
+  };
+  obj.getSearchResultsQuery = function getSearchResultsQuery() {
+    return obj.searchResultsQuery;
+  };
+  obj.setSearchResultsQuery = function setSearchResultsQuery(searchQueryString) {
+    obj.searchResultsQuery = searchQueryString;
+  };
+  obj.isTextInputValueEmpty = function isTextInputValueEmpty() {
+    return 0 === obj.textInputValue.trim().length;
+  };
+  obj.getTextValueChangedFromInput = function getTextValueChangedFromInput() {
+    return obj.textInputChangedFromInput;
+  };
+  obj.hasUserAddedTags = function hasUserAddedTags() {
+    const tagsManager = obj.tagsManager;
+    return tagsManager.hasUserAddedTags();
+  };
+  obj.getTags = function getTags() {
+    const tagsManager = obj.tagsManager;
+    return tagsManager.get();
+  };
+  obj.getPrefixTag = function getPrefixTag() {
+    const tagsManager = obj.tagsManager;
+    return tagsManager.getPrefixTag();
+  };
+  obj.isAutocompleteVisible = function isAutocompleteVisible() {
+    return null != obj.getPrefixTag();
+  };
+  obj.setTags = function setTags(arg0) {
+    const tagsManager = obj.tagsManager;
+    const result = tagsManager.set(arg0);
+    const result1 = obj.resetExplicitSearchSubmitted();
+  };
+  obj.addTag = function addTag(arg0) {
+    const tagsManager = obj.tagsManager;
+    tagsManager.add(arg0);
+    const result = obj.resetExplicitSearchSubmitted();
+  };
+  obj.removeTag = function removeTag(closure_0) {
+    const tagsManager = obj.tagsManager;
+    tagsManager.removeAtIndex(closure_0);
+    const result = obj.resetExplicitSearchSubmitted();
+  };
+  obj.removePrefixTags = function removePrefixTags() {
+    const tagsManager = obj.tagsManager;
+    tagsManager.removeAnyPrefixTags();
+    const result = obj.resetExplicitSearchSubmitted();
+  };
+  obj.getChannelIds = function getChannelIds() {
+    const tagsManager = obj.tagsManager;
+    return tagsManager.getChannelIds();
+  };
+  obj.getUserIds = function getUserIds(arg0) {
+    const tagsManager = obj.tagsManager;
+    return tagsManager.getUserIds(arg0);
+  };
+  obj.isTagsEmpty = function isTagsEmpty() {
+    const tagsManager = obj.tagsManager;
+    return tagsManager.isEmpty();
+  };
+  obj.saveDraftTextInputValue = function saveDraftTextInputValue() {
+    if (!tmp) {
+      obj.draftTextInputValue = obj.textInputValue;
+    }
+  };
+  obj.restoreDraftTextInputValue = function restoreDraftTextInputValue() {
+    if (null != obj.draftTextInputValue) {
+      tmp.textInputValue = tmp.draftTextInputValue;
+      tmp.textInputChangedFromInput = false;
+      tmp.draftTextInputValue = null;
+    }
+  };
+  obj.reset = function reset() {
+    obj.textInputValue = outer1_6;
+    obj.textInputChangedFromInput = false;
+    obj.searchResultsQuery = outer1_6;
+    obj.draftTextInputValue = null;
+    obj.isExplicitSearchSubmitted = false;
+    const tagsManager = obj.tagsManager;
+    const result = tagsManager.set(obj.initialTagsSnapshot);
+  };
+  obj.textInputValue = closure_6;
+  obj.textInputChangedFromInput = false;
+  obj.searchResultsQuery = closure_6;
+  type = type.type;
+  if (constants3.THREAD !== type) {
+    if (constants3.GUILD_CHANNEL !== type) {
+      let items = [];
+    }
+    obj.initialTagsSnapshot = items;
+    const tmp12 = new importDefault(10115)();
+    obj.tagsManager = tmp12;
+    let tagsManager = obj.tagsManager;
+    let result = tagsManager.set(obj.initialTagsSnapshot);
+    obj.draftTextInputValue = null;
+    return obj;
+  }
+  channel = channel.getChannel(type.channelId);
+  let isObfuscatedResult;
+  if (channel != null) {
+    isObfuscatedResult = channel.isObfuscated();
+  }
+  if (isObfuscatedResult) {
+    items = [];
+  } else {
+    let channelName;
     if (null != channel) {
-      tmp4 = self;
-      tmp5 = closure_2;
-      num = 11;
-      obj2 = require("computeDefaultGroupDmNameFromUserIds");
-      tmp6 = c10;
-      tmp7 = c9;
-      channelName = obj2.computeChannelName(channel, c10, c9);
+      channelName = obj(4380).computeChannelName(channel, mergeGuildAvatar, upsertRelationship);
+      const obj2 = obj(4380);
     }
     if (null == channelName) {
-      items1 = [];
+      let items1 = [];
     } else {
-      obj = {};
-      tmp17 = SearchQueryTagTypes;
-      obj.type = SearchQueryTagTypes.COMPLETE;
-      tmp18 = SearchTokenTypes;
-      obj.searchTokenType = SearchTokenTypes.FILTER_IN;
-      tmp19 = self;
-      tmp20 = closure_2;
-      num3 = 12;
-      intl = require("getSystemLocale").intl;
-      num4 = 13;
-      stringResult = intl.string(require("getSystemLocale").t.WNpFHa);
-      obj4 = require("_createForOfIteratorHelperLoose");
-      tmp22 = globalThis;
-      _HermesInternal = HermesInternal;
-      str = "";
-      str2 = ": ";
-      obj.text = "" + stringResult + ": " + obj4.quoteChannelName(channelName);
-      obj.channelId = global.channelId;
-      tmp23 = SearchFilterAddLocations;
-      obj.location = SearchFilterAddLocations.CLIENT_AUTO_ADD;
-      items1 = [];
-      items1[0] = obj;
+      obj = { type: null, searchTokenType: null, text: null, channelId: null, location: null };
+      obj[0] = constants.COMPLETE;
+      obj[1] = constants2.FILTER_IN;
+      const intl = obj(1236).intl;
+      const stringResult = intl.string(obj(1236).t.WNpFHa);
+      let _HermesInternal = HermesInternal;
+      obj[2] = "" + stringResult + ": " + obj(10103).quoteChannelName(channelName);
+      obj[3] = type.channelId;
+      obj[4] = SearchFilterAddLocations.CLIENT_AUTO_ADD;
+      items1 = [obj];
+      const obj4 = obj(10103);
     }
     items = items1;
-    return;
   }
-}
-const importDefaultResultResult = importDefaultResult(SearchQueryStateManager);
+}.prototype;
 const map = new Map();
-let closure_18 = areArraysShallowlyEqual.cachedFunction((arg0) => new closure_16(arg0));
-let tmp7 = ((Store) => {
-  class NativeSearchQueryStore {
-    constructor() {
-      self = this;
-      tmp = outer1_7(this, NativeSearchQueryStore);
-      obj = outer1_4(NativeSearchQueryStore);
-      tmp2 = outer1_3;
-      if (outer1_19()) {
-        tmp6 = globalThis;
-        _Reflect = Reflect;
-        tmp7 = outer1_4;
-        tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, outer1_4(self).constructor);
-      } else {
-        tmp3 = arguments;
-        tmp4 = arguments;
-        constructResult = obj(...arguments);
-      }
-      return tmp2(self, constructResult);
-    }
+let closure_13 = areArraysShallowlyEqual.cachedFunction((arg0) => new prototype(arg0));
+class NativeSearchQueryStore extends Store {
+}
+const prototype2 = NativeSearchQueryStore.prototype;
+prototype2["initialize"] = function initialize() {
+  this.waitFor(ensureGuildLoaded, mergeGuildAvatar, upsertRelationship);
+};
+prototype2["getManager"] = function getManager(closure_0) {
+  let value = map.get(require(10103) /* SearchTokenTypes */.getSearchContextId(closure_0));
+  if (value == null) {
+    value = callback(closure_0);
   }
-  callback(NativeSearchQueryStore, Store);
-  let obj = {
-    key: "initialize",
-    value() {
-      this.waitFor(outer1_8, outer1_10, outer1_9);
-    }
-  };
-  const items = [obj, , , , , , , , , , , , , , , ];
-  obj = {
-    key: "getManager",
-    value(arg0) {
-      return outer1_20(arg0);
-    }
-  };
-  items[1] = obj;
-  obj = {
-    key: "getQueryString",
-    value(arg0) {
-      let flag = arg1;
-      if (arg1 === undefined) {
-        flag = false;
-      }
-      return outer1_20(arg0).getQueryString(flag);
-    }
-  };
-  items[2] = obj;
-  items[3] = {
-    key: "isQueryStringEmpty",
-    value(arg0) {
-      return outer1_20(arg0).isQueryStringEmpty();
-    }
-  };
-  items[4] = {
-    key: "getTextInputValue",
-    value(arg0) {
-      return outer1_20(arg0).getTextInputValue();
-    }
-  };
-  items[5] = {
-    key: "isInitialSearchQuery",
-    value(arg0) {
-      return outer1_20(arg0).isInitialSearchQuery();
-    }
-  };
-  items[6] = {
-    key: "getSearchResultsQuery",
-    value(arg0) {
-      return outer1_20(arg0).getSearchResultsQuery();
-    }
-  };
-  items[7] = {
-    key: "isTextInputValueEmpty",
-    value(arg0) {
-      return outer1_20(arg0).isTextInputValueEmpty();
-    }
-  };
-  items[8] = {
-    key: "getTextValueChangedFromInput",
-    value(arg0) {
-      return outer1_20(arg0).getTextValueChangedFromInput();
-    }
-  };
-  items[9] = {
-    key: "hasUserAddedTags",
-    value(arg0) {
-      return outer1_20(arg0).hasUserAddedTags();
-    }
-  };
-  items[10] = {
-    key: "getTags",
-    value(arg0) {
-      return outer1_20(arg0).getTags();
-    }
-  };
-  items[11] = {
-    key: "getPrefixTag",
-    value(arg0) {
-      return outer1_20(arg0).getPrefixTag();
-    }
-  };
-  items[12] = {
-    key: "isAutocompleteVisible",
-    value(arg0) {
-      return outer1_20(arg0).isAutocompleteVisible();
-    }
-  };
-  items[13] = {
-    key: "getChannelIds",
-    value(arg0) {
-      return outer1_20(arg0).getChannelIds();
-    }
-  };
-  items[14] = {
-    key: "getUserIds",
-    value(arg0, arg1) {
-      return outer1_20(arg0).getUserIds(arg1);
-    }
-  };
-  items[15] = {
-    key: "isTagsEmpty",
-    value(arg0) {
-      return outer1_20(arg0).isTagsEmpty();
-    }
-  };
-  return importDefaultResult(NativeSearchQueryStore, items);
-})(require("initialize").Store);
-tmp7.displayName = "NativeSearchQueryStore";
+  return value;
+};
+prototype2["getQueryString"] = function getQueryString(searchContext) {
+  let flag = arg1;
+  if (arg1 === undefined) {
+    flag = false;
+  }
+  let value = map.get(require(10103) /* SearchTokenTypes */.getSearchContextId(searchContext));
+  if (value == null) {
+    value = callback(searchContext);
+  }
+  return value.getQueryString(flag);
+};
+prototype2["isQueryStringEmpty"] = function isQueryStringEmpty(searchContext) {
+  let value = map.get(require(10103) /* SearchTokenTypes */.getSearchContextId(searchContext));
+  if (value == null) {
+    value = callback(searchContext);
+  }
+  return value.isQueryStringEmpty();
+};
+prototype2["getTextInputValue"] = function getTextInputValue(searchContext) {
+  let value = map.get(require(10103) /* SearchTokenTypes */.getSearchContextId(searchContext));
+  if (value == null) {
+    value = callback(searchContext);
+  }
+  return value.getTextInputValue();
+};
+prototype2["isInitialSearchQuery"] = function isInitialSearchQuery(searchContext) {
+  let value = map.get(require(10103) /* SearchTokenTypes */.getSearchContextId(searchContext));
+  if (value == null) {
+    value = callback(searchContext);
+  }
+  return value.isInitialSearchQuery();
+};
+prototype2["getSearchResultsQuery"] = function getSearchResultsQuery(searchContext) {
+  let value = map.get(require(10103) /* SearchTokenTypes */.getSearchContextId(searchContext));
+  if (value == null) {
+    value = callback(searchContext);
+  }
+  return value.getSearchResultsQuery();
+};
+prototype2["isTextInputValueEmpty"] = function isTextInputValueEmpty(searchContext) {
+  let value = map.get(require(10103) /* SearchTokenTypes */.getSearchContextId(searchContext));
+  if (value == null) {
+    value = callback(searchContext);
+  }
+  return value.isTextInputValueEmpty();
+};
+prototype2["getTextValueChangedFromInput"] = function getTextValueChangedFromInput(searchContext) {
+  let value = map.get(require(10103) /* SearchTokenTypes */.getSearchContextId(searchContext));
+  if (value == null) {
+    value = callback(searchContext);
+  }
+  return value.getTextValueChangedFromInput();
+};
+prototype2["hasUserAddedTags"] = function hasUserAddedTags(searchContext) {
+  let value = map.get(require(10103) /* SearchTokenTypes */.getSearchContextId(searchContext));
+  if (value == null) {
+    value = callback(searchContext);
+  }
+  return value.hasUserAddedTags();
+};
+prototype2["getTags"] = function getTags(searchContext) {
+  let value = map.get(require(10103) /* SearchTokenTypes */.getSearchContextId(searchContext));
+  if (value == null) {
+    value = callback(searchContext);
+  }
+  return value.getTags();
+};
+prototype2["getPrefixTag"] = function getPrefixTag(searchContext) {
+  let value = map.get(require(10103) /* SearchTokenTypes */.getSearchContextId(searchContext));
+  if (value == null) {
+    value = callback(searchContext);
+  }
+  return value.getPrefixTag();
+};
+prototype2["isAutocompleteVisible"] = function isAutocompleteVisible(searchContext) {
+  let value = map.get(require(10103) /* SearchTokenTypes */.getSearchContextId(searchContext));
+  if (value == null) {
+    value = callback(searchContext);
+  }
+  return value.isAutocompleteVisible();
+};
+prototype2["getChannelIds"] = function getChannelIds(searchContext) {
+  let value = map.get(require(10103) /* SearchTokenTypes */.getSearchContextId(searchContext));
+  if (value == null) {
+    value = callback(searchContext);
+  }
+  return value.getChannelIds();
+};
+prototype2["getUserIds"] = function getUserIds(searchContext) {
+  let value = map.get(require(10103) /* SearchTokenTypes */.getSearchContextId(searchContext));
+  if (value == null) {
+    value = callback(searchContext);
+  }
+  return value.getUserIds(arg1);
+};
+prototype2["isTagsEmpty"] = function isTagsEmpty(searchContext) {
+  let value = map.get(require(10103) /* SearchTokenTypes */.getSearchContextId(searchContext));
+  if (value == null) {
+    value = callback(searchContext);
+  }
+  return value.isTagsEmpty();
+};
+NativeSearchQueryStore.displayName = "NativeSearchQueryStore";
 areArraysShallowlyEqual = {
   SEARCH_QUERY_NATIVE_UPDATE: function handleSearchQueryNativeUpdate(searchContext) {
     searchContext = searchContext.searchContext;
-    const searchContextId = require(10082) /* _createForOfIteratorHelperLoose */.getSearchContextId(searchContext);
+    const searchContextId = require(10103) /* SearchTokenTypes */.getSearchContextId(searchContext);
     let value = map.get(searchContextId);
     if (null == value) {
-      const prototype = importDefaultResultResult.prototype;
-      const tmp7 = new importDefaultResultResult(searchContext);
-      const result = map.set(searchContextId, tmp7);
-      value = tmp7;
+      const tmp6 = new prototype(searchContext);
+      const result = map.set(searchContextId, tmp6);
+      value = tmp6;
     }
     searchContext.updater(value);
   },
@@ -387,8 +334,8 @@ areArraysShallowlyEqual = {
     map.delete(id.id);
   }
 };
-tmp7 = new tmp7(require("dispatcher"), areArraysShallowlyEqual);
-let result = require("_inherits").fileFinishedImporting("modules/search/native/stores/SearchQueryStore.tsx");
+const nativeSearchQueryStore = new NativeSearchQueryStore(require("dispatcher"), areArraysShallowlyEqual);
+let result = require("mergeGuildAvatar").fileFinishedImporting("modules/search/native/stores/SearchQueryStore.tsx");
 
-export default tmp7;
-export const SearchQueryStateManager = importDefaultResultResult;
+export default nativeSearchQueryStore;
+export const SearchQueryStateManager = prototype;

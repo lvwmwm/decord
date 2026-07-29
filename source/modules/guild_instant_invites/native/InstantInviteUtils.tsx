@@ -1,17 +1,17 @@
-// Module ID: 10182
-// Function ID: 78599
+// Module ID: 10203
+// Function ID: 10204
 // Name: useInviteActions
-// Dependencies: [5, 1348, 1850, 653, 1212, 10175, 10183, 8172, 6026, 5525, 3865, 8324, 6672, 3866, 2]
+// Dependencies: [5, 1372, 1874, 676, 1236, 10196, 10204, 8196, 6044, 5543, 3889, 8348, 6693, 3890, 2]
 // Exports: useInviteActions
 
-// Module 10182 (useInviteActions)
+// Module 10203 (useInviteActions)
 import getMore from "get more";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_5 from "_isNativeReflectConstruct";
+import ensureGuildLoaded from "ensureGuildLoaded";
+import mergeGuildAvatar from "mergeGuildAvatar";
 import { InstantInviteSources } from "ME";
 
 const require = arg1;
-let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/guild_instant_invites/native/InstantInviteUtils.tsx");
+let result = require("mergeGuildAvatar").fileFinishedImporting("modules/guild_instant_invites/native/InstantInviteUtils.tsx");
 
 export const useInviteActions = function useInviteActions(invite) {
   invite = invite.invite;
@@ -20,74 +20,146 @@ export const useInviteActions = function useInviteActions(invite) {
   let callback;
   channel = channel.getChannel(invite.channel.id);
   let isPrivateResult;
-  if (null != channel) {
+  if (channel != null) {
     isPrivateResult = channel.isPrivate();
   }
   callback = isPrivateResult;
-  let obj = {};
-  let intl = invite(1212).intl;
-  obj.label = intl.string(invite(1212).t.RDE0Sc);
-  obj.iconSource = onInviteRevoked(10175).share;
-  obj.action = function action() {
-    onInviteRevoked(10183)(() => {
-      let obj = invite(8172);
-      obj = {};
-      let tmp;
-      if (!outer1_3) {
-        tmp = onInviteRevoked(6026)(outer1_0.code);
+  let obj = { label: null, iconSource: null, action: null };
+  let intl = invite(1236).intl;
+  obj[0] = intl.string(invite(1236).t.RDE0Sc);
+  obj[1] = onInviteRevoked(10196).share;
+  obj[2] = function action() {
+    onInviteRevoked(10204)(() => {
+      let obj = outer1_0(outer1_2[7]);
+      let tmp4;
+      if (!getMore) {
+        tmp4 = outer1_1(tmp2[8])(closure_0.code);
       }
-      obj.url = tmp;
+      obj = { url: tmp4, message: null };
       let formatToPlainStringResult;
-      if (outer1_3) {
-        const intl = invite(1212).intl;
-        obj = {};
-        const currentUser = outer2_5.getCurrentUser();
-        let username;
-        if (null != currentUser) {
-          username = currentUser.username;
+      if (getMore) {
+        const intl = tmp(tmp2[4]).intl;
+        const currentUser = outer1_5.getCurrentUser();
+        let str;
+        if (currentUser != null) {
+          str = currentUser.username;
         }
-        let str = "";
-        if (null != username) {
-          str = username;
+        if (str == null) {
+          str = "";
         }
-        obj.username = str;
-        obj.link = onInviteRevoked(6026)(outer1_0.code);
-        formatToPlainStringResult = intl.formatToPlainString(invite(1212).t["+zWvOQ"], obj);
+        obj = { username: null, link: null };
+        obj[0] = str;
+        obj[1] = outer1_1(tmp2[8])(closure_0.code);
+        formatToPlainStringResult = intl.formatToPlainString(tmp(tmp2[4]).t["+zWvOQ"], obj);
       }
-      obj.message = formatToPlainStringResult;
+      obj[1] = formatToPlainStringResult;
       let str2 = "Guild Instant Invite";
-      if (outer1_3) {
-        str2 = outer2_6.GROUP_DM;
+      if (getMore) {
+        str2 = outer1_6.GROUP_DM;
       }
       return obj.showShareActionSheet(obj, str2);
     });
   };
   const items = [obj, , ];
-  obj = {};
-  const intl2 = invite(1212).intl;
-  obj.label = intl2.string(invite(1212).t.OpuAlK);
-  obj.iconSource = onInviteRevoked(10175).copy;
-  obj.action = function action() {
+  obj = { label: null, iconSource: null, action: null };
+  const intl2 = invite(1236).intl;
+  obj[0] = intl2.string(invite(1236).t.OpuAlK);
+  obj[1] = onInviteRevoked(10196).copy;
+  obj[2] = function action() {
     if (c3) {
-      let tmpResult = tmp(tmp2[11]);
+      let tmpResult = tmp(8348);
       tmpResult.handleCopy(invite.code, invite.channel, outer1_6.GROUP_DM, false);
     } else {
-      tmpResult = tmp(tmp2[9]);
-      tmpResult.copy(onInviteRevoked(tmp2[8])(invite.code));
-      const result = tmp(tmp2[10]).presentCopiedToClipboard();
-      const tmpResult1 = tmp(tmp2[10]);
+      tmpResult = tmp(5543);
+      tmpResult.copy(onInviteRevoked(6044)(invite.code));
+      const result = invite(3889).presentCopiedToClipboard();
+      const obj2 = invite(3889);
     }
   };
   items[1] = obj;
-  const obj1 = {};
-  const intl3 = invite(1212).intl;
-  obj1.label = intl3.string(invite(1212).t.v6Yazx);
-  obj1.iconSource = onInviteRevoked(10175).revoke;
-  obj1.variant = "destructive";
-  // CreateGeneratorClosureLongIndex (0x67)
-  dependencyMap = callback(tmp);
-  obj1.action = function() {
-    return dependencyMap(...arguments);
+  let obj1 = { label: null, iconSource: null, variant: "destructive", action: null };
+  const intl3 = invite(1236).intl;
+  obj1[0] = intl3.string(invite(1236).t.v6Yazx);
+  obj1[1] = onInviteRevoked(10196).revoke;
+  dependencyMap = callback(function*() {
+    if (c4 === 2) {
+      c4 = 3;
+      HermesBuiltin.throwTypeError();
+    } else if (tmp6 === 3) {
+      if (arg0 === 1) {
+        throw arg1;
+      } else if (arg0 === 2) {
+        let obj = { value: null, done: true };
+        obj[0] = arg1;
+        return obj;
+      } else {
+        return { value: "HermesInternal", done: null };
+      }
+    } else {
+      try {
+        c4 = 2;
+        if (0 === v0) {
+          if (arg0 === 1) {
+            c4 = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            c4 = 3;
+            obj = { value: null, done: true };
+            obj[0] = arg1;
+            return obj;
+          } else {
+            let closure_0 = tmp3;
+            let c3 = 1;
+            v0 = 2;
+            c4 = 1;
+            let obj1 = { value: null, done: false };
+            obj1[0] = v0(outer1_2[12]).revokeInvite(outer1_0);
+            return obj1;
+          }
+        } else {
+          if (1 === tmp7) {
+            c3 = 0;
+            obj1 = v0(outer1_2[13]);
+            const obj2 = { key: "ERROR_ANOTHER_TRY", content: null };
+            const intl = outer1_0(outer1_2[4]).intl;
+            obj2[1] = intl.string(outer1_0(outer1_2[4]).t.CKsXk3);
+            obj1.open(obj2);
+            c4 = 3;
+          } else if (arg0 === 1) {
+            c4 = 3;
+            throw arg1;
+          } else if (arg0 !== 2) {
+            if (v0 != null) {
+              tmp9(closure_0);
+            }
+            c3 = 0;
+          }
+          c3 = 0;
+          c4 = 3;
+          obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
+        }
+      } catch (tmp24) {
+        let closure_2 = tmp24;
+        if (tmp4 === c3) {
+          c4 = tmp2;
+          throw tmp24;
+        } else {
+          v0 = tmp;
+        }
+      }
+    }
+  });
+  obj1[3] = function() {
+    const self = this;
+    const apply = closure_2.apply;
+    if (typeof apply === "unknown") {
+      let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+    } else {
+      applyArgumentsResult = apply(self, arguments);
+    }
+    return applyArgumentsResult;
   };
   items[2] = obj1;
   return items;

@@ -1,12 +1,12 @@
-// Module ID: 12383
-// Function ID: 96192
+// Module ID: 12405
+// Function ID: 12406
 // Name: parents
-// Dependencies: [57, 31, 33, 5777, 3865, 1212, 6700, 12382, 12274, 2]
+// Dependencies: [32, 19, 21, 5795, 3889, 1236, 6721, 12404, 12296, 2]
 // Exports: default
 
-// Module 12383 (parents)
+// Module 12405 (parents)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
+import noop from "noop";
 import { jsx } from "jsxProd";
 
 const require = arg1;
@@ -14,46 +14,50 @@ const result = require("jsxProd").fileFinishedImporting("modules/in_app_reports/
 
 export default function _default(parents) {
   parents = parents.parents;
+  let importDefault;
   const tmp = callback(React.useState(false), 2);
-  const importDefault = tmp[1];
+  importDefault = tmp[1];
   [][0] = parents;
   if (0 === parents.length) {
     return null;
   } else {
-    const intl3 = parents(1212).intl;
-    let obj = { count: parents.length, parent1: parents[0].username };
+    const intl3 = parents(1236).intl;
+    let obj = { count: null, parent1: null, parent2: null, parent3: null };
+    obj[0] = parents.length;
+    obj[1] = parents[0].username;
     let username;
-    if (null != parents[1]) {
-      username = tmp22.username;
+    if (parents[1] != null) {
+      username = tmp17.username;
     }
-    obj.parent2 = username;
+    obj[2] = username;
     let username1;
-    if (null != parents[2]) {
+    if (parents[2] != null) {
       username1 = tmp4.username;
     }
-    obj.parent3 = username1;
-    obj = {};
-    obj.title = intl3.formatToPlainString(parents(1212).t.HqyWeO, obj);
-    const formatToPlainStringResult = intl3.formatToPlainString(parents(1212).t.HqyWeO, obj);
-    const tmp7 = jsx;
-    let intl = parents(1212).intl;
-    obj = { count: parents.length, parent1: parents[0].username };
+    obj[3] = username1;
+    obj = { title: null, disabledTitle: null, icon: null, description: null, disabled: null, onPress: null };
+    obj[0] = intl3.formatToPlainString(parents(1236).t.HqyWeO, obj);
+    const formatToPlainStringResult = intl3.formatToPlainString(parents(1236).t.HqyWeO, obj);
+    let intl = tmp15(1236).intl;
+    obj = { count: null, parent1: null, parent2: null, parent3: null };
+    obj[0] = parents.length;
+    obj[1] = parents[0].username;
     let username2;
-    if (null != parents[1]) {
-      username2 = tmp12.username;
+    if (parents[1] != null) {
+      username2 = tmp10.username;
     }
-    obj.parent2 = username2;
+    obj[2] = username2;
     let username3;
-    if (null != parents[2]) {
-      username3 = tmp14.username;
+    if (parents[2] != null) {
+      username3 = tmp12.username;
     }
-    obj.parent3 = username3;
-    obj.disabledTitle = intl.formatToPlainString(parents(1212).t.BlAMme, obj);
-    obj.icon = jsx(parents(12274).ShareIcon, {});
-    const intl2 = parents(1212).intl;
-    obj.description = intl2.string(parents(1212).t["5l/hlt"]);
-    obj.disabled = tmp[0];
-    obj.onPress = tmp2;
-    return tmp7(importDefault(12382), obj);
+    obj[3] = username3;
+    obj[1] = intl.formatToPlainString(parents(1236).t.BlAMme, obj);
+    obj[2] = jsx(parents(12296).ShareIcon, {});
+    const intl2 = tmp15(1236).intl;
+    obj[3] = intl2.string(parents(1236).t["5l/hlt"]);
+    obj[4] = tmp[0];
+    obj[5] = tmp2;
+    return jsx(importDefault(12404), { count: null, parent1: null, parent2: null, parent3: null });
   }
 };

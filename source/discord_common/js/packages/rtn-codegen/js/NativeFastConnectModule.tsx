@@ -1,9 +1,9 @@
-// Module ID: 479
-// Function ID: 6187
+// Module ID: 502
+// Function ID: 503
 // Name: enforcing
-// Dependencies: [27, 2]
+// Dependencies: [17, 2]
 
-// Module 479 (enforcing)
+// Module 502 (enforcing)
 import { TurboModuleRegistry } from "get ActivityIndicator";
 
 const enforcing = TurboModuleRegistry.getEnforcing("NativeFastConnectModule");

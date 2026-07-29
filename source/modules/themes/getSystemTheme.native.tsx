@@ -1,10 +1,10 @@
-// Module ID: 1315
-// Function ID: 15356
+// Module ID: 1339
+// Function ID: 1340
 // Name: getSystemTheme
-// Dependencies: [27, 1281, 2]
+// Dependencies: [17, 1305, 2]
 // Exports: default
 
-// Module 1315 (getSystemTheme)
+// Module 1339 (getSystemTheme)
 import { Appearance } from "get ActivityIndicator";
 import { SystemTheme } from "SystemThemeState";
 

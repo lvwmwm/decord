@@ -1,96 +1,93 @@
-// Module ID: 16621
-// Function ID: 129525
-// Name: _isNativeReflectConstruct
-// Dependencies: [7, 6, 15, 17, 18, 1907, 3982, 1850, 6307, 653, 12745, 10239, 10240, 10670, 1212, 5112, 2]
+// Module ID: 16656
+// Function ID: 16657
+// Name: handleMessageSendFailure
+// Dependencies: [1931, 4006, 1874, 6328, 676, 12767, 10260, 10261, 10694, 1236, 5134, 2]
 
-// Module 16621 (_isNativeReflectConstruct)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_4 from "_isNativeReflectConstruct";
-import AutomaticLifecycleManager from "AutomaticLifecycleManager";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
-import closure_8 from "_isNativeReflectConstruct";
-import closure_9 from "_isNativeReflectConstruct";
-import closure_10 from "_isNativeReflectConstruct";
-import closure_11 from "_isNativeReflectConstruct";
+// Module 16656 (handleMessageSendFailure)
+import handleConnectionOpen from "handleConnectionOpen";
+import closure_4 from "handleConnectionOpen";
+import mergeGuildAvatar from "mergeGuildAvatar";
+import getState from "getState";
 import ME from "ME";
 import { LocalNotificationTypes } from "LocalNotificationTypes";
-import tmp3 from "AutomaticLifecycleManager";
+import "initialize";
 
-let closure_12;
-let closure_13;
+let error;
+let metroImportAll;
 const require = arg1;
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
-  }
-  const result = _isNativeReflectConstruct();
-}
 function handleMessageSendFailure(shouldNotify) {
   let channelId;
   let messageId;
   ({ channelId, messageId } = shouldNotify);
   if (shouldNotify.shouldNotify) {
     if ("active" !== state.getState()) {
-      let obj = importDefault(10670);
-      obj = { category: "local" };
-      const intl = require(1212) /* getSystemLocale */.intl;
-      obj.alertTitle = intl.string(require(1212) /* getSystemLocale */.t.LdlH2M);
-      const intl2 = require(1212) /* getSystemLocale */.intl;
-      obj.alertBody = intl2.string(require(1212) /* getSystemLocale */.t.xxRPOT);
-      obj = { channelId, messageId, type: LocalNotificationTypes.MESSAGE_SEND_FAILED };
-      obj.userInfo = obj;
+      let obj = importDefault(10694);
+      obj = { category: "local", alertTitle: null, alertBody: null, userInfo: null };
+      const intl = require(1236) /* getSystemLocale */.intl;
+      obj[1] = intl.string(require(1236) /* getSystemLocale */.t.LdlH2M);
+      const intl2 = require(1236) /* getSystemLocale */.intl;
+      obj[2] = intl2.string(require(1236) /* getSystemLocale */.t.xxRPOT);
+      obj = { channelId: null, messageId: null, type: null };
+      obj[0] = channelId;
+      obj[1] = messageId;
+      obj[2] = LocalNotificationTypes.MESSAGE_SEND_FAILED;
+      obj[3] = obj;
       const result = obj.presentLocalNotification(obj);
     } else if (channelId !== channelId.getChannelId(guildId.getGuildId())) {
-      const obj1 = {
-        type: constants.MESSAGE_FAILED_TO_SEND,
-        channelId,
-        messageId,
-        key: `${channelId}-${messageId}`,
-        duration: 5000,
-        onDismiss() {
-              outer1_1(outer1_2[11]).clearNotification();
-            }
+      const obj1 = { type: null, channelId: null, messageId: null, key: null, duration: 5000, onDismiss: null, inAppNotificationId: null };
+      obj1[0] = constants.MESSAGE_FAILED_TO_SEND;
+      obj1[1] = channelId;
+      obj1[2] = messageId;
+      obj1[3] = `${channelId}-${messageId}`;
+      obj1[5] = function onDismiss() {
+        callback(table[6]).clearNotification();
       };
-      const obj4 = importDefault(10239);
-      obj1.inAppNotificationId = require(10240) /* hasMedia */.generateInAppNotificationId();
+      const obj4 = importDefault(10260);
+      obj1[6] = require(10261) /* extractMetadataFromNotification */.generateInAppNotificationId();
       obj4.enqueueNotification(obj1);
-      const obj6 = require(10240) /* hasMedia */;
+      const obj6 = require(10261) /* extractMetadataFromNotification */;
     }
   }
 }
 function handleMessageCreate(message) {
   message = message.message;
   const sendMessageOptions = message.sendMessageOptions;
-  let tmp = null != sendMessageOptions && sendMessageOptions.isHydratingExpiredPendingMessage;
-  if (tmp) {
-    tmp = message.state === constants2.SEND_FAILED;
+  let prop;
+  if (sendMessageOptions != null) {
+    prop = sendMessageOptions.isHydratingExpiredPendingMessage;
   }
-  if (tmp) {
+  if (prop) {
+    prop = message.state === constants2.SEND_FAILED;
+  }
+  if (prop) {
     currentUser = currentUser.getCurrentUser();
     let id;
-    if (null != currentUser) {
+    if (currentUser != null) {
       id = currentUser.id;
     }
     const author = message.author;
     let id1;
-    if (null != author) {
+    if (author != null) {
       id1 = author.id;
     }
-    tmp = id === id1;
+    prop = id === id1;
   }
-  if (tmp) {
+  if (prop) {
     const _setTimeout = setTimeout;
     const timerId = setTimeout(() => {
-      outer1_16({ channelId: message.channel_id, messageId: message.id, shouldNotify: true });
+      outer1_10({ channelId: message.channel_id, messageId: message.id, shouldNotify: true });
     }, 3000);
   }
 }
-({ InAppNotificationTypes: closure_12, MessageStates: closure_13 } = ME);
-tmp3 = new tmp3();
-let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/messages/native/MessageSendFailureNotificationManager.tsx");
+({ InAppNotificationTypes: error, MessageStates: metroImportAll } = ME);
+let prototype = function MessageSendFailureNotificationManager() {
+  const applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
+  applyArgumentsResult.actions = { MESSAGE_CREATE: handleMessageCreate, MESSAGE_SEND_FAILED: handleMessageSendFailure };
+  return applyArgumentsResult;
+}.prototype;
+class prototype extends tmp3 {
+}
+prototype = new prototype();
+let result = require("mergeGuildAvatar").fileFinishedImporting("modules/messages/native/MessageSendFailureNotificationManager.tsx");
 
-export default tmp3;
+export default prototype;

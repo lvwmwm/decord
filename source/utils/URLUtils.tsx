@@ -1,145 +1,51 @@
-// Module ID: 1443
-// Function ID: 16809
-// Name: isOriginalContentTypeDifferent
-// Dependencies: [653, 1444, 1445, 1443, 1327, 22, 2]
+// Module ID: 1467
+// Function ID: 1468
+// Name: isDiscordProxiedAssetUrl
+// Dependencies: [676, 1468, 1469, 1467, 1351, 12, 2]
 
-// Module 1443 (isOriginalContentTypeDifferent)
+// Module 1467 (isDiscordProxiedAssetUrl)
 import { Routes } from "ME";
 import set from "Url";
 
-function isOriginalContentTypeDifferent(arg0, arg1) {
-  return null != arg0 && null != arg1 && arg0 !== arg1;
-}
-function isDiscordHostname(hostname, flag) {
-  if (flag === undefined) {
-    flag = false;
-  }
-  let tmp = null != hostname;
+function isDiscordProxiedAssetUrl(url, arg1, arg2) {
   if (tmp) {
-    let isMatch = regex.test(hostname);
-    if (!isMatch) {
-      if (flag) {
-        flag = set1.has(hostname.toLowerCase());
-      }
-      isMatch = flag;
-    }
-    tmp = isMatch;
-  }
-  return tmp;
-}
-function isDiscordProtocol(protocol) {
-  let tmp = null != protocol;
-  if (tmp) {
-    tmp = "discord:" === protocol;
-  }
-  return tmp;
-}
-function isDiscordDirectAssetUrl(outer1_0) {
-  if (null == outer1_0) {
-    return false;
-  } else {
-    const toURLSafeResult = importDefault(1443).toURLSafe(outer1_0);
-    let tmp9 = null != toURLSafeResult;
-    if (tmp9) {
-      let tmp3 = !require(1327) /* isDiscordFrontendDevelopment */.isDiscordBackendDevelopment();
-      if (!tmp3) {
-        let tmp4 = "localhost" !== toURLSafeResult.hostname;
-        if (tmp4) {
-          tmp4 = "127.0.0.1" !== toURLSafeResult.hostname;
-        }
-        tmp3 = tmp4;
-      }
-      let tmp5 = !tmp3;
-      if (tmp3) {
-        const _window = window;
-        let isMatch = toURLSafeResult.hostname === window.GLOBAL_ENV.CDN_HOST;
-        if (!isMatch) {
-          isMatch = regex2.test(toURLSafeResult.hostname);
-        }
-        tmp5 = isMatch;
-      }
-      tmp9 = tmp5;
-      const obj = require(1327) /* isDiscordFrontendDevelopment */;
-    }
-    return tmp9;
-  }
-}
-function isDiscordProxiedAssetUrl(outer1_0, arg1, arg2) {
-  if (isOriginalContentTypeDifferent(arg1, arg2)) {
-    if (null == outer1_0) {
+    if (null == url) {
       return false;
     } else {
-      const url = importDefault(1443).toURLSafe(outer1_0);
-      let tmp8 = null != url;
-      if (tmp8) {
-        let tmp4 = !require(1327) /* isDiscordFrontendDevelopment */.isDiscordBackendDevelopment();
-        if (!tmp4) {
-          let tmp5 = "localhost" !== url.hostname;
-          if (tmp5) {
-            tmp5 = "127.0.0.1" !== url.hostname;
+      url = importDefault(1467).toURLSafe(url);
+      let tmp9 = null != url;
+      if (tmp9) {
+        const result = require(1351) /* isDiscordFrontendDevelopment */.isDiscordBackendDevelopment();
+        let tmp5 = !result;
+        if (result) {
+          let tmp6 = "localhost" !== url.hostname;
+          if (tmp6) {
+            tmp6 = "127.0.0.1" !== url.hostname;
           }
-          tmp4 = tmp5;
+          tmp5 = tmp6;
         }
-        if (!tmp4) {
-          tmp4 = "4000" !== url.port;
+        if (!tmp5) {
+          tmp5 = "4000" !== url.port;
         }
-        let isMatch = !tmp4;
-        if (tmp4) {
+        let isMatch = !tmp5;
+        if (tmp5) {
           isMatch = regex3.test(url.hostname);
         }
-        tmp8 = isMatch;
-        const obj = require(1327) /* isDiscordFrontendDevelopment */;
+        tmp9 = isMatch;
+        const obj = require(1351) /* isDiscordFrontendDevelopment */;
       }
-      return tmp8;
+      return tmp9;
     }
   } else {
     return false;
   }
-}
-function isAllowedGifProviderUrl(outer1_0) {
-  if (null == outer1_0) {
-    return false;
-  } else {
-    const toURLSafeResult = importDefault(1443).toURLSafe(outer1_0);
-    let hasItem = null != toURLSafeResult;
-    if (hasItem) {
-      hasItem = set.has(toURLSafeResult.hostname);
-    }
-    return hasItem;
-  }
-}
-function isDiscordUrl(ctaLink, flag) {
-  if (flag === undefined) {
-    flag = false;
-  }
-  if (null != ctaLink) {
-    const toURLSafeResult = importDefault(1443).toURLSafe(ctaLink);
-    let hostname;
-    if (null != toURLSafeResult) {
-      hostname = toURLSafeResult.hostname;
-    }
-    if (null != hostname) {
-      if (isDiscordHostname(hostname, flag)) {
-        return true;
-      }
-    }
-    const obj = importDefault(1443);
-  }
-  return false;
-}
-function isDiscordUri(ctaLink) {
-  let tmp = null != ctaLink;
-  if (tmp) {
-    tmp = isDiscordProtocol(importAll(1445).parse(ctaLink).protocol);
-    const obj = importAll(1445);
-  }
-  return tmp;
+  tmp = null != arg1 && null != arg2 && arg1 !== arg2;
 }
 const re5 = /(?:^|\.)(?:discordapp|discord|discordmerch)\.com$/i;
 const re6 = /^.*\.discordapp\.net$/;
 const re7 = /^.*\.media\.discordapp\.net$/;
 let set = new Set(["media.tenor.com", "media.tenor.co", "c.tenor.com", "static.klipy.com", "media.giphy.com", "i.giphy.com"]);
-const regExp = new RegExp("(?:(?:(?:[a-z]+:)?//)|www\\.)(?:[^\\s:@]+(?::[^\\s@]*)?@)?(?:localhost|" + require("b").v4().source + "|(?:[a-z\\u00a1-\\uffff0-9-_]+\\.)+(?:(?:[a-z\\u00a1-\\uffff]{2,})))(?::\\d{2,5})?(?:[/?#][^\\s\"]*)?", "ig");
+const regExp = new RegExp("(?:(?:(?:[a-z]+:)?//)|www\\.)(?:[^\\s:@]+(?::[^\\s@]*)?@)?(?:localhost|" + require("ip").v4().source + "|(?:[a-z\\u00a1-\\uffff0-9-_]+\\.)+(?:(?:[a-z\\u00a1-\\uffff]{2,})))(?::\\d{2,5})?(?:[/?#][^\\s\"]*)?", "ig");
 const items = [window.GLOBAL_ENV.CDN_HOST, window.GLOBAL_ENV.INVITE_HOST, window.GLOBAL_ENV.GIFT_CODE_HOST, window.GLOBAL_ENV.GUILD_TEMPLATE_HOST];
 const set1 = new Set(items);
 let result = set.fileFinishedImporting("utils/URLUtils.tsx");
@@ -147,22 +53,38 @@ let result = set.fileFinishedImporting("utils/URLUtils.tsx");
 export default {
   URL_REGEX: regExp,
   makeUrl(BILLING_LOGIN_HANDOFF, arg1) {
-    let result = arg1;
-    if (null == arg1) {
-      result = require(1327) /* isDiscordFrontendDevelopment */.isDiscordFrontendDevelopment();
-      const obj = require(1327) /* isDiscordFrontendDevelopment */;
+    if (arg1 == null) {
+      if (!obj.isDiscordFrontendDevelopment()) {
+        const _location = location;
+        let INVITE_HOST = location.host;
+      }
+      const _location2 = location;
+      const _HermesInternal = HermesInternal;
+      return "" + location.protocol + "//" + INVITE_HOST + BILLING_LOGIN_HANDOFF;
     }
-    if (result) {
-      const _window = window;
-      let host = window.GLOBAL_ENV.INVITE_HOST;
-    } else {
-      const _location = location;
-      host = location.host;
-    }
-    return "" + location.protocol + "//" + host + BILLING_LOGIN_HANDOFF;
+    INVITE_HOST = window.GLOBAL_ENV.INVITE_HOST;
   },
-  isOriginalContentTypeDifferent,
-  isDiscordHostname,
+  isOriginalContentTypeDifferent(arg0, arg1) {
+    return null != arg0 && null != arg1 && arg0 !== arg1;
+  },
+  isDiscordHostname(hostname) {
+    let flag = arg1;
+    if (arg1 === undefined) {
+      flag = false;
+    }
+    let tmp = null != hostname;
+    if (tmp) {
+      let isMatch = regex.test(hostname);
+      if (!isMatch) {
+        if (flag) {
+          flag = set1.has(hostname.toLowerCase());
+        }
+        isMatch = flag;
+      }
+      tmp = isMatch;
+    }
+    return tmp;
+  },
   isDiscordLocalhost(host, hostname) {
     let tmp = null != host;
     if (tmp) {
@@ -174,40 +96,199 @@ export default {
     }
     return tmp;
   },
-  isDiscordProtocol,
-  isDiscordUrl,
-  isDiscordUri,
+  isDiscordProtocol(protocol) {
+    let tmp = null != protocol;
+    if (tmp) {
+      tmp = "discord:" === protocol;
+    }
+    return tmp;
+  },
+  isDiscordUrl(ctaLink, arg1) {
+    let flag = arg1;
+    if (arg1 === undefined) {
+      flag = false;
+    }
+    if (null != ctaLink) {
+      const toURLSafeResult = importDefault(1467).toURLSafe(ctaLink);
+      let hostname;
+      if (toURLSafeResult != null) {
+        hostname = toURLSafeResult.hostname;
+      }
+      if (null != hostname) {
+        if (flag === undefined) {
+          flag = false;
+        }
+        let tmp5 = null != hostname;
+        if (tmp5) {
+          let isMatch = regex.test(hostname);
+          if (!isMatch) {
+            if (flag) {
+              flag = set1.has(hostname.toLowerCase());
+            }
+            isMatch = flag;
+          }
+          tmp5 = isMatch;
+        }
+        if (tmp5) {
+          return true;
+        }
+      }
+      const obj = importDefault(1467);
+    }
+    return false;
+  },
+  isDiscordUri(arg0) {
+    let tmp = null != arg0;
+    if (tmp) {
+      const protocol = importAll(1469).parse(arg0).protocol;
+      let tmp4 = null != protocol;
+      if (tmp4) {
+        tmp4 = "discord:" === protocol;
+      }
+      tmp = tmp4;
+      const obj = importAll(1469);
+    }
+    return tmp;
+  },
   isDiscordCdnUrl(src) {
     let tmp = null != src;
     if (tmp) {
       const _window = window;
-      tmp = importAll(1445).parse(src).hostname === window.GLOBAL_ENV.CDN_HOST;
-      const obj = importAll(1445);
+      tmp = importAll(1469).parse(src).hostname === window.GLOBAL_ENV.CDN_HOST;
+      const obj = importAll(1469);
     }
     return tmp;
   },
-  isDiscordDirectAssetUrl,
-  isDiscordProxiedAssetUrl,
-  isAllowedGifProviderUrl,
-  isDiscordAssetUrl(outer1_0) {
-    const tmp = !isDiscordDirectAssetUrl(outer1_0);
-    let tmp2 = !tmp;
-    if (tmp) {
-      const tmp6 = !isDiscordProxiedAssetUrl(outer1_0, arg1, arg2);
-      let tmp7 = !tmp6;
-      if (tmp6) {
-        tmp7 = isAllowedGifProviderUrl(outer1_0);
+  isDiscordDirectAssetUrl(url) {
+    if (null == url) {
+      return false;
+    } else {
+      const toURLSafeResult = importDefault(1467).toURLSafe(url);
+      let tmp9 = null != toURLSafeResult;
+      if (tmp9) {
+        const result = require(1351) /* isDiscordFrontendDevelopment */.isDiscordBackendDevelopment();
+        let tmp3 = !result;
+        if (result) {
+          let tmp4 = "localhost" !== toURLSafeResult.hostname;
+          if (tmp4) {
+            tmp4 = "127.0.0.1" !== toURLSafeResult.hostname;
+          }
+          tmp3 = tmp4;
+        }
+        let tmp5 = !tmp3;
+        if (tmp3) {
+          const _window = window;
+          let isMatch = toURLSafeResult.hostname === window.GLOBAL_ENV.CDN_HOST;
+          if (!isMatch) {
+            isMatch = regex2.test(toURLSafeResult.hostname);
+          }
+          tmp5 = isMatch;
+        }
+        tmp9 = tmp5;
+        const obj = require(1351) /* isDiscordFrontendDevelopment */;
       }
-      tmp2 = tmp7;
+      return tmp9;
     }
-    return tmp2;
   },
-  isDiscordUrlOrUri(ctaLink) {
-    let tmp = isDiscordUrl(ctaLink);
-    if (!tmp) {
-      tmp = isDiscordUri(ctaLink);
+  isDiscordProxiedAssetUrl,
+  isAllowedGifProviderUrl(url) {
+    if (null == url) {
+      return false;
+    } else {
+      const toURLSafeResult = importDefault(1467).toURLSafe(url);
+      let hasItem = null != toURLSafeResult;
+      if (hasItem) {
+        hasItem = set.has(toURLSafeResult.hostname);
+      }
+      return hasItem;
     }
-    return tmp;
+  },
+  isDiscordAssetUrl(url) {
+    let flag = false;
+    if (null != url) {
+      const toURLSafeResult = importDefault(1467).toURLSafe(url);
+      let tmp4 = null != toURLSafeResult;
+      if (tmp4) {
+        const result = require(1351) /* isDiscordFrontendDevelopment */.isDiscordBackendDevelopment();
+        let tmp7 = !result;
+        if (result) {
+          let tmp8 = "localhost" !== toURLSafeResult.hostname;
+          if (tmp8) {
+            tmp8 = "127.0.0.1" !== toURLSafeResult.hostname;
+          }
+          tmp7 = tmp8;
+        }
+        let tmp9 = !tmp7;
+        if (tmp7) {
+          const _window = window;
+          let isMatch = toURLSafeResult.hostname === window.GLOBAL_ENV.CDN_HOST;
+          if (!isMatch) {
+            isMatch = regex2.test(toURLSafeResult.hostname);
+          }
+          tmp9 = isMatch;
+        }
+        tmp4 = tmp9;
+        const obj2 = require(1351) /* isDiscordFrontendDevelopment */;
+      }
+      flag = tmp4;
+      const obj = importDefault(1467);
+    }
+    let tmp13 = flag;
+    if (!tmp13) {
+      let tmp17 = isDiscordProxiedAssetUrl(url, arg1, arg2);
+      if (!tmp17) {
+        let flag2 = false;
+        if (null != url) {
+          const toURLSafeResult1 = importDefault(1467).toURLSafe(url);
+          let hasItem = null != toURLSafeResult1;
+          if (hasItem) {
+            hasItem = set.has(toURLSafeResult1.hostname);
+          }
+          flag2 = hasItem;
+          const obj3 = importDefault(1467);
+        }
+        tmp17 = flag2;
+      }
+      tmp13 = tmp17;
+    }
+    return tmp13;
+  },
+  isDiscordUrlOrUri(url) {
+    let flag = false;
+    if (null != url) {
+      const toURLSafeResult = importDefault(1467).toURLSafe(url);
+      let hostname;
+      if (toURLSafeResult != null) {
+        hostname = toURLSafeResult.hostname;
+      }
+      flag = false;
+      if (null != hostname) {
+        let tmp5 = null != hostname;
+        if (tmp5) {
+          tmp5 = regex.test(hostname) || false;
+          const tmp7 = regex.test(hostname) || false;
+        }
+        flag = false;
+        if (tmp5) {
+          flag = true;
+        }
+      }
+      const obj = importDefault(1467);
+    }
+    if (!flag) {
+      let tmp8 = null != url;
+      if (tmp8) {
+        const protocol = importAll(1469).parse(url).protocol;
+        let tmp11 = null != protocol;
+        if (tmp11) {
+          tmp11 = "discord:" === protocol;
+        }
+        tmp8 = tmp11;
+        const obj2 = importAll(1469);
+      }
+      flag = tmp8;
+    }
+    return flag;
   },
   isAppRoute(pathname) {
     const formatted = pathname.toLowerCase();
@@ -218,26 +299,42 @@ export default {
     return startsWithResult;
   },
   format(arg0) {
-    return importAll(1445).format(arg0);
+    return importAll(1469).format(arg0);
   },
   formatPathWithQuery(pathname) {
-    let obj = importAll(1445);
-    obj = { pathname, query: importDefault(22).pickBy(arg1) };
+    let obj = importAll(1469);
+    obj = { pathname, query: null };
+    obj[1] = importDefault(12).pickBy(arg1);
     return obj.format(obj);
   },
   formatSearch(arg0) {
-    let obj = importAll(1445);
-    obj = { query: importDefault(22).pickBy(arg0) };
+    let obj = importAll(1469);
+    obj = { query: null };
+    obj[0] = importDefault(12).pickBy(arg0);
     return obj.format(obj);
   },
-  safeParseWithQuery(aPIEndpoint) {
-    return importAll(1445).parse(aPIEndpoint, true);
+  safeParseWithQuery(target) {
+    try {
+      return importAll(1469).parse(target, true);
+    } catch (err) {
+      return null;
+    }
   },
-  toURLSafe(outer1_0, arg1) {
-    const uRL = new URL(outer1_0, arg1);
-    return uRL;
+  toURLSafe(url, arg1) {
+    try {
+      const _URL = URL;
+      const uRL = new URL(url, arg1);
+      return uRL;
+    } catch (err) {
+      return null;
+    }
   },
   safeDecodeURIComponent(hash) {
-    return decodeURIComponent(hash);
+    try {
+      const _decodeURIComponent = decodeURIComponent;
+      return decodeURIComponent(hash);
+    } catch (err) {
+      return null;
+    }
   }
 };

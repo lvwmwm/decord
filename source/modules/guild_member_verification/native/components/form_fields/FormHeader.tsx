@@ -1,33 +1,30 @@
-// Module ID: 8319
-// Function ID: 66616
+// Module ID: 8343
+// Function ID: 8344
 // Name: FormHeader
-// Dependencies: [31, 482, 33, 4165, 5087, 689, 1273, 2]
+// Dependencies: [19, 505, 21, 4189, 5109, 712, 1297, 2]
 // Exports: default
 
-// Module 8319 (FormHeader)
-import "result";
+// Module 8343 (FormHeader)
+import "noop";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 import importDefaultResult from "createTextStyle";
 
 const require = arg1;
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = {};
-let merged = Object.assign(require("createTextStyle")(require("sum").Fonts.DISPLAY_EXTRABOLD, require("_createForOfIteratorHelperLoose").colors.TEXT_SUBTLE, 12, { uppercase: true }));
-_createForOfIteratorHelperLoose["paddingBottom"] = 8;
-_createForOfIteratorHelperLoose.fieldHeader = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-const obj1 = { uppercase: true };
+createCacheKey = { fieldHeader: null };
+createCacheKey = {};
+let merged = Object.assign(require("createTextStyle")(require("sum").Fonts.DISPLAY_EXTRABOLD, require("Themes").colors.TEXT_SUBTLE, 12, { uppercase: true }));
+createCacheKey.paddingBottom = 8;
+createCacheKey[0] = createCacheKey;
+createCacheKey = createCacheKey.createStyles(createCacheKey);
 const result = require("jsxProd").fileFinishedImporting("modules/guild_member_verification/native/components/form_fields/FormHeader.tsx");
 
 export default function FormHeader(children) {
-  let obj = Object.create(null);
-  obj.children = 0;
-  const merged = Object.assign(children, obj);
-  obj = {};
+  const merged = Object.assign(children, Object.create(null));
+  const obj = {};
   const merged1 = Object.assign(merged);
-  const items = [_createForOfIteratorHelperLoose().fieldHeader, merged.style];
-  obj["style"] = items;
-  obj["children"] = children.children;
-  return jsx(require(1273) /* Button */.LegacyText, {});
+  const items = [createCacheKey().fieldHeader, merged.style];
+  obj.style = items;
+  obj.children = children.children;
+  return jsx(require(1297) /* Button */.LegacyText, {});
 };

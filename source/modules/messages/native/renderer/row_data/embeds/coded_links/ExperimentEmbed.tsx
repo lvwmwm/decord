@@ -1,25 +1,26 @@
-// Module ID: 10969
-// Function ID: 85049
+// Module ID: 10993
+// Function ID: 10994
 // Name: ExperimentOverrideActionSheet
-// Dependencies: [31, 27, 1194, 4080, 6003, 33, 7702, 7855, 10465, 10466, 3875, 10970, 10971, 10972, 7706, 10973, 7857, 4133, 4087, 5221, 5220, 10974, 10464, 2]
+// Dependencies: [19, 17, 1218, 4104, 6021, 21, 7725, 7878, 10489, 10490, 3899, 10994, 10995, 10996, 7729, 10997, 7880, 4157, 4111, 5243, 5242, 10998, 10488, 2]
 // Exports: createExperimentEmbed, default
 
-// Module 10969 (ExperimentOverrideActionSheet)
-import result from "result";
-import { Image } from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 10993 (ExperimentOverrideActionSheet)
+import Background from "Background";
+import { Image } from "ACTION_SHEET_HEIGHT_HALF";
+import fetchFingerprint from "fetchFingerprint";
 import { ExperimentEmbedType } from "ExperimentBuckets";
 import { InviteTypes } from "InviteSendStates";
-import { jsx } from "jsxProd";
+import { jsx } from "UserExperimentDebugView";
 
 const require = arg1;
 function ExperimentOverrideActionSheet(override) {
   const id = override.id;
   const experiment = override.experiment;
+  let memo;
   let items = [experiment];
-  const memo = React.useMemo(() => {
+  memo = React.useMemo(() => {
     if (null != experiment) {
-      let experimentVariantsForDevTools = id(memo[16]).getExperimentVariantsForDevTools(experiment);
+      let experimentVariantsForDevTools = id(memo[16]).getExperimentVariantsForDevTools(tmp);
       const obj = id(memo[16]);
     } else {
       experimentVariantsForDevTools = [];
@@ -42,20 +43,17 @@ function ExperimentOverrideActionSheet(override) {
         items.push({
           label: label.label,
           onPress() {
-            experiment(memo[17]).hideActionSheet("ExperimentOverrideSheet");
-            const obj = experiment(memo[17]);
-            id(memo[18]).overrideBucket(items.system, map, label.id);
+            items(outer2_2[17]).hideActionSheet("ExperimentOverrideSheet");
+            const obj = items(outer2_2[17]);
+            map(outer2_2[18]).overrideBucket(outer1_1.system, label, label.id);
           }
         });
       });
-      let obj = {
-        label: "Clear Override",
-        isDestructive: true,
-        onPress() {
-            experiment(memo[17]).hideActionSheet("ExperimentOverrideSheet");
-            const obj = experiment(memo[17]);
-            id(memo[18]).overrideBucket(items.system, map, null);
-          }
+      let obj = { label: "Clear Override", isDestructive: true, onPress: null };
+      obj[2] = function onPress() {
+        items(outer1_2[17]).hideActionSheet("ExperimentOverrideSheet");
+        const obj = items(outer1_2[17]);
+        map(outer1_2[18]).overrideBucket(items.system, map, null);
       };
       items.push(obj);
       return items;
@@ -64,54 +62,59 @@ function ExperimentOverrideActionSheet(override) {
   const callback = React.useCallback(() => {
     experiment(memo[17]).hideActionSheet("ExperimentOverrideSheet");
   }, []);
-  let obj = {};
+  let obj = { header: null, children: null };
   obj = { title: experiment.title, subtitle: id };
-  obj.header = jsx(id(memo[20]).BottomSheetTitleHeader, { title: experiment.title, subtitle: id });
-  obj.children = jsx(id(memo[21]).ExperimentDetails, { experiment, override: override.override, id, options: memo1, onCopyLink: callback });
+  obj[0] = jsx(id(memo[20]).BottomSheetTitleHeader, { title: experiment.title, subtitle: id });
+  obj[1] = jsx(id(memo[21]).ExperimentDetails, { experiment, override: override.override, id, options: memo1, onCopyLink: callback });
   return jsx(id(memo[19]).BottomSheet, { title: experiment.title, subtitle: id });
 }
-let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/messages/native/renderer/row_data/embeds/coded_links/ExperimentEmbed.tsx");
+let result = require("fetchFingerprint").fileFinishedImporting("modules/messages/native/renderer/row_data/embeds/coded_links/ExperimentEmbed.tsx");
 
 export default function ConnectedExperimentOverrideActionSheet(id) {
   id = id.id;
+  let experiments;
+  let overridesInfo;
+  let experiments2;
+  let overridesInfo2;
   let obj = id(overridesInfo[8]);
   const legacyExperiments = obj.useLegacyExperiments();
-  const experiments = legacyExperiments.experiments;
+  experiments = legacyExperiments.experiments;
   overridesInfo = legacyExperiments.overridesInfo;
   const apexExperiments = id(overridesInfo[9]).useApexExperiments();
-  const experiments2 = apexExperiments.experiments;
-  const overridesInfo2 = apexExperiments.overridesInfo;
+  experiments2 = apexExperiments.experiments;
+  overridesInfo2 = apexExperiments.overridesInfo;
   const items = [experiments, experiments2, id];
   const memo = experiments2.useMemo(() => {
-    let tmp = experiments[id];
-    if (null == tmp) {
-      tmp = experiments2[id];
+    let tmp2 = experiments[id];
+    if (tmp2 == null) {
+      tmp2 = experiments2[tmp];
     }
-    let tmp4 = null;
-    if (null != tmp) {
-      tmp4 = tmp;
+    if (tmp2 == null) {
+      tmp2 = null;
     }
-    return tmp4;
+    return tmp2;
   }, items);
   const items1 = [overridesInfo, overridesInfo2, id];
   const memo1 = experiments2.useMemo(() => {
-    let tmp = overridesInfo[id];
-    if (null == tmp) {
-      tmp = overridesInfo2[id];
+    let tmp2 = overridesInfo[id];
+    if (tmp2 == null) {
+      tmp2 = overridesInfo2[tmp];
     }
-    let tmp4 = null;
-    if (null != tmp) {
-      tmp4 = tmp;
+    if (tmp2 == null) {
+      tmp2 = null;
     }
-    return tmp4;
+    return tmp2;
   }, items1);
   id(overridesInfo[22]);
   let tmp7 = null;
   if (null != memo) {
     tmp7 = null;
     if (tmp6) {
-      obj = { id, experiment: memo, override: memo1 };
-      tmp7 = <ExperimentOverrideActionSheet id={id} experiment={memo} override={memo1} />;
+      obj = { id: null, experiment: null, override: null };
+      obj[0] = id;
+      obj[1] = memo;
+      obj[2] = memo1;
+      tmp7 = <ExperimentOverrideActionSheet id={null} experiment={null} override={null} />;
     }
   }
   return tmp7;
@@ -121,47 +124,48 @@ export const createExperimentEmbed = function createExperimentEmbed(url, closure
   let colors;
   let experiments;
   let overridesInfo;
-  ({ colors, baseColors } = importDefault(7702)(closure_2));
-  let obj = experimentTreatmentFromEmbedURL(7855);
+  ({ colors, baseColors } = importDefault(7725)(closure_2));
+  let obj = experimentTreatmentFromEmbedURL(7878);
   const experimentFromEmbedURL = obj.getExperimentFromEmbedURL(url);
-  let obj1 = experimentTreatmentFromEmbedURL(7855);
+  let obj1 = experimentTreatmentFromEmbedURL(7878);
   experimentTreatmentFromEmbedURL = obj1.getExperimentTreatmentFromEmbedURL(url);
-  const tmp = importDefault(7702)(closure_2);
-  const legacyExperiments = experimentTreatmentFromEmbedURL(10465).getLegacyExperiments();
+  const tmp3 = importDefault(7725)(closure_2);
+  const legacyExperiments = experimentTreatmentFromEmbedURL(10489).getLegacyExperiments();
   ({ experiments, overridesInfo } = legacyExperiments);
-  const obj3 = experimentTreatmentFromEmbedURL(10465);
-  const apexExperiments = experimentTreatmentFromEmbedURL(10466).getApexExperiments();
-  let tmp7 = null;
+  const obj3 = experimentTreatmentFromEmbedURL(10489);
+  const apexExperiments = experimentTreatmentFromEmbedURL(10490).getApexExperiments();
+  let tmp10 = null;
   if (null != experimentFromEmbedURL) {
-    let tmp8 = experiments[experimentFromEmbedURL];
-    if (null == tmp8) {
-      tmp8 = tmp6[experimentFromEmbedURL];
+    let tmp11 = experiments[experimentFromEmbedURL];
+    if (tmp11 == null) {
+      tmp11 = tmp9[experimentFromEmbedURL];
     }
-    tmp7 = tmp8;
+    tmp10 = tmp11;
   }
   if (null != experimentFromEmbedURL) {
-    if (null != tmp7) {
-      let tmp9 = overridesInfo[experimentFromEmbedURL];
-      if (null == tmp9) {
-        tmp9 = apexExperiments.overridesInfo[experimentFromEmbedURL];
+    if (null != tmp10) {
+      let tmp12 = overridesInfo[experimentFromEmbedURL];
+      if (tmp12 == null) {
+        tmp12 = apexExperiments.overridesInfo[experimentFromEmbedURL];
       }
-      let tmp10 = null;
-      if (null != tmp9) {
-        tmp10 = tmp9;
+      if (tmp12 == null) {
+        tmp12 = null;
       }
-      const experimentBuckets = experimentTreatmentFromEmbedURL(7855).getExperimentBuckets(tmp7);
+      let tmp4Result = tmp4(7878);
+      const experimentBuckets = tmp4Result.getExperimentBuckets(tmp10);
       const iter = experimentBuckets.find((value) => value.value === experimentTreatmentFromEmbedURL);
       if (null != iter) {
         let EXPERIMENT = ExperimentEmbedType.EXPERIMENT_TREATMENT;
+        let tmp13 = ExperimentEmbedType;
       } else {
+        tmp13 = ExperimentEmbedType;
         EXPERIMENT = ExperimentEmbedType.EXPERIMENT;
       }
       id = id.getId();
-      const obj5 = experimentTreatmentFromEmbedURL(7855);
-      const experimentServerAssignment = experimentTreatmentFromEmbedURL(10972).getExperimentServerAssignment(tmp7, id);
-      const obj6 = experimentTreatmentFromEmbedURL(10972);
-      const experimentServerAssignmentLabel = experimentTreatmentFromEmbedURL(7855).getExperimentServerAssignmentLabel(tmp7, experimentServerAssignment);
-      if (EXPERIMENT === ExperimentEmbedType.EXPERIMENT_TREATMENT) {
+      tmp4Result = tmp4(10996);
+      const experimentServerAssignment = tmp4Result.getExperimentServerAssignment(tmp10, id);
+      const experimentServerAssignmentLabel = tmp4(7878).getExperimentServerAssignmentLabel(tmp10, experimentServerAssignment);
+      if (EXPERIMENT === tmp13.EXPERIMENT_TREATMENT) {
         if (null != iter) {
           let label = iter.label;
         } else {
@@ -170,73 +174,71 @@ export const createExperimentEmbed = function createExperimentEmbed(url, closure
         }
         obj = {};
         const merged = Object.assign(baseColors);
-        obj["headerText"] = "EXPERIMENT TREATMENT";
-        obj["titleText"] = experimentFromEmbedURL;
-        obj["titleColor"] = colors.titleColor;
-        obj["subtitle"] = label;
-        obj["subtitleColor"] = colors.subtitleColor;
-        obj["thumbnailUrl"] = experimentTreatmentFromEmbedURL(7706).getAssetUriForEmbed(importDefault(10973));
-        obj["thumbnailBackgroundColor"] = colors.backgroundColor;
-        obj["acceptLabelColor"] = null != tmp10 && null != iter && tmp10.variantId === iter.value ? colors.clearLabelRedColor : colors.acceptLabelGreenColor;
-        obj["acceptLabelBackgroundColor"] = null != tmp10 && null != iter && tmp10.variantId === iter.value ? colors.clearLabelRedBackgroundColor : colors.acceptLabelGreenBackgroundColor;
+        obj.headerText = "EXPERIMENT TREATMENT";
+        obj.titleText = experimentFromEmbedURL;
+        obj.titleColor = colors.titleColor;
+        obj.subtitle = label;
+        obj.subtitleColor = colors.subtitleColor;
+        obj.thumbnailUrl = tmp4(7729).getAssetUriForEmbed(tmp(10997));
+        obj.thumbnailBackgroundColor = colors.backgroundColor;
+        obj.acceptLabelColor = null != tmp12 && null != iter && tmp12.variantId === iter.value ? colors.clearLabelRedColor : colors.acceptLabelGreenColor;
+        obj.acceptLabelBackgroundColor = null != tmp12 && null != iter && tmp12.variantId === iter.value ? colors.clearLabelRedBackgroundColor : colors.acceptLabelGreenBackgroundColor;
         const _HermesInternal4 = HermesInternal;
-        if (null != tmp10 && null != iter && tmp10.variantId === iter.value) {
+        if (null != tmp12 && null != iter && tmp12.variantId === iter.value) {
           let combined = concat(experimentTreatmentFromEmbedURL);
         } else {
           combined = concat(experimentTreatmentFromEmbedURL);
         }
-        obj["acceptLabelText"] = combined;
-        obj["embedCanBeTapped"] = true;
-        obj["type"] = InviteTypes.GUILD;
+        obj.acceptLabelText = combined;
+        obj.embedCanBeTapped = true;
+        obj.type = InviteTypes.GUILD;
         return obj;
       } else {
         obj = {};
         const merged1 = Object.assign(baseColors);
-        obj["headerText"] = "EXPERIMENT";
-        obj["titleText"] = experimentFromEmbedURL;
-        obj["titleColor"] = colors.titleColor;
-        if (null != tmp10) {
+        obj.headerText = "EXPERIMENT";
+        obj.titleText = experimentFromEmbedURL;
+        obj.titleColor = colors.titleColor;
+        if (null != tmp12) {
           const _HermesInternal2 = HermesInternal;
-          let combined1 = "Client Override Applied: Treatment " + tmp10.variantId;
+          let combined1 = "Client Override Applied: Treatment " + tmp12.variantId;
         } else {
           const _HermesInternal = HermesInternal;
           combined1 = "Server Assignment: " + experimentServerAssignmentLabel;
         }
-        obj["subtitle"] = combined1;
-        obj["subtitleColor"] = colors.subtitleColor;
-        obj["thumbnailUrl"] = experimentTreatmentFromEmbedURL(7706).getAssetUriForEmbed(importDefault(10973));
-        obj["thumbnailBackgroundColor"] = colors.backgroundColor;
-        obj["acceptLabelColor"] = colors.acceptLabelGreenColor;
-        obj["acceptLabelBackgroundColor"] = colors.acceptLabelGreenBackgroundColor;
-        obj["acceptLabelText"] = "View Experiment Details";
-        obj["embedCanBeTapped"] = true;
-        obj["type"] = InviteTypes.GUILD;
+        obj.subtitle = combined1;
+        obj.subtitleColor = colors.subtitleColor;
+        obj.thumbnailUrl = tmp4(7729).getAssetUriForEmbed(tmp(10997));
+        ({ backgroundColor: obj13.thumbnailBackgroundColor, acceptLabelGreenColor: obj13.acceptLabelColor, acceptLabelGreenBackgroundColor: obj13.acceptLabelBackgroundColor } = colors);
+        obj.acceptLabelText = "View Experiment Details";
+        obj.embedCanBeTapped = true;
+        obj.type = InviteTypes.GUILD;
         return obj;
       }
-      const obj7 = experimentTreatmentFromEmbedURL(7855);
+      const tmp4Result1 = tmp4(7878);
     }
   }
   obj1 = {};
   const merged2 = Object.assign(baseColors);
-  obj1["headerText"] = "EXPERIMENT";
-  let str29 = "Unknown Experiment";
+  obj1.headerText = "EXPERIMENT";
+  let str8 = "Unknown Experiment";
   if (null != experimentFromEmbedURL) {
-    str29 = experimentFromEmbedURL;
+    str8 = experimentFromEmbedURL;
   }
-  obj1["titleText"] = str29;
-  obj1["titleColor"] = colors.titleColor;
-  obj1["subtitle"] = "Unknown Experiment";
-  obj1["subtitleColor"] = colors.subtitleColor;
-  obj1["bodyText"] = "This client is missing this experiment. You may need to open the surface where the experiment is used first.";
-  obj1["bodyTextColor"] = colors.bodyTextColor;
-  const obj4 = experimentTreatmentFromEmbedURL(10466);
-  if (obj12.isThemeDark(closure_2)) {
-    let tmp42Result = tmp42(10970);
+  obj1.titleText = str8;
+  obj1.titleColor = colors.titleColor;
+  obj1.subtitle = "Unknown Experiment";
+  obj1.subtitleColor = colors.subtitleColor;
+  obj1.bodyText = "This client is missing this experiment. You may need to open the surface where the experiment is used first.";
+  obj1.bodyTextColor = colors.bodyTextColor;
+  const obj4 = experimentTreatmentFromEmbedURL(10490);
+  if (tmp4Result4.isThemeDark(closure_2)) {
+    let tmpResult = tmp(10994);
   } else {
-    tmp42Result = tmp42(10971);
+    tmpResult = tmp(10995);
   }
-  obj1["thumbnailUrl"] = Image.resolveAssetSource(tmp42Result).uri;
-  obj1["thumbnailBackgroundColor"] = colors.thumbnailBackgroundColor;
-  obj1["type"] = InviteTypes.GUILD;
+  obj1.thumbnailUrl = Image.resolveAssetSource(tmpResult).uri;
+  obj1.thumbnailBackgroundColor = colors.thumbnailBackgroundColor;
+  obj1.type = InviteTypes.GUILD;
   return obj1;
 };

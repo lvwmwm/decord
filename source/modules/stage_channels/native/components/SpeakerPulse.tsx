@@ -1,82 +1,81 @@
-// Module ID: 13135
-// Function ID: 101286
+// Module ID: 13158
+// Function ID: 13159
 // Name: SpeakerPulse
-// Dependencies: [31, 27, 4157, 33, 4165, 689, 566, 4026, 4166, 2]
+// Dependencies: [19, 17, 4181, 21, 4189, 712, 589, 4050, 4190, 2]
 // Exports: default
 
-// Module 13135 (SpeakerPulse)
-import result from "result";
+// Module 13158 (SpeakerPulse)
+import noop from "noop";
 import { View } from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
 let closure_6;
-let closure_7;
-let closure_8;
+let error;
+let metroImportAll;
 const require = arg1;
-({ jsx: closure_6, Fragment: closure_7, jsxs: closure_8 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.WHITE };
-_createForOfIteratorHelperLoose.pulse = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.border = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.STATUS_SPEAKING };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-let closure_10 = { code: "function SpeakerPulseTsx1(){const{animatedInnerOpacity}=this.__closure;return{opacity:animatedInnerOpacity.get()};}" };
-let closure_11 = { code: "function SpeakerPulseTsx2(){const{animatedOuterOpacity}=this.__closure;return{opacity:animatedOuterOpacity.get()};}" };
-let obj1 = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.STATUS_SPEAKING };
-let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/stage_channels/native/components/SpeakerPulse.tsx");
+({ jsx: closure_6, Fragment: error, jsxs: metroImportAll } = jsxProd);
+let c9 = 0.16;
+createCacheKey = { pulse: null, border: null };
+createCacheKey = { backgroundColor: require("Themes").colors.WHITE };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { backgroundColor: require("Themes").colors.STATUS_SPEAKING };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let closure_11 = { code: "function SpeakerPulseTsx1(){const{animatedInnerOpacity}=this.__closure;return{opacity:animatedInnerOpacity.get()};}" };
+let closure_12 = { code: "function SpeakerPulseTsx2(){const{animatedOuterOpacity}=this.__closure;return{opacity:animatedOuterOpacity.get()};}" };
+const obj1 = { backgroundColor: require("Themes").colors.STATUS_SPEAKING };
+let result = require("maybeApplyNoTextColorForLightCustomTheme").fileFinishedImporting("modules/stage_channels/native/components/SpeakerPulse.tsx");
 
 export default function SpeakerPulse(style) {
   style = style.style;
-  const tmp = _createForOfIteratorHelperLoose();
+  let stateFromStores;
+  let sharedValue;
+  let sharedValue1;
+  const tmp = createCacheKey();
   let obj = stateFromStores(sharedValue1[6]);
-  const items = [_isNativeReflectConstruct];
-  stateFromStores = obj.useStateFromStores(items, () => !outer1_5.useReducedMotion, []);
-  const sharedValue = stateFromStores(sharedValue1[7]).useSharedValue(0.16);
+  const items = [maybeApplyNoTextColorForLightCustomTheme];
+  stateFromStores = obj.useStateFromStores(items, () => !useReducedMotion.useReducedMotion, []);
+  sharedValue = stateFromStores(sharedValue1[7]).useSharedValue(c9);
   let obj2 = stateFromStores(sharedValue1[7]);
-  sharedValue1 = stateFromStores(sharedValue1[7]).useSharedValue(0.16);
+  sharedValue1 = stateFromStores(sharedValue1[7]).useSharedValue(c9);
   const items1 = [stateFromStores, sharedValue, sharedValue1];
   const effect = React.useEffect(() => {
-    let obj = sharedValue;
     if (stateFromStores) {
       const result = set(0);
       const result1 = sharedValue1.set(0);
-      let obj1 = stateFromStores(sharedValue1[7]);
-      let obj2 = stateFromStores(sharedValue1[7]);
+      const obj2 = stateFromStores(sharedValue1[7]);
+      const obj3 = stateFromStores(sharedValue1[7]);
       const obj4 = stateFromStores(sharedValue1[7]);
-      obj = { duration: 250 };
       const obj5 = stateFromStores(sharedValue1[8]);
-      const withDelayResult = obj4.withDelay(100, stateFromStores(sharedValue1[8]).withTiming(0.16, obj));
-      const obj7 = stateFromStores(sharedValue1[7]);
-      obj = { duration: 500 };
-      const obj8 = stateFromStores(sharedValue1[8]);
-      const withRepeatResult = obj1.withRepeat(obj2.withSequence(withDelayResult, obj7.withDelay(250, stateFromStores(sharedValue1[8]).withTiming(0, obj))), -1, false);
+      const withDelayResult = obj4.withDelay(100, stateFromStores(sharedValue1[8]).withTiming(outer1_9, { duration: 250 }));
+      const obj6 = stateFromStores(sharedValue1[7]);
+      const obj7 = stateFromStores(sharedValue1[8]);
+      const withRepeatResult = obj2.withRepeat(obj3.withSequence(withDelayResult, obj6.withDelay(250, stateFromStores(sharedValue1[8]).withTiming(0, { duration: 500 }))), -1, false);
+      const obj8 = stateFromStores(sharedValue1[7]);
+      const obj9 = stateFromStores(sharedValue1[7]);
       const obj10 = stateFromStores(sharedValue1[7]);
-      const obj11 = stateFromStores(sharedValue1[7]);
-      const obj12 = stateFromStores(sharedValue1[7]);
-      obj1 = { duration: 250 };
-      const obj13 = stateFromStores(sharedValue1[8]);
-      const withDelayResult1 = obj12.withDelay(350, stateFromStores(sharedValue1[8]).withTiming(0.16, obj1));
-      obj2 = { duration: 500 };
-      const obj15 = stateFromStores(sharedValue1[8]);
-      const result2 = obj.set(withRepeatResult);
-      const result3 = sharedValue1.set(obj10.withRepeat(obj11.withSequence(withDelayResult1, stateFromStores(sharedValue1[8]).withTiming(0, obj2)), -1, false));
-      const withRepeatResult1 = obj10.withRepeat(obj11.withSequence(withDelayResult1, stateFromStores(sharedValue1[8]).withTiming(0, obj2)), -1, false);
+      const obj11 = stateFromStores(sharedValue1[8]);
+      const withDelayResult1 = obj10.withDelay(350, stateFromStores(sharedValue1[8]).withTiming(outer1_9, { duration: 250 }));
+      const obj12 = stateFromStores(sharedValue1[8]);
+      const result2 = sharedValue.set(withRepeatResult);
+      const result3 = sharedValue1.set(obj8.withRepeat(obj9.withSequence(withDelayResult1, stateFromStores(sharedValue1[8]).withTiming(0, { duration: 500 })), -1, false));
+      const withRepeatResult1 = obj8.withRepeat(obj9.withSequence(withDelayResult1, stateFromStores(sharedValue1[8]).withTiming(0, { duration: 500 })), -1, false);
     } else {
-      const result4 = set(0.16);
-      const result5 = sharedValue1.set(0.16);
+      const result4 = set(outer1_9);
+      const result5 = sharedValue1.set(outer1_9);
     }
   }, items1);
-  const obj3 = stateFromStores(sharedValue1[7]);
+  let obj3 = stateFromStores(sharedValue1[7]);
   class T {
     constructor() {
-      obj = { opacity: closure_1.get() };
+      obj = { opacity: c1.get() };
       return obj;
     }
   }
   T.__closure = { animatedInnerOpacity: sharedValue };
   T.__workletHash = 202297893401;
-  T.__initData = closure_10;
+  T.__initData = closure_11;
   const animatedStyle = stateFromStores(sharedValue1[7]).useAnimatedStyle(T);
   let obj4 = stateFromStores(sharedValue1[7]);
   const fn = function k() {
@@ -84,8 +83,8 @@ export default function SpeakerPulse(style) {
   };
   fn.__closure = { animatedOuterOpacity: sharedValue1 };
   fn.__workletHash = 13537504931930;
-  fn.__initData = closure_11;
-  obj = {};
+  fn.__initData = closure_12;
+  obj = { children: null };
   const items2 = [tmp.border, style];
   const animatedStyle1 = stateFromStores(sharedValue1[7]).useAnimatedStyle(fn);
   const items3 = [callback(View, { style: items2 }), , ];
@@ -97,6 +96,6 @@ export default function SpeakerPulse(style) {
   const items7 = [{ scale: 2 }];
   items6[3] = { transform: items7 };
   items3[2] = callback(sharedValue(sharedValue1[7]).View, { style: items6 });
-  obj.children = items3;
+  obj[0] = items3;
   return callback2(closure_7, obj);
 };

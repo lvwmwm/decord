@@ -1,68 +1,55 @@
-// Module ID: 9496
-// Function ID: 73936
+// Module ID: 9520
+// Function ID: 9521
 // Name: GuildPill
-// Dependencies: [57, 31, 27, 1838, 4360, 653, 9497, 33, 4165, 689, 5548, 4161, 9498, 624, 1212, 9499, 1557, 5221, 5223, 1921, 4026, 5200, 7611, 5113, 5108, 4133, 2]
+// Dependencies: [32, 19, 17, 1862, 4385, 676, 9521, 21, 4189, 712, 5566, 4185, 9522, 647, 1236, 9523, 1581, 5243, 5245, 1945, 4050, 5222, 7634, 5135, 5130, 4157, 2]
 // Exports: default
 
-// Module 9496 (GuildPill)
+// Module 9520 (GuildPill)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
-import { View } from "get ActivityIndicator";
-import closure_6 from "_createForOfIteratorHelperLoose";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import combined from "combined";
+import { View } from "Background";
+import createGuildRecordFromRust from "createGuildRecordFromRust";
+import updateUserGuildSettingsInternal from "updateUserGuildSettingsInternal";
 import ME from "ME";
 import { FeedbackRating } from "FeedbackRating";
-import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import jsxProd from "PressableCard";
+import createCacheKey from "createCacheKey";
+import createCacheKey from "createCacheKey";
 
-let closure_11;
+let c9;
 let closure_12;
-let closure_8;
-let closure_9;
+let metroImportAll;
+let unpackModuleId;
 const require = arg1;
 function GuildPill(guild) {
   guild = guild.guild;
   const tmp = callback3();
-  let obj = { style: tmp.guildPill };
-  obj = { guild, size: require(5548) /* makeSizeStyle */.GuildIconSizes.SMALL_32, animate: true };
-  const items = [callback(importDefault(5548), obj), ];
-  obj = { style: tmp.guildName, variant: "heading-md/semibold", color: "mobile-text-heading-primary" };
+  let obj = { style: tmp.guildPill, children: null };
+  obj = { guild, size: null, animate: true };
+  obj[1] = require(5566) /* GuildIconSizes */.GuildIconSizes.SMALL_32;
+  const items = [callback(importDefault(5566), obj), ];
+  obj = { style: tmp.guildName, variant: "heading-md/semibold", color: "mobile-text-heading-primary", children: null };
   let name;
-  if (null != guild) {
+  if (guild != null) {
     name = guild.name;
   }
-  obj.children = name;
-  items[1] = callback(require(4161) /* Text */.Text, obj);
-  obj.children = items;
+  obj[3] = name;
+  items[1] = callback(require(4185) /* Text */.Text, obj);
+  obj[1] = items;
   return closure_12(View, obj);
 }
-function isFeedbackComplete(first) {
-  let obj = first;
-  if (null == first) {
-    obj = {};
-  }
-  return obj.rating === FeedbackRating.GOOD || null != obj.reason;
-}
-function isFeedbackGood(first) {
-  let obj = first;
-  if (null == first) {
-    obj = {};
-  }
-  return obj.rating === FeedbackRating.GOOD;
-}
-({ HelpdeskArticles: closure_8, HighlightSettings: closure_9 } = ME);
-({ jsx: closure_11, jsxs: closure_12 } = jsxProd);
-_createForOfIteratorHelperLoose = { contentContainer: { padding: 24, alignItems: "center", justifyContent: "center" }, header: { alignItems: "center", paddingBottom: 24 }, headerTitle: { marginBottom: 4 }, centerText: { textAlign: "center" }, feedback: { marginTop: 16, alignItems: "stretch", alignSelf: "stretch", paddingBottom: 16 }, thanks: { height: 40, textAlign: "center", textAlignVertical: "center" } };
-_createForOfIteratorHelperLoose = { flex: 1, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SURFACE_HIGH, marginVertical: 8, padding: 0 };
-_createForOfIteratorHelperLoose.settings = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-let obj1 = {};
-let obj2 = { flexDirection: "row", padding: 8, marginBottom: 16, backgroundColor: require("_createForOfIteratorHelperLoose").colors.GUILD_NOTIFICATIONS_BOTTOM_SHEET_PILL_BACKGROUND, alignItems: "center", justifyContent: "center", borderRadius: require("_createForOfIteratorHelperLoose").radii.round };
-const merged = Object.assign(require("_createForOfIteratorHelperLoose").shadows.SHADOW_LOW);
-obj1.guildPill = obj2;
-obj1.guildName = { paddingHorizontal: 8 };
-let closure_14 = _createForOfIteratorHelperLoose.createStyles(obj1);
+({ HelpdeskArticles: metroImportAll, HighlightSettings: c9 } = ME);
+({ jsx: unpackModuleId, jsxs: closure_12 } = jsxProd);
+createCacheKey = { contentContainer: { padding: 24, alignItems: "center", justifyContent: "center" }, header: { alignItems: "center", paddingBottom: 24 }, headerTitle: { marginBottom: 4 }, centerText: { textAlign: "center" }, feedback: { marginTop: 16, alignItems: "stretch", alignSelf: "stretch", paddingBottom: 16 }, thanks: { height: 40, textAlign: "center", textAlignVertical: "center" }, settings: null };
+createCacheKey = { flex: 1, backgroundColor: require("Themes").colors.BACKGROUND_SURFACE_HIGH, marginVertical: 8, padding: 0 };
+createCacheKey[6] = createCacheKey;
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let obj1 = { guildPill: null, guildName: null };
+const merged = Object.assign(require("Themes").shadows.SHADOW_LOW);
+obj1[0] = { flexDirection: "row", padding: 8, marginBottom: 16, backgroundColor: require("Themes").colors.GUILD_NOTIFICATIONS_BOTTOM_SHEET_PILL_BACKGROUND, alignItems: "center", justifyContent: "center", borderRadius: require("Themes").radii.round };
+obj1[1] = { paddingHorizontal: 8 };
+let closure_14 = createCacheKey.createStyles(obj1);
+let obj2 = { flexDirection: "row", padding: 8, marginBottom: 16, backgroundColor: require("Themes").colors.GUILD_NOTIFICATIONS_BOTTOM_SHEET_PILL_BACKGROUND, alignItems: "center", justifyContent: "center", borderRadius: require("Themes").radii.round };
 let result = require("get ActivityIndicator").fileFinishedImporting("modules/notifications/native/GuildHighlightsNotificationsActionSheet.tsx");
 
 export default function SummaryFeedbackActionSheet(guildId) {
@@ -70,47 +57,58 @@ export default function SummaryFeedbackActionSheet(guildId) {
   let notifyHighlights;
   guildId = guildId.guildId;
   const feedbackSettings = guildId.feedbackSettings;
-  let tmp = _createForOfIteratorHelperLoose();
-  const ref = React.useRef(null);
+  let ref;
+  let first;
+  let React;
+  let first1;
+  let createGuildRecordFromRust;
+  let updateUserGuildSettingsInternal;
+  let callback;
+  let tmp = createCacheKey();
+  ref = React.useRef(null);
   const tmp3 = first(React.useState(undefined), 2);
   first = tmp3[0];
   React = tmp3[1];
-  const tmp5 = first(React.useState(false), 2);
-  const first1 = tmp5[0];
-  let closure_6 = tmp5[1];
-  const tmp7 = first(React.useState(false), 2);
-  let _isNativeReflectConstruct = tmp7[1];
+  let tmp4 = first(React.useState(false), 2);
+  first1 = tmp4[0];
+  createGuildRecordFromRust = tmp4[1];
+  const tmp6 = first(React.useState(false), 2);
+  updateUserGuildSettingsInternal = tmp6[1];
   const items = [first1, feedbackSettings];
-  const callback = React.useCallback((rating) => {
+  callback = React.useCallback((rating) => {
     let tmp = first1;
     if (!first1) {
       rating = undefined;
-      if (null != rating) {
+      if (rating != null) {
         rating = rating.rating;
       }
       tmp = null == rating;
     }
     if (!tmp) {
-      let tmp6 = null == feedbackSettings;
-      if (!tmp6) {
-        tmp6 = null == feedbackSettings.onFeedbackCompleted;
-      }
-      if (!tmp6) {
-        feedbackSettings.onFeedbackCompleted(rating);
+      if (feedbackSettings != null) {
+        const onFeedbackCompleted = tmp4.onFeedbackCompleted;
+        if (onFeedbackCompleted != null) {
+          onFeedbackCompleted(rating);
+        }
       }
       guildId(ref[12]).handleSurveyCleanup();
       guild(true);
       const obj = guildId(ref[12]);
+      tmp4 = feedbackSettings;
     }
   }, items);
   const items1 = [first, callback];
   const effect = React.useEffect(() => () => {
-    outer1_8(outer1_3);
+    callback(_slicedToArray);
   }, items1);
   const items2 = [callback];
   const callback1 = React.useCallback((arg0) => {
     callback(arg0);
-    if (outer1_16(arg0)) {
+    let obj = arg0;
+    if (arg0 == null) {
+      obj = {};
+    }
+    if (tmp2) {
       callback(arg0);
       lib(false);
     } else {
@@ -120,142 +118,163 @@ export default function SummaryFeedbackActionSheet(guildId) {
   }, items2);
   const callback2 = React.useCallback(() => {
     const current = ref.current;
-    if (null != current) {
+    if (current != null) {
       current.expandActionSheet();
     }
     lib(false);
   }, []);
-  let obj = guildId(ref[13]);
-  const items3 = [_isNativeReflectConstruct, closure_6];
+  let obj1 = guildId(ref[13]);
+  const items3 = [updateUserGuildSettingsInternal, createGuildRecordFromRust];
   const items4 = [guildId];
-  const stateFromStoresObject = obj.useStateFromStoresObject(items3, () => ({ guild: guild.getGuild(guildId), muted: lib.isMuted(guildId), notifyHighlights: lib.getNotifyHighlights(guildId) }), items4);
+  const stateFromStoresObject = obj1.useStateFromStoresObject(items3, () => ({ guild: guild.getGuild(guildId), muted: lib.isMuted(guildId), notifyHighlights: lib.getNotifyHighlights(guildId) }), items4);
   let muted = stateFromStoresObject.muted;
   let reasons;
   ({ guild, notifyHighlights } = stateFromStoresObject);
-  if (null != feedbackSettings) {
+  if (feedbackSettings != null) {
     reasons = feedbackSettings.reasons;
   }
   if (null == reasons) {
-    let num6 = 0;
-    if (tmp14) {
-      let num7 = 148;
+    let num = 0;
+    if (tmp15) {
+      let num2 = 148;
       if (first1) {
-        num7 = 64;
+        num2 = 64;
       }
-      num6 = num7;
+      num = num2;
     }
-    const sum = 316 + num6 + feedbackSettings(ref[16])().bottom;
-    let tmp24 = !tmp14;
-    if (tmp14) {
-      tmp24 = isFeedbackComplete(first);
+    const sum = 316 + num + feedbackSettings(tmp12[16])().bottom;
+    let tmp23 = !tmp15;
+    if (tmp15) {
+      let obj = first;
+      if (first == null) {
+        obj = {};
+      }
+      tmp23 = obj.rating === FeedbackRating.GOOD || null != obj.reason;
+      const tmp25 = obj.rating === FeedbackRating.GOOD || null != obj.reason;
     }
-    if (!tmp24) {
+    if (!tmp23) {
       let rating;
-      if (null != first) {
+      if (first != null) {
         rating = first.rating;
       }
-      tmp24 = null == rating;
+      tmp23 = null == rating;
     }
-    obj = { scrollable: true, ref };
-    let tmp30;
-    if (tmp24) {
-      tmp30 = sum;
+    obj = { scrollable: true, ref: null, contentHeight: null, startHeight: null, children: null };
+    obj[1] = ref;
+    let tmp28;
+    if (tmp23) {
+      tmp28 = sum;
     }
-    obj.contentHeight = tmp30;
-    obj.startHeight = sum;
-    obj = { contentContainerStyle: tmp.contentContainer };
-    let tmp34;
-    if (tmp7[0]) {
-      tmp34 = callback2;
+    obj[2] = tmp28;
+    obj[3] = sum;
+    obj1 = { contentContainerStyle: null, onLayout: null, children: null };
+    obj1[0] = tmp.contentContainer;
+    let tmp29;
+    if (tmp6[0]) {
+      tmp29 = callback2;
     }
-    obj.onLayout = tmp34;
-    const obj1 = {};
-    const obj2 = { style: tmp.header };
-    const obj3 = { guild };
-    const items5 = [callback(GuildPill, obj3), , ];
-    const obj4 = { style: tmp.headerTitle, variant: "heading-lg/semibold", color: "mobile-text-heading-primary" };
-    const intl4 = guildId(ref[14]).intl;
-    obj4.children = intl4.string(guildId(ref[14]).t.o8Bypv);
-    items5[1] = callback(guildId(ref[11]).Text, obj4);
-    const obj5 = { style: tmp.centerText, variant: "text-md/medium", color: "text-default" };
-    const intl5 = guildId(ref[14]).intl;
-    const obj6 = {};
-    let obj11 = feedbackSettings(ref[19]);
-    obj6.helpUrl = obj11.getArticleURL(callback.HIGHLIGHTS_NOTIFICATIONS);
-    obj5.children = intl5.format(guildId(ref[14]).t.enfuur, obj6);
-    items5[2] = callback(guildId(ref[11]).Text, obj5);
-    obj2.children = items5;
+    obj1[1] = tmp29;
+    const obj2 = { style: null, children: null };
+    obj2[0] = tmp.header;
+    const obj3 = { guild: null };
+    obj3[0] = guild;
+    const items5 = [closure_11(GuildPill, obj3), , ];
+    const obj4 = { style: null, variant: "heading-lg/semibold", color: "mobile-text-heading-primary", children: null };
+    obj4[0] = tmp.headerTitle;
+    const intl4 = tmp11(tmp12[14]).intl;
+    obj4[3] = intl4.string(tmp11(tmp12[14]).t.o8Bypv);
+    items5[1] = closure_11(tmp11(tmp12[11]).Text, obj4);
+    const obj5 = { style: null, variant: "text-md/medium", color: "text-default", children: null };
+    obj5[0] = tmp.centerText;
+    const intl5 = tmp11(tmp12[14]).intl;
+    const obj6 = { helpUrl: null };
+    obj6[0] = feedbackSettings(tmp12[19]).getArticleURL(callback.HIGHLIGHTS_NOTIFICATIONS);
+    obj5[3] = intl5.format(tmp11(tmp12[14]).t.enfuur, obj6);
+    items5[2] = closure_11(tmp11(tmp12[11]).Text, obj5);
+    obj2[1] = items5;
     const items6 = [callback2(first1, obj2), , , ];
-    let tmp45 = null != null;
-    if (tmp45) {
-      const obj7 = { style: tmp.feedback, children: null };
-      tmp45 = callback(feedbackSettings(ref[20]).View, obj7);
+    let tmp27Result = null != null;
+    if (tmp27Result) {
+      const obj7 = { style: null, children: null };
+      obj7[0] = tmp.feedback;
+      obj7[1] = null;
+      tmp27Result = tmp27(tmp21(tmp12[20]).View, obj7);
     }
-    items6[1] = tmp45;
-    const tmp50 = isFeedbackGood(first);
-    let tmp52Result = !tmp50;
-    if (!tmp50) {
-      const obj8 = { style: tmp.settings, shadow: "low", border: "subtle" };
-      const obj9 = { disabled: muted };
-      const intl6 = guildId(ref[14]).intl;
-      obj9.label = intl6.string(guildId(ref[14]).t.MVi7LQ);
+    items6[1] = tmp27Result;
+    if (first == null) {
+      first = {};
+    }
+    tmp27Result = !tmp36;
+    if (first.rating !== FeedbackRating.GOOD) {
+      const obj8 = { style: null, shadow: "low", border: "subtle", children: null };
+      obj8[0] = tmp.settings;
+      const obj9 = { disabled: null, label: null, value: null, onValueChange: null };
+      obj9[0] = muted;
+      const intl6 = tmp11(tmp12[14]).intl;
+      obj9[1] = intl6.string(tmp11(tmp12[14]).t.MVi7LQ);
       if (!muted) {
         muted = notifyHighlights === constants.DISABLED;
       }
-      obj9.value = muted;
-      obj9.onValueChange = function onValueChange(arg0) {
+      obj9[2] = muted;
+      obj9[3] = function onValueChange(arg0) {
         let obj = feedbackSettings(ref[23]);
-        obj = { notify_highlights: arg0 ? tmp2.DISABLED : tmp2.ENABLED };
+        obj = { notify_highlights: arg0 ? tmp3.DISABLED : tmp3.ENABLED };
         const NotificationLabel = guildId(ref[24]).NotificationLabel;
         const result = obj.updateGuildNotificationSettings(guildId, obj, NotificationLabel.highlights(!arg0));
       };
-      obj8.children = callback(guildId(ref[22]).FormSwitchRow, obj9);
-      tmp52Result = callback(guildId(ref[21]).Card, obj8);
-      const tmp52 = callback;
-      const tmp55 = callback;
+      obj8[3] = tmp27(tmp11(tmp12[22]).FormSwitchRow, obj9);
+      tmp27Result = tmp27(tmp11(tmp12[21]).Card, obj8);
     }
-    items6[2] = tmp52Result;
-    const obj10 = { style: tmp.centerText, variant: "text-sm/medium", color: "text-default" };
-    const intl7 = guildId(ref[14]).intl;
-    obj11 = {
-      notifSettingsHook() {
-          feedbackSettings(ref[25]).hideActionSheet();
-          const obj = feedbackSettings(ref[25]);
-          feedbackSettings(ref[23]).open(guildId);
-        }
+    const obj10 = { children: null };
+    items6[2] = tmp27Result;
+    const obj11 = { style: null, variant: "text-sm/medium", color: "text-default", children: null };
+    obj11[0] = tmp.centerText;
+    const intl7 = tmp11(tmp12[14]).intl;
+    const obj12 = { notifSettingsHook: null };
+    obj12[0] = function notifSettingsHook() {
+      feedbackSettings(ref[25]).hideActionSheet();
+      const obj = feedbackSettings(ref[25]);
+      feedbackSettings(ref[23]).open(guildId);
     };
-    obj10.children = intl7.format(guildId(ref[14]).t.F9rfLX, obj11);
-    items6[3] = callback(guildId(ref[11]).Text, obj10);
-    obj1.children = items6;
-    obj.children = callback2(first1, obj1);
-    obj.children = callback(guildId(ref[18]).BottomSheetScrollView, obj);
-    return callback(guildId(ref[17]).BottomSheet, obj);
-  } else if (isFeedbackComplete(first)) {
-    const obj12 = { style: null, variant: "heading-md/semibold", color: "text-brand" };
-    const items7 = [, ];
-    ({ centerText: arr7[0], thanks: arr7[1] } = tmp);
-    obj12.style = items7;
-    const intl3 = tmp17(tmp18[14]).intl;
-    obj12.children = intl3.string(tmp17(tmp18[14]).t.kZbFIO);
-    let tmp16Result = tmp16(tmp17(tmp18[11]).Text, obj12);
+    obj11[3] = intl7.format(tmp11(tmp12[14]).t.F9rfLX, obj12);
+    items6[3] = closure_11(tmp11(tmp12[11]).Text, obj11);
+    obj10[0] = items6;
+    obj1[2] = callback2(first1, obj10);
+    obj[4] = closure_11(tmp11(tmp12[18]).BottomSheetScrollView, obj1);
+    return closure_11(tmp11(tmp12[17]).BottomSheet, obj);
   } else {
-    const obj13 = {};
-    const intl = tmp17(tmp18[14]).intl;
-    obj13.ratingsBodyLabel = intl.string(tmp17(tmp18[14]).t.Yzl7Or);
-    const intl2 = tmp17(tmp18[14]).intl;
-    obj13.reasonsHeaderLabel = intl2.string(tmp17(tmp18[14]).t.g1q5fr);
-    let reasons1;
-    if (null != feedbackSettings) {
-      reasons1 = feedbackSettings.reasons;
+    let obj13 = first;
+    if (first == null) {
+      obj13 = {};
     }
-    if (null == reasons1) {
-      reasons1 = [];
-    }
-    obj13.reasons = reasons1;
-    obj13.trackOpen = null != feedbackSettings ? feedbackSettings.onFeedbackShown : (() => {
+    if (tmp17) {
+      const obj14 = { style: null, variant: "heading-md/semibold", color: "text-brand", children: null };
+      const items7 = [, ];
+      ({ centerText: arr7[0], thanks: arr7[1] } = tmp);
+      obj14[0] = items7;
+      const intl3 = tmp11(tmp12[14]).intl;
+      obj14[3] = intl3.string(tmp11(tmp12[14]).t.kZbFIO);
+      let tmp18Result = tmp18(tmp11(tmp12[11]).Text, obj14);
+    } else {
+      const obj15 = { ratingsBodyLabel: null, reasonsHeaderLabel: null, reasons: null, trackOpen: null, onFeedbackChanged: null };
+      const intl = tmp11(tmp12[14]).intl;
+      obj15[0] = intl.string(tmp11(tmp12[14]).t.Yzl7Or);
+      const intl2 = tmp11(tmp12[14]).intl;
+      obj15[1] = intl2.string(tmp11(tmp12[14]).t.g1q5fr);
+      let reasons1;
+      if (feedbackSettings != null) {
+        reasons1 = feedbackSettings.reasons;
+      }
+      if (reasons1 == null) {
+        reasons1 = [];
+      }
+      obj15[2] = reasons1;
+      obj15[3] = null != feedbackSettings ? feedbackSettings.onFeedbackShown : (() => {
 
-    });
-    obj13.onFeedbackChanged = callback1;
-    tmp16Result = tmp16(tmp17(tmp18[15]).FeedbackForm, obj13);
+      });
+      obj15[4] = callback1;
+      tmp18Result = tmp18(tmp11(tmp12[15]).FeedbackForm, obj15);
+    }
+    tmp17 = obj13.rating === FeedbackRating.GOOD || null != obj13.reason;
   }
 };

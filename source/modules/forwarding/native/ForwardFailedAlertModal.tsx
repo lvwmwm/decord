@@ -1,11 +1,11 @@
-// Module ID: 9906
-// Function ID: 76579
+// Module ID: 9928
+// Function ID: 9929
 // Name: ForwardFailedAlertModal
-// Dependencies: [31, 33, 9870, 9907, 1212, 2]
+// Dependencies: [19, 21, 9892, 9929, 1236, 2]
 // Exports: default
 
-// Module 9906 (ForwardFailedAlertModal)
-import result from "result";
+// Module 9928 (ForwardFailedAlertModal)
+import noop from "noop";
 import { jsx } from "jsxProd";
 
 const require = arg1;
@@ -21,13 +21,13 @@ export default function ForwardFailedAlertModal(message) {
     obj = { message, source: "retry-modal", initialSelectedDestinations: failedDestinations, forwardOptions };
     obj.openForwardModal(obj);
   }, items);
-  let obj = {};
+  let obj = { title: null, content: null, failedDestinations: null, onRetry: null };
   const intl = message(forwardOptions[4]).intl;
-  obj.title = intl.string(message(forwardOptions[4]).t["/OPIaM"]);
+  obj[0] = intl.string(message(forwardOptions[4]).t["/OPIaM"]);
   const intl2 = message(forwardOptions[4]).intl;
   obj = { count: failedDestinations.length };
-  obj.content = intl2.formatToPlainString(message(forwardOptions[4]).t.cn9vFb, obj);
-  obj.failedDestinations = failedDestinations;
-  obj.onRetry = callback;
+  obj[1] = intl2.formatToPlainString(message(forwardOptions[4]).t.cn9vFb, obj);
+  obj[2] = failedDestinations;
+  obj[3] = callback;
   return jsx(failedDestinations(forwardOptions[3]), { count: failedDestinations.length });
 };

@@ -1,41 +1,41 @@
-// Module ID: 11514
-// Function ID: 89495
+// Module ID: 11538
+// Function ID: 11539
 // Name: openAcceptMessageRequestConfirmModal
-// Dependencies: [11511, 653, 675, 4506, 1212, 4596, 4133, 11515, 1935, 2]
+// Dependencies: [11535, 676, 698, 4529, 1236, 4618, 4157, 11539, 1959, 2]
 // Exports: onMarkAsNotSpamConfirmationModal, openAcceptMessageRequestConfirmModal
 
-// Module 11514 (openAcceptMessageRequestConfirmModal)
+// Module 11538 (openAcceptMessageRequestConfirmModal)
 import { MESSAGE_REQUEST_ACCEPT_CONFIRMATION_MODAL as closure_3 } from "MESSAGE_REQUEST_ACCEPT_CONFIRMATION_MODAL";
 import { AnalyticEvents } from "ME";
 
-const result = require("expandLocation").fileFinishedImporting("modules/message_request/MessageRequestModalActionCreators.native.tsx");
+const result = require("expandEventProperties").fileFinishedImporting("modules/message_request/MessageRequestModalActionCreators.native.tsx");
 
 export const openAcceptMessageRequestConfirmModal = function openAcceptMessageRequestConfirmModal(arg0) {
   let channelId;
   let onCancel;
   let onConfirm;
   ({ channelId, onConfirm, onCancel } = arg0);
-  let obj = importDefault(675);
+  let obj = importDefault(698);
   obj = { type: closure_3, channel_id: channelId };
   obj.track(AnalyticEvents.OPEN_MODAL, obj);
-  obj = {};
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj.title = intl.string(require(1212) /* getSystemLocale */.t["66tnno"]);
-  const intl2 = require(1212) /* getSystemLocale */.intl;
-  obj.body = intl2.string(require(1212) /* getSystemLocale */.t["c/k4SW"]);
-  const intl3 = require(1212) /* getSystemLocale */.intl;
-  obj.cancelText = intl3.string(require(1212) /* getSystemLocale */.t["ETE/oC"]);
-  const intl4 = require(1212) /* getSystemLocale */.intl;
-  obj.confirmText = intl4.string(require(1212) /* getSystemLocale */.t["cY+Oob"]);
-  obj.onConfirm = onConfirm;
-  obj.onCancel = onCancel;
-  obj.confirmColor = importDefault(4596).Colors.BRAND;
-  importDefault(4506).show(obj);
+  obj = { title: null, body: null, cancelText: null, confirmText: null, onConfirm: null, onCancel: null, confirmColor: null };
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj[0] = intl.string(require(1236) /* getSystemLocale */.t["66tnno"]);
+  const intl2 = require(1236) /* getSystemLocale */.intl;
+  obj[1] = intl2.string(require(1236) /* getSystemLocale */.t["c/k4SW"]);
+  const intl3 = require(1236) /* getSystemLocale */.intl;
+  obj[2] = intl3.string(require(1236) /* getSystemLocale */.t["ETE/oC"]);
+  const intl4 = require(1236) /* getSystemLocale */.intl;
+  obj[3] = intl4.string(require(1236) /* getSystemLocale */.t["cY+Oob"]);
+  obj[4] = onConfirm;
+  obj[5] = onCancel;
+  obj[6] = importDefault(4618).Colors.BRAND;
+  importDefault(4529).show(obj);
 };
 export const onMarkAsNotSpamConfirmationModal = function onMarkAsNotSpamConfirmationModal(arg0) {
   let channel;
   let onCancel;
   let onConfirm;
   ({ onConfirm, onCancel, channel } = arg0);
-  importDefault(4133).openLazy(require(1935) /* maybeLoadBundle */(11515, dependencyMap.paths), "SpamMessageHamActionSheet", { channel, onConfirm, onCancel });
+  importDefault(4157).openLazy(require(1959) /* asyncRequireImpl */(11539, dependencyMap.paths), "SpamMessageHamActionSheet", { channel, onConfirm, onCancel });
 };

@@ -1,16 +1,16 @@
-// Module ID: 11096
-// Function ID: 86096
+// Module ID: 11120
+// Function ID: 11121
 // Name: ModalFooter
-// Dependencies: [31, 27, 33, 4165, 2]
+// Dependencies: [19, 17, 21, 4189, 2]
 // Exports: ModalFooter
 
-// Module 11096 (ModalFooter)
-import "result";
+// Module 11120 (ModalFooter)
+import "noop";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_2 = _createForOfIteratorHelperLoose.createStyles({ footer: { flexDirection: "column", paddingVertical: 16, paddingHorizontal: 24 } });
+let closure_2 = createCacheKey.createStyles({ footer: { flexDirection: "column", paddingVertical: 16, paddingHorizontal: 24 } });
 const result = require("jsxProd").fileFinishedImporting("design/components/Modal/native/ModalFooter.native.tsx");
 
 export const ModalFooter = function ModalFooter(children) {

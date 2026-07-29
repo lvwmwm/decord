@@ -1,98 +1,19 @@
-// Module ID: 10870
-// Function ID: 84175
-// Name: _createForOfIteratorHelperLoose
-// Dependencies: [57, 31, 4202, 4210, 653, 6003, 7702, 1212, 10871, 5648, 5644, 3137, 7865, 6551, 4154, 6667, 478, 566, 1327, 5503, 2]
+// Module ID: 10894
+// Function ID: 10895
+// Name: createSocialLayerStorefrontProductDetailsEmbed
+// Dependencies: [32, 19, 4226, 4234, 676, 6021, 7725, 1236, 10895, 5666, 5662, 3161, 7888, 6572, 4178, 6688, 501, 589, 1351, 5521, 2]
 // Exports: createSocialLayerStorefrontProductDetailsEmbed, useFetchSocialLayerStorefrontProductDetailsEmbedData
 
-// Module 10870 (_createForOfIteratorHelperLoose)
+// Module 10894 (createSocialLayerStorefrontProductDetailsEmbed)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_6 from "_isNativeReflectConstruct";
+import useGetOrFetchApplications from "useGetOrFetchApplications";
+import addApplication from "addApplication";
+import addSku from "addSku";
 import { PaymentGateways } from "ME";
 import { InviteTypes } from "InviteSendStates";
 
 const require = arg1;
-function _createForOfIteratorHelperLoose(iterable) {
-  let closure_0 = iterable;
-  iterable = "undefined" !== typeof Symbol;
-  if (iterable) {
-    const _Symbol = Symbol;
-    iterable = iterable[Symbol.iterator];
-  }
-  if (!iterable) {
-    iterable = iterable[Symbol.iterator];
-  }
-  if (iterable) {
-    const iter = iterable.call(iterable);
-    const next = iter.next;
-    return next.bind(iter);
-  } else {
-    const _Array = Array;
-    let tmp = iterable;
-    if (!Array.isArray(iterable)) {
-      let tmp2;
-      if (iterable) {
-        if ("string" === typeof iterable) {
-          tmp2 = _arrayLikeToArray(iterable, undefined);
-        } else {
-          const toString = {}.toString;
-          const substr = toString.call(iterable).slice(8, -1);
-          let name = substr;
-          if (tmp3) {
-            name = iterable.constructor.name;
-          }
-          if ("Map" !== name) {
-            if ("Set" !== name) {
-              if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(iterable, undefined);
-              } else {
-                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
-              }
-            }
-            tmp2 = arr;
-          }
-          const _Array2 = Array;
-          arr = Array.from(iterable);
-          const callResult = toString.call(iterable);
-          tmp3 = "Object" === substr && iterable.constructor;
-        }
-      }
-      tmp = tmp2;
-      if (!tmp2) {
-        const _TypeError = TypeError;
-        const typeError = new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
-        throw typeError;
-      }
-    }
-    if (tmp) {
-      closure_0 = tmp;
-    }
-    let c1 = 0;
-    return () => {
-      if (closure_1 >= length.length) {
-        let obj = { done: true };
-      } else {
-        obj = { done: false };
-        closure_1 = tmp3 + 1;
-        obj.value = length[+closure_1];
-      }
-      return obj;
-    };
-  }
-}
-function _arrayLikeToArray(arg0, arg1) {
-  let length;
-  if (tmp) {
-    length = arg0.length;
-  }
-  const ArrayResult = Array(length);
-  for (let num = 0; num < length; num = num + 1) {
-    ArrayResult[num] = arg0[num];
-  }
-  return ArrayResult;
-}
-let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/slayer_storefront/native/createSocialLayerStorefrontProductDetailsEmbed.tsx");
+let result = require("addApplication").fileFinishedImporting("modules/slayer_storefront/native/createSocialLayerStorefrontProductDetailsEmbed.tsx");
 
 export const createSocialLayerStorefrontProductDetailsEmbed = function createSocialLayerStorefrontProductDetailsEmbed(theme) {
   let baseColors;
@@ -100,30 +21,28 @@ export const createSocialLayerStorefrontProductDetailsEmbed = function createSoc
   let guildOrApplication;
   let skuId;
   ({ skuId, guildOrApplication } = theme);
-  ({ colors, baseColors } = importDefault(7702)(theme.theme));
-  const value = closure_6.get(skuId);
+  ({ colors, baseColors } = importDefault(7725)(theme.theme));
+  let obj = addSku;
+  const value = addSku.get(skuId);
   let applicationId;
-  if (null != value) {
+  if (value != null) {
     applicationId = value.applicationId;
   }
-  const application = _isNativeReflectConstruct.getApplication(applicationId);
-  const isFetchingResult = closure_6.isFetching(skuId);
+  application = application.getApplication(applicationId);
+  const isFetchingResult = obj.isFetching(skuId);
   let result = null != applicationId;
-  const tmp = importDefault(7702)(theme.theme);
+  const tmp3 = importDefault(7725)(theme.theme);
   if (result) {
-    result = _isNativeReflectConstruct.isFetchingApplication(applicationId);
+    result = obj2.isFetchingApplication(applicationId);
   }
-  let result1 = null != applicationId;
-  if (result1) {
-    result1 = _isNativeReflectConstruct.didFetchingApplicationFail(applicationId);
-  }
+  const didFetchingSkuFailResult = obj.didFetchingSkuFail(skuId);
   let name;
-  if (null != application) {
+  if (application != null) {
     name = application.name;
   }
-  if (null == name) {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    let str = intl.string(require(1212) /* getSystemLocale */.t.vyaWs7);
+  if (name == null) {
+    const intl = require(1236) /* getSystemLocale */.intl;
+    let str = intl.string(require(1236) /* getSystemLocale */.t.vyaWs7);
     name = str.toUpperCase();
   }
   if (!isFetchingResult) {
@@ -131,50 +50,46 @@ export const createSocialLayerStorefrontProductDetailsEmbed = function createSoc
       return null;
     } else {
       if (null != application) {
-        if (importDefault(10871)(application)) {
+        if (tmp(10895)(application)) {
           if ("guild" !== guildOrApplication.type) {
-            const result2 = require(5648) /* transformStorefrontSKUPricesServer */.isSlayerSkuAvailableOnThisPlatform(value);
-            const obj2 = require(5648) /* transformStorefrontSKUPricesServer */;
-            const str4 = require(5644) /* _createForOfIteratorHelperLoose */.getCardImageURL(value);
+            const result1 = require(5666) /* useSKUPrice */.isSlayerSkuAvailableOnThisPlatform(value);
+            const obj4 = require(5666) /* useSKUPrice */;
+            const str4 = require(5662) /* getPrice */.getCardImageURL(value);
             str = undefined;
-            if (null != str4) {
+            if (str4 != null) {
               str = str4.toString();
             }
-            if (null == str) {
+            if (str == null) {
               str = application.getIconURL(64);
             }
-            let tmp17;
-            if (null != str) {
-              tmp17 = str;
-            }
-            let obj = {};
+            obj = {};
             const merged = Object.assign(baseColors);
-            obj["headerText"] = name;
-            obj["headerColor"] = colors.headerColor;
-            obj["titleText"] = value.name;
-            obj["titleColor"] = colors.titleColor;
-            const intl2 = require(1212) /* getSystemLocale */.intl;
-            obj["subtitle"] = intl2.string(require(1212) /* getSystemLocale */.t.V91tvy);
-            obj["subtitleColor"] = colors.subtitleColor;
-            obj["thumbnailUrl"] = tmp17;
-            obj["thumbnailBackgroundColor"] = colors.thumbnailBackgroundColor;
-            const intl3 = require(1212) /* getSystemLocale */.intl;
+            obj.headerText = name;
+            obj.headerColor = colors.headerColor;
+            obj.titleText = value.name;
+            obj.titleColor = colors.titleColor;
+            const intl2 = tmp12(1236).intl;
+            obj.subtitle = intl2.string(require(1236) /* getSystemLocale */.t.V91tvy);
+            obj.subtitleColor = colors.subtitleColor;
+            obj.thumbnailUrl = str;
+            obj.thumbnailBackgroundColor = colors.thumbnailBackgroundColor;
+            const intl3 = tmp12(1236).intl;
             const string = intl3.string;
-            if (result2) {
-              let stringResult = string(require(1212) /* getSystemLocale */.t.boqtTA);
+            if (result1) {
+              let stringResult = string(tmp12(1236).t.boqtTA);
             } else {
-              stringResult = string(importDefault(3137).BKf0MM);
+              stringResult = string(tmp(3161).BKf0MM);
             }
-            obj["acceptLabelText"] = stringResult;
+            obj.acceptLabelText = stringResult;
             let prop;
-            if (result2) {
+            if (result1) {
               prop = colors.acceptLabelGreenColor;
             }
-            obj["acceptLabelColor"] = prop;
-            obj["acceptLabelBackgroundColor"] = result2 ? colors.acceptLabelGreenBackgroundColor : colors.acceptBlurpleLabelBackgroundColor;
-            obj["embedCanBeTapped"] = true;
-            obj["canBeAccepted"] = true;
-            obj["type"] = InviteTypes.GUILD;
+            obj.acceptLabelColor = prop;
+            obj.acceptLabelBackgroundColor = result1 ? colors.acceptLabelGreenBackgroundColor : colors.acceptBlurpleLabelBackgroundColor;
+            obj.embedCanBeTapped = true;
+            obj.canBeAccepted = true;
+            obj.type = InviteTypes.GUILD;
             return obj;
           }
         }
@@ -184,54 +99,52 @@ export const createSocialLayerStorefrontProductDetailsEmbed = function createSoc
   }
   obj = {};
   const merged1 = Object.assign(baseColors);
-  obj["headerText"] = name;
-  obj["resolvingGradientEnd"] = colors.resolvingGradientEnd;
-  obj["resolvingGradientStart"] = colors.resolvingGradientStart;
-  obj["type"] = InviteTypes.GUILD;
+  obj.headerText = name;
+  ({ resolvingGradientEnd: obj7.resolvingGradientEnd, resolvingGradientStart: obj7.resolvingGradientStart } = colors);
+  obj.type = InviteTypes.GUILD;
   return obj;
 };
 export const useFetchSocialLayerStorefrontProductDetailsEmbedData = function useFetchSocialLayerStorefrontProductDetailsEmbedData(stateFromStores) {
   const _require = stateFromStores;
   const isEligibleForSocialLayerStorefrontMobilePurchasing = _require(country[12]).useIsEligibleForSocialLayerStorefrontMobilePurchasing({ location: "use_fetch_social_layer_storefront_product_details_embed_data" });
   let obj = _require(country[12]);
+  const tmp = _require;
+  let tmp4 = isEligibleForSocialLayerStorefrontMobilePurchasing;
   const storeFront = isEligibleForSocialLayerStorefrontMobilePurchasing(country[13]).useNativeIAPPayments().storeFront;
   country = undefined;
-  if (null != storeFront) {
+  if (storeFront != null) {
     country = storeFront.country;
   }
   let items = [isEligibleForSocialLayerStorefrontMobilePurchasing, stateFromStores];
-  let tmp3 = first(React.useMemo(() => {
+  let tmp6 = first(React.useMemo(() => {
     let items = [];
     const items1 = [, ];
     if (isEligibleForSocialLayerStorefrontMobilePurchasing) {
       items1[0] = items;
       items1[1] = [];
-      let reduced = stateFromStores.reduce((arg0, codedLinks) => {
+      let reduced = stateFromStores.reduce((arg0, arg1) => {
         let arr;
         let arr2;
         let code;
-        let iter2;
         let type;
         [arr, arr2] = arg0;
-        const tmp = outer2_9(codedLinks.codedLinks);
-        let iter = tmp();
-        if (!iter.done) {
-          do {
-            ({ type, code } = iter.value);
-            let tmp2 = callback;
-            let tmp3 = country;
-            if (type === callback(country[14]).CodedLinkType.SOCIAL_LAYER_STOREFRONT) {
-              arr = arr.push(code.split("-"));
-            } else {
-              let tmp4 = callback;
-              let tmp5 = country;
-              if (type === callback(country[14]).CodedLinkType.SOCIAL_LAYER_STOREFRONT_APP) {
-                arr = arr2.push(code.split("-"));
-              }
+        const iter = arg1.codedLinks[Symbol.iterator]();
+        while (iter !== undefined) {
+          ({ type, code } = nextResult);
+          let tmp2 = type;
+          let tmp3 = callback;
+          let tmp4 = table;
+          if (type === callback(table[14]).CodedLinkType.SOCIAL_LAYER_STOREFRONT) {
+            let tmp8 = code;
+            arr = arr.push(code.split("-"));
+          } else {
+            let tmp5 = type;
+            if (tmp2 === tmp3(tmp4[14]).CodedLinkType.SOCIAL_LAYER_STOREFRONT_APP) {
+              let tmp6 = code;
+              arr = arr2.push(code.split("-"));
             }
-            iter2 = tmp();
-            iter = iter2;
-          } while (!iter2.done);
+          }
+          continue;
         }
         const items = [arr, arr2];
         return items;
@@ -243,111 +156,118 @@ export const useFetchSocialLayerStorefrontProductDetailsEmbedData = function use
     }
     return reduced;
   }, items), 2);
-  first = tmp3[0];
-  React = tmp5;
-  let items1 = [first, tmp3[1], country];
+  first = tmp6[0];
+  React = tmp8;
+  let items1 = [first, tmp6[1], country];
   const effect = React.useEffect(() => {
-    let first;
-    let iter2;
-    let iter4;
-    const tmp = outer1_9(first);
-    let iter = tmp();
-    if (!iter.done) {
-      do {
-        let tmp2 = first;
-        let tmp3 = first(iter.value, 2);
-        first = tmp3[0];
-        let tmp5 = outer1_6;
-        let isFetchingResult = null != outer1_6.get(first);
-        if (!isFetchingResult) {
-          let tmp7 = outer1_6;
-          isFetchingResult = outer1_6.isFetching(first);
+    while (tmp2 !== undefined) {
+      let tmp4 = first;
+      let tmp5 = first(tmp3, 2);
+      first = tmp5[0];
+      let tmp7 = first;
+      let tmp8 = tmp5[1];
+      let tmp9 = outer1_6;
+      let isFetchingResult = null != outer1_6.get(first);
+      if (!isFetchingResult) {
+        let tmp11 = outer1_6;
+        let tmp12 = first;
+        isFetchingResult = outer1_6.isFetching(tmp7);
+      }
+      if (!isFetchingResult) {
+        let tmp13 = outer1_6;
+        let tmp14 = first;
+        isFetchingResult = outer1_6.didFetchingSkuFail(tmp7);
+      }
+      if (!isFetchingResult) {
+        let tmp15 = stateFromStores;
+        let tmp16 = country;
+        let obj = stateFromStores(country[15]);
+        let tmp17 = tmp8;
+        let tmp18 = first;
+        obj = { withGoogleSkuIds: null, countryCode: null, paymentGateway: null };
+        let tmp19 = stateFromStores;
+        let tmp20 = country;
+        let obj3 = stateFromStores(country[16]);
+        obj[0] = obj3.isAndroid();
+        let tmp21 = country;
+        obj[1] = country;
+        let tmp22 = stateFromStores;
+        let tmp23 = country;
+        let obj4 = stateFromStores(country[16]);
+        let APPLE;
+        if (obj4.isIOS()) {
+          let tmp25 = outer1_7;
+          APPLE = outer1_7.APPLE;
         }
-        if (!isFetchingResult) {
-          let tmp8 = outer1_6;
-          isFetchingResult = outer1_6.didFetchingSkuFail(first);
-        }
-        if (!isFetchingResult) {
-          let tmp9 = stateFromStores;
-          let tmp10 = country;
-          let obj = stateFromStores(country[15]);
-          obj = {};
-          let obj3 = stateFromStores(country[16]);
-          obj.withGoogleSkuIds = obj3.isAndroid();
-          let tmp11 = country;
-          obj.countryCode = country;
-          let obj4 = stateFromStores(country[16]);
-          let APPLE;
-          if (obj4.isIOS()) {
-            let tmp13 = outer1_7;
-            APPLE = outer1_7.APPLE;
-          }
-          obj.paymentGateway = APPLE;
-          let socialLayerStorefrontSku = obj.fetchSocialLayerStorefrontSku(tmp3[1], first, obj);
-        }
-        iter2 = tmp();
-        iter = iter2;
-      } while (!iter2.done);
+        obj[2] = APPLE;
+        let socialLayerStorefrontSku = obj.fetchSocialLayerStorefrontSku(tmp8, tmp7, obj);
+      }
+      continue;
     }
-    const tmp15 = outer1_9(result);
-    let iter3 = tmp15();
-    if (!iter3.done) {
-      do {
-        let tmp16 = first;
-        let tmp17 = first(iter3.value, 2);
-        let first1 = tmp17[0];
-        let tmp19 = outer1_6;
-        let isFetchingResult1 = null != outer1_6.get(first1);
-        if (!isFetchingResult1) {
-          let tmp21 = outer1_6;
-          isFetchingResult1 = outer1_6.isFetching(first1);
+    for (const item10057 of useGetOrFetchApplications) {
+      let tmp27 = first;
+      let tmp28 = first(item10057, 2);
+      let first1 = tmp28[0];
+      let tmp30 = first1;
+      let tmp31 = tmp28[1];
+      let tmp32 = outer1_6;
+      let isFetchingResult1 = null != outer1_6.get(first1);
+      if (!isFetchingResult1) {
+        let tmp34 = outer1_6;
+        let tmp35 = first1;
+        isFetchingResult1 = outer1_6.isFetching(tmp30);
+      }
+      if (!isFetchingResult1) {
+        let tmp36 = outer1_6;
+        let tmp37 = first1;
+        isFetchingResult1 = outer1_6.didFetchingSkuFail(tmp30);
+      }
+      if (!isFetchingResult1) {
+        let tmp38 = stateFromStores;
+        let tmp39 = country;
+        let obj5 = stateFromStores(country[15]);
+        let tmp40 = tmp31;
+        let tmp41 = first1;
+        obj = { withGoogleSkuIds: null, countryCode: null, paymentGateway: null };
+        let tmp42 = stateFromStores;
+        let tmp43 = country;
+        let obj7 = stateFromStores(country[16]);
+        obj[0] = obj7.isAndroid();
+        let tmp44 = country;
+        obj[1] = country;
+        let tmp45 = stateFromStores;
+        let tmp46 = country;
+        let obj8 = stateFromStores(country[16]);
+        let APPLE1;
+        if (obj8.isIOS()) {
+          let tmp48 = outer1_7;
+          APPLE1 = outer1_7.APPLE;
         }
-        if (!isFetchingResult1) {
-          let tmp22 = outer1_6;
-          isFetchingResult1 = outer1_6.didFetchingSkuFail(first1);
-        }
-        if (!isFetchingResult1) {
-          let tmp23 = stateFromStores;
-          let tmp24 = country;
-          let obj5 = stateFromStores(country[15]);
-          obj = {};
-          let obj7 = stateFromStores(country[16]);
-          obj.withGoogleSkuIds = obj7.isAndroid();
-          let tmp25 = country;
-          obj.countryCode = country;
-          let obj8 = stateFromStores(country[16]);
-          let APPLE1;
-          if (obj8.isIOS()) {
-            let tmp27 = outer1_7;
-            APPLE1 = outer1_7.APPLE;
-          }
-          obj.paymentGateway = APPLE1;
-          let socialLayerStorefrontSkuForApplication = obj5.fetchSocialLayerStorefrontSkuForApplication(tmp17[1], first1, obj);
-        }
-        iter4 = tmp15();
-        iter3 = iter4;
-      } while (!iter4.done);
+        obj[2] = APPLE1;
+        let socialLayerStorefrontSkuForApplication = obj5.fetchSocialLayerStorefrontSkuForApplication(tmp31, tmp30, obj);
+      }
+      continue;
     }
   }, items1);
   const obj2 = isEligibleForSocialLayerStorefrontMobilePurchasing(country[13]);
-  const items2 = [closure_6];
-  const items3 = [tmp3[1], first];
-  const stateFromStoresArray = _require(country[17]).useStateFromStoresArray(items2, () => {
+  const items2 = [addSku];
+  const items3 = [tmp6[1], first];
+  const stateFromStoresArray = tmp(country[17]).useStateFromStoresArray(items2, () => {
     const items = [
       ...first.map((arg0) => {
         let tmp;
         [tmp] = arg0;
-        return outer2_6.get(tmp);
+        return store.get(tmp);
       }),
-      ...result.map((arg0) => {
+      ...useGetOrFetchApplications.map((arg0) => {
         let tmp;
         [tmp] = arg0;
-        return outer2_6.get(tmp);
+        return store.get(tmp);
       })
     ];
     const found = items.filter(stateFromStores(country[18]).isNotNullish);
     const items1 = [...new Set(found.map((applicationId) => applicationId.applicationId))];
     return items1;
   }, items3);
-  isEligibleForSocialLayerStorefrontMobilePurchasing(country[19])(stateFromStoresArray);
+  tmp4(country[19])(stateFromStoresArray);
 };

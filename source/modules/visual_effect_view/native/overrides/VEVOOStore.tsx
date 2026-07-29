@@ -1,10 +1,10 @@
-// Module ID: 4569
-// Function ID: 39943
+// Module ID: 4591
+// Function ID: 4592
 // Name: useVisualEffectViewOverrides
-// Dependencies: [621, 682, 2]
+// Dependencies: [644, 705, 2]
 // Exports: clearVisualEffectViewOverrides, getVisualEffectViewOverrides, setVisualEffectViewOverides, useVisualEffectViewOverrides
 
-// Module 4569 (useVisualEffectViewOverrides)
+// Module 4591 (useVisualEffectViewOverrides)
 import keys from "keys";
 
 let closure_2 = {};
@@ -19,8 +19,8 @@ export const getVisualEffectViewOverrides = function getVisualEffectViewOverride
 };
 export const setVisualEffectViewOverides = function setVisualEffectViewOverides(arg0) {
   const _require = arg0;
-  _require(682).batchUpdates(() => outer1_3.setState(closure_0));
+  _require(705).batchUpdates(() => outer1_3.setState(closure_0));
 };
 export const clearVisualEffectViewOverrides = function clearVisualEffectViewOverrides() {
-  require(682) /* batchUpdates */.batchUpdates(() => outer1_3.setState(outer1_2));
+  require(705) /* batchUpdates */.batchUpdates(() => state.setState(closure_2));
 };

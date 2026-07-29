@@ -1,35 +1,30 @@
-// Module ID: 5205
-// Function ID: 45123
+// Module ID: 5227
+// Function ID: 5228
 // Name: TableRowArrow
-// Dependencies: [31, 33, 4165, 689, 1324, 4580, 5206, 5207, 2]
+// Dependencies: [19, 21, 4189, 712, 1348, 4602, 5228, 5229, 2]
 // Exports: TableRowArrow
 
-// Module 5205 (TableRowArrow)
-import "result";
+// Module 5227 (TableRowArrow)
+import "noop";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
 const require = arg1;
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { width: require("_createForOfIteratorHelperLoose").modules.mobile.TABLE_ROW_ARROW_WIDTH, height: 24, marginStart: require("_createForOfIteratorHelperLoose").modules.mobile.TABLE_ROW_ARROW_MARGIN_START, marginEnd: require("_createForOfIteratorHelperLoose").modules.mobile.TABLE_ROW_ARROW_MARGIN_END };
-_createForOfIteratorHelperLoose.icon = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.iconColor = { color: require("_createForOfIteratorHelperLoose").colors.INTERACTIVE_TEXT_DEFAULT };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-const obj1 = { color: require("_createForOfIteratorHelperLoose").colors.INTERACTIVE_TEXT_DEFAULT };
-const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("design/components/TableRow/native/TableRowArrow.native.tsx");
+createCacheKey = { icon: null, iconColor: null };
+createCacheKey = { width: require("Themes").modules.mobile.TABLE_ROW_ARROW_WIDTH, height: 24, marginStart: require("Themes").modules.mobile.TABLE_ROW_ARROW_MARGIN_START, marginEnd: require("Themes").modules.mobile.TABLE_ROW_ARROW_MARGIN_END };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { color: require("Themes").colors.INTERACTIVE_TEXT_DEFAULT };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+const obj1 = { color: require("Themes").colors.INTERACTIVE_TEXT_DEFAULT };
+const result = require("createCacheKey").fileFinishedImporting("design/components/TableRow/native/TableRowArrow.native.tsx");
 
 export const TableRowArrow = function TableRowArrow() {
-  const tmp3 = _createForOfIteratorHelperLoose();
-  const obj = { style: tmp3.icon, color: tmp3.iconColor.color };
+  const tmp4 = createCacheKey();
+  const obj = { style: tmp4.icon, color: tmp4.iconColor.color, source: null, size: null };
   const tmp = importDefault;
-  const tmp2 = importDefault(1324)("TableRowArrow");
-  const tmp4 = jsx;
-  if (tmp2) {
-    let tmp7 = 5206;
-  } else {
-    tmp7 = 5207;
-  }
-  obj.source = tmp(tmp7);
-  obj.size = require(4580) /* getIconSize */.IconSizes.CUSTOM;
-  return tmp4(importDefault(4580), obj);
+  const tmp3 = importDefault(1348)("TableRowArrow");
+  const tmp5 = jsx;
+  obj[2] = tmp(tmp3 ? 5228 : 5229);
+  obj[3] = require(4602) /* IconSizes */.IconSizes.CUSTOM;
+  return tmp5(importDefault(4602), obj);
 };

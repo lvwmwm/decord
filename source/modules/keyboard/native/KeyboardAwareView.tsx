@@ -1,33 +1,19 @@
-// Module ID: 5620
-// Function ID: 47548
-// Name: getKeyboardHeightWithOffset
-// Dependencies: [57, 31, 27, 1452, 33, 1823, 4031, 1555, 5196, 5194, 5195, 2]
+// Module ID: 5638
+// Function ID: 5639
+// Dependencies: [32, 19, 17, 1476, 21, 1847, 4055, 1579, 5218, 5216, 5217, 2]
 
-// Module 5620 (getKeyboardHeightWithOffset)
+// Module 5638
 import _slicedToArray from "_slicedToArray";
-import importAllResult from "result";
+import importAllResult from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import subscribeToKeyboardUIStore from "subscribeToKeyboardUIStore";
 import { jsx } from "jsxProd";
 
-let closure_4;
-let closure_5;
+let c4;
+let c5;
 const require = arg1;
-function getKeyboardHeightWithOffset(style) {
-  let systemKeyboardHeight = require(1823) /* useSystemKeyboardHeight */.getSystemKeyboardHeight();
-  if (0 === systemKeyboardHeight) {
-    const keyboardType = require(4031) /* getKeyboardContextForType */.getKeyboardType();
-    let num3 = 0;
-    if (keyboardType !== require(1555) /* KeyboardTypes */.KeyboardTypes.SYSTEM) {
-      num3 = require(5196) /* useCustomKeyboardHeight */.getCustomKeyboardHeight();
-      const obj3 = require(5196) /* useCustomKeyboardHeight */;
-    }
-    systemKeyboardHeight = num3;
-    const obj2 = require(4031) /* getKeyboardContextForType */;
-  }
-  return Math.max(0, systemKeyboardHeight + style);
-}
-({ View: closure_4, StyleSheet: closure_5 } = get_ActivityIndicator);
+let c3 = importAllResult;
+({ View: c4, StyleSheet: c5 } = get_ActivityIndicator);
 const memoResult = importAllResult.memo(function KeyboardAwareView(style) {
   let children;
   let pointerEvents;
@@ -45,21 +31,44 @@ const memoResult = importAllResult.memo(function KeyboardAwareView(style) {
   let first;
   let closure_5;
   let subscribeToKeyboardUIStore;
-  ref = ref.useRef(getKeyboardHeightWithOffset(num));
-  const tmp2 = num(ref.useState(ref.current), 2);
-  first = tmp2[0];
-  closure_5 = tmp2[1];
+  let obj = ref;
+  let systemKeyboardHeight = style(flag[5]).getSystemKeyboardHeight();
+  if (0 === systemKeyboardHeight) {
+    let tmpResult = tmp(tmp2[6]);
+    let keyboardType = tmpResult.getKeyboardType();
+    let num2 = 0;
+    if (keyboardType !== tmp(tmp2[7]).KeyboardTypes.SYSTEM) {
+      tmpResult = tmp(tmp2[8]);
+      num2 = tmpResult.getCustomKeyboardHeight();
+    }
+    systemKeyboardHeight = num2;
+  }
+  ref = ref.useRef(Math.max(0, systemKeyboardHeight + num));
+  const tmp6 = num(obj.useState(ref.current), 2);
+  first = tmp6[0];
+  closure_5 = tmp6[1];
   const items = [num];
-  const effect = ref.useEffect(() => ref(() => {
-    const tmp = outer2_8(outer1_2);
-    if (outer1_3.current !== tmp) {
-      outer1_3.current = tmp;
-      outer1_5(tmp);
+  const effect = obj.useEffect(() => ref(() => {
+    let systemKeyboardHeight = outer1_0(outer1_1[5]).getSystemKeyboardHeight();
+    if (0 === systemKeyboardHeight) {
+      let tmp2Result = tmp2(tmp3[6]);
+      const keyboardType = tmp2Result.getKeyboardType();
+      let num = 0;
+      if (keyboardType !== tmp2(tmp3[7]).KeyboardTypes.SYSTEM) {
+        tmp2Result = tmp2(tmp3[8]);
+        num = tmp2Result.getCustomKeyboardHeight();
+      }
+      systemKeyboardHeight = num;
+    }
+    const bound = Math.max(0, systemKeyboardHeight + _slicedToArray);
+    if (ref.current !== bound) {
+      ref.current = bound;
+      callback(bound);
     }
   }), items);
-  subscribeToKeyboardUIStore = ref.useRef(false);
+  subscribeToKeyboardUIStore = obj.useRef(false);
   const items1 = [flag, first];
-  const effect1 = ref.useEffect(() => {
+  const effect1 = obj.useEffect(() => {
     if (ref.current) {
       const keyboardDuration = style(flag[9]).getKeyboardDuration();
       let tmp5 = flag;
@@ -67,29 +76,55 @@ const memoResult = importAllResult.memo(function KeyboardAwareView(style) {
         tmp5 = keyboardDuration > 0;
       }
       if (tmp5) {
-        const result = style(flag[10]).DeprecatedLayoutAnimationKeyboard(keyboardDuration);
-        const obj2 = style(flag[10]);
+        const result = tmp2(tmp3[10]).DeprecatedLayoutAnimationKeyboard(keyboardDuration);
+        const tmp2Result = tmp2(tmp3[10]);
       }
       const obj = style(flag[9]);
+      tmp2 = style;
+      tmp3 = flag;
     } else {
-      ref.current = true;
+      tmp.current = true;
     }
   }, items1);
   const items2 = [first, style];
-  return <first style={ref.useMemo(() => {
+  obj = {
+    style: obj.useMemo(() => {
+      if (null == style) {
+        let obj = { marginBottom: null };
+        obj[0] = first;
+        return obj;
+      } else {
+        const flattenResult = closure_5.flatten(tmp);
+        if (typeof flattenResult.marginBottom === "Object") {
+          obj = {};
+          const merged = Object.assign(flattenResult);
+          obj.marginBottom = flattenResult.marginBottom + first;
+        } else {
+          obj = {};
+          const merged1 = Object.assign(flattenResult);
+          obj.marginBottom = first;
+        }
+        return obj;
+      }
+    }, items2),
+    pointerEvents,
+    children
+  };
+  return <first style={obj.useMemo(() => {
     if (null == style) {
-      let obj = { marginBottom: first };
+      let obj = { marginBottom: null };
+      obj[0] = first;
       return obj;
     } else {
-      const flattenResult = closure_5.flatten(style);
-      if ("number" === typeof flattenResult.marginBottom) {
+      const flattenResult = closure_5.flatten(tmp);
+      if (typeof flattenResult.marginBottom === "Object") {
         obj = {};
         const merged = Object.assign(flattenResult);
-        obj["marginBottom"] = flattenResult.marginBottom + first;
+        obj.marginBottom = flattenResult.marginBottom + first;
       } else {
         obj = {};
         const merged1 = Object.assign(flattenResult);
-        obj["marginBottom"] = first;
+        obj.marginBottom = first;
       }
       return obj;
     }

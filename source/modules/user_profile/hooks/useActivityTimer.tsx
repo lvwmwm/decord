@@ -1,72 +1,71 @@
-// Module ID: 11992
-// Function ID: 92560
-// Name: extractTimeComponents
-// Dependencies: [57, 31, 664, 7889, 4050, 2]
+// Module ID: 12016
+// Function ID: 12017
+// Name: useActivityTimer
+// Dependencies: [32, 19, 687, 7914, 4074, 2]
 // Exports: default, formatTime, formatTimeForA11yLabel
 
-// Module 11992 (extractTimeComponents)
+// Module 12016 (useActivityTimer)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
+import noop from "noop";
 
-let closure_4;
-let closure_5;
+let c4;
+let c5;
 const require = arg1;
-function extractTimeComponents(arg0) {
-  const rounded = Math.floor(arg0);
-  const result = rounded % importDefault(664).Seconds.MINUTE;
-  const rounded1 = Math.floor(arg0 / importDefault(664).Seconds.MINUTE);
-  const obj = {};
-  const result1 = rounded1 % importDefault(664).Seconds.MINUTE;
-  obj.hours = Math.floor(arg0 / importDefault(664).Seconds.HOUR);
-  obj.minutes = result1;
-  obj.seconds = result;
-  return obj;
-}
-function pad(arg0) {
-  return String(arg0).padStart(2, "0");
-}
-({ useEffect: closure_4, useState: closure_5 } = result);
-result = require("set").fileFinishedImporting("modules/user_profile/hooks/useActivityTimer.tsx");
+({ useEffect: c4, useState: c5 } = noop);
+let result = require("set").fileFinishedImporting("modules/user_profile/hooks/useActivityTimer.tsx");
 
 export default function useActivityTimer(start) {
   start = start.start;
-  const interval = new first(4050).Interval();
+  let first;
+  let importDefault;
+  const interval = new first(4074).Interval();
   first = callback(callback3(interval), 1)[0];
   const tmp3 = callback(callback3(() => Date.now()), 2);
-  const importDefault = tmp3[1];
+  importDefault = tmp3[1];
   const items = [first];
   callback2(() => {
-    first.start(callback(outer1_2[2]).Millis.HALF_SECOND, () => outer1_1(Date.now()));
-    return () => outer1_0.stop();
+    first.start(callback(outer1_2[2]).Millis.HALF_SECOND, () => callback(Date.now()));
+    return () => closure_0.stop();
   }, items);
   const diff = start.end - start;
-  const result = diff / importDefault(664).Millis.SECOND;
+  const result = diff / importDefault(687).Millis.SECOND;
   const diff1 = tmp3[0] - start;
-  const bound = Math.max(Math.min(diff1 / importDefault(664).Millis.SECOND, result), 0);
+  const bound = Math.max(Math.min(diff1 / importDefault(687).Millis.SECOND, result), 0);
   return { elapsed: bound, duration: result, percentage: Math.max(Math.min(bound / result, 1), 0) };
 };
 export const formatTime = function formatTime(arg0) {
-  let hours;
-  let minutes;
-  let seconds;
-  ({ hours, minutes, seconds } = extractTimeComponents(arg0));
-  if (0 === hours) {
+  const rounded = Math.floor(arg0);
+  const result = rounded % importDefault(687).Seconds.MINUTE;
+  const rounded1 = Math.floor(arg0 / importDefault(687).Seconds.MINUTE);
+  const result1 = rounded1 % importDefault(687).Seconds.MINUTE;
+  const rounded2 = Math.floor(arg0 / importDefault(687).Seconds.HOUR);
+  if (0 === rounded2) {
+    const _String4 = String;
+    const _String5 = String;
+    const StringResult = String(result1);
+    const padStartResult = String(result1).padStart(2, "0");
     const _HermesInternal2 = HermesInternal;
-    let combined = "" + pad(minutes) + ":" + pad(seconds);
-    const tmp9 = pad(minutes);
+    let combined = "" + padStartResult + ":" + String(result).padStart(2, "0");
+    const StringResult1 = String(result);
   } else {
-    const tmp3 = pad(hours);
+    const _String = String;
+    const padStartResult1 = String(rounded2).padStart(2, "0");
+    const _String2 = String;
+    const StringResult2 = String(rounded2);
+    const _String3 = String;
+    const StringResult3 = String(result1);
+    const padStartResult2 = String(result1).padStart(2, "0");
     const _HermesInternal = HermesInternal;
-    combined = "" + tmp3 + ":" + pad(minutes) + ":" + pad(seconds);
-    const tmp4 = pad(minutes);
+    combined = "" + padStartResult1 + ":" + padStartResult2 + ":" + String(result).padStart(2, "0");
+    const StringResult4 = String(result);
   }
   return combined;
 };
 export const formatTimeForA11yLabel = function formatTimeForA11yLabel(arg0) {
-  let hours;
-  let minutes;
-  let seconds;
-  ({ hours, minutes, seconds } = extractTimeComponents(arg0));
-  const tmp = extractTimeComponents(arg0);
-  return require(7889) /* calculateTimestampDurations */.formatTimestampToA11yLabel({ hours, minutes, seconds });
+  const rounded = Math.floor(arg0);
+  const seconds = rounded % importDefault(687).Seconds.MINUTE;
+  const rounded1 = Math.floor(arg0 / importDefault(687).Seconds.MINUTE);
+  const minutes = rounded1 % importDefault(687).Seconds.MINUTE;
+  const hours = Math.floor(arg0 / importDefault(687).Seconds.HOUR);
+  return require(7914) /* calculateTimestampDurations */.formatTimestampToA11yLabel({ hours, minutes, seconds });
 };

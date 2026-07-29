@@ -1,87 +1,88 @@
-// Module ID: 12009
-// Function ID: 92667
+// Module ID: 12033
+// Function ID: 12034
 // Name: useUserProfileActivity
-// Dependencies: [31, 8663, 4252, 9040, 566, 12010, 7889, 8152, 8148, 2]
+// Dependencies: [19, 8687, 4276, 9064, 589, 12034, 7914, 8176, 8172, 2]
 // Exports: default
 
-// Module 12009 (useUserProfileActivity)
-import { useMemo } from "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_5 from "_isNativeReflectConstruct";
+// Module 12033 (useUserProfileActivity)
+import { useMemo } from "noop";
+import map from "map";
+import sortActivity from "sortActivity";
 
 let closure_6 = [];
 let closure_7 = [];
-let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/user_profile/hooks/useUserProfileActivity.tsx");
+let result = require("sortActivity").fileFinishedImporting("modules/user_profile/hooks/useUserProfileActivity.tsx");
 
 export default function useUserProfileActivity(arg0) {
   const _require = arg0;
   let obj = _require(stateFromStores1[4]);
-  const items = [closure_5];
+  const items = [sortActivity];
   const stateFromStores = obj.useStateFromStores(items, () => outer1_5.getActivities(closure_0));
-  let tmp = stateFromStores(stateFromStores1[3])(arg0);
-  const items1 = [_isNativeReflectConstruct];
+  const tmp = stateFromStores(stateFromStores1[3])(arg0);
+  const items1 = [map];
   stateFromStores1 = _require(stateFromStores1[4]).useStateFromStores(items1, () => outer1_4.getUserOutbox(closure_0));
   const items2 = [stateFromStores, ];
   let entries;
-  if (null != stateFromStores1) {
+  if (stateFromStores1 != null) {
     entries = stateFromStores1.entries;
   }
   items2[1] = entries;
   const tmp4Result = useMemo(() => {
-    let found;
     let obj = callback(stateFromStores1[5]);
     let userProfileLiveActivities = obj.getUserProfileLiveActivities(stateFromStores);
-    if (null != stateFromStores1) {
+    let found;
+    if (stateFromStores1 != null) {
       const entries = stateFromStores1.entries;
-      found = entries.filter((entry) => {
-        let tmp = entry;
-        const userProfileLiveActivities = entry;
-        const tmp2 = !userProfileLiveActivities(stateFromStores1[6]).isEntryLive(entry);
-        if (!tmp2) {
-          return tmp2;
+      found = entries.filter((traits) => {
+        let length = traits;
+        const userProfileLiveActivities = traits;
+        const isEntryLiveResult = userProfileLiveActivities(outer1_2[6]).isEntryLive(traits);
+        if (isEntryLiveResult) {
+          return !isEntryLiveResult;
         } else {
-          if (obj2.isListenedSessionEntry(tmp)) {
-            tmp = tmp.extra.entries.length > 0;
-            if (tmp) {
-              tmp = !userProfileLiveActivities.some((party) => {
+          let tmpResult = tmp(tmp2[7]);
+          if (tmpResult.isListenedSessionEntry(length)) {
+            length = length.extra.entries.length;
+            let tmp6 = length > 0;
+            if (tmp6) {
+              length = userProfileLiveActivities;
+              tmp6 = !userProfileLiveActivities.some((party) => {
                 let result = null != party;
                 if (result) {
-                  result = entry(stateFromStores1[8]).isMatchingListeningActivity(entry, party);
-                  const obj = entry(stateFromStores1[8]);
+                  result = traits(outer1_2[8]).isMatchingListeningActivity(traits, party);
+                  const obj = traits(outer1_2[8]);
                 }
                 return result;
               });
             }
-            let result = tmp;
+            let result = tmp6;
           } else {
-            if (obj3.isWatchedMediaEntry(tmp)) {
+            tmpResult = tmp(tmp2[7]);
+            if (tmpResult.isWatchedMediaEntry(length)) {
               result = !userProfileLiveActivities.some((details) => {
                 let result = null != details;
                 if (result) {
-                  result = entry(stateFromStores1[8]).isMatchingWatchActivity(entry, details);
-                  const obj = entry(stateFromStores1[8]);
+                  result = traits(outer1_2[8]).isMatchingWatchActivity(traits, details);
+                  const obj = traits(outer1_2[8]);
                 }
                 return result;
               });
             } else {
-              result = userProfileLiveActivities(stateFromStores1[7]).isRecentActivityEntry(tmp);
-              const obj4 = userProfileLiveActivities(stateFromStores1[7]);
+              result = tmp(tmp2[7]).isRecentActivityEntry(length);
+              const tmpResult1 = tmp(tmp2[7]);
             }
-            obj3 = userProfileLiveActivities(stateFromStores1[7]);
           }
-          obj2 = userProfileLiveActivities(stateFromStores1[7]);
         }
       });
     }
-    obj = {};
     if (0 === userProfileLiveActivities.length) {
       userProfileLiveActivities = outer1_6;
     }
-    obj.live = userProfileLiveActivities;
+    obj = { live: userProfileLiveActivities, recent: null };
     if (null == found) {
       found = outer1_7;
     }
-    obj.recent = found;
+    obj[1] = found;
     return obj;
   }, items2);
   obj = { live: tmp4Result.live, recent: tmp4Result.recent, stream: tmp, outbox: stateFromStores1 };

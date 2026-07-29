@@ -1,39 +1,14 @@
-// Module ID: 12247
-// Function ID: 95592
-// Name: useThrottledActionHandler
-// Dependencies: [31, 33, 4578, 2]
-// Exports: default
+// Module ID: 12271
+// Function ID: 12272
+// Name: ThrottledButton
+// Dependencies: [19, 21, 4600, 2]
+// Exports: default, useThrottledActionHandler
 
-// Module 12247 (useThrottledActionHandler)
-import result from "result";
+// Module 12271 (ThrottledButton)
+import noop from "noop";
 import { jsx } from "jsxProd";
 
 const require = arg1;
-function useThrottledActionHandler(throttleMs) {
-  let num = throttleMs;
-  if (throttleMs === undefined) {
-    num = 500;
-  }
-  let closure_1;
-  closure_1 = React.useRef(null);
-  const effect = React.useEffect(() => () => clearTimeout(outer1_1.current), []);
-  return (arg0) => {
-    let closure_0 = arg0;
-    return (arg0) => {
-      let tmp = null != callback;
-      if (tmp) {
-        tmp = null === outer1_1.current;
-      }
-      if (tmp) {
-        callback(arg0);
-        const _setTimeout = setTimeout;
-        outer1_1.current = setTimeout(() => {
-          outer2_1.current = null;
-        }, callback);
-      }
-    };
-  };
-}
 const result = require("Button").fileFinishedImporting("modules/guild_scheduled_events/native/components/ThrottledButton.tsx");
 
 export default function ThrottledButton(throttleMs) {
@@ -45,15 +20,82 @@ export default function ThrottledButton(throttleMs) {
   if (num === undefined) {
     num = 500;
   }
-  let obj = { onPress: 0, onPressIn: 0, onPressOut: 0, throttleMs: 0 };
-  Object.setPrototypeOf(null);
-  const merged = Object.assign(throttleMs, obj);
-  const tmp3 = useThrottledActionHandler(num);
-  obj = {};
+  const merged = Object.assign(throttleMs, Object.create(null));
+  onPressOut = undefined;
+  if (num === undefined) {
+    num = 500;
+  }
+  onPressOut = num;
+  let dependencyMap;
+  dependencyMap = React.useRef(null);
+  const effect = React.useEffect(() => () => clearTimeout(ref.current), []);
+  const obj = {};
   const merged1 = Object.assign(merged);
-  obj["onPress"] = tmp3(onPress);
-  obj["onPressIn"] = tmp3(onPressIn);
-  obj["onPressOut"] = tmp3(onPressOut);
-  return jsx(require(4578) /* Button */.Button, {});
+  onPressOut = onPress;
+  obj.onPress = (arg0) => {
+    let tmp2 = null != closure_0;
+    if (tmp2) {
+      tmp2 = null === outer1_1.current;
+    }
+    if (tmp2) {
+      closure_0(arg0);
+      const _setTimeout = setTimeout;
+      outer1_1.current = setTimeout(() => {
+        closure_1.current = null;
+      }, closure_0);
+    }
+  };
+  onPressOut = onPressIn;
+  obj.onPressIn = (arg0) => {
+    let tmp2 = null != closure_0;
+    if (tmp2) {
+      tmp2 = null === outer1_1.current;
+    }
+    if (tmp2) {
+      closure_0(arg0);
+      const _setTimeout = setTimeout;
+      outer1_1.current = setTimeout(() => {
+        closure_1.current = null;
+      }, closure_0);
+    }
+  };
+  obj.onPressOut = (arg0) => {
+    let tmp2 = null != closure_0;
+    if (tmp2) {
+      tmp2 = null === outer1_1.current;
+    }
+    if (tmp2) {
+      closure_0(arg0);
+      const _setTimeout = setTimeout;
+      outer1_1.current = setTimeout(() => {
+        closure_1.current = null;
+      }, closure_0);
+    }
+  };
+  return jsx(onPressOut(4600).Button, {});
 };
-export { useThrottledActionHandler };
+export const useThrottledActionHandler = function useThrottledActionHandler() {
+  let num = arg0;
+  if (arg0 === undefined) {
+    num = 500;
+  }
+  let closure_1;
+  closure_1 = React.useRef(null);
+  const effect = React.useEffect(() => () => clearTimeout(ref.current), []);
+  return (arg0) => {
+    let closure_0 = arg0;
+    return (arg0) => {
+      let tmp2 = null != closure_0;
+      if (tmp2) {
+        tmp2 = null === outer1_1.current;
+      }
+      if (tmp2) {
+        closure_0(arg0);
+        const _setTimeout = setTimeout;
+        outer1_1.current = setTimeout(() => {
+          closure_1.current = null;
+        }, closure_0);
+      }
+    };
+  };
+};

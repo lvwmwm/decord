@@ -1,137 +1,76 @@
-// Module ID: 16438
-// Function ID: 128114
+// Module ID: 16473
+// Function ID: 16474
 // Name: RolePermissionTemplatesActionSheet
-// Dependencies: [31, 27, 653, 33, 4165, 689, 675, 4133, 3865, 5220, 1212, 5533, 16417, 4505, 2]
+// Dependencies: [19, 17, 676, 21, 4189, 712, 698, 4157, 3889, 5242, 1236, 5551, 16452, 4528, 2]
 // Exports: default
 
-// Module 16438 (RolePermissionTemplatesActionSheet)
-import result from "result";
+// Module 16473 (RolePermissionTemplatesActionSheet)
+import noop from "noop";
 import { View } from "get ActivityIndicator";
 import ME from "ME";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_5;
+let c5;
 let closure_6;
 const require = arg1;
-({ AnalyticEvents: closure_5, AnalyticsSections: closure_6 } = ME);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { paddingVertical: 16, flex: 1, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWER };
-_createForOfIteratorHelperLoose.templateContainer = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+({ AnalyticEvents: c5, AnalyticsSections: closure_6 } = ME);
+createCacheKey = { templateContainer: null };
+createCacheKey = { paddingVertical: 16, flex: 1, backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOWER };
+createCacheKey[0] = createCacheKey;
+createCacheKey = createCacheKey.createStyles(createCacheKey);
 let result = require("ME").fileFinishedImporting("modules/guild_settings/roles/native/action_sheet/RolePermissionTemplatesActionSheet.tsx");
 
 export default function RolePermissionTemplatesActionSheet(guildId) {
   let importDefault;
   let require;
   ({ permissionsEdited: require, onPermissionsChanged: importDefault } = guildId);
-  function saveTemplate(arg0) {
-    callback(arg0);
-    outer1_1(saveTemplate[7]).hideActionSheet();
-    const obj = outer1_1(saveTemplate[7]);
-    const result = outer1_0(saveTemplate[8]).roleTemplateAppliedToast();
-  }
   const effect = React.useEffect(() => {
-    let obj = outer1_1(saveTemplate[6]);
-    obj = { type: outer1_6.GUILD_ROLE_TEMPLATE_POPOUT };
-    obj.track(outer1_5.OPEN_POPOUT, obj);
+    let obj = callback(table[6]);
+    obj = { type: constants2.GUILD_ROLE_TEMPLATE_POPOUT };
+    obj.track(constants.OPEN_POPOUT, obj);
   }, []);
-  let obj = {};
-  let intl = require(saveTemplate[10]).intl;
-  obj.title = intl.string(require(saveTemplate[10]).t.KgCkoQ);
-  const tmp = _createForOfIteratorHelperLoose();
-  obj = { header: jsx(require(saveTemplate[9]).BottomSheetTitleHeader, {}), startExpanded: true };
-  obj = {
-    style: tmp.templateContainer,
-    children: jsx(importDefault(saveTemplate[12]), {
-      onSelect(arg0) {
-        let closure_0 = arg0;
-        if (closure_0) {
-          let obj = outer1_1(saveTemplate[13]);
-          obj = {};
-          const intl = outer1_0(saveTemplate[10]).intl;
-          obj.title = intl.string(outer1_0(saveTemplate[10]).t.MVdkgB);
-          const intl2 = outer1_0(saveTemplate[10]).intl;
-          obj.body = intl2.string(outer1_0(saveTemplate[10]).t.LpogjK);
-          const intl3 = outer1_0(saveTemplate[10]).intl;
-          obj.cancelText = intl3.string(outer1_0(saveTemplate[10]).t["ETE/oC"]);
-          const intl4 = outer1_0(saveTemplate[10]).intl;
-          obj.confirmText = intl4.string(outer1_0(saveTemplate[10]).t.p89ACt);
-          obj.onConfirm = function onConfirm() {
-            outer1_2(closure_0);
-          };
-          obj.onCancel = function onCancel() {
-            outer2_1(saveTemplate[7]).hideActionSheet();
-          };
-          obj.hideActionSheet = false;
-          obj.show(obj);
-        } else {
-          saveTemplate(arg0);
-        }
-      },
-      location: constants.GUILD_ROLE_TEMPLATE_POPOUT,
-      guildId: guildId.guildId
-    })
-  };
-  obj.children = <View style={tmp.templateContainer}>{jsx(importDefault(saveTemplate[12]), {
+  let obj = { title: null };
+  let intl = require(1236) /* getSystemLocale */.intl;
+  obj[0] = intl.string(require(1236) /* getSystemLocale */.t.KgCkoQ);
+  const tmp = createCacheKey();
+  obj = { header: jsx(require(5242) /* RedesignBottomSheetTitleHeaderBase */.BottomSheetTitleHeader, { title: null }), startExpanded: true, children: null };
+  obj = { style: tmp.templateContainer, children: null };
+  obj[1] = jsx(importDefault(16452), {
     onSelect(arg0) {
       let closure_0 = arg0;
       if (closure_0) {
-        let obj = outer1_1(saveTemplate[13]);
-        obj = {};
-        const intl = outer1_0(saveTemplate[10]).intl;
-        obj.title = intl.string(outer1_0(saveTemplate[10]).t.MVdkgB);
-        const intl2 = outer1_0(saveTemplate[10]).intl;
-        obj.body = intl2.string(outer1_0(saveTemplate[10]).t.LpogjK);
-        const intl3 = outer1_0(saveTemplate[10]).intl;
-        obj.cancelText = intl3.string(outer1_0(saveTemplate[10]).t["ETE/oC"]);
-        const intl4 = outer1_0(saveTemplate[10]).intl;
-        obj.confirmText = intl4.string(outer1_0(saveTemplate[10]).t.p89ACt);
-        obj.onConfirm = function onConfirm() {
-          outer1_2(closure_0);
+        let obj = { title: null, body: null, cancelText: null, confirmText: null, onConfirm: null, onCancel: null, hideActionSheet: false };
+        const intl = outer1_0(outer1_2[10]).intl;
+        obj[0] = intl.string(outer1_0(outer1_2[10]).t.MVdkgB);
+        const intl2 = outer1_0(outer1_2[10]).intl;
+        obj[1] = intl2.string(outer1_0(outer1_2[10]).t.LpogjK);
+        const intl3 = outer1_0(outer1_2[10]).intl;
+        obj[2] = intl3.string(outer1_0(outer1_2[10]).t["ETE/oC"]);
+        const intl4 = outer1_0(outer1_2[10]).intl;
+        obj[3] = intl4.string(outer1_0(outer1_2[10]).t.p89ACt);
+        obj[4] = function onConfirm() {
+          outer1_1(callback);
+          outer1_1(outer1_2[7]).hideActionSheet();
+          const obj = outer1_1(outer1_2[7]);
+          const result = callback(outer1_2[8]).roleTemplateAppliedToast();
         };
-        obj.onCancel = function onCancel() {
-          outer2_1(saveTemplate[7]).hideActionSheet();
+        obj[5] = function onCancel() {
+          callback2(table[7]).hideActionSheet();
         };
-        obj.hideActionSheet = false;
-        obj.show(obj);
+        outer1_1(outer1_2[13]).show(obj);
+        const obj3 = outer1_1(outer1_2[13]);
       } else {
-        saveTemplate(arg0);
+        callback(arg0);
+        obj = outer1_1(outer1_2[7]);
+        obj.hideActionSheet();
+        let result = outer1_0(outer1_2[8]).roleTemplateAppliedToast();
+        const obj2 = outer1_0(outer1_2[8]);
       }
     },
     location: constants.GUILD_ROLE_TEMPLATE_POPOUT,
-    guildId: arg0.guildId
-  })}</View>;
-  return jsx(require(saveTemplate[11]).ActionSheet, {
-    style: tmp.templateContainer,
-    children: jsx(importDefault(saveTemplate[12]), {
-      onSelect(arg0) {
-        let closure_0 = arg0;
-        if (closure_0) {
-          let obj = outer1_1(saveTemplate[13]);
-          obj = {};
-          const intl = outer1_0(saveTemplate[10]).intl;
-          obj.title = intl.string(outer1_0(saveTemplate[10]).t.MVdkgB);
-          const intl2 = outer1_0(saveTemplate[10]).intl;
-          obj.body = intl2.string(outer1_0(saveTemplate[10]).t.LpogjK);
-          const intl3 = outer1_0(saveTemplate[10]).intl;
-          obj.cancelText = intl3.string(outer1_0(saveTemplate[10]).t["ETE/oC"]);
-          const intl4 = outer1_0(saveTemplate[10]).intl;
-          obj.confirmText = intl4.string(outer1_0(saveTemplate[10]).t.p89ACt);
-          obj.onConfirm = function onConfirm() {
-            outer1_2(closure_0);
-          };
-          obj.onCancel = function onCancel() {
-            outer2_1(saveTemplate[7]).hideActionSheet();
-          };
-          obj.hideActionSheet = false;
-          obj.show(obj);
-        } else {
-          saveTemplate(arg0);
-        }
-      },
-      location: constants.GUILD_ROLE_TEMPLATE_POPOUT,
-      guildId: guildId.guildId
-    })
+    guildId: guildId.guildId
   });
+  obj[2] = <View style={tmp.templateContainer}>{null}</View>;
+  return jsx(require(5551) /* ActionSheet */.ActionSheet, { style: tmp.templateContainer, children: null });
 };

@@ -1,17 +1,17 @@
-// Module ID: 12964
-// Function ID: 100498
+// Module ID: 12987
+// Function ID: 12988
 // Name: urlPartToSettingsEnum
 // Dependencies: [2]
 // Exports: default
 
-// Module 12964 (urlPartToSettingsEnum)
+// Module 12987 (urlPartToSettingsEnum)
 const result = require("set").fileFinishedImporting("modules/guild_settings/urlPartToSettingsEnum.tsx");
 
 export default function urlPartToSettingsEnum(arg0, str) {
   let formatted;
-  if (null != str) {
+  if (str != null) {
     const str2 = str.replace(/-/g, "_");
-    if (null != str2) {
+    if (str2 != null) {
       formatted = str2.toUpperCase();
     }
   }

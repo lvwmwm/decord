@@ -1,26 +1,22 @@
-// Module ID: 16214
-// Function ID: 125556
-// Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 6127, 5112, 2]
+// Module ID: 16249
+// Function ID: 16250
+// Name: handleLogout
+// Dependencies: [5134, 6145, 2]
 
-// Module 16214 (_isNativeReflectConstruct)
-import AutomaticLifecycleManager from "AutomaticLifecycleManager";
-import set from "set";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
-import tmp2 from "AutomaticLifecycleManager";
+// Module 16249 (handleLogout)
+import "initialize";
 
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
+class MessageQueueManager extends tmp2 {
+  constructor() {
+    applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
+    applyArgumentsResult.actions = { LOGOUT: applyArgumentsResult.handleLogout };
+    return applyArgumentsResult;
   }
-  const result = _isNativeReflectConstruct();
 }
-tmp2 = new tmp2();
-let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/messages/MessageQueueManager.tsx");
+MessageQueueManager.prototype["handleLogout"] = function handleLogout() {
+  importDefault(6145).clear();
+};
+const messageQueueManager = new MessageQueueManager();
+const result = require("set").fileFinishedImporting("modules/messages/MessageQueueManager.tsx");
 
-export default tmp2;
+export default messageQueueManager;

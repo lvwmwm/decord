@@ -1,12 +1,12 @@
-// Module ID: 15106
-// Function ID: 114896
+// Module ID: 15139
+// Function ID: 15140
 // Name: useGuildThemeNuxTrigger
-// Dependencies: [57, 31, 1345, 4047, 8417, 1334, 2]
+// Dependencies: [32, 19, 1369, 4071, 8441, 1358, 2]
 // Exports: default
 
-// Module 15106 (useGuildThemeNuxTrigger)
+// Module 15139 (useGuildThemeNuxTrigger)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
+import noop from "noop";
 import { DismissibleContentGroupName as closure_4 } from "ContentDismissActionType";
 
 const require = arg1;
@@ -22,7 +22,7 @@ export default function useGuildThemeNuxTrigger(guildId, isNuxOpen) {
   const enabledGuildThemeForGuildId = _require(isNuxOpen[3]).useEnabledGuildThemeForGuildId(guildId, "GuildThemeNuxTrigger");
   const obj = _require(isNuxOpen[3]);
   if (null != enabledGuildThemeForGuildId) {
-    const items = [_require(isNuxOpen[5]).DismissibleContent.GUILD_THEME_NUX];
+    const items = [tmp(tmp2[5]).DismissibleContent.GUILD_THEME_NUX];
     let items1 = items;
   } else {
     items1 = [];
@@ -43,19 +43,19 @@ export default function useGuildThemeNuxTrigger(guildId, isNuxOpen) {
         if (!ref.current) {
           const _setTimeout = setTimeout;
           const timeout = setTimeout(() => {
-            outer1_5.current = true;
+            closure_5.current = true;
             let c0 = false;
-            const resolved = Promise.resolve(outer1_2({
-              guildId: closure_0,
+            const resolved = Promise.resolve(callback({
+              guildId: c0,
               markAsDismissed(arg0) {
                 if (!c0) {
                   c0 = true;
-                  outer2_3(arg0, true);
+                  outer1_3(arg0, true);
                 }
               }
             }));
             resolved.catch(() => {
-              outer2_5.current = false;
+              closure_5.current = false;
             });
           }, 2000);
           return () => clearTimeout(closure_0);

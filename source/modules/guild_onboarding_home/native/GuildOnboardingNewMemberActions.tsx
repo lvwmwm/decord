@@ -1,24 +1,24 @@
-// Module ID: 15399
-// Function ID: 117243
+// Module ID: 15432
+// Function ID: 15433
 // Name: MemberActionRow
-// Dependencies: [31, 27, 5026, 1348, 1918, 1838, 3793, 4368, 4369, 653, 1853, 3781, 33, 4165, 689, 566, 4355, 1392, 11414, 5119, 3806, 4161, 1273, 10966, 4695, 1212, 11418, 15400, 1360, 15401, 2]
+// Dependencies: [19, 17, 5048, 1372, 1942, 1862, 3817, 4391, 4392, 676, 1877, 3805, 21, 4189, 712, 589, 4380, 1416, 11438, 5141, 3830, 4185, 1297, 10990, 4717, 1236, 11442, 15433, 1384, 15434, 2]
 // Exports: default
 
-// Module 15399 (MemberActionRow)
-import result from "result";
-import { View } from "registerAsset";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_6 from "_isNativeReflectConstruct";
-import closure_7 from "_isNativeReflectConstruct";
-import closure_8 from "_createForOfIteratorHelperLoose";
-import closure_9 from "_isNativeReflectConstruct";
-import closure_10 from "_isNativeReflectConstruct";
-import closure_11 from "_isNativeReflectConstruct";
+// Module 15432 (MemberActionRow)
+import preload from "preload";
+import { View } from "getAvatarURL";
+import getEmojiToGroupId from "getEmojiToGroupId";
+import ensureGuildLoaded from "ensureGuildLoaded";
+import trackCommunicationDisabled from "trackCommunicationDisabled";
+import createGuildRecordFromRust from "createGuildRecordFromRust";
+import getUncachedChannelPermissions from "getUncachedChannelPermissions";
+import handleSettingsLoadSuccess from "handleSettingsLoadSuccess";
+import set from "set";
 import { Permissions } from "ME";
 import { EMOJI_URL_BASE_SIZE } from "set";
 import { GuildMemberFlags } from "GuildMemberFlags";
-import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import jsxProd from "Text";
+import createCacheKey from "createCacheKey";
 
 let closure_15;
 let closure_16;
@@ -32,130 +32,142 @@ function MemberActionRow(channelId) {
   let id;
   let stateFromStores;
   ({ title, icon, completed } = channelId);
-  const tmp = _createForOfIteratorHelperLoose();
-  if (null == emoji) {
+  const tmp = createCacheKey();
+  if (emoji == null) {
     emoji = {};
   }
   id = emoji.id;
   const name = emoji.name;
   let obj1 = channelId(stateFromStores[15]);
-  const items = [closure_6];
+  const items = [ensureGuildLoaded];
   stateFromStores = obj1.useStateFromStores(items, () => outer1_6.getChannel(channelId));
   let obj2 = channelId(stateFromStores[15]);
-  const items1 = [closure_9];
+  const items1 = [getUncachedChannelPermissions];
   const stateFromStores1 = obj2.useStateFromStores(items1, () => outer1_9.can(outer1_12.VIEW_CHANNEL, stateFromStores));
   let obj3 = channelId(stateFromStores[15]);
-  const items2 = [_isNativeReflectConstruct];
+  const items2 = [getEmojiToGroupId];
   const items3 = [id];
   const stateFromStores2 = obj3.useStateFromStores(items2, () => {
     let customEmojiById = null;
     if (null != id) {
-      customEmojiById = outer1_5.getCustomEmojiById(id);
+      customEmojiById = outer1_5.getCustomEmojiById(tmp);
     }
     return customEmojiById;
   }, items3);
   let obj4 = id(stateFromStores[17]);
   const newMemberActionIconURL = obj4.getNewMemberActionIconURL({ channelId, icon });
   [][0] = stateFromStores;
-  let tmp8 = null;
+  let tmp11 = null;
   if (null != stateFromStores) {
-    tmp8 = null;
+    tmp11 = null;
     if (stateFromStores1) {
       if (null != newMemberActionIconURL) {
-        let obj = { style: tmp.icon };
-        obj = { uri: newMemberActionIconURL };
-        obj.source = obj;
-        obj.resizeMode = "contain";
-        let tmp17 = callback(id(stateFromStores[19]), obj);
+        let obj = { style: null, source: null, resizeMode: "contain" };
+        obj[0] = tmp.icon;
+        obj = { uri: null };
+        obj[0] = newMemberActionIconURL;
+        obj[1] = obj;
+        let tmp14 = callback(tmp5(tmp3[19]), obj);
+        let tmp15 = callback;
       } else if (null != stateFromStores2) {
-        obj1 = { style: tmp.emoji };
-        obj2 = {};
-        let obj12 = id(stateFromStores[17]);
-        obj3 = {};
-        ({ id: obj14.id, animated: obj14.animated } = stateFromStores2);
-        obj3.size = EMOJI_URL_BASE_SIZE;
-        obj2.uri = obj12.getEmojiURL(obj3);
-        obj1.source = obj2;
-        obj1.resizeMode = "contain";
-        tmp17 = callback(id(stateFromStores[19]), obj1);
-        const tmp24 = id(stateFromStores[19]);
+        obj1 = { style: null, source: null, resizeMode: "contain" };
+        obj1[0] = tmp.emoji;
+        obj2 = { uri: null };
+        let tmp5Result = tmp5(tmp3[19]);
+        tmp5Result = tmp5(tmp3[17]);
+        obj3 = { id: null, animated: null, size: null };
+        ({ id: obj14[0], animated: obj14[1] } = stateFromStores2);
+        obj3[2] = EMOJI_URL_BASE_SIZE;
+        obj2[0] = tmp5Result.getEmojiURL(obj3);
+        obj1[1] = obj2;
+        tmp14 = callback(tmp5Result, obj1);
+        tmp15 = callback;
       } else {
         if (null != name) {
-          let obj5 = id(stateFromStores[20]);
-          let obj6 = id(stateFromStores[20]);
-          if (null != obj5.getByName(obj6.convertSurrogateToName(name, false))) {
-            obj4 = { style: tmp.textEmoji, variant: "heading-xxl/normal", children: name };
-            tmp17 = callback(channelId(stateFromStores[21]).Text, obj4);
+          const tmp5Result1 = tmp5(tmp3[20]);
+          if (null != tmp5Result1.getByName(tmp5Result2.convertSurrogateToName(name, false))) {
+            obj4 = { style: null, variant: "heading-xxl/normal", children: null };
+            obj4[0] = tmp.textEmoji;
+            obj4[2] = name;
+            tmp14 = callback(tmp2(tmp3[21]).Text, obj4);
+            tmp15 = callback;
           }
+          tmp5Result2 = tmp5(tmp3[20]);
         }
-        obj5 = { style: tmp.emojiPlaceholder };
-        obj6 = { size: channelId(stateFromStores[22]).Icon.Sizes.REFRESH_SMALL_16, source: id(stateFromStores[23]) };
-        obj5.children = callback(channelId(stateFromStores[22]).Icon, obj6);
-        tmp17 = callback(View, obj5);
+        const obj5 = { style: null, children: null };
+        obj5[0] = tmp.emojiPlaceholder;
+        const obj6 = { size: null, source: null };
+        obj6[0] = tmp2(tmp3[22]).Icon.Sizes.REFRESH_SMALL_16;
+        obj6[1] = tmp5(tmp3[23]);
+        obj5[1] = callback(tmp2(tmp3[22]).Icon, obj6);
+        tmp14 = callback(View, obj5);
+        tmp15 = callback;
       }
-      const obj7 = { onPress: tmp7, style: tmp.actionContainer };
-      const items4 = [tmp17, , ];
-      const obj8 = { style: tmp.channelNameContainer };
-      const obj9 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: title };
-      const items5 = [callback(channelId(stateFromStores[21]).Text, obj9), ];
-      const obj10 = { variant: "text-xs/normal", color: "text-muted" };
-      const intl = channelId(stateFromStores[25]).intl;
-      const obj11 = { channelName: tmp3 };
-      obj10.children = intl.format(channelId(stateFromStores[25]).t.MkzlDL, obj11);
-      items5[1] = callback(channelId(stateFromStores[21]).Text, obj10);
-      obj8.children = items5;
+      const obj7 = { onPress: null, style: null, children: null };
+      obj7[0] = tmp10;
+      obj7[1] = tmp.actionContainer;
+      const items4 = [tmp14, , ];
+      const obj8 = { style: null, children: null };
+      obj8[0] = tmp.channelNameContainer;
+      const obj9 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: null };
+      obj9[2] = title;
+      const items5 = [tmp15(tmp2(tmp3[21]).Text, obj9), ];
+      const obj10 = { variant: "text-xs/normal", color: "text-muted", children: null };
+      const intl = tmp2(tmp3[25]).intl;
+      const obj11 = { channelName: null };
+      obj11[0] = tmp6;
+      obj10[2] = intl.format(tmp2(tmp3[25]).t.MkzlDL, obj11);
+      items5[1] = tmp15(tmp2(tmp3[21]).Text, obj10);
+      obj8[1] = items5;
       items4[1] = callback2(View, obj8);
-      obj12 = { disableColor: true, size: channelId(stateFromStores[22]).Icon.Sizes.MEDIUM };
-      if (completed) {
-        let tmp39 = tmp38[26];
-      } else {
-        tmp39 = tmp38[27];
-      }
-      obj12.source = id(tmp39);
-      obj12 = callback(channelId(stateFromStores[22]).Icon, obj12);
-      items4[2] = obj12;
-      obj7.children = items4;
-      callback2(channelId(stateFromStores[24]).PressableOpacity, obj7);
-      const tmp29 = callback2;
-      const tmp36 = callback;
-      const tmp37 = id;
+      const obj12 = { disableColor: true, size: null, source: null };
+      obj12[1] = tmp2(tmp3[22]).Icon.Sizes.MEDIUM;
+      obj12[2] = tmp5(completed ? tmp3[26] : tmp3[27]);
+      tmp15 = tmp15(tmp2(tmp3[22]).Icon, obj12);
+      items4[2] = tmp15;
+      obj7[2] = items4;
+      callback2(tmp2(tmp3[24]).PressableOpacity, obj7);
+      const tmp21 = callback2;
     }
   }
-  return tmp8;
+  return tmp11;
 }
 ({ jsx: closure_15, jsxs: closure_16 } = jsxProd);
-_createForOfIteratorHelperLoose = { actionsContainer: { paddingHorizontal: 12 }, actionsHeader: { display: "flex", marginBottom: 16 } };
-_createForOfIteratorHelperLoose = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW, marginBottom: 8, padding: 12, borderRadius: require("_createForOfIteratorHelperLoose").radii.sm, display: "flex", flexDirection: "row", alignItems: "center" };
-_createForOfIteratorHelperLoose.actionContainer = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.channelNameContainer = { flex: 1, marginHorizontal: 8 };
-let obj1 = { width: 40, height: 40, borderRadius: require("_createForOfIteratorHelperLoose").radii.xs };
-_createForOfIteratorHelperLoose.icon = obj1;
-_createForOfIteratorHelperLoose.emoji = { width: 40, height: 40 };
-_createForOfIteratorHelperLoose.textEmoji = { width: 40, textAlign: "center" };
-let obj2 = { width: 40, height: 40, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWEST, borderRadius: 20, display: "flex", alignItems: "center", justifyContent: "center" };
-_createForOfIteratorHelperLoose.emojiPlaceholder = obj2;
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/guild_onboarding_home/native/GuildOnboardingNewMemberActions.tsx");
+createCacheKey = { actionsContainer: { paddingHorizontal: 12 }, actionsHeader: { display: "flex", marginBottom: 16 }, actionContainer: null, channelNameContainer: null, icon: null, emoji: null, textEmoji: null, emojiPlaceholder: null };
+createCacheKey = { backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW, marginBottom: 8, padding: 12, borderRadius: require("Themes").radii.sm, display: "flex", flexDirection: "row", alignItems: "center" };
+createCacheKey[2] = createCacheKey;
+createCacheKey[3] = { flex: 1, marginHorizontal: 8 };
+createCacheKey[4] = { width: 40, height: 40, borderRadius: require("Themes").radii.xs };
+createCacheKey[5] = { width: 40, height: 40 };
+createCacheKey[6] = { width: 40, textAlign: "center" };
+let obj1 = { width: 40, height: 40, borderRadius: require("Themes").radii.xs };
+createCacheKey[7] = { width: 40, height: 40, backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOWEST, borderRadius: 20, display: "flex", alignItems: "center", justifyContent: "center" };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let obj2 = { width: 40, height: 40, backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOWEST, borderRadius: 20, display: "flex", alignItems: "center", justifyContent: "center" };
+const result = require("getEmojiToGroupId").fileFinishedImporting("modules/guild_onboarding_home/native/GuildOnboardingNewMemberActions.tsx");
 
 export default function GuildOnboardingNewMemberActions(guildId) {
   guildId = guildId.guildId;
-  let tmp = _createForOfIteratorHelperLoose();
+  let stateFromStores1;
+  let stateFromStores2;
+  let stateFromStores3;
+  const tmp = createCacheKey();
   let obj = guildId(stateFromStores2[15]);
-  const items = [closure_10];
+  const items = [handleSettingsLoadSuccess];
   const items1 = [guildId];
   const stateFromStores = obj.useStateFromStores(items, () => outer1_10.getNewMemberActions(guildId), items1);
   let obj1 = guildId(stateFromStores2[15]);
-  const items2 = [closure_11];
-  const stateFromStores1 = obj1.useStateFromStores(items2, () => outer1_11.getCompletedActions(guildId));
+  const items2 = [set];
+  stateFromStores1 = obj1.useStateFromStores(items2, () => outer1_11.getCompletedActions(guildId));
   let obj2 = guildId(stateFromStores2[15]);
-  const items3 = [closure_7];
+  const items3 = [trackCommunicationDisabled];
   stateFromStores2 = obj2.useStateFromStores(items3, () => outer1_7.getSelfMember(guildId));
   let obj3 = guildId(stateFromStores2[15]);
-  const items4 = [closure_8];
-  const stateFromStores3 = obj3.useStateFromStores(items4, () => outer1_8.getGuild(guildId));
+  const items4 = [createGuildRecordFromRust];
+  stateFromStores3 = obj3.useStateFromStores(items4, () => outer1_8.getGuild(guildId));
   const items5 = [stateFromStores1, guildId, ];
   let flags;
-  if (null != stateFromStores2) {
+  if (stateFromStores2 != null) {
     flags = stateFromStores2.flags;
   }
   items5[2] = flags;
@@ -163,18 +175,17 @@ export default function GuildOnboardingNewMemberActions(guildId) {
     let hasFlagResult = null == stateFromStores1;
     if (hasFlagResult) {
       let flags;
-      if (null != stateFromStores2) {
+      if (stateFromStores2 != null) {
         flags = stateFromStores2.flags;
       }
       hasFlagResult = null != flags;
     }
     if (hasFlagResult) {
-      flags = stateFromStores2.flags;
-      let num2 = 0;
-      if (null != flags) {
-        num2 = flags;
+      let num = stateFromStores2.flags;
+      if (num == null) {
+        num = 0;
       }
-      hasFlagResult = guildId(stateFromStores2[28]).hasFlag(num2, outer1_14.STARTED_HOME_ACTIONS);
+      hasFlagResult = guildId(stateFromStores2[28]).hasFlag(num, outer1_14.STARTED_HOME_ACTIONS);
       const obj = guildId(stateFromStores2[28]);
     }
     if (hasFlagResult) {
@@ -183,58 +194,67 @@ export default function GuildOnboardingNewMemberActions(guildId) {
     }
   }, items5);
   [][0] = stateFromStores3;
-  let tmp22Result = null;
+  let tmp15Result = null;
   if (null != stateFromStores2) {
-    tmp22Result = null;
+    tmp15Result = null;
     if (null != stateFromStores) {
-      tmp22Result = null;
+      tmp15Result = null;
       if (0 !== stateFromStores.length) {
-        obj = { style: tmp.actionsContainer };
-        obj = { style: tmp.actionsHeader };
-        obj1 = { variant: "heading-lg/bold", color: "mobile-text-heading-primary" };
-        const intl2 = guildId(stateFromStores2[25]).intl;
-        obj1.children = intl2.string(guildId(stateFromStores2[25]).t.LhlgY9);
-        obj.children = callback(guildId(stateFromStores2[21]).Text, obj1);
+        obj = { style: null, children: null };
+        obj[0] = tmp.actionsContainer;
+        obj = { style: null, children: null };
+        obj[0] = tmp.actionsHeader;
+        obj1 = { variant: "heading-lg/bold", color: "mobile-text-heading-primary", children: null };
+        const intl2 = tmp2(tmp3[25]).intl;
+        obj1[2] = intl2.string(tmp2(tmp3[25]).t.LhlgY9);
+        obj[1] = callback(tmp2(tmp3[21]).Text, obj1);
         const items6 = [
           callback(View, obj),
           stateFromStores.map((channelId) => {
-                  const obj = { channelId: channelId.channelId, title: channelId.title, emoji: channelId.emoji, icon: channelId.icon };
-                  let tmp3;
-                  if (null != stateFromStores1) {
-                    tmp3 = stateFromStores1[channelId.channelId];
+                  const obj = { channelId: channelId.channelId, title: channelId.title, emoji: channelId.emoji, icon: channelId.icon, completed: null };
+                  let flag;
+                  if (stateFromStores1 != null) {
+                    flag = tmp3[channelId.channelId];
                   }
-                  obj.completed = null != tmp3 && tmp3;
+                  if (flag == null) {
+                    flag = false;
+                  }
+                  obj[4] = flag;
                   return outer1_15(outer1_18, obj, "member-action-" + channelId.channelId);
                 }),
 
         ];
         let rulesChannelId;
-        if (null != stateFromStores3) {
+        if (stateFromStores3 != null) {
           rulesChannelId = stateFromStores3.rulesChannelId;
         }
-        let tmp11 = null != rulesChannelId;
-        if (tmp11) {
-          obj2 = { onPress: tmp8, style: tmp.actionContainer };
-          obj3 = { style: tmp.emojiPlaceholder };
-          const obj4 = { size: guildId(stateFromStores2[22]).Icon.Sizes.REFRESH_SMALL_16, source: stateFromStores1(stateFromStores2[29]) };
-          obj3.children = callback(guildId(stateFromStores2[22]).Icon, obj4);
-          const items7 = [callback(View, obj3), ];
-          const obj5 = { style: tmp.channelNameContainer };
-          const obj6 = { variant: "text-md/semibold", color: "mobile-text-heading-primary" };
-          const intl = guildId(stateFromStores2[25]).intl;
-          obj6.children = intl.string(guildId(stateFromStores2[25]).t["K/i3iQ"]);
-          obj5.children = callback(guildId(stateFromStores2[21]).Text, obj6);
-          items7[1] = callback(View, obj5);
-          obj2.children = items7;
-          tmp11 = callback2(guildId(stateFromStores2[24]).PressableOpacity, obj2);
+        tmp15Result = null != rulesChannelId;
+        if (tmp15Result) {
+          obj2 = { onPress: null, style: null, children: null };
+          obj2[0] = tmp10;
+          obj2[1] = tmp.actionContainer;
+          obj3 = { style: null, children: null };
+          obj3[0] = tmp.emojiPlaceholder;
+          const obj4 = { size: null, source: null };
+          obj4[0] = tmp2(tmp3[22]).Icon.Sizes.REFRESH_SMALL_16;
+          obj4[1] = stateFromStores1(tmp3[29]);
+          obj3[1] = tmp17(tmp2(tmp3[22]).Icon, obj4);
+          const items7 = [tmp17(tmp16, obj3), ];
+          const obj5 = { style: null, children: null };
+          obj5[0] = tmp.channelNameContainer;
+          const obj6 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: null };
+          const intl = tmp2(tmp3[25]).intl;
+          obj6[2] = intl.string(tmp2(tmp3[25]).t["K/i3iQ"]);
+          obj5[1] = tmp17(tmp2(tmp3[21]).Text, obj6);
+          items7[1] = tmp17(tmp16, obj5);
+          obj2[2] = items7;
+          tmp15Result = tmp15(tmp2(tmp3[24]).PressableOpacity, obj2);
         }
-        items6[2] = tmp11;
-        obj.children = items6;
-        tmp22Result = callback2(View, obj);
-        const tmp22 = callback2;
-        const tmp23 = View;
+        items6[2] = tmp15Result;
+        obj[1] = items6;
+        tmp15Result = tmp15(tmp16, obj);
       }
     }
   }
-  return tmp22Result;
+  return tmp15Result;
 };

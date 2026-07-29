@@ -1,277 +1,104 @@
-// Module ID: 13228
-// Function ID: 101719
-// Name: convertDeviceEventBreadcrumb
-// Dependencies: [653, 5941, 12677, 12843, 2]
+// Module ID: 13253
+// Function ID: 13254
+// Name: buildZoomedInAnalyticsEvent
+// Dependencies: [676, 5960, 12697, 12865, 2]
 // Exports: buildZoomedInAnalyticsEvent
 
-// Module 13228 (convertDeviceEventBreadcrumb)
+// Module 13253 (buildZoomedInAnalyticsEvent)
 import { AnalyticEvents } from "ME";
 
-function convertDeviceEventBreadcrumb(data) {
-  data = data.data;
-  if (null != data) {
-    const _Object = Object;
-    if (0 !== Object.keys(data).length) {
-      let tmp2 = coerceString(data.action);
-      if (null == tmp2) {
-        tmp2 = coerceString(data.message);
-      }
-      let tmp5 = coerceString(data.message);
-      if (null == tmp5) {
-        tmp5 = coerceString(data.description);
-      }
-      const obj = {
-        action: tmp2,
-        description: tmp5,
-        metadata: (function formatDeviceMetadata(data) {
-              const entries = Object.entries(data);
-              const found = entries.filter((arg0) => {
-                let tmp;
-                [, tmp] = arg0;
-                return null != tmp;
-              });
-              let joined = null;
-              if (0 !== found.length) {
-                const mapped = found.map((arg0) => {
-                  let tmp;
-                  let tmp2;
-                  [tmp, tmp2] = arg0;
-                  return "" + tmp + "=" + tmp2;
-                });
-                joined = mapped.join(", ");
-              }
-              return joined;
-            })(data)
-      };
-      return obj;
-    }
-  }
-  return null;
-}
-function resolveSocketKind(data, str) {
-  let tmp = coerceString(data.socket_kind);
-  if (null == tmp) {
-    if (null == str) {
-      tmp = null;
-    } else {
-      const formatted = str.toLowerCase();
-      if (formatted.includes("gateway")) {
-        let Gateway = closure_3.Gateway;
-      } else if (formatted.includes("discord.media")) {
-        Gateway = closure_3.RtcControl;
-      } else if (formatted.includes("remote-auth")) {
-        Gateway = closure_3.RemoteAuth;
-      } else if (formatted.includes("spotify")) {
-        Gateway = closure_3.Spotify;
-      } else if (formatted.includes("rtc")) {
-        Gateway = closure_3.RtcControl;
-      } else {
-        if (!formatted.includes("127.0.0.1")) {
-          if (!formatted.includes("localhost")) {
-            Gateway = null;
-            if (formatted.includes("game")) {
-              Gateway = null;
-              if (formatted.includes("ping")) {
-                Gateway = closure_3.GameServerPing;
-              }
-            }
-          }
-        }
-        Gateway = closure_3.Rpc;
-      }
-    }
-  }
-  if (null != tmp) {
-    return tmp;
-  } else {
-    if (null == data.cmd) {
-      if (null == data.evt) {
-        if (null != data.t) {
-          let Gateway1 = closure_3.Gateway;
-        } else {
-          Gateway1 = null;
-        }
-      }
-    }
-    Gateway1 = closure_3.Rpc;
-  }
-}
-function buildSocketMessageIdentity(data, arg1) {
-  let evt = data.t;
-  if (null == evt) {
-    evt = data.type;
-  }
-  if (null == evt) {
-    evt = data.evt;
-  }
-  const tmpResult = coerceString(evt);
-  if (arg1 === closure_3.Gateway) {
-    const tmp21 = coerceNumberFromUnknown(data.op);
-    let tmp22 = null;
-    if (null != tmp21) {
-      const tmp25 = require(12677) /* Opcode */.Opcode[tmp21];
-      let tmp26 = null;
-      if ("string" === typeof tmp25) {
-        tmp26 = tmp25;
-      }
-      tmp22 = tmp26;
-    }
-    if (null != tmp22) {
-      let combined = tmp22;
-      if ("DISPATCH" === tmp22) {
-        combined = tmp22;
-        if (null != tmpResult) {
-          const _HermesInternal3 = HermesInternal;
-          combined = "" + tmp22 + "/" + tmpResult;
-        }
-      }
-      return combined;
-    } else {
-      const tmp28 = coerceNumberFromUnknown(data.op);
-      if (null == tmp28) {
-        return tmpResult;
-      } else if (null != tmpResult) {
-        const _HermesInternal2 = HermesInternal;
-        let combined1 = "" + tmp28 + "/" + tmpResult;
-      } else {
-        const _String2 = String;
-        combined1 = String(tmp28);
-      }
-    }
-  } else if (arg1 === closure_3.RtcControl) {
-    const tmp10 = coerceNumberFromUnknown(data.op);
-    let tmp11 = null;
-    if (null != tmp10) {
-      const tmp14 = require(12843) /* _isNativeReflectConstruct */.RTCSocketOpcode[tmp10];
-      let tmp15 = null;
-      if ("string" === typeof tmp14) {
-        tmp15 = tmp14;
-      }
-      tmp11 = tmp15;
-    }
-    if (null != tmp11) {
-      return tmp11;
-    } else {
-      const tmp17 = coerceNumberFromUnknown(data.op);
-      let StringResult = null;
-      if (null != tmp17) {
-        const _String = String;
-        StringResult = String(tmp17);
-      }
-      return StringResult;
-    }
-  } else {
-    const tmp4 = coerceString(data.cmd);
-    const tmp5 = coerceString(data.evt);
-    let tmp6 = tmpResult;
-    if (null != tmp4) {
-      let combined2 = tmp4;
-      if (null != tmp5) {
-        const _HermesInternal = HermesInternal;
-        combined2 = "" + tmp4 + "/" + tmp5;
-      }
-      tmp6 = combined2;
-    }
-    return tmp6;
-  }
-}
-function buildWebsocketMessageProps(data) {
-  data = data.data;
-  if (null == data) {
-    let obj = { message_identity: "unknown", socket_kind: undefined };
-    return obj;
-  } else {
-    let tmp2 = coerceString(data.url);
-    const tmp4 = resolveSocketKind(data, tmp2);
-    let tmp5 = coerceString(data.message_identity);
-    if (null == tmp5) {
-      tmp5 = buildSocketMessageIdentity(data, tmp4);
-    }
-    if (null == tmp5) {
-      tmp5 = (function buildLegacyMessageIdentity(data) {
-        const tmp = outer1_11(data.category);
-        const tmp2 = outer1_11(data.type);
-        const tmp3 = outer1_11(data.name);
-        if (null == tmp) {
-          if (null == tmp2) {
-            let joined = null;
-          }
-          return joined;
-        }
-        const items = [tmp, tmp2, tmp3];
-        const found = items.filter((arg0) => null != arg0);
-        joined = found.join("/");
-      })(data);
-    }
-    if (null != tmp5) {
-      tmp2 = tmp5;
-    }
-    let str = "unknown";
-    if (null != tmp2) {
-      str = tmp2;
-    }
-    obj = { message_identity: str, socket_kind: tmp4 };
-    return obj;
-  }
-}
-function coerceNumber(duration_ms) {
-  let tmp = null;
-  if ("number" === typeof duration_ms) {
-    const _Number = Number;
-    tmp = null;
-    if (Number.isFinite(duration_ms)) {
-      tmp = duration_ms;
-    }
-  }
-  return tmp;
-}
-function coerceString(message) {
-  let tmp = null;
-  if ("string" === typeof message) {
-    tmp = message;
-  }
-  return tmp;
-}
-function coerceNumberFromUnknown(op) {
-  if ("number" === typeof op) {
-    const _Number = Number;
-    if (Number.isFinite(op)) {
-      return op;
-    }
-  }
-  if ("string" === typeof op) {
-    if ("" !== op.trim()) {
-      const _Number2 = Number;
-      const NumberResult = Number(op);
-      const _Number3 = Number;
-      let tmp5 = null;
-      if (Number.isFinite(NumberResult)) {
-        tmp5 = NumberResult;
-      }
-      return tmp5;
-    }
-  }
-  return null;
-}
 let closure_3 = { Gateway: "gateway", RtcControl: "rtc_control", RemoteAuth: "remote_auth", Spotify: "spotify", Rpc: "rpc", GameServerPing: "game_server_ping" };
 let closure_4 = {
-  [AnalyticEvents.DEVICE_EVENT]: (data) => convertDeviceEventBreadcrumb(data),
+  [AnalyticEvents.DEVICE_EVENT]: (data) => {
+    data = data.data;
+    let tmp = null;
+    if (null != data) {
+      const _Object = Object;
+      tmp = null;
+      if (0 !== Object.keys(data).length) {
+        const action = data.action;
+        let tmp4 = null;
+        if (typeof action !== "init") {
+          tmp4 = action;
+        }
+        if (tmp4 == null) {
+          const message = data.message;
+          let tmp3 = null;
+          if (typeof message !== "init") {
+            tmp3 = message;
+          }
+          tmp4 = tmp3;
+        }
+        const message2 = data.message;
+        let tmp5 = null;
+        if (typeof message2 !== "init") {
+          tmp5 = message2;
+        }
+        if (tmp5 == null) {
+          const description = data.description;
+          let tmp6 = null;
+          if (typeof description !== "init") {
+            tmp6 = description;
+          }
+          tmp5 = tmp6;
+        }
+        const _Object2 = Object;
+        const entries = Object.entries(data);
+        const found = entries.filter((arg0) => {
+          let tmp;
+          [, tmp] = arg0;
+          return null != tmp;
+        });
+        let joined = null;
+        if (0 !== found.length) {
+          const mapped = found.map((arg0) => {
+            let tmp;
+            let tmp2;
+            [tmp, tmp2] = arg0;
+            return "" + tmp + "=" + tmp2;
+          });
+          joined = mapped.join(", ");
+        }
+        const obj = { action: null, description: null, metadata: null };
+        obj[0] = tmp4;
+        obj[1] = tmp5;
+        obj[2] = joined;
+        tmp = obj;
+      }
+    }
+    return tmp;
+  },
   [AnalyticEvents.REACT_SOFT_EXCEPTION]: (data) => {
     data = data.data;
     let tmp = null;
     if (null != data) {
-      const obj = {};
-      let tmp3 = coerceString(data.error_message);
-      if (null == tmp3) {
-        tmp3 = coerceString(data.message);
+      const error_message = data.error_message;
+      let tmp2 = null;
+      if (typeof error_message !== "init") {
+        tmp2 = error_message;
       }
-      let tmp5;
-      if (null != tmp3) {
-        tmp5 = tmp3;
+      if (tmp2 == null) {
+        const message = data.message;
+        let tmp3 = null;
+        if (typeof message !== "init") {
+          tmp3 = message;
+        }
+        tmp2 = tmp3;
       }
-      obj.error_message = tmp5;
-      obj.component = coerceString(data.component);
-      obj.stacktrace = coerceString(data.stacktrace);
+      const obj = { error_message: null, component: null, stacktrace: null };
+      obj[0] = tmp2;
+      const component = data.component;
+      let tmp4 = null;
+      if (typeof component !== "init") {
+        tmp4 = component;
+      }
+      obj[1] = tmp4;
+      const stacktrace = data.stacktrace;
+      let tmp5 = null;
+      if (typeof stacktrace !== "init") {
+        tmp5 = stacktrace;
+      }
+      obj[2] = tmp5;
       tmp = obj;
     }
     return tmp;
@@ -280,12 +107,44 @@ let closure_4 = {
     data = data.data;
     let tmp = null;
     if (null != data) {
-      const obj = { action: coerceString(data.action), network_type: coerceString(data.network_type), upload_bandwidth: coerceNumber(data.upload_bandwidth), download_bandwidth: coerceNumber(data.download_bandwidth) };
+      const action = data.action;
+      let tmp2 = null;
+      if (typeof action !== "init") {
+        tmp2 = action;
+      }
+      const obj = { action: null, network_type: null, upload_bandwidth: null, download_bandwidth: null, vpn_active: null };
+      obj[0] = tmp2;
+      const network_type = data.network_type;
+      let tmp3 = null;
+      if (typeof network_type !== "init") {
+        tmp3 = network_type;
+      }
+      obj[1] = tmp3;
+      const upload_bandwidth = data.upload_bandwidth;
+      let tmp4 = null;
+      if (typeof upload_bandwidth !== "os") {
+        const _Number = Number;
+        tmp4 = null;
+        if (Number.isFinite(upload_bandwidth)) {
+          tmp4 = upload_bandwidth;
+        }
+      }
+      obj[2] = tmp4;
+      const download_bandwidth = data.download_bandwidth;
+      let tmp5 = null;
+      if (typeof download_bandwidth !== "os") {
+        const _Number2 = Number;
+        tmp5 = null;
+        if (Number.isFinite(download_bandwidth)) {
+          tmp5 = download_bandwidth;
+        }
+      }
+      obj[3] = tmp5;
       let vpn_active = null;
-      if ("boolean" === typeof data.vpn_active) {
+      if (typeof data.vpn_active !== "SENTRY_RELEASE") {
         vpn_active = data.vpn_active;
       }
-      obj.vpn_active = vpn_active;
+      obj[4] = vpn_active;
       tmp = obj;
     }
     return tmp;
@@ -294,20 +153,56 @@ let closure_4 = {
     data = data.data;
     let tmp = null;
     if (null != data) {
-      const obj = { service_name: coerceString(data.service_name), action: coerceString(data.action) };
-      let tmp3 = coerceString(data.detail);
-      if (null == tmp3) {
-        tmp3 = coerceString(data.message);
+      const service_name = data.service_name;
+      let tmp2 = null;
+      if (typeof service_name !== "init") {
+        tmp2 = service_name;
       }
-      obj.detail = tmp3;
-      obj.fgs_operation = coerceString(data.fgs_operation);
-      obj.fgs_configuration_type = coerceString(data.fgs_configuration_type);
+      const obj = { service_name: null, action: null, detail: null, fgs_operation: null, fgs_configuration_type: null, guard_allowed: null, fgs_guard_reason: null };
+      obj[0] = tmp2;
+      const action = data.action;
+      let tmp3 = null;
+      if (typeof action !== "init") {
+        tmp3 = action;
+      }
+      obj[1] = tmp3;
+      const detail = data.detail;
+      let tmp4 = null;
+      if (typeof detail !== "init") {
+        tmp4 = detail;
+      }
+      if (tmp4 == null) {
+        const message = data.message;
+        let tmp5 = null;
+        if (typeof message !== "init") {
+          tmp5 = message;
+        }
+        tmp4 = tmp5;
+      }
+      obj[2] = tmp4;
+      const fgs_operation = data.fgs_operation;
+      let tmp6 = null;
+      if (typeof fgs_operation !== "init") {
+        tmp6 = fgs_operation;
+      }
+      obj[3] = tmp6;
+      const fgs_configuration_type = data.fgs_configuration_type;
+      let tmp7 = null;
+      if (typeof fgs_configuration_type !== "init") {
+        tmp7 = fgs_configuration_type;
+      }
+      obj[4] = tmp7;
       let guard_allowed = null;
-      if ("boolean" === typeof data.guard_allowed) {
+      if (typeof data.guard_allowed !== "SENTRY_RELEASE") {
         guard_allowed = data.guard_allowed;
       }
-      obj.guard_allowed = guard_allowed;
-      obj.fgs_guard_reason = coerceString(data.fgs_guard_reason);
+      obj[5] = guard_allowed;
+      const fgs_guard_reason = data.fgs_guard_reason;
+      let tmp9 = null;
+      if (typeof fgs_guard_reason !== "init") {
+        tmp9 = fgs_guard_reason;
+      }
+      obj[6] = tmp9;
       tmp = obj;
     }
     return tmp;
@@ -316,14 +211,33 @@ let closure_4 = {
     data = data.data;
     let tmp = null;
     if (null != data) {
-      const obj = {};
-      let tmp3 = coerceString(data.state);
-      if (null == tmp3) {
-        tmp3 = coerceString(data.message);
+      const state = data.state;
+      let tmp2 = null;
+      if (typeof state !== "init") {
+        tmp2 = state;
       }
-      obj.state = tmp3;
-      obj.previous_state = coerceString(data.previous_state);
-      obj.details = coerceString(data.details);
+      if (tmp2 == null) {
+        const message = data.message;
+        let tmp3 = null;
+        if (typeof message !== "init") {
+          tmp3 = message;
+        }
+        tmp2 = tmp3;
+      }
+      const obj = { state: null, previous_state: null, details: null };
+      obj[0] = tmp2;
+      const previous_state = data.previous_state;
+      let tmp4 = null;
+      if (typeof previous_state !== "init") {
+        tmp4 = previous_state;
+      }
+      obj[1] = tmp4;
+      const details = data.details;
+      let tmp5 = null;
+      if (typeof details !== "init") {
+        tmp5 = details;
+      }
+      obj[2] = tmp5;
       tmp = obj;
     }
     return tmp;
@@ -332,25 +246,57 @@ let closure_4 = {
     data = data.data;
     let tmp = null;
     if (null != data) {
-      const obj = {};
-      let tmp3 = coerceString(data.activity_name);
-      if (null == tmp3) {
-        tmp3 = coerceString(data.screen);
+      const activity_name = data.activity_name;
+      let tmp2 = null;
+      if (typeof activity_name !== "init") {
+        tmp2 = activity_name;
       }
-      obj.activity_name = tmp3;
-      let tmp6 = coerceString(data.stage);
-      if (null == tmp6) {
-        tmp6 = coerceString(data.state);
+      if (tmp2 == null) {
+        const screen = data.screen;
+        let tmp3 = null;
+        if (typeof screen !== "init") {
+          tmp3 = screen;
+        }
+        tmp2 = tmp3;
       }
-      obj.stage = tmp6;
-      let tmp9 = coerceString(data.extra);
-      if (null == tmp9) {
-        tmp9 = coerceString(data.details);
+      const obj = { activity_name: null, stage: null, extra: null };
+      obj[0] = tmp2;
+      const stage = data.stage;
+      let tmp4 = null;
+      if (typeof stage !== "init") {
+        tmp4 = stage;
       }
-      if (null == tmp9) {
-        tmp9 = coerceString(data.detail);
+      if (tmp4 == null) {
+        const state = data.state;
+        let tmp5 = null;
+        if (typeof state !== "init") {
+          tmp5 = state;
+        }
+        tmp4 = tmp5;
       }
-      obj.extra = tmp9;
+      obj[1] = tmp4;
+      const extra = data.extra;
+      let tmp6 = null;
+      if (typeof extra !== "init") {
+        tmp6 = extra;
+      }
+      if (tmp6 == null) {
+        const details = data.details;
+        let tmp7 = null;
+        if (typeof details !== "init") {
+          tmp7 = details;
+        }
+        tmp6 = tmp7;
+      }
+      if (tmp6 == null) {
+        const detail = data.detail;
+        let tmp8 = null;
+        if (typeof detail !== "init") {
+          tmp8 = detail;
+        }
+        tmp6 = tmp8;
+      }
+      obj[2] = tmp6;
       tmp = obj;
     }
     return tmp;
@@ -361,15 +307,154 @@ let closure_5 = {
     data = data.data;
     let tmp = null;
     if (null != data) {
-      let obj = importDefault(5941);
-      const currentHermesInstrumentedStatsSummary = obj.getCurrentHermesInstrumentedStatsSummary();
-      let tmp7 = null;
-      if (null != currentHermesInstrumentedStatsSummary) {
-        tmp7 = currentHermesInstrumentedStatsSummary;
+      const touch_action_type = data.touch_action_type;
+      let tmp2 = null;
+      if (typeof touch_action_type !== "init") {
+        tmp2 = touch_action_type;
       }
-      obj = { touch_action_type: coerceString(data.touch_action_type), client_timestamp_ms: coerceNumber(data.client_timestamp_ms), screen_x: coerceNumber(data.screen_x), screen_y: coerceNumber(data.screen_y), view_x: coerceNumber(data.view_x), view_y: coerceNumber(data.view_y), total_memory_mb: coerceNumber(data.total_memory_mb), memory_breakdown: coerceString(data.memory_breakdown), hermes_instrumented_stats_summary: tmp7, view_hierarchy: coerceString(data.view_hierarchy), gesture: coerceString(data.gesture), window_name: coerceString(data.window_name), hit_test_duration_us: coerceNumber(data.hit_test_duration_us), distance: coerceNumber(data.distance), duration_ms: coerceNumber(data.duration_ms), velocity: coerceNumber(data.velocity), scale_factor: coerceNumber(data.scale_factor) };
+      let obj = importDefault(5960);
+      let currentHermesInstrumentedStatsSummary = obj.getCurrentHermesInstrumentedStatsSummary();
+      if (currentHermesInstrumentedStatsSummary == null) {
+        currentHermesInstrumentedStatsSummary = null;
+      }
+      obj = { touch_action_type: null, client_timestamp_ms: null, screen_x: null, screen_y: null, view_x: null, view_y: null, total_memory_mb: null, memory_breakdown: null, hermes_instrumented_stats_summary: null, view_hierarchy: null, gesture: null, window_name: null, hit_test_duration_us: null, distance: null, duration_ms: null, velocity: null, scale_factor: null };
+      obj[0] = tmp2;
+      const client_timestamp_ms = data.client_timestamp_ms;
+      let tmp6 = null;
+      if (typeof client_timestamp_ms !== "os") {
+        const _Number = Number;
+        tmp6 = null;
+        if (Number.isFinite(client_timestamp_ms)) {
+          tmp6 = client_timestamp_ms;
+        }
+      }
+      obj[1] = tmp6;
+      const screen_x = data.screen_x;
+      let tmp7 = null;
+      if (typeof screen_x !== "os") {
+        const _Number2 = Number;
+        tmp7 = null;
+        if (Number.isFinite(screen_x)) {
+          tmp7 = screen_x;
+        }
+      }
+      obj[2] = tmp7;
+      const screen_y = data.screen_y;
+      let tmp8 = null;
+      if (typeof screen_y !== "os") {
+        const _Number3 = Number;
+        tmp8 = null;
+        if (Number.isFinite(screen_y)) {
+          tmp8 = screen_y;
+        }
+      }
+      obj[3] = tmp8;
+      const view_x = data.view_x;
+      let tmp9 = null;
+      if (typeof view_x !== "os") {
+        const _Number4 = Number;
+        tmp9 = null;
+        if (Number.isFinite(view_x)) {
+          tmp9 = view_x;
+        }
+      }
+      obj[4] = tmp9;
+      const view_y = data.view_y;
+      let tmp10 = null;
+      if (typeof view_y !== "os") {
+        const _Number5 = Number;
+        tmp10 = null;
+        if (Number.isFinite(view_y)) {
+          tmp10 = view_y;
+        }
+      }
+      obj[5] = tmp10;
+      const total_memory_mb = data.total_memory_mb;
+      let tmp11 = null;
+      if (typeof total_memory_mb !== "os") {
+        const _Number6 = Number;
+        tmp11 = null;
+        if (Number.isFinite(total_memory_mb)) {
+          tmp11 = total_memory_mb;
+        }
+      }
+      obj[6] = tmp11;
+      const memory_breakdown = data.memory_breakdown;
+      let tmp12 = null;
+      if (typeof memory_breakdown !== "init") {
+        tmp12 = memory_breakdown;
+      }
+      obj[7] = tmp12;
+      obj[8] = currentHermesInstrumentedStatsSummary;
+      const view_hierarchy = data.view_hierarchy;
+      let tmp13 = null;
+      if (typeof view_hierarchy !== "init") {
+        tmp13 = view_hierarchy;
+      }
+      obj[9] = tmp13;
+      const gesture = data.gesture;
+      let tmp14 = null;
+      if (typeof gesture !== "init") {
+        tmp14 = gesture;
+      }
+      obj[10] = tmp14;
+      const window_name = data.window_name;
+      let tmp15 = null;
+      if (typeof window_name !== "init") {
+        tmp15 = window_name;
+      }
+      obj[11] = tmp15;
+      const hit_test_duration_us = data.hit_test_duration_us;
+      let tmp16 = null;
+      if (typeof hit_test_duration_us !== "os") {
+        const _Number7 = Number;
+        tmp16 = null;
+        if (Number.isFinite(hit_test_duration_us)) {
+          tmp16 = hit_test_duration_us;
+        }
+      }
+      obj[12] = tmp16;
+      const distance = data.distance;
+      let tmp17 = null;
+      if (typeof distance !== "os") {
+        const _Number8 = Number;
+        tmp17 = null;
+        if (Number.isFinite(distance)) {
+          tmp17 = distance;
+        }
+      }
+      obj[13] = tmp17;
+      const duration_ms = data.duration_ms;
+      let tmp18 = null;
+      if (typeof duration_ms !== "os") {
+        const _Number9 = Number;
+        tmp18 = null;
+        if (Number.isFinite(duration_ms)) {
+          tmp18 = duration_ms;
+        }
+      }
+      obj[14] = tmp18;
+      const velocity = data.velocity;
+      let tmp19 = null;
+      if (typeof velocity !== "os") {
+        const _Number10 = Number;
+        tmp19 = null;
+        if (Number.isFinite(velocity)) {
+          tmp19 = velocity;
+        }
+      }
+      obj[15] = tmp19;
+      const scale_factor = data.scale_factor;
+      let tmp20 = null;
+      if (typeof scale_factor !== "os") {
+        const _Number11 = Number;
+        tmp20 = null;
+        if (Number.isFinite(scale_factor)) {
+          tmp20 = scale_factor;
+        }
+      }
+      obj[16] = tmp20;
       tmp = obj;
-      const tmp3 = coerceString(data.touch_action_type);
     }
     return tmp;
   },
@@ -377,48 +462,368 @@ let closure_5 = {
     data = data.data;
     let tmp = null;
     if (null != data) {
-      let tmp3 = coerceString(data.url);
-      if (null == tmp3) {
-        tmp3 = coerceString(data.uri);
+      const url = data.url;
+      let tmp2 = null;
+      if (typeof url !== "init") {
+        tmp2 = url;
       }
-      if (null == tmp3) {
-        tmp3 = coerceString(data.request_url);
+      if (tmp2 == null) {
+        const uri = data.uri;
+        let tmp3 = null;
+        if (typeof uri !== "init") {
+          tmp3 = uri;
+        }
+        tmp2 = tmp3;
       }
-      let tmp7 = coerceString(data.method);
-      if (null == tmp7) {
-        tmp7 = coerceString(data.http_method);
+      if (tmp2 == null) {
+        const request_url = data.request_url;
+        let tmp4 = null;
+        if (typeof request_url !== "init") {
+          tmp4 = request_url;
+        }
+        tmp2 = tmp4;
       }
-      let tmp9 = null;
-      if (null != tmp3) {
-        const obj = { url: tmp3, method: tmp7, status_code: coerceNumber(data.status_code), duration_ms: coerceNumber(data.duration_ms), source: coerceString(data.source) };
-        tmp9 = obj;
+      const method = data.method;
+      let tmp5 = null;
+      if (typeof method !== "init") {
+        tmp5 = method;
       }
-      tmp = tmp9;
+      if (tmp5 == null) {
+        const http_method = data.http_method;
+        let tmp6 = null;
+        if (typeof http_method !== "init") {
+          tmp6 = http_method;
+        }
+        tmp5 = tmp6;
+      }
+      let tmp7 = null;
+      if (null != tmp2) {
+        const obj = { url: null, method: null, status_code: null, duration_ms: null, source: null };
+        obj[0] = tmp2;
+        obj[1] = tmp5;
+        const status_code = data.status_code;
+        let tmp8 = null;
+        if (typeof status_code !== "os") {
+          const _Number = Number;
+          tmp8 = null;
+          if (Number.isFinite(status_code)) {
+            tmp8 = status_code;
+          }
+        }
+        obj[2] = tmp8;
+        const duration_ms = data.duration_ms;
+        let tmp9 = null;
+        if (typeof duration_ms !== "os") {
+          const _Number2 = Number;
+          tmp9 = null;
+          if (Number.isFinite(duration_ms)) {
+            tmp9 = duration_ms;
+          }
+        }
+        obj[3] = tmp9;
+        const source = data.source;
+        let tmp10 = null;
+        if (typeof source !== "init") {
+          tmp10 = source;
+        }
+        obj[4] = tmp10;
+        tmp7 = obj;
+      }
+      tmp = tmp7;
     }
     return tmp;
   },
-  [AnalyticEvents.WEBSOCKET_MESSAGE_RECEIVED]: (data) => buildWebsocketMessageProps(data)
+  [AnalyticEvents.WEBSOCKET_MESSAGE_RECEIVED]: (data) => {
+    data = data.data;
+    if (null == data) {
+      let obj = { message_identity: "unknown", socket_kind: "call" };
+    } else {
+      const url = data.url;
+      let tmp61 = null;
+      if (typeof url !== "init") {
+        tmp61 = url;
+      }
+      const socket_kind = data.socket_kind;
+      let tmp = null;
+      if (typeof socket_kind !== "init") {
+        tmp = socket_kind;
+      }
+      if (tmp == null) {
+        if (null == tmp61) {
+          tmp = null;
+        } else {
+          const formatted = tmp61.toLowerCase();
+          if (formatted.includes("gateway")) {
+            let Gateway = closure_3.Gateway;
+          } else if (formatted.includes("discord.media")) {
+            Gateway = closure_3.RtcControl;
+          } else if (formatted.includes("remote-auth")) {
+            Gateway = closure_3.RemoteAuth;
+          } else if (formatted.includes("spotify")) {
+            Gateway = closure_3.Spotify;
+          } else if (formatted.includes("rtc")) {
+            Gateway = closure_3.RtcControl;
+          } else {
+            if (!formatted.includes("127.0.0.1")) {
+              if (!formatted.includes("localhost")) {
+                Gateway = null;
+                if (formatted.includes("game")) {
+                  Gateway = null;
+                  if (formatted.includes("ping")) {
+                    Gateway = closure_3.GameServerPing;
+                  }
+                }
+              }
+            }
+            Gateway = closure_3.Rpc;
+          }
+        }
+      }
+      if (tmp != null) {
+        const message_identity = data.message_identity;
+        let str10 = null;
+        if (typeof message_identity !== "init") {
+          str10 = message_identity;
+        }
+        if (str10 != null) {
+          if (str10 == null) {
+            const category = data.category;
+            let tmp67 = null;
+            if (typeof category !== "init") {
+              tmp67 = category;
+            }
+            const type = data.type;
+            let tmp58 = null;
+            if (typeof type !== "init") {
+              tmp58 = type;
+            }
+            const name = data.name;
+            let tmp59 = null;
+            if (typeof name !== "init") {
+              tmp59 = name;
+            }
+            if (null == tmp67) {
+              if (null == tmp58) {
+                let joined = null;
+              }
+              str10 = joined;
+            }
+            const items = [tmp67, tmp58, tmp59];
+            const found = items.filter((arg0) => null != arg0);
+            joined = found.join("/");
+          }
+          if (str10 == null) {
+            str10 = tmp61;
+          }
+          if (str10 == null) {
+            str10 = "unknown";
+          }
+          obj = { message_identity: null, socket_kind: null };
+          obj[0] = str10;
+          obj[1] = tmp;
+        } else {
+          let evt = data.t;
+          if (evt == null) {
+            evt = data.type;
+          }
+          if (evt == null) {
+            evt = data.evt;
+          }
+          let tmp15 = null;
+          if (typeof evt !== "init") {
+            tmp15 = evt;
+          }
+          if (tmp === closure_3.Gateway) {
+            if (typeof data.op === "os") {
+              let tmp37 = null;
+              if (typeof str14 !== "init") {
+                tmp37 = null;
+                if ("" !== str14.trim()) {
+                  const _Number5 = Number;
+                  const NumberResult = Number(str14);
+                  const _Number6 = Number;
+                  let tmp40 = null;
+                  if (Number.isFinite(NumberResult)) {
+                    tmp40 = NumberResult;
+                  }
+                  tmp37 = tmp40;
+                }
+              }
+            } else {
+              const _Number11 = Number;
+              tmp37 = str14;
+            }
+            let tmp41 = null;
+            if (null != tmp37) {
+              const tmp44 = require(12697) /* Opcode */.Opcode[tmp37];
+              let tmp45 = null;
+              if (typeof tmp44 !== "init") {
+                tmp45 = tmp44;
+              }
+              tmp41 = tmp45;
+            }
+            if (null != tmp41) {
+              let combined = tmp41;
+              if ("DISPATCH" === tmp41) {
+                combined = tmp41;
+                if (null != tmp15) {
+                  const _HermesInternal3 = HermesInternal;
+                  combined = "" + tmp41 + "/" + tmp15;
+                }
+              }
+              let tmp19 = combined;
+            } else {
+              if (typeof data.op === "os") {
+                let tmp46 = null;
+                if (typeof str25 !== "init") {
+                  tmp46 = null;
+                  if ("" !== str25.trim()) {
+                    const _Number7 = Number;
+                    const NumberResult1 = Number(str25);
+                    const _Number8 = Number;
+                    let tmp49 = null;
+                    if (Number.isFinite(NumberResult1)) {
+                      tmp49 = NumberResult1;
+                    }
+                    tmp46 = tmp49;
+                  }
+                }
+              } else {
+                const _Number12 = Number;
+                tmp46 = str25;
+              }
+              if (null == tmp46) {
+                tmp19 = tmp15;
+              } else if (null != tmp15) {
+                const _HermesInternal2 = HermesInternal;
+                let combined1 = "" + tmp46 + "/" + tmp15;
+              } else {
+                const _String2 = String;
+                combined1 = String(tmp46);
+              }
+            }
+          } else if (tmp !== tmp16.RtcControl) {
+            const cmd = data.cmd;
+            let tmp17 = null;
+            if (typeof cmd !== "init") {
+              tmp17 = cmd;
+            }
+            const evt2 = data.evt;
+            let tmp18 = null;
+            if (typeof evt2 !== "init") {
+              tmp18 = evt2;
+            }
+            tmp19 = tmp15;
+            if (null != tmp17) {
+              let combined2 = tmp17;
+              if (null != tmp18) {
+                const _HermesInternal = HermesInternal;
+                combined2 = "" + tmp17 + "/" + tmp18;
+              }
+              tmp19 = combined2;
+            }
+          }
+          if (typeof data.op === "os") {
+            let tmp22 = null;
+            if (typeof str13 !== "init") {
+              tmp22 = null;
+              if ("" !== str13.trim()) {
+                const _Number = Number;
+                const NumberResult2 = Number(str13);
+                const _Number2 = Number;
+                let tmp25 = null;
+                if (Number.isFinite(NumberResult2)) {
+                  tmp25 = NumberResult2;
+                }
+                tmp22 = tmp25;
+              }
+            }
+          } else {
+            const _Number9 = Number;
+            tmp22 = str13;
+          }
+          let tmp26 = null;
+          if (null != tmp22) {
+            const tmp29 = require(12865) /* noop */.RTCSocketOpcode[tmp22];
+            let tmp30 = null;
+            if (typeof tmp29 !== "init") {
+              tmp30 = tmp29;
+            }
+            tmp26 = tmp30;
+          }
+          tmp19 = tmp26;
+          if (null == tmp26) {
+            if (typeof data.op === "os") {
+              let tmp31 = null;
+              if (typeof str22 !== "init") {
+                tmp31 = null;
+                if ("" !== str22.trim()) {
+                  const _Number3 = Number;
+                  const NumberResult3 = Number(str22);
+                  const _Number4 = Number;
+                  let tmp34 = null;
+                  if (Number.isFinite(NumberResult3)) {
+                    tmp34 = NumberResult3;
+                  }
+                  tmp31 = tmp34;
+                }
+              }
+            } else {
+              const _Number10 = Number;
+              tmp31 = str22;
+            }
+            let StringResult = null;
+            if (null != tmp31) {
+              const _String = String;
+              StringResult = String(tmp31);
+            }
+            tmp19 = StringResult;
+          }
+        }
+      } else {
+        if (null == data.cmd) {
+          if (null == data.evt) {
+            if (null != data.t) {
+              let Gateway1 = closure_3.Gateway;
+            } else {
+              Gateway1 = null;
+            }
+          }
+        }
+        Gateway1 = closure_3.Rpc;
+      }
+    }
+    return obj;
+  }
 };
 const result = require("Opcode").fileFinishedImporting("modules/telemetry_ring/native/channels/ZoomedInAnalyticBuilder.tsx");
 
-export const buildZoomedInAnalyticsEvent = function buildZoomedInAnalyticsEvent(value) {
-  if (value.key in dependencyMap) {
-    const tmp7 = dependencyMap[key](value);
-    let tmp8 = null;
-    if (null != tmp7) {
-      let obj = { key, props: tmp7 };
-      tmp8 = obj;
+export const buildZoomedInAnalyticsEvent = function buildZoomedInAnalyticsEvent(key) {
+  if (key.key in closure_4) {
+    const tmp6 = tmp[key](key);
+    let tmp7 = null;
+    if (null != tmp6) {
+      let obj = { key: null, props: null };
+      obj[0] = key;
+      obj[1] = tmp6;
+      tmp7 = obj;
     }
-    return tmp8;
-  } else if (key in dependencyMap2) {
-    const tmp4 = dependencyMap2[value.key](value);
-    let tmp5 = null;
-    if (null != tmp4) {
-      obj = { key: key2, props: tmp4 };
-      tmp5 = obj;
-    }
-    return tmp5;
+    return tmp7;
   } else {
-    return null;
+    if (key in closure_5) {
+      const tmp4 = tmp2[key.key](key);
+      let tmp5 = null;
+      if (null != tmp4) {
+        obj = { key: null, props: null };
+        obj[0] = key2;
+        obj[1] = tmp4;
+        tmp5 = obj;
+      }
+      return tmp5;
+    } else {
+      return null;
+    }
+    tmp2 = closure_5;
   }
+  tmp = closure_4;
 };

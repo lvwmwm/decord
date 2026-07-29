@@ -1,12 +1,12 @@
-// Module ID: 8360
-// Function ID: 66935
+// Module ID: 8384
+// Function ID: 8385
 // Name: useDisplayNameStylesAccessibleColors
-// Dependencies: [31, 4157, 566, 1863, 8361, 4009, 666, 2]
+// Dependencies: [19, 4181, 589, 1887, 8385, 4033, 689, 2]
 // Exports: useDisplayNameStylesAccessibleColors
 
-// Module 8360 (useDisplayNameStylesAccessibleColors)
-import result from "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 8384 (useDisplayNameStylesAccessibleColors)
+import noop from "noop";
+import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
 
 const require = arg1;
 const result = require("initialize").fileFinishedImporting("modules/display_name_styles/hooks/useDisplayNameStylesAccessibleColors.tsx");
@@ -14,6 +14,7 @@ const result = require("initialize").fileFinishedImporting("modules/display_name
 export const useDisplayNameStylesAccessibleColors = function useDisplayNameStylesAccessibleColors(displayNameStyles) {
   displayNameStyles = displayNameStyles.displayNameStyles;
   const backgroundColor = displayNameStyles.backgroundColor;
+  let stateFromStores;
   let effectId;
   let displayNameStylesEffectConfig;
   let items = [displayNameStylesEffectConfig];
@@ -25,11 +26,11 @@ export const useDisplayNameStylesAccessibleColors = function useDisplayNameStyle
     return num;
   });
   effectId = undefined;
-  if (null != displayNameStyles) {
+  if (displayNameStyles != null) {
     effectId = displayNameStyles.effectId;
   }
-  if (null == effectId) {
-    effectId = displayNameStyles(stateFromStores[3]).DisplayNameEffect.SOLID;
+  if (effectId == null) {
+    effectId = tmp(tmp2[3]).DisplayNameEffect.SOLID;
   }
   let obj = displayNameStyles(stateFromStores[2]);
   displayNameStylesEffectConfig = displayNameStyles(stateFromStores[4]).useDisplayNameStylesEffectConfig(effectId);
@@ -38,18 +39,18 @@ export const useDisplayNameStylesAccessibleColors = function useDisplayNameStyle
     if (null == displayNameStyles) {
       let items = [];
     } else {
-      const colors = displayNameStyles.colors;
+      const colors = tmp.colors;
       items = colors.map((arg0) => {
-        let obj = displayNameStyles(stateFromStores[5]);
-        obj = { foreground: backgroundColor(stateFromStores[6])(arg0) };
-        if (outer1_3 === displayNameStyles(stateFromStores[3]).DisplayNameEffect.TOON) {
-          let tmp4 = backgroundColor(stateFromStores[6])("#333");
+        let obj = outer1_0(outer1_2[5]);
+        obj = { foreground: outer1_1(outer1_2[6])(arg0), background: null, ratio: null, saturationFactor: null };
+        if (noop === outer1_0(outer1_2[3]).DisplayNameEffect.TOON) {
+          let tmp4 = tmp2(tmp[6])("#333");
         } else {
-          tmp4 = backgroundColor(stateFromStores[6])(outer1_1);
+          tmp4 = tmp2(tmp[6])(closure_1);
         }
-        obj.background = tmp4;
-        obj.ratio = outer1_4.minContrastRatio;
-        obj.saturationFactor = outer1_2;
+        obj[1] = tmp4;
+        obj[2] = minContrastRatio.minContrastRatio;
+        obj[3] = closure_2;
         const accessibleForegroundColor = obj.getAccessibleForegroundColor(obj);
         return accessibleForegroundColor.hex();
       });

@@ -1,23 +1,23 @@
-// Module ID: 15694
-// Function ID: 120807
+// Module ID: 15729
+// Function ID: 15730
 // Name: Settings
-// Dependencies: [31, 27, 33, 4165, 689, 15581, 1557, 6540, 4145, 4026, 15695, 2]
+// Dependencies: [19, 17, 21, 4189, 712, 15615, 1581, 6561, 4169, 4050, 15730, 2]
 // Exports: default
 
-// Module 15694 (Settings)
-import result from "result";
+// Module 15729 (Settings)
+import noop from "noop";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
 const require = arg1;
-_createForOfIteratorHelperLoose = { containerOuter: { flex: 1, overflow: "hidden" } };
-_createForOfIteratorHelperLoose = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWEST, paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_8, borderRadius: require("_createForOfIteratorHelperLoose").radii.md, flex: 1 };
-_createForOfIteratorHelperLoose.containerOuterTablet = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.container = { flex: 1 };
-const obj1 = { borderRadius: require("_createForOfIteratorHelperLoose").radii.md, overflow: "hidden", flex: 1 };
-_createForOfIteratorHelperLoose.containerTablet = obj1;
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+createCacheKey = { containerOuter: { flex: 1, overflow: "hidden" }, containerOuterTablet: null, container: null, containerTablet: null };
+createCacheKey = { backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOWEST, paddingHorizontal: require("Themes").space.PX_8, borderRadius: require("Themes").radii.md, flex: 1 };
+createCacheKey[1] = createCacheKey;
+createCacheKey[2] = { flex: 1 };
+createCacheKey[3] = { borderRadius: require("Themes").radii.md, overflow: "hidden", flex: 1 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+const obj1 = { borderRadius: require("Themes").radii.md, overflow: "hidden", flex: 1 };
 const result = require("jsxProd").fileFinishedImporting("modules/main_tabs_v2/native/tabs/settings/Settings.tsx");
 
 export default function Settings() {
@@ -27,31 +27,38 @@ export default function Settings() {
   top = rect.top;
   left = rect.left;
   right = rect.right;
-  let tmp2 = left(right[7])();
-  if (tmp2) {
-    tmp2 = !top(right[8]).isIpadOS();
-    const obj2 = top(right[8]);
+  let tmp5 = left(right[7])();
+  if (tmp5) {
+    tmp5 = !top(tmp2[8]).isIpadOS();
+    const tmpResult = top(tmp2[8]);
   }
-  const React = tmp2;
-  const tmp5 = _createForOfIteratorHelperLoose();
-  const View = tmp5;
-  let items = [tmp5, tmp2, top, left, right];
+  const React = tmp5;
+  const tmp6 = createCacheKey();
+  const View = tmp6;
+  let items = [tmp6, tmp5, top, left, right];
   obj = {
     style: React.useMemo(() => {
-      if (result) {
+      if (noop) {
         const items = [tmp.containerOuterTablet, ];
-        let obj = { paddingTop: top, paddingLeft: left, paddingRight: right };
+        let obj = { paddingTop: null, paddingLeft: null, paddingRight: null };
+        obj[0] = top;
+        obj[1] = left;
+        obj[2] = right;
         items[1] = obj;
         let items1 = items;
       } else {
         items1 = [tmp.containerOuter, ];
-        obj = { paddingLeft: left, paddingRight: right };
+        obj = { paddingLeft: null, paddingRight: null };
+        obj[0] = left;
+        obj[1] = right;
         items1[1] = obj;
       }
       return items1;
-    }, items)
+    }, items),
+    children: null
   };
-  obj = { style: tmp2 ? tmp5.containerTablet : tmp5.container, children: jsx(left(right[10]), {}) };
-  obj.children = jsx(left(right[9]).View, { style: tmp2 ? tmp5.containerTablet : tmp5.container, children: jsx(left(right[10]), {}) });
-  return <View style={tmp2 ? tmp5.containerTablet : tmp5.container}>{jsx(left(right[10]), {})}</View>;
+  obj = { style: tmp5 ? tmp6.containerTablet : tmp6.container, children: null };
+  obj[1] = jsx(left(right[10]), {});
+  obj[1] = jsx(left(right[9]).View, { style: tmp5 ? tmp6.containerTablet : tmp6.container, children: null });
+  return <View style={tmp5 ? tmp6.containerTablet : tmp6.container}>{null}</View>;
 };

@@ -1,19 +1,19 @@
-// Module ID: 10829
-// Function ID: 83859
+// Module ID: 10853
+// Function ID: 10854
 // Name: useFetchStreamPreview
-// Dependencies: [31, 4346, 1348, 3793, 1907, 482, 566, 4344, 2]
+// Dependencies: [19, 4371, 1372, 3817, 1931, 505, 589, 4369, 2]
 // Exports: default
 
-// Module 10829 (useFetchStreamPreview)
-import result from "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_4 from "_isNativeReflectConstruct";
-import closure_5 from "_isNativeReflectConstruct";
-import closure_6 from "_isNativeReflectConstruct";
+// Module 10853 (useFetchStreamPreview)
+import noop from "noop";
+import reset from "reset";
+import ensureGuildLoaded from "ensureGuildLoaded";
+import getUncachedChannelPermissions from "getUncachedChannelPermissions";
+import handleConnectionOpen from "handleConnectionOpen";
 import { BasicPermissions } from "sum";
 
 const require = arg1;
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/go_live/useFetchStreamPreview.tsx");
+const result = require("ensureGuildLoaded").fileFinishedImporting("modules/go_live/useFetchStreamPreview.tsx");
 
 export default function useFetchStreamPreview(arg0, arg1, arg2) {
   let isLoading;
@@ -21,40 +21,39 @@ export default function useFetchStreamPreview(arg0, arg1, arg2) {
   const _require = arg0;
   const dependencyMap = arg1;
   const React = arg2;
-  let _isNativeReflectConstruct = tmp;
-  let obj = _require(566);
-  const items = [closure_4];
-  closure_4 = obj.useStateFromStores(items, () => channel.getChannel(closure_1));
+  let reset = tmp;
+  let obj = _require(589);
+  const items = [ensureGuildLoaded];
+  ensureGuildLoaded = obj.useStateFromStores(items, () => channel.getChannel(closure_1));
   const items1 = [shouldFetchPreview];
-  let stateFromStores = _require(566).useStateFromStores(items1, () => {
-    let canBasicChannelResult = null != closure_4;
+  let stateFromStores = _require(589).useStateFromStores(items1, () => {
+    let canBasicChannelResult = null != ensureGuildLoaded;
     if (canBasicChannelResult) {
-      canBasicChannelResult = shouldFetchPreview.canBasicChannel(outer1_7.CONNECT, closure_4);
+      canBasicChannelResult = shouldFetchPreview.canBasicChannel(outer1_7.CONNECT, tmp);
     }
     return canBasicChannelResult;
   });
-  const obj2 = _require(566);
+  const obj2 = _require(589);
   const items2 = [stateFromStores];
-  const stateFromStores1 = _require(566).useStateFromStores(items2, () => stateFromStores.getVoiceChannelId() === closure_1);
-  const obj3 = _require(566);
-  const items3 = [_isNativeReflectConstruct];
-  const stateFromStoresObject = _require(566).useStateFromStoresObject(items3, () => {
-    const obj = {};
-    let shouldFetchPreviewResult = !tmp;
+  const stateFromStores1 = _require(589).useStateFromStores(items2, () => stateFromStores.getVoiceChannelId() === closure_1);
+  const obj3 = _require(589);
+  const items3 = [reset];
+  const stateFromStoresObject = _require(589).useStateFromStoresObject(items3, () => {
+    let isPreviewLoading = !tmp;
+    let shouldFetchPreviewResult = isPreviewLoading;
     if (!tmp) {
-      shouldFetchPreviewResult = tmp.shouldFetchPreview(closure_0, closure_1, result);
+      shouldFetchPreviewResult = tmp.shouldFetchPreview(closure_0, closure_1, noop);
     }
-    obj.shouldFetchPreview = shouldFetchPreviewResult;
+    const obj = { shouldFetchPreview: shouldFetchPreviewResult, previewUrl: null, isLoading: null };
     let previewURL = null;
     if (!tmp) {
-      previewURL = tmp.getPreviewURL(closure_0, closure_1, result);
+      previewURL = tmp.getPreviewURL(closure_0, closure_1, noop);
     }
-    obj.previewUrl = previewURL;
-    let isPreviewLoading = !tmp;
+    obj[1] = previewURL;
     if (!tmp) {
-      isPreviewLoading = tmp.getIsPreviewLoading(closure_0, closure_1, result);
+      isPreviewLoading = tmp.getIsPreviewLoading(closure_0, closure_1, noop);
     }
-    obj.isLoading = isPreviewLoading;
+    obj[2] = isPreviewLoading;
     return obj;
   });
   shouldFetchPreview = stateFromStoresObject.shouldFetchPreview;
@@ -66,21 +65,23 @@ export default function useFetchStreamPreview(arg0, arg1, arg2) {
   const effect = React.useEffect(() => {
     let tmp = shouldFetchPreview;
     if (shouldFetchPreview) {
-      tmp = !_isNativeReflectConstruct;
+      tmp = !reset;
     }
     if (tmp) {
       tmp = stateFromStores;
     }
     if (tmp) {
-      const streamPreview = callback(table[7]).fetchStreamPreview(callback, table, result);
+      const streamPreview = callback(table[7]).fetchStreamPreview(callback, table, noop);
       const obj = callback(table[7]);
     }
   }, items4);
   if (!(null == arg1 || null == arg2)) {
     if (stateFromStores) {
-      obj = { previewUrl, isLoading };
+      obj = { previewUrl: null, isLoading: null };
+      obj[0] = previewUrl;
+      obj[1] = isLoading;
     }
     return obj;
   }
-  obj = { previewUrl: undefined, isLoading: false };
+  obj = { previewUrl: "ct", isLoading: null };
 };

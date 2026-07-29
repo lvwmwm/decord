@@ -1,12 +1,12 @@
-// Module ID: 8715
-// Function ID: 68992
+// Module ID: 8739
+// Function ID: 8740
 // Name: DynamicBadgeTooltip
-// Dependencies: [57, 31, 33, 1212, 8407, 4695, 2]
+// Dependencies: [32, 19, 21, 1236, 8431, 4717, 2]
 // Exports: DynamicBadgeTooltip
 
-// Module 8715 (DynamicBadgeTooltip)
+// Module 8739 (DynamicBadgeTooltip)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
+import noop from "noop";
 import { jsx } from "jsxProd";
 
 const require = arg1;
@@ -43,7 +43,7 @@ export const DynamicBadgeTooltip = function DynamicBadgeTooltip(tooltipPosition)
   const effect = React.useEffect(() => {
     if (first) {
       const _setTimeout = setTimeout;
-      const timeout = setTimeout(() => outer1_2(false), 2500);
+      const timeout = setTimeout(() => callback(false), 2500);
       return () => clearTimeout(closure_0);
     }
   }, items1);

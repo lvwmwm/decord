@@ -1,12 +1,12 @@
-// Module ID: 13443
-// Function ID: 103050
-// Name: getPluginOptions
-// Dependencies: [13444, 2]
+// Module ID: 13466
+// Function ID: 13467
+// Name: reactNativeCorePlugins
+// Dependencies: [13467, 2]
 
-// Module 13443 (getPluginOptions)
-import importDefaultResult from "getPluginOptions";
+// Module 13466 (reactNativeCorePlugins)
+import importDefaultResult from "reactNativeCorePlugins";
 
-const reactNative = require("getPluginOptions").configure({}).useReactNative();
+const reactNative = require("reactNativeCorePlugins").configure({}).useReactNative();
 reactNative.connect();
-const configureResult = require("getPluginOptions").configure({});
+const configureResult = require("reactNativeCorePlugins").configure({});
 const result = require("set").fileFinishedImporting("modules/debug/native/ReactotronConfig.tsx");

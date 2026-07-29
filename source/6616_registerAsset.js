@@ -1,0 +1,10 @@
+// Module ID: 6616
+// Function ID: 6617
+// Name: registerAsset
+// Dependencies: [1241]
+
+// Module 6616 (registerAsset)
+import registerAsset from "registerAsset";
+
+
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "26d707b294c340a6d911d79614dfcf77", name: "UserSquareIcon", type: "png" });

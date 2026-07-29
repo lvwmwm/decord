@@ -1,11 +1,11 @@
-// Module ID: 6547
-// Function ID: 58282
+// Module ID: 6568
+// Function ID: 6569
 // Name: useIsBuyNitroPurchaseBlocked
-// Dependencies: [5654, 621, 566, 2]
+// Dependencies: [5672, 644, 589, 2]
 // Exports: useIsBuyNitroPurchaseBlocked
 
-// Module 6547 (useIsBuyNitroPurchaseBlocked)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 6568 (useIsBuyNitroPurchaseBlocked)
+import updateProduct from "updateProduct";
 import keys from "keys";
 
 const require = arg1;
@@ -13,14 +13,17 @@ let closure_3 = keys.create(() => ({ isLocked: false, hasCompletedInitialLoad: f
 keys = {
   begin(TableRowGroup, arg1) {
     const state = store.getState();
-    let isBusyResult = !state.hasCompletedInitialLoad || state.isLocked;
-    if (!isBusyResult) {
-      isBusyResult = busy.isBusy();
+    const hasCompletedInitialLoad = state.hasCompletedInitialLoad;
+    let isLocked = !hasCompletedInitialLoad;
+    if (hasCompletedInitialLoad) {
+      isLocked = state.isLocked;
     }
-    let flag = !isBusyResult;
-    if (flag) {
-      const obj = { isLocked: true };
-      store.setState(obj);
+    if (!isLocked) {
+      isLocked = busy.isBusy();
+    }
+    let flag = !isLocked;
+    if (!isLocked) {
+      store.setState({ isLocked: true });
       flag = true;
     }
     return flag;
@@ -28,17 +31,24 @@ keys = {
   end() {
     store.setState({ isLocked: false });
   },
-  setInitialLoadComplete(closure_1) {
-    store.setState({ hasCompletedInitialLoad: closure_1 });
+  setInitialLoadComplete(promotionMarketingComponent) {
+    store.setState({ hasCompletedInitialLoad: promotionMarketingComponent });
   }
 };
 const result = require("initialize").fileFinishedImporting("modules/premium_marketing/native/hooks/useBuyNitroPurchaseLock.tsx");
 
 export const useIsBuyNitroPurchaseBlocked = function useIsBuyNitroPurchaseBlocked() {
-  let stateFromStores = store((hasCompletedInitialLoad) => !hasCompletedInitialLoad.hasCompletedInitialLoad || hasCompletedInitialLoad.isLocked);
-  const items = [_isNativeReflectConstruct];
+  let stateFromStores = store((hasCompletedInitialLoad) => {
+    hasCompletedInitialLoad = hasCompletedInitialLoad.hasCompletedInitialLoad;
+    let isLocked = !hasCompletedInitialLoad;
+    if (hasCompletedInitialLoad) {
+      isLocked = hasCompletedInitialLoad.isLocked;
+    }
+    return isLocked;
+  });
+  const items = [updateProduct];
   if (!stateFromStores) {
-    stateFromStores = obj.useStateFromStores(items, () => outer1_2.isBusy());
+    stateFromStores = obj.useStateFromStores(items, () => busy.isBusy());
   }
   return stateFromStores;
 };

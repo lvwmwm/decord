@@ -1,20 +1,20 @@
-// Module ID: 6750
-// Function ID: 59347
+// Module ID: 6771
+// Function ID: 6772
 // Name: MethodsScreen
-// Dependencies: [5, 57, 31, 27, 653, 33, 1868, 6751, 6753, 6755, 4165, 689, 6734, 6757, 6759, 4382, 6758, 6761, 6762, 4576, 6763, 4161, 6726, 1921, 1212, 2717, 5000, 4578, 5536, 5198, 4372, 5121, 7592, 491, 5552, 2]
+// Dependencies: [5, 32, 19, 17, 676, 21, 1892, 6772, 6774, 6776, 4189, 712, 6755, 6778, 6781, 4405, 6780, 6783, 6784, 4598, 6785, 4185, 6747, 1945, 1297, 4600, 1236, 2741, 5554, 5220, 4395, 5143, 7616, 514, 5570, 2]
 // Exports: default
 
-// Module 6750 (MethodsScreen)
+// Module 6771 (MethodsScreen)
 import closure_3 from "jsxProd";
-import _slicedToArray from "_slicedToArray";
-import HeaderBackImage from "HeaderBackImage";
-import { ActivityIndicator } from "Button";
+import GoogleWalletVerificationScreen from "GoogleWalletVerificationScreen";
+import Stack from "Stack";
+import { ActivityIndicator } from "ModalScreen";
 import { HelpdeskArticles } from "ME";
-import jsxProd from "v1";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import jsxProd from "Text";
+import createCacheKey from "createCacheKey";
 
-let closure_8;
-let closure_9;
+let c9;
+let metroImportAll;
 const require = arg1;
 function MethodsScreen(onComplete) {
   let entryPoint;
@@ -24,19 +24,26 @@ function MethodsScreen(onComplete) {
   let navigation;
   let refetch;
   ({ entryPoint, navigation } = onComplete);
-  const tmp = callback3();
-  let obj = navigation(first[12]);
+  let _require = navigation;
+  methods = undefined;
+  let first;
+  let callback;
+  let initiateAgeVerification;
+  let React;
+  let closure_6;
+  const tmp = callback4();
+  let obj = _require(first[12]);
   const isSuspendedUser = obj.useIsSuspendedUser();
-  let obj1 = navigation(first[13]);
+  let obj1 = _require(first[13]);
   const ageVerificationMethodsV2 = obj1.useAgeVerificationMethodsV2();
   ({ loading, methods } = ageVerificationMethodsV2);
   ({ error, refetch } = ageVerificationMethodsV2);
-  const tmp4 = initiateAgeVerification(React.useState(false), 2);
-  first = tmp4[0];
-  let closure_3 = tmp4[1];
+  const tmp6 = initiateAgeVerification(React.useState(false), 2);
+  first = tmp6[0];
+  callback = tmp6[1];
   const effect = React.useEffect(() => {
     let c0 = false;
-    const result = navigation(first[14]).checkGoogleWalletAvailable();
+    const result = callback(first[14]).checkGoogleWalletAvailable();
     result.then((arg0) => {
       if (!c0) {
         outer1_3(arg0);
@@ -47,223 +54,293 @@ function MethodsScreen(onComplete) {
     };
   }, []);
   let items = [methods, first];
-  const memo = React.useMemo(() => methods.filter((method) => method.method !== navigation(first[6]).AgeAssuranceMethod.GOOGLE_WALLET || outer1_2), items);
-  let obj2 = navigation(first[15]);
+  const memo = React.useMemo(() => methods.filter((method) => method.method !== outer1_0(outer1_2[6]).AgeAssuranceMethod.GOOGLE_WALLET || closure_2), items);
+  let obj2 = _require(first[15]);
   initiateAgeVerification = obj2.useInitiateAgeVerification({ onComplete: onComplete.onClose, entryPoint, shouldShowExpressiveModal: true }).initiateAgeVerification;
   React = React.useRef(false);
-  const items1 = [navigation, initiateAgeVerification];
-  let closure_6 = React.useCallback((() => {
-    let closure_0 = callback(async (arg0) => {
-      if (!outer2_5.current) {
-        if (arg0.method !== navigation(first[6]).AgeAssuranceMethod.GOOGLE_WALLET) {
-          const tmp8 = navigation(first[16]).V2_METHOD_TO_VERIFICATION_METHOD[arg0.method];
-          const tmp10 = navigation(first[16]).V2_VENDOR_TO_VERIFICATION_VENDOR[arg0.vendor];
-          if (null != tmp8) {
-            if (null != tmp10) {
-              outer2_5.current = true;
-              yield outer2_4(tmp8, tmp10);
-              outer2_5.current = false;
-            }
-          }
-          navigation.navigate(outer3_12.METHOD_ERROR);
+  _require = undefined;
+  _require = callback((arg0) => {
+    let closure_0 = arg0;
+    let c2 = 0;
+    let c5 = 0;
+    let c4 = 0;
+    return (function*(arg0) {
+      if (ref === 2) {
+        ref = 3;
+        HermesBuiltin.throwTypeError();
+      } else if (tmp6 === 3) {
+        if (arg0 === 1) {
+          throw arg1;
+        } else if (arg0 === 2) {
+          let obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
         } else {
-          navigation.navigate(outer3_12.GOOGLE_WALLET_VERIFICATION);
+          return { value: "HermesInternal", done: null };
+        }
+      } else {
+        try {
+          ref = 2;
+          if (0 === c2) {
+            if (arg0 === 1) {
+              ref = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              ref = 3;
+              obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            } else {
+              let closure_1 = tmp3;
+              if (!ref.current) {
+                if (tmp37.method !== navigation(first[6]).AgeAssuranceMethod.GOOGLE_WALLET) {
+                  const tmp21 = tmp16(tmp17[16]).V2_METHOD_TO_VERIFICATION_METHOD[tmp37.method];
+                  const tmp22 = tmp16(tmp17[16]).V2_VENDOR_TO_VERIFICATION_VENDOR[tmp37.vendor];
+                  if (null != tmp21) {
+                    if (null != tmp22) {
+                      ref.current = true;
+                      let v0 = 1;
+                      c2 = 2;
+                      ref = 1;
+                      const obj1 = { value: null, done: false };
+                      obj1[0] = v0(tmp21, tmp22);
+                      return obj1;
+                    }
+                  }
+                  navigation.navigate(outer2_12.METHOD_ERROR);
+                } else {
+                  navigation.navigate(outer2_12.GOOGLE_WALLET_VERIFICATION);
+                }
+              }
+              ref = 3;
+            }
+          } else if (1 === tmp7) {
+            v0 = 0;
+            ref.current = false;
+            throw closure_3;
+          } else if (arg0 === 1) {
+            ref = 3;
+            throw arg1;
+          } else if (arg0 !== 2) {
+            v0 = 0;
+            ref.current = false;
+          }
+          v0 = 0;
+          ref.current = false;
+          ref = 3;
+          obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
+        } catch (tmp28) {
+          closure_3 = tmp28;
+          if (tmp4 === v0) {
+            ref = tmp2;
+            throw tmp28;
+          } else {
+            c2 = tmp;
+          }
         }
       }
-    });
-    return function() {
-      return callback(...arguments);
-    };
-  })(), items1);
-  obj = {};
-  obj = {};
-  obj1 = { align: "stretch", spacing: 24 };
-  let num = 24;
-  obj1.style = tmp.container;
-  obj2 = { align: "center", justify: "center", spacing: 16 };
-  const items2 = [callback(navigation(first[20]).AgeVerificationSpotIllustration, { width: 150, height: 100 }), ];
-  const obj3 = { align: "center", justify: "center", spacing: 8 };
-  const obj4 = { accessibilityRole: "header", variant: "heading-xl/bold", color: "mobile-text-heading-primary" };
-  let obj9 = navigation(first[15]);
-  obj4.children = obj9.getAgeVerificationGetStartedTitle(entryPoint);
-  const items3 = [callback(navigation(first[21]).Text, obj4), ];
-  const obj5 = { variant: "text-md/medium", color: "text-strong", style: tmp.header };
-  let obj11 = navigation(first[15]);
-  obj5.children = obj11.getAgeVerificationGetStartedSubtitle(entryPoint, () => {
-    const obj = methods(first[22]);
-    obj.openUrl(methods(first[23]).getArticleURL(outer1_7.TIGGER_PAWTECT_LEARN_MORE));
-  }, isSuspendedUser);
-  items3[1] = callback(navigation(first[21]).Text, obj5);
-  obj3.children = items3;
-  items2[1] = callback2(navigation(first[19]).Stack, obj3);
-  obj2.children = items2;
-  const items4 = [callback2(navigation(first[19]).Stack, obj2), , , ];
-  let tmp11 = loading;
-  if (loading) {
-    const obj6 = { align: "center", justify: "center", style: tmp.loadingContainer };
-    const obj7 = { size: "large" };
-    obj6.children = callback(closure_6, obj7);
-    tmp11 = callback(navigation(first[19]).Stack, obj6);
-  }
-  items4[1] = tmp11;
-  if (!(!loading && memo.length <= 0)) {
-    items4[2] = tmp17;
-    let tmp30 = !loading && tmp7;
-    if (tmp30) {
-      const obj8 = {
-        hasIcons: true,
-        children: memo.map((title) => {
-              let closure_0 = title;
-              let obj = { arrow: true };
-              let tmp3;
-              if (null != outer1_10[title.method]) {
-                obj = { IconComponent: tmp, variant: "secondary" };
-                tmp3 = outer1_8(navigation(first[29]).TableRow.Icon, obj);
-              }
-              obj.icon = tmp3;
-              obj.label = title.title;
-              obj = { direction: "vertical", spacing: 4 };
-              const obj1 = { variant: "text-sm/normal", color: "text-muted", children: title.description };
-              const items = [outer1_8(navigation(first[21]).Text, obj1), ];
-              let tmp8 = null != title.providedBy;
-              if (tmp8) {
-                const obj2 = { variant: "text-sm/normal", color: "text-subtle", children: title.providedBy };
-                tmp8 = outer1_8(navigation(first[21]).Text, obj2);
-              }
-              items[1] = tmp8;
-              obj.children = items;
-              obj.subLabel = outer1_9(navigation(first[19]).Stack, obj);
-              obj.onPress = function onPress() {
-                outer1_6(closure_0);
-              };
-              return outer1_8(navigation(first[29]).TableRow, obj, "" + title.method + "-" + title.vendor);
-            })
-      };
-      tmp30 = callback(navigation(first[28]).TableRowGroup, obj8);
+    })();
+  });
+  const items1 = [navigation, initiateAgeVerification];
+  closure_6 = React.useCallback(function() {
+    const self = this;
+    const apply = closure_0.apply;
+    if (typeof apply === "unknown") {
+      let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+    } else {
+      applyArgumentsResult = apply(self, arguments);
     }
-    items4[3] = tmp30;
-    obj1.children = items4;
-    obj.children = callback2(navigation(first[19]).Stack, obj1);
-    obj.children = callback(navigation(first[18]).ModalContent, obj);
-    return callback(navigation(first[17]).ModalScreen, obj);
+    return applyArgumentsResult;
+  }, items1);
+  obj = { align: "stretch", spacing: 24, style: tmp.container, children: null };
+  obj = { align: "center", justify: "center", spacing: 16, children: null };
+  const items2 = [callback2(_require(first[20]).AgeVerificationSpotIllustration, { width: 150, height: 100 }), ];
+  obj1 = { align: "center", justify: "center", spacing: 8, children: null };
+  obj2 = { accessibilityRole: "header", variant: "heading-xl/bold", color: "mobile-text-heading-primary", children: null };
+  let obj7 = _require(first[15]);
+  obj2[3] = obj7.getAgeVerificationGetStartedTitle(entryPoint);
+  const items3 = [callback2(_require(first[21]).Text, obj2), ];
+  const obj3 = { variant: "text-md/medium", color: "text-strong", style: tmp.header, children: null };
+  let obj9 = _require(first[15]);
+  obj3[3] = obj9.getAgeVerificationGetStartedSubtitle(entryPoint, () => {
+    const obj = methods(first[22]);
+    obj.openUrl(methods(first[23]).getArticleURL(constants.TIGGER_PAWTECT_LEARN_MORE));
+  }, isSuspendedUser);
+  items3[1] = callback2(_require(first[21]).Text, obj3);
+  obj1[3] = items3;
+  items2[1] = callback3(_require(first[19]).Stack, obj1);
+  obj[3] = items2;
+  const items4 = [callback3(_require(first[19]).Stack, obj), , , ];
+  let tmp10Result = loading;
+  if (loading) {
+    const obj4 = { align: "center", justify: "center", style: null, children: null };
+    obj4[2] = tmp.loadingContainer;
+    obj4[3] = tmp10(closure_6, { size: "large" });
+    tmp10Result = tmp10(tmp2(tmp3[19]).Stack, obj4);
+  }
+  items4[1] = tmp10Result;
+  let tmp14 = !loading;
+  if (!loading) {
+    tmp14 = !tmp9;
+  }
+  if (!tmp14) {
+    items4[2] = tmp14;
+    tmp10Result = !loading;
+    if (!loading) {
+      tmp10Result = tmp9;
+    }
+    if (tmp10Result) {
+      const obj5 = { hasIcons: true, children: null };
+      obj5[1] = memo.map((children) => {
+        const callback = children;
+        let tmp2Result;
+        if (null != outer1_10[children.method]) {
+          let obj = { IconComponent: null, variant: "secondary" };
+          obj[0] = tmp;
+          tmp2Result = tmp2(tmp3(tmp4[29]).TableRow.Icon, obj);
+        }
+        obj = { arrow: true, icon: tmp2Result, label: children.title, subLabel: null, onPress: null };
+        obj = { variant: "text-sm/normal", color: "text-muted", children: children.description };
+        const items = [outer1_8(callback(first[21]).Text, obj), ];
+        tmp2Result = null != children.providedBy;
+        if (tmp2Result) {
+          const obj1 = { variant: "text-sm/normal", color: "text-subtle", children: null };
+          obj1[2] = children.providedBy;
+          tmp2Result = tmp2(tmp3(tmp4[21]).Text, obj1);
+        }
+        items[1] = tmp2Result;
+        obj[3] = outer1_9(callback(first[19]).Stack, { direction: "vertical", spacing: 4, children: items });
+        obj[4] = function onPress() {
+          outer1_6(closure_0);
+        };
+        return outer1_8(callback(first[29]).TableRow, obj, "" + children.method + "-" + children.vendor);
+      });
+      tmp10Result = tmp10(tmp2(tmp3[28]).TableRowGroup, obj5);
+    }
+    const obj6 = { children: null };
+    obj7 = { children: null };
+    items4[3] = tmp10Result;
+    obj[3] = items4;
+    obj7[0] = callback3(_require(first[19]).Stack, obj);
+    obj6[0] = tmp10(_require(first[18]).ModalContent, obj7);
+    return tmp10(_require(first[17]).ModalScreen, obj6);
   } else {
-    obj9 = { direction: "vertical", align: "center", spacing: 16, style: tmp.emptyContainer };
-    let ButtonGroup = callback;
-    let Text = navigation(first[21]).Text;
-    let obj10 = { variant: "text-sm/medium", color: "text-subtle", style: tmp.emptyText };
-    let Button = navigation(first[num]).intl;
-    let string = Button.string;
-    let tmp23 = methods(first[25]);
-    obj10.children = string(error ? tmp23.Bkmk4Y : tmp23.cR6336);
-    obj10 = [, ];
-    obj10[0] = ButtonGroup(Text, obj10);
-    ButtonGroup = navigation(first[26]).ButtonGroup;
-    obj11 = {};
-    tmp23 = callback;
-    Button = navigation(first[27]).Button;
-    const obj12 = { variant: "primary", size: "lg" };
-    const intl = navigation(first[num]).intl;
-    num = intl.string;
-    obj12.text = num(methods(first[25]).hDvmYP);
-    obj12.onPress = refetch;
-    string = callback(Button, obj12);
-    obj11.children = string;
-    Text = callback(ButtonGroup, obj11);
-    obj10[1] = Text;
-    obj9.children = obj10;
-    callback2(navigation(first[19]).Stack, obj9);
-    const ButtonGroupResult = ButtonGroup(Text, obj10);
-    const tmp18 = callback2;
+    const obj8 = { style: null, children: null };
+    obj8[0] = tmp.emptyContainer;
+    obj9 = { messageType: null, button: null, children: null };
+    obj9[0] = tmp2(tmp3[24]).HelpMessageTypes.ERROR;
+    const obj10 = { variant: "primary", size: "sm", text: null, onPress: null };
+    const intl = tmp2(tmp3[26]).intl;
+    obj10[2] = intl.string(methods(tmp3[27]).hDvmYP);
+    obj10[3] = refetch;
+    obj9[1] = tmp10(tmp2(tmp3[25]).Button, obj10);
+    const intl2 = tmp2(tmp3[26]).intl;
+    const tmp16 = methods(tmp3[27]);
+    obj9[2] = intl2.string(error ? tmp16.Bkmk4Y : tmp16.cR6336);
+    obj9 = tmp10(tmp2(tmp3[24]).HelpMessage, obj9);
+    obj8[1] = obj9;
+    tmp10(tmp2(tmp3[19]).Stack, obj8);
   }
 }
 function MethodErrorScreen() {
-  let obj = {};
-  obj = {};
-  obj = { variant: "text-md/normal", color: "text-default", style: callback3().errorMessage };
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj.children = intl.string(importDefault(2717)["1RD2jW"]);
-  obj.children = callback(require(4161) /* Text */.Text, obj);
-  obj.children = callback(require(6762) /* ModalContent */.ModalContent, obj);
-  return callback(require(6761) /* ModalScreen */.ModalScreen, obj);
+  let obj = { children: null };
+  obj = { children: null };
+  obj = { style: callback4().errorMessage, children: null };
+  const obj1 = { messageType: null, children: null };
+  obj1[0] = require(1297) /* Button */.HelpMessageTypes.ERROR;
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj1[1] = intl.string(importDefault(2741)["1RD2jW"]);
+  obj[1] = callback2(require(1297) /* Button */.HelpMessage, obj1);
+  obj[0] = callback2(require(4598) /* Stack */.Stack, obj);
+  obj[0] = callback2(require(6784) /* ModalContent */.ModalContent, obj);
+  return callback2(require(6783) /* ModalScreen */.ModalScreen, obj);
 }
-({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
+({ jsx: metroImportAll, jsxs: c9 } = jsxProd);
 let obj = {};
-obj[require("_callSuper").AgeAssuranceMethod.GOOGLE_WALLET] = require("WalletIcon").WalletIcon;
-obj[require("_callSuper").AgeAssuranceMethod.FACIAL_AGE_ESTIMATION] = require("UserCircleIcon").UserCircleIcon;
-obj[require("_callSuper").AgeAssuranceMethod.ID_SELFIE_MATCH] = require("IdIcon").IdIcon;
-obj = {};
-obj = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWER, shadowColor: "transparent" };
-obj.headerStyle = obj;
-obj.container = { alignSelf: "stretch" };
-obj.header = { textAlign: "center" };
-_createForOfIteratorHelperLoose = { marginTop: require("_createForOfIteratorHelperLoose").space.PX_24 };
-obj.loadingContainer = _createForOfIteratorHelperLoose;
-obj.emptyContainer = { marginTop: require("_createForOfIteratorHelperLoose").space.PX_24 };
-let obj2 = { marginTop: require("_createForOfIteratorHelperLoose").space.PX_24 };
-obj.emptyText = { paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_40, textAlign: "center" };
-let obj3 = { paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_40, textAlign: "center" };
-obj.errorMessage = { marginTop: require("_createForOfIteratorHelperLoose").space.PX_24, textAlign: "center" };
-let closure_11 = _createForOfIteratorHelperLoose.createStyles(obj);
+obj[require("create").AgeAssuranceMethod.GOOGLE_WALLET] = require("WalletIcon").WalletIcon;
+obj[require("create").AgeAssuranceMethod.FACIAL_AGE_ESTIMATION] = require("UserCircleIcon").UserCircleIcon;
+obj[require("create").AgeAssuranceMethod.ID_SELFIE_MATCH] = require("IdIcon").IdIcon;
+obj = { headerStyle: null, container: null, header: null, loadingContainer: null, emptyContainer: null, errorMessage: null };
+obj = { backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOWER, shadowColor: "transparent" };
+obj[0] = obj;
+obj[1] = { alignSelf: "stretch" };
+obj[2] = { textAlign: "center" };
+createCacheKey = { marginTop: require("Themes").space.PX_24 };
+obj[3] = createCacheKey;
+obj[4] = { marginTop: require("Themes").space.PX_24 };
+let obj2 = { marginTop: require("Themes").space.PX_24 };
+obj[5] = { marginTop: require("Themes").space.PX_24 };
+let closure_11 = createCacheKey.createStyles(obj);
 let closure_12 = { METHODS: "METHODS", GOOGLE_WALLET_VERIFICATION: "GOOGLE_WALLET_VERIFICATION", METHOD_ERROR: "METHOD_ERROR" };
-let obj4 = { marginTop: require("_createForOfIteratorHelperLoose").space.PX_24, textAlign: "center" };
-let result = require("result").fileFinishedImporting("modules/age_assurance/native/AgeVerificationExpressiveV2Modal.tsx");
+let obj3 = { marginTop: require("Themes").space.PX_24 };
+let result = require("noop").fileFinishedImporting("modules/age_assurance/native/AgeVerificationExpressiveV2Modal.tsx");
 
 export default function AgeVerificationExpressiveV2Modal(entryPoint) {
   entryPoint = entryPoint.entryPoint;
   const onClose = entryPoint.onClose;
-  const tmp = callback3();
-  let dependencyMap = tmp;
-  const memo = React.useMemo(() => entryPoint(tmp[33]).v4(), []);
+  let dependencyMap;
+  let memo;
+  const tmp = callback4();
+  dependencyMap = tmp;
+  memo = React.useMemo(() => entryPoint(_undefined[33]).v4(), []);
   const items = [tmp, memo, entryPoint, onClose];
-  const memo1 = React.useMemo(() => (function getScreens(closure_2, memo, entryPoint, onClose) {
-    let closure_0 = memo;
-    let closure_1 = entryPoint;
-    const dependencyMap = onClose;
-    function closeModal() {
-      let arr = onClose(onClose[30]);
+  const memo1 = React.useMemo(() => {
+    let closure_0 = closeModal;
+    let closure_1 = closure_0;
+    const _undefined = closure_1;
+    closeModal = function closeModal() {
+      let arr = callback(4395);
       arr = arr.pop();
-      onClose();
-    }
+      dependencyMap();
+    };
     let obj = {};
     obj = {
-      headerStyle: closure_2.headerStyle,
+      headerStyle: _undefined.headerStyle,
       headerTitle() {
         return null;
       },
-      headerLeft: entryPoint(5121).getHeaderCloseButton(closeModal),
-      render(arg0, navigation) {
-        return outer3_8(outer3_13, { entryPoint: closure_1, navigation, onClose: closeModal });
-      }
+      headerLeft: null,
+      render: null
     };
-    obj[outer2_12.METHODS] = obj;
+    obj[2] = entryPoint(_undefined[31]).getHeaderCloseButton(closeModal);
+    obj[3] = function render(arg0, navigation) {
+      return outer1_8(outer1_13, { entryPoint: closure_1, navigation, onClose: closeModal });
+    };
+    obj[outer1_12.METHODS] = obj;
     obj = {
-      headerStyle: closure_2.headerStyle,
+      headerStyle: _undefined.headerStyle,
       headerTitle() {
         return null;
-      }
+      },
+      headerLeft: null,
+      render: null
     };
-    const obj3 = entryPoint(5121);
-    obj.headerLeft = entryPoint(5121).getHeaderBackButton();
-    obj.render = function render() {
-      return outer3_8(onClose(onClose[32]), { onClose: closeModal, modalSessionId: closure_0 });
+    const obj3 = entryPoint(_undefined[31]);
+    obj[2] = entryPoint(_undefined[31]).getHeaderBackButton();
+    obj[3] = function render() {
+      return outer1_8(callback(7616), { onClose: closeModal, modalSessionId: closure_0 });
     };
-    obj[outer2_12.GOOGLE_WALLET_VERIFICATION] = obj;
+    obj[outer1_12.GOOGLE_WALLET_VERIFICATION] = obj;
     const obj1 = {
-      headerStyle: closure_2.headerStyle,
+      headerStyle: _undefined.headerStyle,
       headerTitle() {
         return null;
-      }
+      },
+      headerLeft: null,
+      render: null
     };
-    const obj5 = entryPoint(5121);
-    obj1.headerLeft = entryPoint(5121).getHeaderBackButton();
-    obj1.render = function render() {
-      return outer3_8(outer3_14, {});
+    const obj5 = entryPoint(_undefined[31]);
+    obj1[2] = entryPoint(_undefined[31]).getHeaderBackButton();
+    obj1[3] = function render() {
+      return callback2(closure_14, {});
     };
-    obj[outer2_12.METHOD_ERROR] = obj1;
+    obj[outer1_12.METHOD_ERROR] = obj1;
     return obj;
-  })(closure_2, memo, entryPoint, onClose), items);
-  let obj = { screens: memo1, initialRouteName: constants.METHODS };
-  const intl = entryPoint(1212).intl;
-  obj.headerBackTitle = intl.string(entryPoint(1212).t["13/7kX"]);
-  return callback(entryPoint(5552).Navigator, obj);
+  }, items);
+  let obj = { screens: memo1, initialRouteName: constants.METHODS, headerBackTitle: null };
+  const intl = entryPoint(1236).intl;
+  obj[2] = intl.string(entryPoint(1236).t["13/7kX"]);
+  return callback2(entryPoint(5570).Navigator, obj);
 };

@@ -1,18 +1,21 @@
-// Module ID: 11717
-// Function ID: 90748
+// Module ID: 11742
+// Function ID: 11743
 // Name: ChatViewPopups
-// Dependencies: [31, 11718, 11722, 11730, 2]
+// Dependencies: [19, 11743, 11747, 11755, 2]
 
-// Module 11717 (ChatViewPopups)
-import importAllResult from "result";
+// Module 11742 (ChatViewPopups)
+import importAllResult from "noop";
 
 const require = arg1;
 class ChatViewPopups {
   constructor(arg0) {
     guildId = global.guildId;
-    c1 = channelId.useRef(false);
+    useRef = undefined;
+    c2 = undefined;
+    channelId = undefined;
+    useRef = channelId.useRef(false);
     tmp = require("useIsHubRealNamePromptShowing")(guildId);
-    closure_2 = tmp;
+    c2 = tmp;
     obj = require("useShowWelcomeModal");
     showWelcomeModal = obj.useShowWelcomeModal(guildId, global.channelId);
     channelId = showWelcomeModal;
@@ -22,34 +25,33 @@ class ChatViewPopups {
     items[2] = tmp;
     effect = channelId.useEffect(() => {
       if (!ref.current) {
-        if (tmp) {
-          let obj = {
-            guildId,
-            onHide() {
-                  outer1_1.current = false;
-                  return false;
-                }
+        if (_undefined) {
+          let obj = { guildId: null, onHide: null };
+          obj[0] = guildId;
+          obj[1] = function onHide() {
+            closure_1.current = false;
+            return false;
           };
-          ref(tmp[3]).open(obj);
-          ref.current = true;
-          const obj3 = ref(tmp[3]);
+          ref(_undefined[3]).open(obj);
+          tmp.current = true;
+          const obj3 = ref(_undefined[3]);
         } else if (showWelcomeModal) {
-          obj = guildId(tmp[2]);
-          obj = {
-            guildId,
-            onHide() {
-                  outer1_1.current = false;
-                  return false;
-                }
+          obj = guildId(_undefined[2]);
+          obj = { guildId: null, onHide: null };
+          obj[0] = guildId;
+          obj[1] = function onHide() {
+            closure_1.current = false;
+            return false;
           };
           const result = obj.openWelcomeActionSheet(obj);
-          ref.current = true;
+          tmp.current = true;
         }
       }
     }, items);
     return null;
   }
 }
+let c3 = importAllResult;
 const memoResult = importAllResult.memo(ChatViewPopups);
 let result = require("useShowWelcomeModal").fileFinishedImporting("modules/chat/native/ChatViewPopups.tsx");
 

@@ -1,233 +1,170 @@
-// Module ID: 6036
-// Function ID: 53555
-// Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 57, 4079, 3794, 4846, 1194, 6037, 5856, 1348, 4504, 1918, 1838, 4237, 3802, 1907, 3982, 653, 6038, 686, 22, 1841, 566, 2]
+// Module ID: 6054
+// Function ID: 6055
+// Name: handleConnectionOpenOrResumed
+// Dependencies: [32, 4103, 3818, 4868, 1218, 6055, 5874, 1372, 4527, 1942, 1862, 4261, 3826, 1931, 4006, 676, 6056, 709, 12, 1865, 589, 2]
 
-// Module 6036 (_isNativeReflectConstruct)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_5 from "_isNativeReflectConstruct";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import closure_7 from "_isNativeReflectConstruct";
-import closure_8 from "_isNativeReflectConstruct";
+// Module 6054 (handleConnectionOpenOrResumed)
 import _slicedToArray from "_slicedToArray";
-import closure_10 from "_isNativeReflectConstruct";
-import closure_11 from "_isNativeReflectConstruct";
-import closure_12 from "_isNativeReflectConstruct";
-import closure_13 from "_isNativeReflectConstruct";
-import { EVERYONE_CHANNEL_ID } from "_isNativeReflectConstruct";
-import closure_15 from "_isNativeReflectConstruct";
-import closure_16 from "_isNativeReflectConstruct";
-import closure_17 from "_isNativeReflectConstruct";
-import closure_18 from "_isNativeReflectConstruct";
-import closure_19 from "_createForOfIteratorHelperLoose";
-import closure_20 from "_isNativeReflectConstruct";
-import closure_21 from "_isNativeReflectConstruct";
-import closure_22 from "_isNativeReflectConstruct";
-import closure_23 from "_isNativeReflectConstruct";
+import getHash from "getHash";
+import initialize from "initialize";
+import upsertAccount from "upsertAccount";
+import fetchFingerprint from "fetchFingerprint";
+import { EVERYONE_CHANNEL_ID } from "getMemberListId";
+import handlePermissionsChange from "handlePermissionsChange";
+import ensureGuildLoaded from "ensureGuildLoaded";
+import handleConnectionOpen from "handleConnectionOpen";
+import trackCommunicationDisabled from "trackCommunicationDisabled";
+import createGuildRecordFromRust from "createGuildRecordFromRust";
+import createRTCConnection from "createRTCConnection";
+import upsertRelationship from "upsertRelationship";
+import closure_17 from "handleConnectionOpen";
+import closure_18 from "handleConnectionOpen";
 import ME from "ME";
-import importDefaultResult from "validateGuildId";
+import { Store } from "initialize";
 
 let ChannelSections;
-let closure_24;
+let closure_19;
 const require = arg1;
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
-  }
-  const result = _isNativeReflectConstruct();
-}
-function _createForOfIteratorHelperLoose(iterable) {
-  let closure_0 = iterable;
-  iterable = "undefined" !== typeof Symbol;
-  if (iterable) {
-    const _Symbol = Symbol;
-    iterable = iterable[Symbol.iterator];
-  }
-  if (!iterable) {
-    iterable = iterable[Symbol.iterator];
-  }
-  if (iterable) {
-    const iter = iterable.call(iterable);
-    const next = iter.next;
-    return next.bind(iter);
-  } else {
-    const _Array = Array;
-    let tmp = iterable;
-    if (!Array.isArray(iterable)) {
-      let tmp2;
-      if (iterable) {
-        if ("string" === typeof iterable) {
-          tmp2 = _arrayLikeToArray(iterable, undefined);
-        } else {
-          const toString = {}.toString;
-          const substr = toString.call(iterable).slice(8, -1);
-          let name = substr;
-          if (tmp3) {
-            name = iterable.constructor.name;
-          }
-          if ("Map" !== name) {
-            if ("Set" !== name) {
-              if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(iterable, undefined);
-              } else {
-                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
-              }
-            }
-            tmp2 = arr;
-          }
-          const _Array2 = Array;
-          arr = Array.from(iterable);
-          const callResult = toString.call(iterable);
-          tmp3 = "Object" === substr && iterable.constructor;
-        }
-      }
-      tmp = tmp2;
-      if (!tmp2) {
-        const _TypeError = TypeError;
-        const typeError = new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
-        throw typeError;
-      }
-    }
-    if (tmp) {
-      closure_0 = tmp;
-    }
-    let c1 = 0;
-    return () => {
-      if (closure_1 >= length.length) {
-        let obj = { done: true };
-      } else {
-        obj = { done: false };
-        closure_1 = tmp3 + 1;
-        obj.value = length[+closure_1];
-      }
-      return obj;
-    };
-  }
-}
-function _arrayLikeToArray(arg0, arg1) {
-  let length;
-  if (tmp) {
-    length = arg0.length;
-  }
-  const ArrayResult = Array(length);
-  for (let num = 0; num < length; num = num + 1) {
-    ArrayResult[num] = arg0[num];
-  }
-  return ArrayResult;
-}
-function prune(arg0, arg1) {
-  let closure_0 = arg0;
-  const importDefault = arg1;
-  let obj = {};
-  const item = importDefaultResult.forEach((arg0) => {
-    let tmp = arg0 === outer1_23.getGuildId();
-    if (!tmp) {
-      tmp = arg0 === outer1_20.getGuildId();
-    }
-    if (!tmp) {
-      const channel = outer1_16.getChannel(outer1_22.getChannelId());
-      let guildId;
-      if (null != channel) {
-        guildId = channel.getGuildId();
-      }
-      tmp = arg0 === guildId;
-    }
-    if (!tmp) {
-      let tmp9 = null != outer1_3;
-      if (tmp9) {
-        tmp9 = outer1_3.guildId === arg0;
-      }
-      tmp = tmp9;
-    }
-    if (!tmp) {
-      outer1_25.clearWithoutFlushing(arg0, closure_0);
-      if (closure_1) {
-        obj[arg0] = outer1_25.get(arg0);
-      }
-    }
-  });
-  if (!obj2.isEmpty(obj)) {
-    obj = { type: "GUILD_SUBSCRIPTIONS_FLUSH" };
-    obj.subscriptions = obj;
-    importDefault(obj[22]).dispatch(obj);
-    const obj3 = importDefault(obj[22]);
-  }
-}
-function subscribe(guildId, channelId) {
-  let tmp = guildId;
-  if (obj.isFavoritesGuildId(guildId)) {
-    tmp = guildId;
-    if (null != channelId) {
-      const channel = store.getChannel(channelId);
-      guildId = undefined;
-      if (null != channel) {
-        guildId = channel.getGuildId();
-      }
-      tmp = guildId;
-      if (null != guildId) {
-        tmp = guildId;
-      }
-    }
-  }
-  importDefaultResult.subscribeToGuild(tmp);
-  return false;
-}
 function handleConnectionOpenOrResumed(type) {
   let obj;
   let set;
   let dependencyMap;
   if ("CONNECTION_OPEN" === type.type) {
-    prune(true, false);
+    obj = true;
+    set = false;
+    obj = {};
+    dependencyMap = obj;
+    const item = tmp3.forEach((id) => {
+      let tmp = id === outer1_18.getGuildId();
+      if (!tmp) {
+        tmp = id === outer1_15.getGuildId();
+      }
+      if (!tmp) {
+        const channel = outer1_11.getChannel(outer1_17.getChannelId());
+        let guildId;
+        if (channel != null) {
+          guildId = channel.getGuildId();
+        }
+        tmp = id === guildId;
+      }
+      if (!tmp) {
+        let tmp9 = null != outer1_3;
+        if (tmp9) {
+          tmp9 = outer1_3.guildId === id;
+        }
+        tmp = tmp9;
+      }
+      if (!tmp) {
+        outer1_20.clearWithoutFlushing(id, c0);
+        if (c1) {
+          obj[id] = obj2.get(id);
+        }
+        obj2 = outer1_20;
+      }
+    });
+    let obj1 = set(12);
+    if (!obj1.isEmpty(obj)) {
+      obj = { type: "GUILD_SUBSCRIPTIONS_FLUSH", subscriptions: null };
+      obj[1] = obj;
+      tmp3(709).dispatch(obj);
+      const tmp3Result = tmp3(709);
+    }
   }
   const guildId = store3.getGuildId();
   if (null != guildId) {
-    subscribe(guildId, store2.getChannelId(guildId));
+    const channelId = store2.getChannelId(guildId);
+    let tmp11 = guildId;
+    if (obj5.isFavoritesGuildId(guildId)) {
+      tmp11 = guildId;
+      if (null != channelId) {
+        const channel = store.getChannel(channelId);
+        let guildId1;
+        if (channel != null) {
+          guildId1 = channel.getGuildId();
+        }
+        if (guildId1 == null) {
+          guildId1 = guildId;
+        }
+        tmp11 = guildId1;
+      }
+    }
+    tmp3.subscribeToGuild(tmp11);
+    obj5 = obj(1865);
   }
   obj = {};
-  set = new Set(closure_11.lurkingGuildIds());
-  dependencyMap = closure_11.mostRecentLurkedGuildId();
-  const item = importDefaultResult.forEach((guildId) => {
-    if (null == outer1_19.getGuild(guildId)) {
-      outer1_25.clearWithoutFlushing(guildId, true);
+  set = new Set(initialize.lurkingGuildIds());
+  dependencyMap = initialize.mostRecentLurkedGuildId();
+  const item1 = tmp3.forEach((id) => {
+    if (null == outer1_14.getGuild(id)) {
+      outer1_20.clearWithoutFlushing(id, true);
     } else {
-      let hasItem = set.has(guildId);
+      let hasItem = set.has(id);
       if (hasItem) {
-        hasItem = guildId !== closure_2;
+        hasItem = id !== closure_2;
       }
       if (!hasItem) {
-        obj[guildId] = outer1_25.get(guildId);
+        obj[id] = outer1_20.get(id);
       }
     }
   });
-  if (!obj2.isEmpty(obj)) {
-    obj = { type: "GUILD_SUBSCRIPTIONS_FLUSH" };
-    obj.subscriptions = obj;
-    set(686).dispatch(obj);
-    const obj3 = set(686);
+  if (!obj8.isEmpty(obj)) {
+    obj1 = { type: "GUILD_SUBSCRIPTIONS_FLUSH", subscriptions: null };
+    obj1[1] = obj;
+    set(709).dispatch(obj1);
+    const tmp18Result = set(709);
   }
 }
-function handleChannelSelect(guildId) {
-  guildId = guildId.guildId;
-  let flag = !closure_17.isUnavailable(guildId);
-  if (flag) {
-    subscribe(guildId, guildId.channelId);
+function handleChannelSelect(arg0) {
+  let channelId;
+  let guildId;
+  ({ guildId, channelId } = arg0);
+  const isUnavailableResult = handleConnectionOpen.isUnavailable(guildId);
+  let flag = !isUnavailableResult;
+  if (!isUnavailableResult) {
+    let tmp4 = guildId;
+    if (obj.isFavoritesGuildId(guildId)) {
+      tmp4 = guildId;
+      if (null != channelId) {
+        const channel = store.getChannel(channelId);
+        guildId = undefined;
+        if (channel != null) {
+          guildId = channel.getGuildId();
+        }
+        tmp4 = guildId;
+      }
+    }
+    dependencyMap.subscribeToGuild(tmp4);
     flag = false;
+    obj = require(1865) /* getFavoritesAwareGuildName */;
   }
   return flag;
 }
 function resubscribe() {
   const guildId = store3.getGuildId();
-  subscribe(guildId, store2.getChannelId());
+  const channelId = store2.getChannelId();
+  let tmp3 = guildId;
+  if (obj.isFavoritesGuildId(guildId)) {
+    tmp3 = guildId;
+    if (null != channelId) {
+      const channel = store.getChannel(channelId);
+      let guildId1;
+      if (channel != null) {
+        guildId1 = channel.getGuildId();
+      }
+      if (guildId1 == null) {
+        guildId1 = guildId;
+      }
+      tmp3 = guildId1;
+    }
+  }
+  tmp3.subscribeToGuild(tmp3);
   return false;
 }
 function handleSpotifyUpdate() {
   syncingWith = syncingWith.getSyncingWith();
   if (null == syncingWith) {
     if (null != obj) {
-      importDefaultResult.unsubscribeUser(obj.guildId, obj.userId);
+      tmp3.unsubscribeUser(obj.guildId, obj.userId);
       obj = null;
     }
   } else {
@@ -240,27 +177,29 @@ function handleSpotifyUpdate() {
     if (friend.isFriend(userId)) {
       return false;
     } else {
-      const memberOfResult = closure_18.memberOf(userId);
+      const memberOfResult = trackCommunicationDisabled.memberOf(userId);
       if (0 === memberOfResult.length) {
         return false;
       } else {
-        const first = callback3(memberOfResult, 1)[0];
-        obj = { guildId: first, userId };
-        importDefaultResult.subscribeUser(first, userId);
+        const first = callback(memberOfResult, 1)[0];
+        obj = { guildId: null, userId: null };
+        obj[0] = first;
+        obj[1] = userId;
+        tmp3.subscribeUser(first, userId);
       }
     }
   }
   return false;
 }
-({ ChannelSections, ChannelTypes: closure_24 } = ME);
-importDefaultResult = new importDefaultResult((subscriptions) => {
+({ ChannelSections, ChannelTypes: closure_19 } = ME);
+let closure_20 = new require("_enqueue")((subscriptions) => {
   for (const key10004 in arg0) {
     let tmp6 = key10004;
     let tmp7 = guild;
     let isUnavailableResult = null != guild.getGuild(key10004);
     if (!isUnavailableResult) {
-      let tmp3 = closure_17;
-      isUnavailableResult = closure_17.isUnavailable(key10004);
+      let tmp3 = handleConnectionOpen;
+      isUnavailableResult = handleConnectionOpen.isUnavailable(key10004);
     }
     if (isUnavailableResult) {
       continue;
@@ -270,117 +209,165 @@ importDefaultResult = new importDefaultResult((subscriptions) => {
     }
     continue;
   }
-  let obj = importDefault(686);
+  let obj = importDefault(709);
   obj = { type: "GUILD_SUBSCRIPTIONS_FLUSH", subscriptions };
   obj.dispatch(obj);
 });
-let tmp5 = ((Store) => {
-  class GuildSubscriptionsStore {
-    constructor() {
-      self = this;
-      tmp = outer1_4(this, GuildSubscriptionsStore);
-      obj = outer1_7(GuildSubscriptionsStore);
-      tmp2 = outer1_6;
-      if (outer1_26()) {
-        tmp6 = globalThis;
-        _Reflect = Reflect;
-        tmp7 = outer1_7;
-        tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, outer1_7(self).constructor);
-      } else {
-        tmp3 = arguments;
-        tmp4 = arguments;
-        constructResult = obj(...arguments);
-      }
-      return tmp2(self, constructResult);
-    }
+class GuildSubscriptionsStore extends Store {
+}
+const prototype = GuildSubscriptionsStore.prototype;
+prototype["initialize"] = function initialize() {
+  this.waitFor(fetchFingerprint, handlePermissionsChange, ensureGuildLoaded, getHash, handleConnectionOpen, trackCommunicationDisabled, createGuildRecordFromRust, initialize, createRTCConnection, upsertRelationship, closure_17, closure_18, upsertAccount);
+  const items = [upsertAccount];
+  this.syncWith(items, handleSpotifyUpdate);
+  const items1 = [handlePermissionsChange];
+  this.syncWith(items1, resubscribe);
+};
+prototype["getSubscribedThreadIds"] = function getSubscribedThreadIds() {
+  return tmp3.getSubscribedThreadIds();
+};
+prototype["isSubscribedToThreads"] = function isSubscribedToThreads(arg0) {
+  return tmp3.isSubscribedToThreads(arg0);
+};
+prototype["isSubscribedToAnyMember"] = function isSubscribedToAnyMember(arg0) {
+  return tmp3.isSubscribedToAnyMember(arg0);
+};
+prototype["isSubscribedToMemberUpdates"] = function isSubscribedToMemberUpdates(arg0) {
+  return tmp3.isSubscribedToMemberUpdates(arg0);
+};
+prototype["isSubscribedToAnyGuildChannel"] = function isSubscribedToAnyGuildChannel(id) {
+  const channels = tmp3.get(id).channels;
+  let tmp = null != channels;
+  if (tmp) {
+    const _Object = Object;
+    tmp = Object.keys(channels).length > 0;
   }
-  callback2(GuildSubscriptionsStore, Store);
-  let obj = {
-    key: "initialize",
-    value() {
-      this.waitFor(outer1_13, outer1_15, outer1_16, outer1_10, outer1_17, outer1_18, outer1_19, outer1_11, outer1_20, outer1_21, outer1_22, outer1_23, outer1_12);
-      const items = [outer1_12];
-      this.syncWith(items, outer1_32);
-      const items1 = [outer1_15];
-      this.syncWith(items1, outer1_31);
-    }
-  };
-  let items = [obj, , , , , ];
-  obj = {
-    key: "getSubscribedThreadIds",
-    value() {
-      return outer1_25.getSubscribedThreadIds();
-    }
-  };
-  items[1] = obj;
-  obj = {
-    key: "isSubscribedToThreads",
-    value(arg0) {
-      return outer1_25.isSubscribedToThreads(arg0);
-    }
-  };
-  items[2] = obj;
-  items[3] = {
-    key: "isSubscribedToAnyMember",
-    value(arg0) {
-      return outer1_25.isSubscribedToAnyMember(arg0);
-    }
-  };
-  items[4] = {
-    key: "isSubscribedToMemberUpdates",
-    value(arg0) {
-      return outer1_25.isSubscribedToMemberUpdates(arg0);
-    }
-  };
-  items[5] = {
-    key: "isSubscribedToAnyGuildChannel",
-    value(arg0) {
-      const channels = outer1_25.get(arg0).channels;
-      let tmp = null != channels;
-      if (tmp) {
-        const _Object = Object;
-        tmp = Object.keys(channels).length > 0;
-      }
-      return tmp;
-    }
-  };
-  return callback(GuildSubscriptionsStore, items);
-})(require("initialize").Store);
-tmp5.displayName = "GuildSubscriptionsStore";
-tmp5 = new tmp5(require("dispatcher"), {
+  return tmp;
+};
+GuildSubscriptionsStore.displayName = "GuildSubscriptionsStore";
+const guildSubscriptionsStore = new GuildSubscriptionsStore(require("dispatcher"), {
   CONNECTION_OPEN: handleConnectionOpenOrResumed,
   CONNECTION_RESUMED: handleConnectionOpenOrResumed,
   CONNECTION_CLOSED: function handleConnectionClosed() {
-    prune(false, false);
+    let c0 = false;
+    const importDefault = false;
+    let obj = {};
+    const item = tmp3.forEach((id) => {
+      let tmp = id === outer1_18.getGuildId();
+      if (!tmp) {
+        tmp = id === outer1_15.getGuildId();
+      }
+      if (!tmp) {
+        const channel = outer1_11.getChannel(outer1_17.getChannelId());
+        let guildId;
+        if (channel != null) {
+          guildId = channel.getGuildId();
+        }
+        tmp = id === guildId;
+      }
+      if (!tmp) {
+        let tmp9 = null != outer1_3;
+        if (tmp9) {
+          tmp9 = outer1_3.guildId === id;
+        }
+        tmp = tmp9;
+      }
+      if (!tmp) {
+        outer1_20.clearWithoutFlushing(id, c0);
+        if (c1) {
+          obj[id] = obj2.get(id);
+        }
+        obj2 = outer1_20;
+      }
+    });
+    if (!obj2.isEmpty(obj)) {
+      obj = { type: "GUILD_SUBSCRIPTIONS_FLUSH", subscriptions: null };
+      obj[1] = obj;
+      importDefault(tmp3[17]).dispatch(obj);
+      const tmp2Result = importDefault(tmp3[17]);
+    }
   },
   IDLE: function handleIdle(idle) {
     if (idle.idle) {
-      prune(false, true);
+      let c0 = false;
+      const importDefault = true;
+      let obj = {};
+      const item = tmp3.forEach((id) => {
+        let tmp = id === outer1_18.getGuildId();
+        if (!tmp) {
+          tmp = id === outer1_15.getGuildId();
+        }
+        if (!tmp) {
+          const channel = outer1_11.getChannel(outer1_17.getChannelId());
+          let guildId;
+          if (channel != null) {
+            guildId = channel.getGuildId();
+          }
+          tmp = id === guildId;
+        }
+        if (!tmp) {
+          let tmp9 = null != outer1_3;
+          if (tmp9) {
+            tmp9 = outer1_3.guildId === id;
+          }
+          tmp = tmp9;
+        }
+        if (!tmp) {
+          outer1_20.clearWithoutFlushing(id, c0);
+          if (c1) {
+            obj[id] = obj2.get(id);
+          }
+          obj2 = outer1_20;
+        }
+      });
+      if (!obj2.isEmpty(obj)) {
+        obj = { type: "GUILD_SUBSCRIPTIONS_FLUSH", subscriptions: null };
+        obj[1] = obj;
+        tmp3(obj[17]).dispatch(obj);
+        const tmp3Result = tmp3(obj[17]);
+      }
     } else {
       return false;
     }
   },
   LOGOUT: function handleLogout() {
-    importDefaultResult.reset();
+    tmp3.reset();
   },
   VOICE_CHANNEL_SELECT: handleChannelSelect,
   CHANNEL_SELECT: handleChannelSelect,
   GUILD_CREATE: function handleGuildCreate(guild) {
     if (guild.guild.id === store3.getGuildId()) {
-      resubscribe();
+      const guildId = store3.getGuildId();
+      const channelId = store2.getChannelId();
+      let tmp2 = guildId;
+      if (obj3.isFavoritesGuildId(guildId)) {
+        tmp2 = guildId;
+        if (null != channelId) {
+          const channel = store.getChannel(channelId);
+          let guildId1;
+          if (channel != null) {
+            guildId1 = channel.getGuildId();
+          }
+          if (guildId1 == null) {
+            guildId1 = guildId;
+          }
+          tmp2 = guildId1;
+        }
+      }
+      tmp3.subscribeToGuild(tmp2);
+      obj3 = require(1865) /* getFavoritesAwareGuildName */;
     }
   },
   GUILD_DELETE: function handleGuildDelete(guild) {
-    importDefaultResult.clearWithoutFlushing(guild.guild.id, true);
+    tmp3.clearWithoutFlushing(guild.guild.id, true);
   },
   GUILD_SUBSCRIPTIONS_MEMBERS_ADD: function handleMembersAdd(arg0) {
     let require;
     let userIds;
     ({ guildId: require, userIds } = arg0);
-    const item = userIds.forEach((arg0) => {
-      if (arg0 !== outer1_13.getId()) {
-        outer1_25.subscribeUser(closure_0, arg0);
+    const item = userIds.forEach((userId) => {
+      if (userId !== outer1_8.getId()) {
+        outer1_20.subscribeUser(closure_0, userId);
       }
     });
     return false;
@@ -389,16 +376,16 @@ tmp5 = new tmp5(require("dispatcher"), {
     let require;
     let userIds;
     ({ guildId: require, userIds } = arg0);
-    const item = userIds.forEach((arg0) => {
-      outer1_25.unsubscribeUser(closure_0, arg0);
+    const item = userIds.forEach((userId) => {
+      outer1_20.unsubscribeUser(closure_0, userId);
     });
     return false;
   },
   GUILD_SUBSCRIPTIONS_ADD_MEMBER_UPDATES: function handleAddMemberUpdatesGuildSubscription(guildId) {
-    const result = importDefaultResult.subscribeToMemberUpdates(guildId.guildId);
+    const result = tmp3.subscribeToMemberUpdates(guildId.guildId);
   },
   GUILD_SUBSCRIPTIONS_REMOVE_MEMBER_UPDATES: function handleRemoveMemberUpdatesGuildSubscription(guildId) {
-    const result = importDefaultResult.unsubscribeFromMemberUpdates(guildId.guildId);
+    const result = tmp3.unsubscribeFromMemberUpdates(guildId.guildId);
   },
   GUILD_SUBSCRIPTIONS_CHANNEL: function handleChannel(arg0) {
     let channelId;
@@ -406,7 +393,7 @@ tmp5 = new tmp5(require("dispatcher"), {
     let ranges;
     ({ guildId, channelId, ranges } = arg0);
     if (channelId === EVERYONE_CHANNEL_ID) {
-      let flag = importDefaultResult.subscribeChannel(guildId, channelId, ranges);
+      let flag = tmp3.subscribeChannel(guildId, channelId, ranges);
     } else {
       let parent_id = store.getChannel(channelId);
       flag = false;
@@ -414,56 +401,85 @@ tmp5 = new tmp5(require("dispatcher"), {
         guildId = parent_id.getGuildId();
         let isFavoritesGuildIdResult = guildId !== guildId;
         if (isFavoritesGuildIdResult) {
-          isFavoritesGuildIdResult = require(1841) /* isFavoritesGuildId */.isFavoritesGuildId(guildId);
-          const obj = require(1841) /* isFavoritesGuildId */;
+          isFavoritesGuildIdResult = require(1865) /* getFavoritesAwareGuildName */.isFavoritesGuildId(guildId);
+          const obj = require(1865) /* getFavoritesAwareGuildName */;
         }
         if (isFavoritesGuildIdResult) {
-          importDefaultResult.subscribeToGuild(guildId);
+          tmp3.subscribeToGuild(guildId);
         }
-        if (null != parent_id) {
-          if (parent_id.isThread()) {
-            if (parent_id.type === constants.ANNOUNCEMENT_THREAD) {
-              parent_id = parent_id.parent_id;
-              let subscribeChannelResult = importDefaultResult.subscribeChannel(guildId, parent_id, ranges);
-            } else {
-              const tmp9 = !parent_id.isActiveThread();
-              subscribeChannelResult = !tmp9;
-              if (!tmp9) {
-                subscribeChannelResult = importDefaultResult.subscribeThreadMemberList(guildId, channelId, store2.getChannelId());
-              }
+        let isThreadResult;
+        if (parent_id != null) {
+          isThreadResult = parent_id.isThread();
+        }
+        if (isThreadResult) {
+          if (parent_id.type === constants.ANNOUNCEMENT_THREAD) {
+            parent_id = parent_id.parent_id;
+            let subscribeChannelResult = tmp3.subscribeChannel(guildId, parent_id, ranges);
+          } else {
+            subscribeChannelResult = parent_id.isActiveThread();
+            if (subscribeChannelResult) {
+              subscribeChannelResult = tmp3.subscribeThreadMemberList(guildId, channelId, store2.getChannelId());
             }
           }
+        } else {
+          flag = tmp3.subscribeChannel(guildId, channelId, ranges);
         }
-        flag = importDefaultResult.subscribeChannel(guildId, channelId, ranges);
       }
     }
     return flag;
   },
   GUILD_SUBSCRIPTIONS: function handleGuild(guildId) {
-    return importDefaultResult.subscribeToGuild(guildId.guildId);
+    return tmp3.subscribeToGuild(guildId.guildId);
   },
-  CHANNEL_PRELOAD: function handleChannelPreload(guildId) {
-    subscribe(guildId.guildId, guildId.channelId);
-    return false;
-  },
-  OVERLAY_TEXT_CHAT_SELECT_CHANNEL: function handleOverlayTextChatSelectChannel(guildId) {
-    subscribe(guildId.guildId, guildId.channelId);
-    return false;
-  },
-  INBOX_OPEN: function handleInboxOpen(guildIds) {
-    let iter2;
-    const tmp = _createForOfIteratorHelperLoose(guildIds.guildIds);
-    let iter = tmp();
-    if (!iter.done) {
-      do {
-        let value = iter.value;
-        if (null != value) {
-          let tmp2 = importDefaultResult;
-          let subscribeToGuildResult = importDefaultResult.subscribeToGuild(value);
+  CHANNEL_PRELOAD: function handleChannelPreload(arg0) {
+    let channelId;
+    let guildId;
+    ({ guildId, channelId } = arg0);
+    let tmp = guildId;
+    if (obj.isFavoritesGuildId(guildId)) {
+      tmp = guildId;
+      if (null != channelId) {
+        const channel = store.getChannel(channelId);
+        guildId = undefined;
+        if (channel != null) {
+          guildId = channel.getGuildId();
         }
-        iter2 = tmp();
-        iter = iter2;
-      } while (!iter2.done);
+        tmp = guildId;
+        const tmp3 = store;
+      }
+    }
+    tmp3.subscribeToGuild(tmp);
+    return false;
+  },
+  OVERLAY_TEXT_CHAT_SELECT_CHANNEL: function handleOverlayTextChatSelectChannel(arg0) {
+    let channelId;
+    let guildId;
+    ({ guildId, channelId } = arg0);
+    let tmp = guildId;
+    if (obj.isFavoritesGuildId(guildId)) {
+      tmp = guildId;
+      if (null != channelId) {
+        const channel = store.getChannel(channelId);
+        guildId = undefined;
+        if (channel != null) {
+          guildId = channel.getGuildId();
+        }
+        tmp = guildId;
+        const tmp3 = store;
+      }
+    }
+    tmp3.subscribeToGuild(tmp);
+    return false;
+  },
+  INBOX_OPEN: function handleInboxOpen(arg0) {
+    const iter = arg0.guildIds[Symbol.iterator]();
+    const nextResult = iter.next();
+    while (iter !== undefined) {
+      if (null != nextResult) {
+        let tmp4 = nextResult;
+        let subscribeToGuildResult = tmp3.subscribeToGuild(tmp2);
+      }
+      continue;
     }
     return false;
   },
@@ -472,26 +488,312 @@ tmp5 = new tmp5(require("dispatcher"), {
     let id;
     channel = channel.channel;
     if (channel.isArchivedThread()) {
-      let result = importDefaultResult.unsubscribeThreadMemberList(channel.guild_id, channel.id);
+      let result = tmp3.unsubscribeThreadMemberList(channel.guild_id, channel.id);
     } else {
-      let tmp = !channel.isActiveThread();
-      if (!tmp) {
-        tmp = store2.getChannelId() !== channel.id;
+      const isActiveThreadResult = channel.isActiveThread();
+      let tmp2 = !isActiveThreadResult;
+      if (isActiveThreadResult) {
+        tmp2 = store2.getChannelId() !== channel.id;
       }
-      result = !tmp;
-      if (!tmp) {
+      result = !tmp2;
+      if (!tmp2) {
         ({ guild_id, id } = channel);
-        const result1 = importDefaultResult.subscribeThreadMemberList(guild_id, id, store2.getChannelId());
+        const result1 = tmp3.subscribeThreadMemberList(guild_id, id, store2.getChannelId());
       }
     }
     return result;
   },
   THREAD_DELETE: function handleThreadDelete(channel) {
     channel = channel.channel;
-    return importDefaultResult.unsubscribeThreadMemberList(channel.guild_id, channel.id);
+    return tmp3.unsubscribeThreadMemberList(channel.guild_id, channel.id);
   },
   THREAD_LIST_SYNC: resubscribe
 });
-let result = require("_possibleConstructorReturn").fileFinishedImporting("stores/GuildSubscriptionsStore.tsx");
+let obj = {
+  CONNECTION_OPEN: handleConnectionOpenOrResumed,
+  CONNECTION_RESUMED: handleConnectionOpenOrResumed,
+  CONNECTION_CLOSED: function handleConnectionClosed() {
+    let c0 = false;
+    const importDefault = false;
+    let obj = {};
+    const item = tmp3.forEach((id) => {
+      let tmp = id === outer1_18.getGuildId();
+      if (!tmp) {
+        tmp = id === outer1_15.getGuildId();
+      }
+      if (!tmp) {
+        const channel = outer1_11.getChannel(outer1_17.getChannelId());
+        let guildId;
+        if (channel != null) {
+          guildId = channel.getGuildId();
+        }
+        tmp = id === guildId;
+      }
+      if (!tmp) {
+        let tmp9 = null != outer1_3;
+        if (tmp9) {
+          tmp9 = outer1_3.guildId === id;
+        }
+        tmp = tmp9;
+      }
+      if (!tmp) {
+        outer1_20.clearWithoutFlushing(id, c0);
+        if (c1) {
+          obj[id] = obj2.get(id);
+        }
+        obj2 = outer1_20;
+      }
+    });
+    if (!obj2.isEmpty(obj)) {
+      obj = { type: "GUILD_SUBSCRIPTIONS_FLUSH", subscriptions: null };
+      obj[1] = obj;
+      importDefault(tmp3[17]).dispatch(obj);
+      const tmp2Result = importDefault(tmp3[17]);
+    }
+  },
+  IDLE: function handleIdle(idle) {
+    if (idle.idle) {
+      let c0 = false;
+      const importDefault = true;
+      let obj = {};
+      const item = tmp3.forEach((id) => {
+        let tmp = id === outer1_18.getGuildId();
+        if (!tmp) {
+          tmp = id === outer1_15.getGuildId();
+        }
+        if (!tmp) {
+          const channel = outer1_11.getChannel(outer1_17.getChannelId());
+          let guildId;
+          if (channel != null) {
+            guildId = channel.getGuildId();
+          }
+          tmp = id === guildId;
+        }
+        if (!tmp) {
+          let tmp9 = null != outer1_3;
+          if (tmp9) {
+            tmp9 = outer1_3.guildId === id;
+          }
+          tmp = tmp9;
+        }
+        if (!tmp) {
+          outer1_20.clearWithoutFlushing(id, c0);
+          if (c1) {
+            obj[id] = obj2.get(id);
+          }
+          obj2 = outer1_20;
+        }
+      });
+      if (!obj2.isEmpty(obj)) {
+        obj = { type: "GUILD_SUBSCRIPTIONS_FLUSH", subscriptions: null };
+        obj[1] = obj;
+        tmp3(obj[17]).dispatch(obj);
+        const tmp3Result = tmp3(obj[17]);
+      }
+    } else {
+      return false;
+    }
+  },
+  LOGOUT: function handleLogout() {
+    tmp3.reset();
+  },
+  VOICE_CHANNEL_SELECT: handleChannelSelect,
+  CHANNEL_SELECT: handleChannelSelect,
+  GUILD_CREATE: function handleGuildCreate(guild) {
+    if (guild.guild.id === store3.getGuildId()) {
+      const guildId = store3.getGuildId();
+      const channelId = store2.getChannelId();
+      let tmp2 = guildId;
+      if (obj3.isFavoritesGuildId(guildId)) {
+        tmp2 = guildId;
+        if (null != channelId) {
+          const channel = store.getChannel(channelId);
+          let guildId1;
+          if (channel != null) {
+            guildId1 = channel.getGuildId();
+          }
+          if (guildId1 == null) {
+            guildId1 = guildId;
+          }
+          tmp2 = guildId1;
+        }
+      }
+      tmp3.subscribeToGuild(tmp2);
+      obj3 = require(1865) /* getFavoritesAwareGuildName */;
+    }
+  },
+  GUILD_DELETE: function handleGuildDelete(guild) {
+    tmp3.clearWithoutFlushing(guild.guild.id, true);
+  },
+  GUILD_SUBSCRIPTIONS_MEMBERS_ADD: function handleMembersAdd(arg0) {
+    let require;
+    let userIds;
+    ({ guildId: require, userIds } = arg0);
+    const item = userIds.forEach((userId) => {
+      if (userId !== outer1_8.getId()) {
+        outer1_20.subscribeUser(closure_0, userId);
+      }
+    });
+    return false;
+  },
+  GUILD_SUBSCRIPTIONS_MEMBERS_REMOVE: function handleMembersRemove(arg0) {
+    let require;
+    let userIds;
+    ({ guildId: require, userIds } = arg0);
+    const item = userIds.forEach((userId) => {
+      outer1_20.unsubscribeUser(closure_0, userId);
+    });
+    return false;
+  },
+  GUILD_SUBSCRIPTIONS_ADD_MEMBER_UPDATES: function handleAddMemberUpdatesGuildSubscription(guildId) {
+    const result = tmp3.subscribeToMemberUpdates(guildId.guildId);
+  },
+  GUILD_SUBSCRIPTIONS_REMOVE_MEMBER_UPDATES: function handleRemoveMemberUpdatesGuildSubscription(guildId) {
+    const result = tmp3.unsubscribeFromMemberUpdates(guildId.guildId);
+  },
+  GUILD_SUBSCRIPTIONS_CHANNEL: function handleChannel(arg0) {
+    let channelId;
+    let guildId;
+    let ranges;
+    ({ guildId, channelId, ranges } = arg0);
+    if (channelId === EVERYONE_CHANNEL_ID) {
+      let flag = tmp3.subscribeChannel(guildId, channelId, ranges);
+    } else {
+      let parent_id = store.getChannel(channelId);
+      flag = false;
+      if (null != parent_id) {
+        guildId = parent_id.getGuildId();
+        let isFavoritesGuildIdResult = guildId !== guildId;
+        if (isFavoritesGuildIdResult) {
+          isFavoritesGuildIdResult = require(1865) /* getFavoritesAwareGuildName */.isFavoritesGuildId(guildId);
+          const obj = require(1865) /* getFavoritesAwareGuildName */;
+        }
+        if (isFavoritesGuildIdResult) {
+          tmp3.subscribeToGuild(guildId);
+        }
+        let isThreadResult;
+        if (parent_id != null) {
+          isThreadResult = parent_id.isThread();
+        }
+        if (isThreadResult) {
+          if (parent_id.type === constants.ANNOUNCEMENT_THREAD) {
+            parent_id = parent_id.parent_id;
+            let subscribeChannelResult = tmp3.subscribeChannel(guildId, parent_id, ranges);
+          } else {
+            subscribeChannelResult = parent_id.isActiveThread();
+            if (subscribeChannelResult) {
+              subscribeChannelResult = tmp3.subscribeThreadMemberList(guildId, channelId, store2.getChannelId());
+            }
+          }
+        } else {
+          flag = tmp3.subscribeChannel(guildId, channelId, ranges);
+        }
+      }
+    }
+    return flag;
+  },
+  GUILD_SUBSCRIPTIONS: function handleGuild(guildId) {
+    return tmp3.subscribeToGuild(guildId.guildId);
+  },
+  CHANNEL_PRELOAD: function handleChannelPreload(arg0) {
+    let channelId;
+    let guildId;
+    ({ guildId, channelId } = arg0);
+    let tmp = guildId;
+    if (obj.isFavoritesGuildId(guildId)) {
+      tmp = guildId;
+      if (null != channelId) {
+        const channel = store.getChannel(channelId);
+        guildId = undefined;
+        if (channel != null) {
+          guildId = channel.getGuildId();
+        }
+        tmp = guildId;
+        const tmp3 = store;
+      }
+    }
+    tmp3.subscribeToGuild(tmp);
+    return false;
+  },
+  OVERLAY_TEXT_CHAT_SELECT_CHANNEL: function handleOverlayTextChatSelectChannel(arg0) {
+    let channelId;
+    let guildId;
+    ({ guildId, channelId } = arg0);
+    let tmp = guildId;
+    if (obj.isFavoritesGuildId(guildId)) {
+      tmp = guildId;
+      if (null != channelId) {
+        const channel = store.getChannel(channelId);
+        guildId = undefined;
+        if (channel != null) {
+          guildId = channel.getGuildId();
+        }
+        tmp = guildId;
+        const tmp3 = store;
+      }
+    }
+    tmp3.subscribeToGuild(tmp);
+    return false;
+  },
+  INBOX_OPEN: function handleInboxOpen(arg0) {
+    const iter = arg0.guildIds[Symbol.iterator]();
+    const nextResult = iter.next();
+    while (iter !== undefined) {
+      if (null != nextResult) {
+        let tmp4 = nextResult;
+        let subscribeToGuildResult = tmp3.subscribeToGuild(tmp2);
+      }
+      continue;
+    }
+    return false;
+  },
+  THREAD_UPDATE: function handleThreadUpdate(channel) {
+    let guild_id;
+    let id;
+    channel = channel.channel;
+    if (channel.isArchivedThread()) {
+      let result = tmp3.unsubscribeThreadMemberList(channel.guild_id, channel.id);
+    } else {
+      const isActiveThreadResult = channel.isActiveThread();
+      let tmp2 = !isActiveThreadResult;
+      if (isActiveThreadResult) {
+        tmp2 = store2.getChannelId() !== channel.id;
+      }
+      result = !tmp2;
+      if (!tmp2) {
+        ({ guild_id, id } = channel);
+        const result1 = tmp3.subscribeThreadMemberList(guild_id, id, store2.getChannelId());
+      }
+    }
+    return result;
+  },
+  THREAD_DELETE: function handleThreadDelete(channel) {
+    channel = channel.channel;
+    return tmp3.unsubscribeThreadMemberList(channel.guild_id, channel.id);
+  },
+  THREAD_LIST_SYNC: resubscribe
+};
+let tmp3 = new require("_enqueue")((subscriptions) => {
+  for (const key10004 in arg0) {
+    let tmp6 = key10004;
+    let tmp7 = guild;
+    let isUnavailableResult = null != guild.getGuild(key10004);
+    if (!isUnavailableResult) {
+      let tmp3 = handleConnectionOpen;
+      isUnavailableResult = handleConnectionOpen.isUnavailable(key10004);
+    }
+    if (isUnavailableResult) {
+      continue;
+    } else {
+      delete tmp[tmp2];
+      continue;
+    }
+    continue;
+  }
+  let obj = importDefault(709);
+  obj = { type: "GUILD_SUBSCRIPTIONS_FLUSH", subscriptions };
+  obj.dispatch(obj);
+});
+let result = require("initialize").fileFinishedImporting("stores/GuildSubscriptionsStore.tsx");
 
-export default tmp5;
+export default guildSubscriptionsStore;

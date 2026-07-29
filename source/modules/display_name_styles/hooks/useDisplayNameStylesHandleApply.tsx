@@ -1,11 +1,11 @@
-// Module ID: 14330
-// Function ID: 109902
+// Module ID: 14352
+// Function ID: 14353
 // Name: useDisplayNameStylesHandleApply
-// Dependencies: [31, 653, 1863, 7919, 7916, 675, 1864, 2]
+// Dependencies: [19, 676, 1887, 7944, 7941, 698, 1888, 2]
 // Exports: useDisplayNameStylesHandleApply
 
-// Module 14330 (useDisplayNameStylesHandleApply)
-import result from "result";
+// Module 14352 (useDisplayNameStylesHandleApply)
+import noop from "noop";
 import { AnalyticEvents } from "ME";
 
 const require = arg1;
@@ -23,33 +23,41 @@ export const useDisplayNameStylesHandleApply = function useDisplayNameStylesHand
   let items = [hasChanges, selectedFontId, selectedEffectId, selectedColors, defaultColor, onClose, guildId, isTryItOut];
   return selectedColors.useCallback(() => {
     if (hasChanges) {
-      let items = selectedColors;
       let tmp4 = selectedEffectId === hasChanges(selectedEffectId[2]).DisplayNameEffect.SOLID;
       if (tmp4) {
-        tmp4 = selectedColors.length > 0;
+        tmp4 = arr.length > 0;
       }
       if (tmp4) {
-        tmp4 = selectedColors[0] === defaultColor;
+        tmp4 = arr[0] === defaultColor;
       }
+      let items = arr;
       if (tmp4) {
         items = [];
       }
-      let obj = { fontId: selectedFontId, effectId: selectedEffectId, colors: items };
+      let obj = { fontId: null, effectId: null, colors: null };
+      obj[0] = selectedFontId;
+      obj[1] = selectedEffectId;
+      obj[2] = items;
       if (isTryItOut) {
-        let tmp11Result = tmp11(tmp12[3]);
-        const result = tmp11Result.setTryItOutDisplayNameStyles(obj);
+        let tmp2Result = tmp2(tmp3[3]);
+        const result = tmp2Result.setTryItOutDisplayNameStyles(obj);
       } else {
-        tmp11Result = tmp11(tmp12[4]);
-        obj = { guildId };
-        obj.displayNameStyles = obj;
-        tmp11Result.setPendingChanges(obj);
+        tmp2Result = tmp2(tmp3[4]);
+        obj = { guildId: null, displayNameStyles: null };
+        obj[0] = guildId;
+        obj[1] = obj;
+        tmp2Result.setPendingChanges(obj);
       }
-      obj = { font_name: hasChanges(selectedEffectId[6]).DisplayNameFont[selectedFontId], effect_name: hasChanges(selectedEffectId[2]).DisplayNameEffect[selectedEffectId], colors: selectedColors };
+      obj = { font_name: null, effect_name: null, colors: null };
+      obj[0] = hasChanges(selectedEffectId[6]).DisplayNameFont[selectedFontId];
+      obj[1] = hasChanges(selectedEffectId[2]).DisplayNameEffect[selectedEffectId];
+      obj[2] = selectedColors;
       selectedFontId(selectedEffectId[5]).track(defaultColor.DISPLAY_NAME_STYLES_APPLIED, obj);
-      if (null != onClose) {
+      if (onClose != null) {
         onClose();
       }
       const obj5 = selectedFontId(selectedEffectId[5]);
+      const tmp6 = selectedFontId;
     }
   }, items);
 };

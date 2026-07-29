@@ -1,661 +1,391 @@
-// Module ID: 12686
-// Function ID: 98005
-// Name: _createForOfIteratorHelperLoose
-// Dependencies: [15, 17, 18, 6, 7, 27, 12687, 12689, 3, 477, 12688, 4712, 2]
+// Module ID: 12708
+// Function ID: 12709
+// Name: items
+// Dependencies: [17, 12709, 12711, 3, 500, 12710, 4734, 2]
 // Exports: getCompressionHandler
 
-// Module 12686 (_createForOfIteratorHelperLoose)
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
-import supportsZstd from "supportsZstd";
-import module_12689 from "module_12689";
+// Module 12708 (items)
 import { NativeModules } from "get ActivityIndicator";
 
-const require = arg1;
-function _createForOfIteratorHelperLoose(iterable) {
-  let closure_0 = iterable;
-  iterable = "undefined" !== typeof Symbol;
-  if (iterable) {
-    const _Symbol = Symbol;
-    iterable = iterable[Symbol.iterator];
+const items = [];
+class BaseGatewayCompressionHandler {
+  constructor(arg0) {
+    obj = Object.create(new.target.prototype);
+    obj._onDataReady = null;
+    obj._gatewayEncoding = global;
+    return obj;
   }
-  if (!iterable) {
-    iterable = iterable[Symbol.iterator];
-  }
-  if (iterable) {
-    const iter = iterable.call(iterable);
-    const next = iter.next;
-    return next.bind(iter);
+}
+const prototype = BaseGatewayCompressionHandler.prototype;
+BaseGatewayCompressionHandler["canUse"] = function canUse() {
+  return false;
+};
+prototype["bindWebSocket"] = function bindWebSocket() {
+
+};
+prototype["feed"] = function feed() {
+
+};
+prototype["dataReady"] = function dataReady(_onDataReady) {
+  this._onDataReady = _onDataReady;
+};
+const fn = (arg0) => {
+  tmp = new tmp(arg0, new.target, tmp, new.target);
+  // ThrowIfThisInitialized (0x7c)
+  tmp._decoder = null;
+  const _gatewayEncoding = tmp._gatewayEncoding;
+  if (_gatewayEncoding.wantsString()) {
+    const _TextDecoder = TextDecoder;
+    const textDecoder = new TextDecoder("utf-8");
+    tmp._decoder = textDecoder;
   } else {
-    const _Array = Array;
-    let tmp = iterable;
-    if (!Array.isArray(iterable)) {
-      let tmp2;
-      if (iterable) {
-        if ("string" === typeof iterable) {
-          tmp2 = _arrayLikeToArray(iterable, undefined);
-        } else {
-          const toString = {}.toString;
-          const substr = toString.call(iterable).slice(8, -1);
-          let name = substr;
-          if (tmp3) {
-            name = iterable.constructor.name;
-          }
-          if ("Map" !== name) {
-            if ("Set" !== name) {
-              if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(iterable, undefined);
-              } else {
-                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
-              }
-            }
-            tmp2 = arr;
-          }
-          const _Array2 = Array;
-          arr = Array.from(iterable);
-          const callResult = toString.call(iterable);
-          tmp3 = "Object" === substr && iterable.constructor;
-        }
-      }
-      tmp = tmp2;
-      if (!tmp2) {
-        const _TypeError = TypeError;
-        const typeError = new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
-        throw typeError;
-      }
-    }
-    if (tmp) {
-      closure_0 = tmp;
-    }
-    let c1 = 0;
-    return () => {
-      if (closure_1 >= length.length) {
-        let obj = { done: true };
-      } else {
-        obj = { done: false };
-        closure_1 = tmp3 + 1;
-        obj.value = length[+closure_1];
-      }
-      return obj;
-    };
+    tmp._decoder = null;
   }
+  tmp._stream = require(12709) /* supportsZstd */.createZstdContextWeb();
+  return tmp;
+};
+const prototype2 = fn.prototype;
+class fn extends BaseGatewayCompressionHandler {
 }
-function _arrayLikeToArray(arg0, arg1) {
-  let length;
-  if (tmp) {
-    length = arg0.length;
-  }
-  const ArrayResult = Array(length);
-  for (let num = 0; num < length; num = num + 1) {
-    ArrayResult[num] = arg0[num];
-  }
-  return ArrayResult;
-}
-function _callSuper(arg0, arg1, arg2) {
-  let items = arg2;
-  const obj = callback(arg1);
-  if (_isNativeReflectConstruct()) {
-    if (!items) {
-      items = [];
-    }
-    let constructResult = Reflect.construct(obj, items, callback(arg0).constructor);
+fn["canUse"] = function canUse() {
+  return false;
+};
+prototype2["getAlgorithm"] = function getAlgorithm() {
+  return "zstd-stream";
+};
+prototype2["usesLegacyCompression"] = function usesLegacyCompression() {
+  return false;
+};
+prototype2["feed"] = function feed(dataView) {
+  const self = this;
+  if (null == this._stream) {
+    const _Error2 = Error;
+    const error = new Error("Trying to decompress with zstd but did not initialize with it");
+    throw error;
   } else {
-    constructResult = obj.apply(arg0, items);
+    const _ArrayBuffer = ArrayBuffer;
+    if (dataView instanceof ArrayBuffer) {
+      const _stream = self._stream;
+      const decompressResult = _stream.decompress(dataView);
+      let decodeResult = decompressResult;
+      if (null != self._decoder) {
+        const _decoder = self._decoder;
+        decodeResult = _decoder.decode(decompressResult);
+      }
+      if (null != self._onDataReady) {
+        self._onDataReady(decodeResult);
+      }
+    } else {
+      const _Error = Error;
+      const error1 = new Error("Expected array buffer, but got " + typeof dataView);
+      throw error1;
+    }
   }
-  return _possibleConstructorReturn(arg0, constructResult);
+};
+prototype2["close"] = function close() {
+
+};
+items.push(fn);
+const fn2 = (arg0) => {
+  let _inflate;
+  let handleFlushEnd;
+  tmp = new tmp(arg0, new.target, tmp, new.target);
+  // ThrowIfThisInitialized (0x7c)
+  tmp._pako = require(12711);
+  tmp._usesZstd = false;
+  tmp._zstdDecoder = null;
+  tmp._zstdStream = null;
+  const _gatewayEncoding = tmp._gatewayEncoding;
+  let str = "";
+  if (_gatewayEncoding.wantsString()) {
+    str = "string";
+  }
+  const inflate = new tmp._pako.Inflate({ chunkSize: 65536, to: str });
+  tmp._inflate = inflate;
+  ({ handleFlushEnd, _inflate } = tmp);
+  _inflate.onEnd = handleFlushEnd.bind(tmp);
+  return tmp;
+};
+const prototype3 = fn2.prototype;
+class fn2 extends BaseGatewayCompressionHandler {
 }
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
+fn2["canUse"] = function canUse() {
+  return false;
+};
+prototype3["getAlgorithm"] = function getAlgorithm() {
+  return "zlib-stream";
+};
+prototype3["usesLegacyCompression"] = function usesLegacyCompression() {
+  return false;
+};
+prototype3["feed"] = function feed(buffer) {
+  const self = this;
+  if (null == this._inflate) {
+    const _Error3 = Error;
+    const error = new Error("Trying to feed to closed compression adapter");
+    throw error;
+  } else if (null === self._onDataReady) {
+    const _Error2 = Error;
+    const error1 = new Error("Cannot feed unless a data ready callback is registered.");
+    throw error1;
+  } else {
+    const _ArrayBuffer = ArrayBuffer;
+    if (buffer instanceof ArrayBuffer) {
+      const _DataView = DataView;
+      const dataView = new DataView(buffer);
+      let tmp9 = dataView.byteLength >= 4;
+      if (tmp9) {
+        tmp9 = 65535 === dataView.getUint32(dataView.byteLength - 4, false);
+      }
+      const _inflate = self._inflate;
+      let Z_SYNC_FLUSH = tmp9;
+      if (Z_SYNC_FLUSH) {
+        Z_SYNC_FLUSH = self._pako.Z_SYNC_FLUSH;
+      }
+      _inflate.push(buffer, Z_SYNC_FLUSH);
+    } else {
+      const _Error = Error;
+      const error2 = new Error("Expected array buffer, but got " + typeof buffer);
+      throw error2;
+    }
   }
-  const result = _isNativeReflectConstruct();
+};
+prototype3["close"] = function close() {
+  const self = this;
+  if (null != this._inflate) {
+    self._inflate.onEnd = null;
+    self._inflate.chunks = [];
+  }
+  self._inflate = null;
+};
+prototype3["handleFlushEnd"] = function handleFlushEnd(arg0) {
+  const self = this;
+  const _inflate = this._inflate;
+  if (null != _inflate) {
+    if (arg0 !== tmp.Z_OK) {
+      const _Error = Error;
+      const _HermesInternal = HermesInternal;
+      const error = new Error("zlib error, " + arg0 + ", " + _inflate.strm.msg);
+      throw error;
+    } else {
+      const chunks = _inflate.chunks;
+      const _gatewayEncoding = self._gatewayEncoding;
+      if (_gatewayEncoding.wantsString()) {
+        if (length > 1) {
+          let joined = chunks.join("");
+        } else {
+          joined = chunks[0];
+        }
+      } else {
+        if (length > 1) {
+          let num2 = 0;
+          let num3 = 0;
+          let num4 = 0;
+          if (0 < length) {
+            do {
+              num3 = num3 + chunks[num2].length;
+              num2 = num2 + 1;
+              num4 = num3;
+            } while (num2 < length);
+          }
+          const _Uint8Array = Uint8Array;
+          const uint8Array = new Uint8Array(num4);
+          let num5 = 0;
+          let num6 = 0;
+          let first = uint8Array;
+          if (0 < length) {
+            do {
+              let arr = chunks[num5];
+              let result = uint8Array.set(arr, num6);
+              num6 = num6 + arr.length;
+              num5 = num5 + 1;
+              first = uint8Array;
+            } while (num5 < length);
+          }
+        } else {
+          first = chunks[0];
+        }
+        chunks.length = 0;
+        if (null != self._onDataReady) {
+          self._onDataReady(first);
+        }
+      }
+    }
+  } else {
+    const obj = new importDefault(3)("GatewayCompressionHandler");
+    obj.error("flush end happened on closed compression adapter");
+  }
+};
+items.push(fn2);
+const fn3 = () => {
+  const applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
+  applyArgumentsResult._pako = require(12711);
+  return applyArgumentsResult;
+};
+const prototype4 = fn3.prototype;
+class fn3 extends BaseGatewayCompressionHandler {
 }
-let items = [];
-let tmp2 = (() => {
-  class BaseGatewayCompressionHandler {
-    constructor(arg0) {
-      tmp = outer1_6(this, BaseGatewayCompressionHandler);
-      this._onDataReady = null;
-      this._gatewayEncoding = arg0;
-      return;
-    }
+fn3["canUse"] = function canUse() {
+  return false;
+};
+prototype4["getAlgorithm"] = function getAlgorithm() {
+  return null;
+};
+prototype4["usesLegacyCompression"] = function usesLegacyCompression() {
+  return true;
+};
+prototype4["feed"] = function feed(arg0) {
+  const self = this;
+  const _pako = this._pako;
+  let wantsStringResult = arg0 instanceof ArrayBuffer;
+  if (wantsStringResult) {
+    const _gatewayEncoding = self._gatewayEncoding;
+    wantsStringResult = _gatewayEncoding.wantsString();
   }
-  let obj = {
-    key: "bindWebSocket",
-    value() {
-
-    }
-  };
-  const items = [obj, , ];
-  obj = {
-    key: "feed",
-    value() {
-
-    }
-  };
-  items[1] = obj;
-  obj = {
-    key: "dataReady",
-    value(_onDataReady) {
-      this._onDataReady = _onDataReady;
-    }
-  };
-  items[2] = obj;
-  const items1 = [
-    {
-      key: "canUse",
-      value() {
-        return false;
-      }
-    }
-  ];
-  return callback3(BaseGatewayCompressionHandler, items, items1);
-})();
-items.push(((arg0) => {
-  class DesktopZstdGatewayCompressionHandler {
-    constructor(arg0) {
-      tmp = outer1_6(this, DesktopZstdGatewayCompressionHandler);
-      items = [];
-      items[0] = arg0;
-      tmp2 = outer1_13(this, DesktopZstdGatewayCompressionHandler, items);
-      tmp2._decoder = null;
-      _gatewayEncoding = tmp2._gatewayEncoding;
-      if (_gatewayEncoding.wantsString()) {
-        tmp3 = globalThis;
-        _TextDecoder = TextDecoder;
-        prototype = TextDecoder.prototype;
-        tmp4 = new.target;
-        str = "utf-8";
-        tmp5 = new.target;
-        textDecoder = new TextDecoder("utf-8");
-        tmp7 = textDecoder;
-        tmp2._decoder = textDecoder;
-      } else {
-        tmp2._decoder = null;
-      }
-      obj = DesktopZstdGatewayCompressionHandler(outer1_2[6]);
-      tmp2._stream = obj.createZstdContextWeb();
-      return tmp2;
-    }
+  let inflateResult = arg0;
+  if (wantsStringResult) {
+    inflateResult = _pako.inflate(arg0, { to: "string" });
   }
-  callback2(DesktopZstdGatewayCompressionHandler, arg0);
-  let obj = {
-    key: "getAlgorithm",
-    value() {
-      return "zstd-stream";
-    }
-  };
-  let items = [obj, , , ];
-  obj = {
-    key: "usesLegacyCompression",
-    value() {
-      return false;
-    }
-  };
-  items[1] = obj;
-  obj = {
-    key: "feed",
-    value(dataView) {
-      const self = this;
-      if (null == this._stream) {
-        const _Error2 = Error;
-        const error = new Error("Trying to decompress with zstd but did not initialize with it");
-        throw error;
-      } else {
-        const _ArrayBuffer = ArrayBuffer;
-        if (dataView instanceof ArrayBuffer) {
-          const _stream = self._stream;
-          const decompressResult = _stream.decompress(dataView);
-          let decodeResult = decompressResult;
-          if (null != self._decoder) {
-            const _decoder = self._decoder;
-            decodeResult = _decoder.decode(decompressResult);
-          }
-          if (null != self._onDataReady) {
-            self._onDataReady(decodeResult);
-          }
-        } else {
-          const _Error = Error;
-          const error1 = new Error("Expected array buffer, but got " + typeof dataView);
-          throw error1;
-        }
-      }
-    }
-  };
-  items[2] = obj;
-  items[3] = {
-    key: "close",
-    value() {
-
-    }
-  };
-  const items1 = [
-    {
-      key: "canUse",
-      value() {
-        return false;
-      }
-    }
-  ];
-  return callback3(DesktopZstdGatewayCompressionHandler, items, items1);
-})(tmp2));
-items.push(((arg0) => {
-  class PakoStreamGatewayCompressionHandler {
-    constructor(arg0) {
-      tmp = outer1_6(this, PakoStreamGatewayCompressionHandler);
-      items = [];
-      items[0] = arg0;
-      tmp2 = outer1_13(this, PakoStreamGatewayCompressionHandler, items);
-      tmp2._pako = PakoStreamGatewayCompressionHandler(outer1_2[7]);
-      tmp2._usesZstd = false;
-      tmp2._zstdDecoder = null;
-      tmp2._zstdStream = null;
-      obj = { chunkSize: 65536 };
-      _gatewayEncoding = tmp2._gatewayEncoding;
-      str = "";
-      if (_gatewayEncoding.wantsString()) {
-        str = "string";
-      }
-      obj.to = str;
-      inflate = new tmp2._pako.Inflate(obj);
-      tmp2._inflate = inflate;
-      ({ handleFlushEnd, _inflate } = tmp2);
-      _inflate.onEnd = handleFlushEnd.bind(tmp2);
-      return tmp2;
-    }
+  if (null == self._onDataReady) {
+    const _Error = Error;
+    const error = new Error("Cannot feed unless a data ready callback is registered.");
+    throw error;
+  } else {
+    self._onDataReady(inflateResult);
   }
-  callback2(PakoStreamGatewayCompressionHandler, arg0);
-  let obj = {
-    key: "getAlgorithm",
-    value() {
-      return "zlib-stream";
-    }
-  };
-  let items = [obj, , , , ];
-  obj = {
-    key: "usesLegacyCompression",
-    value() {
-      return false;
-    }
-  };
-  items[1] = obj;
-  obj = {
-    key: "feed",
-    value(buffer) {
-      const self = this;
-      if (null == this._inflate) {
-        const _Error3 = Error;
-        const error = new Error("Trying to feed to closed compression adapter");
-        throw error;
-      } else if (null === self._onDataReady) {
-        const _Error2 = Error;
-        const error1 = new Error("Cannot feed unless a data ready callback is registered.");
-        throw error1;
-      } else {
-        const _ArrayBuffer = ArrayBuffer;
-        if (buffer instanceof ArrayBuffer) {
-          const _DataView = DataView;
-          const dataView = new DataView(buffer);
-          let tmp9 = dataView.byteLength >= 4;
-          if (tmp9) {
-            tmp9 = 65535 === dataView.getUint32(dataView.byteLength - 4, false);
-          }
-          const _inflate = self._inflate;
-          let Z_SYNC_FLUSH = tmp9;
-          if (tmp9) {
-            Z_SYNC_FLUSH = self._pako.Z_SYNC_FLUSH;
-          }
-          _inflate.push(buffer, Z_SYNC_FLUSH);
-        } else {
-          const _Error = Error;
-          const error2 = new Error("Expected array buffer, but got " + typeof buffer);
-          throw error2;
-        }
-      }
-    }
-  };
-  items[2] = obj;
-  items[3] = {
-    key: "close",
-    value() {
-      const self = this;
-      if (null != this._inflate) {
-        self._inflate.onEnd = null;
-        self._inflate.chunks = [];
-      }
-      self._inflate = null;
-    }
-  };
-  items[4] = {
-    key: "handleFlushEnd",
-    value(arg0) {
-      const self = this;
-      const _inflate = this._inflate;
-      if (null != _inflate) {
-        if (arg0 !== this._pako.Z_OK) {
-          const _Error = Error;
-          const _HermesInternal = HermesInternal;
-          const error = new Error("zlib error, " + arg0 + ", " + _inflate.strm.msg);
-          throw error;
-        } else {
-          const chunks = _inflate.chunks;
-          const _gatewayEncoding = self._gatewayEncoding;
-          if (_gatewayEncoding.wantsString()) {
-            if (length > 1) {
-              let joined = chunks.join("");
-            } else {
-              joined = chunks[0];
-            }
-          } else {
-            if (length > 1) {
-              let num4 = 0;
-              let num5 = 0;
-              let num6 = 0;
-              if (0 < length) {
-                do {
-                  num4 = num4 + chunks[num5].length;
-                  num5 = num5 + 1;
-                  num6 = num4;
-                } while (num5 < length);
-              }
-              const _Uint8Array = Uint8Array;
-              const uint8Array = new Uint8Array(num6);
-              let num7 = 0;
-              let num8 = 0;
-              let first = uint8Array;
-              if (0 < length) {
-                do {
-                  let arr = chunks[num8];
-                  let result = uint8Array.set(arr, num7);
-                  num7 = num7 + arr.length;
-                  num8 = num8 + 1;
-                  first = uint8Array;
-                } while (num8 < length);
-              }
-            } else {
-              first = chunks[0];
-            }
-            chunks.length = 0;
-            if (null != self._onDataReady) {
-              self._onDataReady(first);
-            }
-          }
-        }
-      } else {
-        let tmp3 = outer1_1(outer1_2[8]);
-        const prototype = tmp3.prototype;
-        tmp3 = new tmp3("GatewayCompressionHandler");
-        tmp3.error("flush end happened on closed compression adapter");
-      }
-    }
-  };
-  const items1 = [
-    {
-      key: "canUse",
-      value() {
-        return false;
-      }
-    }
-  ];
-  return callback3(PakoStreamGatewayCompressionHandler, items, items1);
-})(tmp2));
-items.push(((arg0) => {
-  class PakoGatewayCompressionHandler {
-    constructor(arg0) {
-      items = [...arguments];
-      tmp = outer1_6(this, PakoGatewayCompressionHandler);
-      items1 = [...items];
-      tmp2 = outer1_13(this, PakoGatewayCompressionHandler, items1);
-      tmp2._pako = PakoGatewayCompressionHandler(outer1_2[7]);
-      return tmp2;
-    }
-  }
-  callback2(PakoGatewayCompressionHandler, arg0);
-  let obj = {
-    key: "getAlgorithm",
-    value() {
-      return null;
-    }
-  };
-  let items = [obj, , , ];
-  obj = {
-    key: "usesLegacyCompression",
-    value() {
-      return true;
-    }
-  };
-  items[1] = obj;
-  obj = {
-    key: "feed",
-    value(arg0) {
-      const self = this;
-      const _pako = this._pako;
-      let wantsStringResult = arg0 instanceof ArrayBuffer;
-      if (wantsStringResult) {
-        const _gatewayEncoding = self._gatewayEncoding;
-        wantsStringResult = _gatewayEncoding.wantsString();
-      }
-      let inflateResult = arg0;
-      if (wantsStringResult) {
-        const obj = { to: "string" };
-        inflateResult = _pako.inflate(arg0, obj);
-      }
-      if (null == self._onDataReady) {
-        const _Error = Error;
-        const error = new Error("Cannot feed unless a data ready callback is registered.");
-        throw error;
-      } else {
-        self._onDataReady(inflateResult);
-      }
-    }
-  };
-  items[2] = obj;
-  items[3] = {
-    key: "close",
-    value() {
+};
+prototype4["close"] = function close() {
 
-    }
-  };
-  let items1 = [
-    {
-      key: "canUse",
-      value() {
-        return false;
-      }
-    }
-  ];
-  return callback3(PakoGatewayCompressionHandler, items, items1);
-})(tmp2));
-items.push(((arg0) => {
-  class MobileGatewayCompressionHandler {
-    constructor(arg0) {
-      tmp = outer1_6(this, MobileGatewayCompressionHandler);
-      items = [];
-      items[0] = arg0;
-      tmp2 = outer1_13(this, MobileGatewayCompressionHandler, items);
-      tmp2._socketId = null;
-      return tmp2;
-    }
+};
+items.push(fn3);
+const fn4 = (arg0) => {
+  tmp = new tmp(arg0, new.target, tmp);
+  // ThrowIfThisInitialized (0x7c)
+  tmp._socketId = null;
+  return tmp;
+};
+const prototype5 = fn4.prototype;
+class fn4 extends BaseGatewayCompressionHandler {
+}
+fn4["canUse"] = function canUse() {
+  if (obj.isAndroid()) {
+    let tmp5 = null != require(12710) /* enforcing */.default;
+  } else {
+    tmp5 = null != NativeModules.DCDCompressionManager;
   }
-  callback2(MobileGatewayCompressionHandler, arg0);
-  let obj = {
-    key: "bindWebSocket",
-    value(_socketId) {
-      const self = this;
-      this.close();
-      this._socketId = _socketId._socketId;
-      const obj = MobileGatewayCompressionHandler(outer1_2[6]);
-      const supportsZstdResult = MobileGatewayCompressionHandler(outer1_2[6]).supportsZstd();
-      const isAndroidResult = MobileGatewayCompressionHandler(outer1_2[9]).isAndroid();
-      if (supportsZstdResult) {
-        if (isAndroidResult) {
-          if (null != MobileGatewayCompressionHandler(outer1_2[10]).default) {
-            const result = MobileGatewayCompressionHandler(outer1_2[10]).default.enableZstdStreamSupport(self._socketId);
-            const _default = MobileGatewayCompressionHandler(outer1_2[10]).default;
-          }
-        } else {
-          const DCDCompressionManager2 = outer1_8.DCDCompressionManager;
-          const result1 = DCDCompressionManager2.enableZstdStreamSupport(self._socketId, 0);
-        }
-      } else if (isAndroidResult) {
-        if (null != MobileGatewayCompressionHandler(outer1_2[10]).default) {
-          const result2 = MobileGatewayCompressionHandler(outer1_2[10]).default.enableZlibStreamSupport(self._socketId);
-          const _default2 = MobileGatewayCompressionHandler(outer1_2[10]).default;
-        }
-      } else {
-        const DCDCompressionManager = outer1_8.DCDCompressionManager;
-        const result3 = DCDCompressionManager.enableZlibStreamSupport(self._socketId);
+  return tmp5;
+};
+prototype5["bindWebSocket"] = function bindWebSocket(_socketId) {
+  const self = this;
+  this.close();
+  this._socketId = _socketId._socketId;
+  const obj = require(12709) /* supportsZstd */;
+  const supportsZstdResult = require(12709) /* supportsZstd */.supportsZstd();
+  const isAndroidResult = require(500) /* set */.isAndroid();
+  if (supportsZstdResult) {
+    if (isAndroidResult) {
+      const _default2 = tmp2(12710).default;
+      if (_default2 != null) {
+        const result = _default2.enableZstdStreamSupport(self._socketId);
       }
+    } else {
+      const DCDCompressionManager2 = NativeModules.DCDCompressionManager;
+      const result1 = DCDCompressionManager2.enableZstdStreamSupport(self._socketId, 0);
     }
-  };
-  let items = [obj, , , , ];
-  obj = {
-    key: "getAlgorithm",
-    value() {
-      let str = "zlib-stream";
-      if (obj.supportsZstd()) {
-        str = "zstd-stream";
-      }
-      return str;
+  } else if (isAndroidResult) {
+    const _default = tmp2(12710).default;
+    if (_default != null) {
+      const result2 = _default.enableZlibStreamSupport(self._socketId);
     }
-  };
-  items[1] = obj;
-  obj = {
-    key: "usesLegacyCompression",
-    value() {
-      return false;
-    }
-  };
-  items[2] = obj;
-  items[3] = {
-    key: "feed",
-    value(arg0) {
-      const self = this;
-      if (null == this._onDataReady) {
-        const _Error = Error;
-        const error = new Error("Cannot feed unless a data ready callback is registered.");
-        throw error;
-      } else if (null !== arg0) {
-        self._onDataReady(arg0);
-      }
-    }
-  };
-  items[4] = {
-    key: "close",
-    value() {
-      const _socketId = this._socketId;
-      this._socketId = null;
-      if (null !== _socketId) {
-        if (obj.isAndroid()) {
-          if (null != MobileGatewayCompressionHandler(outer1_2[10]).default) {
-            const result = MobileGatewayCompressionHandler(outer1_2[10]).default.disableZlibStreamSupport(_socketId);
-            const _default = MobileGatewayCompressionHandler(outer1_2[10]).default;
-          }
-        } else {
-          const DCDCompressionManager = outer1_8.DCDCompressionManager;
-          const result1 = DCDCompressionManager.disableZlibStreamSupport(_socketId);
-        }
-        obj = MobileGatewayCompressionHandler(outer1_2[9]);
-      }
-    }
-  };
-  const items1 = [
-    {
-      key: "canUse",
-      value() {
-        if (obj.isAndroid()) {
-          let tmp3 = null != MobileGatewayCompressionHandler(outer1_2[10]).default;
-        } else {
-          tmp3 = null != outer1_8.DCDCompressionManager;
-        }
-        return tmp3;
-      }
-    }
-  ];
-  return callback3(MobileGatewayCompressionHandler, items, items1);
-})(tmp2));
-const tmp7 = ((arg0) => {
-  class NullGatewayCompressionHandler {
-    constructor() {
-      tmp = outer1_6(this, NullGatewayCompressionHandler);
-      return outer1_13(this, NullGatewayCompressionHandler, arguments);
-    }
+  } else {
+    const DCDCompressionManager = NativeModules.DCDCompressionManager;
+    const result3 = DCDCompressionManager.enableZlibStreamSupport(self._socketId);
   }
-  callback2(NullGatewayCompressionHandler, arg0);
-  let obj = {
-    key: "getAlgorithm",
-    value() {
-      return null;
-    }
-  };
-  const items = [obj, , , ];
-  obj = {
-    key: "usesLegacyCompression",
-    value() {
-      return false;
-    }
-  };
-  items[1] = obj;
-  obj = {
-    key: "feed",
-    value(arg0) {
-      const self = this;
-      if (null == this._onDataReady) {
-        const _Error = Error;
-        const error = new Error("Cannot feed unless a data ready callback is registered.");
-        throw error;
-      } else {
-        self._onDataReady(arg0);
+};
+prototype5["getAlgorithm"] = function getAlgorithm() {
+  let str = "zlib-stream";
+  if (obj.supportsZstd()) {
+    str = "zstd-stream";
+  }
+  return str;
+};
+prototype5["usesLegacyCompression"] = function usesLegacyCompression() {
+  return false;
+};
+prototype5["feed"] = function feed(arg0) {
+  const self = this;
+  if (null == this._onDataReady) {
+    const _Error = Error;
+    const error = new Error("Cannot feed unless a data ready callback is registered.");
+    throw error;
+  } else if (null !== arg0) {
+    self._onDataReady(arg0);
+  }
+};
+prototype5["close"] = function close() {
+  const _socketId = this._socketId;
+  this._socketId = null;
+  if (null !== _socketId) {
+    if (obj.isAndroid()) {
+      const _default = tmp(12710).default;
+      if (_default != null) {
+        const result = _default.disableZlibStreamSupport(_socketId);
       }
+    } else {
+      const DCDCompressionManager = NativeModules.DCDCompressionManager;
+      const result1 = DCDCompressionManager.disableZlibStreamSupport(_socketId);
     }
-  };
-  items[2] = obj;
-  items[3] = {
-    key: "close",
-    value() {
+    obj = require(500) /* set */;
+    tmp = require;
+  }
+};
+items.push(fn4);
+class NullGatewayCompressionHandler extends BaseGatewayCompressionHandler {
+}
+const prototype6 = NullGatewayCompressionHandler.prototype;
+NullGatewayCompressionHandler["canUse"] = function canUse() {
+  return true;
+};
+prototype6["getAlgorithm"] = function getAlgorithm() {
+  return null;
+};
+prototype6["usesLegacyCompression"] = function usesLegacyCompression() {
+  return false;
+};
+prototype6["feed"] = function feed(arg0) {
+  const self = this;
+  if (null == this._onDataReady) {
+    const _Error = Error;
+    const error = new Error("Cannot feed unless a data ready callback is registered.");
+    throw error;
+  } else {
+    self._onDataReady(arg0);
+  }
+};
+prototype6["close"] = function close() {
 
-    }
-  };
-  const items1 = [
-    {
-      key: "canUse",
-      value() {
-        return true;
-      }
-    }
-  ];
-  return callback3(NullGatewayCompressionHandler, items, items1);
-})(tmp2);
-let closure_10 = tmp7;
-items.push(tmp7);
-let result = require("_inherits").fileFinishedImporting("modules/gateway/GatewayCompressionHandler.tsx");
+};
+items.push(NullGatewayCompressionHandler);
+let result = require("module_12711").fileFinishedImporting("modules/gateway/GatewayCompressionHandler.tsx");
 
-export const getCompressionHandler = function getCompressionHandler(outer1_15) {
-  const ProcessArgs = require(4712) /* ProcessArgs */.ProcessArgs;
+export const getCompressionHandler = function getCompressionHandler(closure_10) {
+  const ProcessArgs = require(4734) /* get */.ProcessArgs;
   if (ProcessArgs.isDiscordGatewayPlaintextSet()) {
-    const prototype3 = tmp7.prototype;
-    const tmp19 = new tmp7(outer1_15);
-    return tmp19;
+    return new NullGatewayCompressionHandler(closure_10);
   } else {
-    const tmp3 = _createForOfIteratorHelperLoose(items);
-    const iter = tmp3();
-    let iter2 = iter;
-    if (!iter.done) {
-      let value = iter2.value;
-      while (!value.canUse()) {
-        let iter3 = tmp3();
-        iter2 = iter3;
+    for (const item10014 of items) {
+      let tmp3 = item10014;
+      if (item10014.canUse()) {
+        let tmp4 = new.target;
+        let tmp5 = new.target;
+        let tmp6 = arg0;
+        let item10014 = new item10014(arg0);
+        let tmp8 = item10014;
+        let tmp9 = obj;
+        obj.return();
+        return item10014;
       }
-      const prototype = value.prototype;
-      value = new value(outer1_15);
-      return value;
     }
-    const prototype2 = tmp7.prototype;
-    const tmp13 = new tmp7(outer1_15);
-    return tmp13;
+    return new NullGatewayCompressionHandler(closure_10);
   }
 };

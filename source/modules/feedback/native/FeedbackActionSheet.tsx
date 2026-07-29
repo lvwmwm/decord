@@ -1,41 +1,43 @@
-// Module ID: 9518
-// Function ID: 74025
+// Module ID: 9542
+// Function ID: 9543
 // Name: closeActionSheet
-// Dependencies: [57, 31, 27, 9497, 33, 4165, 689, 4133, 8101, 22, 9500, 4594, 4372, 9519, 1935, 1557, 5221, 5220, 5534, 5223, 4161, 9501, 5536, 5198, 9068, 1212, 2]
+// Dependencies: [32, 19, 17, 9521, 21, 4189, 712, 4157, 8125, 12, 9524, 4616, 4395, 9543, 1959, 1581, 5243, 5242, 5552, 5245, 4185, 9525, 5554, 5220, 9092, 1236, 2]
 // Exports: default
 
-// Module 9518 (closeActionSheet)
+// Module 9542 (closeActionSheet)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
-import { View } from "get ActivityIndicator";
+import BottomSheetModal from "BottomSheetModal";
+import { View } from "RedesignBottomSheetTitleHeaderBase";
 import { FeedbackRating } from "FeedbackRating";
-import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import jsxProd from "RatingSelector";
+import createCacheKey from "createCacheKey";
 
-let closure_7;
-let closure_8;
+let error;
+let metroImportAll;
 const require = arg1;
 function closeActionSheet() {
-  importDefault(4133).hideActionSheet();
+  importDefault(4157).hideActionSheet();
 }
-({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { padding: require("_createForOfIteratorHelperLoose").space.PX_16 };
-_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.ratingsHeader = { textAlign: "center" };
-_createForOfIteratorHelperLoose.reasonsList = { marginBottom: require("_createForOfIteratorHelperLoose").space.PX_16 };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-let obj1 = { marginBottom: require("_createForOfIteratorHelperLoose").space.PX_16 };
+({ jsx: error, jsxs: metroImportAll } = jsxProd);
+createCacheKey = { container: null, ratingsHeader: null, reasonsList: null };
+createCacheKey = { padding: require("Themes").space.PX_16 };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { textAlign: "center" };
+createCacheKey[2] = { marginBottom: require("Themes").space.PX_16 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let obj1 = { marginBottom: require("Themes").space.PX_16 };
 const result = require("get ActivityIndicator").fileFinishedImporting("modules/feedback/native/FeedbackActionSheet.tsx");
 
 export default function FeedbackActionSheet(feedbackReasons) {
   let View;
-  let closure_11;
-  let closure_12;
-  let closure_13;
-  let closure_14;
+  let arr;
+  let c11;
+  let c12;
+  let c13;
+  let c14;
+  let c8;
   let _slicedToArray;
-  let result;
+  let BottomSheetModal;
   let headerLabel;
   let hideDontShowAgainCheckbox;
   let ratingOptions;
@@ -47,154 +49,169 @@ export default function FeedbackActionSheet(feedbackReasons) {
   ({ hideDontShowAgainCheckbox, ratingsBodyLabel, reasons } = feedbackReasons);
   feedbackReasons = feedbackReasons.feedbackReasons;
   const otherKey = feedbackReasons.otherKey;
-  ({ trackOpen: _slicedToArray, trackReport: result, getFreeformDescription: View } = feedbackReasons);
+  ({ trackOpen: _slicedToArray, trackReport: BottomSheetModal, getFreeformDescription: View } = feedbackReasons);
+  let ref;
+  let c7;
+  c8 = undefined;
+  let first;
+  let closure_10;
+  c11 = undefined;
+  c12 = undefined;
+  c13 = undefined;
+  c14 = undefined;
+  let first1;
+  let closure_16;
+  let closure_17;
   ({ headerLabel, showHeaderCloseButton, ratingOptions, ratingTextLabels, reasonsHeaderLabel } = feedbackReasons);
-  let tmp = first1();
-  const ref = React.useRef(null);
-  const tmp3 = feedbackReasons(otherKey[8])(reasons);
-  const callback2 = tmp3;
+  let tmp = first();
+  ref = React.useRef(null);
+  const tmp5 = feedbackReasons(otherKey[8])(reasons);
+  c7 = tmp5;
   let obj = feedbackReasons(otherKey[9]);
-  const tmp4 = callback(React.useState(obj.shuffle(reasons)), 2);
-  const first = tmp4[0];
-  let closure_8 = tmp4[1];
-  const items = [reasons, tmp3, otherKey];
+  [arr, c8] = callback(React.useState(obj.shuffle(reasons)), 2);
+  const items = [reasons, tmp5, otherKey];
   const effect = React.useEffect(() => {
-    if (!obj.isEqual(closure_7, reasons)) {
-      callback4(reasons(otherKey[10]).shuffleProblems(reasons, otherKey));
+    if (!obj.isEqual(c7, reasons)) {
+      _undefined2(reasons(otherKey[10]).shuffleProblems(reasons, otherKey));
       const obj2 = reasons(otherKey[10]);
     }
   }, items);
-  const tmp6 = callback(React.useState(null), 2);
-  first1 = tmp6[0];
-  let closure_10 = tmp6[1];
-  [closure_11, closure_12] = callback(React.useState(null), 2);
   const tmp8 = callback(React.useState(null), 2);
-  [closure_13, closure_14] = callback(React.useState(false), 2);
-  const tmp10 = callback(React.useState(false), 2);
-  const first2 = tmp10[0];
-  let closure_16 = tmp10[1];
+  first = tmp8[0];
+  closure_10 = tmp8[1];
+  const tmp6 = callback(React.useState(obj.shuffle(reasons)), 2);
+  [c11, c12] = callback(React.useState(null), 2);
+  const tmp10 = callback(React.useState(null), 2);
+  [c13, c14] = callback(React.useState(false), 2);
+  const tmp12 = callback(React.useState(false), 2);
+  first1 = tmp12[0];
+  closure_16 = tmp12[1];
   feedbackReasons(otherKey[11])(() => {
     callback();
   });
   let obj1 = reasons(otherKey[11]);
   const unmountEffect = obj1.useUnmountEffect(() => {
-    if (closure_13) {
-      let obj = {};
-      obj = { rating: first1, reason: closure_11, dontShowAgain: first2 };
-      obj.result = obj;
-      obj.trackReport = callback2;
-      let tmp16;
+    if (c13) {
+      let obj = { result: null, trackReport: null, descriptionLabel: null };
+      obj = { rating: null, reason: null, dontShowAgain: null };
+      obj[0] = first;
+      obj[1] = c11;
+      obj[2] = first1;
+      obj[0] = obj;
+      obj[1] = callback2;
+      let tmp14;
       const obj2 = feedbackReasons(otherKey[12]);
-      if (null != callback3) {
-        tmp16 = callback3(closure_11);
+      if (callback3 != null) {
+        tmp14 = callback3(c11);
       }
-      let tmp19;
-      if (null != tmp16) {
-        tmp19 = tmp16;
-      }
-      obj.descriptionLabel = tmp19;
+      obj[2] = tmp14;
       obj2.pushLazy(reasons(otherKey[14])(otherKey[13], otherKey.paths), obj);
       const tmp9 = reasons(otherKey[14])(otherKey[13], otherKey.paths);
     } else {
-      obj = { rating: first1, reason: closure_11, dontShowAgain: first2 };
+      obj = { rating: null, reason: null, dontShowAgain: null };
+      obj[0] = first;
+      obj[1] = c11;
+      obj[2] = first1;
       callback2(obj);
     }
   });
   const items1 = [feedbackReasons];
   callback = React.useCallback((arg0) => {
-    callback5(arg0);
+    callback4(arg0);
     if (arg0 === ref.GOOD) {
-      callback6(null);
-      callback7(false);
-      callback5();
+      _undefined3(null);
+      _undefined4(false);
+      feedbackReasons(otherKey[7]).hideActionSheet();
+      const obj = feedbackReasons(otherKey[7]);
     } else {
       const current = ref.current;
-      if (null != current) {
+      if (current != null) {
         current.expandActionSheet();
       }
     }
   }, []);
-  let closure_17 = React.useCallback((value) => {
-    callback6(value);
-    let hasItem = null != feedbackReasons;
-    if (hasItem) {
+  closure_17 = React.useCallback((value) => {
+    _undefined3(value);
+    let hasItem;
+    if (feedbackReasons != null) {
       hasItem = feedbackReasons.includes(value.value);
     }
     if (hasItem) {
-      callback7(true);
+      _undefined4(true);
     }
-    callback5();
+    feedbackReasons(otherKey[7]).hideActionSheet();
   }, items1);
-  let tmp15 = null !== first1;
-  if (tmp15) {
-    tmp15 = first1 !== ref.GOOD;
+  let tmp18 = null !== first;
+  if (tmp18) {
+    tmp18 = first !== ref.GOOD;
   }
-  const bottom = feedbackReasons(otherKey[15])().bottom;
+  const bottom = tmp3(tmp4[15])().bottom;
   let num = 48;
   if (hideDontShowAgainCheckbox) {
     num = 0;
   }
   const sum = 232 + num + bottom;
-  obj = { scrollable: true, ref, startHeight: sum };
-  let tmp19;
-  if (null == first1) {
-    tmp19 = sum;
+  obj = { scrollable: true, ref, startHeight: sum, maxHeight: null, header: null, children: null };
+  let tmp22;
+  if (null == first) {
+    tmp22 = sum;
   }
-  obj.maxHeight = tmp19;
-  obj = { title: headerLabel };
-  let tmp21 = null;
+  obj[3] = tmp22;
+  obj = { title: headerLabel, trailing: null };
+  let tmp21Result = null;
   if (showHeaderCloseButton) {
-    obj1 = { onPress: closure_10 };
-    tmp21 = callback2(reasons(otherKey[18]).ActionSheetCloseButton, obj1);
+    obj1 = { onPress: null };
+    obj1[0] = closure_10;
+    tmp21Result = tmp21(tmp15(tmp4[18]).ActionSheetCloseButton, obj1);
   }
-  obj.trailing = tmp21;
-  obj.header = callback2(reasons(otherKey[17]).BottomSheetTitleHeader, obj);
-  let obj2 = { contentContainerStyle: items2 };
+  obj[1] = tmp21Result;
+  obj[4] = c7(reasons(otherKey[17]).BottomSheetTitleHeader, obj);
+  let obj2 = { contentContainerStyle: items2, children: null };
   items2 = [tmp.container, { paddingBottom: tmp.container.padding + bottom }];
-  let tmp27 = null;
+  tmp21Result = null;
   if (null != ratingsBodyLabel) {
-    const obj3 = { style: tmp.ratingsHeader, variant: "text-md/medium", color: "text-default", children: ratingsBodyLabel };
-    tmp27 = callback2(reasons(otherKey[20]).Text, obj3);
+    const obj3 = { style: null, variant: "text-md/medium", color: "text-default", children: null };
+    obj3[0] = tmp.ratingsHeader;
+    obj3[3] = ratingsBodyLabel;
+    tmp21Result = tmp21(tmp15(tmp4[20]).Text, obj3);
   }
-  const items3 = [tmp27, callback2(feedbackReasons(otherKey[21]), { ratingOptions, textLabels: ratingTextLabels, selectedRating: first1, onChangeRating: callback }), , ];
-  let tmp31 = null;
-  if (tmp15) {
-    const obj4 = { style: tmp.reasonsList };
-    const obj5 = {
-      title: reasonsHeaderLabel,
-      hasIcons: false,
-      children: first.map((label) => {
-          let closure_0 = label;
-          let tmp;
-          if (null != label.label) {
-            const obj = {
-              label: label.label,
-              labelLineClamp: 2,
-              onPress() {
-                  return outer1_17(closure_0);
-                }
-            };
-            tmp = tmp3(reasons(otherKey[23]).TableRow, obj, arg1);
-          }
-          return tmp;
-        })
-    };
-    obj4.children = callback2(reasons(otherKey[22]).TableRowGroup, obj5);
-    tmp31 = callback2(View, obj4);
+  const items3 = [tmp21Result, c7(feedbackReasons(otherKey[21]), { ratingOptions, textLabels: ratingTextLabels, selectedRating: first, onChangeRating: callback }), , ];
+  let tmp21Result1 = null;
+  if (tmp18) {
+    const obj4 = { style: null, children: null };
+    obj4[0] = tmp.reasonsList;
+    const obj5 = { title: null, hasIcons: false, children: null };
+    obj5[0] = reasonsHeaderLabel;
+    obj5[2] = arr.map((label) => {
+      let closure_0 = label;
+      let tmp;
+      if (null != label.label) {
+        const obj = { label: null, labelLineClamp: 2, onPress: null };
+        obj[0] = label.label;
+        obj[2] = function onPress() {
+          return outer1_17(closure_0);
+        };
+        tmp = _undefined(reasons(otherKey[23]).TableRow, obj, arg1);
+      }
+      return tmp;
+    });
+    obj4[1] = tmp21(tmp15(tmp4[22]).TableRowGroup, obj5);
+    tmp21Result1 = tmp21(View, obj4);
   }
-  items3[2] = tmp31;
-  let tmp36 = null;
+  items3[2] = tmp21Result1;
+  let tmp21Result2 = null;
   if (!hideDontShowAgainCheckbox) {
-    const obj6 = { start: true, end: true, checked: first2 };
-    const intl = reasons(otherKey[25]).intl;
-    obj6.label = intl.string(reasons(otherKey[25]).t["5E9SB9"]);
-    obj6.onPress = function onPress() {
-      return callback8(!first2);
+    const obj6 = { start: true, end: true, checked: null, label: null, onPress: null };
+    obj6[2] = first1;
+    const intl = tmp15(tmp4[25]).intl;
+    obj6[3] = intl.string(tmp15(tmp4[25]).t["5E9SB9"]);
+    obj6[4] = function onPress() {
+      return callback5(!first1);
     };
-    tmp36 = callback2(reasons(otherKey[24]).TableCheckboxRow, obj6);
+    tmp21Result2 = tmp21(tmp15(tmp4[24]).TableCheckboxRow, obj6);
   }
-  items3[3] = tmp36;
-  obj2.children = items3;
-  obj.children = closure_8(reasons(otherKey[19]).BottomSheetScrollView, obj2);
-  return callback2(reasons(otherKey[16]).BottomSheet, obj);
+  items3[3] = tmp21Result2;
+  obj2[1] = items3;
+  obj[5] = c8(reasons(otherKey[19]).BottomSheetScrollView, obj2);
+  return c7(reasons(otherKey[16]).BottomSheet, obj);
 };

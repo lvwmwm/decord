@@ -1,79 +1,73 @@
-// Module ID: 15978
-// Function ID: 123322
+// Module ID: 16013
+// Function ID: 16014
 // Name: ChatButton
-// Dependencies: [31, 33, 4165, 689, 10015, 15970, 15921, 15958, 15971, 1212, 15979, 5550, 4664, 2]
+// Dependencies: [19, 21, 4189, 712, 10037, 16005, 15956, 15993, 16006, 1236, 16014, 5568, 4686, 2]
 // Exports: default
 
-// Module 15978 (ChatButton)
-import result from "result";
+// Module 16013 (ChatButton)
+import noop from "noop";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_4;
-let closure_5;
+let c4;
+let c5;
 let closure_6;
 const require = arg1;
-({ jsx: closure_4, Fragment: closure_5, jsxs: closure_6 } = jsxProd);
-_createForOfIteratorHelperLoose = { iconContainer: { position: "absolute", justifyContent: "center", alignItems: "center", width: "100%", height: "100%" } };
-_createForOfIteratorHelperLoose = { position: "absolute", zIndex: 1, width: 10, height: 10, borderRadius: require("_createForOfIteratorHelperLoose").radii.round, top: 0, right: 0 };
-_createForOfIteratorHelperLoose.badge = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.mentionBadge = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_FEEDBACK_NOTIFICATION };
-const obj1 = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_FEEDBACK_NOTIFICATION };
-_createForOfIteratorHelperLoose.unreadBadge = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.CONTROL_BRAND_FOREGROUND };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-let obj2 = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.CONTROL_BRAND_FOREGROUND };
-const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/voice_panel/native/controls/buttons/VoicePanelChatButton.tsx");
+({ jsx: c4, Fragment: c5, jsxs: closure_6 } = jsxProd);
+createCacheKey = { iconContainer: { position: "absolute", justifyContent: "center", alignItems: "center", width: "100%", height: "100%" }, badge: null, notificationBadge: null };
+createCacheKey = { position: "absolute", zIndex: 1, width: 10, height: 10, borderRadius: require("Themes").radii.round, top: 0, right: 0 };
+createCacheKey[1] = createCacheKey;
+createCacheKey[2] = { backgroundColor: require("Themes").colors.BACKGROUND_FEEDBACK_NOTIFICATION };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let obj1 = { backgroundColor: require("Themes").colors.BACKGROUND_FEEDBACK_NOTIFICATION };
+const result = require("createCacheKey").fileFinishedImporting("modules/voice_panel/native/controls/buttons/VoicePanelChatButton.tsx");
 
 export default function ChatButton(props) {
   props = props.props;
   const openTab = props.openTab;
+  let connected;
+  let React;
+  let voicePanelButtonStyles;
+  let c5;
+  let backgroundColor;
   const context = React.useContext(openTab(connected[4]));
   connected = context.connected;
-  const tmp2 = _createForOfIteratorHelperLoose();
+  const tmp2 = createCacheKey();
   React = tmp2;
   let obj = props(connected[5]);
-  const voicePanelButtonStyles = obj.useVoicePanelButtonStyles(props.wrapperSpecs);
+  voicePanelButtonStyles = obj.useVoicePanelButtonStyles(props.wrapperSpecs);
   const tmp4 = openTab(connected[6])(context.channelId);
-  let closure_5 = tmp4;
-  const backgroundColor = voicePanelButtonStyles.iconBg.backgroundColor;
-  let items = [openTab, connected];
+  c5 = tmp4;
+  backgroundColor = voicePanelButtonStyles.iconBg.backgroundColor;
+  const items = [openTab, connected];
   const callback = React.useCallback(() => {
-    const obj = { tab: "chat" };
     const value = connected.get();
     const VoicePanelTabAnalyticsSources = props(connected[7]).VoicePanelTabAnalyticsSources;
-    obj.source = value ? VoicePanelTabAnalyticsSources.CONNECTED_BUTTON : VoicePanelTabAnalyticsSources.PREJOIN_BUTTON;
-    openTab(obj);
+    openTab({ tab: "chat", source: value ? VoicePanelTabAnalyticsSources.CONNECTED_BUTTON : VoicePanelTabAnalyticsSources.PREJOIN_BUTTON });
   }, items);
-  obj = { onPress: callback, props };
+  obj = { onPress: callback, props, accessibilityLabel: null, children: null };
   const intl = props(connected[9]).intl;
-  obj.accessibilityLabel = intl.string(props(connected[9]).t["5KxXrK"]);
-  let items1 = [backgroundColor, props.width, tmp4, , , , , ];
-  ({ iconContainer: arr2[3], badge: arr2[4], mentionBadge: arr2[5], unreadBadge: arr2[6] } = tmp2);
-  items1[7] = voicePanelButtonStyles.iconFill.color;
-  obj.children = React.useMemo(() => {
-    let obj = {};
-    obj = { fill: backgroundColor, circleRadius: props.width / 2, cutoutRadius: 8, enableCutout: null != closure_5, cutoutPositionInDegrees: 45, alignBadgeEdgeWithCircleEdge: true, badgeRadius: 5, scaleToPixelDensity: true };
-    const items = [voicePanelButtonStyles(openTab(connected[10]), obj), , ];
-    obj = { style: tmp2.iconContainer, children: voicePanelButtonStyles(props(connected[12]).ChatIcon, { color: voicePanelButtonStyles.iconFill.color }) };
-    items[1] = voicePanelButtonStyles(openTab(connected[11]), obj);
-    if (null == closure_5) {
-      items[2] = tmp4;
-      obj.children = items;
-      return backgroundColor(tmp2, obj);
-    } else {
-      const obj2 = {};
-      const items1 = [tmp2.badge, ];
-      if ("mention" === closure_5) {
-        let unreadBadge = tmp2.mentionBadge;
-      } else {
-        unreadBadge = tmp2.unreadBadge;
-      }
-      items1[1] = unreadBadge;
-      obj2.style = items1;
-      voicePanelButtonStyles(openTab(connected[11]), obj2);
-      const tmp5 = voicePanelButtonStyles;
-      const tmp8 = openTab(connected[11]);
+  obj[2] = intl.string(props(connected[9]).t["5KxXrK"]);
+  let items1 = [backgroundColor, props.width, tmp4, , , , ];
+  ({ iconContainer: arr2[3], badge: arr2[4], notificationBadge: arr2[5] } = tmp2);
+  items1[6] = voicePanelButtonStyles.iconFill.color;
+  obj[3] = React.useMemo(() => {
+    let obj = { fill: backgroundColor, circleRadius: props.width / 2, cutoutRadius: 8, enableCutout: null != c5, cutoutPositionInDegrees: 45, alignBadgeEdgeWithCircleEdge: true, badgeRadius: 5, scaleToPixelDensity: true };
+    const children = [voicePanelButtonStyles(openTab(connected[10]), obj), , ];
+    obj = { style: _undefined.iconContainer, children: null };
+    obj = { color: voicePanelButtonStyles.iconFill.color };
+    obj[1] = voicePanelButtonStyles(props(connected[12]).ChatIcon, obj);
+    children[1] = voicePanelButtonStyles(openTab(connected[11]), obj);
+    let tmp3Result = null != c5;
+    if (tmp3Result) {
+      const obj1 = { style: null };
+      const items1 = [, ];
+      ({ badge: arr2[0], notificationBadge: arr2[1] } = _undefined);
+      obj1[0] = items1;
+      tmp3Result = voicePanelButtonStyles(openTab(connected[11]), obj1);
     }
+    children[2] = tmp3Result;
+    return backgroundColor(c5, { children });
   }, items1);
   return voicePanelButtonStyles(openTab(connected[8]), obj);
 };

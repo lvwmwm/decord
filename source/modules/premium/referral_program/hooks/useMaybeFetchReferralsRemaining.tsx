@@ -1,47 +1,48 @@
-// Module ID: 7815
-// Function ID: 61883
+// Module ID: 7838
+// Function ID: 7839
 // Name: useMaybeFetchReferralsRemaining
-// Dependencies: [31, 1850, 6192, 1852, 566, 7816, 7817, 5830, 1873, 2]
+// Dependencies: [19, 1874, 6212, 1876, 589, 7839, 7840, 5848, 1897, 2]
 // Exports: useMaybeFetchReferralsRemaining
 
-// Module 7815 (useMaybeFetchReferralsRemaining)
-import result from "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_5 from "_isNativeReflectConstruct";
+// Module 7838 (useMaybeFetchReferralsRemaining)
+import noop from "noop";
+import mergeGuildAvatar from "mergeGuildAvatar";
+import emitChanges from "emitChanges";
 import GuildFeatures from "GuildFeatures";
 
 let closure_6;
-let closure_7;
+let error;
 const require = arg1;
-({ PremiumTypes: closure_6, FractionalPremiumStates: closure_7 } = GuildFeatures);
-let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/premium/referral_program/hooks/useMaybeFetchReferralsRemaining.tsx");
+({ PremiumTypes: closure_6, FractionalPremiumStates: error } = GuildFeatures);
+let result = require("emitChanges").fileFinishedImporting("modules/premium/referral_program/hooks/useMaybeFetchReferralsRemaining.tsx");
 
 export const useMaybeFetchReferralsRemaining = function useMaybeFetchReferralsRemaining(flag) {
   if (flag === undefined) {
     flag = false;
   }
   let fetched;
-  const items = [_isNativeReflectConstruct];
-  const stateFromStores = flag(566).useStateFromStores(items, () => outer1_4.getCurrentUser());
-  const obj = flag(566);
-  const hasDiscountApplied = flag(7816).useHasDiscountApplied();
-  const obj2 = flag(7816);
-  const hasActiveTrial = flag(7817).useHasActiveTrial();
-  const tmp4 = fetched(5830)();
+  const items = [mergeGuildAvatar];
+  const stateFromStores = flag(589).useStateFromStores(items, () => currentUser.getCurrentUser());
+  const obj = flag(589);
+  let tmp = flag;
+  const hasDiscountApplied = flag(7839).useHasDiscountApplied();
+  const obj2 = flag(7839);
+  const hasActiveTrial = flag(7840).useHasActiveTrial();
+  const tmp6 = fetched(5848)();
   let verified;
-  if (null != stateFromStores) {
+  if (stateFromStores != null) {
     verified = stateFromStores.verified;
   }
   fetched = true === verified;
   if (fetched) {
-    fetched = flag(1873).isPremiumExactly(stateFromStores, TIER_2.TIER_2);
-    const obj4 = flag(1873);
+    fetched = tmp(1897).isPremiumExactly(stateFromStores, TIER_2.TIER_2);
+    const tmpResult = tmp(1897);
   }
   if (fetched) {
-    fetched = tmp4.fetched;
+    fetched = tmp6.fetched;
   }
   if (fetched) {
-    fetched = tmp4.fractionalState !== constants.FP_ONLY;
+    fetched = tmp6.fractionalState !== constants.FP_ONLY;
   }
   if (fetched) {
     fetched = !hasDiscountApplied;

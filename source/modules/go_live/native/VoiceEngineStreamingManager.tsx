@@ -1,72 +1,260 @@
-// Module ID: 4343
-// Function ID: 37826
-// Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 99, 100, 5, 27, 4184, 1348, 1907, 653, 4190, 3, 4050, 3838, 686, 507, 4229, 4344, 4214, 44, 4358, 1450, 10721, 10670, 1212, 4565, 2]
+// Module ID: 4367
+// Function ID: 4368
+// Name: handleThumbnailUpload
+// Dependencies: [5, 17, 4208, 1372, 1931, 676, 4214, 3, 4074, 3862, 709, 530, 4368, 4238, 38, 4369, 4383, 4253, 1474, 10745, 10694, 1236, 2]
 
-// Module 4343 (_isNativeReflectConstruct)
-import _classPrivateFieldKey from "_classPrivateFieldKey";
-import asyncGeneratorStep from "asyncGeneratorStep";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import dispatcher from "dispatcher";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import _classPrivateFieldBase from "_classPrivateFieldBase";
-import closure_9 from "_classPrivateFieldBase";
-import { Linking } from "getSystemLocale";
-import closure_11 from "_isNativeReflectConstruct";
-import closure_12 from "_isNativeReflectConstruct";
-import importDefaultResult1 from "_isNativeReflectConstruct";
+// Module 4367 (handleThumbnailUpload)
+import closure_3 from "ME";
+import { Linking } from "isStreamKey";
+import reset from "reset";
+import ensureGuildLoaded from "ensureGuildLoaded";
+import importDefaultResult from "handleConnectionOpen";
 import ME from "ME";
 import { getAppIntentScheme } from "items3";
-import importDefaultResult2 from "_getPrototypeOf";
-import tmp8 from "LifecycleManager";
-import importDefaultResult from "_classPrivateFieldKey";
+import "initialize";
 
-let closure_14;
-let closure_15;
-let closure_16;
-let closure_17;
+let c10;
+let c9;
+let metroImportAll;
+let unpackModuleId;
 const require = arg1;
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
-  }
-  const result = _isNativeReflectConstruct();
-}
 function handleThumbnailUpload() {
-  return _handleThumbnailUpload(...arguments);
+  const self = this;
+  const apply = _handleThumbnailUpload.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
 }
-async function _handleThumbnailUpload(arg0, arg1, arg2) {
-  let closure_0 = arg0;
-  let closure_1 = arg1;
-  const DisableStreamPreviews = outer2_0(outer2_2[16]).DisableStreamPreviews;
-  if (!DisableStreamPreviews.getSetting()) {
-    outer2_20.stop();
-    const _HermesInternal = HermesInternal;
-    const combined = "" + outer2_14 + arg1;
-    let obj = outer2_1(outer2_2[17]);
-    obj = { type: "STREAM_PREVIEW_FETCH_SUCCESS", streamKey: arg0, previewURL: combined };
-    obj.dispatch(obj);
-    const HTTP = outer2_0(outer2_2[18]).HTTP;
-    obj = { url: outer2_15.STREAM_PREVIEW(arg0) };
-    const obj1 = { thumbnail: combined };
-    obj.body = obj1;
-    obj.oldFormErrors = true;
-    obj.rejectWithError = false;
-    yield HTTP.post(obj);
+function _handleThumbnailUpload() {
+  const self = this;
+  const tmp = callback((arg0, arg1) => {
+    let closure_0 = arg0;
+    let closure_1 = arg1;
+    let c6 = 0;
+    let c7 = 0;
+    let c5 = 0;
+    return (function*(arg0, arg1) {
+      if (c7 === 2) {
+        c7 = 3;
+        HermesBuiltin.throwTypeError();
+      } else if (tmp6 === 3) {
+        if (arg0 === 1) {
+          throw arg1;
+        } else if (arg0 === 2) {
+          let obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
+        } else {
+          return { value: "HermesInternal", done: null };
+        }
+      } else {
+        try {
+          c7 = 2;
+          if (0 === c6) {
+            if (arg0 === 1) {
+              c7 = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              c7 = 3;
+              obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            } else {
+              let closure_3 = tmp3;
+              let closure_2 = tmp7;
+              const DisableStreamPreviews = callback(outer1_2[9]).DisableStreamPreviews;
+              if (!DisableStreamPreviews.getSetting()) {
+                outer1_14.stop();
+                const _HermesInternal = HermesInternal;
+                const combined = "" + outer1_8 + tmp34;
+                let obj1 = callback2(tmp36[10]);
+                obj1 = { type: "STREAM_PREVIEW_FETCH_SUCCESS", streamKey: null, previewURL: null };
+                obj1[1] = tmp33;
+                obj1[2] = combined;
+                obj1.dispatch(obj1);
+                let c5 = 1;
+                const HTTP = tmp35(tmp36[11]).HTTP;
+                const obj2 = { url: null, body: null, oldFormErrors: true, rejectWithError: false };
+                obj2[0] = outer1_9.STREAM_PREVIEW(tmp33);
+                const obj3 = { thumbnail: null };
+                obj3[0] = combined;
+                obj2[1] = obj3;
+                c6 = 2;
+                c7 = 1;
+                const obj4 = { value: null, done: false };
+                obj4[0] = HTTP.post(obj2);
+                return obj4;
+              }
+              tmp34 = callback2;
+              tmp35 = callback;
+            }
+          } else {
+            if (1 === tmp7) {
+              c5 = 0;
+              closure_2 = closure_4;
+              logger.error("Failed to post stream preview", closure_2);
+              closure_14.start(60000, () => outer1_17(closure_0, closure_1));
+            } else if (arg0 === 1) {
+              c7 = 3;
+              throw arg1;
+            } else if (arg0 !== 2) {
+              c5 = 0;
+            }
+            c5 = 0;
+            c7 = 3;
+            obj = { value: null, done: true };
+            obj[0] = arg1;
+            return obj;
+          }
+          c7 = 3;
+        } catch (tmp24) {
+          closure_4 = tmp24;
+          if (tmp4 === c5) {
+            c7 = tmp2;
+            throw tmp24;
+          } else {
+            c6 = tmp;
+          }
+        }
+      }
+    })();
+  });
+  const _handleThumbnailUpload = tmp;
+  const apply = tmp.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
+}
+const error = importDefaultResult;
+({ Base64JPEGPrefix: metroImportAll, Endpoints: c9, NOOP_NULL: c10, IOS_BUNDLE_ID: unpackModuleId } = ME);
+let obj2 = new require("ensureGuildLoaded")("VoiceEngineStreamingManager");
+obj2.enableNativeLogger(true);
+const timeout = new require("start").Timeout();
+const timeout1 = new require("start").Timeout();
+let closure_16 = [];
+const voiceChannelId = importDefaultResult.getVoiceChannelId();
+// CreatePrivateName (0x9e)
+class VoiceEngineStreamingManager extends tmp6 {
+  constructor() {
+    // PrivateIsIn (0x32)
+    if (tmp) {
+      str = "Cannot initialize private field twice.";
+      throwTypeErrorResult = HermesBuiltin.throwTypeError();
+      return;
+    } else {
+      fn = (channelId) => {
+        channelId = channelId.channelId;
+        if (channelId !== channelId) {
+          if (closure_19 != null) {
+            obj.stopBroadcast();
+          }
+          allActiveStreams = allActiveStreams.getAllActiveStreams();
+          const item = allActiveStreams.forEach((channelId) => {
+            if (channelId.channelId !== channelId) {
+              const obj = channelId(outer1_2[17]);
+              const encodeStreamKeyResult = channelId(outer1_2[17]).encodeStreamKey(channelId);
+              channelId(outer1_2[15]).stopStream(encodeStreamKeyResult, false);
+              const obj2 = channelId(outer1_2[15]);
+            }
+          });
+          obj = closure_19;
+        }
+      };
+      // AddOwnPrivateBySym (0x64)
+      return tmp2;
+    }
   }
 }
-({ Base64JPEGPrefix: closure_14, Endpoints: closure_15, NOOP_NULL: closure_16, IOS_BUNDLE_ID: closure_17 } = ME);
-importDefaultResult2 = new importDefaultResult2("VoiceEngineStreamingManager");
-importDefaultResult2.enableNativeLogger(true);
-const timeout = new require("_createForOfIteratorHelperLoose").Timeout();
-const timeout1 = new require("_createForOfIteratorHelperLoose").Timeout();
-let closure_22 = [];
-const voiceChannelId = importDefaultResult1.getVoiceChannelId();
-let closure_25 = require("_classPrivateFieldKey")("handleVoiceChannelSelect");
-tmp8 = new tmp8();
-let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/go_live/native/VoiceEngineStreamingManager.tsx");
+const prototype = VoiceEngineStreamingManager.prototype;
+prototype["_initialize"] = function _initialize() {
+  const voiceEngine = require(4238) /* inject */.getVoiceEngine();
+  let result = voiceEngine.setBroadcastRequestCallback(() => {
+    logger.log("Broadcast Requested");
+    callback2(38)(null != voiceEngine, "Voice Engine should be initialized in callback");
+    let closure_16 = [];
+    channel = channel.getChannel(voiceChannelId.getVoiceChannelId());
+    currentAppIntent = currentAppIntent.getCurrentAppIntent();
+    if (null != channel) {
+      const guildId = channel.getGuildId();
+      currentUserActiveStream(4369).startStream(guildId, channel.id, { sourceId: "screen:0" });
+      currentUserActiveStream = currentAppIntent.getCurrentUserActiveStream();
+      if (null != currentUserActiveStream) {
+        const tmp2Result = callback2(4383);
+        const participant = tmp2Result.selectParticipant(channel.id, tmp9(4253).encodeStreamKey(currentUserActiveStream));
+        if ("android" === voiceEngine.platform) {
+          closure_15.start(15000, () => {
+            outer1_1(outer1_2[14])(null != outer1_19, "Voice Engine should be initialized in callback");
+            const size = currentUserActiveStream(outer1_2[18]).getWindowDimensions();
+            const bound = Math.min(512 / size.width, 288 / size.height);
+            const result = outer1_19.setBroadcastThumbnailCallback(size.width * bound, size.height * bound, 300, (arg0) => {
+              outer1_13.log("Broadcast thumbnail of size:", arg0.length);
+              outer1_17(outer1_0(outer1_2[17]).encodeStreamKey(closure_0), arg0);
+            });
+          });
+        }
+        if (null != currentAppIntent) {
+          closure_4.openURL(callback3(currentAppIntent));
+        }
+        const tmp9Result = tmp9(4253);
+      }
+      const obj3 = currentUserActiveStream(4369);
+      tmp9 = currentUserActiveStream;
+    } else {
+      let result = voiceEngine.stopBroadcastWithError(-1, "Not currently in a voice channel");
+    }
+  });
+  const result1 = voiceEngine.setBroadcastFinishedCallback(() => {
+    logger.log("Broadcast Finished");
+    closure_14.stop();
+    closure_15.stop();
+    const result = callback(10745).handleCloseScreenshare();
+  });
+  const result2 = voiceEngine.setBroadcastAnnotatedCallback((arg0) => {
+    logger.log("Broadcast Annotated:", arg0);
+    if (arg0 !== closure_11) {
+      const index = arr.indexOf(arg0, 0);
+      if (index > -1) {
+        arr.splice(index, 1);
+      }
+      arr = arr.push(arg0);
+    }
+  });
+  const result3 = voiceEngine.setBroadcastBlockedCallback(() => {
+    logger.log("Broadcast Blocked");
+    let obj = callback2(10694);
+    obj = { alertBody: null };
+    const intl = callback(1236).intl;
+    obj[0] = intl.string(callback(1236).t.iYQlwv);
+    const result = obj.presentLocalNotification(obj);
+  });
+  let obj = require(4238) /* inject */;
+  // GetOwnPrivateBySym (0x65)
+  const subscription = importDefault(709).subscribe("VOICE_CHANNEL_SELECT", importDefault);
+};
+prototype["_terminate"] = function _terminate() {
+  const voiceEngine = require(4238) /* inject */.getVoiceEngine();
+  if (null != voiceEngine) {
+    const result = voiceEngine.setBroadcastRequestCallback(closure_10);
+    const result1 = voiceEngine.setBroadcastFinishedCallback(closure_10);
+    const result2 = voiceEngine.setBroadcastAnnotatedCallback(closure_10);
+    const result3 = voiceEngine.setBroadcastBlockedCallback(closure_10);
+  }
+  timeout.stop();
+  timeout1.stop();
+  const obj = require(4238) /* inject */;
+  // GetOwnPrivateBySym (0x65)
+  importDefault(709).unsubscribe("VOICE_CHANNEL_SELECT", this);
+};
+prototype["getApplicationNames"] = function getApplicationNames() {
+  return closure_16;
+};
+const voiceEngineStreamingManager = new VoiceEngineStreamingManager();
+let result = require("reset").fileFinishedImporting("modules/go_live/native/VoiceEngineStreamingManager.tsx");
 
-export default tmp8;
+export default voiceEngineStreamingManager;

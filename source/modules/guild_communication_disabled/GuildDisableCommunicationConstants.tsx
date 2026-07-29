@@ -1,43 +1,37 @@
-// Module ID: 1920
-// Function ID: 21733
+// Module ID: 1944
+// Function ID: 1945
 // Name: getFriendlyDurationString
-// Dependencies: [653, 1212, 1921, 2]
+// Dependencies: [676, 1236, 1945, 2]
 // Exports: getDisableCommunicationDurationOptions
 
-// Module 1920 (getFriendlyDurationString)
-import importDefaultResult from "wrapURL";
+// Module 1944 (getFriendlyDurationString)
+import importDefaultResult from "combined";
 
 const require = arg1;
 function getFriendlyDurationString(arg0) {
   if (obj.DURATION_60_SEC === arg0) {
-    const intl6 = require(1212) /* getSystemLocale */.intl;
-    obj = { secs: 60 };
-    return intl6.formatToPlainString(require(1212) /* getSystemLocale */.t["4zv/jq"], obj);
-  } else if (obj.DURATION_5_MIN === arg0) {
-    const intl5 = require(1212) /* getSystemLocale */.intl;
-    obj = { mins: 5 };
-    return intl5.formatToPlainString(require(1212) /* getSystemLocale */.t.opVZ9q, obj);
-  } else if (obj.DURATION_10_MIN === arg0) {
-    const intl4 = require(1212) /* getSystemLocale */.intl;
-    const obj1 = { mins: 10 };
-    return intl4.formatToPlainString(require(1212) /* getSystemLocale */.t.opVZ9q, obj1);
-  } else if (obj.DURATION_1_HOUR === arg0) {
-    const intl3 = require(1212) /* getSystemLocale */.intl;
-    const obj2 = { hours: 1 };
-    return intl3.formatToPlainString(require(1212) /* getSystemLocale */.t.xCjYxK, obj2);
-  } else if (obj.DURATION_1_DAY === arg0) {
-    const intl2 = require(1212) /* getSystemLocale */.intl;
-    const obj3 = { days: 1 };
-    return intl2.formatToPlainString(require(1212) /* getSystemLocale */.t["k2UNz+"], obj3);
-  } else if (obj.DURATION_1_WEEK === arg0) {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    obj = { weeks: 1 };
-    return intl.formatToPlainString(require(1212) /* getSystemLocale */.t.EmoBD2, obj);
+    const intl6 = require(1236) /* getSystemLocale */.intl;
+    return intl6.formatToPlainString(require(1236) /* getSystemLocale */.t["4zv/jq"], { secs: 60 });
+  } else if (tmp.DURATION_5_MIN === arg0) {
+    const intl5 = require(1236) /* getSystemLocale */.intl;
+    return intl5.formatToPlainString(require(1236) /* getSystemLocale */.t.opVZ9q, { mins: 5 });
+  } else if (tmp.DURATION_10_MIN === arg0) {
+    const intl4 = require(1236) /* getSystemLocale */.intl;
+    return intl4.formatToPlainString(require(1236) /* getSystemLocale */.t.opVZ9q, { mins: 10 });
+  } else if (tmp.DURATION_1_HOUR === arg0) {
+    const intl3 = require(1236) /* getSystemLocale */.intl;
+    return intl3.formatToPlainString(require(1236) /* getSystemLocale */.t.xCjYxK, { hours: 1 });
+  } else if (tmp.DURATION_1_DAY === arg0) {
+    const intl2 = require(1236) /* getSystemLocale */.intl;
+    return intl2.formatToPlainString(require(1236) /* getSystemLocale */.t["k2UNz+"], { days: 1 });
+  } else if (tmp.DURATION_1_WEEK === arg0) {
+    const intl = require(1236) /* getSystemLocale */.intl;
+    return intl.formatToPlainString(require(1236) /* getSystemLocale */.t.EmoBD2, { weeks: 1 });
   }
 }
 let obj = { DURATION_60_SEC: 60, [60]: "DURATION_60_SEC", DURATION_5_MIN: 300, [300]: "DURATION_5_MIN", DURATION_10_MIN: 600, [600]: "DURATION_10_MIN", DURATION_1_HOUR: 3600, [3600]: "DURATION_1_HOUR", DURATION_1_DAY: 86400, [86400]: "DURATION_1_DAY", DURATION_1_WEEK: 604800, [604800]: "DURATION_1_WEEK" };
-const articleURL = require("wrapURL").getArticleURL(require("ME").HelpdeskArticles.DISABLE_GUILD_COMMUNICATION);
-const result = require("wrapURL").fileFinishedImporting("modules/guild_communication_disabled/GuildDisableCommunicationConstants.tsx");
+const articleURL = require("combined").getArticleURL(require("ME").HelpdeskArticles.DISABLE_GUILD_COMMUNICATION);
+const result = require("combined").fileFinishedImporting("modules/guild_communication_disabled/GuildDisableCommunicationConstants.tsx");
 
 export const DisableCommunicationDuration = obj;
 export { getFriendlyDurationString };
@@ -45,14 +39,13 @@ export const getDisableCommunicationDurationOptions = () => {
   const keys = Object.keys(obj);
   const found = keys.filter((arg0) => isNaN(Number(arg0)));
   return found.map((id) => {
-    const obj = { id };
-    const tmp = outer1_3(outer1_2[id]);
-    let str = "";
-    if (null != tmp) {
-      str = tmp;
+    const obj = { id, label: null, value: null };
+    let str = callback(table[id]);
+    if (str == null) {
+      str = "";
     }
-    obj.label = str;
-    obj.value = outer1_2[id];
+    obj[1] = str;
+    obj[2] = table[id];
     return obj;
   });
 };

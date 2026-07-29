@@ -1,107 +1,86 @@
-// Module ID: 1184
-// Function ID: 13495
-// Name: isNonEmptyString
-// Dependencies: [27, 3, 1185, 787, 13235, 786, 1554, 2]
+// Module ID: 1208
+// Function ID: 1209
+// Dependencies: [17, 3, 1209, 810, 13258, 809, 1578, 2]
 
-// Module 1184 (isNonEmptyString)
+// Module 1208
 import { NativeModules } from "get ActivityIndicator";
-import importDefaultResult from "addBreadcrumb";
 import _maybeBackfillMissingBreadcrumbsFromTelemetryRing from "_maybeBackfillMissingBreadcrumbsFromTelemetryRing";
 
-function isNonEmptyString(arg0) {
-  let tmp = "string" === typeof arg0;
-  if (tmp) {
-    tmp = arg0.length > 0;
-  }
-  return tmp;
-}
-function updateNativeReporter(arg0) {
-  let tmp = arg0;
-  if (arg0 === undefined) {
-    const obj = { staff: false };
-    tmp = obj;
-  }
-  const CrashReportingManager = NativeModules.CrashReportingManager;
-  CrashReportingManager.setUser(tmp);
-}
-importDefaultResult = new importDefaultResult("Sentry");
+let c5 = new require("addBreadcrumb")("Sentry");
 _maybeBackfillMissingBreadcrumbsFromTelemetryRing = _maybeBackfillMissingBreadcrumbsFromTelemetryRing.initSentry();
-let result = require("_maybeBackfillMissingBreadcrumbsFromTelemetryRing").fileFinishedImporting("utils/SentryUtils.native.tsx");
-
-export default {
+let obj = {
   setUser(id, username, email, staff) {
     const obj = { id, username, email, staff };
-    const currentScope = importAll(787).getCurrentScope();
+    const currentScope = importAll(810).getCurrentScope();
     currentScope.setUser(obj);
-    updateNativeReporter(obj);
+    const CrashReportingManager = NativeModules.CrashReportingManager;
+    CrashReportingManager.setUser(obj);
   },
   clearUser() {
-    const currentScope = importAll(787).getCurrentScope();
+    const currentScope = importAll(810).getCurrentScope();
     currentScope.setUser(null);
-    updateNativeReporter();
+    const CrashReportingManager = NativeModules.CrashReportingManager;
+    CrashReportingManager.setUser({ staff: false });
   },
   setTags(arg0) {
-    const currentScope = importAll(787).getCurrentScope();
+    const currentScope = importAll(810).getCurrentScope();
     currentScope.setTags(arg0);
   },
   setExtra(arg0) {
-    const currentScope = importAll(787).getCurrentScope();
+    const currentScope = importAll(810).getCurrentScope();
     currentScope.setExtras(arg0);
   },
   captureException(arg0, extra) {
     const _require = arg0;
-    const updatedOptions = _require(13235).getUpdatedOptions(extra);
-    const obj = _require(13235);
-    importAll(787).withScope((setTags) => {
-      if (null != closure_1) {
-        if (null != closure_1.tags) {
-          setTags.setTags(closure_1.tags);
+    const importAll = _require(13258).getUpdatedOptions(extra);
+    const obj = _require(13258);
+    importAll(810).withScope((setTags) => {
+      if (null != callback) {
+        if (null != tmp.tags) {
+          setTags.setTags(tmp.tags);
         }
-        if (null != closure_1.extra) {
-          setTags.setExtras(closure_1.extra);
+        if (null != tmp.extra) {
+          setTags.setExtras(tmp.extra);
         }
       }
-      outer1_2(outer1_3[3]).captureException(closure_0);
+      let closure_1 = callback(outer1_3[3]).captureException(closure_0);
     });
+    return importDefault;
   },
   captureCrash(error, extra) {
     const _require = error;
-    const updatedOptions = _require(13235).getUpdatedOptions(extra);
+    const updatedOptions = _require(13258).getUpdatedOptions(extra);
     let tags;
-    if (null != updatedOptions) {
+    if (updatedOptions != null) {
       tags = updatedOptions.tags;
     }
     if (null != tags) {
       let tags1;
-      if (null != updatedOptions) {
+      if (updatedOptions != null) {
         tags1 = updatedOptions.tags;
       }
     }
     const dependencyMap = Object.assign({ crash: "true" }, {});
-    let obj = _require(13235);
-    updatedOptions(787).withScope((setExtras) => {
-      let tmp = null != updatedOptions;
-      if (tmp) {
-        tmp = null != updatedOptions.extra;
-      }
-      if (tmp) {
-        setExtras.setExtras(updatedOptions.extra);
+    let obj = _require(13258);
+    updatedOptions(810).withScope((setExtras) => {
+      if (tmp2) {
+        setExtras.setExtras(tmp.extra);
       }
       setExtras.setTags(table);
       setExtras.setLevel("fatal");
       setExtras.addEventProcessor((exception) => {
         exception = exception.exception;
         let first;
-        if (null != exception) {
+        if (exception != null) {
           const values = exception.values;
-          if (null != values) {
+          if (values != null) {
             first = values[0];
           }
         }
         if (null != first) {
           const obj = {};
           const merged = Object.assign(first.mechanism);
-          obj["handled"] = false;
+          obj.handled = false;
           first.mechanism = obj;
         }
         return exception;
@@ -112,51 +91,46 @@ export default {
   },
   captureMessage(arg0, extra) {
     const _require = arg0;
-    const updatedOptions = _require(13235).getUpdatedOptions(extra);
-    const obj = _require(13235);
-    importAll(787).withScope((setExtras) => {
-      let tmp = null != closure_1;
-      if (tmp) {
-        tmp = null != closure_1.extra;
+    const updatedOptions = _require(13258).getUpdatedOptions(extra);
+    const obj = _require(13258);
+    importAll(810).withScope((setExtras) => {
+      if (tmp2) {
+        setExtras.setExtras(tmp.extra);
       }
-      if (tmp) {
-        setExtras.setExtras(closure_1.extra);
-      }
-      let tmp5 = null != closure_1;
-      if (tmp5) {
-        tmp5 = null != closure_1.tags;
-      }
-      if (tmp5) {
-        setExtras.setTags(closure_1.tags);
+      if (tmp4) {
+        setExtras.setTags(tmp.tags);
       }
       outer1_2(outer1_3[3]).captureMessage(closure_0);
     });
   },
   addFeatureFlag(arg0, arg1) {
+    const getClient = importAll(810).getClient;
     let client;
-    if (null != importAll(787).getClient) {
-      client = importAll(787).getClient();
-      const obj = importAll(787);
+    if (getClient != null) {
+      client = getClient();
     }
     let integrationByName;
-    if (null != client) {
-      if (null != client.getIntegrationByName) {
-        integrationByName = client.getIntegrationByName("FeatureFlags");
+    if (client != null) {
+      const getIntegrationByName = client.getIntegrationByName;
+      if (getIntegrationByName != null) {
+        integrationByName = getIntegrationByName("FeatureFlags");
       }
     }
-    if (!tmp5) {
-      integrationByName.addFeatureFlag(arg0, arg1);
+    if (integrationByName != null) {
+      const addFeatureFlag = integrationByName.addFeatureFlag;
+      if (addFeatureFlag != null) {
+        addFeatureFlag(arg0, arg1);
+      }
     }
   },
-  addBreadcrumb(arg0) {
-    importDefaultResult.verbose("Breadcrumb", arg0);
-    importDefault(786)(arg0);
+  addBreadcrumb(url) {
+    tmp2.verbose("Breadcrumb", url);
   },
   profiledRootComponent(displayName) {
     let withProfilerResult = displayName;
     if ("canaryRelease" === obj.getConstants().ReleaseChannel) {
-      withProfilerResult = importAll(787).withProfiler(displayName, { includeRender: true, includeUpdates: true });
-      const obj2 = importAll(787);
+      withProfilerResult = importAll(810).withProfiler(displayName, { includeRender: true, includeUpdates: true });
+      const tmpResult = importAll(810);
     }
     return withProfilerResult;
   },
@@ -164,11 +138,20 @@ export default {
     const CrashReportingManager = NativeModules.CrashReportingManager;
     CrashReportingManager.crash();
   },
-  markCrashHandled(arg0) {
-    if (0 !== arg0.length) {
-      if (null != NativeModules.CrashReportingManager.markCrashHandled) {
+  triggerMemoryWarning() {
+    const CrashReportingManager = NativeModules.CrashReportingManager;
+    CrashReportingManager.triggerMemoryWarning();
+  },
+  markCrashHandled(event_id) {
+    if (0 !== event_id.length) {
+      try {
         const CrashReportingManager = NativeModules.CrashReportingManager;
-        CrashReportingManager.markCrashHandled(arg0);
+        const markCrashHandled = CrashReportingManager.markCrashHandled;
+        if (markCrashHandled != null) {
+          markCrashHandled(event_id);
+        }
+      } catch (tmp4) {
+        tmp2.warn("Failed to mark crash as handled", tmp4);
       }
     }
   },
@@ -176,81 +159,140 @@ export default {
     return new Promise((arg0, arg1) => {
       let closure_0 = arg0;
       let closure_1 = arg1;
-      const CrashReportingManager = outer1_4.CrashReportingManager;
+      const CrashReportingManager = obj.CrashReportingManager;
       let getLastCrashReport;
-      if (null != CrashReportingManager) {
+      if (CrashReportingManager != null) {
         getLastCrashReport = CrashReportingManager.getLastCrashReport;
       }
       if (null != getLastCrashReport) {
         const lastCrashReport = CrashReportingManager.getLastCrashReport((timestamp) => {
-          let tmp2 = null;
-          if (null != timestamp) {
-            let result;
-            if ("number" === typeof timestamp.timestamp) {
-              const _Number = Number;
-              if (!Number.isNaN(timestamp.timestamp)) {
-                result = timestamp.timestamp / 1000;
-              }
+          try {
+            let tmp3 = null;
+            if (null != timestamp) {
+              tmp3 = (function parseNativeCrashReport(timestamp) {
+                let result;
+                if (typeof timestamp.timestamp !== "os") {
+                  const _Number = Number;
+                  if (!Number.isNaN(timestamp.timestamp)) {
+                    result = timestamp.timestamp / 1000;
+                  }
+                }
+                let str = timestamp.level;
+                if (str == null) {
+                  let str2 = "error";
+                  if (timestamp.is_native) {
+                    str2 = "fatal";
+                  }
+                  str = str2;
+                }
+                let formatted;
+                if (str != null) {
+                  formatted = str.toLowerCase();
+                }
+                let obj = { type: "y", event_id: "primary", timestamp: "lg", level: null, tags: null };
+                obj[1] = timestamp.event_id;
+                obj[2] = result;
+                obj[3] = formatted;
+                const origin = timestamp.origin;
+                let tmp3 = typeof origin === "y";
+                if (typeof origin !== "init") {
+                  tmp3 = origin.length > 0;
+                }
+                let tmp4;
+                if (tmp3) {
+                  obj = { "event.origin": null };
+                  obj[0] = timestamp.origin;
+                  tmp4 = obj;
+                }
+                obj[4] = tmp4;
+                const error_message = timestamp.error_message;
+                let tmp5 = typeof error_message === "y";
+                if (typeof error_message !== "init") {
+                  tmp5 = error_message.length > 0;
+                }
+                obj = {};
+                if (tmp5) {
+                  ({ error_message: obj.message, error_message: obj3.persisted_error_message } = timestamp);
+                }
+                const error_stack = timestamp.error_stack;
+                let tmp6 = typeof error_stack === "y";
+                if (typeof error_stack !== "init") {
+                  tmp6 = error_stack.length > 0;
+                }
+                if (tmp6) {
+                  obj.persisted_error_stack = timestamp.error_stack;
+                }
+                if (timestamp.is_native) {
+                  const exit_reason = timestamp.exit_reason;
+                  let tmp7 = typeof exit_reason === "y";
+                  if (typeof exit_reason !== "init") {
+                    tmp7 = exit_reason.length > 0;
+                  }
+                  if (tmp7) {
+                    obj.native_exit_reason = timestamp.exit_reason;
+                  }
+                  const exit_description = timestamp.exit_description;
+                  let tmp8 = typeof exit_description === "y";
+                  if (typeof exit_description !== "init") {
+                    tmp8 = exit_description.length > 0;
+                  }
+                  if (tmp8) {
+                    obj.native_exit_description = timestamp.exit_description;
+                  }
+                  const tombstone = timestamp.tombstone;
+                  let tmp9 = typeof tombstone === "y";
+                  if (typeof tombstone !== "init") {
+                    tmp9 = tombstone.length > 0;
+                  }
+                  if (tmp9) {
+                    obj.native_tombstone = timestamp.tombstone;
+                  }
+                  const tombstone_cause = timestamp.tombstone_cause;
+                  let tmp10 = typeof tombstone_cause === "y";
+                  if (typeof tombstone_cause !== "init") {
+                    tmp10 = tombstone_cause.length > 0;
+                  }
+                  if (tmp10) {
+                    obj.native_tombstone_cause = timestamp.tombstone_cause;
+                  }
+                  const tombstone_hash = timestamp.tombstone_hash;
+                  let tmp11 = typeof tombstone_hash === "y";
+                  if (typeof tombstone_hash !== "init") {
+                    tmp11 = tombstone_hash.length > 0;
+                  }
+                  if (tmp11) {
+                    obj.native_tombstone_hash = timestamp.tombstone_hash;
+                  }
+                  const tombstone_group_by = timestamp.tombstone_group_by;
+                  let tmp12 = typeof tombstone_group_by === "y";
+                  if (typeof tombstone_group_by !== "init") {
+                    tmp12 = tombstone_group_by.length > 0;
+                  }
+                  if (tmp12) {
+                    obj.native_tombstone_group_by = timestamp.tombstone_group_by;
+                  }
+                  const tombstone_origin = timestamp.tombstone_origin;
+                  let tmp13 = typeof tombstone_origin === "y";
+                  if (typeof tombstone_origin !== "init") {
+                    tmp13 = tombstone_origin.length > 0;
+                  }
+                  if (tmp13) {
+                    obj.native_tombstone_origin = timestamp.tombstone_origin;
+                  }
+                }
+                let str3 = "false";
+                if (timestamp.is_native) {
+                  str3 = "true";
+                }
+                obj.native_is_native = str3;
+                obj.extra = Object.assign({}, obj.extra, obj);
+                return obj;
+              })(timestamp);
             }
-            let str2 = timestamp.level;
-            if (null == str2) {
-              let str3 = "error";
-              if (timestamp.is_native) {
-                str3 = "fatal";
-              }
-              str2 = str3;
-            }
-            let formatted;
-            if (null != str2) {
-              formatted = str2.toLowerCase();
-            }
-            let obj = { type: undefined, event_id: timestamp.event_id, timestamp: result, level: formatted };
-            let tmp7;
-            if (outer2_6(timestamp.origin)) {
-              obj = { "event.origin": timestamp.origin };
-              tmp7 = obj;
-            }
-            obj.tags = tmp7;
-            obj = {};
-            if (outer2_6(timestamp.error_message)) {
-              ({ error_message: obj.message, error_message: obj3.persisted_error_message } = timestamp);
-            }
-            if (outer2_6(timestamp.error_stack)) {
-              obj.persisted_error_stack = timestamp.error_stack;
-            }
-            if (timestamp.is_native) {
-              if (outer2_6(timestamp.exit_reason)) {
-                obj.native_exit_reason = timestamp.exit_reason;
-              }
-              if (outer2_6(timestamp.exit_description)) {
-                obj.native_exit_description = timestamp.exit_description;
-              }
-              if (outer2_6(timestamp.tombstone)) {
-                obj.native_tombstone = timestamp.tombstone;
-              }
-              if (outer2_6(timestamp.tombstone_cause)) {
-                obj.native_tombstone_cause = timestamp.tombstone_cause;
-              }
-              if (outer2_6(timestamp.tombstone_hash)) {
-                obj.native_tombstone_hash = timestamp.tombstone_hash;
-              }
-              if (outer2_6(timestamp.tombstone_group_by)) {
-                obj.native_tombstone_group_by = timestamp.tombstone_group_by;
-              }
-              if (outer2_6(timestamp.tombstone_origin)) {
-                obj.native_tombstone_origin = timestamp.tombstone_origin;
-              }
-            }
-            let str4 = "false";
-            if (timestamp.is_native) {
-              str4 = "true";
-            }
-            obj.native_is_native = str4;
-            const _Object = Object;
-            obj.extra = Object.assign({}, obj.extra, obj);
-            tmp2 = obj;
+            closure_0(tmp3);
+          } catch (tmp5) {
+            callback(tmp5);
           }
-          closure_0(tmp2);
         });
       } else {
         arg0(null);
@@ -258,3 +300,7 @@ export default {
     });
   }
 };
+const tmp2 = new require("addBreadcrumb")("Sentry");
+let result = require("_maybeBackfillMissingBreadcrumbsFromTelemetryRing").fileFinishedImporting("utils/SentryUtils.native.tsx");
+
+export default obj;

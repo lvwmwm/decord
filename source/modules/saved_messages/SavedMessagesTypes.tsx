@@ -1,45 +1,65 @@
-// Module ID: 9530
-// Function ID: 74194
-// Name: savedMessageDataToClient
-// Dependencies: [4386, 2]
-// Exports: savedMessageCreateObjectToClient, savedMessageDeleteObjectToClient
+// Module ID: 9554
+// Function ID: 9555
+// Name: SavedMessageSortTypes
+// Dependencies: [4409, 2]
+// Exports: savedMessageCreateObjectToClient, savedMessageDataToClient, savedMessageDeleteObjectToClient
 
-// Module 9530 (savedMessageDataToClient)
-function savedMessageDataToClient(save_data) {
-  const obj = { channelId: save_data.channel_id, messageId: save_data.message_id, savedAt: new Date(save_data.saved_at) };
-  ({ author_summary: obj.authorSummary, channel_summary: obj.channelSummary, message_summary: obj.messageSummary } = save_data);
+// Module 9554 (SavedMessageSortTypes)
+const result = require("set").fileFinishedImporting("modules/saved_messages/SavedMessagesTypes.tsx");
+
+export const SavedMessageSortTypes = { ALL: "ALL", REMINDER: "REMINDER", BOOKMARK: "BOOKMARK" };
+export const savedMessageDataToClient = function savedMessageDataToClient(save_data) {
+  const obj = { channelId: save_data.channel_id, messageId: save_data.message_id, savedAt: null, authorSummary: null, channelSummary: null, messageSummary: null, guildId: null, authorId: null, notes: null, dueAt: null };
+  obj[2] = new Date(save_data.saved_at);
+  ({ author_summary: obj[3], channel_summary: obj[4], message_summary: obj[5] } = save_data);
   let guild_id;
   if (0 !== save_data.guild_id) {
     guild_id = save_data.guild_id;
   }
-  obj.guildId = guild_id;
+  obj[6] = guild_id;
   let author_id;
   if (0 !== save_data.author_id) {
     author_id = save_data.author_id;
   }
-  obj.authorId = author_id;
-  obj.notes = save_data.notes;
+  obj[7] = author_id;
+  obj[8] = save_data.notes;
   let date1;
   if (null != save_data.due_at) {
     const _Date = Date;
     date1 = new Date(save_data.due_at);
   }
-  obj.dueAt = date1;
+  obj[9] = date1;
   return obj;
-}
-const result = require("set").fileFinishedImporting("modules/saved_messages/SavedMessagesTypes.tsx");
-
-export const SavedMessageSortTypes = { ALL: "ALL", REMINDER: "REMINDER", BOOKMARK: "BOOKMARK" };
-export { savedMessageDataToClient };
+};
 export const savedMessageCreateObjectToClient = function savedMessageCreateObjectToClient(body) {
-  const obj = {};
   let messageRecord = null;
   if (null != body.message) {
-    messageRecord = require(4386) /* createMinimalMessageRecord */.createMessageRecord(body.message);
-    const obj2 = require(4386) /* createMinimalMessageRecord */;
+    let obj = require(4409) /* createMinimalMessageRecord */;
+    messageRecord = obj.createMessageRecord(body.message);
   }
-  obj.message = messageRecord;
-  obj.saveData = savedMessageDataToClient(body.save_data);
+  obj = { message: messageRecord, saveData: null };
+  const save_data = body.save_data;
+  obj = { channelId: save_data.channel_id, messageId: save_data.message_id, savedAt: null, authorSummary: null, channelSummary: null, messageSummary: null, guildId: null, authorId: null, notes: null, dueAt: null };
+  obj[2] = new Date(save_data.saved_at);
+  ({ author_summary: obj3[3], channel_summary: obj3[4], message_summary: obj3[5] } = save_data);
+  let guild_id;
+  if (0 !== save_data.guild_id) {
+    guild_id = save_data.guild_id;
+  }
+  obj[6] = guild_id;
+  let author_id;
+  if (0 !== save_data.author_id) {
+    author_id = save_data.author_id;
+  }
+  obj[7] = author_id;
+  obj[8] = save_data.notes;
+  let date1;
+  if (null != save_data.due_at) {
+    const _Date = Date;
+    date1 = new Date(save_data.due_at);
+  }
+  obj[9] = date1;
+  obj[1] = obj;
   return obj;
 };
 export const savedMessageDeleteObjectToClient = function savedMessageDeleteObjectToClient(channelId) {

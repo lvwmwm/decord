@@ -1,127 +1,23 @@
-// Module ID: 11567
-// Function ID: 89944
-// Name: usePowerupsActiveStatuses
-// Dependencies: [1838, 4052, 4054, 4053, 653, 566, 2]
-// Exports: default, isPowerupActiveStatusActive
+// Module ID: 11591
+// Function ID: 11592
+// Name: usePowerupActiveStatus
+// Dependencies: [1862, 4076, 4078, 4077, 676, 589, 2]
+// Exports: default, isPowerupActiveStatusActive, usePowerupsActiveStatuses
 
-// Module 11567 (usePowerupsActiveStatuses)
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import { GAME_SERVER_POWERUP_SKU_ID as closure_4 } from "NewGamesCoachmarkContent";
+// Module 11591 (usePowerupActiveStatus)
+import createGuildRecordFromRust from "createGuildRecordFromRust";
+import calculateAppliedBoosts from "calculateAppliedBoosts";
+import { GAME_SERVER_POWERUP_SKU_ID as closure_4 } from "str11";
 import BoostedGuildTiers from "BoostedGuildTiers";
 import { GuildFeatures } from "ME";
 
-let closure_5;
+let c5;
 let closure_6;
-let closure_7;
-let closure_8;
+let error;
+let metroImportAll;
 const require = arg1;
-function usePowerupsActiveStatuses(guildId, powerups) {
-  const _require = guildId;
-  function getPowerupActiveStatus(skuId) {
-    let isActiveFromLevel;
-    let levelEntitlement;
-    let levelPowerup;
-    if (skuId.skuId === getPowerupActiveStatus) {
-      let obj = {};
-      let hasItem;
-      if (null != stateFromStores) {
-        const features = stateFromStores.features;
-        if (null != features) {
-          hasItem = features.has(outer1_9.GAME_SERVERS);
-        }
-      }
-      if (null != hasItem) {
-        if (hasItem) {
-          let INACTIVE = outer1_6.POWERUP_ACTIVATED;
-        }
-        obj.type = INACTIVE;
-        obj.powerup = skuId;
-        obj.sourceEntitlement = undefined;
-        obj.sourcePowerup = undefined;
-        return obj;
-      }
-      INACTIVE = outer1_6.INACTIVE;
-    } else {
-      if (null != skuId) {
-        if (null != stateFromStores) {
-          if (null != guild) {
-            if (null == outer1_7[skuId.skuId]) {
-              obj = { isActiveFromLevel: false, levelEntitlement: undefined, levelPowerup: undefined };
-            } else {
-              let tmp5;
-              if (null != outer1_8[tmp32]) {
-                const unlockedPowerups = guild.unlockedPowerups;
-                let tmp7;
-                if (null != unlockedPowerups) {
-                  tmp7 = unlockedPowerups[tmp4];
-                }
-                tmp5 = tmp7;
-              }
-              let tmp8;
-              if (null != outer1_8[tmp32]) {
-                const allPowerups = guild.allPowerups;
-                let tmp10;
-                if (null != allPowerups) {
-                  tmp10 = allPowerups[tmp4];
-                }
-                tmp8 = tmp10;
-              }
-              obj = { isActiveFromLevel: stateFromStores.premiumTier >= tmp32, levelEntitlement: tmp5, levelPowerup: tmp8 };
-              const tmp2 = stateFromStores.premiumTier >= tmp32;
-            }
-          }
-          let hasItem1 = _isNativeReflectConstruct;
-          ({ isActiveFromLevel, levelEntitlement, levelPowerup } = obj);
-          if (_isNativeReflectConstruct) {
-            hasItem1 = outer1_5.has(skuId.skuId);
-          }
-          let tmp14;
-          if (null != guild) {
-            const unlockedPowerups2 = guild.unlockedPowerups;
-            if (null != unlockedPowerups2) {
-              tmp14 = unlockedPowerups2[skuId.skuId];
-            }
-          }
-          let tmp16 = null;
-          if (null != tmp14) {
-            tmp16 = tmp14;
-          }
-          let obj1 = { type: outer1_6.INACTIVE, powerup: skuId, sourceEntitlement: undefined, sourcePowerup: undefined };
-          if (isActiveFromLevel) {
-            const obj2 = { type: outer1_6.LEVEL_ACTIVATED, powerup: skuId, sourceEntitlement: levelEntitlement, sourcePowerup: levelPowerup };
-            obj1 = obj2;
-          } else if (hasItem1) {
-            const obj3 = { type: outer1_6.TIER_OVERRIDE_ACTIVATED, powerup: skuId, sourceEntitlement: undefined, sourcePowerup: skuId };
-            obj1 = obj3;
-          } else if (null != tmp16) {
-            const obj4 = { type: outer1_6.POWERUP_ACTIVATED, powerup: skuId, sourceEntitlement: tmp16, sourcePowerup: skuId };
-            obj1 = obj4;
-          }
-          return obj1;
-        }
-      }
-      const obj5 = { isActiveFromLevel: false, levelEntitlement: undefined, levelPowerup: undefined };
-      obj = obj5;
-    }
-  }
-  const items = [_createForOfIteratorHelperLoose];
-  stateFromStores = _require(stateFromStores[5]).useStateFromStores(items, () => guild.getGuild(closure_0));
-  let obj = _require(stateFromStores[5]);
-  const items1 = [_isNativeReflectConstruct];
-  _createForOfIteratorHelperLoose = _require(stateFromStores[5]).useStateFromStores(items1, () => stateForGuild.getStateForGuild(closure_0));
-  let hasItem;
-  if (null != stateFromStores) {
-    let features = stateFromStores.features;
-    if (null != features) {
-      hasItem = features.has(GuildFeatures.PREMIUM_TIER_3_OVERRIDE);
-    }
-  }
-  _isNativeReflectConstruct = null != hasItem && hasItem;
-  return powerups.map((skuId) => getPowerupActiveStatus(skuId));
-}
-({ GUILD_POWERUP_TIER_3_OVERRIDDEN_SKUS: closure_5, PowerupActiveStatusType: closure_6, POWERUPS_INCLUDED_IN_LEVEL: closure_7, BOOSTING_TIER_TO_LEVEL_SKU_ID: closure_8 } = BoostedGuildTiers);
-const result = require("NewGamesCoachmarkContent").fileFinishedImporting("modules/premium/powerups/hooks/usePowerupActiveStatus.tsx");
+({ GUILD_POWERUP_TIER_3_OVERRIDDEN_SKUS: c5, PowerupActiveStatusType: closure_6, POWERUPS_INCLUDED_IN_LEVEL: error, BOOSTING_TIER_TO_LEVEL_SKU_ID: metroImportAll } = BoostedGuildTiers);
+const result = require("str11").fileFinishedImporting("modules/premium/powerups/hooks/usePowerupActiveStatus.tsx");
 
 export default function usePowerupActiveStatus(arg0, arg1) {
   if (null == arg1) {
@@ -129,16 +25,245 @@ export default function usePowerupActiveStatus(arg0, arg1) {
   } else {
     items = [arg1];
   }
-  const tmpResult = usePowerupsActiveStatuses(arg0, items);
-  if (tmpResult.length <= 0) {
-    const obj = { type: constants.INACTIVE, sourceEntitlement: undefined, sourcePowerup: undefined };
+  const _require = arg0;
+  let obj = _require(stateFromStores[5]);
+  const items1 = [createGuildRecordFromRust];
+  stateFromStores = obj.useStateFromStores(items1, () => guild.getGuild(closure_0));
+  const items2 = [flag];
+  createGuildRecordFromRust = _require(stateFromStores[5]).useStateFromStores(items2, () => flag.getStateForGuild(closure_0));
+  flag = undefined;
+  if (stateFromStores != null) {
+    let features = stateFromStores.features;
+    if (features != null) {
+      flag = features.has(GuildFeatures.PREMIUM_TIER_3_OVERRIDE);
+    }
+  }
+  if (flag == null) {
+    flag = false;
+  }
+  const mapped = items.map((skuId) => {
+    let isActiveFromLevel;
+    let levelEntitlement;
+    let levelPowerup;
+    if (skuId.skuId === outer1_4) {
+      let hasItem;
+      if (stateFromStores != null) {
+        const features = stateFromStores.features;
+        if (features != null) {
+          hasItem = features.has(outer1_9.GAME_SERVERS);
+        }
+      }
+      if (hasItem != null) {
+        if (hasItem) {
+          let INACTIVE = outer1_6.POWERUP_ACTIVATED;
+        }
+        let obj = { type: null, powerup: null, sourceEntitlement: "r", sourcePowerup: "isArray" };
+        obj[0] = INACTIVE;
+        obj[1] = skuId;
+      }
+      INACTIVE = outer1_6.INACTIVE;
+    } else {
+      if (null != skuId) {
+        if (null != stateFromStores) {
+          if (null != guild) {
+            if (null == outer1_7[skuId.skuId]) {
+              obj = { isActiveFromLevel: false, levelEntitlement: "Boolean", levelPowerup: "channel" };
+            } else {
+              let tmp4;
+              if (null != outer1_8[tmp22]) {
+                const unlockedPowerups = tmp20.unlockedPowerups;
+                let tmp5;
+                if (unlockedPowerups != null) {
+                  tmp5 = unlockedPowerups[tmp3];
+                }
+                tmp4 = tmp5;
+              }
+              let tmp6;
+              if (null != outer1_8[tmp22]) {
+                const allPowerups = tmp20.allPowerups;
+                let tmp7;
+                if (allPowerups != null) {
+                  tmp7 = allPowerups[tmp3];
+                }
+                tmp6 = tmp7;
+              }
+              obj = { isActiveFromLevel: null, levelEntitlement: null, levelPowerup: null };
+              obj[0] = tmp19.premiumTier >= tmp22;
+              obj[1] = tmp4;
+              obj[2] = tmp6;
+              const tmp = tmp19.premiumTier >= tmp22;
+            }
+          }
+          let hasItem1 = flag;
+          ({ isActiveFromLevel, levelEntitlement, levelPowerup } = obj);
+          if (flag) {
+            hasItem1 = outer1_5.has(skuId.skuId);
+          }
+          let tmp10;
+          if (guild != null) {
+            const unlockedPowerups2 = guild.unlockedPowerups;
+            if (unlockedPowerups2 != null) {
+              tmp10 = unlockedPowerups2[skuId.skuId];
+            }
+          }
+          if (tmp10 == null) {
+            tmp10 = null;
+          }
+          obj = { type: null, powerup: null, sourceEntitlement: "r", sourcePowerup: "isArray" };
+          obj[0] = outer1_6.INACTIVE;
+          obj[1] = skuId;
+          if (isActiveFromLevel) {
+            const obj1 = { type: null, powerup: null, sourceEntitlement: null, sourcePowerup: null };
+            obj1[0] = tmp11.LEVEL_ACTIVATED;
+            obj1[1] = skuId;
+            obj1[2] = levelEntitlement;
+            obj1[3] = levelPowerup;
+            obj = obj1;
+          } else if (hasItem1) {
+            const obj2 = { type: null, powerup: null, sourceEntitlement: "Array", sourcePowerup: "<string:3052339201>" };
+            obj2[0] = tmp11.TIER_OVERRIDE_ACTIVATED;
+            obj2[1] = skuId;
+            obj2[3] = skuId;
+            obj = obj2;
+          } else if (null != tmp10) {
+            const obj3 = { type: null, powerup: null, sourceEntitlement: null, sourcePowerup: null };
+            obj3[0] = tmp11.POWERUP_ACTIVATED;
+            obj3[1] = skuId;
+            obj3[2] = tmp10;
+            obj3[3] = skuId;
+            obj = obj3;
+          }
+          return obj;
+        }
+      }
+      obj = { isActiveFromLevel: false, levelEntitlement: "Boolean", levelPowerup: "channel" };
+    }
+  });
+  if (mapped.length <= 0) {
+    obj = { type: null, sourceEntitlement: "Array", sourcePowerup: "isArray" };
+    obj[0] = constants.INACTIVE;
     let first = obj;
   } else {
-    first = tmpResult[0];
+    first = mapped[0];
   }
   return first;
 };
 export const isPowerupActiveStatusActive = function isPowerupActiveStatusActive(type) {
   return type.type !== constants.INACTIVE;
 };
-export { usePowerupsActiveStatuses };
+export const usePowerupsActiveStatuses = function usePowerupsActiveStatuses(guildId, powerups) {
+  const _require = guildId;
+  const items = [createGuildRecordFromRust];
+  stateFromStores = _require(stateFromStores[5]).useStateFromStores(items, () => guild.getGuild(closure_0));
+  const obj = _require(stateFromStores[5]);
+  const items1 = [flag];
+  createGuildRecordFromRust = _require(stateFromStores[5]).useStateFromStores(items1, () => flag.getStateForGuild(closure_0));
+  flag = undefined;
+  if (stateFromStores != null) {
+    const features = stateFromStores.features;
+    if (features != null) {
+      flag = features.has(GuildFeatures.PREMIUM_TIER_3_OVERRIDE);
+    }
+  }
+  if (flag == null) {
+    flag = false;
+  }
+  return powerups.map((skuId) => {
+    let isActiveFromLevel;
+    let levelEntitlement;
+    let levelPowerup;
+    if (skuId.skuId === outer1_4) {
+      let hasItem;
+      if (stateFromStores != null) {
+        const features = stateFromStores.features;
+        if (features != null) {
+          hasItem = features.has(outer1_9.GAME_SERVERS);
+        }
+      }
+      if (hasItem != null) {
+        if (hasItem) {
+          let INACTIVE = outer1_6.POWERUP_ACTIVATED;
+        }
+        let obj = { type: null, powerup: null, sourceEntitlement: "r", sourcePowerup: "isArray" };
+        obj[0] = INACTIVE;
+        obj[1] = skuId;
+      }
+      INACTIVE = outer1_6.INACTIVE;
+    } else {
+      if (null != skuId) {
+        if (null != stateFromStores) {
+          if (null != guild) {
+            if (null == outer1_7[skuId.skuId]) {
+              obj = { isActiveFromLevel: false, levelEntitlement: "Boolean", levelPowerup: "channel" };
+            } else {
+              let tmp4;
+              if (null != outer1_8[tmp22]) {
+                const unlockedPowerups = tmp20.unlockedPowerups;
+                let tmp5;
+                if (unlockedPowerups != null) {
+                  tmp5 = unlockedPowerups[tmp3];
+                }
+                tmp4 = tmp5;
+              }
+              let tmp6;
+              if (null != outer1_8[tmp22]) {
+                const allPowerups = tmp20.allPowerups;
+                let tmp7;
+                if (allPowerups != null) {
+                  tmp7 = allPowerups[tmp3];
+                }
+                tmp6 = tmp7;
+              }
+              obj = { isActiveFromLevel: null, levelEntitlement: null, levelPowerup: null };
+              obj[0] = tmp19.premiumTier >= tmp22;
+              obj[1] = tmp4;
+              obj[2] = tmp6;
+              const tmp = tmp19.premiumTier >= tmp22;
+            }
+          }
+          let hasItem1 = flag;
+          ({ isActiveFromLevel, levelEntitlement, levelPowerup } = obj);
+          if (flag) {
+            hasItem1 = outer1_5.has(skuId.skuId);
+          }
+          let tmp10;
+          if (guild != null) {
+            const unlockedPowerups2 = guild.unlockedPowerups;
+            if (unlockedPowerups2 != null) {
+              tmp10 = unlockedPowerups2[skuId.skuId];
+            }
+          }
+          if (tmp10 == null) {
+            tmp10 = null;
+          }
+          obj = { type: null, powerup: null, sourceEntitlement: "r", sourcePowerup: "isArray" };
+          obj[0] = outer1_6.INACTIVE;
+          obj[1] = skuId;
+          if (isActiveFromLevel) {
+            const obj1 = { type: null, powerup: null, sourceEntitlement: null, sourcePowerup: null };
+            obj1[0] = tmp11.LEVEL_ACTIVATED;
+            obj1[1] = skuId;
+            obj1[2] = levelEntitlement;
+            obj1[3] = levelPowerup;
+            obj = obj1;
+          } else if (hasItem1) {
+            const obj2 = { type: null, powerup: null, sourceEntitlement: "Array", sourcePowerup: "<string:3052339201>" };
+            obj2[0] = tmp11.TIER_OVERRIDE_ACTIVATED;
+            obj2[1] = skuId;
+            obj2[3] = skuId;
+            obj = obj2;
+          } else if (null != tmp10) {
+            const obj3 = { type: null, powerup: null, sourceEntitlement: null, sourcePowerup: null };
+            obj3[0] = tmp11.POWERUP_ACTIVATED;
+            obj3[1] = skuId;
+            obj3[2] = tmp10;
+            obj3[3] = skuId;
+            obj = obj3;
+          }
+          return obj;
+        }
+      }
+      obj = { isActiveFromLevel: false, levelEntitlement: "Boolean", levelPowerup: "channel" };
+    }
+  });
+};

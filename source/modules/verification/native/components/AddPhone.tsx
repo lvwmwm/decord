@@ -1,226 +1,347 @@
-// Module ID: 9210
-// Function ID: 72081
+// Module ID: 9234
+// Function ID: 9235
 // Name: AddPhone
-// Dependencies: [5, 57, 31, 27, 9168, 1342, 1850, 653, 482, 33, 4165, 689, 566, 9161, 9211, 4064, 4161, 1212, 9212, 9187, 4372, 9213, 1935, 4578, 4506, 9234, 2]
+// Dependencies: [5, 32, 19, 17, 9192, 1366, 1874, 676, 505, 21, 4189, 712, 589, 9185, 9235, 4088, 4185, 1236, 9236, 9211, 4395, 9237, 1959, 4600, 4529, 9258, 2]
 // Exports: default
 
-// Module 9210 (AddPhone)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 9234 (AddPhone)
+import handleRequiredAction from "handleRequiredAction";
 import _slicedToArray from "_slicedToArray";
-import result from "result";
-import get_ActivityIndicator from "get ActivityIndicator";
-import closure_8 from "_isNativeReflectConstruct";
-import closure_9 from "_isNativeReflectConstruct";
-import closure_10 from "_isNativeReflectConstruct";
+import PhoneOrEmailSelectorForceMode from "PhoneOrEmailSelectorForceMode";
+import get_ActivityIndicator from "getSystemLocale";
+import handleSetLocationMetadata from "handleSetLocationMetadata";
+import closure_9 from "handleRequiredAction";
+import mergeGuildAvatar from "mergeGuildAvatar";
 import { UserFlags } from "ME";
 import { NOOP_NULL } from "sum";
-import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import jsxProd from "CountrySelectModal";
+import createCacheKey from "createCacheKey";
 
-let closure_13;
 let closure_14;
 let closure_6;
-let closure_7;
+let error;
+let map1;
 const require = arg1;
-({ View: closure_6, ScrollView: closure_7 } = get_ActivityIndicator);
-({ jsx: closure_13, jsxs: closure_14 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { flex: 1, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW };
-_createForOfIteratorHelperLoose.background = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.container = { padding: 16, flex: 1 };
-_createForOfIteratorHelperLoose.title = { textAlign: "center" };
-_createForOfIteratorHelperLoose.input = { marginTop: 24 };
-_createForOfIteratorHelperLoose.redesignInput = { borderRadius: require("_createForOfIteratorHelperLoose").radii.lg };
-_createForOfIteratorHelperLoose.button = { marginTop: 8 };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-let obj1 = { borderRadius: require("_createForOfIteratorHelperLoose").radii.lg };
-let result = require("result").fileFinishedImporting("modules/verification/native/components/AddPhone.tsx");
+({ View: closure_6, ScrollView: error } = get_ActivityIndicator);
+({ jsx: map1, jsxs: closure_14 } = jsxProd);
+createCacheKey = { background: null, container: null, title: null, input: null, redesignInput: null, button: null };
+createCacheKey = { flex: 1, backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { padding: 16, flex: 1 };
+createCacheKey[2] = { textAlign: "center" };
+createCacheKey[3] = { marginTop: 24 };
+createCacheKey[4] = { borderRadius: require("Themes").radii.lg };
+createCacheKey[5] = { marginTop: 8 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let obj1 = { borderRadius: require("Themes").radii.lg };
+let result = require("noop").fileFinishedImporting("modules/verification/native/components/AddPhone.tsx");
 
 export default function AddPhone(reason) {
   let header;
   let onDeletePhone;
   let require;
+  let tmp13;
+  let tmp14;
   ({ header, onComplete: require, onDeletePhone } = reason);
   reason = reason.reason;
+  let stateFromStores;
   let callback;
   let React;
-  let first1;
+  let first;
   let closure_7;
-  let first2;
+  let first1;
   let closure_9;
-  let closure_10;
+  let mergeGuildAvatar;
   let closure_11;
   let closure_12;
-  function handleSubmit() {
-    return _handleSubmit(...arguments);
+  function _handleSubmit() {
+    const self = this;
+    const tmp = stateFromStores(function*() {
+      if (c5 === 2) {
+        c5 = 3;
+        HermesBuiltin.throwTypeError();
+      } else if (tmp7 === 3) {
+        if (arg0 === 1) {
+          throw arg1;
+        } else if (arg0 === 2) {
+          let obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
+        } else {
+          return { value: "HermesInternal", done: null };
+        }
+      } else {
+        try {
+          c5 = 2;
+          if (0 === c4) {
+            if (arg0 === 1) {
+              c5 = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              c5 = 3;
+              obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            } else {
+              let aPIError = tmp4;
+              let combined = tmp8;
+              combined = undefined;
+              aPIError = undefined;
+              const _HermesInternal = HermesInternal;
+              combined = "" + outer1_6 + outer1_8;
+              outer1_12(true);
+              let c3 = 2;
+              const obj7 = outer1_1(outer1_2[14]);
+              if (c4) {
+                c4 = 4;
+                c5 = 1;
+                const obj1 = { value: null, done: false };
+                obj1[0] = obj7.beginReverifyPhone(combined, outer1_2);
+                return obj1;
+              } else {
+                c4 = 3;
+                c5 = 1;
+                const obj2 = { value: null, done: false };
+                obj2[0] = obj7.beginAddPhone(combined, outer1_2);
+                return obj2;
+              }
+            }
+          } else if (1 === tmp8) {
+            c3 = 0;
+            callback2(false);
+            throw closure_2;
+          } else {
+            if (2 === tmp8) {
+              c3 = 1;
+              aPIError = new outer1_0(outer1_2[15]).APIError(closure_2);
+              callback(aPIError.getAnyErrorMessage());
+              c3 = 0;
+              callback2(false);
+              c5 = 3;
+            } else {
+              if (3 === tmp8) {
+                if (arg0 === 1) {
+                  c5 = 3;
+                  throw arg1;
+                }
+              } else if (arg0 === 1) {
+                c5 = 3;
+                throw arg1;
+              } else if (arg0 === 2) {
+                c3 = 0;
+                callback2(false);
+                c5 = 3;
+                obj = { value: null, done: true };
+                obj[0] = arg1;
+                return obj;
+              }
+              combined(combined);
+              c3 = 1;
+            }
+            c3 = 0;
+            callback2(false);
+            c5 = 3;
+            const obj3 = { value: null, done: true };
+            obj3[0] = arg1;
+            return obj3;
+          }
+        } catch (tmp44) {
+          closure_2 = tmp44;
+          if (tmp5 === c3) {
+            c5 = tmp3;
+            throw tmp44;
+          } else if (tmp2 === tmp46) {
+            c4 = tmp2;
+          } else {
+            c4 = tmp;
+          }
+        }
+      }
+    });
+    const _handleSubmit = tmp;
+    const apply = tmp.apply;
+    if (typeof apply === "unknown") {
+      let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+    } else {
+      applyArgumentsResult = apply(self, arguments);
+    }
+    return applyArgumentsResult;
   }
-  function _handleSubmit(Button, arg1) {
-    // CreateGeneratorClosureLongIndex (0x67)
-    const obj = stateFromStores(tmp);
-    return obj(...arguments);
-  }
-  let tmp = _createForOfIteratorHelperLoose();
+  let tmp = createCacheKey();
   let obj = require(reason[12]);
-  const items = [closure_10];
-  const stateFromStores = obj.useStateFromStores(items, () => currentUser.getCurrentUser());
+  const items = [mergeGuildAvatar];
+  stateFromStores = obj.useStateFromStores(items, () => currentUser.getCurrentUser());
   let obj1 = require(reason[12]);
   const items1 = [closure_9];
   let phone;
   const stateFromStores1 = obj1.useStateFromStores(items1, () => action.getAction());
-  if (null != stateFromStores) {
+  if (stateFromStores != null) {
     phone = stateFromStores.phone;
   }
-  let obj2 = onDeletePhone(reason[13]);
+  let obj2 = onDeletePhone(tmp3[13]);
   const result = obj2.isPhoneReverification(stateFromStores, stateFromStores1);
   callback = result;
-  let tmp6 = null != onDeletePhone && null != phone;
-  if (tmp6) {
+  let tmp8 = null != onDeletePhone && null != phone;
+  if (tmp8) {
     let email;
-    if (null != stateFromStores) {
+    if (stateFromStores != null) {
       email = stateFromStores.email;
     }
-    tmp6 = null != email;
+    tmp8 = null != email;
   }
-  if (tmp6) {
-    tmp6 = !result;
+  if (tmp8) {
+    tmp8 = !result;
   }
-  let obj3 = require(reason[12]);
-  const items2 = [first2];
-  const stateFromStores2 = obj3.useStateFromStores(items2, () => first2.getCountryCode());
-  const tmp9 = callback(stateFromStores2.code.split(" "), 2);
-  const first = tmp9[0];
-  React = tmp11;
-  let str2 = "";
-  if (null != first) {
-    str2 = first;
+  const items2 = [first1];
+  const stateFromStores2 = require(reason[12]).useStateFromStores(items2, () => first1.getCountryCode());
+  let str = stateFromStores2.code;
+  const tmp2Result = require(reason[12]);
+  [tmp13, tmp14] = callback(stateFromStores2.code.split(" "), 2);
+  React = tmp14;
+  let obj4 = React;
+  let str2 = tmp13;
+  if (tmp13 == null) {
+    str2 = "";
   }
-  const tmp13 = callback(React.useState(str2), 2);
-  first1 = tmp13[0];
-  closure_7 = tmp13[1];
+  let tmp11Result = tmp11(React.useState(str2), 2);
+  first = tmp11Result[0];
+  closure_7 = tmp11Result[1];
   if (null != phone) {
-    let str3 = phone.replace(first1, "");
+    let str3 = phone.replace(first, "");
   } else {
-    str3 = "";
-    if (null != tmp11) {
-      str3 = tmp11;
+    str3 = tmp14;
+    if (tmp14 == null) {
+      str3 = "";
     }
   }
-  const tmp15 = callback(React.useState(str3), 2);
-  first2 = tmp15[0];
-  closure_9 = tmp15[1];
-  const tmp17 = callback(React.useState(null), 2);
-  closure_10 = tmp17[1];
-  closure_11 = React.useRef(true);
-  const tmp18 = callback(React.useState(false), 2);
-  closure_12 = tmp18[1];
-  const items3 = [tmp9[1]];
-  const effect = React.useEffect(() => {
+  tmp11Result = tmp11(obj4.useState(str3), 2);
+  first1 = tmp11Result[0];
+  closure_9 = tmp11Result[1];
+  const tmp11Result1 = callback(obj4.useState(null), 2);
+  mergeGuildAvatar = tmp11Result1[1];
+  closure_11 = obj4.useRef(true);
+  const tmp11Result2 = callback(obj4.useState(false), 2);
+  closure_12 = tmp11Result2[1];
+  const items3 = [tmp14];
+  const effect = obj4.useEffect(() => {
     if (ref.current) {
-      ref.current = false;
+      tmp.current = false;
     } else {
-      let str = "";
-      if (null != c5) {
-        str = c5;
+      let str = c5;
+      if (c5 == null) {
+        str = "";
       }
       closure_9(str);
-      const tmp = closure_9;
+      const tmp2 = closure_9;
     }
   }, items3);
-  obj = { style: null, keyboardShouldPersistTaps: "handled", alwaysBounceVertical: false };
-  const items4 = [tmp.background, reason.style];
-  obj.style = items4;
-  obj = { style: tmp.container };
-  if (null != header) {
+  obj = { style: items4, keyboardShouldPersistTaps: "handled", alwaysBounceVertical: false, children: null };
+  items4 = [tmp.background, reason.style];
+  obj = { style: tmp.container, children: null };
+  if (header != null) {
     const items5 = [header, , , ];
-    obj1 = {};
-    ({ input: obj7.style, redesignInput: obj7.textInputStyle } = tmp);
+    obj1 = { style: null, textInputStyle: null, label: null, alpha2: null, countryCode: null, value: null, onChangeText: null, forceMode: null, returnKeyType: "done", onSubmitEditing: null, error: null, onPressCountrySelector: null, autoFocus: true };
+    ({ input: obj8[0], redesignInput: obj8[1] } = tmp);
     if (null != phone) {
       if (!result) {
-        const intl3 = require(reason[17]).intl;
-        let stringResult = intl3.string(require(reason[17]).t.K6R0UP);
+        const intl3 = tmp2(tmp3[17]).intl;
+        let stringResult = intl3.string(tmp2(tmp3[17]).t.K6R0UP);
       }
-      obj1.label = stringResult;
-      obj1.alpha2 = stateFromStores2.alpha2;
-      obj1.countryCode = first;
-      obj1.value = first2;
-      obj1.onChangeText = function onChangeText(arg0, arg1) {
+      function handleSubmit() {
+        const self = this;
+        const apply = _handleSubmit.apply;
+        if (typeof apply === "unknown") {
+          let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+        } else {
+          applyArgumentsResult = apply(self, arguments);
+        }
+        return applyArgumentsResult;
+      }
+      obj1[2] = stringResult;
+      obj1[3] = stateFromStores2.alpha2;
+      obj1[4] = tmp13;
+      obj1[5] = first1;
+      obj1[6] = function onChangeText(arg0, arg1) {
         action(arg0);
-        callback(arg1);
+        callback2(arg1);
       };
-      obj1.forceMode = require(reason[19]).PhoneOrEmailSelectorForceMode.PHONE;
-      obj1.returnKeyType = "done";
-      obj1.onSubmitEditing = handleSubmit;
-      obj1.error = tmp17[0];
-      obj1.onPressCountrySelector = function onPressCountrySelector() {
-        return onDeletePhone(reason[20]).pushLazy(outer1_0(reason[22])(reason[21], reason.paths));
+      obj1[7] = tmp2(tmp3[19]).PhoneOrEmailSelectorForceMode.PHONE;
+      obj1[9] = handleSubmit;
+      obj1[10] = tmp11Result1[0];
+      obj1[11] = function onPressCountrySelector() {
+        return onDeletePhone(reason[20]).pushLazy(callback(reason[22])(reason[21], reason.paths));
       };
-      obj1.autoFocus = true;
-      items5[1] = tmp30(tmp33, obj1);
-      obj2 = { style: tmp.button };
-      obj3 = { variant: "primary" };
-      let str6 = "lg";
-      if (tmp6) {
-        str6 = "md";
+      items5[1] = tmp22(tmp28, obj1);
+      obj2 = { style: null, children: null };
+      obj2[0] = tmp.button;
+      let str5 = "lg";
+      if (tmp8) {
+        str5 = "md";
       }
-      obj3.size = str6;
-      const intl5 = require(reason[17]).intl;
-      obj3.text = intl5.string(require(reason[17]).t.PDTjLN);
-      obj3.onPress = handleSubmit;
-      obj3.loading = tmp18[0];
-      obj2.children = _handleSubmit(require(reason[23]).Button, obj3);
-      items5[2] = _handleSubmit(first1, obj2);
-      let tmp45 = null;
-      if (tmp6) {
-        const obj4 = { style: tmp.button };
-        const obj5 = { variant: "secondary", size: "md" };
-        const intl6 = require(reason[17]).intl;
-        obj5.text = intl6.string(require(reason[17]).t.kYvzoQ);
-        obj5.onPress = function onPress() {
+      let obj3 = { variant: "primary", size: null, text: null, onPress: null, loading: null };
+      obj3[1] = str5;
+      const intl5 = tmp2(tmp3[17]).intl;
+      obj3[2] = intl5.string(tmp2(tmp3[17]).t.PDTjLN);
+      obj3[3] = handleSubmit;
+      obj3[4] = tmp11Result2[0];
+      obj2[1] = tmp22(tmp2(tmp3[23]).Button, obj3);
+      items5[2] = tmp22(tmp25, obj2);
+      let tmp22Result = null;
+      if (tmp8) {
+        obj4 = { style: null, children: null };
+        obj4[0] = tmp.button;
+        const obj5 = { variant: "secondary", size: "md", text: null, onPress: null };
+        const intl6 = tmp2(tmp3[17]).intl;
+        obj5[2] = intl6.string(tmp2(tmp3[17]).t.kYvzoQ);
+        obj5[3] = function onPress() {
+          let obj = stateFromStores;
           if (null != stateFromStores) {
-            if (stateFromStores.hasFlag(ref.MFA_SMS)) {
-              let obj = onDeletePhone(reason[24]);
-              obj = {
-                importer() {
-                      return outer2_0(reason[22])(reason[25], reason.paths).then((arg0) => {
-                        let closure_0 = arg0.default;
-                        return (arg0) => {
-                          const obj = {};
-                          const merged = Object.assign(arg0);
-                          obj["onConfirm"] = null != outer3_1 ? outer3_1 : closure_12;
-                          return _handleSubmit(closure_0, obj);
-                        };
-                      });
+            if (obj.hasFlag(ref.MFA_SMS)) {
+              obj = { importer: null };
+              obj[0] = function importer() {
+                return outer1_0(outer1_2[22])(outer1_2[25], outer1_2.paths).then((arg0) => {
+                  let closure_0 = arg0.default;
+                  return (arg0) => {
+                    const obj = {};
+                    const merged = Object.assign(arg0);
+                    let tmp4 = outer1_1;
+                    if (outer1_1 == null) {
+                      tmp4 = outer2_12;
                     }
+                    obj.onConfirm = tmp4;
+                    return outer2_13(closure_0, obj);
+                  };
+                });
               };
-              obj.openLazy(obj);
-            } else if (null != onDeletePhone) {
-              onDeletePhone();
+              onDeletePhone(reason[24]).openLazy(obj);
+              const obj2 = onDeletePhone(reason[24]);
+            } else if (onDeletePhone != null) {
+              tmp2();
             }
           }
         };
-        obj4.children = _handleSubmit(require(reason[23]).Button, obj5);
-        tmp45 = _handleSubmit(first1, obj4);
+        obj4[1] = tmp22(tmp2(tmp3[23]).Button, obj5);
+        tmp22Result = tmp22(tmp25, obj4);
       }
-      items5[3] = tmp45;
-      obj.children = items5;
-      obj.children = tmp22(tmp23, obj);
-      return tmp20(tmp21, obj);
+      items5[3] = tmp22Result;
+      obj[1] = items5;
+      obj[3] = tmp24(tmp25, obj);
+      return tmp22(tmp23, obj);
     }
-    const intl4 = require(reason[17]).intl;
-    stringResult = intl4.string(require(reason[17]).t["64bX0M"]);
-    tmp30 = _handleSubmit;
+    const intl4 = tmp2(tmp3[17]).intl;
+    stringResult = intl4.string(tmp2(tmp3[17]).t["64bX0M"]);
   } else {
-    const obj6 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary" };
+    const obj6 = { style: null, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: null };
+    obj6[0] = tmp.title;
     if (null != phone) {
       if (!result) {
-        const intl = require(reason[17]).intl;
-        let stringResult1 = intl.string(require(reason[17]).t.WO0zBE);
+        const intl = tmp2(tmp3[17]).intl;
+        let stringResult1 = intl.string(tmp2(tmp3[17]).t.WO0zBE);
       }
-      obj6.children = stringResult1;
-      tmp50(tmp53, obj6);
+      obj6[4] = stringResult1;
+      tmp22Result = tmp22(tmp31, obj6);
     }
-    const intl2 = require(reason[17]).intl;
-    stringResult1 = intl2.string(require(reason[17]).t.hY8QTR);
-    tmp50 = _handleSubmit;
+    const intl2 = tmp2(tmp3[17]).intl;
+    stringResult1 = intl2.string(tmp2(tmp3[17]).t.hY8QTR);
   }
 };

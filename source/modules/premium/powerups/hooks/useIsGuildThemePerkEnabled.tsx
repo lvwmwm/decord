@@ -1,12 +1,12 @@
-// Module ID: 15099
-// Function ID: 114862
+// Module ID: 15132
+// Function ID: 15133
 // Name: useIsGuildThemePerkEnabled
-// Dependencies: [1838, 4052, 653, 566, 4056, 2]
+// Dependencies: [1862, 4076, 676, 589, 4080, 2]
 // Exports: default
 
-// Module 15099 (useIsGuildThemePerkEnabled)
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 15132 (useIsGuildThemePerkEnabled)
+import createGuildRecordFromRust from "createGuildRecordFromRust";
+import calculateAppliedBoosts from "calculateAppliedBoosts";
 import { GuildFeatures } from "ME";
 
 const require = arg1;
@@ -14,31 +14,31 @@ const result = require("ME").fileFinishedImporting("modules/premium/powerups/hoo
 
 export default function useIsGuildThemePerkEnabled(arg0) {
   const _require = arg0;
-  const items = [_createForOfIteratorHelperLoose, _isNativeReflectConstruct];
+  const items = [createGuildRecordFromRust, calculateAppliedBoosts];
   const items1 = [arg0];
-  return _require(566).useStateFromStores(items, () => {
-    let tmp = null != callback;
-    if (tmp) {
-      const guild = outer1_2.getGuild(callback);
+  return _require(589).useStateFromStores(items, () => {
+    let tmp2 = null != callback;
+    if (tmp2) {
+      const guild = outer1_2.getGuild(tmp);
       let hasItem;
-      if (null != guild) {
+      if (guild != null) {
         const features = guild.features;
         hasItem = features.has(outer1_4.GUILD_THEME);
       }
       let tmp7 = true === hasItem;
       if (!tmp7) {
-        const stateForGuild = outer1_3.getStateForGuild(callback);
-        let tmp11;
-        if (null != stateForGuild) {
+        const stateForGuild = outer1_3.getStateForGuild(tmp);
+        let tmp10;
+        if (stateForGuild != null) {
           const unlockedPowerups = stateForGuild.unlockedPowerups;
-          if (null != unlockedPowerups) {
-            tmp11 = unlockedPowerups[callback(undefined, outer1_1[4]).GUILD_POWERUP_GUILD_THEME_SKU_ID];
+          if (unlockedPowerups != null) {
+            tmp10 = unlockedPowerups[callback(undefined, outer1_1[4]).GUILD_POWERUP_GUILD_THEME_SKU_ID];
           }
         }
-        tmp7 = null != tmp11;
+        tmp7 = null != tmp10;
       }
-      tmp = tmp7;
+      tmp2 = tmp7;
     }
-    return tmp;
+    return tmp2;
   }, items1);
 };

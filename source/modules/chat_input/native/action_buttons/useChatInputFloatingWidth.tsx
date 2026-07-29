@@ -1,16 +1,16 @@
-// Module ID: 11395
-// Function ID: 88397
+// Module ID: 11419
+// Function ID: 11420
 // Name: useChatInputFloatingWidth
-// Dependencies: [31, 11131, 4026, 4166, 2]
+// Dependencies: [19, 11155, 4050, 4190, 2]
 // Exports: default
 
-// Module 11395 (useChatInputFloatingWidth)
-import result from "result";
+// Module 11419 (useChatInputFloatingWidth)
+import noop from "noop";
 import { CHAT_INPUT_FLOATING_SLIDE_TIMING_CONFIG as closure_3 } from "TextAreaCta";
 
 const require = arg1;
 let closure_4 = { code: "function useChatInputFloatingWidthTsx1(){const{collapsedWidth,expandedWidth,progress}=this.__closure;return{width:collapsedWidth+(expandedWidth-collapsedWidth)*progress.get()};}" };
-let result = require("module_4026").fileFinishedImporting("modules/chat_input/native/action_buttons/useChatInputFloatingWidth.tsx");
+let result = require("module_4050").fileFinishedImporting("modules/chat_input/native/action_buttons/useChatInputFloatingWidth.tsx");
 
 export default function useChatInputFloatingWidth(expanded) {
   expanded = expanded.expanded;
@@ -32,7 +32,7 @@ export default function useChatInputFloatingWidth(expanded) {
     if (expanded) {
       if (0 > 0) {
         const obj2 = expanded(collapsedWidth[2]);
-        const result = sharedValue.set(obj2.withDelay(num, expanded(collapsedWidth[3]).withTiming(1, num, "respect-motion-settings")));
+        const result = sharedValue.set(obj2.withDelay(tmp2, expanded(collapsedWidth[3]).withTiming(1, num, "respect-motion-settings")));
         const obj3 = expanded(collapsedWidth[3]);
       }
     }
@@ -42,7 +42,7 @@ export default function useChatInputFloatingWidth(expanded) {
     }
     const result1 = sharedValue.set(expanded(collapsedWidth[3]).withTiming(num2, num, "respect-motion-settings"));
   }, items);
-  obj = {};
+  obj = { animatedStyle: null };
   const fn = function p() {
     const diff = expandedWidth - collapsedWidth;
     return { width: collapsedWidth + diff * sharedValue.get() };
@@ -50,6 +50,6 @@ export default function useChatInputFloatingWidth(expanded) {
   fn.__closure = { collapsedWidth, expandedWidth, progress: sharedValue };
   fn.__workletHash = 2289574047387;
   fn.__initData = sharedValue;
-  obj.animatedStyle = expanded(collapsedWidth[2]).useAnimatedStyle(fn);
+  obj[0] = expanded(collapsedWidth[2]).useAnimatedStyle(fn);
   return obj;
 };

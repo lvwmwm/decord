@@ -1,11 +1,10 @@
 // Module ID: 2691
-// Function ID: 24220
+// Function ID: 2692
 // Name: registerAsset
-// Dependencies: [1217]
+// Dependencies: [1241]
 
 // Module 2691 (registerAsset)
 import registerAsset from "registerAsset";
 
-const obj = { __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9jaGVja3BvaW50", scales: [1], hash: "bf8c26cdeac5bb55b75791d6a2edb37f", name: "en-GB.messages.bf8c26cdeac5bb55b75791d6a2edb37f.compiled.messages", type: "jsona" };
 
-export default registerAsset.registerAsset(obj);
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9yZXF1ZXN0X3RvX3N0cmVhbQ==", scales: [1], hash: "f9b25fc549adf8e0dbe606de988d7238", name: "it.messages.f9b25fc549adf8e0dbe606de988d7238.compiled.messages", type: "jsona" });

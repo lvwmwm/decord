@@ -1,11 +1,11 @@
-// Module ID: 4512
-// Function ID: 39714
+// Module ID: 4535
+// Function ID: 4536
 // Name: View
-// Dependencies: [31, 27, 33, 477, 4513, 4547, 2]
+// Dependencies: [19, 17, 21, 500, 4536, 4570, 2]
 // Exports: TransitionGroupOverlayView
 
-// Module 4512 (View)
-import "result";
+// Module 4535 (View)
+import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { jsx } from "jsxProd";
 import set from "set";
@@ -26,21 +26,20 @@ const result = set.fileFinishedImporting("design/void/OverlayView/native/Overlay
 export default FullWindowOverlay;
 export const TransitionGroupOverlayView = function TransitionGroupOverlayView(children) {
   children = children.children;
-  let obj = Object.create(null);
-  obj.children = 0;
-  const merged = Object.assign(children, obj);
-  let tmp3 = null;
+  const merged = Object.assign(children, Object.create(null));
+  let tmp2 = null;
   if (Array.isArray(children)) {
-    tmp3 = null;
+    tmp2 = null;
     if (children.length > 0) {
-      obj = { style: StyleSheet.absoluteFill };
+      let obj = { style: null, children: null };
+      obj[0] = StyleSheet.absoluteFill;
       obj = {};
       const merged1 = Object.assign(merged);
-      obj["children"] = children;
-      obj.children = <View />;
-      tmp3 = <FullWindowOverlay />;
+      obj.children = children;
+      obj[1] = <View />;
+      tmp2 = <FullWindowOverlay />;
     }
   }
-  return tmp3;
+  return tmp2;
 };
 export const NonExpandingOverlayView = View;

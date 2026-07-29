@@ -1,66 +1,40 @@
-// Module ID: 4742
-// Function ID: 41089
-// Name: GuildProductAttachmentUploadTarget
-// Dependencies: [6, 7, 4743, 653, 2]
+// Module ID: 4764
+// Function ID: 4765
+// Name: getCreateAttachmentURL
+// Dependencies: [4765, 676, 2]
 
-// Module 4742 (GuildProductAttachmentUploadTarget)
-import _classCallCheck from "_classCallCheck";
-import _defineProperties from "_defineProperties";
+// Module 4764 (getCreateAttachmentURL)
 import GUILD_PRODUCT_EDIT_MODAL_KEY from "GUILD_PRODUCT_EDIT_MODAL_KEY";
 import { Endpoints } from "ME";
 
-let closure_2;
-let closure_3;
-let closure_4;
-({ MAX_ATTACHMENT_UPLOAD_COUNT: closure_2, MAX_ATTACHMENT_UPLOAD_FILESIZE_BYTES: closure_3, MAX_ATTACHMENT_UPLOAD_TOTAL_FILESIZE_BYTES: closure_4 } = GUILD_PRODUCT_EDIT_MODAL_KEY);
-const tmp3 = (() => {
-  class GuildProductAttachmentUploadTarget {
-    constructor() {
-      tmp = GuildProductAttachmentUploadTarget(this, GuildProductAttachmentUploadTarget);
-      return;
-    }
-  }
-  let obj = {
-    key: "getCreateAttachmentURL",
-    value(arg0) {
-      return outer1_5.GUILD_PRODUCT_CREATE_ATTACHMENT_UPLOAD(arg0);
-    }
-  };
-  const items = [obj, , , , , ];
-  obj = {
-    key: "getDeleteUploadURL",
-    value(arg0) {
-      return outer1_5.MESSAGE_DELETE_UPLOAD(arg0);
-    }
-  };
-  items[1] = obj;
-  obj = {
-    key: "getMaxFileSize",
-    value() {
-      return outer1_3;
-    }
-  };
-  items[2] = obj;
-  items[3] = {
-    key: "getMaxAttachmentsCount",
-    value() {
-      return outer1_2;
-    }
-  };
-  items[4] = {
-    key: "getMaxTotalAttachmentSize",
-    value() {
-      return outer1_4;
-    }
-  };
-  items[5] = {
-    key: "shouldReactNativeCompressUploads",
-    get() {
-      return false;
-    }
-  };
-  return callback(GuildProductAttachmentUploadTarget, items);
-})();
-const result = require("GUILD_PRODUCT_EDIT_MODAL_KEY").fileFinishedImporting("modules/guild_products/GuildProductAttachmentUploadTarget.tsx");
+let c0;
+let closure_1;
+let obj1;
+({ MAX_ATTACHMENT_UPLOAD_COUNT: c0, MAX_ATTACHMENT_UPLOAD_FILESIZE_BYTES: closure_1, MAX_ATTACHMENT_UPLOAD_TOTAL_FILESIZE_BYTES: obj1 } = GUILD_PRODUCT_EDIT_MODAL_KEY);
+const result = require("set").fileFinishedImporting("modules/guild_products/GuildProductAttachmentUploadTarget.tsx");
+class GuildProductAttachmentUploadTarget {
+}
+const prototype = GuildProductAttachmentUploadTarget.prototype;
+prototype["getCreateAttachmentURL"] = function getCreateAttachmentURL(arg0) {
+  return Endpoints.GUILD_PRODUCT_CREATE_ATTACHMENT_UPLOAD(arg0);
+};
+prototype["getDeleteUploadURL"] = function getDeleteUploadURL(arg0) {
+  return Endpoints.MESSAGE_DELETE_UPLOAD(arg0);
+};
+prototype["getMaxFileSize"] = function getMaxFileSize() {
+  return closure_1;
+};
+prototype["getMaxAttachmentsCount"] = function getMaxAttachmentsCount() {
+  return closure_0;
+};
+prototype["getMaxTotalAttachmentSize"] = function getMaxTotalAttachmentSize() {
+  return closure_2;
+};
+Object.defineProperty(prototype, "shouldReactNativeCompressUploads", {
+  get: function shouldReactNativeCompressUploads() {
+    return false;
+  },
+  set: undefined
+});
 
-export default tmp3;
+export default GuildProductAttachmentUploadTarget;

@@ -1,39 +1,39 @@
-// Module ID: 11302
-// Function ID: 87674
+// Module ID: 11326
+// Function ID: 11327
 // Name: CommandListSortButton
-// Dependencies: [31, 27, 11288, 1277, 33, 4165, 689, 1212, 4695, 4133, 11303, 1935, 4161, 8368, 2]
+// Dependencies: [19, 17, 11312, 1301, 21, 4189, 712, 1236, 4717, 4157, 11327, 1959, 4185, 8392, 2]
 // Exports: default
 
-// Module 11302 (CommandListSortButton)
-import "result";
+// Module 11326 (CommandListSortButton)
+import "noop";
 import { View } from "get ActivityIndicator";
 import { CommandListSortOrder } from "CommandListSortOrder";
 import { ANDROID_FOREGROUND_RIPPLE } from "semanticColor";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
 let closure_6;
-let closure_7;
+let error;
 const require = arg1;
-({ jsx: closure_6, jsxs: closure_7 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { overflow: "hidden", borderRadius: require("_createForOfIteratorHelperLoose").radii.xxl };
-_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
-let obj1 = { gap: 4, flexDirection: "row", alignItems: "center", paddingHorizontal: 12, paddingVertical: 4, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_MOD_NORMAL };
-_createForOfIteratorHelperLoose.button = obj1;
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+({ jsx: closure_6, jsxs: error } = jsxProd);
+createCacheKey = { container: null, button: null };
+createCacheKey = { overflow: "hidden", borderRadius: require("Themes").radii.xxl };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { gap: 4, flexDirection: "row", alignItems: "center", paddingHorizontal: 12, paddingVertical: 4, backgroundColor: require("Themes").colors.BACKGROUND_MOD_NORMAL };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+const obj1 = { gap: 4, flexDirection: "row", alignItems: "center", paddingHorizontal: 12, paddingVertical: 4, backgroundColor: require("Themes").colors.BACKGROUND_MOD_NORMAL };
 const result = require("CommandListSortOrder").fileFinishedImporting("modules/app_launcher/native/screens/application_view/app/sort/CommandListSortButton.tsx");
 
 export default function CommandListSortButton(sortOrder) {
   sortOrder = sortOrder.sortOrder;
   const onSortOptionPress = sortOrder.onSortOptionPress;
-  const tmp = _createForOfIteratorHelperLoose();
+  const tmp = createCacheKey();
   if (CommandListSortOrder.POPULAR === sortOrder) {
-    const intl2 = sortOrder(1212).intl;
-    let stringResult = intl2.string(sortOrder(1212).t.SzxiqK);
-  } else if (CommandListSortOrder.ALPHABETICAL === sortOrder) {
-    const intl = sortOrder(1212).intl;
-    stringResult = intl.string(sortOrder(1212).t.m8xsti);
+    const intl2 = sortOrder(1236).intl;
+    let stringResult = intl2.string(sortOrder(1236).t.SzxiqK);
+  } else if (tmp2.ALPHABETICAL === sortOrder) {
+    const intl = sortOrder(1236).intl;
+    stringResult = intl.string(sortOrder(1236).t.m8xsti);
   }
   let obj = {
     accessibilityRole: "button",
@@ -46,18 +46,19 @@ export default function CommandListSortButton(sortOrder) {
         sortOrder,
         onSortOptionPress,
         onClose() {
-          onSortOptionPress(outer2_2[9]).hideActionSheet("CommandListSortActionSheet");
+          callback(table[9]).hideActionSheet("CommandListSortActionSheet");
         }
       };
       obj.openLazy(sortOrder(outer1_2[11])(outer1_2[10], outer1_2.paths), "CommandListSortActionSheet", obj);
-    }
+    },
+    children: null
   };
-  obj = { style: tmp.button };
-  obj = { variant: "text-sm/medium", color: "text-default", children: stringResult };
-  const items = [callback(sortOrder(4161).Text, obj), ];
-  const obj1 = { size: "xs", color: onSortOptionPress(689).colors.TEXT_DEFAULT };
-  items[1] = callback(sortOrder(8368).ChevronSmallDownIcon, obj1);
-  obj.children = items;
-  obj.children = callback2(View, obj);
-  return callback(sortOrder(4695).PressableOpacity, obj);
+  obj = { style: tmp.button, children: null };
+  const items = [callback(sortOrder(4185).Text, { variant: "text-sm/medium", color: "text-default", children: stringResult }), ];
+  obj = { size: "xs", color: null };
+  obj[1] = onSortOptionPress(712).colors.TEXT_DEFAULT;
+  items[1] = callback(sortOrder(8392).ChevronSmallDownIcon, obj);
+  obj[1] = items;
+  obj[5] = callback2(View, obj);
+  return callback(sortOrder(4717).PressableOpacity, obj);
 };

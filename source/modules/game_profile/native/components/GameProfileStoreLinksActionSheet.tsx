@@ -1,50 +1,52 @@
-// Module ID: 8487
-// Function ID: 67458
+// Module ID: 8511
+// Function ID: 8512
 // Name: GameProfileStoreLinksActionSheet
-// Dependencies: [31, 27, 33, 4165, 689, 8459, 3862, 1557, 5533, 5223, 4161, 1212, 4578, 4133, 2]
+// Dependencies: [19, 17, 21, 4189, 712, 8483, 3886, 1581, 5551, 5245, 4185, 1236, 4600, 4157, 2]
 // Exports: default
 
-// Module 8487 (GameProfileStoreLinksActionSheet)
-import "result";
+// Module 8511 (GameProfileStoreLinksActionSheet)
+import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_4;
-let closure_5;
+let c4;
+let c5;
 const require = arg1;
-({ jsx: closure_4, jsxs: closure_5 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { gap: require("_createForOfIteratorHelperLoose").space.PX_8, paddingTop: require("_createForOfIteratorHelperLoose").space.PX_8, paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16, paddingBottom: require("_createForOfIteratorHelperLoose").space.PX_24 };
-_createForOfIteratorHelperLoose.header = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.headerText = { textAlign: "center" };
-_createForOfIteratorHelperLoose.buttons = { gap: require("_createForOfIteratorHelperLoose").space.PX_12 };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-let obj1 = { gap: require("_createForOfIteratorHelperLoose").space.PX_12 };
+({ jsx: c4, jsxs: c5 } = jsxProd);
+createCacheKey = { header: null, headerText: null, buttons: null };
+createCacheKey = { gap: require("Themes").space.PX_8, paddingTop: require("Themes").space.PX_8, paddingHorizontal: require("Themes").space.PX_16, paddingBottom: require("Themes").space.PX_24 };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { textAlign: "center" };
+createCacheKey[2] = { gap: require("Themes").space.PX_12 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let obj1 = { gap: require("Themes").space.PX_12 };
 const result = require("jsxProd").fileFinishedImporting("modules/game_profile/native/components/GameProfileStoreLinksActionSheet.tsx");
 
 export default function GameProfileStoreLinksActionSheet(gameName) {
   let require;
   let websiteButtons;
   ({ websiteButtons, trackAction: require } = gameName);
-  const tmp = _createForOfIteratorHelperLoose();
-  importDefault = importDefault(8459)(importDefault(3862).openURL);
-  let obj = {};
-  obj = {};
-  obj = { paddingBottom: importDefault(1557)().bottom + importDefault(689).space.PX_16 };
-  obj.contentContainerStyle = obj;
-  const obj1 = { style: tmp.header };
-  const obj2 = { variant: "heading-lg/semibold", color: "mobile-text-heading-primary", style: tmp.headerText };
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj2.children = intl.string(require(1212) /* getSystemLocale */.t["/4gj6r"]);
-  const items = [callback(require(4161) /* Text */.Text, obj2), ];
-  const obj3 = { variant: "text-md/medium", color: "text-subtle", style: tmp.headerText };
-  const intl2 = require(1212) /* getSystemLocale */.intl;
-  obj3.children = intl2.format(require(1212) /* getSystemLocale */.t["0acM2Y"], { gameName: gameName.gameName });
-  items[1] = callback(require(4161) /* Text */.Text, obj3);
-  obj1.children = items;
+  let importDefault;
+  const tmp = createCacheKey();
+  importDefault = importDefault(8483)(importDefault(3886).openURL);
+  let obj = { children: null };
+  obj = { contentContainerStyle: null, children: null };
+  obj = { paddingBottom: null };
+  obj[0] = importDefault(1581)().bottom + importDefault(712).space.PX_16;
+  obj[0] = obj;
+  const obj1 = { style: tmp.header, children: null };
+  const obj2 = { variant: "heading-lg/semibold", color: "mobile-text-heading-primary", style: tmp.headerText, children: null };
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj2[3] = intl.string(require(1236) /* getSystemLocale */.t["/4gj6r"]);
+  const items = [callback(require(4185) /* Text */.Text, obj2), ];
+  const obj3 = { variant: "text-md/medium", color: "text-subtle", style: tmp.headerText, children: null };
+  const intl2 = require(1236) /* getSystemLocale */.intl;
+  obj3[3] = intl2.format(require(1236) /* getSystemLocale */.t["0acM2Y"], { gameName: gameName.gameName });
+  items[1] = callback(require(4185) /* Text */.Text, obj3);
+  obj1[1] = items;
   const items1 = [callback2(View, obj1), ];
-  const tmp2 = importDefault(8459);
+  const tmp2 = importDefault(8483);
   items1[1] = callback(View, {
     style: tmp.buttons,
     children: websiteButtons.map((url) => {
@@ -66,8 +68,8 @@ export default function GameProfileStoreLinksActionSheet(gameName) {
       }, url);
     })
   });
-  obj.children = items1;
-  obj.children = callback2(require(5223) /* BottomSheetModal */.BottomSheetScrollView, obj);
-  return callback(require(5533) /* ActionSheet */.ActionSheet, obj);
+  obj[1] = items1;
+  obj[0] = callback2(require(5245) /* BottomSheetModal */.BottomSheetScrollView, obj);
+  return callback(require(5551) /* ActionSheet */.ActionSheet, obj);
 };
 export const ACTION_SHEET_KEY = "game-profile-store-links";

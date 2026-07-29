@@ -1,36 +1,36 @@
-// Module ID: 14620
-// Function ID: 111414
+// Module ID: 14645
+// Function ID: 14646
 // Name: route
-// Dependencies: [8869, 7733, 653, 566, 14621, 1212, 10099, 14622, 2]
+// Dependencies: [8893, 7756, 676, 589, 14646, 1236, 10120, 14647, 2]
 
-// Module 14620 (route)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 14645 (route)
+import items from "items";
 import createToggle from "createToggle";
 
 const require = arg1;
 createToggle = {
   useTitle() {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(require(1212) /* getSystemLocale */.t.x8U2eC);
+    const intl = require(1236) /* getSystemLocale */.intl;
+    return intl.string(require(1236) /* getSystemLocale */.t.x8U2eC);
   },
   useDescription: function useSecureFramesEncryptionDescription() {
-    let obj = require(14621) /* useSecureFramesVerifiedUserIds */;
+    let obj = require(14646) /* useSecureFramesVerifiedUserIds */;
     const secureFramesVerifiedUserIds = obj.useSecureFramesVerifiedUserIds();
-    const intl = require(1212) /* getSystemLocale */.intl;
+    const intl = require(1236) /* getSystemLocale */.intl;
     obj = { count: secureFramesVerifiedUserIds.length };
-    return intl.formatToPlainString(require(1212) /* getSystemLocale */.t["6vrePS"], obj);
+    return intl.formatToPlainString(require(1236) /* getSystemLocale */.t["6vrePS"], obj);
   },
   parent: require("MobileSetting").MobileSetting.DATA_AND_PRIVACY,
   usePredicate: function useSecureFramesPersistentCodesValue() {
-    const items = [_isNativeReflectConstruct];
-    return require(566) /* initialize */.useStateFromStores(items, () => outer1_2.getPersistentCodesEnabled());
+    const items = [items];
+    return require(589) /* initialize */.useStateFromStores(items, () => persistentCodesEnabled.getPersistentCodesEnabled());
   },
   screen: createToggle
 };
 createToggle = {
   route: require("ME").UserSettingsSections.SECURE_FRAMES,
   getComponent() {
-    return require(14622) /* UserListItem */.default;
+    return require(14647) /* UserListItem */.default;
   }
 };
 createToggle = createToggle.createRoute(createToggle);

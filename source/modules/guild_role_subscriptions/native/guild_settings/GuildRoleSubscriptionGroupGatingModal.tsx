@@ -1,32 +1,31 @@
-// Module ID: 16548
-// Function ID: 128807
+// Module ID: 16583
+// Function ID: 16584
 // Name: GuildRoleSubscriptionGroupGatingModal
-// Dependencies: [57, 31, 16534, 14200, 33, 16538, 1212, 16528, 2]
+// Dependencies: [32, 19, 16569, 14222, 21, 16573, 1236, 16563, 2]
 // Exports: default
 
-// Module 16548 (GuildRoleSubscriptionGroupGatingModal)
+// Module 16583 (GuildRoleSubscriptionGroupGatingModal)
 import _slicedToArray from "_slicedToArray";
-import "result";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import "noop";
+import usePriceTiers from "usePriceTiers";
 import { GuildRoleSubscriptionsTierScenes as closure_5 } from "MAX_SUBSCRIPTION_TIERS";
 import { jsx } from "jsxProd";
 
 const require = arg1;
-const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/guild_role_subscriptions/native/guild_settings/GuildRoleSubscriptionGroupGatingModal.tsx");
+const result = require("usePriceTiers").fileFinishedImporting("modules/guild_role_subscriptions/native/guild_settings/GuildRoleSubscriptionGroupGatingModal.tsx");
 
 export default function GuildRoleSubscriptionGroupGatingModal(arg0) {
   let tmp2;
   let tmp3;
-  [tmp2, tmp3] = callback(_createForOfIteratorHelperLoose.useGroupIsFullGateState(), 2);
-  const obj = {};
-  const tmp = callback(_createForOfIteratorHelperLoose.useGroupIsFullGateState(), 2);
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj.title = intl.string(require(1212) /* getSystemLocale */.t.N38nNP);
-  const intl2 = require(1212) /* getSystemLocale */.intl;
-  obj.description = intl2.string(require(1212) /* getSystemLocale */.t.csJWVI);
-  obj.canProceedToNextStep = true;
-  obj.nextStep = constants.GROUP;
+  [tmp2, tmp3] = callback(usePriceTiers.useGroupIsFullGateState(), 2);
+  const obj = { title: null, description: null, canProceedToNextStep: true, nextStep: null };
+  const tmp = callback(usePriceTiers.useGroupIsFullGateState(), 2);
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj[0] = intl.string(require(1236) /* getSystemLocale */.t.N38nNP);
+  const intl2 = require(1236) /* getSystemLocale */.intl;
+  obj[1] = intl2.string(require(1236) /* getSystemLocale */.t.csJWVI);
+  obj[3] = constants.GROUP;
   const merged = Object.assign(arg0);
-  obj["children"] = jsx(importDefault(16528), { isFullServerGating: tmp2, onChange: tmp3 });
-  return jsx(importDefault(16538), {});
+  obj.children = jsx(importDefault(16563), { isFullServerGating: tmp2, onChange: tmp3 });
+  return jsx(importDefault(16573), { title: null, description: null, canProceedToNextStep: true, nextStep: null });
 };

@@ -1,44 +1,354 @@
-// Module ID: 4596
-// Function ID: 40084
-// Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 31, 27, 33, 4165, 689, 1273, 4597, 4050, 4574, 4161, 1212, 4578, 4695, 4697, 3877, 1450, 4698, 2]
+// Module ID: 4618
+// Function ID: 4619
+// Name: componentDidMount
+// Dependencies: [19, 17, 21, 4189, 712, 1297, 3901, 4619, 4074, 4596, 4185, 1236, 4600, 4717, 4719, 1474, 4720, 2]
+// Exports: getAlertButtonVariant
 
-// Module 4596 (_isNativeReflectConstruct)
-import getActivityIndicator from "get ActivityIndicator";
-import closure_5 from "jsxProd";
-import getSystemLocale from "getSystemLocale";
-import PressableBase from "PressableBase";
-import getThemeMixColor from "getThemeMixColor";
-import importAllResult from "result";
-import get_ActivityIndicator from "get ActivityIndicator";
+// Module 4618 (componentDidMount)
+import importAllResult from "noop";
+import get_ActivityIndicator from "set";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_10;
-let closure_11;
-let closure_12;
-let closure_13;
-let closure_14;
-const require = arg1;
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
+let StyleSheet;
+let c5;
+let c9;
+let closure_6;
+let error;
+let metroImportAll;
+let require = arg1;
+let c4 = importAllResult;
+({ View: c5, ScrollView: closure_6, StyleSheet } = get_ActivityIndicator);
+({ jsx: error, jsxs: metroImportAll, Fragment: c9 } = jsxProd);
+let obj = { alert: null, titleText: null, divider: null, body: null, buttons: null, cancelButton: null, secondaryConfirm: null, gradient: null };
+obj = { borderRadius: require("Themes").radii.sm, padding: 16, backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW };
+obj[0] = obj;
+createCacheKey = { marginBottom: 16, color: require("Themes").colors.MOBILE_TEXT_HEADING_PRIMARY };
+obj[1] = createCacheKey;
+obj[2] = { height: StyleSheet.hairlineWidth, backgroundColor: require("Themes").colors.BORDER_SUBTLE };
+let obj2 = { height: StyleSheet.hairlineWidth, backgroundColor: require("Themes").colors.BORDER_SUBTLE };
+obj[3] = { marginTop: 16, color: require("Themes").colors.TEXT_STRONG };
+obj[4] = { marginTop: 24 };
+obj[5] = { marginTop: 8 };
+obj[6] = { marginTop: 16, alignSelf: "center" };
+let obj3 = { marginTop: 16, color: require("Themes").colors.TEXT_STRONG };
+obj[7] = { borderRadius: require("Themes").radii.sm };
+let closure_10 = createCacheKey.createLegacyClassComponentStyles(obj);
+const PureComponent = importAllResult.PureComponent;
+class Alert extends PureComponent {
+  constructor() {
+    applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
+    closure_0 = applyArgumentsResult;
+    applyArgumentsResult.titleRef = __esModule.createRef();
+    applyArgumentsResult.state = { confirming: false };
+    obj = require("createRules");
+    applyArgumentsResult.renderContent = obj.getParser();
+    timeout = new require("start").Timeout();
+    applyArgumentsResult.timeout = timeout;
+    timeout1 = new require("start").Timeout();
+    applyArgumentsResult.focusTimeout = timeout1;
+    applyArgumentsResult.handleConfirm = function handleConfirm() {
+      let autoCloseOnConfirm;
+      let onClose;
+      let onConfirm;
+      if (!applyArgumentsResult.state.confirming) {
+        ({ onClose, onConfirm, autoCloseOnConfirm } = obj.props);
+        obj.setState({ confirming: true });
+        const timeout = obj.timeout;
+        timeout.start(500, () => {
+          state.setState({ confirming: false });
+        });
+        if (autoCloseOnConfirm) {
+          if (onClose != null) {
+            onClose();
+          }
+        }
+        if (onConfirm != null) {
+          onConfirm();
+        }
+      }
+    };
+    applyArgumentsResult.handleCancel = function handleCancel() {
+      let onCancel;
+      let onClose;
+      ({ onClose, onCancel } = applyArgumentsResult.props);
+      if (onCancel != null) {
+        onCancel();
+      }
+      if (onClose != null) {
+        onClose();
+      }
+    };
+    applyArgumentsResult.handleSecondaryConfirm = function handleSecondaryConfirm() {
+      let onClose;
+      let onConfirmSecondary;
+      ({ onClose, onConfirmSecondary } = applyArgumentsResult.props);
+      if (onClose != null) {
+        onClose();
+      }
+      if (onConfirmSecondary != null) {
+        onConfirmSecondary();
+      }
+    };
+    return applyArgumentsResult;
   }
-  const result = _isNativeReflectConstruct();
 }
-function getAlertButtonVariant(confirmColor) {
-  if (require(1273) /* Button */.ButtonColors.GREEN === confirmColor) {
+const prototype = Alert.prototype;
+prototype["componentDidMount"] = function componentDidMount() {
+  const self = this;
+  if (null != this.titleRef.current) {
+    const _setImmediate = setImmediate;
+    setImmediate(() => {
+      const focusTimeout = self.focusTimeout;
+      focusTimeout.start(300, () => {
+        let obj = outer1_0(outer1_3[9]);
+        obj = { ref: titleRef.titleRef };
+        const result = obj.setAccessibilityFocus(obj);
+      });
+    });
+  }
+};
+prototype["componentWillUnmount"] = function componentWillUnmount() {
+  const timeout = this.timeout;
+  timeout.stop();
+  const focusTimeout = this.focusTimeout;
+  focusTimeout.stop();
+};
+prototype["componentDidUpdate"] = function componentDidUpdate() {
+  const self = this;
+  const confirming = this.props.confirming;
+  if (null != confirming) {
+    const timeout = self.timeout;
+    timeout.stop();
+    const obj = { confirming: null };
+    obj[0] = confirming;
+    self.setState(obj);
+  }
+};
+prototype["renderHeader"] = function renderHeader() {
+  const self = this;
+  const tmp = callback3(this.context);
+  const title = this.props.title;
+  let tmp3Result = null;
+  if (null != title) {
+    tmp3Result = null;
+    if ("" !== title) {
+      let obj = { ref: null, accessible: true, accessibilityRole: "header", variant: "heading-md/extrabold", color: "text-default", style: null, children: null };
+      obj[0] = self.titleRef;
+      obj[5] = tmp.titleText;
+      let renderContentResult = title;
+      if (typeof title !== "init") {
+        renderContentResult = self.renderContent(title);
+      }
+      obj = { children: null };
+      obj[6] = renderContentResult;
+      const items = [closure_7(require(4185) /* Text */.Text, obj), ];
+      obj = { style: null };
+      obj[0] = tmp.divider;
+      items[1] = closure_7(closure_5, obj);
+      obj[0] = items;
+      tmp3Result = closure_8(tmp4, obj);
+      const tmp3 = closure_8;
+    }
+  }
+  return tmp3Result;
+};
+prototype["renderBody"] = function renderBody() {
+  const self = this;
+  const props = this.props;
+  const body = props.body;
+  let tmp5Result = null;
+  if (null != body) {
+    let obj = { style: null, children: null };
+    obj = { maxHeight: null };
+    obj[0] = self.props.contentHeight;
+    obj[0] = obj;
+    obj = { variant: "text-md/normal", style: null, children: null };
+    obj[1] = tmp.body;
+    let renderContentResult = body;
+    if (typeof body !== "init") {
+      renderContentResult = self.renderContent(body);
+    }
+    obj[2] = renderContentResult;
+    obj[1] = closure_7(require(4185) /* Text */.Text, obj);
+    tmp5Result = tmp5(closure_6, obj);
+    const tmp6 = closure_6;
+  }
+  const children = [tmp5Result, props.children];
+  return closure_8(closure_9, { children });
+};
+prototype["renderButtons"] = function renderButtons() {
+  let cancelText;
+  let confirmColor;
+  let confirmText;
+  let isConfirmButtonDisabled;
+  let renderConfirmButton;
+  let renderConfirmIcon;
+  let renderConfirmRightIcon;
+  let secondaryConfirmText;
+  const self = this;
+  const tmp = callback3(this.context);
+  const props = this.props;
+  ({ cancelText, confirmText } = props);
+  if (undefined === confirmText) {
+    const intl = require(1236) /* getSystemLocale */.intl;
+    confirmText = intl.string(require(1236) /* getSystemLocale */.t.BddRzS);
+  }
+  ({ confirmColor, secondaryConfirmText, renderConfirmIcon, renderConfirmRightIcon, renderConfirmButton, isConfirmButtonDisabled } = props);
+  let tmp15Result = null;
+  if (!props.noDefaultButtons) {
+    let tmp6;
+    if (null != cancelText) {
+      let obj = { style: null, children: null };
+      obj[0] = tmp.cancelButton;
+      obj = { variant: "secondary", onPress: null, text: null };
+      obj[1] = self.handleCancel;
+      obj[2] = cancelText;
+      obj[1] = callback(require(4600) /* Button */.Button, obj);
+      tmp6 = callback(closure_5, obj);
+    }
+    let tmp11;
+    if (null != secondaryConfirmText) {
+      obj = { accessibilityRole: "button", style: null, onPress: null, children: null };
+      obj[1] = tmp.secondaryConfirm;
+      obj[2] = self.handleSecondaryConfirm;
+      const obj1 = { variant: "text-sm/semibold", color: "text-link", children: null };
+      obj1[2] = secondaryConfirmText;
+      obj[3] = callback(require(4185) /* Text */.Text, obj1);
+      tmp11 = callback(require(4717) /* PressableBase */.PressableOpacity, obj);
+    }
+    const obj2 = { style: null, children: null };
+    obj2[0] = tmp.buttons;
+    let renderConfirmButtonResult;
+    if (renderConfirmButton != null) {
+      renderConfirmButtonResult = renderConfirmButton();
+    }
+    if (renderConfirmButtonResult == null) {
+      let str = "active";
+      if (require(1297) /* Button */.ButtonColors.GREEN !== confirmColor) {
+        str = "destructive";
+        if (tmp21(1297).ButtonColors.RED !== confirmColor) {
+          str = "secondary";
+          if (tmp21(1297).ButtonColors.GREY !== confirmColor) {
+            str = "secondary";
+            if (tmp21(1297).ButtonColors.LIGHTGREY !== confirmColor) {
+              str = "secondary";
+              if (tmp21(1297).ButtonColors.TRANSPARENT !== confirmColor) {
+                str = "primary";
+                if (tmp21(1297).ButtonColors.WHITE === confirmColor) {
+                  str = "primary-overlay";
+                }
+              }
+            }
+          }
+        }
+      }
+      const obj3 = { variant: null, onPress: null, text: null, loading: null, disabled: null, icon: null, iconPosition: null };
+      obj3[0] = str;
+      obj3[1] = self.handleConfirm;
+      obj3[2] = confirmText;
+      obj3[3] = tmp4;
+      if (isConfirmButtonDisabled == null) {
+        isConfirmButtonDisabled = false;
+      }
+      obj3[4] = isConfirmButtonDisabled;
+      let renderConfirmIconResult;
+      if (renderConfirmIcon != null) {
+        renderConfirmIconResult = renderConfirmIcon();
+      }
+      if (renderConfirmIconResult == null) {
+        let result;
+        if (renderConfirmRightIcon != null) {
+          result = renderConfirmRightIcon();
+        }
+        renderConfirmIconResult = result;
+      }
+      obj3[5] = renderConfirmIconResult;
+      let str2 = "start";
+      if (null == renderConfirmIcon) {
+        let str3;
+        if (null != renderConfirmRightIcon) {
+          str3 = "end";
+        }
+        str2 = str3;
+      }
+      obj3[6] = str2;
+      renderConfirmButtonResult = callback(require(4600) /* Button */.Button, obj3);
+      const tmp20 = callback;
+    }
+    const items = [renderConfirmButtonResult, tmp6, tmp11];
+    obj2[1] = items;
+    tmp15Result = closure_8(closure_5, obj2);
+    const tmp15 = closure_8;
+    const tmp16 = closure_5;
+  }
+  return tmp15Result;
+};
+prototype["renderFooter"] = function renderFooter() {
+  const footer = this.props.footer;
+  let tmp = null;
+  if (null != footer) {
+    const obj = { children: null };
+    obj[0] = footer;
+    tmp = callback(closure_5, obj);
+  }
+  return tmp;
+};
+prototype["render"] = function render() {
+  let isLandscape;
+  let onClose;
+  let style;
+  const tmp = callback3(this.context);
+  const props = this.props;
+  const width = props.width;
+  let obj = { children: null };
+  ({ style, isLandscape, onClose } = props);
+  obj = { absolute: true, componentStyles: tmp.gradient };
+  const items = [callback(importDefault(4719), obj), ];
+  obj = { onAccessibilityEscape: onClose, style: items1, children: null };
+  items1 = [tmp.alert, style, { width }];
+  const items2 = [this.renderHeader(), this.renderBody(), this.renderButtons(), this.renderFooter()];
+  obj[2] = items2;
+  items[1] = callback2(closure_5, obj);
+  obj[0] = items;
+  const tmp3 = callback2(closure_9, obj);
+  let tmp2Result = tmp3;
+  if (isLandscape) {
+    const obj1 = { style: null, children: null };
+    const obj2 = { maxHeight: null };
+    obj2[0] = width;
+    obj1[0] = obj2;
+    obj1[1] = tmp3;
+    tmp2Result = callback(closure_6, obj1);
+  }
+  return tmp2Result;
+};
+Alert.contextType = require("ManaContext").ThemeContext;
+const obj4 = { borderRadius: require("Themes").radii.sm };
+Alert.defaultProps = { confirmColor: require("Button").ButtonColors.BRAND, autoCloseOnConfirm: true };
+const memoResult = importAllResult.memo((arg0) => {
+  const size = importDefault(1474)();
+  let obj = require(4720) /* getIsScreenLandscape */;
+  const isScreenLandscape = obj.useIsScreenLandscape();
+  obj = { width: Math.min(0.9 * Math.min(size.width, size.height), 400), contentHeight: 0.7 * size.height, isLandscape: isScreenLandscape };
+  const merged = Object.assign(arg0);
+  return callback(Alert, obj);
+});
+memoResult.Colors = require("Button").ButtonColors;
+const obj5 = { confirmColor: require("Button").ButtonColors.BRAND, autoCloseOnConfirm: true };
+let result = require("jsxProd").fileFinishedImporting("components_native/common/Alert.tsx");
+
+export default memoResult;
+export const getAlertButtonVariant = function getAlertButtonVariant(confirmColor) {
+  if (require(1297) /* Button */.ButtonColors.GREEN === confirmColor) {
     return "active";
-  } else if (require(1273) /* Button */.ButtonColors.RED === confirmColor) {
+  } else if (tmp(1297).ButtonColors.RED === confirmColor) {
     return "destructive";
   } else {
-    if (require(1273) /* Button */.ButtonColors.GREY !== confirmColor) {
-      if (require(1273) /* Button */.ButtonColors.LIGHTGREY !== confirmColor) {
-        if (require(1273) /* Button */.ButtonColors.TRANSPARENT !== confirmColor) {
-          if (require(1273) /* Button */.ButtonColors.WHITE === confirmColor) {
+    if (tmp(1297).ButtonColors.GREY !== confirmColor) {
+      if (tmp(1297).ButtonColors.LIGHTGREY !== confirmColor) {
+        if (tmp(1297).ButtonColors.TRANSPARENT !== confirmColor) {
+          if (tmp(1297).ButtonColors.WHITE === confirmColor) {
             return "primary-overlay";
           } else {
             return "primary";
@@ -48,336 +358,4 @@ function getAlertButtonVariant(confirmColor) {
     }
     return "secondary";
   }
-}
-({ View: closure_10, ScrollView: closure_11 } = get_ActivityIndicator);
-({ jsx: closure_12, jsxs: closure_13, Fragment: closure_14 } = jsxProd);
-let obj = {};
-obj = { borderRadius: require("_createForOfIteratorHelperLoose").radii.sm, padding: 16, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW };
-obj.alert = obj;
-_createForOfIteratorHelperLoose = { marginBottom: 16, color: require("_createForOfIteratorHelperLoose").colors.MOBILE_TEXT_HEADING_PRIMARY };
-obj.titleText = _createForOfIteratorHelperLoose;
-obj.divider = { height: get_ActivityIndicator.StyleSheet.hairlineWidth, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BORDER_SUBTLE };
-let obj2 = { height: get_ActivityIndicator.StyleSheet.hairlineWidth, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BORDER_SUBTLE };
-obj.body = { marginTop: 16, color: require("_createForOfIteratorHelperLoose").colors.TEXT_STRONG };
-obj.buttons = { marginTop: 24 };
-obj.cancelButton = { marginTop: 8 };
-obj.secondaryConfirm = { marginTop: 16, alignSelf: "center" };
-let obj3 = { marginTop: 16, color: require("_createForOfIteratorHelperLoose").colors.TEXT_STRONG };
-obj.gradient = { borderRadius: require("_createForOfIteratorHelperLoose").radii.sm };
-let closure_15 = _createForOfIteratorHelperLoose.createLegacyClassComponentStyles(obj);
-const tmp4 = ((PureComponent) => {
-  class Alert {
-    constructor(arg0) {
-      self = this;
-      items = [...arguments];
-      tmp = outer1_4(this, apply);
-      items1 = [...items];
-      obj = outer1_7(apply);
-      tmp2 = outer1_6;
-      if (outer1_17()) {
-        tmp4 = globalThis;
-        _Reflect = Reflect;
-        tmp5 = outer1_7;
-        constructResult = Reflect.construct(obj, items1, outer1_7(self).constructor);
-      } else {
-        constructResult = obj.apply(self, items1);
-      }
-      tmp2Result = tmp2(self, constructResult);
-      apply = tmp2Result;
-      tmp2Result.titleRef = outer1_9.createRef();
-      tmp2Result.state = { confirming: false };
-      obj2 = outer1_2(outer1_3[11]);
-      tmp2Result.renderContent = obj2.getParser();
-      timeout = new Alert(outer1_3[12]).Timeout();
-      tmp2Result.timeout = timeout;
-      timeout1 = new Alert(outer1_3[12]).Timeout();
-      tmp2Result.focusTimeout = timeout1;
-      tmp2Result.handleConfirm = () => {
-        let onClose;
-        let onConfirm;
-        if (!tmp2Result.state.confirming) {
-          const props = tmp2Result.props;
-          ({ onClose, onConfirm } = props);
-          const obj = { confirming: true };
-          tmp2Result.setState(obj);
-          const timeout = tmp2Result.timeout;
-          timeout.start(500, () => {
-            outer1_0.setState({ confirming: false });
-          });
-          if (props.autoCloseOnConfirm) {
-            if (null != onClose) {
-              onClose();
-            }
-          }
-          if (null != onConfirm) {
-            onConfirm();
-          }
-        }
-      };
-      tmp2Result.handleCancel = () => {
-        let onCancel;
-        let onClose;
-        ({ onClose, onCancel } = tmp2Result.props);
-        if (null != onCancel) {
-          onCancel();
-        }
-        if (null != onClose) {
-          onClose();
-        }
-      };
-      tmp2Result.handleSecondaryConfirm = () => {
-        let onClose;
-        let onConfirmSecondary;
-        ({ onClose, onConfirmSecondary } = tmp2Result.props);
-        if (null != onClose) {
-          onClose();
-        }
-        if (null != onConfirmSecondary) {
-          onConfirmSecondary();
-        }
-      };
-      return tmp2Result;
-    }
-  }
-  callback2(Alert, PureComponent);
-  let obj = {
-    key: "componentDidMount",
-    value() {
-      const self = this;
-      if (null != this.titleRef.current) {
-        const _setImmediate = setImmediate;
-        setImmediate(() => {
-          const focusTimeout = self.focusTimeout;
-          focusTimeout.start(300, () => {
-            let obj = Alert(outer3_3[13]);
-            obj = { ref: outer1_0.titleRef };
-            const result = obj.setAccessibilityFocus(obj);
-          });
-        });
-      }
-    }
-  };
-  let items = [obj, , , , , , , ];
-  obj = {
-    key: "componentWillUnmount",
-    value() {
-      const timeout = this.timeout;
-      timeout.stop();
-      const focusTimeout = this.focusTimeout;
-      focusTimeout.stop();
-    }
-  };
-  items[1] = obj;
-  obj = {
-    key: "componentDidUpdate",
-    value() {
-      const self = this;
-      const confirming = this.props.confirming;
-      if (null != confirming) {
-        const timeout = self.timeout;
-        timeout.stop();
-        const obj = { confirming };
-        self.setState(obj);
-      }
-    }
-  };
-  items[2] = obj;
-  items[3] = {
-    key: "renderHeader",
-    value() {
-      const self = this;
-      const tmp = outer1_15(this.context);
-      const title = this.props.title;
-      let tmp6Result = null;
-      if (null != title) {
-        tmp6Result = null;
-        if ("" !== title) {
-          let obj = {};
-          obj = { ref: self.titleRef, accessible: true, accessibilityRole: "header", variant: "heading-md/extrabold", color: "text-default", style: tmp.titleText };
-          let renderContentResult = title;
-          if ("string" === typeof title) {
-            renderContentResult = self.renderContent(title);
-          }
-          obj.children = renderContentResult;
-          const items = [outer1_12(Alert(outer1_3[14]).Text, obj), ];
-          obj = { style: tmp.divider };
-          items[1] = outer1_12(outer1_10, obj);
-          obj.children = items;
-          tmp6Result = outer1_13(outer1_10, obj);
-          const tmp6 = outer1_13;
-          const tmp7 = outer1_10;
-          const tmp8 = outer1_12;
-        }
-      }
-      return tmp6Result;
-    }
-  };
-  items[4] = {
-    key: "renderBody",
-    value() {
-      const self = this;
-      const props = this.props;
-      const body = props.body;
-      let obj = {};
-      let tmp5Result = null;
-      if (null != body) {
-        obj = {};
-        obj = { maxHeight: self.props.contentHeight };
-        obj.style = obj;
-        const obj1 = { variant: "text-md/normal", style: tmp.body };
-        let renderContentResult = body;
-        if ("string" === typeof body) {
-          renderContentResult = self.renderContent(body);
-        }
-        obj1.children = renderContentResult;
-        obj.children = outer1_12(Alert(outer1_3[14]).Text, obj1);
-        tmp5Result = tmp5(outer1_11, obj);
-        const tmp6 = outer1_11;
-      }
-      const items = [tmp5Result, props.children];
-      obj.children = items;
-      return outer1_13(outer1_14, obj);
-    }
-  };
-  items[5] = {
-    key: "renderButtons",
-    value() {
-      let cancelText;
-      let confirmText;
-      let isConfirmButtonDisabled;
-      let renderConfirmButton;
-      let renderConfirmIcon;
-      let renderConfirmRightIcon;
-      let secondaryConfirmText;
-      const self = this;
-      const tmp = outer1_15(this.context);
-      const props = this.props;
-      ({ cancelText, confirmText } = props);
-      if (undefined === confirmText) {
-        const intl = Alert(outer1_3[15]).intl;
-        confirmText = intl.string(Alert(outer1_3[15]).t.BddRzS);
-      }
-      ({ secondaryConfirmText, renderConfirmIcon, renderConfirmRightIcon, renderConfirmButton, isConfirmButtonDisabled } = props);
-      let tmp16Result = null;
-      if (!props.noDefaultButtons) {
-        let tmp7;
-        if (null != cancelText) {
-          let obj = { style: tmp.cancelButton };
-          obj = { variant: "secondary", onPress: self.handleCancel, text: cancelText };
-          obj.children = outer1_12(Alert(outer1_3[16]).Button, obj);
-          tmp7 = outer1_12(outer1_10, obj);
-        }
-        let tmp12;
-        if (null != secondaryConfirmText) {
-          obj = { accessibilityRole: "button", style: tmp.secondaryConfirm, onPress: self.handleSecondaryConfirm };
-          const obj1 = { variant: "text-sm/semibold", color: "text-link", children: secondaryConfirmText };
-          obj.children = outer1_12(Alert(outer1_3[14]).Text, obj1);
-          tmp12 = outer1_12(Alert(outer1_3[17]).PressableOpacity, obj);
-        }
-        const obj2 = { style: tmp.buttons };
-        let renderConfirmButtonResult;
-        if (null != renderConfirmButton) {
-          renderConfirmButtonResult = renderConfirmButton();
-        }
-        if (null == renderConfirmButtonResult) {
-          const obj3 = { variant: outer1_18(tmp4), onPress: self.handleConfirm, text: confirmText, loading: tmp5, disabled: null != isConfirmButtonDisabled && isConfirmButtonDisabled };
-          let renderConfirmIconResult;
-          if (null != renderConfirmIcon) {
-            renderConfirmIconResult = renderConfirmIcon();
-          }
-          if (null == renderConfirmIconResult) {
-            let result;
-            if (null != renderConfirmRightIcon) {
-              result = renderConfirmRightIcon();
-            }
-            renderConfirmIconResult = result;
-          }
-          let tmp21;
-          if (null != renderConfirmIconResult) {
-            tmp21 = renderConfirmIconResult;
-          }
-          obj3.icon = tmp21;
-          let str3 = "start";
-          if (null == renderConfirmIcon) {
-            let str4;
-            if (null != renderConfirmRightIcon) {
-              str4 = "end";
-            }
-            str3 = str4;
-          }
-          obj3.iconPosition = str3;
-          renderConfirmButtonResult = outer1_12(Alert(outer1_3[16]).Button, obj3);
-          const tmp22 = outer1_12;
-        }
-        const items = [renderConfirmButtonResult, tmp7, tmp12];
-        obj2.children = items;
-        tmp16Result = outer1_13(outer1_10, obj2);
-        const tmp16 = outer1_13;
-        const tmp17 = outer1_10;
-      }
-      return tmp16Result;
-    }
-  };
-  items[6] = {
-    key: "renderFooter",
-    value() {
-      const footer = this.props.footer;
-      let tmp = null;
-      if (null != footer) {
-        const obj = { children: footer };
-        tmp = outer1_12(outer1_10, obj);
-      }
-      return tmp;
-    }
-  };
-  items[7] = {
-    key: "render",
-    value() {
-      let isLandscape;
-      let onClose;
-      let style;
-      const tmp = outer1_15(this.context);
-      const props = this.props;
-      const width = props.width;
-      let obj = {};
-      ({ style, isLandscape, onClose } = props);
-      obj = { absolute: true, componentStyles: tmp.gradient };
-      const items = [outer1_12(outer1_1(outer1_3[18]), obj), ];
-      obj = { onAccessibilityEscape: onClose, style: items1 };
-      items1 = [tmp.alert, style, { width }];
-      const items2 = [this.renderHeader(), this.renderBody(), this.renderButtons(), this.renderFooter()];
-      obj.children = items2;
-      items[1] = outer1_13(outer1_10, obj);
-      obj.children = items;
-      const tmp2 = outer1_13(outer1_14, obj);
-      let tmp3 = tmp2;
-      if (isLandscape) {
-        const obj1 = {};
-        const obj2 = { maxHeight: width };
-        obj1.style = obj2;
-        obj1.children = tmp2;
-        tmp3 = outer1_12(outer1_11, obj1);
-      }
-      return tmp3;
-    }
-  };
-  return callback(Alert, items);
-})(importAllResult.PureComponent);
-let closure_16 = tmp4;
-tmp4.contextType = require("ManaContext").ThemeContext;
-const obj4 = { borderRadius: require("_createForOfIteratorHelperLoose").radii.sm };
-tmp4.defaultProps = { confirmColor: require("Button").ButtonColors.BRAND, autoCloseOnConfirm: true };
-const memoResult = importAllResult.memo((arg0) => {
-  const size = importDefault(1450)();
-  let obj = require(4698) /* getIsScreenLandscape */;
-  const isScreenLandscape = obj.useIsScreenLandscape();
-  obj = { width: Math.min(0.9 * Math.min(size.width, size.height), 400), contentHeight: 0.7 * size.height, isLandscape: isScreenLandscape };
-  const merged = Object.assign(arg0);
-  return callback3(closure_16, obj);
-});
-memoResult.Colors = require("Button").ButtonColors;
-const obj5 = { confirmColor: require("Button").ButtonColors.BRAND, autoCloseOnConfirm: true };
-let result = require("_possibleConstructorReturn").fileFinishedImporting("components_native/common/Alert.tsx");
-
-export default memoResult;
-export { getAlertButtonVariant };
+};

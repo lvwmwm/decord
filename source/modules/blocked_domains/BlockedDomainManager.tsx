@@ -1,27 +1,24 @@
-// Module ID: 16106
-// Function ID: 124447
-// Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 1845, 5112, 2]
+// Module ID: 16141
+// Function ID: 16142
+// Name: _initialize
+// Dependencies: [5134, 1869, 2]
 
-// Module 16106 (_isNativeReflectConstruct)
-import AutomaticLifecycleManager from "AutomaticLifecycleManager";
-import set from "set";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
-import tmp2 from "AutomaticLifecycleManager";
+// Module 16141 (_initialize)
+import "initialize";
 
 const require = arg1;
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
-  }
-  const result = _isNativeReflectConstruct();
+class BlockedDomainManager extends tmp2 {
 }
-tmp2 = new tmp2();
-let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/blocked_domains/BlockedDomainManager.tsx");
+BlockedDomainManager.prototype["_initialize"] = function _initialize() {
+  if (obj.isLibdiscoreInitialized()) {
+    const _window = window;
+    const _HermesInternal = HermesInternal;
+    const combined = "https:" + window.GLOBAL_ENV.WEBAPP_ENDPOINT + "/bad-hash-delta";
+    const result = require(1869) /* isBlockedDomain */.startFetchingBlockedDomains(combined);
+    const tmpResult = require(1869) /* isBlockedDomain */;
+  }
+};
+const blockedDomainManager = new BlockedDomainManager();
+let result = require("set").fileFinishedImporting("modules/blocked_domains/BlockedDomainManager.tsx");
 
-export default tmp2;
+export default blockedDomainManager;

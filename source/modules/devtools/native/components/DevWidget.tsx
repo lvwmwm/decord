@@ -1,19 +1,19 @@
-// Module ID: 14812
-// Function ID: 112753
+// Module ID: 14838
+// Function ID: 14839
 // Name: DraggableContainer
-// Dependencies: [31, 5984, 687, 33, 4165, 689, 4026, 10398, 14813, 5251, 4577, 4581, 4695, 13612, 14510, 14814, 13617, 2]
+// Dependencies: [19, 6003, 710, 21, 4189, 712, 4050, 10422, 14839, 5273, 4599, 4603, 4717, 13633, 14535, 14840, 13638, 2]
 // Exports: default
 
-// Module 14812 (DraggableContainer)
-import importAllResult from "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 14838 (DraggableContainer)
+import importAllResult from "noop";
+import initialize from "initialize";
 import { DEV_WIDGET_SIZE } from "STORAGE_KEY_LOG_DISPATCHES";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
 let closure_6;
-let closure_7;
-let closure_8;
+let error;
+let metroImportAll;
 const require = arg1;
 function DraggableContainer(children) {
   const x = children.x;
@@ -45,11 +45,11 @@ function DraggableContainer(children) {
       value = c9.get();
       ({ width, height } = value);
       rect = c8.get();
-      obj = {};
+      obj = { x: null, y: null };
       obj2 = closure_0(contentWidth[6]);
-      obj.x = obj2.clamp(children, rect.left + c4, width - rect.right - contentWidth - c4);
+      obj[0] = obj2.clamp(children, rect.left + c4, width - rect.right - contentWidth - c4);
       obj3 = closure_0(contentWidth[6]);
-      obj.y = obj3.clamp(arg1, rect.top + c4, height - rect.bottom - contentHeight - c4);
+      obj[1] = obj3.clamp(arg1, rect.top + c4, height - rect.bottom - contentHeight - c4);
       return obj;
     }
   }
@@ -85,10 +85,10 @@ function DraggableContainer(children) {
   class D {
     constructor() {
       obj = closure_0(contentWidth[6]);
-      obj = {};
+      obj = { x: null, y: null };
       runOnJSResult = obj.runOnJS(onChangePosition);
-      obj.x = closure_0.get();
-      obj.y = closure_1.get();
+      obj[0] = closure_0.get();
+      obj[1] = closure_1.get();
       tmpResult = runOnJSResult(obj);
       return;
     }
@@ -103,18 +103,18 @@ function DraggableContainer(children) {
     constructor() {
       value = closure_0.get();
       tmp2 = c10(value, closure_1.get());
-      obj = {};
-      obj = {};
+      obj = { transform: null };
+      obj = { translateX: null };
       ({ x, y } = tmp2);
       obj3 = closure_0(contentWidth[10]);
-      obj.translateX = obj3.withSpring(x, closure_0(contentWidth[11]).springUnclamped);
+      obj[0] = obj3.withSpring(x, closure_0(contentWidth[11]).springUnclamped);
       items = [, ];
       items[0] = obj;
-      obj1 = {};
+      obj1 = { translateY: null };
       obj5 = closure_0(contentWidth[10]);
-      obj1.translateY = obj5.withSpring(y, closure_0(contentWidth[11]).springUnclamped);
+      obj1[0] = obj5.withSpring(y, closure_0(contentWidth[11]).springUnclamped);
       items[1] = obj1;
-      obj.transform = items;
+      obj[0] = items;
       return obj;
     }
   }
@@ -123,56 +123,58 @@ function DraggableContainer(children) {
   W.__workletHash = 6251354551691;
   W.__initData = closure_14;
   const animatedStyle = _require(contentWidth[6]).useAnimatedStyle(W);
-  let obj2 = { gesture: onEndResult };
+  let obj2 = { gesture: onEndResult, children: null };
   const items1 = [tmp.widgetContainer, animatedStyle];
-  obj2.children = sharedValue(importDefault(contentWidth[6]).View, { style: items1, children: children.children });
+  obj2[1] = sharedValue(importDefault(contentWidth[6]).View, { style: items1, children: children.children });
   return sharedValue(_require(contentWidth[9]).GestureDetector, obj2);
 }
-({ jsx: closure_6, Fragment: closure_7, jsxs: closure_8 } = jsxProd);
-let obj = { widgetContainer: { position: "absolute" } };
-obj = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BRAND, justifyContent: "center", alignItems: "center", height: DEV_WIDGET_SIZE, width: DEV_WIDGET_SIZE, borderRadius: require("_createForOfIteratorHelperLoose").radii.xl };
-const merged = Object.assign(require("_createForOfIteratorHelperLoose").shadows.SHADOW_MOBILE_NAVIGATOR_X);
-obj.widget = obj;
-let closure_9 = _createForOfIteratorHelperLoose.createStyles(obj);
+let c3 = importAllResult;
+({ jsx: closure_6, Fragment: error, jsxs: metroImportAll } = jsxProd);
+let obj = { widgetContainer: { position: "absolute" }, widget: null };
+obj = { backgroundColor: require("Themes").colors.BACKGROUND_BRAND, justifyContent: "center", alignItems: "center", height: DEV_WIDGET_SIZE, width: DEV_WIDGET_SIZE, borderRadius: require("Themes").radii.xl };
+const merged = Object.assign(require("Themes").shadows.SHADOW_MOBILE_NAVIGATOR_X);
+obj[1] = obj;
+let closure_9 = createCacheKey.createStyles(obj);
 let closure_10 = { code: "function DevWidgetTsx1(x,y){const{windowDimensionsSharedValue,insetsSharedValue,clamp,dragBoundsPadding,contentWidth,contentHeight}=this.__closure;const{width:windowWidth,height:windowHeight}=windowDimensionsSharedValue.get();const insets=insetsSharedValue.get();return{x:clamp(x,insets.left+dragBoundsPadding,windowWidth-insets.right-contentWidth-dragBoundsPadding),y:clamp(y,insets.top+dragBoundsPadding,windowHeight-insets.bottom-contentHeight-dragBoundsPadding)};}" };
 let closure_11 = { code: "function DevWidgetTsx2(){const{runOnJS,onChangePosition,x,y}=this.__closure;runOnJS(onChangePosition)({x:x.get(),y:y.get()});}" };
 let closure_12 = { code: "function DevWidgetTsx3(event){const{getClampedPosition,originalX,originalY,x,y}=this.__closure;const{x:xClamped,y:yClamped}=getClampedPosition(originalX.get()+event.translationX,originalY.get()+event.translationY);x.set(xClamped);y.set(yClamped);}" };
 let closure_13 = { code: "function DevWidgetTsx4(){const{originalX,x,originalY,y}=this.__closure;originalX.set(x.get());originalY.set(y.get());}" };
 let closure_14 = { code: "function DevWidgetTsx5(){const{getClampedPosition,x,y,withSpring,springUnclamped}=this.__closure;const{x:translateX,y:translateY}=getClampedPosition(x.get(),y.get());return{transform:[{translateX:withSpring(translateX,springUnclamped)},{translateY:withSpring(translateY,springUnclamped)}]};}" };
-let closure_15 = importAllResult.memo(() => {
+let closure_16 = importAllResult.memo(() => {
   const obj = {
     style: callback3().widget,
     accessibilityRole: "button",
     onPress() {
-      return outer1_0(outer1_2[13]).navigateToDevTools();
+      return callback(table[13]).navigateToDevTools();
     },
     activeOpacity: 0.5,
-    children: callback(require(14510) /* StaffBadgeIcon */.StaffBadgeIcon, { size: "md", color: "white" })
+    children: null
   };
-  return callback(require(4695) /* PressableBase */.PressableOpacity, obj);
+  obj[4] = callback(require(14535) /* StaffBadgeIcon */.StaffBadgeIcon, { size: "md", color: "white" });
+  return callback(require(4717) /* PressableBase */.PressableOpacity, obj);
 });
 let result = require("STORAGE_KEY_LOG_DISPATCHES").fileFinishedImporting("modules/devtools/native/components/DevWidget.tsx");
 
 export default function DevWidget() {
-  let obj = require(4026);
-  const sharedValue = obj.useSharedValue(_isNativeReflectConstruct.devWidgetPosition.x);
-  const sharedValue1 = require(4026).useSharedValue(_isNativeReflectConstruct.devWidgetPosition.y);
-  obj = {};
-  const items = [callback(importDefault(14814), { x: sharedValue, y: sharedValue1 }), ];
+  let obj = require(4050);
+  const sharedValue = obj.useSharedValue(initialize.devWidgetPosition.x);
+  const sharedValue1 = require(4050).useSharedValue(initialize.devWidgetPosition.y);
+  obj = { children: null };
+  const items = [callback(importDefault(14840), { x: sharedValue, y: sharedValue1 }), ];
   obj = {
     x: sharedValue,
     y: sharedValue1,
     contentWidth: DEV_WIDGET_SIZE,
     contentHeight: DEV_WIDGET_SIZE,
-    dragBoundsPadding: importDefault(689).space.PX_4,
+    dragBoundsPadding: importDefault(712).space.PX_4,
     onChangePosition(devWidgetPosition) {
-      let obj = outer1_0(outer1_2[16]);
+      let obj = callback(table[16]);
       obj = { devWidgetPosition };
       return obj.updateDevToolsSettings(obj);
     },
-    children: callback(closure_15, {})
+    children: callback(closure_16, {})
   };
   items[1] = callback(DraggableContainer, obj);
-  obj.children = items;
+  obj[0] = items;
   return callback2(closure_7, obj);
 };

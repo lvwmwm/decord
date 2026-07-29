@@ -1,25 +1,28 @@
-// Module ID: 11659
-// Function ID: 90390
+// Module ID: 11683
+// Function ID: 11684
 // Name: GuildProgressItem
-// Dependencies: [31, 33, 4165, 11542, 11546, 11545, 7361, 1212, 11660, 2]
+// Dependencies: [19, 21, 4189, 11566, 11570, 11569, 7383, 1236, 11684, 2]
 // Exports: default
 
-// Module 11659 (GuildProgressItem)
-import "result";
+// Module 11683 (GuildProgressItem)
+import "noop";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
 const require = arg1;
-let closure_4 = _createForOfIteratorHelperLoose.createStyles({ icon: { width: 32, height: 32 } });
-const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/guild_progress/native/components/GuildProgressItem.tsx");
+let closure_4 = createCacheKey.createStyles({ icon: { width: 32, height: 32 } });
+const result = require("createCacheKey").fileFinishedImporting("modules/guild_progress/native/components/GuildProgressItem.tsx");
 
 export default function GuildProgressItem(guild) {
   guild = guild.guild;
+  let numFinished;
+  let completed;
+  let totalSteps;
   let obj = guild(completed[3]);
   const iOSCompletionStates = obj.useIOSCompletionStates(guild);
-  const numFinished = iOSCompletionStates.numFinished;
+  numFinished = iOSCompletionStates.numFinished;
   completed = iOSCompletionStates.completed;
-  const totalSteps = iOSCompletionStates.totalSteps;
+  totalSteps = iOSCompletionStates.totalSteps;
   obj = {
     onPress() {
       if (!completed) {
@@ -27,24 +30,29 @@ export default function GuildProgressItem(guild) {
         const obj = numFinished(completed[5]);
       }
       guild(completed[3]).openActionSheet(guild);
-    }
+    },
+    source: null,
+    iconStyle: null,
+    title: null,
+    isCompleted: null,
+    renderEndComponent: null,
+    fullWidth: true
   };
-  obj = {};
+  obj = { uri: null };
   const tmp = callback();
   const tmp3 = totalSteps;
-  obj.uri = numFinished(completed[6]);
-  obj.source = obj;
-  obj.iconStyle = tmp.icon;
+  obj[0] = numFinished(completed[6]);
+  obj[1] = obj;
+  obj[2] = tmp.icon;
   const intl = guild(completed[7]).intl;
-  obj.title = intl.string(guild(completed[7]).t["J2+r16"]);
-  obj.isCompleted = completed;
+  obj[3] = intl.string(guild(completed[7]).t["J2+r16"]);
+  obj[4] = completed;
   let fn;
   if (numFinished > 0) {
     if (numFinished < totalSteps) {
       fn = () => totalSteps(numFinished(completed[8]), { percent: 100 * numFinished / totalSteps, size: 32 });
     }
   }
-  obj.renderEndComponent = fn;
-  obj.fullWidth = true;
+  obj[5] = fn;
   return tmp3(numFinished(completed[4]), obj);
 };

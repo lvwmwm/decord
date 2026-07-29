@@ -1,113 +1,105 @@
-// Module ID: 6120
-// Function ID: 54454
+// Module ID: 6138
+// Function ID: 6139
 // Name: FadeOutLottieAnimation
-// Dependencies: [57, 31, 4157, 33, 4165, 566, 4026, 4166, 5488, 2]
+// Dependencies: [32, 19, 4181, 21, 4189, 589, 4050, 4190, 5506, 2]
 // Exports: default
 
-// Module 6120 (FadeOutLottieAnimation)
+// Module 6138 (FadeOutLottieAnimation)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import noop from "noop";
+import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
 const require = arg1;
-let closure_7 = _createForOfIteratorHelperLoose.createStyles({ content: { width: "100%" } });
+let closure_7 = createCacheKey.createStyles({ content: { width: "100%" } });
 let closure_8 = { code: "function FadeOutLottieAnimationTsx1(){const{isAnimationComplete,isFadeOut,withTiming,runOnJS,setIsFadeOut}=this.__closure;if(!isAnimationComplete){return{opacity:1};}if(isFadeOut){return{opacity:withTiming(0,{duration:300},'respect-motion-settings',function(finished){if(finished)runOnJS(setIsFadeOut)(false);})};}return{opacity:0};}" };
 let closure_9 = { code: "function FadeOutLottieAnimationTsx2(finished){const{runOnJS,setIsFadeOut}=this.__closure;if(finished)runOnJS(setIsFadeOut)(false);}" };
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/messages/native/burst_reactions/FadeOutLottieAnimation.tsx");
+const result = require("maybeApplyNoTextColorForLightCustomTheme").fileFinishedImporting("modules/messages/native/burst_reactions/FadeOutLottieAnimation.tsx");
 
 export default function FadeOutLottieAnimation(onComplete) {
   onComplete = onComplete.onComplete;
-  let obj = Object.create(null);
-  obj.onComplete = 0;
-  const merged = Object.assign(onComplete, obj);
-  const tmp4 = first1(React.useState(false), 2);
-  const first = tmp4[0];
-  let num = 1;
-  const dependencyMap = tmp4[1];
-  const tmp6 = first1(React.useState(true), 2);
-  first1 = tmp6[0];
-  React = tmp8;
-  obj = onComplete(566);
-  const items = [_isNativeReflectConstruct];
-  const stateFromStores = obj.useStateFromStores(items, () => outer1_5.useReducedMotion);
+  const merged = Object.assign(onComplete, Object.create(null));
+  let first;
+  let dependencyMap;
+  let first1;
+  let React;
+  const tmp3 = first1(React.useState(false), 2);
+  first = tmp3[0];
+  dependencyMap = tmp3[1];
+  const tmp5 = first1(React.useState(true), 2);
+  first1 = tmp5[0];
+  React = tmp7;
+  let obj = onComplete(589);
+  const items = [maybeApplyNoTextColorForLightCustomTheme];
+  const stateFromStores = obj.useStateFromStores(items, () => useReducedMotion.useReducedMotion);
   const effect = React.useEffect(() => {
     dependencyMap(false);
   }, []);
-  onComplete(4026);
+  onComplete(4050);
   class T {
     constructor() {
-      obj = {};
-      if (closure_1) {
-        tmp2 = c3;
-        if (c3) {
-          tmp4 = onComplete;
-          tmp5 = c2;
-          num3 = 7;
-          obj2 = onComplete(c2[7]);
-          obj = {};
-          num4 = 300;
-          obj.duration = 300;
+      if (c1) {
+        tmp = useState;
+        if (useState) {
+          obj = { opacity: null };
+          tmp2 = onComplete;
+          tmp3 = useState;
+          obj3 = onComplete(useState[7]);
           fn = function t(arg0) {
             if (arg0) {
-              onComplete(table[6]).runOnJS(outer1_4)(false);
-              const obj = onComplete(table[6]);
+              outer1_0(outer1_2[6]).runOnJS(noop)(false);
+              const obj = outer1_0(outer1_2[6]);
             }
           };
-          obj1 = {};
-          num5 = 6;
-          obj1.runOnJS = onComplete(c2[6]).runOnJS;
-          tmp6 = result;
-          obj1.setIsFadeOut = result;
+          obj1 = { runOnJS: null, setIsFadeOut: null };
+          obj1[0] = onComplete(useState[6]).runOnJS;
+          tmp4 = c4;
+          obj1[1] = c4;
           fn.__closure = obj1;
-          num6 = 14133863353798;
+          num = 14133863353798;
           fn.__workletHash = 14133863353798;
-          tmp7 = outer1_9;
+          tmp5 = outer1_9;
           fn.__initData = outer1_9;
-          num7 = 0;
           str = "respect-motion-settings";
-          tmp8 = obj2;
-          tmp9 = obj;
-          tmp10 = fn;
-          obj.opacity = obj2.withTiming(0, obj, "respect-motion-settings", fn);
-          tmp3 = obj;
-        } else {
           num2 = 0;
-          obj.opacity = 0;
-          tmp3 = obj;
+          tmp6 = obj3;
+          tmp7 = fn;
+          obj[0] = obj3.withTiming(0, { duration: 300 }, "respect-motion-settings", fn);
+        } else {
+          obj = { opacity: 0 };
         }
-        tmp11 = tmp3;
+        tmp8 = obj;
       } else {
-        num = 1;
-        obj.opacity = 1;
-        tmp = obj;
-        return obj;
+        return { opacity: 1 };
       }
       return;
     }
   }
-  obj = { isAnimationComplete: first, isFadeOut: first1, withTiming: onComplete(4166).withTiming, runOnJS: onComplete(4026).runOnJS, setIsFadeOut: tmp8 };
+  obj = { isAnimationComplete: first, isFadeOut: first1, withTiming: onComplete(4190).withTiming, runOnJS: onComplete(4050).runOnJS, setIsFadeOut: tmp7 };
   T.__closure = obj;
   T.__workletHash = 1137618554665;
   T.__initData = closure_8;
   if (!first) {
-    const obj1 = { style: tmp12 };
-    let obj2 = { style: tmp3.content };
+    obj = { style: null, children: null };
+    obj[0] = tmp12;
+    const obj1 = { style: null, speed: null, onAnimationFinish: null };
+    obj1[0] = tmp2.content;
+    let num = 1;
     if (stateFromStores) {
       num = 0.5;
     }
-    obj2.speed = num;
-    obj2.onAnimationFinish = function onAnimationFinish(isCancelled) {
-      if (null != onComplete) {
-        onComplete(isCancelled);
+    obj1[1] = num;
+    obj1[2] = function onAnimationFinish(isCancelled) {
+      if (onComplete != null) {
+        tmp(isCancelled);
       }
       dependencyMap(true);
     };
     const merged1 = Object.assign(merged);
-    obj1.children = jsx(first(5488), { style: tmp3.content });
-    let tmp14Result = tmp14(first(4026).View, obj1);
-    const tmp17 = first(5488);
+    obj[1] = jsx(first(5506), { style: null, speed: null, onAnimationFinish: null });
+    let tmp14Result = tmp14(first(4050).View, obj);
+    const tmp16 = first(5506);
   } else {
     tmp14Result = null;
   }

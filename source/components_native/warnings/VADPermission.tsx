@@ -1,68 +1,32 @@
-// Module ID: 15713
-// Function ID: 120955
-// Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 31, 33, 15710, 4596, 1212, 2]
+// Module ID: 15748
+// Function ID: 15749
+// Name: render
+// Dependencies: [19, 21, 15745, 4618, 1236, 2]
 
-// Module 15713 (_isNativeReflectConstruct)
-import jsxProd from "jsxProd";
-import dispatcher from "dispatcher";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
+// Module 15748 (render)
 import { jsx } from "jsxProd";
-import importAllResult from "result";
+import { Component } from "noop";
+import importAllResult from "noop";
 
 const require = arg1;
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
+class VADPermission extends Component {
+  constructor() {
+    applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
+    applyArgumentsResult.close = function close() {
+      callback(table[2]).clearVADWarning();
+    };
+    return applyArgumentsResult;
   }
-  const result = _isNativeReflectConstruct();
 }
-const tmp3 = ((Component) => {
-  class VADPermission {
-    constructor(arg0) {
-      self = this;
-      items = [...arguments];
-      tmp = outer1_3(this, VADPermission);
-      items1 = [...items];
-      obj = outer1_6(VADPermission);
-      tmp2 = outer1_5;
-      if (outer1_9()) {
-        tmp4 = globalThis;
-        _Reflect = Reflect;
-        tmp5 = outer1_6;
-        constructResult = Reflect.construct(obj, items1, outer1_6(self).constructor);
-      } else {
-        constructResult = obj.apply(self, items1);
-      }
-      tmp2Result = tmp2(self, constructResult);
-      tmp2Result.close = () => {
-        outer2_1(outer2_2[7]).clearVADWarning();
-      };
-      return tmp2Result;
-    }
-  }
-  callback2(VADPermission, Component);
-  let items = [
-    {
-      key: "render",
-      value() {
-        const obj = {};
-        const intl = VADPermission(outer1_2[9]).intl;
-        obj.title = intl.string(VADPermission(outer1_2[9]).t.NYklhr);
-        const intl2 = VADPermission(outer1_2[9]).intl;
-        obj.body = intl2.string(VADPermission(outer1_2[9]).t.EJ26Oh);
-        obj.onConfirm = this.close;
-        return outer1_8(outer1_1(outer1_2[8]), obj);
-      }
-    }
-  ];
-  return callback(VADPermission, items);
-})(require("result").Component);
-let result = require("_possibleConstructorReturn").fileFinishedImporting("components_native/warnings/VADPermission.tsx");
+VADPermission.prototype["render"] = function render() {
+  const obj = { title: null, body: null, onConfirm: null };
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj[0] = intl.string(require(1236) /* getSystemLocale */.t.NYklhr);
+  const intl2 = require(1236) /* getSystemLocale */.intl;
+  obj[1] = intl2.string(require(1236) /* getSystemLocale */.t.EJ26Oh);
+  obj[2] = this.close;
+  return jsx(importDefault(4618), { title: null, body: null, onConfirm: null });
+};
+const result = require("dispatcher").fileFinishedImporting("components_native/warnings/VADPermission.tsx");
 
-export default tmp3;
+export default VADPermission;

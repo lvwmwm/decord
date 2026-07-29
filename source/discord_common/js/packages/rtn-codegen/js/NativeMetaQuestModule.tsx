@@ -1,9 +1,9 @@
-// Module ID: 647
-// Function ID: 7389
+// Module ID: 670
+// Function ID: 671
 // Name: enforcing
-// Dependencies: [27, 2]
+// Dependencies: [17, 2]
 
-// Module 647 (enforcing)
+// Module 670 (enforcing)
 import { TurboModuleRegistry } from "get ActivityIndicator";
 
 const enforcing = TurboModuleRegistry.getEnforcing("NativeMetaQuestModule");

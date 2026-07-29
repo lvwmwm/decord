@@ -1,10 +1,10 @@
-// Module ID: 9793
-// Function ID: 76036
+// Module ID: 9815
+// Function ID: 9816
 // Name: BalanceWidgetPillButton
-// Dependencies: [31, 33, 4578, 8682, 1212, 2]
+// Dependencies: [19, 21, 4600, 8706, 1236, 2]
 
-// Module 9793 (BalanceWidgetPillButton)
-import "result";
+// Module 9815 (BalanceWidgetPillButton)
+import "noop";
 import { jsx } from "jsxProd";
 
 const require = arg1;
@@ -18,42 +18,39 @@ class BalanceWidgetPillButton {
     if (flag === undefined) {
       flag = true;
     }
-    tmp = null === balance;
-    tmp2 = jsx;
-    obj = {};
-    obj.variant = variant;
-    obj.onPress = global.onPress;
-    obj.size = "sm";
+    tmp2 = closure_0;
+    tmp3 = closure_2;
+    tmp = jsx;
+    obj = { variant, onPress: global.onPress, size: "sm", text: null, icon: null, accessible: null, accessibilityElementsHidden: null, importantForAccessibility: null, accessibilityLabel: null, disabled: null, loading: null };
     str = undefined;
-    if (null != balance) {
+    if (balance != null) {
       str = balance.toString();
     }
-    str = "";
-    if (null != str) {
+    if (str == null) {
+      str = "";
     }
-    obj.text = str;
-    obj.icon = require("registerAsset");
-    obj.accessible = flag;
-    obj.accessibilityElementsHidden = !flag;
+    obj[3] = str;
+    obj[4] = require("registerAsset");
+    obj[5] = flag;
+    obj[6] = !flag;
     str2 = "no";
     if (flag) {
       str2 = "auto";
     }
-    obj.importantForAccessibility = str2;
-    tmp4 = closure_0;
-    tmp5 = closure_2;
+    tmp4 = null === balance;
+    obj[7] = str2;
     intl = require("getSystemLocale").intl;
-    if (tmp) {
+    if (tmp4) {
       stringResult = intl.string(require("getSystemLocale").t.y0WGqP);
     } else {
-      obj = {};
-      obj.balance = balance.toString();
+      obj = { balance: null };
+      obj[0] = balance.toString();
       stringResult = intl.formatToPlainString(require("getSystemLocale").t.zPaLL9, obj);
     }
-    obj.accessibilityLabel = stringResult;
-    obj.disabled = tmp;
-    obj.loading = tmp;
-    return tmp2(require("Button").Button, obj);
+    obj[8] = stringResult;
+    obj[9] = tmp4;
+    obj[10] = tmp4;
+    return tmp(require("Button").Button, obj);
   }
 }
 BalanceWidgetPillButton.displayName = "BalanceWidgetPillButton";

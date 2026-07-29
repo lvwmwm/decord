@@ -1,75 +1,71 @@
-// Module ID: 8739
-// Function ID: 69155
+// Module ID: 8763
+// Function ID: 8764
 // Name: VariantOption
-// Dependencies: [31, 27, 33, 4165, 689, 8686, 4695, 1212, 8704, 5187, 5791, 4161, 2]
+// Dependencies: [19, 17, 21, 4189, 712, 8710, 4717, 1236, 8728, 5209, 5809, 4185, 2]
 // Exports: default
 
-// Module 8739 (VariantOption)
-import "result";
+// Module 8763 (VariantOption)
+import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
+import createCacheKey from "createCacheKey";
 
-let closure_4;
-let closure_5;
+let c4;
+let c5;
 const require = arg1;
-function VariantOption(onSelect) {
+function VariantOption(onPress) {
   let isSelected;
   let variant;
-  ({ variant, isSelected } = onSelect);
+  ({ variant, isSelected } = onPress);
   const tmp = callback2(isSelected);
-  let obj = require(8686) /* getProductPurchaseState */;
+  let obj = require(8710) /* getProductPurchaseState */;
   let isPurchased = obj.useProductPurchaseState(variant).isPurchased;
-  obj = { accessibilityRole: "button" };
   if (isPurchased) {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    obj = { variantLabel: variant.name };
-    let name = intl.formatToPlainString(require(1212) /* getSystemLocale */.t["SfQB4+"], obj);
+    const intl = tmp2(1236).intl;
+    obj = { variantLabel: null };
+    obj[0] = variant.name;
+    let name = intl.formatToPlainString(tmp2(1236).t["SfQB4+"], obj);
   } else {
     name = variant.name;
   }
-  obj.accessibilityLabel = name;
-  obj.accessibilityState = { selected: isSelected };
-  obj.onPress = onSelect.onSelect;
-  obj.style = tmp.variantOption;
-  const obj1 = { style: items };
+  obj = { accessibilityRole: "button", accessibilityLabel: name, accessibilityState: { selected: isSelected }, onPress: onPress.onSelect, style: tmp.variantOption, children: null };
+  const obj1 = { style: items, children: null };
   items = [tmp.variantOptionInner, { backgroundColor: variant.variantValue }];
   if (isPurchased) {
-    const obj2 = { variant };
-    isPurchased = callback(VariantCheckmark, obj2);
+    const obj2 = { variant: null };
+    obj2[0] = variant;
+    isPurchased = tmp4(VariantCheckmark, obj2);
   }
-  obj1.children = isPurchased;
-  obj.children = callback(View, obj1);
-  return callback(require(4695) /* PressableBase */.PressableOpacity, obj);
+  obj1[1] = isPurchased;
+  obj[5] = closure_4(View, obj1);
+  return closure_4(require(4717) /* PressableBase */.PressableOpacity, obj);
 }
 function VariantCheckmark(variant) {
-  const obj = {};
-  const colors = importDefault(689).colors;
-  obj.color = importDefault(8704)(variant.variant) ? colors.BLACK : colors.WHITE;
-  obj.size = "md";
-  return closure_4(require(5187) /* CheckmarkSmallIcon */.CheckmarkSmallIcon, obj);
+  const colors = importDefault(712).colors;
+  const tmp = importDefault(8728)(variant.variant);
+  const tmp2 = closure_4;
+  return tmp2(require(5209) /* CheckmarkSmallIcon */.CheckmarkSmallIcon, { color: importDefault(8728)(variant.variant) ? colors.BLACK : colors.WHITE, size: "md" });
 }
-({ jsx: closure_4, jsxs: closure_5 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { flex: 1, display: "flex", flexDirection: "column", marginTop: require("_createForOfIteratorHelperLoose").space.PX_16, marginHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16, gap: require("_createForOfIteratorHelperLoose").space.PX_8 };
-_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
-let obj1 = { flexDirection: "row", alignItems: "center", gap: require("_createForOfIteratorHelperLoose").space.PX_12 };
-_createForOfIteratorHelperLoose.headerRow = obj1;
-let obj2 = { display: "flex", flexWrap: "wrap", flexDirection: "row", alignItems: "center", gap: require("_createForOfIteratorHelperLoose").space.PX_12 };
-_createForOfIteratorHelperLoose.variantsContainer = obj2;
-_createForOfIteratorHelperLoose.text = { flexGrow: 1, flexShrink: 1, minWidth: 28 };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-let closure_7 = _createForOfIteratorHelperLoose.createStyles((arg0) => {
-  let obj = {};
-  obj = { width: 28, height: 28, borderRadius: importDefault(689).radii.round, justifyContent: "center", alignItems: "center", borderWidth: 1 };
-  const colors = importDefault(689).colors;
-  obj.borderColor = arg0 ? colors.BUTTON_OUTLINE_PRIMARY_TEXT : colors.BORDER_STRONG;
-  obj.variantOption = obj;
-  obj = { width: "100%", height: "100%", justifyContent: "center", alignItems: "center", borderRadius: importDefault(689).radii.round, borderWidth: 1, borderColor: importDefault(689).colors.BACKGROUND_BASE_LOW };
-  obj.variantOptionInner = obj;
+({ jsx: c4, jsxs: c5 } = jsxProd);
+createCacheKey = { container: null, headerRow: null, variantsContainer: null, text: null };
+createCacheKey = { flex: 1, display: "flex", flexDirection: "column", marginTop: require("Themes").space.PX_16, marginHorizontal: require("Themes").space.PX_16, gap: require("Themes").space.PX_8 };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { flexDirection: "row", alignItems: "center", gap: require("Themes").space.PX_12 };
+let obj1 = { flexDirection: "row", alignItems: "center", gap: require("Themes").space.PX_12 };
+createCacheKey[2] = { display: "flex", flexWrap: "wrap", flexDirection: "row", alignItems: "center", gap: require("Themes").space.PX_12 };
+createCacheKey[3] = { flexGrow: 1, flexShrink: 1, minWidth: 28 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let closure_7 = createCacheKey.createStyles((arg0) => {
+  let obj = { width: 28, height: 28, borderRadius: importDefault(712).radii.round, justifyContent: "center", alignItems: "center", borderWidth: 1, borderColor: null };
+  const colors = importDefault(712).colors;
+  obj = { variantOption: obj, variantOptionInner: null };
+  obj[6] = arg0 ? colors.BUTTON_OUTLINE_PRIMARY_TEXT : colors.BORDER_STRONG;
+  obj = { width: "100%", height: "100%", justifyContent: "center", alignItems: "center", borderRadius: tmp(712).radii.round, borderWidth: 1, borderColor: tmp(712).colors.BACKGROUND_BASE_LOW };
+  obj[1] = obj;
   return obj;
 });
+let obj2 = { display: "flex", flexWrap: "wrap", flexDirection: "row", alignItems: "center", gap: require("Themes").space.PX_12 };
 const result = require("jsxProd").fileFinishedImporting("modules/collectibles/native/ProductDetailsActionSheetVariants.tsx");
 
 export default function ProductDetailsActionSheetVariants(onVariantSelect) {
@@ -77,27 +73,32 @@ export default function ProductDetailsActionSheetVariants(onVariantSelect) {
   let selectedVariantIndex;
   ({ product, selectedVariantIndex } = onVariantSelect);
   onVariantSelect = onVariantSelect.onVariantSelect;
-  const tmp = _createForOfIteratorHelperLoose();
-  let obj = selectedVariantIndex(5791);
-  let tmp3Result = null;
+  const tmp = createCacheKey();
+  let obj = selectedVariantIndex(5809);
+  let tmp5Result = null;
   if (obj.getIsVariantProduct(product)) {
-    obj = { style: tmp.container };
-    obj = { style: tmp.headerRow };
-    const obj1 = { variant: "text-md/bold", color: "mobile-text-heading-primary" };
-    const intl = selectedVariantIndex(1212).intl;
-    obj1.children = intl.string(selectedVariantIndex(1212).t.wbgaj6);
-    const items = [callback(selectedVariantIndex(4161).Text, obj1), ];
-    let tmp9 = product.variants.length > selectedVariantIndex;
-    if (tmp9) {
-      const obj2 = { variant: "text-md/medium", color: "text-default", lineClamp: 1, style: tmp.text, children: product.variants[selectedVariantIndex].variantLabel };
-      tmp9 = callback(selectedVariantIndex(4161).Text, obj2);
+    obj = { style: null, children: null };
+    obj[0] = tmp.container;
+    obj = { style: null, children: null };
+    obj[0] = tmp.headerRow;
+    const obj1 = { variant: "text-md/bold", color: "mobile-text-heading-primary", children: null };
+    const intl = tmp2(1236).intl;
+    obj1[2] = intl.string(tmp2(1236).t.wbgaj6);
+    const items = [callback(tmp2(4185).Text, obj1), ];
+    let tmp7Result = product.variants.length > selectedVariantIndex;
+    if (tmp7Result) {
+      const obj2 = { variant: "text-md/medium", color: "text-default", lineClamp: 1, style: null, children: null };
+      obj2[3] = tmp.text;
+      obj2[4] = product.variants[selectedVariantIndex].variantLabel;
+      tmp7Result = tmp7(tmp2(4185).Text, obj2);
     }
-    items[1] = tmp9;
-    obj.children = items;
+    items[1] = tmp7Result;
+    obj[1] = items;
     const items1 = [closure_5(View, obj), ];
-    const obj3 = { style: tmp.variantsContainer };
+    const obj3 = { style: null, children: null };
+    obj3[0] = tmp.variantsContainer;
     const variants = product.variants;
-    obj3.children = variants.map((variant) => {
+    obj3[1] = variants.map((variant) => {
       let closure_0 = arg1;
       return outer1_4(outer1_8, {
         variant,
@@ -108,10 +109,8 @@ export default function ProductDetailsActionSheetVariants(onVariantSelect) {
       }, variant.variantValue);
     });
     items1[1] = callback(View, obj3);
-    obj.children = items1;
-    tmp3Result = tmp3(View, obj);
-    const tmp4 = View;
-    const tmp5 = View;
+    obj[1] = items1;
+    tmp5Result = tmp5(tmp6, obj);
   }
-  return tmp3Result;
+  return tmp5Result;
 };

@@ -1,51 +1,49 @@
-// Module ID: 9673
-// Function ID: 75264
+// Module ID: 9695
+// Function ID: 9696
 // Name: MediaKeyboardLimitedPickerNotice
-// Dependencies: [31, 27, 33, 4165, 4161, 1212, 4578, 2]
+// Dependencies: [19, 17, 21, 4189, 4185, 1236, 4600, 2]
 // Exports: default
 
-// Module 9673 (MediaKeyboardLimitedPickerNotice)
-import result from "result";
+// Module 9695 (MediaKeyboardLimitedPickerNotice)
+import noop from "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_4;
-let closure_5;
+let c4;
+let c5;
 const require = arg1;
-({ jsx: closure_4, jsxs: closure_5 } = jsxProd);
-let closure_6 = _createForOfIteratorHelperLoose.createStyles({ container: { flexDirection: "row", paddingHorizontal: 16, paddingVertical: 16, alignItems: "center" }, absoluteContainer: { position: "absolute" }, text: { flex: 1 }, button: { marginLeft: 16 } });
+({ jsx: c4, jsxs: c5 } = jsxProd);
+let closure_6 = createCacheKey.createStyles({ container: { flexDirection: "row", paddingHorizontal: 16, paddingVertical: 16, alignItems: "center" }, absoluteContainer: { position: "absolute" }, text: { flex: 1 }, button: { marginLeft: 16 } });
 const result = require("jsxProd").fileFinishedImporting("modules/media_keyboard/native/components/MediaKeyboardLimitedPickerNotice.tsx");
 
 export default function MediaKeyboardLimitedPickerNotice(onHeightChange) {
   onHeightChange = onHeightChange.onHeightChange;
   const tmp = callback2();
   const items = [onHeightChange];
-  let obj = {};
   const items1 = [tmp.container, ];
   let absoluteContainer;
   const callback = React.useCallback((nativeEvent) => {
-    if (null != onHeightChange) {
-      onHeightChange(nativeEvent.nativeEvent.layout.height);
+    if (onHeightChange != null) {
+      tmp(nativeEvent.nativeEvent.layout.height);
     }
   }, items);
   if (null != onHeightChange) {
     absoluteContainer = tmp.absoluteContainer;
   }
+  let obj = { style: items1, onLayout: callback, children: null };
   items1[1] = absoluteContainer;
-  obj.style = items1;
-  obj.onLayout = callback;
-  obj = { style: tmp.text, variant: "text-sm/normal" };
-  const intl = onHeightChange(1212).intl;
-  obj.children = intl.string(onHeightChange(1212).t["5g7NcN"]);
-  const items2 = [callback(onHeightChange(4161).Text, obj), ];
-  obj = { style: tmp.button };
-  const obj1 = { size: "sm", variant: "tertiary" };
-  const intl2 = onHeightChange(1212).intl;
-  obj1.text = intl2.string(onHeightChange(1212).t.JuXTi6);
-  obj1.onPress = onHeightChange.onPress;
-  obj.children = callback(onHeightChange(4578).Button, obj1);
+  obj = { style: tmp.text, variant: "text-sm/normal", children: null };
+  const intl = onHeightChange(1236).intl;
+  obj[2] = intl.string(onHeightChange(1236).t["5g7NcN"]);
+  const items2 = [callback(onHeightChange(4185).Text, obj), ];
+  obj = { style: tmp.button, children: null };
+  const obj1 = { size: "sm", variant: "tertiary", text: null, onPress: null };
+  const intl2 = onHeightChange(1236).intl;
+  obj1[2] = intl2.string(onHeightChange(1236).t.JuXTi6);
+  obj1[3] = onHeightChange.onPress;
+  obj[1] = callback(onHeightChange(4600).Button, obj1);
   items2[1] = callback(View, obj);
-  obj.children = items2;
+  obj[2] = items2;
   return closure_5(View, obj);
 };

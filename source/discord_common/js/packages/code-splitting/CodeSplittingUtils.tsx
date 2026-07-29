@@ -1,18 +1,18 @@
-// Module ID: 3830
-// Function ID: 29701
+// Module ID: 3854
+// Function ID: 3855
 // Name: loaderMaker
-// Dependencies: [57, 31, 33, 3831, 2]
+// Dependencies: [32, 19, 21, 3855, 2]
 // Exports: LazyLibrary, makeLazy, makeLazyWithPreload
 
-// Module 3830 (loaderMaker)
+// Module 3854 (loaderMaker)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
+import noop from "noop";
 import jsxProd from "jsxProd";
 
-let closure_4;
-let closure_5;
+let c4;
+let c5;
 const require = arg1;
-({ jsx: closure_4, Fragment: closure_5 } = jsxProd);
+({ jsx: c4, Fragment: c5 } = jsxProd);
 function loaderMaker() {
   let str = arg0;
   if (arg0 === undefined) {
@@ -24,9 +24,9 @@ function loaderMaker() {
   };
 }
 const result = require("jsxProd").fileFinishedImporting("../discord_common/js/packages/code-splitting/CodeSplittingUtils.tsx");
-for (const key10035 in require("_importWithRetry")) {
-  let tmp4 = key10035;
-  arg5[key10035] = require("_importWithRetry")[key10035];
+for (const key10029 in require("_importWithRetry")) {
+  let tmp4 = key10029;
+  arg5[key10029] = require("_importWithRetry")[key10029];
   continue;
 }
 
@@ -49,20 +49,29 @@ export const makeLazy = function makeLazy(memo) {
   });
   class Wrapper {
     constructor(arg0) {
-      obj = {};
-      tmp = f29705;
+      tmp = f72885;
       if (null != renderLoader) {
-        tmp4 = renderLoader;
-        tmp3 = renderLoader();
+        tmp2Result = tmp2();
       } else {
-        tmp2 = outer1_6;
-        tmp3 = outer1_6()();
+        tmp3 = outer1_6;
+        if (typeof outer1_6 !== "find") {
+          str3 = "Trying to call a non-function";
+          throwTypeErrorResult = HermesBuiltin.throwTypeError();
+        }
+        str = "transparent";
+        transparent = "transparent";
+        obj = { style: null };
+        obj = { position: "absolute", width: "100%", height: "100%", backgroundColor: null };
+        obj[3] = "transparent";
+        obj[0] = obj;
+        str2 = "div";
+        tmp2Result = tmp("div", obj);
       }
-      obj.fallback = tmp3;
-      obj = {};
+      obj1 = { fallback: tmp2Result, children: null };
+      obj2 = {};
       merged = Object.assign(memo);
-      obj.children = f29705(f29705, obj);
-      return tmp(name.Suspense, obj);
+      obj1[1] = tmp(f72885, obj2);
+      return tmp(name.Suspense, obj1);
     }
   }
   let memoResult = Wrapper;
@@ -85,55 +94,64 @@ export const makeLazyWithPreload = function makeLazyWithPreload(arg0) {
   if (memo === undefined) {
     memo = false;
   }
-  let closure_6;
+  let closure_5;
   const React = null;
   let c4 = null;
-  function importPromise() {
-    if (null == result) {
+  closure_5 = React.lazy(function importPromise() {
+    if (null == noop) {
       let obj = outer1_0(outer1_1[3]);
-      obj = { createPromise: closure_0, webpackId: closure_1 };
-      result = obj.importWithRetry(obj).then((arg0) => {
-        const outer1_4 = arg0.default;
+      obj = { createPromise: null, webpackId: null };
+      obj[0] = closure_0;
+      obj[1] = closure_1;
+      noop = obj.importWithRetry(obj).then((arg0) => {
+        let closure_4 = arg0.default;
         return arg0;
       });
       const importWithRetryResult = obj.importWithRetry(obj);
     }
-    return result;
-  }
-  closure_6 = React.lazy(importPromise);
+    return noop;
+  });
   class Wrapper {
     constructor(arg0) {
-      first = renderLoader(c3.useState(() => outer1_4), 1)[0];
+      tmp = c3;
+      first = renderLoader(c3.useState(() => closure_4), 1)[0];
       if (null != first) {
-        tmp14 = c4;
+        tmp10 = c4;
         obj = {};
-        tmp15 = obj;
-        tmp16 = arg0;
+        tmp11 = obj;
+        tmp12 = arg0;
         merged = Object.assign(arg0);
-        tmp2Result = c4(first, obj);
+        tmp14Result1 = c4(first, obj);
       } else {
-        tmp3 = c3;
-        obj = {};
-        tmp4 = renderLoader;
-        tmp2 = c4;
+        tmp14 = c4;
         if (null != renderLoader) {
-          tmp7 = renderLoader;
-          tmp6 = renderLoader();
+          tmp14Result = renderLoader();
         } else {
-          tmp5 = lazy;
-          tmp6 = lazy()();
+          tmp3 = outer1_6;
+          if (typeof outer1_6 !== "find") {
+            str3 = "Trying to call a non-function";
+            throwTypeErrorResult = HermesBuiltin.throwTypeError();
+          }
+          str = "transparent";
+          transparent = "transparent";
+          obj = { style: null };
+          obj1 = { position: "absolute", width: "100%", height: "100%", backgroundColor: null };
+          obj1[3] = "transparent";
+          obj[0] = obj1;
+          str2 = "div";
+          tmp14Result = tmp14("div", obj);
         }
-        obj.fallback = tmp6;
-        tmp8 = c4;
-        tmp9 = lazy;
-        obj1 = {};
-        tmp10 = obj1;
-        tmp11 = arg0;
+        obj2 = { fallback: null, children: null };
+        obj2[0] = tmp14Result;
+        tmp5 = importPromise;
+        obj3 = {};
+        tmp6 = obj3;
+        tmp7 = arg0;
         merged1 = Object.assign(arg0);
-        obj.children = c4(lazy, obj1);
-        tmp2Result = tmp2(c3.Suspense, obj);
+        obj2[1] = tmp14(importPromise, obj3);
+        tmp14Result1 = tmp14(tmp.Suspense, obj2);
       }
-      return tmp2Result;
+      return tmp14Result1;
     }
   }
   let memoResult = Wrapper;
@@ -145,24 +163,38 @@ export const makeLazyWithPreload = function makeLazyWithPreload(arg0) {
   }
   memoResult.displayName = "Suspense(" + name + ")";
   memoResult.preload = () => {
-    importPromise();
+    if (null == noop) {
+      let obj = outer1_0(outer1_1[3]);
+      obj = { createPromise: null, webpackId: null };
+      obj[0] = closure_0;
+      obj[1] = closure_1;
+      noop = obj.importWithRetry(obj).then((arg0) => {
+        let closure_4 = arg0.default;
+        return arg0;
+      });
+      const importWithRetryResult = obj.importWithRetry(obj);
+    }
   };
   return memoResult;
 };
 export const LazyLibrary = function LazyLibrary(arg0) {
+  let c2;
   let dependencyMap;
   let render;
   let renderFallback;
   let require;
+  let tmp2;
   ({ createPromise: require, webpackId: dependencyMap } = arg0);
+  let callback;
   ({ render, renderFallback } = arg0);
-  const tmp = callback(React.useState(null), 2);
-  const first = tmp[0];
-  callback = tmp[1];
+  [tmp2, c2] = callback(React.useState(null), 2);
   const effect = React.useEffect(() => {
     let obj = outer1_0(outer1_1[3]);
     obj = { createPromise: closure_0, webpackId: closure_1 };
-    obj.importWithRetry(obj).then((arg0) => outer1_2(arg0.default));
+    obj.importWithRetry(obj).then((arg0) => callback(arg0.default));
   }, []);
-  return closure_4(closure_5, { children: null == first ? renderFallback() : render(first) });
+  const tmp = callback(React.useState(null), 2);
+  const tmp4 = closure_4;
+  const tmp5 = closure_5;
+  return tmp4(tmp5, { children: null == tmp2 ? renderFallback() : render(tmp2) });
 };

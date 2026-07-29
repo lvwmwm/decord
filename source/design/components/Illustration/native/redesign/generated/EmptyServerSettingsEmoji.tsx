@@ -1,40 +1,63 @@
-// Module ID: 16368
-// Function ID: 127305
+// Module ID: 16403
+// Function ID: 16404
 // Name: getEmptyServerSettingsEmojiSource
-// Dependencies: [31, 27, 33, 6517, 16369, 16370, 16371, 4011, 2]
-// Exports: EmptyServerSettingsEmoji
+// Dependencies: [19, 17, 21, 6538, 16404, 16405, 16406, 4035, 2]
+// Exports: EmptyServerSettingsEmoji, getEmptyServerSettingsEmojiSource, useEmptyServerSettingsEmojiSource
 
-// Module 16368 (getEmptyServerSettingsEmojiSource)
-import "result";
+// Module 16403 (getEmptyServerSettingsEmojiSource)
+import "noop";
 import { Image } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
 
 const require = arg1;
-function getEmptyServerSettingsEmojiSource(theme) {
-  let obj = require(6517) /* getIllustrationSource */;
+const result = require("jsxProd").fileFinishedImporting("design/components/Illustration/native/redesign/generated/EmptyServerSettingsEmoji.tsx");
+
+export const getEmptyServerSettingsEmojiSource = function getEmptyServerSettingsEmojiSource(theme) {
+  let obj = require(6538) /* getIllustrationSource */;
   obj = {
     dark() {
-      return outer1_0(outer1_1[4]);
+      return callback(16404);
     },
     darker() {
-      return outer1_0(outer1_1[5]);
+      return callback(16405);
     },
     light() {
-      return outer1_0(outer1_1[6]);
+      return callback(16406);
     }
   };
   return obj.getIllustrationSource(theme, obj);
-}
-function useEmptyServerSettingsEmojiSource() {
-  return getEmptyServerSettingsEmojiSource(require(4011) /* AccessibilityAnnouncer */.useThemeContext().theme);
-}
-const result = require("jsxProd").fileFinishedImporting("design/components/Illustration/native/redesign/generated/EmptyServerSettingsEmoji.tsx");
-
-export { getEmptyServerSettingsEmojiSource };
-export { useEmptyServerSettingsEmojiSource };
+};
+export const useEmptyServerSettingsEmojiSource = function useEmptyServerSettingsEmojiSource() {
+  let obj = require(4035) /* AccessibilityAnnouncer */;
+  obj = {
+    dark() {
+      return callback(16404);
+    },
+    darker() {
+      return callback(16405);
+    },
+    light() {
+      return callback(16406);
+    }
+  };
+  return require(6538) /* getIllustrationSource */.getIllustrationSource(obj.useThemeContext().theme, obj);
+};
 export const EmptyServerSettingsEmoji = function EmptyServerSettingsEmoji(arg0) {
-  const obj = {};
+  let obj = require(4035) /* AccessibilityAnnouncer */;
+  obj = {
+    dark() {
+      return callback(16404);
+    },
+    darker() {
+      return callback(16405);
+    },
+    light() {
+      return callback(16406);
+    }
+  };
+  obj = {};
+  const illustrationSource = require(6538) /* getIllustrationSource */.getIllustrationSource(obj.useThemeContext().theme, obj);
   const merged = Object.assign(arg0);
-  obj["source"] = useEmptyServerSettingsEmojiSource();
+  obj.source = illustrationSource;
   return <Image />;
 };

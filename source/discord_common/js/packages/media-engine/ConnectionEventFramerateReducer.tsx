@@ -1,106 +1,83 @@
-// Module ID: 4316
-// Function ID: 37625
+// Module ID: 4300
+// Function ID: 4301
 // Name: logger
-// Dependencies: [6, 7, 4226, 4, 4262, 2]
+// Dependencies: [4250, 4, 4286, 2]
 
-// Module 4316 (logger)
-import _classCallCheck from "_classCallCheck";
-import _defineProperties from "_defineProperties";
+// Module 4300 (logger)
 import DesktopSources from "DesktopSources";
 
-let closure_4;
-let closure_5;
-const require = arg1;
-({ SpeakingFlags: closure_4, VIDEO_QUALITY_FRAMRATE_NOT_SPEAKING_TIMEOUT: closure_5 } = DesktopSources);
-const logger = new require("getMediaEngineImpl").Logger("ConnectionEventFramerateReducer");
-const tmp4 = (() => {
-  class ConnectionEventFramerateReducer {
-    constructor(arg0, arg1) {
-      self = this;
-      tmp = outer1_2(this, self);
-      this.connection = arg0;
-      this.sinkWants = arg1;
-      this.handleSpeaking = (arg0, arg1) => {
-        if (arg0 === self.connection.userId) {
-          self.userSpeakingChange(arg1 === outer2_4.NONE);
+let c3;
+let obj1;
+({ SpeakingFlags: obj1, VIDEO_QUALITY_FRAMRATE_NOT_SPEAKING_TIMEOUT: c3 } = DesktopSources);
+const logger = new require("log").Logger("ConnectionEventFramerateReducer");
+let result = require("BaseConnectionEvent").fileFinishedImporting("../discord_common/js/packages/media-engine/ConnectionEventFramerateReducer.tsx");
+class ConnectionEventFramerateReducer {
+  constructor(arg0, arg1) {
+    obj = Object.create(new.target.prototype);
+    closure_0 = obj;
+    obj.handleSpeaking = function handleSpeaking(arg0, arg1) {
+      if (arg0 === obj.connection.userId) {
+        obj.userSpeakingChange(arg1 === outer1_2.NONE);
+      }
+    };
+    obj.handleSelfMute = function handleSelfMute(isMuted) {
+      const connection = obj.connection;
+      if (!connection.hasDesktopSource()) {
+        const result = obj.destroyFramerateScaleFactorTimers();
+        obj.sinkWants.isMuted = isMuted;
+        const result1 = obj.updateRemoteWantsFramerate();
+      }
+    };
+    obj.connection = global;
+    obj.sinkWants = require;
+    enableNativeLoggerResult = closure_4.enableNativeLogger(true);
+    onResult = global.on(require("BaseConnectionEvent").BaseConnectionEvent.Speaking, obj.handleSpeaking);
+    onResult1 = global.on(require("BaseConnectionEvent").BaseConnectionEvent.Mute, obj.handleSelfMute);
+    initializeResult = obj.initialize();
+    return obj;
+  }
+}
+const prototype = ConnectionEventFramerateReducer.prototype;
+prototype["initialize"] = function initialize() {
+  this.userSpeakingChange(true);
+};
+prototype["userSpeakingChange"] = function userSpeakingChange(arg0) {
+  let self = this;
+  self = this;
+  const connection = this.connection;
+  if (!connection.hasDesktopSource()) {
+    let result = self.destroyFramerateScaleFactorTimers();
+    if (arg0) {
+      const _setTimeout = setTimeout;
+      self.framerateReductionTimeout = setTimeout(() => {
+        if (!self.connection.destroyed) {
+          const _HermesInternal = HermesInternal;
+          outer1_4.info("BaseConnection.userSpeakingChange: Reduced framerate after " + outer1_3 + " ms.");
+          obj.framerateReductionTimeout = undefined;
+          obj.sinkWants.isMuted = true;
+          const result = obj.updateRemoteWantsFramerate();
         }
-      };
-      this.handleSelfMute = (isMuted) => {
-        const connection = self.connection;
-        if (!connection.hasDesktopSource()) {
-          const result = self.destroyFramerateScaleFactorTimers();
-          self.sinkWants.isMuted = isMuted;
-          const result1 = self.updateRemoteWantsFramerate();
-        }
-      };
-      enableNativeLoggerResult = outer1_6.enableNativeLogger(true);
-      onResult = arg0.on(ConnectionEventFramerateReducer(outer1_1[4]).BaseConnectionEvent.Speaking, this.handleSpeaking);
-      onResult1 = arg0.on(ConnectionEventFramerateReducer(outer1_1[4]).BaseConnectionEvent.Mute, this.handleSelfMute);
-      initializeResult = this.initialize();
-      return;
+      }, closure_3);
+    } else if (self.sinkWants.isMuted) {
+      self.sinkWants.isMuted = false;
+      const result1 = self.updateRemoteWantsFramerate();
     }
   }
-  let obj = {
-    key: "initialize",
-    value() {
-      this.userSpeakingChange(true);
-    }
-  };
-  const items = [obj, , , , ];
-  obj = {
-    key: "userSpeakingChange",
-    value(arg0) {
-      let self = this;
-      self = this;
-      const connection = this.connection;
-      if (!connection.hasDesktopSource()) {
-        let result = self.destroyFramerateScaleFactorTimers();
-        if (arg0) {
-          const _setTimeout = setTimeout;
-          self.framerateReductionTimeout = setTimeout(() => {
-            if (!self.connection.destroyed) {
-              const _HermesInternal = HermesInternal;
-              outer2_6.info("BaseConnection.userSpeakingChange: Reduced framerate after " + outer2_5 + " ms.");
-              self.framerateReductionTimeout = undefined;
-              self.sinkWants.isMuted = true;
-              const result = self.updateRemoteWantsFramerate();
-            }
-          }, outer1_5);
-        } else if (self.sinkWants.isMuted) {
-          self.sinkWants.isMuted = false;
-          const result1 = self.updateRemoteWantsFramerate();
-        }
-      }
-    }
-  };
-  items[1] = obj;
-  obj = {
-    key: "destroyFramerateScaleFactorTimers",
-    value() {
-      const self = this;
-      if ("number" === typeof this.framerateReductionTimeout) {
-        const _clearTimeout = clearTimeout;
-        clearTimeout(self.framerateReductionTimeout);
-        self.framerateReductionTimeout = undefined;
-      }
-    }
-  };
-  items[2] = obj;
-  items[3] = {
-    key: "updateRemoteWantsFramerate",
-    value() {
-      const connection = this.connection;
-      connection.updateVideoQuality(["remoteSinkWantsMaxFramerate"]);
-    }
-  };
-  items[4] = {
-    key: "destroy",
-    value() {
-      const result = this.destroyFramerateScaleFactorTimers();
-    }
-  };
-  return callback(ConnectionEventFramerateReducer, items);
-})();
-let result = require("DesktopSources").fileFinishedImporting("../discord_common/js/packages/media-engine/ConnectionEventFramerateReducer.tsx");
+};
+prototype["destroyFramerateScaleFactorTimers"] = function destroyFramerateScaleFactorTimers() {
+  const self = this;
+  if (typeof this.framerateReductionTimeout !== "os") {
+    const _clearTimeout = clearTimeout;
+    clearTimeout(self.framerateReductionTimeout);
+    self.framerateReductionTimeout = undefined;
+  }
+};
+prototype["updateRemoteWantsFramerate"] = function updateRemoteWantsFramerate() {
+  const connection = this.connection;
+  connection.updateVideoQuality(["remoteSinkWantsMaxFramerate"]);
+};
+prototype["destroy"] = function destroy() {
+  const result = this.destroyFramerateScaleFactorTimers();
+};
 
-export default tmp4;
+export default ConnectionEventFramerateReducer;

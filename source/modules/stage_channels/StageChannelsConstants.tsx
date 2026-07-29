@@ -1,13 +1,13 @@
-// Module ID: 4982
-// Function ID: 42553
+// Module ID: 5004
+// Function ID: 5005
 // Name: MAX_STAGE_TOPIC_LENGTH
-// Dependencies: [653, 1212, 1921, 2]
+// Dependencies: [676, 1236, 1945, 2]
 // Exports: getStagePublicInfoText
 
-// Module 4982 (MAX_STAGE_TOPIC_LENGTH)
+// Module 5004 (MAX_STAGE_TOPIC_LENGTH)
 import { HelpdeskArticles } from "ME";
 
-const result = require("wrapURL").fileFinishedImporting("modules/stage_channels/StageChannelsConstants.tsx");
+const result = require("combined").fileFinishedImporting("modules/stage_channels/StageChannelsConstants.tsx");
 
 export const MAX_STAGE_TOPIC_LENGTH = 240;
 export const MAX_AUDIENCE_ROW_LIMIT = 4;
@@ -25,14 +25,15 @@ export const STAGE_BOOSTING_SHEET_KEY = "stage-boosting";
 export const STAGE_AUDIENCE_NOTICE_SHOWN_STORAGE_KEY = "stage-channel-audience-notice-shown";
 export const RequestToSpeakPermissionStates = { EVERYONE: 1, [1]: "EVERYONE", NO_ONE: 2, [2]: "NO_ONE", ROLES: 3, [3]: "ROLES" };
 export const getStagePublicInfoText = function getStagePublicInfoText() {
-  const intl = require(1212) /* getSystemLocale */.intl;
-  const items = [intl.string(require(1212) /* getSystemLocale */.t["9XlQ9W"]), , , ];
-  const intl2 = require(1212) /* getSystemLocale */.intl;
-  items[1] = intl2.string(require(1212) /* getSystemLocale */.t.lF0IbB);
-  const intl3 = require(1212) /* getSystemLocale */.intl;
-  const obj = { articleURL: importDefault(1921).getArticleURL(HelpdeskArticles.STAGE_CHANNEL_GUIDELINES) };
-  items[2] = intl3.format(require(1212) /* getSystemLocale */.t.q2jZ6N, obj);
-  const intl4 = require(1212) /* getSystemLocale */.intl;
-  items[3] = intl4.string(require(1212) /* getSystemLocale */.t.xfb7ZU);
+  const intl = require(1236) /* getSystemLocale */.intl;
+  const items = [intl.string(require(1236) /* getSystemLocale */.t["9XlQ9W"]), , , ];
+  const intl2 = require(1236) /* getSystemLocale */.intl;
+  items[1] = intl2.string(require(1236) /* getSystemLocale */.t.lF0IbB);
+  const intl3 = require(1236) /* getSystemLocale */.intl;
+  const obj = { articleURL: null };
+  obj[0] = importDefault(1945).getArticleURL(HelpdeskArticles.STAGE_CHANNEL_GUIDELINES);
+  items[2] = intl3.format(require(1236) /* getSystemLocale */.t.q2jZ6N, obj);
+  const intl4 = require(1236) /* getSystemLocale */.intl;
+  items[3] = intl4.string(require(1236) /* getSystemLocale */.t.xfb7ZU);
   return items;
 };

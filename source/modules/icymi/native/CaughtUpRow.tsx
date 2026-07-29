@@ -1,248 +1,299 @@
-// Module ID: 15352
-// Function ID: 116955
+// Module ID: 15385
+// Function ID: 15386
 // Name: ExploreServersRow
-// Dependencies: [5, 57, 31, 27, 33, 4026, 4161, 15289, 689, 8161, 15306, 15302, 4017, 4166, 3869, 11980, 1212, 4578, 15328, 4589, 668, 666, 2]
+// Dependencies: [5, 32, 19, 17, 21, 4050, 4185, 15322, 712, 8185, 15339, 15335, 4041, 4190, 3893, 12004, 1236, 4600, 15361, 4611, 691, 689, 2]
 // Exports: default
 
-// Module 15352 (ExploreServersRow)
-import module_4026 from "module_4026";
+// Module 15385 (ExploreServersRow)
+import module_4050 from "module_4050";
 import _slicedToArray from "_slicedToArray";
-import result from "result";
-import { View } from "get ActivityIndicator";
-import jsxProd from "jsxProd";
+import LinearGradient from "LinearGradient";
+import { View } from "Button";
+import jsxProd from "n";
 import createICYMIStyles from "createICYMIStyles";
-import importDefaultResult from "module_4026";
+import importDefaultResult from "module_4050";
 
-let closure_7;
-let closure_8;
+let error;
+let metroImportAll;
 const require = arg1;
-({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-let closure_9 = require("module_4026").createAnimatedComponent(require("Text").Text);
+({ jsx: error, jsxs: metroImportAll } = jsxProd);
+let closure_9 = require("module_4050").createAnimatedComponent(require("Text").Text);
 let closure_10 = createICYMIStyles.createICYMIStyles((margin) => {
-  let obj = {};
-  obj = { flex: 1, display: "flex", alignItems: "center", justifyContent: "center", marginVertical: importDefault(689).space.PX_32 };
-  obj.container = obj;
-  obj = { marginHorizontal: margin.margin, marginBottom: importDefault(689).space.PX_24 };
-  obj.textContainer = obj;
-  obj.recommendedGuildsContainer = { flex: 1, marginBottom: importDefault(689).space.PX_24 };
-  const obj2 = { display: "flex", alignItems: "center", justifyContent: "center", marginBottom: importDefault(689).space.PX_24 };
-  obj.iconWrapper = obj2;
-  obj.icon = { height: 40, width: 40 };
-  const obj3 = { alignSelf: "center", marginBottom: importDefault(689).space.PX_8, textAlign: "center" };
-  obj.headerText = obj3;
-  obj.subtitleText = { alignSelf: "center", textAlign: "center" };
-  const obj4 = { flex: 1, width: "100%", gap: importDefault(689).space.PX_12, paddingHorizontal: margin.margin };
-  obj.buttonContainer = obj4;
-  obj.gradient = { position: "absolute", top: 0, left: 0, right: 0, height: 150 };
+  let obj = { container: null, textContainer: null, recommendedGuildsContainer: null, iconWrapper: null, icon: null, headerText: null, subtitleText: null, buttonContainer: null, gradient: null };
+  obj = { flex: 1, display: "flex", alignItems: "center", justifyContent: "center", marginVertical: importDefault(712).space.PX_32 };
+  obj[0] = obj;
+  obj = { marginHorizontal: margin.margin, marginBottom: importDefault(712).space.PX_24 };
+  obj[1] = obj;
+  obj[2] = { flex: 1, marginBottom: importDefault(712).space.PX_24 };
+  const obj1 = { flex: 1, marginBottom: importDefault(712).space.PX_24 };
+  obj[3] = { display: "flex", alignItems: "center", justifyContent: "center", marginBottom: importDefault(712).space.PX_24 };
+  obj[4] = { height: 40, width: 40 };
+  const obj2 = { display: "flex", alignItems: "center", justifyContent: "center", marginBottom: importDefault(712).space.PX_24 };
+  obj[5] = { alignSelf: "center", marginBottom: importDefault(712).space.PX_8, textAlign: "center" };
+  obj[6] = { alignSelf: "center", textAlign: "center" };
+  const obj3 = { alignSelf: "center", marginBottom: importDefault(712).space.PX_8, textAlign: "center" };
+  obj[7] = { flex: 1, width: "100%", gap: importDefault(712).space.PX_12, paddingHorizontal: margin.margin };
+  obj[8] = { position: "absolute", top: 0, left: 0, right: 0, height: 150 };
   return obj;
 });
 let closure_11 = { code: "function CaughtUpRowTsx1(){const{visibleSharedValue,withTiming,Easing}=this.__closure;return{transform:[{translateY:visibleSharedValue.get()?withTiming(0,{duration:250,easing:Easing.bezier(0.5,1.8,0.5,1)}):-80}],opacity:visibleSharedValue.get()?withTiming(1,{duration:100,easing:Easing.out(Easing.bezierFn(0.33,1,0.68,1))}):0};}" };
 let closure_12 = { code: "function CaughtUpRowTsx2(){const{visibleSharedValue,withDelay,withSequence,withTiming,Easing}=this.__closure;return{transform:[{translateY:visibleSharedValue.get()?withDelay(80,withSequence(withTiming(8,{duration:100,easing:Easing.inOut(Easing.ease)}),withTiming(0,{duration:300,easing:Easing.out(Easing.ease)}))):0}]};}" };
 let closure_13 = { code: "function CaughtUpRowTsx3(){const{visibleSharedValue,withDelay,withSequence,withTiming,Easing}=this.__closure;return{transform:[{translateY:visibleSharedValue.get()?withDelay(115,withSequence(withTiming(8,{duration:150,easing:Easing.inOut(Easing.ease)}),withTiming(0,{duration:300,easing:Easing.out(Easing.ease)}))):0}]};}" };
-let result = require("result").fileFinishedImporting("modules/icymi/native/CaughtUpRow.tsx");
+let result = require("noop").fileFinishedImporting("modules/icymi/native/CaughtUpRow.tsx");
 
 export default function ExploreServersRow(visible) {
   visible = visible.visible;
-  let tmp = callback5();
-  let obj = visible(4026);
-  const sharedValue = obj.useSharedValue(false);
+  let sharedValue;
+  let dependencyMap;
+  const tmp = callback5();
+  let obj = visible(4050);
+  sharedValue = obj.useSharedValue(false);
   let items = [visible, sharedValue];
   const effect = React.useEffect(() => {
-    let tmp = visible;
+    let tmp2 = visible;
     if (visible) {
-      tmp = sharedValue.get() !== visible;
+      tmp2 = sharedValue.get() !== tmp;
     }
-    if (tmp) {
+    if (tmp2) {
       const _setTimeout = setTimeout;
       const timerId = setTimeout(() => {
-        const result = outer1_1.set(true);
+        const result = closure_1.set(true);
       }, 500);
     }
   }, items);
   const tmp4 = callback2(React.useState(false), 2);
-  const dependencyMap = tmp5;
-  // CreateGeneratorClosureLongIndex (0x67)
-  callback = React.useCallback(callback(tmp5), []);
+  dependencyMap = tmp4[1];
+  callback = React.useCallback(callback(function*() {
+    if (dependencyMap === 2) {
+      dependencyMap = 3;
+      HermesBuiltin.throwTypeError();
+    } else if (tmp3 === 3) {
+      if (arg0 === 1) {
+        throw arg1;
+      } else if (arg0 === 2) {
+        let obj = { value: null, done: true };
+        obj[0] = arg1;
+        return obj;
+      } else {
+        return { value: "HermesInternal", done: null };
+      }
+    } else {
+      try {
+        dependencyMap = 2;
+        if (0 === v0) {
+          if (arg0 === 1) {
+            dependencyMap = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            dependencyMap = 3;
+            obj = { value: null, done: true };
+            obj[0] = arg1;
+            return obj;
+          } else {
+            let closure_0 = tmp4;
+            dependencyMap(true);
+            v0(8185).itemInteracted("caught_up", "caught_up", "press_explore");
+            const obj5 = v0(8185);
+            const obj1 = { itemId: "caught_up", itemType: "caught_up", actionParameters: null };
+            obj1[2] = { actionGestureType: "press", actionTargetElement: "browse_servers_button", actionIntentType: "open", actionDestinationType: null };
+            v0(8185).feedItemActioned(obj1);
+            const obj6 = v0(8185);
+            v0 = 1;
+            dependencyMap = 1;
+            const obj2 = { value: null, done: false };
+            obj2[0] = outer1_0(15339).maybeFetchGuildDiscoveryCategories();
+            return obj2;
+          }
+        } else if (arg0 === 1) {
+          dependencyMap = 3;
+          throw arg1;
+        } else if (arg0 === 2) {
+          dependencyMap = 3;
+          obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
+        } else {
+          const _setTimeout = setTimeout;
+          let timerId = setTimeout(() => {
+            tmp4(table[11]).pushICYMIInfoModal({ extendedOnboarding: true, skipIntro: true });
+            const timerId = setTimeout(() => {
+              callback(false);
+            }, 500);
+          }, 100);
+          dependencyMap = 3;
+          return { value: "HermesInternal", done: null };
+        }
+      } catch (tmp8) {
+        dependencyMap = tmp;
+        throw tmp8;
+      }
+    }
+  }), []);
   const callback1 = React.useCallback(() => {
-    let obj = sharedValue(tmp5[9]);
-    obj.itemInteracted("caught_up", "caught_up", "press_home");
-    obj = { itemId: "caught_up", itemType: "caught_up", actionParameters: { actionGestureType: "press", actionTargetElement: "back_to_home_button", actionIntentType: "navigate", actionDestinationType: "guild_home" } };
-    sharedValue(tmp5[9]).feedItemActioned(obj);
-    const obj2 = sharedValue(tmp5[9]);
-    const rootNavigationRef = visible(tmp5[12]).getRootNavigationRef();
-    if (null != rootNavigationRef) {
-      obj = { screen: "guilds" };
-      rootNavigationRef.navigate("tabs", obj);
+    sharedValue(8185).itemInteracted("caught_up", "caught_up", "press_home");
+    const obj = sharedValue(8185);
+    sharedValue(8185).feedItemActioned({ itemId: "caught_up", itemType: "caught_up", actionParameters: { actionGestureType: "press", actionTargetElement: "back_to_home_button", actionIntentType: "navigate", actionDestinationType: "guild_home" } });
+    const obj2 = sharedValue(8185);
+    const rootNavigationRef = visible(4041).getRootNavigationRef();
+    if (rootNavigationRef != null) {
+      rootNavigationRef.navigate("tabs", { screen: "guilds" });
     }
   }, []);
-  let obj1 = visible(4026);
+  let obj1 = visible(4050);
   class E {
     constructor() {
-      obj = {};
-      obj = {};
+      obj = c1;
       num = -80;
-      if (closure_1.get()) {
+      if (c1.get()) {
         tmp = visible;
-        tmp2 = c2;
-        num2 = 13;
-        obj3 = visible(c2[13]);
-        obj1 = {};
-        num3 = 250;
-        obj1.duration = 250;
-        num4 = 5;
-        Easing = visible(c2[5]).Easing;
+        tmp2 = useState;
+        obj2 = visible(useState[13]);
+        obj = { duration: 250, easing: null };
+        tmp3 = visible;
+        tmp4 = useState;
+        Easing = visible(useState[5]).Easing;
+        num2 = 1;
+        num3 = 0.5;
+        num4 = 1.8;
+        tmp5 = Easing;
         num5 = 0.5;
-        num6 = 1.8;
-        num7 = 1;
-        tmp3 = Easing;
-        num8 = 0.5;
-        num9 = 0.5;
-        obj1.easing = Easing.bezier(0.5, 1.8, 0.5, 1);
-        num10 = 0;
-        num = obj3.withTiming(0, obj1);
+        num6 = 0.5;
+        obj[1] = Easing.bezier(0.5, 1.8, 0.5, 1);
+        num7 = 0;
+        num = obj2.withTiming(0, obj);
       }
-      obj.translateY = num;
+      obj1 = { transform: items, opacity: null };
       items = [];
-      items[0] = obj;
-      obj.transform = items;
-      num11 = 0;
-      if (closure_1.get()) {
-        tmp4 = visible;
-        tmp5 = c2;
-        num12 = 13;
-        obj5 = visible(c2[13]);
-        obj2 = {};
-        num13 = 100;
-        obj2.duration = 100;
-        num14 = 5;
-        Easing2 = visible(c2[5]).Easing;
-        Easing3 = visible(c2[5]).Easing;
-        num15 = 0.33;
-        num16 = 1;
-        num17 = 0.68;
-        tmp6 = Easing3;
-        num18 = 1;
-        num19 = 1;
-        obj2.easing = Easing2.out(Easing3.bezierFn(0.33, 1, 0.68, 1));
-        num11 = obj5.withTiming(1, obj2);
+      items[0] = { translateY: num };
+      num8 = 0;
+      if (obj.get()) {
+        tmp6 = visible;
+        tmp7 = useState;
+        obj5 = visible(useState[13]);
+        obj2 = { duration: 100, easing: null };
+        tmp8 = visible;
+        tmp9 = useState;
+        Easing2 = visible(useState[5]).Easing;
+        tmp10 = visible;
+        tmp11 = useState;
+        Easing3 = visible(useState[5]).Easing;
+        num9 = 1;
+        num10 = 0.68;
+        num11 = 0.33;
+        tmp12 = Easing3;
+        num12 = 1;
+        num13 = 1;
+        obj2[1] = Easing2.out(Easing3.bezierFn(0.33, 1, 0.68, 1));
+        num8 = obj5.withTiming(1, obj2);
       }
-      obj.opacity = num11;
-      return obj;
+      obj1[1] = num8;
+      return obj1;
     }
   }
-  obj = { visibleSharedValue: sharedValue, withTiming: visible(4166).withTiming, Easing: visible(4026).Easing };
+  obj = { visibleSharedValue: sharedValue, withTiming: visible(4190).withTiming, Easing: visible(4050).Easing };
   E.__closure = obj;
   E.__workletHash = 6575188656069;
   E.__initData = closure_11;
   const animatedStyle = obj1.useAnimatedStyle(E);
-  let obj3 = visible(4026);
+  let obj3 = visible(4050);
   const fn = function b() {
-    let obj = {};
-    obj = {};
     let num = 0;
     if (sharedValue.get()) {
-      const obj3 = visible(tmp5[5]);
-      const obj4 = visible(tmp5[5]);
-      obj = { duration: 100 };
-      const Easing = visible(tmp5[5]).Easing;
-      obj.easing = Easing.inOut(visible(tmp5[5]).Easing.ease);
-      const obj5 = visible(tmp5[13]);
-      const withTimingResult = visible(tmp5[13]).withTiming(8, obj);
-      const obj1 = { duration: 300 };
-      const Easing2 = visible(tmp5[5]).Easing;
-      obj1.easing = Easing2.out(visible(tmp5[5]).Easing.ease);
-      num = obj3.withDelay(80, obj4.withSequence(withTimingResult, visible(tmp5[13]).withTiming(0, obj1)));
-      const obj7 = visible(tmp5[13]);
+      let obj = visible(4050);
+      const obj2 = visible(4050);
+      obj = { duration: 100, easing: null };
+      const Easing = visible(4050).Easing;
+      obj[1] = Easing.inOut(visible(4050).Easing.ease);
+      const obj3 = visible(4190);
+      const withTimingResult = visible(4190).withTiming(8, obj);
+      obj = { duration: 300, easing: null };
+      const Easing2 = visible(4050).Easing;
+      obj[1] = Easing2.out(visible(4050).Easing.ease);
+      num = obj.withDelay(80, obj2.withSequence(withTimingResult, visible(4190).withTiming(0, obj)));
+      const obj5 = visible(4190);
     }
-    obj.translateY = num;
-    const items = [obj];
-    obj.transform = items;
-    return obj;
+    const transform = [{ translateY: num }];
+    return { transform };
   };
-  obj = { visibleSharedValue: sharedValue, withDelay: visible(4026).withDelay, withSequence: visible(4026).withSequence, withTiming: visible(4166).withTiming, Easing: visible(4026).Easing };
+  obj = { visibleSharedValue: sharedValue, withDelay: visible(4050).withDelay, withSequence: visible(4050).withSequence, withTiming: visible(4190).withTiming, Easing: visible(4050).Easing };
   fn.__closure = obj;
   fn.__workletHash = 469742746264;
   fn.__initData = closure_12;
   const animatedStyle1 = obj3.useAnimatedStyle(fn);
-  let obj5 = visible(4026);
+  let obj5 = visible(4050);
   const fn2 = function x() {
-    let obj = {};
-    obj = {};
     let num = 0;
     if (sharedValue.get()) {
-      const obj3 = visible(tmp5[5]);
-      const obj4 = visible(tmp5[5]);
-      obj = { duration: 150 };
-      const Easing = visible(tmp5[5]).Easing;
-      obj.easing = Easing.inOut(visible(tmp5[5]).Easing.ease);
-      const obj5 = visible(tmp5[13]);
-      const withTimingResult = visible(tmp5[13]).withTiming(8, obj);
-      const obj1 = { duration: 300 };
-      const Easing2 = visible(tmp5[5]).Easing;
-      obj1.easing = Easing2.out(visible(tmp5[5]).Easing.ease);
-      num = obj3.withDelay(115, obj4.withSequence(withTimingResult, visible(tmp5[13]).withTiming(0, obj1)));
-      const obj7 = visible(tmp5[13]);
+      let obj = visible(4050);
+      const obj2 = visible(4050);
+      obj = { duration: 150, easing: null };
+      const Easing = visible(4050).Easing;
+      obj[1] = Easing.inOut(visible(4050).Easing.ease);
+      const obj3 = visible(4190);
+      const withTimingResult = visible(4190).withTiming(8, obj);
+      obj = { duration: 300, easing: null };
+      const Easing2 = visible(4050).Easing;
+      obj[1] = Easing2.out(visible(4050).Easing.ease);
+      num = obj.withDelay(115, obj2.withSequence(withTimingResult, visible(4190).withTiming(0, obj)));
+      const obj5 = visible(4190);
     }
-    obj.translateY = num;
-    const items = [obj];
-    obj.transform = items;
-    return obj;
+    const transform = [{ translateY: num }];
+    return { transform };
   };
-  obj1 = { visibleSharedValue: sharedValue, withDelay: visible(4026).withDelay, withSequence: visible(4026).withSequence, withTiming: visible(4166).withTiming, Easing: visible(4026).Easing };
+  obj1 = { visibleSharedValue: sharedValue, withDelay: visible(4050).withDelay, withSequence: visible(4050).withSequence, withTiming: visible(4190).withTiming, Easing: visible(4050).Easing };
   fn2.__closure = obj1;
   fn2.__workletHash = 14933607481025;
   fn2.__initData = closure_13;
   const animatedStyle2 = obj5.useAnimatedStyle(fn2);
-  let obj7 = visible(3869);
-  const token = obj7.useToken(sharedValue(689).colors.BACKGROUND_BRAND);
-  let obj2 = {};
-  obj3 = { style: tmp.container };
-  let obj4 = { style: tmp.textContainer };
-  obj5 = { style: items1 };
+  let obj7 = visible(3893);
+  const token = obj7.useToken(sharedValue(712).colors.BACKGROUND_BRAND);
+  let obj2 = { children: null };
+  obj3 = { style: tmp.container, children: null };
+  const obj4 = { style: tmp.textContainer, children: null };
+  obj5 = { style: items1, children: null };
   items1 = [tmp.iconWrapper, animatedStyle];
-  const obj6 = { size: "custom", style: tmp.icon, color: "background-brand" };
-  obj5.children = callback3(visible(11980).FlashIcon, obj6);
-  const items2 = [callback3(sharedValue(4026).View, obj5), , ];
-  obj7 = { variant: "heading-lg/semibold", color: "mobile-text-heading-primary" };
-  const items3 = [tmp.headerText, animatedStyle1];
-  obj7.style = items3;
-  const intl = visible(1212).intl;
-  obj7.children = intl.string(visible(1212).t.xjxffq);
+  obj5[1] = callback3(visible(12004).FlashIcon, { size: "custom", style: tmp.icon, color: "background-brand" });
+  const items2 = [callback3(sharedValue(4050).View, obj5), , ];
+  obj7 = { variant: "heading-lg/semibold", color: "mobile-text-heading-primary", style: items3, children: null };
+  items3 = [tmp.headerText, animatedStyle1];
+  const intl = visible(1236).intl;
+  obj7[3] = intl.string(visible(1236).t.xjxffq);
   items2[1] = callback3(closure_9, obj7);
-  const obj8 = { variant: "text-md/normal", color: "text-default" };
-  const items4 = [tmp.subtitleText, animatedStyle2];
-  obj8.style = items4;
-  const intl2 = visible(1212).intl;
-  obj8.children = intl2.string(visible(1212).t.sAApb0);
+  const obj8 = { variant: "text-md/normal", color: "text-default", style: items4, children: null };
+  items4 = [tmp.subtitleText, animatedStyle2];
+  const intl2 = visible(1236).intl;
+  obj8[3] = intl2.string(visible(1236).t.sAApb0);
   items2[2] = callback3(closure_9, obj8);
-  obj4.children = items2;
+  obj4[1] = items2;
   const items5 = [callback4(View, obj4), ];
-  const obj9 = { style: tmp.buttonContainer };
-  const obj10 = { size: "md", text: null, grow: true, variant: "primary" };
-  const intl3 = visible(1212).intl;
-  obj10.text = intl3.string(visible(1212).t.lNJYV8);
-  obj10.onPress = callback;
-  obj10.loading = tmp4[0];
-  const items6 = [callback3(visible(4578).Button, obj10), ];
-  const obj11 = { size: "md", text: null, grow: true, variant: "secondary" };
-  const intl4 = visible(1212).intl;
-  obj11.text = intl4.string(visible(1212).t.AGrUbj);
-  obj11.onPress = callback1;
-  items6[1] = callback3(visible(4578).Button, obj11);
-  obj9.children = items6;
+  const obj9 = { style: tmp.buttonContainer, children: null };
+  const obj10 = { size: "md", text: null, grow: true, variant: "primary", onPress: null, loading: null };
+  const intl3 = visible(1236).intl;
+  obj10[1] = intl3.string(visible(1236).t.lNJYV8);
+  obj10[4] = callback;
+  obj10[5] = tmp4[0];
+  const items6 = [callback3(visible(4600).Button, obj10), ];
+  const obj11 = { size: "md", text: null, grow: true, variant: "secondary", onPress: null };
+  const intl4 = visible(1236).intl;
+  obj11[1] = intl4.string(visible(1236).t.AGrUbj);
+  obj11[4] = callback1;
+  items6[1] = callback3(visible(4600).Button, obj11);
+  obj9[1] = items6;
   items5[1] = callback4(View, obj9);
-  obj3.children = items5;
-  const items7 = [callback4(View, obj3), callback3(visible(15328).Separator, {}), ];
-  const obj12 = { style: tmp.gradient, start: visible(668).VerticalGradient.START, end: visible(668).VerticalGradient.END };
-  const tmp12 = sharedValue(4589);
-  const obj20 = sharedValue(666)(token);
-  const items8 = [sharedValue(666)(token).alpha(0.2).hex(), ];
-  const alphaResult = sharedValue(666)(token).alpha(0.2);
-  const obj22 = sharedValue(666)(token);
-  items8[1] = sharedValue(666)(token).alpha(0).hex();
-  obj12.colors = items8;
-  obj12.pointerEvents = "none";
-  items7[2] = callback3(tmp12, obj12);
-  obj2.children = items7;
+  obj3[1] = items5;
+  const items7 = [callback4(View, obj3), callback3(visible(15361).Separator, {}), ];
+  const obj12 = { style: tmp.gradient, start: null, end: null, colors: null, pointerEvents: "none" };
+  obj12[1] = visible(691).VerticalGradient.START;
+  obj12[2] = visible(691).VerticalGradient.END;
+  let obj6 = { size: "custom", style: tmp.icon, color: "background-brand" };
+  const tmp11 = sharedValue(4611);
+  const obj20 = sharedValue(689)(token);
+  const items8 = [sharedValue(689)(token).alpha(0.2).hex(), ];
+  const alphaResult = sharedValue(689)(token).alpha(0.2);
+  const obj22 = sharedValue(689)(token);
+  items8[1] = sharedValue(689)(token).alpha(0).hex();
+  obj12[3] = items8;
+  items7[2] = callback3(tmp11, obj12);
+  obj2[0] = items7;
   return callback4(View, obj2);
 };

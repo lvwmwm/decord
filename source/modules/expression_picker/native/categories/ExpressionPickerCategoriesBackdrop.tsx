@@ -1,42 +1,44 @@
-// Module ID: 9421
-// Function ID: 73275
-// Dependencies: [31, 27, 653, 33, 4165, 689, 477, 8354, 2]
+// Module ID: 9445
+// Function ID: 9446
+// Dependencies: [19, 17, 676, 21, 4189, 712, 500, 8378, 2]
 
-// Module 9421
+// Module 9445
 import get_ActivityIndicator from "get ActivityIndicator";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import importAllResult from "result";
+import createCacheKey from "createCacheKey";
+import importAllResult from "noop";
 
 let StyleSheet;
-let closure_3;
+let c3;
 const require = arg1;
-({ StyleSheet, View: closure_3 } = get_ActivityIndicator);
-let obj = {};
+({ StyleSheet, View: c3 } = get_ActivityIndicator);
+let obj = { backdrop: null, backdropAndroid: null };
 obj = {};
 const merged = Object.assign(StyleSheet.absoluteFillObject);
-obj["borderTopWidth"] = StyleSheet.hairlineWidth;
-obj["borderTopColor"] = require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWEST;
-obj.backdrop = obj;
-_createForOfIteratorHelperLoose = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.PROFILE_GRADIENT_NOTE_BACKGROUND, height: require("ME").EXPRESSION_FOOTER_HEIGHT, bottom: undefined };
-obj.backdropAndroid = _createForOfIteratorHelperLoose;
-let closure_5 = _createForOfIteratorHelperLoose.createStyles(obj);
-const memoResult = require("result").memo(function EmojiPickerCategoriesBackdrop() {
+obj.borderTopWidth = StyleSheet.hairlineWidth;
+obj.borderTopColor = require("Themes").colors.BACKGROUND_BASE_LOWEST;
+obj[0] = obj;
+createCacheKey = { backgroundColor: require("Themes").colors.PROFILE_GRADIENT_NOTE_BACKGROUND, height: require("ME").EXPRESSION_FOOTER_HEIGHT, bottom: "Array" };
+obj[1] = createCacheKey;
+let closure_5 = createCacheKey.createStyles(obj);
+const memoResult = require("noop").memo(function EmojiPickerCategoriesBackdrop() {
   const tmp = callback();
-  let obj = require(477) /* set */;
+  let obj = require(500) /* set */;
   if (obj.isAndroid()) {
-    obj = {};
+    obj = { style: null };
     const items = [, ];
     ({ backdrop: arr[0], backdropAndroid: arr[1] } = tmp);
-    obj.style = items;
-    let tmp2Result = tmp2(tmp3, obj);
+    obj[0] = items;
+    let tmp3Result = tmp3(tmp4, obj);
   } else {
-    obj = { style: tmp.backdrop };
-    const obj1 = { style: tmp.backdrop };
-    obj.children = tmp2(importDefault(8354), obj1);
-    tmp2Result = tmp2(tmp3, obj);
+    obj = { style: null, children: null };
+    obj[0] = tmp.backdrop;
+    const obj1 = { style: null };
+    obj1[0] = tmp.backdrop;
+    obj[1] = tmp3(importDefault(8378), obj1);
+    tmp3Result = tmp3(tmp4, obj);
   }
-  return tmp2Result;
+  return tmp3Result;
 });
 const result = require("ME").fileFinishedImporting("modules/expression_picker/native/categories/ExpressionPickerCategoriesBackdrop.tsx");
 

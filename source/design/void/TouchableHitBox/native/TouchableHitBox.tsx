@@ -1,165 +1,129 @@
-// Module ID: 8316
-// Function ID: 66600
-// Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 31, 27, 33, 4165, 689, 1273, 4695, 3877, 2]
+// Module ID: 8340
+// Function ID: 8341
+// Name: render
+// Dependencies: [19, 17, 21, 4189, 712, 3901, 1297, 4717, 2]
 
-// Module 8316 (_isNativeReflectConstruct)
-import getActivityIndicator from "get ActivityIndicator";
-import jsxProd from "jsxProd";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
+// Module 8340 (render)
 import { ActivityIndicator } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import importAllResult from "result";
+import createCacheKey from "createCacheKey";
+import { PureComponent } from "noop";
+import importAllResult from "noop";
 
 const require = arg1;
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
-  }
-  const result = _isNativeReflectConstruct();
+createCacheKey = { button: null, buttonText: null, buttonIcon: null, buttonSpinner: null, buttonDisabled: null };
+createCacheKey = { flexGrow: 0, flexShrink: 1, justifyContent: "center", alignItems: "center", backgroundColor: "transparent", alignSelf: "flex-start", borderRadius: require("Themes").radii.sm };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { lineHeight: 24, margin: 10, maxWidth: 60, fontSize: 16 };
+createCacheKey[2] = { margin: 10 };
+createCacheKey[3] = { margin: 12 };
+createCacheKey[4] = { opacity: 0.6 };
+createCacheKey = createCacheKey.createLegacyClassComponentStyles(createCacheKey);
+class TouchableHitBox extends PureComponent {
 }
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { flexGrow: 0, flexShrink: 1, justifyContent: "center", alignItems: "center", backgroundColor: "transparent", alignSelf: "flex-start", borderRadius: require("_createForOfIteratorHelperLoose").radii.sm };
-_createForOfIteratorHelperLoose.button = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.buttonText = { lineHeight: 24, margin: 10, maxWidth: 60, fontSize: 16 };
-_createForOfIteratorHelperLoose.buttonIcon = { margin: 10 };
-_createForOfIteratorHelperLoose.buttonSpinner = { margin: 12 };
-_createForOfIteratorHelperLoose.buttonDisabled = { opacity: 0.6 };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createLegacyClassComponentStyles(_createForOfIteratorHelperLoose);
-const tmp3 = ((PureComponent) => {
-  class TouchableHitBox {
-    constructor() {
-      self = this;
-      tmp = outer1_2(this, TouchableHitBox);
-      obj = outer1_5(TouchableHitBox);
-      tmp2 = outer1_4;
-      if (outer1_10()) {
-        tmp6 = globalThis;
-        _Reflect = Reflect;
-        tmp7 = outer1_5;
-        tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, outer1_5(self).constructor);
-      } else {
-        tmp3 = arguments;
-        tmp4 = arguments;
-        constructResult = obj(...arguments);
+TouchableHitBox.prototype["render"] = function render() {
+  let IconComponent;
+  let accessibilityLabel;
+  let accessibilityRole;
+  let accessibilityState;
+  let activeOpacity;
+  let color;
+  let disableColor;
+  let disabled;
+  let iconSize;
+  let iconStyle;
+  let loading;
+  let onLongPress;
+  let onPress;
+  let source;
+  let style;
+  let text;
+  const tmp = createCacheKey(this.context);
+  const props = this.props;
+  ({ disabled, source, text, loading, IconComponent, iconStyle, color, disableColor } = props);
+  let tmp2 = undefined !== disableColor;
+  ({ activeOpacity, onPress, onLongPress, style, iconSize } = props);
+  if (tmp2) {
+    tmp2 = disableColor;
+  }
+  const children = props.children;
+  let tmp8Result;
+  ({ accessibilityLabel, accessibilityRole, accessibilityState } = props);
+  if (null != source) {
+    const items = [tmp.buttonIcon, , ];
+    let buttonDisabled = disabled;
+    if (disabled) {
+      buttonDisabled = tmp.buttonDisabled;
+    }
+    let obj = { style: null, source: null, color: null, size: null, disableColor: null };
+    items[1] = buttonDisabled;
+    items[2] = iconStyle;
+    obj[0] = items;
+    obj[1] = source;
+    obj[2] = color;
+    obj[3] = iconSize;
+    obj[4] = tmp2;
+    tmp8Result = jsx(require(1297) /* Button */.Icon, { style: null, source: null, color: null, size: null, disableColor: null });
+    const tmp4 = jsx;
+  }
+  if (loading) {
+    obj = { style: null, animating: true, color: null };
+    obj[0] = tmp.buttonSpinner;
+    obj[2] = color;
+    tmp8Result = <ActivityIndicator style={null} animating color={null} />;
+  } else if (null != text) {
+    const items1 = [tmp.buttonText, , ];
+    let buttonDisabled3 = disabled;
+    if (disabled) {
+      buttonDisabled3 = tmp.buttonDisabled;
+    }
+    obj = { numberOfLines: 1, style: null, children: null };
+    items1[1] = buttonDisabled3;
+    const obj1 = { color: null };
+    obj1[0] = color;
+    items1[2] = obj1;
+    obj[1] = items1;
+    obj[2] = text;
+    tmp8Result = jsx(require(1297) /* Button */.LegacyText, { numberOfLines: 1, style: null, children: null });
+    const tmp8 = jsx;
+  } else {
+    if (null != IconComponent) {
+      if (null != source) {
+        const obj2 = { size: "sm", color: null, style: null };
+        obj2[1] = color;
+        const items2 = [tmp.buttonIcon, , ];
+        let buttonDisabled2 = disabled;
+        if (disabled) {
+          buttonDisabled2 = tmp.buttonDisabled;
+        }
+        items2[1] = buttonDisabled2;
+        items2[2] = iconStyle;
+        obj2[2] = items2;
+        tmp8Result = <IconComponent size="sm" color={null} style={null} />;
+        const tmp7 = jsx;
       }
-      return tmp2(self, constructResult);
+    }
+    if (null == source) {
+      if (null != children) {
+        tmp8Result = children;
+      }
     }
   }
-  callback2(TouchableHitBox, PureComponent);
-  let items = [
-    {
-      key: "render",
-      value() {
-        let IconComponent;
-        let accessibilityLabel;
-        let accessibilityRole;
-        let accessibilityState;
-        let activeOpacity;
-        let color;
-        let disableColor;
-        let disabled;
-        let iconSize;
-        let iconStyle;
-        let loading;
-        let onLongPress;
-        let onPress;
-        let source;
-        let style;
-        let text;
-        const tmp = outer1_9(this.context);
-        const props = this.props;
-        ({ disabled, source, text, loading, IconComponent, iconStyle, color, disableColor } = props);
-        let tmp2 = undefined !== disableColor;
-        ({ activeOpacity, onPress, onLongPress, style, iconSize } = props);
-        if (tmp2) {
-          tmp2 = disableColor;
-        }
-        const children = props.children;
-        let tmp8Result;
-        ({ accessibilityLabel, accessibilityRole, accessibilityState } = props);
-        if (null != source) {
-          let obj = {};
-          const items = [tmp.buttonIcon, , ];
-          let buttonDisabled = disabled;
-          if (disabled) {
-            buttonDisabled = tmp.buttonDisabled;
-          }
-          items[1] = buttonDisabled;
-          items[2] = iconStyle;
-          obj.style = items;
-          obj.source = source;
-          obj.color = color;
-          obj.size = iconSize;
-          obj.disableColor = tmp2;
-          tmp8Result = outer1_8(TouchableHitBox(outer1_1[10]).Icon, obj);
-          const tmp4 = outer1_8;
-        }
-        if (loading) {
-          obj = { style: tmp.buttonSpinner, animating: true, color };
-          tmp8Result = outer1_8(outer1_7, obj);
-        } else if (null != text) {
-          obj = { numberOfLines: 1 };
-          const items1 = [tmp.buttonText, , ];
-          let buttonDisabled3 = disabled;
-          if (disabled) {
-            buttonDisabled3 = tmp.buttonDisabled;
-          }
-          items1[1] = buttonDisabled3;
-          const obj1 = { color };
-          items1[2] = obj1;
-          obj.style = items1;
-          obj.children = text;
-          tmp8Result = outer1_8(TouchableHitBox(outer1_1[10]).LegacyText, obj);
-          const tmp8 = outer1_8;
-        } else {
-          if (null != IconComponent) {
-            if (null != source) {
-              const obj2 = { size: "sm", color };
-              const items2 = [tmp.buttonIcon, , ];
-              let buttonDisabled2 = disabled;
-              if (disabled) {
-                buttonDisabled2 = tmp.buttonDisabled;
-              }
-              items2[1] = buttonDisabled2;
-              items2[2] = iconStyle;
-              obj2.style = items2;
-              tmp8Result = outer1_8(IconComponent, obj2);
-              const tmp7 = outer1_8;
-            }
-          }
-          if (null == source) {
-            if (null != children) {
-              tmp8Result = children;
-            }
-          }
-        }
-        const obj3 = { accessibilityRole, accessibilityLabel, accessibilityState, onPress, onLongPress, activeOpacity, style: items3 };
-        items3 = [tmp.button, style];
-        if (!disabled) {
-          disabled = loading;
-        }
-        obj3.disabled = disabled;
-        obj3.children = tmp8Result;
-        return outer1_8(TouchableHitBox(outer1_1[11]).PressableOpacity, obj3);
-      }
-    }
-  ];
-  return callback(TouchableHitBox, items);
-})(require("result").PureComponent);
-tmp3.contextType = require("ManaContext").ThemeContext;
-tmp3.defaultProps = {
+  const obj3 = { accessibilityRole, accessibilityLabel, accessibilityState, onPress, onLongPress, activeOpacity, style: items3, disabled: null, children: null };
+  items3 = [tmp.button, style];
+  if (!disabled) {
+    disabled = loading;
+  }
+  obj3[7] = disabled;
+  obj3[8] = tmp8Result;
+  return jsx(require(4717) /* PressableBase */.PressableOpacity, { accessibilityRole, accessibilityLabel, accessibilityState, onPress, onLongPress, activeOpacity, style: items3, disabled: null, children: null });
+};
+TouchableHitBox.contextType = require("ManaContext").ThemeContext;
+TouchableHitBox.defaultProps = {
   onPress() {
 
   }
 };
-let result = require("_possibleConstructorReturn").fileFinishedImporting("design/void/TouchableHitBox/native/TouchableHitBox.tsx");
+const result = require("jsxProd").fileFinishedImporting("design/void/TouchableHitBox/native/TouchableHitBox.tsx");
 
-export default tmp3;
+export default TouchableHitBox;

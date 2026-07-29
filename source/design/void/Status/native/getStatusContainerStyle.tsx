@@ -1,85 +1,109 @@
-// Module ID: 13124
-// Function ID: 101256
-// Name: createContainerStyle
-// Dependencies: [1274, 2]
+// Module ID: 13147
+// Function ID: 13148
+// Name: STATUS_PADDING
+// Dependencies: [1298, 2]
 // Exports: default
 
-// Module 13124 (createContainerStyle)
+// Module 13147 (STATUS_PADDING)
 import STATUS_PADDING from "STATUS_PADDING";
 
-let StatusSizes;
-let closure_0;
-let closure_2;
-let closure_3;
-function createContainerStyle(LARGE, arg1) {
-  const obj = { width: sum };
-  sum = LARGE + 2 * closure_0;
-  let num = 0;
-  if (arg1) {
-    num = sum / 2.5;
-  }
-  obj.height = sum + num;
-  if (arg1) {
-    let result = sum / 4;
-  } else {
-    result = sum / 2;
-  }
-  obj.borderRadius = result;
-  obj.paddingLeft = closure_0;
-  obj.paddingRight = closure_0;
-  let num4 = 0;
-  if (arg1) {
-    num4 = 1;
-  }
-  obj.paddingTop = closure_0 + num4;
-  let num5 = 0;
-  if (arg1) {
-    num5 = 1;
-  }
-  obj.paddingBottom = closure_0 + num5;
-  return obj;
-}
-function createVRContainerStyle(LARGE) {
-  const result = LARGE * closure_2;
-  const sum = result + 2 * closure_0;
-  return { width: result * closure_3 + 2 * closure_0, height: sum, borderRadius: sum / 2, paddingLeft: closure_0, paddingRight: closure_0, paddingTop: closure_0, paddingBottom: closure_0 };
-}
-({ STATUS_PADDING: closure_0, StatusSizes } = STATUS_PADDING);
-({ VR_STATUS_SCALE: closure_2, VR_STATUS_WIDTH_RATIO: closure_3 } = STATUS_PADDING);
-let obj = { containerSmall: createContainerStyle(StatusSizes.SMALL, false), containerRefreshMedium: createContainerStyle(StatusSizes.REFRESH_MEDIUM_10, false), containerMedium: createContainerStyle(StatusSizes.MEDIUM, false), containerLarge: createContainerStyle(StatusSizes.LARGE, false), containerXLarge: createContainerStyle(StatusSizes.LARGE, false), containerMobileOnlineSmall: createContainerStyle(StatusSizes.SMALL, true), containerMobileOnlineRefreshMedium: createContainerStyle(StatusSizes.REFRESH_MEDIUM_10, true), containerMobileOnlineMedium: createContainerStyle(StatusSizes.MEDIUM, true), containerMobileOnlineLarge: createContainerStyle(StatusSizes.LARGE, true), containerMobileOnlineXLarge: createContainerStyle(StatusSizes.LARGE, true), containerVRSmall: createVRContainerStyle(StatusSizes.SMALL), containerVRRefreshMedium: createVRContainerStyle(StatusSizes.REFRESH_MEDIUM_10), containerVRMedium: createVRContainerStyle(StatusSizes.MEDIUM), containerVRLarge: createVRContainerStyle(StatusSizes.LARGE), containerVRXLarge: createVRContainerStyle(StatusSizes.LARGE) };
-let result = require("set").fileFinishedImporting("design/void/Status/native/getStatusContainerStyle.tsx");
+STATUS_PADDING = STATUS_PADDING.STATUS_PADDING;
+const StatusSizes = STATUS_PADDING.StatusSizes;
+const VR_STATUS_SCALE = STATUS_PADDING.VR_STATUS_SCALE;
+const VR_STATUS_WIDTH_RATIO = STATUS_PADDING.VR_STATUS_WIDTH_RATIO;
+let obj = { width: sum, height: sum, borderRadius: sum / 2, paddingLeft: STATUS_PADDING, paddingRight: STATUS_PADDING, paddingTop: STATUS_PADDING, paddingBottom: STATUS_PADDING };
+sum = StatusSizes.SMALL + 2 * STATUS_PADDING;
+obj = { width: sum1, height: sum1, borderRadius: sum1 / 2, paddingLeft: STATUS_PADDING, paddingRight: STATUS_PADDING, paddingTop: STATUS_PADDING, paddingBottom: STATUS_PADDING };
+sum1 = StatusSizes.REFRESH_MEDIUM_10 + 2 * STATUS_PADDING;
+obj = { width: sum2, height: sum2, borderRadius: sum2 / 2, paddingLeft: STATUS_PADDING, paddingRight: STATUS_PADDING, paddingTop: STATUS_PADDING, paddingBottom: STATUS_PADDING };
+sum2 = StatusSizes.MEDIUM + 2 * STATUS_PADDING;
+const sum3 = StatusSizes.LARGE + 2 * STATUS_PADDING;
+const sum4 = StatusSizes.LARGE + 2 * STATUS_PADDING;
+const sum5 = StatusSizes.SMALL + 2 * STATUS_PADDING;
+const sum6 = StatusSizes.REFRESH_MEDIUM_10 + 2 * STATUS_PADDING;
+const sum7 = StatusSizes.MEDIUM + 2 * STATUS_PADDING;
+const sum8 = StatusSizes.LARGE + 2 * STATUS_PADDING;
+const sum9 = StatusSizes.LARGE + 2 * STATUS_PADDING;
+let result = StatusSizes.SMALL * VR_STATUS_SCALE;
+const sum10 = result + 2 * STATUS_PADDING;
+let result1 = StatusSizes.REFRESH_MEDIUM_10 * VR_STATUS_SCALE;
+const sum11 = result1 + 2 * STATUS_PADDING;
+const result2 = StatusSizes.MEDIUM * VR_STATUS_SCALE;
+const sum12 = result2 + 2 * STATUS_PADDING;
+const result3 = StatusSizes.LARGE * VR_STATUS_SCALE;
+const sum13 = result3 + 2 * STATUS_PADDING;
+const result4 = StatusSizes.LARGE * VR_STATUS_SCALE;
+const sum14 = result4 + 2 * STATUS_PADDING;
+let closure_4 = { containerSmall: obj, containerRefreshMedium: obj, containerMedium: obj, containerLarge: { width: sum3, height: sum3, borderRadius: sum3 / 2, paddingLeft: STATUS_PADDING, paddingRight: STATUS_PADDING, paddingTop: STATUS_PADDING, paddingBottom: STATUS_PADDING }, containerXLarge: { width: sum4, height: sum4, borderRadius: sum4 / 2, paddingLeft: STATUS_PADDING, paddingRight: STATUS_PADDING, paddingTop: STATUS_PADDING, paddingBottom: STATUS_PADDING }, containerMobileOnlineSmall: { width: sum5, height: sum5 + sum5 / 2.5, borderRadius: sum5 / 4, paddingLeft: STATUS_PADDING, paddingRight: STATUS_PADDING, paddingTop: STATUS_PADDING + 1, paddingBottom: STATUS_PADDING + 1 }, containerMobileOnlineRefreshMedium: { width: sum6, height: sum6 + sum6 / 2.5, borderRadius: sum6 / 4, paddingLeft: STATUS_PADDING, paddingRight: STATUS_PADDING, paddingTop: STATUS_PADDING + 1, paddingBottom: STATUS_PADDING + 1 }, containerMobileOnlineMedium: { width: sum7, height: sum7 + sum7 / 2.5, borderRadius: sum7 / 4, paddingLeft: STATUS_PADDING, paddingRight: STATUS_PADDING, paddingTop: STATUS_PADDING + 1, paddingBottom: STATUS_PADDING + 1 }, containerMobileOnlineLarge: { width: sum8, height: sum8 + sum8 / 2.5, borderRadius: sum8 / 4, paddingLeft: STATUS_PADDING, paddingRight: STATUS_PADDING, paddingTop: STATUS_PADDING + 1, paddingBottom: STATUS_PADDING + 1 }, containerMobileOnlineXLarge: { width: sum9, height: sum9 + sum9 / 2.5, borderRadius: sum9 / 4, paddingLeft: STATUS_PADDING, paddingRight: STATUS_PADDING, paddingTop: STATUS_PADDING + 1, paddingBottom: STATUS_PADDING + 1 }, containerVRSmall: { width: result * VR_STATUS_WIDTH_RATIO + 2 * STATUS_PADDING, height: sum10, borderRadius: sum10 / 2, paddingLeft: STATUS_PADDING, paddingRight: STATUS_PADDING, paddingTop: STATUS_PADDING, paddingBottom: STATUS_PADDING }, containerVRRefreshMedium: { width: result1 * VR_STATUS_WIDTH_RATIO + 2 * STATUS_PADDING, height: sum11, borderRadius: sum11 / 2, paddingLeft: STATUS_PADDING, paddingRight: STATUS_PADDING, paddingTop: STATUS_PADDING, paddingBottom: STATUS_PADDING }, containerVRMedium: { width: result2 * VR_STATUS_WIDTH_RATIO + 2 * STATUS_PADDING, height: sum12, borderRadius: sum12 / 2, paddingLeft: STATUS_PADDING, paddingRight: STATUS_PADDING, paddingTop: STATUS_PADDING, paddingBottom: STATUS_PADDING }, containerVRLarge: { width: result3 * VR_STATUS_WIDTH_RATIO + 2 * STATUS_PADDING, height: sum13, borderRadius: sum13 / 2, paddingLeft: STATUS_PADDING, paddingRight: STATUS_PADDING, paddingTop: STATUS_PADDING, paddingBottom: STATUS_PADDING }, containerVRXLarge: { width: result4 * VR_STATUS_WIDTH_RATIO + 2 * STATUS_PADDING, height: sum14, borderRadius: sum14 / 2, paddingLeft: STATUS_PADDING, paddingRight: STATUS_PADDING, paddingTop: STATUS_PADDING, paddingBottom: STATUS_PADDING } };
+const result5 = require("set").fileFinishedImporting("design/void/Status/native/getStatusContainerStyle.tsx");
 
-export default function getStatusContainerStyle(LARGE) {
+export default function getStatusContainerStyle(arg0, arg1) {
   let flag = arg2;
   if (arg2 === undefined) {
     flag = false;
   }
   const SMALL = StatusSizes.SMALL;
   if (flag) {
-    if (SMALL === LARGE) {
-      return obj.containerVRSmall;
-    } else if (StatusSizes.REFRESH_MEDIUM_10 === LARGE) {
-      return obj.containerVRRefreshMedium;
-    } else if (StatusSizes.MEDIUM === LARGE) {
-      return obj.containerVRMedium;
-    } else if (StatusSizes.LARGE === LARGE) {
-      return obj.containerVRLarge;
-    } else if (StatusSizes.XLARGE === LARGE) {
-      return obj.containerVRXLarge;
+    if (SMALL === arg0) {
+      return closure_4.containerVRSmall;
+    } else if (tmp.REFRESH_MEDIUM_10 === arg0) {
+      return closure_4.containerVRRefreshMedium;
+    } else if (tmp.MEDIUM === arg0) {
+      return closure_4.containerVRMedium;
+    } else if (tmp.LARGE === arg0) {
+      return closure_4.containerVRLarge;
+    } else if (tmp.XLARGE === arg0) {
+      return closure_4.containerVRXLarge;
     } else {
-      return createVRContainerStyle(LARGE);
+      const result = arg0 * VR_STATUS_SCALE;
+      const sum = result + 2 * STATUS_PADDING;
+      let obj = { width: null, height: null, borderRadius: null, paddingLeft: null, paddingRight: null, paddingTop: null, paddingBottom: null };
+      obj[0] = result * VR_STATUS_WIDTH_RATIO + 2 * STATUS_PADDING;
+      obj[1] = sum;
+      obj[2] = sum / 2;
+      obj[3] = STATUS_PADDING;
+      obj[4] = STATUS_PADDING;
+      obj[5] = STATUS_PADDING;
+      obj[6] = STATUS_PADDING;
+      return obj;
     }
-  } else if (SMALL === LARGE) {
-    return arg1 ? obj.containerMobileOnlineSmall : obj.containerSmall;
-  } else if (StatusSizes.REFRESH_MEDIUM_10 === LARGE) {
-    return arg1 ? obj.containerMobileOnlineRefreshMedium : obj.containerRefreshMedium;
-  } else if (StatusSizes.MEDIUM === LARGE) {
-    return arg1 ? obj.containerMobileOnlineMedium : obj.containerMedium;
-  } else if (StatusSizes.LARGE === LARGE) {
-    return arg1 ? obj.containerMobileOnlineLarge : obj.containerLarge;
-  } else if (StatusSizes.XLARGE === LARGE) {
-    return arg1 ? obj.containerMobileOnlineXLarge : obj.containerXLarge;
+  } else if (SMALL === arg0) {
+    return arg1 ? closure_4.containerMobileOnlineSmall : closure_4.containerSmall;
+  } else if (tmp.REFRESH_MEDIUM_10 === arg0) {
+    return arg1 ? closure_4.containerMobileOnlineRefreshMedium : closure_4.containerRefreshMedium;
+  } else if (tmp.MEDIUM === arg0) {
+    return arg1 ? closure_4.containerMobileOnlineMedium : closure_4.containerMedium;
+  } else if (tmp.LARGE === arg0) {
+    return arg1 ? closure_4.containerMobileOnlineLarge : closure_4.containerLarge;
+  } else if (tmp.XLARGE === arg0) {
+    return arg1 ? closure_4.containerMobileOnlineXLarge : closure_4.containerXLarge;
   } else {
-    return createContainerStyle(LARGE, arg1);
+    obj = { width: null, height: null, borderRadius: null, paddingLeft: null, paddingRight: null, paddingTop: null, paddingBottom: null };
+    const sum1 = arg0 + 2 * STATUS_PADDING;
+    obj[0] = sum1;
+    let num2 = 0;
+    if (arg1) {
+      num2 = sum1 / 2.5;
+    }
+    obj[1] = sum1 + num2;
+    if (arg1) {
+      let result1 = sum1 / 4;
+    } else {
+      result1 = sum1 / 2;
+    }
+    obj[2] = result1;
+    obj[3] = STATUS_PADDING;
+    obj[4] = STATUS_PADDING;
+    let num5 = 0;
+    if (arg1) {
+      num5 = 1;
+    }
+    obj[5] = STATUS_PADDING + num5;
+    let num6 = 0;
+    if (arg1) {
+      num6 = 1;
+    }
+    obj[6] = STATUS_PADDING + num6;
+    return obj;
   }
 };

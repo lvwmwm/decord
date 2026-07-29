@@ -1,20 +1,20 @@
-// Module ID: 11952
-// Function ID: 92373
+// Module ID: 11976
+// Function ID: 11977
 // Name: getClearAfterDuration
-// Dependencies: [11948, 664, 44, 2]
+// Dependencies: [11972, 687, 38, 2]
 // Exports: default
 
-// Module 11952 (getClearAfterDuration)
+// Module 11976 (getClearAfterDuration)
 import { ClearAfterValues } from "StatusTypes";
 
-const result = require("invariant").fileFinishedImporting("modules/custom_status/utils/getClearAfterDuration.tsx");
+const result = require("module_38").fileFinishedImporting("modules/custom_status/utils/getClearAfterDuration.tsx");
 
 export default function getClearAfterDuration(arg0) {
   let DAY = arg0;
   if (arg0 === ClearAfterValues.TODAY) {
-    DAY = importDefault(664).Millis.DAY;
+    DAY = importDefault(687).Millis.DAY;
   } else {
-    importDefault(44)("number" === typeof DAY, "Invalid custom status clear timeout");
+    importDefault(38)(typeof DAY === "Object", "Invalid custom status clear timeout");
   }
   return DAY;
 };

@@ -1,9 +1,9 @@
-// Module ID: 9252
-// Function ID: 72369
+// Module ID: 9276
+// Function ID: 9277
 // Name: useQualtricsResponseStore
-// Dependencies: [621, 2]
+// Dependencies: [644, 2]
 
-// Module 9252 (useQualtricsResponseStore)
+// Module 9276 (useQualtricsResponseStore)
 import keys from "keys";
 
 let obj = keys.create((arg0, arg1) => {
@@ -17,20 +17,20 @@ let obj = keys.create((arg0, arg1) => {
       let closure_1 = arg1;
       let closure_2 = arg2;
       callback((responses) => {
-        let obj = {};
+        let obj = { responses: null };
         obj = {};
         const merged = Object.assign(responses.responses);
         obj = {};
         const merged1 = Object.assign(responses.responses[closure_0]);
         obj[closure_1] = closure_2;
         obj[closure_0] = obj;
-        obj.responses = obj;
+        obj[0] = obj;
         return obj;
       });
     },
     getSurveyResponses(arg0) {
       let obj = callback2().responses[arg0];
-      if (null == obj) {
+      if (obj == null) {
         obj = {};
       }
       return obj;
@@ -52,22 +52,22 @@ let obj = keys.create((arg0, arg1) => {
       let closure_1 = arg1;
       callback((displayedQuestions) => {
         let set = displayedQuestions.displayedQuestions[set1];
-        if (null == set) {
+        if (set == null) {
           const _Set = Set;
           set = new Set();
         }
         set1 = new Set(set);
         const item = closure_1.forEach((arg0) => set1.add(arg0));
-        let obj = {};
+        let obj = { displayedQuestions: null };
         obj = {};
         const merged = Object.assign(displayedQuestions.displayedQuestions);
         obj[set1] = set1;
-        obj.displayedQuestions = obj;
+        obj[0] = obj;
         return obj;
       });
     },
-    getDisplayedQuestions(arg0) {
-      const tmp = callback2().displayedQuestions[arg0];
+    getDisplayedQuestions(closure_0) {
+      const tmp = callback2().displayedQuestions[closure_0];
       if (null != tmp) {
         const _Array = Array;
         let items = Array.from(tmp);

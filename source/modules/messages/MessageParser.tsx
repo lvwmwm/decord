@@ -1,212 +1,100 @@
-// Module ID: 5948
-// Function ID: 52632
-// Name: _createForOfIteratorHelperLoose
-// Dependencies: [5026, 5074, 1348, 1908, 1918, 1911, 1838, 3793, 3802, 4005, 1850, 653, 4602, 1853, 4355, 3864, 4600, 5949, 3838, 3806, 4607, 4004, 4354, 22, 4612, 1212, 5950, 5009, 1327, 3810, 2]
+// Module ID: 5967
+// Function ID: 5968
+// Name: rebuild
+// Dependencies: [5048, 5096, 1372, 1932, 1942, 1935, 1862, 3817, 3826, 4029, 1874, 676, 4624, 1877, 4380, 3888, 4622, 5968, 3862, 3830, 4629, 4028, 4379, 12, 4634, 1236, 5969, 5031, 1351, 3834, 2]
 
-// Module 5948 (_createForOfIteratorHelperLoose)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_4 from "_isNativeReflectConstruct";
-import closure_5 from "_isNativeReflectConstruct";
-import closure_6 from "_isNativeReflectConstruct";
-import { GUILD_SELECTABLE_CHANNELS_KEY as closure_7 } from "_isNativeReflectConstruct";
-import closure_8 from "_isNativeReflectConstruct";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import closure_10 from "_createForOfIteratorHelperLoose";
-import closure_11 from "_isNativeReflectConstruct";
-import closure_12 from "_isNativeReflectConstruct";
-import closure_13 from "_isNativeReflectConstruct";
-import closure_14 from "_isNativeReflectConstruct";
+// Module 5967 (rebuild)
+import getEmojiToGroupId from "getEmojiToGroupId";
+import rebuild from "rebuild";
+import ensureGuildLoaded from "ensureGuildLoaded";
+import comparator from "comparator";
+import { GUILD_SELECTABLE_CHANNELS_KEY as closure_7 } from "comparator";
+import trackCommunicationDisabled from "trackCommunicationDisabled";
+import createGuildRoleRecordFromRust from "createGuildRoleRecordFromRust";
+import createGuildRecordFromRust from "createGuildRecordFromRust";
+import getUncachedChannelPermissions from "getUncachedChannelPermissions";
+import upsertRelationship from "upsertRelationship";
+import initialize from "initialize";
+import mergeGuildAvatar from "mergeGuildAvatar";
 import ME from "ME";
 import regExp from "regExp";
 import { EmojiIntention } from "set";
-import merged from "textRegexp";
 import importDefaultResult from "t";
 import importDefaultResult1 from "t";
 import importDefaultResult2 from "t";
 import importDefaultResult3 from "t";
+import merged from "textRegexp";
 import importDefaultResult4 from "t";
 import importDefaultResult5 from "t";
-import merged2 from "textRegexp";
 import importDefaultResult6 from "t";
 import importDefaultResult7 from "t";
+import importDefaultResult8 from "t";
+import importDefaultResult9 from "t";
+import merged2 from "textRegexp";
+import importDefaultResult10 from "t";
+import importDefaultResult11 from "t";
 
 let MARKDOWN_SPOILER_REGEXP;
 let MARKDOWN_STATIC_ROUTE_NAME_REGEXP;
+let closure_15;
 let closure_16;
 let closure_17;
-const require = arg1;
-function _createForOfIteratorHelperLoose(iterable) {
-  let closure_0 = iterable;
-  iterable = "undefined" !== typeof Symbol;
-  if (iterable) {
-    const _Symbol = Symbol;
-    iterable = iterable[Symbol.iterator];
-  }
-  if (!iterable) {
-    iterable = iterable[Symbol.iterator];
-  }
-  if (iterable) {
-    const iter = iterable.call(iterable);
-    const next = iter.next;
-    return next.bind(iter);
-  } else {
-    const _Array = Array;
-    let tmp = iterable;
-    if (!Array.isArray(iterable)) {
-      let tmp2;
-      if (iterable) {
-        if ("string" === typeof iterable) {
-          tmp2 = _arrayLikeToArray(iterable, undefined);
-        } else {
-          const toString = {}.toString;
-          const substr = toString.call(iterable).slice(8, -1);
-          let name = substr;
-          if (tmp3) {
-            name = iterable.constructor.name;
-          }
-          if ("Map" !== name) {
-            if ("Set" !== name) {
-              if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(iterable, undefined);
-              } else {
-                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
-              }
-            }
-            tmp2 = arr;
-          }
-          const _Array2 = Array;
-          arr = Array.from(iterable);
-          const callResult = toString.call(iterable);
-          tmp3 = "Object" === substr && iterable.constructor;
-        }
-      }
-      tmp = tmp2;
-      if (!tmp2) {
-        const _TypeError = TypeError;
-        const typeError = new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
-        throw typeError;
-      }
-    }
-    if (tmp) {
-      closure_0 = tmp;
-    }
-    let c1 = 0;
-    return () => {
-      if (closure_1 >= length.length) {
-        let obj = { done: true };
-      } else {
-        obj = { done: false };
-        closure_1 = tmp3 + 1;
-        obj.value = length[+closure_1];
-      }
-      return obj;
-    };
-  }
-}
-function _arrayLikeToArray(arg0, arg1) {
-  let length;
-  if (tmp) {
-    length = arg0.length;
-  }
-  const ArrayResult = Array(length);
-  for (let num = 0; num < length; num = num + 1) {
-    ArrayResult[num] = arg0[num];
-  }
-  return ArrayResult;
-}
-function matchPrefix(arg0, str, sortBy) {
-  let closure_0 = arg0;
-  let closure_1 = str;
-  let closure_2 = arg3;
-  if (str[0] === arg0) {
-    let _isNativeReflectConstruct = str.substring(arg0.length);
-    const found = sortBy.sortBy((text) => -text.text.length).filter((text) => {
-      const formatted = str.toLowerCase();
-      return 1 === formatted.indexOf(text.text.toLowerCase());
-    });
-    const sortByResult = sortBy.sortBy((text) => -text.text.length);
-    const mapped = found.sortBy((text) => {
-      let num = 1;
-      if (text.text === _isNativeReflectConstruct) {
-        num = 0;
-      }
-      return num;
-    }).map((text) => {
-      const items = [closure_0 + text.text, text.id, closure_2];
-      return items;
-    });
-    return mapped.first();
-  }
-}
-function matchAndReturnText(codeBlock) {
-  let closure_0 = codeBlock;
-  return {
-    order: codeBlock.order,
-    match: codeBlock.match,
-    parse(content) {
-      return { type: type.type, content: content[0] };
-    }
-  };
-}
-function matchRegexAndReturnText(MARKDOWN_SPOILER_REGEXP) {
-  const obj = {
-    match: importDefault(3864).anyScopeRegex(MARKDOWN_SPOILER_REGEXP),
-    parse(content) {
-      return { type: "text", content: content[0] };
-    }
-  };
-  return obj;
-}
+let str7 = arg1;
 function rebuild(arr) {
   let closure_0 = arg1;
   let closure_1 = arg2;
   let closure_2 = arg3;
   let c3 = "";
   const items = [];
-  const item = arr.forEach((type) => {
-    let done;
-    if (null != dependencyMap) {
-      if ("customEmoticon" === type.type) {
-        tmp2(type.emoji, false);
-      }
-      if ("emoticon" === type.type) {
-        let obj = callback(3806);
-        const result = obj.translateSurrogatesToInlineEmoji(type.content);
-        let match = outer1_23.exec(result);
-        if (null !== match) {
-          while (true) {
-            if (null != match[1]) {
-              if ("" !== match[1]) {
-                let byId;
-                if (tmp.emojiContext) {
-                  let emojiContext = tmp.emojiContext;
-                  byId = emojiContext.getById(match[1]);
-                }
-                if (byId) {
-                  let tmp12 = type.isShortcut || false;
-                  let tmp2Result = tmp2(byId, tmp12);
-                }
-                let tmp14 = outer1_23;
-                match = outer1_23.exec(result);
-                if (null === match) {
-                  break;
+  const item = arr.forEach((content) => {
+    (function handleEmoji(emojiContext, type, c2) {
+      if (null != c2) {
+        if ("customEmoticon" === type.type) {
+          c2(type.emoji, false);
+        }
+        if ("emoticon" === type.type) {
+          const result = callback(3830).translateSurrogatesToInlineEmoji(type.content);
+          let match = regex.exec(result);
+          if (null !== match) {
+            while (true) {
+              let tmp7 = match;
+              if (null != match[1]) {
+                if ("" !== match[1]) {
+                  let byId;
+                  if (emojiContext.emojiContext) {
+                    emojiContext = emojiContext.emojiContext;
+                    byId = emojiContext.getById(match[1]);
+                  }
+                  if (byId) {
+                    let tmp11 = type.isShortcut || false;
+                    let tmp12 = c2(byId, tmp11);
+                  }
+                  let tmp13 = regex;
+                  match = regex.exec(result);
+                  if (null === match) {
+                    break;
+                  }
                 }
               }
+              let tmp8 = callback;
+              let tmp9 = dependencyMap;
+              let obj2 = callback(3830);
+              byId = obj2.getByName(match[2]);
             }
-            let tmp9 = callback;
-            let tmp10 = dependencyMap;
-            let obj2 = callback(3806);
-            byId = obj2.getByName(match[2]);
           }
+          const obj = callback(3830);
         }
       }
-    }
-    if ("string" === typeof type.content) {
-      type = type.type;
+    })(obj, content, _undefined);
+    if (typeof content.content === "y") {
+      const type = content.type;
       if ("emoji" === type) {
-        obj = { position: _var.length, length: type.content.length, id: type.id };
+        obj = { position: null, length: null, id: null };
+        obj[0] = _var.length;
+        obj[1] = content.content.length;
+        obj[2] = content.id;
         items.push(obj);
-        _var = _var + type.content;
+        _var = _var + content.content;
       } else {
         if ("codeBlock" !== type) {
           if ("inlineCode" !== type) {
@@ -214,173 +102,269 @@ function rebuild(arr) {
               if ("roleMention" !== type) {
                 if ("gameMention" !== type) {
                   if ("channel" !== type) {
-                    _var = _var + callback(type.content);
+                    _var = _var + translateSurrogatesToInlineEmoji(content.content);
                   }
                 }
               }
             }
           }
         }
-        if (true === lib.isNotification) {
-          _var = _var + lib(5950).isolate(type.content);
-          const obj4 = lib(5950);
+        if (true === tmp.isNotification) {
+          _var = _var + obj(_undefined[26]).isolate(content.content);
+          let obj2 = obj(_undefined[26]);
         } else {
-          _var = _var + type.content;
+          _var = _var + content.content;
         }
       }
     } else {
       const _Array = Array;
-      if (type.content.constructor === Array) {
-        const tmp35 = outer1_27(type.content, lib, callback, dependencyMap);
-        const tmp37 = outer1_24(tmp35.emoji);
-        let iter2 = tmp37();
-        if (!iter2.done) {
-          do {
-            let value = iter2.value;
-            let tmp15 = items;
-            obj = {};
-            let tmp16 = var;
-            obj.position = var.length + value.position;
-            obj.length = value.length;
-            obj.id = value.id;
-            let arr = items.push(obj);
-            let iter = tmp37();
-            iter2 = iter;
-            done = iter.done;
-          } while (!done);
+      if (content.content.constructor === Array) {
+        const tmp24 = outer1_24(content.content, tmp, translateSurrogatesToInlineEmoji, tmp2);
+        const emoji = tmp24.emoji;
+        for (const item10008 of emoji) {
+          let tmp5 = items;
+          obj = { position: null, length: null, id: null };
+          let tmp6 = _var;
+          obj[0] = _var.length + item10008.position;
+          ({ length: obj[1], id: obj[2] } = item10008);
+          let arr = items.push(obj);
+          continue;
         }
-        _var = _var + tmp35.content;
+        _var = _var + tmp24.content;
       }
     }
   });
   return { content: c3, emoji: items };
 }
 function parseAndRebuild(content, arg1, arg2) {
-  return rebuild(callback2(content, arg1), arg1, importDefault(3806).translateInlineEmojiToSurrogates, arg2).content;
+  let closure_0 = arg1;
+  importDefault = importDefault(3830).translateInlineEmojiToSurrogates;
+  const dependencyMap = arg2;
+  let c3 = "";
+  let rebuild = [];
+  const item = callback2(content, arg1).forEach((content) => {
+    (function handleEmoji(emojiContext, type, c2) {
+      if (null != c2) {
+        if ("customEmoticon" === type.type) {
+          c2(type.emoji, false);
+        }
+        if ("emoticon" === type.type) {
+          const result = callback(3830).translateSurrogatesToInlineEmoji(type.content);
+          let match = regex.exec(result);
+          if (null !== match) {
+            while (true) {
+              let tmp7 = match;
+              if (null != match[1]) {
+                if ("" !== match[1]) {
+                  let byId;
+                  if (emojiContext.emojiContext) {
+                    emojiContext = emojiContext.emojiContext;
+                    byId = emojiContext.getById(match[1]);
+                  }
+                  if (byId) {
+                    let tmp11 = type.isShortcut || false;
+                    let tmp12 = c2(byId, tmp11);
+                  }
+                  let tmp13 = regex;
+                  match = regex.exec(result);
+                  if (null === match) {
+                    break;
+                  }
+                }
+              }
+              let tmp8 = callback;
+              let tmp9 = dependencyMap;
+              let obj2 = callback(3830);
+              byId = obj2.getByName(match[2]);
+            }
+          }
+          const obj = callback(3830);
+        }
+      }
+    })(obj, content, _undefined);
+    if (typeof content.content === "y") {
+      const type = content.type;
+      if ("emoji" === type) {
+        obj = { position: null, length: null, id: null };
+        obj[0] = _var.length;
+        obj[1] = content.content.length;
+        obj[2] = content.id;
+        items.push(obj);
+        _var = _var + content.content;
+      } else {
+        if ("codeBlock" !== type) {
+          if ("inlineCode" !== type) {
+            if ("mention" !== type) {
+              if ("roleMention" !== type) {
+                if ("gameMention" !== type) {
+                  if ("channel" !== type) {
+                    _var = _var + translateSurrogatesToInlineEmoji(content.content);
+                  }
+                }
+              }
+            }
+          }
+        }
+        if (true === tmp.isNotification) {
+          _var = _var + obj(_undefined[26]).isolate(content.content);
+          let obj2 = obj(_undefined[26]);
+        } else {
+          _var = _var + content.content;
+        }
+      }
+    } else {
+      const _Array = Array;
+      if (content.content.constructor === Array) {
+        const tmp24 = outer1_24(content.content, tmp, translateSurrogatesToInlineEmoji, tmp2);
+        const emoji = tmp24.emoji;
+        for (const item10008 of emoji) {
+          let tmp5 = items;
+          obj = { position: null, length: null, id: null };
+          let tmp6 = _var;
+          obj[0] = _var.length + item10008.position;
+          ({ length: obj[1], id: obj[2] } = item10008);
+          let arr = items.push(obj);
+          continue;
+        }
+        _var = _var + tmp24.content;
+      }
+    }
+  });
+  return c3;
 }
 function createParserState(getGuildId, arr) {
   let guildId;
-  if (null != getGuildId) {
+  if (getGuildId != null) {
     guildId = getGuildId.getGuildId();
   }
   let guild = null;
   if (null != guildId) {
     guild = store4.getGuild(guildId);
   }
-  const importDefault = closure_11.can(Permissions.MENTION_EVERYONE, getGuildId);
-  if (null != getGuildId) {
-    if (getGuildId.isPrivate()) {
-      const recipients = getGuildId.recipients;
-      const mapped = recipients.map((userId) => ({ userId, nick: null }));
-      const currentUser = authStore.getCurrentUser();
-      let mapped4 = mapped;
-      if (null != currentUser) {
-        let obj = { userId: currentUser.id, nick: null };
-        arr = mapped.push(obj);
-        mapped4 = mapped;
-      }
-    }
-    const tmp10 = importDefault(22);
-    const tmp10Result = importDefault(22)(mapped4.reduce((arr, userId) => {
-      userId = userId.userId;
-      const user = outer1_14.getUser(userId);
-      if (null != user) {
-        const obj = { id: userId, text: user.tag };
-        arr.push(obj);
-      }
-      return arr;
-    }, []));
-    if (null != guild) {
-      let sortedRoles = store3.getSortedRoles(guild.id);
-    } else {
-      sortedRoles = [];
-    }
-    const tmp12 = importDefault(22);
-    const found = importDefault(22)(sortedRoles).filter((mentionable) => {
-      mentionable = closure_1;
-      if (!closure_1) {
-        mentionable = mentionable.mentionable;
-      }
-      return mentionable;
-    });
-    const mapped1 = found.map((id) => ({ id: id.id, text: id.name }));
-    const tmp12Result = importDefault(22)(sortedRoles);
-    const tmp17 = importDefault(22);
-    const mapped2 = importDefault(22)(textChannelNameDisambiguations.getTextChannelNameDisambiguations(guildId)).map((id) => ({ id: id.id, text: id.name }));
-    if (null != guildId) {
-      const tmp21 = importDefault(22);
-      const found1 = importDefault(22)(guildId(5009).COMMAND_SUPPORTED_CHANNEL_TYPE_KEYS).filter((arg0) => arg0 !== outer1_7);
-      const tmp21Result = importDefault(22)(guildId(5009).COMMAND_SUPPORTED_CHANNEL_TYPE_KEYS);
-      const flatMapResult = found1.flatMap((arg0) => outer1_6.getChannels(guildId)[arg0].map((channel) => {
-        channel = channel.channel;
-        if (!channel.isCategory()) {
-          const obj = { id: channel.channel.id, text: guildId(outer2_2[14]).computeChannelName(channel.channel, outer2_14, outer2_12) };
-          let tmp3 = obj;
-          const obj2 = guildId(outer2_2[14]);
-        } else {
-          tmp3 = null;
-        }
-        return tmp3;
-      }));
-      let items = found1.flatMap((arg0) => outer1_6.getChannels(guildId)[arg0].map((channel) => {
-        channel = channel.channel;
-        if (!channel.isCategory()) {
-          const obj = { id: channel.channel.id, text: guildId(outer2_2[14]).computeChannelName(channel.channel, outer2_14, outer2_12) };
-          let tmp3 = obj;
-          const obj2 = guildId(outer2_2[14]);
-        } else {
-          tmp3 = null;
-        }
-        return tmp3;
-      })).filter(guildId(1327).isNotNullish).value();
-      const iter = found1.flatMap((arg0) => outer1_6.getChannels(guildId)[arg0].map((channel) => {
-        channel = channel.channel;
-        if (!channel.isCategory()) {
-          const obj = { id: channel.channel.id, text: guildId(outer2_2[14]).computeChannelName(channel.channel, outer2_14, outer2_12) };
-          let tmp3 = obj;
-          const obj2 = guildId(outer2_2[14]);
-        } else {
-          tmp3 = null;
-        }
-        return tmp3;
-      })).filter(guildId(1327).isNotNullish);
-    } else {
-      items = [];
-    }
-    const allActiveJoinedThreads = closure_4.computeAllActiveJoinedThreads(guildId);
-    const mapped3 = allActiveJoinedThreads.map((id) => {
-      const obj = { id: id.id, text: guildId(outer1_2[14]).computeChannelName(id, outer1_14, outer1_12) };
-      return obj;
-    });
-    const disambiguatedEmojiContext = store.getDisambiguatedEmojiContext(guildId);
-    const escapedCustomEmoticonNames = disambiguatedEmojiContext.getEscapedCustomEmoticonNames();
-    const customEmoji = disambiguatedEmojiContext.getCustomEmoji();
-    obj = { inline: true, mentionableRoles: mapped1, guild, users: tmp10Result };
-    const customEmoticonRegex = disambiguatedEmojiContext.getCustomEmoticonRegex();
-    const tmp17Result = importDefault(22)(textChannelNameDisambiguations.getTextChannelNameDisambiguations(guildId));
-    if (null != arr) {
-      const _Array = Array;
-      arr = Array.from(arr.values());
-    } else {
-      arr = [];
-    }
-    const tmp31 = importDefault(22);
-    obj.games = importDefault(22)(arr).map((id) => ({ id: id.id, text: id.name }));
-    const combined = mapped2.concat(items);
-    obj.channels = combined.concat(mapped3);
-    obj.emojiContext = disambiguatedEmojiContext;
-    obj.customEmoticonsRegex = customEmoticonRegex;
-    obj.customEmoji = customEmoji;
-    obj.textExclusions = escapedCustomEmoticonNames;
-    obj.isNotification = false;
-    return obj;
+  const importDefault = getUncachedChannelPermissions.can(constants.MENTION_EVERYONE, getGuildId);
+  let isPrivateResult;
+  if (getGuildId != null) {
+    isPrivateResult = getGuildId.isPrivate();
   }
-  if (null != guildId) {
+  if (isPrivateResult) {
+    const recipients = getGuildId.recipients;
+    const mapped = recipients.map((userId) => ({ userId, nick: null }));
+    const currentUser = authStore.getCurrentUser();
+    let mapped1 = mapped;
+    if (null != currentUser) {
+      let obj = { userId: null, nick: null };
+      obj[0] = currentUser.id;
+      arr = mapped.push(obj);
+      mapped1 = mapped;
+    }
+  } else if (null != guildId) {
     members = members.getMembers(guildId);
-    mapped4 = members.map((userId) => ({ userId: userId.userId, nick: userId.nick }));
+    mapped1 = members.map((userId) => ({ userId: userId.userId, nick: userId.nick }));
   } else {
-    mapped4 = [];
+    mapped1 = [];
   }
+  const tmp11 = importDefault(12);
+  const tmp11Result = importDefault(12)(mapped1.reduce((arr, userId) => {
+    userId = userId.userId;
+    user = user.getUser(userId);
+    if (null != user) {
+      const obj = { id: null, text: null };
+      obj[0] = userId;
+      obj[1] = user.tag;
+      arr.push(obj);
+    }
+    return arr;
+  }, []));
+  if (null != guild) {
+    let sortedRoles = store3.getSortedRoles(guild.id);
+  } else {
+    sortedRoles = [];
+  }
+  const tmp13 = importDefault(12);
+  const found = importDefault(12)(sortedRoles).filter((mentionable) => {
+    mentionable = closure_1;
+    if (!closure_1) {
+      mentionable = mentionable.mentionable;
+    }
+    return mentionable;
+  });
+  const mapped2 = found.map((id) => ({ id: id.id, text: id.name }));
+  let tmp9Result = tmp9(12);
+  const tmp13Result = importDefault(12)(sortedRoles);
+  const mapped3 = tmp9Result(textChannelNameDisambiguations.getTextChannelNameDisambiguations(guildId)).map((id) => ({ id: id.id, text: id.name }));
+  if (null != guildId) {
+    tmp9Result = tmp9(12);
+    const found1 = tmp9Result(guildId(5031).COMMAND_SUPPORTED_CHANNEL_TYPE_KEYS).filter((arg0) => arg0 !== closure_7);
+    const tmp9Result1Result = tmp9Result(guildId(5031).COMMAND_SUPPORTED_CHANNEL_TYPE_KEYS);
+    const flatMapResult = found1.flatMap((arg0) => outer1_6.getChannels(guildId)[arg0].map((channel) => {
+      channel = channel.channel;
+      if (!channel.isCategory()) {
+        const obj = { id: null, text: null };
+        obj[0] = channel.channel.id;
+        obj[1] = callback(table[14]).computeChannelName(channel.channel, mergeGuildAvatar, upsertRelationship);
+        let tmp3 = obj;
+        const obj2 = callback(table[14]);
+      } else {
+        tmp3 = null;
+      }
+      return tmp3;
+    }));
+    let items = found1.flatMap((arg0) => outer1_6.getChannels(guildId)[arg0].map((channel) => {
+      channel = channel.channel;
+      if (!channel.isCategory()) {
+        const obj = { id: null, text: null };
+        obj[0] = channel.channel.id;
+        obj[1] = callback(table[14]).computeChannelName(channel.channel, mergeGuildAvatar, upsertRelationship);
+        let tmp3 = obj;
+        const obj2 = callback(table[14]);
+      } else {
+        tmp3 = null;
+      }
+      return tmp3;
+    })).filter(guildId(1351).isNotNullish).value();
+    const iter = found1.flatMap((arg0) => outer1_6.getChannels(guildId)[arg0].map((channel) => {
+      channel = channel.channel;
+      if (!channel.isCategory()) {
+        const obj = { id: null, text: null };
+        obj[0] = channel.channel.id;
+        obj[1] = callback(table[14]).computeChannelName(channel.channel, mergeGuildAvatar, upsertRelationship);
+        let tmp3 = obj;
+        const obj2 = callback(table[14]);
+      } else {
+        tmp3 = null;
+      }
+      return tmp3;
+    })).filter(guildId(1351).isNotNullish);
+  } else {
+    items = [];
+  }
+  const allActiveJoinedThreads = rebuild.computeAllActiveJoinedThreads(guildId);
+  const mapped4 = allActiveJoinedThreads.map((id) => {
+    const obj = { id: id.id, text: null };
+    obj[1] = guildId(table[14]).computeChannelName(id, mergeGuildAvatar, upsertRelationship);
+    return obj;
+  });
+  const disambiguatedEmojiContext = store.getDisambiguatedEmojiContext(guildId);
+  const escapedCustomEmoticonNames = disambiguatedEmojiContext.getEscapedCustomEmoticonNames();
+  const customEmoji = disambiguatedEmojiContext.getCustomEmoji();
+  obj = { inline: true, mentionableRoles: mapped2, guild, users: tmp11Result, games: null, channels: null, emojiContext: null, customEmoticonsRegex: null, customEmoji: null, textExclusions: null, isNotification: false };
+  const customEmoticonRegex = disambiguatedEmojiContext.getCustomEmoticonRegex();
+  const tmp9ResultResult = tmp9Result(textChannelNameDisambiguations.getTextChannelNameDisambiguations(guildId));
+  if (null != arr) {
+    const _Array = Array;
+    arr = Array.from(arr.values());
+  } else {
+    arr = [];
+  }
+  const tmp9Result1 = importDefault(12);
+  obj[4] = importDefault(12)(arr).map((id) => ({ id: id.id, text: id.name }));
+  const combined = mapped3.concat(items);
+  obj[5] = combined.concat(mapped4);
+  obj[6] = disambiguatedEmojiContext;
+  obj[7] = customEmoticonRegex;
+  obj[8] = customEmoji;
+  obj[9] = escapedCustomEmoticonNames;
+  return obj;
 }
 function NOOP(arg0) {
   return arg0;
@@ -396,74 +380,358 @@ function unparseWithMeta(content, id, isNotification) {
     guild = store4.getGuild(guildId);
   }
   if (isNotification) {
-    let omitResult = obj4;
+    let omitResult = obj5;
   } else {
-    omitResult = importDefault(22).omit(obj4, ["spoiler", "timestamp"]);
-    const obj2 = importDefault(22);
+    omitResult = translateSurrogatesToInlineEmoji(12).omit(obj5, ["spoiler", "timestamp"]);
+    let obj2 = translateSurrogatesToInlineEmoji(12);
   }
   if (isNotification) {
-    let translateSurrogatesToInlineEmoji = NOOP;
+    translateSurrogatesToInlineEmoji = NOOP;
   } else {
-    translateSurrogatesToInlineEmoji = importDefault(3806).translateSurrogatesToInlineEmoji;
+    translateSurrogatesToInlineEmoji = translateSurrogatesToInlineEmoji(3830).translateSurrogatesToInlineEmoji;
   }
-  const obj = { inline: true, guild, channelId: id, isNotification };
-  obj4 = importDefault(3864);
-  return rebuild(obj4.parserFor(omitResult)(content, obj), obj, translateSurrogatesToInlineEmoji);
+  let obj = { inline: true, guild, channelId: id, isNotification };
+  const obj4 = translateSurrogatesToInlineEmoji(3888);
+  let dependencyMap;
+  let c3 = "";
+  const items = [];
+  const item = translateSurrogatesToInlineEmoji(3888).parserFor(omitResult)(content, obj).forEach((content) => {
+    (function handleEmoji(emojiContext, type, c2) {
+      if (null != c2) {
+        if ("customEmoticon" === type.type) {
+          c2(type.emoji, false);
+        }
+        if ("emoticon" === type.type) {
+          const result = callback(3830).translateSurrogatesToInlineEmoji(type.content);
+          let match = regex.exec(result);
+          if (null !== match) {
+            while (true) {
+              let tmp7 = match;
+              if (null != match[1]) {
+                if ("" !== match[1]) {
+                  let byId;
+                  if (emojiContext.emojiContext) {
+                    emojiContext = emojiContext.emojiContext;
+                    byId = emojiContext.getById(match[1]);
+                  }
+                  if (byId) {
+                    let tmp11 = type.isShortcut || false;
+                    let tmp12 = c2(byId, tmp11);
+                  }
+                  let tmp13 = regex;
+                  match = regex.exec(result);
+                  if (null === match) {
+                    break;
+                  }
+                }
+              }
+              let tmp8 = callback;
+              let tmp9 = dependencyMap;
+              let obj2 = callback(3830);
+              byId = obj2.getByName(match[2]);
+            }
+          }
+          const obj = callback(3830);
+        }
+      }
+    })(obj, content, _undefined);
+    if (typeof content.content === "y") {
+      const type = content.type;
+      if ("emoji" === type) {
+        obj = { position: null, length: null, id: null };
+        obj[0] = _var.length;
+        obj[1] = content.content.length;
+        obj[2] = content.id;
+        items.push(obj);
+        _var = _var + content.content;
+      } else {
+        if ("codeBlock" !== type) {
+          if ("inlineCode" !== type) {
+            if ("mention" !== type) {
+              if ("roleMention" !== type) {
+                if ("gameMention" !== type) {
+                  if ("channel" !== type) {
+                    _var = _var + translateSurrogatesToInlineEmoji(content.content);
+                  }
+                }
+              }
+            }
+          }
+        }
+        if (true === tmp.isNotification) {
+          _var = _var + obj(_undefined[26]).isolate(content.content);
+          let obj2 = obj(_undefined[26]);
+        } else {
+          _var = _var + content.content;
+        }
+      }
+    } else {
+      const _Array = Array;
+      if (content.content.constructor === Array) {
+        const tmp24 = outer1_24(content.content, tmp, translateSurrogatesToInlineEmoji, tmp2);
+        const emoji = tmp24.emoji;
+        for (const item10008 of emoji) {
+          let tmp5 = items;
+          obj = { position: null, length: null, id: null };
+          let tmp6 = _var;
+          obj[0] = _var.length + item10008.position;
+          ({ length: obj[1], id: obj[2] } = item10008);
+          let arr = items.push(obj);
+          continue;
+        }
+        _var = _var + tmp24.content;
+      }
+    }
+  });
+  obj = { content: c3, emoji: items };
+  return obj;
 }
-const Permissions = ME.Permissions;
-({ MARKDOWN_SPOILER_REGEXP, MARKDOWN_STATIC_ROUTE_NAME_REGEXP } = ME);
+({ Permissions: closure_15, MARKDOWN_SPOILER_REGEXP, MARKDOWN_STATIC_ROUTE_NAME_REGEXP } = ME);
 ({ extractGameMentionIds: closure_16, GAME_MENTION_SENTINEL: closure_17 } = regExp);
 let tmp4 = /^<@!?(\d+)>/;
-const tmp5 = /^<@&(\d+)>/;
-const tmp6 = /^<#(\d+)>/;
+let tmp5 = /^<@&(\d+)>/;
+let tmp6 = /^<#(\d+)>/;
 let tmp7 = /^<a?:(\w+):(\d+)>/;
 const re19 = /(@everyone|@here|@Clyde)\b/;
 const re20 = /^[^\s]+@[^\s]+\.[^\s.]+/;
-obj = { link: matchAndReturnText(require("t").defaultRules.link), autolink: matchAndReturnText(require("t").defaultRules.autolink), url: matchAndReturnText(require("t").defaultRules.url), inlineCode: matchAndReturnText(require("parseLink").RULES.inlineCode), codeBlock: matchAndReturnText(require("parseLink").RULES.codeBlock), rawUserMention: matchRegexAndReturnText(tmp4), rawRoleMention: matchRegexAndReturnText(tmp5), rawChannelMention: matchRegexAndReturnText(tmp6), rawEmoji: matchRegexAndReturnText(tmp7), mention: obj, channel: obj, emoticon: obj1 };
-obj = {
-  match(arg0, games, str) {
-    const parts = str.split(" ");
-    if (regex2.test(parts.pop() + arg0)) {
+let obj = { link: null, autolink: null, url: null, inlineCode: null, codeBlock: null, rawUserMention: null, rawRoleMention: null, rawChannelMention: null, rawEmoji: null, mention: null, channel: null, emoticon: null, emoji: null, customEmoticons: null, text: null };
+let str = require("t").defaultRules.link;
+str7 = str;
+obj[0] = {
+  order: str.order,
+  match: str.match,
+  parse(content) {
+    return { type: str7.type, content: content[0] };
+  }
+};
+let str2 = require("t").defaultRules.autolink;
+str7 = str2;
+obj[1] = {
+  order: str2.order,
+  match: str2.match,
+  parse(content) {
+    return { type: str7.type, content: content[0] };
+  }
+};
+const str3 = require("t").defaultRules.url;
+str7 = str3;
+obj[2] = {
+  order: str3.order,
+  match: str3.match,
+  parse(content) {
+    return { type: str7.type, content: content[0] };
+  }
+};
+let str4 = require("parseLink").RULES.inlineCode;
+str7 = str4;
+obj[3] = {
+  order: str4.order,
+  match: str4.match,
+  parse(content) {
+    return { type: str7.type, content: content[0] };
+  }
+};
+let str5 = require("parseLink").RULES.codeBlock;
+str7 = str5;
+obj[4] = {
+  order: str5.order,
+  match: str5.match,
+  parse(content) {
+    return { type: str7.type, content: content[0] };
+  }
+};
+obj = { match: null, parse: null };
+obj[0] = require("t").anyScopeRegex(tmp4);
+obj[1] = function parse(content) {
+  return { type: "text", content: content[0] };
+};
+obj[5] = obj;
+obj = { match: null, parse: null };
+obj[0] = require("t").anyScopeRegex(tmp5);
+obj[1] = function parse(content) {
+  return { type: "text", content: content[0] };
+};
+obj[6] = obj;
+let obj1 = { match: null, parse: null };
+obj1[0] = require("t").anyScopeRegex(tmp6);
+obj1[1] = function parse(content) {
+  return { type: "text", content: content[0] };
+};
+obj[7] = obj1;
+let obj2 = { match: null, parse: null };
+obj2[0] = require("t").anyScopeRegex(tmp7);
+obj2[1] = function parse(content) {
+  return { type: "text", content: content[0] };
+};
+obj[8] = obj2;
+obj[9] = {
+  match(str, games, str2) {
+    const parts = str2.split(" ");
+    if (regex2.test(parts.pop() + str)) {
       return null;
     } else {
-      const tmp4 = matchPrefix(closure_17, arg0, games.games, "gameMention");
-      if (null != tmp4) {
-        return tmp4;
+      games = games.games;
+      let str7 = closure_17;
+      let closure_1 = str;
+      let mention = "gameMention";
+      let getEmojiToGroupId;
+      let firstResult;
+      if (str[0] === closure_17) {
+        getEmojiToGroupId = str.substring(arr2.length);
+        const found = games.sortBy((text) => -text.text.length).filter((text) => {
+          const formatted = closure_1.toLowerCase();
+          return 1 === formatted.indexOf(text.text.toLowerCase());
+        });
+        const sortByResult = games.sortBy((text) => -text.text.length);
+        const mapped = found.sortBy((text) => {
+          let num = 1;
+          if (text.text === getEmojiToGroupId) {
+            num = 0;
+          }
+          return num;
+        }).map((text) => {
+          const items = [closure_0 + text.text, text.id, channel];
+          return items;
+        });
+        firstResult = mapped.first();
+        const sortByResult1 = found.sortBy((text) => {
+          let num = 1;
+          if (text.text === getEmojiToGroupId) {
+            num = 0;
+          }
+          return num;
+        });
+      }
+      if (null != firstResult) {
+        return firstResult;
       } else {
-        const tmp12 = matchPrefix("@", arg0, games.users, "mention");
-        if (null != tmp12) {
-          return tmp12;
+        let users = games.users;
+        str7 = "@";
+        closure_1 = str;
+        mention = "mention";
+        getEmojiToGroupId = undefined;
+        let firstResult1;
+        if (str[0] === "@") {
+          getEmojiToGroupId = str.substring("@".length);
+          const found1 = users.sortBy((text) => -text.text.length).filter((text) => {
+            const formatted = closure_1.toLowerCase();
+            return 1 === formatted.indexOf(text.text.toLowerCase());
+          });
+          const sortByResult2 = users.sortBy((text) => -text.text.length);
+          const mapped1 = found1.sortBy((text) => {
+            let num = 1;
+            if (text.text === getEmojiToGroupId) {
+              num = 0;
+            }
+            return num;
+          }).map((text) => {
+            const items = [closure_0 + text.text, text.id, channel];
+            return items;
+          });
+          firstResult1 = mapped1.first();
+          const sortByResult3 = found1.sortBy((text) => {
+            let num = 1;
+            if (text.text === getEmojiToGroupId) {
+              num = 0;
+            }
+            return num;
+          });
+        }
+        if (null != firstResult1) {
+          return firstResult1;
         } else {
-          const tmp15 = matchPrefix("@", arg0, games.mentionableRoles, "roleMention");
-          if (null != tmp15) {
-            return tmp15;
+          const mentionableRoles = games.mentionableRoles;
+          str7 = "@";
+          closure_1 = str;
+          mention = "roleMention";
+          getEmojiToGroupId = undefined;
+          let firstResult2;
+          if (str[0] === "@") {
+            getEmojiToGroupId = str.substring("@".length);
+            const found2 = mentionableRoles.sortBy((text) => -text.text.length).filter((text) => {
+              const formatted = closure_1.toLowerCase();
+              return 1 === formatted.indexOf(text.text.toLowerCase());
+            });
+            const sortByResult4 = mentionableRoles.sortBy((text) => -text.text.length);
+            const mapped2 = found2.sortBy((text) => {
+              let num = 1;
+              if (text.text === getEmojiToGroupId) {
+                num = 0;
+              }
+              return num;
+            }).map((text) => {
+              const items = [closure_0 + text.text, text.id, channel];
+              return items;
+            });
+            firstResult2 = mapped2.first();
+            const sortByResult5 = found2.sortBy((text) => {
+              let num = 1;
+              if (text.text === getEmojiToGroupId) {
+                num = 0;
+              }
+              return num;
+            });
+          }
+          if (null != firstResult2) {
+            return firstResult2;
           } else {
-            const users = games.users;
-            const tmp18 = matchPrefix("@", arg0, users.map((text) => {
+            users = games.users;
+            const mapped3 = users.map((text) => {
               const obj = {};
               const merged = Object.assign(text);
-              obj["text"] = text.text.split("#")[0];
+              obj.text = text.text.split("#")[0];
               return obj;
-            }), "mention");
-            if (null == tmp18) {
+            });
+            str7 = "@";
+            closure_1 = str;
+            mention = "mention";
+            getEmojiToGroupId = undefined;
+            let firstResult3;
+            if (str[0] === "@") {
+              getEmojiToGroupId = str.substring("@".length);
+              const found3 = mapped3.sortBy((text) => -text.text.length).filter((text) => {
+                const formatted = closure_1.toLowerCase();
+                return 1 === formatted.indexOf(text.text.toLowerCase());
+              });
+              const sortByResult6 = mapped3.sortBy((text) => -text.text.length);
+              const mapped4 = found3.sortBy((text) => {
+                let num = 1;
+                if (text.text === getEmojiToGroupId) {
+                  num = 0;
+                }
+                return num;
+              }).map((text) => {
+                const items = [closure_0 + text.text, text.id, channel];
+                return items;
+              });
+              firstResult3 = mapped4.first();
+              const sortByResult7 = found3.sortBy((text) => {
+                let num = 1;
+                if (text.text === getEmojiToGroupId) {
+                  num = 0;
+                }
+                return num;
+              });
+            }
+            if (null == firstResult3) {
               return null;
             } else {
-              const match = regex.exec(arg0);
+              const match = regex.exec(str);
               if (null != match) {
-                if (tmp18[0].length <= match[0].length) {
+                if (firstResult3[0].length <= match[0].length) {
                   return null;
                 }
               }
-              if ("" === str) {
-                const SILENT_RE = require(5949) /* regExp */.SILENT_RE;
-                const match1 = SILENT_RE.exec(arg0);
+              if ("" === str2) {
+                const SILENT_RE = str7(mention[17]).SILENT_RE;
+                const match1 = SILENT_RE.exec(str);
                 if (null != match1) {
-                  if (tmp18[0].length <= match1[0].length) {
+                  if (firstResult3[0].length <= match1[0].length) {
                     return null;
                   }
                 }
               }
-              return tmp18;
+              return firstResult3;
             }
           }
         }
@@ -471,166 +739,113 @@ obj = {
     }
   },
   parse(arg0) {
+    let tmp;
     let tmp2;
-    let tmp4;
-    [, tmp2, tmp4] = arg0;
-    if ("gameMention" === tmp4) {
-      let obj = { type: tmp3 };
+    [, tmp, tmp2] = arg0;
+    if ("gameMention" === tmp2) {
+      let obj = { type: null, content: null };
+      obj[0] = tmp2;
       const _HermesInternal2 = HermesInternal;
-      obj.content = "<@$" + tmp2 + ">";
+      obj[1] = "<@$" + tmp + ">";
       return obj;
     } else {
       let str = "@";
-      if ("roleMention" === tmp4) {
-        str = `@&`;
+      if ("roleMention" === tmp2) {
+        str = "@&";
       }
-      obj = { type: tmp4 };
+      obj = { type: null, content: null };
+      obj[0] = tmp2;
       const _HermesInternal = HermesInternal;
-      obj.content = "<" + str + tmp2 + ">";
+      obj[1] = "<" + str + tmp + ">";
       return obj;
     }
   }
 };
-obj = {
-  match(arg0, channels) {
-    const tmp = (function matchChannelPrefix(arg0, str, channels) {
-      if (str[0] === "#") {
-        if ("\"" !== str[1]) {
-          return outer1_26("#", str, channels, "channel");
-        } else {
-          let num3 = 2;
-          let num2 = 2;
-          if (2 < str.length) {
-            while (true) {
-              if ("\\" !== str[num3]) {
-                let sum = num3;
-                num2 = num3;
-                if ("\"" === str[num3]) {
-                  break;
-                }
-              } else {
-                sum = num3 + 1;
-              }
-              num3 = sum + 1;
-              num2 = num3;
-              if (num3 >= str.length) {
-                break;
-              }
+obj[10] = {
+  match(str, channels) {
+    channels = channels.channels;
+    let str7;
+    let closure_1;
+    let firstResult1;
+    if (str[0] === "#") {
+      if ("\"" !== str[1]) {
+        str7 = "#";
+        closure_1 = str;
+        const channel = "channel";
+        let firstResult;
+        if (str[0] === "#") {
+          let getEmojiToGroupId = str.substring("#".length);
+          const found = channels.sortBy((text) => -text.text.length).filter((text) => {
+            const formatted = closure_1.toLowerCase();
+            return 1 === formatted.indexOf(text.text.toLowerCase());
+          });
+          const sortByResult = channels.sortBy((text) => -text.text.length);
+          const mapped = found.sortBy((text) => {
+            let num = 1;
+            if (text.text === getEmojiToGroupId) {
+              num = 0;
             }
-          }
-          let closure_0 = str.substring(0, num2 + 1);
-          let closure_1 = outer1_0(outer1_2[14]).unescapeChannelName(str.substring(2, num2));
-          const obj = outer1_0(outer1_2[14]);
-          const found = channels.sortBy((text) => -text.text.length).filter((text) => closure_1 === text.text);
-          const mapped = found.map((id) => {
-            const items = [closure_0, id.id, "channel"];
+            return num;
+          }).map((text) => {
+            const items = [closure_0 + text.text, text.id, channel];
             return items;
           });
-          return mapped.first();
+          firstResult = mapped.first();
+          const sortByResult1 = found.sortBy((text) => {
+            let num = 1;
+            if (text.text === getEmojiToGroupId) {
+              num = 0;
+            }
+            return num;
+          });
         }
+        firstResult1 = firstResult;
+      } else {
+        let num2 = 2;
+        let num = 2;
+        if (2 < str.length) {
+          while (true) {
+            let tmp2 = num2;
+            if ("\\" !== str[num2]) {
+              let sum = num2;
+              num = num2;
+              if ("\"" === str[num2]) {
+                break;
+              }
+            } else {
+              sum = num2 + 1;
+            }
+            num2 = sum + 1;
+            num = num2;
+            if (num2 >= str.length) {
+              break;
+            }
+          }
+        }
+        str7 = str.substring(0, num + 1);
+        closure_1 = str7(channel[14]).unescapeChannelName(str.substring(2, num));
+        const obj = str7(channel[14]);
+        const found1 = channels.sortBy((text) => -text.text.length).filter((text) => closure_1 === text.text);
+        const mapped1 = found1.map((id) => {
+          const items = [closure_0, id.id, "channel"];
+          return items;
+        });
+        firstResult1 = mapped1.first();
+        const sortByResult2 = channels.sortBy((text) => -text.text.length);
       }
-    })("#", arg0, channels.channels);
-    let tmp2 = null;
-    if (null != tmp) {
-      tmp2 = tmp;
     }
-    return tmp2;
+    if (firstResult1 == null) {
+      firstResult1 = null;
+    }
+    return firstResult1;
   },
   parse(arg0) {
     return { type: "text", content: "<#" + arg0[1] + ">" };
-  },
-  emoji: {
-    order: require("parseLink").RULES.emoji.order,
-    match(arg0) {
-      const EMOJI_NAME_RE = importDefault(3806).EMOJI_NAME_RE;
-      return EMOJI_NAME_RE.exec(arg0);
-    },
-    parse(arg0, arg1, customEmoji) {
-      let tmp;
-      let tmp2;
-      [tmp, tmp2] = arg0;
-      customEmoji = customEmoji.customEmoji;
-      const value = customEmoji.get(tmp2);
-      let tmp4 = null;
-      if (null != value) {
-        tmp4 = value;
-      }
-      if (null != tmp4) {
-        let obj = { type: "customEmoticon" };
-        let str3 = "";
-        if (true === tmp4.animated) {
-          str3 = "a";
-        }
-        let name = tmp4.originalName;
-        if (null == name) {
-          name = tmp4.name;
-        }
-        const _HermesInternal = HermesInternal;
-        obj.content = "<" + str3 + ":" + name + ":" + tmp4.id + ">";
-        obj.emoji = tmp4;
-      } else {
-        obj = { type: "text", content: tmp };
-      }
-      return obj;
-    }
-  },
-  customEmoticons: {
-    match(arg0, customEmoticonsRegex) {
-      customEmoticonsRegex = customEmoticonsRegex.customEmoticonsRegex;
-      let match;
-      if (null != customEmoticonsRegex) {
-        match = customEmoticonsRegex.exec(arg0);
-      }
-      let tmp3 = null;
-      if (null != match) {
-        tmp3 = match;
-      }
-      return tmp3;
-    },
-    parse(arg0, arg1, emojiContext) {
-      let tmp;
-      let tmp2;
-      [tmp, tmp2] = arg0;
-      emojiContext = emojiContext.emojiContext;
-      const emoticonByName = emojiContext.getEmoticonByName(tmp2);
-      if (null != emoticonByName) {
-        let obj = { type: "customEmoticon" };
-        let str3 = "";
-        if (true === emoticonByName.animated) {
-          str3 = "a";
-        }
-        const _HermesInternal = HermesInternal;
-        obj.content = "<" + str3 + ":" + emoticonByName.name + ":" + emoticonByName.id + ">";
-        obj.emoji = emoticonByName;
-      } else {
-        obj = { type: "text", content: tmp };
-      }
-      return obj;
-    }
   }
 };
-let obj3 = {};
-obj3["match"] = function match(arg0, textExclusions) {
-  if ("string" === typeof textExclusions.textExclusions) {
-    if ("" !== textExclusions.textExclusions) {
-      const result = require(4607) /* textRegexp */.textMarkupPatternWithExclusions(textExclusions.textExclusions);
-      let match = result.exec(arg0);
-      const obj = require(4607) /* textRegexp */;
-    }
-    return match;
-  }
-  match = null;
-  if (null != importDefault(4607).match) {
-    match = importDefault(4607).match(arg0, textExclusions, "");
-    const str2 = importDefault(4607);
-  }
-};
-obj.text = obj3;
-let obj4 = { inlineCode: matchAndReturnText(require("parseLink").RULES.inlineCode), codeBlock: matchAndReturnText(require("parseLink").RULES.codeBlock) };
-const obj5 = {};
-obj1 = {
+obj[11] = {
   match(arg0, arg1, arg2) {
-    const ConvertEmoticons = require(3838) /* explicitContentFromProto */.ConvertEmoticons;
+    const ConvertEmoticons = str7(3862).ConvertEmoticons;
     if (ConvertEmoticons.getSetting()) {
       if (0 !== arg2.length) {
         if (!obj.test(arg2)) {
@@ -638,31 +853,32 @@ obj1 = {
         }
         obj = /\s$/;
       }
-      const EMOJI_SHORTCUT_RE = importDefault(3806).EMOJI_SHORTCUT_RE;
+      const EMOJI_SHORTCUT_RE = importDefault(3830).EMOJI_SHORTCUT_RE;
       const match = EMOJI_SHORTCUT_RE.exec(arg0);
-      let tmp7 = null;
+      let tmp9 = null;
       if (null != match) {
         if (match[0].length !== arg0.length) {
           if (" " !== arg0[match[0].length]) {
-            tmp7 = null;
+            tmp9 = null;
           }
         }
-        tmp7 = match;
+        tmp9 = match;
       }
-      return tmp7;
+      return tmp9;
     } else {
       return null;
     }
   },
   parse(arg0) {
-    const obj = { type: "emoticon", content: importDefault(3806).convertShortcutToName(arg0[1]), isShortcut: true };
+    const obj = { type: "emoticon", content: null, isShortcut: true };
+    obj[1] = importDefault(3830).convertShortcutToName(arg0[1]);
     return obj;
   }
 };
-let obj2 = {
+obj[12] = {
   order: require("parseLink").RULES.emoji.order,
   match(arg0) {
-    const EMOJI_NAME_RE = importDefault(3806).EMOJI_NAME_RE;
+    const EMOJI_NAME_RE = importDefault(3830).EMOJI_NAME_RE;
     return EMOJI_NAME_RE.exec(arg0);
   },
   parse(arg0, arg1, customEmoji) {
@@ -670,42 +886,147 @@ let obj2 = {
     let tmp2;
     [tmp, tmp2] = arg0;
     customEmoji = customEmoji.customEmoji;
-    const value = customEmoji.get(tmp2);
-    let tmp4 = null;
-    if (null != value) {
-      tmp4 = value;
+    let value = customEmoji.get(tmp2);
+    if (value == null) {
+      value = null;
     }
-    if (null != tmp4) {
-      let obj = { type: "customEmoticon" };
-      let str3 = "";
-      if (true === tmp4.animated) {
-        str3 = "a";
+    if (null != value) {
+      let str = "";
+      if (true === value.animated) {
+        str = "a";
       }
-      let name = tmp4.originalName;
-      if (null == name) {
-        name = tmp4.name;
+      let name = value.originalName;
+      if (name == null) {
+        name = value.name;
       }
+      let obj = { type: "customEmoticon", content: null, emoji: null };
       const _HermesInternal = HermesInternal;
-      obj.content = "<" + str3 + ":" + name + ":" + tmp4.id + ">";
-      obj.emoji = tmp4;
+      obj[1] = "<" + str + ":" + name + ":" + value.id + ">";
+      obj[2] = value;
     } else {
-      obj = { type: "text", content: tmp };
+      obj = { type: "text", content: null };
+      obj[1] = tmp;
     }
     return obj;
   }
 };
-obj5.match = require("t").anyScopeRegex(tmp4);
-obj5.parse = function parse(arg0, arg1, channelId) {
+obj[13] = {
+  match(arg0, customEmoticonsRegex) {
+    customEmoticonsRegex = customEmoticonsRegex.customEmoticonsRegex;
+    let match;
+    if (customEmoticonsRegex != null) {
+      match = customEmoticonsRegex.exec(arg0);
+    }
+    if (match == null) {
+      match = null;
+    }
+    return match;
+  },
+  parse(arg0, arg1, emojiContext) {
+    let tmp;
+    let tmp2;
+    [tmp, tmp2] = arg0;
+    emojiContext = emojiContext.emojiContext;
+    const emoticonByName = emojiContext.getEmoticonByName(tmp2);
+    if (null != emoticonByName) {
+      let str = "";
+      if (true === emoticonByName.animated) {
+        str = "a";
+      }
+      let obj = { type: "customEmoticon", content: null, emoji: null };
+      const _HermesInternal = HermesInternal;
+      obj[1] = "<" + str + ":" + emoticonByName.name + ":" + emoticonByName.id + ">";
+      obj[2] = emoticonByName;
+    } else {
+      obj = { type: "text", content: null };
+      obj[1] = tmp;
+    }
+    return obj;
+  }
+};
+let obj4 = {};
+obj4.match = function match(arg0, textExclusions) {
+  if (typeof textExclusions.textExclusions !== "init") {
+    if ("" !== textExclusions.textExclusions) {
+      const result = str7(4629).textMarkupPatternWithExclusions(textExclusions.textExclusions);
+      let match = result.exec(arg0);
+      const obj = str7(4629);
+    }
+    return match;
+  }
+  match = null;
+  if (null != importDefault(4629).match) {
+    match = importDefault(4629).match(arg0, textExclusions, "");
+    const str = importDefault(4629);
+  }
+};
+obj[14] = obj4;
+const obj5 = { inlineCode: null, codeBlock: null, mention: null, roleMention: null, channel: null, emoji: null, soundboard: null, spoiler: null, staticRouteLink: null, timestamp: null, text: null };
+const str6 = require("parseLink").RULES.inlineCode;
+str7 = str6;
+obj5[0] = {
+  order: str6.order,
+  match: str6.match,
+  parse(content) {
+    return { type: str7.type, content: content[0] };
+  }
+};
+str7 = require("parseLink").RULES.codeBlock;
+obj5[1] = {
+  order: str7.order,
+  match: str7.match,
+  parse(content) {
+    return { type: str7.type, content: content[0] };
+  }
+};
+const obj6 = { match: null, parse: null };
+const obj3 = {
+  order: require("parseLink").RULES.emoji.order,
+  match(arg0) {
+    const EMOJI_NAME_RE = importDefault(3830).EMOJI_NAME_RE;
+    return EMOJI_NAME_RE.exec(arg0);
+  },
+  parse(arg0, arg1, customEmoji) {
+    let tmp;
+    let tmp2;
+    [tmp, tmp2] = arg0;
+    customEmoji = customEmoji.customEmoji;
+    let value = customEmoji.get(tmp2);
+    if (value == null) {
+      value = null;
+    }
+    if (null != value) {
+      let str = "";
+      if (true === value.animated) {
+        str = "a";
+      }
+      let name = value.originalName;
+      if (name == null) {
+        name = value.name;
+      }
+      let obj = { type: "customEmoticon", content: null, emoji: null };
+      const _HermesInternal = HermesInternal;
+      obj[1] = "<" + str + ":" + name + ":" + value.id + ">";
+      obj[2] = value;
+    } else {
+      obj = { type: "text", content: null };
+      obj[1] = tmp;
+    }
+    return obj;
+  }
+};
+obj6[0] = require("t").anyScopeRegex(tmp4);
+obj6[1] = function parse(arg0, arg1, channelId) {
   let guild;
   let isNotification;
   ({ isNotification, guild } = channelId);
   let closure_0;
   const user = authStore.getUser(arg0[1]);
   if (null == user) {
-    let obj = { content: arg0[0] };
+    let obj = { content: null };
+    obj[0] = arg0[0];
     return obj;
   } else {
-    obj = {};
     let str = "always";
     if (isNotification) {
       str = "always";
@@ -713,19 +1034,20 @@ obj5.parse = function parse(arg0, arg1, channelId) {
         str = "never";
       }
     }
-    obj.identifiable = str;
-    const str2 = importDefault(4004).getUserTag(user, obj);
+    obj = { identifiable: null };
+    obj[0] = str;
+    const str2 = importDefault(4028).getUserTag(user, obj);
     if (isNotification) {
+      let tmp13Result = tmp13(4379);
       let id;
-      if (null != guild) {
+      if (guild != null) {
         id = guild.id;
       }
-      let nickname = importDefault(4354).getNickname(id, channelId.channelId, user);
-      if (null == nickname) {
-        nickname = importDefault(4004).getGlobalName(user);
-        const obj6 = importDefault(4004);
+      let nickname = tmp13Result.getNickname(id, channelId.channelId, user);
+      if (nickname == null) {
+        tmp13Result = tmp13(4028);
+        nickname = tmp13Result.getGlobalName(user);
       }
-      const obj1 = {};
       if (null != nickname) {
         const _HermesInternal6 = HermesInternal;
         let combined = "@" + nickname;
@@ -733,75 +1055,74 @@ obj5.parse = function parse(arg0, arg1, channelId) {
         const _HermesInternal5 = HermesInternal;
         combined = "@" + str2;
       }
-      obj1.content = combined;
-      return obj1;
+      obj = { content: null };
+      obj[0] = combined;
+      return obj;
     } else if (user.bot) {
-      const obj2 = {};
+      const obj1 = { content: null };
       const _HermesInternal4 = HermesInternal;
-      obj2.content = "@" + str2;
-      return obj2;
+      obj1[0] = "@" + str2;
+      return obj1;
     } else {
       let id1;
-      if (null != guild) {
+      if (guild != null) {
         id1 = guild.id;
       }
       let str4 = "";
       if (null != id1) {
         closure_0 = str2.toLowerCase();
-        obj = importDefault(22);
         let str5 = "";
-        if (obj.some(store3.getUnsafeMutableRoles(guild.id), (name) => closure_0.startsWith(name.name.toLowerCase()))) {
+        if (tmp13Result1.some(store3.getUnsafeMutableRoles(guild.id), (name) => closure_0.startsWith(name.name.toLowerCase()))) {
           const _HermesInternal = HermesInternal;
           const combined1 = "" + user.discriminator;
           const _HermesInternal2 = HermesInternal;
           str5 = "#" + combined1.padStart(4, "0");
         }
         str4 = str5;
+        tmp13Result1 = tmp13(12);
       }
-      const obj3 = {};
+      const obj2 = { content: null };
       const _HermesInternal3 = HermesInternal;
-      obj3.content = "@" + str2 + str4;
-      return obj3;
+      obj2[0] = "@" + str2 + str4;
+      return obj2;
     }
-    const obj9 = importDefault(4004);
+    const obj10 = importDefault(4028);
   }
 };
-obj4.mention = obj5;
-let obj6 = {};
-obj6.match = require("t").anyScopeRegex(tmp5);
-obj6.parse = function parse(content, arg1, guild) {
+obj5[2] = obj6;
+const obj7 = { match: null, parse: null };
+obj7[0] = require("t").anyScopeRegex(tmp5);
+obj7[1] = function parse(content, arg1, guild) {
   guild = guild.guild;
   if (null != guild) {
     const role = store3.getRole(guild.id, content[1]);
     if (null != role) {
-      let obj = {};
+      let obj = { content: null };
       const _HermesInternal = HermesInternal;
-      obj.content = "@" + role.name;
+      obj[0] = "@" + role.name;
       return obj;
     }
   }
   obj = { content: content[0] };
   return obj;
 };
-obj4.roleMention = obj6;
-const obj7 = {};
-obj7.match = require("t").anyScopeRegex(tmp6);
-obj7.parse = function parse(arg0) {
+obj5[3] = obj7;
+const obj8 = { match: null, parse: null };
+obj8[0] = require("t").anyScopeRegex(tmp6);
+obj8[1] = function parse(arg0) {
   const channel = store2.getChannel(arg0[1]);
-  const obj = {};
   if (null == channel) {
-    let first = arg0[0];
+    let content = arg0[0];
   } else {
-    const obj2 = require(4355) /* computeDefaultGroupDmNameFromUserIds */;
-    first = obj2.computeChannelName(channel, closure_14, closure_12, true, true);
+    const obj = str7(4380);
+    content = obj.computeChannelName(channel, mergeGuildAvatar, upsertRelationship, true, true);
   }
-  obj.content = first;
-  return obj;
+  return { content };
 };
-obj4.channel = obj7;
-const obj8 = {};
-obj8.match = require("t").anyScopeRegex(tmp7);
-obj8.parse = function parse(arg0, arg1, guild) {
+obj5[4] = obj8;
+const obj9 = { match: null, parse: null };
+obj9[0] = require("t").anyScopeRegex(tmp7);
+obj9[1] = function parse(arg0, arg1, guild) {
   let name;
   let tmp;
   [, name, tmp] = arg0;
@@ -812,56 +1133,55 @@ obj8.parse = function parse(arg0, arg1, guild) {
   }
   const disambiguatedEmojiContext = store.getDisambiguatedEmojiContext(id);
   const byId = disambiguatedEmojiContext.getById(tmp);
-  const obj = {};
   if (null != byId) {
     name = byId.name;
   }
-  obj.content = ":" + name + ":";
-  obj.id = tmp;
-  return obj;
+  return { content: ":" + name + ":", id: tmp };
 };
-obj4.emoji = obj8;
-let obj9 = {};
-obj9.match = require("t").anyScopeRegex(require("getSoundmojiFromMessage").soundmojiRawFormatRegex);
-obj9.parse = function parse(arg0) {
+obj5[5] = obj9;
+let obj10 = { match: null, parse: null };
+obj10[0] = require("t").anyScopeRegex(require("getSoundmojiASTFromString").soundmojiRawFormatRegex);
+obj10[1] = function parse(arg0) {
   let tmp;
   let tmp2;
   [, tmp, tmp2] = arg0;
   return { content: "<sound:" + tmp + ":" + tmp2 + ">" };
 };
-obj4.soundboard = obj9;
-const obj10 = {};
-obj10.match = require("t").anyScopeRegex(MARKDOWN_SPOILER_REGEXP);
-obj10.parse = function parse() {
-  const obj = {};
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj.content = "<" + intl.string(require(1212) /* getSystemLocale */.t["F+x38C"]).toLowerCase() + ">";
+obj5[6] = obj10;
+const obj11 = { match: null, parse: null };
+obj11[0] = require("t").anyScopeRegex(MARKDOWN_SPOILER_REGEXP);
+obj11[1] = function parse() {
+  const obj = { content: null };
+  const intl = str7(1236).intl;
+  obj[0] = "<" + intl.string(str7(1236).t["F+x38C"]).toLowerCase() + ">";
   return obj;
 };
-obj4.spoiler = obj10;
-const obj11 = {};
-obj11.match = require("t").anyScopeRegex(MARKDOWN_STATIC_ROUTE_NAME_REGEXP);
-obj11.parse = function parse(arg0) {
+obj5[7] = obj11;
+const obj12 = { match: null, parse: null };
+obj12[0] = require("t").anyScopeRegex(MARKDOWN_STATIC_ROUTE_NAME_REGEXP);
+obj12[1] = function parse(arg0) {
   return { content: "<id:" + arg0[1] + ">" };
 };
-obj4.staticRouteLink = obj11;
-const obj12 = {};
+obj5[8] = obj12;
+const obj13 = {};
 const merged1 = Object.assign(require("parseLink").RULES.timestamp);
-obj12["parse"] = function parse(arg0) {
+obj13.parse = function parse() {
   const items = [...arguments];
-  const timestamp = importDefault(4600).RULES.timestamp;
+  const timestamp = importDefault(4622).RULES.timestamp;
   const items1 = [...items];
   const applyResult = timestamp.parse.apply(items1);
   if ("text" === applyResult.type) {
-    let obj = { content: applyResult.content };
+    let obj = { content: null };
+    obj[0] = applyResult.content;
   } else {
-    obj = { content: applyResult.formatted };
+    obj = { content: null };
+    obj[0] = applyResult.formatted;
   }
   return obj;
 };
-obj4.timestamp = obj12;
-obj4.text = {};
-let items = [obj, obj4];
+obj5[9] = obj13;
+obj5[10] = {};
+let items = [obj, obj5];
 let item = items.forEach((arg0) => {
   let closure_0 = arg0;
   const keys = Object.keys(arg0);
@@ -869,16 +1189,15 @@ let item = items.forEach((arg0) => {
     table[arg0].order = order;
   });
 });
-const obj13 = {};
+const obj14 = {};
 let closure_22 = require("t").parserFor(obj);
 const re23 = /(?:<a?:\w+:(\d+)>)|:(?:([^\s:]+?)(?:::skin-tone-\d)?:)/g;
-const obj14 = {
+const obj15 = {
   parse(getGuildId, content, arg2, size) {
-    let iter;
-    let tmp = arg2;
     let closure_0 = getGuildId;
+    let tmp = arg2;
     let obj;
-    if (null == tmp) {
+    if (tmp == null) {
       tmp = createParserState(getGuildId, size);
     }
     obj = { content, tts: false, invalidEmojis: [], validNonShortcutEmojis: [] };
@@ -898,19 +1217,16 @@ const obj14 = {
         const _Set = Set;
         const set = new Set(callback(obj.content));
         const items = [];
-        const tmp10 = _createForOfIteratorHelperLoose(size.values());
-        let iter2 = tmp10();
-        if (!iter2.done) {
-          do {
-            let value = iter2.value;
-            if (set.has(value.id)) {
-              obj = {};
-              ({ id: obj2.id, name: obj2.name, icon: obj2.icon } = value);
-              let arr = items.push(obj);
-            }
-            iter = tmp10();
-            iter2 = iter;
-          } while (!iter.done);
+        const values = size.values();
+        for (const item10016 of values) {
+          let tmp4 = item10016;
+          if (set.has(item10016.id)) {
+            obj = { id: null, name: null, icon: null };
+            let tmp5 = item10016;
+            ({ id: obj2[0], name: obj2[1], icon: obj2[2] } = tmp4);
+            let arr = items.push(obj);
+          }
+          continue;
         }
         if (items.length > 0) {
           obj.mentionGames = items;
@@ -927,8 +1243,8 @@ const obj14 = {
   },
   unparseWithMeta
 };
-let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/messages/MessageParser.tsx");
+let result = require("ensureGuildLoaded").fileFinishedImporting("modules/messages/MessageParser.tsx");
 
-export default obj14;
+export default obj15;
 export { parseAndRebuild };
 export { createParserState };

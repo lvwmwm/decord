@@ -1,199 +1,206 @@
-// Module ID: 8796
-// Function ID: 69426
+// Module ID: 8820
+// Function ID: 8821
 // Name: Placeholder
-// Dependencies: [57, 31, 27, 8797, 33, 4165, 689, 8798, 5198, 1324, 8800, 4026, 4161, 1273, 4695, 4697, 1557, 8803, 8804, 8805, 9069, 9072, 9217, 2]
+// Dependencies: [32, 19, 17, 8821, 21, 4189, 712, 8822, 5220, 1348, 8824, 4050, 4185, 1297, 4717, 4719, 1581, 8827, 8828, 8829, 9093, 9096, 9241, 2]
 
-// Module 8796 (Placeholder)
+// Module 8820 (Placeholder)
 import _slicedToArray from "_slicedToArray";
-import importAllResult from "result";
-import { View } from "get ActivityIndicator";
+import importAllResult from "UserRowSubLabel";
+import { View } from "useScaledRowHeight";
 import PX_24 from "PX_24";
-import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import jsxProd from "module_9096";
+import createCacheKey from "createCacheKey";
 
-let closure_7;
-let closure_8;
-let closure_9;
+let c9;
+let error;
+let metroImportAll;
 const require = arg1;
 function Placeholder(arg0) {
   let end;
   let start;
   ({ start, end } = arg0);
-  let obj = require(8798) /* styles */;
+  let obj = require(8822) /* styles */;
   const fastestListTableRowPlaceholderStyles = obj.useFastestListTableRowPlaceholderStyles();
-  obj = { end, start };
+  obj = { end, start, label: null, icon: null, height: "100%" };
   const items = [fastestListTableRowPlaceholderStyles.placeholderUsername, callback(importAllResult.useState(() => ({ width: `${10 + 80 * Math.random() | 0}%` })), 1)[0]];
-  obj.label = callback2(View, { style: items });
+  obj[2] = callback2(View, { style: items });
   obj = { style: fastestListTableRowPlaceholderStyles.placeholderAvatar };
-  obj.icon = callback2(View, obj);
-  obj.height = "100%";
-  return callback2(require(5198) /* TableRowInner */.TableRow, obj);
+  obj[3] = callback2(View, obj);
+  return callback2(require(5220) /* TableRowInner */.TableRow, obj);
 }
 function PlaceholderSection() {
   return callback2(View, {});
 }
+let c4 = importAllResult;
 const USERS_LIST_PADDING_BETWEEN_SECTIONS = PX_24.USERS_LIST_PADDING_BETWEEN_SECTIONS;
-({ jsx: closure_7, jsxs: closure_8, Fragment: closure_9 } = jsxProd);
-obj = { sectionHeader: obj };
+({ jsx: error, jsxs: metroImportAll, Fragment: c9 } = jsxProd);
+obj = { sectionHeader: obj, stickyHeader: null, list: null, emptySection: null, section: null, badgeWrapper: null, badge: null };
 obj = { flex: 1, overflow: "hidden", top: -1 * PX_24.USERS_LIST_SECTION_BOTTOM_PADDING };
-_createForOfIteratorHelperLoose = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.MOBILE_ACTIONSHEET_BACKGROUND };
-obj.stickyHeader = _createForOfIteratorHelperLoose;
-let obj2 = { flex: 1, backgroundColor: require("_createForOfIteratorHelperLoose").colors.MOBILE_ACTIONSHEET_BACKGROUND, paddingHorizontal: 16 };
-obj.list = obj2;
-obj.emptySection = { paddingBottom: USERS_LIST_PADDING_BETWEEN_SECTIONS };
-let obj3 = { flex: 1, display: "flex", flexDirection: "row", alignItems: "flex-start", justifyContent: "space-between", paddingTop: USERS_LIST_PADDING_BETWEEN_SECTIONS, textTransform: "none" };
-obj.section = obj3;
-obj.badgeWrapper = { height: "100%" };
-let obj4 = { position: "absolute", left: require("_createForOfIteratorHelperLoose").space.PX_4 + require("_createForOfIteratorHelperLoose").space.PX_4 / 2, top: 5 };
-obj.badge = obj4;
-let closure_10 = _createForOfIteratorHelperLoose.createStyles(obj);
-let closure_11 = { code: "function UsersFastListTsx1(){const{scrollPosValue,stickyAt}=this.__closure;var _scrollPosValue;const scrollPos=(_scrollPosValue=scrollPosValue)===null||_scrollPosValue===void 0?void 0:_scrollPosValue.get();if(scrollPos==null||stickyAt==null){return false;}return scrollPos>=stickyAt;}" };
-let closure_12 = { code: "function UsersFastListTsx2(){const{isSticky,styles}=this.__closure;return{backgroundColor:isSticky.get()?styles.stickyHeader.backgroundColor:'transparent'};}" };
-let closure_13 = { code: "function UsersFastListTsx3(){const{isSticky}=this.__closure;return{opacity:isSticky.get()?1:0};}" };
-let closure_14 = importAllResult.memo(function UserSectionInner(stickyAt) {
+createCacheKey = { backgroundColor: require("Themes").colors.MOBILE_ACTIONSHEET_BACKGROUND };
+obj[1] = createCacheKey;
+obj[2] = { flex: 1, backgroundColor: require("Themes").colors.MOBILE_ACTIONSHEET_BACKGROUND, paddingHorizontal: 16 };
+obj[3] = { paddingBottom: USERS_LIST_PADDING_BETWEEN_SECTIONS };
+obj[4] = { flex: 1, display: "flex", flexDirection: "row", alignItems: "flex-start", justifyContent: "space-between", paddingTop: USERS_LIST_PADDING_BETWEEN_SECTIONS, textTransform: "none" };
+obj[5] = { height: "100%" };
+let obj3 = { position: "absolute", left: null, top: 5 };
+obj3[1] = require("Themes").space.PX_4 + require("Themes").space.PX_4 / 2;
+obj[6] = obj3;
+let closure_10 = createCacheKey.createStyles(obj);
+let closure_13 = { code: "function UsersFastListTsx1(){const{scrollPosValue,stickyAt}=this.__closure;var _scrollPosValue;const scrollPos=(_scrollPosValue=scrollPosValue)===null||_scrollPosValue===void 0?void 0:_scrollPosValue.get();if(scrollPos==null||stickyAt==null){return false;}return scrollPos>=stickyAt;}" };
+let closure_14 = { code: "function UsersFastListTsx2(){const{isSticky,styles}=this.__closure;return{backgroundColor:isSticky.get()?styles.stickyHeader.backgroundColor:'transparent'};}" };
+let closure_15 = { code: "function UsersFastListTsx3(){const{isSticky}=this.__closure;return{opacity:isSticky.get()?1:0};}" };
+let closure_16 = importAllResult.memo(function UserSectionInner(stickyAt) {
   let action;
   let actionTitle;
   let badge;
   let colorOverride;
   let disableStickySections;
-  let disableThemedGradient;
   let scrollPosValue;
   let title;
   ({ title, colorOverride } = stickyAt);
   ({ actionTitle, badge, scrollPosValue } = stickyAt);
   stickyAt = stickyAt.stickyAt;
-  ({ action, disableStickySections, disableThemedGradient } = stickyAt);
-  let tmp = callback3();
-  let _slicedToArray = tmp;
-  const tmp2 = scrollPosValue(stickyAt[9])("UserSectionInner");
+  const disableThemedGradient = stickyAt.disableThemedGradient;
+  let c3;
+  let clientThemesOverride;
+  let derivedValue;
+  let animatedStyle;
+  ({ action, disableStickySections } = stickyAt);
+  const tmp = callback3();
+  c3 = tmp;
+  const tmp4 = scrollPosValue(stickyAt[9])("UserSectionInner");
   let items = [colorOverride];
   const memo = clientThemesOverride.useMemo(() => {
-    let tmp = null != colorOverride;
-    if (tmp) {
-      const obj = { color: colorOverride };
-      tmp = obj;
+    let tmp2 = null != colorOverride;
+    if (tmp2) {
+      const obj = { color: null };
+      obj[0] = tmp;
+      tmp2 = obj;
     }
-    return tmp;
+    return tmp2;
   }, items);
   let obj = colorOverride(stickyAt[10]);
   clientThemesOverride = obj.useClientThemesOverride();
   const items1 = [tmp.section, clientThemesOverride];
   const memo1 = clientThemesOverride.useMemo(() => {
-    const items = [tmp.section, clientThemesOverride];
+    const items = [_undefined.section, clientThemesOverride];
     return items;
   }, items1);
   let obj1 = colorOverride(stickyAt[11]);
   class P {
     constructor() {
+      obj = scrollPosValue;
       value = undefined;
-      if (null != scrollPosValue) {
-        tmp2 = scrollPosValue;
-        value = scrollPosValue.get();
+      if (scrollPosValue != null) {
+        value = obj.get();
       }
-      tmp3 = null != value;
-      if (tmp3) {
+      tmp2 = null != value;
+      if (tmp2) {
+        tmp3 = stickyAt;
+        tmp2 = null != stickyAt;
+      }
+      if (tmp2) {
         tmp4 = stickyAt;
-        tmp3 = null != stickyAt;
+        tmp2 = value >= stickyAt;
       }
-      if (tmp3) {
-        tmp5 = stickyAt;
-        tmp3 = value >= stickyAt;
-      }
-      return tmp3;
+      return tmp2;
     }
   }
   P.__closure = { scrollPosValue, stickyAt };
   P.__workletHash = 15448160320615;
-  P.__initData = closure_11;
-  const derivedValue = obj1.useDerivedValue(P);
+  P.__initData = closure_13;
+  derivedValue = obj1.useDerivedValue(P);
   let obj2 = colorOverride(stickyAt[11]);
   const fn = function x() {
-    const obj = {};
-    let str = "transparent";
+    let backgroundColor = "transparent";
     if (derivedValue.get()) {
-      str = tmp.stickyHeader.backgroundColor;
+      backgroundColor = _undefined.stickyHeader.backgroundColor;
     }
-    obj.backgroundColor = str;
-    return obj;
+    return { backgroundColor };
   };
   fn.__closure = { isSticky: derivedValue, styles: tmp };
   fn.__workletHash = 6340072007400;
-  fn.__initData = closure_12;
-  const animatedStyle = obj2.useAnimatedStyle(fn);
+  fn.__initData = closure_14;
+  animatedStyle = obj2.useAnimatedStyle(fn);
   const items2 = [tmp.sectionHeader, animatedStyle];
   const memo2 = clientThemesOverride.useMemo(() => {
-    const items = [tmp.sectionHeader, animatedStyle];
+    const items = [_undefined.sectionHeader, animatedStyle];
     return items;
   }, items2);
   let obj3 = colorOverride(stickyAt[11]);
   const fn2 = function w() {
-    const obj = {};
-    let num = 0;
+    let opacity = 0;
     if (derivedValue.get()) {
-      num = 1;
+      opacity = 1;
     }
-    obj.opacity = num;
-    return obj;
+    return { opacity };
   };
   fn2.__closure = { isSticky: derivedValue };
   fn2.__workletHash = 13270974904859;
-  fn2.__initData = closure_13;
+  fn2.__initData = closure_15;
   const animatedStyle1 = obj3.useAnimatedStyle(fn2);
   if (null == title) {
     if (null == actionTitle) {
-      obj = { style: tmp.emptySection };
+      obj = { style: null };
+      obj[0] = tmp.emptySection;
       return callback2(derivedValue, obj);
     }
   }
-  obj = { style: memo1 };
-  obj1 = { maxFontSizeMultiplier: 2, accessibilityRole: "header" };
+  obj = { style: memo1, children: null };
   let str = "text-sm/semibold";
-  if (tmp2) {
+  if (tmp4) {
     str = "text-md/medium";
   }
-  obj1.variant = str;
+  obj1 = { maxFontSizeMultiplier: 2, accessibilityRole: "header", variant: str, color: null, style: null, children: null };
   let str2 = "interactive-text-default";
-  if (tmp2) {
+  if (tmp4) {
     str2 = "text-subtle";
   }
-  obj1.color = str2;
-  obj1.style = memo;
+  obj1[3] = str2;
+  obj1[4] = memo;
   const items3 = [title, ];
-  let tmp12 = null;
+  let tmp15 = null;
   if (null != badge) {
-    obj2 = { style: tmp.badgeWrapper };
-    obj3 = { style: tmp.badge, value: badge };
-    obj2.children = callback2(colorOverride(stickyAt[13]).Badge, obj3);
-    tmp12 = callback2(derivedValue, obj2);
+    obj2 = { style: null, children: null };
+    obj2[0] = tmp.badgeWrapper;
+    obj3 = { style: null, value: null };
+    obj3[0] = tmp.badge;
+    obj3[1] = badge;
+    obj2[1] = callback2(tmp6(tmp3[13]).Badge, obj3);
+    tmp15 = callback2(tmp14, obj2);
   }
-  items3[1] = tmp12;
-  obj1.children = items3;
+  items3[1] = tmp15;
+  obj1[5] = items3;
   const items4 = [closure_8(colorOverride(stickyAt[12]).Text, obj1), ];
-  let tmp18 = null;
+  let tmp17 = null;
   if (null != actionTitle) {
-    const obj4 = { onPress: action };
-    const obj5 = { variant: "text-sm/semibold", color: "text-brand", children: actionTitle };
-    obj4.children = callback2(colorOverride(stickyAt[12]).Text, obj5);
-    tmp18 = callback2(colorOverride(stickyAt[14]).PressableOpacity, obj4);
+    const obj4 = { onPress: null, children: null };
+    obj4[0] = action;
+    const obj5 = { variant: "text-sm/semibold", color: "text-brand", children: null };
+    obj5[2] = actionTitle;
+    obj4[1] = callback2(tmp6(tmp3[12]).Text, obj5);
+    tmp17 = callback2(tmp6(tmp3[14]).PressableOpacity, obj4);
   }
-  items4[1] = tmp18;
-  obj.children = items4;
-  const tmp10Result = closure_8(derivedValue, obj);
-  let tmp25Result = tmp10Result;
+  items4[1] = tmp17;
+  obj[1] = items4;
+  let tmp13Result = tmp13(tmp14, obj);
   if (!disableStickySections) {
-    const obj6 = { style: memo2 };
-    let tmp28 = !disableThemedGradient;
-    if (tmp28) {
-      const obj7 = { style: animatedStyle1, children: callback2(scrollPosValue(stickyAt[15]), { absolute: true, tall: true, wide: true, mix: true }) };
-      tmp28 = callback2(scrollPosValue(stickyAt[11]).View, obj7);
+    const obj6 = { style: null, children: null };
+    obj6[0] = memo2;
+    let tmp21 = !disableThemedGradient;
+    if (!disableThemedGradient) {
+      const obj7 = { style: null, children: null };
+      obj7[0] = animatedStyle1;
+      obj7[1] = callback2(tmp2(tmp3[15]), { absolute: true, tall: true, wide: true, mix: true });
+      tmp21 = callback2(tmp2(tmp3[11]).View, obj7);
     }
-    const items5 = [tmp28, tmp10Result];
-    obj6.children = items5;
-    tmp25Result = closure_8(scrollPosValue(stickyAt[11]).View, obj6);
-    const tmp25 = closure_8;
+    const items5 = [tmp21, tmp13Result];
+    obj6[1] = items5;
+    tmp13Result = tmp13(tmp2(tmp3[11]).View, obj6);
   }
-  return tmp25Result;
+  return tmp13Result;
 });
+let obj2 = { flex: 1, backgroundColor: require("Themes").colors.MOBILE_ACTIONSHEET_BACKGROUND, paddingHorizontal: 16 };
 const forwardRefResult = importAllResult.forwardRef(function UsersFastListInner(getItemProps, ref) {
   let getItemSize;
   let inActionSheet;
@@ -233,38 +240,37 @@ const forwardRefResult = importAllResult.forwardRef(function UsersFastListInner(
     num = getSectionProps(flag2[16])().bottom;
   }
   const sum = insetEnd + num;
-  let tmp3 = getSectionProps(flag2[17])();
-  const tmp4 = getSectionProps(flag2[18])();
-  c7 = tmp4;
-  let obj = getItemProps(flag2[10]);
+  const tmp6 = getSectionProps(flag2[18])();
+  c7 = tmp6;
+  let obj = getItemProps(tmp3[10]);
   clientThemesOverride = obj.useClientThemesOverride();
   let items = [getSectionProps, flag2, disableThemedGradient];
   const items1 = [getItemProps];
-  const callback = disableBackgroundOverlay.useCallback((arg0, arg1, arg2, arg3) => {
+  const callback = disableBackgroundOverlay.useCallback((arg0, arg1, scrollPosValue, stickyAt) => {
     const element = getSectionProps(arg0);
     let type;
-    if (null != element) {
+    if (element != null) {
       type = element.type;
     }
     if ("placeholder" === type) {
-      return _undefined2(outer1_16, {});
+      return _undefined2(outer1_12, {});
     } else if ("section" === type) {
       const obj = {};
       const merged = Object.assign(element.props);
-      obj["disableStickySections"] = flag2;
-      obj["disableThemedGradient"] = disableThemedGradient;
-      obj["scrollPosValue"] = arg2;
-      obj["stickyAt"] = arg3;
-      return _undefined2(outer1_14, obj);
+      obj.disableStickySections = flag2;
+      obj.disableThemedGradient = disableThemedGradient;
+      obj.scrollPosValue = scrollPosValue;
+      obj.stickyAt = stickyAt;
+      return _undefined2(outer1_16, obj);
     } else {
       return null;
     }
   }, items);
-  const items2 = [getSectionProps, tmp4];
+  const items2 = [getSectionProps, tmp6];
   const callback1 = disableBackgroundOverlay.useCallback((arg0, arg1) => {
     const element = getItemProps(arg0, arg1);
     let type;
-    if (null != element) {
+    if (element != null) {
       type = element.type;
     }
     if ("user" === type) {
@@ -274,7 +280,7 @@ const forwardRefResult = importAllResult.forwardRef(function UsersFastListInner(
     } else if ("placeholder" === type) {
       obj = {};
       const merged1 = Object.assign(element.props);
-      return _undefined2(outer1_15, obj);
+      return _undefined2(outer1_11, obj);
     } else if ("gdm" === type) {
       const obj1 = {};
       const merged2 = Object.assign(element.props);
@@ -284,7 +290,8 @@ const forwardRefResult = importAllResult.forwardRef(function UsersFastListInner(
       const merged3 = Object.assign(element.props);
       return _undefined2(getSectionProps(flag2[21]), obj2);
     } else if ("custom" === type) {
-      obj = { children: element.component() };
+      obj = { children: null };
+      obj[0] = element.component();
       return _undefined2(outer1_9, obj);
     } else {
       return null;
@@ -292,9 +299,9 @@ const forwardRefResult = importAllResult.forwardRef(function UsersFastListInner(
   }, items1);
   const items3 = [tmp.list, disableBackgroundOverlay, clientThemesOverride, listStyleOverride];
   const callback2 = disableBackgroundOverlay.useCallback((arg0) => {
-    let type;
     const element = getSectionProps(arg0);
-    if (null != element) {
+    let type;
+    if (element != null) {
       type = element.type;
     }
     if ("placeholder" === type) {
@@ -317,30 +324,25 @@ const forwardRefResult = importAllResult.forwardRef(function UsersFastListInner(
     items[2] = listStyleOverride;
     return items;
   }, items3);
-  obj = { sections, sectionHeaderIsSticky: !flag2, sectionHeaderSize: callback2, estimatedListSize: "windowSize", ref, style: memo };
-  const tmp10 = getSectionProps(flag2[7])();
-  const tmp11 = c7;
-  if (null != getItemSize) {
-    tmp3 = getItemSize;
+  const tmp5 = getSectionProps(flag2[17])();
+  obj = { sections, sectionHeaderIsSticky: !flag2, sectionHeaderSize: callback2, estimatedListSize: "windowSize", ref, style: memo, itemSize: null, renderItem: null, renderListHeader: null, renderSectionHeader: null, insetStart: null, insetEnd: null, keyboardDismissMode: "on-drag", keyboardShouldPersistTaps: "always", inActionSheet: null, onScroll: null, onLayout: null, placeholderConfig: null, listId: "users-fast-list", listHeaderSize: null, listHeaderAlwaysMounted: true, scrollReporting: "callbacks", wrapChildren: true };
+  const tmp12 = getSectionProps(flag2[7])();
+  const tmp13 = c7;
+  if (getItemSize == null) {
+    getItemSize = tmp5;
   }
-  obj.itemSize = tmp3;
-  obj.renderItem = callback1;
-  obj.renderListHeader = renderListHeader;
-  obj.renderSectionHeader = callback;
-  obj.insetStart = insetStart;
-  obj.insetEnd = sum;
-  obj.keyboardDismissMode = "on-drag";
-  obj.keyboardShouldPersistTaps = "always";
-  obj.inActionSheet = inActionSheet;
-  obj.onScroll = onScroll;
-  obj.onLayout = onLayout;
-  obj.placeholderConfig = tmp10;
-  obj.listId = "users-fast-list";
-  obj.listHeaderSize = listHeaderSize;
-  obj.listHeaderAlwaysMounted = true;
-  obj.scrollReporting = "callbacks";
-  obj.wrapChildren = true;
-  return tmp11(getSectionProps(flag2[22]), obj);
+  obj[6] = getItemSize;
+  obj[7] = callback1;
+  obj[8] = renderListHeader;
+  obj[9] = callback;
+  obj[10] = insetStart;
+  obj[11] = sum;
+  obj[14] = inActionSheet;
+  obj[15] = onScroll;
+  obj[16] = onLayout;
+  obj[17] = tmp12;
+  obj[19] = listHeaderSize;
+  return tmp13(getSectionProps(flag2[22]), obj);
 });
 const result = require("get ActivityIndicator").fileFinishedImporting("modules/main_tabs_v2/native/shared_components/user_list/UsersFastList.tsx");
 

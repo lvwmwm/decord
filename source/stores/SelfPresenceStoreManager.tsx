@@ -1,32 +1,25 @@
-// Module ID: 16280
-// Function ID: 126126
-// Name: _isNativeReflectConstruct
-// Dependencies: [7, 6, 15, 17, 18, 4845, 5112, 686, 2]
+// Module ID: 16315
+// Function ID: 16316
+// Name: handleChange
+// Dependencies: [4867, 5134, 709, 2]
 
-// Module 16280 (_isNativeReflectConstruct)
-import dispatcher from "dispatcher";
-import AutomaticLifecycleManager from "AutomaticLifecycleManager";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import tmp2 from "AutomaticLifecycleManager";
+// Module 16315 (handleChange)
+import filterPlayingActivities from "filterPlayingActivities";
+import "initialize";
 
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
-  }
-  const result = _isNativeReflectConstruct();
-}
 function handleChange() {
-  let obj = importDefault(686);
+  let obj = importDefault(709);
   obj = { type: "SELF_PRESENCE_STORE_UPDATE", status: store.getStatus(), activities: store.getActivities(true), hiddenActivities: store.getHiddenActivities() };
   obj.dispatch(obj);
 }
-tmp2 = new tmp2();
-let result = require("_possibleConstructorReturn").fileFinishedImporting("stores/SelfPresenceStoreManager.tsx");
+let prototype = function SelfPresenceStoreManager() {
+  const applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
+  applyArgumentsResult.stores = new Map().set(filterPlayingActivities, handleChange);
+  return applyArgumentsResult;
+}.prototype;
+class prototype extends tmp2 {
+}
+prototype = new prototype();
+const result = require("dispatcher").fileFinishedImporting("stores/SelfPresenceStoreManager.tsx");
 
-export default tmp2;
+export default prototype;

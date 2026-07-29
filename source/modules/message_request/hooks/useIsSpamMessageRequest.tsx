@@ -1,18 +1,18 @@
-// Module ID: 10408
-// Function ID: 80166
+// Module ID: 10432
+// Function ID: 10433
 // Name: useIsSpamMessageRequest
-// Dependencies: [5638, 566, 2]
+// Dependencies: [5656, 589, 2]
 // Exports: useIsSpamMessageRequest
 
-// Module 10408 (useIsSpamMessageRequest)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 10432 (useIsSpamMessageRequest)
+import processChannel from "processChannel";
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/message_request/hooks/useIsSpamMessageRequest.tsx");
 
 export const useIsSpamMessageRequest = function useIsSpamMessageRequest(id) {
   const _require = id;
-  const items = [_isNativeReflectConstruct];
+  const items = [processChannel];
   const items1 = [id];
-  return _require(566).useStateFromStores(items, () => outer1_2.isSpam(closure_0), items1);
+  return _require(589).useStateFromStores(items, () => outer1_2.isSpam(closure_0), items1);
 };

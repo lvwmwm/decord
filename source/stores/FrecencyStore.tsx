@@ -1,76 +1,64 @@
-// Module ID: 5077
-// Function ID: 43699
-// Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 1316, 1348, 1838, 1907, 3982, 653, 662, 4249, 22, 566, 686, 2]
+// Module ID: 5099
+// Function ID: 5100
+// Name: handleChannelSelect
+// Dependencies: [1340, 1372, 1862, 1931, 4006, 676, 685, 4273, 12, 589, 709, 2]
 
-// Module 5077 (_isNativeReflectConstruct)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import dispatcher from "dispatcher";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
-import closure_7 from "_isNativeReflectConstruct";
-import closure_8 from "_isNativeReflectConstruct";
-import closure_9 from "_createForOfIteratorHelperLoose";
-import closure_10 from "_isNativeReflectConstruct";
-import closure_11 from "_isNativeReflectConstruct";
+// Module 5099 (handleChannelSelect)
+import handleConnectionClosedOrResumed from "handleConnectionClosedOrResumed";
+import ensureGuildLoaded from "ensureGuildLoaded";
+import createGuildRecordFromRust from "createGuildRecordFromRust";
+import handleConnectionOpen from "handleConnectionOpen";
+import closure_6 from "handleConnectionOpen";
 import { ID_REGEX } from "ME";
 import { UserSettingsTypes } from "MAX_FAVORITES";
-import importDefaultResult from "DEFAULT_FRECENCY";
+import { PersistedStore } from "initialize";
 
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
-  }
-  const result = _isNativeReflectConstruct();
-}
 function handleChannelSelect(arg0) {
   let channelId;
   let guildId;
   ({ guildId, channelId } = arg0);
   let flag = false;
-  if (channelId !== c15) {
-    let tmp2 = null;
-    if (null != channelId) {
-      tmp2 = channelId;
+  if (channelId !== c10) {
+    let tmp2 = channelId;
+    if (channelId == null) {
+      tmp2 = null;
     }
-    c15 = tmp2;
+    c10 = tmp2;
     let isMatch = null != channelId;
     if (isMatch) {
       isMatch = ID_REGEX.test(channelId);
     }
     let flag2 = false;
     if (isMatch) {
-      importDefaultResult.track(channelId);
-      const pendingUsages = closure_17.pendingUsages;
-      let obj = { key: channelId };
+      tmp2.track(channelId);
+      const pendingUsages = closure_13.pendingUsages;
+      let obj = { key: null, timestamp: null };
+      obj[0] = channelId;
       const _Date = Date;
-      obj.timestamp = Date.now();
+      obj[1] = Date.now();
       pendingUsages.push(obj);
       flag2 = true;
     }
     flag = flag2;
   }
   let tmp10 = flag;
-  if (guildId !== c16) {
-    let tmp12 = null;
-    if (null != guildId) {
-      tmp12 = guildId;
+  if (guildId !== c11) {
+    let tmp12 = guildId;
+    if (guildId == null) {
+      tmp12 = null;
     }
-    c16 = tmp12;
+    c11 = tmp12;
     let isMatch1 = null != guildId;
     if (isMatch1) {
       isMatch1 = ID_REGEX.test(guildId);
     }
     if (isMatch1) {
-      importDefaultResult.track(guildId);
-      const pendingUsages1 = closure_17.pendingUsages;
-      obj = { key: guildId };
+      tmp2.track(guildId);
+      const pendingUsages1 = closure_13.pendingUsages;
+      obj = { key: null, timestamp: null };
+      obj[0] = guildId;
       const _Date2 = Date;
-      obj.timestamp = Date.now();
+      obj[1] = Date.now();
       pendingUsages1.push(obj);
       flag = true;
     }
@@ -81,21 +69,21 @@ function handleChannelSelect(arg0) {
 function initFrecency() {
   const guildAndChannelFrecency = obj.frecencyWithoutFetchingLatest.guildAndChannelFrecency;
   let guildAndChannels;
-  if (null != guildAndChannelFrecency) {
+  if (guildAndChannelFrecency != null) {
     guildAndChannels = guildAndChannelFrecency.guildAndChannels;
   }
   if (null == guildAndChannels) {
     return false;
   } else {
-    obj = importDefault(22);
-    importDefaultResult.overwriteHistory(obj.mapValues(guildAndChannels, (recentUses) => {
+    obj = importDefault(12);
+    tmp2.overwriteHistory(obj.mapValues(guildAndChannels, (recentUses) => {
       const obj = {};
       const merged = Object.assign(recentUses);
       recentUses = recentUses.recentUses;
       const mapped = recentUses.map(Number);
-      obj["recentUses"] = mapped.filter((arg0) => arg0 > 0);
+      obj.recentUses = mapped.filter((arg0) => arg0 > 0);
       return obj;
-    }), closure_17.pendingUsages);
+    }), closure_13.pendingUsages);
   }
 }
 let obj = {
@@ -124,13 +112,13 @@ let obj = {
     }
     return num;
   },
-  lookupKey(channelId) {
-    guild = guild.getGuild(channelId);
-    if (null == guild) {
-      guild = authStore.getChannel(channelId);
+  lookupKey(id) {
+    guild = guild.getGuild(id);
+    if (guild == null) {
+      guild = authStore.getChannel(id);
     }
-    if (null == guild) {
-      guild = authStore.getChannel(authStore.getDMFromUserId(channelId));
+    if (guild == null) {
+      guild = authStore.getChannel(authStore.getDMFromUserId(id));
     }
     return guild;
   },
@@ -140,138 +128,87 @@ let obj = {
   numFrequentlyItems: 100,
   maxSamples: 10
 };
-importDefaultResult = new importDefaultResult(obj);
-let c15 = null;
-let c16 = null;
-let closure_17 = { pendingUsages: [] };
-let tmp4 = ((PersistedStore) => {
-  class FrecencyStore {
-    constructor() {
-      self = this;
-      tmp = outer1_2(this, FrecencyStore);
-      obj = outer1_5(FrecencyStore);
-      tmp2 = outer1_4;
-      if (outer1_18()) {
-        tmp6 = globalThis;
-        _Reflect = Reflect;
-        tmp7 = outer1_5;
-        tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, outer1_5(self).constructor);
-      } else {
-        tmp3 = arguments;
-        tmp4 = arguments;
-        constructResult = obj(...arguments);
+let c9 = new require("DEFAULT_FRECENCY")(obj);
+let c10 = null;
+let c11 = null;
+let closure_13 = { pendingUsages: [] };
+class FrecencyStore extends PersistedStore {
+}
+const prototype = FrecencyStore.prototype;
+prototype["initialize"] = function initialize(pendingUsages) {
+  const self = this;
+  this.waitFor(ensureGuildLoaded, createGuildRecordFromRust, handleConnectionOpen, closure_6, handleConnectionClosedOrResumed);
+  if (null != pendingUsages) {
+    pendingUsages = pendingUsages.pendingUsages;
+    pendingUsages.pendingUsages = pendingUsages.filter((key) => {
+      let isMatch = null != key;
+      if (isMatch) {
+        isMatch = regex.test(key.key);
       }
-      return tmp2(self, constructResult);
-    }
+      return isMatch;
+    });
+    let closure_13 = pendingUsages;
   }
-  callback2(FrecencyStore, PersistedStore);
-  let obj = {
-    key: "initialize",
-    value(pendingUsages) {
-      const self = this;
-      this.waitFor(outer1_8, outer1_9, outer1_10, outer1_11, outer1_7);
-      if (null != pendingUsages) {
-        pendingUsages = pendingUsages.pendingUsages;
-        pendingUsages.pendingUsages = pendingUsages.filter((key) => {
-          let isMatch = null != key;
-          if (isMatch) {
-            isMatch = outer2_12.test(key.key);
-          }
-          return isMatch;
-        });
-        const outer1_17 = pendingUsages;
-      }
-      const items = [outer1_7];
-      self.syncWith(items, outer1_19);
-    }
-  };
-  let items = [obj, , , , , , , , , ];
-  obj = {
-    key: "getState",
-    value() {
-      return outer1_17;
-    }
-  };
-  items[1] = obj;
-  obj = {
-    key: "hasPendingUsage",
-    value() {
-      return outer1_17.pendingUsages.length > 0;
-    }
-  };
-  items[2] = obj;
-  items[3] = {
-    key: "frecencyWithoutFetchingLatest",
-    get() {
-      return outer1_14;
-    }
-  };
-  items[4] = {
-    key: "getFrequentlyWithoutFetchingLatest",
-    value() {
-      return outer1_14.frequently;
-    }
-  };
-  items[5] = {
-    key: "getScoreWithoutFetchingLatest",
-    value(arg0) {
-      const frecency = outer1_14.getFrecency(arg0);
-      let num = 0;
-      if (null != frecency) {
-        num = frecency;
-      }
-      return num;
-    }
-  };
-  items[6] = {
-    key: "getScoreForDMWithoutFetchingLatest",
-    value(arg0) {
-      const self = this;
-      const dMFromUserId = outer1_8.getDMFromUserId(arg0);
-      let num = 0;
-      if (null != dMFromUserId) {
-        num = self.getScoreWithoutFetchingLatest(dMFromUserId);
-      }
-      return num;
-    }
-  };
-  items[7] = {
-    key: "getMaxScore",
-    value() {
-      return 1000;
-    }
-  };
-  items[8] = {
-    key: "getBonusScore",
-    value() {
-      return 100;
-    }
-  };
-  items[9] = {
-    key: "getVersion",
-    value() {
-      return outer1_14.version;
-    }
-  };
-  return callback(FrecencyStore, items);
-})(require("initialize").PersistedStore);
-tmp4.displayName = "FrecencyStore";
-tmp4.persistKey = "FrecencyStore";
+  const items = [handleConnectionClosedOrResumed];
+  self.syncWith(items, initFrecency);
+};
+prototype["getState"] = function getState() {
+  return closure_13;
+};
+prototype["hasPendingUsage"] = function hasPendingUsage() {
+  return closure_13.pendingUsages.length > 0;
+};
+Object.defineProperty(prototype, "frecencyWithoutFetchingLatest", {
+  get: function frecencyWithoutFetchingLatest() {
+    return closure_9;
+  },
+  set: undefined
+});
+prototype["getFrequentlyWithoutFetchingLatest"] = function getFrequentlyWithoutFetchingLatest() {
+  return tmp2.frequently;
+};
+prototype["getScoreWithoutFetchingLatest"] = function getScoreWithoutFetchingLatest(id) {
+  let num = tmp2.getFrecency(id);
+  if (num == null) {
+    num = 0;
+  }
+  return num;
+};
+prototype["getScoreForDMWithoutFetchingLatest"] = function getScoreForDMWithoutFetchingLatest(id) {
+  const dMFromUserId = authStore.getDMFromUserId(id);
+  let num = 0;
+  if (null != dMFromUserId) {
+    const self = this;
+    num = this.getScoreWithoutFetchingLatest(dMFromUserId);
+  }
+  return num;
+};
+prototype["getMaxScore"] = function getMaxScore() {
+  return 1000;
+};
+prototype["getBonusScore"] = function getBonusScore() {
+  return 100;
+};
+prototype["getVersion"] = function getVersion() {
+  return tmp2.version;
+};
+FrecencyStore.displayName = "FrecencyStore";
+FrecencyStore.persistKey = "FrecencyStore";
 obj = {
   CHANNEL_SELECT: handleChannelSelect,
   VOICE_CHANNEL_SELECT: handleChannelSelect,
   USER_SETTINGS_PROTO_UPDATE: function handleUserSettingsProtoUpdate(settings) {
     let flag = !tmp;
     if (!(settings.settings.type !== UserSettingsTypes.FRECENCY_AND_FAVORITES_SETTINGS || !settings.wasSaved)) {
-      closure_17.pendingUsages = [];
+      closure_13.pendingUsages = [];
       flag = true;
     }
     return flag;
   }
 };
-tmp4 = new tmp4(require("dispatcher"), obj);
-let result = require("_possibleConstructorReturn").fileFinishedImporting("stores/FrecencyStore.tsx");
+const frecencyStore = new FrecencyStore(require("dispatcher"), obj);
+let tmp2 = new require("DEFAULT_FRECENCY")(obj);
+const result = require("createGuildRecordFromRust").fileFinishedImporting("stores/FrecencyStore.tsx");
 
-export default tmp4;
+export default frecencyStore;
 export const MAX_NUM_SELECTED_ITEMS = 100;

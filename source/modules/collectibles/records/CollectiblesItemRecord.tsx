@@ -1,188 +1,102 @@
-// Module ID: 5784
-// Function ID: 50531
-// Name: _createForOfIteratorHelperLoose
-// Dependencies: [5785, 1875, 5786, 5787, 5788, 653, 1877, 2]
+// Module ID: 5802
+// Function ID: 5803
+// Name: createCollectiblesItemsFromServerResponse
+// Dependencies: [5803, 1899, 5804, 5805, 5806, 676, 1901, 2]
 // Exports: createCollectiblesItemsFromServerResponse
 
-// Module 5784 (_createForOfIteratorHelperLoose)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_3 from "_isNativeReflectConstruct";
-import closure_4 from "_isNativeReflectConstruct";
-import closure_5 from "_isNativeReflectConstruct";
-import closure_6 from "_isNativeReflectConstruct";
+// Module 5802 (createCollectiblesItemsFromServerResponse)
+import fromServer from "fromServer";
+import closure_3 from "fromServer";
+import closure_4 from "fromServer";
+import closure_5 from "fromServer";
+import closure_6 from "fromServer";
 import ME from "ME";
 
-let closure_7;
-let closure_8;
+let error;
+let metroImportAll;
 const require = arg1;
-function _createForOfIteratorHelperLoose(iterable) {
-  let closure_0 = iterable;
-  iterable = "undefined" !== typeof Symbol;
-  if (iterable) {
-    const _Symbol = Symbol;
-    iterable = iterable[Symbol.iterator];
-  }
-  if (!iterable) {
-    iterable = iterable[Symbol.iterator];
-  }
-  if (iterable) {
-    const iter = iterable.call(iterable);
-    const next = iter.next;
-    return next.bind(iter);
-  } else {
-    const _Array = Array;
-    let tmp = iterable;
-    if (!Array.isArray(iterable)) {
-      let tmp2;
-      if (iterable) {
-        if ("string" === typeof iterable) {
-          tmp2 = _arrayLikeToArray(iterable, undefined);
-        } else {
-          const toString = {}.toString;
-          const substr = toString.call(iterable).slice(8, -1);
-          let name = substr;
-          if (tmp3) {
-            name = iterable.constructor.name;
-          }
-          if ("Map" !== name) {
-            if ("Set" !== name) {
-              if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(iterable, undefined);
-              } else {
-                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
-              }
-            }
-            tmp2 = arr;
-          }
-          const _Array2 = Array;
-          arr = Array.from(iterable);
-          const callResult = toString.call(iterable);
-          tmp3 = "Object" === substr && iterable.constructor;
-        }
-      }
-      tmp = tmp2;
-      if (!tmp2) {
-        const _TypeError = TypeError;
-        const typeError = new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
-        throw typeError;
-      }
-    }
-    if (tmp) {
-      closure_0 = tmp;
-    }
-    let c1 = 0;
-    return () => {
-      if (closure_1 >= length.length) {
-        let obj = { done: true };
-      } else {
-        obj = { done: false };
-        closure_1 = tmp3 + 1;
-        obj.value = length[+closure_1];
-      }
-      return obj;
-    };
-  }
-}
-function _arrayLikeToArray(arg0, arg1) {
-  let length;
-  if (tmp) {
-    length = arg0.length;
-  }
-  const ArrayResult = Array(length);
-  for (let num = 0; num < length; num = num + 1) {
-    ArrayResult[num] = arg0[num];
-  }
-  return ArrayResult;
-}
-({ SKUProductLines: closure_7, SKUTypes: closure_8 } = ME);
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/collectibles/records/CollectiblesItemRecord.tsx");
-function transformSKUToCollectiblesItem(value) {
+({ SKUProductLines: error, SKUTypes: metroImportAll } = ME);
+const result = require("fromServer").fileFinishedImporting("modules/collectibles/records/CollectiblesItemRecord.tsx");
+function transformSKUToCollectiblesItem(productLine) {
   let effects;
-  let iter2;
-  if (value.productLine === constants.COLLECTIBLES) {
-    if (value.type === constants2.BUNDLE) {
+  if (productLine.productLine === constants.COLLECTIBLES) {
+    if (productLine.type === constants2.BUNDLE) {
       const items = [];
-      let bundledSkus = value.bundledSkus;
-      if (null == bundledSkus) {
+      let bundledSkus = productLine.bundledSkus;
+      if (bundledSkus == null) {
         bundledSkus = [];
       }
-      const tmp30Result = _createForOfIteratorHelperLoose(bundledSkus);
-      let iter = tmp30Result();
-      if (!iter.done) {
-        do {
-          let tmp33 = transformSKUToCollectiblesItem;
-          let tmp34 = transformSKUToCollectiblesItem(iter.value);
-          let type;
-          if (null != tmp34) {
-            type = tmp34.type;
-          }
-          if ("single" === type) {
-            let arr = items.push(tmp34.item);
-          }
-          iter2 = tmp30Result();
-          iter = iter2;
-        } while (!iter2.done);
+      const tmp32 = bundledSkus[Symbol.iterator]();
+      while (tmp32 !== undefined) {
+        let tmp36 = transformSKUToCollectiblesItem;
+        let tmp37 = transformSKUToCollectiblesItem(tmp34);
+        let type;
+        let tmp38 = tmp37;
+        if (tmp37 != null) {
+          type = tmp37.type;
+        }
+        if ("single" === type) {
+          let tmp40 = tmp37;
+          let arr = items.push(tmp38.item);
+        }
+        continue;
       }
       if (0 !== items.length) {
-        let obj = { type: "bundle", items };
-        const previewAssetPaths = value.previewAssetPaths;
-        let tmp37;
-        if (null != previewAssetPaths) {
-          tmp37 = previewAssetPaths;
-        }
-        obj.previewAssets = tmp37;
+        let obj = { type: "bundle", items: null, previewAssets: null };
+        obj[1] = items;
+        const previewAssetPaths = productLine.previewAssetPaths;
+        obj[2] = previewAssetPaths;
         return obj;
       }
-      const tmp30 = _createForOfIteratorHelperLoose;
     } else {
-      const tenantMetadata = value.tenantMetadata;
+      const tenantMetadata = productLine.tenantMetadata;
       let collectibles;
-      if (null != tenantMetadata) {
+      if (tenantMetadata != null) {
         collectibles = tenantMetadata.collectibles;
       }
       let item;
-      if (null != collectibles) {
+      if (collectibles != null) {
         item = collectibles.item;
       }
       if (null != item) {
         type = item.type;
-        if (require(1877) /* CollectiblesItemType */.CollectiblesItemType.AVATAR_DECORATION === type) {
-          obj = { type: "single" };
-          const obj1 = { skuId: value.id };
-          ({ type: obj8.type, asset: obj8.asset, label: obj8.label } = item);
-          const prototype4 = ctor.prototype;
-          const tmp28 = new ctor(obj1);
-          obj.item = tmp28;
+        if (require(1901) /* CollectiblesItemType */.CollectiblesItemType.AVATAR_DECORATION === type) {
+          obj = { type: "single", item: null };
+          const obj1 = { skuId: null, type: null, asset: null, label: null };
+          obj1[0] = productLine.id;
+          ({ type: obj8[1], asset: obj8[2], label: obj8[3] } = item);
+          const tmp28 = new fromServer(obj1);
+          obj[1] = tmp28;
           return obj;
-        } else if (require(1877) /* CollectiblesItemType */.CollectiblesItemType.NAMEPLATE === type) {
-          const obj2 = { type: "single" };
-          const obj3 = { skuId: value.id };
-          ({ type: obj6.type, asset: obj6.asset, label: obj6.label, palette: obj6.palette } = item);
-          const prototype3 = ctor2.prototype;
-          const tmp22 = new ctor2(obj3);
-          obj2.item = tmp22;
+        } else if (tmp4(1901).CollectiblesItemType.NAMEPLATE === type) {
+          const obj2 = { type: "single", item: null };
+          const obj3 = { skuId: null, type: null, asset: null, label: null, palette: null };
+          obj3[0] = productLine.id;
+          ({ type: obj6[1], asset: obj6[2], label: obj6[3], palette: obj6[4] } = item);
+          const tmp22 = new closure_3(obj3);
+          obj2[1] = tmp22;
           return obj2;
-        } else if (require(1877) /* CollectiblesItemType */.CollectiblesItemType.PROFILE_EFFECT === type) {
-          const obj4 = { type: "single" };
+        } else if (tmp4(1901).CollectiblesItemType.PROFILE_EFFECT === type) {
+          const obj4 = { skuId: null, type: null, title: null, description: null, thumbnailPreviewSrc: null, reducedMotionSrc: null, effects: null, accessibilityLabel: null, animationType: null, staticFrameSrc: null };
+          obj4[0] = productLine.id;
+          ({ type: obj3[1], title: obj3[2], description: obj3[3], thumbnailPreviewSrc: obj3[4], reducedMotionSrc: obj3[5], effects } = item);
           let tmp12 = closure_4;
-          const obj5 = { skuId: value.id };
-          ({ type: obj4.type, title: obj4.title, description: obj4.description, thumbnailPreviewSrc: obj4.thumbnailPreviewSrc, reducedMotionSrc: obj4.reducedMotionSrc, effects } = item);
-          if (null == effects) {
+          if (effects == null) {
             effects = [];
           }
-          obj5.effects = effects;
-          ({ accessibilityLabel: obj4.accessibilityLabel, animationType: obj4.animationType, staticFrameSrc: obj4.staticFrameSrc } = item);
-          const prototype2 = tmp12.prototype;
-          tmp12 = new tmp12(obj5);
-          obj4.item = tmp12;
-          return obj4;
-        } else if (require(1877) /* CollectiblesItemType */.CollectiblesItemType.PROFILE_FRAME === type) {
-          obj = { type: "single" };
-          const obj6 = { skuId: value.id };
-          ({ type: obj2.type, label: obj2.label, layers: obj2.layers, innerWidth: obj2.innerWidth, overflowTop: obj2.overflowTop, overflowBottom: obj2.overflowBottom, overflowHorizontal: obj2.overflowHorizontal } = item);
-          const prototype = ctor3.prototype;
-          const tmp10 = new ctor3(obj6);
-          obj.item = tmp10;
+          const obj5 = { type: "single", item: null };
+          obj4[6] = effects;
+          ({ accessibilityLabel: obj3[7], animationType: obj3[8], staticFrameSrc: obj3[9] } = item);
+          tmp12 = new tmp12(obj4);
+          obj5[1] = tmp12;
+          return obj5;
+        } else if (tmp4(1901).CollectiblesItemType.PROFILE_FRAME === type) {
+          obj = { type: "single", item: null };
+          const obj6 = { skuId: null, type: null, label: null, layers: null, innerWidth: null, overflowTop: null, overflowBottom: null, overflowHorizontal: null };
+          obj6[0] = productLine.id;
+          ({ type: obj2[1], label: obj2[2], layers: obj2[3], innerWidth: obj2[4], overflowTop: obj2[5], overflowBottom: obj2[6], overflowHorizontal: obj2[7] } = item);
+          const tmp10 = new closure_5(obj6);
+          obj[1] = tmp10;
           return obj;
         }
       }
@@ -196,16 +110,16 @@ export const createCollectiblesItemsFromServerResponse = function createCollecti
   } else {
     items = arr.reduce((arr, type) => {
       type = type.type;
-      if (outer1_0(outer1_1[6]).CollectiblesItemType.AVATAR_DECORATION === type) {
-        arr.push(outer1_2.fromServer(type));
-      } else if (outer1_0(outer1_1[6]).CollectiblesItemType.NAMEPLATE === type) {
-        arr.push(outer1_3.fromServer(type));
-      } else if (outer1_0(outer1_1[6]).CollectiblesItemType.PROFILE_EFFECT === type) {
-        arr.push(outer1_4.fromServer(type));
-      } else if (outer1_0(outer1_1[6]).CollectiblesItemType.PROFILE_FRAME === type) {
-        arr.push(outer1_5.fromServer(type));
+      if (callback(table[6]).CollectiblesItemType.AVATAR_DECORATION === type) {
+        arr.push(fromServer.fromServer(type));
+      } else if (tmp(tmp2[6]).CollectiblesItemType.NAMEPLATE === type) {
+        arr.push(closure_3.fromServer(type));
+      } else if (tmp(tmp2[6]).CollectiblesItemType.PROFILE_EFFECT === type) {
+        arr.push(closure_4.fromServer(type));
+      } else if (tmp(tmp2[6]).CollectiblesItemType.PROFILE_FRAME === type) {
+        arr.push(closure_5.fromServer(type));
       } else {
-        arr.push(outer1_6.fromServer(type));
+        arr.push(closure_6.fromServer(type));
       }
       return arr;
     }, []);

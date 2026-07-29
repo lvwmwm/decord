@@ -1,36 +1,32 @@
-// Module ID: 9643
-// Function ID: 75048
+// Module ID: 9665
+// Function ID: 9666
 // Name: DismissibleActionSheet
-// Dependencies: [31, 4594, 4133, 2]
+// Dependencies: [19, 4616, 4157, 2]
 // Exports: DismissibleActionSheet
 
-// Module 9643 (DismissibleActionSheet)
-import result from "result";
+// Module 9665 (DismissibleActionSheet)
+import noop from "noop";
 
-const result = require("showActionSheet").fileFinishedImporting("modules/dismissible_content/native/DismissibleActionSheet.tsx");
+const result = require("ACTION_SHEET_HEIGHT_HALF").fileFinishedImporting("modules/dismissible_content/native/DismissibleActionSheet.tsx");
 
 export const DismissibleActionSheet = function DismissibleActionSheet(arg0) {
   const importDefault = arg0;
-  importDefault(4594)(() => {
+  importDefault(4616)(() => {
     let obj = lib(outer1_1[2]);
     obj = {};
     const merged = Object.assign(lib);
-    obj["markAsDismissed"] = function markAsDismissed(arg0) {
-      callback(outer2_1[2]).hideActionSheet(outer1_0.actionSheetKey);
-      outer1_0.markAsDismissed(arg0);
+    obj.markAsDismissed = function markAsDismissed(arg0) {
+      outer1_0(outer1_1[2]).hideActionSheet(closure_0.actionSheetKey);
+      closure_0.markAsDismissed(arg0);
     };
     obj.openLazy(lib.importer(), lib.actionSheetKey, obj);
   });
   const items = [, ];
   ({ actionSheetKey: arr[0], hideSheetOnUnmount: arr[1] } = arg0);
   const effect = React.useEffect(() => () => {
-    let hideSheetOnUnmount = null != outer1_0.hideSheetOnUnmount;
-    if (hideSheetOnUnmount) {
-      hideSheetOnUnmount = outer1_0.hideSheetOnUnmount;
-    }
-    if (hideSheetOnUnmount) {
-      callback(outer2_1[2]).hideActionSheet(outer1_0.actionSheetKey);
-      const obj = callback(outer2_1[2]);
+    if (tmp2) {
+      outer1_0(outer1_1[2]).hideActionSheet(tmp.actionSheetKey);
+      const obj = outer1_0(outer1_1[2]);
     }
   }, items);
   return null;

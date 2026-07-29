@@ -1,11 +1,10 @@
 // Module ID: 2298
-// Function ID: 23019
+// Function ID: 2299
 // Name: registerAsset
-// Dependencies: [1217]
+// Dependencies: [1241]
 
 // Module 2298 (registerAsset)
 import registerAsset from "registerAsset";
 
-const obj = { __packager_asset: true, httpServerLocation: "/assets/modules/premium/gifting", scales: [1], hash: "567fc188c37481444191c0dbf1996c76", name: "GiftingBadgeTier.compiled.messages", type: "jsona" };
 
-export default registerAsset.registerAsset(obj);
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9wcmVtaXVtL2dpZnRpbmc=", scales: [1], hash: "f5a5970c603200880c76a31fbd1b033a", name: "hi.messages.f5a5970c603200880c76a31fbd1b033a.compiled.messages", type: "jsona" });

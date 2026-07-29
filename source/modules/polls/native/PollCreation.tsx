@@ -1,109 +1,108 @@
-// Module ID: 11348
-// Function ID: 88055
+// Module ID: 11372
+// Function ID: 11373
 // Name: UnsavedChangesAlertModal
-// Dependencies: [31, 27, 6122, 33, 4165, 689, 477, 4510, 1212, 6706, 1273, 11349, 4161, 11350, 4133, 11351, 1935, 5198, 4024, 8402, 480, 5193, 11347, 3866, 9653, 3878, 11352, 11357, 5127, 6054, 4507, 11358, 6731, 5154, 11359, 7611, 11361, 9068, 2]
+// Dependencies: [19, 17, 6140, 21, 4189, 712, 500, 4533, 1236, 6727, 1297, 11373, 4185, 11374, 4157, 11375, 1959, 5220, 4048, 8426, 503, 5215, 11371, 3890, 9675, 3902, 11376, 11381, 5149, 6072, 4530, 11382, 6752, 5176, 11383, 7634, 11385, 9092, 2]
 // Exports: default
 
-// Module 11348 (UnsavedChangesAlertModal)
-import importAllResult from "FocusHelperState";
-import get_ActivityIndicator from "useTrackPollCreationEvents";
+// Module 11372 (UnsavedChangesAlertModal)
+import importAllResult from "trackImpression";
+import get_ActivityIndicator from "TableRowInner";
 import POLL_ATTACHMENT_FOLDER from "POLL_ATTACHMENT_FOLDER";
-import jsxProd from "registerAsset";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import jsxProd from "useSafeAreaInsetsKeyboardAware";
+import createCacheKey from "createCacheKey";
 import set from "set";
 import set from "POLL_ATTACHMENT_FOLDER";
 
-let closure_10;
-let closure_11;
-let closure_4;
-let closure_5;
+let c10;
+let c4;
+let c5;
+let c9;
 let closure_6;
-let closure_7;
-let closure_8;
-let closure_9;
+let error;
+let metroImportAll;
+let unpackModuleId;
 const require = arg1;
 function UnsavedChangesAlertModal(onConfirm) {
-  let obj = {};
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj.title = intl.string(require(1212) /* getSystemLocale */.t.HMrgcp);
-  const intl2 = require(1212) /* getSystemLocale */.intl;
-  obj.content = intl2.string(require(1212) /* getSystemLocale */.t["Wxa/j8"]);
-  obj = {};
-  obj = {};
-  const intl3 = require(1212) /* getSystemLocale */.intl;
-  obj.text = intl3.string(require(1212) /* getSystemLocale */.t.TzJA4g);
-  obj.onPress = onConfirm.onConfirm;
-  const items = [callback(require(4510) /* getAlertModalItemKey */.AlertActionButton, obj, "confirm"), ];
-  const obj1 = { variant: "secondary" };
-  const intl4 = require(1212) /* getSystemLocale */.intl;
-  obj1.text = intl4.string(require(1212) /* getSystemLocale */.t["2BR5R2"]);
-  items[1] = callback(require(4510) /* getAlertModalItemKey */.AlertActionButton, obj1, "back");
-  obj.children = items;
-  obj.actions = callback2(closure_10, obj);
-  return callback(require(4510) /* getAlertModalItemKey */.AlertModal, obj);
+  let obj = { title: null, content: null, actions: null };
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj[0] = intl.string(require(1236) /* getSystemLocale */.t.HMrgcp);
+  const intl2 = require(1236) /* getSystemLocale */.intl;
+  obj[1] = intl2.string(require(1236) /* getSystemLocale */.t["Wxa/j8"]);
+  obj = { children: null };
+  obj = { text: null, onPress: null };
+  const intl3 = require(1236) /* getSystemLocale */.intl;
+  obj[0] = intl3.string(require(1236) /* getSystemLocale */.t.TzJA4g);
+  obj[1] = onConfirm.onConfirm;
+  const items = [callback(require(4533) /* getAlertModalItemKey */.AlertActionButton, obj, "confirm"), ];
+  const obj1 = { variant: "secondary", text: null };
+  const intl4 = require(1236) /* getSystemLocale */.intl;
+  obj1[1] = intl4.string(require(1236) /* getSystemLocale */.t["2BR5R2"]);
+  items[1] = callback(require(4533) /* getAlertModalItemKey */.AlertActionButton, obj1, "back");
+  obj[0] = items;
+  obj[2] = callback2(closure_10, obj);
+  return callback(require(4533) /* getAlertModalItemKey */.AlertModal, obj);
 }
 function AddAnswerButton(onPress) {
   const tmp = callback3();
-  let obj = { source: importDefault(11349), size: require(1273) /* Button */.Icon.Sizes.LARGE, color: tmp.addAnswerIcon.color };
-  obj = { onPress: onPress.onPress, style: tmp.addAnswerButtonDefault, accessibilityRole: "button" };
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj.accessibilityLabel = intl.string(require(1212) /* getSystemLocale */.t.B2Uvme);
-  const items = [callback(require(1273) /* Button */.Icon, obj), ];
-  obj = { variant: "text-md/medium", color: "text-muted" };
-  const intl2 = require(1212) /* getSystemLocale */.intl;
-  obj.children = intl2.string(require(1212) /* getSystemLocale */.t.B2Uvme);
-  items[1] = callback(require(4161) /* Text */.Text, obj);
-  obj.children = items;
+  let obj = { source: null, size: null, color: null };
+  obj[0] = importDefault(11373);
+  obj[1] = require(1297) /* Button */.Icon.Sizes.LARGE;
+  obj[2] = tmp.addAnswerIcon.color;
+  obj = { onPress: onPress.onPress, style: tmp.addAnswerButtonDefault, accessibilityRole: "button", accessibilityLabel: null, children: null };
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj[3] = intl.string(require(1236) /* getSystemLocale */.t.B2Uvme);
+  const items = [callback(require(1297) /* Button */.Icon, obj), ];
+  obj = { variant: "text-md/medium", color: "text-muted", children: null };
+  const intl2 = require(1236) /* getSystemLocale */.intl;
+  obj[2] = intl2.string(require(1236) /* getSystemLocale */.t.B2Uvme);
+  items[1] = callback(require(4185) /* Text */.Text, obj);
+  obj[4] = items;
   return callback2(closure_4, obj);
 }
 function PollDurationSelectionRow(selectedDuration) {
   selectedDuration = selectedDuration.selectedDuration;
   const onChange = selectedDuration.onChange;
-  const tmp = onChange(11350)()[selectedDuration];
-  let obj = {};
-  const intl = selectedDuration(1212).intl;
-  obj.label = intl.string(selectedDuration(1212).t.bGHzxb);
-  const intl2 = selectedDuration(1212).intl;
-  obj.accessibilityLabel = "" + intl2.string(selectedDuration(1212).t.bGHzxb) + " " + tmp;
-  const intl3 = selectedDuration(1212).intl;
-  obj.accessibilityHint = intl3.string(selectedDuration(1212).t.A4PJ1o);
-  obj.onPress = function onPress() {
+  const tmp = onChange(11374)()[selectedDuration];
+  let obj = { label: null, accessibilityLabel: null, accessibilityHint: null, onPress: null, trailing: null, arrow: true };
+  const intl = selectedDuration(1236).intl;
+  obj[0] = intl.string(selectedDuration(1236).t.bGHzxb);
+  const intl2 = selectedDuration(1236).intl;
+  obj[1] = "" + intl2.string(selectedDuration(1236).t.bGHzxb) + " " + tmp;
+  const intl3 = selectedDuration(1236).intl;
+  obj[2] = intl3.string(selectedDuration(1236).t.A4PJ1o);
+  obj[3] = function onPress() {
     let obj = selectedDuration(outer1_2[18]);
     obj.dismissKeyboard();
     obj = { selectedDuration, onChange };
     onChange(outer1_2[14]).openLazy(selectedDuration(outer1_2[16])(outer1_2[15], outer1_2.paths), outer1_8, obj);
   };
-  obj = { variant: "text-md/normal", color: "text-muted", children: tmp };
-  obj.trailing = callback(selectedDuration(4161).Text, obj);
-  obj.arrow = true;
-  return callback(selectedDuration(5198).TableRow, obj);
+  obj[4] = callback(selectedDuration(4185).Text, { variant: "text-md/normal", color: "text-muted", children: tmp });
+  return callback(selectedDuration(5220).TableRow, obj);
 }
-({ TouchableOpacity: closure_4, View: closure_5, ScrollView: closure_6 } = get_ActivityIndicator);
-({ MAX_POLL_QUESTION_LENGTH: closure_7, POLL_CREATION_DURATION_ACTION_SHEET_KEY: closure_8 } = POLL_ATTACHMENT_FOLDER);
-({ jsx: closure_9, Fragment: closure_10, jsxs: closure_11 } = jsxProd);
-let obj = { viewPadding: { paddingHorizontal: 18 }, scrollContainer: { paddingVertical: 20, gap: 16 } };
-obj = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW, flex: 1 };
-obj.safeAreaContainer = obj;
-obj.header = { flexDirection: "row", paddingHorizontal: 18, paddingVertical: 10 };
-obj.actionButton = { flex: 0, justifyContent: "flex-start", minWidth: 48, paddingHorizontal: 0, marginHorizontal: 0 };
-obj.postButton = { justifyContent: "flex-end" };
-obj.title = { textAlign: "center", flexGrow: 1 };
-obj.label = { fontSize: 14 };
-obj.answerInputsContainer = { marginVertical: 20, rowGap: 16 };
-_createForOfIteratorHelperLoose = { paddingVertical: null, paddingLeft: 14, marginRight: 30, display: "flex", flexDirection: "row", gap: 16, alignItems: "center", justifyContent: "flex-start" };
+let c3 = importAllResult;
+({ TouchableOpacity: c4, View: c5, ScrollView: closure_6 } = get_ActivityIndicator);
+({ MAX_POLL_QUESTION_LENGTH: error, POLL_CREATION_DURATION_ACTION_SHEET_KEY: metroImportAll } = POLL_ATTACHMENT_FOLDER);
+({ jsx: c9, Fragment: c10, jsxs: unpackModuleId } = jsxProd);
+let obj = { viewPadding: { paddingHorizontal: 18 }, scrollContainer: { paddingVertical: 20, gap: 16 }, safeAreaContainer: null, header: null, actionButton: null, postButton: null, title: null, label: null, answerInputsContainer: null, addAnswerButtonDefault: null, addAnswerIcon: null, pollConfigSection: null };
+obj = { backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW, flex: 1 };
+obj[2] = obj;
+obj[3] = { flexDirection: "row", paddingHorizontal: 18, paddingVertical: 10 };
+obj[4] = { flex: 0, justifyContent: "flex-start", minWidth: 48, paddingHorizontal: 0, marginHorizontal: 0 };
+obj[5] = { justifyContent: "flex-end" };
+obj[6] = { textAlign: "center", flexGrow: 1 };
+obj[7] = { fontSize: 14 };
+obj[8] = { marginVertical: 20, rowGap: 16 };
 let num = 8;
 if (set.isAndroid()) {
   num = 10;
 }
-_createForOfIteratorHelperLoose.paddingVertical = num;
-_createForOfIteratorHelperLoose.backgroundColor = require("_createForOfIteratorHelperLoose").colors.MESSAGE_BACKGROUND_HOVER;
-_createForOfIteratorHelperLoose.borderRadius = require("_createForOfIteratorHelperLoose").radii.lg;
-obj.addAnswerButtonDefault = _createForOfIteratorHelperLoose;
-obj.addAnswerIcon = { color: require("_createForOfIteratorHelperLoose").colors.TEXT_MUTED };
-let obj2 = { color: require("_createForOfIteratorHelperLoose").colors.TEXT_MUTED };
-obj.pollConfigSection = { borderTopWidth: 1, borderColor: require("_createForOfIteratorHelperLoose").colors.INTERACTIVE_BACKGROUND_HOVER };
-let closure_12 = _createForOfIteratorHelperLoose.createStyles(obj);
-let closure_13 = importAllResult.forwardRef((error, ref) => {
+createCacheKey = { paddingVertical: num, paddingLeft: 14, marginRight: 30, display: "flex", flexDirection: "row", gap: 16, alignItems: "center", justifyContent: "flex-start", backgroundColor: require("Themes").colors.MESSAGE_BACKGROUND_HOVER, borderRadius: require("Themes").radii.lg };
+obj[9] = createCacheKey;
+obj[10] = { color: require("Themes").colors.TEXT_MUTED };
+let obj2 = { color: require("Themes").colors.TEXT_MUTED };
+obj[11] = { borderTopWidth: 1, borderColor: require("Themes").colors.INTERACTIVE_BACKGROUND_HOVER };
+let closure_12 = createCacheKey.createStyles(obj);
+let closure_14 = importAllResult.forwardRef((error, ref) => {
   let onChange;
   let onSubmitEditing;
   error = error.error;
@@ -112,49 +111,44 @@ let closure_13 = importAllResult.forwardRef((error, ref) => {
   if (tmp) {
     tmp = error.length > 0;
   }
-  let obj = { ref, textAlignVertical: "center" };
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj.label = intl.string(require(1212) /* getSystemLocale */.t.WBiKnI);
-  const intl2 = require(1212) /* getSystemLocale */.intl;
-  obj.accessibilityLabel = intl2.string(require(1212) /* getSystemLocale */.t.WBiKnI);
+  let obj = { ref, textAlignVertical: "center", label: null, accessibilityLabel: null, accessibilityHint: null, placeholder: null, onChange: null, isClearable: true, status: null, errorMessage: null, maxLength: null, returnKeyType: "next", blurOnSubmit: false, onSubmitEditing: null, textContentType: "none", autoFocus: true, autoCorrect: true };
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj[2] = intl.string(require(1236) /* getSystemLocale */.t.WBiKnI);
+  const intl2 = require(1236) /* getSystemLocale */.intl;
+  obj[3] = intl2.string(require(1236) /* getSystemLocale */.t.WBiKnI);
   let formatToPlainStringResult;
   if (tmp) {
-    const intl3 = require(1212) /* getSystemLocale */.intl;
-    obj = { errorMessage: error };
-    formatToPlainStringResult = intl3.formatToPlainString(require(1212) /* getSystemLocale */.t.jnq5Ho, obj);
+    const intl3 = tmp3(1236).intl;
+    obj = { errorMessage: null };
+    obj[0] = error;
+    formatToPlainStringResult = intl3.formatToPlainString(tmp3(1236).t.jnq5Ho, obj);
   }
-  obj.accessibilityHint = formatToPlainStringResult;
-  const intl4 = require(1212) /* getSystemLocale */.intl;
-  obj.placeholder = intl4.string(require(1212) /* getSystemLocale */.t["/uQqJW"]);
-  obj.onChange = onChange;
-  obj.isClearable = true;
+  obj[4] = formatToPlainStringResult;
+  const intl4 = tmp3(1236).intl;
+  obj[5] = intl4.string(require(1236) /* getSystemLocale */.t["/uQqJW"]);
+  obj[6] = onChange;
   let str = "default";
   if (tmp) {
     str = "error";
   }
-  obj.status = str;
-  obj.errorMessage = error;
-  obj.maxLength = closure_7;
-  obj.returnKeyType = "next";
-  obj.blurOnSubmit = false;
-  obj.onSubmitEditing = onSubmitEditing;
-  obj.textContentType = "none";
-  obj.autoFocus = true;
-  obj.autoCorrect = true;
-  return closure_9(require(6706) /* TextInput */.TextInput, obj);
+  obj[8] = str;
+  obj[9] = error;
+  obj[10] = closure_7;
+  obj[13] = onSubmitEditing;
+  return closure_9(require(6727) /* TextInput */.TextInput, obj);
 });
 const result = set.fileFinishedImporting("modules/polls/native/PollCreation.tsx");
 
 export default function PollCreation(channel) {
   let allowMultiSelect;
+  let c11;
+  let c12;
+  let c4;
+  let c6;
+  let c7;
+  let c8;
+  let c9;
   let canAddMoreAnswers;
-  let closure_11;
-  let closure_12;
-  let closure_4;
-  let closure_6;
-  let closure_7;
-  let closure_8;
-  let closure_9;
   let createPollError;
   let duration;
   let fieldErrors;
@@ -167,67 +161,82 @@ export default function PollCreation(channel) {
   channel = channel.channel;
   const onCancel = channel.onCancel;
   let dependencyMap;
+  let answers;
+  c4 = undefined;
+  allowMultiSelect = undefined;
+  c6 = undefined;
+  c7 = undefined;
+  c8 = undefined;
+  let callback;
+  handleAddAnswer = undefined;
+  let callback2;
+  let callback3;
+  fieldErrors = undefined;
+  shouldFocusOnInvalidField = undefined;
+  let setShouldFocusOnInvalidField;
   let closure_16;
+  let obj4;
   function handleCancelClose() {
-    callback2();
-    channel(11347).closeCreatePollModal();
-    const AccessibilityAnnouncer = channel(3878).AccessibilityAnnouncer;
-    const intl = channel(1212).intl;
-    AccessibilityAnnouncer.announce(intl.string(channel(1212).t["+G3oRq"]));
+    callback();
+    channel(11371).closeCreatePollModal();
+    const AccessibilityAnnouncer = channel(3902).AccessibilityAnnouncer;
+    const intl = channel(1236).intl;
+    AccessibilityAnnouncer.announce(intl.string(channel(1236).t["+G3oRq"]));
   }
-  let obj = { type: channel(480).ImpressionTypes.VIEW, name: channel(480).ImpressionNames.POLL_EDITOR_VIEWED };
-  onCancel(8402)(obj);
+  let obj = { type: null, name: null };
+  obj[0] = channel(503).ImpressionTypes.VIEW;
+  obj[1] = channel(503).ImpressionNames.POLL_EDITOR_VIEWED;
+  onCancel(8426)(obj);
   const items = [onCancel];
   const effect = answers.useEffect(() => () => {
-    let current = outer1_2.current;
-    if (!current) {
-      current = null == outer1_1;
-    }
-    if (!current) {
-      outer1_1();
+    if (!ref.current) {
+      if (closure_1 != null) {
+        tmp();
+      }
     }
   }, items);
-  const tmp4 = callback3();
-  const insets = onCancel(5193)({ includeKeyboardHeight: true }).insets;
+  const tmp7 = callback3();
+  const insets = onCancel(5215)({ includeKeyboardHeight: true }).insets;
   dependencyMap = answers.useRef(false);
-  const callback = answers.useCallback(() => {
+  callback = answers.useCallback(() => {
     dependencyMap.current = true;
-    let obj = channel(11347);
+    let obj = channel(11371);
     obj.closeCreatePollModal();
-    obj = { key: "POLL_CREATED_SUCCESS", IconComponent: channel(9653).PollsIcon };
-    const intl = channel(1212).intl;
-    obj.content = intl.string(channel(1212).t.OPsckI);
-    onCancel(3866).open(obj);
+    obj = { key: "POLL_CREATED_SUCCESS", IconComponent: channel(9675).PollsIcon, content: null };
+    const intl = channel(1236).intl;
+    obj[2] = intl.string(channel(1236).t.OPsckI);
+    onCancel(3890).open(obj);
   }, []);
   const callback1 = answers.useCallback((indexToRemove) => {
-    const AccessibilityAnnouncer = channel(3878).AccessibilityAnnouncer;
-    const intl = channel(1212).intl;
-    AccessibilityAnnouncer.announce(intl.formatToPlainString(channel(1212).t.BByGU4, { number: indexToRemove.indexToRemove + 1 }));
+    const AccessibilityAnnouncer = channel(3902).AccessibilityAnnouncer;
+    const intl = channel(1236).intl;
+    AccessibilityAnnouncer.announce(intl.formatToPlainString(channel(1236).t.BByGU4, { number: indexToRemove.indexToRemove + 1 }));
   }, []);
-  const tmp7 = onCancel(11352)(channel, callback, callback1);
-  answers = tmp7.answers;
-  ({ question: closure_4, allowMultiSelect } = tmp7);
-  ({ setAllowMultiSelect: closure_6, canAddMoreAnswers, canRemoveMoreAnswers: closure_7, handleAnswerTextChange: closure_8, handleEmojiSelect: closure_9, handleAddAnswer } = tmp7);
-  ({ handleRemoveAnswer: closure_11, handleRemoveAnswerImage: closure_12, fieldErrors } = tmp7);
-  ({ createPollError, shouldFocusOnInvalidField } = tmp7);
-  const setShouldFocusOnInvalidField = tmp7.setShouldFocusOnInvalidField;
-  ({ handleQuestionChange, handleSubmitPoll, duration, setDuration, submitting } = tmp7);
-  let obj1 = channel(11357);
+  const tmp10 = onCancel(11376)(channel, callback, callback1);
+  answers = tmp10.answers;
+  ({ question: c4, allowMultiSelect } = tmp10);
+  ({ setAllowMultiSelect: c6, canAddMoreAnswers, canRemoveMoreAnswers: c7, handleAnswerTextChange: c8, handleEmojiSelect: c9, handleAddAnswer } = tmp10);
+  ({ handleRemoveAnswer: c11, handleRemoveAnswerImage: c12, fieldErrors } = tmp10);
+  ({ createPollError, shouldFocusOnInvalidField } = tmp10);
+  setShouldFocusOnInvalidField = tmp10.setShouldFocusOnInvalidField;
+  ({ handleQuestionChange, handleSubmitPoll, duration, setDuration, submitting } = tmp10);
+  let obj1 = channel(11381);
   closure_16 = obj1.useTrackPollCreationEvents(answers, allowMultiSelect).trackPollCreationCancelled;
-  let obj2 = channel(5127);
+  let obj2 = channel(5149);
   obj2.useNavigatorBackPressHandler(() => {
-    let obj = channel(6054);
-    if (obj.isPollCreationEmpty(closure_4, answers)) {
-      callback2();
-      const AccessibilityAnnouncer = channel(3878).AccessibilityAnnouncer;
-      const intl = channel(1212).intl;
-      AccessibilityAnnouncer.announce(intl.string(channel(1212).t["+G3oRq"]));
+    let obj = channel(6072);
+    if (obj.isPollCreationEmpty(c4, answers)) {
+      callback();
+      const AccessibilityAnnouncer = tmp(3902).AccessibilityAnnouncer;
+      const intl = tmp(1236).intl;
+      AccessibilityAnnouncer.announce(intl.string(tmp(1236).t["+G3oRq"]));
       let flag = false;
     } else {
-      obj = { onConfirm: handleCancelClose };
-      channel(4507).openAlert("poll-creation-unsaved-changes", outer1_9(shouldFocusOnInvalidField, obj));
+      obj = { onConfirm: null };
+      obj[0] = handleCancelClose;
+      tmp(4530).openAlert("poll-creation-unsaved-changes", _undefined2(fieldErrors, obj));
       flag = true;
-      const obj2 = channel(4507);
+      const tmpResult = tmp(4530);
     }
     return flag;
   });
@@ -236,120 +245,136 @@ export default function PollCreation(channel) {
       handleAddAnswer();
     }
   };
-  let obj4 = onCancel(11358)(obj);
+  obj4 = onCancel(11382)(obj);
   const items1 = [fieldErrors, obj4, setShouldFocusOnInvalidField, shouldFocusOnInvalidField];
   const effect1 = answers.useEffect(() => {
     const keys = Object.keys(fieldErrors);
     if (keys.length > 0) {
-      const intl = channel(1212).intl;
-      const obj = { numOfErrors: keys.length };
-      const AccessibilityAnnouncer = channel(3878).AccessibilityAnnouncer;
-      AccessibilityAnnouncer.announce(intl.formatToPlainString(channel(1212).t.w8e4qF, obj));
+      const intl = channel(1236).intl;
+      const obj = { numOfErrors: null };
+      obj[0] = keys.length;
+      const AccessibilityAnnouncer = channel(3902).AccessibilityAnnouncer;
+      AccessibilityAnnouncer.announce(intl.formatToPlainString(channel(1236).t.w8e4qF, obj));
       if (shouldFocusOnInvalidField) {
         obj4.focus(keys[0]);
         setShouldFocusOnInvalidField(false);
       }
-      const formatToPlainStringResult = intl.formatToPlainString(channel(1212).t.w8e4qF, obj);
+      const formatToPlainStringResult = intl.formatToPlainString(channel(1236).t.w8e4qF, obj);
     }
   }, items1);
-  obj = { style: items2 };
-  items2 = [tmp4.safeAreaContainer, { paddingTop: insets.top, paddingBottom: insets.bottom }];
-  obj1 = {};
-  obj2 = { style: tmp4.header };
-  const obj3 = {};
-  let intl = channel(1212).intl;
-  obj3.accessibilityLabel = intl.string(channel(1212).t["ETE/oC"]);
-  obj3.onPress = function onPress() {
-    let obj = channel(6054);
-    if (obj.isPollCreationEmpty(closure_4, answers)) {
-      handleCancelClose();
+  obj = { style: items2, children: null };
+  items2 = [tmp7.safeAreaContainer, { paddingTop: insets.top, paddingBottom: insets.bottom }];
+  obj1 = { style: tmp7.header, children: null };
+  obj2 = { accessibilityLabel: null, onPress: null, source: null, style: null };
+  let intl = channel(1236).intl;
+  obj2[0] = intl.string(channel(1236).t["ETE/oC"]);
+  obj2[1] = function onPress() {
+    let obj = channel(6072);
+    if (obj.isPollCreationEmpty(c4, answers)) {
+      callback();
+      let tmpResult = tmp(11371);
+      tmpResult.closeCreatePollModal();
+      const AccessibilityAnnouncer = tmp(3902).AccessibilityAnnouncer;
+      const intl = tmp(1236).intl;
+      AccessibilityAnnouncer.announce(intl.string(tmp(1236).t["+G3oRq"]));
     } else {
-      obj = { onConfirm: handleCancelClose };
-      channel(4507).openAlert("poll-creation-unsaved-changes", outer1_9(shouldFocusOnInvalidField, obj));
-      const obj2 = channel(4507);
+      tmpResult = tmp(4530);
+      obj = { onConfirm: null };
+      obj[0] = handleCancelClose;
+      tmpResult.openAlert("poll-creation-unsaved-changes", _undefined2(fieldErrors, obj));
     }
   };
-  obj3.source = onCancel(5154);
-  obj3.style = tmp4.actionButton;
-  const items3 = [callback(channel(6731).HeaderActionButton, obj3), , ];
-  obj4 = { accessibilityRole: "header", variant: "redesign/heading-18/bold", color: "mobile-text-heading-primary", style: tmp4.title };
-  const intl2 = channel(1212).intl;
-  obj4.children = intl2.string(channel(1212).t.Flr51u);
-  items3[1] = callback(channel(4161).Text, obj4);
-  const obj5 = {};
-  const intl3 = channel(1212).intl;
-  obj5.text = intl3.string(channel(1212).t.JOj8Zk);
+  obj2[2] = onCancel(5176);
+  obj2[3] = tmp7.actionButton;
+  const items3 = [callback(channel(6752).HeaderActionButton, obj2), , ];
+  const obj3 = { accessibilityRole: "header", variant: "redesign/heading-18/bold", color: "mobile-text-heading-primary", style: tmp7.title, children: null };
+  const intl2 = channel(1236).intl;
+  obj3[4] = intl2.string(channel(1236).t.Flr51u);
+  items3[1] = callback(channel(4185).Text, obj3);
+  obj4 = { text: null, style: null, disabled: null, onPress: null };
+  const intl3 = channel(1236).intl;
+  obj4[0] = intl3.string(channel(1236).t.JOj8Zk);
   const items4 = [, ];
-  ({ actionButton: arr6[0], postButton: arr6[1] } = tmp4);
-  obj5.style = items4;
-  obj5.disabled = submitting;
-  obj5.onPress = handleSubmitPoll;
-  items3[2] = callback(channel(6731).HeaderActionButton, obj5);
-  obj2.children = items3;
-  const items5 = [callback2(allowMultiSelect, obj2), , ];
-  const obj6 = { style: tmp4.viewPadding, contentContainerStyle: tmp4.scrollContainer, keyboardShouldPersistTaps: "handled" };
-  let tmp17Result = null != createPollError;
-  if (tmp17Result) {
-    const obj7 = {};
+  ({ actionButton: arr6[0], postButton: arr6[1] } = tmp7);
+  obj4[1] = items4;
+  obj4[2] = submitting;
+  obj4[3] = handleSubmitPoll;
+  items3[2] = callback(channel(6752).HeaderActionButton, obj4);
+  obj1[1] = items3;
+  const items5 = [callback2(allowMultiSelect, obj1), , ];
+  const obj5 = { style: tmp7.viewPadding, contentContainerStyle: tmp7.scrollContainer, keyboardShouldPersistTaps: "handled", children: null };
+  let tmp13Result = null != createPollError;
+  if (tmp13Result) {
     let anyErrorMessage;
-    if (null != createPollError) {
+    if (createPollError != null) {
       anyErrorMessage = createPollError.getAnyErrorMessage();
     }
-    obj7.children = anyErrorMessage;
-    tmp17Result = callback(onCancel(11359), obj7);
-    const tmp17 = callback;
-    const tmp20 = onCancel(11359);
+    const obj6 = { children: null };
+    obj6[0] = anyErrorMessage;
+    tmp13Result = tmp13(onCancel(11383), obj6);
+    let tmpResult = onCancel(11383);
   }
-  const items6 = [tmp17Result, , ];
-  const obj8 = { ref: obj4.refWithKey("question"), onChange: handleQuestionChange, onSubmitEditing: obj4.focusNext };
+  const items6 = [tmp13Result, , ];
+  const obj7 = { ref: obj4.refWithKey("question"), onChange: handleQuestionChange, onSubmitEditing: obj4.focusNext, error: null };
   let question;
-  if (null != fieldErrors) {
+  if (fieldErrors != null) {
     question = fieldErrors.question;
   }
-  obj8.error = question;
-  items6[1] = callback(fieldErrors, obj8);
-  const obj9 = { style: tmp4.answerInputsContainer };
-  const obj10 = {};
-  const intl4 = channel(1212).intl;
-  obj10.text = intl4.string(channel(1212).t.oMBfeS);
-  obj10.color = "text-subtle";
-  obj10.style = tmp4.label;
+  obj7[3] = question;
+  items6[1] = callback(shouldFocusOnInvalidField, obj7);
+  const obj8 = { style: tmp7.answerInputsContainer, children: null };
+  const obj9 = { text: null, color: "text-subtle", style: null };
+  const intl4 = tmp4(1236).intl;
+  obj9[0] = intl4.string(channel(1236).t.oMBfeS);
+  obj9[2] = tmp7.label;
   const items7 = [
-    callback(channel(7611).FormLabel, obj10),
-    answers.map((localCreationAnswerId, index) => {
-      const obj = { inputRef: obj4.refWithKey("answer-" + localCreationAnswerId.localCreationAnswerId), answer: localCreationAnswerId, index, channelId: channel.id, onSubmitEditing: obj4.focusNext, onAnswerTextChange: closure_8, onAnswerEmojiSelect: closure_9, onRemoveAnswer: closure_11, onRemoveAnswerImage: closure_12, canRemoveAnswer: closure_7 };
-      let tmp3;
-      if (null != fieldErrors) {
+    callback(channel(7634).FormLabel, obj9),
+    answers.map((localCreationAnswerId) => {
+      const obj = { inputRef: null, answer: null, index: null, channelId: null, onSubmitEditing: null, onAnswerTextChange: null, onAnswerEmojiSelect: null, onRemoveAnswer: null, onRemoveAnswerImage: null, canRemoveAnswer: null, error: null };
+      obj[0] = obj4.refWithKey("answer-" + localCreationAnswerId.localCreationAnswerId);
+      obj[1] = localCreationAnswerId;
+      obj[2] = arg1;
+      obj[3] = channel.id;
+      obj[4] = obj4.focusNext;
+      obj[5] = c8;
+      obj[6] = c9;
+      obj[7] = c11;
+      obj[8] = c12;
+      obj[9] = c7;
+      let tmp4;
+      if (fieldErrors != null) {
         const _HermesInternal = HermesInternal;
-        tmp3 = fieldErrors["answer-" + localCreationAnswerId.localCreationAnswerId];
+        tmp4 = tmp3["answer-" + localCreationAnswerId.localCreationAnswerId];
       }
-      obj.error = tmp3;
-      return outer1_9(onCancel(11361), obj, localCreationAnswerId.localCreationAnswerId);
+      obj[10] = tmp4;
+      return c9(onCancel(11385), obj, localCreationAnswerId.localCreationAnswerId);
     }),
 
   ];
   if (canAddMoreAnswers) {
-    const obj11 = { onPress: handleAddAnswer };
-    canAddMoreAnswers = callback(setShouldFocusOnInvalidField, obj11);
+    const obj10 = { onPress: null };
+    obj10[0] = handleAddAnswer;
+    canAddMoreAnswers = tmp13(setShouldFocusOnInvalidField, obj10);
   }
+  const obj11 = { children: null };
   items7[2] = canAddMoreAnswers;
-  obj9.children = items7;
-  items6[2] = callback2(allowMultiSelect, obj9);
-  obj6.children = items6;
-  items5[1] = callback2(closure_6, obj6);
-  const obj12 = { style: tmp4.pollConfigSection };
+  obj8[1] = items7;
+  items6[2] = callback2(allowMultiSelect, obj8);
+  obj5[3] = items6;
+  items5[1] = callback2(c6, obj5);
+  const obj12 = { style: tmp7.pollConfigSection, children: null };
   const items8 = [callback(closure_16, { selectedDuration: duration, onChange: setDuration }), ];
-  const obj13 = {};
-  const intl5 = channel(1212).intl;
-  obj13.label = intl5.string(channel(1212).t["Ux+iQU"]);
-  obj13.checked = allowMultiSelect;
-  obj13.onPress = function onPress() {
-    return callback(!allowMultiSelect);
+  const obj13 = { label: null, checked: null, onPress: null };
+  const intl5 = tmp4(1236).intl;
+  obj13[0] = intl5.string(channel(1236).t["Ux+iQU"]);
+  obj13[1] = allowMultiSelect;
+  obj13[2] = function onPress() {
+    return _undefined(!allowMultiSelect);
   };
-  items8[1] = callback(channel(9068).TableCheckboxRow, obj13);
-  obj12.children = items8;
+  items8[1] = callback(channel(9092).TableCheckboxRow, obj13);
+  obj12[1] = items8;
   items5[2] = callback2(allowMultiSelect, obj12);
-  obj1.children = items5;
-  obj.children = callback2(handleAddAnswer, obj1);
+  obj11[0] = items5;
+  obj[1] = callback2(handleAddAnswer, obj11);
   return callback(allowMultiSelect, obj);
 };

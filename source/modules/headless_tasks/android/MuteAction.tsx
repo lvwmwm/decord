@@ -1,9 +1,9 @@
-// Module ID: 16735
-// Function ID: 130358
+// Module ID: 16771
+// Function ID: 16772
 // Name: promise
-// Dependencies: [662, 16733, 3747, 5113, 5108, 2]
+// Dependencies: [685, 16769, 3771, 5135, 5130, 2]
 
-// Module 16735 (promise)
+// Module 16771 (promise)
 import { MuteUntilSeconds } from "MAX_FAVORITES";
 
 let result = require("t").fileFinishedImporting("modules/headless_tasks/android/MuteAction.tsx");
@@ -16,8 +16,8 @@ export default (arg0) => {
       let toISOStringResult = null;
       if (-1 !== lib.muteTime) {
         let obj = outer2_1(outer2_2[2])();
-        let HOURS_1 = lib.muteTime;
-        if (null == HOURS_1) {
+        let HOURS_1 = tmp.muteTime;
+        if (HOURS_1 == null) {
           HOURS_1 = outer2_3.HOURS_1;
         }
         toISOStringResult = obj.add(HOURS_1, "second").toISOString();
@@ -25,7 +25,7 @@ export default (arg0) => {
       }
       obj = { muted: true, mute_config: obj };
       obj = { selected_time_window: outer2_3.HOURS_1, end_time: toISOStringResult };
-      const result = outer2_1(outer2_2[3]).updateChannelOverrideSettings(lib.guildId, lib.channelId, obj, lib(outer2_2[4]).NotificationLabels.Muted);
+      const result = outer2_1(outer2_2[3]).updateChannelOverrideSettings(tmp.guildId, tmp.channelId, obj, lib(outer2_2[4]).NotificationLabels.Muted);
       lib(true);
     });
   });

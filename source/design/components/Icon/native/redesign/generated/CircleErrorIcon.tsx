@@ -1,18 +1,18 @@
-// Module ID: 6709
-// Function ID: 59060
+// Module ID: 6730
+// Function ID: 6731
 // Name: CircleErrorIcon
-// Dependencies: [31, 27, 33, 689, 3868, 6710, 6711, 2]
+// Dependencies: [19, 17, 21, 712, 3892, 6731, 6732, 2]
 // Exports: CircleErrorIcon
 
-// Module 6709 (CircleErrorIcon)
-import "result";
+// Module 6730 (CircleErrorIcon)
+import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
 
-let closure_4;
-let closure_5;
+let c4;
+let c5;
 const require = arg1;
-({ jsx: closure_4, jsxs: closure_5 } = jsxProd);
+({ jsx: c4, jsxs: c5 } = jsxProd);
 const result = require("jsxProd").fileFinishedImporting("design/components/Icon/native/redesign/generated/CircleErrorIcon.tsx");
 
 export const CircleErrorIcon = function CircleErrorIcon(color) {
@@ -24,21 +24,25 @@ export const CircleErrorIcon = function CircleErrorIcon(color) {
   }
   let INTERACTIVE_ICON_DEFAULT = color.color;
   if (INTERACTIVE_ICON_DEFAULT === undefined) {
-    INTERACTIVE_ICON_DEFAULT = importDefault(689).colors.INTERACTIVE_ICON_DEFAULT;
+    INTERACTIVE_ICON_DEFAULT = importDefault(712).colors.INTERACTIVE_ICON_DEFAULT;
   }
-  let obj = { style: 0, secondaryColor: 0, color: 0 };
-  Object.setPrototypeOf(null);
-  const merged = Object.assign(color, obj);
-  obj = {};
-  obj = { source: require(6710) /* registerAsset */, color: secondaryColor, style };
+  const merged = Object.assign(color, Object.create(null));
+  let obj = { children: null };
+  obj = { source: null, color: null, style: null };
+  obj[0] = require(6731) /* registerAsset */;
+  obj[1] = secondaryColor;
+  obj[2] = style;
   const merged1 = Object.assign(merged);
-  const items = [callback(require(3868) /* BaseIconImage */.BaseIconImage, obj), ];
-  const obj1 = { source: require(6711) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT };
+  const items = [callback(require(3892) /* BaseIconImage */.BaseIconImage, obj), ];
+  obj = { source: null, color: null, style: null };
+  obj[0] = require(6732) /* registerAsset */;
+  obj[1] = INTERACTIVE_ICON_DEFAULT;
   const items1 = [style];
-  const items2 = [...items1.flat(), { position: "absolute", top: 0 }];
-  obj1.style = items2;
+  const items2 = [];
+  items2[HermesBuiltin.arraySpread(items1.flat(), 0)] = { position: "absolute", top: 0 };
+  obj[2] = items2;
   const merged2 = Object.assign(merged);
-  items[1] = callback(require(3868) /* BaseIconImage */.BaseIconImage, obj1);
-  obj.children = items;
+  items[1] = callback(require(3892) /* BaseIconImage */.BaseIconImage, obj);
+  obj[0] = items;
   return callback2(View, obj);
 };

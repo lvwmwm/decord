@@ -1,34 +1,34 @@
-// Module ID: 12156
-// Function ID: 95081
+// Module ID: 12180
+// Function ID: 12181
 // Name: UserProfilePrivateInfoBanner
-// Dependencies: [27, 33, 4165, 689, 4161, 1212, 2]
+// Dependencies: [17, 21, 4189, 712, 4185, 1236, 2]
 // Exports: default
 
-// Module 12156 (UserProfilePrivateInfoBanner)
+// Module 12180 (UserProfilePrivateInfoBanner)
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let obj = {};
-obj = { padding: require("_createForOfIteratorHelperLoose").space.PX_12, borderRadius: require("_createForOfIteratorHelperLoose").radii.lg, borderWidth: 1, borderColor: require("_createForOfIteratorHelperLoose").colors.BORDER_MUTED, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SURFACE_HIGH };
-obj.banner = obj;
-let closure_4 = _createForOfIteratorHelperLoose.createStyles(obj);
-const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/user_profile/native/UserProfilePrivateInfoBanner.tsx");
+let obj = { banner: null };
+obj = { padding: require("Themes").space.PX_12, borderRadius: require("Themes").radii.lg, borderWidth: 1, borderColor: require("Themes").colors.BORDER_MUTED, backgroundColor: require("Themes").colors.BACKGROUND_SURFACE_HIGH };
+obj[0] = obj;
+let closure_4 = createCacheKey.createStyles(obj);
+const result = require("createCacheKey").fileFinishedImporting("modules/user_profile/native/UserProfilePrivateInfoBanner.tsx");
 
 export default function UserProfilePrivateInfoBanner(username) {
   const containerBackground = username.containerBackground;
-  let obj = {};
   const items = [callback().banner, ];
   let tmp3 = null != containerBackground;
   if (tmp3) {
-    obj = { backgroundColor: containerBackground };
+    let obj = { backgroundColor: null };
+    obj[0] = containerBackground;
     tmp3 = obj;
   }
+  obj = { style: items, children: null };
   items[1] = tmp3;
-  obj.style = items;
-  obj = { variant: "text-sm/normal" };
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj.children = intl.format(require(1212) /* getSystemLocale */.t.P8ij6Z, { username: username.username });
-  obj.children = jsx(require(4161) /* Text */.Text, { variant: "text-sm/normal" });
-  return <View variant="text-sm/normal" />;
+  obj = { variant: "text-sm/normal", children: null };
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj[1] = intl.format(require(1236) /* getSystemLocale */.t.P8ij6Z, { username: username.username });
+  obj[1] = jsx(require(4185) /* Text */.Text, { variant: "text-sm/normal", children: null });
+  return <View variant="text-sm/normal">{null}</View>;
 };

@@ -1,12 +1,12 @@
-// Module ID: 15864
-// Function ID: 122286
+// Module ID: 15899
+// Function ID: 15900
 // Name: useSoundboardSoundPlayer
-// Dependencies: [31, 4613, 8815, 3838, 15865, 566, 10752, 2]
+// Dependencies: [19, 4635, 8839, 3862, 15900, 589, 10776, 2]
 // Exports: default
 
-// Module 15864 (useSoundboardSoundPlayer)
-import result from "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 15899 (useSoundboardSoundPlayer)
+import noop from "noop";
+import handleSoundCreateOrUpdate from "handleSoundCreateOrUpdate";
 import { SoundOutputChannel } from "SoundOutputChannel";
 
 const require = arg1;
@@ -19,7 +19,7 @@ export default function useSoundboardSoundPlayer(arg0, arg1) {
     const SoundboardSettings = _require(audioRef[3]).SoundboardSettings;
     const setting = SoundboardSettings.getSetting();
     let volume;
-    if (null != setting) {
+    if (setting != null) {
       volume = setting.volume;
     }
   }
@@ -29,25 +29,24 @@ export default function useSoundboardSoundPlayer(arg0, arg1) {
   audioRef = undefined;
   audioRef = React.useContext(importDefault(audioRef[4])).audioRef;
   let obj = _require(audioRef[5]);
-  const items = [_isNativeReflectConstruct];
+  const items = [handleSoundCreateOrUpdate];
   const items1 = [arg0];
-  obj = {};
+  obj = { playSoundboardSound: null, isPlayingSound: null, previewSound: null, isPreviewingSound: false };
   const items2 = [arg0, audioRef, arg1];
   const stateFromStores = obj.useStateFromStores(items, () => outer1_4.isPlayingSound(lib.soundId), items1);
-  obj.playSoundboardSound = React.useCallback((arg0) => {
+  obj[0] = React.useCallback((arg0) => {
     if (null != audioRef.current) {
       const current = audioRef.current;
       current.pause();
     }
     if (null != closure_1) {
-      lib(audioRef[6]).playSound(lib, closure_1, arg0);
+      lib(audioRef[6]).playSound(lib, tmp2, arg0);
       const obj = lib(audioRef[6]);
     }
   }, items2);
-  obj.isPlayingSound = stateFromStores;
-  obj.previewSound = function previewSound() {
+  obj[1] = stateFromStores;
+  obj[2] = function previewSound() {
     return Promise.resolve();
   };
-  obj.isPreviewingSound = false;
   return obj;
 };

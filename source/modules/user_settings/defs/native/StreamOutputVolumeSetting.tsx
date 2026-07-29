@@ -1,76 +1,89 @@
-// Module ID: 14247
-// Function ID: 109453
-// Name: getActiveApplicationStream
-// Dependencies: [4184, 1194, 4212, 7733, 566, 4262, 44, 8814, 10744, 10099, 1212, 2]
+// Module ID: 14269
+// Function ID: 14270
+// Name: volumeSlider
+// Dependencies: [4208, 1218, 4236, 7756, 589, 4286, 38, 8838, 10768, 10120, 1236, 2]
 
-// Module 14247 (getActiveApplicationStream)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_4 from "_isNativeReflectConstruct";
-import closure_5 from "_isNativeReflectConstruct";
+// Module 14269 (volumeSlider)
+import reset from "reset";
+import fetchFingerprint from "fetchFingerprint";
+import _detectH265HardwareDecode from "_detectH265HardwareDecode";
 import createToggle from "createToggle";
 
 const require = arg1;
-function getActiveApplicationStream() {
-  let obj;
-  let obj2;
-  let tmp = arg0;
-  if (arg0 === undefined) {
-    const items = [_isNativeReflectConstruct, closure_4];
-    tmp = items;
-  }
-  [obj, obj2] = tmp;
-  const lastActiveStream = obj.getLastActiveStream();
-  let tmp5 = null;
-  if (null != lastActiveStream) {
-    tmp5 = null;
-    if (lastActiveStream.ownerId !== obj2.getId()) {
-      tmp5 = lastActiveStream;
-    }
-  }
-  return tmp5;
-}
 createToggle = {
   useTitle() {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(require(1212) /* getSystemLocale */.t.pEAl4b);
+    const intl = require(1236) /* getSystemLocale */.intl;
+    return intl.string(require(1236) /* getSystemLocale */.t.pEAl4b);
   },
   parent: require("MobileSetting").MobileSetting.VOICE,
   maximum: 200,
   useValue: function useStreamVolumeSettingValue() {
-    let items = [_isNativeReflectConstruct, closure_4, closure_5];
-    return require(566) /* initialize */.useStateFromStores(items, () => {
-      const items = [outer1_3, outer1_4];
-      const tmp = outer1_6(items);
+    let items = [reset, fetchFingerprint, _detectH265HardwareDecode];
+    return require(589) /* initialize */.useStateFromStores(items, () => {
+      let obj;
+      let obj2;
+      const items = [reset, fetchFingerprint];
+      [obj, obj2] = items;
+      const lastActiveStream = obj.getLastActiveStream();
+      let tmp2 = null;
+      if (null != lastActiveStream) {
+        tmp2 = null;
+        if (lastActiveStream.ownerId !== obj2.getId()) {
+          tmp2 = lastActiveStream;
+        }
+      }
       let num = 0;
-      if (null != tmp) {
-        num = outer1_5.getLocalVolume(tmp.ownerId, outer1_0(outer1_2[5]).MediaEngineContextTypes.STREAM);
+      if (null != tmp2) {
+        num = localVolume.getLocalVolume(tmp2.ownerId, callback(table[5]).MediaEngineContextTypes.STREAM);
       }
       return num;
     });
   },
-  onValueChange: function onStreamValueSettingValueChange(volume) {
-    const tmp = getActiveApplicationStream();
-    importDefault(44)(null != tmp, "Can not set stream volume without active stream");
-    importDefault(8814).setLocalVolume(tmp.ownerId, volume, require(4262) /* getMediaEngineImpl */.MediaEngineContextTypes.STREAM);
+  onValueChange: function onStreamValueSettingValueChange(arg0) {
+    let obj;
+    let obj2;
+    const items = [reset, fetchFingerprint];
+    [obj, obj2] = items;
+    const lastActiveStream = obj.getLastActiveStream();
+    let tmp2 = null;
+    if (null != lastActiveStream) {
+      tmp2 = null;
+      if (lastActiveStream.ownerId !== obj2.getId()) {
+        tmp2 = lastActiveStream;
+      }
+    }
+    importDefault(38)(null != tmp2, "Can not set stream volume without active stream");
+    importDefault(8838).setLocalVolume(tmp2.ownerId, arg0, require(4286) /* BaseConnectionEvent */.MediaEngineContextTypes.STREAM);
   },
   usePredicate: function useHasStreamVolumeSetting() {
-    const obj = importDefault(10744);
-    let items = [_isNativeReflectConstruct, closure_4];
-    const obj2 = require(566) /* initialize */;
-    return require(566) /* initialize */.useStateFromStores(items, () => {
-      const items = [outer1_3, outer1_4];
-      return null != outer1_6(items);
+    const obj = importDefault(10768);
+    let items = [reset, fetchFingerprint];
+    const obj2 = require(589) /* initialize */;
+    return require(589) /* initialize */.useStateFromStores(items, () => {
+      let obj;
+      let obj2;
+      const items = [reset, fetchFingerprint];
+      [obj, obj2] = items;
+      const lastActiveStream = obj.getLastActiveStream();
+      let tmp2 = null;
+      if (null != lastActiveStream) {
+        tmp2 = null;
+        if (lastActiveStream.ownerId !== obj2.getId()) {
+          tmp2 = lastActiveStream;
+        }
+      }
+      return null != tmp2;
     }) && obj.getConfig({ location: "StreamOutputVolumeSetting" }).audioOutputPresent;
   },
   useSearchTerms() {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    const items = [intl.string(require(1212) /* getSystemLocale */.t["3182VD"]), ];
-    const intl2 = require(1212) /* getSystemLocale */.intl;
-    items[1] = intl2.string(require(1212) /* getSystemLocale */.t["DGq/PR"]);
+    const intl = require(1236) /* getSystemLocale */.intl;
+    const items = [intl.string(require(1236) /* getSystemLocale */.t["3182VD"]), ];
+    const intl2 = require(1236) /* getSystemLocale */.intl;
+    items[1] = intl2.string(require(1236) /* getSystemLocale */.t["DGq/PR"]);
     return items;
   }
 };
 createToggle = createToggle.createVolumeSlider(createToggle);
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/user_settings/defs/native/StreamOutputVolumeSetting.tsx");
+const result = require("_detectH265HardwareDecode").fileFinishedImporting("modules/user_settings/defs/native/StreamOutputVolumeSetting.tsx");
 
 export default createToggle;

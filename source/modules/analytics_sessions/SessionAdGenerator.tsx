@@ -1,29 +1,11 @@
-// Module ID: 5986
-// Function ID: 53076
-// Name: isAdSessionExpired
-// Dependencies: [664, 491, 5711, 686, 1184, 2]
-// Exports: clearAdSession, getCurrentAdSession, getOrRefreshAdSession
+// Module ID: 6005
+// Function ID: 6006
+// Name: getOrRefreshAdSession
+// Dependencies: [687, 514, 5729, 709, 1208, 2]
+// Exports: clearAdSession, getCurrentAdSession, getOrRefreshAdSession, isAdSessionExpired
 
-// Module 5986 (isAdSessionExpired)
+// Module 6005 (getOrRefreshAdSession)
 const require = arg1;
-function isAdSessionExpired(createdAtTimestamp) {
-  const timestamp = Date.now();
-  if (timestamp < createdAtTimestamp.createdAtTimestamp) {
-    let obj = importDefault(1184);
-    obj = { category: "ad" };
-    const _HermesInternal = HermesInternal;
-    obj.message = "future facing timestamp Date.now(): " + timestamp + ", initialized timestamp: " + createdAtTimestamp.createdAtTimestamp;
-    obj.addBreadcrumb(obj);
-    return true;
-  } else {
-    const diff = timestamp - createdAtTimestamp.lastUsedTimestamp;
-    let tmp5 = diff > require(5711) /* result */.SESSION_IDLE_TIMEOUT_MILLIS;
-    if (!tmp5) {
-      tmp5 = timestamp - createdAtTimestamp.createdAtTimestamp > closure_3;
-    }
-    return tmp5;
-  }
-}
 let closure_3 = 12 * require("set").Millis.HOUR;
 let c4 = null;
 const result = require("result").fileFinishedImporting("modules/analytics_sessions/SessionAdGenerator.tsx");
@@ -35,18 +17,35 @@ export const getOrRefreshAdSession = function getOrRefreshAdSession(shouldExtend
   }
   const timestamp = Date.now();
   if (null != obj) {
-    if (!isAdSessionExpired(obj)) {
+    const _Date = Date;
+    const timestamp1 = Date.now();
+    if (timestamp1 < obj.createdAtTimestamp) {
+      obj = importDefault(1208);
+      obj = { category: "ad", message: null };
+      const _HermesInternal = HermesInternal;
+      obj[1] = "future facing timestamp Date.now(): " + timestamp1 + ", initialized timestamp: " + tmp11.createdAtTimestamp;
+      obj.addBreadcrumb(obj);
+      let flag2 = true;
+    } else {
+      const diff = timestamp1 - tmp11.lastUsedTimestamp;
+      flag2 = diff > require(5729) /* result */.SESSION_IDLE_TIMEOUT_MILLIS || timestamp1 - tmp11.createdAtTimestamp > closure_3;
+    }
+    if (!flag2) {
       if (flag) {
         obj.lastUsedTimestamp = timestamp;
       }
-      let tmp5 = obj;
+      let tmp9 = obj;
     }
-    return tmp5;
+    return tmp9;
   }
-  obj = { uuid: require(491) /* v1 */.v4(), createdAtTimestamp: timestamp, lastUsedTimestamp: timestamp, version: require(5711) /* result */.CLIENT_SESSION_STORAGE_VERSION };
-  const obj2 = require(491) /* v1 */;
-  importDefault(686).dispatch({ type: "AD_SESSION_RESET" });
-  tmp5 = obj;
+  obj = { uuid: null, createdAtTimestamp: null, lastUsedTimestamp: null, version: null };
+  obj[0] = require(514) /* v1 */.v4();
+  obj[1] = timestamp;
+  obj[2] = timestamp;
+  obj[3] = require(5729) /* result */.CLIENT_SESSION_STORAGE_VERSION;
+  const obj4 = require(514) /* v1 */;
+  importDefault(709).dispatch({ type: "AD_SESSION_RESET" });
+  tmp9 = obj;
 };
 export function clearAdSession() {
   let c4 = null;
@@ -54,4 +53,17 @@ export function clearAdSession() {
 export function getCurrentAdSession() {
   return c4;
 }
-export { isAdSessionExpired };
+export const isAdSessionExpired = function isAdSessionExpired(createdAtTimestamp) {
+  const timestamp = Date.now();
+  if (timestamp < createdAtTimestamp.createdAtTimestamp) {
+    let obj = importDefault(1208);
+    obj = { category: "ad", message: null };
+    const _HermesInternal = HermesInternal;
+    obj[1] = "future facing timestamp Date.now(): " + timestamp + ", initialized timestamp: " + createdAtTimestamp.createdAtTimestamp;
+    obj.addBreadcrumb(obj);
+    return true;
+  } else {
+    const diff = timestamp - createdAtTimestamp.lastUsedTimestamp;
+    return diff > require(5729) /* result */.SESSION_IDLE_TIMEOUT_MILLIS || timestamp - createdAtTimestamp.createdAtTimestamp > closure_3;
+  }
+};

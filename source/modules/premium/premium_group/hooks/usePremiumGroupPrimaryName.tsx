@@ -1,11 +1,11 @@
-// Module ID: 12495
-// Function ID: 96723
+// Module ID: 12517
+// Function ID: 12518
 // Name: usePremiumGroupPrimaryName
-// Dependencies: [12496, 12500, 4004, 2]
+// Dependencies: [12518, 12522, 4028, 2]
 // Exports: default
 
-// Module 12495 (usePremiumGroupPrimaryName)
-const result = require("conceal").fileFinishedImporting("modules/premium/premium_group/hooks/usePremiumGroupPrimaryName.tsx");
+// Module 12517 (usePremiumGroupPrimaryName)
+const result = require("nameFromUser").fileFinishedImporting("modules/premium/premium_group/hooks/usePremiumGroupPrimaryName.tsx");
 
 export default function usePremiumGroupPrimaryName() {
   let obj = arg0;
@@ -20,30 +20,27 @@ export default function usePremiumGroupPrimaryName() {
   if (flag2 === undefined) {
     flag2 = true;
   }
-  obj = { useCachedData: flag, fetch: flag2 };
-  const premiumGroupMembership = importDefault(12496)(obj).premiumGroupMembership;
+  const premiumGroupMembership = importDefault(12518)({ useCachedData: flag, fetch: flag2 }).premiumGroupMembership;
   let subscriptionId;
-  if (null != premiumGroupMembership) {
+  if (premiumGroupMembership != null) {
     subscriptionId = premiumGroupMembership.subscriptionId;
   }
-  let tmp3 = null;
-  if (null != subscriptionId) {
-    tmp3 = subscriptionId;
+  if (subscriptionId == null) {
+    subscriptionId = null;
   }
-  obj = { useCachedData: flag, fetch: flag2 };
-  const premiumGroupMembers = importDefault(12500)(tmp3, obj).premiumGroupMembers;
+  const premiumGroupMembers = importDefault(12522)(subscriptionId, { useCachedData: flag, fetch: flag2 }).premiumGroupMembers;
   let primary;
-  if (null != premiumGroupMembers) {
+  if (premiumGroupMembers != null) {
     primary = premiumGroupMembers.primary;
   }
   let nameFromUserResult = null;
   if (null != primary) {
     let primary1;
-    if (null != premiumGroupMembers) {
+    if (premiumGroupMembers != null) {
       primary1 = premiumGroupMembers.primary;
     }
-    nameFromUserResult = require(4004) /* conceal */.nameFromUser(primary1);
-    const obj4 = require(4004) /* conceal */;
+    nameFromUserResult = require(4028) /* nameFromUser */.nameFromUser(primary1);
+    const obj2 = require(4028) /* nameFromUser */;
   }
   return nameFromUserResult;
 };

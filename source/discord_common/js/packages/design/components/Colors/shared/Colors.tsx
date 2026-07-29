@@ -1,84 +1,93 @@
-// Module ID: 3974
-// Function ID: 32573
-// Name: toRGBAString
-// Dependencies: [57, 666, 2]
+// Module ID: 3998
+// Function ID: 3999
+// Name: WCAGContrastRatios
+// Dependencies: [32, 689, 2]
 // Exports: brightenColor, darkenColor, getContrastingColor, setColorOpacity
 
-// Module 3974 (toRGBAString)
+// Module 3998 (WCAGContrastRatios)
 import _slicedToArray from "_slicedToArray";
 
-function toRGBAString(rgba) {
-  const tmp = callback(rgba.rgba(), 4);
-  return "rgba(" + tmp[0] + ", " + tmp[1] + ", " + tmp[2] + ", " + tmp[3] + ")";
-}
 let obj = { NonText: 3, Text: 4.5, HighContrastText: 7 };
 const result = require("set").fileFinishedImporting("../discord_common/js/packages/design/components/Colors/shared/Colors.tsx");
 
 export const WCAGContrastRatios = obj;
-export const getContrastingColor = function getContrastingColor(primaryColor, arg1) {
+export const getContrastingColor = function getContrastingColor(arg0, arg1) {
   let obj = arg1;
   if (arg1 === undefined) {
     obj = {};
   }
   let NonText = obj.contrastRatio;
-  if (null == NonText) {
+  if (NonText == null) {
     NonText = obj.NonText;
   }
-  const tolerance = obj.tolerance;
-  let num = 3;
-  if (null != tolerance) {
-    num = tolerance;
+  let num = obj.tolerance;
+  if (num == null) {
+    num = 3;
   }
-  const base = obj.base;
-  let tmp3 = primaryColor;
-  if (null != base) {
-    tmp3 = base;
+  let base = obj.base;
+  if (base == null) {
+    base = arg0;
   }
-  const tmp2Result = importDefault(666)(tmp3);
-  const tmp4 = importDefault(666)(primaryColor);
-  const tmp2 = importDefault(666);
-  const luminanceResult = tmp2Result.luminance();
-  let contrastResult = importDefault(666).contrast(tmp2Result, tmp4);
+  const tmp4Result = importDefault(689)(base);
+  let obj3 = tmp2(689)(arg0);
+  const tmp4 = importDefault(689);
+  const luminanceResult = tmp4Result.luminance();
+  let contrastResult = importDefault(689).contrast(tmp4Result, obj3);
   let num2 = 99;
-  let obj4 = tmp4;
   while (true) {
     let tmp7 = contrastResult < NonText;
     let tmp8 = contrastResult > NonText + num;
+    let tmp10 = obj3;
     if (tmp7) {
-      let tmp10 = obj4.luminance() > luminanceResult;
+      let tmp11 = obj3.luminance() > luminanceResult;
       if (!tmp8) {
         if (!tmp7) {
-          let brightenResult = obj4.brighten();
-          let tmp12 = importDefault;
-          let tmp13 = dependencyMap;
-          let obj5 = importDefault(666);
-          contrastResult = obj5.contrast(tmp2Result, brightenResult);
-          let tmp14 = +num2;
-          num2 = tmp14 - 1;
-          obj4 = brightenResult;
-          let tmp9 = brightenResult;
-          if (tmp14 <= 0) {
+          let brightenResult = obj3.brighten();
+          let tmp13 = importDefault;
+          let tmp14 = dependencyMap;
+          let obj6 = importDefault(689);
+          contrastResult = obj6.contrast(tmp4Result, brightenResult);
+          num2 = num2 - 1;
+          obj3 = brightenResult;
+          let obj5 = brightenResult;
+          if (0 >= tmp9) {
             break;
           }
         }
       }
-      brightenResult = obj4.darken();
+      brightenResult = obj3.darken();
     } else {
-      tmp9 = obj4;
+      obj5 = obj3;
       if (!tmp8) {
         break;
       }
     }
-    let tmp15 = toRGBAString;
-    return toRGBAString(tmp9);
+    let tmp15 = callback;
+    let num3 = 4;
+    let tmp16 = callback(obj5.rgba(), 4);
+    let tmp17 = globalThis;
+    let _HermesInternal = HermesInternal;
+    let str = ")";
+    let str2 = ", ";
+    let str3 = "rgba(";
+    let str4 = ", ";
+    let str5 = ", ";
+    let str6 = ", ";
+    return "rgba(" + tmp16[0] + ", " + tmp16[1] + ", " + tmp16[2] + ", " + tmp16[3] + ")";
   }
 };
 export const darkenColor = function darkenColor(contrastingColor, arg1) {
-  return toRGBAString(importDefault(666)(contrastingColor).darken(arg1));
+  const obj = importDefault(689)(contrastingColor);
+  const tmp = callback(importDefault(689)(contrastingColor).darken(arg1).rgba(), 4);
+  return "rgba(" + tmp[0] + ", " + tmp[1] + ", " + tmp[2] + ", " + tmp[3] + ")";
 };
-export const brightenColor = function brightenColor(token, arg1) {
-  return toRGBAString(importDefault(666)(token).brighten(arg1));
+export const brightenColor = function brightenColor(profilePrimaryColor, arg1) {
+  const obj = importDefault(689)(profilePrimaryColor);
+  const tmp = callback(importDefault(689)(profilePrimaryColor).brighten(arg1).rgba(), 4);
+  return "rgba(" + tmp[0] + ", " + tmp[1] + ", " + tmp[2] + ", " + tmp[3] + ")";
 };
-export const setColorOpacity = function setColorOpacity(white, self) {
-  return toRGBAString(importDefault(666)(white).alpha(self));
+export const setColorOpacity = function setColorOpacity(white, alphaResult) {
+  const obj = importDefault(689)(white);
+  const tmp = callback(importDefault(689)(white).alpha(alphaResult).rgba(), 4);
+  return "rgba(" + tmp[0] + ", " + tmp[1] + ", " + tmp[2] + ", " + tmp[3] + ")";
 };

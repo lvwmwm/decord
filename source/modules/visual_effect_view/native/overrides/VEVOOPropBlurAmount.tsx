@@ -1,74 +1,70 @@
-// Module ID: 14815
-// Function ID: 112775
-// Dependencies: [57, 31, 4569, 33, 4165, 7611, 5538, 14816, 2]
+// Module ID: 14841
+// Function ID: 14842
+// Dependencies: [32, 19, 4591, 21, 4189, 7634, 5556, 14842, 2]
 
-// Module 14815
+// Module 14841
 import _slicedToArray from "_slicedToArray";
-import importAllResult from "result";
+import importAllResult from "noop";
 import useVisualEffectViewOverrides from "useVisualEffectViewOverrides";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_5;
+let c5;
 let closure_6;
 const require = arg1;
-({ getVisualEffectViewOverrides: closure_5, setVisualEffectViewOverides: closure_6 } = useVisualEffectViewOverrides);
-let closure_8 = _createForOfIteratorHelperLoose.createStyles({ enabledSwitchStyle: { alignSelf: "flex-start" } });
+let c4 = importAllResult;
+({ getVisualEffectViewOverrides: c5, setVisualEffectViewOverides: closure_6 } = useVisualEffectViewOverrides);
+let closure_8 = createCacheKey.createStyles({ enabledSwitchStyle: { alignSelf: "flex-start" } });
 const memoResult = importAllResult.memo(function VEVOOPropBlurAmount() {
-  const tmp2 = callback(importAllResult.useState(false), 2);
-  const first = tmp2[0];
-  const _require = tmp2[1];
-  const tmp4 = callback(importAllResult.useState(callback().blurAmountOverride), 2);
-  const first1 = tmp4[0];
-  const dependencyMap = tmp4[1];
+  let require;
+  let tmp3;
   const tmp = callback2();
-  callback = importAllResult.useCallback((arg0) => {
-    if (null != arg0) {
-      callback2(arg0);
+  [tmp3, require] = callback(importAllResult.useState(false), 2);
+  const tmp4 = callback(importAllResult.useState(callback().blurAmountOverride), 2);
+  const first = tmp4[0];
+  const dependencyMap = tmp4[1];
+  const tmp2 = callback(importAllResult.useState(false), 2);
+  callback = importAllResult.useCallback((blurAmountOverride) => {
+    if (null != blurAmountOverride) {
+      callback2(blurAmountOverride);
     }
     const obj = {};
     const merged = Object.assign(outer1_5());
-    obj["blurAmountOverride"] = arg0;
+    obj.blurAmountOverride = blurAmountOverride;
     outer1_6(obj);
   }, []);
-  let obj = {};
-  let toFixedResult;
-  if (null != first1) {
-    toFixedResult = first1.toFixed(3);
+  let str;
+  if (first != null) {
+    str = first.toFixed(3);
   }
-  let str = "";
-  if (null != toFixedResult) {
-    str = toFixedResult;
+  if (str == null) {
+    str = "";
   }
-  obj.label = "Blur Amount " + str;
-  obj.leadingStyle = tmp.enabledSwitchStyle;
+  obj = { label: "Blur Amount " + str, leadingStyle: tmp.enabledSwitchStyle, leading: tmp7(require(5556) /* FormSwitch */.FormSwitch, obj), subLabel: tmp7(first(14842), obj1), disabled: !tmp3 };
   obj = {
-    value: first,
+    value: tmp3,
     onValueChange(arg0) {
       callback(arg0);
       let tmp3;
       if (arg0) {
-        tmp3 = first1;
+        tmp3 = first;
       }
       callback(tmp3);
     }
   };
-  obj.leading = jsx(_require(5538).FormSwitch, {
-    value: first,
+  const ref = importAllResult.useRef(first);
+  const tmp8 = require;
+  return jsx(require(7634) /* Form */.FormRow, {
+    value: tmp3,
     onValueChange(arg0) {
       callback(arg0);
       let tmp3;
       if (arg0) {
-        tmp3 = first1;
+        tmp3 = first;
       }
       callback(tmp3);
     }
   });
-  const ref = importAllResult.useRef(first1);
-  const tmp7 = jsx;
-  obj.subLabel = jsx(first1(14816), { disabled: !first, disabledOpacity: !first, initialValue: importAllResult.useRef(first1), onValueChange: callback });
-  obj.disabled = !first;
-  return tmp7(_require(7611).FormRow, obj);
 });
 const result = require("useVisualEffectViewOverrides").fileFinishedImporting("modules/visual_effect_view/native/overrides/VEVOOPropBlurAmount.tsx");
 

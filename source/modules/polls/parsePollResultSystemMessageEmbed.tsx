@@ -1,95 +1,15 @@
-// Module ID: 7801
-// Function ID: 61833
-// Name: _createForOfIteratorHelperLoose
+// Module ID: 7824
+// Function ID: 7825
+// Name: parsePollResultSystemMessageEmbed
 // Dependencies: [2]
 // Exports: default
 
-// Module 7801 (_createForOfIteratorHelperLoose)
-function _createForOfIteratorHelperLoose(iterable) {
-  let closure_0 = iterable;
-  iterable = "undefined" !== typeof Symbol;
-  if (iterable) {
-    const _Symbol = Symbol;
-    iterable = iterable[Symbol.iterator];
-  }
-  if (!iterable) {
-    iterable = iterable[Symbol.iterator];
-  }
-  if (iterable) {
-    const iter = iterable.call(iterable);
-    const next = iter.next;
-    return next.bind(iter);
-  } else {
-    const _Array = Array;
-    let tmp = iterable;
-    if (!Array.isArray(iterable)) {
-      let tmp2;
-      if (iterable) {
-        if ("string" === typeof iterable) {
-          tmp2 = _arrayLikeToArray(iterable, undefined);
-        } else {
-          const toString = {}.toString;
-          const substr = toString.call(iterable).slice(8, -1);
-          let name = substr;
-          if (tmp3) {
-            name = iterable.constructor.name;
-          }
-          if ("Map" !== name) {
-            if ("Set" !== name) {
-              if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(iterable, undefined);
-              } else {
-                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
-              }
-            }
-            tmp2 = arr;
-          }
-          const _Array2 = Array;
-          arr = Array.from(iterable);
-          const callResult = toString.call(iterable);
-          tmp3 = "Object" === substr && iterable.constructor;
-        }
-      }
-      tmp = tmp2;
-      if (!tmp2) {
-        const _TypeError = TypeError;
-        const typeError = new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
-        throw typeError;
-      }
-    }
-    if (tmp) {
-      closure_0 = tmp;
-    }
-    _arrayLikeToArray = 0;
-    return () => {
-      if (closure_1 >= length.length) {
-        let obj = { done: true };
-      } else {
-        obj = { done: false };
-        closure_1 = tmp3 + 1;
-        obj.value = length[+closure_1];
-      }
-      return obj;
-    };
-  }
-}
-function _arrayLikeToArray(arg0, arg1) {
-  let length;
-  if (tmp) {
-    length = arg0.length;
-  }
-  const ArrayResult = Array(length);
-  for (let num = 0; num < length; num = num + 1) {
-    ArrayResult[num] = arg0[num];
-  }
-  return ArrayResult;
-}
+// Module 7824 (parsePollResultSystemMessageEmbed)
 const result = require("set").fileFinishedImporting("modules/polls/parsePollResultSystemMessageEmbed.tsx");
 
 export default function parsePollResultSystemMessageEmbed(fields) {
-  let iter;
   fields = undefined;
-  if (null != fields) {
+  if (fields != null) {
     fields = fields.fields;
   }
   if (null == fields) {
@@ -97,38 +17,47 @@ export default function parsePollResultSystemMessageEmbed(fields) {
   } else {
     let obj = {};
     obj = {};
-    const tmp3 = _createForOfIteratorHelperLoose(fields.fields);
-    let iter2 = tmp3();
-    if (!iter2.done) {
-      do {
-        let value = iter2.value;
-        let rawName = value.rawName;
-        if ("poll_question_text" === rawName) {
-          obj.questionText = value.rawValue;
-        } else if ("victor_answer_id" === rawName) {
-          obj.victorAnswerId = value.rawValue;
-        } else if ("victor_answer_text" === rawName) {
-          obj.victorAnswerText = value.rawValue;
-        } else if ("victor_answer_votes" === rawName) {
-          let _parseInt2 = parseInt;
-          obj.victorAnswerVotes = parseInt(value.rawValue, 10);
-        } else if ("total_votes" === rawName) {
-          let _parseInt = parseInt;
-          obj.totalVotes = parseInt(value.rawValue, 10);
-        } else if ("victor_answer_emoji_id" === rawName) {
-          obj.id = value.rawValue;
-        } else if ("victor_answer_emoji_name" === rawName) {
-          obj.name = value.rawValue;
-        } else if ("victor_answer_emoji_animated" === rawName) {
-          obj.animated = "true" === value.rawValue;
-        }
-        iter = tmp3();
-        iter2 = iter;
-      } while (!iter.done);
+    fields = fields.fields;
+    const iter = fields[Symbol.iterator]();
+    const nextResult = iter.next();
+    while (iter !== undefined) {
+      let tmp5 = nextResult;
+      let rawName = nextResult.rawName;
+      if ("poll_question_text" === rawName) {
+        let tmp12 = nextResult;
+        obj.questionText = tmp5.rawValue;
+      } else if ("victor_answer_id" === rawName) {
+        let tmp11 = nextResult;
+        obj.victorAnswerId = tmp5.rawValue;
+      } else if ("victor_answer_text" === rawName) {
+        let tmp10 = nextResult;
+        obj.victorAnswerText = tmp5.rawValue;
+      } else if ("victor_answer_votes" === rawName) {
+        let _parseInt2 = parseInt;
+        let tmp9 = nextResult;
+        obj.victorAnswerVotes = parseInt(tmp5.rawValue, 10);
+      } else if ("total_votes" === rawName) {
+        let _parseInt = parseInt;
+        let tmp8 = nextResult;
+        obj.totalVotes = parseInt(tmp5.rawValue, 10);
+      } else if ("victor_answer_emoji_id" === rawName) {
+        let tmp7 = nextResult;
+        obj.id = tmp5.rawValue;
+      } else if ("victor_answer_emoji_name" === rawName) {
+        let tmp6 = nextResult;
+        obj.name = tmp5.rawValue;
+      } else if ("victor_answer_emoji_animated" === rawName) {
+        let tmp15 = nextResult;
+        obj.animated = "true" === tmp5.rawValue;
+      }
+      continue;
     }
     if (null != obj.name) {
-      const animated = obj.animated;
-      obj.animated = null != animated && animated;
+      let flag = obj.animated;
+      if (flag == null) {
+        flag = false;
+      }
+      obj.animated = flag;
       obj.victorEmoji = obj;
     }
     return obj;

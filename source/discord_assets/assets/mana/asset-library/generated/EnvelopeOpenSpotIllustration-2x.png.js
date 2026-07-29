@@ -1,9 +1,9 @@
-// Module ID: 6993
-// Function ID: 59761
+// Module ID: 7013
+// Function ID: 7014
 // Name: metadata
 // Dependencies: [2]
 
-// Module 6993 (metadata)
+// Module 7013 (metadata)
 const result = require("set").fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/EnvelopeOpenSpotIllustration-2x.png.js");
 
 export default "https://cdn.discordapp.com/assets/content/c0a045b1b5aa7f158aa08a69f79660e98785654ce48ae95a67c42c348d40f46b.png";

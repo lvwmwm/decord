@@ -1,26 +1,24 @@
-// Module ID: 14806
-// Function ID: 112734
+// Module ID: 14832
+// Function ID: 14833
 // Name: useBenchmarkResults
-// Dependencies: [57, 31, 2]
+// Dependencies: [32, 19, 2]
 // Exports: default
 
-// Module 14806 (useBenchmarkResults)
+// Module 14832 (useBenchmarkResults)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
+import noop from "noop";
 
 const result = require("set").fileFinishedImporting("modules/devtools/native/components/screens/performance/useBenchmarkResults.tsx");
 
 export default function useBenchmarkResults() {
-  let _slicedToArray;
-  let tmp2;
-  [tmp2, _slicedToArray] = callback(React.useState([]), 2);
-  React = React.useRef(0);
   const tmp = callback(React.useState([]), 2);
+  callback = tmp[1];
+  React = React.useRef(0);
   return {
-    results: tmp2,
+    results: tmp[0],
     addMount: React.useCallback((arg0, arg1) => {
       const callback = arg0;
-      let result = arg1;
+      let noop = arg1;
       callback((arg0) => {
         ref.current = +ref.current + 1;
         const items = [{ kind: "mount", id: tmp, label: _slicedToArray, elapsedMs: ref }, ...arg0];

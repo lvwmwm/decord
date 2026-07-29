@@ -1,101 +1,84 @@
-// Module ID: 14792
-// Function ID: 112589
+// Module ID: 14818
+// Function ID: 14819
 // Name: DevToolsShopScreen
-// Dependencies: [31, 27, 4164, 33, 4165, 689, 5193, 566, 14691, 1334, 4576, 5536, 5198, 5538, 14765, 5537, 2]
+// Dependencies: [19, 17, 4188, 21, 4189, 712, 5215, 589, 14716, 1358, 4598, 5554, 5220, 5556, 14791, 5555, 2]
 // Exports: default
 
-// Module 14792 (DevToolsShopScreen)
-import "result";
+// Module 14818 (DevToolsShopScreen)
+import "noop";
 import { ScrollView } from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import getUserAgnosticState from "getUserAgnosticState";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_5;
+let c5;
 let closure_6;
 const require = arg1;
-({ jsx: closure_5, jsxs: closure_6 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW, paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16 };
-_createForOfIteratorHelperLoose.wrap = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/devtools/native/components/screens/DevToolsShopScreen.tsx");
+({ jsx: c5, jsxs: closure_6 } = jsxProd);
+createCacheKey = { wrap: null };
+createCacheKey = { backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW, paddingHorizontal: require("Themes").space.PX_16 };
+createCacheKey[0] = createCacheKey;
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+const result = require("getUserAgnosticState").fileFinishedImporting("modules/devtools/native/components/screens/DevToolsShopScreen.tsx");
 
 export default function DevToolsShopScreen() {
   let handleToggleDismissState;
   let isDismissed;
-  let obj = require(566) /* initialize */;
-  const items = [_isNativeReflectConstruct];
-  const stateFromStores = obj.useStateFromStores(items, () => outer1_4.get("shop_disable_cache"));
-  let obj1 = require(566) /* initialize */;
-  const items1 = [_isNativeReflectConstruct];
-  const stateFromStores1 = obj1.useStateFromStores(items1, () => outer1_4.get("shop_include_unpublished"));
-  let obj2 = require(566) /* initialize */;
-  const items2 = [_isNativeReflectConstruct];
-  const stateFromStores2 = obj2.useStateFromStores(items2, () => outer1_4.get("shop_show_debug_overlay"));
-  let obj3 = require(566) /* initialize */;
-  const items3 = [_isNativeReflectConstruct];
-  const stateFromStores3 = obj3.useStateFromStores(items3, () => outer1_4.get("bypass_google_sku_sync"));
-  const tmp = _createForOfIteratorHelperLoose();
-  const tmp6 = importDefault(14691);
-  obj = { style: tmp.wrap };
-  obj = { paddingVertical: importDefault(689).space.PX_16, paddingBottom: importDefault(689).space.PX_16 + importDefault(5193)({ includeKeyboardHeight: true }).insets.bottom };
-  ({ isDismissed, handleToggleDismissState } = importDefault(14691)(require(1334) /* DismissibleContent */.DismissibleContent.COLLECTIBLES_SHOP_ENTRY_MARKETING));
-  obj.contentContainerStyle = obj;
-  obj1 = { spacing: 16 };
-  obj2 = { title: "Shop Toggles", hasIcons: false };
-  obj3 = {
-    label: "Disable collectibles shop cache",
-    subLabel: "shop_disable_cache",
-    subLabelLineClamp: 1,
-    trailing: callback(require(5538) /* FormSwitch */.FormSwitch, {
-      value: stateFromStores,
-      onValueChange(arg0) {
-        return outer1_0(outer1_2[14]).toggle("shop_disable_cache", arg0);
-      }
-    })
-  };
-  const items4 = [callback(require(5198) /* TableRowInner */.TableRow, obj3), , , , ];
-  const obj5 = {
-    label: "Show unpublished items in collectibles shop",
-    subLabel: "shop_include_unpublished",
-    subLabelLineClamp: 1,
-    trailing: callback(require(5538) /* FormSwitch */.FormSwitch, {
-      value: stateFromStores1,
-      onValueChange(arg0) {
-        return outer1_0(outer1_2[14]).toggle("shop_include_unpublished", arg0);
-      }
-    })
-  };
-  items4[1] = callback(require(5198) /* TableRowInner */.TableRow, obj5);
-  const obj7 = { label: "Collectibles Marketing", subLabel: "COLLECTIBLES_SHOP_ENTRY_MARKETING", subLabelLineClamp: 1, value: isDismissed, onValueChange: handleToggleDismissState };
-  items4[2] = callback(require(5537) /* TableSwitchRow */.TableSwitchRow, obj7);
-  const obj8 = {
-    label: "Show debug log overlay in collectibles shop",
-    subLabel: "shop_show_debug_overlay",
-    subLabelLineClamp: 1,
-    trailing: callback(require(5538) /* FormSwitch */.FormSwitch, {
-      value: stateFromStores2,
-      onValueChange(arg0) {
-        return outer1_0(outer1_2[14]).toggle("shop_show_debug_overlay", arg0);
-      }
-    })
-  };
-  items4[3] = callback(require(5198) /* TableRowInner */.TableRow, obj8);
-  const obj10 = {
-    label: "[Android] Bypass Google SKU sync in collectibles shop",
-    subLabel: "bypass_google_sku_sync",
-    subLabelLineClamp: 1,
-    trailing: callback(require(5538) /* FormSwitch */.FormSwitch, {
-      value: stateFromStores3,
-      onValueChange(arg0) {
-        return outer1_0(outer1_2[14]).toggle("bypass_google_sku_sync", arg0);
-      }
-    })
-  };
-  items4[4] = callback(require(5198) /* TableRowInner */.TableRow, obj10);
-  obj2.children = items4;
-  obj1.children = callback2(require(5536) /* TableRowGroupTitle */.TableRowGroup, obj2);
-  obj.children = callback(require(4576) /* Stack */.Stack, obj1);
+  let obj = require(589) /* initialize */;
+  const items = [getUserAgnosticState];
+  const stateFromStores = obj.useStateFromStores(items, () => store.get("shop_disable_cache"));
+  let obj1 = require(589) /* initialize */;
+  const items1 = [getUserAgnosticState];
+  const stateFromStores1 = obj1.useStateFromStores(items1, () => store.get("shop_include_unpublished"));
+  let obj2 = require(589) /* initialize */;
+  const items2 = [getUserAgnosticState];
+  const stateFromStores2 = obj2.useStateFromStores(items2, () => store.get("shop_show_debug_overlay"));
+  let obj3 = require(589) /* initialize */;
+  const items3 = [getUserAgnosticState];
+  const stateFromStores3 = obj3.useStateFromStores(items3, () => store.get("bypass_google_sku_sync"));
+  const tmp = createCacheKey();
+  const tmp6 = importDefault(14716);
+  obj = { style: tmp.wrap, contentContainerStyle: null, children: null };
+  obj = { paddingVertical: importDefault(712).space.PX_16, paddingBottom: importDefault(712).space.PX_16 + importDefault(5215)({ includeKeyboardHeight: true }).insets.bottom };
+  ({ isDismissed, handleToggleDismissState } = importDefault(14716)(require(1358) /* DismissibleContent */.DismissibleContent.COLLECTIBLES_SHOP_ENTRY_MARKETING));
+  obj[1] = obj;
+  obj1 = { spacing: 16, children: null };
+  obj2 = { title: "Shop Toggles", hasIcons: false, children: null };
+  obj3 = { label: "Disable collectibles shop cache", subLabel: "shop_disable_cache", subLabelLineClamp: 1, trailing: null };
+  obj3[3] = callback(require(5556) /* FormSwitch */.FormSwitch, {
+    value: stateFromStores,
+    onValueChange(arg0) {
+      return callback(14791).toggle("shop_disable_cache", arg0);
+    }
+  });
+  const items4 = [callback(require(5220) /* TableRowInner */.TableRow, obj3), , , , ];
+  const obj5 = { label: "Show unpublished items in collectibles shop", subLabel: "shop_include_unpublished", subLabelLineClamp: 1, trailing: null };
+  obj5[3] = callback(require(5556) /* FormSwitch */.FormSwitch, {
+    value: stateFromStores1,
+    onValueChange(arg0) {
+      return callback(14791).toggle("shop_include_unpublished", arg0);
+    }
+  });
+  items4[1] = callback(require(5220) /* TableRowInner */.TableRow, obj5);
+  items4[2] = callback(require(5555) /* TableSwitchRow */.TableSwitchRow, { label: "Collectibles Marketing", subLabel: "COLLECTIBLES_SHOP_ENTRY_MARKETING", subLabelLineClamp: 1, value: isDismissed, onValueChange: handleToggleDismissState });
+  const obj7 = { label: "Show debug log overlay in collectibles shop", subLabel: "shop_show_debug_overlay", subLabelLineClamp: 1, trailing: null };
+  obj7[3] = callback(require(5556) /* FormSwitch */.FormSwitch, {
+    value: stateFromStores2,
+    onValueChange(arg0) {
+      return callback(14791).toggle("shop_show_debug_overlay", arg0);
+    }
+  });
+  items4[3] = callback(require(5220) /* TableRowInner */.TableRow, obj7);
+  const obj9 = { label: "[Android] Bypass Google SKU sync in collectibles shop", subLabel: "bypass_google_sku_sync", subLabelLineClamp: 1, trailing: null };
+  obj9[3] = callback(require(5556) /* FormSwitch */.FormSwitch, {
+    value: stateFromStores3,
+    onValueChange(arg0) {
+      return callback(14791).toggle("bypass_google_sku_sync", arg0);
+    }
+  });
+  items4[4] = callback(require(5220) /* TableRowInner */.TableRow, obj9);
+  obj2[2] = items4;
+  obj1[1] = callback2(require(5554) /* TableRowGroupTitle */.TableRowGroup, obj2);
+  obj[2] = callback(require(4598) /* Stack */.Stack, obj1);
   return callback(ScrollView, obj);
 };

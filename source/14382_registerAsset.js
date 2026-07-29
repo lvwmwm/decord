@@ -1,11 +1,10 @@
 // Module ID: 14382
-// Function ID: 110114
+// Function ID: 14383
 // Name: registerAsset
-// Dependencies: [1217]
+// Dependencies: [1241]
 
 // Module 14382 (registerAsset)
 import registerAsset from "registerAsset";
 
-const obj = { __packager_asset: true, httpServerLocation: "/assets/../discord_common/js/shared/images/flags", width: 70, height: 47, scales: [1], hash: "fcdf14841cd468de3f43704be16fa303", name: "no", type: "png" };
 
-export default registerAsset.registerAsset(obj);
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "26310276feb1290ca5d9d3ec8d0b1231", name: "LanguageIcon", type: "png" });

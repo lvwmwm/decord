@@ -1,50 +1,50 @@
-// Module ID: 5480
-// Function ID: 46704
+// Module ID: 5498
+// Function ID: 5499
 // Name: useBottomSheetImperativeHandle
-// Dependencies: [31, 2]
+// Dependencies: [19, 2]
 // Exports: useBottomSheetImperativeHandle
 
-// Module 5480 (useBottomSheetImperativeHandle)
-import result from "result";
+// Module 5498 (useBottomSheetImperativeHandle)
+import noop from "noop";
 
 const result = require("set").fileFinishedImporting("design/components/Sheet/native/BottomSheetHandle.tsx");
 
-export const useBottomSheetImperativeHandle = function useBottomSheetImperativeHandle(arg0, ref) {
+export const useBottomSheetImperativeHandle = function useBottomSheetImperativeHandle(ref, ref) {
   const React = ref;
   const items = [ref];
-  const imperativeHandle = React.useImperativeHandle(arg0, () => ({
+  const imperativeHandle = React.useImperativeHandle(ref, () => ({
     expandActionSheet() {
-      const current = outer1_0.current;
-      if (null != current) {
+      const current = noop.current;
+      if (current != null) {
         current.expand();
       }
     },
     closeActionSheet(force) {
       force = undefined;
-      if (null != force) {
+      if (force != null) {
         force = force.force;
       }
       if (true === force) {
-        const current2 = outer1_0.current;
-        if (null != current2) {
+        const current2 = noop.current;
+        if (current2 != null) {
           current2.forceClose();
         }
       } else {
-        const current = outer1_0.current;
-        if (null != current) {
+        const current = noop.current;
+        if (current != null) {
           current.close();
         }
       }
     },
     collapseActionSheet() {
-      const current = outer1_0.current;
-      if (null != current) {
+      const current = noop.current;
+      if (current != null) {
         current.collapse();
       }
     },
     snapToIndex(current, items) {
-      current = outer1_0.current;
-      if (null != current) {
+      current = noop.current;
+      if (current != null) {
         current.snapToIndex(current);
       }
     }

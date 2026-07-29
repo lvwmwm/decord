@@ -1,35 +1,36 @@
-// Module ID: 13777
-// Function ID: 105610
+// Module ID: 13798
+// Function ID: 13799
 // Name: pressable
-// Dependencies: [1850, 7733, 9209, 566, 4372, 9208, 1935, 9211, 10099, 1212, 2]
+// Dependencies: [1874, 7756, 9233, 589, 4395, 9232, 1959, 9235, 10120, 1236, 2]
 
-// Module 13777 (pressable)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 13798 (pressable)
+import mergeGuildAvatar from "mergeGuildAvatar";
 import { PHONE_VERIFICATION_MODAL_KEY as closure_4 } from "PHONE_VERIFICATION_MODAL_KEY";
 import createToggle from "createToggle";
 
 const require = arg1;
 createToggle = {
   useTitle() {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(require(1212) /* getSystemLocale */.t.dEYpSt);
+    const intl = require(1236) /* getSystemLocale */.intl;
+    return intl.string(require(1236) /* getSystemLocale */.t.dEYpSt);
   },
   parent: require("MobileSetting").MobileSetting.ACCOUNT,
   useTrailing: function useAccountPhoneSettingTrailing() {
-    const items = [_isNativeReflectConstruct];
-    return require(566) /* initialize */.useStateFromStores(items, () => {
-      const currentUser = outer1_3.getCurrentUser();
+    const items = [mergeGuildAvatar];
+    return require(589) /* initialize */.useStateFromStores(items, () => {
+      currentUser = currentUser.getCurrentUser();
       let phone;
-      if (null != currentUser) {
+      if (currentUser != null) {
         phone = currentUser.phone;
       }
       return phone;
     });
   },
   onPress: function onAccountPhoneSettingPress() {
-    let obj = importDefault(4372);
-    obj = { allowDeletePhone: true, reason: require(9211) /* ChangePhoneReason */.ChangePhoneReason.USER_SETTINGS_UPDATE };
-    obj.pushLazy(require(1935) /* maybeLoadBundle */(9208, dependencyMap.paths), obj, closure_4);
+    let obj = importDefault(4395);
+    obj = { allowDeletePhone: true, reason: null };
+    obj[1] = require(9235) /* ChangePhoneReason */.ChangePhoneReason.USER_SETTINGS_UPDATE;
+    obj.pushLazy(require(1959) /* asyncRequireImpl */(9232, dependencyMap.paths), obj, closure_4);
   },
   withArrow: true
 };

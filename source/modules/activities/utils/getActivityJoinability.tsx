@@ -1,16 +1,16 @@
-// Module ID: 12003
-// Function ID: 92641
+// Module ID: 12027
+// Function ID: 12028
 // Name: getActivityJoinability
-// Dependencies: [653, 10929, 10926, 10580, 10509, 6007, 12004, 477, 10923, 10924, 10925, 2]
+// Dependencies: [676, 10953, 10950, 10604, 10533, 6025, 12028, 500, 10947, 10948, 10949, 2]
 // Exports: default
 
-// Module 12003 (getActivityJoinability)
+// Module 12027 (getActivityJoinability)
 import ME from "ME";
 
-let closure_3;
-let closure_4;
-let closure_5;
-({ ActivityFlags: closure_3, ChannelTypes: closure_4, GuildFeatures: closure_5 } = ME);
+let c3;
+let c4;
+let c5;
+({ ActivityFlags: c3, ChannelTypes: c4, GuildFeatures: c5 } = ME);
 let obj = { CAN_JOIN: "can_join", CANNOT_JOIN: "cannot_join", JOINED: "joined" };
 const result = require("getIsInParty").fileFinishedImporting("modules/activities/utils/getActivityJoinability.tsx");
 
@@ -30,13 +30,13 @@ export default function getActivityJoinability(arg0) {
   if (isEmbedded) {
     if (isEmbedded) {
       const currentEmbeddedActivity = EmbeddedActivitiesStore.getCurrentEmbeddedActivity();
-      let tmp17 = null != currentEmbeddedActivity;
-      if (tmp17) {
+      let tmp16 = null != currentEmbeddedActivity;
+      if (tmp16) {
         let application_id;
-        if (null != activity) {
+        if (activity != null) {
           application_id = activity.application_id;
         }
-        tmp17 = currentEmbeddedActivity.applicationId === application_id;
+        tmp16 = currentEmbeddedActivity.applicationId === application_id;
       }
     }
     if (null == user) {
@@ -44,15 +44,20 @@ export default function getActivityJoinability(arg0) {
     } else {
       if (isEmbedded) {
         if (null != channelId) {
-          obj = { userId: user.id, activity, channelId, currentUser: tmp2, application: tmp };
-          const tmp54 = importDefault(10580);
-          obj.isActivitiesEnabledForCurrentPlatform = require(10509) /* isActivitiesAllowed */.getIsActivitiesEnabledForCurrentPlatform();
-          obj.ChannelStore = ChannelStore;
-          obj.VoiceStateStore = VoiceStateStore;
-          obj.PermissionStore = tmp3;
-          obj.GuildStore = GuildStore;
-          const obj8 = require(10509) /* isActivitiesAllowed */;
-          if (tmp54Result === require(10580) /* getEmbeddedActivityJoinability */.EmbeddedActivityJoinability.CAN_JOIN) {
+          obj = { userId: null, activity: null, channelId: null, currentUser: null, application: null, isActivitiesEnabledForCurrentPlatform: null, ChannelStore: null, VoiceStateStore: null, PermissionStore: null, GuildStore: null };
+          obj[0] = user.id;
+          obj[1] = activity;
+          obj[2] = channelId;
+          obj[3] = tmp2;
+          obj[4] = tmp;
+          const tmp45 = importDefault(10604);
+          obj[5] = require(10533) /* useIsActivitiesEnabledForCurrentPlatform */.getIsActivitiesEnabledForCurrentPlatform();
+          obj[6] = ChannelStore;
+          obj[7] = VoiceStateStore;
+          obj[8] = tmp3;
+          obj[9] = GuildStore;
+          const obj8 = require(10533) /* useIsActivitiesEnabledForCurrentPlatform */;
+          if (tmp45Result === require(10604) /* getEmbeddedActivityJoinability */.EmbeddedActivityJoinability.CAN_JOIN) {
             let CANNOT_JOIN2 = obj.CAN_JOIN;
           } else {
             CANNOT_JOIN2 = obj.CANNOT_JOIN;
@@ -62,27 +67,28 @@ export default function getActivityJoinability(arg0) {
       }
       if (isEmbedded) {
         if (null == channelId) {
-          if (!importDefault(6007)(activity, constants.CONTEXTLESS)) {
+          if (!importDefault(6025)(activity, constants.CONTEXTLESS)) {
             return obj.CANNOT_JOIN;
           }
         }
       }
       if (!isEmbedded) {
-        if (importDefault(12004)(activity)) {
-          const obj2 = require(477) /* set */;
+        if (importDefault(12028)(activity)) {
+          const obj2 = require(500) /* set */;
         }
         return obj.CANNOT_JOIN;
       }
-      const partySize = require(10923) /* getPartySize */.getPartySize(activity);
-      const obj3 = require(10923) /* getPartySize */;
+      const partySize = require(10947) /* getPartySize */.getPartySize(activity);
+      const obj3 = require(10947) /* getPartySize */;
+      const tmp27 = require;
       if (obj4.hasPartySize(partySize)) {
-        if (!obj5.isPartyFull(partySize)) {
-          if (importDefault(6007)(activity, constants.PARTY_PRIVACY_FRIENDS)) {
+        if (!tmp27Result.isPartyFull(partySize)) {
+          if (importDefault(6025)(activity, constants.PARTY_PRIVACY_FRIENDS)) {
             if (RelationshipStore.isFriend(user.id)) {
               return obj.CAN_JOIN;
             }
           }
-          if (importDefault(6007)(activity, constants.PARTY_PRIVACY_VOICE_CHANNEL)) {
+          if (tmp30(6025)(activity, tmp31.PARTY_PRIVACY_VOICE_CHANNEL)) {
             const channel = ChannelStore.getChannel(SelectedChannelStore.getVoiceChannelId());
             if (null != channel) {
               if (VoiceStateStore.isInChannel(channel.id, user.id)) {
@@ -113,23 +119,25 @@ export default function getActivityJoinability(arg0) {
           } else {
             return obj.CANNOT_JOIN;
           }
+          tmp30 = importDefault;
+          tmp31 = constants;
         }
-        obj5 = require(10925) /* isPartyFull */;
+        tmp27Result = tmp27(10949);
       }
       return obj.CANNOT_JOIN;
     }
   } else {
     let application_id1;
-    if (null != activity) {
+    if (activity != null) {
       application_id1 = activity.application_id;
     }
-    const tmp8Result = importDefault(10929)(tmp4, tmp5, application_id1);
+    const tmp8Result = importDefault(10953)(tmp4, tmp5, application_id1);
     let isInParty = null != tmp8Result;
     if (isInParty) {
-      obj = require(10926) /* getIsInParty */;
+      obj = require(10950) /* getIsInParty */;
       isInParty = obj.getIsInParty(tmp8Result, activity);
     }
-    const tmp8 = importDefault(10929);
+    const tmp8 = importDefault(10953);
   }
   return obj.JOINED;
 };

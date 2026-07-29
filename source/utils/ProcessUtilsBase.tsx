@@ -1,49 +1,25 @@
-// Module ID: 5942
-// Function ID: 52556
-// Name: ProcessUtils
-// Dependencies: [6, 7, 2]
+// Module ID: 5961
+// Function ID: 5962
+// Name: ElectronProcessType
+// Dependencies: [2]
 
-// Module 5942 (ProcessUtils)
-import _classCallCheck from "_classCallCheck";
-import _defineProperties from "_defineProperties";
-
-const tmp2 = (() => {
-  class ProcessUtils {
-    constructor() {
-      tmp = ProcessUtils(this, ProcessUtils);
-      return;
-    }
-  }
-  let obj = {
-    key: "getSystemMetrics",
-    value() {
-      return Promise.resolve(null);
-    }
-  };
-  const items = [obj, , , ];
-  obj = {
-    key: "setShouldCollectHermesInstrumentedStats",
-    value() {
-
-    }
-  };
-  items[1] = obj;
-  obj = {
-    key: "getCurrentHermesInstrumentedStatsSummary",
-    value() {
-
-    }
-  };
-  items[2] = obj;
-  items[3] = {
-    key: "getCPUCoreCount",
-    value() {
-      return this.cpuCoreCount;
-    }
-  };
-  return callback(ProcessUtils, items);
-})();
+// Module 5961 (ElectronProcessType)
 const result = require("set").fileFinishedImporting("utils/ProcessUtilsBase.tsx");
+class ProcessUtils {
+}
+const prototype = ProcessUtils.prototype;
+prototype["getSystemMetrics"] = function getSystemMetrics() {
+  return Promise.resolve(null);
+};
+prototype["setShouldCollectHermesInstrumentedStats"] = function setShouldCollectHermesInstrumentedStats() {
+
+};
+prototype["getCurrentHermesInstrumentedStatsSummary"] = function getCurrentHermesInstrumentedStatsSummary() {
+
+};
+prototype["getCPUCoreCount"] = function getCPUCoreCount() {
+  return this.cpuCoreCount;
+};
 
 export const ElectronProcessType = { Unknown: "unknown", Main: "main", Renderer: "renderer", GPU: "gpu", Utility: "utility", Crashpad: "crashpad", Clips: "clips" };
-export const ProcessUtils = tmp2;
+export { ProcessUtils };

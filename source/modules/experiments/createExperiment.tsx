@@ -1,136 +1,109 @@
-// Module ID: 4078
-// Function ID: 33767
-// Name: getExperimentDescriptor
-// Dependencies: [57, 31, 1194, 4079, 4080, 4087, 4088, 4089, 2]
+// Module ID: 4102
+// Function ID: 4103
+// Name: createExperiment
+// Dependencies: [32, 19, 1218, 4103, 4104, 4111, 4112, 4113, 2]
 // Exports: default
 
-// Module 4078 (getExperimentDescriptor)
+// Module 4102 (createExperiment)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_7 from "_isNativeReflectConstruct";
+import noop from "noop";
+import fetchFingerprint from "fetchFingerprint";
+import getHash from "getHash";
 import ExperimentBuckets from "ExperimentBuckets";
 
-let closure_4;
-let closure_5;
-let closure_8;
-let closure_9;
+let c4;
+let c5;
+let c9;
+let metroImportAll;
 const require = arg1;
-function getExperimentDescriptor(arg0, arg1, guildId) {
-  if ("guild" === arg0) {
-    let guildExperimentDescriptor = authStore.getGuildExperimentDescriptor(arg1, guildId.guildId);
-  } else {
-    guildExperimentDescriptor = authStore.getUserExperimentDescriptor(arg1);
-  }
-  return guildExperimentDescriptor;
-}
-function getConfig(defaultConfig, arg1, get, aaMode) {
-  if (null != aaMode) {
-    if (aaMode.aaMode) {
-      defaultConfig = defaultConfig.defaultConfig;
-    }
-    return defaultConfig;
-  }
-  const value = get.get(arg1);
-  defaultConfig = undefined;
-  if (null != value) {
-    defaultConfig = value.config;
-  }
-  if (null == defaultConfig) {
-    defaultConfig = defaultConfig.defaultConfig;
-  }
-}
-({ useState: closure_4, useEffect: closure_5 } = result);
-({ ExperimentBuckets: closure_8, ExposureTypes: closure_9 } = ExperimentBuckets);
-result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/experiments/createExperiment.tsx");
+({ useState: c4, useEffect: c5 } = noop);
+({ ExperimentBuckets: metroImportAll, ExposureTypes: c9 } = ExperimentBuckets);
+let result = require("fetchFingerprint").fileFinishedImporting("modules/experiments/createExperiment.tsx");
 
-export default function createExperiment(createExperiment) {
-  const _require = createExperiment;
-  function trackAutoExposure(location, trackExposureOptions, arg2, descriptor) {
+export default function createExperiment(config) {
+  const _require = config;
+  function trackAutoExposure(guildId, trackExposureOptions, arg2, guildExperimentDescriptor) {
     let obj = trackExposureOptions;
-    let tmp = descriptor;
     if (trackExposureOptions === undefined) {
       obj = {};
     }
-    if (tmp === undefined) {
+    let tmp = guildExperimentDescriptor;
+    if (guildExperimentDescriptor === undefined) {
       tmp = null;
     }
     obj.exposureType = arg2 ? outer1_9.AUTO_FALLBACK : outer1_9.AUTO;
     obj.excluded = false;
     if (null != tmp) {
-      trackExposureWithDescriptor(location, obj, tmp);
+      trackExposureWithDescriptor(guildId, obj, tmp);
     } else {
-      trackExposure(location, obj);
+      let tmp3 = obj;
+      if (obj === undefined) {
+        obj = { excluded: false, exposureType: null };
+        obj[1] = outer1_9.MANUAL;
+        tmp3 = obj;
+      }
+      const id = result3.id;
+      if ("guild" === config.kind) {
+        guildExperimentDescriptor = outer1_7.getGuildExperimentDescriptor(id, guildId.guildId);
+      } else {
+        guildExperimentDescriptor = outer1_7.getUserExperimentDescriptor(id);
+      }
+      if (null != guildExperimentDescriptor) {
+        trackExposureWithDescriptor(guildId, tmp3, guildExperimentDescriptor);
+      }
     }
   }
-  function trackExposure(location, items) {
-    let tmp = items;
-    if (items === undefined) {
-      const obj = { excluded: false, exposureType: outer1_9.MANUAL };
-      tmp = obj;
-    }
-    const tmp3 = outer1_10(createExperiment.kind, result3.id, location);
-    if (null != tmp3) {
-      trackExposureWithDescriptor(location, tmp, tmp3);
-    }
-  }
-  function trackExposureWithDescriptor(location, items, descriptor) {
-    if (null != descriptor) {
-      let MANUAL = outer1_9.MANUAL;
-      let obj = createExperiment(result3[5]);
-      obj = {};
-      let _location;
-      if (null != location) {
-        _location = location.location;
+  function trackExposureWithDescriptor(location, analyticsLocations, guildExperimentDescriptor) {
+    if (null != guildExperimentDescriptor) {
+      let str;
+      if (location != null) {
+        str = location.location;
       }
-      let str = "unknown";
-      if (null != _location) {
-        str = _location;
+      if (str == null) {
+        str = "unknown";
       }
-      obj.location = str;
-      let analyticsLocations;
-      if (null != items) {
-        analyticsLocations = items.analyticsLocations;
+      const obj = { location: null, analyticsLocations: null, fingerprint: null, excluded: null, exposureType: null };
+      obj[0] = str;
+      analyticsLocations = undefined;
+      if (analyticsLocations != null) {
+        analyticsLocations = analyticsLocations.analyticsLocations;
       }
-      if (null == analyticsLocations) {
+      if (analyticsLocations == null) {
         analyticsLocations = [];
       }
-      obj.analyticsLocations = analyticsLocations;
+      obj[1] = analyticsLocations;
       let fingerprint;
-      if (null != items) {
-        fingerprint = items.fingerprint;
+      if (analyticsLocations != null) {
+        fingerprint = analyticsLocations.fingerprint;
       }
-      if (null == fingerprint) {
-        fingerprint = subscribe.getFingerprint();
+      if (fingerprint == null) {
+        fingerprint = outer1_6.getFingerprint();
       }
-      let tmp4;
-      if (null != fingerprint) {
-        tmp4 = fingerprint;
-      }
-      obj.fingerprint = tmp4;
+      obj[2] = fingerprint;
       let flag;
-      if (null != items) {
-        flag = items.excluded;
+      if (analyticsLocations != null) {
+        flag = analyticsLocations.excluded;
       }
       if (!flag) {
         flag = false;
       }
-      obj.excluded = flag;
+      obj[3] = flag;
       let exposureType;
-      if (null != items) {
-        exposureType = items.exposureType;
+      if (analyticsLocations != null) {
+        exposureType = analyticsLocations.exposureType;
       }
-      if (null != exposureType) {
-        MANUAL = exposureType;
+      if (exposureType == null) {
+        exposureType = outer1_9.MANUAL;
       }
-      obj.exposureType = MANUAL;
-      const result = obj.trackExposureToExperiment(result3.id, descriptor, obj);
+      obj[4] = exposureType;
+      const result = config(result3[5]).trackExposureToExperiment(result3.id, guildExperimentDescriptor, obj);
+      const obj2 = config(result3[5]);
     }
   }
-  function subscribe(arg0, arg1) {
-    let obj = arg2;
-    const createExperiment = arg0;
+  function subscribe(guildId) {
+    const config = guildId;
     let closure_1 = arg1;
+    let obj = arg2;
     if (arg2 === undefined) {
       obj = {};
     }
@@ -138,37 +111,83 @@ export default function createExperiment(createExperiment) {
     let NOT_ELIGIBLE;
     let num;
     function onStoreChange() {
-      const tmp = outer2_10(closure_0.kind, closure_0.id, closure_0);
-      if (null != tmp) {
+      const id = guildId.id;
+      if ("guild" === guildId.kind) {
+        let guildExperimentDescriptor = outer2_7.getGuildExperimentDescriptor(id, tmp2.guildId);
+      } else {
+        guildExperimentDescriptor = outer2_7.getUserExperimentDescriptor(id);
+      }
+      if (null != guildExperimentDescriptor) {
         if (!c2) {
-          let NOT_ELIGIBLE = tmp.bucket;
+          let NOT_ELIGIBLE = guildExperimentDescriptor.bucket;
         }
         let num = -1;
-        if (null != tmp) {
-          num = tmp.revision;
+        if (null != guildExperimentDescriptor) {
+          num = guildExperimentDescriptor.revision;
         }
-        let tmp4 = NOT_ELIGIBLE === NOT_ELIGIBLE;
-        if (tmp4) {
-          tmp4 = num === num;
+        let tmp8 = NOT_ELIGIBLE === NOT_ELIGIBLE;
+        if (tmp8) {
+          tmp8 = num === num;
         }
-        if (!tmp4) {
-          callback(outer2_11(closure_0, NOT_ELIGIBLE, callback, tmp), NOT_ELIGIBLE, num);
+        if (!tmp8) {
+          let aaMode;
+          if (guildExperimentDescriptor != null) {
+            aaMode = guildExperimentDescriptor.aaMode;
+          }
+          if (aaMode) {
+            let defaultConfig = tmp.defaultConfig;
+          } else {
+            const value = obj.get(NOT_ELIGIBLE);
+            defaultConfig = undefined;
+            if (value != null) {
+              defaultConfig = value.config;
+            }
+            if (defaultConfig == null) {
+              defaultConfig = tmp.defaultConfig;
+            }
+          }
+          closure_1(defaultConfig, NOT_ELIGIBLE, num);
+          obj = closure_1;
+          const tmp10 = closure_1;
         }
       }
       NOT_ELIGIBLE = outer2_8.NOT_ELIGIBLE;
     }
     c2 = tmp;
-    const tmp2 = outer1_10(createExperiment.kind, createExperiment.id, arg0);
-    if (null != tmp2) {
+    let id = config.id;
+    if ("guild" === config.kind) {
+      let guildExperimentDescriptor = outer1_7.getGuildExperimentDescriptor(id, guildId.guildId);
+      let obj2 = outer1_7;
+    } else {
+      obj2 = outer1_7;
+      guildExperimentDescriptor = outer1_7.getUserExperimentDescriptor(id);
+    }
+    if (null != guildExperimentDescriptor) {
       if (!tmp) {
-        NOT_ELIGIBLE = tmp2.bucket;
+        NOT_ELIGIBLE = guildExperimentDescriptor.bucket;
       }
       num = -1;
-      if (null != tmp2) {
-        num = tmp2.revision;
+      if (null != guildExperimentDescriptor) {
+        num = guildExperimentDescriptor.revision;
       }
-      arg1(outer1_11(createExperiment, NOT_ELIGIBLE, closure_1, tmp2), NOT_ELIGIBLE, num);
-      let result = outer1_7.addReactChangeListener(onStoreChange);
+      let aaMode;
+      if (guildExperimentDescriptor != null) {
+        aaMode = guildExperimentDescriptor.aaMode;
+      }
+      if (aaMode) {
+        let defaultConfig = tmp2.defaultConfig;
+      } else {
+        let value = closure_1.get(NOT_ELIGIBLE);
+        defaultConfig = undefined;
+        if (value != null) {
+          defaultConfig = value.config;
+        }
+        if (defaultConfig == null) {
+          defaultConfig = tmp2.defaultConfig;
+        }
+      }
+      arg1(defaultConfig, NOT_ELIGIBLE, num);
+      let result = obj2.addReactChangeListener(onStoreChange);
       return () => {
         const result = outer2_7.removeReactChangeListener(onStoreChange);
       };
@@ -176,106 +195,129 @@ export default function createExperiment(createExperiment) {
     NOT_ELIGIBLE = outer1_8.NOT_ELIGIBLE;
   }
   let obj = _require(result3[6]);
-  let result = obj.validateOneExperiment(createExperiment.id, createExperiment.label, createExperiment.commonTriggerPoint);
+  let result = obj.validateOneExperiment(config.id, config.label, config.commonTriggerPoint);
   const map = new Map();
-  obj = { description: "Not Eligible", config: createExperiment.defaultConfig };
+  obj = { description: "Not Eligible", config: config.defaultConfig };
   const result1 = map.set(constants.NOT_ELIGIBLE, obj);
-  obj = { description: "Control Bucket", config: createExperiment.defaultConfig };
+  obj = { description: "Control Bucket", config: config.defaultConfig };
   const result2 = map.set(constants.CONTROL, obj);
-  const treatments = createExperiment.treatments;
+  const treatments = config.treatments;
   const item = treatments.forEach((config) => {
     const result = map.set(config.id, { description: "Treatment " + config.id + ": " + config.label, config: config.config });
   });
-  const obj1 = { id: createExperiment.id, title: createExperiment.label, commonTriggerPoint: createExperiment.commonTriggerPoint };
+  const obj1 = { id: config.id, title: config.label, commonTriggerPoint: config.commonTriggerPoint, description: null, buckets: null };
   let items = [...map.values()];
-  obj1.description = items.map((description) => description.description);
-  obj1.buckets = [...map.keys()];
-  if ("guild" === createExperiment.kind) {
-    result3 = _require(result3[5]).registerGuildExperiment(obj1);
-    const obj7 = _require(result3[5]);
+  obj1[3] = items.map((description) => description.description);
+  obj1[4] = [...map.keys()];
+  if ("guild" === config.kind) {
+    let tmpResult = tmp(tmp2[5]);
+    result3 = tmpResult.registerGuildExperiment(obj1);
   } else {
-    result3 = _require(result3[5]).registerUserExperiment(obj1);
-    const obj6 = _require(result3[5]);
+    tmpResult = tmp(tmp2[5]);
+    result3 = tmpResult.registerUserExperiment(obj1);
   }
   return {
-    useExperiment(arg0) {
+    useExperiment(guildId) {
+      let tmp11;
+      let tmp12;
       let tmp13;
-      let tmp14;
-      let tmp15;
-      let tmp = arg1;
+      let obj = arg1;
       if (arg1 === undefined) {
-        const obj = { autoTrackExposure: true };
-        tmp = obj;
+        obj = { autoTrackExposure: true };
       }
-      let createExperiment;
+      let flag;
       let c1;
-      let c2;
+      let guildExperimentDescriptor;
       let c3;
-      let c4;
+      let flag2;
       let closure_5;
       let c6;
-      const disable = tmp.disable;
-      createExperiment = tmp2;
-      c1 = tmp3;
-      const tmp4 = outer1_10(createExperiment.kind, createExperiment.id, arg0);
-      c2 = tmp4;
+      flag = obj.disable;
+      if (flag == null) {
+        flag = false;
+      }
+      c1 = tmp;
+      const id = flag.id;
+      if ("guild" === flag.kind) {
+        guildExperimentDescriptor = outer1_7.getGuildExperimentDescriptor(id, guildId.guildId);
+      } else {
+        guildExperimentDescriptor = outer1_7.getUserExperimentDescriptor(id);
+      }
       let tmp8Result;
-      if (null != tmp.trackExposureOptions) {
-        let trackExposureOptions = tmp.trackExposureOptions;
-        if (null == trackExposureOptions) {
+      if (null != obj.trackExposureOptions) {
+        let trackExposureOptions = obj.trackExposureOptions;
+        if (trackExposureOptions == null) {
           trackExposureOptions = {};
         }
         tmp8Result = map(result3[7])(trackExposureOptions);
         const tmp8 = map(result3[7]);
       }
       c3 = tmp8Result;
-      let prop;
-      if (null != tmp4) {
-        prop = tmp4.triggerDebuggingEnabled;
+      flag2 = undefined;
+      if (guildExperimentDescriptor != null) {
+        flag2 = guildExperimentDescriptor.triggerDebuggingEnabled;
       }
-      c4 = tmp10;
-      const tmp11 = trackAutoExposure(trackExposure(() => {
-        if (null != _undefined2) {
-          if (!c0) {
-            let NOT_ELIGIBLE = _undefined2.bucket;
+      if (flag2 == null) {
+        flag2 = false;
+      }
+      const tmp9 = trackAutoExposure(trackExposureWithDescriptor(() => {
+        if (null != guildExperimentDescriptor) {
+          if (!flag) {
+            let NOT_ELIGIBLE = tmp.bucket;
           }
-          const items = [outer2_11(c0, NOT_ELIGIBLE, c1, _undefined2), NOT_ELIGIBLE, ];
+          let aaMode;
+          if (tmp != null) {
+            aaMode = tmp.aaMode;
+          }
+          if (aaMode) {
+            let defaultConfig = tmp3.defaultConfig;
+          } else {
+            const value = c1.get(NOT_ELIGIBLE);
+            defaultConfig = undefined;
+            if (value != null) {
+              defaultConfig = value.config;
+            }
+            if (defaultConfig == null) {
+              defaultConfig = tmp3.defaultConfig;
+            }
+          }
+          const items = [defaultConfig, NOT_ELIGIBLE, ];
           let num = -1;
-          if (null != _undefined2) {
-            num = _undefined2.revision;
+          if (null != tmp) {
+            num = tmp.revision;
           }
           items[2] = num;
           return items;
         }
         NOT_ELIGIBLE = outer2_8.NOT_ELIGIBLE;
       }), 2);
-      closure_5 = tmp11[1];
-      [tmp13, tmp14, tmp15] = trackAutoExposure(tmp11[0], 3);
-      const tmp16 = map(result3[7])(arg0);
-      c6 = tmp16;
-      let items = [null != disable && disable, false !== tmp.autoTrackExposure, tmp16, tmp8Result, tmp14, tmp15, null != prop && prop];
-      trackExposureWithDescriptor(() => {
-        let tmp = _undefined;
-        if (!_undefined) {
+      closure_5 = tmp9[1];
+      [tmp11, tmp12, tmp13] = trackAutoExposure(tmp9[0], 3);
+      const tmp14 = map(result3[7])(guildId);
+      c6 = tmp14;
+      let items = [flag, false !== obj.autoTrackExposure, tmp14, tmp8Result, tmp12, tmp13, flag2];
+      subscribe(() => {
+        let tmp = flag;
+        if (!flag) {
           let tmp3 = !c1;
           if (!c1) {
-            tmp3 = !c4;
+            tmp3 = !flag2;
           }
           tmp = tmp3;
         }
         if (!tmp) {
-          tmp = null != _undefined.commonTriggerPoint;
+          tmp = null != flag.commonTriggerPoint;
         }
         if (!tmp) {
-          _undefined3(c6, _undefined3, false === c1);
+          _undefined(c6, _undefined, false === c1);
         }
       }, items);
-      const items1 = [null != disable && disable, tmp16];
-      trackExposureWithDescriptor(() => _undefined4(_undefined4, (arg0, arg1, arg2) => {
+      const items1 = [flag, tmp14];
+      subscribe(() => callback(c6, (arg0, arg1, arg2) => {
         let closure_0 = arg0;
         let closure_1 = arg1;
         let closure_2 = arg2;
-        outer1_5((arg0) => {
+        callback((arg0) => {
           let tmp = arg0;
           if (arg0[0] === closure_0) {
             return tmp;
@@ -283,34 +325,95 @@ export default function createExperiment(createExperiment) {
           const items = [closure_0, closure_1, closure_2];
           tmp = items;
         });
-      }, { disable: c0 }), items1);
-      return tmp13;
+      }, { disable: flag }), items1);
+      return tmp11;
     },
     subscribe,
-    trackExposure,
-    getCurrentConfig(location, arg1) {
-      let tmp = arg1;
-      if (arg1 === undefined) {
-        const obj = { autoTrackExposure: true };
+    trackExposure(guildId, analyticsLocations) {
+      let tmp = analyticsLocations;
+      if (analyticsLocations === undefined) {
+        const obj = { excluded: false, exposureType: null };
+        obj[1] = outer1_9.MANUAL;
         tmp = obj;
       }
-      const tmp2 = outer1_10(createExperiment.kind, createExperiment.id, location);
-      if (null != tmp2) {
-        if (!tmp.disable) {
-          if (false !== tmp.autoTrackExposure) {
-            if (null == createExperiment.commonTriggerPoint) {
-              trackAutoExposure(location, tmp.trackExposureOptions, false === tmp.autoTrackExposure, tmp2);
+      const id = result3.id;
+      if ("guild" === config.kind) {
+        let guildExperimentDescriptor = outer1_7.getGuildExperimentDescriptor(id, guildId.guildId);
+      } else {
+        guildExperimentDescriptor = outer1_7.getUserExperimentDescriptor(id);
+      }
+      if (null != guildExperimentDescriptor) {
+        trackExposureWithDescriptor(guildId, tmp, guildExperimentDescriptor);
+      }
+    },
+    getCurrentConfig(guildId) {
+      let obj = arg1;
+      if (arg1 === undefined) {
+        obj = { autoTrackExposure: true };
+      }
+      const id = config.id;
+      if ("guild" === config.kind) {
+        let guildExperimentDescriptor = outer1_7.getGuildExperimentDescriptor(id, guildId.guildId);
+      } else {
+        guildExperimentDescriptor = outer1_7.getUserExperimentDescriptor(id);
+      }
+      if (null != guildExperimentDescriptor) {
+        if (!obj.disable) {
+          if (false !== obj.autoTrackExposure) {
+            if (null == tmp.commonTriggerPoint) {
+              trackAutoExposure(guildId, obj.trackExposureOptions, false === obj.autoTrackExposure, guildExperimentDescriptor);
             }
           }
-          return outer1_11(createExperiment, tmp2.bucket, map, tmp2);
+          let aaMode;
+          if (guildExperimentDescriptor != null) {
+            aaMode = guildExperimentDescriptor.aaMode;
+          }
+          if (aaMode) {
+            let defaultConfig = tmp.defaultConfig;
+          } else {
+            let value = map.get(guildExperimentDescriptor.bucket);
+            defaultConfig = undefined;
+            if (value != null) {
+              defaultConfig = value.config;
+            }
+            if (defaultConfig == null) {
+              defaultConfig = tmp.defaultConfig;
+            }
+          }
+          return defaultConfig;
         }
       }
-      return outer1_11(createExperiment, outer1_8.NOT_ELIGIBLE, map, tmp2);
+      let aaMode1;
+      if (guildExperimentDescriptor != null) {
+        aaMode1 = guildExperimentDescriptor.aaMode;
+      }
+      if (aaMode1) {
+        let defaultConfig1 = tmp.defaultConfig;
+      } else {
+        value = map.get(outer1_8.NOT_ELIGIBLE);
+        defaultConfig1 = undefined;
+        if (value != null) {
+          defaultConfig1 = value.config;
+        }
+        if (defaultConfig1 == null) {
+          defaultConfig1 = tmp.defaultConfig;
+        }
+      }
+      return defaultConfig1;
     },
-    definition: createExperiment,
-    isAAMode(arg0) {
-      const tmp = outer1_10(createExperiment.kind, createExperiment.id, arg0);
-      return !(null == tmp || !tmp.aaMode);
+    definition: config,
+    isAAMode(guildId) {
+      const id = config.id;
+      if ("guild" === config.kind) {
+        let guildExperimentDescriptor = outer1_7.getGuildExperimentDescriptor(id, guildId.guildId);
+      } else {
+        guildExperimentDescriptor = outer1_7.getUserExperimentDescriptor(id);
+      }
+      let aaMode;
+      if (guildExperimentDescriptor != null) {
+        aaMode = guildExperimentDescriptor.aaMode;
+      }
+      return aaMode;
     }
   };
 };

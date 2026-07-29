@@ -1,48 +1,49 @@
-// Module ID: 15802
-// Function ID: 121709
+// Module ID: 15837
+// Function ID: 15838
 // Name: useScreenNameSharedValue
-// Dependencies: [31, 4017, 4026, 2]
+// Dependencies: [19, 4041, 4050, 2]
 // Exports: default
 
-// Module 15802 (useScreenNameSharedValue)
-import result from "result";
+// Module 15837 (useScreenNameSharedValue)
+import noop from "noop";
 
 const require = arg1;
-let result = require("module_4026").fileFinishedImporting("modules/panels/morphable/native/useScreenNameSharedValue.tsx");
+const unknown = "unknown";
+let result = require("module_4050").fileFinishedImporting("modules/panels/morphable/native/useScreenNameSharedValue.tsx");
 
 export default function useScreenNameSharedValue() {
-  let rootNavigationRef = sharedValue(4017).getRootNavigationRef();
-  let obj = sharedValue(4017);
+  let rootNavigationRef = sharedValue(4041).getRootNavigationRef();
+  let obj = sharedValue(4041);
   let isReadyResult;
-  if (null != rootNavigationRef) {
+  if (rootNavigationRef != null) {
     isReadyResult = rootNavigationRef.isReady();
   }
-  let str = "unknown";
   if (true === isReadyResult) {
     let currentRoute = rootNavigationRef.getCurrentRoute();
     let name;
-    if (null != currentRoute) {
+    if (currentRoute != null) {
       name = currentRoute.name;
     }
-    str = "unknown";
-    if (null != name) {
-      str = name;
+    if (name == null) {
+      name = unknown;
     }
+    let tmp2 = name;
+  } else {
+    tmp2 = unknown;
   }
-  sharedValue = sharedValue(4026).useSharedValue(str);
+  sharedValue = sharedValue(4050).useSharedValue(tmp2);
   const items = [sharedValue];
   const effect = React.useEffect(() => {
     function handleStateChange() {
       if (null != rootNavigationRef) {
-        if (rootNavigationRef.isReady()) {
-          const currentRoute = rootNavigationRef.getCurrentRoute();
-          let name;
-          if (null != currentRoute) {
-            name = currentRoute.name;
+        if (obj.isReady()) {
+          const currentRoute = obj.getCurrentRoute();
+          let str;
+          if (currentRoute != null) {
+            str = currentRoute.name;
           }
-          let str = "unknown";
-          if (null != name) {
-            str = name;
+          if (str == null) {
+            str = "unknown";
           }
           const result = rootNavigationRef.set(str);
         }

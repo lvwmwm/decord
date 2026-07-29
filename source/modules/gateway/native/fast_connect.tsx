@@ -1,170 +1,104 @@
-// Module ID: 25
-// Function ID: 1097
-// Name: prepareIdentify
-// Dependencies: [26, 27, 476, 3, 477, 479, 480, 652, 12706, 5916, 12688, 12675, 12673, 20, 14, 2]
+// Module ID: 15
+// Function ID: 16
+// Name: createFastConnectSocket
+// Dependencies: [16, 17, 499, 3, 500, 502, 503, 675, 12728, 5935, 12710, 12699, 12695, 10, 9, 2]
 // Exports: closeFastConnectSocket, createFastConnectSocket, getLastFastConnectIdentifyUserId, identifyWebSocket
 
-// Module 25 (prepareIdentify)
-import module_26 from "module_26";
+// Module 15 (createFastConnectSocket)
+import module_16 from "module_16";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { VERSION_TO_FORCE_RESYNCING_ALL_DATA as closure_6 } from "HELLO_KEY";
-import importDefaultResult from "timestamp";
 
 let AppState;
-let closure_4;
-function prepareIdentify(json, json, parsed, arg3) {
-  importDefaultResult.info("prepareIdentify: app state: ", AppState.currentState);
-  let obj = require(477) /* set */;
-  if (obj.isAndroid()) {
-    let obj1 = importDefault(479);
-    const analyticsInstallation2 = obj1.getConstants().analyticsInstallation;
-    let tmp5 = null;
-    if (null != analyticsInstallation2) {
-      tmp5 = analyticsInstallation2;
-    }
-    let analyticsInstallation = tmp5;
-  } else {
-    analyticsInstallation = closure_4.DCDFastConnectManager.analyticsInstallation;
-  }
-  obj = { token: parsed };
-  obj = {};
-  const merged = Object.assign(importAll(480).getSuperProperties());
-  obj["client_app_state"] = AppState.currentState;
-  obj["is_fast_connect"] = true;
-  const obj5 = importAll(480);
-  obj["gateway_connect_reasons"] = importAll(652).describeConnectionReasons();
-  if (null != analyticsInstallation) {
-    obj1 = { installation_id: analyticsInstallation };
-    let obj2 = obj1;
-  } else {
-    obj2 = {};
-  }
-  const merged1 = Object.assign(obj2);
-  obj.properties = obj;
-  const obj6 = importAll(652);
-  const obj3 = {};
-  const obj9 = require(12706) /* getClientCapabilities */;
-  if (obj11.isAndroid()) {
-    const useChannelObfuscation2 = importDefault(479).getConstants().useChannelObfuscation;
-    let tmp9 = null != useChannelObfuscation2 && useChannelObfuscation2;
-    const obj12 = importDefault(479);
-    const tmp12 = null != useChannelObfuscation2 && useChannelObfuscation2;
-  } else {
-    const useChannelObfuscation = closure_4.DCDFastConnectManager.useChannelObfuscation;
-    tmp9 = null != useChannelObfuscation && useChannelObfuscation;
-  }
-  obj3.useChannelObfuscation = tmp9;
-  obj.capabilities = obj9.getClientCapabilities(obj3);
-  obj.client_state = { guild_versions: {} };
-  json = JSON.stringify({ op: 2, d: obj });
-  obj11 = require(477) /* set */;
-  if (obj13.isAndroid()) {
-    let str;
-    if (null != json) {
-      str = json.toString();
-    }
-    let tmp25 = null;
-    if (null != str) {
-      tmp25 = str;
-    }
-    const obj15 = importDefault(479);
-    const _parseFloat = parseFloat;
-    parsed = parseFloat(json);
-    let tmp30;
-    if (obj16.isCacheEnabled()) {
-      tmp30 = closure_6;
-    }
-    obj15.prepareIdentify(tmp25, json, parsed, tmp30);
-    obj16 = require(5916) /* isCacheEnabled */;
-  } else {
-    const DCDFastConnectManager = closure_4.DCDFastConnectManager;
-    let tmp17 = null;
-    if (obj14.isCacheEnabled()) {
-      tmp17 = closure_6;
-    }
-    DCDFastConnectManager.prepareIdentify(json, json, json, tmp17);
-    obj14 = require(5916) /* isCacheEnabled */;
-  }
-  return obj.client_state;
-}
+let c4;
 function createFastConnectSocket() {
   if (null != window.WebSocket) {
-    (function newWebSocket() {
-      let obj = outer1_0(outer1_3[4]);
-      if (obj.isAndroid()) {
-        let supportsZstd = outer1_1(outer1_3[10]).getConstants().supportsZstd;
-        const obj2 = outer1_1(outer1_3[10]);
-      } else {
-        supportsZstd = outer1_4.DCDCompressionManager.supportsZstd;
-      }
-      let str = "zlib-stream";
+    let obj = _require(500);
+    if (obj.isAndroid()) {
+      let supportsZstd = obj(12710).getConstants().supportsZstd;
+      const obj2 = obj(12710);
+    } else {
+      supportsZstd = closure_4.DCDCompressionManager.supportsZstd;
+    }
+    let str2 = "zlib-stream";
+    if (supportsZstd) {
+      str2 = "zstd-stream";
+    }
+    const _window = window;
+    let GATEWAY_ENDPOINT = window.GLOBAL_ENV.GATEWAY_ALT_ENDPOINT;
+    if (!obj(12699)()) {
+      const _window2 = window;
+      GATEWAY_ENDPOINT = window.GLOBAL_ENV.GATEWAY_ENDPOINT;
+    }
+    const _window3 = window;
+    const _HermesInternal = HermesInternal;
+    const combined = "" + GATEWAY_ENDPOINT + "/?encoding=json&v=" + window.GLOBAL_ENV.API_VERSION + "&compress=" + str2;
+    obj.log(`[FAST CONNECT] ${tmp10}`);
+    const _Date = Date;
+    _require = Date.now();
+    const tmp12 = obj(12695)(combined);
+    const _parseFloat = parseFloat;
+    const parsed = parseFloat(tmp12._socketId);
+    const _isNaN = isNaN;
+    if (isNaN(parsed)) {
+      obj3.log("[FAST CONNECT] Unable to create socketId from NaN value ", tmp12._socketId);
+    } else {
+      const isAndroidResult = tmp3(500).isAndroid();
       if (supportsZstd) {
-        str = "zstd-stream";
-      }
-      let GATEWAY_ENDPOINT = window.GLOBAL_ENV.GATEWAY_ALT_ENDPOINT;
-      if (!outer1_1(outer1_3[11])()) {
-        const _window = window;
-        GATEWAY_ENDPOINT = window.GLOBAL_ENV.GATEWAY_ENDPOINT;
-      }
-      const combined = "" + GATEWAY_ENDPOINT + "/?encoding=json&v=" + window.GLOBAL_ENV.API_VERSION + "&compress=" + str;
-      outer1_7.log(`[FAST CONNECT] ${tmp5}`);
-      let closure_0 = Date.now();
-      const tmp7 = outer1_1(outer1_3[12])(combined);
-      const parsed = parseFloat(tmp7._socketId);
-      if (isNaN(parsed)) {
-        outer1_7.log("[FAST CONNECT] Unable to create socketId from NaN value ", tmp7._socketId);
-      } else {
-        const isAndroidResult = outer1_0(outer1_3[4]).isAndroid();
-        if (supportsZstd) {
-          if (isAndroidResult) {
-            const result = outer1_1(outer1_3[10]).enableZstdStreamSupport(parsed);
-            const obj5 = outer1_1(outer1_3[10]);
-          } else {
-            const DCDCompressionManager2 = outer1_4.DCDCompressionManager;
-            const result1 = DCDCompressionManager2.enableZstdStreamSupport(parsed, 0);
-          }
-        } else if (isAndroidResult) {
-          const result2 = outer1_1(outer1_3[10]).enableZlibStreamSupport(parsed);
-          const obj4 = outer1_1(outer1_3[10]);
+        if (isAndroidResult) {
+          let tmp7Result = tmp7(12710);
+          const result = tmp7Result.enableZstdStreamSupport(parsed);
         } else {
-          const DCDCompressionManager = outer1_4.DCDCompressionManager;
-          const result3 = DCDCompressionManager.enableZlibStreamSupport(parsed);
+          const DCDCompressionManager2 = closure_4.DCDCompressionManager;
+          const result1 = DCDCompressionManager2.enableZstdStreamSupport(parsed, 0);
         }
-        obj = { open: false, gateway: combined, identify: false, messages: [], clientState: null, userId: null };
-        tmp7.onopen = () => {
-          const obj = outer2_1(outer2_3[13]);
-          obj.mark("\u{1F310}", "Fastconnect socket opened");
-          outer2_7.log("connected and identified in " + Date.now() - closure_0 + "ms didIdentify:" + obj.identify);
-          obj.open = true;
-        };
-        const fn = () => {
-          outer2_1(outer2_3[13]).mark("\u{1F310}", "Fastconnect socket close");
-          window._ws = null;
-        };
-        tmp7.onerror = fn;
-        tmp7.onclose = fn;
-        tmp7.onmessage = (arg0) => {
-          const obj = outer2_1(outer2_3[13]);
-          obj.mark("\u{1F310}", "Fastconnect socket message");
-          const messages = obj.messages;
-          messages.push(arg0);
-        };
-        const _window2 = window;
-        obj = { ws: tmp7 };
-        obj.state = obj;
-        window._ws = obj;
-        const obj3 = outer1_0(outer1_3[4]);
-        outer1_1(outer1_3[13]).mark("\u{1F310}", "Fastconnect socket created");
-        const obj8 = outer1_1(outer1_3[13]);
+      } else if (isAndroidResult) {
+        tmp7Result = tmp7(12710);
+        const result2 = tmp7Result.enableZlibStreamSupport(parsed);
+      } else {
+        const DCDCompressionManager = closure_4.DCDCompressionManager;
+        const result3 = DCDCompressionManager.enableZlibStreamSupport(parsed);
       }
-    })();
+      obj = { open: false, gateway: null, identify: false, messages: null, clientState: null, userId: null };
+      obj[1] = combined;
+      obj[3] = [];
+      tmp12.onopen = () => {
+        obj = obj(outer1_3[13]);
+        obj.mark("\u{1F310}", "Fastconnect socket opened");
+        outer1_7.log("connected and identified in " + Date.now() - closure_0 + "ms didIdentify:" + obj.identify);
+        obj.open = true;
+      };
+      const fn = () => {
+        obj = obj(table[13]);
+        obj.mark("\u{1F310}", "Fastconnect socket close");
+        window._ws = null;
+      };
+      tmp12.onerror = fn;
+      tmp12.onclose = fn;
+      tmp12.onmessage = (arg0) => {
+        obj = obj(outer1_3[13]);
+        obj.mark("\u{1F310}", "Fastconnect socket message");
+        const messages = obj.messages;
+        messages.push(arg0);
+      };
+      const _window4 = window;
+      obj = { ws: null, state: null };
+      obj[0] = tmp12;
+      obj[1] = obj;
+      window._ws = obj;
+      const tmp3Result = tmp3(500);
+      tmp7(10).mark("\u{1F310}", "Fastconnect socket created");
+      const tmp7Result1 = tmp7(10);
+    }
+    obj3 = obj;
+    tmp3 = _require;
   } else {
-    importDefaultResult.log("Skipping fast_connect because `window.WebSocket` does not exist.");
+    obj.log("Skipping fast_connect because `window.WebSocket` does not exist.");
   }
 }
-({ NativeModules: closure_4, AppState } = get_ActivityIndicator);
-importDefaultResult = new importDefaultResult("FAST CONNECT");
-importDefaultResult.info("initial app state (import time)", AppState.currentState);
+({ NativeModules: c4, AppState } = get_ActivityIndicator);
+let obj = new require("timestamp")("FAST CONNECT");
+obj.info("initial app state (import time)", AppState.currentState);
 let c8 = null;
 const fastConnectSocket = createFastConnectSocket();
 let result = require("HELLO_KEY").fileFinishedImporting("modules/gateway/native/fast_connect.tsx");
@@ -184,56 +118,143 @@ export function getLastFastConnectIdentifyUserId() {
 }
 export const identifyWebSocket = function identifyWebSocket() {
   if (null != window._ws) {
-    const beginFastConnect = importDefault(14).beginFastConnect;
+    const beginFastConnect = importDefault(9).beginFastConnect;
     beginFastConnect.measure(() => {
-      const loadFastConnectNativeModule = outer1_1(outer1_3[14]).loadFastConnectNativeModule;
+      let client_state = callback2;
+      let prepareIdentifyResult = table;
+      const loadFastConnectNativeModule = callback2(table[14]).loadFastConnectNativeModule;
       const measureResult = loadFastConnectNativeModule.measure(() => {
+        const obj = callback(table[4]);
         if (obj.isAndroid()) {
-          const token2 = outer2_1(outer2_3[5]).getConstants().token;
-          let tmp4 = null;
-          if (null != token2) {
-            tmp4 = token2;
+          let token = callback2(table[5]).getConstants().token;
+          if (token == null) {
+            token = null;
           }
-          let token = tmp4;
-          const obj2 = outer2_1(outer2_3[5]);
+          const obj2 = callback2(table[5]);
         } else {
-          token = outer2_4.DCDFastConnectManager.token;
+          token = obj.DCDFastConnectManager.token;
         }
         return token;
       });
       if (null != measureResult) {
+        let str = "";
         if ("" !== measureResult) {
+          let parsed = globalThis;
           const _window = window;
           const state = _ws.state;
-          if (obj.isAndroid()) {
-            let userId = outer1_1(outer1_3[5]).getConstants().userId;
-            let obj2 = outer1_1(outer1_3[5]);
+          const _socketId = _ws.ws._socketId;
+          let isCacheEnabledResult = callback;
+          let obj2 = callback(prepareIdentifyResult[4]);
+          if (obj2.isAndroid()) {
+            let objResult = client_state(prepareIdentifyResult[5]);
+            let userId = objResult.getConstants().userId;
           } else {
-            userId = outer1_4.DCDFastConnectManager.userId;
+            userId = closure_4.DCDFastConnectManager.userId;
           }
-          let tmp9 = null;
-          if (null != userId) {
-            tmp9 = userId;
+          let tmp7 = userId;
+          if (userId == null) {
+            tmp7 = null;
           }
-          const outer1_8 = tmp9;
-          let tmp10 = null;
-          if (null != userId) {
-            tmp10 = userId;
+          let closure_8 = tmp7;
+          let tmp8 = userId;
+          if (userId == null) {
+            tmp8 = null;
           }
-          state.userId = tmp10;
-          let tmp12 = null;
-          if (null != userId) {
-            tmp12 = userId;
+          state.userId = tmp8;
+          if (userId == null) {
+            userId = null;
           }
+          logger.info("prepareIdentify: app state: ", currentState.currentState);
+          if (isCacheEnabledResultResult.isAndroid()) {
+            objResult = client_state(prepareIdentifyResult[5]);
+            let prop = objResult.getConstants().analyticsInstallation;
+            if (prop == null) {
+              prop = null;
+            }
+            let analyticsInstallation = prop;
+          } else {
+            analyticsInstallation = closure_4.DCDFastConnectManager.analyticsInstallation;
+          }
+          client_state = { token: null, properties: null, capabilities: null, client_state: null };
+          client_state[0] = measureResult;
+          let obj = {};
+          isCacheEnabledResultResult = isCacheEnabledResult(prepareIdentifyResult[4]);
+          const tmp10 = currentState;
+          const merged = Object.assign(callback3(prepareIdentifyResult[6]).getSuperProperties());
+          obj.client_app_state = tmp10.currentState;
+          obj.is_fast_connect = true;
+          const obj9 = callback3(prepareIdentifyResult[6]);
+          obj.gateway_connect_reasons = callback3(prepareIdentifyResult[7]).describeConnectionReasons();
+          if (null != analyticsInstallation) {
+            const obj1 = { installation_id: null };
+            obj1[0] = analyticsInstallation;
+            obj2 = obj1;
+          } else {
+            obj2 = {};
+          }
+          const merged1 = Object.assign(obj2);
+          client_state[1] = obj;
+          const obj10 = callback3(prepareIdentifyResult[7]);
+          const isCacheEnabledResultResult1 = isCacheEnabledResult(prepareIdentifyResult[8]);
+          if (isCacheEnabledResultResult2.isAndroid()) {
+            let flag3 = client_state(prepareIdentifyResult[5]).getConstants().useChannelObfuscation;
+            if (flag3 == null) {
+              flag3 = false;
+            }
+            let flag2 = flag3;
+            const objResult1 = client_state(prepareIdentifyResult[5]);
+          } else {
+            flag2 = closure_4.DCDFastConnectManager.useChannelObfuscation;
+            if (flag2 == null) {
+              flag2 = false;
+            }
+          }
+          const obj3 = { useChannelObfuscation: null };
+          obj3[0] = flag2;
+          client_state[2] = isCacheEnabledResultResult1.getClientCapabilities(obj3);
+          const obj4 = { guild_versions: null };
+          obj4[0] = {};
+          client_state[3] = obj4;
+          const _JSON = JSON;
+          const obj5 = { op: 2, d: null };
+          obj5[1] = client_state;
+          const json = JSON.stringify(obj5);
+          isCacheEnabledResultResult2 = isCacheEnabledResult(prepareIdentifyResult[4]);
+          if (isCacheEnabledResultResult3.isAndroid()) {
+            str = undefined;
+            if (userId != null) {
+              str = userId.toString();
+            }
+            if (str == null) {
+              str = null;
+            }
+            client_state = client_state(prepareIdentifyResult[5]);
+            parsed = parsed.parseFloat(_socketId);
+            isCacheEnabledResult = isCacheEnabledResult(prepareIdentifyResult[9]).isCacheEnabled();
+            let tmp31;
+            if (isCacheEnabledResult) {
+              tmp31 = closure_6;
+            }
+            prepareIdentifyResult = client_state.prepareIdentify(str, json, parsed, tmp31);
+            const isCacheEnabledResultResult4 = isCacheEnabledResult(prepareIdentifyResult[9]);
+          } else {
+            const DCDFastConnectManager = closure_4.DCDFastConnectManager;
+            let tmp23 = null;
+            if (isCacheEnabledResultResult5.isCacheEnabled()) {
+              tmp23 = closure_6;
+            }
+            DCDFastConnectManager.prepareIdentify(userId, json, _socketId, tmp23);
+            isCacheEnabledResultResult5 = isCacheEnabledResult(prepareIdentifyResult[9]);
+          }
+          client_state = client_state.client_state;
           state.identify = true;
-          state.clientState = outer1_9(_ws.ws._socketId, tmp12, measureResult);
-          obj = outer1_0(outer1_3[4]);
-          const tmp11 = outer1_9;
+          state.clientState = client_state;
+          isCacheEnabledResultResult3 = isCacheEnabledResult(prepareIdentifyResult[4]);
         }
       }
-      outer1_7.log("Skipping fast_connect because we could not find a token to connect with.");
+      logger.log("Skipping fast_connect because we could not find a token to connect with.");
     });
   } else {
-    importDefaultResult.log("Skipping identifyWebSocket because socket is null");
+    obj.log("Skipping identifyWebSocket because socket is null");
   }
 };

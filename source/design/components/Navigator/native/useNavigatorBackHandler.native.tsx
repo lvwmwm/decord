@@ -1,11 +1,11 @@
-// Module ID: 9082
-// Function ID: 71223
+// Module ID: 9106
+// Function ID: 9107
 // Name: useNavigatorBackHandler
-// Dependencies: [31, 1456, 477, 2]
+// Dependencies: [19, 1480, 500, 2]
 // Exports: default
 
-// Module 9082 (useNavigatorBackHandler)
-import result from "result";
+// Module 9106 (useNavigatorBackHandler)
+import noop from "noop";
 
 const require = arg1;
 let closure_3 = {};
@@ -28,32 +28,30 @@ export default function useNavigatorBackHandler() {
     if (arg0 === undefined) {
       flag = false;
     }
-    result.current = flag;
+    noop.current = flag;
     navigation.goBack();
   }, items);
   const effect = React.useEffect(() => navigation.addListener("beforeRemove", (data) => {
     let closure_0 = data;
-    if (outer1_2.current) {
-      if ("POP" === data.data.action.type) {
-        let obj = onBeforeGoBack(navigation[2]);
-        if (obj.isIOS()) {
-          if (null != outer1_0) {
-            obj = { preventable: false };
-            outer1_0(obj);
-          }
-        }
+    if (ref.current) {
+      let isIOSResult = "POP" === data.data.action.type;
+      if (isIOSResult) {
+        let obj = outer1_0(outer1_1[2]);
+        isIOSResult = obj.isIOS();
       }
-      if (null != outer1_0) {
-        obj = {
-          preventable: true,
-          preventDefault() {
-                return data.preventDefault();
-              },
-          goBack() {
-                return outer2_1.goBack();
-              }
-        };
-        outer1_0(obj);
+      if (closure_0 != null) {
+        if (isIOSResult) {
+          obj = { preventable: false };
+        } else {
+          obj = { preventable: true, preventDefault: null, goBack: null };
+          obj[1] = function preventDefault() {
+            return data.preventDefault();
+          };
+          obj[2] = function goBack() {
+            return navigation.goBack();
+          };
+        }
+        tmp4(obj);
       }
     }
   }), items1);

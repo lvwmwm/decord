@@ -1,95 +1,93 @@
-// Module ID: 9763
-// Function ID: 75888
+// Module ID: 9785
+// Function ID: 9786
 // Name: PremiumGiftSuccess
-// Dependencies: [31, 27, 6242, 1345, 33, 4165, 689, 1557, 8780, 44, 9764, 9688, 7932, 566, 1336, 1334, 9765, 9766, 9767, 2]
+// Dependencies: [19, 17, 6262, 1369, 21, 4189, 712, 1581, 8804, 38, 9786, 9710, 7957, 589, 1360, 1358, 9787, 9788, 9789, 2]
 // Exports: default
 
-// Module 9763 (PremiumGiftSuccess)
-import result from "result";
-import { View } from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 9785 (PremiumGiftSuccess)
+import set from "set";
+import { View } from "PremiumGiftDMSuccessBody";
+import createEmptyPromotionsByType from "createEmptyPromotionsByType";
 import { ContentDismissActionType } from "ContentDismissActionType";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_7;
-let closure_8;
-let closure_9;
+let c9;
+let error;
+let metroImportAll;
 let require = arg1;
-({ jsx: closure_7, Fragment: closure_8, jsxs: closure_9 } = jsxProd);
-let closure_10 = _createForOfIteratorHelperLoose.createStyles((arg0) => {
-  let obj = {};
-  obj = { backgroundColor: importDefault(689).colors.BACKGROUND_BASE_LOW, paddingHorizontal: importDefault(689).space.PX_16, flex: 1, alignContent: "center", justifyContent: "center", flexGrow: 1 };
-  obj.bodyContainer = obj;
-  obj = { backgroundColor: importDefault(689).colors.BACKGROUND_BASE_LOW, paddingTop: importDefault(689).space.PX_16, paddingBottom: arg0 + importDefault(689).space.PX_16, paddingHorizontal: importDefault(689).space.PX_16, gap: importDefault(689).space.PX_8 };
-  const merged = Object.assign(importDefault(689).shadows.SHADOW_TOP_LOW);
-  obj.actionContainer = obj;
+({ jsx: error, Fragment: metroImportAll, jsxs: c9 } = jsxProd);
+let closure_10 = createCacheKey.createStyles((arg0) => {
+  let obj = { bodyContainer: null, actionContainer: null };
+  obj = { backgroundColor: importDefault(712).colors.BACKGROUND_BASE_LOW, paddingHorizontal: importDefault(712).space.PX_16, flex: 1, alignContent: "center", justifyContent: "center", flexGrow: 1 };
+  obj[0] = obj;
+  obj = { backgroundColor: importDefault(712).colors.BACKGROUND_BASE_LOW, paddingTop: importDefault(712).space.PX_16, paddingBottom: arg0 + importDefault(712).space.PX_16, paddingHorizontal: importDefault(712).space.PX_16, gap: importDefault(712).space.PX_8 };
+  const merged = Object.assign(importDefault(712).shadows.SHADOW_TOP_LOW);
+  obj[1] = obj;
   return obj;
 });
-let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/premium/native/gifting/PremiumGiftSuccess.tsx");
+let result = require("createEmptyPromotionsByType").fileFinishedImporting("modules/premium/native/gifting/PremiumGiftSuccess.tsx");
 
 export default function PremiumGiftSuccess() {
   let giftCodeRecord;
   let recipientUser;
-  let tmp = callback3(importDefault(stateFromStores[7])().bottom);
+  let selectedGiftingPromotionReward;
+  const tmp3 = callback3(importDefault(stateFromStores[7])().bottom);
   let obj = require(stateFromStores[8]);
   const nativeGiftContext = obj.useNativeGiftContext();
-  ({ recipientUser, giftCodeRecord } = nativeGiftContext);
+  ({ recipientUser, giftCodeRecord, selectedGiftingPromotionReward } = nativeGiftContext);
   importDefault(stateFromStores[9])(null != giftCodeRecord, "Gift code record cannot be null on success screen");
-  const tmp4 = importDefault(stateFromStores[10])();
-  require = tmp4;
-  const tmp5 = importDefault(stateFromStores[11])();
-  importDefault = tmp5;
+  const tmp7 = importDefault(stateFromStores[10])();
+  require = tmp7;
+  const tmp8 = importDefault(stateFromStores[11])();
+  importDefault = tmp8;
   let obj1 = require(stateFromStores[12]);
-  const getOrFetchPurchase = obj1.useGetOrFetchPurchase(nativeGiftContext.selectedGiftingPromotionReward, false);
+  const getOrFetchPurchase = obj1.useGetOrFetchPurchase(selectedGiftingPromotionReward, false);
   let obj2 = require(stateFromStores[13]);
-  const items = [_isNativeReflectConstruct];
+  const items = [createEmptyPromotionsByType];
   stateFromStores = obj2.useStateFromStores(items, () => {
-    const giftPromotion = outer1_5.getGiftPromotion();
+    giftPromotion = giftPromotion.getGiftPromotion();
     let id;
-    if (null != giftPromotion) {
+    if (giftPromotion != null) {
       id = giftPromotion.id;
     }
     return id;
   });
-  const items1 = [tmp5, tmp4, stateFromStores];
+  const items1 = [tmp8, tmp7, stateFromStores];
   const effect = React.useEffect(() => {
-    let tmp = null != tmp4;
-    if (tmp) {
-      tmp = null != tmp4.reminderNotice;
-    }
-    if (tmp) {
-      tmp = closure_1;
-    }
+    let tmp = null != tmp7 && null != tmp7.reminderNotice && closure_1;
     if (tmp) {
       tmp = null != stateFromStores;
     }
     if (tmp) {
-      let obj = tmp4(stateFromStores[14]);
-      obj = { dismissAction: outer1_6.INDIRECT_ACTION };
-      const result = obj.markSnowflakeBoundDismissibleContentAsDismissed(tmp4(stateFromStores[15]).DismissibleContent.GIFTING_PROMOTION_REMINDER, stateFromStores, obj);
+      let obj = tmp7(stateFromStores[14]);
+      obj = { dismissAction: null };
+      obj[0] = outer1_6.INDIRECT_ACTION;
+      const result = obj.markSnowflakeBoundDismissibleContentAsDismissed(tmp7(stateFromStores[15]).DismissibleContent.GIFTING_PROMOTION_REMINDER, stateFromStores, obj);
     }
   }, items1);
   if (null == recipientUser) {
-    obj = { giftCodeRecord };
-    let tmp12 = callback(importDefault(stateFromStores[16]), obj);
+    obj = { giftCodeRecord: null };
+    obj[0] = giftCodeRecord;
+    let tmp13 = callback(tmp(tmp2[16]), obj);
+    let tmp12 = callback;
   } else {
-    tmp12 = callback(importDefault(stateFromStores[17]), {});
+    tmp12 = callback;
+    tmp13 = callback(tmp(tmp2[17]), {});
   }
   if (null != getOrFetchPurchase) {
-    obj = { purchase: getOrFetchPurchase };
-    let tmp19 = callback(importDefault(stateFromStores[18]), obj);
+    obj = { purchase: null };
+    obj[0] = getOrFetchPurchase;
+    let tmp12Result = tmp12(tmp(tmp2[18]), obj);
   } else if (null == recipientUser) {
-    obj1 = { giftCodeRecord };
-    tmp19 = callback(require(stateFromStores[16]).PremiumGiftSuccessActions, obj1);
+    obj1 = { giftCodeRecord: null };
+    obj1[0] = giftCodeRecord;
+    tmp12Result = tmp12(tmp4(tmp2[16]).PremiumGiftSuccessActions, obj1);
   } else {
-    tmp19 = callback(require(stateFromStores[17]).PremiumGiftDMSuccessActions, {});
+    tmp12Result = tmp12(tmp4(tmp2[17]).PremiumGiftDMSuccessActions, {});
   }
-  obj2 = {};
-  const obj3 = { style: tmp.bodyContainer, children: tmp12 };
-  const items2 = [callback(View, obj3), ];
-  const obj4 = { style: tmp.actionContainer, children: tmp19 };
-  items2[1] = callback(View, obj4);
-  obj2.children = items2;
+  obj2 = { children: null };
+  const items2 = [tmp12(View, { style: tmp3.bodyContainer, children: tmp13 }), tmp12(View, { style: tmp3.actionContainer, children: tmp12Result })];
+  obj2[0] = items2;
   return callback2(closure_8, obj2);
 };

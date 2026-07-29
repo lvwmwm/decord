@@ -1,26 +1,13 @@
-// Module ID: 7861
-// Function ID: 62532
-// Name: getURL
-// Dependencies: [27, 653, 7862, 7863, 4499, 7864, 7865, 477, 7706, 4352, 7841, 3835, 5859, 5862, 4382, 1212, 2]
+// Module ID: 7884
+// Function ID: 7885
+// Name: transformEmbeds
+// Dependencies: [17, 676, 7885, 7886, 4522, 7887, 7888, 500, 7729, 4377, 7864, 3859, 5877, 5880, 4405, 1236, 2]
 // Exports: default
 
-// Module 7861 (getURL)
+// Module 7884 (transformEmbeds)
 import { processColor } from "get ActivityIndicator";
 import { MessageEmbedTypes } from "ME";
 
-function getURL(arg0) {
-  let proxyURL;
-  let url;
-  ({ proxyURL, url } = arg0);
-  let tmp = url;
-  if (null != proxyURL) {
-    tmp = url;
-    if ("" !== proxyURL) {
-      tmp = proxyURL;
-    }
-  }
-  return tmp;
-}
 let result = require("sanitizeMediaDimension").fileFinishedImporting("modules/messages/native/renderer/transformEmbeds.tsx");
 
 export default function transformEmbeds(arg0) {
@@ -29,112 +16,108 @@ export default function transformEmbeds(arg0) {
   let closure_11;
   let closure_12;
   let closure_13;
+  let closure_5;
   let closure_6;
   let closure_7;
   let closure_8;
   let closure_9;
   let dependencyMap;
   let embeds;
-  let getURL;
   let importDefault;
   let processColor;
   let require;
-  ({ embeds, channelId: require, gifAutoPlay: importDefault, hasSpoilerEmbeds: dependencyMap, ignoreEmbedDescriptionCache: processColor, shouldInlineEmbedMedia: MessageEmbedTypes, colors: getURL, showListsAndHeaders: closure_6, showMaskedLinks: closure_7, themedBackgroundColor: closure_8, enabledContentHarmTypeFlags: closure_9, authorIsBot: closure_10, showContentInventoryEntryFallbackEmbed: closure_11, shouldAgeVerify: closure_12, transformComponents: closure_13 } = arg0);
+  ({ embeds, channelId: require, gifAutoPlay: importDefault, hasSpoilerEmbeds: dependencyMap, ignoreEmbedDescriptionCache: processColor, shouldInlineEmbedMedia: MessageEmbedTypes, colors: closure_5, showListsAndHeaders: closure_6, showMaskedLinks: closure_7, themedBackgroundColor: closure_8, enabledContentHarmTypeFlags: closure_9, authorIsBot: closure_10, showContentInventoryEntryFallbackEmbed: closure_11, shouldAgeVerify: closure_12, transformComponents: closure_13 } = arg0);
   function renderEmbedMedia(image) {
     let height;
     let proxyURL;
-    let url;
     let width;
-    ({ url, proxyURL, width, height } = image);
+    ({ proxyURL, width, height } = image);
     const obj = {};
     const merged = Object.assign(image);
-    obj["width"] = outer1_0(outer1_2[2]).sanitizeMediaDimension(width);
+    obj.width = outer1_0(outer1_2[2]).sanitizeMediaDimension(width);
     const obj2 = outer1_0(outer1_2[2]);
-    obj["height"] = outer1_0(outer1_2[2]).sanitizeMediaDimension(height);
+    obj.height = outer1_0(outer1_2[2]).sanitizeMediaDimension(height);
     let imageSrc = proxyURL;
     if (null != proxyURL) {
-      const obj4 = outer1_1(outer1_2[3]);
+      const obj4 = outer1_1(tmp2[3]);
       imageSrc = obj4.getImageSrc(proxyURL, width, height, !closure_1);
     }
-    obj["proxyURL"] = imageSrc;
+    obj.proxyURL = imageSrc;
     const obj3 = outer1_0(outer1_2[2]);
-    if (null != proxyURL) {
-      url = proxyURL;
+    if (proxyURL == null) {
+      proxyURL = image.url;
     }
-    obj["url"] = outer1_1(outer1_2[3]).getImageSrc(url, width, height, !closure_1);
+    obj.url = outer1_1(outer1_2[3]).getImageSrc(proxyURL, width, height, !closure_1);
     return obj;
   }
   return embeds.flatMap((type) => {
     let height;
     let proxyURL;
+    let proxyURL2;
+    let proxyURL3;
+    let proxyURL4;
     let url;
+    let url2;
+    let url3;
     let width;
     if (type.type !== outer1_4.POST_PREVIEW) {
-      let isMediaScanPendingResult = outer1_4;
-      if (type.type !== outer1_4.GIFT) {
-        isMediaScanPendingResult = outer1_4;
-        if (type.type !== outer1_4.SAFETY_POLICY_NOTICE) {
-          isMediaScanPendingResult = outer1_4;
-          if (type.type !== outer1_4.SAFETY_SYSTEM_NOTIFICATION) {
-            isMediaScanPendingResult = outer1_4;
-            if (type.type !== outer1_4.AGE_VERIFICATION_SYSTEM_NOTIFICATION) {
-              isMediaScanPendingResult = outer1_4;
-              if (type.type === outer1_4.COMPONENTS) {
-                isMediaScanPendingResult = null;
+      if (type.type !== tmp.GIFT) {
+        if (type.type !== tmp.SAFETY_POLICY_NOTICE) {
+          if (type.type !== tmp.SAFETY_SYSTEM_NOTIFICATION) {
+            if (type.type !== tmp.AGE_VERIFICATION_SYSTEM_NOTIFICATION) {
+              if (type.type === tmp.COMPONENTS) {
                 return [];
               }
               let obj = outer1_0(outer1_2[4]);
               if (obj.isServerShopArticleEmbed(type)) {
                 return [];
-              } else if (type.type === outer1_4.VOICE_CHANNEL) {
+              } else if (type.type === tmp.VOICE_CHANNEL) {
                 return [];
               } else {
-                isMediaScanPendingResult = outer1_0;
-                isMediaScanPendingResult = outer1_2;
-                if (obj31.isContentInventoryFallbackEmbed(type)) {
+                let tmp3Result = tmp3(tmp4[5]);
+                if (tmp3Result.isContentInventoryFallbackEmbed(type)) {
                   if (!closure_11) {
                     return [];
                   }
                 }
-                let obj1 = outer1_0(outer1_2[4]);
-                if (obj1.isSocialLayerStorefrontArticleEmbed(type)) {
-                  let obj2 = outer1_0(outer1_2[6]);
-                  obj = { location: "transformEmbeds" };
-                  if (obj2.getIsEligibleForSocialLayerStorefrontMobilePurchasing(obj)) {
+                tmp3Result = tmp3(tmp4[4]);
+                if (tmp3Result.isSocialLayerStorefrontArticleEmbed(type)) {
+                  if (tmp3Result1.getIsEligibleForSocialLayerStorefrontMobilePurchasing({ location: "transformEmbeds" })) {
                     return [];
                   }
+                  tmp3Result1 = tmp3(tmp4[6]);
                 }
-                let tmp12 = null;
+                let tmp8 = null;
                 if (closure_4) {
-                  tmp12 = null;
+                  tmp8 = null;
                   if (null != type.thumbnail) {
                     const thumbnail = type.thumbnail;
-                    ({ url, proxyURL, width, height } = thumbnail);
+                    ({ proxyURL, width, height } = thumbnail);
                     obj = {};
                     let merged = Object.assign(thumbnail);
-                    let obj5 = outer1_0(outer1_2[2]);
-                    obj["width"] = obj5.sanitizeMediaDimension(width);
-                    let obj6 = outer1_0(outer1_2[2]);
-                    obj["height"] = obj6.sanitizeMediaDimension(height);
+                    obj.width = tmp3(tmp4[2]).sanitizeMediaDimension(width);
+                    const tmp3Result2 = tmp3(tmp4[2]);
+                    obj.height = tmp3(tmp4[2]).sanitizeMediaDimension(height);
                     let imageSrc = proxyURL;
                     if (null != proxyURL) {
-                      let obj7 = outer1_1(outer1_2[3]);
-                      imageSrc = obj7.getImageSrc(proxyURL, width, height, !closure_1);
+                      let obj6 = outer1_1(tmp4[3]);
+                      imageSrc = obj6.getImageSrc(proxyURL, width, height, !closure_1);
                     }
-                    obj["proxyURL"] = imageSrc;
-                    let obj8 = outer1_1(outer1_2[3]);
-                    if (null != proxyURL) {
-                      url = proxyURL;
+                    obj.proxyURL = imageSrc;
+                    let obj7 = outer1_1(tmp4[3]);
+                    if (proxyURL == null) {
+                      proxyURL = thumbnail.url;
                     }
-                    obj["url"] = obj8.getImageSrc(url, width, height, !closure_1);
-                    tmp12 = obj;
+                    obj.url = obj7.getImageSrc(proxyURL, width, height, !closure_1);
+                    tmp8 = obj;
+                    const tmp3Result3 = tmp3(tmp4[2]);
                   }
                 }
-                let tmp34 = null;
+                let tmp25 = null;
                 if (closure_4) {
-                  tmp34 = null;
+                  tmp25 = null;
                   if (null != type.image) {
-                    tmp34 = renderEmbedMedia(type.image);
+                    tmp25 = renderEmbedMedia(type.image);
                   }
                 }
                 if (closure_4) {
@@ -142,96 +125,112 @@ export default function transformEmbeds(arg0) {
                     const images = type.images;
                     let mapped = images.map(renderEmbedMedia);
                   }
-                  let tmp43 = tmp12;
-                  if (null != tmp12) {
-                    tmp43 = tmp12;
+                  let tmp31 = tmp8;
+                  if (null != tmp8) {
+                    tmp31 = tmp8;
                     if (null != type.video) {
-                      isMediaScanPendingResult = outer1_4;
-                      let tmp45 = type.type === outer1_4.VIDEO;
-                      if (!tmp45) {
-                        tmp45 = type.type === outer1_4.RICH;
-                      }
-                      if (!tmp45) {
-                        tmp45 = type.type === outer1_4.ARTICLE;
-                      }
-                      if (type.type !== outer1_4.GIFV) {
-                        if (tmp45) {
-                          let tmp64 = tmp49;
-                          if (!tmp63) {
-                            obj1 = {};
-                            const merged1 = Object.assign(tmp49);
-                            obj1["gifvUrlForPortal"] = outer1_5(type.video);
-                            tmp64 = obj1;
+                      if (type.type !== tmp.GIFV) {
+                        if (tmp32) {
+                          let tmp45 = tmp34;
+                          if (!tmp44) {
+                            obj = {};
+                            const merged1 = Object.assign(tmp34);
+                            ({ proxyURL: proxyURL3, url: url2 } = type.video);
+                            let tmp49 = url2;
+                            if (null != proxyURL3) {
+                              tmp49 = url2;
+                              if ("" !== proxyURL3) {
+                                tmp49 = proxyURL3;
+                              }
+                            }
+                            obj.gifvUrlForPortal = tmp49;
+                            tmp45 = obj;
                           }
-                          tmp43 = tmp64;
-                          if (obj15.isWebPlayerVideoUrl(outer1_5(type.video))) {
-                            obj2 = {};
-                            const merged2 = Object.assign(tmp64);
-                            obj2["inlinePlaybackDisabled"] = true;
-                            tmp43 = obj2;
+                          ({ proxyURL: proxyURL4, url: url3 } = type.video);
+                          let tmp50 = url3;
+                          if (null != proxyURL4) {
+                            tmp50 = url3;
+                            if ("" !== proxyURL4) {
+                              tmp50 = proxyURL4;
+                            }
                           }
-                          obj15 = outer1_0(outer1_2[9]);
-                          tmp63 = type.type !== outer1_4.GIFV || closure_1;
+                          tmp31 = tmp45;
+                          if (tmp3Result4.isWebPlayerVideoUrl(tmp50)) {
+                            const obj1 = {};
+                            const merged2 = Object.assign(tmp45);
+                            obj1.inlinePlaybackDisabled = true;
+                            tmp31 = obj1;
+                          }
+                          tmp3Result4 = tmp3(tmp4[9]);
+                          tmp44 = type.type !== tmp.GIFV || closure_1;
                         }
-                        tmp49 = tmp12;
-                        if (tmp45) {
-                          tmp49 = tmp12;
+                        tmp34 = tmp8;
+                        if (tmp32) {
+                          tmp34 = tmp8;
                           if (null == type.video.proxyURL) {
-                            isMediaScanPendingResult = outer1_0;
-                            isMediaScanPendingResult = outer1_2;
                             const provider2 = type.provider;
                             let name;
-                            if (null != provider2) {
+                            if (provider2 != null) {
                               name = provider2.name;
                             }
-                            const effectiveVideoProvider = outer1_0(outer1_2[4]).getEffectiveVideoProvider(name, type.video.url);
-                            let obj10 = outer1_0(outer1_2[8]);
-                            tmp49 = tmp12;
-                            if (obj10.shouldPlayVideoInline(effectiveVideoProvider)) {
-                              const obj3 = {};
-                              const merged3 = Object.assign(tmp12);
-                              obj3["showPlayButton"] = true;
-                              tmp49 = obj3;
+                            const effectiveVideoProvider = tmp3(tmp4[4]).getEffectiveVideoProvider(name, type.video.url);
+                            const tmp3Result5 = tmp3(tmp4[4]);
+                            tmp34 = tmp8;
+                            if (tmp3Result6.shouldPlayVideoInline(effectiveVideoProvider)) {
+                              let obj2 = {};
+                              const merged3 = Object.assign(tmp8);
+                              obj2.showPlayButton = true;
+                              tmp34 = obj2;
                             }
-                            const obj32 = outer1_0(outer1_2[4]);
+                            tmp3Result6 = tmp3(tmp4[8]);
                           }
                         }
                       }
-                      const obj4 = {};
-                      const merged4 = Object.assign(tmp12);
-                      obj4["gifv"] = type.type === outer1_4.GIFV;
-                      obj4["videoUrl"] = outer1_5(type.video);
-                      tmp49 = obj4;
+                      const obj3 = {};
+                      const merged4 = Object.assign(tmp8);
+                      obj3.gifv = type.type === tmp.GIFV;
+                      ({ proxyURL: proxyURL2, url } = type.video);
+                      let tmp43 = url;
+                      if (null != proxyURL2) {
+                        tmp43 = url;
+                        if ("" !== proxyURL2) {
+                          tmp43 = proxyURL2;
+                        }
+                      }
+                      obj3.videoUrl = tmp43;
+                      tmp34 = obj3;
                     }
                   }
                   embedBorderLeftColor = embedBorderLeftColor.embedBorderLeftColor;
-                  let tmp76 = null != type.color;
-                  if (tmp76) {
-                    tmp76 = "" !== type.color;
+                  let tmp55 = null != type.color;
+                  if (tmp55) {
+                    tmp55 = "" !== type.color;
                   }
-                  if (tmp76) {
+                  if (tmp55) {
                     embedBorderLeftColor = outer1_3(type.color);
                   }
                   if (null != type.url) {
                     if ("" !== type.url) {
-                      let parseEmbedTitleMarkup = outer1_0(outer1_2[10]).parseEmbedTitleMarkupWithoutLinks;
+                      let parseEmbedTitleMarkup = tmp3(tmp4[10]).parseEmbedTitleMarkupWithoutLinks;
                     }
-                    if (type.type === outer1_4.RICH) {
+                    if (type.type === tmp.RICH) {
                       if (null != type.rawTitle) {
                         let rawTitle = parseEmbedTitleMarkup(type.rawTitle, closure_0);
                       }
                       type = type.type;
-                      if (outer1_4.IMAGE !== type) {
-                        isMediaScanPendingResult = outer1_4;
-                        if (outer1_4.VIDEO !== type) {
-                          isMediaScanPendingResult = outer1_4;
-                          if (outer1_4.GIFV !== type) {
-                            isMediaScanPendingResult = outer1_4;
-                            if (outer1_4.RICH === type) {
+                      if (tmp.IMAGE !== type) {
+                        if (tmp.VIDEO !== type) {
+                          if (tmp.GIFV !== type) {
+                            if (tmp.RICH === type) {
                               if (null != type.rawDescription) {
-                                obj5 = { description: type.rawDescription, channelId: closure_0, isField: false, ignoreCache: closure_3, showListsAndHeaders: closure_6, showMaskedLinks: closure_7 };
-                                let rawDescription = outer1_0(outer1_2[10]).parseEmbedDescriptionMarkup(obj5);
-                                const obj17 = outer1_0(outer1_2[10]);
+                                const obj4 = { description: null, channelId: null, isField: false, ignoreCache: null, showListsAndHeaders: null, showMaskedLinks: null };
+                                obj4[0] = type.rawDescription;
+                                obj4[1] = closure_0;
+                                obj4[3] = closure_3;
+                                obj4[4] = closure_6;
+                                obj4[5] = closure_7;
+                                let rawDescription = tmp3(tmp4[10]).parseEmbedDescriptionMarkup(obj4);
+                                const tmp3Result7 = tmp3(tmp4[10]);
                               }
                             } else {
                               rawDescription = type.rawDescription;
@@ -240,35 +239,37 @@ export default function transformEmbeds(arg0) {
                         }
                       }
                       let fields = type.fields;
-                      if (null == fields) {
+                      if (fields == null) {
                         fields = [];
                       }
                       const mapped1 = fields.map((rawName) => {
                         let result = null;
                         if (null != rawName.rawName) {
-                          let obj = outer2_0(outer2_2[10]);
-                          result = obj.parseEmbedTitleMarkup(rawName.rawName, outer1_0);
+                          let obj = outer1_0(outer1_2[10]);
+                          result = obj.parseEmbedTitleMarkup(rawName.rawName, closure_0);
                         }
                         let result1 = null;
                         if (null != rawName.rawValue) {
-                          let obj1 = outer2_0(outer2_2[10]);
-                          obj = { description: rawName.rawValue, channelId: outer1_0, isField: true, ignoreCache: outer1_3 };
-                          obj = { "\t": "" };
-                          obj.replaceMap = obj;
-                          obj.showListsAndHeaders = outer1_6;
-                          obj.showMaskedLinks = outer1_7;
-                          result1 = obj1.parseEmbedDescriptionMarkup(obj);
+                          obj = { description: null, channelId: null, isField: true, ignoreCache: null, replaceMap: null, showListsAndHeaders: null, showMaskedLinks: null };
+                          obj[0] = rawName.rawValue;
+                          obj[1] = closure_0;
+                          obj[3] = closure_3;
+                          obj[4] = { "\t": "" };
+                          obj[5] = closure_6;
+                          obj[6] = closure_7;
+                          result1 = outer1_0(outer1_2[10]).parseEmbedDescriptionMarkup(obj);
+                          const obj2 = outer1_0(outer1_2[10]);
                         }
-                        obj1 = {};
+                        obj = {};
                         const merged = Object.assign(rawName);
-                        obj1["name"] = result;
-                        obj1["value"] = result1;
-                        return obj1;
+                        obj.name = result;
+                        obj.value = result1;
+                        return obj;
                       });
                       let calendarFormatResult = null;
                       if (null != type.timestamp) {
-                        calendarFormatResult = outer1_0(outer1_2[11]).calendarFormat(type.timestamp);
-                        const obj19 = outer1_0(outer1_2[11]);
+                        calendarFormatResult = tmp3(tmp4[11]).calendarFormat(type.timestamp);
+                        const tmp3Result8 = tmp3(tmp4[11]);
                       }
                       if (null != type.footer) {
                         const text = type.footer.text;
@@ -277,185 +278,115 @@ export default function transformEmbeds(arg0) {
                           const _HermesInternal = HermesInternal;
                           combined = "" + text + " | " + calendarFormatResult;
                         }
-                        obj6 = {};
+                        const obj5 = {};
                         const merged5 = Object.assign(type.footer);
-                        obj6["content"] = combined;
+                        obj5.content = combined;
                         if (null != type.footer.iconProxyURL) {
                           if ("" !== type.footer.iconProxyURL) {
                             let iconURL = type.footer.iconProxyURL;
                           }
-                          let tmp95 = obj6;
+                          let tmp64 = obj5;
                           if (null != iconURL) {
-                            isMediaScanPendingResult = outer1_1;
-                            isMediaScanPendingResult = outer1_2;
-                            const obj22 = outer1_1(outer1_2[3]);
-                            isMediaScanPendingResult = closure_1;
-                            isMediaScanPendingResult = obj22;
-                            isMediaScanPendingResult = iconURL;
-                            obj6.iconURL = obj22.getImageSrc(iconURL, 16, 16, !closure_1);
-                            tmp95 = obj6;
+                            const obj21 = outer1_1(tmp4[3]);
+                            obj5.iconURL = obj21.getImageSrc(iconURL, 16, 16, !closure_1);
+                            tmp64 = obj5;
                           }
                         }
                         iconURL = type.footer.iconURL;
                       } else if (null != calendarFormatResult) {
-                        obj7 = { content: calendarFormatResult, text: "" };
-                        tmp95 = obj7;
+                        obj6 = { content: null, text: "" };
+                        obj6[0] = calendarFormatResult;
+                        tmp64 = obj6;
                       }
                       if (null == type.author) {
-                        isMediaScanPendingResult = outer1_4;
-                        if (type.type !== outer1_4.COMPONENTS) {
-                          isMediaScanPendingResult = outer1_0;
-                          isMediaScanPendingResult = outer1_2;
-                          obj8 = { type: outer1_0(outer1_2[13]).ObscuredMediaTypes.Embed, media: type };
-                          isMediaScanPendingResult = closure_9;
-                          isMediaScanPendingResult = closure_10;
-                          isMediaScanPendingResult = !closure_10;
-                          const mediaObscuredReasonFromBitmask = outer1_0(outer1_2[12]).getMediaObscuredReasonFromBitmask(obj8, closure_9);
-                          if (isMediaScanPendingResult) {
-                            isMediaScanPendingResult = outer1_0;
-                            isMediaScanPendingResult = outer1_2;
-                            let obj9 = { type: outer1_0(outer1_2[13]).ObscuredMediaTypes.Embed, media: type };
-                            isMediaScanPendingResult = closure_9;
-                            isMediaScanPendingResult = outer1_0(outer1_2[12]).isMediaScanPending(obj9, closure_9);
-                            const obj27 = outer1_0(outer1_2[12]);
+                        if (type.type !== tmp.COMPONENTS) {
+                          obj7 = { type: null, media: null };
+                          obj7[0] = tmp3(tmp4[13]).ObscuredMediaTypes.Embed;
+                          obj7[1] = type;
+                          let isMediaScanPendingResult = !closure_10;
+                          const mediaObscuredReasonFromBitmask = tmp3(tmp4[12]).getMediaObscuredReasonFromBitmask(obj7, closure_9);
+                          if (!closure_10) {
+                            const obj8 = { type: null, media: null };
+                            obj8[0] = tmp3(tmp4[13]).ObscuredMediaTypes.Embed;
+                            obj8[1] = type;
+                            isMediaScanPendingResult = tmp3(tmp4[12]).isMediaScanPending(obj8, closure_9);
+                            const tmp3Result10 = tmp3(tmp4[12]);
                           }
-                          isMediaScanPendingResult = mediaObscuredReasonFromBitmask.length > 0;
-                          if (isMediaScanPendingResult) {
-                            isMediaScanPendingResult = outer1_0;
-                            isMediaScanPendingResult = outer1_2;
-                            isMediaScanPendingResult = outer1_0(outer1_2[14]).isVerifiedTeen();
-                            const obj29 = outer1_0(outer1_2[14]);
+                          let isVerifiedTeenResult = tmp88;
+                          if (mediaObscuredReasonFromBitmask.length > 0) {
+                            isVerifiedTeenResult = tmp3(tmp4[14]).isVerifiedTeen();
+                            const tmp3Result11 = tmp3(tmp4[14]);
                           }
-                          obj10 = {};
-                          const id = type.id;
-                          let str20 = "";
-                          let str21 = "";
-                          if (null != id) {
-                            str21 = id;
+                          let str10 = type.id;
+                          if (str10 == null) {
+                            str10 = "";
                           }
-                          obj10.id = str21;
+                          const obj9 = { id: null, type: null, spoiler: null, obscure: null, obscureAwaitingScan: null, verifyAge: null, obscureHideControls: null, obscureIsOpaque: null, provider: null, author: null, rawTitle: null, title: null, url: null, rawDescription: null, description: null, thumbnail: null, image: null, images: null, fields: null, components: null, footer: null, video: null, borderLeftColor: null, providerColor: null, headerTextColor: null, bodyTextColor: null, referenceId: null, backgroundColor: null };
+                          obj9[0] = str10;
                           const type2 = type.type;
-                          isMediaScanPendingResult = undefined;
-                          if (null != type2) {
-                            isMediaScanPendingResult = type2;
-                          }
-                          obj10.type = isMediaScanPendingResult;
-                          isMediaScanPendingResult = closure_2;
-                          isMediaScanPendingResult = str20;
+                          obj9[1] = type2;
+                          let str11 = "";
+                          let str12 = "";
                           if (closure_2) {
-                            isMediaScanPendingResult = outer1_0;
-                            isMediaScanPendingResult = outer1_2;
-                            const intl = outer1_0(outer1_2[15]).intl;
-                            isMediaScanPendingResult = intl.string(outer1_0(outer1_2[15]).t["F+x38C"]).toUpperCase();
-                            const str22 = intl.string(outer1_0(outer1_2[15]).t["F+x38C"]);
+                            const intl = tmp3(tmp4[15]).intl;
+                            str12 = intl.string(tmp3(tmp4[15]).t["F+x38C"]).toUpperCase();
+                            const str13 = intl.string(tmp3(tmp4[15]).t["F+x38C"]);
                           }
-                          obj10.spoiler = isMediaScanPendingResult;
-                          isMediaScanPendingResult = str20;
+                          obj9[2] = str12;
+                          let stringResult = str11;
+                          if (mediaObscuredReasonFromBitmask.length > 0) {
+                            const intl2 = tmp3(tmp4[15]).intl;
+                            stringResult = intl2.string(tmp3(tmp4[15]).t.SpxcUR);
+                          }
+                          obj9[3] = stringResult;
                           if (isMediaScanPendingResult) {
-                            isMediaScanPendingResult = outer1_0;
-                            isMediaScanPendingResult = outer1_2;
-                            const intl2 = outer1_0(outer1_2[15]).intl;
-                            isMediaScanPendingResult = intl2.string(outer1_0(outer1_2[15]).t.SpxcUR);
+                            const intl3 = tmp3(tmp4[15]).intl;
+                            str11 = intl3.string(tmp3(tmp4[15]).t.MRdR7z);
                           }
-                          obj10.obscure = isMediaScanPendingResult;
-                          if (isMediaScanPendingResult) {
-                            isMediaScanPendingResult = outer1_0;
-                            isMediaScanPendingResult = outer1_2;
-                            const intl3 = outer1_0(outer1_2[15]).intl;
-                            str20 = intl3.string(outer1_0(outer1_2[15]).t.MRdR7z);
+                          obj9[4] = str11;
+                          let tmp92 = tmp88;
+                          if (mediaObscuredReasonFromBitmask.length > 0) {
+                            tmp92 = closure_12;
                           }
-                          obj10.obscureAwaitingScan = str20;
-                          if (isMediaScanPendingResult) {
-                            isMediaScanPendingResult = closure_12;
-                          }
-                          obj10.verifyAge = isMediaScanPendingResult;
-                          obj10.obscureHideControls = isMediaScanPendingResult;
-                          obj10.obscureIsOpaque = isMediaScanPendingResult;
+                          obj9[5] = tmp92;
+                          obj9[6] = isVerifiedTeenResult;
+                          obj9[7] = mediaObscuredReasonFromBitmask.length > 0;
                           const provider = type.provider;
-                          isMediaScanPendingResult = undefined;
-                          if (null != provider) {
-                            isMediaScanPendingResult = provider;
-                          }
-                          obj10.provider = isMediaScanPendingResult;
-                          obj10.author = undefined;
-                          obj10.rawTitle = type.rawTitle;
-                          isMediaScanPendingResult = undefined;
-                          if (null != rawTitle) {
-                            isMediaScanPendingResult = rawTitle;
-                          }
-                          obj10.title = isMediaScanPendingResult;
-                          const url2 = type.url;
-                          isMediaScanPendingResult = undefined;
-                          if (null != url2) {
-                            isMediaScanPendingResult = url2;
-                          }
-                          obj10.url = isMediaScanPendingResult;
-                          obj10.rawDescription = type.rawDescription;
-                          isMediaScanPendingResult = undefined;
-                          if (null != rawDescription) {
-                            isMediaScanPendingResult = rawDescription;
-                          }
-                          obj10.description = isMediaScanPendingResult;
-                          isMediaScanPendingResult = undefined;
-                          if (null != tmp43) {
-                            isMediaScanPendingResult = tmp43;
-                          }
-                          obj10.thumbnail = isMediaScanPendingResult;
-                          isMediaScanPendingResult = undefined;
-                          if (null != tmp34) {
-                            isMediaScanPendingResult = tmp34;
-                          }
-                          obj10.image = isMediaScanPendingResult;
-                          isMediaScanPendingResult = undefined;
-                          if (null != mapped) {
-                            isMediaScanPendingResult = mapped;
-                          }
-                          obj10.images = isMediaScanPendingResult;
-                          isMediaScanPendingResult = undefined;
-                          if (null != mapped1) {
-                            isMediaScanPendingResult = mapped1;
-                          }
-                          obj10.fields = isMediaScanPendingResult;
-                          isMediaScanPendingResult = undefined;
-                          obj10.components = isMediaScanPendingResult;
-                          obj10.footer = tmp95;
+                          obj9[8] = provider;
+                          obj9[9] = undefined;
+                          obj9[10] = type.rawTitle;
+                          obj9[11] = rawTitle;
+                          const url4 = type.url;
+                          obj9[12] = url4;
+                          obj9[13] = type.rawDescription;
+                          obj9[14] = rawDescription;
+                          obj9[15] = tmp31;
+                          obj9[16] = tmp25;
+                          obj9[17] = mapped;
+                          obj9[18] = mapped1;
+                          obj9[19] = tmp80;
+                          obj9[20] = tmp64;
                           const video = type.video;
-                          isMediaScanPendingResult = undefined;
-                          if (null != video) {
-                            isMediaScanPendingResult = video;
-                          }
-                          obj10.video = isMediaScanPendingResult;
-                          obj10.borderLeftColor = embedBorderLeftColor;
-                          isMediaScanPendingResult = embedBorderLeftColor;
-                          ({ embedProviderColor: obj30.providerColor, embedHeaderTextColor: obj30.headerTextColor, embedBodyTextColor: obj30.bodyTextColor } = embedBorderLeftColor);
+                          obj9[21] = video;
+                          obj9[22] = embedBorderLeftColor;
+                          ({ embedProviderColor: obj29[23], embedHeaderTextColor: obj29[24], embedBodyTextColor: obj29[25] } = tmp54);
                           const referenceId = type.referenceId;
-                          isMediaScanPendingResult = undefined;
-                          if (null != referenceId) {
-                            isMediaScanPendingResult = referenceId;
-                          }
-                          obj10.referenceId = isMediaScanPendingResult;
-                          isMediaScanPendingResult = closure_8;
-                          isMediaScanPendingResult = undefined;
-                          if (null != closure_8) {
-                            isMediaScanPendingResult = closure_8;
-                          }
-                          obj10.backgroundColor = isMediaScanPendingResult;
-                          return obj10;
+                          obj9[26] = referenceId;
+                          obj9[27] = closure_8;
+                          return obj9;
                         } else {
-                          isMediaScanPendingResult = closure_2;
                           const components = type.components;
                           if (closure_2) {
-                            isMediaScanPendingResult = components.map((arg0) => {
+                            let mapped2 = components.map((arg0) => {
                               const obj = {};
                               const merged = Object.assign(arg0);
-                              obj["spoiler"] = true;
+                              obj.spoiler = true;
                               return obj;
                             });
                           } else {
-                            isMediaScanPendingResult = components;
+                            mapped2 = components;
                           }
-                          isMediaScanPendingResult = callback;
-                          isMediaScanPendingResult = callback(isMediaScanPendingResult);
+                          callback(mapped2);
                         }
                       } else {
                         if (null != type.author.iconProxyURL) {
@@ -463,47 +394,40 @@ export default function transformEmbeds(arg0) {
                             let iconURL2 = type.author.iconProxyURL;
                           }
                           if (null != iconURL2) {
-                            const obj11 = {};
-                            isMediaScanPendingResult = obj11;
-                            isMediaScanPendingResult = Object.assign(type.author);
-                            isMediaScanPendingResult = outer1_1;
-                            isMediaScanPendingResult = outer1_2;
-                            const obj24 = outer1_1(outer1_2[3]);
-                            isMediaScanPendingResult = closure_1;
-                            isMediaScanPendingResult = obj24;
-                            isMediaScanPendingResult = iconURL2;
-                            obj11["iconURL"] = obj24.getImageSrc(iconURL2, 16, 16, !closure_1);
-                            let author = obj11;
+                            const obj10 = {};
+                            const merged6 = Object.assign(type.author);
+                            const obj23 = outer1_1(tmp4[3]);
+                            obj10.iconURL = obj23.getImageSrc(iconURL2, 16, 16, !closure_1);
+                            let author = obj10;
                           } else {
                             author = type.author;
                           }
-                          isMediaScanPendingResult = author;
                         }
                         iconURL2 = type.author.iconURL;
                       }
                     }
                     rawTitle = type.rawTitle;
                   }
-                  parseEmbedTitleMarkup = outer1_0(outer1_2[10]).parseEmbedTitleMarkup;
+                  parseEmbedTitleMarkup = tmp3(tmp4[10]).parseEmbedTitleMarkup;
+                  tmp54 = embedBorderLeftColor;
                 }
-                let tmp37 = null == tmp34;
-                if (!tmp37) {
-                  obj9 = outer1_0(outer1_2[7]);
-                  tmp37 = !obj9.isIOS();
+                let tmp27 = null == tmp25;
+                if (!tmp27) {
+                  tmp27 = !tmp3(tmp4[7]).isIOS();
+                  const tmp3Result12 = tmp3(tmp4[7]);
                 }
-                let tmp40 = !tmp37;
-                if (!tmp37) {
-                  tmp40 = null == type.thumbnail;
+                let tmp28 = !tmp27;
+                if (!tmp27) {
+                  tmp28 = null == type.thumbnail;
                 }
                 mapped = null;
-                if (tmp40) {
+                if (tmp28) {
                   mapped = null;
-                  if (null != tmp34) {
-                    const items = [tmp34];
+                  if (null != tmp25) {
+                    const items = [tmp25];
                     mapped = items;
                   }
                 }
-                obj31 = outer1_0(outer1_2[5]);
               }
             }
           }

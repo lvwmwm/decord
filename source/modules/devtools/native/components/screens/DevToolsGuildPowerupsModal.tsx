@@ -1,52 +1,51 @@
-// Module ID: 14775
-// Function ID: 112457
-// Dependencies: [31, 33, 9085, 5552, 9094, 10163, 14776, 2]
+// Module ID: 14801
+// Function ID: 14802
+// Dependencies: [19, 21, 9109, 5570, 9118, 10184, 14802, 2]
 
-// Module 14775
+// Module 14801
 import { jsx } from "jsxProd";
 import createNativeStackNavigator from "createNativeStackNavigator";
-import importAllResult from "result";
+import importAllResult from "noop";
 
 const require = arg1;
 createNativeStackNavigator = createNativeStackNavigator.createNativeStackNavigator();
-const memoResult = require("result").memo(function DevToolsGuildPowerupsModal() {
+const memoResult = require("noop").memo(function DevToolsGuildPowerupsModal() {
   let Navigator;
   let Screen;
-  let obj = _require(5552);
+  let obj = _require(5570);
   _require = obj.useAccessibilityNativeStackOptions();
   obj = {
     screenOptions(navigation) {
-      let obj = {
+      const obj = {
         headerTitle(children) {
-          let obj = Object.create(null);
-          obj.children = 0;
-          const merged = Object.assign(children, obj);
-          obj = { title: children.children };
+          const merged = Object.assign(children, Object.create(null));
           const merged1 = Object.assign(merged);
-          return outer2_3(callback(outer2_2[4]).GenericHeaderTitle, obj);
+          return callback2(callback(table[4]).GenericHeaderTitle, { title: children.children });
         },
-        headerLeft: callback(outer1_2[4]).getRenderModalCloseImage(navigation.navigation),
+        headerLeft: null,
         headerTitleAlign: "center"
       };
+      obj[1] = callback(outer1_2[4]).getRenderModalCloseImage(navigation.navigation);
       let merged = Object.assign(callback);
       let merged1 = Object.assign(outer1_1(outer1_2[5])());
       return obj;
-    }
+    },
+    children: null
   };
   obj = {
     name: "DevToolsGuildPowerups",
     options() {
       return { title: "Guild Powerups" };
     },
-    component: importDefault(14776)
+    component: importDefault(14802)
   };
   ({ Navigator, Screen } = createNativeStackNavigator);
-  obj.children = <Screen name="DevToolsGuildPowerups" options={function options() {
+  obj[1] = <Screen name="DevToolsGuildPowerups" options={function options() {
     return { title: "Guild Powerups" };
-  }} component={importDefault(14776)} />;
+  }} component={importDefault(14802)} />;
   return <Navigator name="DevToolsGuildPowerups" options={function options() {
     return { title: "Guild Powerups" };
-  }} component={importDefault(14776)} />;
+  }} component={importDefault(14802)} />;
 });
 const result = require("createNativeStackNavigator").fileFinishedImporting("modules/devtools/native/components/screens/DevToolsGuildPowerupsModal.tsx");
 

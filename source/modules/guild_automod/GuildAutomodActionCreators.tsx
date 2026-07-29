@@ -1,158 +1,638 @@
-// Module ID: 11034
-// Function ID: 85586
+// Module ID: 11058
+// Function ID: 11059
 // Name: _transformClientActionToApiAction
-// Dependencies: [5, 1838, 3793, 653, 11035, 1327, 21, 507, 11028, 4359, 5756, 686, 2]
+// Dependencies: [5, 1862, 3817, 676, 11059, 1351, 11, 530, 11052, 4384, 5774, 709, 2]
 // Exports: clearMentionRaidDetected, createAutomodRule, deleteAutomodRule, executeAlertAction, fetchAutomodRules, removeMentionRaidRestrictionWithFeedback, updateAutomodRule, validateAutomodRule
 
-// Module 11034 (_transformClientActionToApiAction)
+// Module 11058 (_transformClientActionToApiAction)
 import isDiscordFrontendDevelopment from "isDiscordFrontendDevelopment";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import createGuildRecordFromRust from "createGuildRecordFromRust";
+import getUncachedChannelPermissions from "getUncachedChannelPermissions";
 import ME from "ME";
 
 let closure_6;
-let closure_7;
-let closure_8;
+let error;
+let metroImportAll;
 const require = arg1;
 function _transformClientActionToApiAction(type) {
-  const obj = { type: type.type, metadata: require(11035) /* _transformMetadataToCamelCase */._transformMetadataToSnakeCase(type.metadata) };
+  const obj = { type: type.type, metadata: null };
+  obj[1] = require(11059) /* _transformMetadataToCamelCase */._transformMetadataToSnakeCase(type.metadata);
   return obj;
 }
 function _transformClientRuleToApiRule(id) {
-  let obj = require(11035) /* _transformMetadataToCamelCase */;
+  let obj = require(11059) /* _transformMetadataToCamelCase */;
   const result = obj._transformMetadataToSnakeCase(id.triggerMetadata);
   if (null != result) {
-    delete tmp.keywordLists;
+    delete tmp2[tmp];
   }
-  obj = { id: id.id, name: id.name, guild_id: id.guildId, event_type: id.eventType, trigger_type: id.triggerType, trigger_metadata: result };
+  obj = { id: id.id, name: id.name, guild_id: id.guildId, event_type: id.eventType, trigger_type: id.triggerType, trigger_metadata: result, actions: null, enabled: null, creator_id: null, position: null, exempt_channels: null, exempt_roles: null };
   const actions = id.actions;
-  const found = actions.filter(require(1327) /* isDiscordFrontendDevelopment */.isNotNullish);
-  obj.actions = found.map(_transformClientActionToApiAction);
-  ({ enabled: obj2.enabled, creatorId: obj2.creator_id, position: obj2.position } = id);
+  const found = actions.filter(require(1351) /* isDiscordFrontendDevelopment */.isNotNullish);
+  obj[6] = found.map(_transformClientActionToApiAction);
+  ({ enabled: obj2[7], creatorId: obj2[8], position: obj2[9] } = id);
   let exemptChannels = id.exemptChannels;
-  if (null == exemptChannels) {
+  if (exemptChannels == null) {
     exemptChannels = [];
   }
-  obj.exempt_channels = Array.from(exemptChannels);
+  obj[10] = Array.from(exemptChannels);
   let exemptRoles = id.exemptRoles;
-  if (null == exemptRoles) {
+  if (exemptRoles == null) {
     exemptRoles = [];
   }
-  obj.exempt_roles = Array.from(exemptRoles);
+  obj[11] = Array.from(exemptRoles);
   return obj;
 }
 function _transformApiActionToClientAction(type) {
-  const obj = { type: type.type, metadata: require(11035) /* _transformMetadataToCamelCase */._transformMetadataToCamelCase(type.metadata) };
+  const obj = { type: type.type, metadata: null };
+  obj[1] = require(11059) /* _transformMetadataToCamelCase */._transformMetadataToCamelCase(type.metadata);
   return obj;
 }
 function _transformApiRuletoClientRule(id) {
-  const obj = {};
   id = id.id;
-  if (null == id) {
+  if (id == null) {
+    let obj = importDefault(11);
     const _Date = Date;
-    id = importDefault(21).fromTimestamp(Date.now());
-    const obj2 = importDefault(21);
+    id = obj.fromTimestamp(Date.now());
   }
-  obj.id = id;
-  ({ name: obj.name, guild_id: obj.guildId, event_type: obj.eventType, trigger_type: obj.triggerType } = id);
-  obj.triggerMetadata = require(11035) /* _transformMetadataToCamelCase */._transformMetadataToCamelCase(id.trigger_metadata);
+  obj = { id, name: id.name, guildId: id.guild_id, eventType: id.event_type, triggerType: id.trigger_type, triggerMetadata: null, actions: null, enabled: null, creatorId: null, position: null, exemptChannels: null, exemptRoles: null };
+  obj[5] = require(11059) /* _transformMetadataToCamelCase */._transformMetadataToCamelCase(id.trigger_metadata);
   const actions = id.actions;
-  const found = actions.filter(require(1327) /* isDiscordFrontendDevelopment */.isNotNullish);
-  obj.actions = found.map(_transformApiActionToClientAction);
-  ({ enabled: obj.enabled, creator_id: obj.creatorId, position: obj.position } = id);
+  const found = actions.filter(require(1351) /* isDiscordFrontendDevelopment */.isNotNullish);
+  obj[6] = found.map(_transformApiActionToClientAction);
+  ({ enabled: obj2[7], creator_id: obj2[8], position: obj2[9] } = id);
   let exempt_channels = id.exempt_channels;
-  if (null == exempt_channels) {
+  if (exempt_channels == null) {
     exempt_channels = [];
   }
-  const obj3 = require(11035) /* _transformMetadataToCamelCase */;
-  obj.exemptChannels = new Set(exempt_channels);
+  const obj3 = require(11059) /* _transformMetadataToCamelCase */;
+  obj[10] = new Set(exempt_channels);
   let exempt_roles = id.exempt_roles;
-  if (null == exempt_roles) {
+  if (exempt_roles == null) {
     exempt_roles = [];
   }
   const set = new Set(exempt_channels);
-  obj.exemptRoles = new Set(exempt_roles);
+  obj[11] = new Set(exempt_roles);
   if (null != obj.triggerMetadata) {
     const triggerMetadata = obj.triggerMetadata;
-    delete tmp.keywordLists;
+    delete tmp2[tmp];
   }
   return obj;
 }
 function _validateAutomodRule() {
-  // CreateGeneratorClosureLongIndex (0x67)
-  const obj = callback(tmp);
-  return obj(...arguments);
+  const self = this;
+  const tmp = callback((arg0) => {
+    let closure_0 = arg0;
+    let c3 = 0;
+    let c4 = 0;
+    return (function*(arg0) {
+      if (c4 === 2) {
+        c4 = 3;
+        HermesBuiltin.throwTypeError();
+      } else if (tmp5 === 3) {
+        if (arg0 === 1) {
+          throw arg1;
+        } else if (arg0 === 2) {
+          let obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
+        } else {
+          return { value: "HermesInternal", done: null };
+        }
+      } else {
+        try {
+          c4 = 2;
+          if (0 === c3) {
+            if (arg0 === 1) {
+              c4 = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              c4 = 3;
+              obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            } else {
+              const table = tmp3;
+              let closure_1 = tmp2;
+              let lib;
+              const HTTP = lib(outer1_2[7]).HTTP;
+              const obj1 = { url: null, body: null, rejectWithError: null };
+              obj1[0] = outer1_7.GUILD_AUTOMOD_VALIDATE_RULE(lib.guildId);
+              obj1[1] = outer1_10(lib);
+              const tmp20 = outer1_10(lib);
+              obj1[2] = lib(outer1_2[7]).rejectWithMigratedError();
+              c3 = 1;
+              c4 = 1;
+              const obj2 = { value: null, done: false };
+              obj2[0] = HTTP.post(obj1);
+              return obj2;
+            }
+          } else if (arg0 === 1) {
+            c4 = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            c4 = 3;
+            const obj3 = { value: null, done: true };
+            obj3[0] = arg1;
+            return obj3;
+          } else {
+            lib = arg1;
+            obj = lib(table[4]);
+            c4 = 3;
+            const obj4 = { value: null, done: true };
+            obj4[0] = obj._transformMetadataToCamelCase(lib.body);
+            return obj4;
+          }
+        } catch (tmp12) {
+          c4 = tmp;
+          throw tmp12;
+        }
+      }
+    })();
+  });
+  const _validateAutomodRule = tmp;
+  const apply = tmp.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
 }
 function _createAutomodRule() {
-  // CreateGeneratorClosureLongIndex (0x67)
-  const obj = callback(tmp);
-  return obj(...arguments);
+  const self = this;
+  const tmp = callback((arg0) => {
+    let closure_0 = arg0;
+    let c2 = 0;
+    let c3 = 0;
+    return (function*(arg0, body) {
+      if (c3 === 2) {
+        c3 = 3;
+        HermesBuiltin.throwTypeError();
+      } else if (tmp5 === 3) {
+        if (arg0 === 1) {
+          throw body;
+        } else if (arg0 === 2) {
+          let obj = { value: null, done: true };
+          obj[0] = body;
+          return obj;
+        } else {
+          return { value: "HermesInternal", done: null };
+        }
+      } else {
+        try {
+          c3 = 2;
+          if (0 === dependencyMap) {
+            if (arg0 === 1) {
+              c3 = 3;
+              throw body;
+            } else if (arg0 === 2) {
+              c3 = 3;
+              obj = { value: null, done: true };
+              obj[0] = body;
+              return obj;
+            } else {
+              delete tmp3[tmp2];
+              const callback = outer1_12;
+              const HTTP = lib(530).HTTP;
+              const obj1 = { url: null, body: null, rejectWithError: null };
+              obj1[0] = outer1_7.GUILD_AUTOMOD_RULES(lib.guildId);
+              obj1[1] = outer1_10(lib);
+              const tmp16 = outer1_10(lib);
+              obj1[2] = lib(530).rejectWithMigratedError();
+              dependencyMap = 1;
+              c3 = 1;
+              const obj2 = { value: null, done: false };
+              obj2[0] = HTTP.post(obj1);
+              return obj2;
+            }
+          } else if (arg0 === 1) {
+            c3 = 3;
+            throw body;
+          } else if (arg0 === 2) {
+            c3 = 3;
+            const obj3 = { value: null, done: true };
+            obj3[0] = body;
+            return obj3;
+          } else {
+            c3 = 3;
+            obj = { value: null, done: true };
+            obj[0] = callback(body.body);
+            return obj;
+          }
+        } catch (tmp8) {
+          c3 = tmp;
+          throw tmp8;
+        }
+      }
+    })();
+  });
+  const _createAutomodRule = tmp;
+  const apply = tmp.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
 }
 function _updateAutomodRule() {
-  // CreateGeneratorClosureLongIndex (0x67)
-  const obj = callback(tmp);
-  return obj(...arguments);
+  const self = this;
+  const tmp = callback((arg0) => {
+    let closure_0 = arg0;
+    let c2 = 0;
+    let c3 = 0;
+    return (function*(arg0, body) {
+      if (c3 === 2) {
+        c3 = 3;
+        HermesBuiltin.throwTypeError();
+      } else if (tmp3 === 3) {
+        if (arg0 === 1) {
+          throw body;
+        } else if (arg0 === 2) {
+          let obj = { value: null, done: true };
+          obj[0] = body;
+          return obj;
+        } else {
+          return { value: "HermesInternal", done: null };
+        }
+      } else {
+        try {
+          c3 = 2;
+          if (0 === dependencyMap) {
+            if (arg0 === 1) {
+              c3 = 3;
+              throw body;
+            } else if (arg0 === 2) {
+              c3 = 3;
+              obj = { value: null, done: true };
+              obj[0] = body;
+              return obj;
+            } else {
+              const callback = outer1_12;
+              const HTTP = lib(530).HTTP;
+              const obj1 = { url: null, body: null, rejectWithError: null };
+              obj1[0] = outer1_7.GUILD_AUTOMOD_RULE(lib.guildId, lib.id);
+              obj1[1] = outer1_10(lib);
+              const tmp14 = outer1_10(lib);
+              obj1[2] = lib(530).rejectWithMigratedError();
+              dependencyMap = 1;
+              c3 = 1;
+              const obj2 = { value: null, done: false };
+              obj2[0] = HTTP.patch(obj1);
+              return obj2;
+            }
+          } else if (arg0 === 1) {
+            c3 = 3;
+            throw body;
+          } else if (arg0 === 2) {
+            c3 = 3;
+            const obj3 = { value: null, done: true };
+            obj3[0] = body;
+            return obj3;
+          } else {
+            c3 = 3;
+            obj = { value: null, done: true };
+            obj[0] = callback(body.body);
+            return obj;
+          }
+        } catch (tmp6) {
+          c3 = tmp;
+          throw tmp6;
+        }
+      }
+    })();
+  });
+  const _updateAutomodRule = tmp;
+  const apply = tmp.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
 }
 function _deleteAutomodRule() {
-  // CreateGeneratorClosureLongIndex (0x67)
-  const obj = callback(tmp);
-  return obj(...arguments);
+  const self = this;
+  const tmp = callback((arg0, arg1) => {
+    let closure_0 = arg0;
+    let closure_1 = arg1;
+    let c3 = 0;
+    let c2 = 0;
+    return (function*(arg0, arg1) {
+      if (dependencyMap === 2) {
+        dependencyMap = 3;
+        HermesBuiltin.throwTypeError();
+      } else if (tmp3 === 3) {
+        if (arg0 === 1) {
+          throw arg1;
+        } else if (arg0 === 2) {
+          let obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
+        } else {
+          return { value: "HermesInternal", done: null };
+        }
+      } else {
+        try {
+          dependencyMap = 2;
+          if (0 === c3) {
+            if (arg0 === 1) {
+              dependencyMap = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              dependencyMap = 3;
+              obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            } else {
+              const HTTP = callback(530).HTTP;
+              const obj1 = { url: null, rejectWithError: null };
+              obj1[0] = outer1_7.GUILD_AUTOMOD_RULE(closure_1, callback);
+              obj1[1] = callback(530).rejectWithMigratedError();
+              c3 = 1;
+              dependencyMap = 1;
+              const obj2 = { value: null, done: false };
+              obj2[0] = HTTP.del(obj1);
+              return obj2;
+            }
+          } else if (arg0 === 1) {
+            dependencyMap = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            dependencyMap = 3;
+            obj = { value: null, done: true };
+            obj[0] = arg1;
+            return obj;
+          } else {
+            dependencyMap = 3;
+            return { value: true, done: true };
+          }
+        } catch (tmp5) {
+          dependencyMap = tmp;
+          throw tmp5;
+        }
+      }
+    })();
+  });
+  const _deleteAutomodRule = tmp;
+  const apply = tmp.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
 }
 function _fetchAutomodRules() {
-  // CreateGeneratorClosureLongIndex (0x67)
-  const obj = callback(tmp);
-  return obj(...arguments);
+  const self = this;
+  const tmp = callback((arg0) => {
+    let closure_0 = arg0;
+    let c3 = 0;
+    let c4 = 0;
+    return (function*(arg0) {
+      if (c4 === 2) {
+        c4 = 3;
+        HermesBuiltin.throwTypeError();
+      } else if (tmp4 === 3) {
+        if (arg0 === 1) {
+          throw arg1;
+        } else if (arg0 === 2) {
+          let obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
+        } else {
+          return { value: "HermesInternal", done: null };
+        }
+      } else {
+        try {
+          c4 = 2;
+          if (0 === c3) {
+            if (arg0 === 1) {
+              c4 = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              c4 = 3;
+              obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            } else {
+              let closure_2 = tmp2;
+              let closure_1 = tmp5;
+              let lib;
+              const HTTP = lib(outer1_2[7]).HTTP;
+              const obj1 = { url: null, rejectWithError: null };
+              obj1[0] = outer1_7.GUILD_AUTOMOD_RULES(lib);
+              obj1[1] = lib(outer1_2[7]).rejectWithMigratedError();
+              c3 = 1;
+              c4 = 1;
+              const obj2 = { value: null, done: false };
+              obj2[0] = HTTP.get(obj1);
+              return obj2;
+            }
+          } else if (arg0 === 1) {
+            c4 = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            c4 = 3;
+            obj = { value: null, done: true };
+            obj[0] = arg1;
+            return obj;
+          } else {
+            lib = arg1;
+            const _Array = Array;
+            if (Array.isArray(lib.body)) {
+              const body = lib.body;
+              const mapped = body.map(closure_12);
+            } else {
+              const items = [];
+            }
+            c4 = 3;
+          }
+        } catch (tmp14) {
+          c4 = tmp;
+          throw tmp14;
+        }
+      }
+    })();
+  });
+  const _fetchAutomodRules = tmp;
+  const apply = tmp.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
 }
 function _executeAlertAction() {
-  // CreateGeneratorClosureLongIndex (0x67)
-  const obj = callback(tmp);
-  return obj(...arguments);
+  const self = this;
+  const tmp = callback((arg0, arg1, arg2) => {
+    let closure_0 = arg0;
+    let closure_1 = arg1;
+    let closure_2 = arg2;
+    let c4 = 0;
+    let c3 = 0;
+    return (function*(arg0, arg1, arg2) {
+      if (c3 === 2) {
+        c3 = 3;
+        HermesBuiltin.throwTypeError();
+      } else if (tmp3 === 3) {
+        if (arg0 === 1) {
+          throw arg1;
+        } else if (arg0 === 2) {
+          let obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
+        } else {
+          return { value: "HermesInternal", done: null };
+        }
+      } else {
+        try {
+          c3 = 2;
+          if (0 === c4) {
+            if (arg0 === 1) {
+              c3 = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              c3 = 3;
+              obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            } else {
+              if (outer1_5.can(outer1_8.MANAGE_MESSAGES, closure_1)) {
+                const HTTP = callback(530).HTTP;
+                const obj1 = { url: null, body: null, rejectWithError: null };
+                obj1[0] = outer1_7.GUILD_AUTOMOD_ALERT_ACTION(tmp15.guild_id);
+                const obj2 = { message_id: null, channel_id: null, alert_action_type: null };
+                obj2[0] = tmp14;
+                obj2[1] = tmp15.id;
+                obj2[2] = tmp16;
+                obj1[1] = obj2;
+                let obj3 = callback(530);
+                obj1[2] = obj3.rejectWithMigratedError();
+                c4 = 1;
+                c3 = 1;
+                obj3 = { value: null, done: false };
+                obj3[0] = HTTP.post(obj1);
+                return obj3;
+              }
+              tmp14 = callback;
+              tmp16 = dependencyMap;
+            }
+          } else if (arg0 === 1) {
+            c3 = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            c3 = 3;
+            obj = { value: null, done: true };
+            obj[0] = arg1;
+            return obj;
+          }
+          c3 = 3;
+          return { value: "HermesInternal", done: null };
+        } catch (tmp8) {
+          c3 = tmp;
+          throw tmp8;
+        }
+      }
+    })();
+  });
+  const _executeAlertAction = tmp;
+  const apply = tmp.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
 }
-({ AnalyticEvents: closure_6, Endpoints: closure_7, Permissions: closure_8 } = ME);
-let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/guild_automod/GuildAutomodActionCreators.tsx");
+({ AnalyticEvents: closure_6, Endpoints: error, Permissions: metroImportAll } = ME);
+let result = require("getUncachedChannelPermissions").fileFinishedImporting("modules/guild_automod/GuildAutomodActionCreators.tsx");
 
 export const validateAutomodRule = function validateAutomodRule() {
-  return _validateAutomodRule(...arguments);
+  const self = this;
+  const apply = _validateAutomodRule.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
 };
 export const createAutomodRule = function createAutomodRule() {
-  return _createAutomodRule(...arguments);
+  const self = this;
+  const apply = _createAutomodRule.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
 };
 export const updateAutomodRule = function updateAutomodRule() {
-  return _updateAutomodRule(...arguments);
+  const self = this;
+  const apply = _updateAutomodRule.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
 };
 export const deleteAutomodRule = function deleteAutomodRule() {
-  return _deleteAutomodRule(...arguments);
+  const self = this;
+  const apply = _deleteAutomodRule.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
 };
 export const fetchAutomodRules = function fetchAutomodRules(arg0) {
-  return _fetchAutomodRules(...arguments);
+  const self = this;
+  const apply = _fetchAutomodRules.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
 };
 export const executeAlertAction = function executeAlertAction(messageId, channel, SUBMIT_FEEDBACK) {
-  return _executeAlertAction(...arguments);
+  const self = this;
+  const apply = _executeAlertAction.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
 };
-export const removeMentionRaidRestrictionWithFeedback = function removeMentionRaidRestrictionWithFeedback(guildId) {
-  const _require = guildId;
+export const removeMentionRaidRestrictionWithFeedback = function removeMentionRaidRestrictionWithFeedback(arg0, arg1, arg2) {
+  const _require = arg0;
   let closure_1 = arg1;
   const dependencyMap = arg2;
-  guild = guild.getGuild(guildId);
+  guild = guild.getGuild(arg0);
   let canResult = null != guild;
   if (canResult) {
-    canResult = _isNativeReflectConstruct.can(constants.MANAGE_GUILD, guild);
+    canResult = getUncachedChannelPermissions.can(constants.MANAGE_GUILD, guild);
   }
   if (canResult) {
-    const result = _require(11028).openConfirmRemoveMentionRaid(() => {
-      let obj = guildId(4359);
-      obj = { feedback_type: guildId(5756).Feedback.MENTION_RAID_REMOVE_RESTRICTION, decision_id: closure_1 };
+    const result = _require(11052).openConfirmRemoveMentionRaid(() => {
+      let obj = callback(4384);
+      obj = { feedback_type: callback(5774).Feedback.MENTION_RAID_REMOVE_RESTRICTION, decision_id: closure_1 };
       obj.trackWithMetadata(outer1_6.GUILD_AUTOMOD_FEEDBACK, obj);
-      const HTTP = guildId(507).HTTP;
-      obj = { url: outer1_7.GUILD_AUTOMOD_CLEAR_MENTION_RAID(guildId), rejectWithError: true };
+      const HTTP = callback(530).HTTP;
+      obj = { url: outer1_7.GUILD_AUTOMOD_CLEAR_MENTION_RAID(callback), rejectWithError: true };
       HTTP.post(obj);
       dependencyMap();
     });
-    let obj = _require(11028);
+    let obj = _require(11052);
   }
 };
 export const clearMentionRaidDetected = function clearMentionRaidDetected(guildId) {
-  let obj = importDefault(686);
+  let obj = importDefault(709);
   obj = { type: "AUTO_MODERATION_MENTION_RAID_NOTICE_DISMISS", guildId };
   obj.dispatch(obj);
 };

@@ -1,26 +1,26 @@
-// Module ID: 14631
-// Function ID: 111485
+// Module ID: 14656
+// Function ID: 14657
 // Name: route
-// Dependencies: [31, 653, 13865, 13868, 10099, 1212, 8902, 14632, 2]
+// Dependencies: [19, 676, 13886, 13889, 10120, 1236, 8926, 14657, 2]
 
-// Module 14631 (route)
-import result from "result";
+// Module 14656 (route)
+import noop from "noop";
 import createToggle from "createToggle";
 
 const require = arg1;
 createToggle = {
   useTitle() {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(require(1212) /* getSystemLocale */.t.OAuOHD);
+    const intl = require(1236) /* getSystemLocale */.intl;
+    return intl.string(require(1236) /* getSystemLocale */.t.OAuOHD);
   },
   parent: null,
   IconComponent: require("ShieldLockIcon").ShieldLockIcon,
   screen: createToggle,
   usePreNavigationAction() {
     return React.useCallback(() => {
-      const consents = outer1_0(outer1_1[2]).fetchConsents();
-      const obj = outer1_0(outer1_1[2]);
-      const harvestStatus = outer1_0(outer1_1[3]).fetchHarvestStatus();
+      const consents = callback(13886).fetchConsents();
+      const obj = callback(13886);
+      const harvestStatus = callback(13889).fetchHarvestStatus();
       return true;
     }, []);
   }
@@ -28,7 +28,7 @@ createToggle = {
 createToggle = {
   route: require("ME").UserSettingsSections.DATA_AND_PRIVACY,
   getComponent() {
-    return require(14632) /* getTermsOfServicePrivacyPolicySettings */.default;
+    return require(14657) /* DataAndPrivacySettings */.default;
   }
 };
 createToggle = createToggle.createRoute(createToggle);

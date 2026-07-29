@@ -1,112 +1,38 @@
-// Module ID: 10457
-// Function ID: 80636
-// Name: _createForOfIteratorHelperLoose
-// Dependencies: [57, 31, 10458, 4252, 566, 10460, 2]
+// Module ID: 10481
+// Function ID: 10482
+// Name: useSubscribeMissingActivities
+// Dependencies: [32, 19, 10482, 4276, 589, 10484, 2]
 // Exports: default
 
-// Module 10457 (_createForOfIteratorHelperLoose)
+// Module 10481 (useSubscribeMissingActivities)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_5 from "_isNativeReflectConstruct";
+import noop from "noop";
+import handleConnectionOpenOrResumed from "handleConnectionOpenOrResumed";
+import sortActivity from "sortActivity";
 
-let require = arg1;
-function _createForOfIteratorHelperLoose(iterable) {
-  let closure_0 = iterable;
-  iterable = "undefined" !== typeof Symbol;
-  if (iterable) {
-    const _Symbol = Symbol;
-    iterable = iterable[Symbol.iterator];
-  }
-  if (!iterable) {
-    iterable = iterable[Symbol.iterator];
-  }
-  if (iterable) {
-    const iter = iterable.call(iterable);
-    const next = iter.next;
-    return next.bind(iter);
-  } else {
-    const _Array = Array;
-    let tmp = iterable;
-    if (!Array.isArray(iterable)) {
-      let tmp2;
-      if (iterable) {
-        if ("string" === typeof iterable) {
-          tmp2 = _arrayLikeToArray(iterable, undefined);
-        } else {
-          const toString = {}.toString;
-          const substr = toString.call(iterable).slice(8, -1);
-          let name = substr;
-          if (tmp3) {
-            name = iterable.constructor.name;
-          }
-          if ("Map" !== name) {
-            if ("Set" !== name) {
-              if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(iterable, undefined);
-              } else {
-                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
-              }
-            }
-            tmp2 = arr;
-          }
-          const _Array2 = Array;
-          arr = Array.from(iterable);
-          const callResult = toString.call(iterable);
-          tmp3 = "Object" === substr && iterable.constructor;
-        }
-      }
-      tmp = tmp2;
-      if (!tmp2) {
-        const _TypeError = TypeError;
-        const typeError = new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
-        throw typeError;
-      }
-    }
-    if (tmp) {
-      closure_0 = tmp;
-    }
-    let c1 = 0;
-    return () => {
-      if (closure_1 >= length.length) {
-        let obj = { done: true };
-      } else {
-        obj = { done: false };
-        closure_1 = tmp3 + 1;
-        obj.value = length[+closure_1];
-      }
-      return obj;
-    };
-  }
-}
-function _arrayLikeToArray(arg0, arg1) {
-  let length;
-  if (tmp) {
-    length = arg0.length;
-  }
-  const ArrayResult = Array(length);
-  for (let num = 0; num < length; num = num + 1) {
-    ArrayResult[num] = arg0[num];
-  }
-  return ArrayResult;
-}
-function useMissingActivities(arg0, arg1) {
-  const _require = arg0;
+const require = arg1;
+let closure_6 = [];
+let closure_7 = [];
+let closure_8 = [];
+const result = require("handleConnectionOpenOrResumed").fileFinishedImporting("modules/activities/useSubscribeMissingActivities.tsx");
+
+export default function useSubscribeMissingActivities(arg0, arg1) {
+  let _require = arg0;
   const dependencyMap = arg1;
   let items = [arg0, arg1];
-  const tmp = first(stateFromStoresArray.useMemo(() => (function getMessagesWithActivities(closure_0, closure_1) {
-    if (closure_1.isPrivate()) {
+  let tmp = first(stateFromStoresArray.useMemo(() => {
+    if (_private.isPrivate()) {
       const found = closure_0.filter((application) => {
         application = application.application;
         let id;
-        if (null != application) {
+        if (application != null) {
           id = application.id;
         }
         let tmp2 = null != id;
         if (tmp2) {
           const activity = application.activity;
           let party_id;
-          if (null != activity) {
+          if (activity != null) {
             party_id = activity.party_id;
           }
           tmp2 = null != party_id;
@@ -114,40 +40,40 @@ function useMissingActivities(arg0, arg1) {
         return tmp2;
       });
       const items = [found, found.map((id) => id.id)];
-      return items;
+      let items1 = items;
     } else {
-      const items1 = [outer2_8, outer2_7];
-      return items1;
+      items1 = [outer1_8, outer1_7];
     }
-  })(closure_0, closure_1), items), 2);
+    return items1;
+  }, items), 2);
   first = tmp[0];
-  let items1 = [closure_5];
+  let items1 = [sortActivity];
   const items2 = [first];
-  stateFromStoresArray = _require(566).useStateFromStoresArray(items1, () => {
+  stateFromStoresArray = _require(589).useStateFromStoresArray(items1, () => {
     let items = [];
     const item = first.forEach((author) => {
       const items = author;
-      if (null != outer2_5.findActivity(author.author.id, (application_id) => {
+      if (null != outer1_5.findActivity(author.author.id, (application_id) => {
         const application = author.application;
         let id;
-        if (null != application) {
+        if (application != null) {
           id = application.id;
         }
-        let tmp2 = application_id.application_id === id;
-        if (tmp2) {
+        let tmp3 = application_id.application_id === id;
+        if (tmp3) {
           const party = application_id.party;
           let id1;
-          if (null != party) {
+          if (party != null) {
             id1 = party.id;
           }
           const activity = author.activity;
           let party_id;
-          if (null != activity) {
+          if (activity != null) {
             party_id = activity.party_id;
           }
-          tmp2 = id1 === party_id;
+          tmp3 = id1 === party_id;
         }
-        return tmp2;
+        return tmp3;
       }, null, true)) {
         items.push(author.id);
       }
@@ -157,68 +83,57 @@ function useMissingActivities(arg0, arg1) {
   const items3 = [first, stateFromStoresArray];
   const items4 = [
     tmp[1],
-    stateFromStoresArray.useMemo(() => (function makeActivitySubscriptions(first, stateFromStoresArray) {
+    stateFromStoresArray.useMemo(() => {
       let closure_0 = stateFromStoresArray;
       if (0 === first.length) {
-        return outer2_6;
+        let items = outer1_6;
       } else {
-        const items = [];
+        items = [];
         const item = first.forEach((application) => {
           application = application.application;
-          if (null != application) {
+          if (application != null) {
             const id = application.id;
           }
           const activity = application.activity;
-          if (null != activity) {
+          if (activity != null) {
             const party_id = activity.party_id;
           }
           if (!(application.id in closure_0)) {
             if (null != id) {
               if (null != party_id) {
                 const timestamp = application.timestamp;
-                const obj = { userId: application.author.id, applicationId: id, partyId: party_id };
-                ({ id: obj.messageId, channel_id: obj.channelId } = application);
-                obj.inviteTime = timestamp.getTime();
+                const obj = { userId: null, applicationId: null, partyId: null, messageId: null, channelId: null, inviteTime: null };
+                obj[0] = application.author.id;
+                obj[1] = id;
+                obj[2] = party_id;
+                ({ id: obj[3], channel_id: obj[4] } = application);
+                obj[5] = timestamp.getTime();
                 items.push(obj);
               }
             }
           }
         });
-        return items;
       }
-    })(first, stateFromStoresArray), items3)
+      return items;
+    }, items3)
   ];
-  return items4;
-}
-let closure_6 = [];
-let closure_7 = [];
-let closure_8 = [];
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/activities/useSubscribeMissingActivities.tsx");
-
-export default function useSubscribeMissingActivities(arg0, arg1) {
-  let tmp = callback(useMissingActivities(arg0, arg1), 2);
-  const require = tmp2;
-  const items = [tmp[1]];
-  const effect = React.useEffect(() => {
-    let iter2;
-    let tmp2;
-    const tmp = outer1_9(tmp2);
-    let iter = tmp();
-    if (!iter.done) {
-      do {
-        let value = iter.value;
-        tmp2 = outer1_4;
-        if (!outer1_4.isSubscribed(value)) {
-          let tmp3 = tmp2;
-          let tmp4 = outer1_1;
-          let obj = tmp2(outer1_1[5]);
-          let subscription = obj.subscribe(value);
-        }
-        iter2 = tmp();
-        iter = iter2;
-      } while (!iter2.done);
+  let tmp4 = first(items4, 2);
+  _require = tmp5;
+  const items5 = [tmp4[1]];
+  const effect = stateFromStoresArray.useEffect(() => {
+    for (const item10006 of closure_0) {
+      let tmp2 = outer1_4;
+      let tmp = item10006;
+      if (!outer1_4.isSubscribed(item10006)) {
+        let tmp3 = callback;
+        let tmp4 = _private;
+        let obj = callback(_private[5]);
+        let tmp5 = item10006;
+        let subscription = obj.subscribe(tmp);
+      }
+      continue;
     }
-  }, items);
-  const items1 = [tmp[0], tmp[1]];
-  return items1;
+  }, items5);
+  const items6 = [tmp4[0], tmp4[1]];
+  return items6;
 };

@@ -1,14 +1,15 @@
-// Module ID: 12707
-// Function ID: 98172
+// Module ID: 12729
+// Function ID: 12730
 // Name: getCachedPrivateChannelObfuscation
-// Dependencies: [1428, 2, 12708]
+// Dependencies: [1452, 2, 12730]
 // Exports: isChannelMetadataIntegrityCheckEnabled, isChannelMetadataObfuscationEnabled, useIsChannelMetadataObfuscationEnabled
 
-// Module 12707 (getCachedPrivateChannelObfuscation)
+// Module 12729 (getCachedPrivateChannelObfuscation)
 import ApexExperiment from "ApexExperiment";
 
-const obj = { name: "2026-02-private-channel-hiding", kind: "user", defaultConfig: { enableObfuscation: false, enableIntegrityCheck: false }, variations: { [1]: { enableObfuscation: true, enableIntegrityCheck: false }, [2]: { enableObfuscation: true, enableIntegrityCheck: true }, [3]: { enableObfuscation: false, enableIntegrityCheck: false } } };
-let closure_0 = ApexExperiment.createApexExperiment(obj);
+const obj = { 1: null, 2: { enableObfuscation: true, enableIntegrityCheck: false }, 3: { enableObfuscation: true, enableIntegrityCheck: true } };
+obj[3] = { enableObfuscation: false, enableIntegrityCheck: false };
+let closure_0 = ApexExperiment.createApexExperiment({ name: "2026-02-private-channel-hiding", kind: "user", defaultConfig: { enableObfuscation: false, enableIntegrityCheck: false }, variations: obj });
 const result = require("PRIVATE_CHANNEL_OBFUSCATION_KEY").fileFinishedImporting("modules/gateway/PrivateChannelHidingExperiment.tsx");
 
 export const getCachedPrivateChannelObfuscation = require("PRIVATE_CHANNEL_OBFUSCATION_KEY").getCachedPrivateChannelObfuscation;

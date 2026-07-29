@@ -1,32 +1,32 @@
-// Module ID: 14824
-// Function ID: 112871
+// Module ID: 14850
+// Function ID: 14851
 // Name: ScreenRecordingActionSheet
-// Dependencies: [31, 27, 14820, 33, 4165, 689, 4161, 4578, 4133, 4695, 5153, 4155, 5533, 2]
+// Dependencies: [19, 17, 14846, 21, 4189, 712, 4185, 4600, 4157, 4717, 5175, 4179, 5551, 2]
 // Exports: default
 
-// Module 14824 (ScreenRecordingActionSheet)
-import "result";
+// Module 14850 (ScreenRecordingActionSheet)
+import "noop";
 import { View } from "get ActivityIndicator";
 import { useScreenRecordingStore } from "useScreenRecordingStore";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_5;
+let c5;
 let closure_6;
 const require = arg1;
-({ jsx: closure_5, jsxs: closure_6 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { justifyContent: "center", alignItems: "center", gap: require("_createForOfIteratorHelperLoose").space.PX_16, paddingVertical: require("_createForOfIteratorHelperLoose").space.PX_16, paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_8, borderRadius: require("_createForOfIteratorHelperLoose").radii.xl };
-_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.closeButton = { position: "absolute", top: require("_createForOfIteratorHelperLoose").space.PX_8, right: require("_createForOfIteratorHelperLoose").space.PX_8 };
-const obj2 = { display: "flex", flexDirection: "row", gap: require("_createForOfIteratorHelperLoose").space.PX_8 };
-_createForOfIteratorHelperLoose.buttonContainer = obj2;
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-let obj1 = { position: "absolute", top: require("_createForOfIteratorHelperLoose").space.PX_8, right: require("_createForOfIteratorHelperLoose").space.PX_8 };
+({ jsx: c5, jsxs: closure_6 } = jsxProd);
+createCacheKey = { container: null, closeButton: null, buttonContainer: null };
+createCacheKey = { justifyContent: "center", alignItems: "center", gap: require("Themes").space.PX_16, paddingVertical: require("Themes").space.PX_16, paddingHorizontal: require("Themes").space.PX_8, borderRadius: require("Themes").radii.xl };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { position: "absolute", top: require("Themes").space.PX_8, right: require("Themes").space.PX_8 };
+let obj1 = { position: "absolute", top: require("Themes").space.PX_8, right: require("Themes").space.PX_8 };
+createCacheKey[2] = { display: "flex", flexDirection: "row", gap: require("Themes").space.PX_8 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let obj2 = { display: "flex", flexDirection: "row", gap: require("Themes").space.PX_8 };
 const result = require("useScreenRecordingStore").fileFinishedImporting("modules/screen_recording/native/ScreenRecordingActionSheet.tsx");
 
 export default function ScreenRecordingActionSheet() {
-  const tmp = _createForOfIteratorHelperLoose();
+  const tmp = createCacheKey();
   const tmp2 = useScreenRecordingStore((isUploading) => isUploading.isUploading);
   const tmp3 = useScreenRecordingStore((isCompleted) => isCompleted.isCompleted);
   const tmp4 = useScreenRecordingStore((currentStep) => currentStep.currentStep);
@@ -34,47 +34,45 @@ export default function ScreenRecordingActionSheet() {
   const _require = useScreenRecordingStore((nextStep) => nextStep.nextStep);
   const importDefault = useScreenRecordingStore((completeActionSheet) => completeActionSheet.completeActionSheet);
   let steps;
-  if (null != obj) {
+  if (obj != null) {
     steps = obj.steps;
   }
-  if (null == steps) {
+  if (steps == null) {
     steps = [];
   }
   let tmp5 = null;
   if (steps.length > tmp4) {
     tmp5 = steps[tmp4];
   }
-  let isStepCompleted;
-  if (null != obj) {
-    isStepCompleted = obj.useIsStepCompleted(tmp4);
+  let flag;
+  if (obj != null) {
+    flag = obj.useIsStepCompleted(tmp4);
   }
-  let completedTitle;
-  if (null != obj) {
-    completedTitle = obj.completedTitle;
+  if (flag == null) {
+    flag = false;
   }
-  let str = "Complete";
-  if (null != completedTitle) {
-    str = completedTitle;
+  let str;
+  if (obj != null) {
+    str = obj.completedTitle;
   }
-  let prop;
-  if (null != obj) {
-    prop = obj.completedInstructions;
+  if (str == null) {
+    str = "Complete";
   }
-  let str2 = "Thanks for your feedback!";
-  if (null != prop) {
-    str2 = prop;
+  let str2;
+  if (obj != null) {
+    str2 = obj.completedInstructions;
+  }
+  if (str2 == null) {
+    str2 = "Thanks for your feedback!";
   }
   if (null == tmp5) {
     if (null == tmp3) {
       return null;
     }
   }
-  obj = { style: tmp.container };
-  obj = { variant: "heading-xl/bold", children: str };
-  const items = [callback(_require(4161).Text, obj), , ];
-  const obj1 = { variant: "text-md/normal", children: str2 };
-  items[1] = callback(_require(4161).Text, obj1);
-  items[2] = callback(_require(4578).Button, {
+  obj = { style: tmp.container, children: null };
+  const items = [callback(_require(4185).Text, { variant: "heading-xl/bold", children: str }), callback(_require(4185).Text, { variant: "text-md/normal", children: str2 }), ];
+  obj = {
     disabled: tmp2,
     text: "Done",
     loading: tmp2,
@@ -82,43 +80,45 @@ export default function ScreenRecordingActionSheet() {
       callback2();
       callback2(outer1_2[8]).hideActionSheet();
     }
-  });
-  obj.children = items;
-  const obj3 = { style: tmp.container };
-  const obj4 = {
+  };
+  items[2] = callback(_require(4600).Button, obj);
+  obj[1] = items;
+  const obj1 = { style: tmp.container, children: null };
+  const obj2 = {
     style: tmp.closeButton,
     onPress() {
-      return callback2(outer1_2[8]).hideActionSheet();
+      return callback2(table[8]).hideActionSheet();
     },
     accessibilityLabel: "close",
-    children: callback(_require(5153).XSmallIcon, { size: "md", color: "text-default" })
+    children: null
   };
-  const items1 = [callback(_require(4695).PressableOpacity, obj4), , , ];
-  const obj5 = { variant: "heading-xl/bold", children: tmp5.title };
-  items1[1] = callback(_require(4161).Text, obj5);
-  const obj6 = { variant: "text-md/normal" };
-  let obj9 = importDefault(4155);
-  obj6.children = obj9.parse(tmp5.instructions);
-  items1[2] = callback(_require(4161).Text, obj6);
-  const obj7 = { style: tmp.buttonContainer };
-  const obj8 = {};
-  let tmp14 = !(null != isStepCompleted && isStepCompleted);
-  if (!tmp14) {
-    tmp14 = tmp2;
+  obj2[3] = callback(_require(5175).XSmallIcon, { size: "md", color: "text-default" });
+  const items1 = [callback(_require(4717).PressableOpacity, obj2), callback(_require(4185).Text, { variant: "heading-xl/bold", children: tmp5.title }), , ];
+  const obj4 = { variant: "text-md/normal", children: null };
+  const obj3 = { variant: "heading-xl/bold", children: tmp5.title };
+  const tmp11 = callback2(View, obj);
+  const tmp6 = callback2;
+  const tmp9 = _require;
+  obj4[1] = importDefault(4179).parse(tmp5.instructions);
+  items1[2] = callback(_require(4185).Text, obj4);
+  const obj5 = { style: tmp.buttonContainer, children: null };
+  let tmp12 = !flag;
+  if (flag) {
+    tmp12 = tmp2;
   }
-  obj8.disabled = tmp14;
-  obj8.text = "Next";
-  obj8.loading = tmp2;
-  obj8.onPress = function onPress() {
-    callback();
-  };
-  obj7.children = callback(_require(4578).Button, obj8);
-  items1[3] = callback(View, obj7);
-  obj3.children = items1;
-  let tmp10Result = callback2(tmp11, obj3);
+  obj5[1] = callback(_require(4600).Button, {
+    disabled: tmp12,
+    text: "Next",
+    loading: tmp2,
+    onPress() {
+      callback();
+    }
+  });
+  items1[3] = callback(View, obj5);
+  obj1[1] = items1;
+  let children = tmp6(tmp7, obj1);
   if (tmp3) {
-    tmp10Result = tmp13;
+    children = tmp11;
   }
-  obj9 = { children: tmp10Result };
-  return callback(_require(5533).ActionSheet, obj9);
+  return callback(tmp9(5551).ActionSheet, { children });
 };

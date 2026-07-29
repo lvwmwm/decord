@@ -1,15 +1,15 @@
-// Module ID: 12177
-// Function ID: 95238
+// Module ID: 12201
+// Function ID: 12202
 // Name: useAddToWishlistGridItems
-// Dependencies: [31, 1852, 9727, 12178, 12152, 2]
+// Dependencies: [19, 1876, 9749, 12202, 12176, 2]
 // Exports: useAddToWishlistGridItems
 
-// Module 12177 (useAddToWishlistGridItems)
-import result from "result";
+// Module 12201 (useAddToWishlistGridItems)
+import noop from "noop";
 import { PremiumSubscriptionSKUs } from "GuildFeatures";
 
 const require = arg1;
-const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/wishlists/hooks/useAddToWishlistGridItems.tsx");
+const result = require("useWishlistRecommendationsWithWishlists").fileFinishedImporting("modules/wishlists/hooks/useAddToWishlistGridItems.tsx");
 
 export const useAddToWishlistGridItems = function useAddToWishlistGridItems(userId) {
   let maxWishlistItemsToShow;
@@ -30,11 +30,11 @@ export const useAddToWishlistGridItems = function useAddToWishlistGridItems(user
   let items = [wishlist];
   memo = recommendations.useMemo(() => {
     let mapped;
-    if (null != wishlist) {
+    if (wishlist != null) {
       const items = wishlist.items;
       mapped = items.map((skuId) => skuId.skuId);
     }
-    if (null == mapped) {
+    if (mapped == null) {
       mapped = [];
     }
     return new Set(mapped);
@@ -49,10 +49,11 @@ export const useAddToWishlistGridItems = function useAddToWishlistGridItems(user
   c4 = tmp3;
   obj = {
     items: recommendations.useMemo(() => {
-      const found = recommendations.filter((id) => !outer1_3.has(id.id));
+      const found = recommendations.filter((id) => !set.has(id.id));
       const mapped = found.map((sku) => ({ sku, itemSource: "recommendation" }));
       if (c4) {
-        const obj = { sku: wishlist(maxWishlistItemsToShow[4]).createNitroSuggestedSku(), itemSource: "takeover" };
+        const obj = { sku: null, itemSource: "takeover" };
+        obj[0] = wishlist(maxWishlistItemsToShow[4]).createNitroSuggestedSku();
         mapped.unshift(obj);
         const obj2 = wishlist(maxWishlistItemsToShow[4]);
       }

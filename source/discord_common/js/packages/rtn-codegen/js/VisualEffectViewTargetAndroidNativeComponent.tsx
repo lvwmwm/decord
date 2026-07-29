@@ -1,13 +1,13 @@
-// Module ID: 15596
-// Function ID: 119865
+// Module ID: 15630
+// Function ID: 15631
 // Name: __INTERNAL_VIEW_CONFIG
-// Dependencies: [42, 2]
+// Dependencies: [65, 2]
 
-// Module 15596 (__INTERNAL_VIEW_CONFIG)
-import get from "get";
+// Module 15630 (__INTERNAL_VIEW_CONFIG)
+import setRuntimeConfigProvider from "setRuntimeConfigProvider";
 
 const obj = { uiViewClassName: "DCDVisualEffectViewTarget", validAttributes: {} };
-const value = get.get("DCDVisualEffectViewTarget", () => obj);
+const value = setRuntimeConfigProvider.get("DCDVisualEffectViewTarget", () => obj);
 const result = require("set").fileFinishedImporting("../discord_common/js/packages/rtn-codegen/js/VisualEffectViewTargetAndroidNativeComponent.tsx");
 
 export default value;

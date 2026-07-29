@@ -1,145 +1,142 @@
-// Module ID: 13620
-// Function ID: 104633
+// Module ID: 13641
+// Function ID: 13642
 // Name: jsx
-// Dependencies: [57, 31, 27, 10444, 33, 4165, 689, 6632, 13621, 5193, 566, 10956, 4576, 5536, 5198, 4113, 5525, 3865, 13618, 4124, 7632, 7631, 6706, 4578, 1327, 2]
+// Dependencies: [32, 19, 17, 10468, 21, 4189, 712, 6653, 13642, 5215, 589, 10980, 4598, 5554, 5220, 4137, 5543, 3889, 13639, 4148, 7655, 7654, 6727, 4600, 1351, 2]
 
-// Module 13620 (jsx)
+// Module 13641 (jsx)
 import _slicedToArray from "_slicedToArray";
-import importAllResult from "result";
-import { ScrollView } from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import importAllResult from "TrashIcon";
+import { ScrollView } from "presentAddedFriendToast";
+import getCurrentBuildOverride from "getCurrentBuildOverride";
+import jsxProd from "TableRadioRow";
+import createCacheKey from "createCacheKey";
 
 const require = arg1;
+let c4 = importAllResult;
 const jsx = jsxProd.jsx;
 const jsxs = jsxProd.jsxs;
-let obj = {};
-obj = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW, flex: 1 };
-obj.content = obj;
-_createForOfIteratorHelperLoose = { padding: require("_createForOfIteratorHelperLoose").space.PX_16 };
-obj.contentContainer = _createForOfIteratorHelperLoose;
-let closure_9 = _createForOfIteratorHelperLoose.createStyles(obj);
+let obj = { content: null, contentContainer: null };
+obj = { backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW, flex: 1 };
+obj[0] = obj;
+createCacheKey = { padding: require("Themes").space.PX_16 };
+obj[1] = createCacheKey;
+let closure_9 = createCacheKey.createStyles(obj);
+let items = [{ label: "Branch Name", value: "branch", icon: jsx(require("TagIcon").TagIcon, {}) }, ];
 let obj2 = { label: "Branch Name", value: "branch", icon: jsx(require("TagIcon").TagIcon, {}) };
-let items = [obj2, ];
+items[1] = { label: "Commit SHA", value: "id", icon: jsx(require("HashmarkIcon").HashmarkIcon, {}) };
 let obj3 = { label: "Commit SHA", value: "id", icon: jsx(require("HashmarkIcon").HashmarkIcon, {}) };
-items[1] = obj3;
 const memoResult = importAllResult.memo(() => {
-  function getLabel(first) {
-    let closure_0 = first;
-    const found = outer1_10.find((value) => value.value === type.type);
-    let label;
-    if (null != found) {
-      label = found.label;
-    }
-    return label;
-  }
   let tmp = callback2();
-  let obj = stateFromStores(566);
-  const items = [_isNativeReflectConstruct];
-  stateFromStores = obj.useStateFromStores(items, () => {
-    const overrides = outer1_6.getCurrentBuildOverride().overrides;
+  let obj = first(589);
+  const items = [getCurrentBuildOverride];
+  const stateFromStores = obj.useStateFromStores(items, () => {
+    const overrides = currentBuildOverride.getCurrentBuildOverride().overrides;
     let tmp;
-    if (null != overrides) {
-      tmp = overrides[stateFromStores(undefined, 10956).DEVICE_FIELD];
+    if (overrides != null) {
+      tmp = overrides[first(undefined, 10980).DEVICE_FIELD];
     }
     return tmp;
   });
-  const tmp3 = callback(importAllResult.useState({ type: "branch", id: "" }), 2);
-  const first = tmp3[0];
-  const dependencyMap = tmp3[1];
-  obj = { style: tmp.content };
+  first = stateFromStores;
+  const tmp5 = callback(importAllResult.useState({ type: "branch", id: "" }), 2);
+  first = tmp5[0];
+  const dependencyMap = tmp5[1];
+  obj = { style: tmp.content, contentContainerStyle: null, children: null };
   obj = {};
   let merged = Object.assign(tmp.contentContainer);
-  obj["paddingBottom"] = tmp.contentContainer.padding + first(5193)({ includeKeyboardHeight: true }).insets.bottom;
-  obj.contentContainerStyle = obj;
-  const obj1 = { spacing: 16 };
-  let tmp9 = null;
+  obj.paddingBottom = tmp.contentContainer.padding + first(5215)({ includeKeyboardHeight: true }).insets.bottom;
+  obj[1] = obj;
+  let tmp10Result = null;
   if (null != stateFromStores) {
-    let obj2 = { title: "Current Override", hasIcons: true };
-    let obj3 = {
-      icon: jsx(stateFromStores(4113).CopyIcon, {}),
-      label: getLabel(stateFromStores),
-      subLabel: stateFromStores.id,
-      onPress() {
-          stateFromStores(5525).copy(stateFromStores.id);
-          const obj = stateFromStores(5525);
-          const result = stateFromStores(3865).presentCopiedToClipboard();
-        }
-    };
-    const items1 = [
-      jsx(stateFromStores(5198).TableRow, {
-          icon: jsx(stateFromStores(4113).CopyIcon, {}),
-          label: getLabel(stateFromStores),
-          subLabel: stateFromStores.id,
-          onPress() {
-              stateFromStores(5525).copy(stateFromStores.id);
-              const obj = stateFromStores(5525);
-              const result = stateFromStores(3865).presentCopiedToClipboard();
-            }
-        }),
-  ,
-
-    ];
-    const obj4 = { icon: jsx(stateFromStores(13618).RefreshIcon, {}), label: "Refresh Override", onPress: stateFromStores(10956).refreshBuildOverride, arrow: true };
-    items1[1] = jsx(stateFromStores(5198).TableRow, { icon: jsx(stateFromStores(13618).RefreshIcon, {}), label: "Refresh Override", onPress: stateFromStores(10956).refreshBuildOverride, arrow: true });
-    const obj5 = { icon: null, label: "Clear Override", variant: "danger", onPress: null, arrow: true };
-    const obj6 = { color: "text-feedback-critical" };
-    obj5.icon = jsx(stateFromStores(4124).TrashIcon, { color: "text-feedback-critical" });
-    obj5.onPress = stateFromStores(10956).clearBuildOverride;
-    items1[2] = jsx(stateFromStores(5198).TableRow, { icon: null, label: "Clear Override", variant: "danger", onPress: null, arrow: true });
-    obj2.children = items1;
-    tmp9 = jsxs(stateFromStores(5536).TableRowGroup, { title: "Current Override", hasIcons: true });
-  }
-  const items2 = [tmp9, , , ];
-  const obj7 = {};
-  let str3 = "";
-  if (null != stateFromStores) {
-    str3 = "New";
-  }
-  obj7.title = `${str3} Override Type`;
-  obj7.defaultValue = first.type;
-  obj7.onChange = function onChange(type) {
-    dependencyMap({ type, id: "" });
-  };
-  obj7.hasIcons = true;
-  obj7.children = items.map((value) => {
-    let icon;
+    const obj1 = { icon: null, label: null, subLabel: null, onPress: null };
+    obj1[0] = tmp7(tmp3(4137).CopyIcon, {});
+    first = stateFromStores;
+    const found = items.find((value) => value.value === first.type);
     let label;
-    value = value.value;
-    ({ icon, label } = value);
-    return outer1_7(stateFromStores(7631).TableRadioRow, { value, label, icon }, value);
-  });
-  items2[1] = jsx(stateFromStores(7632).TableRadioGroup, {});
-  const obj8 = { title: getLabel(first), hasIcons: true };
-  const obj9 = {};
-  let found = items.find((value) => value.value === first.type);
-  let icon;
-  if (null != found) {
-    icon = found.icon;
+    if (found != null) {
+      label = found.label;
+    }
+    let obj2 = { title: "Current Override", hasIcons: true, children: null };
+    obj1[1] = label;
+    obj1[2] = stateFromStores.id;
+    obj1[3] = function onPress() {
+      first(5543).copy(first.id);
+      const obj = first(5543);
+      const result = first(3889).presentCopiedToClipboard();
+    };
+    const items1 = [tmp7(tmp3(5220).TableRow, obj1), , ];
+    let obj3 = { icon: null, label: "Refresh Override", onPress: null, arrow: true };
+    obj3[0] = tmp7(tmp3(13639).RefreshIcon, {});
+    obj3[2] = tmp3(10980).refreshBuildOverride;
+    items1[1] = tmp7(tmp3(5220).TableRow, obj3);
+    const obj4 = { icon: null, label: "Clear Override", variant: "danger", onPress: null, arrow: true };
+    obj4[0] = tmp7(tmp3(4148).TrashIcon, { color: "text-feedback-critical" });
+    obj4[3] = tmp3(10980).clearBuildOverride;
+    items1[2] = tmp7(tmp3(5220).TableRow, obj4);
+    obj2[2] = items1;
+    tmp10Result = tmp10(tmp3(5554).TableRowGroup, obj2);
   }
-  obj9.icon = icon;
-  const obj10 = {
-    size: "md",
-    placeholder: "Enter " + getLabel(first),
-    onChange(arg0) {
-      const obj = {};
-      const merged = Object.assign(first);
-      obj["id"] = arg0;
-      dependencyMap(obj);
+  const items2 = [tmp10Result, , , ];
+  let str = "";
+  if (null != stateFromStores) {
+    str = "New";
+  }
+  items2[1] = jsx(first(7655).TableRadioGroup, {
+    title: `${str} Override Type`,
+    defaultValue: first.type,
+    onChange(type) {
+      dependencyMap({ type, id: "" });
     },
-    autoCapitalize: "none",
-    autoCorrect: false,
-    autoComplete: "off",
-    isClearable: true
+    hasIcons: true,
+    children: items.map((value) => {
+      let icon;
+      let label;
+      value = value.value;
+      ({ icon, label } = value);
+      return callback(first(7654).TableRadioRow, { value, label, icon }, value);
+    })
+  });
+  const found1 = items.find((value) => value.value === first.type);
+  let label1;
+  if (found1 != null) {
+    label1 = found1.label;
+  }
+  const obj6 = { title: label1, hasIcons: true, children: null };
+  const found2 = arr4.find((value) => value.value === first.type);
+  let icon;
+  if (found2 != null) {
+    icon = found2.icon;
+  }
+  const obj7 = { icon, label: null };
+  const found3 = arr4.find((value) => value.value === first.type);
+  let label2;
+  if (found3 != null) {
+    label2 = found3.label;
+  }
+  const obj8 = { spacing: 16, children: null };
+  const obj5 = {
+    title: `${str} Override Type`,
+    defaultValue: first.type,
+    onChange(type) {
+      dependencyMap({ type, id: "" });
+    },
+    hasIcons: true,
+    children: items.map((value) => {
+      let icon;
+      let label;
+      value = value.value;
+      ({ icon, label } = value);
+      return callback(first(7654).TableRadioRow, { value, label, icon }, value);
+    })
   };
-  obj9.label = jsx(stateFromStores(6706).TextInput, {
+  const tmp8 = ScrollView;
+  obj7[1] = jsx(first(6727).TextInput, {
     size: "md",
-    placeholder: "Enter " + getLabel(first),
-    onChange(arg0) {
+    placeholder: "Enter " + label2,
+    onChange(id) {
       const obj = {};
       const merged = Object.assign(first);
-      obj["id"] = arg0;
+      obj.id = id;
       dependencyMap(obj);
     },
     autoCapitalize: "none",
@@ -147,28 +144,28 @@ const memoResult = importAllResult.memo(() => {
     autoComplete: "off",
     isClearable: true
   });
-  obj8.children = jsx(stateFromStores(5198).TableRow, {});
-  items2[2] = jsx(stateFromStores(5536).TableRowGroup, { title: getLabel(first), hasIcons: true });
-  items2[3] = jsx(stateFromStores(4578).Button, {
+  obj6[2] = jsx(first(5220).TableRow, { icon, label: null });
+  items2[2] = jsx(first(5554).TableRowGroup, { title: label1, hasIcons: true, children: null });
+  items2[3] = jsx(first(4600).Button, {
     text: "Apply Build Override",
     disabled: "" === first.id,
     onPress() {
       const type = first.type;
       if ("branch" === type) {
-        const result = stateFromStores(10956).setBuildOverrideForBranch(first.id);
-        const obj3 = stateFromStores(10956);
+        const result = first(10980).setBuildOverrideForBranch(tmp.id);
+        const obj3 = first(10980);
       } else if ("id" === type) {
-        const result1 = stateFromStores(10956).setBuildOverrideForId(first.id);
-        const obj2 = stateFromStores(10956);
+        const result1 = first(10980).setBuildOverrideForId(tmp.id);
+        const obj2 = first(10980);
       } else {
-        stateFromStores(1327).assertNever(first.type);
-        const obj = stateFromStores(1327);
+        first(1351).assertNever(tmp.type);
+        const obj = first(1351);
       }
     }
   });
-  obj1.children = items2;
-  obj.children = jsxs(stateFromStores(4576).Stack, { spacing: 16 });
-  return <ScrollView />;
+  obj8[1] = items2;
+  obj[2] = jsxs(first(4598).Stack, { spacing: 16, children: null });
+  return <tmp8 />;
 });
 let result = require("get ActivityIndicator").fileFinishedImporting("modules/devtools/native/components/screens/DevToolsBuildOverrideScreen.tsx");
 

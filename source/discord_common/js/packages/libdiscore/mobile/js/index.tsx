@@ -1,52 +1,35 @@
-// Module ID: 1846
-// Function ID: 20264
+// Module ID: 1870
+// Function ID: 1871
 // Name: LIBDISCORE_JSI
-// Dependencies: [6, 7, 27, 1847, 2]
+// Dependencies: [17, 1871, 2]
 // Exports: consumeLogs, crash, generateLaunchSignature, getFluxApi, getHttpClientAPI, registerDevLogListener, rustMultiply
 
-// Module 1846 (LIBDISCORE_JSI)
-import _classCallCheck from "_classCallCheck";
-import _defineProperties from "_defineProperties";
+// Module 1870 (LIBDISCORE_JSI)
 import { NativeModules } from "get ActivityIndicator";
 
 if (NativeModules.LibDiscoreModule) {
   let LibDiscoreModule = NativeModules.LibDiscoreModule;
 } else {
   const _Proxy = Proxy;
-  let obj = {
-    get() {
-        const error = new Error("The package 'react-native-libdiscore-jsi-module' doesn't seem to be linked");
-        throw error;
-      }
+  const obj = { get: null };
+  obj[0] = function get() {
+    const error = new Error("The package 'react-native-libdiscore-jsi-module' doesn't seem to be linked");
+    throw error;
   };
   LibDiscoreModule = new Proxy({}, obj);
 }
 LibDiscoreModule.bridgeJSIFunctions();
 const LIBDISCORE_JSI = require("typedGlobal").typedGlobal.LIBDISCORE_JSI;
-const tmp6 = (() => {
-  class BlockedDomainsStore {
-    constructor() {
-      tmp = BlockedDomainsStore(this, BlockedDomainsStore);
-      return;
-    }
-  }
-  let obj = {
-    key: "isBlockedDomain",
-    value(arg0) {
-      return outer1_2.isBlockedDomain(arg0);
-    }
-  };
-  const items = [obj, ];
-  obj = {
-    key: "startFetchingBlockedDomains",
-    value(combined) {
-      const result = outer1_2.startFetchingBlockedDomains(combined);
-    }
-  };
-  items[1] = obj;
-  return callback(BlockedDomainsStore, null, items);
-})();
-let result = require("get ActivityIndicator").fileFinishedImporting("../discord_common/js/packages/libdiscore/mobile/js/index.tsx");
+let result = require("set").fileFinishedImporting("../discord_common/js/packages/libdiscore/mobile/js/index.tsx");
+const prototype = function BlockedDomainsStore() {
+  return Object.create(new.target.prototype);
+}.prototype;
+prototype["isBlockedDomain"] = function isBlockedDomain(arg0) {
+  return LIBDISCORE_JSI.isBlockedDomain(arg0);
+};
+prototype["startFetchingBlockedDomains"] = function startFetchingBlockedDomains(arg0) {
+  const result = LIBDISCORE_JSI.startFetchingBlockedDomains(arg0);
+};
 
 export const ExperimentCacher = LIBDISCORE_JSI.ExperimentCacher;
 export const rustMultiply = function rustMultiply(arg0, arg1) {
@@ -55,7 +38,7 @@ export const rustMultiply = function rustMultiply(arg0, arg1) {
 export const consumeLogs = function consumeLogs() {
   return LIBDISCORE_JSI.consumeLogs();
 };
-export const BlockedDomainsStore = tmp6;
+export const BlockedDomainsStore = prototype;
 export const getFluxApi = function getFluxApi() {
   return LIBDISCORE_JSI.fluxApi;
 };

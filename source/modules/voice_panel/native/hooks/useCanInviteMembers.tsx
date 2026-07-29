@@ -1,12 +1,12 @@
-// Module ID: 15893
-// Function ID: 122560
+// Module ID: 15928
+// Function ID: 15929
 // Name: useCanInviteMembers
-// Dependencies: [1348, 3793, 482, 624, 2]
+// Dependencies: [1372, 3817, 505, 647, 2]
 // Exports: useCanInviteMembers
 
-// Module 15893 (useCanInviteMembers)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_3 from "_isNativeReflectConstruct";
+// Module 15928 (useCanInviteMembers)
+import ensureGuildLoaded from "ensureGuildLoaded";
+import getUncachedChannelPermissions from "getUncachedChannelPermissions";
 import { Permissions } from "sum";
 
 const require = arg1;
@@ -14,9 +14,9 @@ const result = require("sum").fileFinishedImporting("modules/voice_panel/native/
 
 export const useCanInviteMembers = function useCanInviteMembers(channelId) {
   const _require = channelId;
-  const items = [_isNativeReflectConstruct, closure_3];
+  const items = [ensureGuildLoaded, getUncachedChannelPermissions];
   const items1 = [channelId];
-  return _require(624).useStateFromStores(items, () => {
+  return _require(647).useStateFromStores(items, () => {
     const channel = outer1_2.getChannel(closure_0);
     let canResult = null != channel;
     if (canResult) {

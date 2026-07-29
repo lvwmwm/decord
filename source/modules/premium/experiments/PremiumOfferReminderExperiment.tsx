@@ -1,14 +1,15 @@
-// Module ID: 6195
-// Function ID: 55415
+// Module ID: 6215
+// Function ID: 6216
 // Name: apexExperiment
-// Dependencies: [1428, 2]
+// Dependencies: [1452, 2]
 // Exports: isPremiumOfferReminderExperimentEnabled
 
-// Module 6195 (apexExperiment)
+// Module 6215 (apexExperiment)
 import ApexExperiment from "ApexExperiment";
 
-const obj = { name: "2026-02-premium-offer-reminder-xp", kind: "user", defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } };
-const apexExperiment = ApexExperiment.createApexExperiment(obj);
+const obj = { 1: null };
+obj[1] = { enabled: true };
+const apexExperiment = ApexExperiment.createApexExperiment({ name: "2026-02-premium-offer-reminder-xp", kind: "user", defaultConfig: { enabled: false }, variations: obj });
 const result = require("set").fileFinishedImporting("modules/premium/experiments/PremiumOfferReminderExperiment.tsx");
 
 export const PremiumOfferReminderExperiment = apexExperiment;

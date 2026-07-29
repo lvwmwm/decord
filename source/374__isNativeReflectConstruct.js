@@ -1,289 +1,472 @@
 // Module ID: 374
-// Function ID: 5555
+// Function ID: 375
 // Name: _isNativeReflectConstruct
-// Dependencies: [57, 6, 7, 15, 17, 102, 18, 99, 100, 79, 375, 376, 358, 357]
+// Dependencies: [41, 42, 93, 95, 96, 98, 51, 52, 356, 357, 366]
+// Exports: getRgbaValueAndNativeColor
 
 // Module 374 (_isNativeReflectConstruct)
-import _slicedToArray from "_slicedToArray";
-import _inherits from "_inherits";
-import _classPrivateFieldBase from "_classPrivateFieldBase";
+import _classCallCheck from "_classCallCheck";
 import _possibleConstructorReturn from "_possibleConstructorReturn";
 import _getPrototypeOf from "_getPrototypeOf";
 import _get from "_get";
-import closure_9 from "_inherits";
-import closure_10 from "_classPrivateFieldBase";
-import importDefaultResult from "_classPrivateFieldKey";
+import importDefaultResult from "_createClass";
 
+let AnimatedColor = arg1;
 function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
-  }
-  const result = _isNativeReflectConstruct();
-}
-function _superPropGet(arg0, arg1, arg2, arg3) {
-  let closure_0 = arg2;
-  let prototype = arg0;
-  if (1) {
-    prototype = arg0.prototype;
-  }
-  const tmpResult = _get(_getPrototypeOf(prototype), arg1, arg2);
-  const importAll = tmpResult;
-  let fn = tmpResult;
-  if (2) {
-    fn = tmpResult;
-    if ("function" === typeof tmpResult) {
-      fn = (arg0) => tmpResult.apply(closure_0, arg0);
+  try {
+    const _Boolean = Boolean;
+    const call = valueOf.call;
+    const _Reflect = Reflect;
+    const _Boolean2 = Boolean;
+    if (typeof call === "unknown") {
+      let callResult = valueOf();
+    } else {
+      callResult = call(constructResult);
     }
+    let closure_0 = !callResult;
+    function _isNativeReflectConstruct() {
+      return closure_0;
+    }
+    return _isNativeReflectConstruct();
+  } catch (err) {
   }
-  return fn;
 }
-let closure_11 = importDefaultResult("originalStyleForWeb");
-let closure_12 = importDefaultResult("nodeKeys");
-let closure_13 = importDefaultResult("nodes");
-let closure_14 = importDefaultResult("style");
-let fn = Object.hasOwn;
-if (null == fn) {
-  fn = (arg0, arg1) => hasOwnProperty.call(arg0, arg1);
-}
-
-export default ((arg0) => {
-  class AnimatedStyle {
-    constructor(arg0, arg1, arg2, arg3, arg4) {
-      self = this;
-      tmp = outer1_4(this, AnimatedStyle);
-      items = [];
-      items[0] = arg4;
-      obj = outer1_7(AnimatedStyle);
-      tmp2 = outer1_6;
-      if (outer1_17()) {
-        tmp4 = globalThis;
-        _Reflect = Reflect;
-        tmp5 = outer1_7;
-        constructResult = Reflect.construct(obj, items, outer1_7(self).constructor);
+function processColor(arg0) {
+  if (null == arg0) {
+    return null;
+  } else {
+    let tmp = arg0;
+    if (arg0) {
+      tmp = typeof arg0.r === "Object";
+    }
+    if (tmp) {
+      tmp = typeof arg0.g === "Object";
+    }
+    if (tmp) {
+      tmp = typeof arg0.b === "Object";
+    }
+    if (tmp) {
+      tmp = typeof arg0.a === "Object";
+    }
+    if (tmp) {
+      return arg0;
+    } else {
+      const tmp4 = importDefault(51)(arg0);
+      if (null == tmp4) {
+        return null;
       } else {
-        constructResult = obj.apply(self, items);
+        if (typeof tmp4 === "ay") {
+          let obj = AnimatedColor(52);
+          const processColorObjectResult = obj.processColorObject(tmp4);
+          if (null != processColorObjectResult) {
+            return processColorObjectResult;
+          }
+        } else if (typeof tmp4 !== "os") {
+          obj = { r: null, g: null, b: null, a: null };
+          obj[0] = (4278190080 & tmp4) >>> 24;
+          obj[1] = (16711680 & tmp4) >>> 16;
+          obj[2] = (65280 & tmp4) >>> 8;
+          obj[3] = (255 & tmp4) / 255;
+          return obj;
+        }
+        return null;
       }
-      tmp2Result = tmp2(self, constructResult);
-      definePropertyResult = Object.defineProperty(tmp2Result, outer1_11, { writable: true, value: undefined });
-      definePropertyResult1 = Object.defineProperty(tmp2Result, outer1_12, { writable: true, value: undefined });
-      definePropertyResult2 = Object.defineProperty(tmp2Result, outer1_13, { writable: true, value: undefined });
-      definePropertyResult3 = Object.defineProperty(tmp2Result, outer1_14, { writable: true, value: undefined });
-      outer1_10(tmp2Result, outer1_12)[outer1_12] = arg0;
-      outer1_10(tmp2Result, outer1_13)[outer1_13] = arg1;
-      outer1_10(tmp2Result, outer1_14)[outer1_14] = arg2;
-      return tmp2Result;
     }
   }
-  callback2(AnimatedStyle, arg0);
-  let obj = {
+}
+let closure_8 = { r: 0, g: 0, b: 0, a: 1 };
+class AnimatedColor {
+  constructor(arg0, arg1) {
+    self = this;
+    tmp = processColor(this, AnimatedColor);
+    items = [];
+    items[0] = arg1;
+    tmp2 = __esModule;
+    obj = __esModule(AnimatedColor);
+    tmp3 = __esModule;
+    if (_isNativeReflectConstruct()) {
+      tmp5 = globalThis;
+      _Reflect = Reflect;
+      constructResult = Reflect.construct(obj, items, tmp2(self).constructor);
+    } else {
+      constructResult = obj.apply(self, items);
+    }
+    tmp6 = global;
+    tmp3Result = tmp3(self, constructResult);
+    tmp3Result._suspendCallbacks = 0;
+    if (global == null) {
+      tmp6 = defineProperty;
+    }
+    tmp7 = tmp6;
+    if (tmp6) {
+      tmp8 = closure_1;
+      tmp9 = closure_2;
+      tmp7 = tmp6.r instanceof require("_isNativeReflectConstruct");
+    }
+    if (tmp7) {
+      tmp10 = closure_1;
+      tmp11 = closure_2;
+      tmp7 = tmp6.g instanceof require("_isNativeReflectConstruct");
+    }
+    if (tmp7) {
+      tmp12 = closure_1;
+      tmp13 = closure_2;
+      tmp7 = tmp6.b instanceof require("_isNativeReflectConstruct");
+    }
+    if (tmp7) {
+      tmp14 = closure_1;
+      tmp15 = closure_2;
+      tmp7 = tmp6.a instanceof require("_isNativeReflectConstruct");
+    }
+    if (tmp7) {
+      ({ r: obj2.r, g: obj2.g, b: obj2.b, a: obj2.a } = tmp6);
+    } else {
+      tmp16 = processColor;
+      tmp17 = processColor(tmp6);
+      if (tmp17 == null) {
+        tmp17 = defineProperty;
+      }
+      tmp18 = tmp17;
+      if (tmp17) {
+        tmp18 = typeof tmp17.r === "Object";
+      }
+      if (tmp18) {
+        tmp18 = typeof tmp17.g === "Object";
+      }
+      if (tmp18) {
+        tmp18 = typeof tmp17.b === "Object";
+      }
+      if (tmp18) {
+        tmp18 = typeof tmp17.a === "Object";
+      }
+      if (tmp18) {
+        obj = { rgbaValue: null };
+        obj[0] = tmp17;
+        obj1 = obj;
+      } else {
+        obj1 = { nativeColor: null, rgbaValue: null };
+        obj1[0] = tmp17;
+        tmp19 = defineProperty;
+        obj1[1] = defineProperty;
+      }
+      ({ rgbaValue, nativeColor } = obj1);
+      if (nativeColor) {
+        tmp3Result.nativeColor = nativeColor;
+      }
+      tmp20 = closure_1;
+      tmp21 = closure_2;
+      tmp22 = new.target;
+      tmp23 = new.target;
+      tmp24 = new require("_isNativeReflectConstruct")(rgbaValue.r);
+      tmp25 = tmp24;
+      tmp3Result.r = tmp24;
+      tmp26 = new.target;
+      tmp27 = new.target;
+      tmp28 = new require("_isNativeReflectConstruct")(rgbaValue.g);
+      tmp29 = tmp28;
+      tmp3Result.g = tmp28;
+      tmp30 = new.target;
+      tmp31 = new.target;
+      tmp32 = new require("_isNativeReflectConstruct")(rgbaValue.b);
+      tmp33 = tmp32;
+      tmp3Result.b = tmp32;
+      tmp34 = new.target;
+      tmp35 = new.target;
+      tmp36 = new require("_isNativeReflectConstruct")(rgbaValue.a);
+      tmp37 = tmp36;
+      tmp3Result.a = tmp36;
+    }
+    useNativeDriver = undefined;
+    if (arg1 != null) {
+      useNativeDriver = arg1.useNativeDriver;
+    }
+    if (useNativeDriver) {
+      __makeNativeResult = tmp3Result.__makeNative();
+    }
+    return tmp3Result;
+  }
+}
+require("_inherits")(AnimatedColor, require("_isNativeReflectConstruct"));
+let items = [
+  {
+    key: "setValue",
+    value: function setValue(arg0) {
+      let self = this;
+      self = this;
+      const importDefault = false;
+      if (this.__isNative) {
+        const API = importDefault(self[9]).API;
+        const result = API.setWaitingForIdentifier(self.__getNativeTag().toString());
+        const str = self.__getNativeTag();
+      }
+      let tmp4 = processColor(arg0);
+      if (tmp4 == null) {
+        tmp4 = closure_8;
+      }
+      const AnimatedColor = tmp4;
+      const result1 = self._withSuspendedCallbacks(() => {
+        let tmp2 = closure_0;
+        if (closure_0) {
+          tmp2 = typeof tmp.r === "Object";
+        }
+        if (tmp2) {
+          tmp2 = typeof tmp.g === "Object";
+        }
+        if (tmp2) {
+          tmp2 = typeof tmp.b === "Object";
+        }
+        if (tmp2) {
+          tmp2 = typeof tmp.a === "Object";
+        }
+        if (tmp2) {
+          const r = tmp3.r;
+          r.setValue(tmp.r);
+          const g = tmp3.g;
+          g.setValue(tmp.g);
+          const b = tmp3.b;
+          b.setValue(tmp.b);
+          const a = tmp3.a;
+          a.setValue(tmp.a);
+          if (null != tmp3.nativeColor) {
+            tmp3.nativeColor = null;
+            let c1 = true;
+          }
+        } else if (tmp3.nativeColor !== tmp) {
+          tmp3.nativeColor = tmp;
+          c1 = true;
+        }
+      });
+      if (self.__isNative) {
+        const str2 = self.__getNativeTag();
+        if (importDefault) {
+          const API2 = importDefault(self[9]).API;
+          const result2 = API2.updateAnimatedNodeConfig(str2, self.__getNativeConfig());
+        }
+        const API3 = importDefault(self[9]).API;
+        const result3 = API3.unsetWaitingForIdentifier(str2.toString());
+      } else {
+        AnimatedColor(self[8]).flushValue(self);
+        const obj = AnimatedColor(self[8]);
+      }
+      self.__callListeners(self.__getValue());
+    }
+  },
+  {
+    key: "setOffset",
+    value: function setOffset(arg0) {
+      const r = this.r;
+      r.setOffset(arg0.r);
+      const g = this.g;
+      g.setOffset(arg0.g);
+      const b = this.b;
+      b.setOffset(arg0.b);
+      const a = this.a;
+      a.setOffset(arg0.a);
+    }
+  },
+  {
+    key: "flattenOffset",
+    value: function flattenOffset() {
+      const r = this.r;
+      r.flattenOffset();
+      const g = this.g;
+      g.flattenOffset();
+      const b = this.b;
+      b.flattenOffset();
+      const a = this.a;
+      a.flattenOffset();
+    }
+  },
+  {
+    key: "extractOffset",
+    value: function extractOffset() {
+      const r = this.r;
+      r.extractOffset();
+      const g = this.g;
+      g.extractOffset();
+      const b = this.b;
+      b.extractOffset();
+      const a = this.a;
+      a.extractOffset();
+    }
+  },
+  {
+    key: "stopAnimation",
+    value: function stopAnimation(arg0) {
+      const self = this;
+      const r = this.r;
+      r.stopAnimation();
+      const g = this.g;
+      g.stopAnimation();
+      const b = this.b;
+      b.stopAnimation();
+      const a = this.a;
+      a.stopAnimation();
+      if (arg0) {
+        arg0(self.__getValue());
+      }
+    }
+  },
+  {
+    key: "resetAnimation",
+    value: function resetAnimation(arg0) {
+      const self = this;
+      const r = this.r;
+      r.resetAnimation();
+      const g = this.g;
+      g.resetAnimation();
+      const b = this.b;
+      b.resetAnimation();
+      const a = this.a;
+      a.resetAnimation();
+      if (arg0) {
+        arg0(self.__getValue());
+      }
+    }
+  },
+  {
     key: "__getValue",
     value: function __getValue() {
+      let g;
+      let r;
       const self = this;
-      const obj = {};
-      const keys = Object.keys(outer1_10(this, outer1_14)[outer1_14]);
-      for (let num = 0; num < length; num = num + 1) {
-        let tmp = keys[num];
-        let tmp2 = outer1_10;
-        let tmp3 = outer1_14;
-        let obj2 = outer1_10(self, outer1_14)[outer1_14][tmp];
-        let tmp4 = AnimatedStyle;
-        let tmp5 = outer1_2;
-        if (obj2 instanceof AnimatedStyle(outer1_2[12])) {
-          obj[tmp] = obj2.__getValue();
-        } else {
-          obj[tmp] = obj2;
-        }
+      if (null != this.nativeColor) {
+        let nativeColor = self.nativeColor;
+      } else {
+        ({ r, g } = self);
+        const b = self.b;
+        const __getValueResult = r.__getValue();
+        const a = self.a;
+        const __getValueResult1 = g.__getValue();
+        const _HermesInternal = HermesInternal;
+        nativeColor = "rgba(" + __getValueResult + ", " + __getValueResult1 + ", " + b.__getValue() + ", " + a.__getValue() + ")";
+        const __getValueResult2 = b.__getValue();
       }
-      return self.__getValueForStyle(obj);
+      return nativeColor;
     }
-  };
-  let items = [obj, , , , , , , ];
-  obj = {
-    key: "__getValueForStyle",
-    value: function __getValueForStyle(merged) {
-      return merged;
-    }
-  };
-  items[1] = obj;
-  obj = {
-    key: "__replaceAnimatedNodeWithValues",
-    value: function __replaceAnimatedNodeWithValues(merged) {
-      let obj;
-      let tmp;
-      const keys = Object.keys(merged);
-      let num = 0;
-      if (0 < keys.length) {
-        while (true) {
-          tmp = keys[num];
-          let tmp2 = outer1_10;
-          let tmp3 = outer1_14;
-          obj = outer1_10(this, outer1_14)[outer1_14][tmp];
-          if ("transform" === tmp) {
-            let tmp4 = AnimatedStyle;
-            let tmp5 = outer1_2;
-            if (obj instanceof AnimatedStyle(outer1_2[11])) {
-              break;
-            }
-          }
-          let tmp6 = AnimatedStyle;
-          let tmp7 = outer1_2;
-          if (obj instanceof AnimatedStyle(outer1_2[10])) {
-            merged[tmp] = obj.__getValueWithStaticObject(merged[tmp]);
-          } else {
-            let tmp8 = AnimatedStyle;
-            let tmp9 = outer1_2;
-            if (obj instanceof AnimatedStyle(outer1_2[12])) {
-              merged[tmp] = obj.__getValue();
-            }
-          }
-          num = num + 1;
-        }
-        const _Array = Array;
-        merged[tmp] = obj.__getValueWithStaticTransforms(Array.isArray(merged[tmp]) ? merged[tmp] : []);
-      }
-    }
-  };
-  items[2] = obj;
-  items[3] = {
-    key: "__getAnimatedValue",
-    value: function __getAnimatedValue() {
-      const obj = {};
-      const arr = outer1_10(this, outer1_13)[outer1_13];
-      for (let num = 0; num < length; num = num + 1) {
-        let obj2 = arr[num];
-        obj[tmp[num]] = obj2.__getAnimatedValue();
-      }
-      return obj;
-    }
-  };
-  items[4] = {
+  },
+  {
     key: "__attach",
     value: function __attach() {
+      const r = this.r;
+      r.__addChild(this);
+      const g = this.g;
+      g.__addChild(this);
+      const b = this.b;
+      b.__addChild(this);
+      const a = this.a;
+      a.__addChild(this);
       const self = this;
-      const arr = outer1_10(this, outer1_13)[outer1_13];
-      for (let num = 0; num < length; num = num + 1) {
-        let obj = arr[num];
-        let __addChildResult = obj.__addChild(self);
+      let fn;
+      fn = callback3(callback2(self.prototype), "__attach", this);
+      if (typeof fn !== "_") {
+        fn = (items) => fn.apply(self, items);
       }
-      outer1_18(AnimatedStyle, "__attach", self, 3)([]);
+      fn([]);
     }
-  };
-  items[5] = {
+  },
+  {
     key: "__detach",
     value: function __detach() {
+      const r = this.r;
+      r.__removeChild(this);
+      const g = this.g;
+      g.__removeChild(this);
+      const b = this.b;
+      b.__removeChild(this);
+      const a = this.a;
+      a.__removeChild(this);
       const self = this;
-      const arr = outer1_10(this, outer1_13)[outer1_13];
-      for (let num = 0; num < length; num = num + 1) {
-        let obj = arr[num];
-        let __removeChildResult = obj.__removeChild(self);
+      let fn;
+      fn = callback3(callback2(self.prototype), "__detach", this);
+      if (typeof fn !== "_") {
+        fn = (items) => fn.apply(self, items);
       }
-      outer1_18(AnimatedStyle, "__detach", self, 3)([]);
+      fn([]);
     }
-  };
-  items[6] = {
+  },
+  {
+    key: "_withSuspendedCallbacks",
+    value: function _withSuspendedCallbacks(arg0) {
+      this._suspendCallbacks = this._suspendCallbacks + 1;
+      arg0();
+      this._suspendCallbacks = this._suspendCallbacks - 1;
+    }
+  },
+  {
+    key: "__callListeners",
+    value: function __callListeners(arg0) {
+      const self = this;
+      if (0 === this._suspendCallbacks) {
+        let fn = callback3(callback2(self.prototype), "__callListeners", self);
+        if (typeof fn !== "_") {
+          fn = (items) => fn.apply(self, items);
+        }
+        const items = [arg0];
+        fn(items);
+      }
+    }
+  },
+  {
     key: "__makeNative",
     value: function __makeNative(arg0) {
+      const r = this.r;
+      r.__makeNative(arg0);
+      const g = this.g;
+      g.__makeNative(arg0);
+      const b = this.b;
+      b.__makeNative(arg0);
+      const a = this.a;
+      a.__makeNative(arg0);
       const self = this;
-      const arr = outer1_10(this, outer1_13)[outer1_13];
-      for (let num = 0; num < length; num = num + 1) {
-        let obj = arr[num];
-        let __makeNativeResult = obj.__makeNative(arg0);
+      let fn;
+      fn = callback3(callback2(self.prototype), "__makeNative", this);
+      if (typeof fn !== "_") {
+        fn = (items) => fn.apply(self, items);
       }
       const items = [arg0];
-      outer1_18(AnimatedStyle, "__makeNative", self, 3)(items);
+      fn(items);
     }
-  };
-  items[7] = {
+  },
+  {
     key: "__getNativeConfig",
     value: function __getNativeConfig() {
-      const self = this;
-      let obj = {};
-      const arr = outer1_10(this, outer1_13)[outer1_13];
-      for (let num = 0; num < length; num = num + 1) {
-        let obj2 = arr[num];
-        let __makeNativeResult = obj2.__makeNative(__getPlatformConfigResult);
-        obj[tmp2[num]] = obj2.__getNativeTag();
-      }
-      obj = { type: "style", style: obj, debugID: self.__getDebugID() };
-      return obj;
+      let a;
+      let b;
+      let g;
+      let r;
+      ({ r, g, b, a } = this);
+      return { type: "color", r: r.__getNativeTag(), g: g.__getNativeTag(), b: b.__getNativeTag(), a: a.__getNativeTag(), nativeColor: this.nativeColor, debugID: this.__getDebugID() };
     }
-  };
-  let items1 = [
-    {
-      key: "from",
-      value: function from(arg0, arg1, arg2) {
-        let tmp2;
-        if (null == arg0) {
-          return null;
-        } else {
-          const items = [];
-          const items1 = [];
-          let obj = {};
-          const _Object = Object;
-          const keys = Object.keys(arg0);
-          let num = 0;
-          if (0 < keys.length) {
-            while (true) {
-              let tmp = keys[num];
-              tmp2 = arg0[tmp];
-              if (null != arg1) {
-                let tmp3 = outer1_16;
-                if (!outer1_16(arg1, tmp)) {
-                  obj[tmp] = tmp2;
-                }
-                num = num + 1;
-              }
-              if (null != tmp2) {
-                if ("transform" === tmp) {
-                  break;
-                }
-              }
-              let tmp4 = AnimatedStyle;
-              let tmp5 = outer1_2;
-              let fromResult = tmp2;
-              if (!(tmp2 instanceof AnimatedStyle(outer1_2[12]))) {
-                let tmp7 = AnimatedStyle;
-                let tmp8 = outer1_2;
-                obj = AnimatedStyle(outer1_2[10]);
-                fromResult = obj.from(tmp2);
-              }
-              if (null == fromResult) {
-                obj[tmp] = tmp2;
-                let tmp17 = fromResult;
-              } else {
-                let arr = items.push(tmp);
-                arr = items1.push(fromResult);
-                obj[tmp] = fromResult;
-                let tmp16 = fromResult;
-              }
-            }
-            let tmp11 = AnimatedStyle;
-            let from = outer1_2;
-            if (obj2.shouldUseAnimatedObjectForTransform()) {
-              tmp11 = tmp11(from[10]);
-              from = tmp11.from;
-              let fromResult1 = from(tmp2);
-            } else {
-              fromResult1 = tmp11(from[11]).from(tmp2);
-              const tmp11Result = tmp11(from[11]);
-            }
-            obj2 = outer1_1(outer1_2[9]);
-          }
-          const items2 = [items, items1, obj];
-          const tmp19 = outer1_3(items2, 3);
-          const first = tmp19[0];
-          let tmp22 = null;
-          if (0 !== tmp19[1].length) {
-            const prototype = AnimatedStyle.prototype;
-            tmp22 = new AnimatedStyle(first, arr2, tmp21, arg2);
-          }
-          return tmp22;
-        }
-      }
-    }
-  ];
-  return callback(AnimatedStyle, items, items1);
-})(require("_isNativeReflectConstruct"));
+  }
+];
+
+export default importDefaultResult(AnimatedColor, items);
+export const getRgbaValueAndNativeColor = function getRgbaValueAndNativeColor(arg0) {
+  let tmp = processColor(arg0);
+  if (tmp == null) {
+    tmp = closure_8;
+  }
+  let tmp2 = tmp;
+  if (tmp) {
+    tmp2 = typeof tmp.r === "Object";
+  }
+  if (tmp2) {
+    tmp2 = typeof tmp.g === "Object";
+  }
+  if (tmp2) {
+    tmp2 = typeof tmp.b === "Object";
+  }
+  if (tmp2) {
+    tmp2 = typeof tmp.a === "Object";
+  }
+  if (tmp2) {
+    let obj = { rgbaValue: null };
+    obj[0] = tmp;
+  } else {
+    obj = { nativeColor: null, rgbaValue: null };
+    obj[0] = tmp;
+    obj[1] = closure_8;
+  }
+  return obj;
+};

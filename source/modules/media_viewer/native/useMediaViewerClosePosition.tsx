@@ -1,23 +1,15 @@
-// Module ID: 12303
-// Function ID: 95923
-// Name: computeClosePosition
-// Dependencies: [57, 31, 653, 12300, 8231, 4026, 2]
+// Module ID: 12325
+// Function ID: 12326
+// Name: useMediaViewerClosePosition
+// Dependencies: [32, 19, 676, 12322, 8255, 4050, 2]
 // Exports: default
 
-// Module 12303 (computeClosePosition)
+// Module 12325 (useMediaViewerClosePosition)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
+import noop from "noop";
 import { NOOP } from "ME";
 
 const require = arg1;
-function computeClosePosition(arg0, height) {
-  if (null != arg2) {
-    let obj = importDefault(12300)(arg0, height, arg2);
-  } else {
-    obj = { height };
-  }
-  return (height + obj.height) / 2;
-}
 let closure_6 = { code: "function useMediaViewerClosePositionTsx1(){const{index}=this.__closure;return index.get();}" };
 let closure_7 = { code: "function useMediaViewerClosePositionTsx2(index){const{runOnJS,setClosePosition}=this.__closure;runOnJS(setClosePosition)(index);}" };
 const result = require("ME").fileFinishedImporting("modules/media_viewer/native/useMediaViewerClosePosition.tsx");
@@ -36,14 +28,29 @@ export default function useMediaViewerClosePosition(index) {
   let callback;
   const tmp = sources(windowHeight[4])(onClose);
   React = tmp;
-  const tmp2 = windowWidth(React.useState(() => outer1_8(windowWidth, windowHeight, sources[index.get(index)])), 2);
+  const tmp2 = windowWidth(React.useState(() => {
+    const tmp3 = sources[index.get(index)];
+    if (null != tmp3) {
+      let obj = sources(windowHeight[3])(windowWidth, tmp2, tmp3);
+    } else {
+      obj = { height: null };
+      obj[0] = tmp2;
+    }
+    return (windowHeight + obj.height) / 2;
+  }), 2);
   closure_5 = tmp2[1];
   const items = [tmp, sources, windowHeight, windowWidth];
   callback = React.useCallback((arg0) => {
     if (null == sources[arg0]) {
       _undefined();
     }
-    callback(outer1_8(windowWidth, windowHeight, sources[arg0]));
+    if (null != sources[arg0]) {
+      let obj = sources(windowHeight[3])(tmp5, tmp6, tmp);
+    } else {
+      obj = { height: null };
+      obj[0] = tmp6;
+    }
+    closure_5((windowHeight + obj.height) / 2);
   }, items);
   let obj = index(windowHeight[5]);
   const fn = function h() {

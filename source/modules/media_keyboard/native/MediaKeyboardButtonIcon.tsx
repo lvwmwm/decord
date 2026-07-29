@@ -1,60 +1,63 @@
-// Module ID: 11376
-// Function ID: 88237
+// Module ID: 11400
+// Function ID: 11401
 // Name: MediaKeyboardButtonIcon
-// Dependencies: [31, 33, 4031, 1324, 4026, 1555, 4166, 4169, 10190, 2]
+// Dependencies: [19, 21, 4055, 1348, 4050, 1579, 4190, 4193, 10211, 2]
 // Exports: MediaKeyboardButtonIcon
 
-// Module 11376 (MediaKeyboardButtonIcon)
-import "result";
+// Module 11400 (MediaKeyboardButtonIcon)
+import "noop";
 import { jsx } from "jsxProd";
 
 const require = arg1;
 let closure_4 = { code: "function MediaKeyboardButtonIconTsx1(){const{keyboard,KeyboardTypes,chatInputFloating,withTiming,timingStandard}=this.__closure;const isActive=keyboard===KeyboardTypes.MEDIA||chatInputFloating&&keyboard===KeyboardTypes.APP_LAUNCHER;return{transform:[{rotate:withTiming(isActive?'45deg':'0deg',timingStandard)}]};}" };
-const result = require("getKeyboardContextForType").fileFinishedImporting("modules/media_keyboard/native/MediaKeyboardButtonIcon.tsx");
+const result = require("useKeyboardType").fileFinishedImporting("modules/media_keyboard/native/MediaKeyboardButtonIcon.tsx");
 
 export const MediaKeyboardButtonIcon = function MediaKeyboardButtonIcon(arg0) {
   if (arg0 == null) {
-    HermesBuiltin.throwTypeError("Cannot destructure 'undefined' or 'null'.");
-    throw undefined;
+    HermesBuiltin.throwTypeError();
   } else {
     let _require;
     let chatInputFloating;
     const merged = Object.assign(arg0, undefined);
-    const tmp7 = chatInputFloating(4031)();
-    _require = tmp7;
-    let obj = _require(1324);
-    obj = { location: "MediaKeyboardButtonIcon" };
-    chatInputFloating = obj.useMobileVisualRefreshConfig(obj).chatInputFloating;
-    let obj2 = _require(4026);
+    const tmp6 = chatInputFloating(4055)();
+    _require = tmp6;
+    let obj = _require(1348);
+    chatInputFloating = obj.useMobileVisualRefreshConfig({ location: "MediaKeyboardButtonIcon" }).chatInputFloating;
+    let obj1 = _require(4050);
     const fn = function s() {
-      let tmp = _undefined === _undefined(outer1_2[5]).KeyboardTypes.MEDIA;
-      if (!tmp) {
-        let tmp2 = chatInputFloating;
+      let tmp4 = _undefined === _undefined(outer1_2[5]).KeyboardTypes.MEDIA;
+      if (!tmp4) {
+        let tmp5 = chatInputFloating;
         if (chatInputFloating) {
-          tmp2 = _undefined === _undefined(outer1_2[5]).KeyboardTypes.APP_LAUNCHER;
+          tmp5 = _undefined === tmp2(tmp3[5]).KeyboardTypes.APP_LAUNCHER;
         }
-        tmp = tmp2;
+        tmp4 = tmp5;
       }
-      let obj = {};
-      obj = {};
       let str = "0deg";
-      if (tmp) {
+      if (tmp4) {
         str = "45deg";
       }
-      obj.rotate = _undefined(outer1_2[6]).withTiming(str, _undefined(outer1_2[7]).timingStandard);
+      let obj = { transform: null };
+      obj = { rotate: _undefined(outer1_2[6]).withTiming(str, tmp2(tmp3[7]).timingStandard) };
       const items = [obj];
-      obj.transform = items;
+      obj[0] = items;
       return obj;
     };
-    obj = { keyboard: tmp7, KeyboardTypes: _require(1555).KeyboardTypes, chatInputFloating, withTiming: _require(4166).withTiming, timingStandard: _require(4169).timingStandard };
+    obj = { keyboard: null, KeyboardTypes: null, chatInputFloating: null, withTiming: null, timingStandard: null };
+    obj[0] = tmp6;
+    obj[1] = _require(1579).KeyboardTypes;
+    obj[2] = chatInputFloating;
+    obj[3] = _require(4190).withTiming;
+    obj[4] = _require(4193).timingStandard;
     fn.__closure = obj;
     fn.__workletHash = 12686941860647;
     fn.__initData = closure_4;
-    const animatedStyle = obj2.useAnimatedStyle(fn);
-    const obj1 = { style: animatedStyle };
-    obj2 = {};
+    const animatedStyle = obj1.useAnimatedStyle(fn);
+    obj = { style: null, children: null };
+    obj[0] = animatedStyle;
+    obj1 = {};
     const merged1 = Object.assign(merged);
-    obj1.children = jsx(_require(10190).PlusLargeIcon, {});
-    return jsx(chatInputFloating(4026).View, { style: animatedStyle });
+    obj[1] = jsx(_require(10211).PlusLargeIcon, {});
+    return jsx(chatInputFloating(4050).View, { style: null, children: null });
   }
 };

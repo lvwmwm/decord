@@ -1,29 +1,29 @@
-// Module ID: 14872
-// Function ID: 113281
+// Module ID: 14898
+// Function ID: 14899
 // Name: PrivacyPolicyDescription
-// Dependencies: [31, 27, 5624, 14834, 653, 33, 4165, 4161, 1212, 3883, 7613, 7611, 14873, 2]
+// Dependencies: [19, 17, 5642, 14860, 676, 21, 4189, 4185, 1236, 3907, 7636, 7634, 14899, 2]
 // Exports: default
 
-// Module 14872 (PrivacyPolicyDescription)
-import "result";
+// Module 14898 (PrivacyPolicyDescription)
+import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { usePromoEmailConsentStore } from "setPromoEmailConsentState";
 import { useRegistrationUIStore } from "useRegistrationUIStore";
 import { MarketingURLs } from "ME";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_3;
-let closure_4;
-let closure_8;
-let closure_9;
+let c3;
+let c4;
+let c9;
+let metroImportAll;
 const require = arg1;
 function PrivacyPolicyDescription(style) {
-  let obj = { style: style.style, variant: "text-xs/medium", color: "text-muted" };
-  const intl = require(1212) /* getSystemLocale */.intl;
+  let obj = { style: style.style, variant: "text-xs/medium", color: "text-muted", children: null };
+  const intl = require(1236) /* getSystemLocale */.intl;
   obj = { termsURL: MarketingURLs.TERMS, privacyURL: MarketingURLs.PRIVACY };
-  obj.children = intl.format(require(1212) /* getSystemLocale */.t["KI+BSb"], obj);
-  return callback(require(4161) /* Text */.Text, obj);
+  obj[3] = intl.format(require(1236) /* getSystemLocale */.t["KI+BSb"], obj);
+  return callback(require(4185) /* Text */.Text, obj);
 }
 function PrivacyPolicyCheckbox(onToggleConsent) {
   let asCheckbox;
@@ -33,31 +33,35 @@ function PrivacyPolicyCheckbox(onToggleConsent) {
     asCheckbox = false;
   }
   const tmp = callback3();
-  let obj = require(3883) /* useCheckboxA11yNative */;
+  let obj = require(3907) /* useCheckboxA11yNative */;
   const checkboxA11yNative = obj.useCheckboxA11yNative({ checked: consent });
-  obj = { style: asCheckbox ? tmp.checkbox : tmp.radio, accessibilityState: checkboxA11yNative.accessibilityState, accessibilityRole: checkboxA11yNative.accessibilityRole };
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj.accessibilityLabel = intl.string(require(1212) /* getSystemLocale */.t.Y7Kgvf);
-  obj.onPress = onToggleConsent.onToggleConsent;
-  obj.hitSlop = { top: 11, bottom: 11, left: 11 };
+  obj = { style: asCheckbox ? tmp.checkbox : tmp.radio, accessibilityState: checkboxA11yNative.accessibilityState, accessibilityRole: checkboxA11yNative.accessibilityRole, accessibilityLabel: null, onPress: null, hitSlop: null, children: null };
+  const intl = tmp2(1236).intl;
+  obj[3] = intl.string(require(1236) /* getSystemLocale */.t.Y7Kgvf);
+  obj[4] = onToggleConsent.onToggleConsent;
+  obj[5] = { top: 11, bottom: 11, left: 11 };
   if (asCheckbox) {
-    obj = { checked: consent };
-    let tmp5Result = tmp5(tmp6(7613).FormCheckbox, obj);
+    obj = { checked: null };
+    obj[0] = consent;
+    let tmp7Result = tmp7(tmp2(7636).FormCheckbox, obj);
+    let tmp9 = tmp7;
   } else {
-    const obj1 = { selected: consent };
-    tmp5Result = tmp5(tmp6(7611).FormRow.Radio, obj1);
+    const obj1 = { selected: null };
+    obj1[0] = consent;
+    tmp7Result = tmp7(tmp2(7634).FormRow.Radio, obj1);
+    tmp9 = tmp7;
   }
-  const items = [tmp5Result, ];
-  const obj2 = { variant: "text-xs/medium", color: "text-muted", style: tmp.checkboxLabel };
-  const intl2 = require(1212) /* getSystemLocale */.intl;
-  obj2.children = intl2.format(require(1212) /* getSystemLocale */.t.qMDAP0, { termsURL: MarketingURLs.TERMS, privacyURL: MarketingURLs.PRIVACY });
-  items[1] = callback(require(4161) /* Text */.Text, obj2);
-  obj.children = items;
+  const items = [tmp7Result, ];
+  const obj2 = { variant: "text-xs/medium", color: "text-muted", style: tmp.checkboxLabel, children: null };
+  const intl2 = tmp2(1236).intl;
+  obj2[3] = intl2.format(require(1236) /* getSystemLocale */.t.qMDAP0, { termsURL: MarketingURLs.TERMS, privacyURL: MarketingURLs.PRIVACY });
+  items[1] = tmp9(require(4185) /* Text */.Text, obj2);
+  obj[6] = items;
   return closure_9(closure_4, obj);
 }
-({ View: closure_3, Pressable: closure_4 } = get_ActivityIndicator);
-({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
-let closure_10 = _createForOfIteratorHelperLoose.createStyles({ multiItem: { flexDirection: "column", gap: 16 }, checkbox: { flexDirection: "row", alignItems: "flex-start", gap: 8 }, radio: { flexDirection: "row", alignItems: "center", gap: 8 }, checkboxLabel: { flex: 1 } });
+({ View: c3, Pressable: c4 } = get_ActivityIndicator);
+({ jsx: metroImportAll, jsxs: c9 } = jsxProd);
+let closure_10 = createCacheKey.createStyles({ multiItem: { flexDirection: "column", gap: 16 }, checkbox: { flexDirection: "row", alignItems: "flex-start", gap: 8 }, radio: { flexDirection: "row", alignItems: "center", gap: 8 }, checkboxLabel: { flex: 1 } });
 const result = require("setPromoEmailConsentState").fileFinishedImporting("modules/auth/native/components/PrivacyHint.tsx");
 
 export default function PrivacyHint(arg0) {
@@ -69,26 +73,25 @@ export default function PrivacyHint(arg0) {
   const tmp2 = useRegistrationUIStore((registrationOptions) => null != registrationOptions.registrationOptions.email) && usePromoEmailConsentStore((required) => required.required);
   if (!consentRequired) {
     if (tmp2) {
-      let obj = { style: items1.multiItem };
-      const items = [callback(importDefault(14873), {}), callback(PrivacyPolicyDescription, {})];
-      obj.children = items;
+      let obj = { style: null, children: null };
+      obj[0] = items1.multiItem;
+      const items = [callback(importDefault(14899), {}), callback(PrivacyPolicyDescription, {})];
+      obj[1] = items;
       return callback2(closure_3, obj);
     }
   }
   if (!consentRequired) {
     if (consentRequired) {
-      obj = { consent, onToggleConsent };
-      let tmp10Result = tmp10(PrivacyPolicyCheckbox, obj);
+      obj = { consent: null, onToggleConsent: null };
+      obj[0] = consent;
+      obj[1] = onToggleConsent;
+      let tmp9Result = tmp9(PrivacyPolicyCheckbox, obj);
     } else {
-      tmp10Result = tmp10(PrivacyPolicyDescription, {});
+      tmp9Result = tmp9(PrivacyPolicyDescription, {});
     }
   }
-  obj = { style: items1.multiItem };
-  items1 = [callback(importDefault(14873), {}), ];
-  const obj1 = { consent, onToggleConsent };
-  onToggleConsent = true;
-  obj1.asCheckbox = true;
-  items1[1] = callback(PrivacyPolicyCheckbox, obj1);
-  obj.children = items1;
-  tmp10Result = callback2(closure_3, obj);
+  obj = { style: items1.multiItem, children: null };
+  items1 = [callback(importDefault(14899), {}), callback(PrivacyPolicyCheckbox, { consent, onToggleConsent, asCheckbox: true })];
+  obj[1] = items1;
+  tmp9Result = callback2(closure_3, obj);
 };

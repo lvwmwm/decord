@@ -1,106 +1,163 @@
-// Module ID: 5644
-// Function ID: 47826
-// Name: _createForOfIteratorHelperLoose
-// Dependencies: [4202, 5645, 4188, 1838, 5646, 5647, 653, 655, 482, 4404, 22, 5648, 1443, 5023, 566, 5503, 2]
-// Exports: canSeeGameShop, getCardBackgroundImageURL, getCardImageURL, getForwardedSKUShareURL, getGameItemThumbnailUrl, getHasWishlistOrPopularRecommendations, getMarketingGuildId, getOrderedStorefrontSkuIds, getPrimaryCarouselItemInfo, getSocialLayerStorefrontApplicationId, getSocialLayerStorefrontGuildId, hasPrice, isGameItemSKU, isGiftPriceDifferent, isOnSocialLayerStorefrontPage, isOnSocialLayerStorefrontSkuPage, transformSlayerApplicationStorefrontServer, transformSlayerApplicationStorefrontSummaryServer, transformStorefrontMetadataServer, useGetSocialLayerStorefrontApplicationId, useGetSocialLayerStorefrontGuildIdAndApplication
+// Module ID: 5662
+// Function ID: 5663
+// Name: getPrice
+// Dependencies: [4226, 5663, 4212, 1862, 5664, 5665, 676, 678, 505, 4427, 12, 5666, 1467, 5045, 589, 5521, 2]
+// Exports: canSeeGameShop, getCardBackgroundImageURL, getCardImageURL, getCountryPrices, getForwardedSKUShareURL, getGameItemThumbnailUrl, getHasWishlistOrPopularRecommendations, getMarketingGuildId, getOrderedStorefrontSkuIds, getPrimaryCarouselItemInfo, getSocialLayerStorefrontApplicationId, getSocialLayerStorefrontGuildId, hasPrice, isGameItemSKU, isGiftPriceDifferent, isOnCollectiblesShopGameShopPage, isOnSocialLayerStorefrontPage, isOnSocialLayerStorefrontSkuPage, transformSlayerApplicationStorefrontServer, transformSlayerApplicationStorefrontSummaryServer, transformStorefrontMetadataServer, useGetSocialLayerStorefrontApplicationId, useGetSocialLayerStorefrontGuildIdAndApplication
 
-// Module 5644 (_createForOfIteratorHelperLoose)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import { WishlistRecommendationReason as closure_4 } from "_isNativeReflectConstruct";
-import _callSuper from "_callSuper";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import closure_7 from "_isNativeReflectConstruct";
+// Module 5662 (getPrice)
+import addApplication from "addApplication";
+import { WishlistRecommendationReason as closure_4 } from "fromServer";
+import createExecutable from "createExecutable";
+import createGuildRecordFromRust from "createGuildRecordFromRust";
+import handleUserSettingsStoreUpdate from "handleUserSettingsStoreUpdate";
 import STOREFRONT_MARKETING_GUILD_ID from "STOREFRONT_MARKETING_GUILD_ID";
 import ME from "ME";
 import { CollectibleShopTab } from "items";
 import { CurrencyCodes } from "sum";
 
-let closure_10;
-let closure_11;
+let c10;
+let c9;
 let closure_12;
-let closure_13;
 let closure_14;
-let closure_8;
-let closure_9;
+let map1;
+let metroImportAll;
+let unpackModuleId;
 const require = arg1;
-function _createForOfIteratorHelperLoose(iterable) {
-  let closure_0 = iterable;
-  iterable = "undefined" !== typeof Symbol;
-  if (iterable) {
-    const _Symbol = Symbol;
-    iterable = iterable[Symbol.iterator];
-  }
-  if (!iterable) {
-    iterable = iterable[Symbol.iterator];
-  }
-  if (iterable) {
-    const iter = iterable.call(iterable);
-    const next = iter.next;
-    return next.bind(iter);
-  } else {
-    const _Array = Array;
-    let tmp = iterable;
-    if (!Array.isArray(iterable)) {
-      let tmp2;
-      if (iterable) {
-        if ("string" === typeof iterable) {
-          tmp2 = _arrayLikeToArray(iterable, undefined);
-        } else {
-          const toString = {}.toString;
-          const substr = toString.call(iterable).slice(8, -1);
-          let name = substr;
-          if (tmp3) {
-            name = iterable.constructor.name;
-          }
-          if ("Map" !== name) {
-            if ("Set" !== name) {
-              if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(iterable, undefined);
-              } else {
-                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
-              }
-            }
-            tmp2 = arr;
-          }
-          const _Array2 = Array;
-          arr = Array.from(iterable);
-          const callResult = toString.call(iterable);
-          tmp3 = "Object" === substr && iterable.constructor;
-        }
-      }
-      tmp = tmp2;
-      if (!tmp2) {
-        const _TypeError = TypeError;
-        const typeError = new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
-        throw typeError;
+function getPrice(price) {
+  if (null != price.prices[arg1]) {
+    if (price.prices[arg1].countryPrices.prices.length > 0) {
+      let countryPrices = price.prices[arg1].countryPrices;
+    }
+    if (null != countryPrices) {
+      let first = countryPrices.prices[0];
+    } else {
+      first = null;
+      if (null != price.price) {
+        first = price.price;
       }
     }
-    if (tmp) {
-      closure_0 = tmp;
+    return first;
+  }
+  countryPrices = null;
+  if (null != price.prices[constants2.DEFAULT]) {
+    countryPrices = null;
+    if (price.prices[tmp.DEFAULT].countryPrices.prices.length > 0) {
+      countryPrices = price.prices[tmp.DEFAULT].countryPrices;
     }
-    let c1 = 0;
-    return () => {
-      if (closure_1 >= length.length) {
-        let obj = { done: true };
-      } else {
-        obj = { done: false };
-        closure_1 = tmp3 + 1;
-        obj.value = length[+closure_1];
-      }
-      return obj;
-    };
   }
 }
-function _arrayLikeToArray(arg0, arg1) {
-  let length;
-  if (tmp) {
-    length = arg0.length;
+function hasSocialLayerStorefront(guild) {
+  const storefrontGuildIds = store2.getStorefrontGuildIds();
+  if (storefrontGuildIds.has(guild.id)) {
+    return true;
+  } else if ("type" in guild) {
+    return false;
+  } else {
+    let applicationIdFromGuildId = obj.getApplicationIdFromGuildId(guild.id);
+    if (applicationIdFromGuildId == null) {
+      let length;
+      if (guild != null) {
+        const gameApplicationIds = guild.gameApplicationIds;
+        if (gameApplicationIds != null) {
+          length = gameApplicationIds.length;
+        }
+      }
+      let first;
+      if (1 === length) {
+        first = guild.gameApplicationIds[0];
+      }
+      applicationIdFromGuildId = first;
+    }
+    const storefrontApplicationIds = obj.getStorefrontApplicationIds();
+    const tmp5 = null == applicationIdFromGuildId || !storefrontApplicationIds.has(applicationIdFromGuildId);
+    let tmp6 = !tmp5;
+    if (tmp5) {
+      const features = guild.features;
+      let flag;
+      if (features != null) {
+        flag = features.has(constants.SOCIAL_LAYER_STOREFRONT);
+      }
+      if (flag == null) {
+        flag = false;
+      }
+      tmp6 = flag;
+    }
+    return tmp6;
   }
-  const ArrayResult = Array(length);
-  for (let num = 0; num < length; num = num + 1) {
-    ArrayResult[num] = arg0[num];
+}
+function transformSlayerStorefrontPromotionServer(id) {
+  let obj = { id: id.id, endsAt: null, flavor: null, pdp: null, storefront: null, checkout: null, vcStream: null };
+  let ends_at = id.ends_at;
+  if (ends_at == null) {
+    ends_at = null;
   }
-  return ArrayResult;
+  obj[1] = ends_at;
+  let str = id.flavor;
+  if (str == null) {
+    str = "default";
+  }
+  obj[2] = str;
+  const pdp = id.pdp;
+  let tmp2 = null;
+  if (null != pdp) {
+    obj = { label: null, tooltip: null, icon: null };
+    ({ label: obj2[0], tooltip: obj2[1], icon: obj2[2] } = pdp);
+    tmp2 = obj;
+  }
+  obj[3] = tmp2;
+  let tmp3 = null;
+  if (null != id.storefront) {
+    obj = { headerText: null };
+    obj[0] = id.storefront.header_text;
+    tmp3 = obj;
+  }
+  obj[4] = tmp3;
+  const checkout = id.checkout;
+  let tmp4 = null;
+  if (null != checkout) {
+    ({ label: obj4[0], tooltip: obj4[1], icon: obj4[2] } = checkout);
+    tmp4 = { label: null, tooltip: null, icon: null };
+    const obj1 = { label: null, tooltip: null, icon: null };
+  }
+  obj[5] = tmp4;
+  const vc_stream = id.vc_stream;
+  let tmp5 = null;
+  if (null != vc_stream) {
+    const obj2 = { label: null, tooltip: null, icon: null };
+    ({ label: obj5[0], tooltip: obj5[1], icon: obj5[2] } = vc_stream);
+    tmp5 = obj2;
+  }
+  obj[6] = tmp5;
+  return obj;
+}
+function getSKUShareURL(arg0, applicationId) {
+  let tab;
+  if (null != arg0) {
+    const _location2 = location;
+    const _location3 = location;
+    const parsed = require(5045) /* keysSorter */.parse(location.search);
+    const skuId = parsed.skuId;
+    ({ tab, applicationId } = parsed);
+    let tmp3 = pathname.indexOf(closure_13.COLLECTIBLES_SHOP) >= 0;
+    if (tmp3) {
+      tmp3 = tab === CollectibleShopTab.GAME_SHOPS && applicationId === applicationId.applicationId && true;
+      const tmp2 = tab === CollectibleShopTab.GAME_SHOPS && applicationId === applicationId.applicationId && true;
+    }
+    if (!tmp3) {
+      const _location = location;
+      const _window = window;
+      const _HermesInternal = HermesInternal;
+      let combined = "" + location.protocol + window.GLOBAL_ENV.WEBAPP_ENDPOINT + closure_13.GAME_SHOP(arg0, applicationId.id, applicationId.slug);
+    }
+    return combined;
+  }
+  combined = "" + location.protocol + window.GLOBAL_ENV.WEBAPP_ENDPOINT + closure_13.COLLECTIBLES_SHOP_GAME_SHOP(applicationId.applicationId, undefined, applicationId.id, applicationId.slug);
+}
+({ getChannelsGameShopPrefix: metroImportAll, STOREFRONT_MARKETING_GUILD_ID: c9, STOREFRONT_MARKETING_GUILD_ID_TEST: c10 } = STOREFRONT_MARKETING_GUILD_ID);
+({ GuildFeatures: unpackModuleId, PriceSetAssignmentPurchaseTypes: closure_12, Routes: map1, SKUProductLines: closure_14 } = ME);
+let str = "jpg";
+if (require("_httpGetWithCountryCodeQuery").SUPPORTS_WEBP) {
+  str = "webp";
 }
 function getCountryPrices(arg0, arg1) {
   if (null != arg0.prices[arg1]) {
@@ -112,151 +169,32 @@ function getCountryPrices(arg0, arg1) {
   countryPrices = null;
   if (null != arg0.prices[constants2.DEFAULT]) {
     countryPrices = null;
-    if (arg0.prices[constants2.DEFAULT].countryPrices.prices.length > 0) {
-      countryPrices = arg0.prices[constants2.DEFAULT].countryPrices;
+    if (arg0.prices[tmp.DEFAULT].countryPrices.prices.length > 0) {
+      countryPrices = arg0.prices[tmp.DEFAULT].countryPrices;
     }
   }
 }
-function getPrice(price) {
-  const tmp = getCountryPrices(price, arg1);
-  if (null != tmp) {
-    let first = tmp.prices[0];
-  } else {
-    first = null;
-    if (null != price.price) {
-      first = price.price;
-    }
-  }
-  return first;
-}
-function hasSocialLayerStorefront(guild) {
-  const storefrontGuildIds = store2.getStorefrontGuildIds();
-  if (storefrontGuildIds.has(guild.id)) {
-    return true;
-  } else if ("type" in guild) {
-    return false;
-  } else {
-    const tmp3 = getSocialLayerStorefrontApplicationIdHelper(guild, store2.getApplicationIdFromGuildId(guild.id));
-    const storefrontApplicationIds = store2.getStorefrontApplicationIds();
-    const tmp6 = null == tmp3 || !storefrontApplicationIds.has(tmp3);
-    let tmp7 = !tmp6;
-    if (tmp6) {
-      const features = guild.features;
-      let hasItem;
-      if (null != features) {
-        hasItem = features.has(constants.SOCIAL_LAYER_STOREFRONT);
-      }
-      tmp7 = null != hasItem && hasItem;
-      const tmp10 = null != hasItem && hasItem;
-    }
-    return tmp7;
-  }
-}
-function transformSlayerStorefrontPromotionLabelSectionServer(checkout) {
-  let tmp = null;
-  if (null != checkout) {
-    const obj = {};
-    ({ label: obj.label, tooltip: obj.tooltip, icon: obj.icon } = checkout);
-    tmp = obj;
-  }
-  return tmp;
-}
-function transformSlayerStorefrontPromotionServer(id) {
-  let obj = { id: id.id };
-  const ends_at = id.ends_at;
-  let tmp = null;
-  if (null != ends_at) {
-    tmp = ends_at;
-  }
-  obj.endsAt = tmp;
-  const flavor = id.flavor;
-  let str = "default";
-  if (null != flavor) {
-    str = flavor;
-  }
-  obj.flavor = str;
-  obj.pdp = transformSlayerStorefrontPromotionLabelSectionServer(id.pdp);
-  let tmp2 = null;
-  if (null != id.storefront) {
-    obj = { headerText: id.storefront.header_text };
-    tmp2 = obj;
-  }
-  obj.storefront = tmp2;
-  obj.checkout = transformSlayerStorefrontPromotionLabelSectionServer(id.checkout);
-  obj.vcStream = transformSlayerStorefrontPromotionLabelSectionServer(id.vc_stream);
-  return obj;
-}
-function parseServerDate(published_at) {
-  if (null == published_at) {
-    return null;
-  } else {
-    const _Date = Date;
-    const date = new Date(published_at);
-    const _Number = Number;
-    let tmp6 = null;
-    if (!Number.isNaN(date.getTime())) {
-      tmp6 = date;
-    }
-    return tmp6;
-  }
-}
-function isOnCollectiblesShopGameShopPage(pathname, search, applicationId, skuId) {
+function isOnCollectiblesShopGameShopPage(arr) {
+  let applicationId;
+  let skuId;
   let tab;
-  const parsed = require(5023) /* encode */.parse(search);
+  const parsed = require(5045) /* keysSorter */.parse(arg1);
   ({ tab, applicationId, skuId } = parsed);
-  let tmp2 = pathname.indexOf(closure_13.COLLECTIBLES_SHOP) >= 0;
+  let tmp2 = arr.indexOf(closure_13.COLLECTIBLES_SHOP) >= 0;
   if (tmp2) {
     let tmp4 = tab === CollectibleShopTab.GAME_SHOPS;
     if (tmp4) {
-      tmp4 = applicationId === applicationId;
+      tmp4 = applicationId === arg2;
     }
     if (tmp4) {
-      tmp4 = null == skuId || skuId === skuId;
-      const tmp7 = null == skuId || skuId === skuId;
+      tmp4 = null == arg3 || skuId === arg3;
+      const tmp8 = null == arg3 || skuId === arg3;
     }
     tmp2 = tmp4;
   }
   return tmp2;
 }
-function getSKUShareURL(arg0, applicationId) {
-  if (null != arg0) {
-    const _location2 = location;
-    const _location3 = location;
-    if (!isOnCollectiblesShopGameShopPage(location.pathname, location.search, applicationId.applicationId)) {
-      const _location = location;
-      const _window = window;
-      const _HermesInternal = HermesInternal;
-      let combined = "" + location.protocol + window.GLOBAL_ENV.WEBAPP_ENDPOINT + closure_13.GAME_SHOP(arg0, applicationId.id, applicationId.slug);
-    }
-    return combined;
-  }
-  combined = "" + location.protocol + window.GLOBAL_ENV.WEBAPP_ENDPOINT + closure_13.COLLECTIBLES_SHOP_GAME_SHOP(applicationId.applicationId, undefined, applicationId.id, applicationId.slug);
-}
-function getSocialLayerStorefrontApplicationIdHelper(guild, applicationIdFromGuildId) {
-  let tmp = applicationIdFromGuildId;
-  if (null == applicationIdFromGuildId) {
-    let length;
-    if (null != guild) {
-      const gameApplicationIds = guild.gameApplicationIds;
-      if (null != gameApplicationIds) {
-        length = gameApplicationIds.length;
-      }
-    }
-    let first;
-    if (1 === length) {
-      first = guild.gameApplicationIds[0];
-    }
-    tmp = first;
-  }
-  return tmp;
-}
-({ getChannelsGameShopPrefix: closure_8, STOREFRONT_MARKETING_GUILD_ID: closure_9, STOREFRONT_MARKETING_GUILD_ID_TEST: closure_10 } = STOREFRONT_MARKETING_GUILD_ID);
-({ GuildFeatures: closure_11, PriceSetAssignmentPurchaseTypes: closure_12, Routes: closure_13, SKUProductLines: closure_14 } = ME);
-let str = "jpg";
-if (require("_httpGetWithCountryCodeQuery").SUPPORTS_WEBP) {
-  str = "webp";
-}
-let result = require("_callSuper").fileFinishedImporting("modules/slayer_storefront/SlayerStorefrontUtils.tsx");
+let result = require("createExecutable").fileFinishedImporting("modules/slayer_storefront/SlayerStorefrontUtils.tsx");
 
 export const LARGE_ASSET_FORMAT = str;
 export const hasPrice = function hasPrice(price) {
@@ -269,89 +207,69 @@ export const hasPrice = function hasPrice(price) {
 export { getCountryPrices };
 export { getPrice };
 export const isGiftPriceDifferent = function isGiftPriceDifferent(arg0) {
-  let tmp = getPrice(arg0, constants2.DEFAULT);
-  if (null == tmp) {
-    let obj = { amount: 0, currency: CurrencyCodes.USD };
-    tmp = obj;
-  }
-  let tmp3 = getPrice(arg0, constants2.GIFT);
-  if (null == tmp3) {
-    obj = { amount: 0, currency: CurrencyCodes.USD };
+  let tmp3 = getPrice(arg0, constants2.DEFAULT);
+  if (tmp3 == null) {
+    let obj = { amount: 0, currency: null };
+    obj[1] = CurrencyCodes.USD;
     tmp3 = obj;
   }
-  return tmp.currency !== tmp3.currency || tmp.amount !== tmp3.amount;
+  let tmpResult = getPrice(arg0, constants2.GIFT);
+  if (tmpResult == null) {
+    obj = { amount: 0, currency: null };
+    obj[1] = CurrencyCodes.USD;
+    tmpResult = obj;
+  }
+  return tmp3.currency !== tmpResult.currency || tmp3.amount !== tmpResult.amount;
 };
-export const getOrderedStorefrontSkuIds = function getOrderedStorefrontSkuIds(pages) {
-  let iter11;
+export const getOrderedStorefrontSkuIds = function getOrderedStorefrontSkuIds(arg0) {
   const set = new Set();
   const items = [];
-  const tmp = _createForOfIteratorHelperLoose(pages.pages);
-  const iter = tmp();
-  let iter2 = iter;
-  if (!iter.done) {
-    do {
-      let value = iter2.value;
-      let tmp3 = _createForOfIteratorHelperLoose;
-      let tmp4 = _createForOfIteratorHelperLoose(value.skuIds);
-      let iter3 = tmp4();
-      if (!iter3.done) {
-        do {
-          value = iter3.value;
-          if (!set.has(value)) {
-            let addResult = set.add(value);
-            let arr = items.push(value);
-          }
-          iter4 = tmp4();
-          iter3 = iter4;
-          let tmp7 = value;
-        } while (!iter4.done);
+  const iter = arg0.pages[Symbol.iterator]();
+  const nextResult = iter.next();
+  while (iter !== undefined) {
+    let skuIds = nextResult.skuIds;
+    let tmp3 = skuIds;
+    let tmp4 = skuIds;
+    let tmp2 = nextResult;
+    for (const item10024 of skuIds) {
+      let tmp5 = item10024;
+      if (!set.has(item10024)) {
+        let tmp6 = item10024;
+        let addResult = set.add(tmp5);
+        let arr = items.push(tmp5);
       }
-      let sections = value.sections;
-      let tmp8 = _createForOfIteratorHelperLoose;
-      if (null == sections) {
-        sections = [];
+      continue;
+    }
+    let tmp9 = nextResult;
+    let sections = tmp2.sections;
+    if (sections == null) {
+      sections = [];
+    }
+    let tmp10 = sections;
+    let tmp11 = sections;
+    for (const item10040 of sections) {
+      let skuIds2 = item10040.skuIds;
+      let tmp12 = skuIds2;
+      let tmp13 = skuIds2;
+      for (const item10046 of skuIds2) {
+        let tmp14 = item10046;
+        if (!set.has(item10046)) {
+          let tmp15 = item10046;
+          let addResult1 = set.add(tmp14);
+          arr = items.push(tmp14);
+        }
+        continue;
       }
-      let tmp8Result = tmp8(sections);
-      let iter5 = tmp8Result();
-      let iter6 = iter5;
-      let tmp10 = tmp2;
-      if (!iter5.done) {
-        do {
-          let tmp11 = _createForOfIteratorHelperLoose;
-          let tmp12 = _createForOfIteratorHelperLoose(iter6.value.skuIds);
-          let iter7 = tmp12();
-          let iter8 = iter7;
-          let tmp13 = iter7;
-          if (!iter7.done) {
-            do {
-              value = iter8.value;
-              if (!set.has(value)) {
-                let addResult1 = set.add(value);
-                arr = items.push(value);
-              }
-              iter9 = tmp12();
-              iter8 = iter9;
-              tmp13 = iter9;
-              tmp10 = value;
-            } while (!iter9.done);
-          }
-          iter10 = tmp8Result();
-          let tmp16 = tmp13;
-          iter6 = iter10;
-          let tmp17 = tmp12;
-          tmp2 = tmp10;
-        } while (!iter10.done);
-      }
-      iter11 = tmp();
-      iter2 = iter11;
-    } while (!iter11.done);
+      continue;
+    }
+    continue;
   }
   return items;
 };
-export const isGameItemSKU = function isGameItemSKU(stateFromStores2) {
-  let tmp = null != stateFromStores2;
+export const isGameItemSKU = function isGameItemSKU(stateFromStores1) {
+  let tmp = null != stateFromStores1;
   if (tmp) {
-    tmp = stateFromStores2.productLine === constants3.SOCIAL_LAYER_GAME_ITEM;
+    tmp = stateFromStores1.productLine === constants3.SOCIAL_LAYER_GAME_ITEM;
   }
   return tmp;
 };
@@ -368,85 +286,105 @@ export const getMarketingGuildId = function getMarketingGuildId() {
 };
 export { hasSocialLayerStorefront };
 export const transformStorefrontMetadataServer = function transformStorefrontMetadataServer(body) {
-  const obj = {};
-  const logo_asset_id = body.logo_asset_id;
-  let tmp = null;
-  if (null != logo_asset_id) {
-    tmp = logo_asset_id;
+  let logo_asset_id = body.logo_asset_id;
+  if (logo_asset_id == null) {
+    logo_asset_id = null;
   }
-  obj.logoAssetId = tmp;
-  const light_theme_logo_asset_id = body.light_theme_logo_asset_id;
-  let tmp2 = null;
-  if (null != light_theme_logo_asset_id) {
-    tmp2 = light_theme_logo_asset_id;
+  const obj = { logoAssetId: logo_asset_id, lightThemeLogoAssetId: null };
+  let prop = body.light_theme_logo_asset_id;
+  if (prop == null) {
+    prop = null;
   }
-  obj.lightThemeLogoAssetId = tmp2;
+  obj[1] = prop;
   return obj;
 };
 export const transformSlayerApplicationStorefrontSummaryServer = function transformSlayerApplicationStorefrontSummaryServer(id) {
-  const obj = { id: id.id, publishedAt: parseServerDate(id.published_at), title: id.title };
-  const logo_asset_id = id.logo_asset_id;
+  let logo_asset_id;
+  const obj = { id: id.id, publishedAt: null, title: null, logoAssetId: null, lightThemeLogoAssetId: null };
+  const published_at = id.published_at;
   let tmp = null;
-  if (null != logo_asset_id) {
-    tmp = logo_asset_id;
+  if (null != published_at) {
+    const _Date = Date;
+    const date = new Date(published_at);
+    const _Number = Number;
+    let tmp7 = null;
+    if (!Number.isNaN(date.getTime())) {
+      tmp7 = date;
+    }
+    tmp = tmp7;
   }
-  obj.logoAssetId = tmp;
-  const light_theme_logo_asset_id = id.light_theme_logo_asset_id;
-  let tmp2 = null;
-  if (null != light_theme_logo_asset_id) {
-    tmp2 = light_theme_logo_asset_id;
+  obj[1] = tmp;
+  ({ title: obj[2], logo_asset_id } = id);
+  if (logo_asset_id == null) {
+    logo_asset_id = null;
   }
-  obj.lightThemeLogoAssetId = tmp2;
+  obj[3] = logo_asset_id;
+  let prop = id.light_theme_logo_asset_id;
+  if (prop == null) {
+    prop = null;
+  }
+  obj[4] = prop;
   return obj;
 };
 export const transformSlayerApplicationStorefrontServer = function transformSlayerApplicationStorefrontServer(body) {
-  let obj = {
-    id: body.id,
-    publishedAt: parseServerDate(body.published_at),
-    applicationId: body.application_id,
-    title: body.title,
-    logoAssetId: body.logo_asset_id,
-    lightThemeLogoAssetId: body.light_theme_logo_asset_id,
-    pages: pages.map((title) => {
-      let obj = { title: title.title };
-      let tmp;
-      if (null != title.leaderboard) {
-        obj = { title: title.leaderboard.title, description: title.leaderboard.description, backgroundImageAssetId: title.leaderboard.background_image_asset_id };
-        tmp = obj;
-      }
-      obj.leaderboard = tmp;
-      obj.skuIds = title.sku_ids;
-      let mapped;
-      if (null != title.sections) {
-        const sections = title.sections;
-        mapped = sections.map((title) => ({ title: title.title, skuIds: title.sku_ids }));
-      }
-      obj.sections = mapped;
-      return obj;
-    })
-  };
-  pages = body.pages;
-  obj.assets = importDefault(22).keyBy(body.assets, "id");
+  let pages;
+  let obj = { id: body.id, publishedAt: null, applicationId: null, title: null, logoAssetId: null, lightThemeLogoAssetId: null, pages: null, assets: null, application: null, storefrontPricing: null, promotions: null };
+  const published_at = body.published_at;
+  let tmp = null;
+  if (null != published_at) {
+    const _Date = Date;
+    const date = new Date(published_at);
+    const _Number = Number;
+    let tmp7 = null;
+    if (!Number.isNaN(date.getTime())) {
+      tmp7 = date;
+    }
+    tmp = tmp7;
+  }
+  obj[1] = tmp;
+  ({ application_id: obj[2], title: obj[3], logo_asset_id: obj[4], light_theme_logo_asset_id: obj[5], pages } = body);
+  obj[6] = pages.map((title) => {
+    let obj = { title: title.title, leaderboard: null, skuIds: null, sections: null };
+    let tmp;
+    if (null != title.leaderboard) {
+      obj = { title: null, description: null, backgroundImageAssetId: null };
+      obj[0] = title.leaderboard.title;
+      obj[1] = title.leaderboard.description;
+      obj[2] = title.leaderboard.background_image_asset_id;
+      tmp = obj;
+    }
+    obj[1] = tmp;
+    obj[2] = title.sku_ids;
+    let mapped;
+    if (null != title.sections) {
+      const sections = title.sections;
+      mapped = sections.map((title) => ({ title: title.title, skuIds: title.sku_ids }));
+    }
+    obj[3] = mapped;
+    return obj;
+  });
+  obj[7] = importDefault(12).keyBy(body.assets, "id");
   let fromServer;
   if (null != body.application) {
-    fromServer = _callSuper.createFromServer(body.application);
+    fromServer = createExecutable.createFromServer(body.application);
   }
-  obj.application = fromServer;
+  obj[8] = fromServer;
   let result;
   if (null != body.storefront_pricing) {
-    result = require(5648) /* transformStorefrontSKUPricesServer */.transformStorefrontPricesServer(body.storefront_pricing);
-    const obj3 = require(5648) /* transformStorefrontSKUPricesServer */;
+    result = require(5666) /* useSKUPrice */.transformStorefrontPricesServer(body.storefront_pricing);
+    const obj4 = require(5666) /* useSKUPrice */;
   }
-  obj.storefrontPricing = result;
-  const obj2 = importDefault(22);
+  obj[9] = result;
+  const obj3 = importDefault(12);
+  const tmp8 = importDefault;
   let promotions = body.promotions;
-  if (null == promotions) {
+  if (promotions == null) {
     promotions = {};
   }
-  obj.promotions = importDefault(22).mapValues(promotions, transformSlayerStorefrontPromotionServer);
+  obj[10] = importDefault(12).mapValues(promotions, transformSlayerStorefrontPromotionServer);
   return obj;
 };
-export const getPrimaryCarouselItemInfo = function getPrimaryCarouselItemInfo(tenantMetadata, application_id) {
+export const getPrimaryCarouselItemInfo = function getPrimaryCarouselItemInfo(tenantMetadata) {
   let obj = arg2;
   if (arg2 === undefined) {
     obj = {};
@@ -456,13 +394,13 @@ export const getPrimaryCarouselItemInfo = function getPrimaryCarouselItemInfo(te
   if (undefined !== size) {
     num = size;
   }
-  if (null != application_id) {
+  if (null != arg1) {
     let carouselItems;
-    if (null != tenantMetadata) {
+    if (tenantMetadata != null) {
       tenantMetadata = tenantMetadata.tenantMetadata;
-      if (null != tenantMetadata) {
+      if (tenantMetadata != null) {
         const socialLayer = tenantMetadata.socialLayer;
-        if (null != socialLayer) {
+        if (socialLayer != null) {
           carouselItems = socialLayer.carouselItems;
         }
       }
@@ -471,24 +409,20 @@ export const getPrimaryCarouselItemInfo = function getPrimaryCarouselItemInfo(te
       if (0 !== tenantMetadata.tenantMetadata.socialLayer.carouselItems.length) {
         const first = tenantMetadata.tenantMetadata.socialLayer.carouselItems[0];
         if (null == first.labelIconAssetId) {
-          obj = { primaryIconAsset: undefined, primaryIconLabel: undefined };
+          obj = { primaryIconAsset: "dispatch", primaryIconLabel: "isArray" };
         } else {
-          obj = {};
-          const obj4 = require(4404) /* _httpGetWithCountryCodeQuery */;
-          const toURLSafeResult = importDefault(1443).toURLSafe(obj4.getAssetURL(application_id, first.labelIconAssetId, num, "webp"));
-          let tmp9;
-          if (null != toURLSafeResult) {
-            tmp9 = toURLSafeResult;
-          }
-          obj.primaryIconAsset = tmp9;
-          obj.primaryIconLabel = first.label;
-          const obj3 = importDefault(1443);
+          const obj3 = require(4427) /* _httpGetWithCountryCodeQuery */;
+          const toURLSafeResult = importDefault(1467).toURLSafe(obj3.getAssetURL(arg1, first.labelIconAssetId, num, "webp"));
+          obj = { primaryIconAsset: null, primaryIconLabel: null };
+          obj[0] = toURLSafeResult;
+          obj[1] = first.label;
+          const obj2 = importDefault(1467);
         }
         return obj;
       }
     }
   }
-  return { primaryIconAsset: undefined, primaryIconLabel: undefined };
+  return { primaryIconAsset: "dispatch", primaryIconLabel: "isArray" };
 };
 export const getGameItemThumbnailUrl = function getGameItemThumbnailUrl(error) {
   let obj = arg1;
@@ -502,8 +436,8 @@ export const getGameItemThumbnailUrl = function getGameItemThumbnailUrl(error) {
   }
   if (null != error) {
     if (null != error.thumbnailAssetId) {
-      const obj3 = require(4404) /* _httpGetWithCountryCodeQuery */;
-      return importDefault(1443).toURLSafe(obj3.getAssetURL(error.applicationId, error.thumbnailAssetId, num, "webp"));
+      const obj3 = require(4427) /* _httpGetWithCountryCodeQuery */;
+      return importDefault(1467).toURLSafe(obj3.getAssetURL(error.applicationId, error.thumbnailAssetId, num, "webp"));
     }
   }
 };
@@ -517,30 +451,30 @@ export const getCardImageURL = function getCardImageURL(sku, arg1) {
   if (undefined !== size) {
     num = size;
   }
-  if (null != sku) {
+  if (sku != null) {
     const applicationId = sku.applicationId;
   }
   let cardImageAssetId;
-  if (null != sku) {
+  if (sku != null) {
     const tenantMetadata = sku.tenantMetadata;
-    if (null != tenantMetadata) {
+    if (tenantMetadata != null) {
       const socialLayer = tenantMetadata.socialLayer;
-      if (null != socialLayer) {
+      if (socialLayer != null) {
         cardImageAssetId = socialLayer.cardImageAssetId;
       }
     }
   }
-  if (null == cardImageAssetId) {
+  if (cardImageAssetId == null) {
     let thumbnailAssetId;
-    if (null != sku) {
+    if (sku != null) {
       thumbnailAssetId = sku.thumbnailAssetId;
     }
     cardImageAssetId = thumbnailAssetId;
   }
   if (null != cardImageAssetId) {
     if (null != applicationId) {
-      const obj3 = require(4404) /* _httpGetWithCountryCodeQuery */;
-      return importDefault(1443).toURLSafe(obj3.getAssetURL(applicationId, cardImageAssetId, num, "webp"));
+      const obj3 = require(4427) /* _httpGetWithCountryCodeQuery */;
+      return importDefault(1467).toURLSafe(obj3.getAssetURL(applicationId, cardImageAssetId, num, "webp"));
     }
   }
 };
@@ -555,23 +489,23 @@ export const getCardBackgroundImageURL = function getCardBackgroundImageURL(sku,
     num = size;
   }
   let prop;
-  if (null != sku) {
+  if (sku != null) {
     const tenantMetadata = sku.tenantMetadata;
-    if (null != tenantMetadata) {
+    if (tenantMetadata != null) {
       const socialLayer = tenantMetadata.socialLayer;
-      if (null != socialLayer) {
+      if (socialLayer != null) {
         prop = socialLayer.cardBackgroundImageAssetId;
       }
     }
   }
   if (null != prop) {
     let applicationId;
-    if (null != sku) {
+    if (sku != null) {
       applicationId = sku.applicationId;
     }
     if (null != applicationId) {
-      const obj3 = require(4404) /* _httpGetWithCountryCodeQuery */;
-      return importDefault(1443).toURLSafe(obj3.getAssetURL(sku.applicationId, sku.tenantMetadata.socialLayer.cardBackgroundImageAssetId, num, str));
+      const obj3 = require(4427) /* _httpGetWithCountryCodeQuery */;
+      return importDefault(1467).toURLSafe(obj3.getAssetURL(sku.applicationId, sku.tenantMetadata.socialLayer.cardBackgroundImageAssetId, num, str));
     }
   }
 };
@@ -580,8 +514,8 @@ export { getSKUShareURL };
 export const getForwardedSKUShareURL = function getForwardedSKUShareURL(arg0, applicationId) {
   return "" + getSKUShareURL(arg0, applicationId) + "\n\n";
 };
-export const canSeeGameShop = function canSeeGameShop(guildId) {
-  const guild = store.getGuild(guildId);
+export const canSeeGameShop = function canSeeGameShop(id) {
+  const guild = store.getGuild(id);
   let tmp2 = null != guild;
   if (tmp2) {
     tmp2 = hasSocialLayerStorefront(guild);
@@ -594,119 +528,170 @@ export const getHasWishlistOrPopularRecommendations = function getHasWishlistOrP
   if (0 === arr.length) {
     let obj = { hasWishlist: false, hasPopular: false };
   } else {
-    obj = {
-      hasWishlist: arr.some((arg0) => {
-          let obj = dependencyMap[arg0.id];
-          if (null == obj) {
-            obj = {};
+    obj = { hasWishlist: null, hasPopular: null };
+    obj[0] = arr.some((arg0) => {
+      let obj = dependencyMap[arg0.id];
+      if (obj == null) {
+        obj = {};
+      }
+      const entries = Object.entries(obj);
+      return entries.some((arg0) => {
+        let tmp;
+        let tmp2;
+        [tmp, tmp2] = arg0;
+        let hasItem = tmp2 === outer1_4.WISHLIST;
+        if (hasItem) {
+          hasItem = set.has(tmp);
+        }
+        return hasItem;
+      });
+    });
+    obj[1] = arr.some((arg0) => {
+      let everyResult = null == tmp;
+      if (!everyResult) {
+        const _Object = Object;
+        const entries = Object.entries(tmp);
+        everyResult = entries.every((arg0) => {
+          let tmp;
+          let tmp2;
+          [tmp, tmp2] = arg0;
+          let hasItem = tmp2 === outer1_4.RECOMMENDATION;
+          if (hasItem) {
+            hasItem = set.has(tmp);
           }
-          const entries = Object.entries(obj);
-          return entries.some((arg0) => {
-            let tmp;
-            let tmp2;
-            [tmp, tmp2] = arg0;
-            let hasItem = tmp2 === outer2_4.WISHLIST;
-            if (hasItem) {
-              hasItem = outer1_1.has(tmp);
-            }
-            return hasItem;
-          });
-        }),
-      hasPopular: arr.some((arg0) => {
-          let everyResult = null == tmp;
-          if (!everyResult) {
-            const _Object = Object;
-            const entries = Object.entries(tmp);
-            everyResult = entries.every((arg0) => {
-              let tmp;
-              let tmp2;
-              [tmp, tmp2] = arg0;
-              let hasItem = tmp2 === outer2_4.RECOMMENDATION;
-              if (hasItem) {
-                hasItem = outer1_1.has(tmp);
-              }
-              if (!hasItem) {
-                hasItem = !outer1_1.has(tmp);
-              }
-              return hasItem;
-            });
+          if (!hasItem) {
+            hasItem = !set.has(tmp);
           }
-          return everyResult;
-        })
-    };
+          return hasItem;
+        });
+      }
+      return everyResult;
+    });
   }
   return obj;
 };
-export const isOnSocialLayerStorefrontPage = function isOnSocialLayerStorefrontPage(arr, search, applicationId) {
-  let tmp = isOnCollectiblesShopGameShopPage(arr, search, applicationId);
-  if (!tmp) {
-    let tmp3 = null != arg3;
-    if (tmp3) {
-      tmp3 = arr.indexOf(callback(arg3)) >= 0;
+export const isOnSocialLayerStorefrontPage = function isOnSocialLayerStorefrontPage(arr) {
+  let applicationId;
+  let tab;
+  const parsed = require(5045) /* keysSorter */.parse(arg1);
+  ({ tab, applicationId } = parsed);
+  let tmp2 = arr.indexOf(closure_13.COLLECTIBLES_SHOP) >= 0;
+  if (tmp2) {
+    let flag = tab === CollectibleShopTab.GAME_SHOPS;
+    if (flag) {
+      flag = applicationId === arg2;
     }
-    tmp = tmp3;
+    if (flag) {
+      flag = true;
+    }
+    tmp2 = flag;
   }
-  return tmp;
+  if (!tmp2) {
+    let tmp7 = null != arg3;
+    if (tmp7) {
+      tmp7 = arr.indexOf(callback(arg3)) >= 0;
+    }
+    tmp2 = tmp7;
+  }
+  return tmp2;
 };
 export const isOnSocialLayerStorefrontSkuPage = function isOnSocialLayerStorefrontSkuPage(applicationId) {
   let guildId;
   let pageIndex;
   let pathname;
-  let search;
   let skuId;
-  ({ pathname, search, pageIndex } = applicationId);
+  let skuId2;
+  let tab;
+  ({ pathname, pageIndex } = applicationId);
   if (pageIndex === undefined) {
     pageIndex = 0;
   }
   ({ guildId, skuId } = applicationId);
-  let tmp = isOnCollectiblesShopGameShopPage(pathname, search, applicationId.applicationId, skuId);
-  if (!tmp) {
+  const parsed = require(5045) /* keysSorter */.parse(applicationId.search);
+  ({ tab, applicationId, skuId: skuId2 } = parsed);
+  let tmp2 = pathname.indexOf(closure_13.COLLECTIBLES_SHOP) >= 0;
+  if (tmp2) {
+    let tmp4 = tab === CollectibleShopTab.GAME_SHOPS && applicationId === applicationId.applicationId;
+    if (tmp4) {
+      tmp4 = null == skuId || skuId2 === skuId;
+      const tmp6 = null == skuId || skuId2 === skuId;
+    }
+    tmp2 = tmp4;
+  }
+  if (!tmp2) {
     let hasItem = null != guildId;
     if (hasItem) {
       hasItem = pathname.includes(closure_13.CHANNELS_GAME_SHOP(guildId, pageIndex, skuId));
     }
-    tmp = hasItem;
+    tmp2 = hasItem;
   }
-  return tmp;
+  return tmp2;
 };
 export const useGetSocialLayerStorefrontGuildIdAndApplication = function useGetSocialLayerStorefrontGuildIdAndApplication(applicationId) {
   const _require = applicationId;
-  let obj = _require(566);
-  const items = [closure_7];
-  let stateFromStores = obj.useStateFromStores(items, () => outer1_7.getGuildIdFromApplicationId(closure_0));
-  const getOrFetchApplication = _require(5503).useGetOrFetchApplication(applicationId);
-  obj = {};
-  if (null == stateFromStores) {
-    let guildId;
-    if (null != getOrFetchApplication) {
-      guildId = getOrFetchApplication.guildId;
+  const items = [handleUserSettingsStoreUpdate];
+  const stateFromStores = _require(589).useStateFromStores(items, () => outer1_7.getGuildIdFromApplicationId(closure_0));
+  const obj = _require(589);
+  const application = _require(5521).useGetOrFetchApplication(applicationId);
+  let guildId = stateFromStores;
+  if (stateFromStores == null) {
+    guildId = undefined;
+    if (application != null) {
+      guildId = application.guildId;
     }
-    stateFromStores = guildId;
   }
-  obj.guildId = stateFromStores;
-  obj.application = getOrFetchApplication;
-  return obj;
+  return { guildId, application };
 };
 export const getSocialLayerStorefrontApplicationId = function getSocialLayerStorefrontApplicationId(guildId) {
-  const applicationIdFromGuildId = store2.getApplicationIdFromGuildId(guildId);
-  return getSocialLayerStorefrontApplicationIdHelper(store.getGuild(guildId), applicationIdFromGuildId);
+  let applicationIdFromGuildId = store2.getApplicationIdFromGuildId(guildId);
+  const guild = store.getGuild(guildId);
+  if (applicationIdFromGuildId == null) {
+    let length;
+    if (guild != null) {
+      const gameApplicationIds = guild.gameApplicationIds;
+      if (gameApplicationIds != null) {
+        length = gameApplicationIds.length;
+      }
+    }
+    let first;
+    if (1 === length) {
+      first = guild.gameApplicationIds[0];
+    }
+    applicationIdFromGuildId = first;
+  }
+  return applicationIdFromGuildId;
 };
 export const useGetSocialLayerStorefrontApplicationId = function useGetSocialLayerStorefrontApplicationId(arg0) {
   const _require = arg0;
-  const items = [closure_7];
-  const stateFromStores = _require(566).useStateFromStores(items, () => outer1_7.getApplicationIdFromGuildId(closure_0));
-  const obj = _require(566);
-  const items1 = [_createForOfIteratorHelperLoose];
+  const items = [handleUserSettingsStoreUpdate];
+  let stateFromStores = _require(589).useStateFromStores(items, () => outer1_7.getApplicationIdFromGuildId(closure_0));
+  const obj = _require(589);
+  const items1 = [createGuildRecordFromRust];
   const items2 = [arg0];
-  return getSocialLayerStorefrontApplicationIdHelper(_require(566).useStateFromStores(items1, () => outer1_6.getGuild(closure_0), items2), stateFromStores);
+  const stateFromStores1 = _require(589).useStateFromStores(items1, () => outer1_6.getGuild(closure_0), items2);
+  if (stateFromStores == null) {
+    let length;
+    if (stateFromStores1 != null) {
+      const gameApplicationIds = stateFromStores1.gameApplicationIds;
+      if (gameApplicationIds != null) {
+        length = gameApplicationIds.length;
+      }
+    }
+    let first;
+    if (1 === length) {
+      first = stateFromStores1.gameApplicationIds[0];
+    }
+    stateFromStores = first;
+  }
+  return stateFromStores;
 };
 export const getSocialLayerStorefrontGuildId = function getSocialLayerStorefrontGuildId(applicationId) {
   if (null != applicationId) {
     let guildIdFromApplicationId = store2.getGuildIdFromApplicationId(applicationId);
-    if (null == guildIdFromApplicationId) {
+    if (guildIdFromApplicationId == null) {
       application = application.getApplication(applicationId);
       let guildId;
-      if (null != application) {
+      if (application != null) {
         guildId = application.guildId;
       }
       guildIdFromApplicationId = guildId;

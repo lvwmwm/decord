@@ -1,11 +1,11 @@
-// Module ID: 13831
-// Function ID: 105894
+// Module ID: 13852
+// Function ID: 13853
 // Name: handleSensitiveMediaFilterPress
-// Dependencies: [1850, 5847, 9077, 1282, 1212, 5844, 6726, 6728, 4133, 13832, 1935, 5859, 5862, 2]
+// Dependencies: [1874, 5865, 9101, 1306, 1236, 5862, 6747, 6749, 4157, 13853, 1959, 5877, 5880, 2]
 // Exports: handleSensitiveMediaFilterPress, shouldAgeVerifyForSearchMedia
 
-// Module 13831 (handleSensitiveMediaFilterPress)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 13852 (handleSensitiveMediaFilterPress)
+import mergeGuildAvatar from "mergeGuildAvatar";
 import { EXPLICIT_MEDIA_SETTINGS_ACTION_SHEET_KEY as closure_4 } from "USER_SETTING_ACTION_SHEET_KEY";
 import { SearchMediaTypes } from "SearchAutocompleteSelectAnalyticsActions";
 
@@ -21,94 +21,105 @@ export const handleSensitiveMediaFilterPress = function handleSensitiveMediaFilt
   ({ handlePress: require, excluded } = arg0);
   ({ title, subtitle, currentValue } = arg0);
   currentUser = currentUser.getCurrentUser();
-  if (null != currentUser) {
+  if (currentUser != null) {
     const nsfwAllowed = currentUser.nsfwAllowed;
   }
+  let hasItem;
+  if (excluded != null) {
+    hasItem = excluded.includes(require(1306) /* create */.ExplicitContentRedaction.SHOW);
+  }
+  let tmp5 = !hasItem;
+  if (!hasItem) {
+    tmp5 = nsfwAllowed;
+  }
   const items = [];
-  let hasItem = null != excluded;
-  if (hasItem) {
-    hasItem = excluded.includes(require(1282) /* _callSuper */.ExplicitContentRedaction.SHOW);
-  }
-  if (!hasItem) {
-    hasItem = !nsfwAllowed;
-  }
-  if (!hasItem) {
-    let obj = { value: require(1282) /* _callSuper */.ExplicitContentRedaction.SHOW };
-    const intl = require(1212) /* getSystemLocale */.intl;
-    obj.label = intl.string(require(1212) /* getSystemLocale */.t["5k5OFp"]);
-    obj.onPress = function onPress() {
+  if (tmp5) {
+    let obj = { value: null, label: null, onPress: null };
+    obj[0] = require(1306) /* create */.ExplicitContentRedaction.SHOW;
+    const intl = require(1236) /* getSystemLocale */.intl;
+    obj[1] = intl.string(require(1236) /* getSystemLocale */.t["5k5OFp"]);
+    obj[2] = function onPress() {
       let obj = outer1_0(outer1_2[5]);
       if (obj.shouldAgeVerifyForExplicitMedia()) {
-        obj = { entryPoint: outer1_0(outer1_2[7]).AgeVerificationModalEntryPoint.OBSCURED_MEDIA };
-        const result = outer1_1(outer1_2[6]).showAgeVerificationGetStartedModal(obj);
-        const obj2 = outer1_1(outer1_2[6]);
+        obj = { entryPoint: null };
+        obj[0] = tmp(tmp2[7]).AgeVerificationModalEntryPoint.OBSCURED_MEDIA;
+        const result = outer1_1(tmp2[6]).showAgeVerificationGetStartedModal(obj);
+        const obj2 = outer1_1(tmp2[6]);
       } else {
-        callback(outer1_0(outer1_2[3]).ExplicitContentRedaction.SHOW);
+        callback(tmp(tmp2[3]).ExplicitContentRedaction.SHOW);
       }
     };
     items.push(obj);
   }
-  let hasItem1 = null != excluded;
-  if (hasItem1) {
-    hasItem1 = excluded.includes(require(1282) /* _callSuper */.ExplicitContentRedaction.BLUR);
+  let hasItem1;
+  if (excluded != null) {
+    hasItem1 = excluded.includes(require(1306) /* create */.ExplicitContentRedaction.BLUR);
   }
   if (!hasItem1) {
-    obj = { value: require(1282) /* _callSuper */.ExplicitContentRedaction.BLUR };
-    const intl2 = require(1212) /* getSystemLocale */.intl;
-    obj.label = intl2.string(require(1212) /* getSystemLocale */.t.S49Uad);
-    obj.onPress = function onPress() {
+    obj = { value: null, label: null, onPress: null };
+    obj[0] = require(1306) /* create */.ExplicitContentRedaction.BLUR;
+    const intl2 = require(1236) /* getSystemLocale */.intl;
+    obj[1] = intl2.string(require(1236) /* getSystemLocale */.t.S49Uad);
+    obj[2] = function onPress() {
       callback(outer1_0(outer1_2[3]).ExplicitContentRedaction.BLUR);
     };
     items.push(obj);
   }
-  let hasItem2 = null != excluded;
-  if (hasItem2) {
-    hasItem2 = excluded.includes(require(1282) /* _callSuper */.ExplicitContentRedaction.BLOCK);
+  let hasItem2;
+  if (excluded != null) {
+    hasItem2 = excluded.includes(require(1306) /* create */.ExplicitContentRedaction.BLOCK);
   }
   if (!hasItem2) {
-    obj = { value: require(1282) /* _callSuper */.ExplicitContentRedaction.BLOCK };
-    const intl3 = require(1212) /* getSystemLocale */.intl;
-    obj.label = intl3.string(require(1212) /* getSystemLocale */.t["D/157Y"]);
-    obj.onPress = function onPress() {
+    obj = { value: null, label: null, onPress: null };
+    obj[0] = require(1306) /* create */.ExplicitContentRedaction.BLOCK;
+    const intl3 = require(1236) /* getSystemLocale */.intl;
+    obj[1] = intl3.string(require(1236) /* getSystemLocale */.t["D/157Y"]);
+    obj[2] = function onPress() {
       callback(outer1_0(outer1_2[3]).ExplicitContentRedaction.BLOCK);
     };
     items.push(obj);
   }
-  importDefault(4133).openLazy(require(1935) /* maybeLoadBundle */(13832, dependencyMap.paths), closure_4, { title, subtitle, options: items, currentValue });
+  importDefault(4157).openLazy(require(1959) /* asyncRequireImpl */(13853, dependencyMap.paths), closure_4, { title, subtitle, options: items, currentValue });
 };
 export const shouldAgeVerifyForSearchMedia = function shouldAgeVerifyForSearchMedia(media, found) {
   if (null == found) {
     return false;
   } else {
-    const enabledHarmTypesForMessage = require(5859) /* _createForOfIteratorHelperLoose */.getEnabledHarmTypesForMessage(found);
+    const enabledHarmTypesForMessage = require(5877) /* getEligibleHarmTypesConfigsForContext */.getEnabledHarmTypesForMessage(found);
     if (0 === enabledHarmTypesForMessage) {
       return false;
     } else {
       if (media.type === SearchMediaTypes.ATTACHMENT) {
-        let obj = { type: require(5862) /* ContentHarmTypeChannel */.ObscuredMediaTypes.Attachment, media: media.attachment };
-        let tmp2 = obj;
-      } else if (media.type === SearchMediaTypes.EMBED) {
-        obj = { type: require(5862) /* ContentHarmTypeChannel */.ObscuredMediaTypes.Embed, media: media.embed };
-        tmp2 = obj;
+        let obj = { type: null, media: null };
+        obj[0] = tmp4(5880).ObscuredMediaTypes.Attachment;
+        obj[1] = media.attachment;
+        let tmp = obj;
+      } else if (media.type === tmp8.EMBED) {
+        obj = { type: null, media: null };
+        obj[0] = tmp4(5880).ObscuredMediaTypes.Embed;
+        obj[1] = media.embed;
+        tmp = obj;
       } else {
-        tmp2 = null;
-        if (media.type === SearchMediaTypes.COMPONENT) {
-          obj = { type: require(5862) /* ContentHarmTypeChannel */.ObscuredMediaTypes.GenericMedia, media: media.unfurledMediaItem };
-          tmp2 = obj;
+        tmp = null;
+        if (media.type === tmp8.COMPONENT) {
+          obj = { type: null, media: null };
+          obj[0] = tmp4(5880).ObscuredMediaTypes.GenericMedia;
+          obj[1] = media.unfurledMediaItem;
+          tmp = obj;
         }
       }
-      let tmp7 = null != tmp2;
-      if (tmp7) {
-        let result = require(5859) /* _createForOfIteratorHelperLoose */.isMediaObscuredForHarmTypes(tmp2, enabledHarmTypesForMessage);
+      let tmp2 = null != tmp;
+      if (tmp2) {
+        let tmp4Result = tmp4(5877);
+        let result = tmp4Result.isMediaObscuredForHarmTypes(tmp, enabledHarmTypesForMessage);
         if (result) {
-          result = require(5844) /* timeoutAttachmentsAndEmbedsForMessage */.shouldAgeVerifyForExplicitMedia();
-          const obj4 = require(5844) /* timeoutAttachmentsAndEmbedsForMessage */;
+          tmp4Result = tmp4(5862);
+          result = tmp4Result.shouldAgeVerifyForExplicitMedia();
         }
-        tmp7 = result;
-        const obj3 = require(5859) /* _createForOfIteratorHelperLoose */;
+        tmp2 = result;
       }
-      return tmp7;
+      return tmp2;
     }
-    const obj5 = require(5859) /* _createForOfIteratorHelperLoose */;
+    const obj5 = require(5877) /* getEligibleHarmTypesConfigsForContext */;
   }
 };

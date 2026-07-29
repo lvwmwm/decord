@@ -1,132 +1,132 @@
-// Module ID: 14632
-// Function ID: 111490
-// Name: getTermsOfServicePrivacyPolicySettings
-// Dependencies: [31, 5625, 7733, 653, 33, 1212, 1921, 8868, 1456, 13865, 13868, 10099, 13825, 13657, 2]
+// Module ID: 14657
+// Function ID: 14658
+// Name: DataAndPrivacySettings
+// Dependencies: [19, 5643, 7756, 676, 21, 1236, 1945, 8892, 1480, 13886, 13889, 10120, 13846, 13678, 2]
 // Exports: default
 
-// Module 14632 (getTermsOfServicePrivacyPolicySettings)
-import result from "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 14657 (DataAndPrivacySettings)
+import noop from "noop";
+import hasConsented from "hasConsented";
 import { MobileSetting } from "MobileSetting";
 import ME from "ME";
 import jsxProd from "jsxProd";
 
-let closure_10;
+let c10;
+let c9;
 let closure_6;
-let closure_7;
-let closure_8;
-let closure_9;
+let error;
+let metroImportAll;
 const require = arg1;
-function getTermsOfServicePrivacyPolicySettings(arg0) {
-  const _require = arg0;
-  let obj = {};
-  const intl = _require(1212).intl;
-  obj.label = intl.string(_require(1212).t["+uHbqE"]);
-  const items = [MobileSetting.SAFETY_TERMS_OF_SERVICE, MobileSetting.SAFETY_PRIVACY_POLICY];
-  obj.settings = items;
-  const intl2 = _require(1212).intl;
-  obj = {
-    onClick() {
-      return navigation.navigate(outer1_7.ACCOUNT);
-    }
-  };
-  obj.subLabel = intl2.format(_require(1212).t.R5N31P, obj);
-  const items1 = [obj];
-  return items1;
-}
-({ HelpdeskArticles: closure_6, UserSettingsSections: closure_7 } = ME);
-({ jsx: closure_8, Fragment: closure_9, jsxs: closure_10 } = jsxProd);
+({ HelpdeskArticles: closure_6, UserSettingsSections: error } = ME);
+({ jsx: metroImportAll, Fragment: c9, jsxs: c10 } = jsxProd);
 const result = require("MobileSetting").fileFinishedImporting("modules/user_settings/privacy_and_safety/native/DataAndPrivacyScreen.tsx");
 
 export default function DataAndPrivacySettings() {
-  let obj = stackNavigation(1456);
+  let obj = stackNavigation(1480);
   stackNavigation = obj.useStackNavigation();
-  const tmp2 = (function useDataPrivacySettings(stackNavigation) {
-    let closure_0 = stackNavigation;
-    let obj = { settings: items };
-    items = [outer1_5.USE_DATA_TO_IMPROVE_DISCORD];
-    const intl = stackNavigation(outer1_2[5]).intl;
-    obj = {};
-    let obj2 = tmp2(outer1_2[6]);
-    obj.helpdeskArticle = obj2.getArticleURL(outer1_6.DATA_PRIVACY_CONTROLS);
-    obj.subLabel = intl.format(stackNavigation(outer1_2[5]).t["igTSG/"], obj);
-    const items1 = [obj, , , ];
-    obj = { settings: items2 };
-    items2 = [outer1_5.USE_DATA_TO_CUSTOMIZE_DISCORD];
-    const intl2 = stackNavigation(outer1_2[5]).intl;
-    const obj1 = {};
-    let obj5 = tmp2(outer1_2[6]);
-    obj1.helpdeskArticle = obj5.getArticleURL(outer1_6.DATA_USED_FOR_RECOMMENDED);
-    obj.subLabel = intl2.format(stackNavigation(outer1_2[5]).t["eQL/Mr"], obj1);
-    items1[1] = obj;
-    obj2 = { settings: items3 };
-    items3 = [outer1_5.USE_DATA_FOR_QUESTS];
-    const intl3 = stackNavigation(outer1_2[5]).intl;
-    const obj3 = {};
-    let obj8 = tmp2(outer1_2[6]);
-    obj3.helpdeskArticle = obj8.getArticleURL(outer1_6.QUESTS_PRIVACY_CONTROLS);
-    obj2.subLabel = intl3.format(stackNavigation(outer1_2[5]).t.cf9mvV, obj3);
-    items1[2] = obj2;
-    const obj4 = { settings: items4 };
-    items4 = [outer1_5.USE_DATA_FOR_QUESTS_3P];
-    const intl4 = stackNavigation(outer1_2[5]).intl;
-    obj5 = { helpdeskArticle: tmp2(outer1_2[6]).getArticleURL(outer1_6.QUESTS_PRIVACY_CONTROLS) };
-    obj4.subLabel = intl4.format(stackNavigation(outer1_2[5]).t["2QFDU/"], obj5);
-    items1[3] = obj4;
-    const obj6 = {};
-    const intl5 = stackNavigation(outer1_2[5]).intl;
-    obj6.label = intl5.string(stackNavigation(outer1_2[5]).t.BG7QsQ);
-    const items5 = [outer1_5.REQUEST_YOUR_DATA];
-    obj6.settings = items5;
-    const intl6 = stackNavigation(outer1_2[5]).intl;
-    const obj7 = {};
-    const obj12 = tmp2(outer1_2[6]);
-    obj7.helpdeskArticle = tmp2(outer1_2[6]).getArticleURL(outer1_6.GDPR_REQUEST_DATA);
-    obj6.subLabel = intl6.format(stackNavigation(outer1_2[5]).t.P3kNfr, obj7);
-    items1.push(obj6);
-    obj8 = { settings: items6 };
-    items6 = [outer1_5.PROFILE_PRIVACY];
-    const intl7 = stackNavigation(outer1_2[5]).intl;
-    obj8.subLabel = intl7.format(stackNavigation(outer1_2[5]).t.N1P5gE, {
-      onClick() {
-        return stackNavigation.navigate(outer2_7.CONTENT_AND_SOCIAL);
-      }
-    });
-    items1.push(obj8);
-    const items7 = [outer1_5.NOTIFY_FRIENDS_ON_PROFILE_UPDATE];
-    items1.push({ settings: items7 });
-    return items1;
-  })(stackNavigation);
-  const importDefault = tmp2;
-  const effect = React.useEffect(() => {
-    if (!outer1_4.fetchedConsents) {
-      const consents = stackNavigation(outer1_2[9]).fetchConsents();
-      const obj = stackNavigation(outer1_2[9]);
+  obj = { settings: items, subLabel: null };
+  items = [MobileSetting.USE_DATA_TO_IMPROVE_DISCORD];
+  let intl = stackNavigation(1236).intl;
+  obj = { helpdeskArticle: null };
+  let obj3 = items1(1945);
+  obj[0] = obj3.getArticleURL(constants.DATA_PRIVACY_CONTROLS);
+  obj[1] = intl.format(stackNavigation(1236).t["igTSG/"], obj);
+  items1 = [obj, , , ];
+  let obj1 = { settings: items2, subLabel: null };
+  items2 = [MobileSetting.USE_DATA_TO_CUSTOMIZE_DISCORD];
+  let intl2 = stackNavigation(1236).intl;
+  let obj2 = { helpdeskArticle: null };
+  let obj6 = items1(1945);
+  obj2[0] = obj6.getArticleURL(constants.DATA_USED_FOR_RECOMMENDED);
+  obj1[1] = intl2.format(stackNavigation(1236).t["eQL/Mr"], obj2);
+  items1[1] = obj1;
+  obj3 = { settings: items3, subLabel: null };
+  items3 = [MobileSetting.USE_DATA_FOR_QUESTS];
+  let intl3 = stackNavigation(1236).intl;
+  const obj4 = { helpdeskArticle: null };
+  let obj9 = items1(1945);
+  obj4[0] = obj9.getArticleURL(constants.QUESTS_PRIVACY_CONTROLS);
+  obj3[1] = intl3.format(stackNavigation(1236).t.cf9mvV, obj4);
+  items1[2] = obj3;
+  const obj5 = { settings: items4, subLabel: null };
+  items4 = [MobileSetting.USE_DATA_FOR_QUESTS_3P];
+  let intl4 = stackNavigation(1236).intl;
+  obj6 = { helpdeskArticle: null };
+  let obj12 = items1(1945);
+  obj6[0] = obj12.getArticleURL(constants.QUESTS_PRIVACY_CONTROLS);
+  obj5[1] = intl4.format(stackNavigation(1236).t["2QFDU/"], obj6);
+  items1[3] = obj5;
+  const obj7 = { label: null, settings: null, subLabel: null };
+  const intl5 = stackNavigation(1236).intl;
+  obj7[0] = intl5.string(stackNavigation(1236).t.BG7QsQ);
+  const items5 = [MobileSetting.REQUEST_YOUR_DATA];
+  obj7[1] = items5;
+  const intl6 = stackNavigation(1236).intl;
+  const obj8 = { helpdeskArticle: null };
+  obj8[0] = items1(1945).getArticleURL(constants.GDPR_REQUEST_DATA);
+  obj7[2] = intl6.format(stackNavigation(1236).t.P3kNfr, obj8);
+  items1.push(obj7);
+  obj9 = { settings: items6, subLabel: null };
+  items6 = [MobileSetting.PROFILE_PRIVACY];
+  const intl7 = stackNavigation(1236).intl;
+  obj9[1] = intl7.format(stackNavigation(1236).t.N1P5gE, {
+    onClick() {
+      return stackNavigation.navigate(outer1_7.CONTENT_AND_SOCIAL);
     }
-    const harvestStatus = stackNavigation(outer1_2[10]).fetchHarvestStatus();
+  });
+  items1.push(obj9);
+  const items7 = [MobileSetting.NOTIFY_FRIENDS_ON_PROFILE_UPDATE];
+  items1.push({ settings: items7 });
+  const effect = React.useEffect(() => {
+    if (!fetchedConsents.fetchedConsents) {
+      const consents = stackNavigation(13886).fetchConsents();
+      const obj = stackNavigation(13886);
+    }
+    const harvestStatus = stackNavigation(13889).fetchHarvestStatus();
   }, []);
-  let items = [stackNavigation, tmp2];
-  obj = {};
+  const items8 = [stackNavigation, items1];
+  const obj11 = { children: null };
   const memo = React.useMemo(() => {
     let obj = stackNavigation(outer1_2[11]);
-    obj = {};
-    const items = [...closure_1];
-    obj = {};
+    obj = { sections: null };
+    const items = [...items1];
+    obj = { label: null, settings: null, subLabel: null };
     const intl = stackNavigation(outer1_2[5]).intl;
-    obj.label = intl.string(stackNavigation(outer1_2[5]).t.Me5lVK);
-    const items1 = [outer1_5.DATA_AND_PRIVACY_SECURE_FRAMES_PERSISTENT_CODES, outer1_5.ENCRYPTION_VERIFIED_DEVICES];
-    obj.settings = items1;
+    obj[0] = intl.string(stackNavigation(outer1_2[5]).t.Me5lVK);
+    items1 = [, ];
+    ({ DATA_AND_PRIVACY_SECURE_FRAMES_PERSISTENT_CODES: arr2[0], ENCRYPTION_VERIFIED_DEVICES: arr2[1] } = outer1_5);
+    obj[1] = items1;
     const intl2 = stackNavigation(outer1_2[5]).intl;
-    const obj1 = { helpArticle: stackNavigation(outer1_2[7]).getSecureFramesHelpdeskArticle() };
-    obj.subLabel = intl2.format(stackNavigation(outer1_2[5]).t["/6sFWa"], obj1);
+    const obj1 = { helpArticle: null };
+    obj1[0] = stackNavigation(outer1_2[7]).getSecureFramesHelpdeskArticle();
+    obj[2] = intl2.format(stackNavigation(outer1_2[5]).t["/6sFWa"], obj1);
     items[tmp] = obj;
-    const sum = tmp + 1;
-    HermesBuiltin.arraySpread(outer1_11(stackNavigation), sum);
-    obj.sections = items;
+    const obj2 = { label: null, settings: null, subLabel: null };
+    const intl3 = stackNavigation(outer1_2[5]).intl;
+    obj2[0] = intl3.string(stackNavigation(outer1_2[5]).t["+uHbqE"]);
+    const items2 = [, ];
+    ({ SAFETY_TERMS_OF_SERVICE: arr3[0], SAFETY_PRIVACY_POLICY: arr3[1] } = outer1_5);
+    obj2[1] = items2;
+    const intl4 = stackNavigation(outer1_2[5]).intl;
+    obj2[2] = intl4.format(stackNavigation(outer1_2[5]).t.R5N31P, {
+      onClick() {
+        return navigation.navigate(outer1_7.ACCOUNT);
+      }
+    });
+    const items3 = [obj2];
+    HermesBuiltin.arraySpread(items3, tmp + 1);
+    obj[0] = items;
     return obj.createList(obj);
-  }, items);
-  obj = { screen: stackNavigation(13825).SettingsScreen.DATA_AND_PRIVACY };
-  let items1 = [callback(importDefault(13825), obj), callback(importDefault(13657), { node: memo })];
-  obj.children = items1;
-  return callback2(closure_9, obj);
+  }, items8);
+  obj12 = { screen: null };
+  const obj10 = {
+    onClick() {
+      return stackNavigation.navigate(outer1_7.CONTENT_AND_SOCIAL);
+    }
+  };
+  const obj16 = items1(1945);
+  obj12[0] = stackNavigation(13846).SettingsScreen.DATA_AND_PRIVACY;
+  const items9 = [callback(items1(13846), obj12), callback(items1(13678), { node: memo })];
+  obj11[0] = items9;
+  return callback2(closure_9, obj11);
 };

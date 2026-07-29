@@ -1,14 +1,14 @@
-// Module ID: 11643
-// Function ID: 90317
+// Module ID: 11667
+// Function ID: 11668
 // Name: useGameServerPerk
-// Dependencies: [31, 4073, 4053, 4054, 4076, 566, 11644, 1212, 2621, 11645, 2]
+// Dependencies: [19, 4097, 4077, 4078, 4100, 589, 11668, 1236, 2645, 11669, 2]
 // Exports: default
 
-// Module 11643 (useGameServerPerk)
-import result from "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 11667 (useGameServerPerk)
+import noop from "noop";
+import handleGameServerInstanceCreated from "handleGameServerInstanceCreated";
 import { GuildPowerupType } from "BoostedGuildTiers";
-import { GAME_SERVER_POWERUP_SKU_ID as closure_6 } from "NewGamesCoachmarkContent";
+import { GAME_SERVER_POWERUP_SKU_ID as closure_6 } from "str11";
 
 const require = arg1;
 const result = require("BoostedGuildTiers").fileFinishedImporting("modules/premium/game_server/hooks/useGameServerPerk.tsx");
@@ -28,17 +28,20 @@ export default function useGameServerPerk(guildId) {
     if (gameServerEnabled) {
       tmp = null;
       if (null != stateFromStores) {
-        let obj = { skuId: outer1_6 };
+        let obj = { skuId: null, title: null, description: null, cost: null, dependencies: null, type: null, animatedImageUrl: null, staticImageUrl: null };
+        obj[0] = outer1_6;
         const intl = guildId(stateFromStores[7]).intl;
-        obj.title = intl.string(gameServerEnabled(stateFromStores[8])["B3OfL/"]);
+        obj[1] = intl.string(gameServerEnabled(stateFromStores[8])["B3OfL/"]);
         const intl2 = guildId(stateFromStores[7]).intl;
-        obj = { gameName, gameName2 };
-        obj.description = intl2.format(gameServerEnabled(stateFromStores[8])["+UqyGU"], obj);
-        obj.cost = stateFromStores;
-        obj.dependencies = [];
-        obj.type = outer1_5.PERK;
-        obj.animatedImageUrl = gameServerEnabled(stateFromStores[9]);
-        obj.staticImageUrl = gameServerEnabled(stateFromStores[9]);
+        obj = { gameName: null, gameName2: null };
+        obj[0] = gameName;
+        obj[1] = gameName2;
+        obj[2] = intl2.format(gameServerEnabled(stateFromStores[8])["+UqyGU"], obj);
+        obj[3] = tmp2;
+        obj[4] = [];
+        obj[5] = outer1_5.PERK;
+        obj[6] = gameServerEnabled(stateFromStores[9]);
+        obj[7] = gameServerEnabled(stateFromStores[9]);
         tmp = obj;
       }
     }

@@ -1,44 +1,51 @@
-// Module ID: 10784
-// Function ID: 83568
+// Module ID: 10808
+// Function ID: 10809
 // Name: ExpandedControlItemIcon
-// Dependencies: [31, 27, 4184, 1194, 4226, 33, 4165, 689, 1273, 10785, 10786, 7611, 566, 10787, 1212, 10748, 477, 8807, 8832, 10721, 10788, 10773, 10789, 10790, 2]
+// Dependencies: [19, 17, 4208, 1218, 4250, 21, 4189, 712, 1297, 10809, 10810, 7634, 589, 10811, 1236, 10772, 500, 8831, 8856, 10745, 10812, 10797, 10813, 10814, 2]
 // Exports: AudioRouteButton, DeafenButton, ScreenshareButton, StreamVolumeItem
 
-// Module 10784 (ExpandedControlItemIcon)
-import "result";
-import get_ActivityIndicator from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_6 from "_isNativeReflectConstruct";
+// Module 10808 (ExpandedControlItemIcon)
+import "stopScreenshare";
+import get_ActivityIndicator from "_handleToggleVideo";
+import reset from "reset";
+import fetchFingerprint from "fetchFingerprint";
 import { MediaEngineContextTypes } from "DesktopSources";
-import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import jsxProd from "NOOP";
+import createCacheKey from "createCacheKey";
 
-let closure_10;
-let closure_3;
-let closure_4;
-let closure_8;
-let closure_9;
+let c10;
+let c3;
+let c4;
+let c9;
+let metroImportAll;
 const require = arg1;
 function ExpandedControlItemIcon(iconSource) {
   iconSource = iconSource.iconSource;
-  const tmp = _createForOfIteratorHelperLoose();
+  const tmp = createCacheKey();
   if (null == iconSource) {
     return null;
   } else {
-    let obj = { size: require(1273) /* Button */.Icon.Sizes.MEDIUM, source: iconSource, style: tmp.formTintColor, disableColor: true };
-    const tmp14 = callback(require(1273) /* Button */.Icon, obj);
-    let tmp10 = tmp14;
+    let obj = { size: null, source: null, style: null, disableColor: true };
+    obj[0] = require(1297) /* Button */.Icon.Sizes.MEDIUM;
+    obj[1] = iconSource;
+    obj[2] = tmp.formTintColor;
+    const tmp10 = callback(require(1297) /* Button */.Icon, obj);
+    let tmp6 = tmp10;
     if (iconSource.showIconSparkle) {
-      obj = {};
-      const items = [tmp14, , ];
-      obj = { style: tmp.sparkle2, source: importDefault(10785) };
-      items[1] = callback(closure_4, obj);
-      const obj1 = { style: tmp.sparkle, source: importDefault(10786) };
-      items[2] = callback(closure_4, obj1);
-      obj.children = items;
-      tmp10 = callback2(closure_3, obj);
+      obj = { children: null };
+      const items = [tmp10, , ];
+      obj = { style: null, source: null };
+      obj[0] = tmp.sparkle2;
+      obj[1] = importDefault(10809);
+      items[1] = tmp7(closure_4, obj);
+      const obj1 = { style: null, source: null };
+      obj1[0] = tmp.sparkle;
+      obj1[1] = importDefault(10810);
+      items[2] = tmp7(closure_4, obj1);
+      obj[0] = items;
+      tmp6 = callback2(closure_3, obj);
     }
-    return tmp10;
+    return tmp6;
   }
 }
 function ExpandedControlItem(iconSource) {
@@ -60,94 +67,93 @@ function ExpandedControlItem(iconSource) {
     tmp2 = null != switchValue;
   }
   if (tmp2) {
-    let obj = { tintColor: importDefault(689).unsafe_rawColors.BRAND_500, renderIosBackground: true, value: switchValue, disabled, onValueChange: onSwitchValueChange };
-    trailing = callback(require(7611) /* Form */.FormSwitch, obj);
+    let obj = { tintColor: null, renderIosBackground: true, value: null, disabled: null, onValueChange: null };
+    obj[0] = importDefault(712).unsafe_rawColors.BRAND_500;
+    obj[2] = switchValue;
+    obj[3] = disabled;
+    obj[4] = onSwitchValueChange;
+    trailing = callback(require(7634) /* Form */.FormSwitch, obj);
   }
-  obj = { disabled };
-  obj = { iconSource: iconSource.iconSource, showIconSparkle };
-  obj.leading = callback(ExpandedControlItemIcon, obj);
-  const tmp = _createForOfIteratorHelperLoose();
-  obj.label = callback(require(7611) /* Form */.FormLabel, { text: label, style: _createForOfIteratorHelperLoose().formColor });
-  obj.onPress = onPress;
-  obj.trailing = trailing;
-  return callback(require(7611) /* Form */.FormRow, obj);
+  obj = { disabled, leading: null, label: null, onPress: null, trailing: null };
+  obj[1] = callback(ExpandedControlItemIcon, { iconSource: iconSource.iconSource, showIconSparkle });
+  obj = { text: label, style: createCacheKey().formColor };
+  obj[2] = callback(require(7634) /* Form */.FormLabel, obj);
+  obj[3] = onPress;
+  obj[4] = trailing;
+  return callback(require(7634) /* Form */.FormRow, obj);
 }
-({ View: closure_3, Image: closure_4 } = get_ActivityIndicator);
-({ jsx: closure_8, jsxs: closure_9, Fragment: closure_10 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { tintColor: require("_createForOfIteratorHelperLoose").colors.ICON_STRONG };
-_createForOfIteratorHelperLoose.formTintColor = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.formColor = { color: require("_createForOfIteratorHelperLoose").colors.MOBILE_TEXT_HEADING_PRIMARY };
-_createForOfIteratorHelperLoose.sparkle = { position: "absolute", bottom: -4, right: "70%" };
-_createForOfIteratorHelperLoose.sparkle2 = { position: "absolute", right: -5, height: 10, width: 10 };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-let obj1 = { color: require("_createForOfIteratorHelperLoose").colors.MOBILE_TEXT_HEADING_PRIMARY };
-let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/video_calls/native/components/FocusedExpandedControls.tsx");
+({ View: c3, Image: c4 } = get_ActivityIndicator);
+({ jsx: metroImportAll, jsxs: c9, Fragment: c10 } = jsxProd);
+createCacheKey = { formTintColor: null, formColor: null, sparkle: null, sparkle2: null };
+createCacheKey = { tintColor: require("Themes").colors.ICON_STRONG };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { color: require("Themes").colors.MOBILE_TEXT_HEADING_PRIMARY };
+createCacheKey[2] = { position: "absolute", bottom: -4, right: "70%" };
+createCacheKey[3] = { position: "absolute", right: -5, height: 10, width: 10 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let obj1 = { color: require("Themes").colors.MOBILE_TEXT_HEADING_PRIMARY };
+let result = require("reset").fileFinishedImporting("modules/video_calls/native/components/FocusedExpandedControls.tsx");
 
 export const StreamVolumeItem = function StreamVolumeItem() {
   let effectiveVolume;
   let handleVolumeChange;
-  let obj = require(566) /* initialize */;
-  const items = [_isNativeReflectConstruct, closure_6];
+  let obj = require(589) /* initialize */;
+  const items = [reset, fetchFingerprint];
   const stateFromStores = obj.useStateFromStores(items, () => {
-    const lastActiveStream = outer1_5.getLastActiveStream();
+    lastActiveStream = lastActiveStream.getLastActiveStream();
     let tmp2 = null;
     if (null != lastActiveStream) {
       tmp2 = null;
-      if (lastActiveStream.ownerId !== outer1_6.getId()) {
+      if (lastActiveStream.ownerId !== id.getId()) {
         tmp2 = lastActiveStream;
       }
     }
     return tmp2;
   });
   let ownerId;
-  const tmp = _createForOfIteratorHelperLoose();
-  if (null != stateFromStores) {
+  const tmp = createCacheKey();
+  if (stateFromStores != null) {
     ownerId = stateFromStores.ownerId;
   }
-  const tmp3 = importDefault(10787);
-  ({ effectiveVolume, handleVolumeChange } = importDefault(10787)(ownerId, MediaEngineContextTypes.STREAM));
-  obj = {};
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj.text = intl.string(require(1212) /* getSystemLocale */.t.pEAl4b);
+  const tmp6 = importDefault(10811);
+  ({ effectiveVolume, handleVolumeChange } = importDefault(10811)(ownerId, MediaEngineContextTypes.STREAM));
+  obj = { text: null, style: null };
+  const intl = tmp2(1236).intl;
+  obj[0] = intl.string(require(1236) /* getSystemLocale */.t.pEAl4b);
   const items1 = [tmp.formColor, { marginBottom: 16 }];
-  obj.style = items1;
-  const items2 = [callback(require(7611) /* Form */.FormLabel, obj), ];
-  obj = {};
-  const tmp3Result = importDefault(10787)(ownerId, MediaEngineContextTypes.STREAM);
-  const tmp6 = callback;
-  const tmp7 = importDefault(10748);
+  obj[1] = items1;
+  const items2 = [callback(require(7634) /* Form */.FormLabel, obj), ];
+  const tmp6Result = importDefault(10811)(ownerId, MediaEngineContextTypes.STREAM);
+  const tmp5Result = importDefault(10772);
   let fn;
-  if (obj4.isAndroid()) {
+  if (tmp2Result.isAndroid()) {
     fn = () => true;
   }
-  obj.onResponderGrant = fn;
-  obj.value = effectiveVolume;
-  obj.onValueChange = handleVolumeChange;
-  obj.color = importDefault(689).unsafe_rawColors.WHITE;
-  obj.maxTrackTintColor = importDefault(689).unsafe_rawColors.PRIMARY_300;
-  items2[1] = tmp6(tmp7, obj);
-  {}.children = items2;
-  let tmp9 = null;
+  obj = { onResponderGrant: fn, value: effectiveVolume, onValueChange: handleVolumeChange, color: tmp5(712).unsafe_rawColors.WHITE, maxTrackTintColor: tmp5(712).unsafe_rawColors.PRIMARY_300 };
+  items2[1] = callback(tmp5Result, obj);
+  { children: null }[0] = items2;
+  let tmp9Result = null;
   if (null != stateFromStores) {
-    const obj1 = { label: tmp8 };
-    tmp9 = callback(require(7611) /* Form */.FormRow, obj1);
+    const obj1 = { label: null };
+    obj1[0] = tmp11;
+    tmp9Result = tmp9(tmp2(7634).FormRow, obj1);
   }
-  return tmp9;
+  return tmp9Result;
 };
 export const AudioRouteButton = function AudioRouteButton(arg0) {
   let importDefault;
   let require;
   ({ channelId: require, isConnectedToVoiceChannel: importDefault } = arg0);
-  let obj = require(8807) /* _handleToggleVideo */;
+  let obj = require(8831) /* _handleToggleVideo */;
   obj = {
     onPress() {
       const result = outer1_0(outer1_2[18]).showAudioOutputSelector(closure_0, closure_1);
     },
-    iconSource: obj.useMaskedSpeakerStates().routeSource
+    iconSource: obj.useMaskedSpeakerStates().routeSource,
+    label: null
   };
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj.label = intl.string(require(1212) /* getSystemLocale */.t["A/Ly/2"]);
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj[2] = intl.string(require(1236) /* getSystemLocale */.t["A/Ly/2"]);
   return callback(ExpandedControlItem, obj);
 };
 export const ScreenshareButton = function ScreenshareButton(arg0) {
@@ -157,33 +163,21 @@ export const ScreenshareButton = function ScreenshareButton(arg0) {
   let onPress;
   let text;
   ({ channel, disabled } = arg0);
-  const tmp = importDefault(10721)(channel);
-  const obj = {};
-  let tmp4 = !tmp.isFeatureEnabled;
+  const tmp = importDefault(10745)(channel);
+  const isFeatureEnabled = tmp.isFeatureEnabled;
+  disabled = !isFeatureEnabled;
   ({ onPress, imgSource, text } = tmp);
-  if (!tmp4) {
-    tmp4 = disabled;
-  }
-  obj.disabled = tmp4;
-  obj.onPress = onPress;
-  obj.iconSource = imgSource;
-  obj.label = text;
-  return closure_8(ExpandedControlItem, obj);
+  return closure_8(ExpandedControlItem, { disabled, onPress, iconSource, label });
 };
 export const DeafenButton = function DeafenButton(disabled) {
   let flag = disabled.disabled;
   if (flag === undefined) {
     flag = false;
   }
-  let obj = require(10773) /* NOOP */;
-  const deafHandler = obj.createDeafHandler(importDefault(10788)(disabled.channel));
-  if (deafHandler.deaf) {
-    let tmp5 = 10789;
-  } else {
-    tmp5 = 10790;
-  }
-  obj = { disabled: flag, onPress: deafHandler.onPress, iconSource: importDefault(tmp5) };
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj.label = intl.string(require(1212) /* getSystemLocale */.t.wjcRFX);
+  let obj = require(10797) /* NOOP */;
+  const deafHandler = obj.createDeafHandler(importDefault(10812)(disabled.channel));
+  obj = { disabled: flag, onPress: deafHandler.onPress, iconSource: importDefault(deafHandler.deaf ? 10813 : 10814), label: null };
+  const intl = tmp4(1236).intl;
+  obj[3] = intl.string(require(1236) /* getSystemLocale */.t.wjcRFX);
   return callback(ExpandedControlItem, obj);
 };

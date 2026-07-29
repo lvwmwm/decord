@@ -1,28 +1,28 @@
-// Module ID: 14297
-// Function ID: 109683
+// Module ID: 14319
+// Function ID: 14320
 // Name: toggle
-// Dependencies: [1278, 7733, 566, 14178, 10099, 1212, 1324, 2]
+// Dependencies: [1302, 7756, 589, 14200, 10120, 1236, 1348, 2]
 
-// Module 14297 (toggle)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 14319 (toggle)
+import handleThemeChange from "handleThemeChange";
 import createToggle from "createToggle";
 
 const require = arg1;
 createToggle = {
   useTitle() {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(require(1212) /* getSystemLocale */.t.c445ix);
+    const intl = require(1236) /* getSystemLocale */.intl;
+    return intl.string(require(1236) /* getSystemLocale */.t.c445ix);
   },
   parent: require("MobileSetting").MobileSetting.APPEARANCE,
   usePredicate() {
-    return importDefault(1324)("SameAsDeviceThemeSetting");
+    return importDefault(1348)("SameAsDeviceThemeSetting");
   },
   useValue: function useSameAsDeviceThemeValue() {
-    const items = [_isNativeReflectConstruct];
-    return require(566) /* initialize */.useStateFromStores(items, () => outer1_3.isSameAsDeviceThemeEnabled());
+    const items = [handleThemeChange];
+    return require(589) /* initialize */.useStateFromStores(items, () => sameAsDeviceThemeEnabled.isSameAsDeviceThemeEnabled());
   },
   onValueChange: function onSameAsDeviceThemeValueChange(arg0) {
-    const obj = require(14178) /* getThemeNameForAnalytics */;
+    const obj = require(14200) /* handleSaveTheme */;
     if (arg0) {
       const result = obj.enableSameAsDeviceTheme();
     } else {
@@ -30,8 +30,8 @@ createToggle = {
     }
   },
   useDescription() {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(require(1212) /* getSystemLocale */.t["+tBsvs"]);
+    const intl = require(1236) /* getSystemLocale */.intl;
+    return intl.string(require(1236) /* getSystemLocale */.t["+tBsvs"]);
   }
 };
 createToggle = createToggle.createToggle(createToggle);

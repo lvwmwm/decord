@@ -1,40 +1,42 @@
-// Module ID: 13011
-// Function ID: 100759
+// Module ID: 13034
+// Function ID: 13035
 // Name: LockedIcon
-// Dependencies: [31, 653, 33, 4165, 5087, 689, 1273, 13012, 10713, 13013, 8316, 2]
+// Dependencies: [19, 676, 21, 4189, 5109, 712, 1297, 13035, 10737, 13036, 8340, 2]
 // Exports: default
 
-// Module 13011 (LockedIcon)
-import "result";
+// Module 13034 (LockedIcon)
+import "noop";
 import { Fonts } from "ME";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 import importDefaultResult from "createTextStyle";
 import importDefaultResult1 from "createTextStyle";
 
-let closure_3;
-let closure_4;
+let c3;
+let c4;
 const require = arg1;
 function LockedIcon() {
-  const obj = { size: require(1273) /* Button */.Icon.Sizes.MEDIUM, source: importDefault(13012) };
-  return callback(require(1273) /* Button */.Icon, obj);
+  const obj = { size: null, source: null };
+  obj[0] = require(1297) /* Button */.Icon.Sizes.MEDIUM;
+  obj[1] = importDefault(13035);
+  return callback(require(1297) /* Button */.Icon, obj);
 }
 function DropdownIcon() {
-  const obj = { style: { transform: items } };
+  const obj = { style: { transform: items }, size: null, source: null };
   items = [{ rotate: "90deg" }];
-  obj.size = require(1273) /* Button */.Icon.Sizes.MEDIUM;
-  obj.source = importDefault(10713);
-  return callback(require(1273) /* Button */.Icon, obj);
+  obj[1] = require(1297) /* Button */.Icon.Sizes.MEDIUM;
+  obj[2] = importDefault(10737);
+  return callback(require(1297) /* Button */.Icon, obj);
 }
-({ jsx: closure_3, jsxs: closure_4 } = jsxProd);
-_createForOfIteratorHelperLoose = { container: { alignItems: "center", flexDirection: "row" }, content: { marginStart: 8, flexGrow: 1 } };
-_createForOfIteratorHelperLoose = {};
-const merged = Object.assign(require("createTextStyle")(Fonts.PRIMARY_MEDIUM, require("_createForOfIteratorHelperLoose").colors.TEXT_MUTED, 16));
-_createForOfIteratorHelperLoose.placeholder = _createForOfIteratorHelperLoose;
+({ jsx: c3, jsxs: c4 } = jsxProd);
+createCacheKey = { container: { alignItems: "center", flexDirection: "row" }, content: { marginStart: 8, flexGrow: 1 }, placeholder: null, text: null };
+createCacheKey = {};
+const merged = Object.assign(require("createTextStyle")(Fonts.PRIMARY_MEDIUM, require("Themes").colors.TEXT_MUTED, 16));
+createCacheKey[2] = createCacheKey;
 const obj1 = {};
-const merged1 = Object.assign(require("createTextStyle")(Fonts.PRIMARY_MEDIUM, require("_createForOfIteratorHelperLoose").colors.TEXT_DEFAULT, 16));
-_createForOfIteratorHelperLoose.text = obj1;
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+const merged1 = Object.assign(require("createTextStyle")(Fonts.PRIMARY_MEDIUM, require("Themes").colors.TEXT_DEFAULT, 16));
+createCacheKey[3] = obj1;
+createCacheKey = createCacheKey.createStyles(createCacheKey);
 const result = require("jsxProd").fileFinishedImporting("modules/guild_role_subscriptions/native/components/FormDropdown.tsx");
 
 export default function FormDropdown(arg0) {
@@ -43,29 +45,31 @@ export default function FormDropdown(arg0) {
   let leading;
   let onPress;
   let placeholder;
-  ({ disabled, label, placeholder } = arg0);
-  ({ leading, onPress } = arg0);
-  const tmp = _createForOfIteratorHelperLoose();
-  const tmp2 = importDefault(13013)();
-  let obj = { style: items, accessibilityRole: "spinbutton", disabled };
-  items = [tmp.container, tmp2.dropdownInput];
-  let tmp6;
-  const tmp3 = callback(disabled ? LockedIcon : DropdownIcon, {});
-  const tmp4 = closure_4;
+  ({ disabled, label } = arg0);
+  ({ leading, onPress, placeholder } = arg0);
+  const tmp = createCacheKey();
+  const tmp2 = importDefault;
+  const tmp4 = importDefault(13036)();
+  let obj = { style: items, accessibilityRole: "spinbutton", disabled, onPress: null, children: null };
+  items = [tmp.container, tmp4.dropdownInput];
+  let tmp9;
+  const tmp5Result = closure_3(disabled ? LockedIcon : DropdownIcon, {});
+  const tmp7 = closure_4;
   if (!disabled) {
-    tmp6 = onPress;
+    tmp9 = onPress;
   }
-  obj.onPress = tmp6;
+  obj[3] = tmp9;
   const items1 = [leading, , ];
-  obj = { style: items2 };
-  items2 = [tmp.content, null != label ? tmp.text : tmp.placeholder];
-  if (null != label) {
-    placeholder = label;
+  const items2 = [tmp.content, ];
+  obj = { style: items2, children: null };
+  items2[1] = null != label ? tmp.text : tmp.placeholder;
+  if (label == null) {
+    label = placeholder;
   }
-  obj.children = placeholder;
-  items1[1] = callback(require(1273) /* Button */.LegacyText, obj);
-  items1[2] = tmp3;
-  obj.children = items1;
-  return tmp4(importDefault(8316), obj);
+  obj[1] = label;
+  items1[1] = closure_3(require(1297) /* Button */.LegacyText, obj);
+  items1[2] = tmp5Result;
+  obj[4] = items1;
+  return tmp7(tmp2(8340), obj);
 };
-export const useFormDropdownStyles = _createForOfIteratorHelperLoose;
+export const useFormDropdownStyles = createCacheKey;

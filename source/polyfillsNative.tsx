@@ -1,16 +1,16 @@
-// Module ID: 13335
-// Function ID: 102278
-// Dependencies: [3, 13336, 13406, 13424, 13427, 13430, 488, 1190, 2]
+// Module ID: 13358
+// Function ID: 13359
+// Dependencies: [3, 13359, 13429, 13447, 13450, 13453, 511, 1214, 2]
 
-// Module 13335
-import timestamp from "_mergeNamespaces";
-import module_13336 from "module_13336";
+// Module 13358
+import timestamp from "_typeof";
+import module_13359 from "module_13359";
 import get_ActivityIndicator from "get ActivityIndicator";
-import _mergeNamespaces from "_mergeNamespaces";
-import CanonicalizeLocaleList from "CanonicalizeLocaleList";
+import _typeof from "_typeof";
+import GetOption from "GetOption";
 
-if ("undefined" === typeof process) {
-  const _window = window;
+if (typeof process !== "ta") {
+  const _window3 = window;
   window.process = {};
 }
 window.process.nextTick = setImmediate;
@@ -21,12 +21,12 @@ if (!global.self) {
   global.self = global;
 }
 if (null == window.crypto) {
-  const _module5 = require("_callSuper");
-  const _window2 = window;
+  const _module5 = require("_isNativeReflectConstruct");
+  const _window = window;
   window.crypto = global.crypto;
 }
 if (null == global.Buffer) {
-  global.Buffer = require("createBuffer").Buffer;
+  global.Buffer = require("Buffer").Buffer;
 }
 if (null == global.__reanimatedWorkletInit) {
   global.__reanimatedWorkletInit = () => {
@@ -40,10 +40,10 @@ Map.prototype.toJSON = fn;
 Set.prototype.toJSON = fn;
 let tmp7 = null != window.TextEncoder;
 if (tmp7) {
-  const _window3 = window;
+  const _window2 = window;
   tmp7 = null != window.TextDecoder;
 }
 if (!tmp7) {
-  const _module6 = require("k");
+  const _module6 = require("q");
 }
 const result = require("get ActivityIndicator").fileFinishedImporting("polyfillsNative.tsx");

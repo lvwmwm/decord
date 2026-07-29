@@ -1,83 +1,80 @@
-// Module ID: 12197
-// Function ID: 95377
+// Module ID: 12221
+// Function ID: 12222
 // Name: RemediatedUserNotice
-// Dependencies: [31, 27, 3802, 653, 33, 4165, 689, 8055, 624, 4161, 1212, 8894, 2]
+// Dependencies: [19, 17, 3826, 676, 21, 4189, 712, 8079, 647, 4185, 1236, 8918, 2]
 // Exports: default
 
-// Module 12197 (RemediatedUserNotice)
-import "result";
+// Module 12221 (RemediatedUserNotice)
+import "noop";
 import { View } from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import upsertRelationship from "upsertRelationship";
 import { RelationshipTypes } from "ME";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
 let closure_6;
-let closure_7;
-let closure_8;
+let error;
+let metroImportAll;
 const require = arg1;
-({ jsx: closure_6, Fragment: closure_7, jsxs: closure_8 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { padding: require("_createForOfIteratorHelperLoose").space.PX_12, gap: require("_createForOfIteratorHelperLoose").space.PX_8, flexDirection: "row", alignItems: "center" };
-_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/user_profile/native/UserProfileRemediatedNotice.tsx");
+({ jsx: closure_6, Fragment: error, jsxs: metroImportAll } = jsxProd);
+createCacheKey = { container: null };
+createCacheKey = { padding: require("Themes").space.PX_12, gap: require("Themes").space.PX_8, flexDirection: "row", alignItems: "center" };
+createCacheKey[0] = createCacheKey;
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+const result = require("upsertRelationship").fileFinishedImporting("modules/user_profile/native/UserProfileRemediatedNotice.tsx");
 
 export default function RemediatedUserNotice(user) {
   let isBlocked;
   let isIgnored;
   user = user.user;
-  const tmp = _createForOfIteratorHelperLoose();
-  let obj = user(624);
-  const items = [_isNativeReflectConstruct];
+  const tmp = createCacheKey();
+  let obj = user(647);
+  const items = [upsertRelationship];
   const stateFromStoresObject = obj.useStateFromStoresObject(items, () => ({ isPendingIncoming: outer1_4.getRelationshipType(user.id) === outer1_5.PENDING_INCOMING, isBlocked: outer1_4.isBlocked(user.id), isIgnored: outer1_4.isIgnored(user.id) }));
   ({ isBlocked, isIgnored } = stateFromStoresObject);
   if (isBlocked) {
-    obj = {};
-    const items1 = [tmp.container, tmp2.card, user.style];
-    obj.style = items1;
+    obj = { style: null, children: null };
+    const items1 = [tmp.container, tmp3.card, user.style];
+    obj[0] = items1;
     if (isBlocked) {
-      obj = { variant: "text-sm/semibold", color: "text-default", lineClamp: 1 };
-      const intl = user(1212).intl;
-      obj.children = intl.string(user(1212).t["oC/fU6"]);
-      isBlocked = callback(user(4161).Text, obj);
+      obj = { variant: "text-sm/semibold", color: "text-default", lineClamp: 1, children: null };
+      const intl = tmp4(1236).intl;
+      obj[3] = intl.string(tmp4(1236).t["oC/fU6"]);
+      isBlocked = callback(tmp4(4185).Text, obj);
     }
     const items2 = [isBlocked, ];
     if (isIgnored) {
-      const obj1 = {};
-      const obj2 = { variant: "text-sm/semibold", color: "text-default", lineClamp: 1 };
-      const intl2 = user(1212).intl;
-      obj2.children = intl2.string(user(1212).t.HXz5An);
-      const items3 = [callback(user(4161).Text, obj2), callback(user(4161).Text, { variant: "text-sm/semibold", color: "text-default", accessibilityElementsHidden: true, importantForAccessibility: "no", children: "\u2022" }), ];
-      const intl3 = user(1212).intl;
-      const obj3 = {
-        unignoreHook(children) {
-              const obj = {
-                role: "button",
-                variant: "heading-sm/medium",
-                color: "text-link",
-                onPress() {
-                  return outer2_1(outer2_2[11]).unignoreUser(outer1_0.id, "UserProfileRemediatedNotice");
-                },
-                children
-              };
-              return outer1_6(user(outer1_2[9]).Text, obj);
-            }
+      const obj1 = { children: null };
+      const obj2 = { variant: "text-sm/semibold", color: "text-default", lineClamp: 1, children: null };
+      const intl2 = tmp4(1236).intl;
+      obj2[3] = intl2.string(tmp4(1236).t.HXz5An);
+      const items3 = [callback(tmp4(4185).Text, obj2), callback(tmp4(4185).Text, { variant: "text-sm/semibold", color: "text-default", accessibilityElementsHidden: true, importantForAccessibility: "no", children: "\u2022" }), ];
+      const intl3 = tmp4(1236).intl;
+      const obj3 = { unignoreHook: null };
+      obj3[0] = function unignoreHook(children) {
+        return outer1_6(user(outer1_2[9]).Text, {
+          role: "button",
+          variant: "heading-sm/medium",
+          color: "text-link",
+          onPress() {
+            return outer1_1(outer1_2[11]).unignoreUser(id.id, "UserProfileRemediatedNotice");
+          },
+          children
+        });
       };
-      items3[2] = intl3.format(user(1212).t.PrtAqy, obj3);
-      obj1.children = items3;
-      isIgnored = callback2(closure_7, obj1);
+      items3[2] = intl3.format(tmp4(1236).t.PrtAqy, obj3);
+      obj1[0] = items3;
+      isIgnored = tmp8(closure_7, obj1);
     }
     items2[1] = isIgnored;
-    obj.children = items2;
-    let tmp6Result = callback2(View, obj);
-    const tmp6 = callback2;
-    const tmp7 = View;
+    obj[1] = items2;
+    let tmp8Result = tmp8(View, obj);
+    const tmp9 = View;
   } else {
-    tmp6Result = null;
+    tmp8Result = null;
     if (isIgnored) {
-      tmp6Result = null;
+      tmp8Result = null;
     }
   }
-  return tmp6Result;
+  return tmp8Result;
 };

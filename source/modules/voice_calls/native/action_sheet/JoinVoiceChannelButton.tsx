@@ -1,50 +1,49 @@
-// Module ID: 12818
-// Function ID: 99613
+// Module ID: 12840
+// Function ID: 12841
 // Name: JoinVoiceChannelButton
-// Dependencies: [31, 27, 3793, 653, 33, 4165, 10711, 566, 1212, 1820, 4979, 4578, 2]
+// Dependencies: [19, 17, 3817, 676, 21, 4189, 10735, 589, 1236, 1844, 5001, 4600, 2]
 // Exports: default
 
-// Module 12818 (JoinVoiceChannelButton)
-import result from "result";
+// Module 12840 (JoinVoiceChannelButton)
+import noop from "noop";
 import { View } from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import getUncachedChannelPermissions from "getUncachedChannelPermissions";
 import { Permissions } from "ME";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
 const require = arg1;
-let closure_9 = _createForOfIteratorHelperLoose.createStyles({ container: { flexDirection: "row" } });
-let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/voice_calls/native/action_sheet/JoinVoiceChannelButton.tsx");
+let closure_9 = createCacheKey.createStyles({ container: { flexDirection: "row" } });
+let result = require("getUncachedChannelPermissions").fileFinishedImporting("modules/voice_calls/native/action_sheet/JoinVoiceChannelButton.tsx");
 
 export default function JoinVoiceChannelButton(channel) {
   channel = channel.channel;
   const tmp = callback();
-  let obj = channel(566);
-  const items = [_isNativeReflectConstruct];
+  let obj = channel(589);
+  const items = [getUncachedChannelPermissions];
   const stateFromStores = obj.useStateFromStores(items, () => !outer1_6.can(outer1_7.CONNECT, channel));
-  const intl = channel(1212).intl;
-  if (tmp2) {
-    const intl3 = channel(1212).intl;
-    let stringResult = intl3.string(channel(1212).t.rZfiNq);
+  const intl = channel(1236).intl;
+  let stringResult = intl.string(channel(1236).t.eIi3Om);
+  if (tmp3) {
+    const intl3 = tmp4(1236).intl;
+    stringResult = intl3.string(tmp4(1236).t.rZfiNq);
     let flag = true;
   } else {
-    stringResult = tmp4;
     flag = false;
     if (stateFromStores) {
-      const intl2 = channel(1212).intl;
-      stringResult = intl2.string(channel(1212).t.TVBCKZ);
+      const intl2 = tmp4(1236).intl;
+      stringResult = intl2.string(tmp4(1236).t.TVBCKZ);
       flag = true;
     }
   }
   const items1 = [channel.id];
-  obj = { style: items2 };
+  obj = { style: items2, children: null };
   items2 = [tmp.container, channel.style];
   callback = React.useCallback(() => {
     const result = outer1_2(outer1_3[9]).dismissGlobalKeyboard();
     const obj = outer1_2(outer1_3[9]);
     const voiceChannel = outer1_1(outer1_3[10]).selectVoiceChannel(channel.id);
   }, items1);
-  obj = { disabled: flag, text: stringResult, onPress: callback };
-  obj.children = jsx(channel(4578).Button, { disabled: flag, text: stringResult, onPress: callback });
-  return <View disabled={flag} text={stringResult} onPress={callback} />;
+  obj[1] = jsx(channel(4600).Button, { disabled: flag, text: stringResult, onPress: callback });
+  return <View style={items2}>{null}</View>;
 };

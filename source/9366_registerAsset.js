@@ -1,11 +1,10 @@
 // Module ID: 9366
-// Function ID: 73042
+// Function ID: 9367
 // Name: registerAsset
-// Dependencies: [1217]
+// Dependencies: [1241]
 
 // Module 9366 (registerAsset)
 import registerAsset from "registerAsset";
 
-const obj = { __packager_asset: true, httpServerLocation: "/assets/images/native/premium/nitro_icons", width: 16, height: 16, scales: [2, 3], hash: "e31ee2ef368806b54cff2e8c81e8cd97", name: "img_nitro_icon_filled", type: "png" };
 
-export default registerAsset.registerAsset(obj);
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/guild_role_subscriptions/native/images", width: 16, height: 16, scales: [2, 3], hash: "f5a4357d7c0b7e1db64214ae6f5682c3", name: "ic_premium_channel_16px", type: "png" });

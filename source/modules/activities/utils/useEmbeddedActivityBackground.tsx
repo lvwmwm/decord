@@ -1,20 +1,22 @@
-// Module ID: 10646
-// Function ID: 82798
+// Module ID: 10670
+// Function ID: 10671
 // Name: useEmbeddedActivityBackground
-// Dependencies: [57, 31, 7892, 2]
+// Dependencies: [32, 19, 7917, 2]
 // Exports: default
 
-// Module 10646 (useEmbeddedActivityBackground)
+// Module 10670 (useEmbeddedActivityBackground)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
+import noop from "noop";
 
 const require = arg1;
 let closure_4 = ["embedded_cover", "embedded_background"];
-const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/activities/utils/useEmbeddedActivityBackground.tsx");
+const result = require("updateAssets").fileFinishedImporting("modules/activities/utils/useEmbeddedActivityBackground.tsx");
 
 export default function useEmbeddedActivityBackground(applicationId) {
+  let c2;
   let names;
   let size;
+  let tmp2;
   applicationId = applicationId.applicationId;
   ({ size, names } = applicationId);
   if (names === undefined) {
@@ -27,55 +29,56 @@ export default function useEmbeddedActivityBackground(applicationId) {
   let callback;
   let React;
   closure_4 = undefined;
+  [tmp2, c2] = callback(React.useState(null), 2);
+  const tmp3 = callback(React.useState(true), 2);
+  React = tmp3[1];
   const tmp = callback(React.useState(null), 2);
-  callback = tmp[1];
-  let tmp2 = callback(React.useState(true), 2);
-  React = tmp2[1];
-  let obj = applicationId(names[2]);
-  const assetImage = obj.getAssetImage(applicationId, tmp[0], size, str);
-  let str2 = "loading";
-  if (!tmp2[0]) {
+  const url = applicationId(names[2]).getAssetImage(applicationId, tmp2, size, str);
+  let state = "loading";
+  if (!tmp3[0]) {
     let str3 = "not-found";
-    if (null != assetImage) {
+    if (null != url) {
       str3 = "fetched";
     }
-    str2 = str3;
+    state = str3;
   }
-  closure_4 = React.useRef(names);
-  const effect = React.useEffect(() => {
+  closure_4 = obj.useRef(names);
+  const effect = obj.useEffect(() => {
     closure_4.current = names;
   });
   const items = [applicationId];
-  const effect1 = React.useEffect(() => {
+  const effect1 = obj.useEffect(() => {
     const current = ref.current;
     if (null != current) {
-      const assets = applicationId(names[2]).getAssets(current);
+      const assets = applicationId(names[2]).getAssets(tmp);
       assets.then((arg0) => {
-        let tmp4;
+        let tmp6;
         outer1_3(false);
         const entries = Object.entries(arg0);
-        let num = 0;
-        if (0 < entries.length) {
-          while (true) {
-            let tmp2 = callback;
-            let tmp3 = callback(entries[num], 2);
-            [r10020, tmp4] = tmp3;
-            if (null != tmp4) {
-              if ("" !== tmp4.id) {
-                let tmp5 = current;
-                if (current.includes(tmp4.name)) {
-                  break;
-                }
+        const obj = entries[Symbol.iterator]();
+        while (obj !== undefined) {
+          let tmp4 = callback;
+          let tmp5 = callback(tmp3, 2);
+          [r10020, tmp6] = tmp5;
+          let tmp7 = tmp6;
+          if (null != tmp6) {
+            let tmp8 = tmp6;
+            if ("" !== tmp7.id) {
+              let tmp9 = current;
+              let tmp10 = tmp6;
+              if (current.includes(tmp7.name)) {
+                let tmp11 = outer1_2;
+                let tmp12 = outer1_2(tmp6.id);
+                let tmp13 = obj;
+                obj.return();
               }
             }
-            num = num + 1;
           }
-          outer1_2(tmp4.id);
+          continue;
         }
       });
-      const obj = applicationId(names[2]);
+      let obj = applicationId(names[2]);
     }
   }, items);
-  obj = { url: assetImage, state: str2 };
-  return obj;
+  return { url, state };
 };

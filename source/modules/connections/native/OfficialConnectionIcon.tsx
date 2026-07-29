@@ -1,24 +1,24 @@
-// Module ID: 9988
-// Function ID: 77176
+// Module ID: 10010
+// Function ID: 10011
 // Name: OfficialConnectionIcon
-// Dependencies: [31, 27, 653, 33, 4165, 5521, 689, 665, 1273, 9989, 9990, 2]
+// Dependencies: [19, 17, 676, 21, 4189, 5539, 712, 688, 1297, 10011, 10012, 2]
 // Exports: default
 
-// Module 9988 (OfficialConnectionIcon)
-import "result";
+// Module 10010 (OfficialConnectionIcon)
+import "noop";
 import { View } from "get ActivityIndicator";
 import ME from "ME";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_4;
-let closure_5;
+let c4;
+let c5;
 let closure_6;
-let closure_7;
+let error;
 const require = arg1;
-({ DEFAULT_ROLE_COLOR_HEX: closure_4, EMPTY_STRING_SNOWFLAKE_ID: closure_5 } = ME);
-({ jsx: closure_6, jsxs: closure_7 } = jsxProd);
-let closure_8 = _createForOfIteratorHelperLoose.createStyles({ verifiedCheck: { position: "absolute", left: 0, top: 0 } });
+({ DEFAULT_ROLE_COLOR_HEX: c4, EMPTY_STRING_SNOWFLAKE_ID: c5 } = ME);
+({ jsx: closure_6, jsxs: error } = jsxProd);
+let closure_8 = createCacheKey.createStyles({ verifiedCheck: { position: "absolute", left: 0, top: 0 } });
 const result = require("ME").fileFinishedImporting("modules/connections/native/OfficialConnectionIcon.tsx");
 
 export default function OfficialConnectionIcon(arg0) {
@@ -33,60 +33,60 @@ export default function OfficialConnectionIcon(arg0) {
   ({ guildId, displayRoleIcon } = arg0);
   const tmp = callback3();
   let obj = { width: size, height: size };
-  let obj1 = require(5521) /* useRoleIcon */;
-  obj = { guildId };
-  if (null == roleId) {
+  let obj1 = require(5539) /* useRoleIcon */;
+  obj = { guildId, roleId: null, size: null };
+  if (roleId == null) {
     let id;
-    if (null != role) {
+    if (role != null) {
       id = role.id;
     }
     roleId = id;
   }
-  if (null == roleId) {
+  if (roleId == null) {
     roleId = closure_5;
   }
-  obj.roleId = roleId;
-  obj.size = size;
+  obj[1] = roleId;
+  obj[2] = size;
   const roleIcon = obj1.useRoleIcon(obj);
   if (false !== displayRoleIcon) {
     if (null != roleIcon) {
-      obj = {};
+      obj = { style: null, children: null };
       const items = [style, obj];
-      obj.style = items;
-      obj.children = roleIcon;
+      obj[0] = items;
+      obj[1] = roleIcon;
       return callback(View, obj);
     }
   }
-  if (null == roleColor) {
+  if (roleColor == null) {
     let colorString;
-    if (null != role) {
+    if (role != null) {
       colorString = role.colorString;
     }
     roleColor = colorString;
   }
-  if (null == roleColor) {
+  if (roleColor == null) {
     roleColor = closure_4;
   }
-  let PRIMARY_630 = importDefault(689).unsafe_rawColors.WHITE;
-  let obj3 = require(665) /* pad2 */;
-  const hex2intResult = obj3.hex2int(roleColor);
-  if (obj5.getDarkness(hex2intResult) < 0.3) {
-    PRIMARY_630 = importDefault(689).unsafe_rawColors.PRIMARY_630;
+  let PRIMARY_630 = importDefault(712).unsafe_rawColors.WHITE;
+  let tmp2Result = tmp2(688);
+  tmp2Result = tmp2(688);
+  if (tmp2Result.getDarkness(hex2intResult) < 0.3) {
+    PRIMARY_630 = tmp7(712).unsafe_rawColors.PRIMARY_630;
   }
-  obj1 = { style: items1 };
+  obj1 = { style: items1, children: null };
   items1 = [style, obj];
-  const obj2 = { style: items2 };
+  const obj2 = { style: items2, size: null, source: null, color: null };
   items2 = [tmp.verifiedCheck, obj];
-  obj2.size = require(1273) /* Button */.Icon.Sizes.CUSTOM;
-  obj2.source = importDefault(9989);
-  obj2.color = roleColor;
-  const items3 = [callback(require(1273) /* Button */.Icon, obj2), ];
-  obj3 = { style: items4 };
+  obj2[1] = require(1297) /* Button */.Icon.Sizes.CUSTOM;
+  obj2[2] = importDefault(10011);
+  obj2[3] = roleColor;
+  const items3 = [callback(require(1297) /* Button */.Icon, obj2), ];
+  const obj3 = { style: items4, size: null, source: null, color: null };
   items4 = [tmp.verifiedCheck, obj];
-  obj3.size = require(1273) /* Button */.Icon.Sizes.CUSTOM;
-  obj3.source = importDefault(9990);
-  obj3.color = PRIMARY_630;
-  items3[1] = callback(require(1273) /* Button */.Icon, obj3);
-  obj1.children = items3;
+  obj3[1] = require(1297) /* Button */.Icon.Sizes.CUSTOM;
+  obj3[2] = importDefault(10012);
+  obj3[3] = PRIMARY_630;
+  items3[1] = callback(require(1297) /* Button */.Icon, obj3);
+  obj1[1] = items3;
   return callback2(View, obj1);
 };

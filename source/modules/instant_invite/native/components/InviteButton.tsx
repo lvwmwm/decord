@@ -1,54 +1,53 @@
-// Module ID: 11783
-// Function ID: 91373
-// Dependencies: [31, 27, 6003, 33, 4165, 1212, 4578, 2]
+// Module ID: 11808
+// Function ID: 11809
+// Dependencies: [19, 17, 6021, 21, 4189, 1236, 4600, 2]
 
-// Module 11783
+// Module 11808
 import { View } from "get ActivityIndicator";
 import { InviteSendStates } from "InviteSendStates";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import importAllResult from "result";
+import createCacheKey from "createCacheKey";
+import importAllResult from "noop";
 
 const require = arg1;
-let closure_5 = _createForOfIteratorHelperLoose.createStyles({ buttonWrapper: { minWidth: 66, flexDirection: "row" } });
-const memoResult = require("result").memo(function InviteButton(onPressSend) {
+let closure_5 = createCacheKey.createStyles({ buttonWrapper: { minWidth: 66, flexDirection: "row" } });
+const memoResult = require("noop").memo(function InviteButton(onPress) {
   let disabled;
   let sendState;
-  ({ sendState, disabled } = onPressSend);
+  ({ sendState, disabled } = onPress);
   if (disabled === undefined) {
     disabled = false;
   }
-  const intl = require(1212) /* getSystemLocale */.intl;
-  intl.string(require(1212) /* getSystemLocale */.t.jYnGPG);
+  const intl = require(1236) /* getSystemLocale */.intl;
+  intl.string(require(1236) /* getSystemLocale */.t.jYnGPG);
   if (InviteSendStates.SENDING === sendState) {
-    const intl5 = require(1212) /* getSystemLocale */.intl;
-    let stringResult1 = intl5.string(require(1212) /* getSystemLocale */.t.jYnGPG);
+    const intl5 = tmp2(1236).intl;
+    let stringResult1 = intl5.string(tmp2(1236).t.jYnGPG);
+    disabled = false;
     let flag = true;
-    disabled = false;
-  } else if (InviteSendStates.SENT === sendState) {
-    const intl4 = require(1212) /* getSystemLocale */.intl;
-    stringResult1 = intl4.string(require(1212) /* getSystemLocale */.t.dVT149);
-    flag = false;
+  } else if (tmp5.SENT === sendState) {
+    const intl4 = tmp2(1236).intl;
+    stringResult1 = intl4.string(tmp2(1236).t.dVT149);
     disabled = true;
-  } else if (InviteSendStates.ERROR === sendState) {
-    const intl3 = require(1212) /* getSystemLocale */.intl;
-    stringResult1 = intl3.string(require(1212) /* getSystemLocale */.t.wNcfpX);
     flag = false;
+  } else if (tmp5.ERROR === sendState) {
+    const intl3 = tmp2(1236).intl;
+    stringResult1 = intl3.string(tmp2(1236).t.wNcfpX);
     disabled = false;
+    flag = false;
   } else {
-    const intl2 = require(1212) /* getSystemLocale */.intl;
-    stringResult1 = intl2.string(require(1212) /* getSystemLocale */.t.jYnGPG);
+    const intl2 = tmp2(1236).intl;
+    stringResult1 = intl2.string(tmp2(1236).t.jYnGPG);
     flag = false;
   }
-  let obj = { style: callback().buttonWrapper };
-  obj = { accessibilityRole: "none", size: "sm", variant: "secondary", text: stringResult1, onPress: onPressSend.onPressSend };
+  let obj = { style: callback().buttonWrapper, children: null };
+  obj = { accessibilityRole: "none", size: "sm", variant: "secondary", text: stringResult1, onPress: onPress.onPressSend, disabled: null, grow: true };
   if (!disabled) {
     disabled = flag;
   }
-  obj.disabled = disabled;
-  obj.grow = true;
-  obj.children = jsx(require(4578) /* Button */.Button, { accessibilityRole: "none", size: "sm", variant: "secondary", text: stringResult1, onPress: onPressSend.onPressSend });
-  return <View accessibilityRole="none" size="sm" variant="secondary" text={stringResult1} onPress={arg0.onPressSend} />;
+  obj[5] = disabled;
+  obj[1] = jsx(require(4600) /* Button */.Button, { accessibilityRole: "none", size: "sm", variant: "secondary", text: stringResult1, onPress: onPress.onPressSend, disabled: null, grow: true });
+  return <View accessibilityRole="none" size="sm" variant="secondary" text={stringResult1} onPress={arg0.onPressSend} disabled={null} grow />;
 });
 const result = require("InviteSendStates").fileFinishedImporting("modules/instant_invite/native/components/InviteButton.tsx");
 

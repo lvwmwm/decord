@@ -1,43 +1,49 @@
-// Module ID: 7954
-// Function ID: 63134
+// Module ID: 7979
+// Function ID: 7980
 // Name: useEditBannerSource
-// Dependencies: [7955, 1392, 665, 2]
+// Dependencies: [7980, 1416, 688, 2]
 // Exports: getAvatarSource, useEditBannerSource, useUserProfileBannerBackgroundColor
 
-// Module 7954 (useEditBannerSource)
-const result = require("pad2").fileFinishedImporting("modules/profile_customization/native/ProfileCustomizationUtils.tsx");
+// Module 7979 (useEditBannerSource)
+let result = require("int2hslRaw").fileFinishedImporting("modules/profile_customization/native/ProfileCustomizationUtils.tsx");
 
 export const useEditBannerSource = function useEditBannerSource(arg0) {
   let displayProfile;
   let pendingBanner;
   ({ displayProfile, pendingBanner } = arg0);
   if (null != pendingBanner) {
-    return require(7955) /* useDominantRGBFromImage */.memoizedImageSource(pendingBanner);
+    return require(7980) /* useDominantRGBFromImage */.memoizedImageSource(pendingBanner);
   } else {
     if (null === pendingBanner) {
-      let guildId;
-      if (null != displayProfile) {
-        guildId = displayProfile.guildId;
+      let result;
+      if (displayProfile != null) {
+        result = displayProfile.isUsingGuildMemberBanner();
       }
-      let source = null;
-      if (null != guildId) {
-        let bannerURL;
-        if (null != displayProfile) {
-          bannerURL = displayProfile.getBannerURL({ size: 600, canAnimate: true });
+      if (!result) {
+        let guildId;
+        if (displayProfile != null) {
+          guildId = displayProfile.guildId;
         }
-        source = require(1392) /* getAvatarURL */.makeSource(bannerURL);
-        const obj2 = require(1392) /* getAvatarURL */;
+        let source = null;
+        if (null != guildId) {
+          let bannerURL;
+          if (displayProfile != null) {
+            bannerURL = displayProfile.getBannerURL({ size: 600, canAnimate: true });
+          }
+          source = require(1416) /* getAvatarURL */.makeSource(bannerURL);
+          const obj = require(1416) /* getAvatarURL */;
+        }
+        return source;
       }
-      return source;
     }
     let previewBanner;
-    if (null != displayProfile) {
+    if (displayProfile != null) {
       previewBanner = displayProfile.getPreviewBanner(pendingBanner, true, 600);
     }
     let source1 = null;
     if (null != previewBanner) {
-      source1 = require(1392) /* getAvatarURL */.makeSource(previewBanner);
-      const obj = require(1392) /* getAvatarURL */;
+      source1 = require(1416) /* getAvatarURL */.makeSource(previewBanner);
+      const obj2 = require(1416) /* getAvatarURL */;
     }
     return source1;
   }
@@ -48,44 +54,48 @@ export const useUserProfileBannerBackgroundColor = function useUserProfileBanner
   let user;
   ({ user, pendingAvatarSrc, displayProfile } = arg0);
   if (null == user) {
+    const obj3 = require(7980) /* useDominantRGBFromImage */;
+    const memoizedImageSourceResult = require(7980) /* useDominantRGBFromImage */.memoizedImageSource(null);
+    const obj4 = require(688) /* int2hslRaw */;
     let primaryColor;
-    const obj3 = require(7955) /* useDominantRGBFromImage */;
-    const memoizedImageSourceResult = require(7955) /* useDominantRGBFromImage */.memoizedImageSource(null);
-    const obj4 = require(665) /* pad2 */;
-    let rgb2intResult = obj4.rgb2int(require(7955) /* useDominantRGBFromImage */.useDominantColorFromImage(null, memoizedImageSourceResult));
-    if (null != displayProfile) {
+    const obj5 = require(7980) /* useDominantRGBFromImage */;
+    if (displayProfile != null) {
       primaryColor = displayProfile.primaryColor;
     }
-    if (null != primaryColor) {
-      rgb2intResult = primaryColor;
+    if (primaryColor == null) {
+      primaryColor = rgb2intResult;
     }
-    return rgb2intResult;
+    return primaryColor;
   } else if (null == pendingAvatarSrc) {
     pendingAvatarSrc = user.getAvatarURL(tmp, 80);
-  } else if (null == pendingAvatarSrc) {
-    let obj = require(1392) /* getAvatarURL */;
+  } else if (pendingAvatarSrc == null) {
+    let obj = require(1416) /* getAvatarURL */;
     obj = {};
     const merged = Object.assign(user);
-    obj["avatar"] = null;
+    obj.avatar = null;
     pendingAvatarSrc = obj.getUserAvatarURL(obj);
   }
 };
-export const getAvatarSource = function getAvatarSource(guildId, guildId2, avatarSize, acked) {
-  let userAvatarURL = avatarSize;
-  if (null == guildId) {
+export const getAvatarSource = function getAvatarSource(getAvatarURL) {
+  if (null == getAvatarURL) {
     return null;
-  } else if (undefined === userAvatarURL) {
-    let obj = require(7955) /* useDominantRGBFromImage */;
-    let memoizedImageSourceResult = obj.memoizedImageSource(guildId.getAvatarURL(guildId2, 80, !acked));
   } else {
-    if (null == userAvatarURL) {
-      obj = {};
-      const merged = Object.assign(guildId);
-      obj["avatar"] = null;
-      userAvatarURL = require(1392) /* getAvatarURL */.getUserAvatarURL(obj);
-      const obj3 = require(1392) /* getAvatarURL */;
+    let userAvatarURL = arg2;
+    if (undefined === arg2) {
+      let memoizedImageSourceResult = require(7980) /* useDominantRGBFromImage */.memoizedImageSource(getAvatarURL.getAvatarURL(arg1, 80, !arg3));
+      const obj4 = require(7980) /* useDominantRGBFromImage */;
+      const tmp2 = !arg3;
+    } else {
+      let obj = require(7980) /* useDominantRGBFromImage */;
+      if (userAvatarURL == null) {
+        obj = {};
+        const merged = Object.assign(getAvatarURL);
+        obj.avatar = null;
+        userAvatarURL = tmp3(1416).getUserAvatarURL(obj);
+        const tmp3Result = tmp3(1416);
+      }
+      memoizedImageSourceResult = obj.memoizedImageSource(userAvatarURL);
+      tmp3 = require;
     }
-    memoizedImageSourceResult = require(7955) /* useDominantRGBFromImage */.memoizedImageSource(userAvatarURL);
-    const obj2 = require(7955) /* useDominantRGBFromImage */;
   }
 };

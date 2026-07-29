@@ -1,42 +1,42 @@
-// Module ID: 16334
-// Function ID: 126740
+// Module ID: 16369
+// Function ID: 16370
 // Name: ConnectedGuildSettingsModalAuditLog
-// Dependencies: [57, 31, 27, 1348, 1838, 1907, 1850, 16335, 653, 33, 4165, 689, 1456, 566, 16337, 1212, 5530, 16344, 16354, 6731, 16345, 5619, 5198, 4161, 5205, 1273, 16355, 5483, 2]
+// Dependencies: [32, 19, 17, 1372, 1862, 1931, 1874, 16370, 676, 21, 4189, 712, 1480, 589, 16372, 1236, 5548, 16379, 16389, 6752, 16380, 5637, 5220, 4185, 5227, 1297, 16390, 5501, 2]
 // Exports: default
 
-// Module 16334 (ConnectedGuildSettingsModalAuditLog)
+// Module 16369 (ConnectedGuildSettingsModalAuditLog)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
-import get_ActivityIndicator from "NavScrim";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_9 from "_createForOfIteratorHelperLoose";
-import closure_10 from "_isNativeReflectConstruct";
-import closure_11 from "_isNativeReflectConstruct";
-import closure_12 from "_isNativeReflectConstruct";
+import HeaderActionButton from "HeaderActionButton";
+import get_ActivityIndicator from "GuildSettingsModalAuditLogFilter";
+import ensureGuildLoaded from "ensureGuildLoaded";
+import createGuildRecordFromRust from "createGuildRecordFromRust";
+import handleConnectionOpen from "handleConnectionOpen";
+import mergeGuildAvatar from "mergeGuildAvatar";
+import AuditLogActions from "AuditLogActions";
 import ME from "ME";
-import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import jsxProd from "ActivityIndicator";
+import createCacheKey from "createCacheKey";
 
-let closure_13;
 let closure_14;
 let closure_15;
 let closure_16;
 let closure_17;
 let closure_6;
-let closure_7;
+let error;
+let map1;
 const require = arg1;
-({ View: closure_6, FlatList: closure_7 } = get_ActivityIndicator);
-({ GuildSettingsSections: closure_13, AuditLogFilterTypes: closure_14 } = ME);
+({ View: closure_6, FlatList: error } = get_ActivityIndicator);
+({ GuildSettingsSections: map1, AuditLogFilterTypes: closure_14 } = ME);
 ({ jsx: closure_15, jsxs: closure_16, Fragment: closure_17 } = jsxProd);
-_createForOfIteratorHelperLoose = { listView: { marginVertical: 12 }, spinner: { marginTop: 40 } };
-_createForOfIteratorHelperLoose = { borderRadius: require("_createForOfIteratorHelperLoose").radii.md, paddingVertical: 6, paddingHorizontal: 8, backgroundColor: require("_createForOfIteratorHelperLoose").colors.INPUT_BACKGROUND_DEFAULT };
-_createForOfIteratorHelperLoose.filterTextWrapper = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.filtersWrapper = { paddingTop: require("_createForOfIteratorHelperLoose").space.PX_12, paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_8 };
-_createForOfIteratorHelperLoose.firstAuditRow = { marginTop: 0 };
-_createForOfIteratorHelperLoose.lastAuditRow = { marginBottom: 0 };
-_createForOfIteratorHelperLoose.filterTrailing = { flexDirection: "row", alignItems: "center", flexWrap: "wrap", gap: 8 };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-let obj1 = { paddingTop: require("_createForOfIteratorHelperLoose").space.PX_12, paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_8 };
+createCacheKey = { listView: { marginVertical: 12 }, spinner: { marginTop: 40 }, filterTextWrapper: null, filtersWrapper: null, firstAuditRow: null, lastAuditRow: null, filterTrailing: null };
+createCacheKey = { borderRadius: require("Themes").radii.md, paddingVertical: 6, paddingHorizontal: 8, backgroundColor: require("Themes").colors.INPUT_BACKGROUND_DEFAULT };
+createCacheKey[2] = createCacheKey;
+createCacheKey[3] = { paddingTop: require("Themes").space.PX_12, paddingHorizontal: require("Themes").space.PX_8 };
+createCacheKey[4] = { marginTop: 0 };
+createCacheKey[5] = { marginBottom: 0 };
+createCacheKey[6] = { flexDirection: "row", alignItems: "center", flexWrap: "wrap", gap: 8 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let obj1 = { paddingTop: require("Themes").space.PX_12, paddingHorizontal: require("Themes").space.PX_8 };
 let result = require("get ActivityIndicator").fileFinishedImporting("modules/guild_settings/audit_log/native/GuildSettingsModalAuditLog.tsx");
 
 export default function ConnectedGuildSettingsModalAuditLog(guildId) {
@@ -48,85 +48,93 @@ export default function ConnectedGuildSettingsModalAuditLog(guildId) {
   let isLoadingNextPage;
   let userIdFilterLabel;
   guildId = guildId.guildId;
-  const tmp = _createForOfIteratorHelperLoose();
-  const importDefault = tmp;
+  let c1;
+  let navigation;
+  let stateFromStores;
+  actionFilter = undefined;
+  let userIdFilter;
+  let _logs;
+  let stateFromStores1;
+  let memo;
+  let first;
+  let handleConnectionOpen;
+  let callback;
+  const tmp = createCacheKey();
+  c1 = tmp;
   let obj = guildId(stateFromStores[12]);
-  const navigation = obj.useNavigation();
+  navigation = obj.useNavigation();
   let obj1 = guildId(stateFromStores[13]);
-  let items = [memo, closure_10];
+  let items = [memo, handleConnectionOpen];
   stateFromStores = obj1.useStateFromStores(items, () => memo.getChannel(channelId.getChannelId()));
   let obj2 = guildId(stateFromStores[13]);
-  const items1 = [closure_12, callback];
+  const items1 = [AuditLogActions, callback];
   const stateFromStoresObject = obj2.useStateFromStoresObject(items1, () => {
     let obj = navigation(stateFromStores[14]);
-    const first = obj.ACTION_FILTER_ITEMS().filter((value) => value.value === outer2_12.actionFilter)[0];
+    const first = obj.ACTION_FILTER_ITEMS().filter((value) => value.value === actionFilter.actionFilter)[0];
     let user = null;
-    if (null != outer1_12.userIdFilter) {
-      user = callback.getUser(outer1_12.userIdFilter);
+    if (null != userIdFilter.userIdFilter) {
+      user = callback.getUser(tmp3.userIdFilter);
     }
-    obj = { isInitialLoading: outer1_12.isInitialLoading, isLoading: outer1_12.isLoading, isLoadingNextPage: outer1_12.isLoadingNextPage, showLoadMore: outer1_12.groupedFetchCount > 2, hasError: outer1_12.hasError, hasOlderLogs: outer1_12.hasOlderLogs, actionFilter: outer1_12.actionFilter };
+    obj = { isInitialLoading: tmp3.isInitialLoading, isLoading: tmp3.isLoading, isLoadingNextPage: tmp3.isLoadingNextPage, showLoadMore: tmp3.groupedFetchCount > 2, hasError: tmp3.hasError, hasOlderLogs: tmp3.hasOlderLogs, actionFilter: tmp3.actionFilter, actionFilterLabel: null, userIdFilter: null, userIdFilterLabel: null, _logs: null };
     let str = "";
     if (null != first) {
       str = first.label;
     }
-    obj.actionFilterLabel = str;
-    obj.userIdFilter = outer1_12.userIdFilter;
+    obj[7] = str;
+    obj[8] = userIdFilter.userIdFilter;
     if (null != user) {
       let tag = user.tag;
     } else {
-      const intl = guildId(stateFromStores[15]).intl;
-      tag = intl.string(guildId(stateFromStores[15]).t.ZRFdsL);
+      const intl = guildId(tmp[15]).intl;
+      tag = intl.string(guildId(tmp[15]).t.ZRFdsL);
     }
-    obj.userIdFilterLabel = tag;
-    obj._logs = outer1_12.logs;
+    obj[9] = tag;
+    obj[10] = userIdFilter.logs;
     return obj;
   });
   ({ hasError, actionFilter } = stateFromStoresObject);
-  const userIdFilter = stateFromStoresObject.userIdFilter;
-  const _logs = stateFromStoresObject._logs;
+  userIdFilter = stateFromStoresObject.userIdFilter;
+  _logs = stateFromStoresObject._logs;
   ({ isInitialLoading, isLoading, isLoadingNextPage, userIdFilterLabel, actionFilterLabel } = stateFromStoresObject);
   let obj3 = guildId(stateFromStores[13]);
   const items2 = [first];
-  const stateFromStores1 = obj3.useStateFromStores(items2, () => first.getGuild(guildId));
+  stateFromStores1 = obj3.useStateFromStores(items2, () => first.getGuild(guildId));
   const items3 = [_logs, stateFromStores1];
   memo = userIdFilter.useMemo(() => {
     if (null != _logs) {
       if (null != stateFromStores1) {
-        navigation(stateFromStores[14]).transformLogs(_logs, stateFromStores1);
+        navigation(stateFromStores[14]).transformLogs(tmp, tmp2);
         const obj = navigation(stateFromStores[14]);
       }
       return [];
     }
   }, items3);
-  const tmp6 = actionFilter(userIdFilter.useState({ current: null, prev: null }), 2);
-  first = tmp6[0];
-  closure_10 = tmp6[1];
+  const tmp8 = actionFilter(userIdFilter.useState({ current: null, prev: null }), 2);
+  first = tmp8[0];
+  handleConnectionOpen = tmp8[1];
   const items4 = [actionFilter, userIdFilter, navigation];
   callback = userIdFilter.useCallback(() => {
     let obj = guildId(stateFromStores[16]);
     obj = { key: "GuildSettingsAuditLogFilter", options: null, hasIcons: false };
-    obj = {};
+    obj = { label: null, onPress: null };
     const intl = guildId(stateFromStores[15]).intl;
-    obj.label = intl.string(guildId(stateFromStores[15]).t["hxnY/q"]);
-    obj.onPress = function onPress() {
-      const obj = { filterType: outer2_14.USER };
-      let tmp2;
-      if (null != outer1_5) {
-        tmp2 = outer1_5;
-      }
-      obj.data = guildId(stateFromStores[17]).createAuditLogFilterUserData(tmp2);
-      outer1_2.push(outer2_13.AUDIT_LOG_FILTER, obj);
+    obj[0] = intl.string(guildId(stateFromStores[15]).t["hxnY/q"]);
+    obj[1] = function onPress() {
+      const obj = { filterType: outer1_14.USER, data: null };
+      obj[1] = outer1_0(outer1_3[17]).createAuditLogFilterUserData(HeaderActionButton);
+      arr = arr.push(outer1_13.AUDIT_LOG_FILTER, obj);
     };
     const items = [obj, ];
-    const obj1 = {};
+    const obj1 = { label: null, onPress: null };
     const intl2 = guildId(stateFromStores[15]).intl;
-    obj1.label = intl2.string(guildId(stateFromStores[15]).t.rautds);
-    obj1.onPress = function onPress() {
-      const obj = { filterType: outer2_14.ACTION, data: guildId(stateFromStores[17]).createAuditLogFilterActionData(outer1_4) };
-      outer1_2.push(outer2_13.AUDIT_LOG_FILTER, obj);
+    obj1[0] = intl2.string(guildId(stateFromStores[15]).t.rautds);
+    obj1[1] = function onPress() {
+      const obj = { filterType: outer1_14.ACTION, data: null };
+      obj[1] = outer1_0(outer1_3[17]).createAuditLogFilterActionData(_slicedToArray);
+      const obj2 = outer1_0(outer1_3[17]);
     };
     items[1] = obj1;
-    obj.options = items;
+    obj[1] = items;
     const result = obj.showSimpleActionSheet(obj);
   }, items4);
   const items5 = [tmp, first, stateFromStores, guildId, memo.length];
@@ -135,40 +143,43 @@ export default function ConnectedGuildSettingsModalAuditLog(guildId) {
     let index;
     let item;
     ({ item, index } = arg0);
-    let lastAuditRow = index === memo.length - 1;
-    let obj = {};
+    const diff = memo.length - 1;
     let firstAuditRow = 0 === index;
     if (firstAuditRow) {
-      firstAuditRow = tmp.firstAuditRow;
+      firstAuditRow = _undefined.firstAuditRow;
     }
+    let lastAuditRow = index === diff;
     const items = [firstAuditRow, ];
     if (lastAuditRow) {
-      lastAuditRow = tmp.lastAuditRow;
+      lastAuditRow = _undefined.lastAuditRow;
     }
     items[1] = lastAuditRow;
-    obj.containerStyle = items;
-    obj.onHeaderClick = function onHeaderClick(log) {
-      if (outer1_9.current !== log.id) {
-        const obj = { current: log.id, prev: outer1_9.current };
-        outer1_10(obj);
-      } else {
-        outer1_10({ current: null, prev: null });
-      }
-    };
-    obj.log = item;
-    obj.expanded = first.current === item.id;
-    obj.lastExpanded = first.prev === item.id;
-    obj.guildId = guildId;
-    obj.channel = stateFromStores;
-    return outer1_15(outer1_15(stateFromStores[18]), obj, item.id);
+    return outer1_15(_undefined(stateFromStores[18]), {
+      containerStyle: items,
+      onHeaderClick(id) {
+        if (ref.current !== id.id) {
+          const obj = { current: null, prev: null };
+          obj[0] = id.id;
+          obj[1] = tmp.current;
+          callback(obj);
+        } else {
+          callback({ current: null, prev: null });
+        }
+      },
+      log: item,
+      expanded: first.current === item.id,
+      lastExpanded: first.prev === item.id,
+      guildId,
+      channel: stateFromStores
+    }, item.id);
   }, items5);
   const layoutEffect = userIdFilter.useLayoutEffect(() => {
     navigation.setOptions({
       headerRight() {
-        const obj = { onPress: outer1_11 };
-        const intl = guildId(stateFromStores[15]).intl;
-        obj.text = intl.string(guildId(stateFromStores[15]).t.pEasFX);
-        return outer2_15(guildId(stateFromStores[19]).HeaderActionButton, obj);
+        const obj = { onPress: mergeGuildAvatar, text: null };
+        const intl = outer1_0(outer1_3[15]).intl;
+        obj[1] = intl.string(outer1_0(outer1_3[15]).t.pEasFX);
+        return outer1_15(outer1_0(outer1_3[19]).HeaderActionButton, obj);
       }
     });
   }, items6);
@@ -177,87 +188,89 @@ export default function ConnectedGuildSettingsModalAuditLog(guildId) {
     const logs = guildId(stateFromStores[20]).fetchLogs(guildId);
   }, items7);
   obj = { style: tmp.spinner };
-  const tmp12 = callback(guildId(stateFromStores[21]).ActivityIndicator, obj);
-  obj = {};
-  let tmp16Result = tmp12;
+  const tmp15 = callback(guildId(stateFromStores[21]).ActivityIndicator, obj);
+  let tmp16Result = tmp15;
   if (!isLoading) {
-    tmp16Result = tmp12;
+    tmp16Result = tmp15;
     if (!isInitialLoading) {
-      obj1 = {};
-      obj2 = { style: tmp.filtersWrapper };
-      obj3 = { start: true, end: true };
-      const obj4 = { variant: "text-md/semibold" };
-      let intl = guildId(stateFromStores[15]).intl;
-      obj4.children = intl.string(guildId(stateFromStores[15]).t.kP6oFy);
-      obj3.icon = callback(guildId(stateFromStores[23]).Text, obj4);
-      const obj5 = { style: tmp.filterTrailing };
-      const obj6 = { style: tmp.filterTextWrapper };
-      const obj7 = { variant: "text-sm/semibold", children: userIdFilterLabel };
-      obj6.children = callback(guildId(stateFromStores[23]).Text, obj7);
-      const items8 = [callback(_logs, obj6), ];
-      const obj8 = { style: tmp.filterTextWrapper };
-      const obj9 = { variant: "text-sm/semibold", children: actionFilterLabel };
-      obj8.children = callback(guildId(stateFromStores[23]).Text, obj9);
-      items8[1] = callback(_logs, obj8);
-      obj5.children = items8;
-      obj3.label = callback2(_logs, obj5);
-      obj3.onPress = callback;
-      obj3.trailing = callback(guildId(stateFromStores[24]).TableRowArrow, {});
-      obj2.children = callback(guildId(stateFromStores[22]).TableRow, obj3);
-      const items9 = [callback(_logs, obj2), , ];
+      obj = { style: null, children: null };
+      obj[0] = tmp.filtersWrapper;
+      obj1 = { start: true, end: true, icon: null, label: null, onPress: null, trailing: null };
+      obj2 = { variant: "text-md/semibold", children: null };
+      let intl = tmp2(tmp3[15]).intl;
+      obj2[1] = intl.string(tmp2(tmp3[15]).t.kP6oFy);
+      obj1[2] = tmp14(tmp2(tmp3[23]).Text, obj2);
+      obj3 = { style: null, children: null };
+      obj3[0] = tmp.filterTrailing;
+      const obj4 = { style: null, children: null };
+      obj4[0] = tmp.filterTextWrapper;
+      const obj5 = { variant: "text-sm/semibold", children: null };
+      obj5[1] = userIdFilterLabel;
+      obj4[1] = tmp14(tmp2(tmp3[23]).Text, obj5);
+      const items8 = [tmp14(_logs, obj4), ];
+      const obj6 = { style: null, children: null };
+      obj6[0] = tmp.filterTextWrapper;
+      const obj7 = { variant: "text-sm/semibold", children: null };
+      obj7[1] = actionFilterLabel;
+      obj6[1] = tmp14(tmp2(tmp3[23]).Text, obj7);
+      items8[1] = tmp14(_logs, obj6);
+      obj3[1] = items8;
+      obj1[3] = tmp16(_logs, obj3);
+      obj1[4] = callback;
+      obj1[5] = tmp14(tmp2(tmp3[24]).TableRowArrow, {});
+      obj[1] = tmp14(tmp2(tmp3[22]).TableRow, obj1);
+      const items9 = [tmp14(_logs, obj), , ];
       if (0 === memo.length) {
-        const obj10 = {};
-        let intl2 = guildId(stateFromStores[15]).intl;
+        let intl2 = tmp2(tmp3[15]).intl;
         const string = intl2.string;
-        const t = guildId(stateFromStores[15]).t;
+        const t = tmp2(tmp3[15]).t;
         if (hasError) {
           let stringResult = string(t.tzkaD7);
         } else {
           stringResult = string(t.lNuYhh);
         }
-        obj10.body = stringResult;
-        const intl3 = guildId(stateFromStores[15]).intl;
-        let string2 = intl3.string;
-        let t2 = guildId(stateFromStores[15]).t;
+        const obj8 = { body: null, title: null, Illustration: null };
+        obj8[0] = stringResult;
+        const intl3 = tmp2(tmp3[15]).intl;
+        const string2 = intl3.string;
+        let Ww5Tjy = tmp2(tmp3[15]).t;
         if (hasError) {
-          let string2Result = string2(t2.Ww5Tjy);
+          Ww5Tjy = Ww5Tjy.Ww5Tjy;
+          let string2Result = string2(Ww5Tjy);
         } else {
-          string2Result = string2(t2["RHhk+P"]);
+          string2Result = string2(Ww5Tjy["RHhk+P"]);
         }
-        obj10.title = string2Result;
-        t2 = guildId;
-        string2 = stateFromStores;
-        obj10.Illustration = guildId(stateFromStores[26]).EmptyServerSettingsAuditLog;
-        callback(guildId(stateFromStores[25]).EmptyState, obj10);
-        const tmp24 = callback;
+        obj8[1] = string2Result;
+        obj8[2] = tmp2(tmp3[26]).EmptyServerSettingsAuditLog;
+        tmp14(tmp2(tmp3[25]).EmptyState, obj8);
       } else {
-        const obj11 = {};
+        const obj9 = { style: null, contentContainerStyle: null, data: null, extraData: null, keyExtractor: null, renderItem: null, onEndReached: null };
         const items10 = [tmp.listView];
-        obj11.style = items10;
-        obj11.contentContainerStyle = guildId.contentContainerStyle;
-        obj11.data = memo;
-        obj11.extraData = first;
-        obj11.keyExtractor = function keyExtractor(id) {
+        obj9[0] = items10;
+        obj9[1] = guildId.contentContainerStyle;
+        obj9[2] = memo;
+        obj9[3] = first;
+        obj9[4] = function keyExtractor(id) {
           return id.id;
         };
-        obj11.renderItem = callback1;
-        obj11.onEndReached = function onEndReached() {
+        obj9[5] = callback1;
+        obj9[6] = function onEndReached() {
           const nextLogPage = guildId(stateFromStores[20]).fetchNextLogPage(guildId);
         };
-        items9[1] = callback(stateFromStores1, obj11);
-        let tmp34 = null;
+        items9[1] = tmp14(stateFromStores1, obj9);
+        let tmp24 = null;
         if (isLoadingNextPage) {
-          tmp34 = tmp12;
+          tmp24 = tmp15;
         }
-        items9[2] = tmp34;
-        obj1.children = items9;
-        tmp16Result = tmp16(tmp17, obj1);
+        const obj10 = { children: null };
+        items9[2] = tmp24;
+        obj10[0] = items9;
+        tmp16Result = tmp16(tmp17, obj10);
       }
-      tmp16 = callback2;
-      tmp17 = closure_17;
     }
   }
+  const obj11 = { children: null };
   const items11 = [tmp16Result, callback(guildId(stateFromStores[27]).NavScrim, {})];
-  obj.children = items11;
-  return callback2(closure_17, obj);
+  obj11[0] = items11;
+  return closure_16(closure_17, obj11);
 };

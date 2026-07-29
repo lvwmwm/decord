@@ -1,24 +1,25 @@
-// Module ID: 15586
-// Function ID: 119808
+// Module ID: 15620
+// Function ID: 15621
 // Name: CoachmarkImg
-// Dependencies: [31, 1345, 33, 4165, 1273, 15582, 689, 1212, 8406, 2]
+// Dependencies: [19, 1369, 21, 4189, 1297, 15616, 712, 1236, 8430, 2]
 // Exports: default
 
-// Module 15586 (CoachmarkImg)
-import result from "result";
+// Module 15620 (CoachmarkImg)
+import noop from "noop";
 import { ContentDismissActionType } from "ContentDismissActionType";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
 const require = arg1;
 function CoachmarkImg(arg0) {
   let decorationAsset;
   let source;
   ({ source, decorationAsset } = arg0);
-  const obj = { style: callback().image, source, avatarDecoration: { asset: decorationAsset }, size: require(1273) /* Button */.AvatarSizes.XXLARGE };
-  return jsx(require(1273) /* Button */.Avatar, { style: callback().image, source, avatarDecoration: { asset: decorationAsset }, size: require(1273) /* Button */.AvatarSizes.XXLARGE });
+  const obj = { style: callback().image, source, avatarDecoration: { asset: decorationAsset }, size: null };
+  obj[3] = require(1297) /* Button */.AvatarSizes.XXLARGE;
+  return jsx(require(1297) /* Button */.Avatar, { style: callback().image, source, avatarDecoration: { asset: decorationAsset }, size: null });
 }
-let closure_6 = _createForOfIteratorHelperLoose.createStyles({ image: { marginTop: 12 } });
+let closure_6 = createCacheKey.createStyles({ image: { marginTop: 12 } });
 const result = require("jsxProd").fileFinishedImporting("modules/collectibles/native/ShopCoachmark.tsx");
 
 export default function ShopCoachmark(markAsDismissed) {
@@ -36,26 +37,35 @@ export default function ShopCoachmark(markAsDismissed) {
       title,
       description,
       onDismiss() {
-        outer1_0(avatarSrc.USER_DISMISS);
+        callback(outer1_4.USER_DISMISS);
       },
-      visible
+      visible,
+      position: null,
+      offsetY: null,
+      renderImgComponent: null,
+      buttonLabel: null,
+      buttonVariant: "primary",
+      onButtonPress: null
     };
     let str = "bottom";
     if (obj2.isYouNavFloating()) {
       str = "top";
     }
-    obj.position = str;
+    obj[4] = str;
     obj2 = markAsDismissed(title[5]);
     let PX_12;
-    if (obj3.isYouNavFloating()) {
-      PX_12 = visible(title[6]).space.PX_12;
+    if (tmpResult.isYouNavFloating()) {
+      PX_12 = visible(tmp2[6]).space.PX_12;
     }
-    obj.offsetY = PX_12;
-    obj.renderImgComponent = null != renderImgComponent ? renderImgComponent : (() => decorationAsset(renderImgComponent, { source: outer1_4, decorationAsset: outer1_5 }));
-    const intl = markAsDismissed(title[7]).intl;
-    obj.buttonLabel = intl.string(markAsDismissed(title[7]).t.fYfGgK);
-    obj.buttonVariant = "primary";
-    obj.onButtonPress = navigateToShop;
+    obj[5] = PX_12;
+    let fn = renderImgComponent;
+    if (renderImgComponent == null) {
+      fn = () => outer1_5(outer1_7, { source: closure_4, decorationAsset: closure_5 });
+    }
+    obj[6] = fn;
+    const intl = tmp(tmp2[7]).intl;
+    obj[7] = intl.string(markAsDismissed(title[7]).t.fYfGgK);
+    obj[9] = navigateToShop;
     return obj;
   }, items);
   const coachmark = markAsDismissed(title[8]).useCoachmark(markAsDismissed.buttonRef, memo);

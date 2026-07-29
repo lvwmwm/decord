@@ -1,10 +1,10 @@
-// Module ID: 4268
-// Function ID: 37242
+// Module ID: 4293
+// Function ID: 4294
 // Name: Camera
-// Dependencies: [31, 33, 4265, 2]
+// Dependencies: [19, 21, 4290, 2]
 
-// Module 4268 (Camera)
-import "result";
+// Module 4293 (Camera)
+import "noop";
 import { jsx } from "jsxProd";
 
 class Camera {
@@ -12,25 +12,22 @@ class Camera {
     ({ width, height } = global);
     tmp2 = jsx;
     if (global.disabled) {
-      obj = {};
-      str = "media-engine-video";
-      obj.className = "media-engine-video";
-      obj1 = {};
-      obj1.width = width;
-      obj1.height = height;
-      obj.style = obj1;
-      str2 = "div";
+      obj = { className: "media-engine-video", style: null };
+      obj1 = { width: null, height: null };
+      obj1[0] = width;
+      obj1[1] = height;
+      obj[1] = obj1;
+      str = "div";
       tmp2Result = tmp2("div", obj);
     } else {
       tmp3 = closure_0;
       tmp4 = closure_1;
-      num = 2;
-      obj = {};
-      obj.streamId = tmp;
-      obj2 = {};
-      obj2.width = width;
-      obj2.height = height;
-      obj.style = obj2;
+      obj = { streamId: null, style: null };
+      obj[0] = tmp;
+      obj2 = { width: null, height: null };
+      obj2[0] = width;
+      obj2[1] = height;
+      obj[1] = obj2;
       tmp2Result = tmp2(require("Video"), obj);
     }
     return tmp2Result;

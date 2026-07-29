@@ -1,190 +1,143 @@
-// Module ID: 6199
-// Function ID: 55497
-// Name: _callSuper
-// Dependencies: [6, 7, 15, 17, 18, 1859, 3820, 6200, 6201, 2]
+// Module ID: 6219
+// Function ID: 6220
+// Name: createFromOrder
+// Dependencies: [1883, 3844, 6220, 6221, 2]
 
-// Module 6199 (_callSuper)
-import _callSuper from "_callSuper";
-import closure_1 from "_callSuper";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
-import importDefaultResult from "Record";
-import { BaseInvoiceRecord } from "_callSuper";
-import closure_6 from "_callSuper";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 6219 (createFromOrder)
+import "toJS";
+import { BaseInvoiceRecord } from "createFromServer";
+import createFromServer from "createFromServer";
+import closure_2 from "createFromServer";
 
-function _callSuper(arg0, arg1, arg2) {
-  const obj = callback2(arg1);
-  if (_isNativeReflectConstruct()) {
-    const _Reflect = Reflect;
-    const items = [];
-    let constructResult = Reflect.construct(obj, items, callback2(arg0).constructor);
-  } else {
-    constructResult = obj.apply(arg0, undefined);
+let prototype;
+prototype = function BillingFacetRecord(invoicePreview) {
+  let paymentSourceId;
+  const tmp = new prototype(new.target, new.target, invoicePreview);
+  // ThrowIfThisInitialized (0x7c)
+  ({ paymentGateway: tmp.paymentGateway, paymentSourceId } = invoicePreview);
+  if (paymentSourceId == null) {
+    paymentSourceId = null;
   }
-  return _possibleConstructorReturn(arg0, constructResult);
+  tmp.paymentSourceId = paymentSourceId;
+  invoicePreview = invoicePreview.invoicePreview;
+  if (invoicePreview == null) {
+    invoicePreview = null;
+  }
+  tmp.invoicePreview = invoicePreview;
+  return tmp;
+}.prototype;
+class prototype extends tmp2 {
 }
-function _isNativeReflectConstruct() {
-  let _callSuper = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return _callSuper;
+prototype["createFromOrder"] = function createFromOrder(billing_facet) {
+  let payment_gateway;
+  let payment_source_id;
+  billing_facet = billing_facet.billing_facet;
+  let tmp = null;
+  if (null != billing_facet) {
+    ({ payment_gateway, payment_source_id } = billing_facet);
+    if (payment_source_id == null) {
+      payment_source_id = null;
+    }
+    let invoiceFromOrder = BaseInvoiceRecord.createInvoiceFromOrder(billing_facet);
+    if (typeof prototype !== "find") {
+      HermesBuiltin.throwTypeError();
+    }
+    const tmp9 = new prototype("Trying to call a non-function", billing_facet, prototype, new.target, payment_gateway, payment_source_id, invoiceFromOrder);
+    // ThrowIfThisInitialized (0x7c)
+    tmp9.paymentGateway = payment_gateway;
+    if (payment_source_id == null) {
+      payment_source_id = null;
+    }
+    tmp9.paymentSourceId = payment_source_id;
+    if (invoiceFromOrder == null) {
+      invoiceFromOrder = null;
+    }
+    tmp9.invoicePreview = invoiceFromOrder;
+    tmp = tmp9;
   }
-  const result = _isNativeReflectConstruct();
+  return tmp;
+};
+let OrderRecord;
+class OrderRecord extends tmp2 {
+  constructor(arg0) {
+    tmp = new OrderRecord(new.target, new.target, global);
+    // ThrowIfThisInitialized (0x7c)
+    ({ id: tmp.id, status: tmp.status, revision: tmp.revision, orderLineItems } = global);
+    if (orderLineItems == null) {
+      orderLineItems = [];
+    }
+    tmp.orderLineItems = orderLineItems;
+    billingFacetRecord = global.billingFacetRecord;
+    if (billingFacetRecord == null) {
+      billingFacetRecord = null;
+    }
+    tmp.billingFacetRecord = billingFacetRecord;
+    externalGatewayFacet = global.externalGatewayFacet;
+    if (externalGatewayFacet == null) {
+      externalGatewayFacet = null;
+    }
+    tmp.externalGatewayFacet = externalGatewayFacet;
+    giftingFacet = global.giftingFacet;
+    if (giftingFacet == null) {
+      giftingFacet = null;
+    }
+    tmp.giftingFacet = giftingFacet;
+    subscriptionFacet = global.subscriptionFacet;
+    if (subscriptionFacet == null) {
+      subscriptionFacet = null;
+    }
+    tmp.subscriptionFacet = subscriptionFacet;
+    prop = global.checkoutContextRecord;
+    if (prop == null) {
+      prop = null;
+    }
+    tmp.checkoutContextRecord = prop;
+    ({ createdAt: tmp.createdAt, unsatisfiedConstraints } = global);
+    if (unsatisfiedConstraints == null) {
+      unsatisfiedConstraints = [];
+    }
+    tmp.unsatisfiedConstraints = unsatisfiedConstraints;
+    return tmp;
+  }
 }
-let tmp3 = ((importDefaultResult) => {
-  class BillingFacetRecord {
-    constructor(arg0) {
-      tmp = BillingFacetRecord(this, BillingFacetRecord);
-      tmp2 = outer1_9(this, BillingFacetRecord);
-      ({ paymentGateway: tmp2.paymentGateway, paymentSourceId } = importDefaultResult);
-      tmp3 = null;
-      if (null != paymentSourceId) {
-        tmp3 = paymentSourceId;
-      }
-      tmp2.paymentSourceId = tmp3;
-      invoicePreview = importDefaultResult.invoicePreview;
-      tmp4 = null;
-      if (null != invoicePreview) {
-        tmp4 = invoicePreview;
-      }
-      tmp2.invoicePreview = tmp4;
-      return tmp2;
-    }
+const prototype2 = OrderRecord.prototype;
+OrderRecord["createFromServer"] = function createFromServer(id) {
+  let unsatisfied_constraints;
+  const obj = { id: id.id, status: id.status, revision: id.revision, orderLineItems: id.order_line_items, billingFacetRecord: prototype.createFromOrder(id), externalGatewayFacet: null, giftingFacet: null, checkoutContextRecord: null, createdAt: null, unsatisfiedConstraints: null, subscriptionFacet: null };
+  let prop = id.external_gateway_facet;
+  if (prop == null) {
+    prop = null;
   }
-  callback3(BillingFacetRecord, importDefaultResult);
-  const items = [
-    {
-      key: "createFromOrder",
-      value(billing_facet) {
-        let payment_source_id;
-        billing_facet = billing_facet.billing_facet;
-        let tmp = null;
-        if (null != billing_facet) {
-          const obj = {};
-          ({ payment_gateway: obj.paymentGateway, payment_source_id } = billing_facet);
-          let tmp3 = null;
-          if (null != payment_source_id) {
-            tmp3 = payment_source_id;
-          }
-          obj.paymentSourceId = tmp3;
-          obj.invoicePreview = outer1_5.createInvoiceFromOrder(billing_facet);
-          const prototype = tmp2.prototype;
-          tmp = new tmp2(obj);
-        }
-        return tmp;
-      }
-    }
-  ];
-  return callback(BillingFacetRecord, null, items);
-})(importDefaultResult);
-let closure_8 = tmp3;
-let tmp4 = ((importDefaultResult) => {
-  class OrderRecord {
-    constructor(arg0) {
-      tmp = OrderRecord(this, OrderRecord);
-      tmp2 = outer1_9(this, OrderRecord);
-      ({ id: tmp2.id, status: tmp2.status, revision: tmp2.revision, orderLineItems } = importDefaultResult);
-      if (null == orderLineItems) {
-        orderLineItems = [];
-      }
-      tmp2.orderLineItems = orderLineItems;
-      billingFacetRecord = importDefaultResult.billingFacetRecord;
-      tmp3 = null;
-      if (null != billingFacetRecord) {
-        tmp3 = billingFacetRecord;
-      }
-      tmp2.billingFacetRecord = tmp3;
-      externalGatewayFacet = importDefaultResult.externalGatewayFacet;
-      tmp4 = null;
-      if (null != externalGatewayFacet) {
-        tmp4 = externalGatewayFacet;
-      }
-      tmp2.externalGatewayFacet = tmp4;
-      giftingFacet = importDefaultResult.giftingFacet;
-      tmp5 = null;
-      if (null != giftingFacet) {
-        tmp5 = giftingFacet;
-      }
-      tmp2.giftingFacet = tmp5;
-      subscriptionFacet = importDefaultResult.subscriptionFacet;
-      tmp6 = null;
-      if (null != subscriptionFacet) {
-        tmp6 = subscriptionFacet;
-      }
-      tmp2.subscriptionFacet = tmp6;
-      checkoutContextRecord = importDefaultResult.checkoutContextRecord;
-      tmp7 = null;
-      if (null != checkoutContextRecord) {
-        tmp7 = checkoutContextRecord;
-      }
-      tmp2.checkoutContextRecord = tmp7;
-      ({ createdAt: tmp2.createdAt, unsatisfiedConstraints } = importDefaultResult);
-      if (null == unsatisfiedConstraints) {
-        unsatisfiedConstraints = [];
-      }
-      tmp2.unsatisfiedConstraints = unsatisfiedConstraints;
-      return tmp2;
-    }
+  obj[5] = prop;
+  let gifting_facet = id.gifting_facet;
+  if (gifting_facet == null) {
+    gifting_facet = null;
   }
-  callback3(OrderRecord, importDefaultResult);
-  let obj = {
-    key: "getInvoicePreview",
-    value() {
-      let invoicePreview = null;
-      if (null != this.billingFacetRecord) {
-        invoicePreview = this.billingFacetRecord.invoicePreview;
-      }
-      return invoicePreview;
-    }
-  };
-  const items = [obj, ];
-  obj = {
-    key: "firstUnsatisfiedConstraintReasonCode",
-    value() {
-      let reason_code = null;
-      if (this.unsatisfiedConstraints.length > 0) {
-        reason_code = this.unsatisfiedConstraints[0].reason_code;
-      }
-      return reason_code;
-    }
-  };
-  items[1] = obj;
-  obj = {
-    key: "createFromServer",
-    value(id) {
-      let unsatisfied_constraints;
-      let tmp = OrderRecord;
-      const obj = { id: id.id, status: id.status, revision: id.revision, orderLineItems: id.order_line_items, billingFacetRecord: outer1_8.createFromOrder(id) };
-      const external_gateway_facet = id.external_gateway_facet;
-      let tmp2 = null;
-      if (null != external_gateway_facet) {
-        tmp2 = external_gateway_facet;
-      }
-      obj.externalGatewayFacet = tmp2;
-      const gifting_facet = id.gifting_facet;
-      let tmp3 = null;
-      if (null != gifting_facet) {
-        tmp3 = gifting_facet;
-      }
-      obj.giftingFacet = tmp3;
-      obj.checkoutContextRecord = outer1_6.createFromOrder(id);
-      ({ created_at: obj.createdAt, unsatisfied_constraints } = id);
-      if (null == unsatisfied_constraints) {
-        unsatisfied_constraints = [];
-      }
-      obj.unsatisfiedConstraints = unsatisfied_constraints;
-      obj.subscriptionFacet = outer1_7.createFromServer(id.subscription_facet);
-      tmp = new tmp(obj);
-      return tmp;
-    }
-  };
-  const items1 = [obj];
-  return callback(OrderRecord, items, items1);
-})(importDefaultResult);
-let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/payments/records/OrderRecord.tsx");
+  obj[6] = gifting_facet;
+  obj[7] = createFromServer.createFromOrder(id);
+  ({ created_at: obj[8], unsatisfied_constraints } = id);
+  if (unsatisfied_constraints == null) {
+    unsatisfied_constraints = [];
+  }
+  obj[9] = unsatisfied_constraints;
+  obj[10] = closure_2.createFromServer(id.subscription_facet);
+  return new OrderRecord(obj);
+};
+prototype2["getInvoicePreview"] = function getInvoicePreview() {
+  let invoicePreview = null;
+  if (null != this.billingFacetRecord) {
+    invoicePreview = this.billingFacetRecord.invoicePreview;
+  }
+  return invoicePreview;
+};
+prototype2["firstUnsatisfiedConstraintReasonCode"] = function firstUnsatisfiedConstraintReasonCode() {
+  let reason_code = null;
+  if (this.unsatisfiedConstraints.length > 0) {
+    reason_code = this.unsatisfiedConstraints[0].reason_code;
+  }
+  return reason_code;
+};
+const result = require("createFromServer").fileFinishedImporting("modules/payments/records/OrderRecord.tsx");
 
-export default tmp4;
-export const BillingFacetRecord = tmp3;
+export default OrderRecord;
+export const BillingFacetRecord = prototype;

@@ -1,17 +1,17 @@
-// Module ID: 11258
-// Function ID: 87441
+// Module ID: 11282
+// Function ID: 11283
 // Name: EmptyState
-// Dependencies: [31, 27, 33, 4165, 11201, 7992, 1212, 3878, 4161, 2]
+// Dependencies: [19, 17, 21, 4189, 11225, 8017, 1236, 3902, 4185, 2]
 // Exports: default
 
-// Module 11258 (EmptyState)
-import result from "result";
+// Module 11282 (EmptyState)
+import noop from "noop";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
 const require = arg1;
-let closure_5 = _createForOfIteratorHelperLoose.createStyles({ container: { position: "relative", justifyContent: "center", alignItems: "center" }, textContainer: { justifyContent: "center", width: "100%" }, text: { marginTop: 16, textAlign: "center" } });
+let closure_5 = createCacheKey.createStyles({ container: { position: "relative", justifyContent: "center", alignItems: "center" }, textContainer: { justifyContent: "center", width: "100%" }, text: { marginTop: 16, textAlign: "center" } });
 const result = require("jsxProd").fileFinishedImporting("modules/app_launcher/native/screens/search/EmptyState.tsx");
 
 export default function EmptyState(showsGenericMessage) {
@@ -20,8 +20,8 @@ export default function EmptyState(showsGenericMessage) {
     flag = false;
   }
   const tmp = callback();
-  let obj = flag(11201);
-  const logAppLauncherEmptyStateView = obj.useLogAppLauncherEmptyStateView(flag(7992).AppLauncherEmptyStateType.SEARCH_EMPTY, showsGenericMessage.query);
+  let obj = flag(11225);
+  const logAppLauncherEmptyStateView = obj.useLogAppLauncherEmptyStateView(flag(8017).AppLauncherEmptyStateType.SEARCH_EMPTY, showsGenericMessage.query);
   const items = [flag];
   const effect = React.useEffect(() => {
     const intl = flag(outer1_1[6]).intl;
@@ -35,19 +35,19 @@ export default function EmptyState(showsGenericMessage) {
     const AccessibilityAnnouncer = flag(outer1_1[7]).AccessibilityAnnouncer;
     AccessibilityAnnouncer.announce(stringResult, "polite");
   }, items);
-  obj = { style: tmp.container };
-  obj = { style: tmp.textContainer };
-  const obj1 = { style: tmp.text, variant: "text-sm/medium", color: "text-default" };
-  let intl = flag(1212).intl;
+  obj = { style: tmp.container, children: null };
+  obj = { style: tmp.textContainer, children: null };
+  const obj1 = { style: tmp.text, variant: "text-sm/medium", color: "text-default", children: null };
+  let intl = flag(1236).intl;
   let string = intl.string;
-  let t = flag(1212).t;
+  let t = flag(1236).t;
   if (flag) {
     let stringResult = string(t.aOkFv8);
   } else {
     stringResult = string(t.LSNOYf);
   }
-  obj1.children = stringResult;
-  obj.children = jsx(flag(4161).Text, { style: tmp.text, variant: "text-sm/medium", color: "text-default" });
-  obj.children = <View style={tmp.textContainer} />;
-  return <View style={tmp.textContainer} />;
+  obj1[3] = stringResult;
+  obj[1] = jsx(flag(4185).Text, { style: tmp.text, variant: "text-sm/medium", color: "text-default", children: null });
+  obj[1] = <View style={tmp.textContainer}>{null}</View>;
+  return <View style={tmp.textContainer}>{null}</View>;
 };

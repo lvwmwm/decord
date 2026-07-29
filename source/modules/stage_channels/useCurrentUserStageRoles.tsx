@@ -1,23 +1,23 @@
-// Module ID: 10657
-// Function ID: 82883
+// Module ID: 10681
+// Function ID: 10682
 // Name: useCurrentUserStageRoles
-// Dependencies: [1194, 4989, 566, 2]
+// Dependencies: [1218, 5011, 589, 2]
 // Exports: default
 
-// Module 10657 (useCurrentUserStageRoles)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_3 from "_isNativeReflectConstruct";
+// Module 10681 (useCurrentUserStageRoles)
+import fetchFingerprint from "fetchFingerprint";
+import buildStageChannelUserRoles from "buildStageChannelUserRoles";
 
 const require = arg1;
 const result = require("initialize").fileFinishedImporting("modules/stage_channels/useCurrentUserStageRoles.tsx");
 
 export default function useCurrentUserStageRoles(arg0) {
-  let flag = arg1;
   const _require = arg0;
+  let flag = arg1;
   if (arg1 === undefined) {
     flag = false;
   }
-  const items = [closure_3, _isNativeReflectConstruct];
+  const items = [buildStageChannelUserRoles, fetchFingerprint];
   const items1 = [arg0, flag];
   return _require(flag[2]).useStateFromStoresObject(items, () => outer1_3.getPermissionsForUser(outer1_2.getId(), closure_0, flag), items1);
 };

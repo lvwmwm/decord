@@ -1,39 +1,45 @@
-// Module ID: 13755
-// Function ID: 105457
+// Module ID: 13776
+// Function ID: 13777
 // Name: useIs2FAEnabled
-// Dependencies: [1194, 1850, 624, 2]
+// Dependencies: [1218, 1874, 647, 2]
 // Exports: useIs2FAEnabled, useIsTOTPEnabled, useIsUserVerified
 
-// Module 13755 (useIs2FAEnabled)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_3 from "_isNativeReflectConstruct";
+// Module 13776 (useIs2FAEnabled)
+import fetchFingerprint from "fetchFingerprint";
+import mergeGuildAvatar from "mergeGuildAvatar";
 
 const require = arg1;
 const result = require("defaultAreStatesEqual").fileFinishedImporting("modules/user_settings/account/native/SettingsAccountUtils.tsx");
 
 export const useIs2FAEnabled = function useIs2FAEnabled() {
-  const items = [closure_3];
-  return require(624) /* defaultAreStatesEqual */.useStateFromStores(items, () => {
-    const currentUser = outer1_3.getCurrentUser();
-    let mfaEnabled;
-    if (null != currentUser) {
-      mfaEnabled = currentUser.mfaEnabled;
+  const items = [mergeGuildAvatar];
+  return require(647) /* defaultAreStatesEqual */.useStateFromStores(items, () => {
+    currentUser = currentUser.getCurrentUser();
+    let flag;
+    if (currentUser != null) {
+      flag = currentUser.mfaEnabled;
     }
-    return null != mfaEnabled && mfaEnabled;
+    if (flag == null) {
+      flag = false;
+    }
+    return flag;
   });
 };
 export const useIsTOTPEnabled = function useIsTOTPEnabled() {
-  const items = [_isNativeReflectConstruct];
-  return require(624) /* defaultAreStatesEqual */.useStateFromStores(items, () => outer1_2.hasTOTPEnabled());
+  const items = [fetchFingerprint];
+  return require(647) /* defaultAreStatesEqual */.useStateFromStores(items, () => fetchFingerprint.hasTOTPEnabled());
 };
 export const useIsUserVerified = function useIsUserVerified() {
-  const items = [closure_3];
-  return require(624) /* defaultAreStatesEqual */.useStateFromStores(items, () => {
-    const currentUser = outer1_3.getCurrentUser();
-    let verified;
-    if (null != currentUser) {
-      verified = currentUser.verified;
+  const items = [mergeGuildAvatar];
+  return require(647) /* defaultAreStatesEqual */.useStateFromStores(items, () => {
+    currentUser = currentUser.getCurrentUser();
+    let flag;
+    if (currentUser != null) {
+      flag = currentUser.verified;
     }
-    return null != verified && verified;
+    if (flag == null) {
+      flag = false;
+    }
+    return flag;
   });
 };

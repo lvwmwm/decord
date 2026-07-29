@@ -1,20 +1,45 @@
-// Module ID: 10763
-// Function ID: 83504
-// Name: getSelectedNoiseSuppressionOption
-// Dependencies: [4212, 653, 8814, 10764, 566, 2]
-// Exports: handleAutomaticGainControlChange, handleEchoCancellationChange, handleNoiseSuppressionChange, useSelectedNoiseSuppressionOption
+// Module ID: 10787
+// Function ID: 10788
+// Name: handleAutomaticGainControlChange
+// Dependencies: [4236, 676, 8838, 10788, 589, 2]
+// Exports: getSelectedNoiseSuppressionOption, handleAutomaticGainControlChange, handleEchoCancellationChange, handleNoiseSuppressionChange, useSelectedNoiseSuppressionOption
 
-// Module 10763 (getSelectedNoiseSuppressionOption)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 10787 (handleAutomaticGainControlChange)
+import _detectH265HardwareDecode from "_detectH265HardwareDecode";
 import ME from "ME";
 
-let closure_4;
-let closure_5;
+let c4;
+let c5;
 const require = arg1;
-function getSelectedNoiseSuppressionOption() {
-  let obj = arg0;
-  if (arg0 === undefined) {
-    obj = _isNativeReflectConstruct;
+({ AnalyticsPages: c4, AnalyticsSections: c5 } = ME);
+let obj = { NONE: "NONE", STANDARD: "STANDARD", KRISP: "KRISP" };
+let result = require("trackDeviceChanged").fileFinishedImporting("modules/user_settings/voice/native/UserSettingsVoiceUtils.tsx");
+
+export const handleAutomaticGainControlChange = function handleAutomaticGainControlChange(arg0) {
+  let obj = importDefault(8838);
+  obj = { page: constants.USER_SETTINGS, section: constants2.SETTINGS_VOICE_AND_VIDEO };
+  const result = obj.setAutomaticGainControl(arg0, obj);
+};
+export const handleEchoCancellationChange = function handleEchoCancellationChange(arg0) {
+  let obj = importDefault(8838);
+  obj = { page: constants.USER_SETTINGS, section: constants2.SETTINGS_VOICE_AND_VIDEO };
+  obj.setEchoCancellation(arg0, obj);
+};
+export const handleNoiseSuppressionChange = function handleNoiseSuppressionChange(arg0) {
+  let KRISP;
+  let STANDARD;
+  ({ KRISP, STANDARD } = obj);
+  obj = importDefault(8838);
+  obj = { page: constants.USER_SETTINGS, section: constants2.SETTINGS_VOICE_AND_VIDEO };
+  obj.setNoiseCancellation(arg0 === KRISP, obj);
+  obj = { page: constants.USER_SETTINGS, section: constants2.SETTINGS_VOICE_AND_VIDEO };
+  importDefault(8838).setNoiseSuppression(arg0 === STANDARD, obj);
+};
+export const NoiseSuppressionOpt = obj;
+export const getSelectedNoiseSuppressionOption = function getSelectedNoiseSuppressionOption(_detectH265HardwareDecode) {
+  let obj = _detectH265HardwareDecode;
+  if (_detectH265HardwareDecode === undefined) {
+    obj = _detectH265HardwareDecode;
   }
   const noiseSuppression = obj.getNoiseSuppression();
   const noiseCancellation = obj.getNoiseCancellation();
@@ -23,34 +48,16 @@ function getSelectedNoiseSuppressionOption() {
   } else {
     return noiseSuppression ? tmp3.STANDARD : tmp3.NONE;
   }
-}
-({ AnalyticsPages: closure_4, AnalyticsSections: closure_5 } = ME);
-let obj = { NONE: "NONE", STANDARD: "STANDARD", KRISP: "KRISP" };
-let result = require("getInputDeviceName").fileFinishedImporting("modules/user_settings/voice/native/UserSettingsVoiceUtils.tsx");
-
-export const handleAutomaticGainControlChange = function handleAutomaticGainControlChange(arg0) {
-  let obj = importDefault(8814);
-  obj = { page: constants.USER_SETTINGS, section: constants2.SETTINGS_VOICE_AND_VIDEO };
-  const result = obj.setAutomaticGainControl(arg0, obj);
 };
-export const handleEchoCancellationChange = function handleEchoCancellationChange(closure_0) {
-  let obj = importDefault(8814);
-  obj = { page: constants.USER_SETTINGS, section: constants2.SETTINGS_VOICE_AND_VIDEO };
-  obj.setEchoCancellation(closure_0, obj);
-};
-export const handleNoiseSuppressionChange = function handleNoiseSuppressionChange(arg0) {
-  let KRISP;
-  let STANDARD;
-  ({ KRISP, STANDARD } = obj);
-  obj = importDefault(8814);
-  obj = { page: constants.USER_SETTINGS, section: constants2.SETTINGS_VOICE_AND_VIDEO };
-  obj.setNoiseCancellation(arg0 === KRISP, obj);
-  obj = { page: constants.USER_SETTINGS, section: constants2.SETTINGS_VOICE_AND_VIDEO };
-  importDefault(8814).setNoiseSuppression(arg0 === STANDARD, obj);
-};
-export const NoiseSuppressionOpt = obj;
-export { getSelectedNoiseSuppressionOption };
 export const useSelectedNoiseSuppressionOption = function useSelectedNoiseSuppressionOption() {
-  const items = [_isNativeReflectConstruct];
-  return require(566) /* initialize */.useStateFromStores(items, () => outer1_7(outer1_3));
+  const items = [_detectH265HardwareDecode];
+  return require(589) /* initialize */.useStateFromStores(items, () => {
+    const noiseSuppression = store.getNoiseSuppression();
+    const noiseCancellation = store.getNoiseCancellation();
+    if (noiseCancellation) {
+      obj.getNoiseCancellationDeferredToSystem(store) ? tmp3.NONE : tmp3.KRISP;
+    } else {
+      return noiseSuppression ? tmp3.STANDARD : tmp3.NONE;
+    }
+  });
 };

@@ -1,10 +1,10 @@
-// Module ID: 10137
-// Function ID: 78377
+// Module ID: 10158
+// Function ID: 10159
 // Name: openSafetyToolsActionSheet
-// Dependencies: [10138, 4133, 10139, 1935, 2]
+// Dependencies: [10159, 4157, 10160, 1959, 2]
 // Exports: openSafetyToolsActionSheet
 
-// Module 10137 (openSafetyToolsActionSheet)
+// Module 10158 (openSafetyToolsActionSheet)
 import { getSafetyToolsActionSheetKey as closure_3 } from "LOCATION_CONTEXT_MOBILE";
 
 const result = require("SafetyToolsActionSheet").fileFinishedImporting("modules/self_mod/SafetyToolsActionCreators.native.tsx");
@@ -12,7 +12,7 @@ const result = require("SafetyToolsActionSheet").fileFinishedImporting("modules/
 export const openSafetyToolsActionSheet = function openSafetyToolsActionSheet(channelId, recipientId, warningId, warningType) {
   const tmp = callback(channelId);
   const require = tmp;
-  let obj = importDefault(4133);
+  let obj = importDefault(4157);
   obj = {
     channelId,
     warningId,
@@ -22,5 +22,5 @@ export const openSafetyToolsActionSheet = function openSafetyToolsActionSheet(ch
       outer1_1(outer1_2[1]).hideActionSheet(closure_0);
     }
   };
-  obj.openLazy(require(1935) /* maybeLoadBundle */(10139, dependencyMap.paths), tmp, obj);
+  obj.openLazy(require(1959) /* asyncRequireImpl */(10160, dependencyMap.paths), tmp, obj);
 };

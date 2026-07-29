@@ -1,27 +1,36 @@
-// Module ID: 1873
-// Function ID: 20880
+// Module ID: 1897
+// Function ID: 1898
 // Name: isPremiumAtLeast
-// Dependencies: [1852, 2]
-// Exports: isPremium, isPremiumAtMost, isPremiumExactly
+// Dependencies: [1876, 2]
+// Exports: isPremium, isPremiumAtLeast, isPremiumAtMost, isPremiumExactly
 
-// Module 1873 (isPremiumAtLeast)
+// Module 1897 (isPremiumAtLeast)
 import { PremiumTypeOrder } from "GuildFeatures";
 
 function isPremiumAtLeast(premiumType, TIER_2) {
   let tmp = null == TIER_2;
   if (!tmp) {
-    let tmp2 = null != premiumType;
-    if (tmp2) {
-      tmp2 = PremiumTypeOrder[premiumType] >= PremiumTypeOrder[TIER_2];
+    let tmp3 = null != premiumType;
+    if (tmp3) {
+      tmp3 = PremiumTypeOrder[premiumType] >= PremiumTypeOrder[TIER_2];
     }
-    tmp = tmp2;
+    tmp = tmp3;
   }
   return tmp;
 }
-function isPremium(currentUser, TIER_2) {
-  let tmp = null != currentUser && null != currentUser.premiumType;
+function isPremium(premiumType) {
+  let tmp = null != premiumType && null != premiumType.premiumType;
   if (tmp) {
-    tmp = isPremiumAtLeast(currentUser.premiumType, TIER_2);
+    premiumType = premiumType.premiumType;
+    let tmp3 = null == arg1;
+    if (!tmp3) {
+      let tmp4 = null != premiumType;
+      if (tmp4) {
+        tmp4 = PremiumTypeOrder[premiumType] >= PremiumTypeOrder[arg1];
+      }
+      tmp3 = tmp4;
+    }
+    tmp = tmp3;
   }
   return tmp;
 }
@@ -36,10 +45,10 @@ const result = require("set").fileFinishedImporting("utils/PremiumTypeUtils.tsx"
 
 export default { isPremiumAtLeast, isPremium, isPremiumExactly };
 export { isPremiumAtLeast };
-export const isPremiumAtMost = function isPremiumAtMost(arg0, TIER_1) {
-  let tmp = null == arg0;
+export const isPremiumAtMost = function isPremiumAtMost(premiumType, TIER_1) {
+  let tmp = null == premiumType;
   if (!tmp) {
-    tmp = PremiumTypeOrder[arg0] <= PremiumTypeOrder[TIER_1];
+    tmp = PremiumTypeOrder[premiumType] <= PremiumTypeOrder[TIER_1];
   }
   return tmp;
 };

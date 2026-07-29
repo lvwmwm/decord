@@ -1,0 +1,18 @@
+// Module ID: 1029
+// Function ID: 1030
+// Name: feedbackSyncIntegration
+// Dependencies: [1026]
+
+// Module 1029 (feedbackSyncIntegration)
+import mergeOptions from "mergeOptions";
+
+Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
+
+export const feedbackSyncIntegration = mergeOptions.buildFeedbackIntegration({
+  getModalIntegration() {
+    return require(1026) /* mergeOptions */.feedbackModalIntegration;
+  },
+  getScreenshotIntegration() {
+    return require(1026) /* mergeOptions */.feedbackScreenshotIntegration;
+  }
+});

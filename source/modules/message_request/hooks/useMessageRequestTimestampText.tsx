@@ -1,61 +1,70 @@
-// Module ID: 15669
-// Function ID: 120670
-// Name: getMessageTimestampForChannel
-// Dependencies: [4177, 21, 11664, 566, 3747, 6074, 2]
+// Module ID: 15704
+// Function ID: 15705
+// Name: useMessageRequestTimestampText
+// Dependencies: [4201, 11, 11688, 589, 3771, 6092, 2]
 // Exports: useMessageRequestRelativeTimestampText, useMessageRequestTimestampText
 
-// Module 15669 (getMessageTimestampForChannel)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 15704 (useMessageRequestTimestampText)
+import generateOldThreadCutoff from "generateOldThreadCutoff";
 
 const require = arg1;
-function getMessageTimestampForChannel(loaded) {
+const result = require("loadMessageRequestData").fileFinishedImporting("modules/message_request/hooks/useMessageRequestTimestampText.tsx");
+
+export const useMessageRequestTimestampText = function useMessageRequestTimestampText(channel) {
   let lastMessageId;
   let message;
-  ({ lastMessageId, message } = loaded);
-  if (loaded.loaded) {
+  const _require = channel;
+  let obj = _require(11688);
+  const messageRequestPreview = obj.useMessageRequestPreview(channel);
+  obj = { lastMessageId: null };
+  const items = [generateOldThreadCutoff];
+  obj[0] = _require(589).useStateFromStores(items, () => outer1_3.lastMessageId(id.id));
+  const merged = Object.assign(messageRequestPreview);
+  ({ lastMessageId, message } = obj);
+  if (obj.loaded) {
     if (null != message) {
-      let extractTimestampResult = importDefault(21).extractTimestamp(message.id);
-      const obj2 = importDefault(21);
+      let extractTimestampResult = importDefault(11).extractTimestamp(message.id);
+      const obj5 = importDefault(11);
     }
-    return extractTimestampResult;
+    let str = "";
+    if (null != extractTimestampResult) {
+      str = importDefault(3771)(extractTimestampResult).calendar();
+      const obj6 = importDefault(3771)(extractTimestampResult);
+    }
+    return str;
   }
   extractTimestampResult = null;
   if (null != lastMessageId) {
-    extractTimestampResult = importDefault(21).extractTimestamp(lastMessageId);
-    const obj = importDefault(21);
+    extractTimestampResult = importDefault(11).extractTimestamp(lastMessageId);
+    const obj4 = importDefault(11);
   }
-}
-const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/message_request/hooks/useMessageRequestTimestampText.tsx");
-
-export const useMessageRequestTimestampText = function useMessageRequestTimestampText(channel) {
-  const _require = channel;
-  let obj = _require(11664);
-  const messageRequestPreview = obj.useMessageRequestPreview(channel);
-  obj = {};
-  const items = [_isNativeReflectConstruct];
-  obj.lastMessageId = _require(566).useStateFromStores(items, () => outer1_3.lastMessageId(id.id));
-  const merged = Object.assign(messageRequestPreview);
-  const tmp3 = getMessageTimestampForChannel(obj);
-  let str = "";
-  if (null != tmp3) {
-    str = importDefault(3747)(tmp3).calendar();
-    const obj4 = importDefault(3747)(tmp3);
-  }
-  return str;
 };
 export const useMessageRequestRelativeTimestampText = function useMessageRequestRelativeTimestampText(channel) {
+  let lastMessageId;
+  let message;
   const _require = channel;
-  let obj = _require(11664);
+  let obj = _require(11688);
   const messageRequestPreview = obj.useMessageRequestPreview(channel);
-  obj = {};
-  const items = [_isNativeReflectConstruct];
-  obj.lastMessageId = _require(566).useStateFromStores(items, () => outer1_3.lastMessageId(id.id));
+  obj = { lastMessageId: null };
+  const items = [generateOldThreadCutoff];
+  obj[0] = _require(589).useStateFromStores(items, () => outer1_3.lastMessageId(id.id));
   const merged = Object.assign(messageRequestPreview);
-  const tmp3 = getMessageTimestampForChannel(obj);
-  let str = "";
-  if (null != tmp3) {
-    str = _require(6074).getTimestampString(tmp3);
-    const obj4 = _require(6074);
+  ({ lastMessageId, message } = obj);
+  if (obj.loaded) {
+    if (null != message) {
+      let extractTimestampResult = importDefault(11).extractTimestamp(message.id);
+      const obj5 = importDefault(11);
+    }
+    let str = "";
+    if (null != extractTimestampResult) {
+      str = _require(6092).getTimestampString(extractTimestampResult);
+      const tmpResult = _require(6092);
+    }
+    return str;
   }
-  return str;
+  extractTimestampResult = null;
+  if (null != lastMessageId) {
+    extractTimestampResult = importDefault(11).extractTimestamp(lastMessageId);
+    const obj4 = importDefault(11);
+  }
 };

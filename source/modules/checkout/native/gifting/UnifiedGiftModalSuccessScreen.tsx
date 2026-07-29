@@ -1,35 +1,36 @@
-// Module ID: 11865
-// Function ID: 91898
+// Module ID: 11889
+// Function ID: 11890
 // Name: UnifiedGiftModalSuccessScreen
-// Dependencies: [31, 27, 653, 33, 4165, 689, 11866, 8747, 4372, 11877, 1935, 6590, 4596, 4161, 1212, 4579, 2]
+// Dependencies: [19, 17, 676, 21, 4189, 712, 11890, 8771, 4395, 11901, 1959, 6611, 4618, 4185, 1236, 4601, 2]
 // Exports: default
 
-// Module 11865 (UnifiedGiftModalSuccessScreen)
-import result from "result";
+// Module 11889 (UnifiedGiftModalSuccessScreen)
+import noop from "noop";
 import { Image } from "get ActivityIndicator";
 import { UserSettingsSections } from "ME";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
 let closure_6;
-let closure_7;
+let error;
 const require = arg1;
-({ jsx: closure_6, jsxs: closure_7 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_24, paddingBottom: require("_createForOfIteratorHelperLoose").space.PX_24, alignItems: "center" };
-_createForOfIteratorHelperLoose.alertContainer = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.image = { position: "relative", top: -50 };
-_createForOfIteratorHelperLoose.title = { marginTop: -require("_createForOfIteratorHelperLoose").space.PX_24, marginBottom: require("_createForOfIteratorHelperLoose").space.PX_8 };
-let obj1 = { marginTop: -require("_createForOfIteratorHelperLoose").space.PX_24, marginBottom: require("_createForOfIteratorHelperLoose").space.PX_8 };
-_createForOfIteratorHelperLoose.description = { marginBottom: require("_createForOfIteratorHelperLoose").space.PX_24 };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-let obj2 = { marginBottom: require("_createForOfIteratorHelperLoose").space.PX_24 };
+({ jsx: closure_6, jsxs: error } = jsxProd);
+createCacheKey = { alertContainer: null, image: null, title: null, description: null };
+createCacheKey = { paddingHorizontal: require("Themes").space.PX_24, paddingBottom: require("Themes").space.PX_24, alignItems: "center" };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { position: "relative", top: -50 };
+createCacheKey[2] = { marginTop: -require("Themes").space.PX_24, marginBottom: require("Themes").space.PX_8 };
+let obj1 = { marginTop: -require("Themes").space.PX_24, marginBottom: require("Themes").space.PX_8 };
+createCacheKey[3] = { marginBottom: require("Themes").space.PX_24 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let obj2 = { marginBottom: require("Themes").space.PX_24 };
 const result = require("ME").fileFinishedImporting("modules/checkout/native/gifting/UnifiedGiftModalSuccessScreen.tsx");
 
 export default function UnifiedGiftModalSuccessScreen(giftBadgeProgress) {
   giftBadgeProgress = giftBadgeProgress.giftBadgeProgress;
   const onClose = giftBadgeProgress.onClose;
-  const tmp = _createForOfIteratorHelperLoose();
+  let enabled;
+  const tmp = createCacheKey();
   const GiftingBadgeExperiment = giftBadgeProgress(enabled[7]).GiftingBadgeExperiment;
   enabled = GiftingBadgeExperiment.useConfig({ location: "UnifiedGiftModalSuccessScreen" }).enabled;
   const items = [enabled, giftBadgeProgress, onClose];
@@ -41,7 +42,8 @@ export default function UnifiedGiftModalSuccessScreen(giftBadgeProgress) {
     }
     if (tmp2) {
       let obj = onClose(enabled[8]);
-      obj = { giftBadgeProgress };
+      obj = { giftBadgeProgress: null };
+      obj[0] = giftBadgeProgress;
       obj.pushLazy(giftBadgeProgress(enabled[10])(enabled[9], enabled.paths), obj, "collectibles_shop_gift_badge_modal");
     }
   }, items);
@@ -52,28 +54,26 @@ export default function UnifiedGiftModalSuccessScreen(giftBadgeProgress) {
     obj = { screen: outer1_5.PREMIUM_GIFTING, params: {} };
     obj.openUserSettings(obj);
   }, items1);
-  let obj = { onClose: callback, noDefaultButtons: true, style: tmp.alertContainer };
+  let obj = { onClose: callback, noDefaultButtons: true, style: tmp.alertContainer, children: null };
   obj = { source: giftBadgeProgress(enabled[6]).GIFT_STYLE_IMG[giftBadgeProgress.giftStyle], style: tmp.image };
   const items2 = [callback(Image, obj), , , ];
-  obj = { variant: "heading-lg/bold", style: tmp.title };
+  obj = { variant: "heading-lg/bold", style: tmp.title, children: null };
   const intl = giftBadgeProgress(enabled[14]).intl;
-  obj.children = intl.string(giftBadgeProgress(enabled[14]).t.MqZXbv);
+  obj[2] = intl.string(giftBadgeProgress(enabled[14]).t.MqZXbv);
   items2[1] = callback(giftBadgeProgress(enabled[13]).Text, obj);
-  const obj1 = { variant: "text-md/medium", style: tmp.description };
+  const obj1 = { variant: "text-md/medium", style: tmp.description, children: null };
   const intl2 = giftBadgeProgress(enabled[14]).intl;
-  obj1.children = intl2.format(giftBadgeProgress(enabled[14]).t.YS2J4S, { onClick: callback1 });
+  obj1[2] = intl2.format(giftBadgeProgress(enabled[14]).t.YS2J4S, { onClick: callback1 });
   items2[2] = callback(giftBadgeProgress(enabled[13]).Text, obj1);
-  const obj2 = { onPress: callback };
+  const obj2 = { onPress: callback, text: null, textVariant: "text-md/semibold", grow: true };
   if (enabled) {
     if (null != giftBadgeProgress) {
-      let cpT0Cq = giftBadgeProgress(enabled[14]).t.PDTjLN;
+      let cpT0Cq = tmp2(tmp3[14]).t.PDTjLN;
     }
-    obj2.text = tmp7(cpT0Cq);
-    obj2.textVariant = "text-md/semibold";
-    obj2.grow = true;
+    obj2[1] = tmp9(cpT0Cq);
     items2[3] = callback(giftBadgeProgress(enabled[15]).BaseTextButton, obj2);
-    obj.children = items2;
-    return closure_7(tmp5, obj);
+    obj[3] = items2;
+    return closure_7(tmp7, obj);
   }
-  cpT0Cq = giftBadgeProgress(enabled[14]).t.cpT0Cq;
+  cpT0Cq = tmp2(tmp3[14]).t.cpT0Cq;
 };

@@ -1,19 +1,18 @@
-// Module ID: 4701
-// Function ID: 40632
+// Module ID: 4723
+// Function ID: 4724
 // Name: items
-// Dependencies: [4702, 4700, 2]
+// Dependencies: [4724, 4722, 2]
 // Exports: getAttachmentPayload, getFile, getFileContentLength, getFileData
 
-// Module 4701 (items)
-let obj = {
-  reName: /\.jpe?g$/i,
-  name(arg0) {
-    return "image" + arg0 + ".jpg";
-  },
-  type: "image/jpeg"
-};
+// Module 4723 (items)
 const items = [
-  obj,
+  {
+    reName: /\.jpe?g$/i,
+    name(arg0) {
+      return "image" + arg0 + ".jpg";
+    },
+    type: "image/jpeg"
+  },
   {
     reName: /\.jfif$/i,
     name(arg0) {
@@ -21,173 +20,158 @@ const items = [
     },
     type: "image/jpeg"
   },
-,
-,
-,
-,
-,
-,
-,
-,
-,
-,
-,
-
+  {
+    reName: /\.png$/i,
+    name(arg0) {
+      return "image" + arg0 + ".png";
+    },
+    type: "image/png"
+  },
+  {
+    reName: /\.gif$/i,
+    name(arg0) {
+      return "image" + arg0 + ".gif";
+    },
+    type: "image/gif"
+  },
+  {
+    reName: /\.webp$/i,
+    name(arg0) {
+      return "image" + arg0 + ".webp";
+    },
+    type: "image/webp"
+  },
+  {
+    reName: /\.avif$/i,
+    name(arg0) {
+      return "image" + arg0 + ".avif";
+    },
+    type: "image/avif"
+  },
+  {
+    reName: /\.heic$/i,
+    name(arg0) {
+      return "image" + arg0 + ".heic";
+    },
+    type: "image/heic"
+  },
+  {
+    reName: /\.heif$/i,
+    name(arg0) {
+      return "image" + arg0 + ".heif";
+    },
+    type: "image/heif"
+  },
+  {
+    reName: /\.dng$/i,
+    name(arg0) {
+      return "image" + arg0 + ".dng";
+    },
+    type: "image/x-adobe-dng"
+  },
+  {
+    reName: /\.mov$/i,
+    name(arg0) {
+      return "video" + arg0 + ".mov";
+    },
+    type: "video/quicktime"
+  },
+  {
+    reName: /\.qt$/i,
+    name(arg0) {
+      return "video" + arg0 + ".qt";
+    },
+    type: "video/quicktime"
+  },
+  {
+    reName: /\.avi$/i,
+    name(arg0) {
+      return "video" + arg0 + ".avi";
+    },
+    type: "video/x-msvideo"
+  },
+  {
+    reName: /\.mp4$/i,
+    name(arg0) {
+      return "video" + arg0 + ".mp4";
+    },
+    type: "video/mp4"
+  },
+  {
+    reName: /\.webm$/i,
+    name(arg0) {
+      return "video" + arg0 + ".webm";
+    },
+    type: "image/webm"
+  }
 ];
-obj = {
-  reName: /\.png$/i,
-  name(arg0) {
-    return "image" + arg0 + ".png";
-  },
-  type: "image/png"
-};
-items[2] = obj;
-obj = {
-  reName: /\.gif$/i,
-  name(arg0) {
-    return "image" + arg0 + ".gif";
-  },
-  type: "image/gif"
-};
-items[3] = obj;
-items[4] = {
-  reName: /\.webp$/i,
-  name(arg0) {
-    return "image" + arg0 + ".webp";
-  },
-  type: "image/webp"
-};
-items[5] = {
-  reName: /\.avif$/i,
-  name(arg0) {
-    return "image" + arg0 + ".avif";
-  },
-  type: "image/avif"
-};
-items[6] = {
-  reName: /\.heic$/i,
-  name(arg0) {
-    return "image" + arg0 + ".heic";
-  },
-  type: "image/heic"
-};
-items[7] = {
-  reName: /\.heif$/i,
-  name(arg0) {
-    return "image" + arg0 + ".heif";
-  },
-  type: "image/heif"
-};
-items[8] = {
-  reName: /\.dng$/i,
-  name(arg0) {
-    return "image" + arg0 + ".dng";
-  },
-  type: "image/x-adobe-dng"
-};
-items[9] = {
-  reName: /\.mov$/i,
-  name(arg0) {
-    return "video" + arg0 + ".mov";
-  },
-  type: "video/quicktime"
-};
-items[10] = {
-  reName: /\.qt$/i,
-  name(arg0) {
-    return "video" + arg0 + ".qt";
-  },
-  type: "video/quicktime"
-};
-items[11] = {
-  reName: /\.avi$/i,
-  name(arg0) {
-    return "video" + arg0 + ".avi";
-  },
-  type: "video/x-msvideo"
-};
-items[12] = {
-  reName: /\.mp4$/i,
-  name(arg0) {
-    return "video" + arg0 + ".mp4";
-  },
-  type: "video/mp4"
-};
-items[13] = {
-  reName: /\.webm$/i,
-  name(arg0) {
-    return "video" + arg0 + ".webm";
-  },
-  type: "image/webm"
-};
 const result = require("set").fileFinishedImporting("utils/UploadUtils.tsx");
 
 export const MAX_TOTAL_ATTACHMENT_SIZE = 524288000;
 export const MAX_TOTAL_ATTACHMENT_SIZE_MB = 500;
-export const getAttachmentPayload = function getAttachmentPayload(id, arg1, name) {
-  let tmp = arg1;
-  let filename = name;
-  if (arg1 === undefined) {
+export const getAttachmentPayload = function getAttachmentPayload(closure_0, closure_1, name) {
+  let tmp = closure_1;
+  if (closure_1 === undefined) {
     tmp = null;
   }
-  const obj = {};
   let str;
-  if (null != tmp) {
+  if (tmp != null) {
     str = tmp.toString();
   }
-  if (null == str) {
-    str = id.id;
+  if (str == null) {
+    str = closure_0.id;
   }
-  obj.id = str;
-  if (null != id.description) {
-    obj.description = id.description;
+  const obj = { id: str };
+  if (null != closure_0.description) {
+    obj.description = closure_0.description;
   }
-  if (null == filename) {
-    filename = id.filename;
+  let filename = name;
+  if (name == null) {
+    filename = closure_0.filename;
   }
   obj.filename = filename;
-  obj.uploaded_filename = id.uploadedFilename;
-  if (id.spoiler) {
+  obj.uploaded_filename = closure_0.uploadedFilename;
+  if (closure_0.spoiler) {
     obj.is_spoiler = true;
   }
   if (tmp3) {
-    obj.duration_secs = id.durationSecs;
+    obj.duration_secs = closure_0.durationSecs;
   }
   if (tmp4) {
-    obj.waveform = id.waveform;
+    obj.waveform = closure_0.waveform;
   }
-  let tmp5 = "isThumbnail" in id;
+  let tmp5 = "isThumbnail" in closure_0;
   if (tmp5) {
-    tmp5 = true === id.isThumbnail;
+    tmp5 = true === closure_0.isThumbnail;
   }
   if (tmp5) {
-    obj.is_thumbnail = id.isThumbnail;
+    obj.is_thumbnail = closure_0.isThumbnail;
   }
   if (tmp6) {
     obj.is_clip = true;
-    obj.title = id.clip.name;
-    obj.application_id = id.clip.applicationId;
-    obj.clip_created_at = require(4702) /* _createForOfIteratorHelperLoose */.getClipCreatedAt(id.clip.createdAt);
-    const obj2 = require(4702) /* _createForOfIteratorHelperLoose */;
-    obj.clip_participant_ids = require(4702) /* _createForOfIteratorHelperLoose */.getClipParticipantIds(id.clip.users);
-    obj.clip_remote_id = id.clip.remoteClipId;
-    const obj3 = require(4702) /* _createForOfIteratorHelperLoose */;
-    obj.clip_events_timeline = require(4702) /* _createForOfIteratorHelperLoose */.getClipEventsTimeline(id.clip);
-    const obj4 = require(4702) /* _createForOfIteratorHelperLoose */;
+    obj.title = closure_0.clip.name;
+    obj.application_id = closure_0.clip.applicationId;
+    obj.clip_created_at = require(4724) /* getClipCreatedAt */.getClipCreatedAt(closure_0.clip.createdAt);
+    const obj2 = require(4724) /* getClipCreatedAt */;
+    obj.clip_participant_ids = require(4724) /* getClipCreatedAt */.getClipParticipantIds(closure_0.clip.users);
+    obj.clip_remote_id = closure_0.clip.remoteClipId;
+    const obj3 = require(4724) /* getClipCreatedAt */;
+    obj.clip_events_timeline = require(4724) /* getClipCreatedAt */.getClipEventsTimeline(closure_0.clip);
+    const obj4 = require(4724) /* getClipCreatedAt */;
   }
-  let tmp9 = "item" in id && null != id.item;
+  let tmp9 = "item" in closure_0 && null != closure_0.item;
   if (tmp9) {
-    tmp9 = id.item.platform === require(4700) /* _isNativeReflectConstruct */.UploadPlatform.WEB;
+    tmp9 = closure_0.item.platform === require(4722) /* cancel */.UploadPlatform.WEB;
   }
   if (tmp9) {
     str = "mimeType";
-    tmp9 = "mimeType" in id;
+    tmp9 = "mimeType" in closure_0;
   }
   if (tmp9) {
-    tmp9 = null != id.mimeType;
+    tmp9 = null != closure_0.mimeType;
   }
   if (tmp9) {
-    obj.original_content_type = id.mimeType;
+    obj.original_content_type = closure_0.mimeType;
   }
   return obj;
 };
@@ -204,9 +188,9 @@ export const getFileData = function getFileData(arg0) {
     xMLHttpRequest.ontimeout = (arg0) => lib(arg0);
     xMLHttpRequest.onload = () => {
       let data;
-      if (null != lib) {
+      if (lib != null) {
         const response = lib.response;
-        if (null != response) {
+        if (response != null) {
           data = response.data;
         }
       }
@@ -224,8 +208,8 @@ export const getFileContentLength = function getFileContentLength(arg0) {
     xMLHttpRequest.open("HEAD", closure_0, true);
     xMLHttpRequest.onload = () => {
       if (xMLHttpRequest.status >= 200) {
-        if (xMLHttpRequest.status < 300) {
-          const responseHeader = xMLHttpRequest.getResponseHeader("Content-Length");
+        if (obj.status < 300) {
+          const responseHeader = obj.getResponseHeader("Content-Length");
           if (null != responseHeader) {
             if ("" !== responseHeader) {
               const _parseInt = parseInt;
@@ -237,7 +221,7 @@ export const getFileContentLength = function getFileContentLength(arg0) {
           onerror(error);
         }
       }
-      const error1 = new Error("HTTP request failed with status code " + xMLHttpRequest.status);
+      const error1 = new Error("HTTP request failed with status code " + obj.status);
       onerror(error1);
     };
     xMLHttpRequest.onerror = onerror;
@@ -251,91 +235,91 @@ export const getFile = function getFile(overrideType) {
   let overrideFilename;
   let uri;
   ({ uri, i, overrideFilename } = overrideType);
-  overrideType = overrideType.overrideType;
+  let str = overrideType.overrideType;
+  let str3;
   const parts = uri.split("/");
-  let str4 = str;
-  const parts1 = str.split("?");
-  let formatted;
-  if (null != parts1) {
-    if (null != parts1[0]) {
-      formatted = str2.toLowerCase();
+  str3 = str2;
+  const parts1 = str2.split("?");
+  str3 = undefined;
+  if (parts1 != null) {
+    if (parts1[0] != null) {
+      str3 = str4.toLowerCase();
     }
   }
-  let str3 = "";
-  str4 = "";
-  if (null != formatted) {
-    str4 = formatted;
+  if (str3 == null) {
+    str3 = "";
   }
-  let found = items.find((reName) => {
+  const found = items.find((reName) => {
     reName = reName.reName;
-    return reName.test(str4);
+    return reName.test(str3);
   });
+  let found1 = found;
   if (tmp3) {
-    found = items.find((reName) => {
+    found1 = items.find((reName) => {
       reName = reName.reName;
       return reName.test(overrideFilename);
     });
   }
-  if (null != found) {
+  if (null != found1) {
     if (null != overrideFilename) {
-      const parts2 = found.name(i).split(".");
+      const parts2 = found1.name(i).split(".");
       const arr = parts2.pop();
-      const lastIndexOfResult = overrideFilename.lastIndexOf(".");
-      if (-1 !== lastIndexOfResult) {
+      let concat = overrideFilename.lastIndexOf(".");
+      if (-1 !== concat) {
+        overrideFilename = overrideFilename.substr(0, concat);
         const _HermesInternal2 = HermesInternal;
-        let combined = str3 + overrideFilename.substr(0, lastIndexOfResult) + "." + arr;
+        concat = HermesInternal.concat;
+        let combined = concat(overrideFilename, ".", arr);
       } else {
         const _HermesInternal = HermesInternal;
-        combined = str3 + overrideFilename + "." + arr;
+        combined = "" + overrideFilename + "." + arr;
       }
-      const str6 = found.name(i);
+      const str6 = found1.name(i);
     }
   }
-  if (null != found) {
-    let str5 = found.name(i);
+  if (null != found1) {
+    let str5 = found1.name(i);
   } else {
-    str5 = "unknown";
-    if (null != overrideFilename) {
-      str5 = overrideFilename;
+    str5 = overrideFilename;
+    if (overrideFilename == null) {
+      str5 = "unknown";
     }
   }
-  const obj = { uri, filename: str5 };
-  let tmp11 = overrideType;
-  if (null == overrideType) {
+  const obj = { uri, filename: str5, type: null, isVideo: null, isImage: null };
+  let str10 = str;
+  if (str == null) {
     let type;
-    if (null != found) {
-      type = found.type;
+    if (found1 != null) {
+      type = found1.type;
     }
-    tmp11 = type;
+    str10 = type;
   }
-  let str8 = "unknown";
-  if (null != tmp11) {
-    str8 = tmp11;
+  if (str10 == null) {
+    str10 = "unknown";
   }
-  obj.type = str8;
-  let tmp13 = overrideType;
-  if (null == overrideType) {
+  obj[2] = str10;
+  let str11 = str;
+  if (str == null) {
     let nameResult;
-    if (null != found) {
-      nameResult = found.name(i);
+    if (found1 != null) {
+      nameResult = found1.name(i);
     }
-    tmp13 = nameResult;
+    str11 = nameResult;
   }
-  let arr3 = str3;
-  if (null != tmp13) {
-    arr3 = tmp13;
+  if (str11 == null) {
+    str11 = "";
   }
-  obj.isVideo = -1 !== arr3.indexOf("video");
-  if (null == overrideType) {
+  obj[3] = -1 !== str11.indexOf("video");
+  if (str == null) {
     let nameResult1;
-    if (null != found) {
-      nameResult1 = found.name(i);
+    if (found1 != null) {
+      nameResult1 = found1.name(i);
     }
-    overrideType = nameResult1;
+    str = nameResult1;
   }
-  if (null != overrideType) {
-    str3 = overrideType;
+  if (str == null) {
+    str = "";
   }
-  obj.isImage = -1 !== str3.indexOf("image");
+  obj[4] = -1 !== str.indexOf("image");
   return obj;
 };

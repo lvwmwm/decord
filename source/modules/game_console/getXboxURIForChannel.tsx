@@ -1,57 +1,56 @@
-// Module ID: 9027
-// Function ID: 70946
+// Module ID: 9051
+// Function ID: 9052
 // Name: getXboxURIForChannel
-// Dependencies: [1838, 4212, 3802, 1850, 8921, 653, 4355, 1212, 507, 2]
+// Dependencies: [1862, 4236, 3826, 1874, 8945, 676, 4380, 1236, 530, 2]
 // Exports: default
 
-// Module 9027 (getXboxURIForChannel)
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_4 from "_isNativeReflectConstruct";
-import closure_5 from "_isNativeReflectConstruct";
+// Module 9051 (getXboxURIForChannel)
+import createGuildRecordFromRust from "createGuildRecordFromRust";
+import _detectH265HardwareDecode from "_detectH265HardwareDecode";
+import upsertRelationship from "upsertRelationship";
+import mergeGuildAvatar from "mergeGuildAvatar";
 import XBOX_URL_BASE from "XBOX_URL_BASE";
 import ME from "ME";
 
+let c9;
 let closure_6;
-let closure_7;
-let closure_8;
-let closure_9;
+let error;
+let metroImportAll;
 const require = arg1;
-({ XBOX_HANDOFF_SEARCH_PARAMS: closure_6, XBOX_URL_BASE: closure_7 } = XBOX_URL_BASE);
-({ Endpoints: closure_8, ZERO_STRING_GUILD_ID: closure_9 } = ME);
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/game_console/getXboxURIForChannel.tsx");
+({ XBOX_HANDOFF_SEARCH_PARAMS: closure_6, XBOX_URL_BASE: error } = XBOX_URL_BASE);
+({ Endpoints: metroImportAll, ZERO_STRING_GUILD_ID: c9 } = ME);
+const result = require("upsertRelationship").fileFinishedImporting("modules/game_console/getXboxURIForChannel.tsx");
 
-export default function getXboxURIForChannel(getGuildId) {
+export default function getXboxURIForChannel(channelId) {
   let forQRCode;
   let nonce;
   ({ nonce, forQRCode } = arg1);
-  let guildId = getGuildId.getGuildId();
+  const guildId = channelId.getGuildId();
   guild = guild.getGuild(guildId);
-  const obj = {};
-  if (null == guildId) {
-    guildId = closure_9;
+  let tmp4 = guildId;
+  if (guildId == null) {
+    tmp4 = closure_9;
   }
-  obj.guildId = guildId;
-  obj.channelId = getGuildId.id;
-  obj.channelName = require(4355) /* computeDefaultGroupDmNameFromUserIds */.computeChannelName(getGuildId, closure_5, closure_4);
+  const obj = { guildId: tmp4, channelId: channelId.id, channelName: null, guildName: null, muted: null, deafened: null, nonce: null };
+  obj[2] = require(4380) /* computeChannelName */.computeChannelName(channelId, mergeGuildAvatar, upsertRelationship);
   let name;
-  if (null != guild) {
+  if (guild != null) {
     name = guild.name;
   }
-  if (null == name) {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    name = intl.string(require(1212) /* getSystemLocale */.t.LJpTRF);
+  if (name == null) {
+    const intl = tmp5(1236).intl;
+    name = intl.string(tmp5(1236).t.LJpTRF);
   }
-  obj.guildName = name;
-  obj.muted = _isNativeReflectConstruct.isSelfMute();
-  obj.deafened = _isNativeReflectConstruct.isSelfDeaf();
-  obj.nonce = nonce;
+  obj[3] = name;
+  obj[4] = _detectH265HardwareDecode.isSelfMute();
+  obj[5] = _detectH265HardwareDecode.isSelfDeaf();
+  obj[6] = nonce;
   const str = closure_6(obj);
   if (forQRCode) {
-    const aPIBaseURL = require(507) /* _isNativeReflectConstruct */.getAPIBaseURL();
+    const aPIBaseURL = tmp5(530).getAPIBaseURL();
     const _HermesInternal2 = HermesInternal;
     let combined = "" + aPIBaseURL + constants.XBOX_HANDOFF + "?" + str.toString();
-    const obj3 = require(507) /* _isNativeReflectConstruct */;
+    const tmp5Result = tmp5(530);
   } else {
     const _HermesInternal = HermesInternal;
     combined = "" + closure_7 + "?" + str.toString();

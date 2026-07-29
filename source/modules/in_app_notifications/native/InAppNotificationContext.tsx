@@ -1,12 +1,13 @@
-// Module ID: 10281
-// Function ID: 79351
+// Module ID: 10302
+// Function ID: 10303
 // Name: context
-// Dependencies: [31, 2]
+// Dependencies: [19, 2]
 // Exports: useInAppNotificationContext
 
-// Module 10281 (context)
-import importAllResult from "result";
+// Module 10302 (context)
+import importAllResult from "noop";
 
+let c0 = importAllResult;
 let context = importAllResult.createContext(undefined);
 const result = require("set").fileFinishedImporting("modules/in_app_notifications/native/InAppNotificationContext.tsx");
 

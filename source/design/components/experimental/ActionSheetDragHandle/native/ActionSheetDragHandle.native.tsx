@@ -1,63 +1,59 @@
-// Module ID: 8221
-// Function ID: 65748
+// Module ID: 8245
+// Function ID: 8246
 // Name: ActionSheetDragHandle
-// Dependencies: [31, 27, 8213, 33, 4165, 689, 1212, 4026, 2]
+// Dependencies: [19, 17, 8237, 21, 4189, 712, 1236, 4050, 2]
 
-// Module 8221 (ActionSheetDragHandle)
+// Module 8245 (ActionSheetDragHandle)
 import get_ActivityIndicator from "get ActivityIndicator";
 import PX_4 from "PX_4";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import importAllResult from "result";
+import createCacheKey from "createCacheKey";
+import importAllResult from "noop";
 
 let DRAG_HANDLE_BAR_HEIGHT;
 let DRAG_HANDLE_HEIGHT;
 let DRAG_HANDLE_PADDING;
-let closure_3;
-let closure_4;
+let c3;
+let c4;
 const require = arg1;
-({ TouchableWithoutFeedback: closure_3, View: closure_4 } = get_ActivityIndicator);
+({ TouchableWithoutFeedback: c3, View: c4 } = get_ActivityIndicator);
 ({ DRAG_HANDLE_BAR_HEIGHT, DRAG_HANDLE_PADDING, DRAG_HANDLE_HEIGHT } = PX_4);
-let obj = { container: { height: DRAG_HANDLE_HEIGHT }, containerOverlay: { position: "absolute", top: 0, left: 0, right: 0 }, handle: { alignItems: "center", paddingVertical: DRAG_HANDLE_PADDING } };
-obj = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.ICON_MUTED, borderRadius: require("_createForOfIteratorHelperLoose").radii.xs, height: DRAG_HANDLE_BAR_HEIGHT, width: 31 };
-obj.bar = obj;
-let closure_6 = _createForOfIteratorHelperLoose.createStyles(obj);
-const memoResult = require("result").memo((accessibilityLabel) => {
+let obj = { container: { height: DRAG_HANDLE_HEIGHT }, containerOverlay: { position: "absolute", top: 0, left: 0, right: 0 }, handle: { alignItems: "center", paddingVertical: DRAG_HANDLE_PADDING }, bar: null };
+obj = { backgroundColor: require("Themes").colors.ICON_MUTED, borderRadius: require("Themes").radii.xs, height: DRAG_HANDLE_BAR_HEIGHT, width: 31 };
+obj[3] = obj;
+let closure_6 = createCacheKey.createStyles(obj);
+const memoResult = require("noop").memo((accessibilityLabel) => {
   let onPress;
   let overlay;
   accessibilityLabel = accessibilityLabel.accessibilityLabel;
   ({ onPress, overlay } = accessibilityLabel);
   if (accessibilityLabel === undefined) {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    accessibilityLabel = intl.string(require(1212) /* getSystemLocale */.t.WAI6xu);
+    const intl = require(1236) /* getSystemLocale */.intl;
+    accessibilityLabel = intl.string(require(1236) /* getSystemLocale */.t.WAI6xu);
   }
   const animatedBarStyles = accessibilityLabel.animatedBarStyles;
   const tmp3 = callback();
-  let obj = {};
   const items = [tmp3.container, ];
   let containerOverlay = null;
   if (null != overlay) {
     containerOverlay = tmp3.containerOverlay;
   }
+  let obj = { style: items, accessibilityLabel, accessibilityRole: "button", "aria-hidden": accessibilityLabel["aria-hidden"], onPress, children: null };
   items[1] = containerOverlay;
-  obj.style = items;
-  obj.accessibilityLabel = accessibilityLabel;
-  obj.accessibilityRole = "button";
-  obj["aria-hidden"] = accessibilityLabel["aria-hidden"];
-  obj.onPress = onPress;
-  obj = { style: tmp3.handle };
+  obj = { style: tmp3.handle, children: null };
   if (null != animatedBarStyles) {
-    obj = {};
+    obj = { style: null };
     const items1 = [tmp3.bar, animatedBarStyles];
-    obj.style = items1;
-    let tmp11 = jsx(importDefault(4026).View, {});
+    obj[0] = items1;
+    let tmp4Result = tmp4(importDefault(4050).View, obj);
   } else {
-    const obj1 = { style: tmp3.bar };
-    tmp11 = <closure_4 style={tmp3.bar} />;
+    const obj1 = { style: null };
+    obj1[0] = tmp3.bar;
+    tmp4Result = tmp4(tmp7, obj1);
   }
-  obj.children = tmp11;
-  obj.children = <closure_4 style={tmp3.handle} />;
-  return <closure_3 style={tmp3.handle} />;
+  obj[1] = tmp4Result;
+  obj[5] = <closure_4 style={tmp3.handle}>{null}</closure_4>;
+  return <closure_3 style={tmp3.handle}>{null}</closure_3>;
 });
 const result = require("PX_4").fileFinishedImporting("design/components/experimental/ActionSheetDragHandle/native/ActionSheetDragHandle.native.tsx");
 

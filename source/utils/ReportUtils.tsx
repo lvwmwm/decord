@@ -1,56 +1,74 @@
-// Module ID: 6043
-// Function ID: 53717
+// Module ID: 6061
+// Function ID: 6062
 // Name: canReportUser
-// Dependencies: [1348, 4086, 3793, 1850, 653, 2]
-// Exports: canDeleteAndReportMessage
+// Dependencies: [1372, 4110, 3817, 1874, 676, 2]
+// Exports: canDeleteAndReportMessage, canReportAndDeleteInChannel, canReportMessage, canReportUser
 
-// Module 6043 (canReportUser)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_1 from "_isNativeReflectConstruct";
-import closure_2 from "_isNativeReflectConstruct";
-import closure_3 from "_isNativeReflectConstruct";
+// Module 6061 (canReportUser)
+import ensureGuildLoaded from "ensureGuildLoaded";
+import handleInviteData from "handleInviteData";
+import getUncachedChannelPermissions from "getUncachedChannelPermissions";
+import mergeGuildAvatar from "mergeGuildAvatar";
 import ME from "ME";
 
-let closure_4;
-let closure_5;
-function canReportUser(author) {
-  if (null == author) {
+let c4;
+let c5;
+({ ChannelTypes: c4, Permissions: c5 } = ME);
+const result = require("getUncachedChannelPermissions").fileFinishedImporting("utils/ReportUtils.tsx");
+
+export const canReportUser = function canReportUser(user) {
+  if (null == user) {
     return false;
   } else {
-    currentUser = currentUser.getCurrentUser();
+    const currentUser = authStore.getCurrentUser();
     let tmp3 = null != currentUser;
     if (tmp3) {
-      let tmp4 = currentUser.id !== author.id;
+      let tmp4 = currentUser.id !== user.id;
       if (tmp4) {
-        tmp4 = true !== author.system;
+        tmp4 = true !== user.system;
       }
       tmp3 = tmp4;
     }
     return tmp3;
   }
-}
-function canReportMessage(message) {
+};
+export const canReportMessage = function canReportMessage(message) {
   let tmp = null != message;
   if (tmp) {
-    tmp = canReportUser(message.author);
+    const author = message.author;
+    let flag = false;
+    if (null != author) {
+      const currentUser = authStore.getCurrentUser();
+      let tmp4 = null != currentUser;
+      if (tmp4) {
+        let tmp5 = currentUser.id !== author.id;
+        if (tmp5) {
+          tmp5 = true !== author.system;
+        }
+        tmp4 = tmp5;
+      }
+      flag = tmp4;
+    }
+    tmp = flag;
   }
   return tmp;
-}
-function canReportAndDeleteInChannel(channelId) {
-  channel = channel.getChannel(channelId);
+};
+export const canReportAndDeleteInChannel = function canReportAndDeleteInChannel(arg0) {
+  const channel = store.getChannel(arg0);
   if (null == channel) {
     return false;
   } else {
     if (channel.type !== constants.DM) {
-      if (channel.type !== constants.GROUP_DM) {
-        const obj = { channelId };
-        if (closure_2.canWithPartialContext(constants2.MANAGE_MESSAGES, obj)) {
-          memberCount = memberCount.getMemberCount(channel.getGuildId());
-          let tmp6 = null != memberCount;
-          if (tmp6) {
-            tmp6 = memberCount >= 50;
+      if (channel.type !== tmp6.GROUP_DM) {
+        const obj = { channelId: null };
+        obj[0] = arg0;
+        if (getUncachedChannelPermissions.canWithPartialContext(constants2.MANAGE_MESSAGES, obj)) {
+          const memberCount = store2.getMemberCount(channel.getGuildId());
+          let tmp5 = null != memberCount;
+          if (tmp5) {
+            tmp5 = memberCount >= 50;
           }
-          return tmp6;
+          return tmp5;
         } else {
           return false;
         }
@@ -58,20 +76,54 @@ function canReportAndDeleteInChannel(channelId) {
     }
     return true;
   }
-}
-({ ChannelTypes: closure_4, Permissions: closure_5 } = ME);
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("utils/ReportUtils.tsx");
-
-export { canReportUser };
-export { canReportMessage };
-export { canReportAndDeleteInChannel };
-export const canDeleteAndReportMessage = function canDeleteAndReportMessage(getChannelId) {
-  let tmp = null != getChannelId;
+};
+export const canDeleteAndReportMessage = function canDeleteAndReportMessage(author) {
+  let tmp = null != author;
   if (tmp) {
-    tmp = canReportMessage(getChannelId);
+    let tmp2 = null != author;
+    if (tmp2) {
+      author = author.author;
+      let flag = false;
+      if (null != author) {
+        const currentUser = authStore.getCurrentUser();
+        let tmp5 = null != currentUser;
+        if (tmp5) {
+          let tmp6 = currentUser.id !== author.id;
+          if (tmp6) {
+            tmp6 = true !== author.system;
+          }
+          tmp5 = tmp6;
+        }
+        flag = tmp5;
+      }
+      tmp2 = flag;
+    }
+    tmp = tmp2;
   }
   if (tmp) {
-    tmp = canReportAndDeleteInChannel(getChannelId.getChannelId());
+    const channelId = author.getChannelId();
+    const channel = store.getChannel(channelId);
+    let flag3 = false;
+    if (null != channel) {
+      flag3 = true;
+      if (channel.type !== constants.DM) {
+        flag3 = true;
+        if (channel.type !== tmp9.GROUP_DM) {
+          const obj = { channelId: null };
+          obj[0] = channelId;
+          flag3 = false;
+          if (getUncachedChannelPermissions.canWithPartialContext(constants2.MANAGE_MESSAGES, obj)) {
+            const memberCount = store2.getMemberCount(channel.getGuildId());
+            let tmp14 = null != memberCount;
+            if (tmp14) {
+              tmp14 = memberCount >= 50;
+            }
+            flag3 = tmp14;
+          }
+        }
+      }
+    }
+    tmp = flag3;
   }
   return tmp;
 };

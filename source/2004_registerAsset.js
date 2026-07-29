@@ -1,11 +1,10 @@
 // Module ID: 2004
-// Function ID: 22101
+// Function ID: 2005
 // Name: registerAsset
-// Dependencies: [1217]
+// Dependencies: [1241]
 
 // Module 2004 (registerAsset)
 import registerAsset from "registerAsset";
 
-const obj = { __packager_asset: true, httpServerLocation: "/assets/modules/checkout/messages", scales: [1], hash: "6a429731d2a9e33e0bfb2eab2a72054e", name: "GiftCard.compiled.messages", type: "jsona" };
 
-export default registerAsset.registerAsset(obj);
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9jaGVja291dC9tZXNzYWdlcw==", scales: [1], hash: "0b8a8d08596de8d0306a3a1abb042888", name: "hi.messages.0b8a8d08596de8d0306a3a1abb042888.compiled.messages", type: "jsona" });

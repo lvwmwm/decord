@@ -1,29 +1,91 @@
-// Module ID: 3826
-// Function ID: 29659
+// Module ID: 3850
+// Function ID: 3851
 // Name: _createGatewayCheckoutContext
-// Dependencies: [5, 482, 3827, 1184, 507, 3833, 2]
+// Dependencies: [5, 505, 3851, 1208, 530, 3857, 2]
 // Exports: calculateStandardizedUnits, captureBillingException, captureBillingMessage, createGatewayCheckoutContext, getLocalizedDisplayMonth, isExpectedHttpClientError
 
-// Module 3826 (_createGatewayCheckoutContext)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 3850 (_createGatewayCheckoutContext)
+import set from "set";
 import { PaymentGateways } from "sum";
 
 const require = arg1;
-async function _createGatewayCheckoutContext(arg0, arg1) {
-  let tmp = null;
-  if (null != arg0) {
-    tmp = null;
-    if (arg0.paymentGateway === outer2_4.BRAINTREE) {
-      let obj = outer2_0(outer2_2[2]);
-      const tmp5 = yield obj.collectDeviceData();
-      tmp = null;
-      if (null != tmp5) {
-        obj = { braintree_device_data: tmp5 };
-        tmp = obj;
+function _createGatewayCheckoutContext() {
+  const self = this;
+  const tmp = callback((arg0) => {
+    let closure_0 = arg0;
+    let c2 = 0;
+    let c3 = 0;
+    return (function*(arg0) {
+      if (c3 === 2) {
+        c3 = 3;
+        HermesBuiltin.throwTypeError();
+      } else if (tmp4 === 3) {
+        if (arg0 === 1) {
+          throw arg1;
+        } else if (arg0 === 2) {
+          let obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
+        } else {
+          return { value: "HermesInternal", done: null };
+        }
+      } else {
+        try {
+          c3 = 2;
+          if (0 === table) {
+            if (arg0 === 1) {
+              c3 = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              c3 = 3;
+              obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            } else {
+              let closure_1 = tmp2;
+              closure_1 = undefined;
+              let obj2 = null;
+              if (null != obj2) {
+                if (obj2.paymentGateway === outer1_4.BRAINTREE) {
+                  let obj1 = callback(table[2]);
+                  table = 1;
+                  c3 = 1;
+                  obj1 = { value: null, done: false };
+                  obj1[0] = obj1.collectDeviceData();
+                  return obj1;
+                }
+              }
+              c3 = 3;
+            }
+          } else if (arg0 === 1) {
+            c3 = 3;
+            throw arg1;
+          } else if (arg0 !== 2) {
+            closure_1 = arg1;
+            if (null != closure_1) {
+              obj2 = { braintree_device_data: null };
+              obj2[0] = closure_1;
+            }
+          }
+          c3 = 3;
+          obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
+        } catch (tmp14) {
+          c3 = tmp;
+          throw tmp14;
+        }
       }
-    }
+    })();
+  });
+  const _createGatewayCheckoutContext = tmp;
+  const apply = tmp.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
   }
-  return tmp;
+  return applyArgumentsResult;
 }
 const result = require("getBraintreeSDK").fileFinishedImporting("utils/BillingUtils.tsx");
 
@@ -33,57 +95,64 @@ export const getLocalizedDisplayMonth = function getLocalizedDisplayMonth(arg0, 
   return date.toLocaleString(arg1, { month: "short" });
 };
 export const createGatewayCheckoutContext = function createGatewayCheckoutContext(paymentSource) {
-  return _createGatewayCheckoutContext(...arguments);
+  const self = this;
+  const apply = _createGatewayCheckoutContext.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
 };
 export const captureBillingException = function captureBillingException(error, tags) {
-  let obj = importDefault(1184);
+  let obj = importDefault(1208);
   obj = {};
   const merged = Object.assign(tags);
-  obj = {};
   tags = undefined;
-  if (null != tags) {
+  if (tags != null) {
     tags = tags.tags;
   }
+  obj = {};
   const merged1 = Object.assign(tags);
-  obj["app_context"] = "billing";
-  obj["tags"] = obj;
+  obj.app_context = "billing";
+  obj.tags = obj;
   obj.captureException(error, obj);
 };
-export const isExpectedHttpClientError = function isExpectedHttpClientError(status) {
-  let tmp = status instanceof require(507) /* _isNativeReflectConstruct */.HTTPResponseError;
-  if (tmp) {
-    tmp = status.status >= 400;
+export const isExpectedHttpClientError = function isExpectedHttpClientError(onSignFailure) {
+  let tmp2 = onSignFailure instanceof require(530) /* sendRequest */.HTTPResponseError;
+  if (tmp2) {
+    tmp2 = onSignFailure.status >= 400;
   }
-  if (tmp) {
-    tmp = status.status < 500;
+  if (tmp2) {
+    tmp2 = onSignFailure.status < 500;
   }
-  if (!tmp) {
-    let tmp4 = status instanceof importDefault(3833);
+  if (!tmp2) {
+    let tmp4 = onSignFailure instanceof importDefault(3857);
     if (tmp4) {
-      tmp4 = null != status.status;
+      tmp4 = null != onSignFailure.status;
     }
     if (tmp4) {
-      tmp4 = status.status >= 400;
+      tmp4 = onSignFailure.status >= 400;
     }
     if (tmp4) {
-      tmp4 = status.status < 500;
+      tmp4 = onSignFailure.status < 500;
     }
-    tmp = tmp4;
+    tmp2 = tmp4;
   }
-  return tmp;
+  return tmp2;
 };
 export const captureBillingMessage = function captureBillingMessage(arg0, tags) {
-  let obj = importDefault(1184);
+  let obj = importDefault(1208);
   obj = {};
   const merged = Object.assign(tags);
-  obj = {};
   tags = undefined;
-  if (null != tags) {
+  if (tags != null) {
     tags = tags.tags;
   }
+  obj = {};
   const merged1 = Object.assign(tags);
-  obj["app_context"] = "billing";
-  obj["tags"] = obj;
+  obj.app_context = "billing";
+  obj.tags = obj;
   obj.captureMessage(arg0, obj);
 };
 export function calculateStandardizedUnits(billingPeriod, billingPeriod2) {

@@ -1,11 +1,11 @@
-// Module ID: 9497
-// Function ID: 73950
+// Module ID: 9521
+// Function ID: 9522
 // Name: FeedbackRating
-// Dependencies: [1282, 2]
+// Dependencies: [1306, 2]
 
-// Module 9497 (FeedbackRating)
+// Module 9521 (FeedbackRating)
 let obj = { BAD: "bad", NEUTRAL: "neutral", GOOD: "good" };
-const items = [require("_callSuper").InAppFeedbackType.VIDEO_BACKGROUND, require("_callSuper").InAppFeedbackType.STREAM, require("_callSuper").InAppFeedbackType.ACTIVITY, require("_callSuper").InAppFeedbackType.VOICE, require("_callSuper").InAppFeedbackType.IN_APP_REPORTS, require("_callSuper").InAppFeedbackType.SEARCH_RESULTS];
+const items = [require("create").InAppFeedbackType.VIDEO_BACKGROUND, require("create").InAppFeedbackType.STREAM, require("create").InAppFeedbackType.ACTIVITY, require("create").InAppFeedbackType.VOICE, require("create").InAppFeedbackType.IN_APP_REPORTS, require("create").InAppFeedbackType.SEARCH_RESULTS];
 const items1 = [, , ];
 ({ BAD: arr2[0], NEUTRAL: arr2[1], GOOD: arr2[2] } = obj);
 const reduced = items.reduce((arg0, arg1, arg2) => {
@@ -18,7 +18,7 @@ const result = require("set").fileFinishedImporting("modules/feedback/Constants.
 
 export const FeedbackRating = obj;
 export const FEEDBACK_FREEFORM_LENGTH = 1024;
-export const FeedbackType = require("_callSuper").InAppFeedbackType;
+export const FeedbackType = require("create").InAppFeedbackType;
 export const FeedbackGroup = { AV: "AV", SOCIAL: "SOCIAL", SEARCH: "SEARCH", SAFETY: "SAFETY" };
 export const FeedbackTypePrecedence = reduced;
 export const DEFAULT_RATINGS = items1;

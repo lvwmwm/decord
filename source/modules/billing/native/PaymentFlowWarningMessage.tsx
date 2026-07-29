@@ -1,34 +1,35 @@
-// Module ID: 12414
-// Function ID: 96352
+// Module ID: 12436
+// Function ID: 12437
 // Name: PaymentFlowWarningMessage
-// Dependencies: [31, 27, 33, 4165, 689, 5008, 1273, 4161, 2]
+// Dependencies: [19, 17, 21, 4189, 712, 5030, 1297, 4185, 2]
 // Exports: default
 
-// Module 12414 (PaymentFlowWarningMessage)
-import "result";
+// Module 12436 (PaymentFlowWarningMessage)
+import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_4;
-let closure_5;
+let c4;
+let c5;
 const require = arg1;
-({ jsx: closure_4, jsxs: closure_5 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { padding: 10, marginVertical: 5, borderRadius: require("_createForOfIteratorHelperLoose").radii.xs, display: "flex", flexDirection: "row", alignItems: "center", backgroundColor: require("result").DARK_PRIMARY_630_LIGHT_PRIMARY_230 };
-_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.icon = { marginRight: 10 };
-_createForOfIteratorHelperLoose.text = { flexShrink: 1 };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+({ jsx: c4, jsxs: c5 } = jsxProd);
+createCacheKey = { container: null, icon: null, text: null };
+createCacheKey = { padding: 10, marginVertical: 5, borderRadius: require("Themes").radii.xs, display: "flex", flexDirection: "row", alignItems: "center", backgroundColor: require("result").DARK_PRIMARY_630_LIGHT_PRIMARY_230 };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { marginRight: 10 };
+createCacheKey[2] = { flexShrink: 1 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
 const result = require("jsxProd").fileFinishedImporting("modules/billing/native/PaymentFlowWarningMessage.tsx");
 
 export default function PaymentFlowWarningMessage(children) {
-  const tmp = _createForOfIteratorHelperLoose();
-  let obj = { style: tmp.container };
-  obj = { style: tmp.icon, color: importDefault(689).unsafe_rawColors.YELLOW_300, width: 16, height: 16 };
-  const items = [callback(require(1273) /* Button */.WarningCircle, obj), ];
+  const tmp = createCacheKey();
+  let obj = { style: tmp.container, children: null };
+  obj = { style: tmp.icon, color: null, width: 16, height: 16 };
+  obj[1] = importDefault(712).unsafe_rawColors.YELLOW_300;
+  const items = [callback(require(1297) /* Button */.WarningCircle, obj), ];
   obj = { variant: "text-sm/medium", style: tmp.text, children: children.message };
-  items[1] = callback(require(4161) /* Text */.Text, obj);
-  obj.children = items;
+  items[1] = callback(require(4185) /* Text */.Text, obj);
+  obj[1] = items;
   return callback2(View, obj);
 };

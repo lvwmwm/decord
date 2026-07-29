@@ -1,9 +1,10 @@
-// Module ID: 8460
-// Function ID: 67382
+// Module ID: 8484
+// Function ID: 8485
 // Name: set
 // Dependencies: [2]
 
-// Module 8460 (set)
+// Module 8484 (set)
+let c0 = "not supported";
 const result = require("set").fileFinishedImporting("utils/GameUtils.native.tsx");
 
 export default {
@@ -26,11 +27,11 @@ export default {
     return Promise.resolve(false);
   },
   launch() {
-    const error = new Error("not supported");
+    const error = new Error(c0);
     return Promise.reject(error);
   },
   launchDispatchApplication() {
-    const error = new Error("not supported");
+    const error = new Error(c0);
     return Promise.reject(error);
   },
   removeShortcuts() {
@@ -40,10 +41,10 @@ export default {
     return Promise.resolve(false);
   },
   launchGame() {
-    const error = new Error("not supported");
+    const error = new Error(c0);
     return Promise.reject(error);
   },
-  isProtocolRegistered(XBOX_GAME_PASS_PROTOCOL) {
+  isProtocolRegistered() {
     return Promise.resolve(false);
   },
   setRecentGames() {

@@ -1,64 +1,34 @@
-// Module ID: 8019
-// Function ID: 63732
-// Name: _isNativeReflectConstruct
-// Dependencies: [7, 6, 15, 17, 18, 162, 2]
+// Module ID: 8043
+// Function ID: 8044
+// Name: prototype
+// Dependencies: [2]
 
-// Module 8019 (_isNativeReflectConstruct)
-import _defineProperties from "_defineProperties";
-import set from "set";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
-
-function _isNativeReflectConstruct() {
-  let _defineProperties = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return _defineProperties;
+// Module 8043 (prototype)
+const prototype = function RevenueError(errorHandlingBehavior) {
+  let extraSentryInformation;
+  let message;
+  ({ message, extraSentryInformation } = errorHandlingBehavior);
+  if (extraSentryInformation === undefined) {
+    extraSentryInformation = null;
   }
-  const result = _isNativeReflectConstruct();
+  let str = errorHandlingBehavior.errorHandlingBehavior;
+  if (str === undefined) {
+    str = "close-and-alert";
+  }
+  let flag = errorHandlingBehavior.skipReportingToSentry;
+  if (flag === undefined) {
+    flag = false;
+  }
+  const tmp = new prototype(message, message, new.target, new.target, extraSentryInformation);
+  // ThrowIfThisInitialized (0x7c)
+  tmp.name = new.target.name;
+  tmp.extraSentryInformation = extraSentryInformation;
+  tmp.errorHandlingBehavior = str;
+  tmp.skipReportingToSentry = flag;
+  return tmp;
+}.prototype;
+class prototype extends Error {
 }
-const tmp2 = ((arg0) => {
-  class RevenueError {
-    constructor(arg0) {
-      self = this;
-      prop = arg0.extraSentryInformation;
-      if (prop === undefined) {
-        prop = null;
-      }
-      str = arg0.errorHandlingBehavior;
-      if (str === undefined) {
-        str = "close-and-alert";
-      }
-      flag = arg0.skipReportingToSentry;
-      if (flag === undefined) {
-        flag = false;
-      }
-      tmp2 = outer1_1(self, RevenueError);
-      items = [];
-      items[0] = arg0.message;
-      obj = outer1_3(RevenueError);
-      tmp3 = outer1_2;
-      if (outer1_5()) {
-        tmp5 = globalThis;
-        _Reflect = Reflect;
-        tmp6 = outer1_3;
-        constructResult = Reflect.construct(obj, items, outer1_3(self).constructor);
-      } else {
-        constructResult = obj.apply(self, items);
-      }
-      tmp3Result = tmp3(self, constructResult);
-      tmp3Result.name = new.target.name;
-      tmp3Result.extraSentryInformation = prop;
-      tmp3Result.errorHandlingBehavior = str;
-      tmp3Result.skipReportingToSentry = flag;
-      return tmp3Result;
-    }
-  }
-  callback(RevenueError, arg0);
-  return RevenueError(RevenueError);
-})(require("_wrapNativeSuper")(Error));
-let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/revenue_components/errors/RevenueError.tsx");
+const result = require("set").fileFinishedImporting("modules/revenue_components/errors/RevenueError.tsx");
 
-export const RevenueError = tmp2;
+export const RevenueError = prototype;

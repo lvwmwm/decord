@@ -1,56 +1,57 @@
-// Module ID: 12373
-// Function ID: 96162
+// Module ID: 12395
+// Function ID: 12396
 // Name: UserPreview
-// Dependencies: [31, 27, 33, 4165, 689, 4009, 4161, 1212, 1273, 2]
+// Dependencies: [19, 17, 21, 4189, 712, 4033, 4185, 1236, 1297, 2]
 // Exports: default
 
-// Module 12373 (UserPreview)
-import "result";
+// Module 12395 (UserPreview)
+import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_3;
-let closure_4;
+let c3;
+let c4;
 const require = arg1;
-({ jsx: closure_3, jsxs: closure_4 } = jsxProd);
-_createForOfIteratorHelperLoose = { container: { alignSelf: "stretch", marginHorizontal: 16, marginBottom: 16 } };
-_createForOfIteratorHelperLoose = { color: require("_createForOfIteratorHelperLoose").colors.MOBILE_TEXT_HEADING_PRIMARY };
-_createForOfIteratorHelperLoose.borderColor = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.title = { lineHeight: 16, marginBottom: 8 };
-let obj1 = { flexDirection: "row", alignItems: "center", justifyContent: "flex-start", minHeight: 40, borderRadius: require("_createForOfIteratorHelperLoose").radii.sm, borderWidth: 1, padding: 12 };
-_createForOfIteratorHelperLoose.userContainer = obj1;
-_createForOfIteratorHelperLoose.userProfileInfo = { marginLeft: 8 };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+({ jsx: c3, jsxs: c4 } = jsxProd);
+createCacheKey = { container: { alignSelf: "stretch", marginHorizontal: 16, marginBottom: 16 }, borderColor: null, title: null, userContainer: null, userProfileInfo: null };
+createCacheKey = { color: require("Themes").colors.MOBILE_TEXT_HEADING_PRIMARY };
+createCacheKey[1] = createCacheKey;
+createCacheKey[2] = { lineHeight: 16, marginBottom: 8 };
+createCacheKey[3] = { flexDirection: "row", alignItems: "center", justifyContent: "flex-start", minHeight: 40, borderRadius: require("Themes").radii.sm, borderWidth: 1, padding: 12 };
+createCacheKey[4] = { marginLeft: 8 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let obj1 = { flexDirection: "row", alignItems: "center", justifyContent: "flex-start", minHeight: 40, borderRadius: require("Themes").radii.sm, borderWidth: 1, padding: 12 };
 const result = require("jsxProd").fileFinishedImporting("modules/in_app_reports/native/components/InAppReportsUserPreview.tsx");
 
 export default function UserPreview(user) {
   user = user.user;
-  const tmp = _createForOfIteratorHelperLoose();
-  let obj = require(4009) /* hexToRgb */;
-  obj = { style: tmp.container };
-  obj = { style: tmp.title, accessibilityRole: "header", variant: "text-xs/bold" };
-  const intl = require(1212) /* getSystemLocale */.intl;
+  const tmp = createCacheKey();
+  let obj = require(4033) /* hexToRgba */;
+  obj = { style: tmp.container, children: null };
+  obj = { style: tmp.title, accessibilityRole: "header", variant: "text-xs/bold", children: null };
+  const intl = require(1236) /* getSystemLocale */.intl;
   const hexWithOpacityResult = obj.hexWithOpacity(tmp.borderColor.color, 0.08);
-  obj.children = intl.string(require(1212) /* getSystemLocale */.t.Rsth7z).toUpperCase();
-  const items = [callback(require(4161) /* Text */.Text, obj), ];
-  const obj1 = { style: items1 };
+  obj[3] = intl.string(require(1236) /* getSystemLocale */.t.Rsth7z).toUpperCase();
+  const items = [callback(require(4185) /* Text */.Text, obj), ];
+  const obj1 = { style: items1, children: null };
   items1 = [tmp.userContainer, { borderColor: hexWithOpacityResult }];
-  const obj2 = { size: require(1273) /* Button */.AvatarSizes.LARGE_48, user, guildId: undefined };
-  const items2 = [callback(require(1273) /* Button */.Avatar, obj2), ];
-  const obj3 = { style: tmp.userProfileInfo };
-  let tmp5 = null != user.globalName;
-  if (tmp5) {
-    const obj4 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: user.globalName };
-    tmp5 = callback(require(4161) /* Text */.Text, obj4);
+  const obj2 = { size: null, user: null, guildId: "Array" };
+  obj2[0] = require(1297) /* Button */.AvatarSizes.LARGE_48;
+  obj2[1] = user;
+  const items2 = [callback(require(1297) /* Button */.Avatar, obj2), ];
+  const obj3 = { style: tmp.userProfileInfo, children: null };
+  let tmp7Result = null != user.globalName;
+  if (tmp7Result) {
+    const obj4 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: null };
+    obj4[2] = user.globalName;
+    tmp7Result = tmp7(tmp2(4185).Text, obj4);
   }
-  const items3 = [tmp5, ];
-  const obj5 = { color: "text-default", variant: "text-sm/normal", children: user.username };
-  items3[1] = callback(require(4161) /* Text */.Text, obj5);
-  obj3.children = items3;
+  const items3 = [tmp7Result, callback(require(4185) /* Text */.Text, { color: "text-default", variant: "text-sm/normal", children: user.username })];
+  obj3[1] = items3;
   items2[1] = closure_4(View, obj3);
-  obj1.children = items2;
+  obj1[1] = items2;
   items[1] = closure_4(View, obj1);
-  obj.children = items;
+  obj[1] = items;
   return closure_4(View, obj);
 };

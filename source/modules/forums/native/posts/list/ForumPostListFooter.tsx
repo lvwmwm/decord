@@ -1,25 +1,25 @@
-// Module ID: 11179
-// Function ID: 86736
+// Module ID: 11203
+// Function ID: 11204
 // Name: ForumPostListFooter
-// Dependencies: [31, 27, 653, 33, 4165, 689, 11133, 11171, 11172, 10434, 2]
+// Dependencies: [19, 17, 676, 21, 4189, 712, 11157, 11195, 11196, 10458, 2]
 // Exports: default
 
-// Module 11179 (ForumPostListFooter)
-import "result";
+// Module 11203 (ForumPostListFooter)
+import "noop";
 import { View } from "get ActivityIndicator";
 import { AnalyticsObjects } from "ME";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_5;
+let c5;
 let closure_6;
-let closure_7;
+let error;
 const require = arg1;
-({ jsx: closure_5, Fragment: closure_6, jsxs: closure_7 } = jsxProd);
-_createForOfIteratorHelperLoose = { footer: { display: "flex", alignItems: "center", flexDirection: "row", justifyContent: "flex-start" } };
-_createForOfIteratorHelperLoose = { height: 4, width: 4, borderRadius: 2, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BORDER_SUBTLE, marginHorizontal: 8 };
-_createForOfIteratorHelperLoose.dot = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+({ jsx: c5, Fragment: closure_6, jsxs: error } = jsxProd);
+createCacheKey = { footer: { display: "flex", alignItems: "center", flexDirection: "row", justifyContent: "flex-start" }, dot: null };
+createCacheKey = { height: 4, width: 4, borderRadius: 2, backgroundColor: require("Themes").colors.BORDER_SUBTLE, marginHorizontal: 8 };
+createCacheKey[1] = createCacheKey;
+createCacheKey = createCacheKey.createStyles(createCacheKey);
 const result = require("ME").fileFinishedImporting("modules/forums/native/posts/list/ForumPostListFooter.tsx");
 
 export default function ForumPostListFooter(parentChannel) {
@@ -27,28 +27,36 @@ export default function ForumPostListFooter(parentChannel) {
   let hasUnreads;
   let thread;
   ({ thread, firstMessage, hasUnreads } = parentChannel);
-  const tmp = _createForOfIteratorHelperLoose();
-  let obj = require(11133) /* useTypingUserIds */;
+  const tmp = createCacheKey();
+  let obj = require(11157) /* useTypingUserIds */;
   const typingUserIds = obj.useTypingUserIds(thread.id);
-  let tmp2 = typingUserIds.length > 0;
-  obj = { style: tmp.footer };
-  const items = [callback(importDefault(11171), { thread, hasUnreads }), , ];
-  if (tmp2) {
-    obj = {};
-    const obj1 = { style: tmp.dot };
-    const items1 = [callback(View, obj1), ];
-    const obj2 = { thread, typingUserIds, hasUnreads };
-    items1[1] = callback(importDefault(11172), obj2);
-    obj.children = items1;
-    tmp2 = callback2(closure_6, obj);
+  let tmp5Result = typingUserIds.length > 0;
+  obj = { style: tmp.footer, children: null };
+  const items = [callback(importDefault(11195), { thread, hasUnreads }), , ];
+  if (tmp5Result) {
+    obj = { children: null };
+    const obj1 = { style: null };
+    obj1[0] = tmp.dot;
+    const items1 = [tmp7(tmp6, obj1), ];
+    const obj2 = { thread: null, typingUserIds: null, hasUnreads: null };
+    obj2[0] = thread;
+    obj2[1] = typingUserIds;
+    obj2[2] = hasUnreads;
+    items1[1] = tmp7(importDefault(11196), obj2);
+    obj[0] = items1;
+    tmp5Result = tmp5(closure_6, obj);
   }
-  items[1] = tmp2;
-  let tmp11 = null != firstMessage;
-  if (tmp11) {
-    const obj3 = { thread, firstMessage, parentChannel: parentChannel.parentChannel, locationAnalyticsObject: AnalyticsObjects.FORUM_LIST_ITEM_FOOTER };
-    tmp11 = callback(require(10434) /* MaxForumPostReactions */.MostCommonForumPostReaction, obj3);
+  items[1] = tmp5Result;
+  let tmp7Result = null != firstMessage;
+  if (tmp7Result) {
+    const obj3 = { thread: null, firstMessage: null, parentChannel: null, locationAnalyticsObject: null };
+    obj3[0] = thread;
+    obj3[1] = firstMessage;
+    obj3[2] = parentChannel.parentChannel;
+    obj3[3] = AnalyticsObjects.FORUM_LIST_ITEM_FOOTER;
+    tmp7Result = tmp7(require(10458) /* MaxForumPostReactions */.MostCommonForumPostReaction, obj3);
   }
-  items[2] = tmp11;
-  obj.children = items;
-  return callback2(View, obj);
+  items[2] = tmp7Result;
+  obj[1] = items;
+  return closure_7(View, obj);
 };

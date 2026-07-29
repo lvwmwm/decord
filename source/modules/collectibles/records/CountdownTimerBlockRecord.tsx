@@ -1,35 +1,29 @@
-// Module ID: 5810
-// Function ID: 50858
-// Name: CountdownTimerBlockRecord
-// Dependencies: [6, 7, 5811, 2]
+// Module ID: 5828
+// Function ID: 5829
+// Name: fromServer
+// Dependencies: [5829, 2]
 
-// Module 5810 (CountdownTimerBlockRecord)
-import _classCallCheck from "_classCallCheck";
-import _defineProperties from "_defineProperties";
-
-const require = arg1;
-const tmp2 = (() => {
-  class CountdownTimerBlockRecord {
-    constructor(arg0) {
-      tmp = outer1_2(this, CountdownTimerBlockRecord);
-      this.type = CountdownTimerBlockRecord(outer1_1[2]).ShopBlockType.COUNTDOWN_TIMER;
-      ({ title: this.title, body: this.body, banner_url: this.bannerUrl } = arg0);
-      date = new Date(arg0.end_time);
-      this.endTime = date;
-      this.textColor = arg0.text_color;
-      return;
-    }
+// Module 5828 (fromServer)
+let prototype;
+prototype = function CountdownTimerBlockRecord(end_time) {
+  const obj = Object.create(new.target.prototype);
+  obj.type = require(5829) /* ShopBlockType */.ShopBlockType.COUNTDOWN_TIMER;
+  ({ title: tmp.title, body: tmp.body, banner_url: tmp.bannerUrl } = end_time);
+  obj.endTime = new Date(end_time.end_time);
+  obj.textColor = end_time.text_color;
+  return obj;
+}.prototype;
+prototype["fromServer"] = function fromServer(end_time) {
+  if (typeof prototype !== "find") {
+    HermesBuiltin.throwTypeError();
   }
-  const items = [
-    {
-      key: "fromServer",
-      value(end_time) {
-        return new CountdownTimerBlockRecord(end_time);
-      }
-    }
-  ];
-  return callback(CountdownTimerBlockRecord, null, items);
-})();
-const result = require("ShopBlockType").fileFinishedImporting("modules/collectibles/records/CountdownTimerBlockRecord.tsx");
+  const obj = Object.create(prototype.prototype);
+  obj.type = require(5829) /* ShopBlockType */.ShopBlockType.COUNTDOWN_TIMER;
+  ({ title: tmp2.title, body: tmp2.body, banner_url: tmp2.bannerUrl } = end_time);
+  obj.endTime = new Date(end_time.end_time);
+  obj.textColor = end_time.text_color;
+  return obj;
+};
+const result = require("set").fileFinishedImporting("modules/collectibles/records/CountdownTimerBlockRecord.tsx");
 
-export const CountdownTimerBlockRecord = tmp2;
+export const CountdownTimerBlockRecord = prototype;

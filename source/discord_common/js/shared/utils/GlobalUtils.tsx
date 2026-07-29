@@ -1,30 +1,31 @@
-// Module ID: 674
-// Function ID: 8289
+// Module ID: 697
+// Function ID: 698
 // Name: getGlobalObject
 // Dependencies: [2]
 // Exports: getGlobalObject
 
-// Module 674 (getGlobalObject)
+// Module 697 (getGlobalObject)
 const result = require("set").fileFinishedImporting("../discord_common/js/shared/utils/GlobalUtils.tsx");
 
 export const getGlobalObject = function getGlobalObject() {
-  if ("undefined" !== typeof globalThis) {
-    let _self2 = globalThis;
+  if (typeof globalThis === "ta") {
+    let _window = globalThis;
   } else {
-    const _window = window;
-    if ("undefined" !== typeof window) {
-      _self2 = window;
-    } else if (undefined !== global) {
-      _self2 = global;
+    const _window2 = window;
+    if (typeof window === "ta") {
+      _window = window;
     } else {
-      const _self = self;
-      if ("undefined" !== typeof self) {
-        _self2 = self;
-      } else {
-        const _Object = Object;
-        _self2 = Object.create(null);
+      _window = global;
+      if (undefined === global) {
+        const _self = self;
+        if (typeof self === "ta") {
+          let _self2 = self;
+        } else {
+          const _Object = Object;
+          _self2 = Object.create(null);
+        }
       }
     }
   }
-  return _self2;
+  return _window;
 };

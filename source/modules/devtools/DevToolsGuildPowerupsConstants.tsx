@@ -1,10 +1,10 @@
-// Module ID: 14777
-// Function ID: 112489
+// Module ID: 14803
+// Function ID: 14804
 // Name: items
-// Dependencies: [1334, 2]
+// Dependencies: [1358, 2]
 // Exports: getGuildDCString, getUserDCString
 
-// Module 14777 (items)
+// Module 14803 (items)
 const items = [require("DismissibleContent").DismissibleContent.GUILD_POWERUP_PERKS_COACHMARK, require("DismissibleContent").DismissibleContent.GUILD_POWERUPS_OVERVIEW_SIDEBAR_COACHMARK, require("DismissibleContent").DismissibleContent.GUILD_POWERUP_NOTIFICATION, require("DismissibleContent").DismissibleContent.GUILD_TAG_AVAILABLE_COACHMARK, require("DismissibleContent").DismissibleContent.GUILD_POWERUP_NEW_PERK_AVAILABLE_COACHMARK, require("DismissibleContent").DismissibleContent.GUILD_POWERUP_NEW_PERK_AVAILABLE_BADGE];
 const items1 = [require("DismissibleContent").DismissibleGuildContent.GUILD_POWERUP_LEVEL_1_COACHMARK, require("DismissibleContent").DismissibleGuildContent.GUILD_POWERUP_LEVEL_2_COACHMARK, require("DismissibleContent").DismissibleGuildContent.GUILD_POWERUP_LEVEL_3_COACHMARK, require("DismissibleContent").DismissibleGuildContent.GUILD_POWERUP_SINGLE_SKU_PURCHASE_COACHMARK, require("DismissibleContent").DismissibleGuildContent.GUILD_POWERUP_CHOICE_SKU_PURCHASE_COACHMARK];
 const items2 = [require("DismissibleContent").DismissibleGuildContent.ADOPT_CLAN_IDENTITY_NOTICE];
@@ -16,17 +16,17 @@ export const GUILD_DCS = items1;
 export const SERVER_TAG_GUILD_DCS = items2;
 export const VANITY_URL_POWERUP_DCS = items3;
 export const getGuildDCString = function getGuildDCString(arg0) {
-  if (require(1334) /* DismissibleContent */.DismissibleGuildContent.GUILD_POWERUP_LEVEL_1_COACHMARK === arg0) {
+  if (require(1358) /* DismissibleContent */.DismissibleGuildContent.GUILD_POWERUP_LEVEL_1_COACHMARK === arg0) {
     return "GUILD_POWERUP_LEVEL_1_COACHMARK";
-  } else if (require(1334) /* DismissibleContent */.DismissibleGuildContent.GUILD_POWERUP_LEVEL_2_COACHMARK === arg0) {
+  } else if (tmp(1358).DismissibleGuildContent.GUILD_POWERUP_LEVEL_2_COACHMARK === arg0) {
     return "GUILD_POWERUP_LEVEL_2_COACHMARK";
-  } else if (require(1334) /* DismissibleContent */.DismissibleGuildContent.GUILD_POWERUP_LEVEL_3_COACHMARK === arg0) {
+  } else if (tmp(1358).DismissibleGuildContent.GUILD_POWERUP_LEVEL_3_COACHMARK === arg0) {
     return "GUILD_POWERUP_LEVEL_3_COACHMARK";
-  } else if (require(1334) /* DismissibleContent */.DismissibleGuildContent.GUILD_POWERUP_SINGLE_SKU_PURCHASE_COACHMARK === arg0) {
+  } else if (tmp(1358).DismissibleGuildContent.GUILD_POWERUP_SINGLE_SKU_PURCHASE_COACHMARK === arg0) {
     return "GUILD_POWERUP_SINGLE_SKU_PURCHASE_COACHMARK";
-  } else if (require(1334) /* DismissibleContent */.DismissibleGuildContent.GUILD_POWERUP_CHOICE_SKU_PURCHASE_COACHMARK === arg0) {
+  } else if (tmp(1358).DismissibleGuildContent.GUILD_POWERUP_CHOICE_SKU_PURCHASE_COACHMARK === arg0) {
     return "GUILD_POWERUP_CHOICE_SKU_PURCHASE_COACHMARK";
-  } else if (require(1334) /* DismissibleContent */.DismissibleGuildContent.ADOPT_CLAN_IDENTITY_NOTICE === arg0) {
+  } else if (tmp(1358).DismissibleGuildContent.ADOPT_CLAN_IDENTITY_NOTICE === arg0) {
     return "ADOPT_CLAN_IDENTITY_NOTICE";
   } else {
     const _String = String;
@@ -34,8 +34,8 @@ export const getGuildDCString = function getGuildDCString(arg0) {
   }
 };
 export const getUserDCString = function getUserDCString(arg0) {
-  let StringResult = require(1334) /* DismissibleContent */.DismissibleContent[arg0];
-  if (null == StringResult) {
+  let StringResult = require(1358) /* DismissibleContent */.DismissibleContent[arg0];
+  if (StringResult == null) {
     const _String = String;
     StringResult = String(arg0);
   }

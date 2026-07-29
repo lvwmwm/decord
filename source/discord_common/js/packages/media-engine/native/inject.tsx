@@ -1,42 +1,62 @@
-// Module ID: 4214
-// Function ID: 35962
-// Name: assertInjected
+// Module ID: 4238
+// Function ID: 4239
+// Name: inject
 // Dependencies: [2]
 // Exports: getOpenH264LibraryPath, getVoiceEngine, inject, setProcessPriority, supported, supportsFeature
 
-// Module 4214 (assertInjected)
-function assertInjected() {
-  if (null == closure_0) {
-    const _Error = Error;
-    const error = new Error("Native dependencies have not been injected.");
-    throw error;
-  }
-}
+// Module 4238 (inject)
 const result = require("set").fileFinishedImporting("../discord_common/js/packages/media-engine/native/inject.tsx");
 
 export function inject(arg0) {
   let closure_0 = arg0;
 }
 export const supported = function supported() {
-  assertInjected();
-  return uiStore.supported();
+  if (null == uiStore) {
+    const _Error = Error;
+    const error = new Error("Native dependencies have not been injected.");
+    throw error;
+  } else {
+    return uiStore.supported();
+  }
 };
 export const supportsFeature = function supportsFeature(arg0) {
-  assertInjected();
-  return uiStore.supportsFeature(arg0);
+  if (null == uiStore) {
+    const _Error = Error;
+    const error = new Error("Native dependencies have not been injected.");
+    throw error;
+  } else {
+    return uiStore.supportsFeature(arg0);
+  }
 };
 export const setProcessPriority = function setProcessPriority(arg0) {
-  assertInjected();
-  uiStore.setProcessPriority(arg0);
+  if (null == uiStore) {
+    const _Error = Error;
+    const error = new Error("Native dependencies have not been injected.");
+    throw error;
+  } else {
+    uiStore.setProcessPriority(arg0);
+  }
 };
 export const getVoiceEngine = function getVoiceEngine() {
-  assertInjected();
-  if (null == voiceEngine) {
-    voiceEngine = uiStore.getVoiceEngine();
+  if (null == uiStore) {
+    const _Error = Error;
+    const error = new Error("Native dependencies have not been injected.");
+    throw error;
+  } else {
+    let tmp = voiceEngine;
+    if (voiceEngine == null) {
+      voiceEngine = uiStore.getVoiceEngine();
+      tmp = voiceEngine;
+    }
+    return tmp;
   }
-  return voiceEngine;
 };
 export const getOpenH264LibraryPath = function getOpenH264LibraryPath() {
-  assertInjected();
-  return uiStore.getOpenH264LibraryPath();
+  if (null == uiStore) {
+    const _Error = Error;
+    const error = new Error("Native dependencies have not been injected.");
+    throw error;
+  } else {
+    return uiStore.getOpenH264LibraryPath();
+  }
 };

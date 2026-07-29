@@ -1,82 +1,87 @@
-// Module ID: 13889
-// Function ID: 106294
+// Module ID: 13910
+// Function ID: 13911
 // Name: ConnectGuardianBottomSheet
-// Dependencies: [31, 27, 5775, 5776, 33, 4165, 689, 624, 4133, 13890, 5221, 4161, 1212, 2199, 13891, 4578, 2]
+// Dependencies: [19, 17, 5793, 5794, 21, 4189, 712, 647, 4157, 13911, 5243, 4185, 1236, 2223, 13912, 4600, 2]
 // Exports: default
 
-// Module 13889 (ConnectGuardianBottomSheet)
-import result from "result";
+// Module 13910 (ConnectGuardianBottomSheet)
+import noop from "noop";
 import { View } from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import freshTeenActivityWithMap from "freshTeenActivityWithMap";
 import { CONNECT_GUARDIAN_BOTTOM_SHEET_KEY as closure_6 } from "items";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_7;
-let closure_8;
+let error;
+let metroImportAll;
 const require = arg1;
-({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_24, paddingVertical: require("_createForOfIteratorHelperLoose").space.PX_24, gap: require("_createForOfIteratorHelperLoose").space.PX_24 };
-_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.info = { alignItems: "center", gap: require("_createForOfIteratorHelperLoose").space.PX_8 };
-_createForOfIteratorHelperLoose.centered = { textAlign: "center" };
-_createForOfIteratorHelperLoose.cardContainer = { alignItems: "center" };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-let obj1 = { alignItems: "center", gap: require("_createForOfIteratorHelperLoose").space.PX_8 };
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/parent_tools/native/ConnectGuardianBottomSheet.tsx");
+({ jsx: error, jsxs: metroImportAll } = jsxProd);
+createCacheKey = { container: null, info: null, centered: null, cardContainer: null };
+createCacheKey = { paddingHorizontal: require("Themes").space.PX_24, paddingVertical: require("Themes").space.PX_24, gap: require("Themes").space.PX_24 };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { alignItems: "center", gap: require("Themes").space.PX_8 };
+createCacheKey[2] = { textAlign: "center" };
+createCacheKey[3] = { alignItems: "center" };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let obj1 = { alignItems: "center", gap: require("Themes").space.PX_8 };
+const result = require("freshTeenActivityWithMap").fileFinishedImporting("modules/parent_tools/native/ConnectGuardianBottomSheet.tsx");
 
-export default function ConnectGuardianBottomSheet(onRefresh) {
+export default function ConnectGuardianBottomSheet(arg0) {
   let body;
   let expiresAt;
   let linkCode;
+  let onRefresh;
   let title;
-  ({ linkCode, expiresAt, title, body } = onRefresh);
-  const tmp = _createForOfIteratorHelperLoose();
-  let obj = require(624) /* defaultAreStatesEqual */;
-  const items = [_isNativeReflectConstruct];
-  const stateFromStores = obj.useStateFromStores(items, () => outer1_5.getLinkCode());
-  let obj1 = require(624) /* defaultAreStatesEqual */;
-  const items1 = [_isNativeReflectConstruct];
-  const stateFromStores1 = obj1.useStateFromStores(items1, () => outer1_5.getLinkCodeExpiresAt());
-  if (null != stateFromStores) {
-    linkCode = stateFromStores;
-  }
-  if (null != stateFromStores1) {
-    expiresAt = stateFromStores1;
-  }
+  ({ title, body } = arg0);
+  ({ linkCode, expiresAt, onRefresh } = arg0);
+  const tmp = createCacheKey();
+  let obj = require(647) /* defaultAreStatesEqual */;
+  const items = [freshTeenActivityWithMap];
+  let stateFromStores = obj.useStateFromStores(items, () => store.getLinkCode());
+  let obj1 = require(647) /* defaultAreStatesEqual */;
+  const items1 = [freshTeenActivityWithMap];
+  let stateFromStores1 = obj1.useStateFromStores(items1, () => store.getLinkCodeExpiresAt());
   const callback = React.useCallback(() => {
-    outer1_1(outer1_2[8]).hideActionSheet(outer1_6);
+    callback(table[8]).hideActionSheet(closure_6);
   }, []);
-  importDefault(13890)(callback);
-  obj = { startExpanded: true };
-  obj = { style: tmp.container };
-  obj1 = { style: tmp.info };
-  const obj2 = { style: tmp.centered, accessibilityRole: "header", variant: "heading-xl/bold", color: "mobile-text-heading-primary" };
-  if (null == title) {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    title = intl.string(importDefault(2199).aCUVfL);
+  importDefault(13911)(callback);
+  obj = { style: tmp.container, children: null };
+  obj = { style: tmp.info, children: null };
+  obj1 = { style: tmp.centered, accessibilityRole: "header", variant: "heading-xl/bold", color: "mobile-text-heading-primary", children: null };
+  if (title == null) {
+    const intl = tmp2(1236).intl;
+    title = intl.string(tmp7(2223).aCUVfL);
   }
-  obj2.children = title;
-  const items2 = [callback(require(4161) /* Text */.Text, obj2), ];
-  const obj3 = { style: tmp.centered, variant: "text-md/medium", color: "text-default" };
-  if (null == body) {
-    const intl2 = require(1212) /* getSystemLocale */.intl;
-    const obj4 = { link: "https://support.discord.com/hc/articles/14155060633623" };
-    body = intl2.format(importDefault(2199)["2O6ltn"], obj4);
+  obj1[4] = title;
+  const items2 = [closure_7(require(4185) /* Text */.Text, obj1), ];
+  const obj2 = { style: tmp.centered, variant: "text-md/medium", color: "text-default", children: null };
+  if (body == null) {
+    const intl2 = tmp2(1236).intl;
+    body = intl2.format(tmp7(2223)["2O6ltn"], { link: "https://support.discord.com/hc/articles/14155060633623" });
   }
-  obj3.children = body;
-  items2[1] = callback(require(4161) /* Text */.Text, obj3);
-  obj1.children = items2;
-  const items3 = [closure_8(View, obj1), , ];
-  const obj6 = { linkCode, expiresAt, onRefresh: onRefresh.onRefresh };
-  items3[1] = callback(View, { style: tmp.cardContainer, children: callback(require(13891) /* ConnectGuardianCard */.ConnectGuardianCard, obj6) });
-  const obj7 = { variant: "secondary", size: "md" };
-  const intl3 = require(1212) /* getSystemLocale */.intl;
-  obj7.text = intl3.string(importDefault(2199).Hsm5IF);
-  obj7.onPress = callback;
-  items3[2] = callback(require(4578) /* Button */.Button, obj7);
-  obj.children = items3;
-  obj.children = closure_8(View, obj);
-  return callback(require(5221) /* Background */.BottomSheet, obj);
+  obj2[3] = body;
+  items2[1] = closure_7(require(4185) /* Text */.Text, obj2);
+  obj[1] = items2;
+  const items3 = [closure_8(View, obj), , ];
+  const obj3 = { style: tmp.cardContainer, children: null };
+  if (stateFromStores == null) {
+    stateFromStores = linkCode;
+  }
+  const obj4 = { linkCode: stateFromStores, expiresAt: null, onRefresh: null };
+  if (stateFromStores1 == null) {
+    stateFromStores1 = expiresAt;
+  }
+  const obj5 = { startExpanded: true, children: null };
+  obj4[1] = stateFromStores1;
+  obj4[2] = onRefresh;
+  obj3[1] = closure_7(require(13912) /* ConnectGuardianCard */.ConnectGuardianCard, obj4);
+  items3[1] = closure_7(View, obj3);
+  const obj6 = { variant: "secondary", size: "md", text: null, onPress: null };
+  const intl3 = tmp2(1236).intl;
+  obj6[2] = intl3.string(importDefault(2223).Hsm5IF);
+  obj6[3] = callback;
+  items3[2] = closure_7(require(4600) /* Button */.Button, obj6);
+  obj[1] = items3;
+  obj5[1] = closure_8(View, obj);
+  return closure_7(require(5243) /* Background */.BottomSheet, obj5);
 };

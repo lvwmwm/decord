@@ -1,11 +1,11 @@
-// Module ID: 12382
-// Function ID: 96190
+// Module ID: 12404
+// Function ID: 12405
 // Name: InAppReportsUpsellsTableRow
-// Dependencies: [31, 33, 5198, 2]
+// Dependencies: [19, 21, 5220, 2]
 // Exports: default
 
-// Module 12382 (InAppReportsUpsellsTableRow)
-import "result";
+// Module 12404 (InAppReportsUpsellsTableRow)
+import "noop";
 import { jsx } from "jsxProd";
 
 const require = arg1;
@@ -23,7 +23,6 @@ export default function InAppReportsUpsellsTableRow(disabled) {
   }
   disabled = disabled.disabled;
   ({ onPress, icon } = disabled);
-  const obj = {};
   let tmp2 = title;
   if (disabled) {
     tmp2 = title;
@@ -31,15 +30,15 @@ export default function InAppReportsUpsellsTableRow(disabled) {
       tmp2 = disabledTitle;
     }
   }
-  obj.label = tmp2;
+  const obj = { label: tmp2, subLabel: null, onPress: null, icon: null, disabled: null, variant: null };
   let description = null;
   if (!disabled) {
     description = disabled.description;
   }
-  obj.subLabel = description;
-  obj.onPress = onPress;
-  obj.icon = icon;
-  obj.disabled = disabled;
-  obj.variant = variant;
-  return jsx(require(5198) /* TableRowInner */.TableRow, {});
+  obj[1] = description;
+  obj[2] = onPress;
+  obj[3] = icon;
+  obj[4] = disabled;
+  obj[5] = variant;
+  return jsx(require(5220) /* TableRowInner */.TableRow, { label: tmp2, subLabel: null, onPress: null, icon: null, disabled: null, variant: null });
 };

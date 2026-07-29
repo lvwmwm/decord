@@ -1,32 +1,25 @@
-// Module ID: 5824
-// Function ID: 50909
-// Name: WideBannerBlockRecord
-// Dependencies: [6, 7, 5811, 2]
+// Module ID: 5842
+// Function ID: 5843
+// Name: fromServer
+// Dependencies: [5829, 2]
 
-// Module 5824 (WideBannerBlockRecord)
-import _classCallCheck from "_classCallCheck";
-import _defineProperties from "_defineProperties";
-
-const require = arg1;
-const tmp2 = (() => {
-  class WideBannerBlockRecord {
-    constructor(arg0) {
-      tmp = outer1_2(this, WideBannerBlockRecord);
-      this.type = WideBannerBlockRecord(outer1_1[2]).ShopBlockType.WIDE_BANNER;
-      ({ title: this.title, body: this.body, category_store_listing_id: this.categoryStoreListingId, banner_text_color: this.bannerTextColor, banner_body_text_color: this.bannerBodyTextColor, disable_cta: this.disableCta, wide_banner_url: this.bannerURL, wide_banner_animated_url: this.bannerAnimatedURL, logo_url: this.logoURL, cta_text: this.ctaText, cta_route: this.ctaRoute, is_dismissible: this.isDismissible, dismissible_content_version: this.dismissibleContentVersion } = arg0);
-      return;
-    }
+// Module 5842 (fromServer)
+let prototype;
+prototype = function WideBannerBlockRecord(arg0) {
+  const obj = Object.create(new.target.prototype);
+  obj.type = require(5829) /* ShopBlockType */.ShopBlockType.WIDE_BANNER;
+  ({ title: tmp.title, body: tmp.body, category_store_listing_id: tmp.categoryStoreListingId, banner_text_color: tmp.bannerTextColor, banner_body_text_color: tmp.bannerBodyTextColor, disable_cta: tmp.disableCta, wide_banner_url: tmp.bannerURL, wide_banner_animated_url: tmp.bannerAnimatedURL, logo_url: tmp.logoURL, cta_text: tmp.ctaText, cta_route: tmp.ctaRoute, is_dismissible: tmp.isDismissible, dismissible_content_version: tmp.dismissibleContentVersion } = arg0);
+  return obj;
+}.prototype;
+prototype["fromServer"] = function fromServer(arg0) {
+  if (typeof prototype !== "find") {
+    HermesBuiltin.throwTypeError();
   }
-  const items = [
-    {
-      key: "fromServer",
-      value(arg0) {
-        return new WideBannerBlockRecord(arg0);
-      }
-    }
-  ];
-  return callback(WideBannerBlockRecord, null, items);
-})();
-const result = require("ShopBlockType").fileFinishedImporting("modules/collectibles/records/WideBannerBlockRecord.tsx");
+  const obj = Object.create(prototype.prototype);
+  obj.type = require(5829) /* ShopBlockType */.ShopBlockType.WIDE_BANNER;
+  ({ title: tmp2.title, body: tmp2.body, category_store_listing_id: tmp2.categoryStoreListingId, banner_text_color: tmp2.bannerTextColor, banner_body_text_color: tmp2.bannerBodyTextColor, disable_cta: tmp2.disableCta, wide_banner_url: tmp2.bannerURL, wide_banner_animated_url: tmp2.bannerAnimatedURL, logo_url: tmp2.logoURL, cta_text: tmp2.ctaText, cta_route: tmp2.ctaRoute, is_dismissible: tmp2.isDismissible, dismissible_content_version: tmp2.dismissibleContentVersion } = arg0);
+  return obj;
+};
+const result = require("set").fileFinishedImporting("modules/collectibles/records/WideBannerBlockRecord.tsx");
 
-export const WideBannerBlockRecord = tmp2;
+export const WideBannerBlockRecord = prototype;

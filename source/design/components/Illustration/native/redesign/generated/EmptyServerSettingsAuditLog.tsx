@@ -1,40 +1,63 @@
-// Module ID: 16355
-// Function ID: 127205
+// Module ID: 16390
+// Function ID: 16391
 // Name: getEmptyServerSettingsAuditLogSource
-// Dependencies: [31, 27, 33, 6517, 16356, 16357, 16358, 4011, 2]
-// Exports: EmptyServerSettingsAuditLog
+// Dependencies: [19, 17, 21, 6538, 16391, 16392, 16393, 4035, 2]
+// Exports: EmptyServerSettingsAuditLog, getEmptyServerSettingsAuditLogSource, useEmptyServerSettingsAuditLogSource
 
-// Module 16355 (getEmptyServerSettingsAuditLogSource)
-import "result";
+// Module 16390 (getEmptyServerSettingsAuditLogSource)
+import "noop";
 import { Image } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
 
 const require = arg1;
-function getEmptyServerSettingsAuditLogSource(theme) {
-  let obj = require(6517) /* getIllustrationSource */;
+const result = require("jsxProd").fileFinishedImporting("design/components/Illustration/native/redesign/generated/EmptyServerSettingsAuditLog.tsx");
+
+export const getEmptyServerSettingsAuditLogSource = function getEmptyServerSettingsAuditLogSource(theme) {
+  let obj = require(6538) /* getIllustrationSource */;
   obj = {
     dark() {
-      return outer1_0(outer1_1[4]);
+      return callback(16391);
     },
     darker() {
-      return outer1_0(outer1_1[5]);
+      return callback(16392);
     },
     light() {
-      return outer1_0(outer1_1[6]);
+      return callback(16393);
     }
   };
   return obj.getIllustrationSource(theme, obj);
-}
-function useEmptyServerSettingsAuditLogSource() {
-  return getEmptyServerSettingsAuditLogSource(require(4011) /* AccessibilityAnnouncer */.useThemeContext().theme);
-}
-const result = require("jsxProd").fileFinishedImporting("design/components/Illustration/native/redesign/generated/EmptyServerSettingsAuditLog.tsx");
-
-export { getEmptyServerSettingsAuditLogSource };
-export { useEmptyServerSettingsAuditLogSource };
+};
+export const useEmptyServerSettingsAuditLogSource = function useEmptyServerSettingsAuditLogSource() {
+  let obj = require(4035) /* AccessibilityAnnouncer */;
+  obj = {
+    dark() {
+      return callback(16391);
+    },
+    darker() {
+      return callback(16392);
+    },
+    light() {
+      return callback(16393);
+    }
+  };
+  return require(6538) /* getIllustrationSource */.getIllustrationSource(obj.useThemeContext().theme, obj);
+};
 export const EmptyServerSettingsAuditLog = function EmptyServerSettingsAuditLog(arg0) {
-  const obj = {};
+  let obj = require(4035) /* AccessibilityAnnouncer */;
+  obj = {
+    dark() {
+      return callback(16391);
+    },
+    darker() {
+      return callback(16392);
+    },
+    light() {
+      return callback(16393);
+    }
+  };
+  obj = {};
+  const illustrationSource = require(6538) /* getIllustrationSource */.getIllustrationSource(obj.useThemeContext().theme, obj);
   const merged = Object.assign(arg0);
-  obj["source"] = useEmptyServerSettingsAuditLogSource();
+  obj.source = illustrationSource;
   return <Image />;
 };

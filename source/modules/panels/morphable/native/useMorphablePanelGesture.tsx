@@ -1,22 +1,22 @@
-// Module ID: 15812
-// Function ID: 121786
+// Module ID: 15847
+// Function ID: 15848
 // Name: MorphablePanelModes
-// Dependencies: [31, 10017, 1450, 1557, 4026, 5251, 10020, 15810, 15813, 4134, 2]
+// Dependencies: [19, 10039, 1474, 1581, 4050, 5273, 10042, 15845, 15848, 4158, 2]
 // Exports: default
 
-// Module 15812 (MorphablePanelModes)
-import result from "result";
+// Module 15847 (MorphablePanelModes)
+import noop from "noop";
 import MIN_PAN_GESTURE_MOVE from "MIN_PAN_GESTURE_MOVE";
 
 let MorphablePanelModes;
-let closure_4;
-let closure_5;
-let closure_7;
-let closure_8;
-let closure_9;
+let c4;
+let c5;
+let c9;
+let error;
+let metroImportAll;
 const require = arg1;
-({ IS_IOS: closure_4, MIN_PAN_GESTURE_MOVE: closure_5, MorphablePanelModes } = MIN_PAN_GESTURE_MOVE);
-({ PANEL_TAP_GESTURE_MAX_DISTANCE: closure_7, PIP_POP_HEIGHT: closure_8, POP_RESISTANCE: closure_9 } = MIN_PAN_GESTURE_MOVE);
+({ IS_IOS: c4, MIN_PAN_GESTURE_MOVE: c5, MorphablePanelModes } = MIN_PAN_GESTURE_MOVE);
+({ PANEL_TAP_GESTURE_MAX_DISTANCE: error, PIP_POP_HEIGHT: metroImportAll, POP_RESISTANCE: c9 } = MIN_PAN_GESTURE_MOVE);
 let closure_10 = { code: "function useMorphablePanelGestureTsx1(){const{onTapGestureStart}=this.__closure;var _onTapGestureStart;(_onTapGestureStart=onTapGestureStart)===null||_onTapGestureStart===void 0||_onTapGestureStart();}" };
 let closure_11 = { code: "function useMorphablePanelGestureTsx2(){const{updateSharedValueIfChanged,initialGestureOffset}=this.__closure;updateSharedValueIfChanged(initialGestureOffset,{active:false,cancel:false});}" };
 let closure_12 = { code: "function useMorphablePanelGestureTsx3(event){const{initialGestureOffset,mode,MorphablePanelModes,calculatePIPPositionFromVelocity,windowDimensions,safeArea,disableHorizontalSafeAreas,updateSharedValueIfChanged,wrapperOffset,pipState,onPanMinimizeGestureEnd}=this.__closure;if(initialGestureOffset.get().cancel){return;}const{velocityX:velocityX,velocityY:velocityY,absoluteX:absoluteX,absoluteY:absoluteY}=event;if(mode===MorphablePanelModes.PIP){const{pipX:pipX,pipY:pipY}=calculatePIPPositionFromVelocity({velocityX:velocityX,velocityY:velocityY,absoluteX:absoluteX,absoluteY:absoluteY,windowDimensions:windowDimensions,safeArea:safeArea,disableHorizontalSafeAreas:disableHorizontalSafeAreas});updateSharedValueIfChanged(wrapperOffset,{gestureActive:false});updateSharedValueIfChanged(pipState,{x:pipX,y:pipY});}else if(mode===MorphablePanelModes.PANEL){if(velocityY>0){if(!initialGestureOffset.get().requiresPop){var _onPanMinimizeGesture;updateSharedValueIfChanged(wrapperOffset,{x:0,y:windowDimensions.height});(_onPanMinimizeGesture=onPanMinimizeGestureEnd)===null||_onPanMinimizeGesture===void 0||_onPanMinimizeGesture();return;}}}updateSharedValueIfChanged(wrapperOffset,{x:0,y:0,gestureActive:false});}" };
@@ -59,8 +59,8 @@ export default function useMorphablePanelGesture(mode) {
     const TapResult = Gesture2.Tap();
     const enabledResult = Gesture2.Tap().enabled(null != onTapGestureStart);
     const fn = function x() {
-      if (null != outer1_2) {
-        outer1_2();
+      if (closure_2 != null) {
+        tmp();
       }
     };
     fn.__closure = { onTapGestureStart };
@@ -75,9 +75,9 @@ export default function useMorphablePanelGesture(mode) {
     let result = Gesture3.Pan().enabled(flag).manualActivation(true).maxPointers(1).shouldCancelWhenOutside(false);
     class V {
       constructor(arg0) {
-        tmp = onPanMinimizeGestureEnd(onTapGestureStart[6])(outer1_6, { x: 0, y: 0 });
-        obj = { absoluteXStart: arg0.absoluteX, absoluteYStart: arg0.absoluteY, active: false, cancel: arg0.absoluteY > outer1_8.height - 2 * outer1_9.bottom, gestureInBottomSafeArea: arg0.absoluteY > outer1_8.height - outer1_9.bottom, requiresPop: outer1_5 };
-        result = outer1_10.set(obj);
+        tmp = outer1_1(outer1_2[6])(closure_6, { x: 0, y: 0 });
+        obj = { absoluteXStart: arg0.absoluteX, absoluteYStart: arg0.absoluteY, active: false, cancel: arg0.absoluteY > closure_8.height - 2 * closure_9.bottom, gestureInBottomSafeArea: arg0.absoluteY > closure_8.height - closure_9.bottom, requiresPop: closure_5 };
+        result = closure_10.set(obj);
         return;
       }
     }
@@ -88,74 +88,58 @@ export default function useMorphablePanelGesture(mode) {
     const maxPointersResult = Gesture3.Pan().enabled(flag).manualActivation(true).maxPointers(1);
     class C {
       constructor(arg0, arg1) {
-        if (pipState) {
-          tmp = outer1_10;
-          if (outer1_10.get().gestureInBottomSafeArea) {
+        if (outer1_4) {
+          tmp = closure_10;
+          if (closure_10.get().gestureInBottomSafeArea) {
             activateResult = arg1.activate();
           }
           return;
         }
-        if (outer1_10.get().cancel) {
+        obj = closure_10;
+        if (closure_10.get().cancel) {
           failResult = arg1.fail();
         } else {
-          tmp2 = mode;
-          tmp3 = onTapGestureStart;
-          num = 5;
-          if (arg0.state === mode(onTapGestureStart[5]).State.BEGAN) {
-            tmp32 = outer1_10;
-            if (!outer1_10.get().active) {
-              tmp4 = mode;
-              tmp5 = onTapGestureStart;
-              num2 = 7;
-              obj = mode(onTapGestureStart[7]);
-              tmp6 = outer1_10;
-              calculateXYDiffResult = obj.calculateXYDiff(arg0, outer1_10);
-              tmp11 = outer1_0;
-              tmp12 = wrapperOffset;
+          tmp2 = arg0;
+          tmp3 = outer1_0;
+          tmp4 = outer1_2;
+          if (arg0.state === outer1_0(outer1_2[5]).State.BEGAN) {
+            if (!obj.get().active) {
+              tmp3Result = tmp3(tmp4[7]);
+              calculateXYDiffResult = tmp3Result.calculateXYDiff(arg0, obj);
               ({ absoluteX, absoluteY } = calculateXYDiffResult);
-              if (outer1_0 === wrapperOffset.PANEL) {
-                num5 = 0;
+              if (closure_0 === outer1_6.PANEL) {
+                num = 0;
                 flag = true;
-                if (tmp10 >= 0) {
+                if (tmp8 >= 0) {
                   flag = false;
-                  if (tmp9) {
+                  if (tmp7) {
                     failResult1 = arg1.fail();
                     flag = false;
                   }
                 }
               } else {
-                tmp13 = outer1_0;
-                tmp14 = wrapperOffset;
-                tmp15 = outer1_0 === wrapperOffset.PIP;
-                if (tmp15) {
-                  tmp16 = c5;
-                  tmp15 = tmp8 > c5;
+                tmp11 = tmp9 === tmp10.PIP;
+                if (tmp11) {
+                  tmp12 = outer1_5;
+                  tmp11 = tmp6 > outer1_5;
                 }
                 flag = false;
-                if (tmp15) {
-                  tmp17 = mode;
-                  tmp18 = onTapGestureStart;
-                  num3 = 4;
-                  obj2 = mode(onTapGestureStart[4]);
-                  tmp19 = onPanMinimizeGestureEnd;
-                  num4 = 8;
-                  tmp20 = obj2.runOnJS(onPanMinimizeGestureEnd(onTapGestureStart[8]))();
+                if (tmp11) {
+                  tmp3Result1 = tmp3(tmp4[4]);
+                  tmp13 = outer1_1;
+                  tmp14 = tmp3Result1.runOnJS(outer1_1(tmp4[8]))();
                   flag = true;
                 }
               }
               if (flag) {
-                tmp22 = onPanMinimizeGestureEnd;
-                tmp23 = onTapGestureStart;
-                num6 = 6;
-                tmp24 = outer1_6;
-                tmp25 = onPanMinimizeGestureEnd(onTapGestureStart[6])(outer1_6, { x: 0, y: 0, gestureActive: true });
-                tmp26 = outer1_10;
-                obj = { absoluteXStart: null, absoluteYStart: null, active: true, cancel: false, gestureInBottomSafeArea: false };
-                obj.absoluteXStart = absoluteX;
-                obj.absoluteYStart = absoluteY;
-                tmp27 = outer1_10;
-                obj.requiresPop = outer1_10.get().requiresPop;
-                result = outer1_10.set(obj);
+                tmp16 = outer1_1;
+                tmp17 = closure_6;
+                tmp18 = outer1_1(tmp4[6])(closure_6, { x: 0, y: 0, gestureActive: true });
+                obj = { absoluteXStart: null, absoluteYStart: null, active: true, cancel: false, gestureInBottomSafeArea: false, requiresPop: null };
+                obj[0] = absoluteX;
+                obj[1] = absoluteY;
+                obj[5] = obj.get().requiresPop;
+                result = obj.set(obj);
                 activateResult1 = arg1.activate();
               }
             }
@@ -171,77 +155,67 @@ export default function useMorphablePanelGesture(mode) {
     const onBeginResult = result.onBegin(V);
     class H {
       constructor(arg0) {
-        if (outer1_0 !== wrapperOffset.PIP) {
-          tmp8 = outer1_9;
-          tmp9 = outer1_10;
-          num3 = -1;
-          result = -1 * (outer1_10.get().absoluteYStart - arg0.absoluteY);
-          tmp11 = outer1_10;
-          tmp12 = !outer1_10.get().requiresPop && result <= outer1_9.top;
-          if (tmp12) {
-            tmp13 = outer1_10;
-            obj = {};
-            tmp14 = outer1_10;
-            tmp15 = obj;
-            merged = Object.assign(outer1_10.get());
-            flag = true;
-            str = "requiresPop";
-            obj["requiresPop"] = true;
-            result1 = outer1_10.set(obj);
+        if (closure_0 !== outer1_6.PIP) {
+          tmp7 = closure_9;
+          obj2 = closure_10;
+          absoluteYStart = closure_10.get().absoluteYStart;
+          num2 = -1;
+          result = -1 * (absoluteYStart - arg0.absoluteY);
+          requiresPop = closure_10.get().requiresPop;
+          tmp9 = !requiresPop;
+          if (!requiresPop) {
+            tmp9 = result <= closure_9.top;
           }
-          tmp18 = outer1_10;
+          if (tmp9) {
+            obj = {};
+            tmp10 = obj;
+            absoluteYStart = Object.assign(obj2.get());
+            flag = true;
+            obj.requiresPop = true;
+            result1 = obj2.set(obj);
+          }
           diff = result;
-          if (!outer1_10.get().requiresPop) {
-            tmp24 = onPanMinimizeGestureEnd;
-            tmp25 = onTapGestureStart;
-            num5 = 6;
-            tmp26 = outer1_6;
-            obj1 = {};
-            obj1.y = diff;
-            num6 = 0;
-            obj1.x = 0;
-            tmp27 = onPanMinimizeGestureEnd(onTapGestureStart[6])(outer1_6, obj1);
+          if (!obj2.get().requiresPop) {
+            tmp23 = outer1_1;
+            tmp24 = outer1_2;
+            tmp25 = closure_6;
+            obj1 = { y: null, x: 0 };
+            obj1[0] = diff;
+            tmp26 = outer1_1(outer1_2[6])(closure_6, obj1);
           } else {
-            tmp20 = globalThis;
+            tmp13 = globalThis;
             _Math = Math;
-            num4 = 0;
-            bound = Math.max(result, 0);
-            tmp22 = c8;
-            if (bound > c8) {
-              tmp28 = outer1_10;
+            num3 = 0;
+            absoluteYStart = Math.max(result, 0);
+            tmp14 = outer1_8;
+            if (absoluteYStart > outer1_8) {
               obj2 = {};
-              tmp29 = outer1_10;
-              tmp30 = obj2;
-              merged1 = Object.assign(outer1_10.get());
+              tmp15 = obj2;
+              merged = Object.assign(obj2.get());
               flag2 = false;
-              str2 = "requiresPop";
-              obj2["requiresPop"] = false;
-              result2 = outer1_10.set(obj2);
-              tmp33 = mode;
-              tmp34 = onTapGestureStart;
-              num7 = 4;
-              obj5 = mode(onTapGestureStart[4]);
-              num8 = 9;
-              runOnJSResult = obj5.runOnJS(mode(onTapGestureStart[9]).triggerHapticFeedback);
-              tmp35Result = runOnJSResult(mode(onTapGestureStart[9]).HapticFeedbackTypes.IMPACT_MEDIUM);
+              obj2.requiresPop = false;
+              result2 = obj2.set(obj2);
+              tmp18 = outer1_0;
+              tmp19 = outer1_2;
+              obj5 = outer1_0(outer1_2[4]);
+              runOnJSResult = obj5.runOnJS(outer1_0(outer1_2[9]).triggerHapticFeedback);
+              tmp20Result = runOnJSResult(outer1_0(outer1_2[9]).HapticFeedbackTypes.IMPACT_MEDIUM);
               diff = result;
             }
           }
-          tmp23 = c9;
-          diff = bound - bound * c9;
+          tmp22 = outer1_9;
+          diff = absoluteYStart - absoluteYStart * outer1_9;
         } else {
-          tmp = onPanMinimizeGestureEnd;
-          tmp2 = onTapGestureStart;
-          num = 6;
-          tmp4 = outer1_6;
-          obj = {};
-          tmp5 = outer1_10;
-          tmp3 = onPanMinimizeGestureEnd(onTapGestureStart[6]);
-          num2 = -1;
-          obj.x = -1 * (outer1_10.get().absoluteXStart - arg0.absoluteX);
-          tmp6 = outer1_10;
-          obj.y = -1 * (outer1_10.get().absoluteYStart - arg0.absoluteY);
-          tmp3Result = tmp3(outer1_6, obj);
+          tmp = outer1_1;
+          tmp2 = outer1_2;
+          tmp4 = closure_6;
+          obj = { x: null, y: null };
+          tmp5 = closure_10;
+          tmp3 = outer1_1(outer1_2[6]);
+          num = -1;
+          obj[0] = -1 * (closure_10.get().absoluteXStart - arg0.absoluteX);
+          obj[1] = -1 * (closure_10.get().absoluteYStart - arg0.absoluteY);
+          tmp3Result = tmp3(closure_6, obj);
           return;
         }
         return;
@@ -254,8 +228,8 @@ export default function useMorphablePanelGesture(mode) {
     let obj1 = { mode, MorphablePanelModes: wrapperOffset, safeArea: c9, initialGestureOffset: sharedValue, POP_RESISTANCE: c9, PIP_POP_HEIGHT: c8, runOnJS: mode(onTapGestureStart[4]).runOnJS, triggerHapticFeedback: mode(onTapGestureStart[9]).triggerHapticFeedback, HapticFeedbackTypes: mode(onTapGestureStart[9]).HapticFeedbackTypes, updateSharedValueIfChanged: onPanMinimizeGestureEnd(onTapGestureStart[6]), wrapperOffset };
     class D {
       constructor() {
-        tmp = onPanMinimizeGestureEnd(onTapGestureStart[6])(outer1_10, { active: false });
-        tmp2 = onPanMinimizeGestureEnd(onTapGestureStart[6])(outer1_6, { gestureActive: false });
+        tmp = outer1_1(outer1_2[6])(closure_10, { active: false });
+        tmp2 = outer1_1(outer1_2[6])(closure_6, { gestureActive: false });
         return;
       }
     }
@@ -263,76 +237,61 @@ export default function useMorphablePanelGesture(mode) {
     D.__closure = { updateSharedValueIfChanged: onPanMinimizeGestureEnd(onTapGestureStart[6]), initialGestureOffset: sharedValue, wrapperOffset };
     D.__workletHash = 14566382353702;
     D.__initData = outer1_13;
-    let obj2 = { updateSharedValueIfChanged: onPanMinimizeGestureEnd(onTapGestureStart[6]), initialGestureOffset: sharedValue, wrapperOffset };
+    const obj2 = { updateSharedValueIfChanged: onPanMinimizeGestureEnd(onTapGestureStart[6]), initialGestureOffset: sharedValue, wrapperOffset };
     class X {
       constructor(arg0) {
-        if (!outer1_10.get().cancel) {
+        obj = closure_10;
+        if (!closure_10.get().cancel) {
+          tmp = arg0;
           velocityY = arg0.velocityY;
-          tmp4 = outer1_0;
-          tmp5 = wrapperOffset;
-          if (outer1_0 === wrapperOffset.PIP) {
-            tmp15 = mode;
-            tmp16 = onTapGestureStart;
-            num2 = 7;
-            obj2 = mode(onTapGestureStart[7]);
-            obj = {};
-            obj.velocityX = tmp;
-            obj.velocityY = velocityY;
-            obj.absoluteX = tmp2;
-            obj.absoluteY = tmp3;
-            tmp17 = outer1_8;
-            obj.windowDimensions = outer1_8;
-            tmp18 = outer1_9;
-            obj.safeArea = outer1_9;
-            tmp19 = outer1_7;
-            obj.disableHorizontalSafeAreas = outer1_7;
-            result = obj2.calculatePIPPositionFromVelocity(obj);
-            tmp21 = onPanMinimizeGestureEnd;
-            num3 = 6;
+          if (closure_0 === outer1_6.PIP) {
+            tmp14 = outer1_0;
+            tmp15 = outer1_2;
+            obj3 = outer1_0(outer1_2[7]);
+            obj = { velocityX: null, velocityY: null, absoluteX: null, absoluteY: null, windowDimensions: null, safeArea: null, disableHorizontalSafeAreas: null };
+            obj[0] = tmp2;
+            obj[1] = velocityY;
+            obj[2] = tmp3;
+            obj[3] = tmp4;
+            tmp16 = closure_8;
+            obj[4] = closure_8;
+            tmp17 = closure_9;
+            obj[5] = closure_9;
+            tmp18 = closure_7;
+            obj[6] = closure_7;
+            result = obj3.calculatePIPPositionFromVelocity(obj);
+            tmp20 = outer1_1;
             ({ pipX, pipY } = result);
-            tmp22 = outer1_6;
-            obj1 = {};
-            flag = false;
-            obj1.gestureActive = false;
-            tmp23 = onPanMinimizeGestureEnd(onTapGestureStart[6])(outer1_6, obj1);
-            tmp24 = outer1_4;
-            obj2 = {};
-            obj2.x = pipX;
-            obj2.y = pipY;
-            tmp25 = onPanMinimizeGestureEnd(onTapGestureStart[6])(outer1_4, obj2);
-          } else {
-            tmp30 = outer1_0;
-            tmp31 = wrapperOffset;
-            if (outer1_0 === wrapperOffset.PANEL) {
-              num5 = 0;
-              if (velocityY > 0) {
-                tmp32 = outer1_10;
-                if (!outer1_10.get().requiresPop) {
-                  tmp6 = onPanMinimizeGestureEnd;
-                  tmp7 = onTapGestureStart;
-                  num = 6;
-                  tmp8 = outer1_6;
-                  obj = {};
-                  obj.x = 0;
-                  tmp9 = outer1_8;
-                  obj.y = outer1_8.height;
-                  tmp10 = onPanMinimizeGestureEnd(onTapGestureStart[6])(outer1_6, obj);
-                  tmp11 = outer1_1;
-                  tmp12 = null;
-                  if (null != outer1_1) {
-                    tmp13 = outer1_1;
-                    tmp14 = outer1_1();
-                  }
-                  return;
+            tmp21 = closure_6;
+            tmp22 = outer1_1(outer1_2[6])(closure_6, { gestureActive: false });
+            tmp23 = closure_4;
+            obj1 = { x: null, y: null };
+            obj1[0] = pipX;
+            obj1[1] = pipY;
+            tmp24 = outer1_1(outer1_2[6])(closure_4, obj1);
+          } else if (tmp5 === tmp6.PANEL) {
+            num = 0;
+            if (velocityY > 0) {
+              if (!obj.get().requiresPop) {
+                tmp7 = outer1_1;
+                tmp8 = outer1_2;
+                tmp9 = closure_6;
+                obj2 = { x: 0, y: null };
+                tmp10 = closure_8;
+                obj2[1] = closure_8.height;
+                tmp11 = outer1_1(outer1_2[6])(closure_6, obj2);
+                tmp12 = null;
+                if (closure_1 != null) {
+                  tmp13 = closure_1();
                 }
+                return;
               }
             }
           }
-          tmp26 = onPanMinimizeGestureEnd;
-          tmp27 = onTapGestureStart;
-          num4 = 6;
-          tmp28 = outer1_6;
-          tmp29 = onPanMinimizeGestureEnd(onTapGestureStart[6])(outer1_6, { x: 0, y: 0, gestureActive: false });
+          tmp25 = outer1_1;
+          tmp26 = outer1_2;
+          tmp27 = closure_6;
+          tmp28 = outer1_1(outer1_2[6])(closure_6, { x: 0, y: 0, gestureActive: false });
         }
         return;
       }
@@ -341,9 +300,9 @@ export default function useMorphablePanelGesture(mode) {
     X.__closure = { initialGestureOffset: sharedValue, mode, MorphablePanelModes: wrapperOffset, calculatePIPPositionFromVelocity: mode(onTapGestureStart[7]).calculatePIPPositionFromVelocity, windowDimensions: c8, safeArea: c9, disableHorizontalSafeAreas: flag3, updateSharedValueIfChanged: onPanMinimizeGestureEnd(onTapGestureStart[6]), wrapperOffset, pipState, onPanMinimizeGestureEnd };
     X.__workletHash = 2406462688275;
     X.__initData = outer1_12;
-    const obj3 = { initialGestureOffset: sharedValue, mode, MorphablePanelModes: wrapperOffset, calculatePIPPositionFromVelocity: mode(onTapGestureStart[7]).calculatePIPPositionFromVelocity, windowDimensions: c8, safeArea: c9, disableHorizontalSafeAreas: flag3, updateSharedValueIfChanged: onPanMinimizeGestureEnd(onTapGestureStart[6]), wrapperOffset, pipState, onPanMinimizeGestureEnd };
+    let obj3 = { initialGestureOffset: sharedValue, mode, MorphablePanelModes: wrapperOffset, calculatePIPPositionFromVelocity: mode(onTapGestureStart[7]).calculatePIPPositionFromVelocity, windowDimensions: c8, safeArea: c9, disableHorizontalSafeAreas: flag3, updateSharedValueIfChanged: onPanMinimizeGestureEnd(onTapGestureStart[6]), wrapperOffset, pipState, onPanMinimizeGestureEnd };
     const fn2 = function t() {
-      onPanMinimizeGestureEnd(onTapGestureStart[6])(outer1_10, { active: false, cancel: false });
+      outer1_1(outer1_2[6])(closure_10, { active: false, cancel: false });
     };
     const onEndResult = onTouchesCancelledResult.onEnd(X);
     fn2.__closure = { updateSharedValueIfChanged: onPanMinimizeGestureEnd(onTapGestureStart[6]), initialGestureOffset: sharedValue };

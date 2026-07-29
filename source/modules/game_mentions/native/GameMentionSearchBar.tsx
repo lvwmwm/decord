@@ -1,45 +1,47 @@
-// Module ID: 11476
-// Function ID: 89050
-// Dependencies: [31, 27, 33, 4165, 689, 11464, 8911, 4161, 1212, 7611, 2]
+// Module ID: 11500
+// Function ID: 11501
+// Dependencies: [19, 17, 21, 4189, 712, 11488, 8935, 4185, 1236, 7634, 2]
 
-// Module 11476
+// Module 11500
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import importAllResult from "result";
+import createCacheKey from "createCacheKey";
+import importAllResult from "noop";
 
-let closure_3;
-let closure_4;
+let c3;
+let c4;
 const require = arg1;
-({ jsx: closure_3, jsxs: closure_4 } = jsxProd);
-let obj = {};
-obj = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.MOBILE_FLOATING_ACCESSORY_BACKGROUND };
-obj.container = obj;
-_createForOfIteratorHelperLoose = { flexDirection: "row", alignItems: "center", paddingHorizontal: 16, paddingVertical: require("useGameMentionSearchBarHeight").GAME_MENTION_SEARCH_BAR_HEADER_PADDING_VERTICAL };
-obj.headerRow = _createForOfIteratorHelperLoose;
-obj.icon = { marginRight: 12 };
-obj.description = { paddingHorizontal: 16, paddingBottom: require("useGameMentionSearchBarHeight").GAME_MENTION_SEARCH_BAR_DESCRIPTION_PADDING_BOTTOM };
+({ jsx: c3, jsxs: c4 } = jsxProd);
+let obj = { container: null, headerRow: null, icon: null, description: null, divider: null };
+obj = { backgroundColor: require("Themes").colors.MOBILE_FLOATING_ACCESSORY_BACKGROUND };
+obj[0] = obj;
+createCacheKey = { flexDirection: "row", alignItems: "center", paddingHorizontal: 16, paddingVertical: require("useGameMentionSearchBarHeight").GAME_MENTION_SEARCH_BAR_HEADER_PADDING_VERTICAL };
+obj[1] = createCacheKey;
+obj[2] = { marginRight: 12 };
+obj[3] = { paddingHorizontal: 16, paddingBottom: require("useGameMentionSearchBarHeight").GAME_MENTION_SEARCH_BAR_DESCRIPTION_PADDING_BOTTOM };
 let obj2 = { paddingHorizontal: 16, paddingBottom: require("useGameMentionSearchBarHeight").GAME_MENTION_SEARCH_BAR_DESCRIPTION_PADDING_BOTTOM };
-obj.divider = { marginLeft: 0, backgroundColor: require("_createForOfIteratorHelperLoose").colors.MOBILE_COMMAND_BAR_DIVIDER };
-let closure_5 = _createForOfIteratorHelperLoose.createStyles(obj);
-let obj3 = { marginLeft: 0, backgroundColor: require("_createForOfIteratorHelperLoose").colors.MOBILE_COMMAND_BAR_DIVIDER };
+obj[4] = { marginLeft: 0, backgroundColor: require("Themes").colors.MOBILE_COMMAND_BAR_DIVIDER };
+let closure_5 = createCacheKey.createStyles(obj);
+let obj3 = { marginLeft: 0, backgroundColor: require("Themes").colors.MOBILE_COMMAND_BAR_DIVIDER };
 const memoResult = importAllResult.memo(function GameMentionSearchBar() {
   const tmp = callback3();
-  let obj = { style: tmp.container };
-  obj = { accessible: true, accessibilityRole: "header" };
-  obj = { style: tmp.headerRow };
-  const items = [callback(require(8911) /* GameControllerIcon */.GameControllerIcon, { size: "sm", style: tmp.icon }), ];
-  const obj2 = { variant: require(11464) /* useGameMentionSearchBarHeight */.GAME_MENTION_SEARCH_BAR_TITLE_VARIANT, color: "mobile-text-heading-primary", children: "@game" };
-  items[1] = callback(require(4161) /* Text */.Text, obj2);
-  obj.children = items;
+  let obj = { style: tmp.container, children: null };
+  obj = { accessible: true, accessibilityRole: "header", children: null };
+  obj = { style: tmp.headerRow, children: null };
+  const items = [callback(require(8935) /* GameControllerIcon */.GameControllerIcon, { size: "sm", style: tmp.icon }), ];
+  const obj2 = { variant: null, color: "mobile-text-heading-primary", children: "@game" };
+  obj2[0] = require(11488) /* useGameMentionSearchBarHeight */.GAME_MENTION_SEARCH_BAR_TITLE_VARIANT;
+  items[1] = callback(require(4185) /* Text */.Text, obj2);
+  obj[1] = items;
   const items1 = [callback2(View, obj), ];
-  const obj3 = { style: tmp.description, variant: require(11464) /* useGameMentionSearchBarHeight */.GAME_MENTION_SEARCH_BAR_DESCRIPTION_VARIANT, color: "text-muted" };
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj3.children = intl.string(require(1212) /* getSystemLocale */.t["1kR88y"]);
-  items1[1] = callback(require(4161) /* Text */.Text, obj3);
-  obj.children = items1;
-  const items2 = [callback2(View, obj), callback(require(7611) /* Form */.FormDivider, { style: tmp.divider })];
-  obj.children = items2;
+  const obj3 = { style: tmp.description, variant: null, color: "text-muted", children: null };
+  obj3[1] = require(11488) /* useGameMentionSearchBarHeight */.GAME_MENTION_SEARCH_BAR_DESCRIPTION_VARIANT;
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj3[3] = intl.string(require(1236) /* getSystemLocale */.t["1kR88y"]);
+  items1[1] = callback(require(4185) /* Text */.Text, obj3);
+  obj[2] = items1;
+  const items2 = [callback2(View, obj), callback(require(7634) /* Form */.FormDivider, { style: tmp.divider })];
+  obj[1] = items2;
   return callback2(View, obj);
 });
 const result = require("jsxProd").fileFinishedImporting("modules/game_mentions/native/GameMentionSearchBar.tsx");

@@ -1,9 +1,9 @@
-// Module ID: 9890
-// Function ID: 76523
+// Module ID: 9912
+// Function ID: 9913
 // Name: enforcing
-// Dependencies: [27, 2]
+// Dependencies: [17, 2]
 
-// Module 9890 (enforcing)
+// Module 9912 (enforcing)
 import { TurboModuleRegistry } from "get ActivityIndicator";
 
 const enforcing = TurboModuleRegistry.getEnforcing("NativeFontModule");

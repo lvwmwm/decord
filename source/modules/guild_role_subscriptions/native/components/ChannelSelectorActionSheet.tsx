@@ -1,155 +1,73 @@
-// Module ID: 16560
-// Function ID: 128912
-// Name: _createForOfIteratorHelperLoose
-// Dependencies: [57, 31, 27, 1348, 5105, 3793, 653, 4361, 33, 4165, 689, 5087, 4355, 4133, 15071, 5119, 16497, 566, 5533, 4161, 1212, 9215, 4695, 4372, 8248, 1935, 8250, 8252, 1273, 12646, 5223, 2]
+// Module ID: 16595
+// Function ID: 16596
+// Name: ChannelRow
+// Dependencies: [32, 19, 17, 1372, 5127, 3817, 676, 4386, 21, 4189, 712, 5109, 4380, 4157, 15104, 5141, 16532, 589, 5551, 4185, 1236, 9239, 4717, 4395, 8272, 1959, 8274, 8276, 1297, 12668, 5245, 2]
 // Exports: default
 
-// Module 16560 (_createForOfIteratorHelperLoose)
+// Module 16595 (ChannelRow)
 import _slicedToArray from "_slicedToArray";
-import set from "set";
-import { View } from "module_8252";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_7 from "_isNativeReflectConstruct";
-import closure_8 from "_isNativeReflectConstruct";
+import Text from "Text";
+import { View } from "initialize";
+import ensureGuildLoaded from "ensureGuildLoaded";
+import setIndex from "setIndex";
+import getUncachedChannelPermissions from "getUncachedChannelPermissions";
 import ME from "ME";
 import { UnreadSetting } from "ReadStateTypes";
-import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import jsxProd from "SearchField";
+import createCacheKey from "createCacheKey";
 import importDefaultResult from "createTextStyle";
 
-let closure_11;
+let Fonts;
+let c9;
 let closure_12;
-let closure_13;
+let map1;
+let unpackModuleId;
 const require = arg1;
-function _createForOfIteratorHelperLoose(iterable) {
-  let closure_0 = iterable;
-  iterable = "undefined" !== typeof Symbol;
-  if (iterable) {
-    const _Symbol = Symbol;
-    iterable = iterable[Symbol.iterator];
-  }
-  if (!iterable) {
-    iterable = iterable[Symbol.iterator];
-  }
-  if (iterable) {
-    const iter = iterable.call(iterable);
-    const next = iter.next;
-    return next.bind(iter);
-  } else {
-    const _Array = Array;
-    let tmp = iterable;
-    if (!Array.isArray(iterable)) {
-      let tmp2;
-      if (iterable) {
-        if ("string" === typeof iterable) {
-          tmp2 = _arrayLikeToArray(iterable, undefined);
-        } else {
-          const toString = {}.toString;
-          const substr = toString.call(iterable).slice(8, -1);
-          let name = substr;
-          if (tmp3) {
-            name = iterable.constructor.name;
-          }
-          if ("Map" !== name) {
-            if ("Set" !== name) {
-              if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(iterable, undefined);
-              } else {
-                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
-              }
-            }
-            tmp2 = arr;
-          }
-          const _Array2 = Array;
-          arr = Array.from(iterable);
-          const callResult = toString.call(iterable);
-          tmp3 = "Object" === substr && iterable.constructor;
-        }
-      }
-      tmp = tmp2;
-      if (!tmp2) {
-        const _TypeError = TypeError;
-        const typeError = new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
-        throw typeError;
-      }
-    }
-    if (tmp) {
-      closure_0 = tmp;
-    }
-    let c1 = 0;
-    return () => {
-      if (closure_1 >= length.length) {
-        let obj = { done: true };
-      } else {
-        obj = { done: false };
-        closure_1 = tmp3 + 1;
-        obj.value = length[+closure_1];
-      }
-      return obj;
-    };
-  }
-}
-function _arrayLikeToArray(arg0, arg1) {
-  let length;
-  if (tmp) {
-    length = arg0.length;
-  }
-  const ArrayResult = Array(length);
-  for (let num = 0; num < length; num = num + 1) {
-    ArrayResult[num] = arg0[num];
-  }
-  return ArrayResult;
-}
 function ChannelRow(channel) {
   channel = channel.channel;
   const onChannelSelected = channel.onChannelSelected;
   let selected = channel.selected;
-  const tmp = _createForOfIteratorHelperLoose();
-  const tmp2 = onChannelSelected(4355)(channel);
+  const tmp = createCacheKey();
+  const tmp4 = onChannelSelected(4380)(channel);
   const items = [onChannelSelected, channel];
-  let obj = {};
   const callback = React.useCallback(() => {
     onChannelSelected(outer1_2[13]).hideActionSheet();
     onChannelSelected(channel);
   }, items);
-  obj = { style: tmp.channelRow, onPress: callback, accessible: true };
-  let tmp8;
-  if (null != tmp2) {
-    tmp8 = tmp2;
-  }
-  obj.accessibilityLabel = tmp8;
-  obj.channel = channel;
-  obj.selected = selected;
-  obj.disableHighlightOnPress = true;
-  obj.resolvedUnreadSetting = UnreadSetting.ONLY_MENTIONS;
-  const items1 = [callback(onChannelSelected(15071), obj), ];
+  let obj = { style: tmp.channelRow, onPress: callback, accessible: true, accessibilityLabel: null, channel: null, selected: null, disableHighlightOnPress: true, resolvedUnreadSetting: null };
+  obj[3] = tmp4;
+  obj[4] = channel;
+  obj[5] = selected;
+  obj[7] = UnreadSetting.ONLY_MENTIONS;
+  const children = [closure_11(onChannelSelected(15104), obj), ];
   if (selected) {
-    obj = { style: tmp.selectedIcon, source: onChannelSelected(16497) };
-    selected = callback(onChannelSelected(5119), obj);
-    const tmp12 = onChannelSelected(5119);
+    obj = { style: null, source: null };
+    obj[0] = tmp.selectedIcon;
+    obj[1] = tmp2(16532);
+    selected = tmp8(tmp2(5141), obj);
+    const tmp2Result = tmp2(5141);
   }
-  items1[1] = selected;
-  obj.children = items1;
-  return closure_13(closure_12, obj);
+  children[1] = selected;
+  return closure_13(closure_12, { children });
 }
-const Permissions = ME.Permissions;
-({ jsx: closure_11, Fragment: closure_12, jsxs: closure_13 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWEST, padding: 16, width: "100%" };
-_createForOfIteratorHelperLoose.titleContainer = _createForOfIteratorHelperLoose;
-let obj1 = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SURFACE_HIGH, padding: 16, width: "100%" };
-_createForOfIteratorHelperLoose.searchContainer = obj1;
-let obj2 = { alignItems: "center", backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SURFACE_HIGH, flexDirection: "row", padding: 16 };
-_createForOfIteratorHelperLoose.createChannelButton = obj2;
+({ Permissions: c9, Fonts } = ME);
+({ jsx: unpackModuleId, Fragment: closure_12, jsxs: map1 } = jsxProd);
+createCacheKey = { titleContainer: null, searchContainer: null, createChannelButton: null, createChannelLabel: null, bodyContainer: null, channelRow: null, selectedIcon: null };
+createCacheKey = { backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOWEST, padding: 16, width: "100%" };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { backgroundColor: require("Themes").colors.BACKGROUND_SURFACE_HIGH, padding: 16, width: "100%" };
+let obj1 = { backgroundColor: require("Themes").colors.BACKGROUND_SURFACE_HIGH, padding: 16, width: "100%" };
+createCacheKey[2] = { alignItems: "center", backgroundColor: require("Themes").colors.BACKGROUND_SURFACE_HIGH, flexDirection: "row", padding: 16 };
 let obj3 = {};
-const merged = Object.assign(require("createTextStyle")(ME.Fonts.PRIMARY_MEDIUM, require("_createForOfIteratorHelperLoose").colors.TEXT_LINK, 16));
-obj3["marginStart"] = 8;
-_createForOfIteratorHelperLoose.createChannelLabel = obj3;
-_createForOfIteratorHelperLoose.bodyContainer = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SURFACE_HIGH };
-_createForOfIteratorHelperLoose.channelRow = { paddingHorizontal: 8, paddingVertical: 4 };
-_createForOfIteratorHelperLoose.selectedIcon = { end: 16, top: 10, position: "absolute" };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-let obj4 = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SURFACE_HIGH };
+let obj2 = { alignItems: "center", backgroundColor: require("Themes").colors.BACKGROUND_SURFACE_HIGH, flexDirection: "row", padding: 16 };
+const merged = Object.assign(require("createTextStyle")(Fonts.PRIMARY_MEDIUM, require("Themes").colors.TEXT_LINK, 16));
+obj3.marginStart = 8;
+createCacheKey[3] = obj3;
+createCacheKey[4] = { backgroundColor: require("Themes").colors.BACKGROUND_SURFACE_HIGH };
+createCacheKey[5] = { paddingHorizontal: 8, paddingVertical: 4 };
+createCacheKey[6] = { end: 16, top: 10, position: "absolute" };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let obj4 = { backgroundColor: require("Themes").colors.BACKGROUND_SURFACE_HIGH };
 const result = require("get ActivityIndicator").fileFinishedImporting("modules/guild_role_subscriptions/native/components/ChannelSelectorActionSheet.tsx");
 
 export default function ChannelSelectorActionSheet(guildId) {
@@ -164,122 +82,107 @@ export default function ChannelSelectorActionSheet(guildId) {
   }
   let first;
   let ref;
-  const tmp = _createForOfIteratorHelperLoose();
+  const tmp = createCacheKey();
   let tmp2 = first(ref.useState(""), 2);
   first = tmp2[0];
   ref = ref.useRef(null);
-  let obj = guildId(566);
-  let items = [closure_7, closure_8];
+  let obj = guildId(589);
+  let items = [setIndex, getUncachedChannelPermissions];
   const items1 = [guildId, first];
   const stateFromStoresArray = obj.useStateFromStoresArray(items, () => {
-    let iter5;
     const items = [];
     const categories = outer1_7.getCategories(guildId);
-    const tmp2 = outer1_15(categories._categories);
-    const iter = tmp2();
-    let iter2 = iter;
-    if (!iter.done) {
-      do {
-        let tmp3 = outer1_15;
-        let tmp4 = outer1_15(categories[iter2.value.channel.id]);
-        let iter3 = tmp4();
-        if (!iter3.done) {
-          do {
-            let value = iter3.value;
-            let tmp5 = outer1_8;
-            let tmp6 = outer1_9;
-            let canResult = outer1_8.can(outer1_9.VIEW_CHANNEL, value.channel);
-            if (canResult) {
-              let tmp8 = first;
-              let hasItem = "" === first;
-              if (!hasItem) {
-                let name = value.channel.name;
-                let tmp10 = first;
-                hasItem = name.includes(first);
-              }
-              canResult = hasItem;
-            }
-            if (canResult) {
-              let arr = items.push(value.channel);
-            }
-            iter4 = tmp4();
-            iter3 = iter4;
-            let tmp12 = value;
-          } while (!iter4.done);
+    const iter = categories._categories[Symbol.iterator]();
+    while (iter !== undefined) {
+      let tmp2 = categories[iter.next().channel.id];
+      let tmp3 = tmp2;
+      let tmp4 = tmp2;
+      for (const item10020 of tmp2) {
+        let tmp5 = item10020;
+        let tmp6 = outer1_8;
+        let tmp7 = outer1_9;
+        let canResult = outer1_8.can(outer1_9.VIEW_CHANNEL, item10020.channel);
+        if (canResult) {
+          let hasItem = "" === first;
+          if (!hasItem) {
+            let tmp11 = item10020;
+            let name = tmp5.channel.name;
+            hasItem = name.includes(tmp9);
+          }
+          canResult = hasItem;
         }
-        iter5 = tmp2();
-        iter2 = iter5;
-      } while (!iter5.done);
+        if (canResult) {
+          let tmp12 = item10020;
+          let arr = items.push(tmp5.channel);
+        }
+        continue;
+      }
+      continue;
     }
     return items;
   }, items1);
-  obj = { scrollable: true, ref };
-  obj = {};
-  const obj1 = { style: tmp.titleContainer };
-  let obj2 = { accessibilityRole: "header", variant: "text-md/bold", color: "mobile-text-heading-primary" };
-  if (null == title) {
-    const intl = guildId(1212).intl;
-    title = intl.string(guildId(1212).t.PDn2fR);
+  obj = { scrollable: true, ref, header: null, children: null };
+  obj = { style: tmp.titleContainer, children: null };
+  if (title == null) {
+    const intl = tmp5(1236).intl;
+    title = intl.string(tmp5(1236).t.PDn2fR);
   }
-  obj2.children = title;
-  obj1.children = callback(guildId(4161).Text, obj2);
-  const items2 = [callback(View, obj1), , ];
-  const obj3 = { style: tmp.searchContainer };
-  const obj4 = { size: "md" };
-  const intl2 = guildId(1212).intl;
-  obj4.placeholder = intl2.string(guildId(1212).t.UTYBjS);
-  obj4.onChange = tmp2[1];
-  obj4.onFocus = function onFocus() {
+  obj[1] = closure_11(guildId(4185).Text, { accessibilityRole: "header", variant: "text-md/bold", color: "mobile-text-heading-primary", children: title });
+  const items2 = [closure_11(View, obj), , ];
+  const obj1 = { style: tmp.searchContainer, children: null };
+  let obj2 = { size: "md", placeholder: null, onChange: null, onFocus: null };
+  const intl2 = tmp5(1236).intl;
+  obj2[1] = intl2.string(guildId(1236).t.UTYBjS);
+  obj2[2] = tmp2[1];
+  obj2[3] = function onFocus() {
     const current = ref.current;
     let expandActionSheetResult;
-    if (null != current) {
+    if (current != null) {
       expandActionSheetResult = current.expandActionSheet();
     }
     return expandActionSheetResult;
   };
-  obj3.children = callback(guildId(9215).SearchField, obj4);
-  items2[1] = callback(View, obj3);
-  let tmp15Result = !hideCreateChannel;
-  if (tmp15Result) {
-    const obj5 = { style: tmp.createChannelButton };
-    let str = "button";
-    obj5.accessibilityRole = "button";
-    obj5.onPress = function onPress() {
+  obj1[1] = closure_11(guildId(9239).SearchField, obj2);
+  items2[1] = closure_11(View, obj1);
+  let tmp9Result = !hideCreateChannel;
+  if (!hideCreateChannel) {
+    const obj3 = { style: null, accessibilityRole: "button", onPress: null, children: null };
+    obj3[0] = tmp.createChannelButton;
+    obj3[2] = function onPress() {
       let obj = outer1_1(outer1_2[13]);
       obj.hideActionSheet();
-      obj = { guildId };
+      obj = { guildId, createMode: null, onChannelCreated: null };
       const obj2 = outer1_1(outer1_2[23]);
-      obj.createMode = guildId(outer1_2[26]).CreateChannelMode.PREMIUM_CHANNEL;
-      obj.onChannelCreated = function onChannelCreated(channelId) {
-        outer2_1(outer2_2[27]).close();
-        const channel = outer2_6.getChannel(channelId);
+      obj[1] = guildId(outer1_2[26]).CreateChannelMode.PREMIUM_CHANNEL;
+      obj[2] = function onChannelCreated(arg0) {
+        outer1_1(outer1_2[27]).close();
+        const channel = outer1_6.getChannel(arg0);
         if (null != channel) {
-          outer1_1(channel);
+          callback(channel);
         }
       };
       obj2.pushLazy(guildId(outer1_2[25])(outer1_2[24], outer1_2.paths), obj, outer1_1(outer1_2[27]).CREATE_CHANNEL_MODAL_KEY);
     };
-    const obj6 = {};
+    let str = tmp.createChannelLabel.color;
     str = undefined;
-    if (null != tmp.createChannelLabel.color) {
-      str = str2.toString();
+    if (str != null) {
+      str = str.toString();
     }
-    obj6.color = str;
-    obj6.source = importDefault(12646);
-    const items3 = [callback(guildId(1273).Icon, obj6), ];
-    const obj7 = { style: tmp.createChannelLabel, variant: "text-md/medium", color: "text-link" };
-    const intl3 = guildId(1212).intl;
-    obj7.children = intl3.string(guildId(1212).t.d7AN7W);
-    items3[1] = callback(guildId(4161).Text, obj7);
-    obj5.children = items3;
-    tmp15Result = closure_13(guildId(4695).PressableOpacity, obj5);
-    const tmp15 = closure_13;
-    const tmp18 = callback;
+    const obj4 = { color: null, source: null };
+    obj4[0] = str;
+    obj4[1] = importDefault(12668);
+    const items3 = [tmp8(tmp5(1297).Icon, obj4), ];
+    const obj5 = { style: null, variant: "text-md/medium", color: "text-link", children: null };
+    obj5[0] = tmp.createChannelLabel;
+    const intl3 = tmp5(1236).intl;
+    obj5[3] = intl3.string(tmp5(1236).t.d7AN7W);
+    items3[1] = tmp8(tmp5(4185).Text, obj5);
+    obj3[3] = items3;
+    tmp9Result = tmp9(tmp5(4717).PressableOpacity, obj3);
   }
-  items2[2] = tmp15Result;
-  obj.children = items2;
-  obj.header = closure_13(closure_12, obj);
-  obj.children = callback(guildId(5223).BottomSheetFlatList, {
+  items2[2] = tmp9Result;
+  obj[2] = closure_13(closure_12, { children: items2 });
+  obj[3] = closure_11(guildId(5245).BottomSheetFlatList, {
     style: tmp.bodyContainer,
     data: stateFromStoresArray,
     keyExtractor(id) {
@@ -287,8 +190,8 @@ export default function ChannelSelectorActionSheet(guildId) {
     },
     renderItem(item) {
       item = item.item;
-      return outer1_11(outer1_17, { channel: item, onChannelSelected: closure_1, selected: item.id === closure_2 });
+      return outer1_11(outer1_15, { channel: item, onChannelSelected: closure_1, selected: item.id === closure_2 });
     }
   });
-  return callback(guildId(5533).ActionSheet, obj);
+  return closure_11(guildId(5551).ActionSheet, obj);
 };

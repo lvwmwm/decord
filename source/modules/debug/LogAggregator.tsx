@@ -1,153 +1,76 @@
-// Module ID: 12
-// Function ID: 154
-// Name: _createForOfIteratorHelperLoose
-// Dependencies: [13, 2]
+// Module ID: 7
+// Function ID: 8
+// Name: report
+// Dependencies: [8, 2]
 // Exports: clear, getAllForDebugPanel, report, stringify
 
-// Module 12 (_createForOfIteratorHelperLoose)
-import importDefaultResult from "arrayCopy";
-
-function _createForOfIteratorHelperLoose(iterable) {
-  let closure_0 = iterable;
-  iterable = "undefined" !== typeof Symbol;
-  if (iterable) {
-    const _Symbol = Symbol;
-    iterable = iterable[Symbol.iterator];
-  }
-  if (!iterable) {
-    iterable = iterable[Symbol.iterator];
-  }
-  if (iterable) {
-    const iter = iterable.call(iterable);
-    const next = iter.next;
-    return next.bind(iter);
-  } else {
-    const _Array = Array;
-    let tmp = iterable;
-    if (!Array.isArray(iterable)) {
-      let tmp2;
-      if (iterable) {
-        if ("string" === typeof iterable) {
-          tmp2 = _arrayLikeToArray(iterable, undefined);
-        } else {
-          const toString = {}.toString;
-          const substr = toString.call(iterable).slice(8, -1);
-          let name = substr;
-          if (tmp3) {
-            name = iterable.constructor.name;
-          }
-          if ("Map" !== name) {
-            if ("Set" !== name) {
-              if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(iterable, undefined);
-              } else {
-                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
-              }
-            }
-            tmp2 = arr;
-          }
-          const _Array2 = Array;
-          arr = Array.from(iterable);
-          const callResult = toString.call(iterable);
-          tmp3 = "Object" === substr && iterable.constructor;
-        }
-      }
-      tmp = tmp2;
-      if (!tmp2) {
-        const _TypeError = TypeError;
-        const typeError = new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
-        throw typeError;
-      }
-    }
-    if (tmp) {
-      closure_0 = tmp;
-    }
-    let c1 = 0;
-    return () => {
-      if (closure_1 >= length.length) {
-        let obj = { done: true };
-      } else {
-        obj = { done: false };
-        closure_1 = tmp3 + 1;
-        obj.value = length[+closure_1];
-      }
-      return obj;
-    };
-  }
-}
-function _arrayLikeToArray(arg0, arg1) {
-  let length;
-  if (tmp) {
-    length = arg0.length;
-  }
-  const ArrayResult = Array(length);
-  for (let num = 0; num < length; num = num + 1) {
-    ArrayResult[num] = arg0[num];
-  }
-  return ArrayResult;
-}
-importDefaultResult = new importDefaultResult(5000);
+// Module 7 (report)
+let c0 = new require("Deque")(5000);
+let tmp2 = new require("Deque")(5000);
 const result = require("set").fileFinishedImporting("modules/debug/LogAggregator.tsx");
 
-export const report = function report(category) {
+export const report = function report(arg0) {
   let length;
-  const tmp = _createForOfIteratorHelperLoose(HermesBuiltin.copyRestArgs());
-  const iter = tmp();
-  let iter2 = iter;
-  let str = "";
-  let str2 = "";
-  if (!iter.done) {
-    while (true) {
-      let value = iter2.value;
-      let tmp2 = typeof value;
-      if ("string" !== tmp2) {
+  const tmp = (function stringifyMessage(arg0) {
+    let str = "";
+    const iter = arg0[Symbol.iterator]();
+    const nextResult = iter.next();
+    for (; iter !== undefined; str = str + (error + " ")) {
+      error = nextResult;
+      let tmp2 = typeof nextResult;
+      if (typeof nextResult !== "y") {
+        let tmp10 = tmp2;
         if ("number" !== tmp2) {
+          let tmp3 = tmp2;
           if ("boolean" !== tmp2) {
+            let tmp4 = nextResult;
             let _Error = Error;
-            if (value instanceof Error) {
-              let text = `${value.message + "\n" + value.stack + " "}`;
+            let tmp5 = str;
+            if (error instanceof Error) {
+              let tmp7 = nextResult;
+              let _HermesInternal = HermesInternal;
+              str = `` + error.message + "\n" + error.stack + " ";
             } else {
               let _JSON = JSON;
-              text = `${JSON.stringify(value) + " "}`;
+              let tmp6 = nextResult;
+              str = str + (JSON.stringify(error) + " ");
             }
           }
-          let iter3 = tmp();
-          str = text;
-          iter2 = iter3;
-          str2 = text;
-          if (iter3.done) {
-            break;
-          }
+          continue;
         }
       }
-      text = `${str}${value} `;
+      let tmp8 = str;
+      let tmp9 = nextResult;
     }
-  }
-  if ("string" === typeof category) {
-    let obj = {};
-    const _Date2 = Date;
-    obj.time = Date.now();
-    obj.category = category;
-    obj.message = str2;
-    importDefaultResult.push(obj);
-  } else {
-    obj = {};
+    return str;
+  })(HermesBuiltin.copyRestArgs());
+  if (typeof arg0 === "y") {
+    let obj = { time: null, category: null, message: null };
     const _Date = Date;
-    obj.time = Date.now();
-    ({ name: obj.category, timing: obj.timing } = category);
-    obj.message = str2;
-    importDefaultResult.push(obj);
+    obj[0] = Date.now();
+    obj[1] = arg0;
+    obj[2] = tmp;
+    let arr = tmp2.push(obj);
+    arr = tmp2;
+  } else {
+    arr = tmp2;
+    obj = { time: null, category: null, timing: null, message: null };
+    const _Date2 = Date;
+    obj[0] = Date.now();
+    ({ name: obj2[1], timing: obj2[2] } = arg0);
+    obj[3] = tmp;
+    arr = tmp2.push(obj);
   }
-  if (importDefaultResult.length > 5000) {
+  if (arr.length > 5000) {
     do {
-      let tmp8 = importDefaultResult;
-      let arr1 = importDefaultResult.shift();
-      length = importDefaultResult.length;
+      let tmp5 = tmp2;
+      let arr1 = tmp2.shift();
+      length = tmp2.length;
     } while (length > 5000);
   }
 };
 export const clear = function clear() {
-  importDefaultResult.clear();
+  tmp2.clear();
 };
 export const stringify = function stringify(arg0) {
   const found = arg0.toArray().filter((category) => {
@@ -173,7 +96,7 @@ export const getAllForDebugPanel = function getAllForDebugPanel(arg0) {
   if (arg0 === undefined) {
     flag = false;
   }
-  const toArrayResult = importDefaultResult.toArray();
+  const toArrayResult = tmp2.toArray();
   if (flag) {
     let reversed = toArrayResult.reverse();
   } else {

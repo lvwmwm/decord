@@ -1,63 +1,58 @@
-// Module ID: 11244
-// Function ID: 87340
+// Module ID: 11268
+// Function ID: 11269
 // Name: LearnMoreAboutAppsSection
-// Dependencies: [31, 27, 653, 33, 4165, 689, 3862, 1921, 1212, 11245, 7992, 4161, 4695, 2]
+// Dependencies: [19, 17, 676, 21, 4189, 712, 3886, 1945, 1236, 11269, 8017, 4185, 4717, 2]
 // Exports: default
 
-// Module 11244 (LearnMoreAboutAppsSection)
-import result from "result";
+// Module 11268 (LearnMoreAboutAppsSection)
+import noop from "noop";
 import { View } from "get ActivityIndicator";
 import { HelpdeskArticles } from "ME";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
 let closure_6;
-let closure_7;
+let error;
 const require = arg1;
-({ jsx: closure_6, jsxs: closure_7 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { marginTop: require("_createForOfIteratorHelperLoose").space.PX_32, borderRadius: require("_createForOfIteratorHelperLoose").radii.lg, alignItems: "center", backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_MOD_MUTED, paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_64 };
-_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.body = { textAlign: "center" };
-_createForOfIteratorHelperLoose.divider = { height: require("_createForOfIteratorHelperLoose").space.PX_16 };
-let obj2 = { borderRadius: require("_createForOfIteratorHelperLoose").radii.round, backgroundColor: require("_createForOfIteratorHelperLoose").colors.CONTROL_SECONDARY_BACKGROUND_DEFAULT, paddingVertical: 12, paddingHorizontal: 16, minHeight: 48, justifyContent: "center", alignItems: "center" };
-const merged = Object.assign(require("_createForOfIteratorHelperLoose").shadows.SHADOW_LOW);
-_createForOfIteratorHelperLoose.linkButton = obj2;
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-let obj1 = { height: require("_createForOfIteratorHelperLoose").space.PX_16 };
+({ jsx: closure_6, jsxs: error } = jsxProd);
+createCacheKey = { container: null, body: null, divider: null, linkButton: null };
+createCacheKey = { marginTop: require("Themes").space.PX_32, borderRadius: require("Themes").radii.lg, alignItems: "center", backgroundColor: require("Themes").colors.BACKGROUND_MOD_MUTED, paddingHorizontal: require("Themes").space.PX_64 };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { textAlign: "center" };
+createCacheKey[2] = { height: require("Themes").space.PX_16 };
+const obj1 = { height: require("Themes").space.PX_16 };
+const merged = Object.assign(require("Themes").shadows.SHADOW_LOW);
+createCacheKey[3] = { borderRadius: require("Themes").radii.round, backgroundColor: require("Themes").colors.CONTROL_SECONDARY_BACKGROUND_DEFAULT, paddingVertical: 12, paddingHorizontal: 16, minHeight: 48, justifyContent: "center", alignItems: "center" };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+const obj2 = { borderRadius: require("Themes").radii.round, backgroundColor: require("Themes").colors.CONTROL_SECONDARY_BACKGROUND_DEFAULT, paddingVertical: 12, paddingHorizontal: 16, minHeight: 48, justifyContent: "center", alignItems: "center" };
 const result = require("ME").fileFinishedImporting("modules/app_launcher/native/screens/home/LearnMoreAboutAppsSection.tsx");
 
 export default function LearnMoreAboutAppsSection(visible) {
-  const tmp = _createForOfIteratorHelperLoose();
+  const tmp = createCacheKey();
   const callback = React.useCallback(() => {
-    const obj = outer1_1(outer1_2[6]);
-    obj.openURL(outer1_1(outer1_2[7]).getAppsSupportURL(outer1_5.APPS_LEARN_MORE));
+    const obj = callback(3886);
+    obj.openURL(callback(1945).getAppsSupportURL(constants.APPS_LEARN_MORE));
   }, []);
-  const intl = require(1212) /* getSystemLocale */.intl;
-  const stringResult = intl.string(require(1212) /* getSystemLocale */.t["kw8/Ec"]);
-  const intl2 = require(1212) /* getSystemLocale */.intl;
-  const stringResult1 = intl2.string(require(1212) /* getSystemLocale */.t.GZoV1O);
-  const intl3 = require(1212) /* getSystemLocale */.intl;
-  let obj = { sectionName: null, numItems: 1, numVisibleItems: 1 };
-  const formatToPlainStringResult = intl3.formatToPlainString(require(1212) /* getSystemLocale */.t.xx5Sug, { sectionTitle: stringResult, sectionBody: stringResult1 });
-  obj.sectionName = require(7992) /* AppLauncherEntrypoint */.AppLauncherSectionName.NEW_TO_APPS;
-  obj.viewed = visible.visible;
-  obj = { style: tmp.container };
+  const intl = require(1236) /* getSystemLocale */.intl;
+  const stringResult = intl.string(require(1236) /* getSystemLocale */.t["kw8/Ec"]);
+  const intl2 = require(1236) /* getSystemLocale */.intl;
+  const stringResult1 = intl2.string(require(1236) /* getSystemLocale */.t.GZoV1O);
+  const intl3 = require(1236) /* getSystemLocale */.intl;
+  let obj = { sectionName: null, numItems: 1, numVisibleItems: 1, viewed: null, children: null };
+  const formatToPlainStringResult = intl3.formatToPlainString(require(1236) /* getSystemLocale */.t.xx5Sug, { sectionTitle: stringResult, sectionBody: stringResult1 });
+  obj[0] = require(8017) /* AppLauncherEntrypoint */.AppLauncherSectionName.NEW_TO_APPS;
+  obj[3] = visible.visible;
+  obj = { style: tmp.container, children: null };
   obj = { style: tmp.divider };
-  const items = [callback(View, obj), , , , , ];
-  const obj1 = { accessibilityRole: "header", variant: "heading-lg/bold", color: "mobile-text-heading-primary", children: stringResult };
-  items[1] = callback(require(4161) /* Text */.Text, obj1);
-  const obj2 = { variant: "text-xs/normal", color: "text-default", style: tmp.body, children: stringResult1 };
-  items[2] = callback(require(4161) /* Text */.Text, obj2);
-  items[3] = callback(View, { style: tmp.divider });
-  const obj4 = { style: tmp.linkButton, onPress: callback, accessibilityRole: "link", accessibilityLabel: formatToPlainStringResult };
-  const obj5 = { variant: "text-md/semibold", color: "mobile-text-heading-primary" };
-  const intl4 = require(1212) /* getSystemLocale */.intl;
-  obj5.children = intl4.string(require(1212) /* getSystemLocale */.t.Ye51oT);
-  obj4.children = callback(require(4161) /* Text */.Text, obj5);
-  items[4] = callback(require(4695) /* PressableBase */.PressableHighlight, obj4);
+  const items = [callback(View, obj), callback(require(4185) /* Text */.Text, { accessibilityRole: "header", variant: "heading-lg/bold", color: "mobile-text-heading-primary", children: stringResult }), callback(require(4185) /* Text */.Text, { variant: "text-xs/normal", color: "text-default", style: tmp.body, children: stringResult1 }), callback(View, { style: tmp.divider }), , ];
+  const obj3 = { style: tmp.linkButton, onPress: callback, accessibilityRole: "link", accessibilityLabel: formatToPlainStringResult, children: null };
+  const obj4 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: null };
+  const intl4 = require(1236) /* getSystemLocale */.intl;
+  obj4[2] = intl4.string(require(1236) /* getSystemLocale */.t.Ye51oT);
+  obj3[4] = callback(require(4185) /* Text */.Text, obj4);
+  items[4] = callback(require(4717) /* PressableBase */.PressableHighlight, obj3);
   items[5] = callback(View, { style: tmp.divider });
-  obj.children = items;
-  obj.children = callback2(View, obj);
-  return callback(importDefault(11245), obj);
+  obj[1] = items;
+  obj[4] = callback2(View, obj);
+  return callback(importDefault(11269), obj);
 };

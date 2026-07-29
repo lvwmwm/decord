@@ -1,18 +1,25 @@
-// Module ID: 13901
-// Function ID: 106341
+// Module ID: 13922
+// Function ID: 13923
 // Name: Row
-// Dependencies: [31, 27, 5776, 33, 4664, 11090, 3867, 6620, 4666, 11092, 4129, 8744, 4165, 689, 4161, 11089, 1212, 2199, 6236, 5837, 6761, 6762, 11096, 4578, 4372, 5121, 11098, 2]
+// Dependencies: [19, 17, 5794, 21, 4686, 11114, 3891, 6641, 4688, 11116, 4153, 8768, 4189, 712, 4185, 11113, 1236, 2223, 6256, 5855, 6783, 6784, 11120, 4600, 4395, 5143, 11122, 2]
 // Exports: default
 
-// Module 13901 (Row)
-import result from "result";
-import { View } from "set";
-import { TeenActionDisplayType } from "items";
-import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+// Module 13922 (Row)
+import getEmptyActivityFormatter from "getEmptyActivityFormatter";
+import { View } from "messagesProxy";
+import jsxProd from "ModalContent";
+import createCacheKey from "createCacheKey";
+import createCacheKey from "createCacheKey";
 
-let closure_5;
+let GIFTS;
+let GUILD_ADD;
+let GUILD_INTERACTION;
+let PURCHASES;
+let TOTAL_VOICE_MINUTES;
+let USER_ADD;
+let USER_CALLED;
+let USER_INTERACTION;
+let c5;
 let closure_6;
 const require = arg1;
 function Row(arg0) {
@@ -21,100 +28,91 @@ function Row(arg0) {
   let header;
   ({ header, description, IconComponent } = arg0);
   const tmp = callback3();
-  let obj = { style: tmp.row };
+  let obj = { style: tmp.row, children: null };
   obj = { style: tmp.iconContainer, children: callback(IconComponent, obj) };
   obj = { style: tmp.icon };
   const items = [callback(View, obj), ];
-  const obj1 = { style: tmp.content };
-  const obj2 = { style: tmp.header, variant: "text-sm/bold", color: "mobile-text-heading-primary", children: header };
-  const items1 = [callback(require(4161) /* Text */.Text, obj2), ];
-  const obj3 = { variant: "text-xs/medium", color: "text-default", children: description };
-  items1[1] = callback(require(4161) /* Text */.Text, obj3);
-  obj1.children = items1;
+  const obj1 = { style: tmp.content, children: null };
+  const items1 = [callback(require(4185) /* Text */.Text, { style: tmp.header, variant: "text-sm/bold", color: "mobile-text-heading-primary", children: header }), callback(require(4185) /* Text */.Text, { variant: "text-xs/medium", color: "text-default", children: description })];
+  obj1[1] = items1;
   items[1] = callback2(View, obj1);
-  obj.children = items;
+  obj[1] = items;
   return callback2(View, obj);
 }
 function FamilyCenterModalDataTooltipScreen() {
   const tmp = callback4();
-  let obj = _require(11089);
-  const intl = _require(1212).intl;
-  const intl2 = _require(1212).intl;
-  const ageSpecificText = obj.useAgeSpecificText(intl.string(importDefault(2199).n6LOrh), intl2.string(importDefault(2199).JNLpDZ));
-  _require = importDefault(6236)();
-  let obj1 = _require(5837);
+  let obj = _require(11113);
+  const intl = _require(1236).intl;
+  const intl2 = _require(1236).intl;
+  const ageSpecificText = obj.useAgeSpecificText(intl.string(importDefault(2223).n6LOrh), intl2.string(importDefault(2223).JNLpDZ));
+  _require = importDefault(6256)();
+  let obj1 = _require(5855);
   const sortedActivityTypeConfigs = obj1.getSortedActivityTypeConfigs();
-  obj = {};
-  obj = {};
-  obj1 = { style: tmp.container };
-  const obj2 = { style: tmp.groupHeader, variant: "text-lg/bold", color: "mobile-text-heading-primary", children: ageSpecificText };
+  obj = { children: null };
+  obj = { children: null };
+  obj1 = { style: tmp.container, children: null };
   const items = [
-    callback(_require(4161).Text, obj2),
+    callback(_require(4185).Text, { style: tmp.groupHeader, variant: "text-lg/bold", color: "mobile-text-heading-primary", children: ageSpecificText }),
     sortedActivityTypeConfigs.map((arg0) => {
       let obj;
       let tmp;
       [tmp, obj] = arg0;
-      obj = { IconComponent: outer1_7[tmp], header: obj.tooltipHeader() };
-      let tmp4;
-      if (null != closure_0) {
-        tmp4 = closure_0;
-      }
-      obj.description = obj.tooltipDescription(tmp4);
-      return outer1_5(outer1_10, obj, tmp);
+      obj = { IconComponent: outer1_7[tmp], header: obj.tooltipHeader(), description: null };
+      obj[2] = obj.tooltipDescription(closure_0);
+      return outer1_5(outer1_9, obj, tmp);
     })
   ];
-  obj1.children = items;
-  obj.children = callback2(View, obj1);
-  const items1 = [callback(_require(6762).ModalContent, obj), ];
-  const obj3 = {};
-  const obj4 = { variant: "primary" };
-  const intl3 = _require(1212).intl;
-  obj4.text = intl3.string(_require(1212).t["NX+WJN"]);
-  obj4.onPress = importDefault(4372).pop;
-  obj3.children = callback(_require(4578).Button, obj4);
-  items1[1] = callback(_require(11096).ModalFooter, obj3);
-  obj.children = items1;
-  return callback2(_require(6761).ModalScreen, obj);
+  obj1[1] = items;
+  obj[0] = callback2(View, obj1);
+  const items1 = [callback(_require(6784).ModalContent, obj), ];
+  const obj3 = { children: null };
+  const obj4 = { variant: "primary", text: null, onPress: null };
+  const intl3 = _require(1236).intl;
+  obj4[1] = intl3.string(_require(1236).t["NX+WJN"]);
+  obj4[2] = importDefault(4395).pop;
+  obj3[0] = callback(_require(4600).Button, obj4);
+  items1[1] = callback(_require(11120).ModalFooter, obj3);
+  obj[0] = items1;
+  return callback2(_require(6783).ModalScreen, obj);
 }
-({ jsx: closure_5, jsxs: closure_6 } = jsxProd);
-let obj = { [TeenActionDisplayType.USER_INTERACTION]: require("ChatIcon").ChatIcon, [TeenActionDisplayType.USER_CALLED]: require("PhoneIcon").PhoneIcon, [TeenActionDisplayType.USER_ADD]: require("FriendsIcon").FriendsIcon, [TeenActionDisplayType.GUILD_ADD]: require("ServerGridIcon").ServerGridIcon, [TeenActionDisplayType.GUILD_INTERACTION]: require("ThreadIcon").ThreadIcon, [TeenActionDisplayType.PURCHASES]: require("CreditCardIcon").CreditCardIcon, [TeenActionDisplayType.TOTAL_VOICE_MINUTES]: require("ClockIcon").ClockIcon, [TeenActionDisplayType.GIFTS]: require("GiftIcon").GiftIcon };
-obj = {};
-obj = { display: "flex", flexDirection: "row", width: "100%", alignItems: "center", marginBottom: require("_createForOfIteratorHelperLoose").space.PX_8, paddingVertical: require("_createForOfIteratorHelperLoose").space.PX_12, paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_12, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SURFACE_HIGH, borderRadius: require("_createForOfIteratorHelperLoose").radii.sm };
-obj.row = obj;
-obj.content = { flexShrink: 1 };
-_createForOfIteratorHelperLoose = { display: "flex", alignItems: "center", justifyContent: "center", width: 40, height: 40, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWEST, borderRadius: require("_createForOfIteratorHelperLoose").radii.round, flexShrink: 0, marginRight: require("_createForOfIteratorHelperLoose").space.PX_12 };
-obj.iconContainer = _createForOfIteratorHelperLoose;
-obj.header = { marginBottom: require("_createForOfIteratorHelperLoose").space.PX_4 };
-let obj2 = { marginBottom: require("_createForOfIteratorHelperLoose").space.PX_4 };
-obj.icon = { tintColor: require("_createForOfIteratorHelperLoose").colors.TEXT_BRAND };
-let closure_8 = _createForOfIteratorHelperLoose.createStyles(obj);
-let obj4 = {};
-const obj5 = { display: "flex", alignItems: "center", paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16, width: "100%" };
-obj4.container = obj5;
-let obj3 = { tintColor: require("_createForOfIteratorHelperLoose").colors.TEXT_BRAND };
-obj4.groupHeader = { marginBottom: require("_createForOfIteratorHelperLoose").space.PX_24 };
-let closure_9 = _createForOfIteratorHelperLoose.createStyles(obj4);
-const obj6 = { marginBottom: require("_createForOfIteratorHelperLoose").space.PX_24 };
+({ jsx: c5, jsxs: closure_6 } = jsxProd);
+let obj = { [USER_INTERACTION]: require("ChatIcon").ChatIcon, [USER_CALLED]: require("PhoneIcon").PhoneIcon, [USER_ADD]: require("FriendsIcon").FriendsIcon, [GUILD_ADD]: require("ServerGridIcon").ServerGridIcon, [GUILD_INTERACTION]: require("ThreadIcon").ThreadIcon, [PURCHASES]: require("CreditCardIcon").CreditCardIcon, [TOTAL_VOICE_MINUTES]: require("ClockIcon").ClockIcon, [GIFTS]: require("GiftIcon").GiftIcon };
+({ USER_INTERACTION, USER_CALLED, USER_ADD, GUILD_ADD, GUILD_INTERACTION, PURCHASES, TOTAL_VOICE_MINUTES, GIFTS } = require("items").TeenActionDisplayType);
+obj = { row: null, content: null, iconContainer: null, header: null, icon: null };
+obj = { display: "flex", flexDirection: "row", width: "100%", alignItems: "center", marginBottom: require("Themes").space.PX_8, paddingVertical: require("Themes").space.PX_12, paddingHorizontal: require("Themes").space.PX_12, backgroundColor: require("Themes").colors.BACKGROUND_SURFACE_HIGH, borderRadius: require("Themes").radii.sm };
+obj[0] = obj;
+obj[1] = { flexShrink: 1 };
+createCacheKey = { display: "flex", alignItems: "center", justifyContent: "center", width: 40, height: 40, backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOWEST, borderRadius: require("Themes").radii.round, flexShrink: 0, marginRight: require("Themes").space.PX_12 };
+obj[2] = createCacheKey;
+obj[3] = { marginBottom: require("Themes").space.PX_4 };
+const obj2 = { marginBottom: require("Themes").space.PX_4 };
+obj[4] = { tintColor: require("Themes").colors.TEXT_BRAND };
+let closure_8 = createCacheKey.createStyles(obj);
+let obj4 = { container: null, groupHeader: null };
+let obj3 = { tintColor: require("Themes").colors.TEXT_BRAND };
+obj4[0] = { display: "flex", alignItems: "center", paddingHorizontal: require("Themes").space.PX_16, width: "100%" };
+const obj5 = { display: "flex", alignItems: "center", paddingHorizontal: require("Themes").space.PX_16, width: "100%" };
+obj4[1] = { marginBottom: require("Themes").space.PX_24 };
+let closure_10 = createCacheKey.createStyles(obj4);
+const obj6 = { marginBottom: require("Themes").space.PX_24 };
 const result = require("items").fileFinishedImporting("modules/parent_tools/native/FamilyCenterModalDataTooltip.tsx");
 
 export default function FamilyCenterModalDataTooltip() {
-  const memo = React.useMemo(() => (function getScreens() {
-    let obj = {};
-    obj = {
-      headerShown: true,
-      headerLeft: outer2_0(outer2_2[25]).getHeaderCloseButton(outer2_1(outer2_2[24]).pop),
-      headerTitle() {
-        return null;
-      },
-      render() {
-        return outer3_5(outer3_11, {});
-      }
+  const memo = React.useMemo(() => {
+    let obj = { DATA_TOOLTIP: null };
+    obj = { headerShown: true, headerLeft: null, headerTitle: null, render: null };
+    obj[1] = callback(5143).getHeaderCloseButton(callback2(4395).pop);
+    obj[2] = function headerTitle() {
+      return null;
     };
-    obj.DATA_TOOLTIP = obj;
+    obj[3] = function render() {
+      return callback(closure_11, {});
+    };
+    obj[0] = obj;
     return obj;
-  })(), []);
-  let obj = { initialRouteName: "DATA_TOOLTIP", screens: memo };
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj.headerBackTitle = intl.string(require(1212) /* getSystemLocale */.t["13/7kX"]);
-  return callback(require(11098) /* Modal */.Modal, obj);
+  }, []);
+  let obj = { initialRouteName: "DATA_TOOLTIP", screens: memo, headerBackTitle: null };
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj[2] = intl.string(require(1236) /* getSystemLocale */.t["13/7kX"]);
+  return callback(require(11122) /* Modal */.Modal, obj);
 };

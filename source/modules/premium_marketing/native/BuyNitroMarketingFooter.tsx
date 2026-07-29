@@ -1,29 +1,26 @@
-// Module ID: 12416
-// Function ID: 96359
+// Module ID: 12438
+// Function ID: 12439
 // Name: BuyNitroMarketingFooter
-// Dependencies: [31, 27, 33, 4165, 689, 5251, 6639, 5517, 2]
+// Dependencies: [19, 17, 21, 4189, 712, 5273, 6660, 5535, 2]
 // Exports: default
 
-// Module 12416 (BuyNitroMarketingFooter)
-import result from "result";
+// Module 12438 (BuyNitroMarketingFooter)
+import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
 let Platform;
-let closure_4;
+let c4;
 const require = arg1;
-({ Platform, View: closure_4 } = get_ActivityIndicator);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16, paddingTop: require("_createForOfIteratorHelperLoose").space.PX_12 };
-const PX_24 = require("_createForOfIteratorHelperLoose").space.PX_24;
-_createForOfIteratorHelperLoose.paddingBottom = null;
-_createForOfIteratorHelperLoose.backgroundColor = require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWER;
-_createForOfIteratorHelperLoose.borderTopColor = require("_createForOfIteratorHelperLoose").colors.BORDER_SUBTLE;
-_createForOfIteratorHelperLoose.borderTopWidth = 1;
-_createForOfIteratorHelperLoose["paddingBottom"] = 0;
-_createForOfIteratorHelperLoose.footer = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+({ Platform, View: c4 } = get_ActivityIndicator);
+createCacheKey = { footer: null };
+createCacheKey = { paddingHorizontal: require("Themes").space.PX_16, paddingTop: require("Themes").space.PX_12, paddingBottom: 0, backgroundColor: null, borderTopColor: null, borderTopWidth: 1 };
+const PX_24 = require("Themes").space.PX_24;
+createCacheKey[3] = require("Themes").colors.BACKGROUND_BASE_LOWER;
+createCacheKey[4] = require("Themes").colors.BORDER_SUBTLE;
+createCacheKey[0] = createCacheKey;
+createCacheKey = createCacheKey.createStyles(createCacheKey);
 const result = require("jsxProd").fileFinishedImporting("modules/premium_marketing/native/BuyNitroMarketingFooter.tsx");
 
 export default function BuyNitroMarketingFooter(arg0) {
@@ -33,20 +30,19 @@ export default function BuyNitroMarketingFooter(arg0) {
   let planSelection;
   ({ planSelection, applicationId, onPaymentSuccess, onPaymentDismiss } = arg0);
   const memo = React.useMemo(() => {
-    const Gesture = outer1_0(outer1_2[5]).Gesture;
-    const items = [-8, 8];
-    return Gesture.Pan().activeOffsetY(items);
+    const Gesture = callback(table[5]).Gesture;
+    return Gesture.Pan().activeOffsetY([-8, 8]);
   }, []);
-  let obj = { gesture: memo };
-  obj = { style: _createForOfIteratorHelperLoose().footer, collapsable: false };
-  obj = {};
-  const tmp = _createForOfIteratorHelperLoose();
-  obj.location = importDefault(5517).PREMIUM_MARKETING_FOOTER;
-  obj.planSelection = planSelection;
-  obj.applicationId = applicationId;
-  obj.onPaymentSuccess = onPaymentSuccess;
-  obj.onPaymentDismiss = onPaymentDismiss;
-  obj.children = jsx(importDefault(6639), {});
-  obj.children = <closure_4 />;
-  return jsx(require(5251) /* Directions */.GestureDetector, {});
+  let obj = { gesture: memo, children: null };
+  obj = { style: createCacheKey().footer, collapsable: false, children: null };
+  obj = { location: null, planSelection: null, applicationId: null, onPaymentSuccess: null, onPaymentDismiss: null };
+  const tmp = createCacheKey();
+  obj[0] = importDefault(5535).PREMIUM_MARKETING_FOOTER;
+  obj[1] = planSelection;
+  obj[2] = applicationId;
+  obj[3] = onPaymentSuccess;
+  obj[4] = onPaymentDismiss;
+  obj[2] = jsx(importDefault(6660), { location: null, planSelection: null, applicationId: null, onPaymentSuccess: null, onPaymentDismiss: null });
+  obj[1] = <closure_4 location={null} planSelection={null} applicationId={null} onPaymentSuccess={null} onPaymentDismiss={null} />;
+  return jsx(require(5273) /* Directions */.GestureDetector, { location: null, planSelection: null, applicationId: null, onPaymentSuccess: null, onPaymentDismiss: null });
 };

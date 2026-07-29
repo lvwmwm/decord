@@ -1,16 +1,18 @@
-// Module ID: 1453
-// Function ID: 16969
+// Module ID: 1477
+// Function ID: 1478
 // Name: context
-// Dependencies: [31, 3, 2]
+// Dependencies: [19, 3, 2]
 // Exports: useAppEntryKey
 
-// Module 1453 (context)
-import importAllResult from "result";
-import importDefaultResult from "timestamp";
+// Module 1477 (context)
+import importAllResult from "noop";
 
-importDefaultResult = new importDefaultResult("AppEntryKeyContext");
+let c0 = importAllResult;
+let closure_1 = new require("timestamp")("AppEntryKeyContext");
+const main = "main";
 let context = importAllResult.createContext(undefined);
-let c3 = false;
+let c4 = false;
+const tmp2 = new require("timestamp")("AppEntryKeyContext");
 const result = require("set").fileFinishedImporting("modules/window/native/AppEntryKeyContext.tsx");
 
 export const DEFAULT_APP_ENTRY_KEY = "main";
@@ -20,13 +22,12 @@ export const useAppEntryKey = function useAppEntryKey() {
   const items = [context];
   const effect = context.useEffect(() => {
     if (!tmp) {
-      const outer1_3 = true;
+      const outer1_4 = true;
       outer1_1.warn("AppEntryKey context was not provided; falling back to default entry key \"main\".");
     }
   }, items);
-  let str = "main";
-  if (null != context) {
-    str = context;
+  if (context == null) {
+    context = main;
   }
-  return str;
+  return context;
 };

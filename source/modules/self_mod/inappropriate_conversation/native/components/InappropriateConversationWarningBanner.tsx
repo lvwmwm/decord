@@ -1,12 +1,12 @@
-// Module ID: 10430
-// Function ID: 80298
+// Module ID: 10454
+// Function ID: 10455
 // Name: InappropriateConversationWarningBanner
-// Dependencies: [31, 3802, 9075, 33, 10135, 566, 10136, 4506, 10148, 1935, 10137, 10415, 1212, 2]
+// Dependencies: [19, 3826, 9099, 21, 10156, 589, 10157, 4529, 10169, 1959, 10158, 10439, 1236, 2]
 
-// Module 10430 (InappropriateConversationWarningBanner)
-import result from "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import { SafetyWarningTypes } from "_isNativeReflectConstruct";
+// Module 10454 (InappropriateConversationWarningBanner)
+import noop from "noop";
+import upsertRelationship from "upsertRelationship";
+import { SafetyWarningTypes } from "handleConnectionOpen";
 import { jsx } from "jsxProd";
 
 const require = arg1;
@@ -15,11 +15,13 @@ class InappropriateConversationWarningBanner {
     channelId = global.channelId;
     warningId = global.warningId;
     senderId = global.senderId;
+    c3 = undefined;
+    c4 = undefined;
     items = [, , ];
     items[0] = channelId;
     items[1] = warningId;
     items[2] = senderId;
-    effect = result.useEffect(() => {
+    effect = c3.useEffect(() => {
       let obj = channelId(senderId[4]);
       obj = { channelId, warningId, senderId, warningType: outer1_5.INAPPROPRIATE_CONVERSATION_TIER_2, viewName: channelId(senderId[4]).ViewNameTypes.SAFETY_WARNING_BANNER };
       obj.trackNamedViewEvent(obj);
@@ -28,12 +30,14 @@ class InappropriateConversationWarningBanner {
     items1[0] = channelId;
     items1[1] = warningId;
     items1[2] = senderId;
-    callback = result.useCallback((cta) => {
+    callback = c3.useCallback((cta) => {
       let obj = channelId(senderId[4]);
       obj = { channelId, warningId, senderId, warningType: outer1_5.INAPPROPRIATE_CONVERSATION_TIER_2, cta };
       obj.trackCtaEvent(obj);
     }, items1);
-    result = callback;
+    c3 = callback;
+    tmp3 = channelId;
+    tmp4 = senderId;
     obj = require("initialize");
     items2 = [];
     items2[0] = c4;
@@ -43,7 +47,7 @@ class InappropriateConversationWarningBanner {
     items4[0] = channelId;
     items4[1] = warningId;
     stateFromStores = obj.useStateFromStores(items2, () => callback1.isBlocked(senderId), items3);
-    callback1 = result.useCallback(() => {
+    callback1 = c3.useCallback(() => {
       const items = [warningId];
       const result = channelId(senderId[6]).dismissChannelSafetyWarnings(channelId, items);
     }, items4);
@@ -58,69 +62,64 @@ class InappropriateConversationWarningBanner {
     items6[1] = warningId;
     items6[2] = senderId;
     items6[3] = callback;
-    callback2 = result.useCallback(() => {
+    callback2 = c3.useCallback(() => {
       let obj = warningId(senderId[7]);
       obj = {
         importer() {
-          return channelId(senderId[9])(senderId[8], senderId.paths).then((arg0) => {
+          return outer1_0(outer1_2[9])(outer1_2[8], outer1_2.paths).then((arg0) => {
             let closure_0 = arg0.default;
             return (arg0) => {
               const obj = {};
               const merged = Object.assign(arg0);
-              obj["channelId"] = outer3_0;
-              obj["warningId"] = outer3_1;
-              obj["warningType"] = outer4_5.INAPPROPRIATE_CONVERSATION_TIER_2;
-              obj["senderId"] = outer3_2;
-              obj["analyticsBlockContext"] = channelId(senderId[4]).CtaEventTypes.USER_BANNER_BLOCK_CONFIRM;
-              obj["analyticsBlockAndReportContext"] = channelId(senderId[4]).CtaEventTypes.USER_BANNER_BLOCK_AND_REPORT_CONFIRM;
-              obj["analyticsCancelContext"] = channelId(senderId[4]).CtaEventTypes.USER_BANNER_BLOCK_CANCEL;
-              obj["onDismiss"] = outer3_4;
-              return outer4_6(closure_0, obj);
+              obj.channelId = closure_0;
+              obj.warningId = outer1_1;
+              obj.warningType = outer2_5.INAPPROPRIATE_CONVERSATION_TIER_2;
+              obj.senderId = outer1_2;
+              obj.analyticsBlockContext = outer2_0(outer2_2[4]).CtaEventTypes.USER_BANNER_BLOCK_CONFIRM;
+              obj.analyticsBlockAndReportContext = outer2_0(outer2_2[4]).CtaEventTypes.USER_BANNER_BLOCK_AND_REPORT_CONFIRM;
+              obj.analyticsCancelContext = outer2_0(outer2_2[4]).CtaEventTypes.USER_BANNER_BLOCK_CANCEL;
+              obj.onDismiss = outer1_4;
+              return outer2_6(closure_0, obj);
             };
           });
         }
       };
       obj.openLazy(obj);
     }, items5);
-    callback3 = result.useCallback(() => {
+    callback3 = c3.useCallback(() => {
       const result = channelId(senderId[10]).openSafetyToolsActionSheet(channelId, senderId, warningId, outer1_5.INAPPROPRIATE_CONVERSATION_TIER_2);
       callback(channelId(senderId[4]).CtaEventTypes.USER_BANNER_OPEN_SAFETY_TOOLS);
     }, items6);
-    tmp7 = jsx;
-    obj = { channelId, warningId, senderId, warningType: SafetyWarningTypes.INAPPROPRIATE_CONVERSATION_TIER_2 };
-    tmp8 = require("SafetyWarningBanner");
+    tmp9 = jsx;
+    obj = { channelId, warningId, senderId, warningType: SafetyWarningTypes.INAPPROPRIATE_CONVERSATION_TIER_2, header: null, description: null, onDismiss: null, buttons: null };
+    tmp10 = require("SafetyWarningBanner");
     intl = require("getSystemLocale").intl;
-    obj.header = intl.string(require("getSystemLocale").t.ZzlB5p);
+    obj[4] = intl.string(require("getSystemLocale").t.ZzlB5p);
     intl2 = require("getSystemLocale").intl;
-    obj.description = intl2.string(require("getSystemLocale").t["D1aU+h"]);
-    obj.onDismiss = callback1;
-    obj1 = {};
+    obj[5] = intl2.string(require("getSystemLocale").t["D1aU+h"]);
+    obj[6] = callback1;
+    obj1 = { text: null, variant: "primary", onpress: null };
     intl3 = require("getSystemLocale").intl;
-    obj1.text = intl3.string(require("getSystemLocale").t.Qyu4UK);
-    obj1.variant = "primary";
-    obj1.onpress = callback3;
+    obj1[0] = intl3.string(require("getSystemLocale").t.Qyu4UK);
+    obj1[2] = callback3;
     items7 = [];
     items7[0] = obj1;
     if (stateFromStores) {
       items8 = [];
     } else {
-      obj2 = {};
-      tmp9 = channelId;
-      tmp10 = senderId;
+      obj2 = { text: null, variant: "secondary", onpress: null };
       intl4 = require("getSystemLocale").intl;
-      obj2.text = intl4.string(require("getSystemLocale").t["7q0bNY"]);
-      str = "secondary";
-      obj2.variant = "secondary";
-      obj2.onpress = callback2;
+      obj2[0] = intl4.string(require("getSystemLocale").t["7q0bNY"]);
+      obj2[2] = callback2;
       items8 = [];
       items8[0] = obj2;
     }
     arraySpreadResult = HermesBuiltin.arraySpread(items8, 1);
-    obj.buttons = items7;
-    return tmp7(tmp8, obj);
+    obj[7] = items7;
+    return tmp9(tmp10, obj);
   }
 }
-let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/self_mod/inappropriate_conversation/native/components/InappropriateConversationWarningBanner.tsx");
+let result = require("handleConnectionOpen").fileFinishedImporting("modules/self_mod/inappropriate_conversation/native/components/InappropriateConversationWarningBanner.tsx");
 
 export default InappropriateConversationWarningBanner;
 export { InappropriateConversationWarningBanner };

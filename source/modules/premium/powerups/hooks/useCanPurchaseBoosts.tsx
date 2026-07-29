@@ -1,23 +1,23 @@
-// Module ID: 11573
-// Function ID: 89983
+// Module ID: 11597
+// Function ID: 11598
 // Name: useCanPurchaseBoosts
-// Dependencies: [1850, 1852, 5830, 566, 2]
+// Dependencies: [1874, 1876, 5848, 589, 2]
 // Exports: default
 
-// Module 11573 (useCanPurchaseBoosts)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 11597 (useCanPurchaseBoosts)
+import mergeGuildAvatar from "mergeGuildAvatar";
 import { FractionalPremiumStates } from "GuildFeatures";
 
 const require = arg1;
 const result = require("calculateFractionalPremiumInfo").fileFinishedImporting("modules/premium/powerups/hooks/useCanPurchaseBoosts.tsx");
 
 export default function useCanPurchaseBoosts() {
-  const items = [_isNativeReflectConstruct];
-  const obj = require(566) /* initialize */;
-  return importDefault(5830)().fractionalState === FractionalPremiumStates.NONE && !require(566) /* initialize */.useStateFromStores(items, () => {
-    const currentUser = outer1_3.getCurrentUser();
+  const items = [mergeGuildAvatar];
+  const obj = require(589) /* initialize */;
+  return importDefault(5848)().fractionalState === FractionalPremiumStates.NONE && !require(589) /* initialize */.useStateFromStores(items, () => {
+    currentUser = currentUser.getCurrentUser();
     let isPremiumGroupMemberResult;
-    if (null != currentUser) {
+    if (currentUser != null) {
       isPremiumGroupMemberResult = currentUser.isPremiumGroupMember();
     }
     return true === isPremiumGroupMemberResult;

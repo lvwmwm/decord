@@ -1,26 +1,48 @@
-// Module ID: 12709
-// Function ID: 98178
-// Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 4845, 12710, 12711, 2]
+// Module ID: 12731
+// Function ID: 12732
+// Name: getInitialState
+// Dependencies: [4867, 12732, 12733, 2]
 
-// Module 12709 (_isNativeReflectConstruct)
-import rateLimit from "rateLimit";
-import StateManager from "StateManager";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import tmp2 from "StateManager";
+// Module 12731 (getInitialState)
+import filterPlayingActivities from "filterPlayingActivities";
+import "shouldCommit";
 
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
+class LocalPresenceStateManager extends tmp2 {
+  constructor(arg0) {
+    tmp3 = new LocalPresenceStateManager(false, tmp2, tmp, new.target, new.target);
+    // ThrowIfThisInitialized (0x7c)
+    tmp3.switchingAccounts = false;
+    emitPresenceUpdate = tmp3.emitPresenceUpdate;
+    tmp4 = require("rateLimit");
+    tmp3.didCommit = require("module_5");
+    tmp3.socket = global;
+    return tmp3;
   }
-  const result = _isNativeReflectConstruct();
 }
-let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/gateway/LocalPresenceStateManager.tsx");
+const prototype = LocalPresenceStateManager.prototype;
+prototype["getInitialState"] = function getInitialState() {
+  return store.getLocalPresence();
+};
+prototype["getNextState"] = function getNextState() {
+  return store.getLocalPresence();
+};
+prototype["shouldCommit"] = function shouldCommit() {
+  const socket = this.socket;
+  return socket.isSessionEstablished();
+};
+prototype["emitPresenceUpdate"] = function emitPresenceUpdate(state) {
+  const socket = this.socket;
+  socket.presenceUpdate(state.status, state.since, state.activities, state.afk);
+};
+prototype["handleConnectionOpen"] = function handleConnectionOpen() {
+  this.update({}, !this.switchingAccounts);
+  this.switchingAccounts = false;
+};
+prototype["handleAccountSwitch"] = function handleAccountSwitch() {
+  this.switchingAccounts = true;
+  this.reset();
+  this.emitPresenceUpdate(this.getState());
+};
+const result = require("rateLimit").fileFinishedImporting("modules/gateway/LocalPresenceStateManager.tsx");
 
-export default tmp2;
+export default LocalPresenceStateManager;

@@ -1,31 +1,231 @@
-// Module ID: 14845
-// Function ID: 113090
+// Module ID: 14871
+// Function ID: 14872
 // Name: _scorePassword
-// Dependencies: [5, 14846, 1194, 653, 1197, 3747, 675, 4977, 480, 4065, 9446, 686, 14847, 14848, 2]
+// Dependencies: [5, 14872, 1218, 676, 1221, 3771, 698, 4999, 503, 4089, 9470, 709, 14873, 14874, 2]
 // Exports: default, registerPhone, scorePassword
 
-// Module 14845 (_scorePassword)
+// Module 14871 (_scorePassword)
 import closure_4 from "t";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_5 from "_isNativeReflectConstruct";
+import initialize from "initialize";
+import fetchFingerprint from "fetchFingerprint";
 import ME from "ME";
 import result from "result";
 
-let closure_10;
+let c10;
+let c9;
 let closure_6;
-let closure_7;
-let closure_8;
-let closure_9;
+let error;
+let metroImportAll;
 const require = arg1;
 function _scorePassword() {
-  // CreateGeneratorClosureLongIndex (0x67)
-  const obj = callback(tmp);
-  return obj(...arguments);
+  const self = this;
+  const tmp = callback((arg0) => {
+    let closure_0 = arg0;
+    let c5 = 0;
+    let c6 = 0;
+    let c4 = 0;
+    return (function*(arg0, body) {
+      if (c6 === 2) {
+        c6 = 3;
+        HermesBuiltin.throwTypeError();
+      } else if (tmp6 === 3) {
+        if (arg0 === 1) {
+          throw body;
+        } else if (arg0 === 2) {
+          let obj = { value: null, done: true };
+          obj[0] = body;
+          return obj;
+        } else {
+          return { value: "HermesInternal", done: null };
+        }
+      } else {
+        try {
+          c6 = 2;
+          if (0 === c5) {
+            if (arg0 === 1) {
+              c6 = 3;
+              throw body;
+            } else if (arg0 === 2) {
+              c6 = 3;
+              obj = { value: null, done: true };
+              obj[0] = body;
+              return obj;
+            } else {
+              let closure_2 = tmp3;
+              const callback2 = tmp7;
+              let c4 = 1;
+              let obj5 = outer1_1(outer1_3[7]);
+              const obj1 = { url: null, body: null, trackedActionData: null, rejectWithError: false };
+              obj1[0] = outer1_8.SCORE_PASSWORD;
+              const obj2 = { password: null };
+              obj2[0] = callback;
+              obj1[1] = obj2;
+              const obj3 = { event: null };
+              obj3[0] = callback(outer1_3[8]).NetworkActionNames.PASSWORD_VALIDATE;
+              obj1[2] = obj3;
+              c5 = 2;
+              c6 = 1;
+              const obj4 = { value: null, done: false };
+              obj4[0] = obj5.post(obj1);
+              return obj4;
+            }
+          } else if (1 === tmp7) {
+            c4 = 0;
+            callback = table;
+            const tmp17 = new callback2(table[9])(callback);
+            throw tmp17;
+          } else if (arg0 === 1) {
+            c6 = 3;
+            throw body;
+          } else if (arg0 === 2) {
+            c4 = 0;
+            c6 = 3;
+            obj5 = { value: null, done: true };
+            obj5[0] = body;
+            return obj5;
+          } else {
+            c4 = 0;
+            c6 = 3;
+            obj = { value: null, done: true };
+            obj[0] = body.body;
+            return obj;
+          }
+        } catch (tmp19) {
+          table = tmp19;
+          if (tmp4 === c4) {
+            c6 = tmp2;
+            throw tmp19;
+          } else {
+            c5 = tmp;
+          }
+        }
+      }
+    })();
+  });
+  const _scorePassword = tmp;
+  const apply = tmp.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
 }
 function _registerPhone() {
-  // CreateGeneratorClosureLongIndex (0x67)
-  const obj = callback(tmp);
-  return obj(...arguments);
+  const self = this;
+  const tmp = callback((arg0) => {
+    let closure_0 = arg0;
+    let c5 = 0;
+    let c6 = 0;
+    let c4 = 0;
+    const iter = (function*(arg0) {
+      if (c6 === 2) {
+        c6 = 3;
+        HermesBuiltin.throwTypeError();
+      } else if (tmp7 === 3) {
+        if (arg0 === 1) {
+          throw arg1;
+        } else if (arg0 === 2) {
+          let obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
+        } else {
+          return { value: "HermesInternal", done: null };
+        }
+      } else {
+        try {
+          c6 = 2;
+          if (0 === c5) {
+            if (arg0 === 1) {
+              c6 = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              c6 = 3;
+              obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            } else {
+              let closure_2 = tmp3;
+              let callback = tmp5;
+              let phone;
+              phone = phone.phone;
+              c5 = 1;
+              c6 = 1;
+              return { value: "ct", done: null };
+            }
+          } else if (1 === tmp8) {
+            if (arg0 === 1) {
+              c6 = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              c6 = 3;
+              const obj1 = { value: null, done: true };
+              obj1[0] = arg1;
+              return obj1;
+            } else {
+              let c4 = 1;
+              let obj6 = callback(4999);
+              const obj2 = { url: null, body: null, trackedActionData: null, rejectWithError: false };
+              obj2[0] = constants.REGISTER_PHONE;
+              const obj3 = { phone: null };
+              obj3[0] = phone;
+              obj2[1] = obj3;
+              const obj4 = { event: null };
+              obj4[0] = phone(503).NetworkActionNames.USER_REGISTER_PHONE;
+              obj2[2] = obj4;
+              c5 = 3;
+              c6 = 1;
+              const obj5 = { value: null, done: false };
+              obj5[0] = obj6.post(obj2);
+              return obj5;
+            }
+          } else if (2 === tmp8) {
+            c4 = 0;
+            callback = dependencyMap;
+            if (callback instanceof phone(9470).CaptchaCancelError) {
+              throw callback;
+            } else {
+              const tmp23 = new callback(4089)(callback);
+              throw tmp23;
+            }
+          } else if (arg0 === 1) {
+            c6 = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            c4 = 0;
+            c6 = 3;
+            obj6 = { value: null, done: true };
+            obj6[0] = arg1;
+            return obj6;
+          } else {
+            c4 = 0;
+            c6 = 3;
+            obj = { value: null, done: true };
+            obj[0] = arg1;
+            return obj;
+          }
+        } catch (tmp27) {
+          dependencyMap = tmp27;
+          if (tmp4 === c4) {
+            c6 = tmp2;
+            throw tmp27;
+          } else {
+            c5 = tmp;
+          }
+        }
+      }
+    })();
+    iter.next();
+    return iter;
+  });
+  const _registerPhone = tmp;
+  const apply = tmp.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
 }
 function registerFull(giftCodeSKUId) {
   let birthday;
@@ -54,14 +254,16 @@ function registerFull(giftCodeSKUId) {
   if (prop === undefined) {
     prop = null;
   }
-  let obj = importDefault(686);
+  let obj = importDefault(709);
   obj.dispatch({ type: "REGISTER" });
   if (null != birthday) {
-    importDefault(14847)(birthday, constants2.REGISTER);
-    obj = { source: constants5.REGISTER, action: constants4.AGE_GATE_SUBMITTED };
-    importDefault(675).track(constants.AGE_GATE_ACTION, obj);
-    const obj9 = importDefault(675);
-    const diffResult = importDefault(3747)().diff(birthday, "years");
+    tmp4(14873)(birthday, constants2.REGISTER);
+    let tmp4Result = tmp4(698);
+    obj = { source: null, action: null };
+    obj[0] = constants5.REGISTER;
+    obj[1] = constants4.AGE_GATE_SUBMITTED;
+    tmp4Result.track(constants.AGE_GATE_ACTION, obj);
+    const diffResult = tmp4(3771)().diff(birthday, "years");
     if (diffResult >= 13) {
       if (diffResult < 13) {
         let str3 = "23+";
@@ -75,72 +277,83 @@ function registerFull(giftCodeSKUId) {
       } else {
         str = "13-17";
       }
-      let obj1 = importDefault(675);
-      obj = { age_bucket: str };
-      obj1.track(constants.USER_AGE_SUBMITTED, obj);
+      tmp4Result = tmp4(698);
+      obj = { age_bucket: null };
+      obj[0] = str;
+      tmp4Result.track(tmp14.USER_AGE_SUBMITTED, obj);
     }
-    const obj11 = importDefault(3747)();
+    const obj11 = tmp4(3771)();
+    tmp14 = constants;
   }
-  let obj3 = importDefault(4977);
-  obj1 = { url: constants3.REGISTER };
-  let obj2 = { fingerprint: fingerprint.getFingerprint(), email, username, global_name: globalName, password, invite, consent, phone_token: phoneToken };
+  const obj1 = { url: constants3.REGISTER, body: null, trackedActionData: null, rejectWithError: false };
+  let obj2 = { fingerprint: fingerprint.getFingerprint(), email, username, global_name: globalName, password, invite, consent, phone_token: phoneToken, date_of_birth: null, gift_code_sku_id: null, guild_template_code: null, promotional_email_opt_in: null };
   let formatResult;
-  if (null != birthday) {
+  if (birthday != null) {
     formatResult = birthday.format("YYYY-MM-DD");
   }
-  obj2.date_of_birth = formatResult;
-  obj2.gift_code_sku_id = giftCodeSKUId;
-  obj2.guild_template_code = guildTemplateCode;
+  obj2[8] = formatResult;
+  obj2[9] = giftCodeSKUId;
+  obj2[10] = guildTemplateCode;
   let checked;
-  if (null != promoEmailConsent) {
+  if (promoEmailConsent != null) {
     checked = promoEmailConsent.checked;
   }
-  obj2.promotional_email_opt_in = checked;
-  obj1.body = obj2;
-  obj3 = { event: require(480) /* isThrottled */.NetworkActionNames.USER_REGISTER };
-  const obj4 = { invite_code: invite, used_username_suggestion: prop };
+  obj2[11] = checked;
+  obj1[1] = obj2;
+  let obj3 = { event: require(503) /* encodeProperties */.NetworkActionNames.USER_REGISTER, properties: null };
+  const obj4 = { invite_code: invite, used_username_suggestion: prop, promotional_email_opt_in: null, promotional_email_pre_checked: null, was_unique_username: true };
   let checked1;
-  if (null != promoEmailConsent) {
+  if (promoEmailConsent != null) {
     checked1 = promoEmailConsent.checked;
   }
-  obj4.promotional_email_opt_in = checked1;
+  obj4[2] = checked1;
   let preChecked;
-  if (null != promoEmailConsent) {
+  if (promoEmailConsent != null) {
     preChecked = promoEmailConsent.preChecked;
   }
-  obj4.promotional_email_pre_checked = preChecked;
-  obj4.was_unique_username = true;
-  obj3.properties = obj4;
-  obj1.trackedActionData = obj3;
-  obj1.rejectWithError = false;
-  return obj3.post(obj1).then((body) => {
-    let obj = outer1_1(outer1_3[11]);
+  obj4[3] = preChecked;
+  obj3[1] = obj4;
+  obj1[2] = obj3;
+  const tmp4Result1 = importDefault(4999);
+  return importDefault(4999).post(obj1).then((body) => {
+    let obj = callback2(709);
     obj = { type: "REGISTER_SUCCESS", token: body.body.token };
     obj.dispatch(obj);
     obj = { type: "GUARDIAN_CONNECT_REQUIRED", shouldShowGuardianConnect: true === body.body.show_guardian_connect };
-    outer1_1(outer1_3[11]).dispatch(obj);
-    const obj3 = outer1_1(outer1_3[11]);
-    outer1_1(outer1_3[6]).track(outer1_6.AGE_GATE_ACTION, { source: outer1_10.REGISTER, action: outer1_9.AGE_GATE_SUCCESS });
+    callback2(709).dispatch(obj);
+    const obj3 = callback2(709);
+    callback2(698).track(constants.AGE_GATE_ACTION, { source: constants3.REGISTER, action: constants2.AGE_GATE_SUCCESS });
   }, (arg0) => {
-    if (arg0 instanceof outer1_0(outer1_3[10]).CaptchaCancelError) {
+    if (arg0 instanceof callback(9470).CaptchaCancelError) {
       throw arg0;
     } else {
-      let tmp3 = outer1_1(outer1_3[9]);
-      const prototype = tmp3.prototype;
-      tmp3 = new tmp3(arg0);
-      if (null != tmp3.getFieldErrors("date_of_birth")) {
-        const result = outer1_2(outer1_3[13]).preventUnderageRegistration(outer1_10.REGISTER);
-        const obj2 = outer1_2(outer1_3[13]);
+      let obj = new callback2(4089)(arg0);
+      if (null != obj.getFieldErrors("date_of_birth")) {
+        const result = callback3(14874).preventUnderageRegistration(constants3.REGISTER);
+        const obj2 = callback3(14874);
       }
-      const obj = { is_unique_username_registration: true, email_error_reason: tmp3.getFirstFieldErrorMessage("email"), phone_error_reason: tmp3.getFirstFieldErrorMessage("phone_token"), password_error_reason: tmp3.getFirstFieldErrorMessage("password"), username_error_reason: tmp3.getFirstFieldErrorMessage("username"), global_name_error_reason: tmp3.getFirstFieldErrorMessage("global_name"), date_of_birth_error_reason: tmp3.getFirstFieldErrorMessage("date_of_birth"), promotional_email_opt_in_error_reason: tmp3.getFirstFieldErrorMessage("promotional_email_opt_in"), fingerprint_error_reason: tmp3.getFirstFieldErrorMessage("fingerprint"), invite_error_reason: tmp3.getFirstFieldErrorMessage("invite"), gift_code_sku_id_error_reason: tmp3.getFirstFieldErrorMessage("gift_code_sku_id"), guild_template_code_error_reason: tmp3.getFirstFieldErrorMessage("guild_template_code"), consent_error_reason: tmp3.getFirstFieldErrorMessage("consent"), generic_error_reason: tmp3.getAnyErrorMessage() };
-      outer1_1(outer1_3[6]).track(outer1_6.REGISTER_SUBMIT_ERRORED, obj);
-      throw tmp3;
+      obj = { is_unique_username_registration: true, email_error_reason: null, phone_error_reason: null, password_error_reason: null, username_error_reason: null, global_name_error_reason: null, date_of_birth_error_reason: null, promotional_email_opt_in_error_reason: null, fingerprint_error_reason: null, invite_error_reason: null, gift_code_sku_id_error_reason: null, guild_template_code_error_reason: null, consent_error_reason: null, generic_error_reason: null };
+      obj[1] = obj.getFirstFieldErrorMessage("email");
+      obj[2] = obj.getFirstFieldErrorMessage("phone_token");
+      obj[3] = obj.getFirstFieldErrorMessage("password");
+      obj[4] = obj.getFirstFieldErrorMessage("username");
+      obj[5] = obj.getFirstFieldErrorMessage("global_name");
+      obj[6] = obj.getFirstFieldErrorMessage("date_of_birth");
+      obj[7] = obj.getFirstFieldErrorMessage("promotional_email_opt_in");
+      obj[8] = obj.getFirstFieldErrorMessage("fingerprint");
+      obj[9] = obj.getFirstFieldErrorMessage("invite");
+      obj[10] = obj.getFirstFieldErrorMessage("gift_code_sku_id");
+      obj[11] = obj.getFirstFieldErrorMessage("guild_template_code");
+      obj[12] = obj.getFirstFieldErrorMessage("consent");
+      obj[13] = obj.getAnyErrorMessage();
+      callback2(698).track(constants.REGISTER_SUBMIT_ERRORED, obj);
+      throw obj;
     }
   });
 }
-({ AnalyticEvents: closure_6, AnalyticsSections: closure_7, Endpoints: closure_8 } = ME);
-({ AgeGateAnalyticAction: closure_9, AgeGateSource: closure_10 } = result);
-result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/auth/register.tsx");
+({ AnalyticEvents: closure_6, AnalyticsSections: error, Endpoints: metroImportAll } = ME);
+({ AgeGateAnalyticAction: c9, AgeGateSource: c10 } = result);
+result = require("fetchFingerprint").fileFinishedImporting("modules/auth/register.tsx");
 
 export default function register(invite) {
   invite = invite.invite;
@@ -151,19 +364,30 @@ export default function register(invite) {
   if (giftCodeSKUId === undefined) {
     giftCodeSKUId = null;
   }
-  let obj = Object.create(null);
-  obj.invite = 0;
-  obj.giftCodeSKUId = 0;
-  obj = {};
-  const merged = Object.assign(Object.assign(invite, obj));
-  obj["invite"] = invite;
-  obj["giftCodeSKUId"] = giftCodeSKUId;
+  const obj = {};
+  const merged = Object.assign(Object.assign(invite, Object.create(null)));
+  obj.invite = invite;
+  obj.giftCodeSKUId = giftCodeSKUId;
   return registerFull(obj);
 };
-export const scorePassword = function scorePassword(arg0) {
-  return _scorePassword(...arguments);
+export const scorePassword = function scorePassword(arr) {
+  const self = this;
+  const apply = _scorePassword.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
 };
 export const registerPhone = function registerPhone(arg0) {
-  return _registerPhone(...arguments);
+  const self = this;
+  const apply = _registerPhone.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
 };
 export { registerFull };

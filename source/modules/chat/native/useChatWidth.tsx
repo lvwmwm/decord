@@ -1,45 +1,46 @@
-// Module ID: 10865
-// Function ID: 84079
+// Module ID: 10889
+// Function ID: 10890
 // Name: useChatWidth
-// Dependencies: [31, 4019, 4021, 10866, 10867, 2]
+// Dependencies: [19, 4043, 4045, 10890, 10891, 2]
 // Exports: default, getChatWidth
 
-// Module 10865 (useChatWidth)
-import result from "result";
+// Module 10889 (useChatWidth)
+import noop from "noop";
 
 const require = arg1;
 const result = require("useBaseAppContainerDimensions").fileFinishedImporting("modules/chat/native/useChatWidth.tsx");
 
 export default function useChatWidth(arg0) {
-  let context = React.useContext(importDefault(10867));
-  const width = importDefault(4021)().width;
-  require(10866) /* computeTabletDrawerWidth */;
+  let context = React.useContext(importDefault(10891));
+  const width = importDefault(4045)().width;
+  require(10890) /* sum */;
   if (null == context) {
     if (null == arg0) {
       let diff = width;
-      if (importDefault(4019)().isChatLockedOpen) {
+      if (importDefault(4043)().isChatLockedOpen) {
         diff = width - tmp3;
       }
-      let tmp4 = diff;
+      let tmp5 = diff;
     } else {
-      tmp4 = width;
+      tmp5 = width;
     }
-    context = tmp4;
+    context = tmp5;
   }
   return context;
 };
 export const getChatWidth = function getChatWidth(arg0) {
-  const obj = require(4019) /* useChatLayout */;
-  const width = require(4021) /* useBaseAppContainerDimensions */.getBaseAppContainerDimensions().width;
+  const obj = require(4043) /* useChatLayout */;
+  const tmp = require;
+  const width = require(4045) /* useBaseAppContainerDimensions */.getBaseAppContainerDimensions().width;
   if (null == arg0) {
     let diff = width;
     if (obj.getChatLayout().isChatLockedOpen) {
-      diff = width - require(10866) /* computeTabletDrawerWidth */.getDrawerWidth();
-      const obj3 = require(10866) /* computeTabletDrawerWidth */;
+      diff = width - tmp(10890).getDrawerWidth();
+      const tmpResult = tmp(10890);
     }
-    let tmp = diff;
+    let tmp3 = diff;
   } else {
-    tmp = width;
+    tmp3 = width;
   }
-  return tmp;
+  return tmp3;
 };

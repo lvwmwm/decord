@@ -1,28 +1,28 @@
-// Module ID: 7771
-// Function ID: 61764
+// Module ID: 7794
+// Function ID: 7795
 // Name: createThreadStarterSystemMessage
-// Dependencies: [5839, 653, 44, 1212, 7723, 2]
+// Dependencies: [5857, 676, 38, 1236, 7746, 2]
 // Exports: createThreadStarterSystemMessage
 
-// Module 7771 (createThreadStarterSystemMessage)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import { ReferencedMessageState } from "_isNativeReflectConstruct";
+// Module 7794 (createThreadStarterSystemMessage)
+import processMessage from "processMessage";
+import { ReferencedMessageState } from "processMessage";
 import { MessageTypes } from "ME";
 
 const require = arg1;
-const result = require("invariant").fileFinishedImporting("modules/messages/native/renderer/system_messages/ThreadStarterSystemMessage.tsx");
+const result = require("module_38").fileFinishedImporting("modules/messages/native/renderer/system_messages/ThreadStarterSystemMessage.tsx");
 
 export const createThreadStarterSystemMessage = function createThreadStarterSystemMessage(message) {
   message = message.message;
   const type = message.type;
-  importDefault(44)(type === MessageTypes.THREAD_STARTER_MESSAGE, "cannot call createThreadStarterSystemMessage on a message of type " + type);
-  let tmp3 = null;
+  importDefault(38)(type === MessageTypes.THREAD_STARTER_MESSAGE, "cannot call createThreadStarterSystemMessage on a message of type " + type);
+  let tmp5 = null;
   if (messageByReference.getMessageByReference(message.messageReference).state !== ReferencedMessageState.LOADED) {
-    const obj = {};
-    const intl = require(1212) /* getSystemLocale */.intl;
-    obj.content = intl.string(require(1212) /* getSystemLocale */.t.OCs36J);
-    const merged = Object.assign(importDefault(7723)(message));
-    tmp3 = obj;
+    const obj = { content: null };
+    const intl = require(1236) /* getSystemLocale */.intl;
+    obj[0] = intl.string(require(1236) /* getSystemLocale */.t.OCs36J);
+    const merged = Object.assign(importDefault(7746)(message));
+    tmp5 = obj;
   }
-  return tmp3;
+  return tmp5;
 };

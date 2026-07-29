@@ -1,23 +1,20 @@
-// Module ID: 10395
-// Function ID: 80102
+// Module ID: 10419
+// Function ID: 10420
 // Name: apexExperiment
-// Dependencies: [1428, 477, 2]
+// Dependencies: [1452, 500, 2]
 // Exports: isAnimatedAndroidKeyboard
 
-// Module 10395 (apexExperiment)
+// Module 10419 (apexExperiment)
 import ApexExperiment from "ApexExperiment";
 
-const obj = { name: "2025-08-animated-keyboard-android", kind: "user", defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } };
-const apexExperiment = ApexExperiment.createApexExperiment(obj);
+let obj = { 1: null };
+obj[1] = { enabled: true };
+const apexExperiment = ApexExperiment.createApexExperiment({ name: "2025-08-animated-keyboard-android", kind: "user", defaultConfig: { enabled: false }, variations: obj });
 const enabled = apexExperiment.getConfig({ location: "isAnimatedKeyboardEnabled" }).enabled;
 const result = require("set").fileFinishedImporting("modules/keyboard/native/AnimatedKeyboardExperiment.tsx");
 
 export const AnimatedKeyboardExperiment = apexExperiment;
 export const isAnimatedAndroidKeyboard = function isAnimatedAndroidKeyboard() {
-  const tmp = !require(477) /* set */.isAndroid();
-  let tmp2 = !tmp;
-  if (!tmp) {
-    tmp2 = enabled;
-  }
-  return tmp2;
+  const obj = require(500) /* set */;
+  return require(500) /* set */.isAndroid() && enabled;
 };

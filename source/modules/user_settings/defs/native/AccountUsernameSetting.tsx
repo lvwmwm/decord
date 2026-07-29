@@ -1,48 +1,49 @@
-// Module ID: 13767
-// Function ID: 105531
+// Module ID: 13788
+// Function ID: 13789
 // Name: route
-// Dependencies: [31, 1850, 7733, 653, 33, 566, 4004, 11038, 4161, 10099, 1212, 13768, 2]
+// Dependencies: [19, 1874, 7756, 676, 21, 589, 4028, 11062, 4185, 10120, 1236, 13789, 2]
 
-// Module 13767 (route)
-import "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 13788 (route)
+import "noop";
+import mergeGuildAvatar from "mergeGuildAvatar";
 import { jsx } from "jsxProd";
 import createToggle from "createToggle";
 
 const require = arg1;
 createToggle = {
   useTitle() {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(require(1212) /* getSystemLocale */.t.IEpCBQ);
+    const intl = require(1236) /* getSystemLocale */.intl;
+    return intl.string(require(1236) /* getSystemLocale */.t.IEpCBQ);
   },
   parent: require("MobileSetting").MobileSetting.ACCOUNT,
   useTrailing: function useAccountUsernameSettingTrailing() {
-    const items = [_isNativeReflectConstruct];
-    return require(566) /* initialize */.useStateFromStores(items, () => outer1_1(outer1_2[6]).getUserTag(outer1_3.getCurrentUser(), { decoration: "never" }));
+    const items = [mergeGuildAvatar];
+    return require(589) /* initialize */.useStateFromStores(items, () => callback(table[6]).getUserTag(currentUser.getCurrentUser(), { decoration: "never" }));
   },
   useDescription: function useAccountUsernameSettingDescription() {
-    let obj = require(11038) /* useCurrentUserHasAutomodQuarantinedProfile */;
+    let obj = require(11062) /* useCurrentUserHasAutomodQuarantinedProfile */;
     const guildAutomodProfileQuarantineErrors = obj.useGuildAutomodProfileQuarantineErrors();
     let first;
-    if (null != guildAutomodProfileQuarantineErrors) {
+    if (guildAutomodProfileQuarantineErrors != null) {
       const nick = guildAutomodProfileQuarantineErrors.nick;
-      if (null != nick) {
+      if (nick != null) {
         first = nick[0];
       }
     }
-    let tmp3 = null;
+    let tmp5 = null;
     if (null != first) {
-      obj = { variant: "text-xs/medium", color: "text-feedback-warning", children: first };
-      tmp3 = jsx(require(4161) /* Text */.Text, { variant: "text-xs/medium", color: "text-feedback-warning", children: first });
+      obj = { variant: "text-xs/medium", color: "text-feedback-warning", children: null };
+      obj[2] = first;
+      tmp5 = jsx(require(4185) /* Text */.Text, { variant: "text-xs/medium", color: "text-feedback-warning", children: null });
     }
-    return tmp3;
+    return tmp5;
   },
   screen: createToggle
 };
 createToggle = {
   route: require("ME").UserSettingsSections.ACCOUNT_CHANGE_USERNAME,
   getComponent() {
-    return require(13768) /* UsernameStatusMessage */.default;
+    return require(13789) /* UsernameStatusMessage */.default;
   }
 };
 createToggle = createToggle.createRoute(createToggle);

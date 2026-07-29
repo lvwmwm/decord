@@ -1,14 +1,15 @@
-// Module ID: 10197
-// Function ID: 78711
+// Module ID: 10218
+// Function ID: 10219
 // Name: useFavoritesGuildConfig
-// Dependencies: [1428, 2]
+// Dependencies: [1452, 2]
 // Exports: getFavoritesGuildConfig, useFavoritesGuildConfig
 
-// Module 10197 (useFavoritesGuildConfig)
+// Module 10218 (useFavoritesGuildConfig)
 import ApexExperiment from "ApexExperiment";
 
-const obj = { name: "2026-01-favorites-server", kind: "user", defaultConfig: { enabled: false, hasHigherPrivileges: false }, variations: { [1]: { enabled: true, hasHigherPrivileges: true }, [2]: { enabled: true, hasHigherPrivileges: false }, [3]: { enabled: true, hasHigherPrivileges: true, isFreemium: true } } };
-let closure_0 = ApexExperiment.createApexExperiment(obj);
+const obj = { 1: null, 2: { enabled: true, hasHigherPrivileges: true }, 3: { enabled: true, hasHigherPrivileges: false } };
+obj[3] = { enabled: true, hasHigherPrivileges: true, isFreemium: true };
+let closure_0 = ApexExperiment.createApexExperiment({ name: "2026-01-favorites-server", kind: "user", defaultConfig: { enabled: false, hasHigherPrivileges: false }, variations: obj });
 const result = require("set").fileFinishedImporting("modules/favorites/FavoritesGuildExperiment.tsx");
 
 export const useFavoritesGuildConfig = function useFavoritesGuildConfig(location) {

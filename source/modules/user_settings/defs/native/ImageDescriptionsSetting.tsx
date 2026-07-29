@@ -1,27 +1,27 @@
-// Module ID: 14400
-// Function ID: 110143
+// Module ID: 14422
+// Function ID: 14423
 // Name: onImageDescriptionSettingValueChange
-// Dependencies: [1280, 7733, 3838, 14401, 10099, 1212, 2]
+// Dependencies: [1304, 7756, 3862, 14423, 10120, 1236, 2]
 // Exports: onImageDescriptionSettingValueChange
 
-// Module 14400 (onImageDescriptionSettingValueChange)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 14422 (onImageDescriptionSettingValueChange)
+import CHANNEL_SIDEBAR_WIDTH from "CHANNEL_SIDEBAR_WIDTH";
 import createToggle from "createToggle";
 
 const require = arg1;
 function onImageDescriptionSettingValueChange(viewImageDescriptions) {
-  let obj = require(14401) /* trackSettingsUpdated */;
-  obj = { videoUploadQuality: _isNativeReflectConstruct.videoUploadQuality, viewImageDescriptions, lowQualityImageMode: _isNativeReflectConstruct.lowQualityImageMode, dataSavingMode: _isNativeReflectConstruct.dataSavingMode };
+  let obj = require(14423) /* UserSettingsText */;
+  obj = { videoUploadQuality: CHANNEL_SIDEBAR_WIDTH.videoUploadQuality, viewImageDescriptions, lowQualityImageMode: CHANNEL_SIDEBAR_WIDTH.lowQualityImageMode, dataSavingMode: CHANNEL_SIDEBAR_WIDTH.dataSavingMode };
   obj.setImageDescriptions(obj);
 }
 createToggle = {
   useTitle() {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(require(1212) /* getSystemLocale */.t["w8j+yW"]);
+    const intl = require(1236) /* getSystemLocale */.intl;
+    return intl.string(require(1236) /* getSystemLocale */.t["w8j+yW"]);
   },
   parent: require("MobileSetting").MobileSetting.CHAT,
   useValue: function useImageDescriptionSettingValue() {
-    const ViewImageDescriptions = require(3838) /* explicitContentFromProto */.ViewImageDescriptions;
+    const ViewImageDescriptions = require(3862) /* explicitContentFromProto */.ViewImageDescriptions;
     return ViewImageDescriptions.useSetting();
   },
   onValueChange: onImageDescriptionSettingValueChange

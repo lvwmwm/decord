@@ -1,147 +1,26 @@
-// Module ID: 6054
-// Function ID: 53926
-// Name: _createForOfIteratorHelperLoose
-// Dependencies: [1348, 6055, 4384, 3793, 3802, 6122, 653, 491, 566, 5639, 664, 1833, 4395, 1212, 6057, 22, 4354, 2]
-// Exports: createPollServerDataFromCreateRequest, filterOutUUID, formatPollResultNotificationCenterText, generateEmptyPollAnswer, getPollAnswerVotesTooltipText, getPollReplyPreview, getPollResultsReplyPreview, getPollResultsReplyPreviewMobile, getTotalVotes, hasNonVoteReactions, isIncompleteAnswer, isPollCreationEmpty, useCanPostPollsInChannel
+// Module ID: 6072
+// Function ID: 6073
+// Name: getSampleOfVoterUsernamesForAnswer
+// Dependencies: [1372, 6073, 4407, 3817, 3826, 6140, 676, 514, 589, 5657, 687, 1857, 4418, 1236, 6074, 12, 4379, 2]
+// Exports: createPollExpiryTimestamp, createPollServerDataFromCreateRequest, filterOutUUID, formatPollResultNotificationCenterText, generateEmptyPollAnswer, generateLocalCreationAnswerId, getPollAnswerVotesTooltipText, getPollReplyPreview, getPollResultsReplyPreview, getPollResultsReplyPreviewMobile, getTotalVotes, hasNonVoteReactions, isAnswerFilled, isIncompleteAnswer, isPollCreationEmpty, useCanPostPollsInChannel
 
-// Module 6054 (_createForOfIteratorHelperLoose)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_4 from "_isNativeReflectConstruct";
-import closure_5 from "_isNativeReflectConstruct";
-import closure_6 from "_isNativeReflectConstruct";
-import closure_7 from "_isNativeReflectConstruct";
+// Module 6072 (getSampleOfVoterUsernamesForAnswer)
+import ensureGuildLoaded from "ensureGuildLoaded";
+import reactionKey from "reactionKey";
+import reinjectEphemerals from "reinjectEphemerals";
+import getUncachedChannelPermissions from "getUncachedChannelPermissions";
+import upsertRelationship from "upsertRelationship";
 import POLL_ATTACHMENT_FOLDER from "POLL_ATTACHMENT_FOLDER";
 import ME from "ME";
 
-let closure_10;
-let closure_11;
-let closure_8;
-let closure_9;
+let c10;
+let c9;
+let metroImportAll;
+let unpackModuleId;
 const require = arg1;
-function _createForOfIteratorHelperLoose(iterable) {
-  let closure_0 = iterable;
-  iterable = "undefined" !== typeof Symbol;
-  if (iterable) {
-    const _Symbol = Symbol;
-    iterable = iterable[Symbol.iterator];
-  }
-  if (!iterable) {
-    iterable = iterable[Symbol.iterator];
-  }
-  if (iterable) {
-    const iter = iterable.call(iterable);
-    const next = iter.next;
-    return next.bind(iter);
-  } else {
-    const _Array = Array;
-    let tmp = iterable;
-    if (!Array.isArray(iterable)) {
-      let tmp2;
-      if (iterable) {
-        if ("string" === typeof iterable) {
-          tmp2 = _arrayLikeToArray(iterable, undefined);
-        } else {
-          const toString = {}.toString;
-          const substr = toString.call(iterable).slice(8, -1);
-          let name = substr;
-          if (tmp3) {
-            name = iterable.constructor.name;
-          }
-          if ("Map" !== name) {
-            if ("Set" !== name) {
-              if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(iterable, undefined);
-              } else {
-                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
-              }
-            }
-            tmp2 = arr;
-          }
-          const _Array2 = Array;
-          arr = Array.from(iterable);
-          const callResult = toString.call(iterable);
-          tmp3 = "Object" === substr && iterable.constructor;
-        }
-      }
-      tmp = tmp2;
-      if (!tmp2) {
-        const _TypeError = TypeError;
-        const typeError = new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
-        throw typeError;
-      }
-    }
-    if (tmp) {
-      closure_0 = tmp;
-    }
-    let c1 = 0;
-    return () => {
-      if (closure_1 >= length.length) {
-        let obj = { done: true };
-      } else {
-        obj = { done: false };
-        closure_1 = tmp3 + 1;
-        obj.value = length[+closure_1];
-      }
-      return obj;
-    };
-  }
-}
-function _arrayLikeToArray(arg0, arg1) {
-  let length;
-  if (tmp) {
-    length = arg0.length;
-  }
-  const ArrayResult = Array(length);
-  for (let num = 0; num < length; num = num + 1) {
-    ArrayResult[num] = arg0[num];
-  }
-  return ArrayResult;
-}
-function generateLocalCreationAnswerId() {
-  return require(491) /* v1 */.v4();
-}
-function isAnswerFilled(text) {
-  let trimmed;
-  if (null != text.text) {
-    trimmed = str.trim();
-  }
-  let tmp2 = null != trimmed;
-  if (tmp2) {
-    tmp2 = trimmed.length > 0;
-  }
-  return tmp2;
-}
-function createPollExpiryTimestamp(duration) {
-  const timestamp = Date.now();
-  return new Date(timestamp + duration * importDefault(664).Millis.HOUR).toISOString();
-}
-function getPollResultsPollName(merged, closure_8) {
-  const first = merged.embeds[0];
-  let rawValue;
-  if (null != first) {
-    const fields = first.fields;
-    if (null != fields) {
-      const found = fields.find((rawName) => "poll_question_text" === rawName.rawName);
-      if (null != found) {
-        rawValue = found.rawValue;
-      }
-    }
-  }
-  let str = "";
-  if (null != rawValue) {
-    str = rawValue;
-  }
-  let truncateTextResult = str;
-  if (null != closure_8) {
-    truncateTextResult = require(1833) /* cssValueToNumber */.truncateText(str, closure_8);
-    const obj = require(1833) /* cssValueToNumber */;
-  }
-  return truncateTextResult;
-}
 function getSampleOfVoterUsernamesForAnswer(message, id) {
   const channelId = message.getChannelId();
-  const obj = { id, name: "", animated: false };
-  reactions = reactions.getReactions(channelId, message.id, obj, closure_9, channel(6057).ReactionTypes.VOTE);
+  reactions = reactions.getReactions(channelId, message.id, { id, name: "", animated: false }, closure_9, channel(6074).ReactionTypes.VOTE);
   channel = channel.getChannel(channelId);
   let guildId = null;
   if (null != channel) {
@@ -151,136 +30,156 @@ function getSampleOfVoterUsernamesForAnswer(message, id) {
     }
   }
   let items;
-  if (null != reactions) {
+  if (reactions != null) {
     items = reactions.values();
   }
-  if (null == items) {
+  if (items == null) {
     items = [];
   }
-  const tmp3 = guildId(22);
-  const tmp3Result = guildId(22)(Array.from(items));
-  const rejectResult = guildId(22)(Array.from(items)).reject((id) => outer1_7.isBlockedOrIgnored(id.id));
-  const takeResult = guildId(22)(Array.from(items)).reject((id) => outer1_7.isBlockedOrIgnored(id.id)).take(closure_9);
-  return guildId(22)(Array.from(items)).reject((id) => outer1_7.isBlockedOrIgnored(id.id)).take(closure_9).map((arg0) => {
+  const obj = { id, name: "", animated: false };
+  const tmp2 = closure_9;
+  const tmp5 = guildId(12);
+  const tmp5Result = guildId(12)(Array.from(items));
+  const rejectResult = guildId(12)(Array.from(items)).reject((id) => blockedOrIgnored.isBlockedOrIgnored(id.id));
+  const takeResult = guildId(12)(Array.from(items)).reject((id) => blockedOrIgnored.isBlockedOrIgnored(id.id)).take(tmp2);
+  return guildId(12)(Array.from(items)).reject((id) => blockedOrIgnored.isBlockedOrIgnored(id.id)).take(tmp2).map((arg0) => {
     let id;
-    if (null != channel) {
+    if (channel != null) {
       id = channel.id;
     }
     return guildId(outer1_2[16]).getName(guildId, id, arg0);
   }).value();
 }
 function formatVoterTooltipText(arr, arg1) {
-  let num = 0;
+  let first = arr;
   const bound = Math.max(0, arg1 - arr.length);
-  let num2 = 1;
   if (1 === arr.length) {
-    if (bound > num) {
-      const intl6 = require(1212) /* getSystemLocale */.intl;
-      let obj = {};
-      num = arr[num];
-      obj.a = num;
-      obj.n = bound;
-      let formatToPlainStringResult = intl6.formatToPlainString(require(1212) /* getSystemLocale */.t["SV/iZn"], obj);
+    if (bound > 0) {
+      const intl6 = require(1236) /* getSystemLocale */.intl;
+      let obj = { a: null, n: null };
+      first = first[0];
+      obj[0] = first;
+      obj[1] = bound;
+      let formatToPlainStringResult = intl6.formatToPlainString(require(1236) /* getSystemLocale */.t["SV/iZn"], obj);
     } else {
-      formatToPlainStringResult = arr[num];
+      formatToPlainStringResult = first[0];
+    }
+  } else if (2 === first.length) {
+    if (bound > 0) {
+      const intl5 = require(1236) /* getSystemLocale */.intl;
+      obj = { a: null, b: null, n: null };
+      [obj5[0], obj5[1]] = first;
+      obj[2] = bound;
+      let formatToPlainStringResult1 = intl5.formatToPlainString(require(1236) /* getSystemLocale */.t.YBnZK0, obj);
+    } else {
+      const intl4 = require(1236) /* getSystemLocale */.intl;
+      [obj4[0], obj4[1]] = first;
+      formatToPlainStringResult1 = intl4.formatToPlainString(require(1236) /* getSystemLocale */.t["O5+f5c"], { a: null, b: null });
+      const obj1 = { a: null, b: null };
+    }
+  } else if (3 === first.length) {
+    if (bound > 0) {
+      const intl3 = require(1236) /* getSystemLocale */.intl;
+      const obj2 = { a: null, b: null, c: null, n: null };
+      [obj3[0], obj3[1], obj3[2]] = first;
+      obj2[3] = bound;
+      let formatToPlainStringResult2 = intl3.formatToPlainString(require(1236) /* getSystemLocale */.t["ThXp+N"], obj2);
+    } else {
+      const intl2 = require(1236) /* getSystemLocale */.intl;
+      const obj3 = { a: null, b: null, c: null };
+      [obj2[0], obj2[1], obj2[2]] = first;
+      formatToPlainStringResult2 = intl2.formatToPlainString(require(1236) /* getSystemLocale */.t["0UzBM3"], obj3);
     }
   } else {
-    let num6 = 2;
-    if (2 === arr.length) {
-      if (bound > num) {
-        const intl5 = require(1212) /* getSystemLocale */.intl;
-        obj = { a: arr[num] };
-        num2 = arr[num2];
-        obj.b = num2;
-        obj.n = bound;
-        let formatToPlainStringResult1 = intl5.formatToPlainString(require(1212) /* getSystemLocale */.t.YBnZK0, obj);
-      } else {
-        const intl4 = require(1212) /* getSystemLocale */.intl;
-        const obj1 = { a: arr[num], b: arr[num2] };
-        formatToPlainStringResult1 = intl4.formatToPlainString(require(1212) /* getSystemLocale */.t["O5+f5c"], obj1);
-      }
-    } else if (3 === arr.length) {
-      if (bound > num) {
-        const intl3 = require(1212) /* getSystemLocale */.intl;
-        const obj2 = { a: arr[num], b: arr[num2] };
-        num6 = arr[num6];
-        obj2.c = num6;
-        obj2.n = bound;
-        let formatToPlainStringResult2 = intl3.formatToPlainString(require(1212) /* getSystemLocale */.t["ThXp+N"], obj2);
-      } else {
-        const intl2 = require(1212) /* getSystemLocale */.intl;
-        const obj3 = { a: arr[num], b: arr[num2], c: arr[num6] };
-        formatToPlainStringResult2 = intl2.formatToPlainString(require(1212) /* getSystemLocale */.t["0UzBM3"], obj3);
-      }
-    } else {
-      const intl = require(1212) /* getSystemLocale */.intl;
-      obj = { n: bound };
-      return intl.formatToPlainString(require(1212) /* getSystemLocale */.t.yVX6kE, obj);
-    }
+    const intl = require(1236) /* getSystemLocale */.intl;
+    obj = { n: null };
+    obj[0] = bound;
+    return intl.formatToPlainString(require(1236) /* getSystemLocale */.t.yVX6kE, obj);
   }
 }
-({ POLL_RESULT_MESSAGE_POLL_TITLE_MAX_VISIBLE_CHARS: closure_8, VOTES_TOOLTIP_MAX_USERS: closure_9 } = POLL_ATTACHMENT_FOLDER);
-({ ChannelTypesSets: closure_10, Permissions: closure_11 } = ME);
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/polls/PollsUtils.tsx");
+({ POLL_RESULT_MESSAGE_POLL_TITLE_MAX_VISIBLE_CHARS: metroImportAll, VOTES_TOOLTIP_MAX_USERS: c9 } = POLL_ATTACHMENT_FOLDER);
+({ ChannelTypesSets: c10, Permissions: unpackModuleId } = ME);
+const result = require("reinjectEphemerals").fileFinishedImporting("modules/polls/PollsUtils.tsx");
 
 export const generateEmptyPollAnswer = function generateEmptyPollAnswer() {
-  return { text: undefined, image: undefined, localCreationAnswerId: generateLocalCreationAnswerId() };
+  const obj = { text: "Array", image: "ct", localCreationAnswerId: null };
+  obj[2] = require(514) /* v1 */.v4();
+  return obj;
 };
-export { generateLocalCreationAnswerId };
+export const generateLocalCreationAnswerId = function generateLocalCreationAnswerId() {
+  return require(514) /* v1 */.v4();
+};
 export const filterOutUUID = function filterOutUUID(str) {
   return str.replace(/\b[a-f\d]{8}-(?:[a-f\d]{4}-){3}[a-f\d]{12}-\b/i, "");
 };
-export const hasNonVoteReactions = function hasNonVoteReactions(reactions) {
-  const tmp = _createForOfIteratorHelperLoose(reactions.reactions);
-  let iter = tmp();
-  if (!iter.done) {
-    while (null != iter.value.me_vote) {
-      let iter2 = tmp();
-      iter = iter2;
+export const hasNonVoteReactions = function hasNonVoteReactions(message) {
+  const iter = message.reactions[Symbol.iterator]();
+  while (iter !== undefined) {
+    if (null == iter.next().me_vote) {
+      let tmp = iter;
+      iter.return();
+      let flag = true;
+      return true;
     }
-    return true;
   }
   return false;
 };
 export const useCanPostPollsInChannel = function useCanPostPollsInChannel(channel) {
   const _require = channel;
-  const items = [closure_6];
-  return _require(566).useStateFromStores(items, () => {
-    let tmp = null != _private;
+  const items = [getUncachedChannelPermissions];
+  return _require(589).useStateFromStores(items, () => {
+    let tmp = null != channel;
     if (tmp) {
-      tmp = _private.id !== _private(outer1_2[9]).FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID;
+      tmp = obj.id !== channel(outer1_2[9]).FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID;
     }
     if (tmp) {
       const POLLS = outer1_10.POLLS;
-      const tmp7 = !POLLS.has(_private.type);
-      let tmp8 = !tmp7;
-      if (!tmp7) {
-        const tmp10 = !_private.isPrivate();
-        let tmp11 = !tmp10;
-        if (tmp10) {
-          let canResult = outer1_6.can(outer1_11.SEND_MESSAGES, _private);
-          if (canResult) {
-            canResult = outer1_6.can(outer1_11.SEND_POLLS, _private);
-          }
-          tmp11 = canResult;
+      let hasItem = POLLS.has(obj.type);
+      if (hasItem) {
+        let isPrivateResult = obj.isPrivate();
+        if (!isPrivateResult) {
+          isPrivateResult = outer1_6.can(outer1_11.SEND_MESSAGES, obj) && outer1_6.can(outer1_11.SEND_POLLS, obj);
+          const obj2 = outer1_6;
+          const tmp7 = outer1_11;
+          const tmp8 = outer1_6.can(outer1_11.SEND_MESSAGES, obj) && outer1_6.can(outer1_11.SEND_POLLS, obj);
         }
-        tmp8 = tmp11;
+        hasItem = isPrivateResult;
       }
-      tmp = tmp8;
+      tmp = hasItem;
     }
     return tmp;
   });
 };
-export const isPollCreationEmpty = function isPollCreationEmpty(closure_4, answers) {
-  let tmp = 0 === closure_4.length;
+export const isPollCreationEmpty = function isPollCreationEmpty(c4, answers) {
+  let tmp = 0 === c4.length;
   if (tmp) {
-    tmp = null == answers.find((arg0) => outer1_15(arg0));
+    tmp = null == answers.find((text) => {
+      let trimmed;
+      if (text.text != null) {
+        trimmed = str.trim();
+      }
+      let tmp2 = null != trimmed;
+      if (tmp2) {
+        tmp2 = trimmed.length > 0;
+      }
+      return tmp2;
+    });
   }
   return tmp;
 };
-export { isAnswerFilled };
+export const isAnswerFilled = function isAnswerFilled(text) {
+  let trimmed;
+  if (text.text != null) {
+    trimmed = str.trim();
+  }
+  let tmp2 = null != trimmed;
+  if (tmp2) {
+    tmp2 = trimmed.length > 0;
+  }
+  return tmp2;
+};
 export const isIncompleteAnswer = function isIncompleteAnswer(text) {
-  if (null != text.text) {
+  if (text.text != null) {
     const trimmed = str.trim();
   }
   let tmp = null != text.image;
@@ -293,86 +192,131 @@ export const isIncompleteAnswer = function isIncompleteAnswer(text) {
   }
   return tmp;
 };
-export { createPollExpiryTimestamp };
+export const createPollExpiryTimestamp = function createPollExpiryTimestamp(arg0) {
+  const timestamp = Date.now();
+  return new Date(timestamp + arg0 * importDefault(687).Millis.HOUR).toISOString();
+};
 export const createPollServerDataFromCreateRequest = function createPollServerDataFromCreateRequest(poll) {
   if (null != poll) {
     let mapped;
-    if (null != poll) {
+    if (poll != null) {
       const answers = poll.answers;
-      if (null != answers) {
+      if (answers != null) {
         mapped = answers.map((poll_media) => {
           let name;
           poll_media = poll_media.poll_media;
           let emoji;
-          if (null != poll_media) {
+          if (poll_media != null) {
             emoji = poll_media.emoji;
           }
           let obj = {};
           const merged = Object.assign(poll_media.poll_media);
           let tmp3;
           if (null != emoji) {
-            obj = {};
-            ({ id: obj2.id, name } = emoji);
-            let str = "";
-            if (null != name) {
-              str = name;
+            obj = { id: null, name: null };
+            ({ id: obj2[0], name } = emoji);
+            if (name == null) {
+              name = "";
             }
-            obj.name = str;
+            obj[1] = name;
             tmp3 = obj;
           }
-          obj["emoji"] = tmp3;
+          obj.emoji = tmp3;
           obj = {};
           const merged1 = Object.assign(poll_media);
-          obj["answer_id"] = arg1 + 1;
-          obj["poll_media"] = obj;
+          obj.answer_id = arg1 + 1;
+          obj.poll_media = obj;
           return obj;
         });
       }
     }
     let duration;
-    if (null != poll) {
+    if (poll != null) {
       duration = poll.duration;
     }
     let str = "0";
     if (null != duration) {
-      str = createPollExpiryTimestamp(poll.duration);
+      const _Date = Date;
+      const _Date2 = Date;
+      const timestamp = Date.now();
+      const date = new Date(timestamp + poll.duration * importDefault(687).Millis.HOUR);
+      str = date.toISOString();
     }
     let obj = {};
     let merged = Object.assign(poll);
-    obj["expiry"] = str;
-    obj["answers"] = mapped;
+    obj.expiry = str;
+    obj.answers = mapped;
     return obj;
   }
 };
 export const getPollReplyPreview = function getPollReplyPreview(message) {
   const poll = message.poll;
-  let text;
-  if (null != poll) {
+  let str;
+  if (poll != null) {
     const question = poll.question;
-    if (null != question) {
-      text = question.text;
+    if (question != null) {
+      str = question.text;
     }
   }
-  let str = "";
-  if (null != text) {
-    str = text;
+  if (str == null) {
+    str = "";
   }
   return str;
 };
 export const getPollResultsReplyPreview = function getPollResultsReplyPreview(message) {
-  let obj = require(4395) /* useNullableMessageAuthor */;
+  let obj = require(4418) /* useNullableMessageAuthor */;
+  const first = message.embeds[0];
+  let str;
   const messageAuthor = obj.getMessageAuthor(message);
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj = { username: messageAuthor.nick, title: getPollResultsPollName(message, closure_8) };
-  return intl.format(require(1212) /* getSystemLocale */.t.Vn97Ka, obj);
+  if (first != null) {
+    const fields = first.fields;
+    if (fields != null) {
+      const found = fields.find((rawName) => "poll_question_text" === rawName.rawName);
+      if (found != null) {
+        str = found.rawValue;
+      }
+    }
+  }
+  if (str == null) {
+    str = "";
+  }
+  let truncateTextResult = str;
+  if (null != closure_8) {
+    truncateTextResult = tmp(1857).truncateText(str, tmp4);
+    const tmpResult = tmp(1857);
+  }
+  const intl = tmp(1236).intl;
+  obj = { username: messageAuthor.nick, title: truncateTextResult };
+  return intl.format(require(1236) /* getSystemLocale */.t.Vn97Ka, obj);
 };
-export const getPollResultsReplyPreviewMobile = function getPollResultsReplyPreviewMobile(merged) {
-  if ("author" in merged) {
-    let obj = require(4395) /* useNullableMessageAuthor */;
-    const messageAuthor = obj.getMessageAuthor(merged);
-    const intl = require(1212) /* getSystemLocale */.intl;
-    obj = { username: messageAuthor.nick, title: getPollResultsPollName(merged, closure_8) };
-    return intl.formatToParts(require(1212) /* getSystemLocale */.t.Vn97Ka, obj);
+export const getPollResultsReplyPreviewMobile = function getPollResultsReplyPreviewMobile(message2) {
+  if ("author" in message2) {
+    let obj = require(4418) /* useNullableMessageAuthor */;
+    const first = message2.embeds[0];
+    let str;
+    const messageAuthor = obj.getMessageAuthor(message2);
+    if (first != null) {
+      const fields = first.fields;
+      if (fields != null) {
+        const found = fields.find((rawName) => "poll_question_text" === rawName.rawName);
+        if (found != null) {
+          str = found.rawValue;
+        }
+      }
+    }
+    if (str == null) {
+      str = "";
+    }
+    let truncateTextResult = str;
+    if (null != closure_8) {
+      truncateTextResult = tmp2(1857).truncateText(str, tmp5);
+      const tmp2Result = tmp2(1857);
+    }
+    const intl = tmp2(1236).intl;
+    obj = { username: null, title: null };
+    obj[0] = messageAuthor.nick;
+    obj[1] = truncateTextResult;
+    return intl.formatToParts(require(1236) /* getSystemLocale */.t.Vn97Ka, obj);
   } else {
     return null;
   }
@@ -380,13 +324,12 @@ export const getPollResultsReplyPreviewMobile = function getPollResultsReplyPrev
 export const getTotalVotes = function getTotalVotes(reactions) {
   return reactions.reduce((arg0, count_details) => {
     count_details = count_details.count_details;
-    let vote;
-    if (null != count_details) {
-      vote = count_details.vote;
+    let num;
+    if (count_details != null) {
+      num = count_details.vote;
     }
-    let num = 0;
-    if (null != vote) {
-      num = vote;
+    if (num == null) {
+      num = 0;
     }
     return arg0 + num;
   }, 0);
@@ -398,23 +341,23 @@ export const getPollAnswerVotesTooltipText = function getPollAnswerVotesTooltipT
   if (null == message) {
     return "";
   } else {
-    const obj = { id, name: "", animated: false };
-    let str = "";
+    const obj = { id: null, name: "", animated: false };
+    obj[0] = id;
     const reaction = message.getReaction(obj);
-    let vote;
-    if (null != reaction) {
+    let num;
+    if (reaction != null) {
       const count_details = reaction.count_details;
-      if (null != count_details) {
-        vote = count_details.vote;
+      if (count_details != null) {
+        num = count_details.vote;
       }
     }
-    let num2 = 0;
-    if (null != vote) {
-      num2 = vote;
+    if (num == null) {
+      num = 0;
     }
     const arr = getSampleOfVoterUsernamesForAnswer(message, id);
+    let str = "";
     if (0 !== arr.length) {
-      str = formatVoterTooltipText(arr, num2);
+      str = formatVoterTooltipText(arr, num);
     }
     return str;
   }
@@ -431,21 +374,25 @@ export const formatPollResultNotificationCenterText = function formatPollResultN
     num = Math.round(tmp / totalVotes * 100);
   }
   if (0 === totalVotes) {
-    const intl3 = require(1212) /* getSystemLocale */.intl;
-    let obj = { questionText };
-    let formatToPlainStringResult = intl3.formatToPlainString(require(1212) /* getSystemLocale */.t["8anM0l"], obj);
+    const intl3 = require(1236) /* getSystemLocale */.intl;
+    let obj = { questionText: null };
+    obj[0] = questionText;
+    let formatToPlainStringResult = intl3.formatToPlainString(require(1236) /* getSystemLocale */.t["8anM0l"], obj);
   } else if (null != victorAnswerId) {
-    const intl2 = require(1212) /* getSystemLocale */.intl;
-    obj = { questionText, victorAnswerText };
+    const intl2 = require(1236) /* getSystemLocale */.intl;
+    obj = { questionText: null, victorAnswerText: null, percentage: null };
+    obj[0] = questionText;
+    obj[1] = victorAnswerText;
     const _HermesInternal2 = HermesInternal;
-    obj.percentage = "" + num + "%";
-    formatToPlainStringResult = intl2.formatToPlainString(require(1212) /* getSystemLocale */.t["8yEgvE"], obj);
+    obj[2] = "" + num + "%";
+    formatToPlainStringResult = intl2.formatToPlainString(require(1236) /* getSystemLocale */.t["8yEgvE"], obj);
   } else {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    obj = { questionText };
+    const intl = require(1236) /* getSystemLocale */.intl;
+    obj = { questionText: null, percentage: null };
+    obj[0] = questionText;
     const _HermesInternal = HermesInternal;
-    obj.percentage = "" + num + "%";
-    formatToPlainStringResult = intl.formatToPlainString(require(1212) /* getSystemLocale */.t.XVk6Zv, obj);
+    obj[1] = "" + num + "%";
+    formatToPlainStringResult = intl.formatToPlainString(require(1236) /* getSystemLocale */.t.XVk6Zv, obj);
   }
   return formatToPlainStringResult;
 };

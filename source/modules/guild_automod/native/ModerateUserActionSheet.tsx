@@ -1,27 +1,29 @@
-// Module ID: 11000
-// Function ID: 85312
-// Dependencies: [31, 1918, 1838, 3793, 1850, 653, 33, 4165, 566, 11001, 11002, 4354, 4133, 5535, 1212, 8987, 4372, 11003, 1935, 10999, 3782, 11020, 11006, 4107, 11022, 9000, 11024, 5221, 5220, 11026, 5536, 2]
+// Module ID: 11024
+// Function ID: 11025
+// Dependencies: [19, 1942, 1862, 3817, 1874, 676, 21, 4189, 589, 11025, 11026, 4379, 4157, 5553, 1236, 9011, 4395, 11027, 1959, 11023, 3806, 11044, 11030, 4131, 11046, 9024, 11048, 5243, 5242, 11050, 5554, 2]
 
-// Module 11000
-import importAllResult from "set";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_5 from "_createForOfIteratorHelperLoose";
-import closure_6 from "_isNativeReflectConstruct";
-import closure_7 from "_isNativeReflectConstruct";
+// Module 11024
+import importAllResult from "showModerateUserActionSheet";
+import trackCommunicationDisabled from "trackCommunicationDisabled";
+import createGuildRecordFromRust from "createGuildRecordFromRust";
+import getUncachedChannelPermissions from "getUncachedChannelPermissions";
+import mergeGuildAvatar from "mergeGuildAvatar";
 import { Permissions } from "ME";
-import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import jsxProd from "ClockWarningIcon";
+import createCacheKey from "createCacheKey";
 
-let closure_10;
-let closure_9;
+let c10;
+let c9;
 const require = arg1;
-({ jsx: closure_9, jsxs: closure_10 } = jsxProd);
-let closure_11 = _createForOfIteratorHelperLoose.createStyles({ container: { padding: 16, gap: 16 }, memberRoles: { justifyContent: "flex-start" } });
+let c3 = importAllResult;
+({ jsx: c9, jsxs: c10 } = jsxProd);
+let closure_11 = createCacheKey.createStyles({ container: { padding: 16, gap: 16 }, memberRoles: { justifyContent: "flex-start" } });
 const memoResult = importAllResult.memo((user) => {
   let canBanUser;
   let canKickUser;
   user = user.user;
   const guild = user.guild;
+  let stateFromStores;
   let hideActionSheet;
   let c4;
   const tmp = callback3();
@@ -30,193 +32,191 @@ const memoResult = importAllResult.memo((user) => {
   const items1 = [user, guild];
   stateFromStores = obj.useStateFromStores(items, () => {
     let id;
-    if (null != guild) {
+    if (guild != null) {
       id = guild.id;
     }
     return _undefined.getMember(id, user.id);
   }, items1);
-  let obj1 = user(stateFromStores[8]);
-  const items2 = [closure_6, closure_7, closure_5];
+  let tmp2Result = tmp2(tmp3[8]);
+  const items2 = [getUncachedChannelPermissions, mergeGuildAvatar, createGuildRecordFromRust];
   const items3 = [user, guild];
-  const stateFromStoresObject = obj1.useStateFromStoresObject(items2, () => {
-    const obj = {};
+  const stateFromStoresObject = tmp2Result.useStateFromStoresObject(items2, () => {
     let canKickMemberResult = null != guild;
     if (canKickMemberResult) {
-      canKickMemberResult = user(stateFromStores[9]).canKickMember(user, guild);
-      const obj2 = user(stateFromStores[9]);
+      let obj = user(stateFromStores[9]);
+      canKickMemberResult = obj.canKickMember(user, tmp);
     }
-    obj.canKickUser = canKickMemberResult;
-    let canBanMemberResult = null != guild;
+    obj = { canKickUser: canKickMemberResult, canBanUser: null, canChangeNick: null, canManageRoles: null, canModerateMembers: null };
+    let canBanMemberResult = null != tmp;
     if (canBanMemberResult) {
-      canBanMemberResult = user(stateFromStores[9]).canBanMember(user, guild);
+      canBanMemberResult = user(stateFromStores[9]).canBanMember(user, tmp);
       const obj3 = user(stateFromStores[9]);
     }
-    obj.canBanUser = canBanMemberResult;
-    let canManageUserResult = null != guild;
+    obj[1] = canBanMemberResult;
+    let canManageUserResult = null != tmp;
     if (canManageUserResult) {
-      canManageUserResult = outer1_6.canManageUser(outer1_8.MANAGE_NICKNAMES, user, guild);
+      canManageUserResult = outer1_6.canManageUser(outer1_8.MANAGE_NICKNAMES, user, tmp);
     }
-    obj.canChangeNick = canManageUserResult;
-    let canResult = null != guild;
+    obj[2] = canManageUserResult;
+    let canResult = null != tmp;
     if (canResult) {
-      canResult = outer1_6.can(outer1_8.MANAGE_ROLES, guild);
+      canResult = outer1_6.can(outer1_8.MANAGE_ROLES, tmp);
     }
-    obj.canManageRoles = canResult;
-    let result = null != guild;
+    obj[3] = canResult;
+    let result = null != tmp;
     if (result) {
       const items = [outer1_7, outer1_5, outer1_6];
-      result = user(stateFromStores[10]).canToggleCommunicationDisableOnUser(guild.id, user.id, items);
+      result = user(stateFromStores[10]).canToggleCommunicationDisableOnUser(tmp.id, user.id, items);
       const obj4 = user(stateFromStores[10]);
     }
-    obj.canModerateMembers = result;
+    obj[4] = result;
     return obj;
   }, items3);
   ({ canKickUser, canBanUser } = stateFromStoresObject);
   if (null != guild) {
     if (null != stateFromStores) {
-      const name = guild(stateFromStores[11]).getName(guild.id, undefined, user);
-      hideActionSheet = guild(stateFromStores[12]).hideActionSheet;
-      const items4 = [];
-      let tmp9 = null != stateFromStores;
-      if (tmp9) {
-        let tmp8 = canKickUser;
+      const name = guild(tmp3[11]).getName(guild.id, undefined, user);
+      hideActionSheet = guild(tmp3[12]).hideActionSheet;
+      let tmp11 = null != stateFromStores;
+      if (tmp11) {
+        let tmp10 = canKickUser;
         if (!canKickUser) {
-          tmp8 = canBanUser;
+          tmp10 = canBanUser;
         }
-        if (!tmp8) {
-          tmp8 = tmp5;
+        if (!tmp10) {
+          tmp10 = tmp7;
         }
-        if (!tmp8) {
-          tmp8 = tmp6;
+        if (!tmp10) {
+          tmp10 = tmp8;
         }
-        tmp9 = tmp8;
+        tmp11 = tmp10;
       }
-      if (tmp9) {
-        tmp9 = !user.isNonUserBot();
+      if (tmp11) {
+        tmp11 = !user.isNonUserBot();
       }
-      if (tmp9) {
-        obj = {};
-        const intl = user(stateFromStores[14]).intl;
-        obj.label = intl.string(user(stateFromStores[14]).t.HxrBOZ);
-        obj = { IconComponent: user(stateFromStores[15]).SettingsIcon };
-        obj.icon = callback(user(stateFromStores[13]).ActionSheetRow.Icon, obj);
-        obj.onPress = function onPress() {
+      const items4 = [];
+      if (tmp11) {
+        obj = { label: null, icon: null, onPress: null };
+        const intl = tmp2(tmp3[14]).intl;
+        obj[0] = intl.string(tmp2(tmp3[14]).t.HxrBOZ);
+        obj = { IconComponent: null };
+        obj[0] = tmp2(tmp3[15]).SettingsIcon;
+        obj[1] = callback(tmp2(tmp3[13]).ActionSheetRow.Icon, obj);
+        obj[2] = function onPress() {
           hideActionSheet();
           let obj = guild(stateFromStores[16]);
           obj = {
             userId: user.id,
             guildId: guild.id,
             onClose() {
-              let arr = guild(stateFromStores[16]);
+              let arr = outer1_1(outer1_2[16]);
               arr = arr.pop();
-              guild(stateFromStores[19])({ guild: outer1_1, user: outer1_0 });
+              outer1_1(outer1_2[19])({ guild: closure_1, user: closure_0 });
             },
             onRemove() {
-              let arr = guild(stateFromStores[16]);
+              let arr = callback(table[16]);
               arr = arr.pop();
             }
           };
           obj.pushLazy(user(stateFromStores[18])(stateFromStores[17], stateFromStores.paths), obj);
         };
-        items4.push(callback(user(stateFromStores[13]).ActionSheetRow, obj));
+        items4.push(callback(tmp2(tmp3[13]).ActionSheetRow, obj));
       }
       if (null != stateFromStores) {
-        if (tmp7) {
-          let obj4 = user(stateFromStores[20]);
-          let result = obj4.isMemberCommunicationDisabled(stateFromStores);
+        if (tmp9) {
+          tmp2Result = tmp2(tmp3[20]);
+          let result = tmp2Result.isMemberCommunicationDisabled(stateFromStores);
           c4 = result;
-          let onPress = 13;
-          obj1 = {};
-          let intl2 = user(stateFromStores[14]).intl;
-          let ClockWarningIcon = intl2.string;
-          let t = user(stateFromStores[14]).t;
+          let ClockWarningIcon = tmp2(tmp3[14]).intl;
+          let Icon = ClockWarningIcon.string;
+          let t = tmp2(tmp3[14]).t;
           if (result) {
-            let ClockWarningIconResult = ClockWarningIcon(t.qXtNtS);
+            let IconResult = Icon(t.qXtNtS);
           } else {
-            ClockWarningIconResult = ClockWarningIcon(t.xpsADY);
+            IconResult = Icon(t.xpsADY);
           }
-          obj1.label = ClockWarningIconResult;
-          t = callback;
-          intl2 = user;
-          let obj2 = {};
-          ClockWarningIcon = user(stateFromStores[21]).ClockWarningIcon;
-          obj2.IconComponent = ClockWarningIcon;
-          obj1.icon = callback(user(stateFromStores[onPress]).ActionSheetRow.Icon, obj2);
-          onPress = function onPress() {
+          const obj1 = { label: null, icon: null, onPress: null };
+          obj1[0] = IconResult;
+          Icon = tmp2(tmp3[13]).ActionSheetRow.Icon;
+          const obj2 = { IconComponent: null };
+          ClockWarningIcon = tmp2(tmp3[21]).ClockWarningIcon;
+          obj2[0] = ClockWarningIcon;
+          obj1[1] = callback(Icon, obj2);
+          obj1[2] = function onPress() {
             hideActionSheet();
             let obj = user(stateFromStores[22]);
             if (c4) {
-              obj = {};
-              ({ guildId: obj3.guildId, userId: obj3.userId } = stateFromStores);
+              obj = { guildId: null, userId: null };
+              ({ guildId: obj3[0], userId: obj3[1] } = stateFromStores);
               const result = obj.openEnableCommunication(obj);
             } else {
-              obj = {};
-              ({ guildId: obj2.guildId, userId: obj2.userId } = stateFromStores);
+              obj = { guildId: null, userId: null };
+              ({ guildId: obj2[0], userId: obj2[1] } = stateFromStores);
               const result1 = obj.openDisableCommunication(obj);
             }
           };
-          obj1.onPress = onPress;
-          obj1 = items4.push(callback(user(stateFromStores[13]).ActionSheetRow, obj1));
-          const tmp17 = callback;
+          t = items4.push(tmp15(tmp2(tmp3[13]).ActionSheetRow, obj1));
         }
       }
-      if (tmp22) {
-        let obj3 = {};
-        const intl3 = user(stateFromStores[14]).intl;
-        obj3.label = intl3.string(user(stateFromStores[14]).t["3glT6Z"]);
-        obj4 = { IconComponent: user(stateFromStores[23]).UserMinusIcon };
-        obj3.icon = callback(user(stateFromStores[13]).ActionSheetRow.Icon, obj4);
-        obj3.variant = "danger";
-        obj3.onPress = function onPress() {
+      if (tmp17) {
+        let obj3 = { label: null, icon: null, variant: "danger", onPress: null };
+        const intl2 = tmp2(tmp3[14]).intl;
+        obj3[0] = intl2.string(tmp2(tmp3[14]).t["3glT6Z"]);
+        let obj4 = { IconComponent: null };
+        obj4[0] = tmp2(tmp3[23]).UserMinusIcon;
+        obj3[1] = callback(tmp2(tmp3[13]).ActionSheetRow.Icon, obj4);
+        obj3[3] = function onPress() {
           guild(stateFromStores[24])({
             guildId: guild.id,
             userId: user.id,
             cancelButtonCallback() {
-              return guild(stateFromStores[19])({ guild: outer1_1, user: outer1_0 });
+              return outer1_1(outer1_2[19])({ guild: closure_1, user: closure_0 });
             }
           });
         };
-        items4.push(callback(user(stateFromStores[13]).ActionSheetRow, obj3));
+        items4.push(callback(tmp2(tmp3[13]).ActionSheetRow, obj3));
       }
-      if (tmp27) {
-        const obj5 = {};
-        const intl4 = user(stateFromStores[14]).intl;
-        obj5.label = intl4.string(user(stateFromStores[14]).t["5MBJ5M"]);
-        const obj6 = { IconComponent: user(stateFromStores[25]).HammerIcon };
-        obj5.icon = callback(user(stateFromStores[13]).ActionSheetRow.Icon, obj6);
-        obj5.variant = "danger";
-        obj5.onPress = function onPress() {
+      if (tmp20) {
+        const obj5 = { label: null, icon: null, variant: "danger", onPress: null };
+        const intl3 = tmp2(tmp3[14]).intl;
+        obj5[0] = intl3.string(tmp2(tmp3[14]).t["5MBJ5M"]);
+        const obj6 = { IconComponent: null };
+        obj6[0] = tmp2(tmp3[25]).HammerIcon;
+        obj5[1] = callback(tmp2(tmp3[13]).ActionSheetRow.Icon, obj6);
+        obj5[3] = function onPress() {
           guild(stateFromStores[26])({
             guildId: guild.id,
             userId: user.id,
             cancelButtonCallback() {
-              return guild(stateFromStores[19])({ guild: outer1_1, user: outer1_0 });
+              return outer1_1(outer1_2[19])({ guild: closure_1, user: closure_0 });
             }
           });
         };
-        items4.push(callback(user(stateFromStores[13]).ActionSheetRow, obj5));
+        items4.push(callback(tmp2(tmp3[13]).ActionSheetRow, obj5));
       }
-      const obj7 = {};
-      const obj8 = {};
-      const intl5 = user(stateFromStores[14]).intl;
-      const obj9 = { nick: name };
-      obj8.title = intl5.formatToPlainString(user(stateFromStores[14]).t["792QKT"], obj9);
-      obj7.header = callback(user(stateFromStores[28]).BottomSheetTitleHeader, obj8);
-      obj7.bodyStyles = tmp.container;
-      const obj10 = {};
+      const obj7 = { header: null, bodyStyles: null, children: null };
+      const obj8 = { title: null };
+      const intl4 = tmp2(tmp3[14]).intl;
+      const obj9 = { nick: null };
+      obj9[0] = name;
+      obj8[0] = intl4.formatToPlainString(tmp2(tmp3[14]).t["792QKT"], obj9);
+      obj7[0] = callback(tmp2(tmp3[28]).BottomSheetTitleHeader, obj8);
+      obj7[1] = tmp.container;
+      const obj10 = { style: null, guild: null, userRoles: null };
       const items5 = [tmp.memberRoles];
-      obj10.style = items5;
-      obj10.guild = guild;
-      obj10.userRoles = tmp3;
-      const items6 = [callback(guild(stateFromStores[29]), obj10), ];
-      const obj11 = { hasIcons: true, children: items4.map((children) => outer1_9(hideActionSheet.Fragment, { children }, "action_" + arg1)) };
-      items6[1] = callback(user(stateFromStores[30]).TableRowGroup, obj11);
-      obj7.children = items6;
-      return callback2(user(stateFromStores[27]).BottomSheet, obj7);
+      obj10[0] = items5;
+      obj10[1] = guild;
+      obj10[2] = tmp5;
+      const items6 = [callback(guild(tmp3[29]), obj10), ];
+      const obj11 = { hasIcons: true, children: null };
+      obj11[1] = items4.map((children) => callback(hideActionSheet.Fragment, { children }, "action_" + arg1));
+      items6[1] = callback(tmp2(tmp3[30]).TableRowGroup, obj11);
+      obj7[2] = items6;
+      return callback2(tmp2(tmp3[27]).BottomSheet, obj7);
     }
   }
   return null;
 });
-let result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/guild_automod/native/ModerateUserActionSheet.tsx");
+let result = require("createGuildRecordFromRust").fileFinishedImporting("modules/guild_automod/native/ModerateUserActionSheet.tsx");
 
 export default memoResult;

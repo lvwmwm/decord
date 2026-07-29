@@ -1,29 +1,29 @@
-// Module ID: 15663
-// Function ID: 120635
+// Module ID: 15698
+// Function ID: 15699
 // Name: Modal
-// Dependencies: [29, 31, 27, 653, 33, 4165, 689, 4372, 8402, 480, 5713, 1557, 15664, 477, 15553, 2]
+// Dependencies: [109, 19, 17, 676, 21, 4189, 712, 4395, 8426, 503, 5731, 1581, 15699, 500, 15587, 2]
 // Exports: default
 
-// Module 15663 (Modal)
+// Module 15698 (Modal)
 import _objectWithoutProperties from "_objectWithoutProperties";
-import result from "result";
+import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { NOOP } from "ME";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_10;
+let c10;
+let c9;
 let closure_6;
-let closure_7;
-let closure_9;
+let error;
 const require = arg1;
 let closure_3 = ["impressionName", "impressionProperties"];
-({ View: closure_6, StyleSheet: closure_7 } = get_ActivityIndicator);
-({ jsx: closure_9, jsxs: closure_10 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWEST };
-_createForOfIteratorHelperLoose.containerWithPadding = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+({ View: closure_6, StyleSheet: error } = get_ActivityIndicator);
+({ jsx: c9, jsxs: c10 } = jsxProd);
+createCacheKey = { containerWithPadding: null };
+createCacheKey = { backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOWEST };
+createCacheKey[0] = createCacheKey;
+createCacheKey = createCacheKey.createStyles(createCacheKey);
 const result = require("get ActivityIndicator").fileFinishedImporting("modules/main_tabs_v2/native/modal/ModalScreen.tsx");
 
 export default function Modal(route) {
@@ -34,78 +34,78 @@ export default function Modal(route) {
   const modal = route.route.params.modal;
   let importDefault;
   let props = modal.props;
-  if (null == props) {
+  if (props == null) {
     props = {};
   }
   ({ impressionName, impressionProperties } = props);
-  const tmp = _createForOfIteratorHelperLoose();
+  const tmp = createCacheKey();
+  let obj1 = React;
   const callback = React.useCallback(() => {
-    let arr = callback(outer1_2[7]);
+    let arr = callback(4395);
     arr = arr.pop();
   }, []);
-  let obj = {};
+  let obj = { type: null, name: null, properties: null };
   const tmp2 = callback(props, closure_3);
-  obj.type = modal(480).ImpressionTypes.MODAL;
-  obj.name = impressionName;
-  obj.properties = impressionProperties;
-  importDefault(8402)(obj);
+  obj[0] = modal(503).ImpressionTypes.MODAL;
+  obj[1] = impressionName;
+  obj[2] = impressionProperties;
+  importDefault(8426)(obj);
   let callbacks = modal.callbacks;
   let onExited;
-  if (null != callbacks) {
+  if (callbacks != null) {
     onExited = callbacks.onExited;
   }
   importDefault = React.useRef(onExited);
-  const effect = React.useEffect(() => {
+  const effect = obj1.useEffect(() => {
     const callbacks = modal.callbacks;
     let onExited;
-    if (null != callbacks) {
+    if (callbacks != null) {
       onExited = callbacks.onExited;
     }
     closure_1.current = onExited;
   });
-  const effect1 = React.useEffect(() => () => {
+  const effect1 = obj1.useEffect(() => () => {
+    const current = ref.current;
     let currentResult;
-    if (null != outer1_1.current) {
-      currentResult = outer1_1.current();
+    if (current != null) {
+      currentResult = current();
     }
     return currentResult;
   }, []);
-  const layoutEffect = React.useLayoutEffect(() => modal(outer1_2[10]).trackAppUIViewed("ModalScreen"), []);
-  const tmp5 = importDefault(8402);
-  ({ left, right } = importDefault(1557)());
-  let obj2 = modal(15664);
-  obj = {};
+  const layoutEffect = obj1.useLayoutEffect(() => modal(5731).trackAppUIViewed("ModalScreen"), []);
+  const tmp6 = importDefault(8426);
+  ({ left, right } = importDefault(1581)());
+  let tmp7Result = tmp7(15699);
   const items = [absoluteFillObject.absoluteFillObject, ];
-  let tmp14;
-  if (!obj2.shouldExcludeSafeAreaForModalKey(modal.key)) {
+  let tmp16;
+  if (!tmp7Result.shouldExcludeSafeAreaForModalKey(modal.key)) {
     const items1 = [tmp.containerWithPadding, ];
-    const obj1 = { paddingLeft: left, paddingRight: right };
-    items1[1] = obj1;
-    tmp14 = items1;
+    obj = { paddingLeft: null, paddingRight: null };
+    obj[0] = left;
+    obj[1] = right;
+    items1[1] = obj;
+    tmp16 = items1;
   }
-  items[1] = tmp14;
-  obj.style = items;
+  obj1 = { style: items, onAccessibilityEscape: null, children: null };
+  items[1] = tmp16;
   if (modal.closable) {
-    let pop = importDefault(4372).pop;
+    let pop = tmp4(4395).pop;
   } else {
     pop = NOOP;
   }
-  obj.onAccessibilityEscape = pop;
-  obj2 = {};
+  obj1[1] = pop;
+  const obj2 = {};
   const merged = Object.assign(tmp2);
-  obj2["style"] = undefined;
-  obj2["transitionState"] = null;
-  obj2["onClose"] = callback;
+  obj2.style = undefined;
+  obj2.transitionState = null;
+  obj2.onClose = callback;
   const items2 = [<modal.modal />, ];
-  const tmp11 = importDefault(1557)();
-  const tmp12 = closure_10;
-  const tmp13 = closure_6;
-  let isIOSResult = modal(477).isIOS();
+  tmp7Result = tmp7(500);
+  let isIOSResult = tmp7Result.isIOS();
   if (isIOSResult) {
-    const obj3 = { portal: false };
-    isIOSResult = callback2(modal(15553).PortalKeyboardRenderer, obj3);
+    isIOSResult = callback2(tmp7(15587).PortalKeyboardRenderer, { portal: false });
   }
   items2[1] = isIOSResult;
-  obj.children = items2;
-  return tmp12(tmp13, obj);
+  obj1[2] = items2;
+  return closure_10(closure_6, obj1);
 };

@@ -1,11 +1,11 @@
-// Module ID: 4606
-// Function ID: 40215
+// Module ID: 4628
+// Function ID: 4629
 // Name: useHasEnhancedRoleColors
-// Dependencies: [1838, 653, 566, 2]
+// Dependencies: [1862, 676, 589, 2]
 // Exports: default, getHasEnhancedRoleColors, getHasEnhancedRoleColorsForRole, useHasEnhancedRoleColorsForRole
 
-// Module 4606 (useHasEnhancedRoleColors)
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+// Module 4628 (useHasEnhancedRoleColors)
+import createGuildRecordFromRust from "createGuildRecordFromRust";
 import { GuildFeatures } from "ME";
 
 const require = arg1;
@@ -13,8 +13,8 @@ const result = require("initialize").fileFinishedImporting("modules/premium/powe
 
 export default function useHasEnhancedRoleColors(arg0) {
   const _require = arg0;
-  const items = [_createForOfIteratorHelperLoose];
-  return _require(566).useStateFromStores(items, () => {
+  const items = [createGuildRecordFromRust];
+  return _require(589).useStateFromStores(items, () => {
     const guild = outer1_2.getGuild(closure_0);
     let hasItem = null != guild;
     if (hasItem) {
@@ -39,8 +39,8 @@ export const getHasEnhancedRoleColors = function getHasEnhancedRoleColors(guildI
 };
 export const useHasEnhancedRoleColorsForRole = function useHasEnhancedRoleColorsForRole(guildId, role) {
   const _require = guildId;
-  const items = [_createForOfIteratorHelperLoose];
-  return _require(566).useStateFromStores(items, () => {
+  const items = [createGuildRecordFromRust];
+  return _require(589).useStateFromStores(items, () => {
     const guild = outer1_2.getGuild(closure_0);
     let hasItem = null != guild;
     if (hasItem) {
@@ -50,8 +50,8 @@ export const useHasEnhancedRoleColorsForRole = function useHasEnhancedRoleColors
     return hasItem;
   });
 };
-export const getHasEnhancedRoleColorsForRole = function getHasEnhancedRoleColorsForRole(closure_0, role) {
-  const guild = store.getGuild(closure_0);
+export const getHasEnhancedRoleColorsForRole = function getHasEnhancedRoleColorsForRole(id, role) {
+  const guild = store.getGuild(id);
   let hasItem = null != guild;
   if (hasItem) {
     const features = guild.features;

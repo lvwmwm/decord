@@ -1,10 +1,10 @@
-// Module ID: 7921
-// Function ID: 62983
+// Module ID: 7946
+// Function ID: 7947
 // Name: SafetyScannedUploadSurface
-// Dependencies: [7922, 2]
+// Dependencies: [7947, 2]
 // Exports: getSafetyScannedUploadSurfaceForProfileCustomization
 
-// Module 7921 (SafetyScannedUploadSurface)
+// Module 7946 (SafetyScannedUploadSurface)
 import { UploadTypes } from "UploadTypes";
 
 const obj = { USER_DEFAULT_PROFILE_AVATAR: "USER_DEFAULT_PROFILE_AVATAR", USER_DEFAULT_PROFILE_BANNER: "USER_DEFAULT_PROFILE_BANNER", USER_GUILD_PROFILE_AVATAR: "USER_GUILD_PROFILE_AVATAR", USER_GUILD_PROFILE_BANNER: "USER_GUILD_PROFILE_BANNER", GUILD_ICON: "GUILD_ICON", GUILD_BANNER: "GUILD_BANNER", GUILD_DISCOVERY_SPLASH: "GUILD_DISCOVERY_SPLASH", GUILD_INVITE_SPLASH: "GUILD_INVITE_SPLASH", EMOJI: "EMOJI", STICKER: "STICKER" };
@@ -19,7 +19,7 @@ export const getSafetyScannedUploadSurfaceForProfileCustomization = function get
       USER_DEFAULT_PROFILE_AVATAR = obj.USER_DEFAULT_PROFILE_AVATAR;
     }
     return USER_DEFAULT_PROFILE_AVATAR;
-  } else if (UploadTypes.BANNER === arg0) {
+  } else if (tmp.BANNER === arg0) {
     if (null != arg1) {
       let USER_DEFAULT_PROFILE_BANNER = obj.USER_GUILD_PROFILE_BANNER;
     } else {

@@ -1,13 +1,13 @@
-// Module ID: 4654
-// Function ID: 40416
+// Module ID: 4676
+// Function ID: 4677
 // Name: shouldShowMembershipVerificationGate
-// Dependencies: [1918, 1838, 1850, 4655, 566, 2]
+// Dependencies: [1942, 1862, 1874, 4677, 589, 2]
 // Exports: useShowMemberVerificationGate
 
-// Module 4654 (shouldShowMembershipVerificationGate)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import closure_4 from "_isNativeReflectConstruct";
+// Module 4676 (shouldShowMembershipVerificationGate)
+import trackCommunicationDisabled from "trackCommunicationDisabled";
+import createGuildRecordFromRust from "createGuildRecordFromRust";
+import mergeGuildAvatar from "mergeGuildAvatar";
 
 const require = arg1;
 function shouldShowMembershipVerificationGate(guildId, items) {
@@ -16,7 +16,7 @@ function shouldShowMembershipVerificationGate(guildId, items) {
   let obj3;
   let tmp = items;
   if (items === undefined) {
-    items = [_createForOfIteratorHelperLoose, closure_4, _isNativeReflectConstruct];
+    items = [createGuildRecordFromRust, mergeGuildAvatar, trackCommunicationDisabled];
     tmp = items;
   }
   [obj, obj2, obj3] = tmp;
@@ -28,33 +28,35 @@ function shouldShowMembershipVerificationGate(guildId, items) {
     let flag = false;
     if (null != currentUser) {
       const member = obj3.getMember(guildId, currentUser.id);
-      let isPending;
-      if (null != member) {
-        isPending = member.isPending;
+      let flag2;
+      if (member != null) {
+        flag2 = member.isPending;
       }
-      flag = null != isPending && isPending;
-      const tmp9 = null != isPending && isPending;
+      if (flag2 == null) {
+        flag2 = false;
+      }
+      flag = flag2;
     }
     if (flag) {
-      flag = require(4655) /* isValidFormResponse */.guildHasVerificationGate(guild);
-      const obj4 = require(4655) /* isValidFormResponse */;
+      flag = require(4677) /* isValidFormResponse */.guildHasVerificationGate(guild);
+      const obj4 = require(4677) /* isValidFormResponse */;
     }
     return flag;
   }
 }
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/guild_member_verification/hooks/useShowMemberVerificationGate.tsx");
+const result = require("mergeGuildAvatar").fileFinishedImporting("modules/guild_member_verification/hooks/useShowMemberVerificationGate.tsx");
 
 export { shouldShowMembershipVerificationGate };
 export const useShowMemberVerificationGate = function useShowMemberVerificationGate(guild_id) {
   const _require = guild_id;
-  let items = [_createForOfIteratorHelperLoose, closure_4, _isNativeReflectConstruct];
+  let items = [createGuildRecordFromRust, mergeGuildAvatar, trackCommunicationDisabled];
   const items1 = [guild_id];
-  return _require(566).useStateFromStores(items, () => {
-    let tmp = null != closure_0;
-    if (tmp) {
+  return _require(589).useStateFromStores(items, () => {
+    let tmp2 = null != closure_0;
+    if (tmp2) {
       const items = [outer1_3, outer1_4, outer1_2];
-      tmp = outer1_5(closure_0, items);
+      tmp2 = outer1_5(tmp, items);
     }
-    return tmp;
+    return tmp2;
   }, items1);
 };

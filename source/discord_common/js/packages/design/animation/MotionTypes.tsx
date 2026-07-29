@@ -1,7 +1,7 @@
-// Module ID: 3887
-// Function ID: 32173
+// Module ID: 3911
+// Function ID: 3912
 // Name: set
 // Dependencies: [2]
 
-// Module 3887 (set)
+// Module 3911 (set)
 const result = require("set").fileFinishedImporting("../discord_common/js/packages/design/animation/MotionTypes.tsx");

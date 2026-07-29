@@ -1,56 +1,132 @@
-// Module ID: 9135
-// Function ID: 71681
+// Module ID: 9159
+// Function ID: 9160
 // Name: useCanReapplyToRejectedMemberVerificationApplication
-// Dependencies: [5, 57, 31, 4150, 3983, 653, 566, 5161, 2]
+// Dependencies: [5, 32, 19, 4174, 4007, 676, 589, 5183, 2]
 // Exports: useCanReapplyToRejectedMemberVerificationApplication
 
-// Module 9135 (useCanReapplyToRejectedMemberVerificationApplication)
+// Module 9159 (useCanReapplyToRejectedMemberVerificationApplication)
 import ME from "ME";
 import _slicedToArray from "_slicedToArray";
-import result from "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_7 from "_isNativeReflectConstruct";
+import noop from "noop";
+import updateInvite from "updateInvite";
+import handleGatewayJoinRequestUpdate from "handleGatewayJoinRequestUpdate";
 import { GuildFeatures } from "ME";
 
 const require = arg1;
-const result = require("result").fileFinishedImporting("modules/guild_member_verification/hooks/useCanReapplyToRejectedMemberVerificationApplication.tsx");
+const result = require("noop").fileFinishedImporting("modules/guild_member_verification/hooks/useCanReapplyToRejectedMemberVerificationApplication.tsx");
 
 export const useCanReapplyToRejectedMemberVerificationApplication = function useCanReapplyToRejectedMemberVerificationApplication(guildId) {
-  const _require = guildId;
-  const tmp = callback(React.useState(true), 2);
-  let closure_1 = tmp[1];
-  let obj = _require(callback[6]);
-  const items = [closure_7];
-  const stateFromStores = obj.useStateFromStores(items, () => {
+  let _require = guildId;
+  const isLoading = callback2(React.useState(true), 2);
+  let closure_1 = isLoading[1];
+  const items = [handleGatewayJoinRequestUpdate];
+  const stateFromStores = _require(callback[6]).useStateFromStores(items, () => {
     let joinRequestGuild;
     if (null != closure_0) {
-      joinRequestGuild = outer1_7.getJoinRequestGuild(closure_0);
+      joinRequestGuild = outer1_7.getJoinRequestGuild(tmp);
     }
     return joinRequestGuild;
   });
-  callback = React.useCallback((() => {
-    // CreateGeneratorClosureLongIndex (0x67)
-    let closure_0 = outer1_3(tmp);
-    return function() {
-      return callback(...arguments);
-    };
-  })(), []);
+  _require = undefined;
+  _require = callback((arg0) => {
+    let closure_0 = arg0;
+    let c2 = 0;
+    let c5 = 0;
+    let c4 = 0;
+    return (function*(arg0) {
+      if (c5 === 2) {
+        c5 = 3;
+        HermesBuiltin.throwTypeError();
+      } else if (tmp6 === 3) {
+        if (arg0 === 1) {
+          throw arg1;
+        } else if (arg0 === 2) {
+          let obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
+        } else {
+          return { value: "HermesInternal", done: null };
+        }
+      } else {
+        try {
+          c5 = 2;
+          if (0 === c2) {
+            if (arg0 === 1) {
+              c5 = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              c5 = 3;
+              obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            } else {
+              const callback = tmp3;
+              let c4 = 1;
+              const inviteKeyForGuildId = outer2_6.getInviteKeyForGuildId(closure_0);
+              if (null != inviteKeyForGuildId) {
+                let obj1 = callback(callback[7]);
+                c2 = 2;
+                c5 = 1;
+                obj1 = { value: null, done: false };
+                obj1[0] = obj1.fetchVerificationForm(tmp30, inviteKeyForGuildId);
+                return obj1;
+              }
+              tmp30 = closure_0;
+            }
+          } else if (1 === tmp7) {
+            c4 = 0;
+            outer1_1(false);
+            throw ME;
+          } else if (arg0 === 1) {
+            c5 = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            c4 = 0;
+            outer1_1(false);
+            c5 = 3;
+            obj = { value: null, done: true };
+            obj[0] = arg1;
+            return obj;
+          }
+          c4 = 0;
+          outer1_1(false);
+          c5 = 3;
+          return { value: "HermesInternal", done: null };
+        } catch (tmp18) {
+          ME = tmp18;
+          if (tmp4 === c4) {
+            c5 = tmp2;
+            throw tmp18;
+          } else {
+            c2 = tmp;
+          }
+        }
+      }
+    })();
+  });
+  callback = React.useCallback(function() {
+    const self = this;
+    const apply = closure_0.apply;
+    if (typeof apply === "unknown") {
+      let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+    } else {
+      applyArgumentsResult = apply(self, arguments);
+    }
+    return applyArgumentsResult;
+  }, []);
   const items1 = [guildId, callback];
   const effect = React.useEffect(() => {
     if (null == closure_0) {
       callback(false);
     } else {
       callback(true);
-      callback(closure_0);
+      callback(tmp);
     }
   }, items1);
-  obj = {};
-  let hasItem = null != stateFromStores;
-  if (hasItem) {
+  let canReapply = null != stateFromStores;
+  if (canReapply) {
     const features = stateFromStores.features;
-    hasItem = features.has(GuildFeatures.MEMBER_VERIFICATION_MANUAL_APPROVAL);
+    canReapply = features.has(GuildFeatures.MEMBER_VERIFICATION_MANUAL_APPROVAL);
   }
-  obj.canReapply = hasItem;
-  obj.isLoading = tmp[0];
-  return obj;
+  return { canReapply, isLoading: isLoading[0] };
 };

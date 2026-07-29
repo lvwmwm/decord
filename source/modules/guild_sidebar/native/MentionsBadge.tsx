@@ -1,11 +1,11 @@
-// Module ID: 15162
-// Function ID: 115266
+// Module ID: 15195
+// Function ID: 15196
 // Name: MentionsBadge
-// Dependencies: [31, 33, 1273, 2]
+// Dependencies: [19, 21, 1297, 2]
 // Exports: default
 
-// Module 15162 (MentionsBadge)
-import "result";
+// Module 15195 (MentionsBadge)
+import "noop";
 import { jsx } from "jsxProd";
 
 const require = arg1;
@@ -15,5 +15,5 @@ export default function MentionsBadge(arg0) {
   let isMentionLowImportance;
   let mentionsCount;
   ({ mentionsCount, isMentionLowImportance } = arg0);
-  return jsx(require(1273) /* Button */.Badge, { value, isMentionLowImportance });
+  return jsx(require(1297) /* Button */.Badge, { value, isMentionLowImportance });
 };

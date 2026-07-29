@@ -1,25 +1,23 @@
-// Module ID: 15124
-// Function ID: 115047
+// Module ID: 15157
+// Function ID: 15158
 // Name: useActiveEventOrStageInstanceChannel
-// Dependencies: [1348, 8297, 15123, 2]
+// Dependencies: [1372, 8321, 15156, 2]
 // Exports: useActiveEventOrStageInstanceChannel
 
-// Module 15124 (useActiveEventOrStageInstanceChannel)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 15157 (useActiveEventOrStageInstanceChannel)
+import ensureGuildLoaded from "ensureGuildLoaded";
 
 const require = arg1;
-const result = require("useAllVisibleChannels").fileFinishedImporting("modules/guild_scheduled_events/useActiveEventOrStageInstanceChannel.tsx");
+const result = require("useLiveStageChannels").fileFinishedImporting("modules/guild_scheduled_events/useActiveEventOrStageInstanceChannel.tsx");
 
 export const useActiveEventOrStageInstanceChannel = function useActiveEventOrStageInstanceChannel(id) {
-  id = undefined;
-  const firstActiveEventChannel = require(8297) /* useGuildUpcomingEvents */.useFirstActiveEventChannel(id);
-  const first = importDefault(15123)(id)[0];
-  if (null != first) {
+  let firstActiveEventChannel = require(8321) /* useGuildEvents */.useFirstActiveEventChannel(id);
+  const first = importDefault(15156)(id)[0];
+  if (first != null) {
     id = first.id;
   }
-  channel = channel.getChannel(id);
-  if (null != firstActiveEventChannel) {
-    channel = firstActiveEventChannel;
+  if (firstActiveEventChannel == null) {
+    firstActiveEventChannel = channel.getChannel(id);
   }
-  return channel;
+  return firstActiveEventChannel;
 };

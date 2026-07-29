@@ -1,15 +1,15 @@
-// Module ID: 9774
-// Function ID: 75949
+// Module ID: 9796
+// Function ID: 9797
 // Name: useHandleUseNow
-// Dependencies: [31, 8743, 4133, 4372, 4017, 3866, 1212, 9775, 9778, 2]
+// Dependencies: [19, 8767, 4157, 4395, 4041, 3890, 1236, 9797, 9800, 2]
 // Exports: useHandleUseNow
 
-// Module 9774 (useHandleUseNow)
-import result from "result";
+// Module 9796 (useHandleUseNow)
+import noop from "noop";
 import { RootNavigatorScreen } from "MODE_CHANGE_PHYSICS";
 
 const require = arg1;
-const result = require("showActionSheet").fileFinishedImporting("modules/collectibles/native/useHandleUseNow.tsx");
+const result = require("ACTION_SHEET_HEIGHT_HALF").fileFinishedImporting("modules/collectibles/native/useHandleUseNow.tsx");
 
 export const useHandleUseNow = function useHandleUseNow(onSuccess) {
   let analyticsLocations;
@@ -18,14 +18,15 @@ export const useHandleUseNow = function useHandleUseNow(onSuccess) {
   let isApplying;
   let product;
   onSuccess = onSuccess.onSuccess;
+  let importDefault;
   const items = [onSuccess];
   ({ product, analyticsLocations } = onSuccess);
   const callback = React.useCallback(() => {
     if (null == onSuccess) {
-      outer1_2(outer1_2[2]).hideActionSheet();
-      const obj = outer1_2(outer1_2[2]);
-      outer1_2(outer1_2[3]).popAll();
-      const obj2 = outer1_2(outer1_2[3]);
+      _undefined(outer1_2[2]).hideActionSheet();
+      const obj = _undefined(outer1_2[2]);
+      _undefined(outer1_2[3]).popAll();
+      const obj2 = _undefined(outer1_2[3]);
       const rootNavigationRef = onSuccess(outer1_2[4]).getRootNavigationRef();
       const obj3 = onSuccess(outer1_2[4]);
       if (tmp8) {
@@ -33,34 +34,34 @@ export const useHandleUseNow = function useHandleUseNow(onSuccess) {
       }
       tmp8 = null != rootNavigationRef && rootNavigationRef.isReady();
     } else {
-      onSuccess();
+      tmp();
     }
   }, items);
   const callback1 = React.useCallback(() => {
-    let obj = tmp4(outer1_2[5]);
-    obj = { key: "collectible shop apply error" };
-    const intl = onSuccess(outer1_2[6]).intl;
-    obj.content = intl.string(onSuccess(outer1_2[6]).t.CKsXk3);
+    let obj = _undefined(3890);
+    obj = { key: "collectible shop apply error", content: null };
+    const intl = onSuccess(1236).intl;
+    obj[1] = intl.string(onSuccess(1236).t.CKsXk3);
     obj.open(obj);
   }, []);
-  let obj = onSuccess(9775);
+  let obj = onSuccess(9797);
   handleUseNow = obj.useHandleUseNow({ product, onSuccess: callback, onError: callback1 });
   ({ handleUseNow, isApplying, canUseNow } = handleUseNow);
-  const tmp4 = importDefault(9778)({ analyticsLocations });
+  const tmp4 = importDefault(9800)({ analyticsLocations });
   importDefault = tmp4;
   obj = {
     handleUseNow,
     isApplying,
     canUseNow,
     handleEditProfile: React.useCallback(() => {
-      tmp4();
+      _undefined();
       if (null == onSuccess) {
-        tmp4(outer1_2[2]).hideActionSheet();
-        const obj = tmp4(outer1_2[2]);
-        tmp4(outer1_2[3]).popAll();
-        const obj2 = tmp4(outer1_2[3]);
+        _undefined(outer1_2[2]).hideActionSheet();
+        const obj = _undefined(outer1_2[2]);
+        _undefined(outer1_2[3]).popAll();
+        const obj2 = _undefined(outer1_2[3]);
       } else {
-        onSuccess();
+        tmp2();
       }
     }, items1)
   };

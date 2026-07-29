@@ -1,10 +1,10 @@
-// Module ID: 4060
-// Function ID: 33623
+// Module ID: 4084
+// Function ID: 4085
 // Name: formatSize
-// Dependencies: [1212, 2]
+// Dependencies: [1236, 2]
 // Exports: formatKbSize
 
-// Module 4060 (formatSize)
+// Module 4084 (formatSize)
 function formatSize(result, arg1) {
   let tmp = arg1;
   if (arg1 === undefined) {
@@ -20,14 +20,16 @@ function formatSize(result, arg1) {
   }
   const rounded = Math.ceil(result / num2);
   if (rounded < num) {
-    const intl2 = require(1212) /* getSystemLocale */.intl;
+    const intl2 = require(1236) /* getSystemLocale */.intl;
     const formatToPlainString2 = intl2.formatToPlainString;
-    const t2 = require(1212) /* getSystemLocale */.t;
+    const t2 = require(1236) /* getSystemLocale */.t;
     if (tmp.useSpace) {
-      let obj = { size: rounded };
+      let obj = { size: null };
+      obj[0] = rounded;
       let formatToPlainString2Result = formatToPlainString2(t2.cS889N, obj);
     } else {
-      obj = { size: rounded };
+      obj = { size: null };
+      obj[0] = rounded;
       formatToPlainString2Result = formatToPlainString2(t2.pIn7Af, obj);
     }
     return formatToPlainString2Result;
@@ -39,14 +41,16 @@ function formatSize(result, arg1) {
     } else {
       result1 = round(result);
     }
-    const intl = require(1212) /* getSystemLocale */.intl;
+    const intl = require(1236) /* getSystemLocale */.intl;
     const formatToPlainString = intl.formatToPlainString;
-    const t = require(1212) /* getSystemLocale */.t;
+    const t = require(1236) /* getSystemLocale */.t;
     if (tmp.useSpace) {
-      const obj1 = { size: result1 };
+      const obj1 = { size: null };
+      obj1[0] = result1;
       let formatToPlainStringResult = formatToPlainString(t.yhEXX7, obj1);
     } else {
-      obj = { size: result1 };
+      obj = { size: null };
+      obj[0] = result1;
       formatToPlainStringResult = formatToPlainString(t.TbMX9D, obj);
     }
     return formatToPlainStringResult;
@@ -73,21 +77,21 @@ export const formatKbSize = function formatKbSize(MAX_STICKER_FILE_SIZE, arg1) {
   if (tmp.useKibibytes) {
     num = c2;
   }
-  if (result / num >= 1) {
+  if (1 <= result / num) {
     let formatToPlainStringResult = formatSize(result, tmp);
   } else {
-    const intl = require(1212) /* getSystemLocale */.intl;
+    const intl = require(1236) /* getSystemLocale */.intl;
     const formatToPlainString = intl.formatToPlainString;
-    const t = require(1212) /* getSystemLocale */.t;
+    const t = require(1236) /* getSystemLocale */.t;
     if (tmp.useSpace) {
-      let obj = {};
+      let obj = { size: null };
       const _Math2 = Math;
-      obj.size = Math.ceil(result);
+      obj[0] = Math.ceil(result);
       formatToPlainStringResult = formatToPlainString(t.bTzRR6, obj);
     } else {
-      obj = {};
+      obj = { size: null };
       const _Math = Math;
-      obj.size = Math.ceil(result);
+      obj[0] = Math.ceil(result);
       formatToPlainStringResult = formatToPlainString(t.kEk9pr, obj);
     }
   }

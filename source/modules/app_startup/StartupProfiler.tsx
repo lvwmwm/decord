@@ -1,41 +1,60 @@
-// Module ID: 10872
-// Function ID: 84192
+// Module ID: 10896
+// Function ID: 10897
 // Name: setLevels
-// Dependencies: [31, 33, 20, 2]
+// Dependencies: [19, 21, 10, 2]
 // Exports: default
 
-// Module 10872 (setLevels)
-import result from "result";
+// Module 10896 (setLevels)
+import noop from "noop";
 import { jsx } from "jsxProd";
 
 let obj = { App: "App", AppContainer: "AppContainer", MainNavigator: "MainNavigator", StackNavigator: "StackNavigator", MainTabs: "MainTabs", MainDrawers: "MainDrawers", PrivateChannels: "PrivateChannels", Members: "Members", LeftPanel: "LeftPanel", Guilds: "Guilds", Channels: "Channels", RightPanel: "RightPanel", CenterPanel: "CenterPanel", Channel: "Channel", ChatView: "ChatView", Messages: "Messages" };
-let closure_4 = {};
+obj = {};
 function setLevels(obj, arg1) {
   for (const key10006 in arg0) {
     let tmp = key10006;
-    let tmp2 = closure_4;
-    closure_4[key10006] = arg1;
+    let tmp2 = obj;
+    obj[key10006] = arg1;
     let tmp3 = setLevels;
     let tmp4 = setLevels(arg0[key10006], arg1 + " ");
     continue;
   }
 }
-setLevels({ [obj.App]: { [obj.AppContainer]: { [obj.MainNavigator]: { [obj.StackNavigator]: { [obj.MainTabs]: { [obj.MainDrawers]: { [obj.LeftPanel]: { [obj.Guilds]: {}, [obj.Channels]: {} }, [obj.RightPanel]: { [obj.Members]: {} }, [obj.CenterPanel]: { [obj.Channel]: { [obj.ChatView]: { [obj.Messages]: {} } } } } } } } } } }, "");
-const result = require("AppStartPerformance").fileFinishedImporting("modules/app_startup/StartupProfiler.tsx");
+obj = { [obj.App]: { [obj.AppContainer]: { [obj.MainNavigator]: { [obj.StackNavigator]: { [obj.MainTabs]: { [obj.MainDrawers]: { [obj.LeftPanel]: { [obj.Guilds]: {}, [obj.Channels]: {} }, [obj.RightPanel]: { [obj.Members]: {} }, [obj.CenterPanel]: { [obj.Channel]: { [obj.ChatView]: { [obj.Messages]: {} } } } } } } } } } };
+for (const key10073 in obj) {
+  let tmp5 = key10073;
+  obj[key10073] = "";
+  let tmp6 = obj[key10073];
+  let tmp7 = tmp6;
+  let keys = Object.keys();
+  if (keys === undefined) {
+    continue;
+  } else {
+    let tmp3 = keys[tmp];
+    while (tmp3 !== undefined) {
+      let tmp9 = tmp3;
+      obj[tmp3] = " ";
+      let setLevelsResult = setLevels(tmp6[tmp3], "  ");
+      continue;
+    }
+  }
+  continue;
+}
+const result = require("isTracing").fileFinishedImporting("modules/app_startup/StartupProfiler.tsx");
 
 export default function StartupProfiler(children) {
   const profile = children.profile;
-  let obj = profile(20);
-  obj.mark("\u{1F3A8}", "" + table[profile] + profile + " render");
+  let obj = profile(10);
+  obj.mark("\u{1F3A8}", "" + obj[profile] + profile + " render");
   obj = {
     id: profile,
-    onRender(id, arg1, actualDuration, treeBaseDuration, actualStartTime, c87) {
-      profile(outer1_1[2]).mark("\u{1F3A8}", "" + outer1_4[profile] + profile + " " + arg1, actualDuration);
+    onRender(arg0, arg1, arg2) {
+      profile(outer1_1[2]).mark("\u{1F3A8}", "" + outer1_4[profile] + profile + " " + arg1, arg2);
     },
     children: children.children
   };
-  return <Profiler.Profiler id={profile} onRender={function onRender(id, arg1, actualDuration, treeBaseDuration, actualStartTime, c87) {
-    profile(outer1_1[2]).mark("\u{1F3A8}", "" + outer1_4[profile] + profile + " " + arg1, actualDuration);
+  return <Profiler.Profiler id={profile} onRender={function onRender(arg0, arg1, arg2) {
+    profile(outer1_1[2]).mark("\u{1F3A8}", "" + outer1_4[profile] + profile + " " + arg1, arg2);
   }}>{arg0.children}</Profiler.Profiler>;
 };
 export const Profiles = obj;

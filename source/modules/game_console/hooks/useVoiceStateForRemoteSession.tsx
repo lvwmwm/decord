@@ -1,26 +1,22 @@
-// Module ID: 8905
-// Function ID: 70296
+// Module ID: 8929
+// Function ID: 8930
 // Name: useVoiceStateForRemoteSession
-// Dependencies: [1194, 4181, 4179, 566, 2]
+// Dependencies: [1218, 4205, 4203, 589, 2]
 // Exports: default
 
-// Module 8905 (useVoiceStateForRemoteSession)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_3 from "_isNativeReflectConstruct";
-import closure_4 from "_isNativeReflectConstruct";
+// Module 8929 (useVoiceStateForRemoteSession)
+import fetchFingerprint from "fetchFingerprint";
+import updateVoiceState from "updateVoiceState";
+import set from "set";
 
 const require = arg1;
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/game_console/hooks/useVoiceStateForRemoteSession.tsx");
+const result = require("set").fileFinishedImporting("modules/game_console/hooks/useVoiceStateForRemoteSession.tsx");
 
 export default function useVoiceStateForRemoteSession() {
-  const items = [_isNativeReflectConstruct, closure_3, closure_4];
-  return require(566) /* initialize */.useStateFromStores(items, () => {
-    const id = outer1_2.getId();
-    const voiceStateForSession = outer1_3.getVoiceStateForSession(id, outer1_4.getRemoteSessionId());
-    let tmp3;
-    if (null != voiceStateForSession) {
-      tmp3 = voiceStateForSession;
-    }
-    return tmp3;
+  const items = [fetchFingerprint, updateVoiceState, set];
+  return require(589) /* initialize */.useStateFromStores(items, () => {
+    id = id.getId();
+    voiceStateForSession = voiceStateForSession.getVoiceStateForSession(id, remoteSessionId.getRemoteSessionId());
+    return voiceStateForSession;
   }, []);
 };

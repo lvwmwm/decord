@@ -1,33 +1,33 @@
-// Module ID: 12135
-// Function ID: 94905
+// Module ID: 12159
+// Function ID: 12160
 // Name: UserProfileApplicationWidgetTopContainedLayout
-// Dependencies: [31, 27, 33, 4165, 689, 12046, 12133, 12134, 2]
+// Dependencies: [19, 17, 21, 4189, 712, 12070, 12157, 12158, 2]
 // Exports: default
 
-// Module 12135 (UserProfileApplicationWidgetTopContainedLayout)
-import "result";
+// Module 12159 (UserProfileApplicationWidgetTopContainedLayout)
+import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_2;
-let closure_3;
-let closure_4;
-let closure_5;
+let c3;
+let c4;
+let c5;
+let obj1;
 const require = arg1;
-({ Image: closure_2, View: closure_3 } = get_ActivityIndicator);
-({ jsx: closure_4, jsxs: closure_5 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { flexDirection: "row", gap: require("_createForOfIteratorHelperLoose").space.PX_12, alignItems: "center" };
-_createForOfIteratorHelperLoose.contentRow = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.text = { flex: 1, gap: require("_createForOfIteratorHelperLoose").space.PX_4 };
-let obj2 = { width: 96, height: 96, marginTop: require("_createForOfIteratorHelperLoose").space.PX_12, marginBottom: require("_createForOfIteratorHelperLoose").space.PX_16, borderRadius: require("_createForOfIteratorHelperLoose").radii.md, overflow: "hidden", borderWidth: 1, borderColor: require("_createForOfIteratorHelperLoose").colors.BORDER_SUBTLE, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_MOD_SUBTLE };
-_createForOfIteratorHelperLoose.imageContainer = obj2;
-_createForOfIteratorHelperLoose.image = { width: "100%", height: "100%" };
-let obj3 = { width: 96, height: 96, marginTop: require("_createForOfIteratorHelperLoose").space.PX_12, marginBottom: require("_createForOfIteratorHelperLoose").space.PX_16 };
-_createForOfIteratorHelperLoose.imageSkeleton = obj3;
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-let obj1 = { flex: 1, gap: require("_createForOfIteratorHelperLoose").space.PX_4 };
+({ Image: obj1, View: c3 } = get_ActivityIndicator);
+({ jsx: c4, jsxs: c5 } = jsxProd);
+createCacheKey = { contentRow: null, text: null, imageContainer: null, image: null, imageSkeleton: null };
+createCacheKey = { flexDirection: "row", gap: require("Themes").space.PX_12, alignItems: "center" };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { flex: 1, gap: require("Themes").space.PX_4 };
+obj1 = { flex: 1, gap: require("Themes").space.PX_4 };
+createCacheKey[2] = { width: 96, height: 96, marginTop: require("Themes").space.PX_12, marginBottom: require("Themes").space.PX_16, borderRadius: require("Themes").radii.md, overflow: "hidden", borderWidth: 1, borderColor: require("Themes").colors.BORDER_SUBTLE, backgroundColor: require("Themes").colors.BACKGROUND_MOD_SUBTLE };
+createCacheKey[3] = { width: "100%", height: "100%" };
+let obj2 = { width: 96, height: 96, marginTop: require("Themes").space.PX_12, marginBottom: require("Themes").space.PX_16, borderRadius: require("Themes").radii.md, overflow: "hidden", borderWidth: 1, borderColor: require("Themes").colors.BORDER_SUBTLE, backgroundColor: require("Themes").colors.BACKGROUND_MOD_SUBTLE };
+createCacheKey[4] = { width: 96, height: 96, marginTop: require("Themes").space.PX_12, marginBottom: require("Themes").space.PX_16 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let obj3 = { width: 96, height: 96, marginTop: require("Themes").space.PX_12, marginBottom: require("Themes").space.PX_16 };
 const result = require("jsxProd").fileFinishedImporting("modules/application_widget/native/UserProfileApplicationWidgetTopContainedLayout.tsx");
 
 export default function UserProfileApplicationWidgetTopContainedLayout(header) {
@@ -35,52 +35,47 @@ export default function UserProfileApplicationWidgetTopContainedLayout(header) {
   let resolveFieldValue;
   let topConfig;
   ({ topConfig, resolveFieldValue, numberFormat } = header);
-  const tmp = _createForOfIteratorHelperLoose();
-  let obj = require(12046) /* resolvedValuesFromUserApplicationIdentityProfile */;
+  const tmp = createCacheKey();
+  let obj = require(12070) /* resolvedValuesFromUserApplicationIdentityProfile */;
   const textComponentValues = obj.resolveTextComponentValues(topConfig.components.title, resolveFieldValue, numberFormat, true);
-  let obj1 = require(12046) /* resolvedValuesFromUserApplicationIdentityProfile */;
+  let obj1 = require(12070) /* resolvedValuesFromUserApplicationIdentityProfile */;
   const textComponentValues1 = obj1.resolveTextComponentValues(topConfig.components.subtitle_1, resolveFieldValue, numberFormat);
-  let obj2 = require(12046) /* resolvedValuesFromUserApplicationIdentityProfile */;
+  let obj2 = require(12070) /* resolvedValuesFromUserApplicationIdentityProfile */;
   const textComponentValues2 = obj2.resolveTextComponentValues(topConfig.components.subtitle_2, resolveFieldValue, numberFormat);
-  let obj3 = require(12046) /* resolvedValuesFromUserApplicationIdentityProfile */;
+  let obj3 = require(12070) /* resolvedValuesFromUserApplicationIdentityProfile */;
   const contained_image = topConfig.components.contained_image;
   let image;
   const textComponentValues3 = obj3.resolveTextComponentValues(topConfig.components.subtitle_3, resolveFieldValue, numberFormat);
-  if (null != contained_image) {
+  if (contained_image != null) {
     image = contained_image.fields.image;
   }
-  const items = [require(12046) /* resolvedValuesFromUserApplicationIdentityProfile */.ResolvedValueType.MEDIA];
+  const items = [require(12070) /* resolvedValuesFromUserApplicationIdentityProfile */.ResolvedValueType.MEDIA];
   const fieldValue = resolveFieldValue(image, items);
-  obj = {};
   const items1 = [header.header, ];
-  obj = { style: tmp.contentRow };
-  obj1 = { style: tmp.text };
-  obj2 = { field: textComponentValues, variant: "text-lg/medium", color: "text-default" };
-  const items2 = [callback(require(12133) /* formatDurationNarrow */.FieldText, obj2), , , ];
-  obj3 = { field: textComponentValues1, variant: "text-sm/normal", color: "text-muted" };
-  items2[1] = callback(require(12133) /* formatDurationNarrow */.FieldText, obj3);
-  const obj4 = { field: textComponentValues2, variant: "text-sm/normal", color: "text-muted" };
-  items2[2] = callback(require(12133) /* formatDurationNarrow */.FieldText, obj4);
-  const obj5 = { field: textComponentValues3, variant: "text-sm/normal", color: "text-muted" };
-  items2[3] = callback(require(12133) /* formatDurationNarrow */.FieldText, obj5);
-  obj1.children = items2;
-  const items3 = [callback2(closure_3, obj1), ];
+  obj = { style: tmp.contentRow, children: null };
+  obj = { style: tmp.text, children: null };
+  const items2 = [callback(require(12157) /* formatDurationNarrow */.FieldText, { field: textComponentValues, variant: "text-lg/medium", color: "text-default" }), callback(require(12157) /* formatDurationNarrow */.FieldText, { field: textComponentValues1, variant: "text-sm/normal", color: "text-muted" }), callback(require(12157) /* formatDurationNarrow */.FieldText, { field: textComponentValues2, variant: "text-sm/normal", color: "text-muted" }), callback(require(12157) /* formatDurationNarrow */.FieldText, { field: textComponentValues3, variant: "text-sm/normal", color: "text-muted" })];
+  obj[1] = items2;
+  const items3 = [callback2(closure_3, obj), ];
   if (null != fieldValue) {
-    const obj6 = { style: tmp.imageContainer };
-    const obj7 = {};
-    const obj8 = { uri: fieldValue.media.url };
-    obj7.source = obj8;
-    obj7.style = tmp.image;
-    obj7.resizeMode = "contain";
-    obj6.children = callback(closure_2, obj7);
-    let tmp13 = callback(closure_3, obj6);
+    obj1 = { style: null, children: null };
+    obj1[0] = tmp.imageContainer;
+    obj2 = { source: null, style: null, resizeMode: "contain" };
+    obj3 = { uri: null };
+    obj3[0] = fieldValue.media.url;
+    obj2[0] = obj3;
+    obj2[1] = tmp.image;
+    obj1[1] = tmp12(closure_2, obj2);
+    let tmp12Result = tmp12(tmp11, obj1);
   } else {
-    const obj9 = { style: tmp.imageSkeleton };
-    tmp13 = callback(require(12134) /* ImageSkeleton */.ImageSkeleton, obj9);
+    const obj4 = { style: null };
+    obj4[0] = tmp.imageSkeleton;
+    tmp12Result = tmp12(tmp2(12158).ImageSkeleton, obj4);
   }
-  items3[1] = tmp13;
-  obj.children = items3;
+  const obj5 = { children: null };
+  items3[1] = tmp12Result;
+  obj[1] = items3;
   items1[1] = callback2(closure_3, obj);
-  obj.children = items1;
-  return callback2(closure_3, obj);
+  obj5[0] = items1;
+  return callback2(closure_3, obj5);
 };

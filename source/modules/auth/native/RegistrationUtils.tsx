@@ -1,22 +1,22 @@
-// Module ID: 14842
-// Function ID: 113051
+// Module ID: 14868
+// Function ID: 14869
 // Name: trackRegTransition
-// Dependencies: [31, 4150, 8329, 14834, 14835, 653, 33, 675, 14832, 5128, 2]
+// Dependencies: [19, 4174, 8353, 14860, 14861, 676, 21, 698, 14858, 5150, 2]
 // Exports: BackButtonWithTracking, getCommonErrorDetails, getTrackRegTransition, hasAllRegistrationFieldsCompleted
 
-// Module 14842 (trackRegTransition)
-import result from "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_5 from "_isNativeReflectConstruct";
+// Module 14868 (trackRegTransition)
+import noop from "noop";
+import updateInvite from "updateInvite";
+import getDisplayedInviteCode from "getDisplayedInviteCode";
 import useRegistrationUIStore from "useRegistrationUIStore";
 import RegistrationTransitionActionTypes from "RegistrationTransitionActionTypes";
 import { AnalyticEvents } from "ME";
 import { jsx } from "jsxProd";
 
+let c9;
 let closure_6;
-let closure_7;
-let closure_8;
-let closure_9;
+let error;
+let metroImportAll;
 const require = arg1;
 function trackRegTransition(overrideRegistrationOptions) {
   let actionType;
@@ -27,7 +27,7 @@ function trackRegTransition(overrideRegistrationOptions) {
   let registrationOptions = overrideRegistrationOptions.overrideRegistrationOptions;
   ({ step, fromStep, toStep, actionType, details } = overrideRegistrationOptions);
   displayedInviteCode = displayedInviteCode.getDisplayedInviteCode();
-  if (null == registrationOptions) {
+  if (registrationOptions == null) {
     registrationOptions = state.getState().registrationOptions;
   }
   let invite = null;
@@ -39,13 +39,13 @@ function trackRegTransition(overrideRegistrationOptions) {
     str = "invite";
   }
   let email;
-  if (null != registrationOptions) {
+  if (registrationOptions != null) {
     email = registrationOptions.email;
   }
   let str2 = "email";
   if (null == email) {
     let phone;
-    if (null != registrationOptions) {
+    if (registrationOptions != null) {
       phone = registrationOptions.phone;
     }
     str2 = null;
@@ -53,58 +53,56 @@ function trackRegTransition(overrideRegistrationOptions) {
       str2 = "phone";
     }
   }
-  let obj = importDefault(675);
-  obj = { step, identity_type: str2, action_type: actionType, action_details: details, registration_source: str };
+  let obj = importDefault(698);
+  obj = { step, identity_type: str2, action_type: actionType, action_details: details, registration_source: str, invite_code: null, invite_channel_id: null, invite_channel_type: null, invite_guild_id: null, invite_inviter_id: null, from_step: null, to_step: null };
   let code;
-  if (null != invite) {
+  if (invite != null) {
     code = invite.code;
   }
-  obj.invite_code = code;
+  obj[5] = code;
   let id;
-  if (null != invite) {
+  if (invite != null) {
     const channel = invite.channel;
-    if (null != channel) {
+    if (channel != null) {
       id = channel.id;
     }
   }
-  obj.invite_channel_id = id;
+  obj[6] = id;
   let type;
-  if (null != invite) {
+  if (invite != null) {
     const channel2 = invite.channel;
-    if (null != channel2) {
+    if (channel2 != null) {
       type = channel2.type;
     }
   }
-  obj.invite_channel_type = type;
+  obj[7] = type;
   let id1;
-  if (null != invite) {
+  if (invite != null) {
     const guild = invite.guild;
-    if (null != guild) {
+    if (guild != null) {
       id1 = guild.id;
     }
   }
-  obj.invite_guild_id = id1;
+  obj[8] = id1;
   let id2;
-  if (null != invite) {
+  if (invite != null) {
     const inviter = invite.inviter;
-    if (null != inviter) {
+    if (inviter != null) {
       id2 = inviter.id;
     }
   }
-  obj.invite_inviter_id = id2;
-  obj.from_step = fromStep;
-  obj.to_step = toStep;
+  obj[9] = id2;
+  obj[10] = fromStep;
+  obj[11] = toStep;
   obj.track(AnalyticEvents.REGISTER_TRANSITION, obj);
 }
-({ clearRegistrationErrorMessage: closure_6, useRegistrationUIStore: closure_7 } = useRegistrationUIStore);
-({ RegisterTransitionSteps: closure_8, RegistrationTransitionActionTypes: closure_9 } = RegistrationTransitionActionTypes);
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/auth/native/RegistrationUtils.tsx");
+({ clearRegistrationErrorMessage: closure_6, useRegistrationUIStore: error } = useRegistrationUIStore);
+({ RegisterTransitionSteps: metroImportAll, RegistrationTransitionActionTypes: c9 } = RegistrationTransitionActionTypes);
+const result = require("getDisplayedInviteCode").fileFinishedImporting("modules/auth/native/RegistrationUtils.tsx");
 
 export const hasAllRegistrationFieldsCompleted = function hasAllRegistrationFieldsCompleted(email, isConsentRequired) {
-  let tmp = null != email.email;
-  if (!tmp) {
-    tmp = null != email.phoneToken;
-  }
+  isConsentRequired = isConsentRequired.isConsentRequired;
+  let tmp = null != email.email || null != email.phoneToken;
   if (tmp) {
     let tmp2 = null != email.username;
     if (tmp2) {
@@ -114,8 +112,8 @@ export const hasAllRegistrationFieldsCompleted = function hasAllRegistrationFiel
         if (tmp4) {
           let tmp5 = null != email.consent;
           if (tmp5) {
-            let tmp6 = !isConsentRequired.isConsentRequired;
-            if (!tmp6) {
+            let tmp6 = !isConsentRequired;
+            if (isConsentRequired) {
               tmp6 = true === email.consent;
             }
             tmp5 = tmp6;
@@ -138,43 +136,55 @@ export function getTrackRegTransition(closure_0) {
     let overrideRegistrationOptions;
     let step;
     let toStep;
-    ({ step, actionType } = arg0);
-    ({ toStep, details, overrideRegistrationOptions } = arg0);
+    ({ step, actionType, toStep, details, overrideRegistrationOptions } = arg0);
     if (actionType === outer1_9.VIEWED) {
       if (step === outer1_8.CAPTCHA) {
-        let obj = { step, fromStep: ref.current, actionType };
+        let obj = { step: null, fromStep: null, actionType: null };
+        obj[0] = step;
+        obj[1] = ref.current;
+        obj[2] = actionType;
         outer1_12(obj);
       }
     }
     if (actionType === outer1_9.VIEWED) {
       if (null != step) {
-        obj = { step, fromStep: ref.current, actionType };
+        obj = { step: null, fromStep: null, actionType: null };
+        obj[0] = step;
+        obj[1] = ref.current;
+        obj[2] = actionType;
         outer1_12(obj);
       }
       ref.current = step;
     } else if (null != step) {
-      obj = { step, toStep, actionType, details, overrideRegistrationOptions };
+      obj = { step: null, toStep: null, actionType: null, details: null, overrideRegistrationOptions: null };
+      obj[0] = step;
+      obj[1] = toStep;
+      obj[2] = actionType;
+      obj[3] = details;
+      obj[4] = overrideRegistrationOptions;
       outer1_12(obj);
     }
-    return tmp8;
+    return tmp9;
   };
 }
 export const BackButtonWithTracking = function BackButtonWithTracking(arg0) {
   let dependencyMap;
   let importDefault;
-  _require = React.useContext(_require(14832).TrackRegistrationContext);
+  _require = React.useContext(_require(14858).TrackRegistrationContext);
   ({ destinationStep: importDefault, onPress: dependencyMap } = arg0);
   let obj = {};
   const merged = Object.assign(arg0);
-  obj["onPress"] = function onPress() {
-    if (null != callback2) {
+  obj.onPress = function onPress() {
+    if (null != closure_2) {
       outer1_6();
-      const obj = { step: closure_1, actionType: outer1_9.VIEWED };
+      const obj = { step: null, actionType: null };
+      obj[0] = closure_1;
+      obj[1] = outer1_9.VIEWED;
       callback(obj);
-      callback2();
+      tmp();
     }
   };
-  return jsx(_require(5128).HeaderBackButton, {});
+  return jsx(_require(5150).HeaderBackButton, {});
 };
 export const getCommonErrorDetails = function getCommonErrorDetails(error_code) {
   if (-1 === error_code) {

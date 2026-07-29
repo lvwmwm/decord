@@ -1,34 +1,34 @@
-// Module ID: 10186
-// Function ID: 78618
+// Module ID: 10207
+// Function ID: 10208
 // Name: RolePill
-// Dependencies: [31, 27, 653, 33, 4165, 689, 3838, 5521, 5525, 3865, 4695, 5541, 4161, 2]
+// Dependencies: [19, 17, 676, 21, 4189, 712, 3862, 5539, 5543, 3889, 4717, 5559, 4185, 2]
 // Exports: default
 
-// Module 10186 (RolePill)
-import "result";
+// Module 10207 (RolePill)
+import "noop";
 import { View } from "get ActivityIndicator";
 import ME from "ME";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_4;
-let closure_5;
+let c4;
+let c5;
 let closure_6;
-let closure_7;
+let error;
 const require = arg1;
-({ EMPTY_STRING_SNOWFLAKE_ID: closure_4, MAX_VISUAL_ROLE_LENGTH: closure_5 } = ME);
-({ jsx: closure_6, jsxs: closure_7 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { marginRight: 4, marginBottom: 4, borderRadius: require("_createForOfIteratorHelperLoose").radii.xs };
-_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
-let obj1 = { flexDirection: "row", alignItems: "center", paddingHorizontal: 8, paddingVertical: 6, borderRadius: require("_createForOfIteratorHelperLoose").radii.xs, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWEST };
-_createForOfIteratorHelperLoose.pill = obj1;
-let obj2 = { marginRight: 8, borderRadius: require("_createForOfIteratorHelperLoose").radii.sm, height: 12, width: 12, backgroundColor: require("_createForOfIteratorHelperLoose").colors.ICON_MUTED };
-_createForOfIteratorHelperLoose.bubble = obj2;
-let obj3 = { marginRight: 8, borderRadius: require("_createForOfIteratorHelperLoose").radii.sm, height: 12, width: 12 };
-_createForOfIteratorHelperLoose.verifiedContainer = obj3;
-_createForOfIteratorHelperLoose.roleIcon = { paddingRight: 4 };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+({ EMPTY_STRING_SNOWFLAKE_ID: c4, MAX_VISUAL_ROLE_LENGTH: c5 } = ME);
+({ jsx: closure_6, jsxs: error } = jsxProd);
+createCacheKey = { container: null, pill: null, bubble: null, verifiedContainer: null, roleIcon: null };
+createCacheKey = { marginRight: 4, marginBottom: 4, borderRadius: require("Themes").radii.xs };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { flexDirection: "row", alignItems: "center", paddingHorizontal: 8, paddingVertical: 6, borderRadius: require("Themes").radii.xs, backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOWEST };
+let obj1 = { flexDirection: "row", alignItems: "center", paddingHorizontal: 8, paddingVertical: 6, borderRadius: require("Themes").radii.xs, backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOWEST };
+createCacheKey[2] = { marginRight: 8, borderRadius: require("Themes").radii.sm, height: 12, width: 12, backgroundColor: require("Themes").colors.ICON_MUTED };
+let obj2 = { marginRight: 8, borderRadius: require("Themes").radii.sm, height: 12, width: 12, backgroundColor: require("Themes").colors.ICON_MUTED };
+createCacheKey[3] = { marginRight: 8, borderRadius: require("Themes").radii.sm, height: 12, width: 12 };
+createCacheKey[4] = { paddingRight: 4 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let obj3 = { marginRight: 8, borderRadius: require("Themes").radii.sm, height: 12, width: 12 };
 const result = require("ME").fileFinishedImporting("components_native/common/RolePill.tsx");
 
 export default function RolePill(role) {
@@ -36,83 +36,81 @@ export default function RolePill(role) {
   let guildId;
   role = role.role;
   ({ guildId, color } = role);
-  const DeveloperMode = role(3838).DeveloperMode;
+  let combined;
+  const DeveloperMode = role(3862).DeveloperMode;
   const setting = DeveloperMode.useSetting();
-  let obj = role(5521);
+  let obj = role(5539);
   obj = { guildId, roleId: role.id, size: 12 };
   const roleIcon = obj.useRoleIcon(obj);
   let name = role.name;
-  let combined = name;
+  combined = name;
   if (role.name.length > closure_5) {
     name = role.name;
     const _HermesInternal = HermesInternal;
-    combined = "" + name.slice(0, closure_5) + "...";
+    combined = "" + name.slice(0, tmp5) + "...";
     name = combined;
   }
-  if (null == color) {
+  if (color == null) {
     color = role.colorString;
   }
   const tags = role.tags;
   let guild_connections;
-  if (null != tags) {
+  if (tags != null) {
     guild_connections = tags.guild_connections;
   }
-  const tmp7 = _createForOfIteratorHelperLoose();
-  obj = {};
+  const tmp9 = createCacheKey();
   let disableInteraction = !setting;
-  if (!disableInteraction) {
+  if (setting) {
     disableInteraction = role.disableInteraction;
   }
-  obj.disabled = disableInteraction;
-  obj.style = tmp7.container;
-  obj.onPress = function handlePress() {
-    role(outer1_2[8]).copy(role.id);
-    const obj = role(outer1_2[8]);
-    role(outer1_2[9]).roleIdCopied(combined);
+  obj = {
+    disabled: disableInteraction,
+    style: tmp9.container,
+    onPress: function handlePress() {
+      role(outer1_2[8]).copy(role.id);
+      const obj = role(outer1_2[8]);
+      role(outer1_2[9]).roleIdCopied(combined);
+    },
+    accessible: false,
+    children: null
   };
-  obj.accessible = false;
-  const obj1 = { style: tmp7.pill };
+  const obj1 = { style: tmp9.pill, children: null };
   if (undefined !== guild_connections) {
-    const obj2 = { style: tmp7.verifiedContainer, roleId: role.id };
-    if (null == guildId) {
+    const obj2 = { style: null, roleId: null, guildId: null, roleColor: null, size: 14, displayRoleIcon: false };
+    obj2[0] = tmp9.verifiedContainer;
+    obj2[1] = role.id;
+    if (guildId == null) {
       guildId = closure_4;
     }
-    obj2.guildId = guildId;
-    let tmp18;
-    if (null != color) {
-      tmp18 = color;
-    }
-    obj2.roleColor = tmp18;
-    obj2.size = 14;
-    obj2.displayRoleIcon = false;
-    let tmp11Result = callback(combined(5541), obj2);
-    const tmp14 = callback;
-    const tmp17 = combined(5541);
+    obj2[2] = guildId;
+    obj2[3] = color;
+    let tmp10Result = tmp10(combined(5559), obj2);
+    const tmp15 = combined(5559);
   } else {
-    const obj3 = {};
-    const items = [tmp7.bubble, ];
+    const items = [tmp9.bubble, ];
     if (null != color) {
-      const obj4 = { backgroundColor: color };
-      let obj5 = obj4;
+      const obj3 = { backgroundColor: null };
+      obj3[0] = color;
+      let obj4 = obj3;
     } else {
-      obj5 = {};
+      obj4 = {};
     }
-    items[1] = obj5;
-    obj3.style = items;
-    tmp11Result = callback(View, obj3);
-    const tmp11 = callback;
-    const tmp12 = View;
+    const obj5 = { style: null };
+    items[1] = obj4;
+    obj5[0] = items;
+    tmp10Result = tmp10(tmp12, obj5);
   }
-  const items1 = [tmp11Result, , ];
-  let tmp19 = null;
+  const items1 = [tmp10Result, , ];
+  tmp10Result = null;
   if (null != roleIcon) {
-    const obj6 = { style: tmp7.roleIcon, children: roleIcon };
-    tmp19 = callback(View, obj6);
+    const obj6 = { style: null, children: null };
+    obj6[0] = tmp9.roleIcon;
+    obj6[1] = roleIcon;
+    tmp10Result = tmp10(tmp12, obj6);
   }
-  items1[1] = tmp19;
-  const obj7 = { variant: "text-xs/semibold", color: "interactive-text-active", children: name };
-  items1[2] = callback(role(4161).Text, obj7);
-  obj1.children = items1;
-  obj.children = closure_7(View, obj1);
-  return callback(role(4695).PressableHighlight, obj);
+  items1[1] = tmp10Result;
+  items1[2] = closure_6(role(4185).Text, { variant: "text-xs/semibold", color: "interactive-text-active", children: name });
+  obj1[1] = items1;
+  obj[4] = closure_7(View, obj1);
+  return closure_6(role(4717).PressableHighlight, obj);
 };

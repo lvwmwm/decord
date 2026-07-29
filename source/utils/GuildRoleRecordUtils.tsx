@@ -1,247 +1,149 @@
-// Module ID: 1915
-// Function ID: 21601
-// Name: _createForOfIteratorHelperLoose
-// Dependencies: [1388, 1912, 483, 665, 1914, 2]
-// Exports: fromSerializedPartition, fromSyncOperation, isGuildRoleRecord, toSerializedPartition
+// Module ID: 1937
+// Function ID: 1938
+// Name: fromServerArray
+// Dependencies: [1412, 1936, 506, 688, 1938, 2]
+// Exports: constructGuildRoleInPlace, fromSerializedPartition, fromSyncOperation, isGuildRoleRecord, toSerializedPartition
 
-// Module 1915 (_createForOfIteratorHelperLoose)
-import constructInPlace from "constructInPlace";
+// Module 1937 (fromServerArray)
+import isValueEqual from "isValueEqual";
 import { GuildRoleRecordTypeTag } from "GuildRoleRecordTypeTag";
 
-let closure_3;
-let closure_4;
-function _createForOfIteratorHelperLoose(iterable) {
-  let closure_0 = iterable;
-  iterable = "undefined" !== typeof Symbol;
-  if (iterable) {
-    const _Symbol = Symbol;
-    iterable = iterable[Symbol.iterator];
-  }
-  if (!iterable) {
-    iterable = iterable[Symbol.iterator];
-  }
-  if (iterable) {
-    const iter = iterable.call(iterable);
-    const next = iter.next;
-    return next.bind(iter);
-  } else {
-    const _Array = Array;
-    let tmp = iterable;
-    if (!Array.isArray(iterable)) {
-      let tmp2;
-      if (iterable) {
-        if ("string" === typeof iterable) {
-          tmp2 = _arrayLikeToArray(iterable, undefined);
-        } else {
-          const toString = {}.toString;
-          const substr = toString.call(iterable).slice(8, -1);
-          let name = substr;
-          if (tmp3) {
-            name = iterable.constructor.name;
-          }
-          if ("Map" !== name) {
-            if ("Set" !== name) {
-              if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(iterable, undefined);
-              } else {
-                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
-              }
-            }
-            tmp2 = arr;
-          }
-          const _Array2 = Array;
-          arr = Array.from(iterable);
-          const callResult = toString.call(iterable);
-          tmp3 = "Object" === substr && iterable.constructor;
-        }
-      }
-      tmp = tmp2;
-      if (!tmp2) {
-        const _TypeError = TypeError;
-        const typeError = new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
-        throw typeError;
-      }
-    }
-    if (tmp) {
-      closure_0 = tmp;
-    }
-    let c1 = 0;
-    return () => {
-      if (closure_1 >= length.length) {
-        let obj = { done: true };
-      } else {
-        obj = { done: false };
-        closure_1 = tmp3 + 1;
-        obj.value = length[+closure_1];
-      }
-      return obj;
-    };
-  }
-}
-function _arrayLikeToArray(arg0, arg1) {
-  let length;
-  if (tmp) {
-    length = arg0.length;
-  }
-  const ArrayResult = Array(length);
-  for (let num = 0; num < length; num = num + 1) {
-    ArrayResult[num] = arg0[num];
-  }
-  return ArrayResult;
-}
+let c3;
+let c4;
 function fromServerArray(id, roles) {
-  let done;
   const obj = {};
-  const tmp = _createForOfIteratorHelperLoose(roles);
-  let iter = tmp();
-  if (!iter.done) {
-    do {
-      let value = iter.value;
-      let tmp2 = fromServer;
-      obj[value.id] = fromServer(id, value);
-      let iter2 = tmp();
-      iter = iter2;
-      done = iter2.done;
-    } while (!done);
+  const iter = roles[Symbol.iterator]();
+  const nextResult = iter.next();
+  while (iter !== undefined) {
+    let tmp2 = fromServer;
+    obj[nextResult.id] = fromServer(id, nextResult);
+    continue;
   }
   return obj;
 }
 function fromServer(guildId, id) {
   let flags;
   let managed;
-  const obj = { id: id.id, name: id.name, guildId, permissions: importAll(483).deserialize(id.permissions) };
-  ({ mentionable: obj.mentionable, position: obj.position, color: obj.color } = id);
+  const obj = { id: id.id, name: id.name, guildId, permissions: null, mentionable: null, position: null, color: null, colorString: null, colors: null, colorStrings: null, hoist: null, managed: null, tags: null, icon: null, unicodeEmoji: null, flags: null, description: null, version: null };
+  obj[3] = importAll(506).deserialize(id.permissions);
+  ({ mentionable: obj[4], position: obj[5], color: obj[6] } = id);
   let int2hexResult = null;
   if (0 !== id.color) {
-    int2hexResult = require(665) /* pad2 */.int2hex(id.color);
-    const obj3 = require(665) /* pad2 */;
+    int2hexResult = require(688) /* int2hslRaw */.int2hex(id.color);
+    const obj3 = require(688) /* int2hslRaw */;
   }
-  obj.colorString = int2hexResult;
-  const colors = id.colors;
-  let tmp5 = null;
-  if (null != colors) {
-    tmp5 = colors;
+  obj[7] = int2hexResult;
+  let colors = id.colors;
+  if (colors == null) {
+    colors = null;
   }
-  obj.colors = tmp5;
+  obj[8] = colors;
   let result = null;
   if (null != id.colors) {
-    result = require(1914) /* extractColorStringsFromServerColors */.extractColorStringsFromServerColors(id.colors);
-    const obj4 = require(1914) /* extractColorStringsFromServerColors */;
+    result = require(1938) /* extractColorStringsFromServerColors */.extractColorStringsFromServerColors(id.colors);
+    const obj4 = require(1938) /* extractColorStringsFromServerColors */;
   }
-  obj.colorStrings = result;
-  ({ hoist: obj.hoist, managed } = id);
-  obj.managed = null != managed && managed;
+  obj[9] = result;
+  ({ hoist: obj[10], managed } = id);
+  if (managed == null) {
+    managed = false;
+  }
+  obj[11] = managed;
   let tags = id.tags;
-  if (null == tags) {
+  if (tags == null) {
     tags = {};
   }
-  obj.tags = tags;
-  ({ icon: obj.icon, unicode_emoji: obj.unicodeEmoji, flags } = id);
-  let num3 = 0;
-  if (null != flags) {
-    num3 = flags;
+  obj[12] = tags;
+  ({ icon: obj[13], unicode_emoji: obj[14], flags } = id);
+  if (flags == null) {
+    flags = 0;
   }
-  obj.flags = num3;
-  const description = id.description;
-  let tmp9 = null;
-  if (null != description) {
-    tmp9 = description;
+  obj[15] = flags;
+  let description = id.description;
+  if (description == null) {
+    description = null;
   }
-  obj.description = tmp9;
-  obj.version = id.version;
-  return constructGuildRoleInPlace(obj);
-}
-function constructGuildRoleInPlace(arg0) {
-  return callback(GuildRoleRecordTypeTag, arg0);
+  obj[16] = description;
+  obj[17] = id.version;
+  return callback(GuildRoleRecordTypeTag, obj);
 }
 function fromSerialized(guildId, id) {
   let flags;
   let managed;
-  const obj = { id: id.id, name: id.name, guildId, permissions: importAll(483).deserialize(id.permissions) };
-  ({ mentionable: obj.mentionable, position: obj.position, color: obj.color } = id);
+  const obj = { id: id.id, name: id.name, guildId, permissions: null, mentionable: null, position: null, color: null, colorString: null, colors: null, colorStrings: null, hoist: null, managed: null, tags: null, icon: null, unicodeEmoji: null, flags: null, description: null, version: null };
+  obj[3] = importAll(506).deserialize(id.permissions);
+  ({ mentionable: obj[4], position: obj[5], color: obj[6] } = id);
   let int2hexResult = null;
   if (null != id.color) {
     int2hexResult = null;
     if (0 !== id.color) {
-      int2hexResult = require(665) /* pad2 */.int2hex(id.color);
-      const obj3 = require(665) /* pad2 */;
+      int2hexResult = require(688) /* int2hslRaw */.int2hex(id.color);
+      const obj3 = require(688) /* int2hslRaw */;
     }
   }
-  obj.colorString = int2hexResult;
-  const colors = id.colors;
-  let tmp5 = null;
-  if (null != colors) {
-    tmp5 = colors;
+  obj[7] = int2hexResult;
+  let colors = id.colors;
+  if (colors == null) {
+    colors = null;
   }
-  obj.colors = tmp5;
+  obj[8] = colors;
   let result = null;
   if (null != id.colors) {
-    result = require(1914) /* extractColorStringsFromServerColors */.extractColorStringsFromServerColors(id.colors);
-    const obj4 = require(1914) /* extractColorStringsFromServerColors */;
+    result = require(1938) /* extractColorStringsFromServerColors */.extractColorStringsFromServerColors(id.colors);
+    const obj4 = require(1938) /* extractColorStringsFromServerColors */;
   }
-  obj.colorStrings = result;
-  ({ hoist: obj.hoist, managed } = id);
-  obj.managed = null != managed && managed;
+  obj[9] = result;
+  ({ hoist: obj[10], managed } = id);
+  if (managed == null) {
+    managed = false;
+  }
+  obj[11] = managed;
   let tags = id.tags;
-  if (null == tags) {
+  if (tags == null) {
     tags = {};
   }
-  obj.tags = tags;
-  ({ icon: obj.icon, unicodeEmoji: obj.unicodeEmoji, flags } = id);
-  let num4 = 0;
-  if (null != flags) {
-    num4 = flags;
+  obj[12] = tags;
+  ({ icon: obj[13], unicodeEmoji: obj[14], flags } = id);
+  if (flags == null) {
+    flags = 0;
   }
-  obj.flags = num4;
-  const description = id.description;
-  let tmp9 = null;
-  if (null != description) {
-    tmp9 = description;
+  obj[15] = flags;
+  let description = id.description;
+  if (description == null) {
+    description = null;
   }
-  obj.description = tmp9;
-  obj.version = id.version;
-  return constructGuildRoleInPlace(obj);
+  obj[16] = description;
+  obj[17] = id.version;
+  return callback(GuildRoleRecordTypeTag, obj);
 }
-({ constructInPlace: closure_3, objectIsPlainRecordOfType: closure_4 } = constructInPlace);
-let result = require("fromHexReverseArray").fileFinishedImporting("utils/GuildRoleRecordUtils.tsx");
+({ constructInPlace: c3, objectIsPlainRecordOfType: c4 } = isValueEqual);
+let result = require("fromString").fileFinishedImporting("utils/GuildRoleRecordUtils.tsx");
 
 export const isGuildRoleRecord = function isGuildRoleRecord(arg0) {
   return callback2(GuildRoleRecordTypeTag, arg0);
 };
 export { fromServerArray };
 export { fromServer };
-export { constructGuildRoleInPlace };
+export const constructGuildRoleInPlace = function constructGuildRoleInPlace(arg0) {
+  return callback(GuildRoleRecordTypeTag, arg0);
+};
 export { fromSerialized };
 export const fromSyncOperation = function fromSyncOperation(id, roles, partition) {
-  let done;
-  let done2;
   if ("full_sync" === roles.op) {
     return fromServerArray(id, roles.items);
   } else {
     const obj = {};
     const merged = Object.assign(partition);
-    const tmp11 = _createForOfIteratorHelperLoose(roles.deletes);
-    let iter2 = tmp11();
-    if (!iter2.done) {
-      do {
-        let value = iter2.value;
-        delete tmp[tmp2];
-        let iter = tmp11();
-        iter2 = iter;
-        done = iter.done;
-      } while (!done);
+    const deletes = roles.deletes;
+    for (const item10013 of deletes) {
+      delete tmp[tmp2];
+      continue;
     }
-    const tmp4 = _createForOfIteratorHelperLoose(roles.writes);
-    let iter3 = tmp4();
-    if (!iter3.done) {
-      do {
-        value = iter3.value;
-        let tmp5 = fromServer;
-        obj[value.id] = fromServer(id, value);
-        let iter4 = tmp4();
-        iter3 = iter4;
-        done2 = iter4.done;
-      } while (!done2);
+    const writes = roles.writes;
+    for (const item10020 of writes) {
+      let tmp10 = fromServer;
+      obj[item10020.id] = fromServer(arg0, item10020);
+      continue;
     }
     return obj;
   }
@@ -258,16 +160,16 @@ export const fromSerializedPartition = function fromSerializedPartition(id, role
 };
 export const toSerializedPartition = function toSerializedPartition(unsafeMutableRoles) {
   let obj = {};
-  for (const key10005 in arg0) {
-    let tmp = key10005;
-    let tmp2 = arg0[key10005];
+  for (const key10004 in arg0) {
+    let tmp = key10004;
+    let tmp2 = arg0[key10004];
     obj = {};
     let tmp3 = obj;
     let tmp4 = tmp2;
     let merged = Object.assign(tmp2);
     let str = tmp2.permissions;
-    obj["permissions"] = str.toString();
-    obj[key10005] = obj;
+    obj.permissions = str.toString();
+    obj[key10004] = obj;
     continue;
   }
   return obj;

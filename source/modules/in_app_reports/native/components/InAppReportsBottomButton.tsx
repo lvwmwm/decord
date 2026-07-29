@@ -1,26 +1,26 @@
-// Module ID: 12393
-// Function ID: 96242
+// Module ID: 12415
+// Function ID: 12416
 // Name: InAppReportsBottomButton
-// Dependencies: [31, 27, 482, 33, 4165, 689, 1212, 2299, 4161, 4578, 1273, 2]
+// Dependencies: [19, 17, 505, 21, 4189, 712, 1236, 2323, 4185, 4600, 1297, 2]
 // Exports: default
 
-// Module 12393 (InAppReportsBottomButton)
-import "result";
+// Module 12415 (InAppReportsBottomButton)
+import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_4;
-let closure_5;
+let c4;
+let c5;
 const require = arg1;
-({ jsx: closure_4, jsxs: closure_5 } = jsxProd);
-_createForOfIteratorHelperLoose = { container: { flex: 0, alignSelf: "stretch", paddingBottom: 12 }, paddingHorizontal: { paddingHorizontal: 16 } };
-_createForOfIteratorHelperLoose = { height: 1, alignSelf: "stretch", backgroundColor: require("_createForOfIteratorHelperLoose").colors.BORDER_SUBTLE, marginBottom: 16 };
-_createForOfIteratorHelperLoose.divider = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.descriptionText = { lineHeight: 16, textAlign: "center", marginBottom: 12 };
-let obj1 = { color: require("_createForOfIteratorHelperLoose").unsafe_rawColors.RED_400, fontSize: 12, lineHeight: 16, fontFamily: require("sum").Fonts.PRIMARY_SEMIBOLD, textAlign: "center", marginTop: 12 };
-_createForOfIteratorHelperLoose.errorText = obj1;
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+({ jsx: c4, jsxs: c5 } = jsxProd);
+createCacheKey = { container: { flex: 0, alignSelf: "stretch", paddingBottom: 12 }, paddingHorizontal: { paddingHorizontal: 16 }, divider: null, descriptionText: null, errorText: null };
+createCacheKey = { height: 1, alignSelf: "stretch", backgroundColor: require("Themes").colors.BORDER_SUBTLE, marginBottom: 16 };
+createCacheKey[2] = createCacheKey;
+createCacheKey[3] = { lineHeight: 16, textAlign: "center", marginBottom: 12 };
+createCacheKey[4] = { color: require("Themes").unsafe_rawColors.RED_400, fontSize: 12, lineHeight: 16, fontFamily: require("sum").Fonts.PRIMARY_SEMIBOLD, textAlign: "center", marginTop: 12 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let obj1 = { color: require("Themes").unsafe_rawColors.RED_400, fontSize: 12, lineHeight: 16, fontFamily: require("sum").Fonts.PRIMARY_SEMIBOLD, textAlign: "center", marginTop: 12 };
 const result = require("sum").fileFinishedImporting("modules/in_app_reports/native/components/InAppReportsBottomButton.tsx");
 
 export default function InAppReportsBottomButton(button) {
@@ -31,67 +31,74 @@ export default function InAppReportsBottomButton(button) {
   button = button.button;
   ({ onPress: importDefault, isModeratorReport } = button);
   ({ disabled, hasError } = button);
-  const tmp = _createForOfIteratorHelperLoose();
+  const tmp = createCacheKey();
   if (null == button) {
     return null;
   } else {
-    const string3 = button(1212).intl.string;
+    const string3 = button(1236).intl.string;
     if ("submit" === button.type) {
-      const intl2 = button(1212).intl;
+      const intl2 = tmp17(1236).intl;
       const string = intl2.string;
       if (isModeratorReport) {
-        let stringResult = string(importDefault(2299).ZUyreS);
+        let stringResult = string(importDefault(2323).ZUyreS);
       } else {
-        stringResult = string(tmp6(1212).t["G+vU89"]);
-        const intl3 = tmp6(1212).intl;
-        const formatResult = intl3.format(tmp6(1212).t.Q0tSKT, {});
+        const intl3 = tmp17(1236).intl;
+        const stringResult1 = string(tmp17(1236).t["G+vU89"]);
+        stringResult = stringResult1;
+        const formatResult = intl3.format(tmp17(1236).t.Q0tSKT, {});
       }
     } else {
       if ("next" === button.type) {
-        const intl = button(1212).intl;
-        let stringResult1 = intl.string(button(1212).t.PDTjLN);
+        const intl = tmp17(1236).intl;
+        let stringResult2 = intl.string(tmp17(1236).t.PDTjLN);
       } else {
-        stringResult1 = tmp33;
+        stringResult2 = tmp19;
         if ("cancel" === button.type) {
-          const intl5 = button(1212).intl;
-          stringResult1 = intl5.string(button(1212).t["ETE/oC"]);
+          const intl5 = tmp17(1236).intl;
+          stringResult2 = intl5.string(tmp17(1236).t["ETE/oC"]);
         }
       }
-      const intl4 = button(1212).intl;
+      const intl4 = tmp17(1236).intl;
       const string2 = intl4.string;
       if (isModeratorReport) {
-        let string2Result = string2(importDefault(2299).psKFdJ);
+        let string2Result = string2(importDefault(2323).psKFdJ);
       } else {
-        string2Result = string2(button(1212).t.h6D8Vy);
+        string2Result = string2(tmp17(1236).t.h6D8Vy);
       }
-      let obj = { style: tmp.container };
-      obj = { style: tmp.divider };
+      let obj = { style: null, children: null };
+      obj[0] = tmp.container;
+      obj = { style: null };
+      obj[0] = tmp.divider;
       const items = [callback(View, obj), ];
-      obj = { style: tmp.paddingHorizontal };
-      let tmp20 = null;
-      if (null != tmp2) {
-        const obj1 = { style: tmp.descriptionText, variant: "text-xs/medium", color: "text-default", children: tmp2 };
-        tmp20 = callback(button(4161).Text, obj1);
+      obj = { style: null, children: null };
+      obj[0] = tmp.paddingHorizontal;
+      let tmp14Result = null;
+      if (null != tmp3) {
+        const obj1 = { style: null, variant: "text-xs/medium", color: "text-default", children: null };
+        obj1[0] = tmp.descriptionText;
+        obj1[3] = tmp3;
+        tmp14Result = tmp14(tmp17(4185).Text, obj1);
       }
-      const items1 = [tmp20, , ];
-      const obj2 = {
-        disabled,
-        onPress() {
-              return callback(button);
-            },
-        text: stringResult1,
-        variant: str2
+      const items1 = [tmp14Result, , ];
+      const obj2 = { disabled: null, onPress: null, text: null, variant: null };
+      obj2[0] = disabled;
+      obj2[1] = function onPress() {
+        return callback(button);
       };
-      items1[1] = callback(button(4578).Button, obj2);
-      let tmp27 = null;
+      obj2[2] = stringResult2;
+      obj2[3] = str2;
+      items1[1] = callback(tmp17(4600).Button, obj2);
+      tmp14Result = null;
       if (hasError) {
-        const obj3 = { style: tmp.errorText, children: string2Result };
-        tmp27 = callback(button(1273).LegacyText, obj3);
+        const obj3 = { style: null, children: null };
+        obj3[0] = tmp.errorText;
+        obj3[1] = string2Result;
+        tmp14Result = tmp14(tmp17(1297).LegacyText, obj3);
       }
-      items1[2] = tmp27;
-      obj.children = items1;
+      items1[2] = tmp14Result;
+      obj[1] = items1;
       items[1] = closure_5(View, obj);
-      obj.children = items;
+      obj[1] = items;
       return closure_5(View, obj);
     }
   }

@@ -1,176 +1,136 @@
-// Module ID: 12413
-// Function ID: 96335
+// Module ID: 12435
+// Function ID: 12436
 // Name: items
-// Dependencies: [57, 31, 27, 6207, 1852, 33, 4165, 689, 4026, 4166, 4169, 4168, 4589, 668, 6548, 4134, 4135, 4161, 1212, 2]
+// Dependencies: [32, 19, 17, 6227, 1876, 21, 4189, 712, 4050, 4190, 4193, 4192, 4611, 691, 6569, 4158, 4159, 4185, 1236, 2]
 // Exports: default
 
-// Module 12413 (items)
+// Module 12435 (items)
 import importDefaultResult from "_slicedToArray";
-import result from "result";
-import get_ActivityIndicator from "get ActivityIndicator";
+import set from "set";
+import get_ActivityIndicator from "Text";
 import GuildFeatures from "GuildFeatures";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
 let StyleSheet;
-let closure_10;
-let closure_5;
+let c10;
+let c5;
+let c9;
 let closure_6;
-let closure_7;
-let closure_8;
-let closure_9;
+let error;
+let metroImportAll;
 let tmp7;
 let tmp8;
 const require = arg1;
-({ Pressable: closure_5, StyleSheet, View: closure_6 } = get_ActivityIndicator);
-({ PREMIUM_TYPE_DISPLAY_NAME: closure_7, PremiumTypes: closure_8 } = GuildFeatures);
-({ jsx: closure_9, jsxs: closure_10 } = jsxProd);
+let c3 = importDefaultResult;
+({ Pressable: c5, StyleSheet, View: closure_6 } = get_ActivityIndicator);
+({ PREMIUM_TYPE_DISPLAY_NAME: error, PremiumTypes: metroImportAll } = GuildFeatures);
+({ jsx: c9, jsxs: c10 } = jsxProd);
 [tmp7, tmp8] = importDefaultResult(require("items").Gradients.PREMIUM_TIER_2, 2);
 let items = [tmp7, tmp8, tmp7, tmp8, tmp7];
 let closure_12 = [0, 0.25, 0.5, 0.75, 1];
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { flexDirection: "row", alignItems: "center", alignSelf: "flex-start", borderRadius: require("_createForOfIteratorHelperLoose").radii.lg, backgroundColor: require("_createForOfIteratorHelperLoose").colors.MOBILE_SEGMENTED_CONTROL_BACKGROUND, padding: require("_createForOfIteratorHelperLoose").space.PX_4 };
-_createForOfIteratorHelperLoose.pill = _createForOfIteratorHelperLoose;
+createCacheKey = { pill: null, tab: null, indicator: null, gradientLayer: null, gradientTrack: null, gradientFill: null, tabText: null };
+createCacheKey = { flexDirection: "row", alignItems: "center", alignSelf: "flex-start", borderRadius: require("Themes").radii.lg, backgroundColor: require("Themes").colors.MOBILE_SEGMENTED_CONTROL_BACKGROUND, padding: require("Themes").space.PX_4 };
+createCacheKey[0] = createCacheKey;
 const importDefaultResultResult = importDefaultResult(require("items").Gradients.PREMIUM_TIER_2, 2);
-_createForOfIteratorHelperLoose.tab = { paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_12, paddingVertical: require("_createForOfIteratorHelperLoose").space.PX_4 };
-let obj2 = { position: "absolute", left: 0, borderRadius: require("_createForOfIteratorHelperLoose").radii.md, backgroundColor: require("_createForOfIteratorHelperLoose").colors.MOBILE_SEGMENTED_CONTROL_INDICATOR_BACKGROUND, overflow: "hidden" };
-_createForOfIteratorHelperLoose.indicator = obj2;
+createCacheKey[1] = { paddingHorizontal: require("Themes").space.PX_12, paddingVertical: require("Themes").space.PX_4 };
+let obj1 = { paddingHorizontal: require("Themes").space.PX_12, paddingVertical: require("Themes").space.PX_4 };
+createCacheKey[2] = { position: "absolute", left: 0, borderRadius: require("Themes").radii.md, backgroundColor: require("Themes").colors.MOBILE_SEGMENTED_CONTROL_INDICATOR_BACKGROUND, overflow: "hidden" };
 let merged = Object.assign(StyleSheet.absoluteFillObject);
-_createForOfIteratorHelperLoose.gradientLayer = {};
+createCacheKey[3] = {};
 let obj4 = {};
 const merged1 = Object.assign(StyleSheet.absoluteFillObject);
-obj4["right"] = undefined;
-obj4["width"] = 240;
-_createForOfIteratorHelperLoose.gradientTrack = obj4;
-_createForOfIteratorHelperLoose.gradientFill = { flex: 1 };
-_createForOfIteratorHelperLoose.tabText = { fontStyle: "italic" };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+obj4.right = undefined;
+obj4.width = 240;
+createCacheKey[4] = obj4;
+createCacheKey[5] = { flex: 1 };
+createCacheKey[6] = { fontStyle: "italic" };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
 let closure_14 = { code: "function BuyNitroPlanSelectorTierToggleTsx1(){const{nitroProgress}=this.__closure;return{opacity:nitroProgress.get()};}" };
 let closure_15 = { code: "function BuyNitroPlanSelectorTierToggleTsx2(){const{gradientFlowX}=this.__closure;return{transform:[{translateX:gradientFlowX.get()}]};}" };
 let closure_16 = { code: "function BuyNitroPlanSelectorTierToggleTsx3(){const{indicatorX,indicatorWidth}=this.__closure;return{transform:[{translateX:indicatorX.get()}],width:indicatorWidth.get()};}" };
-let obj1 = { paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_12, paddingVertical: require("_createForOfIteratorHelperLoose").space.PX_4 };
+let obj2 = { position: "absolute", left: 0, borderRadius: require("Themes").radii.md, backgroundColor: require("Themes").colors.MOBILE_SEGMENTED_CONTROL_INDICATOR_BACKGROUND, overflow: "hidden" };
 let obj3 = {};
 let result = require("get ActivityIndicator").fileFinishedImporting("modules/premium_marketing/native/components/plan_selector/BuyNitroPlanSelectorTierToggle.tsx");
 
 export default function BuyNitroPlanSelectorTierToggle(selectedTier) {
-  let dependencyMap;
-  let gradientFadeStyle;
-  let gradientFlowStyle;
-  let importDefault;
+  let sharedValue;
+  let sharedValue1;
   selectedTier = selectedTier.selectedTier;
-  ({ setSelectedTier: importDefault, disabled: dependencyMap } = selectedTier);
-  const tmp = _createForOfIteratorHelperLoose();
-  ({ gradientFadeStyle, gradientFlowStyle } = (function useNitroGradientFlow(selectedTier) {
-    selectedTier = tmp;
-    let obj = selectedTier(outer1_2[8]);
+  let _require = selectedTier;
+  ({ setSelectedTier: sharedValue, disabled: sharedValue1 } = selectedTier);
+  let importDefaultResult;
+  let React;
+  let c5;
+  let ref;
+  let closure_7;
+  let sharedValue2;
+  let sharedValue3;
+  let closure_10;
+  const tmp = createCacheKey();
+  importDefaultResult = tmp;
+  _require = undefined;
+  sharedValue = undefined;
+  sharedValue1 = undefined;
+  _require = tmp2;
+  let obj = _require(sharedValue1[8]);
+  let num = 0;
+  if (selectedTier !== sharedValue2.TIER_0) {
+    num = 1;
+  }
+  sharedValue = obj.useSharedValue(num);
+  let items = [selectedTier !== sharedValue2.TIER_0, sharedValue];
+  const effect = React.useEffect(() => {
     let num = 0;
-    if (selectedTier !== sharedValue.TIER_0) {
+    if (_undefined) {
       num = 1;
     }
-    sharedValue = obj.useSharedValue(num);
-    let items = [selectedTier !== sharedValue.TIER_0, sharedValue];
-    const effect = React.useEffect(() => {
-      let num = 0;
-      if (closure_0) {
-        num = 1;
-      }
-      const result = sharedValue.set(selectedTier(outer2_2[9]).withTiming(num, selectedTier(outer2_2[10]).timingStandard));
-    }, items);
-    const sharedValue1 = selectedTier(outer1_2[8]).useSharedValue(0);
-    const items1 = [sharedValue1];
-    const effect1 = React.useEffect(() => {
-      const accessibilityPreferencesSharedValue = selectedTier(outer2_2[11]).accessibilityPreferencesSharedValue;
-      if (!accessibilityPreferencesSharedValue.get().reduceMotion) {
-        let obj = selectedTier(outer2_2[8]);
-        obj = { duration: 5000, easing: selectedTier(outer2_2[8]).Easing.linear };
-        const result = sharedValue1.set(obj.withRepeat(selectedTier(outer2_2[9]).withTiming(-120, obj), -1, false));
-        return () => selectedTier(outer3_2[8]).cancelAnimation(outer1_2);
-      }
-    }, items1);
-    obj = {};
-    const obj2 = selectedTier(outer1_2[8]);
-    const fn = function s() {
-      return { opacity: sharedValue.get() };
-    };
-    fn.__closure = { nitroProgress: sharedValue };
-    fn.__workletHash = 7392050192451;
-    fn.__initData = outer1_14;
-    obj.gradientFadeStyle = selectedTier(outer1_2[8]).useAnimatedStyle(fn);
-    const obj4 = selectedTier(outer1_2[8]);
-    const fn2 = function c() {
-      let obj = {};
-      obj = { translateX: sharedValue1.get() };
-      const items = [obj];
-      obj.transform = items;
-      return obj;
-    };
-    fn2.__closure = { gradientFlowX: sharedValue1 };
-    fn2.__workletHash = 14545174926033;
-    fn2.__initData = outer1_15;
-    obj.gradientFlowStyle = selectedTier(outer1_2[8]).useAnimatedStyle(fn2);
-    return obj;
-  })(selectedTier));
-  const tmp3 = tmp(React.useState({}), 2);
-  React = tmp3[1];
-  let closure_5 = tmp4;
-  const ref = React.useRef(null);
-  const importDefaultResult = tmp;
-  const tmp2 = (function useNitroGradientFlow(selectedTier) {
-    selectedTier = tmp;
-    let obj = selectedTier(outer1_2[8]);
-    let num = 0;
-    if (selectedTier !== sharedValue.TIER_0) {
-      num = 1;
+    const result = sharedValue.set(_undefined(sharedValue1[9]).withTiming(num, _undefined(sharedValue1[10]).timingStandard));
+  }, items);
+  let tmp3Result = tmp3(tmp4[8]);
+  sharedValue1 = tmp3Result.useSharedValue(0);
+  const items1 = [sharedValue1];
+  const effect1 = React.useEffect(() => {
+    const accessibilityPreferencesSharedValue = _undefined(sharedValue1[11]).accessibilityPreferencesSharedValue;
+    if (!accessibilityPreferencesSharedValue.get().reduceMotion) {
+      let tmpResult = tmp(tmp2[8]);
+      tmpResult = tmp(tmp2[9]);
+      const obj = { duration: 5000, easing: null };
+      obj[1] = tmp(tmp2[8]).Easing.linear;
+      const result = sharedValue1.set(tmpResult.withRepeat(tmpResult.withTiming(-120, obj), -1, false));
+      return () => outer1_0(outer1_2[8]).cancelAnimation(closure_2);
     }
-    sharedValue = obj.useSharedValue(num);
-    let items = [selectedTier !== sharedValue.TIER_0, sharedValue];
-    const effect = React.useEffect(() => {
-      let num = 0;
-      if (closure_0) {
-        num = 1;
-      }
-      const result = sharedValue.set(selectedTier(outer2_2[9]).withTiming(num, selectedTier(outer2_2[10]).timingStandard));
-    }, items);
-    const sharedValue1 = selectedTier(outer1_2[8]).useSharedValue(0);
-    const items1 = [sharedValue1];
-    const effect1 = React.useEffect(() => {
-      const accessibilityPreferencesSharedValue = selectedTier(outer2_2[11]).accessibilityPreferencesSharedValue;
-      if (!accessibilityPreferencesSharedValue.get().reduceMotion) {
-        let obj = selectedTier(outer2_2[8]);
-        obj = { duration: 5000, easing: selectedTier(outer2_2[8]).Easing.linear };
-        const result = sharedValue1.set(obj.withRepeat(selectedTier(outer2_2[9]).withTiming(-120, obj), -1, false));
-        return () => selectedTier(outer3_2[8]).cancelAnimation(outer1_2);
-      }
-    }, items1);
-    obj = {};
-    const obj2 = selectedTier(outer1_2[8]);
-    const fn = function s() {
-      return { opacity: sharedValue.get() };
-    };
-    fn.__closure = { nitroProgress: sharedValue };
-    fn.__workletHash = 7392050192451;
-    fn.__initData = outer1_14;
-    obj.gradientFadeStyle = selectedTier(outer1_2[8]).useAnimatedStyle(fn);
-    const obj4 = selectedTier(outer1_2[8]);
-    const fn2 = function c() {
-      let obj = {};
-      obj = { translateX: sharedValue1.get() };
-      const items = [obj];
-      obj.transform = items;
-      return obj;
-    };
-    fn2.__closure = { gradientFlowX: sharedValue1 };
-    fn2.__workletHash = 14545174926033;
-    fn2.__initData = outer1_15;
-    obj.gradientFlowStyle = selectedTier(outer1_2[8]).useAnimatedStyle(fn2);
+  }, items1);
+  tmp3Result = tmp3(tmp4[8]);
+  const fn = function s() {
+    return { opacity: sharedValue.get() };
+  };
+  fn.__closure = { nitroProgress: sharedValue };
+  fn.__workletHash = 7392050192451;
+  fn.__initData = closure_14;
+  const animatedStyle = tmp3Result.useAnimatedStyle(fn);
+  const fn2 = function c() {
+    let obj = { transform: null };
+    obj = { translateX: sharedValue1.get() };
+    const items = [obj];
+    obj[0] = items;
     return obj;
-  })(selectedTier);
-  let closure_7 = React.useRef(new Map());
-  let obj = selectedTier(4026);
-  let sharedValue = obj.useSharedValue(0);
-  let obj1 = selectedTier(4026);
-  let sharedValue1 = obj1.useSharedValue(0);
-  let closure_10 = React.useRef(false);
+  };
+  fn2.__closure = { gradientFlowX: sharedValue1 };
+  fn2.__workletHash = 14545174926033;
+  fn2.__initData = closure_15;
+  const animatedStyle1 = _require(sharedValue1[8]).useAnimatedStyle(fn2);
+  const tmp11 = importDefaultResult(React.useState({}), 2);
+  React = tmp11[1];
+  c5 = tmp12;
+  ref = React.useRef(null);
+  const tmp3Result1 = _require(sharedValue1[8]);
+  closure_7 = React.useRef(new Map());
+  const map = new Map();
+  sharedValue2 = _require(sharedValue1[8]).useSharedValue(0);
+  const tmp3Result2 = _require(sharedValue1[8]);
+  sharedValue3 = _require(sharedValue1[8]).useSharedValue(0);
+  closure_10 = React.useRef(false);
   const layoutEffect = React.useLayoutEffect(() => {
     let current = ref.current;
     if (null != current) {
@@ -182,7 +142,7 @@ export default function BuyNitroPlanSelectorTierToggle(selectedTier) {
           let closure_1 = arg1;
           let closure_2 = arg2;
           let closure_3 = arg3;
-          outer2_4((arg0) => {
+          outer1_4((arg0) => {
             let obj = {};
             const merged = Object.assign(arg0);
             obj = { x: closure_0, y: closure_1, width: closure_2, height: closure_3 };
@@ -193,66 +153,69 @@ export default function BuyNitroPlanSelectorTierToggle(selectedTier) {
       });
     }
   }, []);
-  let items = [tmp3[0][selectedTier], sharedValue, sharedValue1];
+  const items2 = [tmp11[0][selectedTier], sharedValue2, sharedValue3];
   const layoutEffect1 = React.useLayoutEffect(() => {
-    if (null != tmp4) {
+    if (null != c5) {
       if (ref2.current) {
-        let obj = selectedTier(outer1_2[9]);
-        obj = { duration: 220 };
-        const result = sharedValue.set(obj.withTiming(tmp4.x, obj));
-        obj = { duration: 220 };
-        const result1 = sharedValue1.set(selectedTier(outer1_2[9]).withTiming(tmp4.width, obj));
-        const obj3 = selectedTier(outer1_2[9]);
+        const result = sharedValue2.set(_undefined(sharedValue1[9]).withTiming(tmp.x, { duration: 220 }));
+        const obj = _undefined(sharedValue1[9]);
+        const result1 = sharedValue3.set(_undefined(sharedValue1[9]).withTiming(tmp.width, { duration: 220 }));
+        const obj2 = _undefined(sharedValue1[9]);
       } else {
-        ref2.current = true;
-        const result2 = sharedValue.set(tmp4.x);
-        const result3 = sharedValue1.set(tmp4.width);
+        tmp12.current = true;
+        const result2 = sharedValue2.set(tmp.x);
+        const result3 = sharedValue3.set(tmp.width);
       }
     }
-  }, items);
-  selectedTier(4026);
-  let fn = function k() {
-    let obj = {};
-    obj = { translateX: sharedValue.get() };
+  }, items2);
+  _require(sharedValue1[8]);
+  const fn3 = function k() {
+    let obj = { transform: null, width: null };
+    obj = { translateX: sharedValue2.get() };
     const items = [obj];
-    obj.transform = items;
-    obj.width = sharedValue1.get();
+    obj[0] = items;
+    obj[1] = sharedValue3.get();
     return obj;
   };
-  fn.__closure = { indicatorX: sharedValue, indicatorWidth: sharedValue1 };
-  fn.__workletHash = 16235876189557;
-  fn.__initData = closure_16;
-  obj = { ref, style: tmp.pill, accessibilityRole: "tablist" };
-  let tmp15 = null != tmp4;
-  if (tmp15) {
-    obj = { pointerEvents: "none" };
-    let items1 = [tmp.indicator, , ];
-    obj1 = {};
-    ({ y: obj5.top, height: obj5.height } = tmp4);
-    items1[1] = obj1;
-    items1[2] = tmp12;
-    obj.style = items1;
-    let obj2 = {};
-    const items2 = [tmp.gradientLayer, gradientFadeStyle];
-    obj2.style = items2;
-    let obj3 = {};
-    const items3 = [tmp.gradientTrack, gradientFlowStyle];
-    obj3.style = items3;
-    let obj4 = { colors: items, locations: closure_12, start: selectedTier(668).HorizontalGradient.START, end: selectedTier(668).HorizontalGradient.END, style: tmp.gradientFill };
-    obj3.children = sharedValue1(importDefault(4589), obj4);
-    obj2.children = sharedValue1(importDefault(4026).View, obj3);
-    obj.children = sharedValue1(importDefault(4026).View, obj2);
-    tmp15 = sharedValue1(importDefault(4026).View, obj);
-    const tmp19 = importDefault(4589);
+  fn3.__closure = { indicatorX: sharedValue2, indicatorWidth: sharedValue3 };
+  fn3.__workletHash = 16235876189557;
+  fn3.__initData = closure_16;
+  obj = { ref, style: tmp.pill, accessibilityRole: "tablist", children: null };
+  let tmp23 = null != tmp12;
+  if (tmp23) {
+    obj = { pointerEvents: "none", style: null, children: null };
+    const items3 = [tmp.indicator, , ];
+    ({ y: obj9[0], height: obj9[1] } = tmp12);
+    items3[1] = { top: null, height: null };
+    items3[2] = tmp20;
+    obj[1] = items3;
+    let obj2 = { style: null, children: null };
+    const items4 = [tmp.gradientLayer, animatedStyle];
+    obj2[0] = items4;
+    const obj3 = { style: null, children: null };
+    const items5 = [tmp.gradientTrack, animatedStyle1];
+    obj3[0] = items5;
+    const obj4 = { colors: null, locations: null, start: null, end: null, style: null };
+    obj4[0] = items;
+    obj4[1] = closure_12;
+    obj4[2] = tmp3(tmp4[13]).HorizontalGradient.START;
+    obj4[3] = tmp3(tmp4[13]).HorizontalGradient.END;
+    obj4[4] = tmp.gradientFill;
+    obj3[1] = sharedValue3(sharedValue(tmp4[12]), obj4);
+    obj2[1] = sharedValue3(sharedValue(tmp4[8]).View, obj3);
+    obj[2] = sharedValue3(sharedValue(tmp4[8]).View, obj2);
+    tmp23 = sharedValue3(sharedValue(tmp4[8]).View, obj);
+    const obj1 = { top: null, height: null };
+    const tmp26 = sharedValue(tmp4[12]);
   }
-  const items4 = [tmp15, ];
-  const NITRO_PLAN_TIERS = selectedTier(6548).NITRO_PLAN_TIERS;
-  items4[1] = NITRO_PLAN_TIERS.map((arg0) => {
+  const items6 = [tmp23, ];
+  const NITRO_PLAN_TIERS = tmp3(tmp4[14]).NITRO_PLAN_TIERS;
+  items6[1] = NITRO_PLAN_TIERS.map((arg0) => {
     let closure_0 = arg0;
     let str = "text-muted";
     if (arg0 === closure_0) {
       let str2 = "interactive-text-active";
-      if (arg0 !== tmp2) {
+      if (arg0 !== tmp3) {
         str2 = "text-overlay-light";
       }
       str = str2;
@@ -264,27 +227,28 @@ export default function BuyNitroPlanSelectorTierToggle(selectedTier) {
           const result = current.set(closure_0, arg0);
         }
       },
-      style: tmp.tab,
-      disabled: closure_2,
+      style: _undefined2.tab,
+      disabled: sharedValue1,
       onPress() {
-        const result = selectedTier(outer2_2[15]).triggerHapticFeedback(outer2_1(outer2_2[16]).SELECTION);
+        const result = callback(sharedValue1[15]).triggerHapticFeedback(sharedValue(sharedValue1[16]).SELECTION);
         outer1_1(closure_0);
       },
       accessibilityRole: "tab",
-      accessibilityState: obj
+      accessibilityState: obj,
+      children: null
     };
-    obj = { selected: tmp, disabled: closure_2 };
-    obj = { variant: "heading-sm/extrabold", color: str, style: arg0 === closure_0.tabText };
-    const intl = selectedTier(outer1_2[18]).intl;
-    if (arg0 === sharedValue.TIER_0) {
-      let tUbSDK = selectedTier(outer1_2[18]).t.tUbSDK;
+    obj = { selected: tmp, disabled: sharedValue1 };
+    obj = { variant: "heading-sm/extrabold", color: str, style: _undefined2.tabText, children: null };
+    const intl = _undefined(sharedValue1[18]).intl;
+    if (arg0 === sharedValue2.TIER_0) {
+      let tUbSDK = _undefined(sharedValue1[18]).t.tUbSDK;
     } else {
       tUbSDK = ref[arg0];
     }
-    obj.children = intl.string(tUbSDK).toUpperCase();
-    obj.children = sharedValue1(selectedTier(outer1_2[17]).Text, obj);
-    return sharedValue1(closure_5, obj, arg0);
+    obj[3] = intl.string(tUbSDK).toUpperCase();
+    obj[6] = sharedValue3(_undefined(sharedValue1[17]).Text, obj);
+    return sharedValue3(c5, obj, arg0);
   });
-  obj.children = items4;
+  obj[3] = items6;
   return closure_10(ref, obj);
 };

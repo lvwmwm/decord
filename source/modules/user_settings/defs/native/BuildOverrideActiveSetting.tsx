@@ -1,28 +1,14 @@
-// Module ID: 14519
-// Function ID: 110782
-// Name: useBuildOverrideActive
-// Dependencies: [10444, 33, 13612, 566, 10956, 13852, 13613, 10099, 13618, 2]
+// Module ID: 14544
+// Function ID: 14545
+// Name: pressable
+// Dependencies: [10468, 21, 13633, 589, 10980, 13873, 13634, 10120, 13639, 2]
 
-// Module 14519 (useBuildOverrideActive)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 14544 (pressable)
+import getCurrentBuildOverride from "getCurrentBuildOverride";
 import { jsx } from "jsxProd";
 import createToggle from "createToggle";
 
 const require = arg1;
-function useBuildOverrideActive() {
-  const items = [_isNativeReflectConstruct];
-  return require(566) /* initialize */.useStateFromStores(items, () => {
-    const overrides = outer1_2.getCurrentBuildOverride().overrides;
-    let id;
-    if (null != overrides) {
-      const tmp4 = overrides[outer1_0(undefined, outer1_1[4]).DEVICE_FIELD];
-      if (null != tmp4) {
-        id = tmp4.id;
-      }
-    }
-    return id;
-  });
-}
 createToggle = {
   useTitle() {
     return "Build Override Active";
@@ -30,21 +16,46 @@ createToggle = {
   parent: null,
   IconComponent: require("RefreshIcon").RefreshIcon,
   useDescription: function useBuildOverrideActiveDescription() {
-    const tmp = useBuildOverrideActive();
-    let tmp2;
-    if (null != tmp) {
-      const obj = { label: "Build override: ", value: tmp };
-      tmp2 = jsx(require(13613) /* DevToolsContentSortButtons */.DevToolsContentSubLabel, { label: "Build override: ", value: tmp });
+    let obj = require(589) /* initialize */;
+    const items = [getCurrentBuildOverride];
+    const stateFromStores = obj.useStateFromStores(items, () => {
+      const overrides = currentBuildOverride.getCurrentBuildOverride().overrides;
+      let id;
+      if (overrides != null) {
+        const tmp4 = overrides[callback(undefined, table[4]).DEVICE_FIELD];
+        if (tmp4 != null) {
+          id = tmp4.id;
+        }
+      }
+      return id;
+    });
+    let tmp4;
+    if (null != stateFromStores) {
+      obj = { label: "Build override: ", value: null };
+      obj[1] = stateFromStores;
+      tmp4 = jsx(require(13634) /* DevToolsContentSortButtons */.DevToolsContentSubLabel, { label: "Build override: ", value: null });
     }
-    return tmp2;
+    return tmp4;
   },
   usePredicate: function useHasBuildOverrideActive() {
-    const staffOrDeveloperSettingPredicate = require(13852) /* useStaffOrDeveloperSettingPredicate */.useStaffOrDeveloperSettingPredicate();
-    const obj = require(13852) /* useStaffOrDeveloperSettingPredicate */;
-    return null != useBuildOverrideActive() && staffOrDeveloperSettingPredicate;
+    const staffOrDeveloperSettingPredicate = require(13873) /* useStaffOrDeveloperSettingPredicate */.useStaffOrDeveloperSettingPredicate();
+    const obj = require(13873) /* useStaffOrDeveloperSettingPredicate */;
+    const items = [getCurrentBuildOverride];
+    const obj2 = require(589) /* initialize */;
+    return null != require(589) /* initialize */.useStateFromStores(items, () => {
+      const overrides = currentBuildOverride.getCurrentBuildOverride().overrides;
+      let id;
+      if (overrides != null) {
+        const tmp4 = overrides[callback(undefined, table[4]).DEVICE_FIELD];
+        if (tmp4 != null) {
+          id = tmp4.id;
+        }
+      }
+      return id;
+    }) && staffOrDeveloperSettingPredicate;
   },
   onPress: function handleBuildOverrideActivePress() {
-    require(13612) /* navigateToDevTools */.navigateToDevTools({ screenKey: "buildOverride" });
+    require(13633) /* navigateToDevTools */.navigateToDevTools({ screenKey: "buildOverride" });
   },
   withArrow: true
 };

@@ -1,11 +1,11 @@
-// Module ID: 9223
-// Function ID: 72165
+// Module ID: 9247
+// Function ID: 9248
 // Name: createNativePlaceholderConfig
-// Dependencies: [31, 8799, 4009, 2]
+// Dependencies: [19, 8823, 4033, 2]
 // Exports: default
 
-// Module 9223 (createNativePlaceholderConfig)
-import result from "result";
+// Module 9247 (createNativePlaceholderConfig)
+import noop from "noop";
 
 let require = arg1;
 function createNativePlaceholderConfig(type) {
@@ -14,146 +14,128 @@ function createNativePlaceholderConfig(type) {
   let spaceGap;
   let verticalAlignment;
   type = undefined;
-  if (null != type) {
+  if (type != null) {
     type = type.type;
   }
-  const obj = { borderRadius: undefined, borderTopLeftRadius: undefined, borderTopRightRadius: undefined, borderBottomLeftRadius: undefined, borderBottomRightRadius: undefined, divider: undefined, dividerColorRgba: undefined, dividerPaddingLeft: undefined, dividerPaddingRight: undefined, placeholderShape: undefined, placeholderShapeColorRgba: undefined, placeholderShapeCount: undefined, placeholderShapeGap: undefined, placeholderShapePaddingHorizontal: undefined, placeholderShapePaddingVertical: undefined, placeholderFeedBackgroundColorRgba: undefined, placeholderFeedColorRgba: undefined, placeholderFeedLabelPadding: undefined, placeholderFeedLabelPaddingInnerRatio: undefined, placeholderFeedLabelSize: undefined, placeholderFeedLabelSecondarySize: undefined, placeholderFeedPadding: undefined, placeholderFeedShape: undefined, placeholderFeedShapeSize: undefined };
   let NONE = type;
-  if (null == type) {
-    NONE = require(8799) /* FastestListPropsPlaceholderType */.FastestListPropsPlaceholderType.NONE;
+  if (type == null) {
+    NONE = require(8823) /* FastestListPropsPlaceholderType */.FastestListPropsPlaceholderType.NONE;
   }
-  obj.placeholderType = NONE;
-  obj.width = undefined;
-  obj.height = undefined;
-  obj.verticalAlignment = undefined;
-  obj.horizontalAlignment = undefined;
+  const obj = { borderRadius: "Array", borderTopLeftRadius: "create", borderTopRightRadius: "channel", borderBottomLeftRadius: "c", borderBottomRightRadius: "nm", divider: "has", dividerColorRgba: "icon", dividerPaddingLeft: "channelId", dividerPaddingRight: "LIGHT", placeholderShape: "nm", placeholderShapeColorRgba: "it", placeholderShapeCount: "useCallback", placeholderShapeGap: "hasDiversityParent", placeholderShapePaddingHorizontal: "icon", placeholderShapePaddingVertical: "padding", placeholderFeedBackgroundColorRgba: "marginTop", placeholderFeedColorRgba: "ao", placeholderFeedLabelPadding: "r", placeholderFeedLabelPaddingInnerRatio: "isArray", placeholderFeedLabelSize: "ty", placeholderFeedLabelSecondarySize: "Date", placeholderFeedPadding: "Array", placeholderFeedShape: "isArray", placeholderFeedShapeSize: "s", placeholderType: true, width: true, height: true, verticalAlignment: true, horizontalAlignment: true };
+  obj[24] = NONE;
   if (null == type) {
     return obj;
   } else {
-    let num20 = 1;
-    if (require(8799) /* FastestListPropsPlaceholderType */.FastestListPropsPlaceholderType.NONE !== type) {
-      if (require(dependencyMap[num20]).FastestListPropsPlaceholderType.SHAPE === type) {
-        const borderRadius2 = type.borderRadius;
-        let num15 = 0;
-        if (null != borderRadius2) {
-          num15 = borderRadius2;
+    if (require(8823) /* FastestListPropsPlaceholderType */.FastestListPropsPlaceholderType.NONE !== type) {
+      if (tmp11(8823).FastestListPropsPlaceholderType.SHAPE === type) {
+        let num9 = type.borderRadius;
+        if (num9 == null) {
+          num9 = 0;
         }
-        obj.borderRadius = num15;
+        obj.borderRadius = num9;
         ({ shape: obj.placeholderShape, spaceGap } = type);
-        let num16 = 0;
-        if (null != spaceGap) {
-          num16 = spaceGap;
+        if (spaceGap == null) {
+          spaceGap = 0;
         }
-        obj.placeholderShapeGap = num16;
-        const paddingHorizontal = type.paddingHorizontal;
-        let num17 = 0;
-        if (null != paddingHorizontal) {
-          num17 = paddingHorizontal;
+        obj.placeholderShapeGap = spaceGap;
+        let num10 = type.paddingHorizontal;
+        if (num10 == null) {
+          num10 = 0;
         }
-        obj.placeholderShapePaddingHorizontal = num17;
-        const paddingVertical = type.paddingVertical;
-        let num18 = 0;
-        if (null != paddingVertical) {
-          num18 = paddingVertical;
+        obj.placeholderShapePaddingHorizontal = num10;
+        let num11 = type.paddingVertical;
+        if (num11 == null) {
+          num11 = 0;
         }
-        obj.placeholderShapePaddingVertical = num18;
-        obj.placeholderShapeColorRgba = require(4009) /* hexToRgb */.hexToRgbaString(type.colorHex, type.opacity);
-        const shapeCount = type.shapeCount;
-        if (null != shapeCount) {
-          num20 = shapeCount;
+        obj.placeholderShapePaddingVertical = num11;
+        let tmp11Result = tmp11(4033);
+        obj.placeholderShapeColorRgba = tmp11Result.hexToRgbaString(type.colorHex, type.opacity);
+        let num12 = type.shapeCount;
+        if (num12 == null) {
+          num12 = 1;
         }
-        obj.placeholderShapeCount = num20;
+        obj.placeholderShapeCount = num12;
         ({ width: obj.width, height: obj.height, verticalAlignment } = type);
-        let str2 = "center";
-        let str3 = "center";
-        if (null != verticalAlignment) {
-          str3 = verticalAlignment;
+        if (verticalAlignment == null) {
+          verticalAlignment = "center";
         }
-        obj.verticalAlignment = str3;
-        const horizonalAlignment = type.horizonalAlignment;
-        if (null != horizonalAlignment) {
-          str2 = horizonalAlignment;
+        obj.verticalAlignment = verticalAlignment;
+        let str2 = type.horizonalAlignment;
+        if (str2 == null) {
+          str2 = "center";
         }
         obj.horizontalAlignment = str2;
-        const obj5 = require(4009) /* hexToRgb */;
-      } else if (require(dependencyMap[num20]).FastestListPropsPlaceholderType.FEED_ITEM === type) {
-        const borderRadius = type.borderRadius;
-        let num2 = 0;
-        if (null != borderRadius) {
-          num2 = borderRadius;
+      } else if (tmp11(8823).FastestListPropsPlaceholderType.FEED_ITEM === type) {
+        let num = type.borderRadius;
+        if (num == null) {
+          num = 0;
         }
-        obj.borderRadius = num2;
-        const borderTopLeftRadius = type.borderTopLeftRadius;
-        let num3 = 0;
-        if (null != borderTopLeftRadius) {
-          num3 = borderTopLeftRadius;
+        obj.borderRadius = num;
+        let num2 = type.borderTopLeftRadius;
+        if (num2 == null) {
+          num2 = 0;
         }
-        obj.borderTopLeftRadius = num3;
-        const borderTopRightRadius = type.borderTopRightRadius;
-        let num4 = 0;
-        if (null != borderTopRightRadius) {
-          num4 = borderTopRightRadius;
+        obj.borderTopLeftRadius = num2;
+        let num3 = type.borderTopRightRadius;
+        if (num3 == null) {
+          num3 = 0;
         }
-        obj.borderTopRightRadius = num4;
-        const borderBottomLeftRadius = type.borderBottomLeftRadius;
-        let num5 = 0;
-        if (null != borderBottomLeftRadius) {
-          num5 = borderBottomLeftRadius;
+        obj.borderTopRightRadius = num3;
+        let num4 = type.borderBottomLeftRadius;
+        if (num4 == null) {
+          num4 = 0;
         }
-        obj.borderBottomLeftRadius = num5;
-        const borderBottomRightRadius = type.borderBottomRightRadius;
-        let num6 = 0;
-        if (null != borderBottomRightRadius) {
-          num6 = borderBottomRightRadius;
+        obj.borderBottomLeftRadius = num4;
+        let num5 = type.borderBottomRightRadius;
+        if (num5 == null) {
+          num5 = 0;
         }
-        obj.borderBottomRightRadius = num6;
-        const divider = type.divider;
-        obj.divider = null != divider && divider;
+        obj.borderBottomRightRadius = num5;
+        let flag = type.divider;
+        if (flag == null) {
+          flag = false;
+        }
+        obj.divider = flag;
         let hexToRgbaStringResult;
         if (null != type.dividerColorHex) {
-          hexToRgbaStringResult = require(4009) /* hexToRgb */.hexToRgbaString(type.dividerColorHex);
-          const obj2 = require(4009) /* hexToRgb */;
+          tmp11Result = tmp11(4033);
+          hexToRgbaStringResult = tmp11Result.hexToRgbaString(type.dividerColorHex);
         }
         obj.dividerColorRgba = hexToRgbaStringResult;
-        const dividerPaddingLeft = type.dividerPaddingLeft;
-        let num8 = 0;
-        if (null != dividerPaddingLeft) {
-          num8 = dividerPaddingLeft;
+        let num6 = type.dividerPaddingLeft;
+        if (num6 == null) {
+          num6 = 0;
         }
-        obj.dividerPaddingLeft = num8;
-        const dividerPaddingRight = type.dividerPaddingRight;
-        let num9 = 0;
-        if (null != dividerPaddingRight) {
-          num9 = dividerPaddingRight;
+        obj.dividerPaddingLeft = num6;
+        let num7 = type.dividerPaddingRight;
+        if (num7 == null) {
+          num7 = 0;
         }
-        obj.dividerPaddingRight = num9;
+        obj.dividerPaddingRight = num7;
         let hexToRgbaStringResult1;
         if (null != type.backgroundColorHex) {
-          hexToRgbaStringResult1 = require(4009) /* hexToRgb */.hexToRgbaString(type.backgroundColorHex);
-          const obj3 = require(4009) /* hexToRgb */;
+          hexToRgbaStringResult1 = tmp11(4033).hexToRgbaString(type.backgroundColorHex);
+          const tmp11Result1 = tmp11(4033);
         }
         obj.placeholderFeedBackgroundColorRgba = hexToRgbaStringResult1;
-        obj.placeholderFeedColorRgba = require(4009) /* hexToRgb */.hexToRgbaString(type.colorHex);
+        obj.placeholderFeedColorRgba = tmp11(4033).hexToRgbaString(type.colorHex);
         ({ labelSize: obj.placeholderFeedLabelSize, labelSecondarySize } = type);
-        let num12 = 0;
-        if (null != labelSecondarySize) {
-          num12 = labelSecondarySize;
+        if (labelSecondarySize == null) {
+          labelSecondarySize = 0;
         }
-        obj.placeholderFeedLabelSecondarySize = num12;
+        obj.placeholderFeedLabelSecondarySize = labelSecondarySize;
         ({ labelPadding: obj.placeholderFeedLabelPadding, labelPaddingInnerRatio } = type);
-        let num13 = 0.4;
-        if (null != labelPaddingInnerRatio) {
-          num13 = labelPaddingInnerRatio;
+        if (labelPaddingInnerRatio == null) {
+          labelPaddingInnerRatio = 0.4;
         }
-        obj.placeholderFeedLabelPaddingInnerRatio = num13;
-        const padding = type.padding;
-        let num14 = 0;
-        if (null != padding) {
-          num14 = padding;
+        obj.placeholderFeedLabelPaddingInnerRatio = labelPaddingInnerRatio;
+        let num8 = type.padding;
+        if (num8 == null) {
+          num8 = 0;
         }
-        obj.placeholderFeedPadding = num14;
+        obj.placeholderFeedPadding = num8;
         ({ shape: obj.placeholderFeedShape, shapeSize: obj.placeholderFeedShapeSize } = type);
-        const obj4 = require(4009) /* hexToRgb */;
+        const tmp11Result2 = tmp11(4033);
       } else {
         const _Error = Error;
         const _HermesInternal = HermesInternal;
@@ -164,10 +146,10 @@ function createNativePlaceholderConfig(type) {
     return obj;
   }
 }
-let obj = {};
+let obj = { sectionItem: null };
 obj = { type: require("FastestListPropsPlaceholderType").FastestListPropsPlaceholderType.NONE };
-obj.sectionItem = obj;
-const result = require("hexToRgb").fileFinishedImporting("modules/fastest_list/props/useFastestListPropsPlaceholder.android.tsx");
+obj[0] = obj;
+const result = require("hexToRgba").fileFinishedImporting("modules/fastest_list/props/useFastestListPropsPlaceholder.android.tsx");
 
 export default function useFastestListPropsPlaceholder() {
   let tmp = arg0;

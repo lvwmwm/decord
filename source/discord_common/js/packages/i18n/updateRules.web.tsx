@@ -1,29 +1,29 @@
-// Module ID: 16060
-// Function ID: 123916
+// Module ID: 16096
+// Function ID: 16097
 // Name: updateRules
-// Dependencies: [31, 33, 3864, 2]
+// Dependencies: [19, 21, 3888, 2]
 // Exports: default
 
-// Module 16060 (updateRules)
-import "result";
+// Module 16096 (updateRules)
+import "noop";
 import { jsx } from "jsxProd";
 
 const require = arg1;
 const result = require("t").fileFinishedImporting("../discord_common/js/packages/i18n/updateRules.web.tsx");
 
 export default function updateRules(paragraph) {
-  paragraph.heading = require(3864) /* t */.defaultRules.heading;
-  paragraph.lheading = require(3864) /* t */.defaultRules.lheading;
-  paragraph.list = require(3864) /* t */.defaultRules.list;
+  paragraph.heading = require(3888) /* t */.defaultRules.heading;
+  paragraph.lheading = require(3888) /* t */.defaultRules.lheading;
+  paragraph.list = require(3888) /* t */.defaultRules.list;
   let obj = {};
   let merged = Object.assign(paragraph.paragraph);
-  obj["react"] = function react(content, arg1, key) {
-    return outer1_2("p", { children: arg1(content.content, key) }, key.key);
+  obj.react = function react(content, arg1, key) {
+    return callback2("p", { children: arg1(content.content, key) }, key.key);
   };
   paragraph.paragraph = obj;
   obj = {};
   const merged1 = Object.assign(paragraph.link);
-  obj["react"] = function react(context, arg1, key) {
+  obj.react = function react(context, arg1, key) {
     let obj = {};
     if (null != context.context) {
       if (context.context[context.target]) {
@@ -34,20 +34,16 @@ export default function updateRules(paragraph) {
       obj.onClick = context.context[context.target];
     }
     if (null == obj.onClick) {
-      let tmp4;
-      const sanitizeUrlResult = outer1_0(outer1_1[2]).sanitizeUrl(context.target);
-      if (null != sanitizeUrlResult) {
-        tmp4 = sanitizeUrlResult;
-      }
-      obj.href = tmp4;
+      const sanitizeUrlResult = callback(table[2]).sanitizeUrl(context.target);
+      obj.href = sanitizeUrlResult;
       obj.target = "_blank";
-      const obj2 = outer1_0(outer1_1[2]);
+      const obj2 = callback(table[2]);
     }
     obj = { title: context.title };
     const merged = Object.assign(obj);
-    obj["rel"] = "noreferrer";
-    obj["children"] = arg1(context.content, key);
-    return outer1_2("a", obj, key.key);
+    obj.rel = "noreferrer";
+    obj.children = arg1(context.content, key);
+    return callback2("a", obj, key.key);
   };
   paragraph.link = obj;
   return paragraph;

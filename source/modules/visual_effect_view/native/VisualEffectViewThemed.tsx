@@ -1,22 +1,23 @@
-// Module ID: 8354
-// Function ID: 66903
-// Dependencies: [31, 33, 4101, 4011, 4568, 2]
+// Module ID: 8378
+// Function ID: 8379
+// Dependencies: [19, 21, 4125, 4035, 4590, 2]
 
-// Module 8354
+// Module 8378
 import { jsx } from "jsxProd";
-import importAllResult from "result";
+import importAllResult from "noop";
 
 const require = arg1;
-const forwardRefResult = require("result").forwardRef(function VisualEffectViewThemed(arg0, ref) {
-  let obj = require(4011) /* AccessibilityAnnouncer */;
+const forwardRefResult = require("noop").forwardRef(function VisualEffectViewThemed(arg0, ref) {
+  let obj = require(4035) /* AccessibilityAnnouncer */;
   let str = "dark";
-  if (obj.isThemeLight(tmp)) {
+  if (obj.isThemeLight(tmp3)) {
     str = "light";
   }
   obj = { ref, blurTheme: str };
-  tmp = importDefault(4101)();
+  const tmp = importDefault;
+  tmp3 = importDefault(4125)();
   const merged = Object.assign(arg0);
-  return jsx(importDefault(4568), { ref, blurTheme: str });
+  return jsx(importDefault(4590), { ref, blurTheme: str });
 });
 const result = require("useTheme").fileFinishedImporting("modules/visual_effect_view/native/VisualEffectViewThemed.tsx");
 

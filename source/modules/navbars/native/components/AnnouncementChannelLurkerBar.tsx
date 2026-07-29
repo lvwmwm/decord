@@ -1,49 +1,53 @@
-// Module ID: 10372
-// Function ID: 79983
+// Module ID: 10396
+// Function ID: 10397
 // Name: AnnouncementChannelLurkerBar
-// Dependencies: [31, 27, 33, 4165, 689, 4161, 1212, 4578, 10373, 2]
+// Dependencies: [19, 17, 21, 4189, 712, 4185, 1236, 4600, 10397, 2]
 
-// Module 10372 (AnnouncementChannelLurkerBar)
-import "result";
+// Module 10396 (AnnouncementChannelLurkerBar)
+import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_3;
-let closure_4;
+let c3;
+let c4;
 const require = arg1;
 class AnnouncementChannelLurkerBar {
   constructor(arg0) {
     channel = global.channel;
-    tmp = c5();
-    obj = { style: tmp.wrapper };
-    obj = { style: null, variant: "text-sm/medium", color: "mobile-text-heading-primary" };
-    obj.style = tmp.text;
+    tmp = jsxs();
+    obj = { style: tmp.wrapper, children: null };
+    obj = { style: tmp.text, variant: "text-sm/medium", color: "mobile-text-heading-primary", children: null };
     intl = require("getSystemLocale").intl;
-    obj.children = intl.string(require("getSystemLocale").t.Hl0Mqh);
+    obj[3] = intl.string(require("getSystemLocale").t.Hl0Mqh);
     items = [, ];
     items[0] = jsx(require("Text").Text, obj);
-    obj1 = { onPress: null, text: null, size: "sm", variant: "secondary", grow: true };
-    obj1.onPress = function onPress() {
-      const guildId = channel.getGuildId();
-      if (null != guildId) {
-        const result = channel(outer1_1[8]).showChannelFollowingActionSheet(channel.id, guildId);
-        const obj = channel(outer1_1[8]);
-      }
+    obj1 = {
+      onPress() {
+            const guildId = channel.getGuildId();
+            if (null != guildId) {
+              const result = channel(outer1_1[8]).showChannelFollowingActionSheet(channel.id, guildId);
+              const obj = channel(outer1_1[8]);
+            }
+          },
+      text: null,
+      size: "sm",
+      variant: "secondary",
+      grow: true
     };
     intl2 = require("getSystemLocale").intl;
-    obj1.text = intl2.string(require("getSystemLocale").t["4z5PU1"]);
+    obj1[1] = intl2.string(require("getSystemLocale").t["4z5PU1"]);
     items[1] = jsx(require("Button").Button, obj1);
-    obj.children = items;
+    obj[1] = items;
     return jsxs(View, obj);
   }
 }
-({ jsx: closure_3, jsxs: closure_4 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SURFACE_HIGH, padding: 16, paddingTop: 8 };
-_createForOfIteratorHelperLoose.wrapper = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.text = { textAlign: "center", marginBottom: 8 };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+({ jsx: c3, jsxs: c4 } = jsxProd);
+createCacheKey = { wrapper: null, text: null };
+createCacheKey = { backgroundColor: require("Themes").colors.BACKGROUND_SURFACE_HIGH, padding: 16, paddingTop: 8 };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { textAlign: "center", marginBottom: 8 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
 let result = require("jsxProd").fileFinishedImporting("modules/navbars/native/components/AnnouncementChannelLurkerBar.tsx");
 
 export default AnnouncementChannelLurkerBar;

@@ -1,19 +1,19 @@
-// Module ID: 9744
-// Function ID: 75736
+// Module ID: 9766
+// Function ID: 9767
 // Name: SocialLayerStorefrontGiftModal
-// Dependencies: [31, 4210, 653, 33, 566, 5497, 5517, 477, 6481, 4594, 675, 9732, 3824, 8748, 1212, 8740, 6644, 8749, 9745, 9746, 2]
+// Dependencies: [19, 4234, 676, 21, 589, 5515, 5535, 500, 6502, 4616, 698, 9754, 3848, 8772, 1236, 8764, 6665, 8773, 9767, 9768, 2]
 // Exports: default
 
-// Module 9744 (SocialLayerStorefrontGiftModal)
-import "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 9766 (SocialLayerStorefrontGiftModal)
+import "SocialLayerStorefrontGiftPurchaseSection";
+import addSku from "addSku";
 import ME from "ME";
 import { jsx } from "jsxProd";
 
-let closure_4;
-let closure_5;
+let c4;
+let c5;
 const require = arg1;
-({ AnalyticEvents: closure_4, PaymentGateways: closure_5 } = ME);
+({ AnalyticEvents: c4, PaymentGateways: c5 } = ME);
 const result = require("ME").fileFinishedImporting("modules/slayer_storefront/native/SocialLayerStorefrontGiftModal.tsx");
 
 export default function SocialLayerStorefrontGiftModal(skuId) {
@@ -22,77 +22,90 @@ export default function SocialLayerStorefrontGiftModal(skuId) {
   let onGiftModalDismiss;
   skuId = skuId.skuId;
   ({ analyticsLocations, onGiftModalDismiss, giftingOrigin } = skuId);
+  let applicationId;
+  let analyticsLocations2;
+  let tmp8Result = applicationId;
   let obj = skuId(applicationId[4]);
   const items = [analyticsLocations2];
   const items1 = [skuId];
   applicationId = obj.useStateFromStores(items, () => analyticsLocations2.get(skuId), items1);
+  let tmp3 = giftingOrigin;
   const items2 = [];
-  const tmp = giftingOrigin(applicationId[5]);
+  const tmp4 = giftingOrigin(applicationId[5]);
   items2[HermesBuiltin.arraySpread(analyticsLocations, 0)] = giftingOrigin(applicationId[6]).SLAYER_STOREFRONT_NATIVE_GIFT_MODAL;
-  analyticsLocations2 = tmp(items2).analyticsLocations;
+  analyticsLocations2 = tmp4(items2).analyticsLocations;
   let obj1 = skuId(applicationId[7]);
-  const tmp4 = obj1.isIOS() ? constants.APPLE_ADVANCED_COMMERCE : constants.GOOGLE;
-  const GiftACOMOrderExperiment = skuId(applicationId[8]).GiftACOMOrderExperiment;
-  let enabled = GiftACOMOrderExperiment.useConfig({ location: "SocialLayerStorefrontGiftModal" }).enabled;
-  giftingOrigin(applicationId[9])(() => {
+  if (obj1.isIOS()) {
+    let GOOGLE = tmp6.APPLE_ADVANCED_COMMERCE;
+    let APPLE_ADVANCED_COMMERCE = tmp6;
+  } else {
+    GOOGLE = tmp6.GOOGLE;
+    APPLE_ADVANCED_COMMERCE = tmp6;
+  }
+  const GiftACOMOrderExperiment = tmp(tmp8Result[8]).GiftACOMOrderExperiment;
+  let closeSocialLayerStorefrontGiftModal = GiftACOMOrderExperiment.useConfig({ location: "SocialLayerStorefrontGiftModal" }).enabled;
+  tmp3(tmp8Result[9])(() => {
     let obj = giftingOrigin(applicationId[10]);
-    obj = { location_stack: analyticsLocations2, type: skuId(applicationId[11]).SOCIAL_LAYER_STOREFRONT_GIFT_MODAL_KEY, sku_id: skuId };
+    obj = { location_stack: analyticsLocations2, type: skuId(applicationId[11]).SOCIAL_LAYER_STOREFRONT_GIFT_MODAL_KEY, sku_id: skuId, application_id: null };
     applicationId = undefined;
-    if (null != applicationId) {
+    if (applicationId != null) {
       applicationId = applicationId.applicationId;
     }
-    obj.application_id = applicationId;
+    obj[3] = applicationId;
     obj.track(outer1_4.OPEN_MODAL, obj);
   });
-  let tmp6 = null;
   if (null == applicationId) {
     return null;
   } else {
-    let obj2 = skuId(applicationId[12]);
-    if (obj2.isSocialLayerStorefrontGiftingSupported()) {
-      obj = { skuIDs: [], activeSubscription: tmp6 };
-      obj = { paymentGateway: tmp4 };
-      if (enabled) {
-        enabled = tmp4 === constants.APPLE_ADVANCED_COMMERCE;
+    if (tmpResult.isSocialLayerStorefrontGiftingSupported()) {
+      obj = { skuIDs: null, activeSubscription: null, children: null };
+      obj[0] = [];
+      obj = { paymentGateway: null, orderRequired: null, skuIds: null, isGift: true, activeSubscription: null, onOrderRetryCancellation: null, children: null };
+      obj[0] = GOOGLE;
+      let tmp3Result = tmp3(tmp8Result[16]);
+      if (closeSocialLayerStorefrontGiftModal) {
+        APPLE_ADVANCED_COMMERCE = APPLE_ADVANCED_COMMERCE.APPLE_ADVANCED_COMMERCE;
+        closeSocialLayerStorefrontGiftModal = GOOGLE === APPLE_ADVANCED_COMMERCE;
       }
-      obj.orderRequired = enabled;
+      obj[1] = closeSocialLayerStorefrontGiftModal;
       const items3 = [skuId];
-      obj.skuIds = items3;
-      obj.isGift = true;
-      obj.activeSubscription = tmp6;
-      obj.onOrderRetryCancellation = skuId(applicationId[11]).closeSocialLayerStorefrontGiftModal;
-      enabled = jsx;
-      tmp6 = giftingOrigin(applicationId[17]);
-      obj1 = { skuId };
+      obj[2] = items3;
+      closeSocialLayerStorefrontGiftModal = tmp(tmp8Result[11]).closeSocialLayerStorefrontGiftModal;
+      obj[5] = closeSocialLayerStorefrontGiftModal;
+      tmp3 = tmp3(tmp8Result[17]);
+      obj1 = { skuId: null, applicationId: null, analyticsLocations: null, lockedRecipientUser: null, onGiftModalDismiss: null, giftingOrigin: null, validateRecipient: null, renderProductDetails: null, renderPurchaseSection: null };
+      obj1[0] = skuId;
       applicationId = applicationId.applicationId;
-      obj1.applicationId = applicationId;
-      obj1.analyticsLocations = analyticsLocations2;
-      obj1.lockedRecipientUser = skuId.lockedRecipientUser;
-      obj1.onGiftModalDismiss = onGiftModalDismiss;
-      obj1.giftingOrigin = giftingOrigin;
-      obj1.validateRecipient = function validateRecipient(navigation, arg1) {
+      obj1[1] = applicationId;
+      obj1[2] = analyticsLocations2;
+      obj1[3] = skuId.lockedRecipientUser;
+      obj1[4] = onGiftModalDismiss;
+      obj1[5] = giftingOrigin;
+      obj1[6] = function validateRecipient(navigation, arg1) {
         return Promise.resolve(true);
       };
       giftingOrigin = function renderProductDetails(arg0) {
         return outer1_6(giftingOrigin(applicationId[18]), { sku: applicationId });
       };
-      obj1.renderProductDetails = giftingOrigin;
-      obj1.renderPurchaseSection = function renderPurchaseSection(arg0) {
+      obj1[7] = giftingOrigin;
+      obj1[8] = function renderPurchaseSection(arg0) {
         let giftOptions;
         let isPurchaseDisabled;
         ({ isPurchaseDisabled, giftOptions } = arg0);
         return outer1_6(giftingOrigin(applicationId[19]), { skuId, sku: applicationId, isPurchaseDisabled, giftOptions, giftingOrigin, analyticsLocations: analyticsLocations2 });
       };
-      obj.children = <tmp6 skuId={skuId} />;
-      obj.children = tmp9(giftingOrigin(applicationId[16]), obj, skuId);
-      let tmp9Result = tmp9(skuId(applicationId[15]).NativePaymentContextProvider, obj);
-      const tmp18 = giftingOrigin(applicationId[16]);
+      tmp8Result = tmp8(tmp3, obj1);
+      obj[6] = tmp8Result;
+      obj[2] = tmp8(tmp3Result, obj, skuId);
+      tmp8Result = tmp8(tmp(tmp8Result[15]).NativePaymentContextProvider, obj);
     } else {
-      obj2 = { onDismiss: onGiftModalDismiss };
-      const intl = skuId(applicationId[14]).intl;
-      obj2.title = intl.string(skuId(applicationId[14]).t["JCFN/y"]);
-      tmp9Result = tmp9(giftingOrigin(applicationId[13]), obj2);
-      const tmp12 = giftingOrigin(applicationId[13]);
+      const obj2 = { onDismiss: null, title: null };
+      obj2[0] = onGiftModalDismiss;
+      tmp3Result = tmp3(tmp8Result[13]);
+      const intl = tmp(tmp8Result[14]).intl;
+      obj2[1] = intl.string(tmp(tmp8Result[14]).t["JCFN/y"]);
+      tmp8Result = tmp8(tmp3Result, obj2);
     }
+    tmpResult = tmp(tmp8Result[12]);
   }
 };

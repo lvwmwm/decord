@@ -1,11 +1,11 @@
-// Module ID: 16086
-// Function ID: 124218
+// Module ID: 16121
+// Function ID: 16122
 // Name: AcceptInviteModal
-// Dependencies: [31, 9199, 33, 480, 4151, 11787, 8625, 5552, 2]
+// Dependencies: [19, 9223, 21, 503, 4175, 11812, 8649, 5570, 2]
 // Exports: default
 
-// Module 16086 (AcceptInviteModal)
-import result from "result";
+// Module 16121 (AcceptInviteModal)
+import noop from "noop";
 import { CreateGuildModalStates } from "NUXGuildTemplatesAnalytics";
 import { jsx } from "jsxProd";
 
@@ -17,23 +17,23 @@ export default function AcceptInviteModal(arg0) {
   const effect = React.useEffect(() => () => {
 
   }, []);
-  let obj = {};
+  let obj = { screens: null, initialRouteName: null };
   const items = [arg0];
-  obj.screens = React.useMemo(() => (function getScreens(closure_0) {
-    const callback = closure_0;
+  obj[0] = React.useMemo(() => {
     let obj = {};
-    obj = { fullscreen: true, headerShown: false, impressionName: callback(outer2_2[3]).ImpressionNames.INVITE_ACCEPT };
-    obj = { deeplink_attempt_id: closure_0.deeplinkAttemptId, invite_code: callback(outer2_2[4]).parseInviteCodeFromInviteKey(closure_0.code) };
-    obj.impressionProperties = obj;
-    obj.render = function render() {
+    obj = { fullscreen: true, headerShown: false, impressionName: lib(outer1_2[3]).ImpressionNames.INVITE_ACCEPT, impressionProperties: null, render: null };
+    obj = { deeplink_attempt_id: lib.deeplinkAttemptId, invite_code: null };
+    obj[1] = lib(outer1_2[4]).parseInviteCodeFromInviteKey(lib.code);
+    obj[3] = obj;
+    obj[4] = function render() {
       const obj = {};
       const merged = Object.assign(callback);
-      obj["onPressClose"] = callback(outer3_2[6]).clearDisplayedInvite;
-      return outer3_5(outer3_1(outer3_2[5]), obj);
+      obj.onPressClose = callback(outer1_2[6]).clearDisplayedInvite;
+      return outer1_5(outer1_1(outer1_2[5]), obj);
     };
-    obj[outer2_4.ACCEPT_INVITE] = obj;
+    obj[outer1_4.ACCEPT_INVITE] = obj;
     return obj;
-  })(closure_0), items);
-  obj.initialRouteName = CreateGuildModalStates.ACCEPT_INVITE;
-  return jsx(_require(5552).Navigator, {});
+  }, items);
+  obj[1] = CreateGuildModalStates.ACCEPT_INVITE;
+  return jsx(_require(5570).Navigator, { screens: null, initialRouteName: null });
 };

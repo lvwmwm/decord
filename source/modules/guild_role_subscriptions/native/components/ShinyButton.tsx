@@ -1,23 +1,23 @@
-// Module ID: 9341
-// Function ID: 72941
+// Module ID: 9365
+// Function ID: 9366
 // Name: ShinyButton
-// Dependencies: [31, 33, 4165, 689, 4579, 1273, 9342, 2]
+// Dependencies: [19, 21, 4189, 712, 4601, 1297, 9366, 2]
 // Exports: default
 
-// Module 9341 (ShinyButton)
-import "result";
+// Module 9365 (ShinyButton)
+import "noop";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
 const require = arg1;
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { borderRadius: require("_createForOfIteratorHelperLoose").radii.sm, backgroundColor: require("_createForOfIteratorHelperLoose").colors.CONTROL_PRIMARY_BACKGROUND_DEFAULT };
-_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.sparkleIcon = { marginRight: 4, tintColor: require("_createForOfIteratorHelperLoose").colors.WHITE };
-_createForOfIteratorHelperLoose.disabled = { opacity: 0.5 };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-const obj1 = { marginRight: 4, tintColor: require("_createForOfIteratorHelperLoose").colors.WHITE };
-const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/guild_role_subscriptions/native/components/ShinyButton.tsx");
+createCacheKey = { container: null, sparkleIcon: null, disabled: null };
+createCacheKey = { borderRadius: require("Themes").radii.sm, backgroundColor: require("Themes").colors.CONTROL_PRIMARY_BACKGROUND_DEFAULT };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { marginRight: 4, tintColor: require("Themes").colors.WHITE };
+createCacheKey[2] = { opacity: 0.5 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+const obj1 = { marginRight: 4, tintColor: require("Themes").colors.WHITE };
+const result = require("createCacheKey").fileFinishedImporting("modules/guild_role_subscriptions/native/components/ShinyButton.tsx");
 
 export default function ShinyButton(style) {
   let disabled;
@@ -29,28 +29,24 @@ export default function ShinyButton(style) {
 
     };
   }
-  let obj = { style: 0, loading: 0, disabled: 0, onPress: 0 };
-  Object.setPrototypeOf(null);
-  const merged = Object.assign(style, obj);
-  const tmp3 = _createForOfIteratorHelperLoose();
-  obj = { onPress };
-  const items = [tmp3.container, style.style];
-  obj.pillStyle = items;
-  obj.loading = loading;
-  obj.disabled = disabled;
-  let tmp6Result;
+  const merged = Object.assign(style, Object.create(null));
+  const tmp2 = createCacheKey();
+  let obj = { onPress, pillStyle: items, loading, disabled, icon: null };
+  items = [tmp2.container, style.style];
+  let tmp3Result;
   if (!loading) {
-    obj = { size: require(1273) /* Button */.Icon.Sizes.REFRESH_SMALL_16, source: importDefault(9342) };
-    const items1 = [tmp3.sparkleIcon, ];
+    obj = { size: null, source: null, style: null };
+    obj[0] = tmp4(1297).Icon.Sizes.REFRESH_SMALL_16;
+    obj[1] = importDefault(9366);
+    const items1 = [tmp2.sparkleIcon, ];
     if (disabled) {
-      disabled = tmp3.disabled;
+      disabled = tmp2.disabled;
     }
     items1[1] = disabled;
-    obj.style = items1;
-    tmp6Result = jsx(require(1273) /* Button */.Icon, { size: require(1273) /* Button */.Icon.Sizes.REFRESH_SMALL_16, source: importDefault(9342) });
-    const tmp6 = jsx;
+    obj[2] = items1;
+    tmp3Result = tmp3(tmp4(1297).Icon, obj);
   }
-  obj.icon = tmp6Result;
+  obj[4] = tmp3Result;
   const merged1 = Object.assign(merged);
-  return jsx(require(4579) /* CollapsingText */.BaseTextButton, { onPress });
+  return jsx(require(4601) /* CollapsingText */.BaseTextButton, { onPress, pillStyle: items, loading, disabled, icon: null });
 };

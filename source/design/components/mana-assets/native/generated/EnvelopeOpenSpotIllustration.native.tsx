@@ -1,10 +1,10 @@
-// Module ID: 6992
-// Function ID: 59759
+// Module ID: 7012
+// Function ID: 7013
 // Name: EnvelopeOpenSpotIllustration
-// Dependencies: [33, 5119, 6993, 2]
+// Dependencies: [21, 5141, 7013, 2]
 // Exports: EnvelopeOpenSpotIllustration
 
-// Module 6992 (EnvelopeOpenSpotIllustration)
+// Module 7012 (EnvelopeOpenSpotIllustration)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/EnvelopeOpenSpotIllustration.native.tsx");
@@ -26,14 +26,15 @@ export const EnvelopeOpenSpotIllustration = function EnvelopeOpenSpotIllustratio
   if (num3 === undefined) {
     num3 = 1;
   }
-  let obj = { fadeDuration: 0 };
-  obj = { uri: importDefault(6993) };
-  obj.source = obj;
+  let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
+  obj = { uri: null };
+  obj[0] = importDefault(7013);
+  obj[1] = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
-  obj.style = items;
-  obj.accessible = accessible;
-  obj.accessibilityLabel = accessibilityLabel;
-  obj.resizeMode = resizeMode;
-  return jsx(importDefault(5119), { width: num * num3, height: num2 * num3 });
+  obj[2] = items;
+  obj[3] = accessible;
+  obj[4] = accessibilityLabel;
+  obj[5] = resizeMode;
+  return jsx(importDefault(5141), { width: num * num3, height: num2 * num3 });
 };

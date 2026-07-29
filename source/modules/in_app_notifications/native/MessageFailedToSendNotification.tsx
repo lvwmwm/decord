@@ -1,44 +1,48 @@
-// Module ID: 10320
-// Function ID: 79592
-// Dependencies: [31, 27, 33, 4165, 689, 1212, 4173, 4097, 10313, 9949, 10258, 2]
+// Module ID: 10341
+// Function ID: 10342
+// Dependencies: [19, 17, 21, 4189, 712, 1236, 4197, 4121, 10334, 9971, 10279, 2]
 
-// Module 10320
-import importAllResult from "result";
+// Module 10341
+import importAllResult from "noop";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
 const require = arg1;
-let obj = {};
-obj = { width: 40, height: 40, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_MOD_SUBTLE, display: "flex", justifyContent: "center", alignItems: "center", borderRadius: require("_createForOfIteratorHelperLoose").radii.md };
-obj.iconContainer = obj;
-let closure_6 = _createForOfIteratorHelperLoose.createStyles(obj);
+let c3 = importAllResult;
+let obj = { iconContainer: null };
+obj = { width: 40, height: 40, backgroundColor: require("Themes").colors.BACKGROUND_MOD_SUBTLE, display: "flex", justifyContent: "center", alignItems: "center", borderRadius: require("Themes").radii.md };
+obj[0] = obj;
+let closure_6 = createCacheKey.createStyles(obj);
 const memoResult = importAllResult.memo(function MessageFailedToSendNotification(notification) {
   notification = notification.notification;
-  let obj = { type: "simple" };
-  const intl = channelId(1212).intl;
-  obj.text = intl.string(channelId(1212).t.Q0x94X);
+  let channelId;
+  let messageId;
+  let obj = { type: "simple", text: null };
+  const intl = channelId(1236).intl;
+  obj[1] = intl.string(channelId(1236).t.Q0x94X);
   channelId = notification.channelId;
-  const messageId = notification.messageId;
+  messageId = notification.messageId;
   const items = [channelId, messageId];
   const callback = importAllResult.useCallback(() => {
     let obj = channelId(outer1_2[6]);
     obj = { jumpType: channelId(outer1_2[7]).JumpType.INSTANT };
     obj.transitionToMessage(channelId, messageId, obj);
   }, items);
-  obj = {};
-  obj = { style: callback().iconContainer };
-  const obj1 = { size: "md", color: messageId(689).colors.ICON_SUBTLE };
-  obj.children = jsx(channelId(9949).RetryIcon, { size: "md", color: messageId(689).colors.ICON_SUBTLE });
-  obj.icon = <View style={callback().iconContainer} />;
-  const obj2 = {};
-  const intl2 = channelId(1212).intl;
-  obj2.text = intl2.string(channelId(1212).t.xxRPOT);
-  obj.children = jsx(channelId(10258).SystemMessageText, {});
-  obj.header = obj;
-  obj.onPress = callback;
-  obj.notification = notification;
-  return jsx(channelId(10313).NotificationPressable, { style: callback().iconContainer });
+  obj = { icon: null, children: null, header: null, onPress: null, notification: null };
+  obj = { style: callback().iconContainer, children: null };
+  const obj1 = { size: "md", color: null };
+  obj1[1] = messageId(712).colors.ICON_SUBTLE;
+  obj[1] = jsx(channelId(9971).RetryIcon, { size: "md", color: null });
+  obj[0] = <View style={callback().iconContainer}>{null}</View>;
+  const obj2 = { text: null };
+  const intl2 = channelId(1236).intl;
+  obj2[0] = intl2.string(channelId(1236).t.xxRPOT);
+  obj[1] = jsx(channelId(10279).SystemMessageText, { text: null });
+  obj[2] = obj;
+  obj[3] = callback;
+  obj[4] = notification;
+  return jsx(channelId(10334).NotificationPressable, { style: callback().iconContainer, children: null });
 });
 const result = require("jsxProd").fileFinishedImporting("modules/in_app_notifications/native/MessageFailedToSendNotification.tsx");
 

@@ -1,13 +1,13 @@
-// Module ID: 5014
-// Function ID: 43097
+// Module ID: 5036
+// Function ID: 5037
 // Name: QuestsVisibleMessagesChangedSource
-// Dependencies: [5015, 2, 5016, 5017]
+// Dependencies: [5037, 2, 5038, 5039]
 
-// Module 5014 (QuestsVisibleMessagesChangedSource)
+// Module 5036 (QuestsVisibleMessagesChangedSource)
 import set from "set";
 
 const values = Object.values(require("QuestRewardCodePlatforms").QuestRewardCodePlatforms);
-let set = new Set(values.filter((arg0) => "number" === typeof arg0));
+let set = new Set(values.filter((arg0) => typeof arg0 === "Object"));
 const result = set.fileFinishedImporting("modules/quests/QuestTypes.tsx");
 
 export const QuestsVisibleMessagesChangedSource = { FIRST_LAYOUT: "FIRST_LAYOUT", SCROLL: "SCROLL", VISIBILITY_CHANGED: "VISIBILITY_CHANGED" };

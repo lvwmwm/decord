@@ -1,14 +1,14 @@
-// Module ID: 11549
-// Function ID: 89788
+// Module ID: 11573
+// Function ID: 11574
 // Name: useLoadGuildPowerups
-// Dependencies: [31, 4076, 11550, 11556, 2]
+// Dependencies: [19, 4100, 11574, 11580, 2]
 // Exports: default
 
-// Module 11549 (useLoadGuildPowerups)
-import result from "result";
+// Module 11573 (useLoadGuildPowerups)
+import noop from "noop";
 
 const require = arg1;
-const result = require("fetchMyGameServers").fileFinishedImporting("modules/premium/powerups/hooks/useLoadGuildPowerups.tsx");
+const result = require("fetchGameServerCatalog").fileFinishedImporting("modules/premium/powerups/hooks/useLoadGuildPowerups.tsx");
 
 export default function useLoadGuildPowerups(guildId) {
   const _require = guildId;

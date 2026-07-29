@@ -1,71 +1,70 @@
-// Module ID: 11960
-// Function ID: 92396
+// Module ID: 11984
+// Function ID: 11985
 // Name: UserProfileMutualGuilds
-// Dependencies: [31, 27, 8081, 33, 4165, 8083, 11672, 11961, 4133, 11671, 1935, 6669, 4695, 11687, 5548, 4161, 11674, 2]
+// Dependencies: [19, 17, 8105, 21, 4189, 8107, 11696, 11985, 4157, 11695, 1959, 6690, 4717, 11711, 5566, 4185, 11698, 2]
 // Exports: default
 
-// Module 11960 (UserProfileMutualGuilds)
-import "result";
-import { View } from "get ActivityIndicator";
+// Module 11984 (UserProfileMutualGuilds)
+import "noop";
+import { View } from "set";
 import { UserProfileSections } from "USER_PROFILE_TOOLTIP_DELAY";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_5;
+let c5;
 let closure_6;
 const require = arg1;
-({ jsx: closure_5, jsxs: closure_6 } = jsxProd);
-let closure_7 = _createForOfIteratorHelperLoose.createStyles({ container: { flexDirection: "row", columnGap: 4, flexWrap: "wrap" }, section: { flexDirection: "row", alignItems: "center", columnGap: 6 } });
+({ jsx: c5, jsxs: closure_6 } = jsxProd);
+let closure_7 = createCacheKey.createStyles({ container: { flexDirection: "row", columnGap: 4, flexWrap: "wrap" }, section: { flexDirection: "row", alignItems: "center", columnGap: 6 } });
 const result = require("USER_PROFILE_TOOLTIP_DELAY").fileFinishedImporting("modules/user_profile/native/UserProfileMutualGuilds.tsx");
 
 export default function UserProfileMutualGuilds(user) {
   user = user.user;
+  let trackUserProfileAction;
   const tmp = callback3();
-  let obj = user(8083);
-  const trackUserProfileAction = obj.useUserProfileAnalyticsContext().trackUserProfileAction;
-  const mutualGuilds = trackUserProfileAction(11672)(user).mutualGuilds;
-  if (trackUserProfileAction(11961)(user)) {
+  let obj = user(8107);
+  trackUserProfileAction = obj.useUserProfileAnalyticsContext().trackUserProfileAction;
+  const mutualGuilds = trackUserProfileAction(11696)(user).mutualGuilds;
+  if (trackUserProfileAction(11985)(user)) {
     if (null != mutualGuilds) {
       if (0 !== mutualGuilds.length) {
         const substr = mutualGuilds.slice(0, 3);
         const mapped = substr.map((guild) => guild.guild);
-        obj = { style: tmp.container };
-        obj = {
-          style: tmp.section,
-          accessibilityRole: "button",
-          onPress() {
-                  (function handlePress(MUTUAL_GUILDS) {
-                    let obj = { action: "PRESS_SECTION", section: MUTUAL_GUILDS };
-                    outer1_1(obj);
-                    obj = {
-                      user: outer1_0,
-                      onPressMutualGuild(arg0) {
-                        outer2_1({ action: "PRESS_MUTUAL_GUILD" });
-                        user(outer3_2[11]).transitionToGuild(arg0);
-                        const obj = user(outer3_2[11]);
-                        trackUserProfileAction(outer3_2[8]).hideActionSheet();
-                        const obj2 = trackUserProfileAction(outer3_2[8]);
-                        trackUserProfileAction(outer3_2[8]).hideActionSheet();
-                      }
-                    };
-                    trackUserProfileAction(outer2_2[8]).openLazy(user(outer2_2[10])(outer2_2[9], outer2_2.paths), "UserProfileMutualGuildsActionSheet", obj, "stack");
-                  })(outer1_4.MUTUAL_GUILDS);
-                }
+        obj = { style: null, children: null };
+        obj[0] = tmp.container;
+        obj = { style: null, accessibilityRole: "button", onPress: null, children: null };
+        obj[0] = tmp.section;
+        obj[2] = function onPress() {
+          let obj = { action: "PRESS_SECTION", section: outer1_4.MUTUAL_GUILDS };
+          trackUserProfileAction(obj);
+          obj = {
+            user,
+            onPressMutualGuild(arg0) {
+              callback({ action: "PRESS_MUTUAL_GUILD" });
+              outer1_0(outer1_2[11]).transitionToGuild(arg0);
+              const obj = outer1_0(outer1_2[11]);
+              outer1_1(outer1_2[8]).hideActionSheet();
+              const obj2 = outer1_1(outer1_2[8]);
+              outer1_1(outer1_2[8]).hideActionSheet();
+            }
+          };
+          trackUserProfileAction(outer1_2[8]).openLazy(user(outer1_2[10])(outer1_2[9], outer1_2.paths), "UserProfileMutualGuildsActionSheet", obj, "stack");
         };
-        const obj1 = {
-          size: user(5548).GuildIconSizes.XXSMALL,
-          totalCount: mapped.length,
-          names: mapped.map((name) => name.name),
-          children: mapped.map((guild) => {
-                  const obj = { guild, size: user(outer1_2[14]).GuildIconSizes.XXSMALL };
-                  return outer1_5(trackUserProfileAction(outer1_2[14]), obj, guild.id);
-                })
-        };
-        const items = [callback(user(11687).GuildIconPile, obj1), ];
-        let obj2 = { variant: "text-sm/medium", color: "text-default", children: trackUserProfileAction(11674)(mutualGuilds.length) };
-        items[1] = callback(user(4161).Text, obj2);
-        obj.children = items;
-        obj.children = callback2(user(4695).PressableOpacity, obj);
+        const obj1 = { size: null, totalCount: null, names: null, children: null };
+        obj1[0] = tmp2(5566).GuildIconSizes.XXSMALL;
+        obj1[1] = mapped.length;
+        obj1[2] = mapped.map((name) => name.name);
+        obj1[3] = mapped.map((guild) => {
+          const obj = { guild, size: null };
+          obj[1] = user(5566).GuildIconSizes.XXSMALL;
+          return callback(trackUserProfileAction(5566), obj, guild.id);
+        });
+        const items = [callback(tmp2(11711).GuildIconPile, obj1), ];
+        let obj2 = { variant: "text-sm/medium", color: "text-default", children: null };
+        obj2[2] = trackUserProfileAction(11698)(mutualGuilds.length);
+        items[1] = callback(tmp2(4185).Text, obj2);
+        obj[3] = items;
+        obj[1] = callback2(tmp2(4717).PressableOpacity, obj);
         return callback(View, obj);
       }
     }

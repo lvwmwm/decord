@@ -1,62 +1,64 @@
-// Module ID: 1827
-// Function ID: 20030
+// Module ID: 1851
+// Function ID: 1852
 // Name: shortenAndLocalizeNumber
-// Dependencies: [1212, 2]
+// Dependencies: [1236, 2]
 // Exports: formatPercent, humanizeValue, parseInteger, shortenAndLocalizeNumber
 
-// Module 1827 (shortenAndLocalizeNumber)
+// Module 1851 (shortenAndLocalizeNumber)
+let c2 = 1000000;
 let result = require("set").fileFinishedImporting("utils/NumberUtils.tsx");
 
 export const shortenAndLocalizeNumber = function shortenAndLocalizeNumber(count) {
-  if (count < 1000000) {
-    const intl2 = require(1212) /* getSystemLocale */.intl;
-    let obj = { value: count };
-    return intl2.formatToPlainString(require(1212) /* getSystemLocale */.t.OiHat3, obj);
+  if (count < c2) {
+    const intl2 = require(1236) /* getSystemLocale */.intl;
+    let obj = { value: null };
+    obj[0] = count;
+    return intl2.formatToPlainString(require(1236) /* getSystemLocale */.t.OiHat3, obj);
   } else {
-    const result = count / 1000000;
-    const intl = require(1212) /* getSystemLocale */.intl;
-    obj = { value: result.toFixed(1) };
-    return intl.formatToPlainString(require(1212) /* getSystemLocale */.t.Iku48I, obj);
+    const result = count / tmp;
+    const intl = require(1236) /* getSystemLocale */.intl;
+    obj = { value: null };
+    obj[0] = result.toFixed(1);
+    return intl.formatToPlainString(require(1236) /* getSystemLocale */.t.Iku48I, obj);
   }
 };
 export const humanizeValue = function humanizeValue(newPostCount, stateFromStores) {
   if (newPostCount < 1000) {
-    const intl2 = require(1212) /* getSystemLocale */.intl;
-    let obj = {};
+    const intl2 = require(1236) /* getSystemLocale */.intl;
+    let obj = { value: null };
     const _Math2 = Math;
-    obj.value = Math.floor(newPostCount);
-    return intl2.formatToPlainString(require(1212) /* getSystemLocale */.t.OiHat3, obj);
-  } else if (newPostCount < 1000000) {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    obj = {};
+    obj[0] = Math.floor(newPostCount);
+    return intl2.formatToPlainString(require(1236) /* getSystemLocale */.t.OiHat3, obj);
+  } else if (newPostCount < c2) {
+    const intl = require(1236) /* getSystemLocale */.intl;
+    obj = { value: null };
     const _Math = Math;
-    obj.value = Math.floor(newPostCount / 1000);
-    return intl.formatToPlainString(require(1212) /* getSystemLocale */.t["84R4Tc"], obj);
+    obj[0] = Math.floor(newPostCount / 1000);
+    return intl.formatToPlainString(require(1236) /* getSystemLocale */.t["84R4Tc"], obj);
   } else {
     const _Math3 = Math;
     const _Intl = Intl;
-    obj = { maximumFractionDigits: 1 };
-    const prototype = NumberFormat.prototype;
-    const result = Math.floor(10 * newPostCount / 1000000) / 10;
-    const numberFormat = new NumberFormat(stateFromStores, obj);
-    const intl3 = require(1212) /* getSystemLocale */.intl;
-    const obj1 = { value: numberFormat.format(result) };
-    return intl3.formatToPlainString(require(1212) /* getSystemLocale */.t.Iku48I, obj1);
+    const result = Math.floor(10 * newPostCount / tmp7) / 10;
+    const numberFormat = new Intl.NumberFormat(stateFromStores, { maximumFractionDigits: 1 });
+    const intl3 = require(1236) /* getSystemLocale */.intl;
+    obj = { value: null };
+    obj[0] = numberFormat.format(result);
+    return intl3.formatToPlainString(require(1236) /* getSystemLocale */.t.Iku48I, obj);
   }
 };
 export const parseInteger = function parseInteger(discriminator, arg1) {
-  let _NaN = arg1;
+  let num = arg1;
   if (arg1 === undefined) {
-    _NaN = NaN;
+    num = NaN;
   }
   if (null == discriminator) {
-    return _NaN;
+    return num;
   } else {
     const _parseInt = parseInt;
     let parsed = parseInt(discriminator);
     const _Number = Number;
     if (Number.isNaN(parsed)) {
-      parsed = _NaN;
+      parsed = num;
     }
     return parsed;
   }

@@ -1,107 +1,58 @@
-// Module ID: 5656
-// Function ID: 48116
-// Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 22, 5657, 566, 686, 2]
+// Module ID: 5674
+// Function ID: 5675
+// Name: isGenericIapConnected
+// Dependencies: [589, 12, 5675, 709, 2]
 
-// Module 5656 (_isNativeReflectConstruct)
-import SubscriptionPlans from "SubscriptionPlans";
-import initialize from "initialize";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
+// Module 5674 (isGenericIapConnected)
+import { Store } from "initialize";
 
 const require = arg1;
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
-  }
-  const result = _isNativeReflectConstruct();
+let c3 = null;
+let c4 = false;
+let c5 = null;
+class GenericIAPStore extends Store {
 }
-let c8 = null;
-let c9 = false;
-let c10 = null;
-let tmp2 = ((Store) => {
-  class GenericIAPStore {
-    constructor() {
-      self = this;
-      tmp = outer1_3(this, GenericIAPStore);
-      obj = outer1_6(GenericIAPStore);
-      tmp2 = outer1_5;
-      if (outer1_11()) {
-        tmp6 = globalThis;
-        _Reflect = Reflect;
-        tmp7 = outer1_6;
-        tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, outer1_6(self).constructor);
-      } else {
-        tmp3 = arguments;
-        tmp4 = arguments;
-        constructResult = obj(...arguments);
-      }
-      return tmp2(self, constructResult);
-    }
+const prototype = GenericIAPStore.prototype;
+prototype["isGenericIapConnected"] = function isGenericIapConnected() {
+  return c4;
+};
+prototype["genericProductsLoaded"] = function genericProductsLoaded() {
+  let tmp = null != c3;
+  if (tmp) {
+    tmp = importDefault(12).filter(c3, (identifier) => {
+      const GenericProductIds = callback(table[2]).GenericProductIds;
+      return GenericProductIds.includes(identifier.identifier);
+    }).length === require(5675) /* SubscriptionPlans */.GenericProductIds.length;
+    const arr = importDefault(12);
   }
-  callback2(GenericIAPStore, Store);
-  let obj = {
-    key: "isGenericIapConnected",
-    value() {
-      return outer1_9;
-    }
-  };
-  const items = [obj, , , ];
-  obj = {
-    key: "genericProductsLoaded",
-    value() {
-      let tmp = null != outer1_8;
-      if (tmp) {
-        tmp = outer1_1(outer1_2[5]).filter(outer1_8, (identifier) => {
-          const GenericProductIds = GenericIAPStore(outer2_2[6]).GenericProductIds;
-          return GenericProductIds.includes(identifier.identifier);
-        }).length === GenericIAPStore(outer1_2[6]).GenericProductIds.length;
-        const arr = outer1_1(outer1_2[5]);
-      }
-      return tmp;
-    }
-  };
-  items[1] = obj;
-  obj = {
-    key: "getProducts",
-    value() {
-      return outer1_8;
-    }
-  };
-  items[2] = obj;
-  items[3] = {
-    key: "getStoreFront",
-    value() {
-      return outer1_10;
-    }
-  };
-  return callback(GenericIAPStore, items);
-})(require("initialize").Store);
-tmp2.displayName = "GenericIAPStore";
-tmp2 = new tmp2(require("dispatcher"), {
+  return tmp;
+};
+prototype["getProducts"] = function getProducts() {
+  return c3;
+};
+prototype["getStoreFront"] = function getStoreFront() {
+  return c5;
+};
+GenericIAPStore.displayName = "GenericIAPStore";
+const genericIAPStore = new GenericIAPStore(require("dispatcher"), {
   IAP_LOAD_GENERIC_PRODUCTS: function initGenericProducts(arg0) {
-    let c10;
-    let c8;
-    ({ products: c8, storeFront: c10 } = arg0);
+    let c3;
+    let c5;
+    ({ products: c3, storeFront: c5 } = arg0);
   },
   GENERIC_IAP_INIT_CONNECTION: function genericIapInitConnection(connected) {
     connected = connected.connected;
   },
   GENERIC_IAP_INIT_CONNECTION_FAILED: function genericIapInitConnectionFailed() {
-    let c9 = false;
+    let c4 = false;
   },
   GENERIC_IAP_END_CONNECTION: function genericIapEndConnection() {
-    let c9 = false;
+    let c4 = false;
   },
   GENERIC_IAP_SET_STORE_FRONT: function setStoreFront(storeFront) {
     storeFront = storeFront.storeFront;
   }
 });
-let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/billing/native/GenericIAPStore.tsx");
+const result = require("SubscriptionPlans").fileFinishedImporting("modules/billing/native/GenericIAPStore.tsx");
 
-export default tmp2;
+export default genericIAPStore;

@@ -1,55 +1,65 @@
-// Module ID: 15139
-// Function ID: 115155
+// Module ID: 15172
+// Function ID: 15173
 // Name: GuildRoleSubscriptionsRow
-// Dependencies: [31, 653, 1355, 10263, 33, 4165, 689, 1198, 4133, 15140, 1935, 11454, 1212, 10117, 2]
+// Dependencies: [19, 676, 1379, 10284, 21, 4189, 712, 1222, 4157, 15173, 1959, 11478, 1236, 10138, 2]
 // Exports: default
 
-// Module 15139 (GuildRoleSubscriptionsRow)
-import result from "result";
+// Module 15172 (GuildRoleSubscriptionsRow)
+import noop from "noop";
 import { Routes } from "ME";
 import { StaticChannelRoute } from "set";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
 const require = arg1;
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { marginVertical: require("hairlineWidth").CHANNEL_MARGIN_VERTICAL, marginHorizontal: 8, borderRadius: require("_createForOfIteratorHelperLoose").radii.md };
-_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+createCacheKey = { container: null };
+createCacheKey = { marginVertical: require("hairlineWidth").CHANNEL_MARGIN_VERTICAL, marginHorizontal: 8, borderRadius: require("Themes").radii.md };
+createCacheKey[0] = createCacheKey;
+createCacheKey = createCacheKey.createStyles(createCacheKey);
 const result = require("set").fileFinishedImporting("modules/guild_role_subscriptions/native/guild_sidebar/GuildRoleSubscriptionsRow.tsx");
 
 export default function GuildRoleSubscriptionsRow(selected) {
   selected = selected.selected;
-  const id = selected.guild.id;
+  let id;
+  let importDefault;
+  id = selected.guild.id;
   const items = [id];
+  importDefault = "role-subscriptions-channel-action-sheet";
   const items1 = [id];
   const callback = React.useCallback(() => {
     id(outer1_2[7]).transitionTo(outer1_4.CHANNEL(id, outer1_5.ROLE_SUBSCRIPTIONS));
   }, items);
   const callback1 = React.useCallback(() => {
-    let obj = outer1_1(outer1_2[8]);
+    let obj = rolesubscriptionschannelactionsheet(outer1_2[8]);
     obj = {
       guildId: id,
       onClose() {
-        outer2_1(outer2_2[8]).hideActionSheet("role-subscriptions-channel-action-sheet");
+        outer1_1(outer1_2[8]).hideActionSheet(closure_1);
       }
     };
-    obj.openLazy(id(outer1_2[10])(outer1_2[9], outer1_2.paths), "role-subscriptions-channel-action-sheet", obj);
+    obj.openLazy(id(outer1_2[10])(outer1_2[9], outer1_2.paths), rolesubscriptionschannelactionsheet, obj);
   }, items1);
-  const ChannelModes = id(11454).ChannelModes;
-  const tmp4 = selected ? ChannelModes.SELECTED : ChannelModes.DEFAULT;
-  let obj = { onPress: callback, onLongPress: callback1, style: _createForOfIteratorHelperLoose().container, accessible: true };
-  const tmp = _createForOfIteratorHelperLoose();
-  const intl = id(1212).intl;
-  obj.accessibilityLabel = intl.string(id(1212).t["KzCF/6"]);
-  obj.accessibilityState = { selected };
-  obj.mode = tmp4;
-  obj = {};
-  const intl2 = id(1212).intl;
-  obj.name = intl2.string(id(1212).t["KzCF/6"]);
-  obj.mode = tmp4;
-  obj.name = jsx(id(11454).BaseChannelName, {});
-  obj = { disableColor: true, mode: tmp4, source: importDefault(10117) };
-  obj.icon = jsx(id(11454).BaseChannelIcon, { disableColor: true, mode: tmp4, source: importDefault(10117) });
-  return jsx(importDefault(11454), { disableColor: true, mode: tmp4, source: importDefault(10117) });
+  const ChannelModes = id(11478).ChannelModes;
+  if (selected) {
+    let DEFAULT = ChannelModes.SELECTED;
+    let tmp6 = tmp4;
+  } else {
+    DEFAULT = ChannelModes.DEFAULT;
+    tmp6 = tmp4;
+  }
+  let obj = { onPress: callback, onLongPress: callback1, style: createCacheKey().container, accessible: true, accessibilityLabel: null, accessibilityState: null, mode: null, name: null, icon: null };
+  const tmp = createCacheKey();
+  const intl = tmp6(1236).intl;
+  obj[4] = intl.string(tmp6(1236).t["KzCF/6"]);
+  obj[5] = { selected };
+  obj[6] = DEFAULT;
+  obj = { name: null, mode: null };
+  const intl2 = tmp6(1236).intl;
+  obj[0] = intl2.string(tmp6(1236).t["KzCF/6"]);
+  obj[1] = DEFAULT;
+  obj[7] = jsx(tmp6(11478).BaseChannelName, { name: null, mode: null });
+  obj = { disableColor: true, mode: DEFAULT, source: null };
+  obj[2] = importDefault(10138);
+  obj[8] = jsx(tmp6(11478).BaseChannelIcon, { disableColor: true, mode: DEFAULT, source: null });
+  return jsx(importDefault(11478), { disableColor: true, mode: DEFAULT, source: null });
 };

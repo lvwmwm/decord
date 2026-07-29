@@ -1,55 +1,57 @@
-// Module ID: 5622
-// Function ID: 47558
+// Module ID: 5640
+// Function ID: 5641
 // Name: openAgeGateModal
-// Dependencies: [1197, 653, 675, 686, 5623, 1198, 2]
+// Dependencies: [1221, 676, 698, 709, 5641, 1222, 2]
 // Exports: closeAgeGateModal, closeFailedAgeGate, openAgeGateModal, openFailureAgeGateModal, openSuccessAgeGateModal
 
-// Module 5622 (openAgeGateModal)
+// Module 5640 (openAgeGateModal)
 import { AgeGateAnalyticAction } from "result";
 import ME from "ME";
 
-let closure_4;
-let closure_5;
-({ Routes: closure_4, AnalyticEvents: closure_5 } = ME);
-const result = require("expandLocation").fileFinishedImporting("modules/age_gate/AgeGateModalActionCreators.tsx");
+let c4;
+let c5;
+({ Routes: c4, AnalyticEvents: c5 } = ME);
+const result = require("expandEventProperties").fileFinishedImporting("modules/age_gate/AgeGateModalActionCreators.tsx");
 
-export const openAgeGateModal = function openAgeGateModal(NSFW_VOICE_CHANNEL) {
-  let obj = importDefault(675);
-  obj = { section: NSFW_VOICE_CHANNEL };
+export const openAgeGateModal = function openAgeGateModal(JOIN_LARGE_GUILD_UNDERAGE) {
+  let obj = importDefault(698);
+  obj = { section: JOIN_LARGE_GUILD_UNDERAGE };
   obj.track(constants2.OPEN_MODAL, { type: "Enter Your Birthday", source: obj });
-  obj = { type: "AGE_GATE_MODAL_OPEN", source: NSFW_VOICE_CHANNEL };
-  importDefault(686).dispatch(obj);
+  obj = { type: "AGE_GATE_MODAL_OPEN", source: JOIN_LARGE_GUILD_UNDERAGE };
+  importDefault(709).dispatch(obj);
 };
 export const closeAgeGateModal = function closeAgeGateModal(closure_0) {
-  let obj = importDefault(686);
-  obj.wait(() => outer1_1(outer1_2[3]).dispatch({ type: "AGE_GATE_MODAL_CLOSE" }));
+  let obj = importDefault(709);
+  obj.wait(() => callback(table[3]).dispatch({ type: "AGE_GATE_MODAL_CLOSE" }));
   if (undefined !== closure_0) {
-    obj = { source: closure_0, action: AgeGateAnalyticAction.AGE_GATE_CLOSE };
-    importDefault(675).track(constants2.AGE_GATE_ACTION, obj);
-    const obj2 = importDefault(675);
+    obj = { source: null, action: null };
+    obj[0] = closure_0;
+    obj[1] = AgeGateAnalyticAction.AGE_GATE_CLOSE;
+    importDefault(698).track(constants2.AGE_GATE_ACTION, obj);
+    const tmpResult = importDefault(698);
   }
 };
 export const openSuccessAgeGateModal = function openSuccessAgeGateModal(source) {
-  let obj = importDefault(686);
+  let obj = importDefault(709);
   obj.wait(() => {
-    outer1_1(outer1_2[3]).dispatch({ type: "AGE_GATE_SUCCESS_MODAL_OPEN" });
+    callback(table[3]).dispatch({ type: "AGE_GATE_SUCCESS_MODAL_OPEN" });
   });
   obj = { source, action: AgeGateAnalyticAction.AGE_GATE_SUCCESS };
-  importDefault(675).track(constants2.AGE_GATE_ACTION, obj);
+  importDefault(698).track(constants2.AGE_GATE_ACTION, obj);
 };
 export const openFailureAgeGateModal = function openFailureAgeGateModal(source) {
   let closure_0 = arg1;
-  let obj = importDefault(686);
+  let obj = importDefault(709);
   obj.wait(() => {
     let obj = outer1_1(outer1_2[3]);
     obj = { type: "AGE_GATE_FAILURE_MODAL_OPEN", underageMessage: closure_0 };
     obj.dispatch(obj);
   });
   obj = { source, action: AgeGateAnalyticAction.AGE_GATE_FAILURE };
-  importDefault(675).track(constants2.AGE_GATE_ACTION, obj);
+  importDefault(698).track(constants2.AGE_GATE_ACTION, obj);
 };
 export const closeFailedAgeGate = function closeFailedAgeGate() {
-  importDefault(5623).logoutInternal();
-  const obj = importDefault(5623);
-  require(1198) /* shouldNavigate */.transitionTo(constants.LOGIN, { source: "age_gate_modal" });
+  importDefault(5641).logoutInternal();
+  const obj = importDefault(5641);
+  require(1222) /* transitionTo */.transitionTo(constants.LOGIN, { source: "age_gate_modal" });
 };

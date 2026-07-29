@@ -1,51 +1,50 @@
-// Module ID: 11320
-// Function ID: 87876
+// Module ID: 11344
+// Function ID: 11345
 // Name: AppLauncherList
-// Dependencies: [31, 27, 33, 4165, 1557, 11251, 1273, 11321, 1212, 9215, 2]
+// Dependencies: [19, 17, 21, 4189, 1581, 11275, 1297, 11345, 1236, 9239, 2]
 // Exports: AppLauncherListEmptyState, AppLauncherListSearchBar
 
-// Module 11320 (AppLauncherList)
+// Module 11344 (AppLauncherList)
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import importAllResult from "result";
+import createCacheKey from "createCacheKey";
+import importAllResult from "noop";
 
 const require = arg1;
-let closure_5 = _createForOfIteratorHelperLoose.createStyles({ searchBarContainer: { marginBottom: 16 }, emptyState: { backgroundColor: "transparent", justifyContent: "flex-start" }, emptyStateImage: { flex: 0 } });
-const forwardRefResult = require("result").forwardRef((contentContainerStyle) => {
-  let tmp = arg1;
-  const bottom = importDefault(1557)().bottom;
-  let obj = require(11251) /* useAppLauncherFlashListProps */;
+let closure_5 = createCacheKey.createStyles({ searchBarContainer: { marginBottom: 16 }, emptyState: { backgroundColor: "transparent", justifyContent: "flex-start" }, emptyStateImage: { flex: 0 } });
+const forwardRefResult = require("noop").forwardRef((contentContainerStyle) => {
+  const bottom = importDefault(1581)().bottom;
+  let obj = require(11275) /* useAppLauncherFlashListProps */;
   const appLauncherFlashListProps = obj.useAppLauncherFlashListProps();
-  obj = { contentContainerStyle: items, scrollIndicatorInsets: { bottom } };
+  obj = { contentContainerStyle: items, scrollIndicatorInsets: { bottom }, ref: null };
   items = [{ paddingBottom: bottom }, contentContainerStyle.contentContainerStyle];
-  const scrollerRef = appLauncherFlashListProps.scrollerRef;
-  if (null != scrollerRef) {
-    tmp = scrollerRef;
+  let scrollerRef = appLauncherFlashListProps.scrollerRef;
+  if (scrollerRef == null) {
+    scrollerRef = arg1;
   }
-  obj.ref = tmp;
+  obj[2] = scrollerRef;
   const merged = Object.assign(contentContainerStyle);
-  obj["animatedOnScroll"] = appLauncherFlashListProps.onScroll;
-  obj["simultaneousHandlers"] = appLauncherFlashListProps.gestureRef;
-  obj["animatedProps"] = appLauncherFlashListProps.animatedProps;
-  return jsx(importDefault(11251), { contentContainerStyle: items, scrollIndicatorInsets: { bottom } });
+  ({ onScroll: obj2.animatedOnScroll, gestureRef: obj2.simultaneousHandlers, animatedProps: obj2.animatedProps } = appLauncherFlashListProps);
+  return jsx(importDefault(11275), { contentContainerStyle: items, scrollIndicatorInsets: { bottom }, ref: null });
 });
 const result = require("jsxProd").fileFinishedImporting("modules/app_launcher/native/base_components/AppLauncherList.tsx");
 
 export const AppLauncherList = forwardRefResult;
 export const AppLauncherListEmptyState = function AppLauncherListEmptyState() {
   const tmp = callback();
-  const obj = { style: tmp.emptyState, imageStyle: tmp.emptyStateImage, lightSource: importDefault(11321), darkSource: importDefault(11321) };
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj.title = intl.string(require(1212) /* getSystemLocale */.t.vYocDz);
-  const intl2 = require(1212) /* getSystemLocale */.intl;
-  obj.body = intl2.string(require(1212) /* getSystemLocale */.t.V6nAfF);
-  return jsx(require(1273) /* Button */.EmptyState, { style: tmp.emptyState, imageStyle: tmp.emptyStateImage, lightSource: importDefault(11321), darkSource: importDefault(11321) });
+  const obj = { style: tmp.emptyState, imageStyle: tmp.emptyStateImage, lightSource: null, darkSource: null, title: null, body: null };
+  obj[2] = importDefault(11345);
+  obj[3] = importDefault(11345);
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj[4] = intl.string(require(1236) /* getSystemLocale */.t.vYocDz);
+  const intl2 = require(1236) /* getSystemLocale */.intl;
+  obj[5] = intl2.string(require(1236) /* getSystemLocale */.t.V6nAfF);
+  return jsx(require(1297) /* Button */.EmptyState, { style: tmp.emptyState, imageStyle: tmp.emptyStateImage, lightSource: null, darkSource: null, title: null, body: null });
 };
 export const AppLauncherListSearchBar = function AppLauncherListSearchBar(arg0) {
-  let obj = { style: callback().searchBarContainer };
+  let obj = { style: callback().searchBarContainer, children: null };
   obj = { size: "md" };
   const merged = Object.assign(arg0);
-  obj.children = jsx(require(9215) /* SearchField */.SearchField, { size: "md" });
+  obj[1] = jsx(require(9239) /* SearchField */.SearchField, { size: "md" });
   return <View size="md" />;
 };

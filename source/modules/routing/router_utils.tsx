@@ -1,70 +1,62 @@
-// Module ID: 1198
-// Function ID: 13767
-// Name: shouldNavigate
-// Dependencies: [653, 3, 1199, 1207, 1210, 2]
-// Exports: back, currentRouteHasBackNavigation, forward, getFingerprintLocation, getHistory, getLastRouteChangeSource, getLastRouteChangeSourceLocationStack, hasNavigated, isValidFingerprintRoute, replaceWith, transitionToGuild
+// Module ID: 1222
+// Function ID: 1223
+// Name: transitionTo
+// Dependencies: [676, 3, 1223, 1231, 1234, 2]
+// Exports: back, currentRouteHasBackNavigation, forward, getFingerprintLocation, getHistory, getLastRouteChangeSource, getLastRouteChangeSourceLocationStack, hasNavigated, isValidFingerprintRoute, replaceWith, shouldNavigate, transitionToGuild
 
-// Module 1198 (shouldNavigate)
+// Module 1222 (transitionTo)
 import ME from "ME";
-import importDefaultResult from "reportDevtoolsEvent";
 import _extends from "_extends";
 
-let closure_5;
+let c5;
 let closure_6;
-let closure_7;
-function shouldNavigate() {
-  const ComponentDispatch = require(1207) /* reportDevtoolsEvent */.ComponentDispatch;
-  return !ComponentDispatch.hasSubscribers(constants2.MODAL_CLOSE);
-}
-function maybeExternallyNavigate(ME, assign) {
-  let closure_0 = ME;
-  let tmp = "string" !== typeof ME;
-  if (!tmp) {
+let error;
+function transitionTo(CHANNELResult, closure_1) {
+  let closure_0 = CHANNELResult;
+  let tmp = typeof CHANNELResult === "init";
+  if (typeof CHANNELResult !== "init") {
     tmp = !items.some((arg0) => ME.startsWith(arg0));
   }
   let flag = !tmp;
   if (!tmp) {
     const _HermesInternal = HermesInternal;
-    importDefaultResult.log("" + assign + " - route to external path " + ME);
+    globalThis.log("" + "assign" + " - route to external path " + CHANNELResult);
     const _window = window;
     const _Event = Event;
     const event = new Event("beforeunload");
     window.dispatchEvent(event);
     const _window2 = window;
     const _location = window.location;
-    _location[assign](ME);
+    let obj = _location.assign(CHANNELResult);
     flag = true;
   }
-  return flag;
-}
-function transitionTo(ME, source) {
-  if (!maybeExternallyNavigate(ME, "assign")) {
-    const _HermesInternal = HermesInternal;
-    importDefaultResult.log("transitionTo - Transitioning to " + ME);
-    source = undefined;
-    if (null != source) {
-      source = source.source;
+  if (!flag) {
+    const _HermesInternal2 = HermesInternal;
+    tmp3.log("transitionTo - Transitioning to " + CHANNELResult);
+    let source;
+    if (closure_1 != null) {
+      source = closure_1.source;
     }
     let sourceLocationStack;
-    if (null != source) {
-      sourceLocationStack = source.sourceLocationStack;
+    if (closure_1 != null) {
+      sourceLocationStack = closure_1.sourceLocationStack;
     }
-    if (null == source) {
-      _extends.push(ME);
+    if (null == closure_1) {
+      _extends.push(CHANNELResult);
     } else {
       const _URL = URL;
-      const _window = window;
-      const _HermesInternal2 = HermesInternal;
-      const uRL = new URL(ME, "https:" + window.GLOBAL_ENV.WEBAPP_ENDPOINT);
-      const obj = {};
-      ({ pathname: obj.pathname, search: obj.search, hash: obj.hash } = uRL);
-      const merged = Object.assign(source);
+      const _window3 = window;
+      const _HermesInternal3 = HermesInternal;
+      const uRL = new URL(CHANNELResult, "https:" + window.GLOBAL_ENV.WEBAPP_ENDPOINT);
+      obj = { pathname: null, search: null, hash: null };
+      ({ pathname: obj[0], search: obj[1], hash: obj[2] } = uRL);
+      const merged = Object.assign(closure_1);
       _extends.push(obj);
     }
   }
 }
-({ Routes: closure_5, PageAnalyticsLocations: closure_6, ComponentActions: closure_7 } = ME);
-importDefaultResult = new importDefaultResult("Routing/Utils");
+({ Routes: c5, PageAnalyticsLocations: closure_6, ComponentActions: error } = ME);
+const metroImportAll = new require("ComponentDispatcher")("Routing/Utils");
 const items = [ME.RelativeMarketingURLs.DEVELOPER_PORTAL];
 _extends = _extends.createMemoryHistory();
 let closure_10 = _extends.listen((arg0, arg1) => {
@@ -72,30 +64,52 @@ let closure_10 = _extends.listen((arg0, arg1) => {
     callback();
   }
 });
+const tmp3 = new require("ComponentDispatcher")("Routing/Utils");
 const result = require("_extends").fileFinishedImporting("modules/routing/router_utils.tsx");
 
-export { shouldNavigate };
+export const shouldNavigate = function shouldNavigate() {
+  const ComponentDispatch = require(1231) /* ComponentDispatcher */.ComponentDispatch;
+  return !ComponentDispatch.hasSubscribers(constants2.MODAL_CLOSE);
+};
 export { transitionTo };
-export const transitionToGuild = function transitionToGuild(guildId, channelId, messageId, source) {
-  importDefaultResult.log("transitionToGuild - Transitioning to " + JSON.stringify({ guildId, channelId, messageId }));
-  transitionTo(closure_5.CHANNEL(guildId, channelId, messageId), source);
+export const transitionToGuild = function transitionToGuild(guildId, channelId, messageId, closure_1) {
+  tmp3.log("transitionToGuild - Transitioning to " + JSON.stringify({ guildId, channelId, messageId }));
+  transitionTo(closure_5.CHANNEL(guildId, channelId, messageId), closure_1);
 };
 export const currentRouteHasBackNavigation = function currentRouteHasBackNavigation() {
   let hasItem = null != closure_3;
   if (hasItem) {
-    const ChannelBackNavigationSources = require(1210) /* set */.ChannelBackNavigationSources;
+    const ChannelBackNavigationSources = require(1234) /* set */.ChannelBackNavigationSources;
     hasItem = ChannelBackNavigationSources.has(closure_3);
   }
   return hasItem;
 };
 export const replaceWith = function replaceWith(ME, state) {
-  if (!maybeExternallyNavigate(ME, "replace")) {
+  let closure_0 = ME;
+  let tmp = typeof ME === "init";
+  if (typeof ME !== "init") {
+    tmp = !items.some((arg0) => ME.startsWith(arg0));
+  }
+  let flag = !tmp;
+  if (!tmp) {
     const _HermesInternal = HermesInternal;
-    importDefaultResult.log("Replacing route with " + ME);
-    if ("string" === typeof ME) {
-      const replaced = _extends.replace(ME, state);
+    globalThis.log("" + "replace" + " - route to external path " + ME);
+    const _window = window;
+    const _Event = Event;
+    const event = new Event("beforeunload");
+    window.dispatchEvent(event);
+    const _window2 = window;
+    const replaced = window.location.replace(ME);
+    flag = true;
+    const str5 = window.location;
+  }
+  if (!flag) {
+    const _HermesInternal2 = HermesInternal;
+    tmp3.log("Replacing route with " + ME);
+    if (typeof ME === "y") {
+      const replaced1 = _extends.replace(ME, state);
     } else {
-      const replaced1 = _extends.replace(ME);
+      const replaced2 = _extends.replace(ME);
     }
     let closure_3 = arg2;
   }
@@ -115,40 +129,39 @@ export const isValidFingerprintRoute = function isValidFingerprintRoute(arg0) {
 export const getFingerprintLocation = function getFingerprintLocation(arg0) {
   let ACCOUNT_REVERT = arg0;
   if (null == arg0) {
-    const pathname = _extends.location.pathname;
-    let str = "";
-    if (null != pathname) {
-      str = pathname;
+    let str = _extends.location.pathname;
+    if (str == null) {
+      str = "";
     }
     ACCOUNT_REVERT = str;
   }
   if (ACCOUNT_REVERT.startsWith(closure_5.LOGIN)) {
     ACCOUNT_REVERT = constants.LOGIN;
-  } else if (ACCOUNT_REVERT.startsWith(closure_5.REGISTER)) {
+  } else if (ACCOUNT_REVERT.startsWith(obj.REGISTER)) {
     ACCOUNT_REVERT = constants.REGISTER;
-  } else if (ACCOUNT_REVERT.startsWith(closure_5.INVITE(""))) {
+  } else if (ACCOUNT_REVERT.startsWith(obj.INVITE(""))) {
     ACCOUNT_REVERT = constants.INVITE;
-  } else if (ACCOUNT_REVERT.startsWith(closure_5.VERIFY)) {
+  } else if (ACCOUNT_REVERT.startsWith(obj.VERIFY)) {
     ACCOUNT_REVERT = constants.VERIFY;
-  } else if (ACCOUNT_REVERT.startsWith(closure_5.DISABLE_EMAIL_NOTIFICATIONS)) {
+  } else if (ACCOUNT_REVERT.startsWith(obj.DISABLE_EMAIL_NOTIFICATIONS)) {
     ACCOUNT_REVERT = constants.DISABLE_EMAIL_NOTIFICATIONS;
-  } else if (ACCOUNT_REVERT.startsWith(closure_5.DISABLE_SERVER_HIGHLIGHT_NOTIFICATIONS)) {
+  } else if (ACCOUNT_REVERT.startsWith(obj.DISABLE_SERVER_HIGHLIGHT_NOTIFICATIONS)) {
     ACCOUNT_REVERT = constants.DISABLE_SERVER_HIGHLIGHT_NOTIFICATIONS;
-  } else if (ACCOUNT_REVERT.startsWith(closure_5.REJECT_IP)) {
+  } else if (ACCOUNT_REVERT.startsWith(obj.REJECT_IP)) {
     ACCOUNT_REVERT = constants.REJECT_IP;
-  } else if (ACCOUNT_REVERT.startsWith(closure_5.REJECT_MFA)) {
+  } else if (ACCOUNT_REVERT.startsWith(obj.REJECT_MFA)) {
     ACCOUNT_REVERT = constants.REJECT_MFA;
-  } else if (ACCOUNT_REVERT.startsWith(closure_5.AUTHORIZE_IP)) {
+  } else if (ACCOUNT_REVERT.startsWith(obj.AUTHORIZE_IP)) {
     ACCOUNT_REVERT = constants.AUTHORIZE_IP;
-  } else if (ACCOUNT_REVERT.startsWith(closure_5.AUTHORIZE_PAYMENT)) {
+  } else if (ACCOUNT_REVERT.startsWith(obj.AUTHORIZE_PAYMENT)) {
     ACCOUNT_REVERT = constants.AUTHORIZE_PAYMENT;
-  } else if (ACCOUNT_REVERT.startsWith(closure_5.RESET)) {
+  } else if (ACCOUNT_REVERT.startsWith(obj.RESET)) {
     ACCOUNT_REVERT = constants.RESET;
-  } else if (ACCOUNT_REVERT.startsWith(closure_5.REPORT)) {
+  } else if (ACCOUNT_REVERT.startsWith(obj.REPORT)) {
     ACCOUNT_REVERT = constants.REPORT;
-  } else if (ACCOUNT_REVERT.startsWith(closure_5.REPORT_SECOND_LOOK)) {
+  } else if (ACCOUNT_REVERT.startsWith(obj.REPORT_SECOND_LOOK)) {
     ACCOUNT_REVERT = constants.REPORT_SECOND_LOOK;
-  } else if (ACCOUNT_REVERT.startsWith(closure_5.ACCOUNT_REVERT(""))) {
+  } else if (ACCOUNT_REVERT.startsWith(obj.ACCOUNT_REVERT(""))) {
     ACCOUNT_REVERT = constants.ACCOUNT_REVERT;
   }
   return ACCOUNT_REVERT;
@@ -157,13 +170,15 @@ export function hasNavigated() {
   return false;
 }
 export const back = function back() {
-  if (shouldNavigate()) {
+  const ComponentDispatch = require(1231) /* ComponentDispatcher */.ComponentDispatch;
+  if (!hasSubscribersResult) {
     let c3 = null;
     _extends.goBack();
   }
 };
 export const forward = function forward() {
-  if (shouldNavigate()) {
+  const ComponentDispatch = require(1231) /* ComponentDispatcher */.ComponentDispatch;
+  if (!hasSubscribersResult) {
     let c3 = null;
     _extends.goForward();
   }

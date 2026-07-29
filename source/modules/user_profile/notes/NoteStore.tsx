@@ -1,71 +1,34 @@
-// Module ID: 12022
-// Function ID: 92755
-// Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 1388, 1839, 1842, 2]
+// Module ID: 12046
+// Function ID: 12047
+// Name: getNote
+// Dependencies: [1412, 1863, 1866, 2]
 
-// Module 12022 (_isNativeReflectConstruct)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import _callSuper from "_callSuper";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
-import constructInPlace from "constructInPlace";
-import { LibdiscoreBatchStoreRefactorExperiment } from "_callSuper";
+// Module 12046 (getNote)
+import isValueEqual from "isValueEqual";
+import { LibdiscoreStore } from "identity";
+import { LibdiscoreBatchStoreRefactorExperiment } from "items";
 
 let TypeTag;
-let closure_5;
-function _isNativeReflectConstruct() {
-  let _isNativeReflectConstruct = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return _isNativeReflectConstruct;
+let c0;
+({ TypeTag, constructInPlace: c0 } = isValueEqual);
+const Note = "Note";
+class NoteStore extends LibdiscoreStore {
+  constructor() {
+    applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
+    applyArgumentsResult.database = applyArgumentsResult.addKVDatabase("notes");
+    return applyArgumentsResult;
   }
-  const result = _isNativeReflectConstruct();
 }
-({ TypeTag, constructInPlace: closure_5 } = constructInPlace);
-let tmp3 = ((LibdiscoreStore) => {
-  class NoteStore {
-    constructor(arg0) {
-      self = this;
-      items = [...arguments];
-      tmp = NoteStore(this, NoteStore);
-      items1 = [...items];
-      obj = outer1_3(NoteStore);
-      tmp2 = outer1_2;
-      if (outer1_6()) {
-        tmp4 = globalThis;
-        _Reflect = Reflect;
-        tmp5 = outer1_3;
-        constructResult = Reflect.construct(obj, items1, outer1_3(self).constructor);
-      } else {
-        constructResult = obj.apply(self, items1);
-      }
-      tmp2Result = tmp2(self, constructResult);
-      tmp2Result.database = tmp2Result.addKVDatabase("notes");
-      return tmp2Result;
-    }
-  }
-  callback2(NoteStore, LibdiscoreStore);
-  let obj = {
-    key: "getNote",
-    value(arg0) {
-      const database = this.database;
-      return database.get(arg0);
-    }
-  };
-  let items = [obj, ];
-  obj = {
-    key: "stateWrapper",
-    value() {
-      return this.database;
-    }
-  };
-  items[1] = obj;
-  return callback(NoteStore, items);
-})(require("_isNativeReflectConstruct").LibdiscoreStore);
-tmp3.displayName = "NoteStore";
-tmp3 = new tmp3({
+const prototype = NoteStore.prototype;
+prototype["getNote"] = function getNote(arg0) {
+  const database = this.database;
+  return database.get(arg0);
+};
+prototype["stateWrapper"] = function stateWrapper() {
+  return this.database;
+};
+NoteStore.displayName = "NoteStore";
+const noteStore = new NoteStore({
   LOGOUT(arg0, clear) {
     return clear.clear();
   },
@@ -79,13 +42,13 @@ tmp3 = new tmp3({
     return clear.clear();
   },
   USER_NOTE_UPDATE(note, set) {
-    const result = set.set(note.id, callback3("Note", { loading: false, note: note.note }));
+    const result = set.set(note.id, callback(Note, { loading: false, note: note.note }));
   },
   USER_NOTE_LOAD_START(userId, set) {
-    const result = set.set(userId.userId, callback3("Note", { loading: true, note: null }));
+    const result = set.set(userId.userId, callback(Note, { loading: true, note: null }));
   }
 }, LibdiscoreBatchStoreRefactorExperiment.getCachedBridgedStoreMode());
-let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/user_profile/notes/NoteStore.tsx");
+let result = require("items").fileFinishedImporting("modules/user_profile/notes/NoteStore.tsx");
 
-export default tmp3;
+export default noteStore;
 export const NoteRecordTypeTag = "Note";

@@ -1,24 +1,26 @@
-// Module ID: 8832
-// Function ID: 69762
+// Module ID: 8856
+// Function ID: 8857
 // Name: showAudioOutputSelector
-// Dependencies: [27, 8833, 477, 4133, 8834, 1935, 2]
+// Dependencies: [17, 8857, 500, 4157, 8858, 1959, 2]
 // Exports: showAudioOutputSelector
 
-// Module 8832 (showAudioOutputSelector)
+// Module 8856 (showAudioOutputSelector)
 import { NativeModules } from "get ActivityIndicator";
 import { VOICE_PANEL_AUDIO_OUTPUT_ACTION_SHEET_KEY as closure_4 } from "VOICE_PANEL_SETTINGS_KEY";
 
 const result = require("set").fileFinishedImporting("modules/voice_calls/native/audio_output_selector/showAudioOutputSelector.tsx");
 
 export const showAudioOutputSelector = function showAudioOutputSelector(channelId, closure_1) {
-  let obj = require(477) /* set */;
+  let obj = require(500) /* set */;
   if (obj.isAndroid()) {
-    obj = { channelId, isConnectedToVoiceChannel: closure_1 };
-    importDefault(4133).openLazy(require(1935) /* maybeLoadBundle */(8834, dependencyMap.paths), closure_4, obj);
-    const obj2 = importDefault(4133);
+    obj = { channelId: null, isConnectedToVoiceChannel: null };
+    obj[0] = channelId;
+    obj[1] = closure_1;
+    importDefault(4157).openLazy(require(1959) /* asyncRequireImpl */(8858, dependencyMap.paths), closure_4, obj);
+    const obj2 = importDefault(4157);
   } else {
     const AudioRoutePicker = NativeModules.AudioRoutePicker;
-    if (null != AudioRoutePicker) {
+    if (AudioRoutePicker != null) {
       AudioRoutePicker.showAudioPicker();
     }
   }

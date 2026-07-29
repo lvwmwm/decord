@@ -1,34 +1,34 @@
-// Module ID: 14246
-// Function ID: 109447
+// Module ID: 14268
+// Function ID: 14269
 // Name: volumeSlider
-// Dependencies: [4212, 7733, 566, 10099, 1212, 8814, 10744, 2]
+// Dependencies: [4236, 7756, 589, 10120, 1236, 8838, 10768, 2]
 
-// Module 14246 (volumeSlider)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 14268 (volumeSlider)
+import _detectH265HardwareDecode from "_detectH265HardwareDecode";
 import createToggle from "createToggle";
 
 const require = arg1;
 createToggle = {
   useTitle() {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(require(1212) /* getSystemLocale */.t.xPHVBs);
+    const intl = require(1236) /* getSystemLocale */.intl;
+    return intl.string(require(1236) /* getSystemLocale */.t.xPHVBs);
   },
   parent: require("MobileSetting").MobileSetting.VOICE,
   maximum: 200,
   useValue: function useOutputVolumeSettingValue() {
-    const items = [_isNativeReflectConstruct];
-    return require(566) /* initialize */.useStateFromStores(items, () => outer1_3.getOutputVolume());
+    const items = [_detectH265HardwareDecode];
+    return require(589) /* initialize */.useStateFromStores(items, () => outputVolume.getOutputVolume());
   },
-  onValueChange: require("getInputDeviceName").setOutputVolume,
+  onValueChange: require("trackDeviceChanged").setOutputVolume,
   useSearchTerms() {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    const items = [intl.string(require(1212) /* getSystemLocale */.t["3182VD"]), ];
-    const intl2 = require(1212) /* getSystemLocale */.intl;
-    items[1] = intl2.string(require(1212) /* getSystemLocale */.t["DGq/PR"]);
+    const intl = require(1236) /* getSystemLocale */.intl;
+    const items = [intl.string(require(1236) /* getSystemLocale */.t["3182VD"]), ];
+    const intl2 = require(1236) /* getSystemLocale */.intl;
+    items[1] = intl2.string(require(1236) /* getSystemLocale */.t["DGq/PR"]);
     return items;
   },
   usePredicate() {
-    return importDefault(10744).useConfig({ location: "OutputVolumeSetting" }).audioOutputPresent;
+    return importDefault(10768).useConfig({ location: "OutputVolumeSetting" }).audioOutputPresent;
   }
 };
 createToggle = createToggle.createVolumeSlider(createToggle);

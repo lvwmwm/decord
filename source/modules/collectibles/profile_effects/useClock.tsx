@@ -1,17 +1,17 @@
-// Module ID: 8040
-// Function ID: 63883
+// Module ID: 8064
+// Function ID: 8065
 // Name: allowableMinInterval
-// Dependencies: [31, 44, 4594, 2]
+// Dependencies: [19, 38, 4616, 2]
 // Exports: default
 
-// Module 8040 (allowableMinInterval)
-import result from "result";
+// Module 8064 (allowableMinInterval)
+import noop from "noop";
 
 const result = require("useMountLayoutEffect").fileFinishedImporting("modules/collectibles/profile_effects/useClock.tsx");
 
 export default function _default(arg0) {
-  let obj = arg1;
   const importDefault = arg0;
+  let obj = arg1;
   if (arg1 === undefined) {
     obj = {};
   }
@@ -45,56 +45,57 @@ export default function _default(arg0) {
   closure_12 = allowableMinInterval.useRef(undefined);
   callback = allowableMinInterval.useCallback(() => {
     closure_11.current = 0;
-    if (null != closure_12.current) {
+    if (null != ref6.current) {
       const _clearTimeout = clearTimeout;
-      clearTimeout(closure_12.current);
-      closure_12.current = undefined;
+      clearTimeout(tmp.current);
+      tmp.current = undefined;
     }
   }, []);
   stop = allowableMinInterval.useCallback(() => {
     ticking.current = false;
     cancelAnimationFrame(ref2.current);
-    clearTimeout(closure_12.current);
+    clearTimeout(ref6.current);
   }, []);
   const items = [allowableMinInterval, callback, num2, droppedFramesCallbackThreshold, droppedFramesCallback, arg0];
   callback2 = allowableMinInterval.useCallback((current) => {
     if (ticking.current) {
       if (null == ref3.current) {
-        ref3.current = current;
+        tmp2.current = current;
       }
       if (null == ref4.current) {
-        ref4.current = current;
+        tmp4.current = current;
       }
-      const diff = current - ref4.current;
-      let num = 120;
-      const diff1 = current - ref3.current;
-      if (null != allowableMinInterval) {
-        num = allowableMinInterval;
+      const diff = current - tmp4.current;
+      let num = allowableMinInterval;
+      const diff1 = current - tmp2.current;
+      if (allowableMinInterval == null) {
+        num = 120;
       }
       if (diff1 > 1.5 * Math.min(num, ref.current)) {
         ref5.current = ref5.current + 1;
-        if (null != closure_12.current) {
+        if (null != ref6.current) {
           const _clearTimeout = clearTimeout;
-          clearTimeout(closure_12.current);
+          clearTimeout(tmp22.current);
         }
         const _setTimeout = setTimeout;
-        closure_12.current = setTimeout(callback, num2);
+        ref6.current = setTimeout(callback, num2);
         if (null != droppedFramesCallbackThreshold) {
-          if (ref5.current > droppedFramesCallbackThreshold) {
+          if (tmp21.current > tmp12) {
             callback(num[1])(null != droppedFramesCallback, "useClock - If you set a dropped frames threshold, you must provide a droppedFramesCallback to do something when that threshold is hit");
             if (droppedFramesCallback()) {
-              ref5.current = 0;
+              tmp21.current = 0;
             }
           }
         }
       }
       ref3.current = current;
-      if (diff >= ref.current - 3) {
-        ref4.current = current;
+      if (diff >= tmp8.current - 3) {
+        tmp4.current = current;
         callback(diff);
       }
       const _requestAnimationFrame = requestAnimationFrame;
       closure_7.current = requestAnimationFrame(callback2);
+      tmp8 = ref;
     }
   }, items);
   const items1 = [callback2];
@@ -110,7 +111,7 @@ export default function _default(arg0) {
   }, items2);
   importDefault(num[2])(() => {
     closure_7.current = requestAnimationFrame(callback2);
-    return () => outer1_14();
+    return () => callback();
   });
   return { stop, reset, ticking };
 };

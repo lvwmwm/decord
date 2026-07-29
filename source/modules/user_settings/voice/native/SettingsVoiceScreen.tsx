@@ -1,138 +1,137 @@
-// Module ID: 14242
-// Function ID: 109424
+// Module ID: 14264
+// Function ID: 14265
 // Name: KrispLogo
-// Dependencies: [31, 27, 4212, 7733, 653, 33, 1921, 4165, 4101, 4011, 10768, 10769, 1212, 5251, 10767, 4161, 10764, 10099, 13657, 2]
+// Dependencies: [19, 17, 4236, 7756, 676, 21, 1945, 4189, 4125, 4035, 10792, 10793, 1236, 5273, 10791, 4185, 10788, 10120, 13678, 2]
 // Exports: default
 
-// Module 14242 (KrispLogo)
-import result from "result";
-import get_ActivityIndicator from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 14264 (KrispLogo)
+import set from "set";
+import get_ActivityIndicator from "createToggle";
+import _detectH265HardwareDecode from "_detectH265HardwareDecode";
 import { MobileSetting } from "MobileSetting";
 import { HelpdeskArticles } from "ME";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import importDefaultResult from "wrapURL";
+import createCacheKey from "createCacheKey";
+import importDefaultResult from "combined";
 
-let closure_10;
-let closure_11;
-let closure_4;
-let closure_5;
-let closure_9;
+let c10;
+let c4;
+let c5;
+let c9;
+let unpackModuleId;
 const require = arg1;
 function KrispLogo() {
   const tmp = callback3();
-  let obj = require(4011) /* AccessibilityAnnouncer */;
-  if (obj.isThemeLight(tmp2)) {
-    let tmp3Result = tmp3(10768);
+  let obj = require(4035) /* AccessibilityAnnouncer */;
+  if (obj.isThemeLight(tmp4)) {
+    let tmp2Result = tmp2(10792);
   } else {
-    tmp3Result = tmp3(10769);
+    tmp2Result = tmp2(10793);
   }
-  obj = { style: tmp.krisp };
-  obj = { style: tmp.logo, source: tmp3Result };
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj.accessibilityLabel = intl.string(require(1212) /* getSystemLocale */.t.vFiCSx);
+  obj = { style: tmp.krisp, children: null };
+  obj = { style: tmp.logo, source: tmp2Result, accessibilityLabel: null };
+  const intl = tmp5(1236).intl;
+  obj[2] = intl.string(require(1236) /* getSystemLocale */.t.vFiCSx);
   const items = [callback(closure_5, obj), ];
-  const obj1 = { accessibilityRole: "link" };
-  const intl2 = require(1212) /* getSystemLocale */.intl;
-  obj1.accessibilityLabel = intl2.string(require(1212) /* getSystemLocale */.t.hvVgAZ);
-  obj1.onPress = require(10767) /* handleKrispLinkPressed */.handleKrispLinkPressed;
-  const obj2 = { variant: "text-sm/medium", color: "text-link" };
-  const intl3 = require(1212) /* getSystemLocale */.intl;
-  obj2.children = intl3.string(require(1212) /* getSystemLocale */.t.hvVgAZ);
-  obj1.children = callback(require(4161) /* Text */.Text, obj2);
-  items[1] = callback(require(5251) /* Directions */.Pressable, obj1);
-  obj.children = items;
+  const obj1 = { accessibilityRole: "link", accessibilityLabel: null, onPress: null, children: null };
+  const intl2 = tmp5(1236).intl;
+  obj1[1] = intl2.string(require(1236) /* getSystemLocale */.t.hvVgAZ);
+  obj1[2] = require(10791) /* handleKrispLinkPressed */.handleKrispLinkPressed;
+  const obj2 = { variant: "text-sm/medium", color: "text-link", children: null };
+  const intl3 = tmp5(1236).intl;
+  obj2[2] = intl3.string(require(1236) /* getSystemLocale */.t.hvVgAZ);
+  obj1[3] = callback(require(4185) /* Text */.Text, obj2);
+  items[1] = callback(require(5273) /* Directions */.Pressable, obj1);
+  obj[1] = items;
   return callback2(closure_4, obj);
 }
 function SystemProcessingSubLabel() {
-  let obj = require(10764) /* getNoiseCancellationDeferredToSystem */;
-  let tmp = null;
+  let obj = require(10788) /* getNoiseCancellationDeferredToSystem */;
+  let tmp3 = null;
   if (obj.useNoiseCancellationDeferredToSystem()) {
-    obj = { variant: "text-sm/medium" };
-    const intl = require(1212) /* getSystemLocale */.intl;
-    obj = {
-      onSettingsClick() {
-          const mediaEngine = outer1_6.getMediaEngine();
-          const result = mediaEngine.showSystemCaptureConfigurationUI("microphone_modes");
-        }
+    obj = { variant: "text-sm/medium", children: null };
+    const intl = tmp(1236).intl;
+    obj = { onSettingsClick: null };
+    obj[0] = function onSettingsClick() {
+      mediaEngine = mediaEngine.getMediaEngine();
+      const result = mediaEngine.showSystemCaptureConfigurationUI("microphone_modes");
     };
-    obj.children = intl.format(require(1212) /* getSystemLocale */.t.EUNgko, obj);
-    tmp = callback(require(4161) /* Text */.Text, obj);
+    obj[1] = intl.format(tmp(1236).t.EUNgko, obj);
+    tmp3 = callback(tmp(4185).Text, obj);
   }
-  return tmp;
+  return tmp3;
 }
-({ View: closure_4, Image: closure_5 } = get_ActivityIndicator);
-({ jsx: closure_9, jsxs: closure_10, Fragment: closure_11 } = jsxProd);
-let closure_12 = "" + require("wrapURL").getArticleURL(HelpdeskArticles.VOICE_VIDEO_TROUBLESHOOTING) + "?utm_source=discord&utm_medium=blog&utm_campaign=2020-06_help-voice-video&utm_content=--t%3Apm";
-let closure_13 = _createForOfIteratorHelperLoose.createStyles({ krisp: { marginTop: 8, flexDirection: "row", alignItems: "center" }, logo: { marginRight: 8, height: 30, width: 67 } });
-let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/user_settings/voice/native/SettingsVoiceScreen.tsx");
+({ View: c4, Image: c5 } = get_ActivityIndicator);
+({ jsx: c9, jsxs: c10, Fragment: unpackModuleId } = jsxProd);
+let closure_12 = "" + require("combined").getArticleURL(HelpdeskArticles.VOICE_VIDEO_TROUBLESHOOTING) + "?utm_source=discord&utm_medium=blog&utm_campaign=2020-06_help-voice-video&utm_content=--t%3Apm";
+let closure_13 = createCacheKey.createStyles({ krisp: { marginTop: 8, flexDirection: "row", alignItems: "center" }, logo: { marginRight: 8, height: 30, width: 67 } });
+let result = require("_detectH265HardwareDecode").fileFinishedImporting("modules/user_settings/voice/native/SettingsVoiceScreen.tsx");
 
 export default function SettingsVoiceScreen() {
   const node = React.useMemo(() => {
-    let obj = outer1_0(outer1_2[17]);
-    obj = {};
-    obj = {};
-    const intl = outer1_0(outer1_2[12]).intl;
-    obj.label = intl.string(outer1_0(outer1_2[12]).t.LKCupB);
+    let obj = callback(10120);
+    obj = { sections: null };
+    obj = { label: null, settings: null };
+    const intl = callback(1236).intl;
+    obj[0] = intl.string(callback(1236).t.LKCupB);
     const items = [, , ];
-    ({ INPUT_MODE: arr[0], AUTO_VOICE_SENSITIVITY: arr[1], VOICE_SENSITIVITY: arr[2] } = outer1_7);
-    obj.settings = items;
+    ({ INPUT_MODE: arr[0], AUTO_VOICE_SENSITIVITY: arr[1], VOICE_SENSITIVITY: arr[2] } = constants);
+    obj[1] = items;
     const items1 = [obj, , , , , , , ];
-    const obj1 = {};
-    const intl2 = outer1_0(outer1_2[12]).intl;
-    obj1.label = intl2.string(outer1_0(outer1_2[12]).t.UXxPGB);
+    const obj1 = { label: null, settings: null, subLabel: null };
+    const intl2 = callback(1236).intl;
+    obj1[0] = intl2.string(callback(1236).t.UXxPGB);
     const items2 = [, ];
-    ({ OUTPUT_VOLUME: arr3[0], STREAM_OUTPUT_VOLUME: arr3[1] } = outer1_7);
-    obj1.settings = items2;
-    const intl3 = outer1_0(outer1_2[12]).intl;
-    obj1.subLabel = intl3.format(outer1_0(outer1_2[12]).t["V+B3FH"], { guideURL: outer1_12 });
+    ({ OUTPUT_VOLUME: arr3[0], STREAM_OUTPUT_VOLUME: arr3[1] } = constants);
+    obj1[1] = items2;
+    const intl3 = callback(1236).intl;
+    obj1[2] = intl3.format(callback(1236).t["V+B3FH"], { guideURL: closure_12 });
     items1[1] = obj1;
-    const obj3 = {};
-    const intl4 = outer1_0(outer1_2[12]).intl;
-    obj3.label = intl4.string(outer1_0(outer1_2[12]).t.xbMc8r);
-    const items3 = [outer1_7.SOUNDBOARD_VOLUME];
-    obj3.settings = items3;
-    const intl5 = outer1_0(outer1_2[12]).intl;
-    const obj4 = {};
-    let obj7 = outer1_1(outer1_2[6]);
-    obj4.helpCenterArticle = obj7.getArticleURL(outer1_8.SOUNDBOARD);
-    obj3.subLabel = intl5.format(outer1_0(outer1_2[12]).t.BPbGq7, obj4);
+    const obj3 = { label: null, settings: null, subLabel: null };
+    const intl4 = callback(1236).intl;
+    obj3[0] = intl4.string(callback(1236).t.xbMc8r);
+    const items3 = [constants.SOUNDBOARD_VOLUME];
+    obj3[1] = items3;
+    const intl5 = callback(1236).intl;
+    const obj4 = { helpCenterArticle: null };
+    let obj7 = callback2(1945);
+    obj4[0] = obj7.getArticleURL(constants2.SOUNDBOARD);
+    obj3[2] = intl5.format(callback(1236).t.BPbGq7, obj4);
     items1[2] = obj3;
-    const obj5 = {};
-    const intl6 = outer1_0(outer1_2[12]).intl;
-    obj5.label = intl6.string(outer1_0(outer1_2[12]).t.bNqkD9);
-    const items4 = [outer1_7.ANDROID_MOBILE_OVERLAY];
-    obj5.settings = items4;
+    const obj5 = { label: null, settings: null };
+    const intl6 = callback(1236).intl;
+    obj5[0] = intl6.string(callback(1236).t.bNqkD9);
+    const items4 = [constants.ANDROID_MOBILE_OVERLAY];
+    obj5[1] = items4;
     items1[3] = obj5;
-    const obj6 = { settings: items5 };
-    items5 = [outer1_7.NOISE_SUPPRESSION_KRISP];
-    obj7 = {};
-    const items6 = [outer1_9(outer1_15, {}), outer1_9(outer1_14, {})];
-    obj7.children = items6;
-    obj6.subLabel = outer1_10(outer1_11, obj7);
+    const obj6 = { settings: items5, subLabel: null };
+    items5 = [constants.NOISE_SUPPRESSION_KRISP];
+    obj7 = { children: null };
+    const items6 = [callback3(closure_15, {}), callback3(closure_14, {})];
+    obj7[0] = items6;
+    obj6[1] = callback4(closure_11, obj7);
     items1[4] = obj6;
-    const obj8 = {};
-    const intl7 = outer1_0(outer1_2[12]).intl;
-    obj8.label = intl7.string(outer1_0(outer1_2[12]).t.t8Qhib);
-    const items7 = [outer1_7.NOISE_SUPPRESSION];
-    obj8.settings = items7;
+    const obj8 = { label: null, settings: null };
+    const intl7 = callback(1236).intl;
+    obj8[0] = intl7.string(callback(1236).t.t8Qhib);
+    const items7 = [constants.NOISE_SUPPRESSION];
+    obj8[1] = items7;
     items1[5] = obj8;
-    const obj9 = {};
-    const intl8 = outer1_0(outer1_2[12]).intl;
-    obj9.label = intl8.string(outer1_0(outer1_2[12]).t["6I6GUv"]);
+    const obj9 = { label: null, settings: null };
+    const intl8 = callback(1236).intl;
+    obj9[0] = intl8.string(callback(1236).t["6I6GUv"]);
     const items8 = [, , , ];
-    ({ ECHO_CANCELLATION: arr9[0], SIDECHAIN_COMPRESSION: arr9[1], AUTOMATIC_GAIN_CONTROL: arr9[2], ADVANCED_VOICE_ACTIVITY: arr9[3] } = outer1_7);
-    obj9.settings = items8;
+    ({ ECHO_CANCELLATION: arr9[0], SIDECHAIN_COMPRESSION: arr9[1], AUTOMATIC_GAIN_CONTROL: arr9[2], ADVANCED_VOICE_ACTIVITY: arr9[3] } = constants);
+    obj9[1] = items8;
     items1[6] = obj9;
-    const obj10 = {};
-    const intl9 = outer1_0(outer1_2[12]).intl;
-    obj10.label = intl9.string(outer1_0(outer1_2[12]).t.OBwCXF);
-    const items9 = [outer1_7.DISABLE_STREAM_PREVIEWS];
-    obj10.settings = items9;
+    const obj10 = { label: null, settings: null };
+    const intl9 = callback(1236).intl;
+    obj10[0] = intl9.string(callback(1236).t.OBwCXF);
+    const items9 = [constants.DISABLE_STREAM_PREVIEWS];
+    obj10[1] = items9;
     items1[7] = obj10;
-    obj.sections = items1;
+    obj[0] = items1;
     return obj.createList(obj);
   }, []);
-  return callback(importDefault(13657), { node });
+  return callback(importDefault(13678), { node });
 };

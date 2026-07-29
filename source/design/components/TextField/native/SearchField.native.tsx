@@ -1,26 +1,25 @@
-// Module ID: 9215
-// Function ID: 72138
+// Module ID: 9239
+// Function ID: 9240
 // Name: SearchField
-// Dependencies: [31, 33, 6712, 1212, 8270, 2]
+// Dependencies: [19, 21, 6733, 1236, 8294, 2]
 
-// Module 9215 (SearchField)
+// Module 9239 (SearchField)
 import { jsx } from "jsxProd";
-import importAllResult from "result";
+import importAllResult from "noop";
 
 const require = arg1;
-const forwardRefResult = require("result").forwardRef((arg0, ref) => {
-  const obj = {};
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj.placeholder = intl.string(require(1212) /* getSystemLocale */.t["5h0QOP"]);
-  obj.returnKeyType = "search";
-  obj.ref = ref;
+const forwardRefResult = require("noop").forwardRef((arg0, arg1) => {
+  const obj = { placeholder: null, returnKeyType: "search", ref: null };
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj[0] = intl.string(require(1236) /* getSystemLocale */.t["5h0QOP"]);
+  obj[2] = arg1;
   const merged = Object.assign(arg0);
-  obj["autoCorrect"] = false;
-  obj["autoCapitalize"] = "none";
-  obj["accessibilityRole"] = "search";
-  obj["leadingIcon"] = require(8270) /* MagnifyingGlassIcon */.MagnifyingGlassIcon;
-  obj["isClearable"] = true;
-  return jsx(require(6712) /* TextField */.TextField, {});
+  obj.autoCorrect = false;
+  obj.autoCapitalize = "none";
+  obj.accessibilityRole = "search";
+  obj.leadingIcon = require(8294) /* MagnifyingGlassIcon */.MagnifyingGlassIcon;
+  obj.isClearable = true;
+  return jsx(require(6733) /* TextField */.TextField, { placeholder: null, returnKeyType: "search", ref: null });
 });
 const result = require("TextField").fileFinishedImporting("design/components/TextField/native/SearchField.native.tsx");
 

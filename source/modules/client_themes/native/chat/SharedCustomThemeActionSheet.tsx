@@ -1,112 +1,127 @@
-// Module ID: 11117
-// Function ID: 86184
-// Name: sharedClientThemeToThemeSettings
-// Dependencies: [57, 31, 27, 3817, 653, 1852, 33, 4165, 689, 675, 11118, 4007, 5221, 5220, 1212, 2397, 4161, 6186, 4578, 566, 3811, 6196, 5517, 1273, 4008, 2]
+// Module ID: 11141
+// Function ID: 11142
+// Name: PrimaryActionButton
+// Dependencies: [32, 19, 17, 3841, 676, 1876, 21, 4189, 712, 698, 11142, 4031, 5243, 5242, 1236, 2421, 4185, 6206, 4600, 589, 3835, 6216, 5535, 1297, 4032, 2]
 // Exports: default
 
-// Module 11117 (sharedClientThemeToThemeSettings)
+// Module 11141 (PrimaryActionButton)
 import _slicedToArray from "_slicedToArray";
-import closure_4 from "result";
-import result from "result";
-import { View } from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import initialize from "initialize";
+import noop from "initialize";
+import { View } from "saveGuildFolders";
+import reset from "reset";
 import { AnalyticEvents } from "ME";
 import { PremiumTypes } from "GuildFeatures";
-import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import jsxProd from "openPremiumPlanSelectionActionSheet";
+import createCacheKey from "createCacheKey";
 
+let c5;
 let closure_12;
-let closure_13;
-let closure_5;
 let closure_6;
-let closure_7;
+let error;
+let map1;
 let require = arg1;
-function sharedClientThemeToThemeSettings(sharedClientTheme) {
-  if (undefined !== sharedClientTheme) {
-    const obj = {};
-    const colors = sharedClientTheme.colors;
-    obj.colors = colors.map((arg0) => "#" + arg0);
-    obj.gradientColorStops = [];
-    ({ gradient_angle: obj.gradientAngle, base_mix: obj.baseMix } = sharedClientTheme);
-    return obj;
-  }
-}
 function PrimaryActionButton(onPressApply) {
-  const tmp = _createForOfIteratorHelperLoose();
+  const tmp = createCacheKey();
   const require = tmp;
-  let obj = require(566) /* initialize */;
-  let items = [_isNativeReflectConstruct];
-  const stateFromStores = obj.useStateFromStores(items, () => outer1_9.getPremiumTypeSubscription());
+  let obj = require(589) /* initialize */;
+  let items = [reset];
+  const stateFromStores = obj.useStateFromStores(items, () => premiumTypeSubscription.getPremiumTypeSubscription());
   if (obj2.getPremiumTypeFromSubscription(stateFromStores) !== PremiumTypes.TIER_2) {
-    obj = {};
-    const intl2 = require(1212) /* getSystemLocale */.intl;
-    obj.text = intl2.string(require(1212) /* getSystemLocale */.t.pj0XBN);
-    obj.onPress = function onPressSubscribe() {
-      const obj = { premiumType: outer1_11.TIER_2 };
-      const items = [outer1_1(outer1_2[22]).SHARE_CUSTOM_CLIENT_THEME_EMBED];
-      obj.analyticsLocations = items;
-      obj.analyticsLocation = {};
-      outer1_1(outer1_2[21])(obj);
+    obj = { text: null, onPress: null, renderIcon: null, style: null };
+    const intl2 = tmp2(1236).intl;
+    obj[0] = intl2.string(tmp2(1236).t.pj0XBN);
+    obj[1] = function onPressSubscribe() {
+      const obj = { premiumType: TIER_2.TIER_2, analyticsLocations: null, analyticsLocation: null };
+      const items = [callback(5535).SHARE_CUSTOM_CLIENT_THEME_EMBED];
+      obj[1] = items;
+      obj[2] = {};
+      callback(6216)(obj);
     };
-    obj.renderIcon = function renderIcon() {
+    obj[2] = function renderIcon() {
       const style = [tmp.nitroWheelButton];
       return outer1_12(tmp(outer1_2[23]).NitroWheel, { style });
     };
-    obj.style = tmp.getNitroButton;
-    let tmp6 = callback4(require(1273) /* Button */.ShinyButton, obj);
+    obj[3] = tmp.getNitroButton;
+    let tmp6 = callback4(tmp2(1297).ShinyButton, obj);
   } else {
-    obj = {};
-    const intl = require(1212) /* getSystemLocale */.intl;
-    obj.text = intl.string(require(1212) /* getSystemLocale */.t["1Qm822"]);
-    obj.onPress = onPressApply.onPressApply;
-    obj.variant = "primary";
-    tmp6 = callback4(require(4578) /* Button */.Button, obj);
+    obj = { text: null, onPress: null, variant: "primary" };
+    const intl = tmp2(1236).intl;
+    obj[0] = intl.string(tmp2(1236).t["1Qm822"]);
+    obj[1] = onPressApply.onPressApply;
+    tmp6 = callback4(tmp2(4600).Button, obj);
   }
   return tmp6;
 }
-function getBaseThemeFromSharedClientTheme(sharedClientTheme) {
-  if (undefined !== sharedClientTheme) {
-    return require(4008) /* getThemeForColor */.getBaseTheme(sharedClientTheme.base_theme);
-  }
-}
-({ useEffect: closure_5, useLayoutEffect: closure_6, useRef: closure_7 } = result);
-({ jsx: closure_12, jsxs: closure_13 } = jsxProd);
-_createForOfIteratorHelperLoose = { contentWrapper: { paddingHorizontal: 43.5, paddingVertical: 12 }, centeredText: { textAlign: "center" }, ctaContainer: { paddingHorizontal: 15, flexDirection: "column", display: "flex", gap: 6 }, nitroWheelButton: { marginStart: -2, width: 20, height: 20 } };
-_createForOfIteratorHelperLoose = { borderRadius: require("_createForOfIteratorHelperLoose").radii.round };
-_createForOfIteratorHelperLoose.getNitroButton = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-result = require("get ActivityIndicator").fileFinishedImporting("modules/client_themes/native/chat/SharedCustomThemeActionSheet.tsx");
+({ useEffect: c5, useLayoutEffect: closure_6, useRef: error } = noop);
+({ jsx: closure_12, jsxs: map1 } = jsxProd);
+createCacheKey = { contentWrapper: { paddingHorizontal: 43.5, paddingVertical: 12 }, centeredText: { textAlign: "center" }, ctaContainer: { paddingHorizontal: 15, flexDirection: "column", display: "flex", gap: 6 }, nitroWheelButton: { marginStart: -2, width: 20, height: 20 }, getNitroButton: null };
+createCacheKey = { borderRadius: require("Themes").radii.round };
+createCacheKey[4] = createCacheKey;
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+const result = require("get ActivityIndicator").fileFinishedImporting("modules/client_themes/native/chat/SharedCustomThemeActionSheet.tsx");
 
 export default function _default(message) {
   const sharedClientTheme = message.message.sharedClientTheme;
-  let tmp = _createForOfIteratorHelperLoose();
+  const tmp = createCacheKey();
   let tmp2 = callback3(null);
   const importDefault = tmp2;
-  const tmp3 = callback(first1.useState(sharedClientThemeToThemeSettings(sharedClientTheme)), 2);
-  const first = tmp3[0];
-  callback = tmp3[1];
-  const tmp5 = callback(first1.useState(getBaseThemeFromSharedClientTheme(sharedClientTheme)), 2);
-  first1 = tmp5[0];
-  const callback2 = tmp5[1];
-  const tmp7 = callback(first1.useState(false), 2);
-  const first2 = tmp7[0];
-  callback3 = tmp7[1];
-  const ref = first1.useRef(true);
+  let obj = first1;
+  let tmp4;
+  if (undefined !== sharedClientTheme) {
+    obj = { colors: null, gradientColorStops: null, gradientAngle: null, baseMix: null };
+    let colors = sharedClientTheme.colors;
+    obj[0] = colors.map((arg0) => "#" + arg0);
+    obj[1] = [];
+    ({ gradient_angle: obj2[2], base_mix: obj2[3] } = sharedClientTheme);
+    tmp4 = obj;
+  }
+  const tmp6 = callback(first1.useState(tmp4), 2);
+  const first = tmp6[0];
+  callback = tmp6[1];
+  let baseTheme;
+  if (undefined !== sharedClientTheme) {
+    let obj2 = sharedClientTheme(first[24]);
+    baseTheme = obj2.getBaseTheme(sharedClientTheme.base_theme);
+  }
+  let tmp5Result = tmp5(obj.useState(baseTheme), 2);
+  first1 = tmp5Result[0];
+  const callback2 = tmp5Result[1];
+  tmp5Result = tmp5(obj.useState(false), 2);
+  const first2 = tmp5Result[0];
+  callback3 = tmp5Result[1];
+  const ref = obj.useRef(true);
   const items = [sharedClientTheme];
   callback2(() => {
-    callback(outer1_15(sharedClientTheme));
-    const tmp2 = callback2(outer1_17(sharedClientTheme));
-    callback2(outer1_17(sharedClientTheme))(first[9]).track(outer1_10.CUSTOM_THEME_SHARE_PREVIEWED, {});
+    let tmp4;
+    if (undefined !== sharedClientTheme) {
+      const obj = { colors: null, gradientColorStops: null, gradientAngle: null, baseMix: null };
+      const colors = tmp2.colors;
+      obj[0] = colors.map((arg0) => "#" + arg0);
+      obj[1] = [];
+      ({ gradient_angle: obj[2], base_mix: obj[3] } = tmp2);
+      tmp4 = obj;
+    }
+    _slicedToArray(tmp4);
+    let baseTheme;
+    if (undefined !== sharedClientTheme) {
+      baseTheme = sharedClientTheme(first[24]).getBaseTheme(tmp2.base_theme);
+      const obj2 = sharedClientTheme(first[24]);
+    }
+    closure_5(baseTheme);
+    sharedClientTheme(first[9]).track(outer1_10.CUSTOM_THEME_SHARE_PREVIEWED, {});
   }, items);
   const items1 = [first, first1];
   callback2(() => {
-    let tmp = undefined !== first;
-    if (tmp) {
-      tmp = undefined !== first1;
+    let tmp2 = undefined !== first;
+    if (tmp2) {
+      tmp2 = undefined !== first1;
     }
-    if (tmp) {
+    if (tmp2) {
       let obj = sharedClientTheme(first[10]);
-      obj = { baseTheme: first1, customTheme: first };
+      obj = { baseTheme: null, customTheme: null };
+      obj[0] = first1;
+      obj[1] = first;
       obj.previewCustomTheme(obj);
       sharedClientTheme(first[11]).refreshTheme();
       const obj3 = sharedClientTheme(first[11]);
@@ -118,40 +133,42 @@ export default function _default(message) {
   }, items2);
   const items3 = [ref];
   callback2(() => () => {
-    if (outer1_8.current) {
-      sharedClientTheme(first[10]).clearPreviewTheme();
-      const obj = sharedClientTheme(first[10]);
-      sharedClientTheme(first[11]).refreshTheme();
-      const obj2 = sharedClientTheme(first[11]);
+    if (ref.current) {
+      outer1_0(outer1_2[10]).clearPreviewTheme();
+      const obj = outer1_0(outer1_2[10]);
+      outer1_0(outer1_2[11]).refreshTheme();
+      const obj2 = outer1_0(outer1_2[11]);
     }
   }, items3);
-  let obj = { ref: tmp2, backdropOpacity: 0 };
-  obj = {};
+  obj = { ref: tmp2, backdropOpacity: 0, children: null };
+  const obj1 = { title: null };
   const intl = sharedClientTheme(first[14]).intl;
-  obj.title = intl.string(importDefault(first[15])["3ej1LT"]);
-  const items4 = [callback4(sharedClientTheme(first[13]).BottomSheetTitleHeader, obj), , ];
-  obj = { style: tmp.contentWrapper };
-  const obj1 = { variant: "heading-md/medium", style: tmp.centeredText };
+  obj1[0] = intl.string(importDefault(first[15])["3ej1LT"]);
+  const items4 = [callback4(sharedClientTheme(first[13]).BottomSheetTitleHeader, obj1), , ];
+  obj2 = { style: tmp.contentWrapper, children: null };
+  let obj3 = { variant: "heading-md/medium", style: tmp.centeredText, children: null };
   const intl2 = sharedClientTheme(first[14]).intl;
-  obj1.children = intl2.string(importDefault(first[15]).qZMUoL);
-  obj.children = callback4(sharedClientTheme(first[16]).Text, obj1);
-  items4[1] = callback4(ref, obj);
-  let obj2 = { style: tmp.ctaContainer };
+  obj3[2] = intl2.string(importDefault(first[15]).qZMUoL);
+  obj2[1] = callback4(sharedClientTheme(first[16]).Text, obj3);
+  items4[1] = callback4(ref, obj2);
+  let obj4 = { style: tmp.ctaContainer, children: null };
   const items5 = [
     callback4(PrimaryActionButton, {
       onPressApply() {
-        let tmp = undefined !== first;
-        if (tmp) {
-          tmp = undefined !== first1;
+        let tmp2 = undefined !== first;
+        if (tmp2) {
+          tmp2 = undefined !== first1;
         }
-        if (tmp) {
-          tmp = null !== tmp2.current;
+        if (tmp2) {
+          tmp2 = null !== tmp2.current;
         }
-        if (tmp) {
-          callback3(true);
+        if (tmp2) {
+          callback(true);
           let obj = sharedClientTheme(first[10]);
-          obj.updateCustomTheme(first, first1);
-          obj = { customUserThemeSettings: first, theme: first1 };
+          obj.updateCustomTheme(tmp, first1);
+          obj = { customUserThemeSettings: null, theme: null };
+          obj[0] = tmp;
+          obj[1] = first1;
           sharedClientTheme(first[17]).saveClientTheme(obj);
           const obj2 = sharedClientTheme(first[17]);
           sharedClientTheme(first[10]).clearPreviewTheme();
@@ -165,23 +182,23 @@ export default function _default(message) {
     }),
 
   ];
-  let obj4 = {};
+  const obj6 = { text: null, onPress: null, variant: "secondary" };
   const intl3 = sharedClientTheme(first[14]).intl;
-  obj4.text = intl3.string(sharedClientTheme(first[14]).t["13/7kX"]);
-  obj4.onPress = function onPress() {
+  obj6[0] = intl3.string(sharedClientTheme(first[14]).t["13/7kX"]);
+  obj6[1] = function onPress() {
     if (null !== tmp2.current) {
       sharedClientTheme(first[10]).clearPreviewTheme();
       const obj = sharedClientTheme(first[10]);
+      tmp2 = sharedClientTheme;
       sharedClientTheme(first[11]).refreshTheme();
-      const current = tmp2.current;
+      const current = tmp.current;
       current.closeActionSheet();
       const obj2 = sharedClientTheme(first[11]);
     }
   };
-  obj4.variant = "secondary";
-  items5[1] = callback4(sharedClientTheme(first[18]).Button, obj4);
-  obj2.children = items5;
-  items4[2] = callback5(ref, obj2);
-  obj.children = items4;
+  items5[1] = callback4(sharedClientTheme(first[18]).Button, obj6);
+  obj4[1] = items5;
+  items4[2] = callback5(ref, obj4);
+  obj[2] = items4;
   return callback5(sharedClientTheme(first[12]).BottomSheet, obj);
 };

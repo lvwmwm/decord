@@ -1,44 +1,42 @@
-// Module ID: 11445
-// Function ID: 88807
+// Module ID: 11469
+// Function ID: 11470
 // Name: SEARCH_BAR_HEIGHT
-// Dependencies: [31, 27, 33, 4165, 689, 8270, 4161, 1212, 2]
+// Dependencies: [19, 17, 21, 4189, 712, 8294, 4185, 1236, 2]
 // Exports: SearchButtonContent
 
-// Module 11445 (SEARCH_BAR_HEIGHT)
-import "result";
+// Module 11469 (SEARCH_BAR_HEIGHT)
+import "noop";
 import { Pressable } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_3;
-let closure_4;
+let c3;
+let c4;
 const require = arg1;
-({ jsx: closure_3, jsxs: closure_4 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.INPUT_BACKGROUND_DEFAULT, height: 40, alignItems: "center", flexDirection: "row", paddingHorizontal: 12 };
-_createForOfIteratorHelperLoose.searchButton = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.roundedCorners = { borderRadius: 20 };
-_createForOfIteratorHelperLoose.roundedCornersAlt = { borderRadius: require("_createForOfIteratorHelperLoose").radii.round };
-_createForOfIteratorHelperLoose.text = { marginLeft: 8 };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-const obj1 = { borderRadius: require("_createForOfIteratorHelperLoose").radii.round };
+({ jsx: c3, jsxs: c4 } = jsxProd);
+createCacheKey = { searchButton: null, roundedCorners: null, roundedCornersAlt: null, text: null };
+createCacheKey = { backgroundColor: require("Themes").colors.INPUT_BACKGROUND_DEFAULT, height: 40, alignItems: "center", flexDirection: "row", paddingHorizontal: 12 };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { borderRadius: 20 };
+createCacheKey[2] = { borderRadius: require("Themes").radii.round };
+createCacheKey[3] = { marginLeft: 8 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+const obj1 = { borderRadius: require("Themes").radii.round };
 const result = require("jsxProd").fileFinishedImporting("modules/main_tabs_v2/native/shared_components/SearchButton.tsx");
 
 export const SEARCH_BAR_HEIGHT = 40;
 export const SearchButtonContent = function SearchButtonContent(panelVariant) {
-  let obj = Object.create(null);
-  obj.panelVariant = 0;
-  const merged = Object.assign(panelVariant, obj);
-  const tmp3 = _createForOfIteratorHelperLoose();
-  obj = {};
+  const merged = Object.assign(panelVariant, Object.create(null));
+  const tmp2 = createCacheKey();
+  let obj = {};
   const merged1 = Object.assign(merged);
-  const items = [tmp3.searchButton, panelVariant.panelVariant ? tmp3.roundedCornersAlt : tmp3.roundedCorners, merged.style];
-  obj["style"] = items;
-  const items1 = [callback(require(8270) /* MagnifyingGlassIcon */.MagnifyingGlassIcon, { size: "xs" }), ];
-  obj = { variant: "text-sm/medium", color: "text-muted", style: tmp3.text, maxFontSizeMultiplier: 2 };
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj.children = intl.string(require(1212) /* getSystemLocale */.t["5h0QOP"]);
-  items1[1] = callback(require(4161) /* Text */.Text, obj);
-  obj["children"] = items1;
+  const items = [tmp2.searchButton, panelVariant.panelVariant ? tmp2.roundedCornersAlt : tmp2.roundedCorners, merged.style];
+  obj.style = items;
+  const items1 = [callback(require(8294) /* MagnifyingGlassIcon */.MagnifyingGlassIcon, { size: "xs" }), ];
+  obj = { variant: "text-sm/medium", color: "text-muted", style: tmp2.text, maxFontSizeMultiplier: 2, children: null };
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj[4] = intl.string(require(1236) /* getSystemLocale */.t["5h0QOP"]);
+  items1[1] = callback(require(4185) /* Text */.Text, obj);
+  obj.children = items1;
   return closure_4(Pressable, obj);
 };

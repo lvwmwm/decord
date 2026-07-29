@@ -1,20 +1,20 @@
-// Module ID: 9368
-// Function ID: 73046
-// Dependencies: [31, 27, 33, 4165, 689, 9369, 9373, 5223, 1273, 1212, 2]
+// Module ID: 9392
+// Function ID: 9393
+// Dependencies: [19, 17, 21, 4189, 712, 9393, 9397, 5245, 1297, 1236, 2]
 
-// Module 9368
-import importAllResult from "result";
+// Module 9392
+import importAllResult from "noop";
 import { ScrollView } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
 const require = arg1;
-let obj = { emptyStateContainer: { padding: 0, flex: 1 } };
-obj = { color: require("_createForOfIteratorHelperLoose").colors.TEXT_SUBTLE };
-obj.emptyStateBody = obj;
-_createForOfIteratorHelperLoose = { marginBottom: require("_createForOfIteratorHelperLoose").space.PX_8, marginTop: 0 };
-obj.emptyStateImage = _createForOfIteratorHelperLoose;
-let closure_5 = _createForOfIteratorHelperLoose.createStyles(obj);
+let obj = { emptyStateContainer: { padding: 0, flex: 1 }, emptyStateBody: null, emptyStateImage: null };
+obj = { color: require("Themes").colors.TEXT_SUBTLE };
+obj[1] = obj;
+createCacheKey = { marginBottom: require("Themes").space.PX_8, marginTop: 0 };
+obj[2] = createCacheKey;
+let closure_5 = createCacheKey.createStyles(obj);
 const memoResult = importAllResult.memo(function EmojiPickerListComponentEmpty(insetBottom) {
   let inActionSheet;
   let insetTop;
@@ -27,22 +27,22 @@ const memoResult = importAllResult.memo(function EmojiPickerListComponentEmpty(i
   const tmp = callback();
   const modalDismissGuardRefreshControl = insetTop(insetBottom[6]).useModalDismissGuardRefreshControl();
   if (inActionSheet) {
-    let BottomSheetScrollView = insetTop(insetBottom[7]).BottomSheetScrollView;
+    let BottomSheetScrollView = tmp3(tmp4[7]).BottomSheetScrollView;
   } else {
     BottomSheetScrollView = ScrollView;
   }
-  obj = { contentContainerStyle: memo, keyboardShouldPersistTaps: "always" };
+  obj = { contentContainerStyle: memo, keyboardShouldPersistTaps: "always", refreshControl: null, children: null };
   let tmp8;
   if (inActionSheet) {
     tmp8 = modalDismissGuardRefreshControl;
   }
-  obj.refreshControl = tmp8;
-  obj = { source: searchEmptySource };
-  const intl = insetTop(insetBottom[9]).intl;
-  obj.body = intl.string(insetTop(insetBottom[9]).t.IxxiKF);
-  ({ emptyStateBody: obj4.bodyStyle, emptyStateContainer: obj4.containerStyle, emptyStateImage: obj4.imageStyle } = tmp);
-  obj.children = jsx(insetTop(insetBottom[8]).RefreshEmptyState, { source: searchEmptySource });
-  return <BottomSheetScrollView source={searchEmptySource} />;
+  obj[2] = tmp8;
+  obj = { source: searchEmptySource, body: null, bodyStyle: null, containerStyle: null, imageStyle: null };
+  const intl = tmp3(tmp4[9]).intl;
+  obj[1] = intl.string(insetTop(insetBottom[9]).t.IxxiKF);
+  ({ emptyStateBody: obj4[2], emptyStateContainer: obj4[3], emptyStateImage: obj4[4] } = tmp);
+  obj[3] = jsx(insetTop(insetBottom[8]).RefreshEmptyState, { source: searchEmptySource, body: null, bodyStyle: null, containerStyle: null, imageStyle: null });
+  return <BottomSheetScrollView source={searchEmptySource} body={null} bodyStyle={null} containerStyle={null} imageStyle={null} />;
 });
 const result = require("jsxProd").fileFinishedImporting("modules/emoji_picker/native/components/EmojiPickerListComponentEmpty.tsx");
 

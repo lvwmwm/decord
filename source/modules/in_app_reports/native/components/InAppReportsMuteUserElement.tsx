@@ -1,67 +1,70 @@
-// Module ID: 12385
-// Function ID: 96203
+// Module ID: 12407
+// Function ID: 12408
 // Name: MuteUserElement
-// Dependencies: [57, 31, 1348, 653, 662, 33, 566, 4354, 10285, 4359, 6700, 12382, 1212, 10206, 2]
+// Dependencies: [32, 19, 1372, 676, 685, 21, 589, 4379, 10306, 4384, 6721, 12404, 1236, 10227, 2]
 // Exports: default
 
-// Module 12385 (MuteUserElement)
+// Module 12407 (MuteUserElement)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import noop from "noop";
+import ensureGuildLoaded from "ensureGuildLoaded";
 import { AnalyticEvents } from "ME";
 import { MuteUntilSeconds } from "MAX_FAVORITES";
 import { jsx } from "jsxProd";
 
 const require = arg1;
-let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/in_app_reports/native/components/InAppReportsMuteUserElement.tsx");
+let result = require("ensureGuildLoaded").fileFinishedImporting("modules/in_app_reports/native/components/InAppReportsMuteUserElement.tsx");
 
 export default function MuteUserElement(user) {
   user = user.user;
   const channelId = user.channelId;
   const reportId = user.reportId;
   let dMFromUserId;
+  let stateFromStores;
+  dMFromUserId = undefined;
   dMFromUserId = dMFromUserId.getDMFromUserId(user.id);
   let obj = user(reportId[6]);
   const items = [dMFromUserId];
   const items1 = [channelId];
-  const stateFromStores = obj.useStateFromStores(items, () => channel.getChannel(channelId), items1);
+  stateFromStores = obj.useStateFromStores(items, () => channel.getChannel(channelId), items1);
   const items2 = [stateFromStores, user];
   const memo = stateFromStores.useMemo(() => {
     let guild_id;
-    if (null != stateFromStores) {
-      guild_id = stateFromStores.guild_id;
+    if (stateFromStores != null) {
+      guild_id = tmp.guild_id;
     }
     let id;
-    if (null != stateFromStores) {
-      id = stateFromStores.id;
+    if (stateFromStores != null) {
+      id = tmp.id;
     }
     return channelId(reportId[7]).getName(guild_id, id, user);
   }, items2);
   const items3 = [dMFromUserId];
-  const muted = stateFromStores.useMemo(() => user(reportId[8]).getMuteSettings(dMFromUserId), items3).muted;
-  let tmp5 = null != muted;
-  if (tmp5) {
-    tmp5 = muted;
+  let flag = stateFromStores.useMemo(() => user(reportId[8]).getMuteSettings(dMFromUserId), items3).muted;
+  if (flag == null) {
+    flag = false;
   }
-  const tmp6 = dMFromUserId(stateFromStores.useState(tmp5), 2);
-  dMFromUserId = tmp6[1];
+  const tmp7 = dMFromUserId(stateFromStores.useState(flag), 2);
+  dMFromUserId = tmp7[1];
   const items4 = [dMFromUserId, channelId, user, reportId];
-  let tmp8 = null;
+  let tmp9 = null;
   if (null != user) {
-    obj = {};
-    const intl = user(reportId[12]).intl;
-    obj = { username: memo };
-    obj.title = intl.formatToPlainString(user(reportId[12]).t.TRp5wR, obj);
-    const intl2 = user(reportId[12]).intl;
-    const obj1 = { username: memo };
-    obj.disabledTitle = intl2.formatToPlainString(user(reportId[12]).t.raALhx, obj1);
-    const intl3 = user(reportId[12]).intl;
-    obj.description = intl3.string(user(reportId[12]).t["yM/+AJ"]);
-    obj.disabled = tmp6[0];
-    obj.onPress = tmp7;
-    obj.icon = jsx(user(reportId[13]).BellSlashIcon, {});
-    tmp8 = jsx(channelId(reportId[11]), { username: memo });
-    const tmp12 = channelId(reportId[11]);
+    obj = { title: null, disabledTitle: null, description: null, disabled: null, onPress: null, icon: null };
+    const intl = tmp2(tmp3[12]).intl;
+    obj = { username: null };
+    obj[0] = memo;
+    obj[0] = intl.formatToPlainString(tmp2(tmp3[12]).t.TRp5wR, obj);
+    const intl2 = tmp2(tmp3[12]).intl;
+    const obj1 = { username: null };
+    obj1[0] = memo;
+    obj[1] = intl2.formatToPlainString(tmp2(tmp3[12]).t.raALhx, obj1);
+    const intl3 = tmp2(tmp3[12]).intl;
+    obj[2] = intl3.string(tmp2(tmp3[12]).t["yM/+AJ"]);
+    obj[3] = tmp7[0];
+    obj[4] = tmp8;
+    obj[5] = jsx(tmp2(tmp3[13]).BellSlashIcon, {});
+    tmp9 = jsx(channelId(tmp3[11]), { username: null });
+    const tmp12 = channelId(tmp3[11]);
   }
-  return tmp8;
+  return tmp9;
 };

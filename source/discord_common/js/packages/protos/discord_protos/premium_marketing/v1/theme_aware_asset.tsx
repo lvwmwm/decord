@@ -1,178 +1,125 @@
-// Module ID: 6258
-// Function ID: 56078
-// Name: _isNativeReflectConstruct
-// Dependencies: [57, 6, 7, 15, 17, 18, 1284, 2]
+// Module ID: 6278
+// Function ID: 6279
+// Name: create
+// Dependencies: [32, 1307, 2]
 
-// Module 6258 (_isNativeReflectConstruct)
+// Module 6278 (create)
 import _slicedToArray from "_slicedToArray";
-import module_1284 from "module_1284";
-import set from "set";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
+import { MessageType } from "module_1307";
 
 const require = arg1;
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
+class ThemeAwareAsset$Type extends MessageType {
+  constructor() {
+    items = [, , , ];
+    items[0] = { no: 1, name: "light_url", kind: "scalar", T: 9 };
+    items[1] = { no: 2, name: "dark_url", kind: "scalar", T: 9 };
+    items[2] = { no: 3, name: "light_static_url", kind: "scalar", T: 9 };
+    items[3] = { no: 4, name: "dark_static_url", kind: "scalar", T: 9 };
+    tmp = new tmp("discord_protos.premium_marketing.v1.ThemeAwareAsset", items, new.target);
+    // ThrowIfThisInitialized (0x7c)
+    return tmp;
   }
-  const result = _isNativeReflectConstruct();
 }
-let tmp2 = ((MessageType) => {
-  class ThemeAwareAsset$Type {
-    constructor() {
-      self = this;
-      tmp = outer1_3(this, ThemeAwareAsset$Type);
-      items = [, , , ];
-      items[0] = { no: 1, name: "light_url", kind: "scalar", T: 9 };
-      items[1] = { no: 2, name: "dark_url", kind: "scalar", T: 9 };
-      items[2] = { no: 3, name: "light_static_url", kind: "scalar", T: 9 };
-      items[3] = { no: 4, name: "dark_static_url", kind: "scalar", T: 9 };
-      items1 = ["discord_protos.premium_marketing.v1.ThemeAwareAsset"];
-      items1[1] = items;
-      obj = outer1_6(ThemeAwareAsset$Type);
-      tmp2 = outer1_5;
-      if (outer1_8()) {
-        tmp4 = globalThis;
-        _Reflect = Reflect;
-        tmp5 = outer1_6;
-        constructResult = Reflect.construct(obj, items1, outer1_6(self).constructor);
-      } else {
-        constructResult = obj.apply(self, items1);
-      }
-      return tmp2(self, constructResult);
-    }
+let prototype = ThemeAwareAsset$Type.prototype;
+prototype["create"] = function create(arr) {
+  let obj = { lightUrl: "", darkUrl: "", lightStaticUrl: "", darkStaticUrl: "" };
+  const _Object = Object;
+  obj = { enumerable: false, value: this };
+  _Object.defineProperty(obj, require(1307).MESSAGE_TYPE, obj);
+  if (undefined !== arr) {
+    const result = require(1307).reflectionMergePartial(this, obj, arr);
+    const tmpResult = require(1307);
   }
-  callback2(ThemeAwareAsset$Type, MessageType);
-  let obj = {
-    key: "create",
-    value(arr) {
-      let obj = { lightUrl: "", darkUrl: "", lightStaticUrl: "", darkStaticUrl: "" };
-      const _Object = Object;
-      obj = { enumerable: false, value: this };
-      _Object.defineProperty(obj, ThemeAwareAsset$Type(outer1_1[6]).MESSAGE_TYPE, obj);
-      if (undefined !== arr) {
-        const result = ThemeAwareAsset$Type(outer1_1[6]).reflectionMergePartial(this, obj, arr);
-        const obj3 = ThemeAwareAsset$Type(outer1_1[6]);
-      }
-      return obj;
-    }
-  };
-  let items = [obj, , ];
-  obj = {
-    key: "internalBinaryRead",
-    value(pos, arg1, readUnknownField) {
-      let tmp7;
-      let tmp8;
-      let obj = arg3;
-      const self = this;
-      if (null == arg3) {
-        obj = self.create();
-      }
-      const sum = pos.pos + arg1;
-      while (pos.pos < sum) {
-        let tmp5 = outer1_2;
-        let tmp6 = outer1_2(pos.tag(), 2);
-        [tmp7, tmp8] = tmp6;
-        if (1 === tmp7) {
-          obj.lightUrl = pos.string();
-          let tmp10 = tmp3;
-          let tmp11 = tmp4;
-        } else if (2 === tmp7) {
-          obj.darkUrl = pos.string();
-          tmp10 = tmp3;
-          tmp11 = tmp4;
-        } else if (3 === tmp7) {
-          obj.lightStaticUrl = pos.string();
-          tmp10 = tmp3;
-          tmp11 = tmp4;
-        } else if (4 === tmp7) {
-          obj.darkStaticUrl = pos.string();
-          tmp10 = tmp3;
-          tmp11 = tmp4;
+  return obj;
+};
+prototype["internalBinaryRead"] = function internalBinaryRead(pos, arg1, readUnknownField) {
+  let tmp5;
+  let tmp6;
+  const self = this;
+  let obj = arg3;
+  if (arg3 == null) {
+    obj = self.create();
+  }
+  const sum = pos.pos + arg1;
+  if (pos.pos < sum) {
+    do {
+      let tmp3 = callback;
+      let tmp4 = callback(pos.tag(), 2);
+      [tmp5, tmp6] = tmp4;
+      if (1 === tmp5) {
+        obj.lightUrl = pos.string();
+      } else if (2 === tmp5) {
+        obj.darkUrl = pos.string();
+      } else if (3 === tmp5) {
+        obj.lightStaticUrl = pos.string();
+      } else if (4 === tmp5) {
+        obj.darkStaticUrl = pos.string();
+      } else {
+        let onRead = readUnknownField.readUnknownField;
+        if ("throw" === onRead) {
+          let tmp15 = globalThis;
+          let _globalThis = globalThis;
+          let _HermesInternal = HermesInternal;
+          let str = ") for ";
+          let str2 = " (wire type ";
+          let str3 = "Unknown field ";
+          let tmp16 = tmp5;
+          let tmp17 = tmp6;
+          let tmp18 = new.target;
+          let tmp19 = new.target;
+          let error = new Error("Unknown field " + tmp5 + " (wire type " + tmp6 + ") for " + self.typeName);
+          let tmp21 = error;
+          throw error;
         } else {
-          readUnknownField = readUnknownField.readUnknownField;
-          if ("throw" === readUnknownField) {
-            let tmp19 = globalThis;
-            let _globalThis = globalThis;
-            let _Error = Error;
-            let _HermesInternal = HermesInternal;
-            let str = "Unknown field ";
-            let str2 = " (wire type ";
-            let str3 = ") for ";
-            let tmp20 = tmp7;
-            let tmp21 = tmp8;
-            let prototype = _Error.prototype;
-            let tmp22 = new.target;
-            let tmp23 = new.target;
-            _Error = new _Error("Unknown field " + tmp7 + " (wire type " + tmp8 + ") for " + self.typeName);
-            let tmp25 = _Error;
-            throw _Error;
-          } else {
-            let skipResult = pos.skip(tmp8);
-            tmp10 = readUnknownField;
-            tmp11 = skipResult;
-            if (false !== readUnknownField) {
-              let onRead = readUnknownField;
-              if (true === readUnknownField) {
-                let tmp12 = ThemeAwareAsset$Type;
-                let tmp13 = outer1_1;
-                onRead = ThemeAwareAsset$Type(outer1_1[6]).UnknownFieldHandler.onRead;
-              }
-              let tmp14 = obj;
-              let tmp15 = tmp7;
-              let tmp16 = tmp8;
-              let tmp17 = skipResult;
-              let onReadResult = onRead(self.typeName, obj, tmp7, tmp8, skipResult);
-              tmp10 = readUnknownField;
-              tmp11 = skipResult;
+          let skipResult = pos.skip(tmp6);
+          if (false !== onRead) {
+            if (true === onRead) {
+              let tmp8 = require;
+              let tmp9 = dependencyMap;
+              onRead = require(1307).UnknownFieldHandler.onRead;
             }
+            let tmp10 = obj;
+            let tmp11 = tmp5;
+            let tmp12 = tmp6;
+            let tmp13 = skipResult;
+            let onReadResult = onRead(self.typeName, obj, tmp5, tmp6, skipResult);
           }
         }
-        tmp3 = tmp10;
-        tmp4 = tmp11;
       }
-      return obj;
+    } while (pos.pos < sum);
+  }
+  return obj;
+};
+prototype["internalBinaryWrite"] = function internalBinaryWrite(lightUrl, tag, writeUnknownFields) {
+  if ("" !== lightUrl.lightUrl) {
+    tag.tag(1, require(1307).WireType.LengthDelimited).string(lightUrl.lightUrl);
+    const tagResult = tag.tag(1, require(1307).WireType.LengthDelimited);
+  }
+  if ("" !== lightUrl.darkUrl) {
+    tag.tag(2, require(1307).WireType.LengthDelimited).string(lightUrl.darkUrl);
+    const tagResult1 = tag.tag(2, require(1307).WireType.LengthDelimited);
+  }
+  if ("" !== lightUrl.lightStaticUrl) {
+    tag.tag(3, require(1307).WireType.LengthDelimited).string(lightUrl.lightStaticUrl);
+    const tagResult2 = tag.tag(3, require(1307).WireType.LengthDelimited);
+  }
+  if ("" !== lightUrl.darkStaticUrl) {
+    tag.tag(4, require(1307).WireType.LengthDelimited).string(lightUrl.darkStaticUrl);
+    const tagResult3 = tag.tag(4, require(1307).WireType.LengthDelimited);
+  }
+  let onWrite = writeUnknownFields.writeUnknownFields;
+  if (false !== onWrite) {
+    if (1 == onWrite) {
+      onWrite = require(1307).UnknownFieldHandler.onWrite;
     }
-  };
-  items[1] = obj;
-  obj = {
-    key: "internalBinaryWrite",
-    value(lightUrl, tag, writeUnknownFields) {
-      if ("" !== lightUrl.lightUrl) {
-        tag.tag(1, ThemeAwareAsset$Type(outer1_1[6]).WireType.LengthDelimited).string(lightUrl.lightUrl);
-        const tagResult = tag.tag(1, ThemeAwareAsset$Type(outer1_1[6]).WireType.LengthDelimited);
-      }
-      if ("" !== lightUrl.darkUrl) {
-        tag.tag(2, ThemeAwareAsset$Type(outer1_1[6]).WireType.LengthDelimited).string(lightUrl.darkUrl);
-        const tagResult1 = tag.tag(2, ThemeAwareAsset$Type(outer1_1[6]).WireType.LengthDelimited);
-      }
-      if ("" !== lightUrl.lightStaticUrl) {
-        tag.tag(3, ThemeAwareAsset$Type(outer1_1[6]).WireType.LengthDelimited).string(lightUrl.lightStaticUrl);
-        const tagResult2 = tag.tag(3, ThemeAwareAsset$Type(outer1_1[6]).WireType.LengthDelimited);
-      }
-      if ("" !== lightUrl.darkStaticUrl) {
-        tag.tag(4, ThemeAwareAsset$Type(outer1_1[6]).WireType.LengthDelimited).string(lightUrl.darkStaticUrl);
-        const tagResult3 = tag.tag(4, ThemeAwareAsset$Type(outer1_1[6]).WireType.LengthDelimited);
-      }
-      let onWrite = writeUnknownFields.writeUnknownFields;
-      if (false !== onWrite) {
-        if (1 == onWrite) {
-          onWrite = ThemeAwareAsset$Type(outer1_1[6]).UnknownFieldHandler.onWrite;
-        }
-        const self = this;
-        onWrite(this.typeName, lightUrl, tag);
-      }
-      return tag;
-    }
-  };
-  items[2] = obj;
-  return callback(ThemeAwareAsset$Type, items);
-})(require("module_1284").MessageType);
-tmp2 = new tmp2();
-let result = require("_defineProperties").fileFinishedImporting("../discord_common/js/packages/protos/discord_protos/premium_marketing/v1/theme_aware_asset.tsx");
+    const self = this;
+    onWrite(this.typeName, lightUrl, tag);
+  }
+  return tag;
+};
+let items = [{ no: 1, name: "light_url", kind: "scalar", T: 9 }, { no: 2, name: "dark_url", kind: "scalar", T: 9 }, { no: 3, name: "light_static_url", kind: "scalar", T: 9 }, { no: 4, name: "dark_static_url", kind: "scalar", T: 9 }];
+prototype = new prototype("discord_protos.premium_marketing.v1.ThemeAwareAsset", items, tmp, ThemeAwareAsset$Type, prototype, items, arg1);
+// ThrowIfThisInitialized (0x7c)
+let result = require("set").fileFinishedImporting("../discord_common/js/packages/protos/discord_protos/premium_marketing/v1/theme_aware_asset.tsx");
 
-export const ThemeAwareAsset = tmp2;
+export const ThemeAwareAsset = prototype;

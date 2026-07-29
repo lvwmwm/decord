@@ -1,50 +1,61 @@
-// Module ID: 9803
-// Function ID: 76070
-// Name: getNextTierForProgress
-// Dependencies: [8085, 2]
-// Exports: getRemainingGiftsToNextTier, getTierForProgress
+// Module ID: 9825
+// Function ID: 9826
+// Name: getTierForProgress
+// Dependencies: [8109, 2]
+// Exports: getNextTierForProgress, getRemainingGiftsToNextTier, getTierForProgress
 
-// Module 9803 (getNextTierForProgress)
-import { getSingleRequirementThreshold as closure_0 } from "_isNativeReflectConstruct";
+// Module 9825 (getTierForProgress)
+import { getSingleRequirementThreshold as closure_0 } from "map";
 
-function getNextTierForProgress(arr, arg1) {
-  let closure_0 = arg1;
-  return arr.reduce((arg0, arg1) => {
-    let tmp = arg0;
-    const tmp2 = callback(arg1);
-    let tmp3 = arg0;
-    if (callback < tmp2) {
-      if (null == tmp) {
-        tmp = arg1;
-      }
-      tmp3 = tmp;
-    }
-    return tmp3;
-  }, null);
-}
 const result = require("set").fileFinishedImporting("modules/premium/gifting/GiftingBadgeConstants.tsx");
 
 export const getTierForProgress = function getTierForProgress(arr) {
   let closure_0 = arg1;
   return arr.reduce((arg0, arg1) => {
     let tmp = arg0;
-    const tmp2 = callback(arg1);
-    let tmp3 = arg0;
-    if (callback >= tmp2) {
+    const tmp3 = callback(arg1);
+    let tmp4 = arg0;
+    if (callback >= tmp3) {
       if (null == tmp) {
         tmp = arg1;
       }
-      tmp3 = tmp;
+      tmp4 = tmp;
     }
-    return tmp3;
+    return tmp4;
   }, null);
 };
-export { getNextTierForProgress };
+export const getNextTierForProgress = function getNextTierForProgress(arr) {
+  let closure_0 = arg1;
+  return arr.reduce((arg0, arg1) => {
+    let tmp = arg0;
+    const tmp3 = callback(arg1);
+    let tmp4 = arg0;
+    if (callback < tmp3) {
+      if (null == tmp) {
+        tmp = arg1;
+      }
+      tmp4 = tmp;
+    }
+    return tmp4;
+  }, null);
+};
 export const getRemainingGiftsToNextTier = function getRemainingGiftsToNextTier(arr) {
-  const tmp = getNextTierForProgress(arr, arg1);
+  const callback = arg1;
+  const reduced = arr.reduce((arg0, arg1) => {
+    let tmp = arg0;
+    const tmp3 = callback(arg1);
+    let tmp4 = arg0;
+    if (callback < tmp3) {
+      if (null == tmp) {
+        tmp = arg1;
+      }
+      tmp4 = tmp;
+    }
+    return tmp4;
+  }, null);
   let diff = null;
-  if (null != tmp) {
-    diff = callback(tmp) - arg1;
+  if (null != reduced) {
+    diff = callback(reduced) - arg1;
   }
   return diff;
 };

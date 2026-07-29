@@ -1,66 +1,73 @@
-// Module ID: 16239
-// Function ID: 125719
+// Module ID: 16274
+// Function ID: 16275
 // Name: NewUserModal
-// Dependencies: [57, 31, 27, 33, 9085, 4165, 689, 16240, 1935, 4507, 5552, 16237, 4372, 16238, 5127, 477, 14887, 16241, 11762, 11751, 16242, 16244, 2]
+// Dependencies: [32, 19, 17, 21, 9109, 4189, 712, 16275, 1959, 4530, 5570, 16272, 4395, 16273, 5149, 500, 14913, 16276, 11787, 11776, 16277, 16279, 2]
 // Exports: default
 
-// Module 16239 (NewUserModal)
+// Module 16274 (NewUserModal)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
-import { NativeModules } from "get ActivityIndicator";
-import jsxProd from "jsxProd";
+import headerTitle from "headerTitle";
+import { NativeModules } from "RedesignAddAvatarModal";
+import jsxProd from "ConnectGuardianModal";
 import createNativeStackNavigator from "createNativeStackNavigator";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
 let closure_6;
-let closure_7;
+let error;
 const require = arg1;
-({ jsx: closure_6, jsxs: closure_7 } = jsxProd);
+({ jsx: closure_6, jsxs: error } = jsxProd);
 createNativeStackNavigator = createNativeStackNavigator.createNativeStackNavigator();
-createNativeStackNavigator = {};
-createNativeStackNavigator = { borderBottomWidth: 0, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW, shadowColor: "transparent" };
-createNativeStackNavigator.header = createNativeStackNavigator;
-createNativeStackNavigator = _createForOfIteratorHelperLoose.createStyles(createNativeStackNavigator);
+createNativeStackNavigator = { header: null };
+createNativeStackNavigator = { borderBottomWidth: 0, backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW, shadowColor: "transparent" };
+createNativeStackNavigator[0] = createNativeStackNavigator;
+createNativeStackNavigator = createCacheKey.createStyles(createNativeStackNavigator);
 const result = require("get ActivityIndicator").fileFinishedImporting("modules/nuf/native/components/NewUserModal.tsx");
 
 export default function NewUserModal(arg0) {
   let initialOnboardingStepIndex;
   let initialRouteName;
   ({ initialRouteName, initialOnboardingStepIndex } = arg0);
-  const _require = createNativeStackNavigator();
-  let tmp = first1(React.useState(initialOnboardingStepIndex), 2);
-  const first = tmp[0];
-  const dependencyMap = tmp[1];
+  let _require;
+  let first;
+  let dependencyMap;
+  let first1;
+  let React;
+  let closure_5;
+  let callback;
+  callback = undefined;
+  _require = createNativeStackNavigator();
+  const tmp = first1(React.useState(initialOnboardingStepIndex), 2);
+  first = tmp[0];
+  dependencyMap = tmp[1];
   const tmp3 = first1(React.useState(initialOnboardingStepIndex), 2);
   first1 = tmp3[0];
   React = tmp3[1];
-  let closure_5 = React.useRef(null);
-  let obj = _require(5552);
-  let callback = obj.useAccessibilityNativeStackOptions();
+  closure_5 = React.useRef(null);
+  let obj = _require(5570);
+  callback = obj.useAccessibilityNativeStackOptions();
   const items = [first1, first];
-  callback = React.useCallback((arg0) => {
-    let tmp = null != arg0;
-    if (tmp) {
-      tmp = arg0;
+  callback = React.useCallback((flag) => {
+    if (flag == null) {
+      flag = false;
     }
-    const nextOnboardingStep = lib(16237).getNextOnboardingStep(tmp, first1, first);
+    const nextOnboardingStep = lib(16272).getNextOnboardingStep(flag, first1, first);
     nextOnboardingStep.then((onboardingStepIndex) => {
       let continueNavigation;
       let lastShownStepIndex;
       onboardingStepIndex = onboardingStepIndex.onboardingStepIndex;
       ({ lastShownStepIndex, continueNavigation } = onboardingStepIndex);
-      outer1_2(onboardingStepIndex);
-      outer1_4(lastShownStepIndex);
+      callback(onboardingStepIndex);
+      callback2(lastShownStepIndex);
       if (continueNavigation) {
-        if (null != outer1_5.current) {
-          callback(16237).continueToNextStep(onboardingStepIndex, outer1_5.current);
-          const obj2 = callback(16237);
+        if (null != ref.current) {
+          outer1_0(outer1_2[11]).continueToNextStep(onboardingStepIndex, tmp3.current);
+          const obj2 = outer1_0(outer1_2[11]);
         }
       }
-      first(4372).popWithKey(callback(16238).NEW_USER_MODAL_KEY);
+      outer1_1(outer1_2[12]).popWithKey(outer1_0(outer1_2[13]).NEW_USER_MODAL_KEY);
     });
   }, items);
-  let obj1 = _require(5127);
+  let obj1 = _require(5149);
   obj1.useNavigatorBackPressHandler(() => {
     MinimizeApp = MinimizeApp.MinimizeApp;
     MinimizeApp.minimizeApp();
@@ -79,28 +86,30 @@ export default function NewUserModal(arg0) {
         headerRight() {
           return null;
         },
-        fullScreenGestureEnabled: false
+        fullScreenGestureEnabled: false,
+        presentation: null,
+        animation: "slide_from_right",
+        headerBackVisible: false
       };
       let str = "card";
       if (obj2.isAndroid()) {
         str = "transparentModal";
       }
-      obj.presentation = str;
-      obj.animation = "slide_from_right";
-      obj.headerBackVisible = false;
+      obj[6] = str;
       const merged = Object.assign(closure_6);
       return obj;
-    }
+    },
+    initialRouteName: null,
+    children: null
   };
-  let str = "choose-avatar";
-  if (null != initialRouteName) {
-    str = initialRouteName;
+  if (initialRouteName == null) {
+    initialRouteName = "choose-avatar";
   }
-  obj.initialRouteName = str;
+  obj[1] = initialRouteName;
   obj = {
     name: "enable-notification",
     getComponent() {
-      return lib(14887).RedesignNotificationScreen;
+      return lib(14913).RedesignNotificationScreen;
     },
     initialParams: { onComplete: callback }
   };
@@ -108,22 +117,24 @@ export default function NewUserModal(arg0) {
   obj1 = {
     name: "choose-avatar",
     getComponent() {
-      return lib(16241).default;
+      return lib(16276).default;
     },
     options() {
       return {
         headerRight(arg0) {
           let obj = {};
           const merged = Object.assign(arg0);
-          obj["onPress"] = function onPress() {
-            (function handleChooseAvatarSkip(outer2_7) {
-              const callback = outer2_7;
-              let obj = callback(table[9]);
-              obj = { onConfirm() { ... } };
-              obj.openAlert("skip-avatar-upload", callback2(React.lazy(() => { ... }), obj));
-            })(outer2_7);
+          obj.onPress = function onPress() {
+            let closure_0 = closure_7;
+            let obj = outer1_0(outer1_2[9]);
+            obj = {
+              onConfirm() {
+                return callback(true);
+              }
+            };
+            obj.openAlert("skip-avatar-upload", outer1_6(outer1_4.lazy(() => callback(paths[8])(paths[7], paths.paths)), obj));
           };
-          return callback(first(table[18]), obj);
+          return outer1_6(outer1_1(outer1_2[18]), obj);
         }
       };
     },
@@ -134,7 +145,7 @@ export default function NewUserModal(arg0) {
     name: "contact-sync",
     options: { headerShown: false },
     getComponent() {
-      return lib(11751).ContactSyncOnboardingModal;
+      return lib(11776).ContactSyncOnboardingModal;
     },
     initialParams: { onComplete: callback }
   });
@@ -142,17 +153,17 @@ export default function NewUserModal(arg0) {
     name: "discoverability",
     options: { headerShown: false },
     getComponent() {
-      return lib(16242).default;
+      return lib(16277).default;
     },
     initialParams: { onComplete: callback }
   });
   items1[4] = callback(createNativeStackNavigator.Screen, {
     name: "connect-guardian",
     getComponent() {
-      return lib(16244).default;
+      return lib(16279).default;
     },
     initialParams: { onComplete: callback }
   });
-  obj.children = items1;
+  obj[2] = items1;
   return callback(createNativeStackNavigator.Navigator, obj);
 };

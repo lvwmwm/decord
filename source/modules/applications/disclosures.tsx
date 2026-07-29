@@ -1,40 +1,201 @@
-// Module ID: 8928
-// Function ID: 70449
+// Module ID: 8952
+// Function ID: 8953
 // Name: _getDisclosures
-// Dependencies: [5, 653, 507, 8929, 1212, 2]
+// Dependencies: [5, 676, 530, 8953, 1236, 2]
 // Exports: ackDisclosures, getDisclosures, getTextForDisclosure
 
-// Module 8928 (_getDisclosures)
+// Module 8952 (_getDisclosures)
 import set from "set";
 import { Endpoints } from "ME";
 
 const require = arg1;
 function _getDisclosures() {
-  // CreateGeneratorClosureLongIndex (0x67)
-  const obj = callback(tmp);
-  return obj(...arguments);
+  const self = this;
+  const tmp = callback((arg0) => {
+    let closure_0 = arg0;
+    let c2 = 0;
+    let c3 = 0;
+    return (function*(arg0) {
+      if (c3 === 2) {
+        c3 = 3;
+        HermesBuiltin.throwTypeError();
+      } else if (tmp4 === 3) {
+        if (arg0 === 1) {
+          throw arg1;
+        } else if (arg0 === 2) {
+          let obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
+        } else {
+          return { value: "HermesInternal", done: null };
+        }
+      } else {
+        try {
+          c3 = 2;
+          if (0 === c2) {
+            if (arg0 === 1) {
+              c3 = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              c3 = 3;
+              obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            } else {
+              let closure_1 = tmp2;
+              let lib;
+              const result = c3.APPLICATION_DISCLOSURES(lib);
+              const HTTP = lib(outer1_1[2]).HTTP;
+              const obj1 = { url: null, retries: 3, rejectWithError: null };
+              obj1[0] = result;
+              obj1[2] = lib(outer1_1[2]).rejectWithMigratedError();
+              c2 = 1;
+              c3 = 1;
+              const obj2 = { value: null, done: false };
+              obj2[0] = HTTP.get(obj1);
+              return obj2;
+            }
+          } else if (arg0 === 1) {
+            c3 = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            c3 = 3;
+            const obj3 = { value: null, done: true };
+            obj3[0] = arg1;
+            return obj3;
+          } else {
+            lib = arg1;
+            obj = { disclosures: null, ackedDisclosures: null, allAcked: null };
+            obj[0] = lib.body.disclosures;
+            obj[1] = lib.body.acked_disclosures;
+            obj[2] = lib.body.all_acked;
+            c3 = 3;
+            const obj4 = { value: null, done: true };
+            obj4[0] = obj;
+            return obj4;
+          }
+        } catch (tmp10) {
+          c3 = tmp;
+          throw tmp10;
+        }
+      }
+    })();
+  });
+  const _getDisclosures = tmp;
+  const apply = tmp.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
 }
 function _ackDisclosures() {
-  // CreateGeneratorClosureLongIndex (0x67)
-  const obj = callback(tmp);
-  return obj(...arguments);
+  const self = this;
+  const tmp = callback((arg0, arg1) => {
+    let closure_0 = arg0;
+    let closure_1 = arg1;
+    let c3 = 0;
+    let c2 = 0;
+    return (function*(arg0, arg1) {
+      if (c2 === 2) {
+        c2 = 3;
+        HermesBuiltin.throwTypeError();
+      } else if (tmp3 === 3) {
+        if (arg0 === 1) {
+          throw arg1;
+        } else if (arg0 === 2) {
+          let obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
+        } else {
+          return { value: "HermesInternal", done: null };
+        }
+      } else {
+        try {
+          c2 = 2;
+          if (0 === c3) {
+            if (arg0 === 1) {
+              c2 = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              c2 = 3;
+              obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            } else {
+              const result = c3.APPLICATION_DISCLOSURES(callback);
+              const HTTP = callback(530).HTTP;
+              const obj1 = { url: null, body: null, rejectWithError: null };
+              obj1[0] = result;
+              const obj2 = { disclosures: null };
+              obj2[0] = dependencyMap;
+              obj1[1] = obj2;
+              obj1[2] = callback(530).rejectWithMigratedError();
+              c3 = 1;
+              c2 = 1;
+              const obj3 = { value: null, done: false };
+              obj3[0] = HTTP.post(obj1);
+              return obj3;
+            }
+          } else if (arg0 === 1) {
+            c2 = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            c2 = 3;
+            obj = { value: null, done: true };
+            obj[0] = arg1;
+            return obj;
+          } else {
+            c2 = 3;
+            return { value: "HermesInternal", done: null };
+          }
+        } catch (tmp5) {
+          c2 = tmp;
+          throw tmp5;
+        }
+      }
+    })();
+  });
+  const _ackDisclosures = tmp;
+  const apply = tmp.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
 }
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/applications/disclosures.tsx");
+let result = require("sendRequest").fileFinishedImporting("modules/applications/disclosures.tsx");
 
-export const ApplicationDisclosure = require("_callSuper").ApplicationDisclosureType;
-export const getDisclosures = function getDisclosures(client_id) {
-  return _getDisclosures(...arguments);
+export const ApplicationDisclosure = require("create").ApplicationDisclosureType;
+export const getDisclosures = function getDisclosures(closure_0) {
+  const self = this;
+  const apply = _getDisclosures.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
 };
-export const ackDisclosures = function ackDisclosures(arg0, arg1) {
-  return _ackDisclosures(...arguments);
+export const ackDisclosures = function ackDisclosures(closure_0, outer1_50) {
+  const self = this;
+  const apply = _ackDisclosures.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
 };
-export const getTextForDisclosure = function getTextForDisclosure(disclosure) {
-  if (require(8929) /* _callSuper */.ApplicationDisclosureType.IP_LOCATION === disclosure) {
-    const intl2 = require(1212) /* getSystemLocale */.intl;
-    return intl2.string(require(1212) /* getSystemLocale */.t["6wPmjo"]);
-  } else if (require(8929) /* _callSuper */.ApplicationDisclosureType.DISPLAYS_ADVERTISEMENTS === disclosure) {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(require(1212) /* getSystemLocale */.t["/uOMKZ"]);
+export const getTextForDisclosure = function getTextForDisclosure(toFixed) {
+  if (require(8953) /* create */.ApplicationDisclosureType.IP_LOCATION === toFixed) {
+    const intl2 = tmp(1236).intl;
+    return intl2.string(tmp(1236).t["6wPmjo"]);
+  } else if (tmp(8953).ApplicationDisclosureType.DISPLAYS_ADVERTISEMENTS === toFixed) {
+    const intl = tmp(1236).intl;
+    return intl.string(tmp(1236).t["/uOMKZ"]);
   } else {
     return null;
   }

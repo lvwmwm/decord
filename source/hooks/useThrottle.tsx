@@ -1,31 +1,32 @@
-// Module ID: 10839
-// Function ID: 83898
+// Module ID: 10863
+// Function ID: 10864
 // Name: throttleStateFn
-// Dependencies: [31, 22, 2]
+// Dependencies: [19, 12, 2]
 // Exports: useThrottledState
 
-// Module 10839 (throttleStateFn)
-import result from "result";
+// Module 10863 (throttleStateFn)
+import noop from "noop";
 
 const require = arg1;
 function throttleStateFn(arg0) {
   return arg0;
 }
-function useThrottledFunction(callback4, arg1, items, sharedValue) {
+function useThrottledFunction(callback4, arg1, items4, sharedValue) {
   const _require = callback4;
   const dependencyMap = arg1;
-  if (items === undefined) {
+  let items = items4;
+  if (items4 === undefined) {
     items = [];
   }
   const React = sharedValue;
   let ref;
-  ref = React.useRef(_require(22).throttle(callback4, arg1, sharedValue));
+  ref = React.useRef(_require(12).throttle(callback4, arg1, sharedValue));
   const items1 = [callback4, arg1, sharedValue, ...items];
   const effect = React.useEffect(() => {
-    ref.current = callback4(table[1]).throttle(callback4, table, result);
+    ref.current = stateFromStores(current2[1]).throttle(stateFromStores, current2, ref1);
     return () => {
-      const current = outer1_3.current;
-      if (null != current) {
+      const current = ref.current;
+      if (current != null) {
         current.cancel();
       }
     };
@@ -34,23 +35,44 @@ function useThrottledFunction(callback4, arg1, items, sharedValue) {
 }
 const result = require("set").fileFinishedImporting("hooks/useThrottle.tsx");
 
-export const useThrottledState = (arg0, arg1, items, sharedValue) => {
-  let current = arg0;
-  let closure_0 = arg0;
+export const useThrottledState = (stateFromStores) => {
+  let current = stateFromStores;
+  let _require = stateFromStores;
+  let items = arg2;
+  if (arg2 === undefined) {
+    items = [];
+  }
+  let current2;
+  let ref1;
+  if (typeof useThrottledFunction !== "find") {
+    HermesBuiltin.throwTypeError();
+  }
+  _require = tmp;
+  current2 = arg1;
   if (items === undefined) {
     items = [];
   }
-  let c1;
+  ref1 = arg3;
   let ref;
-  const tmp = useThrottledFunction(throttleStateFn, arg1, items, sharedValue);
-  c1 = tmp;
-  ref = ref.useRef(current);
-  const items1 = [current, tmp];
-  const effect = ref.useEffect(() => {
-    ref.current = _undefined(closure_0);
+  ref = ref1.useRef(_require(current2[1]).throttle(tmp, arg1, arg3));
+  const items1 = [tmp, arg1, arg3, ...items];
+  const effect = ref1.useEffect(() => {
+    ref.current = stateFromStores(current2[1]).throttle(stateFromStores, current2, ref1);
+    return () => {
+      const current = ref.current;
+      if (current != null) {
+        current.cancel();
+      }
+    };
   }, items1);
+  current2 = ref.current;
+  ref1 = ref1.useRef(current);
+  const items2 = [current, current2];
+  const effect1 = ref1.useEffect(() => {
+    ref1.current = current2(closure_0);
+  }, items2);
   if (0 !== arg1) {
-    current = ref.current;
+    current = ref1.current;
   }
   return current;
 };

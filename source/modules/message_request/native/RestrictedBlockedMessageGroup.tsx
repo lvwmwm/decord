@@ -1,48 +1,48 @@
-// Module ID: 15693
-// Function ID: 120802
+// Module ID: 15728
+// Function ID: 15729
 // Name: RestrictedBlockedMessageGroup
-// Dependencies: [57, 31, 27, 33, 4165, 15691, 689, 4695, 4161, 1212, 2]
+// Dependencies: [32, 19, 17, 21, 4189, 15726, 712, 4717, 4185, 1236, 2]
 // Exports: default
 
-// Module 15693 (RestrictedBlockedMessageGroup)
+// Module 15728 (RestrictedBlockedMessageGroup)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
+import noop from "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_5;
+let c5;
 let closure_6;
 const require = arg1;
-({ jsx: closure_5, jsxs: closure_6 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { marginLeft: require("RESTRICTED_AVATAR_SIZE").RESTRICTED_CONTENT_INSET, marginVertical: require("_createForOfIteratorHelperLoose").space.PX_8 };
-_createForOfIteratorHelperLoose.toggle = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+({ jsx: c5, jsxs: closure_6 } = jsxProd);
+createCacheKey = { toggle: null };
+createCacheKey = { marginLeft: require("RESTRICTED_AVATAR_SIZE").RESTRICTED_CONTENT_INSET, marginVertical: require("Themes").space.PX_8 };
+createCacheKey[0] = createCacheKey;
+createCacheKey = createCacheKey.createStyles(createCacheKey);
 const result = require("get ActivityIndicator").fileFinishedImporting("modules/message_request/native/RestrictedBlockedMessageGroup.tsx");
 
 export default function RestrictedBlockedMessageGroup(arg0) {
+  let c1;
   let messages;
   let require;
+  let tmp3;
   ({ messages, renderMessage: require } = arg0);
-  const tmp2 = callback(React.useState(false), 2);
-  let first = tmp2[0];
-  const dependencyMap = tmp2[1];
-  let obj = {};
+  let dependencyMap;
+  const tmp = createCacheKey();
+  [tmp3, c1] = callback(React.useState(false), 2);
   callback = React.useCallback(() => {
-    callback2((arg0) => !arg0);
+    _undefined((arg0) => !arg0);
   }, []);
-  obj = { style: _createForOfIteratorHelperLoose().toggle, accessibilityRole: "button", accessibilityState: obj, onPress: callback };
-  obj = { expanded: first };
-  const obj1 = { variant: "text-sm/medium", color: "text-muted" };
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj1.children = intl.format(require(1212) /* getSystemLocale */.t["+FcYM/"], { count: messages.length });
-  obj.children = callback2(require(4161) /* Text */.Text, obj1);
-  const items = [callback2(require(4695) /* PressableBase */.PressableOpacity, obj), ];
-  if (first) {
-    first = messages.map((id) => outer1_5(outer1_4, { children: callback(id) }, id.id));
+  let obj = { style: tmp.toggle, accessibilityRole: "button", accessibilityState: { expanded: mapped }, onPress: callback, children: null };
+  obj = { variant: "text-sm/medium", color: "text-muted", children: null };
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj = { count: messages.length };
+  obj[2] = intl.format(require(1236) /* getSystemLocale */.t["+FcYM/"], obj);
+  obj[4] = callback2(require(4185) /* Text */.Text, obj);
+  const children = [callback2(require(4717) /* PressableBase */.PressableOpacity, obj), ];
+  if (mapped) {
+    mapped = messages.map((id) => outer1_5(outer1_4, { children: callback(id) }, id.id));
   }
-  items[1] = first;
-  obj.children = items;
-  return closure_6(View, obj);
+  children[1] = mapped;
+  return closure_6(View, { children });
 };

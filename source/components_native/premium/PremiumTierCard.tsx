@@ -1,30 +1,30 @@
-// Module ID: 12575
-// Function ID: 97187
+// Module ID: 12597
+// Function ID: 12598
 // Name: textLogoTier2
-// Dependencies: [31, 27, 6207, 1852, 33, 4165, 689, 5008, 1324, 4589, 668, 3811, 12576, 12577, 6292, 6226, 6227, 6287, 5200, 2]
+// Dependencies: [19, 17, 6227, 1876, 21, 4189, 712, 5030, 1348, 4611, 691, 3835, 12598, 12599, 6313, 6246, 6247, 6308, 5222, 2]
 // Exports: default
 
-// Module 12575 (textLogoTier2)
-import "result";
-import get_ActivityIndicator from "get ActivityIndicator";
+// Module 12597 (textLogoTier2)
+import "set";
+import get_ActivityIndicator from "registerAsset";
 import { getPremiumGradientColor } from "items";
 import { PremiumTypes } from "GuildFeatures";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_3;
-let closure_4;
-let closure_7;
-let closure_8;
-let closure_9;
+let c3;
+let c4;
+let c9;
+let error;
+let metroImportAll;
 const require = arg1;
-({ View: closure_3, Image: closure_4 } = get_ActivityIndicator);
-({ jsx: closure_7, Fragment: closure_8, jsxs: closure_9 } = jsxProd);
-_createForOfIteratorHelperLoose = { header: { marginTop: 24, padding: 16 }, textLogoTier0: { width: 158, height: 32 }, textLogoTier1: { width: 185, height: 32 }, textLogoTier2: { width: 80, height: 32 }, wumpusLogo: { position: "absolute", top: 0, right: 24, zIndex: 1 }, wumpusLogoTier0: { width: 83, height: 100 }, wumpusLogoTier1: { width: 86, height: 100 }, wumpusLogoTier2: { width: 133, height: 100 } };
-_createForOfIteratorHelperLoose = { padding: 16, borderBottomRightRadius: require("_createForOfIteratorHelperLoose").radii.xs, borderBottomLeftRadius: require("_createForOfIteratorHelperLoose").radii.xs };
-_createForOfIteratorHelperLoose.body = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.bodyLegacy = { backgroundColor: require("result").DARK_PRIMARY_630_LIGHT_PRIMARY_100 };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+({ View: c3, Image: c4 } = get_ActivityIndicator);
+({ jsx: error, Fragment: metroImportAll, jsxs: c9 } = jsxProd);
+createCacheKey = { header: { marginTop: 24, padding: 16 }, textLogoTier0: { width: 158, height: 32 }, textLogoTier1: { width: 185, height: 32 }, textLogoTier2: { width: 80, height: 32 }, wumpusLogo: { position: "absolute", top: 0, right: 24, zIndex: 1 }, wumpusLogoTier0: { width: 83, height: 100 }, wumpusLogoTier1: { width: 86, height: 100 }, wumpusLogoTier2: { width: 133, height: 100 }, body: null, bodyLegacy: null };
+createCacheKey = { padding: 16, borderBottomRightRadius: require("Themes").radii.xs, borderBottomLeftRadius: require("Themes").radii.xs };
+createCacheKey[8] = createCacheKey;
+createCacheKey[9] = { backgroundColor: require("result").DARK_PRIMARY_630_LIGHT_PRIMARY_100 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
 let obj1 = { backgroundColor: require("result").DARK_PRIMARY_630_LIGHT_PRIMARY_100 };
 const result = require("items").fileFinishedImporting("components_native/premium/PremiumTierCard.tsx");
 
@@ -32,69 +32,72 @@ export default function _default(children) {
   let premiumType;
   let style;
   ({ premiumType, style } = children);
-  const tmp = _createForOfIteratorHelperLoose();
-  const tmp2 = importDefault(1324)("PremiumTierCard");
-  let obj = {};
-  obj = { style: tmp.header, start: require(668) /* keys */.HorizontalGradient.START, end: require(668) /* keys */.HorizontalGradient.END, colors: getPremiumGradientColor(premiumType) };
-  obj = { accessible: true, accessibilityLabel: null, accessibilityRole: "header" };
-  let obj3 = require(3811) /* _createForOfIteratorHelperLoose */;
-  obj.accessibilityLabel = obj3.getPremiumTypeDisplayName(premiumType);
+  const tmp = createCacheKey();
+  const tmp4 = importDefault(1348)("PremiumTierCard");
+  let obj = { style: tmp.header, start: null, end: null, colors: null, children: null };
+  obj[1] = require(691) /* keys */.HorizontalGradient.START;
+  obj[2] = require(691) /* keys */.HorizontalGradient.END;
+  obj[3] = getPremiumGradientColor(premiumType);
+  obj = { accessible: true, accessibilityLabel: null, accessibilityRole: "header", style: null, source: null };
+  let obj2 = require(3835) /* getPremiumPlanItem */;
+  obj[1] = obj2.getPremiumTypeDisplayName(premiumType);
   if (PremiumTypes.TIER_0 === premiumType) {
     let textLogoTier2 = tmp.textLogoTier0;
-  } else if (PremiumTypes.TIER_1 === premiumType) {
+  } else if (tmp11.TIER_1 === premiumType) {
     textLogoTier2 = tmp.textLogoTier1;
-  } else if (PremiumTypes.TIER_2 === premiumType) {
+  } else if (tmp11.TIER_2 === premiumType) {
     textLogoTier2 = tmp.textLogoTier2;
   }
-  obj.style = textLogoTier2;
+  obj[3] = textLogoTier2;
   if (PremiumTypes.TIER_0 === premiumType) {
-    let tmp12 = importDefault(12576);
-  } else if (PremiumTypes.TIER_1 === premiumType) {
-    tmp12 = importDefault(12577);
-  } else if (PremiumTypes.TIER_2 === premiumType) {
-    tmp12 = importDefault(6292);
+    let tmp2Result = tmp2(12598);
+  } else if (tmp11.TIER_1 === premiumType) {
+    tmp2Result = tmp2(12599);
+  } else if (tmp11.TIER_2 === premiumType) {
+    tmp2Result = tmp2(6313);
   }
-  obj.source = tmp12;
-  obj.children = closure_7(closure_4, obj);
-  const items = [closure_7(importDefault(4589), obj), , ];
-  const obj1 = { accessible: false, importantForAccessibility: "no" };
+  obj[4] = tmp2Result;
+  obj[4] = closure_7(closure_4, obj);
+  const items = [closure_7(importDefault(4611), obj), , ];
   const items1 = [tmp.wumpusLogo, ];
   if (PremiumTypes.TIER_0 === premiumType) {
     let wumpusLogoTier2 = tmp.wumpusLogoTier0;
-  } else if (PremiumTypes.TIER_1 === premiumType) {
+  } else if (tmp11.TIER_1 === premiumType) {
     wumpusLogoTier2 = tmp.wumpusLogoTier1;
-  } else if (PremiumTypes.TIER_2 === premiumType) {
+  } else if (tmp11.TIER_2 === premiumType) {
     wumpusLogoTier2 = tmp.wumpusLogoTier2;
   }
+  obj = { accessible: false, importantForAccessibility: "no", style: items1, source: null };
   items1[1] = wumpusLogoTier2;
-  obj1.style = items1;
   if (PremiumTypes.TIER_0 === premiumType) {
-    let tmp23 = importDefault(6226);
-  } else if (PremiumTypes.TIER_1 === premiumType) {
-    tmp23 = importDefault(6227);
-  } else if (PremiumTypes.TIER_2 === premiumType) {
-    tmp23 = importDefault(6287);
+    tmp2Result = tmp2(6246);
+  } else if (tmp11.TIER_1 === premiumType) {
+    tmp2Result = tmp2(6247);
+  } else if (tmp11.TIER_2 === premiumType) {
+    tmp2Result = tmp2(6308);
   }
-  obj1.source = tmp23;
-  items[1] = closure_7(closure_4, obj1);
-  const obj2 = {};
+  obj[3] = tmp2Result;
+  items[1] = closure_7(closure_4, obj);
   const items2 = [tmp.body, ];
-  let bodyLegacy = !tmp2;
-  if (bodyLegacy) {
+  let bodyLegacy = !tmp4;
+  if (!tmp4) {
     bodyLegacy = tmp.bodyLegacy;
   }
+  const obj1 = { children: null };
   items2[1] = bodyLegacy;
-  obj2.style = items2;
-  obj2.children = children.children;
-  items[2] = closure_7(closure_3, obj2);
-  obj.children = items;
-  const tmp3Result = closure_9(closure_8, obj);
-  if (tmp2) {
-    obj3 = { variant: "surface-high", style, children: tmp3Result };
-    let tmp32Result = tmp32(require(5200) /* getCardBackgroundToken */.Card, obj3);
+  items[2] = closure_7(closure_3, { style: items2, children: children.children });
+  obj1[0] = items;
+  const tmp5Result = closure_9(closure_8, obj1);
+  if (tmp4) {
+    obj2 = { variant: "surface-high", style: null, children: null };
+    obj2[1] = style;
+    obj2[2] = tmp5Result;
+    let tmp7Result = tmp7(require(5222) /* PressableCard */.Card, obj2);
   } else {
-    const obj4 = { style, children: tmp3Result };
-    tmp32Result = tmp32(closure_3, obj4);
+    const obj3 = { style: null, children: null };
+    obj3[0] = style;
+    obj3[1] = tmp5Result;
+    tmp7Result = tmp7(tmp14, obj3);
   }
-  return tmp32Result;
+  return tmp7Result;
 };

@@ -1,18 +1,18 @@
-// Module ID: 15004
-// Function ID: 114242
-// Dependencies: [31, 27, 10263, 4361, 33, 4165, 10264, 4584, 9100, 2]
+// Module ID: 15030
+// Function ID: 15031
+// Dependencies: [19, 17, 10284, 4386, 21, 4189, 10285, 4606, 9124, 2]
 
-// Module 15004
+// Module 15030
 import { View } from "get ActivityIndicator";
 import { MUTED_OPACITY_CONTENT } from "hairlineWidth";
 import { UnreadSetting } from "ReadStateTypes";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import importAllResult from "result";
+import createCacheKey from "createCacheKey";
+import importAllResult from "noop";
 
 const require = arg1;
-let closure_7 = _createForOfIteratorHelperLoose.createStyles({ unreadBadge: { flexGrow: 0, flexShrink: 0, position: "absolute" }, unreadBadgePanel: { marginLeft: -16 } });
-const memoResult = require("result").memo(function ChannelUnreadBadge(panelVariant) {
+let closure_7 = createCacheKey.createStyles({ unreadBadge: { flexGrow: 0, flexShrink: 0, position: "absolute" }, unreadBadgePanel: { marginLeft: -16 } });
+const memoResult = require("noop").memo(function ChannelUnreadBadge(panelVariant) {
   let isThread;
   let launchpad;
   let layout;
@@ -25,12 +25,11 @@ const memoResult = require("result").memo(function ChannelUnreadBadge(panelVaria
     flag = false;
   }
   const tmp = callback();
-  let obj = require(10264) /* getLayoutStyles */;
+  let obj = require(10285) /* getLayoutStyles */;
   const layoutStyles = obj.getLayoutStyles(layout, launchpad);
-  require(4584) /* getFontScale */;
-  let tmp6Result = null;
+  require(4606) /* getFontScale */;
+  let tmp8Result = null;
   if (unread) {
-    obj = {};
     const items = [tmp.unreadBadge, , , ];
     let unreadBadgePanel;
     if (flag) {
@@ -38,29 +37,30 @@ const memoResult = require("result").memo(function ChannelUnreadBadge(panelVaria
     }
     items[1] = unreadBadgePanel;
     const unreadBadge = layoutStyles.unreadBadge;
+    obj = { style: null, children: null };
     items[2] = isThread ? unreadBadge.positionThread : unreadBadge.position;
-    items[3] = require(10264) /* getLayoutStyles */.makeSizeStyle(layoutStyles.unreadBadge.size);
-    obj.style = items;
-    obj = { classic: flag };
-    const obj3 = require(10264) /* getLayoutStyles */;
-    const tmp11 = jsx;
-    const tmp6 = jsx;
-    const tmp7 = View;
+    items[3] = tmp2(10285).makeSizeStyle(layoutStyles.unreadBadge.size);
+    obj[0] = items;
+    obj = { classic: null, size: null, badgeStyle: null };
+    obj[0] = flag;
+    const tmp2Result = tmp2(10285);
+    const tmp9 = View;
     const _Math = Math;
-    let num2 = 1;
-    obj.size = require(9100) /* DEFAULT_BADGE_SIZE */.CHANNEL_BADGE_SIZE * Math.max(tmp4, 1);
-    const obj1 = {};
+    obj[1] = tmp2(9124).CHANNEL_BADGE_SIZE * Math.max(tmp6, 1);
     if (resolvedUnreadSetting !== UnreadSetting.ALL_MESSAGES) {
-      num2 = MUTED_OPACITY_CONTENT;
+      let num2 = MUTED_OPACITY_CONTENT;
+    } else {
+      num2 = 1;
     }
-    obj1.opacity = num2;
+    const obj1 = { opacity: null };
+    obj1[0] = num2;
     const items1 = [obj1];
-    obj.badgeStyle = items1;
-    obj.children = tmp11(importDefault(9100), obj);
-    tmp6Result = tmp6(tmp7, obj);
-    const tmp13 = importDefault(9100);
+    obj[2] = items1;
+    obj[1] = jsx(importDefault(9124), { classic: null, size: null, badgeStyle: null });
+    tmp8Result = tmp8(tmp9, obj);
+    const tmp12 = importDefault(9124);
   }
-  return tmp6Result;
+  return tmp8Result;
 });
 const result = require("hairlineWidth").fileFinishedImporting("modules/main_tabs_v2/native/shared_components/guild_channels/ChannelUnreadBadge.tsx");
 

@@ -1,17 +1,17 @@
-// Module ID: 9568
-// Function ID: 74480
+// Module ID: 9592
+// Function ID: 9593
 // Name: useExpressionPickerTabData
-// Dependencies: [31, 1314, 1212, 2]
+// Dependencies: [19, 1338, 1236, 2]
 // Exports: default
 
-// Module 9568 (useExpressionPickerTabData)
-import result from "result";
+// Module 9592 (useExpressionPickerTabData)
+import noop from "noop";
 import ExpressionPickerViewType from "ExpressionPickerViewType";
 
-let closure_3;
-let closure_4;
+let c3;
+let c4;
 const require = arg1;
-({ ExpressionPickerOrder: closure_3, ExpressionPickerViewType: closure_4 } = ExpressionPickerViewType);
+({ ExpressionPickerOrder: c3, ExpressionPickerViewType: c4 } = ExpressionPickerViewType);
 const result = require("getSystemLocale").fileFinishedImporting("modules/expression_picker/native/useExpressionPickerTabData.tsx");
 
 export default function useExpressionPickerTabData(arg0) {
@@ -24,34 +24,33 @@ export default function useExpressionPickerTabData(arg0) {
   }
   const items = [expressionPickerTabs];
   const memo = React.useMemo(() => {
-    let obj = {};
-    obj = {};
+    let obj = { EMOJI: null, GIF: null, STICKER: null };
+    obj = { label: null, viewType: null, show: null, order: null };
     const intl = expressionPickerTabs(outer1_1[2]).intl;
-    obj.label = intl.string(expressionPickerTabs(outer1_1[2]).t.Xu3wE3);
-    obj.viewType = outer1_4.EMOJI;
-    obj.show = expressionPickerTabs.includes(outer1_4.EMOJI);
-    obj.order = outer1_3.indexOf(outer1_4.EMOJI);
-    obj.EMOJI = obj;
-    obj = {};
+    obj[0] = intl.string(expressionPickerTabs(outer1_1[2]).t.Xu3wE3);
+    obj[1] = outer1_4.EMOJI;
+    obj[2] = expressionPickerTabs.includes(outer1_4.EMOJI);
+    obj[3] = outer1_3.indexOf(outer1_4.EMOJI);
+    obj[0] = obj;
+    obj = { label: null, viewType: null, show: null, order: null };
     const intl2 = expressionPickerTabs(outer1_1[2]).intl;
-    obj.label = intl2.string(expressionPickerTabs(outer1_1[2]).t["6gUTsS"]);
-    obj.viewType = outer1_4.GIF;
-    obj.show = expressionPickerTabs.includes(outer1_4.GIF);
-    obj.order = outer1_3.indexOf(outer1_4.GIF);
-    obj.GIF = obj;
-    const obj1 = {};
+    obj[0] = intl2.string(expressionPickerTabs(outer1_1[2]).t["6gUTsS"]);
+    obj[1] = outer1_4.GIF;
+    obj[2] = expressionPickerTabs.includes(outer1_4.GIF);
+    obj[3] = outer1_3.indexOf(outer1_4.GIF);
+    obj[1] = obj;
+    const obj1 = { label: null, viewType: null, show: null, order: null };
     const intl3 = expressionPickerTabs(outer1_1[2]).intl;
-    obj1.label = intl3.string(expressionPickerTabs(outer1_1[2]).t.nf1s3u);
-    obj1.viewType = outer1_4.STICKER;
-    obj1.show = expressionPickerTabs.includes(outer1_4.STICKER);
-    obj1.order = outer1_3.indexOf(outer1_4.STICKER);
-    obj.STICKER = obj1;
+    obj1[0] = intl3.string(expressionPickerTabs(outer1_1[2]).t.nf1s3u);
+    obj1[1] = outer1_4.STICKER;
+    obj1[2] = expressionPickerTabs.includes(outer1_4.STICKER);
+    obj1[3] = outer1_3.indexOf(outer1_4.STICKER);
+    obj[2] = obj1;
     const values = Object.values(obj);
     const found = values.filter((show) => show.show);
     const sorted = found.sort((order) => order.order);
     return { expressionPickerTabsSorted: sorted, expressionPickerTabStrings: sorted.map((label) => label.label) };
   }, items);
   const prop = memo.expressionPickerTabsSorted;
-  let obj = { expressionPickerSelectedIndex: num, expressionPickerViewType: num < prop.length ? prop[num] : prop[0].viewType, expressionPickerTabStrings: memo.expressionPickerTabStrings };
-  return obj;
+  return { expressionPickerSelectedIndex: num, expressionPickerViewType: num < prop.length ? prop[num] : prop[0].viewType, expressionPickerTabStrings: memo.expressionPickerTabStrings };
 };

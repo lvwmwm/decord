@@ -1,113 +1,35 @@
-// Module ID: 14986
-// Function ID: 114094
-// Name: _createForOfIteratorHelperLoose
-// Dependencies: [57, 31, 27, 5902, 3982, 5005, 14916, 14103, 33, 4165, 7655, 1557, 14096, 14105, 574, 620, 566, 4026, 14987, 2]
+// Module ID: 15012
+// Function ID: 15013
+// Name: checkNodeAndIterate
+// Dependencies: [32, 19, 17, 5921, 4006, 5027, 14942, 14125, 21, 4189, 7678, 1581, 14118, 14127, 636, 643, 589, 4050, 15013, 2]
 
-// Module 14986 (_createForOfIteratorHelperLoose)
+// Module 15012 (checkNodeAndIterate)
 import _slicedToArray from "_slicedToArray";
-import importAllResult from "result";
-import { View } from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_7 from "_isNativeReflectConstruct";
-import closure_8 from "_isNativeReflectConstruct";
-import { GuildsNodeType } from "_isNativeReflectConstruct";
+import importAllResult from "set";
+import { View } from "module_4050";
+import updateGuildUnreadSentinel from "updateGuildUnreadSentinel";
+import handleConnectionOpen from "handleConnectionOpen";
+import insertUnsortedGuilds from "insertUnsortedGuilds";
+import { GuildsNodeType } from "insertUnsortedGuilds";
 import GUILD_ITEM_SIZE from "GUILD_ITEM_SIZE";
 import CONNECTION_BANNER_HEIGHT from "CONNECTION_BANNER_HEIGHT";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_10;
-let closure_11;
+let GUILD_LIST_WIDTH;
+let c10;
 let closure_12;
-let closure_13;
+let map1;
+let unpackModuleId;
 const require = arg1;
-function _createForOfIteratorHelperLoose(iterable) {
-  let closure_0 = iterable;
-  iterable = "undefined" !== typeof Symbol;
-  if (iterable) {
-    const _Symbol = Symbol;
-    iterable = iterable[Symbol.iterator];
-  }
-  if (!iterable) {
-    iterable = iterable[Symbol.iterator];
-  }
-  if (iterable) {
-    const iter = iterable.call(iterable);
-    const next = iter.next;
-    return next.bind(iter);
-  } else {
-    const _Array = Array;
-    let tmp = iterable;
-    if (!Array.isArray(iterable)) {
-      let tmp2;
-      if (iterable) {
-        if ("string" === typeof iterable) {
-          tmp2 = _arrayLikeToArray(iterable, undefined);
-        } else {
-          const toString = {}.toString;
-          const substr = toString.call(iterable).slice(8, -1);
-          let name = substr;
-          if (tmp3) {
-            name = iterable.constructor.name;
-          }
-          if ("Map" !== name) {
-            if ("Set" !== name) {
-              if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(iterable, undefined);
-              } else {
-                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
-              }
-            }
-            tmp2 = arr;
-          }
-          const _Array2 = Array;
-          arr = Array.from(iterable);
-          const callResult = toString.call(iterable);
-          tmp3 = "Object" === substr && iterable.constructor;
-        }
-      }
-      tmp = tmp2;
-      if (!tmp2) {
-        const _TypeError = TypeError;
-        const typeError = new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
-        throw typeError;
-      }
-    }
-    if (tmp) {
-      closure_0 = tmp;
-    }
-    let c1 = 0;
-    return () => {
-      if (closure_1 >= length.length) {
-        let obj = { done: true };
-      } else {
-        obj = { done: false };
-        closure_1 = tmp3 + 1;
-        obj.value = length[+closure_1];
-      }
-      return obj;
-    };
-  }
-}
-function _arrayLikeToArray(arg0, arg1) {
-  let length;
-  if (tmp) {
-    length = arg0.length;
-  }
-  const ArrayResult = Array(length);
-  for (let num = 0; num < length; num = num + 1) {
-    ArrayResult[num] = arg0[num];
-  }
-  return ArrayResult;
-}
 function checkNodeAndIterate(arg0) {
   let direction;
   let item;
   let node;
   let section;
   let selectedGuildId;
-  let tmp3;
-  let tmp4Result;
+  let tmp4;
+  let tmp5Result;
   ({ node, section, item, direction, selectedGuildId } = arg0);
   if (null != node) {
     if (node.type === GuildsNodeType.GUILD) {
@@ -117,17 +39,16 @@ function checkNodeAndIterate(arg0) {
           tmp2 = node;
         }
         if (null != tmp2) {
-          let obj = { node: tmp2 };
-          let num5 = 0;
-          if (null != section) {
-            num5 = section;
+          let obj = { node: null, section: null, item: null };
+          obj[0] = tmp2;
+          if (section == null) {
+            section = 0;
           }
-          obj.section = num5;
-          let num6 = 0;
-          if (null != item) {
-            num6 = item;
+          obj[1] = section;
+          if (item == null) {
+            item = 0;
           }
-          obj.item = num6;
+          obj[2] = item;
           return obj;
         }
       }
@@ -136,410 +57,376 @@ function checkNodeAndIterate(arg0) {
     if (1 !== direction) {
       num4 = node.children.length - 1;
     }
-    if (num4 >= 0) {
+    if (0 <= num4) {
       if (num4 < node.children.length) {
         while (true) {
-          tmp3 = num4;
+          let tmp3 = num4;
+          tmp4 = num4;
           if (null != section) {
-            tmp3 = section;
+            tmp4 = section;
           }
-          obj = { node: node.children[num4], section: tmp3 };
-          let tmp5;
-          let tmp4 = checkNodeAndIterate;
+          obj = { node: null, section: null, item: null, direction: null, selectedGuildId: null };
+          obj[0] = node.children[num4];
+          obj[1] = tmp4;
+          let tmp6;
+          let tmp5 = checkNodeAndIterate;
           if (null != section) {
-            tmp5 = num4;
+            tmp6 = num4;
           }
-          obj.item = tmp5;
-          obj.direction = direction;
-          obj.selectedGuildId = selectedGuildId;
-          tmp4Result = tmp4(obj);
-          if (null != tmp4Result) {
+          obj[2] = tmp6;
+          obj[3] = direction;
+          obj[4] = selectedGuildId;
+          tmp5Result = tmp5(obj);
+          if (null != tmp5Result) {
             break;
           } else {
-            num4 = num4 + direction;
+            let sum = num4 + direction;
+            if (sum >= 0) {
+              num4 = sum;
+            }
           }
         }
-        let tmp8 = tmp4Result;
+        let tmp10 = tmp5Result;
         if (node.type === GuildsNodeType.FOLDER) {
-          tmp8 = tmp4Result;
+          tmp10 = tmp5Result;
           if (!node.expanded) {
-            obj = { node, section: tmp3 };
-            tmp8 = obj;
+            obj = { node: null, section: null };
+            obj[0] = node;
+            obj[1] = tmp4;
+            tmp10 = obj;
           }
         }
-        return tmp8;
+        return tmp10;
       }
     }
   }
 }
-function findFirstOrLastMentionedItem(scrollPosValue, arg1, selectedGuildId) {
+function findFirstOrLastMentionedItem(scrollPosValue) {
   let getSectionItemFromPosition;
+  let item2;
+  let section;
   guildsTree = guildsTree.getGuildsTree();
   const root = guildsTree.root;
   ({ scrollPosValue, getSectionItemFromPosition } = scrollPosValue);
   const item = getSectionItemFromPosition(scrollPosValue.get() + arg4).item;
   let layoutStart;
-  if (null != item) {
+  if (item != null) {
     layoutStart = item.layoutStart;
   }
-  if (null == layoutStart) {
+  if (layoutStart == null) {
     const scrollPosValue2 = scrollPosValue.scrollPosValue;
     layoutStart = scrollPosValue2.get();
   }
   const scrollPosValue3 = scrollPosValue.scrollPosValue;
-  let obj = { section: -1, item: -1 };
-  const diff = scrollPosValue3.get() + scrollPosValue.containerSize - arg3 - (closure_12 + closure_13);
-  const tmp3 = _createForOfIteratorHelperLoose(scrollPosValue.state.items);
-  const iter = tmp3();
+  section = -1;
+  item2 = -1;
   let flag = false;
-  let iter2 = iter;
-  let flag2 = false;
-  if (!iter.done) {
-    while (true) {
-      let value = iter2.value;
-      let flag3 = flag;
-      let tmp9 = tmp4;
-      let tmp10 = tmp5;
-      let tmp11 = tmp6;
-      let tmp12 = tmp7;
-      let tmp13 = tmp8;
-      if (value.layoutStart < layoutStart) {
-        let iter6 = tmp3();
-        flag = flag3;
-        tmp4 = tmp9;
-        tmp5 = tmp10;
-        tmp6 = tmp11;
-        tmp7 = tmp12;
-        tmp8 = tmp13;
-        iter2 = iter6;
-        flag2 = flag3;
-        if (iter6.done) {
+  const diff = scrollPosValue3.get() + scrollPosValue.containerSize - arg3 - (closure_12 + closure_13);
+  const iter = scrollPosValue.state.items[Symbol.iterator]();
+  const nextResult = iter.next();
+  while (iter !== undefined) {
+    let tmp4 = nextResult;
+    if (nextResult.layoutStart >= layoutStart) {
+      let tmp40 = nextResult;
+      let tmp41 = require;
+      let tmp42 = dependencyMap;
+      if (tmp4.type === require(7678) /* renderDefaultEmpty */.FastListItemTypes.ITEM) {
+        let tmp6 = nextResult;
+        if (tmp4.layoutStart > diff) {
+          let tmp30 = iter;
+          iter.return();
           break;
-        }
-      } else {
-        let tmp32 = require;
-        let tmp33 = dependencyMap;
-        if (value.type === require(7655) /* _isNativeReflectConstruct */.FastListItemTypes.ITEM) {
-          flag2 = flag;
-          if (value.layoutStart > diff) {
+        } else {
+          let tmp43 = nextResult;
+          let tmp44 = constants;
+          let tmp45 = constants;
+          if (tmp4.section < constants.GUILDS) {
+            if (arg1) {
+              flag = true;
+              let tmp29 = iter;
+              iter.return();
+              break;
+            }
             break;
           } else {
-            let tmp34 = constants;
-            if (value.section < constants.GUILDS) {
-              flag3 = flag;
-              tmp9 = tmp4;
-              tmp10 = tmp5;
-              tmp11 = tmp6;
-              tmp12 = tmp7;
-              tmp13 = tmp8;
-              flag2 = true;
-              if (arg1) {
-                break;
+            let tmp46 = nextResult;
+            if (0 !== tmp4.layoutSize) {
+              let tmp47 = section;
+              if (-1 === section) {
+                let tmp7 = nextResult;
+                ({ section, item: item2 } = tmp4);
               }
-            } else {
-              flag3 = flag;
-              tmp9 = tmp4;
-              tmp10 = tmp5;
-              tmp11 = tmp6;
-              tmp12 = tmp7;
-              tmp13 = tmp8;
-              if (0 !== value.layoutSize) {
-                if (-1 === obj.section) {
-                  ({ section: obj2.section, item: obj2.item } = value);
-                }
-                let type = value.type;
-                let tmp16 = require;
-                let tmp17 = dependencyMap;
-                if (require(7655) /* _isNativeReflectConstruct */.FastListItemTypes.SECTION === type) {
-                  let element = guildsTree.getNode(value.recyclerKey);
-                  flag3 = flag;
-                  tmp9 = element;
-                  tmp10 = tmp5;
-                  tmp11 = tmp6;
-                  tmp12 = tmp7;
-                  tmp13 = tmp8;
-                  if (null != element) {
-                    let tmp39 = GuildsNodeType;
-                    flag3 = flag;
-                    tmp9 = element;
-                    tmp10 = tmp5;
-                    tmp11 = tmp6;
-                    tmp12 = tmp7;
-                    tmp13 = tmp8;
-                    if (element.type === GuildsNodeType.FOLDER) {
-                      flag3 = flag;
-                      tmp9 = element;
-                      tmp10 = tmp5;
-                      tmp11 = tmp6;
-                      tmp12 = tmp7;
-                      tmp13 = tmp8;
-                      if (!element.expanded) {
-                        let tmp19 = _createForOfIteratorHelperLoose;
-                        let tmp20 = _createForOfIteratorHelperLoose(element.children);
-                        let iter3 = tmp20();
-                        let iter4 = iter3;
-                        flag3 = flag;
-                        tmp9 = element;
-                        tmp10 = iter3;
-                        tmp11 = tmp20;
-                        tmp12 = tmp7;
-                        tmp13 = tmp8;
-                        if (!iter3.done) {
-                          while (true) {
-                            value = iter4.value;
-                            let tmp21 = GuildsNodeType;
-                            if (value.type !== GuildsNodeType.GUILD) {
-                              let iter5 = tmp20();
-                              iter4 = iter5;
-                              flag3 = flag;
-                              tmp9 = element;
-                              tmp10 = iter5;
-                              tmp11 = tmp20;
-                              tmp12 = value;
-                              tmp13 = tmp8;
-                              if (iter5.done) {
-                                break;
-                              }
-                            } else {
-                              let tmp22 = store;
-                              flag3 = true;
-                              tmp9 = element;
-                              tmp10 = iter4;
-                              tmp11 = tmp20;
-                              tmp12 = value;
-                              tmp13 = tmp8;
-                              if (store.getMentionCount(value.id) > 0) {
-                                break;
-                              }
-                            }
+              let tmp8 = nextResult;
+              let type = tmp4.type;
+              if (tmp41(7678).FastListItemTypes.SECTION === type) {
+                let tmp18 = nextResult;
+                let node = guildsTree.getNode(tmp4.recyclerKey);
+                let element = node;
+                if (null != node) {
+                  let tmp48 = node;
+                  let tmp49 = GuildsNodeType;
+                  if (element.type === GuildsNodeType.FOLDER) {
+                    let tmp20 = node;
+                    if (!element.expanded) {
+                      let tmp21 = node;
+                      let children = element.children;
+                      let tmp22 = children;
+                      let tmp23 = children;
+                      for (const item10094 of children) {
+                        let tmp25 = GuildsNodeType;
+                        if (item10094.type === GuildsNodeType.GUILD) {
+                          let tmp26 = store;
+                          let tmp27 = item10094;
+                          if (store.getMentionCount(tmp24.id) > 0) {
+                            flag = true;
+                            let tmp28 = obj1;
+                            obj1.return();
                             break;
                           }
                         }
+                        continue;
                       }
+                      continue;
                     }
+                    continue;
                   }
-                } else {
-                  let tmp35 = require;
-                  let tmp36 = dependencyMap;
-                  if (require(7655) /* _isNativeReflectConstruct */.FastListItemTypes.ITEM === type) {
-                    let node = guildsTree.getNode(value.recyclerKey);
-                    flag3 = flag;
-                    tmp9 = tmp4;
-                    tmp10 = tmp5;
-                    tmp11 = tmp6;
-                    tmp12 = tmp7;
-                    tmp13 = node;
-                    if (null != node) {
-                      let tmp37 = GuildsNodeType;
-                      flag3 = flag;
-                      tmp9 = tmp4;
-                      tmp10 = tmp5;
-                      tmp11 = tmp6;
-                      tmp12 = tmp7;
-                      tmp13 = node;
-                      if (node.type === GuildsNodeType.GUILD) {
-                        let tmp38 = store;
-                        flag3 = flag;
-                        tmp9 = tmp4;
-                        tmp10 = tmp5;
-                        tmp11 = tmp6;
-                        tmp12 = tmp7;
-                        tmp13 = node;
-                        flag2 = true;
-                        if (store.getMentionCount(node.id) > 0) {
-                          break;
-                        }
+                }
+                continue;
+              } else {
+                if (tmp41(7678).FastListItemTypes.ITEM === type) {
+                  let tmp10 = nextResult;
+                  let node1 = guildsTree.getNode(tmp4.recyclerKey);
+                  let tmp12 = node1;
+                  if (null != node1) {
+                    let tmp13 = node1;
+                    let tmp14 = GuildsNodeType;
+                    if (tmp12.type === GuildsNodeType.GUILD) {
+                      let tmp15 = store;
+                      let tmp16 = node1;
+                      if (store.getMentionCount(tmp12.id) > 0) {
+                        flag = true;
+                        let tmp17 = iter;
+                        iter.return();
+                        break;
                       }
                       break;
                     }
-                  } else {
-                    let type2 = value.type;
-                    flag3 = flag;
-                    tmp9 = tmp4;
-                    tmp10 = tmp5;
-                    tmp11 = tmp6;
-                    tmp12 = tmp7;
-                    tmp13 = tmp8;
                   }
+                  continue;
+                } else {
+                  let tmp9 = nextResult;
+                  let type2 = tmp4.type;
+                  continue;
                 }
+                continue;
               }
+              continue;
+            }
+            continue;
+          }
+        }
+        if (flag) {
+          let tmp39 = closure_17;
+          return closure_17;
+        } else {
+          let tmp31 = arg2;
+          let tmp32;
+          if (!arg1) {
+            let tmp33 = checkNodeAndIterate;
+            let obj = { node: null, direction: 1, selectedGuildId: null };
+            obj[0] = root;
+            obj[2] = arg2;
+            tmp32 = checkNodeAndIterate(obj);
+          }
+          if (null != tmp32) {
+            if (null == tmp32) {
+              let tmp34 = closure_17;
+              return closure_17;
             }
           }
-        } else {
-          let tmp14 = require;
-          let tmp15 = dependencyMap;
-          flag3 = flag;
-          tmp9 = tmp4;
-          tmp10 = tmp5;
-          tmp11 = tmp6;
-          tmp12 = tmp7;
-          tmp13 = tmp8;
-        }
-      }
-      break;
-    }
-  }
-  if (flag2) {
-    return closure_16;
-  } else {
-    let tmp23;
-    if (!arg1) {
-      obj = { node: root, direction: 1, selectedGuildId };
-      tmp23 = checkNodeAndIterate(obj);
-    }
-    if (null != tmp23) {
-      if (null == tmp23) {
-        return closure_16;
-      }
-    }
-    if (null == tmp23) {
-      return closure_17;
-    } else {
-      const sum = tmp23.section + constants.GUILDS;
-      if (sum >= obj.section) {
-        if (sum === obj.section) {
-          const item2 = tmp23.item;
-          let num2 = 0;
-          if (null != item2) {
-            num2 = item2;
+          if (null == tmp32) {
+            let tmp38 = closure_18;
+            return closure_18;
+          } else {
+            let tmp51 = constants;
+            let sum = tmp32.section + constants.GUILDS;
+            let tmp53 = section;
+            if (sum >= section) {
+              if (sum === section) {
+                let num = tmp32.item;
+                if (num == null) {
+                  num = 0;
+                }
+              }
+              let tmp35 = checkNodeAndIterate;
+              obj = { node: null, direction: -1, selectedGuildId: null };
+              obj[0] = root;
+              obj[2] = arg2;
+              let tmp36 = checkNodeAndIterate(obj);
+              if (null != tmp36) {
+                let obj1 = { beforeItem: "Array", afterItem: 0 };
+                let obj2 = { section: null, row: null, mention: true };
+                obj2[0] = tmp36.section + tmp50.GUILDS;
+                obj2[1] = tmp36.item;
+                obj1[1] = obj2;
+                let tmp37 = obj1;
+              } else {
+                tmp37 = closure_17;
+              }
+              return tmp37;
+            }
+            let obj3 = { beforeItem: null, afterItem: "r" };
+            let obj4 = { section: null, row: null, mention: true };
+            obj4[0] = sum;
+            obj4[1] = tmp32.item;
+            obj3[0] = obj4;
+            return obj3;
           }
         }
-        const obj1 = { node: root, direction: -1, selectedGuildId };
-        const tmp27 = checkNodeAndIterate(obj1);
-        if (null != tmp27) {
-          const obj2 = { beforeItem: undefined };
-          const obj3 = { section: tmp27.section + constants.GUILDS, row: tmp27.item, mention: true };
-          obj2.afterItem = obj3;
-          let tmp28 = obj2;
-        } else {
-          tmp28 = closure_16;
-        }
-        return tmp28;
+      } else {
+        let tmp5 = nextResult;
       }
-      const obj4 = {};
-      const obj5 = { section: sum, row: tmp23.item, mention: true };
-      obj4.beforeItem = obj5;
-      obj4.afterItem = undefined;
-      return obj4;
     }
+    continue;
   }
 }
-({ FastListRenderSections: closure_10, useGuildWrapperSize: closure_11 } = GUILD_ITEM_SIZE);
-({ YOU_BAR_HEIGHT: closure_12, YOU_BAR_MARGIN: closure_13 } = CONNECTION_BANNER_HEIGHT);
-let obj = { position: "absolute", top: 0, left: 0, bottom: 0, width: GUILD_ITEM_SIZE.GUILD_LIST_WIDTH };
-let closure_15 = _createForOfIteratorHelperLoose.createStyles({ wrapper: obj });
-let closure_16 = { beforeItem: undefined, afterItem: undefined };
-let closure_17 = { beforeItem: { section: 0, row: 0, mention: true }, afterItem: undefined };
-let closure_18 = { code: "function GuildsBarUnreadBarsTsx1(){const{scrollPosValue}=this.__closure;return scrollPosValue.get();}" };
-let closure_19 = { code: "function GuildsBarUnreadBarsTsx2(position,lastPosition){const{runOnJS,debouncedUpdate}=this.__closure;if(position!==lastPosition){runOnJS(debouncedUpdate)();}}" };
+let c4 = importAllResult;
+({ FastListRenderSections: c10, useGuildWrapperSize: unpackModuleId, GUILD_LIST_WIDTH } = GUILD_ITEM_SIZE);
+({ YOU_BAR_HEIGHT: closure_12, YOU_BAR_MARGIN: map1 } = CONNECTION_BANNER_HEIGHT);
+let closure_15 = createCacheKey.createStyles({ wrapper: { position: "absolute", top: 0, left: 0, bottom: 0, width: GUILD_LIST_WIDTH } });
+let closure_17 = { beforeItem: "dispatch", afterItem: "isArray" };
+let closure_18 = { beforeItem: { section: 0, row: 0, mention: true }, afterItem: "r" };
+let closure_20 = { code: "function GuildsBarUnreadBarsTsx1(){const{scrollPosValue}=this.__closure;return scrollPosValue.get();}" };
+let closure_21 = { code: "function GuildsBarUnreadBarsTsx2(position,lastPosition){const{runOnJS,debouncedUpdate}=this.__closure;if(position!==lastPosition){runOnJS(debouncedUpdate)();}}" };
 const memoResult = importAllResult.memo(function GuildsBarUnreadBars(fastList) {
   let afterItem;
   let beforeItem;
+  let tmp5;
+  let youBarTotalHeight;
   fastList = fastList.fastList;
-  top = top(1557)().top;
-  const result = callback2() / 2;
-  const dependencyMap = result;
-  const tmp2 = callback(memo.useState(() => {
-    const guildId = paddingEnd.getGuildId();
-    let tmp5 = null;
-    if (null != guildId) {
-      tmp5 = guildId;
+  let _require = fastList;
+  let top2;
+  let mobileQuestDockHeight;
+  youBarTotalHeight = undefined;
+  let memo;
+  let scrollPosValue;
+  let paddingStart;
+  let paddingEnd;
+  const top = top2(mobileQuestDockHeight[11])().top;
+  top2 = top;
+  const result = callback() / 2;
+  mobileQuestDockHeight = result;
+  let obj = memo;
+  [tmp5, youBarTotalHeight] = youBarTotalHeight(memo.useState(() => {
+    let guildId = paddingEnd.getGuildId();
+    if (guildId == null) {
+      guildId = null;
     }
-    return outer1_23(fastList, paddingStart.getPrivateChannelMentionCount() > 0, tmp5, top, closure_2);
+    return outer1_19(c0, paddingStart.getPrivateChannelMentionCount() > 0, guildId, top2, mobileQuestDockHeight);
   }), 2);
-  callback = tmp2[1];
   let items = [fastList, top, result];
-  ({ beforeItem, afterItem } = tmp2[0]);
-  memo = memo.useMemo(() => top(result[14])(() => {
-    const guildId = paddingEnd.getGuildId();
-    let tmp5 = null;
-    if (null != guildId) {
-      tmp5 = guildId;
+  ({ beforeItem, afterItem } = tmp5);
+  memo = memo.useMemo(() => top2(mobileQuestDockHeight[14])(() => {
+    let guildId = outer1_7.getGuildId();
+    if (guildId == null) {
+      guildId = null;
     }
-    let closure_0 = outer2_23(outer1_0, paddingStart.getPrivateChannelMentionCount() > 0, tmp5, outer1_1, outer1_2);
-    outer1_3((afterItem) => {
-      let tmp = afterItem;
-      if (afterItem !== closure_0) {
-        if (!top(result[15])(afterItem.afterItem, closure_0.afterItem)) {
-          tmp = closure_0;
-        } else {
-          tmp = afterItem;
+    closure_0 = outer1_19(closure_0, outer1_6.getPrivateChannelMentionCount() > 0, guildId, closure_1, closure_2);
+    callback((afterItem) => {
+      if (afterItem === closure_0) {
+        let tmp4 = afterItem;
+      } else {
+        tmp4 = tmp;
+        if (outer1_1(outer1_2[15])(afterItem.afterItem, tmp.afterItem)) {
+          tmp4 = tmp;
         }
+        const tmp2 = outer1_1;
+        const tmp3 = outer1_2;
       }
-      return tmp;
+      return tmp4;
     });
   }, 100), items);
   const items1 = [memo];
   const effect = memo.useEffect(() => {
     const items = [paddingStart, paddingEnd, outer1_8];
-    const batchedStoreListener = new fastList(result[16]).BatchedStoreListener(items, memo);
+    const batchedStoreListener = new _undefined(mobileQuestDockHeight[16]).BatchedStoreListener(items, memo);
     batchedStoreListener.attach("guild-mention-bars");
     return () => {
       batchedStoreListener.detach();
     };
   }, items1);
-  const scrollPosValue = fastList.scrollPosValue;
-  let obj = fastList(4026);
-  class O {
+  scrollPosValue = fastList.scrollPosValue;
+  const tmp = top2;
+  let tmp2 = mobileQuestDockHeight;
+  let tmp4 = youBarTotalHeight(memo.useState(() => {
+    let guildId = paddingEnd.getGuildId();
+    if (guildId == null) {
+      guildId = null;
+    }
+    return outer1_19(c0, paddingStart.getPrivateChannelMentionCount() > 0, guildId, top2, mobileQuestDockHeight);
+  }), 2);
+  class D {
     constructor() {
       return scrollPosValue.get();
     }
   }
-  O.__closure = { scrollPosValue };
-  O.__workletHash = 16367582542434;
-  O.__initData = closure_18;
-  class G {
+  D.__closure = { scrollPosValue };
+  D.__workletHash = 16367582542434;
+  D.__initData = closure_20;
+  class O {
     constructor(arg0, arg1) {
       if (fastList !== arg1) {
-        tmp = fastList;
+        tmp = D;
         tmp2 = c2;
-        num = 17;
-        obj = fastList(c2[17]);
-        tmp3 = closure_4;
-        tmp4 = obj.runOnJS(closure_4)();
+        obj = D(c2[17]);
+        tmp3 = c4;
+        tmp4 = obj.runOnJS(c4)();
       }
       return;
     }
   }
-  obj = { runOnJS: fastList(4026).runOnJS, debouncedUpdate: memo };
-  G.__closure = obj;
-  G.__workletHash = 13727289405147;
-  G.__initData = closure_19;
-  const animatedReaction = obj.useAnimatedReaction(O, G);
-  const tmp6 = (function useUnreadBarWrapperStyles() {
-    const tmp = outer1_15();
-    const fastList = tmp;
-    top = top(result[11])().top;
-    const mobileQuestDockHeight = fastList(result[12]).useMobileQuestDockHeight();
-    let obj = fastList(result[12]);
-    let num = 8;
-    if (mobileQuestDockHeight > 0) {
-      num = 0;
-    }
-    const youBarTotalHeight = fastList(result[13]).useYouBarTotalHeight(num);
-    let items = [tmp.wrapper, top, mobileQuestDockHeight, youBarTotalHeight];
-    return memo.useMemo(() => {
-      let obj = { style: items, paddingStart: top, paddingEnd: mobileQuestDockHeight + 4 + youBarTotalHeight };
-      items = [tmp.wrapper, ];
-      obj = { top, bottom: mobileQuestDockHeight + youBarTotalHeight };
-      items[1] = obj;
-      return obj;
-    }, items);
-  })();
-  const paddingStart = tmp6.paddingStart;
-  const paddingEnd = tmp6.paddingEnd;
-  const items2 = [fastList, paddingStart, paddingEnd];
-  obj = { style: tmp6.style, collapsable: false, pointerEvents: "box-none", testID: "guilds-bar-unread-bars" };
-  callback = memo.useCallback((arg0) => {
+  obj = { runOnJS: _require(mobileQuestDockHeight[17]).runOnJS, debouncedUpdate: memo };
+  O.__closure = obj;
+  O.__workletHash = 13727289405147;
+  O.__initData = closure_21;
+  const animatedReaction = _require(mobileQuestDockHeight[17]).useAnimatedReaction(D, O);
+  _require = undefined;
+  top2 = undefined;
+  mobileQuestDockHeight = undefined;
+  youBarTotalHeight = undefined;
+  const tmp9 = callback2();
+  _require = tmp9;
+  top2 = top2(mobileQuestDockHeight[11])().top;
+  const obj2 = _require(mobileQuestDockHeight[17]);
+  mobileQuestDockHeight = _require(mobileQuestDockHeight[12]).useMobileQuestDockHeight();
+  const obj4 = _require(mobileQuestDockHeight[12]);
+  let num = 8;
+  if (mobileQuestDockHeight > 0) {
+    num = 0;
+  }
+  youBarTotalHeight = _require(mobileQuestDockHeight[13]).useYouBarTotalHeight(num);
+  const items2 = [tmp9.wrapper, top2, mobileQuestDockHeight, youBarTotalHeight];
+  const memo1 = obj.useMemo(() => {
+    let obj = { style: items, paddingStart: top2, paddingEnd: mobileQuestDockHeight + 4 + youBarTotalHeight };
+    items = [_undefined.wrapper, ];
+    obj = { top: top2, bottom: mobileQuestDockHeight + youBarTotalHeight };
+    items[1] = obj;
+    return obj;
+  }, items2);
+  paddingStart = memo1.paddingStart;
+  paddingEnd = memo1.paddingEnd;
+  const items3 = [fastList, paddingStart, paddingEnd];
+  obj = { style: memo1.style, collapsable: false, pointerEvents: "box-none", testID: "guilds-bar-unread-bars", children: null };
+  callback = obj.useCallback((arg0) => {
     const obj = {};
     const merged = Object.assign(arg0);
-    obj["paddingStart"] = paddingStart;
-    obj["paddingEnd"] = paddingEnd;
-    obj["orientation"] = "visible";
-    fastList.scrollToLocation(obj);
-  }, items2);
-  obj.children = jsx(top(14987), { beforeItem, afterItem, scrollToLocation: callback, compact: true });
-  return <scrollPosValue style={tmp6.style} collapsable={false} pointerEvents="box-none" testID="guilds-bar-unread-bars" />;
+    obj.paddingStart = paddingStart;
+    obj.paddingEnd = paddingEnd;
+    obj.orientation = "visible";
+    _undefined.scrollToLocation(obj);
+  }, items3);
+  obj[4] = jsx(tmp(tmp2[18]), { beforeItem, afterItem, scrollToLocation: callback, compact: true });
+  return <scrollPosValue style={memo1.style} collapsable={false} pointerEvents="box-none" testID="guilds-bar-unread-bars">{null}</scrollPosValue>;
 });
 let result = require("get ActivityIndicator").fileFinishedImporting("modules/guilds_bar/native/GuildsBarUnreadBars.tsx");
 

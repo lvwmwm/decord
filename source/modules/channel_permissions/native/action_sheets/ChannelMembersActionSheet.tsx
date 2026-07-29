@@ -1,34 +1,34 @@
-// Module ID: 10895
-// Function ID: 84502
+// Module ID: 10919
+// Function ID: 10920
 // Name: ChannelMembersActionSheet
-// Dependencies: [31, 27, 1348, 1918, 1911, 1838, 3793, 653, 33, 4165, 689, 1557, 566, 1456, 4355, 8253, 1212, 5221, 5220, 4695, 4133, 7663, 10896, 8987, 7614, 10894, 10201, 1273, 5223, 8261, 4161, 2]
+// Dependencies: [19, 17, 1372, 1942, 1935, 1862, 3817, 676, 21, 4189, 712, 1581, 589, 1480, 4380, 8277, 1236, 5243, 5242, 4717, 4157, 7686, 10920, 9011, 7637, 10918, 10222, 1297, 5245, 8285, 4185, 2]
 // Exports: default
 
-// Module 10895 (ChannelMembersActionSheet)
-import "set";
-import { View } from "Button";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_5 from "_isNativeReflectConstruct";
-import closure_6 from "_createForOfIteratorHelperLoose";
-import closure_7 from "_createForOfIteratorHelperLoose";
-import closure_8 from "_isNativeReflectConstruct";
+// Module 10919 (ChannelMembersActionSheet)
+import "PressableBase";
+import { View } from "Background";
+import ensureGuildLoaded from "ensureGuildLoaded";
+import trackCommunicationDisabled from "trackCommunicationDisabled";
+import createGuildRoleRecordFromRust from "createGuildRoleRecordFromRust";
+import createGuildRecordFromRust from "createGuildRecordFromRust";
+import getUncachedChannelPermissions from "getUncachedChannelPermissions";
 import ME from "ME";
-import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import jsxProd from "init";
+import createCacheKey from "createCacheKey";
 
-let closure_10;
-let closure_11;
+let c10;
+let c9;
 let closure_12;
-let closure_9;
+let unpackModuleId;
 const require = arg1;
-({ ChannelSettingsSections: closure_9, Permissions: closure_10 } = ME);
-({ jsx: closure_11, jsxs: closure_12 } = jsxProd);
-_createForOfIteratorHelperLoose = { container: { paddingHorizontal: 16, flex: 1 } };
-_createForOfIteratorHelperLoose = { paddingVertical: require("_createForOfIteratorHelperLoose").space.PX_12 };
-_createForOfIteratorHelperLoose.sectionRowWrapper = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.warning = { margin: 16, marginBottom: 0 };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/channel_permissions/native/action_sheets/ChannelMembersActionSheet.tsx");
+({ ChannelSettingsSections: c9, Permissions: c10 } = ME);
+({ jsx: unpackModuleId, jsxs: closure_12 } = jsxProd);
+createCacheKey = { container: { paddingHorizontal: 16, flex: 1 }, sectionRowWrapper: null, warning: null };
+createCacheKey = { paddingVertical: require("Themes").space.PX_12 };
+createCacheKey[1] = createCacheKey;
+createCacheKey[2] = { margin: 16, marginBottom: 0 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let result = require("ensureGuildLoaded").fileFinishedImporting("modules/channel_permissions/native/action_sheets/ChannelMembersActionSheet.tsx");
 
 export default function ChannelMembersActionSheet(arg0) {
   let guild;
@@ -36,132 +36,137 @@ export default function ChannelMembersActionSheet(arg0) {
   let require;
   let sortedGuildRoles;
   ({ channelId: require, guildId: importDefault } = arg0);
+  let dependencyMap;
+  let stateFromStores;
+  let ensureGuildLoaded;
   let c5;
-  const tmp = _createForOfIteratorHelperLoose();
-  const dependencyMap = tmp;
-  let obj = require(566) /* initialize */;
-  const items = [_isNativeReflectConstruct];
-  const stateFromStores = obj.useStateFromStores(items, () => channel.getChannel(closure_0));
-  let obj1 = require(566) /* initialize */;
-  const items1 = [closure_7, closure_6];
+  const tmp = createCacheKey();
+  dependencyMap = tmp;
+  let obj = require(589) /* initialize */;
+  const items = [ensureGuildLoaded];
+  stateFromStores = obj.useStateFromStores(items, () => channel.getChannel(closure_0));
+  let obj1 = require(589) /* initialize */;
+  const items1 = [createGuildRecordFromRust, createGuildRoleRecordFromRust];
   const items2 = [stateFromStores];
   const stateFromStoresObject = obj1.useStateFromStoresObject(items1, () => {
+    let obj = stateFromStores;
     let guildId;
-    if (null != stateFromStores) {
-      guildId = stateFromStores.getGuildId();
+    if (stateFromStores != null) {
+      guildId = obj.getGuildId();
     }
     const guild = outer1_7.getGuild(guildId);
-    const obj = { guild };
+    obj = { guild, sortedGuildRoles: null };
     let sortedRoles;
     if (null != guild) {
       sortedRoles = outer1_6.getSortedRoles(guild.id);
     }
-    obj.sortedGuildRoles = sortedRoles;
+    obj[1] = sortedRoles;
     return obj;
   }, items2);
   ({ guild, sortedGuildRoles } = stateFromStoresObject);
-  let obj2 = require(566) /* initialize */;
+  let obj2 = require(589) /* initialize */;
   const items3 = [c5];
   const items4 = [stateFromStores];
   const stateFromStoresArray = obj2.useStateFromStoresArray(items3, () => {
     let guildId;
-    if (null != stateFromStores) {
+    if (stateFromStores != null) {
       guildId = stateFromStores.getGuildId();
     }
-    return _undefined.getMemberIds(guildId);
+    return _undefined2.getMemberIds(guildId);
   }, items4);
-  let obj3 = require(1456) /* useNavigation */;
-  _isNativeReflectConstruct = obj3.useNavigation();
+  let obj3 = require(1480) /* useNavigation */;
+  ensureGuildLoaded = obj3.useNavigation();
   if (null != stateFromStores) {
     if (null != guild) {
       if (null != sortedGuildRoles) {
-        const canResult = closure_8.can(constants.MANAGE_ROLES, stateFromStores);
+        const canResult = getUncachedChannelPermissions.can(constants.MANAGE_ROLES, stateFromStores);
         c5 = canResult;
-        const obj12 = require(8253) /* isAdmin */;
-        const existingRolesRows = obj12.getExistingRolesRows(guild, sortedGuildRoles, stateFromStores, stateFromStores.accessPermissions);
-        const obj13 = require(8253) /* isAdmin */;
+        let tmp5Result = tmp5(8277);
+        const existingRolesRows = tmp5Result.getExistingRolesRows(guild, sortedGuildRoles, stateFromStores, stateFromStores.accessPermissions);
+        tmp5Result = tmp5(8277);
         const items5 = [];
-        obj = {};
-        const existingMembersRows = obj13.getExistingMembersRows(stateFromStoresArray, stateFromStores, guild, stateFromStores.accessPermissions);
-        const intl4 = require(1212) /* getSystemLocale */.intl;
-        obj.title = intl4.string(require(1212) /* getSystemLocale */.t["LPJmL/"]);
-        obj.data = existingRolesRows;
+        obj = { title: null, data: null };
+        const existingMembersRows = tmp5Result.getExistingMembersRows(stateFromStoresArray, stateFromStores, guild, stateFromStores.accessPermissions);
+        const intl4 = tmp5(1236).intl;
+        obj[0] = intl4.string(tmp5(1236).t["LPJmL/"]);
+        obj[1] = existingRolesRows;
         items5.push(obj);
-        obj = {};
-        const intl5 = require(1212) /* getSystemLocale */.intl;
-        obj.title = intl5.string(require(1212) /* getSystemLocale */.t["9Oq93m"]);
-        obj.data = existingMembersRows;
+        obj = { title: null, data: null };
+        const intl5 = tmp5(1236).intl;
+        obj[0] = intl5.string(tmp5(1236).t["9Oq93m"]);
+        obj[1] = existingMembersRows;
         items5.push(obj);
-        obj1 = { scrollable: true, header: null, startExpanded: true };
-        obj2 = {};
-        const intl6 = require(1212) /* getSystemLocale */.intl;
-        obj2.title = intl6.string(require(1212) /* getSystemLocale */.t.ES4CC6);
+        obj1 = { title: null, subtitle: null, trailing: null };
+        const intl6 = tmp5(1236).intl;
+        obj1[0] = intl6.string(tmp5(1236).t.ES4CC6);
         const _HermesInternal = HermesInternal;
-        obj2.subtitle = "#" + tmp6;
-        let tmp10 = canResult;
+        obj1[1] = "#" + tmp9;
+        let tmp29Result = canResult;
         if (canResult) {
-          obj3 = {
-            onPress() {
-                      outer1_1(tmp[20]).hideActionSheet();
-                      const obj = outer1_1(tmp[20]);
-                      outer1_1(tmp[21]).init(closure_0);
-                      const obj2 = outer1_1(tmp[21]);
-                      const result = outer1_0(tmp[22]).navigateToChannelDetailsScreen(_isNativeReflectConstruct, outer1_9.PERMISSIONS, closure_0, "channel-members-action-sheet");
-                    },
-            accessibilityRole: "button"
+          obj2 = { onPress: null, accessibilityRole: "button", accessibilityLabel: null, children: null };
+          obj2[0] = function onPress() {
+            outer1_1(_undefined[20]).hideActionSheet();
+            const obj = outer1_1(_undefined[20]);
+            outer1_1(_undefined[21]).init(closure_0);
+            const obj2 = outer1_1(_undefined[21]);
+            const result = outer1_0(_undefined[22]).navigateToChannelDetailsScreen(ensureGuildLoaded, outer1_9.PERMISSIONS, closure_0, "channel-members-action-sheet");
           };
-          let intl = require(1212) /* getSystemLocale */.intl;
-          obj3.accessibilityLabel = intl.string(require(1212) /* getSystemLocale */.t.XPDhcc);
-          obj3.children = callback(require(8987) /* SettingsIcon */.SettingsIcon, {});
-          tmp10 = callback(require(4695) /* PressableBase */.PressableOpacity, obj3);
+          let intl = tmp5(1236).intl;
+          obj2[2] = intl.string(tmp5(1236).t.XPDhcc);
+          obj2[3] = tmp29(tmp5(9011).SettingsIcon, {});
+          tmp29Result = tmp29(tmp5(4717).PressableOpacity, obj2);
         }
-        obj2.trailing = tmp10;
-        obj1.header = callback(require(5220) /* RedesignBottomSheetTitleHeaderBase */.BottomSheetTitleHeader, obj2);
-        const obj4 = { style: tmp.container };
+        obj3 = { scrollable: true, header: null, startExpanded: true, children: null };
+        obj1[2] = tmp29Result;
+        obj3[1] = closure_11(tmp5(5242).BottomSheetTitleHeader, obj1);
+        const obj4 = { style: null, children: null };
+        obj4[0] = tmp.container;
         if (canResult) {
-          const obj5 = {};
-          const intl3 = require(1212) /* getSystemLocale */.intl;
-          obj5.label = intl3.string(require(1212) /* getSystemLocale */.t.dMJ3Y6);
-          obj5.onPress = function onPress() {
-            return outer1_0(tmp[25]).openAddMembersActionSheet(stateFromStores);
+          const obj5 = { label: null, onPress: null, icon: null };
+          const intl3 = tmp5(1236).intl;
+          obj5[0] = intl3.string(tmp5(1236).t.dMJ3Y6);
+          obj5[1] = function onPress() {
+            return outer1_0(_undefined[25]).openAddMembersActionSheet(stateFromStores);
           };
-          obj5.icon = tmp13(require(10201) /* GroupPlusIcon */.GroupPlusIcon, {});
-          let tmp13Result = tmp13(require(7614) /* RowButtonWrapper */.RowButton, obj5);
+          obj5[2] = tmp29(tmp5(10222).GroupPlusIcon, {});
+          tmp29Result = tmp29(tmp5(7637).RowButton, obj5);
         } else {
-          const obj6 = { style: tmp.warning };
-          const obj7 = { messageType: require(1273) /* Button */.HelpMessageTypes.INFO };
-          const intl2 = require(1212) /* getSystemLocale */.intl;
-          obj7.children = intl2.string(require(1212) /* getSystemLocale */.t.VOuiSj);
-          obj6.children = tmp13(require(1273) /* Button */.HelpMessage, obj7);
-          tmp13Result = tmp13(stateFromStores, obj6);
+          const obj6 = { style: null, children: null };
+          obj6[0] = tmp.warning;
+          const obj7 = { messageType: null, children: null };
+          obj7[0] = tmp5(1297).HelpMessageTypes.INFO;
+          const intl2 = tmp5(1236).intl;
+          obj7[1] = intl2.string(tmp5(1236).t.VOuiSj);
+          obj6[1] = tmp29(tmp5(1297).HelpMessage, obj7);
+          tmp29Result = tmp29(tmp12, obj6);
         }
-        const items6 = [tmp13Result, ];
-        const obj8 = {};
-        const obj9 = { paddingBottom: tmp2.bottom + importDefault(689).space.PX_16 };
-        obj8.contentContainerStyle = obj9;
-        obj8.renderItem = function renderItem(index) {
+        const items6 = [tmp29Result, ];
+        const obj8 = { contentContainerStyle: null, renderItem: null, renderSectionHeader: null, sections: null, stickySectionHeadersEnabled: false };
+        const obj9 = { paddingBottom: null };
+        obj9[0] = tmp4.bottom + importDefault(712).space.PX_16;
+        obj8[0] = obj9;
+        obj8[1] = function renderItem(index) {
           let item;
           let section;
           index = index.index;
           ({ item, section } = index);
-          return outer1_11(outer1_1(tmp[29]), { start: 0 === index, end: index === section.data.length - 1, guildId: closure_1, item, channelId: closure_0, showType: true, showRemove: c5 });
+          return outer1_11(outer1_1(_undefined[29]), { start: 0 === index, end: index === section.data.length - 1, guildId: closure_1, item, channelId: closure_0, showType: true, showRemove: c5 });
         };
-        obj8.renderSectionHeader = function renderSectionHeader(section) {
+        obj8[2] = function renderSectionHeader(section) {
           let data;
           let title;
           ({ title, data } = section.section);
-          let obj = { style: tmp.sectionRowWrapper, maxFontSizeMultiplier: 2, accessibilityRole: "header", variant: "text-sm/semibold", color: "interactive-text-default" };
-          const intl = outer1_0(tmp[16]).intl;
+          let obj = { style: _undefined.sectionRowWrapper, maxFontSizeMultiplier: 2, accessibilityRole: "header", variant: "text-sm/semibold", color: "interactive-text-default", children: null };
+          const intl = outer1_0(_undefined[16]).intl;
           obj = { numberOfItems: data.length, sectionTitle: title };
-          obj.children = intl.format(outer1_0(tmp[16]).t.u8CWLl, obj);
-          return outer1_11(outer1_0(tmp[30]).Text, obj);
+          obj[5] = intl.format(outer1_0(_undefined[16]).t.u8CWLl, obj);
+          return outer1_11(outer1_0(_undefined[30]).Text, obj);
         };
-        obj8.sections = items5;
-        obj8.stickySectionHeadersEnabled = false;
-        items6[1] = callback(require(5223) /* BottomSheetModal */.BottomSheetSectionList, obj8);
-        obj4.children = items6;
-        obj1.children = closure_12(stateFromStores, obj4);
-        return callback(require(5221) /* Background */.BottomSheet, obj1);
+        obj8[3] = items5;
+        items6[1] = closure_11(tmp5(5245).BottomSheetSectionList, obj8);
+        obj4[1] = items6;
+        obj3[3] = closure_12(stateFromStores, obj4);
+        return closure_11(tmp5(5243).BottomSheet, obj3);
       }
     }
   }

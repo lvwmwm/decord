@@ -1,123 +1,141 @@
-// Module ID: 7951
-// Function ID: 63117
-// Dependencies: [31, 27, 4157, 1918, 4252, 653, 33, 4165, 689, 1273, 566, 7952, 7918, 7953, 7954, 4695, 2]
+// Module ID: 7976
+// Function ID: 7977
+// Dependencies: [19, 17, 4181, 1942, 4276, 676, 21, 4189, 712, 1297, 589, 7977, 7943, 7978, 7979, 4717, 2]
 
-// Module 7951
+// Module 7976
 import { View } from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_5 from "_isNativeReflectConstruct";
-import closure_6 from "_isNativeReflectConstruct";
+import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
+import trackCommunicationDisabled from "trackCommunicationDisabled";
+import sortActivity from "sortActivity";
 import { ActivityTypes } from "ME";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import importAllResult from "result";
+import createCacheKey from "createCacheKey";
+import importAllResult from "noop";
 
 const require = arg1;
-let obj = {};
-obj = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SURFACE_HIGH };
-obj.avatarStatusStyle = obj;
-let closure_9 = _createForOfIteratorHelperLoose.createStyles(obj);
-const forwardRefResult = require("result").forwardRef((user, ref) => {
+let obj = { avatarStatusStyle: null };
+obj = { backgroundColor: require("Themes").colors.BACKGROUND_SURFACE_HIGH };
+obj[0] = obj;
+let closure_9 = createCacheKey.createStyles(obj);
+const forwardRefResult = require("noop").forwardRef((animate) => {
   let activities;
-  let dependencyMap;
   let disableStatus;
+  let guildId;
   let isMobileOnline;
   let isVROnline;
   let onPress;
   let pendingAvatarDecoration;
+  let pendingAvatarSrc;
   let size;
   let status;
   let statusStyle;
   let style;
-  user = user.user;
-  const guildId = user.guildId;
-  ({ pendingAvatarSrc: dependencyMap, style, onPress, size } = user);
-  ({ disableStatus, pendingAvatarDecoration, statusStyle } = user);
+  let user;
+  ({ user, guildId } = animate);
+  ({ pendingAvatarSrc, style, onPress, size } = animate);
+  ({ disableStatus, pendingAvatarDecoration, statusStyle } = animate);
   if (size === undefined) {
-    size = user(1273).AvatarSizes.XXLARGE;
+    size = guildId(1297).AvatarSizes.XXLARGE;
   }
-  let flag = user.animate;
+  let flag = animate.animate;
   if (flag === undefined) {
     flag = true;
   }
-  let obj = { user: 0, guildId: 0, disableStatus: 0, pendingAvatarSrc: 0, pendingAvatarDecoration: 0, style: 0, statusStyle: 0, onPress: 0, size: 0, animate: 0 };
-  Object.setPrototypeOf(null);
-  let merged = Object.assign(user, obj);
+  const merged = Object.assign(animate, Object.create(null));
   let id;
-  let stateFromStores;
-  obj = undefined;
-  function renderAvatar() {
-    if (undefined !== closure_2) {
-      let obj = {};
-      const obj3 = user(outer1_2[14]);
-      obj.source = obj3.getAvatarSource(user, guildId, closure_2, stateFromStores);
-      const merged = Object.assign(obj);
-    } else {
-      obj = { user, guildId };
-      const merged1 = Object.assign(obj);
-    }
-    return outer1_8(user(outer1_2[9]).Avatar, obj);
-  }
   id = user.id;
-  let obj1 = user(566);
-  const items = [stateFromStores];
-  stateFromStores = obj1.useStateFromStores(items, () => stateFromStores.useReducedMotion);
-  let obj2 = user(566);
-  const items1 = [closure_6];
+  let obj = guildId;
+  let avatarSource = dependencyMap;
+  let obj1 = guildId(589);
+  const items = [maybeApplyNoTextColorForLightCustomTheme];
+  const stateFromStores = obj1.useStateFromStores(items, () => useReducedMotion.useReducedMotion);
+  let obj2 = guildId(589);
+  const items1 = [sortActivity];
   const items2 = [id];
-  const stateFromStoresObject = obj2.useStateFromStoresObject(items1, () => ({ isMobileOnline: outer1_6.isMobileOnline(id), isVROnline: outer1_6.isVROnline(id), status: outer1_6.getStatus(id), activities: outer1_6.getActivities(id), customStatusActivity: outer1_6.findActivity(id, (type) => type.type === outer2_7.CUSTOM_STATUS) }), items2);
+  const stateFromStoresObject = obj2.useStateFromStoresObject(items1, () => ({ isMobileOnline: outer1_6.isMobileOnline(id), isVROnline: outer1_6.isVROnline(id), status: outer1_6.getStatus(id), activities: outer1_6.getActivities(id), customStatusActivity: outer1_6.findActivity(id, (type) => type.type === constants.CUSTOM_STATUS) }), items2);
   ({ isMobileOnline, isVROnline, status, activities } = stateFromStoresObject);
-  const tmp5 = callback();
-  const items3 = [obj];
-  const stateFromStores1 = user(566).useStateFromStores(items3, () => {
+  let obj3 = guildId(589);
+  const items3 = [trackCommunicationDisabled];
+  const stateFromStores1 = obj3.useStateFromStores(items3, () => {
     let member = null;
     if (null != guildId) {
-      member = obj.getMember(guildId, id);
+      member = outer1_5.getMember(tmp, id);
     }
     return member;
   });
-  const obj4 = user(566);
-  const tmp9 = guildId(7952);
-  obj = { pendingValue: pendingAvatarDecoration };
+  const tmp4 = callback();
+  const tmp9 = id;
+  let obj4 = guildId(7943);
+  obj = { pendingValue: pendingAvatarDecoration, userValue: null, guildValue: null, guildId: null };
   let avatarDecoration;
-  if (null != user) {
+  if (user != null) {
     avatarDecoration = user.avatarDecoration;
   }
-  obj.userValue = avatarDecoration;
+  obj[1] = avatarDecoration;
   let avatarDecoration1;
-  if (null != stateFromStores1) {
+  if (stateFromStores1 != null) {
     avatarDecoration1 = stateFromStores1.avatarDecoration;
   }
-  obj.guildValue = avatarDecoration1;
-  obj.guildId = guildId;
-  obj = { isMobileOnline, isVROnline, size };
-  let tmp13 = null;
-  const obj5 = user(7918);
+  obj[2] = avatarDecoration1;
+  obj[3] = guildId;
+  obj = { isMobileOnline, isVROnline, size, status: null, statusStyle: null, streaming: null, animate: null, avatarDecoration: null };
+  let tmp14 = null;
+  const tmp10 = id(7977);
   if (!disableStatus) {
-    tmp13 = status;
+    tmp14 = status;
   }
-  obj.status = tmp13;
-  const items4 = [tmp5.avatarStatusStyle, statusStyle];
-  obj.statusStyle = items4;
-  obj.streaming = guildId(7953)(activities);
+  obj[3] = tmp14;
+  const items4 = [tmp4.avatarStatusStyle, statusStyle];
+  obj[4] = items4;
+  obj[5] = tmp9(7978)(activities);
   if (flag) {
     flag = !stateFromStores;
   }
-  obj.animate = flag;
-  obj.avatarDecoration = tmp9(user(7918).getProfilePreviewValue(obj));
+  obj[6] = flag;
+  obj[7] = id(7977)(obj4.getProfilePreviewValue(obj));
   if (null != onPress) {
-    obj1 = { ref, onPress, onLongPress: onPress, style, activeOpacity: 0.8, accessibilityRole: "imagebutton" };
-    let merged1 = Object.assign(merged);
-    obj1["children"] = renderAvatar();
-    let tmp19 = jsx(user(4695).PressableOpacity, { ref, onPress, onLongPress: onPress, style, activeOpacity: 0.8, accessibilityRole: "imagebutton" });
+    obj1 = { ref: null, onPress: null, onLongPress: null, style: null, activeOpacity: 0.8, accessibilityRole: "imagebutton" };
+    obj1[0] = arg1;
+    obj1[1] = onPress;
+    obj1[2] = onPress;
+    obj1[3] = style;
+    const merged1 = Object.assign(merged);
+    if (undefined !== pendingAvatarSrc) {
+      obj2 = { source: null };
+      obj = obj(7979);
+      avatarSource = obj.getAvatarSource(user, guildId, pendingAvatarSrc, stateFromStores);
+      obj2[0] = avatarSource;
+      obj = Object.assign(obj);
+      obj3 = obj2;
+    } else {
+      obj3 = { user: null, guildId: null };
+      obj3[0] = user;
+      obj3[1] = guildId;
+      const merged2 = Object.assign(obj);
+    }
+    obj1.children = jsx(obj(1297).Avatar, obj3);
+    jsx(obj(4717).PressableOpacity, { ref: null, onPress: null, onLongPress: null, style: null, activeOpacity: 0.8, accessibilityRole: "imagebutton" });
   } else {
-    obj2 = { ref, style, accessibilityRole: "image", accessible: true };
-    const merged2 = Object.assign(merged);
-    obj2["children"] = renderAvatar();
-    tmp19 = <id ref={arg1} style={style} accessibilityRole="image" accessible />;
+    obj4 = { ref: null, style: null, accessibilityRole: "image", accessible: true };
+    obj4[0] = arg1;
+    obj4[1] = style;
+    const merged3 = Object.assign(merged);
+    if (undefined !== pendingAvatarSrc) {
+      const obj5 = { source: null };
+      const objResult = obj(7979);
+      obj5[0] = objResult.getAvatarSource(user, guildId, pendingAvatarSrc, stateFromStores);
+      const merged4 = Object.assign(obj);
+      let obj6 = obj5;
+    } else {
+      obj6 = { user: null, guildId: null };
+      obj6[0] = user;
+      obj6[1] = guildId;
+      const merged5 = Object.assign(obj);
+    }
+    obj4.children = jsx(obj(1297).Avatar, obj6);
+    return <View ref={null} style={null} accessibilityRole="image" accessible />;
   }
-  return tmp19;
 });
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/profile_customization/native/HeaderAvatar.tsx");
+const result = require("maybeApplyNoTextColorForLightCustomTheme").fileFinishedImporting("modules/profile_customization/native/HeaderAvatar.tsx");
 
 export default forwardRefResult;

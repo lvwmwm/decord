@@ -1,48 +1,48 @@
-// Module ID: 4087
-// Function ID: 33921
+// Module ID: 4111
+// Function ID: 4112
 // Name: trackExposureToExperiment
-// Dependencies: [4079, 4080, 686, 2]
+// Dependencies: [4103, 4104, 709, 2]
 // Exports: overrideBucket, registerGuildExperiment, registerUserExperiment, trackExposureToExperiment
 
-// Module 4087 (trackExposureToExperiment)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import { registerExperiment } from "_isNativeReflectConstruct";
+// Module 4111 (trackExposureToExperiment)
+import getHash from "getHash";
+import { registerExperiment } from "getHash";
 import ExperimentBuckets from "ExperimentBuckets";
 
 let ExposureTypes;
-let closure_4;
-({ ExperimentTypes: closure_4, ExposureTypes } = ExperimentBuckets);
+let c4;
+({ ExperimentTypes: c4, ExposureTypes } = ExperimentBuckets);
 let obj = { LEGACY: "legacy", APEX: "apex" };
 const result = require("dispatcher").fileFinishedImporting("modules/experiments/ExperimentManager.tsx");
 
 export const trackExposureToExperiment = function trackExposureToExperiment(id, descriptor, location) {
-  const obj = { experimentId: id, descriptor };
+  const obj = { experimentId: id, descriptor, location: null, location_stack: null, fingerprint: null, excluded: null, exposureType: null };
   let _location;
-  if (null != location) {
+  if (location != null) {
     _location = location.location;
   }
-  obj.location = _location;
+  obj[2] = _location;
   let analyticsLocations;
-  if (null != location) {
+  if (location != null) {
     analyticsLocations = location.analyticsLocations;
   }
-  obj.location_stack = analyticsLocations;
+  obj[3] = analyticsLocations;
   let fingerprint;
-  if (null != location) {
+  if (location != null) {
     fingerprint = location.fingerprint;
   }
-  obj.fingerprint = fingerprint;
+  obj[4] = fingerprint;
   let excluded;
-  if (null != location) {
+  if (location != null) {
     excluded = location.excluded;
   }
-  obj.excluded = excluded;
+  obj[5] = excluded;
   let exposureType;
-  if (null != location) {
+  if (location != null) {
     exposureType = location.exposureType;
   }
-  obj.exposureType = exposureType;
-  _isNativeReflectConstruct.trackExposure(obj);
+  obj[6] = exposureType;
+  getHash.trackExposure(obj);
 };
 export const registerUserExperiment = function registerUserExperiment(id) {
   id = id.id;
@@ -55,24 +55,28 @@ export const registerGuildExperiment = function registerGuildExperiment(id) {
   return { id };
 };
 export const ExperimentSystem = obj;
-export const overrideBucket = function overrideBucket(system, map, id) {
+export const overrideBucket = function overrideBucket(system, closure_0, id) {
   if (obj.LEGACY === system) {
-    obj = { type: "EXPERIMENT_OVERRIDE_BUCKET", experimentId: map };
-    let tmp9 = null;
+    obj = { type: "EXPERIMENT_OVERRIDE_BUCKET", experimentId: null, experimentBucket: null };
+    obj[1] = closure_0;
+    let tmp10 = null;
     if (null != id) {
-      tmp9 = id;
+      tmp10 = id;
     }
-    obj.experimentBucket = tmp9;
-    importDefault(686).dispatch(obj);
-    const obj5 = importDefault(686);
-  } else if (obj.APEX === system) {
+    obj[2] = tmp10;
+    importDefault(709).dispatch(obj);
+    const obj5 = importDefault(709);
+  } else if (tmp.APEX === system) {
     if (null == id) {
-      obj = { type: "APEX_EXPERIMENT_OVERRIDE_DELETE", experimentName: map };
-      importDefault(686).dispatch(obj);
-      const obj3 = importDefault(686);
+      obj = { type: "APEX_EXPERIMENT_OVERRIDE_DELETE", experimentName: null };
+      obj[1] = closure_0;
+      importDefault(709).dispatch(obj);
+      const obj3 = importDefault(709);
     } else {
-      obj = importDefault(686);
-      const obj1 = { type: "APEX_EXPERIMENT_OVERRIDE_CREATE", experimentName: map, variantId: id };
+      obj = importDefault(709);
+      const obj1 = { type: "APEX_EXPERIMENT_OVERRIDE_CREATE", experimentName: null, variantId: null };
+      obj1[1] = closure_0;
+      obj1[2] = id;
       obj.dispatch(obj1);
     }
   }

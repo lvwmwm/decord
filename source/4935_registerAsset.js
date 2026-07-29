@@ -1,11 +1,10 @@
 // Module ID: 4935
-// Function ID: 42378
+// Function ID: 4936
 // Name: registerAsset
-// Dependencies: [1217]
+// Dependencies: [1241]
 
 // Module 4935 (registerAsset)
 import registerAsset from "registerAsset";
 
-const obj = { __packager_asset: true, httpServerLocation: "/assets/images/platforms", width: 256, height: 256, scales: [1], hash: "8fce658b14b12e381e1ecc554a57f171", name: "img_roblox_white", type: "png" };
 
-export default registerAsset.registerAsset(obj);
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/platforms", width: 228, height: 60, scales: [1], hash: "5297c54e8d9a10bee3a01f60b91ba3ae", name: "img_account_sync_samsung_white", type: "png" });

@@ -1,18 +1,18 @@
-// Module ID: 9275
-// Function ID: 72481
+// Module ID: 9299
+// Function ID: 9300
 // Name: ContextMenu
-// Dependencies: [31, 33, 4029, 477, 4026, 1450, 9276, 4584, 9277, 4574, 9278, 4011, 1212, 9279, 5251, 4134, 4563, 2]
+// Dependencies: [19, 21, 4053, 500, 4050, 1474, 9300, 4606, 9301, 4596, 9302, 4035, 1236, 9303, 5273, 4158, 4586, 2]
 // Exports: ContextMenu
 
-// Module 9275 (ContextMenu)
-import result from "result";
+// Module 9299 (ContextMenu)
+import noop from "noop";
 import jsxProd from "jsxProd";
 import isFabric from "isFabric";
 
-let closure_4;
-let closure_5;
+let c4;
+let c5;
 const require = arg1;
-({ Fragment: closure_4, jsx: closure_5 } = jsxProd);
+({ Fragment: c4, jsx: c5 } = jsxProd);
 isFabric = isFabric.isFabric();
 if (isFabric) {
   isFabric = require("set").isIOS();
@@ -50,16 +50,15 @@ export const ContextMenu = function ContextMenu(triggerOnLongPress) {
     str = "auto";
   }
   const title = triggerOnLongPress.title;
-  const onOpen = triggerOnLongPress.onOpen;
-  const onClose = triggerOnLongPress.onClose;
+  let onOpen = triggerOnLongPress.onOpen;
+  let onClose = triggerOnLongPress.onClose;
   const keyboardShouldPersistTaps = triggerOnLongPress.keyboardShouldPersistTaps;
   let returnRef = triggerOnLongPress.returnRef;
   let flag4 = triggerOnLongPress.enabled;
   if (flag4 === undefined) {
     flag4 = true;
   }
-  const buttonRef = triggerOnLongPress.buttonRef;
-  let animatedRef = buttonRef;
+  let buttonRef = triggerOnLongPress.buttonRef;
   let sharedValue;
   let items2;
   let dividerIndexes;
@@ -76,361 +75,435 @@ export const ContextMenu = function ContextMenu(triggerOnLongPress) {
   let callback2;
   let callback3;
   let obj = items(flag2[4]);
-  animatedRef = obj.useAnimatedRef();
-  if (null != buttonRef) {
-    animatedRef = buttonRef;
+  if (buttonRef == null) {
+    buttonRef = obj.useAnimatedRef();
   }
-  let obj1 = items(flag2[4]);
-  sharedValue = obj1.useSharedValue(-1);
-  items = [animatedRef, sharedValue];
-  const effect = str.useEffect(() => animatedRef.observe((arg0) => {
+  let tmpResult = tmp(tmp2[4]);
+  sharedValue = tmpResult.useSharedValue(-1);
+  let obj2 = str;
+  items = [buttonRef, sharedValue];
+  const effect = str.useEffect(() => buttonRef.observe((arg0) => {
     if (null != arg0) {
-      const result = outer1_11.set(arg0);
+      const result = closure_11.set(arg0);
     }
   }), items);
   const items1 = [items];
   const memo = str.useMemo(() => {
     const isArray = Array.isArray(items[0]);
-    let obj = items;
     if (isArray) {
-      let flatResult = obj.flat();
-    } else {
-      flatResult = obj;
+      items = arr.flat();
     }
-    items = flatResult;
-    items = [];
+    const dividerIndexes = [];
     if (isArray) {
-      const item = items.forEach((arg0, arg1) => {
+      const item = arr.forEach((arg0, arg1) => {
         if (arg1 > 0) {
-          items.push(closure_0.indexOf(arg0[0]));
+          dividerIndexes.push(items.indexOf(arg0[0]));
         }
       });
     }
-    obj = { items: flatResult, dividerIndexes: items };
-    return obj;
+    return { items, dividerIndexes };
   }, items1);
   items2 = memo.items;
   dividerIndexes = memo.dividerIndexes;
   length = items2.length;
-  obj = {};
-  let obj3 = items(flag2[3]);
-  obj.ignoreKeyboard = obj3.isAndroid();
+  obj = { ignoreKeyboard: null };
+  tmpResult = tmp(tmp2[3]);
+  obj[0] = tmpResult.isAndroid();
   const size = flag(flag2[5])(obj);
   width = size.width;
   height = size.height;
-  const tmp5 = flag(flag2[5]);
+  let tmp6 = flag(flag2[5]);
   contextMenuState = items(flag2[6]).useContextMenuState();
   activeIndex = contextMenuState.activeIndex;
-  let obj5 = items(flag2[6]);
+  const tmpResult1 = items(flag2[6]);
   const fontScale = items(flag2[7]).useFontScale();
   if (undefined === returnRef) {
-    returnRef = animatedRef;
+    returnRef = buttonRef;
   }
-  const obj6 = items(flag2[7]);
+  const tmpResult2 = items(flag2[7]);
   activeContextMenu = items(flag2[6]).useActiveContextMenu();
-  const obj7 = items(flag2[6]);
-  let result = (items(flag2[8]).CONTEXT_MENU_ITEM_BASE_HEIGHT - 2 * items(flag2[8]).CONTEXT_MENU_ITEM_PADDING) * fontScale;
-  const result1 = 2 * items(flag2[8]).CONTEXT_MENU_ITEM_PADDING;
-  sharedValue1 = items(flag2[4]).useSharedValue(Math.max(result + result1, items(flag2[8]).CONTEXT_MENU_ITEM_BASE_HEIGHT));
-  closure_21 = str.useRef(items2);
+  const tmpResult3 = items(flag2[6]);
+  let result = (tmp(tmp2[8]).CONTEXT_MENU_ITEM_BASE_HEIGHT - 2 * tmp(tmp2[8]).CONTEXT_MENU_ITEM_PADDING) * fontScale;
+  let result1 = 2 * tmp(tmp2[8]).CONTEXT_MENU_ITEM_PADDING;
+  sharedValue1 = items(flag2[4]).useSharedValue(Math.max(result + result1, tmp(tmp2[8]).CONTEXT_MENU_ITEM_BASE_HEIGHT));
+  closure_21 = obj2.useRef(items2);
   const items3 = [items2];
-  const layoutEffect = str.useLayoutEffect(() => {
+  const layoutEffect = obj2.useLayoutEffect(() => {
     closure_21.current = items2;
   }, items3);
   const items4 = [activeContextMenu, contextMenuState];
-  const layoutEffect1 = str.useLayoutEffect(() => {
+  const layoutEffect1 = obj2.useLayoutEffect(() => {
     if (null == activeContextMenu) {
       const result = items(flag2[6]).resetContextMenuState(contextMenuState);
       const obj = items(flag2[6]);
     }
   }, items4);
   const items5 = [activeIndex, onClose];
-  callback = str.useCallback((arg0) => {
-    if (null != onClose) {
-      onClose(arg0);
+  callback = obj2.useCallback((arg0) => {
+    if (onClose != null) {
+      tmp(arg0);
     }
     items(flag2[6]).hideContextMenu();
     const value = activeIndex.get();
     if (-1 !== value) {
-      if (null != ref.current[value]) {
+      if (ref.current[value] != null) {
         obj2.action();
       }
     }
   }, items5);
   const items6 = [returnRef];
-  callback1 = str.useCallback(() => {
+  callback1 = obj2.useCallback(() => {
     let obj = items(flag2[9]);
     obj = { ref: returnRef };
     const result = obj.setAccessibilityFocus(obj);
   }, items6);
   const items7 = [onOpen, contextMenuState, items2, title, keyboardShouldPersistTaps, callback, callback1, dividerIndexes];
-  callback2 = str.useCallback((arg0, arg1, positionX, positionY, height, width) => {
-    if (null != onOpen) {
-      onOpen();
+  callback2 = obj2.useCallback((arg0, arg1, arg2, arg3, arg4, arg5) => {
+    if (onOpen != null) {
+      tmp();
     }
-    const obj = { key: items(flag2[10]).uid(), x: arg0, y: arg1, positionX, positionY, height, width, state: contextMenuState, items: items2, title, keyboardShouldPersistTaps, requestClose: callback, onClose: callback1, dividerIndexes };
+    const obj = { key: null, x: null, y: null, positionX: null, positionY: null, height: null, width: null, state: null, items: null, title: null, keyboardShouldPersistTaps: null, requestClose: null, onClose: null, dividerIndexes: null };
+    obj[0] = items(flag2[10]).uid();
+    obj[1] = arg0;
+    obj[2] = arg1;
+    obj[3] = arg2;
+    obj[4] = arg3;
+    obj[5] = arg4;
+    obj[6] = arg5;
+    obj[7] = contextMenuState;
+    obj[8] = items2;
+    obj[9] = title;
+    obj[10] = keyboardShouldPersistTaps;
+    obj[11] = callback;
+    obj[12] = callback1;
+    obj[13] = dividerIndexes;
     const obj2 = items(flag2[10]);
     items(flag2[6]).showContextMenu(obj);
     const obj3 = items(flag2[6]);
     if (obj4.isAndroid()) {
-      const AccessibilityAnnouncer = items(flag2[11]).AccessibilityAnnouncer;
-      const intl = items(flag2[12]).intl;
-      AccessibilityAnnouncer.announce(intl.string(items(flag2[12]).t.ZqK0uI));
+      const AccessibilityAnnouncer = tmp3(tmp4[11]).AccessibilityAnnouncer;
+      const intl = tmp3(tmp4[12]).intl;
+      AccessibilityAnnouncer.announce(intl.string(tmp3(tmp4[12]).t.ZqK0uI));
     }
   }, items7);
   class V {
     constructor() {
       if (onClose) {
-        tmp8 = c11;
+        tmp11 = c11;
         value = c11.get();
-        num2 = -1;
+        num = -1;
         if (-1 === value) {
           return;
         } else {
-          tmp62 = items;
-          tmp63 = c2;
-          num9 = 13;
-          obj5 = items(c2[13]);
-          point = obj5.measureInWindowForFWO(value);
-          tmp64 = null;
-          if (null == point) {
+          tmp96 = items;
+          tmp97 = c2;
+          obj7 = items(c2[13]);
+          result = obj7.measureInWindowForFWO(value);
+          tmp99 = null;
+          if (null == result) {
             return;
           } else {
-            x3 = point.x;
-            pageX = x3;
-            y3 = point.y;
-            pageY = y3;
-            ({ width, height: height2 } = point);
-            height = height2;
-            tmp6 = x3;
-            tmp7 = y3;
-            height = height2;
+            x = result.x;
+            pageX = x;
+            ({ y: pageY, width, height } = result);
+            tmp6 = x;
+            tmp7 = x;
+            tmp8 = height;
+            tmp9 = pageY;
+            tmp10 = x;
           }
         }
       } else {
         tmp = items;
         tmp2 = c2;
-        num = 4;
         obj = items(c2[4]);
-        tmp3 = useAnimatedRef;
-        measureResult = obj.measure(useAnimatedRef);
+        tmp3 = buttonRef;
+        measureResult = obj.measure(buttonRef);
         tmp5 = null;
         if (null == measureResult) {
           return;
         } else {
           pageX = measureResult.pageX;
-          pageY = measureResult.pageY;
-          ({ width, height } = measureResult);
+          ({ pageY, width, height } = measureResult);
+          tmp6 = pageX;
+          tmp7 = pageX;
+          tmp8 = height;
+          tmp9 = pageY;
+          tmp10 = pageX;
         }
       }
-      if (null != CONTEXT_MENU_OFFSET) {
-        tmp11 = length;
-        num3 = 1;
+      tmp13 = title;
+      if (null != title) {
+        tmp15 = length;
+        num2 = 1;
         sum = length + 1;
       } else {
         sum = length;
       }
-      num4 = 0;
-      if (null != CONTEXT_MENU_OFFSET) {
-        num4 = 1;
+      num3 = 0;
+      if (null != tmp13) {
+        num3 = 1;
       }
-      sum1 = num4 + dividerIndexes.length;
-      result = c20.get() * sum;
-      sum2 = result + items(c2[8]).CONTEXT_MENU_DIVIDER_HEIGHT * sum1;
-      sum3 = tmp7 + height;
+      sum1 = num3 + dividerIndexes.length;
+      result1 = useSharedValue.get() * sum;
+      sum2 = result1 + items(c2[8]).CONTEXT_MENU_DIVIDER_HEIGHT * sum1;
+      sum3 = tmp9 + tmp8;
       sum4 = sum3 + items(c2[8]).CONTEXT_MENU_OFFSET;
-      auto = sum4;
-      diff = height - tmp7;
+      CONTEXT_MENU_OFFSET = sum4;
+      diff = height - tmp9;
       sum5 = diff + items(c2[8]).CONTEXT_MENU_OFFSET;
       CONTEXT_MENU_OFFSET = sum5;
       diff1 = height - sum4;
       diff2 = diff1 - items(c2[8]).CONTEXT_MENU_EDGE_OFFSET;
-      onOpen = diff2;
-      diff3 = tmp7 - items(c2[8]).CONTEXT_MENU_EDGE_OFFSET;
-      CONTEXT_MENU_EDGE_OFFSET = diff3;
-      keyboardShouldPersistTaps = diff2 < sum2;
-      CONTEXT_MENU_EDGE_OFFSET = diff3 < sum2;
-      diff4 = width - tmp6 - width;
+      auto = diff2;
+      diff3 = tmp9 - items(c2[8]).CONTEXT_MENU_EDGE_OFFSET;
+      title = diff3;
+      tmp26 = diff2 < sum2;
+      onOpen = tmp26;
+      tmp27 = diff3 < sum2;
+      onClose = tmp27;
+      tmp28 = width;
+      diff4 = width - tmp10 - width;
       bound = Math.max(diff4, items(c2[8]).CONTEXT_MENU_EDGE_OFFSET);
-      max = bound;
-      tmp24 = (() => {
-        function autoPositionVertical(arg0) {
-          const CONTEXT_MENU_OFFSET = items(flag2[8]).CONTEXT_MENU_OFFSET;
-          const obj = {};
-          if (outer1_7 === outer1_8) {
-            let str2 = "above";
-            if (outer1_5 > outer1_6) {
-              str2 = "below";
-            }
-            let str = str2;
-          } else {
-            str = "below";
-            if (outer1_7) {
-              str = "above";
-            }
+      CONTEXT_MENU_EDGE_OFFSET = bound;
+      autoPositionVertical = function autoPositionVertical(arg0) {
+        const CONTEXT_MENU_OFFSET = items(flag2[8]).CONTEXT_MENU_OFFSET;
+        if (closure_5 === closure_6) {
+          let str2 = "above";
+          if (diff2 > diff3) {
+            str2 = "below";
           }
-          let num = 0;
-          if (null != arg0) {
-            num = arg0;
+          let str = str2;
+        } else {
+          str = "below";
+          if (tmp) {
+            str = "above";
           }
-          obj.y = ("above" === str ? outer1_4 : outer1_3) + num;
-          obj.positionY = str;
-          return obj;
         }
-        autoPositionVertical.__closure = { pageY, height, CONTEXT_MENU_OFFSET: items(flag2[8]).CONTEXT_MENU_OFFSET, wouldOverflowBelow: closure_7, wouldOverflowAbove: closure_8, availableSpaceBelow: diff2, availableSpaceAbove: diff3, positionAboveOffset: sum5, positionBelowOffset: sum4 };
-        autoPositionVertical.__workletHash = 15309589830995;
-        autoPositionVertical.__initData = returnRef;
-        return autoPositionVertical;
-      })();
-      tmp25 = (() => {
-        function autoPositionHorizontal() {
-          const diff = outer1_0 - items(flag2[8]).CONTEXT_MENU_EDGE_OFFSET;
-          const diff1 = outer2_15 - items(flag2[8]).CONTEXT_MENU_EDGE_OFFSET;
-          let tmp3 = outer1_0;
-          let str = "left";
-          if (diff > diff1 - (outer1_0 + items(flag2[8]).CONTEXT_MENU_MIN_WIDTH)) {
-            tmp3 = outer1_9;
-            str = "right";
-          }
-          const obj = { x: tmp3, positionX: str };
-          return obj;
+        let num = arg0;
+        if (arg0 == null) {
+          num = 0;
         }
-        autoPositionHorizontal.__closure = { pageX, CONTEXT_MENU_EDGE_OFFSET: items(flag2[8]).CONTEXT_MENU_EDGE_OFFSET, screenWidth: outer1_15, CONTEXT_MENU_MIN_WIDTH: items(flag2[8]).CONTEXT_MENU_MIN_WIDTH, minimumRightPosition: bound };
-        autoPositionHorizontal.__workletHash = 14761866330436;
-        autoPositionHorizontal.__initData = flag4;
-        return autoPositionHorizontal;
-      })();
+        return { y: ("above" === str ? sum5 : sum4) + num, positionY: str };
+      };
+      obj = { pageY, height, CONTEXT_MENU_OFFSET: items(c2[8]).CONTEXT_MENU_OFFSET, wouldOverflowBelow: tmp26, wouldOverflowAbove: tmp27, availableSpaceBelow: diff2, availableSpaceAbove: diff3, positionAboveOffset: sum5, positionBelowOffset: sum4 };
+      autoPositionVertical.__closure = obj;
+      autoPositionVertical.__workletHash = 15309589830995;
+      autoPositionVertical.__initData = returnRef;
+      autoPositionHorizontal = function autoPositionHorizontal() {
+        let x = pageX;
+        const diff = pageX - items(flag2[8]).CONTEXT_MENU_EDGE_OFFSET;
+        const diff1 = outer1_15 - items(flag2[8]).CONTEXT_MENU_EDGE_OFFSET;
+        let positionX = "left";
+        if (diff > diff1 - (pageX + items(flag2[8]).CONTEXT_MENU_MIN_WIDTH)) {
+          x = bound;
+          positionX = "right";
+        }
+        return { x, positionX };
+      };
+      obj1 = { pageX: tmp7, CONTEXT_MENU_EDGE_OFFSET: items(c2[8]).CONTEXT_MENU_EDGE_OFFSET, screenWidth: width, CONTEXT_MENU_MIN_WIDTH: items(c2[8]).CONTEXT_MENU_MIN_WIDTH, minimumRightPosition: bound };
+      autoPositionHorizontal.__closure = obj1;
+      autoPositionHorizontal.__workletHash = 14761866330436;
+      autoPositionHorizontal.__initData = c9;
+      tmp31 = auto;
       if ("auto" === auto) {
-        tmp24Result = tmp24();
-        ({ y: y2, positionY: positionY2 } = tmp24Result);
-        tmp25Result = tmp25();
-        x2 = tmp25Result.x;
-        tmp55 = items;
-        tmp56 = c2;
-        num8 = 4;
-        obj4 = items(c2[4]);
-        tmp57 = keyboardShouldPersistTaps;
-        tmp58 = x2;
-        tmp59 = sum2;
-        tmp60 = width;
-        tmp61 = obj4.runOnJS(keyboardShouldPersistTaps)(x2, y2, tmp25Result.positionX, positionY2, sum2, width);
+        tmp75 = items;
+        tmp76 = c2;
+        CONTEXT_MENU_OFFSET2 = items(c2[8]).CONTEXT_MENU_OFFSET;
+        if (tmp26 === tmp27) {
+          str7 = "above";
+          if (diff2 > diff3) {
+            str7 = "below";
+          }
+          str6 = str7;
+        } else {
+          str6 = "below";
+          if (tmp26) {
+            str6 = "above";
+          }
+        }
+        str8 = "above";
+        if ("above" === str6) {
+          sum4 = sum5;
+        }
+        tmp77 = sum4;
+        tmp78 = items;
+        tmp79 = c2;
+        tmp81 = items;
+        tmp82 = c2;
+        diff5 = tmp6 - items(c2[8]).CONTEXT_MENU_EDGE_OFFSET;
+        tmp84 = items;
+        tmp85 = c2;
+        diff6 = tmp28 - items(c2[8]).CONTEXT_MENU_EDGE_OFFSET;
+        str9 = "left";
+        if (diff5 > diff6 - (tmp6 + items(c2[8]).CONTEXT_MENU_MIN_WIDTH)) {
+          str9 = "right";
+          tmp6 = bound;
+        }
+        tmp86 = items;
+        tmp87 = c2;
+        obj6 = items(c2[4]);
+        tmp88 = keyboardShouldPersistTaps;
+        tmp89 = tmp6;
+        tmp90 = tmp77;
+        tmp91 = str9;
+        tmp92 = str6;
+        tmp93 = sum2;
+        tmp94 = width;
+        tmp95 = obj6.runOnJS(keyboardShouldPersistTaps)(tmp6, tmp77, str9, str6, sum2, width);
       } else {
-        tmp65 = auto;
-        str2 = "above";
-        if ("above" !== auto) {
-          tmp66 = auto;
-          str3 = "below";
-          if ("below" !== auto) {
-            tmp67 = auto;
-            str4 = "left";
-            str = "left";
-            if ("left" === auto) {
-              str = "right";
+        str10 = "above";
+        tmp = "above" === tmp31;
+        if (!tmp) {
+          str = "below";
+          if ("below" !== tmp31) {
+            str11 = "left";
+            str2 = "left";
+            if ("left" === tmp31) {
+              str2 = "right";
             }
-            if ("left" === str) {
-              tmp31 = items;
-              tmp32 = c2;
-              sum6 = tmp6 + width;
+            if ("left" === str2) {
+              tmp37 = items;
+              tmp38 = c2;
+              sum6 = tmp10 + width;
               sum7 = sum6 + items(c2[8]).CONTEXT_MENU_OFFSET;
             } else {
-              tmp27 = items;
-              tmp28 = c2;
+              tmp33 = items;
+              tmp34 = c2;
               sum8 = bound + width;
               sum7 = sum8 + items(c2[8]).CONTEXT_MENU_OFFSET;
             }
-            tmp33 = items;
-            tmp34 = c2;
-            num5 = -1;
-            tmp24Result1 = tmp24(-1 * (items(c2[8]).CONTEXT_MENU_OFFSET + height));
-            num6 = 4;
-            ({ y, positionY } = tmp24Result1);
-            obj2 = items(c2[4]);
-            tmp36 = keyboardShouldPersistTaps;
-            tmp37 = sum7;
-            tmp38 = str;
-            tmp39 = sum2;
-            tmp40 = width;
-            tmp41 = obj2.runOnJS(keyboardShouldPersistTaps)(sum7, y, str, positionY, sum2, width);
+            tmp39 = items;
+            tmp40 = c2;
+            num4 = -1;
+            tmp42 = items;
+            tmp43 = c2;
+            result2 = -1 * (items(c2[8]).CONTEXT_MENU_OFFSET + tmp8);
+            CONTEXT_MENU_OFFSET = items(c2[8]).CONTEXT_MENU_OFFSET;
+            if (tmp26 === tmp27) {
+              str4 = "above";
+              if (diff2 > diff3) {
+                str4 = "below";
+              }
+              str3 = str4;
+            } else {
+              str3 = "below";
+              if (tmp26) {
+                str3 = "above";
+              }
+            }
+            tmp44 = sum4;
+            if ("above" === str3) {
+              tmp44 = sum5;
+            }
+            tmp46 = items;
+            tmp47 = c2;
+            sum9 = tmp44 + result2;
+            obj4 = items(c2[4]);
+            tmp48 = keyboardShouldPersistTaps;
+            tmp49 = sum7;
+            tmp50 = str2;
+            tmp51 = str3;
+            tmp52 = sum2;
+            tmp53 = width;
+            tmp54 = obj4.runOnJS(keyboardShouldPersistTaps)(sum7, sum9, str2, str3, sum2, width);
           }
         }
-        tmp42 = auto;
-        if ("above" === auto) {
-          sum4 = sum5;
+        tmp55 = sum4;
+        if (tmp) {
+          tmp55 = sum5;
         }
-        tmp25Result1 = tmp25();
-        x = tmp25Result1.x;
-        tmp44 = items;
-        tmp45 = c2;
-        num7 = 4;
-        obj3 = items(c2[4]);
-        tmp46 = keyboardShouldPersistTaps;
-        tmp47 = x;
-        tmp48 = sum4;
-        tmp49 = tmp42;
-        tmp50 = sum2;
-        tmp51 = width;
-        tmp52 = obj3.runOnJS(keyboardShouldPersistTaps)(x, sum4, tmp25Result1.positionX, tmp42, sum2, width);
+        tmp56 = items;
+        tmp57 = c2;
+        tmp59 = items;
+        tmp60 = c2;
+        diff7 = tmp6 - items(c2[8]).CONTEXT_MENU_EDGE_OFFSET;
+        tmp62 = items;
+        tmp63 = c2;
+        diff8 = tmp28 - items(c2[8]).CONTEXT_MENU_EDGE_OFFSET;
+        str5 = "left";
+        tmp64 = tmp6;
+        if (diff7 > diff8 - (tmp6 + items(c2[8]).CONTEXT_MENU_MIN_WIDTH)) {
+          str5 = "right";
+          tmp64 = bound;
+        }
+        tmp65 = items;
+        tmp66 = c2;
+        obj5 = items(c2[4]);
+        tmp67 = keyboardShouldPersistTaps;
+        tmp68 = tmp64;
+        tmp69 = tmp55;
+        tmp70 = str5;
+        tmp71 = tmp31;
+        tmp72 = sum2;
+        tmp73 = width;
+        tmp74 = obj5.runOnJS(keyboardShouldPersistTaps)(tmp64, tmp55, str5, tmp31, sum2, width);
       }
       return;
     }
   }
-  obj = { _isFabricIOS: onClose, buttonTagSV: sharedValue, measureInWindowForFWO: items(flag2[13]).measureInWindowForFWO, measure: items(flag2[4]).measure, buttonRef: animatedRef, title, itemCount: length, dividerIndexes, approximateItemHeight: sharedValue1, CONTEXT_MENU_DIVIDER_HEIGHT: items(flag2[8]).CONTEXT_MENU_DIVIDER_HEIGHT, CONTEXT_MENU_OFFSET: items(flag2[8]).CONTEXT_MENU_OFFSET, screenHeight: height, CONTEXT_MENU_EDGE_OFFSET: items(flag2[8]).CONTEXT_MENU_EDGE_OFFSET, screenWidth: width, CONTEXT_MENU_MIN_WIDTH: items(flag2[8]).CONTEXT_MENU_MIN_WIDTH, menuAlign: str, runOnJS: items(flag2[4]).runOnJS, showMenu: callback2 };
+  obj = { _isFabricIOS: onClose, buttonTagSV: sharedValue, measureInWindowForFWO: tmp(tmp2[13]).measureInWindowForFWO, measure: tmp(tmp2[4]).measure, buttonRef, title, itemCount: length, dividerIndexes, approximateItemHeight: sharedValue1, CONTEXT_MENU_DIVIDER_HEIGHT: tmp(tmp2[8]).CONTEXT_MENU_DIVIDER_HEIGHT, CONTEXT_MENU_OFFSET: tmp(tmp2[8]).CONTEXT_MENU_OFFSET, screenHeight: height, CONTEXT_MENU_EDGE_OFFSET: tmp(tmp2[8]).CONTEXT_MENU_EDGE_OFFSET, screenWidth: width, CONTEXT_MENU_MIN_WIDTH: tmp(tmp2[8]).CONTEXT_MENU_MIN_WIDTH, menuAlign: str, runOnJS: tmp(tmp2[4]).runOnJS, showMenu: callback2 };
   V.__closure = obj;
   V.__workletHash = 6408542373252;
   V.__initData = keyboardShouldPersistTaps;
-  const items8 = [animatedRef, sharedValue, sharedValue1, title, length, height, str, callback2, width, dividerIndexes];
-  callback3 = str.useCallback(V, items8);
+  const items8 = [buttonRef, sharedValue, sharedValue1, title, length, height, str, callback2, width, dividerIndexes];
+  callback3 = obj2.useCallback(V, items8);
   const items9 = [flag, flag2, callback, flag4, contextMenuState, callback3];
   const items10 = [items2];
-  const memo1 = str.useMemo(() => {
-    const tmp = (() => {
-      function onPanGestureEnd() {
-        const activeIndex = outer2_17.activeIndex;
-        const value = activeIndex.get();
-        items(flag2[4]).runOnJS(outer2_22)(-1 === value);
-      }
-      onPanGestureEnd.__closure = { state: outer1_17, runOnJS: items(flag2[4]).runOnJS, requestClose: outer1_22 };
-      onPanGestureEnd.__workletHash = 12851223476540;
-      onPanGestureEnd.__initData = animatedRef;
-      return onPanGestureEnd;
-    })();
+  const memo1 = obj2.useMemo(() => {
+    function onPanGestureEnd() {
+      activeIndex = activeIndex.activeIndex;
+      const value = activeIndex.get();
+      outer1_0(outer1_2[4]).runOnJS(closure_22)(-1 === value);
+    }
+    let obj = { state: contextMenuState, runOnJS: items(flag2[4]).runOnJS, requestClose: callback };
+    onPanGestureEnd.__closure = obj;
+    onPanGestureEnd.__workletHash = 12851223476540;
+    onPanGestureEnd.__initData = buttonRef;
     if (flag) {
-      const Gesture2 = items(flag2[14]).Gesture;
+      const Gesture2 = tmp2(tmp3[14]).Gesture;
       const PanResult = Gesture2.Pan();
       const fn4 = function i(absoluteX) {
-        const result = items(flag2[6]).updateContextMenuState(absoluteX.absoluteX, absoluteX.absoluteY, outer1_17);
+        const result = outer1_0(outer1_2[6]).updateContextMenuState(absoluteX.absoluteX, absoluteX.absoluteY, closure_17);
       };
-      let obj = { updateContextMenuState: items(flag2[6]).updateContextMenuState, state: contextMenuState };
+      obj = { updateContextMenuState: null, state: null };
+      obj[0] = tmp2(tmp3[6]).updateContextMenuState;
+      obj[1] = tmp;
       fn4.__closure = obj;
       fn4.__workletHash = 2460213213323;
       fn4.__initData = sharedValue;
       const enabledResult = Gesture2.Pan().enabled(flag4);
       const onUpdateResult = Gesture2.Pan().enabled(flag4).onUpdate(fn4);
-      const Gesture3 = items(flag2[14]).Gesture;
-      const onEndResult = Gesture2.Pan().enabled(flag4).onUpdate(fn4).onEnd(tmp);
+      const Gesture3 = tmp2(tmp3[14]).Gesture;
+      const onEndResult = Gesture2.Pan().enabled(flag4).onUpdate(fn4).onEnd(onPanGestureEnd);
       const LongPressResult = Gesture3.LongPress();
       const enabledResult1 = Gesture3.LongPress().enabled(flag4);
-      let result = Gesture3.LongPress().enabled(flag4).minDuration(items(flag2[8]).CONTEXT_MENU_LONG_PRESS_DURATION_MS).shouldCancelWhenOutside(false);
+      let result = Gesture3.LongPress().enabled(flag4).minDuration(tmp2(tmp3[8]).CONTEXT_MENU_LONG_PRESS_DURATION_MS).shouldCancelWhenOutside(false);
       const fn5 = function n() {
-        const obj = items(flag2[4]);
-        items(flag2[4]).runOnJS(items(flag2[15]).triggerHapticFeedback)(items(flag2[8]).CONTEXT_MENU_OPEN_HAPTIC);
-        outer1_25();
+        const obj = outer1_0(outer1_2[4]);
+        outer1_0(outer1_2[4]).runOnJS(outer1_0(outer1_2[15]).triggerHapticFeedback)(outer1_0(outer1_2[8]).CONTEXT_MENU_OPEN_HAPTIC);
+        callback();
       };
-      obj = { runOnJS: items(flag2[4]).runOnJS, triggerHapticFeedback: items(flag2[15]).triggerHapticFeedback, CONTEXT_MENU_OPEN_HAPTIC: items(flag2[8]).CONTEXT_MENU_OPEN_HAPTIC, measureButtonAndShowMenu: callback3 };
+      obj = { runOnJS: null, triggerHapticFeedback: null, CONTEXT_MENU_OPEN_HAPTIC: null, measureButtonAndShowMenu: null };
+      obj[0] = tmp2(tmp3[4]).runOnJS;
+      obj[1] = tmp2(tmp3[15]).triggerHapticFeedback;
+      obj[2] = tmp2(tmp3[8]).CONTEXT_MENU_OPEN_HAPTIC;
+      obj[3] = callback3;
       fn5.__closure = obj;
       fn5.__workletHash = 13919366908951;
       fn5.__initData = items2;
-      const minDurationResult = Gesture3.LongPress().enabled(flag4).minDuration(items(flag2[8]).CONTEXT_MENU_LONG_PRESS_DURATION_MS);
-      const Gesture4 = items(flag2[14]).Gesture;
+      const minDurationResult = Gesture3.LongPress().enabled(flag4).minDuration(tmp2(tmp3[8]).CONTEXT_MENU_LONG_PRESS_DURATION_MS);
+      const Gesture4 = tmp2(tmp3[14]).Gesture;
       return Gesture4.Simultaneous(result.onStart(fn5), onEndResult);
     } else {
-      const Gesture = items(flag2[14]).Gesture;
+      const Gesture = tmp2(tmp3[14]).Gesture;
       if (flag2) {
         const TapResult = Gesture.Tap();
         const fn3 = function o() {
-          outer1_25();
+          callback();
         };
-        const obj1 = { measureButtonAndShowMenu: callback3 };
+        const obj1 = { measureButtonAndShowMenu: null };
+        obj1[0] = callback3;
         fn3.__closure = obj1;
         fn3.__workletHash = 13410382812897;
         fn3.__initData = dividerIndexes;
@@ -439,67 +512,79 @@ export const ContextMenu = function ContextMenu(triggerOnLongPress) {
       } else {
         const PanResult1 = Gesture.Pan();
         const fn = function t() {
-          const obj = items(flag2[4]);
-          items(flag2[4]).runOnJS(items(flag2[15]).triggerHapticFeedback)(items(flag2[8]).CONTEXT_MENU_OPEN_HAPTIC);
-          outer1_25();
+          const obj = outer1_0(outer1_2[4]);
+          outer1_0(outer1_2[4]).runOnJS(outer1_0(outer1_2[15]).triggerHapticFeedback)(outer1_0(outer1_2[8]).CONTEXT_MENU_OPEN_HAPTIC);
+          callback();
         };
-        const obj2 = { runOnJS: tmp3(tmp4[4]).runOnJS, triggerHapticFeedback: tmp3(tmp4[15]).triggerHapticFeedback, CONTEXT_MENU_OPEN_HAPTIC: tmp3(tmp4[8]).CONTEXT_MENU_OPEN_HAPTIC, measureButtonAndShowMenu: callback3 };
+        const obj2 = { runOnJS: null, triggerHapticFeedback: null, CONTEXT_MENU_OPEN_HAPTIC: null, measureButtonAndShowMenu: null };
+        obj2[0] = tmp2(tmp3[4]).runOnJS;
+        obj2[1] = tmp2(tmp3[15]).triggerHapticFeedback;
+        obj2[2] = tmp2(tmp3[8]).CONTEXT_MENU_OPEN_HAPTIC;
+        obj2[3] = callback3;
         fn.__closure = obj2;
         fn.__workletHash = 11906156003448;
         fn.__initData = width;
         const enabledResult3 = Gesture.Pan().enabled(flag4);
         const fn2 = function e(absoluteX) {
-          const result = items(flag2[6]).updateContextMenuState(absoluteX.absoluteX, absoluteX.absoluteY, outer1_17);
+          const result = outer1_0(outer1_2[6]).updateContextMenuState(absoluteX.absoluteX, absoluteX.absoluteY, closure_17);
         };
-        const obj3 = { updateContextMenuState: tmp3(tmp4[6]).updateContextMenuState, state: contextMenuState };
+        const obj3 = { updateContextMenuState: null, state: null };
+        obj3[0] = tmp2(tmp3[6]).updateContextMenuState;
+        obj3[1] = tmp;
         fn2.__closure = obj3;
         fn2.__workletHash = 17473642675622;
         fn2.__initData = length;
         const onBeginResult = Gesture.Pan().enabled(flag4).onBegin(fn);
-        onStartResult1 = Gesture.Pan().enabled(flag4).onBegin(fn).onUpdate(fn2).onEnd(tmp);
+        onStartResult1 = Gesture.Pan().enabled(flag4).onBegin(fn).onUpdate(fn2).onEnd(onPanGestureEnd);
         const onUpdateResult1 = Gesture.Pan().enabled(flag4).onBegin(fn).onUpdate(fn2);
       }
       return onStartResult1;
     }
   }, items9);
   const items11 = [items2];
-  const memo2 = str.useMemo(() => items2.map((label) => ({ name: label.label, label: label.label })), items10);
+  const memo2 = obj2.useMemo(() => items2.map((label) => ({ name: label.label, label: label.label })), items10);
   const items12 = [callback3];
-  const callback4 = str.useCallback((arg0) => {
+  const callback4 = obj2.useCallback((arg0) => {
     let closure_0 = arg0;
     const found = items2.find((label) => label.label === nativeEvent.nativeEvent.actionName);
-    if (!tmp) {
-      found.action();
+    if (found != null) {
+      const action = found.action;
+      if (action != null) {
+        action();
+      }
     }
   }, items11);
   [][0] = callback3;
-  const callback5 = str.useCallback(() => {
+  const callback5 = obj2.useCallback(() => {
     let isAndroidResult = items(flag2[3]).isAndroid();
     if (isAndroidResult) {
-      isAndroidResult = items(flag2[16]).getIsScreenReaderEnabled();
-      const obj2 = items(flag2[16]);
+      let tmpResult = tmp(tmp2[16]);
+      isAndroidResult = tmpResult.getIsScreenReaderEnabled();
     }
     if (isAndroidResult) {
-      items(flag2[4]).runOnUI(callback3)();
-      const obj3 = items(flag2[4]);
+      tmpResult = tmp(tmp2[4]);
+      tmpResult.runOnUI(callback3)();
     }
   }, items12);
-  obj1 = { ref: animatedRef, onPress: callback5 };
-  let tmp23;
+  let obj1 = { ref: buttonRef, onPress: callback5, onLongPress: null, accessibilityActions: null, onAccessibilityAction: null };
+  let tmp24;
   if (flag) {
     if (flag3) {
-      tmp23 = tmp22;
+      tmp24 = tmp23;
     }
   }
-  obj1.onLongPress = tmp23;
-  obj1.accessibilityActions = memo2;
-  obj1.onAccessibilityAction = callback4;
+  obj1[2] = tmp24;
+  obj1[3] = memo2;
+  obj1[4] = callback4;
   if (flag3) {
-    let obj2 = { children: children(obj1) };
-    let tmp24Result = tmp24(title, obj2);
+    obj2 = { children: null };
+    obj2[0] = children(obj1);
+    let tmp25Result = tmp25(title, obj2);
   } else {
-    obj3 = { gesture: memo1, children: children(obj1) };
-    tmp24Result = tmp24(items(flag2[14]).GestureDetector, obj3);
+    let obj3 = { gesture: null, children: null };
+    obj3[0] = memo1;
+    obj3[1] = children(obj1);
+    tmp25Result = tmp25(tmp(tmp2[14]).GestureDetector, obj3);
   }
-  return tmp24Result;
+  return tmp25Result;
 };

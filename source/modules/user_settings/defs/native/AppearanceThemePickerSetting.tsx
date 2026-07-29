@@ -1,24 +1,27 @@
-// Module ID: 14260
-// Function ID: 109531
+// Module ID: 14282
+// Function ID: 14283
 // Name: route
-// Dependencies: [1278, 7733, 653, 1324, 566, 10099, 1212, 14256, 14261, 2]
+// Dependencies: [1302, 7756, 676, 1348, 589, 10120, 1236, 14278, 14283, 2]
 
-// Module 14260 (route)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 14282 (route)
+import handleThemeChange from "handleThemeChange";
 import createToggle from "createToggle";
 
 const require = arg1;
 createToggle = {
   useTitle() {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(require(1212) /* getSystemLocale */.t.Ksh3ik);
+    const intl = require(1236) /* getSystemLocale */.intl;
+    return intl.string(require(1236) /* getSystemLocale */.t.Ksh3ik);
   },
   parent: require("MobileSetting").MobileSetting.APPEARANCE,
   usePredicate: function useIsSingleThemePickerVisible() {
-    const tmp = importDefault(1324)("AppearanceThemePickerSetting");
-    const items = [_isNativeReflectConstruct];
-    const obj = require(566) /* initialize */;
-    return !tmp || !require(566) /* initialize */.useStateFromStores(items, () => outer1_3.isSameAsDeviceThemeEnabled());
+    const tmp = importDefault(1348)("AppearanceThemePickerSetting");
+    const items = [handleThemeChange];
+    let tmp2 = !tmp;
+    if (tmp) {
+      tmp2 = !obj.useStateFromStores(items, () => sameAsDeviceThemeEnabled.isSameAsDeviceThemeEnabled());
+    }
+    return tmp2;
   },
   useTrailing: require("useAppearanceSettingTrailing").useAppearanceSettingTrailing,
   screen: createToggle
@@ -26,7 +29,7 @@ createToggle = {
 createToggle = {
   route: require("ME").UserSettingsSections.APPEARANCE_THEME_PICKER,
   getComponent() {
-    return require(14261) /* getThemeOverride */.default;
+    return require(14283) /* ThemeTypes */.default;
   }
 };
 createToggle = createToggle.createRoute(createToggle);

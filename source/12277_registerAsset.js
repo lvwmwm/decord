@@ -1,11 +1,10 @@
 // Module ID: 12277
-// Function ID: 95725
+// Function ID: 12278
 // Name: registerAsset
-// Dependencies: [1217]
+// Dependencies: [1241]
 
 // Module 12277 (registerAsset)
 import registerAsset from "registerAsset";
 
-const obj = { __packager_asset: true, httpServerLocation: "/assets/modules/media_viewer/native/images", width: 24, height: 24, scales: [2, 3], hash: "87391322b2483c883b3f5fd1ac4080a9", name: "ic_eye", type: "png" };
 
-export default registerAsset.registerAsset(obj);
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/stage_channels/native/images", width: 16, height: 16, scales: [1, 2, 3], hash: "084857b96e411731cfaceba379b8db2a", name: "ic_group", type: "png" });

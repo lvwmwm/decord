@@ -1,44 +1,61 @@
-// Module ID: 5723
-// Function ID: 49402
-// Name: isLimitedChannel
-// Dependencies: [1348, 4086, 653, 2]
-// Exports: isLimitedChannelId
+// Module ID: 5741
+// Function ID: 5742
+// Name: LIMITED_GUILD_MEMBER_THRESHOLD
+// Dependencies: [1372, 4110, 676, 2]
+// Exports: isLimitedChannel, isLimitedChannelId
 
-// Module 5723 (isLimitedChannel)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_1 from "_isNativeReflectConstruct";
+// Module 5741 (LIMITED_GUILD_MEMBER_THRESHOLD)
+import ensureGuildLoaded from "ensureGuildLoaded";
+import handleInviteData from "handleInviteData";
 import { ChannelTypes } from "ME";
 
-function isLimitedChannel(basicChannel) {
-  let guild_id;
-  if (null != basicChannel) {
-    guild_id = basicChannel.guild_id;
-  }
-  memberCount = memberCount.getMemberCount(guild_id);
-  let num = 0;
-  if (null != memberCount) {
-    num = memberCount;
-  }
-  let tmp4 = null != basicChannel;
-  if (tmp4) {
-    tmp4 = basicChannel.type !== ChannelTypes.DM;
-  }
-  if (tmp4) {
-    tmp4 = basicChannel.type !== ChannelTypes.GROUP_DM;
-  }
-  if (tmp4) {
-    tmp4 = num >= 10000;
-  }
-  return tmp4;
-}
 const result = require("ME").fileFinishedImporting("modules/app_database/modules/messages/isLimitedChannel.tsx");
 
 export const LIMITED_GUILD_MEMBER_THRESHOLD = 10000;
-export { isLimitedChannel };
-export const isLimitedChannelId = function isLimitedChannelId(arg0) {
-  let str = "_";
-  if (null != arg0) {
-    str = arg0;
+export const isLimitedChannel = function isLimitedChannel(basicChannel) {
+  let guild_id;
+  if (basicChannel != null) {
+    guild_id = basicChannel.guild_id;
   }
-  return isLimitedChannel(basicChannel.getBasicChannel(str));
+  let num = store.getMemberCount(guild_id);
+  if (num == null) {
+    num = 0;
+  }
+  let tmp3 = null != basicChannel;
+  if (tmp3) {
+    tmp3 = basicChannel.type !== ChannelTypes.DM;
+  }
+  if (tmp3) {
+    tmp3 = basicChannel.type !== ChannelTypes.GROUP_DM;
+  }
+  if (tmp3) {
+    tmp3 = num >= 10000;
+  }
+  return tmp3;
+};
+export const isLimitedChannelId = function isLimitedChannelId(arg0) {
+  let str = arg0;
+  if (arg0 == null) {
+    str = "_";
+  }
+  basicChannel = basicChannel.getBasicChannel(str);
+  let guild_id;
+  if (basicChannel != null) {
+    guild_id = basicChannel.guild_id;
+  }
+  let num = store.getMemberCount(guild_id);
+  if (num == null) {
+    num = 0;
+  }
+  let tmp5 = null != basicChannel;
+  if (tmp5) {
+    tmp5 = basicChannel.type !== ChannelTypes.DM;
+  }
+  if (tmp5) {
+    tmp5 = basicChannel.type !== ChannelTypes.GROUP_DM;
+  }
+  if (tmp5) {
+    tmp5 = num >= 10000;
+  }
+  return tmp5;
 };

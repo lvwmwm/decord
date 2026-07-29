@@ -1,13 +1,13 @@
-// Module ID: 15537
-// Function ID: 119278
+// Module ID: 15571
+// Function ID: 15572
 // Name: useSendMessageChannelCount
-// Dependencies: [1908, 3793, 653, 566, 483, 2]
+// Dependencies: [1932, 3817, 676, 589, 506, 2]
 // Exports: default
 
-// Module 15537 (useSendMessageChannelCount)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import { GUILD_SELECTABLE_CHANNELS_KEY as closure_4 } from "_isNativeReflectConstruct";
-import closure_5 from "_isNativeReflectConstruct";
+// Module 15571 (useSendMessageChannelCount)
+import comparator from "comparator";
+import { GUILD_SELECTABLE_CHANNELS_KEY as closure_4 } from "comparator";
+import getUncachedChannelPermissions from "getUncachedChannelPermissions";
 import { Permissions } from "ME";
 
 const require = arg1;
@@ -15,18 +15,18 @@ const result = require("ME").fileFinishedImporting("modules/guild/usePostableCha
 
 export default function useSendMessageChannelCount(arg0) {
   const _require = arg0;
-  let items = [_isNativeReflectConstruct];
+  let items = [comparator];
   const items1 = [arg0];
-  const stateFromStores = _require(566).useStateFromStores(items, () => {
+  const stateFromStores = _require(589).useStateFromStores(items, () => {
     let items = outer1_3.getChannels(closure_0)[outer1_4];
-    if (null == items) {
+    if (items == null) {
       items = [];
     }
     return items;
   }, items1);
   let num = 0;
   if (0 !== stateFromStores.length) {
-    num = stateFromStores.filter((channel) => outer1_5.can(outer1_1(outer1_2[4]).combine(outer1_6.SEND_MESSAGES, outer1_6.VIEW_CHANNEL), channel.channel)).length;
+    num = stateFromStores.filter((channel) => getUncachedChannelPermissions.can(callback(table[4]).combine(constants.SEND_MESSAGES, constants.VIEW_CHANNEL), channel.channel)).length;
   }
   return num;
 };

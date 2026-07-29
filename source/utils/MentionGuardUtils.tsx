@@ -1,126 +1,22 @@
-// Module ID: 9550
-// Function ID: 74392
-// Name: _createForOfIteratorHelperLoose
-// Dependencies: [57, 6037, 3793, 653, 44, 5948, 2]
+// Module ID: 9574
+// Function ID: 9575
+// Name: parsedItemUsesEveryoneRole
+// Dependencies: [32, 6055, 3817, 676, 38, 5967, 2]
 
-// Module 9550 (_createForOfIteratorHelperLoose)
+// Module 9574 (parsedItemUsesEveryoneRole)
 import _slicedToArray from "_slicedToArray";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_4 from "_isNativeReflectConstruct";
+import getMemberListId from "getMemberListId";
+import getUncachedChannelPermissions from "getUncachedChannelPermissions";
 import ME from "ME";
 
-let closure_5;
+let c5;
 let closure_6;
-function _createForOfIteratorHelperLoose(iterable) {
-  let closure_0 = iterable;
-  iterable = "undefined" !== typeof Symbol;
-  if (iterable) {
-    const _Symbol = Symbol;
-    iterable = iterable[Symbol.iterator];
-  }
-  if (!iterable) {
-    iterable = iterable[Symbol.iterator];
-  }
-  if (iterable) {
-    const iter = iterable.call(iterable);
-    const next = iter.next;
-    return next.bind(iter);
-  } else {
-    const _Array = Array;
-    let tmp = iterable;
-    if (!Array.isArray(iterable)) {
-      let tmp2;
-      if (iterable) {
-        if ("string" === typeof iterable) {
-          tmp2 = _arrayLikeToArray(iterable, undefined);
-        } else {
-          const toString = {}.toString;
-          const substr = toString.call(iterable).slice(8, -1);
-          let name = substr;
-          if (tmp3) {
-            name = iterable.constructor.name;
-          }
-          if ("Map" !== name) {
-            if ("Set" !== name) {
-              if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(iterable, undefined);
-              } else {
-                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
-              }
-            }
-            tmp2 = arr;
-          }
-          const _Array2 = Array;
-          arr = Array.from(iterable);
-          const callResult = toString.call(iterable);
-          tmp3 = "Object" === substr && iterable.constructor;
-        }
-      }
-      tmp = tmp2;
-      if (!tmp2) {
-        const _TypeError = TypeError;
-        const typeError = new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
-        throw typeError;
-      }
-    }
-    if (tmp) {
-      closure_0 = tmp;
-    }
-    let c1 = 0;
-    return () => {
-      if (closure_1 >= length.length) {
-        let obj = { done: true };
-      } else {
-        obj = { done: false };
-        closure_1 = tmp3 + 1;
-        obj.value = length[+closure_1];
-      }
-      return obj;
-    };
-  }
-}
-function _arrayLikeToArray(arg0, arg1) {
-  let length;
-  if (tmp) {
-    length = arg0.length;
-  }
-  const ArrayResult = Array(length);
-  for (let num = 0; num < length; num = num + 1) {
-    ArrayResult[num] = arg0[num];
-  }
-  return ArrayResult;
-}
-function everyoneMemberCount(extractEveryoneRoleResult, isThread) {
-  let closure_0 = extractEveryoneRoleResult;
-  let c1 = 0;
-  if (isThread.isThread()) {
-    const memberCount = isThread.memberCount;
-    let num = 0;
-    if (null != memberCount) {
-      num = memberCount;
-    }
-    let tmp3 = num;
-  } else {
-    const groups = props.getProps(isThread.getGuildId(), isThread.id).groups;
-    const item = groups.forEach((id) => {
-      let tmp = "@everyone" !== closure_0;
-      if (tmp) {
-        tmp = id.id === outer1_6.OFFLINE;
-      }
-      if (!tmp) {
-        closure_1 = closure_1 + id.count;
-      }
-    });
-    tmp3 = c1;
-  }
-  return tmp3;
-}
-function parsedItemUsesEveryoneRole(value) {
-  if ("string" === typeof value.content) {
-    if ("inlineCode" !== value.type) {
-      if ("codeBlock" !== value.type) {
+function parsedItemUsesEveryoneRole(content) {
+  if (typeof content.content === "y") {
+    if ("inlineCode" !== content.type) {
+      if ("codeBlock" !== content.type) {
         let match;
-        if (null != value.content) {
+        if (content.content != null) {
           match = str3.match(regExp);
         }
         if (null != match) {
@@ -131,49 +27,95 @@ function parsedItemUsesEveryoneRole(value) {
     return null;
   } else {
     const _Array = Array;
-    if (Array.isArray(value.content)) {
-      const tmp3 = _createForOfIteratorHelperLoose(value.content);
-      const iter = tmp3();
-      let iter2 = iter;
-      if (!iter.done) {
-        const tmp6 = parsedItemUsesEveryoneRole(iter2.value);
-        while (null == tmp6) {
-          let iter3 = tmp3();
-          iter2 = iter3;
+    if (Array.isArray(content.content)) {
+      content = content.content;
+      const obj = content[Symbol.iterator]();
+      while (obj !== undefined) {
+        let tmp6 = parsedItemUsesEveryoneRole;
+        let tmp7 = parsedItemUsesEveryoneRole(tmp4);
+        let tmp8 = tmp7;
+        if (null != tmp7) {
+          let tmp9 = obj;
+          obj.return();
+          return tmp7;
         }
-        return tmp6;
       }
       return null;
     }
   }
   return null;
 }
-({ Permissions: closure_5, StatusTypes: closure_6 } = ME);
+({ Permissions: c5, StatusTypes: closure_6 } = ME);
 const regExp = new RegExp(/@(:?everyone|here)/);
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("utils/MentionGuardUtils.tsx");
+const result = require("getUncachedChannelPermissions").fileFinishedImporting("utils/MentionGuardUtils.tsx");
 
 export default {
   shouldShowEveryoneGuard(extractEveryoneRoleResult, getGuildId) {
     const guildId = getGuildId.getGuildId();
-    importDefault(44)(guildId, "isGuildChannel with null guildId");
-    let canResult = everyoneMemberCount(extractEveryoneRoleResult, getGuildId) > 30;
+    importDefault(38)(null != guildId, "isGuildChannel with null guildId");
+    importDefault = extractEveryoneRoleResult;
+    const dependencyMap = 0;
+    if (getGuildId.isThread()) {
+      let num = getGuildId.memberCount;
+      if (num == null) {
+        num = 0;
+      }
+      let tmp5 = num;
+    } else {
+      const groups = store.getProps(getGuildId.getGuildId(), getGuildId.id).groups;
+      const item = groups.forEach((id) => {
+        let tmp = "@everyone" !== closure_0;
+        if (tmp) {
+          tmp = id.id === outer1_6.OFFLINE;
+        }
+        if (!tmp) {
+          closure_1 = closure_1 + id.count;
+        }
+      });
+      tmp5 = dependencyMap;
+    }
+    let canResult = tmp5 > 30;
     if (canResult) {
-      canResult = closure_4.can(constants.MENTION_EVERYONE, getGuildId);
+      canResult = getUncachedChannelPermissions.can(constants.MENTION_EVERYONE, getGuildId);
     }
     return canResult;
   },
-  everyoneMemberCount,
-  extractEveryoneRole(arg0, getGuildId) {
-    const tmp = _createForOfIteratorHelperLoose(importDefault(5948).parsePreprocessor(getGuildId, arg0));
-    const iter = tmp();
-    let iter2 = iter;
-    if (!iter.done) {
-      const tmp3 = parsedItemUsesEveryoneRole(iter2.value);
-      while (null == tmp3) {
-        let iter3 = tmp();
-        iter2 = iter3;
+  everyoneMemberCount(extractEveryoneRoleResult, isThread) {
+    let closure_0 = extractEveryoneRoleResult;
+    let c1 = 0;
+    if (isThread.isThread()) {
+      let num = isThread.memberCount;
+      if (num == null) {
+        num = 0;
       }
-      return tmp3;
+      let tmp3 = num;
+    } else {
+      const groups = store.getProps(isThread.getGuildId(), isThread.id).groups;
+      const item = groups.forEach((id) => {
+        let tmp = "@everyone" !== closure_0;
+        if (tmp) {
+          tmp = id.id === outer1_6.OFFLINE;
+        }
+        if (!tmp) {
+          closure_1 = closure_1 + id.count;
+        }
+      });
+      tmp3 = c1;
+    }
+    return tmp3;
+  },
+  extractEveryoneRole(arg0, getGuildId) {
+    const obj = importDefault(5967);
+    const obj2 = importDefault(5967).parsePreprocessor(getGuildId, arg0)[Symbol.iterator]();
+    while (obj2 !== undefined) {
+      let tmp3 = parsedItemUsesEveryoneRole;
+      let tmp4 = parsedItemUsesEveryoneRole(tmp2);
+      let tmp5 = tmp4;
+      if (null != tmp4) {
+        let tmp6 = obj2;
+        obj2.return();
+        return tmp4;
+      }
     }
     return null;
   }

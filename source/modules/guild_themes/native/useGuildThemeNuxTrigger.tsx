@@ -1,23 +1,26 @@
-// Module ID: 15100
-// Function ID: 114865
+// Module ID: 15133
+// Function ID: 15134
 // Name: useGuildThemeNuxTrigger
-// Dependencies: [31, 3858, 566, 15101, 15101, 1935, 4133, 15106, 2]
+// Dependencies: [19, 3882, 589, 15134, 15134, 1959, 4157, 15139, 2]
 // Exports: default
 
-// Module 15100 (useGuildThemeNuxTrigger)
-import result from "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 15133 (useGuildThemeNuxTrigger)
+import noop from "noop";
+import setContent from "setContent";
 
 const require = arg1;
 const result = require("initialize").fileFinishedImporting("modules/guild_themes/native/useGuildThemeNuxTrigger.tsx");
 
 export default function useGuildThemeNuxTrigger(arg0) {
-  const items = [_isNativeReflectConstruct];
-  const stateFromStores = require(566) /* initialize */.useStateFromStores(items, () => outer1_4.getKey() === outer1_0(outer1_2[3]).GUILD_THEME_NUX_ACTION_SHEET_KEY);
+  const items = [setContent];
+  const stateFromStores = require(589) /* initialize */.useStateFromStores(items, () => {
+    key = key.getKey();
+    return key === callback(paths[3]).GUILD_THEME_NUX_ACTION_SHEET_KEY;
+  });
   const callback = React.useCallback((arg0) => {
-    const tmp = outer1_0(outer1_2[5])(outer1_2[4], outer1_2.paths);
-    outer1_1(outer1_2[6]).openLazy(tmp, outer1_0(outer1_2[3]).GUILD_THEME_NUX_ACTION_SHEET_KEY, arg0, "stack");
+    const tmp = callback(paths[5])(paths[4], paths.paths);
+    callback2(paths[6]).openLazy(tmp, callback(paths[3]).GUILD_THEME_NUX_ACTION_SHEET_KEY, arg0, "stack");
     return tmp;
   }, []);
-  importDefault(15106)(arg0, { isNuxOpen: stateFromStores, openNux: callback });
+  importDefault(15139)(arg0, { isNuxOpen: stateFromStores, openNux: callback });
 };

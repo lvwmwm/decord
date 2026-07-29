@@ -1,22 +1,22 @@
-// Module ID: 16641
-// Function ID: 129662
+// Module ID: 16677
+// Function ID: 16678
 // Name: getReportInboundErrors
-// Dependencies: [4250, 664, 10535, 2]
+// Dependencies: [4274, 687, 10559, 2]
 // Exports: getAccumulatedStatsWithMinDatapoints, getReportInboundErrors, getWarningFrameRate
 
-// Module 16641 (getReportInboundErrors)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 16677 (getReportInboundErrors)
+import updateAveragedStatsHelper from "updateAveragedStatsHelper";
 
 const require = arg1;
 let closure_3 = 10 * require("set").Millis.SECOND;
-let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/errors/av_errors/AVErrorUtils.tsx");
+let result = require("isIncomingVideoEnabled").fileFinishedImporting("modules/errors/av_errors/AVErrorUtils.tsx");
 
 export const getReportInboundErrors = function getReportInboundErrors() {
-  const WindowVisibilityVideoManager = require(10535) /* _isNativeReflectConstruct */.WindowVisibilityVideoManager;
+  const WindowVisibilityVideoManager = require(10559) /* isIncomingVideoEnabled */.WindowVisibilityVideoManager;
   let result = WindowVisibilityVideoManager.isIncomingVideoEnabled();
   if (result) {
     const _performance = performance;
-    const WindowVisibilityVideoManager2 = require(10535) /* _isNativeReflectConstruct */.WindowVisibilityVideoManager;
+    const WindowVisibilityVideoManager2 = require(10559) /* isIncomingVideoEnabled */.WindowVisibilityVideoManager;
     result = performance.now() - WindowVisibilityVideoManager2.lastIncomingVideoEnabledChangeTime() > closure_3;
     const nowResult = performance.now();
   }
@@ -37,7 +37,9 @@ export const getAccumulatedStatsWithMinDatapoints = function getAccumulatedStats
       if (accumulatedPerformanceStats.numDatapoints >= num) {
         tmp3 = null;
         if (accumulatedPerformanceStats1.numDatapoints >= num) {
-          const obj = { short: accumulatedPerformanceStats, long: accumulatedPerformanceStats1 };
+          const obj = { short: null, long: null };
+          obj[0] = accumulatedPerformanceStats;
+          obj[1] = accumulatedPerformanceStats1;
           tmp3 = obj;
         }
       }

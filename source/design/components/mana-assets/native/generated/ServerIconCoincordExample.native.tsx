@@ -1,10 +1,10 @@
-// Module ID: 7432
-// Function ID: 60419
+// Module ID: 7454
+// Function ID: 7455
 // Name: ServerIconCoincordExample
-// Dependencies: [33, 5119, 7433, 2]
+// Dependencies: [21, 5141, 7455, 2]
 // Exports: ServerIconCoincordExample
 
-// Module 7432 (ServerIconCoincordExample)
+// Module 7454 (ServerIconCoincordExample)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/ServerIconCoincordExample.native.tsx");
@@ -26,14 +26,15 @@ export const ServerIconCoincordExample = function ServerIconCoincordExample(widt
   if (num3 === undefined) {
     num3 = 1;
   }
-  let obj = { fadeDuration: 0 };
-  obj = { uri: importDefault(7433) };
-  obj.source = obj;
+  let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
+  obj = { uri: null };
+  obj[0] = importDefault(7455);
+  obj[1] = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
-  obj.style = items;
-  obj.accessible = accessible;
-  obj.accessibilityLabel = accessibilityLabel;
-  obj.resizeMode = resizeMode;
-  return jsx(importDefault(5119), { width: num * num3, height: num2 * num3 });
+  obj[2] = items;
+  obj[3] = accessible;
+  obj[4] = accessibilityLabel;
+  obj[5] = resizeMode;
+  return jsx(importDefault(5141), { width: num * num3, height: num2 * num3 });
 };

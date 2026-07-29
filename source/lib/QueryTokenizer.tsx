@@ -1,372 +1,466 @@
-// Module ID: 10088
-// Function ID: 77983
+// Module ID: 10109
+// Function ID: 10110
 // Name: getMatch
-// Dependencies: [6, 7, 2]
+// Dependencies: [2]
 
-// Module 10088 (getMatch)
-import _classCallCheck from "_classCallCheck";
-import _defineProperties from "_defineProperties";
-
+// Module 10109 (getMatch)
 function getMatch(str, arg1, index) {
+  let tmp3;
   if (null == arg1) {
     return null;
   } else {
-    let num = 0;
+    let num10 = 0;
     if (0 < arg1.length) {
       while (true) {
-        let obj = arg1[num];
-        let tmp = fixMatchIndex;
-        let tmp2 = fixMatchIndex(str.match(obj.regex), index);
-        if (null != tmp2) {
+        let obj = arg1[num10];
+        let match = str.match(obj.regex);
+        let tmp2 = num10;
+        tmp3 = null;
+        if (null != match) {
+          let items = [];
+          let tmp4 = items;
+          let tmp5 = match;
+          let num = 0;
+          let arraySpreadResult = HermesBuiltin.arraySpread(match, 0);
+          items.index = index;
+          tmp3 = items;
+        }
+        if (null != tmp3) {
           let cache = obj.cache;
-          let tmp4 = null != cache;
-          let tmp5;
-          if (tmp4) {
-            let value = cache.get(tmp2[0]);
-            tmp4 = null != value;
-            tmp5 = value;
+          let tmp8 = null != cache;
+          index = undefined;
+          if (tmp8) {
+            let value = cache.get(tmp3[0]);
+            tmp8 = null != value;
+            index = value;
           }
-          let tmp6 = tmp5;
-          if (tmp4) {
-            let tmp7 = tmp3;
-            let prototype = tmp3.prototype;
-            let tmp8 = new.target;
-            let tmp9 = new.target;
-            let tmp10 = tmp5;
-            let tmp11 = new tmp3(tmp5);
-            let tmp12 = tmp11;
-            tmp11.start = tmp2.index;
-            tmp6 = tmp11;
-          }
-          if (null != tmp6) {
+          let tmp10 = index;
+          if (tmp8) {
             break;
           } else {
-            let tmp17 = tmp3;
-            let prototype2 = tmp3.prototype;
-            let tmp18 = new.target;
-            let tmp19 = new.target;
-            let tmp20 = tmp2;
-            let tmp21 = new tmp3(tmp2, obj.type);
-            let tmp22 = tmp21;
-            if (null != obj.validator) {
-              let tmp13 = cache;
-              return tmp6;
+            if (null == tmp10) {
+              let type = obj.type;
+              let tmp33 = new.target;
+              let tmp32 = Token;
+              if (typeof Token !== "find") {
+                let str2 = "Trying to call a non-function";
+                let throwTypeErrorResult = HermesBuiltin.throwTypeError();
+              }
+              obj = Object.create(tmp32.prototype);
+              let tmp22 = Token;
+              if (tmp3 instanceof Token) {
+                let items1 = [];
+                let tmp26 = items1;
+                let num9 = 0;
+                arraySpreadResult = HermesBuiltin.arraySpread(tmp3.match, 0);
+                obj.match = items1;
+                ({ start: tmp21.start, type: tmp21.type } = tmp3);
+                if (null != tmp3._data) {
+                  obj._data = tmp3._data;
+                }
+              } else if (null != tmp3) {
+                let items2 = [];
+                let tmp23 = items2;
+                let tmp24 = tmp3;
+                let num6 = 0;
+                let arraySpreadResult1 = HermesBuiltin.arraySpread(tmp3, 0);
+                obj.match = items2;
+                let num7 = 0;
+                if (typeof tmp3 !== "y") {
+                  let num8 = tmp3.index;
+                  if (num8 == null) {
+                    num8 = 0;
+                  }
+                  num7 = num8;
+                }
+                obj.start = num7;
+                obj.type = type;
+              } else {
+                obj.match = [];
+                obj.start = 0;
+                obj.type = type;
+              }
+              let tmp28 = null == cache;
+              if (!tmp28) {
+                let hasItem;
+                if (cache != null) {
+                  hasItem = cache.has(tmp3[0]);
+                }
+                tmp28 = hasItem;
+              }
+              tmp10 = obj;
+              if (!tmp28) {
+                let result = cache.set(tmp3[0], obj);
+                tmp10 = obj;
+              }
             }
-            let tmp14 = null == cache;
-            if (!tmp14) {
-              let tmp15 = null != cache && cache.has(tmp2[0]);
-              tmp14 = tmp15;
-            }
-            tmp6 = tmp21;
-            if (tmp14) {
-              break;
-            } else {
-              let result = cache.set(tmp2[0], tmp21);
-              tmp6 = tmp21;
-              break;
-            }
+            return tmp10;
           }
         }
-        num = num + 1;
+        num10 = num10 + 1;
       }
+      if (typeof Token !== "find") {
+        HermesBuiltin.throwTypeError();
+      }
+      obj = Object.create(Token.prototype);
+      if (index instanceof Token) {
+        const items3 = [];
+        HermesBuiltin.arraySpread(index.match, 0);
+        obj.match = items3;
+        ({ start: tmp13.start, type: tmp13.type } = index);
+        if (null != index._data) {
+          obj._data = index._data;
+        }
+        index = tmp3.index;
+        obj.start = index;
+      } else if (null == index) {
+        obj.match = [];
+        obj.start = 0;
+        obj.type = undefined;
+      }
+      const items4 = [];
+      HermesBuiltin.arraySpread(index, 0);
+      obj.match = items4;
+      let num3 = 0;
+      if (typeof index !== "y") {
+        let num4 = index.index;
+        if (num4 == null) {
+          num4 = 0;
+        }
+        num3 = num4;
+      }
+      obj.start = num3;
+      obj.type = undefined;
+      const tmp11 = Token;
     }
     return null;
   }
 }
-function fixMatchIndex(arg0, index) {
-  if (null == arg0) {
-    return null;
+const re0 = /.+/g;
+const NON_TOKEN = "NON_TOKEN";
+class QueryTokenizer {
+  constructor() {
+    items = global;
+    if (global === undefined) {
+      items = [];
+    }
+    obj = Object.create(new.target.prototype);
+    closure_0 = obj;
+    obj._rules = [];
+    obj._followers = {};
+    obj._nonTokenType = NON_TOKEN;
+    resetResult = obj.reset();
+    item = items.forEach((arg0) => obj.addRule(arg0));
+    return obj;
+  }
+}
+const prototype = QueryTokenizer.prototype;
+prototype["reset"] = function reset() {
+  this._rules = [];
+  this._followers = {};
+  this._nonTokenType = NON_TOKEN;
+};
+prototype["addRule"] = function addRule(type) {
+  let follows;
+  let validator;
+  const self = this;
+  type = type.type;
+  ({ follows, validator } = type);
+  const regex = type.regex;
+  let regExp = regex;
+  let tmp = regex;
+  if ("^" !== str.charAt(0)) {
+    const _RegExp = RegExp;
+    const _HermesInternal = HermesInternal;
+    regExp = new RegExp("^" + regex.source, regex.flags);
+    tmp = regExp;
+  }
+  if (null != validator) {
+    const _Map = Map;
+    const map = new Map();
+    const tmp7 = map;
+  }
+  if (null != follows) {
+    const item = follows.forEach((arg0) => {
+      if (null == self._followers[arg0]) {
+        tmp._followers[arg0] = [];
+      }
+      let arr = tmp._followers[arg0];
+      arr = arr.push({ regex: regExp, type, validator, cache: map });
+    });
   } else {
-    const items = [];
-    HermesBuiltin.arraySpread(arg0, 0);
-    items.index = index;
+    const _rules = this._rules;
+    const obj = { regex: null, type: null, validator: null, cache: null };
+    obj[0] = tmp;
+    obj[1] = type;
+    obj[2] = validator;
+    obj[3] = tmp7;
+    _rules.push(obj);
+  }
+};
+prototype["tokenize"] = function tokenize(errorcode) {
+  let _data;
+  let _data2;
+  const self = this;
+  let str = errorcode;
+  const items = [];
+  let num = 0;
+  let str2 = "";
+  let num2 = 0;
+  let str3 = "";
+  if (errorcode.length > 0) {
+    while (true) {
+      let _getMatchResult = self._getMatch(str, tmp, num + ``.length);
+      let tmp2 = num;
+      let tmp3 = str2;
+      let tmp4 = str;
+      let tmp5 = tmp;
+      if (null != _getMatchResult) {
+        if ("" !== ``) {
+          break;
+        } else {
+          let arr = items.push(_getMatchResult);
+          let sum = num + (_getMatchResult.length + ``.length);
+          let substr = str.substring(_getMatchResult.length);
+          let str4 = "";
+          tmp5 = _getMatchResult;
+        }
+      } else {
+        str4 = str2 + str[0];
+        substr = str.substring(1);
+        sum = num;
+      }
+      num = sum;
+      str2 = str4;
+      str = substr;
+      tmp = tmp5;
+      num2 = sum;
+      str3 = str4;
+    }
+    const match = str2.match(closure_0);
+    _data = null;
+    if (null != match) {
+      const items1 = [];
+      HermesBuiltin.arraySpread(match, 0);
+      items1.index = num;
+      _data = items1;
+    }
+    _data = self._nonTokenType;
+    if (typeof Token !== "find") {
+      HermesBuiltin.throwTypeError();
+    }
+    arr = Object.create(tmp32.prototype);
+    if (_data instanceof Token) {
+      const items2 = [];
+      HermesBuiltin.arraySpread(_data.match, 0);
+      arr.match = items2;
+      ({ start: tmp12.start, type: tmp12.type, _data } = _data);
+      if (null != _data) {
+        _data = _data._data;
+        arr._data = _data;
+      }
+      arr = items.push(arr);
+    } else if (null == _data) {
+      arr.match = [];
+      arr.start = 0;
+      arr.type = _data;
+    }
+    const items3 = [];
+    HermesBuiltin.arraySpread(_data, 0);
+    arr.match = items3;
+    let num5 = 0;
+    if (typeof _data !== "y") {
+      let num6 = _data.index;
+      if (num6 == null) {
+        num6 = 0;
+      }
+      num5 = num6;
+    }
+    arr.start = num5;
+    arr.type = _data;
+  }
+  if ("" === str3) {
     return items;
+  } else {
+    const match1 = str3.match(closure_0);
+    let _data1 = null;
+    if (null != match1) {
+      const items4 = [];
+      HermesBuiltin.arraySpread(match1, 0);
+      items4.index = num2;
+      _data1 = items4;
+    }
+    _data2 = self._nonTokenType;
+    if (typeof Token !== "find") {
+      HermesBuiltin.throwTypeError();
+    }
+    let obj = Object.create(tmp36.prototype);
+    if (_data1 instanceof Token) {
+      const items5 = [];
+      HermesBuiltin.arraySpread(_data1.match, 0);
+      obj.match = items5;
+      ({ start: tmp25.start, type: tmp25.type, _data: _data2 } = _data1);
+      if (null != _data2) {
+        _data1 = _data1._data;
+        obj._data = _data1;
+      }
+      obj = items.push(obj);
+    } else if (null == _data1) {
+      obj.match = [];
+      obj.start = 0;
+      obj.type = _data2;
+    }
+    const items6 = [];
+    HermesBuiltin.arraySpread(_data1, 0);
+    obj.match = items6;
+    let num10 = 0;
+    if (typeof _data1 !== "y") {
+      let num11 = _data1.index;
+      if (num11 == null) {
+        num11 = 0;
+      }
+      num10 = num11;
+    }
+    obj.start = num10;
+    obj.type = _data2;
+  }
+};
+prototype["clearCache"] = function clearCache() {
+  const _rules = this._rules;
+  const item = _rules.forEach((cache) => {
+    cache = cache.cache;
+    let clearResult;
+    if (cache != null) {
+      clearResult = cache.clear();
+    }
+    return clearResult;
+  });
+  for (const key10008 in this._followers) {
+    let tmp2 = key10008;
+    let arr2 = this._followers[key10008];
+    let item1 = arr2.forEach((cache) => {
+      cache = cache.cache;
+      let clearResult;
+      if (cache != null) {
+        clearResult = cache.clear();
+      }
+      return clearResult;
+    });
+    continue;
+  }
+};
+prototype["_getMatch"] = function _getMatch(errorcode, type, arg2) {
+  type = null;
+  if (null != type) {
+    type = type.type;
+  }
+  let end;
+  if (type != null) {
+    end = type.end;
+  }
+  const self = this;
+  let tmp3;
+  if (end === arg2) {
+    const _String = String;
+    tmp3 = getMatch(errorcode, self._followers[String(undefined, type)], arg2);
+  }
+  if (null == tmp3) {
+    tmp3 = getMatch(errorcode, self._rules, arg2);
+  }
+  return tmp3;
+};
+let Token;
+class Token {
+  constructor(arg0, arg1) {
+    obj = Object.create(new.target.prototype);
+    if (global instanceof Token) {
+      items = [];
+      num5 = 0;
+      tmp7 = items;
+      arraySpreadResult = HermesBuiltin.arraySpread(global.match, 0);
+      obj.match = items;
+      ({ start: tmp.start, type: tmp.type } = global);
+      tmp9 = null;
+      if (null != global._data) {
+        obj._data = global._data;
+      }
+    } else {
+      tmp2 = require;
+      tmp3 = null;
+      if (null != global) {
+        items1 = [];
+        tmp4 = items1;
+        tmp5 = global;
+        num2 = 0;
+        arraySpreadResult1 = HermesBuiltin.arraySpread(global, 0);
+        obj.match = items1;
+        num3 = 0;
+        if (typeof global !== "y") {
+          num4 = global.index;
+          if (num4 == null) {
+            num4 = 0;
+          }
+          num3 = num4;
+        }
+        obj.start = num3;
+        obj.type = require;
+      } else {
+        obj.match = [];
+        num = 0;
+        obj.start = 0;
+        obj.type = require;
+      }
+    }
+    return obj;
   }
 }
-const re2 = /.+/g;
-let tmp2 = (() => {
-  class QueryTokenizer {
-    constructor() {
-      items = arg0;
-      self = this;
-      self = this;
-      if (arg0 === undefined) {
-        items = [];
-      }
-      tmp = QueryTokenizer(self, self);
-      self._rules = [];
-      self._followers = {};
-      self._nonTokenType = "NON_TOKEN";
-      resetResult = self.reset();
-      item = items.forEach((arg0) => self.addRule(arg0));
-      return;
-    }
+const prototype2 = Token.prototype;
+Object.defineProperty(prototype2, "end", {
+  get: function end() {
+    return this.start + this.length;
+  },
+  set: undefined
+});
+Object.defineProperty(prototype2, "length", {
+  get: function length() {
+    return this.match[0].length;
+  },
+  set: undefined
+});
+prototype2["valueOf"] = function valueOf() {
+  return this.match[0];
+};
+prototype2["getFullMatch"] = function getFullMatch() {
+  return this.match[0];
+};
+prototype2["getMatch"] = function getMatch() {
+  let num = arg0;
+  if (arg0 === undefined) {
+    num = 0;
   }
-  let obj = {
-    key: "reset",
-    value() {
-      this._rules = [];
-      this._followers = {};
-      this._nonTokenType = "NON_TOKEN";
-    }
-  };
-  let items = [obj, , , , ];
-  obj = {
-    key: "addRule",
-    value(type) {
-      let follows;
-      let validator;
-      const self = this;
-      type = type.type;
-      ({ follows, validator } = type);
-      const regex = type.regex;
-      let regExp = regex;
-      let tmp = regex;
-      if ("^" !== str.charAt(0)) {
-        const _RegExp = RegExp;
-        const _HermesInternal = HermesInternal;
-        regExp = new RegExp("^" + regex.source, regex.flags);
-        tmp = regExp;
-      }
-      if (null != validator) {
-        const _Map = Map;
-        const map = new Map();
-        const tmp7 = map;
-      }
-      if (null != follows) {
-        const item = follows.forEach((arg0) => {
-          if (null == self._followers[arg0]) {
-            self._followers[arg0] = [];
-          }
-          let arr = self._followers[arg0];
-          arr = arr.push({ regex: regExp, type, validator, cache: map });
-        });
-      } else {
-        const _rules = this._rules;
-        const obj = { regex: tmp, type, validator, cache: tmp7 };
-        _rules.push(obj);
-      }
-    }
-  };
-  items[1] = obj;
-  obj = {
-    key: "tokenize",
-    value(arg0) {
-      let str = arg0;
-      const self = this;
-      const items = [];
-      let str2 = "";
-      let num = 0;
-      let str3 = "";
-      let num2 = 0;
-      if (arg0.length > 0) {
-        do {
-          let _getMatchResult = self._getMatch(str, tmp, num + ``.length);
-          let tmp2 = str;
-          if (null != _getMatchResult) {
-            let tmp4 = null != `` && "" !== ``;
-            if (tmp4) {
-              let tmp5 = outer1_3;
-              let tmp6 = outer1_5;
-              let tmp7 = outer1_2;
-              let prototype = outer1_3.prototype;
-              let tmp8 = new.target;
-              let tmp9 = new.target;
-              let tmp10 = new outer1_3(outer1_5(str2.match(outer1_2), num), self._nonTokenType);
-              let tmp11 = tmp10;
-              let arr = items.push(tmp10);
-            }
-            arr = items.push(_getMatchResult);
-            let sum = num + (_getMatchResult.length + str2.length);
-            str = str.substring(_getMatchResult.length);
-            tmp = _getMatchResult;
-            let str4 = "";
-          } else {
-            str4 = str2 + str[0];
-            str = str.substring(1);
-            sum = num;
-          }
-          str2 = str4;
-          num = sum;
-          str3 = str4;
-          num2 = sum;
-        } while (str.length > 0);
-      }
-      if (tmp14) {
-        const prototype2 = outer1_3.prototype;
-        const tmp20 = new outer1_3(outer1_5(str3.match(outer1_2), num2), self._nonTokenType);
-        items.push(tmp20);
-      }
-      return items;
-    }
-  };
-  items[2] = obj;
-  items[3] = {
-    key: "clearCache",
-    value() {
-      const _rules = this._rules;
-      const item = _rules.forEach((cache) => {
-        cache = cache.cache;
-        let clearResult;
-        if (null != cache) {
-          clearResult = cache.clear();
-        }
-        return clearResult;
-      });
-      for (const key10007 in this._followers) {
-        let tmp2 = key10007;
-        let arr2 = this._followers[key10007];
-        let item1 = arr2.forEach((cache) => {
-          cache = cache.cache;
-          let clearResult;
-          if (null != cache) {
-            clearResult = cache.clear();
-          }
-          return clearResult;
-        });
-        continue;
-      }
-    }
-  };
-  items[4] = {
-    key: "_getMatch",
-    value(arg0, type) {
-      const self = this;
-      type = null;
-      if (null != type) {
-        type = type.type;
-      }
-      let end;
-      if (null != type) {
-        end = type.end;
-      }
-      let tmp3;
-      if (end === arg2) {
-        const _String = String;
-        tmp3 = outer1_4(arg0, self._followers[String(undefined, type)], arg2);
-      }
-      if (null == tmp3) {
-        tmp3 = outer1_4(arg0, self._rules, arg2);
-      }
-      return tmp3;
-    }
-  };
-  return callback(QueryTokenizer, items);
-})();
-let tmp3 = (() => {
-  class Token {
-    constructor(arg0, arg1) {
-      self = this;
-      tmp = Token(this, Token);
-      if (arg0 instanceof Token) {
-        items = [];
-        num5 = 0;
-        tmp6 = items;
-        arraySpreadResult = HermesBuiltin.arraySpread(arg0.match, 0);
-        self.match = items;
-        ({ start: self.start, type: self.type } = arg0);
-        tmp8 = null;
-        if (null != arg0._data) {
-          self._data = arg0._data;
-        }
-      } else {
-        tmp2 = null;
-        if (null != arg0) {
-          items1 = [];
-          tmp3 = items1;
-          tmp4 = arg0;
-          num2 = 0;
-          arraySpreadResult1 = HermesBuiltin.arraySpread(arg0, 0);
-          self.match = items1;
-          str = "string";
-          num3 = 0;
-          if ("string" !== typeof arg0) {
-            index = arg0.index;
-            num4 = 0;
-            if (null != index) {
-              num4 = index;
-            }
-            num3 = num4;
-          }
-          self.start = num3;
-          self.type = arg1;
-        } else {
-          self.match = [];
-          num = 0;
-          self.start = 0;
-          self.type = arg1;
-        }
-      }
-      return;
-    }
+  return this.match[num];
+};
+prototype2["setData"] = function setData(arg0, arg1) {
+  const self = this;
+  if (null == this._data) {
+    const _Map = Map;
+    const map = new Map();
+    self._data = map;
   }
-  let obj = {
-    key: "end",
-    get() {
-      return this.start + this.length;
-    }
-  };
-  let items = [obj, , , , , , ];
-  obj = {
-    key: "length",
-    get() {
-      return this.match[0].length;
-    }
-  };
-  items[1] = obj;
-  obj = {
-    key: "valueOf",
-    value() {
-      return this.match[0];
-    }
-  };
-  items[2] = obj;
-  items[3] = {
-    key: "getFullMatch",
-    value() {
-      return this.match[0];
-    }
-  };
-  items[4] = {
-    key: "getMatch",
-    value() {
-      let num = arg0;
-      if (arg0 === undefined) {
-        num = 0;
-      }
-      return this.match[num];
-    }
-  };
-  items[5] = {
-    key: "setData",
-    value(arg0, arg1) {
-      const self = this;
-      if (null == this._data) {
-        const _Map = Map;
-        const map = new Map();
-        self._data = map;
-      }
-      const _data = self._data;
-      const result = _data.set(arg0, arg1);
-    }
-  };
-  items[6] = {
-    key: "getData",
-    value(arg0) {
-      if (null != this._data) {
-        const _data = this._data;
-        return _data.get(arg0);
-      }
-    }
-  };
-  return callback(Token, items);
-})();
-let closure_3 = tmp3;
-tmp2.NON_TOKEN_TYPE = "NON_TOKEN";
-tmp2.Token = tmp3;
+  const _data = self._data;
+  const result = _data.set(arg0, arg1);
+};
+prototype2["getData"] = function getData(arg0) {
+  if (null != this._data) {
+    const _data = tmp._data;
+    return _data.get(arg0);
+  }
+};
+QueryTokenizer.NON_TOKEN_TYPE = "NON_TOKEN";
+QueryTokenizer.Token = Token;
 let result = require("set").fileFinishedImporting("lib/QueryTokenizer.tsx");
 
-export default tmp2;
+export default QueryTokenizer;
 export const NON_TOKEN_TYPE = "NON_TOKEN";
-export const QueryTokenizer = tmp2;
-export const Token = tmp3;
+export { QueryTokenizer };
+export { Token };

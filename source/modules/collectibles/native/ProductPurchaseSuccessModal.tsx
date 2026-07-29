@@ -1,89 +1,91 @@
-// Module ID: 9769
-// Function ID: 75915
+// Module ID: 9791
+// Function ID: 9792
 // Name: CancelButton
-// Dependencies: [57, 830, 31, 27, 4157, 8015, 653, 33, 4165, 689, 1877, 9768, 5128, 5153, 1212, 4026, 4577, 4166, 4134, 5790, 9770, 3869, 4589, 8640, 9772, 566, 9773, 9774, 8696, 8143, 8713, 8022, 5155, 9782, 8032, 8043, 8051, 8721, 9801, 4161, 5792, 4578, 2]
+// Dependencies: [32, 853, 19, 17, 4181, 676, 21, 4189, 712, 1901, 9790, 5150, 5175, 1236, 4050, 4599, 4190, 4158, 5808, 9792, 3893, 4611, 8664, 9794, 589, 9795, 9796, 8720, 8167, 8737, 8046, 5177, 9804, 8056, 8067, 8075, 8745, 9823, 4185, 5810, 4600, 2]
 // Exports: default
 
-// Module 9769 (CancelButton)
-import _slicedToArray from "_slicedToArray";
+// Module 9791 (CancelButton)
+import BalanceWidgetPill from "BalanceWidgetPill";
 import _toArray from "_toArray";
-import ItemsSortingHat from "ItemsSortingHat";
-import get_ActivityIndicator from "useHandleUseNow";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import { BUNDLE_PREVIEW_CONFIG } from "SAMPLE_PROFILE_ASPECT_RATIO";
+import importDefaultResult1 from "importDefaultResult1";
+import get_ActivityIndicator from "HapticFeedbackTypes";
+import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
 import ME from "ME";
-import jsxProd from "BalanceWidgetPill";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import jsxProd from "LinearGradient";
+import createCacheKey from "createCacheKey";
+import createCacheKey from "createCacheKey";
 
-let closure_10;
-let closure_11;
+let c10;
 let closure_12;
-let closure_13;
 let closure_14;
 let closure_6;
-let closure_7;
-let closure_8;
+let error;
+let map1;
+let metroImportAll;
+let unpackModuleId;
 const require = arg1;
 function CancelButton(arg0) {
   let onCancel;
   let require;
   ({ tintColor: require, onCancel } = arg0);
-  const dependencyMap = _createForOfIteratorHelperLoose();
+  let dependencyMap;
+  dependencyMap = createCacheKey();
   const items = [onCancel];
   const callback = React.useCallback(() => {
-    if (null != onCancel) {
-      onCancel();
+    if (onCancel != null) {
+      tmp();
     }
-    onCancel(closeButtonIcon[11]).close();
+    onCancel(closeButtonIcon[10]).close();
   }, items);
   const obj = {
     onPress: callback,
     backImage() {
       const style = [closeButtonIcon.closeButtonIcon, { tintColor: closure_0 }];
-      return outer1_12(outer1_0(closeButtonIcon[13]).XSmallIcon, { size: "lg", style });
-    }
+      return outer1_12(outer1_0(closeButtonIcon[12]).XSmallIcon, { size: "lg", style });
+    },
+    accessibilityLabel: null,
+    labelVisible: false
   };
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj.accessibilityLabel = intl.string(require(1212) /* getSystemLocale */.t.cpT0Cq);
-  obj.labelVisible = false;
-  return callback2(require(5128) /* Background */.HeaderBackButton, obj);
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj[2] = intl.string(require(1236) /* getSystemLocale */.t.cpT0Cq);
+  return callback(require(5150) /* Background */.HeaderBackButton, obj);
 }
 function ProductPurchaseGradientBackground(product) {
   product = product.product;
+  let backgroundColors;
   let importDefault;
   let token;
   let token1;
-  const backgroundColors = importDefault(token[20])(product.styles).backgroundColors;
+  backgroundColors = importDefault(token[19])(product.styles).backgroundColors;
   let tertiary;
-  if (null != backgroundColors) {
+  if (backgroundColors != null) {
     tertiary = backgroundColors.tertiary;
   }
-  importDefault = tmp3;
-  let obj = backgroundColors(token[21]);
-  token = obj.useToken(importDefault(token[9]).colors.BACKGROUND_BASE_LOW);
-  const tmp = callback3(product.type);
-  token1 = backgroundColors(token[21]).useToken(importDefault(token[9]).colors.BACKGROUND_SURFACE_HIGH);
+  importDefault = tmp5;
+  let obj = backgroundColors(tmp3[20]);
+  token = obj.useToken(tmp2(tmp3[8]).colors.BACKGROUND_BASE_LOW);
+  const tmp = callback2(product.type);
+  token1 = backgroundColors(token[20]).useToken(tmp2(tmp3[8]).colors.BACKGROUND_SURFACE_HIGH);
   let items = [backgroundColors, token, token1, null != tertiary];
   const memo = React.useMemo(() => {
     if (null == backgroundColors) {
       const items = [token, token, token1, outer1_22, outer1_22];
       let items2 = items;
     } else {
-      const primary2 = backgroundColors.primary;
+      const primary2 = tmp.primary;
       const toHexStringResult = primary2.toHexString();
       if (c1) {
         const items1 = [toHexStringResult, , ];
-        const secondary2 = tmp9.secondary;
+        const secondary2 = tmp.secondary;
         items1[1] = secondary2.toHexString();
-        const tertiary = tmp9.tertiary;
+        const tertiary = tmp.tertiary;
         items1[2] = tertiary.toHexString();
         items2 = items1;
       } else {
         items2 = [toHexStringResult, , , , ];
-        const primary = tmp9.primary;
+        const primary = tmp.primary;
         items2[1] = primary.toHexString();
-        const secondary = tmp9.secondary;
+        const secondary = tmp.secondary;
         items2[2] = secondary.toHexString();
         items2[3] = outer1_22;
         items2[4] = outer1_22;
@@ -92,71 +94,77 @@ function ProductPurchaseGradientBackground(product) {
     return items2;
   }, items);
   obj = { style: tmp.backdrop, start: constants.START, end: constants.END, locations: null != tertiary ? [0, 0.6, 0.85] : [0, 0.05, 0.6, 0.95, 1], colors: memo };
-  return callback2(importDefault(token[22]), obj);
+  return callback(importDefault(token[21]), obj);
 }
-({ Image: closure_6, ScrollView: closure_7, View: closure_8 } = get_ActivityIndicator);
-({ Orientation: closure_10, VerticalGradient: closure_11 } = ME);
-({ jsx: closure_12, jsxs: closure_13, Fragment: closure_14 } = jsxProd);
-let closure_15 = { width: BUNDLE_PREVIEW_CONFIG.large.bundleWidth, height: BUNDLE_PREVIEW_CONFIG.large.bundleHeight };
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { tintColor: require("_createForOfIteratorHelperLoose").colors.MOBILE_TEXT_HEADING_PRIMARY };
-_createForOfIteratorHelperLoose.closeButtonIcon = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-let closure_17 = _createForOfIteratorHelperLoose.createStyles((arg0) => {
+({ Image: closure_6, ScrollView: error, View: metroImportAll } = get_ActivityIndicator);
+({ Orientation: c10, VerticalGradient: unpackModuleId } = ME);
+({ jsx: closure_12, jsxs: map1, Fragment: closure_14 } = jsxProd);
+createCacheKey = { closeButtonIcon: null };
+createCacheKey = { tintColor: require("Themes").colors.MOBILE_TEXT_HEADING_PRIMARY };
+createCacheKey[0] = createCacheKey;
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let closure_16 = createCacheKey.createStyles((arg0) => {
   let flag = arg1;
   if (arg1 === undefined) {
     flag = false;
   }
-  let obj = {};
-  obj = { flex: 1, backgroundColor: importDefault(689).colors.BACKGROUND_BASE_LOW };
-  obj.root = obj;
-  obj = { flexDirection: "row", alignItems: "center", paddingHorizontal: importDefault(689).space.PX_16 };
-  obj.header = obj;
-  obj.headerLeading = { flex: 1, flexDirection: "row", alignItems: "center" };
-  obj.imageBackground = { resizeMode: "cover", position: "absolute", top: 0, bottom: 0, left: 0, right: 0 };
-  obj.backdrop = { position: "absolute", top: 0, bottom: 0, left: 0, right: 0 };
-  obj.main = { flex: 1 };
-  const obj1 = { position: "absolute", backgroundColor: importDefault(689).colors.BLACK, top: 0, bottom: 0, left: 0, right: 0 };
-  obj.curtain = obj1;
-  obj.body = { flexGrow: 1, flexDirection: "column", justifyContent: "center" };
-  const obj2 = { flexDirection: "row", justifyContent: "center", alignItems: "center" };
+  let obj = { root: null, header: null, headerLeading: null, imageBackground: null, backdrop: null, main: null, curtain: null, body: null, preview: null, previewBundle: null, messages: null, title: null, footer: null, cta: null };
+  obj = { flex: 1, backgroundColor: importDefault(712).colors.BACKGROUND_BASE_LOW };
+  obj[0] = obj;
+  obj = { flexDirection: "row", alignItems: "center", paddingHorizontal: importDefault(712).space.PX_16 };
+  obj[1] = obj;
+  obj[2] = { flex: 1, flexDirection: "row", alignItems: "center" };
+  obj[3] = { resizeMode: "cover", position: "absolute", top: 0, bottom: 0, left: 0, right: 0 };
+  obj[4] = { position: "absolute", top: 0, bottom: 0, left: 0, right: 0 };
+  obj[5] = { flex: 1 };
+  obj[6] = { position: "absolute", backgroundColor: importDefault(712).colors.BLACK, top: 0, bottom: 0, left: 0, right: 0 };
+  obj[7] = { flexGrow: 1, flexDirection: "column", justifyContent: "center" };
   let num = 0;
-  if (arg0 === require(1877) /* CollectiblesItemType */.CollectiblesItemType.AVATAR_DECORATION) {
+  if (arg0 === require(1901) /* CollectiblesItemType */.CollectiblesItemType.AVATAR_DECORATION) {
     num = 1;
   }
-  obj2.flex = num;
+  const obj2 = { flexDirection: "row", justifyContent: "center", alignItems: "center", flex: num, marginTop: null, marginHorizontal: null };
   let str = 0;
-  if (arg0 === require(1877) /* CollectiblesItemType */.CollectiblesItemType.AVATAR_DECORATION) {
+  if (arg0 === require(1901) /* CollectiblesItemType */.CollectiblesItemType.AVATAR_DECORATION) {
     str = "20%";
   }
-  obj2.marginTop = str;
+  obj2[4] = str;
   let PX_32;
-  if (arg0 === require(1877) /* CollectiblesItemType */.CollectiblesItemType.NAMEPLATE) {
-    PX_32 = importDefault(689).space.PX_32;
+  if (arg0 === require(1901) /* CollectiblesItemType */.CollectiblesItemType.NAMEPLATE) {
+    PX_32 = tmp(712).space.PX_32;
   }
-  obj2.marginHorizontal = PX_32;
+  obj2[5] = PX_32;
   if (flag) {
-    if (arg0 === require(1877) /* CollectiblesItemType */.CollectiblesItemType.AVATAR_DECORATION) {
-      const obj3 = { shadowColor: importDefault(689).unsafe_rawColors.PRIMARY_630, shadowOffset: { width: 0, height: 0 }, shadowOpacity: 1, shadowRadius: 60, elevation: 24 };
+    if (arg0 === tmp3(1901).CollectiblesItemType.AVATAR_DECORATION) {
+      const obj3 = { shadowColor: null, shadowOffset: null, shadowOpacity: 1, shadowRadius: 60, elevation: 24 };
+      obj3[0] = tmp(712).unsafe_rawColors.PRIMARY_630;
+      obj3[1] = { width: 0, height: 0 };
       let obj8 = obj3;
     }
     const merged = Object.assign(obj8);
-    obj.preview = obj2;
-    obj.previewBundle = { flex: 1, justifyContent: "flex-start", alignItems: "center", minHeight: 250 };
-    const obj4 = { paddingTop: importDefault(689).space.PX_24, minHeight: null, flexDirection: "column", alignItems: "center", justifyContent: "flex-start" };
+    obj[8] = obj2;
+    obj[9] = { flex: 1, justifyContent: "flex-start", alignItems: "center", minHeight: 250 };
+    const obj4 = { paddingTop: null, minHeight: null, flexDirection: "column", alignItems: "center", justifyContent: "flex-start", gap: null };
+    obj4[0] = tmp(712).space.PX_24;
     let str2;
-    if (arg0 === require(1877) /* CollectiblesItemType */.CollectiblesItemType.AVATAR_DECORATION) {
+    if (arg0 === tmp3(1901).CollectiblesItemType.AVATAR_DECORATION) {
       str2 = "32%";
     }
-    obj4.minHeight = str2;
-    obj4.gap = importDefault(689).space.PX_16;
-    obj.messages = obj4;
-    const obj5 = { textAlign: "center", marginHorizontal: importDefault(689).space.PX_32 };
-    obj.title = obj5;
-    const obj6 = { marginBottom: importDefault(689).space.PX_16 };
-    obj.footer = obj6;
-    const obj7 = { flexDirection: "row", gap: importDefault(689).space.PX_12, paddingVertical: importDefault(689).space.PX_16, marginHorizontal: importDefault(689).space.PX_24, borderRadius: importDefault(689).radii.round };
-    obj.cta = obj7;
+    obj4[1] = str2;
+    obj4[5] = tmp(712).space.PX_16;
+    obj[10] = obj4;
+    const obj5 = { textAlign: "center", marginHorizontal: null };
+    obj5[1] = tmp(712).space.PX_32;
+    obj[11] = obj5;
+    const obj6 = { marginBottom: null };
+    obj6[0] = tmp(712).space.PX_16;
+    obj[12] = obj6;
+    const obj7 = { flexDirection: "row", gap: null, paddingVertical: null, marginHorizontal: null, borderRadius: null };
+    obj7[1] = tmp(712).space.PX_12;
+    obj7[2] = tmp(712).space.PX_16;
+    obj7[3] = tmp(712).space.PX_24;
+    obj7[4] = tmp(712).radii.round;
+    obj[13] = obj7;
     return obj;
   }
   obj8 = {};
@@ -167,22 +175,21 @@ let closure_20 = { code: "function ProductPurchaseSuccessModalTsx3(){const{inter
 let closure_21 = [80, 79, 78, 75, 72, 50, 45, 35, 70];
 let closure_22 = require("tinycolor")("black").toHexString();
 let obj5 = require("tinycolor")("black");
-let result = require("result").fileFinishedImporting("modules/collectibles/native/ProductPurchaseSuccessModal.tsx");
+let result = require("noop").fileFinishedImporting("modules/collectibles/native/ProductPurchaseSuccessModal.tsx");
 
 export default function ProductPurchaseSuccessModal(orbBalancePriorToPurchase) {
   let avatarDecorationSize;
   let avatarSize;
   let canUseNow;
-  let curtainViewStyle;
   let handleEditProfile;
   let handleUseNow;
   let onCancel;
   let onSuccess;
-  let previewViewStyle;
   let product;
   let renderMessages;
+  let sharedValue;
   let showOrbBalancePill;
-  let textViewStyle;
+  let tmp25;
   let useCategoryImage;
   ({ product, useCategoryImage } = orbBalancePriorToPurchase);
   if (useCategoryImage === undefined) {
@@ -196,297 +203,322 @@ export default function ProductPurchaseSuccessModal(orbBalancePriorToPurchase) {
   if (prop === undefined) {
     prop = null;
   }
-  let _require;
+  let stateFromStores;
   let callback;
-  let obj = _require(8640);
+  sharedValue = undefined;
+  let obj = stateFromStores(sharedValue[22]);
   const currentUser = obj.useCurrentUser();
-  const backgroundColors = callback(9770)(product.styles).backgroundColors;
+  const backgroundColors = callback(sharedValue[19])(product.styles).backgroundColors;
   let tertiary;
-  if (null != backgroundColors) {
+  if (backgroundColors != null) {
     tertiary = backgroundColors.tertiary;
   }
-  const tmp3 = callback3(product.type, null != tertiary);
-  let obj2 = _require(3869);
-  let token = obj2.useToken(callback(689).colors.INTERACTIVE_TEXT_ACTIVE);
-  _require = React.useRef(closure_21);
+  const tmp6 = callback2(product.type, null != tertiary);
+  let tmp2Result = tmp2(tmp3[20]);
+  let obj3 = React;
+  const token = tmp2Result.useToken(tmp4(tmp3[8]).colors.INTERACTIVE_TEXT_ACTIVE);
+  stateFromStores = React.useRef(closure_21);
   callback = React.useCallback(() => {
-    const arr = outer1_4(ref.current);
+    const arr = outer1_4(stateFromStores.current);
     const first = arr[0];
     const substr = arr.slice(1);
     if (null != first) {
       if (0 === substr.length) {
-        const result = ref(outer1_2[18]).triggerHapticFeedback(ref(outer1_2[18]).HapticFeedbackTypes.IMPACT_HEAVY);
-        const obj3 = ref(outer1_2[18]);
+        const result = stateFromStores(sharedValue[17]).triggerHapticFeedback(stateFromStores(sharedValue[17]).HapticFeedbackTypes.IMPACT_HEAVY);
+        const obj3 = stateFromStores(sharedValue[17]);
       }
       if (null != first) {
         const _setTimeout = setTimeout;
         const timerId = setTimeout(callback, first);
       }
-      ref.current = substr;
+      stateFromStores.current = substr;
     }
     if (substr.length >= outer1_21.length / 2) {
-      const result1 = ref(outer1_2[18]).triggerHapticFeedback(ref(outer1_2[18]).HapticFeedbackTypes.IMPACT_LIGHT);
-      const obj2 = ref(outer1_2[18]);
+      const result1 = stateFromStores(sharedValue[17]).triggerHapticFeedback(stateFromStores(sharedValue[17]).HapticFeedbackTypes.IMPACT_LIGHT);
+      const obj2 = stateFromStores(sharedValue[17]);
     } else {
-      const result2 = ref(outer1_2[18]).triggerHapticFeedback(ref(outer1_2[18]).HapticFeedbackTypes.IMPACT_MEDIUM);
-      const obj = ref(outer1_2[18]);
+      const result2 = stateFromStores(sharedValue[17]).triggerHapticFeedback(stateFromStores(sharedValue[17]).HapticFeedbackTypes.IMPACT_MEDIUM);
+      const obj = stateFromStores(sharedValue[17]);
     }
   }, []);
   let items = [callback];
-  let effect = React.useEffect(() => {
+  const effect = React.useEffect(() => {
     callback();
     return () => {
-      outer1_0.current = [];
+      closure_0.current = [];
     };
   }, items);
-  let obj3 = _require(9772);
-  const avatarDecorationPreviewSizes = obj3.useAvatarDecorationPreviewSizes();
+  tmp2Result = tmp2(tmp3[23]);
+  const avatarDecorationPreviewSizes = tmp2Result.useAvatarDecorationPreviewSizes();
   ({ avatarSize, avatarDecorationSize } = avatarDecorationPreviewSizes);
-  let obj4 = _require(566);
-  let items1 = [_isNativeReflectConstruct];
-  const stateFromStores = obj4.useStateFromStores(items1, () => outer1_9.useReducedMotion);
-  let tmp9 = product.type === _require(1877).CollectiblesItemType.PROFILE_EFFECT;
-  if (!tmp9) {
-    tmp9 = product.type === _require(1877).CollectiblesItemType.PROFILE_FRAME;
+  let items1 = [maybeApplyNoTextColorForLightCustomTheme];
+  stateFromStores = stateFromStores(sharedValue[24]).useStateFromStores(items1, () => useReducedMotion.useReducedMotion);
+  let tmp12 = product.type === tmp2(tmp3[9]).CollectiblesItemType.PROFILE_EFFECT;
+  if (!tmp12) {
+    tmp12 = product.type === tmp2(tmp3[9]).CollectiblesItemType.PROFILE_FRAME;
   }
-  ({ previewViewStyle, textViewStyle, curtainViewStyle } = (function useAnimationStyles(stateFromStores, isProfilePreview) {
-    let closure_1 = isProfilePreview;
-    let obj = ref(outer1_2[15]);
-    const sharedValue = obj.useSharedValue(0);
-    let obj1 = ref(outer1_2[15]);
-    const sharedValue1 = obj1.useSharedValue(0);
-    let items = [sharedValue, stateFromStores, sharedValue1];
-    const effect = outer1_5.useEffect(() => {
-      let num = 1;
-      if (!stateFromStores) {
-        let obj = stateFromStores(outer2_2[15]);
-        num = obj.withDelay(200, stateFromStores(outer2_2[16]).withSpring(1, { duration: 500, dampingRatio: 0.7 }));
-        const obj2 = stateFromStores(outer2_2[16]);
-      }
-      const result = sharedValue.set(num);
-      let num5 = 1;
-      if (!stateFromStores) {
-        const obj3 = stateFromStores(outer2_2[15]);
-        obj = { duration: 200 };
-        num5 = obj3.withDelay(200, stateFromStores(outer2_2[17]).withTiming(1, obj));
-        const obj4 = stateFromStores(outer2_2[17]);
-      }
-      const result1 = sharedValue1.set(num5);
-    }, items);
-    obj = {};
-    const fn = function n() {
-      let obj = { opacity: stateFromStores(outer2_2[15]).interpolate(sharedValue.get(), [0, 1], [0.1, 1]) };
-      obj = {};
-      const obj2 = stateFromStores(outer2_2[15]);
-      let num = 0;
-      const value = sharedValue.get();
-      if (closure_1) {
-        num = 0.6;
-      }
-      const items = [num, 1];
-      obj.scale = stateFromStores(outer2_2[15]).interpolate(value, [0, 1], items);
-      const items1 = [obj];
-      obj.transform = items1;
-      return obj;
-    };
-    obj = { interpolate: ref(outer1_2[15]).interpolate, springInput: sharedValue, isProfilePreview };
-    fn.__closure = obj;
-    fn.__workletHash = 15385317790278;
-    fn.__initData = outer1_18;
-    obj.previewViewStyle = stateFromStores(outer1_2[15]).useAnimatedStyle(fn);
-    let obj4 = stateFromStores(outer1_2[15]);
-    const fn2 = function s() {
-      let obj = { opacity: stateFromStores(outer2_2[15]).interpolate(sharedValue.get(), [0, 1], [0, 1]) };
-      obj = {};
-      const obj2 = stateFromStores(outer2_2[15]);
-      obj.scale = stateFromStores(outer2_2[15]).interpolate(sharedValue.get(), [0, 1], [0.75, 1]);
-      const items = [obj];
-      obj.transform = items;
-      return obj;
-    };
-    obj1 = { interpolate: ref(outer1_2[15]).interpolate, springInput: sharedValue };
-    fn2.__closure = obj1;
-    fn2.__workletHash = 4517716462039;
-    fn2.__initData = outer1_19;
-    obj.textViewStyle = stateFromStores(outer1_2[15]).useAnimatedStyle(fn2);
-    const obj6 = stateFromStores(outer1_2[15]);
-    const fn3 = function c() {
-      const obj = { opacity: stateFromStores(outer2_2[15]).interpolate(sharedValue1.get(), [0, 1], [0.5, 0]) };
-      return obj;
-    };
-    const obj8 = stateFromStores(outer1_2[15]);
-    fn3.__closure = { interpolate: stateFromStores(outer1_2[15]).interpolate, linearInput: sharedValue1 };
-    fn3.__workletHash = 6018737312;
-    fn3.__initData = outer1_20;
-    obj.curtainViewStyle = obj8.useAnimatedStyle(fn3);
+  callback = tmp12;
+  const tmp2Result1 = stateFromStores(sharedValue[24]);
+  sharedValue = stateFromStores(sharedValue[14]).useSharedValue(0);
+  const tmp2Result2 = stateFromStores(sharedValue[14]);
+  const sharedValue1 = stateFromStores(sharedValue[14]).useSharedValue(0);
+  const items2 = [sharedValue, stateFromStores, sharedValue1];
+  const effect1 = obj3.useEffect(() => {
+    let num = 1;
+    if (!stateFromStores) {
+      const obj = stateFromStores(sharedValue[14]);
+      num = obj.withDelay(200, stateFromStores(sharedValue[15]).withSpring(1, { duration: 500, dampingRatio: 0.7 }));
+      const obj2 = stateFromStores(sharedValue[15]);
+    }
+    const result = sharedValue.set(num);
+    let num3 = 1;
+    if (!stateFromStores) {
+      const obj3 = stateFromStores(sharedValue[14]);
+      num3 = obj3.withDelay(200, stateFromStores(sharedValue[16]).withTiming(1, { duration: 200 }));
+      const obj4 = stateFromStores(sharedValue[16]);
+    }
+    const result1 = sharedValue1.set(num3);
+  }, items2);
+  const tmp2Result3 = stateFromStores(sharedValue[14]);
+  const fn = function l() {
+    let obj = { opacity: null, transform: null };
+    obj[0] = stateFromStores(sharedValue[14]).interpolate(sharedValue.get(), [0, 1], [0.1, 1]);
+    const obj2 = stateFromStores(sharedValue[14]);
+    let num = 0;
+    const value = sharedValue.get();
+    if (callback) {
+      num = 0.6;
+    }
+    obj = { scale: stateFromStores(sharedValue[14]).interpolate(value, [0, 1], items) };
+    items = [num, 1];
+    const items1 = [obj];
+    obj[1] = items1;
     return obj;
-  })(stateFromStores, tmp9));
-  let obj5 = _require(9773);
-  const category = obj5.useFetchCollectiblesProductCategory(product.skuId).category;
-  if (null != category) {
+  };
+  obj = { interpolate: tmp2(tmp3[14]).interpolate, springInput: sharedValue, isProfilePreview: tmp12 };
+  fn.__closure = obj;
+  fn.__workletHash = 15385317790278;
+  fn.__initData = closure_18;
+  const animatedStyle = stateFromStores(sharedValue[14]).useAnimatedStyle(fn);
+  const tmp2Result4 = stateFromStores(sharedValue[14]);
+  const fn2 = function n() {
+    let obj = { opacity: null, transform: null };
+    obj[0] = stateFromStores(sharedValue[14]).interpolate(sharedValue.get(), [0, 1], [0, 1]);
+    obj = { scale: null };
+    const obj2 = stateFromStores(sharedValue[14]);
+    obj[0] = stateFromStores(sharedValue[14]).interpolate(sharedValue.get(), [0, 1], [0.75, 1]);
+    const items = [obj];
+    obj[1] = items;
+    return obj;
+  };
+  obj = { interpolate: tmp2(tmp3[14]).interpolate, springInput: sharedValue };
+  fn2.__closure = obj;
+  fn2.__workletHash = 4517716462039;
+  fn2.__initData = closure_19;
+  const animatedStyle1 = stateFromStores(sharedValue[14]).useAnimatedStyle(fn2);
+  const tmp2Result5 = stateFromStores(sharedValue[14]);
+  const fn3 = function s() {
+    const obj = { opacity: null };
+    obj[0] = stateFromStores(sharedValue[14]).interpolate(sharedValue1.get(), [0, 1], [0.5, 0]);
+    return obj;
+  };
+  const tmp2Result6 = stateFromStores(sharedValue[14]);
+  fn3.__closure = { interpolate: stateFromStores(sharedValue[14]).interpolate, linearInput: sharedValue1 };
+  fn3.__workletHash = 6018737312;
+  fn3.__initData = closure_20;
+  const animatedStyle2 = tmp2Result6.useAnimatedStyle(fn3);
+  const obj1 = { interpolate: stateFromStores(sharedValue[14]).interpolate, linearInput: sharedValue1 };
+  const category = stateFromStores(sharedValue[25]).useFetchCollectiblesProductCategory(product.skuId).category;
+  if (category != null) {
     const mobileBgUrl = category.mobileBgUrl;
   }
-  let obj6 = _require(9774);
-  handleUseNow = obj6.useHandleUseNow({ product, onSuccess });
+  const tmp2Result7 = stateFromStores(sharedValue[25]);
+  handleUseNow = stateFromStores(sharedValue[26]).useHandleUseNow({ product, onSuccess });
   const isApplying = handleUseNow.isApplying;
   ({ handleUseNow, canUseNow, handleEditProfile } = handleUseNow);
   const avatarSource = currentUser.getAvatarSource(undefined, false, avatarSize);
-  let obj7 = _require(8696);
-  const effect1 = React.useEffect(() => {
-    ref(outer1_2[29]).lockOrientation(outer1_10.PORTRAIT);
+  const tmp2Result8 = stateFromStores(sharedValue[26]);
+  const effect2 = obj3.useEffect(() => {
+    stateFromStores(sharedValue[28]).lockOrientation(constants.PORTRAIT);
     return () => {
-      const result = callback(outer2_2[29]).restoreDefaultOrientation();
+      const result = callback(table[28]).restoreDefaultOrientation();
     };
   }, []);
-  let obj8 = _require(8713);
-  const previewCollectibleProduct = obj8.usePreviewCollectibleProduct(product, true);
-  let obj9 = _require(8022);
-  const shopProductItems = obj9.useShopProductItems(product);
-  obj = { style: tmp3.root, id: product.skuId };
+  const tmp2Result9 = stateFromStores(sharedValue[27]);
+  const previewCollectibleProduct = stateFromStores(sharedValue[29]).usePreviewCollectibleProduct(product, true);
+  const tmp2Result10 = stateFromStores(sharedValue[29]);
+  const shopProductItems = stateFromStores(sharedValue[30]).useShopProductItems(product);
+  const tmp2Result11 = stateFromStores(sharedValue[30]);
+  [tmp25, sharedValue] = sharedValue1(obj3.useState(), 2);
+  let obj2 = { style: tmp6.root, id: product.skuId, children: null };
   if (useCategoryImage) {
     if (null != mobileBgUrl) {
-      obj = {};
-      let obj1 = { uri: mobileBgUrl };
-      obj.source = obj1;
-      obj.style = tmp3.imageBackground;
-      let tmp20 = callback2(closure_6, obj);
+      obj3 = { source: null, style: null };
+      let obj4 = { uri: null };
+      obj4[0] = mobileBgUrl;
+      obj3[0] = obj4;
+      obj3[1] = tmp6.imageBackground;
+      let tmp29 = callback(closure_6, obj3);
+      let tmp30 = callback;
+      let tmp31 = callback;
     }
-    const items2 = [tmp20, , ];
-    obj2 = { style: null, top: true, bottom: true, left: true, right: true };
-    const items3 = [tmp3.main, ];
-    obj3 = {};
+    const items3 = [tmp29, , ];
+    const items4 = [tmp6.main, ];
     let str;
     if (useCategoryImage) {
       str = "rgba(0, 0, 0, 0.3)";
     }
-    obj3.backgroundColor = str;
-    items3[1] = obj3;
-    obj2.style = items3;
-    obj4 = { style: tmp3.header };
-    obj5 = { style: tmp3.headerLeading };
+    const obj5 = { style: null, top: true, bottom: true, left: true, right: true, children: null };
+    const obj6 = { backgroundColor: null };
+    obj6[0] = str;
+    items4[1] = obj6;
+    obj5[0] = items4;
+    const obj7 = { style: null, children: null };
+    obj7[0] = tmp6.header;
+    const obj8 = { style: null, children: null };
+    obj8[0] = tmp6.headerLeading;
     if (showOrbBalancePill) {
-      obj6 = { initialRenderedBalance: prop, balance: obj7.useFetchVirtualCurrencyBalance().balance };
-      showOrbBalancePill = callback2(_require(9782).BalanceWidgetPill, obj6);
+      const obj9 = { initialRenderedBalance: null, balance: null };
+      obj9[0] = prop;
+      obj9[1] = tmp2Result9.useFetchVirtualCurrencyBalance().balance;
+      showOrbBalancePill = tmp31(tmp2(tmp3[32]).BalanceWidgetPill, obj9);
     }
-    obj5.children = showOrbBalancePill;
-    const items4 = [callback2(closure_8, obj5), ];
-    obj7 = {};
+    obj8[1] = showOrbBalancePill;
+    const items5 = [tmp31(tmp28, obj8), ];
     let toHexStringResult;
-    if (null != backgroundColors) {
+    if (backgroundColors != null) {
       const label = backgroundColors.label;
       toHexStringResult = label.toHexString();
     }
-    if (null != toHexStringResult) {
-      token = toHexStringResult;
+    if (toHexStringResult == null) {
+      toHexStringResult = token;
     }
-    obj7.tintColor = token;
-    obj7.onCancel = onCancel;
-    items4[1] = callback2(CancelButton, obj7);
-    obj4.children = items4;
-    const items5 = [closure_13(closure_8, obj4), , ];
-    obj8 = {};
-    obj9 = { flex: 1 };
-    obj8.style = obj9;
-    obj8.contentContainerStyle = tmp3.body;
-    obj8.alwaysBounceVertical = false;
-    const obj10 = {};
-    const items6 = [tmp3.preview, previewViewStyle];
-    obj10.style = items6;
+    const obj10 = { tintColor: null, onCancel: null };
+    obj10[0] = toHexStringResult;
+    obj10[1] = onCancel;
+    items5[1] = tmp31(CancelButton, obj10);
+    obj7[1] = items5;
+    const items6 = [tmp27(tmp28, obj7), , ];
+    const obj11 = { style: null, contentContainerStyle: null, alwaysBounceVertical: false, children: null };
+    obj11[0] = { flex: 1 };
+    obj11[1] = tmp6.body;
+    const obj12 = { style: null, children: null };
+    const items7 = [tmp6.preview, animatedStyle];
+    obj12[0] = items7;
     const type = product.type;
-    if (_require(1877).CollectiblesItemType.BUNDLE === type) {
-      const obj11 = { style: tmp3.previewBundle };
-      const obj12 = {};
-      ({ firstAvatarDecoration: obj27.deco, firstProfileEffect: obj27.pfx, firstNameplate: obj27.nameplate } = shopProductItems);
-      obj12.previewAssets = product.previewAssets;
-      obj12.disableStaticBackground = true;
-      obj12.size = "large";
-      obj12.targetSize = closure_15;
-      obj12.exposureLocation = "ProductPurchaseSuccessModal";
-      obj11.children = callback2(callback(8032), obj12);
-      let tmp43 = callback2(closure_8, obj11);
-    } else if (_require(1877).CollectiblesItemType.AVATAR_DECORATION === type) {
-      const obj13 = { item: callback(product.items, 1)[0], size: avatarDecorationSize, avatarSource, animate: !stateFromStores };
-      tmp43 = callback2(callback(8043), obj13);
-    } else if (_require(1877).CollectiblesItemType.PROFILE_EFFECT === type) {
-      const obj14 = { user: currentUser, profileEffect: product.items[0] };
-      tmp43 = callback2(callback(8051), obj14);
-    } else if (_require(1877).CollectiblesItemType.PROFILE_FRAME === type) {
-      const obj15 = { user: currentUser, profileFrame: product.items[0] };
-      tmp43 = callback2(callback(8721), obj15);
+    if (tmp2(tmp3[9]).CollectiblesItemType.BUNDLE === type) {
+      const obj13 = { style: null, onLayout: null, children: null };
+      obj13[0] = tmp6.previewBundle;
+      obj13[1] = tmp26;
+      let tmp30Result = null != tmp25;
+      if (tmp30Result) {
+        const obj14 = { deco: null, pfx: null, nameplate: null, previewAssets: null, disableStaticBackground: true, size: "large", targetSize: null, exposureLocation: "ProductPurchaseSuccessModal" };
+        ({ firstAvatarDecoration: obj35[0], firstProfileEffect: obj35[1], firstNameplate: obj35[2] } = shopProductItems);
+        obj14[3] = product.previewAssets;
+        obj14[6] = tmp25;
+        tmp30Result = tmp30(tmp4(tmp3[33]), obj14);
+      }
+      obj13[2] = tmp30Result;
+      tmp30Result = tmp30(tmp28, obj13);
+    } else if (tmp2(tmp3[9]).CollectiblesItemType.AVATAR_DECORATION === type) {
+      const obj15 = { item: null, size: null, avatarSource: null, animate: null };
+      obj15[0] = sharedValue1(product.items, 1)[0];
+      obj15[1] = avatarDecorationSize;
+      obj15[2] = avatarSource;
+      obj15[3] = !stateFromStores;
+      tmp30Result = tmp30(tmp4(tmp3[34]), obj15);
+    } else if (tmp2(tmp3[9]).CollectiblesItemType.PROFILE_EFFECT === type) {
+      const obj16 = { user: null, profileEffect: null };
+      obj16[0] = currentUser;
+      obj16[1] = product.items[0];
+      tmp30Result = tmp30(tmp4(tmp3[35]), obj16);
+    } else if (tmp2(tmp3[9]).CollectiblesItemType.PROFILE_FRAME === type) {
+      const obj17 = { user: null, profileFrame: null };
+      obj17[0] = currentUser;
+      obj17[1] = product.items[0];
+      tmp30Result = tmp30(tmp4(tmp3[36]), obj17);
     } else {
-      tmp43 = null;
-      if (_require(1877).CollectiblesItemType.NAMEPLATE === type) {
-        const obj16 = { user: currentUser, nameplate: product.items[0], animate: true };
-        tmp43 = callback2(_require(9801).NameplatePreview, obj16);
+      tmp30Result = null;
+      if (tmp2(tmp3[9]).CollectiblesItemType.NAMEPLATE === type) {
+        const obj18 = { user: null, nameplate: null, animate: true };
+        obj18[0] = currentUser;
+        obj18[1] = product.items[0];
+        tmp30Result = tmp30(tmp2(tmp3[37]).NameplatePreview, obj18);
       }
     }
-    obj10.children = tmp43;
-    const items7 = [callback2(callback(4026).View, obj10), ];
-    const obj17 = {};
-    const items8 = [tmp3.messages, textViewStyle];
-    obj17.style = items8;
+    obj12[1] = tmp30Result;
+    const items8 = [tmp31(tmp4(tmp3[14]).View, obj12), ];
+    const obj19 = { style: null, children: null };
+    const items9 = [tmp6.messages, animatedStyle1];
+    obj19[0] = items9;
     if (null != renderMessages) {
       let renderMessagesResult = renderMessages();
     } else {
-      const obj18 = {};
-      const obj19 = { variant: "heading-xl/bold", color: "text-overlay-light", style: tmp3.title };
-      const intl3 = _require(1212).intl;
-      const obj20 = { itemName: product.name };
-      obj19.children = intl3.format(_require(1212).t.YNaxMp, obj20);
-      const items9 = [callback2(_require(4161).Text, obj19), ];
-      const obj21 = { variant: "text-md/medium", color: "text-overlay-light", style: tmp3.title };
-      let result = _require(5792).isPremiumCollectiblesProduct(product);
-      const intl4 = _require(1212).intl;
+      const obj20 = { variant: "heading-xl/bold", color: "text-overlay-light", style: null, children: null };
+      obj20[2] = tmp6.title;
+      const intl3 = tmp2(tmp3[13]).intl;
+      const obj21 = { itemName: null };
+      obj21[0] = product.name;
+      obj20[3] = intl3.format(tmp2(tmp3[13]).t.YNaxMp, obj21);
+      const items10 = [tmp31(tmp2(tmp3[38]).Text, obj20), ];
+      const obj22 = { variant: "text-md/medium", color: "text-overlay-light", style: null, children: null };
+      obj22[2] = tmp6.title;
+      let result = tmp2(tmp3[39]).isPremiumCollectiblesProduct(product);
+      const intl4 = tmp2(tmp3[13]).intl;
       const format = intl4.format;
-      const t = _require(1212).t;
+      const t = tmp2(tmp3[13]).t;
       if (result) {
-        const obj22 = { itemName: product.name };
-        let formatResult = format(t.nW6E3m, obj22);
+        const obj23 = { itemName: null };
+        obj23[0] = product.name;
+        let formatResult = format(t.nW6E3m, obj23);
       } else {
-        const obj23 = { itemName: product.name };
-        formatResult = format(t["4kp0AB"], obj23);
+        const obj24 = { itemName: null };
+        obj24[0] = product.name;
+        formatResult = format(t["4kp0AB"], obj24);
       }
-      obj21.children = formatResult;
-      items9[1] = callback2(_require(4161).Text, obj21);
-      obj18.children = items9;
-      renderMessagesResult = closure_13(closure_14, obj18);
-      const obj41 = _require(5792);
-      const tmp84 = closure_13;
-      const tmp85 = closure_14;
-      const tmp89 = callback2;
+      const obj25 = { children: null };
+      obj22[3] = formatResult;
+      items10[1] = tmp31(tmp2(tmp3[38]).Text, obj22);
+      obj25[0] = items10;
+      renderMessagesResult = tmp27(closure_14, obj25);
+      const tmp2Result12 = tmp2(tmp3[39]);
+      const tmp41 = closure_14;
     }
-    obj17.children = renderMessagesResult;
-    items7[1] = callback2(callback(4026).View, obj17);
-    obj8.children = items7;
-    items5[1] = closure_13(closure_7, obj8);
-    const obj24 = { style: tmp3.footer };
-    const obj25 = { style: tmp3.cta };
+    obj19[1] = renderMessagesResult;
+    items8[1] = tmp31(tmp4(tmp3[14]).View, obj19);
+    obj11[3] = items8;
+    items6[1] = tmp27(closure_7, obj11);
+    const obj26 = { style: null, children: null };
+    obj26[0] = tmp6.footer;
+    const obj27 = { style: null, children: null };
+    obj27[0] = tmp6.cta;
     if (canUseNow) {
-      const obj26 = { loading: isApplying, disabled: isApplying, onPress: handleUseNow };
-      const intl2 = _require(1212).intl;
-      obj26.text = intl2.string(_require(1212).t.MAS7uK);
-      obj26.size = "lg";
-      obj26.grow = true;
-      let obj27 = obj26;
+      const obj28 = { loading: null, disabled: null, onPress: null, text: null, size: "lg", grow: true };
+      obj28[0] = isApplying;
+      obj28[1] = isApplying;
+      obj28[2] = handleUseNow;
+      const intl2 = tmp2(tmp3[13]).intl;
+      obj28[3] = intl2.string(tmp2(tmp3[13]).t.MAS7uK);
+      let obj29 = obj28;
     } else {
-      obj27 = { onPress: handleEditProfile };
-      const intl = _require(1212).intl;
-      obj27.text = intl.string(_require(1212).t["2p2aYz"]);
-      obj27.size = "lg";
-      obj27.grow = true;
+      obj29 = { onPress: null, text: null, size: "lg", grow: true };
+      obj29[0] = handleEditProfile;
+      const intl = tmp2(tmp3[13]).intl;
+      obj29[1] = intl.string(tmp2(tmp3[13]).t["2p2aYz"]);
     }
-    obj25.children = callback2(_require(4578).Button, obj27);
-    obj24.children = callback2(closure_8, obj25);
-    items5[2] = callback2(closure_8, obj24);
-    obj2.children = items5;
-    items2[1] = closure_13(_require(5155).SafeAreaPaddingView, obj2);
-    const obj28 = {};
-    const items10 = [tmp3.curtain, curtainViewStyle];
-    obj28.style = items10;
-    obj28.pointerEvents = "none";
-    items2[2] = callback2(callback(4026).View, obj28);
-    obj.children = items2;
-    return tmp18(tmp19, obj);
+    obj27[1] = tmp31(tmp2(tmp3[40]).Button, obj29);
+    obj26[1] = tmp31(tmp28, obj27);
+    items6[2] = tmp31(tmp28, obj26);
+    obj5[5] = items6;
+    items3[1] = tmp27(tmp2(tmp3[31]).SafeAreaPaddingView, obj5);
+    const obj30 = { style: null, pointerEvents: "none" };
+    const items11 = [tmp6.curtain, animatedStyle2];
+    obj30[0] = items11;
+    items3[2] = tmp31(tmp4(tmp3[14]).View, obj30);
+    obj2[2] = items3;
+    return tmp27(tmp28, obj2);
   }
-  tmp20 = callback2(ProductPurchaseGradientBackground, { product });
+  tmp29 = callback(ProductPurchaseGradientBackground, { product });
+  tmp30 = callback;
+  tmp31 = callback;
 };

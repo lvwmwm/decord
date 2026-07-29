@@ -1,264 +1,148 @@
-// Module ID: 11216
-// Function ID: 86987
-// Name: _createForOfIteratorHelperLoose
-// Dependencies: [31, 1838, 11195, 566, 5691, 11217, 11188, 2]
+// Module ID: 11240
+// Function ID: 11241
+// Name: useBannerBots
+// Dependencies: [19, 1862, 11219, 589, 5709, 11241, 11212, 2]
 // Exports: useBannerBots
 
-// Module 11216 (_createForOfIteratorHelperLoose)
-import result from "result";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 11240 (useBannerBots)
+import noop from "noop";
+import createGuildRecordFromRust from "createGuildRecordFromRust";
+import initialize from "initialize";
 
 const require = arg1;
-function _createForOfIteratorHelperLoose(iterable) {
-  let closure_0 = iterable;
-  iterable = "undefined" !== typeof Symbol;
-  if (iterable) {
-    const _Symbol = Symbol;
-    iterable = iterable[Symbol.iterator];
-  }
-  if (!iterable) {
-    iterable = iterable[Symbol.iterator];
-  }
-  if (iterable) {
-    const iter = iterable.call(iterable);
-    const next = iter.next;
-    return next.bind(iter);
-  } else {
-    const _Array = Array;
-    let tmp = iterable;
-    if (!Array.isArray(iterable)) {
-      let tmp2;
-      if (iterable) {
-        if ("string" === typeof iterable) {
-          tmp2 = _arrayLikeToArray(iterable, undefined);
-        } else {
-          const toString = {}.toString;
-          const substr = toString.call(iterable).slice(8, -1);
-          let name = substr;
-          if (tmp3) {
-            name = iterable.constructor.name;
-          }
-          if ("Map" !== name) {
-            if ("Set" !== name) {
-              if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(iterable, undefined);
-              } else {
-                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
-              }
-            }
-            tmp2 = arr;
-          }
-          const _Array2 = Array;
-          arr = Array.from(iterable);
-          const callResult = toString.call(iterable);
-          tmp3 = "Object" === substr && iterable.constructor;
-        }
-      }
-      tmp = tmp2;
-      if (!tmp2) {
-        const _TypeError = TypeError;
-        const typeError = new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
-        throw typeError;
-      }
-    }
-    if (tmp) {
-      closure_0 = tmp;
-    }
-    let c1 = 0;
-    return () => {
-      if (closure_1 >= length.length) {
-        let obj = { done: true };
-      } else {
-        obj = { done: false };
-        closure_1 = tmp3 + 1;
-        obj.value = length[+closure_1];
-      }
-      return obj;
-    };
-  }
-}
-function _arrayLikeToArray(arg0, arg1) {
-  let length;
-  if (tmp) {
-    length = arg0.length;
-  }
-  const ArrayResult = Array(length);
-  for (let num = 0; num < length; num = num + 1) {
-    ArrayResult[num] = arg0[num];
-  }
-  return ArrayResult;
-}
-let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/app_launcher/native/onboarding/hooks/useBannerBots.tsx");
+let result = require("initialize").fileFinishedImporting("modules/app_launcher/native/onboarding/hooks/useBannerBots.tsx");
 
 export const useBannerBots = function useBannerBots(context) {
-  let tmp10;
   context = context.context;
-  let first1;
+  let _require;
   let obj = (function useAppsMap(context) {
-    let obj = first1(outer1_1[5]);
-    obj = { context: context.context, onlyWithCommands: true, includeBuiltIn: false, includeEmbeddedApps: false, includeNonEmbeddedApps: true };
-    const apps = obj.useApplicationsInContext(obj).apps;
+    let apps;
+    apps = apps(11241).useApplicationsInContext({ context: context.context, onlyWithCommands: true, includeBuiltIn: false, includeEmbeddedApps: false, includeNonEmbeddedApps: true }).apps;
     const items = [apps];
-    return outer1_2.useMemo(() => {
-      let done;
+    return React.useMemo(() => {
       const map = new Map();
-      const tmp = outer2_5(apps);
-      let iter = tmp();
-      if (!iter.done) {
-        do {
-          let value = iter.value;
-          let result = map.set(value.id, value);
-          let iter2 = tmp();
-          iter = iter2;
-          done = iter2.done;
-        } while (!done);
+      for (const item10011 of apps) {
+        let result = map.set(item10011.id, item10011);
+        continue;
       }
       return map;
     }, items);
   })({ context });
-  let obj1 = first1(11217);
-  obj = { context, onlyWithCommands: true, includeBuiltIn: false, includeEmbeddedApps: false, includeNonEmbeddedApps: true };
-  let apps = obj1.useApplicationsInContext(obj).apps;
-  const obj4 = (function useCommandsMap(context) {
-    const commands = first1(outer1_1[5]).useApplicationCommandsInContext({ context: context.context, includeBuiltIn: false }).commands;
+  let apps = _require(11241).useApplicationsInContext({ context, onlyWithCommands: true, includeBuiltIn: false, includeEmbeddedApps: false, includeNonEmbeddedApps: true }).apps;
+  const obj2 = _require(11241);
+  const tmp2 = _require;
+  const obj3 = (function useCommandsMap(context) {
+    let commands;
+    commands = commands(11241).useApplicationCommandsInContext({ context: context.context, includeBuiltIn: false }).commands;
     const items = [commands];
-    return outer1_2.useMemo(() => {
-      let done;
+    return React.useMemo(() => {
       const map = new Map();
-      const tmp = outer2_5(commands);
-      let iter = tmp();
-      if (!iter.done) {
-        do {
-          let value = iter.value;
-          let result = map.set(value.id, value);
-          let iter2 = tmp();
-          iter = iter2;
-          done = iter2.done;
-        } while (!done);
+      for (const item10011 of commands) {
+        let result = map.set(item10011.id, item10011);
+        continue;
       }
       return map;
     }, items);
   })({ context });
-  let tmp = (function useFrecencyCommandIds(context) {
+  const tmp4 = (function useFrecencyCommandIds(context) {
     context = context.context;
-    let obj = first1(outer1_1[3]);
-    const items = [outer1_3];
+    let obj = context(589);
+    const items = [createGuildRecordFromRust];
     obj = {
       channel: context.channel,
       guild: obj.useStateFromStores(items, () => {
         const channel = context.channel;
         let guild_id;
-        if (null != channel) {
+        if (channel != null) {
           guild_id = channel.guild_id;
         }
-        return outer2_3.getGuild(guild_id);
+        return outer1_3.getGuild(guild_id);
       })
     };
-    return first1(outer1_1[4]).useTopCommands(obj);
+    return context(5709).useTopCommands(obj);
   })({ context });
-  obj = {};
   let channel = context.channel;
   let guild_id;
-  if (null != channel) {
+  if (channel != null) {
     guild_id = channel.guild_id;
   }
-  obj.guildId = guild_id;
-  obj.fetchesShelf = true;
-  const activityApplications = first1(11188).useActivityApplications(obj);
-  const obj5 = first1(11188);
-  let items = [_isNativeReflectConstruct];
-  const stateFromStores = first1(566).useStateFromStores(items, () => outer1_4.getRecentApplicationCommandMetadata());
+  const activityApplications = _require(11212).useActivityApplications({ guildId: guild_id, fetchesShelf: true });
+  const obj4 = _require(11212);
+  let items = [initialize];
+  const stateFromStores = tmp2(589).useStateFromStores(items, () => recentApplicationCommandMetadata.getRecentApplicationCommandMetadata());
   let value = null;
   if (null != stateFromStores) {
     value = obj.get(stateFromStores.applicationId);
   }
-  first1 = value;
-  const tmp6 = _createForOfIteratorHelperLoose(tmp);
-  let iter = tmp6();
-  let tmp7 = value;
-  let iter2 = iter;
   let tmp9 = value;
-  if (!iter.done) {
-    while (true) {
-      value = obj4.get(iter2.value);
-      let tmp12 = tmp7;
-      let tmp13 = tmp8;
-      if (null != value) {
-        let value1 = obj.get(value.applicationId);
-        tmp12 = tmp7;
-        tmp13 = tmp8;
-        let tmp15 = value1;
-        if (null != value1) {
-          if (null == tmp7) {
-            first1 = value1;
-            tmp12 = value1;
-            tmp13 = tmp8;
-            let tmp18 = value1;
-          } else {
-            let id;
-            if (null != tmp7) {
-              id = tmp7.id;
+  _require = value;
+  for (const item10049 of tmp4) {
+    value = obj3.get(item10049);
+    if (null != value) {
+      let tmp12 = value;
+      let value1 = obj.get(tmp11.applicationId);
+      let tmp14 = value1;
+      if (null != value1) {
+        let tmp15 = tmp9;
+        if (null == tmp9) {
+          let tmp20 = value1;
+          tmp9 = tmp14;
+          _require = tmp14;
+        } else {
+          let tmp16 = value1;
+          let tmp17 = tmp9;
+          let id;
+          if (tmp9 != null) {
+            id = tmp9.id;
+          }
+          if (tmp14.id !== id) {
+            let found = value1;
+            let tmp19 = obj6;
+            obj6.return();
+            break;
+          }
+          let tmp21 = tmp9;
+          if (null == tmp9) {
+            if (apps.length > 0) {
+              let first = apps[0];
+              tmp9 = first;
+              _require = first;
             }
-            tmp12 = tmp7;
-            tmp13 = tmp7;
-            let tmp17 = value1;
-            tmp9 = tmp7;
-            tmp10 = value1;
-            if (value1.id !== id) {
-              break;
+            let num = 1;
+            if (apps.length > 1) {
+              found = apps[1];
+            }
+          } else {
+            let tmp22 = found;
+            if (null == found) {
+              found = apps.find((id) => {
+                id = undefined;
+                if (_undefined != null) {
+                  id = _undefined.id;
+                }
+                return id.id !== id;
+              });
             }
           }
-          break;
+          let tmp24 = tmp9;
+          if (null == tmp9) {
+            let first1 = activityApplications[0];
+            tmp9 = first1;
+            _require = first1;
+            found = activityApplications[1];
+          } else {
+            let tmp25 = found;
+            if (null == found) {
+              found = activityApplications[0];
+            }
+          }
+          obj = { firstBotApplication: null, secondBotApplication: null };
+          obj[0] = tmp9;
+          obj[1] = found;
+          return obj;
         }
       }
-      let iter3 = tmp6();
-      tmp7 = tmp12;
-      tmp8 = tmp13;
-      iter2 = iter3;
-      tmp9 = tmp12;
-      if (iter3.done) {
-        break;
-      }
     }
+    continue;
   }
-  if (null == tmp9) {
-    if (apps.length > 0) {
-      const first = apps[0];
-      first1 = first;
-      tmp9 = first;
-    }
-    let tmp19 = tmp9;
-    let found = tmp10;
-    if (apps.length > 1) {
-      found = apps[1];
-      tmp19 = tmp9;
-    }
-  } else {
-    tmp19 = tmp9;
-    found = tmp10;
-    if (null == tmp10) {
-      found = apps.find((id) => {
-        id = undefined;
-        if (null != first1) {
-          id = first1.id;
-        }
-        return id.id !== id;
-      });
-      tmp19 = tmp9;
-    }
-  }
-  if (null == tmp19) {
-    first1 = activityApplications[0];
-    found = activityApplications[1];
-    let tmp22 = first1;
-  } else {
-    tmp22 = tmp19;
-    if (null == found) {
-      found = activityApplications[0];
-      tmp22 = tmp19;
-    }
-  }
-  obj1 = { firstBotApplication: tmp22, secondBotApplication: found };
-  return obj1;
 };

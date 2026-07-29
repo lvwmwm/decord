@@ -1,23 +1,23 @@
-// Module ID: 12344
-// Function ID: 96034
+// Module ID: 12366
+// Function ID: 12367
 // Name: createVoiceChannelLinkEmbed
-// Dependencies: [57, 27, 1391, 1348, 1838, 3793, 3802, 1850, 653, 6003, 7702, 1392, 477, 1212, 4628, 4355, 2]
+// Dependencies: [32, 17, 1415, 1372, 1862, 3817, 3826, 1874, 676, 6021, 7725, 1416, 500, 1236, 4650, 4380, 2]
 // Exports: createVoiceChannelLinkEmbed
 
-// Module 12344 (createVoiceChannelLinkEmbed)
+// Module 12366 (createVoiceChannelLinkEmbed)
 import _slicedToArray from "_slicedToArray";
 import { Image } from "get ActivityIndicator";
-import { getGuildAcronym } from "isGuildOwner";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import closure_8 from "_isNativeReflectConstruct";
-import closure_9 from "_isNativeReflectConstruct";
-import closure_10 from "_isNativeReflectConstruct";
+import { getGuildAcronym } from "GuildNSFWContentLevel";
+import ensureGuildLoaded from "ensureGuildLoaded";
+import createGuildRecordFromRust from "createGuildRecordFromRust";
+import getUncachedChannelPermissions from "getUncachedChannelPermissions";
+import upsertRelationship from "upsertRelationship";
+import mergeGuildAvatar from "mergeGuildAvatar";
 import { Permissions } from "ME";
 import { InviteTypes } from "InviteSendStates";
 
 const require = arg1;
-const result = require("isGuildOwner").fileFinishedImporting("modules/messages/native/renderer/row_data/embeds/coded_links/VoiceChannelLinkEmbed.tsx");
+const result = require("GuildNSFWContentLevel").fileFinishedImporting("modules/messages/native/renderer/row_data/embeds/coded_links/VoiceChannelLinkEmbed.tsx");
 
 export const createVoiceChannelLinkEmbed = function createVoiceChannelLinkEmbed(code, closure_2) {
   let baseColors;
@@ -28,84 +28,86 @@ export const createVoiceChannelLinkEmbed = function createVoiceChannelLinkEmbed(
   if (null != channel) {
     if (channel.isGuildVocal()) {
       if (null != guild) {
-        if (closure_8.can(Permissions.VIEW_CHANNEL, channel)) {
-          if (closure_8.can(Permissions.CONNECT, channel)) {
-            ({ colors, baseColors } = importDefault(7702)(closure_2));
+        if (getUncachedChannelPermissions.can(Permissions.VIEW_CHANNEL, channel)) {
+          if (obj9.can(tmp26.CONNECT, channel)) {
+            ({ colors, baseColors } = importDefault(7725)(closure_2));
             let icon;
-            if (null != guild) {
+            if (guild != null) {
               icon = guild.icon;
             }
             if (null != icon) {
-              let obj1 = importDefault(1392);
-              let obj = {};
               let id;
-              if (null != guild) {
+              if (guild != null) {
                 id = guild.id;
               }
-              obj.id = id;
+              let obj = { id: null, icon: null, canAnimate: true, size: 128 };
+              obj[0] = id;
               let icon1;
-              if (null != guild) {
+              if (guild != null) {
                 icon1 = guild.icon;
               }
-              obj.icon = icon1;
-              obj.canAnimate = true;
-              obj.size = 128;
-              const guildIconURL = obj1.getGuildIconURL(obj);
+              obj[1] = icon1;
+              const guildIconURL = tmp4(1416).getGuildIconURL(obj);
+              const tmp4Result = tmp4(1416);
             } else if (null != guild) {
-              const tmp10 = getGuildAcronym(guild);
+              const tmp8 = getGuildAcronym(guild);
             }
             obj = {};
             const merged = Object.assign(baseColors);
-            const tmp8 = importDefault(7702)(closure_2);
+            tmp4 = importDefault;
+            const tmp6 = importDefault(7725)(closure_2);
             let str;
             if (obj5.isAndroid()) {
               str = "";
             }
-            obj["headerText"] = str;
-            obj["headerColor"] = colors.headerColor;
-            obj5 = require(477) /* set */;
-            const intl = require(1212) /* getSystemLocale */.intl;
+            obj.headerText = str;
+            obj.headerColor = colors.headerColor;
+            obj5 = require(500) /* set */;
+            const intl = tmp16(1236).intl;
             const string = intl.string;
-            const t = require(1212) /* getSystemLocale */.t;
+            const t = tmp16(1236).t;
             if (isGuildStageVoiceResult) {
               let stringResult = string(t["7vb2cc"]);
             } else {
               stringResult = string(t.gpqgah);
             }
-            obj["acceptLabelText"] = stringResult;
-            obj["onlineText"] = undefined;
-            obj["memberText"] = undefined;
-            isGuildStageVoiceResult = channel.isGuildStageVoice();
-            const assetSource = Image.resolveAssetSource(require(4628) /* getThreadChannelIcon */.getChannelIcon(channel));
+            obj.acceptLabelText = stringResult;
+            obj.onlineText = undefined;
+            obj.memberText = undefined;
+            let tmp16Result = tmp16(4650);
+            const assetSource = Image.resolveAssetSource(tmp16Result.getChannelIcon(channel));
             let uri;
-            if (null != assetSource) {
+            if (assetSource != null) {
               uri = assetSource.uri;
             }
-            obj["channelIcon"] = uri;
-            const obj6 = require(4628) /* getThreadChannelIcon */;
-            obj["titleText"] = require(4355) /* computeDefaultGroupDmNameFromUserIds */.computeChannelName(channel, closure_10, closure_9);
-            obj["titleColor"] = colors.titleColor;
-            let tmp35;
+            obj.channelIcon = uri;
+            tmp16Result = tmp16(4380);
+            obj.titleText = tmp16Result.computeChannelName(channel, mergeGuildAvatar, upsertRelationship);
+            obj.titleColor = colors.titleColor;
+            let tmp24;
             if (null != guildIconURL) {
-              tmp35 = guildIconURL;
+              tmp24 = guildIconURL;
             }
-            obj["thumbnailUrl"] = tmp35;
-            obj["thumbnailText"] = tmp10;
-            obj["subtitleColor"] = undefined;
-            obj["acceptLabelBackgroundColor"] = colors.acceptLabelGreenBackgroundColor;
-            obj["acceptLabelBorderColor"] = undefined;
-            obj["acceptLabelColor"] = colors.acceptLabelGreenColor;
-            obj["embedCanBeTapped"] = true;
-            obj["canBeAccepted"] = true;
-            const intl2 = require(1212) /* getSystemLocale */.intl;
-            obj1 = { guildName: guild.name };
-            obj["channelName"] = intl2.formatToPlainString(require(1212) /* getSystemLocale */.t["2wimj5"], obj1);
-            obj["subtitle"] = "";
-            obj["type"] = InviteTypes.GUILD;
-            obj["inviteSplash"] = undefined;
+            obj.thumbnailUrl = tmp24;
+            obj.thumbnailText = tmp8;
+            obj.subtitleColor = undefined;
+            obj.acceptLabelBackgroundColor = colors.acceptLabelGreenBackgroundColor;
+            obj.acceptLabelBorderColor = undefined;
+            obj.acceptLabelColor = colors.acceptLabelGreenColor;
+            obj.embedCanBeTapped = true;
+            obj.canBeAccepted = true;
+            const intl2 = tmp16(1236).intl;
+            const obj1 = { guildName: null };
+            obj1[0] = guild.name;
+            obj.channelName = intl2.formatToPlainString(require(1236) /* getSystemLocale */.t["2wimj5"], obj1);
+            obj.subtitle = "";
+            obj.type = InviteTypes.GUILD;
+            obj.inviteSplash = undefined;
             return obj;
           }
         }
+        obj9 = getUncachedChannelPermissions;
+        tmp26 = Permissions;
       }
     }
   }

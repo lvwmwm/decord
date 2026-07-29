@@ -1,49 +1,49 @@
-// Module ID: 10576
-// Function ID: 81630
+// Module ID: 10600
+// Function ID: 10601
 // Name: Emoji
-// Dependencies: [31, 27, 4157, 33, 664, 4165, 689, 5119, 1273, 566, 4026, 4166, 10548, 2]
+// Dependencies: [19, 17, 4181, 21, 687, 4189, 712, 5141, 1297, 589, 4050, 4190, 10572, 2]
 // Exports: default
 
-// Module 10576 (Emoji)
-import result from "result";
+// Module 10600 (Emoji)
+import noop from "noop";
 import { View } from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
 const require = arg1;
 function Emoji(url) {
   url = url.url;
-  const tmp = _createForOfIteratorHelperLoose();
+  const tmp = createCacheKey();
   if ("" !== url) {
-    let obj = { resizeMode: "contain" };
+    let obj = { resizeMode: "contain", style: null, source: null };
     const items = [tmp.imageEmoji];
-    obj.style = items;
-    obj = { uri: url };
-    obj.source = obj;
-    let tmp5 = jsx(importDefault(5119), { uri: url });
+    obj[1] = items;
+    obj = { uri: null };
+    obj[0] = url;
+    obj[2] = obj;
+    let tmp5 = jsx(importDefault(5141), { uri: null });
   } else {
-    obj = {};
+    obj = { style: null, allowFontScaling: false, children: null };
     const items1 = [tmp.textEmoji];
-    obj.style = items1;
-    obj.allowFontScaling = false;
-    obj.children = url.surrogates;
-    tmp5 = jsx(require(1273) /* Button */.LegacyText, {});
+    obj[0] = items1;
+    obj[2] = url.surrogates;
+    tmp5 = jsx(require(1297) /* Button */.LegacyText, { style: null, allowFontScaling: false, children: null });
   }
   return tmp5;
 }
 let closure_7 = 6 * require("set").Millis.SECOND;
 let closure_8 = 2 * require("set").Millis.SECOND;
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SURFACE_HIGH, borderRadius: require("_createForOfIteratorHelperLoose").radii.round, position: "absolute", right: 16, top: 16 };
-_createForOfIteratorHelperLoose.voiceChannelEffectEmojiContainer = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.voiceChannelEffectEmojiContainerTileNotch = { right: "auto", left: 16 };
-_createForOfIteratorHelperLoose.voiceChannelEffectEmoji = { padding: 12 };
-_createForOfIteratorHelperLoose.textEmoji = { fontSize: 32, lineHeight: 38, alignContent: "center", justifyContent: "center", display: "flex", width: 32, height: 32 };
-_createForOfIteratorHelperLoose.imageEmoji = { width: 32, height: 32 };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-let closure_10 = { code: "function AnimatedEffectEmojiTsx1(){const{withSequence,withTiming,ANIMATION_ROTATION_DEG,withDelay,useReducedMotion,STANDARD_EASING}=this.__closure;const rotate=withSequence(withTiming(ANIMATION_ROTATION_DEG+\"deg\",{duration:0}),withDelay(100,withTiming('0deg',{duration:useReducedMotion?0:300,easing:STANDARD_EASING})));const scale=withSequence(withTiming(0,{duration:0}),withDelay(100,withTiming(1,{duration:useReducedMotion?0:300,easing:STANDARD_EASING})));return{transform:[{scale:scale},{rotate:rotate}]};}" };
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/voice_channel_effects/native/AnimatedEffectEmoji.tsx");
+createCacheKey = { voiceChannelEffectEmojiContainer: null, voiceChannelEffectEmojiContainerTileNotch: null, voiceChannelEffectEmoji: null, textEmoji: null, imageEmoji: null };
+createCacheKey = { backgroundColor: require("Themes").colors.BACKGROUND_SURFACE_HIGH, borderRadius: require("Themes").radii.round, position: "absolute", right: 16, top: 16 };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { right: "auto", left: 16 };
+createCacheKey[2] = { padding: 12 };
+createCacheKey[3] = { fontSize: 32, lineHeight: 38, alignContent: "center", justifyContent: "center", display: "flex", width: 32, height: 32 };
+createCacheKey[4] = { width: 32, height: 32 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let closure_11 = { code: "function AnimatedEffectEmojiTsx1(){const{withSequence,withTiming,ANIMATION_ROTATION_DEG,withDelay,useReducedMotion,STANDARD_EASING}=this.__closure;const rotate=withSequence(withTiming(ANIMATION_ROTATION_DEG+\"deg\",{duration:0}),withDelay(100,withTiming('0deg',{duration:useReducedMotion?0:300,easing:STANDARD_EASING})));const scale=withSequence(withTiming(0,{duration:0}),withDelay(100,withTiming(1,{duration:useReducedMotion?0:300,easing:STANDARD_EASING})));return{transform:[{scale:scale},{rotate:rotate}]};}" };
+const result = require("maybeApplyNoTextColorForLightCustomTheme").fileFinishedImporting("modules/voice_channel_effects/native/AnimatedEffectEmoji.tsx");
 
 export default function AnimatedEffectEmoji(onComplete) {
   let emoji;
@@ -57,93 +57,94 @@ export default function AnimatedEffectEmoji(onComplete) {
   onComplete = onComplete.onComplete;
   sentAt = undefined;
   let stateFromStores;
-  const tmp = _createForOfIteratorHelperLoose();
+  const tmp = createCacheKey();
   ({ emoji, sentAt } = voiceChannelEffect);
   let obj = onComplete(stateFromStores[9]);
-  let items = [_isNativeReflectConstruct];
-  stateFromStores = obj.useStateFromStores(items, () => outer1_5.useReducedMotion);
+  let items = [maybeApplyNoTextColorForLightCustomTheme];
+  stateFromStores = obj.useStateFromStores(items, () => useReducedMotion.useReducedMotion);
   const items1 = [sentAt, onComplete.userId, onComplete];
   const effect = React.useEffect(() => {
     if (Date.now() - sentAt >= outer1_8) {
-      if (null != onComplete) {
-        onComplete();
+      if (timeout != null) {
+        tmp2();
       }
     } else {
       const _setTimeout = setTimeout;
-      onComplete = setTimeout(() => {
-        if (null != callback) {
-          callback();
+      timeout = setTimeout(() => {
+        if (closure_0 != null) {
+          tmp();
         }
       }, outer1_7);
     }
     return () => {
       if (null != closure_0) {
         const _clearTimeout = clearTimeout;
-        clearTimeout(closure_0);
+        clearTimeout(tmp);
       }
     };
   }, items1);
   onComplete(stateFromStores[10]);
   class N {
     constructor() {
-      obj = onComplete(c2[10]);
-      obj2 = onComplete(c2[11]);
+      tmp = onComplete;
+      tmp2 = useStateFromStores;
+      obj = onComplete(useStateFromStores[10]);
+      obj2 = onComplete(useStateFromStores[11]);
       withTimingResult = obj2.withTiming("-120deg", { duration: 0 });
-      obj3 = onComplete(c2[10]);
-      obj4 = onComplete(c2[11]);
-      obj = {};
+      obj3 = onComplete(useStateFromStores[10]);
+      obj4 = onComplete(useStateFromStores[11]);
       num = 300;
       num2 = 300;
-      if (c2) {
+      tmp4 = useStateFromStores;
+      if (useStateFromStores) {
         num2 = 0;
       }
-      obj.duration = num2;
-      obj.easing = onComplete(c2[8]).STANDARD_EASING;
-      obj1 = {};
-      obj2 = {};
+      obj = { duration: num2, easing: tmp(tmp2[8]).STANDARD_EASING };
       withSequenceResult = obj.withSequence(withTimingResult, obj3.withDelay(100, obj4.withTiming("0deg", obj)));
-      obj8 = onComplete(c2[10]);
-      obj9 = onComplete(c2[11]);
-      withTimingResult1 = obj9.withTiming(0, { duration: 0 });
-      obj10 = onComplete(c2[10]);
-      obj11 = onComplete(c2[11]);
-      obj3 = {};
-      if (c2) {
+      tmpResult = tmp(tmp2[10]);
+      tmpResult1 = tmp(tmp2[11]);
+      withTimingResult1 = tmpResult1.withTiming(0, { duration: 0 });
+      tmpResult2 = tmp(tmp2[10]);
+      tmpResult3 = tmp(tmp2[11]);
+      if (tmp4) {
         num = 0;
       }
-      obj3.duration = num;
-      obj3.easing = onComplete(c2[8]).STANDARD_EASING;
-      obj2.scale = obj8.withSequence(withTimingResult1, obj10.withDelay(100, obj11.withTiming(1, obj3)));
+      obj1 = { transform: null };
+      obj2 = { scale: null };
+      obj3 = { duration: num, easing: tmp(tmp2[8]).STANDARD_EASING };
+      obj2[0] = tmpResult.withSequence(withTimingResult1, tmpResult2.withDelay(100, tmpResult3.withTiming(1, obj3)));
       items = [, ];
       items[0] = obj2;
       items[1] = { rotate: withSequenceResult };
-      obj1.transform = items;
+      obj1[0] = items;
       return obj1;
     }
   }
   obj = { withSequence: onComplete(stateFromStores[10]).withSequence, withTiming: onComplete(stateFromStores[11]).withTiming, ANIMATION_ROTATION_DEG: -120, withDelay: onComplete(stateFromStores[10]).withDelay, useReducedMotion: stateFromStores, STANDARD_EASING: onComplete(stateFromStores[8]).STANDARD_EASING };
   N.__closure = obj;
   N.__workletHash = 75069010226;
-  N.__initData = closure_10;
-  let tmp7Result = null;
+  N.__initData = closure_11;
+  let tmp9Result = null;
   if (null != emoji) {
-    obj = {};
-    const items2 = [tmp.voiceChannelEffectEmojiContainer, onComplete(stateFromStores[8]).generateBoxShadowStyle(onComplete(stateFromStores[8]).EIGHT_DP_ELEVATION_SHADOW_PARAMS), tmp5, ];
+    const items2 = [tmp.voiceChannelEffectEmojiContainer, , , ];
+    let tmp2Result = tmp2(tmp3[8]);
+    items2[1] = tmp2Result.generateBoxShadowStyle(tmp2(tmp3[8]).EIGHT_DP_ELEVATION_SHADOW_PARAMS);
+    items2[2] = tmp7;
     if (hasNotch) {
       hasNotch = tmp.voiceChannelEffectEmojiContainerTileNotch;
     }
+    obj = { style: null, children: null };
     items2[3] = hasNotch;
-    obj.style = items2;
-    let obj1 = { style: tmp.voiceChannelEffectEmoji };
-    let obj2 = {};
-    let obj4 = onComplete(stateFromStores[8]);
-    const tmp7 = jsx;
-    obj2.url = onComplete(stateFromStores[12]).getEffectUrl(emoji);
-    obj2.surrogates = emoji.name;
-    obj1.children = <Emoji />;
-    obj.children = <View style={tmp.voiceChannelEffectEmoji} />;
-    tmp7Result = tmp7(sentAt(stateFromStores[10]).View, obj);
-    const obj7 = onComplete(stateFromStores[12]);
+    obj[0] = items2;
+    let obj1 = { style: null, children: null };
+    obj1[0] = tmp.voiceChannelEffectEmoji;
+    let obj2 = { url: null, surrogates: null };
+    tmp2Result = tmp2(tmp3[12]);
+    obj2[0] = tmp2Result.getEffectUrl(emoji);
+    obj2[1] = emoji.name;
+    obj1[1] = <Emoji url={null} surrogates={null} />;
+    obj[1] = <View style={null}>{null}</View>;
+    tmp9Result = tmp9(sentAt(tmp3[10]).View, obj);
   }
-  return tmp7Result;
+  return tmp9Result;
 };

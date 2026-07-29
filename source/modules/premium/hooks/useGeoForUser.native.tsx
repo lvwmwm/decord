@@ -1,34 +1,34 @@
-// Module ID: 6271
-// Function ID: 56243
+// Module ID: 6292
+// Function ID: 6293
 // Name: useGeoForUser
-// Dependencies: [31, 1194, 3813, 5654, 566, 6272, 4486, 2]
+// Dependencies: [19, 1218, 3837, 5672, 589, 6293, 4509, 2]
 // Exports: default
 
-// Module 6271 (useGeoForUser)
-import result from "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_5 from "_isNativeReflectConstruct";
-import closure_6 from "_isNativeReflectConstruct";
+// Module 6292 (useGeoForUser)
+import noop from "noop";
+import fetchFingerprint from "fetchFingerprint";
+import handlePaymentSourceCreateEnd from "handlePaymentSourceCreateEnd";
+import updateProduct from "updateProduct";
 
 const require = arg1;
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/premium/hooks/useGeoForUser.native.tsx");
+const result = require("handlePaymentSourceCreateEnd").fileFinishedImporting("modules/premium/hooks/useGeoForUser.native.tsx");
 
 export default function useGeoForUser() {
-  let obj = stateFromStores2(566);
-  const items = [closure_6];
+  let obj = stateFromStores2(589);
+  const items = [updateProduct];
   const stateFromStores = obj.useStateFromStores(items, () => {
+    product = product.getProduct(stateFromStores2(table[5]).ProductIds.PREMIUM_TIER_2_MONTHLY);
     let countryCode;
-    const product = outer1_6.getProduct(stateFromStores2(outer1_2[5]).ProductIds.PREMIUM_TIER_2_MONTHLY);
-    if (null != product) {
+    if (product != null) {
       countryCode = product.countryCode;
     }
     return countryCode;
   });
-  const items1 = [closure_5];
-  const stateFromStores1 = stateFromStores2(566).useStateFromStores(items1, () => outer1_5.ipLocation);
-  const obj2 = stateFromStores2(566);
-  const items2 = [_isNativeReflectConstruct];
-  stateFromStores2 = stateFromStores2(566).useStateFromStores(items2, () => outer1_4.isAuthenticated());
+  const items1 = [handlePaymentSourceCreateEnd];
+  const stateFromStores1 = stateFromStores2(589).useStateFromStores(items1, () => ipLocation.ipLocation);
+  const obj2 = stateFromStores2(589);
+  const items2 = [fetchFingerprint];
+  stateFromStores2 = stateFromStores2(589).useStateFromStores(items2, () => authenticated.isAuthenticated());
   const items3 = [stateFromStores1, stateFromStores2];
   const effect = React.useEffect(() => {
     let tmp = stateFromStores2;
@@ -40,16 +40,16 @@ export default function useGeoForUser() {
       const obj = outer1_1(outer1_2[6]);
     }
   }, items3);
-  obj = { defaultBillingCountryCode: stateFromStores };
+  obj = { defaultBillingCountryCode: stateFromStores, ipCountryCode: null, ipSubdivisionCode: null };
   let countryCode;
-  if (null != stateFromStores1) {
+  if (stateFromStores1 != null) {
     countryCode = stateFromStores1.countryCode;
   }
-  obj.ipCountryCode = countryCode;
+  obj[1] = countryCode;
   let subdivisionCode;
-  if (null != stateFromStores1) {
+  if (stateFromStores1 != null) {
     subdivisionCode = stateFromStores1.subdivisionCode;
   }
-  obj.ipSubdivisionCode = subdivisionCode;
+  obj[2] = subdivisionCode;
   return obj;
 };

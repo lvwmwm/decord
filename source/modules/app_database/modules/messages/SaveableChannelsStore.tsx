@@ -1,162 +1,74 @@
-// Module ID: 5716
-// Function ID: 49301
-// Name: _createForOfIteratorHelperLoose
-// Dependencies: [6, 7, 15, 17, 18, 1348, 4086, 1196, 1907, 5717, 5718, 5719, 5721, 5722, 5723, 5724, 2]
+// Module ID: 5734
+// Function ID: 5735
+// Name: handleSelectedChannelStoreChanged
+// Dependencies: [1372, 4110, 1220, 1931, 5735, 5736, 5737, 5739, 5740, 5741, 5742, 2]
 
-// Module 5716 (_createForOfIteratorHelperLoose)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_3 from "_isNativeReflectConstruct";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
-import closure_7 from "_isNativeReflectConstruct";
-import closure_8 from "_isNativeReflectConstruct";
-import closure_9 from "_isNativeReflectConstruct";
-import closure_10 from "_isNativeReflectConstruct";
+// Module 5734 (handleSelectedChannelStoreChanged)
+import ensureGuildLoaded from "ensureGuildLoaded";
+import handleInviteData from "handleInviteData";
+import "clearAll";
+import handleConnectionOpen from "handleConnectionOpen";
+import result from "result";
 import bound from "module_25";
-import tmp6 from "_isNativeReflectConstruct";
-import importDefaultResult from "_isNativeReflectConstruct";
 
-const require = arg1;
-function _createForOfIteratorHelperLoose(iterable) {
-  let closure_0 = iterable;
-  iterable = "undefined" !== typeof Symbol;
-  if (iterable) {
-    const _Symbol = Symbol;
-    iterable = iterable[Symbol.iterator];
-  }
-  if (!iterable) {
-    iterable = iterable[Symbol.iterator];
-  }
-  if (iterable) {
-    const iter = iterable.call(iterable);
-    const next = iter.next;
-    return next.bind(iter);
-  } else {
-    const _Array = Array;
-    let tmp = iterable;
-    if (!Array.isArray(iterable)) {
-      let tmp2;
-      if (iterable) {
-        if ("string" === typeof iterable) {
-          tmp2 = _arrayLikeToArray(iterable, undefined);
-        } else {
-          const toString = {}.toString;
-          const substr = toString.call(iterable).slice(8, -1);
-          let name = substr;
-          if (tmp3) {
-            name = iterable.constructor.name;
-          }
-          if ("Map" !== name) {
-            if ("Set" !== name) {
-              if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(iterable, undefined);
-              } else {
-                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
-              }
-            }
-            tmp2 = arr;
-          }
-          const _Array2 = Array;
-          arr = Array.from(iterable);
-          const callResult = toString.call(iterable);
-          tmp3 = "Object" === substr && iterable.constructor;
-        }
-      }
-      tmp = tmp2;
-      if (!tmp2) {
-        const _TypeError = TypeError;
-        const typeError = new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
-        throw typeError;
-      }
-    }
-    if (tmp) {
-      closure_0 = tmp;
-    }
-    let c1 = 0;
-    return () => {
-      if (closure_1 >= length.length) {
-        let obj = { done: true };
-      } else {
-        obj = { done: false };
-        closure_1 = tmp3 + 1;
-        obj.value = length[+closure_1];
-      }
-      return obj;
-    };
-  }
-}
-function _arrayLikeToArray(arg0, arg1) {
-  let length;
-  if (tmp) {
-    length = arg0.length;
-  }
-  const ArrayResult = Array(length);
-  for (let num = 0; num < length; num = num + 1) {
-    ArrayResult[num] = arg0[num];
-  }
-  return ArrayResult;
-}
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
-  }
-  const result = _isNativeReflectConstruct();
-}
+let prototype = arg1;
 function handleSelectedChannelStoreChanged() {
-  const channelId = store.getChannelId();
+  const channelId = store2.getChannelId();
   if (null != channelId) {
-    tmp6.recordChannel(channelId);
+    SaveableChannelsStore.recordChannel(channelId);
   }
 }
 function handleConnectionOpenSupplemental() {
-  const result = tmp6.dropUnreachableChannels();
-  tmp6.replaceLru(require(5724) /* _createForOfIteratorHelperLoose */.withFallbacks(extendedMemoryLru, 1250));
+  const result = SaveableChannelsStore.dropUnreachableChannels();
+  SaveableChannelsStore.replaceLru(prototype(5742).withFallbacks(extendedMemoryLru, 1250));
 }
 function handleChannelUpdate(id) {
   id = id.id;
-  const isReadableChannelResult = require(5722) /* isReadableChannel */.isReadableChannel(id);
+  const isReadableChannelResult = prototype(5740).isReadableChannel(id);
   let tmp2 = isReadableChannelResult;
   if (isReadableChannelResult) {
-    tmp2 = id === store.getChannelId();
+    tmp2 = id === store2.getChannelId();
   }
   if (tmp2) {
-    tmp6.recordChannel(id);
+    SaveableChannelsStore.recordChannel(id);
   }
   if (!isReadableChannelResult) {
-    tmp6.deleteChannel(id);
+    SaveableChannelsStore.deleteChannel(id);
   }
 }
-function handleChannelUpdates(channels) {
-  let done;
-  const tmp = _createForOfIteratorHelperLoose(channels.channels);
-  let iter = tmp();
-  if (!iter.done) {
-    do {
-      let tmp2 = handleChannelUpdate;
-      let tmp3 = handleChannelUpdate(iter.value);
-      let iter2 = tmp();
-      iter = iter2;
-      done = iter2.done;
-    } while (!done);
+function handleChannelUpdates(arg0) {
+  while (tmp !== undefined) {
+    let tmp3 = handleChannelUpdate;
+    let tmp4 = handleChannelUpdate(tmp2);
+    continue;
   }
 }
 function handleChannelDelete(channel) {
-  tmp6.deleteChannel(channel.channel.id);
+  SaveableChannelsStore.deleteChannel(channel.channel.id);
 }
 function handleThreadUpdate(channel) {
-  handleChannelUpdate(channel.channel);
+  channel = channel.channel;
+  const id = channel.id;
+  const isReadableChannelResult = prototype(5740).isReadableChannel(channel);
+  let tmp2 = isReadableChannelResult;
+  if (isReadableChannelResult) {
+    tmp2 = id === store2.getChannelId();
+  }
+  if (tmp2) {
+    SaveableChannelsStore.recordChannel(id);
+  }
+  if (!isReadableChannelResult) {
+    SaveableChannelsStore.deleteChannel(id);
+  }
 }
 function handleThreadDelete(channel) {
-  tmp6.deleteChannel(channel.channel.id);
+  SaveableChannelsStore.deleteChannel(channel.channel.id);
 }
 function handleGuildDelete(guild) {
-  let flag = !guild.guild.unavailable;
-  if (flag) {
-    tmp6.deleteGuild(guild.guild.id);
+  const unavailable = guild.guild.unavailable;
+  let flag = !unavailable;
+  if (!unavailable) {
+    SaveableChannelsStore.deleteGuild(guild.guild.id);
     flag = true;
   }
   return flag;
@@ -164,22 +76,236 @@ function handleGuildDelete(guild) {
 function handleLoginSuccess() {
   extendedMemoryLru.clear();
   lru.clear();
-  let c14 = false;
+  let c9 = false;
 }
 function handleCacheLoadedLazyNoCache() {
-  let c14 = true;
+  let c9 = true;
 }
-let c11 = null;
-let extendedMemoryLru = new require("_createForOfIteratorHelperLoose").ExtendedMemoryLru(750, 500);
-let lru = new require("Lru").Lru(15);
-let c14 = false;
-let closure_15 = tmp6;
-tmp6.displayName = "SaveableChannelsStore";
-tmp6.LATEST_SNAPSHOT_VERSION = 1;
-tmp6 = new tmp6();
-let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/app_database/modules/messages/SaveableChannelsStore.tsx");
+let c6 = null;
+let extendedMemoryLru = new require("totalLength").ExtendedMemoryLru(750, 500);
+let lru = new require("length").Lru(15);
+let c9 = false;
+let SaveableChannelsStore;
+class SaveableChannelsStore extends tmp3 {
+  constructor() {
+    c0 = undefined;
+    obj = {
+      CACHE_LOADED_LAZY_NO_CACHE: handleCacheLoadedLazyNoCache,
+      CACHE_LOADED_LAZY() {
+            return obj.loadCache();
+          },
+      CHANNEL_DELETE: handleChannelDelete,
+      CHANNEL_UPDATES: handleChannelUpdates,
+      CONNECTION_OPEN_SUPPLEMENTAL: handleConnectionOpenSupplemental,
+      GUILD_DELETE: handleGuildDelete,
+      LOGIN_SUCCESS: handleLoginSuccess,
+      THREAD_DELETE: handleThreadDelete,
+      THREAD_UPDATE: handleThreadUpdate
+    };
+    tmp = new tmp(obj, handleThreadDelete, new.target, tmp);
+    // ThrowIfThisInitialized (0x7c)
+    c0 = tmp;
+    return tmp;
+  }
+}
+prototype = SaveableChannelsStore.prototype;
+prototype["initialize"] = function initialize() {
+  this.waitFor(ensureGuildLoaded);
+  this.waitFor(handleConnectionOpen);
+  this.waitFor(handleInviteData);
+  const items = [result];
+  this.syncWith(items, () => true);
+  const items1 = [handleConnectionOpen];
+  this.syncWith(items1, handleSelectedChannelStoreChanged);
+};
+prototype["loadCache"] = function loadCache() {
+  const snapshot = this.readSnapshot(SaveableChannelsStore.LATEST_SNAPSHOT_VERSION);
+  if (null != snapshot) {
+    let c9 = true;
+    SaveableChannelsStore.mergeSnapshot(snapshot);
+  }
+};
+prototype["canEvictOrphans"] = function canEvictOrphans() {
+  return c9;
+};
+prototype["saveLimit"] = function saveLimit(channelId) {
+  const basicChannel = store.getBasicChannel(channelId);
+  if (null == basicChannel) {
+    if (null == basicChannel) {
+      let num3 = 1;
+    } else {
+      num3 = 25;
+      if (store2.getChannelId() !== channelId) {
+        num3 = 25;
+      }
+    }
+    let num = num3;
+  } else {
+    num = 25;
+    const obj = prototype(5739);
+  }
+  return num;
+};
+prototype["getSaveableChannels"] = function getSaveableChannels() {
+  const channelIds = store.getChannelIds(null);
+  const mapped = channelIds.map((channelId) => ({ guildId: null, channelId }));
+  if (isLowDisk.isLowDisk) {
+    let tmp9 = mapped;
+    if (null != c6) {
+      const items = [];
+      items[HermesBuiltin.arraySpread(mapped, 0)] = c6;
+      tmp9 = items;
+    }
+    let items1 = tmp9;
+  } else {
+    items1 = [];
+    let arraySpreadResult = HermesBuiltin.arraySpread(mapped, 0);
+    arraySpreadResult = HermesBuiltin.arraySpread(extendedMemoryLru.values(), arraySpreadResult);
+  }
+  return items1;
+};
+prototype["takeSnapshot"] = function takeSnapshot() {
+  let obj = { version: SaveableChannelsStore.LATEST_SNAPSHOT_VERSION, data: null };
+  obj = { channels: null, penalized: null, lastChannel: null };
+  const items = [...extendedMemoryLru.allValues()];
+  obj[0] = items.filter((fallback) => !fallback.fallback);
+  obj[1] = [...lru.keys()];
+  obj[2] = c6;
+  obj[1] = obj;
+  return obj;
+};
+SaveableChannelsStore["mergeSnapshot"] = function mergeSnapshot(snapshot) {
+  extendedMemoryLru = new prototype(5736).ExtendedMemoryLru(extendedMemoryLru.primaryCapacity, extendedMemoryLru.extendedCapacity);
+  lru = new prototype(5737).Lru(lru.capacity);
+  if (lastChannel == null) {
+    lastChannel = snapshot.lastChannel;
+  }
+  const items = [snapshot.channels, extendedMemoryLru.values()];
+  for (const item10036 of items) {
+    let tmp3 = item10036;
+    let tmp4 = item10036;
+    for (const item10041 of item10036) {
+      let tmp5 = item10041;
+      if (!item10041.fallback) {
+        let tmp6 = extendedMemoryLru;
+        let tmp7 = item10041;
+        let putResult = extendedMemoryLru.put(tmp5.channelId, tmp5);
+      }
+      continue;
+    }
+    continue;
+  }
+  const items1 = [snapshot.penalized, lru.keys()];
+  for (const item10059 of items1) {
+    let tmp9 = item10059;
+    let tmp10 = item10059;
+    for (const item10064 of item10059) {
+      let tmp11 = lru;
+      let putResult1 = lru.put(item10064, null);
+      continue;
+    }
+    continue;
+  }
+};
+SaveableChannelsStore["recordChannel"] = function recordChannel(id) {
+  const basicChannel = store.getBasicChannel(id);
+  if (null != basicChannel) {
+    if (obj3.isReadableChannel(basicChannel)) {
+      let guild_id = basicChannel.guild_id;
+      if (guild_id == null) {
+        guild_id = null;
+      }
+      const obj = { guildId: null, channelId: null, channelType: null };
+      obj[0] = guild_id;
+      obj[1] = id;
+      obj[2] = basicChannel.type;
+      extendedMemoryLru.put(id, obj);
+      if (tmp8Result.isLimitedChannel(basicChannel)) {
+        if (null != lru.put(id, null)) {
+          extendedMemoryLru.delete(id);
+        }
+      }
+      tmp8Result = tmp8(5741);
+    }
+    obj3 = prototype(5740);
+    tmp8 = prototype;
+  }
+};
+SaveableChannelsStore["deleteChannel"] = function deleteChannel(arg0) {
+  extendedMemoryLru.delete(arg0);
+};
+SaveableChannelsStore["deleteGuild"] = function deleteGuild(arg0) {
+  for (const item10009 of allValuesResult) {
+    if (item10009.guildId === arg0) {
+      let tmp3 = extendedMemoryLru;
+      let tmp4 = item10009;
+      let deleteResult = extendedMemoryLru.delete(tmp2.channelId);
+    }
+    continue;
+  }
+};
+SaveableChannelsStore["dropUnreachableChannels"] = function dropUnreachableChannels() {
+  const keys = extendedMemoryLru.keys();
+  for (const item10008 of keys) {
+    let tmp3 = store;
+    let tmp2 = item10008;
+    let tmp5 = prototype;
+    let tmp6 = dependencyMap;
+    let basicChannel = store.getBasicChannel(item10008);
+    let obj = prototype(5740);
+    if (!obj.isReadableChannel(basicChannel)) {
+      let tmp7 = SaveableChannelsStore;
+      let tmp8 = item10008;
+      let deleteChannelResult = SaveableChannelsStore.deleteChannel(tmp2);
+    }
+    continue;
+  }
+};
+SaveableChannelsStore["deleteUnreadableGuildChannels"] = function deleteUnreadableGuildChannels(arg0) {
+  const values = extendedMemoryLru.values();
+  for (const item10009 of values) {
+    let tmp2 = item10009;
+    let isReadableChannelIdResult = arg0 !== item10009.guildId;
+    if (!isReadableChannelIdResult) {
+      let tmp4 = prototype;
+      let tmp5 = dependencyMap;
+      let obj = prototype(5740);
+      let tmp6 = item10009;
+      isReadableChannelIdResult = obj.isReadableChannelId(tmp2.channelId);
+    }
+    if (!isReadableChannelIdResult) {
+      let tmp7 = SaveableChannelsStore;
+      let tmp8 = item10009;
+      let deleteChannelResult = SaveableChannelsStore.deleteChannel(tmp2.channelId);
+    }
+    continue;
+  }
+};
+SaveableChannelsStore["replaceLru"] = function replaceLru(arg0) {
+  let closure_7 = arg0;
+};
+SaveableChannelsStore.displayName = "SaveableChannelsStore";
+SaveableChannelsStore.LATEST_SNAPSHOT_VERSION = 1;
+prototype = undefined;
+let obj = { CACHE_LOADED_LAZY_NO_CACHE: handleCacheLoadedLazyNoCache, CACHE_LOADED_LAZY: null, CHANNEL_DELETE: null, CHANNEL_UPDATES: null, CONNECTION_OPEN_SUPPLEMENTAL: null, GUILD_DELETE: null, LOGIN_SUCCESS: null, THREAD_DELETE: null, THREAD_UPDATE: null };
+class CACHE_LOADED_LAZY {
+  constructor() {
+    return obj.loadCache();
+  }
+}
+obj[1] = CACHE_LOADED_LAZY;
+obj[2] = handleChannelDelete;
+obj[3] = handleChannelUpdates;
+obj[4] = handleConnectionOpenSupplemental;
+obj[5] = handleGuildDelete;
+obj[6] = handleLoginSuccess;
+obj[7] = handleThreadDelete;
+obj[8] = handleThreadUpdate;
+prototype = new prototype(obj, 500, tmp, Object, CACHE_LOADED_LAZY, handleChannelDelete, handleChannelUpdates, handleConnectionOpenSupplemental, handleGuildDelete, handleLoginSuccess, handleThreadDelete, SaveableChannelsStore, prototype, new.target);
+// ThrowIfThisInitialized (0x7c)
+let result = require("clearAll").fileFinishedImporting("modules/app_database/modules/messages/SaveableChannelsStore.tsx");
 
-export default tmp6;
+export default prototype;
 export const MAXIMUM_MESSAGES_PER_CHANNEL_DM = 25;
 export const MAXIMUM_MESSAGES_PER_CHANNEL_NON_DM = 25;
 export const MAXIMUM_MESSAGES_PER_CHANNEL_DEFAULT = 1;

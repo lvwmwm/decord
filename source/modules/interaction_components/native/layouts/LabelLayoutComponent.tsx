@@ -1,11 +1,11 @@
-// Module ID: 16186
-// Function ID: 125264
+// Module ID: 16221
+// Function ID: 16222
 // Name: LabelLayoutComponent
-// Dependencies: [31, 27, 33, 7868, 1882, 6707, 2]
+// Dependencies: [19, 17, 21, 7891, 1906, 6728, 2]
 // Exports: default
 
-// Module 16186 (LabelLayoutComponent)
-import "result";
+// Module 16221 (LabelLayoutComponent)
+import "noop";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
 
@@ -19,18 +19,21 @@ export default function LabelLayoutComponent(arg0) {
   let renderComponent;
   ({ component, renderComponent } = arg0);
   ({ label, description } = arg0);
-  let obj = require(7868) /* isInteractionComponent */;
+  let obj = require(7891) /* isInteractionComponent */;
   const componentError = obj.useComponentError(component);
-  if (component.type === require(1882) /* PermissionOverwriteType */.ComponentType.CHECKBOX) {
+  if (component.type === require(1906) /* PermissionOverwriteType */.ComponentType.CHECKBOX) {
     let renderComponentResult = renderComponent(component, "label-child");
   } else {
-    obj = { label, description, required: component.required, errorMessage: componentError };
-    obj = {};
-    const obj1 = { width: "100%" };
-    obj.style = obj1;
-    obj.children = renderComponent(component, "label-child");
-    obj.children = <View />;
-    renderComponentResult = jsx(require(6707) /* Input */.Input, {});
+    obj = { label: null, description: null, required: null, errorMessage: null, children: null };
+    obj[0] = label;
+    obj[1] = description;
+    obj[2] = component.required;
+    obj[3] = componentError;
+    obj = { style: null, children: null };
+    obj[0] = { width: "100%" };
+    obj[1] = renderComponent(component, "label-child");
+    obj[4] = <View style={null}>{null}</View>;
+    renderComponentResult = jsx(require(6728) /* Input */.Input, { style: null, children: null });
   }
   return renderComponentResult;
 };

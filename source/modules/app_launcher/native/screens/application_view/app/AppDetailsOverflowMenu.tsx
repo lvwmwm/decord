@@ -1,80 +1,66 @@
-// Module ID: 11283
-// Function ID: 87600
+// Module ID: 11307
+// Function ID: 11308
 // Name: AppDetailsOverflowMenu
-// Dependencies: [31, 33, 7990, 8006, 1212, 11284, 3838, 5525, 3865, 6755, 9275, 6661, 8940, 2]
+// Dependencies: [19, 21, 8015, 8030, 1236, 11308, 3862, 5543, 3889, 6776, 9299, 6682, 8964, 2]
 // Exports: default
 
-// Module 11283 (AppDetailsOverflowMenu)
-import "result";
+// Module 11307 (AppDetailsOverflowMenu)
+import "noop";
 import { jsx } from "jsxProd";
 
 const require = arg1;
-let result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/app_launcher/native/screens/application_view/app/AppDetailsOverflowMenu.tsx");
+let result = require("getShelfBadgeTypeIfActive").fileFinishedImporting("modules/app_launcher/native/screens/application_view/app/AppDetailsOverflowMenu.tsx");
 
 export default function AppDetailsOverflowMenu(application) {
   application = application.application;
   const onAddAppMenuClick = application.onAddAppMenuClick;
+  let installAppProps;
   let obj = application(installAppProps[2]);
   installAppProps = obj.getInstallAppProps(application);
-  const items = [];
   let obj1 = application(installAppProps[3]);
   let result = obj1.canInstallApplication(installAppProps);
   if (result) {
     result = null != onAddAppMenuClick;
   }
+  const items = [];
   if (result) {
-    obj = {};
-    let intl = application(installAppProps[4]).intl;
-    obj.label = intl.string(application(installAppProps[4]).t.NgXl3C);
-    obj.action = function action() {
+    obj = { label: null, action: null, IconComponent: null };
+    let intl = tmp(tmp2[4]).intl;
+    obj[0] = intl.string(tmp(tmp2[4]).t.NgXl3C);
+    obj[1] = function action() {
       return onAddAppMenuClick({ installAppProps });
     };
-    obj.IconComponent = application(installAppProps[5]).CirclePlusIcon;
+    obj[2] = tmp(tmp2[5]).CirclePlusIcon;
     items.push(obj);
   }
-  const DeveloperMode = application(installAppProps[6]).DeveloperMode;
+  const DeveloperMode = tmp(tmp2[6]).DeveloperMode;
   if (DeveloperMode.getSetting()) {
-    obj = {};
-    const intl2 = application(installAppProps[4]).intl;
-    obj.label = intl2.string(application(installAppProps[4]).t["+NP/b2"]);
-    obj.action = function action() {
+    obj = { label: null, action: null, IconComponent: null };
+    const intl2 = tmp(tmp2[4]).intl;
+    obj[0] = intl2.string(tmp(tmp2[4]).t["+NP/b2"]);
+    obj[1] = function action() {
       application(installAppProps[7]).copy(application.id);
       const obj = application(installAppProps[7]);
       application(installAppProps[8]).presentIdCopied();
     };
-    obj.IconComponent = application(installAppProps[9]).IdIcon;
+    obj[2] = tmp(tmp2[9]).IdIcon;
     items.push(obj);
   }
-  let tmp10 = null;
+  let tmp8 = null;
   if (0 !== items.length) {
-    obj1 = {
-      items,
-      children(ref) {
-          let obj = Object.create(null);
-          obj.ref = 0;
-          const merged = Object.assign(ref, obj);
-          obj = { ref: ref.ref, size: "sm", variant: "secondary-overlay", icon: onAddAppMenuClick(installAppProps[12]) };
-          const merged1 = Object.assign(merged);
-          const intl = application(installAppProps[4]).intl;
-          obj["accessibilityLabel"] = intl.string(application(installAppProps[4]).t.PdRCRg);
-          obj["maxFontSizeMultiplier"] = 1.5;
-          return outer1_3(application(installAppProps[11]).IconButton, obj);
-        }
+    obj1 = { items: null, children: null };
+    obj1[0] = items;
+    obj1[1] = function children(ref) {
+      const merged = Object.assign(ref, Object.create(null));
+      const obj = { ref: ref.ref, size: "sm", variant: "secondary-overlay", icon: null };
+      obj[3] = onAddAppMenuClick(installAppProps[12]);
+      const merged1 = Object.assign(merged);
+      const intl = application(installAppProps[4]).intl;
+      obj.accessibilityLabel = intl.string(application(installAppProps[4]).t.PdRCRg);
+      obj.maxFontSizeMultiplier = 1.5;
+      return callback(application(installAppProps[11]).IconButton, obj);
     };
-    tmp10 = jsx(application(installAppProps[10]).ContextMenu, {
-      items,
-      children(ref) {
-          let obj = Object.create(null);
-          obj.ref = 0;
-          const merged = Object.assign(ref, obj);
-          obj = { ref: ref.ref, size: "sm", variant: "secondary-overlay", icon: onAddAppMenuClick(installAppProps[12]) };
-          const merged1 = Object.assign(merged);
-          const intl = application(installAppProps[4]).intl;
-          obj["accessibilityLabel"] = intl.string(application(installAppProps[4]).t.PdRCRg);
-          obj["maxFontSizeMultiplier"] = 1.5;
-          return outer1_3(application(installAppProps[11]).IconButton, obj);
-        }
-    });
+    tmp8 = jsx(tmp(tmp2[10]).ContextMenu, { items: null, children: null });
   }
-  return tmp10;
+  return tmp8;
 };

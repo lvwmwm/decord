@@ -1,48 +1,52 @@
-// Module ID: 13151
-// Function ID: 101331
+// Module ID: 13174
+// Function ID: 13175
 // Name: MenuGroup
-// Dependencies: [31, 27, 33, 4165, 689, 2]
+// Dependencies: [19, 17, 21, 4189, 712, 2]
 
-// Module 13151 (MenuGroup)
-import importAllResult from "result";
+// Module 13174 (MenuGroup)
+import importAllResult from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
 let StyleSheet;
+let c3;
 let closure_1;
-let closure_2;
-let closure_3;
+let obj1;
+let c0 = importAllResult;
 ({ StyleSheet, View: closure_1 } = get_ActivityIndicator);
-({ jsx: closure_2, jsxs: closure_3 } = jsxProd);
-let obj = {};
-obj = { marginLeft: 0, height: StyleSheet.hairlineWidth, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BORDER_SUBTLE, marginTop: -1 * StyleSheet.hairlineWidth };
-obj.divider = obj;
-let closure_4 = _createForOfIteratorHelperLoose.createStyles(obj);
+({ jsx: obj1, jsxs: c3 } = jsxProd);
+let obj = { divider: null };
+obj = { marginLeft: 0, height: StyleSheet.hairlineWidth, backgroundColor: require("Themes").colors.BORDER_SUBTLE, marginTop: -1 * StyleSheet.hairlineWidth };
+obj[0] = obj;
+let closure_4 = createCacheKey.createStyles(obj);
 const forwardRefResult = importAllResult.forwardRef((arg0, arg1) => {
   let children;
   let style;
   ({ style, children } = arg0);
-  let obj = { style };
-  let tmp5 = !tmp4;
-  if (null === arg1) {
-    obj = { style: tmp.divider };
-    tmp5 = callback(closure_1, obj);
+  let obj = { style, children: null };
+  let tmp4 = null === arg1;
+  if (tmp4) {
+    obj = { style: null };
+    obj[0] = tmp.divider;
+    tmp4 = callback(tmp3, obj);
   }
-  const items = [tmp5, ];
+  const items = [tmp4, ];
   const Children = arg1.Children;
   items[1] = Children.map(children, (icon) => {
     let cloneElementResult = icon;
     if (0 === arg1) {
+      let obj = validElement;
       cloneElementResult = icon;
-      if (closure_0.isValidElement(icon)) {
-        const obj = { ref: closure_0 };
-        cloneElementResult = closure_0.cloneElement(icon, obj);
+      if (validElement.isValidElement(icon)) {
+        obj = { ref: null };
+        obj[0] = validElement;
+        cloneElementResult = obj.cloneElement(icon, obj);
       }
     }
     return cloneElementResult;
   });
-  obj.children = items;
+  obj[1] = items;
   return closure_3(closure_1, obj);
 });
 const result = require("jsxProd").fileFinishedImporting("design/components/Menu/native/MenuGroup.tsx");

@@ -1,42 +1,27 @@
-// Module ID: 4749
-// Function ID: 41148
-// Name: DiscordImageFactory
-// Dependencies: [6, 7, 4750, 4777, 2]
+// Module ID: 4771
+// Function ID: 4772
+// Name: create
+// Dependencies: [4772, 4799, 2]
 
-// Module 4749 (DiscordImageFactory)
-import _classCallCheck from "_classCallCheck";
-import _defineProperties from "_defineProperties";
-
-const require = arg1;
-const tmp2 = (() => {
-  class DiscordImageFactory {
-    constructor() {
-      tmp = outer1_2(this, DiscordImageFactory);
-      return;
-    }
+// Module 4771 (create)
+const result = require("set").fileFinishedImporting("modules/media/web/utils/DiscordImageFactory.tsx");
+const prototype = function DiscordImageFactory() {
+  return Object.create(new.target.prototype);
+}.prototype;
+prototype["create"] = function create(byteLength) {
+  const uint8Array = new Uint8Array(byteLength, 0, Math.min(64, byteLength.byteLength));
+  let obj = require(4772) /* detectFile */;
+  const detectFileResult = obj.detectFile(uint8Array);
+  let mimeType;
+  if (detectFileResult != null) {
+    mimeType = detectFileResult.mimeType;
   }
-  const items = [
-    {
-      key: "create",
-      value(byteLength) {
-        const uint8Array = new Uint8Array(byteLength, 0, Math.min(64, byteLength.byteLength));
-        let obj = DiscordImageFactory(outer1_1[2]);
-        const detectFileResult = obj.detectFile(uint8Array);
-        let mimeType;
-        if (null != detectFileResult) {
-          mimeType = detectFileResult.mimeType;
-        }
-        obj = null;
-        if ("image/png" === mimeType) {
-          const DiscordImagePng = DiscordImageFactory(outer1_1[3]).DiscordImagePng;
-          obj = DiscordImagePng.create(byteLength);
-        }
-        return obj;
-      }
-    }
-  ];
-  return callback(DiscordImageFactory, null, items);
-})();
-const result = require("detectFile").fileFinishedImporting("modules/media/web/utils/DiscordImageFactory.tsx");
+  obj = null;
+  if ("image/png" === mimeType) {
+    const DiscordImagePng = require(4799) /* create */.DiscordImagePng;
+    obj = DiscordImagePng.create(byteLength);
+  }
+  return obj;
+};
 
-export const DiscordImageFactory = tmp2;
+export const DiscordImageFactory = prototype;

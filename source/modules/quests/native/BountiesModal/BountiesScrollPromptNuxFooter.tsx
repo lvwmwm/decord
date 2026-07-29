@@ -1,31 +1,31 @@
-// Module ID: 14051
-// Function ID: 107358
+// Module ID: 14073
+// Function ID: 14074
 // Name: BountiesScrollPromptFooter
-// Dependencies: [27, 33, 4165, 4161, 1212, 2]
+// Dependencies: [17, 21, 4189, 4185, 1236, 2]
 // Exports: default
 
-// Module 14051 (BountiesScrollPromptFooter)
+// Module 14073 (BountiesScrollPromptFooter)
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_3;
-let closure_4;
-({ jsx: closure_3, jsxs: closure_4 } = jsxProd);
-let closure_5 = _createForOfIteratorHelperLoose.createStyles(() => ({ root: { alignItems: "center", gap: 2 }, titleText: { textAlign: "center" }, swipeText: { textAlign: "center", textTransform: "uppercase" } }));
-const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/quests/native/BountiesModal/BountiesScrollPromptNuxFooter.tsx");
+let c3;
+let c4;
+({ jsx: c3, jsxs: c4 } = jsxProd);
+let closure_5 = createCacheKey.createStyles(() => ({ root: { alignItems: "center", gap: 2 }, titleText: { textAlign: "center" }, swipeText: { textAlign: "center", textTransform: "uppercase" } }));
+const result = require("createCacheKey").fileFinishedImporting("modules/quests/native/BountiesModal/BountiesScrollPromptNuxFooter.tsx");
 
 export default function BountiesScrollPromptFooter() {
   const tmp = callback3();
-  let obj = { style: tmp.root };
-  obj = { variant: "text-md/semibold", color: "text-default", style: tmp.titleText };
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj.children = intl.string(require(1212) /* getSystemLocale */.t.H57f41);
-  const items = [callback(require(4161) /* Text */.Text, obj), ];
-  obj = { variant: "text-xxs/semibold", color: "text-muted", style: tmp.swipeText };
-  const intl2 = require(1212) /* getSystemLocale */.intl;
-  obj.children = intl2.string(require(1212) /* getSystemLocale */.t.tG0zsk);
-  items[1] = callback(require(4161) /* Text */.Text, obj);
-  obj.children = items;
+  let obj = { style: tmp.root, children: null };
+  obj = { variant: "text-md/semibold", color: "text-default", style: tmp.titleText, children: null };
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj[3] = intl.string(require(1236) /* getSystemLocale */.t.H57f41);
+  const items = [callback(require(4185) /* Text */.Text, obj), ];
+  obj = { variant: "text-xxs/semibold", color: "text-muted", style: tmp.swipeText, children: null };
+  const intl2 = require(1236) /* getSystemLocale */.intl;
+  obj[3] = intl2.string(require(1236) /* getSystemLocale */.t.tG0zsk);
+  items[1] = callback(require(4185) /* Text */.Text, obj);
+  obj[1] = items;
   return callback2(View, obj);
 };

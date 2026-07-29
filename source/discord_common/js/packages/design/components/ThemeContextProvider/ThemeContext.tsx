@@ -1,23 +1,33 @@
-// Module ID: 3888
-// Function ID: 32174
-// Name: createThemedContext
-// Dependencies: [31, 33, 2]
-// Exports: UseThemeContext, createThemedContext
+// Module ID: 3912
+// Function ID: 3913
+// Name: json
+// Dependencies: [19, 21, 2]
+// Exports: UseThemeContext, createThemedContext, useThemeContext
 
-// Module 3888 (createThemedContext)
-import importAllResult from "result";
+// Module 3912 (json)
+import importAllResult from "noop";
 import jsxProd from "jsxProd";
 
 let closure_1;
-let closure_2;
-function createThemedContext(arg0) {
+let obj1;
+let c0 = importAllResult;
+({ Fragment: closure_1, jsx: obj1 } = jsxProd);
+let obj = { theme: "light", primaryColor: null, secondaryColor: null, gradient: null, flags: 0, contrast: 1, saturation: 1, density: "compact", disableAdaptiveTheme: false, reduceAdaptiveTheme: false };
+obj = {};
+let json = JSON.stringify(obj);
+let merged = Object.assign(obj);
+obj.key = json;
+let context = importAllResult.createContext(obj);
+const result = require("set").fileFinishedImporting("../discord_common/js/packages/design/components/ThemeContextProvider/ThemeContext.tsx");
+
+export const createThemedContext = function createThemedContext(arg0) {
   const obj = {};
   const json = JSON.stringify(arg0);
   const merged = Object.assign(arg0);
-  obj["key"] = json;
+  obj.key = json;
   return obj;
-}
-function useThemeContext() {
+};
+export const useThemeContext = function useThemeContext() {
   context = importAllResult.useContext(context);
   if (null == context) {
     const _Error = Error;
@@ -26,16 +36,18 @@ function useThemeContext() {
   } else {
     return context;
   }
-}
-({ Fragment: closure_1, jsx: closure_2 } = jsxProd);
-const themedContext = createThemedContext({ theme: "light", primaryColor: null, secondaryColor: null, gradient: null, flags: 0, contrast: 1, saturation: 1, density: "compact", disableAdaptiveTheme: false, reduceAdaptiveTheme: false });
-let context = importAllResult.createContext(themedContext);
-const result = require("set").fileFinishedImporting("../discord_common/js/packages/design/components/ThemeContextProvider/ThemeContext.tsx");
-
-export { createThemedContext };
-export { useThemeContext };
-export const FALLBACK_THEME_CONTEXT_VALUE = themedContext;
+};
+export const FALLBACK_THEME_CONTEXT_VALUE = obj;
 export const ThemeContext = context;
 export const UseThemeContext = function UseThemeContext(children) {
-  return callback(closure_1, { children: children.children(useThemeContext()) });
+  context = importAllResult.useContext(context);
+  if (null == context) {
+    const _Error = Error;
+    const error = new Error("useThemeContext must be used within a ThemeContext.Provider");
+    throw error;
+  } else {
+    const obj = { children: null };
+    obj[0] = children.children(context);
+    return callback(closure_1, obj);
+  }
 };

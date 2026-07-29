@@ -1,161 +1,254 @@
-// Module ID: 16225
-// Function ID: 125643
+// Module ID: 16260
+// Function ID: 16261
 // Name: AddAvatarScreen
-// Dependencies: [5, 57, 31, 27, 7913, 653, 33, 4165, 689, 5118, 5087, 1557, 566, 7926, 16226, 7955, 4709, 7916, 7918, 4161, 1212, 16235, 1273, 4578, 16223, 480, 6731, 5121, 5552, 2]
+// Dependencies: [5, 32, 19, 17, 7938, 676, 21, 4189, 712, 5140, 5109, 1581, 589, 7951, 16261, 7980, 4731, 7941, 7943, 4185, 1236, 16270, 1297, 4600, 16258, 503, 6752, 5143, 5570, 2]
 
-// Module 16225 (AddAvatarScreen)
+// Module 16260 (AddAvatarScreen)
 import closure_3 from "ME";
 import _slicedToArray from "_slicedToArray";
-import result from "result";
-import { View } from "HeaderBackImage";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import Text from "Text";
+import { View } from "setPendingChanges";
+import handleFormOpen from "handleFormOpen";
 import ME from "ME";
-import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import jsxProd from "TouchableUploadAvatar";
+import createCacheKey from "createCacheKey";
 import importDefaultResult from "createTextStyle";
 
 let Fonts;
 let ModalAnimation;
-let closure_10;
-let closure_9;
+let c10;
+let c9;
+let metroImportAll;
 const require = arg1;
 function AddAvatarScreen() {
-  function _handleSelectAvatar(result, arg1) {
-    // CreateGeneratorClosureLongIndex (0x67)
-    const obj = tmp11(tmp);
-    return obj(...arguments);
-  }
-  const tmp = _createForOfIteratorHelperLoose();
-  const tmp2 = _handleSelectAvatar(React.useState(false), 2);
-  let first = tmp2[0];
-  const _require = tmp2[1];
-  const tmp4 = _handleSelectAvatar(React.useState(), 2);
-  const first1 = tmp4[0];
-  const dependencyMap = tmp6;
-  const bottom = first1(1557)().bottom;
-  let obj = _require(566);
-  const items = [_isNativeReflectConstruct];
-  let pendingImage;
-  const stateFromStores = obj.useStateFromStores(items, () => outer1_7.getPendingChanges().pendingAvatar);
-  if (null != first1) {
-    let obj1 = _require(7926);
-    obj = { imageUri: _require(16226).DEFAULT_AVATARS[first1] };
-    let obj3 = _require(7926);
-    obj.description = obj3.generateAvatarDescription();
-    pendingImage = obj1.createPendingImage(obj);
-  }
-  let tmp11 = stateFromStores;
-  if (null != pendingImage) {
-    tmp11 = pendingImage;
-  }
-  let closure_3 = tmp11;
-  let obj4 = _require(7955);
-  let imageUri;
-  if (null != tmp11) {
-    imageUri = tmp11.imageUri;
-  }
-  obj = {};
-  const items1 = [tmp.container, ];
-  obj1 = {};
-  let num3 = 16;
-  if (bottom > 0) {
-    num3 = bottom;
-  }
-  obj1.paddingBottom = num3;
-  items1[1] = obj1;
-  obj.style = items1;
-  const obj2 = { style: tmp.headerContainer };
-  obj3 = {};
-  obj4 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary" };
-  const intl = _require(1212).intl;
-  obj4.children = intl.string(_require(1212).t.XQRWvR);
-  const items2 = [callback(_require(4161).Text, obj4), ];
-  const obj5 = { style: tmp.subtitle, variant: "heading-deprecated-12/medium", color: "text-default" };
-  const intl2 = _require(1212).intl;
-  obj5.children = intl2.string(_require(1212).t.fH9TLT);
-  items2[1] = callback(_require(4161).Text, obj5);
-  obj3.children = items2;
-  const items3 = [callback2(View, obj3), , ];
-  const obj6 = {
-    avatarSource: obj4.memoizedImageSource(imageUri),
-    showPendingAvatar: null != tmp11,
-    onSelectAvatar: function handleSelectAvatar() {
-      return _handleSelectAvatar(...arguments);
+  let require;
+  let tmp3;
+  function _handleSelectAvatar(Text, arg1) {
+    const self = this;
+    const tmp = pendingImage(function*() {
+      if (c3 === 2) {
+        c3 = 3;
+        HermesBuiltin.throwTypeError();
+      } else if (tmp4 === 3) {
+        if (arg0 === 1) {
+          throw arg1;
+        } else if (arg0 === 2) {
+          let obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
+        } else {
+          return { value: "HermesInternal", done: null };
+        }
+      } else {
+        try {
+          c3 = 2;
+          if (0 === dependencyMap) {
+            if (arg0 === 1) {
+              c3 = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              c3 = 3;
+              obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            } else {
+              let c1 = tmp5;
+              let base64 = tmp2;
+              base64 = undefined;
+              c1 = undefined;
+              outer1_0(false);
+              const obj1 = { size: null };
+              obj1[0] = outer1_8;
+              dependencyMap = 1;
+              c3 = 1;
+              let obj2 = { value: null, done: false };
+              obj2[0] = outer1_0(4731).openImagePicker(obj1);
+              return obj2;
+            }
+          } else if (arg0 === 1) {
+            c3 = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            c3 = 3;
+            let obj3 = { value: null, done: true };
+            obj3[0] = arg1;
+            return obj3;
+          } else {
+            base64 = arg1.base64;
+            if (null == base64) {
+              let pendingImage;
+              if (null != outer1_0) {
+                obj = outer1_0(7951);
+                const obj4 = { imageUri: null, description: null };
+                obj4[0] = base64;
+                obj2 = outer1_0(7951);
+                obj4[1] = obj2.generateAvatarDescription();
+                pendingImage = obj.createPendingImage(obj4);
+              }
+              const outer1_1 = pendingImage;
+              obj3 = outer1_0(7941);
+              let obj5 = { avatar: null };
+              obj5[0] = outer1_1;
+              obj3.setPendingChanges(obj5);
+              obj5 = outer1_0(7943);
+              let str = "set";
+              if (null == outer1_1) {
+                str = "remove";
+              }
+              const result = obj5.announcePendingAvatarChange(str);
+              dependencyMap(undefined);
+              c3 = 3;
+            }
+            outer1_0(true);
+          }
+        } catch (tmp42) {
+          c3 = tmp;
+          throw tmp42;
+        }
+      }
+    });
+    const _handleSelectAvatar = tmp;
+    const apply = tmp.apply;
+    if (typeof apply === "unknown") {
+      let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+    } else {
+      applyArgumentsResult = apply(self, arguments);
     }
-  };
-  items3[1] = callback(first1(16235), obj6);
-  const obj7 = { style: tmp.errorContainer };
-  const obj8 = { style: tmp.errorText };
-  if (first) {
-    const intl3 = _require(1212).intl;
-    first = intl3.string(_require(1212).t.XyLlVm);
+    return applyArgumentsResult;
   }
-  obj8.children = first;
-  obj7.children = callback(_require(1273).LegacyText, obj8);
-  items3[2] = callback(View, obj7);
-  obj2.children = items3;
-  const items4 = [callback2(View, obj2), callback(first1(16226), { onAvatarSelect: tmp4[1], selectedAvatar: first1 }), ];
-  const obj9 = { style: tmp.buttonContainer };
-  const obj10 = {};
-  const intl4 = _require(1212).intl;
-  obj10.text = intl4.string(_require(1212).t.PDTjLN);
-  obj10.grow = true;
-  obj10.onPress = function onPress() {
-    return callback(tmp6[24]).handlePressNext(closure_3, first1);
+  let tmp = createCacheKey();
+  [tmp3, require] = _handleSelectAvatar(React.useState(false), 2);
+  const tmp4 = _handleSelectAvatar(React.useState(), 2);
+  const first = tmp4[0];
+  let dependencyMap = tmp6;
+  const bottom = first(1581)().bottom;
+  let obj = require(589) /* initialize */;
+  const items = [handleFormOpen];
+  let pendingImage;
+  const stateFromStores = obj.useStateFromStores(items, () => pendingChanges.getPendingChanges().pendingAvatar);
+  if (null != first) {
+    let tmp9Result = tmp9(7951);
+    obj = { imageUri: null, description: null };
+    obj[0] = tmp9(16261).DEFAULT_AVATARS[first];
+    tmp9Result = tmp9(7951);
+    obj[1] = tmp9Result.generateAvatarDescription();
+    pendingImage = tmp9Result.createPendingImage(obj);
+  }
+  if (pendingImage == null) {
+    pendingImage = stateFromStores;
+  }
+  const tmp2 = _handleSelectAvatar(React.useState(false), 2);
+  let imageUri;
+  if (pendingImage != null) {
+    imageUri = pendingImage.imageUri;
+  }
+  const items1 = [tmp.container, ];
+  let num = 16;
+  const tmp9Result1 = require(7980) /* useDominantRGBFromImage */;
+  if (bottom > 0) {
+    num = bottom;
+  }
+  obj = { style: items1, children: null };
+  items1[1] = { paddingBottom: num };
+  let obj1 = { style: tmp.headerContainer, children: null };
+  let obj2 = { children: null };
+  let obj3 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: null };
+  const intl = tmp9(1236).intl;
+  obj3[4] = intl.string(require(1236) /* getSystemLocale */.t.XQRWvR);
+  const items2 = [callback(require(4185) /* Text */.Text, obj3), ];
+  let obj4 = { style: tmp.subtitle, variant: "heading-deprecated-12/medium", color: "text-default", children: null };
+  const intl2 = tmp9(1236).intl;
+  obj4[3] = intl2.string(require(1236) /* getSystemLocale */.t.fH9TLT);
+  items2[1] = callback(require(4185) /* Text */.Text, obj4);
+  obj2[0] = items2;
+  const items3 = [closure_10(View, obj2), , ];
+  const memoizedImageSourceResult = require(7980) /* useDominantRGBFromImage */.memoizedImageSource(imageUri);
+  items3[1] = callback(first(16270), {
+    avatarSource: require(7980) /* useDominantRGBFromImage */.memoizedImageSource(imageUri),
+    showPendingAvatar: null != pendingImage,
+    onSelectAvatar: function handleSelectAvatar() {
+      const self = this;
+      const apply = _handleSelectAvatar.apply;
+      if (typeof apply === "unknown") {
+        let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+      } else {
+        applyArgumentsResult = apply(self, arguments);
+      }
+      return applyArgumentsResult;
+    }
+  });
+  const obj6 = { style: tmp.errorContainer, children: null };
+  const obj7 = { style: tmp.errorText, children: null };
+  if (stringResult) {
+    const intl3 = tmp9(1236).intl;
+    stringResult = intl3.string(tmp9(1236).t.XyLlVm);
+  }
+  obj7[1] = stringResult;
+  obj6[1] = callback(require(1297) /* Button */.LegacyText, obj7);
+  items3[2] = callback(View, obj6);
+  obj1[1] = items3;
+  const items4 = [closure_10(View, obj1), callback(first(16261), { onAvatarSelect: tmp4[1], selectedAvatar: first }), ];
+  const obj8 = { style: tmp.buttonContainer, children: null };
+  const obj9 = { text: null, grow: true, onPress: null, disabled: null };
+  const intl4 = tmp9(1236).intl;
+  obj9[0] = intl4.string(require(1236) /* getSystemLocale */.t.PDTjLN);
+  obj9[2] = function onPress() {
+    return outer1_0(tmp6[24]).handlePressNext(pendingImage, first);
   };
-  obj10.disabled = null == tmp11;
-  obj9.children = callback(_require(4578).Button, obj10);
-  items4[2] = callback(View, obj9);
-  obj.children = items4;
-  return callback2(View, obj);
+  obj9[3] = null == pendingImage;
+  obj8[1] = callback(require(4600) /* Button */.Button, obj9);
+  items4[2] = callback(View, obj8);
+  obj[1] = items4;
+  return closure_10(View, obj);
 }
 class AddAvatarModal {
   constructor() {
-    memo = result.useMemo(() => (function getScreens() {
-      let obj = {};
+    memo = Text.useMemo(() => {
+      let obj = { ADD_AVATAR: null };
       obj = {
-        impressionName: outer2_0(outer2_2[25]).ImpressionNames.AVATAR_UPLOAD,
+        impressionName: callback(503).ImpressionNames.AVATAR_UPLOAD,
         headerRight() {
-          const obj = {};
-          const intl = outer3_0(outer3_2[20]).intl;
-          obj.text = intl.string(outer3_0(outer3_2[20]).t["5Wxrcd"]);
-          obj.onPress = function onPress() {
-            return outer4_0(outer4_2[24]).showSkipAvatarModal();
+          const obj = { text: null, onPress: null };
+          const intl = callback(1236).intl;
+          obj[0] = intl.string(callback(1236).t["5Wxrcd"]);
+          obj[1] = function onPress() {
+            return callback(table[24]).showSkipAvatarModal();
           };
-          return outer3_9(outer3_0(outer3_2[26]).HeaderActionButton, obj);
+          return callback2(callback(6752).HeaderActionButton, obj);
         },
         headerLeft() {
           return null;
         },
-        headerTitle: outer2_0(outer2_2[27]).getHeaderNoTitle(),
+        headerTitle: null,
         ignoreKeyboard: true,
         fullscreen: true,
-        render() {
-          return outer3_9(outer3_12, {});
-        }
+        render: null
       };
-      obj.ADD_AVATAR = obj;
+      obj[3] = callback(5143).getHeaderNoTitle();
+      obj[6] = function render() {
+        return callback2(closure_12, {});
+      };
+      obj[0] = obj;
       return obj;
-    })(), []);
+    }, []);
     return jsx(require("NavigationStack").Navigator, { screens: memo, initialRouteName: "ADD_AVATAR" });
   }
 }
-const UPLOAD_MEDIUM_SIZE = ME.UPLOAD_MEDIUM_SIZE;
-({ Fonts, ModalAnimation } = ME);
-({ jsx: closure_9, jsxs: closure_10 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { flex: 1, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW, justifyContent: "center", paddingTop: require("NAV_BAR_HEIGHT").NAV_BAR_HEIGHT + 32, alignItems: "center" };
-_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.headerContainer = { display: "flex", alignItems: "center" };
-_createForOfIteratorHelperLoose.buttonContainer = { marginHorizontal: 16, marginBottom: 16 };
-_createForOfIteratorHelperLoose.title = { marginBottom: 8, textAlign: "center" };
-_createForOfIteratorHelperLoose.subtitle = { textAlign: "center" };
-_createForOfIteratorHelperLoose.errorContainer = { alignSelf: "center", paddingTop: 24 };
-const merged = Object.assign(require("createTextStyle")(Fonts.DISPLAY_MEDIUM, require("_createForOfIteratorHelperLoose").unsafe_rawColors.RED_400, 12));
-_createForOfIteratorHelperLoose.errorText = {};
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+({ UPLOAD_MEDIUM_SIZE: metroImportAll, Fonts, ModalAnimation } = ME);
+({ jsx: c9, jsxs: c10 } = jsxProd);
+createCacheKey = { container: null, headerContainer: null, buttonContainer: null, title: null, subtitle: null, errorContainer: null, errorText: null };
+createCacheKey = { flex: 1, backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW, justifyContent: "center", paddingTop: require("NAV_BAR_HEIGHT").NAV_BAR_HEIGHT + 32, alignItems: "center" };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { display: "flex", alignItems: "center" };
+createCacheKey[2] = { marginHorizontal: 16, marginBottom: 16 };
+createCacheKey[3] = { marginBottom: 8, textAlign: "center" };
+createCacheKey[4] = { textAlign: "center" };
+createCacheKey[5] = { alignSelf: "center", paddingTop: 24 };
+const merged = Object.assign(require("createTextStyle")(Fonts.DISPLAY_MEDIUM, require("Themes").unsafe_rawColors.RED_400, 12));
+createCacheKey[6] = {};
+createCacheKey = createCacheKey.createStyles(createCacheKey);
 AddAvatarModal.modalConfig = { animation: ModalAnimation.SLIDE_IN_OUT };
 let obj1 = {};
-const result = require("result").fileFinishedImporting("modules/avatar/native/components/AddAvatarModal.tsx");
+let result = require("noop").fileFinishedImporting("modules/avatar/native/components/AddAvatarModal.tsx");
 
 export default AddAvatarModal;

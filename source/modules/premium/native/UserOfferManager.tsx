@@ -1,30 +1,49 @@
-// Module ID: 16298
-// Function ID: 126306
-// Name: _isNativeReflectConstruct
-// Dependencies: [7, 6, 15, 17, 18, 1850, 6191, 482, 6481, 1873, 6483, 5112, 2]
+// Module ID: 16333
+// Function ID: 16334
+// Name: prototype
+// Dependencies: [1874, 6211, 505, 5134, 6502, 1897, 6504, 2]
 
-// Module 16298 (_isNativeReflectConstruct)
-import sum from "sum";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_8 from "_createForOfIteratorHelperLoose";
+// Module 16333 (prototype)
+import mergeGuildAvatar from "mergeGuildAvatar";
+import emitChanges from "emitChanges";
 import { PaymentGateways } from "sum";
-import tmp2 from "AutomaticLifecycleManager";
+import "initialize";
 
-const require = arg1;
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
-  }
-  const result = _isNativeReflectConstruct();
+let require = arg1;
+let prototype = function UserOfferManager() {
+  const applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
+  const require = applyArgumentsResult;
+  applyArgumentsResult.actions = {
+    POST_CONNECTION_OPEN() {
+      return applyArgumentsResult.handlePostConnectionOpen();
+    }
+  };
+  applyArgumentsResult.handlePostConnectionOpen = function handlePostConnectionOpen() {
+    currentUser = currentUser.getCurrentUser();
+    const NitroACOMSubscriptionExperiment = applyArgumentsResult(table[4]).NitroACOMSubscriptionExperiment;
+    if (NitroACOMSubscriptionExperiment.getConfig({ location: "UserOfferManager.handlePostConnectionOpen" }).enabled) {
+      const obj = { offerId: "Array", paymentGatewayOverride: 0 };
+      obj[1] = constants.APPLE_ADVANCED_COMMERCE;
+      const tmp4 = obj;
+    }
+    let isPremiumResult = null == currentUser || !currentUser.verified;
+    if (!isPremiumResult) {
+      let tmp2Result = tmp2(tmp3[5]);
+      isPremiumResult = tmp2Result.isPremium(currentUser);
+    }
+    if (!isPremiumResult) {
+      isPremiumResult = fetchingOffer.isFetchingOffer();
+    }
+    if (!isPremiumResult) {
+      tmp2Result = tmp2(tmp3[6]);
+      const userOffer = tmp2Result.fetchUserOffer("MobilePremiumOfferManager", true, tmp4);
+    }
+  };
+  return applyArgumentsResult;
+}.prototype;
+class prototype extends tmp2 {
 }
-tmp2 = new tmp2();
-let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/premium/native/UserOfferManager.tsx");
+prototype = new prototype();
+const result = require("sum").fileFinishedImporting("modules/premium/native/UserOfferManager.tsx");
 
-export default tmp2;
+export default prototype;

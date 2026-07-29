@@ -1,25 +1,32 @@
-// Module ID: 4848
-// Function ID: 42241
-// Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 1859, 2]
+// Module ID: 4870
+// Function ID: 4871
+// Name: toString
+// Dependencies: [1883, 2]
 
-// Module 4848 (_isNativeReflectConstruct)
-import set from "set";
-import _defineProperties from "_defineProperties";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
-import tmp2 from "Record";
+// Module 4870 (toString)
+import "toJS";
 
-function _isNativeReflectConstruct() {
-  let set = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return set;
+const result = require("set").fileFinishedImporting("records/ConnectedAccountRecord.tsx");
+class ConnectedAccountRecord extends tmp2 {
+  constructor(arg0) {
+    tmp = new ConnectedAccountRecord(new.target, new.target, global, ConnectedAccountRecord);
+    // ThrowIfThisInitialized (0x7c)
+    ({ id: tmp.id, type: tmp.type, name: tmp.name } = global);
+    tmp.revoked = global.revoked || false;
+    tmp.integrations = global.integrations || [];
+    tmp.visibility = global.visibility || 0;
+    tmp.friendSync = global.friend_sync || false;
+    tmp.showActivity = global.show_activity || false;
+    tmp.verified = global.verified || false;
+    tmp.accessToken = global.access_token || null;
+    tmp.twoWayLink = global.two_way_link || false;
+    tmp.metadata = global.metadata || null;
+    tmp.metadataVisibility = global.metadata_visibility || 0;
+    return tmp;
   }
-  const result = _isNativeReflectConstruct();
 }
-let result = require("_possibleConstructorReturn").fileFinishedImporting("records/ConnectedAccountRecord.tsx");
+ConnectedAccountRecord.prototype["toString"] = function toString() {
+  return this.name;
+};
 
-export default tmp2;
+export default ConnectedAccountRecord;

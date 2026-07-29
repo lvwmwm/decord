@@ -1,25 +1,17 @@
-// Module ID: 13096
-// Function ID: 101152
-// Name: PremiumSKUFeature
-// Dependencies: [7, 6, 2]
+// Module ID: 13119
+// Function ID: 13120
+// Name: set
+// Dependencies: [2]
 
-// Module 13096 (PremiumSKUFeature)
-import _classCallCheck from "_classCallCheck";
-import importDefaultResult from "_defineProperties";
-
-class PremiumSKUFeature {
-  constructor(arg0, arg1, arg2) {
-    tmp = c0(this, PremiumSKUFeature);
-    this.name = global;
-    this.description = importDefault;
-    this.getFeatureValue = arg1;
-    obj = { value: null, configurable: false, writable: false };
-    obj.value = arg1;
-    definePropertyResult = Object.defineProperty(this, "getFeatureValue", obj);
-    return;
-  }
-}
-const importDefaultResultResult = require("_defineProperties")(PremiumSKUFeature);
+// Module 13119 (set)
 const result = require("set").fileFinishedImporting("modules/premium/PremiumSKUFeature.tsx");
 
-export default importDefaultResultResult;
+export default function PremiumSKUFeature(name, getFeatureValue, description) {
+  let obj = Object.create(new.target.prototype);
+  obj.name = name;
+  obj.description = description;
+  obj.getFeatureValue = getFeatureValue;
+  obj = { value: getFeatureValue, configurable: false, writable: false };
+  Object.defineProperty(obj, "getFeatureValue", obj);
+  return obj;
+}.prototype;

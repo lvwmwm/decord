@@ -1,85 +1,91 @@
-// Module ID: 14608
-// Function ID: 111350
+// Module ID: 14633
+// Function ID: 14634
 // Name: ListEdgeSpacer
-// Dependencies: [31, 27, 5780, 655, 653, 33, 4165, 689, 1456, 8639, 14589, 5497, 5517, 566, 14079, 14081, 5779, 8636, 4161, 4578, 1212, 5484, 6655, 2]
+// Dependencies: [19, 17, 5798, 678, 676, 21, 4189, 712, 1480, 8663, 14614, 5515, 5535, 589, 14101, 14103, 5797, 8660, 4185, 4600, 1236, 5502, 6676, 2]
 // Exports: default
 
-// Module 14608 (ListEdgeSpacer)
-import result from "result";
-import get_ActivityIndicator from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 14633 (ListEdgeSpacer)
+import Button from "Button";
+import get_ActivityIndicator from "CollectiblesShopCardInternalV2";
+import updateCategoriesAndProducts from "updateCategoriesAndProducts";
 import { CollectiblesMobileShopScreen as closure_7 } from "items";
 import { UserSettingsSections } from "ME";
-import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import jsxProd from "Layer";
+import createCacheKey from "createCacheKey";
 
-let closure_10;
-let closure_4;
-let closure_5;
-let closure_9;
+let c10;
+let c4;
+let c5;
+let c9;
 const require = arg1;
 function ListEdgeSpacer() {
-  return callback(closure_5, { style: _createForOfIteratorHelperLoose().listEdgeSpacer });
+  return callback(closure_5, { style: createCacheKey().listEdgeSpacer });
 }
 function ListItemSeparator() {
-  return callback(closure_5, { style: _createForOfIteratorHelperLoose().listItemSeparator });
+  return callback(closure_5, { style: createCacheKey().listItemSeparator });
 }
-({ Image: closure_4, View: closure_5 } = get_ActivityIndicator);
-({ jsx: closure_9, jsxs: closure_10 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { width: "100%", paddingTop: require("_createForOfIteratorHelperLoose").space.PX_16, paddingBottom: require("_createForOfIteratorHelperLoose").space.PX_16 };
-_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.containerWithBackground = { marginTop: require("_createForOfIteratorHelperLoose").space.PX_24, paddingTop: require("_createForOfIteratorHelperLoose").space.PX_24, paddingBottom: require("_createForOfIteratorHelperLoose").space.PX_24, overflow: "hidden" };
-_createForOfIteratorHelperLoose.backgroundImage = { position: "absolute", top: 0, left: 0, bottom: 0, minWidth: "100%", aspectRatio: 2.5, resizeMode: "cover" };
-let obj2 = { flexDirection: "row", alignItems: "center", justifyContent: "space-between", gap: require("_createForOfIteratorHelperLoose").space.PX_12, paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16, marginBottom: require("_createForOfIteratorHelperLoose").space.PX_16, zIndex: 1 };
-_createForOfIteratorHelperLoose.header = obj2;
-_createForOfIteratorHelperLoose.headingWrapper = { flexShrink: 1 };
-let obj1 = { marginTop: require("_createForOfIteratorHelperLoose").space.PX_24, paddingTop: require("_createForOfIteratorHelperLoose").space.PX_24, paddingBottom: require("_createForOfIteratorHelperLoose").space.PX_24, overflow: "hidden" };
-_createForOfIteratorHelperLoose.listEdgeSpacer = { width: require("_createForOfIteratorHelperLoose").space.PX_16 };
-let obj3 = { width: require("_createForOfIteratorHelperLoose").space.PX_16 };
-_createForOfIteratorHelperLoose.listItemSeparator = { width: require("_createForOfIteratorHelperLoose").space.PX_12 };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-let obj4 = { width: require("_createForOfIteratorHelperLoose").space.PX_12 };
-let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/collectibles/native/ShelfBlock.tsx");
+({ Image: c4, View: c5 } = get_ActivityIndicator);
+({ jsx: c9, jsxs: c10 } = jsxProd);
+createCacheKey = { container: null, containerWithBackground: null, backgroundImage: null, header: null, headingWrapper: null, listEdgeSpacer: null, listItemSeparator: null };
+createCacheKey = { width: "100%", paddingTop: require("Themes").space.PX_16, paddingBottom: require("Themes").space.PX_16 };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { marginTop: require("Themes").space.PX_24, paddingTop: require("Themes").space.PX_24, paddingBottom: require("Themes").space.PX_24, overflow: "hidden" };
+createCacheKey[2] = { position: "absolute", top: 0, left: 0, bottom: 0, minWidth: "100%", aspectRatio: 2.5, resizeMode: "cover" };
+let obj1 = { marginTop: require("Themes").space.PX_24, paddingTop: require("Themes").space.PX_24, paddingBottom: require("Themes").space.PX_24, overflow: "hidden" };
+createCacheKey[3] = { flexDirection: "row", alignItems: "center", justifyContent: "space-between", gap: require("Themes").space.PX_12, paddingHorizontal: require("Themes").space.PX_16, marginBottom: require("Themes").space.PX_16, zIndex: 1 };
+createCacheKey[4] = { flexShrink: 1 };
+let obj2 = { flexDirection: "row", alignItems: "center", justifyContent: "space-between", gap: require("Themes").space.PX_12, paddingHorizontal: require("Themes").space.PX_16, marginBottom: require("Themes").space.PX_16, zIndex: 1 };
+createCacheKey[5] = { width: require("Themes").space.PX_16 };
+let obj3 = { width: require("Themes").space.PX_16 };
+createCacheKey[6] = { width: require("Themes").space.PX_12 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let obj4 = { width: require("Themes").space.PX_12 };
+let result = require("updateCategoriesAndProducts").fileFinishedImporting("modules/collectibles/native/ShelfBlock.tsx");
 
 export default function _default(block) {
   block = block.block;
   const preferVCPrice = block.preferVCPrice;
-  const tmp = _createForOfIteratorHelperLoose();
+  let navigation;
+  let collectiblesAnalyticsContext;
+  let stateFromStores;
+  let c5;
+  const tmp = createCacheKey();
   let obj = block(navigation[8]);
   navigation = obj.useNavigation();
   let obj1 = block(navigation[9]);
-  const collectiblesAnalyticsContext = obj1.useCollectiblesAnalyticsContext();
+  collectiblesAnalyticsContext = obj1.useCollectiblesAnalyticsContext();
   let obj2 = block(navigation[10]);
   let obj3 = block(navigation[13]);
-  let items = [_isNativeReflectConstruct];
-  const stateFromStores = obj3.useStateFromStores(items, () => {
+  let items = [updateCategoriesAndProducts];
+  stateFromStores = obj3.useStateFromStores(items, () => {
     let category;
     if (null != block.categorySkuId) {
-      category = outer1_6.getCategory(block.categorySkuId);
+      category = outer1_6.getCategory(tmp.categorySkuId);
     }
     return category;
   });
-  const tmp6 = preferVCPrice(navigation[14])();
-  let closure_5 = tmp6;
-  const items1 = [block.rankedSkuIds, tmp6];
-  const memo = collectiblesAnalyticsContext.useMemo(() => tmp6(block.rankedSkuIds), items1);
+  const tmp9 = preferVCPrice(navigation[14])();
+  c5 = tmp9;
+  const items1 = [block.rankedSkuIds, tmp9];
+  const memo = collectiblesAnalyticsContext.useMemo(() => _undefined(block.rankedSkuIds), items1);
   let obj4 = block(navigation[15]);
   const filteredAndSortedProducts = obj4.useFilteredAndSortedProducts({ products: memo });
   const items2 = [stateFromStores, navigation, collectiblesAnalyticsContext];
   const items3 = [block.name, preferVCPrice];
   const callback = collectiblesAnalyticsContext.useCallback(() => {
     if (null != stateFromStores) {
-      if (stateFromStores.isOrbsExclusive) {
-        let obj = {};
+      if (tmp.isOrbsExclusive) {
+        let obj = { analyticsLocations: null, analyticsSource: null, screen: null };
         const items = [preferVCPrice(navigation[12]).COLLECTIBLES_SHOP];
-        obj.analyticsLocations = items;
-        obj.analyticsSource = preferVCPrice(navigation[12]).COLLECTIBLES_SHOP;
-        obj.screen = outer1_7.ORBS;
+        obj[0] = items;
+        obj[1] = preferVCPrice(navigation[12]).COLLECTIBLES_SHOP;
+        obj[2] = outer1_7.ORBS;
         const result = block(navigation[16]).openCollectiblesShopMobile(obj);
         const obj2 = block(navigation[16]);
       } else {
-        obj = { category: stateFromStores, analyticsContext: collectiblesAnalyticsContext };
+        obj = { category: null, analyticsContext: null };
+        obj[0] = tmp;
+        obj[1] = collectiblesAnalyticsContext;
         navigation.navigate(outer1_8.COLLECTIBLES_SHOP_VIEW_ALL_CATEGORY_ITEMS, obj);
       }
     }
@@ -88,76 +94,90 @@ export default function _default(block) {
     let index;
     let item;
     ({ item, index } = arg0);
-    obj = { newValue: obj };
+    obj = { newValue: obj, children: null };
     obj = { tilePosition: index, pageSection: block.name };
     obj = { product: item, preferVCPrice };
-    obj.children = outer1_9(preferVCPrice(navigation[17]), obj);
+    obj[1] = outer1_9(preferVCPrice(navigation[17]), obj);
     return outer1_9(block(navigation[9]).CollectiblesAnalyticsProvider, obj);
   }, items3);
   if (0 === filteredAndSortedProducts.length) {
     return null;
   } else {
     const items4 = [tmp.container, ];
-    let containerWithBackground = tmp42;
+    let containerWithBackground = tmp25;
     if (null != block.mobileBackgroundImage) {
       containerWithBackground = tmp.containerWithBackground;
     }
     items4[1] = containerWithBackground;
-    obj = { value: tmp4(preferVCPrice(navigation[12]).COLLECTIBLES_SHOP_SHELF).analyticsLocations };
-    obj = { style: items4 };
-    let tmp16 = tmp42;
+    obj = { value: null, children: null };
+    obj[0] = tmp7(preferVCPrice(navigation[12]).COLLECTIBLES_SHOP_SHELF).analyticsLocations;
+    obj = { style: null, children: null };
+    obj[0] = items4;
+    let tmp14Result = tmp25;
     if (null != block.mobileBackgroundImage) {
-      tmp16 = null != block.mobileBackgroundImage;
+      tmp14Result = null != block.mobileBackgroundImage;
     }
-    if (tmp16) {
-      obj1 = { style: tmp.backgroundImage };
-      obj2 = { uri: block.mobileBackgroundImage };
-      obj1.source = obj2;
-      tmp16 = callback(stateFromStores, obj1);
+    if (tmp14Result) {
+      obj1 = { style: null, source: null };
+      obj1[0] = tmp.backgroundImage;
+      obj2 = { uri: null };
+      obj2[0] = block.mobileBackgroundImage;
+      obj1[1] = obj2;
+      tmp14Result = tmp14(stateFromStores, obj1);
     }
-    const items5 = [tmp16, , ];
-    obj3 = { style: tmp.header };
-    obj4 = { style: tmp.headingWrapper };
-    const obj5 = { variant: "text-md/semibold" };
-    let tmp26;
+    const items5 = [tmp14Result, , ];
+    obj3 = { style: null, children: null };
+    obj3[0] = tmp.header;
+    obj4 = { style: null, children: null };
+    obj4[0] = tmp.headingWrapper;
+    let tmp19;
     if (null != block.mobileBackgroundImage) {
-      const obj6 = {};
-      const titleColor = block.titleColor;
-      let str2 = "#ffffff";
-      if (null != titleColor) {
-        str2 = titleColor;
+      let str = block.titleColor;
+      if (str == null) {
+        str = "#ffffff";
       }
-      obj6.color = str2;
-      tmp26 = obj6;
+      const obj5 = { color: null };
+      obj5[0] = str;
+      tmp19 = obj5;
     }
-    obj5.style = tmp26;
-    obj5.children = block.name;
-    obj4.children = callback(block(navigation[18]).Heading, obj5);
-    const items6 = [callback(closure_5, obj4), ];
-    let tmp28Result = block.showButton && null != stateFromStores;
-    if (tmp28Result) {
-      const obj7 = { variant: null, size: "sm", shrink: true, grow: false };
-      let str3 = "secondary";
-      if (tmp42) {
-        str3 = "primary-overlay";
+    const obj6 = { variant: "text-md/semibold", style: null, children: null };
+    obj6[1] = tmp19;
+    obj6[2] = block.name;
+    obj4[1] = closure_9(tmp2(tmp3[18]).Heading, obj6);
+    const items6 = [closure_9(c5, obj4), ];
+    tmp14Result = block.showButton && null != stateFromStores;
+    if (tmp14Result) {
+      let str2 = "secondary";
+      if (tmp25) {
+        str2 = "primary-overlay";
       }
-      obj7.variant = str3;
-      const intl = block(navigation[20]).intl;
-      obj7.text = intl.string(block(navigation[20]).t.xFcotU);
-      obj7.onPress = callback;
-      tmp28Result = callback(block(navigation[19]).Button, obj7);
-      const tmp28 = callback;
+      const obj7 = { variant: null, size: "sm", shrink: true, grow: false, text: null, onPress: null };
+      obj7[0] = str2;
+      const intl = tmp2(tmp3[20]).intl;
+      obj7[4] = intl.string(tmp2(tmp3[20]).t.xFcotU);
+      obj7[5] = callback;
+      tmp14Result = tmp14(tmp2(tmp3[19]).Button, obj7);
     }
-    items6[1] = tmp28Result;
-    obj3.children = items6;
-    items5[1] = closure_10(closure_5, obj3);
-    const obj8 = {};
-    const obj9 = { horizontal: true, accessibilityRole: "list", accessibilityLabel: block.name, data: filteredAndSortedProducts, keyExtractor: tmp10, onScroll: obj2.useCollectiblesCoachmarkScrollDismissContext().handleDismissCoachmarkOnScroll, renderItem: callback1, decelerationRate: "fast", snapToInterval: block(navigation[17]).COLLECTIBLES_SHOP_CARD_WIDTH + preferVCPrice(navigation[7]).space.PX_12, showsHorizontalScrollIndicator: false, ListHeaderComponent: ListEdgeSpacer, ListFooterComponent: ListEdgeSpacer, ItemSeparatorComponent: ListItemSeparator };
-    obj8.children = callback(block(navigation[22]).FlashList, obj9);
-    items5[2] = callback(block(navigation[21]).LayerScope, obj8);
-    obj.children = items5;
-    obj.children = closure_10(closure_5, obj);
-    return callback(block(navigation[11]).AnalyticsLocationProvider, obj);
+    items6[1] = tmp14Result;
+    obj3[1] = items6;
+    items5[1] = closure_10(c5, obj3);
+    const obj8 = { children: null };
+    const obj9 = { horizontal: true, accessibilityRole: "list", accessibilityLabel: null, data: null, keyExtractor: null, onScroll: null, renderItem: null, decelerationRate: "fast", snapToInterval: null, showsHorizontalScrollIndicator: false, ListHeaderComponent: null, ListFooterComponent: null, ItemSeparatorComponent: null };
+    obj9[2] = block.name;
+    obj9[3] = filteredAndSortedProducts;
+    obj9[4] = tmp13;
+    obj9[5] = obj2.useCollectiblesCoachmarkScrollDismissContext().handleDismissCoachmarkOnScroll;
+    obj9[6] = callback1;
+    obj9[8] = tmp2(tmp3[17]).COLLECTIBLES_SHOP_CARD_WIDTH + tmp6(tmp3[7]).space.PX_12;
+    obj9[10] = ListEdgeSpacer;
+    obj9[11] = ListEdgeSpacer;
+    obj9[12] = ListItemSeparator;
+    obj8[0] = closure_9(tmp2(tmp3[22]).FlashList, obj9);
+    items5[2] = closure_9(tmp2(tmp3[21]).LayerScope, obj8);
+    obj[1] = items5;
+    obj[1] = closure_10(c5, obj);
+    return closure_9(tmp2(tmp3[11]).AnalyticsLocationProvider, obj);
   }
-  tmp4 = preferVCPrice(navigation[11]);
+  tmp6 = preferVCPrice;
+  tmp7 = preferVCPrice(navigation[11]);
 };

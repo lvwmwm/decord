@@ -1,277 +1,143 @@
-// Module ID: 1892
-// Function ID: 21136
-// Name: _createForOfIteratorHelperLoose
-// Dependencies: [6, 7, 4, 1885, 2]
+// Module ID: 1917
+// Function ID: 1918
+// Name: logger
+// Dependencies: [4, 1909, 2]
 
-// Module 1892 (_createForOfIteratorHelperLoose)
-import _classCallCheck from "_classCallCheck";
-import _defineProperties from "_defineProperties";
-
-const require = arg1;
-function _createForOfIteratorHelperLoose(iterable) {
-  let closure_0 = iterable;
-  iterable = "undefined" !== typeof Symbol;
-  if (iterable) {
-    const _Symbol = Symbol;
-    iterable = iterable[Symbol.iterator];
+// Module 1917 (logger)
+let c2 = 1000000;
+let closure_3 = "1" === process.env.KV_STORAGE_LOGGING;
+const logger = new require("log").Logger("Runtime");
+const prototype = function Runtime() {
+  return Object.create(new.target.prototype);
+}.prototype;
+prototype["nextId"] = function nextId() {
+  const sum = this.counter + 1;
+  this.counter = sum;
+  return sum;
+};
+prototype["executeAsync"] = function executeAsync(type, arg1) {
+  const self = this;
+  let closure_1 = type;
+  let closure_0 = arg1;
+  this.initialize();
+  return new Promise((resolve, reject) => {
+    const nextIdResult = self.nextId();
+    callback(nextIdResult);
+    const pending = self.pending;
+    const result = pending.set(nextIdResult, { id: nextIdResult, tag: closure_1, started: performance.now(), resolve, reject });
+  });
+};
+prototype["addCompletionCallback"] = function addCompletionCallback(arg0) {
+  this.completionCallbacks.push(arg0);
+  return arg0;
+};
+prototype["addDatabaseStateCallback"] = function addDatabaseStateCallback(arg0) {
+  this.dbStateCallbacks.push(arg0);
+  return arg0;
+};
+prototype["removeCompletionCallback"] = function removeCompletionCallback(databaseStateCallback) {
+  let closure_0 = databaseStateCallback;
+  this.completionCallbacks = this.completionCallbacks.filter((arg0) => arg0 !== closure_0);
+};
+prototype["removeDatabaseStateCallback"] = function removeDatabaseStateCallback(arg0) {
+  let closure_0 = arg0;
+  this.dbStateCallbacks = this.dbStateCallbacks.filter((arg0) => arg0 !== closure_0);
+};
+prototype["onResponse"] = function onResponse(id) {
+  const self = this;
+  const pending = this.pending;
+  const value = pending.get(id.id);
+  if (null != value) {
+    let num = arg1;
+    const pending2 = self.pending;
+    pending2.delete(id.id);
+    if (arg1 == null) {
+      num = 0;
+    }
+    id.timings.materializationTimeNanoseconds = num;
+    self.completeOperation(value, id, nowResult);
+    const operation = self.resolveOperation(value, id);
   }
-  if (!iterable) {
-    iterable = iterable[Symbol.iterator];
+};
+prototype["onStatus"] = function onStatus(handle) {
+  for (const item10007 of tmp) {
+    let item10007Result = item10007(arg0.handle, arg0.state);
+    continue;
   }
-  if (iterable) {
-    const iter = iterable.call(iterable);
-    const next = iter.next;
-    return next.bind(iter);
+};
+prototype["resolveOperation"] = function resolveOperation(value, ok) {
+  if (ok.ok) {
+    value.resolve(ok.data);
   } else {
-    const _Array = Array;
-    let tmp = iterable;
-    if (!Array.isArray(iterable)) {
-      let tmp2;
-      if (iterable) {
-        if ("string" === typeof iterable) {
-          tmp2 = _arrayLikeToArray(iterable, undefined);
-        } else {
-          const toString = {}.toString;
-          const substr = toString.call(iterable).slice(8, -1);
-          let name = substr;
-          if (tmp3) {
-            name = iterable.constructor.name;
-          }
-          if ("Map" !== name) {
-            if ("Set" !== name) {
-              if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(iterable, undefined);
-              } else {
-                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
-              }
-            }
-            tmp2 = arr;
-          }
-          const _Array2 = Array;
-          arr = Array.from(iterable);
-          const callResult = toString.call(iterable);
-          tmp3 = "Object" === substr && iterable.constructor;
-        }
-      }
-      tmp = tmp2;
-      if (!tmp2) {
-        const _TypeError = TypeError;
-        const typeError = new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
-        throw typeError;
-      }
+    if (typeof ok.data === "y") {
+      const _Error = Error;
+      let data = new Error(ok.data);
+    } else {
+      data = ok.data;
     }
-    if (tmp) {
-      closure_0 = tmp;
+    value.reject(data);
+  }
+};
+prototype["completeOperation"] = function completeOperation(value, timings, nowResult) {
+  if (this.completionCallbacks.length > 0) {
+    let obj = { id: null, tag: null, ok: null, value: null, timings: null };
+    ({ id: obj[0], tag: obj[1] } = value);
+    ({ ok: obj[2], data: obj[3] } = timings);
+    obj = { queue: null, execution: null, materialization: null, ccTotal: null, jsTotal: null };
+    obj[0] = timings.timings.queueTimeNanoseconds / c2;
+    obj[1] = timings.timings.executionTimeNanoseconds / c2;
+    obj[2] = timings.timings.materializationTimeNanoseconds / c2;
+    obj[3] = timings.timings.totalTimeNanoseconds / c2;
+    obj[4] = nowResult - value.started;
+    obj[4] = obj;
+    for (const item10005 of completionCallbacks) {
+      let item10005Result = item10005(obj);
+      continue;
     }
-    let c1 = 0;
-    return () => {
-      if (closure_1 >= length.length) {
-        let obj = { done: true };
-      } else {
-        obj = { done: false };
-        closure_1 = tmp3 + 1;
-        obj.value = length[+closure_1];
-      }
-      return obj;
+  }
+};
+prototype["initialize"] = function initialize() {
+  let self = this;
+  self = this;
+  if (!this.initialized) {
+    const KV_RAW = self(1909).KV_RAW;
+    const obj = { status: null, response: null };
+    obj[0] = function status(handle) {
+      return self.onStatus(handle);
     };
-  }
-}
-function _arrayLikeToArray(arg0, arg1) {
-  let length;
-  if (tmp) {
-    length = arg0.length;
-  }
-  const ArrayResult = Array(length);
-  for (let num = 0; num < length; num = num + 1) {
-    ArrayResult[num] = arg0[num];
-  }
-  return ArrayResult;
-}
-let closure_4 = "1" === process.env.KV_STORAGE_LOGGING;
-const logger = new require("set").Logger("Runtime");
-let tmp3 = (() => {
-  class Runtime {
-    constructor() {
-      tmp = outer1_2(this, Runtime);
-      return;
-    }
-  }
-  let obj = {
-    key: "nextId",
-    value() {
-      const sum = this.counter + 1;
-      this.counter = sum;
-      return sum;
-    }
-  };
-  let items = [obj, , , , , , , , , , ];
-  obj = {
-    key: "executeAsync",
-    value(arg0, arg1) {
-      const self = this;
-      let closure_1 = arg0;
-      let _classCallCheck = arg1;
-      this.initialize();
-      return new Promise((resolve, reject) => {
-        const nextIdResult = self.nextId();
-        callback(nextIdResult);
-        const pending = self.pending;
-        const result = pending.set(nextIdResult, { id: nextIdResult, tag: closure_1, started: performance.now(), resolve, reject });
+    obj[1] = function response(arg0, arg1) {
+      return self.onResponse(arg0, arg1);
+    };
+    KV_RAW.setCallbacks(obj);
+    if (closure_3) {
+      const result = self.addCompletionCallback((ok) => {
+        let str = "failed";
+        if (ok.ok) {
+          str = "completed";
+        }
+        const execution = ok.timings.execution;
+        const items = ["" + execution.toFixed(3) + "ms execution", , , ];
+        const materialization = ok.timings.materialization;
+        items[1] = "" + materialization.toFixed(3) + "ms js materialization";
+        const ccTotal = ok.timings.ccTotal;
+        items[2] = "" + ccTotal.toFixed(3) + "ms cc completion";
+        const jsTotal = ok.timings.jsTotal;
+        items[3] = "" + jsTotal.toFixed(3) + "ms js reception";
+        const ccTotal2 = ok.timings.ccTotal;
+        const joined = items.join(", ");
+        logger.info("" + ok.tag + " (#" + ok.id + ") " + str + " in " + ccTotal2.toFixed(3) + "ms (" + joined + ").");
       });
+      const result1 = self.addDatabaseStateCallback((arg0, arg1) => logger.info("" + arg0 + " (state: " + arg1 + ")"));
     }
-  };
-  items[1] = obj;
-  obj = {
-    key: "addCompletionCallback",
-    value(arg0) {
-      this.completionCallbacks.push(arg0);
-      return arg0;
-    }
-  };
-  items[2] = obj;
-  items[3] = {
-    key: "addDatabaseStateCallback",
-    value(arg0) {
-      this.dbStateCallbacks.push(arg0);
-      return arg0;
-    }
-  };
-  items[4] = {
-    key: "removeCompletionCallback",
-    value(arg0) {
-      let closure_0 = arg0;
-      this.completionCallbacks = this.completionCallbacks.filter((arg0) => arg0 !== closure_0);
-    }
-  };
-  items[5] = {
-    key: "removeDatabaseStateCallback",
-    value(arg0) {
-      let closure_0 = arg0;
-      this.dbStateCallbacks = this.dbStateCallbacks.filter((arg0) => arg0 !== closure_0);
-    }
-  };
-  items[6] = {
-    key: "onResponse",
-    value(id) {
-      const self = this;
-      const pending = this.pending;
-      const value = pending.get(id.id);
-      if (null != value) {
-        const pending2 = self.pending;
-        pending2.delete(id.id);
-        let num = 0;
-        if (null != arg1) {
-          num = arg1;
-        }
-        id.timings.materializationTimeNanoseconds = num;
-        self.completeOperation(value, id, nowResult);
-        const operation = self.resolveOperation(value, id);
-      }
-    }
-  };
-  items[7] = {
-    key: "onStatus",
-    value(handle) {
-      let done;
-      const tmp = outer1_6(this.dbStateCallbacks);
-      let iter = tmp();
-      if (!iter.done) {
-        do {
-          let valueResult = iter.value(handle.handle, handle.state);
-          let iter2 = tmp();
-          iter = iter2;
-          done = iter2.done;
-        } while (!done);
-      }
-    }
-  };
-  items[8] = {
-    key: "resolveOperation",
-    value(resolve, ok) {
-      if (ok.ok) {
-        resolve.resolve(ok.data);
-      } else {
-        if ("string" === typeof ok.data) {
-          const _Error = Error;
-          let data = new Error(ok.data);
-        } else {
-          data = ok.data;
-        }
-        resolve.reject(data);
-      }
-    }
-  };
-  items[9] = {
-    key: "completeOperation",
-    value(started, timings) {
-      let done;
-      if (this.completionCallbacks.length > 0) {
-        let obj = {};
-        ({ id: obj.id, tag: obj.tag } = started);
-        ({ ok: obj.ok, data: obj.value } = timings);
-        obj = { queue: timings.timings.queueTimeNanoseconds / 1000000, execution: timings.timings.executionTimeNanoseconds / 1000000, materialization: timings.timings.materializationTimeNanoseconds / 1000000, ccTotal: timings.timings.totalTimeNanoseconds / 1000000, jsTotal: arg2 - started.started };
-        obj.timings = obj;
-        const tmp5 = outer1_6(tmp.completionCallbacks);
-        let iter2 = tmp5();
-        if (!iter2.done) {
-          do {
-            let valueResult = iter2.value(obj);
-            let iter = tmp5();
-            iter2 = iter;
-            done = iter.done;
-          } while (!done);
-        }
-      }
-    }
-  };
-  items[10] = {
-    key: "initialize",
-    value() {
-      let self = this;
-      self = this;
-      if (!this.initialized) {
-        const KV_RAW = Runtime(outer1_1[3]).KV_RAW;
-        const obj = {
-          status(current, outer1_15) {
-              return self.onStatus(current);
-            },
-          response(arg0, arg1) {
-              return self.onResponse(arg0, arg1);
-            }
-        };
-        KV_RAW.setCallbacks(obj);
-        if (outer1_4) {
-          const result = self.addCompletionCallback((ok) => {
-            let str = "failed";
-            if (ok.ok) {
-              str = "completed";
-            }
-            const execution = ok.timings.execution;
-            const items = ["" + execution.toFixed(3) + "ms execution", , , ];
-            const materialization = ok.timings.materialization;
-            items[1] = "" + materialization.toFixed(3) + "ms js materialization";
-            const ccTotal = ok.timings.ccTotal;
-            items[2] = "" + ccTotal.toFixed(3) + "ms cc completion";
-            const jsTotal = ok.timings.jsTotal;
-            items[3] = "" + jsTotal.toFixed(3) + "ms js reception";
-            const ccTotal2 = ok.timings.ccTotal;
-            const joined = items.join(", ");
-            outer2_5.info("" + ok.tag + " (#" + ok.id + ") " + str + " in " + ccTotal2.toFixed(3) + "ms (" + joined + ").");
-          });
-          const result1 = self.addDatabaseStateCallback((arg0, arg1) => outer2_5.info("" + arg0 + " (state: " + arg1 + ")"));
-        }
-        self.initialized = true;
-      }
-    }
-  };
-  return callback(Runtime, null, items);
-})();
-tmp3.counter = 0;
-tmp3.pending = new Map();
-tmp3.initialized = false;
-tmp3.dbStateCallbacks = [];
-tmp3.completionCallbacks = [];
+    self.initialized = true;
+  }
+};
+prototype.counter = 0;
+prototype.pending = new Map();
+prototype.initialized = false;
+prototype.dbStateCallbacks = [];
+prototype.completionCallbacks = [];
 const map = new Map();
-let result = require("log").fileFinishedImporting("../discord_common/js/packages/kv-storage/js/raw/Runtime.tsx");
+let result = require("set").fileFinishedImporting("../discord_common/js/packages/kv-storage/js/raw/Runtime.tsx");
 
-export const Runtime = tmp3;
+export const Runtime = prototype;

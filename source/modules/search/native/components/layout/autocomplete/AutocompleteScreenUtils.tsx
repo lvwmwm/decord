@@ -1,71 +1,72 @@
-// Module ID: 15526
-// Function ID: 119168
+// Module ID: 15560
+// Function ID: 15561
 // Name: getSearchQueryChannelIds
-// Dependencies: [1918, 3802, 1850, 10081, 9077, 653, 1212, 9879, 4109, 8998, 9653, 9655, 6616, 4679, 6611, 6608, 10991, 9002, 15527, 10082, 4004, 2]
+// Dependencies: [1942, 3826, 1874, 10102, 9101, 676, 1236, 9901, 4133, 9022, 9675, 9677, 6637, 4701, 6632, 6629, 11015, 9026, 15561, 10103, 4028, 2]
 // Exports: getSearchFilterAuthorTypeIcon, getSearchFilterHasIcon, getSearchQueryChannelIds, getSearchQueryUserIds, toSearchListChannelItem, toSearchListUserItem
 
-// Module 15526 (getSearchQueryChannelIds)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_4 from "_isNativeReflectConstruct";
-import closure_5 from "_isNativeReflectConstruct";
-import closure_6 from "_isNativeReflectConstruct";
+// Module 15560 (getSearchQueryChannelIds)
+import trackCommunicationDisabled from "trackCommunicationDisabled";
+import upsertRelationship from "upsertRelationship";
+import mergeGuildAvatar from "mergeGuildAvatar";
+import prototype from "prototype";
 import { SearchListItemTypes } from "SearchAutocompleteSelectAnalyticsActions";
 import { RelationshipTypes } from "ME";
 
 const require = arg1;
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/search/native/components/layout/autocomplete/AutocompleteScreenUtils.tsx");
+const result = require("mergeGuildAvatar").fileFinishedImporting("modules/search/native/components/layout/autocomplete/AutocompleteScreenUtils.tsx");
 
 export const getSearchQueryChannelIds = function getSearchQueryChannelIds(items) {
-  return new Set(authStore.getChannelIds(items));
+  return new Set(store2.getChannelIds(items));
 };
 export const getSearchQueryUserIds = function getSearchQueryUserIds(items) {
-  const prefixTag = authStore.getPrefixTag(items);
+  const prefixTag = store2.getPrefixTag(items);
   if (null == prefixTag) {
     const _Set2 = Set;
     const set = new Set();
     return set;
   } else {
     const _Set = Set;
-    const set1 = new Set(authStore.getUserIds(items, prefixTag.searchTokenType));
+    const set1 = new Set(obj.getUserIds(items, prefixTag.searchTokenType));
     return set1;
   }
+  obj = store2;
 };
 export const getSearchFilterHasIcon = function getSearchFilterHasIcon(text) {
-  const intl = require(1212) /* getSystemLocale */.intl;
-  if (intl.string(require(1212) /* getSystemLocale */.t.nrpA5E) === text) {
-    return importDefault(9879);
+  const intl = require(1236) /* getSystemLocale */.intl;
+  if (intl.string(require(1236) /* getSystemLocale */.t.nrpA5E) === text) {
+    return importDefault(9901);
   } else {
-    const intl3 = require(1212) /* getSystemLocale */.intl;
-    if (intl3.string(require(1212) /* getSystemLocale */.t.ZNR2fi) === text) {
-      return require(4109) /* LinkIcon */.LinkIcon;
+    const intl3 = tmp(1236).intl;
+    if (intl3.string(tmp(1236).t.ZNR2fi) === text) {
+      return tmp(4133).LinkIcon;
     } else {
-      const intl4 = require(1212) /* getSystemLocale */.intl;
-      if (intl4.string(require(1212) /* getSystemLocale */.t["20uQR3"]) === text) {
-        return require(8998) /* EmbedIcon */.EmbedIcon;
+      const intl4 = tmp(1236).intl;
+      if (intl4.string(tmp(1236).t["20uQR3"]) === text) {
+        return tmp(9022).EmbedIcon;
       } else {
-        const intl5 = require(1212) /* getSystemLocale */.intl;
-        if (intl5.string(require(1212) /* getSystemLocale */.t.L4lxyE) === text) {
-          return require(9653) /* PollsIcon */.PollsIcon;
+        const intl5 = tmp(1236).intl;
+        if (intl5.string(tmp(1236).t.L4lxyE) === text) {
+          return tmp(9675).PollsIcon;
         } else {
-          const intl6 = require(1212) /* getSystemLocale */.intl;
-          if (intl6.string(require(1212) /* getSystemLocale */.t["AV/v6i"]) === text) {
-            return require(9655) /* AttachmentIcon */.AttachmentIcon;
+          const intl6 = tmp(1236).intl;
+          if (intl6.string(tmp(1236).t["AV/v6i"]) === text) {
+            return tmp(9677).AttachmentIcon;
           } else {
-            const intl7 = require(1212) /* getSystemLocale */.intl;
-            if (intl7.string(require(1212) /* getSystemLocale */.t.XM9XGP) === text) {
-              return require(6616) /* VideoIcon */.VideoIcon;
+            const intl7 = tmp(1236).intl;
+            if (intl7.string(tmp(1236).t.XM9XGP) === text) {
+              return tmp(6637).VideoIcon;
             } else {
-              const intl8 = require(1212) /* getSystemLocale */.intl;
-              if (intl8.string(require(1212) /* getSystemLocale */.t.TNLcpx) === text) {
-                return require(4679) /* ImageIcon */.ImageIcon;
+              const intl8 = tmp(1236).intl;
+              if (intl8.string(tmp(1236).t.TNLcpx) === text) {
+                return tmp(4701).ImageIcon;
               } else {
-                const intl9 = require(1212) /* getSystemLocale */.intl;
-                if (intl9.string(require(1212) /* getSystemLocale */.t.F8Wf0e) === text) {
-                  return require(6611) /* SoundboardIcon */.SoundboardIcon;
+                const intl9 = tmp(1236).intl;
+                if (intl9.string(tmp(1236).t.F8Wf0e) === text) {
+                  return tmp(6632).SoundboardIcon;
                 } else {
-                  const intl2 = require(1212) /* getSystemLocale */.intl;
-                  if (intl2.string(require(1212) /* getSystemLocale */.t.PJgX2h) === text) {
-                    return require(6608) /* StickerIcon */.StickerIcon;
+                  const intl2 = tmp(1236).intl;
+                  if (intl2.string(tmp(1236).t.PJgX2h) === text) {
+                    return tmp(6629).StickerIcon;
                   }
                 }
               }
@@ -77,23 +78,23 @@ export const getSearchFilterHasIcon = function getSearchFilterHasIcon(text) {
   }
 };
 export const getSearchFilterAuthorTypeIcon = function getSearchFilterAuthorTypeIcon(text) {
-  const intl = require(1212) /* getSystemLocale */.intl;
-  if (intl.string(require(1212) /* getSystemLocale */.t.tPZo4p) === text) {
-    return require(10991) /* UserIcon */.UserIcon;
+  const intl = require(1236) /* getSystemLocale */.intl;
+  if (intl.string(require(1236) /* getSystemLocale */.t.tPZo4p) === text) {
+    return tmp(11015).UserIcon;
   } else {
-    const intl3 = require(1212) /* getSystemLocale */.intl;
-    if (intl3.string(require(1212) /* getSystemLocale */.t.JL7sRS) === text) {
-      return require(9002) /* RobotIcon */.RobotIcon;
+    const intl3 = tmp(1236).intl;
+    if (intl3.string(tmp(1236).t.JL7sRS) === text) {
+      return tmp(9026).RobotIcon;
     } else {
-      const intl2 = require(1212) /* getSystemLocale */.intl;
-      if (intl2.string(require(1212) /* getSystemLocale */.t.WjkIKU) === text) {
-        return require(15527) /* WebhookIcon */.WebhookIcon;
+      const intl2 = tmp(1236).intl;
+      if (intl2.string(tmp(1236).t.WjkIKU) === text) {
+        return tmp(15561).WebhookIcon;
       }
     }
   }
 };
 export const toSearchListUserItem = function toSearchListUserItem(items, user, callback2) {
-  let obj = require(10082) /* _createForOfIteratorHelperLoose */;
+  let obj = require(10103) /* SearchTokenTypes */;
   const guildIdFromSearchContext = obj.getGuildIdFromSearchContext(items);
   if (null == user) {
     return null;
@@ -102,21 +103,22 @@ export const toSearchListUserItem = function toSearchListUserItem(items, user, c
     if (null == guildIdFromSearchContext) {
       nickname = store.getNickname(user.id);
     }
-    if (null == nickname) {
+    if (nickname == null) {
       nickname = nick.getNick(guildIdFromSearchContext, user.id);
     }
-    if (null == nickname) {
-      nickname = importDefault(4004).getName(user);
-      const obj2 = importDefault(4004);
+    if (nickname == null) {
+      nickname = importDefault(4028).getName(user);
+      const obj2 = importDefault(4028);
     }
-    obj = { type: SearchListItemTypes.DM };
-    obj = { type: RelationshipTypes.NONE, user, nickname, onPress: callback2 };
-    let tmp10;
-    if (null != guildIdFromSearchContext) {
-      tmp10 = guildIdFromSearchContext;
-    }
-    obj.guildId = tmp10;
-    obj.props = obj;
+    obj = { type: null, props: null };
+    obj[0] = SearchListItemTypes.DM;
+    obj = { type: null, user: null, nickname: null, onPress: null, guildId: null };
+    obj[0] = RelationshipTypes.NONE;
+    obj[1] = user;
+    obj[2] = nickname;
+    obj[3] = callback2;
+    obj[4] = guildIdFromSearchContext;
+    obj[1] = obj;
     return obj;
   }
 };
@@ -129,32 +131,39 @@ export const toSearchListChannelItem = function toSearchListChannelItem(channel,
     user = user.getUser(channel.getRecipientId());
     let tmp5 = null;
     if (null != user) {
-      let obj = { type: SearchListItemTypes.DM };
-      obj = { type: RelationshipTypes.NONE, user };
+      let obj = { type: null, props: null };
+      obj[0] = SearchListItemTypes.DM;
+      obj = { type: null, user: null, nickname: null, onPress: null };
+      obj[0] = RelationshipTypes.NONE;
+      obj[1] = user;
       let nickname = store.getNickname(user.id);
-      if (null == nickname) {
-        nickname = importDefault(4004).getName(user);
-        const obj6 = importDefault(4004);
+      if (nickname == null) {
+        nickname = importDefault(4028).getName(user);
+        const obj6 = importDefault(4028);
       }
-      obj.nickname = nickname;
-      obj.onPress = function onPress() {
+      obj[2] = nickname;
+      obj[3] = function onPress() {
         return outer1_8(id.id);
       };
-      obj.props = obj;
+      obj[1] = obj;
       tmp5 = obj;
     }
     return tmp5;
   } else {
-    obj = {};
+    obj = { type: null, props: null };
     if (channel.isGroupDM()) {
-      obj.type = tmp.GROUP_DM;
-      const obj1 = { channel, onPress: outer1_8 };
-      obj.props = obj1;
+      obj[0] = tmp.GROUP_DM;
+      const obj1 = { channel: null, onPress: null };
+      obj1[0] = channel;
+      obj1[1] = outer1_8;
+      obj[1] = obj1;
       let tmp2 = obj;
     } else {
-      obj.type = tmp.GUILD_TEXT_CHANNEL;
-      const obj2 = { channel, onPress: outer1_8 };
-      obj.props = obj2;
+      obj[0] = tmp.GUILD_TEXT_CHANNEL;
+      const obj2 = { channel: null, onPress: null };
+      obj2[0] = channel;
+      obj2[1] = outer1_8;
+      obj[1] = obj2;
       tmp2 = obj;
     }
     return tmp2;

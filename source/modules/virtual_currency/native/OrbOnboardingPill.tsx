@@ -1,15 +1,15 @@
-// Module ID: 14771
-// Function ID: 112443
+// Module ID: 14797
+// Function ID: 14798
 // Name: OrbOnboardingPill
-// Dependencies: [31, 33, 4695, 8681, 4161, 1212, 4165, 689, 2]
+// Dependencies: [19, 21, 4717, 8705, 4185, 1236, 4189, 712, 2]
 
-// Module 14771 (OrbOnboardingPill)
-import "result";
+// Module 14797 (OrbOnboardingPill)
+import "noop";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_2;
-let closure_3;
+let c3;
+let obj1;
 const require = arg1;
 class OrbOnboardingPill {
   constructor(arg0) {
@@ -17,32 +17,32 @@ class OrbOnboardingPill {
     if (flag === undefined) {
       flag = true;
     }
-    tmp = c4();
+    tmp3 = closure_0;
+    tmp4 = closure_1;
+    tmp = OrbOnboardingPill();
     tmp2 = jsxs;
-    obj = { onPress: global.onPress, style: tmp.container, accessibilityRole: "button", activeOpacity: 0.8 };
-    obj.accessible = flag;
-    obj.accessibilityElementsHidden = !flag;
+    obj = { onPress: global.onPress, style: tmp.container, accessibilityRole: "button", activeOpacity: 0.8, accessible: flag, accessibilityElementsHidden: !flag, importantForAccessibility: null, children: null };
     str = "no";
     if (flag) {
       str = "auto";
     }
-    obj.importantForAccessibility = str;
+    obj[6] = str;
     items = [, ];
     items[0] = jsx(require("OrbsIcon").OrbsIcon, { size: "sm" });
-    obj = { variant: "text-sm/semibold", color: "redesign-button-tertiary-text" };
+    obj = { variant: "text-sm/semibold", color: "redesign-button-tertiary-text", children: null };
     intl = require("getSystemLocale").intl;
-    obj.children = intl.string(require("getSystemLocale").t["9JpRfC"]);
+    obj[2] = intl.string(require("getSystemLocale").t["9JpRfC"]);
     items[1] = jsx(require("Text").Text, obj);
-    obj.children = items;
+    obj[7] = items;
     return tmp2(require("PressableBase").PressableOpacity, obj);
   }
 }
-({ jsx: closure_2, jsxs: closure_3 } = jsxProd);
+({ jsx: obj1, jsxs: c3 } = jsxProd);
 OrbOnboardingPill.displayName = "OrbOnboardingPill";
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { height: 36, borderRadius: require("_createForOfIteratorHelperLoose").radii.round, justifyContent: "center", alignItems: "center", flexDirection: "row", paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_12, paddingVertical: require("_createForOfIteratorHelperLoose").space.PX_4, backgroundColor: require("_createForOfIteratorHelperLoose").colors.REDESIGN_BUTTON_TERTIARY_BACKGROUND, flexShrink: 0, gap: 4 };
-_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+createCacheKey = { container: null };
+createCacheKey = { height: 36, borderRadius: require("Themes").radii.round, justifyContent: "center", alignItems: "center", flexDirection: "row", paddingHorizontal: require("Themes").space.PX_12, paddingVertical: require("Themes").space.PX_4, backgroundColor: require("Themes").colors.REDESIGN_BUTTON_TERTIARY_BACKGROUND, flexShrink: 0, gap: 4 };
+createCacheKey[0] = createCacheKey;
+createCacheKey = createCacheKey.createStyles(createCacheKey);
 const result = require("PressableBase").fileFinishedImporting("modules/virtual_currency/native/OrbOnboardingPill.tsx");
 
 export default OrbOnboardingPill;

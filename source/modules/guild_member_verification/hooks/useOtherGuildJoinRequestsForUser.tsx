@@ -1,12 +1,12 @@
-// Module ID: 15419
-// Function ID: 117414
+// Module ID: 15452
+// Function ID: 15453
 // Name: useOtherGuildJoinRequestsForUser
-// Dependencies: [31, 5696, 566, 9132, 2]
+// Dependencies: [19, 5714, 589, 9156, 2]
 // Exports: useOtherGuildJoinRequestsForUser
 
-// Module 15419 (useOtherGuildJoinRequestsForUser)
-import result from "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 15452 (useOtherGuildJoinRequestsForUser)
+import noop from "noop";
+import updateSubmittedGuildJoinRequestTotal from "updateSubmittedGuildJoinRequestTotal";
 
 const require = arg1;
 const result = require("initialize").fileFinishedImporting("modules/guild_member_verification/hooks/useOtherGuildJoinRequestsForUser.tsx");
@@ -15,9 +15,10 @@ export const useOtherGuildJoinRequestsForUser = function useOtherGuildJoinReques
   guildId = guildId.guildId;
   const userId = guildId.userId;
   const selectedJoinRequestId = guildId.selectedJoinRequestId;
-  const items = [_isNativeReflectConstruct];
+  let stateFromStores;
+  let items = [updateSubmittedGuildJoinRequestTotal];
   const items1 = [guildId, userId];
-  const stateFromStores = guildId(selectedJoinRequestId[2]).useStateFromStores(items, () => outer1_4.getRequestsForUser(guildId, userId), items1);
+  stateFromStores = guildId(selectedJoinRequestId[2]).useStateFromStores(items, () => outer1_4.getRequestsForUser(guildId, userId), items1);
   const items2 = [guildId, userId, stateFromStores];
   const effect = stateFromStores.useEffect(() => {
     if (null == stateFromStores) {
@@ -27,7 +28,11 @@ export const useOtherGuildJoinRequestsForUser = function useOtherGuildJoinReques
   }, items2);
   const items3 = [stateFromStores, selectedJoinRequestId];
   return stateFromStores.useMemo(() => {
-    const found = null != stateFromStores ? stateFromStores : [].filter((joinRequestId) => joinRequestId.joinRequestId !== outer1_2);
+    let items = stateFromStores;
+    if (stateFromStores == null) {
+      items = [];
+    }
+    const found = items.filter((joinRequestId) => joinRequestId.joinRequestId !== closure_2);
     const substr = found.slice();
     return substr.sort((createdAt, createdAt2) => {
       const time = new Date(createdAt2.createdAt).getTime();

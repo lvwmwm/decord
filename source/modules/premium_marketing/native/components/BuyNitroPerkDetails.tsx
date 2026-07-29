@@ -1,21 +1,22 @@
-// Module ID: 6634
-// Function ID: 58510
+// Module ID: 6655
+// Function ID: 6656
 // Name: openBuyNitroPerkDetails
-// Dependencies: [31, 27, 33, 4165, 6548, 6635, 1212, 4576, 689, 6638, 6639, 5517, 4133, 2]
+// Dependencies: [19, 17, 21, 4189, 6569, 6656, 1236, 4598, 712, 6659, 6660, 5535, 4157, 2]
 // Exports: openBuyNitroPerkDetails
 
-// Module 6634 (openBuyNitroPerkDetails)
+// Module 6655 (openBuyNitroPerkDetails)
 import { Image } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import importAllResult from "result";
+import createCacheKey from "createCacheKey";
+import importAllResult from "noop";
 
-let closure_4;
-let closure_5;
+let c4;
+let c5;
 const require = arg1;
-({ jsx: closure_4, jsxs: closure_5 } = jsxProd);
-let closure_6 = _createForOfIteratorHelperLoose.createStyles({ illustration: { width: "100%", height: 180 } });
-let closure_7 = require("result").memo((perk) => {
+({ jsx: c4, jsxs: c5 } = jsxProd);
+const BuyNitroPerkDetailsActionSheet = "BuyNitroPerkDetailsActionSheet";
+let closure_7 = createCacheKey.createStyles({ illustration: { width: "100%", height: 180 } });
+let closure_8 = require("noop").memo((perk) => {
   let analyticsLocations;
   let applicationId;
   let onPaymentDismiss;
@@ -24,52 +25,56 @@ let closure_7 = require("result").memo((perk) => {
   let selectedTier;
   perk = perk.perk;
   ({ selectedTier, selectedProductId, analyticsLocations, applicationId, onPaymentSuccess, onPaymentDismiss } = perk);
-  let obj = require(6548) /* _createForOfIteratorHelperLoose */;
+  let obj = require(6569) /* PremiumTypes */;
   const buyNitroPlanSelection = obj.useBuyNitroPlanSelection({ tier: selectedTier, productId: selectedProductId });
   const detail = perk.detail;
-  let tmp4Result = null;
+  let tmp6Result = null;
   if (null != detail) {
-    obj = { title: perk.label };
-    const intl = require(1212) /* getSystemLocale */.intl;
-    obj.description = intl.string(detail.description);
-    obj = { source: detail.image, style: tmp.illustration, resizeMode: "contain" };
-    obj.illustration = callback(Image, obj);
-    const obj1 = { spacing: importDefault(689).space.PX_12 };
-    let tmp10 = null != buyNitroPlanSelection.selection.item;
-    if (tmp10) {
-      const obj2 = { planSelection: buyNitroPlanSelection, item: buyNitroPlanSelection.selection.item, centered: true };
-      tmp10 = callback(importDefault(6638), obj2);
+    obj = { title: null, description: null, illustration: null, actions: null };
+    obj[0] = perk.label;
+    const intl = tmp2(1236).intl;
+    obj[1] = intl.string(detail.description);
+    obj = { source: null, style: null, resizeMode: "contain" };
+    obj[0] = detail.image;
+    obj[1] = tmp.illustration;
+    obj[2] = callback(Image, obj);
+    const obj1 = { spacing: null, children: null };
+    obj1[0] = importDefault(712).space.PX_12;
+    tmp6Result = null != buyNitroPlanSelection.selection.item;
+    if (tmp6Result) {
+      const obj2 = { planSelection: null, item: null, centered: true };
+      obj2[0] = buyNitroPlanSelection;
+      obj2[1] = buyNitroPlanSelection.selection.item;
+      tmp6Result = tmp6(tmp9(6659), obj2);
     }
-    const items = [tmp10, ];
-    const obj3 = {
-      planSelection: buyNitroPlanSelection,
-      location: importDefault(5517).PREMIUM_MARKETING_PERK_CARD,
-      sourceAnalyticsLocations: analyticsLocations,
-      applicationId,
-      onHostSheetClose() {
-          return outer1_1(outer1_2[12]).hideActionSheet("BuyNitroPerkDetailsActionSheet");
-        },
-      onPaymentSuccess,
-      onPaymentDismiss
+    const items = [tmp6Result, ];
+    const obj3 = { planSelection: null, location: null, sourceAnalyticsLocations: null, applicationId: null, onHostSheetClose: null, onPaymentSuccess: null, onPaymentDismiss: null };
+    obj3[0] = buyNitroPlanSelection;
+    obj3[1] = importDefault(5535).PREMIUM_MARKETING_PERK_CARD;
+    obj3[2] = analyticsLocations;
+    obj3[3] = applicationId;
+    obj3[4] = function onHostSheetClose() {
+      return callback(table[12]).hideActionSheet(closure_6);
     };
-    items[1] = callback(importDefault(6639), obj3);
-    obj1.children = items;
-    obj.actions = closure_5(require(4576) /* Stack */.Stack, obj1);
-    tmp4Result = callback(require(6635) /* PromoSheet */.PromoSheet, obj);
-    const tmp17 = importDefault(6639);
-    const tmp4 = callback;
+    obj3[5] = onPaymentSuccess;
+    obj3[6] = onPaymentDismiss;
+    items[1] = callback(importDefault(6660), obj3);
+    obj1[1] = items;
+    obj[3] = closure_5(tmp2(4598).Stack, obj1);
+    tmp6Result = tmp6(tmp2(6656).PromoSheet, obj);
     const tmp8 = closure_5;
+    const tmp9Result = importDefault(6660);
   }
-  return tmp4Result;
+  return tmp6Result;
 });
 const result = require("jsxProd").fileFinishedImporting("modules/premium_marketing/native/components/BuyNitroPerkDetails.tsx");
 
 export const openBuyNitroPerkDetails = function openBuyNitroPerkDetails(perk, arg1) {
-  let obj = require(4133) /* showActionSheet */;
-  obj = {};
+  let obj = require(4157) /* ACTION_SHEET_HEIGHT_HALF */;
+  obj = { content: null, key: null };
   obj = { perk };
   const merged = Object.assign(arg1);
-  obj.content = callback(closure_7, obj);
-  obj.key = "BuyNitroPerkDetailsActionSheet";
+  obj[0] = callback(closure_8, obj);
+  obj[1] = BuyNitroPerkDetailsActionSheet;
   obj.showActionSheet(obj);
 };

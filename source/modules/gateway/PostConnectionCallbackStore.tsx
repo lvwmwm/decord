@@ -1,30 +1,24 @@
-// Module ID: 6673
-// Function ID: 58851
-// Name: shouldWaitForBlockingModals
-// Dependencies: [6674, 4843, 686, 2]
+// Module ID: 6694
+// Function ID: 6695
+// Name: processCallbacks
+// Dependencies: [6695, 4865, 709, 2]
 // Exports: addPostConnectionCallback
 
-// Module 6673 (shouldWaitForBlockingModals)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_1 from "_isNativeReflectConstruct";
+// Module 6694 (processCallbacks)
+import initialize from "initialize";
+import _handleConnectionOpen from "_handleConnectionOpen";
 import importDefaultResult from "dispatcher";
 import importDefaultResult1 from "dispatcher";
 import importDefaultResult2 from "dispatcher";
 
-function shouldWaitForBlockingModals() {
-  return null != type.getType();
-}
 function processCallbacks() {
-  if (!shouldWaitForBlockingModals()) {
+  if (null == store.getType()) {
     const item = arr.forEach((arg0) => {
-      outer1_4(arg0);
+      let initialize = arg0;
+      setImmediate(() => callback());
     });
     arr = [];
   }
-}
-function handleCallback(arg0) {
-  let _isNativeReflectConstruct = arg0;
-  setImmediate(() => callback());
 }
 let closure_2 = [];
 const subscription = require("dispatcher").subscribe("CONNECTION_OPEN", processCallbacks);
@@ -34,8 +28,10 @@ const result = require("dispatcher").fileFinishedImporting("modules/gateway/Post
 
 export const addPostConnectionCallback = function addPostConnectionCallback(arg0) {
   if (connectedOrOverlay.isConnectedOrOverlay()) {
-    if (!shouldWaitForBlockingModals()) {
-      handleCallback(arg0);
+    if (null == store.getType()) {
+      store = arg0;
+      const _setImmediate = setImmediate;
+      setImmediate(() => callback());
     }
   }
 };

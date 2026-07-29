@@ -1,19 +1,20 @@
-// Module ID: 11333
-// Function ID: 87950
+// Module ID: 11357
+// Function ID: 11358
 // Name: AppLauncherMentionableListActionSheet
-// Dependencies: [57, 31, 653, 33, 5684, 5009, 4133, 11319, 11320, 8805, 4161, 4004, 11334, 5079, 11332, 6753, 5198, 2]
+// Dependencies: [32, 19, 676, 21, 5702, 5031, 4157, 11343, 11344, 8829, 4185, 4028, 11358, 5101, 11356, 6774, 5220, 2]
 // Exports: default
 
-// Module 11333 (AppLauncherMentionableListActionSheet)
+// Module 11357 (AppLauncherMentionableListActionSheet)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
+import noop from "noop";
 import { RelationshipTypes } from "ME";
 import jsxProd from "jsxProd";
 
 let closure_6;
-let closure_7;
+let error;
 const require = arg1;
-({ jsx: closure_6, jsxs: closure_7 } = jsxProd);
+({ jsx: closure_6, jsxs: error } = jsxProd);
+const AppLauncherMentionableListActionSheet = "AppLauncherMentionableListActionSheet";
 let obj = { USER: "user", ROLE: "role", GLOBAL: "global" };
 let result = require("ME").fileFinishedImporting("modules/app_launcher/native/options/mentionable/AppLauncherMentionableListActionSheet.tsx");
 
@@ -23,14 +24,20 @@ export default function AppLauncherMentionableListActionSheet(channel) {
   ({ onMentionablePress: require, onActionSheetDismiss } = channel);
   channel = channel.channel;
   const option = channel.option;
+  let first;
+  let closure_5;
+  let ref;
+  let first1;
+  let closure_8;
+  let guild_id;
   const tmp = option(first.useState(""), 2);
   first = tmp[0];
-  let closure_5 = tmp[1];
-  const ref = first.useRef(null);
+  closure_5 = tmp[1];
+  ref = first.useRef(null);
   const tmp4 = option(first.useState([]), 2);
-  const first1 = tmp4[0];
-  let closure_8 = tmp4[1];
-  const guild_id = channel.guild_id;
+  first1 = tmp4[0];
+  closure_8 = tmp4[1];
+  guild_id = channel.guild_id;
   let items = [first, option, channel];
   const effect = first.useEffect(() => {
     let globals;
@@ -42,76 +49,87 @@ export default function AppLauncherMentionableListActionSheet(channel) {
     const users = queryMentionResultsResult.users;
     const items = [...users.map((result) => ({ type: constants.USER, result })), ...roles.map((result) => ({ type: constants.ROLE, result })), ...globals.map((result) => ({ type: constants.GLOBAL, result }))];
     ({ roles, globals } = queryMentionResultsResult);
-    lib2(items);
+    callback(items);
   }, items);
-  let obj = { option, onDismiss: onActionSheetDismiss };
+  let obj = { option, onDismiss: onActionSheetDismiss, children: null };
   obj = {
     onChange(str) {
       lib(str.toLowerCase());
       const current = ref.current;
-      if (null != current) {
+      if (current != null) {
         current.scrollToOffset({ offset: 0, animated: false });
       }
     }
   };
   const items1 = [ref(require(channel[8]).AppLauncherListSearchBar, obj), ];
   if (0 === first1.length) {
-    let tmp10 = ref(require(channel[8]).AppLauncherListEmptyState, {});
+    let tmp9Result = tmp9(tmp7(tmp8[8]).AppLauncherListEmptyState, {});
   } else {
-    obj = {
-      ref,
-      data: first1,
-      renderItem(item) {
-          item = item.item;
-          const index = item.index;
-          let obj = {
-            onPress() {
-              item({ mentionable: item });
-              onActionSheetDismiss(channel[6]).hideActionSheet("AppLauncherMentionableListActionSheet");
-              outer1_1();
-            },
-            start: 0 === index,
-            end: index === first1.length - 1
-          };
-          const type = item.type;
-          if (lib2.USER === type) {
-            const result3 = item.result;
-            const user = result3.user;
-            obj = { type: lib.NONE, user, nickname: result3.nick, guildId: guild_id };
-            obj = { color: "text-subtle", variant: "text-xs/normal" };
-            const tmp28 = onActionSheetDismiss(channel[9]);
-            obj.children = outer1_0(channel[11]).getUserTag(user);
-            obj.subLabel = ref(outer1_0(channel[10]).Text, obj);
-            const merged = Object.assign(obj);
-            return ref(tmp28, obj, user.id);
-          } else if (lib2.ROLE === type) {
-            const result2 = item.result;
-            let obj1 = { guildRole: result2, guildId: guild_id };
-            const merged1 = Object.assign(obj);
-            return ref(outer1_0(channel[12]).RoleRow, obj1, result2.id);
-          } else if (lib2.GLOBAL === type) {
-            const result = item.result;
-            obj1 = onActionSheetDismiss(channel[13]);
-            if (result.text === obj1.MENTION_EVERYONE().text) {
-              let tmp8 = ref(outer1_0(channel[12]).RoleIcon, {});
-            } else {
-              const obj2 = { icon: ref(outer1_0(channel[15]).UserCircleIcon, { size: "sm", color: "interactive-text-default" }) };
-              tmp8 = ref(onActionSheetDismiss(channel[14]), obj2);
-              const tmp6 = onActionSheetDismiss(channel[14]);
-            }
-            const obj3 = {};
-            const obj4 = { lineClamp: 1, variant: "text-md/semibold", color: "mobile-text-heading-primary", children: result.text };
-            obj3.label = ref(outer1_0(channel[10]).Text, obj4);
-            obj3.icon = tmp8;
-            const merged2 = Object.assign(obj);
-            return ref(outer1_0(channel[16]).TableRow, obj3, result.text);
-          }
+    obj = { ref: null, data: null, renderItem: null };
+    obj[0] = ref;
+    obj[1] = first1;
+    obj[2] = function renderItem(item) {
+      item = item.item;
+      const index = item.index;
+      let obj = {
+        onPress() {
+          item({ mentionable: item });
+          onActionSheetDismiss(channel[6]).hideActionSheet(closure_8);
+          outer1_1();
+        },
+        start: 0 === index,
+        end: index === first1.length - 1
+      };
+      const type = item.type;
+      if (guild_id.USER === type) {
+        const result3 = item.result;
+        const user = result3.user;
+        obj = { type: null, user: null, nickname: null, guildId: null, subLabel: null };
+        obj[0] = lib.NONE;
+        obj[1] = user;
+        obj[2] = result3.nick;
+        obj[3] = guild_id;
+        obj = { color: "text-subtle", variant: "text-xs/normal", children: null };
+        const tmp25 = onActionSheetDismiss(channel[9]);
+        obj[2] = outer1_0(channel[11]).getUserTag(user);
+        obj[4] = ref(outer1_0(channel[10]).Text, obj);
+        const merged = Object.assign(obj);
+        return ref(tmp25, obj, user.id);
+      } else if (tmp.ROLE === type) {
+        const result2 = item.result;
+        let obj1 = { guildRole: null, guildId: null };
+        obj1[0] = result2;
+        obj1[1] = guild_id;
+        const merged1 = Object.assign(obj);
+        return ref(outer1_0(channel[12]).RoleRow, obj1, result2.id);
+      } else if (tmp.GLOBAL === type) {
+        const result = item.result;
+        obj1 = onActionSheetDismiss(channel[13]);
+        if (result.text === obj1.MENTION_EVERYONE().text) {
+          let tmp7 = ref(outer1_0(tmp3[12]).RoleIcon, {});
+          let tmp8 = outer1_0;
+          let tmp9 = ref;
+        } else {
+          const obj2 = { icon: null };
+          obj2[0] = ref(outer1_0(tmp3[15]).UserCircleIcon, { size: "sm", color: "interactive-text-default" });
+          tmp7 = ref(onActionSheetDismiss(tmp3[14]), obj2);
+          tmp8 = outer1_0;
+          tmp9 = ref;
+          const tmp2Result = onActionSheetDismiss(tmp3[14]);
         }
+        const obj3 = { label: null, icon: null };
+        const obj4 = { lineClamp: 1, variant: "text-md/semibold", color: "mobile-text-heading-primary", children: null };
+        obj4[3] = result.text;
+        obj3[0] = tmp9(tmp8(channel[10]).Text, obj4);
+        obj3[1] = tmp7;
+        const merged2 = Object.assign(obj);
+        return tmp9(tmp8(channel[16]).TableRow, obj3, result.text);
+      }
     };
-    tmp10 = ref(require(channel[8]).AppLauncherList, obj);
+    tmp9Result = tmp9(tmp7(tmp8[8]).AppLauncherList, obj);
   }
-  items1[1] = tmp10;
-  obj.children = items1;
+  items1[1] = tmp9Result;
+  obj[2] = items1;
   return first1(require(channel[7]).AppLauncherCommandOptionActionSheet, obj);
 };
 export const APP_LAUNCHER_MENTIONABLE_LIST_ACTION_SHEET_KEY = "AppLauncherMentionableListActionSheet";

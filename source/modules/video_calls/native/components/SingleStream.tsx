@@ -1,46 +1,32 @@
-// Module ID: 10795
-// Function ID: 83609
+// Module ID: 10819
+// Function ID: 10820
 // Name: SingleStream
-// Dependencies: [31, 10214, 33, 10520, 10530, 4358, 2]
+// Dependencies: [19, 10235, 21, 10544, 10554, 4383, 2]
 // Exports: default
 
-// Module 10795 (SingleStream)
-import "result";
-import resetFocusTimer from "resetFocusTimer";
+// Module 10819 (SingleStream)
+import "noop";
+import VoiceChatDrawerState from "VoiceChatDrawerState";
 import { jsx } from "jsxProd";
 
-let closure_3;
-let closure_4;
+let c3;
+let c4;
 const require = arg1;
-({ toggleFocus: closure_3, resetFocus: closure_4 } = resetFocusTimer);
+({ toggleFocus: c3, resetFocus: c4 } = VoiceChatDrawerState);
 const result = require("jsxProd").fileFinishedImporting("modules/video_calls/native/components/SingleStream.tsx");
 
 export default function SingleStream(channel) {
   channel = channel.channel;
-  const obj = {
-    gestureEnabled: true,
-    resizeMode: channel(10530).ResizeMode.CONTAIN,
-    onSingleTap() {
-      outer1_3();
-    },
-    onDoubleTap() {
-      outer1_4();
-      const participant = outer1_1(outer1_2[5]).selectParticipant(channel.id, null);
-    },
-    participant: channel.participant,
-    style: { flex: 1 }
+  const obj = { gestureEnabled: true, resizeMode: null, onSingleTap: null, onDoubleTap: null, participant: null, style: null };
+  obj[1] = channel(10554).ResizeMode.CONTAIN;
+  obj[2] = function onSingleTap() {
+    callback();
   };
-  return jsx(importDefault(10520), {
-    gestureEnabled: true,
-    resizeMode: channel(10530).ResizeMode.CONTAIN,
-    onSingleTap() {
-      outer1_3();
-    },
-    onDoubleTap() {
-      outer1_4();
-      const participant = outer1_1(outer1_2[5]).selectParticipant(channel.id, null);
-    },
-    participant: channel.participant,
-    style: { flex: 1 }
-  });
+  obj[3] = function onDoubleTap() {
+    outer1_4();
+    const participant = outer1_1(outer1_2[5]).selectParticipant(channel.id, null);
+  };
+  obj[4] = channel.participant;
+  obj[5] = { flex: 1 };
+  return jsx(importDefault(10544), { gestureEnabled: true, resizeMode: null, onSingleTap: null, onDoubleTap: null, participant: null, style: null });
 };

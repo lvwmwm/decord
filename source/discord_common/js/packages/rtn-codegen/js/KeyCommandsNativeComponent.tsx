@@ -1,17 +1,17 @@
-// Module ID: 13607
-// Function ID: 104528
+// Module ID: 13628
+// Function ID: 13629
 // Name: __INTERNAL_VIEW_CONFIG
-// Dependencies: [110, 42, 2]
+// Dependencies: [106, 65, 2]
 
-// Module 13607 (__INTERNAL_VIEW_CONFIG)
+// Module 13628 (__INTERNAL_VIEW_CONFIG)
 import weakSet from "weakSet";
-import get from "get";
+import setRuntimeConfigProvider from "setRuntimeConfigProvider";
 
-let obj = { uiViewClassName: "KeyCommandsView", directEventTypes: { topKeyCommand: { registrationName: "onKeyCommand" } } };
+let obj = { uiViewClassName: "KeyCommandsView", directEventTypes: { topKeyCommand: { registrationName: "onKeyCommand" } }, validAttributes: null };
 obj = { keyCommands: true };
 const merged = Object.assign(weakSet.ConditionallyIgnoredEventHandlers({ onKeyCommand: true }));
-obj.validAttributes = obj;
-const value = get.get("KeyCommandsView", () => obj);
+obj[2] = obj;
+const value = setRuntimeConfigProvider.get("KeyCommandsView", () => obj);
 const result = require("set").fileFinishedImporting("../discord_common/js/packages/rtn-codegen/js/KeyCommandsNativeComponent.tsx");
 
 export default value;

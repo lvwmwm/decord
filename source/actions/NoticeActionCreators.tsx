@@ -1,19 +1,19 @@
-// Module ID: 15601
-// Function ID: 119914
+// Module ID: 15635
+// Function ID: 15636
 // Name: dispatcher
-// Dependencies: [686, 2]
+// Dependencies: [709, 2]
 
-// Module 15601 (dispatcher)
+// Module 15635 (dispatcher)
 const result = require("set").fileFinishedImporting("actions/NoticeActionCreators.tsx");
 
 export default {
   show(type, message, buttonText, callback, id) {
-    let obj = importDefault(686);
+    let obj = importDefault(709);
     obj = { id, type, message, buttonText, callback };
     obj.dispatch({ type: "NOTICE_SHOW", notice: obj });
   },
   dismiss(arg0) {
-    let obj = importDefault(686);
+    let obj = importDefault(709);
     obj = { type: "NOTICE_DISMISS" };
     const merged = Object.assign(arg0);
     obj.dispatch(obj);

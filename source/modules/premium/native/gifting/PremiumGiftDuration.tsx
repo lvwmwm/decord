@@ -1,21 +1,21 @@
-// Module ID: 9760
-// Function ID: 75865
+// Module ID: 9782
+// Function ID: 9783
 // Name: PremiumGiftDurationButton
-// Dependencies: [31, 27, 1852, 33, 4165, 689, 8780, 5198, 7614, 9687, 3883, 4161, 1212, 8781, 5485, 2]
+// Dependencies: [19, 17, 1876, 21, 4189, 712, 8804, 5220, 7637, 9709, 3907, 4185, 1236, 8805, 5503, 2]
 // Exports: default
 
-// Module 9760 (PremiumGiftDurationButton)
-import result from "result";
+// Module 9782 (PremiumGiftDurationButton)
+import noop from "noop";
 import { View } from "get ActivityIndicator";
 import GuildFeatures from "GuildFeatures";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
+import createCacheKey from "createCacheKey";
 
 let SubscriptionIntervalTypes;
-let closure_5;
-let closure_7;
-let closure_8;
+let c5;
+let error;
+let metroImportAll;
 const require = arg1;
 function PremiumGiftDurationButton(arg0) {
   let accessibilityRole;
@@ -23,95 +23,97 @@ function PremiumGiftDurationButton(arg0) {
   let planInterval;
   let selected;
   ({ selected, planInterval } = arg0);
-  let obj = planInterval(8780);
+  let setPlanInterval;
+  let obj = planInterval(8804);
   const nativeGiftContext = obj.useNativeGiftContext();
-  const setPlanInterval = nativeGiftContext.setPlanInterval;
-  const tmp2 = _createForOfIteratorHelperLoose();
+  setPlanInterval = nativeGiftContext.setPlanInterval;
+  const tmp4 = createCacheKey();
   if (selected) {
-    let RowButton = tmp3(5198).TableRow;
+    let RowButton = tmp(5220).TableRow;
   } else {
-    RowButton = tmp3(7614).RowButton;
+    RowButton = tmp(7637).RowButton;
   }
   let combined = null;
   if (planInterval === SubscriptionIntervalTypes.YEAR) {
     const _HermesInternal = HermesInternal;
     combined = "" + closure_5 + "%";
   }
-  let obj1 = planInterval(3883);
-  obj = { selected };
-  const radioA11yNative = obj1.useRadioA11yNative(obj);
-  obj = {};
-  const items = [tmp2.container, ];
+  const tmp5 = SubscriptionIntervalTypes;
+  const tmp9 = setPlanInterval(9709)(nativeGiftContext.premiumType, planInterval);
+  const radioA11yNative = planInterval(3907).useRadioA11yNative({ selected });
+  const items = [tmp4.container, ];
   ({ accessibilityRole, accessibilityState } = radioA11yNative);
   if (selected) {
-    selected = tmp2.containerSelected;
+    selected = tmp4.containerSelected;
   }
+  obj = { style: items, children: null };
   items[1] = selected;
-  obj.style = items;
-  obj1 = {};
-  const obj2 = { style: tmp2.labelContainer };
-  const obj3 = { variant: "text-md/semibold" };
-  if (planInterval === SubscriptionIntervalTypes.MONTH) {
-    const intl2 = planInterval(1212).intl;
-    let stringResult = intl2.string(planInterval(1212).t.Mh9bTt);
+  obj = { style: tmp4.labelContainer, children: null };
+  if (planInterval === tmp5.MONTH) {
+    const intl2 = tmp(1236).intl;
+    let stringResult = intl2.string(tmp(1236).t.Mh9bTt);
   } else {
-    const intl = planInterval(1212).intl;
-    stringResult = intl.string(planInterval(1212).t.DRgqMo);
+    const intl = tmp(1236).intl;
+    stringResult = intl.string(tmp(1236).t.DRgqMo);
   }
-  obj3.children = stringResult;
-  const items1 = [callback(planInterval(4161).Text, obj3), ];
-  let tmp21 = null != combined;
-  if (tmp21) {
-    const obj4 = { style: tmp2.labelPromo };
-    const obj5 = { variant: "text-md/bold", color: "text-overlay-light" };
-    const intl3 = planInterval(1212).intl;
-    const obj6 = { discount: combined };
-    obj5.children = intl3.formatToPlainString(planInterval(1212).t.IAybsG, obj6).toUpperCase();
-    obj4.children = callback(planInterval(4161).Text, obj5);
-    tmp21 = callback(View, obj4);
-    const str3 = intl3.formatToPlainString(planInterval(1212).t.IAybsG, obj6);
+  const items1 = [closure_7(planInterval(4185).Text, { variant: "text-md/semibold", children: stringResult }), ];
+  let tmp11Result = null != combined;
+  if (tmp11Result) {
+    const obj1 = { style: null, children: null };
+    obj1[0] = tmp4.labelPromo;
+    const obj2 = { variant: "text-md/bold", color: "text-overlay-light", children: null };
+    const intl3 = tmp(1236).intl;
+    const obj3 = { discount: null };
+    obj3[0] = combined;
+    obj2[2] = intl3.formatToPlainString(tmp(1236).t.IAybsG, obj3).toUpperCase();
+    obj1[1] = tmp11(tmp(4185).Text, obj2);
+    tmp11Result = tmp11(tmp12, obj1);
+    const str3 = intl3.formatToPlainString(tmp(1236).t.IAybsG, obj3);
   }
-  items1[1] = tmp21;
-  obj2.children = items1;
-  obj1.label = closure_8(View, obj2);
-  obj1.trailing = callback(planInterval(4161).Text, { variant: "text-md/semibold", children: setPlanInterval(9687)(nativeGiftContext.premiumType, planInterval) });
-  obj1.onPress = function onPress() {
-    setPlanInterval(planInterval);
-  };
-  obj1.arrow = false;
-  obj1.accessibilityRole = accessibilityRole;
-  obj1.accessibilityState = accessibilityState;
-  obj1.start = true;
-  obj1.end = true;
-  obj.children = callback(RowButton, obj1);
-  return callback(View, obj);
+  const tmp13 = closure_8;
+  const tmpResult = planInterval(3907);
+  items1[1] = tmp11Result;
+  obj[1] = items1;
+  obj[1] = closure_7(RowButton, {
+    label: closure_8(View, obj),
+    trailing: closure_7(planInterval(4185).Text, { variant: "text-md/semibold", children: tmp9 }),
+    onPress() {
+      setPlanInterval(planInterval);
+    },
+    arrow: false,
+    accessibilityRole,
+    accessibilityState,
+    start: true,
+    end: true
+  });
+  return closure_7(View, obj);
 }
-({ PREMIUM_YEARLY_DISCOUNT_PERCENT: closure_5, SubscriptionIntervalTypes } = GuildFeatures);
-({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
+({ PREMIUM_YEARLY_DISCOUNT_PERCENT: c5, SubscriptionIntervalTypes } = GuildFeatures);
+({ jsx: error, jsxs: metroImportAll } = jsxProd);
 let items = [, ];
 ({ YEAR: arr[0], MONTH: arr[1] } = SubscriptionIntervalTypes);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { marginTop: require("_createForOfIteratorHelperLoose").space.PX_8 };
-_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.containerSelected = { borderColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BRAND, borderRadius: require("_createForOfIteratorHelperLoose").radii.lg, borderWidth: 2 };
-_createForOfIteratorHelperLoose.labelContainer = { flexDirection: "row" };
-let obj1 = { borderColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BRAND, borderRadius: require("_createForOfIteratorHelperLoose").radii.lg, borderWidth: 2 };
-_createForOfIteratorHelperLoose.labelPromo = { marginStart: require("_createForOfIteratorHelperLoose").space.PX_8, backgroundColor: require("_createForOfIteratorHelperLoose").colors.STATUS_POSITIVE_BACKGROUND, paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_8, borderRadius: require("_createForOfIteratorHelperLoose").radii.round };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-let obj3 = {};
-let obj2 = { marginStart: require("_createForOfIteratorHelperLoose").space.PX_8, backgroundColor: require("_createForOfIteratorHelperLoose").colors.STATUS_POSITIVE_BACKGROUND, paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_8, borderRadius: require("_createForOfIteratorHelperLoose").radii.round };
-obj3.durationContainer = { marginHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16 };
-_createForOfIteratorHelperLoose = { marginTop: require("_createForOfIteratorHelperLoose").space.PX_24 };
-obj3.durationTitle = _createForOfIteratorHelperLoose;
-let closure_11 = _createForOfIteratorHelperLoose.createStyles(obj3);
-let obj4 = { marginHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16 };
+createCacheKey = { container: null, containerSelected: null, labelContainer: null, labelPromo: null };
+createCacheKey = { marginTop: require("Themes").space.PX_8 };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { borderColor: require("Themes").colors.BACKGROUND_BRAND, borderRadius: require("Themes").radii.lg, borderWidth: 2 };
+createCacheKey[2] = { flexDirection: "row" };
+let obj1 = { borderColor: require("Themes").colors.BACKGROUND_BRAND, borderRadius: require("Themes").radii.lg, borderWidth: 2 };
+createCacheKey[3] = { marginStart: require("Themes").space.PX_8, backgroundColor: require("Themes").colors.STATUS_POSITIVE_BACKGROUND, paddingHorizontal: require("Themes").space.PX_8, borderRadius: require("Themes").radii.round };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let obj3 = { durationContainer: null, durationTitle: null };
+let obj2 = { marginStart: require("Themes").space.PX_8, backgroundColor: require("Themes").colors.STATUS_POSITIVE_BACKGROUND, paddingHorizontal: require("Themes").space.PX_8, borderRadius: require("Themes").radii.round };
+obj3[0] = { marginHorizontal: require("Themes").space.PX_16 };
+createCacheKey = { marginTop: require("Themes").space.PX_24 };
+obj3[1] = createCacheKey;
+let closure_12 = createCacheKey.createStyles(obj3);
+const obj4 = { marginHorizontal: require("Themes").space.PX_16 };
 const result = require("GuildFeatures").fileFinishedImporting("modules/premium/native/gifting/PremiumGiftDuration.tsx");
 
 export default function PremiumGiftDuration() {
   const tmp = callback3();
-  let obj = planInterval(8780);
+  let obj = planInterval(8804);
   planInterval = obj.useNativeGiftContext().planInterval;
-  const tmp2 = importDefault(5485)(importDefault(8781).useConfig({ location: "PremiumGiftDuration" }).monthlyDefaultSelected);
+  const tmp2 = importDefault(5503)(importDefault(8805).useConfig({ location: "PremiumGiftDuration" }).monthlyDefaultSelected);
   importDefault = tmp2;
   let items = [tmp2];
   const memo = React.useMemo(() => {
@@ -124,11 +126,11 @@ export default function PremiumGiftDuration() {
     }
     return reversed;
   }, items);
-  obj = { style: tmp.durationContainer };
-  obj = { style: tmp.durationTitle, variant: "text-sm/semibold" };
-  const intl = planInterval(1212).intl;
-  obj.children = intl.string(planInterval(1212).t["8XT6Nf"]);
-  const items1 = [callback(planInterval(4161).Text, obj), memo.map((planInterval) => outer1_7(outer1_12, { selected: planInterval === planInterval, planInterval }, arg1))];
-  obj.children = items1;
+  obj = { style: tmp.durationContainer, children: null };
+  obj = { style: tmp.durationTitle, variant: "text-sm/semibold", children: null };
+  const intl = planInterval(1236).intl;
+  obj[2] = intl.string(planInterval(1236).t["8XT6Nf"]);
+  const items1 = [callback(planInterval(4185).Text, obj), memo.map((planInterval) => outer1_7(outer1_11, { selected: planInterval === planInterval, planInterval }, arg1))];
+  obj[1] = items1;
   return callback2(View, obj);
 };

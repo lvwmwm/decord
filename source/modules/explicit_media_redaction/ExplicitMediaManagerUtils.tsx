@@ -1,31 +1,10 @@
-// Module ID: 5868
-// Function ID: 51538
-// Name: hasAttachmentsEmbedsOrComponents
+// Module ID: 5886
+// Function ID: 5887
+// Name: hasAttachmentsEmbedsComponentsOrSnapshots
 // Dependencies: [2]
 // Exports: hasAttachmentsEmbedsComponentsOrSnapshots
 
-// Module 5868 (hasAttachmentsEmbedsOrComponents)
-function hasAttachmentsEmbedsOrComponents(attachments) {
-  let tmp = null != attachments.attachments;
-  if (tmp) {
-    tmp = attachments.attachments.length > 0;
-  }
-  if (!tmp) {
-    let tmp2 = null != attachments.embeds;
-    if (tmp2) {
-      tmp2 = attachments.embeds.length > 0;
-    }
-    tmp = tmp2;
-  }
-  if (!tmp) {
-    let tmp3 = null != attachments.components;
-    if (tmp3) {
-      tmp3 = attachments.components.length > 0;
-    }
-    tmp = tmp3;
-  }
-  return tmp;
-}
+// Module 5886 (hasAttachmentsEmbedsComponentsOrSnapshots)
 const result = require("set").fileFinishedImporting("modules/explicit_media_redaction/ExplicitMediaManagerUtils.tsx");
 
 export const hasAttachmentsEmbedsComponentsOrSnapshots = function hasAttachmentsEmbedsComponentsOrSnapshots(message) {
@@ -33,18 +12,56 @@ export const hasAttachmentsEmbedsComponentsOrSnapshots = function hasAttachments
     return false;
   } else {
     const obj = "messageSnapshots" in message ? message.messageSnapshots : message.message_snapshots;
-    let tmp2 = hasAttachmentsEmbedsOrComponents(message);
-    if (!tmp2) {
-      let tmp3 = null != obj;
-      if (tmp3) {
-        let someResult;
-        if (null != obj) {
-          someResult = obj.some((message) => outer1_0(message.message));
-        }
-        tmp3 = someResult;
-      }
-      tmp2 = tmp3;
+    let tmp = null != message.attachments;
+    if (tmp) {
+      tmp = message.attachments.length > 0;
     }
-    return tmp2;
+    if (!tmp) {
+      let tmp2 = null != message.embeds;
+      if (tmp2) {
+        tmp2 = message.embeds.length > 0;
+      }
+      tmp = tmp2;
+    }
+    if (!tmp) {
+      let tmp3 = null != message.components;
+      if (tmp3) {
+        tmp3 = message.components.length > 0;
+      }
+      tmp = tmp3;
+    }
+    if (!tmp) {
+      let tmp4 = null != obj;
+      if (tmp4) {
+        let someResult;
+        if (obj != null) {
+          someResult = obj.some((message) => {
+            message = message.message;
+            let tmp = null != message.attachments;
+            if (tmp) {
+              tmp = message.attachments.length > 0;
+            }
+            if (!tmp) {
+              let tmp2 = null != message.embeds;
+              if (tmp2) {
+                tmp2 = message.embeds.length > 0;
+              }
+              tmp = tmp2;
+            }
+            if (!tmp) {
+              let tmp3 = null != message.components;
+              if (tmp3) {
+                tmp3 = message.components.length > 0;
+              }
+              tmp = tmp3;
+            }
+            return tmp;
+          });
+        }
+        tmp4 = someResult;
+      }
+      tmp = tmp4;
+    }
+    return tmp;
   }
 };

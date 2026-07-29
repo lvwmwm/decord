@@ -1,36 +1,36 @@
-// Module ID: 11635
-// Function ID: 90289
+// Module ID: 11659
+// Function ID: 11660
 // Name: importDefaultResult1
-// Dependencies: [31, 27, 33, 4165, 666, 689, 5200, 2]
+// Dependencies: [19, 17, 21, 4189, 689, 712, 5222, 2]
 // Exports: default
 
-// Module 11635 (importDefaultResult1)
-import "result";
+// Module 11659 (importDefaultResult1)
+import "noop";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import importDefaultResult from "t";
-import importDefaultResult1 from "t";
-import importDefaultResult2 from "t";
+import createCacheKey from "createCacheKey";
+import importDefaultResult from "n";
+import importDefaultResult1 from "n";
+import importDefaultResult2 from "n";
 
 const require = arg1;
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = {};
-const importDefaultResultResult = require("t")(require("_createForOfIteratorHelperLoose").unsafe_rawColors.GREEN_360);
-_createForOfIteratorHelperLoose.borderColor = require("t")(require("_createForOfIteratorHelperLoose").unsafe_rawColors.GREEN_360).alpha(0.35).hex();
-_createForOfIteratorHelperLoose.cardActive = _createForOfIteratorHelperLoose;
-const obj1 = {};
-const alphaResult = require("t")(require("_createForOfIteratorHelperLoose").unsafe_rawColors.GREEN_360).alpha(0.35);
-const importDefaultResult1Result = require("t")(require("_createForOfIteratorHelperLoose").unsafe_rawColors.YELLOW_300);
-obj1.borderColor = require("t")(require("_createForOfIteratorHelperLoose").unsafe_rawColors.YELLOW_300).alpha(0.35).hex();
-_createForOfIteratorHelperLoose.cardExpiring = obj1;
-const obj2 = {};
-const alphaResult1 = require("t")(require("_createForOfIteratorHelperLoose").unsafe_rawColors.YELLOW_300).alpha(0.35);
-const importDefaultResult2Result = require("t")(require("_createForOfIteratorHelperLoose").unsafe_rawColors.YELLOW_300);
-obj2.borderColor = require("t")(require("_createForOfIteratorHelperLoose").unsafe_rawColors.YELLOW_300).alpha(0.35).hex();
-_createForOfIteratorHelperLoose.cardRemoving = obj2;
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-const alphaResult2 = require("t")(require("_createForOfIteratorHelperLoose").unsafe_rawColors.YELLOW_300).alpha(0.35);
+createCacheKey = { cardActive: null, cardExpiring: null, cardRemoving: null };
+createCacheKey = { borderColor: null };
+const importDefaultResultResult = require("n")(require("Themes").unsafe_rawColors.GREEN_360);
+createCacheKey[0] = require("n")(require("Themes").unsafe_rawColors.GREEN_360).alpha(0.35).hex();
+createCacheKey[0] = createCacheKey;
+const obj1 = { borderColor: null };
+const alphaResult = require("n")(require("Themes").unsafe_rawColors.GREEN_360).alpha(0.35);
+const importDefaultResult1Result = require("n")(require("Themes").unsafe_rawColors.YELLOW_300);
+obj1[0] = require("n")(require("Themes").unsafe_rawColors.YELLOW_300).alpha(0.35).hex();
+createCacheKey[1] = obj1;
+const obj2 = { borderColor: null };
+const alphaResult1 = require("n")(require("Themes").unsafe_rawColors.YELLOW_300).alpha(0.35);
+const importDefaultResult2Result = require("n")(require("Themes").unsafe_rawColors.YELLOW_300);
+obj2[0] = require("n")(require("Themes").unsafe_rawColors.YELLOW_300).alpha(0.35).hex();
+createCacheKey[2] = obj2;
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+const alphaResult2 = require("n")(require("Themes").unsafe_rawColors.YELLOW_300).alpha(0.35);
 const result = require("jsxProd").fileFinishedImporting("modules/premium/powerups/native/GuildPowerupsCard.tsx");
 
 export default function GuildPowerupsCard(status) {
@@ -38,32 +38,30 @@ export default function GuildPowerupsCard(status) {
   let containerStyle;
   let style;
   status = status.status;
-  let obj = { children: 0, containerStyle: 0, status: 0, style: 0 };
   ({ children, containerStyle, style } = status);
-  Object.setPrototypeOf(null);
-  const merged = Object.assign(status, obj);
-  const tmp3 = _createForOfIteratorHelperLoose();
-  obj = { style: containerStyle };
+  const merged = Object.assign(status, Object.create(null));
+  const tmp2 = createCacheKey();
+  let obj = { style: containerStyle, children: null };
   obj = { border: "faint", radius: 16, shadow: "none" };
   const merged1 = Object.assign(merged);
   let type;
-  if (null != status) {
+  if (status != null) {
     type = status.type;
   }
-  const items = ["active" === type && tmp3.cardActive, , , ];
+  const items = ["active" === type && tmp2.cardActive, , , ];
   let type1;
-  if (null != status) {
+  if (status != null) {
     type1 = status.type;
   }
-  items[1] = "expiring" === type1 && tmp3.cardExpiring;
+  items[1] = "expiring" === type1 && tmp2.cardExpiring;
   let type2;
-  if (null != status) {
+  if (status != null) {
     type2 = status.type;
   }
-  items[2] = "removing" === type2 && tmp3.cardRemoving;
+  items[2] = "removing" === type2 && tmp2.cardRemoving;
   items[3] = style;
-  obj["style"] = items;
-  obj["children"] = children;
-  obj.children = jsx(require(5200) /* getCardBackgroundToken */.Card, { border: "faint", radius: 16, shadow: "none" });
+  obj.style = items;
+  obj.children = children;
+  obj[1] = jsx(require(5222) /* PressableCard */.Card, { border: "faint", radius: 16, shadow: "none" });
   return <View border="faint" radius={16} shadow="none" />;
 };

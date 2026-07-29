@@ -1,11 +1,10 @@
 // Module ID: 2134
-// Function ID: 22481
+// Function ID: 2135
 // Name: registerAsset
-// Dependencies: [1217]
+// Dependencies: [1241]
 
 // Module 2134 (registerAsset)
 import registerAsset from "registerAsset";
 
-const obj = { __packager_asset: true, httpServerLocation: "/assets/modules/guild_rooms", scales: [1], hash: "d064a4d417596622dc825576d8045141", name: "GuildRooms.compiled.messages", type: "jsona" };
 
-export default registerAsset.registerAsset(obj);
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9jbGlwcw==", scales: [1], hash: "f30e5e6d2c929c0311e01070638aeac9", name: "fi.messages.f30e5e6d2c929c0311e01070638aeac9.compiled.messages", type: "jsona" });

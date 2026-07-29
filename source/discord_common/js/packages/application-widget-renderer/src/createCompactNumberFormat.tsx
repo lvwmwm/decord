@@ -1,190 +1,30 @@
-// Module ID: 12047
-// Function ID: 92927
-// Name: _createForOfIteratorHelperLoose
+// Module ID: 12071
+// Function ID: 12072
+// Name: toAsciiDigits
 // Dependencies: [2]
 // Exports: createCompactNumberFormat
 
-// Module 12047 (_createForOfIteratorHelperLoose)
-function _createForOfIteratorHelperLoose(iterable) {
-  let closure_0 = iterable;
-  iterable = "undefined" !== typeof Symbol;
-  if (iterable) {
-    const _Symbol = Symbol;
-    iterable = iterable[Symbol.iterator];
-  }
-  if (!iterable) {
-    iterable = iterable[Symbol.iterator];
-  }
-  if (iterable) {
-    const iter = iterable.call(iterable);
-    const next = iter.next;
-    return next.bind(iter);
-  } else {
-    const _Array = Array;
-    let tmp = iterable;
-    if (!Array.isArray(iterable)) {
-      let tmp2;
-      if (iterable) {
-        if ("string" === typeof iterable) {
-          tmp2 = _arrayLikeToArray(iterable, undefined);
-        } else {
-          const toString = {}.toString;
-          const substr = toString.call(iterable).slice(8, -1);
-          let name = substr;
-          if (tmp3) {
-            name = iterable.constructor.name;
-          }
-          if ("Map" !== name) {
-            if ("Set" !== name) {
-              if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(iterable, undefined);
-              } else {
-                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
-              }
-            }
-            tmp2 = arr;
-          }
-          const _Array2 = Array;
-          arr = Array.from(iterable);
-          const callResult = toString.call(iterable);
-          tmp3 = "Object" === substr && iterable.constructor;
-        }
-      }
-      tmp = tmp2;
-      if (!tmp2) {
-        const _TypeError = TypeError;
-        const typeError = new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
-        throw typeError;
-      }
-    }
-    if (tmp) {
-      closure_0 = tmp;
-    }
-    _arrayLikeToArray = 0;
-    return () => {
-      if (closure_1 >= length.length) {
-        let obj = { done: true };
-      } else {
-        obj = { done: false };
-        closure_1 = tmp3 + 1;
-        obj.value = length[+closure_1];
-      }
-      return obj;
-    };
-  }
-}
-function _arrayLikeToArray(arg0, arg1) {
-  let length;
-  if (tmp) {
-    length = arg0.length;
-  }
-  const ArrayResult = Array(length);
-  for (let num = 0; num < length; num = num + 1) {
-    ArrayResult[num] = arg0[num];
-  }
-  return ArrayResult;
-}
-function exponentOf(absolute) {
-  let tmp3;
-  let tmp9;
-  if (0 === absolute) {
-    return 0;
-  } else {
-    const _Math = Math;
-    const _Math2 = Math;
-    const rounded = Math.floor(Math.log10(absolute));
-    let tmp4 = rounded;
-    let tmp5 = rounded;
-    if (10 ** rounded > absolute) {
-      do {
-        let diff = tmp4 - 1;
-        let num = 10;
-        let tmp2 = diff;
-        tmp4 = diff;
-        tmp5 = diff;
-        tmp3 = 10 ** diff;
-      } while (tmp3 > absolute);
-    }
-    let tmp6 = tmp5;
-    let tmp7 = tmp5;
-    if (10 ** (tmp5 + 1) <= absolute) {
-      do {
-        let sum = tmp6 + 1;
-        let num4 = 10;
-        tmp6 = sum;
-        tmp7 = sum;
-        tmp9 = 10 ** (sum + 1);
-      } while (tmp9 <= absolute);
-    }
-    return tmp7;
-  }
-}
+// Module 12071 (toAsciiDigits)
 function toAsciiDigits(arg0, get) {
-  let iter3;
-  const tmp = _createForOfIteratorHelperLoose(arg0);
-  const iter = tmp();
-  let iter2 = iter;
   let str = "";
-  let str2 = "";
-  if (!iter.done) {
-    do {
-      let value = iter2.value;
-      value = get.get(value);
-      str = str + value;
-      iter3 = tmp();
-      iter2 = iter3;
-      str2 = str;
-    } while (!iter3.done);
+  const iter = arg0[Symbol.iterator]();
+  const nextResult = iter.next();
+  while (iter !== undefined) {
+    let tmp2 = nextResult;
+    let tmp3 = str;
+    let value = get.get(nextResult);
+    if (value == null) {
+      value = nextResult;
+    }
+    str = str + value;
+    continue;
   }
-  return str2;
+  return str;
 }
 let result = require("set").fileFinishedImporting("../discord_common/js/packages/application-widget-renderer/src/createCompactNumberFormat.tsx");
 
 export const createCompactNumberFormat = function createCompactNumberFormat(stateFromStores) {
-  function scaleForExponent(value, arg1) {
-    value = map1.get(value);
-    if (undefined === value) {
-      const tmp13 = map(numberFormat1.formatToParts(10 ** value));
-      const iter4 = tmp13();
-      let iter3 = iter4;
-      let str = "";
-      let str2 = "";
-      if (!iter4.done) {
-        while (true) {
-          let iter = iter3.value;
-          if ("integer" !== iter.type) {
-            if ("fraction" !== iter.type) {
-              let text = str;
-              if ("decimal" === iter.type) {
-                text = `.`;
-              }
-            }
-            let iter2 = tmp13();
-            str = text;
-            iter3 = iter2;
-            str2 = text;
-            if (iter2.done) {
-              break;
-            }
-          }
-          let tmp3 = scaleForExponent;
-          text = str + scaleForExponent(iter.value, tmp11);
-        }
-      }
-      const _Number = Number;
-      const NumberResult = Number(str2);
-      let num2 = 1;
-      if (NumberResult > 0) {
-        num2 = tmp9 / NumberResult;
-      }
-      const result = map1.set(value, num2);
-      value = num2;
-      tmp11 = map;
-    }
-    return value;
-  }
-  let obj = { useGrouping: false };
-  const numberFormat = new Intl.NumberFormat(stateFromStores, obj);
+  const numberFormat = new Intl.NumberFormat(stateFromStores, { useGrouping: false });
   const map = new Map();
   let num = 0;
   do {
@@ -195,34 +35,131 @@ export const createCompactNumberFormat = function createCompactNumberFormat(stat
   } while (num <= 9);
   const numberFormat1 = new Intl.NumberFormat(stateFromStores, { notation: "compact", compactDisplay: "short" });
   const map1 = new Map();
-  obj = {
+  return {
     format(arg0) {
+      let tmp10;
+      let tmp22;
+      let tmp28;
+      let tmp4;
       if (0 !== arg0) {
         const _Number2 = Number;
         if (Number.isFinite(arg0)) {
           const _Math = Math;
-          const tmp2 = map1(Math.abs(arg0));
-          let num2 = 1;
-          if (tmp2 >= 0) {
-            num2 = scaleForExponent(tmp2);
+          const absolute = Math.abs(arg0);
+          let num = 0;
+          if (0 !== absolute) {
+            const _Math6 = Math;
+            const _Math7 = Math;
+            const rounded = Math.floor(Math.log10(absolute));
+            let tmp5 = rounded;
+            let tmp6 = rounded;
+            if (10 ** rounded > absolute) {
+              do {
+                let diff = tmp5 - 1;
+                let num2 = 10;
+                let tmp3 = diff;
+                tmp5 = diff;
+                tmp6 = diff;
+                tmp4 = 10 ** diff;
+              } while (tmp4 > absolute);
+            }
+            let tmp7 = tmp6;
+            let tmp8 = tmp6;
+            if (10 ** (tmp6 + 1) <= absolute) {
+              do {
+                let sum = tmp7 + 1;
+                let num5 = 10;
+                tmp7 = sum;
+                tmp8 = sum;
+                tmp10 = 10 ** (sum + 1);
+              } while (tmp10 <= absolute);
+            }
+            num = tmp8;
           }
-          const result = arg0 / num2;
+          let num7 = 1;
+          if (num >= 0) {
+            let value = map1.get(num);
+            if (undefined === value) {
+              const tmp16 = (function parseCoefficient(numberFormat1, map) {
+                let str = "";
+                const iter = numberFormat1[Symbol.iterator]();
+                const nextResult = iter.next();
+                for (; iter !== undefined; str = str + callback(iter2.value, map)) {
+                  iter2 = nextResult;
+                  if ("integer" !== nextResult.type) {
+                    let tmp2 = nextResult;
+                    if ("fraction" !== iter2.type) {
+                      let tmp3 = nextResult;
+                      if ("decimal" === iter2.type) {
+                        let tmp4 = str;
+                        str = `.`;
+                      }
+                    }
+                    continue;
+                  }
+                  let tmp5 = str;
+                  let tmp6 = callback;
+                  let tmp7 = nextResult;
+                }
+                return Number(str);
+              })(numberFormat1.formatToParts(10 ** num), map);
+              let num9 = 1;
+              if (tmp16 > 0) {
+                num9 = tmp13 / tmp16;
+              }
+              const result = obj.set(num, num9);
+              value = num9;
+            }
+            num7 = value;
+            obj = map1;
+          }
+          const result1 = arg0 / num7;
           const _Math2 = Math;
+          const absolute1 = Math.abs(result1);
+          let num10 = 0;
+          if (0 !== absolute1) {
+            const _Math8 = Math;
+            const _Math9 = Math;
+            const rounded1 = Math.floor(Math.log10(absolute1));
+            let tmp23 = rounded1;
+            let tmp24 = rounded1;
+            if (10 ** rounded1 > absolute1) {
+              do {
+                let diff1 = tmp23 - 1;
+                let num11 = 10;
+                let tmp21 = diff1;
+                tmp23 = diff1;
+                tmp24 = diff1;
+                tmp22 = 10 ** diff1;
+              } while (tmp22 > absolute1);
+            }
+            let tmp25 = tmp24;
+            let tmp26 = tmp24;
+            if (10 ** (tmp24 + 1) <= absolute1) {
+              do {
+                let sum1 = tmp25 + 1;
+                let num13 = 10;
+                tmp25 = sum1;
+                tmp26 = sum1;
+                tmp28 = 10 ** (sum1 + 1);
+              } while (tmp28 <= absolute1);
+            }
+            num10 = tmp26;
+          }
           const _Math3 = Math;
           const _Math4 = Math;
-          const tmp6 = 10 ** -Math.max(Math.min(map1(Math.abs(result)) - 1, 0), -15);
+          const tmp29 = 10 ** -Math.max(Math.min(num10 - 1, 0), -15);
           const _Math5 = Math;
-          const result1 = Math.floor(result * tmp6) / tmp6 * num2;
+          const result2 = Math.floor(result1 * tmp29) / tmp29 * num7;
           const _Number = Number;
-          let tmp9 = arg0;
-          if (Number.isFinite(result1)) {
-            tmp9 = result1;
+          let tmp32 = arg0;
+          if (Number.isFinite(result2)) {
+            tmp32 = result2;
           }
-          return numberFormat1.format(tmp9);
+          return numberFormat1.format(tmp32);
         }
       }
       return numberFormat1.format(arg0);
     }
   };
-  return obj;
 };

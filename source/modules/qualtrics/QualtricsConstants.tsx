@@ -1,9 +1,9 @@
-// Module ID: 9254
-// Function ID: 72388
+// Module ID: 9278
+// Function ID: 9279
 // Name: QuestionTypeEnum
 // Dependencies: [2]
 
-// Module 9254 (QuestionTypeEnum)
+// Module 9278 (QuestionTypeEnum)
 const result = require("set").fileFinishedImporting("modules/qualtrics/QualtricsConstants.tsx");
 
 export const QuestionTypeEnum = { MULTIPLE_CHOICE: "MC", TEXT_ENTRY: "TE", DESCRIPTIVE_BLOCK: "DB" };

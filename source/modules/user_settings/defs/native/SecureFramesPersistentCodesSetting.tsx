@@ -1,29 +1,29 @@
-// Module ID: 14624
-// Function ID: 111442
+// Module ID: 14649
+// Function ID: 14650
 // Name: toggle
-// Dependencies: [8869, 7733, 566, 8871, 10099, 1212, 2]
+// Dependencies: [8893, 7756, 589, 8895, 10120, 1236, 2]
 
-// Module 14624 (toggle)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 14649 (toggle)
+import items from "items";
 import createToggle from "createToggle";
 
 const require = arg1;
 createToggle = {
   useTitle() {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(require(1212) /* getSystemLocale */.t["opi/XK"]);
+    const intl = require(1236) /* getSystemLocale */.intl;
+    return intl.string(require(1236) /* getSystemLocale */.t["opi/XK"]);
   },
   useDescription() {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(require(1212) /* getSystemLocale */.t.opw5ls);
+    const intl = require(1236) /* getSystemLocale */.intl;
+    return intl.string(require(1236) /* getSystemLocale */.t.opw5ls);
   },
   parent: require("MobileSetting").MobileSetting.DATA_AND_PRIVACY,
   useValue: function useSecureFramesPersistentCodesValue() {
-    const items = [_isNativeReflectConstruct];
-    return require(566) /* initialize */.useStateFromStores(items, () => outer1_3.getPersistentCodesEnabled());
+    const items = [items];
+    return require(589) /* initialize */.useStateFromStores(items, () => persistentCodesEnabled.getPersistentCodesEnabled());
   },
   onValueChange: function handleSecureFramesPersistentCodesToggle(arg0) {
-    const result = importDefault(8871).updatePersistentCodesEnabled(arg0);
+    const result = importDefault(8895).updatePersistentCodesEnabled(arg0);
   }
 };
 createToggle = createToggle.createToggle(createToggle);

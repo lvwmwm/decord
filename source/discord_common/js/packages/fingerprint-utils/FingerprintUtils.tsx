@@ -1,20 +1,19 @@
-// Module ID: 490
-// Function ID: 6416
+// Module ID: 513
+// Function ID: 514
 // Name: extractId
 // Dependencies: [2]
-// Exports: maybeExtractId
+// Exports: extractId, maybeExtractId
 
-// Module 490 (extractId)
-function extractId(arg0) {
-  return arg0.split(".")[0];
-}
+// Module 513 (extractId)
 const result = require("set").fileFinishedImporting("../discord_common/js/packages/fingerprint-utils/FingerprintUtils.tsx");
 
-export { extractId };
+export const extractId = function extractId(fingerprint) {
+  return fingerprint.split(".")[0];
+};
 export const maybeExtractId = function maybeExtractId(installationForTracking) {
-  let tmp = null;
+  let first = null;
   if (null != installationForTracking) {
-    tmp = extractId(installationForTracking);
+    first = installationForTracking.split(".")[0];
   }
-  return tmp;
+  return first;
 };

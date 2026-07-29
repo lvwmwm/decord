@@ -1,11 +1,10 @@
 // Module ID: 3234
-// Function ID: 25821
+// Function ID: 3235
 // Name: registerAsset
-// Dependencies: [1217]
+// Dependencies: [1241]
 
 // Module 3234 (registerAsset)
 import registerAsset from "registerAsset";
 
-const obj = { __packager_asset: true, httpServerLocation: "/assets/modules/game_invite_channels", scales: [1], hash: "076269e2b56b0de9d686111cd146cba2", name: "GameInviteChannels.compiled.messages", type: "jsona" };
 
-export default registerAsset.registerAsset(obj);
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9nYW1lX2ludml0ZV9jaGFubmVscw==", scales: [1], hash: "b4294f8e1a79dfb63918449ddf640187", name: "es-419.messages.b4294f8e1a79dfb63918449ddf640187.compiled.messages", type: "jsona" });

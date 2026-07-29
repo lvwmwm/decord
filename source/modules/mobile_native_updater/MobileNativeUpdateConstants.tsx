@@ -1,74 +1,73 @@
-// Module ID: 4147
-// Function ID: 34137
-// Name: currentUpdateConfig
-// Dependencies: [3747, 477, 1443, 1554, 2]
+// Module ID: 4171
+// Function ID: 4172
+// Name: UPDATE_CHECK_INTERVAL
+// Dependencies: [3771, 500, 1467, 1578, 2]
 
-// Module 4147 (currentUpdateConfig)
+// Module 4171 (UPDATE_CHECK_INTERVAL)
 import importDefaultResult from "t";
+import getConstants from "getConstants";
+import getConstants from "getConstants";
 import durationResult from "module_6";
 
-const require = arg1;
-const tmp3 = (function currentUpdateConfig() {
-  let tmp = null;
-  if (undefined !== process.env.INTERNAL_UPDATE_URL) {
-    const _process2 = process;
-    tmp = null;
-    if ("" !== process.env.INTERNAL_UPDATE_URL) {
-      let obj = require(477) /* set */;
-      if (obj.isIOS()) {
-        const _process = process;
-        let toURLSafeResult = importDefault(1443).toURLSafe(process.env.INTERNAL_UPDATE_URL);
-        const obj3 = importDefault(1443);
-      } else {
-        toURLSafeResult = null;
-        const obj2 = require(477) /* set */;
-      }
-      tmp = toURLSafeResult;
+let tmp3 = null;
+if (undefined !== process.env.INTERNAL_UPDATE_URL) {
+  const _process = process;
+  tmp3 = null;
+  if ("" !== process.env.INTERNAL_UPDATE_URL) {
+    if (obj2.isIOS()) {
+      const _process2 = process;
+      let toURLSafeResult = require("isDiscordProxiedAssetUrl").toURLSafe(process.env.INTERNAL_UPDATE_URL);
+      const importDefaultResult1 = require("isDiscordProxiedAssetUrl");
+    } else {
+      toURLSafeResult = null;
+      const obj3 = require("set");
     }
+    tmp3 = toURLSafeResult;
+    obj2 = require("set");
   }
-  const constants = require(1554) /* getConstants */.getConstants();
-  let Build;
-  if (null != constants) {
-    Build = constants.Build;
-  }
-  const parsed = parseInt(Build);
-  let tmp12 = null;
-  if (!Number.isNaN(parsed)) {
-    tmp12 = null;
-    if (0 !== parsed) {
-      tmp12 = null;
-      if (123456 !== parsed) {
-        tmp12 = null;
-        if (1234567890 !== parsed) {
-          tmp12 = parsed;
-        }
+}
+getConstants = getConstants.getConstants();
+let Build;
+if (getConstants != null) {
+  Build = getConstants.Build;
+}
+const parsed = parseInt(Build);
+let tmp8 = null;
+if (!Number.isNaN(parsed)) {
+  tmp8 = null;
+  if (0 !== parsed) {
+    tmp8 = null;
+    if (123456 !== parsed) {
+      tmp8 = null;
+      if (1234567890 !== parsed) {
+        tmp8 = parsed;
       }
     }
   }
-  const obj4 = require(1554) /* getConstants */;
-  const constants1 = require(1554) /* getConstants */.getConstants();
-  let Version;
-  if (null != constants1) {
-    Version = constants1.Version;
-  }
-  let tmp15 = null;
-  if (null != Version) {
-    tmp15 = Version;
-  }
-  let tmp16 = null;
-  if (null !== tmp) {
-    tmp16 = null;
-    if (null !== tmp12) {
-      tmp16 = null;
-      if (null !== tmp15) {
-        obj = { url: tmp, currentBuild: tmp12, currentVersion: tmp15 };
-        tmp16 = obj;
-      }
+}
+getConstants = getConstants.getConstants();
+let Version;
+if (getConstants != null) {
+  Version = getConstants.Version;
+}
+if (Version == null) {
+  Version = null;
+}
+let tmp11 = null;
+if (null !== tmp3) {
+  tmp11 = null;
+  if (null !== tmp8) {
+    tmp11 = null;
+    if (null !== Version) {
+      const obj = { url: null, currentBuild: null, currentVersion: null };
+      obj[0] = tmp3;
+      obj[1] = tmp8;
+      obj[2] = Version;
+      tmp11 = obj;
     }
   }
-  return tmp16;
-})();
-const result = require("isOriginalContentTypeDifferent").fileFinishedImporting("modules/mobile_native_updater/MobileNativeUpdateConstants.tsx");
+}
+const result = require("isDiscordProxiedAssetUrl").fileFinishedImporting("modules/mobile_native_updater/MobileNativeUpdateConstants.tsx");
 
 export const UPDATE_CHECK_INTERVAL = durationResult;
-export const UPDATE_CONFIG = tmp3;
+export const UPDATE_CONFIG = tmp11;

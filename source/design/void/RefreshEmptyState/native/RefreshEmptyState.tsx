@@ -1,44 +1,44 @@
-// Module ID: 13213
-// Function ID: 101668
+// Module ID: 13236
+// Function ID: 13237
 // Name: EmptyState
-// Dependencies: [31, 27, 653, 33, 4165, 5087, 689, 7646, 4578, 4011, 2]
+// Dependencies: [19, 17, 676, 21, 4189, 5109, 712, 7669, 4600, 4035, 2]
 // Exports: ThemedEmptyState
 
-// Module 13213 (EmptyState)
-import "result";
+// Module 13236 (EmptyState)
+import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { Fonts } from "ME";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 import importDefaultResult from "createTextStyle";
 import importDefaultResult1 from "createTextStyle";
 
-let closure_3;
-let closure_4;
-let closure_5;
+let c3;
+let c4;
+let c5;
 let closure_6;
 const require = arg1;
 class EmptyState {
   constructor(arg0) {
     ({ source, title, callToAction } = global);
     ({ body, containerStyle, imageStyle, titleStyle, bodyStyle } = global);
-    tmp = c7();
-    obj = { style: items };
+    tmp = jsxs();
+    tmp3 = View;
+    obj = { style: items, children: null };
     items = [, ];
     items[0] = tmp.container;
     items[1] = containerStyle;
     tmp4 = null;
     tmp2 = jsxs;
-    tmp3 = View;
     if (null != source) {
       tmp5 = jsx;
       tmp6 = Image;
-      obj = {};
-      obj.source = source;
+      obj = { source: null, style: null };
+      obj[0] = source;
       items1 = [, ];
       items1[0] = tmp.image;
       items1[1] = imageStyle;
-      obj.style = items1;
+      obj[1] = items1;
       tmp4 = jsx(Image, obj);
     }
     items2 = [, , , ];
@@ -48,69 +48,58 @@ class EmptyState {
       tmp8 = jsx;
       tmp9 = closure_1;
       tmp10 = closure_2;
-      num = 7;
-      obj1 = {};
+      obj1 = { style: null, children: null };
       items3 = [, ];
       items3[0] = tmp.title;
       items3[1] = titleStyle;
-      obj1.style = items3;
-      obj1.children = title;
-      tmp7 = jsx(require("module_7646"), obj1);
+      obj1[0] = items3;
+      obj1[1] = title;
+      tmp7 = jsx(require("module_7669"), obj1);
     }
     items2[1] = tmp7;
+    tmp11 = jsx;
+    tmp12 = closure_2;
     items4 = [, ];
     items4[0] = tmp.body;
     items4[1] = bodyStyle;
-    items2[2] = jsx(require("module_7646"), { style: items4, children: body });
-    tmp11 = null;
+    items2[2] = jsx(require("module_7669"), { style: items4, children: body });
+    tmp11Result = null;
     if (null != callToAction) {
-      tmp12 = jsx;
-      tmp13 = View;
-      obj2 = {};
-      obj2.style = tmp.cta;
-      tmp14 = jsx;
-      tmp15 = closure_0;
-      tmp16 = closure_2;
-      num2 = 8;
-      obj3 = {};
-      flag = true;
-      obj3.shrink = true;
-      ({ label: obj5.text, onPress: obj5.onPress } = callToAction);
-      str = "sm";
-      obj3.size = "sm";
-      obj2.children = jsx(require("Button").Button, obj3);
-      tmp11 = jsx(View, obj2);
+      obj2 = { style: null, children: null };
+      obj2[0] = tmp.cta;
+      tmp14 = closure_0;
+      obj3 = { shrink: true, text: null, onPress: null, size: "sm" };
+      ({ label: obj5[1], onPress: obj5[2] } = callToAction);
+      obj2[1] = tmp11(require("Button").Button, obj3);
+      tmp11Result = tmp11(tmp3, obj2);
     }
-    items2[3] = tmp11;
-    obj.children = items2;
+    items2[3] = tmp11Result;
+    obj[1] = items2;
     return tmp2(tmp3, obj);
   }
 }
-({ View: closure_3, Image: closure_4 } = get_ActivityIndicator);
-({ jsx: closure_5, jsxs: closure_6 } = jsxProd);
-_createForOfIteratorHelperLoose = { container: { alignItems: "center", justifyContent: "center", padding: 16 } };
-_createForOfIteratorHelperLoose = {};
-let merged = Object.assign(require("createTextStyle")(Fonts.DISPLAY_SEMIBOLD, require("_createForOfIteratorHelperLoose").colors.MOBILE_TEXT_HEADING_PRIMARY, 16));
-_createForOfIteratorHelperLoose["textAlign"] = "center";
-_createForOfIteratorHelperLoose["marginBottom"] = 8;
-_createForOfIteratorHelperLoose.title = _createForOfIteratorHelperLoose;
+({ View: c3, Image: c4 } = get_ActivityIndicator);
+({ jsx: c5, jsxs: closure_6 } = jsxProd);
+createCacheKey = { container: { alignItems: "center", justifyContent: "center", padding: 16 }, title: null, body: null, image: null, cta: null };
+createCacheKey = {};
+let merged = Object.assign(require("createTextStyle")(Fonts.DISPLAY_SEMIBOLD, require("Themes").colors.MOBILE_TEXT_HEADING_PRIMARY, 16));
+createCacheKey.textAlign = "center";
+createCacheKey.marginBottom = 8;
+createCacheKey[1] = createCacheKey;
 let obj1 = {};
-let merged1 = Object.assign(require("createTextStyle")(Fonts.PRIMARY_MEDIUM, require("_createForOfIteratorHelperLoose").colors.TEXT_SUBTLE, 14));
-obj1["textAlign"] = "center";
-_createForOfIteratorHelperLoose.body = obj1;
-_createForOfIteratorHelperLoose.image = { marginBottom: 32 };
-_createForOfIteratorHelperLoose.cta = { alignSelf: "center", marginTop: 16 };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+let merged1 = Object.assign(require("createTextStyle")(Fonts.PRIMARY_MEDIUM, require("Themes").colors.TEXT_SUBTLE, 14));
+obj1.textAlign = "center";
+createCacheKey[2] = obj1;
+createCacheKey[3] = { marginBottom: 32 };
+createCacheKey[4] = { alignSelf: "center", marginTop: 16 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
 const result = require("ME").fileFinishedImporting("design/void/RefreshEmptyState/native/RefreshEmptyState.tsx");
 
 export default EmptyState;
 export const ThemedEmptyState = function ThemedEmptyState(darkSource) {
   let lightSource = darkSource.darkSource;
-  let obj = Object.create(null);
-  obj.lightSource = 0;
-  obj.darkSource = 0;
-  const merged = Object.assign(darkSource, obj);
-  obj = require(4011) /* AccessibilityAnnouncer */;
+  const merged = Object.assign(darkSource, Object.create(null));
+  let obj = require(4035) /* AccessibilityAnnouncer */;
   if (obj2.isThemeLight(obj.useThemeContext().theme)) {
     lightSource = darkSource.lightSource;
   }

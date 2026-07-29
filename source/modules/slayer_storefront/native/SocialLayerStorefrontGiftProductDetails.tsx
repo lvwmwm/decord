@@ -1,41 +1,42 @@
-// Module ID: 9745
-// Function ID: 75743
+// Module ID: 9767
+// Function ID: 9768
 // Name: SocialLayerStorefrontGiftProductDetails
-// Dependencies: [31, 27, 653, 33, 4165, 689, 5503, 9736, 1392, 8029, 4161, 2]
+// Dependencies: [19, 17, 676, 21, 4189, 712, 5521, 9758, 1416, 8053, 4185, 2]
 // Exports: default
 
-// Module 9745 (SocialLayerStorefrontGiftProductDetails)
-import result from "result";
+// Module 9767 (SocialLayerStorefrontGiftProductDetails)
+import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { PriceSetAssignmentPurchaseTypes as closure_6 } from "ME";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_4;
-let closure_5;
-let closure_7;
-let closure_8;
+let c4;
+let c5;
+let error;
+let metroImportAll;
 const require = arg1;
-({ Image: closure_4, View: closure_5 } = get_ActivityIndicator);
-({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { flexDirection: "row", alignItems: "center", gap: require("_createForOfIteratorHelperLoose").space.PX_12, paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16, paddingVertical: require("_createForOfIteratorHelperLoose").space.PX_16, borderWidth: 2, borderColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BRAND, borderRadius: require("_createForOfIteratorHelperLoose").radii.lg, marginHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16 };
-_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.text = { flex: 1, gap: require("_createForOfIteratorHelperLoose").space.PX_4 };
-let obj2 = { flexDirection: "row", alignItems: "center", gap: require("_createForOfIteratorHelperLoose").space.PX_4 };
-_createForOfIteratorHelperLoose.appInfo = obj2;
-let obj3 = { width: 20, height: 20, borderRadius: require("_createForOfIteratorHelperLoose").radii.xs };
-_createForOfIteratorHelperLoose.appIcon = obj3;
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-let obj1 = { flex: 1, gap: require("_createForOfIteratorHelperLoose").space.PX_4 };
+({ Image: c4, View: c5 } = get_ActivityIndicator);
+({ jsx: error, jsxs: metroImportAll } = jsxProd);
+createCacheKey = { container: null, text: null, appInfo: null, appIcon: null };
+createCacheKey = { flexDirection: "row", alignItems: "center", gap: require("Themes").space.PX_12, paddingHorizontal: require("Themes").space.PX_16, paddingVertical: require("Themes").space.PX_16, borderWidth: 2, borderColor: require("Themes").colors.BACKGROUND_BRAND, borderRadius: require("Themes").radii.lg, marginHorizontal: require("Themes").space.PX_16 };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { flex: 1, gap: require("Themes").space.PX_4 };
+let obj1 = { flex: 1, gap: require("Themes").space.PX_4 };
+createCacheKey[2] = { flexDirection: "row", alignItems: "center", gap: require("Themes").space.PX_4 };
+let obj2 = { flexDirection: "row", alignItems: "center", gap: require("Themes").space.PX_4 };
+createCacheKey[3] = { width: 20, height: 20, borderRadius: require("Themes").radii.xs };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let obj3 = { width: 20, height: 20, borderRadius: require("Themes").radii.xs };
 const result = require("ME").fileFinishedImporting("modules/slayer_storefront/native/SocialLayerStorefrontGiftProductDetails.tsx");
 
 export default function SocialLayerStorefrontGiftProductDetails(sku) {
   sku = sku.sku;
-  const tmp = _createForOfIteratorHelperLoose();
-  let obj = getOrFetchApplication(5503);
+  let getOrFetchApplication;
+  const tmp = createCacheKey();
+  let obj = getOrFetchApplication(5521);
   getOrFetchApplication = obj.useGetOrFetchApplication(sku.applicationId);
-  let obj1 = getOrFetchApplication(9736);
+  let obj1 = getOrFetchApplication(9758);
   obj = { sku, priceSetAssignmentPurchaseType: constants.GIFT };
   const userPrice = obj1.useFormattedSKUPrice(obj).userPrice;
   const items = [getOrFetchApplication];
@@ -43,44 +44,45 @@ export default function SocialLayerStorefrontGiftProductDetails(sku) {
     let applicationIconURL = null;
     if (null != getOrFetchApplication) {
       let obj = outer1_1(outer1_2[8]);
-      obj = {};
-      ({ id: obj2.id, icon: obj2.icon } = getOrFetchApplication);
-      obj.size = 20;
+      obj = { id: null, icon: null, size: 20 };
+      ({ id: obj2[0], icon: obj2[1] } = getOrFetchApplication);
       applicationIconURL = obj.getApplicationIconURL(obj);
     }
     return applicationIconURL;
   }, items);
-  obj = { style: tmp.container };
-  const items1 = [callback(importDefault(8029), { sku, size: 55 }), , ];
-  obj1 = { style: tmp.text };
-  let tmp7Result = null != getOrFetchApplication;
-  if (tmp7Result) {
-    const obj2 = { style: tmp.appInfo };
-    let tmp9 = null != memo;
-    if (tmp9) {
-      const obj3 = {};
-      const obj4 = { uri: memo };
-      obj3.source = obj4;
-      obj3.style = tmp.appIcon;
-      tmp9 = callback(closure_4, obj3);
+  obj = { style: tmp.container, children: null };
+  const items1 = [callback(importDefault(8053), { sku, size: 55 }), , ];
+  obj1 = { style: tmp.text, children: null };
+  let tmp6Result = null != getOrFetchApplication;
+  if (tmp6Result) {
+    const obj2 = { style: null, children: null };
+    obj2[0] = tmp.appInfo;
+    let tmp8Result = null != memo;
+    if (tmp8Result) {
+      const obj3 = { source: null, style: null };
+      const obj4 = { uri: null };
+      obj4[0] = memo;
+      obj3[0] = obj4;
+      obj3[1] = tmp.appIcon;
+      tmp8Result = tmp8(closure_4, obj3);
     }
-    const items2 = [tmp9, ];
-    const obj5 = { variant: "text-sm/medium", color: "text-muted", children: getOrFetchApplication.name };
-    items2[1] = callback(getOrFetchApplication(4161).Text, obj5);
-    obj2.children = items2;
-    tmp7Result = closure_8(closure_5, obj2);
-    const tmp7 = closure_8;
-    const tmp8 = closure_5;
+    const items2 = [tmp8Result, ];
+    const obj5 = { variant: "text-sm/medium", color: "text-muted", children: null };
+    obj5[2] = getOrFetchApplication.name;
+    items2[1] = tmp8(tmp2(4185).Text, obj5);
+    obj2[1] = items2;
+    tmp6Result = tmp6(tmp7, obj2);
   }
-  const items3 = [tmp7Result, callback(getOrFetchApplication(4161).Text, { variant: "text-md/semibold", children: sku.name })];
-  obj1.children = items3;
+  const items3 = [tmp6Result, callback(getOrFetchApplication(4185).Text, { variant: "text-md/semibold", children: sku.name })];
+  obj1[1] = items3;
   items1[1] = closure_8(closure_5, obj1);
-  let tmp15 = null != userPrice;
-  if (tmp15) {
-    const obj7 = { variant: "text-md/semibold", children: userPrice };
-    tmp15 = callback(getOrFetchApplication(4161).Text, obj7);
+  tmp8Result = null != userPrice;
+  if (tmp8Result) {
+    const obj7 = { variant: "text-md/semibold", children: null };
+    obj7[1] = userPrice;
+    tmp8Result = tmp8(tmp2(4185).Text, obj7);
   }
-  items1[2] = tmp15;
-  obj.children = items1;
+  items1[2] = tmp8Result;
+  obj[1] = items1;
   return closure_8(closure_5, obj);
 };

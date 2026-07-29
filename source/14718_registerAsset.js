@@ -1,11 +1,10 @@
 // Module ID: 14718
-// Function ID: 111979
+// Function ID: 14719
 // Name: registerAsset
-// Dependencies: [1217]
+// Dependencies: [1241]
 
 // Module 14718 (registerAsset)
 import registerAsset from "registerAsset";
 
-const obj = { __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9pbnRs", scales: [1], hash: "99ca2b0cb6c6ab32f98726cbd8d2cd48", name: "pl.messages.99ca2b0cb6c6ab32f98726cbd8d2cd48.compiled.messages", type: "jsona" };
 
-export default registerAsset.registerAsset(obj);
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "4aac4b9e524273cde97c71cf7da9357a", name: "DoubleCheckmarkIcon", type: "png" });

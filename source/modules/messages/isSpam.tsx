@@ -1,26 +1,18 @@
-// Module ID: 5745
-// Function ID: 49685
-// Name: isSpammer
-// Dependencies: [1850, 653, 5746, 2]
-// Exports: isSpam, isSpamSupported
+// Module ID: 5763
+// Function ID: 5764
+// Name: isSpamSupported
+// Dependencies: [1874, 676, 5764, 2]
+// Exports: isSpam, isSpamSupported, isSpammer
 
-// Module 5745 (isSpammer)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 5763 (isSpamSupported)
+import mergeGuildAvatar from "mergeGuildAvatar";
 import ME from "ME";
 
-let closure_3;
-let closure_4;
+let c3;
+let c4;
 const require = arg1;
-function isSpammer(id) {
-  user = user.getUser(id);
-  let hasFlagResult;
-  if (null != user) {
-    hasFlagResult = user.hasFlag(constants.SPAMMER);
-  }
-  return null != hasFlagResult && hasFlagResult;
-}
-({ UserFlags: closure_3, ChannelTypes: closure_4 } = ME);
-const result = require("getEmbedFieldFromMessage").fileFinishedImporting("modules/messages/isSpam.tsx");
+({ UserFlags: c3, ChannelTypes: c4 } = ME);
+const result = require("getDecisionOutcomeFromMessage").fileFinishedImporting("modules/messages/isSpam.tsx");
 
 export const isSpamSupported = function isSpamSupported(type) {
   let tmp = undefined !== type;
@@ -29,12 +21,29 @@ export const isSpamSupported = function isSpamSupported(type) {
   }
   return tmp;
 };
-export { isSpammer };
-export const isSpam = function isSpam(author) {
-  let tmp = isSpammer(author.author.id);
-  if (tmp) {
-    tmp = !require(5746) /* getEmbedFieldFromMessage */.isAutomodMessageRecord(author);
-    const obj = require(5746) /* getEmbedFieldFromMessage */;
+export const isSpammer = function isSpammer(userId) {
+  const user = authStore.getUser(userId);
+  let flag;
+  if (user != null) {
+    flag = user.hasFlag(constants.SPAMMER);
   }
-  return tmp;
+  if (flag == null) {
+    flag = false;
+  }
+  return flag;
+};
+export const isSpam = function isSpam(author) {
+  const user = authStore.getUser(author.author.id);
+  let flag;
+  if (user != null) {
+    flag = user.hasFlag(constants.SPAMMER);
+  }
+  if (flag == null) {
+    flag = false;
+  }
+  if (flag) {
+    flag = !require(5764) /* getDecisionOutcomeFromMessage */.isAutomodMessageRecord(author);
+    const obj2 = require(5764) /* getDecisionOutcomeFromMessage */;
+  }
+  return flag;
 };

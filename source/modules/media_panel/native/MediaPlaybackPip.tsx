@@ -1,72 +1,70 @@
-// Module ID: 16009
-// Function ID: 123524
-// Name: convertMsToSecs
-// Dependencies: [57, 31, 27, 1348, 4384, 3802, 1850, 653, 15879, 33, 4165, 689, 3869, 566, 4355, 7971, 4161, 16010, 4589, 5695, 5661, 4026, 4166, 1212, 8212, 5125, 4119, 675, 13567, 3780, 16007, 8105, 8103, 14062, 2]
+// Module ID: 16044
+// Function ID: 16045
+// Name: MediaInfo
+// Dependencies: [32, 19, 17, 1372, 4407, 3826, 1874, 676, 15914, 21, 4189, 712, 3893, 589, 4380, 7996, 4185, 16045, 4611, 5713, 5679, 4050, 4190, 1236, 8236, 5147, 4143, 698, 13590, 3804, 16042, 8129, 8127, 14084, 2]
 // Exports: default
 
-// Module 16009 (convertMsToSecs)
-import _slicedToArray from "_slicedToArray";
-import PauseIcon from "PauseIcon";
-import get_ActivityIndicator from "expandLocation";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_9 from "_isNativeReflectConstruct";
-import closure_10 from "_isNativeReflectConstruct";
-import closure_11 from "_isNativeReflectConstruct";
+// Module 16044 (MediaInfo)
+import PlayIcon from "PlayIcon";
+import trackInvite from "trackInvite";
+import get_ActivityIndicator from "AnimatedChild";
+import ensureGuildLoaded from "ensureGuildLoaded";
+import reinjectEphemerals from "reinjectEphemerals";
+import upsertRelationship from "upsertRelationship";
+import mergeGuildAvatar from "mergeGuildAvatar";
 import ME from "ME";
-import jsxProd from "CircularProgress";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import { SquarePIPReferenceDimensions } from "VoicePanelPIPModes";
+import jsxProd from "module_4050";
+import createCacheKey from "createCacheKey";
 
 let StyleSheet;
+let c5;
 let closure_12;
-let closure_13;
 let closure_14;
 let closure_15;
 let closure_16;
-let closure_5;
 let closure_6;
-let closure_7;
+let error;
+let map1;
 const require = arg1;
-function convertMsToSecs(arg0) {
-  let result;
-  if (null != arg0) {
-    result = arg0 / 1000;
-  }
-  return result;
-}
 function MediaInfo(message) {
   let isControlVisible;
   let isVoiceMessage;
   message = message.message;
   const activeMediaPlayerSource = message.activeMediaPlayerSource;
+  let first;
+  let dependencyMap;
+  let first1;
+  let React;
   ({ isVoiceMessage, isControlVisible } = message);
-  const tmp = _createForOfIteratorHelperLoose();
-  let obj = message(3869);
-  const token = obj.useToken(first(689).colors.BACKGROUND_SURFACE_HIGH);
-  let obj1 = message(566);
-  const items = [_isNativeReflectConstruct, closure_11, closure_10];
+  const tmp = createCacheKey();
+  let obj = message(3893);
+  const token = obj.useToken(first(712).colors.BACKGROUND_SURFACE_HIGH);
+  let obj1 = message(589);
+  const items = [ensureGuildLoaded, mergeGuildAvatar, upsertRelationship];
   const items1 = [message];
   const stateFromStores = obj1.useStateFromStores(items, () => {
     let channel_id;
-    if (null != message) {
+    if (message != null) {
       channel_id = message.channel_id;
     }
     const channel = outer1_8.getChannel(channel_id);
     let channelName = null;
     if (null != channel) {
-      const obj = message(4355);
+      const obj = message(4380);
       channelName = obj.computeChannelName(channel, outer1_11, outer1_10, true, true);
     }
     return channelName;
   }, items1);
-  const tmp4 = first1(React.useState(0), 2);
-  first = tmp4[0];
-  const dependencyMap = tmp4[1];
-  const tmp6 = first1(React.useState(0), 2);
-  first1 = tmp6[0];
-  React = tmp6[1];
+  const tmp7 = first1(React.useState(0), 2);
+  first = tmp7[0];
+  dependencyMap = tmp7[1];
+  const tmp9 = first1(React.useState(0), 2);
+  first1 = tmp9[0];
+  React = tmp9[1];
   const items2 = [first1, first];
   const memo = React.useMemo(() => first1 >= first, items2);
-  if (null != message) {
+  if (message != null) {
     const contentMessage = message.getContentMessage();
   }
   if (null != message) {
@@ -79,53 +77,53 @@ function MediaInfo(message) {
           if (contentMessage.attachments.length > 0) {
             str2 = "";
             if (null != activeMediaPlayerSource.attachmentIndex) {
-              str2 = first(7971)(contentMessage.attachments[activeMediaPlayerSource.attachmentIndex]);
+              str2 = tmp4(7996)(contentMessage.attachments[activeMediaPlayerSource.attachmentIndex]);
             }
           }
         }
-        obj = {
-          variant: "text-md/semibold",
-          lineClamp: 1,
-          ellipsizeMode: "clip",
-          onLayout(nativeEvent) {
-                  return callback(nativeEvent.nativeEvent.layout.width);
-                },
-          children: str2
+        obj = { variant: "text-md/semibold", lineClamp: 1, ellipsizeMode: "clip", onLayout: null, children: null };
+        obj[3] = function onLayout(nativeEvent) {
+          return callback(nativeEvent.nativeEvent.layout.width);
         };
-        const tmp15 = callback(message(4161).Text, obj);
-        obj = {
-          accessibilityElementsHidden: isControlVisible,
-          style: tmp.infoContent,
-          onLayout(nativeEvent) {
-                  return dependencyMap(nativeEvent.nativeEvent.layout.width);
-                }
+        obj[4] = str2;
+        const tmp14 = callback2(tmp2(4185).Text, obj);
+        obj = { accessibilityElementsHidden: null, style: null, onLayout: null, children: null };
+        obj[0] = isControlVisible;
+        obj[1] = tmp.infoContent;
+        obj[2] = function onLayout(nativeEvent) {
+          return dependencyMap(nativeEvent.nativeEvent.layout.width);
         };
-        obj1 = { style: tmp.infoContainer };
-        let tmp20 = tmp15;
+        obj1 = { style: null, children: null };
+        obj1[0] = tmp.infoContainer;
+        let tmp16Result = tmp14;
         if (memo) {
-          const obj2 = {};
-          const obj3 = { flex: 1 };
-          obj2.style = obj3;
-          const obj4 = { spacing: 20, speed: 0.2, children: tmp15 };
-          const items3 = [callback(message(16010).Marquee, obj4), ];
-          const obj5 = { start: { x: 0, y: 0 }, end: { x: 1, y: 0 }, locations: [0, 0.1, 0.2, 0.8, 0.9, 1] };
-          const items4 = [token, `${tmp2}CC`, `${tmp2}00`, `${tmp2}00`, `${tmp2}CC`, token];
-          obj5.colors = items4;
-          obj5.style = tmp.infoContainerGradient;
-          items3[1] = callback(first(4589), obj5);
-          obj2.children = items3;
-          tmp20 = callback2(closure_7, obj2);
+          const obj2 = { style: null, children: null };
+          obj2[0] = { flex: 1 };
+          const obj3 = { spacing: 20, speed: 0.2, children: null };
+          obj3[2] = tmp14;
+          const items3 = [tmp13(tmp2(16045).Marquee, obj3), ];
+          const obj4 = { start: null, end: null, locations: null, colors: null, style: null };
+          obj4[0] = { x: 0, y: 0 };
+          obj4[1] = { x: 1, y: 0 };
+          obj4[2] = [0, 0.1, 0.2, 0.8, 0.9, 1];
+          const items4 = [token, `${tmp5}CC`, `${tmp5}00`, `${tmp5}00`, `${tmp5}CC`, token];
+          obj4[3] = items4;
+          obj4[4] = tmp.infoContainerGradient;
+          items3[1] = tmp13(tmp4(4611), obj4);
+          obj2[1] = items3;
+          tmp16Result = tmp16(tmp15, obj2);
         }
-        const items5 = [tmp20, ];
-        let tmp28 = null != stateFromStores;
-        if (tmp28) {
-          const obj6 = { variant: "text-xs/medium", color: "text-subtle", lineClamp: 1, children: stateFromStores };
-          tmp28 = callback(message(4161).Text, obj6);
+        const items5 = [tmp16Result, ];
+        let tmp13Result = null != stateFromStores;
+        if (tmp13Result) {
+          const obj5 = { variant: "text-xs/medium", color: "text-subtle", lineClamp: 1, children: null };
+          obj5[3] = stateFromStores;
+          tmp13Result = tmp13(tmp2(4185).Text, obj5);
         }
-        items5[1] = tmp28;
-        obj1.children = items5;
-        obj.children = callback2(closure_7, obj1);
-        return callback(closure_7, obj);
+        items5[1] = tmp13Result;
+        obj1[1] = items5;
+        obj[3] = closure_16(closure_7, obj1);
+        return callback2(closure_7, obj);
       }
     }
   }
@@ -135,104 +133,100 @@ function PiPControls(message) {
   message = message.message;
   const visible = message.visible;
   const isVoiceMessage = message.isVoiceMessage;
-  const tmp = _createForOfIteratorHelperLoose();
+  const tmp = createCacheKey();
   const items = [message];
   const callback = React.useCallback(() => {
     if (null != message) {
-      if (null != message.channel_id) {
-        if (null != message.id) {
+      if (null != tmp.channel_id) {
+        if (null != tmp.id) {
           const obj = visible(outer1_2[19]);
-          obj.trackJump(message.channel_id, message.id, "Media PIP", {});
-          const channel = outer1_8.getChannel(message.channel_id);
+          obj.trackJump(tmp.channel_id, tmp.id, "Media PIP", {});
+          const channel = outer1_8.getChannel(tmp.channel_id);
           let guildId;
-          if (null != channel) {
+          if (channel != null) {
             guildId = channel.getGuildId();
           }
-          visible(outer1_2[20])(outer1_14.CHANNEL(guildId, message.channel_id, message.id), { navigationReplace: true, openChannel: true });
-          const tmp4 = visible(outer1_2[20]);
+          visible(outer1_2[20])(outer1_14.CHANNEL(guildId, tmp.channel_id, tmp.id), { navigationReplace: true, openChannel: true });
+          const tmp6 = visible;
+          const tmp6Result = visible(outer1_2[20]);
+          const tmp7 = outer1_2;
         }
       }
     }
   }, items);
-  let obj = message(4026);
-  const fn = function u() {
-    const obj = {};
+  let obj = message(4050);
+  const fn = function c() {
+    let obj = message(outer1_2[22]);
     let num = 0;
     if (visible) {
       num = 1;
     }
-    obj.opacity = message(outer1_2[22]).withTiming(num, { duration: 200 });
+    obj = { opacity: obj.withTiming(num, { duration: 200 }) };
     return obj;
   };
-  obj = { withTiming: message(4166).withTiming, visible };
+  obj = { withTiming: message(4190).withTiming, visible };
   fn.__closure = obj;
   fn.__workletHash = 3641278982291;
-  fn.__initData = closure_18;
+  fn.__initData = closure_19;
   const animatedStyle = obj.useAnimatedStyle(fn);
-  const intl = message(1212).intl;
+  const intl = message(1236).intl;
   const string = intl.string;
-  const t = message(1212).t;
+  const t = message(1236).t;
   if (isVoiceMessage) {
     let stringResult = string(t.KTonHP);
   } else {
     stringResult = string(t["13/7kX"]);
   }
-  const intl2 = message(1212).intl;
+  const intl2 = tmp3(1236).intl;
   const string2 = intl2.string;
-  const t2 = message(1212).t;
+  const t2 = tmp3(1236).t;
   if (isVoiceMessage) {
     let string2Result = string2(t2["6rhrVG"]);
   } else {
     string2Result = string2(t2.WAI6xu);
   }
-  obj = { style: items1 };
+  obj = { style: items1, children: null };
   items1 = [tmp.pipControls, animatedStyle];
-  const items2 = [callback(message(8212).BackgroundBlurFill, { blurAmount: 0.05 }), , ];
-  const obj1 = { disabled: !visible, style: items3, onPress: callback, accessible: true, accessibilityRole: "button" };
-  items3 = [, ];
+  const items2 = [callback2(message(8236).BackgroundBlurFill, { blurAmount: 0.05 }), , ];
+  const items3 = [, ];
   ({ pipButton: arr4[0], backButton: arr4[1] } = tmp);
-  obj1.accessibilityLabel = stringResult;
-  obj1.children = callback(message(5125).ArrowLargeLeftIcon, { size: "sm" });
-  items2[1] = callback(closure_6, obj1);
-  const obj2 = { disabled: !visible, style: items4, onPress: message.handleClosePip, accessible: true, accessibilityRole: "button" };
-  items4 = [, ];
+  items2[1] = callback2(closure_6, { disabled: !visible, style: items3, onPress: callback, accessible: true, accessibilityRole: "button", accessibilityLabel: stringResult, children: callback2(message(5147).ArrowLargeLeftIcon, { size: "sm" }) });
+  const obj1 = { disabled: !visible, style: items3, onPress: callback, accessible: true, accessibilityRole: "button", accessibilityLabel: stringResult, children: callback2(message(5147).ArrowLargeLeftIcon, { size: "sm" }) };
+  const items4 = [, ];
   ({ pipButton: arr5[0], dismissButton: arr5[1] } = tmp);
-  obj2.accessibilityLabel = string2Result;
-  obj2.children = callback(message(4119).XLargeIcon, { size: "sm" });
-  items2[2] = callback(closure_6, obj2);
-  obj.children = items2;
-  return callback2(visible(4026).View, obj);
+  items2[2] = callback2(closure_6, { disabled: !visible, style: items4, onPress: message.handleClosePip, accessible: true, accessibilityRole: "button", accessibilityLabel: string2Result, children: callback2(message(4143).XLargeIcon, { size: "sm" }) });
+  obj[1] = items2;
+  return callback3(visible(4050).View, obj);
 }
-({ Easing: closure_5, StyleSheet, TouchableOpacity: closure_6, View: closure_7 } = get_ActivityIndicator);
-({ AnalyticEvents: closure_12, MessageFlags: closure_13, Routes: closure_14 } = ME);
+({ Easing: c5, StyleSheet, TouchableOpacity: closure_6, View: error } = get_ActivityIndicator);
+({ AnalyticEvents: closure_12, MessageFlags: map1, Routes: closure_14 } = ME);
 ({ jsx: closure_15, jsxs: closure_16 } = jsxProd);
-_createForOfIteratorHelperLoose = { container: _createForOfIteratorHelperLoose };
-_createForOfIteratorHelperLoose = { justifyContent: "center", alignItems: "center" };
-({ height: obj3.height, width: obj3.width } = require("VoicePanelPIPModes").SquarePIPReferenceDimensions);
+createCacheKey = { container: createCacheKey, pipControls: null, pipButton: null, dismissButton: null, backButton: null, infoContainer: null, infoContainerGradient: null, infoContent: null, actionContainer: null, playPauseButton: null, progressBar: null };
+createCacheKey = { justifyContent: "center", alignItems: "center", height: SquarePIPReferenceDimensions.height, width: SquarePIPReferenceDimensions.width };
 let obj1 = {};
 const merged = Object.assign(StyleSheet.absoluteFillObject);
-obj1["zIndex"] = 5;
-_createForOfIteratorHelperLoose.pipControls = obj1;
-let obj2 = { position: "absolute", top: 8, padding: 8, borderRadius: require("_createForOfIteratorHelperLoose").radii.round, borderWidth: 1, borderColor: require("_createForOfIteratorHelperLoose").colors.CONTROL_SECONDARY_BORDER_DEFAULT, tintColor: require("_createForOfIteratorHelperLoose").colors.CONTROL_SECONDARY_TEXT_DEFAULT, backgroundColor: require("_createForOfIteratorHelperLoose").colors.CONTROL_SECONDARY_BACKGROUND_DEFAULT };
-const merged1 = Object.assign(require("_createForOfIteratorHelperLoose").shadows.SHADOW_LOW_HOVER);
-_createForOfIteratorHelperLoose.pipButton = obj2;
-_createForOfIteratorHelperLoose.dismissButton = { right: 8 };
-_createForOfIteratorHelperLoose.backButton = { left: 8 };
-_createForOfIteratorHelperLoose.infoContainer = { justifyContent: "center", alignItems: "center", marginBottom: 8, height: 34 };
-let obj3 = {};
+obj1.zIndex = 5;
+createCacheKey[1] = obj1;
+const merged1 = Object.assign(require("Themes").shadows.SHADOW_LOW_HOVER);
+createCacheKey[2] = { position: "absolute", top: 8, padding: 8, borderRadius: require("Themes").radii.round, borderWidth: 1, borderColor: require("Themes").colors.CONTROL_SECONDARY_BORDER_DEFAULT, tintColor: require("Themes").colors.CONTROL_SECONDARY_TEXT_DEFAULT, backgroundColor: require("Themes").colors.CONTROL_SECONDARY_BACKGROUND_DEFAULT };
+createCacheKey[3] = { right: 8 };
+createCacheKey[4] = { left: 8 };
+createCacheKey[5] = { justifyContent: "center", alignItems: "center", marginBottom: 8, height: 34 };
 const merged2 = Object.assign(StyleSheet.absoluteFillObject);
-_createForOfIteratorHelperLoose.infoContainerGradient = obj3;
-_createForOfIteratorHelperLoose.infoContent = { justifyContent: "center", alignItems: "center", alignSelf: "stretch", marginHorizontal: 4 };
-_createForOfIteratorHelperLoose.actionContainer = { justifyContent: "center", alignItems: "center", width: 48, height: 48, zIndex: 100 };
-let obj4 = { justifyContent: "center", alignItems: "center", width: 32, height: 32, zIndex: 100, borderRadius: require("_createForOfIteratorHelperLoose").radii.round, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BRAND };
-_createForOfIteratorHelperLoose.playPauseButton = obj4;
+createCacheKey[6] = {};
+createCacheKey[7] = { justifyContent: "center", alignItems: "center", alignSelf: "stretch", marginHorizontal: 4 };
+createCacheKey[8] = { justifyContent: "center", alignItems: "center", width: 48, height: 48, zIndex: 100 };
+let obj2 = { position: "absolute", top: 8, padding: 8, borderRadius: require("Themes").radii.round, borderWidth: 1, borderColor: require("Themes").colors.CONTROL_SECONDARY_BORDER_DEFAULT, tintColor: require("Themes").colors.CONTROL_SECONDARY_TEXT_DEFAULT, backgroundColor: require("Themes").colors.CONTROL_SECONDARY_BACKGROUND_DEFAULT };
+let obj3 = {};
+createCacheKey[9] = { justifyContent: "center", alignItems: "center", width: 32, height: 32, zIndex: 100, borderRadius: require("Themes").radii.round, backgroundColor: require("Themes").colors.BACKGROUND_BRAND };
 let obj5 = {};
 const merged3 = Object.assign(StyleSheet.absoluteFillObject);
-obj5["justifyContent"] = "center";
-obj5["alignItems"] = "center";
-_createForOfIteratorHelperLoose.progressBar = obj5;
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-let closure_18 = { code: "function MediaPlaybackPipTsx1(){const{withTiming,visible}=this.__closure;return{opacity:withTiming(visible?1:0,{duration:200})};}" };
+obj5.justifyContent = "center";
+obj5.alignItems = "center";
+createCacheKey[10] = obj5;
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let closure_19 = { code: "function MediaPlaybackPipTsx1(){const{withTiming,visible}=this.__closure;return{opacity:withTiming(visible?1:0,{duration:200})};}" };
+let obj4 = { justifyContent: "center", alignItems: "center", width: 32, height: 32, zIndex: 100, borderRadius: require("Themes").radii.round, backgroundColor: require("Themes").colors.BACKGROUND_BRAND };
 let result = require("get ActivityIndicator").fileFinishedImporting("modules/media_panel/native/MediaPlaybackPip.tsx");
 
 export default function MediaPlaybackPip() {
@@ -240,23 +234,27 @@ export default function MediaPlaybackPip() {
   let closePip;
   let mediaSourceMessage;
   let progress;
-  let tmp = _createForOfIteratorHelperLoose();
-  let obj = isPlaying(closePip[28]);
-  let obj1 = isPlaying(closePip[29]);
-  const mediaPlayerManagerStore = obj.useMediaPlayerManagerStore(obj1.useShallow((isPlaying) => ({ isPlaying: isPlaying.isPlaying, progress: isPlaying.progress, activeMediaPlayerSource: isPlaying.activeMediaPlayerSource, mediaSourceMessage: isPlaying.mediaSourceMessage, closePip: isPlaying.closePip })));
-  isPlaying = mediaPlayerManagerStore.isPlaying;
+  let tmp = createCacheKey();
+  let obj = React;
+  let obj1 = progress(mediaSourceMessage[28]);
+  let obj2 = progress(mediaSourceMessage[29]);
+  const mediaPlayerManagerStore = obj1.useMediaPlayerManagerStore(obj2.useShallow((isPlaying) => ({ isPlaying: isPlaying.isPlaying, progress: isPlaying.progress, activeMediaPlayerSource: isPlaying.activeMediaPlayerSource, mediaSourceMessage: isPlaying.mediaSourceMessage, closePip: isPlaying.closePip })));
+  const isPlaying = mediaPlayerManagerStore.isPlaying;
+  progress = isPlaying;
   ({ progress, activeMediaPlayerSource } = mediaPlayerManagerStore);
+  let callback = activeMediaPlayerSource;
   ({ mediaSourceMessage, closePip } = mediaPlayerManagerStore);
-  let obj2 = isPlaying(closePip[13]);
-  let items = [first];
+  mediaSourceMessage = closePip;
+  const ref = React.useRef(null);
+  const items = [first];
   const items1 = [activeMediaPlayerSource];
-  const stateFromStores = obj2.useStateFromStores(items, () => {
+  const stateFromStores = progress(mediaSourceMessage[13]).useStateFromStores(items, () => {
     let channelId;
-    if (null != activeMediaPlayerSource) {
-      channelId = activeMediaPlayerSource.channelId;
+    if (callback != null) {
+      channelId = tmp.channelId;
     }
-    if (null != activeMediaPlayerSource) {
-      const messageId = activeMediaPlayerSource.messageId;
+    if (callback != null) {
+      const messageId = tmp.messageId;
     }
     let message = null;
     if (null != channelId) {
@@ -270,209 +268,217 @@ export default function MediaPlaybackPip() {
   if (null != stateFromStores) {
     mediaSourceMessage = stateFromStores;
   }
-  let tmp5 = null == mediaSourceMessage;
-  if (!tmp5) {
+  callback = mediaSourceMessage;
+  let hasFlagResult;
+  if (mediaSourceMessage != null) {
     let contentMessage = mediaSourceMessage.getContentMessage();
-    tmp5 = null == contentMessage;
-    const obj4 = contentMessage;
+    if (contentMessage != null) {
+      hasFlagResult = contentMessage.hasFlag(constants.IS_VOICE_MESSAGE);
+    }
   }
-  if (!tmp5) {
-    tmp5 = !obj4.hasFlag(constants.IS_VOICE_MESSAGE);
-  }
-  const React = tmp8;
-  (function useAnalyticsEffects(activeMediaPlayerSource, progress, mediaSourceMessage) {
-    let closure_0 = activeMediaPlayerSource;
-    let closure_1 = progress;
-    let closure_2 = mediaSourceMessage;
-    let _slicedToArray = tmp8.useRef(null);
-    const items = [progress, activeMediaPlayerSource, mediaSourceMessage];
-    const effect = tmp8.useEffect(() => {
-      let tmp = null == ref.current;
-      if (tmp) {
-        tmp = null != closure_0;
+  React = tmp9;
+  progress = activeMediaPlayerSource;
+  callback = progress;
+  callback = obj.useRef(null);
+  const items2 = [progress, activeMediaPlayerSource, mediaSourceMessage];
+  const effect = obj.useEffect(() => {
+    let tmp2 = null == ref.current;
+    if (tmp2) {
+      tmp2 = null != progress;
+    }
+    if (tmp2) {
+      tmp2 = null != callback;
+    }
+    if (tmp2) {
+      tmp2 = null != mediaSourceMessage;
+    }
+    if (tmp2) {
+      const obj = { initialProgress: null, activeMediaPlayerSource: null, message: null };
+      obj[0] = callback;
+      obj[1] = progress;
+      obj[2] = mediaSourceMessage;
+      tmp.current = obj;
+    }
+    let tmp9 = null != tmp.current;
+    if (tmp9) {
+      tmp9 = null != callback;
+    }
+    if (tmp9) {
+      tmp.current.finalProgress = callback;
+    }
+  }, items2);
+  const effect1 = obj.useEffect(() => {
+    let date = new Date();
+    return () => {
+      let activeMediaPlayerSource;
+      let finalProgress;
+      let initialProgress;
+      let message;
+      let current = outer1_3.current;
+      if (current == null) {
+        current = {};
       }
-      if (tmp) {
-        tmp = null != closure_1;
+      ({ activeMediaPlayerSource, message, initialProgress, finalProgress } = current);
+      let attachmentIndex;
+      if (activeMediaPlayerSource != null) {
+        attachmentIndex = activeMediaPlayerSource.attachmentIndex;
       }
-      if (tmp) {
-        tmp = null != closure_2;
-      }
-      if (tmp) {
-        const obj = { initialProgress: closure_1, activeMediaPlayerSource: closure_0, message: closure_2 };
-        ref.current = obj;
-      }
-      let tmp9 = null != ref.current;
-      if (tmp9) {
-        tmp9 = null != closure_1;
-      }
-      if (tmp9) {
-        ref.current.finalProgress = closure_1;
-      }
-    }, items);
-    const effect1 = tmp8.useEffect(() => {
-      let date = new Date();
-      return () => {
-        let activeMediaPlayerSource;
-        let finalProgress;
-        let initialProgress;
-        let message;
-        let current = outer1_3.current;
-        if (null == current) {
-          current = {};
-        }
-        ({ activeMediaPlayerSource, message, initialProgress, finalProgress } = current);
-        let attachmentIndex;
-        if (null != activeMediaPlayerSource) {
-          attachmentIndex = activeMediaPlayerSource.attachmentIndex;
-        }
-        let tmp2 = null;
-        if (null != attachmentIndex) {
-          let tmp3;
-          if (null != message) {
-            const contentMessage = message.getContentMessage();
-            if (null != contentMessage) {
-              tmp3 = contentMessage.attachments[activeMediaPlayerSource.attachmentIndex];
-            }
-          }
-          tmp2 = tmp3;
-        }
-        const obj = {};
-        let messageId;
-        if (null != activeMediaPlayerSource) {
-          messageId = activeMediaPlayerSource.messageId;
-        }
-        obj.message_id = messageId;
-        let id;
-        if (null != message) {
-          id = message.author.id;
-        }
-        obj.sender_user_id = id;
-        let content_type;
-        if (null != tmp2) {
-          content_type = tmp2.content_type;
-        }
-        obj.type = content_type;
-        let hasFlagResult;
-        if (null != message) {
-          const contentMessage1 = message.getContentMessage();
-          if (null != contentMessage1) {
-            hasFlagResult = contentMessage1.hasFlag(outer3_13.IS_VOICE_MESSAGE);
+      let tmp2 = null;
+      if (null != attachmentIndex) {
+        let tmp3;
+        if (message != null) {
+          const contentMessage = message.getContentMessage();
+          if (contentMessage != null) {
+            tmp3 = contentMessage.attachments[activeMediaPlayerSource.attachmentIndex];
           }
         }
-        obj.is_voice_message = hasFlagResult;
-        let duration;
-        if (null != finalProgress) {
-          duration = finalProgress.duration;
+        tmp2 = tmp3;
+      }
+      let messageId;
+      if (activeMediaPlayerSource != null) {
+        messageId = activeMediaPlayerSource.messageId;
+      }
+      const obj = { message_id: messageId, sender_user_id: null, type: null, is_voice_message: null, total_duration_secs: null, pip_playback_start_time_secs: null, pip_playback_end_time_secs: null, pip_opened_timestamp: null, pip_closed_timestamp: null };
+      let id;
+      if (message != null) {
+        id = message.author.id;
+      }
+      obj[1] = id;
+      let content_type;
+      if (tmp2 != null) {
+        content_type = tmp2.content_type;
+      }
+      obj[2] = content_type;
+      let hasFlagResult;
+      if (message != null) {
+        const contentMessage1 = message.getContentMessage();
+        if (contentMessage1 != null) {
+          hasFlagResult = contentMessage1.hasFlag(outer2_13.IS_VOICE_MESSAGE);
         }
-        obj.total_duration_secs = outer3_19(duration);
-        let time;
-        if (null != initialProgress) {
-          time = initialProgress.time;
-        }
-        obj.pip_playback_start_time_secs = outer3_19(time);
-        let time1;
-        if (null != finalProgress) {
-          time1 = finalProgress.time;
-        }
-        obj.pip_playback_end_time_secs = outer3_19(time1);
-        obj.pip_opened_timestamp = date.toISOString();
-        date = new Date();
-        obj.pip_closed_timestamp = date.toISOString();
-        activeMediaPlayerSource(closePip[27]).track(outer3_12.MEDIA_PIP_ENDED, obj);
-      };
-    }, []);
-  })(activeMediaPlayerSource, progress, mediaSourceMessage);
-  const tmp10 = mediaSourceMessage(React.useState(false), 2);
-  first = tmp10[0];
-  let closure_6 = tmp12;
-  const items2 = [first, tmp10[1], isPlaying];
-  let effect = React.useEffect(() => {
+      }
+      obj[3] = hasFlagResult;
+      let duration;
+      if (finalProgress != null) {
+        duration = finalProgress.duration;
+      }
+      let result;
+      if (null != duration) {
+        result = duration / 1000;
+      }
+      obj[4] = result;
+      let time;
+      if (initialProgress != null) {
+        time = initialProgress.time;
+      }
+      let result1;
+      if (null != time) {
+        result1 = time / 1000;
+      }
+      obj[5] = result1;
+      let time1;
+      if (finalProgress != null) {
+        time1 = finalProgress.time;
+      }
+      let result2;
+      if (null != time1) {
+        result2 = time1 / 1000;
+      }
+      obj[6] = result2;
+      obj[7] = date.toISOString();
+      date = new Date();
+      obj[8] = date.toISOString();
+      callback(mediaSourceMessage[27]).track(outer2_12.MEDIA_PIP_ENDED, obj);
+    };
+  }, []);
+  const tmp12 = callback(obj.useState(false), 2);
+  first = tmp12[0];
+  let closure_6 = tmp14;
+  const items3 = [first, tmp12[1], isPlaying];
+  const effect2 = obj.useEffect(() => {
     if (first) {
       const _setTimeout = setTimeout;
       const timeout = setTimeout(() => {
         if (closure_0) {
-          outer1_6(false);
+          callback(false);
         }
       }, 3000);
     }
     return () => clearTimeout(closure_0);
-  }, items2);
-  const dismissPanel = React.useContext(activeMediaPlayerSource(closePip[30])).dismissPanel;
-  const items3 = [dismissPanel, closePip];
-  const callback = React.useCallback(() => {
-    dismissPanel();
-    closePip();
-    activeMediaPlayerSource(closePip[28]).pauseCurrentPlayer();
   }, items3);
-  (function usePlaybackCompletionEffects(progress, callback) {
-    let closure_0 = progress;
-    let closure_1 = callback;
-    let isCompleted;
-    if (null != progress) {
-      isCompleted = progress.isCompleted;
-    }
-    const items = [isCompleted, callback];
-    const effect = tmp8.useEffect(() => {
-      let isCompleted = null != progress;
-      if (isCompleted) {
-        isCompleted = progress.isCompleted;
-      }
-      if (isCompleted) {
-        const _setTimeout = setTimeout;
-        progress = setTimeout(() => {
-          outer1_1();
-        }, 2000);
-      }
-      return () => {
-        clearTimeout(closure_0);
-      };
-    }, items);
-  })(progress, callback);
-  if (!first) {
-    let isCompleted;
-    if (null != progress) {
-      isCompleted = progress.isCompleted;
-    }
-    first = true === isCompleted;
+  const dismissPanel = obj.useContext(callback(tmp4[30])).dismissPanel;
+  const items4 = [dismissPanel, closePip];
+  callback = obj.useCallback(() => {
+    dismissPanel();
+    mediaSourceMessage();
+    callback(mediaSourceMessage[28]).pauseCurrentPlayer();
+  }, items4);
+  let isCompleted;
+  if (progress != null) {
+    isCompleted = progress.isCompleted;
   }
-  const items4 = [isPlaying];
-  const items5 = [isPlaying];
-  const callback1 = React.useCallback(() => {
-    const obj = activeMediaPlayerSource(closePip[28]);
-    if (isPlaying) {
+  const items5 = [isCompleted, callback];
+  const effect3 = obj.useEffect(() => {
+    let isCompleted;
+    if (progress != null) {
+      isCompleted = progress.isCompleted;
+    }
+    if (isCompleted) {
+      const _setTimeout = setTimeout;
+      progress = setTimeout(() => {
+        callback();
+      }, 2000);
+    }
+    return () => {
+      clearTimeout(closure_0);
+    };
+  }, items5);
+  if (!first) {
+    let isCompleted1;
+    if (progress != null) {
+      isCompleted1 = progress.isCompleted;
+    }
+    first = true === isCompleted1;
+  }
+  const items6 = [isPlaying];
+  const items7 = [isPlaying];
+  const callback1 = obj.useCallback(() => {
+    const obj = callback(mediaSourceMessage[28]);
+    if (progress) {
       obj.pauseCurrentPlayer();
-      tmp12(true);
+      tmp14(true);
     } else {
       obj.playCurrentPlayer();
     }
-  }, items4);
-  const items6 = [mediaSourceMessage, activeMediaPlayerSource, !tmp5, first];
-  const memo = React.useMemo(() => {
-    if (isPlaying) {
+  }, items6);
+  const items8 = [mediaSourceMessage, activeMediaPlayerSource, hasFlagResult, first];
+  const memo = obj.useMemo(() => {
+    if (progress) {
       let PlayIcon = tmp2(tmp3[31]).PauseIcon;
+      let tmp4 = tmp3;
     } else {
       PlayIcon = tmp2(tmp3[32]).PlayIcon;
+      tmp4 = tmp3;
     }
-    return outer1_15(PlayIcon, { color: activeMediaPlayerSource(closePip[11]).colors.WHITE, size: "md" });
-  }, items5);
-  const items7 = [mediaSourceMessage, callback, first, !tmp5];
-  const memo1 = React.useMemo(() => outer1_15(outer1_20, { message: mediaSourceMessage, activeMediaPlayerSource, isVoiceMessage: PauseIcon, isControlVisible: first }), items6);
-  const memo2 = React.useMemo(() => outer1_15(outer1_21, { message: mediaSourceMessage, handleClosePip: callback, visible: first, isVoiceMessage: PauseIcon }), items7);
-  const intl = isPlaying(closePip[23]).intl;
+    return outer1_15(PlayIcon, { color: callback(tmp4[11]).colors.WHITE, size: "md" });
+  }, items7);
+  const items9 = [mediaSourceMessage, callback, first, hasFlagResult];
+  const memo1 = obj.useMemo(() => outer1_15(outer1_18, { message: PlayIcon, activeMediaPlayerSource: callback, isVoiceMessage: trackInvite, isControlVisible: first }), items8);
+  const memo2 = obj.useMemo(() => outer1_15(outer1_20, { message: PlayIcon, handleClosePip: callback, visible: first, isVoiceMessage: trackInvite }), items9);
+  const intl = tmp3(tmp4[23]).intl;
   const string = intl.string;
-  const t = isPlaying(closePip[23]).t;
-  if (tmp5) {
-    let stringResult = string(t.RscU7I);
+  const t = tmp3(tmp4[23]).t;
+  if (hasFlagResult) {
+    let stringResult = string(t.AlHqHT);
   } else {
-    stringResult = string(t.AlHqHT);
+    stringResult = string(t.RscU7I);
   }
-  const intl2 = isPlaying(closePip[23]).intl;
+  const intl2 = tmp3(tmp4[23]).intl;
   const string2 = intl2.string;
-  const t2 = isPlaying(closePip[23]).t;
-  if (tmp5) {
-    let string2Result = string2(t2.ZcgDJX);
+  const t2 = tmp3(tmp4[23]).t;
+  if (hasFlagResult) {
+    let string2Result = string2(t2["3XohGn"]);
   } else {
-    string2Result = string2(t2["3XohGn"]);
+    string2Result = string2(t2.ZcgDJX);
   }
   let num = 0;
   if (null != progress) {
@@ -486,47 +492,46 @@ export default function MediaPlaybackPip() {
     style: tmp.container,
     activeOpacity: 1,
     onPress() {
+      let tmp = !progress;
+      if (!progress) {
+        tmp = first;
+      }
       if (!tmp) {
-        tmp12(!first);
+        tmp14(!first);
       }
     },
-    accessible: false
+    accessible: false,
+    children: null
   };
-  const items8 = [memo2, memo1, ];
-  obj = { style: tmp.actionContainer };
-  obj1 = { style: tmp.progressBar, size: 48, width: 2, prefill: num, easing: first.out(first.linear) };
+  const items10 = [memo2, memo1, ];
+  obj = { style: tmp.actionContainer, children: null };
+  obj1 = { style: tmp.progressBar, size: 48, width: 2, prefill: num, easing: null, duration: null, fill: null, rotation: 0, lineCap: "round", ref: null, tintColor: null, backgroundColor: null };
+  obj1[4] = first.out(first.linear);
   let num4 = 0;
   if (isPlaying) {
     num4 = num3;
   }
-  obj1.duration = num4;
+  obj1[5] = num4;
   let num5 = 100;
   if (!isPlaying) {
     num5 = num;
   }
-  obj1.fill = num5;
-  obj1.rotation = 0;
-  obj1.lineCap = "round";
-  obj1.ref = React.useRef(null);
-  const ref = React.useRef(null);
-  const tmp23 = closure_16;
-  const tmp24 = closure_6;
-  const tmp25 = closure_16;
-  const tmp26 = dismissPanel;
-  const tmp27 = closure_15;
-  obj1.tintColor = isPlaying(closePip[12]).useToken(activeMediaPlayerSource(closePip[11]).colors.CONTROL_PRIMARY_BACKGROUND_DEFAULT);
-  const obj8 = isPlaying(closePip[12]);
-  obj1.backgroundColor = isPlaying(closePip[12]).useToken(activeMediaPlayerSource(closePip[11]).colors.BACKGROUND_MOD_MUTED);
-  const items9 = [tmp27(isPlaying(closePip[33]).AnimatedCircularProgress, obj1), ];
-  obj2 = { style: tmp.playPauseButton, onPress: callback1, accessibilityRole: "button" };
+  obj1[6] = num5;
+  obj1[9] = ref;
+  let tmp3Result = tmp3(tmp4[12]);
+  obj1[10] = tmp3Result.useToken(callback(mediaSourceMessage[11]).colors.CONTROL_PRIMARY_BACKGROUND_DEFAULT);
+  tmp3Result = tmp3(tmp4[12]);
+  obj1[11] = tmp3Result.useToken(callback(mediaSourceMessage[11]).colors.BACKGROUND_MOD_MUTED);
+  const items11 = [closure_15(progress(mediaSourceMessage[33]).AnimatedCircularProgress, obj1), ];
+  obj2 = { style: tmp.playPauseButton, onPress: callback1, accessibilityRole: "button", accessibilityLabel: null, children: null };
   if (isPlaying) {
     stringResult = string2Result;
   }
-  obj2.accessibilityLabel = stringResult;
-  obj2.children = memo;
-  items9[1] = closure_15(closure_6, obj2);
-  obj.children = items9;
-  items8[2] = tmp25(tmp26, obj);
-  obj.children = items8;
-  return tmp23(tmp24, obj);
+  obj2[3] = stringResult;
+  obj2[4] = memo;
+  items11[1] = closure_15(closure_6, obj2);
+  obj[1] = items11;
+  items10[2] = closure_16(dismissPanel, obj);
+  obj[4] = items10;
+  return closure_16(closure_6, obj);
 };

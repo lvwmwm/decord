@@ -1,34 +1,42 @@
-// Module ID: 10864
-// Function ID: 84075
+// Module ID: 10888
+// Function ID: 10889
 // Name: computeGlobalSpoilerDisplay
-// Dependencies: [3793, 653, 624, 3838, 2]
-// Exports: useShouldDisplaySpoilerObscurity
+// Dependencies: [3817, 676, 647, 3862, 2]
+// Exports: default, useShouldDisplaySpoilerObscurity
 
-// Module 10864 (computeGlobalSpoilerDisplay)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 10888 (computeGlobalSpoilerDisplay)
+import getUncachedChannelPermissions from "getUncachedChannelPermissions";
 import ME from "ME";
 
-let closure_3;
-let closure_4;
+let c3;
+let c4;
 const require = arg1;
-function computeGlobalSpoilerDisplay(RenderSpoilers, stateFromStores) {
-  if (constants.ALWAYS === RenderSpoilers) {
-    return true;
-  } else if (constants.IF_MODERATOR === RenderSpoilers) {
-    return stateFromStores;
-  } else {
-    const ON_CLICK = constants.ON_CLICK;
-    return false;
-  }
-}
-({ Permissions: closure_3, SpoilerRenderSetting: closure_4 } = ME);
+({ Permissions: c3, SpoilerRenderSetting: c4 } = ME);
 const result = require("defaultAreStatesEqual").fileFinishedImporting("modules/messages/computeGlobalSpoilerDisplay.tsx");
 
-export default computeGlobalSpoilerDisplay;
+export default function computeGlobalSpoilerDisplay(arg0, arg1) {
+  if (constants.ALWAYS === arg0) {
+    return true;
+  } else if (tmp.IF_MODERATOR === arg0) {
+    return arg1;
+  } else {
+    const ON_CLICK = tmp.ON_CLICK;
+    return false;
+  }
+};
 export const useShouldDisplaySpoilerObscurity = function useShouldDisplaySpoilerObscurity(channel) {
   const _require = channel;
-  const items = [_isNativeReflectConstruct];
-  const stateFromStores = _require(624).useStateFromStores(items, () => outer1_2.can(outer1_3.MANAGE_MESSAGES, closure_0));
-  const RenderSpoilers = _require(3838).RenderSpoilers;
-  return !computeGlobalSpoilerDisplay(RenderSpoilers.useSetting(), stateFromStores);
+  const items = [getUncachedChannelPermissions];
+  const stateFromStores = _require(647).useStateFromStores(items, () => outer1_2.can(outer1_3.MANAGE_MESSAGES, closure_0));
+  const RenderSpoilers = _require(3862).RenderSpoilers;
+  const setting = RenderSpoilers.useSetting();
+  let flag = true;
+  if (constants.ALWAYS !== setting) {
+    flag = stateFromStores;
+    if (tmp3.IF_MODERATOR !== setting) {
+      const ON_CLICK = tmp3.ON_CLICK;
+      flag = false;
+    }
+  }
+  return !flag;
 };

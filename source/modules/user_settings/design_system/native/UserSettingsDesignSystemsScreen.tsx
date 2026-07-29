@@ -1,11 +1,11 @@
-// Module ID: 13656
-// Function ID: 104770
+// Module ID: 13677
+// Function ID: 13678
 // Name: SettingsDesignSystemsScreen
-// Dependencies: [31, 7733, 33, 10099, 13657, 2]
+// Dependencies: [19, 7756, 21, 10120, 13678, 2]
 // Exports: default
 
-// Module 13656 (SettingsDesignSystemsScreen)
-import result from "result";
+// Module 13677 (SettingsDesignSystemsScreen)
+import noop from "noop";
 import { MobileSetting } from "MobileSetting";
 import { jsx } from "jsxProd";
 
@@ -15,17 +15,17 @@ const result = require("jsxProd").fileFinishedImporting("modules/user_settings/d
 export default function SettingsDesignSystemsScreen() {
   const node = React.useMemo(() => {
     const items = [, , , , , , , , , , , , , , , ];
-    ({ DESIGN_SYSTEMS_TEXT: arr[0], DESIGN_SYSTEMS_BUTTON: arr[1], DESIGN_SYSTEMS_BUTTON_GROUP: arr[2], DESIGN_SYSTEMS_ROW_BUTTON: arr[3], DESIGN_SYSTEMS_TABLE_ROW: arr[4], DESIGN_SYSTEMS_ALERT_MODAL: arr[5], DESIGN_SYSTEMS_SHADOWS: arr[6], DESIGN_SYSTEM_SEGMENTED_CONTROL: arr[7], DESIGN_SYSTEMS_TABS: arr[8], DESIGN_SYSTEM_BACKDROP: arr[9], DESIGN_SYSTEMS_TOOLTIP: arr[10], DESIGN_SYSTEMS_COACHMARK: arr[11], DESIGN_SYSTEM_FORM_PRIMITIVES: arr[12], DESIGN_SYSTEMS_TEXT_INPUT: arr[13], DESIGN_SYSTEM_PILE: arr[14], DESIGN_SYSTEM_HAPTICS: arr[15] } = outer1_4);
+    ({ DESIGN_SYSTEMS_TEXT: arr[0], DESIGN_SYSTEMS_BUTTON: arr[1], DESIGN_SYSTEMS_BUTTON_GROUP: arr[2], DESIGN_SYSTEMS_ROW_BUTTON: arr[3], DESIGN_SYSTEMS_TABLE_ROW: arr[4], DESIGN_SYSTEMS_ALERT_MODAL: arr[5], DESIGN_SYSTEMS_SHADOWS: arr[6], DESIGN_SYSTEM_SEGMENTED_CONTROL: arr[7], DESIGN_SYSTEMS_TABS: arr[8], DESIGN_SYSTEM_BACKDROP: arr[9], DESIGN_SYSTEMS_TOOLTIP: arr[10], DESIGN_SYSTEMS_COACHMARK: arr[11], DESIGN_SYSTEM_FORM_PRIMITIVES: arr[12], DESIGN_SYSTEMS_TEXT_INPUT: arr[13], DESIGN_SYSTEM_PILE: arr[14], DESIGN_SYSTEM_HAPTICS: arr[15] } = constants);
     const sections = [{ label: "Components", settings: items }, , , ];
     const items2 = [, , , , ];
-    ({ DESIGN_SYSTEM_SHEETS: arr3[0], DESIGN_SYSTEM_STACK: arr3[1], DESIGN_SYSTEMS_CONTEXT_MENU: arr3[2], DESIGN_SYSTEMS_TOAST: arr3[3], DESIGN_SYSTEMS_MODAL: arr3[4] } = outer1_4);
+    ({ DESIGN_SYSTEM_SHEETS: arr3[0], DESIGN_SYSTEM_STACK: arr3[1], DESIGN_SYSTEMS_CONTEXT_MENU: arr3[2], DESIGN_SYSTEMS_TOAST: arr3[3], DESIGN_SYSTEMS_MODAL: arr3[4] } = constants);
     sections[1] = { label: "In Progress", settings: items2 };
     const items3 = [, ];
-    ({ DESIGN_SYSTEMS_BACKGROUND_BLUR_VIEW: arr4[0], DESIGN_SYSTEMS_EXPERIMENTAL_BUTTONS: arr4[1] } = outer1_4);
+    ({ DESIGN_SYSTEMS_BACKGROUND_BLUR_VIEW: arr4[0], DESIGN_SYSTEMS_EXPERIMENTAL_BUTTONS: arr4[1] } = constants);
     sections[2] = { label: "Experimental", settings: items3 };
-    const items4 = [outer1_4.DESIGN_SYSTEMS_LEGACY_BUTTON];
+    const items4 = [constants.DESIGN_SYSTEMS_LEGACY_BUTTON];
     sections[3] = { label: "Legacy Audit", settings: items4 };
-    return outer1_0(outer1_2[3]).createList({ sections });
+    return callback(table[3]).createList({ sections });
   }, []);
-  return jsx(importDefault(13657), { node });
+  return jsx(importDefault(13678), { node });
 };

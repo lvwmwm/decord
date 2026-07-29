@@ -1,18 +1,18 @@
-// Module ID: 11341
-// Function ID: 88012
+// Module ID: 11365
+// Function ID: 11366
 // Name: ChannelIcon
-// Dependencies: [57, 31, 1838, 33, 4165, 689, 4673, 4628, 11332, 5009, 4133, 11319, 11320, 4355, 5198, 4161, 2]
+// Dependencies: [32, 19, 1862, 21, 4189, 712, 4695, 4650, 11356, 5031, 4157, 11343, 11344, 4380, 5220, 4185, 2]
 // Exports: default
 
-// Module 11341 (ChannelIcon)
+// Module 11365 (ChannelIcon)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
-import closure_5 from "_createForOfIteratorHelperLoose";
+import noop from "noop";
+import createGuildRecordFromRust from "createGuildRecordFromRust";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
 let closure_6;
-let closure_7;
+let error;
 const require = arg1;
 class ChannelIcon {
   constructor(arg0) {
@@ -24,32 +24,26 @@ class ChannelIcon {
     if (num === undefined) {
       num = 32;
     }
-    tmp = c8();
+    tmp2 = closure_0;
+    tmp3 = closure_2;
+    tmp = jsx();
     TextIcon = require("TextIcon").TextIcon;
     if (null != channel) {
-      tmp2 = c5;
-      tmp4 = closure_0;
-      tmp5 = closure_2;
-      num2 = 7;
-      guild = c5.getGuild(channel.getGuildId());
-      obj = require("getThreadChannelIcon");
-      TextIcon2 = obj.getChannelIconComponentWithGuild(channel, guild);
-      if (null == TextIcon2) {
-        tmp6 = closure_0;
-        tmp7 = closure_2;
+      tmp4 = createGuildRecordFromRust;
+      guild = createGuildRecordFromRust.getGuild(channel.getGuildId());
+      tmp2Result = require("getChannelIcon");
+      TextIcon2 = tmp2Result.getChannelIconComponentWithGuild(channel, guild);
+      if (TextIcon2 == null) {
         TextIcon2 = require("TextIcon").TextIcon;
       }
       TextIcon = TextIcon2;
     }
-    obj = {};
-    obj1 = {};
-    obj1.size = size;
-    obj1.color = "interactive-text-default";
-    tmp8 = require("styles");
-    obj.icon = jsx(TextIcon, obj1);
-    obj.wrapperStyle = tmp.channelIconWrapper;
-    obj.wrapperSize = num;
-    return jsx(tmp8, obj);
+    obj = { icon: null, wrapperStyle: null, wrapperSize: null };
+    tmp6 = require("styles");
+    obj[0] = jsx(TextIcon, { size, color: "interactive-text-default" });
+    obj[1] = tmp.channelIconWrapper;
+    obj[2] = num;
+    return jsx(tmp6, obj);
   }
 }
 function ChannelListItem(arg0) {
@@ -59,20 +53,20 @@ function ChannelListItem(arg0) {
   let totalCount;
   ({ channel, index } = arg0);
   ({ totalCount, onPress } = arg0);
-  let obj = { onPress };
-  obj = { lineClamp: 1, variant: "text-md/semibold", color: "mobile-text-heading-primary", children: importDefault(4355)(channel) };
-  obj.label = callback(require(4161) /* Text */.Text, obj);
-  obj.icon = callback(ChannelIcon, { channel });
-  obj.start = 0 === index;
-  obj.end = index === totalCount - 1;
-  return callback(require(5198) /* TableRowInner */.TableRow, obj, channel.id);
+  const obj = { onPress, label: null, icon: null, start: null, end: null };
+  obj[1] = callback(require(4185) /* Text */.Text, { lineClamp: 1, variant: "text-md/semibold", color: "mobile-text-heading-primary", children: importDefault(4380)(channel) });
+  obj[2] = callback(ChannelIcon, { channel });
+  obj[3] = 0 === index;
+  obj[4] = index === totalCount - 1;
+  return callback(require(5220) /* TableRowInner */.TableRow, obj, channel.id);
 }
-({ jsx: closure_6, jsxs: closure_7 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_MOD_SUBTLE };
-_createForOfIteratorHelperLoose.channelIconWrapper = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/app_launcher/native/options/channel/AppLauncherChannelListActionSheet.tsx");
+({ jsx: closure_6, jsxs: error } = jsxProd);
+const AppLauncherChannelListActionSheet = "AppLauncherChannelListActionSheet";
+createCacheKey = { channelIconWrapper: null };
+createCacheKey = { backgroundColor: require("Themes").colors.BACKGROUND_MOD_SUBTLE };
+createCacheKey[0] = createCacheKey;
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+const result = require("createGuildRecordFromRust").fileFinishedImporting("modules/app_launcher/native/options/channel/AppLauncherChannelListActionSheet.tsx");
 
 export default function AppLauncherChannelListActionSheet(channel) {
   let onActionSheetDismiss;
@@ -80,57 +74,58 @@ export default function AppLauncherChannelListActionSheet(channel) {
   ({ onChannelPress: require, onActionSheetDismiss } = channel);
   channel = channel.channel;
   const option = channel.option;
-  function handleChannelPress(channel) {
-    callback({ channel: channel.channel });
-    onActionSheetDismiss(channel[10]).hideActionSheet("AppLauncherChannelListActionSheet");
-    onActionSheetDismiss();
-  }
+  let first;
+  let createGuildRecordFromRust;
+  let ref;
+  let first1;
+  let closure_8;
   const tmp = option(first.useState(""), 2);
   first = tmp[0];
-  let closure_5 = tmp[1];
-  const ref = first.useRef(null);
+  createGuildRecordFromRust = tmp[1];
+  ref = first.useRef(null);
   const tmp4 = option(first.useState([]), 2);
-  const first1 = tmp4[0];
-  let closure_8 = tmp4[1];
+  first1 = tmp4[0];
+  closure_8 = tmp4[1];
   const items = [first, channel, option];
   const effect = first.useEffect(() => {
     let obj = onActionSheetDismiss(channel[9]);
     obj = { query: first, channel, channelTypes: option.channelTypes, limit: null, allowSnowflake: true };
-    callback3(obj.queryApplicationCommandChannelResults(obj).channels);
+    callback2(obj.queryApplicationCommandChannelResults(obj).channels);
   }, items);
-  let obj = { onDismiss: onActionSheetDismiss, option };
+  let obj = { onDismiss: onActionSheetDismiss, option, children: null };
   obj = {
     onChange(str) {
-      callback2(str.toLowerCase());
+      callback(str.toLowerCase());
       const current = ref.current;
-      if (null != current) {
+      if (current != null) {
         current.scrollToOffset({ offset: 0, animated: false });
       }
     }
   };
   const items1 = [ref(require(channel[12]).AppLauncherListSearchBar, obj), ];
   if (0 === first1.length) {
-    let tmp10 = ref(require(channel[12]).AppLauncherListEmptyState, {});
+    let tmp9Result = tmp9(tmp7(tmp8[12]).AppLauncherListEmptyState, {});
   } else {
-    obj = {
-      ref,
-      data: first1,
-      renderItem(index) {
-          const item = index.item;
-          return ref(outer1_10, {
-            channel: item,
-            index: index.index,
-            totalCount: first1.length,
-            onPress() {
-              outer1_9({ channel: item });
-            }
-          });
+    obj = { ref: null, data: null, renderItem: null };
+    obj[0] = ref;
+    obj[1] = first1;
+    obj[2] = function renderItem(index) {
+      const item = index.item;
+      return ref(outer1_11, {
+        channel: item,
+        index: index.index,
+        totalCount: first1.length,
+        onPress() {
+          item({ channel: item });
+          outer1_1(outer1_2[10]).hideActionSheet(outer1_8);
+          outer1_1();
         }
+      });
     };
-    tmp10 = ref(require(channel[12]).AppLauncherList, obj);
+    tmp9Result = tmp9(tmp7(tmp8[12]).AppLauncherList, obj);
   }
-  items1[1] = tmp10;
-  obj.children = items1;
+  items1[1] = tmp9Result;
+  obj[2] = items1;
   return first1(require(channel[11]).AppLauncherCommandOptionActionSheet, obj);
 };
 export const APP_LAUNCHER_CHANNEL_LIST_ACTION_SHEET_KEY = "AppLauncherChannelListActionSheet";

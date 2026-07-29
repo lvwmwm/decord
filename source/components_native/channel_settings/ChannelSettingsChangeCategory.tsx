@@ -1,326 +1,293 @@
-// Module ID: 15645
-// Function ID: 120479
-// Name: _isNativeReflectConstruct
-// Dependencies: [57, 830, 6, 7, 15, 17, 18, 31, 1348, 5105, 1838, 3793, 3802, 1850, 653, 33, 4165, 689, 5106, 11487, 3798, 5083, 4505, 1212, 4355, 5198, 5536, 7611, 4576, 4161, 3877, 566, 1456, 44, 2]
+// Module ID: 15680
+// Function ID: 15681
+// Name: shouldComponentUpdate
+// Dependencies: [32, 853, 19, 1372, 5127, 1862, 3817, 3826, 1874, 676, 21, 4189, 712, 3901, 5128, 11511, 3822, 5105, 4528, 1236, 4380, 5220, 5554, 7634, 4598, 4185, 589, 1480, 38, 2]
 // Exports: default
 
-// Module 15645 (_isNativeReflectConstruct)
+// Module 15680 (shouldComponentUpdate)
 import _slicedToArray from "_slicedToArray";
 import _toArray from "_toArray";
-import _inherits from "_inherits";
-import result from "result";
-import closure_8 from "jsxProd";
-import closure_9 from "_createForOfIteratorHelperLoose";
-import getFlattenedChannelList from "getFlattenedChannelList";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_12 from "_isNativeReflectConstruct";
-import closure_13 from "_createForOfIteratorHelperLoose";
-import closure_14 from "_isNativeReflectConstruct";
-import closure_15 from "_isNativeReflectConstruct";
-import closure_16 from "_isNativeReflectConstruct";
+import ensureGuildLoaded from "ensureGuildLoaded";
+import setIndex from "setIndex";
+import createGuildRecordFromRust from "createGuildRecordFromRust";
+import getUncachedChannelPermissions from "getUncachedChannelPermissions";
+import upsertRelationship from "upsertRelationship";
+import mergeGuildAvatar from "mergeGuildAvatar";
 import { Permissions } from "ME";
-import jsxProd from "invariant";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import importAllResult from "initialize";
+import jsxProd from "TableRowInner";
+import createCacheKey from "createCacheKey";
+import importAllResult from "getSystemLocale";
 
-let closure_18;
-let closure_19;
+let closure_14;
+let map1;
 const require = arg1;
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
-  }
-  const result = _isNativeReflectConstruct();
-}
-({ jsx: closure_18, jsxs: closure_19 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { flex: 1, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWER, paddingTop: require("_createForOfIteratorHelperLoose").space.PX_16 };
-_createForOfIteratorHelperLoose.screenContainer = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.stackPadding = { paddingHorizontal: require("_createForOfIteratorHelperLoose").modules.mobile.TABLE_ROW_PADDING };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createLegacyClassComponentStyles(_createForOfIteratorHelperLoose);
-let tmp4 = ((Component) => {
-  class ChannelSettingsChangeCategory {
-    constructor(arg0) {
-      self = this;
-      tmp = outer1_6(this, getGuildId);
-      items = [];
-      items[0] = Component;
-      obj = outer1_9(getGuildId);
-      tmp2 = outer1_8;
-      if (outer1_22()) {
-        tmp4 = globalThis;
-        _Reflect = Reflect;
-        tmp5 = outer1_9;
-        constructResult = Reflect.construct(obj, items, outer1_9(self).constructor);
-      } else {
-        constructResult = obj.apply(self, items);
+({ jsx: map1, jsxs: closure_14 } = jsxProd);
+createCacheKey = { screenContainer: null, stackPadding: null };
+createCacheKey = { flex: 1, backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOWER, paddingTop: require("Themes").space.PX_16 };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { paddingHorizontal: require("Themes").modules.mobile.TABLE_ROW_PADDING };
+createCacheKey = createCacheKey.createLegacyClassComponentStyles(createCacheKey);
+const Component = importAllResult.Component;
+class ChannelSettingsChangeCategory extends Component {
+  constructor(arg0) {
+    tmp3 = new ChannelSettingsChangeCategory(global, tmp2, tmp);
+    // ThrowIfThisInitialized (0x7c)
+    channel = global.channel;
+    getGuildId = createGuildRecordFromRust.getGuild(channel.getGuildId());
+    channel2 = global.channel;
+    obj = { category: null, categories: null, submitting: false };
+    categories = setIndex.getCategories(channel2.getGuildId());
+    obj[0] = ensureGuildLoaded.getChannel(global.channel.parent_id);
+    _categories = categories._categories;
+    mapped = _categories.map((channel) => channel.channel);
+    obj[1] = mapped.filter((id) => {
+      let canResult = "null" === id.id;
+      if (canResult) {
+        canResult = outer1_9.can(outer1_12.MANAGE_CHANNELS, closure_0);
       }
-      tmp2Result = tmp2(self, constructResult);
-      channel = Component.channel;
-      getGuildId = outer1_13.getGuild(channel.getGuildId());
-      channel2 = Component.channel;
-      obj = {};
-      categories = outer1_12.getCategories(channel2.getGuildId());
-      obj.category = outer1_11.getChannel(Component.channel.parent_id);
-      _categories = categories._categories;
-      mapped = _categories.map((channel) => channel.channel);
-      obj.categories = mapped.filter((id) => {
-        let canResult = "null" === id.id;
-        if (canResult) {
-          canResult = outer2_14.can(outer2_17.MANAGE_CHANNELS, closure_0);
+      if (!canResult) {
+        let canResult1 = outer1_9.can(outer1_12.MANAGE_CHANNELS, id);
+        if (canResult1) {
+          canResult1 = outer1_9.can(outer1_12.VIEW_CHANNEL, id);
         }
-        if (!canResult) {
-          let canResult1 = outer2_14.can(outer2_17.MANAGE_CHANNELS, id);
-          if (canResult1) {
-            canResult1 = outer2_14.can(outer2_17.VIEW_CHANNEL, id);
-          }
-          canResult = canResult1;
-        }
-        return canResult;
-      });
-      obj.submitting = false;
-      tmp2Result.state = obj;
-      return tmp2Result;
+        canResult = canResult1;
+      }
+      return canResult;
+    });
+    tmp3.state = obj;
+    return tmp3;
+  }
+}
+const prototype = ChannelSettingsChangeCategory.prototype;
+prototype["shouldComponentUpdate"] = function shouldComponentUpdate() {
+  return !this.state.submitting;
+};
+prototype["handleSetCategory"] = function handleSetCategory(id) {
+  const self = this;
+  let _require = id;
+  function saveUpdates() {
+    if (null == guildId) {
+      const _Error = Error;
+      const error = new Error("ChannelSettingsChangeCategory.handleSetCategory: Invalid guild_id");
+      throw error;
+    } else {
+      const obj = channel(channel[17]);
+      return channel(channel[17]).batchChannelUpdate(tmp, setIndex).then(() => arr.pop());
     }
   }
-  callback2(ChannelSettingsChangeCategory, Component);
-  let obj = {
-    key: "shouldComponentUpdate",
-    value() {
-      return !this.state.submitting;
+  const props = this.props;
+  let channel = props.channel;
+  const navigation = props.navigation;
+  let obj = obj1;
+  channel = obj1.getChannel(id);
+  const guildId = channel.getGuildId();
+  if (null == guildId) {
+    const _Error2 = Error;
+    let error = new Error("ChannelSettingsChangeCategory.handleSetCategory: Invalid guild_id");
+    throw error;
+  } else {
+    let tmp3 = null;
+    if ("null" !== id) {
+      tmp3 = id;
     }
-  };
-  let items = [obj, , , , ];
-  obj = {
-    key: "handleSetCategory",
-    value(channelId) {
-      const self = this;
-      let closure_0 = channelId;
-      function saveUpdates() {
+    _require = tmp3;
+    const categories = store.getCategories(channel.getGuildId());
+    let arr = channel(channel[14])(categories._categories, categories, (channel) => channel.channel.type === channel.type);
+    const found = arr.find((channel) => channel.channel.id === channel.id);
+    if (null == found) {
+      let _Error = Error;
+      const error1 = new Error("ChannelSettingsChangeCategory.handleSetCategory: Could not find original channel.");
+      throw error1;
+    } else {
+      obj = {};
+      const _categories = categories._categories;
+      const item = _categories.forEach((channel) => {
+        const items = [];
+        obj[channel.channel.id] = items;
+        return items;
+      });
+      const item1 = arr.forEach((channel) => {
+        let tmp = channel.channel.id !== channel.id;
+        if (tmp) {
+          const _String = String;
+          let arr = obj[String(undefined, channel.channel.parent_id)];
+          arr = undefined;
+          if (arr != null) {
+            arr = arr.push(channel);
+          }
+          tmp = arr;
+        }
+        return tmp;
+      });
+      let _String = String;
+      arr = obj[String(undefined, tmp3)].push(found);
+      const arr3 = obj[String(undefined, tmp3)];
+      const tmp28 = tmp6(tmp7[14])(categories._categories, obj);
+      obj = { oldOrdering: null, newOrdering: null, idGetter: null, existingPositionGetter: null };
+      obj[0] = arr;
+      obj[1] = tmp28;
+      obj[2] = function idGetter(channel) {
+        return channel.channel.id;
+      };
+      obj[3] = function existingPositionGetter(channel) {
+        return channel.channel.position;
+      };
+      const result = _require(tmp7[15]).calculatePositionDeltas(obj);
+      store = result;
+      if (result.length > 0) {
+        const found1 = result.find((id) => {
+          let flag = id.id === channel.id;
+          if (flag) {
+            id.parent_id = closure_0;
+            let ensureGuildLoaded = id;
+            flag = true;
+          }
+          return flag;
+        });
+      } else {
+        obj1 = { id: null, parent_id: null };
+        obj1[0] = channel.id;
+        obj1[1] = tmp3;
+        arr = result.push(obj1);
+      }
+      let obj6 = _require(tmp7[15]);
+      let createGuildRecordFromRust = navigation(tmp7[16]).areChannelsLocked(channel, channel);
+      const obj3 = navigation(tmp7[16]);
+      let getUncachedChannelPermissions = navigation(tmp7[16]).areChannelsLocked(channel, obj.getChannel(channel.parent_id));
+      self.setState({ submitting: true }, () => {
+        if (null != channel) {
+          if (getUncachedChannelPermissions) {
+            if (!createGuildRecordFromRust) {
+              let obj = channel(channel[18]);
+              obj = { title: null, body: null, confirmText: null, cancelText: null, onConfirm: null, onCancel: null };
+              const intl = id(channel[19]).intl;
+              obj[0] = intl.string(id(channel[19]).t.YWMtRe);
+              const intl2 = id(channel[19]).intl;
+              obj = { channelName: null, categoryName: null };
+              const obj4 = id(channel[20]);
+              obj[0] = obj4.computeChannelName(channel, outer1_11, saveUpdates, true);
+              obj[1] = id(channel[20]).computeChannelName(tmp, outer1_11, saveUpdates);
+              obj[1] = intl2.format(id(channel[19]).t["iKW+jY"], obj);
+              const intl3 = id(channel[19]).intl;
+              obj[2] = intl3.string(id(channel[19]).t.eW8Gy4);
+              const intl4 = id(channel[19]).intl;
+              obj[3] = intl4.string(id(channel[19]).t.s4uM3b);
+              obj[4] = function onConfirm() {
+                ensureGuildLoaded.lock_permissions = true;
+                if (null == _slicedToArray) {
+                  const _Error = Error;
+                  const error = new Error("ChannelSettingsChangeCategory.handleSetCategory: Invalid guild_id");
+                  throw error;
+                } else {
+                  const obj = outer1_1(outer1_3[17]);
+                  outer1_1(outer1_3[17]).batchChannelUpdate(tmp, setIndex).then(() => arr.pop());
+                }
+              };
+              obj[5] = saveUpdates;
+              obj.show(obj);
+              const obj5 = id(channel[20]);
+            }
+          }
+        }
         if (null == guildId) {
-          const _Error = Error;
-          const error = new Error("ChannelSettingsChangeCategory.handleSetCategory: Invalid guild_id");
+          let _Error = Error;
+          let error = new Error("ChannelSettingsChangeCategory.handleSetCategory: Invalid guild_id");
           throw error;
         } else {
-          const obj = outer2_1(outer2_3[21]);
-          return outer2_1(outer2_3[21]).batchChannelUpdate(guildId, result).then(() => outer1_2.pop());
+          const obj6 = channel(channel[17]);
+          channel(channel[17]).batchChannelUpdate(tmp24, setIndex).then(() => arr.pop());
+          const batchChannelUpdateResult = channel(channel[17]).batchChannelUpdate(tmp24, setIndex);
         }
-      }
-      const props = this.props;
-      let channel = props.channel;
-      const navigation = props.navigation;
-      channel = outer1_11.getChannel(channelId);
-      const guildId = channel.getGuildId();
-      if (null == guildId) {
-        const _Error2 = Error;
-        let error = new Error("ChannelSettingsChangeCategory.handleSetCategory: Invalid guild_id");
-        throw error;
-      } else {
-        let tmp3 = null;
-        if ("null" !== channelId) {
-          tmp3 = channelId;
-        }
-        closure_0 = tmp3;
-        const categories = outer1_12.getCategories(channel.getGuildId());
-        let arr = outer1_1(outer1_3[18])(categories._categories, categories, (channel) => channel.channel.type === channel.type);
-        const found = arr.find((channel) => channel.channel.id === channel.id);
-        if (null == found) {
-          let _Error = Error;
-          const error1 = new Error("ChannelSettingsChangeCategory.handleSetCategory: Could not find original channel.");
-          throw error1;
-        } else {
-          let obj = {};
-          const _categories = categories._categories;
-          const item = _categories.forEach((channel) => {
-            const items = [];
-            obj[channel.channel.id] = items;
-            return items;
-          });
-          const item1 = arr.forEach((channel) => {
-            let tmp = channel.channel.id !== channel.id;
-            if (tmp) {
-              const _String = String;
-              let arr;
-              arr = obj[String(undefined, channel.channel.parent_id)];
-              if (null != arr) {
-                arr = arr.push(channel);
-              }
-              tmp = arr;
-            }
-            return tmp;
-          });
-          let _String = String;
-          arr = obj[String(undefined, tmp3)].push(found);
-          const arr3 = obj[String(undefined, tmp3)];
-          const tmp32 = outer1_1(outer1_3[18])(categories._categories, obj);
-          obj = {
-            oldOrdering: arr,
-            newOrdering: tmp32,
-            idGetter(channel) {
-                  return channel.channel.id;
-                },
-            existingPositionGetter(channel) {
-                  return channel.channel.position;
-                }
-          };
-          const result = ChannelSettingsChangeCategory(outer1_3[19]).calculatePositionDeltas(obj);
-          if (result.length > 0) {
-            const found1 = result.find((id) => {
-              let flag = id.id === channel.id;
-              if (flag) {
-                id.parent_id = closure_0;
-                let _inherits = id;
-                flag = true;
-              }
-              return flag;
-            });
-          } else {
-            obj = { id: channel.id, parent_id: tmp3 };
-            arr = result.push(obj);
-          }
-          let obj1 = outer1_2(outer1_3[20]);
-          let closure_8 = obj1.areChannelsLocked(channel, channel);
-          const obj6 = ChannelSettingsChangeCategory(outer1_3[19]);
-          let closure_9 = outer1_2(outer1_3[20]).areChannelsLocked(channel, outer1_11.getChannel(channel.parent_id));
-          obj1 = { submitting: true };
-          self.setState(obj1, () => {
-            if (null != channel) {
-              if (closure_9) {
-                if (!closure_8) {
-                  let obj = outer2_1(outer2_3[22]);
-                  obj = {};
-                  const intl = ChannelSettingsChangeCategory(outer2_3[23]).intl;
-                  obj.title = intl.string(ChannelSettingsChangeCategory(outer2_3[23]).t.YWMtRe);
-                  const intl2 = ChannelSettingsChangeCategory(outer2_3[23]).intl;
-                  obj = {};
-                  const obj4 = ChannelSettingsChangeCategory(outer2_3[24]);
-                  obj.channelName = obj4.computeChannelName(channel, outer2_16, outer2_15, true);
-                  obj.categoryName = ChannelSettingsChangeCategory(outer2_3[24]).computeChannelName(channel, outer2_16, outer2_15);
-                  obj.body = intl2.format(ChannelSettingsChangeCategory(outer2_3[23]).t["iKW+jY"], obj);
-                  const intl3 = ChannelSettingsChangeCategory(outer2_3[23]).intl;
-                  obj.confirmText = intl3.string(ChannelSettingsChangeCategory(outer2_3[23]).t.eW8Gy4);
-                  const intl4 = ChannelSettingsChangeCategory(outer2_3[23]).intl;
-                  obj.cancelText = intl4.string(ChannelSettingsChangeCategory(outer2_3[23]).t.s4uM3b);
-                  obj.onConfirm = function onConfirm() {
-                    outer1_6.lock_permissions = true;
-                    outer1_10();
-                  };
-                  obj.onCancel = saveUpdates;
-                  obj.show(obj);
-                  const obj5 = ChannelSettingsChangeCategory(outer2_3[24]);
-                }
-              }
-            }
-            saveUpdates();
-          });
-        }
-      }
+      });
     }
-  };
-  items[1] = obj;
-  obj = {
-    key: "renderCategory",
-    value(label) {
-      const self = this;
-      let closure_1 = label;
-      return outer1_18(ChannelSettingsChangeCategory(outer1_3[25]).TableRow, {
-        label: label.name,
-        onPress() {
-          return self.handleSetCategory(label.id);
-        }
-      }, label.id);
+    tmp6 = channel;
+  }
+};
+prototype["renderCategory"] = function renderCategory(label) {
+  const self = this;
+  const _require = label;
+  return callback3(_require(5220).TableRow, {
+    label: label.name,
+    onPress() {
+      return self.handleSetCategory(label.id);
     }
-  };
-  items[2] = obj;
-  items[3] = {
-    key: "renderCategories",
-    value() {
-      const self = this;
-      let arr = outer1_5(this.state.categories);
-      const substr = arr.slice(0);
-      const category = this.state.category;
+  }, label.id);
+};
+prototype["renderCategories"] = function renderCategories() {
+  const self = this;
+  let arr = callback2(this.state.categories);
+  const substr = arr.slice(0);
+  const category = this.state.category;
+  if (null != category) {
+    substr.splice(substr.indexOf(category), 1);
+  }
+  let tmp2 = null != substr[0];
+  if (tmp2) {
+    tmp2 = "null" === substr[0].id;
+  }
+  if (tmp2) {
+    arr = substr.shift();
+  }
+  const mapped = substr.map(self.renderCategory, self);
+  let tmp4 = null;
+  if (mapped.length > 0) {
+    const obj = { hasIcons: false, children: null };
+    obj[1] = mapped;
+    tmp4 = callback3(require(5554) /* TableRowGroupTitle */.TableRowGroup, obj);
+  }
+  return tmp4;
+};
+prototype["render"] = function render() {
+  let self = this;
+  self = this;
+  const category = this.state.category;
+  const first = callback(this.state.categories, 1)[0];
+  const tmp2 = createCacheKey(this.context);
+  let obj = { style: tmp2.screenContainer, children: null };
+  obj = { style: tmp2.stackPadding, spacing: null, children: null };
+  obj[1] = self(712).space.PX_24;
+  const intl = first(1236).intl;
+  if (null != category) {
+    let name = category.name;
+  } else {
+    const intl2 = tmp4(1236).intl;
+    name = intl2.string(tmp4(1236).t.GSfOoo);
+  }
+  obj = { variant: "text-md/medium", color: "text-muted", children: intl.formatToPlainString(first(1236).t.OqccVl, { categoryName: name }) };
+  const items = [closure_13(first(4185).Text, obj), , ];
+  let tmp3Result = null;
+  if (null != first) {
+    tmp3Result = null;
+    if ("null" === first.id) {
+      tmp3Result = null;
       if (null != category) {
-        substr.splice(substr.indexOf(category), 1);
+        const obj1 = { hasIcons: false, children: null };
+        const obj2 = { label: null, onPress: null };
+        obj2[0] = first.name;
+        obj2[1] = function onPress() {
+          return self.handleSetCategory(first.id);
+        };
+        obj1[1] = tmp3(tmp4(5220).TableRow, obj2, first.id);
+        tmp3Result = tmp3(tmp4(5554).TableRowGroup, obj1);
       }
-      let tmp2 = null != substr[0];
-      if (tmp2) {
-        tmp2 = "null" === substr[0].id;
-      }
-      if (tmp2) {
-        arr = substr.shift();
-      }
-      const mapped = substr.map(self.renderCategory, self);
-      let tmp4 = null;
-      if (mapped.length > 0) {
-        const obj = { hasIcons: false, children: mapped };
-        tmp4 = outer1_18(ChannelSettingsChangeCategory(outer1_3[26]).TableRowGroup, obj);
-      }
-      return tmp4;
     }
-  };
-  items[4] = {
-    key: "render",
-    value() {
-      let self = this;
-      self = this;
-      const category = this.state.category;
-      const first = outer1_4(this.state.categories, 1)[0];
-      const tmp2 = outer1_20(this.context);
-      let obj = { style: tmp2.screenContainer };
-      obj = { style: tmp2.stackPadding, spacing: outer1_1(outer1_3[17]).space.PX_24 };
-      obj = { variant: "text-md/medium", color: "text-muted" };
-      const intl = ChannelSettingsChangeCategory(outer1_3[23]).intl;
-      const obj1 = {};
-      if (null != category) {
-        let name = category.name;
-      } else {
-        const intl2 = ChannelSettingsChangeCategory(outer1_3[23]).intl;
-        name = intl2.string(ChannelSettingsChangeCategory(outer1_3[23]).t.GSfOoo);
-      }
-      obj1.categoryName = name;
-      obj.children = intl.formatToPlainString(ChannelSettingsChangeCategory(outer1_3[23]).t.OqccVl, obj1);
-      const items = [outer1_18(ChannelSettingsChangeCategory(outer1_3[29]).Text, obj), , ];
-      let tmp7 = null;
-      if (null != first) {
-        tmp7 = null;
-        if ("null" === first.id) {
-          tmp7 = null;
-          if (null != category) {
-            const obj2 = { hasIcons: false };
-            const obj3 = {
-              label: first.name,
-              onPress() {
-                      return self.handleSetCategory(first.id);
-                    }
-            };
-            obj2.children = outer1_18(ChannelSettingsChangeCategory(outer1_3[25]).TableRow, obj3, first.id);
-            tmp7 = outer1_18(ChannelSettingsChangeCategory(outer1_3[26]).TableRowGroup, obj2);
-          }
-        }
-      }
-      items[1] = tmp7;
-      items[2] = self.renderCategories();
-      obj.children = items;
-      obj.children = outer1_19(ChannelSettingsChangeCategory(outer1_3[28]).Stack, obj);
-      return outer1_18(ChannelSettingsChangeCategory(outer1_3[27]).Form, obj);
-    }
-  };
-  return callback(ChannelSettingsChangeCategory, items);
-})(importAllResult.Component);
-let closure_21 = tmp4;
-tmp4.contextType = require("ManaContext").ThemeContext;
-let obj1 = { paddingHorizontal: require("_createForOfIteratorHelperLoose").modules.mobile.TABLE_ROW_PADDING };
-let result = require("_classCallCheck").fileFinishedImporting("components_native/channel_settings/ChannelSettingsChangeCategory.tsx");
+  }
+  items[1] = tmp3Result;
+  items[2] = self.renderCategories();
+  obj[2] = items;
+  obj[1] = closure_14(first(4598).Stack, obj);
+  return closure_13(first(7634).Form, obj);
+};
+ChannelSettingsChangeCategory.contextType = require("ManaContext").ThemeContext;
+let obj1 = { paddingHorizontal: require("Themes").modules.mobile.TABLE_ROW_PADDING };
+let result = require("noop").fileFinishedImporting("components_native/channel_settings/ChannelSettingsChangeCategory.tsx");
 
 export default function ConnectedChannelSettingsChangeCategory(channelId) {
   channelId = channelId.channelId;
-  const items = [_isNativeReflectConstruct];
-  const channel = channelId(566).useStateFromStores(items, () => outer1_11.getChannel(channelId));
-  const obj = channelId(566);
-  const navigation = channelId(1456).useNavigation();
-  importDefault(44)(null != channel, "ConnectedChannelSettingsChangeCategory: channel cannot be undefined");
-  return callback3(closure_21, { channel, navigation });
+  const items = [ensureGuildLoaded];
+  const channel = channelId(589).useStateFromStores(items, () => outer1_6.getChannel(channelId));
+  const obj = channelId(589);
+  const navigation = channelId(1480).useNavigation();
+  importDefault(38)(null != channel, "ConnectedChannelSettingsChangeCategory: channel cannot be undefined");
+  return callback3(ChannelSettingsChangeCategory, { channel, navigation });
 };

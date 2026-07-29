@@ -1,17 +1,17 @@
-// Module ID: 5521
-// Function ID: 46976
+// Module ID: 5539
+// Function ID: 5540
 // Name: useRoleIcon
-// Dependencies: [31, 1911, 1838, 33, 566, 5522, 5523, 1212, 2]
+// Dependencies: [19, 1935, 1862, 21, 589, 5540, 5541, 1236, 2]
 // Exports: getRoleIcon, useRoleIcon
 
-// Module 5521 (useRoleIcon)
-import result from "result";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import closure_5 from "_createForOfIteratorHelperLoose";
+// Module 5539 (useRoleIcon)
+import noop from "noop";
+import createGuildRoleRecordFromRust from "createGuildRoleRecordFromRust";
+import createGuildRecordFromRust from "createGuildRecordFromRust";
 import { jsx } from "jsxProd";
 
 const require = arg1;
-const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/guild_boosting/native/RoleIconUtils.tsx");
+const result = require("createGuildRecordFromRust").fileFinishedImporting("modules/guild_boosting/native/RoleIconUtils.tsx");
 
 export const useRoleIcon = function useRoleIcon(guildId) {
   guildId = guildId.guildId;
@@ -22,17 +22,17 @@ export const useRoleIcon = function useRoleIcon(guildId) {
   }
   let guild;
   let role;
-  const items = [closure_5, role];
+  const items = [createGuildRecordFromRust, role];
   const items1 = [guildId, roleId];
   const stateFromStoresObject = guildId(num[4]).useStateFromStoresObject(items, () => {
-    const obj = { guild: outer1_5.getGuild(guildId) };
+    const obj = { guild: outer1_5.getGuild(guildId), role: null };
     let role;
     if (null != guildId) {
       if (null != roleId) {
-        role = role.getRole(guildId, roleId);
+        role = role.getRole(guildId, tmp3);
       }
     }
-    obj.role = role;
+    obj[1] = role;
     return obj;
   }, items1);
   guild = stateFromStoresObject.guild;
@@ -43,32 +43,36 @@ export const useRoleIcon = function useRoleIcon(guildId) {
     let unicodeEmoji;
     if (null != guild) {
       if (null != roleId) {
-        if (obj5.canGuildUseRoleIcons(guild, role)) {
-          let obj = guildId(num[5]);
-          let roleIconData = obj.getRoleIconData(role);
-          if (null == roleIconData) {
+        let obj = guildId(num[5]);
+        if (obj.canGuildUseRoleIcons(tmp, role)) {
+          let roleIconData = tmp2(tmp3[5]).getRoleIconData(tmp4);
+          if (roleIconData == null) {
             roleIconData = {};
           }
           ({ customIconSrc, unicodeEmoji } = roleIconData);
-          let tmp4;
+          let tmp5;
           if (null != customIconSrc) {
-            obj = { uri: customIconSrc };
-            tmp4 = obj;
+            obj = { uri: null };
+            obj[0] = customIconSrc;
+            tmp5 = obj;
           }
-          obj = { source: tmp4, unicodeEmoji };
-          let name;
-          if (null != role) {
-            name = role.name;
+          obj = { source: null, unicodeEmoji: null, name: null, size: null };
+          obj[0] = tmp5;
+          obj[1] = unicodeEmoji;
+          let str;
+          const tmp2Result = tmp2(tmp3[5]);
+          const tmp6 = outer1_6;
+          if (tmp4 != null) {
+            str = tmp4.name;
           }
-          let str = "";
-          if (null != name) {
-            str = name;
+          if (str == null) {
+            str = "";
           }
-          obj.name = str;
-          obj.size = 6;
-          return outer1_6(roleId(6[6]), obj);
+          obj[2] = str;
+          obj[3] = num;
+          return tmp6(roleId(tmp3[6]), obj);
         }
-        obj5 = guildId(num[5]);
+        tmp2 = guildId;
       }
     }
   }, items2);
@@ -82,28 +86,32 @@ export const getRoleIcon = function getRoleIcon(roleId) {
     if (null != roleId) {
       role = role.getRole(guild.id, roleId);
       if (null != role) {
-        let obj = require(5522) /* getRoleIconSource */;
+        let obj = require(5540) /* getRoleIconData */;
         if (obj.canGuildUseRoleIcons(guild, role)) {
-          let roleIconData = require(5522) /* getRoleIconSource */.getRoleIconData(role);
-          if (null == roleIconData) {
+          let roleIconData = tmp4(5540).getRoleIconData(role);
+          if (roleIconData == null) {
             roleIconData = {};
           }
           ({ customIconSrc, unicodeEmoji } = roleIconData);
           if (null == customIconSrc) {
             let surrogates;
-            if (null != unicodeEmoji) {
+            if (unicodeEmoji != null) {
               surrogates = unicodeEmoji.surrogates;
             }
           }
-          obj = { source: customIconSrc, name: role.name, size: roleId.size };
+          obj = { source: null, name: null, size: null, unicodeEmoji: null, alt: null };
+          obj[0] = customIconSrc;
+          obj[1] = role.name;
+          obj[2] = roleId.size;
           let surrogates1;
-          if (null != unicodeEmoji) {
+          if (unicodeEmoji != null) {
             surrogates1 = unicodeEmoji.surrogates;
           }
-          obj.unicodeEmoji = surrogates1;
-          const intl = require(1212) /* getSystemLocale */.intl;
-          obj = { name: role.name };
-          obj.alt = intl.formatToPlainString(require(1212) /* getSystemLocale */.t["9+YWrE"], obj);
+          obj[3] = surrogates1;
+          const intl = tmp4(1236).intl;
+          obj = { name: null };
+          obj[0] = role.name;
+          obj[4] = intl.formatToPlainString(tmp4(1236).t["9+YWrE"], obj);
           return obj;
         }
       }

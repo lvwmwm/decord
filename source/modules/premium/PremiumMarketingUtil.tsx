@@ -1,25 +1,25 @@
-// Module ID: 12173
-// Function ID: 95205
+// Module ID: 12197
+// Function ID: 12198
 // Name: navigateToPremiumHomePage
-// Dependencies: [653, 6590, 5827, 1198, 2]
+// Dependencies: [676, 6611, 5845, 1222, 2]
 // Exports: navigateToNitroHomePage, navigateToPremiumHomePage
 
-// Module 12173 (navigateToPremiumHomePage)
+// Module 12197 (navigateToPremiumHomePage)
 import ME from "ME";
 
-let closure_2;
-let closure_3;
-({ Routes: closure_2, UserSettingsSections: closure_3 } = ME);
+let c3;
+let obj1;
+({ Routes: obj1, UserSettingsSections: c3 } = ME);
 const result = require("pushLayer").fileFinishedImporting("modules/premium/PremiumMarketingUtil.tsx");
 
 export const navigateToPremiumHomePage = function navigateToPremiumHomePage() {
-  require(6590) /* openUserSettings */.openUserSettings({ screen: constants2.PREMIUM });
+  require(6611) /* openUserSettings */.openUserSettings({ screen: constants2.PREMIUM });
 };
 export const navigateToNitroHomePage = function navigateToNitroHomePage(arg0) {
-  if (null != arg0) {
+  if (arg0 != null) {
     arg0();
   }
-  require(5827) /* pushLayer */.popLayer();
-  const obj = require(5827) /* pushLayer */;
-  require(1198) /* shouldNavigate */.transitionTo(constants.APPLICATION_STORE);
+  require(5845) /* pushLayer */.popLayer();
+  const obj = require(5845) /* pushLayer */;
+  require(1222) /* transitionTo */.transitionTo(constants.APPLICATION_STORE);
 };

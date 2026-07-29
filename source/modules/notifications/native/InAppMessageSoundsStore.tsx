@@ -1,18 +1,20 @@
-// Module ID: 10249
-// Function ID: 79114
+// Module ID: 10270
+// Function ID: 10271
 // Name: isInAppMessageSoundsEnabled
-// Dependencies: [587, 677, 3778, 2]
+// Dependencies: [595, 700, 3802, 2]
 // Exports: isInAppMessageSoundsEnabled, setInAppMessageSoundsEnabled, useInAppMessageSoundsEnabled
 
-// Module 10249 (isInAppMessageSoundsEnabled)
-import useStoreWithEqualityFn from "useStoreWithEqualityFn";
+// Module 10270 (isInAppMessageSoundsEnabled)
+import identity from "identity";
 
-let closure_2 = useStoreWithEqualityFn.createWithEqualityFn(() => {
-  const obj = {};
-  const Storage = require(587) /* Storage */.Storage;
-  const value = Storage.get("InAppMessageSoundsEnabled");
-  obj.isEnabled = null == value || value;
-  return obj;
+const InAppMessageSoundsEnabled = "InAppMessageSoundsEnabled";
+let closure_3 = identity.createWithEqualityFn(() => {
+  const Storage = require(595) /* Storage */.Storage;
+  let isEnabled = Storage.get(InAppMessageSoundsEnabled);
+  if (isEnabled == null) {
+    isEnabled = true;
+  }
+  return { isEnabled };
 });
 let result = require("isIterable").fileFinishedImporting("modules/notifications/native/InAppMessageSoundsStore.tsx");
 
@@ -20,10 +22,10 @@ export const isInAppMessageSoundsEnabled = function isInAppMessageSoundsEnabled(
   return store.getState().isEnabled;
 };
 export const setInAppMessageSoundsEnabled = function setInAppMessageSoundsEnabled(isEnabled) {
-  const Storage = require(587) /* Storage */.Storage;
-  const result = Storage.set("InAppMessageSoundsEnabled", isEnabled);
+  const Storage = require(595) /* Storage */.Storage;
+  const result = Storage.set(InAppMessageSoundsEnabled, isEnabled);
   store.setState({ isEnabled });
 };
 export const useInAppMessageSoundsEnabled = function useInAppMessageSoundsEnabled() {
-  return store((isEnabled) => isEnabled.isEnabled, require(3778) /* isIterable */.shallow);
+  return store((isEnabled) => isEnabled.isEnabled, require(3802) /* isIterable */.shallow);
 };

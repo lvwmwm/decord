@@ -1,167 +1,159 @@
-// Module ID: 4160
-// Function ID: 34428
-// Name: _createForOfIteratorHelperLoose
+// Module ID: 4184
+// Function ID: 4185
+// Name: regExp
 // Dependencies: [2]
 // Exports: default
 
-// Module 4160 (_createForOfIteratorHelperLoose)
-function _createForOfIteratorHelperLoose(iterable) {
-  let closure_0 = iterable;
-  iterable = "undefined" !== typeof Symbol;
-  if (iterable) {
-    const _Symbol = Symbol;
-    iterable = iterable[Symbol.iterator];
-  }
-  if (!iterable) {
-    iterable = iterable[Symbol.iterator];
-  }
-  if (iterable) {
-    const iter = iterable.call(iterable);
-    const next = iter.next;
-    return next.bind(iter);
-  } else {
-    const _Array = Array;
-    let tmp = iterable;
-    if (!Array.isArray(iterable)) {
-      let tmp2;
-      if (iterable) {
-        if ("string" === typeof iterable) {
-          tmp2 = _arrayLikeToArray(iterable, undefined);
-        } else {
-          const toString = {}.toString;
-          const substr = toString.call(iterable).slice(8, -1);
-          let name = substr;
-          if (tmp3) {
-            name = iterable.constructor.name;
-          }
-          if ("Map" !== name) {
-            if ("Set" !== name) {
-              if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(iterable, undefined);
-              } else {
-                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
-              }
-            }
-            tmp2 = arr;
-          }
-          const _Array2 = Array;
-          arr = Array.from(iterable);
-          const callResult = toString.call(iterable);
-          tmp3 = "Object" === substr && iterable.constructor;
-        }
-      }
-      tmp = tmp2;
-      if (!tmp2) {
-        const _TypeError = TypeError;
-        const typeError = new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
-        throw typeError;
-      }
-    }
-    if (tmp) {
-      closure_0 = tmp;
-    }
-    let c1 = 0;
-    return () => {
-      if (closure_1 >= length.length) {
-        let obj = { done: true };
-      } else {
-        obj = { done: false };
-        closure_1 = tmp3 + 1;
-        obj.value = length[+closure_1];
-      }
-      return obj;
-    };
-  }
-}
-function _arrayLikeToArray(arg0, arg1) {
+// Module 4184 (regExp)
+let closure_0 = { 1: "bold", 4: "underline" };
+let closure_1 = { 30: "black", 31: "red", 32: "green", 33: "yellow", 34: "blue", 35: "magenta", 36: "cyan", 37: "white" };
+let closure_2 = { 40: "black", 41: "red", 42: "green", 43: "yellow", 44: "blue", 45: "magenta", 46: "cyan", 47: "white" };
+const tmp2 = /\x1B\[(\d+(?:[:;]\d+)*)m/;
+let c3 = tmp2;
+const regExp = new RegExp("(?=" + tmp2.source + ")");
+const result = require("set").fileFinishedImporting("utils/HighlightJsAnsiLanguage.tsx");
+
+export default function highlightJsAnsiLanguage() {
   let length;
-  if (tmp) {
-    length = arg0.length;
-  }
-  const ArrayResult = Array(length);
-  for (let num = 0; num < length; num = num + 1) {
-    ArrayResult[num] = arg0[num];
-  }
-  return ArrayResult;
-}
-function makeAnsiRuleCategory(background, closure_0, arg2, arg3) {
-  closure_0 = background;
+  let sum;
+  let style = "foreground";
   const items = ["0"];
-  HermesBuiltin.arraySpread(arg2, 1);
-  if (arg3) {
-    const push = items.push;
-    const _Object = Object;
-    const items1 = [];
-    HermesBuiltin.arraySpread(Object.keys(closure_0), 0);
-    HermesBuiltin.apply(items1, items);
-  }
-  const entries = Object.entries(closure_0);
-  return entries.map((arg0) => {
-    let tmp;
-    let tmp2;
-    [tmp, tmp2] = arg0;
-    return (function makeAnsiRule(closure_0, arg1, arg2, items) {
-      closure_0 = arg2;
-      let closure_1 = items;
+  HermesBuiltin.arraySpread(["38", "39"], 1);
+  let items5 = items;
+  const items1 = [...Object.keys(items5)];
+  let num = 0;
+  items.push.apply(items1);
+  const entries = Object.entries(items5);
+  const items2 = [
+    ...entries.map((arg0) => {
+      let tmp;
+      let tmp2;
+      [tmp, tmp2] = arg0;
+      const style = tmp;
       return {
-        className: "ansi-" + closure_0 + "-" + arg1,
+        className: "ansi-" + style + "-" + tmp2,
         endsParent: true,
-        begin: outer2_4,
+        begin: outer1_4,
         (arg0, data) => {
-          let iter2;
           const parts = arg0[1].split(";");
           if (undefined === data.data.isOn) {
             data.data.isOn = false;
           }
-          const tmp2 = outer3_5(parts);
-          let iter = tmp2();
-          if (!iter.done) {
-            do {
-              let value = iter.value;
-              let tmp3 = closure_0;
-              if (value === closure_0) {
-                data.data.isOn = true;
-              } else {
-                let tmp4 = items;
-                if (items.includes(value)) {
-                  data.data.isOn = false;
-                }
+          const iter = parts[Symbol.iterator]();
+          const nextResult = iter.next();
+          while (iter !== undefined) {
+            let tmp4 = closure_0;
+            if (nextResult === closure_0) {
+              data.data.isOn = true;
+            } else {
+              let tmp5 = closure_1;
+              let tmp6 = nextResult;
+              if (closure_1.includes(tmp3)) {
+                data.data.isOn = false;
               }
-              iter2 = tmp2();
-              iter = iter2;
-            } while (!iter2.done);
+            }
+            continue;
           }
           if (!data.data.isOn) {
             data.ignoreMatch();
           }
         }
       };
-    })(closure_0, tmp2, tmp, items);
-  });
-}
-let closure_0 = { 1: "bold", 4: "underline" };
-let closure_1 = { 30: "black", 31: "red", 32: "green", 33: "yellow", 34: "blue", 35: "magenta", 36: "cyan", 37: "white" };
-let closure_2 = { 40: "black", 41: "red", 42: "green", 43: "yellow", 44: "blue", 45: "magenta", 46: "cyan", 47: "white" };
-let tmp2 = /\x1B\[(\d+(?:[:;]\d+)*)m/;
-let closure_3 = tmp2;
-const regExp = new RegExp("(?=" + tmp2.source + ")");
-const result = require("set").fileFinishedImporting("utils/HighlightJsAnsiLanguage.tsx");
-
-export default function highlightJsAnsiLanguage() {
-  let length;
-  const items = [...makeAnsiRuleCategory("foreground", closure_1, ["38", "39"], true), ...makeAnsiRuleCategory("background", closure_2, ["48", "49"], true), ...makeAnsiRuleCategory("style", closure_0, [], false), obj];
-  let num = 0;
+    })
+  ];
+  style = "background";
+  items5 = undefined;
+  const items3 = ["0"];
+  HermesBuiltin.arraySpread(["48", "49"], 1);
+  items5 = items3;
+  const items4 = [...Object.keys(closure_2)];
+  items3.push.apply(items4);
+  const entries1 = Object.entries(closure_2);
+  style = "style";
+  items5 = undefined;
+  items5 = ["0"];
+  HermesBuiltin.arraySpread([], 1);
+  const entries2 = Object.entries(style);
   obj = { className: "ansi-control-sequence", begin: closure_3, starts: obj };
   obj = { end: regExp, endsParent: true };
-  if (0 < items.length) {
+  items2[HermesBuiltin.arraySpread(entries2.map((arg0) => {
+    let tmp;
+    let tmp2;
+    [tmp, tmp2] = arg0;
+    const style = tmp;
+    return {
+      className: "ansi-" + style + "-" + tmp2,
+      endsParent: true,
+      begin: outer1_4,
+      (arg0, data) => {
+        const parts = arg0[1].split(";");
+        if (undefined === data.data.isOn) {
+          data.data.isOn = false;
+        }
+        const iter = parts[Symbol.iterator]();
+        const nextResult = iter.next();
+        while (iter !== undefined) {
+          let tmp4 = closure_0;
+          if (nextResult === closure_0) {
+            data.data.isOn = true;
+          } else {
+            let tmp5 = closure_1;
+            let tmp6 = nextResult;
+            if (closure_1.includes(tmp3)) {
+              data.data.isOn = false;
+            }
+          }
+          continue;
+        }
+        if (!data.data.isOn) {
+          data.ignoreMatch();
+        }
+      }
+    };
+  }), HermesBuiltin.arraySpread(entries1.map((arg0) => {
+    let tmp;
+    let tmp2;
+    [tmp, tmp2] = arg0;
+    const style = tmp;
+    return {
+      className: "ansi-" + style + "-" + tmp2,
+      endsParent: true,
+      begin: outer1_4,
+      (arg0, data) => {
+        const parts = arg0[1].split(";");
+        if (undefined === data.data.isOn) {
+          data.data.isOn = false;
+        }
+        const iter = parts[Symbol.iterator]();
+        const nextResult = iter.next();
+        while (iter !== undefined) {
+          let tmp4 = closure_0;
+          if (nextResult === closure_0) {
+            data.data.isOn = true;
+          } else {
+            let tmp5 = closure_1;
+            let tmp6 = nextResult;
+            if (closure_1.includes(tmp3)) {
+              data.data.isOn = false;
+            }
+          }
+          continue;
+        }
+        if (!data.data.isOn) {
+          data.ignoreMatch();
+        }
+      }
+    };
+  }), tmp3))] = obj;
+  if (0 < items2.length) {
     do {
-      items[num].contains = items.slice(num + 1);
-      num = num + 1;
-      length = items.length;
-    } while (num < length);
+      sum = num + 1;
+      items2[num].contains = items2.slice(sum);
+      num = sum;
+      length = items2.length;
+    } while (sum < length);
   }
-  obj = { begin: regExp, contains: items };
-  const contains = [obj];
+  const contains = [{ begin: regExp, contains: items2 }];
   return { contains };
 };
 export const ANSI_CONTROL_SEQUENCE_RE = tmp2;

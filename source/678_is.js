@@ -1,8 +1,0 @@
-// Module ID: 678
-// Function ID: 8393
-// Name: is
-// Dependencies: [679]
-
-// Module 678 (is)
-
-export { default } from "is";

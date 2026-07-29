@@ -1,30 +1,83 @@
-// Module ID: 1187
-// Function ID: 13545
-// Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 1188, 1850, 6307, 653, 13224, 13226, 5941, 686, 4565, 2]
+// Module ID: 1211
+// Function ID: 1212
+// Name: _updateZoomedInExport
+// Dependencies: [1212, 1874, 6328, 676, 4368, 13247, 5960, 709, 13251, 2]
 
-// Module 1187 (_isNativeReflectConstruct)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_3 from "_isNativeReflectConstruct";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
-import closure_7 from "_isNativeReflectConstruct";
-import closure_8 from "_isNativeReflectConstruct";
-import closure_9 from "_isNativeReflectConstruct";
+// Module 1211 (_updateZoomedInExport)
+import initialize from "initialize";
+import mergeGuildAvatar from "mergeGuildAvatar";
+import getState from "getState";
 import { AppStates } from "ME";
-import tmp2 from "LifecycleManager";
+import "initialize";
 
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
+class TelemetryRingLifecycleImpl extends tmp2 {
+  constructor() {
+    applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
+    closure_0 = applyArgumentsResult;
+    applyArgumentsResult._initialized = false;
+    applyArgumentsResult._experimentUnsubscribe = null;
+    applyArgumentsResult._handleEligibilityChange = function _handleEligibilityChange() {
+      const result = applyArgumentsResult._updateZoomedInExport();
+    };
+    applyArgumentsResult._handleLogout = function _handleLogout() {
+      applyArgumentsResult(13251).clear();
+      const obj = applyArgumentsResult(13251);
+      applyArgumentsResult(13247).reset();
+    };
+    return applyArgumentsResult;
   }
-  const result = _isNativeReflectConstruct();
 }
-tmp2 = new tmp2();
-let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/telemetry_ring/native/TelemetryRingLifecycle.tsx");
+const prototype = TelemetryRingLifecycleImpl.prototype;
+prototype["_updateZoomedInExport"] = function _updateZoomedInExport() {
+  const state = getState.getState();
+  let shouldRunResult = state === AppStates.ACTIVE;
+  if (shouldRunResult) {
+    shouldRunResult = importDefault(13247).shouldRun();
+    const obj = importDefault(13247);
+  }
+  const result = importDefault(5960).setShouldCollectHermesInstrumentedStats(shouldRunResult);
+  if (state === AppStates.ACTIVE) {
+    let tmp6Result = tmp6(13247);
+    tmp6Result.start();
+  } else {
+    tmp6Result = tmp6(13247);
+    tmp6Result.stop();
+  }
+};
+prototype["_initialize"] = function _initialize() {
+  let self = this;
+  self = this;
+  if (!this._initialized) {
+    self._initialized = true;
+    const subscription = self(709).subscribe("LOGOUT", self._handleLogout);
+    getState.addChangeListener(self._handleEligibilityChange);
+    mergeGuildAvatar.addChangeListener(self._handleEligibilityChange);
+    initialize.addChangeListener(self._handleEligibilityChange);
+    self._experimentUnsubscribe = () => {
+      outer1_2.removeChangeListener(self._handleEligibilityChange);
+    };
+    const obj = self(709);
+    self(13247).initialize();
+    const result = self._updateZoomedInExport();
+    const obj2 = self(13247);
+  }
+};
+prototype["_terminate"] = function _terminate() {
+  const self = this;
+  importDefault(709).unsubscribe("LOGOUT", this._handleLogout);
+  getState.removeChangeListener(this._handleEligibilityChange);
+  mergeGuildAvatar.removeChangeListener(this._handleEligibilityChange);
+  if (null != this._experimentUnsubscribe) {
+    const result = self._experimentUnsubscribe();
+    self._experimentUnsubscribe = null;
+  }
+  let tmpResult = tmp(13247);
+  tmpResult.stop();
+  tmpResult = tmp(5960);
+  const result1 = tmpResult.setShouldCollectHermesInstrumentedStats(false);
+  self._initialized = false;
+};
+const telemetryRingLifecycleImpl = new TelemetryRingLifecycleImpl();
+let result = require("getState").fileFinishedImporting("modules/telemetry_ring/native/TelemetryRingLifecycle.tsx");
 
-export default tmp2;
+export default telemetryRingLifecycleImpl;

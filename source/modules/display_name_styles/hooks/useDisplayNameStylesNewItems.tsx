@@ -1,30 +1,30 @@
-// Module ID: 14333
-// Function ID: 109911
+// Module ID: 14355
+// Function ID: 14356
 // Name: useDisplayNameStylesNewFonts
-// Dependencies: [31, 14334, 1862, 566, 14335, 2]
+// Dependencies: [19, 14356, 1886, 589, 14357, 2]
 // Exports: useDisplayNameStylesNewEffects, useDisplayNameStylesNewEffectsBadge, useDisplayNameStylesNewFonts, useDisplayNameStylesNewFontsBadge
 
-// Module 14333 (useDisplayNameStylesNewFonts)
-import result from "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 14355 (useDisplayNameStylesNewFonts)
+import noop from "noop";
+import set from "set";
 import items3 from "items3";
 
-let closure_4;
-let closure_5;
+let c4;
+let c5;
 const require = arg1;
-({ FLYWHEEL_EFFECTS: closure_4, FLYWHEEL_FONTS: closure_5 } = items3);
+({ FLYWHEEL_EFFECTS: c4, FLYWHEEL_FONTS: c5 } = items3);
 let result = require("items3").fileFinishedImporting("modules/display_name_styles/hooks/useDisplayNameStylesNewItems.tsx");
 
 export const useDisplayNameStylesNewFonts = function useDisplayNameStylesNewFonts(visibleFontOrder) {
   const _require = visibleFontOrder;
   let obj = _require(stateFromStores[3]);
-  const items = [_isNativeReflectConstruct];
-  stateFromStores = obj.useStateFromStores(items, () => outer1_3.getSeenFonts());
+  const items = [set];
+  stateFromStores = obj.useStateFromStores(items, () => seenFonts.getSeenFonts());
   obj = {
     dotFontIds: React.useMemo(() => new Set(visibleFontOrder.filter((arg0) => {
-      let hasItem = outer2_5.includes(arg0);
+      let hasItem = outer1_5.includes(arg0);
       if (hasItem) {
-        hasItem = !outer1_1.has(arg0);
+        hasItem = !set.has(arg0);
       }
       return hasItem;
     })), items1),
@@ -38,13 +38,13 @@ export const useDisplayNameStylesNewFonts = function useDisplayNameStylesNewFont
 export const useDisplayNameStylesNewEffects = function useDisplayNameStylesNewEffects(visibleEffectOrder) {
   const _require = visibleEffectOrder;
   let obj = _require(stateFromStores[3]);
-  const items = [_isNativeReflectConstruct];
-  stateFromStores = obj.useStateFromStores(items, () => outer1_3.getSeenEffects());
+  const items = [set];
+  stateFromStores = obj.useStateFromStores(items, () => seenEffects.getSeenEffects());
   obj = {
     dotEffectIds: React.useMemo(() => new Set(visibleEffectOrder.filter((arg0) => {
-      let hasItem = outer2_4.includes(arg0);
+      let hasItem = outer1_4.includes(arg0);
       if (hasItem) {
-        hasItem = !outer1_1.has(arg0);
+        hasItem = !set.has(arg0);
       }
       return hasItem;
     })), items1),
@@ -57,27 +57,29 @@ export const useDisplayNameStylesNewEffects = function useDisplayNameStylesNewEf
 };
 export const useDisplayNameStylesNewFontsBadge = function useDisplayNameStylesNewFontsBadge(visibleFontOrder) {
   const _require = visibleFontOrder;
-  let obj = _require(566);
-  const items = [_isNativeReflectConstruct];
-  obj = {};
+  let obj = _require(589);
+  const items = [set];
   const items1 = [visibleFontOrder];
-  const stateFromStores = obj.useStateFromStores(items, () => outer1_3.getNewFontsBadgeDismissed());
-  obj.showFontsBadge = React.useMemo(() => visibleFontOrder.some((arg0) => outer2_5.includes(arg0)), items1) && !stateFromStores;
-  obj.dismissFontsBadge = React.useCallback(() => {
-    const result = visibleFontOrder(outer1_1[4]).markDisplayNameStyleNewFontsBadgeDismissed();
-  }, []);
+  const stateFromStores = obj.useStateFromStores(items, () => newFontsBadgeDismissed.getNewFontsBadgeDismissed());
+  obj = {
+    showFontsBadge: React.useMemo(() => visibleFontOrder.some((arg0) => closure_5.includes(arg0)), items1) && !stateFromStores,
+    dismissFontsBadge: React.useCallback(() => {
+      const result = visibleFontOrder(table[4]).markDisplayNameStyleNewFontsBadgeDismissed();
+    }, [])
+  };
   return obj;
 };
 export const useDisplayNameStylesNewEffectsBadge = function useDisplayNameStylesNewEffectsBadge(visibleEffectOrder) {
   const _require = visibleEffectOrder;
-  let obj = _require(566);
-  const items = [_isNativeReflectConstruct];
-  obj = {};
+  let obj = _require(589);
+  const items = [set];
   const items1 = [visibleEffectOrder];
-  const stateFromStores = obj.useStateFromStores(items, () => outer1_3.getNewEffectsBadgeDismissed());
-  obj.showEffectsBadge = React.useMemo(() => visibleEffectOrder.some((arg0) => outer2_4.includes(arg0)), items1) && !stateFromStores;
-  obj.dismissEffectsBadge = React.useCallback(() => {
-    const result = visibleEffectOrder(outer1_1[4]).markDisplayNameStyleNewEffectsBadgeDismissed();
-  }, []);
+  const stateFromStores = obj.useStateFromStores(items, () => newEffectsBadgeDismissed.getNewEffectsBadgeDismissed());
+  obj = {
+    showEffectsBadge: React.useMemo(() => visibleEffectOrder.some((arg0) => closure_4.includes(arg0)), items1) && !stateFromStores,
+    dismissEffectsBadge: React.useCallback(() => {
+      const result = visibleEffectOrder(table[4]).markDisplayNameStyleNewEffectsBadgeDismissed();
+    }, [])
+  };
   return obj;
 };

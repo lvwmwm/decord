@@ -1,10 +1,10 @@
-// Module ID: 13971
-// Function ID: 106759
+// Module ID: 13992
+// Function ID: 13993
 // Name: getConnectionBackgroundColor
-// Dependencies: [653, 689, 2]
+// Dependencies: [676, 712, 2]
 // Exports: getConnectionBackgroundColor
 
-// Module 13971 (getConnectionBackgroundColor)
+// Module 13992 (getConnectionBackgroundColor)
 let BATTLENET;
 let BUNGIE;
 let CRUNCHYROLL;
@@ -23,7 +23,7 @@ let TWITTER;
 let TWITTER_LEGACY;
 let XBOX;
 let YOUTUBE;
-const obj = { [CRUNCHYROLL]: require("_createForOfIteratorHelperLoose").unsafe_rawColors.PLATFORM_CRUNCHYROLL, [PLAYSTATION_STAGING]: require("_createForOfIteratorHelperLoose").unsafe_rawColors.PLATFORM_PLAYSTATION, [PLAYSTATION]: require("_createForOfIteratorHelperLoose").unsafe_rawColors.PLATFORM_PLAYSTATION, [GITHUB]: require("_createForOfIteratorHelperLoose").unsafe_rawColors.PLATFORM_GITHUB, [SAMSUNG]: require("_createForOfIteratorHelperLoose").unsafe_rawColors.PLATFORM_SAMSUNG, [XBOX]: require("_createForOfIteratorHelperLoose").unsafe_rawColors.PLATFORM_XBOX, [SPOTIFY]: require("_createForOfIteratorHelperLoose").unsafe_rawColors.PLATFORM_SPOTIFY, [TWITTER_LEGACY]: require("_createForOfIteratorHelperLoose").unsafe_rawColors.PLATFORM_TWITTER, [TWITTER]: require("_createForOfIteratorHelperLoose").unsafe_rawColors.PLATFORM_TWITTER, [FACEBOOK]: require("_createForOfIteratorHelperLoose").unsafe_rawColors.PLATFORM_FACEBOOK, [REDDIT]: require("_createForOfIteratorHelperLoose").unsafe_rawColors.PLATFORM_REDDIT, [STEAM]: require("_createForOfIteratorHelperLoose").unsafe_rawColors.PLATFORM_STEAM, [LEAGUE_OF_LEGENDS]: require("_createForOfIteratorHelperLoose").unsafe_rawColors.PLATFORM_LOL, [SKYPE]: require("_createForOfIteratorHelperLoose").unsafe_rawColors.PLATFORM_SKYPE, [BUNGIE]: require("_createForOfIteratorHelperLoose").unsafe_rawColors.PLATFORM_BUNGIE, [BATTLENET]: require("_createForOfIteratorHelperLoose").unsafe_rawColors.PLATFORM_BATTLENET, [YOUTUBE]: require("_createForOfIteratorHelperLoose").unsafe_rawColors.PLATFORM_YOUTUBE, [TWITCH]: require("_createForOfIteratorHelperLoose").unsafe_rawColors.PLATFORM_TWITCH };
+const obj = { [CRUNCHYROLL]: require("Themes").unsafe_rawColors.PLATFORM_CRUNCHYROLL, [PLAYSTATION_STAGING]: require("Themes").unsafe_rawColors.PLATFORM_PLAYSTATION, [PLAYSTATION]: require("Themes").unsafe_rawColors.PLATFORM_PLAYSTATION, [GITHUB]: require("Themes").unsafe_rawColors.PLATFORM_GITHUB, [SAMSUNG]: require("Themes").unsafe_rawColors.PLATFORM_SAMSUNG, [XBOX]: require("Themes").unsafe_rawColors.PLATFORM_XBOX, [SPOTIFY]: require("Themes").unsafe_rawColors.PLATFORM_SPOTIFY, [TWITTER_LEGACY]: require("Themes").unsafe_rawColors.PLATFORM_TWITTER, [TWITTER]: require("Themes").unsafe_rawColors.PLATFORM_TWITTER, [FACEBOOK]: require("Themes").unsafe_rawColors.PLATFORM_FACEBOOK, [REDDIT]: require("Themes").unsafe_rawColors.PLATFORM_REDDIT, [STEAM]: require("Themes").unsafe_rawColors.PLATFORM_STEAM, [LEAGUE_OF_LEGENDS]: require("Themes").unsafe_rawColors.PLATFORM_LOL, [SKYPE]: require("Themes").unsafe_rawColors.PLATFORM_SKYPE, [BUNGIE]: require("Themes").unsafe_rawColors.PLATFORM_BUNGIE, [BATTLENET]: require("Themes").unsafe_rawColors.PLATFORM_BATTLENET, [YOUTUBE]: require("Themes").unsafe_rawColors.PLATFORM_YOUTUBE, [TWITCH]: require("Themes").unsafe_rawColors.PLATFORM_TWITCH };
 ({ CRUNCHYROLL, PLAYSTATION_STAGING, PLAYSTATION, GITHUB, SAMSUNG, XBOX, SPOTIFY, TWITTER_LEGACY, TWITTER, FACEBOOK, REDDIT, STEAM, LEAGUE_OF_LEGENDS, SKYPE, BUNGIE, BATTLENET, YOUTUBE, TWITCH } = require("ME").PlatformTypes);
 const result = require("set").fileFinishedImporting("modules/connections/native/ConnectionPlatformUtils.native.tsx");
 

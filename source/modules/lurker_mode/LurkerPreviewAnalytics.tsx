@@ -1,50 +1,47 @@
-// Module ID: 6671
-// Function ID: 58778
-// Name: getNumLurkedGuilds
-// Dependencies: [3794, 653, 675, 2]
+// Module ID: 6692
+// Function ID: 6693
+// Name: trackLurkStarted
+// Dependencies: [3818, 676, 698, 2]
 // Exports: trackGuildIconClicked, trackJoinClicked, trackLeavePromptLeaveClicked, trackLongPressLeaveClicked, trackLurkStarted
 
-// Module 6671 (getNumLurkedGuilds)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 6692 (trackLurkStarted)
+import initialize from "initialize";
 import { AnalyticEvents } from "ME";
 
-function getNumLurkedGuilds() {
-  return _isNativeReflectConstruct.lurkingGuildIds().length;
-}
-const result = require("expandLocation").fileFinishedImporting("modules/lurker_mode/LurkerPreviewAnalytics.tsx");
+const result = require("expandEventProperties").fileFinishedImporting("modules/lurker_mode/LurkerPreviewAnalytics.tsx");
 
-export const trackLurkStarted = function trackLurkStarted(guild_id, joinSource, sourceLocationStack) {
-  let obj = importDefault(675);
-  obj = { guild_id, num_lurked_guilds: getNumLurkedGuilds() };
-  let tmp = null;
-  if (null != joinSource) {
-    tmp = joinSource;
+export const trackLurkStarted = function trackLurkStarted(closure_0, joinSource, closure_13) {
+  let tmp = joinSource;
+  let obj = importDefault(698);
+  obj = { guild_id: closure_0, num_lurked_guilds: initialize.lurkingGuildIds().length, join_source: null, location: null };
+  if (joinSource == null) {
+    tmp = null;
   }
-  obj.join_source = tmp;
-  let tmp2 = null;
-  if (null != sourceLocationStack) {
-    tmp2 = sourceLocationStack;
+  let tmp2 = closure_13;
+  obj[2] = tmp;
+  if (closure_13 == null) {
+    tmp2 = null;
   }
-  obj.location = tmp2;
+  obj[3] = tmp2;
   obj.track(AnalyticEvents.MOBILE_LURKER_PREVIEW_LURK_STARTED, obj);
 };
-export const trackJoinClicked = function trackJoinClicked(guildId, LEAVE_PROMPT_LURKER, has_navigated_away) {
-  let obj = importDefault(675);
-  obj = { guild_id: guildId, num_lurked_guilds: getNumLurkedGuilds(), join_source: LEAVE_PROMPT_LURKER, has_navigated_away };
+export const trackJoinClicked = function trackJoinClicked(guild_id, LEAVE_PROMPT_LURKER, has_navigated_away) {
+  let obj = importDefault(698);
+  obj = { guild_id, num_lurked_guilds: initialize.lurkingGuildIds().length, join_source: LEAVE_PROMPT_LURKER, has_navigated_away };
   obj.track(AnalyticEvents.MOBILE_LURKER_PREVIEW_JOIN_CLICKED, obj);
 };
 export const trackLeavePromptLeaveClicked = function trackLeavePromptLeaveClicked(id) {
-  let obj = importDefault(675);
-  obj = { guild_id: id, num_lurked_guilds: getNumLurkedGuilds() };
+  let obj = importDefault(698);
+  obj = { guild_id: id, num_lurked_guilds: initialize.lurkingGuildIds().length };
   obj.track(AnalyticEvents.MOBILE_LURKER_PREVIEW_LEAVE_PROMPT_LEAVE_CLICKED, obj);
 };
-export const trackGuildIconClicked = function trackGuildIconClicked(outer1_0) {
-  let obj = importDefault(675);
-  obj = { guild_id: outer1_0, num_lurked_guilds: getNumLurkedGuilds() };
+export const trackGuildIconClicked = function trackGuildIconClicked(guild_id) {
+  let obj = importDefault(698);
+  obj = { guild_id, num_lurked_guilds: initialize.lurkingGuildIds().length };
   obj.track(AnalyticEvents.MOBILE_LURKER_PREVIEW_GUILD_ICON_CLICKED, obj);
 };
 export const trackLongPressLeaveClicked = function trackLongPressLeaveClicked(closure_0) {
-  let obj = importDefault(675);
-  obj = { guild_id: closure_0, num_lurked_guilds: getNumLurkedGuilds() };
+  let obj = importDefault(698);
+  obj = { guild_id: closure_0, num_lurked_guilds: initialize.lurkingGuildIds().length };
   obj.track(AnalyticEvents.MOBILE_LURKER_PREVIEW_LONG_PRESS_LEAVE_CLICKED, obj);
 };

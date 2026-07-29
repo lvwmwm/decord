@@ -1,284 +1,152 @@
-// Module ID: 5912
-// Function ID: 52084
-// Name: _createForOfIteratorHelperLoose
-// Dependencies: [57, 6, 7, 1194, 3, 1899, 1884, 686, 5913, 2]
+// Module ID: 5931
+// Function ID: 5932
+// Name: set
+// Dependencies: [32, 1218, 3, 1923, 1908, 709, 5932, 2]
 
-// Module 5912 (_createForOfIteratorHelperLoose)
+// Module 5931 (set)
 import _slicedToArray from "_slicedToArray";
-import module_1884 from "module_1884";
-import dispatcher from "dispatcher";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import importDefaultResult from "_isNativeReflectConstruct";
-import set from "_defineProperties";
+import fetchFingerprint from "fetchFingerprint";
+import set from "timestamp";
 
 const require = arg1;
-function _createForOfIteratorHelperLoose(iterable) {
-  let closure_0 = iterable;
-  iterable = "undefined" !== typeof Symbol;
-  if (iterable) {
-    const _Symbol = Symbol;
-    iterable = iterable[Symbol.iterator];
+let c5 = new require("databaseName")("AppDatabaseManager");
+let set = new Set(["MESSAGE_CREATE"]);
+let AppDatabaseManager;
+class AppDatabaseManager {
+  constructor(arg0, arg1, arg2) {
+    obj = Object.create(new.target.prototype);
+    closure_0 = obj;
+    tmp2 = _slicedToArray(AppDatabaseManager.computeEntries(global, importDefault), 2);
+    obj.name = global;
+    [tmp.actions, tmp.entries] = tmp2;
+    obj.lastDatabase = null;
+    registerResult = AppDatabaseManager.register(`${global}_CLEAR_CACHES`, ["CLEAR_CACHES"], [], () => {
+      for (const item10006 of tmp) {
+        let resetResult = item10006.reset();
+        continue;
+      }
+    });
+    actions = obj.actions;
+    items = [...actions.keys()];
+    handleAction = obj.handleAction;
+    registerResult1 = AppDatabaseManager.register(global, items, arg1, handleAction.bind(obj));
+    verboseResult = closure_5.verbose("" + global + " created with " + importDefault.length + " modules, " + obj.actions.size + " distinct actions.");
+    return obj;
   }
-  if (!iterable) {
-    iterable = iterable[Symbol.iterator];
+}
+const prototype = AppDatabaseManager.prototype;
+prototype["handleAction"] = function handleAction(type) {
+  this.validateInDev(type.type);
+  id = id.getId();
+  const databaseResult = importDefault(1923).database(id);
+  this.resetModules(type, databaseResult);
+  this.executeModules(type, databaseResult);
+  return false;
+};
+prototype["resetModules"] = function resetModules(type, databaseResult) {
+  const self = this;
+  if (databaseResult !== this.lastDatabase) {
+    const _HermesInternal = HermesInternal;
+    tmp2.verbose("database has changed (was: " + self.lastDatabase + ", now: " + databaseResult + ", action: " + type.type + "). resetting modules.");
+    const entries = self.entries;
+    for (const item10004 of entries) {
+      let resetResult = item10004.reset();
+      continue;
+    }
+    self.lastDatabase = databaseResult;
   }
-  if (iterable) {
-    const iter = iterable.call(iterable);
-    const next = iter.next;
-    return next.bind(iter);
-  } else {
-    const _Array = Array;
-    let tmp = iterable;
-    if (!Array.isArray(iterable)) {
-      let tmp2;
-      if (iterable) {
-        if ("string" === typeof iterable) {
-          tmp2 = _arrayLikeToArray(iterable, undefined);
-        } else {
-          const toString = {}.toString;
-          const substr = toString.call(iterable).slice(8, -1);
-          let name = substr;
-          if (tmp3) {
-            name = iterable.constructor.name;
+};
+prototype["executeModules"] = function executeModules(type, databaseResult) {
+  const _require = type;
+  let closure_1 = databaseResult;
+  type = type.type;
+  const actions = this.actions;
+  const value = actions.get(type);
+  const dependencyMap = value;
+  if (databaseResult != null) {
+    const stateResult = databaseResult.state();
+  }
+  if (null != value) {
+    if (0 !== value.length) {
+      if (null != databaseResult) {
+        if (stateResult === _require(1908).DatabaseState.Open) {
+          let combined = null;
+          if (!set.has(type.type)) {
+            const _HermesInternal2 = HermesInternal;
+            combined = "Dispatch " + type.type;
           }
-          if ("Map" !== name) {
-            if ("Set" !== name) {
-              if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(iterable, undefined);
-              } else {
-                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
-              }
-            }
-            tmp2 = arr;
+          databaseResult.transaction((arg0) => {
+            let closure_0 = arg0;
+            return value.forEach((execute) => execute.execute(closure_0, closure_0));
+          }, combined);
+          if ("WRITE_CACHES" === type.type) {
+            const promisesToWaitOn = type.promisesToWaitOn;
+            promisesToWaitOn.push(tmp14);
           }
-          const _Array2 = Array;
-          arr = Array.from(iterable);
-          const callResult = toString.call(iterable);
-          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
-      tmp = tmp2;
-      if (!tmp2) {
-        const _TypeError = TypeError;
-        const typeError = new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
-        throw typeError;
-      }
+      const _HermesInternal = HermesInternal;
+      tmp2.verbose("no usable database; skipping action (type: " + type + ", database: " + databaseResult + ", state: " + stateResult + ")");
     }
-    if (tmp) {
-      closure_0 = tmp;
-    }
-    let c1 = 0;
-    return () => {
-      if (closure_1 >= length.length) {
-        let obj = { done: true };
-      } else {
-        obj = { done: false };
-        closure_1 = tmp3 + 1;
-        obj.value = length[+closure_1];
+  }
+};
+AppDatabaseManager["handleException"] = function handleException(arg0, type, error) {
+  tmp2.info("disabling database \u00B7 error encountered during dispatch", error, error.stack);
+  let obj = importDefault(709);
+  obj = { type: "RESET_SOCKET", args: null };
+  obj = { error, action: "AppDatabaseManager(" + type.type + ")" };
+  obj[1] = obj;
+  obj.dispatch(obj);
+};
+AppDatabaseManager["computeEntries"] = function computeEntries(MobileAppDatabaseManager, arr) {
+  let closure_0 = MobileAppDatabaseManager;
+  const map = new Map();
+  const mapped = arr.map((arg0) => {
+    const entry = new MobileAppDatabaseManager(outer1_2[6]).Entry(MobileAppDatabaseManager, arg0);
+    return entry;
+  });
+  const result = map.set("LOGOUT", []);
+  const result1 = map.set("LOGIN_RESET", []);
+  for (const item10025 of mapped) {
+    let actions = item10025.actions;
+    let tmp5 = actions;
+    let tmp6 = actions;
+    for (const item10032 of actions) {
+      let tmp7 = item10032;
+      if (!map.has(item10032)) {
+        let tmp8 = item10032;
+        let result2 = map.set(tmp7, []);
       }
-      return obj;
-    };
+      let tmp10 = item10032;
+      let value = map.get(tmp7);
+      let tmp11 = item10025;
+      arr = value.push(tmp4);
+      continue;
+    }
+    continue;
   }
-}
-function _arrayLikeToArray(arg0, arg1) {
-  let length;
-  if (tmp) {
-    length = arg0.length;
-  }
-  const ArrayResult = Array(length);
-  for (let num = 0; num < length; num = num + 1) {
-    ArrayResult[num] = arg0[num];
-  }
-  return ArrayResult;
-}
-importDefaultResult = new importDefaultResult("AppDatabaseManager");
-let set = new Set(["MESSAGE_CREATE"]);
+  const items = [map, mapped];
+  return items;
+};
+AppDatabaseManager["register"] = function register(arg0, arr) {
+  const _require = arg3;
+  const obj = importDefault(709);
+  const registerResult = obj.register(arg0, Object.fromEntries(arr.map((arg0) => {
+    const items = [arg0, closure_0];
+    return items;
+  })), () => {
+
+  }, _require(709).DispatchBand.Database);
+  const fromEntriesResult = Object.fromEntries(arr.map((arg0) => {
+    const items = [arg0, closure_0];
+    return items;
+  }));
+  importDefault(709).addDependencies(registerResult, arg2);
+  return registerResult;
+};
+prototype["validateInDev"] = function validateInDev() {
+
+};
 let result = set.fileFinishedImporting("modules/app_database/system/AppDatabaseManager.tsx");
 
-export const AppDatabaseManager = (() => {
-  class AppDatabaseManager {
-    constructor(arg0, arg1, arg2) {
-      self = this;
-      tmp = outer1_4(this, self);
-      tmp2 = outer1_3(self.computeEntries(arg0, arg2), 2);
-      this.name = arg0;
-      [this.actions, this.entries] = tmp2;
-      this.lastDatabase = null;
-      registerResult = self.register(`${arg0}_CLEAR_CACHES`, ["CLEAR_CACHES"], [], () => {
-        let done;
-        const tmp = outer2_9(self.entries);
-        let iter = tmp();
-        if (!iter.done) {
-          do {
-            let value = iter.value;
-            let resetResult = value.reset();
-            let iter2 = tmp();
-            iter = iter2;
-            done = iter2.done;
-          } while (!done);
-        }
-      });
-      actions = this.actions;
-      items = [...actions.keys()];
-      handleAction = this.handleAction;
-      registerResult1 = self.register(arg0, items, arg1, handleAction.bind(this));
-      verboseResult = outer1_7.verbose("" + arg0 + " created with " + arg2.length + " modules, " + this.actions.size + " distinct actions.");
-      return;
-    }
-  }
-  let obj = {
-    key: "handleAction",
-    value(type) {
-      this.validateInDev(type.type);
-      const id = outer1_6.getId();
-      const databaseResult = outer1_1(outer1_2[5]).database(id);
-      this.resetModules(type, databaseResult);
-      this.executeModules(type, databaseResult);
-      return false;
-    }
-  };
-  let items = [obj, , , ];
-  obj = {
-    key: "resetModules",
-    value(type, lastDatabase) {
-      let done;
-      const self = this;
-      if (lastDatabase !== this.lastDatabase) {
-        const _HermesInternal = HermesInternal;
-        outer1_7.verbose("database has changed (was: " + self.lastDatabase + ", now: " + lastDatabase + ", action: " + type.type + "). resetting modules.");
-        const tmp8 = outer1_9(self.entries);
-        let iter2 = tmp8();
-        if (!iter2.done) {
-          do {
-            let value = iter2.value;
-            let resetResult = value.reset();
-            let iter = tmp8();
-            iter2 = iter;
-            done = iter.done;
-          } while (!done);
-        }
-        self.lastDatabase = lastDatabase;
-      }
-    }
-  };
-  items[1] = obj;
-  obj = {
-    key: "executeModules",
-    value(type, state) {
-      let closure_0 = type;
-      let closure_1 = state;
-      type = type.type;
-      const actions = this.actions;
-      const value = actions.get(type);
-      let closure_2 = value;
-      if (null != state) {
-        const stateResult = state.state();
-      }
-      if (null != value) {
-        if (0 !== value.length) {
-          if (null != state) {
-            if (stateResult === AppDatabaseManager(outer1_2[6]).DatabaseState.Open) {
-              let combined = null;
-              if (!outer1_8.has(type.type)) {
-                const _HermesInternal2 = HermesInternal;
-                combined = "Dispatch " + type.type;
-              }
-              state.transaction((arg0) => {
-                let closure_0 = arg0;
-                return value.forEach((execute) => execute.execute(closure_0, closure_0));
-              }, combined);
-              if ("WRITE_CACHES" === type.type) {
-                const promisesToWaitOn = type.promisesToWaitOn;
-                promisesToWaitOn.push(tmp14);
-              }
-            }
-          }
-          const _HermesInternal = HermesInternal;
-          outer1_7.verbose("no usable database; skipping action (type: " + type + ", database: " + state + ", state: " + stateResult + ")");
-        }
-      }
-    }
-  };
-  items[2] = obj;
-  items[3] = {
-    key: "validateInDev",
-    value() {
-
-    }
-  };
-  const items1 = [
-    {
-      key: "handleException",
-      value(arg0, type, error) {
-        outer1_7.info("disabling database \u00B7 error encountered during dispatch", error, error.stack);
-        let obj = outer1_1(outer1_2[7]);
-        obj = { type: "RESET_SOCKET" };
-        obj = { error, action: "AppDatabaseManager(" + type.type + ")" };
-        obj.args = obj;
-        obj.dispatch(obj);
-      }
-    },
-    {
-      key: "computeEntries",
-      value(arg0, arr) {
-        let iter5;
-        let closure_0 = arg0;
-        const map = new Map();
-        const mapped = arr.map((arg0) => {
-          const entry = new AppDatabaseManager(outer2_2[8]).Entry(closure_0, arg0);
-          return entry;
-        });
-        const result = map.set("LOGOUT", []);
-        const result1 = map.set("LOGIN_RESET", []);
-        const tmp4 = outer1_9(mapped);
-        const iter = tmp4();
-        let iter2 = iter;
-        if (!iter.done) {
-          do {
-            let value = iter2.value;
-            let tmp5 = outer1_9;
-            let tmp6 = outer1_9(value.actions);
-            let iter3 = tmp6();
-            if (!iter3.done) {
-              do {
-                value = iter3.value;
-                if (!map.has(value)) {
-                  let result2 = map.set(value, []);
-                }
-                value = map.get(value);
-                arr = value.push(value);
-                iter4 = tmp6();
-                iter3 = iter4;
-                let tmp9 = value;
-              } while (!iter4.done);
-            }
-            iter5 = tmp4();
-            iter2 = iter5;
-          } while (!iter5.done);
-        }
-        const items = [map, mapped];
-        return items;
-      }
-    },
-    {
-      key: "register",
-      value(arg0, arr) {
-        let closure_0 = arg3;
-        const obj = outer1_1(outer1_2[7]);
-        const registerResult = obj.register(arg0, Object.fromEntries(arr.map((arg0) => {
-          const items = [arg0, closure_0];
-          return items;
-        })), () => {
-
-        }, AppDatabaseManager(outer1_2[7]).DispatchBand.Database);
-        const fromEntriesResult = Object.fromEntries(arr.map((arg0) => {
-          const items = [arg0, closure_0];
-          return items;
-        }));
-        outer1_1(outer1_2[7]).addDependencies(registerResult, arg2);
-        return registerResult;
-      }
-    }
-  ];
-  return callback(AppDatabaseManager, items, items1);
-})();
+export { AppDatabaseManager };

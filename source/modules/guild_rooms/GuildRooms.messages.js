@@ -1,20 +1,20 @@
-// Module ID: 2133
-// Function ID: 22478
+// Module ID: 2157
+// Function ID: 2158
 // Name: messagesProxy
-// Dependencies: [1215, 2134, 1250, 2]
+// Dependencies: [1239, 2158, 1274, 2]
 
-// Module 2133 (messagesProxy)
-import module_1250 from "module_1250";
-import module_1250 from "module_1250";
+// Module 2157 (messagesProxy)
+import module_1274 from "module_1274";
+import module_1274 from "module_1274";
 
-const loader = module_1250.createLoader({
+const loader = module_1274.createLoader({
   () => {
-    const jsonAsset = require(1215) /* loadJsonAsset */.loadJsonAsset(require(2134) /* registerAsset */);
+    const jsonAsset = require(1239) /* loadJsonAsset */.loadJsonAsset(require(2158) /* registerAsset */);
     return jsonAsset.then((arg0) => ({ default: arg0 }));
   }
 }, "en-US");
-const messagesProxy = module_1250.makeMessagesProxy(loader);
-const result = require("module_1250").fileFinishedImporting("modules/guild_rooms/GuildRooms.messages.js");
+const messagesProxy = module_1274.makeMessagesProxy(loader);
+const result = require("module_1274").fileFinishedImporting("modules/guild_rooms/GuildRooms.messages.js");
 
 export default messagesProxy;
 export const messagesLoader = loader;

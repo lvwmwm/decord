@@ -1,11 +1,11 @@
-// Module ID: 9220
-// Function ID: 72157
+// Module ID: 9244
+// Function ID: 9245
 // Name: useFastestListUnexpectedItemSizeCallback
-// Dependencies: [31, 9221, 2]
+// Dependencies: [19, 9245, 2]
 // Exports: default
 
-// Module 9220 (useFastestListUnexpectedItemSizeCallback)
-import result from "result";
+// Module 9244 (useFastestListUnexpectedItemSizeCallback)
+import noop from "noop";
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/fastest_list/useFastestListUnexpectedItemSizeCallback.android.tsx");
@@ -17,44 +17,35 @@ export default function useFastestListUnexpectedItemSizeCallback(arg0) {
     nativeEvent = nativeEvent.nativeEvent;
     const current = ref.current;
     if (nativeEvent.isSectionHeader) {
+      const renderSectionHeader = current.renderSectionHeader;
       let renderSectionHeaderResult;
-      if (null != current.renderSectionHeader) {
-        renderSectionHeaderResult = current.renderSectionHeader(nativeEvent.section);
+      if (renderSectionHeader != null) {
+        renderSectionHeaderResult = renderSectionHeader(nativeEvent.section);
       }
-      let tmp8;
-      if (null != renderSectionHeaderResult) {
-        tmp8 = renderSectionHeaderResult;
-      }
-      let element = tmp8;
+      let element = renderSectionHeaderResult;
     } else if (nativeEvent.isSectionFooter) {
+      const renderSectionFooter = current.renderSectionFooter;
       let renderSectionFooterResult;
-      if (null != current.renderSectionFooter) {
-        renderSectionFooterResult = current.renderSectionFooter(nativeEvent.section);
+      if (renderSectionFooter != null) {
+        renderSectionFooterResult = renderSectionFooter(nativeEvent.section);
       }
-      let tmp5;
-      if (null != renderSectionFooterResult) {
-        tmp5 = renderSectionFooterResult;
-      }
-      element = tmp5;
+      element = renderSectionFooterResult;
     } else {
-      const renderItemResult = current.renderItem(nativeEvent.section, nativeEvent.item);
-      if (null != renderItemResult) {
-        element = renderItemResult;
-      }
+      element = current.renderItem(nativeEvent.section, nativeEvent.item);
     }
-    if (null != element) {
+    if (element != null) {
       const props = element.props;
     }
     let type;
-    if (null != element) {
+    if (element != null) {
       type = element.type;
     }
-    if ("function" === typeof type) {
+    if (typeof type !== "_") {
       if (type.name.length > 0) {
-        let name = type.name;
+        let str = type.name;
       }
       let joined;
-      if (null == name) {
+      if (null == str) {
         const _Object = Object;
         const keys = Object.keys(props);
         joined = keys.join(",");
@@ -72,26 +63,25 @@ export default function useFastestListUnexpectedItemSizeCallback(arg0) {
           combined = "Item at section " + section + " and index " + nativeEvent.item + ".";
         }
       }
-      const obj = {};
+      const obj = { detailMessage: null, itemPosition: null, itemName: null, itemProps: null, listId: null };
       const _HermesInternal4 = HermesInternal;
-      obj.detailMessage = "Expected item size " + nativeEvent.sizeExpected + ", but got " + nativeEvent.size + ".";
-      obj.itemPosition = combined;
-      let str12 = "Unknown component.";
-      if (null != name) {
-        str12 = name;
+      obj[0] = "Expected item size " + nativeEvent.sizeExpected + ", but got " + nativeEvent.size + ".";
+      obj[1] = combined;
+      if (str == null) {
+        str = "Unknown component.";
       }
-      obj.itemName = str12;
-      obj.itemProps = joined;
-      obj.listId = ref.current.listId;
+      obj[2] = str;
+      obj[3] = joined;
+      obj[4] = ref.current.listId;
       ref(outer1_1[1]).logFastestListError("Expected item size mismatch.", obj);
     }
     let type1;
-    if (null != type) {
+    if (type != null) {
       type1 = type.type;
     }
-    if ("function" === typeof type1) {
+    if (typeof type1 !== "_") {
       if (type1.name.length > 0) {
-        name = type1.name;
+        str = type1.name;
       }
     }
   }, items);

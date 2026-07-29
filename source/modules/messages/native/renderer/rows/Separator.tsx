@@ -1,19 +1,19 @@
-// Module ID: 12371
-// Function ID: 96158
+// Module ID: 12393
+// Function ID: 12394
 // Name: generateSeparatorRowData
-// Dependencies: [7691, 4165, 689, 1324, 1327, 2]
+// Dependencies: [7714, 4189, 712, 1348, 1351, 2]
 // Exports: generateSeparatorRowData
 
-// Module 12371 (generateSeparatorRowData)
+// Module 12393 (generateSeparatorRowData)
 import Changeset from "Changeset";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_2;
-let closure_3;
-({ RowType: closure_2, SeparatorType: closure_3 } = Changeset);
-let closure_4 = _createForOfIteratorHelperLoose.createNativeStyleProperties({ dayColor: require("_createForOfIteratorHelperLoose").colors.TEXT_MUTED, unreadTextColor: require("_createForOfIteratorHelperLoose").colors.MOBILE_CHAT_NEW_MESSAGE_TEXT, unreadBorderColor: require("_createForOfIteratorHelperLoose").colors.MOBILE_CHAT_NEW_MESSAGE_BORDER, summaryColor: require("_createForOfIteratorHelperLoose").colors.TEXT_BRAND });
-let obj = { dayColor: require("_createForOfIteratorHelperLoose").colors.TEXT_MUTED, unreadTextColor: require("_createForOfIteratorHelperLoose").colors.MOBILE_CHAT_NEW_MESSAGE_TEXT, unreadBorderColor: require("_createForOfIteratorHelperLoose").colors.MOBILE_CHAT_NEW_MESSAGE_BORDER, summaryColor: require("_createForOfIteratorHelperLoose").colors.TEXT_BRAND };
-const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/messages/native/renderer/rows/Separator.tsx");
+let c3;
+let obj1;
+({ RowType: obj1, SeparatorType: c3 } = Changeset);
+let closure_4 = createCacheKey.createNativeStyleProperties({ dayColor: require("Themes").colors.TEXT_MUTED, unreadTextColor: require("Themes").colors.MOBILE_CHAT_NEW_MESSAGE_TEXT, unreadBorderColor: require("Themes").colors.MOBILE_CHAT_NEW_MESSAGE_BORDER, summaryColor: require("Themes").colors.TEXT_BRAND });
+let obj = { dayColor: require("Themes").colors.TEXT_MUTED, unreadTextColor: require("Themes").colors.MOBILE_CHAT_NEW_MESSAGE_TEXT, unreadBorderColor: require("Themes").colors.MOBILE_CHAT_NEW_MESSAGE_BORDER, summaryColor: require("Themes").colors.TEXT_BRAND };
+const result = require("Themes").fileFinishedImporting("modules/messages/native/renderer/rows/Separator.tsx");
 
 export const generateSeparatorRowData = function generateSeparatorRowData(text, theme) {
   let changeType;
@@ -21,24 +21,39 @@ export const generateSeparatorRowData = function generateSeparatorRowData(text, 
   ({ rowType, changeType } = text);
   const tmp = callback(theme);
   if (constants2.DAY === rowType) {
-    let obj = { type: constants.SEPARATOR, id: rowType, color: tmp.dayColor, text: text.text, changeType };
+    let obj = { type: null, id: null, color: null, text: null, changeType: null };
+    obj[0] = constants.SEPARATOR;
+    obj[1] = rowType;
+    obj[2] = tmp.dayColor;
+    obj[3] = text.text;
+    obj[4] = changeType;
     return obj;
-  } else if (constants2.UNREAD === rowType) {
-    obj = { type: constants.SEPARATOR, id: rowType, color: tmp.unreadTextColor };
+  } else if (tmp2.UNREAD === rowType) {
+    obj = { type: null, id: null, color: null, borderColor: null, changeType: null, text: null };
+    obj[0] = constants.SEPARATOR;
+    obj[1] = rowType;
+    obj[2] = tmp.unreadTextColor;
     let unreadBorderColor;
     if (obj4.isMobileVisualRefreshEnabled("Separator")) {
       unreadBorderColor = tmp.unreadBorderColor;
     }
-    obj.borderColor = unreadBorderColor;
-    obj.changeType = changeType;
-    obj.text = text.text;
+    obj[3] = unreadBorderColor;
+    obj[4] = changeType;
+    obj[5] = text.text;
     return obj;
-  } else if (constants2.SUMMARY === rowType) {
+  } else if (tmp2.SUMMARY === rowType) {
     const summary = text.summary;
-    const obj1 = { type: constants.SEPARATOR, id: rowType, color: tmp.summaryColor, text: summary.topic, summary, isBeforeContent: text.isBeforeContent, changeType };
+    const obj1 = { type: null, id: null, color: null, text: null, summary: null, isBeforeContent: null, changeType: null };
+    obj1[0] = constants.SEPARATOR;
+    obj1[1] = rowType;
+    obj1[2] = tmp.summaryColor;
+    obj1[3] = summary.topic;
+    obj1[4] = summary;
+    obj1[5] = text.isBeforeContent;
+    obj1[6] = changeType;
     return obj1;
   } else {
-    obj = require(1327) /* isDiscordFrontendDevelopment */;
+    obj = require(1351) /* isDiscordFrontendDevelopment */;
     obj.assertNever(rowType);
   }
 };

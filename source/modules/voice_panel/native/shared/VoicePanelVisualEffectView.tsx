@@ -1,55 +1,57 @@
-// Module ID: 15967
-// Function ID: 123253
+// Module ID: 16002
+// Function ID: 16003
 // Name: VoicePanelVisualEffectView
-// Dependencies: [31, 27, 33, 4165, 689, 3869, 1324, 8212, 2]
+// Dependencies: [19, 17, 21, 4189, 712, 3893, 1348, 8236, 2]
 
-// Module 15967 (VoicePanelVisualEffectView)
+// Module 16002 (VoicePanelVisualEffectView)
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import importAllResult from "result";
+import createCacheKey from "createCacheKey";
+import importAllResult from "noop";
 
 let StyleSheet;
-let closure_3;
-let closure_4;
-let closure_5;
+let c3;
+let c4;
+let c5;
 const require = arg1;
-({ StyleSheet, View: closure_3 } = get_ActivityIndicator);
-({ jsx: closure_4, jsxs: closure_5 } = jsxProd);
-let obj = {};
+({ StyleSheet, View: c3 } = get_ActivityIndicator);
+({ jsx: c4, jsxs: c5 } = jsxProd);
+let obj = { wrapper: null, border: null };
 obj = {};
 const merged = Object.assign(StyleSheet.absoluteFillObject);
-obj.wrapper = obj;
-_createForOfIteratorHelperLoose = {};
+obj[0] = obj;
+createCacheKey = {};
 const merged1 = Object.assign(StyleSheet.absoluteFillObject);
-_createForOfIteratorHelperLoose["borderWidth"] = 1;
-_createForOfIteratorHelperLoose["borderColor"] = require("_createForOfIteratorHelperLoose").colors.BORDER_SUBTLE;
-_createForOfIteratorHelperLoose["borderRadius"] = require("_createForOfIteratorHelperLoose").modules.mobile.VOICE_PANEL_CONTROLS_BORDER_RADIUS;
-obj.border = _createForOfIteratorHelperLoose;
-let closure_6 = _createForOfIteratorHelperLoose.createStyles(obj);
-const memoResult = require("result").memo(function VoicePanelVisualEffectViewInner(matchAppTheme) {
+createCacheKey.borderWidth = 1;
+createCacheKey.borderColor = require("Themes").colors.BORDER_SUBTLE;
+createCacheKey.borderRadius = require("Themes").modules.mobile.VOICE_PANEL_CONTROLS_BORDER_RADIUS;
+obj[1] = createCacheKey;
+let closure_6 = createCacheKey.createStyles(obj);
+const memoResult = require("noop").memo(function VoicePanelVisualEffectViewInner(matchAppTheme) {
   let flag = matchAppTheme.matchAppTheme;
   if (flag === undefined) {
     flag = false;
   }
-  let obj = require(3869) /* map */;
-  const token = obj.useToken(importDefault(689).colors.THEME_LOCKED_BLUR_FALLBACK);
-  const tmp2 = callback3();
-  obj = { blurTheme: "dark" };
+  let obj = require(3893) /* map */;
+  const token = obj.useToken(importDefault(712).colors.THEME_LOCKED_BLUR_FALLBACK);
+  const tmp2 = callback2();
+  obj = { blurTheme: str, android_fallbackColor: null };
   let tmp5;
   if (!flag) {
     tmp5 = token;
   }
-  obj.android_fallbackColor = tmp5;
-  const tmp4Result = callback(require(8212) /* TwinButtons */.BackgroundBlurFill, obj);
+  obj[1] = tmp5;
+  const tmp4Result = closure_4(require(8236) /* TwinButtons */.BackgroundBlurFill, obj);
   let tmp7 = tmp4Result;
   if (tmp3) {
-    obj = { style: tmp2.wrapper };
+    obj = { style: null, children: null };
+    obj[0] = tmp2.wrapper;
     const items = [tmp4Result, ];
-    const obj1 = { style: tmp2.border };
-    items[1] = callback(closure_3, obj1);
-    obj.children = items;
-    tmp7 = callback2(closure_3, obj);
+    const obj1 = { style: null };
+    obj1[0] = tmp2.border;
+    items[1] = tmp4(closure_3, obj1);
+    obj[1] = items;
+    tmp7 = callback(closure_3, obj);
   }
   return tmp7;
 });

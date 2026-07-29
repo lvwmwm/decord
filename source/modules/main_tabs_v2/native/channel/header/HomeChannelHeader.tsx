@@ -1,30 +1,32 @@
-// Module ID: 10118
-// Function ID: 78232
-// Dependencies: [31, 27, 33, 4165, 689, 1273, 10119, 4161, 1212, 2]
+// Module ID: 10139
+// Function ID: 10140
+// Dependencies: [19, 17, 21, 4189, 712, 1297, 10140, 4185, 1236, 2]
 
-// Module 10118
+// Module 10139
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import importAllResult from "result";
+import createCacheKey from "createCacheKey";
+import importAllResult from "noop";
 
-let closure_4;
-let closure_5;
+let c4;
+let c5;
 const require = arg1;
-({ jsx: closure_4, jsxs: closure_5 } = jsxProd);
-let obj = {};
-obj = { flex: 1, flexDirection: "row", alignItems: "center", gap: require("_createForOfIteratorHelperLoose").space.PX_8 };
-obj.container = obj;
-let closure_6 = _createForOfIteratorHelperLoose.createStyles(obj);
-const memoResult = require("result").memo(function HomeChannelHeader() {
-  let obj = { style: callback3().container };
-  obj = { source: importDefault(10119), size: require(1273) /* Button */.Icon.Sizes.MEDIUM, disableColor: true };
-  const items = [callback(require(1273) /* Button */.Icon, obj), ];
-  obj = { variant: "heading-lg/extrabold", color: "interactive-text-active" };
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj.children = intl.string(require(1212) /* getSystemLocale */.t.Ym2Ri6);
-  items[1] = callback(require(4161) /* Text */.Text, obj);
-  obj.children = items;
+({ jsx: c4, jsxs: c5 } = jsxProd);
+let obj = { container: null };
+obj = { flex: 1, flexDirection: "row", alignItems: "center", gap: require("Themes").space.PX_8 };
+obj[0] = obj;
+let closure_6 = createCacheKey.createStyles(obj);
+const memoResult = require("noop").memo(function HomeChannelHeader() {
+  let obj = { style: callback3().container, children: null };
+  obj = { source: null, size: null, disableColor: true };
+  obj[0] = importDefault(10140);
+  obj[1] = require(1297) /* Button */.Icon.Sizes.MEDIUM;
+  const items = [callback(require(1297) /* Button */.Icon, obj), ];
+  obj = { variant: "heading-lg/extrabold", color: "interactive-text-active", children: null };
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj[2] = intl.string(require(1236) /* getSystemLocale */.t.Ym2Ri6);
+  items[1] = callback(require(4185) /* Text */.Text, obj);
+  obj[1] = items;
   return callback2(View, obj);
 });
 const result = require("jsxProd").fileFinishedImporting("modules/main_tabs_v2/native/channel/header/HomeChannelHeader.tsx");

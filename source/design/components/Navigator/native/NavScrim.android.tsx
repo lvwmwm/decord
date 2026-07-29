@@ -1,33 +1,35 @@
-// Module ID: 5483
-// Function ID: 46720
+// Module ID: 5501
+// Function ID: 5502
 // Name: NavScrim
-// Dependencies: [31, 27, 33, 4165, 689, 5193, 2]
+// Dependencies: [19, 17, 21, 4189, 712, 5215, 2]
 
-// Module 5483 (NavScrim)
+// Module 5501 (NavScrim)
 import get_ActivityIndicator from "get ActivityIndicator";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import importAllResult from "result";
+import createCacheKey from "createCacheKey";
+import importAllResult from "noop";
 
-const View = get_ActivityIndicator.View;
-let obj = {};
+let StyleSheet;
+let obj1;
+({ View: obj1, StyleSheet } = get_ActivityIndicator);
+let obj = { androidNavScrim: null };
 obj = {};
-const merged = Object.assign(get_ActivityIndicator.StyleSheet.absoluteFillObject);
-obj["backgroundColor"] = require("_createForOfIteratorHelperLoose").colors.ANDROID_NAVIGATION_SCRIM_BACKGROUND;
-obj["top"] = undefined;
-obj.androidNavScrim = obj;
-let closure_4 = _createForOfIteratorHelperLoose.createStyles(obj);
-const memoResult = require("result").memo(() => {
-  const insets = importDefault(5193)({ includeCustomKeyboardHeight: false }).insets;
+const merged = Object.assign(StyleSheet.absoluteFillObject);
+obj.backgroundColor = require("Themes").colors.ANDROID_NAVIGATION_SCRIM_BACKGROUND;
+obj.top = undefined;
+obj[0] = obj;
+let closure_4 = createCacheKey.createStyles(obj);
+const memoResult = require("noop").memo(() => {
+  const insets = importDefault(5215)({ includeCustomKeyboardHeight: false }).insets;
   let tmp2 = null;
   if (0 !== insets.bottom) {
-    let obj = {};
+    let obj = { style: null, pointerEvents: "none" };
     const items = [tmp.androidNavScrim, ];
-    obj = { height: insets.bottom };
+    obj = { height: null };
+    obj[0] = insets.bottom;
     items[1] = obj;
-    obj.style = items;
-    obj.pointerEvents = "none";
-    tmp2 = <View height={insets.bottom} />;
+    obj[0] = items;
+    tmp2 = <closure_2 height={null} />;
   }
   return tmp2;
 });

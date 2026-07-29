@@ -1,25 +1,25 @@
-// Module ID: 11822
-// Function ID: 91620
+// Module ID: 11847
+// Function ID: 11848
 // Name: showInstantInviteModal
-// Dependencies: [1908, 653, 8324, 2]
+// Dependencies: [1932, 676, 8348, 2]
 // Exports: showInstantInviteModal
 
-// Module 11822 (showInstantInviteModal)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 11847 (showInstantInviteModal)
+import comparator from "comparator";
 import { InstantInviteSources } from "ME";
 
 const require = arg1;
 let result = require("showInstantInviteActionSheet").fileFinishedImporting("actions/native/CreateGuildActionCreators.tsx");
 
 export const showInstantInviteModal = function showInstantInviteModal(closure_0) {
-  let result = _isNativeReflectConstruct.addConditionalChangeListener(() => {
+  let result = comparator.addConditionalChangeListener(() => {
     defaultChannel = outer1_2.getDefaultChannel(defaultChannel);
     let flag = null == defaultChannel;
     if (!flag) {
       const _setImmediate = setImmediate;
       setImmediate(() => {
-        let obj = defaultChannel(outer2_1[2]);
-        obj = { source: outer2_3.GUILD_CREATE };
+        let obj = defaultChannel(outer1_1[2]);
+        obj = { source: outer1_3.GUILD_CREATE };
         const result = obj.showInstantInviteActionSheet(defaultChannel, obj);
       });
       flag = false;

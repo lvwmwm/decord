@@ -1,44 +1,44 @@
-// Module ID: 12052
-// Function ID: 92949
+// Module ID: 12076
+// Function ID: 12077
 // Name: applicationWidgetStaticFieldConfigSchema
-// Dependencies: [12053, 12051, 12050, 12129, 2]
+// Dependencies: [12077, 12075, 12074, 12153, 2]
 
-// Module 12052 (applicationWidgetStaticFieldConfigSchema)
-import { z } from "module_12053";
-import { z as z2 } from "module_12053";
-import { z as z3 } from "module_12053";
-import { z as z4 } from "module_12053";
-import { z as z5 } from "module_12053";
-import { z as z6 } from "module_12053";
-import { z as z7 } from "module_12053";
-import { z as z8 } from "module_12053";
-import { z as z9 } from "module_12053";
-import { z as z10 } from "module_12053";
-import { z as z11 } from "module_12053";
-import { z as z12 } from "module_12053";
-import { z as z13 } from "module_12053";
-import { z as z14 } from "module_12053";
-import { z as z15 } from "module_12053";
-import { z as z16 } from "module_12053";
-import { z as z17 } from "module_12053";
+// Module 12076 (applicationWidgetStaticFieldConfigSchema)
+import { z } from "module_12077";
+import { z as z2 } from "module_12077";
+import { z as z3 } from "module_12077";
+import { z as z4 } from "module_12077";
+import { z as z5 } from "module_12077";
+import { z as z6 } from "module_12077";
+import { z as z7 } from "module_12077";
+import { z as z8 } from "module_12077";
+import { z as z9 } from "module_12077";
+import { z as z10 } from "module_12077";
+import { z as z11 } from "module_12077";
+import { z as z12 } from "module_12077";
+import { z as z13 } from "module_12077";
+import { z as z14 } from "module_12077";
+import { z as z15 } from "module_12077";
+import { z as z16 } from "module_12077";
+import { z as z17 } from "module_12077";
 
-let obj = {};
-obj.value_type = z2.enum(require("ApplicationWidgetFieldValueType").ApplicationWidgetFieldValueType);
-obj.presentation_type = z3.enum(require("ApplicationWidgetFieldPresentationType").ApplicationWidgetFieldPresentationType);
-obj.value = z4.string();
+let obj = { value_type: null, presentation_type: null, value: null };
+obj[0] = z2.enum(require("ApplicationWidgetFieldValueType").ApplicationWidgetFieldValueType);
+obj[1] = z3.enum(require("ApplicationWidgetFieldPresentationType").ApplicationWidgetFieldPresentationType);
+obj[2] = z4.string();
 let objectResult = z.object(obj);
-obj = {};
-obj.value_type = z6.enum(require("ApplicationWidgetFieldValueType").ApplicationWidgetFieldValueType);
-obj.presentation_type = z7.enum(require("ApplicationWidgetFieldPresentationType").ApplicationWidgetFieldPresentationType);
-obj.value = z8.string();
-obj.fallback = objectResult.nullish();
+obj = { value_type: null, presentation_type: null, value: null, fallback: null };
+obj[0] = z6.enum(require("ApplicationWidgetFieldValueType").ApplicationWidgetFieldValueType);
+obj[1] = z7.enum(require("ApplicationWidgetFieldPresentationType").ApplicationWidgetFieldPresentationType);
+obj[2] = z8.string();
+obj[3] = objectResult.nullish();
 objectResult = z5.object(obj);
-obj = {};
-obj.fields = z10.partialRecord(z11.string(), objectResult);
+obj = { fields: null };
+obj[0] = z10.partialRecord(z11.string(), objectResult);
 const objectResult1 = z9.object(obj);
-const obj1 = {};
-obj1.layout = z13.string();
-obj1.components = z14.partialRecord(z15.string(), objectResult1);
+const obj1 = { layout: null, components: null };
+obj1[0] = z13.string();
+obj1[1] = z14.partialRecord(z15.string(), objectResult1);
 const objectResult2 = z12.object(obj1);
 const partialRecordResult = z16.partialRecord(z17.enum(require("ApplicationWidgetConfigSurface").ApplicationWidgetConfigSurface), objectResult2);
 const result = require("ApplicationWidgetFieldPresentationType").fileFinishedImporting("../discord_common/js/packages/application-widget-renderer/src/schemas.tsx");

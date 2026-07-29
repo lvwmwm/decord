@@ -1,12 +1,12 @@
-// Module ID: 12155
-// Function ID: 95078
+// Module ID: 12179
+// Function ID: 12180
 // Name: useWishlistViewerCoachmark
-// Dependencies: [57, 31, 1334, 8417, 2]
+// Dependencies: [32, 19, 1358, 8441, 2]
 // Exports: useWishlistViewerCoachmark
 
-// Module 12155 (useWishlistViewerCoachmark)
+// Module 12179 (useWishlistViewerCoachmark)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
+import noop from "noop";
 
 const require = arg1;
 const result = require("DismissibleContent").fileFinishedImporting("modules/user_profile/hooks/native/useWishlistViewerCoachmark.tsx");

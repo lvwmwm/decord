@@ -1,34 +1,18 @@
-// Module ID: 4001
-// Function ID: 32943
-// Name: paramPattern
-// Dependencies: [654, 1355, 484, 4002, 2]
+// Module ID: 4025
+// Function ID: 4026
+// Name: RouteParam
+// Dependencies: [677, 1379, 507, 4026, 2]
 
-// Module 4001 (paramPattern)
-import { PSEUDO_GUILD_IDS } from "APP_WITH_INVITE_AND_GUILD_ONBOARDING";
+// Module 4025 (RouteParam)
+import { PSEUDO_GUILD_IDS } from "INVITE";
 import { StaticChannelRoutes } from "set";
 
-function paramPattern(arg0, arg1, controlsSpecs) {
-  let obj = controlsSpecs;
-  if (controlsSpecs === undefined) {
-    obj = {};
-  }
-  let flag = obj.optional;
-  if (flag === undefined) {
-    flag = false;
-  }
-  let str = "";
-  if (flag) {
-    str = "?";
-  }
-  const unescapedPathParam = new require(484) /* getAuthenticationPath */.UnescapedPathParam(":" + importDefault(4002)(arg0) + "(" + arg1 + ")" + str);
-  return unescapedPathParam;
-}
 const result = require("getAuthenticationPath").fileFinishedImporting("modules/routing/RouteParam.tsx");
 
 export const RouteParam = {
-  guildId(onChannelCreated, items) {
-    let obj = onChannelCreated;
-    if (onChannelCreated === undefined) {
+  guildId() {
+    let obj = arg0;
+    if (arg0 === undefined) {
       obj = {};
     }
     let str = obj.name;
@@ -39,13 +23,22 @@ export const RouteParam = {
     if (flag === undefined) {
       flag = false;
     }
-    const mapped = PSEUDO_GUILD_IDS.map(importDefault(4002));
-    obj = { optional: flag };
-    return paramPattern(str, "" + mapped.join("|") + "|\\d+", obj);
+    const mapped = PSEUDO_GUILD_IDS.map(importDefault(4026));
+    const combined = "" + mapped.join("|") + "|\\d+";
+    let flag2 = { optional: flag }.optional;
+    if (flag2 === undefined) {
+      flag2 = false;
+    }
+    let str2 = "";
+    if (flag2) {
+      str2 = "?";
+    }
+    const unescapedPathParam = new require(507) /* getAuthenticationPath */.UnescapedPathParam(":" + importDefault(4026)(str) + "(" + combined + ")" + str2);
+    return unescapedPathParam;
   },
-  channelId(controlsSpecs, arg1) {
-    let obj = controlsSpecs;
-    if (controlsSpecs === undefined) {
+  channelId() {
+    let obj = arg0;
+    if (arg0 === undefined) {
       obj = {};
     }
     let str = obj.name;
@@ -57,8 +50,17 @@ export const RouteParam = {
       flag = false;
     }
     const items = [...StaticChannelRoutes];
-    const mapped = items.map(importDefault(4002));
-    obj = { optional: flag };
-    return paramPattern(str, "" + mapped.join("|") + "|\\d+", obj);
+    const mapped = items.map(importDefault(4026));
+    const combined = "" + mapped.join("|") + "|\\d+";
+    let flag2 = { optional: flag }.optional;
+    if (flag2 === undefined) {
+      flag2 = false;
+    }
+    let str2 = "";
+    if (flag2) {
+      str2 = "?";
+    }
+    const unescapedPathParam = new require(507) /* getAuthenticationPath */.UnescapedPathParam(":" + importDefault(4026)(str) + "(" + combined + ")" + str2);
+    return unescapedPathParam;
   }
 };

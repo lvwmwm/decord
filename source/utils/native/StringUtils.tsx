@@ -1,30 +1,32 @@
-// Module ID: 8365
-// Function ID: 66952
+// Module ID: 8389
+// Function ID: 8390
 // Name: splitGraphemes
-// Dependencies: [8364, 2]
+// Dependencies: [8388, 2]
 // Exports: splitGraphemes
 
-// Module 8365 (splitGraphemes)
+// Module 8389 (splitGraphemes)
 const result = require("set").fileFinishedImporting("utils/native/StringUtils.tsx");
 
 export const splitGraphemes = function splitGraphemes(closure_0) {
-  const obj = importDefault(8364)();
+  const obj = importDefault(8388)();
   const items = [];
   let match = obj.exec(closure_0);
   let num = 0;
   let num2 = 0;
   if (null !== match) {
     do {
+      let tmp2 = num;
+      let tmp3 = match;
       if (match.index > num) {
         let push = items.push;
         let _Array = Array;
         let items1 = [];
-        let tmp2 = items1;
+        let tmp4 = items1;
         let num3 = 0;
         let arraySpreadResult = HermesBuiltin.arraySpread(Array.from(closure_0.slice(num, match.index)), 0);
-        let tmp4 = push;
-        let tmp5 = items1;
-        let tmp6 = items;
+        let tmp6 = push;
+        let tmp7 = items1;
+        let tmp8 = items;
         let applyResult = HermesBuiltin.apply(items1, items);
       }
       let arr = items.push(match[0]);

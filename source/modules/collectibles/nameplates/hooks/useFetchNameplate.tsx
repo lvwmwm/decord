@@ -1,27 +1,29 @@
-// Module ID: 13709
-// Function ID: 105145
+// Module ID: 13730
+// Function ID: 13731
 // Name: useFetchNameplate
-// Dependencies: [8021, 1877, 1874, 2]
+// Dependencies: [8045, 1901, 1898, 2]
 // Exports: useFetchNameplate
 
-// Module 13709 (useFetchNameplate)
+// Module 13730 (useFetchNameplate)
 const result = require("getNameplateData").fileFinishedImporting("modules/collectibles/nameplates/hooks/useFetchNameplate.tsx");
 
 export const useFetchNameplate = function useFetchNameplate(skuId) {
-  let obj = require(8021) /* useFetchCollectiblesProduct */;
+  let obj = require(8045) /* useFetchCollectiblesProduct */;
   const fetchCollectiblesProduct = obj.useFetchCollectiblesProduct(skuId);
   const product = fetchCollectiblesProduct.product;
   let type;
-  if (null != product) {
+  if (product != null) {
     const first = product.items[0];
-    if (null != first) {
+    if (first != null) {
       type = first.type;
     }
   }
   let first1;
-  if (type === require(1877) /* CollectiblesItemType */.CollectiblesItemType.NAMEPLATE) {
+  if (type === require(1901) /* CollectiblesItemType */.CollectiblesItemType.NAMEPLATE) {
     first1 = product.items[0];
   }
-  obj = { nameplateProduct: product, nameplateRecord: first1, nameplateData: require(1874) /* getNameplateData */.getNameplateData(first1), isFetching: fetchCollectiblesProduct.isFetching };
+  obj = { nameplateProduct: product, nameplateRecord: first1, nameplateData: null, isFetching: null };
+  obj[2] = require(1898) /* getNameplateData */.getNameplateData(first1);
+  obj[3] = fetchCollectiblesProduct.isFetching;
   return obj;
 };

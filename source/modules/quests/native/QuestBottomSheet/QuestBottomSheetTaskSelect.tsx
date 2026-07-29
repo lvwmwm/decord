@@ -1,45 +1,47 @@
-// Module ID: 14163
-// Function ID: 108737
+// Module ID: 14185
+// Function ID: 14186
 // Name: QuestBottomSheetTaskSelect
-// Dependencies: [31, 5011, 33, 5536, 5198, 11902, 1212, 8911, 2]
+// Dependencies: [19, 5033, 21, 5554, 5220, 11926, 1236, 8935, 2]
 // Exports: default
 
-// Module 14163 (QuestBottomSheetTaskSelect)
-import "result";
+// Module 14185 (QuestBottomSheetTaskSelect)
+import "noop";
 import { QuestTaskPlatform } from "QuestsExperimentLocations";
 import jsxProd from "jsxProd";
 
-let closure_3;
-let closure_4;
+let c3;
+let c4;
 const require = arg1;
-({ jsx: closure_3, jsxs: closure_4 } = jsxProd);
+({ jsx: c3, jsxs: c4 } = jsxProd);
 const result = require("jsxProd").fileFinishedImporting("modules/quests/native/QuestBottomSheet/QuestBottomSheetTaskSelect.tsx");
 
 export default function QuestBottomSheetTaskSelect(onTaskSelect) {
   onTaskSelect = onTaskSelect.onTaskSelect;
-  let obj = { hasIcons: true };
-  obj = { arrow: true, icon: callback(onTaskSelect(11902).ScreenIcon, {}) };
-  const intl = onTaskSelect(1212).intl;
-  obj.label = intl.string(onTaskSelect(1212).t["QXc01+"]);
-  obj.onPress = function onPress() {
-    let tmp;
-    if (null != onTaskSelect) {
-      tmp = onTaskSelect(outer1_2.DESKTOP);
+  let obj = { hasIcons: true, children: null };
+  obj = { arrow: true, icon: null, label: null, onPress: null };
+  obj[1] = callback(onTaskSelect(11926).ScreenIcon, {});
+  const intl = onTaskSelect(1236).intl;
+  obj[2] = intl.string(onTaskSelect(1236).t["QXc01+"]);
+  obj[3] = function onPress() {
+    let tmpResult;
+    if (onTaskSelect != null) {
+      tmpResult = tmp(outer1_2.DESKTOP);
     }
-    return tmp;
+    return tmpResult;
   };
-  const items = [callback(onTaskSelect(5198).TableRow, obj), ];
-  obj = { arrow: true, icon: callback(onTaskSelect(8911).GameControllerIcon, {}) };
-  const intl2 = onTaskSelect(1212).intl;
-  obj.label = intl2.string(onTaskSelect(1212).t["8lAfuB"]);
-  obj.onPress = function onPress() {
-    let tmp;
-    if (null != onTaskSelect) {
-      tmp = onTaskSelect(outer1_2.CONSOLE);
+  const items = [callback(onTaskSelect(5220).TableRow, obj), ];
+  obj = { arrow: true, icon: null, label: null, onPress: null };
+  obj[1] = callback(onTaskSelect(8935).GameControllerIcon, {});
+  const intl2 = onTaskSelect(1236).intl;
+  obj[2] = intl2.string(onTaskSelect(1236).t["8lAfuB"]);
+  obj[3] = function onPress() {
+    let tmpResult;
+    if (onTaskSelect != null) {
+      tmpResult = tmp(outer1_2.CONSOLE);
     }
-    return tmp;
+    return tmpResult;
   };
-  items[1] = callback(onTaskSelect(5198).TableRow, obj);
-  obj.children = items;
-  return callback2(onTaskSelect(5536).TableRowGroup, obj);
+  items[1] = callback(onTaskSelect(5220).TableRow, obj);
+  obj[1] = items;
+  return callback2(onTaskSelect(5554).TableRowGroup, obj);
 };

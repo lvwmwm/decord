@@ -1,127 +1,117 @@
-// Module ID: 5726
-// Function ID: 49422
-// Name: makeLogKey
-// Dependencies: [6, 7, 2]
+// Module ID: 5744
+// Function ID: 5745
+// Name: recordChannelFetchStart
+// Dependencies: [2]
 
-// Module 5726 (makeLogKey)
-import _classCallCheck from "_classCallCheck";
-import _defineProperties from "_defineProperties";
+// Module 5744 (recordChannelFetchStart)
+import set from "set";
 
-function makeLogKey(arg0, arg1, arg2, arg3, arg4) {
-  return "" + arg0 + ":" + arg1 + ":" + arg2 + ":" + arg3 + ":" + arg4;
-}
-let tmp2 = (() => {
-  class MessageCacheStats {
-    constructor() {
-      tmp = MessageCacheStats(this, MessageCacheStats);
-      set = new Set();
-      this.channelsFetchStarted = set;
-      set1 = new Set();
-      this.channelsFetchedWithLocalMessages = set1;
-      set2 = new Set();
-      this.channelsFetchedNetwork = set2;
-      map = new Map();
-      this.fetchLogs = map;
-      return;
-    }
+class MessageCacheStats {
+  constructor() {
+    obj = Object.create(new.target.prototype);
+    set = new Set();
+    obj[0] = set;
+    set1 = new Set();
+    obj[1] = set1;
+    set2 = new Set();
+    obj[2] = set2;
+    map = new Map();
+    obj[3] = map;
+    return obj;
   }
-  let obj = {
-    key: "recordChannelFetchStart",
-    value(channelId, arg1, arg2, arg3, limit) {
-      const channelsFetchStarted = this.channelsFetchStarted;
-      channelsFetchStarted.add(channelId);
-      const fetchLogs = this.fetchLogs;
-      let tmp3 = null;
-      if (null != arg2) {
-        tmp3 = arg2;
-      }
-      let tmp4 = null;
-      if (null != arg3) {
-        tmp4 = arg3;
-      }
-      const obj = { channelId };
-      let tmp6 = null;
-      if (null != arg2) {
-        tmp6 = arg2;
-      }
-      obj.before = tmp6;
-      let tmp7 = null;
-      if (null != arg3) {
-        tmp7 = arg3;
-      }
-      obj.after = tmp7;
-      obj.limit = limit;
-      obj.startTime = Date.now();
-      const result = fetchLogs.set(outer1_2(channelId, arg1, tmp3, tmp4, limit), obj);
+}
+const prototype = MessageCacheStats.prototype;
+prototype["recordChannelFetchStart"] = function recordChannelFetchStart(channelId, arg1, before, after, limit) {
+  let tmp = before;
+  const channelsFetchStarted = this.channelsFetchStarted;
+  channelsFetchStarted.add(channelId);
+  const fetchLogs = this.fetchLogs;
+  let tmp3 = before;
+  if (before == null) {
+    tmp3 = null;
+  }
+  let tmp4 = after;
+  let tmp5 = after;
+  if (after == null) {
+    tmp5 = null;
+  }
+  const obj = { channelId, before: null, after: null, limit: null, startTime: null };
+  const combined = "" + channelId + ":" + arg1 + ":" + tmp3 + ":" + tmp5 + ":" + limit;
+  if (tmp == null) {
+    tmp = null;
+  }
+  obj[1] = tmp;
+  if (tmp4 == null) {
+    tmp4 = null;
+  }
+  obj[2] = tmp4;
+  obj[3] = limit;
+  obj[4] = Date.now();
+  const result = fetchLogs.set(combined, obj);
+};
+prototype["recordChannelFetchedLocal"] = function recordChannelFetchedLocal(basicChannel, INITIAL_MESSAGE_FETCH_KEY, closure_2, c3, closure_4, messages) {
+  let tmp = closure_2;
+  const channelsFetchedWithLocalMessages = this.channelsFetchedWithLocalMessages;
+  channelsFetchedWithLocalMessages.add(basicChannel);
+  const fetchLogs = this.fetchLogs;
+  if (closure_2 == null) {
+    tmp = null;
+  }
+  let tmp3 = c3;
+  if (c3 == null) {
+    tmp3 = null;
+  }
+  const value = fetchLogs.get("" + basicChannel + ":" + INITIAL_MESSAGE_FETCH_KEY + ":" + tmp + ":" + tmp3 + ":" + closure_4);
+  if (null != value) {
+    const obj = { loadTime: null, count: null, lastMessageId: null };
+    const _Date = Date;
+    obj[0] = Date.now();
+    obj[1] = messages.length;
+    const atResult = messages.at(-1);
+    let id;
+    if (atResult != null) {
+      id = atResult.id;
     }
-  };
-  const items = [obj, , ];
-  obj = {
-    key: "recordChannelFetchedLocal",
-    value(arg0, arg1, arg2, arg3, arg4, arr) {
-      const channelsFetchedWithLocalMessages = this.channelsFetchedWithLocalMessages;
-      channelsFetchedWithLocalMessages.add(arg0);
-      const fetchLogs = this.fetchLogs;
-      let tmp3 = null;
-      if (null != arg2) {
-        tmp3 = arg2;
-      }
-      let tmp4 = null;
-      if (null != arg3) {
-        tmp4 = arg3;
-      }
-      const value = fetchLogs.get(outer1_2(arg0, arg1, tmp3, tmp4, arg4));
-      if (null != value) {
-        const obj = {};
-        const _Date = Date;
-        obj.loadTime = Date.now();
-        obj.count = arr.length;
-        const atResult = arr.at(-1);
-        let id;
-        if (null != atResult) {
-          id = atResult.id;
-        }
-        obj.lastMessageId = id;
-        value.localMessageDetails = obj;
-      }
+    obj[2] = id;
+    value.localMessageDetails = obj;
+  }
+};
+prototype["recordChannelFetchedNetwork"] = function recordChannelFetchedNetwork(arg0, arg1, arg2, arg3, arg4, body) {
+  let tmp = arg2;
+  const channelsFetchedNetwork = this.channelsFetchedNetwork;
+  channelsFetchedNetwork.add(arg0);
+  const fetchLogs = this.fetchLogs;
+  if (arg2 == null) {
+    tmp = null;
+  }
+  let tmp3 = arg3;
+  if (arg3 == null) {
+    tmp3 = null;
+  }
+  const value = fetchLogs.get("" + arg0 + ":" + arg1 + ":" + tmp + ":" + tmp3 + ":" + arg4);
+  if (null != value) {
+    const obj = { loadTime: null, count: null, lastMessageId: null };
+    const _Date = Date;
+    obj[0] = Date.now();
+    obj[1] = body.length;
+    const atResult = body.at(-1);
+    let id;
+    if (atResult != null) {
+      id = atResult.id;
     }
-  };
-  items[1] = obj;
-  obj = {
-    key: "recordChannelFetchedNetwork",
-    value(arg0, arg1, arg2, arg3, arg4, arr) {
-      const channelsFetchedNetwork = this.channelsFetchedNetwork;
-      channelsFetchedNetwork.add(arg0);
-      const fetchLogs = this.fetchLogs;
-      let tmp3 = null;
-      if (null != arg2) {
-        tmp3 = arg2;
-      }
-      let tmp4 = null;
-      if (null != arg3) {
-        tmp4 = arg3;
-      }
-      const value = fetchLogs.get(outer1_2(arg0, arg1, tmp3, tmp4, arg4));
-      if (null != value) {
-        const obj = {};
-        const _Date = Date;
-        obj.loadTime = Date.now();
-        obj.count = arr.length;
-        const atResult = arr.at(-1);
-        let id;
-        if (null != atResult) {
-          id = atResult.id;
-        }
-        obj.lastMessageId = id;
-        value.networkMessageDetails = obj;
-      }
-    }
-  };
-  items[2] = obj;
-  return callback(MessageCacheStats, items);
-})();
-tmp2 = new tmp2();
-let result = require("set").fileFinishedImporting("modules/local_message_caching/MessageCacheStats.tsx");
+    obj[2] = id;
+    value.networkMessageDetails = obj;
+  }
+};
+let obj = Object.create(MessageCacheStats.prototype);
+let set = new Set();
+obj[0] = set;
+obj[1] = new Set();
+let set1 = new Set();
+obj[2] = new Set();
+let set2 = new Set();
+obj[3] = new Map();
+let result = set.fileFinishedImporting("modules/local_message_caching/MessageCacheStats.tsx");
 
-export default tmp2;
+export default obj;
 export const INITIAL_MESSAGE_FETCH_KEY = "NativeAppStartup";

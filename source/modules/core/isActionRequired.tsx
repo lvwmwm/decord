@@ -1,23 +1,23 @@
-// Module ID: 1344
-// Function ID: 15836
+// Module ID: 1368
+// Function ID: 1369
 // Name: isActionRequired
-// Dependencies: [1341, 1342, 2]
+// Dependencies: [1365, 1366, 2]
 // Exports: default
 
-// Module 1344 (isActionRequired)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_1 from "_isNativeReflectConstruct";
+// Module 1368 (isActionRequired)
+import handleUpdateUser from "handleUpdateUser";
+import handleRequiredAction from "handleRequiredAction";
 
 const result = require("set").fileFinishedImporting("modules/core/isActionRequired.tsx");
 
 export default function isActionRequired() {
   let obj = arg0;
-  let obj2 = arg1;
   if (arg0 === undefined) {
-    obj = _isNativeReflectConstruct;
+    obj = handleUpdateUser;
   }
-  if (obj2 === undefined) {
-    obj2 = closure_1;
+  let obj2 = arg1;
+  if (arg1 === undefined) {
+    obj2 = handleRequiredAction;
   }
   let tmp = null != obj2.getAction();
   if (!tmp) {

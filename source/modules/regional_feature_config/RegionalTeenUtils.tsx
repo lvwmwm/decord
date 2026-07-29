@@ -1,18 +1,23 @@
-// Module ID: 11490
-// Function ID: 89209
-// Name: useUserCountryCode
-// Dependencies: [31, 3845, 3848, 566, 10142, 7685, 2]
-// Exports: useIsTeenInStrictCountry
+// Module ID: 11514
+// Function ID: 11515
+// Name: set
+// Dependencies: [19, 3869, 3872, 589, 10163, 7708, 2]
+// Exports: useIsTeenInCountrySet, useIsTeenInStrictCountry, useUserCountryCode
 
-// Module 11490 (useUserCountryCode)
-import result from "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 11514 (set)
+import noop from "noop";
+import getRegionalFeatureConfig from "getRegionalFeatureConfig";
 import set from "set";
 
 const require = arg1;
-function useUserCountryCode() {
-  const items = [_isNativeReflectConstruct];
-  stateFromStores = stateFromStores(566).useStateFromStores(items, () => outer1_3.getUserCountryCode());
+let items = ["GB", "AU"];
+HermesBuiltin.arraySpread(require("set").CountryCodesSets.EU_COUNTRIES, 2);
+let set = new Set(items);
+const result = set.fileFinishedImporting("modules/regional_feature_config/RegionalTeenUtils.tsx");
+
+export const useUserCountryCode = function useUserCountryCode() {
+  const items = [getRegionalFeatureConfig];
+  stateFromStores = stateFromStores(589).useStateFromStores(items, () => userCountryCode.getUserCountryCode());
   const items1 = [stateFromStores];
   const effect = React.useEffect(() => {
     if (null == stateFromStores) {
@@ -21,25 +26,45 @@ function useUserCountryCode() {
     }
   }, items1);
   return stateFromStores;
-}
-function useIsTeenInCountrySet(set) {
-  const tmp = useUserCountryCode();
-  let userIsTeen = require(7685) /* useUserIsTeen */.useUserIsTeen();
+};
+export const useIsTeenInCountrySet = function useIsTeenInCountrySet(set) {
+  const items = [getRegionalFeatureConfig];
+  stateFromStores = stateFromStores(589).useStateFromStores(items, () => userCountryCode.getUserCountryCode());
+  const items1 = [stateFromStores];
+  const effect = React.useEffect(() => {
+    if (null == stateFromStores) {
+      const userCountryCode = stateFromStores(outer1_1[4]).fetchUserCountryCode();
+      const obj = stateFromStores(outer1_1[4]);
+    }
+  }, items1);
+  const obj = stateFromStores(589);
+  let userIsTeen = stateFromStores(7708).useUserIsTeen();
   if (userIsTeen) {
-    userIsTeen = null != tmp;
+    userIsTeen = null != stateFromStores;
   }
   if (userIsTeen) {
-    userIsTeen = set.has(tmp.alpha2);
+    userIsTeen = set.has(stateFromStores.alpha2);
   }
   return userIsTeen;
-}
-let items = ["GB", "AU"];
-HermesBuiltin.arraySpread(require("set").CountryCodesSets.EU_COUNTRIES, 2);
-let set = new Set(items);
-const result = set.fileFinishedImporting("modules/regional_feature_config/RegionalTeenUtils.tsx");
-
-export { useUserCountryCode };
-export { useIsTeenInCountrySet };
+};
 export const useIsTeenInStrictCountry = function useIsTeenInStrictCountry() {
-  return useIsTeenInCountrySet(set);
+  const items = [getRegionalFeatureConfig];
+  stateFromStores = stateFromStores(589).useStateFromStores(items, () => userCountryCode.getUserCountryCode());
+  const items1 = [stateFromStores];
+  const effect = React.useEffect(() => {
+    if (null == stateFromStores) {
+      const userCountryCode = stateFromStores(outer1_1[4]).fetchUserCountryCode();
+      const obj = stateFromStores(outer1_1[4]);
+    }
+  }, items1);
+  let obj = set;
+  const obj2 = stateFromStores(589);
+  let userIsTeen = stateFromStores(7708).useUserIsTeen();
+  if (userIsTeen) {
+    userIsTeen = null != stateFromStores;
+  }
+  if (userIsTeen) {
+    userIsTeen = obj.has(stateFromStores.alpha2);
+  }
+  return userIsTeen;
 };

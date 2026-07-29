@@ -1,12 +1,12 @@
-// Module ID: 15494
-// Function ID: 118091
+// Module ID: 15528
+// Function ID: 15529
 // Name: useSearchMessages
-// Dependencies: [5857, 10081, 566, 10082, 2]
+// Dependencies: [5875, 10102, 589, 10103, 2]
 // Exports: useSearchMessages
 
-// Module 15494 (useSearchMessages)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_3 from "_isNativeReflectConstruct";
+// Module 15528 (useSearchMessages)
+import handleReaction from "handleReaction";
+import prototype from "prototype";
 
 const require = arg1;
 const result = require("initialize").fileFinishedImporting("modules/search/native/components/tabs/hooks/useSearchMessages.tsx");
@@ -14,9 +14,9 @@ const result = require("initialize").fileFinishedImporting("modules/search/nativ
 export const useSearchMessages = function useSearchMessages(searchContext, tab) {
   const _require = searchContext;
   const dependencyMap = tab;
-  const items = [closure_3, _isNativeReflectConstruct];
+  const items = [prototype, handleReaction];
   const items1 = [searchContext, tab];
-  return _require(566).useStateFromStores(items, () => {
+  return _require(589).useStateFromStores(items, () => {
     const searchResultsQuery = outer1_3.getSearchResultsQuery(searchContext);
     return outer1_2.getMessages(searchContext(tab[3]).getSearchTabFetchId(searchContext, tab, searchResultsQuery));
   }, items1);

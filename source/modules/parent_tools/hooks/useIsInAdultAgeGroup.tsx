@@ -1,16 +1,16 @@
-// Module ID: 6236
-// Function ID: 55772
+// Module ID: 6256
+// Function ID: 6257
 // Name: useIsInAdultAgeGroup
-// Dependencies: [5775, 566, 2]
+// Dependencies: [5793, 589, 2]
 // Exports: default
 
-// Module 6236 (useIsInAdultAgeGroup)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 6256 (useIsInAdultAgeGroup)
+import freshTeenActivityWithMap from "freshTeenActivityWithMap";
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/parent_tools/hooks/useIsInAdultAgeGroup.tsx");
 
 export default function useIsInAdultAgeGroup() {
-  const items = [_isNativeReflectConstruct];
-  return "adult" === require(566) /* initialize */.useStateFromStores(items, () => outer1_2.getAgeGroup());
+  const items = [freshTeenActivityWithMap];
+  return "adult" === require(589) /* initialize */.useStateFromStores(items, () => ageGroup.getAgeGroup());
 };

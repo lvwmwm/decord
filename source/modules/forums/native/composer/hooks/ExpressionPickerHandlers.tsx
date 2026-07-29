@@ -1,11 +1,11 @@
-// Module ID: 9552
-// Function ID: 74405
+// Module ID: 9576
+// Function ID: 9577
 // Name: usePressEmojiHandler
-// Dependencies: [31, 2]
+// Dependencies: [19, 2]
 // Exports: usePressEmojiHandler, usePressGIFHandler
 
-// Module 9552 (usePressEmojiHandler)
-import result from "result";
+// Module 9576 (usePressEmojiHandler)
+import noop from "noop";
 
 const result = require("set").fileFinishedImporting("modules/forums/native/composer/hooks/ExpressionPickerHandlers.tsx");
 
@@ -15,7 +15,8 @@ export const usePressEmojiHandler = function usePressEmojiHandler(selection) {
   const handleTextChange = selection.handleTextChange;
   const focusTextInput = selection.focusTextInput;
   const setSelection = selection.setSelection;
-  let closure_5 = selection.useRef({ selection, draftContent, handleTextChange, focusTextInput, setSelection });
+  let closure_5;
+  closure_5 = selection.useRef({ selection, draftContent, handleTextChange, focusTextInput, setSelection });
   const effect = selection.useEffect(() => {
     closure_5.current = { selection, draftContent, handleTextChange, focusTextInput, setSelection };
   });
@@ -30,7 +31,7 @@ export const usePressEmojiHandler = function usePressEmojiHandler(selection) {
     ({ focusTextInput, setSelection } = current);
     const substr = draftContent.substring(0, selection.start);
     let start = selection.end;
-    if (null == start) {
+    if (start == null) {
       start = selection.start;
     }
     const substr1 = draftContent.substring(start);
@@ -39,7 +40,9 @@ export const usePressEmojiHandler = function usePressEmojiHandler(selection) {
         handleTextChange(substr + id.surrogates + substr1);
         let length = substr + id.surrogates.length;
       }
-      const obj = { start: length, end: length };
+      const obj = { start: null, end: null };
+      obj[0] = length;
+      obj[1] = length;
       setSelection(obj);
       focusTextInput();
     }
@@ -68,7 +71,7 @@ export const usePressGIFHandler = function usePressGIFHandler(selection) {
     url = url.url;
     const substr = draftContent.substring(0, selection.start);
     let start = selection.end;
-    if (null == start) {
+    if (start == null) {
       start = selection.start;
     }
     const substr1 = draftContent.substring(start);
@@ -81,8 +84,7 @@ export const usePressGIFHandler = function usePressGIFHandler(selection) {
       const _HermesInternal2 = HermesInternal;
       length = substr + " " + url.length;
     }
-    const obj = { start: length, end: length };
-    setSelection(obj);
+    setSelection({ start: length, end: length });
     focusTextInput();
   }, items);
 };

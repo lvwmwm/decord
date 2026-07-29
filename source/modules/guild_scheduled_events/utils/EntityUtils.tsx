@@ -1,17 +1,48 @@
-// Module ID: 8189
-// Function ID: 65484
-// Name: _getLocationFromEvent
-// Dependencies: [1348, 1354, 2]
+// Module ID: 8213
+// Function ID: 8214
+// Name: getChannelFromEvent
+// Dependencies: [1372, 1378, 2]
 // Exports: getChannelFromEvent, getChannelTypeFromEntity, getLocationFromEvent, getLocationFromEventData
 
-// Module 8189 (_getLocationFromEvent)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 8213 (getChannelFromEvent)
+import ensureGuildLoaded from "ensureGuildLoaded";
 import GUILD_EVENT_MAX_NAME_LENGTH from "GUILD_EVENT_MAX_NAME_LENGTH";
 
 let closure_1;
-let closure_2;
-function _getLocationFromEvent(entityType, entityMetadata) {
-  let tmp = entityType === constants.EXTERNAL;
+let obj1;
+({ GuildScheduledEventEntityTypes: closure_1, EntityChannelTypes: obj1 } = GUILD_EVENT_MAX_NAME_LENGTH);
+const result = require("set").fileFinishedImporting("modules/guild_scheduled_events/utils/EntityUtils.tsx");
+
+export const getChannelFromEvent = function getChannelFromEvent(entity_type) {
+  let tmp2 = entity_type.entity_type in closure_2;
+  if (tmp2) {
+    tmp2 = null != tmp;
+  }
+  let tmp4;
+  if (tmp2) {
+    channel = channel.getChannel(entity_type.channel_id);
+    tmp4 = channel;
+  }
+  return tmp4;
+};
+export const getLocationFromEvent = function getLocationFromEvent(event) {
+  const entity_metadata = event.entity_metadata;
+  let tmp = event.entity_type === constants.EXTERNAL;
+  if (tmp) {
+    tmp = null != entity_metadata;
+  }
+  if (tmp) {
+    tmp = "location" in entity_metadata;
+  }
+  let _location = null;
+  if (tmp) {
+    _location = entity_metadata.location;
+  }
+  return _location;
+};
+export const getLocationFromEventData = function getLocationFromEventData(guildEvent) {
+  const entityMetadata = guildEvent.entityMetadata;
+  let tmp = guildEvent.entityType === constants.EXTERNAL;
   if (tmp) {
     tmp = null != entityMetadata;
   }
@@ -23,31 +54,6 @@ function _getLocationFromEvent(entityType, entityMetadata) {
     _location = entityMetadata.location;
   }
   return _location;
-}
-({ GuildScheduledEventEntityTypes: closure_1, EntityChannelTypes: closure_2 } = GUILD_EVENT_MAX_NAME_LENGTH);
-const result = require("set").fileFinishedImporting("modules/guild_scheduled_events/utils/EntityUtils.tsx");
-
-export const getChannelFromEvent = function getChannelFromEvent(entity_type) {
-  let tmp2 = entity_type.entity_type in closure_2;
-  if (tmp2) {
-    tmp2 = null != tmp;
-  }
-  let tmp4;
-  if (tmp2) {
-    channel = channel.getChannel(entity_type.channel_id);
-    let tmp8;
-    if (null != channel) {
-      tmp8 = channel;
-    }
-    tmp4 = tmp8;
-  }
-  return tmp4;
-};
-export const getLocationFromEvent = function getLocationFromEvent(event) {
-  return _getLocationFromEvent(event.entity_type, event.entity_metadata);
-};
-export const getLocationFromEventData = function getLocationFromEventData(guildEvent) {
-  return _getLocationFromEvent(guildEvent.entityType, guildEvent.entityMetadata);
 };
 export const getChannelTypeFromEntity = function getChannelTypeFromEntity(entityType) {
   if (entityType === constants.VOICE) {

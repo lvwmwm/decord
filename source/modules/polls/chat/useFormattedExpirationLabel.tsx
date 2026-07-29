@@ -1,28 +1,31 @@
-// Module ID: 7974
-// Function ID: 63311
+// Module ID: 7999
+// Function ID: 8000
 // Name: formatExpirationLabel
-// Dependencies: [3747, 1212, 2]
+// Dependencies: [3771, 1236, 2]
 // Exports: default
 
-// Module 7974 (formatExpirationLabel)
+// Module 7999 (formatExpirationLabel)
 function formatExpirationLabel(expiry) {
-  const tmp = importDefault(3747)();
-  if (expiry > tmp) {
-    const diffResult = expiry.diff(tmp, "days");
+  const tmp2 = importDefault(3771)();
+  if (expiry > tmp2) {
+    const diffResult = expiry.diff(tmp2, "days");
     if (diffResult > 1) {
-      const intl3 = require(1212) /* getSystemLocale */.intl;
-      let obj = { days: diffResult };
-      return intl3.formatToPlainString(require(1212) /* getSystemLocale */.t.dex68a, obj);
+      const intl3 = require(1236) /* getSystemLocale */.intl;
+      let obj = { days: null };
+      obj[0] = diffResult;
+      return intl3.formatToPlainString(require(1236) /* getSystemLocale */.t.dex68a, obj);
     } else {
-      const diffResult1 = expiry.diff(tmp, "hours");
+      const diffResult1 = expiry.diff(tmp2, "hours");
       if (diffResult1 > 1) {
-        const intl2 = require(1212) /* getSystemLocale */.intl;
-        obj = { hours: diffResult1 };
-        return intl2.formatToPlainString(require(1212) /* getSystemLocale */.t.BWqf0c, obj);
+        const intl2 = require(1236) /* getSystemLocale */.intl;
+        obj = { hours: null };
+        obj[0] = diffResult1;
+        return intl2.formatToPlainString(require(1236) /* getSystemLocale */.t.BWqf0c, obj);
       } else {
-        const intl = require(1212) /* getSystemLocale */.intl;
-        obj = { minutes: expiry.diff(tmp, "minutes") };
-        return intl.formatToPlainString(require(1212) /* getSystemLocale */.t["3SLXAz"], obj);
+        const intl = require(1236) /* getSystemLocale */.intl;
+        obj = { minutes: null };
+        obj[0] = expiry.diff(tmp2, "minutes");
+        return intl.formatToPlainString(require(1236) /* getSystemLocale */.t["3SLXAz"], obj);
       }
     }
   }

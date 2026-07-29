@@ -1,16 +1,16 @@
-// Module ID: 10431
-// Function ID: 80309
+// Module ID: 10455
+// Function ID: 10456
 // Name: useUnreadSettingNotice
-// Dependencies: [57, 31, 1352, 10289, 566, 10432, 2]
+// Dependencies: [32, 19, 1376, 10310, 589, 10456, 2]
 // Exports: default
 
-// Module 10431 (useUnreadSettingNotice)
+// Module 10455 (useUnreadSettingNotice)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
-import { CHANNEL_ELIGIBLE_FOR_UNREAD_SETTING as closure_5 } from "_callSuper";
+import noop from "noop";
+import { CHANNEL_ELIGIBLE_FOR_UNREAD_SETTING as closure_5 } from "createChannelRecord";
 
 const require = arg1;
-const result = require("_callSuper").fileFinishedImporting("modules/notifications/settings_unread_notice/utils/useUnreadSettingNotice.tsx");
+const result = require("createChannelRecord").fileFinishedImporting("modules/notifications/settings_unread_notice/utils/useUnreadSettingNotice.tsx");
 
 export default function useUnreadSettingNotice(id) {
   const _require = id;
@@ -24,21 +24,21 @@ export default function useUnreadSettingNotice(id) {
     callback("");
   }, items);
   const items1 = [shouldUseNewNotificationSystem(first[5])];
-  const items2 = [first, shouldUseNewNotificationSystem, _require(first[4]).useStateFromStores(items1, () => shouldUseNewNotificationSystem(first[5]).getLastActionTime(user.id)), id];
+  const items2 = [first, shouldUseNewNotificationSystem, _require(first[4]).useStateFromStores(items1, () => shouldUseNewNotificationSystem(first[5]).getLastActionTime(id.id)), id];
   const effect1 = React.useEffect(() => {
-    let hasItem = outer1_5.has(user.type);
+    let hasItem = outer1_5.has(id.type);
     if (hasItem) {
-      hasItem = first !== user.id;
+      hasItem = first !== tmp.id;
     }
     if (hasItem) {
       hasItem = shouldUseNewNotificationSystem;
     }
     if (hasItem) {
-      hasItem = shouldUseNewNotificationSystem(first[5]).maybeAutoUpgradeChannel(user.id);
+      hasItem = shouldUseNewNotificationSystem(first[5]).maybeAutoUpgradeChannel(tmp.id);
       const obj = shouldUseNewNotificationSystem(first[5]);
     }
     if (hasItem) {
-      callback(user.id);
+      callback(tmp.id);
     }
   }, items2);
   obj = { showUnreadsNotice: first === id.id, clearUnreadsNotice: React.useCallback(() => callback(""), []) };

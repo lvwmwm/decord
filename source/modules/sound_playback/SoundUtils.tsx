@@ -1,92 +1,111 @@
-// Module ID: 10250
-// Function ID: 79120
-// Name: createSound
-// Dependencies: [10251, 4005, 8815, 3, 10253, 10254, 2]
-// Exports: createSoundForPack, playSound
+// Module ID: 10271
+// Function ID: 10272
+// Name: createSoundForPack
+// Dependencies: [10272, 4029, 8839, 3, 10274, 10275, 2]
+// Exports: createSound, createSoundForPack, playSound
 
-// Module 10250 (createSound)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_4 from "_isNativeReflectConstruct";
+// Module 10271 (createSoundForPack)
+import Soundpacks from "Soundpacks";
+import initialize from "initialize";
 import { SoundOutputChannel } from "SoundOutputChannel";
-import importDefaultResult from "timestamp";
 
 const require = arg1;
-function createSound(stage_waiting, soundboard_sound, _volume, DEFAULT, flag) {
-  let num = _volume;
-  if (_volume === undefined) {
-    num = 1;
-  }
-  if (DEFAULT === undefined) {
-    DEFAULT = SoundOutputChannel.DEFAULT;
-  }
-  if (flag === undefined) {
-    flag = false;
-  }
-  const mobileAudioSound = new require(10254) /* RNSound */.MobileAudioSound(stage_waiting, soundboard_sound, num, DEFAULT, flag);
-  return mobileAudioSound;
-}
-importDefaultResult = new importDefaultResult("SoundUtils");
+let closure_6 = new require("timestamp")("SoundUtils");
+const tmp2 = new require("timestamp")("SoundUtils");
 const result = require("SoundOutputChannel").fileFinishedImporting("modules/sound_playback/SoundUtils.tsx");
 
 export const createSoundForPack = function createSoundForPack(call_calling, soundpack) {
   let num = arg2;
-  let DEFAULT = arg3;
   if (arg2 === undefined) {
+    num = 1;
+  }
+  let DEFAULT = arg3;
+  if (arg3 === undefined) {
+    DEFAULT = SoundOutputChannel.DEFAULT;
+  }
+  let tmp3 = importDefault(10274)(soundpack)[call_calling];
+  if (tmp3 == null) {
+    tmp3 = call_calling;
+  }
+  if (num === undefined) {
     num = 1;
   }
   if (DEFAULT === undefined) {
     DEFAULT = SoundOutputChannel.DEFAULT;
   }
-  const tmp3 = importDefault(10253)(soundpack)[call_calling];
-  let tmp4 = call_calling;
-  if (null != tmp3) {
-    tmp4 = tmp3;
-  }
-  return createSound(tmp4, call_calling, num, DEFAULT);
+  const mobileAudioSound = new require(10275) /* _createSound */.MobileAudioSound(tmp3, call_calling, num, DEFAULT, false);
+  return mobileAudioSound;
 };
-export { createSound };
+export const createSound = function createSound(stage_waiting, soundboard_sound, arg2) {
+  let num = arg2;
+  if (arg2 === undefined) {
+    num = 1;
+  }
+  let DEFAULT = arg3;
+  if (arg3 === undefined) {
+    DEFAULT = SoundOutputChannel.DEFAULT;
+  }
+  let flag = arg4;
+  if (arg4 === undefined) {
+    flag = false;
+  }
+  const mobileAudioSound = new require(10275) /* _createSound */.MobileAudioSound(stage_waiting, soundboard_sound, num, DEFAULT, flag);
+  return mobileAudioSound;
+};
 export const playSound = function playSound(arg0, arg1, arg2, arg3, outputChannel) {
   let num = arg1;
   if (arg1 === undefined) {
     num = 1;
   }
-  let closure_0 = arg2;
+  const _require = arg2;
   if (!disableSounds.disableSounds) {
     let soundpack = arg3;
-    if (null == arg3) {
+    if (arg3 == null) {
       soundpack = soundpack.getSoundpack();
     }
-    const tmp3Result = importDefault(10253)(soundpack);
-    if (null == tmp3Result) {
+    const tmp4Result = importDefault(10274)(soundpack);
+    if (null == tmp4Result) {
       const _HermesInternal = HermesInternal;
-      importDefaultResult.log("Unable to find sound for pack name: " + arg3);
+      tmp2.log("Unable to find sound for pack name: " + arg3);
     }
-    let tmp13 = arg0;
-    if (null != tmp3Result[arg0]) {
-      tmp13 = tmp12;
+    let tmp13 = tmp4Result[arg0];
+    if (tmp13 == null) {
+      tmp13 = arg0;
     }
     outputChannel = undefined;
-    if (null != outputChannel) {
+    if (outputChannel != null) {
       outputChannel = outputChannel.outputChannel;
     }
-    if (null == outputChannel) {
+    if (outputChannel == null) {
       outputChannel = SoundOutputChannel.DEFAULT;
     }
-    let prop;
-    if (null != outputChannel) {
-      prop = outputChannel.trackNotificationFailure;
+    let flag;
+    if (outputChannel != null) {
+      flag = outputChannel.trackNotificationFailure;
     }
-    const tmp11Result = createSound(tmp13, arg0, num, outputChannel, null != prop && prop);
+    if (flag == null) {
+      flag = false;
+    }
+    if (num === undefined) {
+      num = 1;
+    }
+    if (outputChannel === undefined) {
+      outputChannel = SoundOutputChannel.DEFAULT;
+    }
+    if (flag === undefined) {
+      flag = false;
+    }
+    const mobileAudioSound = new _require(10275).MobileAudioSound(tmp13, arg0, num, outputChannel, flag);
     if (null != arg2) {
-      tmp11Result.playWithListener().then((arg0) => {
+      mobileAudioSound.playWithListener().then((arg0) => {
         if (arg0) {
           callback();
         }
       });
-      const playWithListenerResult = tmp11Result.playWithListener();
+      const playWithListenerResult = mobileAudioSound.playWithListener();
     } else {
-      tmp11Result.play();
+      mobileAudioSound.play();
     }
-    return tmp11Result;
+    return mobileAudioSound;
   }
 };

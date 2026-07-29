@@ -1,98 +1,45 @@
-// Module ID: 10271
-// Function ID: 79313
-// Name: createInlineChannelReact
-// Dependencies: [31, 33, 9969, 1273, 1327, 2]
-// Exports: createInlineChannelReact, inlineChannelMentionReact
+// Module ID: 10292
+// Function ID: 10293
+// Name: inlineChannelMentionReact
+// Dependencies: [19, 21, 9991, 1297, 1351, 2]
+// Exports: createInlineChannelReact, inlineChannelMentionReact, inlineChannelReact
 
-// Module 10271 (createInlineChannelReact)
-import "result";
+// Module 10292 (inlineChannelMentionReact)
+import "noop";
 import { jsxs } from "jsxProd";
 
-const require = arg1;
-function createInlineChannelReact(arg0) {
-  let str = arg0;
-  if (arg0 === undefined) {
-    str = "\u{1F4AC}";
-  }
-  return (iconType, output, key) => {
-    iconType = iconType.iconType;
-    if ("text" !== iconType) {
-      if ("text-nsfw" !== iconType) {
-        if ("text-spoiler" !== iconType) {
-          if ("announcement" !== iconType) {
-            if ("announcement-nsfw" !== iconType) {
-              if ("announcement-spoiler" !== iconType) {
-                if ("forum" !== iconType) {
-                  if ("forum-nsfw" !== iconType) {
-                    if ("forum-spoiler" !== iconType) {
-                      if ("media" !== iconType) {
-                        if ("media-nsfw" !== iconType) {
-                          if ("thread" !== iconType) {
-                            if ("post" !== iconType) {
-                              if ("message" === iconType) {
-                                let str2 = str;
-                              } else if ("voice" !== iconType) {
-                                if ("voice-locked" !== iconType) {
-                                  if ("voice-nsfw" !== iconType) {
-                                    if ("voice-spoiler" !== iconType) {
-                                      if ("stage" !== iconType) {
-                                        if ("stage-locked" !== iconType) {
-                                          if ("locked" !== iconType) {
-                                            if ("guide" !== iconType) {
-                                              if ("home" !== iconType) {
-                                                if ("browse" !== iconType) {
-                                                  if ("customize" !== iconType) {
-                                                    if ("linked-roles" !== iconType) {
-                                                      let obj = str(outer1_1[4]);
-                                                      obj.assertNever(iconType);
-                                                    }
-                                                  }
-                                                }
-                                              }
-                                            }
-                                          }
-                                        }
-                                      }
-                                    }
-                                  }
-                                }
-                              }
-                            }
-                          }
-                          str2 = "\"";
-                        }
-                        obj = {};
-                        const items = [str2, str(outer1_1[2]).smartOutput(iconType, output, key), str3];
-                        obj.children = items;
-                        return outer1_2(str(outer1_1[3]).LegacyText, obj, key.key);
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-    str2 = "#";
-  };
-}
-const inlineChannelReact = createInlineChannelReact();
+let c0 = arg1;
+c0 = "\u{1F4AC}";
 const result = require("smartOutput").fileFinishedImporting("modules/markup/native/MarkupInlineChannelMentionRules.tsx");
 
 export const inlineChannelMentionReact = function inlineChannelMentionReact(inContent, output, key) {
   if (null == inContent.inContent) {
-    let smartOutputResult = require(9969) /* smartOutput */.smartOutput(inContent, output, key);
-    const obj3 = require(9969) /* smartOutput */;
+    let smartOutputResult = u1F4AC(9991).smartOutput(inContent, output, key);
+    const obj3 = u1F4AC(9991);
   } else {
-    const obj = {};
-    const items = [output(inContent.inContent, key), " \u203A ", require(9969) /* smartOutput */.smartOutput(inContent, output, key)];
-    obj.children = items;
-    smartOutputResult = jsxs(require(1273) /* Button */.LegacyText, {}, key.key);
-    const obj2 = require(9969) /* smartOutput */;
+    const obj = { children: null };
+    const items = [output(inContent.inContent, key), " \u203A ", u1F4AC(9991).smartOutput(inContent, output, key)];
+    obj[0] = items;
+    smartOutputResult = jsxs(u1F4AC(1297).LegacyText, { children: null }, key.key);
+    const obj2 = u1F4AC(9991);
   }
   return smartOutputResult;
 };
-export { createInlineChannelReact };
-export { inlineChannelReact };
+export function createInlineChannelReact(arg0) {
+  let str = arg0;
+  if (arg0 === undefined) {
+    str = "\u{1F4AC}";
+  }
+  return (arg0, output, key) => {
+    const obj = { children: null };
+    const items = [str, str(outer1_1[2]).smartOutput(tmp2, output, key), undefined];
+    obj[0] = items;
+    outer1_2(str(outer1_1[3]).LegacyText, obj, key.key);
+  };
+}
+export const inlineChannelReact = (arg0, output, key) => {
+  const obj = { children: null };
+  const items = [str, str(outer1_1[2]).smartOutput(tmp2, output, key), undefined];
+  obj[0] = items;
+  outer1_2(str(outer1_1[3]).LegacyText, obj, key.key);
+};

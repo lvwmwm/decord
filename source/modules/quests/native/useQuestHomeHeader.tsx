@@ -1,49 +1,50 @@
-// Module ID: 14007
-// Function ID: 106937
+// Module ID: 14028
+// Function ID: 14029
 // Name: QuestHomeHeaderTitle
-// Dependencies: [31, 27, 5011, 653, 655, 33, 4165, 689, 14004, 4161, 1212, 8696, 4133, 9794, 1935, 675, 5517, 5779, 9782, 14008, 6662, 14009, 1456, 12261, 2]
+// Dependencies: [19, 17, 5033, 676, 678, 21, 4189, 712, 14025, 4185, 1236, 8720, 4157, 9816, 1959, 698, 5535, 5797, 9804, 14029, 6683, 14030, 1480, 12285, 2]
 // Exports: default
 
-// Module 14007 (QuestHomeHeaderTitle)
-import result from "result";
-import { View } from "get ActivityIndicator";
+// Module 14028 (QuestHomeHeaderTitle)
+import FilterFooter from "FilterFooter";
+import { View } from "openCollectiblesShop";
 import { QuestHomeSortMethods } from "QuestsExperimentLocations";
 import { AnalyticEvents } from "ME";
 import { CollectiblesMobileShopScreen as closure_7 } from "items";
-import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import jsxProd from "FiltersHorizontalIcon";
+import createCacheKey from "createCacheKey";
 
-let closure_8;
-let closure_9;
+let c9;
+let metroImportAll;
 const require = arg1;
 function QuestHomeHeaderTitle() {
-  const tmp = _createForOfIteratorHelperLoose();
-  let obj = { style: tmp.headerTitleContainer };
-  const items = [callback(require(14004) /* QuestsIcon */.QuestsIcon, { size: "md", color: "icon-strong" }), ];
-  obj = { variant: "redesign/heading-18/bold", color: "mobile-text-heading-primary", maxFontSizeMultiplier: 2, lineClamp: 1, style: tmp.headerTitle };
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj.children = intl.string(require(1212) /* getSystemLocale */.t.JALI2K);
-  items[1] = callback(require(4161) /* Text */.Heading, obj);
-  obj.children = items;
+  const tmp = createCacheKey();
+  let obj = { style: tmp.headerTitleContainer, children: null };
+  const items = [callback(require(14025) /* QuestsIcon */.QuestsIcon, { size: "md", color: "icon-strong" }), ];
+  obj = { variant: "redesign/heading-18/bold", color: "mobile-text-heading-primary", maxFontSizeMultiplier: 2, lineClamp: 1, style: tmp.headerTitle, children: null };
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj[5] = intl.string(require(1236) /* getSystemLocale */.t.JALI2K);
+  items[1] = callback(require(4185) /* Text */.Heading, obj);
+  obj[1] = items;
   return callback2(View, obj);
 }
 function QuestHomeHeaderRight(isVirtualCurrencyEnabled) {
   isVirtualCurrencyEnabled = isVirtualCurrencyEnabled.isVirtualCurrencyEnabled;
-  let obj = Object.create(null);
-  obj.isVirtualCurrencyEnabled = 0;
-  const merged = Object.assign(isVirtualCurrencyEnabled, obj);
-  obj = balance(8696);
+  const merged = Object.assign(isVirtualCurrencyEnabled, Object.create(null));
+  let balance;
+  let obj = balance(8720);
   balance = obj.useFetchVirtualCurrencyBalance().balance;
   [][0] = balance;
-  obj = { style: _createForOfIteratorHelperLoose().headerRightContainer };
+  obj = { style: createCacheKey().headerRightContainer, children: null };
   if (isVirtualCurrencyEnabled) {
-    let obj1 = { balance, onPress: tmp4 };
-    isVirtualCurrencyEnabled = callback(balance(9782).BalanceWidgetPillButton, obj1);
+    obj = { balance: null, onPress: null };
+    obj[0] = balance;
+    obj[1] = tmp5;
+    isVirtualCurrencyEnabled = callback(balance(9804).BalanceWidgetPillButton, obj);
   }
   let items = [isVirtualCurrencyEnabled, ];
   const merged1 = Object.assign(merged);
   items[1] = callback(FiltersButton, {});
-  obj.children = items;
+  obj[1] = items;
   return closure_9(View, obj);
 }
 function FiltersButton(setSelectedSortMethod) {
@@ -56,6 +57,13 @@ function FiltersButton(setSelectedSortMethod) {
     tmp = selectedSortMethod !== QuestHomeSortMethods.SUGGESTED;
   }
   const colors = setSelectedFilters(selectedFilters[7]).colors;
+  if (tmp) {
+    let INTERACTIVE_TEXT_DEFAULT = colors.WHITE;
+    let tmp3 = tmp2;
+  } else {
+    INTERACTIVE_TEXT_DEFAULT = colors.INTERACTIVE_TEXT_DEFAULT;
+    tmp3 = tmp2;
+  }
   let str = "tertiary";
   if (tmp) {
     str = "primary";
@@ -66,20 +74,22 @@ function FiltersButton(setSelectedSortMethod) {
     obj = { onSortMethodChange: setSelectedSortMethod, onFiltersChange: setSelectedFilters, initialSortMethod: selectedSortMethod, initialFilters: selectedFilters };
     obj.openLazy(setSelectedSortMethod(selectedFilters[14])(selectedFilters[19], selectedFilters.paths), "QuestHomeSortingFilteringBottomSheet", obj);
   }, items);
-  let obj = { icon: callback(setSelectedSortMethod(selectedFilters[21]).FiltersHorizontalIcon, { size: "sm", color: tmp ? colors.WHITE : colors.INTERACTIVE_TEXT_DEFAULT }), size: "sm", variant: str, onPress: callback };
-  const intl = setSelectedSortMethod(selectedFilters[10]).intl;
-  obj.accessibilityLabel = intl.string(setSelectedSortMethod(selectedFilters[10]).t.UdhTtk);
-  obj.scaleAmountInPx = 4;
-  return callback(setSelectedSortMethod(selectedFilters[20]).BaseIconButton, obj);
+  let obj = { icon: null, size: "sm", variant: null, onPress: null, accessibilityLabel: null, scaleAmountInPx: 4 };
+  obj[0] = callback(setSelectedSortMethod(tmp3[21]).FiltersHorizontalIcon, { size: "sm", color: INTERACTIVE_TEXT_DEFAULT });
+  obj[2] = str;
+  obj[3] = callback;
+  const intl = setSelectedSortMethod(tmp3[10]).intl;
+  obj[4] = intl.string(setSelectedSortMethod(tmp3[10]).t.UdhTtk);
+  return callback(setSelectedSortMethod(tmp3[20]).BaseIconButton, obj);
 }
-({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { width: "100%", flexDirection: "row", alignItems: "center", marginTop: require("_createForOfIteratorHelperLoose").space.PX_8, paddingLeft: require("_createForOfIteratorHelperLoose").space.PX_8, gap: require("_createForOfIteratorHelperLoose").space.PX_8 };
-_createForOfIteratorHelperLoose.headerTitleContainer = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.headerTitle = { flexShrink: 1 };
-let obj1 = { flexDirection: "row", justifyContent: "flex-end", alignItems: "center", gap: require("_createForOfIteratorHelperLoose").space.PX_8, marginTop: require("_createForOfIteratorHelperLoose").space.PX_8 };
-_createForOfIteratorHelperLoose.headerRightContainer = obj1;
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+({ jsx: metroImportAll, jsxs: c9 } = jsxProd);
+createCacheKey = { headerTitleContainer: null, headerTitle: null, headerRightContainer: null };
+createCacheKey = { width: "100%", flexDirection: "row", alignItems: "center", marginTop: require("Themes").space.PX_8, paddingLeft: require("Themes").space.PX_8, gap: require("Themes").space.PX_8 };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { flexShrink: 1 };
+createCacheKey[2] = { flexDirection: "row", justifyContent: "flex-end", alignItems: "center", gap: require("Themes").space.PX_8, marginTop: require("Themes").space.PX_8 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let obj1 = { flexDirection: "row", justifyContent: "flex-end", alignItems: "center", gap: require("Themes").space.PX_8, marginTop: require("Themes").space.PX_8 };
 let result = require("QuestsExperimentLocations").fileFinishedImporting("modules/quests/native/useQuestHomeHeader.tsx");
 
 export default function useQuestHomeHeader(setSelectedSortMethod) {
@@ -87,17 +97,19 @@ export default function useQuestHomeHeader(setSelectedSortMethod) {
   const setSelectedFilters = setSelectedSortMethod.setSelectedFilters;
   const selectedFilters = setSelectedSortMethod.selectedFilters;
   const selectedSortMethod = setSelectedSortMethod.selectedSortMethod;
-  const navigation = setSelectedSortMethod(selectedFilters[22]).useNavigation();
+  let navigation;
+  let enabled;
+  navigation = setSelectedSortMethod(selectedFilters[22]).useNavigation();
   const obj = setSelectedSortMethod(selectedFilters[22]);
-  const enabled = setSelectedSortMethod(selectedFilters[23]).useVirtualCurrencyMobileEnabled().enabled;
+  enabled = setSelectedSortMethod(selectedFilters[23]).useVirtualCurrencyMobileEnabled().enabled;
   const items = [navigation, enabled, setSelectedSortMethod, setSelectedFilters, selectedFilters, selectedSortMethod];
   const layoutEffect = selectedSortMethod.useLayoutEffect(() => {
     navigation.setOptions({
       headerTitle() {
-        return outer2_8(outer2_11, {});
+        return callback(closure_11, {});
       },
       headerRight() {
-        return outer2_8(outer2_12, { isVirtualCurrencyEnabled: outer1_5, setSelectedSortMethod: outer1_0, setSelectedFilters: outer1_1, selectedFilters: outer1_2, selectedSortMethod: outer1_3 });
+        return outer1_8(outer1_12, { isVirtualCurrencyEnabled: closure_5, setSelectedSortMethod: closure_0, setSelectedFilters: closure_1, selectedFilters: closure_2, selectedSortMethod: FilterFooter });
       }
     });
   }, items);

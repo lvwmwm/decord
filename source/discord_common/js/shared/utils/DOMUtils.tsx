@@ -1,10 +1,10 @@
-// Module ID: 1835
-// Function ID: 20060
+// Module ID: 1859
+// Function ID: 1860
 // Name: set
 // Dependencies: [2]
 // Exports: clickedOnVisibleImage, cssValueToNumber, eventOwnerDocument, getParentElementByAttribute, getParentElementByClassName, isElement, isInputLikeElement, removeNode
 
-// Module 1835 (set)
+// Module 1859 (set)
 import set from "set";
 
 const re0 = /input/i;
@@ -17,29 +17,28 @@ export const isElement = function isElement(ownerDocument, name) {
     return false;
   } else {
     let defaultView;
-    if (null != ownerDocument) {
+    if (ownerDocument != null) {
       ownerDocument = ownerDocument.ownerDocument;
-      if (null != ownerDocument) {
+      if (ownerDocument != null) {
         defaultView = ownerDocument.defaultView;
       }
     }
     if (null == defaultView) {
       return false;
     } else {
-      name = undefined;
-      if (null != name) {
-        name = name.name;
+      let str;
+      if (name != null) {
+        str = name.name;
       }
-      let str = "Element";
-      if (null != name) {
-        str = name;
+      if (str == null) {
+        str = "Element";
       }
       return null != defaultView[str] && ownerDocument instanceof defaultView[str];
     }
   }
 };
-export const cssValueToNumber = function cssValueToNumber(replaced) {
-  const parsed = parseInt(replaced, 10);
+export const cssValueToNumber = function cssValueToNumber(joined) {
+  const parsed = parseInt(joined, 10);
   let num = 0;
   if (!isNaN(parsed)) {
     num = parsed;
@@ -55,10 +54,9 @@ export const isInputLikeElement = function isInputLikeElement(getAttribute) {
     return true;
   } else {
     if (regex.test(getAttribute.tagName)) {
-      const attr = getAttribute.getAttribute("type");
-      let str2 = "text";
-      if (null != attr) {
-        str2 = attr;
+      let str2 = getAttribute.getAttribute("type");
+      if (str2 == null) {
+        str2 = "text";
       }
       if (set.has(str2)) {
         return true;
@@ -101,7 +99,14 @@ export const clickedOnVisibleImage = function clickedOnVisibleImage(arg0, arg1, 
   const result1 = height * bound;
   const sum = (height2 - result1) / 2 + left;
   const sum1 = (width2 - result) / 2 + top;
-  return arg1 >= sum && arg1 <= sum + result1 && arg0 >= sum1 && arg0 <= sum1 + result;
+  let tmp6 = arg1 >= sum && arg1 <= sum + result1;
+  if (tmp6) {
+    tmp6 = arg0 >= sum1;
+  }
+  if (tmp6) {
+    tmp6 = arg0 <= sum1 + result;
+  }
+  return tmp6;
 };
 export const getParentElementByClassName = function getParentElementByClassName(parentElement) {
   parentElement = parentElement.parentElement;

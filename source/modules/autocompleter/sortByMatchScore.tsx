@@ -1,43 +1,41 @@
-// Module ID: 5081
-// Function ID: 43734
+// Module ID: 5103
+// Function ID: 5104
 // Name: sortByMatchScore
 // Dependencies: [2]
 // Exports: default
 
-// Module 5081 (sortByMatchScore)
+// Module 5103 (sortByMatchScore)
 const result = require("set").fileFinishedImporting("modules/autocompleter/sortByMatchScore.tsx");
 
 export default function sortByMatchScore(score, score2) {
   if (score.score === score2.score) {
-    let sortable = score.sortable;
-    if (null == sortable) {
+    let str = score.sortable;
+    if (str == null) {
       const comparator = score.comparator;
       let toLocaleLowerCaseResult;
-      if (null != comparator) {
+      if (comparator != null) {
         toLocaleLowerCaseResult = comparator.toLocaleLowerCase();
       }
-      sortable = toLocaleLowerCaseResult;
+      str = toLocaleLowerCaseResult;
     }
-    let str = "";
-    let str2 = "";
-    if (null != sortable) {
-      str2 = sortable;
+    if (str == null) {
+      str = "";
     }
-    let sortable2 = score.sortable;
-    if (null == sortable2) {
+    let str2 = score.sortable;
+    if (str2 == null) {
       const comparator2 = score2.comparator;
       let toLocaleLowerCaseResult1;
-      if (null != comparator2) {
+      if (comparator2 != null) {
         toLocaleLowerCaseResult1 = comparator2.toLocaleLowerCase();
       }
-      sortable2 = toLocaleLowerCaseResult1;
+      str2 = toLocaleLowerCaseResult1;
     }
-    if (null != sortable2) {
-      str = sortable2;
+    if (str2 == null) {
+      str2 = "";
     }
-    if (str2 < str) {
+    if (str < str2) {
       return -1;
-    } else if (str2 > str) {
+    } else if (str > str2) {
       return 1;
     }
   }

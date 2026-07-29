@@ -1,31 +1,67 @@
 // Module ID: 8578
-// Function ID: 68046
+// Function ID: 8579
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 31, 27, 33, 8520, 8579, 8522, 8531]
+// Dependencies: [41, 42, 93, 95, 98, 8547, 8570]
 
 // Module 8578 (_isNativeReflectConstruct)
-import getActivityIndicator from "get ActivityIndicator";
-import jsxProd from "jsxProd";
+import _classCallCheck from "_classCallCheck";
 import _possibleConstructorReturn from "_possibleConstructorReturn";
 import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
-import "result";
-import { Image } from "get ActivityIndicator";
-import { jsx } from "jsxProd";
-import tmp3 from "_isNativeReflectConstruct";
+import importDefaultResult from "_createClass";
 
-const require = arg1;
+const FeDisplacementMap = arg1;
 function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
+  try {
+    const _Boolean = Boolean;
+    const call = valueOf.call;
+    const _Reflect = Reflect;
+    const _Boolean2 = Boolean;
+    if (typeof call === "unknown") {
+      let callResult = valueOf();
+    } else {
+      callResult = call(constructResult);
+    }
+    let closure_0 = !callResult;
+    function _isNativeReflectConstruct() {
+      return closure_0;
+    }
+    return _isNativeReflectConstruct();
+  } catch (err) {
   }
-  const result = _isNativeReflectConstruct();
 }
-const re10 = /\s+/;
-tmp3.displayName = "Image";
-tmp3.defaultProps = { x: 0, y: 0, width: 0, height: 0, preserveAspectRatio: "xMidYMid meet" };
+class FeDisplacementMap {
+  constructor() {
+    self = this;
+    tmp = _isNativeReflectConstruct(this, FeDisplacementMap);
+    tmp2 = __esModule;
+    obj = __esModule(FeDisplacementMap);
+    tmp3 = __esModule;
+    if (_isNativeReflectConstruct()) {
+      tmp7 = globalThis;
+      _Reflect = Reflect;
+      tmp8 = arguments;
+      constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
+    } else {
+      tmp4 = arguments;
+      tmp5 = arguments;
+      constructResult = obj(...arguments);
+    }
+    return tmp3(self, constructResult);
+  }
+}
+require("_inherits")(FeDisplacementMap, require("_isNativeReflectConstruct"));
+let obj = {
+  key: "render",
+  value: function render() {
+    const result = FeDisplacementMap(8547).warnUnimplementedFilter();
+    return null;
+  }
+};
+const items = [obj];
+const importDefaultResultResult = importDefaultResult(FeDisplacementMap, items);
+importDefaultResultResult.displayName = "FeDisplacementMap";
+obj = {};
+const merged = Object.assign(importDefaultResultResult.defaultPrimitiveProps);
+importDefaultResultResult.defaultProps = obj;
 
-export default tmp3;
+export default importDefaultResultResult;

@@ -1,38 +1,38 @@
-// Module ID: 5121
-// Function ID: 44412
+// Module ID: 5143
+// Function ID: 5144
 // Name: HeaderBackImage
-// Dependencies: [5, 31, 27, 653, 33, 4165, 689, 4161, 5122, 5125, 1457, 5127, 1212, 5128, 5153, 477, 1557, 5118, 2]
+// Dependencies: [5, 19, 17, 676, 21, 4189, 712, 4185, 5144, 5147, 1481, 5149, 1236, 5150, 5175, 500, 1581, 5140, 2]
 // Exports: FauxHeader, HeaderSubmittingIndicator, NavigatorHeader, getHeaderBackButton, getHeaderCloseButton, getHeaderConditionalBackButton, getHeaderNoTitle, getHeaderTextButton, renderBackImage
 
-// Module 5121 (HeaderBackImage)
-import closure_3 from "_createForOfIteratorHelperLoose";
-import "result";
-import get_ActivityIndicator from "get ActivityIndicator";
+// Module 5143 (HeaderBackImage)
+import closure_3 from "createCacheKey";
+import "noop";
+import get_ActivityIndicator from "NAV_BAR_HEIGHT";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_4;
-let closure_5;
+let c4;
+let c5;
 let closure_6;
-let closure_7;
+let error;
 const require = arg1;
 class HeaderBackImage {
   constructor() {
-    tmp = c8();
+    tmp = jsxs();
     obj = { size: "md", style: tmp.headerButtonIcon };
     return jsx(require("ArrowLargeLeftIcon").ArrowLargeLeftIcon, obj);
   }
 }
 function CloseButton(onPress) {
   let fn = onPress.onPress;
-  let obj = Object.create(null);
-  obj.onPress = 0;
-  const merged = Object.assign(onPress, obj);
+  const merged = Object.assign(onPress, Object.create(null));
+  let _require;
+  let closure_1;
   fn = undefined;
-  const _require = _createForOfIteratorHelperLoose();
-  obj = _require(fn[10]);
-  let closure_1 = obj.useNavigation();
-  if (null == fn) {
+  _require = createCacheKey();
+  let obj = _require(fn[10]);
+  closure_1 = obj.useNavigation();
+  if (fn == null) {
     fn = () => {
 
     };
@@ -41,112 +41,107 @@ function CloseButton(onPress) {
     fn();
     return true;
   });
-  const intl = _require(fn[12]).intl;
+  const intl = tmp2(tmp3[12]).intl;
   const stringResult = intl.string(_require(fn[12]).t.cpT0Cq);
   obj = {};
   const merged1 = Object.assign(merged);
-  obj["onPress"] = fn;
-  obj["label"] = stringResult;
-  obj["labelVisible"] = false;
-  obj["backImage"] = function backImage(tintColor) {
+  obj.onPress = fn;
+  obj.label = stringResult;
+  obj.labelVisible = false;
+  obj.backImage = function backImage(tintColor) {
     const style = [lib.headerButtonIcon, { tintColor: tintColor.tintColor }];
     return outer1_6(lib(fn[14]).XSmallIcon, { size: "md", style });
   };
-  obj["accessibilityLabel"] = stringResult;
+  obj.accessibilityLabel = stringResult;
   return callback(_require(fn[13]).HeaderBackButton, obj);
 }
 function CustomHeaderBackButton(onPress) {
   onPress = onPress.onPress;
-  let obj = Object.create(null);
-  obj.onPress = 0;
-  const merged = Object.assign(onPress, obj);
-  obj = onPress(5127);
+  const merged = Object.assign(onPress, Object.create(null));
+  let obj = onPress(5149);
   obj.useNavigatorBackPressHandler(() => {
     if (null != onPress) {
-      onPress();
+      tmp();
     }
     return null != onPress;
   });
   obj = {};
   const merged1 = Object.assign(merged);
-  obj["onPress"] = onPress;
-  obj["labelVisible"] = false;
-  obj["backImage"] = function backImage() {
-    return outer1_6(outer1_9, {});
+  obj.onPress = onPress;
+  obj.labelVisible = false;
+  obj.backImage = function backImage() {
+    return callback(closure_9, {});
   };
-  return callback(onPress(5128).HeaderBackButton, obj);
+  return callback(onPress(5150).HeaderBackButton, obj);
 }
 function HeaderTextButton(text) {
   text = text.text;
-  let obj = Object.create(null);
-  obj.text = 0;
-  obj.labelStyle = 0;
-  const merged = Object.assign(text, obj);
-  obj = {};
-  const merged1 = Object.assign(_createForOfIteratorHelperLoose().headerBackTitleStyle);
-  obj["marginHorizontal"] = 16;
+  const merged = Object.assign(text, Object.create(null));
+  let obj = {};
+  const merged1 = Object.assign(createCacheKey().headerBackTitleStyle);
+  obj.marginHorizontal = 16;
   const items = [obj, text.labelStyle];
   obj = {};
   const merged2 = Object.assign(merged);
-  obj["label"] = text;
-  obj["labelVisible"] = true;
-  obj["labelStyle"] = items;
-  obj["backImage"] = function backImage() {
+  obj.label = text;
+  obj.labelVisible = true;
+  obj.labelStyle = items;
+  obj.backImage = function backImage() {
     return null;
   };
-  let tmp6;
+  let tmp5;
   if (obj3.isAndroid()) {
-    tmp6 = text;
+    tmp5 = text;
   }
-  obj["accessibilityLabel"] = tmp6;
-  return closure_6(require(5128) /* Background */.HeaderBackButton, obj);
+  obj.accessibilityLabel = tmp5;
+  return closure_6(require(5150) /* Background */.HeaderBackButton, obj);
 }
-({ View: closure_4, ActivityIndicator: closure_5 } = get_ActivityIndicator);
-({ jsx: closure_6, jsxs: closure_7 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW, overflow: "hidden" };
-_createForOfIteratorHelperLoose.fauxHeaderWrapper = _createForOfIteratorHelperLoose;
+({ View: c4, ActivityIndicator: c5 } = get_ActivityIndicator);
+({ jsx: closure_6, jsxs: error } = jsxProd);
+createCacheKey = { fauxHeaderWrapper: null, headerTitle: null, headerBackTitleStyle: null, navigatorHeaderTitleContainer: null, navigatorHeaderContainer: null, navigatorHeaderSubtitle: null, headerButtonIcon: null, submittingIndicator: null };
+createCacheKey = { backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW, overflow: "hidden" };
+createCacheKey[0] = createCacheKey;
 let obj1 = {};
 let merged = Object.assign(require("Text").TextStyleSheet["redesign/heading-18/bold"]);
-obj1["color"] = require("_createForOfIteratorHelperLoose").colors.MOBILE_TEXT_HEADING_PRIMARY;
-_createForOfIteratorHelperLoose.headerTitle = obj1;
-const obj2 = { fontFamily: require("ME").Fonts.PRIMARY_MEDIUM, fontSize: 16, letterSpacing: 0, lineHeight: 20, color: require("_createForOfIteratorHelperLoose").colors.MOBILE_TEXT_HEADING_PRIMARY };
-_createForOfIteratorHelperLoose.headerBackTitleStyle = obj2;
-_createForOfIteratorHelperLoose.navigatorHeaderTitleContainer = { flexDirection: "row", justifyContent: "center", alignItems: "center" };
-_createForOfIteratorHelperLoose.navigatorHeaderContainer = { flexDirection: "column", justifyContent: "center", alignItems: "center" };
-_createForOfIteratorHelperLoose.navigatorHeaderSubtitle = { marginTop: -2 };
-const obj3 = { width: 24, height: 24, tintColor: require("_createForOfIteratorHelperLoose").colors.MOBILE_TEXT_HEADING_PRIMARY };
-_createForOfIteratorHelperLoose.headerButtonIcon = obj3;
-const obj4 = { width: 22, height: 22, color: require("_createForOfIteratorHelperLoose").colors.INTERACTIVE_TEXT_DEFAULT };
-_createForOfIteratorHelperLoose.submittingIndicator = obj4;
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+obj1.color = require("Themes").colors.MOBILE_TEXT_HEADING_PRIMARY;
+createCacheKey[1] = obj1;
+createCacheKey[2] = { fontFamily: require("ME").Fonts.PRIMARY_MEDIUM, fontSize: 16, letterSpacing: 0, lineHeight: 20, color: require("Themes").colors.MOBILE_TEXT_HEADING_PRIMARY };
+createCacheKey[3] = { flexDirection: "row", justifyContent: "center", alignItems: "center" };
+createCacheKey[4] = { flexDirection: "column", justifyContent: "center", alignItems: "center" };
+createCacheKey[5] = { marginTop: -2 };
+const obj2 = { fontFamily: require("ME").Fonts.PRIMARY_MEDIUM, fontSize: 16, letterSpacing: 0, lineHeight: 20, color: require("Themes").colors.MOBILE_TEXT_HEADING_PRIMARY };
+createCacheKey[6] = { width: 24, height: 24, tintColor: require("Themes").colors.MOBILE_TEXT_HEADING_PRIMARY };
+const obj3 = { width: 24, height: 24, tintColor: require("Themes").colors.MOBILE_TEXT_HEADING_PRIMARY };
+createCacheKey[7] = { width: 22, height: 22, color: require("Themes").colors.INTERACTIVE_TEXT_DEFAULT };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+const obj4 = { width: 22, height: 22, color: require("Themes").colors.INTERACTIVE_TEXT_DEFAULT };
 const result = require("get ActivityIndicator").fileFinishedImporting("design/components/Navigator/native/NavigatorHeader.native.tsx");
 
-export const useStyles = _createForOfIteratorHelperLoose;
+export const useStyles = createCacheKey;
 export const NavigatorHeader = function NavigatorHeader(subtitle) {
   let icon;
   let title;
   subtitle = subtitle.subtitle;
   ({ title, icon } = subtitle);
-  const tmp = _createForOfIteratorHelperLoose();
-  let obj = { style: tmp.navigatorHeaderContainer };
-  obj = { style: tmp.navigatorHeaderTitleContainer };
-  const items = [icon, ];
-  obj = { accessibilityRole: "header", "aria-level": "1", lineClamp: 1, variant: "redesign/heading-18/bold", color: "mobile-text-heading-primary", children: title };
-  items[1] = callback(require(4161) /* Text */.Text, obj);
-  obj.children = items;
+  const tmp = createCacheKey();
+  let obj = { style: tmp.navigatorHeaderContainer, children: null };
+  obj = { style: tmp.navigatorHeaderTitleContainer, children: null };
+  const items = [icon, callback(require(4185) /* Text */.Text, { accessibilityRole: "header", "aria-level": "1", lineClamp: 1, variant: "redesign/heading-18/bold", color: "mobile-text-heading-primary", children: title })];
+  obj[1] = items;
   const items1 = [callback2(closure_4, obj), , ];
-  let tmp5 = null != subtitle;
-  if (tmp5) {
-    tmp5 = "" !== subtitle;
+  let tmp6Result = null != subtitle;
+  if (tmp6Result) {
+    tmp6Result = "" !== subtitle;
   }
-  if (tmp5) {
-    const obj1 = { lineClamp: 1, style: tmp.navigatorHeaderSubtitle, variant: "text-xs/medium", color: "text-muted", children: subtitle };
-    tmp5 = callback(require(4161) /* Text */.Text, obj1);
+  if (tmp6Result) {
+    obj = { lineClamp: 1, style: null, variant: "text-xs/medium", color: "text-muted", children: null };
+    obj[1] = tmp.navigatorHeaderSubtitle;
+    obj[4] = subtitle;
+    tmp6Result = callback(require(4185) /* Text */.Text, obj);
   }
-  items1[1] = tmp5;
-  items1[2] = importDefault(5122)("js-stack");
-  obj.children = items1;
+  items1[1] = tmp6Result;
+  items1[2] = importDefault(5144)("js-stack");
+  obj[1] = items1;
   return callback2(closure_4, obj);
 };
 export { HeaderBackImage };
@@ -158,7 +153,7 @@ export function getHeaderCloseButton(pop) {
   return (arg0) => {
     const obj = {};
     const merged = Object.assign(arg0);
-    obj["onPress"] = closure_0;
+    obj.onPress = closure_0;
     return outer1_6(outer1_10, obj);
   };
 }
@@ -166,42 +161,106 @@ export function getHeaderConditionalBackButton(handleBack) {
   let closure_0 = handleBack;
   return (onPress) => {
     onPress = onPress.onPress;
-    let obj = Object.create(null);
-    obj.onPress = 0;
-    async function _handlePress() {
-      if (yield onPress()) {
-        if (null != outer2_0) {
-          outer2_0();
+    function _handlePress() {
+      const self = this;
+      const tmp = outer2_3(function*() {
+        if (c2 === 2) {
+          c2 = 3;
+          HermesBuiltin.throwTypeError();
+        } else if (tmp3 === 3) {
+          if (arg0 === 1) {
+            throw arg1;
+          } else if (arg0 === 2) {
+            let obj = { value: null, done: true };
+            obj[0] = arg1;
+            return obj;
+          } else {
+            return { value: "HermesInternal", done: null };
+          }
+        } else {
+          try {
+            c2 = 2;
+            if (0 === c1) {
+              if (arg0 === 1) {
+                c2 = 3;
+                throw arg1;
+              } else if (arg0 === 2) {
+                c2 = 3;
+                obj = { value: null, done: true };
+                obj[0] = arg1;
+                return obj;
+              } else {
+                let closure_0 = tmp4;
+                c1 = 1;
+                c2 = 1;
+                const obj1 = { value: null, done: false };
+                obj1[0] = outer1_0();
+                return obj1;
+              }
+            } else if (arg0 === 1) {
+              c2 = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              c2 = 3;
+              obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            } else {
+              if (arg1) {
+                if (closure_0 != null) {
+                  tmp6();
+                }
+              }
+              c2 = 3;
+              return { value: "HermesInternal", done: null };
+            }
+          } catch (tmp10) {
+            c2 = tmp;
+            throw tmp10;
+          }
         }
+      });
+      const _handlePress = tmp;
+      const apply = tmp.apply;
+      if (typeof apply === "unknown") {
+        let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+      } else {
+        applyArgumentsResult = apply(self, arguments);
       }
+      return applyArgumentsResult;
     }
-    obj = {};
-    const merged = Object.assign(Object.assign(onPress, obj));
-    obj["onPress"] = function handlePress() {
-      return _handlePress(...arguments);
+    let obj = {};
+    const merged = Object.assign(Object.assign(onPress, Object.create(null)));
+    obj.onPress = function handlePress() {
+      const self = this;
+      const apply = _handlePress.apply;
+      if (typeof apply === "unknown") {
+        let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+      } else {
+        applyArgumentsResult = apply(self, arguments);
+      }
+      return applyArgumentsResult;
     };
     return outer1_6(outer1_11, obj);
   };
 }
 export function getHeaderBackButton(onClose, arg1) {
-  let flag = arg1;
   let closure_0 = onClose;
+  let flag = arg1;
   if (arg1 === undefined) {
     flag = false;
   }
   return function renderBackImage(onPress) {
     onPress = onPress.onPress;
-    let obj = Object.create(null);
-    obj.onPress = 0;
-    obj = {};
-    const merged = Object.assign(Object.assign(onPress, obj));
-    obj["onPress"] = function onPress() {
-      if (null != onPress) {
-        onPress();
+    const obj = {};
+    const merged = Object.assign(Object.assign(onPress, Object.create(null)));
+    obj.onPress = function onPress() {
+      if (onPress != null) {
+        tmp();
       }
       if (!outer1_1) {
-        if (null != onPress) {
-          onPress();
+        if (onPress != null) {
+          tmp3();
         }
       }
     };
@@ -214,8 +273,8 @@ export function getHeaderTextButton(intl, callback) {
   return (arg0) => {
     const obj = {};
     const merged = Object.assign(arg0);
-    obj["text"] = closure_0;
-    obj["onPress"] = closure_1;
+    obj.text = closure_0;
+    obj.onPress = closure_1;
     return outer1_6(outer1_12, obj);
   };
 }
@@ -226,17 +285,17 @@ export const FauxHeader = function FauxHeader(arg0) {
   let children;
   let style;
   ({ children, style } = arg0);
-  const top = importDefault(1557)().top;
-  let obj = {};
-  const items = [_createForOfIteratorHelperLoose().fauxHeaderWrapper, , ];
-  obj = { paddingTop: top, height: top + require(5118) /* NAV_BAR_HEIGHT */.NAV_BAR_HEIGHT };
+  const top = importDefault(1581)().top;
+  let obj = { style: null, children: null };
+  const items = [createCacheKey().fauxHeaderWrapper, , ];
+  obj = { paddingTop: top, height: top + require(5140) /* NAV_BAR_HEIGHT */.NAV_BAR_HEIGHT };
   items[1] = obj;
   items[2] = style;
-  obj.style = items;
-  obj.children = children;
+  obj[0] = items;
+  obj[1] = children;
   return callback(closure_4, obj);
 };
 export const HeaderSubmittingIndicator = function HeaderSubmittingIndicator() {
-  const tmp = _createForOfIteratorHelperLoose();
+  const tmp = createCacheKey();
   return callback(closure_5, { animating: true, style: tmp.submittingIndicator, color: tmp.submittingIndicator.color });
 };

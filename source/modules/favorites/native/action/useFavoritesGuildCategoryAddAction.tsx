@@ -1,33 +1,86 @@
-// Module ID: 11856
-// Function ID: 91839
+// Module ID: 11880
+// Function ID: 11881
 // Name: useFavoritesGuildCategoryAddAction
-// Dependencies: [5, 31, 653, 11857, 1935, 1841, 1212, 2945, 2]
+// Dependencies: [5, 19, 676, 11881, 1959, 1865, 1236, 2969, 2]
 // Exports: default
 
-// Module 11856 (useFavoritesGuildCategoryAddAction)
-import isFavoritesGuildId from "isFavoritesGuildId";
-import result from "result";
+// Module 11880 (useFavoritesGuildCategoryAddAction)
+import getFavoritesAwareGuildName from "getFavoritesAwareGuildName";
+import noop from "noop";
 import { ChannelTypes } from "ME";
 
 const require = arg1;
-const result = require("ME").fileFinishedImporting("modules/favorites/native/action/useFavoritesGuildCategoryAddAction.tsx");
+let result = require("ME").fileFinishedImporting("modules/favorites/native/action/useFavoritesGuildCategoryAddAction.tsx");
 
 export default function useFavoritesGuildCategoryAddAction(id) {
   const _require = id;
-  // CreateGeneratorClosureLongIndex (0x67)
   const items = [id.id];
-  callback = React.useCallback(callback(tmp), items);
-  let obj = _require(1841);
-  let tmp3 = null;
+  callback = React.useCallback(callback(function*() {
+    if (paths === 2) {
+      paths = 3;
+      HermesBuiltin.throwTypeError();
+    } else if (tmp3 === 3) {
+      if (arg0 === 1) {
+        throw arg1;
+      } else if (arg0 === 2) {
+        let obj = { value: null, done: true };
+        obj[0] = arg1;
+        return obj;
+      } else {
+        return { value: "HermesInternal", done: null };
+      }
+    } else {
+      try {
+        paths = 2;
+        if (0 === c1) {
+          if (arg0 === 1) {
+            paths = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            paths = 3;
+            obj = { value: null, done: true };
+            obj[0] = arg1;
+            return obj;
+          } else {
+            const id = tmp4;
+            c1 = 1;
+            paths = 1;
+            const obj1 = { value: null, done: false };
+            obj1[0] = outer1_0(paths[4])(paths[3], paths.paths);
+            return obj1;
+          }
+        } else if (arg0 === 1) {
+          paths = 3;
+          throw arg1;
+        } else if (arg0 === 2) {
+          paths = 3;
+          const obj2 = { value: null, done: true };
+          obj2[0] = arg1;
+          return obj2;
+        } else {
+          obj = { parentId: null, source: "favorites_add_to_category" };
+          obj[0] = id.id;
+          const result = arg1.openAddFavoriteChannelModal(obj);
+          paths = 3;
+          return { value: "HermesInternal", done: null };
+        }
+      } catch (tmp10) {
+        paths = tmp;
+        throw tmp10;
+      }
+    }
+  }), items);
+  let obj = _require(1865);
+  let tmp4 = null;
   if (obj.isFavoritesGuildId(id.getGuildId())) {
-    tmp3 = null;
+    tmp4 = null;
     if (id.type === ChannelTypes.GUILD_CATEGORY) {
-      obj = {};
-      const intl = _require(1212).intl;
-      obj.label = intl.string(importDefault(2945)["1QJmIL"]);
-      obj.perform = callback;
-      tmp3 = obj;
+      obj = { label: null, perform: null };
+      const intl = _require(1236).intl;
+      obj[0] = intl.string(importDefault(2969)["1QJmIL"]);
+      obj[1] = callback;
+      tmp4 = obj;
     }
   }
-  return tmp3;
+  return tmp4;
 };

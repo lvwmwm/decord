@@ -1,129 +1,146 @@
-// Module ID: 6206
-// Function ID: 55615
+// Module ID: 6226
+// Function ID: 6227
 // Name: PremiumPlanActionSheetHeader
-// Dependencies: [31, 27, 1852, 6207, 33, 4165, 6208, 6209, 3811, 4589, 668, 5119, 6210, 6211, 6212, 6213, 6226, 6227, 6228, 2]
+// Dependencies: [19, 17, 1876, 6227, 21, 4189, 6228, 6229, 3835, 4611, 691, 5141, 6230, 6231, 6232, 6233, 6246, 6247, 6248, 2]
 // Exports: default
 
-// Module 6206 (PremiumPlanActionSheetHeader)
-import "result";
-import { View } from "get ActivityIndicator";
+// Module 6226 (PremiumPlanActionSheetHeader)
+import "set";
+import { View } from "registerAsset";
 import GuildFeatures from "GuildFeatures";
 import { getPremiumGradientColor } from "items";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_4;
-let closure_5;
-let closure_7;
-let closure_8;
+let c4;
+let c5;
+let error;
+let metroImportAll;
 const require = arg1;
-({ PremiumTypes: closure_4, SubscriptionIntervalTypes: closure_5 } = GuildFeatures);
-({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
+({ PremiumTypes: c4, SubscriptionIntervalTypes: c5 } = GuildFeatures);
+({ jsx: error, jsxs: metroImportAll } = jsxProd);
 let items = [{ scaleX: -1 }];
-let closure_9 = _createForOfIteratorHelperLoose.createStyles({ header: { height: 112, justifyContent: "center", alignItems: "center" }, logoContainer: { position: "absolute", top: 16, left: 16 }, imgWumpus: { position: "absolute", height: 90 }, imgWumpusRight: { transform: items }, imgWumpusBottom: { bottom: 0 }, discountPill: { marginTop: 10 } });
+let closure_9 = createCacheKey.createStyles({ header: { height: 112, justifyContent: "center", alignItems: "center" }, logoContainer: { position: "absolute", top: 16, left: 16 }, imgWumpus: { position: "absolute", height: 90 }, imgWumpusRight: { transform: items }, imgWumpusBottom: { bottom: 0 }, discountPill: { marginTop: 10 } });
 const result = require("GuildFeatures").fileFinishedImporting("modules/premium/native/PremiumPlanActionSheetHeader.tsx");
 
-export default function PremiumPlanActionSheetHeader(premiumType) {
+export default function PremiumPlanActionSheetHeader(arg0) {
   let discountOffer;
+  let premiumType;
   let trialOffer;
-  premiumType = premiumType.premiumType;
-  ({ trialOffer, discountOffer } = premiumType);
-  function getClouds() {
-    if (outer1_4.TIER_0 === premiumType) {
-      return outer1_1(outer1_2[6]);
-    } else if (outer1_4.TIER_1 === tmp) {
-      return null;
-    } else if (outer1_4.TIER_2 === tmp) {
-      return outer1_1(outer1_2[7]);
-    }
-  }
-  const tmp = callback2();
+  ({ premiumType, trialOffer, discountOffer } = arg0);
+  const tmp = callback();
   let tmp2 = null != trialOffer;
   if (tmp2) {
     const subscription_trial = trialOffer.subscription_trial;
     let sku_id;
-    if (null != subscription_trial) {
+    if (subscription_trial != null) {
       sku_id = subscription_trial.sku_id;
     }
-    let obj = importDefault(3811);
+    let obj = importDefault(3835);
     tmp2 = sku_id === obj.getSkuIdForPremiumType(premiumType);
   }
-  premiumType(3811);
-  let tmp8 = null != discountOffer;
-  if (tmp8) {
+  require(3835) /* getPremiumPlanItem */;
+  let tmp10 = null != discountOffer;
+  if (tmp10) {
     const discount = discountOffer.discount;
     let hasItem;
-    if (null != discount) {
+    if (discount != null) {
       const planIds = discount.planIds;
-      hasItem = planIds.includes(tmp7);
+      hasItem = planIds.includes(tmp9);
     }
-    tmp8 = hasItem;
+    tmp10 = hasItem;
   }
-  obj = { style: tmp.header, colors: getPremiumGradientColor(premiumType), start: premiumType(668).HorizontalGradient.START, end: premiumType(668).HorizontalGradient.END, accessible: true, accessibilityRole: "header" };
-  let obj2 = premiumType(3811);
-  obj.accessibilityLabel = obj2.getPremiumTypeDisplayName(premiumType);
-  let clouds = getClouds();
-  if (clouds) {
-    obj = { source: getClouds() };
-    clouds = callback(importDefault(5119), obj);
-    const tmp16 = importDefault(5119);
-  }
-  const items = [clouds, , ];
-  const obj1 = { style: tmp.logoContainer };
-  obj2 = {};
-  const tmp10 = closure_8;
-  const tmp11 = importDefault(4589);
-  const tmp17 = closure_8;
-  const tmp18 = View;
-  const tmp19 = callback;
-  if (closure_4.TIER_0 === premiumType) {
-    let tmp23 = importDefault(6210);
-  } else if (closure_4.TIER_1 === premiumType) {
-    tmp23 = importDefault(6211);
-  } else if (closure_4.TIER_2 === premiumType) {
-    tmp23 = importDefault(6212);
-  }
-  obj2.source = tmp23;
-  obj2.resizeMode = "contain";
-  const items1 = [tmp19(importDefault(5119), obj2), , ];
-  let tmp30 = null;
-  if (tmp2) {
-    const obj3 = { style: tmp.discountPill, trialOffer, premiumType, useWhiteBackground: true, hideTrialCountdown: true };
-    tmp30 = callback(premiumType(6213).PremiumPill, obj3);
-  }
-  items1[1] = tmp30;
-  let tmp34 = null;
-  if (tmp8) {
-    const obj4 = { style: tmp.discountPill, discountOffer, premiumType, shouldShowDiscountUpsell: true, useWhiteBackground: true };
-    tmp34 = callback(premiumType(6213).PremiumPill, obj4);
-  }
-  items1[2] = tmp34;
-  obj1.children = items1;
-  items[1] = tmp17(tmp18, obj1);
-  const obj5 = {};
-  const tmp20 = importDefault(5119);
-  const tmp38 = callback;
-  if (closure_4.TIER_0 === premiumType) {
-    let tmp42 = importDefault(6226);
-  } else if (closure_4.TIER_1 === premiumType) {
-    tmp42 = importDefault(6227);
-  } else if (closure_4.TIER_2 === premiumType) {
-    tmp42 = importDefault(6228);
-  }
-  obj5.source = tmp42;
-  const items2 = [tmp.imgWumpus, ];
-  if (closure_4.TIER_0 !== premiumType) {
-    if (closure_4.TIER_1 !== premiumType) {
-      if (closure_4.TIER_2 === premiumType) {
-        let imgWumpusBottom = tmp.imgWumpusRight;
+  obj = { style: tmp.header, colors: null, start: null, end: null, accessible: true, accessibilityRole: "header", accessibilityLabel: null, children: null };
+  obj[1] = getPremiumGradientColor(premiumType);
+  obj[2] = require(691) /* keys */.HorizontalGradient.START;
+  obj[3] = require(691) /* keys */.HorizontalGradient.END;
+  const tmp14 = importDefault(4611);
+  obj[6] = require(3835) /* getPremiumPlanItem */.getPremiumTypeDisplayName(premiumType);
+  if (TIER_0.TIER_0 === premiumType) {
+    let tmp13Result = tmp13(6228);
+  } else {
+    tmp13Result = null;
+    if (tmp15.TIER_1 !== premiumType) {
+      if (tmp15.TIER_2 === premiumType) {
+        tmp13Result = tmp13(6229);
       }
     }
-    items2[1] = imgWumpusBottom;
-    obj5.style = items2;
-    obj5.resizeMode = "contain";
-    items[2] = tmp38(tmp39, obj5);
-    obj.children = items;
-    return tmp10(tmp11, obj);
   }
-  imgWumpusBottom = tmp.imgWumpusBottom;
+  if (!tmp13Result) {
+    const items = [tmp13Result, , ];
+    obj = { style: null, children: null };
+    obj[0] = tmp.logoContainer;
+    tmp13Result = tmp13(5141);
+    if (tmp15.TIER_0 === premiumType) {
+      let tmp13Result1 = tmp13(6230);
+    } else if (tmp15.TIER_1 === premiumType) {
+      tmp13Result1 = tmp13(6231);
+    } else if (tmp15.TIER_2 === premiumType) {
+      tmp13Result1 = tmp13(6232);
+    }
+    const obj1 = { source: null, resizeMode: "contain" };
+    obj1[0] = tmp13Result1;
+    const items1 = [closure_7(tmp13Result, obj1), , ];
+    let tmp22Result = null;
+    if (tmp2) {
+      const obj2 = { style: null, trialOffer: null, premiumType: null, useWhiteBackground: true, hideTrialCountdown: true };
+      obj2[0] = tmp.discountPill;
+      obj2[1] = trialOffer;
+      obj2[2] = premiumType;
+      tmp22Result = tmp22(tmp6(6233).PremiumPill, obj2);
+    }
+    items1[1] = tmp22Result;
+    tmp22Result = null;
+    if (tmp10) {
+      const obj3 = { style: null, discountOffer: null, premiumType: null, shouldShowDiscountUpsell: true, useWhiteBackground: true };
+      obj3[0] = tmp.discountPill;
+      obj3[1] = discountOffer;
+      obj3[2] = premiumType;
+      tmp22Result = tmp22(tmp6(6233).PremiumPill, obj3);
+    }
+    items1[2] = tmp22Result;
+    obj[1] = items1;
+    items[1] = tmp12(View, obj);
+    if (tmp15.TIER_0 === premiumType) {
+      let tmp13Result3 = tmp13(6246);
+    } else if (tmp15.TIER_1 === premiumType) {
+      tmp13Result3 = tmp13(6247);
+    } else if (tmp15.TIER_2 === premiumType) {
+      tmp13Result3 = tmp13(6248);
+    }
+    const obj4 = { source: null, style: null, resizeMode: "contain" };
+    obj4[0] = tmp13Result3;
+    const items2 = [tmp.imgWumpus, ];
+    if (tmp15.TIER_0 !== premiumType) {
+      if (tmp15.TIER_1 !== premiumType) {
+        if (tmp15.TIER_2 === premiumType) {
+          let imgWumpusBottom = tmp.imgWumpusRight;
+        }
+      }
+      items2[1] = imgWumpusBottom;
+      obj4[1] = items2;
+      items[2] = tmp22(tmp13Result2, obj4);
+      obj[7] = items;
+      return tmp12(tmp14, obj);
+    }
+    imgWumpusBottom = tmp.imgWumpusBottom;
+    tmp13Result2 = tmp13(5141);
+    const tmp21 = View;
+  } else {
+    if (tmp15.TIER_0 === premiumType) {
+      let tmp13Result5 = tmp13(6228);
+    } else {
+      tmp13Result5 = null;
+      if (tmp15.TIER_1 !== premiumType) {
+        if (tmp15.TIER_2 === premiumType) {
+          tmp13Result5 = tmp13(6229);
+        }
+      }
+    }
+    const obj5 = { source: null };
+    obj5[0] = tmp13Result5;
+    closure_7(tmp13(5141), obj5);
+    const tmp13Result4 = tmp13(5141);
+    const tmp17 = closure_7;
+  }
 };

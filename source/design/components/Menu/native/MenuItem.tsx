@@ -1,15 +1,16 @@
-// Module ID: 13152
-// Function ID: 101334
+// Module ID: 13175
+// Function ID: 13176
 // Name: MenuItem
-// Dependencies: [31, 33, 4165, 13150, 4580, 5191, 5211, 2]
+// Dependencies: [19, 21, 4189, 13173, 4602, 5213, 5233, 2]
 
-// Module 13152 (MenuItem)
-import importAllResult from "result";
+// Module 13175 (MenuItem)
+import importAllResult from "noop";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
 const require = arg1;
-let closure_5 = _createForOfIteratorHelperLoose.createStyles({ formIcon: { width: 20, height: 20 }, formLabel: { fontSize: 14, fontWeight: "500" } });
+let c3 = importAllResult;
+let closure_5 = createCacheKey.createStyles({ formIcon: { width: 20, height: 20 }, formLabel: { fontSize: 14, fontWeight: "500" } });
 const forwardRefResult = importAllResult.forwardRef((action, ref) => {
   let IconComponent;
   let disabled;
@@ -28,46 +29,49 @@ const forwardRefResult = importAllResult.forwardRef((action, ref) => {
   action = action.action;
   let menuClose;
   const tmp = callback();
-  menuClose = importAllResult.useContext(action(13150).MenuContext).menuClose;
+  menuClose = importAllResult.useContext(action(13173).MenuContext).menuClose;
   if (null != IconComponent) {
-    let obj = { size: "sm" };
-    let tmp2 = <IconComponent size="sm" />;
+    let tmp3 = <IconComponent size="sm" />;
   } else {
-    tmp2 = null;
+    tmp3 = null;
     if (null != iconSource) {
-      obj = { source: iconSource, style: tmp.formIcon };
-      tmp2 = jsx(menuClose(4580), { source: iconSource, style: tmp.formIcon });
+      let obj = { source: null, style: null };
+      obj[0] = iconSource;
+      obj[1] = tmp.formIcon;
+      tmp3 = jsx(menuClose(4602), { source: null, style: null });
     }
   }
-  obj = { ref, style, accessibilityRole: "menuitem", disabled };
-  let tmp9 = null;
-  if (null != iconSource) {
-    tmp9 = null;
-    if (showIconFirst) {
-      tmp9 = tmp2;
-    }
-  }
-  obj.leading = tmp9;
+  obj = { ref, style, accessibilityRole: "menuitem", disabled, leading: null, trailing: null, label: null, onPress: null };
   let tmp10 = null;
   if (null != iconSource) {
     tmp10 = null;
-    if (!showIconFirst) {
-      tmp10 = tmp2;
+    if (showIconFirst) {
+      tmp10 = tmp3;
     }
   }
-  obj.trailing = tmp10;
-  let tmp11 = label;
-  if ("string" === typeof label) {
-    const obj1 = { text: label, style: tmp.formLabel };
-    tmp11 = jsx(menuClose(5211), { text: label, style: tmp.formLabel });
+  obj[4] = tmp10;
+  let tmp11 = null;
+  if (null != iconSource) {
+    tmp11 = null;
+    if (!showIconFirst) {
+      tmp11 = tmp3;
+    }
   }
-  obj.label = tmp11;
-  obj.onPress = function onPress() {
+  obj[5] = tmp11;
+  let tmp7Result = label;
+  if (typeof label !== "init") {
+    obj = { text: null, style: null };
+    obj[0] = label;
+    obj[1] = tmp.formLabel;
+    tmp7Result = tmp7(menuClose(5233), obj);
+  }
+  obj[6] = tmp7Result;
+  obj[7] = function onPress() {
     action();
     menuClose();
   };
-  return jsx(menuClose(5191), { ref, style, accessibilityRole: "menuitem", disabled });
+  return jsx(menuClose(5213), { ref, style, accessibilityRole: "menuitem", disabled, leading: null, trailing: null, label: null, onPress: null });
 });
-const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("design/components/Menu/native/MenuItem.tsx");
+const result = require("createCacheKey").fileFinishedImporting("design/components/Menu/native/MenuItem.tsx");
 
 export const MenuItem = forwardRefResult;

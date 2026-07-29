@@ -1,157 +1,206 @@
-// Module ID: 1326
-// Function ID: 15566
-// Name: createApexExperimentCommon
-// Dependencies: [57, 31, 566, 2]
+// Module ID: 1350
+// Function ID: 1351
+// Name: logger
+// Dependencies: [32, 19, 4, 589, 2]
 // Exports: default
 
-// Module 1326 (createApexExperimentCommon)
+// Module 1350 (logger)
 import _slicedToArray from "_slicedToArray";
-import { useEffect } from "result";
+import { useEffect } from "noop";
 
 const require = arg1;
-let result = require("initialize").fileFinishedImporting("../discord_common/js/packages/apex/ApexExperiment.tsx");
+const logger = new require("set").Logger("ApexExperiment");
+let result = require("log").fileFinishedImporting("../discord_common/js/packages/apex/ApexExperiment.tsx");
 
 export default function createApexExperimentCommon(definition, registerExperiment) {
-  let closure_4;
   let closure_5;
   let closure_6;
-  let useEffect;
+  let closure_7;
+  let logger;
   let closure_0 = registerExperiment;
   let closure_1 = arg2;
   let _slicedToArray = arg3;
-  ({ name: useEffect, kind: closure_4, variations: closure_5, defaultConfig: closure_6 } = definition);
+  ({ name: logger, kind: closure_5, variations: closure_6, defaultConfig: closure_7 } = definition);
   registerExperiment.registerExperiment(definition);
+  let c8 = null;
   return {
     definition,
     useConfig(location) {
-      const lib = location;
-      let tmp = callback(closure_4, location);
+      const evaluationAndAssignment = location;
+      const tmp = callback(revision, location);
       const dependencyMap = tmp;
-      const tmp2 = callback("user", location);
+      let tmp2 = callback("user", location);
       callback = tmp2;
-      const items = [lib];
+      const items = [evaluationAndAssignment];
       const items1 = [tmp, tmp2];
-      const tmp3 = callback(lib(566).useStateFromStoresArray(items, () => _location.getEvaluationAndAssignment(closure_4, closure_1, first, _slicedToArray), items1), 2);
-      const first = tmp3[0];
+      const tmp3 = callback(evaluationAndAssignment(589).useStateFromStoresArray(items, () => _location.getEvaluationAndAssignment(revision, closure_1, trackedVariantId, _slicedToArray), items1), 2);
+      let first = tmp3[0];
       let variantId;
-      if (null != tmp3[1]) {
+      if (tmp3[1] != null) {
         variantId = tmp5.variantId;
       }
       let trackedVariantId;
-      if (null != tmp3[1]) {
+      if (tmp3[1] != null) {
         trackedVariantId = tmp5.trackedVariantId;
       }
-      let tmp8 = variantId;
-      if (null != trackedVariantId) {
-        tmp8 = trackedVariantId;
+      if (trackedVariantId == null) {
+        trackedVariantId = variantId;
       }
-      closure_4 = tmp8;
-      let revision;
-      if (null != tmp3[1]) {
+      revision = undefined;
+      if (tmp3[1] != null) {
         revision = tmp5.revision;
       }
       let isOverride;
-      if (null != tmp3[1]) {
+      if (tmp3[1] != null) {
         isOverride = tmp5.isOverride;
       }
       let prop;
-      if (null != tmp3[1]) {
+      if (tmp3[1] != null) {
         prop = tmp5.exposureTrackingEnabled;
       }
       let useAsEligibility;
-      if (null != tmp3[1]) {
+      if (tmp3[1] != null) {
         useAsEligibility = tmp5.useAsEligibility;
       }
-      const items2 = [tmp, first, tmp8, revision, location.location, isOverride, prop, useAsEligibility];
+      let closure_8 = useAsEligibility;
+      let tmp12 = null;
+      if (null != tmp3[1]) {
+        if (tmp5 !== first) {
+          first = tmp5;
+          closure_8 = (function computeVariantConfig(config) {
+            let tmp2 = table[config.variantId];
+            if (tmp2 == null) {
+              tmp2 = closure_7;
+            }
+            if (typeof tmp2 === "_") {
+              return tmp2;
+            } else if (null == config.config) {
+              return closure_7;
+            } else {
+              try {
+                return tmp2(config.config);
+              } catch (tmp3) {
+                const _HermesInternal = HermesInternal;
+                outer1_4.error("Failed to parse dynamic config for experiment " + closure_4, tmp3);
+                return tmp;
+              }
+            }
+          })(tmp5);
+        }
+        tmp12 = closure_8;
+      }
+      let closure_9 = tmp14;
+      const items2 = [tmp, first, trackedVariantId, revision, location.location, isOverride, prop, useAsEligibility, null == tmp12];
       outer1_3(() => {
-        let tmp = null != first;
-        if (tmp) {
-          tmp = null != closure_4;
+        let tmp2 = null == first;
+        if (!tmp2) {
+          tmp2 = null == trackedVariantId;
         }
-        if (tmp) {
-          tmp = null != revision;
+        if (!tmp2) {
+          tmp2 = null == revision;
         }
-        if (tmp) {
-          tmp = false === isOverride;
+        if (!tmp2) {
+          tmp2 = false !== isOverride;
         }
-        if (tmp) {
-          tmp = true === prop;
+        if (!tmp2) {
+          tmp2 = true !== prop;
         }
-        if (tmp) {
-          tmp = true !== useAsEligibility;
+        if (!tmp2) {
+          tmp2 = true === closure_8;
         }
-        if (tmp) {
-          const result = _location.trackExperimentExposure(first, first, _location.location, closure_4, revision, closure_4, closure_1);
+        if (!tmp2) {
+          tmp2 = closure_9;
+        }
+        if (!tmp2) {
+          const result = _location.trackExperimentExposure(tmp, trackedVariantId, _location.location, revision, revision, trackedVariantId, closure_1);
         }
       }, items2);
       if (null != variantId) {
-        if (true !== useAsEligibility) {
-          let tmp15 = revision[variantId];
-          if (null == tmp15) {
-            tmp15 = isOverride;
-          }
-          return tmp15;
-        }
+        return tmp12;
       }
-      return isOverride;
+      tmp12 = prop;
     },
     getConfig(location) {
-      const tmp = dependencyMap(closure_4, location);
-      let tmp2;
-      if ("guild" === closure_4) {
-        const obj = { location: location.location };
-        tmp2 = dependencyMap("user", obj);
+      let tmp7;
+      let tmp8;
+      const tmp3 = dependencyMap(closure_5, location);
+      let tmpResult;
+      if ("guild" === closure_5) {
+        const obj = { location: null };
+        obj[0] = location.location;
+        tmpResult = dependencyMap("user", obj);
       }
-      const tmp4 = callback(lib.getEvaluationAndAssignment(closure_4, tmp, closure_3, tmp2), 2);
-      const first = tmp4[0];
+      [tmp7, tmp8] = callback(evaluationAndAssignment.getEvaluationAndAssignment(closure_5, tmp3, closure_4, tmpResult), 2);
       let variantId;
-      if (null != tmp4[1]) {
-        variantId = tmp6.variantId;
+      if (tmp8 != null) {
+        variantId = tmp8.variantId;
       }
       let trackedVariantId;
-      if (null != tmp4[1]) {
-        trackedVariantId = tmp6.trackedVariantId;
+      if (tmp8 != null) {
+        trackedVariantId = tmp8.trackedVariantId;
       }
-      let tmp9 = variantId;
-      if (null != trackedVariantId) {
-        tmp9 = trackedVariantId;
+      if (trackedVariantId == null) {
+        trackedVariantId = variantId;
       }
       let revision;
-      if (null != tmp4[1]) {
-        revision = tmp6.revision;
+      if (tmp8 != null) {
+        revision = tmp8.revision;
       }
-      if (null != tmp4[1]) {
-        const isOverride = tmp6.isOverride;
+      if (tmp8 != null) {
+        const isOverride = tmp8.isOverride;
       }
-      if (null != tmp4[1]) {
-        const exposureTrackingEnabled = tmp6.exposureTrackingEnabled;
+      if (tmp8 != null) {
+        const exposureTrackingEnabled = tmp8.exposureTrackingEnabled;
       }
-      if (null != tmp4[1]) {
-        const useAsEligibility = tmp6.useAsEligibility;
+      if (tmp8 != null) {
+        const useAsEligibility = tmp8.useAsEligibility;
       }
-      let tmp11 = null != first && null != tmp9 && null != revision;
-      if (tmp11) {
-        tmp11 = false === isOverride;
+      let tmp12 = null;
+      if (null != tmp8) {
+        if (tmp8 !== closure_3) {
+          closure_3 = tmp8;
+          let closure_8 = (function computeVariantConfig(config) {
+            let tmp2 = table[config.variantId];
+            if (tmp2 == null) {
+              tmp2 = closure_7;
+            }
+            if (typeof tmp2 === "_") {
+              return tmp2;
+            } else if (null == config.config) {
+              return closure_7;
+            } else {
+              try {
+                return tmp2(config.config);
+              } catch (tmp3) {
+                const _HermesInternal = HermesInternal;
+                outer1_4.error("Failed to parse dynamic config for experiment " + closure_4, tmp3);
+                return tmp;
+              }
+            }
+          })(tmp8);
+        }
+        tmp12 = closure_8;
       }
-      if (tmp11) {
-        tmp11 = true === exposureTrackingEnabled;
+      let tmp14 = null != tmp7 && null != trackedVariantId && null != revision;
+      if (tmp14) {
+        tmp14 = false === isOverride;
       }
-      if (tmp11) {
-        tmp11 = true !== useAsEligibility;
+      if (tmp14) {
+        tmp14 = true === exposureTrackingEnabled;
       }
-      if (tmp11) {
-        const result = lib.trackExperimentExposure(first, closure_3, location.location, closure_4, revision, tmp9, tmp);
+      if (tmp14) {
+        tmp14 = true !== useAsEligibility;
+      }
+      if (tmp14) {
+        tmp14 = null != tmp12;
+      }
+      if (tmp14) {
+        const result = obj2.trackExperimentExposure(tmp7, tmp5, location.location, tmp2, revision, trackedVariantId, tmp3);
       }
       if (null != variantId) {
-        if (true !== useAsEligibility) {
-          let tmp22 = table[variantId];
-          if (null == tmp22) {
-            tmp22 = closure_6;
-          }
-          return tmp22;
-        }
+        return tmp12;
       }
-      return closure_6;
+      tmp12 = closure_7;
     }
   };
 };

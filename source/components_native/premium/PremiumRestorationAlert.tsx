@@ -1,65 +1,25 @@
-// Module ID: 14239
-// Function ID: 109399
-// Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 31, 5654, 33, 14240, 566, 2]
+// Module ID: 14261
+// Function ID: 14262
+// Name: render
+// Dependencies: [19, 5672, 21, 14262, 589, 2]
 
-// Module 14239 (_isNativeReflectConstruct)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import jsxProd from "jsxProd";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
-import importDefaultResult from "_isNativeReflectConstruct";
+// Module 14261 (render)
+import importDefaultResult from "updateProduct";
 import { jsx } from "jsxProd";
-import importAllResult from "result";
+import { PureComponent } from "noop";
+import importAllResult from "noop";
 import importDefaultResult1 from "initialize";
 
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
-  }
-  const result = _isNativeReflectConstruct();
+class PremiumRestorationAlert extends PureComponent {
 }
-const tmp4 = ((PureComponent) => {
-  class PremiumRestorationAlert {
-    constructor() {
-      self = this;
-      tmp = outer1_2(this, PremiumRestorationAlert);
-      obj = outer1_5(PremiumRestorationAlert);
-      tmp2 = outer1_4;
-      if (outer1_9()) {
-        tmp6 = globalThis;
-        _Reflect = Reflect;
-        tmp7 = outer1_5;
-        tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, outer1_5(self).constructor);
-      } else {
-        tmp3 = arguments;
-        tmp4 = arguments;
-        constructResult = obj(...arguments);
-      }
-      return tmp2(self, constructResult);
-    }
-  }
-  callback2(PremiumRestorationAlert, PureComponent);
-  const items = [
-    {
-      key: "render",
-      value() {
-        let isBusy;
-        let onClose;
-        ({ isBusy, onClose } = this.props);
-        return outer1_8(PremiumRestorationAlert(outer1_1[8]), { loading, onClose });
-      }
-    }
-  ];
-  return callback(PremiumRestorationAlert, items);
-})(require("result").PureComponent);
-let items = [importDefaultResult];
-const tmp5 = require("initialize").connectStores(items, () => ({ isBusy: importDefaultResult.isBusy() }))(tmp4);
-let result = require("_possibleConstructorReturn").fileFinishedImporting("components_native/premium/PremiumRestorationAlert.tsx");
+PremiumRestorationAlert.prototype["render"] = function render() {
+  let isBusy;
+  let onClose;
+  ({ isBusy, onClose } = this.props);
+  return jsx(importDefault(14262), { loading, onClose });
+};
+const items = [importDefaultResult];
+const tmp4 = require("initialize").connectStores(items, () => ({ isBusy: importDefaultResult.isBusy() }))(PremiumRestorationAlert);
+const result = require("jsxProd").fileFinishedImporting("components_native/premium/PremiumRestorationAlert.tsx");
 
-export default tmp5;
+export default tmp4;

@@ -1,76 +1,225 @@
-// Module ID: 15343
-// Function ID: 116889
+// Module ID: 15376
+// Function ID: 15377
 // Name: useReplyActions
-// Dependencies: [5, 31, 1348, 4503, 1850, 1853, 4158, 33, 566, 7884, 6168, 4175, 15344, 4004, 5948, 5695, 15340, 4133, 3866, 1212, 13897, 8161, 9312, 6057, 15344, 1935, 2]
+// Dependencies: [5, 19, 1372, 4526, 1874, 1877, 4182, 21, 589, 7909, 6186, 4199, 15377, 4028, 5967, 5713, 15373, 4157, 3890, 1236, 13918, 8185, 9336, 6074, 15377, 1959, 2]
 // Exports: useReplyActions
 
-// Module 15343 (useReplyActions)
+// Module 15376 (useReplyActions)
 import set from "set";
-import result from "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import { DraftType } from "_isNativeReflectConstruct";
-import closure_7 from "_isNativeReflectConstruct";
+import getSystemLocale from "getSystemLocale";
+import ensureGuildLoaded from "ensureGuildLoaded";
+import { DraftType } from "handleChanged";
+import mergeGuildAvatar from "mergeGuildAvatar";
 import { EmojiIntention } from "set";
 import { MessageSendLocation } from "MESSAGE_GROUP_SPACING";
-import { jsx } from "jsxProd";
+import { jsx } from "module_8185";
 
 const require = arg1;
-let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/icymi/native/content_inventory/useReplyActions.tsx");
+let result = require("ensureGuildLoaded").fileFinishedImporting("modules/icymi/native/content_inventory/useReplyActions.tsx");
 
 export const useReplyActions = function useReplyActions(content) {
   content = content.content;
+  let _require = content;
+  let stateFromStores;
+  let hotwheels_gaming_activity;
   let stateFromStores1;
   let React;
   let callback;
   let callback1;
-  let obj = content(hotwheels_gaming_activity[8]);
-  const items = [closure_7];
-  const stateFromStores = obj.useStateFromStores(items, () => outer1_7.getUser(content.author_id));
+  let obj = _require(hotwheels_gaming_activity[8]);
+  const items = [mergeGuildAvatar];
+  stateFromStores = obj.useStateFromStores(items, () => outer1_7.getUser(lib.author_id));
   let str = "unknown";
   hotwheels_gaming_activity = "unknown";
   let content_type = content.content_type;
-  if (content(hotwheels_gaming_activity[9]).ContentInventoryEntryType.TOP_GAME !== content_type) {
-    if (content(hotwheels_gaming_activity[9]).ContentInventoryEntryType.PLAYED_GAME !== content_type) {
-      if (content(hotwheels_gaming_activity[9]).ContentInventoryEntryType.CUSTOM_STATUS === content_type) {
+  if (_require(hotwheels_gaming_activity[9]).ContentInventoryEntryType.TOP_GAME !== content_type) {
+    if (tmp(tmp2[9]).ContentInventoryEntryType.PLAYED_GAME !== content_type) {
+      if (tmp(tmp2[9]).ContentInventoryEntryType.CUSTOM_STATUS === content_type) {
         hotwheels_gaming_activity = "hotwheels_custom_status";
         str = "hotwheels_custom_status";
       }
     }
     const items1 = [callback];
-    stateFromStores1 = content(hotwheels_gaming_activity[8]).useStateFromStores(items1, () => {
+    stateFromStores1 = tmp(tmp2[8]).useStateFromStores(items1, () => {
       if (null == stateFromStores) {
         return null;
       } else {
-        return callback.getChannel(callback.getDMFromUserId(stateFromStores.id));
+        return callback.getChannel(callback.getDMFromUserId(tmp.id));
       }
     });
-    React = tmp11;
+    React = tmp7;
     const items2 = [null != stateFromStores1, ];
     let id;
-    if (null != stateFromStores1) {
+    if (stateFromStores1 != null) {
       id = stateFromStores1.id;
     }
     items2[1] = id;
     const effect = React.useEffect(() => c4 ? (() => {
       let id;
-      if (null != outer1_3) {
-        id = outer1_3.id;
+      if (id != null) {
+        id = id.id;
       }
-      stateFromStores(hotwheels_gaming_activity[10]).clearAll(id, callback1.ChannelMessage);
+      outer1_1(outer1_2[10]).clearAll(id, outer1_6.ChannelMessage);
     }) : undefined, items2);
+    _require = undefined;
+    _require = stateFromStores1((arg0) => {
+      let closure_0 = arg0;
+      let c3 = 0;
+      let c4 = 0;
+      return (function*(arg0) {
+        if (num8 === 2) {
+          num8 = 3;
+          HermesBuiltin.throwTypeError();
+        } else if (tmp4 === 3) {
+          if (arg0 === 1) {
+            throw arg1;
+          } else if (arg0 === 2) {
+            let obj = { value: null, done: true };
+            obj[0] = arg1;
+            return obj;
+          } else {
+            return { value: "HermesInternal", done: null };
+          }
+        } else {
+          try {
+            num8 = 2;
+            if (0 === c3) {
+              num8 = 1;
+              if (arg0 === 1) {
+                num8 = 3;
+                throw arg1;
+              } else if (arg0 === 2) {
+                num8 = 3;
+                obj = { value: null, done: true };
+                obj[0] = arg1;
+                return obj;
+              } else {
+                let channel = tmp5;
+                let closure_1 = tmp2;
+                closure_1 = undefined;
+                channel = undefined;
+                c3 = undefined;
+                num8 = undefined;
+                if (null != outer1_1) {
+                  c3 = num8;
+                  const obj1 = { value: null, done: false };
+                  obj1[0] = stateFromStores(hotwheels_gaming_activity[11]).getOrEnsurePrivateChannel(outer1_1.id);
+                  return obj1;
+                } else {
+                  num8 = 3;
+                }
+              }
+            } else {
+              num8 = 1;
+              if (1 === tmp5) {
+                if (arg0 === num8) {
+                  num8 = 3;
+                  throw arg1;
+                } else if (arg0 === 2) {
+                  num8 = 3;
+                  let obj2 = { value: null, done: true };
+                  obj2[0] = arg1;
+                  return obj2;
+                } else {
+                  closure_1 = arg1;
+                  channel = callback.getChannel(closure_1);
+                  let str3 = null;
+                }
+              } else if (2 === tmp5) {
+                if (arg0 === num8) {
+                  num8 = 3;
+                  throw arg1;
+                } else if (arg0 === 2) {
+                  num8 = 3;
+                  let obj3 = { value: null, done: true };
+                  obj3[0] = arg1;
+                  return obj3;
+                }
+              } else if (arg0 === num8) {
+                num8 = 3;
+                throw arg1;
+              } else if (arg0 === 2) {
+                num8 = 3;
+                obj = { value: null, done: true };
+                obj[0] = arg1;
+                return obj;
+              }
+              obj2 = stateFromStores(hotwheels_gaming_activity[17]);
+              obj2.hideActionSheet();
+              obj3 = stateFromStores(hotwheels_gaming_activity[18]);
+              const obj4 = { key: "content_inventory_message_sent", content: null, icon: null };
+              const intl = lib(hotwheels_gaming_activity[19]).intl;
+              obj4[1] = intl.string(lib(hotwheels_gaming_activity[19]).t.fjcCk5);
+              obj4[2] = function icon() {
+                return callback2(callback(table[20]).ChatCheckIcon, {});
+              };
+              obj3.open(obj4);
+            }
+            if (lib.content_type === lib(hotwheels_gaming_activity[9]).ContentInventoryEntryType.CUSTOM_STATUS) {
+              lib(hotwheels_gaming_activity[12]);
+              let obj5 = { status: null, emojiStr: null, reply: null, username: null, attachments: null };
+              obj5[0] = lib.extra.status;
+              if (str3 == lib.extra.emoji_name) {
+                obj5[1] = "";
+                obj5[2] = lib;
+                let obj9 = stateFromStores(hotwheels_gaming_activity[13]);
+                obj5[3] = obj9.getName(outer1_1);
+                obj5[4] = lib.extra.attachments;
+                c3 = tmp35(obj5);
+                let c4 = stateFromStores(hotwheels_gaming_activity[14]).parse(outer1_2, c3);
+                const obj12 = stateFromStores(hotwheels_gaming_activity[15]);
+                const obj6 = { location: null };
+                obj6[0] = outer2_9.ICYMI;
+                c3 = 3;
+                const obj7 = { value: null, done: false };
+                obj7[0] = obj12.sendMessage(outer1_2.id, c4, false, obj6);
+                return obj7;
+              } else {
+                if (str3 == lib.extra.emoji_id) {
+                  const _HermesInternal = HermesInternal;
+                  let combined = "" + lib.extra.emoji_name;
+                } else {
+                  str3 = globalThis;
+                  const _String = String;
+                }
+                str3 = "`:";
+                combined = "`:" + lib.extra.emoji_name + ":`";
+              }
+            } else {
+              obj5 = lib(hotwheels_gaming_activity[16]);
+              const obj8 = { channel: null, content: null, entry: null, whenReady: false, doNotNotifyOnError: false, location: null };
+              obj8[0] = channel;
+              obj8[1] = lib;
+              obj8[2] = lib;
+              obj8[5] = outer2_9.ICYMI;
+              c3 = 2;
+              obj9 = { value: null, done: false };
+              obj9[0] = obj5.sendMessageWithEmbed(obj8);
+              return obj9;
+            }
+          } catch (tmp72) {
+            num8 = tmp;
+            throw tmp72;
+          }
+        }
+      })();
+    });
     const items3 = [stateFromStores, content];
-    callback = React.useCallback((() => {
-      // CreateGeneratorClosureLongIndex (0x67)
-      let closure_0 = stateFromStores1(tmp);
-      return function() {
-        return callback(...arguments);
-      };
-    })(), items3);
+    callback = obj3.useCallback(function() {
+      const self = this;
+      const apply = closure_0.apply;
+      if (typeof apply === "unknown") {
+        let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+      } else {
+        applyArgumentsResult = apply(self, arguments);
+      }
+      return applyArgumentsResult;
+    }, items3);
     const items4 = [content.id, str, callback];
-    callback1 = React.useCallback((id) => {
+    callback1 = obj3.useCallback((id) => {
       let obj = stateFromStores(hotwheels_gaming_activity[21]);
-      obj.itemInteracted(content.id, hotwheels_gaming_activity, "press_emoji_send");
-      obj = { itemId: content.id, itemType: hotwheels_gaming_activity, actionParameters: { actionGestureType: "press", actionTargetElement: "reaction_reply_button", actionIntentType: "react", actionDestinationType: null } };
+      obj.itemInteracted(lib.id, hotwheels_gaming_activity, "press_emoji_send");
+      obj = { itemId: lib.id, itemType: hotwheels_gaming_activity, actionParameters: { actionGestureType: "press", actionTargetElement: "reaction_reply_button", actionIntentType: "react", actionDestinationType: null } };
       stateFromStores(hotwheels_gaming_activity[21]).feedItemActioned(obj);
       if (null != id.id) {
         const _HermesInternal = HermesInternal;
@@ -81,41 +230,44 @@ export const useReplyActions = function useReplyActions(content) {
       return callback(surrogates);
     }, items4);
     const items5 = [stateFromStores1, callback1];
-    obj = {};
+    obj = { openReplyActionSheet: null, openEmojiPicker: null };
     const items6 = [stateFromStores, content, callback1, callback];
-    const callback2 = React.useCallback(() => {
-      let obj = content(hotwheels_gaming_activity[22]);
-      obj = { pickerIntention: outer1_8.REACTION, autoFocus: false, startExpanded: false, onPressEmoji: callback1 };
-      let tmp;
-      if (null != stateFromStores1) {
-        tmp = stateFromStores1;
-      }
-      obj.channel = tmp;
-      obj.reactionType = content(hotwheels_gaming_activity[23]).ReactionTypes.NORMAL;
+    const callback2 = obj3.useCallback(() => {
+      let obj = lib(hotwheels_gaming_activity[22]);
+      obj = { pickerIntention: outer1_8.REACTION, autoFocus: false, startExpanded: false, onPressEmoji: callback1, channel: null, reactionType: null };
+      obj[4] = stateFromStores1;
+      obj[5] = lib(hotwheels_gaming_activity[23]).ReactionTypes.NORMAL;
       const result = obj.openEmojiPickerActionSheet(obj);
     }, items5);
-    obj.openReplyActionSheet = React.useCallback(() => {
+    obj[0] = React.useCallback(() => {
       if (null != stateFromStores) {
-        const content_type = content.content_type;
+        const content_type = lib.content_type;
         let str = "hotwheels_custom_status";
-        if (content(hotwheels_gaming_activity[9]).ContentInventoryEntryType.CUSTOM_STATUS !== content_type) {
-          if (content(hotwheels_gaming_activity[9]).ContentInventoryEntryType.TOP_GAME === content_type) {
+        if (lib(hotwheels_gaming_activity[9]).ContentInventoryEntryType.CUSTOM_STATUS !== content_type) {
+          if (tmp9(tmp10[9]).ContentInventoryEntryType.TOP_GAME === content_type) {
             str = "hotwheels_gaming_activity";
           } else {
             str = "unknown";
           }
         }
-        let obj = stateFromStores(hotwheels_gaming_activity[21]);
-        obj.itemInteracted(content.id, str, "press_reply_react");
-        obj = { itemId: content.id, itemType: str, actionParameters: { actionGestureType: "press", actionTargetElement: "item_container", actionIntentType: "open", actionDestinationType: null } };
+        let obj = stateFromStores(tmp10[21]);
+        obj.itemInteracted(lib.id, str, "press_reply_react");
+        obj = { itemId: null, itemType: null, actionParameters: null };
+        obj[0] = lib.id;
+        obj[1] = str;
+        obj[2] = { actionGestureType: "press", actionTargetElement: "item_container", actionIntentType: "open", actionDestinationType: null };
         stateFromStores(hotwheels_gaming_activity[21]).feedItemActioned(obj);
         const obj2 = stateFromStores(hotwheels_gaming_activity[21]);
-        obj = { content, author: stateFromStores, sendMessage: callback, onPressEmoji: callback1 };
-        stateFromStores(hotwheels_gaming_activity[17]).openLazy(content(hotwheels_gaming_activity[25])(hotwheels_gaming_activity[24], hotwheels_gaming_activity.paths), "ReactActionSheet", obj);
+        obj = { content: null, author: null, sendMessage: null, onPressEmoji: null };
+        obj[0] = lib;
+        obj[1] = tmp;
+        obj[2] = callback;
+        obj[3] = callback1;
+        stateFromStores(hotwheels_gaming_activity[17]).openLazy(lib(hotwheels_gaming_activity[25])(hotwheels_gaming_activity[24], hotwheels_gaming_activity.paths), "ReactActionSheet", obj);
         const obj4 = stateFromStores(hotwheels_gaming_activity[17]);
       }
     }, items6);
-    obj.openEmojiPicker = callback2;
+    obj[1] = callback2;
     return obj;
   }
   hotwheels_gaming_activity = "hotwheels_gaming_activity";

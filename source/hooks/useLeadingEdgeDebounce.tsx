@@ -1,12 +1,12 @@
-// Module ID: 10647
-// Function ID: 82803
+// Module ID: 10671
+// Function ID: 10672
 // Name: useLeadingEdgeDebounce
-// Dependencies: [57, 31, 2]
+// Dependencies: [32, 19, 2]
 // Exports: useLeadingEdgeDebounce
 
-// Module 10647 (useLeadingEdgeDebounce)
+// Module 10671 (useLeadingEdgeDebounce)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
+import noop from "noop";
 
 const result = require("set").fileFinishedImporting("hooks/useLeadingEdgeDebounce.tsx");
 
@@ -19,9 +19,9 @@ export const useLeadingEdgeDebounce = (arg0, arg1) => {
   const items = [arg0, arg1];
   const effect = React.useEffect(() => {
     const timeout = setTimeout(() => {
-      outer1_3(_slicedToArray);
-      outer1_2.current = true;
-    }, result);
+      callback(_slicedToArray);
+      closure_2.current = true;
+    }, noop);
     if (ref.current) {
       callback(timeout);
     }

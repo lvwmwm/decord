@@ -1,12 +1,12 @@
-// Module ID: 12281
-// Function ID: 95746
+// Module ID: 12303
+// Function ID: 12304
 // Name: useMediaItemSpoilerState
-// Dependencies: [57, 31, 8092, 4026, 4166, 1273, 2]
+// Dependencies: [32, 19, 8116, 4050, 4190, 1297, 2]
 // Exports: useMediaItemSpoilerState
 
-// Module 12281 (useMediaItemSpoilerState)
+// Module 12303 (useMediaItemSpoilerState)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
+import noop from "noop";
 
 const require = arg1;
 let closure_4 = { code: "function useMediaItemSpoilerStateTsx1(){const{runOnJS,setSpoilerActive,hasSpoiler}=this.__closure;runOnJS(setSpoilerActive)(hasSpoiler);}" };
@@ -14,47 +14,52 @@ let closure_5 = { code: "function useMediaItemSpoilerStateTsx2(){const{spoilerOp
 let result = require("zustandStore").fileFinishedImporting("modules/media_viewer/native/useMediaItemSpoilerState.tsx");
 
 export const useMediaItemSpoilerState = function useMediaItemSpoilerState(index) {
+  let _slicedToArray;
+  let tmp5;
   const _require = index;
   const MediaViewerSourcesStore = _require(state[2]).MediaViewerSourcesStore;
   state = MediaViewerSourcesStore.useState((spoilerIndexes) => {
     spoilerIndexes = spoilerIndexes.spoilerIndexes;
     return spoilerIndexes.has(closure_0);
   });
-  const tmp2 = callback(sharedValue.useState(state), 2);
+  [tmp5, _slicedToArray] = callback(sharedValue.useState(state), 2);
+  let obj = sharedValue;
+  const tmp = _require;
+  const tmp2 = state;
+  const tmp4 = callback(sharedValue.useState(state), 2);
   let num = 0;
-  callback = tmp2[1];
   if (state) {
     num = 1;
   }
   sharedValue = _require(state[3]).useSharedValue(num);
   const items = [state, sharedValue];
-  const effect = sharedValue.useEffect(() => {
+  const effect = obj.useEffect(() => {
     let obj = index(state[4]);
     let num = 0;
     if (state) {
       num = 1;
     }
-    obj = { duration: 200, easing: index(state[5]).STANDARD_EASING };
+    obj = { duration: 200, easing: tmp2(tmp3[5]).STANDARD_EASING };
     const fn = function t() {
-      callback(state[3]).runOnJS(outer1_2)(outer1_1);
+      outer1_0(outer1_1[3]).runOnJS(_slicedToArray)(closure_1);
     };
-    obj = { runOnJS: index(state[3]).runOnJS, setSpoilerActive: _slicedToArray, hasSpoiler: state };
+    obj = { runOnJS: tmp2(tmp3[3]).runOnJS, setSpoilerActive: _slicedToArray, hasSpoiler: state };
     fn.__closure = obj;
     fn.__workletHash = 15930548853488;
     fn.__initData = outer1_4;
     const result = sharedValue.set(obj.withTiming(num, obj, "respect-motion-settings", fn));
   }, items);
-  const items1 = [tmp2[0], ];
-  let obj = _require(state[3]);
+  const items1 = [tmp5, ];
+  const obj2 = _require(state[3]);
   class S {
     constructor() {
-      obj = { opacity: result.get() };
+      obj = { opacity: useSharedValue.get() };
       return obj;
     }
   }
   S.__closure = { spoilerOpacity: sharedValue };
   S.__workletHash = 8496335051493;
   S.__initData = closure_5;
-  items1[1] = _require(state[3]).useAnimatedStyle(S);
+  items1[1] = tmp(tmp2[3]).useAnimatedStyle(S);
   return items1;
 };

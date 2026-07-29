@@ -1,123 +1,110 @@
-// Module ID: 11673
-// Function ID: 90478
+// Module ID: 11697
+// Function ID: 11698
 // Name: UserProfileStackedActionSheet
-// Dependencies: [31, 27, 33, 4165, 689, 1557, 5223, 7611, 477, 5221, 4695, 1212, 5125, 4161, 2]
+// Dependencies: [19, 17, 21, 4189, 712, 1581, 5245, 7634, 500, 5243, 4717, 1236, 5147, 4185, 2]
 // Exports: UserProfileStackedActionSheetList, UserProfileStackedActionSheetSectionList, default
 
-// Module 11673 (UserProfileStackedActionSheet)
-import "result";
+// Module 11697 (UserProfileStackedActionSheet)
+import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_4;
-let closure_5;
+let c4;
+let c5;
 const require = arg1;
-({ jsx: closure_4, jsxs: closure_5 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { flexDirection: "row", marginHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16 };
-_createForOfIteratorHelperLoose.header = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.headerSpacer = { width: require("_createForOfIteratorHelperLoose").space.PX_24, height: require("_createForOfIteratorHelperLoose").space.PX_24 };
-_createForOfIteratorHelperLoose.list = { flex: 1 };
-let obj1 = { width: require("_createForOfIteratorHelperLoose").space.PX_24, height: require("_createForOfIteratorHelperLoose").space.PX_24 };
-_createForOfIteratorHelperLoose.contentContainer = { marginHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16 };
-_createForOfIteratorHelperLoose.divider = { marginLeft: 64 };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-let obj2 = { marginHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16 };
+({ jsx: c4, jsxs: c5 } = jsxProd);
+createCacheKey = { header: null, headerSpacer: null, list: null, contentContainer: null, divider: null };
+createCacheKey = { flexDirection: "row", marginHorizontal: require("Themes").space.PX_16 };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { width: require("Themes").space.PX_24, height: require("Themes").space.PX_24 };
+createCacheKey[2] = { flex: 1 };
+let obj1 = { width: require("Themes").space.PX_24, height: require("Themes").space.PX_24 };
+createCacheKey[3] = { marginHorizontal: require("Themes").space.PX_16 };
+createCacheKey[4] = { marginLeft: 64 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+const obj2 = { marginHorizontal: require("Themes").space.PX_16 };
 const result = require("jsxProd").fileFinishedImporting("modules/user_profile/native/UserProfileStackedActionSheet.tsx");
 
 export default function UserProfileStackedActionSheet(onBack) {
   let children;
   let title;
   onBack = onBack.onBack;
-  let obj = { title: 0, children: 0, onBack: 0 };
   ({ title, children } = onBack);
-  Object.setPrototypeOf(null);
-  const merged = Object.assign(onBack, obj);
-  const tmp3 = _createForOfIteratorHelperLoose();
-  let tmp4 = null != onBack;
-  obj = {};
+  const merged = Object.assign(onBack, Object.create(null));
+  const tmp2 = createCacheKey();
+  let tmp4Result = null != onBack;
+  let obj = {};
   const merged1 = Object.assign(merged);
-  obj = {};
-  const items = [tmp3.header, ];
-  const obj1 = {};
+  const items = [tmp2.header, ];
   let str = "center";
-  if (tmp4) {
+  if (tmp4Result) {
     str = "space-between";
   }
-  obj1.justifyContent = str;
-  items[1] = obj1;
-  obj.style = items;
-  let tmp9 = tmp4;
-  if (tmp4) {
-    const obj2 = { accessibilityRole: "button" };
-    const intl = require(1212) /* getSystemLocale */.intl;
-    obj2.accessibilityLabel = intl.string(require(1212) /* getSystemLocale */.t["13/7kX"]);
-    obj2.onPress = onBack;
-    const obj3 = { size: "md" };
-    obj2.children = callback(require(5125) /* ArrowLargeLeftIcon */.ArrowLargeLeftIcon, obj3);
-    tmp9 = callback(require(4695) /* PressableBase */.PressableOpacity, obj2);
+  obj = { style: items, children: null };
+  items[1] = { justifyContent: str };
+  if (tmp4Result) {
+    obj = { accessibilityRole: "button", accessibilityLabel: null, onPress: null, children: null };
+    const intl = tmp5(1236).intl;
+    obj[1] = intl.string(tmp5(1236).t["13/7kX"]);
+    obj[2] = onBack;
+    obj[3] = tmp4(tmp5(5147).ArrowLargeLeftIcon, { size: "md" });
+    tmp4Result = tmp4(tmp5(4717).PressableOpacity, obj);
   }
-  const items1 = [tmp9, , ];
-  const obj4 = { variant: "redesign/heading-18/bold", color: "mobile-text-heading-primary", accessibilityRole: "header", children: title };
-  items1[1] = callback(require(4161) /* Text */.Text, obj4);
-  if (tmp4) {
-    const obj5 = { style: tmp3.headerSpacer };
-    tmp4 = callback(View, obj5);
+  const items1 = [tmp4Result, closure_4(require(4185) /* Text */.Text, { variant: "redesign/heading-18/bold", color: "mobile-text-heading-primary", accessibilityRole: "header", children: title }), ];
+  if (tmp4Result) {
+    const obj1 = { style: null };
+    obj1[0] = tmp2.headerSpacer;
+    tmp4Result = tmp4(tmp9, obj1);
   }
-  items1[2] = tmp4;
-  obj.children = items1;
-  obj["header"] = closure_5(View, obj);
-  obj["children"] = children;
-  return callback(require(5221) /* Background */.BottomSheet, obj);
+  items1[2] = tmp4Result;
+  obj[1] = items1;
+  obj.header = closure_5(View, obj);
+  obj.children = children;
+  return closure_4(require(5243) /* Background */.BottomSheet, obj);
 };
 export const UserProfileStackedActionSheetList = function UserProfileStackedActionSheetList(data) {
   data = data.data;
   const renderItem = data.renderItem;
-  let obj = { data: 0, contentContainerStyle: 0, renderItem: 0 };
-  Object.setPrototypeOf(null);
-  const merged = Object.assign(data, obj);
-  const tmp3 = _createForOfIteratorHelperLoose();
-  const dependencyMap = tmp3;
-  obj = {};
+  let dependencyMap;
+  const merged = Object.assign(data, Object.create(null));
+  const tmp2 = createCacheKey();
+  dependencyMap = tmp2;
+  const obj = {};
   const merged1 = Object.assign(merged);
-  obj["data"] = data;
-  obj["style"] = tmp3.list;
-  obj["ItemSeparatorComponent"] = function ItemSeparatorComponent() {
-    return outer1_4(data(tmp3[7]).FormDivider, { style: tmp3.divider });
+  obj.data = data;
+  obj.style = tmp2.list;
+  obj.ItemSeparatorComponent = function ItemSeparatorComponent() {
+    return outer1_4(data(_undefined[7]).FormDivider, { style: _undefined.divider });
   };
-  const items = [tmp3.contentContainer, , ];
-  obj = {};
+  const items = [tmp2.contentContainer, , ];
   let num = 0;
-  if (obj4.isAndroid()) {
-    num = renderItem(689).space.PX_16;
+  if (obj2.isAndroid()) {
+    num = renderItem(712).space.PX_16;
   }
-  obj.paddingBottom = renderItem(1557)().bottom + num;
-  items[1] = obj;
+  items[1] = { paddingBottom: renderItem(1581)().bottom + num };
   items[2] = data.contentContainerStyle;
-  obj["contentContainerStyle"] = items;
-  obj["renderItem"] = function renderItem(index) {
+  obj.contentContainerStyle = items;
+  obj.renderItem = function renderItem(index) {
     index = index.index;
     return renderItem({ item: index.item, index, start: 0 === index, end: index === data.length - 1 });
   };
-  return closure_4(data(5223).BottomSheetFlatList, obj);
+  return closure_4(data(5245).BottomSheetFlatList, obj);
 };
 export const UserProfileStackedActionSheetSectionList = function UserProfileStackedActionSheetSectionList(renderItem) {
   renderItem = renderItem.renderItem;
-  let obj = Object.create(null);
-  obj.contentContainerStyle = 0;
-  obj.renderItem = 0;
-  const merged = Object.assign(renderItem, obj);
-  let closure_1 = _createForOfIteratorHelperLoose();
-  obj = {};
+  let closure_1;
+  const merged = Object.assign(renderItem, Object.create(null));
+  closure_1 = createCacheKey();
+  const obj = {};
   const merged1 = Object.assign(merged);
-  obj["contentContainerStyle"] = renderItem.contentContainerStyle;
-  obj["renderItem"] = function renderItem(index) {
+  obj.contentContainerStyle = renderItem.contentContainerStyle;
+  obj.renderItem = function renderItem(index) {
     index = index.index;
     return renderItem({ item: index.item, start: 0 === index, end: index === index.section.data.length - 1 });
   };
-  obj["ItemSeparatorComponent"] = function ItemSeparatorComponent() {
+  obj.ItemSeparatorComponent = function ItemSeparatorComponent() {
     return outer1_4(renderItem(outer1_2[7]).FormDivider, { style: divider.divider });
   };
-  return callback(renderItem(5223).BottomSheetSectionList, obj);
+  return callback(renderItem(5245).BottomSheetSectionList, obj);
 };

@@ -1,16 +1,16 @@
-// Module ID: 6220
-// Function ID: 55643
+// Module ID: 6240
+// Function ID: 6241
 // Name: useInterval
-// Dependencies: [31, 44, 2]
+// Dependencies: [19, 38, 2]
 // Exports: default
 
-// Module 6220 (useInterval)
-import result from "result";
+// Module 6240 (useInterval)
+import noop from "noop";
 
-let closure_2;
-let closure_3;
-({ useEffect: closure_2, useRef: closure_3 } = result);
-result = require("set").fileFinishedImporting("hooks/useInterval.tsx");
+let c3;
+let obj1;
+({ useEffect: obj1, useRef: c3 } = noop);
+const result = require("set").fileFinishedImporting("hooks/useInterval.tsx");
 
 export default function useInterval(arg0, arg1) {
   let closure_0 = arg0;
@@ -26,14 +26,14 @@ export default function useInterval(arg0, arg1) {
     if (null !== closure_1) {
       const _setInterval = setInterval;
       ref.current = setInterval(() => {
-        callback(table[1])(null != outer1_2.current, "Missing callback");
-        outer1_2.current();
-      }, closure_1);
-      return () => clearInterval(outer1_3.current);
+        outer1_0(outer1_1[1])(null != ref.current, "Missing callback");
+        ref.current();
+      }, tmp);
+      return () => clearInterval(ref2.current);
     } else if (null !== ref.current) {
       const _clearInterval = clearInterval;
-      clearInterval(ref.current);
-      ref.current = null;
+      clearInterval(tmp2.current);
+      tmp2.current = null;
     }
   }, items1);
 };

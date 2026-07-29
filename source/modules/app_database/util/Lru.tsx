@@ -1,130 +1,88 @@
-// Module ID: 5719
-// Function ID: 49375
-// Name: Lru
-// Dependencies: [6, 7, 2]
+// Module ID: 5737
+// Function ID: 5738
+// Name: length
+// Dependencies: [2]
 
-// Module 5719 (Lru)
-import _classCallCheck from "_classCallCheck";
-import _defineProperties from "_defineProperties";
-
-const tmp2 = (() => {
-  class Lru {
-    constructor(arg0) {
-      tmp = Lru(this, Lru);
-      map = new Map();
-      this.items = map;
-      this.limit = arg0;
-      return;
-    }
+// Module 5737 (length)
+class Lru {
+  constructor(arg0) {
+    obj = Object.create(new.target.prototype);
+    map = new Map();
+    obj.items = map;
+    obj.limit = global;
+    return obj;
   }
-  let obj = {
-    key: "length",
-    get() {
-      return this.items.size;
-    }
-  };
-  let items = [obj, , , , , , , , , , , , ];
-  obj = {
-    key: "capacity",
-    get() {
-      return this.limit;
-    }
-  };
-  items[1] = obj;
-  obj = {
-    key: Symbol.iterator,
-    value() {
-      const items = this.items;
-      return items.entries();
-    }
-  };
-  items[2] = obj;
-  items[3] = {
-    key: "entries",
-    value() {
-      const items = this.items;
-      return items.entries();
-    }
-  };
-  items[4] = {
-    key: "keys",
-    value() {
-      const items = this.items;
-      return items.keys();
-    }
-  };
-  items[5] = {
-    key: "values",
-    value() {
-      const items = this.items;
-      return items.values();
-    }
-  };
-  items[6] = {
-    key: "ordered",
-    value() {
-      let items = this.items;
-      items = [...items.values()];
-      return items.reverse();
-    }
-  };
-  items[7] = {
-    key: "clear",
-    value() {
-      const items = this.items;
-      items.clear();
-    }
-  };
-  items[8] = {
-    key: "has",
-    value(arg0) {
-      const items = this.items;
-      return items.has(arg0);
-    }
-  };
-  items[9] = {
-    key: "get",
-    value(arg0) {
-      const items = this.items;
-      return items.get(arg0);
-    }
-  };
-  items[10] = {
-    key: "put",
-    value(arg0, arg1) {
-      let items3;
-      let items4;
-      const self = this;
-      let items = this.items;
-      items.delete(arg0);
-      const items2 = this.items;
-      const result = items2.set(arg0, arg1);
-      if (this.items.size > this.limit) {
-        const oldestKeyResult = self.oldestKey();
-        ({ items: items3, items: items4 } = self);
-        const value = items3.get(oldestKeyResult);
-        items4.delete(oldestKeyResult);
-        items = [oldestKeyResult, value];
-        return items;
-      }
-    }
-  };
-  items[11] = {
-    key: "delete",
-    value(arg0) {
-      const items = this.items;
-      return items.delete(arg0);
-    }
-  };
-  items[12] = {
-    key: "oldestKey",
-    value() {
-      const items = this.items;
-      return items.keys().next().value;
-    }
-  };
-  return callback(Lru, items);
-})();
+}
+const prototype = Lru.prototype;
+Object.defineProperty(prototype, "length", {
+  get: function length() {
+    return this.items.size;
+  },
+  set: undefined
+});
+const get = function capacity() {
+  return this.limit;
+};
+Object.defineProperty(prototype, "capacity", { get, set: undefined });
+// ToPropertyKey (0xa4)
+prototype[get] = function() {
+  const items = this.items;
+  return items.entries();
+};
+prototype["entries"] = function entries() {
+  const items = this.items;
+  return items.entries();
+};
+prototype["keys"] = function keys() {
+  const items = this.items;
+  return items.keys();
+};
+prototype["values"] = function values() {
+  const items = this.items;
+  return items.values();
+};
+prototype["ordered"] = function ordered() {
+  let items = this.items;
+  items = [...items.values()];
+  return items.reverse();
+};
+prototype["clear"] = function clear() {
+  const items = this.items;
+  items.clear();
+};
+prototype["has"] = function has(arg0) {
+  const items = this.items;
+  return items.has(arg0);
+};
+prototype["get"] = function get(arg0) {
+  const items = this.items;
+  return items.get(arg0);
+};
+prototype["put"] = function put(arg0, arg1) {
+  let items3;
+  let items4;
+  const self = this;
+  let items = this.items;
+  items.delete(arg0);
+  const items2 = this.items;
+  const result = items2.set(arg0, arg1);
+  if (this.items.size > this.limit) {
+    const oldestKeyResult = self.oldestKey();
+    ({ items: items3, items: items4 } = self);
+    const value = items3.get(oldestKeyResult);
+    items4.delete(oldestKeyResult);
+    items = [oldestKeyResult, value];
+    return items;
+  }
+};
+prototype["delete"] = function delete(arg0) {
+  const items = this.items;
+  return items.delete(arg0);
+};
+prototype["oldestKey"] = function oldestKey() {
+  const items = this.items;
+  return items.keys().next().value;
+};
 let result = require("set").fileFinishedImporting("modules/app_database/util/Lru.tsx");
 
-export const Lru = tmp2;
+export { Lru };

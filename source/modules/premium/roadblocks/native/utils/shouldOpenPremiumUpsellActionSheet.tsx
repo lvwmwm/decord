@@ -1,32 +1,28 @@
-// Module ID: 6178
-// Function ID: 55191
-// Name: _maybeOpenPremiumUpsellActionSheet
-// Dependencies: [6179, 668, 6181, 2]
+// Module ID: 6198
+// Function ID: 6199
+// Name: maybeOpenPremiumUpsellActionSheet
+// Dependencies: [6199, 691, 6201, 2]
 // Exports: default
 
-// Module 6178 (_maybeOpenPremiumUpsellActionSheet)
-function _maybeOpenPremiumUpsellActionSheet(ANIMATED_EMOJIS) {
-  importDefault(6179)(ANIMATED_EMOJIS);
-  return true;
-}
+// Module 6198 (maybeOpenPremiumUpsellActionSheet)
 const result = require("EntitlementFeatureNames").fileFinishedImporting("modules/premium/roadblocks/native/utils/shouldOpenPremiumUpsellActionSheet.tsx");
 
 export default function maybeOpenPremiumUpsellActionSheet(initialUpsellKey) {
   initialUpsellKey = initialUpsellKey.initialUpsellKey;
-  if (require(668) /* keys */.UpsellTypes.UPLOAD === initialUpsellKey) {
-    _maybeOpenPremiumUpsellActionSheet(require(6181) /* EntitlementFeatureNames */.EntitlementFeatureNames.INCREASED_FILE_UPLOAD_SIZE);
+  if (require(691) /* keys */.UpsellTypes.UPLOAD === initialUpsellKey) {
+    importDefault(6199)(tmp(6201).EntitlementFeatureNames.INCREASED_FILE_UPLOAD_SIZE);
     return true;
-  } else if (require(668) /* keys */.UpsellTypes.GLOBAL_EMOJI === initialUpsellKey) {
-    _maybeOpenPremiumUpsellActionSheet(require(6181) /* EntitlementFeatureNames */.EntitlementFeatureNames.EMOJIS_EVERYWHERE);
+  } else if (tmp(691).UpsellTypes.GLOBAL_EMOJI === initialUpsellKey) {
+    importDefault(6199)(tmp(6201).EntitlementFeatureNames.EMOJIS_EVERYWHERE);
     return true;
-  } else if (require(668) /* keys */.UpsellTypes.ANIMATED_EMOJI === initialUpsellKey) {
-    _maybeOpenPremiumUpsellActionSheet(require(6181) /* EntitlementFeatureNames */.EntitlementFeatureNames.ANIMATED_EMOJIS);
+  } else if (tmp(691).UpsellTypes.ANIMATED_EMOJI === initialUpsellKey) {
+    importDefault(6199)(tmp(6201).EntitlementFeatureNames.ANIMATED_EMOJIS);
     return true;
-  } else if (require(668) /* keys */.UpsellTypes.SOUNDBOARD === initialUpsellKey) {
-    _maybeOpenPremiumUpsellActionSheet(require(6181) /* EntitlementFeatureNames */.EntitlementFeatureNames.SOUNDBOARD_EVERYWHERE);
+  } else if (tmp(691).UpsellTypes.SOUNDBOARD === initialUpsellKey) {
+    importDefault(6199)(tmp(6201).EntitlementFeatureNames.SOUNDBOARD_EVERYWHERE);
     return true;
-  } else if (require(668) /* keys */.UpsellTypes.STREAM_HIGH_QUALITY === initialUpsellKey) {
-    _maybeOpenPremiumUpsellActionSheet(require(6181) /* EntitlementFeatureNames */.EntitlementFeatureNames.STREAM_HIGH_QUALITY);
+  } else if (tmp(691).UpsellTypes.STREAM_HIGH_QUALITY === initialUpsellKey) {
+    importDefault(6199)(tmp(6201).EntitlementFeatureNames.STREAM_HIGH_QUALITY);
     return true;
   } else {
     return false;

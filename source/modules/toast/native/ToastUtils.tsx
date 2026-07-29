@@ -1,233 +1,227 @@
-// Module ID: 3865
-// Function ID: 32054
+// Module ID: 3889
+// Function ID: 3890
 // Name: presentAddedFriendToast
-// Dependencies: [653, 3866, 1212, 3867, 4103, 4105, 4107, 4109, 4111, 4113, 4115, 4117, 1392, 4119, 4121, 4124, 491, 4126, 4129, 2]
+// Dependencies: [676, 3890, 1236, 3891, 4127, 4129, 4131, 4133, 4135, 4137, 4139, 4141, 1416, 4143, 4145, 4148, 514, 4150, 4153, 2]
 // Exports: communityAdminOnly, communityRequirementSatisfied, memberOrRoleAddedToast, memberOrRoleRemovedToast, presentAddedFriendToast, presentCommandCopied, presentCopiedToClipboard, presentEmoji, presentError, presentFailedToast, presentFeedbackSent, presentFriendRequestAcceptedToast, presentFriendRequestIgnoredToast, presentGameFriendRequestAcceptedToast, presentGameFriendRequestIgnoredToast, presentGifSaved, presentGuildMemberBio, presentGuildMemberPronouns, presentGuildRoleSubscriptionTrialTierMonthCost, presentIdCopied, presentImageSaved, presentInviteSent, presentLinkCopied, presentMessageCopied, presentMessageIdCopied, presentNoiseCancellation, presentNoiseCancellationError, presentPostIdCopied, presentTimestamp, presentUserPronouns, presentUsernameCopied, presentVideoSaved, presentVoiceActivityDetectionError, roleCreateFailedToast, roleCreatedToast, roleIdCopied, roleTemplateAppliedToast, showMaxGroupMembers, showSafetySuccess, showTransferOwnershipSuccess, showVerificationSent, showVoiceRecordingFailed, transferOwnershipProtected, unverifiedVoiceGate
 
-// Module 3865 (presentAddedFriendToast)
+// Module 3889 (presentAddedFriendToast)
 import { VerificationCriteria } from "ME";
 
 const result = require("getSystemLocale").fileFinishedImporting("modules/toast/native/ToastUtils.tsx");
 
 export const presentAddedFriendToast = function presentAddedFriendToast() {
-  let obj = importDefault(3866);
-  obj = { key: "TOAST_ADD_FRIEND", content: null, iconColor: "status-positive" };
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj.content = intl.string(require(1212) /* getSystemLocale */.t.Fn5bwO);
-  obj.IconComponent = require(3867) /* FriendsIcon */.FriendsIcon;
+  let obj = importDefault(3890);
+  obj = { key: "TOAST_ADD_FRIEND", content: null, iconColor: "status-positive", IconComponent: null };
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj[1] = intl.string(require(1236) /* getSystemLocale */.t.Fn5bwO);
+  obj[3] = require(3891) /* FriendsIcon */.FriendsIcon;
   obj.open(obj);
 };
 export const presentFriendRequestAcceptedToast = function presentFriendRequestAcceptedToast(username) {
-  let obj = importDefault(3866);
-  obj = { key: "TOAST_FRIEND_REQUEST_ACCEPTED" };
+  let obj = importDefault(3890);
   if (null == username) {
-    const intl2 = require(1212) /* getSystemLocale */.intl;
-    let stringResult = intl2.string(require(1212) /* getSystemLocale */.t.UhJna5);
+    const intl2 = require(1236) /* getSystemLocale */.intl;
+    let stringResult = intl2.string(require(1236) /* getSystemLocale */.t.UhJna5);
+    let tmp2 = require;
   } else {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    obj = { username: username.username };
-    stringResult = intl.formatToPlainString(require(1212) /* getSystemLocale */.t.b3eoD4, obj);
+    tmp2 = require;
+    const intl = require(1236) /* getSystemLocale */.intl;
+    obj = { username: null };
+    obj[0] = username.username;
+    stringResult = intl.formatToPlainString(require(1236) /* getSystemLocale */.t.b3eoD4, obj);
   }
-  obj.content = stringResult;
-  obj.IconComponent = require(4103) /* UserPlusIcon */.UserPlusIcon;
-  obj.iconColor = "status-positive";
+  obj = { key: "TOAST_FRIEND_REQUEST_ACCEPTED", content: stringResult, IconComponent: tmp2(4127).UserPlusIcon, iconColor: "status-positive" };
   obj.open(obj);
 };
 export const presentGameFriendRequestAcceptedToast = function presentGameFriendRequestAcceptedToast() {
-  let obj = importDefault(3866);
-  obj = { key: "TOAST_GAME_FRIEND_REQUEST_ACCEPTED" };
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj.content = intl.string(require(1212) /* getSystemLocale */.t.xjNLeZ);
-  obj.IconComponent = require(4105) /* UserPlatformIcon */.UserPlatformIcon;
-  obj.iconColor = "status-positive";
+  let obj = importDefault(3890);
+  obj = { key: "TOAST_GAME_FRIEND_REQUEST_ACCEPTED", content: null, IconComponent: null, iconColor: "status-positive" };
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj[1] = intl.string(require(1236) /* getSystemLocale */.t.xjNLeZ);
+  obj[2] = require(4129) /* UserPlatformIcon */.UserPlatformIcon;
   obj.open(obj);
 };
 export const presentFriendRequestIgnoredToast = function presentFriendRequestIgnoredToast() {
-  let obj = importDefault(3866);
-  obj = { key: "TOAST_FRIEND_REQUEST_IGNORED" };
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj.content = intl.string(require(1212) /* getSystemLocale */.t.YlavlY);
-  obj.IconComponent = require(4107) /* UserMinusIcon */.UserMinusIcon;
-  obj.iconColor = "icon-feedback-critical";
+  let obj = importDefault(3890);
+  obj = { key: "TOAST_FRIEND_REQUEST_IGNORED", content: null, IconComponent: null, iconColor: "icon-feedback-critical" };
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj[1] = intl.string(require(1236) /* getSystemLocale */.t.YlavlY);
+  obj[2] = require(4131) /* UserMinusIcon */.UserMinusIcon;
   obj.open(obj);
 };
 export const presentGameFriendRequestIgnoredToast = function presentGameFriendRequestIgnoredToast() {
-  let obj = importDefault(3866);
-  obj = { key: "TOAST_GAME_FRIEND_REQUEST_IGNORED" };
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj.content = intl.string(require(1212) /* getSystemLocale */.t.P6BzJP);
-  obj.IconComponent = require(4107) /* UserMinusIcon */.UserMinusIcon;
-  obj.iconColor = "icon-feedback-critical";
+  let obj = importDefault(3890);
+  obj = { key: "TOAST_GAME_FRIEND_REQUEST_IGNORED", content: null, IconComponent: null, iconColor: "icon-feedback-critical" };
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj[1] = intl.string(require(1236) /* getSystemLocale */.t.P6BzJP);
+  obj[2] = require(4131) /* UserMinusIcon */.UserMinusIcon;
   obj.open(obj);
 };
 export const presentLinkCopied = function presentLinkCopied() {
-  let obj = importDefault(3866);
-  obj = { key: "LINK_COPIED" };
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj.content = intl.string(require(1212) /* getSystemLocale */.t["+5kSoW"]);
-  obj.IconComponent = require(4109) /* LinkIcon */.LinkIcon;
+  let obj = importDefault(3890);
+  obj = { key: "LINK_COPIED", content: null, IconComponent: null };
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj[1] = intl.string(require(1236) /* getSystemLocale */.t["+5kSoW"]);
+  obj[2] = require(4133) /* LinkIcon */.LinkIcon;
   obj.open(obj);
 };
 export const presentInviteSent = function presentInviteSent() {
-  let obj = importDefault(3866);
-  obj = { key: "INVITE_SENT" };
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj.content = intl.string(require(1212) /* getSystemLocale */.t.sVwWdV);
-  obj.IconComponent = require(4111) /* SendMessageIcon */.SendMessageIcon;
+  let obj = importDefault(3890);
+  obj = { key: "INVITE_SENT", content: null, IconComponent: null };
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj[1] = intl.string(require(1236) /* getSystemLocale */.t.sVwWdV);
+  obj[2] = require(4135) /* SendMessageIcon */.SendMessageIcon;
   obj.open(obj);
 };
 export const presentIdCopied = function presentIdCopied() {
-  let obj = importDefault(3866);
-  obj = { key: "TOAST_ID_COPIED" };
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj.content = intl.string(require(1212) /* getSystemLocale */.t.eNjAah);
-  obj.IconComponent = require(4113) /* CopyIcon */.CopyIcon;
+  let obj = importDefault(3890);
+  obj = { key: "TOAST_ID_COPIED", content: null, IconComponent: null };
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj[1] = intl.string(require(1236) /* getSystemLocale */.t.eNjAah);
+  obj[2] = require(4137) /* CopyIcon */.CopyIcon;
   obj.open(obj);
 };
 export const presentImageSaved = function presentImageSaved() {
-  let obj = importDefault(3866);
-  obj = { key: "TOAST_IMAGE_SAVED" };
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj.content = intl.string(require(1212) /* getSystemLocale */.t.cqpdJW);
-  obj.IconComponent = require(4115) /* DownloadIcon */.DownloadIcon;
+  let obj = importDefault(3890);
+  obj = { key: "TOAST_IMAGE_SAVED", content: null, IconComponent: null };
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj[1] = intl.string(require(1236) /* getSystemLocale */.t.cqpdJW);
+  obj[2] = require(4139) /* DownloadIcon */.DownloadIcon;
   obj.open(obj);
 };
 export const presentVideoSaved = function presentVideoSaved() {
-  let obj = importDefault(3866);
-  obj = { key: "TOAST_VIDEO_SAVED" };
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj.content = intl.string(require(1212) /* getSystemLocale */.t["cEK+1g"]);
-  obj.IconComponent = require(4115) /* DownloadIcon */.DownloadIcon;
+  let obj = importDefault(3890);
+  obj = { key: "TOAST_VIDEO_SAVED", content: null, IconComponent: null };
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj[1] = intl.string(require(1236) /* getSystemLocale */.t["cEK+1g"]);
+  obj[2] = require(4139) /* DownloadIcon */.DownloadIcon;
   obj.open(obj);
 };
 export const presentGifSaved = function presentGifSaved() {
-  let obj = importDefault(3866);
-  obj = { key: "TOAST_GIF_SAVED" };
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj.content = intl.string(require(1212) /* getSystemLocale */.t.LktEtN);
-  obj.IconComponent = require(4115) /* DownloadIcon */.DownloadIcon;
+  let obj = importDefault(3890);
+  obj = { key: "TOAST_GIF_SAVED", content: null, IconComponent: null };
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj[1] = intl.string(require(1236) /* getSystemLocale */.t.LktEtN);
+  obj[2] = require(4139) /* DownloadIcon */.DownloadIcon;
   obj.open(obj);
 };
 export const presentMessageCopied = function presentMessageCopied() {
-  let obj = importDefault(3866);
-  obj = { key: "TOAST_MESSAGE_COPIED" };
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj.content = intl.string(require(1212) /* getSystemLocale */.t.R3o53R);
-  obj.IconComponent = require(4113) /* CopyIcon */.CopyIcon;
+  let obj = importDefault(3890);
+  obj = { key: "TOAST_MESSAGE_COPIED", content: null, IconComponent: null };
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj[1] = intl.string(require(1236) /* getSystemLocale */.t.R3o53R);
+  obj[2] = require(4137) /* CopyIcon */.CopyIcon;
   obj.open(obj);
 };
 export const presentMessageIdCopied = function presentMessageIdCopied() {
-  let obj = importDefault(3866);
-  obj = { key: "TOAST_MESSAGE_ID_COPIED" };
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj.content = intl.string(require(1212) /* getSystemLocale */.t.svRBmK);
-  obj.IconComponent = require(4113) /* CopyIcon */.CopyIcon;
+  let obj = importDefault(3890);
+  obj = { key: "TOAST_MESSAGE_ID_COPIED", content: null, IconComponent: null };
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj[1] = intl.string(require(1236) /* getSystemLocale */.t.svRBmK);
+  obj[2] = require(4137) /* CopyIcon */.CopyIcon;
   obj.open(obj);
 };
 export const presentPostIdCopied = function presentPostIdCopied() {
-  let obj = importDefault(3866);
-  obj = { key: "TOAST_FORUM_POST_ID_COPIED" };
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj.content = intl.string(require(1212) /* getSystemLocale */.t.aBQ2RP);
-  obj.IconComponent = require(4113) /* CopyIcon */.CopyIcon;
+  let obj = importDefault(3890);
+  obj = { key: "TOAST_FORUM_POST_ID_COPIED", content: null, IconComponent: null };
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj[1] = intl.string(require(1236) /* getSystemLocale */.t.aBQ2RP);
+  obj[2] = require(4137) /* CopyIcon */.CopyIcon;
   obj.open(obj);
 };
 export const presentUsernameCopied = function presentUsernameCopied() {
-  let obj = importDefault(3866);
-  obj = { key: "TOAST_USERNAME_SAVED" };
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj.content = intl.string(require(1212) /* getSystemLocale */.t["FHVR/+"]);
-  obj.IconComponent = require(4113) /* CopyIcon */.CopyIcon;
+  let obj = importDefault(3890);
+  obj = { key: "TOAST_USERNAME_SAVED", content: null, IconComponent: null };
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj[1] = intl.string(require(1236) /* getSystemLocale */.t["FHVR/+"]);
+  obj[2] = require(4137) /* CopyIcon */.CopyIcon;
   obj.open(obj);
 };
 export const presentFeedbackSent = function presentFeedbackSent() {
-  let obj = importDefault(3866);
-  obj = { key: "TOAST_FEEDBACK_SENT" };
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj.content = intl.string(require(1212) /* getSystemLocale */.t.xpiDtu);
-  obj.IconComponent = require(4117) /* CheckmarkLargeIcon */.CheckmarkLargeIcon;
-  obj.iconColor = "status-positive";
+  let obj = importDefault(3890);
+  obj = { key: "TOAST_FEEDBACK_SENT", content: null, IconComponent: null, iconColor: "status-positive" };
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj[1] = intl.string(require(1236) /* getSystemLocale */.t.xpiDtu);
+  obj[2] = require(4141) /* CheckmarkLargeIcon */.CheckmarkLargeIcon;
   obj.open(obj);
 };
 export const presentEmoji = function presentEmoji(closure_0) {
-  let obj = importDefault(1392);
+  let obj = importDefault(1416);
   obj = { id: closure_0.id, animated: closure_0.animated, size: 48 };
   const emojiURL = obj.getEmojiURL(obj);
   obj = { key: "PRESENT_EMOJI-" + closure_0.id, content: ":" + closure_0.name + ":", icon: { uri: emojiURL } };
-  importDefault(3866).open(obj);
+  importDefault(3890).open(obj);
 };
 export const presentNoiseCancellation = function presentNoiseCancellation(arg0) {
-  let obj = importDefault(3866);
-  obj = { key: "NOISE_CANCELLATION_TOGGLE" };
-  const intl = require(1212) /* getSystemLocale */.intl;
+  let obj = importDefault(3890);
+  const intl = require(1236) /* getSystemLocale */.intl;
   const string = intl.string;
-  const t = require(1212) /* getSystemLocale */.t;
+  const t = require(1236) /* getSystemLocale */.t;
   if (arg0) {
     let stringResult = string(t["Q+fhfv"]);
+    let tmp4 = tmp2;
   } else {
     stringResult = string(t.hEMHnF);
+    tmp4 = tmp2;
   }
-  obj.content = stringResult;
+  obj = { key: "NOISE_CANCELLATION_TOGGLE", content: stringResult, IconComponent: null, iconColor: null };
   if (arg0) {
-    let XLargeIcon = tmp2(4117).CheckmarkLargeIcon;
+    let XLargeIcon = tmp4(4141).CheckmarkLargeIcon;
   } else {
-    XLargeIcon = tmp2(4119).XLargeIcon;
+    XLargeIcon = tmp4(4143).XLargeIcon;
   }
-  obj.IconComponent = XLargeIcon;
+  obj[2] = XLargeIcon;
   let str = "icon-feedback-critical";
   if (arg0) {
     str = "status-positive";
   }
-  obj.iconColor = str;
+  obj[3] = str;
   obj.open(obj);
 };
 export const presentNoiseCancellationError = function presentNoiseCancellationError() {
-  let obj = importDefault(3866);
-  obj = { key: "MOBILE_NOISE_CANCELLATION_CPU_OVERUSE" };
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj.content = intl.string(require(1212) /* getSystemLocale */.t.DnmX2G);
-  obj.IconComponent = require(4119) /* XLargeIcon */.XLargeIcon;
-  obj.iconColor = "icon-feedback-critical";
+  let obj = importDefault(3890);
+  obj = { key: "MOBILE_NOISE_CANCELLATION_CPU_OVERUSE", content: null, IconComponent: null, iconColor: "icon-feedback-critical" };
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj[1] = intl.string(require(1236) /* getSystemLocale */.t.DnmX2G);
+  obj[2] = require(4143) /* XLargeIcon */.XLargeIcon;
   obj.open(obj);
 };
-export const presentError = function presentError(anyErrorMessage) {
-  let obj = importDefault(3866);
-  obj = { key: "ERROR", content: anyErrorMessage, IconComponent: require(4119) /* XLargeIcon */.XLargeIcon, iconColor: "icon-feedback-critical" };
+export const presentError = function presentError(intl) {
+  let obj = importDefault(3890);
+  obj = { key: "ERROR", content: intl, IconComponent: require(4143) /* XLargeIcon */.XLargeIcon, iconColor: "icon-feedback-critical" };
   obj.open(obj);
 };
 export const presentVoiceActivityDetectionError = function presentVoiceActivityDetectionError() {
-  let obj = importDefault(3866);
-  obj = { key: "MOBILE_ADVANCED_VOICE_ACTIVITY_CPU_OVERUSE" };
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj.content = intl.string(require(1212) /* getSystemLocale */.t.zz1Tft);
-  obj.IconComponent = require(4119) /* XLargeIcon */.XLargeIcon;
-  obj.iconColor = "icon-feedback-critical";
+  let obj = importDefault(3890);
+  obj = { key: "MOBILE_ADVANCED_VOICE_ACTIVITY_CPU_OVERUSE", content: null, IconComponent: null, iconColor: "icon-feedback-critical" };
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj[1] = intl.string(require(1236) /* getSystemLocale */.t.zz1Tft);
+  obj[2] = require(4143) /* XLargeIcon */.XLargeIcon;
   obj.open(obj);
 };
-export const roleIdCopied = function roleIdCopied(combined) {
-  let obj = importDefault(3866);
-  obj = { key: "ROLE_ID_COPIED-" + combined };
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj = { role: combined };
-  obj.content = intl.formatToPlainString(require(1212) /* getSystemLocale */.t.iOWpeB, obj);
-  obj.IconComponent = require(4113) /* CopyIcon */.CopyIcon;
+export const roleIdCopied = function roleIdCopied(closure_2) {
+  let obj = importDefault(3890);
+  obj = { key: "ROLE_ID_COPIED-" + closure_2, content: null, IconComponent: null };
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj = { role: closure_2 };
+  obj[1] = intl.formatToPlainString(require(1236) /* getSystemLocale */.t.iOWpeB, obj);
+  obj[2] = require(4137) /* CopyIcon */.CopyIcon;
   obj.open(obj);
 };
 export const communityRequirementSatisfied = function communityRequirementSatisfied() {
-  let obj = importDefault(3866);
-  obj = { key: "ENABLE_COMMUNITY_MODAL_REQUIREMENT_SATISFIED_TOOLTIP" };
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj.content = intl.string(require(1212) /* getSystemLocale */.t.PHjrpp);
-  obj.IconComponent = require(4117) /* CheckmarkLargeIcon */.CheckmarkLargeIcon;
-  obj.iconColor = "status-positive";
+  let obj = importDefault(3890);
+  obj = { key: "ENABLE_COMMUNITY_MODAL_REQUIREMENT_SATISFIED_TOOLTIP", content: null, IconComponent: null, iconColor: "status-positive" };
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj[1] = intl.string(require(1236) /* getSystemLocale */.t.PHjrpp);
+  obj[2] = require(4141) /* CheckmarkLargeIcon */.CheckmarkLargeIcon;
   obj.open(obj);
 };
 export const communityAdminOnly = function communityAdminOnly() {
-  let obj = importDefault(3866);
-  obj = { key: "GUILD_SETTINGS_COMMUNITY_ADMINISTRATOR_ONLY" };
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj.content = intl.string(require(1212) /* getSystemLocale */.t["pjG+T3"]);
-  obj.IconComponent = require(4121) /* CircleInformationIcon */.CircleInformationIcon;
+  let obj = importDefault(3890);
+  obj = { key: "GUILD_SETTINGS_COMMUNITY_ADMINISTRATOR_ONLY", content: null, IconComponent: null };
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj[1] = intl.string(require(1236) /* getSystemLocale */.t["pjG+T3"]);
+  obj[2] = require(4145) /* CircleInformationIcon */.CircleInformationIcon;
   obj.open(obj);
 };
 export const unverifiedVoiceGate = function unverifiedVoiceGate(check) {
@@ -235,210 +229,212 @@ export const unverifiedVoiceGate = function unverifiedVoiceGate(check) {
   let verificationRole;
   ({ missingVerificationRole, verificationRole } = check);
   if (check.notClaimed) {
-    const intl6 = require(1212) /* getSystemLocale */.intl;
-    let stringResult = intl6.string(require(1212) /* getSystemLocale */.t.IRxUlG);
+    const intl6 = require(1236) /* getSystemLocale */.intl;
+    let stringResult = intl6.string(require(1236) /* getSystemLocale */.t.IRxUlG);
   } else if (tmp2) {
-    const intl5 = require(1212) /* getSystemLocale */.intl;
-    stringResult = intl5.string(require(1212) /* getSystemLocale */.t.vW8iUF);
+    const intl5 = require(1236) /* getSystemLocale */.intl;
+    stringResult = intl5.string(require(1236) /* getSystemLocale */.t.vW8iUF);
   } else if (tmp) {
-    const intl4 = require(1212) /* getSystemLocale */.intl;
-    stringResult = intl4.string(require(1212) /* getSystemLocale */.t.vdSOpz);
+    const intl4 = require(1236) /* getSystemLocale */.intl;
+    stringResult = intl4.string(require(1236) /* getSystemLocale */.t.vdSOpz);
   } else if (tmp4) {
-    const intl3 = require(1212) /* getSystemLocale */.intl;
-    let obj = { min: VerificationCriteria.MEMBER_AGE };
-    stringResult = intl3.formatToPlainString(require(1212) /* getSystemLocale */.t.v1ktYb, obj);
+    const intl3 = require(1236) /* getSystemLocale */.intl;
+    let obj = { min: null };
+    obj[0] = VerificationCriteria.MEMBER_AGE;
+    stringResult = intl3.formatToPlainString(require(1236) /* getSystemLocale */.t.v1ktYb, obj);
   } else if (tmp3) {
-    const intl2 = require(1212) /* getSystemLocale */.intl;
-    obj = { min: VerificationCriteria.ACCOUNT_AGE };
-    stringResult = intl2.formatToPlainString(require(1212) /* getSystemLocale */.t.sncw41, obj);
+    const intl2 = require(1236) /* getSystemLocale */.intl;
+    obj = { min: null };
+    obj[0] = VerificationCriteria.ACCOUNT_AGE;
+    stringResult = intl2.formatToPlainString(require(1236) /* getSystemLocale */.t.sncw41, obj);
   } else {
     if (missingVerificationRole) {
       missingVerificationRole = null != verificationRole;
     }
     stringResult = null;
     if (missingVerificationRole) {
-      const intl = require(1212) /* getSystemLocale */.intl;
-      obj = {};
+      const intl = require(1236) /* getSystemLocale */.intl;
+      obj = { roleName: null };
       const _HermesInternal = HermesInternal;
-      obj.roleName = "@" + verificationRole.name;
-      stringResult = intl.formatToPlainString(require(1212) /* getSystemLocale */.t.MZbCuG, obj);
+      obj[0] = "@" + verificationRole.name;
+      stringResult = intl.formatToPlainString(require(1236) /* getSystemLocale */.t.MZbCuG, obj);
     }
   }
   if (null != stringResult) {
-    const obj1 = { key: "UNVERIFIED_VOICE_GATE", content: stringResult, IconComponent: require(4121) /* CircleInformationIcon */.CircleInformationIcon };
-    importDefault(3866).open(obj1);
-    const obj4 = importDefault(3866);
+    const obj1 = { key: "UNVERIFIED_VOICE_GATE", content: null, IconComponent: null };
+    obj1[1] = stringResult;
+    obj1[2] = require(4145) /* CircleInformationIcon */.CircleInformationIcon;
+    importDefault(3890).open(obj1);
+    const obj4 = importDefault(3890);
   }
 };
 export const transferOwnershipProtected = function transferOwnershipProtected() {
-  let obj = importDefault(3866);
-  obj = { key: "TRANSFER_OWNERSHIP_PROTECTED_GUILD" };
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj.content = intl.string(require(1212) /* getSystemLocale */.t.wDkfrN);
-  obj.IconComponent = require(4121) /* CircleInformationIcon */.CircleInformationIcon;
+  let obj = importDefault(3890);
+  obj = { key: "TRANSFER_OWNERSHIP_PROTECTED_GUILD", content: null, IconComponent: null };
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj[1] = intl.string(require(1236) /* getSystemLocale */.t.wDkfrN);
+  obj[2] = require(4145) /* CircleInformationIcon */.CircleInformationIcon;
   obj.open(obj);
 };
-export const memberOrRoleRemovedToast = function memberOrRoleRemovedToast(name) {
-  let obj = importDefault(3866);
-  obj = { key: "PRIVATE_CHANNEL_MEMBERS_REMOVED" };
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj = { name };
-  obj.content = intl.formatToPlainString(require(1212) /* getSystemLocale */.t.vJGtXc, obj);
-  obj.IconComponent = require(4124) /* TrashIcon */.TrashIcon;
+export const memberOrRoleRemovedToast = function memberOrRoleRemovedToast(closure_1) {
+  let obj = importDefault(3890);
+  obj = { key: "PRIVATE_CHANNEL_MEMBERS_REMOVED", content: null, IconComponent: null };
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj = { name: closure_1 };
+  obj[1] = intl.formatToPlainString(require(1236) /* getSystemLocale */.t.vJGtXc, obj);
+  obj[2] = require(4148) /* TrashIcon */.TrashIcon;
   obj.open(obj);
 };
 export const memberOrRoleAddedToast = function memberOrRoleAddedToast(c1, c0) {
   if (c1 > 0) {
     if (c0 > 0) {
-      const intl3 = require(1212) /* getSystemLocale */.intl;
-      let stringResult = intl3.string(require(1212) /* getSystemLocale */.t.fRD8wW);
+      const intl3 = require(1236) /* getSystemLocale */.intl;
+      let stringResult = intl3.string(require(1236) /* getSystemLocale */.t.fRD8wW);
     }
     if (null != stringResult) {
-      let obj = { key: "MEMBER_OR_ROLE_ADDED", content: stringResult, IconComponent: require(4117) /* CheckmarkLargeIcon */.CheckmarkLargeIcon, iconColor: "status-positive" };
-      importDefault(3866).open(obj);
-      const obj3 = importDefault(3866);
+      let obj = { key: "MEMBER_OR_ROLE_ADDED", content: null, IconComponent: null, iconColor: "status-positive" };
+      obj[1] = stringResult;
+      obj[2] = require(4141) /* CheckmarkLargeIcon */.CheckmarkLargeIcon;
+      importDefault(3890).open(obj);
+      const obj3 = importDefault(3890);
     }
   }
   if (c1 > 0) {
-    const intl2 = require(1212) /* getSystemLocale */.intl;
-    obj = { count: c1 };
-    stringResult = intl2.formatToPlainString(require(1212) /* getSystemLocale */.t["yM/8JE"], obj);
+    const intl2 = require(1236) /* getSystemLocale */.intl;
+    obj = { count: null };
+    obj[0] = c1;
+    stringResult = intl2.formatToPlainString(require(1236) /* getSystemLocale */.t["yM/8JE"], obj);
   } else if (c0 > 0) {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    obj = { count: c0 };
-    stringResult = intl.formatToPlainString(require(1212) /* getSystemLocale */.t.yvV5Ye, obj);
+    const intl = require(1236) /* getSystemLocale */.intl;
+    obj = { count: null };
+    obj[0] = c0;
+    stringResult = intl.formatToPlainString(require(1236) /* getSystemLocale */.t.yvV5Ye, obj);
   }
 };
 export const roleTemplateAppliedToast = function roleTemplateAppliedToast() {
-  let obj = importDefault(3866);
-  obj = { key: "ROLE_PERMISSION_TEMPLATE_SELECT_CONFIRMATION_TOAST" };
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj.content = intl.string(require(1212) /* getSystemLocale */.t.e6xHUV);
-  obj.IconComponent = require(4117) /* CheckmarkLargeIcon */.CheckmarkLargeIcon;
-  obj.iconColor = "status-positive";
+  let obj = importDefault(3890);
+  obj = { key: "ROLE_PERMISSION_TEMPLATE_SELECT_CONFIRMATION_TOAST", content: null, IconComponent: null, iconColor: "status-positive" };
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj[1] = intl.string(require(1236) /* getSystemLocale */.t.e6xHUV);
+  obj[2] = require(4141) /* CheckmarkLargeIcon */.CheckmarkLargeIcon;
   obj.open(obj);
 };
 export const roleCreatedToast = function roleCreatedToast() {
-  let obj = importDefault(3866);
-  obj = { key: "ROLE_CREATED_TOAST" };
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj.content = intl.string(require(1212) /* getSystemLocale */.t.kubT4R);
-  obj.IconComponent = require(4117) /* CheckmarkLargeIcon */.CheckmarkLargeIcon;
-  obj.iconColor = "status-positive";
+  let obj = importDefault(3890);
+  obj = { key: "ROLE_CREATED_TOAST", content: null, IconComponent: null, iconColor: "status-positive" };
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj[1] = intl.string(require(1236) /* getSystemLocale */.t.kubT4R);
+  obj[2] = require(4141) /* CheckmarkLargeIcon */.CheckmarkLargeIcon;
   obj.open(obj);
 };
 export const roleCreateFailedToast = function roleCreateFailedToast() {
-  let obj = importDefault(3866);
-  obj = { key: "ROLE_CREATION_FAILED" };
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj.content = intl.string(require(1212) /* getSystemLocale */.t.hbr6Uj);
-  obj.IconComponent = require(4119) /* XLargeIcon */.XLargeIcon;
-  obj.iconColor = "icon-feedback-critical";
+  let obj = importDefault(3890);
+  obj = { key: "ROLE_CREATION_FAILED", content: null, IconComponent: null, iconColor: "icon-feedback-critical" };
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj[1] = intl.string(require(1236) /* getSystemLocale */.t.hbr6Uj);
+  obj[2] = require(4143) /* XLargeIcon */.XLargeIcon;
   obj.open(obj);
 };
 export const presentFailedToast = function presentFailedToast(intl) {
-  let obj = importDefault(3866);
-  obj = { key: "FAILED", content: intl, IconComponent: require(4119) /* XLargeIcon */.XLargeIcon, iconColor: "icon-feedback-critical" };
+  let obj = importDefault(3890);
+  obj = { key: "FAILED", content: intl, IconComponent: require(4143) /* XLargeIcon */.XLargeIcon, iconColor: "icon-feedback-critical" };
   obj.open(obj);
 };
 export const presentCommandCopied = function presentCommandCopied() {
-  let obj = importDefault(3866);
-  obj = { key: "TOAST_COMMAND_COPIED" };
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj.content = intl.string(require(1212) /* getSystemLocale */.t.U989ct);
-  obj.IconComponent = require(4109) /* LinkIcon */.LinkIcon;
+  let obj = importDefault(3890);
+  obj = { key: "TOAST_COMMAND_COPIED", content: null, IconComponent: null };
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj[1] = intl.string(require(1236) /* getSystemLocale */.t.U989ct);
+  obj[2] = require(4133) /* LinkIcon */.LinkIcon;
   obj.open(obj);
 };
 export const presentGuildMemberBio = function presentGuildMemberBio(guildName) {
   const _require = arg1;
-  let obj = importDefault(3866);
-  obj = { key: "GUILD_IDENTITY_BIO_TOAST" };
-  const intl = _require(1212).intl;
+  let obj = importDefault(3890);
+  obj = { key: "GUILD_IDENTITY_BIO_TOAST", content: null, icon: null };
+  const intl = _require(1236).intl;
   obj = { guildName };
-  obj.content = intl.formatToPlainString(_require(1212).t.pOy2tm, obj);
-  obj.icon = function icon() {
+  obj[1] = intl.formatToPlainString(_require(1236).t.pOy2tm, obj);
+  obj[2] = function icon() {
     return closure_0;
   };
   obj.open(obj);
 };
 export const presentGuildMemberPronouns = function presentGuildMemberPronouns(guildName) {
   const _require = arg1;
-  let obj = importDefault(3866);
-  obj = { key: "GUILD_IDENTITY_PRONOUNS_TOAST" };
-  const intl = _require(1212).intl;
+  let obj = importDefault(3890);
+  obj = { key: "GUILD_IDENTITY_PRONOUNS_TOAST", content: null, icon: null };
+  const intl = _require(1236).intl;
   obj = { guildName };
-  obj.content = intl.formatToPlainString(_require(1212).t.gPVLS0, obj);
-  obj.icon = function icon() {
+  obj[1] = intl.formatToPlainString(_require(1236).t.gPVLS0, obj);
+  obj[2] = function icon() {
     return closure_0;
   };
   obj.open(obj);
 };
 export const presentUserPronouns = function presentUserPronouns() {
-  let obj = importDefault(3866);
-  obj = { key: "USER_POPOUT_PRONOUNS" };
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj.content = intl.string(require(1212) /* getSystemLocale */.t["1w6drw"]);
+  let obj = importDefault(3890);
+  obj = { key: "USER_POPOUT_PRONOUNS", content: null };
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj[1] = intl.string(require(1236) /* getSystemLocale */.t["1w6drw"]);
   obj.open(obj);
 };
 export const presentCopiedToClipboard = function presentCopiedToClipboard() {
-  let obj = importDefault(3866);
-  obj = { key: "COPIED_TEXT_" + require(491) /* v1 */.v4() };
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj.content = intl.string(require(1212) /* getSystemLocale */.t.mGZ66D);
-  obj.IconComponent = require(4113) /* CopyIcon */.CopyIcon;
+  let obj = importDefault(3890);
+  obj = { key: null, content: null, IconComponent: null };
+  obj[0] = "COPIED_TEXT_" + require(514) /* v1 */.v4();
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj[1] = intl.string(require(1236) /* getSystemLocale */.t.mGZ66D);
+  obj[2] = require(4137) /* CopyIcon */.CopyIcon;
   obj.open(obj);
 };
 export const presentGuildRoleSubscriptionTrialTierMonthCost = function presentGuildRoleSubscriptionTrialTierMonthCost() {
-  let obj = importDefault(3866);
-  obj = { key: "GUILD_ROLE_SUBSCRIPTION_MANAGE_SUBSCRIPTION_PAGE_TRIAL_PRICE_INFO" };
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj.content = intl.string(require(1212) /* getSystemLocale */.t["/q6fpa"]);
-  obj.IconComponent = require(4121) /* CircleInformationIcon */.CircleInformationIcon;
+  let obj = importDefault(3890);
+  obj = { key: "GUILD_ROLE_SUBSCRIPTION_MANAGE_SUBSCRIPTION_PAGE_TRIAL_PRICE_INFO", content: null, IconComponent: null };
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj[1] = intl.string(require(1236) /* getSystemLocale */.t["/q6fpa"]);
+  obj[2] = require(4145) /* CircleInformationIcon */.CircleInformationIcon;
   obj.open(obj);
 };
 export const showVoiceRecordingFailed = function showVoiceRecordingFailed() {
-  let obj = importDefault(3866);
-  obj = { key: "VOICE_MESSAGES_RECORDING_FAILED" };
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj.content = intl.string(require(1212) /* getSystemLocale */.t.H03AqF);
-  obj.IconComponent = require(4119) /* XLargeIcon */.XLargeIcon;
-  obj.iconColor = "icon-feedback-critical";
+  let obj = importDefault(3890);
+  obj = { key: "VOICE_MESSAGES_RECORDING_FAILED", content: null, IconComponent: null, iconColor: "icon-feedback-critical" };
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj[1] = intl.string(require(1236) /* getSystemLocale */.t.H03AqF);
+  obj[2] = require(4143) /* XLargeIcon */.XLargeIcon;
   obj.open(obj);
 };
 export const showMaxGroupMembers = function showMaxGroupMembers() {
-  let obj = importDefault(3866);
-  obj = { key: "GROUP_DM_INVITE_FULL_MAIN" };
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj.content = intl.string(require(1212) /* getSystemLocale */.t.OtTQDz);
-  obj.IconComponent = require(4119) /* XLargeIcon */.XLargeIcon;
-  obj.iconColor = "icon-feedback-critical";
+  let obj = importDefault(3890);
+  obj = { key: "GROUP_DM_INVITE_FULL_MAIN", content: null, IconComponent: null, iconColor: "icon-feedback-critical" };
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj[1] = intl.string(require(1236) /* getSystemLocale */.t.OtTQDz);
+  obj[2] = require(4143) /* XLargeIcon */.XLargeIcon;
   obj.open(obj);
 };
 export const showTransferOwnershipSuccess = function showTransferOwnershipSuccess() {
-  let obj = importDefault(3866);
-  obj = { key: "TRANSFER_OWNERSHIP_SUCCESS" };
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj.content = intl.string(require(1212) /* getSystemLocale */.t["2Eyydu"]);
-  obj.IconComponent = require(4117) /* CheckmarkLargeIcon */.CheckmarkLargeIcon;
-  obj.iconColor = "status-positive";
+  let obj = importDefault(3890);
+  obj = { key: "TRANSFER_OWNERSHIP_SUCCESS", content: null, IconComponent: null, iconColor: "status-positive" };
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj[1] = intl.string(require(1236) /* getSystemLocale */.t["2Eyydu"]);
+  obj[2] = require(4141) /* CheckmarkLargeIcon */.CheckmarkLargeIcon;
   obj.open(obj);
 };
 export const showSafetySuccess = function showSafetySuccess(BLOCK_SUCCESS, safetyToastTypeContent) {
-  let obj = importDefault(3866);
-  obj = { key: BLOCK_SUCCESS, content: safetyToastTypeContent, IconComponent: require(4126) /* CircleCheckIcon */.CircleCheckIcon, iconColor: "status-positive" };
+  let obj = importDefault(3890);
+  obj = { key: BLOCK_SUCCESS, content: safetyToastTypeContent, IconComponent: require(4150) /* CircleCheckIcon */.CircleCheckIcon, iconColor: "status-positive" };
   obj.open(obj);
 };
 export const showVerificationSent = function showVerificationSent() {
-  let obj = importDefault(3866);
-  obj = { key: "VERIFICATION_RESENT" };
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj.content = intl.string(require(1212) /* getSystemLocale */.t.gI8IST);
-  obj.IconComponent = require(4117) /* CheckmarkLargeIcon */.CheckmarkLargeIcon;
-  obj.iconColor = "status-positive";
+  let obj = importDefault(3890);
+  obj = { key: "VERIFICATION_RESENT", content: null, IconComponent: null, iconColor: "status-positive" };
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj[1] = intl.string(require(1236) /* getSystemLocale */.t.gI8IST);
+  obj[2] = require(4141) /* CheckmarkLargeIcon */.CheckmarkLargeIcon;
   obj.open(obj);
 };
 export const presentTimestamp = function presentTimestamp(full) {
-  let obj = importDefault(3866);
-  obj = { key: "MESSAGE_TIMESTAMP", content: full, IconComponent: require(4129) /* ClockIcon */.ClockIcon };
+  let obj = importDefault(3890);
+  obj = { key: "MESSAGE_TIMESTAMP", content: full, IconComponent: require(4153) /* ClockIcon */.ClockIcon };
   obj.open(obj);
 };

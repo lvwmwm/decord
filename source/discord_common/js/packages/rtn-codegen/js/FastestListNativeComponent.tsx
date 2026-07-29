@@ -1,27 +1,27 @@
-// Module ID: 9218
-// Function ID: 72150
+// Module ID: 9242
+// Function ID: 9243
 // Name: __INTERNAL_VIEW_CONFIG
-// Dependencies: [110, 42, 117, 2]
+// Dependencies: [106, 65, 114, 2]
 
-// Module 9218 (__INTERNAL_VIEW_CONFIG)
+// Module 9242 (__INTERNAL_VIEW_CONFIG)
 import weakSet from "weakSet";
-import get from "get";
+import setRuntimeConfigProvider from "setRuntimeConfigProvider";
 
-let obj = { uiViewClassName: "FastestList", directEventTypes: { topLayout: { registrationName: "onLayout" }, topScroll: { registrationName: "onScroll" }, topScrollBeginDrag: { registrationName: "onScrollBeginDrag" }, topScrollEndDrag: { registrationName: "onScrollEndDrag" }, topVisibleItemsChanged: { registrationName: "onVisibleItemsChanged" }, topUnexpectedItemSize: { registrationName: "onUnexpectedItemSize" } } };
+let obj = { uiViewClassName: "FastestList", directEventTypes: { topLayout: { registrationName: "onLayout" }, topScroll: { registrationName: "onScroll" }, topScrollBeginDrag: { registrationName: "onScrollBeginDrag" }, topScrollEndDrag: { registrationName: "onScrollEndDrag" }, topVisibleItemsChanged: { registrationName: "onVisibleItemsChanged" }, topUnexpectedItemSize: { registrationName: "onUnexpectedItemSize" } }, validAttributes: null };
 obj = { insetStart: true, insetEnd: true, horizontal: true, keyboardDismissOnDrag: true, placeholderConfig: true, renderAhead: true, scrollEventThrottle: true, sectionsVersioned: true, showsHorizontalScrollIndicator: true, showsVerticalScrollIndicator: true };
 const merged = Object.assign(weakSet.ConditionallyIgnoredEventHandlers({ onLayout: true, onScroll: true, onScrollBeginDrag: true, onScrollEndDrag: true, onVisibleItemsChanged: true, onUnexpectedItemSize: true }));
-obj.validAttributes = obj;
+obj[2] = obj;
 obj = {
-  scrollToLocation(nodeFromPublicInstance) {
+  scrollToLocation(arg0, arg1, arg2, arg3, arg4) {
     const items = [arg1, arg2, arg3, arg4];
-    require(117) /* renderElement */.dispatchCommand(nodeFromPublicInstance, "scrollToLocation", items);
+    require(114) /* renderElement */.dispatchCommand(arg0, "scrollToLocation", items);
   },
-  scrollToTop(nodeFromPublicInstance) {
+  scrollToTop(arg0, arg1) {
     const items = [arg1];
-    require(117) /* renderElement */.dispatchCommand(nodeFromPublicInstance, "scrollToTop", items);
+    require(114) /* renderElement */.dispatchCommand(arg0, "scrollToTop", items);
   }
 };
-const value = get.get("FastestList", () => obj);
+const value = setRuntimeConfigProvider.get("FastestList", () => obj);
 const result = require("renderElement").fileFinishedImporting("../discord_common/js/packages/rtn-codegen/js/FastestListNativeComponent.tsx");
 
 export default value;

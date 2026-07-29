@@ -1,16 +1,16 @@
-// Module ID: 6689
-// Function ID: 58938
+// Module ID: 6710
+// Function ID: 6711
 // Name: connectToStage
-// Dependencies: [5, 4184, 1348, 1838, 3793, 1907, 1356, 6690, 11505, 5083, 12395, 12396, 4979, 4229, 4344, 12398, 2]
-// Exports: connectOrLurkStage, showUserProfile
+// Dependencies: [5, 4208, 1372, 1862, 3817, 1931, 1380, 6711, 11529, 5105, 12417, 12418, 5001, 4253, 4369, 12420, 2]
+// Exports: connectOrLurkStage, navigateToStage, showUserProfile
 
-// Module 6689 (connectToStage)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_5 from "_isNativeReflectConstruct";
-import closure_6 from "_isNativeReflectConstruct";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import closure_8 from "_isNativeReflectConstruct";
-import closure_9 from "_isNativeReflectConstruct";
+// Module 6710 (connectToStage)
+import handleConnectionOpen from "handleConnectionOpen";
+import reset from "reset";
+import ensureGuildLoaded from "ensureGuildLoaded";
+import createGuildRecordFromRust from "createGuildRecordFromRust";
+import getUncachedChannelPermissions from "getUncachedChannelPermissions";
+import closure_9 from "handleConnectionOpen";
 
 const require = arg1;
 function connectToStage(channel, flag) {
@@ -18,124 +18,201 @@ function connectToStage(channel, flag) {
     flag = false;
   }
   if (!flag) {
-    if (!(function canJoinImmediately(id, arg1) {
-      let closure_0 = id;
-      let tmp = !outer1_8.can(outer1_0(outer1_3[6]).JOIN_VOCAL_CHANNEL_PERMISSIONS, id);
-      if (!tmp) {
-        let num2 = outer1_2(outer1_3[7]).shouldShowBlockedUsers(id.id);
-        if (num2) {
-          num2 = arg1 !== id.id;
-        }
-        if (num2) {
-          const result = outer1_2(outer1_3[7]).openStageBlockedUsersSheet(id, () => {
-            outer2_11(closure_0, true);
-          });
-          num2 = 1;
-          const obj2 = outer1_2(outer1_3[7]);
-        }
-        tmp = num2;
-        const obj = outer1_2(outer1_3[7]);
+    const _require = channel;
+    const canResult = getUncachedChannelPermissions.can(_require(1380).JOIN_VOCAL_CHANNEL_PERMISSIONS, channel);
+    let tmp6 = !canResult;
+    if (canResult) {
+      let num = importAll(6711).shouldShowBlockedUsers(channel.id) && tmp !== channel.id;
+      if (num) {
+        const result = tmp7(6711).openStageBlockedUsersSheet(channel, () => {
+          outer1_11(closure_0, true);
+        });
+        num = 1;
+        const tmp7Result = tmp7(6711);
       }
-      return !tmp;
-    })(channel, tmp)) {
+      tmp6 = num;
+      const obj2 = importAll(6711);
+      tmp7 = importAll;
+    }
+    if (tmp6) {
       return false;
     }
   }
-  let obj = importDefault(12396);
-  obj.initialize();
-  const voiceChannel = importDefault(4979).selectVoiceChannel(channel.id);
-  if (store.getVoiceChannelId() !== channel.id) {
+  importDefault(12418).initialize();
+  const obj = closure_9;
+  const obj4 = importDefault(12418);
+  const voiceChannel = importDefault(5001).selectVoiceChannel(channel.id);
+  if (obj.getVoiceChannelId() !== channel.id) {
     return false;
   } else {
     allApplicationStreamsForChannel = allApplicationStreamsForChannel.getAllApplicationStreamsForChannel(channel.id);
-    const found = allApplicationStreamsForChannel.find((currentUserActiveStream) => !outer1_5.isStreamMarkedFull(outer1_0(outer1_3[13]).encodeStreamKey(currentUserActiveStream)));
+    const found = allApplicationStreamsForChannel.find((currentUserActiveStream) => !streamMarkedFull.isStreamMarkedFull(channel(table[13]).encodeStreamKey(currentUserActiveStream)));
     if (null != found) {
-      obj = { noFocus: true };
-      require(4344) /* isVoiceChannelFull */.watchStream(found, obj);
-      const obj3 = require(4344) /* isVoiceChannelFull */;
+      _require(4369).watchStream(found, { noFocus: true });
+      const obj6 = _require(4369);
     }
     return true;
   }
-  let obj2 = importDefault(4979);
+  const obj5 = importDefault(5001);
 }
 function connectAndOpen(channel, flag) {
-  let flag2 = arg2;
-  let flag3 = arg3;
   const _require = channel;
   if (flag === undefined) {
     flag = false;
   }
-  if (flag2 === undefined) {
+  let flag2 = arg2;
+  if (arg2 === undefined) {
     flag2 = false;
   }
-  if (flag3 === undefined) {
+  let flag3 = arg3;
+  if (arg3 === undefined) {
     flag3 = false;
   }
-  const voiceChannelId = store.getVoiceChannelId();
-  let result = !flag3 && voiceChannelId !== channel.id;
-  if (result) {
-    result = _require(12398).shouldShowVoiceChannelChangeConfirmation(channel);
-    const obj = _require(12398);
+  voiceChannelId = voiceChannelId.getVoiceChannelId();
+  let result = !flag3;
+  if (!flag3) {
+    result = voiceChannelId !== channel.id;
   }
   if (result) {
-    result = flag2(6690).showChannelChangeConfirmationAlert(channel, () => {
+    result = _require(12420).shouldShowVoiceChannelChangeConfirmation(channel);
+    const obj = _require(12420);
+  }
+  if (result) {
+    result = flag2(6711).showChannelChangeConfirmationAlert(channel, () => {
       outer1_11(closure_0, flag, flag2, true);
     });
-    const obj2 = flag2(6690);
+    const obj2 = flag2(6711);
   }
   if (!result) {
     if (connectToStage(channel, flag)) {
-      navigateToStage(channel, voiceChannelId);
+      flag2(6711).navigateToStage(channel, voiceChannelId);
+      const obj3 = flag2(6711);
     }
   }
 }
-function navigateToStage(arg0, arg1) {
-  importAll(6690).navigateToStage(arg0, arg1);
-}
-let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/stage_channels/StageChannelModalActionCreators.tsx");
+let result = require("ensureGuildLoaded").fileFinishedImporting("modules/stage_channels/StageChannelModalActionCreators.tsx");
 
-export const connectOrLurkStage = function connectOrLurkStage(arg0, channelId, arg2) {
+export const connectOrLurkStage = function connectOrLurkStage(closure_0, closure_1, arg2) {
   let flag = arg2;
-  let closure_0 = arg0;
-  let closure_1 = channelId;
   if (arg2 === undefined) {
     flag = false;
   }
-  return new Promise((() => {
-    let closure_0 = outer1_4(async (arg0) => {
-      const callback = arg0;
-      let channel = outer3_6.getChannel(outer2_1);
-      if (null != channel) {
-        outer3_10(channel, outer2_2);
-        return arg0(channel);
+  closure_0 = undefined;
+  closure_0 = callback((arg0) => {
+    let closure_0 = arg0;
+    let c3 = 0;
+    let c4 = 0;
+    return (function*(arg0) {
+      if (c4 === 2) {
+        c4 = 3;
+        HermesBuiltin.throwTypeError();
+      } else if (tmp4 === 3) {
+        if (arg0 === 1) {
+          throw arg1;
+        } else if (arg0 === 2) {
+          let obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
+        } else {
+          return { value: "HermesInternal", done: null };
+        }
       } else {
-        const items = [callback];
-        yield callback(outer3_3[8]).stopLurkingAll(items);
-        let obj = callback2(outer3_3[9]);
-        obj = { lurker: true };
-        yield obj.joinGuild(closure_0, obj);
-        const result = outer3_7.addConditionalChangeListener(() => {
-          const channel = outer4_6.getChannel(outer3_1);
-          let flag = null == channel;
-          if (!flag) {
-            outer4_10(channel);
-            callback(outer4_3[10]).initialize();
-            guildId(channel);
-            flag = false;
-            const obj = callback(outer4_3[10]);
+        try {
+          c4 = 2;
+          if (0 === c3) {
+            if (arg0 === 1) {
+              c4 = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              c4 = 3;
+              obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            } else {
+              let closure_2 = tmp5;
+              const callback2 = tmp2;
+              let channel = outer2_6.getChannel(outer1_1);
+              if (null != channel) {
+                outer2_10(channel, outer1_2);
+                c4 = 3;
+                let obj1 = { value: null, done: true };
+                obj1[0] = tmp26(channel);
+                return obj1;
+              } else {
+                let obj4 = callback(outer2_3[8]);
+                const items = [callback];
+                c3 = 1;
+                c4 = 1;
+                const obj2 = { value: null, done: false };
+                obj2[0] = obj4.stopLurkingAll(items);
+                return obj2;
+              }
+              tmp26 = callback;
+            }
+          } else if (1 === tmp5) {
+            if (arg0 === 1) {
+              c4 = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              c4 = 3;
+              const obj3 = { value: null, done: true };
+              obj3[0] = arg1;
+              return obj3;
+            } else {
+              obj1 = callback2(outer2_3[9]);
+              c3 = 2;
+              c4 = 1;
+              obj4 = { value: null, done: false };
+              obj4[0] = obj1.joinGuild(callback, { lurker: true });
+              return obj4;
+            }
+          } else if (arg0 === 1) {
+            c4 = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            c4 = 3;
+            obj = { value: null, done: true };
+            obj[0] = arg1;
+            return obj;
+          } else {
+            const result = outer2_7.addConditionalChangeListener(() => {
+              const channel = outer2_6.getChannel(closure_1);
+              let flag = null == channel;
+              if (!flag) {
+                outer2_10(channel);
+                outer2_1(table[10]).initialize();
+                callback(channel);
+                flag = false;
+                const obj = outer2_1(table[10]);
+              }
+              return flag;
+            });
+            c4 = 3;
+            return { value: "HermesInternal", done: null };
           }
-          return flag;
-        });
+        } catch (tmp20) {
+          c4 = tmp;
+          throw tmp20;
+        }
       }
-    });
-    return function() {
-      return callback(...arguments);
-    };
-  })());
+    })();
+  });
+  return new Promise(function() {
+    const self = this;
+    const apply = closure_0.apply;
+    if (typeof apply === "unknown") {
+      let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+    } else {
+      applyArgumentsResult = apply(self, arguments);
+    }
+    return applyArgumentsResult;
+  });
 };
 export { connectToStage };
 export { connectAndOpen };
-export { navigateToStage };
+export const navigateToStage = function navigateToStage(arg0, arg1) {
+  importAll(6711).navigateToStage(arg0, arg1);
+};
 export const showUserProfile = function showUserProfile(arg0) {
-  const result = importAll(6690).showPlatformUserProfile(arg0);
+  const result = importAll(6711).showPlatformUserProfile(arg0);
 };

@@ -1,92 +1,98 @@
-// Module ID: 10812
-// Function ID: 83750
-// Name: getSpeakerRowHeight
-// Dependencies: [57, 31, 10813, 4982, 33, 1273, 10814, 4992, 4594, 4998, 44, 10821, 1212, 9995, 10822, 10834, 7655, 10838, 1450, 4698, 2]
+// Module ID: 10836
+// Function ID: 10837
+// Name: StageChannelCallList
+// Dependencies: [32, 19, 10837, 5004, 21, 1297, 10838, 5014, 4616, 5020, 38, 10845, 1236, 10017, 10846, 10858, 7678, 10862, 1474, 4720, 2]
 // Exports: default
 
-// Module 10812 (getSpeakerRowHeight)
+// Module 10836 (StageChannelCallList)
 import _slicedToArray from "_slicedToArray";
-import importAllResult from "result";
+import importAllResult from "getIsScreenLandscape";
 import { MAX_AUDIENCE_ROW_LIMIT } from "MAX_STAGE_TOPIC_LENGTH";
 import jsxProd from "jsxProd";
 import useActiveSpeakerPillScrollHandler from "useActiveSpeakerPillScrollHandler";
 
-let closure_5;
+let c5;
+let c9;
 let closure_6;
-let closure_8;
-let closure_9;
+let metroImportAll;
 const require = arg1;
-function getSpeakerRowHeight(arg0, arg1) {
-  if (arg0 > 0) {
-    return require(10814) /* getSizeStyle */.SPEAKER_TILE_HEIGHTS.THIRD + 8;
-  } else if (1 === arg1) {
-    return require(10814) /* getSizeStyle */.SPEAKER_TILE_HEIGHTS.FULL + 8;
-  } else if (2 === arg1) {
-    return require(10814) /* getSizeStyle */.SPEAKER_TILE_HEIGHTS.HALF + 8;
-  } else {
-    return require(10814) /* getSizeStyle */.SPEAKER_TILE_HEIGHTS.THIRD + 8;
-  }
-}
-({ useActiveSpeakerPillScrollHandler: closure_5, useActiveSpeakerPillState: closure_6 } = require("useActiveSpeakerPillScrollHandler"));
-({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
+let c4 = importAllResult;
+({ useActiveSpeakerPillScrollHandler: c5, useActiveSpeakerPillState: closure_6 } = require("useActiveSpeakerPillScrollHandler"));
+({ jsx: metroImportAll, jsxs: c9 } = jsxProd);
 let obj = { direction: require("Button").CutoutDirection.RIGHT, radius: 13, inset: -6 };
 let closure_11 = { STREAM: 0, [0]: "STREAM", SPEAKER: 1, [1]: "SPEAKER", AUDIENCE: 2, [2]: "AUDIENCE" };
 let closure_12 = importAllResult.memo((channel) => {
   channel = channel.channel;
   const listSections = channel.listSections;
   const rowsBySection = channel.rowsBySection;
+  let first;
+  let importAllResult;
+  let first1;
+  let callback2;
+  let first2;
+  let callback3;
+  let sections;
+  let actualStageSpeakerCount;
+  let stageParticipantsCount;
+  let callback;
+  let itemSize;
+  let mapped;
+  callback2 = undefined;
+  let memo1;
+  let memo2;
   let tmp = first(importAllResult.useState(false), 2);
   first = tmp[0];
-  let tmp4 = first(tmp[1].useState(false), 2);
-  const first1 = tmp4[0];
-  let callback2 = tmp6;
+  importAllResult = tmp3;
+  let tmp4 = first(importAllResult.useState(false), 2);
+  first1 = tmp4[0];
+  callback2 = tmp6;
   const tmp7 = first(callback2(), 2);
-  const first2 = tmp7[0];
-  const callback3 = tmp9;
+  first2 = tmp7[0];
+  callback3 = tmp9;
   listSections(rowsBySection[8])(() => () => {
-    outer1_8(false);
+    callback(false);
   });
   let items = [listSections];
-  const sections = importAllResult.useMemo(() => {
-    let num = 1;
-    if (null != listSections[stageParticipantsCount.STREAM]) {
-      num = tmp;
+  sections = importAllResult.useMemo(() => {
+    let num = listSections[stageParticipantsCount.STREAM];
+    if (num == null) {
+      num = 1;
     }
     const items = [Math.max(num, 1), , ];
-    let num2 = 1;
-    if (null != listSections[stageParticipantsCount.SPEAKER]) {
-      num2 = tmp2;
+    let num2 = tmp[tmp2.SPEAKER];
+    if (num2 == null) {
+      num2 = 1;
     }
     items[1] = Math.max(num2, 1);
     items[2] = listSections[stageParticipantsCount.AUDIENCE];
     return items;
   }, items);
-  const actualStageSpeakerCount = channel(rowsBySection[9]).useActualStageSpeakerCount(channel.id);
+  actualStageSpeakerCount = channel(rowsBySection[9]).useActualStageSpeakerCount(channel.id);
   let obj = channel(rowsBySection[9]);
-  const stageParticipantsCount = channel(rowsBySection[9]).useStageParticipantsCount(channel.id, channel(rowsBySection[7]).StageChannelParticipantNamedIndex.AUDIENCE);
+  stageParticipantsCount = channel(rowsBySection[9]).useStageParticipantsCount(channel.id, channel(rowsBySection[7]).StageChannelParticipantNamedIndex.AUDIENCE);
   let items1 = [actualStageSpeakerCount, stageParticipantsCount];
-  const callback = importAllResult.useCallback((arg0) => {
+  callback = importAllResult.useCallback((arg0) => {
     if (stageParticipantsCount.STREAM === arg0) {
       return 0;
-    } else if (stageParticipantsCount.SPEAKER === arg0) {
-      let num5 = 48;
+    } else if (tmp.SPEAKER === arg0) {
+      let num4 = 48;
       if (0 === actualStageSpeakerCount) {
-        num5 = 0;
+        num4 = 0;
       }
-      return num5;
-    } else if (stageParticipantsCount.AUDIENCE === arg0) {
-      let num3 = 48;
+      return num4;
+    } else if (tmp.AUDIENCE === arg0) {
+      let num2 = 48;
       if (0 === stageParticipantsCount) {
-        num3 = 0;
+        num2 = 0;
       }
-      return num3;
+      return num2;
     } else {
       listSections(rowsBySection[10])(null != arg0, "Section Not Found");
       return 0;
     }
   }, items1);
   const items2 = [callback, rowsBySection, first, first1];
-  const itemSize = importAllResult.useCallback((arg0, arg1) => {
+  itemSize = importAllResult.useCallback((arg0, arg1) => {
     if (null == arg1) {
       return 0;
     } else {
@@ -97,25 +103,34 @@ let closure_12 = importAllResult.memo((channel) => {
       if (stageParticipantsCount.STREAM === arg0) {
         let sum = num;
         if (null != rowsBySection[arg0][arg1]) {
-          sum = itemSize(0, 1) + num;
+          sum = channel(rowsBySection[6]).SPEAKER_TILE_HEIGHTS.FULL + 8 + num;
         }
         return sum;
-      } else if (stageParticipantsCount.SPEAKER === arg0) {
+      } else if (tmp2.SPEAKER === arg0) {
         if (null == rowsBySection[arg0][arg1]) {
           return num;
         } else {
-          let sum1 = num;
-          if (!first1) {
-            sum1 = itemSize(arg1, rowsBySection[arg0][arg1].length) + num;
+          if (arg1 > 0) {
+            let sum1 = channel(rowsBySection[6]).SPEAKER_TILE_HEIGHTS.THIRD + 8;
+          } else if (1 === length) {
+            sum1 = channel(rowsBySection[6]).SPEAKER_TILE_HEIGHTS.FULL + 8;
+          } else if (2 === length) {
+            sum1 = channel(rowsBySection[6]).SPEAKER_TILE_HEIGHTS.HALF + 8;
+          } else {
+            sum1 = channel(rowsBySection[6]).SPEAKER_TILE_HEIGHTS.THIRD + 8;
           }
-          return sum1;
+          let sum2 = num;
+          if (!first1) {
+            sum2 = sum1 + num;
+          }
+          return sum2;
         }
-      } else if (stageParticipantsCount.AUDIENCE === arg0) {
-        let sum2 = num;
+      } else if (tmp2.AUDIENCE === arg0) {
+        let sum3 = num;
         if (!first) {
-          sum2 = 102 + num;
+          sum3 = 102 + num;
         }
-        return sum2;
+        return sum3;
       } else {
         listSections(rowsBySection[10])(null != arg0, "Section Not Found");
         return 0;
@@ -125,49 +140,53 @@ let closure_12 = importAllResult.memo((channel) => {
   let obj2 = channel(rowsBySection[9]);
   const stageParticipants = channel(rowsBySection[9]).useStageParticipants(channel.id, channel(rowsBySection[7]).StageChannelParticipantNamedIndex.SPEAKER);
   const found = stageParticipants.filter((type) => type.type === channel(rowsBySection[7]).StageChannelParticipantTypes.VOICE);
-  const mapped = found.map((user) => user.user);
+  mapped = found.map((user) => user.user);
   const items3 = [tmp[1], first, first1, tmp4[1], actualStageSpeakerCount, stageParticipantsCount, mapped];
   callback2 = importAllResult.useCallback((arg0) => {
     if (stageParticipantsCount.STREAM === arg0) {
       return null;
-    } else if (stageParticipantsCount.AUDIENCE === arg0) {
-      let tmp16 = null;
+    } else if (tmp.AUDIENCE === arg0) {
+      let tmp13 = null;
       if (0 !== stageParticipantsCount) {
-        let obj = {};
+        let obj = { label: null, count: null, onToggleCollapse: null, collapsed: null };
         const intl = channel(rowsBySection[12]).intl;
-        obj.label = intl.string(channel(rowsBySection[12]).t["3foUu5"]);
-        obj.count = stageParticipantsCount;
-        obj.onToggleCollapse = function onToggleCollapse() {
-          return outer1_4(!outer1_3);
+        obj[0] = intl.string(channel(rowsBySection[12]).t["3foUu5"]);
+        obj[1] = tmp12;
+        obj[2] = function onToggleCollapse() {
+          return callback(!_slicedToArray);
         };
-        obj.collapsed = first;
-        tmp16 = tmp9(listSections(rowsBySection[11]), obj);
-        const tmp20 = listSections(rowsBySection[11]);
+        obj[3] = first;
+        tmp13 = _undefined2(listSections(rowsBySection[11]), obj);
+        const tmp17 = listSections(rowsBySection[11]);
       }
-      return tmp16;
-    } else if (stageParticipantsCount.SPEAKER === arg0) {
-      let tmp27Result = null;
+      return tmp13;
+    } else if (tmp.SPEAKER === arg0) {
+      let tmp21Result = null;
       if (0 !== actualStageSpeakerCount) {
-        obj = {};
+        obj = { label: null, count: null, onToggleCollapse: null, collapsed: null, children: null };
         const intl2 = channel(rowsBySection[12]).intl;
-        obj.label = intl2.string(channel(rowsBySection[12]).t.CduOkx);
-        obj.count = actualStageSpeakerCount;
-        obj.onToggleCollapse = function onToggleCollapse() {
-          return outer1_6(!outer1_5);
+        obj[0] = intl2.string(channel(rowsBySection[12]).t.CduOkx);
+        obj[1] = tmp6;
+        obj[2] = function onToggleCollapse() {
+          return callback2(!closure_5);
         };
-        obj.collapsed = first1;
-        let tmp14;
+        obj[3] = first1;
+        tmp21Result = undefined;
         if (first1) {
-          obj = { users: mapped, max: 10, avatarSize: channel(rowsBySection[5]).AvatarSizes.XSMALL_20, cutout: actualStageSpeakerCount };
-          tmp14 = tmp9(listSections(rowsBySection[13]), obj);
-          const tmp10 = listSections(rowsBySection[13]);
+          obj = { users: null, max: 10, avatarSize: null, cutout: null };
+          obj[0] = mapped;
+          obj[2] = tmp25(tmp23[5]).AvatarSizes.XSMALL_20;
+          obj[3] = actualStageSpeakerCount;
+          tmp21Result = tmp21(tmp22(tmp23[13]), obj);
+          const tmp22Result = tmp22(tmp23[13]);
         }
-        obj.children = tmp14;
-        tmp27Result = tmp9(listSections(rowsBySection[11]), obj);
-        const tmp27 = tmp9;
-        const tmp30 = listSections(rowsBySection[11]);
+        obj[4] = tmp21Result;
+        tmp21Result = tmp21(listSections(rowsBySection[11]), obj);
+        tmp22 = listSections;
+        const tmp24 = listSections(rowsBySection[11]);
+        tmp25 = channel;
       }
-      return tmp27Result;
+      return tmp21Result;
     } else {
       listSections(rowsBySection[10])(null != arg0, "Section Not Found");
       return null;
@@ -186,7 +205,7 @@ let closure_12 = importAllResult.memo((channel) => {
   const sectionFooterSize = importAllResult.useCallback((arg0) => {
     if (stageParticipantsCount.SPEAKER === arg0) {
       return 0;
-    } else if (stageParticipantsCount.AUDIENCE === arg0) {
+    } else if (tmp.AUDIENCE === arg0) {
       return 160;
     } else {
       listSections(rowsBySection[10])(null != arg0, "Section Not Found");
@@ -194,57 +213,65 @@ let closure_12 = importAllResult.memo((channel) => {
     }
   }, []);
   const items5 = [sections, itemSize];
-  const renderItem = importAllResult.useCallback((arg0, row) => {
+  const renderItem = importAllResult.useCallback((arg0, arg1) => {
     let tmp = null;
-    if (0 === row) {
+    if (0 === arg1) {
       tmp = callback2(arg0);
     }
-    if (null == rowsBySection[arg0][row]) {
+    if (null == rowsBySection[arg0][arg1]) {
       return tmp;
     } else if (stageParticipantsCount.STREAM === arg0) {
-      let obj = {};
-      obj = { channel, participants: rowsBySection[arg0][row], row };
-      obj.children = tmp9(listSections(rowsBySection[14]), obj);
+      let obj = { children: null };
+      obj = { channel: null, participants: null, row: null };
+      obj[0] = channel;
+      obj[1] = tmp3[arg0][arg1];
+      obj[2] = arg1;
+      obj[0] = _undefined2(listSections(rowsBySection[14]), obj);
       const _HermesInternal3 = HermesInternal;
-      return tmp9(tmp3.Fragment, obj, "stream-" + arg0 + "-" + row);
-    } else if (stageParticipantsCount.SPEAKER === arg0) {
-      const obj1 = {};
+      return _undefined2(_undefined.Fragment, obj, "stream-" + arg0 + "-" + arg1);
+    } else if (tmp31.SPEAKER === arg0) {
       const items = [tmp, ];
       let tmp19 = !first1;
-      if (tmp19) {
-        const obj2 = { channel, participants: rowsBySection[arg0][row], row };
-        tmp19 = tmp9(listSections(rowsBySection[14]), obj2);
+      if (!first1) {
+        const obj1 = { channel: null, participants: null, row: null };
+        obj1[0] = channel;
+        obj1[1] = tmp3[arg0][arg1];
+        obj1[2] = arg1;
+        tmp19 = _undefined2(listSections(rowsBySection[14]), obj1);
       }
+      const obj2 = { children: null };
       items[1] = tmp19;
-      obj1.children = items;
+      obj2[0] = items;
       const _HermesInternal2 = HermesInternal;
-      return sections(tmp3.Fragment, obj1, "speaker-" + arg0 + "-" + row);
-    } else if (stageParticipantsCount.AUDIENCE === arg0) {
-      obj = {};
+      return sections(_undefined.Fragment, obj2, "speaker-" + arg0 + "-" + arg1);
+    } else if (tmp31.AUDIENCE === arg0) {
       const items1 = [tmp, ];
-      tmp9 = !first;
-      if (tmp9) {
-        const obj3 = { channel, participants: rowsBySection[arg0][row] };
-        tmp9 = tmp9(listSections(rowsBySection[15]), obj3);
+      let tmp10 = !first;
+      if (!first) {
+        obj = { channel: null, participants: null };
+        obj[0] = channel;
+        obj[1] = tmp3[arg0][arg1];
+        tmp10 = _undefined2(listSections(rowsBySection[15]), obj);
       }
-      items1[1] = tmp9;
-      obj.children = items1;
+      const obj3 = { children: null };
+      items1[1] = tmp10;
+      obj3[0] = items1;
       const _HermesInternal = HermesInternal;
-      return sections(tmp3.Fragment, obj, "audience-" + arg0 + "-" + row);
+      return sections(_undefined.Fragment, obj3, "audience-" + arg0 + "-" + arg1);
     } else {
       listSections(rowsBySection[10])(null != arg0, "Section Not Found");
       return null;
     }
   }, items4);
-  const memo1 = importAllResult.useMemo(() => {
+  memo1 = importAllResult.useMemo(() => {
     let num = 0;
     if (sections[stageParticipantsCount.STREAM] > 0) {
-      num = itemSize(stageParticipantsCount.STREAM, 0);
+      num = itemSize(tmp.STREAM, 0);
     }
     return num;
   }, items5);
   const items6 = [sections, itemSize];
-  const memo2 = importAllResult.useMemo(() => {
+  memo2 = importAllResult.useMemo(() => {
     let tmp4;
     let num = 0;
     let num2 = 0;
@@ -253,30 +280,30 @@ let closure_12 = importAllResult.memo((channel) => {
       do {
         let tmp = itemSize;
         let tmp2 = stageParticipantsCount;
-        num2 = num2 + itemSize(stageParticipantsCount.SPEAKER, num3);
-        num3 = num3 + 1;
+        num2 = num2 + itemSize(stageParticipantsCount.SPEAKER, num);
+        num = num + 1;
         let tmp3 = sections;
-        num = num2;
+        num3 = num2;
         tmp4 = sections[stageParticipantsCount.SPEAKER];
-      } while (num3 < tmp4);
+      } while (num < tmp4);
     }
-    return num;
+    return num3;
   }, items6);
   const items7 = [tmp7[1], first2, memo2, memo1];
   const onScroll = importAllResult.useCallback((nativeEvent) => {
     const y = nativeEvent.nativeEvent.contentOffset.y;
     const diff = memo2 + memo1 - 60;
+    let tmp2 = first2;
     if (!first2) {
       if (y > diff) {
-        tmp9(true);
+        _undefined2(true);
       }
     }
-    let tmp4 = first2;
-    if (first2) {
-      tmp4 = y < diff;
+    if (tmp2) {
+      tmp2 = y < diff;
     }
-    if (tmp4) {
-      tmp9(false);
+    if (tmp2) {
+      _undefined2(false);
     }
   }, items7);
   return callback3(listSections(rowsBySection[16]), { ref: first(first1(), 1)[0], sections, renderItem, itemSize, renderSectionFooter, sectionFooterSize, onScroll });
@@ -285,25 +312,27 @@ const result = require("useActiveSpeakerPillScrollHandler").fileFinishedImportin
 
 export default function StageChannelCallList(channel) {
   channel = channel.channel;
-  let obj = width(10838);
+  let width;
+  let isScreenLandscape;
+  let obj = width(10862);
   const throttleDurationForChannel = obj.useThrottleDurationForChannel(channel.id);
-  width = isScreenLandscape(1450)().width;
-  isScreenLandscape = width(4698).useIsScreenLandscape();
+  width = isScreenLandscape(1474)().width;
+  isScreenLandscape = width(4720).useIsScreenLandscape();
   const items = [width, isScreenLandscape];
   const memo = importAllResult.useMemo(() => {
-    const obj = {};
     let num = 3;
     if (isScreenLandscape) {
       const _Math = Math;
       const _Math2 = Math;
-      num = Math.max(3, Math.floor(width / width(outer1_2[6]).LANDSCAPE_MAX_TILE_WIDTH));
+      num = Math.max(3, Math.floor(width / tmp2(tmp3[6]).LANDSCAPE_MAX_TILE_WIDTH));
     }
+    const obj = {};
     obj[width(outer1_2[7]).StageChannelParticipantNamedIndex.SPEAKER] = num;
     obj[width(outer1_2[7]).StageChannelParticipantNamedIndex.AUDIENCE] = outer1_7;
     return obj;
   }, items);
-  const obj2 = width(4698);
-  const tmp4 = callback(width(10838).useStageChannelParticipantsListThrottled(channel.id, memo, throttleDurationForChannel, true), 2);
+  const obj2 = width(4720);
+  const tmp4 = callback(width(10862).useStageChannelParticipantsListThrottled(channel.id, memo, throttleDurationForChannel, true), 2);
   obj = { channel, listSections: tmp4[0], rowsBySection: tmp4[1] };
   return callback3(closure_12, obj);
 };

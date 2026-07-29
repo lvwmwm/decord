@@ -1,11 +1,10 @@
 // Module ID: 10732
-// Function ID: 83354
+// Function ID: 10733
 // Name: registerAsset
-// Dependencies: [1217]
+// Dependencies: [1241]
 
 // Module 10732 (registerAsset)
 import registerAsset from "registerAsset";
 
-const obj = { __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "4f5dc667b92ff05a99d9028260a9bf5b", name: "ImageSparkleIcon", type: "png" };
 
-export default registerAsset.registerAsset(obj);
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "9bcd40cb62b748b314b1aa933da9be99", name: "HandRequestDenyIcon", type: "png" });

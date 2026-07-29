@@ -1,31 +1,33 @@
-// Module ID: 8410
-// Function ID: 67077
+// Module ID: 8434
+// Function ID: 8435
 // Name: useTooltipPosition
-// Dependencies: [31, 2]
+// Dependencies: [19, 2]
 // Exports: default
 
-// Module 8410 (useTooltipPosition)
-import result from "result";
+// Module 8434 (useTooltipPosition)
+import noop from "noop";
 
 const result = require("set").fileFinishedImporting("design/components/Tooltip/native/useTooltipPosition.native.tsx");
 
 export default function useTooltipPosition(arg0, arg1, arg2, arg3) {
-  let num = arg4;
   const React = arg0;
   let closure_1 = arg1;
   let closure_2 = arg2;
   let closure_3 = arg3;
+  let num = arg4;
   if (arg4 === undefined) {
     num = 0;
   }
   const items = [arg3, arg0, arg2, arg1, num];
   return React.useMemo(() => {
-    if (null != styles) {
-      if (null != styles2) {
-        const width = styles.width;
-        const width2 = styles2.width;
-        const diff = styles3.y - styles2.y;
-        const diff1 = styles3.x - styles2.x + styles3.width / 2 - width / 2;
+    const size = noop;
+    if (null != noop) {
+      const point = closure_1;
+      if (null != closure_1) {
+        const width = size.width;
+        const width2 = point.width;
+        const diff = styles.y - point.y;
+        const diff1 = styles.x - point.x + styles.width / 2 - width / 2;
         if (diff1 < 12) {
           let num = 12 - diff1;
         } else {
@@ -34,14 +36,15 @@ export default function useTooltipPosition(arg0, arg1, arg2, arg3) {
             num = width2 - diff1 - width - 12;
           }
         }
-        const obj = { tooltipX: diff1 + num };
+        const obj = { tooltipX: null, tooltipY: null, adjustmentX: null };
+        obj[0] = diff1 + num;
         if ("top" === closure_3) {
-          let diff2 = diff - styles.height - num;
+          let diff2 = diff - size.height - num;
         } else {
-          diff2 = diff + styles3.height + num;
+          diff2 = diff + styles.height + num;
         }
-        obj.tooltipY = diff2;
-        obj.adjustmentX = num;
+        obj[1] = diff2;
+        obj[2] = num;
         return obj;
       }
     }

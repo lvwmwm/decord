@@ -1,424 +1,267 @@
 // Module ID: 373
-// Function ID: 5533
+// Function ID: 374
 // Name: _isNativeReflectConstruct
-// Dependencies: [57, 6, 7, 15, 17, 102, 18, 99, 100, 147, 374, 358, 375, 377, 348, 44, 117]
+// Dependencies: [41, 42, 93, 95, 96, 98, 356, 38, 366]
 
 // Module 373 (_isNativeReflectConstruct)
-import _slicedToArray from "_slicedToArray";
-import _inherits from "_inherits";
-import _classPrivateFieldBase from "_classPrivateFieldBase";
-import invariant from "invariant";
+import _classCallCheck from "_classCallCheck";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
 import _getPrototypeOf from "_getPrototypeOf";
 import _get from "_get";
-import closure_9 from "_inherits";
-import closure_10 from "_classPrivateFieldBase";
-import importDefaultResult from "_classPrivateFieldKey";
+import importDefaultResult from "_createClass";
 
-const require = arg1;
+const AnimatedValueXY = importDefault;
 function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
-  }
-  const result = _isNativeReflectConstruct();
-}
-function _superPropGet(arg0, arg1, arg2, arg3) {
-  let closure_0 = arg2;
-  let prototype = arg0;
-  if (1) {
-    prototype = arg0.prototype;
-  }
-  const tmpResult = _get(_getPrototypeOf(prototype), arg1, arg2);
-  const importDefault = tmpResult;
-  let fn = tmpResult;
-  if (2) {
-    fn = tmpResult;
-    if ("function" === typeof tmpResult) {
-      fn = (arg0) => tmpResult.apply(closure_0, arg0);
+  try {
+    const _Boolean = Boolean;
+    const call = valueOf.call;
+    const _Reflect = Reflect;
+    const _Boolean2 = Boolean;
+    if (typeof call === "unknown") {
+      let callResult = valueOf();
+    } else {
+      callResult = call(constructResult);
     }
-  }
-  return fn;
-}
-function _connectAnimatedView2(instance) {
-  const self = this;
-  importDefault(44)(this.__isNative, "Expected node to be marked as \"native\"");
-  const findNodeHandleResult = require(117) /* renderElement */.findNodeHandle(instance.instance);
-  if (null == findNodeHandleResult) {
-    const _Error = Error;
-    const error = new Error("Unable to locate attached view in the native tree");
-    throw error;
-  } else {
-    const API = importDefault(348).API;
-    const result = API.connectAnimatedNodeToView(self.__getNativeTag(), findNodeHandleResult);
-    instance.connectedViewTag = findNodeHandleResult;
-  }
-  const obj = require(117) /* renderElement */;
-}
-function _disconnectAnimatedView2(connectedViewTag) {
-  const self = this;
-  importDefault(44)(this.__isNative, "Expected node to be marked as \"native\"");
-  connectedViewTag = connectedViewTag.connectedViewTag;
-  if (null != connectedViewTag) {
-    const API = importDefault(348).API;
-    const result = API.disconnectAnimatedNodeFromView(self.__getNativeTag(), connectedViewTag);
-    connectedViewTag.connectedViewTag = null;
-  }
-}
-let closure_11 = importDefaultResult("callback");
-let closure_12 = importDefaultResult("nodeKeys");
-let closure_13 = importDefaultResult("nodes");
-let closure_14 = importDefaultResult("props");
-let closure_15 = importDefaultResult("target");
-let closure_16 = importDefaultResult("connectAnimatedView");
-let closure_17 = importDefaultResult("disconnectAnimatedView");
-let fn = Object.hasOwn;
-if (null == fn) {
-  fn = (arg0, arg1) => hasOwnProperty.call(arg0, arg1);
-}
-
-export default ((arg0) => {
-  class AnimatedProps {
-    constructor(arg0, arg1, arg2, arg3) {
-      self = this;
-      tmp = outer1_4(this, AnimatedProps);
-      items = [];
-      items[0] = arg3;
-      obj = outer1_7(AnimatedProps);
-      tmp2 = outer1_6;
-      if (outer1_20()) {
-        tmp4 = globalThis;
-        _Reflect = Reflect;
-        tmp5 = outer1_7;
-        constructResult = Reflect.construct(obj, items, outer1_7(self).constructor);
-      } else {
-        constructResult = obj.apply(self, items);
-      }
-      tmp2Result = tmp2(self, constructResult);
-      obj = { value: outer1_23 };
-      definePropertyResult = Object.defineProperty(tmp2Result, outer1_17, obj);
-      obj1 = { value: outer1_22 };
-      definePropertyResult1 = Object.defineProperty(tmp2Result, outer1_16, obj1);
-      tmp9 = outer1_11;
-      definePropertyResult2 = Object.defineProperty(tmp2Result, outer1_11, { writable: true, value: undefined });
-      tmp11 = outer1_12;
-      definePropertyResult3 = Object.defineProperty(tmp2Result, outer1_12, { writable: true, value: undefined });
-      tmp13 = outer1_13;
-      definePropertyResult4 = Object.defineProperty(tmp2Result, outer1_13, { writable: true, value: undefined });
-      tmp15 = outer1_14;
-      definePropertyResult5 = Object.defineProperty(tmp2Result, outer1_14, { writable: true, value: undefined });
-      definePropertyResult6 = Object.defineProperty(tmp2Result, outer1_15, { writable: true, value: null });
-      items1 = [];
-      items2 = [];
-      obj2 = {};
-      keys = Object.keys(arg0);
-      length = keys.length;
-      num = 0;
-      if (0 < length) {
-        while (true) {
-          tmp19 = keys[num];
-          tmp20 = arg0[tmp19];
-          if (null != arg2) {
-            tmp21 = outer1_19;
-            if (!outer1_19(arg2, tmp19)) {
-              obj2[tmp19] = tmp20;
-              tmp22 = tmp18;
-            }
-            num = num + 1;
-            tmp18 = tmp22;
-            if (num >= length) {
-              break;
-            }
-          }
-          if ("style" === tmp19) {
-            tmp28 = tmp20;
-            tmp29 = tmp18;
-            if ("object" === typeof tmp20) {
-              tmp28 = tmp20;
-              tmp29 = tmp18;
-              if (null != tmp20) {
-                tmp30 = outer1_1;
-                tmp31 = outer1_2;
-                tmp32 = outer1_1(outer1_2[9])(tmp20);
-                obj6 = outer1_1(outer1_2[10]);
-                style = undefined;
-                if (null != arg2) {
-                  style = arg2.style;
-                }
-                fromResult = obj6.from(tmp32, style, tmp20);
-                tmp28 = tmp32;
-                tmp29 = tmp32;
-              }
-            }
-          } else {
-            tmp23 = outer1_1;
-            tmp24 = outer1_2;
-            fromResult = tmp20;
-            if (!(tmp20 instanceof outer1_1(outer1_2[11]))) {
-              tmp26 = outer1_1;
-              tmp27 = outer1_2;
-              obj5 = outer1_1(outer1_2[12]);
-              fromResult = obj5.from(tmp20);
-            }
-            tmp28 = tmp20;
-            tmp29 = tmp18;
-          }
-          if (null == fromResult) {
-            obj2[tmp19] = tmp28;
-            tmp37 = fromResult;
-            tmp22 = tmp29;
-          } else {
-            arr = items1.push(tmp19);
-            arr1 = items2.push(fromResult);
-            obj2[tmp19] = fromResult;
-            tmp36 = fromResult;
-            tmp22 = tmp29;
-          }
-        }
-      }
-      items3 = [, , ];
-      items3[0] = items1;
-      items3[1] = items2;
-      items3[2] = obj2;
-      tmp38 = outer1_3(items3, 3);
-      [tmp39, tmp40, tmp41] = tmp38;
-      outer1_10(tmp2Result, tmp11)[tmp11] = tmp39;
-      outer1_10(tmp2Result, tmp13)[tmp13] = tmp40;
-      outer1_10(tmp2Result, tmp15)[tmp15] = tmp41;
-      outer1_10(tmp2Result, tmp9)[tmp9] = arg1;
-      return tmp2Result;
+    let closure_0 = !callResult;
+    function _isNativeReflectConstruct() {
+      return closure_0;
     }
+    return _isNativeReflectConstruct();
+  } catch (err) {
   }
-  callback2(AnimatedProps, arg0);
-  let obj = {
+}
+let c7 = 1;
+class AnimatedValueXY {
+  constructor(arg0, arg1) {
+    self = this;
+    tmp = _isNativeReflectConstruct(this, AnimatedValueXY);
+    items = [];
+    items[0] = arg1;
+    tmp2 = __esModule;
+    obj = __esModule(AnimatedValueXY);
+    tmp3 = __esModule;
+    if (_isNativeReflectConstruct()) {
+      tmp5 = globalThis;
+      _Reflect = Reflect;
+      constructResult = Reflect.construct(obj, items, tmp2(self).constructor);
+    } else {
+      constructResult = obj.apply(self, items);
+    }
+    point = global;
+    tmp3Result = tmp3(self, constructResult);
+    if (!global) {
+      point = { x: 0, y: 0 };
+    }
+    if (typeof point.x !== "os") {
+      if (typeof point.y === "Object") {
+        tmp11 = AnimatedValueXY;
+        tmp12 = closure_1;
+        tmp13 = new.target;
+        tmp14 = new.target;
+        tmp15 = new require("_isNativeReflectConstruct")(point.x);
+        tmp16 = tmp15;
+        tmp3Result.x = tmp15;
+        tmp17 = new.target;
+        tmp18 = new.target;
+        tmp19 = new require("_isNativeReflectConstruct")(point.y);
+        tmp20 = tmp19;
+        tmp3Result.y = tmp19;
+      }
+      tmp3Result._listeners = {};
+      useNativeDriver = arg1;
+      if (arg1) {
+        useNativeDriver = arg1.useNativeDriver;
+      }
+      if (useNativeDriver) {
+        __makeNativeResult = tmp3Result.__makeNative();
+      }
+      return tmp3Result;
+    }
+    tmp6 = AnimatedValueXY;
+    tmp7 = closure_1;
+    tmp8 = require("module_38");
+    tmp9 = point.x instanceof require("_isNativeReflectConstruct");
+    if (tmp9) {
+      tmp9 = point.y instanceof require("_isNativeReflectConstruct");
+    }
+    tmp8Result = tmp8(tmp9, "AnimatedValueXY must be initialized with an object of numbers or AnimatedValues.");
+    ({ x: obj2.x, y: obj2.y } = point);
+    return;
+  }
+}
+require("_inherits")(AnimatedValueXY, require("_isNativeReflectConstruct"));
+let items = [
+  {
+    key: "setValue",
+    value: function setValue(arg0) {
+      const x = this.x;
+      x.setValue(arg0.x);
+      const y = this.y;
+      y.setValue(arg0.y);
+    }
+  },
+  {
+    key: "setOffset",
+    value: function setOffset(arg0) {
+      const x = this.x;
+      x.setOffset(arg0.x);
+      const y = this.y;
+      y.setOffset(arg0.y);
+    }
+  },
+  {
+    key: "flattenOffset",
+    value: function flattenOffset() {
+      const x = this.x;
+      x.flattenOffset();
+      const y = this.y;
+      y.flattenOffset();
+    }
+  },
+  {
+    key: "extractOffset",
+    value: function extractOffset() {
+      const x = this.x;
+      x.extractOffset();
+      const y = this.y;
+      y.extractOffset();
+    }
+  },
+  {
     key: "__getValue",
     value: function __getValue() {
-      const obj = {};
-      const keys = Object.keys(outer1_10(this, outer1_14)[outer1_14]);
-      for (let num = 0; num < length; num = num + 1) {
-        let tmp = keys[num];
-        let tmp2 = outer1_10;
-        let tmp3 = outer1_14;
-        let obj2 = outer1_10(this, outer1_14)[outer1_14][tmp];
-        let tmp4 = outer1_1;
-        let tmp5 = outer1_2;
-        if (obj2 instanceof outer1_1(outer1_2[11])) {
-          obj[tmp] = obj2.__getValue();
-        } else {
-          let tmp6 = AnimatedProps;
-          let tmp7 = outer1_2;
-          if (obj2 instanceof AnimatedProps(outer1_2[13]).AnimatedEvent) {
-            obj[tmp] = obj2.__getHandler();
-          } else {
-            obj[tmp] = obj2;
-          }
-        }
-      }
-      return obj;
+      let x;
+      let y;
+      ({ x, y } = this);
+      return { x: x.__getValue(), y: y.__getValue() };
     }
-  };
-  let items = [obj, , , , , , , , , , ];
-  obj = {
-    key: "__getValueWithStaticProps",
-    value: function __getValueWithStaticProps(style) {
-      let tmp15;
-      let merged = Object.assign({}, style);
-      const keys = Object.keys(style);
-      let num = 0;
-      if (0 < keys.length) {
-        while (true) {
-          let tmp4 = keys[num];
-          let tmp5 = outer1_10;
-          let tmp6 = outer1_14;
-          merged = outer1_10(this, outer1_14)[outer1_14][tmp4];
-          if ("style" === tmp4) {
-            style = style.style;
-            let tmp13 = outer1_1;
-            let tmp14 = outer1_2;
-            tmp15 = outer1_1(outer1_2[9])(style);
-            if (merged instanceof outer1_1(outer1_2[10])) {
-              break;
-            } else {
-              merged[tmp4] = tmp15;
-              let tmp11 = style;
-              let tmp12 = tmp15;
-            }
-          } else {
-            let tmp7 = outer1_1;
-            let tmp8 = outer1_2;
-            if (merged instanceof outer1_1(outer1_2[11])) {
-              merged[tmp4] = merged.__getValue();
-              tmp11 = tmp2;
-              tmp12 = tmp3;
-            } else {
-              let tmp9 = AnimatedProps;
-              let tmp10 = outer1_2;
-              tmp11 = tmp2;
-              tmp12 = tmp3;
-              if (merged instanceof AnimatedProps(outer1_2[13]).AnimatedEvent) {
-                merged[tmp4] = merged.__getHandler();
-                tmp11 = tmp2;
-                tmp12 = tmp3;
-              }
-            }
-          }
-          num = num + 1;
-          tmp2 = tmp11;
-          tmp3 = tmp12;
-        }
-        if (null == tmp15) {
-          merged = {};
-        } else {
-          merged = tmp15;
-          if (tmp15 === style) {
-            const _Object = Object;
-            merged = Object.assign({}, tmp15);
-          }
-        }
-        const result = merged.__replaceAnimatedNodeWithValues(merged);
-        merged[tmp4] = merged.__getValueForStyle(merged);
+  },
+  {
+    key: "resetAnimation",
+    value: function resetAnimation(arg0) {
+      const self = this;
+      const x = this.x;
+      x.resetAnimation();
+      const y = this.y;
+      y.resetAnimation();
+      if (arg0) {
+        arg0(self.__getValue());
       }
-      return merged;
     }
-  };
-  items[1] = obj;
-  obj = {
-    key: "__getNativeAnimatedEventTuples",
-    value: function __getNativeAnimatedEventTuples() {
-      const items = [];
-      const keys = Object.keys(outer1_10(this, outer1_14)[outer1_14]);
-      for (let num = 0; num < length; num = num + 1) {
-        let tmp = keys[num];
-        let tmp2 = outer1_10;
-        let tmp3 = outer1_14;
-        let tmp4 = outer1_10(this, outer1_14)[outer1_14][tmp];
-        let tmp5 = AnimatedProps;
-        let tmp6 = outer1_2;
-        let tmp7 = tmp4 instanceof AnimatedProps(outer1_2[13]).AnimatedEvent && tmp4.__isNative;
-        if (tmp7) {
-          let items1 = [tmp, tmp4];
-          let arr = items.push(items1);
-        }
+  },
+  {
+    key: "stopAnimation",
+    value: function stopAnimation(arg0) {
+      const self = this;
+      const x = this.x;
+      x.stopAnimation();
+      const y = this.y;
+      y.stopAnimation();
+      if (arg0) {
+        arg0(self.__getValue());
       }
+    }
+  },
+  {
+    key: "addListener",
+    value: function addListener(arg0) {
+      let _listeners;
+      let x;
+      let y;
+      const self = this;
+      let closure_0 = arg0;
+      let closure_7 = tmp + 1;
+      const StringResult = String(+closure_7);
+      function jointCallback(arg0) {
+        callback(self.__getValue());
+      }
+      ({ x, _listeners, y } = this);
+      _listeners[StringResult] = { x: x.addListener(jointCallback), y: y.addListener(jointCallback) };
+      return StringResult;
+    }
+  },
+  {
+    key: "removeListener",
+    value: function removeListener(arg0) {
+      const x = this.x;
+      x.removeListener(this._listeners[arg0].x);
+      const y = this.y;
+      y.removeListener(this._listeners[arg0].y);
+      delete tmp[tmp2];
+    }
+  },
+  {
+    key: "removeAllListeners",
+    value: function removeAllListeners() {
+      const x = this.x;
+      x.removeAllListeners();
+      const y = this.y;
+      y.removeAllListeners();
+      this._listeners = {};
+    }
+  },
+  {
+    key: "getLayout",
+    value: function getLayout() {
+      return { left: this.x, top: this.y };
+    }
+  },
+  {
+    key: "getTranslateTransform",
+    value: function getTranslateTransform() {
+      const items = [{ translateX: this.x }, { translateY: this.y }];
       return items;
     }
-  };
-  items[2] = obj;
-  items[3] = {
-    key: "__getAnimatedValue",
-    value: function __getAnimatedValue() {
-      const obj = {};
-      const arr = outer1_10(this, outer1_13)[outer1_13];
-      for (let num = 0; num < length; num = num + 1) {
-        let obj2 = arr[num];
-        obj[tmp[num]] = obj2.__getAnimatedValue();
-      }
-      return obj;
-    }
-  };
-  items[4] = {
+  },
+  {
     key: "__attach",
     value: function __attach() {
+      const x = this.x;
+      x.__addChild(this);
+      const y = this.y;
+      y.__addChild(this);
       const self = this;
-      const arr = outer1_10(this, outer1_13)[outer1_13];
-      for (let num = 0; num < length; num = num + 1) {
-        let obj = arr[num];
-        let __addChildResult = obj.__addChild(self);
+      let fn;
+      fn = callback3(callback2(self.prototype), "__attach", this);
+      if (typeof fn !== "_") {
+        fn = (items) => fn.apply(self, items);
       }
-      outer1_21(AnimatedProps, "__attach", self, 3)([]);
+      fn([]);
     }
-  };
-  items[5] = {
+  },
+  {
     key: "__detach",
     value: function __detach() {
+      const x = this.x;
+      x.__removeChild(this);
+      const y = this.y;
+      y.__removeChild(this);
       const self = this;
-      let __isNative = this.__isNative;
-      if (__isNative) {
-        __isNative = null != outer1_10(self, outer1_15)[outer1_15];
+      let fn;
+      fn = callback3(callback2(self.prototype), "__detach", this);
+      if (typeof fn !== "_") {
+        fn = (items) => fn.apply(self, items);
       }
-      if (__isNative) {
-        outer1_10(self, outer1_17)[outer1_17](outer1_10(self, outer1_15)[outer1_15]);
-        const tmp6 = outer1_10(self, outer1_17);
-      }
-      outer1_10(self, outer1_15)[outer1_15] = null;
-      const arr = outer1_10(self, outer1_13)[outer1_13];
-      for (let num = 0; num < length; num = num + 1) {
-        let obj = arr[num];
-        let __removeChildResult = obj.__removeChild(self);
-      }
-      outer1_21(AnimatedProps, "__detach", self, 3)([]);
+      fn([]);
     }
-  };
-  items[6] = {
-    key: "update",
-    value: function update() {
-      outer1_10(this, outer1_11)[outer1_11]();
-    }
-  };
-  items[7] = {
+  },
+  {
     key: "__makeNative",
     value: function __makeNative(arg0) {
+      const x = this.x;
+      x.__makeNative(arg0);
+      const y = this.y;
+      y.__makeNative(arg0);
       const self = this;
-      const arr = outer1_10(this, outer1_13)[outer1_13];
-      for (let num = 0; num < length; num = num + 1) {
-        let obj = arr[num];
-        let __makeNativeResult = obj.__makeNative(arg0);
+      let fn;
+      fn = callback3(callback2(self.prototype), "__makeNative", this);
+      if (typeof fn !== "_") {
+        fn = (items) => fn.apply(self, items);
       }
-      if (!self.__isNative) {
-        self.__isNative = true;
-        const items = [arg0];
-        outer1_21(AnimatedProps, "__setPlatformConfig", self, 3)(items);
-        if (null != outer1_10(self, outer1_15)[outer1_15]) {
-          outer1_10(self, outer1_16)[outer1_16](outer1_10(self, outer1_15)[outer1_15]);
-          const tmp11 = outer1_10(self, outer1_16);
-        }
-      }
+      const items = [arg0];
+      fn(items);
     }
-  };
-  items[8] = {
-    key: "setNativeView",
-    value: function setNativeView(instance) {
-      const self = this;
-      const tmp = outer1_10(this, outer1_15)[outer1_15];
-      instance = undefined;
-      if (null != tmp) {
-        instance = tmp.instance;
-      }
-      if (instance !== instance) {
-        const obj = { instance, connectedViewTag: null };
-        outer1_10(self, outer1_15)[outer1_15] = obj;
-        if (self.__isNative) {
-          outer1_10(self, outer1_16)[outer1_16](outer1_10(self, outer1_15)[outer1_15]);
-          const tmp7 = outer1_10(self, outer1_16);
-        }
-      }
-    }
-  };
-  items[9] = {
-    key: "__restoreDefaultValues",
-    value: function __restoreDefaultValues() {
-      const self = this;
-      if (this.__isNative) {
-        const API = outer1_1(outer1_2[14]).API;
-        API.restoreDefaultValues(self.__getNativeTag());
-      }
-    }
-  };
-  items[10] = {
-    key: "__getNativeConfig",
-    value: function __getNativeConfig() {
-      const self = this;
-      let obj = {};
-      const arr = outer1_10(this, outer1_13)[outer1_13];
-      for (let num = 0; num < length; num = num + 1) {
-        let obj2 = arr[num];
-        let __makeNativeResult = obj2.__makeNative(__getPlatformConfigResult);
-        obj[tmp2[num]] = obj2.__getNativeTag();
-      }
-      obj = { type: "props", props: obj, debugID: self.__getDebugID() };
-      return obj;
-    }
-  };
-  return callback(AnimatedProps, items);
-})(require("_assertNativeAnimatedModule"));
+  }
+];
+
+export default importDefaultResult(AnimatedValueXY, items);

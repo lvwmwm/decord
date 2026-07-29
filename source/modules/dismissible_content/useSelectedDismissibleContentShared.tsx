@@ -1,12 +1,12 @@
-// Module ID: 8420
-// Function ID: 67180
+// Module ID: 8444
+// Function ID: 8445
 // Name: useSelectedDismissibleContentShared
-// Dependencies: [31, 1338, 1345, 1339, 1335, 2]
+// Dependencies: [19, 1362, 1369, 1363, 1359, 2]
 // Exports: useSelectedDismissibleContentShared
 
-// Module 8420 (useSelectedDismissibleContentShared)
-import result from "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 8444 (useSelectedDismissibleContentShared)
+import noop from "noop";
+import set from "set";
 import { ContentDismissActionType } from "ContentDismissActionType";
 
 const require = arg1;
@@ -22,37 +22,38 @@ export const useSelectedDismissibleContentShared = function useSelectedDismissib
   let c3;
   let tmp = null != arg0 && !flag;
   if (tmp) {
-    const CONTENT_TYPES_WITH_BYPASS_FATIGUE = _require(1339).CONTENT_TYPES_WITH_BYPASS_FATIGUE;
+    const CONTENT_TYPES_WITH_BYPASS_FATIGUE = _require(1363).CONTENT_TYPES_WITH_BYPASS_FATIGUE;
     tmp = !CONTENT_TYPES_WITH_BYPASS_FATIGUE.has(arg0);
   }
   c3 = tmp;
   const items = [tmp, arg1, arg0, id];
   const effect = React.useEffect(() => () => {
-    let tmp = outer1_3;
-    if (outer1_3) {
-      const lastDismissed = c3.lastDismissed;
+    let tmp = set;
+    if (set) {
+      const lastDismissed = outer1_3.lastDismissed;
       let content;
-      if (null != lastDismissed) {
+      if (lastDismissed != null) {
         content = lastDismissed.content;
       }
-      let tmp6 = content !== outer1_0;
+      let tmp6 = content !== closure_0;
       if (!tmp6) {
-        let result = callback(table[4]).isGuildDismissibleContent(outer1_0);
+        let result = outer1_0(outer1_1[4]).isGuildDismissibleContent(tmp5);
         if (result) {
-          const lastDismissed2 = c3.lastDismissed;
+          const lastDismissed2 = tmp2.lastDismissed;
           let guildId;
-          if (null != lastDismissed2) {
+          if (lastDismissed2 != null) {
             guildId = lastDismissed2.guildId;
           }
-          result = guildId !== outer1_2;
+          result = guildId !== noop;
         }
         tmp6 = result;
-        const obj = callback(table[4]);
+        const obj = outer1_0(outer1_1[4]);
       }
       tmp = tmp6;
+      tmp2 = outer1_3;
     }
     if (tmp) {
-      outer1_1(outer2_4.AUTO_DISMISS, true);
+      callback(outer1_4.AUTO_DISMISS, true);
     }
   }, items);
 };

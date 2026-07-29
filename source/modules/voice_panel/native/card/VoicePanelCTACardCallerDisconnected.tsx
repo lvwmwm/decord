@@ -1,127 +1,150 @@
-// Module ID: 15931
-// Function ID: 122896
-// Name: getSourceFromURI
-// Dependencies: [57, 31, 1194, 1348, 1850, 33, 4165, 689, 10015, 566, 4354, 5550, 5119, 4161, 1212, 2]
+// Module ID: 15966
+// Function ID: 15967
+// Dependencies: [32, 19, 1218, 1372, 1874, 21, 4189, 712, 10037, 589, 4379, 5568, 5141, 4185, 1236, 2]
 
-// Module 15931 (getSourceFromURI)
+// Module 15966
 import _slicedToArray from "_slicedToArray";
-import importAllResult from "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_6 from "_isNativeReflectConstruct";
-import closure_7 from "_isNativeReflectConstruct";
+import importAllResult from "noop";
+import fetchFingerprint from "fetchFingerprint";
+import ensureGuildLoaded from "ensureGuildLoaded";
+import mergeGuildAvatar from "mergeGuildAvatar";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_8;
-let closure_9;
+let c9;
+let metroImportAll;
 const require = arg1;
-function getSourceFromURI(uri) {
-  let tmp = uri;
-  if ("number" !== typeof uri) {
-    const obj = { uri };
-    tmp = obj;
-  }
-  return tmp;
-}
-({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
-let obj = {};
-obj = { width: "100%", height: "100%", alignItems: "center", justifyContent: "center", backgroundColor: require("_createForOfIteratorHelperLoose").colors.VOICE_VIDEO_VIDEO_TILE_BACKGROUND };
-obj.container = obj;
-obj.avatarContainer = { flexDirection: "row", gap: 24 };
-_createForOfIteratorHelperLoose = { width: 80, height: 80, borderRadius: require("_createForOfIteratorHelperLoose").radii.round, overflow: "hidden" };
-obj.avatarWrapper = _createForOfIteratorHelperLoose;
-obj.avatar = { width: 80, height: 80 };
-obj.disconnectedAvatar = { opacity: 0.2 };
-obj.textContainer = { position: "absolute", left: 0, right: 0, bottom: 0, padding: 16, width: "100%" };
-obj.text = { textAlign: "center" };
-let closure_10 = _createForOfIteratorHelperLoose.createStyles(obj);
+let c4 = importAllResult;
+({ jsx: metroImportAll, jsxs: c9 } = jsxProd);
+let obj = { container: null, avatarContainer: null, avatarWrapper: null, avatar: null, disconnectedAvatar: null, textContainer: null, text: null };
+obj = { width: "100%", height: "100%", alignItems: "center", justifyContent: "center", backgroundColor: require("Themes").colors.VOICE_VIDEO_VIDEO_TILE_BACKGROUND };
+obj[0] = obj;
+obj[1] = { flexDirection: "row", gap: 24 };
+createCacheKey = { width: 80, height: 80, borderRadius: require("Themes").radii.round, overflow: "hidden" };
+obj[2] = createCacheKey;
+obj[3] = { width: 80, height: 80 };
+obj[4] = { opacity: 0.2 };
+obj[5] = { position: "absolute", left: 0, right: 0, bottom: 0, padding: 16, width: "100%" };
+obj[6] = { textAlign: "center" };
+let closure_10 = createCacheKey.createStyles(obj);
 const memoResult = importAllResult.memo(function VoicePanelCTACardCallerDisconnected() {
-  let tmp6;
-  let tmp7;
+  let tmp10;
+  let tmp11;
+  let tmp9;
   const channelId = importAllResult.useContext(first(id[8])).channelId;
-  const tmp = callback3();
+  const tmp3 = callback3();
   channel = channel.getChannel(channelId);
   let recipients;
-  if (null != channel) {
+  if (channel != null) {
     recipients = channel.recipients;
   }
-  if (null == recipients) {
+  if (recipients == null) {
     recipients = [];
   }
   first = callback(recipients, 1)[0];
   id = id.getId();
-  let obj = channelId(id[9]);
-  let items = [closure_7];
+  let obj = channelId(tmp2[9]);
+  let items = [mergeGuildAvatar];
   const items1 = [channelId, id, first];
-  const tmp5 = callback(obj.useStateFromStoresArray(items, () => {
+  [tmp9, tmp10, tmp11] = callback(obj.useStateFromStoresArray(items, () => {
     const user = outer1_7.getUser(id);
     const user1 = outer1_7.getUser(first);
     let avatarURL;
-    if (null != user) {
+    if (user != null) {
       avatarURL = user.getAvatarURL(undefined, 80);
     }
     const items = [avatarURL, , ];
     let avatarURL1;
-    if (null != user1) {
+    if (user1 != null) {
       avatarURL1 = user1.getAvatarURL(undefined, 80);
     }
     items[1] = avatarURL1;
     items[2] = first(id[10]).getName(undefined, channelId, user1);
     return items;
   }, items1), 3);
-  [tmp6, tmp7] = tmp5;
-  obj = { style: tmp.container };
-  obj = { style: tmp.avatarContainer };
-  let tmp12 = null != tmp6;
-  const tmp10 = first(id[11]);
-  if (tmp12) {
-    const obj1 = { style: tmp.avatarWrapper };
-    const obj2 = {};
-    const tmp16 = first(id[11]);
-    obj2.source = getSourceFromURI(tmp6);
-    obj2.style = tmp.avatar;
-    obj1.children = callback2(first(id[12]), obj2);
-    tmp12 = callback2(tmp16, obj1);
-    const tmp17 = first(id[12]);
+  obj = { style: tmp3.container, children: null };
+  let tmpResult = tmp(tmp2[11]);
+  obj = { style: tmp3.avatarContainer, children: null };
+  let tmp16Result = null != tmp9;
+  tmpResult = tmp(tmp2[11]);
+  if (tmp16Result) {
+    const obj1 = { style: null, children: null };
+    obj1[0] = tmp3.avatarWrapper;
+    let tmp19 = tmp9;
+    const tmpResult1 = tmp(tmp2[11]);
+    if (typeof tmp9 !== "Object") {
+      const obj2 = { uri: null };
+      obj2[0] = tmp9;
+      tmp19 = obj2;
+    }
+    const obj3 = { source: null, style: null };
+    obj3[0] = tmp19;
+    obj3[1] = tmp3.avatar;
+    obj1[1] = callback2(tmp(tmp2[12]), obj3);
+    tmp16Result = tmp16(tmpResult1, obj1);
+    const tmpResult2 = tmp(tmp2[12]);
   }
-  const items2 = [tmp12, ];
-  let tmp19 = null != tmp7;
-  if (tmp19) {
-    const obj3 = { style: tmp.avatarWrapper };
-    const obj4 = {};
-    const tmp23 = first(id[11]);
-    obj4.source = getSourceFromURI(tmp7);
+  const items2 = [tmp16Result, ];
+  let tmp21Result = null != tmp10;
+  if (tmp21Result) {
+    const obj4 = { style: null, children: null };
+    obj4[0] = tmp3.avatarWrapper;
+    let tmp24 = tmp10;
+    const tmpResult3 = tmp(tmp2[11]);
+    if (typeof tmp10 !== "Object") {
+      const obj5 = { uri: null };
+      obj5[0] = tmp10;
+      tmp24 = obj5;
+    }
+    const obj6 = { source: null, style: null };
+    obj6[0] = tmp24;
     const items3 = [, ];
-    ({ avatar: arr5[0], disconnectedAvatar: arr5[1] } = tmp);
-    obj4.style = items3;
-    obj3.children = callback2(first(id[12]), obj4);
-    tmp19 = callback2(tmp23, obj3);
-    const tmp24 = first(id[12]);
+    ({ avatar: arr5[0], disconnectedAvatar: arr5[1] } = tmp3);
+    obj6[1] = items3;
+    obj4[1] = callback2(tmp(tmp2[12]), obj6);
+    tmp21Result = tmp21(tmpResult3, obj4);
+    const tmpResult4 = tmp(tmp2[12]);
   }
-  items2[1] = tmp19;
-  obj.children = items2;
-  const items4 = [closure_9(first(id[11]), obj), ];
-  const obj5 = { style: tmp.textContainer };
-  const tmp11 = first(id[11]);
-  const tmp26 = closure_9;
-  const obj6 = { style: tmp.text, variant: "heading-sm/semibold", color: "text-overlay-light" };
-  const intl = channelId(id[14]).intl;
-  obj6.children = intl.string(channelId(id[14]).t.WkAgPU);
-  const items5 = [callback2(channelId(id[13]).Text, obj6), ];
-  let tmp28 = null != tmp8;
-  if (tmp28) {
-    const obj7 = { style: tmp.text, variant: "text-xs/medium", color: "text-overlay-light" };
-    const intl2 = channelId(id[14]).intl;
-    const obj8 = { username: tmp8 };
-    obj7.children = intl2.format(channelId(id[14]).t.kXrAqz, obj8);
-    tmp28 = callback2(channelId(id[13]).Text, obj7);
+  items2[1] = tmp21Result;
+  obj[1] = items2;
+  const items4 = [closure_9(tmpResult, obj), ];
+  const obj7 = { style: tmp3.textContainer, children: null };
+  const tmp8 = callback(obj.useStateFromStoresArray(items, () => {
+    const user = outer1_7.getUser(id);
+    const user1 = outer1_7.getUser(first);
+    let avatarURL;
+    if (user != null) {
+      avatarURL = user.getAvatarURL(undefined, 80);
+    }
+    const items = [avatarURL, , ];
+    let avatarURL1;
+    if (user1 != null) {
+      avatarURL1 = user1.getAvatarURL(undefined, 80);
+    }
+    items[1] = avatarURL1;
+    items[2] = first(id[10]).getName(undefined, channelId, user1);
+    return items;
+  }, items1), 3);
+  const obj8 = { style: tmp3.text, variant: "heading-sm/semibold", color: "text-overlay-light", children: null };
+  const intl = tmp7(tmp2[14]).intl;
+  obj8[3] = intl.string(channelId(id[14]).t.WkAgPU);
+  const items5 = [callback2(channelId(id[13]).Text, obj8), ];
+  let tmp26Result = null != tmp11;
+  if (tmp26Result) {
+    const obj9 = { style: null, variant: "text-xs/medium", color: "text-overlay-light", children: null };
+    obj9[0] = tmp3.text;
+    const intl2 = tmp7(tmp2[14]).intl;
+    const obj10 = { username: null };
+    obj10[0] = tmp11;
+    obj9[3] = intl2.format(tmp7(tmp2[14]).t.kXrAqz, obj10);
+    tmp26Result = callback2(tmp7(tmp2[13]).Text, obj9);
   }
-  items5[1] = tmp28;
-  obj5.children = items5;
-  items4[1] = tmp26(first(id[11]), obj5);
-  obj.children = items4;
-  return closure_9(tmp10, obj);
+  items5[1] = tmp26Result;
+  obj7[1] = items5;
+  items4[1] = closure_9(first(id[11]), obj7);
+  obj[1] = items4;
+  return closure_9(tmpResult, obj);
 });
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/voice_panel/native/card/VoicePanelCTACardCallerDisconnected.tsx");
+const result = require("fetchFingerprint").fileFinishedImporting("modules/voice_panel/native/card/VoicePanelCTACardCallerDisconnected.tsx");
 
 export default memoResult;

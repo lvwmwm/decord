@@ -1,30 +1,67 @@
-// Module ID: 6066
-// Function ID: 54224
-// Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 5075, 1194, 1348, 21, 6049, 5112, 2]
+// Module ID: 6084
+// Function ID: 6085
+// Name: handleThreadCreate
+// Dependencies: [5097, 1218, 1372, 5134, 11, 6067, 2]
 
-// Module 6066 (_isNativeReflectConstruct)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_4 from "_isNativeReflectConstruct";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
-import closure_8 from "_isNativeReflectConstruct";
-import closure_9 from "_isNativeReflectConstruct";
-import closure_10 from "_isNativeReflectConstruct";
-import tmp2 from "AutomaticLifecycleManager";
+// Module 6084 (handleThreadCreate)
+import handleThreadCreateOrUpdate from "handleThreadCreateOrUpdate";
+import fetchFingerprint from "fetchFingerprint";
+import ensureGuildLoaded from "ensureGuildLoaded";
+import "initialize";
 
-const require = arg1;
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
+let require = arg1;
+class ForumPostAnalyticsManager extends tmp2 {
+  constructor() {
+    applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
+    closure_0 = applyArgumentsResult;
+    applyArgumentsResult.readStateSnapshots = {};
+    applyArgumentsResult.actions = {
+      CHANNEL_SELECT(arg0) {
+            return applyArgumentsResult.handleChannelSelect(arg0);
+          },
+      THREAD_CREATE(arg0) {
+            return applyArgumentsResult.handleThreadCreate(arg0);
+          }
+    };
+    applyArgumentsResult.handleChannelSelect = function handleChannelSelect(channelId) {
+      channelId = channelId.channelId;
+      if (null != channelId) {
+        const channel = outer1_5.getChannel(channelId);
+        if (tmp2) {
+          applyArgumentsResult.readStateSnapshots = {};
+          applyArgumentsResult.processForumChannel(channel.guild_id, channelId);
+        }
+        tmp2 = null != channel && channel.isForumLikeChannel();
+      }
+    };
+    applyArgumentsResult.processForumChannel = function processForumChannel(guild_id, channelId) {
+      const threadsForParent = outer1_3.getThreadsForParent(guild_id, channelId);
+      const keys = outer1_1(outer1_2[4]).keys(threadsForParent);
+      const item = keys.forEach((arg0) => {
+        const forumPostReadStatesById = outer1_0(outer1_2[5]).getForumPostReadStatesById(arg0);
+        if (null != forumPostReadStatesById) {
+          readStateSnapshots.readStateSnapshots[arg0] = forumPostReadStatesById;
+        }
+      });
+    };
+    applyArgumentsResult.getReadStateSnapshotAnalytics = function getReadStateSnapshotAnalytics(id) {
+      return applyArgumentsResult.readStateSnapshots[id];
+    };
+    return applyArgumentsResult;
   }
-  const result = _isNativeReflectConstruct();
 }
-tmp2 = new tmp2();
-let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/forums/tracking/ForumPostAnalyticsManager.tsx");
+ForumPostAnalyticsManager.prototype["handleThreadCreate"] = function handleThreadCreate(channel) {
+  channel = channel.channel;
+  if (channel.isForumPost()) {
+    const self = this;
+    const obj = { isNew: null, hasUnreads: null };
+    const tmp2 = channel.ownerId !== id.getId();
+    obj[0] = tmp2;
+    obj[1] = tmp2;
+    this.readStateSnapshots[channel.id] = obj;
+  }
+};
+const forumPostAnalyticsManager = new ForumPostAnalyticsManager();
+const result = require("ensureGuildLoaded").fileFinishedImporting("modules/forums/tracking/ForumPostAnalyticsManager.tsx");
 
-export default tmp2;
+export default forumPostAnalyticsManager;

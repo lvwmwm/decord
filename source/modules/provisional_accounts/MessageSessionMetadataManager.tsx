@@ -1,27 +1,58 @@
-// Module ID: 16171
-// Function ID: 125159
-// Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 653, 675, 5112, 2]
+// Module ID: 16206
+// Function ID: 16207
+// Name: handleMessageCreate
+// Dependencies: [676, 5134, 698, 2]
 
-// Module 16171 (_isNativeReflectConstruct)
-import expandLocation from "expandLocation";
-import AutomaticLifecycleManager from "AutomaticLifecycleManager";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
+// Module 16206 (handleMessageCreate)
 import { AnalyticEvents } from "ME";
-import tmp2 from "AutomaticLifecycleManager";
+import "initialize";
 
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
+class MessageSessionMetadataManager extends tmp2 {
+  constructor() {
+    applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
+    closure_0 = applyArgumentsResult;
+    applyArgumentsResult.actions = {
+      MESSAGE_CREATE(arg0) {
+            return applyArgumentsResult.handleMessageCreate(arg0);
+          },
+      MESSAGE_UPDATE(arg0) {
+            return applyArgumentsResult.handleMessageUpdate(arg0);
+          }
+    };
+    return applyArgumentsResult;
   }
-  const result = _isNativeReflectConstruct();
 }
-tmp2 = new tmp2();
-let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/provisional_accounts/MessageSessionMetadataManager.tsx");
+const prototype = MessageSessionMetadataManager.prototype;
+prototype["handleMessageCreate"] = function handleMessageCreate(message) {
+  const result = this._trackIfSessionMetadataExists(message.message);
+};
+prototype["handleMessageUpdate"] = function handleMessageUpdate(message) {
+  const result = this._trackIfSessionMetadataExists(message.message);
+};
+prototype["_getAuthorizedApplicationIds"] = function _getAuthorizedApplicationIds(session_metadata) {
+  try {
+    return session_metadata.authorized_application_ids;
+  } catch (err) {
+    return null;
+  }
+};
+prototype["_trackIfSessionMetadataExists"] = function _trackIfSessionMetadataExists(message) {
+  let author;
+  if (null != message.session_metadata) {
+    let obj = importDefault(698);
+    obj = { message_id: null, channel_id: null, author_id: null, authorized_application_ids: null };
+    ({ id: obj2[0], channel_id: obj2[1], author } = message);
+    let id;
+    if (author != null) {
+      id = author.id;
+    }
+    const self = this;
+    obj[2] = id;
+    obj[3] = this._getAuthorizedApplicationIds(message.session_metadata);
+    obj.track(AnalyticEvents.MESSAGE_DISPATCH_SESSION_METADATA_FOUND, obj);
+  }
+};
+const messageSessionMetadataManager = new MessageSessionMetadataManager();
+let result = require("expandEventProperties").fileFinishedImporting("modules/provisional_accounts/MessageSessionMetadataManager.tsx");
 
-export default tmp2;
+export default messageSessionMetadataManager;

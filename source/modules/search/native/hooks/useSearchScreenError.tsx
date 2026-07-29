@@ -1,76 +1,79 @@
-// Module ID: 15487
-// Function ID: 118011
+// Module ID: 15521
+// Function ID: 15522
 // Name: useMessageSearchErrorScreen
-// Dependencies: [31, 5857, 10081, 9077, 566, 10082, 1212, 3866, 8322, 2]
+// Dependencies: [19, 5875, 10102, 9101, 589, 10103, 1236, 3890, 8346, 2]
 // Exports: useMessageSearchErrorScreen, useMessageTabCountsErrorText
 
-// Module 15487 (useMessageSearchErrorScreen)
-import result from "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_5 from "_isNativeReflectConstruct";
+// Module 15521 (useMessageSearchErrorScreen)
+import noop from "noop";
+import handleReaction from "handleReaction";
+import prototype from "prototype";
 import { SEARCH_MESSAGE_TAB_SENTINEL as closure_6 } from "SearchAutocompleteSelectAnalyticsActions";
 
 const require = arg1;
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/search/native/hooks/useSearchScreenError.tsx");
+const result = require("prototype").fileFinishedImporting("modules/search/native/hooks/useSearchScreenError.tsx");
 
 export const useMessageSearchErrorScreen = function useMessageSearchErrorScreen(arg0) {
   let hasListItems;
   let importDefault;
   let require;
   ({ searchContext: require, tab: importDefault, hasListItems } = arg0);
+  let stateFromStores;
   let anyErrorMessage;
-  let _isNativeReflectConstruct;
+  let handleReaction;
   let obj = require(stateFromStores[4]);
-  const items = [closure_5, _isNativeReflectConstruct];
+  const items = [prototype, handleReaction];
   stateFromStores = obj.useStateFromStores(items, () => {
     const searchResultsQuery = outer1_5.getSearchResultsQuery(closure_0);
     return ref.getError(outer1_0(stateFromStores[5]).getSearchTabFetchId(closure_0, closure_1, searchResultsQuery));
   });
   anyErrorMessage = undefined;
-  if (null != stateFromStores) {
+  if (stateFromStores != null) {
     anyErrorMessage = stateFromStores.getAnyErrorMessage();
   }
-  if (null == anyErrorMessage) {
-    const intl = require(stateFromStores[6]).intl;
-    anyErrorMessage = intl.string(require(stateFromStores[6]).t.uvDZBZ);
+  if (anyErrorMessage == null) {
+    const intl = tmp(tmp2[6]).intl;
+    anyErrorMessage = intl.string(tmp(tmp2[6]).t.uvDZBZ);
   }
-  _isNativeReflectConstruct = anyErrorMessage.useRef(null);
+  handleReaction = anyErrorMessage.useRef(null);
   const items1 = [stateFromStores, anyErrorMessage];
-  obj = { hasError: null != stateFromStores, errorText: anyErrorMessage };
+  obj = { hasError: null != stateFromStores, errorText: anyErrorMessage, isErrorFullscreen: null, isErrorToast: null, showErrorToast: null };
   let tmp5 = null != stateFromStores;
   const callback = anyErrorMessage.useCallback(() => {
     if (stateFromStores !== ref.current) {
       let obj = outer1_1(stateFromStores[7]);
-      obj = { key: "SEARCH_ERROR_TOAST", icon: outer1_1(stateFromStores[8]), content: anyErrorMessage };
+      obj = { key: "SEARCH_ERROR_TOAST", icon: null, content: null };
+      obj[1] = outer1_1(stateFromStores[8]);
+      obj[2] = anyErrorMessage;
       obj.open(obj);
-      ref.current = stateFromStores;
+      tmp2.current = tmp;
     }
   }, items1);
   if (tmp5) {
     tmp5 = !hasListItems;
   }
-  obj.isErrorFullscreen = tmp5;
-  obj.isErrorToast = null != stateFromStores && hasListItems;
-  obj.showErrorToast = callback;
+  obj[2] = tmp5;
+  obj[3] = null != stateFromStores && hasListItems;
+  obj[4] = callback;
   return obj;
 };
 export const useMessageTabCountsErrorText = function useMessageTabCountsErrorText(searchContext) {
   searchContext = searchContext.searchContext;
-  const items = [closure_5, _isNativeReflectConstruct];
-  return searchContext(566).useStateFromStores(items, () => {
+  const items = [prototype, handleReaction];
+  return searchContext(589).useStateFromStores(items, () => {
     const searchResultsQuery = outer1_5.getSearchResultsQuery(searchContext);
     const searchTabFetchId = searchContext(outer1_2[5]).getSearchTabFetchId(searchContext, outer1_6, searchResultsQuery);
     if (outer1_4.getIsInitialFetchComplete(searchTabFetchId)) {
-      if (null != outer1_4.getTotalCount(searchTabFetchId)) {
+      if (null != obj2.getTotalCount(searchTabFetchId)) {
         return null;
       } else {
-        const error = outer1_4.getError(searchTabFetchId);
+        const error = obj2.getError(searchTabFetchId);
         let tmp5 = null;
         if (null != error) {
           let anyErrorMessage = error.getAnyErrorMessage();
-          if (null == anyErrorMessage) {
-            const intl = searchContext(outer1_2[6]).intl;
-            anyErrorMessage = intl.string(searchContext(outer1_2[6]).t.uvDZBZ);
+          if (anyErrorMessage == null) {
+            const intl = tmp2(tmp3[6]).intl;
+            anyErrorMessage = intl.string(tmp2(tmp3[6]).t.uvDZBZ);
           }
           tmp5 = anyErrorMessage;
         }

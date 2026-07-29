@@ -1,31 +1,31 @@
-// Module ID: 11626
-// Function ID: 90199
+// Module ID: 11650
+// Function ID: 11651
 // Name: useGameServerGetExpiringEntitlements
-// Dependencies: [31, 4073, 566, 11561, 2]
+// Dependencies: [19, 4097, 589, 11585, 2]
 // Exports: default
 
-// Module 11626 (useGameServerGetExpiringEntitlements)
-import result from "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 11650 (useGameServerGetExpiringEntitlements)
+import noop from "noop";
+import handleGameServerInstanceCreated from "handleGameServerInstanceCreated";
 
 const require = arg1;
 const result = require("initialize").fileFinishedImporting("modules/premium/game_server/hooks/useGameServerGetExpiringEntitlements.tsx");
 
 export default function useGameServerGetExpiringEntitlements(arg0) {
   const _require = arg0;
-  let entitlements;
-  let items = [_isNativeReflectConstruct];
+  let items = [handleGameServerInstanceCreated];
   stateFromStores = _require(stateFromStores[2]).useStateFromStores(items, () => outer1_3.getStateForGuild(closure_0));
-  if (null != stateFromStores) {
+  let entitlements;
+  if (stateFromStores != null) {
     entitlements = stateFromStores.entitlements;
   }
   const items1 = [entitlements];
   return React.useMemo(() => {
     let entitlements;
-    if (null != stateFromStores) {
+    if (stateFromStores != null) {
       entitlements = stateFromStores.entitlements;
     }
-    if (null == entitlements) {
+    if (entitlements == null) {
       entitlements = {};
     }
     const values = Object.values(entitlements);

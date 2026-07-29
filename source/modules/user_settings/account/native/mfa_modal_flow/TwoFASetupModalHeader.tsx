@@ -1,50 +1,49 @@
-// Module ID: 13794
-// Function ID: 105698
+// Module ID: 13815
+// Function ID: 13816
 // Name: PageMarker
-// Dependencies: [31, 27, 33, 4165, 689, 2]
+// Dependencies: [19, 17, 21, 4189, 712, 2]
 
-// Module 13794 (PageMarker)
+// Module 13815 (PageMarker)
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import importAllResult from "result";
+import createCacheKey from "createCacheKey";
+import importAllResult from "noop";
 
 let closure_1;
-let closure_2;
-({ jsx: closure_1, jsxs: closure_2 } = jsxProd);
-let obj = { pageMarkerContainer: { flex: 1, alignItems: "center", justifyContent: "space-between", flexDirection: "row" } };
-obj = { width: 14, height: 14, borderRadius: 7, borderWidth: 1, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_MOD_STRONG, borderColor: require("_createForOfIteratorHelperLoose").colors.BORDER_SUBTLE };
-obj.circleIcon = obj;
-_createForOfIteratorHelperLoose = { position: "absolute", left: 0, right: 0, top: "50%", bottom: "50%", height: 1, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BORDER_STRONG };
-obj.horizontalLine = _createForOfIteratorHelperLoose;
-obj.filledCircle = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.TEXT_BRAND, borderColor: require("_createForOfIteratorHelperLoose").colors.BORDER_SUBTLE };
-let closure_3 = _createForOfIteratorHelperLoose.createStyles(obj);
-const obj2 = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.TEXT_BRAND, borderColor: require("_createForOfIteratorHelperLoose").colors.BORDER_SUBTLE };
+let obj1;
+({ jsx: closure_1, jsxs: obj1 } = jsxProd);
+let obj = { pageMarkerContainer: { flex: 1, alignItems: "center", justifyContent: "space-between", flexDirection: "row" }, circleIcon: null, horizontalLine: null, filledCircle: null };
+obj = { width: 14, height: 14, borderRadius: 7, borderWidth: 1, backgroundColor: require("Themes").colors.BACKGROUND_MOD_STRONG, borderColor: require("Themes").colors.BORDER_SUBTLE };
+obj[1] = obj;
+createCacheKey = { position: "absolute", left: 0, right: 0, top: "50%", bottom: "50%", height: 1, backgroundColor: require("Themes").colors.BORDER_STRONG };
+obj[2] = createCacheKey;
+obj[3] = { backgroundColor: require("Themes").colors.TEXT_BRAND, borderColor: require("Themes").colors.BORDER_SUBTLE };
+let closure_3 = createCacheKey.createStyles(obj);
+const obj2 = { backgroundColor: require("Themes").colors.TEXT_BRAND, borderColor: require("Themes").colors.BORDER_SUBTLE };
 const memoResult = importAllResult.memo((arg0) => {
   let View;
   let numMarkers;
   ({ numMarkers, currentPage: View } = arg0);
+  let callback;
   const tmp = callback3();
-  const callback = tmp;
+  callback = tmp;
   const ArrayResult = Array(numMarkers);
-  let obj = { style: items };
+  let obj = { style: items, children: null };
   items = [tmp.pageMarkerContainer, ];
   obj = { width: 20 * numMarkers };
   items[1] = obj;
   const mapped = Array(numMarkers).fill(undefined).map((arg0, arg1) => {
-    const obj = {};
-    const items = [tmp.circleIcon, ];
+    const style = [_undefined.circleIcon, ];
     const sum = arg1 + 1;
     let filledCircle = closure_0 === sum;
     if (filledCircle) {
-      filledCircle = tmp.filledCircle;
+      filledCircle = _undefined.filledCircle;
     }
-    items[1] = filledCircle;
-    obj.style = items;
-    return tmp(outer1_0, obj, sum);
+    style[1] = filledCircle;
+    return _undefined(outer1_0, { style }, sum);
   });
   const items1 = [callback(View, { style: tmp.horizontalLine }), mapped];
-  obj.children = items1;
+  obj[1] = items1;
   return callback2(View, obj);
 });
 const result = require("jsxProd").fileFinishedImporting("modules/user_settings/account/native/mfa_modal_flow/TwoFASetupModalHeader.tsx");

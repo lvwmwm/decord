@@ -1,25 +1,12 @@
-// Module ID: 4058
-// Function ID: 33605
-// Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 3817, 566, 686, 2]
+// Module ID: 4082
+// Function ID: 4083
+// Name: handleGuildBoostsUpdate
+// Dependencies: [3841, 589, 709, 2]
 
-// Module 4058 (_isNativeReflectConstruct)
-import initialize from "initialize";
-import dispatcher from "dispatcher";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 4082 (handleGuildBoostsUpdate)
+import reset from "reset";
+import { Store } from "initialize";
 
-function _isNativeReflectConstruct() {
-  let initialize = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return initialize;
-  }
-  const result = _isNativeReflectConstruct();
-}
 function handleGuildBoostsUpdate(guildBoostSlot) {
   guildBoostSlot = guildBoostSlot.guildBoostSlot;
   const obj = {};
@@ -27,105 +14,69 @@ function handleGuildBoostsUpdate(guildBoostSlot) {
   obj[guildBoostSlot.id] = guildBoostSlot;
 }
 function handleSubscriptionStoreUpdate() {
-  let length;
   const obj = {};
   const values = Object.values(obj);
-  let num = 0;
-  if (0 < values.length) {
-    do {
-      let tmp = values[num];
-      obj[tmp.id] = tmp;
-      let tmp2 = subscriptionById;
-      tmp.subscription = subscriptionById.getSubscriptionById(tmp.subscriptionId);
-      num = num + 1;
-      length = values.length;
-    } while (num < length);
+  for (const item10010 of values) {
+    obj[item10010.id] = item10010;
+    let tmp2 = subscriptionById;
+    item10010.subscription = subscriptionById.getSubscriptionById(item10010.subscriptionId);
+    continue;
   }
 }
-let c6 = false;
-let c7 = false;
-let closure_8 = {};
-let tmp2 = ((Store) => {
-  class GuildBoostSlotStore {
-    constructor() {
-      self = this;
-      tmp = GuildBoostSlotStore(this, GuildBoostSlotStore);
-      obj = outer1_3(GuildBoostSlotStore);
-      tmp2 = outer1_2;
-      if (outer1_9()) {
-        tmp6 = globalThis;
-        _Reflect = Reflect;
-        tmp7 = outer1_3;
-        tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, outer1_3(self).constructor);
-      } else {
-        tmp3 = arguments;
-        tmp4 = arguments;
-        constructResult = obj(...arguments);
-      }
-      return tmp2(self, constructResult);
-    }
-  }
-  callback2(GuildBoostSlotStore, Store);
-  let obj = {
-    key: "initialize",
-    value() {
-      const items = [outer1_5];
-      this.syncWith(items, outer1_10);
-    }
-  };
-  let items = [obj, , , , ];
-  obj = {
-    key: "hasFetched",
-    get() {
-      return outer1_6;
-    }
-  };
-  items[1] = obj;
-  obj = {
-    key: "isFetching",
-    get() {
-      return outer1_7;
-    }
-  };
-  items[2] = obj;
-  items[3] = {
-    key: "boostSlots",
-    get() {
-      return outer1_8;
-    }
-  };
-  items[4] = {
-    key: "getGuildBoostSlot",
-    value(arg0) {
-      return outer1_8[arg0];
-    }
-  };
-  return callback(GuildBoostSlotStore, items);
-})(require("initialize").Store);
-tmp2.displayName = "GuildBoostSlotStore";
-tmp2 = new tmp2(require("dispatcher"), {
+let c1 = false;
+let c2 = false;
+let closure_3 = {};
+class GuildBoostSlotStore extends Store {
+}
+const prototype = GuildBoostSlotStore.prototype;
+prototype["initialize"] = function initialize() {
+  const items = [reset];
+  this.syncWith(items, handleSubscriptionStoreUpdate);
+};
+Object.defineProperty(prototype, "hasFetched", {
+  get: function hasFetched() {
+    return c1;
+  },
+  set: undefined
+});
+Object.defineProperty(prototype, "isFetching", {
+  get: function isFetching() {
+    return c2;
+  },
+  set: undefined
+});
+Object.defineProperty(prototype, "boostSlots", {
+  get: function boostSlots() {
+    return closure_3;
+  },
+  set: undefined
+});
+prototype["getGuildBoostSlot"] = function getGuildBoostSlot(arg0) {
+  return table[arg0];
+};
+GuildBoostSlotStore.displayName = "GuildBoostSlotStore";
+const guildBoostSlotStore = new GuildBoostSlotStore(require("dispatcher"), {
   GUILD_BOOST_SLOTS_FETCH: function handleGuildBoostsFetch() {
-    let c7 = true;
+    let c2 = true;
   },
   GUILD_BOOST_SLOTS_FETCH_SUCCESS: function handleGuildBoostsFetchSuccess(guildBoostSlots) {
     guildBoostSlots = guildBoostSlots.guildBoostSlots;
-    let closure_8 = {};
+    let closure_3 = {};
     const item = guildBoostSlots.forEach((id) => {
-      closure_8[id.id] = id;
+      closure_3[id.id] = id;
     });
-    let c7 = false;
-    let c6 = true;
+    let c2 = false;
+    let c1 = true;
   },
   GUILD_BOOST_SLOT_UPDATE_SUCCESS: handleGuildBoostsUpdate,
   GUILD_BOOST_SLOT_CREATE: handleGuildBoostsUpdate,
   GUILD_BOOST_SLOT_UPDATE: handleGuildBoostsUpdate,
   LOGOUT: function handleLogout() {
-    let closure_8 = {};
-    let c6 = false;
-    let c7 = false;
+    let closure_3 = {};
+    let c1 = false;
+    let c2 = false;
   }
 });
-let result = require("_possibleConstructorReturn").fileFinishedImporting("stores/billing/GuildBoostSlotStore.tsx");
+const result = require("dispatcher").fileFinishedImporting("stores/billing/GuildBoostSlotStore.tsx");
 
-export default tmp2;
+export default guildBoostSlotStore;

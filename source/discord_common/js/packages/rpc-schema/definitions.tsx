@@ -1,385 +1,403 @@
-// Module ID: 13513
-// Function ID: 103707
-// Name: Activity
-// Dependencies: [13514, 8150, 2]
+// Module ID: 13536
+// Function ID: 13537
+// Name: response
+// Dependencies: [13537, 8174, 2]
 
-// Module 13513 (Activity)
-let obj = {
-  request: undefined,
-  response(string) {
-    const obj = { image_url: string.string().required() };
-    return obj;
-  }
+// Module 13536 (response)
+let obj = { request: "Array", response: 0 };
+obj[1] = function response(string) {
+  const obj = { image_url: null };
+  obj[0] = string.string().required();
+  return obj;
 };
-obj = {
-  response: undefined,
-  request(string) {
-    const obj = {};
-    const stringResult = string.string();
-    obj.mediaUrl = string.string().required().max(1024);
-    return obj;
-  }
+obj = { response: "Array", request: 0 };
+obj[1] = function request(string) {
+  const obj = { mediaUrl: null };
+  const stringResult = string.string();
+  obj[0] = string.string().required().max(1024);
+  return obj;
 };
 obj = {
   request(string) {
-    const obj = {};
+    const obj = { access_token: null };
     const stringResult = string.string();
-    obj.access_token = string.string().allow(null).optional();
+    obj[0] = string.string().allow(null).optional();
     return obj;
   },
   response(string) {
-    let obj = { access_token: string.string().required() };
-    obj = {};
+    let obj = { access_token: null, user: null, scopes: null, expires: null, application: null };
+    obj[0] = string.string().required();
+    obj = { username: null, discriminator: null, id: null, avatar: null, public_flags: null, global_name: null };
     const stringResult = string.string();
-    obj.username = string.string().required();
+    obj[0] = string.string().required();
     const stringResult1 = string.string();
-    obj.discriminator = string.string().required();
+    obj[1] = string.string().required();
     const stringResult2 = string.string();
-    obj.id = string.string().required();
+    obj[2] = string.string().required();
     const stringResult3 = string.string();
-    obj.avatar = string.string().allow(null);
+    obj[3] = string.string().allow(null);
     const stringResult4 = string.string();
-    obj.public_flags = string.number().required();
+    obj[4] = string.number().required();
     const numberResult = string.number();
-    obj.global_name = string.string().allow(null);
+    obj[5] = string.string().allow(null);
     let objectResult = string.object(obj);
-    obj.user = objectResult.required();
+    obj[1] = objectResult.required();
     let arrayResult = string.array();
     const stringResult5 = string.string();
     const stringResult6 = string.string();
-    const items = [...require(13514) /* RPCCommands */.joiEnum(require(8150) /* set */.OAuth2Scopes)];
-    const obj12 = require(13514) /* RPCCommands */;
-    obj.scopes = arrayResult.items(stringResult6.valid.apply(items)).required();
+    const items = [...require(13537) /* RPCCommands */.joiEnum(require(8174) /* set */.OAuth2Scopes)];
+    const obj12 = require(13537) /* RPCCommands */;
+    obj[2] = arrayResult.items(stringResult6.valid.apply(items)).required();
     const itemsResult = arrayResult.items(stringResult6.valid.apply(items));
-    obj.expires = string.string().required();
-    obj = {};
+    obj[3] = string.string().required();
+    obj = { description: null, icon: null, id: null, rpc_origins: null, name: null };
     const stringResult7 = string.string();
-    obj.description = string.string().required();
+    obj[0] = string.string().required();
     const stringResult8 = string.string();
-    obj.icon = string.string().allow(null);
+    obj[1] = string.string().allow(null);
     const stringResult9 = string.string();
-    obj.id = string.string().required();
+    obj[2] = string.string().required();
     arrayResult = string.array();
     const stringResult10 = string.string();
-    obj.rpc_origins = arrayResult.items(string.string()).optional();
+    obj[3] = arrayResult.items(string.string()).optional();
     const itemsResult1 = arrayResult.items(string.string());
-    obj.name = string.string().required();
+    obj[4] = string.string().required();
     objectResult = string.object(obj);
-    obj.application = objectResult.required();
+    obj[4] = objectResult.required();
     return obj;
   }
 };
-function Activity(string) {
-  let obj = { session_id: string.string().optional() };
-  const stringResult = string.string();
-  obj.type = string.number().optional();
-  const numberResult = string.number();
-  obj.name = string.string().required();
-  const stringResult1 = string.string();
-  const stringResult2 = string.string();
-  obj.url = string.string().allow(null).optional();
-  const allowResult = string.string().allow(null);
-  obj.application_id = string.string().optional();
-  const stringResult3 = string.string();
-  obj.status_display_type = string.number().optional();
-  const numberResult1 = string.number();
-  obj.state = string.string().optional();
-  const stringResult4 = string.string();
-  obj.state_url = string.string().optional();
-  const stringResult5 = string.string();
-  obj.details = string.string().optional();
-  const stringResult6 = string.string();
-  obj.details_url = string.string().optional();
-  obj = {};
-  const stringResult7 = string.string();
-  obj.name = string.string().required();
-  const stringResult8 = string.string();
-  const stringResult9 = string.string();
-  obj.id = string.string().allow(null).optional();
-  const allowResult1 = string.string().allow(null);
-  const boolResult = string.bool();
-  obj.animated = string.bool().optional().allow(null);
-  let objectResult = string.object(obj);
-  const optionalResult = string.bool().optional();
-  obj.emoji = objectResult.allow(null).optional();
-  obj = {};
+let obj1 = { request: "Array", response: 0 };
+obj1[1] = function response(array) {
+  let obj = { participants: null };
+  const arrayResult = array.array();
+  obj = { nickname: null };
+  const obj3 = User(array);
+  obj[0] = array.string().description("Server nickname. Not unique.");
+  const keys = obj3.keys(obj);
+  const stringResult = array.string();
+  obj[0] = arrayResult.items(keys.required()).required();
+  return obj;
+};
+let obj4 = { request: "Array", response: 0 };
+obj4[1] = function response(array) {
+  let arrayResult = array.array();
+  let obj = { type: null, user: null, presence: null };
+  const requiredResult = arrayResult.required();
+  obj[0] = array.number().required();
+  let obj4 = User(array);
+  obj[1] = obj4.required();
+  obj = { status: null, activity: null };
+  const numberResult = array.number();
+  obj[0] = array.string().required();
+  if (typeof Activity !== "find") {
+    HermesBuiltin.throwTypeError();
+  }
+  const obj1 = { relationships: null };
+  const obj2 = { session_id: null, type: null, name: null, url: null, application_id: null, status_display_type: null, state: null, state_url: null, details: null, details_url: null, emoji: null, assets: null, timestamps: null, party: null, secrets: null, sync_id: null, created_at: null, instance: null, flags: null, metadata: null, platform: null, supported_platforms: null, buttons: null, hangStatus: null };
+  const stringResult = array.string();
+  obj2[0] = array.string().optional();
+  const stringResult1 = array.string();
+  obj2[1] = array.number().optional();
+  const numberResult1 = array.number();
+  obj2[2] = array.string().required();
+  const stringResult2 = array.string();
+  const stringResult3 = array.string();
+  obj2[3] = array.string().allow(null).optional();
+  const allowResult = array.string().allow(null);
+  obj2[4] = array.string().optional();
+  const stringResult4 = array.string();
+  obj2[5] = array.number().optional();
+  const numberResult2 = array.number();
+  obj2[6] = array.string().optional();
+  const stringResult5 = array.string();
+  obj2[7] = array.string().optional();
+  const stringResult6 = array.string();
+  obj2[8] = array.string().optional();
+  const stringResult7 = array.string();
+  obj2[9] = array.string().optional();
+  const obj3 = { name: null, id: null, animated: null };
+  const stringResult8 = array.string();
+  obj3[0] = array.string().required();
+  const stringResult9 = array.string();
+  const stringResult10 = array.string();
+  obj3[1] = array.string().allow(null).optional();
+  const allowResult1 = array.string().allow(null);
+  const boolResult = array.bool();
+  obj3[2] = array.bool().optional().allow(null);
+  let objectResult = array.object(obj3);
+  const optionalResult = array.bool().optional();
+  obj2[10] = objectResult.allow(null).optional();
+  obj4 = { large_image: null, large_text: null, large_url: null, small_image: null, small_text: null, small_url: null };
   const allowResult2 = objectResult.allow(null);
-  obj.large_image = string.string().optional();
-  const stringResult10 = string.string();
-  obj.large_text = string.string().optional();
-  const stringResult11 = string.string();
-  obj.large_url = string.string().optional();
-  const stringResult12 = string.string();
-  obj.small_image = string.string().optional();
-  const stringResult13 = string.string();
-  obj.small_text = string.string().optional();
-  const stringResult14 = string.string();
-  obj.small_url = string.string().optional();
-  objectResult = string.object(obj);
-  obj.assets = objectResult.optional();
-  const obj1 = {};
-  const stringResult15 = string.string();
-  obj1.start = string.number().optional();
-  const numberResult2 = string.number();
-  obj1.end = string.number().optional();
-  const numberResult3 = string.number();
-  obj.timestamps = string.object(obj1).optional();
-  const obj2 = {};
-  const objectResult1 = string.object(obj1);
-  obj2.id = string.string().optional();
-  let arrayResult = string.array();
-  const stringResult16 = string.string();
-  const itemsResult = arrayResult.items(string.number());
-  obj2.size = arrayResult.items(string.number()).length(2).optional();
-  const lengthResult = arrayResult.items(string.number()).length(2);
-  obj2.privacy = string.number().optional();
-  const numberResult4 = string.number();
-  obj.party = string.object(obj2).optional();
-  const obj3 = {};
-  const objectResult2 = string.object(obj2);
-  obj3.match = string.string().optional();
-  const stringResult17 = string.string();
-  obj3.join = string.string().optional();
-  const stringResult18 = string.string();
-  obj.secrets = string.object(obj3).optional();
-  const objectResult3 = string.object(obj3);
-  obj.sync_id = string.string().optional();
-  const stringResult19 = string.string();
-  obj.created_at = string.number().optional();
-  const numberResult5 = string.number();
-  obj.instance = string.bool().optional();
-  const boolResult1 = string.bool();
-  obj.flags = string.number().optional();
-  const numberResult6 = string.number();
-  obj.metadata = string.object().optional();
-  const objectResult4 = string.object();
-  obj.platform = string.string().optional();
-  arrayResult = string.array();
-  const stringResult20 = string.string();
-  obj.supported_platforms = arrayResult.items(string.string()).optional();
-  const itemsResult1 = arrayResult.items(string.string());
-  const arrayResult1 = string.array();
-  obj.buttons = string.array().items(string.string()).optional();
-  const itemsResult2 = string.array().items(string.string());
-  obj.hangStatus = string.string().optional();
-  return string.object(obj);
+  obj4[0] = array.string().optional();
+  const stringResult11 = array.string();
+  obj4[1] = array.string().optional();
+  const stringResult12 = array.string();
+  obj4[2] = array.string().optional();
+  const stringResult13 = array.string();
+  obj4[3] = array.string().optional();
+  const stringResult14 = array.string();
+  obj4[4] = array.string().optional();
+  const stringResult15 = array.string();
+  obj4[5] = array.string().optional();
+  objectResult = array.object(obj4);
+  obj2[11] = objectResult.optional();
+  const obj5 = { start: null, end: null };
+  const stringResult16 = array.string();
+  obj5[0] = array.number().optional();
+  const numberResult3 = array.number();
+  obj5[1] = array.number().optional();
+  const numberResult4 = array.number();
+  obj2[12] = array.object(obj5).optional();
+  const obj6 = { id: null, size: null, privacy: null };
+  const objectResult1 = array.object(obj5);
+  obj6[0] = array.string().optional();
+  arrayResult = array.array();
+  const stringResult17 = array.string();
+  const itemsResult = arrayResult.items(array.number());
+  obj6[1] = arrayResult.items(array.number()).length(2).optional();
+  const lengthResult = arrayResult.items(array.number()).length(2);
+  obj6[2] = array.number().optional();
+  const numberResult5 = array.number();
+  obj2[13] = array.object(obj6).optional();
+  const obj7 = { match: null, join: null };
+  const objectResult2 = array.object(obj6);
+  obj7[0] = array.string().optional();
+  const stringResult18 = array.string();
+  obj7[1] = array.string().optional();
+  const stringResult19 = array.string();
+  obj2[14] = array.object(obj7).optional();
+  const objectResult3 = array.object(obj7);
+  obj2[15] = array.string().optional();
+  const stringResult20 = array.string();
+  obj2[16] = array.number().optional();
+  const numberResult6 = array.number();
+  obj2[17] = array.bool().optional();
+  const boolResult1 = array.bool();
+  obj2[18] = array.number().optional();
+  const numberResult7 = array.number();
+  obj2[19] = array.object().optional();
+  const objectResult4 = array.object();
+  obj2[20] = array.string().optional();
+  const stringResult21 = array.string();
+  const arrayResult1 = array.array();
+  obj2[21] = array.array().items(array.string()).optional();
+  const itemsResult1 = array.array().items(array.string());
+  const arrayResult2 = array.array();
+  obj2[22] = array.array().items(array.string()).optional();
+  const itemsResult2 = array.array().items(array.string());
+  obj2[23] = array.string().optional();
+  const stringResult22 = array.string();
+  obj[1] = array.object(obj2).allow(null);
+  obj[2] = array.object(obj);
+  obj1[0] = requiredResult.items(array.object(obj));
+  return obj1;
+};
+const obj9 = { request: "Array", response: 0 };
+obj9[1] = function response(string) {
+  const obj = { quest_id: null, enrolled_at: null, completed_at: null, external_cta_url: null };
+  obj[0] = string.string().required();
+  const stringResult = string.string();
+  const stringResult1 = string.string();
+  obj[1] = string.string().allow(null).optional();
+  const allowResult = string.string().allow(null);
+  const stringResult2 = string.string();
+  obj[2] = string.string().allow(null).optional();
+  const allowResult1 = string.string().allow(null);
+  obj[3] = string.string().required();
+  return obj;
+};
+const obj10 = { request: "Array", response: 0 };
+obj10[1] = function response(string) {
+  const obj = { ticket: null };
+  obj[0] = string.string().required();
+  return obj;
+};
+function Activity(arg0) {
+
 }
 function User(string) {
-  let obj = {};
+  let obj = { id: null, username: null, global_name: null, discriminator: null, avatar: null, flags: null, bot: null, avatar_decoration_data: null, premium_type: null };
   const stringResult = string.string();
-  obj.id = string.string().required().description("User ID");
+  obj[0] = string.string().required().description("User ID");
   const requiredResult = string.string().required();
-  obj.username = string.string().required();
+  obj[1] = string.string().required();
   const stringResult1 = string.string();
   const stringResult2 = string.string();
-  obj.global_name = string.string().allow(null).description("Global Discord name. Not unique.");
+  obj[2] = string.string().allow(null).description("Global Discord name. Not unique.");
   const allowResult = string.string().allow(null);
   const stringResult3 = string.string();
-  obj.discriminator = string.string().required().description("Global name discriminator. Will be 0 if a unique username");
+  obj[3] = string.string().required().description("Global name discriminator. Will be 0 if a unique username");
   const requiredResult1 = string.string().required();
   const stringResult4 = string.string();
-  obj.avatar = string.string().allow(null).description("User Avatar ID");
+  obj[4] = string.string().allow(null).description("User Avatar ID");
   const allowResult1 = string.string().allow(null);
   const numberResult = string.number();
-  obj.flags = string.number().required().description("Public user flags");
+  obj[5] = string.number().required().description("Public user flags");
   const requiredResult2 = string.number().required();
   const boolResult = string.bool();
-  obj.bot = string.bool().required().description("If a bot user.");
-  obj = {};
+  obj[6] = string.bool().required().description("If a bot user.");
+  obj = { asset: null, skuId: null, expiresAt: null };
   const requiredResult3 = string.bool().required();
-  obj.asset = string.string().allow(null);
-  obj.skuId = string.string();
-  obj.expiresAt = string.number();
+  obj[0] = string.string().allow(null);
+  obj[1] = string.string();
+  obj[2] = string.number();
   let objectResult = string.object(obj);
   const stringResult5 = string.string();
-  obj.avatar_decoration_data = objectResult.allow(null).description("Details about avatar decoration");
+  obj[7] = objectResult.allow(null).description("Details about avatar decoration");
   const allowResult2 = objectResult.allow(null);
   const numberResult1 = string.number();
-  obj.premium_type = string.number().allow(null).description("Nitro premium type");
+  obj[8] = string.number().allow(null).description("Nitro premium type");
   objectResult = string.object(obj);
   return objectResult.description("Discord User");
 }
-function ActionRowComponent(number) {
-  const obj = {};
-  const numberResult = number.number();
-  obj.type = number.number().valid(1).required();
-  const validResult = number.number().valid(1);
-  const arrayResult = number.array();
-  obj.components = number.array().max(5).items(ButtonComponent(number));
-  return number.object(obj);
+function ActionRowComponent(arg0) {
+
 }
-function ButtonComponent(number) {
-  const obj = {};
-  const numberResult = number.number();
-  obj.type = number.number().valid(2).required();
-  const validResult = number.number().valid(2);
-  const numberResult1 = number.number();
-  const minResult = number.number().min(1);
-  obj.style = number.number().min(1).max(5).required();
-  const maxResult = number.number().min(1).max(5);
-  const stringResult = number.string();
-  obj.label = number.string().max(80).description("Text that appears on the button");
-  const maxResult1 = number.string().max(80);
-  const stringResult1 = number.string();
-  obj.custom_id = number.string().max(100).description("Developer-defined identifier for the button; max 100 characters");
-  return number.object(obj);
+function ButtonComponent(arg0) {
+
 }
 const result = require("set").fileFinishedImporting("../discord_common/js/packages/rpc-schema/definitions.tsx");
 
 export const RPCCommandSchemas = {
-  [require(13514).RPCCommand.INITIATE_IMAGE_UPLOAD]: obj,
-  [require(13514).RPCCommand.OPEN_SHARE_MOMENT_DIALOG]: obj,
-  [require(13514).RPCCommand.AUTHENTICATE]: obj,
-  [require(13514).RPCCommand.GET_ACTIVITY_INSTANCE_CONNECTED_PARTICIPANTS]: {
-    request: undefined,
-    response(array) {
-      let obj = {};
-      const arrayResult = array.array();
-      obj = {};
-      const obj3 = User(array);
-      obj.nickname = array.string().description("Server nickname. Not unique.");
-      const keys = obj3.keys(obj);
-      const stringResult = array.string();
-      obj.participants = arrayResult.items(keys.required()).required();
-      return obj;
-    }
-  },
-  [require(13514).RPCCommand.SHARE_INTERACTION]: {
+  [require(13537).RPCCommand.INITIATE_IMAGE_UPLOAD]: obj,
+  [require(13537).RPCCommand.OPEN_SHARE_MOMENT_DIALOG]: obj,
+  [require(13537).RPCCommand.AUTHENTICATE]: obj,
+  [require(13537).RPCCommand.GET_ACTIVITY_INSTANCE_CONNECTED_PARTICIPANTS]: obj1,
+  [require(13537).RPCCommand.SHARE_INTERACTION]: {
     request(string) {
-      let obj = { command: string.string().required() };
+      let obj = { command: null, options: null, content: null, require_launch_channel: null, preview_image: null, components: null, pid: null };
+      obj[0] = string.string().required();
       let arrayResult = string.array();
-      obj = {};
+      obj = { name: null, value: null };
       const stringResult = string.string();
-      obj.name = string.string().required();
+      obj[0] = string.string().required();
       const stringResult1 = string.string();
-      obj.value = string.string().required();
-      obj.options = arrayResult.items(string.object(obj));
+      obj[1] = string.string().required();
+      obj[1] = arrayResult.items(string.object(obj));
       const stringResult2 = string.string();
-      obj.content = string.string().max(2000);
-      obj.require_launch_channel = string.boolean();
-      obj = {};
+      obj[2] = string.string().max(2000);
+      obj[3] = string.boolean();
+      obj = { height: null, url: null, width: null };
       const stringResult3 = string.string();
-      obj.height = string.number().required();
+      obj[0] = string.number().required();
       const numberResult = string.number();
-      obj.url = string.string().required();
+      obj[1] = string.string().required();
       const stringResult4 = string.string();
-      obj.width = string.number().required();
-      obj.preview_image = string.object(obj);
+      obj[2] = string.number().required();
+      obj[4] = string.object(obj);
       arrayResult = string.array();
-      obj.components = arrayResult.items(ActionRowComponent(string));
-      obj.pid = string.number();
+      if (typeof ActionRowComponent !== "find") {
+        HermesBuiltin.throwTypeError();
+      }
+      const obj1 = { type: null, components: null };
+      const numberResult1 = string.number();
+      let validResult = string.number().valid(1);
+      obj1[0] = validResult.required();
+      const numberResult2 = string.number();
+      const arrayResult1 = string.array();
+      if (typeof ButtonComponent !== "find") {
+        HermesBuiltin.throwTypeError();
+      }
+      const obj2 = { type: null, style: null, label: null, custom_id: null };
+      const maxResult = string.array().max(5);
+      validResult = string.number().valid(2);
+      obj2[0] = validResult.required();
+      const numberResult3 = string.number();
+      const numberResult4 = string.number();
+      const minResult = string.number().min(1);
+      obj2[1] = string.number().min(1).max(5).required();
+      const maxResult1 = string.number().min(1).max(5);
+      const stringResult5 = string.string();
+      obj2[2] = string.string().max(80).description("Text that appears on the button");
+      const maxResult2 = string.string().max(80);
+      const stringResult6 = string.string();
+      obj2[3] = string.string().max(100).description("Developer-defined identifier for the button; max 100 characters");
+      obj1[1] = maxResult.items(string.object(obj2));
+      obj[5] = arrayResult.items(string.object(obj1));
+      obj[6] = string.number();
       return obj;
     },
     response(boolean) {
-      const obj = { success: boolean.boolean().required() };
+      const obj = { success: null };
+      obj[0] = boolean.boolean().required();
       return obj;
     }
   },
-  [require(13514).RPCCommand.SHARE_LINK]: {
+  [require(13537).RPCCommand.SHARE_LINK]: {
     request(string) {
-      const obj = { custom_id: string.string().max(64) };
+      const obj = { custom_id: null, message: null, link_id: null };
+      obj[0] = string.string().max(64);
       const stringResult = string.string();
       const stringResult1 = string.string();
-      obj.message = string.string().max(1000).required();
+      obj[1] = string.string().max(1000).required();
       const maxResult = string.string().max(1000);
-      obj.link_id = string.string().max(64);
+      obj[2] = string.string().max(64);
       return obj;
     },
     response(boolean) {
-      const obj = { success: boolean.boolean().required() };
+      const obj = { success: null, didCopyLink: null, didSendMessage: null };
+      obj[0] = boolean.boolean().required();
       const booleanResult = boolean.boolean();
-      obj.didCopyLink = boolean.boolean().required();
+      obj[1] = boolean.boolean().required();
       const booleanResult1 = boolean.boolean();
-      obj.didSendMessage = boolean.boolean().required();
+      obj[2] = boolean.boolean().required();
       return obj;
     }
   },
-  [require(13514).RPCCommand.GET_RELATIONSHIPS]: {
-    request: undefined,
-    response(array) {
-      let obj = {};
-      const arrayResult = array.array();
-      obj = {};
-      const requiredResult = array.array().required();
-      obj.type = array.number().required();
-      const numberResult = array.number();
-      obj.user = User(array).required();
-      obj = {};
-      const obj6 = User(array);
-      obj.status = array.string().required();
-      const stringResult = array.string();
-      obj.activity = Activity(array).allow(null);
-      obj.presence = array.object(obj);
-      obj.relationships = requiredResult.items(array.object(obj));
-      return obj;
-    }
-  },
-  [require(13514).RPCCommand.INVITE_USER_EMBEDDED]: {
+  [require(13537).RPCCommand.GET_RELATIONSHIPS]: obj4,
+  [require(13537).RPCCommand.INVITE_USER_EMBEDDED]: {
     request(string) {
-      const obj = { user_id: string.string().required() };
+      const obj = { user_id: null, content: null };
+      obj[0] = string.string().required();
       const stringResult = string.string();
       const stringResult1 = string.string();
-      obj.content = string.string().min(0).max(1024);
+      obj[1] = string.string().min(0).max(1024);
       return obj;
     },
-    response: undefined
+    response: "r"
   },
-  [require(13514).RPCCommand.GET_USER]: {
+  [require(13537).RPCCommand.GET_USER]: {
     request(string) {
-      const obj = {};
+      const obj = { id: null };
       const stringResult = string.string();
-      obj.id = string.string().max(64).required();
+      obj[0] = string.string().max(64).required();
       return obj;
     },
     response(arg0) {
       return User(arg0).allow(null);
     }
   },
-  [require(13514).RPCCommand.GET_QUEST_ENROLLMENT_STATUS]: {
+  [require(13537).RPCCommand.GET_QUEST_ENROLLMENT_STATUS]: {
     request(string) {
-      const obj = { quest_id: string.string().required() };
+      const obj = { quest_id: null };
+      obj[0] = string.string().required();
       return obj;
     },
     response(string) {
-      const obj = { quest_id: string.string().required() };
+      const obj = { quest_id: null, is_enrolled: null, enrolled_at: null };
+      obj[0] = string.string().required();
       const stringResult = string.string();
-      obj.is_enrolled = string.boolean().required();
+      obj[1] = string.boolean().required();
       const booleanResult = string.boolean();
       const stringResult1 = string.string();
-      obj.enrolled_at = string.string().allow(null).optional();
+      obj[2] = string.string().allow(null).optional();
       return obj;
     }
   },
-  [require(13514).RPCCommand.QUEST_START_TIMER]: {
+  [require(13537).RPCCommand.QUEST_START_TIMER]: {
     request(string) {
-      const obj = { quest_id: string.string().required() };
+      const obj = { quest_id: null };
+      obj[0] = string.string().required();
       return obj;
     },
     response(boolean) {
-      const obj = { success: boolean.boolean().required() };
+      const obj = { success: null };
+      obj[0] = boolean.boolean().required();
       return obj;
     }
   },
-  [require(13514).RPCCommand.GET_QUEST]: {
-    request: undefined,
-    response(string) {
-      const obj = { quest_id: string.string().required() };
-      const stringResult = string.string();
-      const stringResult1 = string.string();
-      obj.enrolled_at = string.string().allow(null).optional();
-      const allowResult = string.string().allow(null);
-      const stringResult2 = string.string();
-      obj.completed_at = string.string().allow(null).optional();
-      const allowResult1 = string.string().allow(null);
-      obj.external_cta_url = string.string().required();
-      return obj;
-    }
-  },
-  [require(13514).RPCCommand.REQUEST_PROXY_TICKET_REFRESH]: {
-    request: undefined,
-    response(string) {
-      const obj = { ticket: string.string().required() };
-      return obj;
-    }
-  }
+  [require(13537).RPCCommand.GET_QUEST]: obj9,
+  [require(13537).RPCCommand.REQUEST_PROXY_TICKET_REFRESH]: obj10
 };

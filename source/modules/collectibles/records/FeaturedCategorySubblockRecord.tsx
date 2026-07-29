@@ -1,44 +1,39 @@
-// Module ID: 5813
-// Function ID: 50868
-// Name: FeaturedCategorySubblockRecord
-// Dependencies: [6, 7, 5814, 2]
+// Module ID: 5831
+// Function ID: 5832
+// Name: fromServer
+// Dependencies: [5832, 2]
 
-// Module 5813 (FeaturedCategorySubblockRecord)
-import _classCallCheck from "_classCallCheck";
-import _defineProperties from "_defineProperties";
-
-const require = arg1;
-const tmp2 = (() => {
-  class FeaturedCategorySubblockRecord {
-    constructor(arg0) {
-      self = this;
-      tmp = outer1_2(this, FeaturedCategorySubblockRecord);
-      this.type = FeaturedCategorySubblockRecord(outer1_1[2]).FeaturedSubblockType.CATEGORY;
-      ({ category_store_listing_id: this.categoryStoreListingId, name: this.name } = arg0);
-      date = null;
-      if (null != arg0.unpublished_at) {
-        tmp3 = globalThis;
-        _Date = Date;
-        prototype = Date.prototype;
-        tmp4 = new.target;
-        tmp5 = new.target;
-        date = new Date(arg0.unpublished_at);
-      }
-      self.unpublishedAt = date;
-      ({ body_text: self.bodyText, banner_text_color: self.bannerTextColor, banner_url: self.bannerUrl, asset_url: self.assetUrl } = arg0);
-      return;
-    }
+// Module 5831 (fromServer)
+let prototype;
+prototype = function FeaturedCategorySubblockRecord(unpublished_at) {
+  const obj = Object.create(new.target.prototype);
+  obj.type = require(5832) /* FeaturedSubblockType */.FeaturedSubblockType.CATEGORY;
+  ({ category_store_listing_id: tmp.categoryStoreListingId, name: tmp.name } = unpublished_at);
+  let date = null;
+  if (null != unpublished_at.unpublished_at) {
+    const _Date = Date;
+    date = new Date(unpublished_at.unpublished_at);
   }
-  const items = [
-    {
-      key: "fromServer",
-      value(unpublished_at) {
-        return new FeaturedCategorySubblockRecord(unpublished_at);
-      }
-    }
-  ];
-  return callback(FeaturedCategorySubblockRecord, null, items);
-})();
-const result = require("FeaturedSubblockType").fileFinishedImporting("modules/collectibles/records/FeaturedCategorySubblockRecord.tsx");
+  obj.unpublishedAt = date;
+  ({ body_text: tmp.bodyText, banner_text_color: tmp.bannerTextColor, banner_url: tmp.bannerUrl, asset_url: tmp.assetUrl } = unpublished_at);
+  return obj;
+}.prototype;
+prototype["fromServer"] = function fromServer(unpublished_at) {
+  if (typeof prototype !== "find") {
+    HermesBuiltin.throwTypeError();
+  }
+  const obj = Object.create(prototype.prototype);
+  obj.type = require(5832) /* FeaturedSubblockType */.FeaturedSubblockType.CATEGORY;
+  ({ category_store_listing_id: tmp2.categoryStoreListingId, name: tmp2.name } = unpublished_at);
+  let date = null;
+  if (null != unpublished_at.unpublished_at) {
+    const _Date = Date;
+    date = new Date(unpublished_at.unpublished_at);
+  }
+  obj.unpublishedAt = date;
+  ({ body_text: tmp2.bodyText, banner_text_color: tmp2.bannerTextColor, banner_url: tmp2.bannerUrl, asset_url: tmp2.assetUrl } = unpublished_at);
+  return obj;
+};
+const result = require("set").fileFinishedImporting("modules/collectibles/records/FeaturedCategorySubblockRecord.tsx");
 
-export const FeaturedCategorySubblockRecord = tmp2;
+export const FeaturedCategorySubblockRecord = prototype;

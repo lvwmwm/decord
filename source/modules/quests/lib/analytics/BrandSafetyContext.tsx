@@ -1,142 +1,135 @@
-// Module ID: 8423
-// Function ID: 67206
+// Module ID: 8447
+// Function ID: 8448
 // Name: getBrandSafetyContext
-// Dependencies: [8424, 1348, 1838, 3802, 3982, 1850, 8425, 5964, 1392, 4355, 2]
+// Dependencies: [8448, 1372, 1862, 3826, 4006, 1874, 8449, 5983, 1416, 4380, 2]
 // Exports: getBrandSafetyContext
 
-// Module 8423 (getBrandSafetyContext)
+// Module 8447 (getBrandSafetyContext)
 import SidebarVisibilityMethodStore from "SidebarVisibilityMethodStore";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import closure_7 from "_isNativeReflectConstruct";
-import closure_8 from "_isNativeReflectConstruct";
-import closure_9 from "_isNativeReflectConstruct";
+import ensureGuildLoaded from "ensureGuildLoaded";
+import createGuildRecordFromRust from "createGuildRecordFromRust";
+import upsertRelationship from "upsertRelationship";
+import handleConnectionOpen from "handleConnectionOpen";
+import mergeGuildAvatar from "mergeGuildAvatar";
 import { MAX_BRAND_SAFETY_CONTEXT_ARRAY_LEN as closure_10 } from "MAX_BRAND_SAFETY_CONTEXT_ARRAY_LEN";
 
-let closure_3;
-let closure_4;
-({ getVisibleChannelIdsMethod: closure_3, getVisibleGuildIdsMethod: closure_4 } = SidebarVisibilityMethodStore);
-let result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/quests/lib/analytics/BrandSafetyContext.tsx");
+let c3;
+let c4;
+({ getVisibleChannelIdsMethod: c3, getVisibleGuildIdsMethod: c4 } = SidebarVisibilityMethodStore);
+let result = require("createGuildRecordFromRust").fileFinishedImporting("modules/quests/lib/analytics/BrandSafetyContext.tsx");
 
 export const getBrandSafetyContext = function getBrandSafetyContext(questContent) {
-  let obj = require(5964) /* _createForOfIteratorHelperLoose */;
+  let obj = _require(5983);
   const result = obj.isBillableQuestContent(questContent);
-  let obj1 = require(5964) /* _createForOfIteratorHelperLoose */;
+  let obj1 = _require(5983);
   const adContext = obj1.getAdContext(questContent);
-  let tmp3 = callback2();
-  require = tmp3;
-  const tmp4 = callback();
-  if (null != adContext) {
-    if (adContext.is_campaign_ias_enabled) {
-      if (result) {
-        if (undefined !== tmp3) {
-          if (undefined !== tmp4) {
-            guildId = guildId.getGuildId();
-            let guild = null;
-            if (null != guildId) {
-              guild = guild.getGuild(guildId);
-            }
-            obj = {
-              guilds: (() => {
-                          if (undefined === tmp3) {
-                            return [];
-                          } else {
-                            tmp3 = outer1_6.getGuilds();
-                            const mapped = tmp3().map((arg0) => {
-                              if (undefined === table[arg0]) {
-                                return null;
-                              } else {
-                                let obj = {};
-                                ({ id: obj3.id, name: obj3.name } = tmp);
-                                if (null !== tmp.description) {
-                                  obj.description = tmp.description;
-                                }
-                                let tmp2 = null;
-                                if (null !== tmp.icon) {
-                                  obj = outer2_1(outer2_2[8]);
-                                  obj = {};
-                                  ({ id: obj2.id, icon: obj2.icon } = tmp);
-                                  obj.size = 44;
-                                  obj.canAnimate = true;
-                                  const guildIconURL = obj.getGuildIconURL(obj);
-                                  tmp2 = null;
-                                  if (null != guildIconURL) {
-                                    tmp2 = guildIconURL;
-                                  }
-                                }
-                                if (null !== tmp2) {
-                                  obj.icon_url = tmp2;
-                                }
-                                return obj;
-                              }
-                            });
-                            return mapped.filter((arg0) => null !== arg0);
-                          }
-                        })()
-            };
-            if (!tmp20) {
-              if (null != guild) {
-                let mapped = tmp4().map((channelId) => {
-                  const channel = outer1_5.getChannel(channelId);
-                  if (undefined === channel) {
-                    return null;
-                  } else {
-                    const obj = { id: channel.id, name: outer1_2(outer1_2[9]).computeChannelName(channel, outer1_9, outer1_7) };
-                    if (channel.topic.length > 0) {
-                      obj.channel_topic = channel.topic;
-                    }
-                    return obj;
-                  }
-                });
-                let found = mapped.filter((arg0) => null !== arg0);
-                const tmp4Result = tmp4();
-              }
-              obj.channels = found;
-              if (null != guildId) {
-                obj.selected_guild_id = guildId;
-              }
-              let banner;
-              if (null != guild) {
-                banner = guild.banner;
-              }
-              let tmp10 = null;
-              if (null !== banner) {
-                let banner1;
-                if (null != guild) {
-                  banner1 = guild.banner;
-                }
-                tmp10 = null;
-                if (undefined !== banner1) {
-                  obj = {};
-                  ({ id: obj5.id, banner: obj5.banner } = guild);
-                  const guildBannerURL = importDefault(1392).getGuildBannerURL(obj, true);
-                  tmp10 = null;
-                  if (null != guildBannerURL) {
-                    tmp10 = guildBannerURL;
-                  }
-                  const obj4 = importDefault(1392);
-                }
-              }
-              if (null !== tmp10) {
-                obj.selected_guild_banner_url = tmp10;
-              }
-              if (obj.guilds.length > closure_10) {
-                const guilds = obj.guilds;
-                obj.guilds = guilds.slice(0, closure_10);
-                obj.truncated = true;
-              }
-              if (obj.channels.length > closure_10) {
-                const channels = obj.channels;
-                obj.channels = channels.slice(0, closure_10);
-                obj.truncated = true;
-              }
-              obj1 = {};
-              const _JSON = JSON;
-              obj1.brand_safety_context = JSON.stringify(obj);
-              return obj1;
-            }
-            found = [];
+  const tmp4 = callback2();
+  const tmp5 = callback();
+  let prop;
+  if (adContext != null) {
+    prop = adContext.is_campaign_ias_enabled;
+  }
+  if (prop) {
+    if (result) {
+      if (undefined !== tmp4) {
+        if (undefined !== tmp5) {
+          guildId = guildId.getGuildId();
+          let guild = null;
+          if (null != guildId) {
+            guild = store.getGuild(guildId);
           }
+          if (tmp7) {
+            let items = [];
+          } else {
+            _require = store.getGuilds();
+            const mapped = tmp4().map((arg0) => {
+              if (undefined === dependencyMap[arg0]) {
+                return null;
+              } else {
+                let obj = { id: null, name: null };
+                ({ id: obj3[0], name: obj3[1] } = tmp);
+                if (null !== tmp.description) {
+                  obj.description = tmp.description;
+                }
+                let tmp2 = null;
+                if (null !== tmp.icon) {
+                  obj = outer1_1(outer1_2[8]);
+                  obj = { id: null, icon: null, size: 44, canAnimate: true };
+                  ({ id: obj2[0], icon: obj2[1] } = tmp);
+                  let guildIconURL = obj.getGuildIconURL(obj);
+                  if (guildIconURL == null) {
+                    guildIconURL = null;
+                  }
+                  tmp2 = guildIconURL;
+                }
+                if (null !== tmp2) {
+                  obj.icon_url = tmp2;
+                }
+                return obj;
+              }
+            });
+            items = mapped.filter((arg0) => null !== arg0);
+            const tmp4Result = tmp4();
+          }
+          obj = { guilds: null, channels: null };
+          obj[0] = items;
+          if (!tmp8) {
+            if (null != guild) {
+              const mapped1 = tmp5().map((arg0) => {
+                channel = channel.getChannel(arg0);
+                if (undefined === channel) {
+                  return null;
+                } else {
+                  const obj = { id: null, name: null };
+                  obj[0] = channel.id;
+                  obj[1] = dependencyMap(table[9]).computeChannelName(channel, mergeGuildAvatar, upsertRelationship);
+                  if (channel.topic.length > 0) {
+                    obj.channel_topic = channel.topic;
+                  }
+                  return obj;
+                }
+              });
+              let found = mapped1.filter((arg0) => null !== arg0);
+              const tmp5Result = tmp5();
+            }
+            obj[1] = found;
+            if (null != guildId) {
+              obj.selected_guild_id = guildId;
+            }
+            let banner;
+            if (guild != null) {
+              banner = guild.banner;
+            }
+            let tmp15 = null;
+            if (null != banner) {
+              obj = { id: null, banner: null };
+              ({ id: obj5[0], banner: obj5[1] } = guild);
+              let guildBannerURL = importDefault(1416).getGuildBannerURL(obj, true);
+              if (guildBannerURL == null) {
+                guildBannerURL = null;
+              }
+              tmp15 = guildBannerURL;
+              const obj4 = importDefault(1416);
+            }
+            if (null !== tmp15) {
+              obj.selected_guild_banner_url = tmp15;
+            }
+            if (obj.guilds.length > closure_10) {
+              const guilds = obj.guilds;
+              obj.guilds = guilds.slice(0, tmp18);
+              obj.truncated = true;
+            }
+            if (obj.channels.length > closure_10) {
+              const channels = obj.channels;
+              obj.channels = channels.slice(0, tmp18);
+              obj.truncated = true;
+            }
+            obj1 = { brand_safety_context: null };
+            const _JSON = JSON;
+            obj1[0] = JSON.stringify(obj);
+            return obj1;
+          }
+          found = [];
         }
       }
     }

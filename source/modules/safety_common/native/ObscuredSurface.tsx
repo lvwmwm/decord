@@ -1,25 +1,25 @@
-// Module ID: 8489
-// Function ID: 67463
+// Module ID: 8513
+// Function ID: 8514
 // Name: ObscuredSurface
-// Dependencies: [31, 27, 33, 4165, 689, 8490, 4674, 4161, 1212, 2]
+// Dependencies: [19, 17, 21, 4189, 712, 8514, 4696, 4185, 1236, 2]
 // Exports: default
 
-// Module 8489 (ObscuredSurface)
-import "result";
+// Module 8513 (ObscuredSurface)
+import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_4;
-let closure_5;
+let c4;
+let c5;
 const require = arg1;
-({ jsx: closure_4, jsxs: closure_5 } = jsxProd);
-_createForOfIteratorHelperLoose = { container: { position: "relative", overflow: "hidden" }, content: { pointerEvents: "none", userSelect: "none" } };
-_createForOfIteratorHelperLoose = { position: "absolute", inset: 0, zIndex: 1, backgroundColor: require("_createForOfIteratorHelperLoose").colors.SPOILER_HIDDEN_BACKGROUND };
-_createForOfIteratorHelperLoose.cover = _createForOfIteratorHelperLoose;
-let obj1 = { position: "absolute", insetInlineStart: "50%", top: "50%", transform: "translate(-50%, -50%)", display: "flex", flexDirection: "column", alignItems: "center", gap: require("_createForOfIteratorHelperLoose").space.PX_8, paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_12, paddingVertical: require("_createForOfIteratorHelperLoose").space.PX_8, textAlign: "center", userSelect: "none", zIndex: 2 };
-_createForOfIteratorHelperLoose.warning = obj1;
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+({ jsx: c4, jsxs: c5 } = jsxProd);
+createCacheKey = { container: { position: "relative", overflow: "hidden" }, content: { pointerEvents: "none", userSelect: "none" }, cover: null, warning: null };
+createCacheKey = { position: "absolute", inset: 0, zIndex: 1, backgroundColor: require("Themes").colors.SPOILER_HIDDEN_BACKGROUND };
+createCacheKey[2] = createCacheKey;
+createCacheKey[3] = { position: "absolute", insetInlineStart: "50%", top: "50%", transform: "translate(-50%, -50%)", display: "flex", flexDirection: "column", alignItems: "center", gap: require("Themes").space.PX_8, paddingHorizontal: require("Themes").space.PX_12, paddingVertical: require("Themes").space.PX_8, textAlign: "center", userSelect: "none", zIndex: 2 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let obj1 = { position: "absolute", insetInlineStart: "50%", top: "50%", transform: "translate(-50%, -50%)", display: "flex", flexDirection: "column", alignItems: "center", gap: require("Themes").space.PX_8, paddingHorizontal: require("Themes").space.PX_12, paddingVertical: require("Themes").space.PX_8, textAlign: "center", userSelect: "none", zIndex: 2 };
 const result = require("jsxProd").fileFinishedImporting("modules/safety_common/native/ObscuredSurface.tsx");
 
 export default function ObscuredSurface(obscured) {
@@ -27,38 +27,44 @@ export default function ObscuredSurface(obscured) {
   let description;
   let heading;
   ({ heading, description, children } = obscured);
-  const tmp = _createForOfIteratorHelperLoose();
+  const tmp = createCacheKey();
   let tmp3Result = children;
   if (obscured.obscured) {
-    let obj = { value: require(8490) /* context */.OBSCURED_VALUE };
-    obj = { style: tmp.container };
-    obj = { style: tmp.content, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", accessible: false, "aria-hidden": true, children };
+    let obj = { value: null, children: null };
+    obj[0] = require(8514) /* context */.OBSCURED_VALUE;
+    obj = { style: null, children: null };
+    obj[0] = tmp.container;
+    obj = { style: null, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", accessible: false, "aria-hidden": true, children: null };
+    obj[0] = tmp.content;
+    obj[5] = children;
     const items = [callback(View, obj), , ];
-    const obj1 = { style: tmp.cover };
+    const obj1 = { style: null };
+    obj1[0] = tmp.cover;
     items[1] = callback(View, obj1);
-    const obj2 = { style: tmp.warning };
-    const obj3 = { size: "lg", color: importDefault(689).colors.TEXT_DEFAULT };
-    const items1 = [callback(require(4674) /* ImageWarningIcon */.ImageWarningIcon, obj3), , ];
-    const obj4 = { variant: "heading-md/semibold", color: "text-strong" };
-    if (null == heading) {
-      const intl = require(1212) /* getSystemLocale */.intl;
-      heading = intl.string(require(1212) /* getSystemLocale */.t.xC8Saf);
+    const obj2 = { style: null, children: null };
+    obj2[0] = tmp.warning;
+    const obj3 = { size: "lg", color: null };
+    obj3[1] = importDefault(712).colors.TEXT_DEFAULT;
+    const items1 = [callback(require(4696) /* ImageWarningIcon */.ImageWarningIcon, obj3), , ];
+    if (heading == null) {
+      const intl = tmp4(1236).intl;
+      heading = intl.string(tmp4(1236).t.xC8Saf);
     }
-    obj4.children = heading;
-    items1[1] = callback(require(4161) /* Text */.Text, obj4);
-    const obj5 = { variant: "text-sm/normal", color: "text-muted" };
-    if (null == description) {
-      const intl2 = require(1212) /* getSystemLocale */.intl;
-      description = intl2.string(require(1212) /* getSystemLocale */.t["0fc/DG"]);
+    const obj4 = { variant: "heading-md/semibold", color: "text-strong", children: null };
+    obj4[2] = heading;
+    items1[1] = callback(require(4185) /* Text */.Text, obj4);
+    if (description == null) {
+      const intl2 = tmp4(1236).intl;
+      description = intl2.string(tmp4(1236).t["0fc/DG"]);
     }
-    obj5.children = description;
-    items1[2] = callback(require(4161) /* Text */.Text, obj5);
-    obj2.children = items1;
+    const obj5 = { variant: "text-sm/normal", color: "text-muted", children: null };
+    obj5[2] = description;
+    items1[2] = callback(require(4185) /* Text */.Text, obj5);
+    obj2[1] = items1;
     items[2] = closure_5(View, obj2);
-    obj.children = items;
-    obj.children = closure_5(View, obj);
-    tmp3Result = tmp3(require(8490) /* context */.ObscuredSurfaceContext.Provider, obj);
-    const tmp12 = callback;
+    obj[1] = items;
+    obj[1] = closure_5(View, obj);
+    tmp3Result = tmp3(require(8514) /* context */.ObscuredSurfaceContext.Provider, obj);
   }
   return tmp3Result;
 };

@@ -1,11 +1,10 @@
 // Module ID: 4659
-// Function ID: 40431
+// Function ID: 4660
 // Name: registerAsset
-// Dependencies: [1217]
+// Dependencies: [1241]
 
 // Module 4659 (registerAsset)
 import registerAsset from "registerAsset";
 
-const obj = { __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "aa3bf5fde9af21e55dfd8368b9aaaf36", name: "TextControllerIcon", type: "png" };
 
-export default registerAsset.registerAsset(obj);
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "1cfdcaa3b94766eef2db25157ec0c919", name: "VoiceNormalIcon", type: "png" });

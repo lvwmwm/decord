@@ -1,94 +1,92 @@
-// Module ID: 10533
-// Function ID: 81508
+// Module ID: 10557
+// Function ID: 10558
 // Name: map
-// Dependencies: [6, 7, 1194, 1348, 4257, 4237, 4181, 653, 3, 4241, 675, 2]
+// Dependencies: [1218, 1372, 4281, 4261, 4205, 676, 3, 4265, 698, 2]
 
-// Module 10533 (map)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import ME from "ME";
-import closure_5 from "_isNativeReflectConstruct";
-import closure_6 from "_isNativeReflectConstruct";
-import closure_7 from "_isNativeReflectConstruct";
-import closure_8 from "_isNativeReflectConstruct";
-import closure_9 from "_isNativeReflectConstruct";
+// Module 10557 (map)
+import fetchFingerprint from "fetchFingerprint";
+import ensureGuildLoaded from "ensureGuildLoaded";
+import handleConnectionInfoChange from "handleConnectionInfoChange";
+import createRTCConnection from "createRTCConnection";
+import updateVoiceState from "updateVoiceState";
 import { AnalyticEvents } from "ME";
 
 const require = arg1;
 const map = new Map();
-const tmp3 = (() => {
-  class VideoSpinnerTimer {
-    constructor(arg0) {
-      tmp = outer1_3(this, VideoSpinnerTimer);
-      this.spinnerVisibleStart = null;
-      tmp2 = outer1_1(outer1_2[8]);
-      tmp2 = new tmp2(arg0);
-      this.logger = tmp2;
-      return;
-    }
+let result = require("handleConnectionInfoChange").fileFinishedImporting("lib/VideoSpinnerTimer.tsx");
+class VideoSpinnerTimer {
+  constructor(arg0) {
+    obj = Object.create(new.target.prototype);
+    tmp2 = new require("timestamp")(global);
+    obj.logger = tmp2;
+    return obj;
   }
-  let obj = {
-    key: "onSpinnerStarted",
-    value() {
-      if (null == this.spinnerVisibleStart) {
-        tmp.spinnerVisibleStart = VideoSpinnerTimer(outer1_2[9]).now();
-        const obj = VideoSpinnerTimer(outer1_2[9]);
-      }
+}
+const prototype = VideoSpinnerTimer.prototype;
+prototype["onSpinnerStarted"] = function onSpinnerStarted() {
+  if (null == this.spinnerVisibleStart) {
+    tmp.spinnerVisibleStart = require(4265) /* sleep */.now();
+    const obj = require(4265) /* sleep */;
+  }
+};
+prototype["trackSpinnerDuration"] = function trackSpinnerDuration(videoSpinnerContext, userId, arg2) {
+  const self = this;
+  if (null != this.spinnerVisibleStart) {
+    let num = map.get(arg2);
+    if (num == null) {
+      num = 0;
     }
-  };
-  const items = [obj, ];
-  obj = {
-    key: "trackSpinnerDuration",
-    value(video_spinner_context, spinning_user_id) {
-      const self = this;
-      if (null != this.spinnerVisibleStart) {
-        const value = outer1_11.get(arg2);
-        let num = 0;
-        if (null != value) {
-          num = value;
-        }
-        const sum = num + 1;
-        const result = outer1_11.set(arg2, sum);
-        let obj = VideoSpinnerTimer(outer1_2[9]);
-        const diff = obj.now() - self.spinnerVisibleStart;
-        self.spinnerVisibleStart = null;
-        if (diff < 0) {
-          const logger = self.logger;
-          const _HermesInternal = HermesInternal;
-          logger.warn("spinner duration is negative: " + diff + " ms\n        [" + video_spinner_context + ", count for stream: " + sum + "]");
-        } else {
-          const logger2 = self.logger;
-          const _HermesInternal2 = HermesInternal;
-          logger2.info("spinner visible for " + diff + " ms\n      [" + video_spinner_context + ", count for stream: " + sum + "]");
-          const guildId = outer1_8.getGuildId();
-          const userVoiceChannelId = outer1_9.getUserVoiceChannelId(guildId, outer1_5.getId());
-          const channel = outer1_6.getChannel(userVoiceChannelId);
-          let str = null;
-          if (null != channel) {
-            str = "guild_voice";
-            if (!channel.isGuildVoice()) {
-              str = "is_stage_channel";
-              if (!channel.isGuildStageVoice()) {
-                str = "dm";
-                if (!channel.isDM()) {
-                  str = null;
-                  if (channel.isGroupDM()) {
-                    str = "group_dm";
-                  }
-                }
+    const sum = num + 1;
+    const result = map.set(arg2, sum);
+    let obj = require(4265) /* sleep */;
+    const diff = obj.now() - self.spinnerVisibleStart;
+    self.spinnerVisibleStart = null;
+    if (diff < 0) {
+      const logger = self.logger;
+      const _HermesInternal = HermesInternal;
+      logger.warn("spinner duration is negative: " + diff + " ms\n        [" + videoSpinnerContext + ", count for stream: " + sum + "]");
+    } else {
+      const logger2 = self.logger;
+      const _HermesInternal2 = HermesInternal;
+      logger2.info("spinner visible for " + diff + " ms\n      [" + videoSpinnerContext + ", count for stream: " + sum + "]");
+      guildId = guildId.getGuildId();
+      userVoiceChannelId = userVoiceChannelId.getUserVoiceChannelId(guildId, id.getId());
+      channel = channel.getChannel(userVoiceChannelId);
+      let str = null;
+      if (null != channel) {
+        str = "guild_voice";
+        if (!channel.isGuildVoice()) {
+          str = "is_stage_channel";
+          if (!channel.isGuildStageVoice()) {
+            str = "dm";
+            if (!channel.isDM()) {
+              str = null;
+              if (channel.isGroupDM()) {
+                str = "group_dm";
               }
             }
           }
-          obj = { video_spinner_context, duration_video_spinner_visible_ms: diff, rtc_connection_id: outer1_8.getRTCConnectionId(), media_session_id: outer1_8.getMediaSessionId(), event_count_for_stream: sum, guild_id: guildId, channel_id: userVoiceChannelId, channel_type: str, spinning_user_id, connection_type: outer1_7.getType(), effective_connection_speed: outer1_7.getEffectiveConnectionSpeed(), service_provider: outer1_7.getServiceProvider() };
-          outer1_1(outer1_2[10]).track(outer1_10.VIDEO_SPINNER_SHOWN_V2, obj);
-          const obj2 = outer1_1(outer1_2[10]);
         }
       }
+      obj = { video_spinner_context: null, duration_video_spinner_visible_ms: null, rtc_connection_id: null, media_session_id: null, event_count_for_stream: null, guild_id: null, channel_id: null, channel_type: null, spinning_user_id: null, connection_type: null, effective_connection_speed: null, service_provider: null };
+      obj[0] = videoSpinnerContext;
+      obj[1] = diff;
+      obj[2] = guildId.getRTCConnectionId();
+      obj[3] = guildId.getMediaSessionId();
+      obj[4] = sum;
+      obj[5] = guildId;
+      obj[6] = userVoiceChannelId;
+      obj[7] = str;
+      obj[8] = userId;
+      obj[9] = store.getType();
+      obj[10] = store.getEffectiveConnectionSpeed();
+      obj[11] = store.getServiceProvider();
+      importDefault(698).track(AnalyticEvents.VIDEO_SPINNER_SHOWN_V2, obj);
+      const obj2 = importDefault(698);
     }
-  };
-  items[1] = obj;
-  return callback(VideoSpinnerTimer, items);
-})();
-let result = require("_isNativeReflectConstruct").fileFinishedImporting("lib/VideoSpinnerTimer.tsx");
+    const obj4 = map;
+  }
+};
 
 export const VideoSpinnerContext = { SELF_VIDEO: "self_video", SELF_STREAM: "self_stream", REMOTE_VIDEO: "remote_video", REMOTE_STREAM: "remote_stream", CHANGE_VIDEO_BACKGROUND: "change_video_background", REPLAY_VIDEO_STREAM: "replay_video_stream" };
-export const VideoSpinnerTimer = tmp3;
+export { VideoSpinnerTimer };

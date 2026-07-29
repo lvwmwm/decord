@@ -1,32 +1,33 @@
-// Module ID: 11712
-// Function ID: 90648
-// Dependencies: [31, 27, 33, 10397, 10401, 4026, 2]
+// Module ID: 11737
+// Function ID: 11738
+// Dependencies: [19, 17, 21, 10421, 10425, 4050, 2]
 
-// Module 11712
+// Module 11737
 import get_ActivityIndicator from "get ActivityIndicator";
 import { jsx } from "jsxProd";
-import importAllResult from "result";
+import importAllResult from "noop";
 
-let closure_3;
-let closure_4;
-let require = arg1;
-({ StyleSheet: closure_3, View: closure_4 } = get_ActivityIndicator);
+let c3;
+let c4;
+const require = arg1;
+({ StyleSheet: c3, View: c4 } = get_ActivityIndicator);
 let closure_6 = { code: "function ChannelSafeAreaBottomAnimatedAndroidTsx1(){const{heightSharedValue}=this.__closure;return{height:heightSharedValue.get()};}" };
-const memoResult = require("result").memo(function ChannelSafeAreaBottom(channelId) {
-  const tmp = importDefault(10397)();
-  const require = tmp;
-  let obj = require(4026);
+const memoResult = require("noop").memo(function ChannelSafeAreaBottom(channelId) {
+  let _require;
+  const tmp = importDefault(10421)();
+  _require = tmp;
+  let obj = _require(4050);
   const fn = function n() {
-    return { height: tmp.get() };
+    return { height: _undefined.get() };
   };
   fn.__closure = { heightSharedValue: tmp };
   fn.__workletHash = 6491350126069;
   fn.__initData = closure_6;
   const animatedStyle = obj.useAnimatedStyle(fn);
-  obj = { style: animatedStyle };
-  const items = [absoluteFill.absoluteFill, importDefault(10401)(channelId.channelId)];
-  obj.children = <closure_4 style={items} />;
-  return jsx(importDefault(4026).View, { style: animatedStyle });
+  obj = { style: animatedStyle, children: null };
+  const items = [absoluteFill.absoluteFill, importDefault(10425)(channelId.channelId)];
+  obj[1] = <closure_4 style={items} />;
+  return jsx(importDefault(4050).View, { style: animatedStyle, children: null });
 });
 const result = require("jsxProd").fileFinishedImporting("modules/main_tabs_v2/native/channel/ChannelSafeAreaBottomAnimated.android.tsx");
 

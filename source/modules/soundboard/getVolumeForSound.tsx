@@ -1,11 +1,11 @@
-// Module ID: 13570
-// Function ID: 104240
+// Module ID: 13594
+// Function ID: 13595
 // Name: getVolumeForSound
-// Dependencies: [4212, 4615, 3838, 2]
+// Dependencies: [4236, 4637, 3862, 2]
 // Exports: default, getPerceptualSoundboardVolume
 
-// Module 13570 (getVolumeForSound)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 13594 (getVolumeForSound)
+import _detectH265HardwareDecode from "_detectH265HardwareDecode";
 
 const require = arg1;
 let result = require("explicitContentFromProto").fileFinishedImporting("modules/soundboard/getVolumeForSound.tsx");
@@ -13,25 +13,24 @@ let result = require("explicitContentFromProto").fileFinishedImporting("modules/
 export default function getVolumeForSound(arg0, USER) {
   let tmp = USER;
   if (USER === undefined) {
-    const SoundboardSettings = require(3838) /* explicitContentFromProto */.SoundboardSettings;
+    const SoundboardSettings = require(3862) /* explicitContentFromProto */.SoundboardSettings;
     const setting = SoundboardSettings.getSetting();
-    let volume;
-    if (null != setting) {
-      volume = setting.volume;
+    let num;
+    if (setting != null) {
+      num = setting.volume;
     }
-    let num2 = 100;
-    if (null != volume) {
-      num2 = volume;
+    if (num == null) {
+      num = 100;
     }
-    tmp = num2;
+    tmp = num;
   }
-  const result = require(4615) /* perceptualToAmplitude */.amplitudeToPerceptual(tmp) / 100;
+  const result = require(4637) /* perceptualToAmplitude */.amplitudeToPerceptual(tmp) / 100;
   return Math.min(arg0 * result * Math.min(outputVolume.getOutputVolume() / 100, 1), 1);
 };
 export const getPerceptualSoundboardVolume = function getPerceptualSoundboardVolume(USER) {
-  let num = 100;
-  if (null != USER) {
-    num = USER;
+  let num = USER;
+  if (USER == null) {
+    num = 100;
   }
-  return require(4615) /* perceptualToAmplitude */.amplitudeToPerceptual(num) / 100;
+  return require(4637) /* perceptualToAmplitude */.amplitudeToPerceptual(num) / 100;
 };

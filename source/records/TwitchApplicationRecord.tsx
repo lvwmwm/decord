@@ -1,27 +1,27 @@
-// Module ID: 12780
-// Function ID: 99337
-// Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 4188, 1212, 4849, 2]
+// Module ID: 12802
+// Function ID: 12803
+// Name: getIconURL
+// Dependencies: [4212, 1236, 4871, 2]
 
-// Module 12780 (_isNativeReflectConstruct)
-import getSystemLocale from "getSystemLocale";
-import getPlatformUserUrl from "getPlatformUserUrl";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
-import tmp2 from "_callSuper";
+// Module 12802 (getIconURL)
+import "createExecutable";
 
 const require = arg1;
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
+let c3 = "twitch:";
+const result = require("getPlatformUserUrl").fileFinishedImporting("records/TwitchApplicationRecord.tsx");
+class TwitchApplicationRecord extends tmp2 {
+  constructor(arg0) {
+    tmp3 = new TwitchApplicationRecord(global, tmp2, tmp, new.target);
+    // ThrowIfThisInitialized (0x7c)
+    tmp3.id = "" + c3 + global.url;
+    intl = require("getSystemLocale").intl;
+    tmp3.name = intl.string(require("getSystemLocale").t.JIPtgq);
+    return tmp3;
   }
-  const result = _isNativeReflectConstruct();
 }
-let result = require("_possibleConstructorReturn").fileFinishedImporting("records/TwitchApplicationRecord.tsx");
+TwitchApplicationRecord.prototype["getIconURL"] = function getIconURL() {
+  return importDefault(4871).get("twitch").icon.lightPNG;
+};
 
-export default tmp2;
+export default TwitchApplicationRecord;
 export const TWITCH_APPLICATION_ID_PREFIX = "twitch:";

@@ -1,42 +1,42 @@
-// Module ID: 5544
-// Function ID: 47078
+// Module ID: 5562
+// Function ID: 5563
 // Name: Divider
-// Dependencies: [31, 27, 5545, 33, 4165, 689, 4695, 4161, 5547, 1324, 2]
+// Dependencies: [19, 17, 5563, 21, 4189, 712, 4717, 4185, 5565, 1348, 2]
 // Exports: UserProfileCardRows, UserProfileFormRow, default
 
-// Module 5544 (Divider)
-import result from "result";
+// Module 5562 (Divider)
+import noop from "noop";
 import { View } from "get ActivityIndicator";
 import ARBITRARY_LARGE_OFFSET from "ARBITRARY_LARGE_OFFSET";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
+let CARD_PADDING;
 let CARD_ROWS_COLUMN_GAP;
 let CARD_ROWS_ICON_SIZE;
-let closure_5;
+let c5;
 let closure_6;
-let closure_7;
-let closure_8;
+let error;
+let metroImportAll;
 const require = arg1;
 function Divider() {
-  return callback(View, { style: _createForOfIteratorHelperLoose().rowDivider });
+  return callback(View, { style: createCacheKey().rowDivider });
 }
-({ CARD_ROWS_COLUMN_GAP, CARD_ROWS_ICON_SIZE, CARD_ROWS_ICON_SIZE_VARIANT: closure_5 } = ARBITRARY_LARGE_OFFSET);
-({ jsx: closure_6, jsxs: closure_7, Fragment: closure_8 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { marginBottom: require("_createForOfIteratorHelperLoose").space.PX_12, flexDirection: "row", alignItems: "center", gap: require("_createForOfIteratorHelperLoose").space.PX_4 };
-_createForOfIteratorHelperLoose.title = _createForOfIteratorHelperLoose;
-let obj1 = { flex: 1, flexDirection: "row", alignItems: "center", gap: require("_createForOfIteratorHelperLoose").space.PX_4 };
-_createForOfIteratorHelperLoose.titleContent = obj1;
-_createForOfIteratorHelperLoose.text = { flexShrink: 1 };
-_createForOfIteratorHelperLoose.rowDivider = { borderBottomWidth: 1, borderBottomColor: require("_createForOfIteratorHelperLoose").colors.BORDER_SUBTLE, marginLeft: CARD_ROWS_ICON_SIZE + CARD_ROWS_COLUMN_GAP, marginRight: -ARBITRARY_LARGE_OFFSET.CARD_PADDING };
-_createForOfIteratorHelperLoose.row = { flexDirection: "column", paddingVertical: 20 };
-let obj3 = { flexDirection: "row", alignItems: "center", columnGap: CARD_ROWS_COLUMN_GAP };
-_createForOfIteratorHelperLoose.rowLabel = obj3;
-_createForOfIteratorHelperLoose.rowLabelText = { flex: 1, lineHeight: CARD_ROWS_ICON_SIZE };
-_createForOfIteratorHelperLoose.rowSublabel = { marginHorizontal: CARD_ROWS_ICON_SIZE + CARD_ROWS_COLUMN_GAP };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-let obj2 = { borderBottomWidth: 1, borderBottomColor: require("_createForOfIteratorHelperLoose").colors.BORDER_SUBTLE, marginLeft: CARD_ROWS_ICON_SIZE + CARD_ROWS_COLUMN_GAP, marginRight: -ARBITRARY_LARGE_OFFSET.CARD_PADDING };
+({ CARD_ROWS_COLUMN_GAP, CARD_ROWS_ICON_SIZE, CARD_ROWS_ICON_SIZE_VARIANT: c5, CARD_PADDING } = ARBITRARY_LARGE_OFFSET);
+({ jsx: closure_6, jsxs: error, Fragment: metroImportAll } = jsxProd);
+createCacheKey = { title: null, titleContent: null, text: null, rowDivider: null, row: null, rowLabel: null, rowLabelText: null, rowSublabel: null };
+createCacheKey = { marginBottom: require("Themes").space.PX_12, flexDirection: "row", alignItems: "center", gap: require("Themes").space.PX_4 };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { flex: 1, flexDirection: "row", alignItems: "center", gap: require("Themes").space.PX_4 };
+createCacheKey[2] = { flexShrink: 1 };
+let obj1 = { flex: 1, flexDirection: "row", alignItems: "center", gap: require("Themes").space.PX_4 };
+createCacheKey[3] = { borderBottomWidth: 1, borderBottomColor: require("Themes").colors.BORDER_SUBTLE, marginLeft: CARD_ROWS_ICON_SIZE + CARD_ROWS_COLUMN_GAP, marginRight: -CARD_PADDING };
+createCacheKey[4] = { flexDirection: "column", paddingVertical: 20 };
+createCacheKey[5] = { flexDirection: "row", alignItems: "center", columnGap: CARD_ROWS_COLUMN_GAP };
+createCacheKey[6] = { flex: 1, lineHeight: CARD_ROWS_ICON_SIZE };
+createCacheKey[7] = { marginHorizontal: CARD_ROWS_ICON_SIZE + CARD_ROWS_COLUMN_GAP };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let obj2 = { borderBottomWidth: 1, borderBottomColor: require("Themes").colors.BORDER_SUBTLE, marginLeft: CARD_ROWS_ICON_SIZE + CARD_ROWS_COLUMN_GAP, marginRight: -CARD_PADDING };
 const result = require("ARBITRARY_LARGE_OFFSET").fileFinishedImporting("modules/user_profile/native/UserProfileCard.tsx");
 
 export default function UserProfileCard(arg0) {
@@ -48,52 +48,47 @@ export default function UserProfileCard(arg0) {
   let titleStyle;
   let trailingAction;
   ({ title, trailingAction } = arg0);
-  let obj = { title: 0, titleLeadingIcon: 0, titleIcon: 0, titleStyle: 0, trailingAction: 0, children: 0, style: 0 };
   ({ titleLeadingIcon, titleIcon, titleStyle, children, style } = arg0);
-  Object.setPrototypeOf(null);
-  const merged = Object.assign(arg0, obj);
-  const tmp3 = _createForOfIteratorHelperLoose();
-  const tmp4 = importDefault(1324)("UserProfileCard");
-  obj = { style };
+  const merged = Object.assign(arg0, Object.create(null));
+  const tmp2 = createCacheKey();
+  const tmp4 = importDefault(1348)("UserProfileCard");
+  let obj = { style };
   const merged1 = Object.assign(merged);
-  let tmp9Result = null != title || null != trailingAction;
-  if (tmp9Result) {
-    obj = {};
-    const items = [tmp3.title, titleStyle];
-    obj.style = items;
-    let tmp12Result = null != title;
-    if (tmp12Result) {
-      const obj1 = { style: tmp3.titleContent };
+  let tmp5Result = null != title || null != trailingAction;
+  if (tmp5Result) {
+    obj = { style: null, children: null };
+    const items = [tmp2.title, titleStyle];
+    obj[0] = items;
+    tmp5Result = null != title;
+    if (tmp5Result) {
+      obj = { style: null, children: null };
+      obj[0] = tmp2.titleContent;
       const items1 = [titleLeadingIcon, , ];
-      const obj2 = { style: tmp3.text, accessibilityRole: "header" };
-      let str2 = "text-sm/semibold";
+      const obj1 = { style: null, accessibilityRole: "header", variant: null, color: null, lineClamp: 1, children: null };
+      obj1[0] = tmp2.text;
+      let str = "text-sm/semibold";
       if (tmp4) {
-        str2 = "text-sm/medium";
+        str = "text-sm/medium";
       }
-      obj2.variant = str2;
-      let str3 = "text-default";
+      obj1[2] = str;
+      let str2 = "text-default";
       if (tmp4) {
-        str3 = "text-strong";
+        str2 = "text-strong";
       }
-      obj2.color = str3;
-      obj2.lineClamp = 1;
-      obj2.children = title;
-      items1[1] = closure_6(require(4161) /* Text */.Text, obj2);
+      obj1[3] = str2;
+      obj1[5] = title;
+      items1[1] = closure_6(require(4185) /* Text */.Text, obj1);
       items1[2] = titleIcon;
-      obj1.children = items1;
-      tmp12Result = closure_7(View, obj1);
-      const tmp12 = closure_7;
-      const tmp13 = View;
-      const tmp14 = closure_6;
+      obj[1] = items1;
+      tmp5Result = tmp5(tmp6, obj);
+      const tmp10 = closure_6;
     }
-    const items2 = [tmp12Result, trailingAction];
-    obj.children = items2;
-    tmp9Result = closure_7(View, obj);
-    const tmp10 = View;
-    const tmp9 = closure_7;
+    const items2 = [tmp5Result, trailingAction];
+    obj[1] = items2;
+    tmp5Result = tmp5(tmp6, obj);
   }
-  const items3 = [tmp9Result, children];
-  obj["children"] = items3;
+  const items3 = [tmp5Result, children];
+  obj.children = items3;
   return closure_7(View, obj);
 };
 export const UserProfileFormRow = function UserProfileFormRow(arg0) {
@@ -108,10 +103,10 @@ export const UserProfileFormRow = function UserProfileFormRow(arg0) {
   let sublabel;
   ({ label, sublabel, hint, isDestructive, labelColor, arrow } = arg0);
   ({ icon, disabled, onPress } = arg0);
-  if (arrow === undefined) {
-    arrow = false;
+  if (tmp6Result === undefined) {
+    tmp6Result = false;
   }
-  const tmp = _createForOfIteratorHelperLoose();
+  const tmp = createCacheKey();
   let str;
   if (isDestructive) {
     str = "text-feedback-critical";
@@ -120,46 +115,45 @@ export const UserProfileFormRow = function UserProfileFormRow(arg0) {
   if (isDestructive) {
     str2 = "text-feedback-critical";
   }
-  let obj = { style: tmp.row, accessibilityRole: "button", accessibilityLabel: label, disabled, onPress };
-  obj = { style: tmp.rowLabel };
+  let obj = { style: tmp.row, accessibilityRole: "button", accessibilityLabel: label, disabled, onPress, children: null };
+  obj = { style: tmp.rowLabel, children: null };
   obj = { size: closure_5, color: str };
   const items = [callback(icon, obj), , , ];
-  const obj1 = { variant: "text-md/semibold" };
-  if (null != labelColor) {
-    str2 = labelColor;
+  if (labelColor == null) {
+    labelColor = str2;
   }
-  obj1.color = str2;
-  obj1.style = tmp.rowLabelText;
-  obj1.children = label;
-  items[1] = callback(require(4161) /* Text */.Text, obj1);
-  let tmp5 = null != hint;
-  if (tmp5) {
-    const obj2 = { size: closure_5, color: str };
-    tmp5 = callback(hint, obj2);
+  items[1] = callback(require(4185) /* Text */.Text, { variant: "text-md/semibold", color: labelColor, style: tmp.rowLabelText, children: label });
+  tmp6Result = null != hint;
+  if (tmp6Result) {
+    const obj2 = { size: null, color: null };
+    obj2[0] = closure_5;
+    obj2[1] = str;
+    tmp6Result = tmp6(hint, obj2);
   }
-  items[2] = tmp5;
-  if (arrow) {
-    const obj3 = { size: "sm" };
-    arrow = callback(require(5547) /* ChevronSmallRightIcon */.ChevronSmallRightIcon, obj3);
+  items[2] = tmp6Result;
+  if (tmp6Result) {
+    tmp6Result = tmp6(require(5565) /* ChevronSmallRightIcon */.ChevronSmallRightIcon, { size: "sm" });
   }
-  items[3] = arrow;
-  obj.children = items;
+  items[3] = tmp6Result;
+  obj[1] = items;
   const items1 = [closure_7(View, obj), ];
-  let tmp11 = null != sublabel;
-  if (tmp11) {
-    const obj4 = { style: tmp.rowSublabel, children: sublabel };
-    tmp11 = callback(View, obj4);
+  let tmp6Result1 = null != sublabel;
+  if (tmp6Result1) {
+    const obj3 = { style: null, children: null };
+    obj3[0] = tmp.rowSublabel;
+    obj3[1] = sublabel;
+    tmp6Result1 = tmp6(tmp5, obj3);
   }
-  items1[1] = tmp11;
-  obj.children = items1;
-  return closure_7(require(4695) /* PressableBase */.PressableOpacity, obj);
+  items1[1] = tmp6Result1;
+  obj[5] = items1;
+  return closure_7(require(4717) /* PressableBase */.PressableOpacity, obj);
 };
 export const UserProfileCardRows = function UserProfileCardRows(children) {
-  let closure_0 = importDefault(1324)("UserProfileCardRows");
+  let closure_0;
+  closure_0 = importDefault(1348)("UserProfileCardRows");
   const Children = React.Children;
   return callback(closure_8, {
     children: Children.map(children.children, (arg0, arg1) => {
-      const obj = {};
       let tmp2 = null;
       if (!closure_0) {
         tmp2 = null;
@@ -167,9 +161,8 @@ export const UserProfileCardRows = function UserProfileCardRows(children) {
           tmp2 = outer1_6(outer1_10, {});
         }
       }
-      const items = [tmp2, arg0];
-      obj.children = items;
-      return outer1_7(outer1_3.Fragment, obj, arg1);
+      const children = [tmp2, arg0];
+      return outer1_7(outer1_3.Fragment, { children }, arg1);
     })
   });
 };

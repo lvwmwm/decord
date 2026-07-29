@@ -1,32 +1,37 @@
-// Module ID: 16419
-// Function ID: 127924
+// Module ID: 16454
+// Function ID: 16455
 // Name: _toPropertyKey
-// Dependencies: [29, 57, 31, 27, 16413, 33, 4165, 689, 3883, 10181, 7613, 5193, 4153, 1273, 3878, 1212, 6655, 8265, 5082, 16418, 21, 8272, 6052, 5221, 5220, 4578, 8280, 4133, 4161, 2]
+// Dependencies: [109, 32, 19, 17, 16448, 21, 4189, 712, 3907, 10202, 7636, 5215, 4177, 1297, 3902, 1236, 6676, 8289, 5104, 16453, 11, 8296, 6070, 5243, 5242, 4600, 8304, 4157, 4185, 2]
 // Exports: default
 
-// Module 16419 (_toPropertyKey)
-import set from "set";
+// Module 16454 (_toPropertyKey)
+import _objectWithoutProperties from "_objectWithoutProperties";
 import _slicedToArray from "_slicedToArray";
-import result from "result";
-import { View } from "showActionSheet";
+import ADD_MEMBER_QUERY_LIMIT from "ADD_MEMBER_QUERY_LIMIT";
+import { View } from "module_8289";
 import { MAX_BULK_ROLE_MEMBERS_ADD } from "title";
-import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import jsxProd from "getNoResultsAltSource";
+import createCacheKey from "createCacheKey";
 
-let closure_10;
-let closure_8;
-let closure_9;
+let c10;
+let c9;
+let metroImportAll;
 const require = arg1;
 function _toPropertyKey(arg0) {
   let StringResult = arg0;
-  if ("object" === typeof arg0) {
+  if (typeof arg0 !== "window") {
     StringResult = arg0;
     if (arg0) {
       const _Symbol = Symbol;
       if (undefined !== arg0[Symbol.toPrimitive]) {
-        const callResult = obj.call(arg0, "string");
+        const call = tmp3.call;
+        if (typeof call === "unknown") {
+          let callResult = tmp3("string");
+        } else {
+          callResult = call(arg0, "string");
+        }
         StringResult = callResult;
-        if ("object" === typeof callResult) {
+        if (typeof callResult !== "window") {
           const _TypeError = TypeError;
           const typeError = new TypeError("@@toPrimitive must return a primitive value.");
           throw typeError;
@@ -38,7 +43,7 @@ function _toPropertyKey(arg0) {
     }
   }
   let text = StringResult;
-  if ("symbol" !== typeof StringResult) {
+  if (typeof StringResult !== "e") {
     text = `${tmp}`;
   }
   return text;
@@ -55,41 +60,49 @@ function MemberRow(arg0) {
   let userId;
   ({ disabled, checked } = arg0);
   ({ start, end, guildId, userId, onPress } = arg0);
-  let obj = require(3883) /* useCheckboxA11yNative */;
+  let obj = require(3907) /* useCheckboxA11yNative */;
   const checkboxA11yNative = obj.useCheckboxA11yNative({ checked, disabled });
   ({ accessibilityRole, accessibilityState } = checkboxA11yNative);
-  obj = { start, end, guildId, userId, onPress, disabled, trailing: callback2(require(7613) /* FormCheckbox */.FormCheckbox, { checked }), accessibilityRole, accessibilityState };
-  return callback2(importDefault(10181), obj);
+  obj = { start, end, guildId, userId, onPress, disabled, trailing: null, accessibilityRole: null, accessibilityState: null };
+  obj[6] = callback2(require(7636) /* FormCheckbox */.FormCheckbox, { checked });
+  obj[7] = accessibilityRole;
+  obj[8] = accessibilityState;
+  return callback2(importDefault(10202), obj);
 }
 class AddMembersBody {
   constructor(arg0) {
     ({ guild, role, members } = global);
     pendingAdditions = global.pendingAdditions;
     ({ setPendingAdditions, inActionSheet, maxCount } = global);
-    tmp = c11();
-    View = tmp;
+    c6 = undefined;
+    c7 = undefined;
+    useState = undefined;
+    c9 = undefined;
+    length = undefined;
+    tmp = jsxs();
+    c6 = tmp;
     tmp2 = setPendingAdditions(maxCount.useState(""), 2);
     first = tmp2[0];
-    MAX_BULK_ROLE_MEMBERS_ADD = first;
-    c8 = tmp2[1];
+    c7 = first;
+    useState = tmp2[1];
+    tmp4 = role;
+    obj = members;
     obj = { isKeyboardAwareOnAndroid: !inActionSheet };
     items = [, ];
     items[0] = members;
     items[1] = first;
-    memo = maxCount.useMemo(() => {
-      function filterByQuery(arg0) {
-        const regExp = new RegExp(outer2_1(members[12]).escape(outer1_7), "i");
-        return regExp.test(arg0);
+    memo = maxCount.useMemo(() => members.filter((name) => {
+      const regExp = new RegExp(outer1_1(outer1_2[12]).escape(closure_7), "i");
+      let isMatch = regExp.test(name.name);
+      if (!isMatch) {
+        const _RegExp = RegExp;
+        const regExp1 = new RegExp(outer1_1(outer1_2[12]).escape(closure_7), "i");
+        isMatch = regExp1.test(name.userTag);
+        const tmpResult = outer1_1(outer1_2[12]);
       }
-      return members.filter((name) => {
-        let tmp = filterByQuery(name.name);
-        if (!tmp) {
-          tmp = filterByQuery(name.userTag);
-        }
-        return tmp;
-      });
-    }, items);
-    Fragment = memo;
+      return isMatch;
+    }), items);
+    c9 = memo;
     length = memo.length;
     items1 = [, ];
     items1[0] = length;
@@ -98,97 +111,93 @@ class AddMembersBody {
       if ("" !== first) {
         const AccessibilityAnnouncer = outer1_0(members[14]).AccessibilityAnnouncer;
         const intl = outer1_0(members[15]).intl;
-        const obj = { count: length };
+        const obj = { count: null };
+        obj[0] = length;
         AccessibilityAnnouncer.announce(intl.formatToPlainString(outer1_0(members[15]).t.ZGVL3g, obj), "polite");
       }
     }, items1);
-    tmp5 = require("useModalDismissGuardRefreshControl");
-    obj = {};
-    obj1 = { style: tmp.inputContainer };
-    tmp6 = inActionSheet ? tmp5.BottomSheetFlashList : tmp5.FlashList;
-    tmp7 = length;
-    tmp8 = Fragment;
-    obj2 = {};
-    tmp9 = require("module_8265");
+    tmp6 = guild;
+    tmp7 = require("noop");
+    if (inActionSheet) {
+      FlashList = tmp7.BottomSheetFlashList;
+      ErpIY3 = tmp6;
+    } else {
+      FlashList = tmp7.FlashList;
+      ErpIY3 = tmp6;
+    }
+    tmp10 = useState;
+    obj1 = { style: tmp.inputContainer, children: null };
+    tmp8 = length;
+    tmp9 = c9;
+    obj2 = { placeholder: null, tags: null, onChangeText: null, onRemove: null, autoFocus: null, inActionSheet: null };
+    tmp4Result = require("module_8289");
     intl = require("getSystemLocale").intl;
-    obj2.placeholder = intl.string(require("getSystemLocale").t.vMiCaQ);
+    obj2[0] = intl.string(require("getSystemLocale").t.vMiCaQ);
     values = Object.values(pendingAdditions);
-    obj2.tags = values.map((display) => {
+    obj2[1] = values.map((display) => {
       const obj = {};
       const merged = Object.assign(display.display);
-      obj["id"] = display.row.id;
+      obj.id = display.row.id;
       return obj;
     });
-    obj2.onChangeText = function onChangeText(str) {
+    obj2[2] = function onChangeText(str) {
       const formatted = str.trim().toLowerCase();
       str = str.trim();
       members = outer1_1(members[18]).requestMembers(id.id, formatted, outer1_0(members[19]).ADD_MEMBER_QUERY_LIMIT);
       callback2(formatted);
     };
-    obj2.onRemove = function onRemove(arg0) {
+    obj2[3] = function onRemove(arg0) {
       let closure_0 = outer1_1(members[20]).keys(pendingAdditions)[arg0];
       callback((arg0) => {
         const items = [closure_0];
-        return pendingAdditions(arg0, items.map(outer2_12));
+        return outer1_3(arg0, items.map(outer1_11));
       });
     };
-    obj2.autoFocus = global.autoFocusSearch;
-    obj2.inActionSheet = inActionSheet;
-    obj1.children = c8(tmp9, obj2);
+    obj2[4] = global.autoFocusSearch;
+    obj2[5] = inActionSheet;
+    obj1[1] = useState(tmp4Result, obj2);
     items2 = [, ];
-    items2[0] = c8(View, obj1);
+    items2[0] = useState(c6, obj1);
     if (0 === memo.length) {
-      tmp11 = guild;
-      tmp12 = members;
-      num2 = 13;
-      tmp10 = c8;
-      obj3 = {};
-      num3 = 21;
-      obj3.Illustration = require("getNoResultsAltSource").NoResultsAlt;
-      obj3.bodyStyle = tmp.emptyStateText;
+      obj3 = { Illustration: null, bodyStyle: null, body: null };
+      obj3[0] = require("getNoResultsAltSource").NoResultsAlt;
+      obj3[1] = tmp.emptyStateText;
       if ("" !== first) {
-        tmp16 = guild;
-        tmp17 = members;
         intl3 = require("getSystemLocale").intl;
-        obj4 = {};
-        obj4.query = first;
-        formatResult = intl3.format(require("getSystemLocale").t.ErpIY3, obj4);
+        ErpIY3 = require("getSystemLocale").t.ErpIY3;
+        obj = { query: null };
+        obj[0] = first;
+        formatResult = intl3.format(ErpIY3, obj);
       } else {
-        tmp13 = guild;
-        tmp14 = members;
         intl2 = require("getSystemLocale").intl;
         formatResult = intl2.string(require("getSystemLocale").t.oB9grQ);
       }
-      obj3.body = formatResult;
+      obj3[2] = formatResult;
       tmp10Result = tmp10(require("Button").EmptyState, obj3);
     } else {
-      obj5 = {};
-      obj6 = {};
-      tmp20 = role;
-      tmp21 = members;
-      num4 = 7;
-      tmp19 = c8;
-      obj6.paddingHorizontal = require("_createForOfIteratorHelperLoose").space.PX_16;
-      obj6.paddingTop = require("_createForOfIteratorHelperLoose").space.PX_12;
+      obj4 = { paddingHorizontal: null, paddingTop: null, paddingBottom: null };
+      obj4[0] = require("Themes").space.PX_16;
+      obj4[1] = require("Themes").space.PX_12;
       num = 0;
       if (inActionSheet) {
         num = require("useSafeAreaInsetsKeyboardAware")(obj).insets.bottom;
       }
-      obj6.paddingBottom = require("_createForOfIteratorHelperLoose").space.PX_12 + num;
-      obj5.contentContainerStyle = obj6;
-      obj5.renderItem = function renderItem(item) {
+      obj5 = { contentContainerStyle: null, renderItem: null, data: null, extraData: null, keyboardShouldPersistTaps: "always" };
+      obj4[2] = require("Themes").space.PX_12 + num;
+      obj5[0] = obj4;
+      obj5[1] = function renderItem(item) {
         item = item.item;
         const index = item.index;
         let roles = item.roles;
         let hasItem = roles.includes(id2.id);
-        let tmp3 = null != result;
-        if (tmp3) {
+        let tmp5 = null != ADD_MEMBER_QUERY_LIMIT;
+        if (tmp5) {
           const _Object = Object;
-          tmp3 = Object.keys(pendingAdditions).length >= result;
+          tmp5 = Object.keys(tmp2).length >= tmp4;
         }
         let tmp7 = hasItem;
         if (!hasItem) {
-          tmp7 = item.id in pendingAdditions;
+          tmp7 = item.id in tmp2;
         }
         let obj = {
           start: 0 === index,
@@ -196,74 +205,75 @@ class AddMembersBody {
           guildId: item.id,
           userId: item.id,
           onPress() {
-            (function updatePendingAdditions(item) {
-              let closure_0 = item;
-              const roles = item.roles;
-              if (!roles.includes(outer2_1.id)) {
-                outer2_4((arg0) => {
-                  let obj = {};
-                  const merged = Object.assign(arg0);
-                  if (item.id in obj) {
-                    const id = tmp4.id;
-                    delete tmp[tmp2];
-                  } else {
-                    obj = { text: tmp4.name };
-                    obj = { source: tmp4.avatarSource };
-                    ({ tagAvatar: obj3.avatarStyle, tagAvatar: obj3.style } = outer3_6);
-                    obj.icon = callback(outer4_0(members[13]).Avatar, obj);
-                    if (null != obj) {
-                      const obj1 = { display: obj, row: item };
-                      obj[item.id] = obj1;
-                    }
-                  }
-                  return obj;
-                });
-              }
-            })(item);
-          }
+            const roles = item.roles;
+            if (!roles.includes(outer1_1.id)) {
+              outer1_4((arg0) => {
+                let obj = {};
+                const merged = Object.assign(arg0);
+                if (id.id in obj) {
+                  id = tmp4.id;
+                  delete tmp[tmp2];
+                } else {
+                  obj = { text: null, icon: null };
+                  obj[0] = tmp4.name;
+                  obj = { source: null, avatarStyle: null, style: null };
+                  obj[0] = tmp4.avatarSource;
+                  ({ tagAvatar: obj3[1], tagAvatar: obj3[2] } = outer1_6);
+                  obj[1] = outer2_8(item(outer2_2[13]).Avatar, obj);
+                  const obj1 = { display: null, row: null };
+                  obj1[0] = obj;
+                  obj1[1] = tmp4;
+                  obj[tmp4.id] = obj1;
+                }
+                return obj;
+              });
+            }
+          },
+          disabled: null,
+          checked: null
         };
         if (!hasItem) {
-          if (tmp3) {
-            tmp3 = !tmp2;
+          if (tmp5) {
+            tmp5 = !tmp3;
           }
-          hasItem = tmp3;
+          hasItem = tmp5;
         }
-        obj.disabled = hasItem;
-        obj.checked = tmp7;
+        obj[5] = hasItem;
+        obj[6] = tmp7;
         return closure_8(outer1_13, obj);
       };
-      obj5.data = memo;
-      obj5.extraData = pendingAdditions;
-      str = "always";
-      obj5.keyboardShouldPersistTaps = "always";
-      items2[1] = tmp19(tmp6, obj5);
-      obj.children = items2;
-      return tmp7(tmp8, obj);
+      obj5[2] = memo;
+      obj5[3] = pendingAdditions;
+      obj6 = { children: null };
+      items2[1] = tmp10(FlashList, obj5);
+      obj6[0] = items2;
+      return tmp8(tmp9, obj6);
     }
     return;
   }
 }
-({ jsx: closure_8, Fragment: closure_9, jsxs: closure_10 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWER, flex: 1 };
-_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.inputContainer = { paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16, paddingTop: require("_createForOfIteratorHelperLoose").space.PX_12 };
-let obj2 = { width: 16, height: 16, borderRadius: require("_createForOfIteratorHelperLoose").radii.sm };
-_createForOfIteratorHelperLoose.tagAvatar = obj2;
-let obj1 = { paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16, paddingTop: require("_createForOfIteratorHelperLoose").space.PX_12 };
-_createForOfIteratorHelperLoose.emptyStateText = { color: require("_createForOfIteratorHelperLoose").colors.TEXT_DEFAULT };
-let obj3 = { color: require("_createForOfIteratorHelperLoose").colors.TEXT_DEFAULT };
-_createForOfIteratorHelperLoose.addMembersDescription = { marginHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16 };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-let obj4 = { marginHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16 };
-const result = require("result").fileFinishedImporting("modules/guild_settings/roles/native/action_sheet/AddMembersActionSheet.tsx");
+({ jsx: metroImportAll, Fragment: c9, jsxs: c10 } = jsxProd);
+createCacheKey = { container: null, inputContainer: null, tagAvatar: null, emptyStateText: null, addMembersDescription: null };
+createCacheKey = { backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOWER, flex: 1 };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { paddingHorizontal: require("Themes").space.PX_16, paddingTop: require("Themes").space.PX_12 };
+let obj1 = { paddingHorizontal: require("Themes").space.PX_16, paddingTop: require("Themes").space.PX_12 };
+createCacheKey[2] = { width: 16, height: 16, borderRadius: require("Themes").radii.sm };
+let obj2 = { width: 16, height: 16, borderRadius: require("Themes").radii.sm };
+createCacheKey[3] = { color: require("Themes").colors.TEXT_DEFAULT };
+let obj3 = { color: require("Themes").colors.TEXT_DEFAULT };
+createCacheKey[4] = { marginHorizontal: require("Themes").space.PX_16 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let obj4 = { marginHorizontal: require("Themes").space.PX_16 };
+const result = require("noop").fileFinishedImporting("modules/guild_settings/roles/native/action_sheet/AddMembersActionSheet.tsx");
 
 export default function AddMembersActionSheet(guild) {
   guild = guild.guild;
   const role = guild.role;
-  const tmp = _createForOfIteratorHelperLoose();
+  let first;
+  const tmp = createCacheKey();
   const tmp2 = callback(React.useState({}), 2);
-  const first = tmp2[0];
+  first = tmp2[0];
   const items = [role.id];
   callback = React.useCallback((roles) => {
     roles = roles.roles;
@@ -274,40 +284,40 @@ export default function AddMembersActionSheet(guild) {
   let obj1 = guild(first[22]);
   obj = { [guild.id]: Object.keys(first) };
   const subscribeGuildMembers = obj1.useSubscribeGuildMembers(obj, "AddMembersActionSheet");
-  let tmp7 = 0 === Object.keys(first).length;
-  if (!tmp7) {
+  let tmp9 = 0 === Object.keys(first).length;
+  if (!tmp9) {
     const _Object = Object;
-    tmp7 = Object.keys(first).length > MAX_BULK_ROLE_MEMBERS_ADD;
+    tmp9 = Object.keys(first).length > MAX_BULK_ROLE_MEMBERS_ADD;
   }
-  obj = { scrollable: true, header: null, startExpanded: true };
-  obj1 = {};
-  const intl = guild(first[15]).intl;
-  obj1.title = intl.string(guild(first[15]).t.ZYOK46);
-  obj1.subtitle = role.name;
-  let obj2 = { size: "sm" };
-  const intl2 = guild(first[15]).intl;
-  obj2.text = intl2.string(guild(first[15]).t.OYkgVk);
-  obj2.onPress = function onPress() {
+  obj = { title: null, subtitle: null, trailing: null };
+  const intl = tmp5(tmp6[15]).intl;
+  obj[0] = intl.string(guild(first[15]).t.ZYOK46);
+  obj[1] = role.name;
+  obj1 = { size: "sm", text: null, onPress: null, variant: null, disabled: null };
+  const intl2 = tmp5(tmp6[15]).intl;
+  obj1[1] = intl2.string(guild(first[15]).t.OYkgVk);
+  obj1[2] = function onPress() {
     const obj = role(first[26]);
     obj.bulkAddMemberRoles(guild.id, role.id, role(first[20]).keys(first));
     const obj2 = role(first[20]);
     role(first[27]).hideActionSheet();
   };
   let str = "primary";
-  if (tmp7) {
+  if (tmp9) {
     str = "secondary";
   }
-  obj2.variant = str;
-  obj2.disabled = tmp7;
-  obj1.trailing = callback2(guild(first[25]).Button, obj2);
-  obj.header = callback2(guild(first[24]).BottomSheetTitleHeader, obj1);
-  const obj3 = { style: tmp.container };
-  const obj4 = { variant: "text-sm/normal", style: tmp.addMembersDescription };
-  const intl3 = guild(first[15]).intl;
-  obj4.children = intl3.format(guild(first[15]).t["3OxP4q"], { numMembers: MAX_BULK_ROLE_MEMBERS_ADD });
-  const items1 = [callback2(guild(first[28]).Text, obj4), callback2(AddMembersBody, { guild, role, members: guildMembers, pendingAdditions: first, setPendingAdditions: tmp2[1], autoFocusSearch: true, maxCount: MAX_BULK_ROLE_MEMBERS_ADD, inActionSheet: true })];
-  obj3.children = items1;
-  obj.children = callback3(View, obj3);
-  return callback2(guild(first[23]).BottomSheet, obj);
+  let obj2 = { scrollable: true, header: null, startExpanded: true, children: null };
+  obj1[3] = str;
+  obj1[4] = tmp9;
+  obj[2] = closure_8(guild(first[25]).Button, obj1);
+  obj2[1] = closure_8(guild(first[24]).BottomSheetTitleHeader, obj);
+  const obj3 = { style: tmp.container, children: null };
+  const obj4 = { variant: "text-sm/normal", style: tmp.addMembersDescription, children: null };
+  const intl3 = tmp5(tmp6[15]).intl;
+  obj4[2] = intl3.format(guild(first[15]).t["3OxP4q"], { numMembers: MAX_BULK_ROLE_MEMBERS_ADD });
+  const items1 = [closure_8(guild(first[28]).Text, obj4), closure_8(AddMembersBody, { guild, role, members: guildMembers, pendingAdditions: first, setPendingAdditions: tmp2[1], autoFocusSearch: true, maxCount: MAX_BULK_ROLE_MEMBERS_ADD, inActionSheet: true })];
+  obj3[1] = items1;
+  obj2[3] = callback3(View, obj3);
+  return closure_8(guild(first[23]).BottomSheet, obj2);
 };
 export { AddMembersBody };

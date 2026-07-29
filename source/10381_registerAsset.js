@@ -1,11 +1,10 @@
 // Module ID: 10381
-// Function ID: 80036
+// Function ID: 10382
 // Name: registerAsset
-// Dependencies: [1217]
+// Dependencies: [1241]
 
 // Module 10381 (registerAsset)
 import registerAsset from "registerAsset";
 
-const obj = { __packager_asset: true, httpServerLocation: "/assets/images/channel_following/light", width: 280, height: 120, scales: [2, 3], hash: "822095525bba6121eeb33373acfc6100", name: "channel_following_success_1", type: "png" };
 
-export default registerAsset.registerAsset(obj);
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "6fcffd29ade22a0f8e9e38ff473cdae7", name: "ThemeDarkIcon", type: "png" });

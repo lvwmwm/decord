@@ -1,73 +1,68 @@
-// Module ID: 9679
-// Function ID: 75289
+// Module ID: 9701
+// Function ID: 9702
 // Name: items
-// Dependencies: [57, 31, 27, 8085, 6242, 1852, 653, 33, 4165, 689, 666, 1456, 1557, 1450, 8780, 4563, 5127, 566, 9680, 8747, 8082, 9678, 9682, 9685, 9115, 4026, 1273, 4166, 9691, 5517, 9692, 9726, 6658, 1212, 5153, 5119, 9755, 4589, 5118, 4161, 2]
+// Dependencies: [32, 19, 17, 8109, 6262, 1876, 676, 21, 4189, 712, 689, 1480, 1581, 1474, 8804, 4586, 5149, 589, 9702, 8771, 8106, 9700, 9704, 9707, 9139, 4050, 1297, 4190, 9713, 5535, 9714, 9748, 6679, 1236, 5175, 5141, 9777, 4611, 5140, 4185, 2]
 // Exports: default
 
-// Module 9679 (items)
-import _slicedToArray from "_slicedToArray";
-import PremiumGiftWishlistBanner from "PremiumGiftWishlistBanner";
-import get_ActivityIndicator from "withTiming";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_10 from "_isNativeReflectConstruct";
+// Module 9701 (items)
+import componentDidMount from "componentDidMount";
+import apexExperiment from "apexExperiment";
+import get_ActivityIndicator from "initialize";
+import map from "map";
+import createEmptyPromotionsByType from "createEmptyPromotionsByType";
 import { VerticalGradient } from "ME";
-import jsxProd from "getSystemLocale";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import jsxProd from "PremiumGiftModal";
+import createCacheKey from "createCacheKey";
 
+let c5;
 let closure_12;
-let closure_13;
 let closure_14;
-let closure_5;
 let closure_6;
-let closure_7;
-let closure_8;
+let error;
+let map1;
+let metroImportAll;
 const require = arg1;
-({ ActivityIndicator: closure_5, Pressable: closure_6, View: closure_7, ScrollView: closure_8 } = get_ActivityIndicator);
-({ jsx: closure_12, jsxs: closure_13, Fragment: closure_14 } = jsxProd);
+({ ActivityIndicator: c5, Pressable: closure_6, View: error, ScrollView: metroImportAll } = get_ActivityIndicator);
+({ jsx: closure_12, jsxs: map1, Fragment: closure_14 } = jsxProd);
 let items = [, ];
 ({ TIER_2: arr[0], TIER_0: arr[1] } = require("GuildFeatures").PremiumTypes);
-let closure_16 = _createForOfIteratorHelperLoose.createStyles((width) => {
-  let obj = {};
-  obj = { flex: 1, backgroundColor: importDefault(689).colors.BACKGROUND_BASE_LOW };
-  obj.container = obj;
+let c16 = 16;
+let closure_17 = createCacheKey.createStyles((width) => {
+  let obj = { container: null, headerBackground: null, headerBackgroundColor: null, headerImageContainer: null, headerImage: null, headerOverlay: null, avatar: null, title: null, description: null, carousel: null, dmGiftingContent: null, loadingContainer: null, closeButtonContainer: null, closeButton: null, closeButtonIcon: null, badgeBanner: null };
+  obj = { flex: 1, backgroundColor: importDefault(712).colors.BACKGROUND_BASE_LOW };
+  obj[0] = obj;
   obj = { position: "absolute", width, height: 0.1 * arg1, top: arg1 / 1.75 - 0.1 * arg1 };
-  obj.headerBackground = obj;
-  obj.headerBackgroundColor = { color: importDefault(689).colors.BACKGROUND_BASE_LOW };
-  obj.headerImageContainer = { position: "absolute", width, height: arg1 / 1.75 };
-  obj.headerImage = { width };
-  const obj2 = { width };
-  let obj5 = importDefault(666)("#000000");
-  const obj1 = { color: importDefault(689).colors.BACKGROUND_BASE_LOW };
-  obj2.backgroundColor = obj5.alpha(0.8).hex();
-  obj.headerOverlay = obj2;
-  obj.avatar = { alignSelf: "center" };
-  const obj3 = { textAlign: "center" };
-  const space = importDefault(689).space;
-  obj3.marginTop = arg2 ? space.PX_16 : space.PX_12;
-  obj3.marginHorizontal = importDefault(689).space.PX_24;
-  obj.title = obj3;
-  const obj4 = { textAlign: "center" };
-  const space2 = importDefault(689).space;
-  obj4.marginTop = arg2 ? space2.PX_16 : space2.PX_12;
-  obj4.marginHorizontal = importDefault(689).space.PX_24;
-  obj.description = obj4;
-  obj5 = {};
-  const space3 = importDefault(689).space;
-  obj5.marginTop = arg2 ? space3.PX_16 : space3.PX_32;
-  obj.carousel = obj5;
+  obj[1] = obj;
+  obj[2] = { color: importDefault(712).colors.BACKGROUND_BASE_LOW };
+  obj[3] = { position: "absolute", width, height: arg1 / 1.75 };
+  obj[4] = { width };
+  const obj2 = { width, backgroundColor: null };
+  let obj5 = importDefault(689)("#000000");
+  const obj1 = { color: importDefault(712).colors.BACKGROUND_BASE_LOW };
+  obj2[1] = obj5.alpha(0.8).hex();
+  obj[5] = obj2;
+  obj[6] = { alignSelf: "center" };
+  const space = importDefault(712).space;
   const alphaResult = obj5.alpha(0.8);
-  obj.dmGiftingContent = { paddingTop: importDefault(689).space.PX_16, paddingBottom: importDefault(689).space.PX_48 };
-  obj.loadingContainer = { flex: 1, alignItems: "center", justifyContent: "center" };
-  obj.closeButtonContainer = { position: "absolute", top: 0, left: 0, zIndex: 1 };
-  const obj6 = { paddingTop: importDefault(689).space.PX_16, paddingBottom: importDefault(689).space.PX_48 };
-  obj.closeButton = { padding: importDefault(689).space.PX_16 };
-  obj.closeButtonIcon = { width: 24, height: 24, tintColor: "white" };
-  const obj7 = { padding: importDefault(689).space.PX_16 };
-  obj.badgeBanner = { marginTop: importDefault(689).space.PX_16, marginHorizontal: importDefault(689).space.PX_16 };
+  obj[7] = { textAlign: "center", marginTop: arg2 ? space.PX_16 : space.PX_12, marginHorizontal: importDefault(712).space.PX_24 };
+  const space2 = tmp(712).space;
+  const obj3 = { textAlign: "center", marginTop: arg2 ? space.PX_16 : space.PX_12, marginHorizontal: importDefault(712).space.PX_24 };
+  obj[8] = { textAlign: "center", marginTop: arg2 ? space2.PX_16 : space2.PX_12, marginHorizontal: importDefault(712).space.PX_24 };
+  const space3 = tmp(712).space;
+  obj[9] = { marginTop: arg2 ? space3.PX_16 : space3.PX_32 };
+  obj5 = { paddingTop: tmp(712).space.PX_16, paddingBottom: tmp(712).space.PX_48 };
+  obj[10] = obj5;
+  obj[11] = { flex: 1, alignItems: "center", justifyContent: "center" };
+  obj[12] = { position: "absolute", top: 0, left: 0, zIndex: 1 };
+  const obj4 = { textAlign: "center", marginTop: arg2 ? space2.PX_16 : space2.PX_12, marginHorizontal: importDefault(712).space.PX_24 };
+  obj[13] = { padding: importDefault(712).space.PX_16 };
+  obj[14] = { width: 24, height: 24, tintColor: "white" };
+  const obj6 = { padding: importDefault(712).space.PX_16 };
+  obj[15] = { marginTop: importDefault(712).space.PX_16, marginHorizontal: importDefault(712).space.PX_16 };
   return obj;
 });
-let closure_17 = { code: "function PremiumGiftPlanSelectTsx1(){const{STANDARD_EASING,withTiming,carouselVisibility}=this.__closure;const animationSettings={easing:STANDARD_EASING,duration:500};return{opacity:withTiming(carouselVisibility.get()?1:0,animationSettings),transform:[{translateY:withTiming(carouselVisibility.get()?0:100,animationSettings)}]};}" };
-let closure_18 = { code: "function PremiumGiftPlanSelectTsx2(value,index){const{lastItemIndex,leftOffset,centerOffset,rightOffset,carouselStep}=this.__closure;const activeIndex=index-value;const leftT=Math.max(0,Math.min(1,activeIndex));const rightT=Math.max(0,Math.min(1,activeIndex-(lastItemIndex-1)));const offset=leftOffset+leftT*(centerOffset-leftOffset)+rightT*(rightOffset-centerOffset);return{transform:[{translateX:value*carouselStep+offset}]};}" };
+let closure_18 = { code: "function PremiumGiftPlanSelectTsx1(){const{STANDARD_EASING,withTiming,carouselVisibility}=this.__closure;const animationSettings={easing:STANDARD_EASING,duration:500};return{opacity:withTiming(carouselVisibility.get()?1:0,animationSettings),transform:[{translateY:withTiming(carouselVisibility.get()?0:100,animationSettings)}]};}" };
+let closure_19 = { code: "function PremiumGiftPlanSelectTsx2(value,index){const{lastItemIndex,leftOffset,centerOffset,rightOffset,carouselStep}=this.__closure;const activeIndex=index-value;const leftT=Math.max(0,Math.min(1,activeIndex));const rightT=Math.max(0,Math.min(1,activeIndex-(lastItemIndex-1)));const offset=leftOffset+leftT*(centerOffset-leftOffset)+rightT*(rightOffset-centerOffset);return{transform:[{translateX:value*carouselStep+offset}]};}" };
 let result = require("get ActivityIndicator").fileFinishedImporting("modules/premium/native/gifting/PremiumGiftPlanSelect.tsx");
 
 export default function PremiumGiftPlanSelect(shouldUseDMWishlistGiftingDesign) {
@@ -75,16 +70,22 @@ export default function PremiumGiftPlanSelect(shouldUseDMWishlistGiftingDesign) 
   let c7;
   let claimableRewards;
   let giftsToNextTier;
+  let height;
   let nextTier;
   let recipientUser;
-  let tmp14;
+  let tmp18;
   let top;
+  let width;
   shouldUseDMWishlistGiftingDesign = shouldUseDMWishlistGiftingDesign.shouldUseDMWishlistGiftingDesign;
+  let navigation;
+  claimableRewards = undefined;
+  let onClose;
+  let selectPremiumGift;
   let enabled;
   let c5;
   let first;
   c7 = undefined;
-  let first1;
+  let num;
   let c9;
   let ref;
   let callback;
@@ -92,15 +93,15 @@ export default function PremiumGiftPlanSelect(shouldUseDMWishlistGiftingDesign) 
   let callback2;
   let str;
   let sharedValue;
+  let c16;
   callback2 = undefined;
-  let c17;
   let result1;
   let diff1;
   let obj = navigation(onClose[11]);
   navigation = obj.useNavigation();
   ({ top, bottom } = claimableRewards(onClose[12])());
-  const size = claimableRewards(onClose[13])();
-  const width = size.width;
+  const tmp5 = claimableRewards(onClose[12])();
+  ({ width, height } = claimableRewards(onClose[13])());
   let obj1 = navigation(onClose[14]);
   const nativeGiftContext = obj1.useNativeGiftContext();
   ({ recipientUser, claimableRewards } = nativeGiftContext);
@@ -116,7 +117,7 @@ export default function PremiumGiftPlanSelect(shouldUseDMWishlistGiftingDesign) 
   let items = [ref];
   const stateFromStoresArray = obj4.useStateFromStoresArray(items, () => ref.getGiftPromotionRewardSkuIds());
   let obj5 = navigation(onClose[18]);
-  const selectPremiumGift = obj5.useSelectPremiumGift("PremiumGiftPlanSelect");
+  selectPremiumGift = obj5.useSelectPremiumGift("PremiumGiftPlanSelect");
   let obj6 = claimableRewards(onClose[19]);
   enabled = obj6.useConfig({ location: "PremiumGiftPlanSelect" }).enabled;
   let obj7 = navigation(onClose[17]);
@@ -131,38 +132,38 @@ export default function PremiumGiftPlanSelect(shouldUseDMWishlistGiftingDesign) 
   if (enabled) {
     enabled = null != nextTier;
   }
-  const tmp9 = callback2(width, size.height, enabled);
-  c5 = tmp9;
-  const tmp10 = selectPremiumGift(enabled.useState(0), 2);
-  first = tmp10[0];
-  let num = 1;
-  let tmp2 = claimableRewards(onClose[12])();
-  [tmp14, c7] = selectPremiumGift(enabled.useState(false), 2);
+  const tmp13 = callback2(width, height, enabled);
+  c5 = tmp13;
+  let obj8 = enabled;
+  const tmp14 = selectPremiumGift(enabled.useState(0), 2);
+  first = tmp14[0];
+  const tmp6 = claimableRewards(onClose[13])();
+  [tmp18, c7] = selectPremiumGift(enabled.useState(false), 2);
   const items2 = [navigation];
   const effect = enabled.useEffect(() => {
     navigation = navigation.addListener("state", () => {
-      const state = closure_0.getState();
-      outer1_7(state.routes[state.index].name === navigation(onClose[21]).PremiumGiftScreens.PLAN_SELECT);
+      const state = lib.getState();
+      callback(state.routes[state.index].name === lib(outer1_2[21]).PremiumGiftScreens.PLAN_SELECT);
     });
     return () => {
-      closure_0.removeListener("state", closure_0);
+      lib.removeListener("state", lib);
     };
   }, items2);
-  const tmp16 = selectPremiumGift(enabled.useState(null), 2);
-  first1 = tmp16[0];
-  c9 = tmp18;
+  const tmp20 = selectPremiumGift(enabled.useState(null), 2);
+  num = tmp20[0];
+  c9 = tmp21;
   ref = enabled.useRef([]);
   const items3 = [shouldUseDMWishlistGiftingDesign];
   const effect1 = enabled.useEffect(() => {
     ref.current = [];
     _undefined2(null);
   }, items3);
-  const items4 = [tmp16[1]];
+  const items4 = [tmp20[1]];
   callback = enabled.useCallback(() => {
     if (ref.current.length >= sharedValue.length) {
       const _Math = Math;
       const items = [];
-      HermesBuiltin.arraySpread(ref.current, 0);
+      HermesBuiltin.arraySpread(tmp.current, 0);
       const _Math2 = Math;
       const applyResult = HermesBuiltin.apply(items, Math);
       const _Number = Number;
@@ -176,75 +177,72 @@ export default function PremiumGiftPlanSelect(shouldUseDMWishlistGiftingDesign) 
   }, []);
   let result = 0.86 * width;
   callback = result;
-  const items5 = [selectPremiumGift, result, ref, callback, first1, first, claimableRewards];
+  const items5 = [selectPremiumGift, result, ref, callback, num, first, claimableRewards];
   callback2 = enabled.useCallback((arg0) => {
-    let tmp = arg1;
     let closure_0 = arg0;
+    let obj = arg1;
     if (arg1 === undefined) {
-      let obj = { forScreenReader: false };
-      tmp = obj;
+      obj = { forScreenReader: false };
     }
-    const forScreenReader = tmp.forScreenReader;
+    const forScreenReader = obj.forScreenReader;
     return (item) => {
       item = item.item;
       const index = item.index;
-      let obj = { accessible: index };
+      let obj = { accessible: index, accessibilityRole: null, onPress: null, style: null, children: null };
       let str;
       if (index) {
         str = "button";
       }
-      obj.accessibilityRole = str;
+      obj[1] = str;
       let fn;
       if (index) {
-        fn = () => outer2_3(item);
+        fn = () => outer1_3(item);
       }
-      obj.onPress = fn;
+      obj[2] = fn;
       obj = { paddingVertical: claimableRewards(onClose[9]).space.PX_8 };
-      obj.style = obj;
+      obj[3] = obj;
       obj = {
         premiumType: item,
         variant: item,
         onPress() {
-          return outer2_3(item);
-        }
+          return outer1_3(item);
+        },
+        style: null,
+        onLayout: null,
+        claimableRewards: null,
+        isSelected: null
       };
-      const obj1 = {};
-      let tmp6;
-      if (null != outer1_8) {
-        tmp6 = outer1_8;
-      }
-      obj1.height = tmp6;
-      obj1.width = outer1_12;
+      const obj1 = { height: outer1_8, width: outer1_12, alignSelf: null };
       let str2;
       if ("default" === item) {
         str2 = "center";
       }
-      obj1.alignSelf = str2;
-      obj.style = obj1;
-      obj.onLayout = function onLayout(nativeEvent) {
+      obj1[2] = str2;
+      obj[3] = obj1;
+      obj[4] = function onLayout(nativeEvent) {
         const height = nativeEvent.nativeEvent.layout.height;
         if (height > 0) {
-          let num = 0;
-          if (null != outer2_10.current[index]) {
-            num = tmp5;
+          let num = outer1_10.current[index];
+          if (num == null) {
+            num = 0;
           }
-          outer2_10.current[index] = Math.max(height, num);
-          outer2_11();
+          outer1_10.current[index] = Math.max(height, num);
+          outer1_11();
           const tmp2 = index;
         }
       };
-      obj.claimableRewards = forScreenReader;
-      obj.isSelected = outer1_6 === index;
-      obj.children = c12(claimableRewards(onClose[23]), obj, index);
+      obj[5] = forScreenReader;
+      obj[6] = outer1_6 === index;
+      obj[4] = c12(claimableRewards(onClose[23]), obj, index);
       return c12(index ? first : c7, obj);
     };
   }, items5);
-  let obj8 = navigation(onClose[24]);
-  let tmp26 = null != claimableRewards;
-  let navigationResult = enabled;
-  const isWindowSmall = obj8.useIsWindowSmall();
-  if (tmp26) {
-    tmp26 = claimableRewards.length > 0;
+  let tmpResult = tmp(tmp2[24]);
+  let tmp29 = null != claimableRewards;
+  let tmp64Result = enabled;
+  const isWindowSmall = tmpResult.useIsWindowSmall();
+  if (tmp29) {
+    tmp29 = claimableRewards.length > 0;
   }
   if (isWindowSmall) {
     str = "smallCompact";
@@ -252,64 +250,62 @@ export default function PremiumGiftPlanSelect(shouldUseDMWishlistGiftingDesign) 
     str = "compact";
   }
   const items6 = [callback2, str];
-  const memo = enabled.useMemo(() => callback2(str), items6);
+  const memo = obj8.useMemo(() => callback2(str), items6);
   const items7 = [callback2];
-  let memo1 = enabled.useMemo(() => callback2("default"), items7);
-  let obj9 = navigation(onClose[25]);
-  sharedValue = obj9.useSharedValue(false);
-  const items8 = [sharedValue, first1];
-  const effect2 = enabled.useEffect(() => {
-    const result = sharedValue.set(null != first1);
+  let memo1 = obj8.useMemo(() => callback2("default"), items7);
+  tmpResult = tmp(tmp2[25]);
+  sharedValue = tmpResult.useSharedValue(false);
+  const items8 = [sharedValue, num];
+  const effect2 = obj8.useEffect(() => {
+    const result = sharedValue.set(null != num);
   }, items8);
-  let obj10 = navigation(onClose[25]);
-  function pe() {
+  const tmp17 = selectPremiumGift(enabled.useState(false), 2);
+  function he() {
     let obj = { easing: navigation(onClose[26]).STANDARD_EASING, duration: 500 };
-    obj = {};
     let num = 0;
     if (sharedValue.get()) {
       num = 1;
     }
-    obj.opacity = navigation(onClose[27]).withTiming(num, obj);
-    obj = {};
-    const obj3 = navigation(onClose[27]);
+    obj = { opacity: navigation(onClose[27]).withTiming(num, obj), transform: null };
+    const obj2 = navigation(onClose[27]);
+    const obj3 = sharedValue;
+    const tmp = navigation;
+    const tmp2 = onClose;
     let num2 = 100;
-    if (sharedValue.get()) {
+    if (obj3.get()) {
       num2 = 0;
     }
-    obj.translateY = navigation(onClose[27]).withTiming(num2, obj);
+    obj = { translateY: navigation(onClose[27]).withTiming(num2, obj) };
     const items = [obj];
-    obj.transform = items;
+    obj[1] = items;
     return obj;
   }
-  obj = { STANDARD_EASING: navigation(onClose[26]).STANDARD_EASING, withTiming: navigation(onClose[27]).withTiming, carouselVisibility: sharedValue };
-  pe.__closure = obj;
-  pe.__workletHash = 2946262965957;
-  pe.__initData = c17;
-  const animatedStyle = obj10.useAnimatedStyle(pe);
-  const items9 = [tmp9];
-  const sum = result + 16;
-  callback2 = sum;
-  let diff = sharedValue.length - num;
-  c17 = diff;
+  obj = { STANDARD_EASING: tmp(tmp2[26]).STANDARD_EASING, withTiming: tmp(tmp2[27]).withTiming, carouselVisibility: sharedValue };
+  he.__closure = obj;
+  he.__workletHash = 2946262965957;
+  he.__initData = result1;
+  const animatedStyle = navigation(onClose[25]).useAnimatedStyle(he);
+  const items9 = [tmp13];
+  const sum = result + c16;
+  c16 = sum;
+  let diff = sharedValue.length - 1;
+  callback2 = diff;
   result1 = (width - result) / 2;
-  diff1 = width - result - 16;
-  class Se {
-    constructor(arg0, arg1) {
-      diff = arg1 - shouldUseDMWishlistGiftingDesign;
-      bound = Math.max(0, Math.min(1, diff));
-      obj = {};
-      obj = { translateX: shouldUseDMWishlistGiftingDesign * c16 + (16 + bound * (withTiming - 16) + Math.max(0, Math.min(1, diff - (c17 - 1))) * (c19 - withTiming)) };
-      items = [];
-      items[0] = obj;
-      obj.transform = items;
-      return obj;
-    }
+  diff1 = width - result - c16;
+  function fe(arg0, arg1) {
+    const diff = arg1 - arg0;
+    const bound = Math.max(0, Math.min(1, diff));
+    let obj = { transform: null };
+    obj = { translateX: arg0 * c16 + (16 + bound * (result1 - 16) + Math.max(0, Math.min(1, diff - (c17 - 1))) * (diff1 - result1)) };
+    const items = [obj];
+    obj[0] = items;
+    return obj;
   }
-  Se.__closure = { lastItemIndex: diff, leftOffset: 16, centerOffset: result1, rightOffset: diff1, carouselStep: sum };
-  Se.__workletHash = 8954351954675;
-  Se.__initData = result1;
+  fe.__closure = { lastItemIndex: diff, leftOffset: 16, centerOffset: result1, rightOffset: diff1, carouselStep: sum };
+  fe.__workletHash = 8954351954675;
+  fe.__initData = diff1;
   const items10 = [sum, diff, 16, result1, diff1];
-  const memo2 = enabled.useMemo(() => {
+  const memo2 = obj8.useMemo(() => {
     const obj = claimableRewards(onClose[10])(_undefined.headerBackgroundColor.color);
     const items = [claimableRewards(onClose[10])(_undefined.headerBackgroundColor.color).alpha(0).hex(), ];
     const alphaResult = claimableRewards(onClose[10])(_undefined.headerBackgroundColor.color).alpha(0);
@@ -317,271 +313,251 @@ export default function PremiumGiftPlanSelect(shouldUseDMWishlistGiftingDesign) 
     items[1] = claimableRewards(onClose[10])(_undefined.headerBackgroundColor.color).alpha(1).hex();
     return items;
   }, items9);
-  const callback3 = enabled.useCallback(Se, items10);
+  const callback3 = obj8.useCallback(fe, items10);
   if (shouldUseDMWishlistGiftingDesign.isLoadingWishlist) {
-    navigation = callback;
-    navigation = c7;
-    obj = {};
+    obj = { style: null, children: null };
     const items11 = [, ];
-    ({ container: arr22[0], loadingContainer: arr22[1] } = tmp9);
-    obj.style = items11;
-    navigation = c5;
-    obj1 = { size: "large" };
-    obj.children = callback(c5, obj1);
-    navigation = callback(c7, obj);
+    ({ container: arr23[0], loadingContainer: arr23[1] } = tmp13);
+    obj[0] = items11;
+    obj[1] = callback(c5, { size: "large" });
+    let tmp64Result1 = callback(c7, obj);
   } else if (shouldUseDMWishlistGiftingDesign) {
-    obj2 = { style: tmp9.container };
-    obj3 = {};
-    obj4 = { paddingBottom: bottom };
-    obj3.contentContainerStyle = obj4;
-    navigation = callback;
-    navigation = c7;
-    navigation = callback2;
-    navigation = first1;
-    if (navigationResult) {
-      navigation = callback;
-      obj5 = { style: tmp9.badgeBanner };
-      obj6 = { onPress: callback1, accessibilityRole: "button" };
-      navigation = claimableRewards;
-      navigation = onClose;
-      navigation = c7;
-      navigation = first;
-      obj7 = { giftsToNextTier };
-      const name2 = nextTier.name;
-      let str10 = "";
-      navigation = claimableRewards(onClose[28]);
-      if (null != name2) {
-        str10 = name2;
+    obj1 = { style: null, children: null };
+    obj1[0] = tmp13.container;
+    obj2 = { contentContainerStyle: null, children: null };
+    obj3 = { paddingBottom: null };
+    obj3[0] = bottom;
+    obj2[0] = obj3;
+    if (tmp64Result) {
+      obj4 = { style: null, children: null };
+      obj4[0] = tmp13.badgeBanner;
+      obj5 = { onPress: null, accessibilityRole: "button", children: null };
+      obj5[0] = callback1;
+      obj6 = { giftsToNextTier: null, nextTierName: null, nextTierIcon: null, analyticsLocation: null };
+      obj6[0] = giftsToNextTier;
+      let str4 = nextTier.name;
+      let tmp4Result = tmp4(tmp2[28]);
+      if (str4 == null) {
+        str4 = "";
       }
-      obj7.nextTierName = str10;
-      obj7.nextTierIcon = nextTier.simple_icon_url;
-      navigation = claimableRewards;
-      navigation = onClose;
-      obj7.analyticsLocation = claimableRewards(onClose[29]).PREMIUM_GIFT_PLAN_SELECTION;
-      obj6.children = navigation(navigation, obj7);
-      obj5.children = navigation(navigation, obj6);
-      navigationResult = navigation(navigation, obj5);
+      obj6[1] = str4;
+      obj6[2] = nextTier.simple_icon_url;
+      obj6[3] = tmp4(tmp2[29]).PREMIUM_GIFT_PLAN_SELECTION;
+      obj5[2] = tmp64(tmp4Result, obj6);
+      obj4[1] = tmp64(first, obj5);
+      tmp64Result = tmp64(tmp65, obj4);
+      const tmp68 = first;
     }
-    const items12 = [navigationResult, , ];
-    obj8 = { style: tmp9.dmGiftingContent };
+    const items12 = [tmp64Result, , ];
+    obj7 = { style: null, children: null };
+    obj7[0] = tmp13.dmGiftingContent;
     if (0 !== stateFromStoresArray.length) {
-      navigation = null;
       if (undefined === claimableRewards) {
-        obj8.children = null;
-        items12[1] = navigation(navigation, obj8);
-        navigation = null != recipientUser;
-        if (navigation) {
-          navigation = callback;
-          navigation = onClose;
-          obj9 = { giftRecipient: recipientUser };
-          navigation = callback(navigation(onClose[31]).PremiumGiftWishlistBanner, obj9);
+        obj7[1] = null;
+        items12[1] = tmp64(tmp65, obj7);
+        tmp64Result = null != recipientUser;
+        if (tmp64Result) {
+          obj8 = { giftRecipient: null };
+          obj8[0] = recipientUser;
+          tmp64Result = tmp64(tmp(tmp2[31]).PremiumGiftWishlistBanner, obj8);
         }
-        items12[2] = navigation;
-        obj3.children = items12;
-        obj2.children = navigation(navigation, obj3);
-        navigation = navigation(navigation, obj2);
+        items12[2] = tmp64Result;
+        obj2[1] = items12;
+        obj1[1] = tmp66(tmp67, obj2);
+        tmp64Result1 = tmp64(tmp65, obj1);
       }
     }
-    navigation = callback;
     if (isScreenReaderEnabled) {
-      navigation = first1;
-      obj10 = { horizontal: true, showsHorizontalScrollIndicator: false, contentContainerStyle: { gap: 16, paddingHorizontal: 16 } };
-      navigation = sharedValue;
-      obj10.children = sharedValue.map((item, index) => callback2(str, { forScreenReader: true })({ item, index }));
-      navigation = navigation(first1, obj10);
+      const obj9 = { horizontal: true, showsHorizontalScrollIndicator: false, contentContainerStyle: null, children: null };
+      const obj10 = { gap: null, paddingHorizontal: null };
+      obj10[0] = tmp37;
+      obj10[1] = tmp37;
+      obj9[2] = obj10;
+      obj9[3] = arr12.map((item, index) => callback2(str, { forScreenReader: true })({ item, index }));
+      let tmp64Result2 = tmp64(tmp67, obj9);
     } else {
-      navigation = claimableRewards;
-      navigation = onClose;
-      const obj11 = { style: animatedStyle };
-      navigation = sharedValue;
-      obj11.data = sharedValue;
-      obj11.renderItem = memo;
-      obj11.width = width;
-      obj11.windowSize = sharedValue.length;
-      navigation = claimableRewards(onClose[30]);
-      if (null != first1) {
-        num = first1;
+      const obj11 = { style: null, data: null, renderItem: null, width: null, windowSize: null, height: null, onConfigurePanGesture: null, loop: false, scrollAnimationDuration: 200, customAnimation: null, onSnapToItem: null };
+      obj11[0] = animatedStyle;
+      obj11[1] = arr12;
+      obj11[2] = memo;
+      obj11[3] = width;
+      obj11[4] = arr12.length;
+      tmp4Result = tmp4(tmp2[30]);
+      if (num == null) {
+        num = 1;
       }
-      navigation = claimableRewards;
-      navigation = onClose;
-      obj11.height = num + 2 * claimableRewards(onClose[9]).space.PX_8;
-      obj11.onConfigurePanGesture = function onConfigurePanGesture(activeOffsetX) {
-        const items = [-10, 10];
-        activeOffsetX.activeOffsetX(items);
+      obj11[5] = num + 2 * tmp4(tmp2[9]).space.PX_8;
+      obj11[6] = function onConfigurePanGesture(activeOffsetX) {
+        activeOffsetX.activeOffsetX([-10, 10]);
       };
-      obj11.loop = false;
-      obj11.scrollAnimationDuration = 200;
-      obj11.customAnimation = callback3;
-      obj11.onSnapToItem = tmp12;
-      navigation = navigation(navigation, obj11);
+      obj11[9] = callback3;
+      obj11[10] = tmp16;
+      tmp64Result2 = tmp64(tmp4Result, obj11);
     }
+    tmp66 = callback2;
   } else {
-    const obj12 = {};
-    if (tmp14) {
-      tmp14 = callback(claimableRewards(onClose[32]), { animated: true, barStyle: "light-content" });
+    if (tmp18) {
+      tmp18 = callback(tmp4(tmp2[32]), { animated: true, barStyle: "light-content" });
     }
-    const items13 = [tmp14, , , , , ];
-    const obj13 = {};
-    const items14 = [tmp9.closeButtonContainer, ];
-    const obj14 = { paddingTop: top };
-    items14[1] = obj14;
-    obj13.style = items14;
-    obj13.onPress = onClose;
-    obj13.accessibilityRole = "button";
-    const intl = navigation(onClose[33]).intl;
-    obj13.accessibilityLabel = intl.string(navigation(onClose[33]).t.cpT0Cq);
-    const obj15 = { style: tmp9.closeButton };
-    const obj16 = { size: "md", style: tmp9.closeButtonIcon };
-    obj15.children = callback(navigation(onClose[34]).XSmallIcon, obj16);
-    obj13.children = callback(c7, obj15);
-    items13[1] = callback(first, obj13);
-    const obj17 = { resizeMode: "cover" };
+    const items13 = [tmp18, , , , , ];
+    const obj12 = { style: null, onPress: null, accessibilityRole: "button", accessibilityLabel: null, children: null };
+    const items14 = [tmp13.closeButtonContainer, ];
+    const obj13 = { paddingTop: null };
+    obj13[0] = top;
+    items14[1] = obj13;
+    obj12[0] = items14;
+    obj12[1] = onClose;
+    const intl = tmp(tmp2[33]).intl;
+    obj12[3] = intl.string(tmp(tmp2[33]).t.cpT0Cq);
+    const obj14 = { style: null, children: null };
+    obj14[0] = tmp13.closeButton;
+    const obj15 = { size: "md", style: null };
+    obj15[1] = tmp13.closeButtonIcon;
+    obj14[1] = callback(tmp(tmp2[34]).XSmallIcon, obj15);
+    obj12[4] = callback(c7, obj14);
+    items13[1] = callback(first, obj12);
+    const obj16 = { resizeMode: "cover", style: null, source: null };
     const items15 = [, ];
-    ({ headerImageContainer: arr15[0], headerImage: arr15[1] } = tmp9);
-    obj17.style = items15;
-    obj17.source = claimableRewards(onClose[36]);
-    items13[2] = callback(claimableRewards(onClose[35]), obj17);
-    const obj18 = {};
+    ({ headerImageContainer: arr16[0], headerImage: arr16[1] } = tmp13);
+    obj16[1] = items15;
+    obj16[2] = tmp4(tmp2[36]);
+    items13[2] = callback(tmp4(tmp2[35]), obj16);
+    const obj17 = { style: null };
     const items16 = [, ];
-    ({ headerImageContainer: arr16[0], headerOverlay: arr16[1] } = tmp9);
-    obj18.style = items16;
-    items13[3] = callback(c7, obj18);
-    const obj19 = { style: tmp9.headerBackground };
-    ({ START: obj20.start, END: obj20.end } = callback);
-    obj19.colors = memo2;
-    items13[4] = callback(claimableRewards(onClose[37]), obj19);
-    const obj20 = {};
-    const obj21 = { paddingBottom: bottom };
-    obj20.contentContainerStyle = obj21;
-    const obj22 = {};
-    const obj23 = { paddingTop: top + navigation(onClose[38]).NAV_BAR_HEIGHT };
-    const items17 = [obj23];
-    obj22.style = items17;
+    ({ headerImageContainer: arr17[0], headerOverlay: arr17[1] } = tmp13);
+    obj17[0] = items16;
+    items13[3] = callback(c7, obj17);
+    const obj18 = { style: null, start: null, end: null, colors: null };
+    obj18[0] = tmp13.headerBackground;
+    ({ START: obj20[1], END: obj20[2] } = callback);
+    obj18[3] = memo2;
+    items13[4] = callback(tmp4(tmp2[37]), obj18);
+    const obj19 = { contentContainerStyle: null, children: null };
+    const obj20 = { paddingBottom: null };
+    obj20[0] = bottom;
+    obj19[0] = obj20;
+    const obj21 = { style: null, children: null };
+    const obj22 = { paddingTop: null };
+    obj22[0] = top + tmp(tmp2[38]).NAV_BAR_HEIGHT;
+    const items17 = [obj22];
+    obj21[0] = items17;
     if (null == recipientUser) {
-      const items18 = [tmp54, , , , ];
-      const obj24 = { style: tmp9.title };
-      let str5 = "heading-xxl/extrabold";
+      const items18 = [tmp52, , , , ];
+      const obj23 = { style: null, variant: null, color: "text-overlay-light", children: null };
+      obj23[0] = tmp13.title;
+      let str2 = "heading-xxl/extrabold";
       if (null != recipientUser) {
-        str5 = "heading-xl/extrabold";
+        str2 = "heading-xl/extrabold";
       }
-      obj24.variant = str5;
-      obj24.color = "text-overlay-light";
+      obj23[1] = str2;
       if (null != recipientUser) {
-        const intl3 = navigation(onClose[33]).intl;
-        const obj25 = {};
+        const intl3 = tmp(tmp2[33]).intl;
         let username = recipientUser.globalName;
-        if (null == username) {
+        if (username == null) {
           username = recipientUser.username;
         }
-        obj25.username = username;
-        let formatToPlainStringResult = intl3.formatToPlainString(navigation(onClose[33]).t.m5ggvH, obj25);
+        const obj24 = { username: null };
+        obj24[0] = username;
+        let formatToPlainStringResult = intl3.formatToPlainString(tmp(tmp2[33]).t.m5ggvH, obj24);
       } else {
-        const intl2 = navigation(onClose[33]).intl;
-        formatToPlainStringResult = intl2.string(navigation(onClose[33]).t.dqQgZv);
+        const intl2 = tmp(tmp2[33]).intl;
+        formatToPlainStringResult = intl2.string(tmp(tmp2[33]).t.dqQgZv);
       }
-      obj24.children = formatToPlainStringResult;
-      items18[1] = callback(navigation(onClose[39]).Text, obj24);
-      const obj26 = { style: tmp9.description, variant: "heading-sm/medium", color: "text-overlay-light" };
-      const intl4 = navigation(onClose[33]).intl;
-      obj26.children = intl4.string(navigation(onClose[33]).t["30qzrd"]);
-      items18[2] = callback(navigation(onClose[39]).Text, obj26);
-      let tmp73Result = navigationResult;
-      if (navigationResult) {
-        const obj27 = { style: tmp9.badgeBanner, onPress: callback1, accessibilityRole: "button" };
-        const obj28 = { giftsToNextTier };
-        const name = nextTier.name;
-        let str7 = "";
-        if (null != name) {
-          str7 = name;
+      obj23[3] = formatToPlainStringResult;
+      items18[1] = tmp46(tmp(tmp2[39]).Text, obj23);
+      const obj25 = { style: null, variant: "heading-sm/medium", color: "text-overlay-light", children: null };
+      obj25[0] = tmp13.description;
+      const intl4 = tmp(tmp2[33]).intl;
+      obj25[3] = intl4.string(tmp(tmp2[33]).t["30qzrd"]);
+      items18[2] = tmp46(tmp(tmp2[39]).Text, obj25);
+      let tmp46Result = tmp64Result;
+      if (tmp64Result) {
+        const obj26 = { style: null, onPress: null, accessibilityRole: "button", children: null };
+        obj26[0] = tmp13.badgeBanner;
+        obj26[1] = callback1;
+        const obj27 = { giftsToNextTier: null, nextTierName: null, nextTierIcon: null, analyticsLocation: null };
+        obj27[0] = giftsToNextTier;
+        let str3 = nextTier.name;
+        if (str3 == null) {
+          str3 = "";
         }
-        obj28.nextTierName = str7;
-        obj28.nextTierIcon = nextTier.simple_icon_url;
-        obj28.analyticsLocation = claimableRewards(onClose[29]).PREMIUM_GIFT_PLAN_SELECTION;
-        obj27.children = callback(claimableRewards(onClose[28]), obj28);
-        tmp73Result = tmp73(first, obj27);
-        const tmp74 = first;
-        const tmp77 = claimableRewards(onClose[28]);
+        obj27[1] = str3;
+        obj27[2] = nextTier.simple_icon_url;
+        obj27[3] = tmp4(tmp2[29]).PREMIUM_GIFT_PLAN_SELECTION;
+        obj26[3] = tmp46(tmp4(tmp2[28]), obj27);
+        tmp46Result = tmp46(tmp47, obj26);
+        const tmp4Result2 = tmp4(tmp2[28]);
       }
-      items18[3] = tmp73Result;
+      items18[3] = tmp46Result;
       if (0 !== stateFromStoresArray.length) {
         if (undefined === claimableRewards) {
+          const obj28 = { children: null };
           items18[4] = null;
-          obj22.children = items18;
-          obj20.children = tmp53(tmp48, obj22);
-          items13[5] = tmp44(tmp52, obj20);
-          obj12.children = items13;
-          navigation = tmp39(tmp40, obj12);
+          obj21[1] = items18;
+          obj19[1] = tmp43(tmp48, obj21);
+          items13[5] = tmp46(tmp51, obj19);
+          obj28[0] = items13;
+          tmp64Result1 = tmp43(tmp44, obj28);
         }
       }
       if (isScreenReaderEnabled) {
-        const obj29 = {
-          horizontal: true,
-          showsHorizontalScrollIndicator: false,
-          style: tmp9.carousel,
-          contentContainerStyle: { gap: 16, paddingHorizontal: 16 },
-          children: sharedValue.map((item, index) => {
-                  const str = "default";
-                  return callback2(str, { forScreenReader: true })({ item, index });
-                })
-        };
-        let tmp81Result = callback(first1, obj29);
+        const obj29 = { horizontal: true, showsHorizontalScrollIndicator: false, style: null, contentContainerStyle: null, children: null };
+        obj29[2] = tmp13.carousel;
+        const obj30 = { gap: null, paddingHorizontal: null };
+        obj30[0] = tmp37;
+        obj30[1] = tmp37;
+        obj29[3] = obj30;
+        obj29[4] = arr12.map((item, index) => {
+          const str = "default";
+          return callback2(str, { forScreenReader: true })({ item, index });
+        });
+        tmp46Result = tmp46(tmp51, obj29);
       } else {
-        const obj30 = {};
-        const obj31 = {};
-        const items19 = [tmp9.carousel, animatedStyle];
-        obj31.style = items19;
-        obj31.data = sharedValue;
-        if (navigationResult) {
+        const obj31 = { style: null, data: null, renderItem: null, width: null, height: null, onConfigurePanGesture: null, loop: false, scrollAnimationDuration: 200, customAnimation: null, mode: "parallax", modeConfig: null, onSnapToItem: null };
+        const items19 = [tmp13.carousel, animatedStyle];
+        obj31[0] = items19;
+        obj31[1] = arr12;
+        if (tmp64Result) {
           memo1 = memo;
         }
-        obj31.renderItem = memo1;
-        obj31.width = width;
+        obj31[2] = memo1;
+        obj31[3] = width;
         let sum1;
-        if (null != first1) {
-          sum1 = first1 + 2 * claimableRewards(onClose[9]).space.PX_8;
+        if (null != num) {
+          sum1 = num + 2 * tmp4(tmp2[9]).space.PX_8;
         }
-        obj31.height = sum1;
-        obj31.onConfigurePanGesture = function onConfigurePanGesture(activeOffsetX) {
-          const items = [-10, 10];
-          activeOffsetX.activeOffsetX(items);
+        obj31[4] = sum1;
+        obj31[5] = function onConfigurePanGesture(activeOffsetX) {
+          activeOffsetX.activeOffsetX([-10, 10]);
         };
-        obj31.loop = false;
-        obj31.scrollAnimationDuration = 200;
-        let tmp91;
-        if (navigationResult) {
-          tmp91 = callback3;
+        let tmp60;
+        if (tmp64Result) {
+          tmp60 = callback3;
         }
-        obj31.customAnimation = tmp91;
-        obj31.mode = "parallax";
-        obj31.modeConfig = { parallaxScrollingScale: 1, parallaxScrollingOffset: 40 };
-        obj31.onSnapToItem = tmp12;
-        const items20 = [callback(claimableRewards(onClose[30]), obj31), ];
-        const obj32 = { numberOfItems: sharedValue.length, currentIndex: first };
-        items20[1] = callback(navigation(onClose[26]).CarouselPagination, obj32);
-        obj30.children = items20;
-        tmp81Result = callback2(str, obj30);
-        const tmp81 = callback2;
-        const tmp82 = str;
-        const tmp83 = callback;
-        const tmp86 = claimableRewards(onClose[30]);
+        const obj32 = { children: null };
+        obj31[8] = tmp60;
+        obj31[10] = { parallaxScrollingScale: 1, parallaxScrollingOffset: 40 };
+        obj31[11] = tmp16;
+        const items20 = [tmp46(tmp4(tmp2[30]), obj31), ];
+        const obj33 = { numberOfItems: null, currentIndex: null };
+        obj33[0] = arr12.length;
+        obj33[1] = first;
+        items20[1] = tmp46(tmp(tmp2[26]).CarouselPagination, obj33);
+        obj32[0] = items20;
+        tmp46Result = tmp43(tmp44, obj32);
+        const tmp4Result3 = tmp4(tmp2[30]);
       }
-      navigation = tmp81Result;
-      const tmp61 = callback;
     } else {
-      const obj33 = { style: tmp9.avatar, guildId: undefined };
-      const AvatarSizes = navigation(onClose[26]).AvatarSizes;
-      obj33.size = navigationResult ? AvatarSizes.LARGE_48 : AvatarSizes.XLARGE;
-      obj33.user = recipientUser;
-      callback(navigation(onClose[26]).Avatar, obj33);
-      const tmp55 = callback;
+      const obj34 = { style: null, guildId: "r", size: "mode", user: "Array" };
+      obj34[0] = tmp13.avatar;
+      const AvatarSizes = tmp(tmp2[26]).AvatarSizes;
+      obj34[2] = tmp64Result ? AvatarSizes.LARGE_48 : AvatarSizes.XLARGE;
+      obj34[3] = recipientUser;
+      tmp46(tmp(tmp2[26]).Avatar, obj34);
     }
-    tmp39 = callback2;
-    tmp40 = str;
-    tmp44 = callback;
+    tmp47 = first;
     tmp48 = c7;
-    const tmp50 = claimableRewards(onClose[35]);
-    tmp52 = first1;
-    tmp53 = callback2;
+    const tmp4Result1 = tmp4(tmp2[35]);
   }
-  return navigation;
+  return tmp64Result1;
 };

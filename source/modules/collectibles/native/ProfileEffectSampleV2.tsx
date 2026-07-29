@@ -1,24 +1,24 @@
-// Module ID: 8033
-// Function ID: 63841
+// Module ID: 8057
+// Function ID: 8058
 // Name: ProfileEffectSample
-// Dependencies: [27, 8015, 33, 4165, 689, 5119, 8034, 8035, 2]
+// Dependencies: [17, 8039, 21, 4189, 712, 5141, 8058, 8059, 2]
 // Exports: default
 
-// Module 8033 (ProfileEffectSample)
+// Module 8057 (ProfileEffectSample)
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_3;
-let closure_4;
-({ jsx: closure_3, jsxs: closure_4 } = jsxProd);
-let obj = { profileContainer: { position: "absolute", display: "flex", height: "100%", width: "100%" } };
-obj = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_MOD_SUBTLE };
-obj.profileBackground = obj;
-obj.sampleProfileImage = { aspectRatio: require("SAMPLE_PROFILE_ASPECT_RATIO").SAMPLE_PROFILE_ASPECT_RATIO };
-let obj1 = { position: "absolute", height: "100%", width: "100%", borderWidth: 1, borderColor: require("_createForOfIteratorHelperLoose").colors.BORDER_MUTED };
-obj.profileBorder = obj1;
-let closure_5 = _createForOfIteratorHelperLoose.createStyles(obj);
+let c3;
+let c4;
+({ jsx: c3, jsxs: c4 } = jsxProd);
+let obj = { profileContainer: { position: "absolute", display: "flex", height: "100%", width: "100%" }, profileBackground: null, sampleProfileImage: null, profileBorder: null };
+obj = { backgroundColor: require("Themes").colors.BACKGROUND_MOD_SUBTLE };
+obj[1] = obj;
+obj[2] = { aspectRatio: require("SAMPLE_PROFILE_ASPECT_RATIO").SAMPLE_PROFILE_ASPECT_RATIO };
+obj[3] = { position: "absolute", height: "100%", width: "100%", borderWidth: 1, borderColor: require("Themes").colors.BORDER_MUTED };
+let closure_5 = createCacheKey.createStyles(obj);
+let obj1 = { position: "absolute", height: "100%", width: "100%", borderWidth: 1, borderColor: require("Themes").colors.BORDER_MUTED };
 const result = require("jsxProd").fileFinishedImporting("modules/collectibles/native/ProfileEffectSampleV2.tsx");
 
 export default function ProfileEffectSample(hideBackground) {
@@ -27,29 +27,27 @@ export default function ProfileEffectSample(hideBackground) {
     flag = false;
   }
   const tmp = callback2();
-  let obj = {};
   const items = [tmp.profileContainer, ];
   let profileBackground = !flag;
-  if (profileBackground) {
+  if (!flag) {
     profileBackground = tmp.profileBackground;
   }
+  let obj = { style: items, children: null };
   items[1] = profileBackground;
-  obj.style = items;
-  obj = { style: items1 };
+  obj = { style: items1, source: null, accessible: false, resizeMode: "cover" };
   items1 = [tmp.sampleProfileImage];
-  obj = { uri: importDefault(8034) };
-  obj.source = obj;
-  obj.accessible = false;
-  obj.resizeMode = "cover";
-  const items2 = [callback(importDefault(5119), obj), , ];
-  let tmp5 = !flag;
-  if (tmp5) {
-    const obj1 = { style: tmp.profileBorder };
-    tmp5 = callback(View, obj1);
+  obj = { uri: null };
+  obj[0] = importDefault(8058);
+  obj[1] = obj;
+  const items2 = [callback(importDefault(5141), obj), , ];
+  let tmp4Result = !flag;
+  if (!flag) {
+    const obj1 = { style: null };
+    obj1[0] = tmp.profileBorder;
+    tmp4Result = tmp4(tmp3, obj1);
   }
-  items2[1] = tmp5;
-  const obj2 = { skuId: hideBackground.item.skuId, bannerAdjustment: 0, useThumbnail: true };
-  items2[2] = callback(importDefault(8035), obj2);
-  obj.children = items2;
+  items2[1] = tmp4Result;
+  items2[2] = callback(importDefault(8059), { skuId: hideBackground.item.skuId, bannerAdjustment: 0, useThumbnail: true });
+  obj[1] = items2;
   return closure_4(View, obj);
 };

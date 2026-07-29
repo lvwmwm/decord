@@ -1,20 +1,20 @@
-// Module ID: 9150
-// Function ID: 71743
+// Module ID: 9174
+// Function ID: 9175
 // Name: TermsField
-// Dependencies: [31, 27, 33, 4165, 5158, 9068, 1212, 2]
+// Dependencies: [19, 17, 21, 4189, 5180, 9092, 1236, 2]
 // Exports: default
 
-// Module 9150 (TermsField)
-import "result";
+// Module 9174 (TermsField)
+import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_4;
-let closure_5;
+let c4;
+let c5;
 const require = arg1;
-({ jsx: closure_4, jsxs: closure_5 } = jsxProd);
-let closure_6 = _createForOfIteratorHelperLoose.createStyles({ container: { marginVertical: 12, flexDirection: "column" } });
+({ jsx: c4, jsxs: c5 } = jsxProd);
+let closure_6 = createCacheKey.createStyles({ container: { marginVertical: 12, flexDirection: "column" } });
 const result = require("jsxProd").fileFinishedImporting("modules/guild_member_verification/native/components/form_fields/TermsField.tsx");
 
 export default function TermsField(field) {
@@ -22,18 +22,17 @@ export default function TermsField(field) {
   let rulesChannelId;
   field = field.field;
   ({ onChange, rulesChannelId } = field);
-  const response = field.response;
-  let tmp2 = null != response;
-  if (tmp2) {
-    tmp2 = response;
+  let flag = field.response;
+  let obj = { style: callback2().container, children: null };
+  const items = [callback(importDefault(5180), { rules: field.values, rulesChannelId }), ];
+  if (flag == null) {
+    flag = false;
   }
-  let obj = { style: callback3().container };
-  const items = [callback(importDefault(5158), { rules: field.values, rulesChannelId }), ];
-  obj = { start: true, end: true, checked: tmp2 };
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj.label = intl.string(require(1212) /* getSystemLocale */.t["2EXfGJ"]);
-  obj.onPress = onChange;
-  items[1] = callback(require(9068) /* TableCheckboxRow */.TableCheckboxRow, obj);
-  obj.children = items;
-  return callback2(View, obj);
+  obj = { start: true, end: true, checked: flag, label: null, onPress: null };
+  const intl = tmp5(1236).intl;
+  obj[3] = intl.string(require(1236) /* getSystemLocale */.t["2EXfGJ"]);
+  obj[4] = onChange;
+  items[1] = callback(require(9092) /* TableCheckboxRow */.TableCheckboxRow, obj);
+  obj[1] = items;
+  return closure_5(View, obj);
 };

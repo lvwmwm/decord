@@ -1,54 +1,44 @@
-// Module ID: 11631
-// Function ID: 90247
-// Name: getClampedIndex
-// Dependencies: [57, 31, 27, 4157, 33, 4165, 4009, 689, 566, 1212, 478, 4695, 9586, 11443, 2]
+// Module ID: 11655
+// Function ID: 11656
+// Name: items
+// Dependencies: [32, 19, 17, 4181, 21, 4189, 4033, 712, 589, 1236, 501, 4717, 9607, 11467, 2]
 
-// Module 11631 (getClampedIndex)
+// Module 11655 (items)
 import _slicedToArray from "_slicedToArray";
-import importAllResult from "result";
+import importAllResult from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import hexToRgb from "hexToRgb";
+import createCacheKey from "createCacheKey";
+import hexToRgba from "hexToRgba";
 
-let closure_5;
+let c5;
+let c9;
 let closure_6;
-let closure_8;
-let closure_9;
+let metroImportAll;
 const require = arg1;
-function getClampedIndex(arg0, itemCount) {
-  return Math.max(0, Math.min(itemCount - 1, arg0));
-}
-({ ScrollView: closure_5, View: closure_6 } = get_ActivityIndicator);
-({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
-let obj = { wrapper: { position: "relative" } };
+let c4 = importAllResult;
+({ ScrollView: c5, View: closure_6 } = get_ActivityIndicator);
+({ jsx: metroImportAll, jsxs: c9 } = jsxProd);
+let previous = "previous";
+let next = "next";
+let obj = { wrapper: { position: "relative" }, navigationButton: null, navigationButtonPrevious: null, navigationButtonNext: null };
 obj = { alignItems: "center", backgroundColor: null, borderRadius: null, height: 44, justifyContent: "center", position: "absolute", top: "50%", transform: null, width: 44, zIndex: 1 };
-obj.backgroundColor = hexToRgb.hexWithOpacity(require("_createForOfIteratorHelperLoose").unsafe_rawColors.BLACK, 0.56);
-obj.borderRadius = require("_createForOfIteratorHelperLoose").radii.round;
+obj[1] = hexToRgba.hexWithOpacity(require("Themes").unsafe_rawColors.BLACK, 0.56);
+obj[2] = require("Themes").radii.round;
 let items = [{ translateY: -22 }];
-obj.transform = items;
-obj.navigationButton = obj;
-obj.navigationButtonPrevious = { left: 16 };
-obj.navigationButtonNext = { right: 16 };
-let closure_10 = _createForOfIteratorHelperLoose.createStyles(obj);
-const forwardRefResult = importAllResult.forwardRef((initialIndex) => {
+obj[7] = items;
+obj[1] = obj;
+obj[2] = { left: 16 };
+obj[3] = { right: 16 };
+let closure_12 = createCacheKey.createStyles(obj);
+const forwardRefResult = importAllResult.forwardRef((initialIndex, ref) => {
   let cardMarginRight;
   let cardWidth;
   let children;
   let contentContainerStyle;
-  function handleNavigatePrevious() {
-    if (closure_10) {
-      callback(first - 1);
-    }
-  }
-  function handleNavigateNext() {
-    if (closure_11) {
-      callback(first + 1);
-    }
-  }
   function handleScrollEnd(nativeEvent) {
-    lib(tmp8(Math.round(nativeEvent.nativeEvent.contentOffset.x / closure_4), itemCount));
+    lib(Math.max(0, Math.min(itemCount - 1, Math.round(nativeEvent.nativeEvent.contentOffset.x / closure_4))));
     if (obj.isIOS()) {
       const velocity = nativeEvent.nativeEvent.velocity;
       let tmp3 = null == velocity;
@@ -57,8 +47,8 @@ const forwardRefResult = importAllResult.forwardRef((initialIndex) => {
         const tmp4 = 0 === velocity.x && 0 === velocity.y;
       }
       if (tmp3) {
-        if (null != onScrollingChange) {
-          onScrollingChange(false);
+        if (onScrollingChange != null) {
+          tmp5(false);
         }
       }
     }
@@ -71,68 +61,73 @@ const forwardRefResult = importAllResult.forwardRef((initialIndex) => {
   }
   const itemCount = initialIndex.itemCount;
   const onScrollingChange = initialIndex.onScrollingChange;
-  let tmp = callback();
-  const ref = sum.useRef(null);
-  sum = cardWidth + cardMarginRight;
-  let closure_5 = sum.useRef(getClampedIndex(num, itemCount) * sum);
-  let tmp4 = ref(sum.useState(() => tmp8(num, itemCount)), 2);
+  const tmp = callback();
+  ref = importAllResult.useRef(null);
+  const sum = cardWidth + cardMarginRight;
+  let closure_5 = importAllResult.useRef(Math.max(0, Math.min(itemCount - 1, num)) * sum);
+  let tmp4 = ref(sum.useState(() => Math.max(0, Math.min(itemCount - 1, num))), 2);
   const first = tmp4[0];
-  let _isNativeReflectConstruct = tmp4[1];
+  let maybeApplyNoTextColorForLightCustomTheme = tmp4[1];
   let obj = num(onScrollingChange[8]);
-  let items = [_isNativeReflectConstruct];
+  let items = [maybeApplyNoTextColorForLightCustomTheme];
   const stateFromStores = obj.useStateFromStores(items, () => lib.useReducedMotion);
-  let closure_9 = sum.useRef(stateFromStores);
-  let tmp7 = first > 0;
-  callback = tmp7;
-  let tmp8 = first < itemCount - 1;
-  getClampedIndex = tmp8;
+  let closure_9 = importAllResult.useRef(stateFromStores);
+  let tmp18Result = first > 0;
+  const previous = tmp18Result;
+  tmp18Result = first < itemCount - 1;
+  const next = tmp18Result;
   const items1 = [itemCount, sum];
   const items2 = [stateFromStores];
-  const memo = sum.useMemo(() => {
+  const memo = importAllResult.useMemo(() => {
     const array = new Array(itemCount);
-    return array.fill(0).map((arg0, arg1) => arg1 * outer1_4);
+    return array.fill(0).map((arg0, arg1) => arg1 * closure_4);
   }, items1);
-  const effect = sum.useEffect(() => {
+  const effect = importAllResult.useEffect(() => {
     closure_9.current = stateFromStores;
   }, items2);
-  const effect1 = sum.useEffect(() => {
+  const effect1 = importAllResult.useEffect(() => {
     const current = ref.current;
     if (0 !== current) {
       const current2 = ref.current;
-      if (null != current2) {
-        const obj = { x: current, animated: false };
+      if (current2 != null) {
+        const obj = { x: null, animated: false };
+        obj[0] = current;
         current2.scrollTo(obj);
       }
     }
   }, []);
   const items3 = [itemCount, sum];
-  callback = sum.useCallback((arg0) => {
-    const tmp = tmp8(arg0, itemCount);
-    lib(tmp);
+  callback = importAllResult.useCallback((arg0) => {
+    const bound = Math.max(0, Math.min(itemCount - 1, arg0));
+    lib(bound);
     const current = ref.current;
-    if (null != current) {
-      const obj = { x: tmp * closure_4, animated: !ref2.current };
+    if (current != null) {
+      const obj = { x: null, animated: null };
+      obj[0] = bound * closure_4;
+      obj[1] = !ref2.current;
       current.scrollTo(obj);
     }
   }, items3);
   const items4 = [callback];
-  const imperativeHandle = sum.useImperativeHandle(arg1, () => ({ scrollToIndex: callback }), items4);
-  const items5 = [tmp8, tmp7];
-  obj = { style: items6 };
+  const imperativeHandle = importAllResult.useImperativeHandle(ref, () => ({ scrollToIndex: callback }), items4);
+  const items5 = [tmp18Result, tmp18Result];
+  obj = { style: items6, children: null };
   items6 = [initialIndex.style, tmp.wrapper];
   obj = {
-    accessibilityActions: sum.useMemo(() => {
+    accessibilityActions: importAllResult.useMemo(() => {
       const items = [];
       if (closure_10) {
-        let obj = { name: "previous" };
+        let obj = { name: null, label: null };
+        obj[0] = closure_10;
         const intl = num(onScrollingChange[9]).intl;
-        obj.label = intl.string(9(onScrollingChange[9]).t.vgfxaA);
+        obj[1] = intl.string(num(onScrollingChange[9]).t.vgfxaA);
         items.push(obj);
       }
       if (closure_11) {
-        obj = { name: "next" };
+        obj = { name: null, label: null };
+        obj[0] = closure_11;
         const intl2 = num(onScrollingChange[9]).intl;
-        obj.label = intl2.string(num(onScrollingChange[9]).t.XiOHRX);
+        obj[1] = intl2.string(num(onScrollingChange[9]).t.XiOHRX);
         items.push(obj);
       }
       return items;
@@ -143,21 +138,25 @@ const forwardRefResult = importAllResult.forwardRef((initialIndex) => {
     horizontal: true,
     onAccessibilityAction(nativeEvent) {
       const actionName = nativeEvent.nativeEvent.actionName;
-      if ("previous" === actionName) {
-        handleNavigatePrevious();
-      } else if ("next" === actionName) {
-        handleNavigateNext();
+      if (closure_10 === actionName) {
+        if (closure_10) {
+          callback(first - 1);
+        }
+      } else if (closure_11 === actionName) {
+        if (closure_11) {
+          callback(first + 1);
+        }
       }
     },
-    onMomentumScrollEnd(closure_0) {
-      handleScrollEnd(closure_0);
-      if (null != onScrollingChange) {
-        onScrollingChange(false);
+    onMomentumScrollEnd(nativeEvent) {
+      handleScrollEnd(nativeEvent);
+      if (onScrollingChange != null) {
+        tmp2(false);
       }
     },
     onScrollBeginDrag() {
-      if (null != onScrollingChange) {
-        onScrollingChange(true);
+      if (onScrollingChange != null) {
+        tmp(true);
       }
     },
     onScrollEndDrag: handleScrollEnd,
@@ -166,35 +165,45 @@ const forwardRefResult = importAllResult.forwardRef((initialIndex) => {
     children
   };
   const items7 = [stateFromStores(closure_5, obj), , ];
-  if (tmp7) {
-    const obj1 = {};
-    let intl = num(onScrollingChange[9]).intl;
-    obj1.accessibilityLabel = intl.string(num(onScrollingChange[9]).t.vgfxaA);
-    obj1.accessibilityRole = "button";
-    obj1.onPress = handleNavigatePrevious;
+  if (tmp18Result) {
+    function handleNavigatePrevious() {
+      if (closure_10) {
+        callback(first - 1);
+      }
+    }
+    const obj1 = { accessibilityLabel: null, accessibilityRole: "button", onPress: null, style: null, children: null };
+    let intl = tmp6(tmp7[9]).intl;
+    obj1[0] = intl.string(tmp6(tmp7[9]).t.vgfxaA);
+    obj1[2] = handleNavigatePrevious;
     const items8 = [, ];
     ({ navigationButton: arr9[0], navigationButtonPrevious: arr9[1] } = tmp);
-    obj1.style = items8;
-    const obj2 = { color: itemCount(onScrollingChange[7]).colors.WHITE, size: "sm" };
-    obj1.children = stateFromStores(num(onScrollingChange[12]).ChevronLargeLeftIcon, obj2);
-    tmp7 = stateFromStores(num(onScrollingChange[11]).PressableOpacity, obj1);
+    obj1[3] = items8;
+    const obj2 = { color: null, size: "sm" };
+    obj2[0] = itemCount(tmp7[7]).colors.WHITE;
+    obj1[4] = tmp18(tmp6(tmp7[12]).ChevronLargeLeftIcon, obj2);
+    tmp18Result = tmp18(tmp6(tmp7[11]).PressableOpacity, obj1);
   }
-  items7[1] = tmp7;
-  if (tmp8) {
-    const obj3 = {};
-    let intl2 = num(onScrollingChange[9]).intl;
-    obj3.accessibilityLabel = intl2.string(num(onScrollingChange[9]).t.XiOHRX);
-    obj3.accessibilityRole = "button";
-    obj3.onPress = handleNavigateNext;
+  items7[1] = tmp18Result;
+  if (tmp18Result) {
+    function handleNavigateNext() {
+      if (closure_11) {
+        callback(first + 1);
+      }
+    }
+    const obj3 = { accessibilityLabel: null, accessibilityRole: "button", onPress: null, style: null, children: null };
+    let intl2 = tmp6(tmp7[9]).intl;
+    obj3[0] = intl2.string(tmp6(tmp7[9]).t.XiOHRX);
+    obj3[2] = handleNavigateNext;
     const items9 = [, ];
     ({ navigationButton: arr10[0], navigationButtonNext: arr10[1] } = tmp);
-    obj3.style = items9;
-    const obj4 = { color: itemCount(onScrollingChange[7]).colors.WHITE, size: "sm" };
-    obj3.children = stateFromStores(num(onScrollingChange[13]).ChevronLargeRightIcon, obj4);
-    tmp8 = stateFromStores(num(onScrollingChange[11]).PressableOpacity, obj3);
+    obj3[3] = items9;
+    const obj4 = { color: null, size: "sm" };
+    obj4[0] = itemCount(tmp7[7]).colors.WHITE;
+    obj3[4] = tmp18(tmp6(tmp7[13]).ChevronLargeRightIcon, obj4);
+    tmp18Result = tmp18(tmp6(tmp7[11]).PressableOpacity, obj3);
   }
-  items7[2] = tmp8;
-  obj.children = items7;
+  items7[2] = tmp18Result;
+  obj[1] = items7;
   return closure_9(first, obj);
 });
 const result = require("get ActivityIndicator").fileFinishedImporting("modules/guild_boosting/native/marketing_redesign/MarketingCardsScroller.tsx");

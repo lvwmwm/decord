@@ -1,47 +1,49 @@
-// Module ID: 14931
-// Function ID: 113803
+// Module ID: 14957
+// Function ID: 14958
 // Name: GuildsBarGuildJoinRequestBadge
-// Dependencies: [31, 27, 33, 4165, 689, 5008, 3985, 14932, 14933, 14934, 11418, 5119, 2]
+// Dependencies: [19, 17, 21, 4189, 712, 5030, 4009, 14958, 14959, 14960, 11442, 5141, 2]
 // Exports: default
 
-// Module 14931 (GuildsBarGuildJoinRequestBadge)
-import "result";
+// Module 14957 (GuildsBarGuildJoinRequestBadge)
+import "noop";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
 const require = arg1;
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { position: "absolute", bottom: -3, right: -3, height: 22, width: 22, borderColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWEST, borderWidth: 3, borderRadius: 11, justifyContent: "center", alignItems: "center", overflow: "hidden" };
-_createForOfIteratorHelperLoose.badgeImageContainer = _createForOfIteratorHelperLoose;
+createCacheKey = { badgeImageContainer: null, badgeImage: null };
+createCacheKey = { position: "absolute", bottom: -3, right: -3, height: 22, width: 22, borderColor: require("Themes").colors.BACKGROUND_BASE_LOWEST, borderWidth: 3, borderRadius: 11, justifyContent: "center", alignItems: "center", overflow: "hidden" };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { height: 16, width: 16, opacity: require("result").DARK_1_LIGHT_08 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
 const obj1 = { height: 16, width: 16, opacity: require("result").DARK_1_LIGHT_08 };
-_createForOfIteratorHelperLoose.badgeImage = obj1;
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
 const result = require("jsxProd").fileFinishedImporting("modules/guilds_bar/native/GuildsBarGuildJoinRequestBadge.tsx");
 
 export default function GuildsBarGuildJoinRequestBadge(joinRequestState) {
   joinRequestState = joinRequestState.joinRequestState;
-  const tmp = _createForOfIteratorHelperLoose();
-  if (require(3985) /* isTermsFormField */.GuildJoinRequestApplicationStatuses.REJECTED === joinRequestState) {
-    let tmp6 = importDefault(14932);
-  } else if (require(3985) /* isTermsFormField */.GuildJoinRequestApplicationStatuses.SUBMITTED === joinRequestState) {
-    tmp6 = importDefault(14933);
-  } else if (require(3985) /* isTermsFormField */.GuildJoinRequestApplicationStatuses.STARTED === joinRequestState) {
-    tmp6 = importDefault(14934);
+  const tmp = createCacheKey();
+  if (require(4009) /* MAX_RESULTS_PER_PAGE */.GuildJoinRequestApplicationStatuses.REJECTED === joinRequestState) {
+    let tmp4 = importDefault(14958);
+  } else if (tmp2(4009).GuildJoinRequestApplicationStatuses.SUBMITTED === joinRequestState) {
+    tmp4 = importDefault(14959);
+  } else if (tmp2(4009).GuildJoinRequestApplicationStatuses.STARTED === joinRequestState) {
+    tmp4 = importDefault(14960);
   } else {
-    tmp6 = null;
-    if (require(3985) /* isTermsFormField */.GuildJoinRequestApplicationStatuses.APPROVED === joinRequestState) {
-      tmp6 = importDefault(11418);
+    tmp4 = null;
+    if (tmp2(4009).GuildJoinRequestApplicationStatuses.APPROVED === joinRequestState) {
+      tmp4 = importDefault(11442);
     }
   }
-  let tmp15 = null;
-  if (null != tmp6) {
-    let obj = { pointerEvents: "none" };
+  let tmp9 = null;
+  if (null != tmp4) {
+    let obj = { pointerEvents: "none", style: null, children: null };
     const items = [tmp.badgeImageContainer, joinRequestState.style];
-    obj.style = items;
-    obj = { source: tmp6, style: tmp.badgeImage };
-    obj.children = jsx(importDefault(5119), { source: tmp6, style: tmp.badgeImage });
-    tmp15 = <View source={tmp6} style={tmp.badgeImage} />;
+    obj[1] = items;
+    obj = { source: null, style: null };
+    obj[0] = tmp4;
+    obj[1] = tmp.badgeImage;
+    obj[2] = jsx(importDefault(5141), { source: null, style: null });
+    tmp9 = <View source={null} style={null} />;
   }
-  return tmp15;
+  return tmp9;
 };

@@ -1,58 +1,110 @@
-// Module ID: 8335
-// Function ID: 66799
-// Name: getUserProfileActionSheetKey
-// Dependencies: [5, 6673, 3802, 1850, 1935, 3838, 8336, 4133, 8341, 2]
-// Exports: getUserProfileBlockedSpeedBumpActionSheetKey, showUserProfileActionSheetPostConnection
+// Module ID: 8359
+// Function ID: 8360
+// Name: showUserProfileActionSheet
+// Dependencies: [5, 6694, 3826, 1874, 1959, 3862, 8360, 4157, 8365, 2]
+// Exports: getUserProfileActionSheetKey, getUserProfileBlockedSpeedBumpActionSheetKey, getUserProfileIgnoredSpeedBumpActionSheetKey, showUserProfileActionSheetPostConnection
 
-// Module 8335 (getUserProfileActionSheetKey)
+// Module 8359 (showUserProfileActionSheet)
 import explicitContentFromProto from "explicitContentFromProto";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import upsertRelationship from "upsertRelationship";
 
 const require = arg1;
-function getUserProfileActionSheetKey(userId) {
-  return "UserProfile" + userId;
-}
-function getUserProfileIgnoredSpeedBumpActionSheetKey(userId) {
-  return "UserProfileIgnoredSpeedBump" + userId;
-}
-function showUserProfileActionSheet(isPreviewingChanges, arg1) {
+function showUserProfileActionSheet(ignoreBlockedSpeedBump, arg1) {
   const timestamp = Date.now();
-  const IgnoreProfileSpeedbumpDisabled = require(3838) /* explicitContentFromProto */.IgnoreProfileSpeedbumpDisabled;
-  if (!isPreviewingChanges.ignoreBlockedSpeedBump) {
-    const isBlockedResult = _isNativeReflectConstruct.isBlocked(isPreviewingChanges.userId);
-    const isIgnoredResult = _isNativeReflectConstruct.isIgnored(isPreviewingChanges.userId);
+  const IgnoreProfileSpeedbumpDisabled = require(3862) /* explicitContentFromProto */.IgnoreProfileSpeedbumpDisabled;
+  if (!ignoreBlockedSpeedBump.ignoreBlockedSpeedBump) {
+    const isBlockedResult = upsertRelationship.isBlocked(ignoreBlockedSpeedBump.userId);
+    const isIgnoredResult = upsertRelationship.isIgnored(ignoreBlockedSpeedBump.userId);
     if (isIgnoredResult) {
-      let obj = importDefault(4133);
+      let obj = importDefault(4157);
+      const _HermesInternal = HermesInternal;
       obj = {};
-      const tmp9 = require(1935) /* maybeLoadBundle */(8336, dependencyMap.paths);
-      const merged = Object.assign(isPreviewingChanges);
-      let str = "ignore";
+      const combined = "UserProfileIgnoredSpeedBump" + ignoreBlockedSpeedBump.userId;
+      const merged = Object.assign(ignoreBlockedSpeedBump);
+      let str2 = "ignore";
       if (isBlockedResult) {
-        str = "block";
+        str2 = "block";
       }
-      obj["speedBumpType"] = str;
-      obj["openedAt"] = timestamp;
-      obj.openLazy(tmp9, getUserProfileIgnoredSpeedBumpActionSheetKey(isPreviewingChanges.userId), obj);
+      obj.speedBumpType = str2;
+      obj.openedAt = timestamp;
+      obj.openLazy(tmp2(1959)(8360, tmp3.paths), combined, obj);
     }
   }
-  const tmp17 = require(1935) /* maybeLoadBundle */(8341, dependencyMap.paths);
-  const obj3 = importDefault(4133);
+  const tmp15 = require(1959) /* asyncRequireImpl */(8365, dependencyMap.paths);
+  const combined1 = "UserProfile" + ignoreBlockedSpeedBump.userId;
   obj = {};
-  const merged1 = Object.assign(isPreviewingChanges);
-  obj["openedAt"] = timestamp;
-  obj3.openLazy(tmp17, getUserProfileActionSheetKey(isPreviewingChanges.userId), obj, "replaceAll");
+  const merged1 = Object.assign(ignoreBlockedSpeedBump);
+  obj.openedAt = timestamp;
+  importDefault(4157).openLazy(tmp15, combined1, obj, "replaceAll");
 }
-require("shouldWaitForBlockingModals").addPostConnectionCallback;
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/user_profile/native/showUserProfileActionSheet.tsx");
+require("processCallbacks").addPostConnectionCallback;
+const result = require("upsertRelationship").fileFinishedImporting("modules/user_profile/native/showUserProfileActionSheet.tsx");
 
 export default showUserProfileActionSheet;
-export { getUserProfileActionSheetKey };
+export const getUserProfileActionSheetKey = function getUserProfileActionSheetKey(id) {
+  return "UserProfile" + id;
+};
 export const getUserProfileBlockedSpeedBumpActionSheetKey = function getUserProfileBlockedSpeedBumpActionSheetKey(arg0) {
   return "UserProfileBlockedSpeedBump" + arg0;
 };
-export { getUserProfileIgnoredSpeedBumpActionSheetKey };
+export const getUserProfileIgnoredSpeedBumpActionSheetKey = function getUserProfileIgnoredSpeedBumpActionSheetKey(arg0) {
+  return "UserProfileIgnoredSpeedBump" + arg0;
+};
 export const showUserProfileActionSheetPostConnection = function showUserProfileActionSheetPostConnection(arg0) {
   let closure_0 = arg0;
-  // CreateGeneratorClosureLongIndex (0x67)
-  addPostConnectionCallback(callback(tmp));
+  addPostConnectionCallback(callback(function*() {
+    if (paths === 2) {
+      paths = 3;
+      HermesBuiltin.throwTypeError();
+    } else if (tmp3 === 3) {
+      if (arg0 === 1) {
+        throw arg1;
+      } else if (arg0 === 2) {
+        let obj = { value: null, done: true };
+        obj[0] = arg1;
+        return obj;
+      } else {
+        return { value: "HermesInternal", done: null };
+      }
+    } else {
+      try {
+        paths = 2;
+        if (0 === c1) {
+          if (arg0 === 1) {
+            paths = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            paths = 3;
+            obj = { value: null, done: true };
+            obj[0] = arg1;
+            return obj;
+          } else {
+            const userId = tmp4;
+            c1 = 1;
+            paths = 1;
+            const obj1 = { value: null, done: false };
+            obj1[0] = outer1_0(paths[4])(paths[3], paths.paths);
+            return obj1;
+          }
+        } else if (arg0 === 1) {
+          paths = 3;
+          throw arg1;
+        } else if (arg0 === 2) {
+          paths = 3;
+          obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
+        } else {
+          if (null != _default.getUser(userId.userId)) {
+            outer1_6(userId);
+          }
+          paths = 3;
+          return { value: "HermesInternal", done: null };
+        }
+      } catch (tmp14) {
+        paths = tmp;
+        throw tmp14;
+      }
+    }
+  }));
 };

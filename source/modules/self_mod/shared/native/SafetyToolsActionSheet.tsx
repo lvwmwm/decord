@@ -1,29 +1,29 @@
-// Module ID: 10139
-// Function ID: 78384
+// Module ID: 10160
+// Function ID: 10161
 // Name: SafetyToolsActionSheet
-// Dependencies: [31, 27, 3802, 10138, 33, 4165, 689, 10140, 10141, 10132, 566, 10135, 5547, 1212, 8648, 8647, 4133, 10144, 1935, 3862, 8710, 8340, 8709, 9190, 8894, 10147, 6715, 6700, 4506, 10148, 9418, 9417, 7669, 9051, 9050, 4372, 10150, 10155, 10156, 10157, 9005, 9004, 10159, 10145, 5536, 5198, 5204, 2]
+// Dependencies: [19, 17, 3826, 10159, 21, 4189, 712, 10161, 10162, 10153, 589, 10156, 5565, 1236, 8672, 8671, 4157, 10165, 1959, 3886, 8734, 8364, 8733, 9214, 8918, 10168, 6736, 6721, 4529, 10169, 9442, 9441, 7692, 9075, 9074, 4395, 10171, 10176, 10177, 10178, 9029, 9028, 10180, 10166, 5554, 5220, 5226, 2]
 // Exports: default
 
-// Module 10139 (SafetyToolsActionSheet)
-import FlagIcon from "FlagIcon";
-import { View } from "module_6700";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 10160 (SafetyToolsActionSheet)
+import module_3886 from "module_3886";
+import { View } from "SafetyToolsCrisisTextLineActionSheet";
+import upsertRelationship from "upsertRelationship";
 import LOCATION_CONTEXT_MOBILE from "LOCATION_CONTEXT_MOBILE";
 import { jsx } from "registerAsset";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_10;
+let c10;
+let c9;
 let closure_6;
-let closure_7;
-let closure_8;
-let closure_9;
+let error;
+let metroImportAll;
 const require = arg1;
-({ ACTION_SHEET_CONTEXT_MOBILE: closure_6, getSafetyToolsActionSheetKey: closure_7, THROUGHLINE_URL: closure_8, NOFILTR_URL: closure_9, VIBING_WUMPUS_MODAL_KEY: closure_10 } = LOCATION_CONTEXT_MOBILE);
-_createForOfIteratorHelperLoose = { container: { flex: 1 } };
-_createForOfIteratorHelperLoose = { marginHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16, marginBottom: require("_createForOfIteratorHelperLoose").space.PX_24 };
-_createForOfIteratorHelperLoose.actionRowGroup = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/self_mod/shared/native/SafetyToolsActionSheet.tsx");
+({ ACTION_SHEET_CONTEXT_MOBILE: closure_6, getSafetyToolsActionSheetKey: error, THROUGHLINE_URL: metroImportAll, NOFILTR_URL: c9, VIBING_WUMPUS_MODAL_KEY: c10 } = LOCATION_CONTEXT_MOBILE);
+createCacheKey = { container: { flex: 1 }, actionRowGroup: null };
+createCacheKey = { marginHorizontal: require("Themes").space.PX_16, marginBottom: require("Themes").space.PX_24 };
+createCacheKey[1] = createCacheKey;
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let result = require("upsertRelationship").fileFinishedImporting("modules/self_mod/shared/native/SafetyToolsActionSheet.tsx");
 
 export default function SafetyToolsActionSheet(channelId) {
   channelId = channelId.channelId;
@@ -31,82 +31,89 @@ export default function SafetyToolsActionSheet(channelId) {
   const warningType = channelId.warningType;
   const recipientId = channelId.recipientId;
   const onClose = channelId.onClose;
-  let tmp = callback();
-  let _isNativeReflectConstruct = tmp;
+  let c5;
+  let lastChannelMessage;
+  let shouldShowHelplineLink;
+  let shouldShowThroughlineLink;
+  let c9;
+  let stateFromStores;
+  let stateFromStores1;
+  let callback;
+  const tmp = callback();
+  c5 = tmp;
   let obj = channelId(warningType[7]);
-  const lastChannelMessage = obj.useLastChannelMessage(channelId);
-  const shouldShowHelplineLink = channelId(warningType[8]).useShouldShowHelplineLink();
+  lastChannelMessage = obj.useLastChannelMessage(channelId);
+  shouldShowHelplineLink = channelId(warningType[8]).useShouldShowHelplineLink();
   let obj2 = channelId(warningType[8]);
-  const shouldShowThroughlineLink = channelId(warningType[8]).useShouldShowThroughlineLink();
+  shouldShowThroughlineLink = channelId(warningType[8]).useShouldShowThroughlineLink();
   let obj3 = channelId(warningType[8]);
   const tmp5 = null != channelId(warningType[9]).useSafetyToolsButtonTooltipForChannel(channelId);
-  let closure_9 = tmp5;
+  c9 = tmp5;
   let obj4 = channelId(warningType[9]);
-  let items = [_isNativeReflectConstruct];
+  let items = [c5];
   let items1 = [recipientId];
-  const stateFromStores = channelId(warningType[10]).useStateFromStores(items, () => tmp.isBlocked(recipientId), items1);
+  stateFromStores = channelId(warningType[10]).useStateFromStores(items, () => _undefined.isBlocked(recipientId), items1);
   let obj5 = channelId(warningType[10]);
-  let items2 = [_isNativeReflectConstruct];
+  let items2 = [c5];
   let items3 = [recipientId];
-  const stateFromStores1 = channelId(warningType[10]).useStateFromStores(items2, () => tmp.isIgnored(recipientId), items3);
+  stateFromStores1 = channelId(warningType[10]).useStateFromStores(items2, () => _undefined.isIgnored(recipientId), items3);
   const items4 = [channelId, warningId, warningType, recipientId, tmp5];
   callback = recipientId.useCallback((cta) => {
     let obj = channelId(warningType[11]);
-    obj = { channelId, warningId, senderId: recipientId, warningType, cta, isNudgeWarning: closure_9 };
+    obj = { channelId, warningId, senderId: recipientId, warningType, cta, isNudgeWarning: c9 };
     obj.trackCtaEvent(obj);
   }, items4);
   const items5 = [stateFromStores, stateFromStores1, shouldShowHelplineLink, shouldShowThroughlineLink, callback, recipientId, channelId, warningId, warningType, onClose, lastChannelMessage];
   const memo = recipientId.useMemo(() => {
-    let obj = { size: "md", color: warningId(warningType[6]).colors.INTERACTIVE_TEXT_DEFAULT };
-    const tmp = stateFromStores1(channelId(warningType[12]).ChevronSmallRightIcon, obj);
-    obj = {};
+    let obj = { size: "md", color: null };
+    obj[1] = warningId(warningType[6]).colors.INTERACTIVE_TEXT_DEFAULT;
+    const tmp4 = stateFromStores1(channelId(warningType[12]).ChevronSmallRightIcon, obj);
+    obj = { label: null, subLabel: null, icon: null, IconComponent: null, trailing: null, onPress: null };
     const intl = channelId(warningType[13]).intl;
-    obj.label = intl.string(channelId(warningType[13]).t.ZSbbMJ);
+    obj[0] = intl.string(channelId(warningType[13]).t.ZSbbMJ);
     const intl2 = channelId(warningType[13]).intl;
-    obj.subLabel = intl2.string(channelId(warningType[13]).t.iNcsrW);
-    obj.icon = warningId(warningType[14]);
-    obj.IconComponent = channelId(warningType[15]).HeartIcon;
-    obj.trailing = tmp;
-    obj.onPress = function onPress() {
-      let closure_0 = shouldShowHelplineLink(outer1_0);
-      let obj = warningId(warningType[16]);
+    obj[1] = intl2.string(channelId(warningType[13]).t.iNcsrW);
+    obj[2] = warningId(warningType[14]);
+    obj[3] = channelId(warningType[15]).HeartIcon;
+    obj[4] = tmp4;
+    obj[5] = function onPress() {
+      closure_0 = outer1_7(closure_0);
+      let obj = outer1_1(outer1_2[16]);
       obj = {
-        recipientId: outer1_3,
-        channelId: outer1_0,
-        warningId: outer1_1,
-        warningType: outer1_2,
+        recipientId: module_3886,
+        channelId: closure_0,
+        warningId: closure_1,
+        warningType: closure_2,
         onClose() {
-          warningId(warningType[16]).hideActionSheet(closure_0);
+          outer1_1(outer1_2[16]).hideActionSheet(closure_0);
         },
-        trackAnalyticsEvent: outer1_12
+        trackAnalyticsEvent: callback2
       };
-      obj.openLazy(channelId(warningType[18])(warningType[17], warningType.paths), shouldShowHelplineLink(outer1_0), obj);
-      outer1_12(channelId(warningType[11]).CtaEventTypes.USER_SAFETY_TOOLS_CTL);
+      obj.openLazy(outer1_0(outer1_2[18])(outer1_2[17], outer1_2.paths), outer1_7(closure_0), obj);
+      callback2(outer1_0(outer1_2[11]).CtaEventTypes.USER_SAFETY_TOOLS_CTL);
     };
-    obj = {};
+    obj = { label: null, subLabel: null, icon: null, IconComponent: null, onPress: null };
     const intl3 = channelId(warningType[13]).intl;
-    obj.label = intl3.string(channelId(warningType[13]).t.ZSbbMJ);
+    obj[0] = intl3.string(channelId(warningType[13]).t.ZSbbMJ);
     const intl4 = channelId(warningType[13]).intl;
-    obj.subLabel = intl4.string(channelId(warningType[13]).t.S9O1ZZ);
-    obj.icon = warningId(warningType[14]);
-    obj.IconComponent = channelId(warningType[15]).HeartIcon;
-    obj.onPress = function onPress() {
-      warningId(warningType[19]).openURL(shouldShowThroughlineLink);
-      outer1_12(channelId(warningType[11]).CtaEventTypes.USER_SAFETY_TOOLS_THROUGHLINE);
+    obj[1] = intl4.string(channelId(warningType[13]).t.S9O1ZZ);
+    obj[2] = warningId(warningType[14]);
+    obj[3] = channelId(warningType[15]).HeartIcon;
+    obj[4] = function onPress() {
+      outer1_1(outer1_2[19]).openURL(outer1_8);
+      callback2(outer1_0(outer1_2[11]).CtaEventTypes.USER_SAFETY_TOOLS_THROUGHLINE);
     };
-    let obj1 = {};
+    let obj1 = { label: null, subLabel: null, icon: null, IconComponent: null, onPress: null };
     const intl5 = channelId(warningType[13]).intl;
-    obj1.label = intl5.string(channelId(warningType[13]).t.ZSbbMJ);
+    obj1[0] = intl5.string(channelId(warningType[13]).t.ZSbbMJ);
     const intl6 = channelId(warningType[13]).intl;
-    obj1.subLabel = intl6.string(channelId(warningType[13]).t.g5uwC5);
-    obj1.icon = warningId(warningType[14]);
-    obj1.IconComponent = channelId(warningType[15]).HeartIcon;
-    obj1.onPress = function onPress() {
-      warningId(warningType[19]).openURL(closure_9);
-      outer1_12(channelId(warningType[11]).CtaEventTypes.USER_SAFETY_TOOLS_NO_FILTR);
+    obj1[1] = intl6.string(channelId(warningType[13]).t.g5uwC5);
+    obj1[2] = warningId(warningType[14]);
+    obj1[3] = channelId(warningType[15]).HeartIcon;
+    obj1[4] = function onPress() {
+      outer1_1(outer1_2[19]).openURL(outer1_9);
+      callback2(outer1_0(outer1_2[11]).CtaEventTypes.USER_SAFETY_TOOLS_NO_FILTR);
     };
-    const obj2 = { sectionKey: "action" };
-    const obj3 = {};
     const intl7 = channelId(warningType[13]).intl;
     const string = intl7.string;
     const t = channelId(warningType[13]).t;
@@ -115,133 +122,127 @@ export default function SafetyToolsActionSheet(channelId) {
     } else {
       stringResult = string(t.B7ZT06);
     }
-    obj3.label = stringResult;
+    const obj2 = { label: stringResult, subLabel: null, icon: null, IconComponent: null, disabled: null, onPress: null };
     let stringResult1;
     if (!stateFromStores1) {
-      const intl8 = channelId(warningType[13]).intl;
-      stringResult1 = intl8.string(channelId(warningType[13]).t.fCfp49);
+      const intl8 = tmp(tmp2[13]).intl;
+      stringResult1 = intl8.string(tmp(tmp2[13]).t.fCfp49);
     }
-    obj3.subLabel = stringResult1;
+    obj2[1] = stringResult1;
+    obj2[2] = warningId(stateFromStores1 ? warningType[20] : warningType[21]);
     if (stateFromStores1) {
-      let tmp8 = tmp7[20];
+      let EyeSlashIcon = tmp(tmp2[22]).EyeIcon;
     } else {
-      tmp8 = tmp7[21];
+      EyeSlashIcon = tmp(tmp2[23]).EyeSlashIcon;
     }
-    obj3.icon = warningId(tmp8);
-    if (stateFromStores1) {
-      let EyeSlashIcon = tmp9(tmp10[22]).EyeIcon;
-    } else {
-      EyeSlashIcon = tmp9(tmp10[23]).EyeSlashIcon;
-    }
-    obj3.IconComponent = EyeSlashIcon;
-    obj3.disabled = stateFromStores;
-    obj3.onPress = function onPress() {
-      const obj = warningId(warningType[24]);
-      if (outer1_11) {
-        obj.unignoreUser(outer1_3, lastChannelMessage, outer1_0);
-        outer1_12(channelId(tmp[11]).CtaEventTypes.USER_SAFETY_TOOLS_UNIGNORE);
+    obj2[3] = EyeSlashIcon;
+    obj2[4] = stateFromStores;
+    obj2[5] = function onPress() {
+      const obj = outer1_1(outer1_2[24]);
+      if (closure_11) {
+        obj.unignoreUser(module_3886, outer1_6, closure_0);
+        callback2(outer1_0(outer1_2[11]).CtaEventTypes.USER_SAFETY_TOOLS_UNIGNORE);
       } else {
-        obj.ignoreUser(outer1_3, lastChannelMessage, outer1_0);
-        outer1_12(channelId(tmp[11]).CtaEventTypes.USER_SAFETY_TOOLS_IGNORE);
+        obj.ignoreUser(module_3886, outer1_6, closure_0);
+        callback2(outer1_0(outer1_2[11]).CtaEventTypes.USER_SAFETY_TOOLS_IGNORE);
       }
     };
-    const items = [obj3, , ];
-    const obj4 = {};
-    const intl9 = channelId(warningType[13]).intl;
+    const items = [obj2, , ];
+    const intl9 = tmp(tmp2[13]).intl;
     const string2 = intl9.string;
-    const t2 = channelId(warningType[13]).t;
+    const t2 = tmp(tmp2[13]).t;
     if (stateFromStores) {
       let string2Result = string2(t2.Hro40y);
     } else {
       string2Result = string2(t2.oDxaKy);
     }
-    obj4.label = string2Result;
-    const intl10 = channelId(warningType[13]).intl;
-    obj4.subLabel = intl10.string(channelId(warningType[13]).t.Lj37az);
-    obj4.icon = warningId(warningType[25]);
-    obj4.IconComponent = channelId(warningType[26]).CircleXIcon;
-    obj4.onPress = function onPress() {
-      if (outer1_10) {
+    const obj3 = { sectionKey: "action", buttons: null };
+    const obj4 = { label: string2Result, subLabel: null, icon: null, IconComponent: null, onPress: null };
+    const intl10 = tmp(tmp2[13]).intl;
+    obj4[1] = intl10.string(channelId(warningType[13]).t.Lj37az);
+    obj4[2] = warningId(warningType[25]);
+    obj4[3] = channelId(warningType[26]).CircleXIcon;
+    obj4[4] = function onPress() {
+      if (closure_10) {
         let tmpResult = tmp(tmp2[24]);
-        let obj = { location: lastChannelMessage };
-        tmpResult.unblockUser(outer1_3, obj);
-        tmpResult = tmp(tmp2[27]);
-        const result = tmpResult.showUnblockSuccessToast(outer1_3, outer1_0);
-        outer1_12(channelId(tmp2[11]).CtaEventTypes.USER_SAFETY_TOOLS_UNBLOCK);
+        let obj = { location: null };
+        obj[0] = outer1_6;
+        tmpResult.unblockUser(module_3886, obj);
+        const result = outer1_1(outer1_2[27]).showUnblockSuccessToast(module_3886, closure_0);
+        callback2(outer1_0(outer1_2[11]).CtaEventTypes.USER_SAFETY_TOOLS_UNBLOCK);
+        const obj5 = outer1_1(outer1_2[27]);
       } else {
-        obj = {
-          importer() {
-              return channelId(warningType[18])(warningType[29], warningType.paths).then((arg0) => {
-                let closure_0 = arg0.default;
-                return () => { ... };
-              });
-            }
+        tmpResult = tmp(tmp2[28]);
+        obj = { importer: null };
+        obj[0] = function importer() {
+          return outer1_0(outer1_2[18])(outer1_2[29], outer1_2.paths).then((arg0) => {
+            let closure_0 = arg0.default;
+            return () => { ... };
+          });
         };
-        tmp(tmp2[28]).openLazy(obj);
-        const tmpResult1 = tmp(tmp2[28]);
+        tmpResult.openLazy(obj);
       }
     };
     items[1] = obj4;
-    const obj5 = {};
-    const intl11 = channelId(warningType[13]).intl;
-    obj5.label = intl11.string(channelId(warningType[13]).t.X27yhD);
-    const intl12 = channelId(warningType[13]).intl;
-    obj5.subLabel = intl12.string(channelId(warningType[13]).t["0tydOa"]);
-    obj5.icon = warningId(warningType[30]);
-    obj5.IconComponent = channelId(warningType[31]).FlagIcon;
-    obj5.onPress = function onPress() {
-      outer1_4();
-      const result = channelId(warningType[32]).showReportModalForInappropriateConversationSafetyAlert(outer1_6);
-      outer1_12(channelId(warningType[11]).CtaEventTypes.USER_SAFETY_TOOLS_REPORT);
+    let obj5 = { label: null, subLabel: null, icon: null, IconComponent: null, onPress: null };
+    const intl11 = tmp(tmp2[13]).intl;
+    obj5[0] = intl11.string(channelId(warningType[13]).t.X27yhD);
+    const intl12 = tmp(tmp2[13]).intl;
+    obj5[1] = intl12.string(channelId(warningType[13]).t["0tydOa"]);
+    obj5[2] = warningId(warningType[30]);
+    obj5[3] = channelId(warningType[31]).FlagIcon;
+    obj5[4] = function onPress() {
+      callback();
+      const result = outer1_0(outer1_2[32]).showReportModalForInappropriateConversationSafetyAlert(closure_6);
+      callback2(outer1_0(outer1_2[11]).CtaEventTypes.USER_SAFETY_TOOLS_REPORT);
     };
     items[2] = obj5;
-    obj2.buttons = items;
-    const items1 = [obj2, , ];
-    const obj6 = { sectionKey: "support" };
-    const obj7 = {};
-    const intl13 = channelId(warningType[13]).intl;
-    obj7.label = intl13.string(channelId(warningType[13]).t.syuaPI);
-    const intl14 = channelId(warningType[13]).intl;
-    obj7.subLabel = intl14.string(channelId(warningType[13]).t.LLBnNk);
-    obj7.icon = warningId(warningType[33]);
-    obj7.IconComponent = channelId(warningType[34]).MusicIcon;
-    obj7.trailing = tmp;
-    obj7.onPress = function onPress() {
-      let obj = warningId(warningType[16]);
+    obj3[1] = items;
+    const items1 = [obj3, , ];
+    const obj6 = { label: null, subLabel: null, icon: null, IconComponent: null, trailing: null, onPress: null };
+    const intl13 = tmp(tmp2[13]).intl;
+    obj6[0] = intl13.string(channelId(warningType[13]).t.syuaPI);
+    const intl14 = tmp(tmp2[13]).intl;
+    obj6[1] = intl14.string(channelId(warningType[13]).t.LLBnNk);
+    obj6[2] = warningId(warningType[33]);
+    obj6[3] = channelId(warningType[34]).MusicIcon;
+    obj6[4] = tmp4;
+    obj6[5] = function onPress() {
+      let obj = outer1_1(outer1_2[16]);
       obj.hideActionSheet();
       obj = {
         onClose() {
 
         }
       };
-      warningId(warningType[35]).pushLazy(channelId(warningType[18])(warningType[36], warningType.paths), obj, stateFromStores);
-      outer1_12(channelId(warningType[11]).CtaEventTypes.USER_SAFETY_TOOLS_VIBING_WUMPUS);
+      outer1_1(outer1_2[35]).pushLazy(outer1_0(outer1_2[18])(outer1_2[36], outer1_2.paths), obj, outer1_10);
+      callback2(outer1_0(outer1_2[11]).CtaEventTypes.USER_SAFETY_TOOLS_VIBING_WUMPUS);
     };
-    const items2 = [obj7, , ];
-    const obj8 = {};
-    const intl15 = channelId(warningType[13]).intl;
-    obj8.label = intl15.string(channelId(warningType[13]).t["7LgVmt"]);
-    const intl16 = channelId(warningType[13]).intl;
-    obj8.subLabel = intl16.string(channelId(warningType[13]).t.pwoRjc);
-    obj8.icon = warningId(warningType[37]);
-    obj8.IconComponent = channelId(warningType[38]).EducationIcon;
-    obj8.trailing = tmp;
-    obj8.onPress = function onPress() {
-      let closure_0 = shouldShowHelplineLink(outer1_0);
-      let obj = warningId(warningType[16]);
+    const items2 = [obj6, , ];
+    const obj7 = { label: null, subLabel: null, icon: null, IconComponent: null, trailing: null, onPress: null };
+    const intl15 = tmp(tmp2[13]).intl;
+    obj7[0] = intl15.string(channelId(warningType[13]).t["7LgVmt"]);
+    const intl16 = tmp(tmp2[13]).intl;
+    obj7[1] = intl16.string(channelId(warningType[13]).t.pwoRjc);
+    obj7[2] = warningId(warningType[37]);
+    obj7[3] = channelId(warningType[38]).EducationIcon;
+    obj7[4] = tmp4;
+    obj7[5] = function onPress() {
+      closure_0 = outer1_7(closure_0);
+      let obj = outer1_1(outer1_2[16]);
       obj = {
-        recipientId: outer1_3,
-        channelId: outer1_0,
-        warningId: outer1_1,
-        warningType: outer1_2,
+        recipientId: module_3886,
+        channelId: closure_0,
+        warningId: closure_1,
+        warningType: closure_2,
         onClose() {
-          warningId(warningType[16]).hideActionSheet(closure_0);
+          outer1_1(outer1_2[16]).hideActionSheet(closure_0);
         }
       };
-      obj.openLazy(channelId(warningType[18])(warningType[39], warningType.paths), shouldShowHelplineLink(outer1_0), obj);
-      outer1_12(channelId(warningType[11]).CtaEventTypes.USER_SAFETY_TOOLS_SAFETY_TIPS);
+      obj.openLazy(outer1_0(outer1_2[18])(outer1_2[39], outer1_2.paths), outer1_7(closure_0), obj);
+      callback2(outer1_0(outer1_2[11]).CtaEventTypes.USER_SAFETY_TOOLS_SAFETY_TIPS);
     };
-    items2[1] = obj8;
+    items2[1] = obj7;
     if (!shouldShowHelplineLink) {
       if (shouldShowThroughlineLink) {
         obj1 = obj;
@@ -249,51 +250,50 @@ export default function SafetyToolsActionSheet(channelId) {
       obj = obj1;
     }
     items2[2] = obj;
-    obj6.buttons = items2;
-    items1[1] = obj6;
-    const obj9 = { sectionKey: "info" };
-    const obj10 = {};
-    const intl17 = channelId(warningType[13]).intl;
-    obj10.label = intl17.string(channelId(warningType[13]).t.otdt24);
-    obj10.icon = warningId(warningType[40]);
-    obj10.IconComponent = channelId(warningType[41]).ShieldIcon;
-    obj10.trailing = tmp;
-    obj10.onPress = function onPress() {
-      let closure_0 = shouldShowHelplineLink(outer1_0);
-      let obj = warningId(warningType[16]);
+    items1[1] = { sectionKey: "support", buttons: items2 };
+    const obj8 = { sectionKey: "info", buttons: null };
+    const obj9 = { label: null, icon: null, IconComponent: null, trailing: null, onPress: null };
+    const intl17 = tmp(tmp2[13]).intl;
+    obj9[0] = intl17.string(channelId(warningType[13]).t.otdt24);
+    obj9[1] = warningId(warningType[40]);
+    obj9[2] = channelId(warningType[41]).ShieldIcon;
+    obj9[3] = tmp4;
+    obj9[4] = function onPress() {
+      closure_0 = outer1_7(closure_0);
+      let obj = outer1_1(outer1_2[16]);
       obj = {
-        recipientId: outer1_3,
-        channelId: outer1_0,
-        warningId: outer1_1,
-        warningType: outer1_2,
+        recipientId: module_3886,
+        channelId: closure_0,
+        warningId: closure_1,
+        warningType: closure_2,
         onClose() {
-          warningId(warningType[16]).hideActionSheet(closure_0);
+          outer1_1(outer1_2[16]).hideActionSheet(closure_0);
         }
       };
-      obj.openLazy(channelId(warningType[18])(warningType[42], warningType.paths), shouldShowHelplineLink(outer1_0), obj);
-      outer1_12(channelId(warningType[11]).CtaEventTypes.USER_SAFETY_TOOLS_ABOUT_SAFETY_ALERTS);
+      obj.openLazy(outer1_0(outer1_2[18])(outer1_2[42], outer1_2.paths), outer1_7(closure_0), obj);
+      callback2(outer1_0(outer1_2[11]).CtaEventTypes.USER_SAFETY_TOOLS_ABOUT_SAFETY_ALERTS);
     };
-    const items3 = [obj10];
-    obj9.buttons = items3;
-    items1[2] = obj9;
+    const items3 = [obj9];
+    obj8[1] = items3;
+    items1[2] = obj8;
     return items1;
   }, items5);
-  obj = {};
+  obj = { headerTitle: null, channelId: null, recipientId: null, warningId: null, warningType: null, onClose: null, children: null };
   let obj6 = channelId(warningType[10]);
   let intl = channelId(warningType[13]).intl;
-  obj.headerTitle = intl.string(channelId(warningType[13]).t.MAhAp6);
-  obj.channelId = channelId;
-  obj.recipientId = recipientId;
-  obj.warningId = warningId;
-  obj.warningType = warningType;
-  obj.onClose = onClose;
+  obj[0] = intl.string(channelId(warningType[13]).t.MAhAp6);
+  obj[1] = channelId;
+  obj[2] = recipientId;
+  obj[3] = warningId;
+  obj[4] = warningType;
+  obj[5] = onClose;
   obj = {
     style: tmp.container,
     children: memo.map((buttons) => {
-      let obj = { style: tmp.actionRowGroup };
-      obj = { hasIcons: true };
+      let obj = { style: _undefined.actionRowGroup, children: null };
+      obj = { hasIcons: true, children: null };
       buttons = buttons.buttons;
-      obj.children = buttons.map((arg0, arg1) => {
+      obj[1] = buttons.map((arg0, arg1) => {
         let IconComponent;
         let disabled;
         let icon;
@@ -302,13 +302,14 @@ export default function SafetyToolsActionSheet(channelId) {
         let subLabel;
         let trailing;
         ({ label, subLabel, IconComponent, icon, trailing, onPress, disabled } = arg0);
-        const obj = { label, subLabel, onPress, trailing, disabled, icon: stateFromStores1(channelId(warningType[46]).TableRowIcon, { source: icon, IconComponent }) };
-        return stateFromStores1(channelId(warningType[45]).TableRow, obj, arg1);
+        const obj = { label, subLabel, onPress, trailing, disabled, icon: null };
+        obj[5] = callback2(callback(5226).TableRowIcon, { source: icon, IconComponent });
+        return callback2(callback(5220).TableRow, obj, arg1);
       });
-      obj.children = stateFromStores1(channelId(warningType[44]).TableRowGroup, obj);
+      obj[1] = stateFromStores1(channelId(warningType[44]).TableRowGroup, obj);
       return stateFromStores1(onClose, obj, buttons.sectionKey);
     })
   };
-  obj.children = stateFromStores1(onClose, obj);
+  obj[6] = stateFromStores1(onClose, obj);
   return stateFromStores1(warningId(warningType[43]), obj);
 };

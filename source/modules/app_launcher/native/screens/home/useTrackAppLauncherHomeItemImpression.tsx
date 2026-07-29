@@ -1,17 +1,17 @@
-// Module ID: 11249
-// Function ID: 87359
+// Module ID: 11273
+// Function ID: 11274
 // Name: useTrackAppLauncherHomeItemImpression
-// Dependencies: [31, 11250, 11237, 5674, 483, 2]
+// Dependencies: [19, 11274, 11261, 5692, 506, 2]
 // Exports: useTrackAppLauncherHomeItemImpression
 
-// Module 11249 (useTrackAppLauncherHomeItemImpression)
-import result from "result";
+// Module 11273 (useTrackAppLauncherHomeItemImpression)
+import noop from "noop";
 
 const require = arg1;
 const result = require("AppLauncherHomeListItemType").fileFinishedImporting("modules/app_launcher/native/screens/home/useTrackAppLauncherHomeItemImpression.tsx");
 
 export const useTrackAppLauncherHomeItemImpression = function useTrackAppLauncherHomeItemImpression() {
-  let obj = trackAppLauncherItemImpressionOnFirstView(11250);
+  let obj = trackAppLauncherItemImpressionOnFirstView(11274);
   trackAppLauncherItemImpressionOnFirstView = obj.useTrackAppLauncherItemImpressionOnFirstView().trackAppLauncherItemImpressionOnFirstView;
   obj = {
     trackAppLauncherHomeItemImpression: React.useCallback((viewableItems) => {
@@ -21,50 +21,50 @@ export const useTrackAppLauncherHomeItemImpression = function useTrackAppLaunche
         let shelfItem1SectionPosition;
         let shelfItem2SectionPosition;
         item = item.item;
-        if (item.type === trackAppLauncherItemImpressionOnFirstView(outer2_2[2]).AppLauncherHomeListItemType.RECOMMENDATION_APP) {
+        if (item.type === outer1_0(outer1_2[2]).AppLauncherHomeListItemType.RECOMMENDATION_APP) {
           shelfItem1SectionPosition = item.sectionPosition;
           applicationId = item.application.id;
-          let flags = trackAppLauncherItemImpressionOnFirstView(outer2_2[3]).getApplicationFlags(item.application);
-          const obj2 = trackAppLauncherItemImpressionOnFirstView(outer2_2[3]);
-        } else if (item.type === trackAppLauncherItemImpressionOnFirstView(outer2_2[2]).AppLauncherHomeListItemType.RECOMMENDATION_BANNER_CARD) {
+          let tmpResult = tmp(tmp2[3]);
+          let flags = tmpResult.getApplicationFlags(item.application);
+        } else if (item.type === tmp(tmp2[2]).AppLauncherHomeListItemType.RECOMMENDATION_BANNER_CARD) {
           shelfItem1SectionPosition = item.sectionPosition;
           applicationId = item.item.application.id;
-          let obj = trackAppLauncherItemImpressionOnFirstView(outer2_2[3]);
-          flags = obj.getApplicationFlags(item.item.application);
-        } else if (item.type === trackAppLauncherItemImpressionOnFirstView(outer2_2[2]).AppLauncherHomeListItemType.SHELF_ITEM) {
+          tmpResult = tmp(tmp2[3]);
+          flags = tmpResult.getApplicationFlags(item.item.application);
+        } else if (item.type === tmp(tmp2[2]).AppLauncherHomeListItemType.SHELF_ITEM) {
           ({ sectionPosition: shelfItem1SectionPosition, applicationId } = item);
           flags = item.section.application.flags;
-        } else if (item.type === trackAppLauncherItemImpressionOnFirstView(outer2_2[2]).AppLauncherHomeListItemType.SHELF_ITEM_TUPLE) {
+        } else if (item.type === tmp(tmp2[2]).AppLauncherHomeListItemType.SHELF_ITEM_TUPLE) {
           ({ shelfItem1SectionPosition, shelfItem2SectionPosition } = item);
           applicationId = item.shelfItem1.application.id;
           const shelfItem2 = item.shelfItem2;
-          if (null != shelfItem2) {
+          if (shelfItem2 != null) {
             const id = shelfItem2.application.id;
           }
           flags = item.shelfItem1.application.flags;
           const shelfItem22 = item.shelfItem2;
-          if (null != shelfItem22) {
+          if (shelfItem22 != null) {
             const flags2 = shelfItem22.application.flags;
           }
         }
-        obj = { itemKey: "sectionName:" + item.sectionName + " applicationId:" + applicationId, sectionName: item.sectionName, sectionPosition: shelfItem1SectionPosition, sectionOverallPosition: item.sectionOverallPosition, applicationId, applicationFlags: outer2_1(outer2_2[4]).asUintN(32, flags) };
-        outer1_0(obj);
+        let obj = { itemKey: "sectionName:" + item.sectionName + " applicationId:" + applicationId, sectionName: item.sectionName, sectionPosition: shelfItem1SectionPosition, sectionOverallPosition: item.sectionOverallPosition, applicationId, applicationFlags: null };
+        obj[5] = outer1_1(outer1_2[4]).asUintN(32, flags);
+        callback(obj);
         if (tmp7) {
-          obj = {};
+          obj = { itemKey: null, sectionName: null, sectionPosition: null, sectionOverallPosition: null, applicationId: null, applicationFlags: null };
           const _HermesInternal = HermesInternal;
-          obj.itemKey = "sectionName:" + item.sectionName + " applicationId:" + id;
-          obj.sectionName = item.sectionName;
-          obj.sectionPosition = shelfItem2SectionPosition;
-          obj.sectionOverallPosition = item.sectionOverallPosition;
-          obj.applicationId = id;
+          obj[0] = "sectionName:" + item.sectionName + " applicationId:" + id;
+          obj[1] = item.sectionName;
+          obj[2] = shelfItem2SectionPosition;
+          obj[3] = item.sectionOverallPosition;
+          obj[4] = id;
           let asUintNResult;
           if (null != flags2) {
-            asUintNResult = outer2_1(outer2_2[4]).asUintN(32, flags2);
-            const obj6 = outer2_1(outer2_2[4]);
+            asUintNResult = outer1_1(tmp2[4]).asUintN(32, flags2);
+            const tmp5Result = outer1_1(tmp2[4]);
           }
-          obj.applicationFlags = asUintNResult;
-          outer1_0(obj);
-          const tmp8 = outer1_0;
+          obj[5] = asUintNResult;
+          callback(obj);
         }
       });
     }, items)

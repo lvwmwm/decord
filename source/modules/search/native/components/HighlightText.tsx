@@ -1,25 +1,25 @@
-// Module ID: 10269
-// Function ID: 79300
+// Module ID: 10290
+// Function ID: 10291
 // Name: HighlightText
-// Dependencies: [31, 653, 33, 4165, 4009, 689, 1273, 2]
+// Dependencies: [19, 676, 21, 4189, 4033, 712, 1297, 2]
 // Exports: default
 
-// Module 10269 (HighlightText)
-import "result";
+// Module 10290 (HighlightText)
+import "noop";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import hexToRgb from "hexToRgb";
+import createCacheKey from "createCacheKey";
+import hexToRgba from "hexToRgba";
 
 const require = arg1;
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { fontFamily: require("ME").Fonts.PRIMARY_BOLD };
-_createForOfIteratorHelperLoose.backgroundColor = hexToRgb.hexOpacityToRgba(require("_createForOfIteratorHelperLoose").unsafe_rawColors.YELLOW_300, 0.3);
-_createForOfIteratorHelperLoose.color = require("_createForOfIteratorHelperLoose").colors.TEXT_STRONG;
-_createForOfIteratorHelperLoose.text = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+createCacheKey = { text: null };
+createCacheKey = { fontFamily: require("ME").Fonts.PRIMARY_BOLD, backgroundColor: null, color: null };
+createCacheKey[1] = hexToRgba.hexOpacityToRgba(require("Themes").unsafe_rawColors.YELLOW_300, 0.3);
+createCacheKey[2] = require("Themes").colors.TEXT_STRONG;
+createCacheKey[0] = createCacheKey;
+createCacheKey = createCacheKey.createStyles(createCacheKey);
 const result = require("jsxProd").fileFinishedImporting("modules/search/native/components/HighlightText.tsx");
 
 export default function HighlightText(children) {
-  const tmp = _createForOfIteratorHelperLoose();
-  return jsx(require(1273) /* Button */.LegacyText, { style: _createForOfIteratorHelperLoose().text, children: children.children });
+  const tmp = createCacheKey();
+  return jsx(require(1297) /* Button */.LegacyText, { style: createCacheKey().text, children: children.children });
 };

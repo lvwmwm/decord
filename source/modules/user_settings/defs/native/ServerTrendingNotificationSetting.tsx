@@ -1,19 +1,19 @@
-// Module ID: 14447
-// Function ID: 110340
+// Module ID: 14469
+// Function ID: 14470
 // Name: toggle
-// Dependencies: [7733, 10099, 1212, 3838, 14448, 2]
+// Dependencies: [7756, 10120, 1236, 3862, 14470, 2]
 
-// Module 14447 (toggle)
+// Module 14469 (toggle)
 import createToggle from "createToggle";
 
 const toggle = createToggle.createToggle({
   useTitle() {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(require(1212) /* getSystemLocale */.t.Q3VWjI);
+    const intl = require(1236) /* getSystemLocale */.intl;
+    return intl.string(require(1236) /* getSystemLocale */.t.Q3VWjI);
   },
   useDescription() {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(require(1212) /* getSystemLocale */.t.Wc1RcU);
+    const intl = require(1236) /* getSystemLocale */.intl;
+    return intl.string(require(1236) /* getSystemLocale */.t.Wc1RcU);
   },
   parent: require("MobileSetting").MobileSetting.NOTIFICATIONS,
   useValue: require("explicitContentFromProto").EnableServerTrendingNotifications.useSetting,
@@ -24,12 +24,12 @@ const toggle = createToggle.createToggle({
 });
 const obj = {
   useTitle() {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(require(1212) /* getSystemLocale */.t.Q3VWjI);
+    const intl = require(1236) /* getSystemLocale */.intl;
+    return intl.string(require(1236) /* getSystemLocale */.t.Q3VWjI);
   },
   useDescription() {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(require(1212) /* getSystemLocale */.t.Wc1RcU);
+    const intl = require(1236) /* getSystemLocale */.intl;
+    return intl.string(require(1236) /* getSystemLocale */.t.Wc1RcU);
   },
   parent: require("MobileSetting").MobileSetting.NOTIFICATIONS,
   useValue: require("explicitContentFromProto").EnableServerTrendingNotifications.useSetting,

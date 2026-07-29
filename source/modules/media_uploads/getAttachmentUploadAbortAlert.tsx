@@ -1,32 +1,36 @@
-// Module ID: 12586
-// Function ID: 97232
+// Module ID: 12608
+// Function ID: 12609
 // Name: getAttachmentUploadAbortAlertContent
-// Dependencies: [653, 1212, 4701, 2]
+// Dependencies: [676, 1236, 4723, 2]
 // Exports: getAttachmentUploadAbortAlertContent
 
-// Module 12586 (getAttachmentUploadAbortAlertContent)
+// Module 12608 (getAttachmentUploadAbortAlertContent)
 import { AbortCodes } from "ME";
 
 const result = require("items").fileFinishedImporting("modules/media_uploads/getAttachmentUploadAbortAlert.tsx");
 
 export const getAttachmentUploadAbortAlertContent = function getAttachmentUploadAbortAlertContent(code) {
-  const intl = require(1212) /* getSystemLocale */.intl;
-  const stringResult = intl.string(require(1212) /* getSystemLocale */.t.B3vFdU);
+  const intl = require(1236) /* getSystemLocale */.intl;
+  const stringResult = intl.string(require(1236) /* getSystemLocale */.t.B3vFdU);
   if (AbortCodes.TOTAL_ATTACHMENT_SIZE_TOO_LARGE === code) {
-    let obj = { title: stringResult };
-    const intl4 = require(1212) /* getSystemLocale */.intl;
-    obj = { maxSizeMb: require(4701) /* items */.MAX_TOTAL_ATTACHMENT_SIZE_MB };
-    obj.body = intl4.formatToPlainString(require(1212) /* getSystemLocale */.t.DYFPg2, obj);
+    let obj = { title: null, body: null };
+    obj[0] = stringResult;
+    const intl4 = tmp(1236).intl;
+    obj = { maxSizeMb: null };
+    obj[0] = tmp(4723).MAX_TOTAL_ATTACHMENT_SIZE_MB;
+    obj[1] = intl4.formatToPlainString(tmp(1236).t.DYFPg2, obj);
     return obj;
-  } else if (AbortCodes.CLOUD_UPLOAD_NOT_FOUND === code) {
-    const obj1 = { title: stringResult };
-    const intl3 = require(1212) /* getSystemLocale */.intl;
-    obj1.body = intl3.string(require(1212) /* getSystemLocale */.t.bQldfH);
+  } else if (tmp4.CLOUD_UPLOAD_NOT_FOUND === code) {
+    const obj1 = { title: null, body: null };
+    obj1[0] = stringResult;
+    const intl3 = tmp(1236).intl;
+    obj1[1] = intl3.string(tmp(1236).t.bQldfH);
     return obj1;
-  } else if (AbortCodes.INVALID_PERMISSIONS === code) {
-    obj = { title: stringResult };
-    const intl2 = require(1212) /* getSystemLocale */.intl;
-    obj.body = intl2.string(require(1212) /* getSystemLocale */.t.zl4Weq);
+  } else if (tmp4.INVALID_PERMISSIONS === code) {
+    obj = { title: null, body: null };
+    obj[0] = stringResult;
+    const intl2 = tmp(1236).intl;
+    obj[1] = intl2.string(tmp(1236).t.zl4Weq);
     return obj;
   } else {
     return null;

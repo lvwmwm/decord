@@ -1,39 +1,13 @@
-// Module ID: 10900
-// Function ID: 84530
-// Name: useAppLauncherChatInputRefDummy
-// Dependencies: [31, 4026, 7992, 10901, 2]
-// Exports: useAppLauncherContext, useRequiredAppLauncherContext
+// Module ID: 10924
+// Function ID: 10925
+// Name: context
+// Dependencies: [19, 4050, 8017, 10925, 2]
+// Exports: useAppLauncherChatInputRefDummy, useAppLauncherContext, useRequiredAppLauncherContext
 
-// Module 10900 (useAppLauncherChatInputRefDummy)
-import importAllResult from "result";
+// Module 10924 (context)
+import importAllResult from "noop";
 
 const require = arg1;
-function useAppLauncherChatInputRefDummy(noop) {
-  noop = noop.noop;
-  return importAllResult.useRef({
-    getApplicationCommandManager() {
-      if (!noop) {
-        const _Error = Error;
-        const error = new Error("use useRequiredAppLauncherContext and provide a ChatInputRef");
-        throw error;
-      }
-    },
-    openCustomKeyboard() {
-      if (!noop) {
-        const _Error = Error;
-        const error = new Error("use useRequiredAppLauncherContext and provide a ChatInputRef");
-        throw error;
-      }
-    },
-    closeCustomKeyboard() {
-      if (!noop) {
-        const _Error = Error;
-        const error = new Error("use useRequiredAppLauncherContext and provide a ChatInputRef");
-        throw error;
-      }
-    }
-  });
-}
 let obj = { DISMISSED: 0, [0]: "DISMISSED", COMMAND: 1, [1]: "COMMAND", ACTIVITY: 2, [2]: "ACTIVITY", BACK: 3, [3]: "BACK", OAUTH_MODAL: 4, [4]: "OAUTH_MODAL" };
 let context = importAllResult.createContext(undefined);
 const result = require("AppLauncherEntrypoint").fileFinishedImporting("modules/app_launcher/native/AppLauncherContext.tsx");
@@ -41,7 +15,32 @@ const result = require("AppLauncherEntrypoint").fileFinishedImporting("modules/a
 export const AppLauncherKeyboardCloseReason = obj;
 export const AppLauncherBottomSheetExpandReason = { GESTURE: 0, [0]: "GESTURE", KEYBOARD: 1, [1]: "KEYBOARD", APP_VIEW: 2, [2]: "APP_VIEW", COMMAND_VIEW: 3, [3]: "COMMAND_VIEW", OTHER: 4, [4]: "OTHER" };
 export const AppLauncherContext = context;
-export { useAppLauncherChatInputRefDummy };
+export const useAppLauncherChatInputRefDummy = function useAppLauncherChatInputRefDummy(noop) {
+  noop = noop.noop;
+  return importAllResult.useRef({
+    getApplicationCommandManager() {
+      if (!c0) {
+        const _Error = Error;
+        const error = new Error("use useRequiredAppLauncherContext and provide a ChatInputRef");
+        throw error;
+      }
+    },
+    openCustomKeyboard() {
+      if (!c0) {
+        const _Error = Error;
+        const error = new Error("use useRequiredAppLauncherContext and provide a ChatInputRef");
+        throw error;
+      }
+    },
+    closeCustomKeyboard() {
+      if (!c0) {
+        const _Error = Error;
+        const error = new Error("use useRequiredAppLauncherContext and provide a ChatInputRef");
+        throw error;
+      }
+    }
+  });
+};
 export const useRequiredAppLauncherContext = function useRequiredAppLauncherContext() {
   context = importAllResult.useContext(context);
   if (null == context) {
@@ -53,21 +52,44 @@ export const useRequiredAppLauncherContext = function useRequiredAppLauncherCont
   }
 };
 export const useAppLauncherContext = function useAppLauncherContext() {
-  const _require = sharedValue.useRef(sharedValue1.DISMISSED);
+  let _require = sharedValue.useRef(sharedValue1.DISMISSED);
   const dependencyMap = sharedValue.useRef(undefined);
-  sharedValue = _require(4026).useSharedValue(-1);
-  const obj = _require(4026);
-  sharedValue1 = _require(4026).useSharedValue(0);
-  const TEXT = _require(7992).AppLauncherEntrypoint.TEXT;
-  const obj2 = _require(4026);
-  const defaultAppLauncherWidth = _require(10901).useDefaultAppLauncherWidth(TEXT);
-  const tmp4 = defaultAppLauncherWidth({ noop: false });
-  let closure_6 = tmp4;
-  const items = [defaultAppLauncherWidth, TEXT, tmp4, sharedValue, sharedValue1];
-  let memo = sharedValue.useMemo(() => ({ keyboardCloseReasonRef: closure_0, bottomSheetIndex: sharedValue, bottomSheetPosition: sharedValue1, bottomSheetExpandReasonRef: closure_1, chatInputRef: closure_6, width: defaultAppLauncherWidth, entrypoint: TEXT, onActivityItemSelected: undefined }), items);
-  const context = sharedValue.useContext(TEXT);
-  if (null != context) {
-    memo = context;
+  let obj = _require(4050);
+  sharedValue = obj.useSharedValue(-1);
+  sharedValue1 = _require(4050).useSharedValue(0);
+  const TEXT = _require(8017).AppLauncherEntrypoint.TEXT;
+  const obj2 = _require(4050);
+  const defaultAppLauncherWidth = _require(10925).useDefaultAppLauncherWidth(TEXT);
+  _require = false;
+  obj = {
+    getApplicationCommandManager() {
+      if (!c0) {
+        const _Error = Error;
+        const error = new Error("use useRequiredAppLauncherContext and provide a ChatInputRef");
+        throw error;
+      }
+    },
+    openCustomKeyboard() {
+      if (!c0) {
+        const _Error = Error;
+        const error = new Error("use useRequiredAppLauncherContext and provide a ChatInputRef");
+        throw error;
+      }
+    },
+    closeCustomKeyboard() {
+      if (!c0) {
+        const _Error = Error;
+        const error = new Error("use useRequiredAppLauncherContext and provide a ChatInputRef");
+        throw error;
+      }
+    }
+  };
+  const ref = sharedValue.useRef(obj);
+  const items = [defaultAppLauncherWidth, TEXT, ref, sharedValue, sharedValue1];
+  const memo = sharedValue.useMemo(() => ({ keyboardCloseReasonRef: c0, bottomSheetIndex: sharedValue, bottomSheetPosition: sharedValue1, bottomSheetExpandReasonRef: closure_1, chatInputRef: ref, width: defaultAppLauncherWidth, entrypoint: TEXT, onActivityItemSelected: "Boolean" }), items);
+  let context = sharedValue.useContext(TEXT);
+  if (context == null) {
+    context = memo;
   }
-  return memo;
+  return context;
 };

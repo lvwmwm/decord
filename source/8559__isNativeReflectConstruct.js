@@ -1,29 +1,89 @@
 // Module ID: 8559
-// Function ID: 67923
+// Function ID: 8560
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 31, 33, 8560, 8545, 8546]
+// Dependencies: [41, 42, 93, 95, 98, 19, 21, 8546, 8560, 8555]
 
 // Module 8559 (_isNativeReflectConstruct)
-import jsxProd from "jsxProd";
-import __INTERNAL_VIEW_CONFIG from "__INTERNAL_VIEW_CONFIG";
+import _classCallCheck from "_classCallCheck";
 import _possibleConstructorReturn from "_possibleConstructorReturn";
 import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
-import "result";
+import importDefaultResult from "_createClass";
+import "noop";
 import { jsx } from "jsxProd";
-import tmp3 from "_isNativeReflectConstruct";
 
-const require = arg1;
+const Circle = arg1;
 function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
+  try {
+    const _Boolean = Boolean;
+    const call = valueOf.call;
+    const _Reflect = Reflect;
+    const _Boolean2 = Boolean;
+    if (typeof call === "unknown") {
+      let callResult = valueOf();
+    } else {
+      callResult = call(constructResult);
+    }
+    let closure_0 = !callResult;
+    function _isNativeReflectConstruct() {
+      return closure_0;
+    }
+    return _isNativeReflectConstruct();
+  } catch (err) {
   }
-  const result = _isNativeReflectConstruct();
 }
-tmp3.displayName = "FeOffset";
-tmp3.defaultProps = Object.assign({}, tmp3.defaultPrimitiveProps, { dx: 0, dy: 0 });
+class Circle {
+  constructor() {
+    self = this;
+    tmp = _isNativeReflectConstruct(this, Circle);
+    tmp2 = __esModule;
+    obj = __esModule(Circle);
+    tmp3 = __esModule;
+    if (_isNativeReflectConstruct()) {
+      tmp7 = globalThis;
+      _Reflect = Reflect;
+      tmp8 = arguments;
+      constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
+    } else {
+      tmp4 = arguments;
+      tmp5 = arguments;
+      constructResult = obj(...arguments);
+    }
+    return tmp3(self, constructResult);
+  }
+}
+require("_inherits")(Circle, require("_isNativeReflectConstruct"));
+const items = [
+  {
+    key: "render",
+    value: function render() {
+      let cx;
+      let cy;
+      let r;
+      const self = this;
+      const props = this.props;
+      let obj = {};
+      ({ cx, cy, r } = props);
+      const merged = Object.assign(self(8546).extract(this, props));
+      obj.cx = cx;
+      obj.cy = cy;
+      obj.r = r;
+      obj = {
+        ref(arg0) {
+          return self.refMethod(arg0);
+        }
+      };
+      const obj2 = self(8546);
+      const merged1 = Object.assign(obj);
+      return jsx(importDefault(8560), {
+        ref(arg0) {
+          return self.refMethod(arg0);
+        }
+      });
+    }
+  }
+];
+const importDefaultResultResult = importDefaultResult(Circle, items);
+importDefaultResultResult.displayName = "Circle";
+importDefaultResultResult.defaultProps = { cx: 0, cy: 0, r: 0 };
 
-export default tmp3;
+export default importDefaultResultResult;

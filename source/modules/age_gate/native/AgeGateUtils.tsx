@@ -1,30 +1,17 @@
-// Module ID: 9334
-// Function ID: 72919
-// Name: isNSFWInvite
-// Dependencies: [1838, 3793, 1850, 653, 477, 4372, 9335, 1935, 5688, 2]
-// Exports: handleNSFWGuildInvite, shouldNSFWGateGuild
+// Module ID: 9358
+// Function ID: 9359
+// Name: GuildNSFWContentLevel
+// Dependencies: [1862, 3817, 1874, 676, 500, 4395, 9359, 1959, 5706, 2]
+// Exports: handleNSFWGuildInvite, isNSFWInvite, shouldNSFWGateGuild
 
-// Module 9334 (isNSFWInvite)
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_5 from "_isNativeReflectConstruct";
+// Module 9358 (GuildNSFWContentLevel)
+import createGuildRecordFromRust from "createGuildRecordFromRust";
+import getUncachedChannelPermissions from "getUncachedChannelPermissions";
+import mergeGuildAvatar from "mergeGuildAvatar";
 import ME from "ME";
-import set from "_isNativeReflectConstruct";
+import set from "mergeGuildAvatar";
 
 const require = arg1;
-function isNSFWInvite(guild) {
-  let nsfw_level;
-  if (null != guild) {
-    guild = guild.guild;
-    if (null != guild) {
-      nsfw_level = guild.nsfw_level;
-    }
-  }
-  if (null == nsfw_level) {
-    nsfw_level = GuildNSFWContentLevel.DEFAULT;
-  }
-  return set.has(nsfw_level);
-}
 const GuildNSFWContentLevel = ME.GuildNSFWContentLevel;
 const Permissions = ME.Permissions;
 const items = [, ];
@@ -32,38 +19,65 @@ const items = [, ];
 let set = new Set(items);
 const result = set.fileFinishedImporting("modules/age_gate/native/AgeGateUtils.tsx");
 
-export { isNSFWInvite };
+export const isNSFWInvite = function isNSFWInvite(guild) {
+  let nsfw_level;
+  if (guild != null) {
+    guild = guild.guild;
+    if (guild != null) {
+      nsfw_level = guild.nsfw_level;
+    }
+  }
+  if (nsfw_level == null) {
+    nsfw_level = GuildNSFWContentLevel.DEFAULT;
+  }
+  return set.has(nsfw_level);
+};
 export const handleNSFWGuildInvite = function handleNSFWGuildInvite(invite) {
-  let obj = require(477) /* set */;
+  let obj = require(500) /* set */;
   if (obj.isIOS()) {
-    let id;
-    if (null != invite) {
+    let nsfw_level;
+    if (invite != null) {
       const guild = invite.guild;
-      if (null != guild) {
-        id = guild.id;
+      if (guild != null) {
+        nsfw_level = guild.nsfw_level;
       }
     }
-    const tmp6 = !isNSFWInvite(invite) || null != store.getGuild(id);
-    let flag2 = !tmp6;
-    if (!tmp6) {
-      obj = {};
-      let id1;
-      const obj2 = importDefault(4372);
-      if (null != invite) {
-        const guild2 = invite.guild;
-        if (null != guild2) {
-          id1 = guild2.id;
+    if (nsfw_level == null) {
+      nsfw_level = GuildNSFWContentLevel.DEFAULT;
+    }
+    const hasItem = set.has(nsfw_level);
+    if (invite != null) {
+      const guild2 = invite.guild;
+      if (guild2 != null) {
+        let id = guild2.id;
+      }
+    }
+    let tmp10 = !hasItem;
+    if (hasItem) {
+      tmp10 = null != store.getGuild(id);
+    }
+    let flag2 = !tmp10;
+    if (!tmp10) {
+      id = undefined;
+      const obj2 = importDefault(4395);
+      if (invite != null) {
+        const guild3 = invite.guild;
+        if (guild3 != null) {
+          id = guild3.id;
         }
       }
-      obj.guildId = id1;
-      obj2.pushLazy(require(1935) /* maybeLoadBundle */(9335, dependencyMap.paths), obj);
+      obj = { guildId: null };
+      obj[0] = id;
+      obj2.pushLazy(tmp(1959)(9359, tmp2.paths), obj);
       flag2 = true;
-      const tmp10 = require(1935) /* maybeLoadBundle */(9335, dependencyMap.paths);
+      const tmp12 = tmp(1959)(9359, tmp2.paths);
     }
     return flag2;
   } else {
     return false;
   }
+  tmp = require;
+  tmp2 = dependencyMap;
 };
 export const shouldNSFWGateGuild = function shouldNSFWGateGuild(guildId) {
   if (obj.isIOS()) {
@@ -71,39 +85,28 @@ export const shouldNSFWGateGuild = function shouldNSFWGateGuild(guildId) {
     currentUser = currentUser.getCurrentUser();
     if (null != guild) {
       if (null != currentUser) {
-        let canResult = _isNativeReflectConstruct.can(Permissions.ADMINISTRATOR, guild);
-        if (!canResult) {
-          canResult = _isNativeReflectConstruct.can(Permissions.MANAGE_GUILD, guild);
-        }
-        if (!canResult) {
-          canResult = _isNativeReflectConstruct.can(Permissions.KICK_MEMBERS, guild);
-        }
-        if (!canResult) {
-          canResult = _isNativeReflectConstruct.can(Permissions.BAN_MEMBERS, guild);
-        }
-        let tmp15 = guild.nsfwLevel === GuildNSFWContentLevel.AGE_RESTRICTED;
+        const tmp9 = getUncachedChannelPermissions.can(Permissions.ADMINISTRATOR, guild) || getUncachedChannelPermissions.can(Permissions.MANAGE_GUILD, guild) || getUncachedChannelPermissions.can(Permissions.KICK_MEMBERS, guild) || getUncachedChannelPermissions.can(Permissions.BAN_MEMBERS, guild);
         let nsfwAllowed = currentUser.nsfwAllowed;
         if (nsfwAllowed) {
-          nsfwAllowed = require(5688) /* resolveNsfwTogglesWithDefaults */.getViewNsfwGuildsOrDefault();
-          const obj2 = require(5688) /* resolveNsfwTogglesWithDefaults */;
+          nsfwAllowed = tmp(5706).getViewNsfwGuildsOrDefault();
+          const tmpResult = tmp(5706);
         }
-        let tmp20 = !canResult;
-        if (tmp20) {
-          let tmp21 = tmp17;
-          if (!tmp17) {
-            if (tmp15) {
-              tmp15 = !nsfwAllowed;
-            }
-            tmp21 = tmp15;
+        let tmp11 = !tmp9;
+        if (!tmp9) {
+          let tmp12 = guild.nsfwLevel === GuildNSFWContentLevel.EXPLICIT;
+          if (!tmp12) {
+            tmp12 = guild.nsfwLevel === GuildNSFWContentLevel.AGE_RESTRICTED && !nsfwAllowed;
+            const tmp13 = guild.nsfwLevel === GuildNSFWContentLevel.AGE_RESTRICTED && !nsfwAllowed;
           }
-          tmp20 = tmp21;
+          tmp11 = tmp12;
         }
-        return tmp20;
+        return tmp11;
       }
     }
     return false;
   } else {
     return false;
   }
-  obj = require(477) /* set */;
+  obj = require(500) /* set */;
+  tmp = require;
 };

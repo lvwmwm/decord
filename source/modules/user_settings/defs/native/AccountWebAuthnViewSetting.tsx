@@ -1,50 +1,54 @@
-// Module ID: 13809
-// Function ID: 105785
+// Module ID: 13830
+// Function ID: 13831
 // Name: route
-// Dependencies: [31, 13730, 1850, 7733, 653, 4505, 1212, 5627, 566, 10099, 13733, 2]
+// Dependencies: [19, 13751, 1874, 7756, 676, 4528, 1236, 5645, 589, 10120, 13754, 2]
 
-// Module 13809 (route)
-import result from "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_5 from "_isNativeReflectConstruct";
+// Module 13830 (route)
+import noop from "noop";
+import hasFetchedCredentials from "hasFetchedCredentials";
+import mergeGuildAvatar from "mergeGuildAvatar";
 import createToggle from "createToggle";
 
 const require = arg1;
 createToggle = {
   useTitle() {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(require(1212) /* getSystemLocale */.t.y7SXYX);
+    const intl = require(1236) /* getSystemLocale */.intl;
+    return intl.string(require(1236) /* getSystemLocale */.t.y7SXYX);
   },
   parent: require("MobileSetting").MobileSetting.ACCOUNT,
   usePreNavigationAction: function useAccountCanUseWebAuthnView() {
     return React.useCallback(() => {
-      const currentUser = outer1_5.getCurrentUser();
-      let verified;
-      if (null != currentUser) {
-        verified = currentUser.verified;
+      currentUser = currentUser.getCurrentUser();
+      let flag;
+      if (currentUser != null) {
+        flag = currentUser.verified;
       }
-      if (!(null != verified && verified)) {
-        let obj = outer1_1(outer1_2[5]);
-        obj = {};
-        const intl = outer1_0(outer1_2[6]).intl;
-        obj.title = intl.string(outer1_0(outer1_2[6]).t.v740sh);
-        const intl2 = outer1_0(outer1_2[6]).intl;
-        obj.body = intl2.string(outer1_0(outer1_2[6]).t.uggF7o);
+      if (flag == null) {
+        flag = false;
+      }
+      if (!flag) {
+        let obj = callback2(4528);
+        obj = { title: null, body: null };
+        const intl = callback(1236).intl;
+        obj[0] = intl.string(callback(1236).t.v740sh);
+        const intl2 = callback(1236).intl;
+        obj[1] = intl2.string(callback(1236).t.uggF7o);
         obj.show(obj);
       }
-      return null != verified && verified;
+      return flag;
     }, []);
   },
   useTrailing: function useAccountSecurityKeysSettingTrailing() {
-    if (!_isNativeReflectConstruct.hasFetchedCredentials()) {
-      const webAuthnCredentials = require(5627) /* _fetchWebAuthnConditionalChallenge */.fetchWebAuthnCredentials();
-      let obj = require(5627) /* _fetchWebAuthnConditionalChallenge */;
+    if (!hasFetchedCredentials.hasFetchedCredentials()) {
+      const webAuthnCredentials = require(5645) /* _fetchWebAuthnConditionalChallenge */.fetchWebAuthnCredentials();
+      let obj = require(5645) /* _fetchWebAuthnConditionalChallenge */;
     }
-    const items = [_isNativeReflectConstruct];
-    return require(566) /* initialize */.useStateFromStores(items, () => {
-      const intl = outer1_0(outer1_2[6]).intl;
-      const obj = { count: outer1_4.getCredentials().length };
-      return intl.formatToPlainString(outer1_0(outer1_2[6]).t.n8mZ0X, obj);
+    const items = [hasFetchedCredentials];
+    return require(589) /* initialize */.useStateFromStores(items, () => {
+      const intl = callback(1236).intl;
+      const obj = { count: null };
+      obj[0] = credentials.getCredentials().length;
+      return intl.formatToPlainString(callback(1236).t.n8mZ0X, obj);
     });
   },
   unsearchable: true,
@@ -53,10 +57,10 @@ createToggle = {
 createToggle = {
   route: require("ME").UserSettingsSections.WEBAUTHN_VIEW,
   getComponent() {
-    return require(13733) /* UserSettingsWebAuthn */.default;
+    return require(13754) /* UserSettingsWebAuthn */.default;
   }
 };
 createToggle = createToggle.createRoute(createToggle);
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/user_settings/defs/native/AccountWebAuthnViewSetting.tsx");
+const result = require("mergeGuildAvatar").fileFinishedImporting("modules/user_settings/defs/native/AccountWebAuthnViewSetting.tsx");
 
 export default createToggle;

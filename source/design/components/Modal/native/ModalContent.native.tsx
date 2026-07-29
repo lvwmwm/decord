@@ -1,16 +1,16 @@
-// Module ID: 6762
-// Function ID: 59414
+// Module ID: 6784
+// Function ID: 6785
 // Name: ModalContent
-// Dependencies: [31, 27, 33, 4165, 2]
+// Dependencies: [19, 17, 21, 4189, 2]
 
-// Module 6762 (ModalContent)
+// Module 6784 (ModalContent)
 import { ScrollView } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import importAllResult from "result";
+import createCacheKey from "createCacheKey";
+import importAllResult from "noop";
 
-let closure_2 = _createForOfIteratorHelperLoose.createStyles({ scrollContainer: { flex: 1 }, contentContainer: { flexDirection: "column", paddingTop: 24, paddingHorizontal: 16, alignItems: "center", flexGrow: 1 } });
-const forwardRefResult = require("result").forwardRef((children, ref) => {
+let closure_2 = createCacheKey.createStyles({ scrollContainer: { flex: 1 }, contentContainer: { flexDirection: "column", paddingTop: 24, paddingHorizontal: 16, alignItems: "center", flexGrow: 1 } });
+const forwardRefResult = require("noop").forwardRef((children, ref) => {
   const tmp = callback();
   return <ScrollView style={tmp.scrollContainer} contentContainerStyle={tmp.contentContainer} showsVerticalScrollIndicator={false} keyboardShouldPersistTaps="handled" ref={arg1}>{arg0.children}</ScrollView>;
 });

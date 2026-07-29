@@ -1,36 +1,24 @@
-// Module ID: 15782
-// Function ID: 121546
-// Name: usePrivateChannelPressEvents
-// Dependencies: [31, 4361, 33, 4173, 9073, 4165, 689, 15768, 14975, 14312, 21, 4584, 15769, 4695, 15781, 15772, 10260, 3843, 4355, 2]
+// Module ID: 15817
+// Function ID: 15818
+// Dependencies: [19, 4386, 21, 4197, 9097, 4189, 712, 15803, 15001, 14334, 11, 4606, 15804, 4717, 15816, 15807, 10281, 3867, 4380, 2]
 
-// Module 15782 (usePrivateChannelPressEvents)
-import importAllResult from "result";
+// Module 15817
+import importAllResult from "set";
 import { UnreadSetting } from "ReadStateTypes";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
 const require = arg1;
-function usePrivateChannelPressEvents(channel, flag) {
-  let closure_0 = channel;
-  let closure_1 = flag;
-  const items = [channel.id, flag];
-  const items1 = [channel.id];
-  return {
-    onPress: importAllResult.useCallback(() => {
-      let obj = channel(outer1_2[3]);
-      obj = { navigationReplace: closure_1 };
-      obj.transitionToChannel(channel.id, obj);
-    }, items),
-    onLongPress: importAllResult.useCallback(() => channel(outer1_2[4]).openChannelLongPressActionSheet(channel.id), items1)
-  };
-}
-let obj = { pressable: { flex: 1 } };
-obj = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.INTERACTIVE_BACKGROUND_ACTIVE };
-obj.pressableUnderlayColor = obj;
-let closure_6 = _createForOfIteratorHelperLoose.createStyles(obj);
+let c3 = importAllResult;
+let obj = { pressable: { flex: 1 }, pressableUnderlayColor: null };
+obj = { backgroundColor: require("Themes").colors.INTERACTIVE_BACKGROUND_ACTIVE };
+obj[1] = obj;
+let closure_6 = createCacheKey.createStyles(obj);
 const memoResult = importAllResult.memo(function DMChannel(navigationReplace) {
   let channel;
+  let mentionCount;
   let muted;
+  let unread;
   ({ channel, muted } = navigationReplace);
   if (muted === undefined) {
     muted = false;
@@ -40,14 +28,14 @@ const memoResult = importAllResult.memo(function DMChannel(navigationReplace) {
     flag = false;
   }
   const tmp = callback();
-  let obj = require(14975) /* useBaseChannelUnreadBadgeState */;
+  let obj = channel(15001);
   const baseChannelUnreadBadgeState = obj.useBaseChannelUnreadBadgeState(channel, muted);
-  const unread = baseChannelUnreadBadgeState.unread;
-  const tmp4 = importDefault(14312)(channel, { unread });
+  ({ unread, mentionCount } = baseChannelUnreadBadgeState);
+  const tmp7 = flag(14334)(channel, { unread });
   let extractTimestampResult;
-  if (null != tmp4) {
-    let obj1 = importDefault(21);
-    extractTimestampResult = obj1.extractTimestamp(tmp4.id);
+  if (null != tmp7) {
+    let tmp2Result = tmp2(11);
+    extractTimestampResult = tmp2Result.extractTimestamp(tmp7.id);
   }
   let str = "text-muted";
   if (unread) {
@@ -56,28 +44,40 @@ const memoResult = importAllResult.memo(function DMChannel(navigationReplace) {
       str = "text-default";
     }
   }
-  let obj2 = require(4584) /* getFontScale */;
-  const fontScale = obj2.useFontScale();
-  const tmp2 = importDefault(15768)();
+  const tmp4 = flag(15803)();
+  const fontScale = channel(4606).useFontScale();
+  tmp2Result = tmp2(15804);
   obj = { style: items, underlayColor: tmp.pressableUnderlayColor.backgroundColor };
-  items = [tmp.pressable, { borderRadius: tmp2.container.borderRadius }];
-  const merged = Object.assign(usePrivateChannelPressEvents(channel, flag));
-  obj = { channel, unread, resolvedUnreadSetting: UnreadSetting.ALL_MESSAGES, muted, mentionCount: baseChannelUnreadBadgeState.mentionCount };
-  const tmp10 = jsx;
-  const tmp9 = importDefault(15769);
-  obj1 = { unread, resolvedUnreadSetting: UnreadSetting.ALL_MESSAGES, muted };
-  obj.unreadBadge = jsx(importDefault(15772), { unread, resolvedUnreadSetting: UnreadSetting.ALL_MESSAGES, muted });
-  let tmp13 = null != tmp4;
-  if (tmp13) {
-    obj2 = { channel, message: tmp4, color: str, muted, layout: require(3843) /* ChannelListLayoutTypes */.ChannelListLayoutTypes.COMPACT };
-    tmp13 = jsx(require(10260) /* PreviewIcon */.ChannelRowPreview, { channel, message: tmp4, color: str, muted, layout: require(3843) /* ChannelListLayoutTypes */.ChannelListLayoutTypes.COMPACT });
+  items = [tmp.pressable, { borderRadius: tmp4.container.borderRadius }];
+  obj = { onPress: null, onLongPress: null };
+  const items1 = [channel.id, flag];
+  obj[0] = importAllResult.useCallback(() => {
+    let obj = channel(outer1_2[3]);
+    obj = { navigationReplace: flag };
+    obj.transitionToChannel(channel.id, obj);
+  }, items1);
+  const items2 = [channel.id];
+  obj[1] = importAllResult.useCallback(() => channel(outer1_2[4]).openChannelLongPressActionSheet(channel.id), items2);
+  const merged = Object.assign(obj);
+  const obj1 = { channel, unread, resolvedUnreadSetting: UnreadSetting.ALL_MESSAGES, muted, mentionCount, unreadBadge: null, subtitle: null, latestMessageTimestamp: null, channelName: null, fontScale: null };
+  const tmp5Result = channel(4606);
+  obj1[5] = jsx(flag(15807), { unread, resolvedUnreadSetting: UnreadSetting.ALL_MESSAGES, muted });
+  let tmp11Result = null != tmp7;
+  if (tmp11Result) {
+    const obj3 = { channel: null, message: null, color: null, muted: null, layout: null };
+    obj3[0] = channel;
+    obj3[1] = tmp7;
+    obj3[2] = str;
+    obj3[3] = muted;
+    obj3[4] = tmp5(3867).ChannelListLayoutTypes.COMPACT;
+    tmp11Result = tmp11(tmp5(10281).ChannelRowPreview, obj3);
   }
-  obj.subtitle = tmp13;
-  obj.latestMessageTimestamp = extractTimestampResult;
-  obj.channelName = importDefault(4355)(channel);
-  obj.fontScale = fontScale;
-  obj["children"] = importDefault(15781)(obj);
-  return tmp9(tmp10(require(4695) /* PressableBase */.PressableHighlight, obj));
+  obj1[6] = tmp11Result;
+  obj1[7] = extractTimestampResult;
+  obj1[8] = flag(4380)(channel);
+  obj1[9] = fontScale;
+  obj.children = flag(15816)(obj1);
+  return tmp2Result(jsx(channel(4717).PressableHighlight, { onPress: null, onLongPress: null }));
 });
 const result = require("jsxProd").fileFinishedImporting("modules/launchpad/native/shared/DMChannel.tsx");
 

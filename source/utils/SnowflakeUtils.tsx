@@ -1,39 +1,39 @@
-// Module ID: 21
-// Function ID: 282
+// Module ID: 11
+// Function ID: 12
 // Name: DISCORD_EPOCH
-// Dependencies: [22, 23, 2]
+// Dependencies: [12, 13, 2]
 
-// Module 21 (DISCORD_EPOCH)
+// Module 11 (DISCORD_EPOCH)
 const result = require("set").fileFinishedImporting("utils/SnowflakeUtils.tsx");
 
 export default {
   age(arg0) {
-    return importAll(23).age(arg0);
+    return importAll(13).age(arg0);
   },
   extractTimestamp(arg0) {
-    return importAll(23).extractTimestamp(arg0);
+    return importAll(13).extractTimestamp(arg0);
   },
   compare(arg0, arg1) {
-    return importAll(23).compare(arg0, arg1);
+    return importAll(13).compare(arg0, arg1);
   },
   atPreviousMillisecond(arg0) {
-    return importAll(23).atPreviousMillisecond(arg0);
+    return importAll(13).atPreviousMillisecond(arg0);
   },
   atNextMillisecond(arg0) {
-    return importAll(23).atNextMillisecond(arg0);
+    return importAll(13).atNextMillisecond(arg0);
   },
   fromTimestamp(arg0) {
-    return importAll(23).fromTimestamp(arg0);
+    return importAll(13).fromTimestamp(arg0);
   },
   fromTimestampWithSequence(arg0, arg1) {
-    return importAll(23).fromTimestampWithSequence(arg0, arg1);
+    return importAll(13).fromTimestampWithSequence(arg0, arg1);
   },
   keys(arg0) {
     return Object.keys(arg0);
   },
   forEach(arg0, arg1) {
     const importDefault = arg1;
-    const item = importDefault(22).forEach(arg0, (arg0, arg1) => callback(arg0, arg1));
+    const item = importDefault(12).forEach(arg0, (arg0, arg1) => callback(arg0, arg1));
   },
   forEachKey(recurrenceCounts, arg1) {
     for (const key10004 in arg0) {
@@ -46,7 +46,7 @@ export default {
     return Object.entries(arg0);
   },
   isProbablyAValidSnowflake(arg0) {
-    return importAll(23).isProbablyAValidSnowflake(arg0);
+    return importAll(13).isProbablyAValidSnowflake(arg0);
   },
   castChannelIdAsMessageId(id) {
     return id;

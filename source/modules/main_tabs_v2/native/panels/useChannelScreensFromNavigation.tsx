@@ -1,15 +1,15 @@
-// Module ID: 14893
-// Function ID: 113435
+// Module ID: 14919
+// Function ID: 14920
 // Name: getActiveTabsRoute
-// Dependencies: [57, 31, 1348, 1907, 3982, 653, 1355, 4017, 4016, 4019, 2]
+// Dependencies: [32, 19, 1372, 1931, 4006, 676, 1379, 4041, 4040, 4043, 2]
 // Exports: default, isActiveTabsGuilds
 
-// Module 14893 (getActiveTabsRoute)
+// Module 14919 (getActiveTabsRoute)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_6 from "_isNativeReflectConstruct";
-import closure_7 from "_isNativeReflectConstruct";
+import noop from "noop";
+import ensureGuildLoaded from "ensureGuildLoaded";
+import handleConnectionOpen from "handleConnectionOpen";
+import closure_7 from "handleConnectionOpen";
 import { ME } from "ME";
 import { isStaticChannelRoute } from "set";
 
@@ -18,16 +18,16 @@ function getActiveTabsRoute(coerceTabsRouteResult) {
   if (null != coerceTabsRouteResult) {
     const state3 = coerceTabsRouteResult.state;
     let tmp3;
-    if (null != state3) {
+    if (state3 != null) {
       const state = coerceTabsRouteResult.state;
       let index;
-      if (null != state) {
+      if (state != null) {
         index = state.index;
       }
-      if (null == index) {
+      if (index == null) {
         const state2 = coerceTabsRouteResult.state;
         let length;
-        if (null != state2) {
+        if (state2 != null) {
           length = state2.routes.length;
         }
         index = length - 1;
@@ -39,17 +39,19 @@ function getActiveTabsRoute(coerceTabsRouteResult) {
     } else {
       const params = coerceTabsRouteResult.params;
       let screen;
-      if (null != params) {
+      if (params != null) {
         screen = params.screen;
       }
       if (null != screen) {
-        let obj = { key: "resolved", name: coerceTabsRouteResult.params.screen, params: coerceTabsRouteResult.params.params };
+        let obj = { key: "resolved", name: null, params: null };
+        obj[1] = coerceTabsRouteResult.params.screen;
+        obj[2] = coerceTabsRouteResult.params.params;
         return obj;
       } else {
-        obj = require(4017) /* getRootNavigationRef */;
+        obj = require(4041) /* getRootNavigationRef */;
         const rootNavigationRef = obj.getRootNavigationRef();
         let isReadyResult;
-        if (null != rootNavigationRef) {
+        if (rootNavigationRef != null) {
           isReadyResult = rootNavigationRef.isReady();
         }
         if (true === isReadyResult) {
@@ -60,61 +62,56 @@ function getActiveTabsRoute(coerceTabsRouteResult) {
   }
 }
 function resolveBackgroundScreen(index) {
-  let obj = require(4016) /* _createForOfIteratorHelperLoose */;
+  let obj = require(4040) /* navigationToRootTabHelper */;
   const coerceTabsRouteResult = obj.coerceTabsRoute(index.routes[0]);
   if (null == coerceTabsRouteResult) {
     return [];
   } else {
-    const tmp9 = getActiveTabsRoute(coerceTabsRouteResult);
-    if (null == tmp9) {
+    const tmp11 = getActiveTabsRoute(coerceTabsRouteResult);
+    if (null == tmp11) {
       return [];
     } else {
-      const coerceGuildsRouteResult = require(4016) /* _createForOfIteratorHelperLoose */.coerceGuildsRoute(tmp9);
+      const coerceGuildsRouteResult = require(4040) /* navigationToRootTabHelper */.coerceGuildsRoute(tmp11);
       if (null == coerceGuildsRouteResult) {
         return [];
       } else {
         const params3 = coerceGuildsRouteResult.params;
-        if (null != params3) {
+        if (params3 != null) {
           const guildId = params3.guildId;
         }
         const params = coerceGuildsRouteResult.params;
         let channelId;
-        if (null != params) {
+        if (params != null) {
           channelId = params.channelId;
         }
-        let tmp3;
-        if (null != channelId) {
-          tmp3 = channelId;
-        }
-        if (null == tmp3) {
+        if (null == channelId) {
           return [];
         } else {
-          if (!isStaticChannelRoute(tmp3)) {
-            if (null == channel.getChannel(tmp3)) {
+          if (!isStaticChannelRoute(channelId)) {
+            if (null == channel.getChannel(channelId)) {
               return [];
             }
           }
-          obj = { index: 0 };
           const params2 = coerceGuildsRouteResult.params;
           let search;
-          if (null != params2) {
+          if (params2 != null) {
             search = params2.search;
           }
-          if (null != search) {
+          if (search != null) {
             if (search) {
               let BACKGROUND_SAVED = obj.FALLBACK_RENDERED;
             }
-            obj.type = BACKGROUND_SAVED;
-            obj.guildId = guildId;
-            obj.channelId = tmp3;
-            obj.showCreateThread = false;
+            obj = { index: 0, type: null, guildId: null, channelId: null, showCreateThread: false };
+            obj[1] = BACKGROUND_SAVED;
+            obj[2] = guildId;
+            obj[3] = channelId;
             const items = [obj];
             return items;
           }
           BACKGROUND_SAVED = obj.BACKGROUND_SAVED;
         }
       }
-      const obj3 = require(4016) /* _createForOfIteratorHelperLoose */;
+      const tmpResult = require(4040) /* navigationToRootTabHelper */;
     }
   }
 }
@@ -123,15 +120,17 @@ function resolveChannelScreens(index, isChatLockedOpen) {
   for (let num = 0; num <= index.index; num = num + 1) {
     let tmp = arr2;
     let tmp2 = dependencyMap;
-    let obj = arr2(4016);
+    let obj = arr2(4040);
     let coerceChannelRouteResult = obj.coerceChannelRoute(index.routes[num]);
+    let tmp4 = num;
     if (null != coerceChannelRouteResult) {
-      obj = { index: items.length };
-      let tmp4 = obj;
-      obj.type = obj.DEFAULT;
-      obj.guildId = coerceChannelRouteResult.params.guildId;
-      obj.channelId = coerceChannelRouteResult.params.channelId;
-      obj.showCreateThread = coerceChannelRouteResult.params.showCreateThread;
+      obj = { index: null, type: null, guildId: null, channelId: null, showCreateThread: null };
+      obj[0] = items.length;
+      let tmp5 = obj;
+      obj[1] = obj.DEFAULT;
+      obj[2] = coerceChannelRouteResult.params.guildId;
+      obj[3] = coerceChannelRouteResult.params.channelId;
+      obj[4] = coerceChannelRouteResult.params.showCreateThread;
       let arr = items.push(obj);
     }
   }
@@ -143,26 +142,26 @@ function resolveChannelScreens(index, isChatLockedOpen) {
       arraySpreadResult = HermesBuiltin.arraySpread(items.map((index) => {
         const obj = {};
         const merged = Object.assign(index);
-        obj["index"] = index.index + arr2.length;
+        obj.index = index.index + arr2.length;
         return obj;
       }), arraySpreadResult);
       return items1;
     }
   }
-  let tmp7 = items;
+  let tmp8 = items;
   if (items.length <= 0) {
-    tmp7 = resolveBackgroundScreen(index);
+    tmp8 = resolveBackgroundScreen(index);
   }
-  return tmp7;
+  return tmp8;
 }
 let obj = { DEFAULT: 0, [0]: "DEFAULT", BACKGROUND_SAVED: 1, [1]: "BACKGROUND_SAVED", FALLBACK_RENDERED: 2, [2]: "FALLBACK_RENDERED" };
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/main_tabs_v2/native/panels/useChannelScreensFromNavigation.tsx");
+const result = require("ensureGuildLoaded").fileFinishedImporting("modules/main_tabs_v2/native/panels/useChannelScreensFromNavigation.tsx");
 
 export default function useChannelScreensFromNavigation(arg0) {
   let dependencyMap;
   let tmp3;
   let closure_0 = arg0;
-  const tmp = importDefault(4019)();
+  const tmp = importDefault(4043)();
   importDefault = tmp;
   [tmp3, dependencyMap] = callback(React.useState(() => {
     const arr = outer1_13(store.getState(), closure_1);
@@ -174,12 +173,13 @@ export default function useChannelScreensFromNavigation(arg0) {
       if (null == channelId) {
         let items = [];
       } else {
-        const obj = { index: 0, type: outer1_10.FALLBACK_RENDERED };
-        if (null == guildId) {
+        const obj = { index: 0, type: null, guildId: null, channelId: null };
+        obj[1] = outer1_10.FALLBACK_RENDERED;
+        if (guildId == null) {
           guildId = outer1_8;
         }
-        obj.guildId = guildId;
-        obj.channelId = channelId;
+        obj[2] = guildId;
+        obj[3] = channelId;
         items = [obj];
       }
     }
@@ -191,33 +191,33 @@ export default function useChannelScreensFromNavigation(arg0) {
       }
     }
     const coerceTabsRouteResult = store(outer1_2[8]).coerceTabsRoute(arg1.routes[0]);
-    let tmp2;
+    let tmp4;
     if (null != coerceTabsRouteResult) {
-      const tmp4 = outer1_11(coerceTabsRouteResult);
-      if (null != tmp4) {
-        const coerceGuildsRouteResult = store(outer1_2[8]).coerceGuildsRoute(tmp4);
+      const tmp6 = outer1_11(coerceTabsRouteResult);
+      if (null != tmp6) {
+        const coerceGuildsRouteResult = store(outer1_2[8]).coerceGuildsRoute(tmp6);
         let guildId;
-        if (null != coerceGuildsRouteResult) {
+        if (coerceGuildsRouteResult != null) {
           const params = coerceGuildsRouteResult.params;
-          if (null != params) {
+          if (params != null) {
             guildId = params.guildId;
           }
         }
-        tmp2 = guildId;
-        const obj2 = store(outer1_2[8]);
+        tmp4 = guildId;
+        const tmpResult = store(outer1_2[8]);
       }
     }
-    store = tmp2;
+    store = tmp4;
     callback((arg0) => {
       if (0 === arg0.length) {
         return arg0;
       } else {
         if (null == closure_0) {
           let items1 = arg0;
-          if (arg0[0].type !== outer2_10.FALLBACK_RENDERED) {
+          if (arg0[0].type !== outer1_10.FALLBACK_RENDERED) {
             const obj = {};
             const merged = Object.assign(arg0[0]);
-            obj["type"] = outer2_10.FALLBACK_RENDERED;
+            obj.type = tmp3.FALLBACK_RENDERED;
             const items = [obj];
             items1 = items;
           }
@@ -234,7 +234,7 @@ export default function useChannelScreensFromNavigation(arg0) {
   let items1 = [arg0, callback];
   const effect1 = React.useEffect(() => {
     function handleStateChange(data) {
-      outer1_3(outer2_13(data.data.state, handleStateChange(outer2_2[9]).getChatLayout()), data.data.state);
+      callback(outer1_13(data.data.state, handleStateChange(outer1_2[9]).getChatLayout()), data.data.state);
     }
     handleStateChange.addListener("state", handleStateChange);
     return () => {
@@ -246,17 +246,18 @@ export default function useChannelScreensFromNavigation(arg0) {
 export const ChannelScreenType = obj;
 export { getActiveTabsRoute };
 export const isActiveTabsGuilds = function isActiveTabsGuilds(state) {
-  const coerceTabsRouteResult = require(4016) /* _createForOfIteratorHelperLoose */.coerceTabsRoute(state.routes[0]);
+  const coerceTabsRouteResult = require(4040) /* navigationToRootTabHelper */.coerceTabsRoute(state.routes[0]);
   if (null == coerceTabsRouteResult) {
     return false;
   } else {
-    const tmp3 = getActiveTabsRoute(coerceTabsRouteResult);
-    let tmp4 = null != tmp3;
-    if (tmp4) {
-      tmp4 = null != require(4016) /* _createForOfIteratorHelperLoose */.coerceGuildsRoute(tmp3);
-      const obj2 = require(4016) /* _createForOfIteratorHelperLoose */;
+    const tmp5 = getActiveTabsRoute(coerceTabsRouteResult);
+    let tmp6 = null != tmp5;
+    if (tmp6) {
+      tmp6 = null != tmp(4040).coerceGuildsRoute(tmp5);
+      const tmpResult = tmp(4040);
     }
-    return tmp4;
+    return tmp6;
   }
-  const obj = require(4016) /* _createForOfIteratorHelperLoose */;
+  const obj = require(4040) /* navigationToRootTabHelper */;
+  tmp = require;
 };

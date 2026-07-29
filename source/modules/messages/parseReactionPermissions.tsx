@@ -1,10 +1,10 @@
-// Module ID: 10354
-// Function ID: 79856
+// Module ID: 10375
+// Function ID: 10376
 // Name: parseReactionPermissions
 // Dependencies: [2]
 // Exports: default
 
-// Module 10354 (parseReactionPermissions)
+// Module 10375 (parseReactionPermissions)
 const result = require("set").fileFinishedImporting("modules/messages/parseReactionPermissions.tsx");
 
 export default function parseReactionPermissions(arg0) {
@@ -28,7 +28,7 @@ export default function parseReactionPermissions(arg0) {
   if (canChat) {
     canChat = !isMediaThreadResult;
   }
-  const obj = { disableReactionReads: !renderReactions };
+  const obj = { disableReactionReads: !renderReactions, disableReactionCreates: null, disableReactionUpdates: null };
   let tmp4 = isLurking;
   if (!isLurking) {
     tmp4 = !canChat;
@@ -37,7 +37,7 @@ export default function parseReactionPermissions(arg0) {
     tmp4 = !((true === canAddNewReactions || isPrivateResult) && !isSystemDMResult && isActiveChannelOrUnarchivableThread && !isMediaThreadResult);
     const tmp5 = (true === canAddNewReactions || isPrivateResult) && !isSystemDMResult && isActiveChannelOrUnarchivableThread && !isMediaThreadResult;
   }
-  obj.disableReactionCreates = tmp4;
+  obj[1] = tmp4;
   if (!isLurking) {
     isLurking = !canChat;
   }
@@ -47,6 +47,6 @@ export default function parseReactionPermissions(arg0) {
   if (!isLurking) {
     isLurking = true === isAutomodQuarantined;
   }
-  obj.disableReactionUpdates = isLurking;
+  obj[2] = isLurking;
   return obj;
 };

@@ -1,37 +1,52 @@
-// Module ID: 5497
-// Function ID: 46805
-// Name: mergeLocations
-// Dependencies: [57, 31, 33, 22, 636, 2]
+// Module ID: 5515
+// Function ID: 5516
+// Name: context
+// Dependencies: [32, 19, 21, 12, 659, 2]
 // Exports: AnalyticsLocationProvider, default, useLocationStackFromLocationContext
 
-// Module 5497 (mergeLocations)
+// Module 5515 (context)
 import _slicedToArray from "_slicedToArray";
-import importAllResult from "result";
+import importAllResult from "noop";
 import { jsx } from "jsxProd";
 
-function mergeLocations(arg0, arg1) {
-  if (0 === arg1.length) {
-    return arg0;
-  } else {
-    const flattenResult = importDefault(22).flatten(arg1);
-    const items = [];
-    HermesBuiltin.arraySpread(flattenResult, HermesBuiltin.arraySpread(arg0, 0));
-    return items;
-  }
-}
+let c3 = importAllResult;
 let context = importAllResult.createContext([]);
 const result = require("jsxProd").fileFinishedImporting("modules/app_analytics/useAnalyticsLocations.tsx");
 
-export default function useAnalyticsLocations(arg0) {
-  const items = [...arguments];
+export default function useAnalyticsLocations() {
+  let items = [...arguments];
+  let first;
+  let callback;
+  let context;
   const tmp = callback(context.useState(items), 2);
-  const first = tmp[0];
+  first = tmp[0];
   callback = tmp[1];
   context = context.useContext(context);
   const items1 = [first, context];
-  const memo = context.useMemo(() => outer1_6(context, first), items1);
+  const memo = context.useMemo(() => {
+    let tmp3 = context;
+    if (0 !== first.length) {
+      const flattenResult = items(first[3]).flatten(tmp2);
+      items = [];
+      HermesBuiltin.arraySpread(flattenResult, HermesBuiltin.arraySpread(tmp, 0));
+      tmp3 = items;
+      const obj = items(first[3]);
+    }
+    return tmp3;
+  }, items1);
   const items2 = [first, context];
-  const memo1 = context.useMemo(() => outer1_6(context, first.slice(0, first.length - 1)), items2);
+  const memo1 = context.useMemo(() => {
+    const substr = first.slice(0, first.length - 1);
+    let tmp2 = context;
+    if (0 !== substr.length) {
+      const flattenResult = items(first[3]).flatten(substr);
+      items = [];
+      HermesBuiltin.arraySpread(flattenResult, HermesBuiltin.arraySpread(tmp, 0));
+      tmp2 = items;
+      const obj = items(first[3]);
+    }
+    return tmp2;
+  }, items2);
   const items3 = [items, first];
   const effect = context.useEffect(() => {
     if (!items(first[4])(items, first)) {
@@ -46,7 +61,7 @@ export const AnalyticsLocationProvider = function AnalyticsLocationProvider(valu
 };
 export const useLocationStackFromLocationContext = function useLocationStackFromLocationContext() {
   context = importAllResult.useContext(context);
-  if (null == context) {
+  if (context == null) {
     context = [];
   }
   return context;

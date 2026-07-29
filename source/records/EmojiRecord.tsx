@@ -1,27 +1,22 @@
-// Module ID: 16362
-// Function ID: 127265
-// Name: _isNativeReflectConstruct
-// Dependencies: [7, 6, 15, 17, 18, 1859, 1858, 2]
+// Module ID: 16397
+// Function ID: 16398
+// Name: prototype
+// Dependencies: [1883, 1882, 2]
 
-// Module 16362 (_isNativeReflectConstruct)
-import set from "set";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
-import closure_5 from "_isNativeReflectConstruct";
-import importDefaultResult from "Record";
-import tmp3 from "Record";
+// Module 16397 (prototype)
+import "toJS";
+import createdAt from "createdAt";
 
-function _isNativeReflectConstruct() {
-  let set = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return set;
-  }
-  const result = _isNativeReflectConstruct();
+const result = require("set").fileFinishedImporting("records/EmojiRecord.tsx");
+const prototype = function EmojiRecord(user) {
+  const tmp2 = new prototype(tmp, new.target, new.target);
+  // ThrowIfThisInitialized (0x7c)
+  ({ id: tmp2.id, name: tmp2.name, managed: tmp2.managed, roles: tmp2.roles, requiredColons: tmp2.requiredColons } = user);
+  tmp2.user = new createdAt(user.user);
+  ({ animated: tmp2.animated, available: tmp2.available } = user);
+  return tmp2;
+}.prototype;
+class prototype extends tmp2 {
 }
-let result = require("_possibleConstructorReturn").fileFinishedImporting("records/EmojiRecord.tsx");
 
-export default tmp3;
+export default prototype;

@@ -1,59 +1,56 @@
-// Module ID: 14941
-// Function ID: 113844
+// Module ID: 14967
+// Function ID: 14968
 // Name: transitionGuildsBarToGuildOrOpenSelectedChannel
-// Dependencies: [1907, 3982, 653, 4017, 4016, 4173, 6669, 2]
+// Dependencies: [1931, 4006, 676, 4041, 4040, 4197, 6690, 2]
 // Exports: default
 
-// Module 14941 (transitionGuildsBarToGuildOrOpenSelectedChannel)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_3 from "_isNativeReflectConstruct";
+// Module 14967 (transitionGuildsBarToGuildOrOpenSelectedChannel)
+import handleConnectionOpen from "handleConnectionOpen";
+import closure_3 from "handleConnectionOpen";
 import { ME } from "ME";
 
 const require = arg1;
 const result = require("ME").fileFinishedImporting("modules/guilds_bar/native/utils/transitionGuildsBarToGuildOrOpenSelectedChannel.tsx");
 
-export default function transitionGuildsBarToGuildOrOpenSelectedChannel(guildId) {
-  const rootNavigationRef = require(4017) /* getRootNavigationRef */.getRootNavigationRef();
+export default function transitionGuildsBarToGuildOrOpenSelectedChannel(arg0) {
+  const rootNavigationRef = require(4041) /* getRootNavigationRef */.getRootNavigationRef();
   let isReadyResult;
-  if (null != rootNavigationRef) {
+  if (rootNavigationRef != null) {
     isReadyResult = rootNavigationRef.isReady();
   }
-  let tmp2;
+  let tmp4;
   if (true === isReadyResult) {
-    const coerceGuildsRouteResult = require(4016) /* _createForOfIteratorHelperLoose */.coerceGuildsRoute(rootNavigationRef.getCurrentRoute());
+    let tmpResult = tmp(4040);
+    const coerceGuildsRouteResult = tmpResult.coerceGuildsRoute(rootNavigationRef.getCurrentRoute());
     let drawerOpen;
-    if (null != coerceGuildsRouteResult) {
+    if (coerceGuildsRouteResult != null) {
       const params = coerceGuildsRouteResult.params;
-      if (null != params) {
+      if (params != null) {
         drawerOpen = params.drawerOpen;
       }
     }
     if (true !== drawerOpen) {
-      let tmp5 = null;
-      if (guildId !== ME) {
-        tmp5 = guildId;
+      let tmp7 = null;
+      if (arg0 !== ME) {
+        tmp7 = arg0;
       }
       guildId = guildId.getGuildId();
-      let tmp8 = null;
-      if (null != guildId) {
-        tmp8 = guildId;
+      if (guildId == null) {
+        guildId = null;
       }
-      if (tmp8 === tmp5) {
-        channelId = channelId.getChannelId(guildId, false);
-        let tmp11;
-        if (null != channelId) {
-          tmp11 = channelId;
-        }
-        tmp2 = tmp11;
+      let tmp10;
+      if (guildId === tmp7) {
+        channelId = channelId.getChannelId(arg0, false);
+        tmp10 = channelId;
       }
+      tmp4 = tmp10;
     }
-    const obj5 = require(4016) /* _createForOfIteratorHelperLoose */;
   }
-  if (null != tmp2) {
-    require(4173) /* transitionToChannel */.transitionToChannel(tmp2);
-    const obj4 = require(4173) /* transitionToChannel */;
+  if (null != tmp4) {
+    tmpResult = tmp(4197);
+    tmpResult.transitionToChannel(tmp4);
   } else {
-    require(6669) /* transitionToGuild */.transitionToGuild(guildId);
-    const obj3 = require(6669) /* transitionToGuild */;
+    tmp(6690).transitionToGuild(arg0);
+    const tmpResult1 = tmp(6690);
   }
 };

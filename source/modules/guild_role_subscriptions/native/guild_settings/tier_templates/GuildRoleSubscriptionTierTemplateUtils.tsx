@@ -1,26 +1,26 @@
-// Module ID: 16592
-// Function ID: 129113
+// Module ID: 16627
+// Function ID: 16628
 // Name: getPrivateChannelIconComponent
-// Dependencies: [669, 4671, 4690, 4688, 4678, 4677, 4685, 2]
+// Dependencies: [692, 4693, 4712, 4710, 4700, 4699, 4707, 2]
 // Exports: getPrivateChannelIconComponent
 
-// Module 16592 (getPrivateChannelIconComponent)
+// Module 16627 (getPrivateChannelIconComponent)
 const result = require("VoiceLockIcon").fileFinishedImporting("modules/guild_role_subscriptions/native/guild_settings/tier_templates/GuildRoleSubscriptionTierTemplateUtils.tsx");
 
 export const getPrivateChannelIconComponent = function getPrivateChannelIconComponent(type) {
-  if (require(669) /* set */.ChannelTypes.GUILD_TEXT === type) {
-    return require(4671) /* TextLockIcon */.TextLockIcon;
-  } else if (require(669) /* set */.ChannelTypes.GUILD_VOICE === type) {
-    return require(4690) /* VoiceLockIcon */.VoiceLockIcon;
-  } else if (require(669) /* set */.ChannelTypes.GUILD_STAGE_VOICE === type) {
-    return require(4688) /* StageLockIcon */.StageLockIcon;
-  } else if (require(669) /* set */.ChannelTypes.GUILD_FORUM === type) {
-    return require(4678) /* ForumLockIcon */.ForumLockIcon;
-  } else if (require(669) /* set */.ChannelTypes.GUILD_MEDIA === type) {
-    return require(4677) /* ImageLockIcon */.ImageLockIcon;
-  } else if (require(669) /* set */.ChannelTypes.GUILD_ANNOUNCEMENT === type) {
-    return require(4685) /* AnnouncementsLockIcon */.AnnouncementsLockIcon;
+  if (require(692) /* set */.ChannelTypes.GUILD_TEXT === type) {
+    return tmp(4693).TextLockIcon;
+  } else if (tmp(692).ChannelTypes.GUILD_VOICE === type) {
+    return tmp(4712).VoiceLockIcon;
+  } else if (tmp(692).ChannelTypes.GUILD_STAGE_VOICE === type) {
+    return tmp(4710).StageLockIcon;
+  } else if (tmp(692).ChannelTypes.GUILD_FORUM === type) {
+    return tmp(4700).ForumLockIcon;
+  } else if (tmp(692).ChannelTypes.GUILD_MEDIA === type) {
+    return tmp(4699).ImageLockIcon;
+  } else if (tmp(692).ChannelTypes.GUILD_ANNOUNCEMENT === type) {
+    return tmp(4707).AnnouncementsLockIcon;
   } else {
-    return require(4671) /* TextLockIcon */.TextLockIcon;
+    return tmp(4693).TextLockIcon;
   }
 };

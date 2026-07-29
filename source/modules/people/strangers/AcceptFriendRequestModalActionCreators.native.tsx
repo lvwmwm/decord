@@ -1,10 +1,10 @@
-// Module ID: 9035
-// Function ID: 70999
+// Module ID: 9059
+// Function ID: 9060
 // Name: openAcceptFriendRequestConfirmModal
-// Dependencies: [9036, 653, 33, 675, 4506, 9037, 1935, 2]
+// Dependencies: [9060, 676, 21, 698, 4529, 9061, 1959, 2]
 // Exports: openAcceptFriendRequestConfirmModal
 
-// Module 9035 (openAcceptFriendRequestConfirmModal)
+// Module 9059 (openAcceptFriendRequestConfirmModal)
 import { ACCEPT_FRIEND_REQUEST_CONFIRMATION_MODAL_ID as closure_3 } from "RELATIONSHIP_COUNT_ANIMATION_THRESHOLD";
 import { AnalyticEvents } from "ME";
 import { jsx } from "jsxProd";
@@ -15,7 +15,7 @@ export const openAcceptFriendRequestConfirmModal = function openAcceptFriendRequ
   let importDefault;
   let require;
   ({ onConfirm: require, onCancel: importDefault } = arg0);
-  let obj = importDefault(675);
+  let obj = importDefault(698);
   obj = { type: closure_3 };
   obj.track(AnalyticEvents.OPEN_MODAL, obj);
   obj = {
@@ -26,17 +26,17 @@ export const openAcceptFriendRequestConfirmModal = function openAcceptFriendRequ
           let closure_0 = arg0;
           const obj = {};
           const merged = Object.assign(arg0);
-          obj["onCancel"] = function onCancel() {
+          obj.onCancel = function onCancel() {
             closure_0.onClose();
-            if (null != outer3_1) {
-              outer3_1();
+            if (outer1_1 != null) {
+              tmp2();
             }
           };
-          obj["onConfirm"] = outer2_0;
-          return outer3_5(closure_0, obj);
+          obj.onConfirm = closure_0;
+          return outer2_5(closure_0, obj);
         };
       });
     }
   };
-  importDefault(4506).openLazy(obj);
+  importDefault(4529).openLazy(obj);
 };

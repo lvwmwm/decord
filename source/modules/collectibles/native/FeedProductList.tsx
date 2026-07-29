@@ -1,54 +1,56 @@
-// Module ID: 14594
-// Function ID: 111290
+// Module ID: 14619
+// Function ID: 14620
 // Name: SkeletonGrid
-// Dependencies: [31, 27, 33, 4165, 8636, 14595, 14087, 14596, 2]
+// Dependencies: [19, 17, 21, 4189, 8660, 14620, 14109, 14621, 2]
 // Exports: default
 
-// Module 14594 (SkeletonGrid)
-import "result";
+// Module 14619 (SkeletonGrid)
+import "noop";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
 const require = arg1;
 function SkeletonGrid(accessibilityLabel) {
-  let View;
-  let jsx;
+  let columns;
+  let num;
   const loadingCardsNum = accessibilityLabel.loadingCardsNum;
-  const tmp = items();
-  const importDefault = tmp;
-  let obj = loadingCardsNum(columns[5]);
+  num = undefined;
+  const tmp = createCacheKey();
+  let obj = num(14620);
   const cardLayout = obj.useCardLayout();
-  columns = cardLayout.columns;
-  ({ cardWidth: View, rowWidth: jsx } = cardLayout);
-  items = [];
+  ({ columns, cardWidth: num } = cardLayout);
+  const items = [];
   for (let num = 0; num < loadingCardsNum; num = num + columns) {
-    let tmp3 = (function _loop(arg0) {
-      let closure_0 = arg0;
-      let obj = { length: Math.min(columns, closure_0 - arg0) };
-      let arr = Array.from(obj);
-      obj = {
-        style: items,
-        children: arr.map((arg0, arg1) => {
-          let obj = { width: outer1_3 };
-          obj = { marginBottom: loadingCardsNum(columns[4]).COLLECTIBLES_SHOP_CARD_GAP };
-          obj.style = obj;
-          return outer2_4(callback(columns[6]), obj, "" + closure_0 + "-" + arg1);
-        })
-      };
-      items = [tmp.skeletonRow, ];
-      obj = { width: closure_4 };
-      items[1] = obj;
-      arr = items.push(outer1_4(outer1_3, obj, "row-" + arg0));
-    })(num);
+    let _Array = Array;
+    obj = { length: null };
+    let _Math = Math;
+    obj[0] = Math.min(columns, loadingCardsNum - num);
+    let arr = Array.from(obj);
+    let tmp4 = jsx;
+    let tmp5 = View;
+    obj = { style: null, children: null };
+    let items1 = [tmp.skeletonRow, ];
+    let obj1 = { width: null };
+    obj1[0] = tmp3;
+    items1[1] = obj1;
+    obj[0] = items1;
+    obj[1] = arr.map((arg0, arg1) => {
+      let obj = { width: num, style: null };
+      obj = { marginBottom: null };
+      obj[0] = require(8660) /* CollectiblesShopCardInternalV2 */.COLLECTIBLES_SHOP_CARD_GAP;
+      obj[1] = obj;
+      return jsx(importDefault(14109), { marginBottom: null }, "" + num + "-" + arg1);
+    });
+    let _HermesInternal = HermesInternal;
+    arr = items.push(<View key={"row-" + num} style={null}>{null}</View>);
   }
-  obj = { style: tmp.skeletonGrid, accessibilityRole: "list", accessibilityLabel: accessibilityLabel.accessibilityLabel, accessibilityState: { busy: true }, accessible: true, children: items };
   return <View style={tmp.skeletonGrid} accessibilityRole="list" accessibilityLabel={arg0.accessibilityLabel} accessibilityState={{ busy: true }} accessible>{items}</View>;
 }
-_createForOfIteratorHelperLoose = { skeletonGrid: { flex: 1, alignItems: "center" } };
-_createForOfIteratorHelperLoose = { flexDirection: "row", gap: require("CollectiblesShopCardInternalV2").COLLECTIBLES_SHOP_CARD_GAP, paddingBottom: require("CollectiblesShopCardInternalV2").COLLECTIBLES_SHOP_CARD_GAP, paddingHorizontal: require("CollectiblesShopCardInternalV2").COLLECTIBLES_SHOP_CARD_GAP };
-_createForOfIteratorHelperLoose.skeletonRow = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+createCacheKey = { skeletonGrid: { flex: 1, alignItems: "center" }, skeletonRow: null };
+createCacheKey = { flexDirection: "row", gap: require("CollectiblesShopCardInternalV2").COLLECTIBLES_SHOP_CARD_GAP, paddingBottom: require("CollectiblesShopCardInternalV2").COLLECTIBLES_SHOP_CARD_GAP, paddingHorizontal: require("CollectiblesShopCardInternalV2").COLLECTIBLES_SHOP_CARD_GAP };
+createCacheKey[1] = createCacheKey;
+createCacheKey = createCacheKey.createStyles(createCacheKey);
 const result = require("jsxProd").fileFinishedImporting("modules/collectibles/native/FeedProductList.tsx");
 
 export default function FeedProductList(arg0) {
@@ -56,11 +58,17 @@ export default function FeedProductList(arg0) {
   let products;
   ({ products, accessibilityLabel } = arg0);
   if (0 === products.length) {
-    let obj = { loadingCardsNum: tmp, accessibilityLabel };
-    let tmp7 = <SkeletonGrid loadingCardsNum={tmp} accessibilityLabel={accessibilityLabel} />;
+    let obj = { loadingCardsNum: null, accessibilityLabel: null };
+    obj[0] = tmp;
+    obj[1] = accessibilityLabel;
+    let tmp7 = <SkeletonGrid loadingCardsNum={null} accessibilityLabel={null} />;
   } else {
-    obj = { products, preferVCPrice: tmp2, accessibilityLabel, disableBundleStaticBackground: tmp3 };
-    tmp7 = jsx(importDefault(14596), { products, preferVCPrice: tmp2, accessibilityLabel, disableBundleStaticBackground: tmp3 });
+    obj = { products: null, preferVCPrice: null, accessibilityLabel: null, disableBundleStaticBackground: null };
+    obj[0] = products;
+    obj[1] = tmp2;
+    obj[2] = accessibilityLabel;
+    obj[3] = tmp3;
+    tmp7 = jsx(importDefault(14621), { products: null, preferVCPrice: null, accessibilityLabel: null, disableBundleStaticBackground: null });
   }
   return tmp7;
 };

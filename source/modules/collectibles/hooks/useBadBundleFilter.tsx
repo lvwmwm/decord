@@ -1,21 +1,21 @@
-// Module ID: 14082
-// Function ID: 107612
+// Module ID: 14104
+// Function ID: 14105
 // Name: useBadBundleFilter
-// Dependencies: [31, 1850, 5796, 624, 3811, 8686, 5792, 5791, 2]
+// Dependencies: [19, 1874, 5814, 647, 3835, 8710, 5810, 5809, 2]
 // Exports: useBadBundleFilter
 
-// Module 14082 (useBadBundleFilter)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_5 from "_isNativeReflectConstruct";
+// Module 14104 (useBadBundleFilter)
+import mergeGuildAvatar from "mergeGuildAvatar";
+import map from "map";
 
-require("result").useCallback;
-let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/collectibles/hooks/useBadBundleFilter.tsx");
+require("noop").useCallback;
+let result = require("map").fileFinishedImporting("modules/collectibles/hooks/useBadBundleFilter.tsx");
 
 export const useBadBundleFilter = function useBadBundleFilter() {
-  const items = [_isNativeReflectConstruct];
-  const stateFromStores = require(624) /* defaultAreStatesEqual */.useStateFromStores(items, () => outer1_4.getCurrentUser());
-  let obj = require(624) /* defaultAreStatesEqual */;
-  const canUseShopDiscountsResult = importDefault(3811).canUseShopDiscounts(stateFromStores);
+  const items = [mergeGuildAvatar];
+  const stateFromStores = require(647) /* defaultAreStatesEqual */.useStateFromStores(items, () => currentUser.getCurrentUser());
+  let obj = require(647) /* defaultAreStatesEqual */;
+  const canUseShopDiscountsResult = importDefault(3835).canUseShopDiscounts(stateFromStores);
   require = canUseShopDiscountsResult;
   const items1 = [canUseShopDiscountsResult];
   return useCallback((arr) => {
@@ -23,46 +23,46 @@ export const useBadBundleFilter = function useBadBundleFilter() {
     if (null != arr) {
       found = arr;
       if (0 !== arr.length) {
-        found = arr.filter((product) => {
-          let obj = canUseShopDiscountsResult(outer2_2[5]);
-          if (obj2.isBundleProduct(product)) {
-            if (!obj3.isFreeCollectiblesProduct(product)) {
-              if (!obj.getProductPurchaseState(outer2_5, product).isPurchased) {
-                if (obj4.isOrbsExclusiveProduct(product)) {
-                  let tmp5Result = tmp5(tmp6[7]);
-                  obj = { product, hasShopDiscount: outer1_0 };
-                  return null != tmp5Result.getProductOrbPrice(obj);
+        found = arr.filter((bundledProducts) => {
+          let obj = outer1_0(outer1_2[5]);
+          if (obj2.isBundleProduct(bundledProducts)) {
+            let tmpResult = tmp(tmp2[6]);
+            if (!tmpResult.isFreeCollectiblesProduct(bundledProducts)) {
+              if (!obj.getProductPurchaseState(outer1_5, bundledProducts).isPurchased) {
+                tmpResult = tmp(tmp2[7]);
+                if (tmpResult.isOrbsExclusiveProduct(bundledProducts)) {
+                  obj = { product: null, hasShopDiscount: null };
+                  obj[0] = bundledProducts;
+                  obj[1] = defaultPriceSetAssignmentPurchaseType;
+                  return null != tmp(tmp2[7]).getProductOrbPrice(obj);
                 } else {
-                  tmp5Result = tmp5(tmp6[6]);
-                  const defaultPriceSetAssignmentPurchaseType = tmp5Result.getDefaultPriceSetAssignmentPurchaseType(outer1_0);
-                  let result = tmp5(tmp6[6]).extractPriceByPurchaseTypes(product, defaultPriceSetAssignmentPurchaseType);
+                  defaultPriceSetAssignmentPurchaseType = tmp(tmp2[6]).getDefaultPriceSetAssignmentPurchaseType(defaultPriceSetAssignmentPurchaseType);
+                  const tmpResult2 = tmp(tmp2[6]);
+                  let result = tmp(tmp2[6]).extractPriceByPurchaseTypes(bundledProducts, defaultPriceSetAssignmentPurchaseType);
                   if (null != result) {
                     if (0 !== result.amount) {
-                      let num3 = 0;
-                      if (null != product.bundledProducts) {
-                        const bundledProducts = product.bundledProducts;
-                        num3 = bundledProducts.reduce((arg0, arg1) => {
-                          let amount;
-                          const result = canUseShopDiscountsResult(outer3_2[6]).extractPriceByPurchaseTypes(arg1, defaultPriceSetAssignmentPurchaseType);
-                          if (null != result) {
-                            amount = result.amount;
+                      let num2 = 0;
+                      if (null != bundledProducts.bundledProducts) {
+                        bundledProducts = bundledProducts.bundledProducts;
+                        num2 = bundledProducts.reduce((arg0, arg1) => {
+                          const result = defaultPriceSetAssignmentPurchaseType(outer1_2[6]).extractPriceByPurchaseTypes(arg1, defaultPriceSetAssignmentPurchaseType);
+                          let num;
+                          if (result != null) {
+                            num = result.amount;
                           }
-                          let num = 0;
-                          if (null != amount) {
-                            num = amount;
+                          if (num == null) {
+                            num = 0;
                           }
                           return arg0 + num;
                         }, 0);
                       }
-                      return result.amount < num3;
+                      return result.amount < num2;
                     }
                   }
                   return true;
                 }
-                obj4 = canUseShopDiscountsResult(outer2_2[7]);
               }
             }
-            obj3 = canUseShopDiscountsResult(outer2_2[6]);
           }
           return true;
         });

@@ -1,204 +1,193 @@
-// Module ID: 14600
-// Function ID: 111326
+// Module ID: 14625
+// Function ID: 14626
 // Name: feedBlock
-// Dependencies: [31, 27, 4157, 1278, 5625, 655, 653, 33, 4165, 689, 566, 4011, 14079, 14601, 14081, 5779, 5517, 5497, 1212, 4161, 4695, 4133, 14602, 1935, 4121, 4578, 14594, 14603, 477, 6188, 14604, 5119, 14605, 14606, 2]
+// Dependencies: [19, 17, 4181, 1302, 5643, 678, 676, 21, 4189, 712, 589, 4035, 14101, 14626, 14103, 5797, 5535, 5515, 1236, 4185, 4717, 4157, 14627, 1959, 4145, 4600, 14619, 14628, 500, 6208, 14629, 5141, 14630, 14631, 2]
 // Exports: default
 
-// Module 14600 (feedBlock)
-import preload from "preload";
-import get_ActivityIndicator from "metadata";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_7 from "_isNativeReflectConstruct";
-import closure_8 from "_isNativeReflectConstruct";
+// Module 14625 (feedBlock)
+import Text from "Text";
+import get_ActivityIndicator from "context";
+import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
+import handleThemeChange from "handleThemeChange";
+import hasConsented from "hasConsented";
 import { CollectiblesMobileShopScreen as closure_9 } from "items";
 import { Consents } from "ME";
-import jsxProd from "registerAsset";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import jsxProd from "ACTION_SHEET_HEIGHT_HALF";
+import createCacheKey from "createCacheKey";
 
-let closure_11;
+let c4;
+let c5;
 let closure_12;
-let closure_4;
-let closure_5;
+let unpackModuleId;
 const require = arg1;
-({ Image: closure_4, View: closure_5 } = get_ActivityIndicator);
-({ jsx: closure_11, jsxs: closure_12 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { display: "flex", flexDirection: "column", height: "100%", gap: require("_createForOfIteratorHelperLoose").space.PX_16 };
-_createForOfIteratorHelperLoose.feedContainer = _createForOfIteratorHelperLoose;
-let obj1 = { display: "flex", flexDirection: "row", flexWrap: "wrap", justifyContent: "space-between", alignItems: "center", gap: require("_createForOfIteratorHelperLoose").space.PX_12, paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16 };
-_createForOfIteratorHelperLoose.feedHeader = obj1;
-let obj2 = { display: "flex", flexDirection: "row", alignItems: "center", flexShrink: 1, gap: require("_createForOfIteratorHelperLoose").space.PX_8 };
-_createForOfIteratorHelperLoose.feedTitle = obj2;
-let obj3 = { display: "flex", gap: require("_createForOfIteratorHelperLoose").space.PX_16, flexDirection: "column", justifyContent: "center", alignItems: "center" };
-_createForOfIteratorHelperLoose.feedFooter = obj3;
-_createForOfIteratorHelperLoose.feedFooterImage = { width: "100%", resizeMode: "cover" };
-_createForOfIteratorHelperLoose.feedFooterOrbImage = { width: "100%", alignSelf: "center", resizeMode: "contain", height: 130 };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/collectibles/native/FeedBlock.tsx");
+({ Image: c4, View: c5 } = get_ActivityIndicator);
+({ jsx: unpackModuleId, jsxs: closure_12 } = jsxProd);
+createCacheKey = { feedContainer: null, feedHeader: null, feedTitle: null, feedFooter: null, feedFooterImage: null, feedFooterOrbImage: null };
+createCacheKey = { display: "flex", flexDirection: "column", height: "100%", gap: require("Themes").space.PX_16 };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { display: "flex", flexDirection: "row", flexWrap: "wrap", justifyContent: "space-between", alignItems: "center", gap: require("Themes").space.PX_12, paddingHorizontal: require("Themes").space.PX_16 };
+let obj1 = { display: "flex", flexDirection: "row", flexWrap: "wrap", justifyContent: "space-between", alignItems: "center", gap: require("Themes").space.PX_12, paddingHorizontal: require("Themes").space.PX_16 };
+createCacheKey[2] = { display: "flex", flexDirection: "row", alignItems: "center", flexShrink: 1, gap: require("Themes").space.PX_8 };
+let obj2 = { display: "flex", flexDirection: "row", alignItems: "center", flexShrink: 1, gap: require("Themes").space.PX_8 };
+createCacheKey[3] = { display: "flex", gap: require("Themes").space.PX_16, flexDirection: "column", justifyContent: "center", alignItems: "center" };
+createCacheKey[4] = { width: "100%", resizeMode: "cover" };
+createCacheKey[5] = { width: "100%", alignSelf: "center", resizeMode: "contain", height: 130 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let obj3 = { display: "flex", gap: require("Themes").space.PX_16, flexDirection: "column", justifyContent: "center", alignItems: "center" };
+let result = require("maybeApplyNoTextColorForLightCustomTheme").fileFinishedImporting("modules/collectibles/native/FeedBlock.tsx");
 
 export default function _default(feedBlock) {
   let disableBundleStaticBackground;
+  let feedProducts;
+  let isPersonalized;
   let preferVCPrice;
   feedBlock = feedBlock.feedBlock;
   const screen = feedBlock.screen;
-  function goToShopAll() {
-    let obj = feedBlock(tmp3[15]);
-    obj = {};
-    const items = [stateFromStores1(tmp3[16]).COLLECTIBLES_MOBILE_SHOP_ALL_BUTTON];
-    obj.analyticsLocations = items;
-    obj.analyticsSource = stateFromStores1(tmp3[16]).COLLECTIBLES_MOBILE_SHOP_ALL_BUTTON;
-    obj.screen = outer1_9.SHOP_ALL;
-    const result = obj.openCollectiblesShopMobile(obj);
-  }
+  let stateFromStores1;
+  let dependencyMap;
   ({ preferVCPrice, disableBundleStaticBackground } = feedBlock);
-  let str = _createForOfIteratorHelperLoose();
-  let obj = feedBlock(566);
-  let items = [closure_7];
-  const stateFromStores = obj.useStateFromStores(items, () => feedBlock(tmp3[11]).isThemeDark(outer1_7.theme));
-  let obj1 = feedBlock(566);
-  let items1 = [closure_8];
-  const stateFromStores1 = obj1.useStateFromStores(items1, () => outer1_8.hasConsented(outer1_10.PERSONALIZATION));
-  const tmp3 = stateFromStores1(14079)();
-  const dependencyMap = tmp3;
-  const items2 = [feedBlock.sortedSkuIds, tmp3, stateFromStores1];
+  let feedFooterOrbImage = createCacheKey();
+  let tmp5Result = dependencyMap;
+  let obj = feedBlock(589);
+  let items = [handleThemeChange];
+  const stateFromStores = obj.useStateFromStores(items, () => feedBlock(_undefined[11]).isThemeDark(theme.theme));
+  let obj1 = feedBlock(589);
+  let items1 = [hasConsented];
+  stateFromStores1 = obj1.useStateFromStores(items1, () => hasConsented.hasConsented(constants2.PERSONALIZATION));
+  let tmp6 = stateFromStores1(14101)();
+  dependencyMap = tmp6;
+  const items2 = [feedBlock.sortedSkuIds, tmp6, stateFromStores1];
   const memo = React.useMemo(() => {
     const sortedSkuIds = feedBlock.sortedSkuIds;
     let items;
-    if (null != sortedSkuIds) {
-      items = sortedSkuIds[feedBlock(undefined, tmp3[13]).ShopHomeSortType.RECOMMENDED];
+    if (sortedSkuIds != null) {
+      items = sortedSkuIds[feedBlock(undefined, _undefined[13]).ShopHomeSortType.RECOMMENDED];
     }
-    if (null == items) {
+    if (items == null) {
       items = [];
     }
     const sortedSkuIds2 = feedBlock.sortedSkuIds;
     let items1;
-    if (null != sortedSkuIds2) {
-      items1 = sortedSkuIds2[feedBlock(undefined, tmp3[13]).ShopHomeSortType.POPULAR];
+    if (sortedSkuIds2 != null) {
+      items1 = sortedSkuIds2[feedBlock(undefined, _undefined[13]).ShopHomeSortType.POPULAR];
     }
-    if (null == items1) {
+    if (items1 == null) {
       items1 = [];
     }
-    let tmp5 = stateFromStores1;
+    let tmp6 = stateFromStores1;
     if (stateFromStores1) {
-      tmp5 = items.length > 0;
+      tmp6 = items.length > 0;
     }
-    const obj = {};
-    if (tmp5) {
+    if (tmp6) {
       items1 = items;
     }
-    obj.feedProducts = tmp3(items1);
-    obj.isPersonalized = tmp5;
-    return obj;
+    return { feedProducts: _undefined(items1), isPersonalized: tmp6 };
   }, items2);
-  let isPersonalized = memo.isPersonalized;
-  let obj2 = feedBlock(14081);
-  const filteredAndSortedProducts = obj2.useFilteredAndSortedProducts({ products: memo.feedProducts, maxProducts: 36, screen });
-  let obj3 = feedBlock(566);
-  const items3 = [_isNativeReflectConstruct];
-  const stateFromStores2 = obj3.useStateFromStores(items3, () => outer1_6.useReducedMotion);
-  const intl = feedBlock(1212).intl;
+  ({ isPersonalized, feedProducts } = memo);
+  let obj2 = feedBlock(14103);
+  const filteredAndSortedProducts = obj2.useFilteredAndSortedProducts({ products: feedProducts, maxProducts: 36, screen });
+  let obj3 = feedBlock(589);
+  const items3 = [maybeApplyNoTextColorForLightCustomTheme];
+  const stateFromStores2 = obj3.useStateFromStores(items3, () => useReducedMotion.useReducedMotion);
+  const intl = feedBlock(1236).intl;
   const string = intl.string;
-  const t = feedBlock(1212).t;
+  const t = feedBlock(1236).t;
   if (isPersonalized) {
     let stringResult = string(t.NSv5KV);
   } else {
     stringResult = string(t.ivaAA7);
   }
-  obj = { value: stateFromStores1(5497)(stateFromStores1(5517).COLLECTIBLES_SHOP_POPULAR_PICKS).analyticsLocations };
-  obj = { style: str.feedContainer };
-  obj1 = { style: str.feedHeader };
-  obj2 = { style: str.feedTitle };
-  obj3 = { variant: "heading-lg/semibold", children: stringResult };
-  const items4 = [callback(feedBlock(4161).Heading, obj3), ];
+  obj = { value: stateFromStores1(5515)(stateFromStores1(5535).COLLECTIBLES_SHOP_POPULAR_PICKS).analyticsLocations, children: null };
+  obj = { style: feedFooterOrbImage.feedContainer, children: null };
+  obj1 = { style: feedFooterOrbImage.feedHeader, children: null };
+  obj2 = { style: feedFooterOrbImage.feedTitle, children: null };
+  const items4 = [callback(feedBlock(4185).Heading, { variant: "heading-lg/semibold", children: stringResult }), ];
   if (isPersonalized) {
-    const obj4 = {
-      onPress() {
-          return stateFromStores1(tmp3[21]).openLazy(feedBlock(tmp3[23])(tmp3[22], tmp3.paths), "PersonalizationDisclaimerActionSheet", {});
-        },
-      hitSlop: 14
+    obj3 = { onPress: null, hitSlop: 14, "aria-label": null, children: null };
+    obj3[0] = function onPress() {
+      return stateFromStores1(_undefined[21]).openLazy(feedBlock(_undefined[23])(_undefined[22], _undefined.paths), "PersonalizationDisclaimerActionSheet", {});
     };
-    const intl2 = feedBlock(1212).intl;
-    obj4["aria-label"] = intl2.string(feedBlock(1212).t.hvVgAZ);
-    const obj5 = { size: "xs" };
-    obj4.children = callback(feedBlock(4121).CircleInformationIcon, obj5);
-    isPersonalized = callback(feedBlock(4695).PressableOpacity, obj4);
+    const intl2 = tmp(1236).intl;
+    obj3[2] = intl2.string(tmp(1236).t.hvVgAZ);
+    obj3[3] = tmp12(tmp(4145).CircleInformationIcon, { size: "xs" });
+    isPersonalized = tmp12(tmp(4717).PressableOpacity, obj3);
+  }
+  function goToShopAll() {
+    let obj = feedBlock(_undefined[15]);
+    obj = { analyticsLocations: null, analyticsSource: null, screen: null };
+    const items = [stateFromStores1(_undefined[16]).COLLECTIBLES_MOBILE_SHOP_ALL_BUTTON];
+    obj[0] = items;
+    obj[1] = stateFromStores1(_undefined[16]).COLLECTIBLES_MOBILE_SHOP_ALL_BUTTON;
+    obj[2] = constants.SHOP_ALL;
+    const result = obj.openCollectiblesShopMobile(obj);
   }
   items4[1] = isPersonalized;
-  obj2.children = items4;
+  obj2[1] = items4;
   const items5 = [closure_12(closure_5, obj2), ];
-  let tmp16 = !tmp6;
+  let tmp12Result = !tmp15;
   if (screen !== constants.ORBS) {
-    const obj6 = { onPress: goToShopAll };
-    const intl3 = feedBlock(1212).intl;
-    obj6.text = intl3.string(feedBlock(1212).t.xFcotU);
-    obj6.variant = "primary";
-    obj6.size = "sm";
-    tmp16 = callback(feedBlock(4578).Button, obj6);
+    const obj4 = { onPress: null, text: null, variant: "primary", size: "sm" };
+    obj4[0] = goToShopAll;
+    const intl3 = tmp(1236).intl;
+    obj4[1] = intl3.string(tmp(1236).t.xFcotU);
+    tmp12Result = tmp12(tmp(4600).Button, obj4);
   }
-  items5[1] = tmp16;
-  obj1.children = items5;
-  const items6 = [closure_12(closure_5, obj1), , ];
-  const obj7 = { products: filteredAndSortedProducts, loadingCardsNum: 36, preferVCPrice, accessibilityLabel: stringResult, disableBundleStaticBackground };
-  items6[1] = callback(stateFromStores1(14594), obj7);
-  const obj8 = { style: str.feedFooter };
-  const obj9 = { variant: "heading-lg/bold", accessibilityRole: "header" };
-  const intl4 = feedBlock(1212).intl;
-  obj9.children = intl4.string(feedBlock(1212).t.Yr70c4);
-  const items7 = [callback(feedBlock(4161).Text, obj9), , ];
-  const obj10 = { onPress: goToShopAll };
-  const intl5 = feedBlock(1212).intl;
-  obj10.text = intl5.string(feedBlock(1212).t.AfrvRD);
-  obj10.variant = "primary";
-  obj10.size = "md";
-  items7[1] = callback(feedBlock(4578).Button, obj10);
+  items5[1] = tmp12Result;
+  obj1[1] = items5;
+  const items6 = [closure_12(closure_5, obj1), callback(stateFromStores1(14619), { products: filteredAndSortedProducts, loadingCardsNum: 36, preferVCPrice, accessibilityLabel: stringResult, disableBundleStaticBackground }), ];
+  const obj5 = { style: feedFooterOrbImage.feedFooter, children: null };
+  const obj6 = { variant: "heading-lg/bold", accessibilityRole: "header", children: null };
+  const intl4 = tmp(1236).intl;
+  obj6[2] = intl4.string(feedBlock(1236).t.Yr70c4);
+  const items7 = [callback(feedBlock(4185).Text, obj6), , ];
+  const obj7 = { onPress: goToShopAll, text: null, variant: "primary", size: "md" };
+  const intl5 = tmp(1236).intl;
+  obj7[1] = intl5.string(feedBlock(1236).t.AfrvRD);
+  items7[1] = callback(feedBlock(4600).Button, obj7);
   if (screen === constants.ORBS) {
     if (stateFromStores2) {
-      const obj11 = {};
-      const obj12 = { uri: stateFromStores1(14603) };
-      obj11.source = obj12;
-      obj11.style = str.feedFooterOrbImage;
-      obj11.accessibilityElementsHidden = true;
-      str = "no-hide-descendants";
-      obj11.importantForAccessibility = "no-hide-descendants";
-      let tmp29Result = callback(closure_4, obj11);
+      const obj8 = { source: null, style: null, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants" };
+      const obj9 = { uri: null };
+      tmp5Result = tmp5(14628);
+      obj9[0] = tmp5Result;
+      obj8[0] = obj9;
+      feedFooterOrbImage = feedFooterOrbImage.feedFooterOrbImage;
+      obj8[1] = feedFooterOrbImage;
+      tmp12Result = tmp12(closure_4, obj8);
     } else {
-      if (obj18.isAndroid()) {
-        const obj13 = { url: null, autoplay: true, style: null, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants" };
-        let tmp30Result = tmp30(6188);
-        obj13.url = tmp30(14604);
-        obj13.style = `no-hide-descendants`.feedFooterOrbImage;
-        tmp29Result = tmp29(tmp30Result, obj13);
+      if (tmpResult.isAndroid()) {
+        const obj10 = { url: null, autoplay: true, style: null, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants" };
+        tmp5Result = tmp5(6208);
+        obj10[0] = tmp5(14629);
+        obj10[2] = feedFooterOrbImage.feedFooterOrbImage;
+        tmp12Result = tmp12(tmp5Result, obj10);
       } else {
-        const obj14 = { source: null, enableAnimation: true, resizeMode: "contain", style: null, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants" };
-        const obj15 = {};
-        tmp30Result = tmp30(5119);
-        obj15.uri = tmp30(14604);
-        obj14.source = obj15;
-        obj14.style = `no-hide-descendants`.feedFooterOrbImage;
-        tmp29Result = tmp29(tmp30Result, obj14);
+        const obj11 = { source: null, enableAnimation: true, resizeMode: "contain", style: null, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants" };
+        const obj12 = { uri: null };
+        obj12[0] = tmp5(14629);
+        obj11[0] = obj12;
+        obj11[3] = feedFooterOrbImage.feedFooterOrbImage;
+        tmp12Result = tmp12(tmp5(5141), obj11);
+        const tmp5Result1 = tmp5(5141);
       }
-      obj18 = feedBlock(477);
+      tmpResult = tmp(500);
     }
   } else {
-    const obj16 = {};
+    const obj13 = { source: null, style: null, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants" };
     if (stateFromStores) {
-      obj16.source = tmp24(14605);
-      obj16.style = str.feedFooterImage;
-      obj16.accessibilityElementsHidden = true;
-      obj16.importantForAccessibility = "no-hide-descendants";
-      let tmp26 = obj16;
+      obj13[0] = tmp(14630);
+      obj13[1] = feedFooterOrbImage.feedFooterImage;
+      let tmp18 = obj13;
     } else {
-      obj16.source = tmp24(14606);
-      obj16.style = str.feedFooterImage;
-      obj16.accessibilityElementsHidden = true;
-      obj16.importantForAccessibility = "no-hide-descendants";
-      tmp26 = obj16;
+      obj13[0] = tmp(14631);
+      obj13[1] = feedFooterOrbImage.feedFooterImage;
+      tmp18 = obj13;
     }
-    items7[2] = callback(closure_4, tmp26);
-    obj8.children = items7;
-    items6[2] = closure_12(closure_5, obj8);
-    obj.children = items6;
-    obj.children = tmp11(tmp12, obj);
-    return callback(feedBlock(5497).AnalyticsLocationProvider, obj);
+    items7[2] = tmp12(closure_4, tmp18);
+    obj5[1] = items7;
+    items6[2] = tmp13(tmp14, obj5);
+    obj[1] = items6;
+    obj[1] = tmp13(tmp14, obj);
+    return tmp12(tmp(5515).AnalyticsLocationProvider, obj);
   }
 };

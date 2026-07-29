@@ -1,10 +1,10 @@
-// Module ID: 10981
-// Function ID: 85144
+// Module ID: 11005
+// Function ID: 11006
 // Name: GiftIntentType
-// Dependencies: [1852, 653, 2]
+// Dependencies: [1876, 676, 2]
 // Exports: getGiftIntentTypeForLocation, getPremiumGiftingIntentAnalyticsLocation, parseGiftIntentType
 
-// Module 10981 (GiftIntentType)
+// Module 11005 (GiftIntentType)
 import { GiftIntentType } from "GuildFeatures";
 import { AnalyticsLocations } from "ME";
 
@@ -19,24 +19,23 @@ const result = require("set").fileFinishedImporting("modules/premium/gifting/uti
 
 export const getPremiumGiftingIntentAnalyticsLocation = function getPremiumGiftingIntentAnalyticsLocation(arg0) {
   if (arg0 === GiftIntentType.FRIEND_ANNIVERSARY) {
-    let obj = {};
-    ({ FRIEND_ANNIVERSARIES_CHAT: obj2.chat, FRIEND_ANNIVERSARIES_ACTION_BUTTON: obj2.actionButton, FRIEND_ANNIVERSARIES_ACTION_BUTTON_COACHMARK: obj2.actionButtonCoachmark } = AnalyticsLocations);
+    let obj = { chat: null, actionButton: null, actionButtonCoachmark: null };
+    ({ FRIEND_ANNIVERSARIES_CHAT: obj2[0], FRIEND_ANNIVERSARIES_ACTION_BUTTON: obj2[1], FRIEND_ANNIVERSARIES_ACTION_BUTTON_COACHMARK: obj2[2] } = AnalyticsLocations);
   } else {
     obj = {};
   }
   return obj;
 };
 export const getGiftIntentTypeForLocation = function getGiftIntentTypeForLocation(arg0) {
-  const value = map.get(arg0);
-  let tmp2 = null;
-  if (null != value) {
-    tmp2 = value;
+  let value = map.get(arg0);
+  if (value == null) {
+    value = null;
   }
-  return tmp2;
+  return value;
 };
 export const parseGiftIntentType = function parseGiftIntentType(giftIntentType) {
   let tmp = null;
-  if ("number" === typeof giftIntentType) {
+  if (typeof giftIntentType !== "os") {
     tmp = null;
     if (giftIntentType in GiftIntentType) {
       tmp = null;

@@ -1,17 +1,20 @@
-// Module ID: 3825
-// Function ID: 29656
-// Name: TOTAL_PREMIUM_GROUP_MEMBER_SEATS
-// Dependencies: [653, 664, 1921, 1212, 2781, 2]
+// Module ID: 3849
+// Function ID: 3850
+// Name: SubscriptionStatusTypes
+// Dependencies: [676, 687, 1945, 1236, 2805, 2]
 // Exports: getPremiumGroupCountryName, getPremiumGroupProductName
 
-// Module 3825 (TOTAL_PREMIUM_GROUP_MEMBER_SEATS)
+// Module 3849 (SubscriptionStatusTypes)
 import ME from "ME";
-import importDefaultResult from "wrapURL";
+import importDefaultResult from "combined";
 
+let HelpdeskArticles;
+let SubscriptionStatusTypes;
+({ SubscriptionStatusTypes, HelpdeskArticles } = ME);
 const items = [, , , , ];
-({ CANCELED: arr[0], PAUSED: arr[1], PAST_DUE: arr[2], ACCOUNT_HOLD: arr[3], BILLING_RETRY: arr[4] } = ME.SubscriptionStatusTypes);
-const articleURL = require("wrapURL").getArticleURL(ME.HelpdeskArticles.PREMIUM_GROUP_ABOUT);
-const result = require("wrapURL").fileFinishedImporting("modules/premium/premium_group/PremiumGroupConstants.tsx");
+({ CANCELED: arr[0], PAUSED: arr[1], PAST_DUE: arr[2], ACCOUNT_HOLD: arr[3], BILLING_RETRY: arr[4] } = SubscriptionStatusTypes);
+const articleURL = require("combined").getArticleURL(HelpdeskArticles.PREMIUM_GROUP_ABOUT);
+const result = require("combined").fileFinishedImporting("modules/premium/premium_group/PremiumGroupConstants.tsx");
 
 export const TOTAL_PREMIUM_GROUP_MEMBER_SEATS = 5;
 export const TOTAL_PREMIUM_GROUP_USERS = 6;
@@ -22,12 +25,12 @@ export const PREMIUM_GROUP_ANNOUNCEMENT_MODAL_PROMOTION_KEY = "2026-07-premium-g
 export const HELP_CENTER_LINK = articleURL;
 export const CANNOT_INVITE_STATUSES = items;
 export const getPremiumGroupProductName = function getPremiumGroupProductName() {
-  const intl = require(1212) /* getSystemLocale */.intl;
-  return intl.string(importDefault(2781).aFBQ3d);
+  const intl = require(1236) /* getSystemLocale */.intl;
+  return intl.string(importDefault(2805).aFBQ3d);
 };
 export const getPremiumGroupCountryName = function getPremiumGroupCountryName() {
-  const intl = require(1212) /* getSystemLocale */.intl;
-  return intl.string(require(1212) /* getSystemLocale */.t.jI66M4);
+  const intl = require(1236) /* getSystemLocale */.intl;
+  return intl.string(require(1236) /* getSystemLocale */.t.jI66M4);
 };
 export const PremiumGroupInviteState = { UNKNOWN: "UNKNOWN", FETCHING: "FETCHING", PENDING: "PENDING", ACCEPTED: "ACCEPTED", REMOVED: "REMOVED", NOT_FOUND: "NOT_FOUND", ERROR: "ERROR" };
 export const PremiumGroupAPIErrorCodes = { UNKNOWN_USER: 10013, [10013]: "UNKNOWN_USER", BILLING_SUBSCRIPTION_GROUP_MAX_MEMBERS: 100123, [100123]: "BILLING_SUBSCRIPTION_GROUP_MAX_MEMBERS", BILLING_SUBSCRIPTION_GROUP_USER_INELIGIBLE: 100124, [100124]: "BILLING_SUBSCRIPTION_GROUP_USER_INELIGIBLE", BILLING_SUBSCRIPTION_GROUP_INVITE_ALREADY_ACCEPTED: 100125, [100125]: "BILLING_SUBSCRIPTION_GROUP_INVITE_ALREADY_ACCEPTED", BILLING_SUBSCRIPTION_GROUP_USER_IS_BOT: 100126, [100126]: "BILLING_SUBSCRIPTION_GROUP_USER_IS_BOT", BILLING_SUBSCRIPTION_GROUP_USER_ALREADY_IN_GROUP: 100127, [100127]: "BILLING_SUBSCRIPTION_GROUP_USER_ALREADY_IN_GROUP", BILLING_SUBSCRIPTION_GROUP_USER_HAS_FRACTIONAL_NITRO: 100128, [100128]: "BILLING_SUBSCRIPTION_GROUP_USER_HAS_FRACTIONAL_NITRO", BILLING_SUBSCRIPTION_GROUP_USER_BOOST_ONLY: 100129, [100129]: "BILLING_SUBSCRIPTION_GROUP_USER_BOOST_ONLY", BILLING_SUBSCRIPTION_GROUP_USER_ACCOUNT_TOO_YOUNG: 100130, [100130]: "BILLING_SUBSCRIPTION_GROUP_USER_ACCOUNT_TOO_YOUNG", BILLING_SUBSCRIPTION_GROUP_USER_HAS_INELIGIBLE_PLAN: 100131, [100131]: "BILLING_SUBSCRIPTION_GROUP_USER_HAS_INELIGIBLE_PLAN", BILLING_SUBSCRIPTION_GROUP_USER_ON_COOLDOWN: 100132, [100132]: "BILLING_SUBSCRIPTION_GROUP_USER_ON_COOLDOWN", BILLING_SUBSCRIPTION_GROUP_USER_ACTIVE_BOOSTS: 100133, [100133]: "BILLING_SUBSCRIPTION_GROUP_USER_ACTIVE_BOOSTS", BILLING_SUBSCRIPTION_GROUP_USER_ON_GIFT_SUBSCRIPTION: 100135, [100135]: "BILLING_SUBSCRIPTION_GROUP_USER_ON_GIFT_SUBSCRIPTION", BILLING_SUBSCRIPTION_GROUP_USER_HAS_MOBILE_SUBSCRIPTION: 100136, [100136]: "BILLING_SUBSCRIPTION_GROUP_USER_HAS_MOBILE_SUBSCRIPTION", BILLING_SUBSCRIPTION_GROUP_USER_INVALID_SUBSCRIPTION: 100137, [100137]: "BILLING_SUBSCRIPTION_GROUP_USER_INVALID_SUBSCRIPTION" };

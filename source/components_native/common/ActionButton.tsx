@@ -1,11 +1,11 @@
-// Module ID: 9063
-// Function ID: 71079
+// Module ID: 9087
+// Function ID: 9088
 // Name: ActionButton
-// Dependencies: [31, 27, 33, 4583, 6661, 2]
+// Dependencies: [19, 17, 21, 4605, 6682, 2]
 // Exports: default
 
-// Module 9063 (ActionButton)
-import "result";
+// Module 9087 (ActionButton)
+import "noop";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
 
@@ -17,13 +17,12 @@ export default function ActionButton(style) {
   if ("positive" === style.type) {
     str = "active";
   }
-  let obj = require(4583) /* useProfileThemedButtonStyles */;
-  obj = { style: style.styles };
-  obj = {};
-  obj.icon = jsx(style.IconComponent, { color: obj.useButtonTextColorStyles(str).color, size: "sm" });
-  ({ onPress: obj3.onPress, accessibilityLabel: obj3.accessibilityLabel } = style);
-  obj.variant = str;
-  obj.size = "sm";
-  obj.children = jsx(require(6661) /* IconButton */.IconButton, {});
-  return <View />;
+  let obj = require(4605) /* styleProperties */;
+  obj = { style: style.styles, children: null };
+  obj = { icon: null, onPress: null, accessibilityLabel: null, variant: null, size: "sm" };
+  obj[0] = jsx(style.IconComponent, { color: obj.useButtonTextColorStyles(str).color, size: "sm" });
+  ({ onPress: obj3[1], accessibilityLabel: obj3[2] } = style);
+  obj[3] = str;
+  obj[1] = jsx(require(6682) /* IconButton */.IconButton, { icon: null, onPress: null, accessibilityLabel: null, variant: null, size: "sm" });
+  return <View icon={null} onPress={null} accessibilityLabel={null} variant={null} size="sm" />;
 };

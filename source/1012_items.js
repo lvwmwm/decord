@@ -1,52 +1,49 @@
 // Module ID: 1012
-// Function ID: 11051
+// Function ID: 1013
 // Name: items
-// Dependencies: [1013, 1024, 1020, 1016, 1025, 1026, 1022, 1023, 1015]
+// Dependencies: []
 
 // Module 1012 (items)
-const require = arg1;
-let dependencyMap = arg6;
-Object.defineProperty(arg5, Symbol.toStringTag, { value: "Module" });
-const items = [0.1, 0.25];
-arg5.CLSThresholds = items;
-arg5.onCLS = function onCLS(arg0, arg1) {
-  const _require = arg0;
-  if (arguments.length > 1) {
-    const dependencyMap = {};
-    let obj = _require(1013);
-    obj.onFCP(_require(1024).runOnce(() => {
-      const metric = callback(1020).initMetric("CLS", 0);
-      const obj = callback(1020);
-      const visibilityWatcher = callback(1016).getVisibilityWatcher();
-      const obj2 = callback(1016);
-      let closure_2 = callback(1025).initUnique(metric, callback(1026).LayoutShiftManager);
-      function handleEntries(items) {
-        for (const item10003 of arg0) {
-          let tmp = closure_2;
-          let _processEntryResult = closure_2._processEntry(item10003);
-          continue;
-        }
-        if (closure_2._sessionValue > metric.value) {
-          ({ _sessionValue: metric.value, _sessionEntries: metric.entries } = closure_2);
-          bindReporterResult();
-        }
+let items = [];
+let num = 0;
+do {
+  items[num] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/"[num];
+  num = num + 1;
+} while (num < 64);
+arg5.base64StringFromByteArray = function base64StringFromByteArray(arr2) {
+  let sum;
+  const result = length % 3;
+  const items = [];
+  const diff = length - result;
+  let num = 0;
+  if (0 < diff) {
+    do {
+      sum = num + 16383;
+      let sum2 = num;
+      let tmp5 = sum;
+      if (diff < sum) {
+        tmp5 = diff;
       }
-      const obj4 = callback(1025);
-      const observeResult = callback(1022).observe("layout-shift", handleEntries);
-      if (observeResult) {
-        const obj6 = callback(1023);
-        const bindReporterResult = obj6.bindReporter(callback, metric, outer1_2, metric.reportAllChanges);
-        callback = bindReporterResult;
-        visibilityWatcher.onHidden(() => {
-          handleEntries(observeResult.takeRecords());
-          bindReporterResult(true);
-        });
-        const WINDOW = callback(1015).WINDOW;
-        if (!tmp13) {
-          const timerId = WINDOW.setTimeout(bindReporterResult);
-        }
-        tmp13 = null == WINDOW || null == WINDOW.setTimeout;
+      let items1 = [];
+      if (sum2 < tmp5) {
+        do {
+          let sum1 = (arr2[sum2] << 16 & 16711680) + (arr2[sum2 + 1] << 8 & 65280) + (255 & arr2[sum2 + 2]);
+          let tmp7 = items;
+          let arr = items1.push(items[sum1 >> 18 & 63] + items[sum1 >> 12 & 63] + items[sum1 >> 6 & 63] + items[63 & sum1]);
+          sum2 = sum2 + 3;
+        } while (sum2 < tmp5);
       }
-    }));
+      arr = items.push(items1.join(""));
+      num = sum;
+    } while (sum < diff);
   }
+  if (1 === result) {
+    const _HermesInternal = HermesInternal;
+    items.push("" + items[arr2[length - 1] >> 2] + items[arr2[length - 1] << 4 & 63] + "==");
+  } else if (2 === result) {
+    const sum3 = (arr2[length - 2] << 8) + arr2[length - 1];
+    const _HermesInternal2 = HermesInternal;
+    items.push("" + items[sum3 >> 10] + items[sum3 >> 4 & 63] + items[sum3 << 2 & 63] + "=");
+  }
+  return items.join("");
 };

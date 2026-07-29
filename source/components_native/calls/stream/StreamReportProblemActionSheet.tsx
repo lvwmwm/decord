@@ -1,60 +1,59 @@
-// Module ID: 16001
-// Function ID: 123476
+// Module ID: 16036
+// Function ID: 16037
 // Name: ReportProblem
-// Dependencies: [31, 4252, 653, 33, 4165, 689, 4594, 6005, 675, 16002, 4133, 3865, 16003, 5535, 5533, 5220, 1212, 5223, 2]
+// Dependencies: [19, 4276, 676, 21, 4189, 712, 4616, 6023, 698, 16037, 4157, 3889, 16038, 5553, 5551, 5242, 1236, 5245, 2]
 // Exports: default
 
-// Module 16001 (ReportProblem)
-import "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 16036 (ReportProblem)
+import "noop";
+import sortActivity from "sortActivity";
 import { AnalyticEvents } from "ME";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
 const require = arg1;
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { padding: 16, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SURFACE_HIGH };
-_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+createCacheKey = { container: null };
+createCacheKey = { padding: 16, backgroundColor: require("Themes").colors.BACKGROUND_SURFACE_HIGH };
+createCacheKey[0] = createCacheKey;
+createCacheKey = createCacheKey.createStyles(createCacheKey);
 const result = require("ME").fileFinishedImporting("components_native/calls/stream/StreamReportProblemActionSheet.tsx");
 
 export default function ReportProblem(arg0) {
   let importDefault;
   let require;
   ({ stream: require, analyticsData: importDefault } = arg0);
-  importDefault(4594)(() => {
+  importDefault(4616)(() => {
     let obj = outer1_0(outer1_2[7]);
     const streamerApplication = obj.getStreamerApplication(ownerId, outer1_3);
-    obj = { type: "Stream Issue Sheet", other_user_id: ownerId.ownerId };
+    obj = { type: "Stream Issue Sheet", other_user_id: ownerId.ownerId, application_id: null, application_name: null, game_id: null };
     let id = null;
     if (null != streamerApplication) {
       id = streamerApplication.id;
     }
-    obj.application_id = id;
+    obj[2] = id;
     let name = null;
     if (null != streamerApplication) {
       name = streamerApplication.name;
     }
-    obj.application_name = name;
+    obj[3] = name;
     let id1 = null;
     if (null != streamerApplication) {
       id1 = streamerApplication.id;
     }
-    obj.game_id = id1;
+    obj[4] = id1;
     outer1_1(outer1_2[8]).track(outer1_4.OPEN_POPOUT, obj);
   });
-  let tmp = _createForOfIteratorHelperLoose();
-  const mapped = importDefault(16003)({ isStreamer: false, isEndStream: false }).map((label) => {
+  let tmp = createCacheKey();
+  const mapped = importDefault(16038)({ isStreamer: false, isEndStream: false }).map((label) => {
     const value = label.value;
     return outer1_5(outer1_0(outer1_2[13]).ActionSheetRow, {
       label: label.label,
       arrow: true,
       onPress() {
-        const obj = { problem: closure_0, stream: value, feedback: "" };
+        const obj = { problem: closure_0, stream: value, feedback: "", streamApplication: null, analyticsData: null, location: "Stream" };
         const tmp = outer2_1(outer2_2[9]);
-        obj.streamApplication = outer2_0(outer2_2[7]).getStreamerApplication(value, outer2_3);
-        obj.analyticsData = outer1_1;
-        obj.location = "Stream";
+        obj[3] = outer2_0(outer2_2[7]).getStreamerApplication(value, outer2_3);
+        obj[4] = outer1_1;
         tmp(obj);
         const obj2 = outer2_0(outer2_2[7]);
         outer2_1(outer2_2[10]).hideActionSheet();
@@ -63,12 +62,13 @@ export default function ReportProblem(arg0) {
       }
     }, arg1);
   });
-  let obj = { scrollable: true };
-  obj = {};
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj.title = intl.string(require(1212) /* getSystemLocale */.t.XuqqwI);
-  obj.header = jsx(require(5220) /* RedesignBottomSheetTitleHeaderBase */.BottomSheetTitleHeader, {});
-  obj = { style: tmp.container, children: jsx(require(5535) /* ActionSheetRowIcon */.ActionSheetRow.Group, { hasIcons: false, children: mapped }) };
-  obj.children = jsx(require(5223) /* BottomSheetModal */.BottomSheetScrollView, { style: tmp.container, children: jsx(require(5535) /* ActionSheetRowIcon */.ActionSheetRow.Group, { hasIcons: false, children: mapped }) });
-  return jsx(require(5533) /* ActionSheet */.ActionSheet, { style: tmp.container, children: jsx(require(5535) /* ActionSheetRowIcon */.ActionSheetRow.Group, { hasIcons: false, children: mapped }) });
+  let obj = { scrollable: true, header: null, children: null };
+  obj = { title: null };
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj[0] = intl.string(require(1236) /* getSystemLocale */.t.XuqqwI);
+  obj[1] = jsx(require(5242) /* RedesignBottomSheetTitleHeaderBase */.BottomSheetTitleHeader, { title: null });
+  obj = { style: tmp.container, children: null };
+  obj[1] = jsx(require(5553) /* ActionSheetRowIcon */.ActionSheetRow.Group, { hasIcons: false, children: mapped });
+  obj[2] = jsx(require(5245) /* BottomSheetModal */.BottomSheetScrollView, { style: tmp.container, children: null });
+  return jsx(require(5551) /* ActionSheet */.ActionSheet, { style: tmp.container, children: null });
 };

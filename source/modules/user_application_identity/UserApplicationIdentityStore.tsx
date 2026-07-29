@@ -1,134 +1,93 @@
-// Module ID: 12141
-// Function ID: 94944
-// Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 566, 686, 2]
+// Module ID: 12165
+// Function ID: 12166
+// Name: map
+// Dependencies: [589, 709, 2]
 
-// Module 12141 (_isNativeReflectConstruct)
-import dispatcher from "dispatcher";
-import set from "set";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
+// Module 12165 (map)
+import { Store } from "initialize";
 
-function _isNativeReflectConstruct() {
-  let dispatcher = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return dispatcher;
-  }
-  const result = _isNativeReflectConstruct();
-}
-function updateUserIdentities(userId, identities) {
-  const map = new Map(identities.map((application_id) => {
-    const items = [application_id.application_id, application_id];
-    return items;
-  }));
-  const obj = { identities, byApplication: map };
-  const result = map.set(userId, obj);
-  const result1 = map1.set(userId, obj.FETCHED);
-}
 let obj = { NOT_FETCHED: "NOT_FETCHED", FETCHING: "FETCHING", FETCHED: "FETCHED" };
 let map = new Map();
 const map1 = new Map();
-let tmp4 = ((Store) => {
-  class UserApplicationIdentityStore {
-    constructor() {
-      self = this;
-      tmp = UserApplicationIdentityStore(this, UserApplicationIdentityStore);
-      obj = outer1_3(UserApplicationIdentityStore);
-      tmp2 = outer1_2;
-      if (outer1_8()) {
-        tmp6 = globalThis;
-        _Reflect = Reflect;
-        tmp7 = outer1_3;
-        tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, outer1_3(self).constructor);
-      } else {
-        tmp3 = arguments;
-        tmp4 = arguments;
-        constructResult = obj(...arguments);
-      }
-      return tmp2(self, constructResult);
-    }
+class UserApplicationIdentityStore extends Store {
+}
+const prototype = UserApplicationIdentityStore.prototype;
+prototype["getUserIdentities"] = function getUserIdentities(arg0) {
+  const value = map.get(arg0);
+  let identities;
+  if (value != null) {
+    identities = value.identities;
   }
-  callback2(UserApplicationIdentityStore, Store);
-  let obj = {
-    key: "getUserIdentities",
-    value(arg0) {
-      const value = outer1_6.get(arg0);
-      let identities;
-      if (null != value) {
-        identities = value.identities;
-      }
-      let tmp3 = null;
-      if (null != identities) {
-        tmp3 = identities;
-      }
-      return tmp3;
-    }
-  };
-  const items = [obj, , , ];
-  obj = {
-    key: "getUserIdentityByApplication",
-    value(arg0, arg1) {
-      let value = outer1_6.get(arg0);
-      value = undefined;
-      if (null != value) {
-        const byApplication = value.byApplication;
-        value = byApplication.get(arg1);
-      }
-      let tmp4 = null;
-      if (null != value) {
-        tmp4 = value;
-      }
-      return tmp4;
-    }
-  };
-  items[1] = obj;
-  obj = {
-    key: "getFetchState",
-    value(arg0) {
-      let NOT_FETCHED = outer1_7.get(arg0);
-      if (null == NOT_FETCHED) {
-        NOT_FETCHED = outer1_5.NOT_FETCHED;
-      }
-      return NOT_FETCHED;
-    }
-  };
-  items[2] = obj;
-  items[3] = {
-    key: "isFetchingUser",
-    value(arg0) {
-      return this.getFetchState(arg0) === outer1_5.FETCHING;
-    }
-  };
-  return callback(UserApplicationIdentityStore, items);
-})(require("initialize").Store);
+  if (identities == null) {
+    identities = null;
+  }
+  return identities;
+};
+prototype["getUserIdentityByApplication"] = function getUserIdentityByApplication(closure_0, closure_1) {
+  let value = map.get(closure_0);
+  value = undefined;
+  if (value != null) {
+    const byApplication = value.byApplication;
+    value = byApplication.get(closure_1);
+  }
+  if (value == null) {
+    value = null;
+  }
+  return value;
+};
+prototype["getFetchState"] = function getFetchState(arg0) {
+  let NOT_FETCHED = map1.get(arg0);
+  if (NOT_FETCHED == null) {
+    NOT_FETCHED = obj.NOT_FETCHED;
+  }
+  return NOT_FETCHED;
+};
+prototype["isFetchingUser"] = function isFetchingUser(arg0) {
+  return this.getFetchState(arg0) === obj.FETCHING;
+};
 obj = {
   USER_APPLICATION_IDENTITY_FETCH_USER_START: function handleFetchUserStart(userId) {
     const result = map1.set(userId.userId, obj.FETCHING);
   },
   USER_APPLICATION_IDENTITY_FETCH_USER_SUCCESS: function handleFetchUserSuccess(userId) {
+    let identities;
     const result = map1.set(userId.userId, obj.FETCHED);
-    updateUserIdentities(userId.userId, userId.identities);
+    ({ userId, identities } = userId);
+    const map = new Map(identities.map((application_id) => {
+      const items = [application_id.application_id, application_id];
+      return items;
+    }));
+    const result1 = map.set(userId, { identities, byApplication: map });
+    const result2 = map1.set(userId, obj.FETCHED);
   },
   USER_APPLICATION_IDENTITY_FETCH_USER_FAILURE: function handleFetchUserFailure(userId) {
     const result = map1.set(userId.userId, obj.FETCHED);
   },
   USER_APPLICATION_IDENTITY_REMOVE: function handleRemoveIdentity(user_id) {
-    let dispatcher = user_id;
+    let obj = user_id;
+    obj = map;
     const value = map.get(user_id.user_id);
     if (null == value) {
       return false;
     } else {
+      user_id = user_id.user_id;
       const identities = value.identities;
-      updateUserIdentities(user_id.user_id, identities.filter((application_id) => application_id.application_id !== user_id.application_id));
+      const found = identities.filter((application_id) => application_id.application_id !== user_id.application_id);
+      const _Map = Map;
+      map = new Map(found.map((application_id) => {
+        const items = [application_id.application_id, application_id];
+        return items;
+      }));
+      obj = { identities: null, byApplication: null };
+      obj[0] = found;
+      obj[1] = map;
+      const result = obj.set(user_id, obj);
+      const result1 = map1.set(user_id, obj.FETCHED);
     }
   }
 };
-tmp4 = new tmp4(require("dispatcher"), obj);
-let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/user_application_identity/UserApplicationIdentityStore.tsx");
+const userApplicationIdentityStore = new UserApplicationIdentityStore(require("dispatcher"), obj);
+let result = require("set").fileFinishedImporting("modules/user_application_identity/UserApplicationIdentityStore.tsx");
 
-export default tmp4;
+export default userApplicationIdentityStore;
 export const FetchState = obj;

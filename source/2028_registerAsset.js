@@ -1,11 +1,10 @@
 // Module ID: 2028
-// Function ID: 22187
+// Function ID: 2029
 // Name: registerAsset
-// Dependencies: [1217]
+// Dependencies: [1241]
 
 // Module 2028 (registerAsset)
 import registerAsset from "registerAsset";
 
-const obj = { __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9jb2xsZWN0aWJsZXMvd2Vi", scales: [1], hash: "3b0fa1b75e8085ae42d6b0a4b6068dd7", name: "ru.messages.3b0fa1b75e8085ae42d6b0a4b6068dd7.compiled.messages", type: "jsona" };
 
-export default registerAsset.registerAsset(obj);
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/checkout/messages", scales: [1], hash: "6a429731d2a9e33e0bfb2eab2a72054e", name: "GiftCard.compiled.messages", type: "jsona" });

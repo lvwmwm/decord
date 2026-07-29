@@ -1,61 +1,63 @@
-// Module ID: 16681
-// Function ID: 129950
+// Module ID: 16717
+// Function ID: 16718
 // Name: ParentalConsentConnectionNavbar
-// Dependencies: [31, 27, 1850, 33, 4165, 5118, 689, 1557, 566, 4161, 5623, 1212, 2461, 2]
+// Dependencies: [19, 17, 1874, 21, 4189, 5140, 712, 1581, 589, 4185, 5641, 1236, 2485, 2]
 // Exports: ParentalConsentConnectionNavbar
 
-// Module 16681 (ParentalConsentConnectionNavbar)
-import "result";
+// Module 16717 (ParentalConsentConnectionNavbar)
+import "noop";
 import { View } from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import mergeGuildAvatar from "mergeGuildAvatar";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_5;
+let c5;
 let closure_6;
 const require = arg1;
-({ jsx: closure_5, jsxs: closure_6 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { height: require("NAV_BAR_HEIGHT").NAV_BAR_HEIGHT, flexDirection: "row", alignItems: "center", justifyContent: "center", paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16 };
-_createForOfIteratorHelperLoose.row = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.logOut = { position: "absolute", left: require("_createForOfIteratorHelperLoose").space.PX_16 };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-let obj1 = { position: "absolute", left: require("_createForOfIteratorHelperLoose").space.PX_16 };
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/safety_flows/native/tasks/ParentalConsentConnectionHeader.tsx");
+({ jsx: c5, jsxs: closure_6 } = jsxProd);
+createCacheKey = { row: null, logOut: null };
+createCacheKey = { height: require("NAV_BAR_HEIGHT").NAV_BAR_HEIGHT, flexDirection: "row", alignItems: "center", justifyContent: "center", paddingHorizontal: require("Themes").space.PX_16 };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { position: "absolute", left: require("Themes").space.PX_16 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let obj1 = { position: "absolute", left: require("Themes").space.PX_16 };
+const result = require("mergeGuildAvatar").fileFinishedImporting("modules/safety_flows/native/tasks/ParentalConsentConnectionHeader.tsx");
 
 export const ParentalConsentConnectionNavbar = function ParentalConsentConnectionNavbar() {
-  const tmp = _createForOfIteratorHelperLoose();
-  let obj = require(566) /* initialize */;
-  const items = [_isNativeReflectConstruct];
+  const tmp = createCacheKey();
+  let obj = require(589) /* initialize */;
+  const items = [mergeGuildAvatar];
   const stateFromStores = obj.useStateFromStores(items, () => {
-    const currentUser = outer1_4.getCurrentUser();
+    currentUser = currentUser.getCurrentUser();
     let username;
-    if (null != currentUser) {
+    if (currentUser != null) {
       username = currentUser.username;
     }
     return username;
   });
-  obj = { style: { paddingTop: importDefault(1557)().top } };
-  obj = { style: tmp.row };
+  obj = { style: { paddingTop: importDefault(1581)().top }, children: null };
+  obj = { style: tmp.row, children: null };
   const obj1 = {
     accessibilityRole: "button",
     variant: "text-md/medium",
     color: "text-link",
     style: tmp.logOut,
     onPress() {
-      return outer1_1(outer1_2[10]).logout("safety_flows_parental_consent_connection");
-    }
+      return callback(table[10]).logout("safety_flows_parental_consent_connection");
+    },
+    children: null
   };
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj1.children = intl.string(importDefault(2461)["3HuGuY"]);
-  const items1 = [callback(require(4161) /* Text */.Text, obj1), ];
-  let tmp6 = null != stateFromStores;
-  if (tmp6) {
-    const obj2 = { accessibilityRole: "header", variant: "text-md/semibold", color: "mobile-text-heading-primary", children: stateFromStores };
-    tmp6 = callback(require(4161) /* Text */.Text, obj2);
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj1[5] = intl.string(importDefault(2485)["3HuGuY"]);
+  const items1 = [callback(require(4185) /* Text */.Text, obj1), ];
+  let tmp5Result = null != stateFromStores;
+  if (tmp5Result) {
+    const obj2 = { accessibilityRole: "header", variant: "text-md/semibold", color: "mobile-text-heading-primary", children: null };
+    obj2[3] = stateFromStores;
+    tmp5Result = tmp5(require(4185) /* Text */.Text, obj2);
   }
-  items1[1] = tmp6;
-  obj.children = items1;
-  obj.children = closure_6(View, obj);
+  items1[1] = tmp5Result;
+  obj[1] = items1;
+  obj[1] = closure_6(View, obj);
   return callback(View, obj);
 };

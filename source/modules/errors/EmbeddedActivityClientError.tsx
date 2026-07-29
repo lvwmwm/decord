@@ -1,22 +1,16 @@
-// Module ID: 10616
-// Function ID: 82581
-// Name: EmbeddedActivityClientError
-// Dependencies: [7, 6, 2]
+// Module ID: 10639
+// Function ID: 10640
+// Name: prototype
+// Dependencies: [2]
 
-// Module 10616 (EmbeddedActivityClientError)
-import _classCallCheck from "_classCallCheck";
-import importDefaultResult from "_defineProperties";
-
-class EmbeddedActivityClientError {
-  constructor(arg0, arg1) {
-    tmp = _classCallCheck(this, EmbeddedActivityClientError);
-    this.reason = global;
-    this.detailCode = arg1;
-    return;
-  }
-}
-const importDefaultResultResult = require("_defineProperties")(EmbeddedActivityClientError);
-importDefaultResultResult.Reasons = { PRIMARY_APP_COMMAND_NOT_FOUND: 0, [0]: "PRIMARY_APP_COMMAND_NOT_FOUND", LEGACY_LAUNCH_CLIENT_VALIDATION_FAILED: 1, [1]: "LEGACY_LAUNCH_CLIENT_VALIDATION_FAILED", INVALID_CHANNEL: 2, [2]: "INVALID_CHANNEL" };
+// Module 10639 (prototype)
 const result = require("set").fileFinishedImporting("modules/errors/EmbeddedActivityClientError.tsx");
+const prototype = function EmbeddedActivityClientError(reason, detailCode) {
+  const obj = Object.create(new.target.prototype);
+  obj.reason = reason;
+  obj.detailCode = detailCode;
+  return obj;
+}.prototype;
+prototype.Reasons = { PRIMARY_APP_COMMAND_NOT_FOUND: 0, [0]: "PRIMARY_APP_COMMAND_NOT_FOUND", LEGACY_LAUNCH_CLIENT_VALIDATION_FAILED: 1, [1]: "LEGACY_LAUNCH_CLIENT_VALIDATION_FAILED", INVALID_CHANNEL: 2, [2]: "INVALID_CHANNEL" };
 
-export default importDefaultResultResult;
+export default prototype;

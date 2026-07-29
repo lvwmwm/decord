@@ -1,131 +1,146 @@
-// Module ID: 15993
-// Function ID: 123387
+// Module ID: 16028
+// Function ID: 16029
 // Name: NOOP
-// Dependencies: [31, 27, 1348, 10014, 33, 4165, 689, 4026, 10015, 15828, 11113, 3838, 15892, 10744, 12828, 4576, 5536, 15994, 1212, 10762, 566, 11252, 4563, 5251, 1553, 5550, 5155, 11411, 2]
+// Dependencies: [19, 17, 1372, 10036, 21, 4189, 712, 4050, 10037, 15863, 11137, 3862, 15927, 10768, 12850, 4598, 5554, 16029, 1236, 10786, 589, 11276, 4586, 5273, 1577, 5568, 5177, 11435, 2]
 
-// Module 15993 (NOOP)
-import importAllResult from "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 16028 (NOOP)
+import importAllResult from "VoiceProcessingOptions";
+import ensureGuildLoaded from "ensureGuildLoaded";
 import { CONTROLS_DRAWER_HEADER_EXPANDED_SIZE } from "VoicePanelControlsModes";
-import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import importDefaultResult from "module_4026";
+import jsxProd from "context";
+import createCacheKey from "createCacheKey";
+import importDefaultResult from "module_4050";
 
-let closure_5;
+let c5;
 let closure_6;
-let closure_7;
+let error;
 const require = arg1;
 function NOOP() {
 
 }
-({ jsx: closure_5, jsxs: closure_6, Fragment: closure_7 } = jsxProd);
-let obj = {};
-obj = { flex: 1, paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16 };
-obj.scrollView = obj;
-_createForOfIteratorHelperLoose = { flex: 1, paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16, marginTop: CONTROLS_DRAWER_HEADER_EXPANDED_SIZE };
-obj.scrollViewScreenReader = _createForOfIteratorHelperLoose;
-obj.blurRegion = { height: CONTROLS_DRAWER_HEADER_EXPANDED_SIZE };
-let closure_8 = _createForOfIteratorHelperLoose.createStyles(obj);
-let closure_9 = require("module_4026").createAnimatedComponent(require("StyleSheet").ScrollView);
+let c3 = importAllResult;
+({ jsx: c5, jsxs: closure_6, Fragment: error } = jsxProd);
+let obj = { scrollView: null, scrollViewScreenReader: null, blurRegion: null };
+obj = { flex: 1, paddingHorizontal: require("Themes").space.PX_16 };
+obj[0] = obj;
+createCacheKey = { flex: 1, paddingHorizontal: require("Themes").space.PX_16, marginTop: CONTROLS_DRAWER_HEADER_EXPANDED_SIZE };
+obj[1] = createCacheKey;
+obj[2] = { height: CONTROLS_DRAWER_HEADER_EXPANDED_SIZE };
+let closure_8 = createCacheKey.createStyles(obj);
+let closure_9 = require("module_4050").createAnimatedComponent(require("GameConsoleAccountButton").ScrollView);
 let closure_10 = importAllResult.memo((arg0) => {
   let channel;
   let openTab;
   ({ channel, openTab } = arg0);
-  const channelId = importAllResult.useContext(importDefault(10015)).channelId;
-  const tmp = importDefault(15828)(channelId);
-  let obj = require(11113) /* getEmbeddedActivityLaunchability */;
+  const channelId = importAllResult.useContext(importDefault(10037)).channelId;
+  const tmp2 = importDefault(15863)(channelId);
+  let obj = require(11137) /* getEmbeddedActivityLaunchability */;
   const embeddedActivityLaunchability = obj.useEmbeddedActivityLaunchability(channelId);
-  const DeveloperMode = require(3838) /* explicitContentFromProto */.DeveloperMode;
+  const DeveloperMode = require(3862) /* explicitContentFromProto */.DeveloperMode;
   const setting = DeveloperMode.useSetting();
-  let obj1 = importDefault(15892);
+  let obj1 = importDefault(15927);
   const treatment = obj1.useConfig({ location: "VoicePanelVoiceControls" }).treatment;
-  let obj2 = importDefault(10744);
+  let obj2 = importDefault(10768);
   let nonContextualStreamOutputPresent = obj2.useConfig({ location: "VoicePanelVoiceControls" }).nonContextualStreamOutputPresent;
-  const tmp4 = importDefault(12828)(channel);
-  obj = { spacing: 24 };
-  if (!tmp) {
-    const items = [tmp, , , , , , ];
-    obj = { channel, connected: tmp };
-    items[1] = callback(require(15994) /* GameConsoleAccountButton */.GameConsoles, obj);
+  const tmp6 = importDefault(12850)(channel);
+  if (!tmp2) {
+    const items = [tmp2, , , , , , ];
+    obj = { channel: null, connected: null };
+    obj[0] = channel;
+    obj[1] = tmp2;
+    items[1] = callback(tmp3(16029).GameConsoles, obj);
     if (nonContextualStreamOutputPresent) {
-      nonContextualStreamOutputPresent = callback(require(15994) /* GameConsoleAccountButton */.StreamVolumeItem, {});
+      nonContextualStreamOutputPresent = tmp12(tmp3(16029).StreamVolumeItem, {});
     }
     items[2] = nonContextualStreamOutputPresent;
-    obj1 = {};
-    const intl = require(1212) /* getSystemLocale */.intl;
-    obj1.title = intl.string(require(1212) /* getSystemLocale */.t.NiTd0e);
-    obj1.hasIcons = true;
-    const items1 = [callback(require(15994) /* GameConsoleAccountButton */.DeafenSwitch, {}), , , , ];
-    obj2 = { channel, connected: tmp };
-    items1[1] = callback(require(15994) /* GameConsoleAccountButton */.AudioRouteButton, obj2);
-    const obj3 = { channelId };
-    items1[2] = callback(require(15994) /* GameConsoleAccountButton */.HideNonVideoParticipants, obj3);
-    items1[3] = callback(require(15994) /* GameConsoleAccountButton */.HideSelfVideo, {});
-    let tmp34 = tmp;
-    if (tmp) {
-      const obj4 = { channel, connected: tmp };
-      tmp34 = callback(require(15994) /* GameConsoleAccountButton */.InviteButton, obj4);
+    obj = { title: null, hasIcons: true, children: null };
+    const intl = tmp3(1236).intl;
+    obj[0] = intl.string(tmp3(1236).t.NiTd0e);
+    const items1 = [callback(tmp3(16029).DeafenSwitch, {}), , , , ];
+    obj1 = { channel: null, connected: null };
+    obj1[0] = channel;
+    obj1[1] = tmp2;
+    items1[1] = callback(tmp3(16029).AudioRouteButton, obj1);
+    obj2 = { channelId: null };
+    obj2[0] = channelId;
+    items1[2] = callback(tmp3(16029).HideNonVideoParticipants, obj2);
+    items1[3] = callback(tmp3(16029).HideSelfVideo, {});
+    let tmp12Result = tmp2;
+    if (tmp2) {
+      const obj3 = { channel: null, connected: null };
+      obj3[0] = channel;
+      obj3[1] = tmp2;
+      tmp12Result = tmp12(tmp3(16029).InviteButton, obj3);
     }
-    items1[4] = tmp34;
-    obj1.children = items1;
-    items[3] = callback2(require(5536) /* TableRowGroupTitle */.TableRowGroup, obj1);
-    items[4] = callback(require(10762) /* VoiceProcessingOptions */.VoiceProcessingOptions, {});
-    const obj5 = { hasIcons: true };
-    const obj6 = { guildId: channel.guild_id };
-    const items2 = [callback(require(15994) /* GameConsoleAccountButton */.VoiceSettingsButton, obj6), ];
-    let tmp43 = null != tmp4;
-    if (tmp43) {
-      const obj7 = { stream: tmp4 };
-      tmp43 = callback(require(15994) /* GameConsoleAccountButton */.ReportStreamIssueButton, obj7);
+    items1[4] = tmp12Result;
+    obj[2] = items1;
+    items[3] = tmp7(tmp3(5554).TableRowGroup, obj);
+    items[4] = callback(tmp3(10786).VoiceProcessingOptions, {});
+    const obj4 = { guildId: null };
+    obj4[0] = channel.guild_id;
+    const items2 = [callback(tmp3(16029).VoiceSettingsButton, obj4), ];
+    tmp12Result = null != tmp6;
+    if (tmp12Result) {
+      const obj5 = { stream: null };
+      obj5[0] = tmp6;
+      tmp12Result = tmp12(tmp3(16029).ReportStreamIssueButton, obj5);
     }
-    items2[1] = tmp43;
-    obj5.children = items2;
-    items[5] = callback2(require(5536) /* TableRowGroupTitle */.TableRowGroup, obj5);
-    let tmp47 = null;
-    if (tmp) {
-      tmp47 = null;
+    const obj6 = { hasIcons: true, children: null };
+    items2[1] = tmp12Result;
+    obj6[1] = items2;
+    items[5] = tmp7(tmp3(5554).TableRowGroup, obj6);
+    let tmp7Result = null;
+    if (tmp2) {
+      tmp7Result = null;
       if (setting) {
-        tmp47 = null;
-        if (embeddedActivityLaunchability === require(11113) /* getEmbeddedActivityLaunchability */.EmbeddedActivityLaunchability.CAN_LAUNCH) {
-          const obj8 = {};
-          const intl2 = require(1212) /* getSystemLocale */.intl;
-          obj8.title = intl2.string(require(1212) /* getSystemLocale */.t.J6rqB7);
-          obj8.hasIcons = true;
-          const items3 = [callback(require(15994) /* GameConsoleAccountButton */.LeaveActivitiesButton, {}), callback(require(15994) /* GameConsoleAccountButton */.ShareActivityLogsButton, {}), callback(require(15994) /* GameConsoleAccountButton */.ToggleShowActivitiesDebugOverlay, {})];
-          obj8.children = items3;
-          tmp47 = callback2(require(5536) /* TableRowGroupTitle */.TableRowGroup, obj8);
+        tmp7Result = null;
+        if (embeddedActivityLaunchability === tmp3(11137).EmbeddedActivityLaunchability.CAN_LAUNCH) {
+          const obj7 = { title: null, hasIcons: true, children: null };
+          const intl2 = tmp3(1236).intl;
+          obj7[0] = intl2.string(tmp3(1236).t.J6rqB7);
+          const items3 = [tmp12(tmp3(16029).LeaveActivitiesButton, {}), tmp12(tmp3(16029).ShareActivityLogsButton, {}), tmp12(tmp3(16029).ToggleShowActivitiesDebugOverlay, {})];
+          obj7[2] = items3;
+          tmp7Result = tmp7(tmp3(5554).TableRowGroup, obj7);
         }
       }
     }
-    items[6] = tmp47;
-    obj.children = items;
-    return callback2(tmp6, obj);
+    const obj8 = { spacing: 24, children: null };
+    items[6] = tmp7Result;
+    obj8[1] = items;
+    return tmp7(tmp8, obj8);
   } else {
-    const obj9 = { hasIcons: true };
-    const obj10 = { openTab };
-    const items4 = [callback(require(15994) /* GameConsoleAccountButton */.ActivitiesButton, obj10), ];
-    if (require(15892) /* apexExperiment */.MobileGoLiveEntrypointTreatment.SCREENSHARE_REPLACES_CHAT === treatment) {
-      const obj11 = { openTab };
-      let tmp16 = callback(require(15994) /* GameConsoleAccountButton */.ChatButton, obj11);
-      items4[1] = tmp16;
-      obj9.children = items4;
-      tmp7(require(5536) /* TableRowGroupTitle */.TableRowGroup, obj9);
-    } else if (require(15892) /* apexExperiment */.MobileGoLiveEntrypointTreatment.SCREENSHARE_REPLACES_SOUNDBOARD !== treatment) {
-      const obj12 = { channel };
-      tmp16 = callback(require(15994) /* GameConsoleAccountButton */.ScreenshareButton, obj12);
+    const obj9 = { openTab: null };
+    obj9[0] = openTab;
+    const items4 = [callback(tmp3(16029).ActivitiesButton, obj9), ];
+    if (tmp3(15927).MobileGoLiveEntrypointTreatment.SCREENSHARE_REPLACES_CHAT === treatment) {
+      const obj10 = { openTab: null };
+      obj10[0] = openTab;
+      let tmp9Result = tmp9(tmp3(16029).ChatButton, obj10);
+      const obj11 = { hasIcons: true, children: null };
+      items4[1] = tmp9Result;
+      obj11[1] = items4;
+      tmp7Result = tmp7(tmp3(5554).TableRowGroup, obj11);
+    } else if (tmp3(15927).MobileGoLiveEntrypointTreatment.SCREENSHARE_REPLACES_SOUNDBOARD !== treatment) {
+      const obj12 = { channel: null };
+      obj12[0] = channel;
+      tmp9Result = tmp9(tmp3(16029).ScreenshareButton, obj12);
     }
-    const obj13 = { channel };
-    tmp16 = callback(require(15994) /* GameConsoleAccountButton */.SoundboardButton, obj13);
-    tmp7 = callback2;
+    const obj13 = { channel: null };
+    obj13[0] = channel;
+    tmp9Result = tmp9(tmp3(16029).SoundboardButton, obj13);
   }
 });
-let closure_11 = { top: CONTROLS_DRAWER_HEADER_EXPANDED_SIZE };
-let closure_12 = { code: "function VoicePanelVoiceControlsTsx1({offset:offset}){const{isScrolled}=this.__closure;isScrolled.set(offset>0);}" };
+let closure_12 = { top: CONTROLS_DRAWER_HEADER_EXPANDED_SIZE };
+let closure_13 = { code: "function VoicePanelVoiceControlsTsx1({offset:offset}){const{isScrolled}=this.__closure;isScrolled.set(offset>0);}" };
 const memoResult = importAllResult.memo(function VoicePanelVoiceControls(isVisible) {
   let animatedProps;
   let onScroll;
   isVisible = isVisible.isVisible;
-  let tmp = callback3();
+  let channelId;
+  let sharedValue;
+  let gestureRef;
+  let scrollerRef;
+  let tmp = callback2();
   channelId = gestureRef.useContext(channelId(sharedValue[8])).channelId;
   let obj = isVisible(sharedValue[20]);
   const items = [scrollerRef];
@@ -137,13 +152,13 @@ const memoResult = importAllResult.memo(function VoicePanelVoiceControls(isVisib
   };
   fn.__closure = { isScrolled: sharedValue };
   fn.__workletHash = 16758626276795;
-  fn.__initData = closure_12;
+  fn.__initData = closure_13;
   const items1 = [sharedValue];
   const callback = gestureRef.useCallback(fn, items1);
-  const tmp5 = gestureRef.useContext(isVisible(sharedValue[21]).ControlsGestureScrollLock)({ onScrollHandlerWorkletized: callback });
-  gestureRef = tmp5.gestureRef;
-  scrollerRef = tmp5.scrollerRef;
-  ({ onScroll, animatedProps } = tmp5);
+  const tmp8 = gestureRef.useContext(isVisible(sharedValue[21]).ControlsGestureScrollLock)({ onScrollHandlerWorkletized: callback });
+  gestureRef = tmp8.gestureRef;
+  scrollerRef = tmp8.scrollerRef;
+  ({ onScroll, animatedProps } = tmp8);
   let obj2 = isVisible(sharedValue[22]);
   const isScreenReaderEnabled = obj2.useIsScreenReaderEnabled();
   const items2 = [isVisible, scrollerRef];
@@ -154,50 +169,53 @@ const memoResult = importAllResult.memo(function VoicePanelVoiceControls(isVisib
     }
     if (tmp) {
       const current = scrollerRef.current;
-      if (null != current) {
+      if (current != null) {
         current.scrollTo({ x: 0, y: 0, animated: false });
       }
     }
   }, items2);
   const items3 = [gestureRef];
-  obj = {};
   const memo = gestureRef.useMemo(() => {
     const Gesture = isVisible(sharedValue[23]).Gesture;
     const NativeResult = Gesture.Native();
     const enabledResult = NativeResult.enabled(!isVisible(sharedValue[24]).isMetaQuest());
     let result = enabledResult;
     if (null != gestureRef) {
-      result = enabledResult.simultaneousWithExternalGesture(gestureRef);
+      result = enabledResult.simultaneousWithExternalGesture(tmp);
     }
     return result;
   }, items3);
-  obj = { gesture: memo };
-  obj1 = { style: isScreenReaderEnabled ? tmp.scrollViewScreenReader : tmp.scrollView, ref: scrollerRef, onScroll, animatedProps, onMomentumScrollEnd: NOOP, scrollEventThrottle: 8.333333333333334, scrollIndicatorInsets: closure_11 };
-  let tmp13 = !isScreenReaderEnabled;
-  if (tmp13) {
-    obj2 = { style: tmp.blurRegion };
-    tmp13 = callback(channelId(sharedValue[25]), obj2);
+  obj = { gesture: memo, children: null };
+  obj = { style: isScreenReaderEnabled ? tmp.scrollViewScreenReader : tmp.scrollView, ref: scrollerRef, onScroll, animatedProps, onMomentumScrollEnd: NOOP, scrollEventThrottle: 8.333333333333334, scrollIndicatorInsets: closure_12, children: null };
+  let tmp14Result = !isScreenReaderEnabled;
+  if (!isScreenReaderEnabled) {
+    obj1 = { style: null };
+    obj1[0] = tmp.blurRegion;
+    tmp14Result = tmp14(tmp2(tmp3[25]), obj1);
   }
-  const items4 = [tmp13, , ];
-  let tmp17 = null != stateFromStores;
-  if (tmp17) {
-    const obj3 = { channel: stateFromStores, openTab: isVisible.openTab };
-    tmp17 = callback(closure_10, obj3);
+  const items4 = [tmp14Result, , ];
+  tmp14Result = null != stateFromStores;
+  if (tmp14Result) {
+    obj2 = { channel: null, openTab: null };
+    obj2[0] = stateFromStores;
+    obj2[1] = isVisible.openTab;
+    tmp14Result = tmp14(closure_10, obj2);
   }
-  items4[1] = tmp17;
-  items4[2] = callback(isVisible(sharedValue[26]).SafeAreaPaddingView, { bottom: true });
-  obj1.children = items4;
-  obj.children = closure_6(closure_9, obj1);
-  const items5 = [callback(isVisible(sharedValue[23]).GestureDetector, obj), ];
-  let tmp20 = !isScreenReaderEnabled;
-  if (tmp20) {
-    const obj4 = { shown: sharedValue, style: tmp.blurRegion };
-    tmp20 = callback(channelId(sharedValue[27]), obj4);
+  items4[1] = tmp14Result;
+  items4[2] = closure_5(isVisible(sharedValue[26]).SafeAreaPaddingView, { bottom: true });
+  obj[7] = items4;
+  obj[1] = closure_6(closure_9, obj);
+  const children = [closure_5(isVisible(sharedValue[23]).GestureDetector, obj), ];
+  let tmp14Result1 = !isScreenReaderEnabled;
+  if (!isScreenReaderEnabled) {
+    const obj3 = { shown: null, style: null };
+    obj3[0] = sharedValue;
+    obj3[1] = tmp.blurRegion;
+    tmp14Result1 = tmp14(tmp2(tmp3[27]), obj3);
   }
-  items5[1] = tmp20;
-  obj.children = items5;
-  return closure_6(closure_7, obj);
+  children[1] = tmp14Result1;
+  return closure_6(closure_7, { children });
 });
-let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/voice_panel/native/controls/VoicePanelVoiceControls.tsx");
+let result = require("ensureGuildLoaded").fileFinishedImporting("modules/voice_panel/native/controls/VoicePanelVoiceControls.tsx");
 
 export default memoResult;

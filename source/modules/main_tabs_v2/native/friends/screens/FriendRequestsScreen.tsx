@@ -1,103 +1,106 @@
-// Module ID: 15574
-// Function ID: 119676
+// Module ID: 15608
+// Function ID: 15609
 // Name: compareUserItems
-// Dependencies: [57, 31, 27, 5906, 3802, 1850, 8789, 653, 9036, 33, 4165, 689, 15575, 1935, 4507, 624, 5907, 3838, 15251, 5908, 21, 5497, 5517, 675, 12032, 5503, 15576, 636, 8335, 1212, 1456, 5536, 5198, 4161, 8200, 4697, 8731, 4695, 9892, 6763, 8796, 2]
+// Dependencies: [32, 19, 17, 5925, 3826, 1874, 8813, 676, 9060, 21, 4189, 712, 15609, 1959, 4530, 647, 5926, 3862, 15284, 5927, 11, 5515, 5535, 698, 12056, 5521, 15610, 659, 8359, 1236, 1480, 5554, 5220, 4185, 8224, 4719, 8755, 4717, 9914, 6785, 8820, 2]
 // Exports: default
 
-// Module 15574 (compareUserItems)
-import _slicedToArray from "_slicedToArray";
-import TableRowGroupTitle from "TableRowGroupTitle";
-import { View } from "isUndefinedOrNull";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_7 from "_isNativeReflectConstruct";
-import closure_8 from "_isNativeReflectConstruct";
+// Module 15608 (compareUserItems)
+import TableRowInner from "TableRowInner";
+import getRelativeTimestamp from "getRelativeTimestamp";
+import { View } from "explicitContentFromProto";
+import _validate from "_validate";
+import upsertRelationship from "upsertRelationship";
+import mergeGuildAvatar from "mergeGuildAvatar";
 import { UserRowModes } from "UserRowModes";
 import ME from "ME";
 import { MINIMUM_PENDING_INCOMING_COUNT_FOR_CLEAR_ALL as closure_13 } from "RELATIONSHIP_COUNT_ANIMATION_THRESHOLD";
-import jsxProd from "Text";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import jsxProd from "context";
+import createCacheKey from "createCacheKey";
 
-let closure_10;
-let closure_11;
+let c10;
 let closure_12;
 let closure_14;
 let closure_15;
+let unpackModuleId;
 const require = arg1;
 function compareUserItems(user, user2) {
   if (user.user.id === user2.user.id) {
-    let compareResult = importDefault(21).compare(user.applicationId, user2.applicationId);
-    const obj2 = importDefault(21);
+    let compareResult = importDefault(11).compare(user.applicationId, user2.applicationId);
+    const obj2 = importDefault(11);
   } else {
-    compareResult = importDefault(21).compare(user.user.id, user2.user.id);
-    const obj = importDefault(21);
+    compareResult = importDefault(11).compare(user.user.id, user2.user.id);
+    const obj = importDefault(11);
   }
   return compareResult;
 }
-({ AnalyticEvents: closure_10, AnalyticsSections: closure_11, RelationshipTypes: closure_12 } = ME);
+({ AnalyticEvents: c10, AnalyticsSections: unpackModuleId, RelationshipTypes: closure_12 } = ME);
 ({ jsx: closure_14, jsxs: closure_15 } = jsxProd);
 let closure_16 = { Incoming: 0, [0]: "Incoming", Outgoing: 1, [1]: "Outgoing" };
-_createForOfIteratorHelperLoose = { container: { flex: 1 } };
-_createForOfIteratorHelperLoose = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWER, flex: 1 };
-_createForOfIteratorHelperLoose.noResultsContainer = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.clearAllContainer = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWER, paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16, paddingBottom: require("_createForOfIteratorHelperLoose").space.PX_16, justifyContent: "flex-end", flexDirection: "row" };
-let obj1 = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWER, paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16, paddingBottom: require("_createForOfIteratorHelperLoose").space.PX_16, justifyContent: "flex-end", flexDirection: "row" };
-_createForOfIteratorHelperLoose.clearAll = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.INPUT_BACKGROUND_DEFAULT, borderColor: require("_createForOfIteratorHelperLoose").colors.INPUT_BACKGROUND_DEFAULT, paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16, minWidth: 2 * require("_createForOfIteratorHelperLoose").space.PX_64, borderRadius: require("_createForOfIteratorHelperLoose").radii.round, alignItems: "center", paddingVertical: 5, borderWidth: 3 };
-let obj2 = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.INPUT_BACKGROUND_DEFAULT, borderColor: require("_createForOfIteratorHelperLoose").colors.INPUT_BACKGROUND_DEFAULT, paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16, minWidth: 2 * require("_createForOfIteratorHelperLoose").space.PX_64, borderRadius: require("_createForOfIteratorHelperLoose").radii.round, alignItems: "center", paddingVertical: 5, borderWidth: 3 };
-_createForOfIteratorHelperLoose.tabs = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWER, paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16, paddingBottom: require("_createForOfIteratorHelperLoose").space.PX_16, paddingTop: require("_createForOfIteratorHelperLoose").space.PX_8 };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-let obj3 = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWER, paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16, paddingBottom: require("_createForOfIteratorHelperLoose").space.PX_16, paddingTop: require("_createForOfIteratorHelperLoose").space.PX_8 };
+createCacheKey = { container: { flex: 1 }, noResultsContainer: null, clearAllContainer: null, clearAll: null, tabs: null };
+createCacheKey = { backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOWER, flex: 1 };
+createCacheKey[1] = createCacheKey;
+createCacheKey[2] = { backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOWER, paddingHorizontal: require("Themes").space.PX_16, paddingBottom: require("Themes").space.PX_16, justifyContent: "flex-end", flexDirection: "row" };
+let obj1 = { backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOWER, paddingHorizontal: require("Themes").space.PX_16, paddingBottom: require("Themes").space.PX_16, justifyContent: "flex-end", flexDirection: "row" };
+createCacheKey[3] = { backgroundColor: require("Themes").colors.INPUT_BACKGROUND_DEFAULT, borderColor: require("Themes").colors.INPUT_BACKGROUND_DEFAULT, paddingHorizontal: require("Themes").space.PX_16, minWidth: 2 * require("Themes").space.PX_64, borderRadius: require("Themes").radii.round, alignItems: "center", paddingVertical: 5, borderWidth: 3 };
+let obj2 = { backgroundColor: require("Themes").colors.INPUT_BACKGROUND_DEFAULT, borderColor: require("Themes").colors.INPUT_BACKGROUND_DEFAULT, paddingHorizontal: require("Themes").space.PX_16, minWidth: 2 * require("Themes").space.PX_64, borderRadius: require("Themes").radii.round, alignItems: "center", paddingVertical: 5, borderWidth: 3 };
+createCacheKey[4] = { backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOWER, paddingHorizontal: require("Themes").space.PX_16, paddingBottom: require("Themes").space.PX_16, paddingTop: require("Themes").space.PX_8 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let obj3 = { backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOWER, paddingHorizontal: require("Themes").space.PX_16, paddingBottom: require("Themes").space.PX_16, paddingTop: require("Themes").space.PX_8 };
 let result = require("get ActivityIndicator").fileFinishedImporting("modules/main_tabs_v2/native/friends/screens/FriendRequestsScreen.tsx");
 
 export default function FriendRequestsScreen() {
   let incomingSection;
   let outgoingSection;
   let tmp = callback();
-  const analyticsLocations = first(5497)(first(5517).FRIEND_REQUESTS).analyticsLocations;
-  (function useNotificationCenterAckFriendRequests() {
-    const items = [pendingOutgoingIds];
-    const stateFromStoresArray = analyticsLocations(tmp7[15]).useStateFromStoresArray(items, () => {
-      const localItems = pendingOutgoingIds.localItems;
-      return localItems.filter((type) => {
-        let tmp = type.type === analyticsLocations(5907).NotificationCenterLocalItems.INCOMING_FRIEND_REQUESTS;
-        if (!tmp) {
-          tmp = type.type === analyticsLocations(5907).NotificationCenterLocalItems.INCOMING_GAME_FRIEND_REQUESTS;
-        }
-        return tmp;
-      });
-    });
-    const NotificationCenterAckedBeforeId = analyticsLocations(tmp7[17]).NotificationCenterAckedBeforeId;
-    const setting = NotificationCenterAckedBeforeId.useSetting();
-    const items1 = [stateFromStoresArray, setting];
-    const effect = gameRelationshipsByType1.useEffect(() => {
-      if (stateFromStoresArray.length > 0) {
-        const mapped = stateFromStoresArray.map((local_id) => local_id.local_id);
-        const _Boolean = Boolean;
-        const found = mapped.filter(Boolean);
-        const result = analyticsLocations(15251).markNotificationCenterLocalItemsAcked(found);
-        const obj = analyticsLocations(15251);
-        const result1 = analyticsLocations(15251).bulkMarkNotificationCenterItemsAcked(stateFromStoresArray.filter((addResult) => !analyticsLocations(table[19]).isRemoteAcked(addResult, outer1_1)));
-        const obj2 = analyticsLocations(15251);
+  let WumpusCouchSpotIllustration = dependencyMap;
+  const analyticsLocations = first(5515)(first(5535).FRIEND_REQUESTS).analyticsLocations;
+  let stateFromStoresArray;
+  first = undefined;
+  let obj = stateFromStoresArray(647);
+  let items = [pendingOutgoingIds];
+  stateFromStoresArray = obj.useStateFromStoresArray(items, () => {
+    const localItems = pendingOutgoingIds.localItems;
+    return localItems.filter((type) => {
+      let tmp3 = type.type === callback(table[16]).NotificationCenterLocalItems.INCOMING_FRIEND_REQUESTS;
+      if (!tmp3) {
+        tmp3 = type.type === callback(table[16]).NotificationCenterLocalItems.INCOMING_GAME_FRIEND_REQUESTS;
       }
-    }, items1);
-  })();
-  let effect = gameRelationshipsByType1.useEffect(() => {
-    let obj = first(tmp7[23]);
+      return tmp3;
+    });
+  });
+  const NotificationCenterAckedBeforeId = stateFromStoresArray(3862).NotificationCenterAckedBeforeId;
+  const setting = NotificationCenterAckedBeforeId.useSetting();
+  first = setting;
+  let items1 = [stateFromStoresArray, setting];
+  const effect = gameRelationshipsByType1.useEffect(() => {
+    if (stateFromStoresArray.length > 0) {
+      const mapped = arr.map((local_id) => local_id.local_id);
+      const _Boolean = Boolean;
+      const found = mapped.filter(Boolean);
+      const result = stateFromStoresArray(tmp11[18]).markNotificationCenterLocalItemsAcked(found);
+      const obj = stateFromStoresArray(tmp11[18]);
+      const result1 = stateFromStoresArray(tmp11[18]).bulkMarkNotificationCenterItemsAcked(arr.filter((addResult) => !outer1_0(outer1_2[19]).isRemoteAcked(addResult, closure_1)));
+      const obj2 = stateFromStoresArray(tmp11[18]);
+    }
+  }, items1);
+  const effect1 = gameRelationshipsByType1.useEffect(() => {
+    let obj = first(tmp11[23]);
     obj = { friend_add_type: spam.FRIENDS_REQUESTS_MODAL };
     obj.track(outgoing.FRIEND_ADD_VIEWED, obj);
   }, []);
-  let obj = analyticsLocations(624);
-  let items = [spamIds];
-  const tmp5 = gameRelationshipsByType(obj.useStateFromStoresArray(items, () => {
+  let obj1 = stateFromStoresArray(647);
+  const items2 = [spamIds];
+  const tmp9 = gameRelationshipsByType(obj1.useStateFromStoresArray(items2, () => {
     const items = [spamIds.getMutableRelationships(), spamIds.getVersion()];
     return items;
   }), 2);
-  first = tmp5[0];
-  const dependencyMap = tmp7;
-  let obj1 = analyticsLocations(12032);
-  gameRelationshipsByType = obj1.useGameRelationshipsByType(ignoredUsers.PENDING_INCOMING);
-  let obj2 = analyticsLocations(12032);
-  gameRelationshipsByType1 = obj2.useGameRelationshipsByType(ignoredUsers.PENDING_OUTGOING);
-  let items1 = [gameRelationshipsByType, gameRelationshipsByType1];
+  first = tmp9[0];
+  dependencyMap = tmp11;
+  let obj2 = stateFromStoresArray(12056);
+  gameRelationshipsByType = obj2.useGameRelationshipsByType(ignoredUsers.PENDING_INCOMING);
+  let obj3 = stateFromStoresArray(12056);
+  gameRelationshipsByType1 = obj3.useGameRelationshipsByType(ignoredUsers.PENDING_OUTGOING);
+  const items3 = [gameRelationshipsByType, gameRelationshipsByType1];
   const memo = gameRelationshipsByType1.useMemo(() => {
     const set = new Set();
     const item = gameRelationshipsByType.forEach((applicationId) => {
@@ -107,44 +110,44 @@ export default function FriendRequestsScreen() {
       set.add(applicationId.applicationId);
     });
     return Array.from(set);
-  }, items1);
-  first(5503)(memo);
-  const items2 = [first, tmp5[1]];
-  const memo1 = gameRelationshipsByType1.useMemo(() => analyticsLocations(tmp7[26]).getPendingRelationshipIds(first, tmp7), items2);
+  }, items3);
+  first(5521)(memo);
+  const items4 = [first, tmp9[1]];
+  const memo1 = gameRelationshipsByType1.useMemo(() => stateFromStoresArray(tmp11[26]).getPendingRelationshipIds(first, tmp11), items4);
   const pendingIncomingIds = memo1.pendingIncomingIds;
-  const pendingOutgoingIds = memo1.pendingOutgoingIds;
+  pendingOutgoingIds = memo1.pendingOutgoingIds;
   spamIds = memo1.spamIds;
   const ignoredUserIds = memo1.ignoredUserIds;
-  let obj3 = analyticsLocations(624);
-  const items3 = [ignoredUserIds];
-  const items4 = [ignoredUserIds, gameRelationshipsByType, gameRelationshipsByType1, pendingIncomingIds, pendingOutgoingIds, spamIds];
-  const stateFromStores = obj3.useStateFromStores(items3, () => {
-    const mapped = pendingIncomingIds.map((arg0) => ({ user: ignoredUserIds.getUser(arg0), isGameRelationship: false }));
+  let obj4 = stateFromStoresArray(647);
+  const items5 = [ignoredUserIds];
+  const items6 = [ignoredUserIds, gameRelationshipsByType, gameRelationshipsByType1, pendingIncomingIds, pendingOutgoingIds, spamIds];
+  const stateFromStores = obj4.useStateFromStores(items5, () => {
+    const mapped = pendingIncomingIds.map((arg0) => ({ user: authStore.getUser(arg0), isGameRelationship: false }));
     const found = mapped.filter((user) => null != user.user);
-    const mapped1 = gameRelationshipsByType.map((applicationId) => ({ user: ignoredUserIds.getUser(applicationId.id), isGameRelationship: true, applicationId: applicationId.applicationId }));
+    const mapped1 = gameRelationshipsByType.map((applicationId) => ({ user: authStore.getUser(applicationId.id), isGameRelationship: true, applicationId: applicationId.applicationId }));
     const found1 = mapped1.filter((user) => null != user.user);
-    const mapped2 = pendingOutgoingIds.map((arg0) => ({ user: ignoredUserIds.getUser(arg0), isGameRelationship: false }));
+    const mapped2 = pendingOutgoingIds.map((arg0) => ({ user: authStore.getUser(arg0), isGameRelationship: false }));
     const found2 = mapped2.filter((user) => null != user.user);
-    const mapped3 = gameRelationshipsByType1.map((applicationId) => ({ user: ignoredUserIds.getUser(applicationId.id), isGameRelationship: true, applicationId: applicationId.applicationId }));
+    const mapped3 = gameRelationshipsByType1.map((applicationId) => ({ user: authStore.getUser(applicationId.id), isGameRelationship: true, applicationId: applicationId.applicationId }));
     const found3 = mapped3.filter((user) => null != user.user);
-    const obj = {};
+    const obj = { incoming: null, outgoing: null, spam: null, ignoredUsers: null };
     const items = [...found1];
-    obj.incoming = items.sort(navigation);
+    obj[0] = items.sort(navigation);
     const items1 = [...found3];
-    obj.outgoing = items1.sort(navigation);
-    const mapped4 = spamIds.map((arg0) => ({ user: ignoredUserIds.getUser(arg0) }));
-    obj.spam = mapped4.filter((user) => null != user.user);
-    const mapped5 = ignoredUserIds.map((arg0) => ({ user: ignoredUserIds.getUser(arg0) }));
-    obj.ignoredUsers = mapped5.filter((user) => null != user.user);
+    obj[1] = items1.sort(navigation);
+    const mapped4 = spamIds.map((arg0) => ({ user: authStore.getUser(arg0) }));
+    obj[2] = mapped4.filter((user) => null != user.user);
+    const mapped5 = ignoredUserIds.map((arg0) => ({ user: authStore.getUser(arg0) }));
+    obj[3] = mapped5.filter((user) => null != user.user);
     return obj;
-  }, items4, first(636));
+  }, items6, first(659));
   const incoming = stateFromStores.incoming;
   const outgoing = stateFromStores.outgoing;
   const spam = stateFromStores.spam;
   ignoredUsers = stateFromStores.ignoredUsers;
-  const items5 = [ignoredUsers, incoming, outgoing, spam];
+  const items7 = [ignoredUsers, incoming, outgoing, spam];
   const memo2 = gameRelationshipsByType1.useMemo(() => {
-    obj = { incomingData: obj };
+    obj = { incomingData: obj, incomingSection: null, outgoingData: null, outgoingSection: null };
     obj = { items: incoming, relationship: ignoredUsers.PENDING_INCOMING };
     const items = [incoming.length, ];
     let num = 0;
@@ -152,17 +155,17 @@ export default function FriendRequestsScreen() {
       num = 1;
     }
     items[1] = num;
-    obj.incomingSection = items;
+    obj[1] = items;
     obj = { items: outgoing, relationship: ignoredUsers.PENDING_OUTGOING };
-    obj.outgoingData = obj;
+    obj[2] = obj;
     const items1 = [outgoing.length];
-    obj.outgoingSection = items1;
+    obj[3] = items1;
     return obj;
-  }, items5);
+  }, items7);
   const incomingData = memo2.incomingData;
   const outgoingData = memo2.outgoingData;
   ({ outgoingSection, incomingSection } = memo2);
-  const tmp15 = gameRelationshipsByType(gameRelationshipsByType1.useState(() => {
+  const tmp19 = gameRelationshipsByType(gameRelationshipsByType1.useState(() => {
     if (0 === incoming.length) {
       if (outgoing.length > 0) {
         let Incoming = closure_16.Outgoing;
@@ -171,90 +174,99 @@ export default function FriendRequestsScreen() {
     }
     Incoming = closure_16.Incoming;
   }), 2);
-  const first1 = tmp15[0];
-  let closure_16 = tmp15[1];
-  const items6 = [analyticsLocations];
+  const first1 = tmp19[0];
+  let Outgoing = tmp19[1];
+  const items8 = [analyticsLocations];
   callback = gameRelationshipsByType1.useCallback((id) => {
-    first(tmp7[28])({ userId: id.id, localUser: id, sourceAnalyticsLocations: analyticsLocations });
-  }, items6);
+    first(tmp11[28])({ userId: id.id, localUser: id, sourceAnalyticsLocations: stateFromStoresArray });
+  }, items8);
   const callback1 = gameRelationshipsByType1.useCallback((arg0) => {
     if (1 === arg0) {
-      let obj = { type: "section" };
-      obj = {};
-      const intl = analyticsLocations(tmp7[29]).intl;
-      obj.title = intl.string(analyticsLocations(tmp7[29]).t["NHpP/k"]);
-      obj.props = obj;
+      let obj = { type: "section", props: null };
+      obj = { title: null };
+      const intl = stateFromStoresArray(tmp11[29]).intl;
+      obj[0] = intl.string(stateFromStoresArray(tmp11[29]).t["NHpP/k"]);
+      obj[1] = obj;
       return obj;
     }
   }, []);
-  let obj4 = analyticsLocations(1456);
-  const navigation = obj4.useNavigation();
-  const items7 = [first1, incomingData, outgoingData, callback, spam.length, ignoredUsers.length, navigation];
-  let tmp21 = first1 === closure_16.Outgoing;
+  let obj5 = stateFromStoresArray(1480);
+  const navigation = obj5.useNavigation();
+  const items9 = [first1, incomingData, outgoingData, callback, spam.length, ignoredUsers.length, navigation];
+  let tmp26 = first1 === Outgoing.Outgoing;
   const callback2 = gameRelationshipsByType1.useCallback((arg0, arg1) => {
     if (1 === arg0) {
-      let obj = {
-        type: "custom",
-        component() {
-            let obj = { hasIcons: false };
-            let tmp2 = null;
-            if (outer1_11.length > 0) {
-              obj = {
-                onPress() {
-                    outer2_18.navigate("friends", { screen: "spam-requests" });
-                  }
-              };
-              const intl = analyticsLocations(1212).intl;
-              obj.label = intl.string(analyticsLocations(1212).t.fUQoqD);
-              obj = { variant: "text-sm/medium", color: "text-muted", children: outer1_11.length };
-              obj.trailing = outgoingData(analyticsLocations(4161).Text, obj);
-              obj.arrow = true;
-              tmp2 = outgoingData(analyticsLocations(5198).TableRow, obj);
-            }
-            const items = [tmp2, ];
-            let tmp7 = null;
-            if (outer1_12.length > 0) {
-              const obj1 = {
-                onPress() {
-                    outer2_18.navigate("friends", { screen: "ignored-user-requests" });
-                  }
-              };
-              const intl2 = analyticsLocations(1212).intl;
-              obj1.label = intl2.string(analyticsLocations(1212).t.en1Gkz);
-              const obj2 = { variant: "text-sm/medium", color: "text-muted", children: outer1_12.length };
-              obj1.trailing = outgoingData(analyticsLocations(4161).Text, obj2);
-              obj1.arrow = true;
-              tmp7 = outgoingData(analyticsLocations(5198).TableRow, obj1);
-            }
-            items[1] = tmp7;
-            obj.children = items;
-            return first1(analyticsLocations(5536).TableRowGroup, obj);
-          },
-        key: "spamRequests",
-        itemType: "spamRequests"
+      let obj = { type: "custom", component: null, key: "spamRequests", itemType: "spamRequests" };
+      obj[1] = function component() {
+        let tmp4 = null;
+        if (length.length > 0) {
+          let obj = { onPress: null, label: null, trailing: null, arrow: true };
+          obj[0] = function onPress() {
+            navigation.navigate("friends", { screen: "spam-requests" });
+          };
+          const intl = tmp2(tmp3[29]).intl;
+          obj[1] = intl.string(tmp2(tmp3[29]).t.fUQoqD);
+          obj = { variant: "text-sm/medium", color: "text-muted", children: null };
+          obj[2] = arr.length;
+          obj[2] = outer1_14(tmp2(tmp3[33]).Text, obj);
+          tmp4 = outer1_14(tmp2(tmp3[32]).TableRow, obj);
+        }
+        const children = [tmp4, ];
+        let tmp6 = null;
+        if (length2.length > 0) {
+          obj = { onPress: null, label: null, trailing: null, arrow: true };
+          obj[0] = function onPress() {
+            navigation.navigate("friends", { screen: "ignored-user-requests" });
+          };
+          const intl2 = tmp2(tmp3[29]).intl;
+          obj[1] = intl2.string(tmp2(tmp3[29]).t.en1Gkz);
+          const obj1 = { variant: "text-sm/medium", color: "text-muted", children: null };
+          obj1[2] = arr3.length;
+          obj[2] = outer1_14(tmp2(tmp3[33]).Text, obj1);
+          tmp6 = outer1_14(tmp2(tmp3[32]).TableRow, obj);
+        }
+        children[1] = tmp6;
+        return outer1_15(outer1_0(outer1_2[31]).TableRowGroup, { hasIcons: false, children });
       };
       return obj;
     } else {
       const tmp = first1 === closure_16.Incoming ? incomingData : outgoingData;
-      let items = tmp.items;
-      obj = { type: "user" };
-      obj = { type: tmp.relationship, user: items[arg1].user, onPress: callback, mode: incoming.ACTIONS, start: 0 === arg1, end: arg1 === items.length - 1, applicationId: items[arg1].applicationId, isGameRelationship: items[arg1].isGameRelationship };
-      obj.props = obj;
+      const items = tmp.items;
+      obj = { type: "user", props: null };
+      obj = { type: null, user: null, onPress: null, mode: null, start: null, end: null, applicationId: null, isGameRelationship: null };
+      obj[0] = tmp.relationship;
+      obj[1] = items[arg1].user;
+      obj[2] = callback;
+      obj[3] = incoming.ACTIONS;
+      obj[4] = 0 === arg1;
+      obj[5] = arg1 === items.length - 1;
+      obj[6] = items[arg1].applicationId;
+      obj[7] = items[arg1].isGameRelationship;
+      obj[1] = obj;
       return obj;
     }
-  }, items7);
-  if (tmp21) {
-    tmp21 = 0 === outgoing.length;
+  }, items9);
+  if (tmp26) {
+    tmp26 = 0 === outgoing.length;
   }
-  if (!tmp21) {
-    tmp21 = first1 === closure_16.Incoming && 0 === incoming.length && 0 === spam.length && 0 === ignoredUserIds.length;
-    const tmp23 = first1 === closure_16.Incoming && 0 === incoming.length && 0 === spam.length && 0 === ignoredUserIds.length;
+  if (!tmp26) {
+    let tmp27 = first1 === tmp25.Incoming;
+    if (tmp27) {
+      tmp27 = 0 === incoming.length;
+    }
+    if (tmp27) {
+      tmp27 = 0 === spam.length;
+    }
+    if (tmp27) {
+      tmp27 = 0 === ignoredUserIds.length;
+    }
+    tmp26 = tmp27;
   }
-  let tmp24 = first1 === closure_16.Incoming;
-  if (tmp24) {
-    tmp24 = incoming.length >= incomingData;
+  let tmp28 = first1 === tmp25.Incoming;
+  if (tmp28) {
+    tmp28 = incoming.length >= incomingData;
   }
-  let obj5 = analyticsLocations(8200);
+  let tmp3 = first(5515);
   obj = {
     pageWidth: 0,
     defaultIndex: first1,
@@ -265,76 +277,71 @@ export default function FriendRequestsScreen() {
         Outgoing = closure_16.Outgoing;
       }
       closure_16(Outgoing);
-    }
+    },
+    items: null
   };
-  obj = { id: str.toString() };
-  let intl = analyticsLocations(1212).intl;
-  obj.label = intl.string(analyticsLocations(1212).t.bekioP);
-  let tmp26 = null;
-  obj.page = null;
-  const items8 = [obj, ];
-  obj1 = { id: str2.toString() };
-  let intl2 = analyticsLocations(1212).intl;
-  obj1.label = intl2.string(analyticsLocations(1212).t.tWqcIF);
-  obj1.page = null;
-  items8[1] = obj1;
-  obj.items = items8;
-  const segmentedControlState = obj5.useSegmentedControlState(obj);
-  obj2 = { value: analyticsLocations };
-  const items9 = [outgoingData(first(4697), { absolute: true }), ];
-  obj3 = { style: tmp.container };
-  obj4 = { style: tmp.tabs, children: outgoingData(analyticsLocations(8731).SegmentedControl, { state: segmentedControlState }) };
-  const items10 = [outgoingData(pendingIncomingIds, obj4), , ];
-  if (tmp24) {
-    obj5 = { style: tmp.clearAllContainer };
-    const obj6 = {
-      style: tmp.clearAll,
-      onPress() {
-          (function handleClearAllIncomingRequests(length) {
-            let obj = analyticsLocations(table[14]);
-            obj = { incomingRequestCount: length };
-            obj.openAlert("clear-all-incoming-requests", outgoingData(gameRelationshipsByType1.lazy(() => analyticsLocations(paths[13])(paths[12], paths.paths)), obj));
-          })(incoming.length);
-        }
+  obj = { id: str.toString(), label: null, page: null };
+  let intl = tmp4(1236).intl;
+  obj[1] = intl.string(stateFromStoresArray(1236).t.bekioP);
+  const items10 = [obj, ];
+  obj1 = { id: str2.toString(), label: null, page: null };
+  let intl2 = tmp4(1236).intl;
+  obj1[1] = intl2.string(stateFromStoresArray(1236).t.tWqcIF);
+  items10[1] = obj1;
+  obj[3] = items10;
+  const segmentedControlState = stateFromStoresArray(8224).useSegmentedControlState(obj);
+  obj2 = { value: analyticsLocations, children: null };
+  const items11 = [outgoingData(first(4719), { absolute: true }), ];
+  obj3 = { style: tmp.container, children: null };
+  obj4 = { style: tmp.tabs, children: outgoingData(tmp4(8755).SegmentedControl, { state: segmentedControlState }) };
+  const items12 = [outgoingData(pendingIncomingIds, obj4), , ];
+  let tmp32Result = null;
+  if (tmp28) {
+    obj5 = { style: null, children: null };
+    obj5[0] = tmp.clearAllContainer;
+    const obj6 = { style: null, onPress: null, children: null };
+    obj6[0] = tmp.clearAll;
+    obj6[1] = function onPress() {
+      const lazyResult = gameRelationshipsByType1.lazy(() => callback(paths[13])(paths[12], paths.paths));
+      stateFromStoresArray(tmp11[14]).openAlert("clear-all-incoming-requests", outgoingData(lazyResult, { incomingRequestCount: incoming.length }));
     };
-    const obj7 = { variant: "text-sm/semibold", color: "text-brand" };
-    const intl3 = analyticsLocations(1212).intl;
-    obj7.children = intl3.string(analyticsLocations(1212).t.O8k7O4);
-    obj6.children = outgoingData(analyticsLocations(4161).Text, obj7);
-    obj5.children = outgoingData(analyticsLocations(4695).PressableOpacity, obj6);
-    tmp26 = outgoingData(pendingIncomingIds, obj5);
+    const obj7 = { variant: "text-sm/semibold", color: "text-brand", children: null };
+    const intl3 = tmp4(1236).intl;
+    obj7[2] = intl3.string(tmp4(1236).t.O8k7O4);
+    obj6[2] = tmp32(tmp4(4185).Text, obj7);
+    obj5[1] = tmp32(tmp4(4717).PressableOpacity, obj6);
+    tmp32Result = tmp32(tmp33, obj5);
   }
-  items10[1] = tmp26;
-  if (tmp21) {
-    const obj8 = { style: tmp.noResultsContainer };
-    let obj9 = {};
-    if (first1 === closure_16.Incoming) {
-      const intl5 = analyticsLocations(1212).intl;
-      let stringResult = intl5.string(analyticsLocations(1212).t["7uvAKe"]);
+  items12[1] = tmp32Result;
+  if (tmp26) {
+    const obj8 = { style: null, children: null };
+    obj8[0] = tmp.noResultsContainer;
+    if (first1 === tmp25.Incoming) {
+      const intl5 = tmp4(1236).intl;
+      let stringResult = intl5.string(tmp4(1236).t["7uvAKe"]);
     } else {
-      const intl4 = analyticsLocations(1212).intl;
-      stringResult = intl4.string(analyticsLocations(1212).t["yvzX/Z"]);
+      const intl4 = tmp4(1236).intl;
+      stringResult = intl4.string(tmp4(1236).t["yvzX/Z"]);
     }
-    obj9.title = stringResult;
-    obj9.illustration = analyticsLocations(6763).WumpusCouchSpotIllustration;
-    obj9.disableBackgroundOverlay = true;
-    obj9 = tmp34(first(9892), obj9);
-    obj8.children = obj9;
-    tmp34(pendingIncomingIds, obj8);
-    const tmp38 = pendingIncomingIds;
-    const tmp41 = first(9892);
+    const obj9 = { title: null, illustration: null, disableBackgroundOverlay: true };
+    obj9[0] = stringResult;
+    WumpusCouchSpotIllustration = tmp4(6785).WumpusCouchSpotIllustration;
+    obj9[1] = WumpusCouchSpotIllustration;
+    obj8[1] = tmp32(tmp2(9914), obj9);
+    tmp32Result = tmp32(tmp33, obj8);
+    const tmp2Result = tmp2(9914);
   } else {
-    const obj10 = {};
-    if (first1 === closure_16.Incoming) {
+    if (first1 === tmp25.Incoming) {
       outgoingSection = incomingSection;
     }
-    obj10.sections = outgoingSection;
-    obj10.getItemProps = callback2;
-    obj10.getSectionProps = callback1;
-    items10[2] = tmp34(analyticsLocations(8796).UsersFastList, obj10);
-    obj3.children = items10;
-    items9[1] = tmp28(pendingIncomingIds, obj3);
-    obj2.children = items9;
-    return tmp28(analyticsLocations(5497).AnalyticsLocationProvider, obj2);
+    const obj10 = { sections: null, getItemProps: null, getSectionProps: null };
+    obj10[0] = outgoingSection;
+    obj10[1] = callback2;
+    obj10[2] = callback1;
+    items12[2] = tmp32(tmp4(8820).UsersFastList, obj10);
+    obj3[1] = items12;
+    items11[1] = tmp31(tmp33, obj3);
+    obj2[1] = items11;
+    return tmp31(tmp4(5515).AnalyticsLocationProvider, obj2);
   }
 };

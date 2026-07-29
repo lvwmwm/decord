@@ -1,17 +1,17 @@
-// Module ID: 5120
-// Function ID: 44410
+// Module ID: 5142
+// Function ID: 5143
 // Name: __INTERNAL_VIEW_CONFIG
-// Dependencies: [110, 42, 2]
+// Dependencies: [106, 65, 2]
 
-// Module 5120 (__INTERNAL_VIEW_CONFIG)
+// Module 5142 (__INTERNAL_VIEW_CONFIG)
 import weakSet from "weakSet";
-import get from "get";
+import setRuntimeConfigProvider from "setRuntimeConfigProvider";
 
-let obj = { uiViewClassName: "DCDFastImageView", directEventTypes: { topLoadStart: { registrationName: "onLoadStart" }, topProgress: { registrationName: "onProgress" }, topError: { registrationName: "onError" }, topLoad: { registrationName: "onLoad" }, topLoadEnd: { registrationName: "onLoadEnd" } } };
+let obj = { uiViewClassName: "DCDFastImageView", directEventTypes: { topLoadStart: { registrationName: "onLoadStart" }, topProgress: { registrationName: "onProgress" }, topError: { registrationName: "onError" }, topLoad: { registrationName: "onLoad" }, topLoadEnd: { registrationName: "onLoadEnd" } }, validAttributes: null };
 obj = { source: true, resizeMode: true, placeholder: true, enableAnimation: true, paused: true, manualPlayback: true, fade: true, usesSmallCache: true };
 const merged = Object.assign(weakSet.ConditionallyIgnoredEventHandlers({ onLoadStart: true, onProgress: true, onError: true, onLoad: true, onLoadEnd: true }));
-obj.validAttributes = obj;
-const value = get.get("DCDFastImageView", () => obj);
+obj[2] = obj;
+const value = setRuntimeConfigProvider.get("DCDFastImageView", () => obj);
 const result = require("set").fileFinishedImporting("../discord_common/js/packages/rtn-codegen/js/FastImageNativeComponent.tsx");
 
 export default value;

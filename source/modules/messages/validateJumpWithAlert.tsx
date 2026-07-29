@@ -1,77 +1,82 @@
-// Module ID: 9921
-// Function ID: 76687
+// Module ID: 9943
+// Function ID: 9944
 // Name: validateJumpWithAlert
-// Dependencies: [1348, 3793, 3802, 653, 4505, 1212, 5745, 2]
+// Dependencies: [1372, 3817, 3826, 676, 4528, 1236, 5763, 2]
 // Exports: default
 
-// Module 9921 (validateJumpWithAlert)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_4 from "_isNativeReflectConstruct";
-import closure_5 from "_isNativeReflectConstruct";
+// Module 9943 (validateJumpWithAlert)
+import ensureGuildLoaded from "ensureGuildLoaded";
+import getUncachedChannelPermissions from "getUncachedChannelPermissions";
+import upsertRelationship from "upsertRelationship";
 import { Permissions } from "ME";
 
 const require = arg1;
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/messages/validateJumpWithAlert.tsx");
+const result = require("upsertRelationship").fileFinishedImporting("modules/messages/validateJumpWithAlert.tsx");
 
-export default function validateJumpWithAlert(author, onConfirm) {
-  if (closure_5.isBlockedForMessage(author)) {
-    let obj = {};
-    const intl11 = require(1212) /* getSystemLocale */.intl;
-    obj.title = intl11.string(require(1212) /* getSystemLocale */.t["j7eA/g"]);
-    const intl12 = require(1212) /* getSystemLocale */.intl;
-    obj = { name: author.author.username };
-    obj.body = intl12.formatToPlainString(require(1212) /* getSystemLocale */.t.dTNNgr, obj);
-    const intl13 = require(1212) /* getSystemLocale */.intl;
-    obj.confirmText = intl13.string(require(1212) /* getSystemLocale */.t.BddRzS);
-    importDefault(4505).show(obj);
+export default function validateJumpWithAlert(author) {
+  let obj = blockedForMessage;
+  if (blockedForMessage.isBlockedForMessage(author)) {
+    obj = { title: null, body: null, confirmText: null };
+    const intl11 = require(1236) /* getSystemLocale */.intl;
+    obj[0] = intl11.string(require(1236) /* getSystemLocale */.t["j7eA/g"]);
+    const intl12 = require(1236) /* getSystemLocale */.intl;
+    obj = { name: null };
+    obj[0] = author.author.username;
+    obj[1] = intl12.formatToPlainString(require(1236) /* getSystemLocale */.t.dTNNgr, obj);
+    const intl13 = require(1236) /* getSystemLocale */.intl;
+    obj[2] = intl13.string(require(1236) /* getSystemLocale */.t.BddRzS);
+    importDefault(4528).show(obj);
     return false;
-  } else if (closure_5.isIgnoredForMessage(author)) {
-    const obj1 = {};
-    const intl8 = require(1212) /* getSystemLocale */.intl;
-    obj1.title = intl8.string(require(1212) /* getSystemLocale */.t.XyWoKV);
-    const intl9 = require(1212) /* getSystemLocale */.intl;
-    let obj2 = { name: author.author.username };
-    obj1.body = intl9.formatToPlainString(require(1212) /* getSystemLocale */.t["8t8doK"], obj2);
-    const intl10 = require(1212) /* getSystemLocale */.intl;
-    obj1.confirmText = intl10.string(require(1212) /* getSystemLocale */.t.BddRzS);
-    importDefault(4505).show(obj1);
+  } else if (obj.isIgnoredForMessage(author)) {
+    let obj1 = { title: null, body: null, confirmText: null };
+    const intl8 = require(1236) /* getSystemLocale */.intl;
+    obj1[0] = intl8.string(require(1236) /* getSystemLocale */.t.XyWoKV);
+    const intl9 = require(1236) /* getSystemLocale */.intl;
+    const obj2 = { name: null };
+    obj2[0] = author.author.username;
+    obj1[1] = intl9.formatToPlainString(require(1236) /* getSystemLocale */.t["8t8doK"], obj2);
+    const intl10 = require(1236) /* getSystemLocale */.intl;
+    obj1[2] = intl10.string(require(1236) /* getSystemLocale */.t.BddRzS);
+    importDefault(4528).show(obj1);
     return false;
   } else {
-    obj = require(5745) /* isSpammer */;
-    if (obj.isSpam(author)) {
+    obj1 = require(5763) /* isSpamSupported */;
+    if (obj1.isSpam(author)) {
       channel = channel.getChannel(author.channel_id);
       let isPrivateResult;
-      if (null != channel) {
+      if (channel != null) {
         isPrivateResult = channel.isPrivate();
       }
       if (!isPrivateResult) {
-        if (!closure_4.can(Permissions.MODERATE_MEMBERS, channel)) {
-          obj2 = importDefault(4505);
-          const obj3 = {};
-          const intl = require(1212) /* getSystemLocale */.intl;
-          obj3.title = intl.string(require(1212) /* getSystemLocale */.t["6vJKFk"]);
-          const intl2 = require(1212) /* getSystemLocale */.intl;
-          const obj4 = { name: author.author.username };
-          obj3.body = intl2.formatToPlainString(require(1212) /* getSystemLocale */.t.zKNgPF, obj4);
-          const intl3 = require(1212) /* getSystemLocale */.intl;
-          obj3.confirmText = intl3.string(require(1212) /* getSystemLocale */.t.BddRzS);
-          obj2.show(obj3);
+        if (!getUncachedChannelPermissions.can(Permissions.MODERATE_MEMBERS, channel)) {
+          let obj3 = importDefault(4528);
+          obj3 = { title: null, body: null, confirmText: null };
+          const intl = tmp(1236).intl;
+          obj3[0] = intl.string(tmp(1236).t["6vJKFk"]);
+          const intl2 = tmp(1236).intl;
+          const obj4 = { name: null };
+          obj4[0] = author.author.username;
+          obj3[1] = intl2.formatToPlainString(tmp(1236).t.zKNgPF, obj4);
+          const intl3 = tmp(1236).intl;
+          obj3[2] = intl3.string(tmp(1236).t.BddRzS);
+          obj3.show(obj3);
         }
         return false;
       }
-      let obj5 = importDefault(4505);
-      obj5 = {};
-      const intl4 = require(1212) /* getSystemLocale */.intl;
-      obj5.title = intl4.string(require(1212) /* getSystemLocale */.t["cZcG+P"]);
-      const intl5 = require(1212) /* getSystemLocale */.intl;
-      const obj6 = { name: author.author.username };
-      obj5.body = intl5.formatToPlainString(require(1212) /* getSystemLocale */.t["1YTWty"], obj6);
-      const intl6 = require(1212) /* getSystemLocale */.intl;
-      obj5.confirmText = intl6.string(require(1212) /* getSystemLocale */.t["+TSRGD"]);
-      const intl7 = require(1212) /* getSystemLocale */.intl;
-      obj5.cancelText = intl7.string(require(1212) /* getSystemLocale */.t["ETE/oC"]);
-      obj5.onConfirm = onConfirm;
-      obj5.show(obj5);
+      let obj6 = importDefault(4528);
+      const obj5 = { title: null, body: null, confirmText: null, cancelText: null, onConfirm: null };
+      const intl4 = tmp(1236).intl;
+      obj5[0] = intl4.string(tmp(1236).t["cZcG+P"]);
+      const intl5 = tmp(1236).intl;
+      obj6 = { name: null };
+      obj6[0] = author.author.username;
+      obj5[1] = intl5.formatToPlainString(tmp(1236).t["1YTWty"], obj6);
+      const intl6 = tmp(1236).intl;
+      obj5[2] = intl6.string(tmp(1236).t["+TSRGD"]);
+      const intl7 = tmp(1236).intl;
+      obj5[3] = intl7.string(tmp(1236).t["ETE/oC"]);
+      obj5[4] = arg1;
+      obj6.show(obj5);
     } else {
       return true;
     }

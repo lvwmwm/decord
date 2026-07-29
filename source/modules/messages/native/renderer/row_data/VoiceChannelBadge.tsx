@@ -1,65 +1,59 @@
-// Module ID: 7981
-// Function ID: 63341
+// Module ID: 8006
+// Function ID: 8007
 // Name: createVoiceChannelBadge
-// Dependencies: [27, 1348, 3793, 4181, 653, 7982, 4628, 4380, 2]
+// Dependencies: [17, 1372, 3817, 4205, 676, 8007, 4650, 4403, 2]
 // Exports: createVoiceChannelBadge
 
-// Module 7981 (createVoiceChannelBadge)
+// Module 8006 (createVoiceChannelBadge)
 import { Image } from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_4 from "_isNativeReflectConstruct";
-import closure_5 from "_isNativeReflectConstruct";
+import ensureGuildLoaded from "ensureGuildLoaded";
+import getUncachedChannelPermissions from "getUncachedChannelPermissions";
+import updateVoiceState from "updateVoiceState";
 import { Permissions } from "ME";
 
-let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/messages/native/renderer/row_data/VoiceChannelBadge.tsx");
+let result = require("getUncachedChannelPermissions").fileFinishedImporting("modules/messages/native/renderer/row_data/VoiceChannelBadge.tsx");
 
 export const createVoiceChannelBadge = function createVoiceChannelBadge(id, guildId) {
-  let obj = require(7982) /* items */;
-  obj = {};
-  let tmp;
-  if (null != guildId) {
-    tmp = guildId;
-  }
-  obj.guildId = tmp;
-  obj.location = "VoiceChannelBadgeNative";
-  if (obj.getVoiceChannelBadgeExperiment(obj).enabled) {
+  let obj = require(8007) /* experiment */;
+  if (obj.getVoiceChannelBadgeExperiment({ guildId, location: "VoiceChannelBadgeNative" }).enabled) {
     if (null != guildId) {
       discoverableVoiceState = discoverableVoiceState.getDiscoverableVoiceState(guildId, id);
       if (null != discoverableVoiceState) {
         let channelId;
-        if (null != discoverableVoiceState) {
+        if (discoverableVoiceState != null) {
           channelId = discoverableVoiceState.channelId;
         }
         channel = channel.getChannel(channelId);
         if (null != channel) {
-          const assetSource = Image.resolveAssetSource(require(4628) /* getThreadChannelIcon */.getChannelIcon(channel));
+          let tmpResult = tmp(4650);
+          const assetSource = Image.resolveAssetSource(tmpResult.getChannelIcon(channel));
           let uri;
-          if (null != assetSource) {
+          if (assetSource != null) {
             uri = assetSource.uri;
           }
           if (null != uri) {
-            let result = require(4380) /* shouldAgeVerifyForAgeGate */.shouldAgeVerifyForAgeGate();
+            tmpResult = tmp(4403);
+            let result = tmpResult.shouldAgeVerifyForAgeGate();
             if (result) {
-              result = require(4380) /* shouldAgeVerifyForAgeGate */.shouldShowAgeGateForChannelId(channel.id);
-              const obj4 = require(4380) /* shouldAgeVerifyForAgeGate */;
+              result = tmp(4403).shouldShowAgeGateForChannelId(channel.id);
+              const tmpResult1 = tmp(4403);
             }
             let isPrivateResult = channel.isPrivate();
             if (!isPrivateResult) {
-              let canResult = closure_4.can(Permissions.VIEW_CHANNEL, channel);
-              if (canResult) {
-                canResult = closure_4.can(Permissions.CONNECT, channel);
-              }
-              isPrivateResult = canResult;
+              isPrivateResult = getUncachedChannelPermissions.can(Permissions.VIEW_CHANNEL, channel) && getUncachedChannelPermissions.can(Permissions.CONNECT, channel);
+              const obj4 = getUncachedChannelPermissions;
+              const tmp8 = Permissions;
+              const tmp9 = getUncachedChannelPermissions.can(Permissions.VIEW_CHANNEL, channel) && getUncachedChannelPermissions.can(Permissions.CONNECT, channel);
             }
             if (!result) {
               if (isPrivateResult) {
-                obj = { channelId: channel.id, channelIconUrl: uri };
+                obj = { channelId: null, channelIconUrl: null };
+                obj[0] = channel.id;
+                obj[1] = uri;
                 return obj;
               }
             }
-            const obj7 = require(4380) /* shouldAgeVerifyForAgeGate */;
           }
-          const obj6 = require(4628) /* getThreadChannelIcon */;
         }
       }
     }

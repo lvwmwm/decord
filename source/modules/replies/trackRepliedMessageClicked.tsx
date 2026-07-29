@@ -1,51 +1,39 @@
-// Module ID: 10907
-// Function ID: 84549
+// Module ID: 10931
+// Function ID: 10932
 // Name: trackRepliedMessageClicked
-// Dependencies: [5839, 653, 8628, 4359, 2]
+// Dependencies: [5857, 676, 8652, 4384, 2]
 // Exports: default
 
-// Module 10907 (trackRepliedMessageClicked)
-import { ReferencedMessageState } from "_isNativeReflectConstruct";
+// Module 10931 (trackRepliedMessageClicked)
+import { ReferencedMessageState } from "processMessage";
 import { AnalyticEvents } from "ME";
 
 const result = require("maybeCreateMessageRecordFromSnapshot").fileFinishedImporting("modules/replies/trackRepliedMessageClicked.tsx");
 
-export default function trackRepliedMessageClicked(messageReference, state, guild_id) {
+export default function trackRepliedMessageClicked(messageReference, state, channel_id) {
   messageReference = messageReference.messageReference;
   let message_id;
-  if (null != messageReference) {
+  if (messageReference != null) {
     message_id = messageReference.message_id;
   }
-  let tmp2 = null;
   let tmp3 = null;
+  let tmp4 = null;
   if (state.state === ReferencedMessageState.LOADED) {
-    const tmp10 = importDefault(8628)(state.message);
-    const content = tmp10.content;
-    let length;
-    if (null != content) {
-      length = content.length;
+    const tmp9 = importDefault(8652)(state.message);
+    const content = tmp9.content;
+    let num;
+    if (content != null) {
+      num = content.length;
     }
-    let num = 0;
-    if (null != length) {
-      num = length;
+    if (num == null) {
+      num = 0;
     }
     tmp3 = num;
-    tmp2 = tmp10.attachments.length > 0 || tmp10.embeds.length > 0 || tmp10.stickerItems.length > 0 || tmp10.stickers.length > 0;
-    const tmp4 = tmp10.attachments.length > 0 || tmp10.embeds.length > 0 || tmp10.stickerItems.length > 0 || tmp10.stickers.length > 0;
+    tmp4 = tmp9.attachments.length > 0 || tmp9.embeds.length > 0 || tmp9.stickerItems.length > 0 || tmp9.stickers.length > 0;
+    const tmp5 = tmp9.attachments.length > 0 || tmp9.embeds.length > 0 || tmp9.stickerItems.length > 0 || tmp9.stickers.length > 0;
   }
-  let obj = require(4359) /* _createForOfIteratorHelperLoose */;
-  obj = {};
-  guild_id = guild_id.guild_id;
-  let tmp6;
-  if (null != guild_id) {
-    tmp6 = guild_id;
-  }
-  obj.guild_id = tmp6;
-  obj.channel_id = guild_id.id;
-  obj.reply_message_id = messageReference.id;
-  obj.replied_message_id = message_id;
-  obj.replied_message_is_loaded = state.state === ReferencedMessageState.LOADED;
-  obj.replied_message_has_media = tmp2;
-  obj.replied_message_length = tmp3;
+  let obj = require(4384) /* collectGuildAnalyticsMetadata */;
+  const guild_id = channel_id.guild_id;
+  obj = { guild_id, channel_id: channel_id.id, reply_message_id: messageReference.id, replied_message_id: message_id, replied_message_is_loaded: state.state === ReferencedMessageState.LOADED, replied_message_has_media: tmp4, replied_message_length: tmp3 };
   obj.trackWithMetadata(AnalyticEvents.REPLIED_MESSAGE_CLICKED, obj);
 };

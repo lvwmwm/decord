@@ -1,70 +1,72 @@
-// Module ID: 10078
-// Function ID: 77719
-// Dependencies: [31, 27, 33, 4165, 5118, 689, 4695, 1212, 477, 5125, 4161, 9215, 2]
+// Module ID: 10099
+// Function ID: 10100
+// Dependencies: [19, 17, 21, 4189, 5140, 712, 4717, 1236, 500, 5147, 4185, 9239, 2]
 
-// Module 10078
+// Module 10099
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import importAllResult from "result";
+import createCacheKey from "createCacheKey";
+import importAllResult from "noop";
 
-let closure_3;
-let closure_4;
+let StyleSheet;
+let c3;
+let c4;
+let obj1;
 const require = arg1;
-const View = get_ActivityIndicator.View;
-({ jsx: closure_3, jsxs: closure_4 } = jsxProd);
-let obj = {};
-obj = { flexDirection: "row", alignItems: "center", height: require("NAV_BAR_HEIGHT").NAV_BAR_HEIGHT, paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW, borderBottomWidth: get_ActivityIndicator.StyleSheet.hairlineWidth, borderColor: require("_createForOfIteratorHelperLoose").colors.BORDER_STRONG };
-obj.container = obj;
-_createForOfIteratorHelperLoose = { paddingLeft: require("_createForOfIteratorHelperLoose").space.PX_16 };
-obj.cancelText = _createForOfIteratorHelperLoose;
-obj.cancelIcon = { marginRight: require("_createForOfIteratorHelperLoose").space.PX_16 };
-obj.flex = { flex: 1 };
-let closure_5 = _createForOfIteratorHelperLoose.createStyles(obj);
-let obj2 = { marginRight: require("_createForOfIteratorHelperLoose").space.PX_16 };
+({ View: obj1, StyleSheet } = get_ActivityIndicator);
+({ jsx: c3, jsxs: c4 } = jsxProd);
+let obj = { container: null, cancelText: null, cancelIcon: null, flex: null };
+obj = { flexDirection: "row", alignItems: "center", height: require("NAV_BAR_HEIGHT").NAV_BAR_HEIGHT, paddingHorizontal: require("Themes").space.PX_16, backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW, borderBottomWidth: StyleSheet.hairlineWidth, borderColor: require("Themes").colors.BORDER_STRONG };
+obj[0] = obj;
+createCacheKey = { paddingLeft: require("Themes").space.PX_16 };
+obj[1] = createCacheKey;
+obj[2] = { marginRight: require("Themes").space.PX_16 };
+obj[3] = { flex: 1 };
+let closure_5 = createCacheKey.createStyles(obj);
+let obj2 = { marginRight: require("Themes").space.PX_16 };
 const forwardRefResult = importAllResult.forwardRef((onClose, ref) => {
-  let obj = Object.create(null);
-  obj.onClose = 0;
-  const merged = Object.assign(onClose, obj);
-  const tmp3 = callback2();
-  obj = { accessibilityRole: "button" };
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj.accessibilityLabel = intl.string(require(1212) /* getSystemLocale */.t["ETE/oC"]);
-  obj.onPress = onClose.onClose;
-  obj.hitSlop = { top: 8, right: 8, bottom: 8, left: 8 };
-  let obj1 = require(477) /* set */;
+  const merged = Object.assign(onClose, Object.create(null));
+  const tmp2 = callback();
+  let obj = { accessibilityRole: "button", accessibilityLabel: null, onPress: null, hitSlop: null, children: null };
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj[1] = intl.string(require(1236) /* getSystemLocale */.t["ETE/oC"]);
+  obj[2] = onClose.onClose;
+  obj[3] = { top: 8, right: 8, bottom: 8, left: 8 };
+  let obj1 = require(500) /* set */;
   if (obj1.isAndroid()) {
-    obj = { style: tmp3.cancelIcon };
-    let tmp5Result = tmp5(tmp6(5125).ArrowLargeLeftIcon, obj);
+    obj = { style: null };
+    obj[0] = tmp2.cancelIcon;
+    let tmp3Result = tmp3(tmp4(5147).ArrowLargeLeftIcon, obj);
   } else {
-    obj1 = { style: tmp3.cancelText, maxFontSizeMultiplier: 2, variant: "text-md/semibold", color: "mobile-text-heading-primary" };
-    const intl2 = tmp6(1212).intl;
-    obj1.children = intl2.string(tmp6(1212).t["ETE/oC"]);
-    tmp5Result = tmp5(tmp6(4161).Text, obj1);
+    obj = { style: null, maxFontSizeMultiplier: 2, variant: "text-md/semibold", color: "mobile-text-heading-primary", children: null };
+    obj[0] = tmp2.cancelText;
+    const intl2 = tmp4(1236).intl;
+    obj[4] = intl2.string(tmp4(1236).t["ETE/oC"]);
+    tmp3Result = tmp3(tmp4(4185).Text, obj);
   }
-  obj.children = tmp5Result;
-  const tmp4Result = callback(require(4695) /* PressableBase */.PressableOpacity, obj);
-  const obj2 = { style: tmp3.container };
-  let obj5 = require(477) /* set */;
-  let tmp12 = null;
-  if (obj5.isAndroid()) {
-    tmp12 = tmp4Result;
+  obj[4] = tmp3Result;
+  tmp3Result = tmp3(require(4717) /* PressableBase */.PressableOpacity, obj);
+  obj1 = { style: tmp2.container, children: null };
+  let tmp4Result = tmp4(500);
+  let tmp10 = null;
+  if (tmp4Result.isAndroid()) {
+    tmp10 = tmp3Result;
   }
-  const items = [tmp12, , ];
-  const obj3 = { style: tmp3.flex };
-  const obj4 = {};
-  obj5 = { size: "md", isRound: true, ref };
+  const items = [tmp10, , ];
+  const obj2 = { style: tmp2.flex, children: null };
+  const obj3 = { children: null };
   const merged1 = Object.assign(merged);
-  obj4.children = callback(require(9215) /* SearchField */.SearchField, obj5);
-  obj3.children = callback(View, obj4);
-  items[1] = callback(View, obj3);
-  let tmp14 = null;
-  if (!obj10.isAndroid()) {
-    tmp14 = tmp4Result;
+  obj3[0] = closure_3(require(9239) /* SearchField */.SearchField, { size: "md", isRound: true, ref });
+  obj2[1] = closure_3(closure_2, obj3);
+  items[1] = closure_3(closure_2, obj2);
+  tmp4Result = tmp4(500);
+  let tmp12 = null;
+  if (!tmp4Result.isAndroid()) {
+    tmp12 = tmp3Result;
   }
-  items[2] = tmp14;
-  obj2.children = items;
-  return closure_4(View, obj2);
+  items[2] = tmp12;
+  obj1[1] = items;
+  return closure_4(closure_2, obj1);
 });
 const result = require("jsxProd").fileFinishedImporting("modules/main_tabs_v2/native/shared_components/SearchBarNav.tsx");
 

@@ -1,141 +1,190 @@
-// Module ID: 1331
-// Function ID: 15587
-// Name: _createForOfIteratorHelperLoose
-// Dependencies: [5, 6, 7, 1316, 662, 653, 686, 44, 1318, 507, 664, 3, 1332, 587, 1319, 1282, 1317, 1333, 675, 1334, 1335, 1336, 2]
-// Exports: addDismissedContent, checkAllDismissedContents, clearDismissedContents, clearGuildDismissedContents, clearGuildThemeSourcePreferenceOverride, markUserSettingsLoadOkayForDevelopment, removeDismissedContent, removeDismissedRecurringContent, setDefaultGuildThemePreference, updateGuildDismissedContent, updateUserChannelSettings
+// Module ID: 1355
+// Function ID: 1356
+// Name: updateUserGuildSettings
+// Dependencies: [5, 1340, 685, 676, 709, 3, 1356, 38, 687, 1342, 530, 595, 1343, 1306, 1341, 1357, 698, 1358, 1359, 1360, 2]
+// Exports: addDismissedContent, checkAllDismissedContents, clearDismissedContents, clearGuildDismissedContents, clearGuildThemeSourcePreferenceOverride, markUserSettingsLoadOkayForDevelopment, removeDismissedContent, removeDismissedRecurringContent, setDefaultGuildThemePreference, setGuildThemeSourcePreferenceOverride, updateGuildDismissedContent, updateUserAllGuildSettings, updateUserChannelSettings
 
-// Module 1331 (_createForOfIteratorHelperLoose)
-import closure_3 from "ME";
-import dispatcher from "dispatcher";
-import invariant from "invariant";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 1355 (updateUserGuildSettings)
+import importDefaultResult from "timestamp";
+import handleConnectionClosedOrResumed from "handleConnectionClosedOrResumed";
 import MAX_FAVORITES from "MAX_FAVORITES";
 import ME from "ME";
-import importDefaultResult from "dispatcher";
 import importDefaultResult1 from "dispatcher";
+import importDefaultResult2 from "dispatcher";
 
-let closure_10;
-let closure_11;
-let closure_9;
-const require = arg1;
-function _createForOfIteratorHelperLoose(iterable) {
-  let closure_0 = iterable;
-  iterable = "undefined" !== typeof Symbol;
-  if (iterable) {
-    const _Symbol = Symbol;
-    iterable = iterable[Symbol.iterator];
-  }
-  if (!iterable) {
-    iterable = iterable[Symbol.iterator];
-  }
-  if (iterable) {
-    const iter = iterable.call(iterable);
-    const next = iter.next;
-    return next.bind(iter);
-  } else {
-    const _Array = Array;
-    let tmp = iterable;
-    if (!Array.isArray(iterable)) {
-      let tmp2;
-      if (iterable) {
-        if ("string" === typeof iterable) {
-          tmp2 = _arrayLikeToArray(iterable, undefined);
-        } else {
-          const toString = {}.toString;
-          const substr = toString.call(iterable).slice(8, -1);
-          let name = substr;
-          if (tmp3) {
-            name = iterable.constructor.name;
-          }
-          if ("Map" !== name) {
-            if ("Set" !== name) {
-              if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(iterable, undefined);
-              } else {
-                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
-              }
-            }
-            tmp2 = arr;
-          }
-          const _Array2 = Array;
-          arr = Array.from(iterable);
-          const callResult = toString.call(iterable);
-          tmp3 = "Object" === substr && iterable.constructor;
-        }
-      }
-      tmp = tmp2;
-      if (!tmp2) {
-        const _TypeError = TypeError;
-        const typeError = new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
-        throw typeError;
-      }
-    }
-    if (tmp) {
-      closure_0 = tmp;
-    }
-    let c1 = 0;
-    return () => {
-      if (closure_1 >= length.length) {
-        let obj = { done: true };
-      } else {
-        obj = { done: false };
-        closure_1 = tmp3 + 1;
-        obj.value = length[+closure_1];
-      }
-      return obj;
-    };
-  }
-}
-function _arrayLikeToArray(arg0, arg1) {
-  let length;
-  if (tmp) {
-    length = arg0.length;
-  }
-  const ArrayResult = Array(length);
-  for (let num = 0; num < length; num = num + 1) {
-    ArrayResult[num] = arg0[num];
-  }
-  return ArrayResult;
-}
-function updateUserAllGuildSettings(arg0, INFREQUENT_USER_ACTION) {
-  let closure_0 = arg0;
-  return tmp9.updateAsync("guilds", (arg0) => callback(arg0), INFREQUENT_USER_ACTION);
-}
-function updateUserGuildSettings(arg0, arg1, INFREQUENT_USER_ACTION) {
-  let closure_0 = arg0;
+let c9;
+let error;
+let metroImportAll;
+let obj = arg1;
+function updateUserGuildSettings(closure_0, arg1, INFREQUENT_USER_ACTION) {
   let closure_1 = arg1;
-  return tmp9.updateAsync("guilds", (guilds) => callback(outer1_2[8]).mutateUserGuildSettingsInternal(guilds, callback, closure_1), INFREQUENT_USER_ACTION);
-}
-function setGuildThemeSourcePreferenceOverride(id, UNSPECIFIED) {
-  let closure_0 = UNSPECIFIED;
-  return updateUserGuildSettings(id, (arg0) => {
-    arg0.guildThemeSourcePreference = closure_0;
-  }, UserSettingsDelay.INFREQUENT_USER_ACTION);
+  return obj.updateAsync("guilds", (guilds) => callback(outer1_2[9]).mutateUserGuildSettingsInternal(guilds, callback, f69075), INFREQUENT_USER_ACTION);
 }
 function updateRecurringDismissibleContentState(GUILD_POWERUP_NOTIFICATION, arg1) {
-  return _updateRecurringDismissibleContentState(...arguments);
+  const self = this;
+  const apply = _updateRecurringDismissibleContentState.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
 }
-async function _updateRecurringDismissibleContentState(arg0, arg1, arg2) {
-  let closure_0 = arg0;
-  let closure_1 = arg1;
-  return yield outer2_12.updateAsync("userContent", (recurringDismissibleContentStates) => {
-    const merged = Object.assign(recurringDismissibleContentStates.recurringDismissibleContentStates[closure_0]);
-    const merged1 = Object.assign(closure_1);
-    recurringDismissibleContentStates.recurringDismissibleContentStates[closure_0] = {};
-  }, outer2_8.INFREQUENT_USER_ACTION);
+function _updateRecurringDismissibleContentState() {
+  const self = this;
+  const tmp = importDefaultResult((arg0, arg1) => {
+    let closure_0 = arg0;
+    let closure_1 = arg1;
+    let c3 = 0;
+    let c2 = 0;
+    return (function*(arg0, arg1) {
+      if (c2 === 2) {
+        c2 = 3;
+        HermesBuiltin.throwTypeError();
+      } else if (tmp3 === 3) {
+        if (arg0 === 1) {
+          throw arg1;
+        } else if (arg0 === 2) {
+          let obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
+        } else {
+          return { value: "HermesInternal", done: null };
+        }
+      } else {
+        try {
+          c2 = 2;
+          if (0 === c3) {
+            if (arg0 === 1) {
+              c2 = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              c2 = 3;
+              obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            } else {
+              c3 = 1;
+              c2 = 1;
+              const obj1 = { value: null, done: false };
+              obj1[0] = outer1_11.updateAsync("userContent", (recurringDismissibleContentStates) => {
+                const merged = Object.assign(recurringDismissibleContentStates.recurringDismissibleContentStates[closure_0]);
+                const merged1 = Object.assign(closure_1);
+                recurringDismissibleContentStates.recurringDismissibleContentStates[closure_0] = {};
+              }, outer1_6.INFREQUENT_USER_ACTION);
+              return obj1;
+            }
+          } else if (arg0 === 1) {
+            c2 = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            c2 = 3;
+            const obj2 = { value: null, done: true };
+            obj2[0] = arg1;
+            return obj2;
+          } else {
+            c2 = 3;
+            obj = { value: null, done: true };
+            obj[0] = arg1;
+            return obj;
+          }
+        } catch (tmp9) {
+          c2 = tmp;
+          throw tmp9;
+        }
+      }
+    })();
+  });
+  const _updateRecurringDismissibleContentState = tmp;
+  const apply = tmp.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
 }
-async function _updateGuildDismissedContent(arg0, arg1, arg2, arg3) {
-  let closure_0 = arg0;
-  let closure_1 = arg2;
-  return yield outer2_16(arg1, (guildDismissibleContentStates) => {
-    const merged = Object.assign(guildDismissibleContentStates.guildDismissibleContentStates[closure_0]);
-    const merged1 = Object.assign(closure_1);
-    guildDismissibleContentStates.guildDismissibleContentStates[closure_0] = {};
-  }, outer2_8.INFREQUENT_USER_ACTION);
+function _updateGuildDismissedContent() {
+  const self = this;
+  const tmp = importDefaultResult((arg0, arg1, arg2) => {
+    let closure_0 = arg0;
+    let closure_1 = arg1;
+    let closure_2 = arg2;
+    let c4 = 0;
+    let c3 = 0;
+    return (function*(arg0, arg1, arg2) {
+      if (c3 === 2) {
+        c3 = 3;
+        HermesBuiltin.throwTypeError();
+      } else if (tmp3 === 3) {
+        if (arg0 === 1) {
+          throw arg1;
+        } else if (arg0 === 2) {
+          let obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
+        } else {
+          return { value: "HermesInternal", done: null };
+        }
+      } else {
+        try {
+          c3 = 2;
+          if (0 === c4) {
+            if (arg0 === 1) {
+              c3 = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              c3 = 3;
+              obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            } else {
+              let closure_1 = closure_2;
+              c4 = 1;
+              c3 = 1;
+              const obj1 = { value: null, done: false };
+              obj1[0] = outer1_12(closure_1, (guildDismissibleContentStates) => {
+                const merged = Object.assign(guildDismissibleContentStates.guildDismissibleContentStates[closure_0]);
+                const merged1 = Object.assign(closure_1);
+                guildDismissibleContentStates.guildDismissibleContentStates[closure_0] = {};
+              }, outer1_6.INFREQUENT_USER_ACTION);
+              return obj1;
+            }
+          } else if (arg0 === 1) {
+            c3 = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            c3 = 3;
+            const obj2 = { value: null, done: true };
+            obj2[0] = arg1;
+            return obj2;
+          } else {
+            c3 = 3;
+            obj = { value: null, done: true };
+            obj[0] = arg1;
+            return obj;
+          }
+        } catch (tmp10) {
+          c3 = tmp;
+          throw tmp10;
+        }
+      }
+    })();
+  });
+  const _updateGuildDismissedContent = tmp;
+  const apply = tmp.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
 }
+let c3 = importDefaultResult;
 const UserSettingsTypes = MAX_FAVORITES.UserSettingsTypes;
 const UserSettingsDelay = MAX_FAVORITES.UserSettingsDelay;
-({ AbortCodes: closure_9, Endpoints: closure_10, AnalyticEvents: closure_11 } = ME);
+({ AbortCodes: error, Endpoints: metroImportAll, AnalyticEvents: c9 } = ME);
+const UserSettingsProtoLastWriteTimes = "UserSettingsProtoLastWriteTimes";
 let timestamp = Date.now();
 const subscription = require("dispatcher").subscribe("CONNECTION_OPEN", () => {
   const timestamp = Date.now();
@@ -143,7 +192,7 @@ const subscription = require("dispatcher").subscribe("CONNECTION_OPEN", () => {
 const subscription1 = require("dispatcher").subscribe("CONNECTION_CLOSED", () => {
   const timestamp = Date.now();
 });
-if ("undefined" !== typeof document) {
+if (typeof document !== "Array") {
   const _document = document;
   const listener = document.addEventListener("mousedown", () => {
 
@@ -153,433 +202,1034 @@ if ("undefined" !== typeof document) {
 
   });
 }
-let tmp9 = (() => {
-  class UserSettingsProtoActionCreators {
-    constructor(arg0, arg1) {
-      self = this;
-      tmp = outer1_4(this, UserSettingsProtoActionCreators);
-      this.ProtoClass = arg0;
-      this.type = arg1;
-      this.beforeSendCallbacks = [];
-      this.lastSendTime = 0;
-      this.persistChanges = outer1_3(async () => {
-        let editInfo;
-        callback2(UserSettingsProtoActionCreators[7])(true, "this cannot run in the overlay");
-        const logger = outer1_0.logger;
-        logger.log("Persisting proto");
-        editInfo = outer1_0.getEditInfo().editInfo;
-        if (null != editInfo.protoToSave) {
-          const item = outer1_0.beforeSendCallbacks.forEach((processProto) => processProto.processProto(editInfo.protoToSave));
-          let obj = callback(UserSettingsProtoActionCreators[8]);
-          const protoToB64Result = obj.protoToB64(outer1_0.ProtoClass, tmp3.protoToSave);
-          if (null != protoToB64Result) {
-            if ("" !== tmp12) {
-              outer1_0.saveLastSendTime();
-              const HTTP = callback(UserSettingsProtoActionCreators[9]).HTTP;
-              obj = { url: outer3_10.USER_SETTINGS_PROTO(outer1_0.type) };
-              obj = { settings: protoToB64Result, required_data_version: editInfo.offlineEditDataVersion };
-              obj.body = obj;
-              obj.rejectWithError = false;
-              const body = yield HTTP.patch(obj).body;
-              if (body.out_of_date) {
-                const logger4 = outer1_0.logger;
-                logger4.log("Proto was out of date, discarding changes");
-              }
-              const cleanupFuncs = outer1_0.getEditInfo().editInfo.cleanupFuncs;
-              const item1 = cleanupFuncs.forEach((arg0) => arg0());
-              const b64ToProtoResult = callback(UserSettingsProtoActionCreators[8]).b64ToProto(outer1_0.ProtoClass, body.settings);
-              if (null != b64ToProtoResult) {
-                const obj1 = { type: "USER_SETTINGS_PROTO_UPDATE", settings: null, resetEditInfo: true, wasSaved: true, local: false };
-                const obj2 = { proto: b64ToProtoResult, type: outer1_0.type };
-                obj1.settings = obj2;
-                callback2(UserSettingsProtoActionCreators[6]).dispatch(obj1);
-                const obj5 = callback2(UserSettingsProtoActionCreators[6]);
-              }
-              const obj4 = callback(UserSettingsProtoActionCreators[8]);
-            }
-          }
-          const logger3 = outer1_0.logger;
-          logger3.log("Not persisting proto because there is nothing to change");
-          const beforeSendCallbacks = outer1_0.beforeSendCallbacks;
+class UserSettingsProtoActionCreators {
+  constructor(arg0, arg1) {
+    obj = Object.create(new.target.prototype);
+    obj.beforeSendCallbacks = [];
+    obj.lastSendTime = 0;
+    PreloadedUserSettings = obj;
+    obj.persistChanges = closure_3(function*() {
+      if (config === 2) {
+        config = 3;
+        HermesBuiltin.throwTypeError();
+      } else if (tmp6 === 3) {
+        if (arg0 === 1) {
+          throw arg1;
+        } else if (arg0 === 2) {
+          let obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
         } else {
-          const logger2 = outer1_0.logger;
-          logger2.log("Not persisting proto because the proto was null");
+          return { value: "HermesInternal", done: null };
         }
-      });
-      tmp2 = f15620(UserSettingsProtoActionCreators[11]);
-      tmp2 = new tmp2(this.ProtoClass.typeName);
-      this.logger = tmp2;
-      return;
+      } else {
+        try {
+          config = 2;
+          if (0 === timeout) {
+            if (arg0 === 1) {
+              config = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              config = 3;
+              obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            } else {
+              let body = tmp3;
+              let editInfo = tmp7;
+              editInfo = undefined;
+              body = undefined;
+              let closure_2;
+              let c3;
+              timeout = undefined;
+              let logResult = outer1_1;
+              logResult = outer1_2;
+              logResult = outer1_1(outer1_2[7])(true, "this cannot run in the overlay");
+              logResult = outer1_0;
+              const logger7 = outer1_0.logger;
+              logResult = logger7.log("Persisting proto");
+              logResult = outer1_0;
+              editInfo = outer1_0.getEditInfo().editInfo;
+              if (null != editInfo.protoToSave) {
+                const item = outer1_0.beforeSendCallbacks.forEach((processProto) => processProto.processProto(editInfo.protoToSave));
+                let obj6 = outer1_0(outer1_2[9]);
+                const protoToB64Result = obj6.protoToB64(outer1_0.ProtoClass, editInfo.protoToSave);
+                if (null != protoToB64Result) {
+                  if ("" !== protoToB64Result) {
+                    c3 = 1;
+                    outer1_0.saveLastSendTime();
+                    const HTTP = outer1_0(outer1_2[10]).HTTP;
+                    let obj1 = { url: null, body: null, rejectWithError: false };
+                    obj1[0] = outer1_8.USER_SETTINGS_PROTO(outer1_0.type);
+                    const obj2 = { settings: null, required_data_version: null };
+                    obj2[0] = protoToB64Result;
+                    obj2[1] = editInfo.offlineEditDataVersion;
+                    obj1[1] = obj2;
+                    timeout = 2;
+                    config = 1;
+                    const obj3 = { value: null, done: false };
+                    obj3[0] = HTTP.patch(obj1);
+                    return obj3;
+                  }
+                }
+                const logger5 = outer1_0.logger;
+                logger5.log("Not persisting proto because there is nothing to change");
+                const beforeSendCallbacks = outer1_0.beforeSendCallbacks;
+              } else {
+                const logger4 = outer1_0.logger;
+                logger4.log("Not persisting proto because the proto was null");
+              }
+            }
+          } else {
+            if (1 === tmp7) {
+              c3 = 0;
+              config = closure_2;
+              if (429 !== config.status) {
+                if (400 === config.status) {
+                  body = config.body;
+                  let code;
+                  if (body != null) {
+                    code = body.code;
+                  }
+                  if (code === outer1_7.INVALID_USER_SETTINGS_DATA) {
+                    const logger3 = outer1_0.logger;
+                    logger3.log("Reloading do to invalid data");
+                    const item1 = outer1_0.getEditInfo().editInfo.errorCallbacks.forEach((arg0) => arg0());
+                    const ifNecessary = outer1_0.loadIfNecessary(true);
+                    let tmp57 = config;
+                    const errorCallbacks = outer1_0.getEditInfo().editInfo.errorCallbacks;
+                  }
+                  throw tmp57;
+                }
+                const logger2 = outer1_0.logger;
+                logger2.log("Unknown user settings error");
+                const item2 = outer1_0.getEditInfo().editInfo.errorCallbacks.forEach((arg0) => arg0());
+                tmp57 = config;
+                const errorCallbacks1 = outer1_0.getEditInfo().editInfo.errorCallbacks;
+              } else {
+                const logger6 = editInfo.logger;
+                logger6.log("Rate limited, scheduling retry");
+                const _parseInt = parseInt;
+                c3 = parseInt(config.headers["retry-after"]);
+                const _isNaN = isNaN;
+                if (isNaN(c3)) {
+                  c3 = 60;
+                }
+                const _setTimeout = setTimeout;
+                const _Math = Math;
+                const result = 30 * outer1_1(outer1_2[8]).Millis.SECOND;
+                timeout = setTimeout(outer1_0.persistChanges, Math.min(result, c3 * outer1_1(outer1_2[8]).Millis.SECOND));
+                const obj4 = { rateLimited: true, timeout: null };
+                obj4[1] = timeout;
+                outer1_0.dispatchChanges(obj4);
+              }
+            } else if (arg0 === 1) {
+              config = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              c3 = 0;
+              config = 3;
+              const obj5 = { value: null, done: true };
+              obj5[0] = arg1;
+              return obj5;
+            } else {
+              body = arg1.body;
+              if (body.out_of_date) {
+                const logger = editInfo.logger;
+                logger.log("Proto was out of date, discarding changes");
+              }
+              const cleanupFuncs = editInfo.getEditInfo().editInfo.cleanupFuncs;
+              const item3 = cleanupFuncs.forEach((arg0) => arg0());
+              obj = outer1_0(outer1_2[9]);
+              closure_2 = obj.b64ToProto(editInfo.ProtoClass, body.settings);
+              if (null != closure_2) {
+                obj1 = outer1_1(outer1_2[4]);
+                obj6 = { type: "USER_SETTINGS_PROTO_UPDATE", settings: null, resetEditInfo: true, wasSaved: true, local: false };
+                const obj7 = { proto: null, type: null };
+                obj7[0] = closure_2;
+                obj7[1] = editInfo.type;
+                obj6[1] = obj7;
+                obj1.dispatch(obj6);
+                c3 = 0;
+              }
+            }
+            c3 = 0;
+            config = 3;
+            return { value: "HermesInternal", done: null };
+          }
+          config = 3;
+        } catch (tmp82) {
+          closure_2 = tmp82;
+          if (tmp4 === c3) {
+            config = tmp2;
+            throw tmp82;
+          } else {
+            timeout = logResult;
+          }
+        }
+      }
+    });
+    obj.ProtoClass = global;
+    obj.type = arg1;
+    tmp2 = new require("timestamp")(obj.ProtoClass.typeName);
+    obj.logger = tmp2;
+    return obj;
+  }
+}
+const prototype = UserSettingsProtoActionCreators.prototype;
+prototype["getEditInfo"] = function getEditInfo() {
+  return handleConnectionClosedOrResumed.getFullState()[this.type];
+};
+prototype["getCurrentValue"] = function getCurrentValue() {
+  return this.getEditInfo().proto;
+};
+prototype["updateAsync"] = function updateAsync(favorites, arg1, INFREQUENT_USER_ACTION, onSaveFailed) {
+  let closure_0 = favorites;
+  let closure_1 = arg1;
+  let closure_2 = INFREQUENT_USER_ACTION;
+  const self = this;
+  return onSaveFailed(function*() {
+    if (c3 === 2) {
+      c3 = 3;
+      HermesBuiltin.throwTypeError();
+    } else if (tmp4 === 3) {
+      if (arg0 === 1) {
+        throw arg1;
+      } else if (arg0 === 2) {
+        let obj = { value: null, done: true };
+        obj[0] = arg1;
+        return obj;
+      } else {
+        return { value: "HermesInternal", done: null };
+      }
+    } else {
+      try {
+        c3 = 2;
+        if (0 === closure_2) {
+          if (arg0 === 1) {
+            c3 = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            c3 = 3;
+            obj = { value: null, done: true };
+            obj[0] = arg1;
+            return obj;
+          } else {
+            let closure_1 = tmp5;
+            let protoFieldClass = tmp2;
+            protoFieldClass = undefined;
+            closure_1 = undefined;
+            closure_2 = undefined;
+            closure_2 = 1;
+            c3 = 1;
+            const obj1 = { value: null, done: false };
+            obj1[0] = outer1_4.loadIfNecessary();
+            return obj1;
+          }
+        } else if (arg0 === 1) {
+          c3 = 3;
+          throw arg1;
+        } else if (arg0 === 2) {
+          c3 = 3;
+          obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
+        } else {
+          protoFieldClass = outer1_0(1356).getProtoFieldClass(handleConnectionClosedOrResumed.ProtoClass, protoFieldClass);
+          closure_1 = handleConnectionClosedOrResumed.getCurrentValue()[protoFieldClass];
+          const obj6 = outer1_0(1356);
+          closure_2 = obj6.createModifiedProto(closure_1, closure_1, protoFieldClass, handleConnectionClosedOrResumed.ProtoClass, protoFieldClass);
+          if (null != closure_2) {
+            const logger = handleConnectionClosedOrResumed.logger;
+            const _String = String;
+            const _HermesInternal = HermesInternal;
+            logger.log("Updating " + String(protoFieldClass) + " with delay " + closure_2);
+            const obj2 = { delaySeconds: null, jitter: null, onError: null };
+            obj2[0] = closure_2;
+            let tmp9 = closure_2 === outer1_6.AUTOMATED;
+            if (!tmp9) {
+              tmp9 = dependencyMap === outer1_6.DAILY;
+            }
+            obj2[1] = tmp9;
+            obj2[2] = c3;
+            handleConnectionClosedOrResumed.markDirty(closure_2, obj2);
+            const tmp44 = closure_2;
+          }
+          c3 = 3;
+          return { value: "HermesInternal", done: null };
+        }
+      } catch (tmp14) {
+        c3 = tmp;
+        throw tmp14;
+      }
+    }
+  })();
+};
+prototype["markDirty"] = function markDirty(protoToSave, dispatch) {
+  const self = this;
+  importDefault(38)(true, "this cannot run in the overlay");
+  const editInfo = this.getEditInfo().editInfo;
+  let obj = { timeout: editInfo.timeout };
+  if (editInfo.loaded) {
+    if (false !== dispatch.dispatch) {
+      obj = { type: "USER_SETTINGS_PROTO_UPDATE", settings: null, partial: true, local: true };
+      obj = { type: null, proto: null };
+      obj[0] = self.type;
+      obj[1] = protoToSave;
+      obj[1] = obj;
+      tmp(709).dispatch(obj);
+      const tmpResult = tmp(709);
+    }
+    let num = dispatch.delaySeconds;
+    if (num == null) {
+      num = 0;
+    }
+    if (tmp9) {
+      const _clearTimeout = clearTimeout;
+      clearTimeout(obj.timeout);
+      obj.timeout = undefined;
+    }
+    if (null == obj.timeout) {
+      const result = num * tmp(687).Millis.SECOND;
+      let sum = result;
+      if (dispatch.jitter) {
+        const _Math = Math;
+        const _Math2 = Math;
+        const _Math3 = Math;
+        const random = Math.random();
+        sum = result + Math.floor(random * Math.min(result, 30 * tmp(687).Millis.SECOND));
+      }
+      const logger = self.logger;
+      logger.log("Scheduling save from markDirty");
+      const _setTimeout = setTimeout;
+      obj.timeout = setTimeout(self.persistChanges, sum);
+      obj.timeoutDelay = num;
+    }
+    if (null != dispatch.cleanup) {
+      const items = [];
+      HermesBuiltin.arraySpread(dispatch.cleanup, HermesBuiltin.arraySpread(editInfo.cleanupFuncs, 0));
+      obj.cleanupFuncs = items;
+    }
+    let hasItem = null == dispatch.onError;
+    if (!hasItem) {
+      hasItem = editInfo.errorCallbacks.includes(dispatch.onError);
+      const errorCallbacks = editInfo.errorCallbacks;
+    }
+    if (!hasItem) {
+      const items1 = [];
+      items1[HermesBuiltin.arraySpread(editInfo.errorCallbacks, 0)] = dispatch.onError;
+      obj.errorCallbacks = items1;
+    }
+    if (null == editInfo.protoToSave) {
+      obj.protoToSave = protoToSave;
+    } else {
+      obj.protoToSave = obj(1342).mergeTopLevelFields(self.ProtoClass, editInfo.protoToSave, protoToSave);
+      const obj5 = obj(1342);
+    }
+    self.dispatchChanges(obj);
+  } else {
+    const _Error = Error;
+    throw Error("Cannot edit user settings proto because we have not yet loaded the stored version from the DB");
+  }
+};
+prototype["dispatchChanges"] = function dispatchChanges(changes) {
+  let obj = importDefault(709);
+  obj = { changes, type: this.type };
+  obj.dispatch({ type: "USER_SETTINGS_PROTO_UPDATE_EDIT_INFO", settings: obj });
+};
+prototype["saveLastSendTime"] = function saveLastSendTime() {
+  const Storage = obj(595).Storage;
+  obj = Storage.get(UserSettingsProtoLastWriteTimes);
+  if (obj == null) {
+    obj = {};
+  }
+  obj[this.type] = Date.now();
+  const Storage2 = obj(595).Storage;
+  const result = Storage2.set(UserSettingsProtoLastWriteTimes, obj);
+};
+prototype["loadIfUncached"] = function loadIfUncached(FRECENCY_AND_FAVORITES_SETTINGS) {
+  let hasLoadedResult = handleConnectionClosedOrResumed.hasLoaded(FRECENCY_AND_FAVORITES_SETTINGS);
+  if (hasLoadedResult) {
+    hasLoadedResult = true !== arg1;
+  }
+  if (!hasLoadedResult) {
+    const self = this;
+    const ifNecessary = this.loadIfNecessary(arg1);
+  }
+};
+prototype["loadIfNecessary"] = function loadIfNecessary(arg0) {
+  let closure_0 = arg0;
+  const self = this;
+  return importDefaultResult(function*() {
+    if (isDirty === 2) {
+      isDirty = 3;
+      HermesBuiltin.throwTypeError();
+    } else if (tmp6 === 3) {
+      if (arg0 === 1) {
+        throw arg1;
+      } else if (arg0 === 2) {
+        let obj = { value: null, done: true };
+        obj[0] = arg1;
+        return obj;
+      } else {
+        return { value: "HermesInternal", done: null };
+      }
+    } else {
+      try {
+        isDirty = 2;
+        if (0 === proto) {
+          if (arg0 === 1) {
+            isDirty = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            isDirty = 3;
+            obj = { value: null, done: true };
+            obj[0] = arg1;
+            return obj;
+          } else {
+            let closure_1 = tmp3;
+            let settings = tmp7;
+            settings = undefined;
+            closure_1 = undefined;
+            let closure_2;
+            let c3;
+            proto = undefined;
+            isDirty = undefined;
+            let cleanupFuncs;
+            const editInfo = outer1_1.getEditInfo().editInfo;
+            if (!outer1_0) {
+              isDirty = 3;
+              return { value: "HermesInternal", done: null };
+            }
+            const logger = outer1_1.logger;
+            logger.log("Loading proto");
+            outer1_1.dispatchChanges({ loading: true });
+            c3 = 1;
+            const HTTP = outer1_0(outer1_2[10]).HTTP;
+            const obj1 = { url: null, rejectWithError: false };
+            obj1[0] = outer1_8.USER_SETTINGS_PROTO(outer1_1.type);
+            proto = 2;
+            isDirty = 1;
+            const obj2 = { value: null, done: false };
+            obj2[0] = HTTP.get(obj1);
+            return obj2;
+          }
+        } else if (1 === tmp7) {
+          c3 = 0;
+          const outer1_7 = closure_2;
+          closure_1.dispatchChanges({ loading: false });
+          throw outer1_7;
+        } else if (2 === tmp7) {
+          if (arg0 === 1) {
+            isDirty = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            c3 = 0;
+            isDirty = 3;
+            const obj3 = { value: null, done: true };
+            obj3[0] = arg1;
+            return obj3;
+          } else {
+            settings = arg1.body.settings;
+            closure_1 = outer1_0(outer1_2[9]).b64ToProto(closure_1.ProtoClass, settings);
+            if (null == closure_1) {
+              outer1_1.dispatchChanges({ loading: false, loaded: true });
+              c3 = 0;
+              isDirty = 3;
+              const obj4 = { value: null, done: true };
+              obj4[0] = undefined;
+              return obj4;
+            } else {
+              closure_2 = outer1_1(outer1_2[12])[closure_1.type];
+              c3 = outer1_0(outer1_2[9]).runMigrations(closure_1, closure_2);
+              proto = c3.proto;
+              isDirty = c3.isDirty;
+              cleanupFuncs = c3.cleanupFuncs;
+              const obj11 = outer1_0(outer1_2[9]);
+              const obj5 = { type: "USER_SETTINGS_PROTO_UPDATE", settings: null, resetEditInfo: null, local: false };
+              const obj6 = { type: null, proto: null };
+              obj6[0] = closure_1.type;
+              obj6[1] = closure_1;
+              obj5[1] = obj6;
+              let tmp17 = isDirty;
+              if (!isDirty) {
+                tmp17 = settings;
+              }
+              obj5[2] = tmp17;
+              proto = 3;
+              isDirty = 1;
+              const obj7 = { value: null, done: false };
+              obj7[0] = outer1_1(outer1_2[4]).dispatch(obj5);
+              return obj7;
+            }
+            const obj10 = outer1_0(outer1_2[9]);
+          }
+        } else if (arg0 === 1) {
+          isDirty = 3;
+          throw arg1;
+        } else if (arg0 === 2) {
+          c3 = 0;
+          isDirty = 3;
+          const obj8 = { value: null, done: true };
+          obj8[0] = arg1;
+          return obj8;
+        } else {
+          if (isDirty) {
+            const result = closure_1.markDirtyFromMigration(proto, cleanupFuncs);
+          }
+          c3 = 0;
+          isDirty = 3;
+          obj = { value: null, done: true };
+          obj[0] = closure_1;
+          return obj;
+        }
+      } catch (tmp36) {
+        closure_2 = tmp36;
+        if (tmp4 === c3) {
+          isDirty = tmp2;
+          throw tmp36;
+        } else {
+          proto = tmp;
+        }
+      }
+    }
+  })();
+};
+prototype["markDirtyFromMigration"] = function markDirtyFromMigration(c4, cleanupFuncs) {
+  importDefault(38)(true, "this cannot run in the overlay");
+  const logger = this.logger;
+  logger.log("Marking dirty due to migrates");
+  importDefault(38)(null == this.getEditInfo().editInfo.offlineEditDataVersion, "offline changes are not supported with migrations");
+  this.markDirty(c4, { cleanup: cleanupFuncs, dispatch: false, delaySeconds: UserSettingsDelay.AUTOMATED, jitter: true });
+};
+prototype["markDirtyIfHasPendingChange"] = function markDirtyIfHasPendingChange(arg0) {
+  let ProtoClass;
+  let markDirty;
+  const self = this;
+  if (beforeSendCallbacks.some((hasChanges) => hasChanges.hasChanges())) {
+    ({ ProtoClass, markDirty } = self);
+    const obj = { dispatch: false, delaySeconds: 0, cleanup: null };
+    obj[2] = arg0;
+    markDirty(ProtoClass.create(), obj);
+  }
+};
+prototype["scheduleSaveFromOfflineEdit"] = function scheduleSaveFromOfflineEdit() {
+  importDefault(38)(true, "this cannot run in the overlay");
+  const logger = this.logger;
+  logger.log("Scheduling save from offline edit");
+  const editInfo = this.getEditInfo().editInfo;
+  importDefault(38)(null != editInfo.protoToSave, "protoToSave cannot be null");
+  importDefault(38)(null != editInfo.offlineEditDataVersion, "offlineEditDataVersion cannot be null");
+  importDefault(38)(null == editInfo.timeout, "timeout must not be set already");
+  const sum = 5000 + Math.floor(5000 * Math.random());
+  this.dispatchChanges({ timeout: setTimeout(this.persistChanges, sum), timeoutDelay: sum });
+};
+function updateUserAllGuildSettings(arg0, INFREQUENT_USER_ACTION) {
+  let closure_0 = arg0;
+  return obj.updateAsync("guilds", (arg0) => f69078(arg0), INFREQUENT_USER_ACTION);
+}
+function setGuildThemeSourcePreferenceOverride(id, arg1) {
+  let closure_0 = arg1;
+  closure_0 = id;
+  const f69068 = (arg0) => {
+    arg0.guildThemeSourcePreference = closure_0;
+  };
+  return obj.updateAsync("guilds", (guilds) => callback(outer1_2[9]).mutateUserGuildSettingsInternal(guilds, callback, f69075), UserSettingsDelay.INFREQUENT_USER_ACTION);
+}
+obj = Object.create(UserSettingsProtoActionCreators.prototype);
+obj.beforeSendCallbacks = [];
+obj.lastSendTime = 0;
+obj.persistChanges = importDefaultResult(function*() {
+  if (config === 2) {
+    config = 3;
+    HermesBuiltin.throwTypeError();
+  } else if (tmp6 === 3) {
+    if (arg0 === 1) {
+      throw arg1;
+    } else if (arg0 === 2) {
+      let obj = { value: null, done: true };
+      obj[0] = arg1;
+      return obj;
+    } else {
+      return { value: "HermesInternal", done: null };
+    }
+  } else {
+    try {
+      config = 2;
+      if (0 === timeout) {
+        if (arg0 === 1) {
+          config = 3;
+          throw arg1;
+        } else if (arg0 === 2) {
+          config = 3;
+          obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
+        } else {
+          let body = tmp3;
+          let editInfo = tmp7;
+          editInfo = undefined;
+          body = undefined;
+          let closure_2;
+          let c3;
+          timeout = undefined;
+          let logResult = outer1_1;
+          logResult = outer1_2;
+          logResult = outer1_1(outer1_2[7])(true, "this cannot run in the overlay");
+          logResult = outer1_0;
+          const logger7 = outer1_0.logger;
+          logResult = logger7.log("Persisting proto");
+          logResult = outer1_0;
+          editInfo = outer1_0.getEditInfo().editInfo;
+          if (null != editInfo.protoToSave) {
+            const item = outer1_0.beforeSendCallbacks.forEach((processProto) => processProto.processProto(editInfo.protoToSave));
+            let obj6 = outer1_0(outer1_2[9]);
+            const protoToB64Result = obj6.protoToB64(outer1_0.ProtoClass, editInfo.protoToSave);
+            if (null != protoToB64Result) {
+              if ("" !== protoToB64Result) {
+                c3 = 1;
+                outer1_0.saveLastSendTime();
+                const HTTP = outer1_0(outer1_2[10]).HTTP;
+                let obj1 = { url: null, body: null, rejectWithError: false };
+                obj1[0] = outer1_8.USER_SETTINGS_PROTO(outer1_0.type);
+                const obj2 = { settings: null, required_data_version: null };
+                obj2[0] = protoToB64Result;
+                obj2[1] = editInfo.offlineEditDataVersion;
+                obj1[1] = obj2;
+                timeout = 2;
+                config = 1;
+                const obj3 = { value: null, done: false };
+                obj3[0] = HTTP.patch(obj1);
+                return obj3;
+              }
+            }
+            const logger5 = outer1_0.logger;
+            logger5.log("Not persisting proto because there is nothing to change");
+            const beforeSendCallbacks = outer1_0.beforeSendCallbacks;
+          } else {
+            const logger4 = outer1_0.logger;
+            logger4.log("Not persisting proto because the proto was null");
+          }
+        }
+      } else {
+        if (1 === tmp7) {
+          c3 = 0;
+          config = closure_2;
+          if (429 !== config.status) {
+            if (400 === config.status) {
+              body = config.body;
+              let code;
+              if (body != null) {
+                code = body.code;
+              }
+              if (code === outer1_7.INVALID_USER_SETTINGS_DATA) {
+                const logger3 = outer1_0.logger;
+                logger3.log("Reloading do to invalid data");
+                const item1 = outer1_0.getEditInfo().editInfo.errorCallbacks.forEach((arg0) => arg0());
+                const ifNecessary = outer1_0.loadIfNecessary(true);
+                let tmp57 = config;
+                const errorCallbacks = outer1_0.getEditInfo().editInfo.errorCallbacks;
+              }
+              throw tmp57;
+            }
+            const logger2 = outer1_0.logger;
+            logger2.log("Unknown user settings error");
+            const item2 = outer1_0.getEditInfo().editInfo.errorCallbacks.forEach((arg0) => arg0());
+            tmp57 = config;
+            const errorCallbacks1 = outer1_0.getEditInfo().editInfo.errorCallbacks;
+          } else {
+            const logger6 = editInfo.logger;
+            logger6.log("Rate limited, scheduling retry");
+            const _parseInt = parseInt;
+            c3 = parseInt(config.headers["retry-after"]);
+            const _isNaN = isNaN;
+            if (isNaN(c3)) {
+              c3 = 60;
+            }
+            const _setTimeout = setTimeout;
+            const _Math = Math;
+            const result = 30 * outer1_1(outer1_2[8]).Millis.SECOND;
+            timeout = setTimeout(outer1_0.persistChanges, Math.min(result, c3 * outer1_1(outer1_2[8]).Millis.SECOND));
+            const obj4 = { rateLimited: true, timeout: null };
+            obj4[1] = timeout;
+            outer1_0.dispatchChanges(obj4);
+          }
+        } else if (arg0 === 1) {
+          config = 3;
+          throw arg1;
+        } else if (arg0 === 2) {
+          c3 = 0;
+          config = 3;
+          const obj5 = { value: null, done: true };
+          obj5[0] = arg1;
+          return obj5;
+        } else {
+          body = arg1.body;
+          if (body.out_of_date) {
+            const logger = editInfo.logger;
+            logger.log("Proto was out of date, discarding changes");
+          }
+          const cleanupFuncs = editInfo.getEditInfo().editInfo.cleanupFuncs;
+          const item3 = cleanupFuncs.forEach((arg0) => arg0());
+          obj = outer1_0(outer1_2[9]);
+          closure_2 = obj.b64ToProto(editInfo.ProtoClass, body.settings);
+          if (null != closure_2) {
+            obj1 = outer1_1(outer1_2[4]);
+            obj6 = { type: "USER_SETTINGS_PROTO_UPDATE", settings: null, resetEditInfo: true, wasSaved: true, local: false };
+            const obj7 = { proto: null, type: null };
+            obj7[0] = closure_2;
+            obj7[1] = editInfo.type;
+            obj6[1] = obj7;
+            obj1.dispatch(obj6);
+            c3 = 0;
+          }
+        }
+        c3 = 0;
+        config = 3;
+        return { value: "HermesInternal", done: null };
+      }
+      config = 3;
+    } catch (tmp82) {
+      closure_2 = tmp82;
+      if (tmp4 === c3) {
+        config = tmp2;
+        throw tmp82;
+      } else {
+        timeout = logResult;
+      }
     }
   }
-  let obj = {
-    key: "getEditInfo",
-    value() {
-      return outer1_6.getFullState()[this.type];
-    }
-  };
-  let items = [obj, , , , , , , , , , ];
-  obj = {
-    key: "getCurrentValue",
-    value() {
-      return this.getEditInfo().proto;
-    }
-  };
-  items[1] = obj;
-  obj = { key: "updateAsync" };
-  let closure_1 = callback(async function(arg0, arg1, arg2, arg3) {
-    const self = this;
-    yield self.loadIfNecessary();
-    let obj = callback(UserSettingsProtoActionCreators[12]);
-    const protoFieldClass = obj.getProtoFieldClass(self.ProtoClass, arg0);
-    const modifiedProto = callback(UserSettingsProtoActionCreators[12]).createModifiedProto(self.getCurrentValue()[arg0], arg1, protoFieldClass, self.ProtoClass, arg0);
-    if (null != modifiedProto) {
-      const logger = self.logger;
-      const _String = String;
-      const _HermesInternal = HermesInternal;
-      logger.log("Updating " + String(arg0) + " with delay " + arg2);
-      obj = { delaySeconds: arg2 };
-      let tmp5 = arg2 === outer2_8.AUTOMATED;
-      if (!tmp5) {
-        tmp5 = arg2 === outer2_8.DAILY;
-      }
-      obj.jitter = tmp5;
-      obj.onError = arg3;
-      self.markDirty(modifiedProto, obj);
-    }
-  });
-  obj.value = function updateAsync(favorites, arg1, INFREQUENT_USER_ACTION, onSaveFailed) {
-    return callback2(...arguments);
-  };
-  items[2] = obj;
-  items[3] = {
-    key: "markDirty",
-    value(proto, dispatch) {
-      const self = this;
-      callback2(UserSettingsProtoActionCreators[7])(true, "this cannot run in the overlay");
-      const editInfo = this.getEditInfo().editInfo;
-      let obj = { timeout: editInfo.timeout };
-      if (editInfo.loaded) {
-        if (false !== dispatch.dispatch) {
-          obj = { type: "USER_SETTINGS_PROTO_UPDATE", settings: null, partial: true, local: true };
-          obj = { type: self.type, proto };
-          obj.settings = obj;
-          callback2(UserSettingsProtoActionCreators[6]).dispatch(obj);
-          const obj2 = callback2(UserSettingsProtoActionCreators[6]);
-        }
-        const delaySeconds = dispatch.delaySeconds;
-        let num2 = 0;
-        if (null != delaySeconds) {
-          num2 = delaySeconds;
-        }
-        if (tmp7) {
-          const _clearTimeout = clearTimeout;
-          clearTimeout(obj.timeout);
-          obj.timeout = undefined;
-        }
-        if (null == obj.timeout) {
-          const result = num2 * callback2(UserSettingsProtoActionCreators[10]).Millis.SECOND;
-          let sum = result;
-          if (dispatch.jitter) {
-            const _Math = Math;
-            const _Math2 = Math;
-            const _Math3 = Math;
-            const random = Math.random();
-            sum = result + Math.floor(random * Math.min(result, 30 * callback2(UserSettingsProtoActionCreators[10]).Millis.SECOND));
-          }
-          const logger = self.logger;
-          logger.log("Scheduling save from markDirty");
-          const _setTimeout = setTimeout;
-          obj.timeout = setTimeout(self.persistChanges, sum);
-          obj.timeoutDelay = num2;
-        }
-        if (null != dispatch.cleanup) {
-          const items = [];
-          let arraySpreadResult = HermesBuiltin.arraySpread(dispatch.cleanup, HermesBuiltin.arraySpread(editInfo.cleanupFuncs, 0));
-          obj.cleanupFuncs = items;
-        }
-        let hasItem = null == dispatch.onError;
-        if (!hasItem) {
-          hasItem = editInfo.errorCallbacks.includes(dispatch.onError);
-          const errorCallbacks = editInfo.errorCallbacks;
-        }
-        if (!hasItem) {
-          const items1 = [];
-          arraySpreadResult = HermesBuiltin.arraySpread(editInfo.errorCallbacks, 0);
-          items1[arraySpreadResult] = dispatch.onError;
-          const sum1 = arraySpreadResult + 1;
-          obj.errorCallbacks = items1;
-        }
-        if (null == editInfo.protoToSave) {
-          obj.protoToSave = proto;
-        } else {
-          obj.protoToSave = callback(UserSettingsProtoActionCreators[8]).mergeTopLevelFields(self.ProtoClass, editInfo.protoToSave, proto);
-          const obj5 = callback(UserSettingsProtoActionCreators[8]);
-        }
-        self.dispatchChanges(obj);
-      } else {
-        const _Error = Error;
-        throw Error("Cannot edit user settings proto because we have not yet loaded the stored version from the DB");
-      }
-    }
-  };
-  items[4] = {
-    key: "dispatchChanges",
-    value(changes) {
-      let obj = callback2(UserSettingsProtoActionCreators[6]);
-      obj = { changes, type: this.type };
-      obj.dispatch({ type: "USER_SETTINGS_PROTO_UPDATE_EDIT_INFO", settings: obj });
-    }
-  };
-  items[5] = {
-    key: "saveLastSendTime",
-    value() {
-      const Storage = callback(UserSettingsProtoActionCreators[13]).Storage;
-      let obj = Storage.get("UserSettingsProtoLastWriteTimes");
-      if (null == obj) {
-        obj = {};
-      }
-      obj[this.type] = Date.now();
-      const Storage2 = callback(UserSettingsProtoActionCreators[13]).Storage;
-      const result = Storage2.set("UserSettingsProtoLastWriteTimes", obj);
-    }
-  };
-  items[6] = {
-    key: "loadIfUncached",
-    value(FRECENCY_AND_FAVORITES_SETTINGS) {
-      const self = this;
-      let hasLoadedResult = outer1_6.hasLoaded(FRECENCY_AND_FAVORITES_SETTINGS);
-      if (hasLoadedResult) {
-        hasLoadedResult = true !== arg1;
-      }
-      if (!hasLoadedResult) {
-        const ifNecessary = self.loadIfNecessary(arg1);
-      }
-    }
-  };
-  let obj5 = { key: "loadIfNecessary" };
-  let closure_0 = callback(async function(arg0) {
-    let cleanupFuncs;
-    let proto;
-    const self = this;
-    const editInfo = self.getEditInfo().editInfo;
-    const logger = self.logger;
-    logger.log("Loading proto");
-    self.dispatchChanges({ loading: true });
-    const HTTP = callback(UserSettingsProtoActionCreators[9]).HTTP;
-    let obj = { url: outer2_10.USER_SETTINGS_PROTO(self.type), rejectWithError: false };
-    const b64ToProtoResult = callback(UserSettingsProtoActionCreators[8]).b64ToProto(self.ProtoClass, yield HTTP.get(obj).body.settings);
-    if (null == b64ToProtoResult) {
-      self.dispatchChanges({ loading: false, loaded: true });
+});
+obj.ProtoClass = require("create").PreloadedUserSettings;
+obj.type = UserSettingsTypes.PRELOADED_USER_SETTINGS;
+obj.logger = new require("ME")(obj.ProtoClass.typeName);
+obj = Object.create(UserSettingsProtoActionCreators.prototype);
+obj.beforeSendCallbacks = [];
+obj.lastSendTime = 0;
+obj.persistChanges = importDefaultResult(function*() {
+  if (config === 2) {
+    config = 3;
+    HermesBuiltin.throwTypeError();
+  } else if (tmp6 === 3) {
+    if (arg0 === 1) {
+      throw arg1;
+    } else if (arg0 === 2) {
+      let obj = { value: null, done: true };
+      obj[0] = arg1;
+      return obj;
     } else {
-      const runMigrationsResult = callback(UserSettingsProtoActionCreators[8]).runMigrations(tmp4, callback2(UserSettingsProtoActionCreators[14])[self.type]);
-      const isDirty = runMigrationsResult.isDirty;
-      ({ proto, cleanupFuncs } = runMigrationsResult);
-      const obj3 = callback(UserSettingsProtoActionCreators[8]);
-      obj = { type: "USER_SETTINGS_PROTO_UPDATE" };
-      obj = { type: self.type, proto: tmp4 };
-      obj.settings = obj;
-      let tmp5 = isDirty;
-      if (!isDirty) {
-        tmp5 = arg0;
+      return { value: "HermesInternal", done: null };
+    }
+  } else {
+    try {
+      config = 2;
+      if (0 === timeout) {
+        if (arg0 === 1) {
+          config = 3;
+          throw arg1;
+        } else if (arg0 === 2) {
+          config = 3;
+          obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
+        } else {
+          let body = tmp3;
+          let editInfo = tmp7;
+          editInfo = undefined;
+          body = undefined;
+          let closure_2;
+          let c3;
+          timeout = undefined;
+          let logResult = outer1_1;
+          logResult = outer1_2;
+          logResult = outer1_1(outer1_2[7])(true, "this cannot run in the overlay");
+          logResult = outer1_0;
+          const logger7 = outer1_0.logger;
+          logResult = logger7.log("Persisting proto");
+          logResult = outer1_0;
+          editInfo = outer1_0.getEditInfo().editInfo;
+          if (null != editInfo.protoToSave) {
+            const item = outer1_0.beforeSendCallbacks.forEach((processProto) => processProto.processProto(editInfo.protoToSave));
+            let obj6 = outer1_0(outer1_2[9]);
+            const protoToB64Result = obj6.protoToB64(outer1_0.ProtoClass, editInfo.protoToSave);
+            if (null != protoToB64Result) {
+              if ("" !== protoToB64Result) {
+                c3 = 1;
+                outer1_0.saveLastSendTime();
+                const HTTP = outer1_0(outer1_2[10]).HTTP;
+                let obj1 = { url: null, body: null, rejectWithError: false };
+                obj1[0] = outer1_8.USER_SETTINGS_PROTO(outer1_0.type);
+                const obj2 = { settings: null, required_data_version: null };
+                obj2[0] = protoToB64Result;
+                obj2[1] = editInfo.offlineEditDataVersion;
+                obj1[1] = obj2;
+                timeout = 2;
+                config = 1;
+                const obj3 = { value: null, done: false };
+                obj3[0] = HTTP.patch(obj1);
+                return obj3;
+              }
+            }
+            const logger5 = outer1_0.logger;
+            logger5.log("Not persisting proto because there is nothing to change");
+            const beforeSendCallbacks = outer1_0.beforeSendCallbacks;
+          } else {
+            const logger4 = outer1_0.logger;
+            logger4.log("Not persisting proto because the proto was null");
+          }
+        }
+      } else {
+        if (1 === tmp7) {
+          c3 = 0;
+          config = closure_2;
+          if (429 !== config.status) {
+            if (400 === config.status) {
+              body = config.body;
+              let code;
+              if (body != null) {
+                code = body.code;
+              }
+              if (code === outer1_7.INVALID_USER_SETTINGS_DATA) {
+                const logger3 = outer1_0.logger;
+                logger3.log("Reloading do to invalid data");
+                const item1 = outer1_0.getEditInfo().editInfo.errorCallbacks.forEach((arg0) => arg0());
+                const ifNecessary = outer1_0.loadIfNecessary(true);
+                let tmp57 = config;
+                const errorCallbacks = outer1_0.getEditInfo().editInfo.errorCallbacks;
+              }
+              throw tmp57;
+            }
+            const logger2 = outer1_0.logger;
+            logger2.log("Unknown user settings error");
+            const item2 = outer1_0.getEditInfo().editInfo.errorCallbacks.forEach((arg0) => arg0());
+            tmp57 = config;
+            const errorCallbacks1 = outer1_0.getEditInfo().editInfo.errorCallbacks;
+          } else {
+            const logger6 = editInfo.logger;
+            logger6.log("Rate limited, scheduling retry");
+            const _parseInt = parseInt;
+            c3 = parseInt(config.headers["retry-after"]);
+            const _isNaN = isNaN;
+            if (isNaN(c3)) {
+              c3 = 60;
+            }
+            const _setTimeout = setTimeout;
+            const _Math = Math;
+            const result = 30 * outer1_1(outer1_2[8]).Millis.SECOND;
+            timeout = setTimeout(outer1_0.persistChanges, Math.min(result, c3 * outer1_1(outer1_2[8]).Millis.SECOND));
+            const obj4 = { rateLimited: true, timeout: null };
+            obj4[1] = timeout;
+            outer1_0.dispatchChanges(obj4);
+          }
+        } else if (arg0 === 1) {
+          config = 3;
+          throw arg1;
+        } else if (arg0 === 2) {
+          c3 = 0;
+          config = 3;
+          const obj5 = { value: null, done: true };
+          obj5[0] = arg1;
+          return obj5;
+        } else {
+          body = arg1.body;
+          if (body.out_of_date) {
+            const logger = editInfo.logger;
+            logger.log("Proto was out of date, discarding changes");
+          }
+          const cleanupFuncs = editInfo.getEditInfo().editInfo.cleanupFuncs;
+          const item3 = cleanupFuncs.forEach((arg0) => arg0());
+          obj = outer1_0(outer1_2[9]);
+          closure_2 = obj.b64ToProto(editInfo.ProtoClass, body.settings);
+          if (null != closure_2) {
+            obj1 = outer1_1(outer1_2[4]);
+            obj6 = { type: "USER_SETTINGS_PROTO_UPDATE", settings: null, resetEditInfo: true, wasSaved: true, local: false };
+            const obj7 = { proto: null, type: null };
+            obj7[0] = closure_2;
+            obj7[1] = editInfo.type;
+            obj6[1] = obj7;
+            obj1.dispatch(obj6);
+            c3 = 0;
+          }
+        }
+        c3 = 0;
+        config = 3;
+        return { value: "HermesInternal", done: null };
       }
-      obj.resetEditInfo = tmp5;
-      obj.local = false;
-      yield callback2(UserSettingsProtoActionCreators[6]).dispatch(obj);
-      if (isDirty) {
-        const result = self.markDirtyFromMigration(proto, cleanupFuncs);
-      }
-      return b64ToProtoResult;
-    }
-    const obj2 = callback(UserSettingsProtoActionCreators[8]);
-  });
-  obj5.value = function loadIfNecessary(arg0) {
-    return callback(...arguments);
-  };
-  items[7] = obj5;
-  items[8] = {
-    key: "markDirtyFromMigration",
-    value(arg0, cleanup) {
-      callback2(UserSettingsProtoActionCreators[7])(true, "this cannot run in the overlay");
-      const logger = this.logger;
-      logger.log("Marking dirty due to migrates");
-      callback2(UserSettingsProtoActionCreators[7])(null == this.getEditInfo().editInfo.offlineEditDataVersion, "offline changes are not supported with migrations");
-      this.markDirty(arg0, { cleanup, dispatch: false, delaySeconds: outer1_8.AUTOMATED, jitter: true });
-    }
-  };
-  items[9] = {
-    key: "markDirtyIfHasPendingChange",
-    value(cleanup) {
-      let ProtoClass;
-      let markDirty;
-      const self = this;
-      if (beforeSendCallbacks.some((hasChanges) => hasChanges.hasChanges())) {
-        ({ ProtoClass, markDirty } = self);
-        const obj = { dispatch: false, delaySeconds: 0, cleanup };
-        markDirty(ProtoClass.create(), obj);
+      config = 3;
+    } catch (tmp82) {
+      closure_2 = tmp82;
+      if (tmp4 === c3) {
+        config = tmp2;
+        throw tmp82;
+      } else {
+        timeout = logResult;
       }
     }
-  };
-  items[10] = {
-    key: "scheduleSaveFromOfflineEdit",
-    value() {
-      callback2(UserSettingsProtoActionCreators[7])(true, "this cannot run in the overlay");
-      const logger = this.logger;
-      logger.log("Scheduling save from offline edit");
-      const editInfo = this.getEditInfo().editInfo;
-      callback2(UserSettingsProtoActionCreators[7])(null != editInfo.protoToSave, "protoToSave cannot be null");
-      callback2(UserSettingsProtoActionCreators[7])(null != editInfo.offlineEditDataVersion, "offlineEditDataVersion cannot be null");
-      callback2(UserSettingsProtoActionCreators[7])(null == editInfo.timeout, "timeout must not be set already");
-      const sum = 5000 + Math.floor(5000 * Math.random());
-      this.dispatchChanges({ timeout: setTimeout(this.persistChanges, sum), timeoutDelay: sum });
-    }
-  };
-  return callback2(UserSettingsProtoActionCreators, items);
-})();
-tmp9 = new tmp9(require("_callSuper").PreloadedUserSettings, UserSettingsTypes.PRELOADED_USER_SETTINGS);
-let closure_12 = tmp9;
-tmp9 = new tmp9(require("_callSuper").FrecencyUserSettings, UserSettingsTypes.FRECENCY_AND_FAVORITES_SETTINGS);
-let result = require("_defineProperties").fileFinishedImporting("modules/user_settings/UserSettingsProtoActionCreators.tsx");
+  }
+});
+obj.ProtoClass = require("create").FrecencyUserSettings;
+obj.type = UserSettingsTypes.FRECENCY_AND_FAVORITES_SETTINGS;
+let tmp9 = new require("ME")(obj.ProtoClass.typeName);
+obj.logger = new require("ME")(obj.ProtoClass.typeName);
+let tmp11 = new require("ME")(obj.ProtoClass.typeName);
+let result = require("MAX_FAVORITES").fileFinishedImporting("modules/user_settings/UserSettingsProtoActionCreators.tsx");
 
 export const UserSettingsDelay = require("MAX_FAVORITES").UserSettingsDelay;
 export function markUserSettingsLoadOkayForDevelopment() {
 
 }
-export const UserSettingsProtoActionCreators = tmp9;
-export const PreloadedUserSettingsActionCreators = tmp9;
-export const FrecencyUserSettingsActionCreators = tmp9;
-export const UserSettingsActionCreatorsByType = { [UserSettingsTypes.PRELOADED_USER_SETTINGS]: tmp9, [UserSettingsTypes.FRECENCY_AND_FAVORITES_SETTINGS]: tmp9 };
+export { UserSettingsProtoActionCreators };
+export const PreloadedUserSettingsActionCreators = obj;
+export const FrecencyUserSettingsActionCreators = obj;
+export const UserSettingsActionCreatorsByType = { [UserSettingsTypes.PRELOADED_USER_SETTINGS]: obj, [UserSettingsTypes.FRECENCY_AND_FAVORITES_SETTINGS]: obj };
 export { updateUserAllGuildSettings };
 export { updateUserGuildSettings };
-export const setDefaultGuildThemePreference = function setDefaultGuildThemePreference(arg0) {
-  let closure_0 = arg0;
-  return tmp9.updateAsync("appearance", (defaultGuildThemePreference) => {
+export const setDefaultGuildThemePreference = function setDefaultGuildThemePreference(GUILD) {
+  let closure_0 = GUILD;
+  return obj.updateAsync("appearance", (defaultGuildThemePreference) => {
     let UNSPECIFIED = defaultGuildThemePreference.defaultGuildThemePreference;
-    if (null == UNSPECIFIED) {
-      UNSPECIFIED = callback(outer1_2[15]).GuildThemeSourcePreference.UNSPECIFIED;
+    if (UNSPECIFIED == null) {
+      UNSPECIFIED = GUILD(outer1_2[13]).GuildThemeSourcePreference.UNSPECIFIED;
     }
-    if (UNSPECIFIED === callback) {
+    if (UNSPECIFIED === GUILD) {
       return false;
     } else {
-      defaultGuildThemePreference.defaultGuildThemePreference = callback;
+      defaultGuildThemePreference.defaultGuildThemePreference = tmp3;
     }
   }, UserSettingsDelay.INFREQUENT_USER_ACTION);
 };
 export { setGuildThemeSourcePreferenceOverride };
-export const clearGuildThemeSourcePreferenceOverride = function clearGuildThemeSourcePreferenceOverride(id) {
-  return setGuildThemeSourcePreferenceOverride(id, require(1282) /* _callSuper */.GuildThemeSourcePreference.UNSPECIFIED);
+export const clearGuildThemeSourcePreferenceOverride = function clearGuildThemeSourcePreferenceOverride(closure_0) {
+  obj = obj(1306).GuildThemeSourcePreference.UNSPECIFIED;
+  obj = closure_0;
+  const f69068 = (arg0) => {
+    arg0.guildThemeSourcePreference = closure_0;
+  };
+  return obj.updateAsync("guilds", (guilds) => callback(outer1_2[9]).mutateUserGuildSettingsInternal(guilds, callback, f69075), UserSettingsDelay.INFREQUENT_USER_ACTION);
 };
-export const updateUserChannelSettings = function updateUserChannelSettings(arg0, arg1, arg2, arg3) {
+export const updateUserChannelSettings = function updateUserChannelSettings(arg0, arg1, arg2, INFREQUENT_USER_ACTION) {
   let closure_0 = arg1;
-  let closure_1 = arg2;
-  return updateUserGuildSettings(arg0, (channels) => callback(outer1_2[8]).mutateUserChannelSettingsInternal(channels, callback, closure_1), arg3);
+  let f69075 = arg2;
+  closure_0 = arg0;
+  f69075 = (channels) => callback(outer1_2[9]).mutateUserChannelSettingsInternal(channels, callback, f69075);
+  return obj.updateAsync("guilds", (guilds) => callback(outer1_2[9]).mutateUserGuildSettingsInternal(guilds, callback, f69075), INFREQUENT_USER_ACTION);
 };
 export const addDismissedContent = function addDismissedContent(closure_0) {
-  (function trackDismissibleContentDismissedBeforeConnectionOpen(closure_0) {
-    if (!outer1_6.hasLoaded(outer1_7.PRELOADED_USER_SETTINGS)) {
-      const userContent = outer1_6.settings.userContent;
-      let dismissedContents;
-      if (null != userContent) {
-        dismissedContents = userContent.dismissedContents;
-      }
-      let hasBitResult = null != dismissedContents;
-      if (hasBitResult) {
-        let obj = callback(outer1_2[17]);
-        hasBitResult = obj.hasBit(dismissedContents, closure_0);
-      }
-      if (!hasBitResult) {
-        obj = { content_type: callback(outer1_2[19]).DismissibleContent[closure_0] };
-        outer1_1(outer1_2[18]).track(outer1_11.DISMISSIBLE_CONTENT_DISMISSED_BEFORE_CONNECTION_OPEN, obj);
-      }
+  let obj = closure_0;
+  if (!handleConnectionClosedOrResumed.hasLoaded(UserSettingsTypes.PRELOADED_USER_SETTINGS)) {
+    const userContent = handleConnectionClosedOrResumed.settings.userContent;
+    let dismissedContents;
+    if (userContent != null) {
+      dismissedContents = userContent.dismissedContents;
     }
-  })(closure_0);
-  return tmp9.updateAsync("userContent", (dismissedContents) => {
+    let hasBitResult = null != dismissedContents;
+    if (hasBitResult) {
+      obj = obj(1357);
+      hasBitResult = obj.hasBit(dismissedContents, closure_0);
+    }
+    if (!hasBitResult) {
+      obj = { content_type: null };
+      obj[0] = obj(1358).DismissibleContent[closure_0];
+      importDefault(698).track(constants.DISMISSIBLE_CONTENT_DISMISSED_BEFORE_CONNECTION_OPEN, obj);
+      const obj2 = importDefault(698);
+    }
+  }
+  return obj.updateAsync("userContent", (dismissedContents) => {
     if (obj.hasBit(dismissedContents.dismissedContents, callback)) {
       return false;
     } else {
-      dismissedContents.dismissedContents = callback(outer1_2[17]).addBit(dismissedContents.dismissedContents, callback);
+      dismissedContents.dismissedContents = tmp(tmp2[15]).addBit(dismissedContents.dismissedContents, tmp3);
     }
-    obj = callback(outer1_2[17]);
+    obj = callback(outer1_2[15]);
+    tmp = callback;
+    tmp2 = outer1_2;
+    tmp3 = callback;
   }, UserSettingsDelay.INFREQUENT_USER_ACTION);
 };
 export { updateRecurringDismissibleContentState };
-export const updateGuildDismissedContent = function updateGuildDismissedContent(content, guildId, arg2) {
-  return _updateGuildDismissedContent(...arguments);
+export const updateGuildDismissedContent = function updateGuildDismissedContent(closure_0, closure_2, arg2) {
+  const self = this;
+  const apply = _updateGuildDismissedContent.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
 };
 export const removeDismissedContent = function removeDismissedContent(DOUBLE_TAP_TO_REACT_EXPANDED_UPSELL) {
   let closure_0 = DOUBLE_TAP_TO_REACT_EXPANDED_UPSELL;
-  return tmp9.updateAsync("userContent", (dismissedContents) => {
+  return obj.updateAsync("userContent", (dismissedContents) => {
     if (obj.hasBit(dismissedContents.dismissedContents, DOUBLE_TAP_TO_REACT_EXPANDED_UPSELL)) {
-      dismissedContents.dismissedContents = DOUBLE_TAP_TO_REACT_EXPANDED_UPSELL(outer1_2[17]).removeBit(dismissedContents.dismissedContents, DOUBLE_TAP_TO_REACT_EXPANDED_UPSELL);
+      dismissedContents.dismissedContents = tmp(tmp2[15]).removeBit(dismissedContents.dismissedContents, tmp3);
     } else {
       return false;
     }
-    obj = DOUBLE_TAP_TO_REACT_EXPANDED_UPSELL(outer1_2[17]);
+    obj = DOUBLE_TAP_TO_REACT_EXPANDED_UPSELL(outer1_2[15]);
+    tmp = DOUBLE_TAP_TO_REACT_EXPANDED_UPSELL;
+    tmp2 = outer1_2;
+    tmp3 = DOUBLE_TAP_TO_REACT_EXPANDED_UPSELL;
   }, UserSettingsDelay.INFREQUENT_USER_ACTION);
 };
 export const removeDismissedRecurringContent = function removeDismissedRecurringContent(GUILD_POWERUP_NOTIFICATION) {
   return updateRecurringDismissibleContentState(GUILD_POWERUP_NOTIFICATION, { lastDismissedVersion: 0, lastDismissedAtMs: "0", lastDismissedObjectId: "0", numTimesDismissed: 0 });
 };
 export const clearGuildDismissedContents = function clearGuildDismissedContents() {
-  return updateUserAllGuildSettings((guilds) => {
+  const f69078 = (guilds) => {
     if (null != guilds.guilds) {
       const _Object = Object;
       const values = Object.values(guilds.guilds);
-      for (let num = 0; num < values.length; num = num + 1) {
-        let tmp2 = values[num];
-        if (null != tmp2) {
-          tmp2.guildDismissibleContentStates = {};
+      for (const item10013 of values) {
+        let tmp5 = item10013;
+        if (null != item10013) {
+          let tmp6 = item10013;
+          tmp5.guildDismissibleContentStates = {};
           let _Uint8Array = Uint8Array;
-          let tmp3 = new.target;
-          let tmp4 = new.target;
+          let tmp7 = new.target;
+          let tmp8 = new.target;
           let uint8Array = new Uint8Array();
-          let tmp6 = uint8Array;
-          tmp2.dismissedGuildContent = uint8Array;
+          let tmp10 = uint8Array;
+          tmp5.dismissedGuildContent = uint8Array;
         }
+        continue;
       }
     }
-  }, UserSettingsDelay.INFREQUENT_USER_ACTION);
+  };
+  return obj.updateAsync("guilds", (arg0) => f69078(arg0), UserSettingsDelay.INFREQUENT_USER_ACTION);
 };
 export const clearDismissedContents = function clearDismissedContents() {
-  return tmp9.updateAsync("userContent", (arg0) => {
+  return obj.updateAsync("userContent", (arg0) => {
     const uint8Array = new Uint8Array();
     arg0.dismissedContents = uint8Array;
     arg0.recurringDismissibleContentStates = {};
   }, UserSettingsDelay.INFREQUENT_USER_ACTION);
 };
 export const checkAllDismissedContents = function checkAllDismissedContents() {
-  return tmp9.updateAsync("userContent", (recurringDismissibleContentStates) => {
-    let iter3;
-    const uint8Array = new Uint8Array();
-    const tmp2 = outer1_13(outer1_0(outer1_2[20]).ALL_DISMISSIBLE_CONTENT);
-    const iter = tmp2();
-    let iter2 = iter;
-    let tmp3 = uint8Array;
-    let tmp4 = uint8Array;
-    if (!iter.done) {
-      do {
-        let value = iter2.value;
-        let tmp5 = outer1_0;
-        let tmp6 = outer1_2;
-        let obj = outer1_0(outer1_2[20]);
-        if (obj.isSingleUseDismissibleContent(value)) {
-          let tmp10 = outer1_0;
-          let tmp11 = outer1_2;
-          let obj3 = outer1_0(outer1_2[17]);
-          let addBitResult = obj3.addBit(tmp3, value);
-        } else {
-          let tmp7 = outer1_0;
-          let tmp8 = outer1_2;
-          let obj2 = outer1_0(outer1_2[21]);
-          recurringDismissibleContentStates.recurringDismissibleContentStates[value] = obj2.getDismissedRecurringDismissibleContentState(value);
-          addBitResult = tmp3;
-        }
-        iter3 = tmp2();
-        tmp3 = addBitResult;
-        iter2 = iter3;
-        tmp4 = addBitResult;
-      } while (!iter3.done);
+  return obj.updateAsync("userContent", (recurringDismissibleContentStates) => {
+    let uint8Array = new Uint8Array();
+    for (const item10020 of tmp2) {
+      let tmp3 = item10020;
+      let tmp4 = callback;
+      let tmp5 = callback;
+      let tmp6 = table;
+      let tmp7 = table;
+      let obj = callback(table[18]);
+      if (obj.isSingleUseDismissibleContent(item10020)) {
+        let tmp11 = tmp4;
+        let tmp12 = tmp6;
+        let tmp5Result = tmp5(tmp7[15]);
+        let tmp13 = uint8Array;
+        let tmp14 = item10020;
+        uint8Array = tmp5Result.addBit(uint8Array, tmp3);
+      } else {
+        let tmp8 = item10020;
+        let tmp9 = tmp4;
+        let tmp10 = tmp6;
+        tmp5Result = tmp5(tmp7[19]);
+        arg0.recurringDismissibleContentStates[tmp3] = tmp5Result.getDismissedRecurringDismissibleContentState(tmp3);
+      }
+      continue;
     }
-    recurringDismissibleContentStates.dismissedContents = tmp4;
+    recurringDismissibleContentStates.dismissedContents = uint8Array;
   }, UserSettingsDelay.INFREQUENT_USER_ACTION);
 };

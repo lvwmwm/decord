@@ -1,58 +1,66 @@
-// Module ID: 16191
-// Function ID: 125323
-// Dependencies: [31, 33, 7868, 44, 1882, 8994, 2]
+// Module ID: 16226
+// Function ID: 16227
+// Dependencies: [19, 21, 7891, 38, 1906, 9018, 2]
 
-// Module 16191
-import importAllResult from "result";
+// Module 16226
+import importAllResult from "noop";
 import { jsx } from "jsxProd";
 
 const require = arg1;
+let c3 = importAllResult;
 const memoResult = importAllResult.memo((type) => {
   type = type.type;
   let obj = type(executeStateUpdate[2]);
   const componentStateContext = obj.useComponentStateContext();
   state(executeStateUpdate[3])(null != componentStateContext, "CheckboxActionComponent must be rendered inside a ComponentStateContext");
-  let tmp2;
+  let tmp5;
   if (null != type.default) {
-    obj = { type, value: _default };
-    tmp2 = obj;
+    obj = { type: null, value: null };
+    obj[0] = type;
+    obj[1] = _default;
+    tmp5 = obj;
   }
-  const componentState = componentStateContext.useComponentState(type, tmp2);
+  const componentState = componentStateContext.useComponentState(type, tmp5);
   state = componentState.state;
   executeStateUpdate = componentState.executeStateUpdate;
   const items = [state, type];
   const memo = importAllResult.useMemo(() => {
     let type;
-    if (null != state) {
-      type = state.type;
+    if (state != null) {
+      type = iter.type;
     }
-    let value = type === type;
-    if (value) {
-      value = state.value;
-    }
-    return value;
+    return type === type && state.value;
   }, items);
   const parents = componentStateContext.getParents(type);
   let first;
-  if (null != parents) {
+  if (parents != null) {
     first = parents[0];
   }
   type = undefined;
-  if (null != first) {
+  if (first != null) {
     type = first.type;
   }
-  let tmp8;
+  let tmp11;
   if (type === type(executeStateUpdate[4]).ComponentType.LABEL) {
-    tmp8 = first;
+    tmp11 = first;
   }
-  state(executeStateUpdate[3])(null != tmp8, "CheckboxActionComponent must be a child of a Label component");
-  obj = {};
-  ({ label: obj4.label, description: obj4.description } = tmp8);
-  obj.checked = memo;
-  obj.onToggle = function onToggle(value) {
-    executeStateUpdate({ type, value });
+  state(executeStateUpdate[3])(null != tmp11, "CheckboxActionComponent must be a child of a Label component");
+  obj = {
+    label: tmp11.label,
+    description: tmp11.description,
+    checked: memo,
+    onToggle(value) {
+      executeStateUpdate({ type, value });
+    }
   };
-  return jsx(type(executeStateUpdate[5]).Checkbox, {});
+  return jsx(type(executeStateUpdate[5]).Checkbox, {
+    label: tmp11.label,
+    description: tmp11.description,
+    checked: memo,
+    onToggle(value) {
+      executeStateUpdate({ type, value });
+    }
+  });
 });
 const result = require("isInteractionComponent").fileFinishedImporting("modules/interaction_components/native/actions/CheckboxActionComponent.tsx");
 

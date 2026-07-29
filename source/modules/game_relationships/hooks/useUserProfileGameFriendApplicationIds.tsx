@@ -1,27 +1,29 @@
-// Module ID: 12151
-// Function ID: 95053
+// Module ID: 12175
+// Function ID: 12176
 // Name: useUserProfileGameFriendApplicationIds
-// Dependencies: [31, 3802, 1850, 566, 12032, 2]
+// Dependencies: [19, 3826, 1874, 589, 12056, 2]
 // Exports: useUserProfileGameFriendApplicationIds
 
-// Module 12151 (useUserProfileGameFriendApplicationIds)
-import result from "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_4 from "_isNativeReflectConstruct";
+// Module 12175 (useUserProfileGameFriendApplicationIds)
+import noop from "noop";
+import upsertRelationship from "upsertRelationship";
+import mergeGuildAvatar from "mergeGuildAvatar";
 
 const require = arg1;
 let closure_5 = [];
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/game_relationships/hooks/useUserProfileGameFriendApplicationIds.tsx");
+const result = require("mergeGuildAvatar").fileFinishedImporting("modules/game_relationships/hooks/useUserProfileGameFriendApplicationIds.tsx");
 
 export const useUserProfileGameFriendApplicationIds = function useUserProfileGameFriendApplicationIds(userId) {
   userId = userId.userId;
-  const items = [_isNativeReflectConstruct, closure_4];
+  let stateFromStores;
+  let gameFriendsForUser;
+  const items = [upsertRelationship, mergeGuildAvatar];
   stateFromStores = userId(stateFromStores[3]).useStateFromStores(items, () => {
     let isFriendResult = outer1_3.isFriend(userId);
     if (!isFriendResult) {
       const user = outer1_4.getUser(userId);
       let isProvisional;
-      if (null != user) {
+      if (user != null) {
         isProvisional = user.isProvisional;
       }
       isFriendResult = isProvisional;
@@ -29,7 +31,7 @@ export const useUserProfileGameFriendApplicationIds = function useUserProfileGam
     return isFriendResult;
   });
   const obj = userId(stateFromStores[3]);
-  const gameFriendsForUser = userId(stateFromStores[4]).useGameFriendsForUser(userId);
+  gameFriendsForUser = userId(stateFromStores[4]).useGameFriendsForUser(userId);
   const items1 = [gameFriendsForUser, stateFromStores];
   return gameFriendsForUser.useMemo(() => {
     if (stateFromStores) {

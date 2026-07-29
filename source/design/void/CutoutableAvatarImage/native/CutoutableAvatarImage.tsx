@@ -1,19 +1,18 @@
-// Module ID: 11997
-// Function ID: 92599
+// Module ID: 12021
+// Function ID: 12022
 // Name: StaticNativeCutoutAvatarImage
-// Dependencies: [31, 27, 11998, 33, 3, 1392, 11999, 12000, 7945, 5119, 4026, 4577, 491, 8507, 620, 2]
+// Dependencies: [19, 17, 12022, 21, 3, 1416, 12023, 12024, 7970, 5141, 4050, 4599, 514, 8531, 643, 2]
 
-// Module 11997 (StaticNativeCutoutAvatarImage)
-import importAllResult from "result";
+// Module 12021 (StaticNativeCutoutAvatarImage)
+import importAllResult from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { CHANNEL_SPRING_CONFIG } from "n";
 import jsxProd from "jsxProd";
-import importDefaultResult from "jsxProd";
 
-let closure_4;
-let closure_5;
-let closure_7;
-let closure_8;
+let c4;
+let c5;
+let error;
+let metroImportAll;
 const require = arg1;
 function StaticNativeCutoutAvatarImage(cutout) {
   let imageStyle;
@@ -26,11 +25,11 @@ function StaticNativeCutoutAvatarImage(cutout) {
     const items = [cutout];
     return items;
   }, items);
-  const obj = { style, cutouts: memo };
-  const tmp2 = importDefault(12000)(source);
+  const obj = { style, cutouts: memo, children: null };
+  const tmp2 = importDefault(12024)(source);
   const items1 = [obj.image, imageStyle];
-  obj.children = callback(importDefault(5119), { style: items1, source: tmp2, usesSmallCache: true });
-  return callback(importDefault(7945), obj);
+  obj[2] = callback(importDefault(5141), { style: items1, source: tmp2, usesSmallCache: true });
+  return callback(importDefault(7970), obj);
 }
 function AnimatedNativeCutoutAvatarImage(cutout) {
   let imageStyle;
@@ -38,41 +37,44 @@ function AnimatedNativeCutoutAvatarImage(cutout) {
   let style;
   cutout = cutout.cutout;
   ({ source, style, imageStyle } = cutout);
-  let obj = cutout(4026);
+  let obj = cutout(4050);
   const fn = function h() {
-    let obj = {};
+    const size = cutout;
     if (cutout.shape === cutout(outer1_2[8]).CutoutShape.RoundedRect) {
-      obj = { shape: cutout(outer1_2[8]).CutoutShape.RoundedRect, x: cutout(outer1_2[11]).withSpring(cutout.x, outer1_6) };
-      const obj3 = cutout(outer1_2[11]);
-      obj.y = cutout(outer1_2[11]).withSpring(cutout.y, outer1_6);
-      const obj4 = cutout(outer1_2[11]);
-      obj.width = cutout(outer1_2[11]).withSpring(cutout.width, outer1_6);
-      const obj5 = cutout(outer1_2[11]);
-      obj.height = cutout(outer1_2[11]).withSpring(cutout.height, outer1_6);
-      const obj6 = cutout(outer1_2[11]);
-      obj.cornerRadius = cutout(outer1_2[11]).withSpring(cutout.cornerRadius, outer1_6);
-      const obj7 = cutout(outer1_2[11]);
+      let obj = { shape: null, x: null, y: null, width: null, height: null, cornerRadius: null };
+      obj[0] = tmp(tmp2[8]).CutoutShape.RoundedRect;
+      let tmpResult = tmp(tmp2[11]);
+      obj[1] = tmpResult.withSpring(size.x, outer1_6);
+      tmpResult = tmp(tmp2[11]);
+      obj[2] = tmpResult.withSpring(size.y, outer1_6);
+      obj[3] = tmp(tmp2[11]).withSpring(size.width, outer1_6);
+      const tmpResult1 = tmp(tmp2[11]);
+      obj[4] = tmp(tmp2[11]).withSpring(size.height, outer1_6);
+      const tmpResult2 = tmp(tmp2[11]);
+      obj[5] = tmp(tmp2[11]).withSpring(size.cornerRadius, outer1_6);
+      const tmpResult3 = tmp(tmp2[11]);
     } else {
-      obj = { shape: cutout(outer1_2[8]).CutoutShape.Circle, x: cutout(outer1_2[11]).withSpring(cutout.x, outer1_6) };
-      const obj9 = cutout(outer1_2[11]);
-      obj.y = cutout(outer1_2[11]).withSpring(cutout.y, outer1_6);
-      const obj10 = cutout(outer1_2[11]);
-      obj.size = cutout(outer1_2[11]).withSpring(cutout.size, outer1_6);
-      const obj11 = cutout(outer1_2[11]);
+      obj = { shape: null, x: null, y: null, size: null };
+      obj[0] = tmp(tmp2[8]).CutoutShape.Circle;
+      obj[1] = tmp(tmp2[11]).withSpring(size.x, outer1_6);
+      const tmpResult4 = tmp(tmp2[11]);
+      obj[2] = tmp(tmp2[11]).withSpring(size.y, outer1_6);
+      const tmpResult5 = tmp(tmp2[11]);
+      obj[3] = tmp(tmp2[11]).withSpring(size.size, outer1_6);
+      const tmpResult6 = tmp(tmp2[11]);
     }
-    const items = [obj];
-    obj.cutouts = items;
-    return obj;
+    const cutouts = [obj];
+    return { cutouts };
   };
-  obj = { cutout, CutoutShape: cutout(7945).CutoutShape, withSpring: cutout(4577).withSpring, CHANNEL_SPRING_CONFIG };
+  obj = { cutout, CutoutShape: cutout(7970).CutoutShape, withSpring: cutout(4599).withSpring, CHANNEL_SPRING_CONFIG };
   fn.__closure = obj;
   fn.__workletHash = 12529564164821;
-  fn.__initData = closure_14;
+  fn.__initData = closure_15;
   const animatedProps = obj.useAnimatedProps(fn);
-  obj = { style, animatedProps };
-  let items = [obj.image, imageStyle];
-  obj.children = callback(importDefault(5119), { style: items, source: importDefault(12000)(source), usesSmallCache: true });
-  return callback(cutout(7945).ClipViewAnimated, obj);
+  obj = { style, animatedProps, children: null };
+  const items = [obj.image, imageStyle];
+  obj[2] = callback(importDefault(5141), { style: items, source: importDefault(12024)(source), usesSmallCache: true });
+  return callback(cutout(7970).ClipViewAnimated, obj);
 }
 function NativeCutoutAvatarImage(animate) {
   if (true === animate.animate) {
@@ -92,238 +94,129 @@ function CutoutAvatarImage(arg0) {
   let source;
   let style;
   ({ cutout, size, source, style } = arg0);
-  let color = size / 2;
-  const radius = cutout.radius;
-  let tmp = color;
-  if (null != radius) {
-    tmp = radius;
+  const result = size / 2;
+  let radius = cutout.radius;
+  if (radius == null) {
+    radius = result;
   }
-  const inset = cutout.inset;
-  let num = 0;
-  if (null != inset) {
-    num = inset;
+  let num = cutout.inset;
+  if (num == null) {
+    num = 0;
   }
   let CIRCULAR = cutout.imageType;
-  if (null == CIRCULAR) {
+  if (CIRCULAR == null) {
     CIRCULAR = obj40.CIRCULAR;
   }
   let diff = size - num;
   let diff1 = size;
   if (CIRCULAR === obj40.CIRCULAR) {
-    diff1 = color;
+    diff1 = result;
   }
   const direction = cutout.direction;
   if (obj39.BOTTOM_RIGHT === direction) {
-    diff = size - tmp - num;
-    diff1 = size - tmp - num;
-  } else if (obj39.BOTTOM_LEFT === direction) {
-    diff = tmp + num;
-    diff1 = size - tmp - num;
+    diff = size - radius - num;
+    diff1 = size - radius - num;
+  } else if (tmp6.BOTTOM_LEFT === direction) {
+    diff = radius + num;
+    diff1 = size - radius - num;
   }
-  let obj = require(491) /* v1 */;
-  const v4Result = obj.v4();
+  let Circle = require;
+  let obj = dependencyMap;
+  let obj1 = require(514) /* v1 */;
+  const v4Result = obj1.v4();
   const tintColor = closure_4.flatten(style).tintColor;
   if (null != source) {
     if (null != tintColor) {
-      obj = { x: "0", y: "0", height: "100%", width: "100%" };
+      obj = { x: "0", y: "0", height: "100%", width: "100%", mask: null, children: null };
       const _HermesInternal = HermesInternal;
-      obj.mask = "url(#" + v4Result + ")";
-      obj = {};
-      const obj1 = { tintColor };
-      obj.style = obj1;
-      obj.source = importDefault(12000)(source);
-      obj.usesSmallCache = true;
-      obj.children = callback(importDefault(5119), obj);
-      let tmp7 = callback(require(8507) /* inlineStyles */.ForeignObject, obj);
-      const tmp14 = importDefault(5119);
+      obj[4] = "url(#" + v4Result + ")";
+      obj = { style: null, source: null, usesSmallCache: true };
+      obj1 = { tintColor: null };
+      obj1[0] = tintColor;
+      obj[0] = obj1;
+      obj[1] = importDefault(12024)(source);
+      obj[5] = callback(importDefault(5141), obj);
+      let tmp8 = callback(Circle(8531).ForeignObject, obj);
+      let tmp9 = importDefault;
+      let tmp10 = callback;
+      const tmp14 = importDefault(5141);
     }
-    const obj2 = { style };
-    let str3 = 13;
-    const obj3 = { height: "100%", width: "100%" };
-    const obj4 = {};
-    const obj5 = { width: size, height: size, id: v4Result };
-    if (CIRCULAR === obj40.CIRCULAR) {
-      const obj6 = { cx: color, cy: color, r: color, fill: "white" };
-      let tmp28 = callback(require(dependencyMap[str3]).Circle, obj6);
+    const obj2 = { style: null, children: null };
+    obj2[0] = style;
+    const obj3 = { width: null, height: null, id: null, children: null };
+    obj3[0] = size;
+    obj3[1] = size;
+    obj3[2] = v4Result;
+    if (CIRCULAR === tmp4.CIRCULAR) {
+      const obj4 = { cx: null, cy: null, r: null, fill: "white" };
+      obj4[0] = result;
+      obj4[1] = result;
+      obj4[2] = result;
+      let tmp10Result = tmp10(Circle(8531).Circle, obj4);
     } else {
-      const obj7 = { x: 0, y: 0, height: size, width: size, fill: "white" };
-      tmp28 = callback(require(dependencyMap[str3]).Rect, obj7);
+      const obj5 = { x: 0, y: 0, height: null, width: null, fill: "white" };
+      obj5[2] = size;
+      obj5[3] = size;
+      tmp10Result = tmp10(Circle(8531).Rect, obj5);
     }
-    const items = [tmp28, ];
-    const obj8 = { cx: diff, cy: diff1, r: tmp, fill: "black" };
-    items[1] = callback(require(dependencyMap[str3]).Circle, obj8);
-    obj5.children = items;
-    obj4.children = closure_8(require(8507) /* inlineStyles */.Mask, obj5);
-    const items1 = [callback(require(8507) /* inlineStyles */.Defs, obj4), tmp7, ];
+    const obj6 = { children: null };
+    const items = [tmp10Result, ];
+    const obj7 = { cx: null, cy: null, r: null, fill: "black" };
+    obj7[0] = diff;
+    obj7[1] = diff1;
+    obj7[2] = radius;
+    items[1] = tmp10(Circle(8531).Circle, obj7);
+    obj3[3] = items;
+    obj6[0] = closure_8(Circle(8531).Mask, obj3);
+    const items1 = [tmp10(Circle(8531).Defs, obj6), tmp8, ];
     if (null == cutout.border) {
+      const obj8 = { height: "100%", width: "100%", children: null };
       items1[2] = null;
-      obj3.children = items1;
-      obj2.children = tmp17(tmp20, obj3);
-      return tmp15(tmp16, obj2);
-    } else if (CIRCULAR === obj40.CIRCULAR) {
-      const obj9 = { cx: color, cy: color, r: color, fill: "none" };
-      const _HermesInternal2 = HermesInternal;
-      str3 = "url(#";
-      obj9.mask = "url(#" + v4Result + ")";
-      color = cutout.border.color;
-      obj9.stroke = color;
-      cutout = cutout.border.width;
-      obj9.strokeWidth = cutout;
-      let tmp41 = callback(require(dependencyMap[str3]).Circle, obj9);
-    } else {
-      const obj10 = { x: 0, y: 0, height: size, width: size, fill: "none" };
+      obj8[2] = items1;
+      obj2[1] = tmp16(tmp9Result, obj8);
+      return tmp10(tmp15, obj2);
+    } else if (CIRCULAR === tmp4.CIRCULAR) {
+      Circle = Circle(8531).Circle;
+      obj = { cx: null, cy: null, r: null, fill: "none", mask: null, stroke: null, strokeWidth: null };
+      obj[0] = result;
+      obj[1] = result;
+      obj[2] = result;
       const _HermesInternal3 = HermesInternal;
-      obj10.mask = "url(#" + v4Result + ")";
-      obj10.stroke = cutout.border.color;
-      obj10.strokeWidth = cutout.border.width;
-      tmp41 = callback(require(dependencyMap[`url(#`]).Rect, obj10);
+      obj[4] = "url(#" + v4Result + ")";
+      obj[5] = cutout.border.color;
+      cutout = cutout.border.width;
+      obj[6] = cutout;
+      tmp10Result = tmp10(Circle, obj);
+    } else {
+      const obj9 = { x: 0, y: 0, height: null, width: null, fill: "none", mask: null, stroke: null, strokeWidth: null };
+      obj9[2] = size;
+      obj9[3] = size;
+      const _HermesInternal2 = HermesInternal;
+      obj9[5] = "url(#" + v4Result + ")";
+      obj9[6] = cutout.border.color;
+      obj9[7] = cutout.border.width;
+      tmp10Result = tmp10(Circle(8531).Rect, obj9);
     }
-    tmp15 = callback;
-    tmp16 = closure_5;
-    tmp17 = closure_8;
-    tmp20 = importDefault(8507);
-    const tmp21 = callback;
-    const tmp23 = closure_8;
+    tmp15 = closure_5;
+    tmp9Result = tmp9(8531);
   }
-  const obj11 = { x: "0", y: "0", height: "100%", width: "100%", href: importDefault(12000)(source), mask: "url(#" + v4Result + ")" };
-  tmp7 = callback(require(8507) /* inlineStyles */.Image, obj11);
+  const obj10 = { x: "0", y: "0", height: "100%", width: "100%", href: null, mask: null };
+  obj10[4] = importDefault(12024)(source);
+  obj10[5] = "url(#" + v4Result + ")";
+  tmp8 = callback(Circle(8531).Image, obj10);
+  tmp9 = importDefault;
+  tmp10 = callback;
 }
-({ StyleSheet: closure_4, View: closure_5 } = get_ActivityIndicator);
-({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-importDefaultResult = new importDefaultResult("UIKit - AvatarImage");
+let c3 = importAllResult;
+({ StyleSheet: c4, View: c5 } = get_ActivityIndicator);
+({ jsx: error, jsxs: metroImportAll } = jsxProd);
+let c9 = new require("jsxProd")("UIKit - AvatarImage");
 let obj = { XXSMALL: "xxsmall", XSMALL: "xsmall", SMALL: "small", NORMAL: "normal", LARGE: "large", XLARGE: "xlarge", XLARGE_72: "xlarge72", XXLARGE: "xxlarge", PROFILE: "profile", REFRESH_MEDIUM_32: "refreshMedium32", XXSMALL_10: "xsmall10", XSMALL_20: "xsmall20", SIZE_16: "size16", LARGE_48: "large48", EDIT_AVATAR_DECORATION: "editAvatarDecoration", GIFT_START: "giftStart", GIFT_SUCCESS: "giftSuccess", YOUBAR_60: "youBar60", TABS_22: "tabs22" };
 const frozen = Object.freeze({ [obj.XXSMALL_10]: 10, [obj.SIZE_16]: 16, [obj.XXSMALL]: 18, [obj.XSMALL_20]: 20, [obj.XSMALL]: 24, [obj.SMALL]: 30, [obj.NORMAL]: 40, [obj.LARGE_48]: 48, [obj.LARGE]: 50, [obj.XLARGE]: 64, [obj.XLARGE_72]: 72, [obj.XXLARGE]: 80, [obj.PROFILE]: 128, [obj.EDIT_AVATAR_DECORATION]: 144, [obj.GIFT_START]: 184, [obj.GIFT_SUCCESS]: 236, [obj.REFRESH_MEDIUM_32]: 32, [obj.YOUBAR_60]: 60, [obj.TABS_22]: 22 });
 obj = { image: { width: "100%", height: "100%" }, xxsmall: obj1, xsmall10: obj2, xsmall20: obj3, xsmall: obj4, small: obj5, normal: obj6, large: obj7, xlarge: obj8, xlarge72: obj9, xxlarge: obj10, refreshMedium32: obj11, profile: obj12, size16: obj13, large48: obj14, editAvatarDecoration: obj15, giftStart: obj16, giftSuccess: obj17, youBar60: obj18, tabs22: obj19, borderRadii: { xxsmall: obj20, xsmall10: obj21, xsmall20: obj22, xsmall: obj23, small: obj24, normal: obj25, large: obj26, xlarge: obj27, xlarge72: obj28, xxlarge: obj29, refreshMedium32: obj30, profile: obj31, size16: obj32, large48: obj33, editAvatarDecoration: obj34, giftStart: obj35, giftSuccess: obj36, youBar60: obj37, tabs22: obj38 } };
 const obj39 = { RIGHT: 0, [0]: "RIGHT", BOTTOM_RIGHT: 1, [1]: "BOTTOM_RIGHT", BOTTOM_LEFT: 2, [2]: "BOTTOM_LEFT" };
 const obj40 = { RECTANGULAR: 0, [0]: "RECTANGULAR", CIRCULAR: 1, [1]: "CIRCULAR" };
-let closure_14 = { code: "function CutoutableAvatarImageTsx1(){const{cutout,CutoutShape,withSpring,CHANNEL_SPRING_CONFIG}=this.__closure;const animatedCutout=cutout.shape===CutoutShape.RoundedRect?{shape:CutoutShape.RoundedRect,x:withSpring(cutout.x,CHANNEL_SPRING_CONFIG),y:withSpring(cutout.y,CHANNEL_SPRING_CONFIG),width:withSpring(cutout.width,CHANNEL_SPRING_CONFIG),height:withSpring(cutout.height,CHANNEL_SPRING_CONFIG),cornerRadius:withSpring(cutout.cornerRadius,CHANNEL_SPRING_CONFIG)}:{shape:CutoutShape.Circle,x:withSpring(cutout.x,CHANNEL_SPRING_CONFIG),y:withSpring(cutout.y,CHANNEL_SPRING_CONFIG),size:withSpring(cutout.size,CHANNEL_SPRING_CONFIG)};return{cutouts:[animatedCutout]};}" };
-const memoResult = importAllResult.memo((style) => {
-  let animate;
-  let animate2;
-  let channel;
-  let cutout;
-  let size;
-  let size2;
-  let source;
-  let user;
-  ({ animate, cutout, size } = style);
-  const items = [obj[size], style.style];
-  obj = {};
-  const merged = Object.assign(style);
-  let tmp4 = true === animate;
-  if (tmp4) {
-    tmp4 = null == cutout;
-  }
-  obj["animate"] = tmp4;
-  obj["size"] = frozen[size];
-  ({ source, user, channel, animate: animate2, size: size2 } = obj);
-  if (null != source) {
-    let sourceResult = source;
-    if ("function" === typeof source) {
-      sourceResult = source(animate2);
-    }
-    let avatarSource = sourceResult;
-  } else if (null != user) {
-    avatarSource = user.getAvatarSource(tmp6, animate2, size2);
-  } else if (null != channel) {
-    let obj1 = require(11999) /* getChannelIconURL */;
-    const channelIconURL = obj1.getChannelIconURL(channel, size2);
-    let tmp13 = channelIconURL;
-    if ("number" !== typeof channelIconURL) {
-      tmp13 = channelIconURL;
-      if (null != channelIconURL) {
-        obj = { uri: channelIconURL };
-        tmp13 = obj;
-      }
-    }
-    avatarSource = tmp13;
-  } else {
-    importDefaultResult.warn("No image found from provided data");
-  }
-  if (null == avatarSource) {
-    return null;
-  } else {
-    const user2 = obj.user;
-    if (null != user2) {
-      if (!tmp30) {
-        const obj4 = importDefault(1392);
-        source = obj4.makeSource(importDefault(1392).getDefaultAvatarURL(user2.id, user2.discriminator));
-        const obj5 = importDefault(1392);
-      }
-    }
-    if (null != cutout) {
-      const nativeCutouts = cutout.nativeCutouts;
-      let length;
-      if (null != nativeCutouts) {
-        length = nativeCutouts.length;
-      }
-      if (1 === length) {
-        obj = { animate };
-        animate = cutout.nativeCutouts;
-        cutout = animate[0];
-        obj.cutout = cutout;
-        obj.source = avatarSource;
-        obj.style = items;
-        obj.imageStyle = tmp2;
-        let tmp26 = callback(NativeCutoutAvatarImage, obj);
-      } else {
-        obj1 = { style: items, size: tmp, animate, cutout, source: avatarSource };
-        tmp26 = callback(CutoutAvatarImage, obj1);
-      }
-    } else {
-      const obj2 = {};
-      const items1 = [items, tmp2];
-      obj2.style = items1;
-      obj2.source = avatarSource;
-      let tmp22;
-      if ("number" === typeof source) {
-        tmp22 = source;
-      }
-      obj2.placeholder = tmp22;
-      obj2.usesSmallCache = true;
-      return callback(importDefault(5119), obj2, "image");
-    }
-  }
-}, function customShallowEqual(source, source2) {
-  if (importDefault(620)(source, source2, ["source"])) {
-    source = source.source;
-    const source1 = source2.source;
-    if (source === source1) {
-      return true;
-    } else {
-      if ("number" !== typeof source1) {
-        if (tmp7 === typeof source) {
-          const _Array2 = Array;
-          if (Array.isArray(source1)) {
-            const _Array = Array;
-            if (Array.isArray(source)) {
-              if (source.length !== source1.length) {
-                return false;
-              } else {
-                let num = 0;
-                if (0 < source.length) {
-                  while (importDefault(620)(source[num], source1[num])) {
-                    num = num + 1;
-                  }
-                  return false;
-                }
-                return true;
-              }
-            }
-          }
-          let tmp2 = "object" !== tmp7 || "object" !== tmp;
-          if (!tmp2) {
-            tmp2 = importDefault(620)(source1, source);
-          }
-          return tmp2;
-        }
-      }
-      return false;
-    }
-  } else {
-    return false;
-  }
-});
+let closure_15 = { code: "function CutoutableAvatarImageTsx1(){const{cutout,CutoutShape,withSpring,CHANNEL_SPRING_CONFIG}=this.__closure;const animatedCutout=cutout.shape===CutoutShape.RoundedRect?{shape:CutoutShape.RoundedRect,x:withSpring(cutout.x,CHANNEL_SPRING_CONFIG),y:withSpring(cutout.y,CHANNEL_SPRING_CONFIG),width:withSpring(cutout.width,CHANNEL_SPRING_CONFIG),height:withSpring(cutout.height,CHANNEL_SPRING_CONFIG),cornerRadius:withSpring(cutout.cornerRadius,CHANNEL_SPRING_CONFIG)}:{shape:CutoutShape.Circle,x:withSpring(cutout.x,CHANNEL_SPRING_CONFIG),y:withSpring(cutout.y,CHANNEL_SPRING_CONFIG),size:withSpring(cutout.size,CHANNEL_SPRING_CONFIG)};return{cutouts:[animatedCutout]};}" };
 obj1 = { width: frozen[obj.XXSMALL], height: frozen[obj.XXSMALL] };
 obj10 = { width: frozen[obj.XXLARGE], height: frozen[obj.XXLARGE] };
 obj11 = { width: frozen[obj.REFRESH_MEDIUM_32], height: frozen[obj.REFRESH_MEDIUM_32] };
@@ -362,7 +255,144 @@ obj6 = { width: frozen[obj.NORMAL], height: frozen[obj.NORMAL] };
 obj7 = { width: frozen[obj.LARGE], height: frozen[obj.LARGE] };
 obj8 = { width: frozen[obj.XLARGE], height: frozen[obj.XLARGE] };
 obj9 = { width: frozen[obj.XLARGE_72], height: frozen[obj.XLARGE_72] };
-const result = require("n").fileFinishedImporting("design/void/CutoutableAvatarImage/native/CutoutableAvatarImage.tsx");
+let tmp4 = new require("jsxProd")("UIKit - AvatarImage");
+const memoResult = importAllResult.memo((style) => {
+  let animate;
+  let animate2;
+  let channel;
+  let cutout;
+  let size;
+  let size2;
+  let source;
+  let user;
+  ({ animate, cutout, size } = style);
+  const items = [obj[size], style.style];
+  obj = {};
+  const merged = Object.assign(style);
+  let tmp4 = true === animate;
+  if (tmp4) {
+    tmp4 = null == cutout;
+  }
+  obj.animate = tmp4;
+  obj.size = frozen[size];
+  ({ source, user, channel, animate: animate2, size: size2 } = obj);
+  if (null != source) {
+    let sourceResult = source;
+    if (typeof source !== "_") {
+      sourceResult = source(animate2);
+    }
+    let avatarSource = sourceResult;
+  } else if (null != user) {
+    avatarSource = user.getAvatarSource(tmp6, animate2, size2);
+  } else if (null != channel) {
+    let obj1 = require(12023) /* getChannelIconURL */;
+    const channelIconURL = obj1.getChannelIconURL(channel, size2);
+    let tmp13 = channelIconURL;
+    if (typeof channelIconURL !== "Object") {
+      tmp13 = channelIconURL;
+      if (null != channelIconURL) {
+        obj = { uri: null };
+        obj[0] = channelIconURL;
+        tmp13 = obj;
+      }
+    }
+    avatarSource = tmp13;
+  } else {
+    tmp4.warn("No image found from provided data");
+  }
+  if (null == avatarSource) {
+    return null;
+  } else {
+    const user2 = obj.user;
+    if (null != user2) {
+      if (!tmp30) {
+        const obj4 = importDefault(1416);
+        source = obj4.makeSource(importDefault(1416).getDefaultAvatarURL(user2.id, user2.discriminator));
+        const obj5 = importDefault(1416);
+      }
+    }
+    if (null != cutout) {
+      const nativeCutouts = cutout.nativeCutouts;
+      let length;
+      if (nativeCutouts != null) {
+        length = nativeCutouts.length;
+      }
+      if (1 === length) {
+        obj = { animate: null, cutout: null, source: null, style: null, imageStyle: null };
+        obj[0] = animate;
+        cutout = cutout.nativeCutouts[0];
+        obj[1] = cutout;
+        obj[2] = avatarSource;
+        obj[3] = items;
+        obj[4] = tmp2;
+        let tmp26 = callback(NativeCutoutAvatarImage, obj);
+      } else {
+        obj1 = { style: null, size: null, animate: null, cutout: null, source: null };
+        obj1[0] = items;
+        obj1[1] = tmp;
+        obj1[2] = animate;
+        obj1[3] = cutout;
+        obj1[4] = avatarSource;
+        tmp26 = callback(CutoutAvatarImage, obj1);
+      }
+    } else {
+      const obj2 = { style: null, source: null, placeholder: null, usesSmallCache: true };
+      const items1 = [items, tmp2];
+      obj2[0] = items1;
+      obj2[1] = avatarSource;
+      let tmp22;
+      if (typeof source !== "os") {
+        tmp22 = source;
+      }
+      obj2[2] = tmp22;
+      return callback(importDefault(5141), obj2, "image");
+    }
+  }
+}, function customShallowEqual(source, source2) {
+  if (importDefault(643)(source, source2, ["source"])) {
+    source = source.source;
+    const source1 = source2.source;
+    if (source === source1) {
+      return true;
+    } else {
+      if (typeof source1 === "os") {
+        if (typeof source1 === typeof source) {
+          const _Array2 = Array;
+          if (Array.isArray(source1)) {
+            const _Array = Array;
+            if (Array.isArray(source)) {
+              if (source.length !== source1.length) {
+                return false;
+              } else {
+                let num = 0;
+                if (0 < source.length) {
+                  while (importDefault(643)(source[num], source1[num])) {
+                    num = num + 1;
+                  }
+                  return false;
+                }
+                return true;
+              }
+            }
+          }
+          let tmp3 = typeof source1 === "window";
+          if (typeof source1 !== "window") {
+            tmp3 = typeof source === "window";
+          }
+          if (!tmp3) {
+            tmp3 = tmp(643)(source1, source);
+          }
+          return tmp3;
+        }
+      }
+      return false;
+    }
+  } else {
+    return false;
+  }
+  tmp = importDefault;
+});
+let result = require("n").fileFinishedImporting("design/void/CutoutableAvatarImage/native/CutoutableAvatarImage.tsx");
 
 export default memoResult;
 export const AvatarSizes = obj;

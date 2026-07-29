@@ -1,17 +1,17 @@
-// Module ID: 13054
-// Function ID: 100971
+// Module ID: 13077
+// Function ID: 13078
 // Name: items
-// Dependencies: [31, 33, 491, 13032, 8507, 2]
+// Dependencies: [19, 21, 514, 13055, 8531, 2]
 // Exports: GuildBadgeBunny
 
-// Module 13054 (items)
-import result from "result";
+// Module 13077 (items)
+import noop from "noop";
 import jsxProd from "jsxProd";
 
-let closure_3;
-let closure_4;
+let c3;
+let c4;
 const require = arg1;
-({ jsx: closure_3, jsxs: closure_4 } = jsxProd);
+({ jsx: c3, jsxs: c4 } = jsxProd);
 let closure_5 = ["#847D8B", "#D1CDD5"];
 let closure_6 = [0.2, 0.65];
 let items = [{ base: 4, tint: 1 }, { base: 3, tint: 1 }];
@@ -26,27 +26,27 @@ export const GuildBadgeBunny = function GuildBadgeBunny(primaryTintColor) {
   if (num2 === undefined) {
     num2 = 24;
   }
-  let obj = { width: 0, height: 0, primaryTintColor: 0 };
-  Object.setPrototypeOf(null);
-  const merged = Object.assign(primaryTintColor, obj);
-  const memo = React.useMemo(() => "badge-bunny-clip-" + outer1_0(outer1_1[2]).v4(), []);
-  let obj1 = require(13032) /* getTransformedBadgeColors */;
+  const merged = Object.assign(primaryTintColor, Object.create(null));
+  const memo = React.useMemo(() => "badge-bunny-clip-" + callback(table[2]).v4(), []);
+  let obj = require(13055) /* getTransformedBadgeColors */;
   obj = { primaryBaseColors: closure_5, primaryTintColor: primaryTintColor.primaryTintColor, primaryTintLuminances: closure_6, primaryLuminanceWeights: items };
-  const primaryColorsTransformed = obj1.getTransformedBadgeColors(obj).primaryColorsTransformed;
+  const primaryColorsTransformed = obj.getTransformedBadgeColors(obj).primaryColorsTransformed;
   obj = {};
   const merged1 = Object.assign(merged);
-  obj["width"] = num;
-  obj["height"] = num2;
-  obj["viewBox"] = "0 0 16 16";
-  obj["fill"] = "none";
-  obj1 = { clipPath: "url(#" + memo + ")" };
-  items = [callback(require(8507) /* inlineStyles */.Path, { d: "M13 8V6H14V4H15V1H11V3H10V7H11V8H5V7H6V3H5V1H1V4H2V6H3V8H4V9H3V10H2V12H1V14H2V15H14V14H15V12H14V10H13V9H12V8H13Z", fill: primaryColorsTransformed[1] }), callback(require(8507) /* inlineStyles */.Path, { d: "M5 8H4V6H3V4H2V2H4V4H5V8Z", fill: "#FF7FC0" }), callback(require(8507) /* inlineStyles */.Path, { d: "M12 8H11V4H12V2H14V4H13V6H12V8Z", fill: "#FF7FC0" }), callback(require(8507) /* inlineStyles */.Path, { fillRule: "evenodd", clipRule: "evenodd", d: "M9 11H10V12H11V13H12V15H4V13H5V12H6V11H7V9H9V11Z", fill: "white" }), callback(require(8507) /* inlineStyles */.Path, { d: "M9 12V13H7V12H9Z", fill: "#FF1B90" }), callback(require(8507) /* inlineStyles */.Path, { d: "M14 15V16H2V15H14Z", fill: "black" }), callback(require(8507) /* inlineStyles */.Path, { d: "M2 15H1V14H2V15Z", fill: "black" }), callback(require(8507) /* inlineStyles */.Path, { d: "M15 15H14V14H15V15Z", fill: "black" }), callback(require(8507) /* inlineStyles */.Path, { d: "M2 14H1V13H2V14Z", fill: primaryColorsTransformed[0] }), callback(require(8507) /* inlineStyles */.Path, { d: "M15 14H14V13H15V14Z", fill: primaryColorsTransformed[0] }), callback(require(8507) /* inlineStyles */.Path, { d: "M1 14H0V12H1V14Z", fill: "black" }), callback(require(8507) /* inlineStyles */.Path, { d: "M16 14H15V12H16V14Z", fill: "black" }), callback(require(8507) /* inlineStyles */.Path, { d: "M2 12H1V10H2V12Z", fill: "black" }), callback(require(8507) /* inlineStyles */.Path, { d: "M15 12H14V10H15V12Z", fill: "black" }), callback(require(8507) /* inlineStyles */.Path, { d: "M3 10H2V9H3V10Z", fill: "black" }), callback(require(8507) /* inlineStyles */.Path, { d: "M14 10H13V9H14V10Z", fill: "black" }), callback(require(8507) /* inlineStyles */.Path, { d: "M4 9H3V8H4V9Z", fill: "black" }), callback(require(8507) /* inlineStyles */.Path, { d: "M13 9H12V8H13V9Z", fill: "black" }), callback(require(8507) /* inlineStyles */.Path, { d: "M3 8H2V6H3V8Z", fill: "black" }), callback(require(8507) /* inlineStyles */.Path, { d: "M7 7H9V3H10V7H11V8H5V7H6V3H7V7Z", fill: "black" }), callback(require(8507) /* inlineStyles */.Path, { d: "M14 8H13V6H14V8Z", fill: "black" }), callback(require(8507) /* inlineStyles */.Path, { d: "M2 6H1V4H2V6Z", fill: "black" }), callback(require(8507) /* inlineStyles */.Path, { d: "M15 6H14V4H15V6Z", fill: "black" }), callback(require(8507) /* inlineStyles */.Path, { d: "M1 4H0V1H1V4Z", fill: "black" }), callback(require(8507) /* inlineStyles */.Path, { d: "M16 4H15V1H16V4Z", fill: "black" }), callback(require(8507) /* inlineStyles */.Path, { d: "M6 3H5V1H6V3Z", fill: "black" }), callback(require(8507) /* inlineStyles */.Path, { d: "M11 3H10V1H11V3Z", fill: "black" }), callback(require(8507) /* inlineStyles */.Path, { d: "M5 1H1V0H5V1Z", fill: "black" }), callback(require(8507) /* inlineStyles */.Path, { d: "M15 1H11V0H15V1Z", fill: "black" }), callback(require(8507) /* inlineStyles */.Path, { d: "M6 12H5V10H6V12Z", fill: "black" }), callback(require(8507) /* inlineStyles */.Path, { d: "M11 12H10V10H11V12Z", fill: "black" }), callback(require(8507) /* inlineStyles */.Path, { d: "M14 14H12V15H14V14Z", fill: primaryColorsTransformed[0] }), callback(require(8507) /* inlineStyles */.Path, { d: "M4 14H2V15H4V14Z", fill: primaryColorsTransformed[0] })];
-  obj1.children = items;
-  const items1 = [callback2(require(8507) /* inlineStyles */.G, obj1), ];
-  const obj7 = {};
-  const obj8 = { id: memo, children: callback(require(8507) /* inlineStyles */.Rect, { width: "16", height: "16", fill: "white" }) };
-  obj7.children = callback(require(8507) /* inlineStyles */.ClipPath, obj8);
-  items1[1] = callback(require(8507) /* inlineStyles */.Defs, obj7);
-  obj["children"] = items1;
-  return callback2(require(8507) /* inlineStyles */.Svg, obj);
+  obj.width = num;
+  obj.height = num2;
+  obj.viewBox = "0 0 16 16";
+  obj.fill = "none";
+  const obj1 = { clipPath: null, children: null };
+  obj1[0] = "url(#" + memo + ")";
+  items = [callback(require(8531) /* inlineStyles */.Path, { d: "M13 8V6H14V4H15V1H11V3H10V7H11V8H5V7H6V3H5V1H1V4H2V6H3V8H4V9H3V10H2V12H1V14H2V15H14V14H15V12H14V10H13V9H12V8H13Z", fill: primaryColorsTransformed[1] }), callback(require(8531) /* inlineStyles */.Path, { d: "M5 8H4V6H3V4H2V2H4V4H5V8Z", fill: "#FF7FC0" }), callback(require(8531) /* inlineStyles */.Path, { d: "M12 8H11V4H12V2H14V4H13V6H12V8Z", fill: "#FF7FC0" }), callback(require(8531) /* inlineStyles */.Path, { fillRule: "evenodd", clipRule: "evenodd", d: "M9 11H10V12H11V13H12V15H4V13H5V12H6V11H7V9H9V11Z", fill: "white" }), callback(require(8531) /* inlineStyles */.Path, { d: "M9 12V13H7V12H9Z", fill: "#FF1B90" }), callback(require(8531) /* inlineStyles */.Path, { d: "M14 15V16H2V15H14Z", fill: "black" }), callback(require(8531) /* inlineStyles */.Path, { d: "M2 15H1V14H2V15Z", fill: "black" }), callback(require(8531) /* inlineStyles */.Path, { d: "M15 15H14V14H15V15Z", fill: "black" }), callback(require(8531) /* inlineStyles */.Path, { d: "M2 14H1V13H2V14Z", fill: primaryColorsTransformed[0] }), callback(require(8531) /* inlineStyles */.Path, { d: "M15 14H14V13H15V14Z", fill: primaryColorsTransformed[0] }), callback(require(8531) /* inlineStyles */.Path, { d: "M1 14H0V12H1V14Z", fill: "black" }), callback(require(8531) /* inlineStyles */.Path, { d: "M16 14H15V12H16V14Z", fill: "black" }), callback(require(8531) /* inlineStyles */.Path, { d: "M2 12H1V10H2V12Z", fill: "black" }), callback(require(8531) /* inlineStyles */.Path, { d: "M15 12H14V10H15V12Z", fill: "black" }), callback(require(8531) /* inlineStyles */.Path, { d: "M3 10H2V9H3V10Z", fill: "black" }), callback(require(8531) /* inlineStyles */.Path, { d: "M14 10H13V9H14V10Z", fill: "black" }), callback(require(8531) /* inlineStyles */.Path, { d: "M4 9H3V8H4V9Z", fill: "black" }), callback(require(8531) /* inlineStyles */.Path, { d: "M13 9H12V8H13V9Z", fill: "black" }), callback(require(8531) /* inlineStyles */.Path, { d: "M3 8H2V6H3V8Z", fill: "black" }), callback(require(8531) /* inlineStyles */.Path, { d: "M7 7H9V3H10V7H11V8H5V7H6V3H7V7Z", fill: "black" }), callback(require(8531) /* inlineStyles */.Path, { d: "M14 8H13V6H14V8Z", fill: "black" }), callback(require(8531) /* inlineStyles */.Path, { d: "M2 6H1V4H2V6Z", fill: "black" }), callback(require(8531) /* inlineStyles */.Path, { d: "M15 6H14V4H15V6Z", fill: "black" }), callback(require(8531) /* inlineStyles */.Path, { d: "M1 4H0V1H1V4Z", fill: "black" }), callback(require(8531) /* inlineStyles */.Path, { d: "M16 4H15V1H16V4Z", fill: "black" }), callback(require(8531) /* inlineStyles */.Path, { d: "M6 3H5V1H6V3Z", fill: "black" }), callback(require(8531) /* inlineStyles */.Path, { d: "M11 3H10V1H11V3Z", fill: "black" }), callback(require(8531) /* inlineStyles */.Path, { d: "M5 1H1V0H5V1Z", fill: "black" }), callback(require(8531) /* inlineStyles */.Path, { d: "M15 1H11V0H15V1Z", fill: "black" }), callback(require(8531) /* inlineStyles */.Path, { d: "M6 12H5V10H6V12Z", fill: "black" }), callback(require(8531) /* inlineStyles */.Path, { d: "M11 12H10V10H11V12Z", fill: "black" }), callback(require(8531) /* inlineStyles */.Path, { d: "M14 14H12V15H14V14Z", fill: primaryColorsTransformed[0] }), callback(require(8531) /* inlineStyles */.Path, { d: "M4 14H2V15H4V14Z", fill: primaryColorsTransformed[0] })];
+  obj1[1] = items;
+  const items1 = [callback2(require(8531) /* inlineStyles */.G, obj1), ];
+  const obj7 = { children: null };
+  const obj8 = { id: memo, children: null };
+  obj8[1] = callback(require(8531) /* inlineStyles */.Rect, { width: "16", height: "16", fill: "white" });
+  obj7[0] = callback(require(8531) /* inlineStyles */.ClipPath, obj8);
+  items1[1] = callback(require(8531) /* inlineStyles */.Defs, obj7);
+  obj.children = items1;
+  return callback2(require(8531) /* inlineStyles */.Svg, obj);
 };

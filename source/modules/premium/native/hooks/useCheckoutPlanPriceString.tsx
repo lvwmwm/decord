@@ -1,48 +1,48 @@
-// Module ID: 6229
-// Function ID: 55676
+// Module ID: 6249
+// Function ID: 6250
 // Name: useCheckoutPlanPriceString
-// Dependencies: [31, 6198, 6230, 477, 2]
+// Dependencies: [19, 6218, 6250, 500, 2]
 // Exports: useCheckoutPlanPriceString
 
-// Module 6229 (useCheckoutPlanPriceString)
-import result from "result";
+// Module 6249 (useCheckoutPlanPriceString)
+import noop from "noop";
 import { useNativeCheckoutStore } from "context";
 
 const require = arg1;
-const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/premium/native/hooks/useCheckoutPlanPriceString.tsx");
+const result = require("getPremiumBundledItemsFromProductId").fileFinishedImporting("modules/premium/native/hooks/useCheckoutPlanPriceString.tsx");
 
 export const useCheckoutPlanPriceString = function useCheckoutPlanPriceString(productId, first) {
   const _require = productId;
   let priceString;
-  if (null != first) {
+  if (first != null) {
     priceString = first.priceString;
   }
-  let tmp2 = null;
-  if (null != priceString) {
-    tmp2 = priceString;
+  if (priceString == null) {
+    priceString = null;
   }
-  const tmp4 = useNativeCheckoutStore((getCheckoutContextRecord) => getCheckoutContextRecord.getCheckoutContextRecord());
-  const dependencyMap = tmp4;
-  const items = [tmp4, productId];
+  const tmp3 = useNativeCheckoutStore((getCheckoutContextRecord) => getCheckoutContextRecord.getCheckoutContextRecord());
+  const dependencyMap = tmp3;
+  const items = [tmp3, productId];
   const memo = React.useMemo(() => {
-    if (null == tmp4) {
+    if (null == tmp3) {
       return null;
     } else {
-      const availablePlanForItems = tmp4.getAvailablePlanForItems(productId(tmp4[2]).getSubscriptionItemsForProduct(productId));
+      const availablePlanForItems = obj.getAvailablePlanForItems(productId(tmp3[2]).getSubscriptionItemsForProduct(productId));
       let priceString = null;
       if (null != availablePlanForItems) {
         priceString = availablePlanForItems.getPriceString();
       }
       return priceString;
     }
+    obj = tmp3;
   }, items);
-  const tmp3 = useNativeCheckoutStore((orderRequired) => orderRequired.orderRequired);
-  let tmp6 = tmp2;
+  const tmp2 = useNativeCheckoutStore((orderRequired) => orderRequired.orderRequired);
+  let tmp5 = priceString;
   if (obj.isIOS()) {
-    tmp6 = tmp2;
-    if (false !== tmp3) {
-      tmp6 = memo;
+    tmp5 = priceString;
+    if (false !== tmp2) {
+      tmp5 = memo;
     }
   }
-  return tmp6;
+  return tmp5;
 };

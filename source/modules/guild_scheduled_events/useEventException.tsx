@@ -1,46 +1,49 @@
-// Module ID: 8191
-// Function ID: 65494
-// Name: _getEventException
-// Dependencies: [5761, 566, 2]
+// Module ID: 8215
+// Function ID: 8216
+// Name: useEventException
+// Dependencies: [5779, 589, 2]
 // Exports: default, getEventException
 
-// Module 8191 (_getEventException)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 8215 (useEventException)
+import scheduledEventSort from "scheduledEventSort";
 
 const require = arg1;
-function _getEventException(arr, arg1) {
-  let closure_0 = arg1;
-  let found;
-  if (null != arr) {
-    found = arr.find((event_exception_id) => event_exception_id.event_exception_id === closure_0);
-  }
-  return found;
-}
 const result = require("set").fileFinishedImporting("modules/guild_scheduled_events/useEventException.tsx");
 
 export default function useEventException(arg0, arg1) {
-  const _require = arg1;
-  const items = [_isNativeReflectConstruct];
-  return _getEventException(_require(566).useStateFromStoresArray(items, () => {
+  let _require = arg1;
+  const items = [scheduledEventSort];
+  const stateFromStoresArray = _require(589).useStateFromStoresArray(items, () => {
     const guildScheduledEvent = outer1_2.getGuildScheduledEvent(closure_0);
     let prop;
-    if (null != guildScheduledEvent) {
+    if (guildScheduledEvent != null) {
       prop = guildScheduledEvent.guild_scheduled_event_exceptions;
     }
-    if (null == prop) {
+    if (prop == null) {
       prop = [];
     }
     return prop;
-  }), arg0);
+  });
+  _require = arg0;
+  let found;
+  if (stateFromStoresArray != null) {
+    found = stateFromStoresArray.find((event_exception_id) => event_exception_id.event_exception_id === closure_0);
+  }
+  return found;
 };
-export const getEventException = function getEventException(recurrenceId, id) {
-  guildScheduledEvent = guildScheduledEvent.getGuildScheduledEvent(id);
+export const getEventException = function getEventException(recurrenceId, eventId) {
+  guildScheduledEvent = guildScheduledEvent.getGuildScheduledEvent(eventId);
   let prop;
-  if (null != guildScheduledEvent) {
+  if (guildScheduledEvent != null) {
     prop = guildScheduledEvent.guild_scheduled_event_exceptions;
   }
-  if (null == prop) {
+  if (prop == null) {
     prop = [];
   }
-  return _getEventException(prop, recurrenceId);
+  let closure_0 = recurrenceId;
+  let found;
+  if (prop != null) {
+    found = prop.find((event_exception_id) => event_exception_id.event_exception_id === closure_0);
+  }
+  return found;
 };

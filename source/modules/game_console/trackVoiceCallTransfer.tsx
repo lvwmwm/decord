@@ -1,38 +1,37 @@
-// Module ID: 9021
-// Function ID: 70912
+// Module ID: 9045
+// Function ID: 9046
 // Name: trackVoiceCallTransfer
-// Dependencies: [1348, 4237, 4180, 653, 675, 2]
+// Dependencies: [1372, 4261, 4204, 676, 698, 2]
 // Exports: default
 
-// Module 9021 (trackVoiceCallTransfer)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_3 from "_isNativeReflectConstruct";
-import closure_4 from "_isNativeReflectConstruct";
+// Module 9045 (trackVoiceCallTransfer)
+import ensureGuildLoaded from "ensureGuildLoaded";
+import createRTCConnection from "createRTCConnection";
+import handleUpdate from "handleUpdate";
 import { AnalyticEvents } from "ME";
 
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/game_console/trackVoiceCallTransfer.tsx");
+const result = require("handleUpdate").fileFinishedImporting("modules/game_console/trackVoiceCallTransfer.tsx");
 
-export default function trackVoiceCallTransfer(channel_id, target_platform) {
-  let obj = importDefault(675);
-  obj = {};
+export default function trackVoiceCallTransfer(arg0, arg1, sessionId) {
+  let obj = importDefault(698);
   let str = "discord_client";
-  if (null != arg2) {
-    sessionById = sessionById.getSessionById(arg2);
+  if (null != sessionId) {
+    sessionById = sessionById.getSessionById(sessionId);
     let os;
-    if (null != sessionById) {
+    if (sessionById != null) {
       os = sessionById.clientInfo.os;
     }
     str = os;
   }
-  obj.source_platform = str;
-  channel = channel.getChannel(channel_id);
+  obj = { source_platform: str, guild_id: null, channel_id: null, rtc_connection_id: null, target_platform: null };
+  channel = channel.getChannel(arg0);
   let guild_id;
-  if (null != channel) {
+  if (channel != null) {
     guild_id = channel.guild_id;
   }
-  obj.guild_id = guild_id;
-  obj.channel_id = channel_id;
-  obj.rtc_connection_id = rTCConnectionId.getRTCConnectionId();
-  obj.target_platform = target_platform;
+  obj[1] = guild_id;
+  obj[2] = arg0;
+  obj[3] = rTCConnectionId.getRTCConnectionId();
+  obj[4] = arg1;
   obj.track(AnalyticEvents.VOICE_CALL_TRANSFER, obj);
 };

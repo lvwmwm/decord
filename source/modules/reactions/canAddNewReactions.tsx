@@ -1,11 +1,11 @@
-// Module ID: 9966
-// Function ID: 76919
-// Dependencies: [4981, 3793, 653, 2]
+// Module ID: 9988
+// Function ID: 9989
+// Dependencies: [5003, 3817, 676, 2]
 // Exports: default
 
-// Module 9966
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_1 from "_isNativeReflectConstruct";
+// Module 9988
+import recomputeGuild from "recomputeGuild";
+import getUncachedChannelPermissions from "getUncachedChannelPermissions";
 import { Permissions } from "ME";
 
 const result = require("ME").fileFinishedImporting("modules/reactions/canAddNewReactions.tsx");
@@ -14,10 +14,10 @@ export default (getGuildId) => {
   const guildId = getGuildId.getGuildId();
   let canChatInGuildResult = null != guildId;
   if (canChatInGuildResult) {
-    canChatInGuildResult = _isNativeReflectConstruct.canChatInGuild(guildId);
+    canChatInGuildResult = recomputeGuild.canChatInGuild(guildId);
   }
   if (canChatInGuildResult) {
-    canChatInGuildResult = closure_1.can(Permissions.ADD_REACTIONS, getGuildId);
+    canChatInGuildResult = getUncachedChannelPermissions.can(Permissions.ADD_REACTIONS, getGuildId);
   }
   if (!canChatInGuildResult) {
     canChatInGuildResult = getGuildId.isPrivate();

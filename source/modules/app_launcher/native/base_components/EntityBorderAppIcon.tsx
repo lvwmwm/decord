@@ -1,23 +1,23 @@
-// Module ID: 11206
-// Function ID: 86931
+// Module ID: 11230
+// Function ID: 11231
 // Name: EntityBorderAppIcon
-// Dependencies: [27, 33, 689, 4165, 5119, 2]
+// Dependencies: [17, 21, 712, 4189, 5141, 2]
 // Exports: default
 
-// Module 11206 (EntityBorderAppIcon)
+// Module 11230 (EntityBorderAppIcon)
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-const sm = require("_createForOfIteratorHelperLoose").radii.sm;
-let closure_5 = _createForOfIteratorHelperLoose.createStyles((width, borderRadius) => {
-  obj = { appIcon: obj };
+const sm = require("Themes").radii.sm;
+let closure_5 = createCacheKey.createStyles((width, borderRadius) => {
+  obj = { appIcon: obj, entityWrapper: null };
   obj = { width, height: width, borderRadius };
-  obj = { padding: 1, backgroundColor: importDefault(689).colors.BORDER_SUBTLE, overflow: "hidden", borderRadius: borderRadius + 1 };
-  obj.entityWrapper = obj;
+  obj = { padding: 1, backgroundColor: importDefault(712).colors.BORDER_SUBTLE, overflow: "hidden", borderRadius: borderRadius + 1 };
+  obj[1] = obj;
   return obj;
 });
-const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/app_launcher/native/base_components/EntityBorderAppIcon.tsx");
+const result = require("Themes").fileFinishedImporting("modules/app_launcher/native/base_components/EntityBorderAppIcon.tsx");
 
 export default function EntityBorderAppIcon(iconSize) {
   let iconSource;
@@ -35,5 +35,5 @@ export default function EntityBorderAppIcon(iconSize) {
   const tmp = callback(num, iconBorderRadius);
   const items = [tmp.entityWrapper, wrapperStyle];
   const items1 = [tmp.appIcon, iconStyle];
-  return <View style={items}>{jsx(importDefault(5119), { style: items1, source: iconSource })}</View>;
+  return <View style={items}>{jsx(importDefault(5141), { style: items1, source: iconSource })}</View>;
 };

@@ -1,30 +1,17 @@
-// Module ID: 12763
-// Function ID: 99145
-// Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 3802, 4181, 12764, 566, 686, 2]
+// Module ID: 12785
+// Function ID: 12786
+// Name: init
+// Dependencies: [3826, 4205, 12786, 589, 709, 2]
 
-// Module 12763 (_isNativeReflectConstruct)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_3 from "_isNativeReflectConstruct";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
-import closure_7 from "_isNativeReflectConstruct";
-import closure_8 from "_isNativeReflectConstruct";
-import set from "_possibleConstructorReturn";
+// Module 12785 (init)
+import upsertRelationship from "upsertRelationship";
+import updateVoiceState from "updateVoiceState";
+import { Store } from "initialize";
+import set from "handleChannelSelect";
 
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
-  }
-  const result = _isNativeReflectConstruct();
-}
 function init() {
-  let closure_9 = {};
-  let closure_10 = {};
+  let closure_4 = {};
+  let closure_5 = {};
 }
 function handleRelationshipChange(relationship) {
   relationship = relationship.relationship;
@@ -36,8 +23,8 @@ function handleRelationshipChange(relationship) {
   return tmp2;
 }
 function processUserInChannel(channelId, id) {
-  const set = new Set(table[channelId]);
-  const isBlockedResult = closure_7.isBlocked(id);
+  const set = new Set(dependencyMap[channelId]);
+  const isBlockedResult = blocked.isBlocked(id);
   if (isBlockedResult) {
     if (!set.has(id)) {
       set.add(id);
@@ -45,12 +32,12 @@ function processUserInChannel(channelId, id) {
       let flag2 = true;
     }
     if (0 === set.size) {
-      if (flag) {
-        delete tmp[tmp2];
+      if (flag2) {
+        delete tmp3[tmp2];
       }
       const _Set = Set;
-      const set1 = new Set(table2[channelId]);
-      const isIgnoredResult = closure_7.isIgnored(id);
+      const set1 = new Set(dependencyMap2[channelId]);
+      const isIgnoredResult = blocked.isIgnored(id);
       if (isIgnoredResult) {
         if (!set1.has(id)) {
           set1.add(id);
@@ -58,152 +45,110 @@ function processUserInChannel(channelId, id) {
           let flag4 = true;
         }
         if (0 === set1.size) {
-          if (flag3) {
-            delete tmp3[tmp2];
-          }
           if (flag4) {
-            const result = importDefault(12764).handleBlockedOrIgnoredUserVoiceChannelJoin(channelId, id);
-            const obj3 = importDefault(12764);
+            delete tmp[tmp2];
           }
-          return flag3;
+          if (flag3) {
+            const result = importDefault(12786).handleBlockedOrIgnoredUserVoiceChannelJoin(channelId, id);
+            const obj4 = importDefault(12786);
+          }
+          return flag4;
         }
-        if (flag3) {
-          table2[channelId] = set1;
+        if (flag4) {
+          dependencyMap2[channelId] = set1;
         }
       }
       flag3 = flag;
       flag4 = flag2;
       if (!isIgnoredResult) {
-        flag3 = set1.delete(id);
-        flag4 = flag2;
+        flag4 = set1.delete(id);
+        flag3 = flag;
       }
     }
-    if (flag) {
-      table[channelId] = set;
+    if (flag2) {
+      dependencyMap[channelId] = set;
     }
   }
   flag = false;
   flag2 = false;
   if (!isBlockedResult) {
-    flag = set.delete(id);
-    flag2 = false;
+    flag2 = set.delete(id);
+    flag = false;
   }
 }
-let closure_9 = {};
-let closure_10 = {};
+let closure_4 = {};
+let closure_5 = {};
 let set = new Set();
-let tmp3 = ((Store) => {
-  class VoiceChannelBlockedUserStore {
-    constructor() {
-      self = this;
-      tmp = outer1_2(this, VoiceChannelBlockedUserStore);
-      obj = outer1_5(VoiceChannelBlockedUserStore);
-      tmp2 = outer1_4;
-      if (outer1_12()) {
-        tmp6 = globalThis;
-        _Reflect = Reflect;
-        tmp7 = outer1_5;
-        tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, outer1_5(self).constructor);
-      } else {
-        tmp3 = arguments;
-        tmp4 = arguments;
-        constructResult = obj(...arguments);
-      }
-      return tmp2(self, constructResult);
-    }
+class VoiceChannelBlockedUserStore extends Store {
+}
+const prototype = VoiceChannelBlockedUserStore.prototype;
+prototype["initialize"] = function initialize() {
+  this.waitFor(upsertRelationship, updateVoiceState);
+};
+prototype["getBlockedUsersForVoiceChannel"] = function getBlockedUsersForVoiceChannel(channelId) {
+  let tmp = dependencyMap[channelId];
+  if (tmp == null) {
+    tmp = set;
   }
-  callback2(VoiceChannelBlockedUserStore, Store);
-  let obj = {
-    key: "initialize",
-    value() {
-      this.waitFor(outer1_7, outer1_8);
-    }
-  };
-  const items = [obj, , ];
-  obj = {
-    key: "getBlockedUsersForVoiceChannel",
-    value(arg0) {
-      let tmp = outer1_9[arg0];
-      if (null == tmp) {
-        tmp = outer1_11;
-      }
-      return tmp;
-    }
-  };
-  items[1] = obj;
-  obj = {
-    key: "getIgnoredUsersForVoiceChannel",
-    value(arg0) {
-      let tmp = outer1_10[arg0];
-      if (null == tmp) {
-        tmp = outer1_11;
-      }
-      return tmp;
-    }
-  };
-  items[2] = obj;
-  return callback(VoiceChannelBlockedUserStore, items);
-})(require("initialize").Store);
-tmp3 = new tmp3(require("dispatcher"), {
+  return tmp;
+};
+prototype["getIgnoredUsersForVoiceChannel"] = function getIgnoredUsersForVoiceChannel(channelId) {
+  let tmp = dependencyMap2[channelId];
+  if (tmp == null) {
+    tmp = set;
+  }
+  return tmp;
+};
+const voiceChannelBlockedUserStore = new VoiceChannelBlockedUserStore(require("dispatcher"), {
   CONNECTION_OPEN: init,
   LOGOUT: init,
   OVERLAY_INITIALIZE: function handleOverlayInitialize() {
     init();
-    let values = Object.values(authStore.getAllVoiceStates());
     let flag = false;
-    let num = 0;
-    let flag2 = false;
-    if (0 < values.length) {
-      do {
-        let _Object = Object;
-        values = Object.values(values[num]);
-        let tmp2 = flag;
-        let num2 = 0;
-        let tmp3 = flag;
-        if (0 < values.length) {
-          do {
-            let tmp4 = values[num2];
-            let tmp5 = tmp2;
-            if (null != tmp4.channelId) {
-              let tmp6 = processUserInChannel;
-              let tmp7 = processUserInChannel(tmp4.channelId, tmp4.userId) || tmp2;
-              tmp5 = tmp7;
-            }
-            num2 = num2 + 1;
-            tmp2 = tmp5;
-            tmp3 = tmp5;
-            let tmp8 = tmp4;
-          } while (num2 < values.length);
+    let values = Object.values(authStore.getAllVoiceStates());
+    while (tmp3 !== undefined) {
+      let _Object = Object;
+      values = Object.values(tmp4);
+      let tmp6 = values;
+      let tmp7 = values;
+      for (const item10026 of values) {
+        let tmp8 = item10026;
+        if (null != item10026.channelId) {
+          let tmp9 = processUserInChannel;
+          let tmp10 = item10026;
+          let tmp11 = processUserInChannel(tmp8.channelId, tmp8.userId);
+          if (!tmp11) {
+            tmp11 = flag;
+          }
+          flag = tmp11;
         }
-        num = num + 1;
-        flag = tmp3;
-        flag2 = tmp3;
-      } while (num < values.length);
+        continue;
+      }
+      continue;
     }
-    return flag2;
+    return flag;
   },
   VOICE_STATE_UPDATES: function handleVoiceStateUpdates(voiceStates) {
     voiceStates = voiceStates.voiceStates;
     let c0 = false;
     const item = voiceStates.forEach((oldChannelId) => {
       if (null != oldChannelId.oldChannelId) {
-        if (null != outer1_9[oldChannelId.oldChannelId]) {
-          if (null != outer1_9[oldChannelId.oldChannelId]) {
+        if (null != outer1_4[oldChannelId.oldChannelId]) {
+          if (outer1_4[oldChannelId.oldChannelId] != null) {
             obj.delete(oldChannelId.userId);
           }
           let c0 = true;
         }
-        if (null != outer1_10[oldChannelId.oldChannelId]) {
-          if (null != outer1_10[oldChannelId.oldChannelId]) {
+        if (null != outer1_5[oldChannelId.oldChannelId]) {
+          if (outer1_5[oldChannelId.oldChannelId] != null) {
             obj2.delete(oldChannelId.userId);
           }
           c0 = true;
         }
       }
       if (null != oldChannelId.channelId) {
-        c0 = outer1_14(oldChannelId.channelId, oldChannelId.userId) || c0;
-        const tmp7 = outer1_14(oldChannelId.channelId, oldChannelId.userId) || c0;
+        c0 = outer1_8(oldChannelId.channelId, oldChannelId.userId) || c0;
+        const tmp8 = outer1_8(oldChannelId.channelId, oldChannelId.userId) || c0;
       }
     });
     return c0;
@@ -214,4 +159,4 @@ tmp3 = new tmp3(require("dispatcher"), {
 });
 let result = set.fileFinishedImporting("modules/shared_space_warnings/VoiceChannelBlockedUserStore.tsx");
 
-export default tmp3;
+export default voiceChannelBlockedUserStore;

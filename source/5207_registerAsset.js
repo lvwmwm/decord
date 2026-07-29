@@ -1,11 +1,10 @@
 // Module ID: 5207
-// Function ID: 45126
+// Function ID: 5208
 // Name: registerAsset
-// Dependencies: [1217]
+// Dependencies: [1241]
 
 // Module 5207 (registerAsset)
 import registerAsset from "registerAsset";
 
-const obj = { __packager_asset: true, httpServerLocation: "/assets/images/native", width: 24, height: 24, scales: [2, 3], hash: "edefaa7b105418ac79e91df5e7252965", name: "ic_arrow_right", type: "png" };
 
-export default registerAsset.registerAsset(obj);
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/icons", width: 30, height: 30, scales: [2, 3], hash: "3fda792f0f90666acb261765593ba984", name: "ic_loading_emoji_dark", type: "png" });

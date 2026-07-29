@@ -1,58 +1,58 @@
-// Module ID: 13857
-// Function ID: 106082
+// Module ID: 13878
+// Function ID: 13879
 // Name: toggle
-// Dependencies: [7733, 653, 1212, 3838, 1360, 11750, 10099, 2]
+// Dependencies: [7756, 676, 1236, 3862, 1384, 11775, 10120, 2]
 
-// Module 13857 (toggle)
+// Module 13878 (toggle)
 import { FriendDiscoveryFlags } from "ME";
 import createToggle from "createToggle";
 
 const toggle = createToggle.createToggle({
   useTitle() {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(require(1212) /* getSystemLocale */.t.dEYpSt);
+    const intl = require(1236) /* getSystemLocale */.intl;
+    return intl.string(require(1236) /* getSystemLocale */.t.dEYpSt);
   },
   parent: require("MobileSetting").MobileSetting.CONTENT_AND_SOCIAL_DISCORD,
   useDescription: function useDiscoveryByPhoneSettingDescription() {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(require(1212) /* getSystemLocale */.t.X7pIKN);
+    const intl = require(1236) /* getSystemLocale */.intl;
+    return intl.string(require(1236) /* getSystemLocale */.t.X7pIKN);
   },
   useValue: function useDiscoveryByPhoneSettingValue() {
-    const FriendDiscoverySettings = require(3838) /* explicitContentFromProto */.FriendDiscoverySettings;
+    const FriendDiscoverySettings = require(3862) /* explicitContentFromProto */.FriendDiscoverySettings;
     const setting = FriendDiscoverySettings.useSetting();
-    return require(1360) /* hasFlag */.hasFlag(setting, FriendDiscoveryFlags.FIND_BY_PHONE);
+    return require(1384) /* hasFlag */.hasFlag(setting, FriendDiscoveryFlags.FIND_BY_PHONE);
   },
   onValueChange: function onDiscoveryByPhoneSettingValueChange(phone) {
-    const FriendDiscoverySettings = require(3838) /* explicitContentFromProto */.FriendDiscoverySettings;
+    const FriendDiscoverySettings = require(3862) /* explicitContentFromProto */.FriendDiscoverySettings;
     const setting = FriendDiscoverySettings.getSetting();
-    let obj = require(1360) /* hasFlag */;
+    let obj = require(1384) /* hasFlag */;
     const hasFlagResult = obj.hasFlag(setting, FriendDiscoveryFlags.FIND_BY_EMAIL);
     obj = { phone, email: hasFlagResult };
-    const result = importDefault(11750).updateDiscoverability(obj);
+    const result = importDefault(11775).updateDiscoverability(obj);
   }
 });
 let obj = {
   useTitle() {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(require(1212) /* getSystemLocale */.t.dEYpSt);
+    const intl = require(1236) /* getSystemLocale */.intl;
+    return intl.string(require(1236) /* getSystemLocale */.t.dEYpSt);
   },
   parent: require("MobileSetting").MobileSetting.CONTENT_AND_SOCIAL_DISCORD,
   useDescription: function useDiscoveryByPhoneSettingDescription() {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(require(1212) /* getSystemLocale */.t.X7pIKN);
+    const intl = require(1236) /* getSystemLocale */.intl;
+    return intl.string(require(1236) /* getSystemLocale */.t.X7pIKN);
   },
   useValue: function useDiscoveryByPhoneSettingValue() {
-    const FriendDiscoverySettings = require(3838) /* explicitContentFromProto */.FriendDiscoverySettings;
+    const FriendDiscoverySettings = require(3862) /* explicitContentFromProto */.FriendDiscoverySettings;
     const setting = FriendDiscoverySettings.useSetting();
-    return require(1360) /* hasFlag */.hasFlag(setting, FriendDiscoveryFlags.FIND_BY_PHONE);
+    return require(1384) /* hasFlag */.hasFlag(setting, FriendDiscoveryFlags.FIND_BY_PHONE);
   },
   onValueChange: function onDiscoveryByPhoneSettingValueChange(phone) {
-    const FriendDiscoverySettings = require(3838) /* explicitContentFromProto */.FriendDiscoverySettings;
+    const FriendDiscoverySettings = require(3862) /* explicitContentFromProto */.FriendDiscoverySettings;
     const setting = FriendDiscoverySettings.getSetting();
-    let obj = require(1360) /* hasFlag */;
+    let obj = require(1384) /* hasFlag */;
     const hasFlagResult = obj.hasFlag(setting, FriendDiscoveryFlags.FIND_BY_EMAIL);
     obj = { phone, email: hasFlagResult };
-    const result = importDefault(11750).updateDiscoverability(obj);
+    const result = importDefault(11775).updateDiscoverability(obj);
   }
 };
 let result = require("getSystemLocale").fileFinishedImporting("modules/user_settings/defs/native/DiscoveryByPhoneSetting.tsx");

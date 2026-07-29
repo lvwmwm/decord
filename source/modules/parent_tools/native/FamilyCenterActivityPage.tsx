@@ -1,52 +1,52 @@
-// Module ID: 13882
-// Function ID: 106262
+// Module ID: 13903
+// Function ID: 13904
 // Name: FamilyCenterActivityPage
-// Dependencies: [31, 27, 33, 4165, 689, 6235, 5155, 13883, 13885, 13895, 11088, 13899, 2]
+// Dependencies: [19, 17, 21, 4189, 712, 6255, 5177, 13904, 13906, 13916, 11112, 13920, 2]
 // Exports: default
 
-// Module 13882 (FamilyCenterActivityPage)
-import "result";
+// Module 13903 (FamilyCenterActivityPage)
+import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_3;
-let closure_4;
-let closure_5;
+let c3;
+let c4;
+let c5;
 let closure_6;
-let closure_7;
+let error;
 const require = arg1;
-({ View: closure_3, ScrollView: closure_4 } = get_ActivityIndicator);
-({ jsx: closure_5, Fragment: closure_6, jsxs: closure_7 } = jsxProd);
-_createForOfIteratorHelperLoose = { scrollView: { flex: 1 } };
-_createForOfIteratorHelperLoose = { marginTop: require("_createForOfIteratorHelperLoose").space.PX_8 };
-_createForOfIteratorHelperLoose.dataConfirmation = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.container = { paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16, paddingBottom: require("_createForOfIteratorHelperLoose").space.PX_16 };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-let obj1 = { paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16, paddingBottom: require("_createForOfIteratorHelperLoose").space.PX_16 };
+({ View: c3, ScrollView: c4 } = get_ActivityIndicator);
+({ jsx: c5, Fragment: closure_6, jsxs: error } = jsxProd);
+createCacheKey = { scrollView: { flex: 1 }, dataConfirmation: null, container: null };
+createCacheKey = { marginTop: require("Themes").space.PX_8 };
+createCacheKey[1] = createCacheKey;
+createCacheKey[2] = { paddingHorizontal: require("Themes").space.PX_16, paddingBottom: require("Themes").space.PX_16 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let obj1 = { paddingHorizontal: require("Themes").space.PX_16, paddingBottom: require("Themes").space.PX_16 };
 const result = require("jsxProd").fileFinishedImporting("modules/parent_tools/native/FamilyCenterActivityPage.tsx");
 
 export default function FamilyCenterActivityPage() {
-  const tmp = _createForOfIteratorHelperLoose();
-  let obj = require(6235) /* useUserIdsForLinkStatus */;
-  obj = { style: tmp.scrollView };
+  const tmp = createCacheKey();
+  let obj = require(6255) /* useUserIdsForLinkStatus */;
+  obj = { style: tmp.scrollView, children: null };
   const activeLinkUserIds = obj.useActiveLinkUserIds();
-  obj = { bottom: true };
-  const obj1 = { style: tmp.container };
-  const items = [callback(importDefault(13883), {}), ];
+  obj = { style: tmp.container, children: null };
+  const items = [callback(importDefault(13904), {}), ];
   if (0 === activeLinkUserIds.length) {
-    const obj2 = {};
-    const items1 = [callback(importDefault(13885), {}), callback(importDefault(13895), {}), ];
-    const obj3 = { style: tmp.dataConfirmation, children: callback(importDefault(11088), {}) };
-    items1[2] = callback(closure_3, obj3);
-    obj2.children = items1;
-    let tmp9 = callback2(closure_6, obj2);
+    const obj1 = { children: null };
+    const items1 = [tmp3(tmp7(13906), {}), tmp3(tmp7(13916), {}), ];
+    const obj2 = { style: null, children: null };
+    obj2[0] = tmp.dataConfirmation;
+    obj2[1] = tmp3(tmp7(11112), {});
+    items1[2] = tmp3(tmp6, obj2);
+    obj1[0] = items1;
+    let tmp3Result = tmp5(closure_6, obj1);
   } else {
-    tmp9 = callback(importDefault(13899), {});
+    tmp3Result = tmp3(tmp7(13920), {});
   }
-  items[1] = tmp9;
-  obj1.children = items;
-  obj.children = callback2(closure_3, obj1);
-  obj.children = callback(require(5155) /* SafeAreaPaddingView */.SafeAreaPaddingView, obj);
+  items[1] = tmp3Result;
+  obj[1] = items;
+  obj[1] = callback(require(5177) /* SafeAreaPaddingView */.SafeAreaPaddingView, { bottom: true, children: closure_7(closure_3, obj) });
   return callback(closure_4, obj);
 };

@@ -1,49 +1,47 @@
-// Module ID: 8267
-// Function ID: 66149
+// Module ID: 8291
+// Function ID: 8292
 // Name: VoidTextInput
-// Dependencies: [31, 27, 653, 33, 4165, 689, 4011, 477, 4009, 2]
+// Dependencies: [19, 17, 676, 21, 4189, 712, 4035, 500, 4033, 2]
 
-// Module 8267 (VoidTextInput)
+// Module 8291 (VoidTextInput)
 import { TextInput } from "get ActivityIndicator";
 import ME from "ME";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import importAllResult from "result";
+import createCacheKey from "createCacheKey";
+import importAllResult from "noop";
 
+let Fonts;
+let c4;
 const require = arg1;
-const KeyboardThemes = ME.KeyboardThemes;
-let obj = {};
-obj = { fontSize: 16, alignSelf: "center", fontFamily: ME.Fonts.PRIMARY_MEDIUM, color: require("_createForOfIteratorHelperLoose").colors.TEXT_DEFAULT };
-obj.input = obj;
-_createForOfIteratorHelperLoose = { color: require("_createForOfIteratorHelperLoose").colors.INPUT_PLACEHOLDER_TEXT_DEFAULT };
-obj.placeholderTextColor = _createForOfIteratorHelperLoose;
-let closure_6 = _createForOfIteratorHelperLoose.createStyles(obj);
-const forwardRefResult = require("result").forwardRef((style, ref) => {
-  let obj = Object.create(null);
-  obj.style = 0;
-  const merged = Object.assign(style, obj);
-  const tmp3 = callback();
-  obj = require(4011) /* AccessibilityAnnouncer */;
+({ KeyboardThemes: c4, Fonts } = ME);
+let obj = { input: null, placeholderTextColor: null };
+obj = { fontSize: 16, alignSelf: "center", fontFamily: Fonts.PRIMARY_MEDIUM, color: require("Themes").colors.TEXT_DEFAULT };
+obj[0] = obj;
+createCacheKey = { color: require("Themes").colors.INPUT_PLACEHOLDER_TEXT_DEFAULT };
+obj[1] = createCacheKey;
+let closure_6 = createCacheKey.createStyles(obj);
+const forwardRefResult = require("noop").forwardRef((style, ref) => {
+  const merged = Object.assign(style, Object.create(null));
+  const tmp2 = callback();
+  let obj = require(4035) /* AccessibilityAnnouncer */;
   const theme = obj.useThemeContext().theme;
-  const obj2 = require(4011) /* AccessibilityAnnouncer */;
-  const unsafe_rawColors = importDefault(689).unsafe_rawColors;
-  const tmp5 = require(4011) /* AccessibilityAnnouncer */.isThemeDark(theme) ? unsafe_rawColors.PRIMARY_100 : unsafe_rawColors.PRIMARY_500;
-  obj = { ref, style: items };
-  items = [tmp3.input, style.style];
-  const isThemeDarkResult = require(4011) /* AccessibilityAnnouncer */.isThemeDark(theme);
-  const tmp6 = jsx;
-  const tmp7 = TextInput;
-  obj.keyboardAppearance = require(4011) /* AccessibilityAnnouncer */.isThemeDark(theme) ? KeyboardThemes.DARK : KeyboardThemes.LIGHT;
-  obj.placeholderTextColor = tmp3.placeholderTextColor.color;
-  const obj4 = require(4011) /* AccessibilityAnnouncer */;
-  let hexWithOpacityResult = tmp5;
-  if (obj5.isAndroid()) {
-    hexWithOpacityResult = require(4009) /* hexToRgb */.hexWithOpacity(tmp5, 0.5);
-    const obj6 = require(4009) /* hexToRgb */;
+  const obj2 = require(4035) /* AccessibilityAnnouncer */;
+  const unsafe_rawColors = importDefault(712).unsafe_rawColors;
+  const tmp6 = require(4035) /* AccessibilityAnnouncer */.isThemeDark(theme) ? unsafe_rawColors.PRIMARY_100 : unsafe_rawColors.PRIMARY_500;
+  obj = { ref, style: items, keyboardAppearance: null, placeholderTextColor: null, selectionColor: null };
+  items = [tmp2.input, style.style];
+  let tmp3Result = tmp3(4035);
+  obj[2] = tmp3Result.isThemeDark(theme) ? closure_4.DARK : closure_4.LIGHT;
+  obj[3] = tmp2.placeholderTextColor.color;
+  tmp3Result = tmp3(500);
+  let hexWithOpacityResult = tmp6;
+  if (tmp3Result.isAndroid()) {
+    hexWithOpacityResult = tmp3(4033).hexWithOpacity(tmp6, 0.5);
+    const tmp3Result1 = tmp3(4033);
   }
-  obj.selectionColor = hexWithOpacityResult;
+  obj[4] = hexWithOpacityResult;
   const merged1 = Object.assign(merged);
-  return tmp6(tmp7, obj);
+  return <TextInput ref={arg1} style={items} keyboardAppearance={null} placeholderTextColor={null} selectionColor={null} />;
 });
 forwardRefResult.displayName = "VoidTextInput";
 const result = require("ME").fileFinishedImporting("design/void/TextInput/native/TextInput.tsx");

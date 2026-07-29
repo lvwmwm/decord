@@ -1,11 +1,11 @@
-// Module ID: 9069
-// Function ID: 71094
+// Module ID: 9093
+// Function ID: 9094
 // Name: GroupDMRow
-// Dependencies: [31, 8789, 33, 4355, 9070, 1273, 9071, 4161, 9068, 5198, 2]
+// Dependencies: [19, 8813, 21, 4380, 9094, 1297, 9095, 4185, 9092, 5220, 2]
 // Exports: default
 
-// Module 9069 (GroupDMRow)
-import result from "result";
+// Module 9093 (GroupDMRow)
+import noop from "noop";
 import { UserRowModes } from "UserRowModes";
 import { jsx } from "jsxProd";
 
@@ -27,47 +27,47 @@ export default function GroupDMRow(channel) {
     flag2 = false;
   }
   const onPress = channel.onPress;
-  let obj = { channel: 0, mode: 0, selected: 0, disabled: 0, onPress: 0 };
-  Object.setPrototypeOf(null);
-  const merged = Object.assign(channel, obj);
-  const tmp4 = onPress(4355)(channel);
+  const merged = Object.assign(channel, Object.create(null));
+  let str = onPress(4380)(channel);
   const items = [channel, onPress];
   const callback = React.useCallback(() => {
-    if (null != onPress) {
-      onPress(channel);
+    if (onPress != null) {
+      tmp(channel);
     }
   }, items);
-  obj = { size: channel(1273).AvatarSizes.REFRESH_MEDIUM_32, channel };
-  const tmp6 = onPress(9070);
-  let obj2 = channel(9071);
-  const recipientsLabel = obj2.useRecipientsLabel(channel);
+  let obj = { size: null, channel: null };
+  obj[0] = channel(1297).AvatarSizes.REFRESH_MEDIUM_32;
+  obj[1] = channel;
+  const tmp6 = onPress(9094);
+  let obj1 = channel(9095);
+  const recipientsLabel = obj1.useRecipientsLabel(channel);
   obj = {};
   const merged1 = Object.assign(merged);
-  obj["disabled"] = flag2;
-  let tmp10;
+  obj.disabled = flag2;
+  let tmp5Result;
   if (null != recipientsLabel) {
-    const obj1 = { variant: "text-xs/medium", color: "text-muted", lineClamp: 1, children: recipientsLabel };
-    tmp10 = jsx(channel(4161).Text, { variant: "text-xs/medium", color: "text-muted", lineClamp: 1, children: recipientsLabel });
+    obj = { variant: "text-xs/medium", color: "text-muted", lineClamp: 1, children: null };
+    obj[3] = recipientsLabel;
+    tmp5Result = tmp5(tmp7(4185).Text, obj);
   }
-  obj["subLabel"] = tmp10;
-  obj["icon"] = jsx(onPress(9070), {});
-  obj["onPress"] = callback;
-  let str = "";
-  if (null != tmp4) {
-    str = tmp4;
+  obj.subLabel = tmp5Result;
+  obj.icon = jsx(onPress(9094), {});
+  obj.onPress = callback;
+  if (str == null) {
+    str = "";
   }
-  obj["label"] = str;
-  obj["labelLineClamp"] = 1;
-  obj["height"] = "100%";
+  obj.label = str;
+  obj.labelLineClamp = 1;
+  obj.height = "100%";
   if (NONE === UserRowModes.TOGGLE) {
-    obj2 = {};
+    obj1 = {};
     const merged2 = Object.assign(obj);
-    obj2["checked"] = flag;
-    let tmp20 = jsx(channel(9068).TableCheckboxRow, {});
+    obj1.checked = flag;
+    tmp5Result = tmp5(tmp7(9092).TableCheckboxRow, obj1);
   } else {
-    const obj3 = {};
+    const obj2 = {};
     const merged3 = Object.assign(obj);
-    tmp20 = jsx(channel(5198).TableRow, {});
+    tmp5Result = tmp5(tmp7(5220).TableRow, obj2);
   }
-  return tmp20;
+  return tmp5Result;
 };

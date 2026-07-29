@@ -1,10 +1,10 @@
-// Module ID: 5176
-// Function ID: 44977
+// Module ID: 5198
+// Function ID: 5199
 // Name: DomainMigrationEventType
 // Dependencies: [2]
 // Exports: extractMessage, sendPostMessage
 
-// Module 5176 (DomainMigrationEventType)
+// Module 5198 (DomainMigrationEventType)
 let obj = { MIGRATION_SOURCE_DOMAIN: 0, [0]: "MIGRATION_SOURCE_DOMAIN", MIGRATION_DESTINATION_DOMAIN: 1, [1]: "MIGRATION_DESTINATION_DOMAIN" };
 const result = require("set").fileFinishedImporting("../discord_common/js/shared/domain-migration/DomainMigrationUtils.tsx");
 
@@ -39,7 +39,7 @@ export const extractMessage = function extractMessage(origin) {
   if (tmp3) {
     const data = origin.data;
     let domainMigrationEvent;
-    if (null != data) {
+    if (data != null) {
       domainMigrationEvent = data.domainMigrationEvent;
     }
     tmp5 = domainMigrationEvent;

@@ -1,48 +1,41 @@
-// Module ID: 15970
-// Function ID: 123291
+// Module ID: 16005
+// Function ID: 16006
 // Name: useVoicePanelButtonStyles
-// Dependencies: [4165, 689, 8094, 1324, 2]
+// Dependencies: [4189, 712, 8118, 1348, 2]
 // Exports: useVoicePanelButtonStyles
 
-// Module 15970 (useVoicePanelButtonStyles)
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+// Module 16005 (useVoicePanelButtonStyles)
+import createCacheKey from "createCacheKey";
 
-let closure_3 = _createForOfIteratorHelperLoose.createStyles((arg0, arg1) => {
-  let obj = {};
-  obj = {};
+let closure_3 = createCacheKey.createStyles((arg0, arg1) => {
   let str = "transparent";
   if (!arg1) {
-    str = importDefault(689).colors.BACKGROUND_MOD_STRONG;
+    str = importDefault(712).colors.BACKGROUND_MOD_STRONG;
   }
-  obj.backgroundColor = str;
-  obj.iconBg = obj;
-  obj = { backgroundColor: importDefault(689).colors.WHITE };
-  obj.iconBgSelected = obj;
-  obj.iconBgVoiceMuted = { borderWidth: 1, borderColor: importDefault(689).colors.BACKGROUND_VOICE_MUTED, backgroundColor: importDefault(689).colors.BACKGROUND_VOICE_MUTED };
-  const obj2 = {};
-  const colors = importDefault(689).colors;
+  let obj = { iconBg: { backgroundColor: str }, iconBgSelected: null, iconBgVoiceMuted: null, iconFill: null, iconFillMuted: null, iconFillRed: null, iconFillSelected: null, iconBadgeIndicator: null };
+  obj = { backgroundColor: importDefault(712).colors.WHITE };
+  obj[1] = obj;
+  obj = { borderWidth: 1, borderColor: importDefault(712).colors.BACKGROUND_VOICE_MUTED, backgroundColor: importDefault(712).colors.BACKGROUND_VOICE_MUTED };
+  obj[2] = obj;
+  const colors = importDefault(712).colors;
   if (arg0) {
     let INTERACTIVE_TEXT_DEFAULT = colors.INTERACTIVE_TEXT_DEFAULT;
   } else {
     INTERACTIVE_TEXT_DEFAULT = arg1 ? colors.ICON_STRONG : colors.WHITE;
   }
-  obj2.color = INTERACTIVE_TEXT_DEFAULT;
-  obj.iconFill = obj2;
-  const obj1 = { borderWidth: 1, borderColor: importDefault(689).colors.BACKGROUND_VOICE_MUTED, backgroundColor: importDefault(689).colors.BACKGROUND_VOICE_MUTED };
-  obj.iconFillMuted = { color: importDefault(689).colors.ICON_MUTED };
-  const obj3 = { color: importDefault(689).colors.ICON_MUTED };
-  obj.iconFillRed = { color: importDefault(689).unsafe_rawColors.RED_400 };
-  const obj4 = { color: importDefault(689).unsafe_rawColors.RED_400 };
-  obj.iconFillSelected = { color: importDefault(689).colors.BLACK };
-  const obj6 = {};
-  const colors2 = importDefault(689).colors;
-  obj6.backgroundColor = arg0 ? colors2.CONTROL_BRAND_FOREGROUND : colors2.WHITE;
-  obj.iconBadgeIndicator = obj6;
+  obj[3] = { color: INTERACTIVE_TEXT_DEFAULT };
+  obj[4] = { color: importDefault(712).colors.ICON_MUTED };
+  const obj1 = { color: importDefault(712).colors.ICON_MUTED };
+  obj[5] = { color: importDefault(712).unsafe_rawColors.RED_400 };
+  const obj2 = { color: importDefault(712).unsafe_rawColors.RED_400 };
+  obj[6] = { color: importDefault(712).colors.BLACK };
+  const colors2 = tmp3(712).colors;
+  obj[7] = { backgroundColor: arg0 ? colors2.CONTROL_BRAND_FOREGROUND : colors2.WHITE };
   return obj;
 });
-const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/voice_panel/native/controls/buttons/VoicePanelStyles.tsx");
+const result = require("map").fileFinishedImporting("modules/voice_panel/native/controls/buttons/VoicePanelStyles.tsx");
 
 export const useVoicePanelButtonStyles = function useVoicePanelButtonStyles(wrapperSpecs) {
-  const derivedStateFromSharedValue = require(8094) /* _createForOfIteratorHelperLoose */.useDerivedStateFromSharedValue(wrapperSpecs, (drawerMode) => drawerMode.drawerMode);
-  return callback(derivedStateFromSharedValue, importDefault(1324)("VoicePanelStyles"));
+  const derivedStateFromSharedValue = require(8118) /* map */.useDerivedStateFromSharedValue(wrapperSpecs, (drawerMode) => drawerMode.drawerMode);
+  return callback(derivedStateFromSharedValue, importDefault(1348)("VoicePanelStyles"));
 };

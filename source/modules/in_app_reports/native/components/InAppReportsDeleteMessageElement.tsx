@@ -1,26 +1,28 @@
-// Module ID: 12386
-// Function ID: 96209
+// Module ID: 12408
+// Function ID: 12409
 // Name: DeleteMessageElement
-// Dependencies: [57, 31, 4384, 653, 33, 566, 4359, 5695, 12382, 1212, 4124, 2]
+// Dependencies: [32, 19, 4407, 676, 21, 589, 4384, 5713, 12404, 1236, 4148, 2]
 // Exports: default
 
-// Module 12386 (DeleteMessageElement)
+// Module 12408 (DeleteMessageElement)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import noop from "noop";
+import reinjectEphemerals from "reinjectEphemerals";
 import { AnalyticEvents } from "ME";
 import { jsx } from "jsxProd";
 
 const require = arg1;
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/in_app_reports/native/components/InAppReportsDeleteMessageElement.tsx");
+const result = require("reinjectEphemerals").fileFinishedImporting("modules/in_app_reports/native/components/InAppReportsDeleteMessageElement.tsx");
 
 export default function DeleteMessageElement(message) {
   message = message.message;
   const reportId = message.reportId;
+  let dependencyMap;
+  let stateFromStores;
   const tmp = stateFromStores(React.useState(false), 2);
-  const dependencyMap = tmp[1];
-  let obj = message(566);
-  const items = [_isNativeReflectConstruct];
+  dependencyMap = tmp[1];
+  let obj = message(589);
+  const items = [reinjectEphemerals];
   const items1 = [message];
   stateFromStores = obj.useStateFromStores(items, () => null == outer1_5.getMessage(message.getChannelId(), message.id), items1);
   const items2 = [stateFromStores];
@@ -30,21 +32,20 @@ export default function DeleteMessageElement(message) {
   const items3 = [message, reportId];
   const callback = React.useCallback(() => {
     dependencyMap(true);
-    let obj = reportId(4359);
+    let obj = reportId(4384);
     obj = { report_id: reportId };
     obj.trackWithMetadata(outer1_6.IAR_DELETE_MESSAGE_BUTTON_CLICKED, obj);
-    reportId(5695).deleteMessage(message.getChannelId(), message.id);
+    reportId(5713).deleteMessage(message.getChannelId(), message.id);
   }, items3);
-  obj = {};
-  const intl = message(1212).intl;
-  obj.title = intl.string(message(1212).t.c9BHL9);
-  const intl2 = message(1212).intl;
-  obj.disabledTitle = intl2.string(message(1212).t.AT2KSd);
-  const intl3 = message(1212).intl;
-  obj.description = intl3.string(message(1212).t.dK8S0w);
-  obj.disabled = tmp[0];
-  obj.variant = "danger";
-  obj.onPress = callback;
-  obj.icon = jsx(message(4124).TrashIcon, { color: "text-feedback-critical" });
-  return jsx(reportId(12382), {});
+  obj = { title: null, disabledTitle: null, description: null, disabled: null, variant: "danger", onPress: null, icon: null };
+  const intl = message(1236).intl;
+  obj[0] = intl.string(message(1236).t.c9BHL9);
+  const intl2 = message(1236).intl;
+  obj[1] = intl2.string(message(1236).t.AT2KSd);
+  const intl3 = message(1236).intl;
+  obj[2] = intl3.string(message(1236).t.dK8S0w);
+  obj[3] = tmp[0];
+  obj[5] = callback;
+  obj[6] = jsx(message(4148).TrashIcon, { color: "text-feedback-critical" });
+  return jsx(reportId(12404), { title: null, disabledTitle: null, description: null, disabled: null, variant: "danger", onPress: null, icon: null });
 };

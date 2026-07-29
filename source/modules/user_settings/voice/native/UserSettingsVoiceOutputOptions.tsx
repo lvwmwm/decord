@@ -1,87 +1,89 @@
-// Module ID: 10747
-// Function ID: 83418
+// Module ID: 10771
+// Function ID: 10772
 // Name: UserSettingsVoiceOutputOptions
-// Dependencies: [31, 27, 4184, 1194, 4212, 4226, 33, 4165, 566, 44, 8814, 10741, 1212, 5198, 10748, 2]
+// Dependencies: [19, 17, 4208, 1218, 4236, 4250, 21, 4189, 589, 38, 8838, 10765, 1236, 5220, 10772, 2]
 // Exports: default
 
-// Module 10747 (UserSettingsVoiceOutputOptions)
-import result from "result";
+// Module 10771 (UserSettingsVoiceOutputOptions)
+import noop from "noop";
 import { View } from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_6 from "_isNativeReflectConstruct";
-import closure_7 from "_isNativeReflectConstruct";
+import reset from "reset";
+import fetchFingerprint from "fetchFingerprint";
+import _detectH265HardwareDecode from "_detectH265HardwareDecode";
 import { MediaEngineContextTypes } from "DesktopSources";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_10;
-let closure_9;
+let c10;
+let c9;
 const require = arg1;
-({ jsx: closure_9, jsxs: closure_10 } = jsxProd);
-let closure_11 = _createForOfIteratorHelperLoose.createStyles({ slider: { marginTop: 4 } });
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/user_settings/voice/native/UserSettingsVoiceOutputOptions.tsx");
+({ jsx: c9, jsxs: c10 } = jsxProd);
+let closure_11 = createCacheKey.createStyles({ slider: { marginTop: 4 } });
+const result = require("reset").fileFinishedImporting("modules/user_settings/voice/native/UserSettingsVoiceOutputOptions.tsx");
 
 export default function UserSettingsVoiceOutputOptions() {
   const tmp = callback2();
-  let obj = stateFromStores1(566);
-  const items = [closure_7];
-  const stateFromStores = obj.useStateFromStores(items, () => outer1_7.getOutputVolume());
-  let obj1 = stateFromStores1(566);
-  const items1 = [_isNativeReflectConstruct, closure_6];
+  let obj = stateFromStores1(589);
+  const items = [_detectH265HardwareDecode];
+  const stateFromStores = obj.useStateFromStores(items, () => outputVolume.getOutputVolume());
+  let obj1 = stateFromStores1(589);
+  const items1 = [reset, fetchFingerprint];
   stateFromStores1 = obj1.useStateFromStores(items1, () => {
-    const lastActiveStream = outer1_5.getLastActiveStream();
+    lastActiveStream = lastActiveStream.getLastActiveStream();
     let tmp2 = null;
     if (null != lastActiveStream) {
       tmp2 = null;
-      if (lastActiveStream.ownerId !== outer1_6.getId()) {
+      if (lastActiveStream.ownerId !== id.getId()) {
         tmp2 = lastActiveStream;
       }
     }
     return tmp2;
   });
-  let obj2 = stateFromStores1(566);
-  const items2 = [closure_7];
+  let obj2 = stateFromStores1(589);
+  const items2 = [_detectH265HardwareDecode];
   const items3 = [stateFromStores1];
   const stateFromStores2 = obj2.useStateFromStores(items2, () => {
     let num = 0;
     if (null != stateFromStores1) {
-      num = outer1_7.getLocalVolume(stateFromStores1.ownerId, outer1_8.STREAM);
+      num = outer1_7.getLocalVolume(tmp.ownerId, outer1_8.STREAM);
     }
     return num;
   });
-  const callback = React.useCallback((volume) => {
+  const callback = React.useCallback((arg0) => {
     outer1_1(outer1_2[9])(null != stateFromStores1, "Can not set stream volume without active stream");
-    outer1_1(outer1_2[10]).setLocalVolume(stateFromStores1.ownerId, volume, outer1_8.STREAM);
+    outer1_1(outer1_2[10]).setLocalVolume(stateFromStores1.ownerId, arg0, outer1_8.STREAM);
   }, items3);
-  obj = {};
-  const intl = stateFromStores1(1212).intl;
-  obj.title = intl.string(stateFromStores1(1212).t.UXxPGB);
-  obj.hasIcons = false;
-  obj = {};
-  const intl2 = stateFromStores1(1212).intl;
-  obj.label = intl2.string(stateFromStores1(1212).t.xPHVBs);
-  obj1 = { style: tmp.slider, children: callback(importDefault(10748), obj2) };
+  obj = { title: null, hasIcons: false, children: null };
+  const intl = stateFromStores1(1236).intl;
+  obj[0] = intl.string(stateFromStores1(1236).t.UXxPGB);
+  obj = { label: null, subLabel: null };
+  const intl2 = stateFromStores1(1236).intl;
+  obj[0] = intl2.string(stateFromStores1(1236).t.xPHVBs);
+  obj1 = { style: tmp.slider, children: callback(importDefault(10772), obj2) };
   obj2 = {
     style: tmp.slider,
     value: stateFromStores,
-    onValueChange(closure_45) {
-      return outer1_1(outer1_2[10]).setOutputVolume(closure_45);
+    onValueChange(arg0) {
+      return callback(table[10]).setOutputVolume(arg0);
     }
   };
-  obj.subLabel = callback(View, obj1);
-  const items4 = [callback(stateFromStores1(5198).TableRow, obj), ];
-  let tmp7 = null != stateFromStores1;
-  if (tmp7) {
-    const obj3 = {};
-    const intl3 = stateFromStores1(1212).intl;
-    obj3.label = intl3.string(stateFromStores1(1212).t.pEAl4b);
-    const obj4 = { style: tmp.slider };
-    const obj5 = { value: stateFromStores2, onValueChange: callback };
-    obj4.children = callback(importDefault(10748), obj5);
-    obj3.subLabel = callback(View, obj4);
-    tmp7 = callback(stateFromStores1(5198).TableRow, obj3);
+  obj[1] = callback(View, obj1);
+  const items4 = [callback(stateFromStores1(5220).TableRow, obj), ];
+  let tmp9Result = null != stateFromStores1;
+  if (tmp9Result) {
+    const obj3 = { label: null, subLabel: null };
+    const intl3 = tmp2(1236).intl;
+    obj3[0] = intl3.string(tmp2(1236).t.pEAl4b);
+    const obj4 = { style: null, children: null };
+    obj4[0] = tmp.slider;
+    const obj5 = { value: null, onValueChange: null };
+    obj5[0] = stateFromStores2;
+    obj5[1] = callback;
+    obj4[1] = tmp9(importDefault(10772), obj5);
+    obj3[1] = tmp9(View, obj4);
+    tmp9Result = tmp9(tmp2(5220).TableRow, obj3);
   }
-  items4[1] = tmp7;
-  obj.children = items4;
-  return closure_10(stateFromStores1(10741).UserSettingsTableRowGroup, obj);
+  items4[1] = tmp9Result;
+  obj[2] = items4;
+  return closure_10(stateFromStores1(10765).UserSettingsTableRowGroup, obj);
 };

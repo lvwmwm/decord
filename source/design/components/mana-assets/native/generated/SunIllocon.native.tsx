@@ -1,10 +1,10 @@
-// Module ID: 7536
-// Function ID: 60575
+// Module ID: 7560
+// Function ID: 7561
 // Name: SunIllocon
-// Dependencies: [33, 5119, 7537, 2]
+// Dependencies: [21, 5141, 7561, 2]
 // Exports: SunIllocon
 
-// Module 7536 (SunIllocon)
+// Module 7560 (SunIllocon)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/SunIllocon.native.tsx");
@@ -18,14 +18,14 @@ export const SunIllocon = function SunIllocon(size) {
   if (num === undefined) {
     num = 64;
   }
-  let obj = { fadeDuration: 0 };
-  obj = { uri: importDefault(7537) };
-  obj.source = obj;
-  obj = { width: num, height: num };
-  const items = [obj];
-  obj.style = items;
-  obj.accessible = accessible;
-  obj.accessibilityLabel = accessibilityLabel;
-  obj.resizeMode = resizeMode;
-  return jsx(importDefault(5119), { width: num, height: num });
+  let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
+  obj = { uri: null };
+  obj[0] = importDefault(7561);
+  obj[1] = obj;
+  const items = [{ width: num, height: num }];
+  obj[2] = items;
+  obj[3] = accessible;
+  obj[4] = accessibilityLabel;
+  obj[5] = resizeMode;
+  return jsx(importDefault(5141), { uri: null });
 };

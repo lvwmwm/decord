@@ -1,17 +1,17 @@
-// Module ID: 9750
-// Function ID: 75810
+// Module ID: 9772
+// Function ID: 9773
 // Name: CollectiblesWishlistItemCard
-// Dependencies: [31, 5784, 9751, 33, 8642, 566, 8641, 8645, 1877, 8646, 2]
+// Dependencies: [19, 5802, 9773, 21, 8666, 589, 8665, 8669, 1901, 8670, 2]
 // Exports: default
 
-// Module 9750 (CollectiblesWishlistItemCard)
-import result from "result";
-import { transformSKUToCollectiblesItem as closure_4 } from "_createForOfIteratorHelperLoose";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 9772 (CollectiblesWishlistItemCard)
+import noop from "noop";
+import { transformSKUToCollectiblesItem as closure_4 } from "createCollectiblesItemsFromServerResponse";
+import initialize from "initialize";
 import { jsx } from "jsxProd";
 
 const require = arg1;
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/wishlists/native/CollectiblesWishlistItemCard.tsx");
+const result = require("initialize").fileFinishedImporting("modules/wishlists/native/CollectiblesWishlistItemCard.tsx");
 
 export default function CollectiblesWishlistItemCard(sku) {
   sku = sku.sku;
@@ -21,52 +21,53 @@ export default function CollectiblesWishlistItemCard(sku) {
   }
   const wishlistOwnerId = sku.wishlistOwnerId;
   const size = sku.size;
-  let obj = { sku: 0, isOwned: 0, source: 0, wishlistOwnerId: 0, size: 0 };
-  Object.setPrototypeOf(null);
-  const merged = Object.assign(sku, obj);
+  const merged = Object.assign(sku, Object.create(null));
   let memo;
-  const isProfileFrameGiftingEnabled = sku(size[4]).useIsProfileFrameGiftingEnabled("CollectiblesWishlistItemCard");
-  const obj2 = sku(size[4]);
-  const items = [_isNativeReflectConstruct];
+  let obj = sku(size[4]);
+  const isProfileFrameGiftingEnabled = obj.useIsProfileFrameGiftingEnabled("CollectiblesWishlistItemCard");
+  const items = [initialize];
   const items1 = [sku.id, wishlistOwnerId];
   const stateFromStores = sku(size[5]).useStateFromStores(items, () => {
     let hasSentGiftResult = null != wishlistOwnerId;
     if (hasSentGiftResult) {
-      hasSentGiftResult = outer1_5.hasSentGift(sku.id, wishlistOwnerId);
+      hasSentGiftResult = outer1_5.hasSentGift(sku.id, tmp);
     }
     return hasSentGiftResult;
   }, items1);
-  const obj3 = sku(size[5]);
+  const obj2 = sku(size[5]);
+  let tmp2 = sku;
   const items2 = [sku];
   const productNameAndTypeFromSku = sku(size[6]).getProductNameAndTypeFromSku(sku);
   memo = memo.useMemo(() => outer1_4(sku), items2);
   const items3 = [memo, size];
   let type;
   const callback = memo.useCallback(() => {
-    let tmp = null;
+    let tmp2 = null;
     if (null != memo) {
-      const obj = { collectiblesItemData: memo, size };
-      tmp = outer1_6(sku(size[7]).CollectiblesPreview, obj);
+      const obj = { collectiblesItemData: null, size: null };
+      obj[0] = tmp;
+      obj[1] = size;
+      tmp2 = outer1_6(sku(size[7]).CollectiblesPreview, obj);
     }
-    return tmp;
+    return tmp2;
   }, items3);
-  if (null != memo) {
+  if (memo != null) {
     type = memo.type;
   }
   if ("single" === type) {
-    if (memo.item.type === sku(size[8]).CollectiblesItemType.PROFILE_FRAME) {
-      let tmp12Result = null;
+    if (memo.item.type === tmp2(tmp3[8]).CollectiblesItemType.PROFILE_FRAME) {
+      let tmp11Result = null;
     }
-    return tmp12Result;
+    return tmp11Result;
   }
-  obj = { accessibilityLabel: productNameAndTypeFromSku, renderPreview: callback, source: sku.source };
-  const obj4 = sku(size[6]);
-  const tmp12 = jsx;
+  obj = { accessibilityLabel: productNameAndTypeFromSku, renderPreview: callback, source: sku.source, isOwned: null, size: null };
+  const obj3 = sku(size[6]);
+  const tmp11 = jsx;
   if (!flag) {
     flag = stateFromStores;
   }
-  obj.isOwned = flag;
-  obj.size = size;
+  obj[3] = flag;
+  obj[4] = size;
   const merged1 = Object.assign(merged);
-  tmp12Result = tmp12(wishlistOwnerId(size[9]), obj);
+  tmp11Result = tmp11(wishlistOwnerId(size[9]), obj);
 };

@@ -1,21 +1,21 @@
-// Module ID: 8970
-// Function ID: 70696
+// Module ID: 8994
+// Function ID: 8995
 // Name: DomainScreen
-// Dependencies: [57, 31, 27, 653, 33, 4165, 689, 1456, 507, 5155, 4161, 1212, 8971, 8976, 4578, 4372, 5121, 5552, 2]
+// Dependencies: [32, 19, 17, 676, 21, 4189, 712, 1480, 530, 5177, 4185, 1236, 8995, 9000, 4600, 4395, 5143, 5570, 2]
 // Exports: default
 
-// Module 8970 (DomainScreen)
+// Module 8994 (DomainScreen)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
-import { View } from "get ActivityIndicator";
+import noop from "noop";
+import { View } from "NavigationStack";
 import ME from "ME";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
+let c9;
 let closure_6;
-let closure_7;
-let closure_8;
-let closure_9;
+let error;
+let metroImportAll;
 const require = arg1;
 function DomainScreen(onClose) {
   onClose = onClose.onClose;
@@ -30,156 +30,166 @@ function DomainScreen(onClose) {
     let obj = { url: outer1_6.CONNECTION(outer1_7.DOMAIN, first), body: {}, rejectWithError: false };
     const postResult = HTTP.post({ url: outer1_6.CONNECTION(outer1_7.DOMAIN, first), body: {}, rejectWithError: false });
     const nextPromise = HTTP.post({ url: outer1_6.CONNECTION(outer1_7.DOMAIN, first), body: {}, rejectWithError: false }).then(() => {
-      outer1_0();
+      callback();
     });
     HTTP.post({ url: outer1_6.CONNECTION(outer1_7.DOMAIN, first), body: {}, rejectWithError: false }).then(() => {
-      outer1_0();
+      callback();
     }).catch((body) => {
       body = body.body;
-      if (null != body) {
-        if (body.proof) {
-          const obj = { proof: body.body.proof, domain: outer1_2 };
-          outer1_1.push(outer2_11.PROOF_DNS, obj);
-        }
+      let proof;
+      if (body != null) {
+        proof = body.proof;
       }
-      const body2 = body.body;
-      let message;
-      if (null != body2) {
-        const errors = body2.errors;
-        if (null != errors) {
-          const domain = errors.domain;
-          if (null != domain) {
-            const _errors = domain._errors;
-            if (null != _errors) {
-              const first = _errors[0];
-              if (null != first) {
-                message = first.message;
+      if (proof) {
+        const obj = { proof: null, domain: null };
+        obj[0] = body.body.proof;
+        obj[1] = closure_2;
+        arr = arr.push(outer1_11.PROOF_DNS, obj);
+      } else {
+        const body2 = body.body;
+        let message;
+        if (body2 != null) {
+          const errors = body2.errors;
+          if (errors != null) {
+            const domain = errors.domain;
+            if (domain != null) {
+              const _errors = domain._errors;
+              if (_errors != null) {
+                const first = _errors[0];
+                if (first != null) {
+                  message = first.message;
+                }
               }
             }
           }
         }
-      }
-      if (!message) {
-        const body3 = body.body;
-        let message1;
-        if (null != body3) {
-          message1 = body3.message;
+        if (!message) {
+          const body3 = body.body;
+          let message1;
+          if (body3 != null) {
+            message1 = body3.message;
+          }
+          message = message1;
         }
-        message = message1;
+        if (!message) {
+          message = body.message;
+        }
+        _slicedToArray(message);
+        const tmp2 = _slicedToArray;
       }
-      if (!message) {
-        message = body.message;
-      }
-      outer1_3(message);
     }).finally(() => {
-      outer1_4(false);
+      callback2(false);
     });
   }
-  const tmp = _createForOfIteratorHelperLoose();
+  const tmp = createCacheKey();
   let obj = onClose(first[7]);
   importDefault = obj.useNavigation();
-  const tmp2 = callback(React.useState(""), 2);
+  let tmp2 = callback(React.useState(""), 2);
   first = tmp2[0];
   const tmp4 = callback(React.useState(null), 2);
   callback = tmp4[1];
   const tmp5 = callback(React.useState(false), 2);
   React = tmp5[1];
-  obj = { bottom: true, style: tmp.container };
-  obj = { variant: "text-md/normal", color: "text-default", style: tmp.description };
+  obj = { bottom: true, style: tmp.container, children: null };
+  obj = { variant: "text-md/normal", color: "text-default", style: tmp.description, children: null };
   const intl = onClose(first[11]).intl;
-  obj.children = intl.string(onClose(first[11]).t.NxPUqY);
+  obj[3] = intl.string(onClose(first[11]).t.NxPUqY);
   const items = [callback2(onClose(first[10]).Text, obj), , ];
-  const obj1 = { autoFocus: true, style: tmp.input };
+  const obj1 = { autoFocus: true, style: tmp.input, label: null, placeholder: null, error: null, returnKeyType: "done", onChangeText: null, onSubmitEditing: null };
   const intl2 = onClose(first[11]).intl;
-  obj1.label = intl2.string(onClose(first[11]).t["4jIAa+"]);
-  obj1.placeholder = onClose(first[13]).EXAMPLE_DOMAIN;
-  obj1.error = tmp4[0];
-  obj1.returnKeyType = "done";
-  obj1.onChangeText = tmp2[1];
-  obj1.onSubmitEditing = verify;
+  obj1[2] = intl2.string(onClose(first[11]).t["4jIAa+"]);
+  obj1[3] = onClose(first[13]).EXAMPLE_DOMAIN;
+  obj1[4] = tmp4[0];
+  obj1[6] = tmp2[1];
+  obj1[7] = verify;
   items[1] = callback2(importDefault(first[12]), obj1);
-  const obj2 = { loading: tmp5[0], disabled: "" === first };
+  const obj2 = { loading: tmp5[0], disabled: "" === first, text: null, onPress: null };
   const intl3 = onClose(first[11]).intl;
-  obj2.text = intl3.string(onClose(first[11]).t.PDTjLN);
-  obj2.onPress = verify;
+  obj2[2] = intl3.string(onClose(first[11]).t.PDTjLN);
+  obj2[3] = verify;
   items[2] = callback2(onClose(first[14]).Button, obj2);
-  obj.children = items;
+  obj[2] = items;
   return callback3(onClose(first[9]).SafeAreaPaddingView, obj);
 }
 function DNSProofScreen(proof) {
+  let c4;
+  let c5;
   let domain;
   let require;
+  let tmp5;
+  let tmp7;
   ({ onClose: require, domain } = proof);
   proof = proof.proof;
-  const tmp = _createForOfIteratorHelperLoose();
+  let callback;
+  let React;
+  c5 = undefined;
+  const tmp = createCacheKey();
   let obj = require(proof[7]);
-  const callback = obj.useNavigation();
-  const tmp2 = callback(React.useState(null), 2);
-  let first = tmp2[0];
-  React = tmp2[1];
-  const tmp4 = callback(React.useState(false), 2);
-  let closure_5 = tmp4[1];
-  obj = { bottom: true, style: tmp.container };
-  obj = { variant: "text-md/normal" };
+  callback = obj.useNavigation();
+  [tmp5, c4] = callback(React.useState(null), 2);
+  const tmp4 = callback(React.useState(null), 2);
+  [tmp7, c5] = callback(React.useState(false), 2);
+  obj = { bottom: true, style: tmp.container, children: null };
+  obj = { variant: "text-md/normal", children: null };
   const intl = require(proof[11]).intl;
-  obj.children = intl.string(require(proof[11]).t.cSURbq);
+  obj[1] = intl.string(require(proof[11]).t.cSURbq);
   const items = [callback2(require(proof[10]).Text, obj), , , , ];
-  const obj1 = { style: tmp.dns };
-  const obj2 = { variant: "text-md/normal" };
+  const obj1 = { style: tmp.dns, children: null };
+  const obj2 = { variant: "text-md/normal", children: null };
   const intl2 = require(proof[11]).intl;
-  obj2.children = intl2.string(require(proof[11]).t.GL3q7k);
+  obj2[1] = intl2.string(require(proof[11]).t.GL3q7k);
   const items1 = [callback2(require(proof[10]).Text, obj2), , , , , ];
-  const obj3 = { variant: "text-md/normal", selectable: true, style: tmp.code };
+  const obj3 = { variant: "text-md/normal", selectable: true, style: tmp.code, children: null };
   let obj6 = require(proof[13]);
-  obj3.children = obj6.getDnsName(domain);
+  obj3[3] = obj6.getDnsName(domain);
   items1[1] = callback2(require(proof[10]).Text, obj3);
-  const obj4 = { variant: "text-md/normal" };
+  const obj4 = { variant: "text-md/normal", children: null };
   const intl3 = require(proof[11]).intl;
-  obj4.children = intl3.string(require(proof[11]).t.Ccmixu);
+  obj4[1] = intl3.string(require(proof[11]).t.Ccmixu);
   items1[2] = callback2(require(proof[10]).Text, obj4);
-  const obj5 = { variant: "text-md/normal", selectable: true, style: tmp.code, children: "TXT" };
-  items1[3] = callback2(require(proof[10]).Text, obj5);
-  obj6 = { variant: "text-md/normal" };
+  items1[3] = callback2(require(proof[10]).Text, { variant: "text-md/normal", selectable: true, style: tmp.code, children: "TXT" });
+  obj6 = { variant: "text-md/normal", children: null };
   const intl4 = require(proof[11]).intl;
-  obj6.children = intl4.string(require(proof[11]).t.PVLriT);
+  obj6[1] = intl4.string(require(proof[11]).t.PVLriT);
   items1[4] = callback2(require(proof[10]).Text, obj6);
-  const obj7 = { variant: "text-md/normal", selectable: true, style: tmp.code, children: proof };
-  items1[5] = callback2(require(proof[10]).Text, obj7);
-  obj1.children = items1;
-  items[1] = callback3(closure_5, obj1);
-  let tmp6 = null != first;
-  if (tmp6) {
-    const obj8 = { variant: "text-md/normal", color: "text-feedback-critical", style: tmp.error, children: first };
-    tmp6 = callback2(require(proof[10]).Text, obj8);
+  items1[5] = callback2(require(proof[10]).Text, { variant: "text-md/normal", selectable: true, style: tmp.code, children: proof });
+  obj1[1] = items1;
+  items[1] = callback3(c5, obj1);
+  let tmp9Result = null != tmp5;
+  if (tmp9Result) {
+    const obj8 = { variant: "text-md/normal", color: "text-feedback-critical", style: null, children: null };
+    obj8[2] = tmp.error;
+    obj8[3] = tmp5;
+    tmp9Result = tmp9(tmp2(tmp3[10]).Text, obj8);
   }
-  items[2] = tmp6;
-  const obj9 = { style: tmp.button };
-  const obj10 = { loading: tmp4[0] };
-  const intl5 = require(proof[11]).intl;
-  obj10.text = intl5.string(require(proof[11]).t["13ofGu"]);
-  obj10.onPress = function onPress() {
-    callback2(true);
-    callback(null);
+  items[2] = tmp9Result;
+  const obj9 = { style: tmp.button, children: null };
+  const obj10 = { loading: tmp7, text: null, onPress: null };
+  const intl5 = tmp2(tmp3[11]).intl;
+  obj10[1] = intl5.string(require(proof[11]).t["13ofGu"]);
+  obj10[2] = function onPress() {
+    _undefined2(true);
+    _undefined(null);
     const HTTP = outer1_0(proof[8]).HTTP;
     const obj = { url: outer1_6.CONNECTION(outer1_7.DOMAIN, domain), body: {}, rejectWithError: false };
     const postResult = HTTP.post({ url: outer1_6.CONNECTION(outer1_7.DOMAIN, domain), body: {}, rejectWithError: false });
     const nextPromise = HTTP.post({ url: outer1_6.CONNECTION(outer1_7.DOMAIN, domain), body: {}, rejectWithError: false }).then(() => {
-      outer1_0();
+      callback();
     });
     HTTP.post({ url: outer1_6.CONNECTION(outer1_7.DOMAIN, domain), body: {}, rejectWithError: false }).then(() => {
-      outer1_0();
+      callback();
     }).catch((body) => {
       body = body.body;
       let message;
-      if (null != body) {
+      if (body != null) {
         const errors = body.errors;
-        if (null != errors) {
+        if (errors != null) {
           const domain = errors.domain;
-          if (null != domain) {
+          if (domain != null) {
             const _errors = domain._errors;
-            if (null != _errors) {
+            if (_errors != null) {
               const first = _errors[0];
-              if (null != first) {
+              if (first != null) {
                 message = first.message;
               }
             }
@@ -189,7 +199,7 @@ function DNSProofScreen(proof) {
       if (!message) {
         const body2 = body.body;
         let message1;
-        if (null != body2) {
+        if (body2 != null) {
           message1 = body2.message;
         }
         message = message1;
@@ -197,92 +207,98 @@ function DNSProofScreen(proof) {
       if (!message) {
         message = body.message;
       }
-      outer1_4(message);
+      noop(message);
     }).finally(() => {
-      outer1_5(false);
+      callback2(false);
     });
   };
-  obj9.children = callback2(require(proof[14]).Button, obj10);
-  items[3] = callback2(closure_5, obj9);
-  const obj11 = { style: tmp.button };
-  const obj12 = { variant: "secondary" };
-  const intl6 = require(proof[11]).intl;
-  obj12.text = intl6.string(require(proof[11]).t.CkfdNx);
-  obj12.onPress = function onPress() {
+  obj9[1] = callback2(require(proof[14]).Button, obj10);
+  items[3] = callback2(c5, obj9);
+  const obj11 = { style: tmp.button, children: null };
+  const obj12 = { variant: "secondary", text: null, onPress: null };
+  const intl6 = tmp2(tmp3[11]).intl;
+  obj12[1] = intl6.string(require(proof[11]).t.CkfdNx);
+  obj12[2] = function onPress() {
 
   };
-  obj11.children = callback2(require(proof[14]).Button, obj12);
-  items[4] = callback2(closure_5, obj11);
-  obj.children = items;
+  obj11[1] = callback2(require(proof[14]).Button, obj12);
+  items[4] = callback2(c5, obj11);
+  obj[2] = items;
   return callback3(require(proof[9]).SafeAreaPaddingView, obj);
 }
-function HTTPProofScreen(proof) {
+function HTTPProofScreen(children) {
+  let c3;
+  let c4;
   let domain;
   let require;
-  ({ onClose: require, domain } = proof);
-  const tmp = _createForOfIteratorHelperLoose();
-  let obj = require(1456) /* useNavigation */;
-  const dependencyMap = obj.useNavigation();
-  const tmp2 = callback(React.useState(null), 2);
-  let first = tmp2[0];
-  callback = tmp2[1];
-  const tmp4 = callback(React.useState(false), 2);
-  React = tmp4[1];
-  obj = { bottom: true, style: tmp.container };
-  obj = { variant: "text-md/normal" };
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj.children = intl.string(require(1212) /* getSystemLocale */.t.p4ql7y);
-  const items = [callback2(require(4161) /* Text */.Text, obj), , , , ];
-  const obj1 = { style: tmp.dns };
-  const obj2 = { variant: "text-md/normal" };
-  const intl2 = require(1212) /* getSystemLocale */.intl;
-  obj2.children = intl2.string(require(1212) /* getSystemLocale */.t.GL3q7k);
-  const items1 = [callback2(require(4161) /* Text */.Text, obj2), , , ];
-  const obj3 = { variant: "text-md/normal", selectable: true, style: tmp.code };
-  let obj6 = require(8976) /* EXAMPLE_DOMAIN */;
-  obj3.children = obj6.getHttpName(domain);
-  items1[1] = callback2(require(4161) /* Text */.Text, obj3);
-  const obj4 = { variant: "text-md/normal" };
-  const intl3 = require(1212) /* getSystemLocale */.intl;
-  obj4.children = intl3.string(require(1212) /* getSystemLocale */.t.PVLriT);
-  items1[2] = callback2(require(4161) /* Text */.Text, obj4);
-  const obj5 = { variant: "text-md/normal", selectable: true, style: tmp.code, children: proof.proof };
-  items1[3] = callback2(require(4161) /* Text */.Text, obj5);
-  obj1.children = items1;
+  let tmp5;
+  let tmp7;
+  ({ onClose: require, domain } = children);
+  let dependencyMap;
+  let callback;
+  let React;
+  const tmp = createCacheKey();
+  let obj = require(1480) /* useNavigation */;
+  dependencyMap = obj.useNavigation();
+  [tmp5, c3] = callback(React.useState(null), 2);
+  const tmp4 = callback(React.useState(null), 2);
+  [tmp7, c4] = callback(React.useState(false), 2);
+  obj = { bottom: true, style: tmp.container, children: null };
+  obj = { variant: "text-md/normal", children: null };
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj[1] = intl.string(require(1236) /* getSystemLocale */.t.p4ql7y);
+  const items = [callback2(require(4185) /* Text */.Text, obj), , , , ];
+  const obj1 = { style: tmp.dns, children: null };
+  const obj2 = { variant: "text-md/normal", children: null };
+  const intl2 = require(1236) /* getSystemLocale */.intl;
+  obj2[1] = intl2.string(require(1236) /* getSystemLocale */.t.GL3q7k);
+  const items1 = [callback2(require(4185) /* Text */.Text, obj2), , , ];
+  const obj3 = { variant: "text-md/normal", selectable: true, style: tmp.code, children: null };
+  let obj6 = require(9000) /* EXAMPLE_DOMAIN */;
+  obj3[3] = obj6.getHttpName(domain);
+  items1[1] = callback2(require(4185) /* Text */.Text, obj3);
+  const obj4 = { variant: "text-md/normal", children: null };
+  const intl3 = require(1236) /* getSystemLocale */.intl;
+  obj4[1] = intl3.string(require(1236) /* getSystemLocale */.t.PVLriT);
+  items1[2] = callback2(require(4185) /* Text */.Text, obj4);
+  items1[3] = callback2(require(4185) /* Text */.Text, { variant: "text-md/normal", selectable: true, style: tmp.code, children: children.proof });
+  obj1[1] = items1;
   items[1] = callback3(View, obj1);
-  let tmp6 = null != first;
-  if (tmp6) {
-    obj6 = { variant: "text-md/normal", color: "text-feedback-critical", style: tmp.error, children: first };
-    tmp6 = callback2(require(4161) /* Text */.Text, obj6);
+  let tmp9Result = null != tmp5;
+  if (tmp9Result) {
+    obj6 = { variant: "text-md/normal", color: "text-feedback-critical", style: null, children: null };
+    obj6[2] = tmp.error;
+    obj6[3] = tmp5;
+    tmp9Result = tmp9(tmp2(4185).Text, obj6);
   }
-  items[2] = tmp6;
-  const obj7 = { style: tmp.button };
-  const obj8 = { loading: tmp4[0] };
-  const intl4 = require(1212) /* getSystemLocale */.intl;
-  obj8.text = intl4.string(require(1212) /* getSystemLocale */.t["13ofGu"]);
-  obj8.onPress = function onPress() {
-    callback2(true);
-    callback(null);
+  items[2] = tmp9Result;
+  const obj7 = { style: tmp.button, children: null };
+  const obj8 = { loading: tmp7, text: null, onPress: null };
+  const intl4 = tmp2(1236).intl;
+  obj8[1] = intl4.string(require(1236) /* getSystemLocale */.t["13ofGu"]);
+  obj8[2] = function onPress() {
+    _undefined2(true);
+    _undefined(null);
     const HTTP = outer1_0(arr[8]).HTTP;
     const obj = { url: outer1_6.CONNECTION(outer1_7.DOMAIN, domain), body: {}, rejectWithError: false };
     const postResult = HTTP.post({ url: outer1_6.CONNECTION(outer1_7.DOMAIN, domain), body: {}, rejectWithError: false });
     const nextPromise = HTTP.post({ url: outer1_6.CONNECTION(outer1_7.DOMAIN, domain), body: {}, rejectWithError: false }).then(() => {
-      outer1_0();
+      callback();
     });
     HTTP.post({ url: outer1_6.CONNECTION(outer1_7.DOMAIN, domain), body: {}, rejectWithError: false }).then(() => {
-      outer1_0();
+      callback();
     }).catch((body) => {
       body = body.body;
       let message;
-      if (null != body) {
+      if (body != null) {
         const errors = body.errors;
-        if (null != errors) {
+        if (errors != null) {
           const domain = errors.domain;
-          if (null != domain) {
+          if (domain != null) {
             const _errors = domain._errors;
-            if (null != _errors) {
+            if (_errors != null) {
               const first = _errors[0];
-              if (null != first) {
+              if (first != null) {
                 message = first.message;
               }
             }
@@ -292,7 +308,7 @@ function HTTPProofScreen(proof) {
       if (!message) {
         const body2 = body.body;
         let message1;
-        if (null != body2) {
+        if (body2 != null) {
           message1 = body2.message;
         }
         message = message1;
@@ -300,75 +316,76 @@ function HTTPProofScreen(proof) {
       if (!message) {
         message = body.message;
       }
-      outer1_3(message);
+      _slicedToArray(message);
     }).finally(() => {
-      outer1_4(false);
+      callback2(false);
     });
   };
-  obj7.children = callback2(require(4578) /* Button */.Button, obj8);
+  obj7[1] = callback2(require(4600) /* Button */.Button, obj8);
   items[3] = callback2(View, obj7);
-  const obj9 = { style: tmp.button };
-  const obj10 = { variant: "secondary" };
-  const intl5 = require(1212) /* getSystemLocale */.intl;
-  obj10.text = intl5.string(require(1212) /* getSystemLocale */.t.RhJMVQ);
-  obj10.onPress = function onPress() {
+  const obj9 = { style: tmp.button, children: null };
+  const obj10 = { variant: "secondary", text: null, onPress: null };
+  const intl5 = tmp2(1236).intl;
+  obj10[1] = intl5.string(require(1236) /* getSystemLocale */.t.RhJMVQ);
+  obj10[2] = function onPress() {
 
   };
-  obj9.children = callback2(require(4578) /* Button */.Button, obj10);
+  obj9[1] = callback2(require(4600) /* Button */.Button, obj10);
   items[4] = callback2(View, obj9);
-  obj.children = items;
-  return callback3(require(5155) /* SafeAreaPaddingView */.SafeAreaPaddingView, obj);
+  obj[2] = items;
+  return callback3(require(5177) /* SafeAreaPaddingView */.SafeAreaPaddingView, obj);
 }
-({ Endpoints: closure_6, PlatformTypes: closure_7 } = ME);
-({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
-_createForOfIteratorHelperLoose = { container: { padding: 16 }, description: { textAlign: "center" }, input: { paddingHorizontal: 0, paddingVertical: 0, marginVertical: 16 } };
-_createForOfIteratorHelperLoose = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWEST, borderRadius: require("_createForOfIteratorHelperLoose").radii.xs, padding: 8, marginTop: 16 };
-_createForOfIteratorHelperLoose.dns = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.error = { marginTop: 16 };
-_createForOfIteratorHelperLoose.code = { fontFamily: "monospace", marginBottom: 4 };
-_createForOfIteratorHelperLoose.button = { marginTop: 16 };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+({ Endpoints: closure_6, PlatformTypes: error } = ME);
+({ jsx: metroImportAll, jsxs: c9 } = jsxProd);
+createCacheKey = { container: { padding: 16 }, description: { textAlign: "center" }, input: { paddingHorizontal: 0, paddingVertical: 0, marginVertical: 16 }, dns: null, error: null, code: null, button: null };
+createCacheKey = { backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOWEST, borderRadius: require("Themes").radii.xs, padding: 8, marginTop: 16 };
+createCacheKey[3] = createCacheKey;
+createCacheKey[4] = { marginTop: 16 };
+createCacheKey[5] = { fontFamily: "monospace", marginBottom: 4 };
+createCacheKey[6] = { marginTop: 16 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
 let closure_11 = { DOMAIN: "DOMAIN", PROOF_DNS: "PROOF_DNS", PROOF_HTTP: "PROOF_HTTP" };
 const result = require("get ActivityIndicator").fileFinishedImporting("modules/connections/native/DomainVerifyModal.tsx");
 
 export default function DomainVerifyModal(arg0) {
   if (arg0 == null) {
-    HermesBuiltin.throwTypeError("Cannot destructure 'undefined' or 'null'.");
-    throw undefined;
+    HermesBuiltin.throwTypeError();
   } else {
     function onClose(arg0) {
-      return outer1_1(outer1_2[15]).pop();
+      return callback(table[15]).pop();
     }
     let obj = {};
-    obj = {};
-    const intl = onClose(1212).intl;
-    obj.headerTitle = intl.string(onClose(1212).t["7lo8+e"]);
-    let obj2 = onClose(5121);
-    obj.headerLeft = obj2.getHeaderBackButton(onClose);
-    obj.render = function render() {
+    obj = { headerTitle: null, headerLeft: null, render: null };
+    const intl = onClose(1236).intl;
+    obj[0] = intl.string(onClose(1236).t["7lo8+e"]);
+    let obj2 = onClose(5143);
+    obj[1] = obj2.getHeaderBackButton(onClose);
+    obj[2] = function render() {
       return outer1_8(outer1_12, { onClose });
     };
     obj[constants.DOMAIN] = obj;
-    obj = {};
-    const intl2 = onClose(1212).intl;
-    obj.headerTitle = intl2.string(onClose(1212).t["7lo8+e"]);
-    obj.headerLeft = onClose(5121).getHeaderBackButton(onClose);
-    obj.render = function render(domain) {
+    obj = { headerTitle: null, headerLeft: null, render: null };
+    const intl2 = onClose(1236).intl;
+    obj[0] = intl2.string(onClose(1236).t["7lo8+e"]);
+    obj[1] = onClose(5143).getHeaderBackButton(onClose);
+    obj[2] = function render(domain) {
       return outer1_8(outer1_13, { domain: domain.domain, proof: domain.proof, onClose });
     };
     obj[constants.PROOF_DNS] = obj;
-    const obj1 = {};
-    const intl3 = onClose(1212).intl;
-    obj1.headerTitle = intl3.string(onClose(1212).t["7lo8+e"]);
-    const obj5 = onClose(5121);
-    obj1.headerLeft = onClose(5121).getHeaderBackButton(onClose);
-    obj1.render = function render(domain) {
+    const obj1 = { headerTitle: null, headerLeft: null, render: null };
+    const intl3 = onClose(1236).intl;
+    obj1[0] = intl3.string(onClose(1236).t["7lo8+e"]);
+    const obj5 = onClose(5143);
+    obj1[1] = onClose(5143).getHeaderBackButton(onClose);
+    obj1[2] = function render(domain) {
       return outer1_8(outer1_14, { domain: domain.domain, proof: domain.proof, onClose });
     };
     obj[constants.PROOF_HTTP] = obj1;
-    obj2 = { screens: obj, initialRouteName: constants.DOMAIN };
-    const intl4 = onClose(1212).intl;
-    obj2.headerBackTitle = intl4.string(onClose(1212).t["13/7kX"]);
-    return callback2(onClose(5552).Navigator, obj2);
+    obj2 = { screens: null, initialRouteName: null, headerBackTitle: null };
+    obj2[0] = obj;
+    obj2[1] = constants.DOMAIN;
+    const intl4 = onClose(1236).intl;
+    obj2[2] = intl4.string(onClose(1236).t["13/7kX"]);
+    return callback2(onClose(5570).Navigator, obj2);
   }
 };

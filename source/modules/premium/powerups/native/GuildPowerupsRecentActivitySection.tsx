@@ -1,16 +1,16 @@
-// Module ID: 11646
-// Function ID: 90324
+// Module ID: 11670
+// Function ID: 11671
 // Name: GuildPowerupsRecentActivityRow
-// Dependencies: [27, 4157, 33, 4165, 689, 11647, 3835, 5908, 566, 7721, 6597, 11650, 11652, 1273, 4161, 11654, 11648, 1212, 2]
+// Dependencies: [17, 4181, 21, 4189, 712, 11671, 3859, 5927, 589, 7744, 6618, 11674, 11676, 1297, 4185, 11678, 11672, 1236, 2]
 // Exports: default
 
-// Module 11646 (GuildPowerupsRecentActivityRow)
-import { View } from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 11670 (GuildPowerupsRecentActivityRow)
+import { View } from "getSystemLocale";
+import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_5;
+let c5;
 let closure_6;
 function GuildPowerupsRecentActivityRow(row) {
   let boost;
@@ -18,108 +18,121 @@ function GuildPowerupsRecentActivityRow(row) {
   let roleColor;
   let roleColorStrings;
   let sortKey;
+  let username;
   row = row.row;
   ({ boost, phase, sortKey } = row);
   const tmp = callback3();
-  let obj = require(11647) /* useMaybeGetSortedBoosts */;
+  let obj = require(11671) /* useMaybeGetSortedBoosts */;
   const getBoostUserConfig = obj.useGetBoostUserConfig(boost);
-  ({ roleColor, roleColorStrings } = getBoostUserConfig);
+  ({ roleColor, roleColorStrings, username } = getBoostUserConfig);
   if (row.isExpiringBoostsEnabled) {
-    let tmp3Result = tmp3(3835);
+    let tmp2Result = tmp2(3859);
     const _Date = Date;
     const date = new Date(sortKey);
-    let calendarFormatResult = tmp3Result.calendarFormat(date);
+    let calendarFormatResult = tmp2Result.calendarFormat(date);
   } else {
-    tmp3Result = tmp3(5908);
-    calendarFormatResult = tmp3Result.getRelativeTimestamp(sortKey, true);
+    tmp2Result = tmp2(5927);
+    calendarFormatResult = tmp2Result.getRelativeTimestamp(sortKey, true);
   }
-  let obj3 = require(566) /* initialize */;
-  const items = [_isNativeReflectConstruct];
-  const stateFromStores = obj3.useStateFromStores(items, () => outer1_4.roleStyle);
+  const items = [maybeApplyNoTextColorForLightCustomTheme];
+  const stateFromStores = require(589) /* initialize */.useStateFromStores(items, () => roleStyle.roleStyle);
   if ("username" === stateFromStores) {
     if (null != roleColor) {
-      obj = { color: roleColor };
+      obj = { color: null };
+      obj[0] = roleColor;
     }
-    let obj5 = require(7721) /* processColorStringsInternal */;
-    const processColorStringsArray = obj5.useProcessColorStringsArray(roleColorStrings);
-    let obj6 = require(7721) /* processColorStringsInternal */;
-    const isRoleStyleAndRoleColorsEligibleForERC = obj6.useIsRoleStyleAndRoleColorsEligibleForERC(boost.guildId, boost.userId, stateFromStores, processColorStringsArray);
+    const processColorStringsArray = tmp2(7744).useProcessColorStringsArray(roleColorStrings);
+    const tmp2Result3 = tmp2(7744);
+    const isRoleStyleAndRoleColorsEligibleForERC = tmp2Result3.useIsRoleStyleAndRoleColorsEligibleForERC(boost.guildId, boost.userId, stateFromStores, processColorStringsArray);
     if ("gave" === phase) {
-      let BoostGemSlashIcon = require(6597) /* BoostGemIcon */.BoostGemIcon;
+      let BoostGemSlashIcon = tmp2(6618).BoostGemIcon;
     } else if ("expiring" === phase) {
-      BoostGemSlashIcon = require(11650) /* BoostTier1Icon */.BoostTier1Icon;
+      BoostGemSlashIcon = tmp2(11674).BoostTier1Icon;
     } else {
-      BoostGemSlashIcon = require(11652) /* BoostGemSlashIcon */.BoostGemSlashIcon;
+      BoostGemSlashIcon = tmp2(11676).BoostGemSlashIcon;
     }
-    obj = { style: tmp.boostRowContainer };
+    obj = { style: null, children: null };
+    obj[0] = tmp.boostRowContainer;
     if ("gave" === phase) {
-      const obj1 = { color: importDefault(689).unsafe_rawColors.GUILD_BOOSTING_PINK, size: "sm" };
+      const obj1 = { color: null, size: "sm" };
+      obj1[0] = importDefault(712).unsafe_rawColors.GUILD_BOOSTING_PINK;
       let obj2 = obj1;
     } else {
       obj2 = { size: "sm" };
     }
-    const items1 = [callback(BoostGemSlashIcon, obj2), , ];
-    obj3 = { style: tmp.boostMessage };
-    let tmp36 = "dot" === stateFromStores;
-    if (tmp36) {
-      tmp36 = null != roleColor;
+    const items1 = [closure_5(BoostGemSlashIcon, obj2), , ];
+    const obj3 = { style: null, children: null };
+    obj3[0] = tmp.boostMessage;
+    let tmp23Result = "dot" === stateFromStores;
+    if (tmp23Result) {
+      tmp23Result = null != roleColor;
     }
-    if (tmp36) {
-      const obj4 = { size: "small", color: roleColor, colors: roleColorStrings };
-      tmp36 = callback(require(1273) /* Button */.RoleDot, obj4);
+    if (tmp23Result) {
+      const obj4 = { size: "small", color: null, colors: null };
+      obj4[1] = roleColor;
+      obj4[2] = roleColorStrings;
+      tmp23Result = tmp23(tmp2(1297).RoleDot, obj4);
     }
-    const items2 = [tmp36, , , ];
-    obj5 = { variant: "text-md/medium", color: "interactive-text-active", lineClamp: 1 };
+    const items2 = [tmp23Result, , , ];
+    const obj5 = { variant: "text-md/medium", color: "interactive-text-active", lineClamp: 1, style: null, gradientColors: null, children: null };
     const items3 = [tmp.username, {}];
-    obj5.style = items3;
-    let tmp44;
+    obj5[3] = items3;
+    let tmp27;
     if (isRoleStyleAndRoleColorsEligibleForERC) {
-      tmp44 = processColorStringsArray;
+      tmp27 = processColorStringsArray;
     }
-    obj5.gradientColors = tmp44;
-    obj5.children = getBoostUserConfig.username;
-    items2[1] = callback(require(4161) /* Text */.Text, obj5);
-    items2[2] = callback(require(4161) /* Text */.Text, { variant: "text-md/medium", color: "interactive-text-active", children: " " });
-    obj6 = { variant: "text-md/medium", lineClamp: 1, style: tmp.messageText, children: importDefault(11654)(row) };
-    items2[3] = callback(require(4161) /* Text */.Text, obj6);
-    obj3.children = items2;
+    obj5[4] = tmp27;
+    obj5[5] = username;
+    items2[1] = closure_5(tmp2(4185).Text, obj5);
+    items2[2] = closure_5(tmp2(4185).Text, { variant: "text-md/medium", color: "interactive-text-active", children: " " });
+    const obj6 = { variant: "text-md/medium", lineClamp: 1, style: null, children: null };
+    obj6[2] = tmp.messageText;
+    obj6[3] = importDefault(11678)(row);
+    items2[3] = closure_5(tmp2(4185).Text, obj6);
+    obj3[1] = items2;
     items1[1] = closure_6(View, obj3);
-    const obj7 = { variant: "text-xs/semibold", style: tmp.timestamp, children: calendarFormatResult };
-    items1[2] = callback(require(4161) /* Text */.Text, obj7);
-    obj.children = items1;
+    const obj7 = { variant: "text-xs/semibold", style: null, children: null };
+    obj7[1] = tmp.timestamp;
+    obj7[2] = calendarFormatResult;
+    items1[2] = closure_5(tmp2(4185).Text, obj7);
+    obj[1] = items1;
     return closure_6(View, obj);
   }
 }
-({ jsx: closure_5, jsxs: closure_6 } = jsxProd);
-let obj = {};
-obj = { marginTop: require("_createForOfIteratorHelperLoose").space.PX_16, paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16 };
-obj.sectionContainer = obj;
-obj.boostContainer = { gap: require("_createForOfIteratorHelperLoose").space.PX_12, marginTop: require("_createForOfIteratorHelperLoose").space.PX_16 };
-obj.boostRowContainer = { flexDirection: "row", alignItems: "center", gap: 8 };
-obj.boostMessage = { flex: 1, flexDirection: "row", alignItems: "center" };
-obj.username = { maxWidth: 170, flexShrink: 1 };
-obj.messageText = { flexShrink: 0 };
-obj.timestamp = { flexShrink: 0 };
-let closure_7 = _createForOfIteratorHelperLoose.createStyles(obj);
-let obj1 = { gap: require("_createForOfIteratorHelperLoose").space.PX_12, marginTop: require("_createForOfIteratorHelperLoose").space.PX_16 };
+({ jsx: c5, jsxs: closure_6 } = jsxProd);
+let obj = { sectionContainer: null, boostContainer: null, boostRowContainer: null, boostMessage: null, username: null, messageText: null, timestamp: null };
+obj = { marginTop: require("Themes").space.PX_16, paddingHorizontal: require("Themes").space.PX_16 };
+obj[0] = obj;
+obj[1] = { gap: require("Themes").space.PX_12, marginTop: require("Themes").space.PX_16 };
+obj[2] = { flexDirection: "row", alignItems: "center", gap: 8 };
+obj[3] = { flex: 1, flexDirection: "row", alignItems: "center" };
+obj[4] = { maxWidth: 170, flexShrink: 1 };
+obj[5] = { flexShrink: 0 };
+obj[6] = { flexShrink: 0 };
+let closure_7 = createCacheKey.createStyles(obj);
+let obj1 = { gap: require("Themes").space.PX_12, marginTop: require("Themes").space.PX_16 };
 const result = require("jsxProd").fileFinishedImporting("modules/premium/powerups/native/GuildPowerupsRecentActivitySection.tsx");
 
 export default function GuildPowerupsRecentActivitySection(guildId) {
+  let _require;
   const tmp = callback3();
-  const arr = importDefault(11647)(guildId.guildId, 10);
-  let obj = _require(11648);
+  const arr = importDefault(11671)(guildId.guildId, 10);
+  let obj = _require(11672);
   _require = obj.useExpiringBoostsEnabled("GuildPowerupsRecentActivity");
-  let tmp2 = null;
+  let tmp4 = null;
   if (0 !== arr.length) {
-    obj = { style: tmp.sectionContainer };
-    obj = { variant: "heading-lg/semibold", color: "text-subtle" };
-    const intl = _require(1212).intl;
-    obj.children = intl.string(_require(1212).t.yM9Krm);
-    const items = [callback(_require(4161).Text, obj), ];
-    const obj1 = { style: tmp.boostContainer, children: arr.map((boost) => outer1_5(outer1_8, { row: boost, isExpiringBoostsEnabled: closure_0 }, "boost-" + boost.boost.id)) };
+    obj = { style: null, children: null };
+    obj[0] = tmp.sectionContainer;
+    obj = { variant: "heading-lg/semibold", color: "text-subtle", children: null };
+    const intl = tmp3(1236).intl;
+    obj[2] = intl.string(tmp3(1236).t.yM9Krm);
+    const items = [callback(tmp3(4185).Text, obj), ];
+    const obj1 = { style: null, children: null };
+    obj1[0] = tmp.boostContainer;
+    obj1[1] = arr.map((boost) => outer1_5(outer1_8, { row: boost, isExpiringBoostsEnabled: closure_0 }, "boost-" + boost.boost.id));
     items[1] = callback(View, obj1);
-    obj.children = items;
-    tmp2 = callback2(View, obj);
+    obj[1] = items;
+    tmp4 = callback2(View, obj);
   }
-  return tmp2;
+  return tmp4;
 };

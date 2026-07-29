@@ -1,29 +1,32 @@
-// Module ID: 8639
-// Function ID: 68428
-// Name: useCollectiblesAnalyticsContext
-// Dependencies: [31, 33, 2]
-// Exports: CollectiblesAnalyticsProvider
+// Module ID: 8663
+// Function ID: 8664
+// Name: context
+// Dependencies: [19, 21, 2]
+// Exports: CollectiblesAnalyticsProvider, useCollectiblesAnalyticsContext
 
-// Module 8639 (useCollectiblesAnalyticsContext)
-import importAllResult from "result";
+// Module 8663 (context)
+import importAllResult from "noop";
 import { jsx } from "jsxProd";
 
-function useCollectiblesAnalyticsContext() {
-  return importAllResult.useContext(context);
-}
-const context = importAllResult.createContext(null);
+let c0 = importAllResult;
+let context = importAllResult.createContext(null);
 const result = require("set").fileFinishedImporting("modules/collectibles/CollectiblesAnalyticsContext.tsx");
 
 export const CollectiblesAnalyticsContext = context;
-export { useCollectiblesAnalyticsContext };
+export const useCollectiblesAnalyticsContext = function useCollectiblesAnalyticsContext() {
+  return importAllResult.useContext(context);
+};
 export const CollectiblesAnalyticsProvider = function CollectiblesAnalyticsProvider(children) {
   const newValue = children.newValue;
-  const tmp = useCollectiblesAnalyticsContext();
-  const jsx = tmp;
-  const items = [tmp, newValue];
-  return <context.Provider value={newValue.useMemo(() => {
-    const merged = Object.assign(closure_1);
-    const merged1 = Object.assign(newValue);
-    return {};
-  }, items)}>{arg0.children}</context.Provider>;
+  let context;
+  context = newValue.useContext(context);
+  const items = [context, newValue];
+  return context(context.Provider, {
+    value: newValue.useMemo(() => {
+      const merged = Object.assign(context);
+      const merged1 = Object.assign(newValue);
+      return {};
+    }, items),
+    children: children.children
+  });
 };

@@ -1,42 +1,48 @@
-// Module ID: 14630
-// Function ID: 111481
+// Module ID: 14655
+// Function ID: 14656
 // Name: toggle
-// Dependencies: [7733, 3838, 10099, 1212, 2]
+// Dependencies: [7756, 3862, 10120, 1236, 2]
 
-// Module 14630 (toggle)
+// Module 14655 (toggle)
 import createToggle from "createToggle";
 
 const toggle = createToggle.createToggle({
   useTitle() {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(require(1212) /* getSystemLocale */.t["1CzWUK"]);
+    const intl = require(1236) /* getSystemLocale */.intl;
+    return intl.string(require(1236) /* getSystemLocale */.t["1CzWUK"]);
   },
   useDescription() {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(require(1212) /* getSystemLocale */.t.jTNPHM);
+    const intl = require(1236) /* getSystemLocale */.intl;
+    return intl.string(require(1236) /* getSystemLocale */.t.jTNPHM);
   },
   parent: require("MobileSetting").MobileSetting.VOICE,
   useValue() {
-    const DisableStreamPreviews = require(3838) /* explicitContentFromProto */.DisableStreamPreviews;
-    const setting = DisableStreamPreviews.useSetting();
-    return null != setting && setting;
+    const DisableStreamPreviews = require(3862) /* explicitContentFromProto */.DisableStreamPreviews;
+    let flag = DisableStreamPreviews.useSetting();
+    if (flag == null) {
+      flag = false;
+    }
+    return flag;
   },
   onValueChange: require("explicitContentFromProto").DisableStreamPreviews.updateSetting
 });
 const obj = {
   useTitle() {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(require(1212) /* getSystemLocale */.t["1CzWUK"]);
+    const intl = require(1236) /* getSystemLocale */.intl;
+    return intl.string(require(1236) /* getSystemLocale */.t["1CzWUK"]);
   },
   useDescription() {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(require(1212) /* getSystemLocale */.t.jTNPHM);
+    const intl = require(1236) /* getSystemLocale */.intl;
+    return intl.string(require(1236) /* getSystemLocale */.t.jTNPHM);
   },
   parent: require("MobileSetting").MobileSetting.VOICE,
   useValue() {
-    const DisableStreamPreviews = require(3838) /* explicitContentFromProto */.DisableStreamPreviews;
-    const setting = DisableStreamPreviews.useSetting();
-    return null != setting && setting;
+    const DisableStreamPreviews = require(3862) /* explicitContentFromProto */.DisableStreamPreviews;
+    let flag = DisableStreamPreviews.useSetting();
+    if (flag == null) {
+      flag = false;
+    }
+    return flag;
   },
   onValueChange: require("explicitContentFromProto").DisableStreamPreviews.updateSetting
 };

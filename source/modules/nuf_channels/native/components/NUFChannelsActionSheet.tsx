@@ -1,11 +1,11 @@
-// Module ID: 12803
-// Function ID: 99574
+// Module ID: 12825
+// Function ID: 12826
 // Name: NUFChannelsActionSheet
-// Dependencies: [31, 1345, 33, 4133, 5221, 12804, 12805, 1212, 2]
+// Dependencies: [19, 1369, 21, 4157, 5243, 12826, 12827, 1236, 2]
 // Exports: default
 
-// Module 12803 (NUFChannelsActionSheet)
-import result from "result";
+// Module 12825 (NUFChannelsActionSheet)
+import noop from "noop";
 import { ContentDismissActionType } from "ContentDismissActionType";
 import { jsx } from "jsxProd";
 
@@ -17,28 +17,30 @@ export default function NUFChannelsActionSheet(markAsDismissed) {
   const items = [markAsDismissed];
   const callback = React.useCallback(() => {
     outer1_1(outer1_2[3]).hideActionSheet();
-    if (null != markAsDismissed) {
-      markAsDismissed(outer1_4.UNKNOWN);
+    if (markAsDismissed != null) {
+      tmp2(outer1_4.UNKNOWN);
     }
   }, items);
   let obj = {
     onDismiss() {
-      let tmp;
-      if (null != markAsDismissed) {
-        tmp = markAsDismissed(outer1_4.UNKNOWN);
+      let tmpResult;
+      if (markAsDismissed != null) {
+        tmpResult = tmp(outer1_4.UNKNOWN);
       }
-      return tmp;
+      return tmpResult;
     },
-    startExpanded: true
+    startExpanded: true,
+    children: null
   };
-  obj = { illustration: jsx(importDefault(12805), {}) };
-  const intl = markAsDismissed(1212).intl;
-  obj.title = intl.string(markAsDismissed(1212).t.Ay9424);
-  const intl2 = markAsDismissed(1212).intl;
-  obj.description = intl2.string(markAsDismissed(1212).t.mufH2P);
-  const intl3 = markAsDismissed(1212).intl;
-  obj.CTALabel = intl3.string(markAsDismissed(1212).t.BddRzS);
-  obj.onCTAPress = callback;
-  obj.children = jsx(importDefault(12804), { illustration: jsx(importDefault(12805), {}) });
-  return jsx(markAsDismissed(5221).BottomSheet, { illustration: jsx(importDefault(12805), {}) });
+  obj = { illustration: null, title: null, description: null, CTALabel: null, onCTAPress: null };
+  obj[0] = jsx(importDefault(12827), {});
+  const intl = markAsDismissed(1236).intl;
+  obj[1] = intl.string(markAsDismissed(1236).t.Ay9424);
+  const intl2 = markAsDismissed(1236).intl;
+  obj[2] = intl2.string(markAsDismissed(1236).t.mufH2P);
+  const intl3 = markAsDismissed(1236).intl;
+  obj[3] = intl3.string(markAsDismissed(1236).t.BddRzS);
+  obj[4] = callback;
+  obj[2] = jsx(importDefault(12826), { illustration: null, title: null, description: null, CTALabel: null, onCTAPress: null });
+  return jsx(markAsDismissed(5243).BottomSheet, { illustration: null, title: null, description: null, CTALabel: null, onCTAPress: null });
 };

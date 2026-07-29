@@ -1,90 +1,23 @@
-// Module ID: 7876
-// Function ID: 62666
-// Name: getSnowflakeSelectDefaultValues
-// Dependencies: [1348, 1918, 1911, 1838, 3802, 1850, 7869, 1882, 5009, 4354, 4394, 4355, 7877, 1327, 2]
-// Exports: getInitialSnowflakeSelectOptions, queryChannels, queryMentionables
+// Module ID: 7899
+// Function ID: 7900
+// Name: MIN_REREQUEST_TIME
+// Dependencies: [1372, 1942, 1935, 1862, 3826, 1874, 7892, 1906, 5031, 4379, 4417, 4380, 7900, 1351, 2]
+// Exports: getInitialSnowflakeSelectOptions, getSnowflakeSelectDefaultValues, queryChannels, queryMentionables
 
-// Module 7876 (getSnowflakeSelectDefaultValues)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_4 from "_isNativeReflectConstruct";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import closure_6 from "_createForOfIteratorHelperLoose";
-import closure_7 from "_isNativeReflectConstruct";
-import closure_8 from "_isNativeReflectConstruct";
-import closure_9 from "_isNativeReflectConstruct";
+// Module 7899 (MIN_REREQUEST_TIME)
+import ensureGuildLoaded from "ensureGuildLoaded";
+import trackCommunicationDisabled from "trackCommunicationDisabled";
+import createGuildRoleRecordFromRust from "createGuildRoleRecordFromRust";
+import createGuildRecordFromRust from "createGuildRecordFromRust";
+import upsertRelationship from "upsertRelationship";
+import mergeGuildAvatar from "mergeGuildAvatar";
+import getInteractionComponentStates from "getInteractionComponentStates";
 
 const require = arg1;
-function getSnowflakeSelectDefaultValues(defaultValues, closure_1) {
-  let items = arg2;
-  if (arg2 === undefined) {
-    items = [];
-  }
-  let guild2;
-  if (null != defaultValues) {
-    guild2 = guild.getGuild(closure_1);
-    const mapped = defaultValues.map((type) => {
-      type = type.type;
-      if (items(outer1_2[12]).SnowflakeSelectDefaultValueTypes.USER === type) {
-        const user = outer1_8.getUser(type.id);
-        if (null == user) {
-          return null;
-        } else {
-          let nick;
-          if (null != user) {
-            nick = outer1_4.getNick(user.id, user.id);
-          }
-          let obj = { type: items(outer1_2[10]).SelectOptionType.USER, value: user.id };
-          if (null == nick) {
-            nick = user.globalName;
-          }
-          if (null == nick) {
-            nick = user.username;
-          }
-          obj.label = nick;
-          return obj;
-        }
-      } else if (items(outer1_2[12]).SnowflakeSelectDefaultValueTypes.ROLE === type) {
-        if (null == user) {
-          return null;
-        } else {
-          const role = outer1_5.getRole(user.id, type.id);
-          let tmp15 = null;
-          if (null != role) {
-            obj = { type: items(outer1_2[10]).SelectOptionType.ROLE };
-            ({ id: obj3.value, name: obj3.label } = role);
-            tmp15 = obj;
-          }
-          return tmp15;
-        }
-      } else if (items(outer1_2[12]).SnowflakeSelectDefaultValueTypes.CHANNEL === type) {
-        if (null == user) {
-          return null;
-        } else {
-          const channel = outer1_3.getChannel(type.id);
-          let tmp4 = null;
-          if (null != channel) {
-            tmp4 = null;
-            if (channel.guild_id === user.id) {
-              if (items.length <= 0) {
-                obj = { type: items(outer1_2[10]).SelectOptionType.CHANNEL, value: channel.id, label: items(outer1_2[11]).computeChannelName(channel, outer1_8, outer1_7) };
-                tmp4 = obj;
-                const obj2 = items(outer1_2[11]);
-              } else {
-                tmp4 = null;
-              }
-            }
-          }
-          return tmp4;
-        }
-      }
-    });
-    return mapped.filter(items(1327).isNotNullish);
-  }
-}
-const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/interaction_components/SearchableSelectActionComponentUtils.tsx");
+const result = require("createGuildRoleRecordFromRust").fileFinishedImporting("modules/interaction_components/SearchableSelectActionComponentUtils.tsx");
 
 export const MIN_REREQUEST_TIME = 1000;
-export const queryMentionables = function queryMentionables(type, query, channelId) {
+export const queryMentionables = function queryMentionables(type, arg1, channelId) {
   let roles;
   let users;
   const _require = channelId;
@@ -92,86 +25,229 @@ export const queryMentionables = function queryMentionables(type, query, channel
   if (null == channel) {
     return [];
   } else {
-    let tmp4 = type === _require(1882).ComponentType.USER_SELECT;
-    if (!tmp4) {
-      tmp4 = type === _require(1882).ComponentType.MENTIONABLE_SELECT;
-    }
-    let tmp7 = type === _require(1882).ComponentType.ROLE_SELECT;
-    if (!tmp7) {
-      tmp7 = type === _require(1882).ComponentType.MENTIONABLE_SELECT;
-    }
-    let obj = channel(5009);
-    obj = { query, channel, canMentionEveryone: false, canMentionHere: false, canMentionUsers: tmp4, canMentionRoles: tmp7, includeAllGuildUsers: true, includeNonMentionableRoles: true, checkRecentlyTalkedOnEmptyQuery: false, limit: 15 };
+    const tmp2 = type === _require(1906).ComponentType.USER_SELECT || type === _require(1906).ComponentType.MENTIONABLE_SELECT;
+    let obj = channel(5031);
+    obj = { query: null, channel: null, canMentionEveryone: false, canMentionHere: false, canMentionUsers: null, canMentionRoles: null, includeAllGuildUsers: true, includeNonMentionableRoles: true, checkRecentlyTalkedOnEmptyQuery: false, limit: 15 };
+    obj[0] = arg1;
+    obj[1] = channel;
+    obj[4] = tmp2;
+    obj[5] = type === _require(1906).ComponentType.ROLE_SELECT || type === _require(1906).ComponentType.MENTIONABLE_SELECT;
+    const tmp3 = type === _require(1906).ComponentType.ROLE_SELECT || type === _require(1906).ComponentType.MENTIONABLE_SELECT;
     ({ users, roles } = obj.queryMentionResults(obj));
     const items = [];
     let arraySpreadResult = HermesBuiltin.arraySpread(users.map((user) => {
       let obj = channel(outer1_2[9]);
       let username = obj.getNickname(channel.getGuildId(), channelId, user.user);
-      obj = { type: channelId(outer1_2[10]).SelectOptionType.USER, value: user.user.id };
-      if (null == username) {
+      obj = { type: channelId(outer1_2[10]).SelectOptionType.USER, value: user.user.id, label: null };
+      if (username == null) {
         username = user.user.globalName;
       }
-      if (null == username) {
+      if (username == null) {
         username = user.user.username;
       }
-      obj.label = username;
+      obj[2] = username;
       return obj;
     }), 0);
-    arraySpreadResult = HermesBuiltin.arraySpread(roles.map((id) => ({ type: channelId(outer1_2[10]).SelectOptionType.ROLE, value: id.id, label: id.name })), arraySpreadResult);
+    arraySpreadResult = HermesBuiltin.arraySpread(roles.map((id) => ({ type: channelId(table[10]).SelectOptionType.ROLE, value: id.id, label: id.name })), arraySpreadResult);
     return items;
   }
 };
-export const queryChannels = function queryChannels(query, channelId, channelTypes) {
-  const channel = store.getChannel(channelId);
+export const queryChannels = function queryChannels(arg0, arg1, arg2) {
+  const channel = store.getChannel(arg1);
   if (null == channel) {
     let items = [];
   } else {
-    let obj = importDefault(5009);
-    obj = { query, channel, channelTypes, limit: 15 };
+    let obj = importDefault(5031);
+    obj = { query: null, channel: null, channelTypes: null, limit: 15 };
+    obj[0] = arg0;
+    obj[1] = channel;
+    obj[2] = arg2;
     const channels = obj.queryApplicationCommandChannelResults(obj).channels;
     items = channels.map((id) => {
-      const obj = { type: outer1_0(outer1_2[10]).SelectOptionType.CHANNEL, value: id.id, label: outer1_0(outer1_2[11]).computeChannelName(id, outer1_8, outer1_7) };
+      const obj = { type: callback(4417).SelectOptionType.CHANNEL, value: id.id, label: null };
+      obj[2] = callback(4380).computeChannelName(id, mergeGuildAvatar, upsertRelationship);
       return obj;
     });
   }
   return items;
 };
 export const getInitialSnowflakeSelectOptions = function getInitialSnowflakeSelectOptions(selectActionComponent, containerId, guildId) {
-  let defaultValues;
-  let type;
   interactionComponentState = interactionComponentState.getInteractionComponentState(containerId, selectActionComponent.id);
-  ({ defaultValues, type } = selectActionComponent);
+  const defaultValues = selectActionComponent.defaultValues;
   let channelTypes;
-  if (type === require(1882) /* PermissionOverwriteType */.ComponentType.CHANNEL_SELECT) {
+  if (selectActionComponent.type === channelTypes(1906).ComponentType.CHANNEL_SELECT) {
     channelTypes = selectActionComponent.channelTypes;
   }
-  let items = getSnowflakeSelectDefaultValues(defaultValues, guildId, channelTypes);
-  type = undefined;
-  if (null != interactionComponentState) {
+  if (channelTypes === undefined) {
+    channelTypes = [];
+  }
+  let guild;
+  if (null != defaultValues) {
+    guild = store2.getGuild(guildId);
+    const mapped = defaultValues.map((type) => {
+      type = type.type;
+      if (channelTypes(outer1_2[12]).SnowflakeSelectDefaultValueTypes.USER === type) {
+        const user = outer1_8.getUser(type.id);
+        if (null == user) {
+          return null;
+        } else {
+          let nick;
+          if (null != closure_1) {
+            nick = outer1_4.getNick(tmp16.id, user.id);
+          }
+          let obj = { type: null, value: null, label: null };
+          obj[0] = tmp(tmp2[10]).SelectOptionType.USER;
+          obj[1] = user.id;
+          if (nick == null) {
+            nick = user.globalName;
+          }
+          if (nick == null) {
+            nick = user.username;
+          }
+          obj[2] = nick;
+          return obj;
+        }
+      } else if (tmp(tmp2[12]).SnowflakeSelectDefaultValueTypes.ROLE === type) {
+        if (null == closure_1) {
+          return null;
+        } else {
+          const role = outer1_5.getRole(tmp8.id, type.id);
+          let tmp12 = null;
+          if (null != role) {
+            obj = { type: null, value: null, label: null };
+            obj[0] = tmp(tmp2[10]).SelectOptionType.ROLE;
+            ({ id: obj4[1], name: obj4[2] } = role);
+            tmp12 = obj;
+          }
+          return tmp12;
+        }
+      } else if (tmp(tmp2[12]).SnowflakeSelectDefaultValueTypes.CHANNEL === type) {
+        if (null == closure_1) {
+          return null;
+        } else {
+          const channel = outer1_3.getChannel(type.id);
+          let tmp5 = null;
+          if (null != channel) {
+            tmp5 = null;
+            if (channel.guild_id === tmp3.id) {
+              obj = channelTypes;
+              if (channelTypes.length <= 0) {
+                const obj1 = { type: null, value: null, label: null };
+                obj1[0] = tmp(tmp2[10]).SelectOptionType.CHANNEL;
+                obj1[1] = channel.id;
+                obj1[2] = tmp(tmp2[11]).computeChannelName(channel, outer1_8, outer1_7);
+                tmp5 = obj1;
+                const tmpResult = tmp(tmp2[11]);
+              } else {
+                tmp5 = null;
+              }
+            }
+          }
+          return tmp5;
+        }
+      }
+    });
+    let found = mapped.filter(tmp2(1351).isNotNullish);
+  }
+  let type;
+  if (interactionComponentState != null) {
     type = interactionComponentState.type;
   }
-  if (type !== require(1882) /* PermissionOverwriteType */.ComponentType.USER_SELECT) {
+  if (type !== channelTypes(1906).ComponentType.USER_SELECT) {
     let type1;
-    if (null != interactionComponentState) {
+    if (interactionComponentState != null) {
       type1 = interactionComponentState.type;
     }
-    if (type1 !== require(1882) /* PermissionOverwriteType */.ComponentType.ROLE_SELECT) {
+    if (type1 !== tmp2(1906).ComponentType.ROLE_SELECT) {
       let type2;
-      if (null != interactionComponentState) {
+      if (interactionComponentState != null) {
         type2 = interactionComponentState.type;
       }
-      if (type2 !== require(1882) /* PermissionOverwriteType */.ComponentType.MENTIONABLE_SELECT) {
+      if (type2 !== tmp2(1906).ComponentType.MENTIONABLE_SELECT) {
         let type3;
-        if (null != interactionComponentState) {
+        if (interactionComponentState != null) {
           type3 = interactionComponentState.type;
         }
       }
-      if (null == items) {
-        items = [];
+      if (found == null) {
+        found = [];
       }
-      return items;
+      return found;
     }
   }
-  items = interactionComponentState.selectedOptions;
+  found = interactionComponentState.selectedOptions;
 };
-export { getSnowflakeSelectDefaultValues };
+export const getSnowflakeSelectDefaultValues = function getSnowflakeSelectDefaultValues(defaultValues, guild_id) {
+  let items = arg2;
+  if (arg2 === undefined) {
+    items = [];
+  }
+  let guild;
+  if (null != defaultValues) {
+    guild = store2.getGuild(guild_id);
+    const mapped = defaultValues.map((type) => {
+      type = type.type;
+      if (channelTypes(outer1_2[12]).SnowflakeSelectDefaultValueTypes.USER === type) {
+        const user = outer1_8.getUser(type.id);
+        if (null == user) {
+          return null;
+        } else {
+          let nick;
+          if (null != closure_1) {
+            nick = outer1_4.getNick(tmp16.id, user.id);
+          }
+          let obj = { type: null, value: null, label: null };
+          obj[0] = tmp(tmp2[10]).SelectOptionType.USER;
+          obj[1] = user.id;
+          if (nick == null) {
+            nick = user.globalName;
+          }
+          if (nick == null) {
+            nick = user.username;
+          }
+          obj[2] = nick;
+          return obj;
+        }
+      } else if (tmp(tmp2[12]).SnowflakeSelectDefaultValueTypes.ROLE === type) {
+        if (null == closure_1) {
+          return null;
+        } else {
+          const role = outer1_5.getRole(tmp8.id, type.id);
+          let tmp12 = null;
+          if (null != role) {
+            obj = { type: null, value: null, label: null };
+            obj[0] = tmp(tmp2[10]).SelectOptionType.ROLE;
+            ({ id: obj4[1], name: obj4[2] } = role);
+            tmp12 = obj;
+          }
+          return tmp12;
+        }
+      } else if (tmp(tmp2[12]).SnowflakeSelectDefaultValueTypes.CHANNEL === type) {
+        if (null == closure_1) {
+          return null;
+        } else {
+          const channel = outer1_3.getChannel(type.id);
+          let tmp5 = null;
+          if (null != channel) {
+            tmp5 = null;
+            if (channel.guild_id === tmp3.id) {
+              obj = channelTypes;
+              if (channelTypes.length <= 0) {
+                const obj1 = { type: null, value: null, label: null };
+                obj1[0] = tmp(tmp2[10]).SelectOptionType.CHANNEL;
+                obj1[1] = channel.id;
+                obj1[2] = tmp(tmp2[11]).computeChannelName(channel, outer1_8, outer1_7);
+                tmp5 = obj1;
+                const tmpResult = tmp(tmp2[11]);
+              } else {
+                tmp5 = null;
+              }
+            }
+          }
+          return tmp5;
+        }
+      }
+    });
+    return mapped.filter(items(1351).isNotNullish);
+  }
+};

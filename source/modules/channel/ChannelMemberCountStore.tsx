@@ -1,103 +1,54 @@
-// Module ID: 10129
-// Function ID: 78311
-// Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 4843, 1348, 21, 566, 686, 2]
+// Module ID: 10150
+// Function ID: 10151
+// Name: initialize
+// Dependencies: [4865, 1372, 11, 589, 709, 2]
 
-// Module 10129 (_isNativeReflectConstruct)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import DISCORD_EPOCH from "DISCORD_EPOCH";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
-import closure_7 from "_isNativeReflectConstruct";
-import closure_8 from "_isNativeReflectConstruct";
+// Module 10150 (initialize)
+import _handleConnectionOpen from "_handleConnectionOpen";
+import ensureGuildLoaded from "ensureGuildLoaded";
+import { PersistedStore } from "initialize";
 
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
-  }
-  const result = _isNativeReflectConstruct();
+let closure_4 = Object.freeze({ online: null, total: null });
+let closure_5 = {};
+let closure_6 = {};
+let c7 = null;
+class ChannelMemberCountStore extends PersistedStore {
 }
-let closure_9 = Object.freeze({ online: null, total: null });
-let closure_10 = {};
-let closure_11 = {};
-let c12 = null;
-let tmp2 = ((PersistedStore) => {
-  class ChannelMemberCountStore {
-    constructor() {
-      self = this;
-      tmp = outer1_2(this, ChannelMemberCountStore);
-      obj = outer1_5(ChannelMemberCountStore);
-      tmp2 = outer1_4;
-      if (outer1_13()) {
-        tmp6 = globalThis;
-        _Reflect = Reflect;
-        tmp7 = outer1_5;
-        tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, outer1_5(self).constructor);
-      } else {
-        tmp3 = arguments;
-        tmp4 = arguments;
-        constructResult = obj(...arguments);
-      }
-      return tmp2(self, constructResult);
-    }
+const prototype = ChannelMemberCountStore.prototype;
+prototype["initialize"] = function initialize(arg0) {
+  let tmp = arg0;
+  this.waitFor(_handleConnectionOpen, ensureGuildLoaded);
+  if (arg0 == null) {
+    tmp = closure_5;
   }
-  callback2(ChannelMemberCountStore, PersistedStore);
-  let obj = {
-    key: "initialize",
-    value(arg0) {
-      let tmp = arg0;
-      this.waitFor(outer1_7, outer1_8);
-      if (null == arg0) {
-        tmp = outer1_10;
-      }
-      const outer1_11 = tmp;
-    }
-  };
-  const items = [obj, , , ];
-  obj = {
-    key: "getState",
-    value() {
-      return outer1_11;
-    }
-  };
-  items[1] = obj;
-  obj = {
-    key: "getMemberCount",
-    value(arg0) {
-      let tmp = outer1_11[arg0];
-      if (null == tmp) {
-        tmp = outer1_9;
-      }
-      return tmp;
-    }
-  };
-  items[2] = obj;
-  items[3] = {
-    key: "requestCount",
-    value(guildId, channelId) {
-      const outer1_12 = { guildId, channelId };
-      const socket = outer1_7.getSocket();
-      const channelMemberCount = socket.requestChannelMemberCount(guildId, channelId);
-    }
-  };
-  return callback(ChannelMemberCountStore, items);
-})(require("initialize").PersistedStore);
-tmp2.displayName = "ChannelMemberCountStore";
-tmp2.persistKey = "channelMemberCounts";
-tmp2 = new tmp2(require("dispatcher"), {
+  let closure_6 = tmp;
+};
+prototype["getState"] = function getState() {
+  return closure_6;
+};
+prototype["getMemberCount"] = function getMemberCount(arg0) {
+  let tmp = table[arg0];
+  if (tmp == null) {
+    tmp = closure_4;
+  }
+  return tmp;
+};
+prototype["requestCount"] = function requestCount(guild_id, id) {
+  let closure_7 = { guildId: guild_id, channelId: id };
+  const socket = store.getSocket();
+  const channelMemberCount = socket.requestChannelMemberCount(guild_id, id);
+};
+ChannelMemberCountStore.displayName = "ChannelMemberCountStore";
+ChannelMemberCountStore.persistKey = "channelMemberCounts";
+const channelMemberCountStore = new ChannelMemberCountStore(require("dispatcher"), {
   CONNECTION_OPEN: function handleConnectionOpen() {
     if (null != _null) {
-      socket = socket.getSocket();
+      const socket = store.getSocket();
       const channelMemberCount = socket.requestChannelMemberCount(_null.guildId, _null.channelId);
     }
-    const keys = importDefault(21).keys(closure_11);
-    const item = keys.forEach((channelId) => {
-      if (null == outer1_8.getChannel(channelId)) {
+    const keys = importDefault(11).keys(closure_6);
+    const item = keys.forEach((arg0) => {
+      if (null == channel.getChannel(arg0)) {
         delete tmp[tmp2];
       }
     });
@@ -111,12 +62,14 @@ tmp2 = new tmp2(require("dispatcher"), {
       tmp = null == total;
     }
     if (!tmp) {
-      const obj = { online, total };
-      closure_11[channelId.channelId] = obj;
+      const obj = { online: null, total: null };
+      obj[0] = online;
+      obj[1] = total;
+      closure_6[channelId.channelId] = obj;
     }
     return true;
   }
 });
-let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/channel/ChannelMemberCountStore.tsx");
+const result = require("DISCORD_EPOCH").fileFinishedImporting("modules/channel/ChannelMemberCountStore.tsx");
 
-export default tmp2;
+export default channelMemberCountStore;

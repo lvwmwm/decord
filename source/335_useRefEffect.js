@@ -1,0 +1,27 @@
+// Module ID: 335
+// Function ID: 336
+// Name: useRefEffect
+// Dependencies: [19]
+// Exports: default
+
+// Module 335 (useRefEffect)
+import noop from "noop";
+
+let c0;
+let closure_1;
+({ useCallback: c0, useRef: closure_1 } = noop);
+
+export default function useRefEffect(arg0) {
+  const callback = arg0;
+  callback2 = callback2(undefined);
+  const items = [arg0];
+  return callback((arg0) => {
+    if (ref.current) {
+      obj.current();
+      obj.current = undefined;
+    }
+    if (null != arg0) {
+      obj.current = callback(arg0);
+    }
+  }, items);
+};

@@ -1,106 +1,14 @@
-// Module ID: 14090
-// Function ID: 107679
-// Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 57, 5966, 5994, 5964, 566, 686, 2]
+// Module ID: 14112
+// Function ID: 14113
+// Name: getOrCreateSet
+// Dependencies: [32, 5985, 6013, 5983, 589, 709, 2]
 
-// Module 14090 (_isNativeReflectConstruct)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import AdCreativeType from "AdCreativeType";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
+// Module 14112 (getOrCreateSet)
 import _slicedToArray from "_slicedToArray";
-import closure_8 from "_isNativeReflectConstruct";
+import initializeState from "initializeState";
+import { PersistedStore } from "initialize";
 
 const require = arg1;
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
-  }
-  const result = _isNativeReflectConstruct();
-}
-function _createForOfIteratorHelperLoose(iterable) {
-  let closure_0 = iterable;
-  iterable = "undefined" !== typeof Symbol;
-  if (iterable) {
-    const _Symbol = Symbol;
-    iterable = iterable[Symbol.iterator];
-  }
-  if (!iterable) {
-    iterable = iterable[Symbol.iterator];
-  }
-  if (iterable) {
-    const iter = iterable.call(iterable);
-    const next = iter.next;
-    return next.bind(iter);
-  } else {
-    const _Array = Array;
-    let tmp = iterable;
-    if (!Array.isArray(iterable)) {
-      let tmp2;
-      if (iterable) {
-        if ("string" === typeof iterable) {
-          tmp2 = _arrayLikeToArray(iterable, undefined);
-        } else {
-          const toString = {}.toString;
-          const substr = toString.call(iterable).slice(8, -1);
-          let name = substr;
-          if (tmp3) {
-            name = iterable.constructor.name;
-          }
-          if ("Map" !== name) {
-            if ("Set" !== name) {
-              if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(iterable, undefined);
-              } else {
-                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
-              }
-            }
-            tmp2 = arr;
-          }
-          const _Array2 = Array;
-          arr = Array.from(iterable);
-          const callResult = toString.call(iterable);
-          tmp3 = "Object" === substr && iterable.constructor;
-        }
-      }
-      tmp = tmp2;
-      if (!tmp2) {
-        const _TypeError = TypeError;
-        const typeError = new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
-        throw typeError;
-      }
-    }
-    if (tmp) {
-      closure_0 = tmp;
-    }
-    let c1 = 0;
-    return () => {
-      if (closure_1 >= length.length) {
-        let obj = { done: true };
-      } else {
-        obj = { done: false };
-        closure_1 = tmp3 + 1;
-        obj.value = length[+closure_1];
-      }
-      return obj;
-    };
-  }
-}
-function _arrayLikeToArray(arg0, arg1) {
-  let length;
-  if (tmp) {
-    length = arg0.length;
-  }
-  const ArrayResult = Array(length);
-  for (let num = 0; num < length; num = num + 1) {
-    ArrayResult[num] = arg0[num];
-  }
-  return ArrayResult;
-}
 function getOrCreateSet(QUEST) {
   let value = map.get(QUEST);
   if (null == value) {
@@ -112,253 +20,190 @@ function getOrCreateSet(QUEST) {
   return value;
 }
 function syncWithQuestStore() {
-  let iter3;
-  let iter5;
-  let iter7;
-  let tmp4;
   let tmp5;
-  const quests = store.quests;
-  const obj = getOrCreateSet(require(5994) /* AdCreativeType */.AdCreativeType.QUEST);
-  const tmp = _createForOfIteratorHelperLoose(quests);
-  const iter = tmp();
-  let iter2 = iter;
+  let tmp7;
+  const quests = lastFetchedQuestHomeHero.quests;
+  const obj = getOrCreateSet(require(6013) /* AdCreativeType */.AdCreativeType.QUEST);
   let flag = false;
-  let flag2 = false;
-  if (!iter.done) {
-    do {
-      let tmp2 = callback3;
-      let tmp3 = callback3(iter2.value, 2);
-      [tmp4, tmp5] = tmp3;
-      let hasItem = obj.has(tmp4);
-      if (!hasItem) {
-        let tmp7 = require;
-        let tmp8 = dependencyMap;
-        let obj2 = require(5964) /* _createForOfIteratorHelperLoose */;
-        hasItem = obj2.isQuestExpired(tmp5);
-      }
-      if (!hasItem) {
-        let userStatus = tmp5.userStatus;
-        let tmp9 = null == userStatus;
-        if (!tmp9) {
-          let tmp10 = null == userStatus.enrolledAt && null == userStatus.completedAt && null == userStatus.claimedAt && 0 === userStatus.dismissedQuestContent;
-          tmp9 = tmp10;
+  while (tmp !== undefined) {
+    let tmp3 = callback;
+    let tmp4 = callback(tmp2, 2);
+    [tmp5, tmp7] = tmp4;
+    let tmp6 = tmp5;
+    let hasItem = obj.has(tmp5);
+    if (!hasItem) {
+      let tmp9 = require;
+      let tmp10 = dependencyMap;
+      let obj2 = require(5983) /* getQuestDeliveryDataForPlacement */;
+      let tmp11 = tmp7;
+      hasItem = obj2.isQuestExpired(tmp7);
+    }
+    if (!hasItem) {
+      let tmp12 = tmp7;
+      let userStatus = tmp7.userStatus;
+      let tmp13 = userStatus;
+      let tmp14 = null == userStatus;
+      if (!tmp14) {
+        let tmp15 = userStatus;
+        let tmp16 = null == tmp13.enrolledAt;
+        if (tmp16) {
+          let tmp17 = userStatus;
+          tmp16 = null == tmp13.completedAt;
         }
-        hasItem = tmp9;
-        let tmp11 = userStatus;
+        if (tmp16) {
+          let tmp18 = userStatus;
+          tmp16 = null == tmp13.claimedAt;
+        }
+        if (tmp16) {
+          let tmp19 = userStatus;
+          tmp16 = 0 === tmp13.dismissedQuestContent;
+        }
+        tmp14 = tmp16;
       }
-      if (!hasItem) {
-        let addResult = obj.add(tmp4);
-        flag = true;
-      }
-      iter3 = tmp();
-      iter2 = iter3;
-      flag2 = flag;
-    } while (!iter3.done);
+      hasItem = tmp14;
+    }
+    if (!hasItem) {
+      let tmp20 = tmp5;
+      let addResult = obj.add(tmp6);
+      flag = true;
+    }
+    continue;
   }
-  let tmp13 = flag2;
-  if (0 !== store.lastFetchedCurrentQuests) {
-    tmp13 = flag2;
+  if (0 !== lastFetchedQuestHomeHero.lastFetchedCurrentQuests) {
     if (quests.size > 0) {
-      const tmp15 = _createForOfIteratorHelperLoose(obj);
-      let iter4 = tmp15();
-      let flag3 = flag2;
-      tmp13 = flag2;
-      if (!iter4.done) {
-        do {
-          let value = iter4.value;
-          value = quests.get(value);
-          let isQuestExpiredResult = null == value;
-          if (!isQuestExpiredResult) {
-            let tmp18 = require;
-            let tmp19 = dependencyMap;
-            let obj3 = require(5964) /* _createForOfIteratorHelperLoose */;
-            isQuestExpiredResult = obj3.isQuestExpired(value);
-          }
-          if (isQuestExpiredResult) {
-            let deleteResult = obj.delete(value);
-            flag3 = true;
-          }
-          iter5 = tmp15();
-          iter4 = iter5;
-          tmp13 = flag3;
-        } while (!iter5.done);
-      }
-    }
-  }
-  const obj4 = getOrCreateSet(require(5994) /* AdCreativeType */.AdCreativeType.QUEST_HOME_HERO);
-  let tmp21 = tmp13;
-  if (null != store.getLastFetchedQuestHomeHero()) {
-    tmp21 = tmp13;
-    if (obj4.size > 0) {
-      const questHomeHero = store.getQuestHomeHero();
-      const tmp25 = _createForOfIteratorHelperLoose(obj4);
-      let iter6 = tmp25();
-      let flag4 = tmp13;
-      tmp21 = tmp13;
-      if (!iter6.done) {
-        do {
-          value = iter6.value;
-          let tmp26 = null != questHomeHero && value === questHomeHero.id;
-          if (!tmp26) {
-            let deleteResult1 = obj4.delete(value);
-            flag4 = true;
-          }
-          iter7 = tmp25();
-          iter6 = iter7;
-          tmp21 = flag4;
-        } while (!iter7.done);
-      }
-    }
-  }
-  return tmp21;
-}
-const map = new Map();
-let tmp3 = ((PersistedStore) => {
-  class AdContentSeenStore {
-    constructor() {
-      self = this;
-      tmp = outer1_2(this, AdContentSeenStore);
-      obj = outer1_5(AdContentSeenStore);
-      tmp2 = outer1_4;
-      if (outer1_10()) {
-        tmp6 = globalThis;
-        _Reflect = Reflect;
-        tmp7 = outer1_5;
-        tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, outer1_5(self).constructor);
-      } else {
-        tmp3 = arguments;
-        tmp4 = arguments;
-        constructResult = obj(...arguments);
-      }
-      return tmp2(self, constructResult);
-    }
-  }
-  callback2(AdContentSeenStore, PersistedStore);
-  let obj = {
-    key: "initialize",
-    value(seenContentIds) {
-      let length;
-      const self = this;
-      this.waitFor(outer1_8);
-      const outer1_9 = new Map();
-      if (null != seenContentIds) {
-        const _Object = Object;
-        const entries = Object.entries(seenContentIds.seenContentIds);
-        let num = 0;
-        if (0 < entries.length) {
-          do {
-            let tmp3 = outer1_7;
-            let tmp4 = outer1_7(entries[num], 2);
-            let tmp5 = tmp4[1];
-            let tmp6 = outer1_9;
-            let _Number = Number;
-            let _Set = Set;
-            let tmp8 = new.target;
-            let tmp9 = new.target;
-            let tmp10 = tmp5;
-            let NumberResult = Number(tmp4[0]);
-            let set = new Set(tmp5);
-            let tmp12 = set;
-            let result = outer1_9.set(NumberResult, set);
-            num = num + 1;
-            length = entries.length;
-          } while (num < length);
+      for (const item10063 of obj) {
+        let tmp24 = item10063;
+        let value = quests.get(item10063);
+        let isQuestExpiredResult = null == value;
+        if (!isQuestExpiredResult) {
+          let tmp28 = require;
+          let tmp29 = dependencyMap;
+          let obj3 = require(5983) /* getQuestDeliveryDataForPlacement */;
+          let tmp30 = value;
+          isQuestExpiredResult = obj3.isQuestExpired(tmp26);
         }
-      }
-      const items = [outer1_8];
-      self.syncWith(items, outer1_14);
-    }
-  };
-  let items = [obj, , ];
-  obj = {
-    key: "getState",
-    value() {
-      let done;
-      const seenContentIds = {};
-      const tmp = outer1_11(outer1_9);
-      let iter = tmp();
-      if (!iter.done) {
-        do {
-          let tmp2 = outer1_7;
-          let tmp3 = outer1_7(iter.value, 2);
-          let _Array = Array;
-          seenContentIds[tmp3[0]] = Array.from(tmp3[1]);
-          let iter2 = tmp();
-          iter = iter2;
-          done = iter2.done;
-        } while (!done);
-      }
-      return { seenContentIds };
-    }
-  };
-  items[1] = obj;
-  obj = {
-    key: "hasSeen",
-    value(arg0, arg1) {
-      const value = outer1_9.get(arg0);
-      let hasItem;
-      if (null != value) {
-        hasItem = value.has(arg1);
-      }
-      return null != hasItem && hasItem;
-    }
-  };
-  items[2] = obj;
-  return callback(AdContentSeenStore, items);
-})(require("initialize").PersistedStore);
-tmp3.displayName = "AdContentSeenStore";
-tmp3.persistKey = "AdContentSeenStore";
-tmp3 = new tmp3(require("dispatcher"), {
-  AD_CONTENT_MARK_SEEN: function handleMarkSeen(adCreativeType) {
-    let iter3;
-    const obj = getOrCreateSet(adCreativeType.adCreativeType);
-    const tmp = _createForOfIteratorHelperLoose(adCreativeType.contentIds);
-    const iter = tmp();
-    let iter2 = iter;
-    let flag = false;
-    let flag2 = false;
-    if (!iter.done) {
-      do {
-        let value = iter2.value;
-        if (!obj.has(value)) {
-          let addResult = obj.add(value);
+        if (isQuestExpiredResult) {
+          let tmp31 = item10063;
+          let deleteResult = obj.delete(tmp24);
           flag = true;
         }
-        iter3 = tmp();
-        iter2 = iter3;
-        flag2 = flag;
-      } while (!iter3.done);
+        continue;
+      }
     }
-    return flag2;
+  }
+  const obj4 = getOrCreateSet(require(6013) /* AdCreativeType */.AdCreativeType.QUEST_HOME_HERO);
+  if (null != lastFetchedQuestHomeHero.getLastFetchedQuestHomeHero()) {
+    if (obj4.size > 0) {
+      const questHomeHero = lastFetchedQuestHomeHero.getQuestHomeHero();
+      for (const item10097 of obj4) {
+        let tmp36 = item10097;
+        let tmp37 = null != questHomeHero;
+        if (tmp37) {
+          let tmp38 = item10097;
+          tmp37 = tmp36 === questHomeHero.id;
+        }
+        if (!tmp37) {
+          let tmp39 = item10097;
+          let deleteResult1 = obj4.delete(tmp36);
+          flag = true;
+        }
+        continue;
+      }
+    }
+  }
+  return flag;
+}
+let map = new Map();
+class AdContentSeenStore extends PersistedStore {
+}
+const prototype = AdContentSeenStore.prototype;
+prototype["initialize"] = function initialize(seenContentIds) {
+  const self = this;
+  this.waitFor(initializeState);
+  const map = new Map();
+  if (null != seenContentIds) {
+    const _Object = Object;
+    const entries = Object.entries(seenContentIds.seenContentIds);
+    const tmp20 = entries[Symbol.iterator]();
+    while (tmp20 !== undefined) {
+      let tmp6 = callback;
+      let tmp7 = callback(tmp4, 2);
+      let tmp8 = tmp7[1];
+      let tmp9 = map;
+      let _Number = Number;
+      let _Set = Set;
+      let tmp11 = new.target;
+      let tmp12 = new.target;
+      let tmp13 = tmp8;
+      let NumberResult = Number(tmp7[0]);
+      let set = new Set(tmp8);
+      let tmp15 = set;
+      let result = map.set(NumberResult, set);
+      continue;
+    }
+  }
+  const items = [initializeState];
+  self.syncWith(items, syncWithQuestStore);
+};
+prototype["getState"] = function getState() {
+  const seenContentIds = {};
+  while (tmp2 !== undefined) {
+    let tmp4 = callback;
+    let tmp5 = callback(tmp3, 2);
+    let _Array = Array;
+    seenContentIds[tmp5[0]] = Array.from(tmp5[1]);
+    continue;
+  }
+  return { seenContentIds };
+};
+prototype["hasSeen"] = function hasSeen(arg0, arg1) {
+  const value = map.get(arg0);
+  let flag;
+  if (value != null) {
+    flag = value.has(arg1);
+  }
+  if (flag == null) {
+    flag = false;
+  }
+  return flag;
+};
+AdContentSeenStore.displayName = "AdContentSeenStore";
+AdContentSeenStore.persistKey = "AdContentSeenStore";
+const adContentSeenStore = new AdContentSeenStore(require("dispatcher"), {
+  AD_CONTENT_MARK_SEEN: function handleMarkSeen(adCreativeType) {
+    const obj = getOrCreateSet(adCreativeType.adCreativeType);
+    let flag = false;
+    for (const item10013 of tmp) {
+      let tmp2 = item10013;
+      if (!obj.has(item10013)) {
+        let tmp3 = item10013;
+        let addResult = obj.add(tmp2);
+        flag = true;
+      }
+      continue;
+    }
+    return flag;
   },
   AD_CONTENT_MARK_UNSEEN: function handleMarkUnseen(adCreativeType) {
-    let iter3;
-    let value = map.get(adCreativeType.adCreativeType);
+    const value = map.get(adCreativeType.adCreativeType);
     if (null == value) {
       return false;
     } else {
-      const tmp2 = _createForOfIteratorHelperLoose(adCreativeType.contentIds);
-      const iter = tmp2();
-      let iter2 = iter;
       let flag = false;
-      let flag2 = false;
-      if (!iter.done) {
-        do {
-          value = iter2.value;
-          if (value.has(value)) {
-            let deleteResult = value.delete(value);
-            flag = true;
-          }
-          iter3 = tmp2();
-          iter2 = iter3;
-          flag2 = flag;
-        } while (!iter3.done);
+      const contentIds = adCreativeType.contentIds;
+      for (const item10014 of contentIds) {
+        let tmp3 = item10014;
+        if (value.has(item10014)) {
+          let tmp4 = item10014;
+          let deleteResult = value.delete(tmp3);
+          flag = true;
+        }
+        continue;
       }
-      return flag2;
+      return flag;
     }
   }
 });
-let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/quests/AdContentSeenStore.tsx");
+let result = require("AdCreativeType").fileFinishedImporting("modules/quests/AdContentSeenStore.tsx");
 
-export default tmp3;
+export default adContentSeenStore;

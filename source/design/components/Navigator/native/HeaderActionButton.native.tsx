@@ -1,25 +1,25 @@
-// Module ID: 6731
-// Function ID: 59191
+// Module ID: 6752
+// Function ID: 6753
 // Name: HeaderActionButton
-// Dependencies: [31, 1277, 33, 4165, 689, 4161, 4582, 4580, 4695, 2]
+// Dependencies: [19, 1301, 21, 4189, 712, 4185, 4604, 4602, 4717, 2]
 
-// Module 6731 (HeaderActionButton)
+// Module 6752 (HeaderActionButton)
 import { ANDROID_FOREGROUND_RIPPLE } from "semanticColor";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import importAllResult from "result";
+import createCacheKey from "createCacheKey";
+import importAllResult from "noop";
 
-let closure_4;
-let closure_5;
+let c4;
+let c5;
 const require = arg1;
-({ jsx: closure_4, jsxs: closure_5 } = jsxProd);
-let obj = { button: { flex: 1, alignItems: "center", justifyContent: "center", flexDirection: "row" } };
-obj = { color: require("_createForOfIteratorHelperLoose").colors.TEXT_BRAND, textTransform: "capitalize" };
-obj.text = obj;
-obj.buttonFont = { fontSize: 16, maxWidth: 80 };
-obj.buttonDisabled = { opacity: 0.6 };
-let closure_6 = _createForOfIteratorHelperLoose.createStyles(obj);
-const forwardRefResult = require("result").forwardRef((arg0, ref) => {
+({ jsx: c4, jsxs: c5 } = jsxProd);
+let obj = { button: { flex: 1, alignItems: "center", justifyContent: "center", flexDirection: "row" }, text: null, buttonFont: null, buttonDisabled: null };
+obj = { color: require("Themes").colors.TEXT_BRAND, textTransform: "capitalize" };
+obj[1] = obj;
+obj[2] = { fontSize: 16, maxWidth: 80 };
+obj[3] = { opacity: 0.6 };
+let closure_6 = createCacheKey.createStyles(obj);
+const forwardRefResult = require("noop").forwardRef((arg0, ref) => {
   let IconComponent;
   let IconComponentSize;
   let accessibilityActions;
@@ -40,48 +40,50 @@ const forwardRefResult = require("result").forwardRef((arg0, ref) => {
   ({ style, textStyle, imageStyle, accessibilityHint, accessibilityActions, onAccessibilityAction, icon, IconComponentSize, onPress, foregroundRipple, iconSize } = arg0);
   const tmp = callback2();
   if (null != text) {
-    let obj = { style: null, variant: "text-md/semibold", lineClamp: 1 };
+    let obj = { style: null, variant: "text-md/semibold", lineClamp: 1, maxFontSizeMultiplier: null, children: null };
     const items = [, , ];
     ({ text: arr[0], buttonFont: arr[1] } = tmp);
     items[2] = textStyle;
-    obj.style = items;
-    obj.maxFontSizeMultiplier = require(4582) /* getButtonPadding */.BUTTON_DEFAULT_MAX_FONT_SIZE_MULTIPLIER;
-    obj.children = text;
-    let tmp2 = callback(require(4161) /* Text */.Text, obj);
+    obj[0] = items;
+    obj[3] = require(4604) /* MINIMUM_HIT_AREA */.BUTTON_DEFAULT_MAX_FONT_SIZE_MULTIPLIER;
+    obj[4] = text;
+    let tmp2 = callback(require(4185) /* Text */.Text, obj);
   } else if (null != IconComponent) {
-    obj = { size: IconComponentSize };
+    obj = { size: null };
+    obj[0] = IconComponentSize;
     tmp2 = callback(IconComponent, obj);
   } else if (null != source) {
-    obj = { source, style: imageStyle, size: iconSize };
-    tmp2 = callback(importDefault(4580), obj);
+    obj = { source: null, style: null, size: null };
+    obj[0] = source;
+    obj[1] = imageStyle;
+    obj[2] = iconSize;
+    tmp2 = callback(importDefault(4602), obj);
   }
-  const obj1 = { ref };
-  if (null != accessibilityLabel) {
-    text = accessibilityLabel;
+  const obj1 = { ref, accessibilityLabel: null, accessibilityHint: null, accessibilityActions: null, onAccessibilityAction: null, accessibilityRole: "button", onPress: null, activeOpacity: 0.6, androidRippleConfig: null, style: null, disabled: null, children: null };
+  if (accessibilityLabel == null) {
+    accessibilityLabel = text;
   }
-  obj1.accessibilityLabel = text;
-  obj1.accessibilityHint = accessibilityHint;
-  obj1.accessibilityActions = accessibilityActions;
-  obj1.onAccessibilityAction = onAccessibilityAction;
-  obj1.accessibilityRole = "button";
-  obj1.onPress = onPress;
-  obj1.activeOpacity = 0.6;
+  obj1[1] = accessibilityLabel;
+  obj1[2] = accessibilityHint;
+  obj1[3] = accessibilityActions;
+  obj1[4] = onAccessibilityAction;
+  obj1[6] = onPress;
   let tmp11;
   if (foregroundRipple) {
     tmp11 = ANDROID_FOREGROUND_RIPPLE;
   }
-  obj1.androidRippleConfig = tmp11;
+  obj1[8] = tmp11;
   const items1 = [tmp.button, style, ];
   let buttonDisabled = disabled;
   if (disabled) {
     buttonDisabled = tmp.buttonDisabled;
   }
   items1[2] = buttonDisabled;
-  obj1.style = items1;
-  obj1.disabled = disabled;
+  obj1[9] = items1;
+  obj1[10] = disabled;
   const items2 = [tmp2, icon];
-  obj1.children = items2;
-  return closure_5(require(4695) /* PressableBase */.PressableOpacity, obj1);
+  obj1[11] = items2;
+  return closure_5(require(4717) /* PressableBase */.PressableOpacity, obj1);
 });
 const result = require("jsxProd").fileFinishedImporting("design/components/Navigator/native/HeaderActionButton.native.tsx");
 

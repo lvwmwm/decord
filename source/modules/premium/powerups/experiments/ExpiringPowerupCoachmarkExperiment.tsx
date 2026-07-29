@@ -1,13 +1,12 @@
-// Module ID: 11575
-// Function ID: 89993
+// Module ID: 11599
+// Function ID: 11600
 // Name: useExpiringPowerupCoachmarkEnabled
-// Dependencies: [1325, 2]
+// Dependencies: [1349, 2]
 // Exports: useExpiringPowerupCoachmarkEnabled
 
-// Module 11575 (useExpiringPowerupCoachmarkEnabled)
-const obj = { name: "2026-02-expiring-powerup-coachmark", kind: "user", defaultConfig: { enabled: false }, variations: { [0]: { enabled: false }, [1]: { enabled: true } } };
-const tmp2 = require("getUnitId")(obj);
-let closure_0 = tmp2;
+// Module 11599 (useExpiringPowerupCoachmarkEnabled)
+const tmp2 = require("getUnitId")({ name: "2026-02-expiring-powerup-coachmark", kind: "user", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true } } });
+let c0 = tmp2;
 const result = require("set").fileFinishedImporting("modules/premium/powerups/experiments/ExpiringPowerupCoachmarkExperiment.tsx");
 
 export default tmp2;

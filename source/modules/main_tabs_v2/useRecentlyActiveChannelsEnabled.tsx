@@ -1,17 +1,17 @@
-// Module ID: 5774
-// Function ID: 50180
+// Module ID: 5792
+// Function ID: 5793
 // Name: isRecentlyActiveChannelsEnabled
-// Dependencies: [5124, 5123, 2]
+// Dependencies: [5146, 5145, 2]
 // Exports: isRecentlyActiveChannelsEnabled, useRecentlyActiveChannelsEnabled
 
-// Module 5774 (isRecentlyActiveChannelsEnabled)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 5792 (isRecentlyActiveChannelsEnabled)
+import getUserAgnosticState from "getUserAgnosticState";
 
 const result = require("set").fileFinishedImporting("modules/main_tabs_v2/useRecentlyActiveChannelsEnabled.tsx");
 
 export const isRecentlyActiveChannelsEnabled = function isRecentlyActiveChannelsEnabled() {
-  return _isNativeReflectConstruct.get("enable_recently_active");
+  return getUserAgnosticState.get("enable_recently_active");
 };
 export const useRecentlyActiveChannelsEnabled = function useRecentlyActiveChannelsEnabled() {
-  return importDefault(5123)("enable_recently_active");
+  return importDefault(5145)("enable_recently_active");
 };

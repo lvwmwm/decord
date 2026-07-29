@@ -1,29 +1,37 @@
-// Module ID: 16627
-// Function ID: 129557
-// Name: _isNativeReflectConstruct
-// Dependencies: [7, 6, 15, 17, 18, 27, 1316, 477, 5112, 2]
+// Module ID: 16663
+// Function ID: 16664
+// Name: prototype
+// Dependencies: [17, 1340, 5134, 500, 2]
 
-// Module 16627 (_isNativeReflectConstruct)
-import set from "set";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
+// Module 16663 (prototype)
 import { NativeModules } from "get ActivityIndicator";
-import closure_8 from "_isNativeReflectConstruct";
-import tmp2 from "AutomaticLifecycleManager";
+import handleConnectionClosedOrResumed from "handleConnectionClosedOrResumed";
+import "initialize";
 
-const require = arg1;
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
+let prototype = function UserSettingsNativeBridgeManager() {
+  const applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
+  applyArgumentsResult.saveExplicitContentSettingsToDisk = require(500) /* set */.isIOS() ? (() => {
+    settings = settings.settings;
+    if (settings != null) {
+      const textAndImages = settings.textAndImages;
+      if (textAndImages != null) {
+        const explicitContentSettings = textAndImages.explicitContentSettings;
+      }
+    }
+    NSUserDefaultsBridge = NSUserDefaultsBridge.NSUserDefaultsBridge;
+    if (NSUserDefaultsBridge != null) {
+      const _JSON = JSON;
+      const result = NSUserDefaultsBridge.setExplicitContentSettingsJSONString(JSON.stringify(explicitContentSettings));
+    }
+  }) : (() => {
 
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
-  }
-  const result = _isNativeReflectConstruct();
+  });
+  applyArgumentsResult.actions = { POST_CONNECTION_OPEN: applyArgumentsResult.saveExplicitContentSettingsToDisk, USER_SETTINGS_PROTO_UPDATE: applyArgumentsResult.saveExplicitContentSettingsToDisk };
+  return applyArgumentsResult;
+}.prototype;
+class prototype extends tmp2 {
 }
-tmp2 = new tmp2();
-let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/user_settings/privacy_and_safety/native/UserSettingsNativeBridgeManager.tsx");
+prototype = new prototype();
+let result = require("initialize").fileFinishedImporting("modules/user_settings/privacy_and_safety/native/UserSettingsNativeBridgeManager.tsx");
 
-export default tmp2;
+export default prototype;

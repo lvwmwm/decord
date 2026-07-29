@@ -1,64 +1,53 @@
-// Module ID: 10878
-// Function ID: 84267
-// Name: ChannelLatestMessageLoadingStatsManager
-// Dependencies: [6, 7, 653, 5706, 2]
+// Module ID: 10902
+// Function ID: 10903
+// Name: start
+// Dependencies: [676, 5724, 2]
 
-// Module 10878 (ChannelLatestMessageLoadingStatsManager)
-import _classCallCheck from "_classCallCheck";
-import _defineProperties from "_defineProperties";
+// Module 10902 (start)
 import { AnalyticEvents } from "ME";
-import set from "ME";
+import set from "set";
 
-const require = arg1;
-const tmp2 = (() => {
-  class ChannelLatestMessageLoadingStatsManager {
-    constructor(arg0) {
-      tmp = outer1_2(this, ChannelLatestMessageLoadingStatsManager);
-      this.label = arg0;
-      return;
+let ChannelLatestMessageLoadingStatsManager;
+class ChannelLatestMessageLoadingStatsManager {
+  constructor(arg0) {
+    obj = Object.create(new.target.prototype);
+    obj.label = global;
+    return obj;
+  }
+}
+const prototype = ChannelLatestMessageLoadingStatsManager.prototype;
+prototype["start"] = function start(channelId) {
+  this.latestChannelMessagesLoad = { channelId: channelId.channelId, startMs: Date.now() };
+};
+prototype["cancel"] = function cancel() {
+  this.latestChannelMessagesLoad = undefined;
+};
+prototype["finish"] = function finish(channelId) {
+  const latestChannelMessagesLoad = this.latestChannelMessagesLoad;
+  if (null != latestChannelMessagesLoad) {
+    if (latestChannelMessagesLoad.channelId === channelId.channelId) {
+      const _Date = Date;
+      const seenChannelIds2 = ChannelLatestMessageLoadingStatsManager.seenChannelIds;
+      const diff = Date.now() - latestChannelMessagesLoad.startMs;
+      const hasItem = seenChannelIds2.has(channelId.channelId);
+      if (!hasItem) {
+        const seenChannelIds = tmp10.seenChannelIds;
+        seenChannelIds.add(channelId.channelId);
+      }
+      let obj = require(5724) /* isClickstreamEnabled */;
+      obj = { load_duration_ms: null, were_messages_cached: null, is_first_load: null };
+      obj[0] = diff;
+      obj[1] = channelId.areMessagesCached;
+      obj[2] = !hasItem;
+      obj.trackClickstream(AnalyticEvents.CHANNEL_LATEST_MESSAGES_LOADED_CLICKSTREAM, obj);
+      tmp.latestChannelMessagesLoad = undefined;
+      tmp10 = ChannelLatestMessageLoadingStatsManager;
+      const tmp12 = !hasItem;
     }
   }
-  let obj = {
-    key: "start",
-    value(channelId) {
-      this.latestChannelMessagesLoad = { channelId: channelId.channelId, startMs: Date.now() };
-    }
-  };
-  const items = [obj, , ];
-  obj = {
-    key: "cancel",
-    value() {
-      this.latestChannelMessagesLoad = undefined;
-    }
-  };
-  items[1] = obj;
-  obj = {
-    key: "finish",
-    value(channelId) {
-      const latestChannelMessagesLoad = this.latestChannelMessagesLoad;
-      if (null != latestChannelMessagesLoad) {
-        if (latestChannelMessagesLoad.channelId === channelId.channelId) {
-          const _Date = Date;
-          const seenChannelIds2 = ChannelLatestMessageLoadingStatsManager.seenChannelIds;
-          const diff = Date.now() - latestChannelMessagesLoad.startMs;
-          const tmp11 = !seenChannelIds2.has(channelId.channelId);
-          if (tmp11) {
-            const seenChannelIds = ChannelLatestMessageLoadingStatsManager.seenChannelIds;
-            seenChannelIds.add(channelId.channelId);
-          }
-          let obj = ChannelLatestMessageLoadingStatsManager(outer1_1[3]);
-          obj = { load_duration_ms: diff, were_messages_cached: channelId.areMessagesCached, is_first_load: tmp11 };
-          obj.trackClickstream(outer1_4.CHANNEL_LATEST_MESSAGES_LOADED_CLICKSTREAM, obj);
-          tmp.latestChannelMessagesLoad = undefined;
-        }
-      }
-    }
-  };
-  items[2] = obj;
-  return callback(ChannelLatestMessageLoadingStatsManager, items);
-})();
+};
 let set = new Set();
-tmp2.seenChannelIds = set;
+ChannelLatestMessageLoadingStatsManager.seenChannelIds = set;
 const result = set.fileFinishedImporting("modules/messages/native/ChannelLatestMessageLoadingStatsManager.tsx");
 
-export default tmp2;
+export default ChannelLatestMessageLoadingStatsManager;

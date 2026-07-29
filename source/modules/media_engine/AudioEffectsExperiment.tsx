@@ -1,20 +1,19 @@
-// Module ID: 12936
-// Function ID: 100396
+// Module ID: 12958
+// Function ID: 12959
 // Name: apexExperiment
-// Dependencies: [1428, 2]
+// Dependencies: [1452, 2]
 
-// Module 12936 (apexExperiment)
+// Module 12958 (apexExperiment)
 import ApexExperiment from "ApexExperiment";
 
 let obj = { probeAudioEffects: false };
-obj = { name: "2026-03-audio-effects-probe", kind: "user" };
-obj.defaultConfig = obj;
-obj = {};
+obj = { name: "2026-03-audio-effects-probe", kind: "user", defaultConfig: obj, variations: null };
+obj = { 1: null };
 const obj1 = {};
 const merged = Object.assign(obj);
-obj1["probeAudioEffects"] = true;
+obj1.probeAudioEffects = true;
 obj[1] = obj1;
-obj.variations = obj;
+obj[3] = obj;
 const apexExperiment = ApexExperiment.createApexExperiment(obj);
 const result = require("set").fileFinishedImporting("modules/media_engine/AudioEffectsExperiment.tsx");
 

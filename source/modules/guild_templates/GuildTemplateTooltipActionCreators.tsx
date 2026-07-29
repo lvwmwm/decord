@@ -1,30 +1,79 @@
-// Module ID: 7665
-// Function ID: 61154
-// Dependencies: [5, 3793, 653, 7666, 686, 2]
+// Module ID: 7688
+// Function ID: 7689
+// Dependencies: [5, 3817, 676, 7689, 709, 2]
 
-// Module 7665
+// Module 7688
 import set from "set";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import getUncachedChannelPermissions from "getUncachedChannelPermissions";
 import { Permissions } from "ME";
 
 const result = require("ME").fileFinishedImporting("modules/guild_templates/GuildTemplateTooltipActionCreators.tsx");
 
 export default {
-  checkGuildTemplateDirty(guildId) {
-    let closure_0 = guildId;
-    return callback(async () => {
-      if (outer2_3.canWithPartialContext(outer2_4.MANAGE_GUILD, obj)) {
-        yield callback(outer2_1[3]).loadTemplatesForGuild(outer1_0);
-        const obj2 = callback(outer2_1[3]);
+  checkGuildTemplateDirty(closure_0) {
+    return callback(function*() {
+      if (v0 === 2) {
+        v0 = 3;
+        HermesBuiltin.throwTypeError();
+      } else if (tmp3 === 3) {
+        if (arg0 === 1) {
+          throw arg1;
+        } else if (arg0 === 2) {
+          let obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
+        } else {
+          return { value: "HermesInternal", done: null };
+        }
+      } else {
+        try {
+          v0 = 2;
+          if (0 === table) {
+            if (arg0 === 1) {
+              v0 = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              v0 = 3;
+              obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            } else {
+              let obj1 = { guildId: null };
+              obj1[0] = v0;
+              if (outer1_3.canWithPartialContext(outer1_4.MANAGE_GUILD, obj1)) {
+                obj1 = v0(table[3]);
+                table = 1;
+                v0 = 1;
+                const obj2 = { value: null, done: false };
+                obj2[0] = obj1.loadTemplatesForGuild(tmp15);
+                return obj2;
+              }
+              tmp15 = v0;
+            }
+          } else if (arg0 === 1) {
+            v0 = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            v0 = 3;
+            obj = { value: null, done: true };
+            obj[0] = arg1;
+            return obj;
+          }
+          v0 = 3;
+          return { value: "HermesInternal", done: null };
+        } catch (tmp7) {
+          v0 = tmp;
+          throw tmp7;
+        }
       }
     })();
   },
   hideGuildTemplateDirtyTooltip(guildId) {
-    let obj = importDefault(686);
+    let obj = importDefault(709);
     obj = { type: "GUILD_TEMPLATE_DIRTY_TOOLTIP_HIDE", guildId };
     obj.dispatch(obj);
   },
   hideGuildTemplatePromotionTooltip() {
-    importDefault(686).dispatch({ type: "GUILD_TEMPLATE_PROMOTION_TOOLTIP_HIDE" });
+    importDefault(709).dispatch({ type: "GUILD_TEMPLATE_PROMOTION_TOOLTIP_HIDE" });
   }
 };

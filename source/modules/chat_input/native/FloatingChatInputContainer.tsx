@@ -1,14 +1,14 @@
-// Module ID: 11132
-// Function ID: 86336
+// Module ID: 11156
+// Function ID: 11157
 // Name: FloatingChatInputContainer
-// Dependencies: [57, 31, 33, 4026, 3869, 689, 1571, 4031, 1555, 4166, 4169, 2]
+// Dependencies: [32, 19, 21, 4050, 3893, 712, 1595, 4055, 1579, 4190, 4193, 2]
 // Exports: default
 
-// Module 11132 (FloatingChatInputContainer)
+// Module 11156 (FloatingChatInputContainer)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
+import noop from "noop";
 import { jsx } from "jsxProd";
-import { Easing } from "module_4026";
+import { Easing } from "module_4050";
 
 const require = arg1;
 let closure_6 = Easing.bezier(0.2, 0, 0, 1);
@@ -16,78 +16,91 @@ let closure_7 = { code: "function FloatingChatInputContainerTsx1(){const{padding
 let result = require("jsxProd").fileFinishedImporting("modules/chat_input/native/FloatingChatInputContainer.tsx");
 
 export default function FloatingChatInputContainer(arg0) {
+  let c1;
   let children;
   let onLayout;
   let style;
+  let tmp6;
+  let token;
+  let importDefault;
+  let dependencyMap;
+  let sharedValue;
   ({ style, onLayout, children } = arg0);
-  style = [, ];
-  style[0] = style;
-  style[1] = (function useKeyboardOpenPaddingStyle() {
-    const token = outer1_0(outer1_2[4]).useToken(outer1_1(outer1_2[5]).modules.mobile.CHAT_INPUT_FLOATING_CONTENT_PADDING_VERTICAL);
-    const tmp2 = outer1_3(outer1_4.useState(() => {
-      let height;
-      const KeyboardController = outer2_0(outer2_2[6]).KeyboardController;
-      const stateResult = KeyboardController.state();
-      if (null != stateResult) {
-        height = stateResult.height;
-      }
-      let num = 0;
-      if (null != height) {
-        num = height;
-      }
-      return num > 0;
-    }), 2);
-    let first = tmp2[0];
-    let closure_1 = tmp2[1];
-    const effect = outer1_4.useEffect(() => {
-      const KeyboardEvents = outer2_0(outer2_2[6]).KeyboardEvents;
-      let closure_0 = KeyboardEvents.addListener("keyboardWillShow", () => lib(true));
-      const KeyboardEvents2 = outer2_0(outer2_2[6]).KeyboardEvents;
-      let closure_1 = KeyboardEvents2.addListener("keyboardWillHide", () => lib(false));
-      return () => {
-        closure_0.remove();
-        lib.remove();
-      };
-    }, []);
-    let obj = outer1_0(outer1_2[4]);
-    const obj2 = outer1_0(outer1_2[7]);
-    const tmp5 = true === outer1_0(outer1_2[7]).useKeyboardContextForType(outer1_0(outer1_2[8]).KeyboardTypes.SYSTEM).keyboardWillOpen;
-    const tmp6 = outer1_1(outer1_2[7])();
-    if (!first) {
-      first = tmp5;
+  token = token(3893).useToken(importDefault(712).modules.mobile.CHAT_INPUT_FLOATING_CONTENT_PADDING_VERTICAL);
+  let obj = token(3893);
+  const obj2 = React;
+  const tmp3 = importDefault;
+  [tmp6, c1] = sharedValue(React.useState(() => {
+    const KeyboardController = token(_undefined[6]).KeyboardController;
+    const stateResult = KeyboardController.state();
+    let num;
+    if (stateResult != null) {
+      num = stateResult.height;
     }
-    if (!first) {
-      first = tmp7;
+    if (num == null) {
+      num = 0;
     }
-    tmp7 = outer1_1(outer1_2[7])() !== outer1_0(outer1_2[8]).KeyboardTypes.SYSTEM;
+    return num > 0;
+  }), 2);
+  const effect = React.useEffect(() => {
+    const KeyboardEvents = token(_undefined[6]).KeyboardEvents;
+    let closure_0 = KeyboardEvents.addListener("keyboardWillShow", () => lib(true));
+    const KeyboardEvents2 = token(_undefined[6]).KeyboardEvents;
+    let closure_1 = KeyboardEvents2.addListener("keyboardWillHide", () => lib(false));
+    return () => {
+      closure_0.remove();
+      lib.remove();
+    };
+  }, []);
+  const tmp5 = sharedValue(React.useState(() => {
+    const KeyboardController = token(_undefined[6]).KeyboardController;
+    const stateResult = KeyboardController.state();
+    let num;
+    if (stateResult != null) {
+      num = stateResult.height;
+    }
+    if (num == null) {
+      num = 0;
+    }
+    return num > 0;
+  }), 2);
+  const obj3 = token(4055);
+  if (!tmp6) {
+    tmp6 = true === obj3.useKeyboardContextForType(token(1579).KeyboardTypes.SYSTEM).keyboardWillOpen;
+  }
+  if (!tmp6) {
+    tmp6 = tmp8 !== token(1579).KeyboardTypes.SYSTEM;
+  }
+  dependencyMap = tmp6;
+  let tmpResult = tmp(4050);
+  let num = 0;
+  if (tmp6) {
+    num = token;
+  }
+  sharedValue = tmpResult.useSharedValue(num);
+  const items = [tmp6, token, sharedValue];
+  const effect1 = obj2.useEffect(() => {
+    let obj = token(_undefined[9]);
     let num = 0;
-    if (first) {
+    if (_undefined) {
       num = token;
     }
-    const sharedValue = outer1_0(outer1_2[3]).useSharedValue(num);
-    const items = [first, token, sharedValue];
-    const effect1 = outer1_4.useEffect(() => {
-      let obj = outer2_0(outer2_2[9]);
-      let num = 0;
-      if (first) {
-        num = token;
-      }
-      obj = { duration: outer2_0(outer2_2[10]).timingStandardDuration, easing: outer2_6 };
-      const result = sharedValue.set(obj.withTiming(num, obj));
-    }, items);
-    const obj3 = outer1_0(outer1_2[3]);
-    return outer1_0(outer1_2[3]).useAnimatedStyle((() => {
-      class FloatingChatInputContainerTsx1 {
-        constructor() {
-          obj = { paddingBottom: outer1_3.get() };
-          return obj;
-        }
-      }
-      FloatingChatInputContainerTsx1.__closure = { paddingSV: sharedValue };
-      FloatingChatInputContainerTsx1.__workletHash = 5673482424037;
-      FloatingChatInputContainerTsx1.__initData = outer2_7;
-      return FloatingChatInputContainerTsx1;
-    })());
-  })();
-  return jsx(importDefault(4026).View, { style, onLayout, children });
+    obj = { duration: token(_undefined[10]).timingStandardDuration, easing: outer1_6 };
+    const result = sharedValue.set(obj.withTiming(num, obj));
+  }, items);
+  tmpResult = tmp(4050);
+  class FloatingChatInputContainerTsx1 {
+    constructor() {
+      obj = { paddingBottom: useSharedValue.get() };
+      return obj;
+    }
+  }
+  FloatingChatInputContainerTsx1.__closure = { paddingSV: sharedValue };
+  FloatingChatInputContainerTsx1.__workletHash = 5673482424037;
+  FloatingChatInputContainerTsx1.__initData = closure_7;
+  const animatedStyle = tmpResult.useAnimatedStyle(FloatingChatInputContainerTsx1);
+  style = [, ];
+  style[0] = style;
+  style[1] = animatedStyle;
+  return jsx(tmp3(4050).View, { style, onLayout, children });
 };

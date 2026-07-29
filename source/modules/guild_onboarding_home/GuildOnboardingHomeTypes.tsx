@@ -1,177 +1,98 @@
-// Module ID: 11415
-// Function ID: 88512
-// Name: _createForOfIteratorHelperLoose
-// Dependencies: [1348, 653, 1327, 3798, 2]
-// Exports: actionsFromServer, isChannelValidForNewMemberAction, isChannelValidForResourceChannel, isSettingsValid, settingsFromServer, settingsToServer
+// Module ID: 11439
+// Function ID: 11440
+// Name: newMemberActionFromServer
+// Dependencies: [1372, 676, 1351, 3822, 2]
+// Exports: actionsFromServer, isChannelValidForNewMemberAction, isChannelValidForResourceChannel, isSettingsValid, isWelcomeMessageEmpty, settingsFromServer, settingsToServer
 
-// Module 11415 (_createForOfIteratorHelperLoose)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 11439 (newMemberActionFromServer)
+import ensureGuildLoaded from "ensureGuildLoaded";
 import ME from "ME";
 
-let closure_4;
-let closure_5;
+let c4;
+let c5;
 const require = arg1;
-function _createForOfIteratorHelperLoose(iterable) {
-  let closure_0 = iterable;
-  iterable = "undefined" !== typeof Symbol;
-  if (iterable) {
-    const _Symbol = Symbol;
-    iterable = iterable[Symbol.iterator];
-  }
-  if (!iterable) {
-    iterable = iterable[Symbol.iterator];
-  }
-  if (iterable) {
-    const iter = iterable.call(iterable);
-    const next = iter.next;
-    return next.bind(iter);
-  } else {
-    const _Array = Array;
-    let tmp = iterable;
-    if (!Array.isArray(iterable)) {
-      let tmp2;
-      if (iterable) {
-        if ("string" === typeof iterable) {
-          tmp2 = _arrayLikeToArray(iterable, undefined);
-        } else {
-          const toString = {}.toString;
-          const substr = toString.call(iterable).slice(8, -1);
-          let name = substr;
-          if (tmp3) {
-            name = iterable.constructor.name;
-          }
-          if ("Map" !== name) {
-            if ("Set" !== name) {
-              if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(iterable, undefined);
-              } else {
-                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
-              }
-            }
-            tmp2 = arr;
-          }
-          const _Array2 = Array;
-          arr = Array.from(iterable);
-          const callResult = toString.call(iterable);
-          tmp3 = "Object" === substr && iterable.constructor;
-        }
-      }
-      tmp = tmp2;
-      if (!tmp2) {
-        const _TypeError = TypeError;
-        const typeError = new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
-        throw typeError;
-      }
-    }
-    if (tmp) {
-      closure_0 = tmp;
-    }
-    let c1 = 0;
-    return () => {
-      if (closure_1 >= length.length) {
-        let obj = { done: true };
-      } else {
-        obj = { done: false };
-        closure_1 = tmp3 + 1;
-        obj.value = length[+closure_1];
-      }
-      return obj;
-    };
-  }
-}
-function _arrayLikeToArray(arg0, arg1) {
-  let length;
-  if (tmp) {
-    length = arg0.length;
-  }
-  const ArrayResult = Array(length);
-  for (let num = 0; num < length; num = num + 1) {
-    ArrayResult[num] = arg0[num];
-  }
-  return ArrayResult;
-}
 function newMemberActionFromServer(channelId) {
-  let obj = { channelId: channelId.channel_id, actionType: channelId.action_type, title: channelId.title, description: channelId.description };
+  let obj = { channelId: channelId.channel_id, actionType: channelId.action_type, title: channelId.title, description: channelId.description, emoji: null, icon: null };
   let tmp = null;
   if (null != channelId.emoji) {
-    obj = { id: channelId.emoji.id, name: channelId.emoji.name, animated: channelId.emoji.animated };
+    obj = { id: null, name: null, animated: null };
+    obj[0] = channelId.emoji.id;
+    obj[1] = channelId.emoji.name;
+    obj[2] = channelId.emoji.animated;
     tmp = obj;
   }
-  obj.emoji = tmp;
-  const icon = channelId.icon;
-  let tmp2 = null;
-  if (null != icon) {
-    tmp2 = icon;
+  obj[4] = tmp;
+  let icon = channelId.icon;
+  if (icon == null) {
+    icon = null;
   }
-  obj.icon = tmp2;
+  obj[5] = icon;
   return obj;
 }
 function resourceChannelFromServer(channelId) {
-  let obj = { channelId: channelId.channel_id, title: channelId.title };
-  const description = channelId.description;
-  let str = "";
-  if (null != description) {
-    str = description;
+  let obj = { channelId: channelId.channel_id, title: channelId.title, description: null, emoji: null, icon: null };
+  let str = channelId.description;
+  if (str == null) {
+    str = "";
   }
-  obj.description = str;
+  obj[2] = str;
   let tmp = null;
   if (null != channelId.emoji) {
-    obj = { id: channelId.emoji.id, name: channelId.emoji.name, animated: channelId.emoji.animated };
+    obj = { id: null, name: null, animated: null };
+    obj[0] = channelId.emoji.id;
+    obj[1] = channelId.emoji.name;
+    obj[2] = channelId.emoji.animated;
     tmp = obj;
   }
-  obj.emoji = tmp;
-  const icon = channelId.icon;
-  let tmp2 = null;
-  if (null != icon) {
-    tmp2 = icon;
+  obj[3] = tmp;
+  let icon = channelId.icon;
+  if (icon == null) {
+    icon = null;
   }
-  obj.icon = tmp2;
+  obj[4] = icon;
   return obj;
-}
-function isWelcomeMessageEmpty(welcomeMessage) {
-  let tmp = null == welcomeMessage;
-  if (!tmp) {
-    let tmp2 = null != welcomeMessage.message;
-    if (tmp2) {
-      tmp2 = welcomeMessage.message.length > 0;
-    }
-    let tmp3 = !tmp2;
-    if (!tmp2) {
-      let tmp4 = null != welcomeMessage.authorIds;
-      if (tmp4) {
-        tmp4 = welcomeMessage.authorIds.length > 0;
-      }
-      tmp3 = !tmp4;
-    }
-    tmp = tmp3;
-  }
-  return tmp;
 }
 function isSettingsEmpty(welcomeMessage) {
   let tmp = null == welcomeMessage;
   if (!tmp) {
-    const tmp3 = isWelcomeMessageEmpty(welcomeMessage.welcomeMessage);
-    let tmp4 = tmp3;
-    if (tmp3) {
-      let tmp5 = null != welcomeMessage.newMemberActions;
-      if (tmp5) {
-        tmp5 = welcomeMessage.newMemberActions.length > 0;
+    welcomeMessage = welcomeMessage.welcomeMessage;
+    let tmp2 = null == welcomeMessage;
+    if (!tmp2) {
+      let tmp3 = null != welcomeMessage.message;
+      if (tmp3) {
+        tmp3 = welcomeMessage.message.length > 0;
       }
-      let tmp6 = !tmp5;
-      if (!tmp5) {
-        let tmp7 = null != welcomeMessage.resourceChannels;
-        if (tmp7) {
-          tmp7 = welcomeMessage.resourceChannels.length > 0;
+      let tmp4 = !tmp3;
+      if (!tmp3) {
+        let tmp5 = null != welcomeMessage.authorIds;
+        if (tmp5) {
+          tmp5 = welcomeMessage.authorIds.length > 0;
         }
-        tmp6 = !tmp7;
+        tmp4 = !tmp5;
       }
-      tmp4 = tmp6;
+      tmp2 = tmp4;
     }
-    tmp = tmp4;
+    let tmp6 = tmp2;
+    if (tmp6) {
+      let tmp7 = null != welcomeMessage.newMemberActions;
+      if (tmp7) {
+        tmp7 = welcomeMessage.newMemberActions.length > 0;
+      }
+      let tmp8 = !tmp7;
+      if (!tmp7) {
+        let tmp9 = null != welcomeMessage.resourceChannels;
+        if (tmp9) {
+          tmp9 = welcomeMessage.resourceChannels.length > 0;
+        }
+        tmp8 = !tmp9;
+      }
+      tmp6 = tmp8;
+    }
+    tmp = tmp6;
   }
   return tmp;
 }
-({ ChannelTypes: closure_4, Permissions: closure_5 } = ME);
+({ ChannelTypes: c4, Permissions: c5 } = ME);
 const result = require("isDiscordFrontendDevelopment").fileFinishedImporting("modules/guild_onboarding_home/GuildOnboardingHomeTypes.tsx");
 
 export const WELCOME_MESSAGE_MIN_LENGTH = 7;
@@ -197,19 +118,19 @@ export const settingsFromServer = function settingsFromServer(body) {
     return null;
   } else {
     ({ welcome_message, new_member_actions, resource_channels } = body);
-    let obj = {};
-    obj = {};
-    ({ author_ids: obj2.authorIds, message: obj2.message } = welcome_message);
-    obj.welcomeMessage = obj;
-    const found = new_member_actions.filter((channel_id) => outer1_0(outer1_2[2]).isNotNullish(outer1_3.getChannel(channel_id.channel_id)));
-    obj.newMemberActions = found.map(newMemberActionFromServer);
-    const found1 = resource_channels.filter((channel_id) => outer1_0(outer1_2[2]).isNotNullish(outer1_3.getChannel(channel_id.channel_id)));
-    obj.resourceChannels = found1.map(resourceChannelFromServer);
-    obj.enabled = body.enabled;
+    let obj = { welcomeMessage: null, newMemberActions: null, resourceChannels: null, enabled: null };
+    obj = { authorIds: null, message: null };
+    ({ author_ids: obj2[0], message: obj2[1] } = welcome_message);
+    obj[0] = obj;
+    const found = new_member_actions.filter((channel_id) => callback(1351).isNotNullish(store.getChannel(channel_id.channel_id)));
+    obj[1] = found.map(newMemberActionFromServer);
+    const found1 = resource_channels.filter((channel_id) => callback(1351).isNotNullish(store.getChannel(channel_id.channel_id)));
+    obj[2] = found1.map(resourceChannelFromServer);
+    obj[3] = body.enabled;
     return obj;
   }
 };
-export const settingsToServer = function settingsToServer(guild_id, enabled) {
+export const settingsToServer = function settingsToServer(arg0, enabled) {
   let newMemberActions;
   let resourceChannels;
   let welcomeMessage;
@@ -217,119 +138,85 @@ export const settingsToServer = function settingsToServer(guild_id, enabled) {
     return null;
   } else {
     ({ welcomeMessage, newMemberActions, resourceChannels } = enabled);
-    let obj = { guild_id };
-    obj = {};
+    let obj = { guild_id: null, welcome_message: null, new_member_actions: null, resource_channels: null, enabled: null };
+    obj[0] = arg0;
     let authorIds;
-    if (null != welcomeMessage) {
+    if (welcomeMessage != null) {
       authorIds = welcomeMessage.authorIds;
     }
-    if (null == authorIds) {
+    if (authorIds == null) {
       authorIds = [];
     }
-    obj.author_ids = authorIds;
-    let message;
-    if (null != welcomeMessage) {
-      message = welcomeMessage.message;
+    obj = { author_ids: null, message: null };
+    obj[0] = authorIds;
+    let str;
+    if (welcomeMessage != null) {
+      str = welcomeMessage.message;
     }
-    let str = "";
-    if (null != message) {
-      str = message;
+    if (str == null) {
+      str = "";
     }
-    obj.message = str;
-    obj.welcome_message = obj;
-    if (null == newMemberActions) {
+    obj[1] = str;
+    obj[1] = obj;
+    if (newMemberActions == null) {
       newMemberActions = [];
     }
-    const found = newMemberActions.filter((channelId) => outer1_0(outer1_2[2]).isNotNullish(outer1_3.getChannel(channelId.channelId)));
-    obj.new_member_actions = found.map((channelId) => {
-      let obj = { channel_id: channelId.channelId, action_type: channelId.actionType, title: channelId.title, description: channelId.description };
-      obj = {};
+    const found = newMemberActions.filter((channelId) => callback(1351).isNotNullish(store.getChannel(channelId.channelId)));
+    obj[2] = found.map((channelId) => {
+      let obj = { channel_id: channelId.channelId, action_type: channelId.actionType, title: channelId.title, description: channelId.description, emoji: null, icon: null };
       const emoji = channelId.emoji;
       let id;
-      if (null != emoji) {
+      if (emoji != null) {
         id = emoji.id;
       }
-      let tmp2;
-      if (null != id) {
-        tmp2 = id;
-      }
-      obj.id = tmp2;
+      obj = { id, name: null, animated: null };
       const emoji2 = channelId.emoji;
       let name;
-      if (null != emoji2) {
+      if (emoji2 != null) {
         name = emoji2.name;
       }
-      let tmp4;
-      if (null != name) {
-        tmp4 = name;
-      }
-      obj.name = tmp4;
+      obj[1] = name;
       const emoji3 = channelId.emoji;
       let animated;
-      if (null != emoji3) {
+      if (emoji3 != null) {
         animated = emoji3.animated;
       }
-      let tmp6;
-      if (null != animated) {
-        tmp6 = animated;
-      }
-      obj.animated = tmp6;
-      obj.emoji = obj;
+      obj[2] = animated;
+      obj[4] = obj;
       const icon = channelId.icon;
-      let tmp7;
-      if (null != icon) {
-        tmp7 = icon;
-      }
-      obj.icon = tmp7;
+      obj[5] = icon;
       return obj;
     });
-    if (null == resourceChannels) {
+    if (resourceChannels == null) {
       resourceChannels = [];
     }
-    const found1 = resourceChannels.filter((channelId) => outer1_0(outer1_2[2]).isNotNullish(outer1_3.getChannel(channelId.channelId)));
-    obj.resource_channels = found1.map((channelId) => {
-      let obj = { channel_id: channelId.channelId, title: channelId.title, description: channelId.description };
-      obj = {};
+    const found1 = resourceChannels.filter((channelId) => callback(1351).isNotNullish(store.getChannel(channelId.channelId)));
+    obj[3] = found1.map((channelId) => {
+      let obj = { channel_id: channelId.channelId, title: channelId.title, description: channelId.description, emoji: null, icon: null };
       const emoji = channelId.emoji;
       let id;
-      if (null != emoji) {
+      if (emoji != null) {
         id = emoji.id;
       }
-      let tmp2;
-      if (null != id) {
-        tmp2 = id;
-      }
-      obj.id = tmp2;
+      obj = { id, name: null, animated: null };
       const emoji2 = channelId.emoji;
       let name;
-      if (null != emoji2) {
+      if (emoji2 != null) {
         name = emoji2.name;
       }
-      let tmp4;
-      if (null != name) {
-        tmp4 = name;
-      }
-      obj.name = tmp4;
+      obj[1] = name;
       const emoji3 = channelId.emoji;
       let animated;
-      if (null != emoji3) {
+      if (emoji3 != null) {
         animated = emoji3.animated;
       }
-      let tmp6;
-      if (null != animated) {
-        tmp6 = animated;
-      }
-      obj.animated = tmp6;
-      obj.emoji = obj;
+      obj[2] = animated;
+      obj[3] = obj;
       const icon = channelId.icon;
-      let tmp7;
-      if (null != icon) {
-        tmp7 = icon;
-      }
-      obj.icon = tmp7;
+      obj[4] = icon;
       return obj;
     });
-    obj.enabled = enabled.enabled;
+    obj[4] = enabled.enabled;
     return obj;
   }
 };
@@ -346,7 +233,25 @@ export const actionsFromServer = function actionsFromServer(body) {
     return obj;
   }
 };
-export { isWelcomeMessageEmpty };
+export const isWelcomeMessageEmpty = function isWelcomeMessageEmpty(message) {
+  let tmp = null == message;
+  if (!tmp) {
+    let tmp2 = null != message.message;
+    if (tmp2) {
+      tmp2 = message.message.length > 0;
+    }
+    let tmp3 = !tmp2;
+    if (!tmp2) {
+      let tmp4 = null != message.authorIds;
+      if (tmp4) {
+        tmp4 = message.authorIds.length > 0;
+      }
+      tmp3 = !tmp4;
+    }
+    tmp = tmp3;
+  }
+  return tmp;
+};
 export { isSettingsEmpty };
 export const isSettingsValid = function isSettingsValid(welcomeMessage) {
   if (null == welcomeMessage) {
@@ -356,14 +261,14 @@ export const isSettingsValid = function isSettingsValid(welcomeMessage) {
   } else {
     welcomeMessage = welcomeMessage.welcomeMessage;
     let message;
-    if (null != welcomeMessage) {
+    if (welcomeMessage != null) {
       message = welcomeMessage.message;
     }
     if (null != message) {
       if (welcomeMessage.welcomeMessage.message.length >= 7) {
         const welcomeMessage2 = welcomeMessage.welcomeMessage;
         let authorIds;
-        if (null != welcomeMessage2) {
+        if (welcomeMessage2 != null) {
           authorIds = welcomeMessage2.authorIds;
         }
         if (null != authorIds) {
@@ -371,22 +276,20 @@ export const isSettingsValid = function isSettingsValid(welcomeMessage) {
             if (null != welcomeMessage.newMemberActions) {
               if (welcomeMessage.newMemberActions.length >= 3) {
                 if (null != welcomeMessage.newMemberActions) {
-                  const tmp4 = _createForOfIteratorHelperLoose(welcomeMessage.newMemberActions);
-                  let iter = tmp4();
-                  if (!iter.done) {
-                    channel = channel.getChannel(iter.value.channelId);
-                    while (null != channel) {
-                      let tmp7 = importAll;
-                      let tmp8 = dependencyMap;
-                      let obj = importAll(3798);
-                      let tmp9 = constants2;
-                      if (!obj.canEveryoneRole(constants2.VIEW_CHANNEL, channel)) {
-                        break;
-                      } else {
-                        let iter2 = tmp4();
-                        iter = iter2;
-                      }
+                  const newMemberActions = welcomeMessage.newMemberActions;
+                  for (const item10012 of newMemberActions) {
+                    let tmp5 = channel;
+                    let channel = channel.getChannel(item10012.channelId);
+                    if (null != channel) {
+                      let tmp8 = importAll;
+                      let tmp9 = dependencyMap;
+                      let obj2 = importAll(3822);
+                      let tmp10 = constants2;
+                      let tmp11 = channel;
                     }
+                    let tmp12 = obj;
+                    obj.return();
+                    let flag = false;
                     return false;
                   }
                 }
@@ -405,26 +308,26 @@ export const isSettingsValid = function isSettingsValid(welcomeMessage) {
 export const isChannelValidForResourceChannel = function isChannelValidForResourceChannel(type) {
   let canEveryoneRoleResult = type.type === constants.GUILD_TEXT;
   if (canEveryoneRoleResult) {
-    canEveryoneRoleResult = !importAll(3798).canEveryoneRole(constants2.SEND_MESSAGES, type);
-    const obj = importAll(3798);
+    canEveryoneRoleResult = !importAll(3822).canEveryoneRole(constants2.SEND_MESSAGES, type);
+    const obj = importAll(3822);
   }
   if (canEveryoneRoleResult) {
-    canEveryoneRoleResult = importAll(3798).canEveryoneRole(constants2.VIEW_CHANNEL, type);
-    const obj2 = importAll(3798);
+    canEveryoneRoleResult = importAll(3822).canEveryoneRole(constants2.VIEW_CHANNEL, type);
+    const obj2 = importAll(3822);
   }
   return canEveryoneRoleResult;
 };
 export const isChannelValidForNewMemberAction = function isChannelValidForNewMemberAction(type) {
   type = type.type;
   if (constants.GUILD_TEXT !== type) {
-    if (constants.GUILD_ANNOUNCEMENT !== type) {
-      if (constants.GUILD_FORUM !== type) {
-        if (constants.GUILD_MEDIA !== type) {
+    if (tmp.GUILD_ANNOUNCEMENT !== type) {
+      if (tmp.GUILD_FORUM !== type) {
+        if (tmp.GUILD_MEDIA !== type) {
           return false;
         }
       }
     }
   }
-  return importAll(3798).canEveryoneRole(constants2.VIEW_CHANNEL, type);
+  return importAll(3822).canEveryoneRole(constants2.VIEW_CHANNEL, type);
 };
 export const ChannelEditBlockTypes = { DEFAULT: 0, [0]: "DEFAULT", TODO: 1, [1]: "TODO", RESOURCE: 2, [2]: "RESOURCE", RULES: 3, [3]: "RULES", UPDATES: 4, [4]: "UPDATES" };

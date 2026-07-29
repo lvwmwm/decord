@@ -1,168 +1,717 @@
-// Module ID: 7673
-// Function ID: 61214
+// Module ID: 7696
+// Function ID: 7697
 // Name: getReportMenu
-// Dependencies: [5, 31, 4164, 653, 6695, 507, 7672, 6700, 686, 44, 7670, 4359, 2]
-// Exports: areRequiredElementsUnfilled, fetchUrfCapabilities, getDsaExperiment, getReportMenuForModeratorReport, getUnauthenticatedReportMenu, sendUnauthenticatedReportPincode, showInAppReportsFeedbackModal, submitHeadlessReport, submitReport, submitReportSecondLook, submitUnauthenticatedReport, trackCloseReportModalAnalytics, useTrackSettingsUpsellsAction, verifyUnauthenticatedReport
+// Dependencies: [5, 19, 4188, 676, 6716, 530, 7695, 6721, 709, 38, 7693, 4384, 2]
+// Exports: areRequiredElementsUnfilled, fetchUrfCapabilities, getDsaExperiment, getModeratorReportEndpointSafely, getReportMenuForModeratorReport, getUnauthenticatedReportMenu, sendUnauthenticatedReportPincode, showInAppReportsFeedbackModal, submitHeadlessReport, submitReport, submitReportSecondLook, submitUnauthenticatedReport, trackCloseReportModalAnalytics, useTrackSettingsUpsellsAction, verifyUnauthenticatedReport
 
-// Module 7673 (getReportMenu)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import result from "result";
-import closure_5 from "_isNativeReflectConstruct";
+// Module 7696 (getReportMenu)
+import sendRequest from "sendRequest";
+import noop from "noop";
+import getUserAgnosticState from "getUserAgnosticState";
 import ME from "ME";
 import { SafetyToastType } from "SafetyToastType";
 
 let closure_6;
-let closure_7;
-const require = arg1;
-function getReportMenu(name, arg1) {
-  return _getReportMenu(...arguments);
+let error;
+let require = arg1;
+function getReportMenu(closure_0, closure_1) {
+  const self = this;
+  const apply = _getReportMenu.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
 }
-async function _getReportMenu(arg0, arg1, arg2) {
-  const HTTP = outer2_0(outer2_2[5]).HTTP;
-  let obj = { url: outer2_7.GET_REPORT_MENU(outer2_20(arg0)) };
-  let variant;
-  if (null != arg1) {
-    variant = arg1.variant;
+function _getReportMenu() {
+  const self = this;
+  const tmp = callback((arg0, arg1) => {
+    let closure_0 = arg0;
+    let closure_1 = arg1;
+    let c4 = 0;
+    let c5 = 0;
+    return (function*(arg0, arg1) {
+      if (c5 === 2) {
+        c5 = 3;
+        HermesBuiltin.throwTypeError();
+      } else if (tmp3 === 3) {
+        if (arg0 === 1) {
+          throw arg1;
+        } else if (arg0 === 2) {
+          let obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
+        } else {
+          return { value: "HermesInternal", done: null };
+        }
+      } else {
+        try {
+          c5 = 2;
+          if (0 === c4) {
+            if (arg0 === 1) {
+              c5 = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              c5 = 3;
+              obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            } else {
+              let sendRequest = tmp4;
+              let lib;
+              const HTTP = lib(outer1_2[5]).HTTP;
+              const obj1 = { url: null, query: null, rejectWithError: false };
+              obj1[0] = outer1_7.GET_REPORT_MENU(outer1_19(lib));
+              let variant;
+              if (closure_1 != null) {
+                variant = tmp20.variant;
+              }
+              let tmp12;
+              if (null != variant) {
+                const obj2 = { variant: null };
+                obj2[0] = tmp20.variant;
+                tmp12 = obj2;
+              }
+              obj1[1] = tmp12;
+              c4 = 1;
+              c5 = 1;
+              const obj3 = { value: null, done: false };
+              obj3[0] = HTTP.get(obj1);
+              return obj3;
+            }
+          } else if (arg0 === 1) {
+            c5 = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            c5 = 3;
+            const obj4 = { value: null, done: true };
+            obj4[0] = arg1;
+            return obj4;
+          } else {
+            lib = arg1;
+            const body = lib.body;
+            let closure_2 = body;
+            if (body == null) {
+              const _JSON = JSON;
+              closure_2 = JSON.parse(lib.text);
+            }
+            c5 = 3;
+            obj = { value: null, done: true };
+            obj[0] = closure_2;
+            return obj;
+          }
+        } catch (tmp13) {
+          c5 = tmp;
+          throw tmp13;
+        }
+      }
+    })();
+  });
+  const _getReportMenu = tmp;
+  const apply = tmp.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
   }
-  let tmp3;
-  if (null != variant) {
-    obj = { variant: arg1.variant };
-    tmp3 = obj;
-  }
-  obj.query = tmp3;
-  obj.rejectWithError = false;
-  const tmp4 = yield HTTP.get(obj);
-  let body = tmp4.body;
-  if (null == body) {
-    const _JSON = JSON;
-    body = JSON.parse(tmp4.text);
-  }
-  return body;
+  return applyArgumentsResult;
 }
-async function _getReportMenuForModeratorReport(arg0, arg1, arg2) {
-  const HTTP = outer2_0(outer2_2[5]).HTTP;
-  let obj = { url: outer2_7.GET_REPORT_MENU(outer2_21(arg0)) };
-  let variant;
-  if (null != arg1) {
-    variant = arg1.variant;
+function _getReportMenuForModeratorReport() {
+  const self = this;
+  const tmp = callback((arg0, arg1) => {
+    let closure_0 = arg0;
+    let closure_1 = arg1;
+    let c4 = 0;
+    let c5 = 0;
+    return (function*(arg0, arg1) {
+      if (c5 === 2) {
+        c5 = 3;
+        HermesBuiltin.throwTypeError();
+      } else if (tmp3 === 3) {
+        if (arg0 === 1) {
+          throw arg1;
+        } else if (arg0 === 2) {
+          let obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
+        } else {
+          return { value: "HermesInternal", done: null };
+        }
+      } else {
+        try {
+          c5 = 2;
+          if (0 === c4) {
+            if (arg0 === 1) {
+              c5 = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              c5 = 3;
+              obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            } else {
+              let sendRequest = tmp4;
+              let lib;
+              const HTTP = lib(outer1_2[5]).HTTP;
+              const obj1 = { url: null, query: null, rejectWithError: false };
+              obj1[0] = outer1_7.GET_REPORT_MENU(outer1_20(lib));
+              let variant;
+              if (closure_1 != null) {
+                variant = tmp20.variant;
+              }
+              let tmp12;
+              if (null != variant) {
+                const obj2 = { variant: null };
+                obj2[0] = tmp20.variant;
+                tmp12 = obj2;
+              }
+              obj1[1] = tmp12;
+              c4 = 1;
+              c5 = 1;
+              const obj3 = { value: null, done: false };
+              obj3[0] = HTTP.get(obj1);
+              return obj3;
+            }
+          } else if (arg0 === 1) {
+            c5 = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            c5 = 3;
+            const obj4 = { value: null, done: true };
+            obj4[0] = arg1;
+            return obj4;
+          } else {
+            lib = arg1;
+            const body = lib.body;
+            let closure_2 = body;
+            if (body == null) {
+              const _JSON = JSON;
+              closure_2 = JSON.parse(lib.text);
+            }
+            c5 = 3;
+            obj = { value: null, done: true };
+            obj[0] = closure_2;
+            return obj;
+          }
+        } catch (tmp13) {
+          c5 = tmp;
+          throw tmp13;
+        }
+      }
+    })();
+  });
+  const _getReportMenuForModeratorReport = tmp;
+  const apply = tmp.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
   }
-  let tmp3;
-  if (null != variant) {
-    obj = { variant: arg1.variant };
-    tmp3 = obj;
+  return applyArgumentsResult;
+}
+function _getUnauthenticatedReportMenu() {
+  const self = this;
+  const tmp = callback((arg0, arg1) => {
+    let closure_0 = arg0;
+    let closure_1 = arg1;
+    let c4 = 0;
+    let c5 = 0;
+    return (function*(arg0, arg1) {
+      if (c5 === 2) {
+        c5 = 3;
+        HermesBuiltin.throwTypeError();
+      } else if (tmp3 === 3) {
+        if (arg0 === 1) {
+          throw arg1;
+        } else if (arg0 === 2) {
+          let obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
+        } else {
+          return { value: "HermesInternal", done: null };
+        }
+      } else {
+        try {
+          c5 = 2;
+          if (0 === c4) {
+            if (arg0 === 1) {
+              c5 = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              c5 = 3;
+              obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            } else {
+              let sendRequest = tmp4;
+              let lib;
+              const HTTP = lib(outer1_2[5]).HTTP;
+              const obj1 = { url: null, query: null, rejectWithError: false };
+              obj1[0] = outer1_7.GET_UNAUTHENTICATED_REPORT_MENU(outer1_18(lib));
+              let variant;
+              if (closure_1 != null) {
+                variant = tmp20.variant;
+              }
+              let tmp12;
+              if (null != variant) {
+                const obj2 = { variant: null };
+                obj2[0] = tmp20.variant;
+                tmp12 = obj2;
+              }
+              obj1[1] = tmp12;
+              c4 = 1;
+              c5 = 1;
+              const obj3 = { value: null, done: false };
+              obj3[0] = HTTP.get(obj1);
+              return obj3;
+            }
+          } else if (arg0 === 1) {
+            c5 = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            c5 = 3;
+            const obj4 = { value: null, done: true };
+            obj4[0] = arg1;
+            return obj4;
+          } else {
+            lib = arg1;
+            const body = lib.body;
+            let closure_2 = body;
+            if (body == null) {
+              const _JSON = JSON;
+              closure_2 = JSON.parse(lib.text);
+            }
+            c5 = 3;
+            obj = { value: null, done: true };
+            obj[0] = closure_2;
+            return obj;
+          }
+        } catch (tmp13) {
+          c5 = tmp;
+          throw tmp13;
+        }
+      }
+    })();
+  });
+  const _getUnauthenticatedReportMenu = tmp;
+  const apply = tmp.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
   }
-  obj.query = tmp3;
-  obj.rejectWithError = false;
-  const tmp4 = yield HTTP.get(obj);
-  let body = tmp4.body;
-  if (null == body) {
-    const _JSON = JSON;
-    body = JSON.parse(tmp4.text);
+  return applyArgumentsResult;
+}
+function _submitHeadlessReport() {
+  const self = this;
+  const tmp = callback((arg0, arg1) => {
+    let closure_0 = arg0;
+    let closure_1 = arg1;
+    let c4 = 0;
+    let c5 = 0;
+    return (function*(arg0, arg1) {
+      if (c5 === 2) {
+        c5 = 3;
+        HermesBuiltin.throwTypeError();
+      } else if (tmp4 === 3) {
+        if (arg0 === 1) {
+          throw arg1;
+        } else if (arg0 === 2) {
+          let obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
+        } else {
+          return { value: "HermesInternal", done: null };
+        }
+      } else {
+        try {
+          c5 = 2;
+          if (0 === c4) {
+            if (arg0 === 1) {
+              c5 = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              c5 = 3;
+              obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            } else {
+              let sendRequest = tmp5;
+              let closure_2 = tmp2;
+              let closure_1;
+              closure_2 = undefined;
+              closure_1 = outer1_19(callback);
+              c4 = 1;
+              c5 = 1;
+              const obj1 = { value: null, done: false };
+              obj1[0] = outer1_9(callback, closure_1);
+              return obj1;
+            }
+          } else if (1 === tmp5) {
+            if (arg0 === 1) {
+              c5 = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              c5 = 3;
+              const obj2 = { value: null, done: true };
+              obj2[0] = arg1;
+              return obj2;
+            } else {
+              closure_2 = arg1;
+              const HTTP = callback(closure_2[5]).HTTP;
+              const obj3 = { url: null, body: null, rejectWithError: false };
+              obj3[0] = closure_7.SUBMIT_REPORT_MENU(closure_1);
+              const obj4 = { nodeRef: null, destination: null };
+              obj4[0] = closure_2.root_node_id;
+              const items = ["", closure_2.success_node_id];
+              obj4[1] = items;
+              const items1 = [obj4];
+              obj3[1] = callback2(closure_2, callback, items1);
+              c4 = 2;
+              c5 = 1;
+              const obj5 = { value: null, done: false };
+              obj5[0] = HTTP.post(obj3);
+              return obj5;
+            }
+          } else if (arg0 === 1) {
+            c5 = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            c5 = 3;
+            obj = { value: null, done: true };
+            obj[0] = arg1;
+            return obj;
+          } else {
+            c5 = 3;
+            return { value: "HermesInternal", done: null };
+          }
+        } catch (tmp10) {
+          c5 = tmp;
+          throw tmp10;
+        }
+      }
+    })();
+  });
+  const _submitHeadlessReport = tmp;
+  const apply = tmp.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
   }
-  return body;
+  return applyArgumentsResult;
 }
-async function _getUnauthenticatedReportMenu(arg0, arg1, arg2) {
-  const HTTP = outer2_0(outer2_2[5]).HTTP;
-  let obj = { url: outer2_7.GET_UNAUTHENTICATED_REPORT_MENU(outer2_19(arg0)) };
-  let variant;
-  if (null != arg1) {
-    variant = arg1.variant;
+function _verifyUnauthenticatedReport() {
+  const self = this;
+  const tmp = callback((arg0, arg1, arg2) => {
+    let closure_0 = arg0;
+    let closure_1 = arg1;
+    let closure_2 = arg2;
+    let c4 = 0;
+    let c3 = 0;
+    return (function*(arg0, body) {
+      if (c3 === 2) {
+        c3 = 3;
+        HermesBuiltin.throwTypeError();
+      } else if (tmp3 === 3) {
+        if (arg0 === 1) {
+          throw body;
+        } else if (arg0 === 2) {
+          let obj = { value: null, done: true };
+          obj[0] = body;
+          return obj;
+        } else {
+          return { value: "HermesInternal", done: null };
+        }
+      } else {
+        try {
+          c3 = 2;
+          if (0 === c4) {
+            if (arg0 === 1) {
+              c3 = 3;
+              throw body;
+            } else if (arg0 === 2) {
+              c3 = 3;
+              obj = { value: null, done: true };
+              obj[0] = body;
+              return obj;
+            } else {
+              const HTTP = callback(table[5]).HTTP;
+              const obj1 = { url: null, body: null, rejectWithError: false };
+              obj1[0] = outer1_7.VERIFY_UNAUTHENTICATED_REPORT(callback);
+              const obj2 = { name: null, email: null, code: null };
+              obj2[0] = callback;
+              obj2[1] = closure_1;
+              obj2[2] = table;
+              obj1[1] = obj2;
+              c4 = 1;
+              c3 = 1;
+              const obj3 = { value: null, done: false };
+              obj3[0] = HTTP.post(obj1);
+              return obj3;
+            }
+          } else if (arg0 === 1) {
+            c3 = 3;
+            throw body;
+          } else if (arg0 === 2) {
+            c3 = 3;
+            const obj4 = { value: null, done: true };
+            obj4[0] = body;
+            return obj4;
+          } else {
+            c3 = 3;
+            obj = { value: null, done: true };
+            obj[0] = body.body;
+            return obj;
+          }
+        } catch (tmp5) {
+          c3 = tmp;
+          throw tmp5;
+        }
+      }
+    })();
+  });
+  const _verifyUnauthenticatedReport = tmp;
+  const apply = tmp.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
   }
-  let tmp3;
-  if (null != variant) {
-    obj = { variant: arg1.variant };
-    tmp3 = obj;
+  return applyArgumentsResult;
+}
+function _getDsaExperiment() {
+  const self = this;
+  const tmp = callback(function*() {
+    if (v0 === 2) {
+      v0 = 3;
+      HermesBuiltin.throwTypeError();
+    } else if (tmp3 === 3) {
+      if (arg0 === 1) {
+        throw arg1;
+      } else if (arg0 === 2) {
+        let obj = { value: null, done: true };
+        obj[0] = arg1;
+        return obj;
+      } else {
+        return { value: "HermesInternal", done: null };
+      }
+    } else {
+      try {
+        v0 = 2;
+        if (0 === c1) {
+          if (arg0 === 1) {
+            v0 = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            v0 = 3;
+            obj = { value: null, done: true };
+            obj[0] = arg1;
+            return obj;
+          } else {
+            const HTTP = v0(outer1_2[5]).HTTP;
+            const obj1 = { url: null, rejectWithError: false };
+            obj1[0] = outer1_7.DSA_EXPERIMENT_UNAUTHENTICATED;
+            c1 = 1;
+            v0 = 1;
+            const obj2 = { value: null, done: false };
+            obj2[0] = HTTP.get(obj1);
+            return obj2;
+          }
+        } else if (arg0 === 1) {
+          v0 = 3;
+          throw arg1;
+        } else if (arg0 === 2) {
+          v0 = 3;
+          const obj3 = { value: null, done: true };
+          obj3[0] = arg1;
+          return obj3;
+        } else {
+          v0 = 3;
+          obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
+        }
+      } catch (tmp8) {
+        v0 = tmp;
+        throw tmp8;
+      }
+    }
+  });
+  const _getDsaExperiment = tmp;
+  const apply = tmp.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
   }
-  obj.query = tmp3;
-  obj.rejectWithError = false;
-  const tmp4 = yield HTTP.get(obj);
-  let body = tmp4.body;
-  if (null == body) {
-    const _JSON = JSON;
-    body = JSON.parse(tmp4.text);
+  return applyArgumentsResult;
+}
+function _fetchUrfCapabilities() {
+  const self = this;
+  const tmp = callback(function*() {
+    if (v0 === 2) {
+      v0 = 3;
+      HermesBuiltin.throwTypeError();
+    } else if (tmp3 === 3) {
+      if (arg0 === 1) {
+        throw arg1;
+      } else if (arg0 === 2) {
+        let obj = { value: null, done: true };
+        obj[0] = arg1;
+        return obj;
+      } else {
+        return { value: "HermesInternal", done: null };
+      }
+    } else {
+      try {
+        v0 = 2;
+        if (0 === c1) {
+          if (arg0 === 1) {
+            v0 = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            v0 = 3;
+            obj = { value: null, done: true };
+            obj[0] = arg1;
+            return obj;
+          } else {
+            const HTTP = v0(outer1_2[5]).HTTP;
+            const obj1 = { url: null, rejectWithError: false };
+            obj1[0] = outer1_7.DSA_CAPABILITIES;
+            c1 = 1;
+            v0 = 1;
+            const obj2 = { value: null, done: false };
+            obj2[0] = HTTP.get(obj1);
+            return obj2;
+          }
+        } else if (arg0 === 1) {
+          v0 = 3;
+          throw arg1;
+        } else if (arg0 === 2) {
+          v0 = 3;
+          const obj3 = { value: null, done: true };
+          obj3[0] = arg1;
+          return obj3;
+        } else {
+          v0 = 3;
+          obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
+        }
+      } catch (tmp8) {
+        v0 = tmp;
+        throw tmp8;
+      }
+    }
+  });
+  const _fetchUrfCapabilities = tmp;
+  const apply = tmp.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
   }
-  return body;
+  return applyArgumentsResult;
 }
-async function _submitHeadlessReport(arg0, arg1, arg2) {
-  const tmp2 = yield outer2_9(arg0, arg1);
-  const HTTP = outer2_0(outer2_2[5]).HTTP;
-  let obj = { url: outer2_7.SUBMIT_REPORT_MENU(outer2_20(arg0)), body: outer2_23(tmp2, arg0, items1), rejectWithError: false };
-  obj = { nodeRef: tmp2.root_node_id, destination: items };
-  items = ["", tmp2.success_node_id];
-  items1 = [obj];
-  yield HTTP.post(obj);
-}
-function clientCacheBucket(email) {
-  let length;
-  let num = 5381;
-  let num2 = 0;
-  let num3 = 5381;
-  if (0 < email.length) {
-    do {
-      num = (num << 5) + num + email.charCodeAt(num2) | 0;
-      num2 = num2 + 1;
-      num3 = num;
-      length = email.length;
-    } while (num2 < length);
+function _submitReportSecondLook() {
+  const self = this;
+  const tmp = callback((arg0) => {
+    let closure_0 = arg0;
+    let c2 = 0;
+    let c1 = 0;
+    return (function*(arg0, body) {
+      if (c1 === 2) {
+        c1 = 3;
+        HermesBuiltin.throwTypeError();
+      } else if (tmp3 === 3) {
+        if (arg0 === 1) {
+          throw body;
+        } else if (arg0 === 2) {
+          let obj = { value: null, done: true };
+          obj[0] = body;
+          return obj;
+        } else {
+          return { value: "HermesInternal", done: null };
+        }
+      } else {
+        try {
+          c1 = 2;
+          if (0 === table) {
+            if (arg0 === 1) {
+              c1 = 3;
+              throw body;
+            } else if (arg0 === 2) {
+              c1 = 3;
+              obj = { value: null, done: true };
+              obj[0] = body;
+              return obj;
+            } else {
+              const HTTP = callback(table[5]).HTTP;
+              const obj1 = { url: null, body: null, rejectWithError: false };
+              obj1[0] = outer1_7.SUBMIT_REPORT_SECOND_LOOK;
+              const obj2 = { token: null };
+              obj2[0] = callback;
+              obj1[1] = obj2;
+              table = 1;
+              c1 = 1;
+              const obj3 = { value: null, done: false };
+              obj3[0] = HTTP.post(obj1);
+              return obj3;
+            }
+          } else if (arg0 === 1) {
+            c1 = 3;
+            throw body;
+          } else if (arg0 === 2) {
+            c1 = 3;
+            const obj4 = { value: null, done: true };
+            obj4[0] = body;
+            return obj4;
+          } else {
+            c1 = 3;
+            obj = { value: null, done: true };
+            obj[0] = body.body;
+            return obj;
+          }
+        } catch (tmp9) {
+          c1 = tmp;
+          throw tmp9;
+        }
+      }
+    })();
+  });
+  const _submitReportSecondLook = tmp;
+  const apply = tmp.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
   }
-  return num3 >>> 0.toString(36);
-}
-async function _verifyUnauthenticatedReport(arg0, arg1, arg2, arg3) {
-  const HTTP = outer2_0(outer2_2[5]).HTTP;
-  obj = { url: outer2_7.VERIFY_UNAUTHENTICATED_REPORT(arg0), body: obj, rejectWithError: false };
-  obj = { name: arg0, email: arg1, code: arg2 };
-  return yield HTTP.post(obj).body;
-}
-async function _getDsaExperiment() {
-  const HTTP = outer2_0(outer2_2[5]).HTTP;
-  return yield HTTP.get({ url: outer2_7.DSA_EXPERIMENT_UNAUTHENTICATED, rejectWithError: false });
-}
-async function _fetchUrfCapabilities() {
-  const HTTP = outer2_0(outer2_2[5]).HTTP;
-  return yield HTTP.get({ url: outer2_7.DSA_CAPABILITIES, rejectWithError: false });
-}
-async function _submitReportSecondLook(arg0, arg1) {
-  const HTTP = outer2_0(outer2_2[5]).HTTP;
-  obj = { url: outer2_7.SUBMIT_REPORT_SECOND_LOOK, body: obj, rejectWithError: false };
-  obj = { token: arg0 };
-  return yield HTTP.post(obj).body;
+  return applyArgumentsResult;
 }
 function getUnauthenticatedReportNameSafely(name) {
   name = name.name;
-  const values = Object.values(require(7670) /* ReportNames */.UnauthenticatedReportNames);
+  const values = Object.values(require(7693) /* ReportNames */.UnauthenticatedReportNames);
   const hasItem = values.includes(name);
-  importDefault(44)(hasItem, "Invalid report type " + name.name);
+  importDefault(38)(hasItem, "Invalid report type " + name.name);
   return name;
 }
 function getReportNameSafely(name) {
   name = name.name;
-  const values = Object.values(require(7670) /* ReportNames */.ReportNames);
+  const values = Object.values(require(7693) /* ReportNames */.ReportNames);
   const hasItem = values.includes(name);
-  importDefault(44)(hasItem, "Invalid report type " + name.name);
+  importDefault(38)(hasItem, "Invalid report type " + name.name);
   return name;
 }
 function getModeratorReportNameSafely(name) {
   name = name.name;
-  const values = Object.values(require(7670) /* ReportNames */.ModeratorReportNames);
+  const values = Object.values(require(7693) /* ReportNames */.ModeratorReportNames);
   const hasItem = values.includes(name);
-  importDefault(44)(hasItem, "Invalid report type " + name.name);
+  importDefault(38)(hasItem, "Invalid report type " + name.name);
   return name;
 }
-function getModeratorReportEndpointSafely(name) {
-  const REPORT_TO_MOD = require(7672) /* set */.ReportMenuTypeSets.REPORT_TO_MOD;
-  const hasItem = REPORT_TO_MOD.has(name.name);
-  importDefault(44)(hasItem, "Invalid report type " + name.name);
-  if (name.name === require(7670) /* ReportNames */.ModeratorReportNames.MESSAGE) {
-    return closure_7.SUBMIT_MODERATOR_MESSAGE_REPORT(name.record.channel_id, name.record.id);
-  } else {
-    const _Error = Error;
-    const _HermesInternal = HermesInternal;
-    const error = new Error("Invalid report type " + name.name);
-    throw error;
-  }
-  const tmp = importDefault(44);
-}
-function genSubmitData(language, name, arr, arg3) {
+function genSubmitData(version, name, arr, email_token) {
   let channelId;
   let channel_id;
   let channel_id2;
@@ -172,16 +721,15 @@ function genSubmitData(language, name, arr, arg3) {
   let id;
   let id2;
   let id3;
-  language = language.language;
-  let obj = { channel_id: undefined, message_id: undefined, stage_instance_id: undefined, guild_id: undefined, guild_scheduled_event_id: undefined, user_id: undefined, email_token: undefined, application_id: undefined, entrypoint: undefined, widget_id: undefined };
-  obj = { version: language.version, variant: language.variant };
-  let str = "en";
-  if (null != language) {
-    str = language;
+  let obj = { version: version.version, variant: version.variant, language: null, breadcrumbs: null, elements: null };
+  let str = version.language;
+  if (str == null) {
+    str = "en";
   }
-  obj.language = str;
-  obj.breadcrumbs = arr.map((nodeRef) => nodeRef.nodeRef);
-  obj.elements = arr.reduce((arg0, arg1) => {
+  obj = { channel_id: "String", message_id: "call", stage_instance_id: "track", guild_id: "ind", guild_scheduled_event_id: "r", user_id: "accessibilityRole", email_token: "content", application_id: "url", entrypoint: "r", widget_id: "isArray" };
+  obj[2] = str;
+  obj[3] = arr.map((nodeRef) => nodeRef.nodeRef);
+  obj[4] = arr.reduce((arg0, arg1) => {
     let multiSelect;
     let textInput;
     ({ multiSelect, textInput } = arg1);
@@ -195,7 +743,7 @@ function genSubmitData(language, name, arr, arg3) {
       tmp2 = obj;
     }
     const merged1 = Object.assign(tmp2);
-    if (null == textInput) {
+    if (textInput == null) {
       textInput = {};
     }
     const entries = Object.entries(textInput);
@@ -207,98 +755,94 @@ function genSubmitData(language, name, arr, arg3) {
     })));
     return obj;
   }, {});
-  if (name.name !== require(7670) /* ReportNames */.ReportNames.MESSAGE) {
-    if (name.name !== require(7670) /* ReportNames */.ReportNames.FIRST_DM) {
-      if (name.name !== require(7670) /* ReportNames */.ReportNames.GUILD) {
-        if (name.name !== require(7670) /* ReportNames */.ReportNames.GUILD_DISCOVERY) {
-          if (name.name === require(7670) /* ReportNames */.ReportNames.GUILD_DIRECTORY_ENTRY) {
+  if (name.name !== require(7693) /* ReportNames */.ReportNames.MESSAGE) {
+    if (name.name !== tmp(7693).ReportNames.FIRST_DM) {
+      if (name.name !== tmp(7693).ReportNames.GUILD) {
+        if (name.name !== tmp(7693).ReportNames.GUILD_DISCOVERY) {
+          if (name.name === tmp(7693).ReportNames.GUILD_DIRECTORY_ENTRY) {
             obj = {};
             ({ guildId, channelId } = name.record);
             let merged = Object.assign(obj);
             let merged1 = Object.assign(obj);
-            obj["name"] = name.name;
-            obj["channel_id"] = channelId;
-            obj["guild_id"] = guildId;
+            obj.name = name.name;
+            obj.channel_id = channelId;
+            obj.guild_id = guildId;
             return obj;
-          } else if (name.name === require(7670) /* ReportNames */.ReportNames.STAGE_CHANNEL) {
+          } else if (name.name === tmp(7693).ReportNames.STAGE_CHANNEL) {
             const obj1 = {};
             ({ id: id2, guild_id: guild_id2, channel_id } = name.record);
             let merged2 = Object.assign(obj);
             const merged3 = Object.assign(obj);
-            obj1["name"] = name.name;
-            obj1["channel_id"] = channel_id;
-            obj1["guild_id"] = guild_id2;
-            obj1["stage_instance_id"] = id2;
+            obj1.name = name.name;
+            obj1.channel_id = channel_id;
+            obj1.guild_id = guild_id2;
+            obj1.stage_instance_id = id2;
             return obj1;
-          } else if (name.name === require(7670) /* ReportNames */.ReportNames.GUILD_SCHEDULED_EVENT) {
+          } else if (name.name === tmp(7693).ReportNames.GUILD_SCHEDULED_EVENT) {
             const obj2 = {};
             ({ id, guild_id } = name.record);
             const merged4 = Object.assign(obj);
             const merged5 = Object.assign(obj);
-            obj2["name"] = name.name;
-            obj2["guild_id"] = guild_id;
-            obj2["guild_scheduled_event_id"] = id;
+            obj2.name = name.name;
+            obj2.guild_id = guild_id;
+            obj2.guild_scheduled_event_id = id;
             return obj2;
           } else {
-            if (name.name === require(7670) /* ReportNames */.ReportNames.USER) {
+            if (name.name === tmp(7693).ReportNames.USER) {
               const obj3 = {};
               const merged6 = Object.assign(obj);
               const merged7 = Object.assign(obj);
-              obj3["name"] = name.name;
-              obj3["user_id"] = name.record.id;
-              obj3["guild_id"] = name.contextualGuildId;
+              obj3.name = name.name;
+              obj3.user_id = name.record.id;
+              obj3.guild_id = name.contextualGuildId;
               let tmp3 = obj3;
-            } else if (name.name === require(7670) /* ReportNames */.UnauthenticatedReportNames.USER) {
+            } else if (name.name === tmp(7693).UnauthenticatedReportNames.USER) {
               const obj4 = {};
               const merged8 = Object.assign(obj);
               const merged9 = Object.assign(obj);
-              obj4["name"] = name.name;
-              obj4["user_id"] = name.record.id;
-              obj4["guild_id"] = name.contextualGuildId;
-              obj4["email_token"] = arg3;
+              obj4.name = name.name;
+              obj4.user_id = name.record.id;
+              obj4.guild_id = name.contextualGuildId;
+              obj4.email_token = email_token;
               tmp3 = obj4;
-            } else if (name.name === require(7670) /* ReportNames */.UnauthenticatedReportNames.MESSAGE) {
+            } else if (name.name === tmp(7693).UnauthenticatedReportNames.MESSAGE) {
               const obj5 = {};
               const merged10 = Object.assign(obj);
               const merged11 = Object.assign(obj);
-              obj5["name"] = name.name;
-              obj5["message_id"] = name.record.id;
-              obj5["email_token"] = arg3;
+              obj5.name = name.name;
+              obj5.message_id = name.record.id;
+              obj5.email_token = email_token;
               tmp3 = obj5;
-            } else if (name.name === require(7670) /* ReportNames */.UnauthenticatedReportNames.GUILD) {
+            } else if (name.name === tmp(7693).UnauthenticatedReportNames.GUILD) {
               const obj6 = {};
               const merged12 = Object.assign(obj);
               const merged13 = Object.assign(obj);
-              obj6["name"] = name.name;
-              obj6["guild_id"] = name.record.id;
-              obj6["email_token"] = arg3;
+              obj6.name = name.name;
+              obj6.guild_id = name.record.id;
+              obj6.email_token = email_token;
               tmp3 = obj6;
-            } else if (name.name === require(7670) /* ReportNames */.ReportNames.APPLICATION) {
+            } else if (name.name === tmp(7693).ReportNames.APPLICATION) {
               const obj7 = {};
               const merged14 = Object.assign(obj);
               const merged15 = Object.assign(obj);
-              obj7["name"] = name.name;
-              obj7["application_id"] = name.record.id;
-              obj7["guild_id"] = name.contextualGuildId;
-              obj7["channel_id"] = name.contextualChannelId;
-              obj7["entrypoint"] = name.entrypoint;
+              obj7.name = name.name;
+              obj7.application_id = name.record.id;
+              ({ contextualGuildId: obj5.guild_id, contextualChannelId: obj5.channel_id, entrypoint: obj5.entrypoint } = name);
               tmp3 = obj7;
-            } else if (name.name === require(7670) /* ReportNames */.ReportNames.WIDGET) {
+            } else if (name.name === tmp(7693).ReportNames.WIDGET) {
               const obj8 = {};
               const merged16 = Object.assign(obj);
               const merged17 = Object.assign(obj);
-              obj8["name"] = name.name;
-              obj8["user_id"] = name.user_id;
-              obj8["widget_id"] = name.widget_id;
+              ({ name: obj4.name, user_id: obj4.user_id, widget_id: obj4.widget_id } = name);
               tmp3 = obj8;
             } else {
               tmp3 = null;
-              if (name.name === require(7670) /* ReportNames */.UnauthenticatedReportNames.MEDIA_TAKEDOWN) {
+              if (name.name === tmp(7693).UnauthenticatedReportNames.MEDIA_TAKEDOWN) {
                 const obj9 = {};
                 const merged18 = Object.assign(obj);
                 const merged19 = Object.assign(obj);
-                obj9["name"] = name.name;
-                obj9["email_token"] = arg3;
+                obj9.name = name.name;
+                obj9.email_token = email_token;
                 tmp3 = obj9;
               }
             }
@@ -309,8 +853,8 @@ function genSubmitData(language, name, arr, arg3) {
       const obj10 = {};
       const merged20 = Object.assign(obj);
       const merged21 = Object.assign(obj);
-      obj10["name"] = name.name;
-      obj10["guild_id"] = name.record.id;
+      obj10.name = name.name;
+      obj10.guild_id = name.record.id;
       return obj10;
     }
   }
@@ -318,196 +862,294 @@ function genSubmitData(language, name, arr, arg3) {
   ({ channel_id: channel_id2, id: id3 } = name.record);
   const merged22 = Object.assign(obj);
   const merged23 = Object.assign(obj);
-  obj11["name"] = name.name;
-  obj11["channel_id"] = channel_id2;
-  obj11["message_id"] = id3;
+  obj11.name = name.name;
+  obj11.channel_id = channel_id2;
+  obj11.message_id = id3;
   return obj11;
 }
-({ AnalyticEvents: closure_6, Endpoints: closure_7 } = ME);
-let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/in_app_reports/ReportUtils.tsx");
+({ AnalyticEvents: closure_6, Endpoints: error } = ME);
+let result = require("getUserAgnosticState").fileFinishedImporting("modules/in_app_reports/ReportUtils.tsx");
 
 export { getReportMenu };
-export const getReportMenuForModeratorReport = function getReportMenuForModeratorReport(name, arg1) {
-  return _getReportMenuForModeratorReport(...arguments);
+export const getReportMenuForModeratorReport = function getReportMenuForModeratorReport(closure_0, closure_1) {
+  const self = this;
+  const apply = _getReportMenuForModeratorReport.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
 };
 export const getUnauthenticatedReportMenu = function getUnauthenticatedReportMenu() {
-  return _getUnauthenticatedReportMenu(...arguments);
+  const self = this;
+  const apply = _getUnauthenticatedReportMenu.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
 };
 export const submitHeadlessReport = function submitHeadlessReport(arg0, arg1) {
-  return _submitHeadlessReport(...arguments);
+  const self = this;
+  const apply = _submitHeadlessReport.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
 };
 export const submitReport = function submitReport(language, name, arr) {
+  let channel_id;
+  let id;
   if (store.get("iar_skip_api_report_submit")) {
     let resolved = Promise.resolve();
   } else {
-    const REPORT_TO_MOD = require(7672) /* set */.ReportMenuTypeSets.REPORT_TO_MOD;
+    const REPORT_TO_MOD = require(7695) /* set */.ReportMenuTypeSets.REPORT_TO_MOD;
     if (REPORT_TO_MOD.has(name.name)) {
-      resolved = (function submitModeratorReport(language, name, arr) {
-        const tmp = (function genModeratorSubmitdata(language, name, arr) {
+      let str2 = language.language;
+      let obj = { version: null, variant: null, language: null, breadcrumbs: null, elements: null };
+      ({ version: obj3[0], variant: obj3[1] } = language);
+      if (str2 == null) {
+        str2 = "en";
+      }
+      obj[2] = str2;
+      obj[3] = arr.map((nodeRef) => nodeRef.nodeRef);
+      obj[4] = arr.reduce((arg0, arg1) => {
+        let multiSelect;
+        let textInput;
+        ({ multiSelect, textInput } = arg1);
+        let obj = {};
+        const merged = Object.assign(arg0);
+        let tmp2 = null != multiSelect;
+        if (tmp2) {
+          obj = {};
+          const _Object = Object;
+          obj[multiSelect.name] = Object.keys(multiSelect.state);
+          tmp2 = obj;
+        }
+        const merged1 = Object.assign(tmp2);
+        if (textInput == null) {
+          textInput = {};
+        }
+        const entries = Object.entries(textInput);
+        const merged2 = Object.assign(Object.fromEntries(entries.map((arg0) => {
+          let tmp;
+          [tmp, ] = arg0;
+          const items = [tmp, tmp2];
+          return items;
+        })));
+        return obj;
+      }, {});
+      let tmp15 = null;
+      if (name.name === tmp4(7693).ModeratorReportNames.MESSAGE) {
+        obj = { channel_id: "Array", message_id: "call", guild_id: "string" };
+        const obj1 = {};
+        ({ channel_id, id } = name.record);
+        let merged = Object.assign(obj);
+        let merged1 = Object.assign(obj);
+        obj1.name = name.name;
+        obj1.channel_id = channel_id;
+        obj1.message_id = id;
+        tmp15 = obj1;
+      }
+      require = tmp15;
+      const HTTP2 = tmp4(530).HTTP;
+      const REPORT_TO_MOD2 = tmp4(7695).ReportMenuTypeSets.REPORT_TO_MOD;
+      const _HermesInternal2 = HermesInternal;
+      const hasItem = REPORT_TO_MOD2.has(name.name);
+      importDefault(38)(hasItem, "Invalid report type " + name.name);
+      if (name.name === tmp4(7693).ModeratorReportNames.MESSAGE) {
+        const obj2 = { url: null, body: null, rejectWithError: false };
+        obj2[0] = closure_7.SUBMIT_MODERATOR_MESSAGE_REPORT(name.record.channel_id, name.record.id);
+        obj2[1] = tmp15;
+        resolved = HTTP2.post(obj2).then((arg0) => {
+          let obj = outer1_1(outer1_2[7]);
+          obj.showSuccessToast(outer1_8.REPORT_TO_MOD_SUCCESS);
           let channel_id;
-          let id;
-          language = language.language;
-          let obj = { channel_id: undefined, message_id: undefined, guild_id: undefined };
-          obj = { version: language.version, variant: language.variant };
-          let str = "en";
-          if (null != language) {
-            str = language;
+          if (closure_0 != null) {
+            channel_id = tmp4.channel_id;
           }
-          obj.language = str;
-          obj.breadcrumbs = arr.map((nodeRef) => nodeRef.nodeRef);
-          obj.elements = arr.reduce((arg0, arg1) => {
-            let multiSelect;
-            let textInput;
-            ({ multiSelect, textInput } = arg1);
-            let obj = {};
-            const merged = Object.assign(arg0);
-            let tmp2 = null != multiSelect;
-            if (tmp2) {
-              obj = {};
-              const _Object = Object;
-              obj[multiSelect.name] = Object.keys(multiSelect.state);
-              tmp2 = obj;
-            }
-            const merged1 = Object.assign(tmp2);
-            if (null == textInput) {
-              textInput = {};
-            }
-            const entries = Object.entries(textInput);
-            const merged2 = Object.assign(Object.fromEntries(entries.map((arg0) => {
-              let tmp;
-              [tmp, ] = arg0;
-              const items = [tmp, tmp2];
-              return items;
-            })));
-            return obj;
-          }, {});
-          if (name.name === outer2_0(outer2_2[10]).ModeratorReportNames.MESSAGE) {
-            obj = {};
-            ({ channel_id, id } = name.record);
-            let merged = Object.assign(obj);
-            let merged1 = Object.assign(obj);
-            obj["name"] = name.name;
-            obj["channel_id"] = channel_id;
-            obj["message_id"] = id;
-            return obj;
-          } else {
-            return null;
-          }
-        })(language, name, arr);
-        let closure_0 = tmp;
-        const HTTP = outer1_0(outer1_2[5]).HTTP;
-        let obj = { url: outer1_22(name), body: tmp, rejectWithError: false };
-        return HTTP.post({ url: outer1_22(name), body: tmp, rejectWithError: false }).then((arg0) => {
-          let obj = outer2_1(outer2_2[7]);
-          obj.showSuccessToast(outer2_8.REPORT_TO_MOD_SUCCESS);
-          let channel_id;
-          if (null != tmp) {
-            channel_id = tmp.channel_id;
-          }
-          let tmp4 = null != channel_id;
-          if (tmp4) {
+          let tmp6 = null != channel_id;
+          if (tmp6) {
             let message_id;
-            if (null != tmp) {
-              message_id = tmp.message_id;
+            if (tmp4 != null) {
+              message_id = tmp4.message_id;
             }
-            tmp4 = null != message_id;
+            tmp6 = null != message_id;
           }
-          if (tmp4) {
-            obj = { type: "REPORT_TO_MOD_REPORT_MESSAGE_SUCCESS" };
-            ({ channel_id: obj3.channelId, message_id: obj3.messageId } = tmp);
-            outer2_1(outer2_2[8]).dispatch(obj);
-            const obj2 = outer2_1(outer2_2[8]);
+          if (tmp6) {
+            obj = { type: "REPORT_TO_MOD_REPORT_MESSAGE_SUCCESS", channelId: null, messageId: null };
+            ({ channel_id: obj3[1], message_id: obj3[2] } = tmp4);
+            outer1_1(outer1_2[8]).dispatch(obj);
+            const tmpResult = outer1_1(outer1_2[8]);
           }
           return arg0;
         });
-      })(language, name, arr);
+        const postResult = HTTP2.post(obj2);
+      } else {
+        const _Error = Error;
+        const _HermesInternal3 = HermesInternal;
+        const error = new Error("Invalid report type " + name.name);
+        throw error;
+      }
+      const tmp23 = importDefault(38);
     } else {
-      let HTTP = require(507) /* _isNativeReflectConstruct */.HTTP;
-      let obj = { url: closure_7.SUBMIT_REPORT_MENU(getReportNameSafely(name)), body: genSubmitData(language, name, arr), rejectWithError: false };
+      const HTTP = tmp4(530).HTTP;
+      obj = { url: null, body: null, rejectWithError: false };
+      name = name.name;
+      let _Object = Object;
+      const values = Object.values(tmp4(7693).ReportNames);
+      const _HermesInternal = HermesInternal;
+      const hasItem1 = values.includes(name);
+      importDefault(38)(hasItem1, "Invalid report type " + name.name);
+      obj[0] = closure_7.SUBMIT_REPORT_MENU(name);
+      obj[1] = genSubmitData(language, name, arr);
       resolved = HTTP.post(obj);
+      const tmp8 = importDefault(38);
     }
   }
   return resolved;
 };
-export const submitUnauthenticatedReport = function submitUnauthenticatedReport(language, name, arr) {
+export const submitUnauthenticatedReport = function submitUnauthenticatedReport(version, name, arr, email_token) {
   if (store.get("iar_skip_api_report_submit")) {
     return Promise.resolve();
   } else {
-    const HTTP = require(507) /* _isNativeReflectConstruct */.HTTP;
-    const obj = { url: closure_7.SUBMIT_UNAUTHENTICATED_REPORT_MENU(getUnauthenticatedReportNameSafely(name)), body: genSubmitData(language, name, arr, arg3), rejectWithError: true };
+    name = name.name;
+    const _Object = Object;
+    const values = Object.values(require(7693) /* ReportNames */.UnauthenticatedReportNames);
+    const _HermesInternal = HermesInternal;
+    const hasItem = values.includes(name);
+    importDefault(38)(hasItem, "Invalid report type " + name.name);
+    const HTTP = require(530) /* sendRequest */.HTTP;
+    const obj = { url: null, body: null, rejectWithError: true };
+    obj[0] = closure_7.SUBMIT_UNAUTHENTICATED_REPORT_MENU(name);
+    obj[1] = genSubmitData(version, name, arr, email_token);
     return HTTP.post(obj);
   }
 };
 export const sendUnauthenticatedReportPincode = function sendUnauthenticatedReportPincode(name, email) {
-  const HTTP = require(507) /* _isNativeReflectConstruct */.HTTP;
-  const obj = {};
+  let length;
+  const HTTP = require(530) /* sendRequest */.HTTP;
+  let num = 5381;
+  let num2 = 0;
+  let num3 = 5381;
   const result = closure_7.SEND_UNAUTHENTICATED_REPORT_PINCODE(name);
-  obj.url = "" + result + "?b=" + clientCacheBucket(email);
-  obj.body = { name, email };
-  obj.rejectWithError = false;
-  obj.failImmediatelyWhenRateLimited = true;
+  if (0 < email.length) {
+    do {
+      num = (num << 5) + num + email.charCodeAt(num2) | 0;
+      num2 = num2 + 1;
+      num3 = num;
+      length = email.length;
+    } while (num2 < length);
+  }
+  obj = { url: "" + result + "?b=" + str.toString(36), body: obj, rejectWithError: false, failImmediatelyWhenRateLimited: true };
+  obj = { name, email };
   return HTTP.post(obj);
 };
 export const verifyUnauthenticatedReport = function verifyUnauthenticatedReport() {
-  return _verifyUnauthenticatedReport(...arguments);
+  const self = this;
+  const apply = _verifyUnauthenticatedReport.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
 };
 export const getDsaExperiment = function getDsaExperiment() {
-  return _getDsaExperiment(...arguments);
+  const self = this;
+  const apply = _getDsaExperiment.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
 };
 export const fetchUrfCapabilities = function fetchUrfCapabilities() {
-  return _fetchUrfCapabilities(...arguments);
+  const self = this;
+  const apply = _fetchUrfCapabilities.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
 };
 export const submitReportSecondLook = function submitReportSecondLook() {
-  return _submitReportSecondLook(...arguments);
+  const self = this;
+  const apply = _submitReportSecondLook.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
 };
 export { getUnauthenticatedReportNameSafely };
 export { getReportNameSafely };
 export { getModeratorReportNameSafely };
-export { getModeratorReportEndpointSafely };
-export const trackCloseReportModalAnalytics = function trackCloseReportModalAnalytics(closure_0, c12, first) {
-  let obj = importDefault(4359);
-  obj = { report_type: closure_0.name, report_id: first, navigation_history: c12 };
-  if (closure_0.name === require(7670) /* ReportNames */.ReportNames.MESSAGE) {
-    let id = closure_0.record.id;
+export const getModeratorReportEndpointSafely = function getModeratorReportEndpointSafely(name) {
+  const REPORT_TO_MOD = require(7695) /* set */.ReportMenuTypeSets.REPORT_TO_MOD;
+  const hasItem = REPORT_TO_MOD.has(name.name);
+  importDefault(38)(hasItem, "Invalid report type " + name.name);
+  if (name.name === require(7693) /* ReportNames */.ModeratorReportNames.MESSAGE) {
+    return closure_7.SUBMIT_MODERATOR_MESSAGE_REPORT(name.record.channel_id, name.record.id);
+  } else {
+    const _Error = Error;
+    const _HermesInternal = HermesInternal;
+    const error = new Error("Invalid report type " + name.name);
+    throw error;
   }
-  obj.message_id = id;
+  const tmp = importDefault(38);
+};
+export const trackCloseReportModalAnalytics = function trackCloseReportModalAnalytics(_onSubmit, c12, first) {
+  let obj = importDefault(4384);
+  obj = { report_type: _onSubmit.name, report_id: first, navigation_history: c12, message_id: null, stage_instance_id: null, guild_scheduled_event_id: null, guild_id: null, channel_id: null, application_id: null };
+  if (_onSubmit.name === require(7693) /* ReportNames */.ReportNames.MESSAGE) {
+    let id = _onSubmit.record.id;
+  }
+  obj[3] = id;
   id = undefined;
-  if (closure_0.name === require(7670) /* ReportNames */.ReportNames.STAGE_CHANNEL) {
-    id = closure_0.record.id;
+  if (_onSubmit.name === require(7693) /* ReportNames */.ReportNames.STAGE_CHANNEL) {
+    id = _onSubmit.record.id;
   }
-  obj.stage_instance_id = id;
+  obj[4] = id;
   let id1;
-  if (closure_0.name === require(7670) /* ReportNames */.ReportNames.GUILD_SCHEDULED_EVENT) {
-    id1 = closure_0.record.id;
+  if (_onSubmit.name === require(7693) /* ReportNames */.ReportNames.GUILD_SCHEDULED_EVENT) {
+    id1 = _onSubmit.record.id;
   }
-  obj.guild_scheduled_event_id = id1;
-  if (closure_0.name !== require(7670) /* ReportNames */.ReportNames.GUILD) {
-    if (closure_0.name !== require(7670) /* ReportNames */.ReportNames.GUILD_DISCOVERY) {
-      if (closure_0.name === require(7670) /* ReportNames */.ReportNames.GUILD_DIRECTORY_ENTRY) {
-        let id2 = closure_0.record.guildId;
-      } else if (closure_0.name === require(7670) /* ReportNames */.ReportNames.GUILD_SCHEDULED_EVENT) {
-        id2 = closure_0.record.guild_id;
+  obj[5] = id1;
+  if (_onSubmit.name !== require(7693) /* ReportNames */.ReportNames.GUILD) {
+    if (_onSubmit.name !== tmp2(7693).ReportNames.GUILD_DISCOVERY) {
+      if (_onSubmit.name === tmp2(7693).ReportNames.GUILD_DIRECTORY_ENTRY) {
+        let id2 = _onSubmit.record.guildId;
+      } else if (_onSubmit.name === tmp2(7693).ReportNames.GUILD_SCHEDULED_EVENT) {
+        id2 = _onSubmit.record.guild_id;
       }
     }
-    obj.guild_id = id2;
-    if (closure_0.name === require(7670) /* ReportNames */.ReportNames.GUILD_SCHEDULED_EVENT) {
-      let channelId = closure_0.record.channel_id;
-    } else if (closure_0.name === require(7670) /* ReportNames */.ReportNames.GUILD_DIRECTORY_ENTRY) {
-      channelId = closure_0.record.channelId;
+    obj[6] = id2;
+    if (_onSubmit.name === tmp2(7693).ReportNames.GUILD_SCHEDULED_EVENT) {
+      let channelId = _onSubmit.record.channel_id;
+    } else if (_onSubmit.name === tmp2(7693).ReportNames.GUILD_DIRECTORY_ENTRY) {
+      channelId = _onSubmit.record.channelId;
     }
-    obj.channel_id = channelId;
+    obj[7] = channelId;
     id2 = undefined;
-    if (closure_0.name === require(7670) /* ReportNames */.ReportNames.APPLICATION) {
-      id2 = closure_0.record.id;
+    if (_onSubmit.name === tmp2(7693).ReportNames.APPLICATION) {
+      id2 = _onSubmit.record.id;
     }
-    obj.application_id = id2;
+    obj[8] = id2;
     obj.trackWithMetadata(constants.IAR_MODAL_CLOSE, obj);
   }
-  id2 = closure_0.record.id;
+  id2 = _onSubmit.record.id;
 };
-export const showInAppReportsFeedbackModal = function showInAppReportsFeedbackModal(closure_0, first) {
-  let obj = importDefault(686);
-  obj = { type: "IN_APP_REPORTS_SHOW_FEEDBACK", reportId: first, reportType: closure_0.name };
+export const showInAppReportsFeedbackModal = function showInAppReportsFeedbackModal(name, reportId) {
+  let obj = importDefault(709);
+  obj = { type: "IN_APP_REPORTS_SHOW_FEEDBACK", reportId, reportType: name.name };
   obj.dispatch(obj);
 };
 export const areRequiredElementsUnfilled = function areRequiredElementsUnfilled(arg0, textInput) {
@@ -524,65 +1166,63 @@ export const areRequiredElementsUnfilled = function areRequiredElementsUnfilled(
     let tmp = true === should_submit_data.should_submit_data;
     if (tmp) {
       let tmp4;
-      if (null != textInput) {
-        tmp4 = textInput[should_submit_data.name];
+      if (textInput != null) {
+        tmp4 = tmp2[should_submit_data.name];
       }
-      let tmp6 = null == tmp4;
-      if (!tmp6) {
+      let tmp5 = null == tmp4;
+      if (!tmp5) {
         let value;
-        if (null != textInput) {
-          value = textInput[should_submit_data.name].value;
+        if (tmp2 != null) {
+          value = tmp2[should_submit_data.name].value;
         }
-        tmp6 = "" === value;
+        tmp5 = "" === value;
       }
-      if (!tmp6) {
-        let isValid = null != textInput;
-        if (isValid) {
-          isValid = null != tmp13;
-          const tmp11 = textInput[should_submit_data.name];
+      if (!tmp5) {
+        let isValid;
+        if (tmp2 != null) {
+          if (tmp2[should_submit_data.name] != null) {
+            isValid = tmp8.isValid;
+          }
         }
-        if (isValid) {
-          isValid = tmp11.isValid;
-        }
-        tmp6 = !isValid;
+        tmp5 = !isValid;
       }
-      tmp = tmp6;
+      tmp = tmp5;
     }
     return tmp;
   }) || dropdownElements.some((should_submit_data) => {
     let tmp = true === should_submit_data.should_submit_data;
     if (tmp) {
       let tmp4;
-      if (null != textInput) {
-        tmp4 = textInput[should_submit_data.name];
+      if (textInput != null) {
+        tmp4 = tmp2[should_submit_data.name];
       }
-      let tmp6 = null == tmp4;
-      if (!tmp6) {
+      let tmp5 = null == tmp4;
+      if (!tmp5) {
         let value;
-        if (null != textInput) {
-          value = textInput[should_submit_data.name].value;
+        if (tmp2 != null) {
+          value = tmp2[should_submit_data.name].value;
         }
-        tmp6 = "" === value;
+        tmp5 = "" === value;
       }
-      tmp = tmp6;
+      tmp = tmp5;
     }
     return tmp;
   });
   if (!someResult) {
     let should_submit_data;
-    if (null != countrySelectElement) {
+    if (countrySelectElement != null) {
       should_submit_data = countrySelectElement.should_submit_data;
     }
     let tmp4 = true === should_submit_data;
     if (tmp4) {
       let tmp5;
-      if (null != textInput) {
+      if (textInput != null) {
         tmp5 = textInput[countrySelectElement.name];
       }
       let tmp6 = null == tmp5;
       if (!tmp6) {
         let value;
-        if (null != textInput) {
+        if (textInput != null) {
           value = textInput[countrySelectElement.name].value;
         }
         tmp6 = "" === value;
@@ -596,25 +1236,25 @@ export const areRequiredElementsUnfilled = function areRequiredElementsUnfilled(
       let tmp = true === should_submit_data.should_submit_data;
       if (tmp) {
         let tmp4;
-        if (null != textInput) {
-          tmp4 = textInput[should_submit_data.name];
+        if (textInput != null) {
+          tmp4 = tmp2[should_submit_data.name];
         }
-        let tmp6 = null == tmp4;
-        if (!tmp6) {
+        let tmp5 = null == tmp4;
+        if (!tmp5) {
           let value;
-          if (null != textInput) {
-            value = textInput[should_submit_data.name].value;
+          if (tmp2 != null) {
+            value = tmp2[should_submit_data.name].value;
           }
-          tmp6 = "" === value;
+          tmp5 = "" === value;
         }
-        tmp = tmp6;
+        tmp = tmp5;
       }
       return tmp;
     });
   }
   if (!someResult) {
     let should_submit_data1;
-    if (null != multiSelectElement) {
+    if (multiSelectElement != null) {
       should_submit_data1 = multiSelectElement.should_submit_data;
     }
     let tmp10 = true === should_submit_data1;
@@ -630,31 +1270,29 @@ export const areRequiredElementsUnfilled = function areRequiredElementsUnfilled(
   }
   if (!someResult) {
     let should_submit_data2;
-    if (null != contentUrlInputElement) {
+    if (contentUrlInputElement != null) {
       should_submit_data2 = contentUrlInputElement.should_submit_data;
     }
     let tmp15 = true === should_submit_data2;
     if (tmp15) {
       let tmp16;
-      if (null != textInput) {
+      if (textInput != null) {
         tmp16 = textInput[contentUrlInputElement.name];
       }
       let tmp17 = null == tmp16;
       if (!tmp17) {
         value = undefined;
-        if (null != textInput) {
+        if (textInput != null) {
           value = textInput[contentUrlInputElement.name].value;
         }
         tmp17 = "" === value;
       }
       if (!tmp17) {
-        let isValid = null != textInput;
-        if (isValid) {
-          isValid = null != tmp20;
-          const tmp19 = textInput[contentUrlInputElement.name];
-        }
-        if (isValid) {
-          isValid = tmp19.isValid;
+        let isValid;
+        if (textInput != null) {
+          if (textInput[contentUrlInputElement.name] != null) {
+            isValid = tmp20.isValid;
+          }
         }
         tmp17 = !isValid;
       }

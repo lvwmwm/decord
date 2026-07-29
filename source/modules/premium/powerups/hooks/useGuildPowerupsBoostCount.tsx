@@ -1,69 +1,67 @@
-// Module ID: 4072
-// Function ID: 33715
+// Module ID: 4096
+// Function ID: 4097
 // Name: useGuildAppliedBoostCount
-// Dependencies: [31, 1838, 4073, 4052, 4076, 566, 2]
+// Dependencies: [19, 1862, 4097, 4076, 4100, 589, 2]
 // Exports: default, getGuildPowerupsBoostCount
 
-// Module 4072 (useGuildAppliedBoostCount)
-import result from "result";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_5 from "_isNativeReflectConstruct";
+// Module 4096 (useGuildAppliedBoostCount)
+import noop from "noop";
+import createGuildRecordFromRust from "createGuildRecordFromRust";
+import handleGameServerInstanceCreated from "handleGameServerInstanceCreated";
+import calculateAppliedBoosts from "calculateAppliedBoosts";
 
 const require = arg1;
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/premium/powerups/hooks/useGuildPowerupsBoostCount.tsx");
+const result = require("handleGameServerInstanceCreated").fileFinishedImporting("modules/premium/powerups/hooks/useGuildPowerupsBoostCount.tsx");
 
 export default function useGuildAppliedBoostCount(guildId) {
   const _require = guildId;
-  const items = [stateFromStores1];
-  const stateFromStores = _require(num[5]).useStateFromStores(items, () => {
-    const guild = stateFromStores1.getGuild(closure_0);
+  const items = [stateFromStores];
+  num = _require(num[5]).useStateFromStores(items, () => {
+    const guild = stateFromStores.getGuild(closure_0);
     let prop;
-    if (null != guild) {
+    if (guild != null) {
       prop = guild.premiumSubscriberCount;
     }
     return prop;
   });
-  num = 0;
-  if (null != stateFromStores) {
-    num = stateFromStores;
+  if (num == null) {
+    num = 0;
   }
-  let obj = _require(num[5]);
-  const gameServerEnabled = _require(num[4]).useGameServerEnabled(guildId, "GuildPowerupsBoostCount");
-  const obj2 = _require(num[4]);
-  const items1 = [closure_5];
-  stateFromStores1 = _require(num[5]).useStateFromStores(items1, () => {
+  let tmpResult = tmp(tmp2[4]);
+  const gameServerEnabled = tmpResult.useGameServerEnabled(guildId, "GuildPowerupsBoostCount");
+  tmpResult = tmp(tmp2[5]);
+  const items1 = [calculateAppliedBoosts];
+  stateFromStores = tmpResult.useStateFromStores(items1, () => {
     const stateForGuild = outer1_5.getStateForGuild(closure_0);
     let appliedBoosts;
-    if (null != stateForGuild) {
+    if (stateForGuild != null) {
       appliedBoosts = stateForGuild.appliedBoosts;
     }
     return appliedBoosts;
   });
-  const obj3 = _require(num[5]);
-  const items2 = [stateFromStores2];
-  stateFromStores2 = _require(num[5]).useStateFromStores(items2, () => {
-    const stateForGuild = stateFromStores2.getStateForGuild(closure_0);
+  let obj = _require(num[5]);
+  const items2 = [stateFromStores1];
+  stateFromStores1 = _require(num[5]).useStateFromStores(items2, () => {
+    const stateForGuild = stateFromStores1.getStateForGuild(closure_0);
     let appliedBoosts;
-    if (null != stateForGuild) {
+    if (stateForGuild != null) {
       appliedBoosts = stateForGuild.appliedBoosts;
     }
     return appliedBoosts;
   });
-  const items3 = [num, stateFromStores1, stateFromStores2, gameServerEnabled];
+  const items3 = [num, stateFromStores, stateFromStores1, gameServerEnabled];
   return gameServerEnabled.useMemo(() => {
-    if (null != stateFromStores1) {
-      let num2 = 0;
-      if (null != stateFromStores2) {
-        num2 = stateFromStores2;
+    if (null != stateFromStores) {
+      let num = stateFromStores1;
+      if (stateFromStores1 == null) {
+        num = 0;
       }
-      const sum = stateFromStores1 + num2;
-      let obj = {};
+      const sum = tmp + num;
+      let obj = { available: null, spent: null, total: null, isLoading: false };
       const _Math = Math;
-      obj.available = Math.max(0, 0 - sum);
-      obj.spent = sum;
-      obj.total = 0;
-      obj.isLoading = false;
+      obj[0] = Math.max(0, num - sum);
+      obj[1] = sum;
+      obj[2] = num;
       return obj;
     }
     obj = { available: 0, spent: 0, total: num, isLoading: true };
@@ -72,38 +70,35 @@ export default function useGuildAppliedBoostCount(guildId) {
 };
 export const getGuildPowerupsBoostCount = function getGuildPowerupsBoostCount(id) {
   guild = guild.getGuild(id);
-  let prop;
-  if (null != guild) {
-    prop = guild.premiumSubscriberCount;
+  let total;
+  if (guild != null) {
+    total = guild.premiumSubscriberCount;
   }
-  let num = 0;
-  if (null != prop) {
-    num = prop;
+  if (total == null) {
+    total = 0;
   }
-  let obj = require(4076) /* items */;
+  let obj = require(4100) /* experiment */;
   const gameServerEnabled = obj.getGameServerEnabled(id, "GuildPowerupsBoostCount");
   const stateForGuild = stateForGuild2.getStateForGuild(id);
   let appliedBoosts;
-  if (null != stateForGuild) {
+  if (stateForGuild != null) {
     appliedBoosts = stateForGuild.appliedBoosts;
   }
   const stateForGuild1 = stateForGuild.getStateForGuild(id);
-  if (null != stateForGuild1) {
-    appliedBoosts = stateForGuild1.appliedBoosts;
+  if (stateForGuild1 != null) {
+    let num2 = stateForGuild1.appliedBoosts;
   }
   if (null != appliedBoosts) {
-    let num2 = 0;
-    if (null != appliedBoosts) {
-      num2 = appliedBoosts;
+    if (num2 == null) {
+      num2 = 0;
     }
     const sum = appliedBoosts + num2;
-    obj = {};
+    obj = { available: null, spent: null, total: null };
     const _Math = Math;
-    obj.available = Math.max(0, num - sum);
-    obj.spent = sum;
-    obj.total = num;
+    obj[0] = Math.max(0, total - sum);
+    obj[1] = sum;
+    obj[2] = total;
     return obj;
   }
-  obj = { available: 0, spent: 0, total: num };
-  return obj;
+  return { available: 0, spent: 0, total };
 };

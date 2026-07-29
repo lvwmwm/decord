@@ -1,34 +1,21 @@
-// Module ID: 4209
-// Function ID: 35528
-// Name: convertToTransitionState
-// Dependencies: [57, 1850, 4210, 653, 3838, 2]
-// Exports: calculateProgressPercentage, convertComboId, getCombinedProgress, getComboId, isUserEntitledToLibraryApplication, shouldShareApplicationActivity, shouldShowGameInLibrary
+// Module ID: 4233
+// Function ID: 4234
+// Name: getComboId
+// Dependencies: [32, 1874, 4234, 676, 3862, 2]
+// Exports: calculateProgressPercentage, convertComboId, convertToTransitionState, getCombinedProgress, getComboId, isUserEntitledToLibraryApplication, shouldShareApplicationActivity, shouldShowGameInLibrary
 
-// Module 4209 (convertToTransitionState)
+// Module 4233 (getComboId)
 import _slicedToArray from "_slicedToArray";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_4 from "_isNativeReflectConstruct";
+import mergeGuildAvatar from "mergeGuildAvatar";
+import addSku from "addSku";
 import ME from "ME";
 
-let closure_5;
+let c5;
 let closure_6;
-let closure_7;
+let error;
 const require = arg1;
-function convertToTransitionState(type) {
-  let tmp = null;
-  if (null != type) {
-    if (type.type !== constants2.INSTALLING) {
-      if (type.type !== constants2.UPDATING) {
-        let tmp5 = null;
-      }
-      tmp = tmp5;
-    }
-    tmp5 = type;
-  }
-  return tmp;
-}
-({ LibraryApplicationFlags: closure_5, LocalDispatchApplicationStates: closure_6, StatusTypes: closure_7 } = ME);
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("utils/LibraryApplicationUtils.tsx");
+({ LibraryApplicationFlags: c5, LocalDispatchApplicationStates: closure_6, StatusTypes: error } = ME);
+const result = require("addSku").fileFinishedImporting("utils/LibraryApplicationUtils.tsx");
 
 export const getComboId = function getComboId(arg0, arg1) {
   return "" + arg0 + ":" + arg1;
@@ -37,17 +24,17 @@ export const convertComboId = function convertComboId(str) {
   const tmp = callback(str.split(":"), 2);
   return { applicationId: tmp[0], branchId: tmp[1] };
 };
-export const shouldShareApplicationActivity = function shouldShareApplicationActivity(applicationId, closure_12) {
-  const ShowCurrentGame = require(3838) /* explicitContentFromProto */.ShowCurrentGame;
+export const shouldShareApplicationActivity = function shouldShareApplicationActivity(application_id, closure_7) {
+  const ShowCurrentGame = require(3862) /* explicitContentFromProto */.ShowCurrentGame;
   if (ShowCurrentGame.getSetting()) {
-    const StatusSetting = require(3838) /* explicitContentFromProto */.StatusSetting;
+    const StatusSetting = require(3862) /* explicitContentFromProto */.StatusSetting;
     if (StatusSetting.getSetting() !== constants3.INVISIBLE) {
-      const activeLibraryApplication = closure_12.getActiveLibraryApplication(applicationId);
-      let tmp6 = null == activeLibraryApplication;
-      if (!tmp6) {
-        tmp6 = !activeLibraryApplication.hasFlag(constants.PRIVATE);
+      const activeLibraryApplication = closure_7.getActiveLibraryApplication(application_id);
+      let tmp7 = null == activeLibraryApplication;
+      if (!tmp7) {
+        tmp7 = !activeLibraryApplication.hasFlag(constants.PRIVATE);
       }
-      return tmp6;
+      return tmp7;
     }
   }
   return false;
@@ -62,8 +49,9 @@ export const calculateProgressPercentage = function calculateProgressPercentage(
 export const shouldShowGameInLibrary = function shouldShowGameInLibrary(arg0, hasFlag, enabled) {
   let tmp = null != hasFlag;
   if (tmp) {
-    let tmp3 = !enabled.enabled;
-    if (!tmp3) {
+    enabled = enabled.enabled;
+    let tmp3 = !enabled;
+    if (enabled) {
       tmp3 = !hasFlag.hasFlag(constants.PRIVATE);
     }
     if (tmp3) {
@@ -73,30 +61,50 @@ export const shouldShowGameInLibrary = function shouldShowGameInLibrary(arg0, ha
   }
   return tmp;
 };
-export { convertToTransitionState };
+export const convertToTransitionState = function convertToTransitionState(type) {
+  let tmp = null;
+  if (null != type) {
+    if (type.type !== constants2.INSTALLING) {
+      if (type.type !== tmp2.UPDATING) {
+        let tmp3 = null;
+      }
+      tmp = tmp3;
+    }
+    tmp3 = type;
+  }
+  return tmp;
+};
 export const getCombinedProgress = function getCombinedProgress(arr) {
   return arr.reduce((total, type) => {
-    const tmp = outer1_8(type);
-    let tmp2 = total;
+    let tmp = null;
+    if (null != type) {
+      if (type.type !== constants.INSTALLING) {
+        if (type.type !== tmp2.UPDATING) {
+          let tmp3 = null;
+        }
+        tmp = tmp3;
+      }
+      tmp3 = type;
+    }
+    let tmp4 = total;
     if (null != tmp) {
-      tmp2 = total;
-      if (type.type !== outer1_6.UP_TO_DATE) {
-        const obj = {};
+      tmp4 = total;
+      if (type.type !== constants.UP_TO_DATE) {
+        const obj = { total: null, progress: null };
         const _Number = Number;
-        obj.total = total.total + Number(tmp.total);
+        obj[0] = total.total + Number(tmp.total);
         const _Number2 = Number;
-        obj.progress = total.progress + Number(tmp.progress);
-        tmp2 = obj;
+        obj[1] = total.progress + Number(tmp.progress);
+        tmp4 = obj;
       }
     }
-    return tmp2;
+    return tmp4;
   }, { total: 0, progress: 0 });
 };
 export const isUserEntitledToLibraryApplication = function isUserEntitledToLibraryApplication(libraryApplication) {
-  const tmp = !libraryApplication.isDiscordApplication();
-  let isEntitledResult = !tmp;
-  if (!tmp) {
-    isEntitledResult = libraryApplication.isEntitled(currentUser.getCurrentUser(), closure_4);
+  let isEntitledResult = libraryApplication.isDiscordApplication();
+  if (isEntitledResult) {
+    isEntitledResult = libraryApplication.isEntitled(currentUser.getCurrentUser(), addSku);
   }
   return isEntitledResult;
 };

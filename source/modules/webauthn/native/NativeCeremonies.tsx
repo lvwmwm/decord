@@ -1,69 +1,138 @@
-// Module ID: 9173
-// Function ID: 71895
+// Module ID: 9197
+// Function ID: 9198
 // Name: _promptForRegisterCredential
-// Dependencies: [5, 27, 3, 5627, 1212, 477, 9174, 9175, 1553, 2]
+// Dependencies: [5, 17, 3, 5645, 1236, 500, 9198, 9199, 1577, 2]
 
-// Module 9173 (_promptForRegisterCredential)
+// Module 9197 (_promptForRegisterCredential)
 import set from "set";
 import { NativeModules } from "get ActivityIndicator";
-import importDefaultResult from "_fetchWebAuthnConditionalChallenge";
 
 const require = arg1;
 function _promptForRegisterCredential() {
-  // CreateGeneratorClosureLongIndex (0x67)
-  const obj = callback(tmp);
-  return obj(...arguments);
-}
-function registerSecurityKey(setError, register) {
-  if (register === undefined) {
-    register = NativeModules.DCDSecurityKeyManager.register;
+  const self = this;
+  const tmp = callback(() => {
+    let closure_0 = arg0;
+    let c4 = 0;
+    let c5 = 0;
+    const iter = (function*(arg0, credential) {
+      if (c5 === 2) {
+        c5 = 3;
+        HermesBuiltin.throwTypeError();
+      } else if (tmp5 === 3) {
+        if (arg0 === 1) {
+          throw credential;
+        } else if (arg0 === 2) {
+          let obj = { value: null, done: true };
+          obj[0] = credential;
+          return obj;
+        } else {
+          return { value: "HermesInternal", done: null };
+        }
+      } else {
+        try {
+          c5 = 2;
+          if (0 === c4) {
+            if (arg0 === 1) {
+              c5 = 3;
+              throw credential;
+            } else if (arg0 === 2) {
+              c5 = 3;
+              obj = { value: null, done: true };
+              obj[0] = credential;
+              return obj;
+            } else {
+              let challenge = tmp3;
+              let ticket = tmp2;
+              let register;
+              if (register === undefined) {
+                register = outer1_3.DCDSecurityKeyManager.register;
+              }
+              let obj4;
+              ticket = undefined;
+              challenge = undefined;
+              c4 = 1;
+              c5 = 1;
+              return { value: "ct", done: null };
+            }
+          } else if (1 === tmp6) {
+            if (arg0 === 1) {
+              c5 = 3;
+              throw credential;
+            } else if (arg0 === 2) {
+              c5 = 3;
+              const obj1 = { value: null, done: true };
+              obj1[0] = credential;
+              return obj1;
+            } else {
+              let obj5 = register(obj4[3]);
+              c4 = 2;
+              c5 = 1;
+              const obj2 = { value: null, done: false };
+              obj2[0] = obj5.startRegisterWebAuthnCredential();
+              return obj2;
+            }
+          } else if (2 === tmp6) {
+            if (arg0 === 1) {
+              c5 = 3;
+              throw credential;
+            } else if (arg0 === 2) {
+              c5 = 3;
+              const obj3 = { value: null, done: true };
+              obj3[0] = credential;
+              return obj3;
+            } else {
+              obj4 = credential;
+              ticket = obj4.ticket;
+              challenge = obj4.challenge;
+              obj4 = { ticket };
+              c4 = 3;
+              c5 = 1;
+              obj5 = { value: null, done: false };
+              obj5[0] = register(challenge);
+              return obj5;
+            }
+          } else if (arg0 === 1) {
+            c5 = 3;
+            throw credential;
+          } else if (arg0 === 2) {
+            c5 = 3;
+            const obj6 = { value: null, done: true };
+            obj6[0] = credential;
+            return obj6;
+          } else {
+            obj4.credential = credential;
+            c5 = 3;
+            obj = { value: null, done: true };
+            obj[0] = obj4;
+            return obj;
+          }
+        } catch (tmp19) {
+          c5 = tmp;
+          throw tmp19;
+        }
+      }
+    })();
+    iter.next();
+    return iter;
+  });
+  const _promptForRegisterCredential = tmp;
+  const apply = tmp.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
   }
-  setError = undefined;
-  let setRegistering;
-  setError = setError.setError;
-  setRegistering = setError.setRegistering;
-  if (undefined !== setError) {
-    setError("");
-  }
-  setRegistering(true);
-  const promise = (function promptForRegisterCredential(register) {
-    return outer1_5(...arguments);
-  })(register);
-  const nextPromise = (function promptForRegisterCredential(register) {
-    return outer1_5(...arguments);
-  })(register).then(setError.onRegisterSuccess);
-  return (function promptForRegisterCredential(register) {
-    return outer1_5(...arguments);
-  })(register).then(setError.onRegisterSuccess).catch((arg0) => {
-    if (undefined === setError) {
-      throw arg0;
-    } else {
-      const intl = setError(setRegistering[4]).intl;
-      setError(intl.string(setError(setRegistering[4]).t.xSCvBf));
-      throw arg0;
-    }
-  }).finally(() => setRegistering(false));
+  return applyArgumentsResult;
 }
-function mutateAndroidRegisterChallengeForDiscoverable(register) {
-  let closure_0 = register;
-  return (arg0) => {
-    const parsed = JSON.parse(arg0);
-    parsed.publicKey.authenticatorSelection.residentKey = "required";
-    return callback(JSON.stringify(parsed));
-  };
-}
-function registerAndroidCredentialManagerPasskey(setError) {
-  return registerSecurityKey(setError, mutateAndroidRegisterChallengeForDiscoverable(NativeModules.DCDSecurityKeyManager.registerPasskey));
-}
-importDefaultResult = new importDefaultResult("WebAuthnUtils");
+let c4 = new require("_fetchWebAuthnConditionalChallenge")("WebAuthnUtils");
 let obj = {};
 Object.defineProperty(obj, "hasAndroidPasskeySupport", {
   get: () => {
-    let isAndroidResult = require(477) /* set */.isAndroid();
+    let isAndroidResult = require(500) /* set */.isAndroid();
     if (isAndroidResult) {
       const DCDSecurityKeyManager = NativeModules.DCDSecurityKeyManager;
       let registerPasskey;
-      if (null != DCDSecurityKeyManager) {
+      if (DCDSecurityKeyManager != null) {
         registerPasskey = DCDSecurityKeyManager.registerPasskey;
       }
       isAndroidResult = null != registerPasskey;
@@ -74,10 +143,10 @@ Object.defineProperty(obj, "hasAndroidPasskeySupport", {
 });
 Object.defineProperty(obj, "shouldDisplayAndroidFidoSelector", {
   get: () => {
-    let isAndroidResult = require(477) /* set */.isAndroid();
+    let isAndroidResult = require(500) /* set */.isAndroid();
     if (isAndroidResult) {
-      isAndroidResult = !require(1553) /* isMetaQuest */.isMetaQuest();
-      const obj2 = require(1553) /* isMetaQuest */;
+      isAndroidResult = !require(1577) /* isMetaQuest */.isMetaQuest();
+      const tmpResult = require(1577) /* isMetaQuest */;
     }
     return isAndroidResult;
   },
@@ -85,34 +154,425 @@ Object.defineProperty(obj, "shouldDisplayAndroidFidoSelector", {
 });
 obj.getPasskeyAuthenticator = function getPasskeyAuthenticator() {
   let authenticatePasskey = NativeModules.DCDSecurityKeyManager.authenticate;
-  let isAndroidResult = authenticatePasskey(477).isAndroid();
+  let isAndroidResult = authenticatePasskey(500).isAndroid();
   if (isAndroidResult) {
-    const DCDSecurityKeyManager = NativeModules.DCDSecurityKeyManager;
+    const DCDSecurityKeyManager = tmp.DCDSecurityKeyManager;
     authenticatePasskey = undefined;
-    if (null != DCDSecurityKeyManager) {
+    if (DCDSecurityKeyManager != null) {
       authenticatePasskey = DCDSecurityKeyManager.authenticatePasskey;
     }
     isAndroidResult = null != authenticatePasskey;
   }
   if (isAndroidResult) {
-    authenticatePasskey = NativeModules.DCDSecurityKeyManager.authenticatePasskey;
+    authenticatePasskey = tmp.DCDSecurityKeyManager.authenticatePasskey;
   }
-  // CreateGeneratorClosureLongIndex (0x67)
-  return callback(tmp);
+  return callback(() => {
+    let closure_0 = [...arguments];
+    let c5 = 0;
+    let c6 = 0;
+    let c4 = 0;
+    const iter = (function*() {
+      if (c6 === 2) {
+        c6 = 3;
+        HermesBuiltin.throwTypeError();
+      } else if (tmp7 === 3) {
+        if (arg0 === 1) {
+          throw arg1;
+        } else if (arg0 === 2) {
+          let obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
+        } else {
+          return { value: "HermesInternal", done: null };
+        }
+      } else {
+        try {
+          c6 = 2;
+          if (0 === c5) {
+            if (arg0 === 1) {
+              c6 = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              c6 = 3;
+              obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            } else {
+              let set = tmp3;
+              let code = tmp5;
+              c5 = 1;
+              c6 = 1;
+              return { value: "ct", done: null };
+            }
+          } else if (1 === tmp8) {
+            if (arg0 === 1) {
+              c6 = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              c6 = 3;
+              const obj1 = { value: null, done: true };
+              obj1[0] = arg1;
+              return obj1;
+            } else {
+              let logger = 1;
+              const items = [];
+              HermesBuiltin.arraySpread(callback, 0);
+              c5 = 3;
+              c6 = 1;
+              let obj2 = { value: null, done: false };
+              obj2[0] = HermesBuiltin.apply(items, undefined);
+              return obj2;
+            }
+          } else if (2 === tmp8) {
+            logger = 0;
+            code = closure_3;
+            code = code.code;
+            if ("AbortError" !== code) {
+              if ("NotAllowedError" !== code) {
+                obj2 = callback(outer1_1[7]);
+                const result = obj2.captureWebAuthnException(code);
+                logger.error(code);
+                throw code;
+              }
+            }
+            logger.warn(outer1_1);
+            const ignorableWebAuthnError = new callback(outer1_1[6]).IgnorableWebAuthnError();
+            throw ignorableWebAuthnError;
+          } else if (arg0 === 1) {
+            c6 = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            logger = 0;
+            c6 = 3;
+            const obj3 = { value: null, done: true };
+            obj3[0] = arg1;
+            return obj3;
+          } else {
+            logger = 0;
+            c6 = 3;
+            obj = { value: null, done: true };
+            obj[0] = arg1;
+            return obj;
+          }
+        } catch (tmp44) {
+          closure_3 = tmp44;
+          if (tmp4 === logger) {
+            c6 = tmp2;
+            throw tmp44;
+          } else {
+            c5 = tmp;
+          }
+        }
+      }
+    })();
+    iter.next();
+    return iter;
+  });
 };
-obj.registerAndroidCredentialManagerPasskey = registerAndroidCredentialManagerPasskey;
+obj.registerAndroidCredentialManagerPasskey = function registerAndroidCredentialManagerPasskey(setError) {
+  setError = NativeModules.DCDSecurityKeyManager.registerPasskey;
+  setError = undefined;
+  let setRegistering;
+  setError = setError.setError;
+  setRegistering = setError.setRegistering;
+  if (undefined !== setError) {
+    setError("");
+  }
+  const fn = (arg0) => {
+    const parsed = JSON.parse(arg0);
+    parsed.publicKey.authenticatorSelection.residentKey = "required";
+    return setError(JSON.stringify(parsed));
+  };
+  setRegistering(true);
+  const promise = (function promptForRegisterCredential(fn) {
+    const self = this;
+    const apply = closure_5.apply;
+    if (typeof apply === "unknown") {
+      let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+    } else {
+      applyArgumentsResult = apply(self, arguments);
+    }
+    return applyArgumentsResult;
+  })(fn);
+  const nextPromise = (function promptForRegisterCredential(fn) {
+    const self = this;
+    const apply = closure_5.apply;
+    if (typeof apply === "unknown") {
+      let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+    } else {
+      applyArgumentsResult = apply(self, arguments);
+    }
+    return applyArgumentsResult;
+  })(fn).then(setError.onRegisterSuccess);
+  return (function promptForRegisterCredential(fn) {
+    const self = this;
+    const apply = closure_5.apply;
+    if (typeof apply === "unknown") {
+      let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+    } else {
+      applyArgumentsResult = apply(self, arguments);
+    }
+    return applyArgumentsResult;
+  })(fn).then(setError.onRegisterSuccess).catch((arg0) => {
+    if (undefined === setError) {
+      throw arg0;
+    } else {
+      const intl = setError(setRegistering[4]).intl;
+      tmp(intl.string(setError(setRegistering[4]).t.xSCvBf));
+      throw arg0;
+    }
+  }).finally(() => setRegistering(false));
+};
 obj.registerAndroidDevicePasskey = function registerAndroidDevicePasskey(setError) {
-  return registerSecurityKey(setError, mutateAndroidRegisterChallengeForDiscoverable(NativeModules.DCDSecurityKeyManager.register));
+  setError = NativeModules.DCDSecurityKeyManager.register;
+  setError = undefined;
+  let setRegistering;
+  setError = setError.setError;
+  setRegistering = setError.setRegistering;
+  if (undefined !== setError) {
+    setError("");
+  }
+  const fn = (arg0) => {
+    const parsed = JSON.parse(arg0);
+    parsed.publicKey.authenticatorSelection.residentKey = "required";
+    return setError(JSON.stringify(parsed));
+  };
+  setRegistering(true);
+  const promise = (function promptForRegisterCredential(fn) {
+    const self = this;
+    const apply = closure_5.apply;
+    if (typeof apply === "unknown") {
+      let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+    } else {
+      applyArgumentsResult = apply(self, arguments);
+    }
+    return applyArgumentsResult;
+  })(fn);
+  const nextPromise = (function promptForRegisterCredential(fn) {
+    const self = this;
+    const apply = closure_5.apply;
+    if (typeof apply === "unknown") {
+      let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+    } else {
+      applyArgumentsResult = apply(self, arguments);
+    }
+    return applyArgumentsResult;
+  })(fn).then(setError.onRegisterSuccess);
+  return (function promptForRegisterCredential(fn) {
+    const self = this;
+    const apply = closure_5.apply;
+    if (typeof apply === "unknown") {
+      let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+    } else {
+      applyArgumentsResult = apply(self, arguments);
+    }
+    return applyArgumentsResult;
+  })(fn).then(setError.onRegisterSuccess).catch((arg0) => {
+    if (undefined === setError) {
+      throw arg0;
+    } else {
+      const intl = setError(setRegistering[4]).intl;
+      tmp(intl.string(setError(setRegistering[4]).t.xSCvBf));
+      throw arg0;
+    }
+  }).finally(() => setRegistering(false));
 };
 obj.registerPasskey = function registerPasskey(setError) {
+  const DCDSecurityKeyManager = NativeModules.DCDSecurityKeyManager;
   if (obj.isAndroid()) {
-    let tmp2 = registerAndroidCredentialManagerPasskey(setError);
+    setError = DCDSecurityKeyManager.registerPasskey;
+    setError = undefined;
+    let setRegistering;
+    const setError2 = setError.setError;
+    setError = setError2;
+    const setRegistering2 = setError.setRegistering;
+    setRegistering = setRegistering2;
+    if (undefined !== setError2) {
+      setError2("");
+    }
+    const fn = (arg0) => {
+      const parsed = JSON.parse(arg0);
+      parsed.publicKey.authenticatorSelection.residentKey = "required";
+      return setError(JSON.stringify(parsed));
+    };
+    setRegistering2(true);
+    const promise4 = (function promptForRegisterCredential(fn) {
+      const self = this;
+      const apply = closure_5.apply;
+      if (typeof apply === "unknown") {
+        let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+      } else {
+        applyArgumentsResult = apply(self, arguments);
+      }
+      return applyArgumentsResult;
+    })(fn);
+    const nextPromise = (function promptForRegisterCredential(fn) {
+      const self = this;
+      const apply = closure_5.apply;
+      if (typeof apply === "unknown") {
+        let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+      } else {
+        applyArgumentsResult = apply(self, arguments);
+      }
+      return applyArgumentsResult;
+    })(fn).then(setError.onRegisterSuccess);
+    let cleanupPromise = (function promptForRegisterCredential(fn) {
+      const self = this;
+      const apply = closure_5.apply;
+      if (typeof apply === "unknown") {
+        let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+      } else {
+        applyArgumentsResult = apply(self, arguments);
+      }
+      return applyArgumentsResult;
+    })(fn).then(setError.onRegisterSuccess).catch((arg0) => {
+      if (undefined === setError) {
+        throw arg0;
+      } else {
+        const intl = setError(setRegistering[4]).intl;
+        tmp(intl.string(setError(setRegistering[4]).t.xSCvBf));
+        throw arg0;
+      }
+    }).finally(() => setRegistering(false));
+    const catchPromise = (function promptForRegisterCredential(fn) {
+      const self = this;
+      const apply = closure_5.apply;
+      if (typeof apply === "unknown") {
+        let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+      } else {
+        applyArgumentsResult = apply(self, arguments);
+      }
+      return applyArgumentsResult;
+    })(fn).then(setError.onRegisterSuccess).catch((arg0) => {
+      if (undefined === setError) {
+        throw arg0;
+      } else {
+        const intl = setError(setRegistering[4]).intl;
+        tmp(intl.string(setError(setRegistering[4]).t.xSCvBf));
+        throw arg0;
+      }
+    });
   } else {
-    tmp2 = registerSecurityKey(setError);
+    setError = undefined;
+    setRegistering = undefined;
+    setError = setError.setError;
+    setRegistering = setError.setRegistering;
+    if (undefined !== setError) {
+      setError("");
+    }
+    setRegistering(true);
+    const promise = (function promptForRegisterCredential(fn) {
+      const self = this;
+      const apply = closure_5.apply;
+      if (typeof apply === "unknown") {
+        let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+      } else {
+        applyArgumentsResult = apply(self, arguments);
+      }
+      return applyArgumentsResult;
+    })(DCDSecurityKeyManager.register);
+    const nextPromise1 = (function promptForRegisterCredential(fn) {
+      const self = this;
+      const apply = closure_5.apply;
+      if (typeof apply === "unknown") {
+        let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+      } else {
+        applyArgumentsResult = apply(self, arguments);
+      }
+      return applyArgumentsResult;
+    })(DCDSecurityKeyManager.register).then(setError.onRegisterSuccess);
+    cleanupPromise = (function promptForRegisterCredential(fn) {
+      const self = this;
+      const apply = closure_5.apply;
+      if (typeof apply === "unknown") {
+        let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+      } else {
+        applyArgumentsResult = apply(self, arguments);
+      }
+      return applyArgumentsResult;
+    })(DCDSecurityKeyManager.register).then(setError.onRegisterSuccess).catch((arg0) => {
+      if (undefined === setError) {
+        throw arg0;
+      } else {
+        const intl = setError(setRegistering[4]).intl;
+        tmp(intl.string(setError(setRegistering[4]).t.xSCvBf));
+        throw arg0;
+      }
+    }).finally(() => setRegistering(false));
+    const catchPromise1 = (function promptForRegisterCredential(fn) {
+      const self = this;
+      const apply = closure_5.apply;
+      if (typeof apply === "unknown") {
+        let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+      } else {
+        applyArgumentsResult = apply(self, arguments);
+      }
+      return applyArgumentsResult;
+    })(DCDSecurityKeyManager.register).then(setError.onRegisterSuccess).catch((arg0) => {
+      if (undefined === setError) {
+        throw arg0;
+      } else {
+        const intl = setError(setRegistering[4]).intl;
+        tmp(intl.string(setError(setRegistering[4]).t.xSCvBf));
+        throw arg0;
+      }
+    });
   }
-  return tmp2;
+  return cleanupPromise;
 };
-obj.registerSecurityKey = registerSecurityKey;
-const result = require("timestamp").fileFinishedImporting("modules/webauthn/native/NativeCeremonies.tsx");
+obj.registerSecurityKey = function registerSecurityKey(setError, fn) {
+  let register = fn;
+  if (fn === undefined) {
+    register = NativeModules.DCDSecurityKeyManager.register;
+  }
+  setError = undefined;
+  let setRegistering;
+  setError = setError.setError;
+  setRegistering = setError.setRegistering;
+  if (undefined !== setError) {
+    setError("");
+  }
+  setRegistering(true);
+  const promise = (function promptForRegisterCredential(fn) {
+    const self = this;
+    const apply = closure_5.apply;
+    if (typeof apply === "unknown") {
+      let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+    } else {
+      applyArgumentsResult = apply(self, arguments);
+    }
+    return applyArgumentsResult;
+  })(register);
+  const nextPromise = (function promptForRegisterCredential(fn) {
+    const self = this;
+    const apply = closure_5.apply;
+    if (typeof apply === "unknown") {
+      let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+    } else {
+      applyArgumentsResult = apply(self, arguments);
+    }
+    return applyArgumentsResult;
+  })(register).then(setError.onRegisterSuccess);
+  return (function promptForRegisterCredential(fn) {
+    const self = this;
+    const apply = closure_5.apply;
+    if (typeof apply === "unknown") {
+      let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+    } else {
+      applyArgumentsResult = apply(self, arguments);
+    }
+    return applyArgumentsResult;
+  })(register).then(setError.onRegisterSuccess).catch((arg0) => {
+    if (undefined === setError) {
+      throw arg0;
+    } else {
+      const intl = setError(setRegistering[4]).intl;
+      tmp(intl.string(setError(setRegistering[4]).t.xSCvBf));
+      throw arg0;
+    }
+  }).finally(() => setRegistering(false));
+};
+const tmp2 = new require("_fetchWebAuthnConditionalChallenge")("WebAuthnUtils");
+let result = require("timestamp").fileFinishedImporting("modules/webauthn/native/NativeCeremonies.tsx");
 
 export default obj;

@@ -1,10 +1,10 @@
-// Module ID: 10922
-// Function ID: 84679
+// Module ID: 10946
+// Function ID: 10947
 // Name: result
-// Dependencies: [664, 21, 2]
+// Dependencies: [687, 11, 2]
 // Exports: default
 
-// Module 10922 (result)
+// Module 10946 (result)
 const result = 2 * require("set").Millis.HOUR;
 const result1 = require("set").fileFinishedImporting("modules/activities/utils/isInviteActive.tsx");
 
@@ -20,15 +20,15 @@ export default function isInviteActive(party, activity) {
     if (tmp2) {
       party = party.party;
       let id;
-      if (null != party) {
+      if (party != null) {
         id = party.id;
       }
       tmp2 = id !== party_id;
     }
     const _Date = Date;
-    const sum = importDefault(21).extractTimestamp(activity.id) + closure_2;
+    const sum = importDefault(11).extractTimestamp(activity.id) + closure_2;
     let tmp10 = null != party.application_id;
-    const obj = importDefault(21);
+    const obj = importDefault(11);
     if (tmp10) {
       tmp10 = party.application_id !== arg2;
     }

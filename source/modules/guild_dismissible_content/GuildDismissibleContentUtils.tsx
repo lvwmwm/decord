@@ -1,61 +1,87 @@
-// Module ID: 11562
-// Function ID: 89926
+// Module ID: 11586
+// Function ID: 11587
 // Name: isContentDismissed
-// Dependencies: [1316, 653, 1345, 662, 1333, 566, 1331, 675, 1334, 2]
-// Exports: markContentAsDismissed, unmarkContentAsDismissed, useIsContentDismissed
+// Dependencies: [1340, 676, 1369, 685, 1357, 589, 1355, 698, 1358, 2]
+// Exports: isContentDismissed, markContentAsDismissed, unmarkContentAsDismissed, useIsContentDismissed
 
-// Module 11562 (isContentDismissed)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 11586 (isContentDismissed)
+import handleConnectionClosedOrResumed from "handleConnectionClosedOrResumed";
 import { AnalyticEvents } from "ME";
 import { ContentDismissActionType } from "ContentDismissActionType";
 import { UserSettingsDelay } from "MAX_FAVORITES";
 
 const require = arg1;
-function isContentDismissed(GAME_SERVER_HOSTING_GUILD_ELIGIBLE_COACHMARK, outer1_0) {
-  dismissedGuildContent = dismissedGuildContent.getDismissedGuildContent(outer1_0);
-  let hasBitResult = null != dismissedGuildContent;
-  if (hasBitResult) {
-    hasBitResult = require(1333) /* hasBit */.hasBit(dismissedGuildContent, GAME_SERVER_HOSTING_GUILD_ELIGIBLE_COACHMARK);
-    const obj = require(1333) /* hasBit */;
-  }
-  return hasBitResult;
-}
-function toggleContentSeen(arg0, dc, guild_id, arg3, AUTO_DISMISS) {
-  let UNKNOWN = AUTO_DISMISS;
-  const _require = arg0;
-  const importDefault = dc;
-  const dependencyMap = guild_id;
-  let obj = _require(1331);
-  const result = obj.updateUserGuildSettings(guild_id, (dismissedGuildContent) => {
-    const tmp = outer1_7(closure_1, guild_id);
-    if (!callback) {
-      const tmp6 = callback(guild_id[4]);
-      dismissedGuildContent.dismissedGuildContent = callback ? tmp6.addBit : tmp6.removeBit(dismissedGuildContent.dismissedGuildContent, closure_1);
-    }
-    return false;
-  }, arg0 ? tmp.INFREQUENT_USER_ACTION : tmp.FREQUENT_USER_ACTION);
-  if (arg3) {
-    obj = { type: _require(1334).DismissibleGuildContent[dc], guild_id };
-    if (null == UNKNOWN) {
-      UNKNOWN = ContentDismissActionType.UNKNOWN;
-    }
-    obj.action = UNKNOWN;
-    importDefault(675).track(AnalyticEvents.DISMISSIBLE_CONTENT_DISMISSED, obj);
-    const obj2 = importDefault(675);
-  }
-}
 let result = require("ContentDismissActionType").fileFinishedImporting("modules/guild_dismissible_content/GuildDismissibleContentUtils.tsx");
 
-export { isContentDismissed };
+export const isContentDismissed = function isContentDismissed(GAME_SERVER_HOSTING_GUILD_ELIGIBLE_COACHMARK, closure_1) {
+  dismissedGuildContent = dismissedGuildContent.getDismissedGuildContent(closure_1);
+  let hasBitResult = null != dismissedGuildContent;
+  if (hasBitResult) {
+    hasBitResult = require(1357) /* hasBit */.hasBit(dismissedGuildContent, GAME_SERVER_HOSTING_GUILD_ELIGIBLE_COACHMARK);
+    const obj = require(1357) /* hasBit */;
+  }
+  return hasBitResult;
+};
 export const useIsContentDismissed = function useIsContentDismissed(arg0, arg1) {
   const _require = arg0;
   let closure_1 = arg1;
-  const items = [_isNativeReflectConstruct];
-  return _require(566).useStateFromStores(items, () => outer1_7(closure_0, closure_1));
+  const items = [handleConnectionClosedOrResumed];
+  return _require(589).useStateFromStores(items, () => {
+    const dismissedGuildContent = outer1_3.getDismissedGuildContent(closure_1);
+    let hasBitResult = null != dismissedGuildContent;
+    if (hasBitResult) {
+      hasBitResult = callback(outer1_2[4]).hasBit(dismissedGuildContent, callback);
+      const obj = callback(outer1_2[4]);
+    }
+    return hasBitResult;
+  });
 };
 export const markContentAsDismissed = function markContentAsDismissed(GAME_SERVER_HOSTING_GUILD_ELIGIBLE_COACHMARK, closure_0, arg2, AUTO_DISMISS) {
-  toggleContentSeen(true, GAME_SERVER_HOSTING_GUILD_ELIGIBLE_COACHMARK, closure_0, arg2, AUTO_DISMISS);
+  const _require = true;
+  const importDefault = GAME_SERVER_HOSTING_GUILD_ELIGIBLE_COACHMARK;
+  const dependencyMap = closure_0;
+  let obj = _require(1355);
+  const result = obj.updateUserGuildSettings(closure_0, (dismissedGuildContent) => {
+    dismissedGuildContent = outer1_3.getDismissedGuildContent(guildId);
+    let hasBitResult = null != dismissedGuildContent;
+    if (hasBitResult) {
+      hasBitResult = callback(guildId[4]).hasBit(dismissedGuildContent, tmp);
+      const obj = callback(guildId[4]);
+    }
+    if (!callback) {
+      const tmp9 = callback(guildId[4]);
+      dismissedGuildContent.dismissedGuildContent = tmp6 ? tmp9.addBit : tmp9.removeBit(dismissedGuildContent.dismissedGuildContent, tmp);
+    }
+    return false;
+  }, UserSettingsDelay.INFREQUENT_USER_ACTION);
+  if (arg2) {
+    let UNKNOWN = AUTO_DISMISS;
+    obj = { type: null, guild_id: null, action: null };
+    obj[0] = _require(1358).DismissibleGuildContent[GAME_SERVER_HOSTING_GUILD_ELIGIBLE_COACHMARK];
+    obj[1] = closure_0;
+    if (AUTO_DISMISS == null) {
+      UNKNOWN = ContentDismissActionType.UNKNOWN;
+    }
+    obj[2] = UNKNOWN;
+    importDefault(698).track(AnalyticEvents.DISMISSIBLE_CONTENT_DISMISSED, obj);
+    const obj2 = importDefault(698);
+  }
 };
 export const unmarkContentAsDismissed = function unmarkContentAsDismissed(dc, guildId) {
-  toggleContentSeen(false, dc, guildId);
+  const _require = false;
+  let closure_1 = dc;
+  const dependencyMap = guildId;
+  const result = _require(1355).updateUserGuildSettings(guildId, (dismissedGuildContent) => {
+    dismissedGuildContent = outer1_3.getDismissedGuildContent(guildId);
+    let hasBitResult = null != dismissedGuildContent;
+    if (hasBitResult) {
+      hasBitResult = callback(guildId[4]).hasBit(dismissedGuildContent, tmp);
+      const obj = callback(guildId[4]);
+    }
+    if (!callback) {
+      const tmp9 = callback(guildId[4]);
+      dismissedGuildContent.dismissedGuildContent = tmp6 ? tmp9.addBit : tmp9.removeBit(dismissedGuildContent.dismissedGuildContent, tmp);
+    }
+    return false;
+  }, UserSettingsDelay.FREQUENT_USER_ACTION);
 };

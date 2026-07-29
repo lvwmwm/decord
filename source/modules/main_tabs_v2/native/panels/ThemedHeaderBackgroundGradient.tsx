@@ -1,46 +1,45 @@
-// Module ID: 15365
-// Function ID: 117061
-// Dependencies: [31, 27, 33, 4165, 689, 1557, 3869, 665, 4589, 2]
+// Module ID: 15398
+// Function ID: 15399
+// Dependencies: [19, 17, 21, 4189, 712, 1581, 3893, 688, 4611, 2]
 
-// Module 15365
+// Module 15398
 import get_ActivityIndicator from "get ActivityIndicator";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import importAllResult from "result";
+import createCacheKey from "createCacheKey";
+import importAllResult from "noop";
 
-let closure_3;
-let closure_4;
+let c3;
+let c4;
 const require = arg1;
-({ StyleSheet: closure_3, View: closure_4 } = get_ActivityIndicator);
-let closure_6 = _createForOfIteratorHelperLoose.createStyles({ container: { position: "absolute", left: 0, right: 0, top: 0 } });
-const memoResult = require("result").memo(function ThemedHeaderBackgroundGradient(baseColor) {
+({ StyleSheet: c3, View: c4 } = get_ActivityIndicator);
+let closure_6 = createCacheKey.createStyles({ container: { position: "absolute", left: 0, right: 0, top: 0 } });
+const memoResult = require("noop").memo(function ThemedHeaderBackgroundGradient(baseColor) {
   let BACKGROUND_BASE_LOWEST = baseColor.baseColor;
   if (BACKGROUND_BASE_LOWEST === undefined) {
-    BACKGROUND_BASE_LOWEST = importDefault(689).colors.BACKGROUND_BASE_LOWEST;
+    BACKGROUND_BASE_LOWEST = importDefault(712).colors.BACKGROUND_BASE_LOWEST;
   }
-  let num2 = baseColor.minHeight;
-  if (num2 === undefined) {
-    num2 = 16;
+  let num = baseColor.minHeight;
+  if (num === undefined) {
+    num = 16;
   }
   const tmp3 = callback();
-  let obj = require(3869) /* map */;
+  const tmp4 = importDefault;
+  let obj = require(3893) /* map */;
   const token = obj.useToken(BACKGROUND_BASE_LOWEST);
-  let obj1 = require(665) /* pad2 */;
-  const hex2rgbResult = obj1.hex2rgb(token, 0);
-  let str = "transparent";
-  if (null != hex2rgbResult) {
-    str = hex2rgbResult;
+  let obj1 = require(688) /* int2hslRaw */;
+  let str = obj1.hex2rgb(token, 0);
+  if (str == null) {
+    str = "transparent";
   }
-  obj = {};
+  obj = { style: null, pointerEvents: "none", children: null };
   const items = [tmp3.container, ];
-  obj = { height: Math.max(importDefault(1557)().top, num2) };
+  obj = { height: Math.max(importDefault(1581)().top, num) };
   items[1] = obj;
-  obj.style = items;
-  obj.pointerEvents = "none";
+  obj[0] = items;
   obj1 = { style: absoluteFill.absoluteFill, colors: items1, start: { x: 0, y: 0 }, end: { x: 0, y: 1 } };
   items1 = [token, str];
-  obj.children = jsx(importDefault(4589), { style: absoluteFill.absoluteFill, colors: items1, start: { x: 0, y: 0 }, end: { x: 0, y: 1 } });
-  return <closure_4 height={Math.max(importDefault(1557)().top, num2)} />;
+  obj[2] = jsx(tmp4(4611), { style: absoluteFill.absoluteFill, colors: items1, start: { x: 0, y: 0 }, end: { x: 0, y: 1 } });
+  return <closure_4 height={Math.max(importDefault(1581)().top, num)} />;
 });
 const result = require("jsxProd").fileFinishedImporting("modules/main_tabs_v2/native/panels/ThemedHeaderBackgroundGradient.tsx");
 

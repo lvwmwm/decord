@@ -1,21 +1,21 @@
-// Module ID: 8113
-// Function ID: 64395
+// Module ID: 8137
+// Function ID: 8138
 // Name: MediaViewerDimensionsProvider
-// Dependencies: [31, 33, 1450, 44, 2]
+// Dependencies: [19, 21, 1474, 38, 2]
 // Exports: MediaViewerDimensionsProvider, useMediaViewerDimensions
 
-// Module 8113 (MediaViewerDimensionsProvider)
-import importAllResult from "result";
+// Module 8137 (MediaViewerDimensionsProvider)
+import importAllResult from "noop";
 import { jsx } from "jsxProd";
 
 let context = importAllResult.createContext(null);
 const result = require("useWindowDimensions").fileFinishedImporting("modules/media_viewer/native/MediaViewerDimensionsContext.tsx");
 
 export const MediaViewerDimensionsProvider = function MediaViewerDimensionsProvider(children) {
-  return <redux.Provider value={importDefault(1450)({ ignoreKeyboard: true })}>{arg0.children}</redux.Provider>;
+  return <redux.Provider value={importDefault(1474)({ ignoreKeyboard: true })}>{arg0.children}</redux.Provider>;
 };
 export const useMediaViewerDimensions = function useMediaViewerDimensions() {
   const context = importAllResult.useContext(closure_4);
-  importDefault(44)(null != context, "useMediaViewerDimensions must be used inside MediaViewerDimensionsProvider");
+  importDefault(38)(null != context, "useMediaViewerDimensions must be used inside MediaViewerDimensionsProvider");
   return context;
 };

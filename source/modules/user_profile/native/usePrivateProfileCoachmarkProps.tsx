@@ -1,65 +1,65 @@
-// Module ID: 15209
-// Function ID: 115614
+// Module ID: 15242
+// Function ID: 15243
 // Name: PrivateProfileCoachmarkImage
-// Dependencies: [31, 27, 653, 1345, 33, 4165, 7382, 1282, 1212, 7685, 3838, 1334, 6590, 2]
+// Dependencies: [19, 17, 676, 1369, 21, 4189, 7404, 1306, 1236, 7708, 3862, 1358, 6611, 2]
 // Exports: usePrivateProfileCoachmarkProps
 
-// Module 15209 (PrivateProfileCoachmarkImage)
-import result from "result";
+// Module 15242 (PrivateProfileCoachmarkImage)
+import noop from "noop";
 import { View } from "get ActivityIndicator";
 import { UserSettingsSections } from "ME";
 import { ContentDismissActionType } from "ContentDismissActionType";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
 const require = arg1;
 function PrivateProfileCoachmarkImage() {
-  return <View style={callback().imageContainer}>{jsx(require(7382) /* PrivateProfileAbstractUI */.PrivateProfileAbstractUI, { width: 100, height: 67, resizeMode: "contain" })}</View>;
+  return <View style={callback().imageContainer}>{jsx(require(7404) /* PrivateProfileAbstractUI */.PrivateProfileAbstractUI, { width: 100, height: 67, resizeMode: "contain" })}</View>;
 }
-let closure_7 = _createForOfIteratorHelperLoose.createStyles({ imageContainer: { alignItems: "center", justifyContent: "center" } });
+let closure_7 = createCacheKey.createStyles({ imageContainer: { alignItems: "center", justifyContent: "center" } });
 const result = require("ME").fileFinishedImporting("modules/user_profile/native/usePrivateProfileCoachmarkProps.tsx");
 
 export const usePrivateProfileCoachmarkProps = function usePrivateProfileCoachmarkProps(visibleContent) {
   visibleContent = visibleContent.visibleContent;
   const markAsDismissed = visibleContent.markAsDismissed;
   let stringResult1;
+  _hogEy = markAsDismissed;
   const userIsTeen = visibleContent(markAsDismissed[9]).useUserIsTeen();
   const ProfileVisibility = visibleContent(markAsDismissed[10]).ProfileVisibility;
   const setting = ProfileVisibility.useSetting();
   if (userIsTeen) {
-    if (setting !== visibleContent(markAsDismissed[7]).ProfileVisibility.FRIENDS_AND_ALL_GUILDS) {
-      if (setting === visibleContent(markAsDismissed[7]).ProfileVisibility.FRIENDS_ONLY) {
-        const intl3 = visibleContent(markAsDismissed[8]).intl;
-        let stringResult = intl3.string(visibleContent(markAsDismissed[8]).t["/hogEy"]);
+    if (setting !== tmp(_hogEy[7]).ProfileVisibility.FRIENDS_AND_ALL_GUILDS) {
+      if (setting === tmp(_hogEy[7]).ProfileVisibility.FRIENDS_ONLY) {
+        const intl3 = tmp(_hogEy[8]).intl;
+        _hogEy = tmp(_hogEy[8]).t["/hogEy"];
+        let stringResult = intl3.string(_hogEy);
       } else {
-        let intl2 = visibleContent(markAsDismissed[8]).intl;
-        stringResult = intl2.string(visibleContent(markAsDismissed[8]).t["6hEfm1"]);
+        let intl2 = tmp(_hogEy[8]).intl;
+        stringResult = intl2.string(tmp(_hogEy[8]).t["6hEfm1"]);
       }
     }
   }
-  let intl = visibleContent(markAsDismissed[8]).intl;
-  stringResult1 = intl.string(visibleContent(markAsDismissed[8]).t.bnNxW1);
+  let intl = tmp(_hogEy[8]).intl;
+  stringResult1 = intl.string(tmp(_hogEy[8]).t.bnNxW1);
   const items = [stringResult1, markAsDismissed, visibleContent];
   return stringResult1.useMemo(() => {
-    let obj = {};
+    let obj = { title: null, description: null, position: "top", visible: null, onDismiss: null, renderImgComponent: null, buttonLabel: null, buttonVariant: "primary", onButtonPress: null };
     const intl = visibleContent(markAsDismissed[8]).intl;
-    obj.title = intl.string(visibleContent(markAsDismissed[8]).t.Ve4nS1);
-    obj.description = stringResult1;
-    obj.position = "top";
-    obj.visible = visibleContent === visibleContent(markAsDismissed[11]).DismissibleContent.PRIVATE_PROFILE_COACHMARK;
-    obj.onDismiss = function onDismiss() {
-      return outer1_1(outer2_5.USER_DISMISS);
+    obj[0] = intl.string(visibleContent(markAsDismissed[8]).t.Ve4nS1);
+    obj[1] = stringResult1;
+    obj[3] = visibleContent === visibleContent(markAsDismissed[11]).DismissibleContent.PRIVATE_PROFILE_COACHMARK;
+    obj[4] = function onDismiss() {
+      return callback(outer1_5.USER_DISMISS);
     };
-    obj.renderImgComponent = function renderImgComponent() {
-      return outer2_6(outer2_8, {});
+    obj[5] = function renderImgComponent() {
+      return callback2(closure_8, {});
     };
     const intl2 = visibleContent(markAsDismissed[8]).intl;
-    obj.buttonLabel = intl2.string(visibleContent(markAsDismissed[8]).t.eOoTMX);
-    obj.buttonVariant = "primary";
-    obj.onButtonPress = function onButtonPress() {
-      outer1_1(outer2_5.TAKE_ACTION);
-      let obj = visibleContent(markAsDismissed[12]);
-      obj = { screen: outer2_4.DATA_AND_PRIVACY };
+    obj[6] = intl2.string(visibleContent(markAsDismissed[8]).t.eOoTMX);
+    obj[8] = function onButtonPress() {
+      callback(outer1_5.TAKE_ACTION);
+      let obj = outer1_0(outer1_1[12]);
+      obj = { screen: outer1_4.DATA_AND_PRIVACY };
       obj.openUserSettings(obj);
     };
     return obj;

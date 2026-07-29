@@ -1,23 +1,23 @@
-// Module ID: 1849
-// Function ID: 20284
+// Module ID: 1873
+// Function ID: 1874
 // Name: setTimeout
-// Dependencies: [1847, 2]
+// Dependencies: [1871, 2]
 // Exports: keepAliveWorkaround, registerTimerPolyfills, setTimersMonitorCallback
 
-// Module 1849 (setTimeout)
+// Module 1873 (setTimeout)
 function setTimeout(arg0, arg1) {
-  let num = 0;
-  if (null != arg1) {
-    num = arg1;
+  let num = arg1;
+  if (arg1 == null) {
+    num = 0;
   }
   const registerTimeoutResult = closure_3.registerTimeout(Math.max(num, 4));
   const result = map.set(registerTimeoutResult, arg0);
   return registerTimeoutResult;
 }
 function setInterval(arg0, arg1) {
-  let num = 0;
-  if (null != arg1) {
-    num = arg1;
+  let num = arg1;
+  if (arg1 == null) {
+    num = 0;
   }
   const registerIntervalResult = closure_3.registerInterval(Math.max(num, 4));
   const result = map.set(registerIntervalResult, arg0);
@@ -34,15 +34,6 @@ function clearTimeout(arg0) {
 }
 const LIBDISCORE_JSI = require("typedGlobal").typedGlobal.LIBDISCORE_JSI;
 let c1 = null;
-const obj = {
-  slowExecutionThresholdMillis: 500,
-  delayedExecutionThresholdMillis: 5000,
-  onSlowTimer(arg0, arg1, arg2, arg3) {
-    if (null != _null) {
-      _null(arg0, arg1, arg2, arg3);
-    }
-  }
-};
 const map = new Map();
 let closure_3 = LIBDISCORE_JSI.makeTimerManager(function expirationCallback(arg0, arg1) {
   const value = map.get(arg0);
@@ -52,7 +43,15 @@ let closure_3 = LIBDISCORE_JSI.makeTimerManager(function expirationCallback(arg0
     }
     value();
   }
-}, obj);
+}, {
+  slowExecutionThresholdMillis: 500,
+  delayedExecutionThresholdMillis: 5000,
+  onSlowTimer(arg0, arg1, arg2, arg3) {
+    if (c1 != null) {
+      tmp(arg0, arg1, arg2, arg3);
+    }
+  }
+});
 let result = require("set").fileFinishedImporting("../discord_common/js/packages/libdiscore/mobile/js/timers.tsx");
 
 export function setTimersMonitorCallback(onTimersDelayCallback) {

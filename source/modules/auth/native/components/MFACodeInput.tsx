@@ -1,30 +1,31 @@
-// Module ID: 13800
-// Function ID: 105715
-// Dependencies: [57, 31, 27, 1194, 653, 33, 4165, 689, 4011, 5525, 4594, 5623, 8971, 1212, 4161, 2]
+// Module ID: 13821
+// Function ID: 13822
+// Dependencies: [32, 19, 17, 1218, 676, 21, 4189, 712, 4035, 5543, 4616, 5641, 8995, 1236, 4185, 2]
 
-// Module 13800
+// Module 13821
 import _slicedToArray from "_slicedToArray";
-import importAllResult from "result";
+import importAllResult from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import fetchFingerprint from "fetchFingerprint";
 import { AppStates } from "ME";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_10;
-let closure_11;
-let closure_5;
+let c10;
+let c5;
+let c9;
 let closure_6;
-let closure_9;
+let unpackModuleId;
 const require = arg1;
-({ ActivityIndicator: closure_5, View: closure_6 } = get_ActivityIndicator);
-({ jsx: closure_9, Fragment: closure_10, jsxs: closure_11 } = jsxProd);
-let obj = { inputContainer: { marginTop: 20, flexDirection: "row", justifyContent: "center", alignSelf: "stretch" }, input: { flex: 1, maxWidth: 336, flexDirection: "row", alignSelf: "stretch" }, status: { flex: 1, maxHeight: 20, alignItems: "center", marginTop: 8 } };
-obj = { color: require("_createForOfIteratorHelperLoose").unsafe_rawColors.RED_400 };
-obj.error = obj;
-obj.minHeightGuard = { minHeight: 20 };
-let closure_12 = _createForOfIteratorHelperLoose.createStyles(obj);
-const forwardRefResult = importAllResult.forwardRef((appState) => {
+let c4 = importAllResult;
+({ ActivityIndicator: c5, View: closure_6 } = get_ActivityIndicator);
+({ jsx: c9, Fragment: c10, jsxs: unpackModuleId } = jsxProd);
+let obj = { inputContainer: { marginTop: 20, flexDirection: "row", justifyContent: "center", alignSelf: "stretch" }, input: { flex: 1, maxWidth: 336, flexDirection: "row", alignSelf: "stretch" }, status: { flex: 1, maxHeight: 20, alignItems: "center", marginTop: 8 }, error: null, minHeightGuard: null };
+obj = { color: require("Themes").unsafe_rawColors.RED_400 };
+obj[3] = obj;
+obj[4] = { minHeight: 20 };
+let closure_12 = createCacheKey.createStyles(obj);
+const forwardRefResult = importAllResult.forwardRef((appState, ref) => {
   let error;
   let resetLoginOnClose;
   let showActivityIndicator;
@@ -43,18 +44,18 @@ const forwardRefResult = importAllResult.forwardRef((appState) => {
   let callback;
   let tmp = callback2();
   let obj = appState(resetLoginOnClose[8]);
-  const tmp2 = first(importAllResult.useState(""), 2);
-  first = tmp2[0];
-  importAllResult = tmp4;
-  const tmp5 = first(importAllResult.useState(null), 2);
-  first1 = tmp5[0];
-  closure_6 = tmp5[1];
+  const tmp4 = first(importAllResult.useState(""), 2);
+  first = tmp4[0];
+  importAllResult = tmp6;
+  const tmp7 = first(importAllResult.useState(null), 2);
+  first1 = tmp7[0];
+  closure_6 = tmp7[1];
   const items = [first1];
   callback = importAllResult.useCallback(() => {
     const string = appState(resetLoginOnClose[9]).getString();
     string.then((str) => {
       const trimmed = str.trim();
-      let tmp = trimmed !== outer1_5;
+      let tmp = trimmed !== closure_5;
       if (tmp) {
         let isMatch = 6 === trimmed.length;
         if (isMatch) {
@@ -72,30 +73,30 @@ const forwardRefResult = importAllResult.forwardRef((appState) => {
         tmp = isMatch;
       }
       if (tmp) {
-        outer1_4(trimmed);
-        outer1_6(trimmed);
+        callback(trimmed);
+        callback2(trimmed);
       }
     });
   }, items);
   handleSubmit(resetLoginOnClose[10])(() => {
     callback();
     return () => {
-      if (callback.isAuthenticated()) {
-        const string = appState(resetLoginOnClose[9]).getString();
+      if (outer1_7.isAuthenticated()) {
+        const string = outer1_0(outer1_2[9]).getString();
         string.then((arg0) => {
-          let tmp = "" !== outer2_3;
-          if (tmp) {
-            tmp = outer2_3 === arg0;
+          let tmp2 = "" !== _slicedToArray;
+          if (tmp2) {
+            tmp2 = tmp === arg0;
           }
-          if (tmp) {
-            appState(resetLoginOnClose[9]).copy("");
-            const obj = appState(resetLoginOnClose[9]);
+          if (tmp2) {
+            outer1_0(outer1_2[9]).copy("");
+            const obj = outer1_0(outer1_2[9]);
           }
         });
-        const obj2 = appState(resetLoginOnClose[9]);
+        const obj2 = outer1_0(outer1_2[9]);
       } else {
-        let obj = handleSubmit(resetLoginOnClose[11]);
-        if (outer1_2) {
+        let obj = outer1_1(outer1_2[11]);
+        if (closure_2) {
           obj.loginReset();
         } else {
           obj.loginStatusReset();
@@ -113,58 +114,56 @@ const forwardRefResult = importAllResult.forwardRef((appState) => {
   const effect1 = importAllResult.useEffect(() => {
     let isMatch = 6 === first.length;
     if (isMatch) {
-      isMatch = /^\d+$/.test(first);
+      isMatch = /^\d+$/.test(arr);
       const obj = /^\d+$/;
     }
     if (!isMatch) {
-      isMatch = 8 === first.length;
+      isMatch = 8 === arr.length;
     }
     if (isMatch) {
-      handleSubmit(first);
+      handleSubmit(arr);
     }
   }, items2);
-  const imperativeHandle = importAllResult.useImperativeHandle(arg1, () => ({
+  const imperativeHandle = importAllResult.useImperativeHandle(ref, () => ({
     clear() {
-      outer1_4("");
+      callback("");
     }
   }), []);
-  obj = {};
-  obj = { autoFocus: true, style: null, textStyle: null, value: null, autoCapitalize: "none", maxLength: 8, textContentType: "oneTimeCode" };
-  const items3 = [tmp.inputContainer, style];
-  obj.style = items3;
-  obj.textStyle = tmp.input;
-  obj.value = first;
-  obj.onChangeText = tmp2[1];
+  obj = { autoFocus: true, style: items3, textStyle: tmp.input, value: first, autoCapitalize: "none", maxLength: 8, textContentType: "oneTimeCode", onChangeText: tmp6, accessibilityLabel: null };
+  items3 = [tmp.inputContainer, style];
   const intl = appState(resetLoginOnClose[13]).intl;
-  obj.accessibilityLabel = intl.string(appState(resetLoginOnClose[13]).t.yO4lAM);
+  obj[8] = intl.string(appState(resetLoginOnClose[13]).t.yO4lAM);
   const items4 = [callback(handleSubmit(resetLoginOnClose[12]), obj), ];
-  const obj1 = {};
   const items5 = [tmp.status, ];
-  const tmp12 = closure_11;
-  const tmp13 = closure_10;
-  const tmp14 = callback;
-  const tmp15 = handleSubmit(resetLoginOnClose[12]);
-  const tmp16 = closure_6;
+  const tmp10 = handleSubmit;
+  const tmp15 = closure_11;
+  const tmp16 = closure_10;
+  const tmp18 = handleSubmit(resetLoginOnClose[12]);
+  const tmp19 = closure_6;
+  obj = { style: items5, children: null };
   items5[1] = Boolean(error) && tmp.minHeightGuard;
-  obj1.style = items5;
   if (showActivityIndicator) {
-    const obj6 = appState(resetLoginOnClose[8]);
-    let unsafe_rawColors = handleSubmit(resetLoginOnClose[7]).unsafe_rawColors;
-    const isThemeDarkResult = appState(resetLoginOnClose[8]).isThemeDark(obj.useThemeContext().theme);
+    const tmp2Result = tmp2(tmp3[8]);
+    let unsafe_rawColors = tmp10(tmp3[7]).unsafe_rawColors;
+    const isThemeDarkResult = tmp2(tmp3[8]).isThemeDark(obj.useThemeContext().theme);
     unsafe_rawColors = first1;
-    let obj2 = { color: appState(resetLoginOnClose[8]).isThemeDark(obj.useThemeContext().theme) ? unsafe_rawColors.WHITE : unsafe_rawColors.PRIMARY_500 };
-    callback(first1, obj2);
-    const tmp27 = appState(resetLoginOnClose[8]).isThemeDark(obj.useThemeContext().theme) ? unsafe_rawColors.WHITE : unsafe_rawColors.PRIMARY_500;
+    const obj1 = { color: null };
+    obj1[0] = tmp2(tmp3[8]).isThemeDark(obj.useThemeContext().theme) ? unsafe_rawColors.WHITE : unsafe_rawColors.PRIMARY_500;
+    let tmp17Result = tmp17(first1, obj1);
+    const tmp23 = tmp2(tmp3[8]).isThemeDark(obj.useThemeContext().theme) ? unsafe_rawColors.WHITE : unsafe_rawColors.PRIMARY_500;
   } else {
-    let tmp18 = null;
+    tmp17Result = null;
     if (null != error) {
-      const obj3 = { style: tmp.error, variant: "text-md/medium", children: error };
-      tmp18 = callback(appState(resetLoginOnClose[14]).Text, obj3);
+      let obj2 = { style: null, variant: "text-md/medium", children: null };
+      obj2[0] = tmp.error;
+      obj2[2] = error;
+      tmp17Result = tmp17(tmp2(tmp3[14]).Text, obj2);
     }
-    obj1.children = tmp18;
-    items4[1] = tmp14(tmp16, obj1);
-    obj.children = items4;
-    return tmp12(tmp13, obj);
+    const obj3 = { children: null };
+    obj[1] = tmp17Result;
+    items4[1] = tmp17(tmp19, obj);
+    obj3[0] = items4;
+    return tmp15(tmp16, obj3);
   }
 });
 const result = require("get ActivityIndicator").fileFinishedImporting("modules/auth/native/components/MFACodeInput.tsx");

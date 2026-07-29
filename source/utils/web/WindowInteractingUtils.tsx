@@ -1,10 +1,10 @@
-// Module ID: 5169
-// Function ID: 44642
+// Module ID: 5191
+// Function ID: 5192
 // Name: INTERACTION_EVENTS
 // Dependencies: [2]
 // Exports: clearCurrentlyInteractingWindowId, getCurrentlyInteractingWindowId, setCurrentlyInteractingWindowId
 
-// Module 5169 (INTERACTION_EVENTS)
+// Module 5191 (INTERACTION_EVENTS)
 let c0 = null;
 const result = require("set").fileFinishedImporting("utils/web/WindowInteractingUtils.tsx");
 

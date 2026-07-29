@@ -1,196 +1,193 @@
-// Module ID: 13616
-// Function ID: 104614
+// Module ID: 13637
+// Function ID: 13638
 // Name: CommonProperty
-// Dependencies: [57, 31, 27, 1850, 13440, 653, 33, 4165, 689, 4161, 5198, 9594, 3747, 9430, 4695, 5525, 4113, 566, 6655, 4576, 5536, 5537, 11304, 4124, 13617, 9215, 2]
+// Dependencies: [32, 19, 17, 1874, 13463, 676, 21, 4189, 712, 4185, 5220, 9616, 3771, 9454, 4717, 5543, 4137, 589, 6676, 4598, 5554, 5555, 11328, 4148, 13638, 9239, 2]
 // Exports: default
 
-// Module 13616 (CommonProperty)
+// Module 13637 (CommonProperty)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
-import { View } from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_7 from "_isNativeReflectConstruct";
+import Stack from "Stack";
+import { View } from "initialize";
+import mergeGuildAvatar from "mergeGuildAvatar";
+import initialize from "initialize";
 import { Fonts } from "ME";
-import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import jsxProd from "TableSwitchRow";
+import createCacheKey from "createCacheKey";
 
-let closure_8;
-let closure_9;
+let c9;
+let metroImportAll;
 const require = arg1;
 function CommonProperty(arg0) {
   let children;
   let name;
   ({ name, children } = arg0);
-  let obj = { style: _createForOfIteratorHelperLoose().commonProperty };
-  obj = { variant: "text-sm/semibold", color: "text-default", children: name };
-  const items = [callback2(require(4161) /* Text */.Text, obj), children];
-  obj.children = items;
+  const obj = { style: createCacheKey().commonProperty, children: null };
+  const items = [callback2(require(4185) /* Text */.Text, { variant: "text-sm/semibold", color: "text-default", children: name }), children];
+  obj[1] = items;
   return callback3(View, obj);
 }
 function LoggedEvent(arg0) {
+  let c2;
   let end;
   let event;
   let fingerprint;
   let properties;
   let start;
   let timestamp;
+  let tmp2;
   ({ properties, fingerprint } = arg0);
+  let map;
+  let dependencyMap;
   ({ event, timestamp, start, end } = arg0);
-  let map = _createForOfIteratorHelperLoose();
-  const tmp = callback(React.useState(false), 2);
-  const first = tmp[0];
-  const dependencyMap = tmp[1];
+  map = createCacheKey();
+  [tmp2, c2] = callback(React.useState(false), 2);
   user = user.getUser(fingerprint);
-  let obj = { collapsable: false };
-  obj = { arrow: !first, icon: callback2(fingerprint(9594).AnalyticsIcon, {}), label: event };
+  let CopyIcon = fingerprint;
+  let tmp6Result = dependencyMap;
+  let obj = { arrow: !tmp2, icon: null, label: null, subLabel: null, onPress: null, start: null, end: null };
+  obj[1] = callback2(fingerprint(9616).AnalyticsIcon, {});
+  obj[2] = event;
   if ("name" in properties) {
     let str2 = properties.name;
   } else {
-    let str = properties.location;
-    str = undefined;
-    if (null != str) {
-      str = str.toString();
+    str2 = undefined;
+    if (properties.location != null) {
+      str2 = str.toString();
     }
-    str2 = "N/A";
-    if (null != str) {
-      str2 = str;
+    if (str2 == null) {
+      str2 = "N/A";
     }
   }
-  obj.subLabel = str2;
-  obj.onPress = function onPress() {
-    return dependencyMap((arg0) => !arg0);
+  obj[3] = str2;
+  obj[4] = function onPress() {
+    return _undefined((arg0) => !arg0);
   };
-  obj.start = start;
-  obj.end = end;
-  let items = [callback2(fingerprint(5198).TableRow, obj), ];
-  if (!first) {
-    items[1] = first;
-    obj.children = items;
-    return callback3(View, obj);
+  obj[5] = start;
+  obj[6] = end;
+  let items = [callback2(fingerprint(5220).TableRow, obj), ];
+  if (!tmp2) {
+    obj = { collapsable: false, children: null };
+    items[1] = tmp2;
+    obj[1] = items;
+    return tmp4(tmp5, obj);
   } else {
-    obj = { style: map.detailsContainer };
-    let tmp11 = callback3;
-    let tmp12 = View;
-    let obj1 = { style: map.commonPropertiesContainer };
-    const obj2 = { name: "Timestamp (local)" };
-    let items3 = 9;
-    const obj3 = { variant: "text-sm/semibold", color: "mobile-text-heading-primary" };
-    let obj5 = map(3747)(timestamp);
-    obj3.children = obj5.calendar();
-    obj2.children = callback2(fingerprint(4161).Text, obj3);
-    let items1 = [callback2(CommonProperty, obj2), , ];
-    let tmp20 = null != user;
-    if (tmp20) {
-      const obj4 = { name: "User " };
-      obj5 = { user };
-      obj4.children = callback2(map(9430), obj5);
-      tmp20 = callback2(CommonProperty, obj4);
+    obj = { style: null, children: null };
+    obj[0] = map.detailsContainer;
+    let obj1 = { style: null, children: null };
+    obj1[0] = map.commonPropertiesContainer;
+    const obj2 = { name: "Timestamp (local)", children: null };
+    const obj3 = { variant: "text-sm/semibold", color: "mobile-text-heading-primary", children: null };
+    let obj4 = map(3771)(timestamp);
+    obj3[2] = obj4.calendar();
+    obj2[1] = tmp6(CopyIcon(4185).Text, obj3);
+    let items1 = [tmp6(CommonProperty, obj2), , ];
+    tmp6Result = null != user;
+    if (tmp6Result) {
+      obj4 = { name: "User ", children: null };
+      const obj5 = { user: null };
+      obj5[0] = user;
+      obj4[1] = tmp6(tmp10(9454), obj5);
+      tmp6Result = tmp6(tmp9, obj4);
     }
-    items1[1] = tmp20;
-    let obj6 = { name: "Fingerprint" };
+    items1[1] = tmp6Result;
     if (null != fingerprint) {
-      const obj7 = {
-        style: map.copyContainer,
-        onPress() {
-              if (null != fingerprint) {
-                fingerprint(5525).copy(fingerprint);
-                const obj = fingerprint(5525);
-              }
-            }
+      const obj6 = { style: null, onPress: null, children: null };
+      obj6[0] = map.copyContainer;
+      obj6[1] = function onPress() {
+        if (null != fingerprint) {
+          fingerprint(_undefined[15]).copy(tmp);
+          const obj = fingerprint(_undefined[15]);
+        }
       };
-      const obj8 = { variant: "text-sm/medium", color: "mobile-text-heading-primary" };
-      const items2 = [map.monospace, ];
-      const obj9 = { marginRight: 4 };
-      items2[1] = obj9;
-      obj8.style = items2;
-      obj8.children = fingerprint;
-      items3 = [callback2(fingerprint(dependencyMap[items3]).Text, obj8), ];
-      const obj10 = { size: "sm" };
-      items3[1] = callback2(fingerprint(4113).CopyIcon, obj10);
-      obj7.children = items3;
-      let tmp31 = callback3(fingerprint(4695).PressableOpacity, obj7);
-      const tmp36 = callback2(fingerprint(dependencyMap[items3]).Text, obj8);
+      const obj7 = { variant: "text-sm/medium", color: "mobile-text-heading-primary", style: null, children: null };
+      const items2 = [map.monospace, { marginRight: 4 }];
+      obj7[2] = items2;
+      obj7[3] = fingerprint;
+      const items3 = [tmp6(CopyIcon(4185).Text, obj7), ];
+      CopyIcon = CopyIcon(4137).CopyIcon;
+      tmp6Result = tmp6(CopyIcon, { size: "sm" });
+      items3[1] = tmp6Result;
+      obj6[2] = items3;
+      let tmp6Result1 = tmp4(CopyIcon(4717).PressableOpacity, obj6);
     } else {
-      const obj11 = { variant: "text-sm/medium", color: "text-muted", style: map.monospace, children: "null" };
-      tmp31 = callback2(fingerprint(dependencyMap[items3]).Text, obj11);
+      const obj8 = { variant: "text-sm/medium", color: "text-muted", style: null, children: "null" };
+      obj8[2] = map.monospace;
+      tmp6Result1 = tmp6(CopyIcon(4185).Text, obj8);
     }
-    obj6.children = tmp31;
-    obj6 = callback2(CommonProperty, obj6);
-    items1[2] = obj6;
-    obj1.children = items1;
+    const obj9 = { name: "Fingerprint", children: null };
+    obj9[1] = tmp6Result1;
+    items1[2] = tmp6(CommonProperty, obj9);
+    obj1[1] = items1;
     obj1 = [, ];
-    obj1[0] = tmp11(tmp12, obj1);
-    tmp11 = callback2;
-    tmp12 = View;
-    const obj12 = { style: map.customPropertiesContainer };
+    obj1[0] = tmp4(tmp5, obj1);
+    const obj10 = { style: null, children: null };
+    obj10[0] = map.customPropertiesContainer;
     const _Object = Object;
-    items1 = Object.entries(properties);
-    map = items1.map;
-    obj12.children = map((arg0) => {
+    const entries = Object.entries(properties);
+    map = entries.map;
+    obj10[1] = map((arg0) => {
       let tmp;
       let tmp2;
       [tmp, tmp2] = arg0;
-      let obj = { style: map.customProperty };
-      obj = { variant: "text-sm/semibold", color: "text-brand", style: map.customPropertyName };
-      const items = [tmp, ":"];
-      obj.children = items;
-      const items1 = [outer1_9(fingerprint(4161).Text, obj), ];
+      let obj = { style: map.customProperty, children: null };
+      obj = { variant: "text-sm/semibold", color: "text-brand", style: map.customPropertyName, children: items };
+      items = [tmp, ":"];
+      const items1 = [outer1_9(fingerprint(_undefined[9]).Text, obj), ];
       if (null != tmp2) {
-        obj = { variant: "text-sm/semibold", color: "mobile-text-heading-primary", style: map.monospace };
+        obj = { variant: "text-sm/semibold", color: "mobile-text-heading-primary", style: null, children: null };
+        obj[2] = tmp5.monospace;
         const _JSON = JSON;
-        obj.children = JSON.stringify(tmp2);
+        obj[3] = JSON.stringify(tmp2);
         let obj1 = obj;
       } else {
-        obj1 = { variant: "text-sm/semibold", color: "text-muted", style: map.monospace, children: "null" };
+        obj1 = { variant: "text-sm/semibold", color: "text-muted", style: null, children: "null" };
+        obj1[2] = tmp5.monospace;
       }
-      items1[1] = outer1_8(fingerprint(4161).Text, obj1);
-      obj.children = items1;
+      items1[1] = outer1_8(fingerprint(_undefined[9]).Text, obj1);
+      obj[1] = items1;
       return outer1_9(outer1_5, obj, tmp);
     });
-    obj1[1] = callback2(View, obj12);
-    obj.children = obj1;
-    callback3(View, obj);
-    const tmp10 = View;
-    const tmp11Result = tmp11(tmp12, obj1);
-    const tmp26 = callback2;
-    const tmp27 = CommonProperty;
-    const tmp9 = callback3;
+    items1 = tmp6(tmp5, obj10);
+    obj1[1] = items1;
+    obj[1] = obj1;
+    tmp4(tmp5, obj);
+    tmp10 = map;
+    const tmp4Result = tmp4(tmp5, obj1);
   }
 }
-({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW, flex: 1 };
-_createForOfIteratorHelperLoose.analyticsContainer = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.contentContainer = { padding: require("_createForOfIteratorHelperLoose").space.PX_16 };
-let obj1 = { padding: require("_createForOfIteratorHelperLoose").space.PX_16 };
-_createForOfIteratorHelperLoose.searchFieldContainer = { paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16 };
-let obj2 = { paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16 };
-_createForOfIteratorHelperLoose.detailsContainer = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SURFACE_HIGH };
-let obj3 = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SURFACE_HIGH };
-_createForOfIteratorHelperLoose.commonPropertiesContainer = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWEST, paddingHorizontal: 10 };
-_createForOfIteratorHelperLoose.commonProperty = { flexDirection: "row", alignItems: "center", justifyContent: "space-between", marginVertical: 8, height: 20 };
-_createForOfIteratorHelperLoose.customPropertiesContainer = { paddingHorizontal: 10, paddingVertical: 4 };
-_createForOfIteratorHelperLoose.customProperty = { flexDirection: "row", alignItems: "center", flexWrap: "wrap", justifyContent: "flex-start", marginVertical: 4 };
-let obj5 = { fontWeight: "600", fontFamily: Fonts.CODE_BOLD, marginRight: 4 };
-_createForOfIteratorHelperLoose.customPropertyName = obj5;
-_createForOfIteratorHelperLoose.monospace = { fontFamily: Fonts.CODE_BOLD };
-_createForOfIteratorHelperLoose.copyContainer = { flexDirection: "row", alignItems: "center" };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-let obj4 = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWEST, paddingHorizontal: 10 };
+({ jsx: metroImportAll, jsxs: c9 } = jsxProd);
+createCacheKey = { analyticsContainer: null, contentContainer: null, searchFieldContainer: null, detailsContainer: null, commonPropertiesContainer: null, commonProperty: null, customPropertiesContainer: null, customProperty: null, customPropertyName: null, monospace: null, copyContainer: null };
+createCacheKey = { backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW, flex: 1 };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { padding: require("Themes").space.PX_16 };
+let obj1 = { padding: require("Themes").space.PX_16 };
+createCacheKey[2] = { paddingHorizontal: require("Themes").space.PX_16 };
+let obj2 = { paddingHorizontal: require("Themes").space.PX_16 };
+createCacheKey[3] = { backgroundColor: require("Themes").colors.BACKGROUND_SURFACE_HIGH };
+let obj3 = { backgroundColor: require("Themes").colors.BACKGROUND_SURFACE_HIGH };
+createCacheKey[4] = { backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOWEST, paddingHorizontal: 10 };
+createCacheKey[5] = { flexDirection: "row", alignItems: "center", justifyContent: "space-between", marginVertical: 8, height: 20 };
+createCacheKey[6] = { paddingHorizontal: 10, paddingVertical: 4 };
+createCacheKey[7] = { flexDirection: "row", alignItems: "center", flexWrap: "wrap", justifyContent: "flex-start", marginVertical: 4 };
+createCacheKey[8] = { fontWeight: "600", fontFamily: Fonts.CODE_BOLD, marginRight: 4 };
+createCacheKey[9] = { fontFamily: Fonts.CODE_BOLD };
+createCacheKey[10] = { flexDirection: "row", alignItems: "center" };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let obj4 = { backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOWEST, paddingHorizontal: 10 };
 const result = require("get ActivityIndicator").fileFinishedImporting("modules/devtools/native/components/screens/DevToolsAnalyticsScreen.tsx");
 
 export default function DevToolsAnalyticsScreen() {
   let str;
-  let tmp6;
-  const tmp = _createForOfIteratorHelperLoose();
-  let obj = trimmed(566);
+  let tmp8;
+  const tmp = createCacheKey();
+  let obj = trimmed(589);
   const items = [loggedEvents];
   loggedEvents = loggedEvents.loggedEvents;
-  const stateFromStores = obj.useStateFromStores(items, () => outer1_7.loggedEventsVersion);
-  const tmp3 = callback(React.useState(false), 2);
-  const first = tmp3[0];
-  [str, tmp6] = callback(React.useState(""), 2);
-  const tmp5 = callback(React.useState(""), 2);
+  const stateFromStores = obj.useStateFromStores(items, () => loggedEventsVersion.loggedEventsVersion);
+  const tmp5 = callback(React.useState(false), 2);
+  const first = tmp5[0];
+  [str, tmp8] = callback(React.useState(""), 2);
+  const tmp7 = callback(React.useState(""), 2);
   trimmed = str.toLowerCase().trim();
   let found = loggedEvents;
   if ("" !== trimmed) {
@@ -205,48 +202,48 @@ export default function DevToolsAnalyticsScreen() {
   } else {
     reversed = items1;
   }
-  obj = { style: tmp.analyticsContainer };
-  obj = {};
-  const obj1 = { spacing: 16 };
-  const obj2 = { title: "Actions", hasIcons: true };
-  const obj3 = { icon: callback2(trimmed(11304).ArrowsUpDownIcon, {}), label: "Reverse Events", value: first, onValueChange: tmp3[1] };
-  const items2 = [callback2(trimmed(5537).TableSwitchRow, obj3), ];
-  const obj4 = { arrow: true, variant: "danger", icon: callback2(trimmed(4124).TrashIcon, { color: "text-feedback-critical" }), label: "Clear Analytics Log", onPress: trimmed(13617).clearAnalyticsLog };
-  items2[1] = callback2(trimmed(5198).TableRow, obj4);
-  obj2.children = items2;
-  const items3 = [callback3(trimmed(5536).TableRowGroup, obj2), , ];
+  obj = { style: tmp.analyticsContainer, children: null };
+  obj = { title: "Actions", hasIcons: true, children: null };
+  const obj1 = { icon: null, label: "Reverse Events", value: null, onValueChange: null };
+  obj1[0] = callback2(trimmed(11328).ArrowsUpDownIcon, {});
+  obj1[2] = first;
+  obj1[3] = tmp5[1];
+  const items2 = [callback2(trimmed(5555).TableSwitchRow, obj1), ];
+  const obj2 = { arrow: true, variant: "danger", icon: null, label: "Clear Analytics Log", onPress: null };
+  obj2[2] = callback2(trimmed(4148).TrashIcon, { color: "text-feedback-critical" });
+  obj2[4] = trimmed(13638).clearAnalyticsLog;
+  items2[1] = callback2(trimmed(5220).TableRow, obj2);
+  obj[2] = items2;
+  const items3 = [callback3(trimmed(5554).TableRowGroup, obj), , ];
   const str2 = str.toLowerCase();
-  const tmp10 = View;
-  const tmp11 = callback2;
-  const tmp12 = callback3;
-  const tmp9 = callback2;
-  items3[1] = callback2(View, { style: tmp.searchFieldContainer, children: callback2(trimmed(9215).SearchField, { placeholder: "Search by event name", onChange: tmp6 }) });
-  const obj6 = { title: "Analytics Events", hasIcons: false };
+  const tmp12 = View;
+  const tmp13 = callback3;
+  items3[1] = callback2(View, { style: tmp.searchFieldContainer, children: callback2(trimmed(9239).SearchField, { placeholder: "Search by event name", onChange: tmp8 }) });
   if (0 === loggedEvents.length) {
-    const obj7 = { label: "No events logged." };
-    let tmp14 = callback2(trimmed(5198).TableRow, obj7);
+    let tmp11Result = tmp11(tmp2(5220).TableRow, { label: "No events logged." });
   } else {
-    tmp14 = null;
+    tmp11Result = null;
     if (0 === found.length) {
-      const obj8 = {};
+      const obj4 = { label: null };
       const _HermesInternal = HermesInternal;
-      obj8.label = "No events match \"" + str + "\"";
-      tmp14 = callback2(trimmed(5198).TableRow, obj8);
+      obj4[0] = "No events match \"" + str + "\"";
+      tmp11Result = tmp11(tmp2(5220).TableRow, obj4);
     }
   }
-  obj6.children = tmp14;
-  items3[2] = callback2(trimmed(5536).TableRowGroup, obj6);
-  obj1.children = items3;
-  obj.ListHeaderComponent = tmp12(trimmed(4576).Stack, obj1);
-  obj.contentContainerStyle = tmp.contentContainer;
-  obj.extraData = stateFromStores;
-  obj.data = reversed;
-  obj.renderItem = function renderItem(arg0) {
+  const obj5 = { ListHeaderComponent: null, contentContainerStyle: null, extraData: null, data: null, renderItem: null };
+  const obj6 = { spacing: 16, children: null };
+  items3[2] = callback2(trimmed(5554).TableRowGroup, { title: "Analytics Events", hasIcons: false, children: tmp11Result });
+  obj6[1] = items3;
+  obj5[0] = tmp13(trimmed(4598).Stack, obj6);
+  obj5[1] = tmp.contentContainer;
+  obj5[2] = stateFromStores;
+  obj5[3] = reversed;
+  obj5[4] = function renderItem(arg0) {
     let index;
     let item;
     ({ item, index } = arg0);
     return outer1_8(outer1_12, { start: 0 === index, end: index === reversed.length - 1, event: item.event, properties: item.properties, timestamp: item.timestamp, fingerprint: item.fingerprint });
   };
-  obj.children = tmp11(trimmed(6655).FlashList, obj);
-  return tmp9(tmp10, obj);
+  obj[1] = callback2(trimmed(6676).FlashList, obj5);
+  return callback2(tmp12, obj);
 };

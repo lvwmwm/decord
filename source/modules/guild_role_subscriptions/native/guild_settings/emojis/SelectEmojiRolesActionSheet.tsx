@@ -1,46 +1,45 @@
-// Module ID: 16586
-// Function ID: 129066
+// Module ID: 16621
+// Function ID: 16622
 // Name: SelectEmojiRolesActionSheet
-// Dependencies: [57, 31, 27, 1277, 482, 33, 4165, 689, 5087, 14207, 4695, 1273, 1212, 5220, 5533, 7655, 7611, 4161, 2]
+// Dependencies: [32, 19, 17, 1301, 505, 21, 4189, 712, 5109, 14229, 4717, 1297, 1236, 5242, 5551, 7678, 7634, 4185, 2]
 // Exports: default
 
-// Module 16586 (SelectEmojiRolesActionSheet)
+// Module 16621 (SelectEmojiRolesActionSheet)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
-import { View } from "get ActivityIndicator";
+import noop from "noop";
+import { View } from "Text";
 import { Fonts } from "sum";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 import importDefaultResult from "createTextStyle";
 import importDefaultResult1 from "createTextStyle";
 import importDefaultResult2 from "createTextStyle";
 
 let closure_6;
-let closure_7;
-let closure_8;
+let error;
+let metroImportAll;
 const require = arg1;
-({ jsx: closure_6, jsxs: closure_7, Fragment: closure_8 } = jsxProd);
+({ jsx: closure_6, jsxs: error, Fragment: metroImportAll } = jsxProd);
 let closure_9 = require("semanticColor").FORM_ROW_VERTICAL_PADDING + 22;
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { flex: 1, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW };
-_createForOfIteratorHelperLoose.list = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.label = { flex: 1, flexDirection: "row", alignItems: "center" };
-const merged = Object.assign(require("createTextStyle")(Fonts.PRIMARY_MEDIUM, require("_createForOfIteratorHelperLoose").colors.INTERACTIVE_TEXT_ACTIVE, 16));
-_createForOfIteratorHelperLoose.roleName = { flexShrink: 1 };
-let obj2 = { borderRadius: require("_createForOfIteratorHelperLoose").radii.round, backgroundColor: require("_createForOfIteratorHelperLoose").unsafe_rawColors.RED_400, marginLeft: 8, paddingHorizontal: 4, height: 16 };
-_createForOfIteratorHelperLoose.archivedBadge = obj2;
+createCacheKey = { list: null, label: null, roleName: null, archivedBadge: null, archivedBadgeText: null, divider: null, saveButton: null, saveButtonDisabled: null };
+createCacheKey = { flex: 1, backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { flex: 1, flexDirection: "row", alignItems: "center" };
+const merged = Object.assign(require("createTextStyle")(Fonts.PRIMARY_MEDIUM, require("Themes").colors.INTERACTIVE_TEXT_ACTIVE, 16));
+createCacheKey[2] = { flexShrink: 1 };
 let obj1 = { flexShrink: 1 };
+createCacheKey[3] = { borderRadius: require("Themes").radii.round, backgroundColor: require("Themes").unsafe_rawColors.RED_400, marginLeft: 8, paddingHorizontal: 4, height: 16 };
+let obj2 = { borderRadius: require("Themes").radii.round, backgroundColor: require("Themes").unsafe_rawColors.RED_400, marginLeft: 8, paddingHorizontal: 4, height: 16 };
 let obj3 = {};
-const merged1 = Object.assign(require("createTextStyle")(Fonts.PRIMARY_BOLD, require("_createForOfIteratorHelperLoose").unsafe_rawColors.WHITE, 12, { uppercase: true }));
-_createForOfIteratorHelperLoose.archivedBadgeText = obj3;
-let obj4 = { uppercase: true };
-_createForOfIteratorHelperLoose.divider = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BORDER_SUBTLE };
-let obj5 = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BORDER_SUBTLE };
-const obj6 = {};
-const merged2 = Object.assign(require("createTextStyle")(Fonts.PRIMARY_SEMIBOLD, require("_createForOfIteratorHelperLoose").colors.CONTROL_BRAND_FOREGROUND, 16));
-_createForOfIteratorHelperLoose.saveButton = obj6;
-_createForOfIteratorHelperLoose.saveButtonDisabled = { opacity: 0.3 };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+const merged1 = Object.assign(require("createTextStyle")(Fonts.PRIMARY_BOLD, require("Themes").unsafe_rawColors.WHITE, 12, { uppercase: true }));
+createCacheKey[4] = obj3;
+createCacheKey[5] = { backgroundColor: require("Themes").colors.BORDER_SUBTLE };
+let obj4 = { backgroundColor: require("Themes").colors.BORDER_SUBTLE };
+const obj5 = {};
+const merged2 = Object.assign(require("createTextStyle")(Fonts.PRIMARY_SEMIBOLD, require("Themes").colors.CONTROL_BRAND_FOREGROUND, 16));
+createCacheKey[6] = obj5;
+createCacheKey[7] = { opacity: 0.3 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
 const result = require("get ActivityIndicator").fileFinishedImporting("modules/guild_role_subscriptions/native/guild_settings/emojis/SelectEmojiRolesActionSheet.tsx");
 
 export default function SelectEmojiRolesActionSheet(arg0) {
@@ -49,106 +48,114 @@ export default function SelectEmojiRolesActionSheet(arg0) {
   let onCancel;
   let require;
   ({ onSave: require, emoji } = arg0);
+  let dependencyMap;
+  let first;
+  let React;
+  let subscriptionListingsForGuild;
   ({ guildId, onCancel } = arg0);
-  const tmp = _createForOfIteratorHelperLoose();
-  const dependencyMap = tmp;
+  const tmp = createCacheKey();
+  dependencyMap = tmp;
   const tmp2 = first(React.useState(() => {
     let roles;
-    if (null != emoji) {
+    if (emoji != null) {
       roles = emoji.roles;
     }
-    if (null == roles) {
+    if (roles == null) {
       roles = [];
     }
     return new Set(roles);
   }), 2);
   first = tmp2[0];
   React = tmp2[1];
-  let obj = require(14207) /* _createForOfIteratorHelperLoose */;
-  const subscriptionListingsForGuild = obj.useSubscriptionListingsForGuild(guildId, { includeSoftDeleted: true, sortDeletedListingsLast: true });
+  let obj = require(14229) /* useFetchListingsForGuild */;
+  subscriptionListingsForGuild = obj.useSubscriptionListingsForGuild(guildId, { includeSoftDeleted: true, sortDeletedListingsLast: true });
   obj = {
     onPress() {
       callback(Array.from(first));
-    }
+    },
+    disabled: saveButtonDisabled,
+    accessibilityRole: "button",
+    children: null
   };
-  let saveButtonDisabled = !tmp4;
-  obj.disabled = saveButtonDisabled;
-  obj.accessibilityRole = "button";
-  obj = {};
+  saveButtonDisabled = !tmp4;
   let items = [tmp.saveButton, ];
   if (first.size <= 0) {
     saveButtonDisabled = tmp.saveButtonDisabled;
   }
+  obj = { style: items, children: null };
   items[1] = saveButtonDisabled;
-  obj.style = items;
   if (null == emoji) {
-    const intl2 = require(1212) /* getSystemLocale */.intl;
-    let stringResult = intl2.string(require(1212) /* getSystemLocale */.t["3UB9ad"]);
+    const intl2 = tmp5(1236).intl;
+    let stringResult = intl2.string(tmp5(1236).t["3UB9ad"]);
   } else {
-    let intl = require(1212) /* getSystemLocale */.intl;
-    stringResult = intl.string(require(1212) /* getSystemLocale */.t["R3BPH+"]);
+    let intl = tmp5(1236).intl;
+    stringResult = intl.string(tmp5(1236).t["R3BPH+"]);
   }
-  obj.children = stringResult;
-  obj.children = callback(require(1273) /* Button */.LegacyText, obj);
-  let obj1 = {};
-  const intl3 = require(1212) /* getSystemLocale */.intl;
-  obj1.title = intl3.string(require(1212) /* getSystemLocale */.t.JPU0EF);
-  const intl4 = require(1212) /* getSystemLocale */.intl;
-  obj1.subtitle = intl4.string(require(1212) /* getSystemLocale */.t.MZusPv);
-  obj1.trailing = callback(require(4695) /* PressableBase */.PressableOpacity, obj);
-  const tmp5Result = callback(require(4695) /* PressableBase */.PressableOpacity, obj);
-  let obj2 = { scrollable: true, header: callback(require(5220) /* RedesignBottomSheetTitleHeaderBase */.BottomSheetTitleHeader, obj1), startExpanded: true, onDismiss: onCancel };
-  let items1 = [subscriptionListingsForGuild.length];
-  obj2.children = callback(emoji(7655), {
+  obj[1] = stringResult;
+  obj[3] = closure_6(require(1297) /* Button */.LegacyText, obj);
+  let tmp7Result = tmp7(require(4717) /* PressableBase */.PressableOpacity, obj);
+  let obj1 = { title: null, subtitle: null, trailing: null };
+  const intl3 = tmp5(1236).intl;
+  obj1[0] = intl3.string(require(1236) /* getSystemLocale */.t.JPU0EF);
+  const intl4 = tmp5(1236).intl;
+  obj1[1] = intl4.string(require(1236) /* getSystemLocale */.t.MZusPv);
+  obj1[2] = tmp7Result;
+  tmp7Result = tmp7(tmp5(5242).BottomSheetTitleHeader, obj1);
+  let obj2 = { scrollable: true, header: tmp7Result, startExpanded: true, onDismiss: onCancel, children: null };
+  const items1 = [subscriptionListingsForGuild.length];
+  obj2[4] = closure_6(emoji(7678), {
     inActionSheet: true,
     style: tmp.list,
     itemSize: closure_9,
     sections: items1,
     renderItem(arg0, arg1) {
       let closure_0 = tmp;
-      let obj = {};
-      obj = {};
-      obj = { style: tmp.label };
-      const obj1 = { style: subscriptionListingsForGuild[arg1].roleName, lineClamp: 1, variant: "text-md/medium", color: "interactive-text-active", children: subscriptionListingsForGuild[arg1].name };
-      const items = [outer1_6(outer1_0(subscriptionListingsForGuild[arg1][17]).Text, obj1), ];
+      const diff = subscriptionListingsForGuild.length - 1;
+      let obj = { style: _undefined.label, children: null };
+      obj = { style: _undefined.roleName, lineClamp: 1, variant: "text-md/medium", color: "interactive-text-active", children: tmp.name };
+      const items = [outer1_6(outer1_0(_undefined[17]).Text, obj), ];
       let archived = tmp.archived;
       if (archived) {
-        const obj2 = { style: tmp.archivedBadge };
-        const obj3 = { style: tmp.archivedBadgeText, variant: "text-xs/bold", color: "text-overlay-light" };
-        const intl = outer1_0(tmp[12]).intl;
-        obj3.children = intl.string(outer1_0(tmp[12]).t.HRtfn9);
-        obj2.children = outer1_6(outer1_0(tmp[17]).Text, obj3);
-        archived = outer1_6(subscriptionListingsForGuild, obj2);
+        obj = { style: null, children: null };
+        obj[0] = tmp9.archivedBadge;
+        const obj1 = { style: null, variant: "text-xs/bold", color: "text-overlay-light", children: null };
+        obj1[0] = tmp9.archivedBadgeText;
+        const intl = tmp6(tmp7[12]).intl;
+        obj1[3] = intl.string(tmp6(tmp7[12]).t.HRtfn9);
+        obj[1] = tmp5(tmp6(tmp7[17]).Text, obj1);
+        archived = tmp5(tmp8, obj);
       }
-      items[1] = archived;
-      obj.children = items;
-      obj.label = outer1_7(subscriptionListingsForGuild, obj);
-      obj.onPress = function onPress() {
-        return (function toggleRole(role_id) {
-          let closure_0 = role_id;
-          return outer2_4((has) => {
+      const obj2 = {
+        label: outer1_7(subscriptionListingsForGuild, obj),
+        onPress() {
+          role_id = role_id.role_id;
+          return outer1_4((has) => {
             const set = new Set(has);
-            if (has.has(closure_0)) {
-              set.delete(closure_0);
+            if (has.has(role_id)) {
+              set.delete(tmp);
             } else {
-              set.add(closure_0);
+              set.add(tmp);
             }
             return set;
           });
-        })(tmp.role_id);
+        },
+        trailing: null
       };
-      const obj4 = { selected: first.has(subscriptionListingsForGuild[arg1].role_id) };
-      obj.trailing = outer1_6(outer1_0(subscriptionListingsForGuild[arg1][16]).FormRow.Checkbox, obj4);
-      const items1 = [outer1_6(outer1_0(subscriptionListingsForGuild[arg1][16]).FormRow, obj), ];
-      let tmp12 = !tmp2;
-      if (arg1 !== subscriptionListingsForGuild.length - 1) {
-        const obj5 = { style: tmp.divider };
-        tmp12 = outer1_6(outer1_0(tmp[16]).FormDivider, obj5);
+      items[1] = archived;
+      obj[1] = items;
+      const obj3 = { selected: null };
+      obj3[0] = first.has(subscriptionListingsForGuild[arg1].role_id);
+      obj2[2] = outer1_6(outer1_0(_undefined[16]).FormRow.Checkbox, obj3);
+      const children = [outer1_6(outer1_0(_undefined[16]).FormRow, obj2), ];
+      let tmp5Result = !tmp10;
+      if (arg1 !== diff) {
+        const obj4 = { style: null };
+        obj4[0] = tmp9.divider;
+        tmp5Result = tmp5(tmp6(tmp7[16]).FormDivider, obj4);
       }
-      items1[1] = tmp12;
-      obj.children = items1;
-      return outer1_7(outer1_8, obj);
+      children[1] = tmp5Result;
+      return outer1_7(outer1_8, { children });
     }
   });
-  return callback(require(5533) /* ActionSheet */.ActionSheet, obj2);
+  return closure_6(require(5551) /* ActionSheet */.ActionSheet, obj2);
 };

@@ -1,29 +1,49 @@
-// Module ID: 16297
-// Function ID: 126296
-// Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 3838, 5112, 2]
+// Module ID: 16332
+// Function ID: 16333
+// Name: setVerifyTimezone
+// Dependencies: [5134, 3862, 2]
 
-// Module 16297 (_isNativeReflectConstruct)
-import AutomaticLifecycleManager from "AutomaticLifecycleManager";
-import set from "set";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
-import tmp2 from "AutomaticLifecycleManager";
+// Module 16332 (setVerifyTimezone)
+import "initialize";
 
-const require = arg1;
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
+let require = arg1;
+let c2 = false;
+class UserSettingsManager extends tmp2 {
+  constructor() {
+    applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
+    closure_0 = applyArgumentsResult;
+    applyArgumentsResult.actions = {
+      POST_CONNECTION_OPEN() {
+            applyArgumentsResult.setVerifyTimezone();
+          },
+      OVERLAY_INITIALIZE: applyArgumentsResult.setVerifyTimezone,
+      USER_SETTINGS_PROTO_UPDATE: applyArgumentsResult.ensureTimezoneUpdated
+    };
+    return applyArgumentsResult;
   }
-  const result = _isNativeReflectConstruct();
 }
-let c7 = false;
-tmp2 = new tmp2();
-let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/user_settings/UserSettingsManager.tsx");
+const prototype = UserSettingsManager.prototype;
+prototype["setVerifyTimezone"] = function setVerifyTimezone() {
+  let c2 = true;
+};
+prototype["ensureTimezoneUpdated"] = function ensureTimezoneUpdated() {
+  if (c2) {
+    c2 = false;
+    const _Date = Date;
+    const date = new Date();
+    const timezoneOffset = date.getTimezoneOffset();
+    let TimezoneOffset = timezoneOffset(3862).TimezoneOffset;
+    if (TimezoneOffset.getSetting() !== timezoneOffset) {
+      const _setImmediate = setImmediate;
+      setImmediate(() => {
+        const TimezoneOffset = timezoneOffset(outer1_1[1]).TimezoneOffset;
+        return TimezoneOffset.updateSetting(timezoneOffset);
+      });
+    }
+  }
+};
+const userSettingsManager = new UserSettingsManager();
+const result = require("set").fileFinishedImporting("modules/user_settings/UserSettingsManager.tsx");
 
-export default tmp2;
-export const UserSettingsManager = tmp2;
+export default userSettingsManager;
+export { UserSettingsManager };

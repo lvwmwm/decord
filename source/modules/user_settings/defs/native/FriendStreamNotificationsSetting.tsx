@@ -1,15 +1,15 @@
-// Module ID: 14434
-// Function ID: 110302
+// Module ID: 14456
+// Function ID: 14457
 // Name: toggle
-// Dependencies: [7733, 10099, 1212, 3838, 14435, 2]
+// Dependencies: [7756, 10120, 1236, 3862, 14457, 2]
 
-// Module 14434 (toggle)
+// Module 14456 (toggle)
 import createToggle from "createToggle";
 
 const toggle = createToggle.createToggle({
   useTitle() {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(require(1212) /* getSystemLocale */.t.FEFn90);
+    const intl = require(1236) /* getSystemLocale */.intl;
+    return intl.string(require(1236) /* getSystemLocale */.t.FEFn90);
   },
   parent: require("MobileSetting").MobileSetting.NOTIFICATIONS,
   useValue: require("explicitContentFromProto").StreamNotificationsEnabled.useSetting,
@@ -17,8 +17,8 @@ const toggle = createToggle.createToggle({
 });
 const obj = {
   useTitle() {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(require(1212) /* getSystemLocale */.t.FEFn90);
+    const intl = require(1236) /* getSystemLocale */.intl;
+    return intl.string(require(1236) /* getSystemLocale */.t.FEFn90);
   },
   parent: require("MobileSetting").MobileSetting.NOTIFICATIONS,
   useValue: require("explicitContentFromProto").StreamNotificationsEnabled.useSetting,

@@ -1,14 +1,15 @@
-// Module ID: 14827
-// Function ID: 112885
+// Module ID: 14853
+// Function ID: 14854
 // Name: apexExperiment
-// Dependencies: [1428, 2]
+// Dependencies: [1452, 2]
 // Exports: useRiveRendererExperiment
 
-// Module 14827 (apexExperiment)
+// Module 14853 (apexExperiment)
 import ApexExperiment from "ApexExperiment";
 
-const obj = { name: "2025-12-rive-mobile-renderer", kind: "user", defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } };
-const apexExperiment = ApexExperiment.createApexExperiment(obj);
+const obj = { 1: null };
+obj[1] = { enabled: true };
+const apexExperiment = ApexExperiment.createApexExperiment({ name: "2025-12-rive-mobile-renderer", kind: "user", defaultConfig: { enabled: false }, variations: obj });
 const result = require("set").fileFinishedImporting("modules/design/RiveMobileRendererExperiment.tsx");
 
 export default apexExperiment;

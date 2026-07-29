@@ -1,381 +1,359 @@
-// Module ID: 14145
-// Function ID: 108605
+// Module ID: 14167
+// Function ID: 14168
 // Name: logger
-// Dependencies: [6, 7, 4, 14141, 14143, 2]
+// Dependencies: [4, 14163, 14165, 2]
 
-// Module 14145 (logger)
-import _classCallCheck from "_classCallCheck";
-import _defineProperties from "_defineProperties";
-
-const require = arg1;
-const logger = new require("U").Logger("MobileCustomMuxIntegration");
-const tmp3 = (() => {
-  class MobileCustomMuxIntegration {
-    constructor(arg0) {
-      self = this;
-      tmp = outer1_3(this, self);
-      this.isInitialized = false;
-      this.viewInitEmitted = false;
-      this.playerReadyEmitted = false;
-      this.playStarted = false;
-      this.playingEmitted = false;
-      this.currentPlayheadTime = 0;
-      this.currentRendition = null;
-      this.getPlayheadTime = () => self.currentPlayheadTime * 1000;
-      this.getStateData = () => self.videoState;
-      this.config = arg0;
-      SessionManager = MobileCustomMuxIntegration(outer1_2[3]).SessionManager;
-      this.sessionId = SessionManager.generateSessionId();
-      this.playerId = "discord-mobile-" + this.sessionId;
-      obj = { player_is_paused: true, player_width: 0, player_height: 0, player_autoplay_on: false, player_preload_on: true, video_cdn: "Cloudflare" };
-      obj.video_series = arg0.contentMetadata.questId;
-      obj.video_producer = arg0.contentMetadata.gameId;
-      obj.video_brand = arg0.contentMetadata.gameName;
-      obj.video_title = arg0.contentMetadata.title;
-      obj.video_stream_type = arg0.contentMetadata.videoStreamType;
-      obj.video_source_url = arg0.contentMetadata.contentId;
-      str = "video/mp4";
-      if ("hls" === arg0.contentMetadata.videoStreamType) {
-        str = "application/x-mpegURL";
+// Module 14167 (logger)
+const logger = new require("log").Logger("MobileCustomMuxIntegration");
+let c4 = "1.0.0";
+const Cloudflare = "Cloudflare";
+let c6 = 1000;
+let result = require("U").fileFinishedImporting("modules/video-qoe/integrations/MobileCustomMuxIntegration.tsx");
+class MobileCustomMuxIntegration {
+  constructor(arg0) {
+    obj = Object.create(new.target.prototype);
+    closure_0 = obj;
+    obj.isInitialized = false;
+    obj.viewInitEmitted = false;
+    obj.playerReadyEmitted = false;
+    obj.playStarted = false;
+    obj.playingEmitted = false;
+    obj.currentPlayheadTime = 0;
+    obj.currentRendition = null;
+    obj.getPlayheadTime = function getPlayheadTime() {
+      return obj.currentPlayheadTime * outer1_6;
+    };
+    obj.getStateData = function getStateData() {
+      return obj.videoState;
+    };
+    obj.config = global;
+    SessionManager = require("generateSessionId").SessionManager;
+    obj.sessionId = SessionManager.generateSessionId();
+    obj.playerId = "discord-mobile-" + obj.sessionId;
+    obj = { player_is_paused: true, player_width: 0, player_height: 0, player_autoplay_on: false, player_preload_on: true, video_cdn: Cloudflare, video_series: global.contentMetadata.questId, video_producer: global.contentMetadata.gameId, video_brand: global.contentMetadata.gameName, video_title: global.contentMetadata.title, video_stream_type: global.contentMetadata.videoStreamType, video_source_url: global.contentMetadata.contentId, video_source_mime_type: null, video_source_duration: null };
+    str = "video/mp4";
+    if ("hls" === global.contentMetadata.videoStreamType) {
+      str = "application/x-mpegURL";
+    }
+    obj[12] = str;
+    obj[13] = global.contentMetadata.durationMs;
+    obj.videoState = obj;
+    return obj;
+  }
+}
+const prototype = MobileCustomMuxIntegration.prototype;
+prototype["initialize"] = function initialize() {
+  const self = this;
+  const muxEnvKey = this.getMuxEnvKey();
+  if (null != muxEnvKey) {
+    if (0 !== muxEnvKey.length) {
+      try {
+        let obj = importDefault(14165);
+        let flag = self.config.debug;
+        if (flag == null) {
+          flag = false;
+        }
+        obj = { debug: null, getPlayheadTime: null, getStateData: null, data: null };
+        obj[0] = flag;
+        ({ getPlayheadTime: obj2[1], getStateData: obj2[2] } = self);
+        obj[3] = self.mapConfigToMuxData(muxEnvKey);
+        obj.init(self.playerId, obj);
+        self.isInitialized = true;
+        obj = { playerId: null };
+        obj[0] = self.playerId;
+        logger.info("Mux Data mobile integration initialized", obj);
+      } catch (tmp8) {
+        logger.error("Error initializing Mux mobile integration", tmp8);
+        tmp.isInitialized = false;
       }
-      obj.video_source_mime_type = str;
-      obj.video_source_duration = arg0.contentMetadata.durationMs;
-      this.videoState = obj;
-      return;
     }
   }
-  let obj = {
-    key: "initialize",
-    value() {
-      const self = this;
-      const muxEnvKey = this.getMuxEnvKey();
-      if (null != muxEnvKey) {
-        if (0 !== arr.length) {
-          let obj = outer1_1(outer1_2[4]);
-          obj = {};
-          const debug = self.config.debug;
-          let tmp8 = tmp7;
-          if (null != debug) {
-            tmp8 = debug;
-          }
-          obj.debug = tmp8;
-          ({ getPlayheadTime: obj2.getPlayheadTime, getStateData: obj2.getStateData } = self);
-          obj.data = self.mapConfigToMuxData(muxEnvKey);
-          obj.init(self.playerId, obj);
-          self.isInitialized = true;
-          obj = { playerId: self.playerId };
-          outer1_5.info("Mux Data mobile integration initialized", obj);
-        }
-      }
-      outer1_5.info("Mux environment key not available, skipping QoE tracking");
-    }
-  };
-  const items = [obj, , , , , , , , , , , , , , , , , , , , , , , , , , , , ];
-  obj = {
-    key: "updatePlayheadTime",
-    value(currentPlayheadTime) {
-      this.currentPlayheadTime = currentPlayheadTime;
-    }
-  };
-  items[1] = obj;
-  obj = {
-    key: "updateVideoDimensions",
-    value(player_width, player_height) {
-      this.videoState.player_width = player_width;
-      this.videoState.player_height = player_height;
-    }
-  };
-  items[2] = obj;
-  items[3] = {
-    key: "updateVideoSourceDimensions",
-    value(video_source_width, video_source_height) {
-      this.videoState.video_source_width = video_source_width;
-      this.videoState.video_source_height = video_source_height;
-    }
-  };
-  items[4] = {
-    key: "updateVideoSource",
-    value(video_source_url, video_source_mime_type) {
-      this.videoState.video_source_url = video_source_url;
-      this.videoState.video_source_mime_type = video_source_mime_type;
-      let result;
-      if (null != arg2) {
-        result = arg2 * 1000;
-      }
-      this.videoState.video_source_duration = result;
-    }
-  };
-  items[5] = {
-    key: "updatePlayerState",
-    value(player_is_paused, player_is_fullscreen) {
-      this.videoState.player_is_paused = player_is_paused;
-      if (null != player_is_fullscreen) {
-        this.videoState.player_is_fullscreen = player_is_fullscreen;
+  logger.info("Mux environment key not available, skipping QoE tracking");
+};
+prototype["updatePlayheadTime"] = function updatePlayheadTime(currentPlayheadTime) {
+  this.currentPlayheadTime = currentPlayheadTime;
+};
+prototype["updateVideoDimensions"] = function updateVideoDimensions(player_width, player_height) {
+  this.videoState.player_width = player_width;
+  this.videoState.player_height = player_height;
+};
+prototype["updateVideoSourceDimensions"] = function updateVideoSourceDimensions(video_source_width, video_source_height) {
+  this.videoState.video_source_width = video_source_width;
+  this.videoState.video_source_height = video_source_height;
+};
+prototype["updateVideoSource"] = function updateVideoSource(video_source_url, video_source_mime_type) {
+  this.videoState.video_source_url = video_source_url;
+  this.videoState.video_source_mime_type = video_source_mime_type;
+  let result;
+  if (null != arg2) {
+    result = arg2 * c6;
+  }
+  this.videoState.video_source_duration = result;
+};
+prototype["updatePlayerState"] = function updatePlayerState(player_is_paused, player_is_fullscreen) {
+  this.videoState.player_is_paused = player_is_paused;
+  if (null != player_is_fullscreen) {
+    this.videoState.player_is_fullscreen = player_is_fullscreen;
+  }
+};
+prototype["emitPlayerReady"] = function emitPlayerReady() {
+  const self = this;
+  if (this.isInitialized) {
+    if (!self.playerReadyEmitted) {
+      try {
+        importDefault(14165).emit(self.playerId, "playerready");
+        self.playerReadyEmitted = true;
+        const obj = importDefault(14165);
+      } catch (tmp4) {
+        logger.error("Error emitting playerready event", tmp4);
       }
     }
-  };
-  items[6] = {
-    key: "emitPlayerReady",
-    value() {
-      const self = this;
-      if (this.isInitialized) {
-        if (!self.playerReadyEmitted) {
-          outer1_1(outer1_2[4]).emit(self.playerId, "playerready");
-          self.playerReadyEmitted = true;
-          const obj = outer1_1(outer1_2[4]);
-        }
+  }
+};
+prototype["emitViewInit"] = function emitViewInit() {
+  const self = this;
+  if (this.isInitialized) {
+    if (!self.viewInitEmitted) {
+      try {
+        importDefault(14165).emit(self.playerId, "viewinit");
+        self.viewInitEmitted = true;
+        const obj = importDefault(14165);
+      } catch (tmp4) {
+        logger.error("Error emitting viewinit event", tmp4);
       }
     }
-  };
-  items[7] = {
-    key: "emitViewInit",
-    value() {
-      const self = this;
-      if (this.isInitialized) {
-        if (!self.viewInitEmitted) {
-          outer1_1(outer1_2[4]).emit(self.playerId, "viewinit");
-          self.viewInitEmitted = true;
-          const obj = outer1_1(outer1_2[4]);
-        }
-      }
+  }
+};
+prototype["emitLoadStart"] = function emitLoadStart() {
+  const self = this;
+  if (this.isInitialized) {
+    try {
+      self.emitViewInit();
+    } catch (tmp2) {
+      logger.error("Error emitting loadstart/viewinit event", tmp2);
     }
-  };
-  items[8] = {
-    key: "emitLoadStart",
-    value() {
-      const self = this;
-      if (this.isInitialized) {
+  }
+};
+prototype["emitLoad"] = function emitLoad(arg0) {
+  const self = this;
+  if (this.isInitialized) {
+    try {
+      self.updateVideoSource(undefined, undefined, arg0);
+    } catch (tmp3) {
+      logger.error("Error emitting load events", tmp3);
+    }
+  }
+};
+prototype["emitPlay"] = function emitPlay() {
+  const self = this;
+  if (this.isInitialized) {
+    try {
+      if (!self.viewInitEmitted) {
         self.emitViewInit();
       }
+      self.updatePlayerState(false);
+      importDefault(14165).emit(self.playerId, "play");
+      self.playStarted = true;
+      self.playingEmitted = false;
+      const obj = importDefault(14165);
+    } catch (tmp6) {
+      logger.error("Error emitting play event", tmp6);
     }
-  };
-  items[9] = {
-    key: "emitLoad",
-    value(arg0) {
-      const self = this;
-      if (this.isInitialized) {
-        self.updateVideoSource(undefined, undefined, arg0);
-      }
+  }
+};
+prototype["emitPause"] = function emitPause() {
+  const self = this;
+  if (this.isInitialized) {
+    try {
+      self.updatePlayerState(true);
+      importDefault(14165).emit(self.playerId, "pause");
+      const obj = importDefault(14165);
+    } catch (tmp5) {
+      logger.error("Error emitting pause event", tmp5);
     }
-  };
-  items[10] = {
-    key: "emitPlay",
-    value() {
-      const self = this;
-      if (this.isInitialized) {
+  }
+};
+prototype["emitPlaying"] = function emitPlaying() {
+  const self = this;
+  if (this.isInitialized) {
+    if (!self.playingEmitted) {
+      try {
         if (!self.viewInitEmitted) {
           self.emitViewInit();
         }
-        self.updatePlayerState(false);
-        outer1_1(outer1_2[4]).emit(self.playerId, "play");
-        self.playStarted = true;
-        self.playingEmitted = false;
-        const obj = outer1_1(outer1_2[4]);
-      }
-    }
-  };
-  items[11] = {
-    key: "emitPause",
-    value() {
-      const self = this;
-      if (this.isInitialized) {
-        self.updatePlayerState(true);
-        outer1_1(outer1_2[4]).emit(self.playerId, "pause");
-        const obj = outer1_1(outer1_2[4]);
-      }
-    }
-  };
-  items[12] = {
-    key: "emitPlaying",
-    value() {
-      const self = this;
-      if (this.isInitialized) {
-        if (!self.playingEmitted) {
-          if (!self.viewInitEmitted) {
-            self.emitViewInit();
-          }
-          if (!self.playStarted) {
-            outer1_1(outer1_2[4]).emit(self.playerId, "play");
-            self.playStarted = true;
-            const obj = outer1_1(outer1_2[4]);
-          }
-          outer1_1(outer1_2[4]).emit(self.playerId, "playing");
-          self.playingEmitted = true;
-          const obj2 = outer1_1(outer1_2[4]);
+        if (!self.playStarted) {
+          importDefault(14165).emit(self.playerId, "play");
+          self.playStarted = true;
+          const obj = importDefault(14165);
         }
+        importDefault(14165).emit(self.playerId, "playing");
+        self.playingEmitted = true;
+        const obj2 = importDefault(14165);
+      } catch (tmp8) {
+        logger.error("Error emitting playing event", tmp8);
       }
     }
-  };
-  items[13] = {
-    key: "emitWaiting",
-    value() {
-      if (this.isInitialized) {
-        outer1_1(outer1_2[4]).emit(tmp.playerId, "waiting");
-        const obj = outer1_1(outer1_2[4]);
+  }
+};
+prototype["emitWaiting"] = function emitWaiting() {
+  if (this.isInitialized) {
+    try {
+      importDefault(14165).emit(tmp.playerId, "waiting");
+      const obj = importDefault(14165);
+    } catch (tmp5) {
+      logger.error("Error emitting waiting event", tmp5);
+    }
+  }
+};
+prototype["emitCanPlay"] = function emitCanPlay() {
+  this.emitPlayerReady();
+};
+prototype["emitSeeking"] = function emitSeeking() {
+  if (this.isInitialized) {
+    try {
+      importDefault(14165).emit(tmp.playerId, "seeking");
+      const obj = importDefault(14165);
+    } catch (tmp5) {
+      logger.error("Error emitting seeking event", tmp5);
+    }
+  }
+};
+prototype["emitSeeked"] = function emitSeeked() {
+  if (this.isInitialized) {
+    try {
+      importDefault(14165).emit(tmp.playerId, "seeked");
+      const obj = importDefault(14165);
+    } catch (tmp5) {
+      logger.error("Error emitting seeked event", tmp5);
+    }
+  }
+};
+prototype["emitEnded"] = function emitEnded() {
+  const self = this;
+  if (this.isInitialized) {
+    try {
+      importDefault(14165).emit(self.playerId, "ended");
+      self.emitViewEnd();
+      const obj = importDefault(14165);
+    } catch (tmp5) {
+      logger.error("Error emitting ended event", tmp5);
+    }
+  }
+};
+prototype["emitError"] = function emitError(arg0) {
+  if (this.isInitialized) {
+    try {
+      importDefault(14165).emit(tmp.playerId, "error", arg0);
+      const obj = importDefault(14165);
+    } catch (tmp6) {
+      logger.error("Error emitting error event", tmp6);
+    }
+  }
+};
+prototype["emitTimeUpdate"] = function emitTimeUpdate() {
+  const self = this;
+  if (this.isInitialized) {
+    try {
+      let playStarted = self.playStarted;
+      if (playStarted) {
+        playStarted = !self.playingEmitted;
       }
-    }
-  };
-  items[14] = {
-    key: "emitCanPlay",
-    value() {
-      this.emitPlayerReady();
-    }
-  };
-  items[15] = {
-    key: "emitSeeking",
-    value() {
-      if (this.isInitialized) {
-        outer1_1(outer1_2[4]).emit(tmp.playerId, "seeking");
-        const obj = outer1_1(outer1_2[4]);
+      if (playStarted) {
+        self.emitPlaying();
       }
+      let obj = importDefault(14165);
+      obj = { player_playhead_time: null };
+      obj[0] = self.currentPlayheadTime * c6;
+      obj.emit(self.playerId, "timeupdate", obj);
+    } catch (tmp6) {
+      logger.error("Error emitting timeupdate event", tmp6);
     }
-  };
-  items[16] = {
-    key: "emitSeeked",
-    value() {
-      if (this.isInitialized) {
-        outer1_1(outer1_2[4]).emit(tmp.playerId, "seeked");
-        const obj = outer1_1(outer1_2[4]);
-      }
+  }
+};
+prototype["emitRenditionChange"] = function emitRenditionChange(width, height, bitrate) {
+  const self = this;
+  if (this.isInitialized) {
+    try {
+      let obj = { width: null, height: null, bitrate: null };
+      obj[0] = width;
+      obj[1] = height;
+      obj[2] = bitrate;
+      self.currentRendition = obj;
+      const result = self.updateVideoSourceDimensions(width, height);
+      obj = { video_source_width: null, video_source_height: null, video_source_bitrate: null };
+      obj[0] = width;
+      obj[1] = height;
+      obj[2] = bitrate;
+      importDefault(14165).emit(self.playerId, "renditionchange", obj);
+      const obj2 = importDefault(14165);
+    } catch (tmp9) {
+      logger.error("Error emitting renditionchange event", tmp9);
     }
-  };
-  items[17] = {
-    key: "emitEnded",
-    value() {
-      const self = this;
-      if (this.isInitialized) {
-        outer1_1(outer1_2[4]).emit(self.playerId, "ended");
-        self.emitViewEnd();
-        const obj = outer1_1(outer1_2[4]);
-      }
+  }
+};
+prototype["destroy"] = function destroy() {
+  const self = this;
+  if (this.isInitialized) {
+    try {
+      self.emitViewEnd();
+      let obj = importDefault(14165);
+      obj.emit(self.playerId, "destroy");
+      self.isInitialized = false;
+      obj = { playerId: null };
+      obj[0] = self.playerId;
+      logger.info("Mux Data mobile integration destroyed", obj);
+    } catch (tmp7) {
+      logger.error("Error destroying Mux mobile integration", tmp7);
     }
-  };
-  items[18] = {
-    key: "emitError",
-    value(arg0) {
-      if (this.isInitialized) {
-        outer1_1(outer1_2[4]).emit(tmp.playerId, "error", arg0);
-        const obj = outer1_1(outer1_2[4]);
-      }
+  }
+};
+prototype["emitViewEnd"] = function emitViewEnd() {
+  if (this.isInitialized) {
+    try {
+      importDefault(14165).emit(tmp.playerId, "viewend");
+      const obj = importDefault(14165);
+    } catch (tmp5) {
+      logger.error("Error emitting viewend event", tmp5);
     }
-  };
-  items[19] = {
-    key: "emitTimeUpdate",
-    value() {
-      const self = this;
-      if (this.isInitialized) {
-        const playStarted = self.playStarted;
-        let tmp = playStarted;
-        if (playStarted) {
-          tmp = !self.playingEmitted;
-        }
-        if (tmp) {
-          self.emitPlaying();
-        }
-        let obj = outer1_1(outer1_2[4]);
-        obj = { player_playhead_time: self.currentPlayheadTime * 1000 };
-        obj.emit(self.playerId, "timeupdate", obj);
-      }
-    }
-  };
-  items[20] = {
-    key: "emitRenditionChange",
-    value(width, height, bitrate) {
-      const self = this;
-      if (this.isInitialized) {
-        let obj = { width, height, bitrate };
-        self.currentRendition = obj;
-        const result = self.updateVideoSourceDimensions(width, height);
-        obj = { video_source_width: width, video_source_height: height, video_source_bitrate: bitrate };
-        outer1_1(outer1_2[4]).emit(self.playerId, "renditionchange", obj);
-        const obj2 = outer1_1(outer1_2[4]);
-      }
-    }
-  };
-  items[21] = {
-    key: "destroy",
-    value() {
-      const self = this;
-      if (this.isInitialized) {
-        self.emitViewEnd();
-        let obj = outer1_1(outer1_2[4]);
-        obj.emit(self.playerId, "destroy");
-        self.isInitialized = false;
-        obj = { playerId: self.playerId };
-        outer1_5.info("Mux Data mobile integration destroyed", obj);
-      }
-    }
-  };
-  items[22] = {
-    key: "emitViewEnd",
-    value() {
-      if (this.isInitialized) {
-        outer1_1(outer1_2[4]).emit(tmp.playerId, "viewend");
-        const obj = outer1_1(outer1_2[4]);
-      }
-    }
-  };
-  items[23] = {
-    key: "getSessionId",
-    value() {
-      return this.sessionId;
-    }
-  };
-  items[24] = {
-    key: "hasPlayStarted",
-    value() {
-      return this.playStarted;
-    }
-  };
-  items[25] = {
-    key: "mapConfigToMuxData",
-    value(env_key) {
-      const self = this;
-      const obj = { env_key, session_id: this.sessionId, player_name: "discord-mobile", player_version: "1.0.0", player_software_name: "react-native-video", player_software_version: "5.2.1-discord", player_mux_plugin_name: "discord-mobile-custom-integration", player_mux_plugin_version: "1.0.0", video_id: this.config.contentMetadata.contentId, video_title: this.config.contentMetadata.title, video_duration: this.config.contentMetadata.durationMs, video_content_type: this.config.contentMetadata.contentType, video_series: this.config.contentMetadata.questId, video_producer: this.config.contentMetadata.gameId };
-      const gameName = this.config.contentMetadata.gameName;
-      let str = "Discord";
-      if (null != gameName) {
-        str = gameName;
-      }
-      obj.video_brand = str;
-      obj.video_cdn = "Cloudflare";
-      obj.video_stream_type = self.config.contentMetadata.videoStreamType;
-      obj.view_client_application_name = self.getBuildChannel();
-      obj.view_client_application_version = self.getAppVersion();
-      obj.experiment_name = self.config.contentMetadata.experimentName;
-      return obj;
-    }
-  };
-  items[26] = {
-    key: "getAppVersion",
-    value() {
-      const appVersion = this.config.appVersion;
-      let str = "unknown";
-      if (null != appVersion) {
-        str = appVersion;
-      }
-      return str;
-    }
-  };
-  items[27] = {
-    key: "getMuxEnvKey",
-    value() {
-      return "1qd16mdmdjasipqg3irobln4u";
-    }
-  };
-  items[28] = {
-    key: "getBuildChannel",
-    value() {
-      const releaseChannel = this.config.releaseChannel;
-      let str = "stable";
-      if (null != releaseChannel) {
-        str = releaseChannel;
-      }
-      return str;
-    }
-  };
-  return callback(MobileCustomMuxIntegration, items);
-})();
-let result = require("log").fileFinishedImporting("modules/video-qoe/integrations/MobileCustomMuxIntegration.tsx");
+  }
+};
+prototype["getSessionId"] = function getSessionId() {
+  return this.sessionId;
+};
+prototype["hasPlayStarted"] = function hasPlayStarted() {
+  return this.playStarted;
+};
+prototype["mapConfigToMuxData"] = function mapConfigToMuxData(muxEnvKey) {
+  const self = this;
+  const obj = { env_key: muxEnvKey, session_id: this.sessionId, player_name: "discord-mobile", player_version: c4, player_software_name: "react-native-video", player_software_version: "5.2.1-discord", player_mux_plugin_name: "discord-mobile-custom-integration", player_mux_plugin_version: c4, video_id: this.config.contentMetadata.contentId, video_title: this.config.contentMetadata.title, video_duration: this.config.contentMetadata.durationMs, video_content_type: this.config.contentMetadata.contentType, video_series: this.config.contentMetadata.questId, video_producer: this.config.contentMetadata.gameId, video_brand: null, video_cdn: null, video_stream_type: null, view_client_application_name: null, view_client_application_version: null, experiment_name: null };
+  let str = this.config.contentMetadata.gameName;
+  if (str == null) {
+    str = "Discord";
+  }
+  obj[14] = str;
+  obj[15] = Cloudflare;
+  obj[16] = self.config.contentMetadata.videoStreamType;
+  obj[17] = self.getBuildChannel();
+  obj[18] = self.getAppVersion();
+  obj[19] = self.config.contentMetadata.experimentName;
+  return obj;
+};
+prototype["getAppVersion"] = function getAppVersion() {
+  let str = this.config.appVersion;
+  if (str == null) {
+    str = "unknown";
+  }
+  return str;
+};
+prototype["getMuxEnvKey"] = function getMuxEnvKey() {
+  return "1qd16mdmdjasipqg3irobln4u";
+};
+prototype["getBuildChannel"] = function getBuildChannel() {
+  let str = this.config.releaseChannel;
+  if (str == null) {
+    str = "stable";
+  }
+  return str;
+};
 
-export const MobileCustomMuxIntegration = tmp3;
+export { MobileCustomMuxIntegration };

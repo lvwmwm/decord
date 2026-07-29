@@ -1,11 +1,10 @@
 // Module ID: 16366
-// Function ID: 127290
+// Function ID: 16367
 // Name: registerAsset
-// Dependencies: [1217]
+// Dependencies: [1241]
 
 // Module 16366 (registerAsset)
 import registerAsset from "registerAsset";
 
-const obj = { __packager_asset: true, httpServerLocation: "/assets/images/native/icons", width: 24, height: 24, scales: [2, 3], hash: "e34464fbaad016de0cccce358d754f22", name: "ic_overflow_android", type: "png" };
 
-export default registerAsset.registerAsset(obj);
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/guild_settings/overview", width: 343, height: 193, scales: [2, 3], hash: "14f8bd930afc02eff31d9dfb6640a712", name: "asset_gradient", type: "png" });

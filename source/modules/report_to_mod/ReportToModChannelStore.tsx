@@ -1,16 +1,16 @@
-// Module ID: 11840
-// Function ID: 91759
+// Module ID: 11865
+// Function ID: 11866
 // Name: useReportToModChannelFiltersStore
-// Dependencies: [621, 4034, 682, 5970, 2]
+// Dependencies: [644, 4058, 705, 5989, 2]
 // Exports: useShouldShowResolvedFlagsForChannel
 
-// Module 11840 (useReportToModChannelFiltersStore)
+// Module 11865 (useReportToModChannelFiltersStore)
 import keys from "keys";
 import createJSONStorage from "createJSONStorage";
 import createJSONStorage from "createJSONStorage";
 
-let obj = { name: "report-to-mod-channel-storage" };
-obj.storage = createJSONStorage.createJSONStorage(() => importDefault(5970));
+let obj = { name: "report-to-mod-channel-storage", storage: null };
+obj[1] = createJSONStorage.createJSONStorage(() => importDefault(5989));
 obj = keys.create(createJSONStorage.persist((arg0, arg1) => {
   let closure_0 = arg0;
   let closure_1 = arg1;
@@ -21,18 +21,21 @@ obj = keys.create(createJSONStorage.persist((arg0, arg1) => {
       let closure_1 = arg1;
       return callback(outer1_2[2]).batchUpdates(() => {
         callback((channelShowResolvedFlags) => {
-          let obj = {};
+          let obj = { channelShowResolvedFlags: null };
           obj = {};
           const merged = Object.assign(channelShowResolvedFlags.channelShowResolvedFlags);
-          obj[outer1_0] = outer1_1;
-          obj.channelShowResolvedFlags = obj;
+          obj[closure_0] = closure_1;
+          obj[0] = obj;
           return obj;
         });
       });
     },
     getShowResolvedFlags(arg0) {
-      const tmp = callback2().channelShowResolvedFlags[arg0];
-      return null == tmp || tmp;
+      let flag = callback2().channelShowResolvedFlags[arg0];
+      if (flag == null) {
+        flag = true;
+      }
+      return flag;
     }
   };
 }, obj));
@@ -43,17 +46,18 @@ export const useShouldShowResolvedFlagsForChannel = function useShouldShowResolv
   let closure_0 = arg0;
   obj = obj();
   if (null == arg0) {
-    obj = {
-      showResolvedFlags: true,
-      setShowResolvedFlags() {
+    obj = { showResolvedFlags: true, setShowResolvedFlags: null };
+    obj[1] = function setShowResolvedFlags() {
 
-        }
     };
   } else {
-    obj = {};
-    const showResolvedFlags = obj.getShowResolvedFlags(arg0);
-    obj.showResolvedFlags = null == showResolvedFlags || showResolvedFlags;
-    obj.setShowResolvedFlags = function setShowResolvedFlags(arg0) {
+    let flag = obj.getShowResolvedFlags(arg0);
+    if (flag == null) {
+      flag = true;
+    }
+    obj = { showResolvedFlags: null, setShowResolvedFlags: null };
+    obj[0] = flag;
+    obj[1] = function setShowResolvedFlags(arg0) {
       return obj.setShowResolvedFlags(closure_0, arg0);
     };
   }

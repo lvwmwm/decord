@@ -1,81 +1,84 @@
-// Module ID: 15786
-// Function ID: 121593
-// Dependencies: [31, 27, 1348, 1907, 33, 4165, 624, 11339, 15490, 10883, 4161, 1212, 2]
+// Module ID: 15821
+// Function ID: 15822
+// Dependencies: [19, 17, 1372, 1931, 21, 4189, 647, 11363, 15524, 10907, 4185, 1236, 2]
 
-// Module 15786
+// Module 15821
 import { View } from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_5 from "_isNativeReflectConstruct";
+import ensureGuildLoaded from "ensureGuildLoaded";
+import handleConnectionOpen from "handleConnectionOpen";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import importAllResult from "result";
+import createCacheKey from "createCacheKey";
+import importAllResult from "noop";
 
 const require = arg1;
-let closure_7 = _createForOfIteratorHelperLoose.createStyles({ wrapper: { minHeight: 16 }, listStyle: { flex: 0 }, emptyWrapper: { padding: 20 }, emptyText: { textAlign: "center" } });
-const memoResult = require("result").memo(function LaunchPadMembers() {
+let closure_7 = createCacheKey.createStyles({ wrapper: { minHeight: 16 }, listStyle: { flex: 0 }, emptyWrapper: { padding: 20 }, emptyText: { textAlign: "center" } });
+const memoResult = require("noop").memo(function LaunchPadMembers() {
   const tmp = callback();
-  let obj = require(624) /* defaultAreStatesEqual */;
-  const items = [closure_5, _isNativeReflectConstruct];
+  let obj = require(647) /* defaultAreStatesEqual */;
+  const items = [handleConnectionOpen, ensureGuildLoaded];
   const stateFromStoresObject = obj.useStateFromStoresObject(items, () => {
-    const currentlySelectedChannelId = outer1_5.getCurrentlySelectedChannelId();
-    let tmp2;
+    currentlySelectedChannelId = currentlySelectedChannelId.getCurrentlySelectedChannelId();
+    channel = channel.getChannel(currentlySelectedChannelId);
     if (null != currentlySelectedChannelId) {
-      tmp2 = currentlySelectedChannelId;
-    }
-    const channel = outer1_4.getChannel(tmp2);
-    if (null != tmp2) {
       if (null != channel) {
         if (channel.isPrivate()) {
-          let obj = { channelId: tmp2, type: "private" };
+          let obj = { channelId: null, type: "private" };
+          obj[0] = currentlySelectedChannelId;
           return obj;
         } else {
-          obj = { channelId: tmp2, guildId: channel.guild_id };
+          const guild_id = channel.guild_id;
           if (channel.isThread()) {
-            obj.type = "thread";
-            let tmp3 = obj;
+            obj = { channelId: null, guildId: null, type: "thread" };
+            obj[0] = currentlySelectedChannelId;
+            obj[1] = guild_id;
+            let obj1 = obj;
           } else {
-            obj.type = "guild";
-            tmp3 = obj;
+            obj1 = { channelId: null, guildId: null, type: "guild" };
+            obj1[0] = currentlySelectedChannelId;
+            obj1[1] = guild_id;
           }
-          return tmp3;
+          return obj1;
         }
       }
     }
-    return { channelId: undefined, type: "none" };
+    return { channelId: "call", type: 146272 };
   });
   if ("private" === stateFromStoresObject.type) {
-    obj = { style: tmp.wrapper };
-    obj = { channelId: stateFromStoresObject.channelId, listStyleOverride: tmp.listStyle, disableBottomSafeZone: true, insetEnd: 20 };
-    obj.children = jsx(importDefault(11339), { channelId: stateFromStoresObject.channelId, listStyleOverride: tmp.listStyle, disableBottomSafeZone: true, insetEnd: 20 }, stateFromStoresObject.channelId);
-    let tmp7 = <View channelId={stateFromStoresObject.channelId} listStyleOverride={tmp.listStyle} disableBottomSafeZone insetEnd={20} />;
+    obj = { style: null, children: null };
+    obj[0] = tmp.wrapper;
+    obj = { channelId: null, listStyleOverride: null, disableBottomSafeZone: true, insetEnd: 20 };
+    obj[0] = stateFromStoresObject.channelId;
+    obj[1] = tmp.listStyle;
+    obj[1] = jsx(importDefault(11363), { channelId: null, listStyleOverride: null, disableBottomSafeZone: true, insetEnd: 20 }, stateFromStoresObject.channelId);
+    let tmp8 = <View channelId={null} listStyleOverride={null} disableBottomSafeZone insetEnd={20} />;
   } else if ("thread" === stateFromStoresObject.type) {
-    const obj1 = { style: tmp.wrapper };
-    const obj2 = {};
-    ({ channelId: obj5.channelId, guildId: obj5.guildId } = stateFromStoresObject);
-    obj2.listStyleOverride = tmp.listStyle;
-    obj2.disableBottomSafeZone = true;
-    obj2.insetEnd = 20;
-    obj1.children = jsx(importDefault(15490), {}, stateFromStoresObject.channelId);
-    tmp7 = <View style={tmp.wrapper} />;
+    let obj1 = { style: null, children: null };
+    obj1[0] = tmp.wrapper;
+    const obj2 = { channelId: null, guildId: null, listStyleOverride: null, disableBottomSafeZone: true, insetEnd: 20 };
+    ({ channelId: obj5[0], guildId: obj5[1] } = stateFromStoresObject);
+    obj2[2] = tmp.listStyle;
+    obj1[1] = jsx(importDefault(15524), { channelId: null, guildId: null, listStyleOverride: null, disableBottomSafeZone: true, insetEnd: 20 }, stateFromStoresObject.channelId);
+    tmp8 = <View style={null}>{null}</View>;
   } else if ("guild" === stateFromStoresObject.type) {
-    const obj3 = { style: tmp.wrapper };
-    const obj4 = {};
-    ({ channelId: obj3.channelId, guildId: obj3.guildId } = stateFromStoresObject);
-    obj4.listStyleOverride = tmp.listStyle;
-    obj4.disableBottomSafeZone = true;
-    obj4.insetEnd = 20;
-    obj3.children = jsx(importDefault(10883), {}, stateFromStoresObject.channelId);
-    tmp7 = <View style={tmp.wrapper} />;
+    const obj3 = { style: null, children: null };
+    obj3[0] = tmp.wrapper;
+    const obj4 = { channelId: null, guildId: null, listStyleOverride: null, disableBottomSafeZone: true, insetEnd: 20 };
+    ({ channelId: obj3[0], guildId: obj3[1] } = stateFromStoresObject);
+    obj4[2] = tmp.listStyle;
+    obj3[1] = jsx(importDefault(10907), { channelId: null, guildId: null, listStyleOverride: null, disableBottomSafeZone: true, insetEnd: 20 }, stateFromStoresObject.channelId);
+    tmp8 = <View style={null}>{null}</View>;
   } else {
-    const obj5 = { style: tmp.emptyWrapper };
-    const obj6 = { style: tmp.emptyText, variant: "text-md/semibold" };
-    const intl = require(1212) /* getSystemLocale */.intl;
-    obj6.children = intl.string(require(1212) /* getSystemLocale */.t["+7wtJq"]);
-    obj5.children = jsx(require(4161) /* Text */.Text, { style: tmp.emptyText, variant: "text-md/semibold" });
-    tmp7 = <View style={tmp.emptyWrapper} />;
+    const obj5 = { style: null, children: null };
+    obj5[0] = tmp.emptyWrapper;
+    const obj6 = { style: null, variant: "text-md/semibold", children: null };
+    obj6[0] = tmp.emptyText;
+    const intl = tmp2(1236).intl;
+    obj6[2] = intl.string(tmp2(1236).t["+7wtJq"]);
+    obj5[1] = jsx(tmp2(4185).Text, { style: null, variant: "text-md/semibold", children: null });
+    tmp8 = <View style={null}>{null}</View>;
   }
-  return tmp7;
+  return tmp8;
 });
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/launchpad/native/LaunchPadMembers.tsx");
+const result = require("ensureGuildLoaded").fileFinishedImporting("modules/launchpad/native/LaunchPadMembers.tsx");
 
 export default memoResult;

@@ -1,79 +1,79 @@
-// Module ID: 10425
-// Function ID: 80242
+// Module ID: 10449
+// Function ID: 10450
 // Name: BlockedInformationTable
-// Dependencies: [57, 31, 27, 1348, 3802, 1850, 8895, 10424, 653, 33, 4165, 689, 8337, 1212, 4123, 5536, 5198, 1273, 1557, 5497, 5517, 566, 7960, 5221, 675, 5223, 8339, 4161, 4354, 8340, 4133, 10426, 1935, 480, 4578, 8894, 6700, 1921, 3862, 2]
+// Dependencies: [32, 19, 17, 1372, 3826, 1874, 8919, 10448, 676, 21, 4189, 712, 8361, 1236, 4147, 5554, 5220, 1297, 1581, 5515, 5535, 589, 7985, 5243, 698, 5245, 8363, 4185, 4379, 8364, 4157, 10450, 1959, 503, 4600, 8918, 6721, 1945, 3886, 2]
 
-// Module 10425 (BlockedInformationTable)
-import _slicedToArray from "_slicedToArray";
-import importAllResult from "IgnoredInformationTable";
-import { View } from "Text";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_7 from "_isNativeReflectConstruct";
-import closure_8 from "_isNativeReflectConstruct";
+// Module 10449 (BlockedInformationTable)
+import asyncRequireImpl from "asyncRequireImpl";
+import importAllResult from "context";
+import { View } from "Button";
+import ensureGuildLoaded from "ensureGuildLoaded";
+import upsertRelationship from "upsertRelationship";
+import mergeGuildAvatar from "mergeGuildAvatar";
 import { UserRemediationAction } from "ClearFriendRequestFilters";
 import IGNORE_CONFIRMATION_ACTION_SHEET_KEY from "IGNORE_CONFIRMATION_ACTION_SHEET_KEY";
 import ME from "ME";
-import jsxProd from "isThrottled";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import jsxProd from "initialize";
+import createCacheKey from "createCacheKey";
 
-let closure_10;
-let closure_11;
+let c10;
 let closure_12;
-let closure_13;
 let closure_14;
 let closure_15;
+let map1;
+let unpackModuleId;
 const require = arg1;
 function BlockedInformationTable() {
-  let obj = {
-    hasIcons: true,
-    children: items.map((icon) => {
-      let obj = { start: 0 === arg1, end: outer1_17.length - 1 === arg1 };
-      obj = { size: outer1_0(outer1_2[17]).Icon.Sizes.MEDIUM, source: icon.icon };
-      obj.icon = outer1_14(outer1_0(outer1_2[17]).Icon, obj);
-      obj.label = icon.text();
-      obj.subLabel = icon.subtext();
-      obj.accessible = true;
-      obj.accessibilityLabel = icon.a11yLabel();
-      return outer1_14(outer1_0(outer1_2[16]).TableRow, obj, arg1);
-    })
-  };
-  return callback2(require(5536) /* TableRowGroupTitle */.TableRowGroup, obj);
+  let obj = { hasIcons: true, children: null };
+  obj[1] = items.map((icon) => {
+    let obj = { start: 0 === arg1, end: length.length - 1 === arg1, icon: null, label: null, subLabel: null, accessible: true, accessibilityLabel: null };
+    obj = { size: null, source: null };
+    obj[0] = callback(1297).Icon.Sizes.MEDIUM;
+    obj[1] = icon.icon;
+    obj[2] = callback2(callback(1297).Icon, obj);
+    obj[3] = icon.text();
+    obj[4] = icon.subtext();
+    obj[6] = icon.a11yLabel();
+    return callback2(callback(5220).TableRow, obj, arg1);
+  });
+  return callback2(require(5554) /* TableRowGroupTitle */.TableRowGroup, obj);
 }
-({ IGNORE_CONFIRMATION_ACTION_SHEET_KEY: closure_10, RESTRICTION_CONFIRMATION_ACTION_SHEET_HEIGHT: closure_11 } = IGNORE_CONFIRMATION_ACTION_SHEET_KEY);
-({ HelpdeskArticles: closure_12, AnalyticEvents: closure_13 } = ME);
+let c4 = importAllResult;
+({ IGNORE_CONFIRMATION_ACTION_SHEET_KEY: c10, RESTRICTION_CONFIRMATION_ACTION_SHEET_HEIGHT: unpackModuleId } = IGNORE_CONFIRMATION_ACTION_SHEET_KEY);
+({ HelpdeskArticles: closure_12, AnalyticEvents: map1 } = ME);
 ({ jsx: closure_14, jsxs: closure_15 } = jsxProd);
-let obj = { button: { alignContent: "center", textAlign: "center" } };
-obj = { marginBottom: require("_createForOfIteratorHelperLoose").space.PX_16 };
-obj.tableContainer = obj;
-_createForOfIteratorHelperLoose = { marginBottom: require("_createForOfIteratorHelperLoose").space.PX_24 };
-obj.otherOptions = _createForOfIteratorHelperLoose;
-obj.headerText = { textAlign: "center" };
-obj.container = { flex: 1, paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16, paddingTop: require("_createForOfIteratorHelperLoose").space.PX_16 };
-let obj2 = { flex: 1, paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16, paddingTop: require("_createForOfIteratorHelperLoose").space.PX_16 };
-obj.header = { marginBottom: require("_createForOfIteratorHelperLoose").space.PX_16 };
-let obj4 = { position: "relative", alignSelf: "center", marginBottom: require("_createForOfIteratorHelperLoose").space.PX_16 };
-obj.avatarContainer = obj4;
-let obj5 = { position: "absolute", bottom: -8, right: -8, padding: require("_createForOfIteratorHelperLoose").space.PX_4, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SURFACE_HIGH, borderRadius: require("_createForOfIteratorHelperLoose").radii.round };
-obj.avatarIconContainer = obj5;
-obj.avatar = { alignSelf: "center" };
-let obj3 = { marginBottom: require("_createForOfIteratorHelperLoose").space.PX_16 };
-obj.footerText = { textAlign: "center", marginTop: require("_createForOfIteratorHelperLoose").space.PX_12, paddingBottom: require("_createForOfIteratorHelperLoose").space.PX_4 };
-let closure_16 = _createForOfIteratorHelperLoose.createStyles(obj);
-let obj6 = { textAlign: "center", marginTop: require("_createForOfIteratorHelperLoose").space.PX_12, paddingBottom: require("_createForOfIteratorHelperLoose").space.PX_4 };
+let obj = { button: { alignContent: "center", textAlign: "center" }, tableContainer: null, otherOptions: null, headerText: null, container: null, header: null, avatarContainer: null, avatarIconContainer: null, avatar: null, footerText: null };
+obj = { marginBottom: require("Themes").space.PX_16 };
+obj[1] = obj;
+createCacheKey = { marginBottom: require("Themes").space.PX_24 };
+obj[2] = createCacheKey;
+obj[3] = { textAlign: "center" };
+obj[4] = { flex: 1, paddingHorizontal: require("Themes").space.PX_16, paddingTop: require("Themes").space.PX_16 };
+let obj2 = { flex: 1, paddingHorizontal: require("Themes").space.PX_16, paddingTop: require("Themes").space.PX_16 };
+obj[5] = { marginBottom: require("Themes").space.PX_16 };
+let obj3 = { marginBottom: require("Themes").space.PX_16 };
+obj[6] = { position: "relative", alignSelf: "center", marginBottom: require("Themes").space.PX_16 };
+let obj4 = { position: "relative", alignSelf: "center", marginBottom: require("Themes").space.PX_16 };
+obj[7] = { position: "absolute", bottom: -8, right: -8, padding: require("Themes").space.PX_4, backgroundColor: require("Themes").colors.BACKGROUND_SURFACE_HIGH, borderRadius: require("Themes").radii.round };
+obj[8] = { alignSelf: "center" };
+let obj5 = { position: "absolute", bottom: -8, right: -8, padding: require("Themes").space.PX_4, backgroundColor: require("Themes").colors.BACKGROUND_SURFACE_HIGH, borderRadius: require("Themes").radii.round };
+obj[9] = { textAlign: "center", marginTop: require("Themes").space.PX_12, paddingBottom: require("Themes").space.PX_4 };
+let closure_16 = createCacheKey.createStyles(obj);
+let obj6 = { textAlign: "center", marginTop: require("Themes").space.PX_12, paddingBottom: require("Themes").space.PX_4 };
 let items = [
   {
     icon: require("registerAsset"),
     text() {
-      const intl = require(1212) /* getSystemLocale */.intl;
-      return intl.string(require(1212) /* getSystemLocale */.t.fjFJFV);
+      const intl = require(1236) /* getSystemLocale */.intl;
+      return intl.string(require(1236) /* getSystemLocale */.t.fjFJFV);
     },
     subtext() {
-      const intl = require(1212) /* getSystemLocale */.intl;
-      return intl.string(require(1212) /* getSystemLocale */.t["8SIMPz"]);
+      const intl = require(1236) /* getSystemLocale */.intl;
+      return intl.string(require(1236) /* getSystemLocale */.t["8SIMPz"]);
     },
     a11yLabel() {
-      const intl = require(1212) /* getSystemLocale */.intl;
-      return intl.string(require(1212) /* getSystemLocale */.t.qHsrGS);
+      const intl = require(1236) /* getSystemLocale */.intl;
+      return intl.string(require(1236) /* getSystemLocale */.t.qHsrGS);
     }
   },
 ,
@@ -82,107 +82,110 @@ let items = [
 let obj7 = {
   icon: require("registerAsset"),
   text() {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(require(1212) /* getSystemLocale */.t.fjFJFV);
+    const intl = require(1236) /* getSystemLocale */.intl;
+    return intl.string(require(1236) /* getSystemLocale */.t.fjFJFV);
   },
   subtext() {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(require(1212) /* getSystemLocale */.t["8SIMPz"]);
+    const intl = require(1236) /* getSystemLocale */.intl;
+    return intl.string(require(1236) /* getSystemLocale */.t["8SIMPz"]);
   },
   a11yLabel() {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(require(1212) /* getSystemLocale */.t.qHsrGS);
+    const intl = require(1236) /* getSystemLocale */.intl;
+    return intl.string(require(1236) /* getSystemLocale */.t.qHsrGS);
   }
 };
 items[1] = {
   icon: require("registerAsset"),
   text() {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(require(1212) /* getSystemLocale */.t.QCrmqS);
+    const intl = require(1236) /* getSystemLocale */.intl;
+    return intl.string(require(1236) /* getSystemLocale */.t.QCrmqS);
   },
   subtext() {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(require(1212) /* getSystemLocale */.t.TKDMoN);
+    const intl = require(1236) /* getSystemLocale */.intl;
+    return intl.string(require(1236) /* getSystemLocale */.t.TKDMoN);
   },
   a11yLabel() {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(require(1212) /* getSystemLocale */.t.WR1Mbe);
+    const intl = require(1236) /* getSystemLocale */.intl;
+    return intl.string(require(1236) /* getSystemLocale */.t.WR1Mbe);
   }
 };
 let obj8 = {
   icon: require("registerAsset"),
   text() {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(require(1212) /* getSystemLocale */.t.QCrmqS);
+    const intl = require(1236) /* getSystemLocale */.intl;
+    return intl.string(require(1236) /* getSystemLocale */.t.QCrmqS);
   },
   subtext() {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(require(1212) /* getSystemLocale */.t.TKDMoN);
+    const intl = require(1236) /* getSystemLocale */.intl;
+    return intl.string(require(1236) /* getSystemLocale */.t.TKDMoN);
   },
   a11yLabel() {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(require(1212) /* getSystemLocale */.t.WR1Mbe);
+    const intl = require(1236) /* getSystemLocale */.intl;
+    return intl.string(require(1236) /* getSystemLocale */.t.WR1Mbe);
   }
 };
 items[2] = {
   icon: require("registerAsset"),
   text() {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(require(1212) /* getSystemLocale */.t["lkm/a8"]);
+    const intl = require(1236) /* getSystemLocale */.intl;
+    return intl.string(require(1236) /* getSystemLocale */.t["lkm/a8"]);
   },
   subtext() {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(require(1212) /* getSystemLocale */.t["8j3qaC"]);
+    const intl = require(1236) /* getSystemLocale */.intl;
+    return intl.string(require(1236) /* getSystemLocale */.t["8j3qaC"]);
   },
   a11yLabel() {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(require(1212) /* getSystemLocale */.t.lfrNw0);
+    const intl = require(1236) /* getSystemLocale */.intl;
+    return intl.string(require(1236) /* getSystemLocale */.t.lfrNw0);
   }
 };
 let obj9 = {
   icon: require("registerAsset"),
   text() {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(require(1212) /* getSystemLocale */.t["lkm/a8"]);
+    const intl = require(1236) /* getSystemLocale */.intl;
+    return intl.string(require(1236) /* getSystemLocale */.t["lkm/a8"]);
   },
   subtext() {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(require(1212) /* getSystemLocale */.t["8j3qaC"]);
+    const intl = require(1236) /* getSystemLocale */.intl;
+    return intl.string(require(1236) /* getSystemLocale */.t["8j3qaC"]);
   },
   a11yLabel() {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(require(1212) /* getSystemLocale */.t.lfrNw0);
+    const intl = require(1236) /* getSystemLocale */.intl;
+    return intl.string(require(1236) /* getSystemLocale */.t.lfrNw0);
   }
 };
 const memoResult = importAllResult.memo(function BlockConfirmationActionSheet(userId) {
-  let _slicedToArray;
+  let c5;
+  let asyncRequireImpl;
   let closure_4;
   let dependencyMap;
+  let tmp6;
   userId = userId.userId;
   const channelId = userId.channelId;
-  ({ onBlock: dependencyMap, onIgnore: _slicedToArray, onSuccess: closure_4 } = userId);
-  const tmp = callback4();
-  const bottom = channelId(1557)().bottom;
-  const items = [channelId(5517).IGNORE_CONFIRMATION_ACTION_SHEET];
-  const tmp3 = callback(importAllResult.useState(false), 2);
-  const first = tmp3[0];
-  let closure_5 = tmp3[1];
-  let obj = userId(566);
-  const items1 = [closure_8];
+  ({ onBlock: dependencyMap, onIgnore: asyncRequireImpl, onSuccess: closure_4 } = userId);
+  c5 = undefined;
+  let stateFromStores;
+  let tmp = callback4();
+  const bottom = channelId(1581)().bottom;
+  const items = [channelId(5535).IGNORE_CONFIRMATION_ACTION_SHEET];
+  const tmp4 = channelId(5515);
+  [tmp6, c5] = callback(importAllResult.useState(false), 2);
+  let obj = userId(589);
+  const items1 = [mergeGuildAvatar];
   const items2 = [userId];
-  const stateFromStores = obj.useStateFromStores(items1, () => outer1_8.getUser(userId), items2);
-  let obj1 = userId(566);
-  const items3 = [closure_7];
+  stateFromStores = obj.useStateFromStores(items1, () => outer1_8.getUser(userId), items2);
+  let obj1 = userId(589);
+  const items3 = [upsertRelationship];
   const items4 = [userId];
   const stateFromStores1 = obj1.useStateFromStores(items3, () => outer1_7.isIgnored(userId), items4);
-  let obj2 = userId(566);
+  let obj2 = userId(589);
   const items5 = [stateFromStores];
   const items6 = [channelId];
   const items7 = [stateFromStores, userId];
   const stateFromStores2 = obj2.useStateFromStores(items5, () => {
     const channel = stateFromStores.getChannel(channelId);
     let guild_id;
-    if (null != channel) {
+    if (channel != null) {
       guild_id = channel.guild_id;
     }
     return guild_id;
@@ -193,132 +196,147 @@ const memoResult = importAllResult.memo(function BlockConfirmationActionSheet(us
       const obj = userId(outer1_2[22]);
     }
   }, items7);
-  let tmp10Result = null;
+  let tmp13Result = null;
   if (null != stateFromStores) {
-    obj = { value: tmp2(items).analyticsLocations };
-    obj = {
-      onDismiss() {
-          let obj = channelId(outer1_2[24]);
-          obj = { action: outer1_9.DISMISS_BLOCK, location: "user-profile-context-menu" };
-          obj.track(outer1_13.USER_REMEDIATION_ACTION, obj);
-        },
-      scrollable: true
+    obj = { value: null, children: null };
+    obj[0] = tmp4(items).analyticsLocations;
+    obj = { onDismiss: null, scrollable: true, startHeight: null, bodyStyles: null, children: null };
+    obj[0] = function onDismiss() {
+      let obj = channelId(698);
+      obj = { action: constants.DISMISS_BLOCK, location: "user-profile-context-menu" };
+      obj.track(constants3.USER_REMEDIATION_ACTION, obj);
     };
-    let num2 = 485;
+    let num = 485;
     if (!stateFromStores1) {
-      num2 = closure_11;
+      num = closure_11;
     }
-    const sum = num2 + bottom;
-    const sum1 = sum + channelId(689).space.PX_24;
-    obj.startHeight = sum1 + channelId(689).space.PX_24;
-    obj1 = { paddingBottom: channelId(689).space.PX_24 + bottom };
+    const sum = num + bottom;
+    const sum1 = sum + tmp2(712).space.PX_24;
+    obj[2] = sum1 + tmp2(712).space.PX_24;
+    obj1 = { paddingBottom: null };
+    obj1[0] = tmp2(712).space.PX_24 + bottom;
     const merged = Object.assign(tmp.container);
-    obj.bodyStyles = obj1;
-    obj2 = {};
-    let obj3 = { style: tmp.header };
-    const obj4 = { style: tmp.avatarContainer };
-    const obj5 = { guildId: undefined, user: stateFromStores, animate: false, size: userId(1273).AvatarSizes.XLARGE, style: tmp.avatar };
-    const items8 = [callback2(userId(1273).Avatar, obj5), ];
-    const obj6 = { style: tmp.avatarIconContainer };
-    const obj7 = { size: userId(1273).Icon.Sizes.MEDIUM, source: channelId(8339) };
-    obj6.children = callback2(userId(1273).Icon, obj7);
-    items8[1] = callback2(closure_5, obj6);
-    obj4.children = items8;
-    const items9 = [callback3(closure_5, obj4), , ];
-    const obj8 = { style: tmp.headerText, variant: "heading-xl/bold", color: "mobile-text-heading-primary", accessibilityRole: "header" };
-    const intl = userId(1212).intl;
-    const obj9 = {};
-    let obj14 = channelId(4354);
-    obj9.username = obj14.getName(stateFromStores2, channelId, stateFromStores);
-    obj8.children = intl.format(userId(1212).t.CIbzHR, obj9);
-    items9[1] = callback2(userId(4161).Text, obj8);
-    const obj10 = { style: tmp.headerText, variant: "heading-md/medium", color: "text-default", accessibilityRole: "header" };
-    const intl2 = userId(1212).intl;
-    obj10.children = intl2.string(userId(1212).t.S70jou);
-    items9[2] = callback2(userId(4161).Text, obj10);
-    obj3.children = items9;
-    const items10 = [callback3(closure_5, obj3), , , ];
-    const obj11 = { style: tmp.tableContainer, children: callback2(BlockedInformationTable, {}) };
-    items10[1] = callback2(closure_5, obj11);
-    let tmp31 = !stateFromStores1;
-    if (tmp31) {
-      const obj12 = { style: tmp.otherOptions };
-      const obj13 = {};
-      const intl3 = userId(1212).intl;
-      obj13.title = intl3.string(userId(1212).t["+BJTcB"]);
-      obj13.hasIcons = true;
-      obj14 = {};
-      const obj15 = { size: userId(1273).Icon.Sizes.MEDIUM, source: channelId(8340) };
-      obj14.icon = callback2(userId(1273).Icon, obj15);
-      const intl4 = userId(1212).intl;
-      obj14.label = intl4.string(userId(1212).t.hC8tcc);
-      const intl5 = userId(1212).intl;
-      obj14.subLabel = intl5.string(userId(1212).t.If89rE);
-      const intl6 = userId(1212).intl;
-      obj14.accessibilityLabel = intl6.string(userId(1212).t["8qGQsM"]);
-      obj14.onPress = function onPress() {
+    obj[3] = obj1;
+    obj2 = { style: null, children: null };
+    obj2[0] = tmp.header;
+    let obj3 = { style: null, children: null };
+    obj3[0] = tmp.avatarContainer;
+    const obj4 = { guildId: "Array", user: false, animate: null, size: null, style: 0 };
+    obj4[1] = stateFromStores;
+    obj4[3] = tmp7(1297).AvatarSizes.XLARGE;
+    obj4[4] = tmp.avatar;
+    const items8 = [closure_14(tmp7(1297).Avatar, obj4), ];
+    const obj5 = { style: null, children: null };
+    obj5[0] = tmp.avatarIconContainer;
+    const obj6 = { size: null, source: null };
+    obj6[0] = tmp7(1297).Icon.Sizes.MEDIUM;
+    obj6[1] = tmp2(8363);
+    obj5[1] = closure_14(tmp7(1297).Icon, obj6);
+    items8[1] = closure_14(c5, obj5);
+    obj3[1] = items8;
+    const items9 = [callback3(c5, obj3), , ];
+    const obj7 = { style: null, variant: "heading-xl/bold", color: "mobile-text-heading-primary", accessibilityRole: "header", children: null };
+    obj7[0] = tmp.headerText;
+    const intl = tmp7(1236).intl;
+    const obj8 = { username: null };
+    obj8[0] = tmp2(4379).getName(stateFromStores2, channelId, stateFromStores);
+    obj7[4] = intl.format(tmp7(1236).t.CIbzHR, obj8);
+    items9[1] = closure_14(tmp7(4185).Text, obj7);
+    const obj9 = { style: null, variant: "heading-md/medium", color: "text-default", accessibilityRole: "header", children: null };
+    obj9[0] = tmp.headerText;
+    const intl2 = tmp7(1236).intl;
+    obj9[4] = intl2.string(tmp7(1236).t.S70jou);
+    items9[2] = closure_14(tmp7(4185).Text, obj9);
+    obj2[1] = items9;
+    const items10 = [callback3(c5, obj2), , , ];
+    const obj10 = { style: null, children: null };
+    obj10[0] = tmp.tableContainer;
+    obj10[1] = closure_14(BlockedInformationTable, {});
+    items10[1] = closure_14(c5, obj10);
+    tmp13Result = !stateFromStores1;
+    if (!stateFromStores1) {
+      const obj11 = { style: null, children: null };
+      obj11[0] = tmp.otherOptions;
+      const obj12 = { title: null, hasIcons: true, children: null };
+      const intl3 = tmp7(1236).intl;
+      obj12[0] = intl3.string(tmp7(1236).t["+BJTcB"]);
+      const obj13 = { icon: null, label: null, subLabel: null, accessibilityLabel: null, onPress: null, arrow: true };
+      const obj14 = { size: null, source: null };
+      obj14[0] = tmp7(1297).Icon.Sizes.MEDIUM;
+      obj14[1] = tmp2(8364);
+      obj13[0] = tmp13(tmp7(1297).Icon, obj14);
+      const intl4 = tmp7(1236).intl;
+      obj13[1] = intl4.string(tmp7(1236).t.hC8tcc);
+      const intl5 = tmp7(1236).intl;
+      obj13[2] = intl5.string(tmp7(1236).t.If89rE);
+      const intl6 = tmp7(1236).intl;
+      obj13[3] = intl6.string(tmp7(1236).t["8qGQsM"]);
+      obj13[4] = function onPress() {
         let obj = channelId(outer1_2[24]);
         obj = { action: outer1_9.GOTO_IGNORE, location: "user-profile-context-menu" };
         obj.track(outer1_13.USER_REMEDIATION_ACTION, obj);
         const obj3 = channelId(outer1_2[30]);
-        obj = { userId, channelId, onSuccess: closure_4, onIgnore: _slicedToArray, impressionName: userId(outer1_2[33]).ImpressionNames.IGNORE_USER_CONFIRMATION };
+        obj = { userId, channelId, onSuccess: closure_4, onIgnore: asyncRequireImpl, impressionName: userId(outer1_2[33]).ImpressionNames.IGNORE_USER_CONFIRMATION };
         obj3.openLazy(userId(outer1_2[32])(outer1_2[31], outer1_2.paths), outer1_10, obj, "replaceTopSheet");
       };
-      obj14.arrow = true;
-      obj13.children = callback2(userId(5198).TableRow, obj14);
-      obj12.children = callback2(userId(5536).TableRowGroup, obj13);
-      tmp31 = callback2(closure_5, obj12);
+      obj12[2] = tmp13(tmp7(5220).TableRow, obj13);
+      obj11[1] = tmp13(tmp7(5554).TableRowGroup, obj12);
+      tmp13Result = tmp13(tmp19, obj11);
     }
-    items10[2] = tmp31;
-    const obj16 = { style: tmp.button };
-    const obj17 = { size: "lg", variant: "destructive" };
-    const intl7 = userId(1212).intl;
-    obj17.text = intl7.string(userId(1212).t.l4Emac);
-    obj17.onPress = function onPress() {
-      callback2(true);
+    const obj15 = { children: null };
+    items10[2] = tmp13Result;
+    const obj16 = { style: null, children: null };
+    obj16[0] = tmp.button;
+    const obj17 = { size: "lg", variant: "destructive", text: null, onPress: null, disabled: null, loading: null };
+    const intl7 = tmp7(1236).intl;
+    obj17[2] = intl7.string(tmp7(1236).t.l4Emac);
+    obj17[3] = function onPress() {
+      _undefined(true);
       let obj = channelId(outer1_2[35]);
       obj = { location: channelId(outer1_2[20]).BLOCK_CONFIRMATION_ACTION_SHEET };
       obj.blockUser(userId, obj).then(() => {
-        const result = channelId(outer2_2[36]).showBlockSuccessToast(outer1_0, outer1_1);
-        if (null != outer1_4) {
-          outer1_4();
+        const result = outer1_1(outer1_2[36]).showBlockSuccessToast(closure_0, closure_1);
+        if (callback != null) {
+          callback();
         }
-        const obj = channelId(outer2_2[36]);
-        channelId(outer2_2[30]).hideActionSheet();
+        const obj = outer1_1(outer1_2[36]);
+        const tmp = outer1_1;
+        const tmp2 = outer1_2;
+        outer1_1(outer1_2[30]).hideActionSheet();
       });
-      if (null != callback) {
-        callback();
+      if (dependencyMap != null) {
+        dependencyMap();
       }
       const blockUserResult = obj.blockUser(userId, obj);
+      let tmp2 = channelId;
+      const tmp3 = outer1_2;
       channelId(outer1_2[24]).track(outer1_13.BLOCK_USER_CONFIRMED);
     };
-    obj17.disabled = first;
-    obj17.loading = first;
-    const items11 = [callback2(userId(4578).Button, obj17), ];
-    const obj18 = { style: tmp.footerText, variant: "text-sm/normal", color: "text-default" };
-    const intl8 = userId(1212).intl;
-    const obj19 = {
-      articleLink() {
-          channelId(outer1_2[30]).hideActionSheet();
-          const obj = channelId(outer1_2[30]);
-          const articleURL = channelId(outer1_2[37]).getArticleURL(outer1_12.STEALTH_REMEDIATION_FEATURE_GUIDE);
-          const obj2 = channelId(outer1_2[37]);
-          channelId(outer1_2[38]).openURL(articleURL);
-        }
+    obj17[4] = tmp6;
+    obj17[5] = tmp6;
+    const items11 = [closure_14(tmp7(4600).Button, obj17), ];
+    const obj18 = { style: null, variant: "text-sm/normal", color: "text-default", children: null };
+    obj18[0] = tmp.footerText;
+    const intl8 = tmp7(1236).intl;
+    const obj19 = { articleLink: null };
+    obj19[0] = function articleLink() {
+      channelId(4157).hideActionSheet();
+      const obj = channelId(4157);
+      const articleURL = channelId(1945).getArticleURL(constants2.STEALTH_REMEDIATION_FEATURE_GUIDE);
+      const obj2 = channelId(1945);
+      channelId(3886).openURL(articleURL);
     };
-    obj18.children = intl8.format(userId(1212).t.CpTgBn, obj19);
-    items11[1] = callback2(userId(4161).Text, obj18);
-    obj16.children = items11;
-    items10[3] = callback3(closure_5, obj16);
-    obj2.children = items10;
-    obj.children = callback3(userId(5223).BottomSheetScrollView, obj2);
-    obj.children = callback2(userId(5221).BottomSheet, obj);
-    tmp10Result = callback2(userId(5497).AnalyticsLocationProvider, obj);
-    const tmp10 = callback2;
-    const tmp13 = callback2;
-    const tmp20 = callback3;
+    obj18[3] = intl8.format(tmp7(1236).t.CpTgBn, obj19);
+    items11[1] = closure_14(tmp7(4185).Text, obj18);
+    obj16[1] = items11;
+    items10[3] = callback3(c5, obj16);
+    obj15[0] = items10;
+    obj[4] = callback3(tmp7(5245).BottomSheetScrollView, obj15);
+    obj[1] = closure_14(tmp7(5243).BottomSheet, obj);
+    tmp13Result = tmp13(tmp7(5515).AnalyticsLocationProvider, obj);
+    const tmp2Result = tmp2(4379);
   }
-  return tmp10Result;
+  return tmp13Result;
 });
 let result = require("get ActivityIndicator").fileFinishedImporting("modules/relationships/native/BlockConfirmationActionSheet.tsx");
 

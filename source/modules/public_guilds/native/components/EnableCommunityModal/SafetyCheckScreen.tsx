@@ -1,147 +1,156 @@
-// Module ID: 16469
-// Function ID: 128407
+// Module ID: 16504
+// Function ID: 16505
 // Name: SafetyCheckScreen
-// Dependencies: [57, 31, 27, 8281, 653, 33, 3869, 689, 16470, 566, 16471, 16468, 4161, 1212, 4576, 5536, 16480, 5537, 8280, 2]
+// Dependencies: [32, 19, 17, 8305, 676, 21, 3893, 712, 16505, 589, 16506, 16503, 4185, 1236, 4598, 5554, 16515, 5555, 8304, 2]
 // Exports: default
 
-// Module 16469 (SafetyCheckScreen)
+// Module 16504 (SafetyCheckScreen)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
-import get_ActivityIndicator from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import set from "set";
+import get_ActivityIndicator from "TableSwitchRow";
+import handleFormInit from "handleFormInit";
 import ME from "ME";
 import jsxProd from "jsxProd";
 
-let closure_10;
-let closure_11;
-let closure_5;
+let c10;
+let c5;
+let c9;
 let closure_6;
-let closure_8;
-let closure_9;
+let metroImportAll;
+let unpackModuleId;
 const require = arg1;
-({ Image: closure_5, View: closure_6 } = get_ActivityIndicator);
-({ VerificationLevels: closure_8, GuildExplicitContentFilterTypes: closure_9 } = ME);
-({ jsx: closure_10, jsxs: closure_11 } = jsxProd);
+({ Image: c5, View: closure_6 } = get_ActivityIndicator);
+({ VerificationLevels: metroImportAll, GuildExplicitContentFilterTypes: c9 } = ME);
+({ jsx: c10, jsxs: unpackModuleId } = jsxProd);
 const result = require("get ActivityIndicator").fileFinishedImporting("modules/public_guilds/native/components/EnableCommunityModal/SafetyCheckScreen.tsx");
 
 export default function SafetyCheckScreen() {
+  let obj = React;
   const ref = React.useRef(null);
-  let obj = guild(first1[6]);
-  const token = obj.useToken(first(first1[7]).modules.mobile.TABLE_ROW_PADDING);
-  let obj1 = guild(first1[8]);
-  const enableCommunitySharedStyles = obj1.useEnableCommunitySharedStyles();
-  let obj2 = guild(first1[9]);
-  const items = [_isNativeReflectConstruct];
-  guild = obj2.useStateFromStoresObject(items, () => outer1_7.getProps()).guild;
+  let obj1 = guild(first1[6]);
+  const token = obj1.useToken(first(first1[7]).modules.mobile.TABLE_ROW_PADDING);
+  let obj2 = guild(first1[8]);
+  const enableCommunitySharedStyles = obj2.useEnableCommunitySharedStyles();
+  let obj3 = guild(first1[9]);
+  const items = [handleFormInit];
+  guild = obj3.useStateFromStoresObject(items, () => props.getProps()).guild;
   let verificationLevel;
-  if (null != guild) {
+  if (guild != null) {
     verificationLevel = guild.verificationLevel;
   }
-  if (null == verificationLevel) {
+  if (verificationLevel == null) {
     verificationLevel = constants.NONE;
   }
   first = callback(React.useState(verificationLevel), 1)[0];
   let prop;
-  if (null != guild) {
+  if (guild != null) {
     prop = guild.explicitContentFilter;
   }
-  if (null == prop) {
+  if (prop == null) {
     prop = constants2.ALL_MEMBERS;
   }
-  first1 = callback(React.useState(prop), 1)[0];
-  let tmp16Result = null;
+  first1 = callback(obj.useState(prop), 1)[0];
+  let tmp20Result = null;
   if (null != guild) {
-    obj = { headerRef: ref, currentStep: guild(first1[11]).EnableCommunityModalSteps.STEP_1 };
-    let tmp20 = guild.explicitContentFilter !== constants2.ALL_MEMBERS;
-    if (!tmp20) {
-      tmp20 = guild.verificationLevel === constants.NONE;
-    }
-    obj.disableNextStep = tmp20;
-    obj = { style: enableCommunitySharedStyles.content };
-    obj1 = { ref, accessibilityRole: "header", variant: "text-md/semibold", color: "text-subtle" };
-    const intl = guild(first1[13]).intl;
-    obj1.children = intl.formatToPlainString(guild(first1[13]).t.tInpJj, { number: 1, total: 3 });
-    const items1 = [callback2(guild(first1[12]).Text, obj1), , , ];
-    obj2 = { resizeMode: "contain", source: tmp5.safetyCheck };
+    obj = { headerRef: null, currentStep: null, disableNextStep: null, children: null };
+    obj[0] = ref;
+    obj[1] = tmp2(tmp3[11]).EnableCommunityModalSteps.STEP_1;
+    obj[2] = guild.explicitContentFilter !== tmp17.ALL_MEMBERS || guild.verificationLevel === tmp15.NONE;
+    obj = { style: null, children: null };
+    obj[0] = enableCommunitySharedStyles.content;
+    obj1 = { ref: null, accessibilityRole: "header", variant: "text-md/semibold", color: "text-subtle", children: null };
+    obj1[0] = ref;
+    const intl = tmp2(tmp3[13]).intl;
+    obj1[4] = intl.formatToPlainString(tmp2(tmp3[13]).t.tInpJj, { number: 1, total: 3 });
+    const items1 = [callback2(tmp2(tmp3[12]).Text, obj1), , , ];
+    obj2 = { resizeMode: "contain", source: null };
+    obj2[1] = tmp7.safetyCheck;
     items1[1] = callback2(closure_5, obj2);
-    let obj3 = { style: enableCommunitySharedStyles.header, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary" };
-    const intl2 = guild(first1[13]).intl;
-    obj3.children = intl2.string(guild(first1[13]).t.QrjLYl);
-    items1[2] = callback2(guild(first1[12]).Heading, obj3);
-    const obj4 = { style: enableCommunitySharedStyles.description, variant: "text-md/medium", color: "text-subtle" };
-    const intl3 = guild(first1[13]).intl;
-    obj4.children = intl3.string(guild(first1[13]).t.i1STwu);
-    items1[3] = callback2(guild(first1[12]).Text, obj4);
-    obj.children = items1;
-    const items2 = [callback3(closure_6, obj), ];
-    const obj5 = { spacing: 24 };
-    const obj6 = { paddingHorizontal: token };
-    obj5.style = obj6;
-    const obj7 = {};
-    const intl4 = guild(first1[13]).intl;
-    obj7.helperText = intl4.string(guild(first1[13]).t.fHiGA0);
-    obj7.hasIcons = false;
-    const obj8 = { formSwitchDisabled: tmp13 };
-    const obj9 = {};
-    const intl5 = guild(first1[13]).intl;
-    obj9.label = intl5.string(guild(first1[13]).t["rkA56+"]);
-    obj9.value = guild.verificationLevel !== constants.NONE;
-    obj9.disabled = tmp13;
-    obj9.onValueChange = function onValueChange(arg0) {
+    obj3 = { style: null, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: null };
+    obj3[0] = enableCommunitySharedStyles.header;
+    const intl2 = tmp2(tmp3[13]).intl;
+    obj3[3] = intl2.string(tmp2(tmp3[13]).t.QrjLYl);
+    items1[2] = callback2(tmp2(tmp3[12]).Heading, obj3);
+    const obj4 = { style: null, variant: "text-md/medium", color: "text-subtle", children: null };
+    obj4[0] = enableCommunitySharedStyles.description;
+    const intl3 = tmp2(tmp3[13]).intl;
+    obj4[3] = intl3.string(tmp2(tmp3[13]).t.i1STwu);
+    items1[3] = callback2(tmp2(tmp3[12]).Text, obj4);
+    obj[1] = items1;
+    const items2 = [closure_11(closure_6, obj), ];
+    const obj5 = { spacing: 24, style: null, children: null };
+    const obj6 = { paddingHorizontal: null };
+    obj6[0] = token;
+    obj5[1] = obj6;
+    const obj7 = { helperText: null, hasIcons: false, children: null };
+    const intl4 = tmp2(tmp3[13]).intl;
+    obj7[0] = intl4.string(tmp2(tmp3[13]).t.fHiGA0);
+    const obj8 = { formSwitchDisabled: null, children: null };
+    obj8[0] = first !== tmp16;
+    let tmp4Result = tmp4(tmp3[16]);
+    const obj9 = { label: null, value: null, disabled: null, onValueChange: null };
+    const intl5 = tmp2(tmp3[13]).intl;
+    obj9[0] = intl5.string(tmp2(tmp3[13]).t["rkA56+"]);
+    obj9[1] = guild.verificationLevel !== tmp15.NONE;
+    obj9[2] = first !== tmp16;
+    obj9[3] = function onValueChange(arg0) {
       if (null != guild) {
         if (arg0) {
-          if (guild.verificationLevel < outer1_8.LOW) {
-            let obj = { verificationLevel: outer1_8.LOW };
+          if (tmp.verificationLevel < outer1_8.LOW) {
+            let obj = { verificationLevel: null };
+            obj[0] = tmp2.LOW;
             first(first1[18]).updateGuild(obj);
             const obj3 = first(first1[18]);
           }
         }
         if (!arg0) {
           obj = first(first1[18]);
-          obj = { verificationLevel: first };
+          obj = { verificationLevel: null };
+          obj[0] = first;
           obj.updateGuild(obj);
         }
       }
     };
-    obj8.children = callback2(guild(first1[17]).TableSwitchRow, obj9);
-    obj7.children = callback2(first(first1[16]), obj8);
-    const items3 = [callback2(guild(first1[15]).TableRowGroup, obj7), ];
-    const obj10 = {};
-    const intl6 = guild(first1[13]).intl;
-    obj10.helperText = intl6.string(guild(first1[13]).t.b0MaDV);
-    obj10.hasIcons = false;
-    const obj11 = { formSwitchDisabled: tmp14 };
-    const tmp16 = callback3;
-    const tmp29 = first(first1[16]);
-    const obj12 = {};
-    const intl7 = guild(first1[13]).intl;
-    obj12.label = intl7.string(guild(first1[13]).t.zOuzl7);
-    obj12.value = guild.explicitContentFilter === constants2.ALL_MEMBERS;
-    obj12.disabled = tmp14;
-    obj12.onValueChange = function onValueChange(arg0) {
+    obj8[1] = callback2(tmp2(tmp3[17]).TableSwitchRow, obj9);
+    obj7[2] = callback2(tmp4Result, obj8);
+    const items3 = [callback2(tmp2(tmp3[15]).TableRowGroup, obj7), ];
+    const obj10 = { helperText: null, hasIcons: false, children: null };
+    const intl6 = tmp2(tmp3[13]).intl;
+    obj10[0] = intl6.string(tmp2(tmp3[13]).t.b0MaDV);
+    const obj11 = { formSwitchDisabled: null, children: null };
+    obj11[0] = first1 === tmp18;
+    tmp4Result = tmp4(tmp3[16]);
+    const obj12 = { label: null, value: null, disabled: null, onValueChange: null };
+    const intl7 = tmp2(tmp3[13]).intl;
+    obj12[0] = intl7.string(tmp2(tmp3[13]).t.zOuzl7);
+    obj12[1] = guild.explicitContentFilter === tmp17.ALL_MEMBERS;
+    obj12[2] = first1 === tmp18;
+    obj12[3] = function onValueChange(arg0) {
       if (null != guild) {
         if (arg0) {
-          if (guild.explicitContentFilter < outer1_9.ALL_MEMBERS) {
-            let obj = { explicitContentFilter: outer1_9.ALL_MEMBERS };
+          if (tmp.explicitContentFilter < outer1_9.ALL_MEMBERS) {
+            let obj = { explicitContentFilter: null };
+            obj[0] = tmp2.ALL_MEMBERS;
             first(first1[18]).updateGuild(obj);
             const obj3 = first(first1[18]);
           }
         }
         if (!arg0) {
           obj = first(first1[18]);
-          obj = { explicitContentFilter: first1 };
+          obj = { explicitContentFilter: null };
+          obj[0] = first1;
           obj.updateGuild(obj);
         }
       }
     };
-    obj11.children = callback2(guild(first1[17]).TableSwitchRow, obj12);
-    obj10.children = callback2(first(first1[16]), obj11);
-    items3[1] = callback2(guild(first1[15]).TableRowGroup, obj10);
-    obj5.children = items3;
-    items2[1] = callback3(guild(first1[14]).Stack, obj5);
-    obj.children = items2;
-    tmp16Result = tmp16(guild(first1[11]).EnableCommunityModalScreen, obj);
-    const tmp31 = first(first1[16]);
+    obj11[1] = callback2(tmp2(tmp3[17]).TableSwitchRow, obj12);
+    obj10[2] = callback2(tmp4Result, obj11);
+    items3[1] = callback2(tmp2(tmp3[15]).TableRowGroup, obj10);
+    obj5[2] = items3;
+    items2[1] = closure_11(tmp2(tmp3[14]).Stack, obj5);
+    obj[3] = items2;
+    tmp20Result = tmp20(tmp2(tmp3[11]).EnableCommunityModalScreen, obj);
+    const tmp21 = guild.explicitContentFilter !== tmp17.ALL_MEMBERS || guild.verificationLevel === tmp15.NONE;
   }
-  return tmp16Result;
+  return tmp20Result;
 };

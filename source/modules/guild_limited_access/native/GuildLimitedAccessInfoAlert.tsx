@@ -1,52 +1,54 @@
-// Module ID: 12949
-// Function ID: 100437
+// Module ID: 12972
+// Function ID: 12973
 // Name: GuildLimitedAccessInfoAlert
-// Dependencies: [31, 1838, 12950, 653, 33, 4165, 5087, 689, 1212, 4596, 1273, 4161, 2]
+// Dependencies: [19, 1862, 12973, 676, 21, 4189, 5109, 712, 1236, 4618, 1297, 4185, 2]
 // Exports: default
 
-// Module 12949 (GuildLimitedAccessInfoAlert)
-import "result";
-import closure_3 from "_createForOfIteratorHelperLoose";
+// Module 12972 (GuildLimitedAccessInfoAlert)
+import "noop";
+import createGuildRecordFromRust from "createGuildRecordFromRust";
 import { GUILD_LIMITED_ACCESS_HC_LINK as closure_4 } from "GUILD_LIMITED_ACCESS_HC_LINK";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 import importDefaultResult from "createTextStyle";
 
-let closure_5;
+let c5;
 let closure_6;
 const require = arg1;
-({ jsx: closure_5, jsxs: closure_6 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = {};
-const merged = Object.assign(require("createTextStyle")(require("ME").Fonts.PRIMARY_BOLD, require("_createForOfIteratorHelperLoose").colors.MOBILE_TEXT_HEADING_PRIMARY, 24));
-_createForOfIteratorHelperLoose["textAlign"] = "center";
-_createForOfIteratorHelperLoose["marginVertical"] = 12;
-_createForOfIteratorHelperLoose.header = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.text = { textAlign: "center", marginVertical: 8 };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+({ jsx: c5, jsxs: closure_6 } = jsxProd);
+createCacheKey = { header: null, text: null };
+createCacheKey = {};
+const merged = Object.assign(require("createTextStyle")(require("ME").Fonts.PRIMARY_BOLD, require("Themes").colors.MOBILE_TEXT_HEADING_PRIMARY, 24));
+createCacheKey.textAlign = "center";
+createCacheKey.marginVertical = 12;
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { textAlign: "center", marginVertical: 8 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
 const result = require("GUILD_LIMITED_ACCESS_HC_LINK").fileFinishedImporting("modules/guild_limited_access/native/GuildLimitedAccessInfoAlert.tsx");
 
 export default function GuildLimitedAccessInfoAlert(arg0) {
   let guildId;
   let onClose;
   ({ guildId, onClose } = arg0);
-  const tmp = _createForOfIteratorHelperLoose();
-  const intl = require(1212) /* getSystemLocale */.intl;
+  const tmp = createCacheKey();
+  const intl = require(1236) /* getSystemLocale */.intl;
   let obj = { helpdeskArticle: closure_4 };
-  let formatResult = intl.format(require(1212) /* getSystemLocale */.t.ZqkXsC, obj);
   guild = guild.getGuild(guildId);
+  let formatResult1 = intl.format(require(1236) /* getSystemLocale */.t.ZqkXsC, obj);
   if (null != guild) {
-    const intl2 = require(1212) /* getSystemLocale */.intl;
-    obj = { guildName: guild.name, helpdeskArticle: closure_4 };
-    formatResult = intl2.format(require(1212) /* getSystemLocale */.t.jn0Xyx, obj);
+    const intl2 = tmp2(1236).intl;
+    obj = { guildName: null, helpdeskArticle: null };
+    obj[0] = guild.name;
+    obj[1] = tmp4;
+    formatResult1 = intl2.format(tmp2(1236).t.jn0Xyx, obj);
   }
-  obj = { onClose };
-  const obj1 = { style: tmp.header };
-  const intl3 = require(1212) /* getSystemLocale */.intl;
-  obj1.children = intl3.string(require(1212) /* getSystemLocale */.t.kJwpBW);
-  const items = [callback(require(1273) /* Button */.LegacyText, obj1), ];
-  const obj2 = { style: tmp.text, variant: "text-md/medium", children: formatResult };
-  items[1] = callback(require(4161) /* Text */.Text, obj2);
-  obj.children = items;
-  return callback2(importDefault(4596), obj);
+  obj = { onClose, children: null };
+  const formatResult = intl.format(require(1236) /* getSystemLocale */.t.ZqkXsC, obj);
+  tmp4 = closure_4;
+  const obj1 = { style: tmp.header, children: null };
+  const intl3 = tmp2(1236).intl;
+  obj1[1] = intl3.string(require(1236) /* getSystemLocale */.t.kJwpBW);
+  const items = [callback(require(1297) /* Button */.LegacyText, obj1), callback(require(4185) /* Text */.Text, { style: tmp.text, variant: "text-md/medium", children: formatResult1 })];
+  obj[1] = items;
+  return callback2(importDefault(4618), obj);
 };

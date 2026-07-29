@@ -1,29 +1,50 @@
-// Module ID: 16104
-// Function ID: 124401
-// Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 1194, 1850, 16105, 5112, 2]
+// Module ID: 16139
+// Function ID: 16140
+// Name: handleMessageCreate
+// Dependencies: [1218, 1874, 5134, 16140, 2]
 
-// Module 16104 (_isNativeReflectConstruct)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
-import closure_7 from "_isNativeReflectConstruct";
-import closure_8 from "_isNativeReflectConstruct";
-import tmp2 from "AutomaticLifecycleManager";
+// Module 16139 (handleMessageCreate)
+import fetchFingerprint from "fetchFingerprint";
+import mergeGuildAvatar from "mergeGuildAvatar";
+import "initialize";
 
 const require = arg1;
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
+class BackgroundSyncManager extends tmp2 {
+  constructor() {
+    applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
+    applyArgumentsResult.actions = { MESSAGE_CREATE: applyArgumentsResult.handleMessageCreate, POST_CONNECTION_OPEN: applyArgumentsResult.handlePostConnectionOpen };
+    return applyArgumentsResult;
   }
-  const result = _isNativeReflectConstruct();
 }
-tmp2 = new tmp2();
-let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/app_database/background_sync/native/BackgroundSyncManager.tsx");
+const prototype = BackgroundSyncManager.prototype;
+prototype["handleMessageCreate"] = function handleMessageCreate(message) {
+  message = message.message;
+  if (!message.optimistic) {
+    let tmp2 = null != message.author;
+    if (tmp2) {
+      tmp2 = message.author.id === id.getId();
+    }
+    if (tmp2) {
+      currentUser = currentUser.getCurrentUser();
+      let isStaffResult;
+      if (currentUser != null) {
+        isStaffResult = currentUser.isStaff();
+      }
+      tmp2 = isStaffResult;
+    }
+    if (tmp2) {
+      tmp2 = "run bg sync" === message.content;
+    }
+    if (tmp2) {
+      require(16140) /* _backgroundSync */.backgroundSync({ force: true });
+      const obj2 = require(16140) /* _backgroundSync */;
+    }
+  }
+};
+prototype["handlePostConnectionOpen"] = function handlePostConnectionOpen() {
+  require(16140) /* _backgroundSync */.backgroundSync({ force: false, messagesOnly: true, checkLastMessageId: true });
+};
+const backgroundSyncManager = new BackgroundSyncManager();
+const result = require("initialize").fileFinishedImporting("modules/app_database/background_sync/native/BackgroundSyncManager.tsx");
 
-export default tmp2;
+export default backgroundSyncManager;

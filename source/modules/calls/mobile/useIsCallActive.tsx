@@ -1,43 +1,54 @@
-// Module ID: 7739
-// Function ID: 61640
-// Name: checkIsCallActive
-// Dependencies: [4844, 4178, 4183, 566, 2]
-// Exports: default, useIsCallActiveNullable
+// Module ID: 7762
+// Function ID: 7763
+// Name: useIsCallActive
+// Dependencies: [4866, 4202, 4207, 589, 2]
+// Exports: checkIsCallActive, default, useIsCallActiveNullable
 
-// Module 7739 (checkIsCallActive)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_3 from "_isNativeReflectConstruct";
+// Module 7762 (useIsCallActive)
+import callConnect from "callConnect";
+import getParticipants from "getParticipants";
 import { ParticipantTypes } from "ParticipantTypes";
 
 const require = arg1;
-function checkIsCallActive(channelId, id) {
-  let isCallActiveResult = callActive.isCallActive(channelId, id);
-  if (isCallActiveResult) {
-    participants = participants.getParticipants(channelId);
-    isCallActiveResult = participants.some((type) => type.type === outer1_4.USER && !type.ringing);
-  }
-  return isCallActiveResult;
-}
 const result = require("ParticipantTypes").fileFinishedImporting("modules/calls/mobile/useIsCallActive.tsx");
 
 export default function useIsCallActive(arg0, arg1) {
   const _require = arg0;
   const dependencyMap = arg1;
-  const items = [_isNativeReflectConstruct, closure_3];
+  const items = [callConnect, getParticipants];
   const items1 = [arg0, arg1];
-  return _require(566).useStateFromStores(items, () => outer1_5(closure_0, closure_1), items1);
+  return _require(589).useStateFromStores(items, () => {
+    let isCallActiveResult = outer1_2.isCallActive(closure_0, closure_1);
+    if (isCallActiveResult) {
+      const participants = outer1_3.getParticipants(closure_0);
+      isCallActiveResult = participants.some((type) => type.type === constants.USER && !type.ringing);
+    }
+    return isCallActiveResult;
+  }, items1);
 };
-export { checkIsCallActive };
+export const checkIsCallActive = function checkIsCallActive(channelId, id) {
+  let isCallActiveResult = callActive.isCallActive(channelId, id);
+  if (isCallActiveResult) {
+    participants = participants.getParticipants(channelId);
+    isCallActiveResult = participants.some((type) => type.type === constants.USER && !type.ringing);
+  }
+  return isCallActiveResult;
+};
 export const useIsCallActiveNullable = function useIsCallActiveNullable(id) {
   const _require = id;
   const dependencyMap = arg1;
-  const items = [_isNativeReflectConstruct, closure_3];
+  const items = [callConnect, getParticipants];
   const items1 = [id, arg1];
-  return _require(566).useStateFromStores(items, () => {
-    let tmp = null != closure_0;
-    if (tmp) {
-      tmp = outer1_5(closure_0, closure_1);
+  return _require(589).useStateFromStores(items, () => {
+    let tmp2 = null != closure_0;
+    if (tmp2) {
+      let isCallActiveResult = outer1_2.isCallActive(tmp, closure_1);
+      if (isCallActiveResult) {
+        const participants = outer1_3.getParticipants(tmp);
+        isCallActiveResult = participants.some((type) => type.type === constants.USER && !type.ringing);
+      }
+      tmp2 = isCallActiveResult;
     }
-    return tmp;
+    return tmp2;
   }, items1);
 };

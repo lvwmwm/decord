@@ -1,14 +1,15 @@
-// Module ID: 7593
-// Function ID: 60669
+// Module ID: 7617
+// Function ID: 7618
 // Name: useIsAgeVerificationExpressiveModalEverywhereEnabled
-// Dependencies: [1428, 2]
+// Dependencies: [1452, 2]
 // Exports: isAgeVerificationExpressiveModalEverywhereEnabled, useIsAgeVerificationExpressiveModalEverywhereEnabled
 
-// Module 7593 (useIsAgeVerificationExpressiveModalEverywhereEnabled)
+// Module 7617 (useIsAgeVerificationExpressiveModalEverywhereEnabled)
 import ApexExperiment from "ApexExperiment";
 
-const obj = { kind: "user", name: "2025-11-age-verification-expressive-everywhere", defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } };
-let closure_0 = ApexExperiment.createApexExperiment(obj);
+const obj = { 1: null };
+obj[1] = { enabled: true };
+let closure_0 = ApexExperiment.createApexExperiment({ kind: "user", name: "2025-11-age-verification-expressive-everywhere", defaultConfig: { enabled: false }, variations: obj });
 const result = require("set").fileFinishedImporting("modules/age_assurance/AgeVerificationExpressiveModalEverywhereExperiment.tsx");
 
 export const useIsAgeVerificationExpressiveModalEverywhereEnabled = function useIsAgeVerificationExpressiveModalEverywhereEnabled(location) {

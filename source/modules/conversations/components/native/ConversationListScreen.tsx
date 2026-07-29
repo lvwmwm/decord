@@ -1,153 +1,78 @@
-// Module ID: 9262
-// Function ID: 72413
-// Name: _createForOfIteratorHelperLoose
-// Dependencies: [5, 57, 31, 27, 5840, 5842, 33, 4165, 689, 9263, 4161, 1212, 1459, 1557, 9245, 566, 21, 9246, 9248, 6655, 2]
+// Module ID: 9286
+// Function ID: 9287
+// Name: renderItem
+// Dependencies: [5, 32, 19, 17, 5858, 5860, 21, 4189, 712, 9287, 4185, 1236, 1483, 1581, 9269, 589, 11, 9270, 9272, 6676, 2]
 // Exports: default
 
-// Module 9262 (_createForOfIteratorHelperLoose)
+// Module 9286 (renderItem)
 import closure_3 from "CONVERSATION_COLORS";
 import _slicedToArray from "_slicedToArray";
-import importAllResult from "result";
-import get_ActivityIndicator from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import importAllResult from "noop";
+import get_ActivityIndicator from "_fetchChannelConversations";
+import removePendingListFetch from "removePendingListFetch";
 import CONVERSATION_COLORS from "CONVERSATION_COLORS";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
+import createCacheKey from "createCacheKey";
 
-let closure_10;
-let closure_11;
+let c10;
+let c9;
 let closure_6;
-let closure_7;
-let closure_9;
-let require = arg1;
-function _createForOfIteratorHelperLoose(iterable) {
-  let closure_0 = iterable;
-  iterable = "undefined" !== typeof Symbol;
-  if (iterable) {
-    const _Symbol = Symbol;
-    iterable = iterable[Symbol.iterator];
-  }
-  if (!iterable) {
-    iterable = iterable[Symbol.iterator];
-  }
-  if (iterable) {
-    const iter = iterable.call(iterable);
-    const next = iter.next;
-    return next.bind(iter);
-  } else {
-    const _Array = Array;
-    let tmp = iterable;
-    if (!Array.isArray(iterable)) {
-      let tmp2;
-      if (iterable) {
-        if ("string" === typeof iterable) {
-          tmp2 = _arrayLikeToArray(iterable, undefined);
-        } else {
-          const toString = {}.toString;
-          const substr = toString.call(iterable).slice(8, -1);
-          let name = substr;
-          if (tmp3) {
-            name = iterable.constructor.name;
-          }
-          if ("Map" !== name) {
-            if ("Set" !== name) {
-              if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(iterable, undefined);
-              } else {
-                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
-              }
-            }
-            tmp2 = arr;
-          }
-          const _Array2 = Array;
-          arr = Array.from(iterable);
-          const callResult = toString.call(iterable);
-          tmp3 = "Object" === substr && iterable.constructor;
-        }
-      }
-      tmp = tmp2;
-      if (!tmp2) {
-        const _TypeError = TypeError;
-        const typeError = new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
-        throw typeError;
-      }
-    }
-    if (tmp) {
-      closure_0 = tmp;
-    }
-    let c1 = 0;
-    return () => {
-      if (closure_1 >= length.length) {
-        let obj = { done: true };
-      } else {
-        obj = { done: false };
-        closure_1 = tmp3 + 1;
-        obj.value = length[+closure_1];
-      }
-      return obj;
-    };
-  }
-}
-function _arrayLikeToArray(arg0, arg1) {
-  let length;
-  if (tmp) {
-    length = arg0.length;
-  }
-  const ArrayResult = Array(length);
-  for (let num = 0; num < length; num = num + 1) {
-    ArrayResult[num] = arg0[num];
-  }
-  return ArrayResult;
-}
+let error;
+let unpackModuleId;
+const require = arg1;
 function renderItem(item) {
   item = item.item;
-  return jsx(importDefault(9263), { channelId: item.channelId, conversationId: item.conversationId });
+  return jsx(importDefault(9287), { channelId: item.channelId, conversationId: item.conversationId });
 }
 function keyExtractor(conversationId) {
   return conversationId.conversationId;
 }
-({ ActivityIndicator: closure_6, View: closure_7 } = get_ActivityIndicator);
-({ MAX_CONVERSATIONS_PER_CHANNEL: closure_9, MOBILE_FETCH_LIMIT: closure_10, MOBILE_PREVIEW_MESSAGE_COUNT: closure_11 } = CONVERSATION_COLORS);
+let c5 = importAllResult;
+({ ActivityIndicator: closure_6, View: error } = get_ActivityIndicator);
+({ MAX_CONVERSATIONS_PER_CHANNEL: c9, MOBILE_FETCH_LIMIT: c10, MOBILE_PREVIEW_MESSAGE_COUNT: unpackModuleId } = CONVERSATION_COLORS);
 let closure_13 = { waitForInteraction: false, itemVisiblePercentThreshold: 50, minimumViewTime: 1000 };
-let obj = {};
-obj = { flex: 1, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW };
-obj.container = obj;
-_createForOfIteratorHelperLoose = { paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16, paddingTop: require("_createForOfIteratorHelperLoose").space.PX_16 };
-obj.content = _createForOfIteratorHelperLoose;
-obj.spinner = { paddingVertical: require("_createForOfIteratorHelperLoose").space.PX_16, alignItems: "center" };
-let closure_14 = _createForOfIteratorHelperLoose.createStyles(obj);
-let obj3 = {};
-let obj2 = { paddingVertical: require("_createForOfIteratorHelperLoose").space.PX_16, alignItems: "center" };
-obj3.empty = { paddingVertical: require("_createForOfIteratorHelperLoose").space.PX_24, paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16 };
-let closure_15 = _createForOfIteratorHelperLoose.createStyles(obj3);
-let closure_16 = importAllResult.memo(() => {
-  let obj = { style: callback2().empty };
-  obj = { variant: "text-md/normal", color: "text-muted" };
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj.children = intl.string(require(1212) /* getSystemLocale */.t.LJuFRG);
-  obj.children = jsx(require(4161) /* Text */.Text, { variant: "text-md/normal", color: "text-muted" });
-  return <closure_7 variant="text-md/normal" color="text-muted" />;
+let obj = { container: null, content: null, spinner: null };
+obj = { flex: 1, backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW };
+obj[0] = obj;
+createCacheKey = { paddingHorizontal: require("Themes").space.PX_16, paddingTop: require("Themes").space.PX_16 };
+obj[1] = createCacheKey;
+obj[2] = { paddingVertical: require("Themes").space.PX_16, alignItems: "center" };
+let closure_14 = createCacheKey.createStyles(obj);
+let obj3 = { empty: null };
+let obj2 = { paddingVertical: require("Themes").space.PX_16, alignItems: "center" };
+obj3[0] = { paddingVertical: require("Themes").space.PX_24, paddingHorizontal: require("Themes").space.PX_16 };
+let closure_15 = createCacheKey.createStyles(obj3);
+let closure_18 = importAllResult.memo(() => {
+  let obj = { style: callback2().empty, children: null };
+  obj = { variant: "text-md/normal", color: "text-muted", children: null };
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj[2] = intl.string(require(1236) /* getSystemLocale */.t.LJuFRG);
+  obj[1] = jsx(require(4185) /* Text */.Text, { variant: "text-md/normal", color: "text-muted", children: null });
+  return <closure_7 variant="text-md/normal" color="text-muted">{null}</closure_7>;
 });
-let obj4 = { paddingVertical: require("_createForOfIteratorHelperLoose").space.PX_24, paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16 };
-let result = require("result").fileFinishedImporting("modules/conversations/components/native/ConversationListScreen.tsx");
+let obj4 = { paddingVertical: require("Themes").space.PX_24, paddingHorizontal: require("Themes").space.PX_16 };
+let result = require("noop").fileFinishedImporting("modules/conversations/components/native/ConversationListScreen.tsx");
 
 export default function ConversationListScreen() {
   const tmp = callback();
-  const require = tmp;
-  let obj = require(guildId[12]);
+  let _require = tmp;
+  let obj = _require(guildId[12]);
   const params = obj.useRoute().params;
   const channelId = params.channelId;
+  let _handleEndReached = channelId;
   guildId = params.guildId;
-  const conversationBackoffRef = require(guildId[14]).useConversationBackoffRef();
-  const tmp3 = first(importAllResult.useState(false), 2);
-  first = tmp3[0];
-  const obj2 = require(guildId[14]);
+  const conversationBackoffRef = _require(guildId[14]).useConversationBackoffRef();
+  const tmp5 = first(importAllResult.useState(false), 2);
+  first = tmp5[0];
+  let obj2 = _require(guildId[14]);
+  let tmp2 = _require;
+  const tmp3 = guildId;
   const items = [stateFromStores1];
   const items1 = [channelId];
-  const stateFromStoresArray = require(guildId[15]).useStateFromStoresArray(items, () => {
-    let channelConversations = stateFromStores1.getChannelConversations(channelId);
-    if (null == channelConversations) {
+  const stateFromStoresArray = _require(guildId[15]).useStateFromStoresArray(items, () => {
+    let channelConversations = stateFromStores1.getChannelConversations(_handleEndReached);
+    if (channelConversations == null) {
       channelConversations = [];
     }
     return channelConversations.map((id) => id.id);
@@ -155,31 +80,124 @@ export default function ConversationListScreen() {
   const items2 = [stateFromStoresArray, channelId];
   const memo = importAllResult.useMemo(() => {
     const substr = stateFromStoresArray.slice();
-    const sorted = substr.sort((arg0, arg1) => channelId(guildId[16]).compare(arg1, arg0));
-    return sorted.map((conversationId) => ({ channelId: outer1_1, conversationId }));
+    const sorted = substr.sort((arg0, arg1) => callback(table[16]).compare(arg1, arg0));
+    return sorted.map((conversationId) => ({ channelId: closure_1, conversationId }));
   }, items2);
-  const obj3 = require(guildId[15]);
+  let obj4 = _require(guildId[15]);
   const items3 = [stateFromStores1];
   const items4 = [channelId];
-  const stateFromStores = require(guildId[15]).useStateFromStores(items3, () => null == stateFromStores1.getEdgeMarker(channelId, "before"), items4);
-  const obj4 = require(guildId[15]);
+  let stateFromStores = _require(guildId[15]).useStateFromStores(items3, () => null == stateFromStores1.getEdgeMarker(_handleEndReached, "before"), items4);
+  const obj5 = _require(guildId[15]);
   const items5 = [stateFromStores1];
   const items6 = [channelId];
-  stateFromStores1 = require(guildId[15]).useStateFromStores(items5, () => stateFromStores1.isPendingFetch(channelId), items6);
+  stateFromStores1 = _require(guildId[15]).useStateFromStores(items5, () => stateFromStores1.isPendingFetch(_handleEndReached), items6);
+  _require = undefined;
+  _handleEndReached = function _handleEndReached(arg0) {
+    const self = this;
+    const apply = closure_0.apply;
+    if (typeof apply === "unknown") {
+      let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+    } else {
+      applyArgumentsResult = apply(self, arguments);
+    }
+    return applyArgumentsResult;
+  };
+  _require = conversationBackoffRef(function*() {
+    if (ref === 2) {
+      ref = 3;
+      HermesBuiltin.throwTypeError();
+    } else if (tmp6 === 3) {
+      if (arg0 === 1) {
+        throw arg1;
+      } else if (arg0 === 2) {
+        let obj = { value: null, done: true };
+        obj[0] = arg1;
+        return obj;
+      } else {
+        return { value: "HermesInternal", done: null };
+      }
+    } else {
+      try {
+        ref = 2;
+        if (0 === c1) {
+          if (arg0 === 1) {
+            ref = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            ref = 3;
+            obj = { value: null, done: true };
+            obj[0] = arg1;
+            return obj;
+          } else {
+            const callback = tmp3;
+            const channelConversations = stateFromStores1.getChannelConversations(c1);
+            if (null != channelConversations) {
+              if (channelConversations.length > 0) {
+                if (outer1_7.length > 0) {
+                  if (arr[0].conversationId === channelConversations[channelConversations.length - 1].id) {
+                    let c2 = 1;
+                    let obj2 = callback(guildId[17]);
+                    const obj1 = { channelId: null, guildId: null, direction: "before", anchor: null, limit: null, throwOnError: true, hydrateMessages: null };
+                    obj1[0] = tmp33;
+                    obj1[1] = c2;
+                    obj1[3] = arr[arr.length - 1].conversationId;
+                    obj1[4] = outer2_10;
+                    obj2 = { limit: null };
+                    obj2[0] = outer2_11;
+                    obj1[6] = obj2;
+                    c1 = 2;
+                    ref = 1;
+                    const obj3 = { value: null, done: false };
+                    obj3[0] = obj2.fetchChannelConversations(obj1);
+                    return obj3;
+                  }
+                }
+              }
+            }
+            const current2 = ref.current;
+            current2.succeed();
+            outer1_5(false);
+            ref = 3;
+            tmp33 = c1;
+          }
+        } else if (1 === tmp7) {
+          c2 = 0;
+          const current = ref.current;
+          current.fail(c1);
+          outer1_5(true);
+          ref = 3;
+          const obj4 = { value: null, done: true };
+          obj4[0] = undefined;
+          return obj4;
+        } else if (arg0 === 1) {
+          ref = 3;
+          throw arg1;
+        } else if (arg0 !== 2) {
+          c2 = 0;
+        }
+        c2 = 0;
+        ref = 3;
+        obj = { value: null, done: true };
+        obj[0] = arg1;
+        return obj;
+      } catch (tmp24) {
+        if (tmp4 === c2) {
+          ref = tmp2;
+          throw tmp24;
+        } else {
+          c1 = tmp;
+        }
+      }
+    }
+  });
   const items7 = [memo, channelId, guildId, conversationBackoffRef];
   const items8 = [tmp.spinner, stateFromStores1, first];
-  callback = importAllResult.useCallback((() => {
-    function _handleEndReached() {
-      return callback(...arguments);
-    }
-    // CreateGeneratorClosureLongIndex (0x67)
-    let closure_0 = conversationBackoffRef(tmp);
-    return _handleEndReached;
-  })(), items7);
-  let tmp10 = stateFromStores;
+  callback = importAllResult.useCallback(_handleEndReached, items7);
   const memo1 = importAllResult.useMemo(() => {
     if (stateFromStores1) {
-      const obj = { style: tmp.spinner, children: outer1_12(stateFromStoresArray, {}) };
+      const obj = { style: null, children: null };
+      obj[0] = lib.spinner;
+      obj[1] = outer1_12(stateFromStoresArray, {});
       let tmp2 = outer1_12(memo, obj);
     } else {
       tmp2 = null;
@@ -187,64 +205,60 @@ export default function ConversationListScreen() {
     return tmp2;
   }, items8);
   if (stateFromStores) {
-    tmp10 = memo.length > 0;
+    stateFromStores = memo.length > 0;
   }
-  if (tmp10) {
-    tmp10 = memo.length < closure_9;
+  if (stateFromStores) {
+    stateFromStores = memo.length < closure_9;
   }
-  if (tmp10) {
-    tmp10 = !stateFromStores1;
+  if (stateFromStores) {
+    stateFromStores = !stateFromStores1;
   }
-  if (tmp10) {
-    tmp10 = !first;
+  if (stateFromStores) {
+    stateFromStores = !first;
   }
-  closure_9 = importAllResult.useRef(undefined);
+  closure_9 = obj3.useRef(undefined);
   const items9 = [channelId];
-  obj = { style: items10 };
-  items10 = [tmp.container, { paddingBottom: channelId(guildId[13])().bottom }];
-  const callback1 = importAllResult.useCallback((viewableItems) => {
-    let iter2;
+  obj = { style: items10, children: null };
+  items10 = [tmp.container, { paddingBottom: _handleEndReached(guildId[13])().bottom }];
+  const callback1 = obj3.useCallback((arg0) => {
     if (null == ref.current) {
       const _Set = Set;
       const set = new Set();
-      ref.current = set;
+      tmp2.current = set;
     }
-    const tmp7 = outer1_17(viewableItems.viewableItems);
-    let iter = tmp7();
-    if (!iter.done) {
-      do {
-        let conversationId = iter.value.item.conversationId;
-        let tmp8 = ref;
-        let current = ref.current;
-        if (!current.has(conversationId)) {
-          let tmp9 = tmp;
-          let tmp10 = guildId;
-          let ConversationsAnalytics = tmp(guildId[18]).ConversationsAnalytics;
-          let obj = {};
-          let tmp11 = channelId;
-          obj.channelId = channelId;
-          obj.conversationId = conversationId;
-          obj.isFocusMode = false;
-          let result = ConversationsAnalytics.trackPreviewImpression(obj);
-          let tmp13 = ref;
-          let current2 = ref.current;
-          let addResult = current2.add(conversationId);
-        }
-        iter2 = tmp7();
-        iter = iter2;
-      } while (!iter2.done);
+    for (const item10018 of tmp) {
+      let conversationId = item10018.item.conversationId;
+      let tmp9 = conversationId;
+      let current = ref.current;
+      let tmp10 = ref;
+      let tmp11 = ref;
+      if (!current.has(conversationId)) {
+        let tmp12 = lib;
+        let tmp13 = guildId;
+        let ConversationsAnalytics = lib(guildId[18]).ConversationsAnalytics;
+        let obj = { channelId: null, conversationId: null, isFocusMode: false };
+        let tmp14 = _handleEndReached;
+        obj[0] = _handleEndReached;
+        let tmp15 = conversationId;
+        obj[1] = tmp9;
+        let result = ConversationsAnalytics.trackPreviewImpression(obj);
+        let tmp17 = tmp10;
+        let current2 = tmp11.current;
+        let addResult = current2.add(tmp9);
+      }
+      continue;
     }
   }, items9);
-  obj = { data: memo, renderItem, keyExtractor, contentContainerStyle: tmp.content };
+  obj = { data: memo, renderItem, keyExtractor, contentContainerStyle: tmp.content, onEndReached: null, ListEmptyComponent: null, ListFooterComponent: null, onViewableItemsChanged: null, viewabilityConfig: null };
   let tmp16;
-  if (tmp10) {
+  if (stateFromStores) {
     tmp16 = callback;
   }
-  obj.onEndReached = tmp16;
-  obj.ListEmptyComponent = closure_16;
-  obj.ListFooterComponent = memo1;
-  obj.onViewableItemsChanged = callback1;
-  obj.viewabilityConfig = closure_13;
-  obj.children = jsx(require(guildId[19]).FlashList, { data: memo, renderItem, keyExtractor, contentContainerStyle: tmp.content });
-  return <memo data={memo} renderItem={renderItem} keyExtractor={keyExtractor} contentContainerStyle={tmp.content} />;
+  obj[4] = tmp16;
+  obj[5] = closure_18;
+  obj[6] = memo1;
+  obj[7] = callback1;
+  obj[8] = closure_13;
+  obj[1] = jsx(tmp2(tmp3[19]).FlashList, { data: memo, renderItem, keyExtractor, contentContainerStyle: tmp.content, onEndReached: null, ListEmptyComponent: null, ListFooterComponent: null, onViewableItemsChanged: null, viewabilityConfig: null });
+  return <memo data={memo} renderItem={renderItem} keyExtractor={keyExtractor} contentContainerStyle={tmp.content} onEndReached={null} ListEmptyComponent={null} ListFooterComponent={null} onViewableItemsChanged={null} viewabilityConfig={null} />;
 };

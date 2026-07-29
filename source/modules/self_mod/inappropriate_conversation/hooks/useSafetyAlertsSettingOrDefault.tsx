@@ -1,38 +1,44 @@
-// Module ID: 10110
-// Function ID: 78203
+// Module ID: 10131
+// Function ID: 10132
 // Name: useSafetyAlertsSettingOrDefault
-// Dependencies: [1316, 1850, 566, 7685, 10111, 2]
+// Dependencies: [1340, 1874, 589, 7708, 10132, 2]
 // Exports: useSafetyAlertsSettingOrDefault
 
-// Module 10110 (useSafetyAlertsSettingOrDefault)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_3 from "_isNativeReflectConstruct";
+// Module 10131 (useSafetyAlertsSettingOrDefault)
+import handleConnectionClosedOrResumed from "handleConnectionClosedOrResumed";
+import mergeGuildAvatar from "mergeGuildAvatar";
 
 const require = arg1;
 const result = require("initialize").fileFinishedImporting("modules/self_mod/inappropriate_conversation/hooks/useSafetyAlertsSettingOrDefault.tsx");
 
 export const useSafetyAlertsSettingOrDefault = function useSafetyAlertsSettingOrDefault() {
   currentUser = currentUser.getCurrentUser();
-  const items = [_isNativeReflectConstruct];
-  const stateFromStores = require(566) /* initialize */.useStateFromStores(items, () => {
-    const privacy = outer1_2.settings.privacy;
-    let value;
-    if (null != privacy) {
-      if (null != privacy.inappropriateConversationWarnings) {
-        value = iter.value;
+  const items = [handleConnectionClosedOrResumed];
+  const stateFromStores = require(589) /* initialize */.useStateFromStores(items, () => {
+    const privacy = settings.settings.privacy;
+    let flag;
+    if (privacy != null) {
+      if (privacy.inappropriateConversationWarnings != null) {
+        flag = iter.value;
       }
     }
-    return null == value || value;
+    if (flag == null) {
+      flag = true;
+    }
+    return flag;
   });
-  const obj2 = require(566) /* initialize */;
-  let userIsTeen = require(7685) /* useUserIsTeen */.useUserIsTeen();
-  const obj3 = require(7685) /* useUserIsTeen */;
-  const tmp3 = !userIsTeen || !require(10111) /* InappropriateConversationsDefaultOn */.useIsEligibleForInappropriateConversationDefaultOn({ location: "useSafetyAlertsSettingOrDefault" });
+  const obj2 = require(589) /* initialize */;
+  let userIsTeen = require(7708) /* useUserIsTeen */.useUserIsTeen();
+  const obj3 = require(7708) /* useUserIsTeen */;
+  let tmp3 = !userIsTeen;
+  if (userIsTeen) {
+    tmp3 = !obj4.useIsEligibleForInappropriateConversationDefaultOn({ location: "useSafetyAlertsSettingOrDefault" });
+  }
   let tmp4 = !tmp3;
   if (tmp3) {
     if (!userIsTeen) {
       let isStaffResult;
-      if (null != currentUser) {
+      if (currentUser != null) {
         isStaffResult = currentUser.isStaff();
       }
       userIsTeen = true === isStaffResult;

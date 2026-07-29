@@ -1,27 +1,14 @@
-// Module ID: 5765
-// Function ID: 50102
-// Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 1348, 1907, 4360, 566, 686, 2]
+// Module ID: 5783
+// Function ID: 5784
+// Name: handleChange
+// Dependencies: [1372, 1931, 4385, 589, 709, 2]
 
-// Module 5765 (_isNativeReflectConstruct)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_1 from "_isNativeReflectConstruct";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
-import closure_5 from "_isNativeReflectConstruct";
-import closure_6 from "_isNativeReflectConstruct";
-import closure_7 from "_isNativeReflectConstruct";
+// Module 5783 (handleChange)
+import ensureGuildLoaded from "ensureGuildLoaded";
+import handleConnectionOpen from "handleConnectionOpen";
+import updateUserGuildSettingsInternal from "updateUserGuildSettingsInternal";
+import { PersistedStore } from "initialize";
 
-function _isNativeReflectConstruct() {
-  let _isNativeReflectConstruct = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return _isNativeReflectConstruct;
-  }
-  const result = _isNativeReflectConstruct();
-}
 function handleChange() {
   channelId = channelId.getChannelId();
   if (null != channelId) {
@@ -37,19 +24,19 @@ function handleChange() {
           if (null == dependencyMap[guild_id]) {
             const _Set = Set;
             const set = new Set();
-            dependencyMap[guild_id] = set;
+            tmp6[guild_id] = set;
           }
-          if (closure_7.isFavorite(guild_id, channelId)) {
-            dependencyMap[guild_id].delete(channelId);
-            const obj3 = dependencyMap[guild_id];
+          if (optInEnabled.isFavorite(guild_id, channelId)) {
+            tmp6[guild_id].delete(channelId);
+            const obj4 = tmp6[guild_id];
           } else {
             if (null == dependencyMap2[guild_id]) {
               if (dependencyMap3[channelId] > 50) {
-                dependencyMap[guild_id].add(channelId);
-                const obj2 = dependencyMap[guild_id];
+                tmp6[guild_id].add(channelId);
+                const obj3 = tmp6[guild_id];
               }
             } else {
-              const obj = dependencyMap2[guild_id];
+              const obj2 = tmp12[guild_id];
             }
             return flag;
           }
@@ -57,113 +44,67 @@ function handleChange() {
         delete tmp[tmp2];
         if (null != dependencyMap[guild_id]) {
           dependencyMap[guild_id].delete(channelId);
-          const obj4 = dependencyMap[guild_id];
+          const obj5 = dependencyMap[guild_id];
         }
       }
     }
   }
 }
-let closure_8 = {};
-let closure_9 = {};
-let closure_10 = {};
-let tmp2 = ((PersistedStore) => {
-  class FavoritesSuggestionStore {
-    constructor() {
-      self = this;
-      tmp = FavoritesSuggestionStore(this, FavoritesSuggestionStore);
-      obj = outer1_3(FavoritesSuggestionStore);
-      tmp2 = outer1_2;
-      if (outer1_11()) {
-        tmp6 = globalThis;
-        _Reflect = Reflect;
-        tmp7 = outer1_3;
-        tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, outer1_3(self).constructor);
-      } else {
-        tmp3 = arguments;
-        tmp4 = arguments;
-        constructResult = obj(...arguments);
+let closure_3 = {};
+let closure_4 = {};
+let closure_5 = {};
+class FavoritesSuggestionStore extends PersistedStore {
+}
+const prototype = FavoritesSuggestionStore.prototype;
+prototype["initialize"] = function initialize(arg0) {
+  let channelOpensByChannelId;
+  let dismissedSuggestions;
+  let suggestedChannels;
+  this.waitFor(ensureGuildLoaded, handleConnectionOpen, updateUserGuildSettingsInternal);
+  const items = [handleConnectionOpen];
+  this.syncWith(items, handleChange);
+  if (null != arg0) {
+    ({ suggestedChannels, dismissedSuggestions, channelOpensByChannelId } = arg0);
+    if (null != suggestedChannels) {
+      for (const key10015 in suggestedChannels) {
+        let tmp7 = key10015;
+        let tmp8 = closure_3;
+        let _Set = Set;
+        let tmp9 = new.target;
+        let tmp10 = new.target;
+        let set = new Set(suggestedChannels[key10015]);
+        let tmp12 = set;
+        closure_3[key10015] = set;
+        continue;
       }
-      return tmp2(self, constructResult);
+    }
+    if (null != dismissedSuggestions) {
+      for (const key10019 in dismissedSuggestions) {
+        let tmp13 = key10019;
+        let tmp14 = closure_4;
+        let _Set2 = Set;
+        let tmp15 = new.target;
+        let tmp16 = new.target;
+        let set1 = new Set(dismissedSuggestions[key10019]);
+        let tmp18 = set1;
+        closure_4[key10019] = set1;
+        continue;
+      }
+    }
+    if (channelOpensByChannelId == null) {
+      channelOpensByChannelId = {};
     }
   }
-  callback2(FavoritesSuggestionStore, PersistedStore);
-  let obj = {
-    key: "initialize",
-    value(arg0) {
-      let channelOpensByChannelId;
-      let dismissedSuggestions;
-      let suggestedChannels;
-      this.waitFor(outer1_5, outer1_6, outer1_7);
-      const items = [outer1_6];
-      this.syncWith(items, outer1_12);
-      if (null != arg0) {
-        ({ suggestedChannels, dismissedSuggestions, channelOpensByChannelId } = arg0);
-        if (null != suggestedChannels) {
-          for (const key10016 in suggestedChannels) {
-            let tmp13 = key10016;
-            let _Set3 = Set;
-            let tmp15 = new.target;
-            let tmp16 = new.target;
-            let tmp14 = outer1_8;
-            let set = new Set(suggestedChannels[key10016]);
-            let set1 = set;
-            if (null == set) {
-              let _Set = Set;
-              let tmp5 = new.target;
-              let tmp6 = new.target;
-              set1 = new Set();
-            }
-            tmp14[key10016] = set1;
-            continue;
-          }
-        }
-        if (null != dismissedSuggestions) {
-          for (const key10026 in dismissedSuggestions) {
-            let tmp18 = key10026;
-            let _Set4 = Set;
-            let tmp20 = new.target;
-            let tmp21 = new.target;
-            let tmp19 = outer1_9;
-            let set2 = new Set(dismissedSuggestions[key10026]);
-            let set3 = set2;
-            if (null == set2) {
-              let _Set2 = Set;
-              let tmp10 = new.target;
-              let tmp11 = new.target;
-              set3 = new Set();
-            }
-            tmp19[key10026] = set3;
-            continue;
-          }
-        }
-        if (null == channelOpensByChannelId) {
-          channelOpensByChannelId = {};
-        }
-        const outer1_10 = channelOpensByChannelId;
-      }
-    }
-  };
-  let items = [obj, , ];
-  obj = {
-    key: "getSuggestedChannelId",
-    value() {
-      return null;
-    }
-  };
-  items[1] = obj;
-  obj = {
-    key: "getState",
-    value() {
-      return { suggestedChannels: {}, dismissedSuggestions: {}, channelOpensByChannelId: {} };
-    }
-  };
-  items[2] = obj;
-  return callback(FavoritesSuggestionStore, items);
-})(require("initialize").PersistedStore);
-tmp2.displayName = "FavoritesSuggestionStore";
-tmp2.persistKey = "FavoritesSuggestionStore";
-tmp2 = new tmp2(require("dispatcher"), {
+};
+prototype["getSuggestedChannelId"] = function getSuggestedChannelId(id) {
+  return null;
+};
+prototype["getState"] = function getState() {
+  return { suggestedChannels: {}, dismissedSuggestions: {}, channelOpensByChannelId: {} };
+};
+FavoritesSuggestionStore.displayName = "FavoritesSuggestionStore";
+FavoritesSuggestionStore.persistKey = "FavoritesSuggestionStore";
+const favoritesSuggestionStore = new FavoritesSuggestionStore(require("dispatcher"), {
   DISMISS_FAVORITE_SUGGESTION: function handleFavoriteSuggestionDimissed(arg0) {
     let channelId;
     let guildId;
@@ -171,13 +112,13 @@ tmp2 = new tmp2(require("dispatcher"), {
     if (null == dependencyMap2[guildId]) {
       const _Set = Set;
       const set = new Set();
-      dependencyMap2[guildId] = set;
+      tmp[guildId] = set;
     }
     dependencyMap2[guildId].add(channelId);
     dependencyMap[guildId].delete(channelId);
     return true;
   }
 });
-let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/opt_in_channels/FavoritesSuggestionStore.tsx");
+const result = require("updateUserGuildSettingsInternal").fileFinishedImporting("modules/opt_in_channels/FavoritesSuggestionStore.tsx");
 
-export default tmp2;
+export default favoritesSuggestionStore;

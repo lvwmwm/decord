@@ -1,11 +1,11 @@
-// Module ID: 4559
-// Function ID: 39891
+// Module ID: 4582
+// Function ID: 4583
 // Name: Dialog
-// Dependencies: [31, 27, 33, 4560, 2]
+// Dependencies: [19, 17, 21, 4583, 2]
 // Exports: Dialog
 
-// Module 4559 (Dialog)
-import result from "result";
+// Module 4582 (Dialog)
+import noop from "noop";
 import { StyleSheet } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
 
@@ -16,17 +16,15 @@ export const Dialog = function Dialog(dialogKey) {
   let onDismiss;
   let zIndex;
   dialogKey = dialogKey.dialogKey;
-  let obj = { dialogKey: 0, onDismiss: 0, zIndex: 0 };
   ({ onDismiss, zIndex } = dialogKey);
-  Object.setPrototypeOf(null);
-  const merged = Object.assign(dialogKey, obj);
-  let id = result.useId();
-  obj = { style: items, accessibilityViewIsModal: true, onAccessibilityEscape: onDismiss };
+  const merged = Object.assign(dialogKey, Object.create(null));
+  const id = noop.useId();
+  const obj = { style: items, accessibilityViewIsModal: true, onAccessibilityEscape: onDismiss, nativeID: null };
   items = [StyleSheet.absoluteFill, { zIndex }];
-  if (null != dialogKey) {
-    id = dialogKey;
+  if (dialogKey == null) {
+    dialogKey = id;
   }
-  obj.nativeID = id;
+  obj[3] = dialogKey;
   const merged1 = Object.assign(merged);
-  return jsx(require(4560) /* AccessibilityView */.AccessibilityView, { style: items, accessibilityViewIsModal: true, onAccessibilityEscape: onDismiss });
+  return jsx(require(4583) /* AccessibilityView */.AccessibilityView, { style: items, accessibilityViewIsModal: true, onAccessibilityEscape: onDismiss, nativeID: null });
 };

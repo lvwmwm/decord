@@ -1,36 +1,38 @@
-// Module ID: 11257
-// Function ID: 87428
+// Module ID: 11281
+// Function ID: 11282
 // Name: ExpandableList
-// Dependencies: [57, 31, 27, 33, 4165, 8101, 4026, 4166, 4169, 5198, 1212, 4161, 2]
+// Dependencies: [32, 19, 17, 21, 4189, 8125, 4050, 4190, 4193, 5220, 1236, 4185, 2]
 // Exports: default
 
-// Module 11257 (ExpandableList)
+// Module 11281 (ExpandableList)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
+import noop from "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
 let closure_6;
-let closure_7;
-let closure_8;
+let error;
+let metroImportAll;
 const require = arg1;
-({ jsx: closure_6, jsxs: closure_7, Fragment: closure_8 } = jsxProd);
-let closure_9 = _createForOfIteratorHelperLoose.createStyles({ animatedListContainer: { overflow: "hidden" }, expandCTALabelContainer: { alignItems: "center" } });
+({ jsx: closure_6, jsxs: error, Fragment: metroImportAll } = jsxProd);
+let closure_9 = createCacheKey.createStyles({ animatedListContainer: { overflow: "hidden" }, expandCTALabelContainer: { alignItems: "center" } });
 let closure_10 = { code: "function ExpandableListTsx1(){const{expanded,collapsedListHeight,remainingListHeight}=this.__closure;if(expanded&&collapsedListHeight.get()!==0&&remainingListHeight.get()!==0){return collapsedListHeight.get()+remainingListHeight.get();}return collapsedListHeight.get();}" };
 let closure_11 = { code: "function ExpandableListTsx2(){const{collapsedListHeight,withTiming,containerHeight,timingStandard}=this.__closure;if(collapsedListHeight.get()!==0){return{height:withTiming(containerHeight.get(),timingStandard)};}else{return{};}}" };
 let result = require("get ActivityIndicator").fileFinishedImporting("modules/app_launcher/native/base_components/ExpandableList.tsx");
 
 export default function ExpandableList(items) {
-  let result;
+  let noop;
   let dependencyMap;
   let expandedOverride;
   let showsExpandCTAOverride;
   let title;
   items = items.items;
+  let memo1 = items;
   const onExpand = items.onExpand;
+  let importDefault = onExpand;
   ({ onExpandCTAPress: dependencyMap, expandedOverride } = items);
-  ({ showsExpandCTAOverride, disableExpanding: result, title } = items);
+  ({ showsExpandCTAOverride, disableExpanding: noop, title } = items);
   let first;
   let closure_6;
   let c7;
@@ -38,193 +40,181 @@ export default function ExpandableList(items) {
   let sharedValue;
   let sharedValue1;
   let derivedValue;
-  function renderItems(items) {
-    items = items.items;
-    let flag = items.hasListEnd;
-    if (flag === undefined) {
-      flag = false;
-    }
-    return items.map((arg0, arg1) => {
-      const obj = {};
-      let tmp2 = !tmp;
-      if (!!flag) {
-        tmp2 = arg1 === items.length - 1;
-      }
-      obj.isLastRow = tmp2;
-      return arg0(obj);
-    });
-  }
   let tmp = sharedValue();
-  let tmp3 = null != expandedOverride;
-  if (tmp3) {
-    tmp3 = expandedOverride;
+  let obj = React;
+  let flag = expandedOverride;
+  if (expandedOverride == null) {
+    flag = false;
   }
-  const tmp4 = expandedOverride(React.useState(tmp3), 2);
-  first = tmp4[0];
-  closure_6 = tmp4[1];
-  const tmp6 = onExpand(8101)(first);
-  let tmp7 = first;
-  if (null != tmp6) {
-    tmp7 = tmp6;
+  const tmp2 = expandedOverride(React.useState(flag), 2);
+  first = tmp2[0];
+  closure_6 = tmp2[1];
+  let obj7 = dependencyMap;
+  let tmp5 = importDefault(8125)(first);
+  if (tmp5 == null) {
+    tmp5 = first;
   }
-  c7 = tmp7;
-  const items1 = [first, onExpand, tmp7];
-  const effect = React.useEffect(() => {
+  c7 = tmp5;
+  const items1 = [first, onExpand, tmp5];
+  const effect = obj.useEffect(() => {
     if (tmp) {
-      if (null != onExpand) {
-        onExpand();
+      if (closure_1 != null) {
+        tmp2();
       }
     }
   }, items1);
   const items2 = [expandedOverride];
-  const effect1 = React.useEffect(() => {
+  const effect1 = obj.useEffect(() => {
     if (undefined !== expandedOverride) {
-      callback2(expandedOverride);
+      callback(tmp);
     }
   }, items2);
   bound = Math.min(4, items.length);
   if (null == showsExpandCTAOverride) {
     showsExpandCTAOverride = items.length > bound;
   }
-  let obj = items(4026);
-  sharedValue = obj.useSharedValue(0);
-  let obj1 = items(4026);
-  sharedValue1 = obj1.useSharedValue(0);
-  let obj2 = items(4026);
-  class A {
+  let obj2 = memo1(4050);
+  sharedValue = obj2.useSharedValue(0);
+  let obj3 = memo1(4050);
+  sharedValue1 = obj3.useSharedValue(0);
+  let obj4 = memo1(4050);
+  class C {
     constructor() {
       if (c5) {
-        tmp = c9;
+        obj = onExpand;
         num = 0;
-        if (0 !== c9.get()) {
-          tmp2 = c10;
+        if (0 !== onExpand.get()) {
+          obj2 = c10;
           if (0 !== c10.get()) {
-            tmp4 = c9;
-            tmp6 = c10;
-            value = c9.get();
-            sum = value + c10.get();
+            value = obj.get();
+            sum = value + obj2.get();
           }
           return sum;
         }
       }
-      sum = c9.get();
+      sum = onExpand.get();
       return;
     }
   }
-  A.__closure = { expanded: first, collapsedListHeight: sharedValue, remainingListHeight: sharedValue1 };
-  A.__workletHash = 17033418452229;
-  A.__initData = sharedValue1;
-  derivedValue = obj2.useDerivedValue(A);
+  C.__closure = { expanded: first, collapsedListHeight: sharedValue, remainingListHeight: sharedValue1 };
+  C.__workletHash = 17033418452229;
+  C.__initData = sharedValue1;
+  derivedValue = obj4.useDerivedValue(C);
   const items3 = [items, bound];
+  const memo = obj.useMemo(() => memo1.slice(0, bound), items3);
   const items4 = [items, bound];
-  const memo = React.useMemo(() => items.slice(0, bound), items3);
-  const memo1 = React.useMemo(() => items.slice(bound, items.length), items4);
-  let obj3 = items(4026);
-  class I {
+  memo1 = obj.useMemo(() => memo1.slice(bound, memo1.length), items4);
+  let obj5 = memo1(4050);
+  class A {
     constructor() {
-      if (0 !== c9.get()) {
-        obj = {};
-        tmp = items;
+      if (0 !== onExpand.get()) {
+        obj = { height: null };
+        tmp = useMemo;
         tmp2 = onExpandCTAPress;
-        num = 7;
-        obj3 = items(onExpandCTAPress[7]);
-        tmp3 = c11;
-        num2 = 8;
-        value = c11.get();
-        obj.height = obj3.withTiming(value, items(onExpandCTAPress[8]).timingStandard);
+        obj3 = useMemo(onExpandCTAPress[7]);
+        tmp3 = useEffect;
+        value = useEffect.get();
+        obj[0] = obj3.withTiming(value, useMemo(onExpandCTAPress[8]).timingStandard);
       } else {
         obj = {};
       }
       return obj;
     }
   }
-  obj = { collapsedListHeight: sharedValue, withTiming: items(4166).withTiming, containerHeight: derivedValue, timingStandard: items(4169).timingStandard };
-  I.__closure = obj;
-  I.__workletHash = 2086836441465;
-  I.__initData = derivedValue;
-  obj = {};
-  const animatedStyle = obj3.useAnimatedStyle(I);
-  obj1 = { style: items5 };
+  obj = { collapsedListHeight: sharedValue, withTiming: memo1(4190).withTiming, containerHeight: derivedValue, timingStandard: memo1(4193).timingStandard };
+  A.__closure = obj;
+  A.__workletHash = 2086836441465;
+  A.__initData = derivedValue;
+  const animatedStyle = obj5.useAnimatedStyle(A);
+  obj = { style: items5, children: null };
   items5 = [tmp.animatedListContainer, animatedStyle];
-  obj2 = {
+  const obj1 = {
     onLayout(nativeEvent) {
       const result = sharedValue.set(nativeEvent.nativeEvent.layout.height);
-    }
+    },
+    children: null
   };
-  obj3 = { items: memo };
-  let tmp20 = !showsExpandCTAOverride;
-  if (tmp20) {
-    tmp20 = !first;
-  }
-  obj3.hasListEnd = tmp20;
-  obj2.children = renderItems(obj3);
-  const items6 = [closure_6(first, obj2), ];
-  let tmp22Result = memo1.length > 0;
-  if (tmp22Result) {
-    const obj4 = {
-      onLayout(nativeEvent) {
-          const result = sharedValue1.set(nativeEvent.nativeEvent.layout.height);
-        },
-      accessibilityElementsHidden: !first,
-      importantForAccessibility: "no-hide-descendants"
-    };
-    const obj5 = { items: memo1, hasListEnd: !showsExpandCTAOverride };
-    obj4.children = renderItems(obj5);
-    tmp22Result = closure_6(first, obj4);
-    const tmp22 = closure_6;
-    const tmp23 = first;
-  }
-  items6[1] = tmp22Result;
-  obj1.children = items6;
-  const items7 = [c7(onExpand(4026).View, obj1), ];
+  let tmp18 = !showsExpandCTAOverride;
   if (!showsExpandCTAOverride) {
+    tmp18 = !first;
+  }
+  memo1 = memo;
+  importDefault = tmp18;
+  obj1[1] = memo.map((arg0, arg1) => {
+    let isLastRow = closure_1;
+    if (isLastRow) {
+      isLastRow = arg1 === memo1.length - 1;
+    }
+    return arg0({ isLastRow });
+  });
+  const items6 = [closure_6(first, obj1), ];
+  let tmp16Result = memo1.length > 0;
+  if (tmp16Result) {
+    obj2 = { onLayout: null, accessibilityElementsHidden: null, importantForAccessibility: null, children: null };
+    obj2[0] = function onLayout(nativeEvent) {
+      const result = sharedValue1.set(nativeEvent.nativeEvent.layout.height);
+    };
+    obj2[1] = !first;
+    obj2[2] = "no-hide-descendants";
+    importDefault = !showsExpandCTAOverride;
+    obj2[3] = memo1.map((arg0, arg1) => {
+      let isLastRow = closure_1;
+      if (isLastRow) {
+        isLastRow = arg1 === memo1.length - 1;
+      }
+      return arg0({ isLastRow });
+    });
+    tmp16Result = tmp16(tmp17, obj2);
+  }
+  items6[1] = tmp16Result;
+  obj[1] = items6;
+  const items7 = [c7(importDefault(4050).View, obj), ];
+  if (!showsExpandCTAOverride) {
+    obj3 = { children: null };
     items7[1] = showsExpandCTAOverride;
-    obj.children = items7;
-    return tmp16(bound, obj);
+    obj3[0] = items7;
+    return tmp14(bound, obj3);
   } else {
-    const obj6 = {};
-    let obj7 = {};
     if (first) {
-      const intl2 = items(1212).intl;
-      let stringResult = intl2.string(items(1212).t.nPGLFQ);
+      const intl2 = tmp9(1236).intl;
+      let stringResult = intl2.string(tmp9(1236).t.nPGLFQ);
     } else if (null != title) {
-      const intl = items(1212).intl;
-      const obj8 = { title };
-      stringResult = intl.formatToPlainString(items(1212).t["bj/2kV"], obj8);
+      const intl = tmp9(1236).intl;
+      obj4 = { title: null };
+      obj4[0] = title;
+      stringResult = intl.formatToPlainString(tmp9(1236).t["bj/2kV"], obj4);
     }
-    obj7.accessibilityLabel = stringResult;
-    let obj9 = { style: tmp.expandCTALabelContainer };
-    let obj10 = { color: "text-brand", variant: "text-md/semibold" };
-    let num5 = 10;
-    const intl3 = items(1212).intl;
+    obj5 = { accessibilityLabel: null, label: null, onPress: null, end: true };
+    obj5[0] = stringResult;
+    let obj6 = { style: null, children: null };
+    obj6[0] = tmp.expandCTALabelContainer;
+    const intl3 = tmp9(1236).intl;
     if (first) {
-      num5 = tmp37(tmp38[num5]).t.nPGLFQ;
-      let stringResult1 = intl3.string(num5);
+      let stringResult1 = intl3.string(tmp9(1236).t.nPGLFQ);
     } else {
-      stringResult1 = intl3.format(tmp37(tmp38[num5]).t.gVw57p, {});
+      stringResult1 = intl3.format(tmp9(1236).t.gVw57p, {});
     }
-    obj10.children = stringResult1;
-    obj10 = tmp33(items(4161).Text, obj10);
-    obj9.children = obj10;
-    obj9 = tmp33(first, obj9);
-    obj7.label = obj9;
-    obj7.onPress = function onPress() {
-      let tmp = true !== result;
+    obj7 = { children: null };
+    const obj8 = { color: "text-brand", variant: "text-md/semibold", children: null };
+    obj8[2] = stringResult1;
+    obj6[1] = tmp16(tmp9(4185).Text, obj8);
+    obj6 = tmp16(tmp17, obj6);
+    obj5[1] = obj6;
+    obj5[2] = function onPress() {
+      let tmp = true !== noop;
       if (tmp) {
         tmp = !first;
       }
-      callback2(tmp);
-      if (null != callback) {
-        const obj = { expanded: tmp };
-        callback(obj);
+      callback(tmp);
+      if (closure_2 != null) {
+        const obj = { expanded: null };
+        obj[0] = tmp;
+        tmp4(obj);
       }
     };
-    obj7.end = true;
-    obj7 = tmp24(items(5198).TableRow, obj7);
-    obj6.children = obj7;
-    closure_6(first, obj6);
-    const tmp25 = first;
-    const tmp34 = first;
+    obj5 = tmp16(tmp9(5220).TableRow, obj5);
+    obj7[0] = obj5;
+    tmp16Result = tmp16(tmp17, obj7);
   }
 };
 export const COLLAPSED_LIST_ITEM_MAX = 4;

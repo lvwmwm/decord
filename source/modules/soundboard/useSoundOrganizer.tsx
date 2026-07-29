@@ -1,39 +1,38 @@
-// Module ID: 15858
-// Function ID: 122224
+// Module ID: 15893
+// Function ID: 15894
 // Name: sortSoundsOldestToNewestCreationDate
-// Dependencies: [21, 2]
+// Dependencies: [11, 2]
 // Exports: useSoundOrganizer
 
-// Module 15858 (sortSoundsOldestToNewestCreationDate)
-function sortSoundsOldestToNewestCreationDate(arg0) {
+// Module 15893 (sortSoundsOldestToNewestCreationDate)
+function sortSoundsOldestToNewestCreationDate(value2) {
   let flag = arg1;
   if (arg1 === undefined) {
     flag = true;
   }
-  let items = [...arg0];
-  const sorted = items.sort((soundId, soundId2) => outer1_0(outer1_1[0]).compare(soundId.soundId, soundId2.soundId));
-  let tmp2 = sorted;
+  const items = [...value2];
+  const sorted = items.sort((soundId, soundId2) => callback(table[0]).compare(soundId.soundId, soundId2.soundId));
+  let sorted1 = sorted;
   if (flag) {
-    tmp2 = (function _positionUnavailableSoundsAtEnd(sorted) {
-      const items = [...sorted];
-      return items.sort((available, available2) => {
+    const items1 = [];
+    HermesBuiltin.arraySpread(sorted, 0);
+    sorted1 = items1.sort((available, available2) => {
+      if (!available.available) {
+        let num2 = 0;
         if (!available.available) {
-          let num2 = 0;
-          if (!available.available) {
-            num2 = 0;
-            if (available2.available) {
-              num2 = 1;
-            }
+          num2 = 0;
+          if (available2.available) {
+            num2 = 1;
           }
-          let num = num2;
-        } else {
-          num = -1;
         }
-        return num;
-      });
-    })(sorted);
+        let num = num2;
+      } else {
+        num = -1;
+      }
+      return num;
+    });
   }
-  return tmp2;
+  return sorted1;
 }
 const result = require("set").fileFinishedImporting("modules/soundboard/useSoundOrganizer.tsx");
 

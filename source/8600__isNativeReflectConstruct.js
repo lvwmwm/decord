@@ -1,29 +1,81 @@
 // Module ID: 8600
-// Function ID: 68151
+// Function ID: 8601
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 31, 33, 8601, 8522, 8531]
+// Dependencies: [41, 42, 93, 95, 98, 19, 21, 8601, 8546, 8545]
 
 // Module 8600 (_isNativeReflectConstruct)
-import jsxProd from "jsxProd";
-import __INTERNAL_VIEW_CONFIG from "__INTERNAL_VIEW_CONFIG";
+import _classCallCheck from "_classCallCheck";
 import _possibleConstructorReturn from "_possibleConstructorReturn";
 import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
-import "result";
+import importDefaultResult from "_createClass";
+import "noop";
 import { jsx } from "jsxProd";
-import tmp3 from "_isNativeReflectConstruct";
 
-const require = arg1;
+const ForeignObject = arg1;
 function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
+  try {
+    const _Boolean = Boolean;
+    const call = valueOf.call;
+    const _Reflect = Reflect;
+    const _Boolean2 = Boolean;
+    if (typeof call === "unknown") {
+      let callResult = valueOf();
+    } else {
+      callResult = call(constructResult);
+    }
+    let closure_0 = !callResult;
+    function _isNativeReflectConstruct() {
+      return closure_0;
+    }
+    return _isNativeReflectConstruct();
+  } catch (err) {
   }
-  const result = _isNativeReflectConstruct();
 }
-tmp3.displayName = "Rect";
-tmp3.defaultProps = { x: 0, y: 0, width: 0, height: 0 };
+class ForeignObject {
+  constructor() {
+    self = this;
+    tmp = _isNativeReflectConstruct(this, ForeignObject);
+    tmp2 = __esModule;
+    obj = __esModule(ForeignObject);
+    tmp3 = __esModule;
+    if (_isNativeReflectConstruct()) {
+      tmp7 = globalThis;
+      _Reflect = Reflect;
+      tmp8 = arguments;
+      constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
+    } else {
+      tmp4 = arguments;
+      tmp5 = arguments;
+      constructResult = obj(...arguments);
+    }
+    return tmp3(self, constructResult);
+  }
+}
+require("_inherits")(ForeignObject, require("_isNativeReflectConstruct"));
+const items = [
+  {
+    key: "render",
+    value: function render() {
+      const self = this;
+      const props = this.props;
+      let obj = { x: props.x, y: props.y, width: props.width, height: props.height };
+      obj = {
+        ref(arg0) {
+          return self.refMethod(arg0);
+        }
+      };
+      const tmp = importDefault(8601);
+      const merged = Object.assign(self(8546).withoutXY(this, props));
+      const merged1 = Object.assign(obj);
+      obj.children = props.children;
+      return <tmp ref={function ref(arg0) {
+        return self.refMethod(arg0);
+      }} />;
+    }
+  }
+];
+const importDefaultResultResult = importDefaultResult(ForeignObject, items);
+importDefaultResultResult.displayName = "ForeignObject";
+importDefaultResultResult.defaultProps = { x: "0%", y: "0%", width: "100%", height: "100%" };
 
-export default tmp3;
+export default importDefaultResultResult;

@@ -1,121 +1,74 @@
-// Module ID: 10237
-// Function ID: 79025
-// Name: NativeModules
-// Dependencies: [6, 7, 27, 2]
+// Module ID: 10258
+// Function ID: 10259
+// Name: NativeEventEmitter
+// Dependencies: [17, 2]
 
-// Module 10237 (NativeModules)
-import _classCallCheck from "_classCallCheck";
-import _defineProperties from "_defineProperties";
+// Module 10258 (NativeEventEmitter)
 import get_ActivityIndicator from "get ActivityIndicator";
 
-let NativeModules;
-let closure_2;
-({ NativeEventEmitter: closure_2, NativeModules } = get_ActivityIndicator);
+const NativeEventEmitter = get_ActivityIndicator.NativeEventEmitter;
+const NativeModules = get_ActivityIndicator.NativeModules;
 const ExternalPip = NativeModules.ExternalPip;
-let tmp3 = (() => {
-  class ExternalPip {
-    constructor() {
-      tmp = ExternalPip(this, ExternalPip);
-      this._enabled = false;
-      this._isInPipMode = false;
-      tmp2 = new outer1_2(outer1_3.PipAndroid);
-      this.eventEmitter = tmp2;
-      return;
-    }
+class ExternalPip {
+  constructor() {
+    obj = Object.create(new.target.prototype);
+    tmp2 = new NativeEventEmitter(NativeModules.PipAndroid);
+    obj.eventEmitter = tmp2;
+    return obj;
   }
-  let obj = {
-    key: "addOnPipModeChangedListener",
-    value(arg0) {
-      const self = this;
-      let _defineProperties = arg0;
-      const eventEmitter = this.eventEmitter;
-      return eventEmitter.addListener("onPipModeChanged", (isInPipMode) => {
-        isInPipMode = isInPipMode.isInPipMode;
-        self._isInPipMode = isInPipMode;
-        callback(isInPipMode);
-      });
-    }
-  };
-  const items = [obj, , , , , , , , , , , , ];
-  obj = {
-    key: "addOnPipModeWillChangeListener",
-    value(arg0) {
-      const eventEmitter = this.eventEmitter;
-      return eventEmitter.addListener("onPipModeWillChange", arg0);
-    }
-  };
-  items[1] = obj;
-  obj = {
-    key: "setSelectedStream",
-    value() {
+}
+const prototype = ExternalPip.prototype;
+prototype["addOnPipModeChangedListener"] = function addOnPipModeChangedListener(callback2) {
+  const self = this;
+  let closure_0 = callback2;
+  const eventEmitter = this.eventEmitter;
+  return eventEmitter.addListener("onPipModeChanged", (isInPipMode) => {
+    isInPipMode = isInPipMode.isInPipMode;
+    self._isInPipMode = isInPipMode;
+    callback2(isInPipMode);
+  });
+};
+prototype["addOnPipModeWillChangeListener"] = function addOnPipModeWillChangeListener(arg0) {
+  const eventEmitter = this.eventEmitter;
+  return eventEmitter.addListener("onPipModeWillChange", arg0);
+};
+prototype["setSelectedStream"] = function setSelectedStream() {
 
-    }
-  };
-  items[2] = obj;
-  items[3] = {
-    key: "setFocusedStream",
-    value() {
+};
+prototype["setFocusedStream"] = function setFocusedStream() {
 
-    }
-  };
-  items[4] = {
-    key: "setMirrored",
-    value() {
+};
+prototype["setMirrored"] = function setMirrored() {
 
-    }
-  };
-  items[5] = {
-    key: "setPipAspectRatio",
-    value(arg0, arg1) {
-      outer1_4.setPipAspectRatio(arg0, arg1);
-    }
-  };
-  items[6] = {
-    key: "refreshPipUi",
-    value() {
-      outer1_4.refreshPipUi();
-    }
-  };
-  items[7] = {
-    key: "updateSourceTrackingView",
-    value() {
+};
+prototype["setPipAspectRatio"] = function setPipAspectRatio(width, height) {
+  ExternalPip.setPipAspectRatio(width, height);
+};
+prototype["refreshPipUi"] = function refreshPipUi() {
+  ExternalPip.refreshPipUi();
+};
+prototype["updateSourceTrackingView"] = function updateSourceTrackingView() {
 
-    }
-  };
-  items[8] = {
-    key: "setEnabled",
-    value(_enabled) {
-      this._enabled = _enabled;
-      outer1_4.setEnabled(this._enabled);
-    }
-  };
-  items[9] = {
-    key: "setActive",
-    value(isActive) {
-      return outer1_4.setActive(isActive);
-    }
-  };
-  items[10] = {
-    key: "isEnabled",
-    value() {
-      return this._enabled;
-    }
-  };
-  items[11] = {
-    key: "isSupported",
-    value() {
-      return true === outer1_4.isSupported;
-    }
-  };
-  items[12] = {
-    key: "isInPipMode",
-    value() {
-      return this._isInPipMode;
-    }
-  };
-  return callback(ExternalPip, items);
-})();
-tmp3 = new tmp3();
-const result = require("get ActivityIndicator").fileFinishedImporting("modules/external_pip/ExternalPip.android.tsx");
+};
+prototype["setEnabled"] = function setEnabled(_enabled) {
+  this._enabled = _enabled;
+  ExternalPip.setEnabled(this._enabled);
+};
+prototype["setActive"] = function setActive(arg0) {
+  return ExternalPip.setActive(arg0);
+};
+prototype["isEnabled"] = function isEnabled() {
+  return this._enabled;
+};
+prototype["isSupported"] = function isSupported() {
+  return true === ExternalPip.isSupported;
+};
+prototype["isInPipMode"] = function isInPipMode() {
+  return this._isInPipMode;
+};
+let obj = Object.create(ExternalPip.prototype);
+const nativeEventEmitter = new NativeEventEmitter(NativeModules.PipAndroid);
+obj.eventEmitter = nativeEventEmitter;
+const result = require("set").fileFinishedImporting("modules/external_pip/ExternalPip.android.tsx");
 
-export default tmp3;
+export default obj;

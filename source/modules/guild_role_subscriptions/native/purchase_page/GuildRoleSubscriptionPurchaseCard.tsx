@@ -1,65 +1,58 @@
-// Module ID: 15383
-// Function ID: 117168
+// Module ID: 15416
+// Function ID: 15417
 // Name: GuildRoleSubscriptionPurchaseCard
-// Dependencies: [57, 31, 27, 33, 4165, 689, 1557, 14222, 15378, 5221, 4161, 1273, 15384, 5223, 1212, 14232, 2]
+// Dependencies: [32, 19, 17, 21, 4189, 712, 1581, 14244, 15411, 5243, 4185, 1297, 15417, 5245, 1236, 14254, 2]
 // Exports: default
 
-// Module 15383 (GuildRoleSubscriptionPurchaseCard)
+// Module 15416 (GuildRoleSubscriptionPurchaseCard)
 import _slicedToArray from "_slicedToArray";
-import "result";
+import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
 let closure_6;
-let closure_7;
+let error;
 const require = arg1;
-({ jsx: closure_6, jsxs: closure_7 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SURFACE_HIGH, flex: 1 };
-_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.header = { padding: 16, paddingBottom: 24 };
-let obj1 = { padding: 16, paddingTop: 24, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SURFACE_HIGH };
-_createForOfIteratorHelperLoose.content = obj1;
-_createForOfIteratorHelperLoose.headerText = { flexDirection: "row", alignItems: "center" };
-let obj2 = { width: 3, height: 3, borderRadius: 1.5, backgroundColor: require("_createForOfIteratorHelperLoose").colors.INTERACTIVE_TEXT_DEFAULT, marginHorizontal: 8 };
-_createForOfIteratorHelperLoose.headerDot = obj2;
-let obj3 = { borderBottomWidth: 1, marginLeft: -16, marginRight: -16, borderColor: require("_createForOfIteratorHelperLoose").colors.INTERACTIVE_BACKGROUND_HOVER };
-_createForOfIteratorHelperLoose.seperator = obj3;
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+({ jsx: closure_6, jsxs: error } = jsxProd);
+createCacheKey = { container: null, header: null, content: null, headerText: null, headerDot: null, seperator: null };
+createCacheKey = { backgroundColor: require("Themes").colors.BACKGROUND_SURFACE_HIGH, flex: 1 };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { padding: 16, paddingBottom: 24 };
+createCacheKey[2] = { padding: 16, paddingTop: 24, backgroundColor: require("Themes").colors.BACKGROUND_SURFACE_HIGH };
+createCacheKey[3] = { flexDirection: "row", alignItems: "center" };
+let obj1 = { padding: 16, paddingTop: 24, backgroundColor: require("Themes").colors.BACKGROUND_SURFACE_HIGH };
+createCacheKey[4] = { width: 3, height: 3, borderRadius: 1.5, backgroundColor: require("Themes").colors.INTERACTIVE_TEXT_DEFAULT, marginHorizontal: 8 };
+let obj2 = { width: 3, height: 3, borderRadius: 1.5, backgroundColor: require("Themes").colors.INTERACTIVE_TEXT_DEFAULT, marginHorizontal: 8 };
+createCacheKey[5] = { borderBottomWidth: 1, marginLeft: -16, marginRight: -16, borderColor: require("Themes").colors.INTERACTIVE_BACKGROUND_HOVER };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+const obj3 = { borderBottomWidth: 1, marginLeft: -16, marginRight: -16, borderColor: require("Themes").colors.INTERACTIVE_BACKGROUND_HOVER };
 const result = require("get ActivityIndicator").fileFinishedImporting("modules/guild_role_subscriptions/native/purchase_page/GuildRoleSubscriptionPurchaseCard.tsx");
 
 export default function GuildRoleSubscriptionPurchaseCard(guildId) {
   const listingId = guildId.listingId;
-  const tmp = _createForOfIteratorHelperLoose();
-  let obj = importAll(14222);
-  let obj1 = importAll(14222);
-  let obj2 = require(15378) /* TruncatedText */;
+  const tmp = createCacheKey();
+  let obj = importAll(14244);
+  let obj1 = importAll(14244);
+  let obj2 = require(15411) /* TruncatedText */;
   const formattedSubscriptionPlan = obj2.useFormattedSubscriptionPlan(listingId);
-  obj = { scrollable: true, startExpanded: true };
-  obj = { style: tmp.container };
-  obj1 = { style: tmp.header };
-  obj2 = { style: tmp.headerText };
-  const obj3 = { variant: "heading-md/semibold", color: "mobile-text-heading-primary", children: callback(obj1.useName(listingId), 1)[0] };
-  const items = [callback2(require(4161) /* Text */.Text, obj3), callback2(View, { style: tmp.headerDot }), ];
-  const obj5 = { variant: "heading-md/semibold", color: "mobile-text-heading-primary", children: formattedSubscriptionPlan };
-  items[2] = callback2(require(4161) /* Text */.Text, obj5);
-  obj2.children = items;
-  const items1 = [callback3(View, obj2), callback2(require(1273) /* Button */.Spacer, { size: 16 }), , , ];
-  const obj6 = { variant: "text-sm/normal", color: "text-default", lineClamp: 2, children: callback(obj.useDescription(listingId), 1)[0] };
-  items1[2] = callback2(require(15378) /* TruncatedText */.TruncatedText, obj6);
-  items1[3] = callback2(require(1273) /* Button */.Spacer, { size: 24 });
-  items1[4] = callback2(importDefault(15384), { listingId });
-  obj1.children = items1;
+  obj = { scrollable: true, startExpanded: true, children: null };
+  obj = { style: tmp.container, children: null };
+  obj1 = { style: tmp.header, children: null };
+  obj2 = { style: tmp.headerText, children: null };
+  const items = [callback2(require(4185) /* Text */.Text, { variant: "heading-md/semibold", color: "mobile-text-heading-primary", children: callback(obj1.useName(listingId), 1)[0] }), callback2(View, { style: tmp.headerDot }), callback2(require(4185) /* Text */.Text, { variant: "heading-md/semibold", color: "mobile-text-heading-primary", children: formattedSubscriptionPlan })];
+  obj2[1] = items;
+  const items1 = [callback3(View, obj2), callback2(require(1297) /* Button */.Spacer, { size: 16 }), callback2(require(15411) /* TruncatedText */.TruncatedText, { variant: "text-sm/normal", color: "text-default", lineClamp: 2, children: callback(obj.useDescription(listingId), 1)[0] }), callback2(require(1297) /* Button */.Spacer, { size: 24 }), callback2(importDefault(15417), { listingId })];
+  obj1[1] = items1;
   const items2 = [callback3(View, obj1), callback2(View, { style: tmp.seperator }), ];
-  const obj8 = { scrollsToTop: false, style: tmp.content, contentContainerStyle: obj9 };
-  const obj10 = { variant: "text-sm/bold", color: "text-default", style: { textTransform: "uppercase" } };
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj10.children = intl.string(require(1212) /* getSystemLocale */.t.UdEvUi);
-  const items3 = [callback2(require(4161) /* Text */.Text, obj10), callback2(require(1273) /* Button */.Spacer, { size: 24 }), callback2(require(14232) /* SectionTitle */.Content, { listingId, guildId: guildId.guildId })];
-  obj8.children = items3;
-  items2[2] = callback3(require(5223) /* BottomSheetModal */.BottomSheetScrollView, obj8);
-  obj.children = items2;
-  obj.children = callback3(View, obj);
-  return callback2(require(5221) /* Background */.BottomSheet, obj);
+  const obj5 = { scrollsToTop: false, style: tmp.content, contentContainerStyle: obj6, children: null };
+  const obj7 = { variant: "text-sm/bold", color: "text-default", style: { textTransform: "uppercase" }, children: null };
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj7[3] = intl.string(require(1236) /* getSystemLocale */.t.UdEvUi);
+  const items3 = [callback2(require(4185) /* Text */.Text, obj7), callback2(require(1297) /* Button */.Spacer, { size: 24 }), callback2(require(14254) /* SectionTitle */.Content, { listingId, guildId: guildId.guildId })];
+  obj5[3] = items3;
+  items2[2] = callback3(require(5245) /* BottomSheetModal */.BottomSheetScrollView, obj5);
+  obj[1] = items2;
+  obj[2] = callback3(View, obj);
+  return callback2(require(5243) /* Background */.BottomSheet, obj);
 };

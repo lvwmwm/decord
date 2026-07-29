@@ -1,100 +1,104 @@
-// Module ID: 5658
-// Function ID: 48135
+// Module ID: 5676
+// Function ID: 5677
 // Name: getOrbPriceFromPrices
-// Dependencies: [653, 655, 5659, 1212, 5660, 3833, 2]
+// Dependencies: [676, 678, 5677, 1236, 5678, 3857, 2]
 // Exports: getOrbCheckoutDisclaimerMessage, getOrbPriceFromPrices, resolveOrbCheckoutErrorMessage
 
-// Module 5658 (getOrbPriceFromPrices)
+// Module 5676 (getOrbPriceFromPrices)
 import ME from "ME";
 import { EXTERNAL_PRODUCT_SKU_IDS } from "items";
 import { ConstraintReasonCode } from "ConstraintReasonCode";
 
-let closure_2;
-let closure_3;
-let closure_4;
-({ CurrencyCodes: closure_2, MarketingURLs: closure_3, PriceSetAssignmentPurchaseTypes: closure_4 } = ME);
+let c3;
+let c4;
+let obj1;
+({ CurrencyCodes: obj1, MarketingURLs: c3, PriceSetAssignmentPurchaseTypes: c4 } = ME);
 const result = require("ConstraintReasonCode").fileFinishedImporting("modules/virtual_currency/checkout/OrbCheckoutUtils.tsx");
 
-export const getOrbPriceFromPrices = function getOrbPriceFromPrices(prices, memo) {
-  if (memo) {
+export const getOrbPriceFromPrices = function getOrbPriceFromPrices(prices, memo1) {
+  if (memo1) {
     if (null != prices[closure_4.PREMIUM_TIER_2]) {
-      let tmp3 = prices[closure_4.PREMIUM_TIER_2];
+      let tmp2 = prices[closure_4.PREMIUM_TIER_2];
     }
     let substr;
-    if (null != tmp3) {
-      const countryPrices = tmp3.countryPrices;
-      if (null != countryPrices) {
+    if (tmp2 != null) {
+      const countryPrices = tmp2.countryPrices;
+      if (countryPrices != null) {
         prices = countryPrices.prices;
-        if (null != prices) {
+        if (prices != null) {
           substr = prices.slice(0, 2);
         }
       }
     }
-    if (null == substr) {
+    if (substr == null) {
       substr = [];
     }
-    const found = substr.find((currency) => currency.currency === outer1_2.DISCORD_ORB);
-    let tmp7 = null;
-    if (null != found) {
-      tmp7 = found;
+    let found = substr.find((currency) => currency.currency === constants.DISCORD_ORB);
+    if (found == null) {
+      found = null;
     }
-    return tmp7;
+    return found;
   }
-  tmp3 = prices[closure_4.DEFAULT];
+  tmp2 = prices[closure_4.DEFAULT];
 };
 export const getOrbCheckoutDisclaimerMessage = function getOrbCheckoutDisclaimerMessage(skuId) {
-  const intl = require(1212) /* getSystemLocale */.intl;
-  const obj = {};
-  const intl2 = require(1212) /* getSystemLocale */.intl;
-  obj.buyButtonLabel = intl2.string(require(1212) /* getSystemLocale */.t["zLch/S"]);
-  ({ PAID_TERMS: obj.paidServiceTermURL, PAID_TERMS_VIRTUAL_GOODS: obj.virtualGoodsURL } = closure_3);
-  const intl3 = require(1212) /* getSystemLocale */.intl;
-  let stringResult = intl3.string(require(1212) /* getSystemLocale */.t["Sxed/G"]);
+  const intl = require(1236) /* getSystemLocale */.intl;
+  const obj = { buyButtonLabel: null, paidServiceTermURL: null, virtualGoodsURL: null };
+  const intl2 = require(1236) /* getSystemLocale */.intl;
+  obj[0] = intl2.string(require(1236) /* getSystemLocale */.t["zLch/S"]);
+  ({ PAID_TERMS: obj[1], PAID_TERMS_VIRTUAL_GOODS: obj[2] } = closure_3);
+  const intl3 = require(1236) /* getSystemLocale */.intl;
+  let stringResult = intl3.string(require(1236) /* getSystemLocale */.t["Sxed/G"]);
   if (skuId === EXTERNAL_PRODUCT_SKU_IDS.ORB_PROFILE_BADGE) {
-    const intl5 = require(1212) /* getSystemLocale */.intl;
-    stringResult = intl5.string(require(1212) /* getSystemLocale */.t.APcKRo);
-  } else if (skuId === EXTERNAL_PRODUCT_SKU_IDS.FRACTIONAL_PREMIUM) {
-    const intl4 = require(1212) /* getSystemLocale */.intl;
-    stringResult = intl4.string(require(1212) /* getSystemLocale */.t.FhJ74j);
+    const intl5 = tmp(1236).intl;
+    stringResult = intl5.string(tmp(1236).t.APcKRo);
+  } else if (skuId === tmp5.FRACTIONAL_PREMIUM) {
+    const intl4 = tmp(1236).intl;
+    stringResult = intl4.string(tmp(1236).t.FhJ74j);
   }
-  const items = [intl.format(require(1212) /* getSystemLocale */.t["5qdUrO"], obj), " ", stringResult];
+  const items = [intl.format(require(1236) /* getSystemLocale */.t["5qdUrO"], obj), " ", stringResult];
   return items;
 };
 export const resolveOrbCheckoutErrorMessage = function resolveOrbCheckoutErrorMessage(code) {
   if (null == code) {
     return null;
   } else {
-    if (!(code instanceof require(5660) /* _callSuper */.OrderSigningFailedWithConstraintsError)) {
-      if (code instanceof require(5660) /* _callSuper */.OrderProcessingPendingError) {
-        const intl5 = require(1212) /* getSystemLocale */.intl;
-        let stringResult = intl5.string(require(1212) /* getSystemLocale */.t["2BmwgV"]);
-      } else if (code.code === require(3833) /* _isNativeReflectConstruct */.ErrorCodes.VIRTUAL_CURRENCY_INSUFFICIENT_BALANCE) {
-        const intl4 = require(1212) /* getSystemLocale */.intl;
-        stringResult = intl4.string(require(1212) /* getSystemLocale */.t.keFvXM);
-      } else if (code.code === require(3833) /* _isNativeReflectConstruct */.ErrorCodes.ALREADY_PURCHASED) {
-        const intl3 = require(1212) /* getSystemLocale */.intl;
-        stringResult = intl3.string(require(1212) /* getSystemLocale */.t.m371Mx);
-      } else if (code.code === require(3833) /* _isNativeReflectConstruct */.ErrorCodes.BILLING_ORDER_NOT_SIGNABLE) {
-        const intl2 = require(1212) /* getSystemLocale */.intl;
-        stringResult = intl2.string(require(1212) /* getSystemLocale */.t.ZHgEG7);
+    let keFvXM = dependencyMap;
+    let OrderSigningFailedWithConstraintsError = require(5678) /* _signOrder */.OrderSigningFailedWithConstraintsError;
+    if (!(code instanceof OrderSigningFailedWithConstraintsError)) {
+      if (code instanceof tmp(5678).OrderProcessingPendingError) {
+        const intl5 = tmp(1236).intl;
+        let stringResult = intl5.string(tmp(1236).t["2BmwgV"]);
+      } else if (code.code === tmp(3857).ErrorCodes.VIRTUAL_CURRENCY_INSUFFICIENT_BALANCE) {
+        const intl4 = tmp(1236).intl;
+        stringResult = intl4.string(tmp(1236).t.keFvXM);
+      } else if (code.code === tmp(3857).ErrorCodes.ALREADY_PURCHASED) {
+        const intl3 = tmp(1236).intl;
+        stringResult = intl3.string(tmp(1236).t.m371Mx);
+      } else if (code.code === tmp(3857).ErrorCodes.BILLING_ORDER_NOT_SIGNABLE) {
+        const intl2 = tmp(1236).intl;
+        stringResult = intl2.string(tmp(1236).t.ZHgEG7);
       } else {
-        const intl = require(1212) /* getSystemLocale */.intl;
-        stringResult = intl.string(require(1212) /* getSystemLocale */.t.fqJZ11);
+        const intl = tmp(1236).intl;
+        stringResult = intl.string(tmp(1236).t.fqJZ11);
       }
-    }
-    if (ConstraintReasonCode.INSUFFICIENT_ORB_BALANCE === arg1) {
-      const intl9 = require(1212) /* getSystemLocale */.intl;
-      let stringResult1 = intl9.string(require(1212) /* getSystemLocale */.t.keFvXM);
     } else {
-      if (ConstraintReasonCode.SKU_ALREADY_OWNED === arg1) {
-        const intl8 = require(1212) /* getSystemLocale */.intl;
-        stringResult1 = intl8.string(require(1212) /* getSystemLocale */.t.m371Mx);
-      } else if (ConstraintReasonCode.BUNDLE_PARTIALLY_OWNED !== arg1) {
-        const intl6 = require(1212) /* getSystemLocale */.intl;
-        stringResult1 = intl6.string(require(1212) /* getSystemLocale */.t.fqJZ11);
+      OrderSigningFailedWithConstraintsError = arg1;
+    }
+    if (ConstraintReasonCode.INSUFFICIENT_ORB_BALANCE === OrderSigningFailedWithConstraintsError) {
+      const intl9 = tmp(1236).intl;
+      keFvXM = tmp(1236).t.keFvXM;
+      let stringResult1 = intl9.string(keFvXM);
+    } else {
+      if (tmp3.SKU_ALREADY_OWNED === OrderSigningFailedWithConstraintsError) {
+        const intl8 = tmp(1236).intl;
+        stringResult1 = intl8.string(tmp(1236).t.m371Mx);
+      } else if (tmp3.BUNDLE_PARTIALLY_OWNED !== OrderSigningFailedWithConstraintsError) {
+        const intl6 = tmp(1236).intl;
+        stringResult1 = intl6.string(tmp(1236).t.fqJZ11);
       }
-      const intl7 = require(1212) /* getSystemLocale */.intl;
-      stringResult1 = intl7.string(require(1212) /* getSystemLocale */.t.v9oC0p);
+      const intl7 = tmp(1236).intl;
+      stringResult1 = intl7.string(tmp(1236).t.v9oC0p);
     }
   }
 };

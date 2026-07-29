@@ -1,36 +1,36 @@
-// Module ID: 11260
-// Function ID: 87452
+// Module ID: 11284
+// Function ID: 11285
 // Name: EmptyState
-// Dependencies: [31, 27, 33, 4165, 689, 11201, 7992, 11261, 4161, 1212, 2]
+// Dependencies: [19, 17, 21, 4189, 712, 11225, 8017, 11285, 4185, 1236, 2]
 // Exports: default
 
-// Module 11260 (EmptyState)
-import "result";
+// Module 11284 (EmptyState)
+import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_4;
-let closure_5;
+let c4;
+let c5;
 const require = arg1;
-({ jsx: closure_4, jsxs: closure_5 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { padding: 16, gap: 16, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWEST, borderRadius: require("_createForOfIteratorHelperLoose").radii.lg, alignItems: "center", justifyContent: "center" };
-_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.textContainer = { textAlign: "center" };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+({ jsx: c4, jsxs: c5 } = jsxProd);
+createCacheKey = { container: null, textContainer: null };
+createCacheKey = { padding: 16, gap: 16, backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOWEST, borderRadius: require("Themes").radii.lg, alignItems: "center", justifyContent: "center" };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { textAlign: "center" };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
 const result = require("jsxProd").fileFinishedImporting("modules/app_launcher/native/screens/home/EmptyState.tsx");
 
 export default function EmptyState() {
-  const tmp = _createForOfIteratorHelperLoose();
-  let obj = require(11201) /* handleApplicationSelected */;
-  const logAppLauncherEmptyStateView = obj.useLogAppLauncherEmptyStateView(require(7992) /* AppLauncherEntrypoint */.AppLauncherEmptyStateType.HOME_EMPTY);
-  obj = { style: tmp.container };
-  const items = [callback(importDefault(11261), {}), ];
-  obj = { style: tmp.textContainer, variant: "text-md/semibold", color: "text-default" };
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj.children = intl.string(require(1212) /* getSystemLocale */.t["V7+xhH"]);
-  items[1] = callback(require(4161) /* Text */.Text, obj);
-  obj.children = items;
+  const tmp = createCacheKey();
+  let obj = require(11225) /* handleApplicationSelected */;
+  const logAppLauncherEmptyStateView = obj.useLogAppLauncherEmptyStateView(require(8017) /* AppLauncherEntrypoint */.AppLauncherEmptyStateType.HOME_EMPTY);
+  obj = { style: tmp.container, children: null };
+  const items = [callback(importDefault(11285), {}), ];
+  obj = { style: tmp.textContainer, variant: "text-md/semibold", color: "text-default", children: null };
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj[3] = intl.string(require(1236) /* getSystemLocale */.t["V7+xhH"]);
+  items[1] = callback(require(4185) /* Text */.Text, obj);
+  obj[1] = items;
   return callback2(View, obj);
 };

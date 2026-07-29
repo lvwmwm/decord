@@ -1,71 +1,72 @@
-// Module ID: 12525
-// Function ID: 96937
+// Module ID: 12547
+// Function ID: 12548
 // Name: handlePress
-// Dependencies: [27, 33, 4165, 689, 4133, 12526, 1935, 1212, 4161, 2]
+// Dependencies: [17, 21, 4189, 712, 4157, 12548, 1959, 1236, 4185, 2]
 // Exports: default
 
-// Module 12525 (handlePress)
+// Module 12547 (handlePress)
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_3;
-let closure_4;
-let closure_5;
+let c3;
+let c4;
+let c5;
 let closure_6;
 function handlePress() {
-  let obj = importDefault(4133);
-  obj = {};
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj.aboutText = intl.string(require(1212) /* getSystemLocale */.t["07lzz7"]);
-  obj.openLazy(require(1935) /* maybeLoadBundle */(12526, dependencyMap.paths), "NitroCreditEducationActionSheet", obj);
+  let obj = importDefault(4157);
+  obj = { aboutText: null };
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj[0] = intl.string(require(1236) /* getSystemLocale */.t["07lzz7"]);
+  obj.openLazy(require(1959) /* asyncRequireImpl */(12548, dependencyMap.paths), "NitroCreditEducationActionSheet", obj);
 }
-({ TouchableOpacity: closure_3, View: closure_4 } = get_ActivityIndicator);
-({ jsx: closure_5, jsxs: closure_6 } = jsxProd);
-let obj = {};
-obj = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SURFACE_HIGH, flexDirection: "row", gap: 12, padding: 12, justifyContent: "center", borderColor: require("_createForOfIteratorHelperLoose").colors.STATUS_WARNING, borderWidth: 1, borderRadius: require("_createForOfIteratorHelperLoose").radii.lg, marginBottom: 12 };
-obj.fractionalPremiumBanner = obj;
-let obj1 = { flex: 1, paddingVertical: 12, paddingHorizontal: 27, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_MOD_STRONG, borderRadius: require("_createForOfIteratorHelperLoose").radii.xxl, justifyContent: "center" };
-obj.fpDurationPill = obj1;
-obj.fpDurationText = { textAlign: "center", color: "#FFEAA0" };
-obj.fpUnavailable = { flex: 1, justifyContent: "center" };
-obj.fpUnavailableTextNoCountdown = { textAlign: "center" };
-let closure_7 = _createForOfIteratorHelperLoose.createStyles(obj);
-const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/premium/fractional/native/BoostingCountDownPill.tsx");
+({ TouchableOpacity: c3, View: c4 } = get_ActivityIndicator);
+({ jsx: c5, jsxs: closure_6 } = jsxProd);
+let obj = { fractionalPremiumBanner: null, fpDurationPill: null, fpDurationText: null, fpUnavailable: null, fpUnavailableTextNoCountdown: null };
+obj = { backgroundColor: require("Themes").colors.BACKGROUND_SURFACE_HIGH, flexDirection: "row", gap: 12, padding: 12, justifyContent: "center", borderColor: require("Themes").colors.STATUS_WARNING, borderWidth: 1, borderRadius: require("Themes").radii.lg, marginBottom: 12 };
+obj[0] = obj;
+obj[1] = { flex: 1, paddingVertical: 12, paddingHorizontal: 27, backgroundColor: require("Themes").colors.BACKGROUND_MOD_STRONG, borderRadius: require("Themes").radii.xxl, justifyContent: "center" };
+obj[2] = { textAlign: "center", color: "#FFEAA0" };
+obj[3] = { flex: 1, justifyContent: "center" };
+obj[4] = { textAlign: "center" };
+let closure_7 = createCacheKey.createStyles(obj);
+let obj1 = { flex: 1, paddingVertical: 12, paddingHorizontal: 27, backgroundColor: require("Themes").colors.BACKGROUND_MOD_STRONG, borderRadius: require("Themes").radii.xxl, justifyContent: "center" };
+const result = require("createCacheKey").fileFinishedImporting("modules/premium/fractional/native/BoostingCountDownPill.tsx");
 
 export default function BoostingCountDownPill(style) {
   let fpDurationText;
   let isInReverseTrial;
   ({ fpDurationText, isInReverseTrial } = style);
-  const tmp = callback2();
-  let obj = { activeOpacity: 0.7 };
+  const tmp = callback();
   let tmp4;
   if (!isInReverseTrial) {
     tmp4 = handlePress;
   }
-  obj.onPress = tmp4;
-  obj = { style: items };
+  let obj = { activeOpacity: 0.7, onPress: tmp4, children: null };
+  obj = { style: items, children: null };
   items = [tmp.fractionalPremiumBanner, style.style];
-  let tmp7 = !isInReverseTrial;
-  if (tmp7) {
-    obj = { style: tmp.fpDurationPill };
-    const obj1 = { variant: "text-sm/bold", style: tmp.fpDurationText, children: fpDurationText.toUpperCase() };
-    obj.children = callback(require(4161) /* Text */.Text, obj1);
-    tmp7 = callback(closure_4, obj);
+  let tmp2Result = !isInReverseTrial;
+  if (!isInReverseTrial) {
+    obj = { style: null, children: null };
+    obj[0] = tmp.fpDurationPill;
+    const obj1 = { variant: "text-sm/bold", style: null, children: null };
+    obj1[1] = tmp.fpDurationText;
+    obj1[2] = fpDurationText.toUpperCase();
+    obj[1] = tmp2(require(4185) /* Text */.Text, obj1);
+    tmp2Result = tmp2(tmp6, obj);
   }
-  const items1 = [tmp7, ];
-  const obj2 = { style: tmp.fpUnavailable };
-  const obj3 = { variant: "text-md/normal", color: "interactive-text-active" };
+  const items1 = [tmp2Result, ];
+  const obj2 = { style: tmp.fpUnavailable, children: null };
   let prop;
   if (isInReverseTrial) {
     prop = tmp.fpUnavailableTextNoCountdown;
   }
-  obj3.style = prop;
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj3.children = intl.string(require(1212) /* getSystemLocale */.t["5nrJDO"]);
-  obj2.children = callback(require(4161) /* Text */.Text, obj3);
-  items1[1] = callback(closure_4, obj2);
-  obj.children = items1;
-  obj.children = closure_6(closure_4, obj);
-  return callback(closure_3, obj);
+  const obj3 = { variant: "text-md/normal", color: "interactive-text-active", style: prop, children: null };
+  const intl = tmp10(1236).intl;
+  obj3[3] = intl.string(require(1236) /* getSystemLocale */.t["5nrJDO"]);
+  obj2[1] = closure_5(require(4185) /* Text */.Text, obj3);
+  items1[1] = closure_5(closure_4, obj2);
+  obj[1] = items1;
+  obj[2] = closure_6(closure_4, obj);
+  return closure_5(closure_3, obj);
 };

@@ -1,18 +1,18 @@
-// Module ID: 15653
-// Function ID: 120553
+// Module ID: 15688
+// Function ID: 15689
 // Name: SearchNavigatorPreviewScreen
-// Dependencies: [31, 27, 653, 33, 4165, 1456, 1459, 10080, 9282, 2]
+// Dependencies: [19, 17, 676, 21, 4189, 1480, 1483, 10101, 15647, 2]
 // Exports: default
 
-// Module 15653 (SearchNavigatorPreviewScreen)
-import result from "result";
+// Module 15688 (SearchNavigatorPreviewScreen)
+import noop from "noop";
 import { ScrollView } from "get ActivityIndicator";
 import { SearchTypes } from "ME";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
 const require = arg1;
-let closure_7 = _createForOfIteratorHelperLoose.createStyles({ container: { flex: 1 } });
+let closure_7 = createCacheKey.createStyles({ container: { flex: 1 } });
 let result = require("ME").fileFinishedImporting("modules/search/native/components/navigator/SearchNavigatorPreviewScreen.tsx");
 
 export default function SearchNavigatorPreviewScreen() {
@@ -28,7 +28,7 @@ export default function SearchNavigatorPreviewScreen() {
     let obj = channelId(searchContext[7]);
     obj = { searchContext, channelId };
     const result = obj.trackSearchJumpToMessage(obj);
-    if (null != onBeforeJumpToMessage) {
+    if (onBeforeJumpToMessage != null) {
       onBeforeJumpToMessage();
     }
     const type = searchContext.type;
@@ -40,10 +40,12 @@ export default function SearchNavigatorPreviewScreen() {
   let type = searchContext.type;
   if (SearchTypes.CHANNEL !== type) {
     if (SearchTypes.GUILD_CHANNEL !== type) {
-      obj = { channelId, onBeforeJumpToMessage: callback };
-      return jsx(channelId(searchContext[8]), { channelId, onBeforeJumpToMessage: callback });
+      obj = { channelId: null, onBeforeJumpToMessage: null };
+      obj[0] = channelId;
+      obj[1] = callback;
+      return jsx(channelId(tmp2[8]), { channelId: null, onBeforeJumpToMessage: null });
     }
   }
-  obj = { horizontal: true, scrollEnabled: false, bounces: false, contentContainerStyle: tmp.container, children: jsx(channelId(searchContext[8]), { channelId, onBeforeJumpToMessage: callback }) };
-  return <ScrollView horizontal scrollEnabled={false} bounces={false} contentContainerStyle={tmp.container}>{jsx(channelId(searchContext[8]), { channelId, onBeforeJumpToMessage: callback })}</ScrollView>;
+  obj = { horizontal: true, scrollEnabled: false, bounces: false, contentContainerStyle: tmp.container, children: jsx(channelId(tmp2[8]), { channelId, onBeforeJumpToMessage: callback }) };
+  return <ScrollView horizontal scrollEnabled={false} bounces={false} contentContainerStyle={tmp.container}>{jsx(channelId(tmp2[8]), { channelId, onBeforeJumpToMessage: callback })}</ScrollView>;
 };

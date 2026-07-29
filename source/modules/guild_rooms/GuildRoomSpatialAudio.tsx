@@ -1,58 +1,54 @@
-// Module ID: 16168
-// Function ID: 125132
-// Name: getSpatialAudioPointFromGuildRoomPosition
-// Dependencies: [1194, 16158, 16163, 16164, 566, 16159, 2]
+// Module ID: 16203
+// Function ID: 16204
+// Name: computeLivingRoomWorldPoints
+// Dependencies: [1218, 16193, 16198, 16199, 589, 16194, 2]
 // Exports: livingRoomWorldPointToMediaEnginePoint, useGuildRoomSpatialAudio
 
-// Module 16168 (getSpatialAudioPointFromGuildRoomPosition)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_4 from "_isNativeReflectConstruct";
+// Module 16203 (computeLivingRoomWorldPoints)
+import fetchFingerprint from "fetchFingerprint";
+import handleSelectedChannelStoreChange from "handleSelectedChannelStoreChange";
 import getName from "getName";
 
-let closure_5;
+let c5;
 let closure_6;
 const require = arg1;
-function getSpatialAudioPointFromGuildRoomPosition(arg0, arg1, aspectRatio) {
-  let point = arg1;
-  if (null == arg1) {
-    point = closure_7;
-  }
-  const obj = { worldX: (arg0.x - point.x) / 100 * aspectRatio.aspectRatio * 8, worldY: 0, worldZ: 8 * ((arg0.y - point.y) / 100) };
-  return obj;
-}
 function computeLivingRoomWorldPoints(channelId) {
   let currentUserId;
   let users;
   ({ users, currentUserId } = channelId);
-  let c1;
+  let position;
   let aspectRatio;
   const value = users.get(currentUserId);
-  let position;
-  if (null != value) {
+  position = undefined;
+  if (value != null) {
     position = value.position;
   }
-  let tmp3 = null;
-  if (null != position) {
-    tmp3 = position;
+  if (position == null) {
+    position = null;
   }
-  c1 = tmp3;
   room = room.getRoom(channelId.channelId);
   let background;
-  if (null != room) {
+  if (room != null) {
     background = room.background;
   }
-  if (null == background) {
+  if (background == null) {
     background = currentUserId(aspectRatio[3]).GuildRoomBackgrounds.DEFAULT;
   }
   aspectRatio = table[background].aspectRatio;
   let items = [...users.values()];
   const found = items.filter((userId) => userId.userId !== currentUserId);
-  return Object.fromEntries(found.map((userId) => {
-    const items = [userId.userId, outer1_8(userId.position, c1, { aspectRatio })];
+  return Object.fromEntries(found.map((position) => {
+    position = position.position;
+    const items = [position.userId, ];
+    let point = position;
+    if (position == null) {
+      point = outer1_7;
+    }
+    items[1] = { worldX: (position.x - point.x) / 100 * aspectRatio * 8, worldY: 0, worldZ: 8 * ((position.y - point.y) / 100) };
     return items;
   }));
 }
-({ GUILD_ROOM_BACKGROUND_CONFIG: closure_5, GUILD_ROOM_SPATIAL_AUDIO_MODE: closure_6 } = getName);
+({ GUILD_ROOM_BACKGROUND_CONFIG: c5, GUILD_ROOM_SPATIAL_AUDIO_MODE: closure_6 } = getName);
 let closure_7 = { x: 50, y: 50 };
 const result = require("getName").fileFinishedImporting("modules/guild_rooms/GuildRoomSpatialAudio.tsx");
 
@@ -63,28 +59,33 @@ export const livingRoomWorldPointToMediaEnginePoint = function livingRoomWorldPo
 export const useGuildRoomSpatialAudio = function useGuildRoomSpatialAudio(channelId) {
   channelId = channelId.channelId;
   const guildId = channelId.guildId;
+  let stateFromStores;
   let dependencyMap;
-  let obj = channelId(566);
-  const items = [_isNativeReflectConstruct];
-  const stateFromStores = obj.useStateFromStores(items, () => outer1_3.getId());
-  let interactionsEnabled = stateFromStores(16159).useExperiment({ guildId, location: "SpatialAudioPanel" }).interactionsEnabled;
+  let obj = channelId(589);
+  const items = [fetchFingerprint];
+  stateFromStores = obj.useStateFromStores(items, () => id.getId());
+  let interactionsEnabled = stateFromStores(16194).useExperiment({ guildId, location: "SpatialAudioPanel" }).interactionsEnabled;
   if (interactionsEnabled) {
     interactionsEnabled = null != guildId;
   }
-  let tmp3 = interactionsEnabled;
+  let tmp5 = interactionsEnabled;
   if (interactionsEnabled) {
-    tmp3 = channelId.mode === closure_6;
+    tmp5 = channelId.mode === closure_6;
   }
-  dependencyMap = tmp3;
-  obj = { available: interactionsEnabled };
-  const obj2 = stateFromStores(16159);
-  const items1 = [closure_4];
-  const items2 = [tmp3, channelId, stateFromStores];
-  obj.worldPoints = channelId(566).useStateFromStores(items1, () => {
+  dependencyMap = tmp5;
+  obj = { available: interactionsEnabled, worldPoints: null };
+  const obj2 = stateFromStores(16194);
+  const tmp = channelId;
+  const items1 = [handleSelectedChannelStoreChange];
+  const items2 = [tmp5, channelId, stateFromStores];
+  obj[1] = channelId(589).useStateFromStores(items1, () => {
     if (c2) {
       if (null != channelId) {
-        const obj = { users: outer1_4.getRoomUsers(channelId), currentUserId: stateFromStores, channelId };
-        outer1_9(obj);
+        const obj = { users: null, currentUserId: null, channelId: null };
+        obj[0] = outer1_4.getRoomUsers(tmp);
+        obj[1] = stateFromStores;
+        obj[2] = tmp;
+        outer1_8(obj);
       }
       return {};
     }

@@ -1,19 +1,20 @@
-// Module ID: 11339
-// Function ID: 87996
-// Dependencies: [31, 1348, 3802, 1850, 653, 33, 5497, 566, 22, 1327, 10884, 1212, 8335, 8796, 2]
+// Module ID: 11363
+// Function ID: 11364
+// Dependencies: [19, 1372, 3826, 1874, 676, 21, 5515, 589, 12, 1351, 10908, 1236, 8359, 8820, 2]
 
-// Module 11339
-import importAllResult from "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_5 from "_isNativeReflectConstruct";
-import closure_6 from "_isNativeReflectConstruct";
+// Module 11363
+import importAllResult from "noop";
+import ensureGuildLoaded from "ensureGuildLoaded";
+import upsertRelationship from "upsertRelationship";
+import mergeGuildAvatar from "mergeGuildAvatar";
 import ME from "ME";
 import { jsx } from "jsxProd";
 
-let closure_7;
-let closure_8;
+let error;
+let metroImportAll;
 const require = arg1;
-({ RelationshipTypes: closure_7, MAX_GROUP_DM_PARTICIPANTS: closure_8 } = ME);
+let c3 = importAllResult;
+({ RelationshipTypes: error, MAX_GROUP_DM_PARTICIPANTS: metroImportAll } = ME);
 const memoResult = importAllResult.memo(function PrivateChannelUserList(channelId) {
   let disableBottomSafeZone;
   let disableStickySections;
@@ -38,7 +39,7 @@ const memoResult = importAllResult.memo(function PrivateChannelUserList(channelI
   let analyticsLocations;
   let stateFromStores;
   let stateFromStoresArray;
-  let c7;
+  let flag2;
   let c8;
   let num;
   analyticsLocations = hideTitle(onUserPress[6])().analyticsLocations;
@@ -49,8 +50,8 @@ const memoResult = importAllResult.memo(function PrivateChannelUserList(channelI
   const items2 = [stateFromStores];
   stateFromStoresArray = channelId(onUserPress[7]).useStateFromStoresArray(items1, () => {
     if (null != stateFromStores) {
-      const mapped = hideTitle(onUserPress[8])(stateFromStores.recipients).map(stateFromStoresArray.getUser);
-      const arr2 = hideTitle(onUserPress[8])(stateFromStores.recipients);
+      const mapped = hideTitle(onUserPress[8])(tmp.recipients).map(stateFromStoresArray.getUser);
+      const arr2 = hideTitle(onUserPress[8])(tmp.recipients);
       const found = mapped.unshift(stateFromStoresArray.getCurrentUser()).filter(channelId(onUserPress[9]).isNotNullish);
       const arr = mapped.unshift(stateFromStoresArray.getCurrentUser());
       let items = found.sortBy((username) => username.username.toLowerCase()).value();
@@ -62,89 +63,97 @@ const memoResult = importAllResult.memo(function PrivateChannelUserList(channelI
   }, items2);
   obj = { channel: stateFromStores, disable: !flag };
   const obj3 = channelId(onUserPress[7]);
-  let isMultiUserDMResult;
+  const tmp = onUserPress;
+  const tmp2 = channelId;
+  flag2 = undefined;
   ({ listActionRenderer, listActionHeight } = hideTitle(onUserPress[10])(obj));
-  if (null != stateFromStores) {
-    isMultiUserDMResult = stateFromStores.isMultiUserDM();
+  if (stateFromStores != null) {
+    flag2 = stateFromStores.isMultiUserDM();
   }
-  c7 = tmp4;
+  if (flag2 == null) {
+    flag2 = false;
+  }
   let tmp5;
-  if (null != isMultiUserDMResult && isMultiUserDMResult) {
+  if (flag2) {
     let ownerId;
-    if (null != stateFromStores) {
+    if (stateFromStores != null) {
       ownerId = stateFromStores.ownerId;
     }
     tmp5 = ownerId;
   }
   c8 = tmp5;
-  let userLimit;
-  if (null != stateFromStores) {
-    userLimit = stateFromStores.userLimit;
+  num = undefined;
+  if (stateFromStores != null) {
+    num = stateFromStores.userLimit;
   }
-  num = 0;
-  if (null != userLimit) {
-    num = userLimit;
+  if (num == null) {
+    num = 0;
   }
   const items3 = [stateFromStoresArray];
-  const items4 = [null != isMultiUserDMResult && isMultiUserDMResult, stateFromStoresArray, num, hideTitle];
+  const items4 = [flag2, stateFromStoresArray, num, hideTitle];
   const sections = opensUserProfileOnUserPress.useMemo(() => {
     const items = [stateFromStoresArray.length];
     return items;
   }, items3);
-  const items5 = [stateFromStoresArray, null != isMultiUserDMResult && isMultiUserDMResult, tmp5, onUserPress, opensUserProfileOnUserPress, analyticsLocations, channelId];
+  const items5 = [stateFromStoresArray, flag2, tmp5, onUserPress, opensUserProfileOnUserPress, analyticsLocations, channelId];
   const getSectionProps = opensUserProfileOnUserPress.useCallback(() => {
     const intl = channelId(onUserPress[11]).intl;
-    let combined1 = globalThis;
     const combined = "" + intl.string(channelId(onUserPress[11]).t["9Oq93m"]) + " \u2014 " + stateFromStoresArray.length;
-    if (!c7) {
-      let obj = { type: "section" };
-      obj = { title: combined, hideTitle };
-      obj.props = obj;
-      return obj;
-    } else {
-      combined1 = "/" + num > 0 ? num : c8;
-      const sum = combined + combined1;
+    let sum = combined;
+    if (flag2) {
+      let tmp3 = num;
+      if (0 <= 0) {
+        tmp3 = c8;
+      }
+      const _HermesInternal = HermesInternal;
+      sum = combined + "/" + tmp3;
     }
+    const props = { title: sum, hideTitle };
+    return { type: "section", props };
   }, items4);
   const getItemProps = opensUserProfileOnUserPress.useCallback((arg0, arg1) => {
     let closure_0 = arg1;
     if (null != stateFromStoresArray[arg1]) {
-      let tmp4 = _undefined;
-      if (_undefined) {
+      let tmp4 = flag2;
+      if (flag2) {
         tmp4 = tmp3.id === c8;
       }
-      let obj = { type: "user" };
-      obj = {
-        type: _undefined.NONE,
-        user: tmp3,
-        nickname: stateFromStores.getNickname(tmp3.id),
-        isNameplatedRow: true,
-        onPress(user) {
-            if (null != outer1_2) {
-              let obj = { user, index: closure_0 };
-              outer1_2(obj);
-            }
-            if (outer1_3) {
-              obj = { userId: user.id, sourceAnalyticsLocations: outer1_4, channelId: closure_0 };
-              hideTitle(onUserPress[12])(obj);
-            }
-          },
-        isOwner: tmp4,
-        start: tmp,
-        end: tmp2,
-        canShowDisplayNameStyles: true
+      let obj = { type: "user", props: null };
+      obj = { type: null, user: null, nickname: null, isNameplatedRow: true, onPress: null, isOwner: null, start: null, end: null, canShowDisplayNameStyles: true };
+      obj[0] = flag2.NONE;
+      obj[1] = tmp3;
+      obj[2] = stateFromStores.getNickname(tmp3.id);
+      obj[4] = function onPress(id) {
+        if (outer1_2 != null) {
+          let obj = { user: null, index: null };
+          obj[0] = id;
+          obj[1] = closure_0;
+          tmp(obj);
+        }
+        if (outer1_3) {
+          obj = { userId: null, sourceAnalyticsLocations: null, channelId: null };
+          obj[0] = id.id;
+          obj[1] = outer1_4;
+          obj[2] = closure_0;
+          hideTitle(onUserPress[12])(obj);
+        }
       };
-      obj.props = obj;
+      obj[5] = tmp4;
+      obj[6] = tmp;
+      obj[7] = tmp2;
+      obj[1] = obj;
       return obj;
     } else {
-      obj = { type: "placeholder" };
-      const obj1 = { start: tmp, end: tmp2 };
-      obj.props = obj1;
+      obj = { type: "placeholder", props: null };
+      const obj1 = { start: null, end: null };
+      obj1[0] = tmp;
+      obj1[1] = tmp2;
+      obj[1] = obj1;
       return obj;
     }
   }, items5);
-  return num(channelId(onUserPress[13]).UsersFastList, { sections, getItemProps, getSectionProps, listHeaderSize, renderListHeader, disableStickySections, disableBackgroundOverlay: true, listStyleOverride, disableBottomSafeZone, insetEnd, inActionSheet });
+  return num(tmp2(tmp[13]).UsersFastList, { sections, getItemProps, getSectionProps, listHeaderSize, renderListHeader, disableStickySections, disableBackgroundOverlay: true, listStyleOverride, disableBottomSafeZone, insetEnd, inActionSheet });
 });
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/main_tabs_v2/native/shared_components/user_list/PrivateChannelUserList.tsx");
+const result = require("upsertRelationship").fileFinishedImporting("modules/main_tabs_v2/native/shared_components/user_list/PrivateChannelUserList.tsx");
 
 export default memoResult;

@@ -1,46 +1,46 @@
-// Module ID: 10158
-// Function ID: 78480
+// Module ID: 10179
+// Function ID: 10180
 // Name: SafetyTipsContainer
-// Dependencies: [31, 27, 33, 4165, 689, 4576, 6763, 4161, 1212, 7597, 2]
+// Dependencies: [19, 17, 21, 4189, 712, 4598, 6785, 4185, 1236, 7621, 2]
 // Exports: default
 
-// Module 10158 (SafetyTipsContainer)
-import "result";
+// Module 10179 (SafetyTipsContainer)
+import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_4;
-let closure_5;
+let c4;
+let c5;
 const require = arg1;
-({ jsx: closure_4, jsxs: closure_5 } = jsxProd);
-_createForOfIteratorHelperLoose = { image: { alignSelf: "center", justifySelf: "center" } };
-_createForOfIteratorHelperLoose = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SURFACE_HIGH, borderRadius: require("_createForOfIteratorHelperLoose").radii.lg, overflow: "hidden" };
-_createForOfIteratorHelperLoose.tips = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.text = { textAlign: "center" };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+({ jsx: c4, jsxs: c5 } = jsxProd);
+createCacheKey = { image: { alignSelf: "center", justifySelf: "center" }, tips: null, text: null };
+createCacheKey = { backgroundColor: require("Themes").colors.BACKGROUND_SURFACE_HIGH, borderRadius: require("Themes").radii.lg, overflow: "hidden" };
+createCacheKey[1] = createCacheKey;
+createCacheKey[2] = { textAlign: "center" };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
 const result = require("jsxProd").fileFinishedImporting("modules/self_mod/shared/native/SafetyTipsSection.tsx");
 
-export default function SafetyTipsContainer(safetyTips) {
-  safetyTips = safetyTips.safetyTips;
-  let showHeader = safetyTips.showHeader;
-  const tmp = _createForOfIteratorHelperLoose();
-  let obj = { spacing: 16 };
-  obj = { style: tmp.image, children: callback(safetyTips(6763).SafetyBookletSpotIllustration, {}) };
+export default function SafetyTipsContainer(children) {
+  const safetyTips = children.safetyTips;
+  let showHeader = children.showHeader;
+  const tmp = createCacheKey();
+  let obj = { style: tmp.image, children: null };
+  obj[1] = callback(safetyTips(6785).SafetyBookletSpotIllustration, {});
   const items = [callback(View, obj), , ];
-  obj = { spacing: 8, align: "center", justify: "center" };
   if (showHeader) {
-    const obj1 = { style: tmp.text, variant: "heading-xl/semibold" };
-    const intl = safetyTips(1212).intl;
-    obj1.children = intl.string(safetyTips(1212).t.eAbVfS);
-    showHeader = callback(safetyTips(4161).Text, obj1);
+    obj = { style: null, variant: "heading-xl/semibold", children: null };
+    obj[0] = tmp.text;
+    const intl = tmp3(1236).intl;
+    obj[2] = intl.string(tmp3(1236).t.eAbVfS);
+    showHeader = tmp5(tmp3(4185).Text, obj);
   }
-  const items1 = [showHeader, ];
-  const obj2 = { style: tmp.text, accessibilityRole: "header", variant: "text-md/medium", color: "text-default", children: safetyTips.description };
-  items1[1] = callback(safetyTips(4161).Text, obj2);
-  obj.children = items1;
-  items[1] = closure_5(safetyTips(4576).Stack, obj);
+  obj = { spacing: 16, children: null };
+  const obj1 = { spacing: 8, align: "center", justify: "center", children: null };
+  const items1 = [showHeader, callback(safetyTips(4185).Text, { style: tmp.text, accessibilityRole: "header", variant: "text-md/medium", color: "text-default", children: children.description })];
+  obj1[3] = items1;
+  items[1] = closure_5(safetyTips(4598).Stack, obj1);
   items[2] = callback(View, { style: tmp.tips, children: safetyTips.map((tip) => outer1_4(outer1_1(outer1_2[9]), { index: arg1 + 1, tip, end: arg1 === safetyTips.length - 1 }, arg1)) });
-  obj.children = items;
-  return closure_5(safetyTips(4576).Stack, obj);
+  obj[1] = items;
+  return closure_5(safetyTips(4598).Stack, obj);
 };

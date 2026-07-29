@@ -1,82 +1,91 @@
-// Module ID: 15142
-// Function ID: 115166
+// Module ID: 15175
+// Function ID: 15176
 // Name: GuildRolesAndChannelsRow
-// Dependencies: [31, 27, 5767, 4177, 10263, 5090, 4361, 33, 4165, 689, 9971, 3981, 1334, 624, 5763, 4372, 9970, 1935, 11454, 11420, 1212, 12960, 2]
+// Dependencies: [19, 17, 5785, 4201, 10284, 5112, 4386, 21, 4189, 712, 9993, 4005, 1358, 647, 5781, 4395, 9992, 1959, 11478, 11444, 1236, 12983, 2]
 // Exports: GuildRolesAndChannelsRow
 
-// Module 15142 (GuildRolesAndChannelsRow)
-import result from "result";
-import { View } from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_6 from "_isNativeReflectConstruct";
+// Module 15175 (GuildRolesAndChannelsRow)
+import renderChannelBadge from "renderChannelBadge";
+import { View } from "asyncRequireImpl";
+import guildHasCommunity from "guildHasCommunity";
+import generateOldThreadCutoff from "generateOldThreadCutoff";
 import { CHANNELS_AND_ROLES_MODAL_KEY as closure_7 } from "GUILD_ONBOARDING_MODAL_KEY";
 import { ReadStateTypes } from "ReadStateTypes";
-import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import { jsx } from "ChannelListMagnifyingGlassIcon";
+import createCacheKey from "createCacheKey";
 
 const require = arg1;
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { marginVertical: require("hairlineWidth").CHANNEL_MARGIN_VERTICAL, marginHorizontal: 8, borderRadius: require("_createForOfIteratorHelperLoose").radii.md };
-_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.channelInfoContainer = { paddingStart: 4 };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/guild_sidebar/native/GuildActionRows.tsx");
+createCacheKey = { container: null, channelInfoContainer: null };
+createCacheKey = { marginVertical: require("hairlineWidth").CHANNEL_MARGIN_VERTICAL, marginHorizontal: 8, borderRadius: require("Themes").radii.md };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { paddingStart: 4 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let result = require("guildHasCommunity").fileFinishedImporting("modules/guild_sidebar/native/GuildActionRows.tsx");
 
 export const GuildRolesAndChannelsRow = function GuildRolesAndChannelsRow(guild) {
   guild = guild.guild;
   const selected = guild.selected;
-  const tmp = _createForOfIteratorHelperLoose();
-  const tmp2 = id(9971)(guild);
+  let id;
+  const tmp = createCacheKey();
+  const tmp4 = id(9993)(guild);
   id = guild.id;
-  let obj = guild(3981);
-  const result = obj.useIsDismissibleContentDismissed_UNSAFE(guild(1334).DismissibleContent.CHANNEL_BROWSER_NEW_BADGE_NUX);
-  let obj1 = guild(624);
-  const items = [closure_6];
+  let obj = guild(4005);
+  const result = obj.useIsDismissibleContentDismissed_UNSAFE(guild(1358).DismissibleContent.CHANNEL_BROWSER_NEW_BADGE_NUX);
+  let obj1 = guild(647);
+  const items = [generateOldThreadCutoff];
   const stateFromStores = obj1.useStateFromStores(items, () => outer1_6.hasUnread(guild.id, outer1_8.GUILD_ONBOARDING_QUESTION));
-  let obj2 = guild(624);
-  const items1 = [_isNativeReflectConstruct];
+  const items1 = [guildHasCommunity];
   const items2 = [id];
-  const stateFromStores1 = obj2.useStateFromStores(items1, () => outer1_5.getNewChannelIds(guild.id).size > guild(outer1_2[14]).MAX_NEW_CHANNELS_TO_SHOW);
+  const stateFromStores1 = guild(647).useStateFromStores(items1, () => outer1_5.getNewChannelIds(guild.id).size > guild(outer1_2[14]).MAX_NEW_CHANNELS_TO_SHOW);
   const callback = React.useCallback(() => {
     let obj = id(outer1_2[15]);
     obj = { guildId: id };
     obj.pushLazy(guild(outer1_2[17])(outer1_2[16], outer1_2.paths), obj, outer1_7);
   }, items2);
-  let SELECTED = guild(11454).ChannelModes.DEFAULT;
+  let SELECTED = guild(11478).ChannelModes.DEFAULT;
   if (selected) {
-    SELECTED = guild(11454).ChannelModes.SELECTED;
+    SELECTED = tmp5(11478).ChannelModes.SELECTED;
   }
-  let tmp10 = null;
-  if (tmp9) {
-    obj = { style: tmp.channelInfoContainer, children: jsx(guild(11420).NewBadge, {}) };
-    tmp10 = <View style={tmp.channelInfoContainer}>{jsx(guild(11420).NewBadge, {})}</View>;
+  let tmp10 = !result;
+  if (result) {
+    tmp10 = stateFromStores;
   }
-  obj = { onPress: callback, style: tmp.container, accessible: true };
-  const intl = guild(1212).intl;
+  if (!tmp10) {
+    tmp10 = stateFromStores1;
+  }
+  let tmp11 = null;
+  if (tmp10) {
+    obj = { style: null, children: null };
+    obj[0] = tmp.channelInfoContainer;
+    obj[1] = jsx(tmp5(11444).NewBadge, {});
+    tmp11 = <View style={null}>{null}</View>;
+  }
+  obj = { onPress: callback, style: tmp.container, accessible: true, accessibilityLabel: null, accessibilityState: null, mode: null, name: null, icon: null, channelInfo: null };
+  const obj3 = guild(647);
+  const tmp2 = id;
+  const intl = tmp5(1236).intl;
   const string = intl.string;
-  const t = guild(1212).t;
-  if (tmp2) {
+  const t = tmp5(1236).t;
+  if (tmp4) {
     let stringResult = string(t.h9mGOP);
   } else {
     stringResult = string(t.et6wav);
   }
-  obj.accessibilityLabel = stringResult;
-  obj.accessibilityState = { selected };
-  obj.mode = SELECTED;
-  obj1 = {};
-  const intl2 = guild(1212).intl;
+  obj[3] = stringResult;
+  obj[4] = { selected };
+  obj[5] = SELECTED;
+  const intl2 = tmp5(1236).intl;
   const string2 = intl2.string;
-  const t2 = guild(1212).t;
-  if (tmp2) {
+  const t2 = tmp5(1236).t;
+  if (tmp4) {
     let string2Result = string2(t2.h9mGOP);
   } else {
     string2Result = string2(t2.et6wav);
   }
-  obj1.name = string2Result;
-  obj1.mode = SELECTED;
-  obj.name = jsx(guild(11454).BaseChannelName, {});
-  obj2 = { mode: SELECTED, IconComponent: guild(12960).ChannelListMagnifyingGlassIcon };
-  obj.icon = jsx(guild(11454).BaseChannelIcon, { mode: SELECTED, IconComponent: guild(12960).ChannelListMagnifyingGlassIcon });
-  obj.channelInfo = tmp10;
-  return jsx(id(11454), { onPress: callback, style: tmp.container, accessible: true });
+  obj[6] = jsx(guild(11478).BaseChannelName, { name: string2Result, mode: SELECTED });
+  obj1 = { mode: SELECTED, IconComponent: null };
+  obj1[1] = guild(12983).ChannelListMagnifyingGlassIcon;
+  obj[7] = jsx(guild(11478).BaseChannelIcon, { mode: SELECTED, IconComponent: null });
+  obj[8] = tmp11;
+  return jsx(id(11478), { onPress: callback, style: tmp.container, accessible: true, accessibilityLabel: null, accessibilityState: null, mode: null, name: null, icon: null, channelInfo: null });
 };

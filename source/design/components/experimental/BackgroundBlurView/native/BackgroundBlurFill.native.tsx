@@ -1,194 +1,217 @@
-// Module ID: 7616
-// Function ID: 60799
-// Name: useBlurTheme
-// Dependencies: [31, 27, 33, 689, 4009, 3877, 3869, 4568, 4567, 4026, 4577, 4581, 2]
+// Module ID: 7639
+// Function ID: 7640
+// Name: BlurTheme
+// Dependencies: [19, 17, 21, 712, 4033, 3901, 3893, 4590, 4589, 4050, 4599, 4603, 2]
 // Exports: BackgroundBlurFill, BackgroundBlurFillAnimated, BackgroundBlurFillWithPress
 
-// Module 7616 (useBlurTheme)
-import result from "result";
+// Module 7639 (BlurTheme)
+import noop from "noop";
 import { StyleSheet } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
-import hexToRgb from "hexToRgb";
-import hexToRgb from "hexToRgb";
-import hexToRgb from "hexToRgb";
-import hexToRgb from "hexToRgb";
+import hexToRgba from "hexToRgba";
+import hexToRgba from "hexToRgba";
+import hexToRgba from "hexToRgba";
+import hexToRgba from "hexToRgba";
 
 const require = arg1;
-function useBlurTheme(blurTheme) {
-  let theme = require(3877) /* ManaContext */.useThemeContext().theme;
-  if (null != blurTheme) {
-    theme = blurTheme;
-  }
-  return theme;
-}
-function useBlurStyle(blurTheme, blurStyle) {
-  let closure_0 = blurTheme;
-  const items = [blurTheme];
-  let memo = React.useMemo(() => {
-    let str = "ultra-thin";
-    if ("light" === closure_0) {
-      str = "default";
-    }
-    return str;
-  }, items);
-  if (null != blurStyle) {
-    memo = blurStyle;
-  }
-  return memo;
-}
-function useBlurTintRgba(blurTheme, blurTintRgba) {
-  let closure_0 = blurTheme;
-  const items = [blurTheme];
-  let memo = React.useMemo(() => {
-    if ("light" === blurTheme) {
-      let hexToRgbaStringResult = blurTheme(outer1_2[4]).hexToRgbaString(outer1_6);
-      const obj2 = blurTheme(outer1_2[4]);
-    } else {
-      hexToRgbaStringResult = blurTheme(outer1_2[4]).hexToRgbaString(outer1_8);
-      const obj = blurTheme(outer1_2[4]);
-    }
-    return hexToRgbaStringResult;
-  }, items);
-  if (null != blurTintRgba) {
-    memo = blurTintRgba;
-  }
-  return memo;
-}
-function useBlurFallback(blurTheme, android_fallbackColor) {
-  let token = require(3869) /* map */.useToken(importDefault(689).colors.BACKGROUND_SCRIM, blurTheme);
-  if (null != android_fallbackColor) {
-    token = android_fallbackColor;
-  }
-  return token;
-}
-const BLACK = require("_createForOfIteratorHelperLoose").unsafe_rawColors.BLACK;
-let closure_6 = hexToRgb.hexWithOpacity(BLACK, 0);
-let closure_7 = hexToRgb.hexWithOpacity(BLACK, 0.2);
-let closure_8 = hexToRgb.hexWithOpacity(BLACK, 0.4);
-let closure_9 = hexToRgb.hexWithOpacity(BLACK, 0.5);
+const BLACK = require("Themes").unsafe_rawColors.BLACK;
+let closure_6 = hexToRgba.hexWithOpacity(BLACK, 0);
+let closure_7 = hexToRgba.hexWithOpacity(BLACK, 0.2);
+let closure_8 = hexToRgba.hexWithOpacity(BLACK, 0.4);
+let closure_9 = hexToRgba.hexWithOpacity(BLACK, 0.5);
 let closure_10 = { code: "function BackgroundBlurFillNativeTsx1(){const{withSpring,interpolateColor,pressed,fallbackColor,fallbackColorPressed,ON_PRESS_SPRING}=this.__closure;return{backgroundColor:withSpring(interpolateColor(pressed.get(),[0,1],[fallbackColor,fallbackColorPressed]),ON_PRESS_SPRING,'animate-always')};}" };
 let closure_11 = { code: "function BackgroundBlurFillNativeTsx2(){const{shouldUseFallback,withSpring,interpolateColor,pressed,blurTint,blurTintPressed,ON_PRESS_SPRING}=this.__closure;return{blurTintRgba:shouldUseFallback?undefined:withSpring(interpolateColor(pressed.get(),[0,1],[blurTint,blurTintPressed]),ON_PRESS_SPRING,'animate-always')};}" };
 const result = require("jsxProd").fileFinishedImporting("design/components/experimental/BackgroundBlurView/native/BackgroundBlurFill.native.tsx");
 
-export const BlurTheme = require("getIOSBlurEffect").BlurTheme;
-export const BlurStyle = require("getIOSBlurEffect").BlurStyle;
-export const BackgroundBlurFill = function BackgroundBlurFill(blurTheme) {
+export const BlurTheme = require("isBlurDisabled").BlurTheme;
+export const BlurStyle = require("isBlurDisabled").BlurStyle;
+export const BackgroundBlurFill = function BackgroundBlurFill(arg0) {
   let android_blurTargetViewNativeId;
   let android_fallbackColor;
   let blurAmount;
   let blurStyle;
+  let blurTheme;
   let blurTintRgba;
   let style;
-  ({ style, blurStyle, blurAmount, blurTintRgba, android_fallbackColor, android_blurTargetViewNativeId } = blurTheme);
-  blurTheme = useBlurTheme(blurTheme.blurTheme);
-  blurStyle = useBlurStyle(blurTheme, blurStyle);
-  blurTintRgba = useBlurTintRgba(blurTheme, blurTintRgba);
-  android_fallbackColor = useBlurFallback(blurTheme, android_fallbackColor);
+  ({ blurTheme, blurStyle, blurTintRgba, android_fallbackColor } = arg0);
+  ({ style, blurAmount, android_blurTargetViewNativeId } = arg0);
+  if (blurTheme == null) {
+    blurTheme = obj.useThemeContext().theme;
+  }
+  const items = [blurTheme];
+  if (blurStyle == null) {
+    blurStyle = React.useMemo(() => {
+      let str = "ultra-thin";
+      if ("light" === blurTheme) {
+        str = "default";
+      }
+      return str;
+    }, items);
+  }
+  const items1 = [blurTheme];
+  if (blurTintRgba == null) {
+    blurTintRgba = obj2.useMemo(() => {
+      if ("light" === blurTheme) {
+        let hexToRgbaStringResult = blurTheme(outer1_2[4]).hexToRgbaString(outer1_6);
+        const obj2 = blurTheme(outer1_2[4]);
+      } else {
+        hexToRgbaStringResult = blurTheme(outer1_2[4]).hexToRgbaString(outer1_8);
+        const obj = blurTheme(outer1_2[4]);
+      }
+      return hexToRgbaStringResult;
+    }, items1);
+  }
+  obj = blurTheme(3901);
+  obj2 = React;
+  const tmp = blurTheme;
+  if (android_fallbackColor == null) {
+    android_fallbackColor = tmpResult.useToken(importDefault(712).colors.BACKGROUND_SCRIM, blurTheme);
+  }
   style = [StyleSheet.absoluteFill, ];
   style[1] = style;
-  return jsx(importDefault(4568), { blurTheme, blurStyle, blurAmount, blurTintRgba, android_fallbackColor, android_blurTargetViewNativeId, style });
+  return jsx(importDefault(4590), { blurTheme, blurStyle, blurAmount, blurTintRgba, android_fallbackColor, android_blurTargetViewNativeId, style });
 };
-export const BackgroundBlurFillAnimated = function BackgroundBlurFillAnimated(animatedProps) {
+export const BackgroundBlurFillAnimated = function BackgroundBlurFillAnimated(arg0) {
   let android_blurTargetViewNativeId;
   let android_fallbackColor;
+  let animatedProps;
   let blurAmount;
   let blurStyle;
+  let blurTheme;
   let blurTintRgba;
   let style;
-  animatedProps = animatedProps.animatedProps;
-  ({ style, blurStyle, blurAmount, blurTintRgba, android_fallbackColor, android_blurTargetViewNativeId } = animatedProps);
-  const tmp = useBlurTheme(animatedProps.blurTheme);
-  const tmp2 = useBlurStyle(tmp, blurStyle);
-  const tmp3 = useBlurTintRgba(tmp, blurTintRgba);
-  let obj = { blurTheme: tmp, blurStyle: tmp2, blurAmount, blurTintRgba: tmp3, android_fallbackColor: useBlurFallback(tmp, android_fallbackColor), android_blurTargetViewNativeId, style: items };
-  items = [StyleSheet.absoluteFill, style];
-  let tmp7 = null != animatedProps;
-  const tmp4 = useBlurFallback(tmp, android_fallbackColor);
-  const tmp5 = jsx;
-  if (tmp7) {
-    obj = { animatedProps };
-    tmp7 = obj;
+  ({ blurTheme, blurStyle, blurTintRgba, android_fallbackColor, animatedProps } = arg0);
+  ({ style, blurAmount, android_blurTargetViewNativeId } = arg0);
+  let obj = blurTheme(3901);
+  if (blurTheme == null) {
+    blurTheme = obj.useThemeContext().theme;
   }
-  const merged = Object.assign(tmp7);
-  return tmp5(importDefault(4567), obj);
+  const items = [blurTheme];
+  if (blurStyle == null) {
+    blurStyle = React.useMemo(() => {
+      let str = "ultra-thin";
+      if ("light" === blurTheme) {
+        str = "default";
+      }
+      return str;
+    }, items);
+  }
+  const items1 = [blurTheme];
+  if (blurTintRgba == null) {
+    blurTintRgba = obj2.useMemo(() => {
+      if ("light" === blurTheme) {
+        let hexToRgbaStringResult = blurTheme(outer1_2[4]).hexToRgbaString(outer1_6);
+        const obj2 = blurTheme(outer1_2[4]);
+      } else {
+        hexToRgbaStringResult = blurTheme(outer1_2[4]).hexToRgbaString(outer1_8);
+        const obj = blurTheme(outer1_2[4]);
+      }
+      return hexToRgbaStringResult;
+    }, items1);
+  }
+  if (android_fallbackColor == null) {
+    android_fallbackColor = tmpResult.useToken(importDefault(712).colors.BACKGROUND_SCRIM, blurTheme);
+  }
+  obj = { blurTheme, blurStyle, blurAmount, blurTintRgba, android_fallbackColor, android_blurTargetViewNativeId, style: items2 };
+  items2 = [StyleSheet.absoluteFill, style];
+  let tmp6 = null != animatedProps;
+  obj2 = React;
+  const tmp = blurTheme;
+  const tmp3 = importDefault;
+  const tmp4 = jsx;
+  tmpResult = blurTheme(3893);
+  if (tmp6) {
+    obj = { animatedProps: null };
+    obj[0] = animatedProps;
+    tmp6 = obj;
+  }
+  const merged = Object.assign(tmp6);
+  return tmp4(importDefault(4589), obj);
 };
-export const BackgroundBlurFillWithPress = function BackgroundBlurFillWithPress(pressed) {
+export const BackgroundBlurFillWithPress = function BackgroundBlurFillWithPress(style) {
   let blurTheme;
-  let style;
-  pressed = pressed.pressed;
-  let obj = { style: 0, blurTheme: 0, pressed: 0 };
-  ({ style, blurTheme } = pressed);
-  Object.setPrototypeOf(null);
+  let pressed;
+  ({ blurTheme, pressed } = style);
+  blurTheme = pressed;
   let importDefault;
   let dependencyMap;
   let token;
   let token1;
   let c5;
-  const merged = Object.assign(pressed, obj);
-  const tmp3 = useBlurTheme(blurTheme);
-  const tmp6 = "light" === tmp3 ? closure_6 : closure_8;
+  const merged = Object.assign(style, Object.create(null));
+  let obj = blurTheme(3901);
+  if (blurTheme == null) {
+    blurTheme = obj.useThemeContext().theme;
+  }
+  let items = [blurTheme];
+  const tmp6 = "light" === blurTheme ? closure_6 : closure_8;
   importDefault = tmp6;
-  const tmp7 = "light" === tmp3 ? closure_7 : closure_9;
+  const tmp7 = "light" === blurTheme ? closure_7 : closure_9;
   dependencyMap = tmp7;
-  let obj1 = pressed(3869);
-  token = obj1.useToken(importDefault(689).colors.BACKGROUND_SCRIM, tmp3);
-  let obj2 = pressed(3869);
-  token1 = obj2.useToken(importDefault(689).colors.BACKGROUND_SCRIM_LIGHTBOX, tmp3);
-  const tmp4 = useBlurStyle(tmp3, undefined);
-  const isBlurDisabledResult = pressed(4568).isBlurDisabled(merged);
+  const memo = token.useMemo(() => {
+    let str = "ultra-thin";
+    if ("light" === blurTheme) {
+      str = "default";
+    }
+    return str;
+  }, items);
+  let tmp2Result = tmp2(3893);
+  token = tmp2Result.useToken(importDefault(712).colors.BACKGROUND_SCRIM, blurTheme);
+  tmp2Result = tmp2(3893);
+  token1 = tmp2Result.useToken(importDefault(712).colors.BACKGROUND_SCRIM_LIGHTBOX, blurTheme);
+  const isBlurDisabledResult = blurTheme(4590).isBlurDisabled(merged);
   c5 = isBlurDisabledResult;
-  const obj4 = pressed(4568);
+  const tmp2Result1 = blurTheme(4590);
   class T {
     constructor() {
-      obj = {};
-      obj2 = pressed(c2[10]);
-      obj3 = pressed(c2[9]);
+      obj = { backgroundColor: null };
+      obj2 = blurTheme(c2[10]);
+      obj3 = blurTheme(c2[9]);
       items = [, ];
       items[0] = c3;
       items[1] = c4;
-      interpolateColorResult = obj3.interpolateColor(pressed.get(), [0, 1], items);
-      obj.backgroundColor = obj2.withSpring(interpolateColorResult, pressed(c2[11]).ON_PRESS_SPRING, "animate-always");
+      interpolateColorResult = obj3.interpolateColor(blurTheme.get(), [0, 1], items);
+      obj[0] = obj2.withSpring(interpolateColorResult, blurTheme(c2[11]).ON_PRESS_SPRING, "animate-always");
       return obj;
     }
   }
-  obj = { withSpring: pressed(4577).withSpring, interpolateColor: pressed(4026).interpolateColor, pressed, fallbackColor: token, fallbackColorPressed: token1, ON_PRESS_SPRING: pressed(4581).ON_PRESS_SPRING };
+  obj = { withSpring: tmp2(4599).withSpring, interpolateColor: tmp2(4050).interpolateColor, pressed, fallbackColor: token, fallbackColorPressed: token1, ON_PRESS_SPRING: tmp2(4603).ON_PRESS_SPRING };
   T.__closure = obj;
   T.__workletHash = 10497618157620;
   T.__initData = closure_10;
-  let animatedStyle = pressed(4026).useAnimatedStyle(T);
-  const obj5 = pressed(4026);
+  let animatedStyle = blurTheme(4050).useAnimatedStyle(T);
+  const tmp2Result2 = blurTheme(4050);
   const fn = function p() {
-    const obj = {};
-    let withSpringResult;
+    let blurTintRgba;
     if (!c5) {
-      const obj2 = pressed(_undefined[10]);
+      const obj = blurTheme(_undefined[10]);
       const items = [c1, _undefined];
-      const obj3 = pressed(_undefined[9]);
-      withSpringResult = obj2.withSpring(pressed(_undefined[9]).interpolateColor(pressed.get(), [0, 1], items), pressed(_undefined[11]).ON_PRESS_SPRING, "animate-always");
-      const interpolateColorResult = pressed(_undefined[9]).interpolateColor(pressed.get(), [0, 1], items);
+      const obj2 = blurTheme(_undefined[9]);
+      blurTintRgba = obj.withSpring(blurTheme(_undefined[9]).interpolateColor(blurTheme.get(), [0, 1], items), blurTheme(_undefined[11]).ON_PRESS_SPRING, "animate-always");
+      const interpolateColorResult = blurTheme(_undefined[9]).interpolateColor(blurTheme.get(), [0, 1], items);
     }
-    obj.blurTintRgba = withSpringResult;
-    return obj;
+    return { blurTintRgba };
   };
-  obj = { shouldUseFallback: isBlurDisabledResult, withSpring: pressed(4577).withSpring, interpolateColor: pressed(4026).interpolateColor, pressed, blurTint: tmp6, blurTintPressed: tmp7, ON_PRESS_SPRING: pressed(4581).ON_PRESS_SPRING };
+  obj = { shouldUseFallback: isBlurDisabledResult, withSpring: tmp2(4599).withSpring, interpolateColor: tmp2(4050).interpolateColor, pressed, blurTint: tmp6, blurTintPressed: tmp7, ON_PRESS_SPRING: tmp2(4603).ON_PRESS_SPRING };
   fn.__closure = obj;
   fn.__workletHash = 3902745666351;
   fn.__initData = closure_11;
-  const animatedProps = pressed(4026).useAnimatedProps(fn);
-  obj1 = { blurTheme: tmp3, blurStyle: tmp4 };
-  let items = [token1.absoluteFill, style, ];
-  const obj8 = pressed(4026);
+  const animatedProps = blurTheme(4050).useAnimatedProps(fn);
+  const obj1 = { blurTheme, blurStyle: memo, style: null };
+  const items1 = [token1.absoluteFill, style.style, ];
   const tmp12 = c5;
+  const tmp2Result3 = blurTheme(4050);
   if (!isBlurDisabledResult) {
     animatedStyle = {};
   }
-  items[2] = animatedStyle;
-  obj1.style = items;
+  items1[2] = animatedStyle;
+  obj1[2] = items1;
   let tmp14 = !isBlurDisabledResult;
-  if (tmp14) {
-    obj2 = { animatedProps };
+  if (!isBlurDisabledResult) {
+    let obj2 = { animatedProps: null };
+    obj2[0] = animatedProps;
     tmp14 = obj2;
   }
   const merged1 = Object.assign(tmp14);
-  return tmp12(importDefault(4567), obj1);
+  return tmp12(importDefault(4589), obj1);
 };

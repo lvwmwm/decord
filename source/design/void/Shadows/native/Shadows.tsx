@@ -1,10 +1,10 @@
-// Module ID: 13144
-// Function ID: 101308
+// Module ID: 13167
+// Function ID: 13168
 // Name: generateBoxShadowStyle
-// Dependencies: [477, 2]
+// Dependencies: [500, 2]
 // Exports: generateBoxShadowStyle
 
-// Module 13144 (generateBoxShadowStyle)
+// Module 13167 (generateBoxShadowStyle)
 const result = require("set").fileFinishedImporting("design/void/Shadows/native/Shadows.tsx");
 
 export const generateBoxShadowStyle = (arg0) => {
@@ -16,16 +16,20 @@ export const generateBoxShadowStyle = (arg0) => {
   let xOffset;
   let yOffset;
   ({ xOffset, yOffset, shadowColorIos, shadowOpacity, shadowRadius, elevation, shadowColorAndroid } = arg0);
-  let obj = require(477) /* set */;
-  obj = {};
+  let obj = require(500) /* set */;
   if (obj.isAndroid()) {
-    obj.elevation = elevation;
-    obj.shadowColor = shadowColorAndroid;
+    obj = { elevation: null, shadowColor: null };
+    obj[0] = elevation;
+    obj[1] = shadowColorAndroid;
   } else {
-    obj = { shadowColor: shadowColorIos, width: xOffset, height: yOffset };
-    obj.shadowOffset = obj;
-    obj.shadowOpacity = shadowOpacity;
-    obj.shadowRadius = shadowRadius;
+    obj = { shadowColor: null, shadowOffset: null, shadowOpacity: null, shadowRadius: null };
+    obj[0] = shadowColorIos;
+    const obj1 = { width: null, height: null };
+    obj1[0] = xOffset;
+    obj1[1] = yOffset;
+    obj[1] = obj1;
+    obj[2] = shadowOpacity;
+    obj[3] = shadowRadius;
   }
   return obj;
 };

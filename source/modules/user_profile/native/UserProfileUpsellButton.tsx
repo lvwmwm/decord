@@ -1,31 +1,31 @@
-// Module ID: 13673
-// Function ID: 104933
+// Module ID: 13694
+// Function ID: 13695
 // Name: UserProfileUpsellButton
-// Dependencies: [31, 653, 1852, 33, 4165, 5497, 6221, 675, 4578, 6171, 1212, 6606, 2]
+// Dependencies: [19, 676, 1876, 21, 4189, 5515, 6241, 698, 4600, 6191, 1236, 6627, 2]
 // Exports: default
 
-// Module 13673 (UserProfileUpsellButton)
-import result from "result";
+// Module 13694 (UserProfileUpsellButton)
+import noop from "noop";
 import ME from "ME";
 import { PremiumUpsellTypes } from "GuildFeatures";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_4;
-let closure_5;
+let c4;
+let c5;
 let closure_6;
-let closure_7;
+let error;
 const require = arg1;
-({ AnalyticsPages: closure_4, UpsellTypes: closure_5, AnalyticsSections: closure_6, AnalyticEvents: closure_7 } = ME);
-let closure_10 = _createForOfIteratorHelperLoose.createStyles({ nitroWheel: { marginRight: 2 } });
+({ AnalyticsPages: c4, UpsellTypes: c5, AnalyticsSections: closure_6, AnalyticEvents: error } = ME);
+let closure_10 = createCacheKey.createStyles({ nitroWheel: { marginRight: 2 } });
 let result = require("GuildFeatures").fileFinishedImporting("modules/user_profile/native/UserProfileUpsellButton.tsx");
 
 export default function UserProfileUpsellButton(analyticsObject) {
   analyticsObject = analyticsObject.analyticsObject;
-  let label = analyticsObject.label;
-  analyticsLocations = analyticsLocations(5497)().analyticsLocations;
-  let obj = analyticsObject(6221);
-  const nitroTrialCtaOverride = obj.useNitroTrialCtaOverride("user_profile_upsell_button");
+  let analyticsLocations;
+  analyticsLocations = analyticsLocations(5515)().analyticsLocations;
+  let obj = analyticsObject(6241);
+  let label = obj.useNitroTrialCtaOverride("user_profile_upsell_button");
   const items = [analyticsLocations, analyticsObject];
   const effect = React.useEffect(() => {
     let obj = analyticsLocations(outer1_2[7]);
@@ -40,17 +40,19 @@ export default function UserProfileUpsellButton(analyticsObject) {
       obj = { page: outer1_4.USER_SETTINGS, section: outer1_6.USER_PROFILE, object: analyticsObject };
       const result = obj.handleShowUpsellAlert(obj);
     },
-    variant: "active"
+    variant: "active",
+    text: null,
+    icon: null
   };
-  if (null != nitroTrialCtaOverride) {
-    label = nitroTrialCtaOverride;
+  if (label == null) {
+    label = analyticsObject.label;
   }
-  if (null == label) {
-    const intl = analyticsObject(1212).intl;
-    label = intl.string(analyticsObject(1212).t.pj0XBN);
+  if (label == null) {
+    const intl = tmp3(1236).intl;
+    label = intl.string(tmp3(1236).t.pj0XBN);
   }
-  obj.text = label;
+  obj[2] = label;
   obj = { color: "white", size: "sm", style: callback().nitroWheel };
-  obj.icon = jsx(analyticsObject(6606).NitroWheelIcon, { color: "white", size: "sm", style: callback().nitroWheel });
-  return jsx(analyticsObject(4578).Button, { color: "white", size: "sm", style: callback().nitroWheel });
+  obj[3] = jsx(analyticsObject(6627).NitroWheelIcon, { color: "white", size: "sm", style: callback().nitroWheel });
+  return jsx(analyticsObject(4600).Button, { color: "white", size: "sm", style: callback().nitroWheel });
 };

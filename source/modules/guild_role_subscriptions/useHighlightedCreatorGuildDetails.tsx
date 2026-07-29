@@ -1,11 +1,11 @@
-// Module ID: 16513
-// Function ID: 128587
+// Module ID: 16548
+// Function ID: 16549
 // Name: useHighlightedCreatorGuildDetails
-// Dependencies: [31, 653, 16514, 1392, 2]
+// Dependencies: [19, 676, 16549, 1416, 2]
 // Exports: default
 
-// Module 16513 (useHighlightedCreatorGuildDetails)
-import result from "result";
+// Module 16548 (useHighlightedCreatorGuildDetails)
+import noop from "noop";
 import { MarketingURLs } from "ME";
 
 let result = require("useFetchHighlightedCreatorGuildDetails").fileFinishedImporting("modules/guild_role_subscriptions/useHighlightedCreatorGuildDetails.tsx");
@@ -14,72 +14,70 @@ export default function useHighlightedCreatorGuildDetails(id, arg1, size) {
   let highlightedCreatorDetails;
   let isLoading;
   const importDefault = arg1;
-  const tmp = importDefault(store_page[2])(id);
-  ({ isLoading, highlightedCreatorDetails } = tmp);
+  const tmp3 = importDefault(store_page[2])(id);
+  ({ isLoading, highlightedCreatorDetails } = tmp3);
   store_page = undefined;
-  if (null != highlightedCreatorDetails) {
+  if (highlightedCreatorDetails != null) {
     store_page = highlightedCreatorDetails.store_page;
   }
+  let obj = memo;
   let role_subscription;
-  if (null != store_page) {
+  if (store_page != null) {
     role_subscription = store_page.role_subscription;
   }
   const items = [role_subscription];
   memo = memo.useMemo(() => {
     let group_listings;
-    if (null != store_page) {
-      const role_subscription = store_page.role_subscription;
-      if (null != role_subscription) {
+    if (store_page != null) {
+      const role_subscription = tmp.role_subscription;
+      if (role_subscription != null) {
         group_listings = role_subscription.group_listings;
       }
     }
-    let closure_0 = (function getSubscriptionRoleIds(group_listings) {
-      const set = new Set();
-      if (null != group_listings) {
-        let item = group_listings.forEach((subscription_listings) => {
-          const prop = subscription_listings.subscription_listings;
-          if (null != prop) {
-            const item = prop.forEach((role_id) => {
-              outer1_0.add(role_id.role_id);
-            });
-          }
-        });
-      }
-      return set;
-    })(group_listings);
+    const set = new Set();
+    if (group_listings != null) {
+      let item = group_listings.forEach((subscription_listings) => {
+        const prop = subscription_listings.subscription_listings;
+        if (prop != null) {
+          const item = prop.forEach((role_id) => {
+            set.add(role_id.role_id);
+          });
+        }
+      });
+    }
     let benefit_emojis;
-    if (null != store_page) {
-      const role_subscription2 = store_page.role_subscription;
-      if (null != role_subscription2) {
+    if (store_page != null) {
+      const role_subscription2 = tmp.role_subscription;
+      if (role_subscription2 != null) {
         benefit_emojis = role_subscription2.benefit_emojis;
       }
     }
     let found;
-    if (null != benefit_emojis) {
+    if (benefit_emojis != null) {
       found = benefit_emojis.filter((roles) => {
         roles = roles.roles;
-        return roles.some((arg0) => outer1_0.has(arg0));
+        return roles.some((arg0) => set.has(arg0));
       });
     }
     return found;
   }, items);
   let icon_hash;
-  if (null != store_page) {
+  if (store_page != null) {
     icon_hash = store_page.guild.icon_hash;
   }
-  let obj = importDefault(store_page[3]);
   obj = { id, icon: icon_hash, size };
-  const guildIconURL = obj.getGuildIconURL(obj);
+  const guildIconURL = importDefault(store_page[3]).getGuildIconURL(obj);
   const items1 = [memo, arg1];
   let diff = null;
-  const memo1 = memo.useMemo(() => {
+  const memo1 = obj.useMemo(() => {
+    let substr = memo;
     if (null != memo) {
-      if (memo.length > closure_0) {
-        let substr = memo.slice(0, closure_0);
+      substr = arr;
+      if (arr.length > closure_0) {
+        substr = arr.slice(0, tmp2);
       }
-      return substr;
     }
-    substr = memo;
+    return substr;
   }, items1);
   if (null != memo) {
     diff = null;
@@ -88,33 +86,53 @@ export default function useHighlightedCreatorGuildDetails(id, arg1, size) {
     }
   }
   let slug;
-  if (null != highlightedCreatorDetails) {
+  if (highlightedCreatorDetails != null) {
     slug = highlightedCreatorDetails.slug;
   }
   if (null != slug) {
     const result = MarketingURLs.ROLE_SUBSCRIPTION_STORE_PAGE(slug);
   }
-  let name;
-  if (null != store_page) {
+  if (store_page != null) {
     const guild = store_page.guild;
-    if (null != guild) {
-      name = guild.name;
+    if (guild != null) {
+      const name = guild.name;
     }
   }
-  if (null != store_page) {
+  if (store_page != null) {
     role_subscription = store_page.role_subscription;
-    if (null != role_subscription) {
+    if (role_subscription != null) {
       const subscriber_count = role_subscription.subscriber_count;
     }
   }
-  obj = { hasAllImperativeDetails: tmp13, isLoading };
-  if (!isLoading && null != name && null != icon_hash && null != guildIconURL) {
-    const obj1 = { guildName: name, guildIcon: icon_hash, guildAvatarUrl: guildIconURL, storePageUrl: result, subscriberCount: subscriber_count, emojisToShow: memo1, notShownEmojiCount: diff };
-    obj.details = obj1;
-    let tmp14 = obj;
-  } else {
-    obj.error = tmp.error;
-    tmp14 = obj;
+  let tmp13 = !isLoading;
+  if (!isLoading) {
+    tmp13 = null != name;
   }
-  return tmp14;
+  if (tmp13) {
+    tmp13 = null != icon_hash;
+  }
+  if (tmp13) {
+    tmp13 = null != guildIconURL;
+  }
+  if (tmp13) {
+    obj = { hasAllImperativeDetails: null, isLoading: null, details: null };
+    obj[0] = tmp13;
+    obj[1] = isLoading;
+    const obj1 = { guildName: null, guildIcon: null, guildAvatarUrl: null, storePageUrl: null, subscriberCount: null, emojisToShow: null, notShownEmojiCount: null };
+    obj1[0] = name;
+    obj1[1] = icon_hash;
+    obj1[2] = guildIconURL;
+    obj1[3] = result;
+    obj1[4] = subscriber_count;
+    obj1[5] = memo1;
+    obj1[6] = diff;
+    obj[2] = obj1;
+    let obj2 = obj;
+  } else {
+    obj2 = { hasAllImperativeDetails: null, isLoading: null, error: null };
+    obj2[0] = tmp13;
+    obj2[1] = isLoading;
+    obj2[2] = tmp3.error;
+  }
+  return obj2;
 };

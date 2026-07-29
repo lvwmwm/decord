@@ -1,39 +1,37 @@
-// Module ID: 6643
-// Function ID: 58563
-// Name: getActivatedBody
-// Dependencies: [31, 6205, 1852, 33, 1212, 4507, 4510, 2]
+// Module ID: 6664
+// Function ID: 6665
+// Name: presentBuyNitroPurchaseSuccess
+// Dependencies: [19, 6225, 1876, 21, 1236, 4530, 4533, 2]
 // Exports: presentBuyNitroPurchaseSuccess
 
-// Module 6643 (getActivatedBody)
-import "result";
+// Module 6664 (presentBuyNitroPurchaseSuccess)
+import "noop";
 import { reset } from "usePremiumPlanPurchasedStore";
 import { PremiumTypes } from "GuildFeatures";
 import { jsx } from "jsxProd";
 
 const require = arg1;
-function getActivatedBody(premiumTier) {
-  if (PremiumTypes.TIER_0 === premiumTier) {
-    const intl3 = require(1212) /* getSystemLocale */.intl;
-    return intl3.string(require(1212) /* getSystemLocale */.t["6WWrVM"]);
-  } else if (PremiumTypes.TIER_1 === premiumTier) {
-    const intl2 = require(1212) /* getSystemLocale */.intl;
-    return intl2.string(require(1212) /* getSystemLocale */.t.LAAgsy);
-  } else {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(require(1212) /* getSystemLocale */.t.I7xNzI);
-  }
-}
 const result = require("GuildFeatures").fileFinishedImporting("modules/premium_marketing/native/components/BuyNitroPurchaseSuccess.tsx");
 
 export const presentBuyNitroPurchaseSuccess = function presentBuyNitroPurchaseSuccess(premiumTier) {
-  let obj = require(4507) /* useAlertStore */;
-  obj = {};
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj.title = intl.string(require(1212) /* getSystemLocale */.t["Q+BB2w"]);
-  obj.content = getActivatedBody(premiumTier);
-  obj = { variant: "primary" };
-  const intl2 = require(1212) /* getSystemLocale */.intl;
-  obj.text = intl2.string(require(1212) /* getSystemLocale */.t.TkTvBz);
-  obj.actions = jsx(require(4510) /* getAlertModalItemKey */.AlertActionButton, { variant: "primary" });
-  obj.openAlert("BuyNitroPurchaseSuccess", jsx(require(4510) /* getAlertModalItemKey */.AlertModal, { variant: "primary" }), reset);
+  let obj = require(4530) /* useAlertStore */;
+  obj = { title: null, content: null, actions: null };
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj[0] = intl.string(require(1236) /* getSystemLocale */.t["Q+BB2w"]);
+  if (PremiumTypes.TIER_0 === premiumTier) {
+    const intl4 = tmp(1236).intl;
+    let stringResult = intl4.string(tmp(1236).t["6WWrVM"]);
+  } else if (tmp4.TIER_1 === premiumTier) {
+    const intl3 = tmp(1236).intl;
+    stringResult = intl3.string(tmp(1236).t.LAAgsy);
+  } else {
+    const intl2 = tmp(1236).intl;
+    stringResult = intl2.string(tmp(1236).t.I7xNzI);
+  }
+  obj[1] = stringResult;
+  obj = { variant: "primary", text: null };
+  const intl5 = tmp(1236).intl;
+  obj[1] = intl5.string(require(1236) /* getSystemLocale */.t.TkTvBz);
+  obj[2] = jsx(require(4533) /* getAlertModalItemKey */.AlertActionButton, { variant: "primary", text: null });
+  obj.openAlert("BuyNitroPurchaseSuccess", jsx(require(4533) /* getAlertModalItemKey */.AlertModal, { variant: "primary", text: null }), reset);
 };

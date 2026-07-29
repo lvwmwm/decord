@@ -1,152 +1,83 @@
-// Module ID: 7831
-// Function ID: 62014
-// Name: _createForOfIteratorHelperLoose
-// Dependencies: [3390, 2]
+// Module ID: 7854
+// Function ID: 7855
+// Name: FRIEND_ANNIVERSARY_ELIGIBILITY_WINDOW_DAYS
+// Dependencies: [3414, 2]
 // Exports: categorizeFriendAnniversariesByAffinity, isFriendAnniversary, pruneTimestampMap, yearsSince
 
-// Module 7831 (_createForOfIteratorHelperLoose)
-function _createForOfIteratorHelperLoose(iterable) {
-  let closure_0 = iterable;
-  iterable = "undefined" !== typeof Symbol;
-  if (iterable) {
-    const _Symbol = Symbol;
-    iterable = iterable[Symbol.iterator];
-  }
-  if (!iterable) {
-    iterable = iterable[Symbol.iterator];
-  }
-  if (iterable) {
-    const iter = iterable.call(iterable);
-    const next = iter.next;
-    return next.bind(iter);
-  } else {
-    const _Array = Array;
-    let tmp = iterable;
-    if (!Array.isArray(iterable)) {
-      let tmp2;
-      if (iterable) {
-        if ("string" === typeof iterable) {
-          tmp2 = _arrayLikeToArray(iterable, undefined);
-        } else {
-          const toString = {}.toString;
-          const substr = toString.call(iterable).slice(8, -1);
-          let name = substr;
-          if (tmp3) {
-            name = iterable.constructor.name;
-          }
-          if ("Map" !== name) {
-            if ("Set" !== name) {
-              if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(iterable, undefined);
-              } else {
-                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
-              }
-            }
-            tmp2 = arr;
-          }
-          const _Array2 = Array;
-          arr = Array.from(iterable);
-          const callResult = toString.call(iterable);
-          tmp3 = "Object" === substr && iterable.constructor;
-        }
-      }
-      tmp = tmp2;
-      if (!tmp2) {
-        const _TypeError = TypeError;
-        const typeError = new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
-        throw typeError;
-      }
-    }
-    if (tmp) {
-      closure_0 = tmp;
-    }
-    let c1 = 0;
-    return () => {
-      if (closure_1 >= length.length) {
-        let obj = { done: true };
-      } else {
-        obj = { done: false };
-        closure_1 = tmp3 + 1;
-        obj.value = length[+closure_1];
-      }
-      return obj;
-    };
-  }
-}
-function _arrayLikeToArray(arg0, arg1) {
-  let length;
-  if (tmp) {
-    length = arg0.length;
-  }
-  const ArrayResult = Array(length);
-  for (let num = 0; num < length; num = num + 1) {
-    ArrayResult[num] = arg0[num];
-  }
-  return ArrayResult;
-}
+// Module 7854 (FRIEND_ANNIVERSARY_ELIGIBILITY_WINDOW_DAYS)
 const result = require("set").fileFinishedImporting("modules/premium/gifting/shared/FriendAnniversaryUtils.tsx");
 
 export const FRIEND_ANNIVERSARY_ELIGIBILITY_WINDOW_DAYS = 7;
 export const isFriendAnniversary = function isFriendAnniversary(date) {
+  date = new Date();
   const items = [-1, 0, 1];
-  let num = 0;
-  if (0 < items.length) {
-    while (true) {
-      let tmp3 = require;
-      let tmp4 = dependencyMap;
-      let obj = require(3390);
-      let setYearResult = obj.setYear(date, tmp2 + items[num]);
-      let obj2 = require(3390);
-      if (!obj2.isSameDay(setYearResult, date)) {
-        let _Math = Math;
-        let tmp6 = require;
-        let tmp7 = dependencyMap;
-        let obj3 = require(3390);
-        if (Math.abs(obj3.differenceInDays(date, setYearResult)) <= 7) {
-          break;
-        }
+  const fullYear = date.getFullYear();
+  const obj2 = items[Symbol.iterator]();
+  while (obj2 !== undefined) {
+    let tmp3 = require;
+    let tmp4 = dependencyMap;
+    let obj3 = require(3414);
+    let setYearResult = obj3.setYear(date, fullYear + tmp2);
+    let tmp6 = setYearResult;
+    let obj4 = require(3414);
+    if (!obj4.isSameDay(setYearResult, date)) {
+      let _Math = Math;
+      let tmp3Result = tmp3(3414);
+      let tmp7 = setYearResult;
+      if (Math.abs(tmp3Result.differenceInDays(date, tmp6)) <= 7) {
+        let tmp8 = obj2;
+        obj2.return();
+        let flag = true;
+        return true;
       }
-      num = num + 1;
     }
-    return true;
+    continue;
   }
   return false;
 };
 export const yearsSince = function yearsSince(friendsSince) {
-  const obj = require(3390);
+  const obj = require(3414);
   return Math.round(obj.differenceInMonths(new Date(), friendsSince) / 12);
 };
-export const categorizeFriendAnniversariesByAffinity = function categorizeFriendAnniversariesByAffinity(closure_16, arg1, flag) {
-  let iter2;
+export const categorizeFriendAnniversariesByAffinity = function categorizeFriendAnniversariesByAffinity(closure_11, arg1, flag) {
   const highestAffinity = new Set();
   const highAffinity = new Set();
   if (flag) {
     const _Math = Math;
-    const substr = closure_16.slice(0, Math.ceil(closure_16.length / 2));
+    const substr = closure_11.slice(0, Math.ceil(closure_11.length / 2));
     const item = substr.forEach((arg0) => {
       highestAffinity.add(arg0);
     });
-    const item1 = closure_16.forEach((arg0) => {
+    const item1 = closure_11.forEach((arg0) => {
       highAffinity.add(arg0);
     });
   } else {
-    const tmp2 = _createForOfIteratorHelperLoose(closure_16);
-    let iter = tmp2();
-    if (!iter.done) {
-      do {
-        let value = iter.value;
-        let tmp4 = arg1(value);
-        let tmp5 = null != tmp4 && tmp4 > 0.7;
-        if (tmp5) {
-          let addResult = highestAffinity.add(value);
-        }
-        let tmp7 = null != tmp4 && tmp4 > 0.5;
-        if (tmp7) {
-          let addResult1 = highAffinity.add(value);
-        }
-        iter2 = tmp2();
-        iter = iter2;
-      } while (!iter2.done);
+    const iter = closure_11[Symbol.iterator]();
+    const nextResult = iter.next();
+    while (iter !== undefined) {
+      let tmp6 = nextResult;
+      let tmp7 = arg1(nextResult);
+      let tmp8 = tmp7;
+      let tmp9 = null != tmp7;
+      if (tmp9) {
+        let tmp10 = tmp7;
+        tmp9 = tmp8 > 0.7;
+      }
+      if (tmp9) {
+        let tmp11 = nextResult;
+        let addResult = highestAffinity.add(tmp6);
+      }
+      let tmp13 = tmp7;
+      let tmp14 = null != tmp8;
+      if (tmp14) {
+        let tmp15 = tmp7;
+        tmp14 = tmp8 > 0.5;
+      }
+      if (tmp14) {
+        let tmp16 = nextResult;
+        let addResult1 = highAffinity.add(tmp6);
+      }
+      continue;
     }
   }
   return { highestAffinity, highAffinity };

@@ -1,281 +1,283 @@
-// Module ID: 9748
-// Function ID: 75779
+// Module ID: 9770
+// Function ID: 9771
 // Name: PurchaseSuccessModalBase
-// Dependencies: [830, 31, 27, 4157, 4210, 5647, 653, 33, 4165, 689, 4026, 4577, 4166, 4134, 1450, 566, 5644, 8143, 4589, 5155, 5128, 5153, 1212, 8029, 4161, 4578, 5503, 5500, 8023, 5517, 675, 4594, 9732, 3137, 8621, 4004, 2]
+// Dependencies: [853, 19, 17, 4181, 4234, 5665, 676, 21, 4189, 712, 4050, 4599, 4190, 4158, 1474, 589, 5662, 8167, 4611, 5177, 5150, 5175, 1236, 8053, 4185, 4600, 5521, 5518, 8047, 5535, 698, 4616, 9754, 3161, 8645, 4028, 2]
 // Exports: SocialLayerStorefrontProductGiftPurchaseSuccessModal, SocialLayerStorefrontProductSelfPurchaseSuccessModal
 
-// Module 9748 (PurchaseSuccessModalBase)
+// Module 9770 (PurchaseSuccessModalBase)
 import _toArray from "_toArray";
-import useMountLayoutEffect from "useMountLayoutEffect";
-import get_ActivityIndicator from "useStartAuthorize";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_9 from "_isNativeReflectConstruct";
+import SafeAreaPaddingView from "SafeAreaPaddingView";
+import get_ActivityIndicator from "handleOrientationChange";
+import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
+import addSku from "addSku";
 import { SOCIAL_LAYER_DAYS_TO_CLAIM_ITEM as closure_10 } from "STOREFRONT_MARKETING_GUILD_ID";
 import ME from "ME";
-import jsxProd from "messagesProxy";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import jsxProd from "XSmallIcon";
+import createCacheKey from "createCacheKey";
+import createCacheKey from "createCacheKey";
 
-let closure_11;
+let c5;
 let closure_12;
-let closure_13;
 let closure_14;
 let closure_15;
-let closure_5;
 let closure_6;
-let closure_7;
+let error;
+let map1;
+let unpackModuleId;
 const require = arg1;
 function PurchaseSuccessModalBase(sku) {
   let body;
   let ctaIcon;
   let ctaLabel;
   let ctaLoading;
-  let curtainViewStyle;
   let finePrint;
   let onClose;
   let onCtaPress;
-  let previewViewStyle;
-  let textViewStyle;
   let title;
   sku = sku.sku;
+  let stateFromStores = sku;
   ({ finePrint, ctaLabel, onCtaPress, onClose } = sku);
+  let importDefault;
   let callback;
+  let c3;
+  let width;
   ({ title, body, ctaIcon, ctaLoading } = sku);
-  const tmp = _createForOfIteratorHelperLoose();
-  let _toArray = tmp;
-  const width = importDefault(callback[14])().width;
-  let obj = sku(callback[15]);
-  let items = [_isNativeReflectConstruct];
-  const items1 = [sku];
-  ({ previewViewStyle, textViewStyle, curtainViewStyle } = (function useAnimationStyles(arg0) {
-    let closure_0 = arg0;
-    let obj = sku(callback[10]);
-    const sharedValue = obj.useSharedValue(0);
-    let obj1 = sku(callback[10]);
-    const sharedValue1 = obj1.useSharedValue(0);
-    let items = [sharedValue, arg0, sharedValue1];
-    const effect = width.useEffect(() => {
-      let num = 1;
-      if (!closure_0) {
-        let obj = sku(callback[10]);
-        num = obj.withDelay(200, sku(callback[11]).withSpring(1, { duration: 500, dampingRatio: 0.7 }));
-        const obj2 = sku(callback[11]);
-      }
-      const result = sharedValue.set(num);
-      let num5 = 1;
-      if (!closure_0) {
-        const obj3 = sku(callback[10]);
-        obj = { duration: 200 };
-        num5 = obj3.withDelay(200, sku(callback[12]).withTiming(1, obj));
-        const obj4 = sku(callback[12]);
-      }
-      const result1 = sharedValue1.set(num5);
-    }, items);
-    obj = {};
-    const fn = function o() {
-      let obj = { opacity: sku(callback[10]).interpolate(sharedValue.get(), [0, 1], [0.1, 1]) };
-      obj = {};
-      const obj2 = sku(callback[10]);
-      obj.scale = sku(callback[10]).interpolate(sharedValue.get(), [0, 1], [0, 1]);
-      const items = [obj];
-      obj.transform = items;
-      return obj;
-    };
-    obj = { interpolate: sku(callback[10]).interpolate, springInput: sharedValue };
-    fn.__closure = obj;
-    fn.__workletHash = 7750024112371;
-    fn.__initData = outer1_18;
-    obj.previewViewStyle = sku(callback[10]).useAnimatedStyle(fn);
-    let obj4 = sku(callback[10]);
-    const fn2 = function l() {
-      let obj = { opacity: sku(callback[10]).interpolate(sharedValue.get(), [0, 1], [0, 1]) };
-      obj = {};
-      const obj2 = sku(callback[10]);
-      obj.scale = sku(callback[10]).interpolate(sharedValue.get(), [0, 1], [0.75, 1]);
-      const items = [obj];
-      obj.transform = items;
-      return obj;
-    };
-    obj1 = { interpolate: sku(callback[10]).interpolate, springInput: sharedValue };
-    fn2.__closure = obj1;
-    fn2.__workletHash = 3400602564931;
-    fn2.__initData = outer1_19;
-    obj.textViewStyle = sku(callback[10]).useAnimatedStyle(fn2);
-    const obj6 = sku(callback[10]);
-    const fn3 = function c() {
-      const obj = { opacity: sku(callback[10]).interpolate(sharedValue1.get(), [0, 1], [0.5, 0]) };
-      return obj;
-    };
-    const obj8 = sku(callback[10]);
-    fn3.__closure = { interpolate: sku(callback[10]).interpolate, linearInput: sharedValue1 };
-    fn3.__workletHash = 4092396015860;
-    fn3.__initData = outer1_20;
-    obj.curtainViewStyle = obj8.useAnimatedStyle(fn3);
+  const tmp = createCacheKey();
+  c3 = tmp;
+  width = importDefault(callback[14])().width;
+  let obj = stateFromStores(callback[15]);
+  let items = [maybeApplyNoTextColorForLightCustomTheme];
+  stateFromStores = obj.useStateFromStores(items, () => useReducedMotion.useReducedMotion);
+  importDefault = undefined;
+  callback = undefined;
+  let obj1 = stateFromStores(callback[10]);
+  const sharedValue = obj1.useSharedValue(0);
+  importDefault = sharedValue;
+  let obj2 = stateFromStores(callback[10]);
+  const sharedValue1 = obj2.useSharedValue(0);
+  callback = sharedValue1;
+  const items1 = [sharedValue, stateFromStores, sharedValue1];
+  const effect = width.useEffect(() => {
+    let num = 1;
+    if (!stateFromStores) {
+      const obj = stateFromStores(callback[10]);
+      num = obj.withDelay(200, stateFromStores(callback[11]).withSpring(1, { duration: 500, dampingRatio: 0.7 }));
+      const obj2 = stateFromStores(callback[11]);
+    }
+    const result = store.set(num);
+    let num3 = 1;
+    if (!stateFromStores) {
+      const obj3 = stateFromStores(callback[10]);
+      num3 = obj3.withDelay(200, stateFromStores(callback[12]).withTiming(1, { duration: 200 }));
+      const obj4 = stateFromStores(callback[12]);
+    }
+    const result1 = callback.set(num3);
+  }, items1);
+  let obj3 = stateFromStores(callback[10]);
+  const fn = function o() {
+    let obj = { opacity: null, transform: null };
+    obj[0] = stateFromStores(callback[10]).interpolate(store.get(), [0, 1], [0.1, 1]);
+    obj = { scale: null };
+    const obj2 = stateFromStores(callback[10]);
+    obj[0] = stateFromStores(callback[10]).interpolate(store.get(), [0, 1], [0, 1]);
+    const items = [obj];
+    obj[1] = items;
     return obj;
-  })(obj.useStateFromStores(items, () => outer1_8.useReducedMotion)));
+  };
+  obj = { interpolate: stateFromStores(callback[10]).interpolate, springInput: sharedValue };
+  fn.__closure = obj;
+  fn.__workletHash = 7750024112371;
+  fn.__initData = closure_18;
+  const animatedStyle = obj3.useAnimatedStyle(fn);
+  let obj5 = stateFromStores(callback[10]);
+  const fn2 = function c() {
+    let obj = { opacity: null, transform: null };
+    obj[0] = stateFromStores(callback[10]).interpolate(store.get(), [0, 1], [0, 1]);
+    obj = { scale: null };
+    const obj2 = stateFromStores(callback[10]);
+    obj[0] = stateFromStores(callback[10]).interpolate(store.get(), [0, 1], [0.75, 1]);
+    const items = [obj];
+    obj[1] = items;
+    return obj;
+  };
+  obj = { interpolate: stateFromStores(callback[10]).interpolate, springInput: sharedValue };
+  fn2.__closure = obj;
+  fn2.__workletHash = 3400602564931;
+  fn2.__initData = closure_19;
+  const animatedStyle1 = obj5.useAnimatedStyle(fn2);
+  let obj7 = stateFromStores(callback[10]);
+  const fn3 = function l() {
+    const obj = { opacity: null };
+    obj[0] = stateFromStores(callback[10]).interpolate(callback.get(), [0, 1], [0.5, 0]);
+    return obj;
+  };
+  obj1 = { interpolate: stateFromStores(callback[10]).interpolate, linearInput: sharedValue1 };
+  fn3.__closure = obj1;
+  fn3.__workletHash = 4092396015860;
+  fn3.__initData = closure_20;
+  const items2 = [sku];
+  const animatedStyle2 = obj7.useAnimatedStyle(fn3);
   const memo = width.useMemo(() => {
-    let str = sku(callback[16]).getCardBackgroundImageURL(sku);
-    if (null == str) {
-      str = sku(callback[16]).getCardImageURL(sku);
-      const obj2 = sku(callback[16]);
+    let str = stateFromStores(callback[16]).getCardBackgroundImageURL(stateFromStores);
+    if (str == null) {
+      str = stateFromStores(callback[16]).getCardImageURL(stateFromStores);
+      const tmpResult = stateFromStores(callback[16]);
     }
     str = undefined;
-    if (null != str) {
+    if (str != null) {
       str = str.toString();
     }
     return str;
-  }, items1);
-  const items2 = [width];
-  const memo1 = width.useMemo(() => ({ width }), items2);
+  }, items2);
+  const items3 = [width];
+  const memo1 = width.useMemo(() => ({ width }), items3);
   importDefault = width.useRef(closure_21);
   callback = width.useCallback(() => {
-    const arr = tmp(ref.current);
+    const arr = _undefined(store.current);
     const first = arr[0];
     const substr = arr.slice(1);
     if (null != first) {
       if (0 === substr.length) {
-        const result = sku(callback[13]).triggerHapticFeedback(sku(callback[13]).HapticFeedbackTypes.IMPACT_HEAVY);
-        const obj3 = sku(callback[13]);
+        const result = stateFromStores(callback[13]).triggerHapticFeedback(stateFromStores(callback[13]).HapticFeedbackTypes.IMPACT_HEAVY);
+        const obj3 = stateFromStores(callback[13]);
       }
       if (null != first) {
         const _setTimeout = setTimeout;
         const timerId = setTimeout(callback, first);
       }
-      ref.current = substr;
+      store.current = substr;
     }
     if (substr.length >= outer1_21.length / 2) {
-      const result1 = sku(callback[13]).triggerHapticFeedback(sku(callback[13]).HapticFeedbackTypes.IMPACT_LIGHT);
-      const obj2 = sku(callback[13]);
+      const result1 = stateFromStores(callback[13]).triggerHapticFeedback(stateFromStores(callback[13]).HapticFeedbackTypes.IMPACT_LIGHT);
+      const obj2 = stateFromStores(callback[13]);
     } else {
-      const result2 = sku(callback[13]).triggerHapticFeedback(sku(callback[13]).HapticFeedbackTypes.IMPACT_MEDIUM);
-      const obj = sku(callback[13]);
+      const result2 = stateFromStores(callback[13]).triggerHapticFeedback(stateFromStores(callback[13]).HapticFeedbackTypes.IMPACT_MEDIUM);
+      const obj = stateFromStores(callback[13]);
     }
   }, []);
-  const items3 = [callback];
-  let effect = width.useEffect(() => {
+  const items4 = [callback];
+  const effect1 = width.useEffect(() => {
     callback();
     return () => {
-      outer1_1.current = [];
+      closure_1.current = [];
     };
-  }, items3);
-  const effect1 = width.useEffect(() => {
-    sku(callback[17]).lockOrientation(outer1_12.PORTRAIT);
+  }, items4);
+  const effect2 = width.useEffect(() => {
+    stateFromStores(callback[17]).lockOrientation(constants.PORTRAIT);
     return () => {
-      const result = sku(callback[17]).restoreDefaultOrientation();
+      const result = callback(table[17]).restoreDefaultOrientation();
     };
   }, []);
-  obj = { style: items4 };
-  items4 = [tmp.root, memo1];
-  let tmp10 = null != memo;
-  if (tmp10) {
-    obj = {};
-    let obj1 = { uri: memo };
-    obj.source = obj1;
-    obj.style = tmp.backdropImage;
-    obj.blurRadius = 4;
-    obj.resizeMode = "cover";
-    tmp10 = callback(closure_5, obj);
+  obj2 = { style: items5, children: null };
+  items5 = [tmp.root, memo1];
+  let tmp19 = null != memo;
+  if (tmp19) {
+    obj3 = { source: null, style: null, blurRadius: 4, resizeMode: "cover" };
+    let obj4 = { uri: null };
+    obj4[0] = memo;
+    obj3[0] = obj4;
+    obj3[1] = tmp.backdropImage;
+    tmp19 = callback(closure_5, obj3);
   }
-  const items5 = [tmp10, callback(importDefault(callback[18]), { style: tmp.backdropGradient, start: constants.START, end: constants.END, locations: [0.4, 0.75, 1], colors: ["rgba(0,0,0,0)", "rgba(0,0,0,0.6)", "#000000"] }), , ];
-  let obj3 = { style: tmp.main, top: true, bottom: true, left: true, right: true };
-  let obj4 = { style: tmp.header };
-  const obj5 = {
+  const items6 = [tmp19, , , ];
+  obj5 = { style: tmp.backdropGradient, start: constants.START, end: constants.END, locations: [0.4, 0.75, 1], colors: ["rgba(0,0,0,0)", "rgba(0,0,0,0.6)", "#000000"] };
+  items6[1] = callback(importDefault(callback[18]), obj5);
+  const obj6 = { style: tmp.main, top: true, bottom: true, left: true, right: true, children: null };
+  obj7 = { style: tmp.header, children: null };
+  const obj8 = {
     onPress: onClose,
     backImage() {
-      return outer1_14(sku(callback[21]).XSmallIcon, { size: "lg", style: tmp.closeButtonIcon });
-    }
+      return outer1_14(stateFromStores(callback[21]).XSmallIcon, { size: "lg", style: _undefined.closeButtonIcon });
+    },
+    accessibilityLabel: null,
+    labelVisible: false
   };
-  const intl = sku(callback[22]).intl;
-  obj5.accessibilityLabel = intl.string(sku(callback[22]).t.cpT0Cq);
-  obj5.labelVisible = false;
-  obj4.children = callback(sku(callback[20]).HeaderBackButton, obj5);
-  const items6 = [callback(closure_7, obj4), , ];
-  let obj6 = { style: { flex: 1 }, contentContainerStyle: tmp.body, alwaysBounceVertical: false };
-  const obj7 = { style: items7 };
-  items7 = [tmp.preview, previewViewStyle];
-  obj7.children = callback(importDefault(callback[23]), { sku, size: 250 });
-  const items8 = [callback(importDefault(callback[10]).View, obj7), ];
-  let obj8 = { style: items9 };
-  items9 = [tmp.messages, textViewStyle];
-  const obj9 = { variant: "heading-xl/semibold", color: "text-overlay-light", style: tmp.title, children: title };
-  const items10 = [callback(sku(callback[24]).Text, obj9), ];
-  const obj10 = { variant: "text-md/medium", color: "text-overlay-light", style: tmp.description, children: body };
-  items10[1] = callback(sku(callback[24]).Text, obj10);
-  obj8.children = items10;
-  items8[1] = callback2(importDefault(callback[10]).View, obj8);
-  obj6.children = items8;
-  items6[1] = callback2(closure_6, obj6);
-  const obj11 = { style: tmp.footer };
-  let tmp16 = null != finePrint;
-  if (tmp16) {
-    const obj12 = { variant: "text-xs/normal", color: "text-muted", style: tmp.finePrint, children: finePrint };
-    tmp16 = callback(sku(callback[24]).Text, obj12);
+  const intl = tmp4(tmp3[22]).intl;
+  obj8[2] = intl.string(stateFromStores(callback[22]).t.cpT0Cq);
+  obj7[1] = callback(stateFromStores(callback[20]).HeaderBackButton, obj8);
+  const items7 = [callback(closure_7, obj7), , ];
+  const obj9 = { style: { flex: 1 }, contentContainerStyle: tmp.body, alwaysBounceVertical: false, children: null };
+  const obj10 = { style: items8, children: null };
+  items8 = [tmp.preview, animatedStyle];
+  obj10[1] = callback(importDefault(callback[23]), { sku, size: 250 });
+  const items9 = [callback(importDefault(callback[10]).View, obj10), ];
+  const obj11 = { style: items10, children: null };
+  items10 = [tmp.messages, animatedStyle1];
+  const items11 = [callback(stateFromStores(callback[24]).Text, { variant: "heading-xl/semibold", color: "text-overlay-light", style: tmp.title, children: title }), callback(stateFromStores(callback[24]).Text, { variant: "text-md/medium", color: "text-overlay-light", style: tmp.description, children: body })];
+  obj11[1] = items11;
+  items9[1] = closure_15(importDefault(callback[10]).View, obj11);
+  obj9[3] = items9;
+  items7[1] = closure_15(closure_6, obj9);
+  const obj14 = { style: tmp.footer, children: null };
+  let tmp22Result = null != finePrint;
+  if (tmp22Result) {
+    const obj15 = { variant: "text-xs/normal", color: "text-muted", style: null, children: null };
+    obj15[2] = tmp.finePrint;
+    obj15[3] = finePrint;
+    tmp22Result = tmp22(tmp4(tmp3[24]).Text, obj15);
   }
-  const items11 = [tmp16, ];
-  const obj13 = { style: tmp.cta };
-  const obj14 = {};
-  if (null != onCtaPress) {
-    onClose = onCtaPress;
+  const items12 = [tmp22Result, ];
+  const obj16 = { style: tmp.cta, children: null };
+  if (onCtaPress == null) {
+    onCtaPress = onClose;
   }
-  obj14.onPress = onClose;
-  if (null == ctaLabel) {
-    const intl2 = sku(callback[22]).intl;
-    ctaLabel = intl2.string(sku(callback[22]).t.cpT0Cq);
+  const obj17 = { onPress: onCtaPress, text: null, icon: null, loading: null, size: "lg", grow: true };
+  if (ctaLabel == null) {
+    const intl2 = tmp4(tmp3[22]).intl;
+    ctaLabel = intl2.string(tmp4(tmp3[22]).t.cpT0Cq);
   }
-  obj14.text = ctaLabel;
-  obj14.icon = ctaIcon;
-  obj14.loading = ctaLoading;
-  obj14.size = "lg";
-  obj14.grow = true;
-  obj13.children = callback(sku(callback[25]).Button, obj14);
-  items11[1] = callback(closure_7, obj13);
-  obj11.children = items11;
-  items6[2] = callback2(closure_7, obj11);
-  obj3.children = items6;
-  items5[2] = callback2(sku(callback[19]).SafeAreaPaddingView, obj3);
-  const items12 = [tmp.curtain, curtainViewStyle];
-  items5[3] = callback(importDefault(callback[10]).View, { style: items12, pointerEvents: "none" });
-  obj.children = items5;
-  return callback2(closure_7, obj);
+  obj17[1] = ctaLabel;
+  obj17[2] = ctaIcon;
+  obj17[3] = ctaLoading;
+  obj16[1] = callback(stateFromStores(callback[25]).Button, obj17);
+  items12[1] = callback(closure_7, obj16);
+  obj14[1] = items12;
+  items7[2] = closure_15(closure_7, obj14);
+  obj6[5] = items7;
+  items6[2] = closure_15(stateFromStores(callback[19]).SafeAreaPaddingView, obj6);
+  const items13 = [tmp.curtain, animatedStyle2];
+  items6[3] = callback(importDefault(callback[10]).View, { style: items13, pointerEvents: "none" });
+  obj2[1] = items6;
+  return closure_15(closure_7, obj2);
 }
-({ Image: closure_5, ScrollView: closure_6, View: closure_7 } = get_ActivityIndicator);
-({ AnalyticEvents: closure_11, Orientation: closure_12, VerticalGradient: closure_13 } = ME);
+({ Image: c5, ScrollView: closure_6, View: error } = get_ActivityIndicator);
+({ AnalyticEvents: unpackModuleId, Orientation: closure_12, VerticalGradient: map1 } = ME);
 ({ jsx: closure_14, jsxs: closure_15 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { flex: 1, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BLACK };
-_createForOfIteratorHelperLoose.root = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.backdropImage = { position: "absolute", inset: 0, opacity: 0.45 };
-_createForOfIteratorHelperLoose.backdropGradient = { position: "absolute", inset: 0 };
-let obj1 = { position: "absolute", inset: 0, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BLACK };
-_createForOfIteratorHelperLoose.curtain = obj1;
-_createForOfIteratorHelperLoose.main = { flex: 1 };
-let obj2 = { flexDirection: "row", justifyContent: "flex-start", alignItems: "center", paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16 };
-_createForOfIteratorHelperLoose.header = obj2;
-_createForOfIteratorHelperLoose.closeButtonIcon = { tintColor: require("_createForOfIteratorHelperLoose").colors.WHITE };
-_createForOfIteratorHelperLoose.body = { flexGrow: 1, flexDirection: "column", justifyContent: "center" };
-_createForOfIteratorHelperLoose.preview = { flexDirection: "row", justifyContent: "center", alignItems: "center" };
-let obj4 = { paddingTop: require("_createForOfIteratorHelperLoose").space.PX_24, flexDirection: "column", alignItems: "center", justifyContent: "flex-start", gap: require("_createForOfIteratorHelperLoose").space.PX_8 };
-_createForOfIteratorHelperLoose.messages = obj4;
-let obj3 = { tintColor: require("_createForOfIteratorHelperLoose").colors.WHITE };
-_createForOfIteratorHelperLoose.title = { textAlign: "center", marginHorizontal: require("_createForOfIteratorHelperLoose").space.PX_32 };
-let obj5 = { textAlign: "center", marginHorizontal: require("_createForOfIteratorHelperLoose").space.PX_32 };
-_createForOfIteratorHelperLoose.description = { textAlign: "center", marginHorizontal: require("_createForOfIteratorHelperLoose").space.PX_32 };
-let obj6 = { textAlign: "center", marginHorizontal: require("_createForOfIteratorHelperLoose").space.PX_32 };
-_createForOfIteratorHelperLoose.footer = { marginBottom: require("_createForOfIteratorHelperLoose").space.PX_16 };
-let obj7 = { marginBottom: require("_createForOfIteratorHelperLoose").space.PX_16 };
-_createForOfIteratorHelperLoose.cta = { marginHorizontal: require("_createForOfIteratorHelperLoose").space.PX_24 };
-let obj8 = { marginHorizontal: require("_createForOfIteratorHelperLoose").space.PX_24 };
-_createForOfIteratorHelperLoose.finePrint = { textAlign: "center", marginHorizontal: require("_createForOfIteratorHelperLoose").space.PX_24, marginBottom: require("_createForOfIteratorHelperLoose").space.PX_12 };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-let obj10 = {};
-let obj9 = { textAlign: "center", marginHorizontal: require("_createForOfIteratorHelperLoose").space.PX_24, marginBottom: require("_createForOfIteratorHelperLoose").space.PX_12 };
-obj10.linkAccountIcon = { marginRight: require("_createForOfIteratorHelperLoose").space.PX_4 };
-let closure_17 = _createForOfIteratorHelperLoose.createStyles(obj10);
+createCacheKey = { root: null, backdropImage: null, backdropGradient: null, curtain: null, main: null, header: null, closeButtonIcon: null, body: null, preview: null, messages: null, title: null, description: null, footer: null, cta: null, finePrint: null };
+createCacheKey = { flex: 1, backgroundColor: require("Themes").colors.BLACK };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { position: "absolute", inset: 0, opacity: 0.45 };
+createCacheKey[2] = { position: "absolute", inset: 0 };
+createCacheKey[3] = { position: "absolute", inset: 0, backgroundColor: require("Themes").colors.BLACK };
+createCacheKey[4] = { flex: 1 };
+let obj1 = { position: "absolute", inset: 0, backgroundColor: require("Themes").colors.BLACK };
+createCacheKey[5] = { flexDirection: "row", justifyContent: "flex-start", alignItems: "center", paddingHorizontal: require("Themes").space.PX_16 };
+let obj2 = { flexDirection: "row", justifyContent: "flex-start", alignItems: "center", paddingHorizontal: require("Themes").space.PX_16 };
+createCacheKey[6] = { tintColor: require("Themes").colors.WHITE };
+createCacheKey[7] = { flexGrow: 1, flexDirection: "column", justifyContent: "center" };
+createCacheKey[8] = { flexDirection: "row", justifyContent: "center", alignItems: "center" };
+let obj3 = { tintColor: require("Themes").colors.WHITE };
+createCacheKey[9] = { paddingTop: require("Themes").space.PX_24, flexDirection: "column", alignItems: "center", justifyContent: "flex-start", gap: require("Themes").space.PX_8 };
+let obj4 = { paddingTop: require("Themes").space.PX_24, flexDirection: "column", alignItems: "center", justifyContent: "flex-start", gap: require("Themes").space.PX_8 };
+createCacheKey[10] = { textAlign: "center", marginHorizontal: require("Themes").space.PX_32 };
+let obj5 = { textAlign: "center", marginHorizontal: require("Themes").space.PX_32 };
+createCacheKey[11] = { textAlign: "center", marginHorizontal: require("Themes").space.PX_32 };
+let obj6 = { textAlign: "center", marginHorizontal: require("Themes").space.PX_32 };
+createCacheKey[12] = { marginBottom: require("Themes").space.PX_16 };
+let obj7 = { marginBottom: require("Themes").space.PX_16 };
+createCacheKey[13] = { marginHorizontal: require("Themes").space.PX_24 };
+let obj8 = { marginHorizontal: require("Themes").space.PX_24 };
+createCacheKey[14] = { textAlign: "center", marginHorizontal: require("Themes").space.PX_24, marginBottom: require("Themes").space.PX_12 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let obj10 = { linkAccountIcon: null };
+let obj9 = { textAlign: "center", marginHorizontal: require("Themes").space.PX_24, marginBottom: require("Themes").space.PX_12 };
+obj10[0] = { marginRight: require("Themes").space.PX_4 };
+let closure_17 = createCacheKey.createStyles(obj10);
 let closure_18 = { code: "function SocialLayerStorefrontPoductPurchaseSuccessModalTsx1(){const{interpolate,springInput}=this.__closure;return{opacity:interpolate(springInput.get(),[0,1],[0.1,1]),transform:[{scale:interpolate(springInput.get(),[0,1],[0,1])}]};}" };
 let closure_19 = { code: "function SocialLayerStorefrontPoductPurchaseSuccessModalTsx2(){const{interpolate,springInput}=this.__closure;return{opacity:interpolate(springInput.get(),[0,1],[0,1]),transform:[{scale:interpolate(springInput.get(),[0,1],[0.75,1])}]};}" };
 let closure_20 = { code: "function SocialLayerStorefrontPoductPurchaseSuccessModalTsx3(){const{interpolate,linearInput}=this.__closure;return{opacity:interpolate(linearInput.get(),[0,1],[0.5,0])};}" };
 let closure_21 = [80, 79, 78, 75, 72, 50, 45, 35, 70];
-let obj11 = { marginRight: require("_createForOfIteratorHelperLoose").space.PX_4 };
+let obj11 = { marginRight: require("Themes").space.PX_4 };
 let result = require("get ActivityIndicator").fileFinishedImporting("modules/slayer_storefront/native/SocialLayerStorefrontPoductPurchaseSuccessModal.tsx");
 
 export const SocialLayerStorefrontProductSelfPurchaseSuccessModal = function SocialLayerStorefrontProductSelfPurchaseSuccessModal(skuId) {
@@ -283,58 +285,63 @@ export const SocialLayerStorefrontProductSelfPurchaseSuccessModal = function Soc
   let orbsReward;
   skuId = skuId.skuId;
   ({ orbsReward, analyticsLocations } = skuId);
+  let stateFromStores;
   let getOrFetchApplication;
   let fetched;
   let hasAlreadyLinked;
   let canStartAuthorization;
   let startAuthorization;
   let memo;
-  let closure_9;
+  let addSku;
   let c10;
   let obj = skuId(stateFromStores[15]);
-  let items = [closure_9];
+  let items = [addSku];
   stateFromStores = obj.useStateFromStores(items, () => ref.get(skuId));
   let obj1 = skuId(stateFromStores[26]);
   let applicationId;
-  if (null != stateFromStores) {
+  if (stateFromStores != null) {
     applicationId = stateFromStores.applicationId;
   }
   getOrFetchApplication = obj1.useGetOrFetchApplication(applicationId);
-  let tmp6 = null;
-  const tmp = callback3();
-  if (null != getOrFetchApplication) {
-    tmp6 = getOrFetchApplication;
+  let tmp9 = getOrFetchApplication;
+  const tmp = callback2();
+  if (getOrFetchApplication == null) {
+    tmp9 = null;
   }
-  const tmp5Result = analyticsLocations(stateFromStores[27])(tmp6);
-  fetched = tmp5Result.fetched;
-  hasAlreadyLinked = tmp5Result.hasAlreadyLinked;
-  canStartAuthorization = tmp5Result.canStartAuthorization;
-  startAuthorization = tmp5Result.startAuthorization;
-  let obj2 = skuId(stateFromStores[28]);
+  const tmp8Result = analyticsLocations(stateFromStores[27])(tmp9);
+  fetched = tmp8Result.fetched;
+  hasAlreadyLinked = tmp8Result.hasAlreadyLinked;
+  canStartAuthorization = tmp8Result.canStartAuthorization;
+  startAuthorization = tmp8Result.startAuthorization;
+  const tmp8 = analyticsLocations(stateFromStores[27]);
   let applicationId1;
-  if (null != stateFromStores) {
+  if (stateFromStores != null) {
     applicationId1 = stateFromStores.applicationId;
   }
-  const items1 = [analyticsLocations];
-  const socialLayerStorefrontMobileAccountLinkingDisabled = obj2.useSocialLayerStorefrontMobileAccountLinkingDisabled(applicationId1);
+  let items1 = [analyticsLocations];
+  const socialLayerStorefrontMobileAccountLinkingDisabled = skuId(stateFromStores[28]).useSocialLayerStorefrontMobileAccountLinkingDisabled(applicationId1);
   memo = fetched.useMemo(() => {
-    const items = [...null != analyticsLocations ? analyticsLocations : [], analyticsLocations(stateFromStores[29]).SLAYER_STOREFRONT_NATIVE_PURCHASE_SUCCESS];
-    return items;
+    let items = analyticsLocations;
+    if (analyticsLocations == null) {
+      items = [];
+    }
+    const items1 = [...items, analyticsLocations(stateFromStores[29]).SLAYER_STOREFRONT_NATIVE_PURCHASE_SUCCESS];
+    return items1;
   }, items1);
-  obj = { analyticsLocations: memo, skuId };
+  obj = { analyticsLocations: memo, skuId, applicationId: null, canStartAuthorization: null };
   let applicationId2;
-  if (null != stateFromStores) {
+  if (stateFromStores != null) {
     applicationId2 = stateFromStores.applicationId;
   }
-  obj.applicationId = applicationId2;
-  obj.canStartAuthorization = canStartAuthorization;
-  closure_9 = fetched.useRef(obj);
+  obj[2] = applicationId2;
+  obj[3] = canStartAuthorization;
+  addSku = fetched.useRef(obj);
   const items2 = [canStartAuthorization];
-  const effect = fetched.useEffect(() => {
+  const effect = obj4.useEffect(() => {
     ref.current.canStartAuthorization = canStartAuthorization;
   }, items2);
   const items3 = [fetched, hasAlreadyLinked];
-  const effect1 = fetched.useEffect(() => {
+  const effect1 = obj4.useEffect(() => {
     let analyticsLocations;
     let applicationId;
     let canStartAuthorization;
@@ -342,149 +349,156 @@ export const SocialLayerStorefrontProductSelfPurchaseSuccessModal = function Soc
     if (fetched) {
       ({ analyticsLocations, skuId, applicationId, canStartAuthorization } = ref.current);
       let obj = analyticsLocations(stateFromStores[30]);
-      obj = { location_stack: analyticsLocations, sku_id: skuId, application_id: applicationId, is_gift: false, is_account_linked: hasAlreadyLinked, can_start_authorization: canStartAuthorization };
+      obj = { location_stack: null, sku_id: null, application_id: null, is_gift: false, is_account_linked: null, can_start_authorization: null };
+      obj[0] = analyticsLocations;
+      obj[1] = skuId;
+      obj[2] = applicationId;
+      obj[4] = hasAlreadyLinked;
+      obj[5] = canStartAuthorization;
       obj.track(outer1_11.SLAYER_STOREFRONT_LINK_ACCOUNT_STEP_VIEWED, obj);
     }
   }, items3);
   const items4 = [startAuthorization, memo, skuId, ];
   let applicationId3;
-  if (null != stateFromStores) {
+  if (stateFromStores != null) {
     applicationId3 = stateFromStores.applicationId;
   }
   items4[3] = applicationId3;
-  const callback = fetched.useCallback(() => {
+  const callback = obj4.useCallback(() => {
     let obj = analyticsLocations(stateFromStores[30]);
-    obj = { location_stack: memo, sku_id: skuId };
+    obj = { location_stack: memo, sku_id: skuId, application_id: null, is_gift: false };
     let applicationId;
-    if (null != stateFromStores) {
+    if (stateFromStores != null) {
       applicationId = stateFromStores.applicationId;
     }
-    obj.application_id = applicationId;
-    obj.is_gift = false;
+    obj[2] = applicationId;
     obj.track(outer1_11.SLAYER_STOREFRONT_ACCOUNT_LINK_CLICKED, obj);
-    obj = { analyticsLocations: memo };
-    startAuthorization(obj);
+    startAuthorization({ analyticsLocations: memo });
   }, items4);
   analyticsLocations(stateFromStores[31])(() => {
     let obj = analyticsLocations(stateFromStores[30]);
-    obj = { location_stack: memo, type: skuId(stateFromStores[32]).SOCIAL_LAYER_STOREFRONT_SELF_PURCHASE_SUCCESS_MODAL_KEY, sku_id: skuId };
+    obj = { location_stack: memo, type: skuId(stateFromStores[32]).SOCIAL_LAYER_STOREFRONT_SELF_PURCHASE_SUCCESS_MODAL_KEY, sku_id: skuId, application_id: null };
     let applicationId;
-    if (null != stateFromStores) {
+    if (stateFromStores != null) {
       applicationId = stateFromStores.applicationId;
     }
-    obj.application_id = applicationId;
+    obj[3] = applicationId;
     obj.track(outer1_11.OPEN_MODAL, obj);
   });
-  let intl = skuId(stateFromStores[22]).intl;
+  let intl = tmp2(tmp3[22]).intl;
   const string = intl.string;
   if (hasAlreadyLinked) {
-    let stringResult = string(skuId(tmp20[22]).t["5glWta"]);
+    let stringResult = string(tmp2(tmp3[22]).t["5glWta"]);
   } else {
-    stringResult = string(analyticsLocations(tmp20[33]).bRPsNX);
+    stringResult = string(tmp7(tmp3[33]).bRPsNX);
   }
-  c10 = tmp23;
-  const items5 = [hasAlreadyLinked, !hasAlreadyLinked && canStartAuthorization && !socialLayerStorefrontMobileAccountLinkingDisabled, , ];
+  let tmp21 = !hasAlreadyLinked;
+  if (!hasAlreadyLinked) {
+    tmp21 = canStartAuthorization;
+  }
+  if (tmp21) {
+    tmp21 = !socialLayerStorefrontMobileAccountLinkingDisabled;
+  }
+  c10 = tmp21;
+  const items5 = [hasAlreadyLinked, tmp21, , ];
   let name;
-  if (null != getOrFetchApplication) {
+  if (getOrFetchApplication != null) {
     name = getOrFetchApplication.name;
   }
   items5[2] = name;
   let name1;
-  if (null != stateFromStores) {
+  if (stateFromStores != null) {
     name1 = stateFromStores.name;
   }
   items5[3] = name1;
   let formatToPlainStringResult;
-  const memo1 = fetched.useMemo(() => {
+  const memo1 = obj4.useMemo(() => {
     if (hasAlreadyLinked) {
       const intl2 = skuId(stateFromStores[22]).intl;
-      let obj = {};
-      let name;
-      if (null != stateFromStores) {
-        name = stateFromStores.name;
+      let str4;
+      if (stateFromStores != null) {
+        str4 = stateFromStores.name;
       }
-      let str4 = "";
-      let str5 = "";
-      if (null != name) {
-        str5 = name;
+      if (str4 == null) {
+        str4 = "";
       }
-      obj.skuName = str5;
-      let name1;
-      if (null != getOrFetchApplication) {
-        name1 = getOrFetchApplication.name;
+      let obj = { skuName: null, applicationName: null };
+      obj[0] = str4;
+      let str5;
+      if (getOrFetchApplication != null) {
+        str5 = getOrFetchApplication.name;
       }
-      if (null != name1) {
-        str4 = name1;
+      if (str5 == null) {
+        str5 = "";
       }
-      obj.applicationName = str4;
+      obj[1] = str5;
       let formatToPlainStringResult = intl2.formatToPlainString(skuId(stateFromStores[22]).t.W2znvX, obj);
     } else {
       const intl = skuId(stateFromStores[22]).intl;
       const formatToPlainString = intl.formatToPlainString;
       if (c10) {
-        obj = {};
-        let name2;
-        if (null != stateFromStores) {
-          name2 = stateFromStores.name;
+        let str2;
+        if (stateFromStores != null) {
+          str2 = stateFromStores.name;
         }
-        let str2 = "";
-        let str3 = "";
-        if (null != name2) {
-          str3 = name2;
+        if (str2 == null) {
+          str2 = "";
         }
-        obj.skuName = str3;
-        let name3;
-        if (null != getOrFetchApplication) {
-          name3 = getOrFetchApplication.name;
+        obj = { skuName: null, applicationName: null };
+        obj[0] = str2;
+        let str3;
+        if (getOrFetchApplication != null) {
+          str3 = getOrFetchApplication.name;
         }
-        if (null != name3) {
-          str2 = name3;
+        if (str3 == null) {
+          str3 = "";
         }
-        obj.applicationName = str2;
-        formatToPlainStringResult = formatToPlainString(tmp2(tmp3[22]).t["EgCl+Q"], obj);
+        obj[1] = str3;
+        formatToPlainStringResult = formatToPlainString(skuId(stateFromStores[22]).t["EgCl+Q"], obj);
       } else {
-        obj = {};
-        let name4;
-        if (null != getOrFetchApplication) {
-          name4 = getOrFetchApplication.name;
+        let str;
+        if (getOrFetchApplication != null) {
+          str = getOrFetchApplication.name;
         }
-        let str = "";
-        if (null != name4) {
-          str = name4;
+        if (str == null) {
+          str = "";
         }
-        obj.applicationName = str;
-        formatToPlainStringResult = formatToPlainString(analyticsLocations(tmp3[33]).eNNnIG, obj);
+        obj = { applicationName: null };
+        obj[0] = str;
+        formatToPlainStringResult = formatToPlainString(analyticsLocations(stateFromStores[33]).eNNnIG, obj);
       }
-      tmp2 = skuId;
     }
     return formatToPlainStringResult;
   }, items5);
   if (!hasAlreadyLinked) {
-    let intl2 = skuId(stateFromStores[22]).intl;
-    obj = { numDays: c10 };
-    formatToPlainStringResult = intl2.formatToPlainString(skuId(stateFromStores[22]).t.TTj7ME, obj);
+    let intl2 = tmp2(tmp3[22]).intl;
+    obj = { numDays: null };
+    obj[0] = c10;
+    formatToPlainStringResult = intl2.formatToPlainString(tmp2(tmp3[22]).t.TTj7ME, obj);
   }
-  obj1 = { sku: stateFromStores, title: stringResult, body: memo1, finePrint: formatToPlainStringResult };
+  obj1 = { sku: stateFromStores, title: stringResult, body: memo1, finePrint: formatToPlainStringResult, ctaLabel: null, ctaIcon: null, ctaLoading: null, onCtaPress: null, onClose: null };
   let stringResult1;
-  if (!hasAlreadyLinked && canStartAuthorization && !socialLayerStorefrontMobileAccountLinkingDisabled) {
-    const intl3 = skuId(stateFromStores[22]).intl;
-    stringResult1 = intl3.string(skuId(stateFromStores[22]).t["VDAhr+"]);
+  if (tmp21) {
+    const intl3 = tmp2(tmp3[22]).intl;
+    stringResult1 = intl3.string(tmp2(tmp3[22]).t["VDAhr+"]);
   }
-  obj1.ctaLabel = stringResult1;
-  let tmp37;
-  if (!hasAlreadyLinked && canStartAuthorization && !socialLayerStorefrontMobileAccountLinkingDisabled) {
-    obj2 = { size: "xs", color: analyticsLocations(stateFromStores[9]).colors.WHITE, style: tmp.linkAccountIcon };
-    tmp37 = callback(skuId(stateFromStores[34]).ExperimentalGameControllerLinkIcon, obj2);
+  obj1[4] = stringResult1;
+  let tmp27Result;
+  if (tmp21) {
+    const obj2 = { size: "xs", color: null, style: null };
+    obj2[1] = tmp7(tmp3[9]).colors.WHITE;
+    obj2[2] = tmp.linkAccountIcon;
+    tmp27Result = tmp27(tmp2(tmp3[34]).ExperimentalGameControllerLinkIcon, obj2);
   }
-  obj1.ctaIcon = tmp37;
-  obj1.ctaLoading = !fetched;
-  let tmp42;
-  if (!hasAlreadyLinked && canStartAuthorization && !socialLayerStorefrontMobileAccountLinkingDisabled) {
-    tmp42 = callback;
+  obj1[5] = tmp27Result;
+  obj1[6] = !fetched;
+  let tmp31;
+  if (tmp21) {
+    tmp31 = callback;
   }
-  obj1.onCtaPress = tmp42;
-  obj1.onClose = skuId.onClose;
-  return callback(PurchaseSuccessModalBase, obj1);
+  obj1[7] = tmp31;
+  obj1[8] = skuId.onClose;
+  return closure_14(PurchaseSuccessModalBase, obj1);
 };
 export const SocialLayerStorefrontProductGiftPurchaseSuccessModal = function SocialLayerStorefrontProductGiftPurchaseSuccessModal(analyticsLocations) {
   let orbsReward;
@@ -492,27 +506,33 @@ export const SocialLayerStorefrontProductGiftPurchaseSuccessModal = function Soc
   let require;
   ({ skuId: require, orbsReward, recipient } = analyticsLocations);
   analyticsLocations = analyticsLocations.analyticsLocations;
+  let stateFromStores;
+  let React;
   let obj = require(analyticsLocations[15]);
-  let items = [closure_9];
-  const stateFromStores = obj.useStateFromStores(items, () => outer1_9.get(closure_0));
-  const items1 = [analyticsLocations];
+  let items = [addSku];
+  stateFromStores = obj.useStateFromStores(items, () => outer1_9.get(closure_0));
+  let items1 = [analyticsLocations];
   React = React.useMemo(() => {
-    const items = [...null != analyticsLocations ? analyticsLocations : [], recipient(analyticsLocations[29]).SLAYER_STOREFRONT_NATIVE_PURCHASE_SUCCESS];
-    return items;
+    let items = analyticsLocations;
+    if (analyticsLocations == null) {
+      items = [];
+    }
+    const items1 = [...items, recipient(analyticsLocations[29]).SLAYER_STOREFRONT_NATIVE_PURCHASE_SUCCESS];
+    return items1;
   }, items1);
   recipient(analyticsLocations[31])(() => {
     let obj = recipient(analyticsLocations[30]);
-    obj = { location_stack: useMountLayoutEffect, type: outer1_0(analyticsLocations[32]).SOCIAL_LAYER_STOREFRONT_GIFT_PURCHASE_SUCCESS_MODAL_KEY, sku_id: closure_0 };
+    obj = { location_stack: SafeAreaPaddingView, type: outer1_0(analyticsLocations[32]).SOCIAL_LAYER_STOREFRONT_GIFT_PURCHASE_SUCCESS_MODAL_KEY, sku_id: closure_0, application_id: null };
     let applicationId;
-    if (null != stateFromStores) {
+    if (stateFromStores != null) {
       applicationId = stateFromStores.applicationId;
     }
-    obj.application_id = applicationId;
+    obj[3] = applicationId;
     obj.track(outer1_11.OPEN_MODAL, obj);
   });
   let intl = require(analyticsLocations[22]).intl;
   let name;
-  if (null != stateFromStores) {
+  if (stateFromStores != null) {
     name = stateFromStores.name;
   }
   const items2 = [name, recipient];
@@ -521,18 +541,16 @@ export const SocialLayerStorefrontProductGiftPurchaseSuccessModal = function Soc
     title: intl.string(require(analyticsLocations[22]).t["5glWta"]),
     body: React.useMemo(() => {
       const intl = outer1_0(analyticsLocations[22]).intl;
-      const obj = {};
       let name;
-      if (null != stateFromStores) {
+      if (stateFromStores != null) {
         name = stateFromStores.name;
       }
-      obj.itemName = name;
-      const name1 = recipient(analyticsLocations[35]).getName(recipient);
-      let str = "your recipient";
-      if (null != name1) {
-        str = name1;
+      const obj = { itemName: name, giftRecipient: null };
+      let str = recipient(analyticsLocations[35]).getName(recipient);
+      if (str == null) {
+        str = "your recipient";
       }
-      obj.giftRecipient = str;
+      obj[1] = str;
       return intl.formatToPlainString(outer1_0(analyticsLocations[22]).t["2VjPTw"], obj);
     }, items2),
     onClose: analyticsLocations.onClose

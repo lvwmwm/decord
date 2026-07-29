@@ -1,33 +1,20 @@
-// Module ID: 4350
-// Function ID: 37943
-// Name: getMediaPostEmbedChannelPath
-// Dependencies: [1838, 3802, 1850, 653, 4351, 1212, 4354, 1392, 1360, 4355, 4149, 4356, 2]
-// Exports: canUseMediaPostEmbed, getMediaPostEmbedChannelId, getMediaPostEmbedCommonData
+// Module ID: 4375
+// Function ID: 4376
+// Name: getMediaPostEmbedCommonData
+// Dependencies: [1862, 3826, 1874, 676, 4376, 1236, 4379, 1416, 1384, 4380, 4173, 4381, 2]
+// Exports: canUseMediaPostEmbed, getMediaPostEmbedChannelId, getMediaPostEmbedChannelPath, getMediaPostEmbedCommonData
 
-// Module 4350 (getMediaPostEmbedChannelPath)
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_5 from "_isNativeReflectConstruct";
+// Module 4375 (getMediaPostEmbedCommonData)
+import createGuildRecordFromRust from "createGuildRecordFromRust";
+import upsertRelationship from "upsertRelationship";
+import mergeGuildAvatar from "mergeGuildAvatar";
 import ME from "ME";
 
 let closure_6;
-let closure_7;
+let error;
 const require = arg1;
-function getMediaPostEmbedChannelPath(url) {
-  if (null != url) {
-    const parseURLSafelyResult = require(4149) /* _createForOfIteratorHelperLoose */.parseURLSafely(url);
-    if (null != parseURLSafelyResult) {
-      const result = require(4149) /* _createForOfIteratorHelperLoose */.remainingPathFromDiscordHostMatch(parseURLSafelyResult);
-      if (null != result) {
-        return require(4356) /* canViewChannel */.tryParseChannelPath(result);
-      }
-      const obj2 = require(4149) /* _createForOfIteratorHelperLoose */;
-    }
-    const obj = require(4149) /* _createForOfIteratorHelperLoose */;
-  }
-}
-({ GuildFeatures: closure_6, MessageAttachmentFlags: closure_7 } = ME);
-let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/media_channel/MediaPostEmbedUtils.tsx");
+({ GuildFeatures: closure_6, MessageAttachmentFlags: error } = ME);
+let result = require("mergeGuildAvatar").fileFinishedImporting("modules/media_channel/MediaPostEmbedUtils.tsx");
 
 export const getMediaPostEmbedCommonData = function getMediaPostEmbedCommonData(arg0) {
   let canAccess;
@@ -48,13 +35,13 @@ export const getMediaPostEmbedCommonData = function getMediaPostEmbedCommonData(
     return null;
   } else {
     let has_media_attachment = !canAccess;
-    const thumbnailImage = require(4351) /* MAX_THUMBNAIL_COUNT */.getThumbnailImage(mediaPostEmbedData.thumbnail);
-    if (has_media_attachment) {
+    const thumbnailImage = require(4376) /* MAX_THUMBNAIL_COUNT */.getThumbnailImage(mediaPostEmbedData.thumbnail);
+    if (!canAccess) {
       has_media_attachment = mediaPostEmbedData.has_media_attachment;
     }
-    const intl = require(1212) /* getSystemLocale */.intl;
+    const intl = tmp17(1236).intl;
     const string = intl.string;
-    const t = require(1212) /* getSystemLocale */.t;
+    const t = tmp17(1236).t;
     if (canAccess) {
       let stringResult = string(t.UsZEBI);
     } else {
@@ -62,110 +49,130 @@ export const getMediaPostEmbedCommonData = function getMediaPostEmbedCommonData(
     }
     let name;
     if (null != user) {
-      let obj = importDefault(4354);
+      let obj = importDefault(4379);
       name = obj.getName(mediaPostEmbedData.guild_id, mediaPostEmbedData.channel_id, user);
     }
     let avatarURL;
-    if (null != user) {
+    if (user != null) {
       let id;
-      if (null != guild) {
+      if (guild != null) {
         id = guild.id;
       }
       avatarURL = user.getAvatarURL(id, 40);
     }
-    if (!tmp9) {
-      obj = {};
-      ({ guild_id: obj3.id, guild_icon: obj3.icon } = mediaPostEmbedData);
-      obj.size = 40;
-      obj.canAnimate = false;
-      avatarURL = importDefault(1392).getGuildIconURL(obj);
-      const obj2 = importDefault(1392);
+    if (!tmp6) {
+      obj = { id: null, icon: null, size: 40, canAnimate: false };
+      ({ guild_id: obj3[0], guild_icon: obj3[1] } = mediaPostEmbedData);
+      avatarURL = importDefault(1416).getGuildIconURL(obj);
+      const obj2 = importDefault(1416);
     }
     const thumbnail = mediaPostEmbedData.thumbnail;
-    let flag3 = false;
+    let flag = false;
     if (null != thumbnail) {
       ({ height, width } = thumbnail);
-      flag3 = null != height && null != width && height >= width;
-      const tmp12 = null != height && null != width && height >= width;
+      flag = null != height && null != width && height >= width;
+      const tmp8 = null != height && null != width && height >= width;
     }
-    if (flag3) {
-      flag3 = !has_media_attachment;
+    if (flag) {
+      flag = !has_media_attachment;
     }
-    const obj7 = require(4351) /* MAX_THUMBNAIL_COUNT */;
-    tmp9 = null != avatarURL && selectedGuildId === mediaPostEmbedData.guild_id;
+    let tmp17Result = tmp17(1384);
     const thumbnail2 = mediaPostEmbedData.thumbnail;
-    let flags;
-    if (null != thumbnail2) {
-      flags = thumbnail2.flags;
+    let num2;
+    if (thumbnail2 != null) {
+      num2 = thumbnail2.flags;
     }
-    let num7 = 0;
-    if (null != flags) {
-      num7 = flags;
+    if (num2 == null) {
+      num2 = 0;
     }
-    obj = {};
-    const title = mediaPostEmbedData.title;
-    let str = "";
-    const obj4 = require(1360) /* hasFlag */;
-    if (null != title) {
-      str = title;
+    let str = mediaPostEmbedData.title;
+    const obj7 = require(4376) /* MAX_THUMBNAIL_COUNT */;
+    tmp6 = null != avatarURL && selectedGuildId === mediaPostEmbedData.guild_id;
+    if (str == null) {
+      str = "";
     }
-    obj.title = str;
-    obj.subtitle = mediaPostEmbedData.description;
-    obj.ctaText = stringResult;
-    obj.coverImage = thumbnailImage;
+    obj = { title: null, subtitle: null, ctaText: null, coverImage: null, coverImageOverlayText: null, parentChannelId: null, threadId: null, postThread: null, messageId: null, canAccess: null, guildId: null, guildName: null, authorId: null, authorName: null, channelName: null, avatarUrl: null, shouldShowBlurredThumbnailImage: null, shouldContainMediaWithBackground: null, shouldSpoiler: null, obscureAwaitingScan: false, flags: null, contentScanVersion: null };
+    obj[0] = str;
+    obj[1] = mediaPostEmbedData.description;
+    obj[2] = stringResult;
+    obj[3] = thumbnailImage;
     let stringResult1;
     if (has_media_attachment) {
-      const intl2 = require(1212) /* getSystemLocale */.intl;
-      stringResult1 = intl2.string(require(1212) /* getSystemLocale */.t.Yonlia);
+      const intl2 = tmp17(1236).intl;
+      stringResult1 = intl2.string(tmp17(1236).t.Yonlia);
     }
-    obj.coverImageOverlayText = stringResult1;
-    ({ parent_channel_id: obj5.parentChannelId, channel_id: obj5.threadId } = mediaPostEmbedData);
-    obj.postThread = postThread;
-    obj.messageId = mediaPostEmbedData.message_id;
-    obj.canAccess = canAccess;
-    obj.guildId = mediaPostEmbedData.guild_id;
+    obj[4] = stringResult1;
+    ({ parent_channel_id: obj5[5], channel_id: obj5[6] } = mediaPostEmbedData);
+    obj[7] = postThread;
+    obj[8] = mediaPostEmbedData.message_id;
+    obj[9] = canAccess;
+    obj[10] = mediaPostEmbedData.guild_id;
     let name1;
-    if (null != guild) {
+    if (guild != null) {
       name1 = guild.name;
     }
-    if (null == name1) {
+    if (name1 == null) {
       name1 = mediaPostEmbedData.guild_name;
     }
-    obj.guildName = name1;
+    obj[11] = name1;
     let author_id;
-    if (null != mediaPostEmbedData) {
+    if (mediaPostEmbedData != null) {
       author_id = mediaPostEmbedData.author_id;
     }
-    obj.authorId = author_id;
-    obj.authorName = name;
+    obj[12] = author_id;
+    obj[13] = name;
     let channelName;
     if (null != parentChannel) {
-      channelName = require(4355) /* computeDefaultGroupDmNameFromUserIds */.computeChannelName(parentChannel, closure_5, _isNativeReflectConstruct);
-      const obj6 = require(4355) /* computeDefaultGroupDmNameFromUserIds */;
+      tmp17Result = tmp17(4380);
+      channelName = tmp17Result.computeChannelName(parentChannel, mergeGuildAvatar, upsertRelationship);
     }
-    obj.channelName = channelName;
-    obj.avatarUrl = avatarURL;
-    obj.shouldShowBlurredThumbnailImage = has_media_attachment;
-    obj.shouldContainMediaWithBackground = flag3;
-    obj.shouldSpoiler = require(1360) /* hasFlag */.hasFlag(num7, constants2.IS_SPOILER);
-    obj.obscureAwaitingScan = false;
-    ({ flags: obj5.flags, content_scan_version: obj5.contentScanVersion } = mediaPostEmbedData);
+    obj[14] = channelName;
+    obj[15] = avatarURL;
+    obj[16] = has_media_attachment;
+    obj[17] = flag;
+    obj[18] = tmp17Result.hasFlag(num2, constants2.IS_SPOILER);
+    ({ flags: obj5[20], content_scan_version: obj5[21] } = mediaPostEmbedData);
     return obj;
   }
 };
 export const getMediaPostEmbedChannelId = function getMediaPostEmbedChannelId(url) {
-  const tmp = getMediaPostEmbedChannelPath(url);
-  if (null != tmp) {
-    let channelId = tmp.threadId;
-    if (null == channelId) {
-      channelId = tmp.channelId;
+  let tryParseChannelPathResult;
+  if (null != url) {
+    const parseURLSafelyResult = require(4173) /* getPathsFromURL */.parseURLSafely(url);
+    if (null != parseURLSafelyResult) {
+      let tmp2Result = tmp2(4173);
+      const result = tmp2Result.remainingPathFromDiscordHostMatch(parseURLSafelyResult);
+      if (null != result) {
+        tmp2Result = tmp2(4381);
+        tryParseChannelPathResult = tmp2Result.tryParseChannelPath(result);
+      }
     }
-    if (channelId === tmp.messageId) {
+    const obj = require(4173) /* getPathsFromURL */;
+  }
+  if (null != tryParseChannelPathResult) {
+    let channelId = tryParseChannelPathResult.threadId;
+    if (channelId == null) {
+      channelId = tryParseChannelPathResult.channelId;
+    }
+    if (channelId === tryParseChannelPathResult.messageId) {
       return channelId;
     }
   }
 };
-export { getMediaPostEmbedChannelPath };
+export const getMediaPostEmbedChannelPath = function getMediaPostEmbedChannelPath(url) {
+  if (null != url) {
+    const parseURLSafelyResult = require(4173) /* getPathsFromURL */.parseURLSafely(url);
+    if (null != parseURLSafelyResult) {
+      let tmpResult = tmp(4173);
+      const result = tmpResult.remainingPathFromDiscordHostMatch(parseURLSafelyResult);
+      if (null != result) {
+        tmpResult = tmp(4381);
+        return tmpResult.tryParseChannelPath(result);
+      }
+    }
+    const obj = require(4173) /* getPathsFromURL */;
+  }
+};
 export const canUseMediaPostEmbed = function canUseMediaPostEmbed(guildId, isMediaChannel) {
   guild = guild.getGuild(guildId);
   if (null != guild) {

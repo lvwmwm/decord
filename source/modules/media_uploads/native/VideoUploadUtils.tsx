@@ -1,16 +1,77 @@
-// Module ID: 4732
-// Function ID: 41046
-// Name: calculateTargetDimensions
-// Dependencies: [6, 7, 1280, 3, 2]
-// Exports: calculateOptimalBitrate, canSkipVideoTranscode, logEncoderSettings, logSourceMetadata, shouldUseHEVC
+// Module ID: 4754
+// Function ID: 4755
+// Name: toString
+// Dependencies: [1304, 3, 2]
+// Exports: calculateOptimalBitrate, calculateTargetDimensions, canSkipVideoTranscode, logEncoderSettings, logSourceMetadata, shouldUseHEVC
 
-// Module 4732 (calculateTargetDimensions)
-import _classCallCheck from "_classCallCheck";
-import _defineProperties from "_defineProperties";
-import { VideoCompressionQuality } from "_isNativeReflectConstruct";
-import importDefaultResult from "timestamp";
+// Module 4754 (toString)
+import { VideoCompressionQuality } from "CHANNEL_SIDEBAR_WIDTH";
 
-function calculateTargetDimensions(videoMetadata, targetResolution) {
+let closure_1 = new require("timestamp")("VideoUploadUtils.tsx");
+let VideoQualityTarget;
+class VideoQualityTarget {
+  constructor(arg0, arg1, arg2) {
+    obj = Object.create(new.target.prototype);
+    obj.value = global;
+    obj.targetResolution = require;
+    obj.targetBitrate = importDefault;
+    return obj;
+  }
+}
+VideoQualityTarget.prototype["toString"] = function toString() {
+  return this.value;
+};
+let obj = Object.create(VideoQualityTarget.prototype);
+obj.value = "very_low";
+obj.targetResolution = 360;
+obj.targetBitrate = 800000;
+VideoQualityTarget.VERY_LOW = obj;
+obj = Object.create(VideoQualityTarget.prototype);
+obj.value = "low";
+obj.targetResolution = 360;
+obj.targetBitrate = 1200000;
+VideoQualityTarget.LOW = obj;
+const obj1 = Object.create(VideoQualityTarget.prototype);
+obj1.value = "medium";
+obj1.targetResolution = 480;
+obj1.targetBitrate = 1800000;
+VideoQualityTarget.MEDIUM = obj1;
+const obj2 = Object.create(VideoQualityTarget.prototype);
+obj2.value = "high";
+obj2.targetResolution = 720;
+obj2.targetBitrate = 2250000;
+VideoQualityTarget.HIGH = obj2;
+const obj3 = Object.create(VideoQualityTarget.prototype);
+obj3.value = "very_high";
+obj3.targetResolution = 1080;
+obj3.targetBitrate = 7000000;
+VideoQualityTarget.VERY_HIGH = obj3;
+VideoQualityTarget.fromCompressionQuality = function fromCompressionQuality(videoQualitySetting) {
+  if (VideoCompressionQuality.VERY_LOW === videoQualitySetting) {
+    let VERY_HIGH = VideoQualityTarget.VERY_LOW;
+  } else if (tmp.LOW === videoQualitySetting) {
+    VERY_HIGH = VideoQualityTarget.LOW;
+  } else if (tmp.MEDIUM === videoQualitySetting) {
+    VERY_HIGH = VideoQualityTarget.MEDIUM;
+  } else if (tmp.HIGH === videoQualitySetting) {
+    VERY_HIGH = VideoQualityTarget.HIGH;
+  } else if (tmp.VERY_HIGH === videoQualitySetting) {
+    VERY_HIGH = VideoQualityTarget.VERY_HIGH;
+  } else {
+    const _Error = Error;
+    const _HermesInternal = HermesInternal;
+    const error = new Error("Unknown compression quality: " + videoQualitySetting);
+    throw error;
+  }
+  return VERY_HIGH;
+};
+obj = { bitrateFloor: 300000, createHDR: false, frameRate: 30, keyFrameIntervalSeconds: 2, rotationDegrees: 0, skipVideoTranscode: false, targetBitrate: VideoQualityTarget.MEDIUM.targetBitrate, targetHeight: 480, targetWidth: 640, useHEVC: false, videoQuality: VideoQualityTarget.MEDIUM, hevcIsSupported: false, useTranscodedVideoForMovSources: true, transmuxLivePhotos: true, progressUpdateGranularity: 10 };
+const tmp2 = new require("timestamp")("VideoUploadUtils.tsx");
+let result = require("set").fileFinishedImporting("modules/media_uploads/native/VideoUploadUtils.tsx");
+
+export { VideoQualityTarget };
+export const DEFAULT_VIDEO_ENCODING_CONFIG = obj;
+export const calculateTargetDimensions = function calculateTargetDimensions(videoMetadata, targetResolution) {
   const result = videoMetadata.width / videoMetadata.height;
   if (videoMetadata.width > videoMetadata.height) {
     const _Math3 = Math;
@@ -20,81 +81,22 @@ function calculateTargetDimensions(videoMetadata, targetResolution) {
     let rounded1 = bound;
   } else {
     const _Math = Math;
-    const bound1 = Math.min(targetResolution, videoMetadata.width);
+    rounded = Math.min(targetResolution, videoMetadata.width);
     const _Math2 = Math;
-    rounded = bound1;
-    rounded1 = Math.round(bound1 / result);
+    rounded1 = Math.round(rounded / result);
   }
-  const obj = {};
   let sum = rounded;
   if (rounded % 2 !== 0) {
     sum = rounded + 1;
   }
-  obj.width = sum;
+  const obj = { width: sum, height: null };
   let sum1 = rounded1;
   if (rounded1 % 2 !== 0) {
     sum1 = rounded1 + 1;
   }
-  obj.height = sum1;
+  obj[1] = sum1;
   return obj;
-}
-importDefaultResult = new importDefaultResult("VideoUploadUtils.tsx");
-let tmp4 = (() => {
-  class VideoQualityTarget {
-    constructor(arg0, arg1, arg2) {
-      tmp = outer1_1(this, VideoQualityTarget);
-      this.value = arg0;
-      this.targetResolution = arg1;
-      this.targetBitrate = arg2;
-      return;
-    }
-  }
-  const items = [
-    {
-      key: "toString",
-      value() {
-        return this.value;
-      }
-    }
-  ];
-  return callback(VideoQualityTarget, items);
-})();
-let closure_0 = tmp4;
-tmp4 = new tmp4("very_low", 360, 800000);
-tmp4.VERY_LOW = tmp4;
-tmp4 = new tmp4("low", 360, 1200000);
-tmp4.LOW = tmp4;
-tmp4.MEDIUM = new tmp4("medium", 480, 1800000);
-const tmp41 = new tmp4("medium", 480, 1800000);
-tmp4.HIGH = new tmp4("high", 720, 2250000);
-const tmp42 = new tmp4("high", 720, 2250000);
-tmp4.VERY_HIGH = new tmp4("very_high", 1080, 7000000);
-tmp4.fromCompressionQuality = (arg0) => {
-  if (VideoCompressionQuality.VERY_LOW === arg0) {
-    let VERY_HIGH = tmp4.VERY_LOW;
-  } else if (VideoCompressionQuality.LOW === arg0) {
-    VERY_HIGH = tmp4.LOW;
-  } else if (VideoCompressionQuality.MEDIUM === arg0) {
-    VERY_HIGH = tmp4.MEDIUM;
-  } else if (VideoCompressionQuality.HIGH === arg0) {
-    VERY_HIGH = tmp4.HIGH;
-  } else if (VideoCompressionQuality.VERY_HIGH === arg0) {
-    VERY_HIGH = tmp4.VERY_HIGH;
-  } else {
-    const _Error = Error;
-    const _HermesInternal = HermesInternal;
-    const error = new Error("Unknown compression quality: " + arg0);
-    throw error;
-  }
-  return VERY_HIGH;
 };
-let obj = { bitrateFloor: 300000, createHDR: false, frameRate: 30, keyFrameIntervalSeconds: 2, rotationDegrees: 0, skipVideoTranscode: false, targetBitrate: tmp4.MEDIUM.targetBitrate, targetHeight: 480, targetWidth: 640, useHEVC: false, videoQuality: tmp4.MEDIUM, hevcIsSupported: false, useTranscodedVideoForMovSources: true, transmuxLivePhotos: true, progressUpdateGranularity: 10 };
-const tmp43 = new tmp4("very_high", 1080, 7000000);
-let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/media_uploads/native/VideoUploadUtils.tsx");
-
-export const VideoQualityTarget = tmp4;
-export const DEFAULT_VIDEO_ENCODING_CONFIG = obj;
-export { calculateTargetDimensions };
 export const canSkipVideoTranscode = function canSkipVideoTranscode(result, videoMetadata, fileSize, arg3) {
   if (null != fileSize) {
     if (null != arg3) {
@@ -103,67 +105,89 @@ export const canSkipVideoTranscode = function canSkipVideoTranscode(result, vide
       }
     }
   }
-  const size = calculateTargetDimensions(videoMetadata, result.targetResolution);
-  const rounded = Math.round(videoMetadata.width);
-  let tmp4 = !tmp3;
-  if (rounded <= size.width && tmp2 <= size.height) {
-    tmp4 = videoMetadata.bitRate > result.targetBitrate;
+  const targetResolution = result.targetResolution;
+  result = videoMetadata.width / videoMetadata.height;
+  if (videoMetadata.width > videoMetadata.height) {
+    const _Math3 = Math;
+    const bound = Math.min(targetResolution, videoMetadata.height);
+    const _Math4 = Math;
+    let rounded = Math.round(bound * result);
+    let rounded1 = bound;
+  } else {
+    const _Math = Math;
+    rounded = Math.min(targetResolution, videoMetadata.width);
+    const _Math2 = Math;
+    rounded1 = Math.round(rounded / result);
   }
-  if (!tmp4) {
-    tmp4 = null == videoMetadata.format;
+  let sum = rounded;
+  if (rounded % 2 !== 0) {
+    sum = rounded + 1;
   }
-  if (!tmp4) {
-    tmp4 = null === videoMetadata.format.match(/(avc1|hvc1|video\/(avc|hevc))/i);
+  let sum1 = rounded1;
+  if (rounded1 % 2 !== 0) {
+    sum1 = rounded1 + 1;
+  }
+  const rounded2 = Math.round(videoMetadata.width);
+  const tmp11 = rounded2 <= sum && Math.round(videoMetadata.height) <= sum1;
+  let tmp12 = !tmp11;
+  if (tmp11) {
+    tmp12 = videoMetadata.bitRate > result.targetBitrate;
+  }
+  if (!tmp12) {
+    tmp12 = null == videoMetadata.format;
+  }
+  if (!tmp12) {
+    tmp12 = null === videoMetadata.format.match(/(avc1|hvc1|video\/(avc|hevc))/i);
     const str = videoMetadata.format;
   }
-  return !tmp4;
+  return !tmp12;
 };
 export const logSourceMetadata = function logSourceMetadata(format) {
   let str = "unknown";
   if (null != format.format) {
     format = { hvc1: "hvc1 (HEVC)", avc1: "avc1 (H.264)" }[format.format];
-    if (null == format) {
+    if (format == null) {
       format = format.format;
     }
     str = format;
   }
-  importDefaultResult.info("Video Source Metadata:");
-  importDefaultResult.info("- Codec: " + str);
-  importDefaultResult.info("- Dimensions: " + format.width + "x" + format.height);
-  importDefaultResult.info("- Bitrate: " + format.bitRate + " bps");
-  importDefaultResult.info("- Frame Rate: " + format.frameRate + " fps");
+  tmp2.info("Video Source Metadata:");
+  tmp2.info("- Codec: " + str);
+  tmp2.info("- Dimensions: " + format.width + "x" + format.height);
+  tmp2.info("- Bitrate: " + format.bitRate + " bps");
+  tmp2.info("- Frame Rate: " + format.frameRate + " fps");
   let str2 = "No";
   if (format.isHDRContent) {
     str2 = "Yes";
   }
-  importDefaultResult.info(`- HDR: ${str2}`);
-  importDefaultResult.info("- Rotation Degrees: " + format.rotationDegrees);
-  importDefaultResult.info("- Profile: " + format.sourceProfile);
-  importDefaultResult.info("- Level: " + format.sourceLevel);
-  importDefaultResult.info("- Duration: " + format.durationMs + " ms");
+  tmp2.info(`- HDR: ${str2}`);
+  tmp2.info("- Rotation Degrees: " + format.rotationDegrees);
+  tmp2.info("- Profile: " + format.sourceProfile);
+  tmp2.info("- Level: " + format.sourceLevel);
+  tmp2.info("- Duration: " + format.durationMs + " ms");
 };
 export const logEncoderSettings = function logEncoderSettings(videoQuality) {
-  importDefaultResult.info("Encoder Video Quality Settings:");
+  tmp2.info("Encoder Video Quality Settings:");
   let str = videoQuality.videoQuality;
   str = undefined;
-  if (null != str) {
+  if (str != null) {
     str = str.toString();
   }
-  importDefaultResult.info("- Compression Quality: " + str);
+  tmp2.info("- Compression Quality: " + str);
   videoQuality = videoQuality.videoQuality;
   let targetResolution;
-  if (null != videoQuality) {
+  if (videoQuality != null) {
     targetResolution = videoQuality.targetResolution;
   }
-  importDefaultResult.info("- Compression Quality Target Resolution: " + targetResolution + "p");
+  tmp2.info("- Compression Quality Target Resolution: " + targetResolution + "p");
   const videoQuality2 = videoQuality.videoQuality;
   let targetBitrate;
-  if (null != videoQuality2) {
+  if (videoQuality2 != null) {
     targetBitrate = videoQuality2.targetBitrate;
   }
-  importDefaultResult.info("- Compression Quality Max Bitrate: " + targetBitrate + " bps");
-  importDefaultResult.info("Encoder Video Transcoding Settings:");
-  const info = importDefaultResult.info;
+  tmp2.info("- Compression Quality Max Bitrate: " + targetBitrate + " bps");
+  tmp2.info("Encoder Video Transcoding Settings:");
+  const info = obj.info;
   if (videoQuality.skipVideoTranscode) {
     info("- Skip Video Transcode: Yes");
   } else {
@@ -173,47 +197,47 @@ export const logEncoderSettings = function logEncoderSettings(videoQuality) {
     }
     info(`- Codec: ${str2}`);
     const _HermesInternal = HermesInternal;
-    importDefaultResult.info("- Dimensions: " + videoQuality.targetWidth + "x" + videoQuality.targetHeight);
+    obj.info("- Dimensions: " + videoQuality.targetWidth + "x" + videoQuality.targetHeight);
     const _HermesInternal2 = HermesInternal;
-    importDefaultResult.info("- Bitrate: " + videoQuality.targetBitrate + " bps");
+    obj.info("- Bitrate: " + videoQuality.targetBitrate + " bps");
     const _HermesInternal3 = HermesInternal;
-    importDefaultResult.info("- Frame Rate: " + videoQuality.frameRate + " fps");
+    obj.info("- Frame Rate: " + videoQuality.frameRate + " fps");
     const _HermesInternal4 = HermesInternal;
-    importDefaultResult.info("- Key Frame Interval: " + videoQuality.keyFrameIntervalSeconds + " seconds");
+    obj.info("- Key Frame Interval: " + videoQuality.keyFrameIntervalSeconds + " seconds");
     let str11 = "No";
     let str12 = "No";
     if (videoQuality.createHDR) {
       str12 = "Yes";
     }
-    importDefaultResult.info(`- Create HDR: ${str12}`);
+    obj.info(`- Create HDR: ${str12}`);
     const _HermesInternal5 = HermesInternal;
-    importDefaultResult.info("- Rotation Degrees: " + videoQuality.rotationDegrees);
+    obj.info("- Rotation Degrees: " + videoQuality.rotationDegrees);
     if (videoQuality.hevcIsSupported) {
       str11 = "Yes";
     }
-    importDefaultResult.info(`- HEVC Supported: ${str11}`);
+    obj.info(`- HEVC Supported: ${str11}`);
     const _HermesInternal6 = HermesInternal;
-    importDefaultResult.info("- Progress Update Granularity: " + videoQuality.progressUpdateGranularity);
+    obj.info("- Progress Update Granularity: " + videoQuality.progressUpdateGranularity);
   }
 };
 export const calculateOptimalBitrate = function calculateOptimalBitrate(videoMetadata, result, bitrateFloor) {
   return Math.min(Math.max(videoMetadata.bitRate, bitrateFloor), result.targetBitrate);
 };
 export const shouldUseHEVC = function shouldUseHEVC(rotationDegrees) {
-  let tmp = arg3;
-  let tmp2 = !arg1;
-  if (!tmp2) {
-    tmp2 = !arg2;
+  let tmp = !arg1;
+  if (arg1) {
+    tmp = !arg2;
   }
-  let tmp4 = !tmp2;
-  if (!tmp2) {
-    if (tmp) {
-      tmp = 0 !== rotationDegrees.rotationDegrees;
+  let tmp3 = !tmp;
+  if (!tmp) {
+    let tmp4 = arg3;
+    if (arg3) {
+      tmp4 = 0 !== rotationDegrees.rotationDegrees;
     }
-    if (tmp) {
-      tmp = !arg4;
+    if (tmp4) {
+      tmp4 = !arg4;
     }
-    tmp4 = !tmp;
+    tmp3 = !tmp4;
   }
-  return tmp4;
+  return tmp3;
 };

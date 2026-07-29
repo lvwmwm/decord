@@ -1,29 +1,32 @@
-// Module ID: 7762
-// Function ID: 61743
+// Module ID: 7785
+// Function ID: 7786
 // Name: createUserPremiumGuildSubscriptionSystemMessage
-// Dependencies: [7763, 7720, 7722, 1212, 7723, 2]
+// Dependencies: [7786, 7743, 7745, 1236, 7746, 2]
 // Exports: createUserPremiumGuildSubscriptionSystemMessage
 
-// Module 7762 (createUserPremiumGuildSubscriptionSystemMessage)
+// Module 7785 (createUserPremiumGuildSubscriptionSystemMessage)
 const result = require("formatUsernameOnClick").fileFinishedImporting("modules/messages/native/renderer/system_messages/UserPremiumGuildSubscriptionSystemMessage.tsx");
 
 export const createUserPremiumGuildSubscriptionSystemMessage = function createUserPremiumGuildSubscriptionSystemMessage(roleStyle) {
   const message = roleStyle.message;
-  const tmp = importDefault(7763)(message);
-  let obj = require(7720) /* getMessageAuthorWithProcessedColor */;
+  const tmp3 = importDefault(7786)(message);
+  let obj = require(7743) /* getMessageAuthorWithProcessedColor */;
   const messageAuthorWithProcessedColor = obj.getMessageAuthorWithProcessedColor(message);
-  const tmp3 = importDefault(7722)({ message, author: messageAuthorWithProcessedColor, roleStyle: roleStyle.roleStyle });
-  obj = {};
-  if (tmp > 1) {
-    const intl2 = require(1212) /* getSystemLocale */.intl;
-    obj = { username: messageAuthorWithProcessedColor.nick, usernameOnClick: tmp3, numSubscriptions: tmp };
-    let formatToPartsResult = intl2.formatToParts(require(1212) /* getSystemLocale */.t.rbj006, obj);
+  const tmp6 = importDefault(7745)({ message, author: messageAuthorWithProcessedColor, roleStyle: roleStyle.roleStyle });
+  if (tmp3 > 1) {
+    const intl2 = tmp4(1236).intl;
+    obj = { username: null, usernameOnClick: null, numSubscriptions: null };
+    obj[0] = messageAuthorWithProcessedColor.nick;
+    obj[1] = tmp6;
+    obj[2] = tmp3;
+    let formatToPartsResult = intl2.formatToParts(tmp4(1236).t.rbj006, obj);
   } else {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    const obj1 = { username: messageAuthorWithProcessedColor.nick, usernameOnClick: tmp3 };
-    formatToPartsResult = intl.formatToParts(require(1212) /* getSystemLocale */.t.ihxM9x, obj1);
+    const intl = tmp4(1236).intl;
+    obj = { username: null, usernameOnClick: null };
+    obj[0] = messageAuthorWithProcessedColor.nick;
+    obj[1] = tmp6;
+    formatToPartsResult = intl.formatToParts(tmp4(1236).t.ihxM9x, obj);
   }
-  obj.content = formatToPartsResult;
-  const merged = Object.assign(importDefault(7723)(roleStyle));
-  return obj;
+  const merged = Object.assign(importDefault(7746)(roleStyle));
+  return { content: formatToPartsResult };
 };

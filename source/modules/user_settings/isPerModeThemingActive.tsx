@@ -1,12 +1,12 @@
-// Module ID: 1323
-// Function ID: 15554
+// Module ID: 1347
+// Function ID: 1348
 // Name: isPerModeThemingActive
-// Dependencies: [1278, 1280, 1281, 2]
+// Dependencies: [1302, 1304, 1305, 2]
 // Exports: isPerModeThemingActive
 
-// Module 1323 (isPerModeThemingActive)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_1 from "_isNativeReflectConstruct";
+// Module 1347 (isPerModeThemingActive)
+import handleThemeChange from "handleThemeChange";
+import CHANNEL_SIDEBAR_WIDTH from "CHANNEL_SIDEBAR_WIDTH";
 import { SystemThemeState } from "SystemThemeState";
 
 let result = require("SystemThemeState").fileFinishedImporting("modules/user_settings/isPerModeThemingActive.tsx");

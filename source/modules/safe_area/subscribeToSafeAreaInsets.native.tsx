@@ -1,25 +1,22 @@
-// Module ID: 10399
-// Function ID: 80126
+// Module ID: 10423
+// Function ID: 10424
 // Name: subscribeToSafeAreaInsets
-// Dependencies: [1453, 1558, 2]
+// Dependencies: [1477, 1582, 2]
 // Exports: default
 
-// Module 10399 (subscribeToSafeAreaInsets)
+// Module 10423 (subscribeToSafeAreaInsets)
 const result = require("set").fileFinishedImporting("modules/safe_area/subscribeToSafeAreaInsets.native.tsx");
 
 export default function subscribeToSafeAreaInsets(arg0) {
-  let DEFAULT_APP_ENTRY_KEY = arg1;
   const _require = arg0;
+  let DEFAULT_APP_ENTRY_KEY = arg1;
   if (arg1 === undefined) {
-    DEFAULT_APP_ENTRY_KEY = _require(selector[0]).DEFAULT_APP_ENTRY_KEY;
+    DEFAULT_APP_ENTRY_KEY = _require(1477).DEFAULT_APP_ENTRY_KEY;
   }
-  selector = function selector(arg0) {
-    return arg0.byAppEntry[DEFAULT_APP_ENTRY_KEY].safeAreaInsets;
-  };
-  return DEFAULT_APP_ENTRY_KEY(selector[1]).subscribe((arg0, arg1) => {
-    const tmp = selector(arg0);
-    if (tmp !== selector(arg1)) {
-      callback(tmp);
+  return DEFAULT_APP_ENTRY_KEY(1582).subscribe((arg0, arg1) => {
+    const safeAreaInsets = arg0.byAppEntry[DEFAULT_APP_ENTRY_KEY].safeAreaInsets;
+    if (safeAreaInsets !== arg1.byAppEntry[DEFAULT_APP_ENTRY_KEY].safeAreaInsets) {
+      callback(safeAreaInsets);
     }
   });
 };

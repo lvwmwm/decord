@@ -1,9 +1,9 @@
-// Module ID: 4625
-// Function ID: 40357
+// Module ID: 4647
+// Function ID: 4648
 // Name: regExp
-// Dependencies: [3864, 44, 2]
+// Dependencies: [3888, 38, 2]
 
-// Module 4625 (regExp)
+// Module 4647 (regExp)
 import closure_10 from "t";
 
 const re2 = /\n{2,}$/;
@@ -11,14 +11,14 @@ const re3 = /(?:^|\n)( *)$/;
 let regExp = new RegExp("^" + "(%INDENT_CAPTURE_PATTERN%)((?:[*-]|\\d+\\.)) +".replace("%INDENT_CAPTURE_PATTERN%", " *"));
 const re5 = / *\n$/;
 let regExp1 = new RegExp("^( *)((?:[*-]|\\d+\\.)) [\\s\\S]+?(?:\\n(?! )(?!\\1(?:[*-]|\\d+\\.) )|$)");
-const regExp2 = new RegExp("^\\n" + require("invariant"));
+const regExp2 = new RegExp("^\\n" + require("module_38"));
 const re8 = /^\n/;
 const re9 = /\n *$/;
 const re11 = /^[ \t\v\u00a0\u1680\u2000-\u200a\u2028\u2029\u202f\u205f\u3000\ufeff]+$/;
 let obj = {};
 let merged = Object.assign(require("t").defaultRules.list);
-obj["requiredFirstCharacters"] = "\n *-0123456789".split("");
-obj["match"] = function match(str, allowList) {
+obj.requiredFirstCharacters = "\n *-0123456789".split("");
+obj.match = function match(str, allowList) {
   if (allowList.allowList) {
     if (allowList._listLevel >= 11) {
       return null;
@@ -54,7 +54,7 @@ obj["match"] = function match(str, allowList) {
     return null;
   }
 };
-obj["parse"] = function parse(arg0, arg1, arg2) {
+obj.parse = function parse(arg0, arg1, arg2) {
   const importDefault = arg1;
   const dependencyMap = arg2;
   let bound;
@@ -76,61 +76,59 @@ obj["parse"] = function parse(arg0, arg1, arg2) {
   const regExp = new RegExp("(%INDENT_CAPTURE_PATTERN%)((?:[*-]|\\d+\\.)) +[^\\n]*(?:\\n(?!%INDENT_CAPTURE_PATTERN%(?:[*-]|\\d+\\.) )[^\\n]*)*(\n|$)".replaceAll("%INDENT_CAPTURE_PATTERN%", " {" + num3 + "," + num3 + 1 + "}"), "gm");
   regExp1 = new RegExp("^ {1," + num2 + "}", "gm");
   const match1 = str3.match(regExp);
-  importDefault(44)(null != match1, "markup list items can not be parsed.");
+  importDefault(38)(null != match1, "markup list items can not be parsed.");
   regex2 = false;
-  let obj = {
+  let str = arg0[0];
+  const str2 = arg0[0].replace(closure_8, "");
+  return {
     ordered: arg0[2].length > 1,
     start: bound,
     items: match1.map((str) => {
       let _list;
       let inline;
       const replaced = str.replace(c4, "").replace(regExp1, "");
-      let tmp = arg1 === match1.length - 1;
+      const diff = match1.length - 1;
       let tmp2 = -1 !== replaced.indexOf("\n\n");
       if (!tmp2) {
-        if (tmp) {
-          tmp = c4;
-        }
-        tmp2 = tmp;
+        tmp2 = arg1 === diff && c4;
+        const tmp4 = arg1 === diff && c4;
       }
       c4 = tmp2;
       _listLevel = _listLevel._listLevel;
       _listLevel._list = true;
-      let num = 0;
+      let num = _listLevel;
       ({ inline, _list } = _listLevel);
-      if (null != _listLevel) {
-        num = _listLevel;
+      if (_listLevel == null) {
+        num = 0;
       }
       _listLevel._listLevel = num + 1;
       if (tmp2) {
-        tmp4.inline = false;
+        tmp5.inline = false;
         let replaced1 = replaced.replace(outer1_5, "\n\n");
       } else {
-        tmp4.inline = true;
+        tmp5.inline = true;
         replaced1 = replaced.replace(outer1_5, "");
       }
       const obj = {};
-      const merged = Object.assign(_listLevel);
-      obj["allowHeading"] = false;
+      const merged = Object.assign(tmp5);
+      obj.allowHeading = false;
+      str = str.replace(c4, "");
       _listLevel.inline = inline;
       _listLevel._list = _list;
       _listLevel._listLevel = _listLevel;
-      return (function trimListResultTextElements(arr) {
-        return arr.map((type) => {
-          let tmp = "text" === type.type;
-          if (tmp) {
-            tmp = null != type.content;
-          }
-          if (tmp) {
-            type.content = type.content.replace(/\n+\s*$/, "");
-            const str = type.content;
-          }
-          return type;
-        });
-      })(callback(replaced1, obj));
+      return callback(replaced1, obj).map((type) => {
+        let tmp = "text" === type.type;
+        if (tmp) {
+          tmp = null != type.content;
+        }
+        if (tmp) {
+          type.content = type.content.replace(/\n+\s*$/, "");
+          const str = type.content;
+        }
+        return type;
+      });
     })
   };
-  return obj;
 };
 const result = require("set").fileFinishedImporting("modules/markup/MarkupListRule.tsx");
 

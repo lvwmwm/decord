@@ -1,14 +1,14 @@
-// Module ID: 15409
-// Function ID: 117328
+// Module ID: 15442
+// Function ID: 15443
 // Name: showMembersManagementActionSheet
-// Dependencies: [1850, 1212, 4133, 15410, 1935, 6044, 15411, 5530, 2]
+// Dependencies: [1874, 1236, 4157, 15443, 1959, 6062, 15444, 5548, 2]
 // Exports: default, getMembersManagementActions
 
-// Module 15409 (showMembersManagementActionSheet)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 15442 (showMembersManagementActionSheet)
+import mergeGuildAvatar from "mergeGuildAvatar";
 
 const require = arg1;
-let result = require("showActionSheet").fileFinishedImporting("modules/guild_settings/native/showMembersManagementActionSheet.tsx");
+let result = require("ACTION_SHEET_HEIGHT_HALF").fileFinishedImporting("modules/guild_settings/native/showMembersManagementActionSheet.tsx");
 
 export default function showMembersManagementActionSheet(guild) {
   let canPrune;
@@ -16,33 +16,32 @@ export default function showMembersManagementActionSheet(guild) {
   let importDefault;
   guild = guild.guild;
   ({ canPrune, selectedRoleId: importDefault, onFilterRoleId: dependencyMap } = guild);
-  let obj = {};
-  const intl = guild(1212).intl;
-  obj.label = intl.string(guild(1212).t.pEasFX);
-  obj.onPress = function onPress() {
+  let obj = { label: null, onPress: null };
+  const intl = guild(1236).intl;
+  obj[0] = intl.string(guild(1236).t.pEasFX);
+  obj[1] = function onPress() {
     let obj = outer1_1(outer1_2[2]);
     obj = { guild, selectedRoleId: closure_1, onFilterRoleId: closure_2 };
     obj.openLazy(guild(outer1_2[4])(outer1_2[3], outer1_2.paths), "MembersFilter", obj);
   };
   const items = [obj];
-  if (null == canPrune) {
-    canPrune = guild(6044).canPruneGuildMembers(guild, authStore.getCurrentUser());
-    const obj2 = guild(6044);
+  if (canPrune == null) {
+    let tmpResult = tmp(6062);
+    canPrune = tmpResult.canPruneGuildMembers(guild, authStore.getCurrentUser());
   }
   if (canPrune) {
-    obj = {};
-    const intl2 = guild(1212).intl;
-    obj.label = intl2.string(guild(1212).t["2mIlKQ"]);
-    obj.onPress = function onPress() {
+    obj = { label: null, onPress: null, isDestructive: true };
+    const intl2 = tmp(1236).intl;
+    obj[0] = intl2.string(tmp(1236).t["2mIlKQ"]);
+    obj[1] = function onPress() {
       let obj = outer1_1(outer1_2[2]);
       obj = { guild };
       obj.openLazy(guild(outer1_2[4])(outer1_2[6], outer1_2.paths), "MembersPrune", obj);
     };
-    obj.isDestructive = true;
     items.push(obj);
   }
-  obj = { key: "GuildSettingsMembersMore", options: items, hasIcons: false };
-  const result = guild(5530).showSimpleActionSheet(obj);
+  tmpResult = tmp(5548);
+  const result = tmpResult.showSimpleActionSheet({ key: "GuildSettingsMembersMore", options: items, hasIcons: false });
 };
 export const getMembersManagementActions = function getMembersManagementActions(guild) {
   let canPrune;
@@ -50,29 +49,28 @@ export const getMembersManagementActions = function getMembersManagementActions(
   let importDefault;
   guild = guild.guild;
   ({ canPrune, selectedRoleId: importDefault, onFilterRoleId: dependencyMap } = guild);
-  let obj = {};
-  const intl = guild(1212).intl;
-  obj.label = intl.string(guild(1212).t.pEasFX);
-  obj.action = function action() {
+  let obj = { label: null, action: null };
+  const intl = guild(1236).intl;
+  obj[0] = intl.string(guild(1236).t.pEasFX);
+  obj[1] = function action() {
     let obj = outer1_1(outer1_2[2]);
     obj = { guild, selectedRoleId: closure_1, onFilterRoleId: closure_2 };
     obj.openLazy(guild(outer1_2[4])(outer1_2[3], outer1_2.paths), "MembersFilter", obj);
   };
   const items = [obj];
-  if (null == canPrune) {
-    canPrune = guild(6044).canPruneGuildMembers(guild, authStore.getCurrentUser());
-    const obj2 = guild(6044);
+  if (canPrune == null) {
+    canPrune = tmp(6062).canPruneGuildMembers(guild, authStore.getCurrentUser());
+    const tmpResult = tmp(6062);
   }
   if (canPrune) {
-    obj = {};
-    const intl2 = guild(1212).intl;
-    obj.label = intl2.string(guild(1212).t["2mIlKQ"]);
-    obj.action = function action() {
+    obj = { label: null, action: null, variant: "destructive" };
+    const intl2 = tmp(1236).intl;
+    obj[0] = intl2.string(tmp(1236).t["2mIlKQ"]);
+    obj[1] = function action() {
       let obj = outer1_1(outer1_2[2]);
       obj = { guild };
       obj.openLazy(guild(outer1_2[4])(outer1_2[6], outer1_2.paths), "MembersPrune", obj);
     };
-    obj.variant = "destructive";
     items.push(obj);
   }
   return items;

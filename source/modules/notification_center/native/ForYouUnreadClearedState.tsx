@@ -1,46 +1,49 @@
-// Module ID: 15283
-// Function ID: 116177
+// Module ID: 15316
+// Function ID: 15317
 // Name: ForYouUnreadClearedState
-// Dependencies: [31, 27, 33, 4165, 689, 1273, 9668, 4161, 1212, 2]
+// Dependencies: [19, 17, 21, 4189, 712, 1297, 9690, 4185, 1236, 2]
 // Exports: ForYouUnreadClearedState
 
-// Module 15283 (ForYouUnreadClearedState)
-import "result";
+// Module 15316 (ForYouUnreadClearedState)
+import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_4;
-let closure_5;
+let c4;
+let c5;
 const require = arg1;
-({ jsx: closure_4, jsxs: closure_5 } = jsxProd);
-_createForOfIteratorHelperLoose = { container: { marginBottom: 4, marginHorizontal: 24, alignItems: "center", flexDirection: "row" } };
-_createForOfIteratorHelperLoose = { width: 48, height: 48, backgroundColor: require("_createForOfIteratorHelperLoose").unsafe_rawColors.GREEN_400, opacity: 0.16, borderRadius: require("_createForOfIteratorHelperLoose").radii.xl, marginRight: 16, justifyContent: "center", alignItems: "center" };
-_createForOfIteratorHelperLoose.imageContainer = _createForOfIteratorHelperLoose;
-let obj1 = { margin: 12, position: "absolute", color: require("_createForOfIteratorHelperLoose").unsafe_rawColors.GREEN_400 };
-_createForOfIteratorHelperLoose.icon = obj1;
-_createForOfIteratorHelperLoose.headerText = { marginBottom: 2 };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+({ jsx: c4, jsxs: c5 } = jsxProd);
+createCacheKey = { container: { marginBottom: 4, marginHorizontal: 24, alignItems: "center", flexDirection: "row" }, imageContainer: null, icon: null, headerText: null };
+createCacheKey = { width: 48, height: 48, backgroundColor: require("Themes").unsafe_rawColors.GREEN_400, opacity: 0.16, borderRadius: require("Themes").radii.xl, marginRight: 16, justifyContent: "center", alignItems: "center" };
+createCacheKey[1] = createCacheKey;
+createCacheKey[2] = { margin: 12, position: "absolute", color: require("Themes").unsafe_rawColors.GREEN_400 };
+createCacheKey[3] = { marginBottom: 2 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let obj1 = { margin: 12, position: "absolute", color: require("Themes").unsafe_rawColors.GREEN_400 };
 const result = require("jsxProd").fileFinishedImporting("modules/notification_center/native/ForYouUnreadClearedState.tsx");
 
 export const ForYouUnreadClearedState = function ForYouUnreadClearedState() {
-  const tmp = _createForOfIteratorHelperLoose();
-  let obj = { style: tmp.container };
+  const tmp = createCacheKey();
+  let obj = { style: tmp.container, children: null };
   obj = { style: tmp.imageContainer };
   const items = [callback(View, obj), , ];
-  obj = { source: importDefault(9668), style: tmp.icon, color: tmp.icon.color };
-  items[1] = callback(require(1273) /* Button */.Icon, obj);
-  const obj1 = {};
-  const obj2 = { color: "mobile-text-heading-primary", variant: "text-md/semibold", style: tmp.headerText };
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj2.children = intl.string(require(1212) /* getSystemLocale */.t.DonStq);
-  const items1 = [callback(require(4161) /* Text */.Text, obj2), ];
-  const obj3 = { color: "text-default", variant: "text-md/medium" };
-  const intl2 = require(1212) /* getSystemLocale */.intl;
-  obj3.children = intl2.string(require(1212) /* getSystemLocale */.t.jXFsai);
-  items1[1] = callback(require(4161) /* Text */.Text, obj3);
-  obj1.children = items1;
+  obj = { source: null, style: null, color: null };
+  obj[0] = importDefault(9690);
+  obj[1] = tmp.icon;
+  obj[2] = tmp.icon.color;
+  items[1] = callback(require(1297) /* Button */.Icon, obj);
+  const obj1 = { children: null };
+  const obj2 = { color: "mobile-text-heading-primary", variant: "text-md/semibold", style: tmp.headerText, children: null };
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj2[3] = intl.string(require(1236) /* getSystemLocale */.t.DonStq);
+  const items1 = [callback(require(4185) /* Text */.Text, obj2), ];
+  const obj3 = { color: "text-default", variant: "text-md/medium", children: null };
+  const intl2 = require(1236) /* getSystemLocale */.intl;
+  obj3[2] = intl2.string(require(1236) /* getSystemLocale */.t.jXFsai);
+  items1[1] = callback(require(4185) /* Text */.Text, obj3);
+  obj1[0] = items1;
   items[2] = callback2(View, obj1);
-  obj.children = items;
+  obj[1] = items;
   return callback2(View, obj);
 };

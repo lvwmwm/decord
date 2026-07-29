@@ -1,13 +1,14 @@
-// Module ID: 11097
-// Function ID: 86098
+// Module ID: 11121
+// Function ID: 11122
 // Name: apexExperiment
-// Dependencies: [1428, 2]
+// Dependencies: [1452, 2]
 
-// Module 11097 (apexExperiment)
+// Module 11121 (apexExperiment)
 import ApexExperiment from "ApexExperiment";
 
-const obj = { name: "2026-06-family-center-connection-prereq", kind: "user", defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } };
-const apexExperiment = ApexExperiment.createApexExperiment(obj);
+const obj = { 1: null };
+obj[1] = { enabled: true };
+const apexExperiment = ApexExperiment.createApexExperiment({ name: "2026-06-family-center-connection-prereq", kind: "user", defaultConfig: { enabled: false }, variations: obj });
 const result = require("set").fileFinishedImporting("modules/parent_tools/FamilyCenterConnectionPrereqExperiment.tsx");
 
 export const FamilyCenterConnectionPrereqExperiment = apexExperiment;

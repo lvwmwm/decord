@@ -1,12 +1,12 @@
-// Module ID: 15976
-// Function ID: 123315
+// Module ID: 16011
+// Function ID: 16012
 // Name: VoicePanelMaxCapacityAlert
-// Dependencies: [31, 1348, 33, 624, 4510, 4510, 15974, 1212, 2]
+// Dependencies: [19, 1372, 21, 647, 4533, 4533, 16009, 1236, 2]
 // Exports: default
 
-// Module 15976 (VoicePanelMaxCapacityAlert)
-import "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 16011 (VoicePanelMaxCapacityAlert)
+import "noop";
+import ensureGuildLoaded from "ensureGuildLoaded";
 import { jsx } from "jsxProd";
 
 const require = arg1;
@@ -14,32 +14,32 @@ const result = require("jsxProd").fileFinishedImporting("modules/voice_panel/nat
 
 export default function VoicePanelMaxCapacityAlert(channelId) {
   channelId = channelId.channelId;
-  let obj = channelId(624);
-  const items = [_isNativeReflectConstruct];
+  let obj = channelId(647);
+  const items = [ensureGuildLoaded];
   const items1 = [channelId];
   const stateFromStores = obj.useStateFromStores(items, () => {
     const channel = outer1_3.getChannel(channelId);
-    let userLimit;
-    if (null != channel) {
-      userLimit = channel.userLimit;
+    let num;
+    if (channel != null) {
+      num = channel.userLimit;
     }
-    let num = 0;
-    if (null != userLimit) {
-      num = userLimit;
+    if (num == null) {
+      num = 0;
     }
     return num;
   }, items1);
-  const obj2 = channelId(4510);
-  obj = { header: jsx(importDefault(15974), {}) };
-  const intl = channelId(1212).intl;
-  obj.title = intl.string(channelId(1212).t.hHbsQj);
-  const intl2 = channelId(1212).intl;
-  obj.content = intl2.formatToPlainString(channelId(1212).t["387SQH"], { count: stateFromStores });
-  obj = { variant: "secondary" };
-  const intl3 = channelId(1212).intl;
-  obj.text = intl3.string(channelId(1212).t["NX+WJN"]);
-  obj.onPress = channelId(4510).useDismissModalCallback();
-  obj.actions = jsx(channelId(4510).AlertActionButton, { variant: "secondary" });
-  return jsx(channelId(4510).AlertModal, { variant: "secondary" });
+  const obj2 = channelId(4533);
+  obj = { header: null, title: null, content: null, actions: null };
+  obj[0] = jsx(importDefault(16009), {});
+  const intl = channelId(1236).intl;
+  obj[1] = intl.string(channelId(1236).t.hHbsQj);
+  const intl2 = channelId(1236).intl;
+  obj[2] = intl2.formatToPlainString(channelId(1236).t["387SQH"], { count: stateFromStores });
+  obj = { variant: "secondary", text: null, onPress: null };
+  const intl3 = channelId(1236).intl;
+  obj[1] = intl3.string(channelId(1236).t["NX+WJN"]);
+  obj[2] = channelId(4533).useDismissModalCallback();
+  obj[3] = jsx(channelId(4533).AlertActionButton, { variant: "secondary", text: null, onPress: null });
+  return jsx(channelId(4533).AlertModal, { variant: "secondary", text: null, onPress: null });
 };
 export const VOICE_PANEL_MAX_CAPACITY_KEY = "voice-panel-max-capacity";

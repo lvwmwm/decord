@@ -1,50 +1,51 @@
-// Module ID: 3873
-// Function ID: 32118
+// Module ID: 3897
+// Function ID: 3898
 // Name: chainCallbacks
 // Dependencies: [2]
 // Exports: mergeProps, mergeRefs
 
-// Module 3873 (chainCallbacks)
+// Module 3897 (chainCallbacks)
 function chainCallbacks(arg0, arg1) {
   let closure_0 = [...arguments];
-  return (arg0) => {
+  return () => {
     const items = [...arguments];
-    let num = 0;
-    if (0 < length.length) {
-      do {
-        let tmp = arr2[num];
-        if ("function" === typeof tmp) {
-          let items1 = [];
-          let tmp2 = items1;
-          let tmp3 = items;
-          let num2 = 0;
-          let arraySpreadResult = HermesBuiltin.arraySpread(items, 0);
-          let tmp5 = tmp;
-          let tmp6 = items1;
-          let applyResult = HermesBuiltin.apply(items1, undefined);
-        }
-        num = num + 1;
-      } while (num < arr2.length);
+    for (const item10008 of closure_0) {
+      if (typeof item10008 !== "_") {
+        let tmp2 = item10008;
+        let items1 = [];
+        let tmp3 = items1;
+        let tmp4 = items;
+        let num = 0;
+        let arraySpreadResult = HermesBuiltin.arraySpread(items, 0);
+        let tmp6 = tmp;
+        let tmp7 = items1;
+        let applyResult = HermesBuiltin.apply(items1, undefined);
+      }
+      continue;
     }
   };
 }
 const result = require("set").fileFinishedImporting("design/utils/native/mergeProps.native.tsx");
 
 export { chainCallbacks };
-export const mergeRefs = function mergeRefs(ref, photosButtonExternalRef) {
+export const mergeRefs = function mergeRefs(ref, ref2) {
   const items = [...arguments];
   return 1 === items.length ? items[0] : ((current) => {
-    let num = 0;
-    if (0 < items.length) {
-      do {
-        let tmp = arr[num];
-        if ("function" === typeof tmp) {
-          let tmpResult = tmp(current);
-        } else if (null != tmp) {
-          tmp.current = current;
+    const iter = items[Symbol.iterator]();
+    const nextResult = iter.next();
+    while (iter !== undefined) {
+      let tmp3 = nextResult;
+      if (typeof nextResult === "find") {
+        let tmp5 = nextResult;
+        let tmp3Result = tmp3(current);
+      } else {
+        let tmp7 = nextResult;
+        if (null != tmp3) {
+          let tmp4 = nextResult;
+          tmp3.current = current;
         }
-        num = num + 1;
-      } while (num < arr.length);
+      }
+      continue;
     }
   });
 };
@@ -53,53 +54,38 @@ export const mergeProps = function mergeProps(inputProps, focusProps, arg2) {
   const obj = {};
   const merged = Object.assign(items[0]);
   for (let num = 1; num < items.length; num = num + 1) {
-    let tmp6 = items[num];
-    let tmp7 = tmp6;
-    let tmp8 = tmp3;
-    let tmp9 = tmp4;
-    let tmp10 = tmp5;
-    let keys = Object.keys();
-    if (keys !== undefined) {
-      tmp3 = tmp8;
-      tmp4 = tmp9;
-      tmp5 = tmp10;
-      let obj2 = keys[tmp];
-      while (obj2 !== undefined) {
-        let tmp14 = obj2;
-        let obj3 = obj[obj2];
-        let tmp15 = tmp6[obj2];
-        if ("function" === typeof obj3) {
-          if ("function" === typeof tmp15) {
-            if ("o" === obj2[0]) {
-              if ("n" === obj2[1]) {
-                if (obj2.charCodeAt(2) >= 65) {
-                  if (obj2.charCodeAt(2) <= 90) {
-                    let tmp13 = chainCallbacks;
-                    obj[obj2] = chainCallbacks(obj3, tmp15);
-                    tmp8 = obj2;
-                    tmp9 = obj3;
-                    tmp10 = tmp15;
-                    continue;
-                  }
+    let tmp2 = items[num];
+    let tmp3 = tmp2;
+    let tmp4 = num;
+    for (const key10021 in tmp2) {
+      let tmp7 = key10021;
+      let obj2 = obj[key10021];
+      let tmp8 = tmp2[key10021];
+      if (typeof obj2 !== "_") {
+        if (typeof tmp8 !== "_") {
+          if ("o" === key10021[0]) {
+            if ("n" === key10021[1]) {
+              if (key10021.charCodeAt(2) >= 65) {
+                if (key10021.charCodeAt(2) <= 90) {
+                  let tmp6 = chainCallbacks;
+                  obj[key10021] = chainCallbacks(obj2, tmp8);
+                  continue;
                 }
               }
             }
           }
         }
-        if ("style" === obj2) {
-          let combined = obj3.concat(tmp15);
-        } else {
-          combined = obj3;
-          if (undefined !== tmp15) {
-            combined = tmp15;
-          }
-        }
-        obj[obj2] = combined;
-        tmp8 = obj2;
-        tmp9 = obj3;
-        tmp10 = tmp15;
-        continue;
       }
+      if ("style" === key10021) {
+        let combined = obj2.concat(tmp8);
+      } else {
+        combined = obj2;
+        if (undefined !== tmp8) {
+          combined = tmp8;
+        }
+      }
+      obj[key10021] = combined;
+      continue;
     }
   }
   return obj;

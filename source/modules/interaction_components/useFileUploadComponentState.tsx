@@ -1,16 +1,16 @@
-// Module ID: 16188
-// Function ID: 125294
+// Module ID: 16223
+// Function ID: 16224
 // Name: useFileUploadComponentState
-// Dependencies: [31, 4503, 4502, 7868, 44, 1882, 2]
+// Dependencies: [19, 4526, 4525, 7891, 38, 1906, 2]
 // Exports: useFileUploadComponentState
 
-// Module 16188 (useFileUploadComponentState)
-import result from "result";
-import { DraftType } from "_isNativeReflectConstruct";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 16223 (useFileUploadComponentState)
+import noop from "noop";
+import { DraftType } from "handleChanged";
+import map from "map";
 
 const require = arg1;
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/interaction_components/useFileUploadComponentState.tsx");
+const result = require("map").fileFinishedImporting("modules/interaction_components/useFileUploadComponentState.tsx");
 
 export const useFileUploadComponentState = function useFileUploadComponentState(maxValues) {
   const componentStateContext = state(uploadIds[3]).useComponentStateContext();
@@ -23,22 +23,17 @@ export const useFileUploadComponentState = function useFileUploadComponentState(
   const items = [state];
   uploadIds = uploads.useMemo(() => {
     let type;
-    if (null != state) {
-      type = state.type;
+    if (state != null) {
+      type = tmp.type;
     }
-    if (type === state(uploadIds[5]).ComponentType.FILE_UPLOAD) {
-      uploadIds = state.uploadIds;
-    } else {
-      uploadIds = [];
-    }
-    return uploadIds;
+    return type === state(uploadIds[5]).ComponentType.FILE_UPLOAD ? state.uploadIds : [];
   }, items);
   uploads = setUploadIds.getUploads(channelId, currentUploads.InteractionModal);
   const items1 = [uploadIds, uploads];
   currentUploads = uploads.useMemo(() => {
     const mapped = uploadIds.map((arg0) => {
       let closure_0 = arg0;
-      return outer1_3.find((id) => id.id === closure_0);
+      return noop.find((id) => id.id === closure_0);
     });
     return mapped.filter((arg0) => null != arg0);
   }, items1);
@@ -49,7 +44,7 @@ export const useFileUploadComponentState = function useFileUploadComponentState(
     if (uploadIds.length > currentUploads.length) {
       setUploadIds(uploadIds.filter((arg0) => {
         let closure_0 = arg0;
-        return outer1_4.some((id) => id.id === closure_0);
+        return closure_4.some((id) => id.id === closure_0);
       }));
     }
   }, items3);

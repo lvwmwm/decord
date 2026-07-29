@@ -1,108 +1,113 @@
-// Module ID: 15746
-// Function ID: 121287
+// Module ID: 15782
+// Function ID: 15783
 // Name: ToastIcon
-// Dependencies: [57, 31, 27, 33, 4165, 689, 3869, 1273, 4161, 2]
+// Dependencies: [32, 19, 17, 21, 4189, 712, 3893, 1297, 4185, 2]
 // Exports: default
 
-// Module 15746 (ToastIcon)
+// Module 15782 (ToastIcon)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
+import noop from "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_5;
+let c5;
 let closure_6;
-let closure_7;
+let error;
 const require = arg1;
 function ToastIcon(recolorLegacyIcon) {
   let IconComponent;
   let icon;
   let iconColor;
   ({ icon, IconComponent, iconColor } = recolorLegacyIcon);
-  let obj = require(3869) /* map */;
-  let str = "mobile-text-heading-primary";
-  if (null != iconColor) {
-    str = iconColor;
+  let obj = require(3893) /* map */;
+  if (iconColor == null) {
+    iconColor = "mobile-text-heading-primary";
   }
-  const token = obj.useToken(str);
-  obj = {};
+  const token = obj.useToken(iconColor);
   if (recolorLegacyIcon.recolorLegacyIcon) {
-    obj.color = token;
-    let tmp2 = obj;
+    obj = { color: null };
+    obj[0] = token;
   } else {
-    obj.disableColor = true;
-    tmp2 = obj;
+    obj = { disableColor: true };
   }
   if (null != IconComponent) {
-    obj = { size: "sm", color: token };
-    let tmp3 = callback2(IconComponent, obj);
-  } else if ("function" === typeof icon) {
-    const obj1 = { children: icon() };
-    tmp3 = callback2(closure_6, obj1);
+    const obj1 = { size: "sm", color: null };
+    obj1[1] = token;
+    let tmp8 = callback2(IconComponent, obj1);
+  } else if (typeof icon === "find") {
+    const obj2 = { children: null };
+    obj2[0] = icon();
+    tmp8 = callback2(closure_6, obj2);
   } else {
-    tmp3 = null;
+    tmp8 = null;
     if (null != icon) {
-      const obj2 = { resizeMode: "contain", source: icon };
-      const merged = Object.assign(tmp2);
-      tmp3 = callback2(require(1273) /* Button */.Icon, obj2);
+      const obj3 = { resizeMode: "contain", source: null };
+      obj3[1] = icon;
+      const merged = Object.assign(obj);
+      tmp8 = callback2(require(1297) /* Button */.Icon, obj3);
     }
   }
-  return tmp3;
+  return tmp8;
 }
 function ToastContent(content) {
   content = content.content;
-  const tmp = _createForOfIteratorHelperLoose();
-  if ("function" === typeof content) {
-    let obj = { style: tmp.contentContainer, children: content() };
-    let tmp5 = callback2(View, obj);
+  const tmp = createCacheKey();
+  if (typeof content === "find") {
+    let obj = { style: null, children: null };
+    obj[0] = tmp.contentContainer;
+    obj[1] = content();
+    let tmp4 = callback2(View, obj);
   } else {
-    obj = { onTextLayout: content.onTextLayout, style: tmp.contentContainer, lineClamp: 3, variant: "text-sm/semibold", color: "mobile-text-heading-primary", children: content };
-    tmp5 = callback2(require(4161) /* Text */.Text, obj);
+    obj = { onTextLayout: null, style: null, lineClamp: 3, variant: "text-sm/semibold", color: "mobile-text-heading-primary", children: null };
+    obj[0] = content.onTextLayout;
+    obj[1] = tmp.contentContainer;
+    obj[5] = content;
+    tmp4 = callback2(require(4185) /* Text */.Text, obj);
   }
-  return tmp5;
+  return tmp4;
 }
-({ jsx: closure_5, Fragment: closure_6, jsxs: closure_7 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { flexDirection: "row", alignItems: "center", borderRadius: require("_createForOfIteratorHelperLoose").radii.xxl, padding: require("_createForOfIteratorHelperLoose").space.PX_8, paddingRight: require("_createForOfIteratorHelperLoose").space.PX_12, backgroundColor: require("_createForOfIteratorHelperLoose").colors.MOBILE_TOAST_BACKGROUND_DEFAULT, borderColor: require("_createForOfIteratorHelperLoose").colors.BORDER_SUBTLE, borderWidth: 1 };
-let merged = Object.assign(require("_createForOfIteratorHelperLoose").shadows.SHADOW_HIGH);
-_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.multilineContainer = { paddingLeft: require("_createForOfIteratorHelperLoose").space.PX_12 };
-_createForOfIteratorHelperLoose.contentContainer = { marginLeft: 8, flexShrink: 1 };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-let obj1 = { paddingLeft: require("_createForOfIteratorHelperLoose").space.PX_12 };
+({ jsx: c5, Fragment: closure_6, jsxs: error } = jsxProd);
+createCacheKey = { container: null, multilineContainer: null, contentContainer: null };
+createCacheKey = { flexDirection: "row", alignItems: "center", borderRadius: require("Themes").radii.xxl, padding: require("Themes").space.PX_8, paddingRight: require("Themes").space.PX_12, backgroundColor: require("Themes").colors.MOBILE_TOAST_BACKGROUND_DEFAULT, borderColor: require("Themes").colors.BORDER_SUBTLE, borderWidth: 1 };
+let merged = Object.assign(require("Themes").shadows.SHADOW_HIGH);
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { paddingLeft: require("Themes").space.PX_12 };
+createCacheKey[2] = { marginLeft: 8, flexShrink: 1 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let obj1 = { paddingLeft: require("Themes").space.PX_12 };
 const result = require("get ActivityIndicator").fileFinishedImporting("modules/toast/native/Toast.tsx");
 
 export default function Toast(arg0) {
   let IconComponent;
+  let c0;
   let containerStyle;
   let content;
   let icon;
   let iconColor;
   let recolorLegacyIcon;
-  let require;
   let tmp3;
+  c0 = undefined;
+  let closure_1;
   ({ icon, iconColor, IconComponent, content, containerStyle, recolorLegacyIcon } = arg0);
-  const tmp = _createForOfIteratorHelperLoose();
-  [tmp3, require] = callback(React.useState(false), 2);
-  let closure_1 = React.useRef(false);
-  const obj = {};
+  const tmp = createCacheKey();
+  [tmp3, c0] = callback(React.useState(false), 2);
+  closure_1 = React.useRef(false);
   const items = [tmp.container, , ];
   let multilineContainer = null;
   callback = React.useCallback((nativeEvent) => {
     if (!ref.current) {
-      ref.current = true;
-      callback(nativeEvent.nativeEvent.lines.length > 1);
+      tmp.current = true;
+      _undefined(nativeEvent.nativeEvent.lines.length > 1);
     }
   }, []);
   if (tmp3) {
     multilineContainer = tmp.multilineContainer;
   }
+  const obj = { style: items, accessibilityElementsHidden: true, children: null };
   items[1] = multilineContainer;
   items[2] = containerStyle;
-  obj.style = items;
-  obj.accessibilityElementsHidden = true;
   const items1 = [callback2(ToastIcon, { icon, iconColor, IconComponent, recolorLegacyIcon }), callback2(ToastContent, { content, onTextLayout: callback })];
-  obj.children = items1;
+  obj[2] = items1;
   return closure_7(View, obj);
 };

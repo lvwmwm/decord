@@ -1,20 +1,20 @@
-// Module ID: 12500
-// Function ID: 96818
+// Module ID: 12522
+// Function ID: 12523
 // Name: usePremiumGroupMembers
-// Dependencies: [31, 12497, 566, 686, 2]
+// Dependencies: [19, 12519, 589, 709, 2]
 // Exports: default
 
-// Module 12500 (usePremiumGroupMembers)
-import { useEffect } from "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 12522 (usePremiumGroupMembers)
+import { useEffect } from "noop";
+import handleMutationStart from "handleMutationStart";
 
 const result = require("initialize").fileFinishedImporting("modules/premium/premium_group/hooks/usePremiumGroupMembers.tsx");
 
 export default function usePremiumGroupMembers(arg0) {
   let isUpdatingMembers;
   let premiumGroupMembers;
-  let obj = arg1;
   const _require = arg0;
+  let obj = arg1;
   if (arg1 === undefined) {
     obj = {};
   }
@@ -26,8 +26,8 @@ export default function usePremiumGroupMembers(arg0) {
   if (flag2 === undefined) {
     flag2 = true;
   }
-  const items = [_isNativeReflectConstruct];
-  const stateFromStoresObject = _require(flag2[2]).useStateFromStoresObject(items, () => ({ premiumGroupMembers: outer1_4.getMembers(), isFetchingMembers: outer1_4.isFetchingMembers(), isUpdatingMembers: outer1_4.isUpdatingMembers() }));
+  const items = [handleMutationStart];
+  const stateFromStoresObject = _require(flag2[2]).useStateFromStoresObject(items, () => ({ premiumGroupMembers: handleMutationStart.getMembers(), isFetchingMembers: handleMutationStart.isFetchingMembers(), isUpdatingMembers: handleMutationStart.isUpdatingMembers() }));
   let isFetchingMembers = stateFromStoresObject.isFetchingMembers;
   const items1 = [flag2, arg0, flag];
   ({ premiumGroupMembers, isUpdatingMembers } = stateFromStoresObject);
@@ -40,16 +40,17 @@ export default function usePremiumGroupMembers(arg0) {
       if (!hasFetchedMembersResult) {
         if (null != closure_0) {
           let obj = flag(flag2[3]);
-          obj = { type: "PREMIUM_GROUP_MEMBERS_REQUEST", subscriptionId: closure_0 };
+          obj = { type: "PREMIUM_GROUP_MEMBERS_REQUEST", subscriptionId: null };
+          obj[1] = tmp3;
           obj.dispatch(obj);
         }
       }
     }
   }, items1);
-  obj = { premiumGroupMembers };
+  obj = { premiumGroupMembers, isLoading: null };
   if (!isFetchingMembers) {
     isFetchingMembers = isUpdatingMembers;
   }
-  obj.isLoading = isFetchingMembers;
+  obj[1] = isFetchingMembers;
   return obj;
 };

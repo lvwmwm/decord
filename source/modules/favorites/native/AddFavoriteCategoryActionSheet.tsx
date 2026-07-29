@@ -1,24 +1,24 @@
-// Module ID: 15094
-// Function ID: 114847
+// Module ID: 15127
+// Function ID: 15128
 // Name: AddFavoriteCategoryActionSheet
-// Dependencies: [57, 31, 1386, 33, 4165, 689, 1841, 10193, 4133, 5221, 5220, 1212, 6706, 4578, 2]
+// Dependencies: [32, 19, 1410, 21, 4189, 712, 1865, 10214, 4157, 5243, 5242, 1236, 6727, 4600, 2]
 // Exports: openAddFavoriteCategoryActionSheet
 
-// Module 15094 (AddFavoriteCategoryActionSheet)
+// Module 15127 (AddFavoriteCategoryActionSheet)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
+import noop from "noop";
 import { MAX_FAVORITE_CATEGORY_NAME_LENGTH as closure_5 } from "date";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
 let closure_6;
-let closure_7;
+let error;
 const require = arg1;
 function AddFavoriteCategoryActionSheet() {
-  const tmp = _createForOfIteratorHelperLoose();
+  const tmp = createCacheKey();
   const tmp2 = callback(React.useState(""), 2);
   const first = tmp2[0];
-  let obj = first(1841);
+  let obj = first(1865);
   const result = obj.isFavoritesGuildCategoryNameValid(first);
   const importDefault = result;
   const items = [result, first];
@@ -30,45 +30,42 @@ function AddFavoriteCategoryActionSheet() {
       const obj2 = result(outer1_2[8]);
     }
   }, items);
-  obj = { contentStyles: tmp.content, bodyStyles: tmp.body, keyboardShouldPersistTaps: "always" };
-  obj = {};
-  const intl = first(1212).intl;
-  obj.title = intl.string(first(1212).t["ISN+NM"]);
-  obj.header = callback2(first(5220).BottomSheetTitleHeader, obj);
-  const obj1 = {};
-  const intl2 = first(1212).intl;
-  obj1.label = intl2.string(first(1212).t.OCAkGP);
-  const intl3 = first(1212).intl;
-  obj1.placeholder = intl3.string(first(1212).t.eTVbtx);
-  obj1.value = first;
-  obj1.onChange = tmp2[1];
-  obj1.maxLength = closure_5;
-  obj1.autoFocus = true;
-  obj1.isClearable = true;
-  obj1.returnKeyType = "done";
-  obj1.onSubmitEditing = callback;
-  const items1 = [callback2(first(6706).TextInput, obj1), ];
-  let obj2 = {};
-  const intl4 = first(1212).intl;
-  obj2.text = intl4.string(first(1212).t.CumH4u);
-  obj2.onPress = callback;
-  obj2.disabled = !result;
-  items1[1] = callback2(first(4578).Button, obj2);
-  obj.children = items1;
-  return callback3(first(5221).BottomSheet, obj);
+  obj = { contentStyles: tmp.content, bodyStyles: tmp.body, keyboardShouldPersistTaps: "always", header: null, children: null };
+  obj = { title: null };
+  const intl = first(1236).intl;
+  obj[0] = intl.string(first(1236).t["ISN+NM"]);
+  obj[3] = callback2(first(5242).BottomSheetTitleHeader, obj);
+  const obj1 = { label: null, placeholder: null, value: null, onChange: null, maxLength: null, autoFocus: true, isClearable: true, returnKeyType: "done", onSubmitEditing: null };
+  const intl2 = first(1236).intl;
+  obj1[0] = intl2.string(first(1236).t.OCAkGP);
+  const intl3 = first(1236).intl;
+  obj1[1] = intl3.string(first(1236).t.eTVbtx);
+  obj1[2] = first;
+  obj1[3] = tmp2[1];
+  obj1[4] = closure_5;
+  obj1[8] = callback;
+  const items1 = [callback2(first(6727).TextInput, obj1), ];
+  let obj2 = { text: null, onPress: null, disabled: null };
+  const intl4 = first(1236).intl;
+  obj2[0] = intl4.string(first(1236).t.CumH4u);
+  obj2[1] = callback;
+  obj2[2] = !result;
+  items1[1] = callback2(first(4600).Button, obj2);
+  obj[4] = items1;
+  return callback3(first(5243).BottomSheet, obj);
 }
-({ jsx: closure_6, jsxs: closure_7 } = jsxProd);
+({ jsx: closure_6, jsxs: error } = jsxProd);
 AddFavoriteCategoryActionSheet = "AddFavoriteCategoryActionSheet";
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16 };
-_createForOfIteratorHelperLoose.content = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.body = { gap: require("_createForOfIteratorHelperLoose").space.PX_16 };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-let obj1 = { gap: require("_createForOfIteratorHelperLoose").space.PX_16 };
+createCacheKey = { content: null, body: null };
+createCacheKey = { paddingHorizontal: require("Themes").space.PX_16 };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { gap: require("Themes").space.PX_16 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let obj1 = { gap: require("Themes").space.PX_16 };
 let result = require("date").fileFinishedImporting("modules/favorites/native/AddFavoriteCategoryActionSheet.tsx");
 
 export const openAddFavoriteCategoryActionSheet = function openAddFavoriteCategoryActionSheet() {
-  let obj = require(4133) /* showActionSheet */;
+  let obj = require(4157) /* ACTION_SHEET_HEIGHT_HALF */;
   obj = { content: callback2(AddFavoriteCategoryActionSheet, {}), key: AddFavoriteCategoryActionSheet };
   obj.showActionSheet(obj);
 };

@@ -1,15 +1,15 @@
-// Module ID: 13111
-// Function ID: 101199
+// Module ID: 13134
+// Function ID: 13135
 // Name: GradientBorder
-// Dependencies: [31, 27, 653, 33, 4364, 689, 4589, 2]
+// Dependencies: [19, 17, 676, 21, 4389, 712, 4611, 2]
 
-// Module 13111 (GradientBorder)
-import result from "result";
+// Module 13134 (GradientBorder)
+import noop from "noop";
 import { View } from "get ActivityIndicator";
 import ME from "ME";
 import { jsx } from "jsxProd";
 
-let closure_5;
+let c5;
 let closure_6;
 const require = arg1;
 class GradientBorder {
@@ -23,90 +23,76 @@ class GradientBorder {
     if (borderRadius === undefined) {
       tmp = closure_1;
       tmp2 = closure_2;
-      num = 5;
-      num2 = 1;
-      borderRadius = require("_createForOfIteratorHelperLoose").radii.sm + 1;
+      num = 1;
+      borderRadius = require("Themes").radii.sm + 1;
     }
-    obj = { children: 0, direction: 0, style: 0, borderWidth: 0, borderRadius: 0 };
-    setPrototypeOfResult = Object.setPrototypeOf(null);
-    merged = Object.assign(global, obj);
-    tmp5 = (function getStartEnd(direction) {
-      const match = outer1_0(outer1_2[4]).match(direction);
-      const str = outer1_0(outer1_2[4]);
-      const withResult = match.with(outer1_8.HORIZONTAL, () => outer2_5);
-      const withResult1 = match.with(outer1_8.HORIZONTAL, () => outer2_5).with(outer1_8.VERTICAL, () => outer2_6);
-      const withResult2 = match.with(outer1_8.HORIZONTAL, () => outer2_5).with(outer1_8.VERTICAL, () => outer2_6).with(outer1_8.DIAGONAL, () => ({ START: { x: 0, y: 0 }, END: { x: 1, y: 1 } }));
-      return match.with(outer1_8.HORIZONTAL, () => outer2_5).with(outer1_8.VERTICAL, () => outer2_6).with(outer1_8.DIAGONAL, () => ({ START: { x: 0, y: 0 }, END: { x: 1, y: 1 } })).with(outer1_8.ANTI_DIAGONAL, () => ({ START: { x: 0, y: 1 }, END: { x: 1, y: 0 } })).exhaustive();
-    })(direction);
+    merged = Object.assign(global, Object.create(null));
+    tmp4 = closure_2;
+    str = require("t");
+    match = str.match(direction);
+    withResult = match.with(jsx.HORIZONTAL, () => closure_5);
+    withResult1 = withResult.with(jsx.VERTICAL, () => closure_6);
+    withResult2 = withResult1.with(jsx.DIAGONAL, () => ({ START: { x: 0, y: 0 }, END: { x: 1, y: 1 } }));
+    withResult3 = withResult2.with(jsx.ANTI_DIAGONAL, () => ({ START: { x: 0, y: 1 }, END: { x: 1, y: 0 } }));
+    exhaustiveResult = withResult3.exhaustive();
     tmp8 = null;
     if (null != children) {
-      tmp9 = result;
+      obj6 = noop;
       tmp8 = null;
-      if (result.isValidElement(children)) {
-        tmp11 = closure_1;
-        tmp12 = closure_2;
-        num3 = 6;
-        tmp10 = jsx;
-        obj = {};
-        obj.start = tmp6;
-        obj.end = tmp7;
+      if (noop.isValidElement(children)) {
+        tmp9 = jsx;
+        tmp10 = closure_1;
+        obj = { start: null, end: null, style: null };
+        obj[0] = tmp6;
+        obj[1] = tmp7;
         items = [, ];
         items[0] = style;
-        obj1 = {};
-        obj1.borderRadius = borderRadius;
-        obj1.padding = borderWidth;
+        obj1 = { borderRadius: null, padding: null };
+        obj1[0] = borderRadius;
+        obj1[1] = borderWidth;
         items[1] = obj1;
-        obj.style = items;
-        tmp14 = obj;
-        tmp15 = merged;
-        tmp13 = require("LinearGradient");
+        obj[2] = items;
+        tmp12 = obj;
+        tmp13 = merged;
+        tmp11 = require("LinearGradient");
         merged1 = Object.assign(merged);
         cloneElementResult = null;
         if (null != children) {
-          tmp18 = result;
           cloneElementResult = null;
-          if (result.isValidElement(children)) {
-            tmp19 = View;
+          if (obj6.isValidElement(children)) {
+            tmp16 = View;
             if (children.type === View) {
-              tmp20 = result;
-              Children = result.Children;
+              Children = obj6.Children;
               onlyResult = Children.only(children);
-              tmp22 = result;
               obj2 = {};
-              tmp23 = obj2;
+              tmp18 = obj2;
               merged2 = Object.assign(onlyResult.props);
               obj3 = {};
-              tmp25 = obj3;
+              tmp20 = obj3;
               merged3 = Object.assign(onlyResult.props.style);
-              str = "borderRadius";
-              obj3["borderRadius"] = borderRadius - borderWidth;
+              obj3.borderRadius = borderRadius - borderWidth;
               str2 = "hidden";
-              str3 = "overflow";
-              obj3["overflow"] = "hidden";
-              str4 = "style";
-              obj2["style"] = obj3;
-              cloneElementResult = result.cloneElement(onlyResult, obj2);
+              obj3.overflow = "hidden";
+              obj2.style = obj3;
+              cloneElementResult = obj6.cloneElement(onlyResult, obj2);
             }
           }
-          tmp27 = jsx;
-          tmp28 = View;
-          obj4 = {};
-          obj5 = {};
+          obj4 = { style: null, children: null };
+          obj5 = { borderRadius: null };
           borderRadius = borderRadius - borderWidth;
-          obj5.borderRadius = borderRadius;
-          obj4.style = obj5;
-          obj4.children = children;
-          cloneElementResult = jsx(View, obj4);
+          obj5[0] = borderRadius;
+          obj4[0] = obj5;
+          obj4[1] = children;
+          cloneElementResult = tmp9(tmp16, obj4);
         }
-        str5 = "children";
-        obj["children"] = cloneElementResult;
-        tmp10Result = tmp10(tmp13, obj);
+        obj.children = cloneElementResult;
+        tmp9Result = tmp9(tmp11, obj);
       }
     }
     return tmp8;
   }
 }
-({ HorizontalGradient: closure_5, VerticalGradient: closure_6 } = ME);
+({ HorizontalGradient: c5, VerticalGradient: closure_6 } = ME);
 let obj = { HORIZONTAL: "horizontal", VERTICAL: "vertical", DIAGONAL: "diagonal", ANTI_DIAGONAL: "anti-diagonal" };
 GradientBorder.Direction = obj;
 const result = require("ME").fileFinishedImporting("design/void/GradientBorder/native/GradientBorder.tsx");

@@ -1,57 +1,52 @@
-// Module ID: 16432
-// Function ID: 128081
+// Module ID: 16467
+// Function ID: 16468
 // Name: EnhancedRoleColorsSelectStyleModal
-// Dependencies: [27, 16414, 16416, 16413, 482, 33, 4165, 689, 4101, 4606, 16433, 1212, 7690, 5221, 5220, 4133, 9266, 1914, 7721, 16434, 4161, 2231, 4029, 2]
+// Dependencies: [17, 16449, 16451, 16448, 505, 21, 4189, 712, 4125, 4628, 16468, 1236, 7713, 5243, 5242, 4157, 9290, 1938, 7744, 16469, 4185, 2255, 4053, 2]
 // Exports: default
 
-// Module 16432 (EnhancedRoleColorsSelectStyleModal)
-import get_ActivityIndicator from "get ActivityIndicator";
-import { RoleColorsStyle } from "_isNativeReflectConstruct";
+// Module 16467 (EnhancedRoleColorsSelectStyleModal)
+import get_ActivityIndicator from "extractColorStringsFromServerColors";
+import { RoleColorsStyle } from "handleSetSection";
 import { HOLOGRAPHIC_ROLE_COLORS } from "HOLOGRAPHIC_ROLE_COLORS";
 import { STYLE_CONFIGS } from "title";
 import { ThemeTypes } from "sum";
-import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import jsxProd from "messagesProxy";
+import createCacheKey from "createCacheKey";
 
-let closure_10;
-let closure_3;
-let closure_4;
-let closure_9;
-({ Pressable: closure_3, View: closure_4 } = get_ActivityIndicator);
-({ jsx: closure_9, jsxs: closure_10 } = jsxProd);
-let closure_11 = _createForOfIteratorHelperLoose.createStyles((arg0) => {
-  let obj = {};
-  obj = { marginHorizontal: importDefault(689).space.PX_12, marginBottom: importDefault(689).space.PX_32 };
-  obj.container = obj;
-  obj = { display: "flex", flexDirection: "row", gap: importDefault(689).space.PX_8 };
-  obj.stylesContainer = obj;
-  const obj1 = { borderRadius: importDefault(689).radii.sm, overflow: "hidden", height: 100, width: 100, flex: 1, backgroundColor: importDefault(689).colors.BACKGROUND_BASE_LOWEST, display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center" };
-  obj.button = obj1;
-  const obj2 = { width: 400, flex: 1, marginStart: importDefault(689).space.PX_8, marginVertical: importDefault(689).space.PX_8, alignSelf: "flex-start" };
-  obj.message = obj2;
-  const obj3 = { width: "100%", textAlign: "center" };
+let c10;
+let c3;
+let c4;
+let c9;
+({ Pressable: c3, View: c4 } = get_ActivityIndicator);
+({ jsx: c9, jsxs: c10 } = jsxProd);
+let closure_11 = createCacheKey.createStyles((arg0) => {
+  let obj = { container: null, stylesContainer: null, button: null, message: null, text: null, upsellContainer: null, upsellText: null, selected: null, disabled: null };
+  obj = { marginHorizontal: importDefault(712).space.PX_12, marginBottom: importDefault(712).space.PX_32 };
+  obj[0] = obj;
+  obj = { display: "flex", flexDirection: "row", gap: importDefault(712).space.PX_8 };
+  obj[1] = obj;
+  obj[2] = { borderRadius: importDefault(712).radii.sm, overflow: "hidden", height: 100, width: 100, flex: 1, backgroundColor: importDefault(712).colors.BACKGROUND_BASE_LOWEST, display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center" };
+  const obj1 = { borderRadius: importDefault(712).radii.sm, overflow: "hidden", height: 100, width: 100, flex: 1, backgroundColor: importDefault(712).colors.BACKGROUND_BASE_LOWEST, display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center" };
+  obj[3] = { width: 400, flex: 1, marginStart: importDefault(712).space.PX_8, marginVertical: importDefault(712).space.PX_8, alignSelf: "flex-start" };
   if (arg0 === ThemeTypes.LIGHT) {
-    let BACKGROUND_SURFACE_HIGH = importDefault(689).colors.BACKGROUND_BASE_LOW;
+    let BACKGROUND_SURFACE_HIGH = tmp(712).colors.BACKGROUND_BASE_LOW;
   } else {
-    BACKGROUND_SURFACE_HIGH = importDefault(689).colors.BACKGROUND_SURFACE_HIGH;
+    BACKGROUND_SURFACE_HIGH = tmp(712).colors.BACKGROUND_SURFACE_HIGH;
   }
-  obj3.backgroundColor = BACKGROUND_SURFACE_HIGH;
-  obj3.paddingVertical = importDefault(689).space.PX_8;
-  obj.text = obj3;
-  const obj4 = {};
-  if (arg0 === ThemeTypes.LIGHT) {
-    let BACKGROUND_SURFACE_HIGH2 = importDefault(689).colors.BACKGROUND_BASE_LOW;
+  const obj2 = { width: 400, flex: 1, marginStart: importDefault(712).space.PX_8, marginVertical: importDefault(712).space.PX_8, alignSelf: "flex-start" };
+  const tmp3 = ThemeTypes;
+  obj[4] = { width: "100%", textAlign: "center", backgroundColor: BACKGROUND_SURFACE_HIGH, paddingVertical: importDefault(712).space.PX_8 };
+  if (arg0 === tmp3.LIGHT) {
+    let BACKGROUND_SURFACE_HIGH2 = tmp(712).colors.BACKGROUND_BASE_LOW;
   } else {
-    BACKGROUND_SURFACE_HIGH2 = importDefault(689).colors.BACKGROUND_SURFACE_HIGH;
+    BACKGROUND_SURFACE_HIGH2 = tmp(712).colors.BACKGROUND_SURFACE_HIGH;
   }
-  obj4.backgroundColor = BACKGROUND_SURFACE_HIGH2;
-  obj4.padding = importDefault(689).space.PX_8;
-  obj4.marginTop = importDefault(689).space.PX_16;
-  obj4.borderRadius = importDefault(689).radii.sm;
-  obj.upsellContainer = obj4;
-  obj.upsellText = { textAlign: "center" };
-  obj.selected = { borderWidth: 1, borderColor: importDefault(689).colors.BACKGROUND_BRAND };
-  obj.disabled = { opacity: 0.5 };
+  const obj3 = { width: "100%", textAlign: "center", backgroundColor: BACKGROUND_SURFACE_HIGH, paddingVertical: importDefault(712).space.PX_8 };
+  obj[5] = { backgroundColor: BACKGROUND_SURFACE_HIGH2, padding: importDefault(712).space.PX_8, marginTop: importDefault(712).space.PX_16, borderRadius: importDefault(712).radii.sm };
+  obj[6] = { textAlign: "center" };
+  const obj4 = { backgroundColor: BACKGROUND_SURFACE_HIGH2, padding: importDefault(712).space.PX_8, marginTop: importDefault(712).space.PX_16, borderRadius: importDefault(712).radii.sm };
+  obj[7] = { borderWidth: 1, borderColor: importDefault(712).colors.BACKGROUND_BRAND };
+  obj[8] = { opacity: 0.5 };
   return obj;
 });
 let result = require("HOLOGRAPHIC_ROLE_COLORS").fileFinishedImporting("modules/premium/powerups/native/EnhancedRoleColorsSelectStyleModal.tsx");
@@ -62,102 +57,109 @@ export default function EnhancedRoleColorsSelectStyleModal(arg0) {
   let require;
   let role;
   ({ roleStyle: require, onStyleChanged: importDefault } = arg0);
+  let dependencyMap;
+  let hasEnhancedRoleColorsForRole;
+  let closure_4;
+  let c5;
   ({ guildId, role } = arg0);
-  let tmp = callback3(importDefault(4101)());
-  const dependencyMap = tmp;
-  let obj = require(4606) /* useHasEnhancedRoleColors */;
-  const hasEnhancedRoleColorsForRole = obj.useHasEnhancedRoleColorsForRole(guildId, role);
-  let obj1 = require(16433) /* useGuildSettingsRoleExampleMessage */;
-  let intl = require(1212) /* getSystemLocale */.intl;
-  let closure_4 = obj1.useGuildSettingsRoleExampleMessage(intl.string(require(1212) /* getSystemLocale */.t.Mi9Kbe));
-  let tmp3 = importDefault(7690);
-  tmp3 = new tmp3();
-  const RoleColorsStyle = tmp3;
-  obj = {};
-  obj = {};
-  const intl2 = require(1212) /* getSystemLocale */.intl;
-  obj.title = intl2.string(require(1212) /* getSystemLocale */.t["9wVJRB"]);
-  obj.header = callback(require(5220) /* RedesignBottomSheetTitleHeaderBase */.BottomSheetTitleHeader, obj);
-  obj1 = { style: tmp.container };
+  const tmp3 = callback2(importDefault(4125)());
+  dependencyMap = tmp3;
+  let obj = require(4628) /* useHasEnhancedRoleColors */;
+  hasEnhancedRoleColorsForRole = obj.useHasEnhancedRoleColorsForRole(guildId, role);
+  let obj1 = require(16468) /* useGuildSettingsRoleExampleMessage */;
+  let intl = require(1236) /* getSystemLocale */.intl;
+  closure_4 = obj1.useGuildSettingsRoleExampleMessage(intl.string(require(1236) /* getSystemLocale */.t.Mi9Kbe));
+  c5 = new importDefault(7713)();
+  obj = { header: null, children: null };
+  obj = { title: null };
+  const intl2 = require(1236) /* getSystemLocale */.intl;
+  obj[0] = intl2.string(require(1236) /* getSystemLocale */.t["9wVJRB"]);
+  obj[0] = callback(require(5242) /* RedesignBottomSheetTitleHeaderBase */.BottomSheetTitleHeader, obj);
+  obj1 = { style: tmp3.container, children: null };
+  const tmp6 = new importDefault(7713)();
   let items = [
     callback(closure_4, {
-      style: tmp.stylesContainer,
+      style: tmp3.stylesContainer,
       children: STYLE_CONFIGS.map((id) => {
         let closure_0 = id;
         let tmp = !hasEnhancedRoleColorsForRole;
-        if (tmp) {
-          tmp = id.id !== tmp3.SOLID;
+        if (!hasEnhancedRoleColorsForRole) {
+          tmp = id.id !== _undefined2.SOLID;
         }
-        let obj = {};
-        const items = [tmp.button, , ];
+        const items = [_undefined.button, , ];
         let selected = closure_0 === id.id;
         if (selected) {
-          selected = tmp.selected;
+          selected = tmp5.selected;
         }
         items[1] = selected;
         let disabled = tmp;
         if (tmp) {
-          disabled = tmp.disabled;
+          disabled = tmp5.disabled;
         }
-        items[2] = disabled;
-        obj.style = items;
-        obj.disabled = tmp;
-        obj.onPress = function onPress() {
-          outer1_1(id.id);
-          outer2_1(4133).hideActionSheet();
+        let obj = {
+          style: items,
+          disabled: tmp,
+          onPress() {
+            outer1_1(id.id);
+            outer2_1(4157).hideActionSheet();
+          },
+          children: null
         };
+        items[2] = disabled;
         obj = {
-          style: tmp.message,
+          style: tmp5.message,
           pointerEvents: "none",
           message: closure_4,
-          rowGenerator: tmp3,
+          rowGenerator: _undefined2,
           modifyRow(message) {
             message.message.roleColor = undefined;
-            const result = outer2_0(1914).extractColorStringsFromServerColors(id.colors);
-            const obj = outer2_0(1914);
-            message.message.roleColors = outer2_0(7721).processColorStrings(result);
+            const result = outer2_0(1938).extractColorStringsFromServerColors(id.colors);
+            const obj = outer2_0(1938);
+            message.message.roleColors = outer2_0(7744).processColorStrings(result);
             message.message.shouldShowRoleOnName = true;
-            message.message.avatarURL = outer2_1(16434);
+            message.message.avatarURL = outer2_1(16469);
           }
         };
-        const items1 = [outer1_9(outer1_1(tmp[16]), obj), ];
-        obj = { style: tmp.text, variant: "text-sm/normal" };
-        const intl = outer1_0(tmp[11]).intl;
-        obj.children = intl.string(id.labelString);
-        items1[1] = outer1_9(outer1_0(tmp[20]).Text, obj);
-        obj.children = items1;
+        const items1 = [outer1_9(outer1_1(_undefined[16]), obj), ];
+        obj = { style: tmp5.text, variant: "text-sm/normal", children: null };
+        const intl = outer1_0(_undefined[11]).intl;
+        obj[2] = intl.string(id.labelString);
+        items1[1] = outer1_9(outer1_0(_undefined[20]).Text, obj);
+        obj[3] = items1;
         return outer1_10(hasEnhancedRoleColorsForRole, obj, id.id);
       })
     }),
 
   ];
-  let tmp8 = !hasEnhancedRoleColorsForRole;
-  if (tmp8) {
-    const obj3 = { style: tmp.upsellContainer };
-    const obj4 = { style: tmp.upsellText, variant: "text-sm/semibold" };
-    const intl3 = require(1212) /* getSystemLocale */.intl;
-    const obj5 = {};
-    const obj6 = {};
+  let tmp8Result = !hasEnhancedRoleColorsForRole;
+  if (!hasEnhancedRoleColorsForRole) {
+    const obj3 = { style: null, children: null };
+    obj3[0] = tmp3.upsellContainer;
+    const obj4 = { style: null, variant: "text-sm/semibold", children: null };
+    obj4[0] = tmp3.upsellText;
+    const intl3 = tmp4(1236).intl;
+    const obj5 = { magical: null };
+    const obj6 = { gradientColors: null, variant: "text-sm/semibold", experimental_useNativeText: null, children: null };
     let items1 = [, , ];
     ({ primary_color: arr2[0], secondary_color: arr2[1], tertiary_color: arr2[2] } = HOLOGRAPHIC_ROLE_COLORS);
-    obj6.gradientColors = items1;
-    obj6.variant = "text-sm/semibold";
-    obj6.experimental_useNativeText = !require(4029) /* isFabric */.isFabric();
-    const intl4 = require(1212) /* getSystemLocale */.intl;
-    obj6.children = intl4.string(importDefault(2231)["+/IHLl"]);
-    obj5.magical = callback(require(4161) /* Text */.Text, obj6);
-    obj4.children = intl3.format(importDefault(2231).VpEDJc, obj5);
-    const items2 = [callback(require(4161) /* Text */.Text, obj4), ];
-    const obj7 = { style: tmp.upsellText, variant: "text-sm/normal" };
-    const intl5 = require(1212) /* getSystemLocale */.intl;
-    obj7.children = intl5.string(importDefault(2231).FJZeZF);
-    items2[1] = callback(require(4161) /* Text */.Text, obj7);
-    obj3.children = items2;
-    tmp8 = callback2(closure_4, obj3);
-    const obj11 = require(4029) /* isFabric */;
+    obj6[0] = items1;
+    obj6[2] = !tmp4(4053).isFabric();
+    const intl4 = tmp4(1236).intl;
+    obj6[3] = intl4.string(tmp(2255)["+/IHLl"]);
+    obj5[0] = tmp7(tmp4(4185).Text, obj6);
+    obj4[2] = intl3.format(tmp(2255).VpEDJc, obj5);
+    const items2 = [tmp7(tmp4(4185).Text, obj4), ];
+    const obj7 = { style: null, variant: "text-sm/normal", children: null };
+    obj7[0] = tmp3.upsellText;
+    const intl5 = tmp4(1236).intl;
+    obj7[2] = intl5.string(tmp(2255).FJZeZF);
+    items2[1] = tmp7(tmp4(4185).Text, obj7);
+    obj3[1] = items2;
+    tmp8Result = tmp8(tmp9, obj3);
+    const tmp4Result = tmp4(4053);
   }
-  items[1] = tmp8;
-  obj1.children = items;
-  obj.children = callback2(closure_4, obj1);
-  return callback(require(5221) /* Background */.BottomSheet, obj);
+  items[1] = tmp8Result;
+  obj1[1] = items;
+  obj[1] = closure_10(closure_4, obj1);
+  return callback(require(5243) /* Background */.BottomSheet, obj);
 };

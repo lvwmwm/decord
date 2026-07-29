@@ -1,18 +1,18 @@
-// Module ID: 15747
-// Function ID: 121292
+// Module ID: 15783
+// Function ID: 15784
 // Name: useNativeThemeUpdater
-// Dependencies: [31, 1278, 1324, 15748, 15749, 2]
+// Dependencies: [19, 1302, 1348, 15784, 15785, 2]
 // Exports: default
 
-// Module 15747 (useNativeThemeUpdater)
-import result from "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 15783 (useNativeThemeUpdater)
+import noop from "noop";
+import handleThemeChange from "handleThemeChange";
 
 let require = arg1;
 const result = require("useIsMobileVisualRefreshExperimentEnabled").fileFinishedImporting("modules/themes/native/useNativeThemeUpdater.tsx");
 
 export default function useNativeThemeUpdater() {
-  const tmp = importDefault(1324)("useNativeThemeUpdater");
+  const tmp = importDefault(1348)("useNativeThemeUpdater");
   const require = tmp;
   importDefault = React.useRef(theme.theme);
   const items = [tmp];
@@ -20,12 +20,12 @@ export default function useNativeThemeUpdater() {
     tmp(outer1_2[3]).updateVisualRefresh(tmp);
   }, items);
   const layoutEffect1 = React.useLayoutEffect(() => {
-    function handleThemeUpdate() {
-      const theme = outer2_4.theme;
-      if (theme !== outer1_1.current) {
-        outer1_1.current = theme;
-        handleThemeUpdate(outer2_2[4]).updateTheme(theme);
-        const obj = handleThemeUpdate(outer2_2[4]);
+    function handleThemeUpdate(arg0) {
+      const theme = outer1_4.theme;
+      if (theme !== ref.current) {
+        ref.current = theme;
+        handleThemeUpdate(outer1_2[4]).updateTheme(theme);
+        const obj = handleThemeUpdate(outer1_2[4]);
       }
     }
     tmp(outer1_2[4]).updateTheme(outer1_4.theme);

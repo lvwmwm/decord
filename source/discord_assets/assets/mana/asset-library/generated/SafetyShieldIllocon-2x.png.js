@@ -1,9 +1,9 @@
-// Module ID: 7413
-// Function ID: 60391
+// Module ID: 7435
+// Function ID: 7436
 // Name: metadata
 // Dependencies: [2]
 
-// Module 7413 (metadata)
+// Module 7435 (metadata)
 const result = require("set").fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/SafetyShieldIllocon-2x.png.js");
 
 export default "https://cdn.discordapp.com/assets/content/044351d48d3840df67ed3e4902d52402c4eb014d38198386236142b79e4fbb47.png";

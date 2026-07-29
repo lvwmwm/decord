@@ -1,74 +1,367 @@
-// Module ID: 11151
-// Function ID: 86589
+// Module ID: 11175
+// Function ID: 11176
 // Name: _upload2
-// Dependencies: [57, 5, 31, 27, 1348, 4503, 1838, 4384, 653, 33, 4165, 689, 6132, 4746, 4705, 4133, 6170, 6168, 21, 4701, 6169, 6058, 507, 11152, 5695, 5844, 4506, 1212, 566, 5497, 6060, 4709, 5221, 11153, 4161, 4579, 2]
+// Dependencies: [32, 5, 19, 17, 1372, 4526, 1862, 4407, 676, 21, 4189, 712, 6150, 4768, 4727, 4157, 6188, 6186, 11, 4723, 6187, 6076, 530, 11176, 5713, 5862, 4529, 1236, 589, 5515, 6078, 4731, 5243, 11177, 4185, 4601, 2]
 // Exports: default
 
-// Module 11151 (_upload2)
-import _slicedToArray from "_slicedToArray";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import openImagePickerUnhandled from "openImagePickerUnhandled";
-import { View } from "getSystemLocale";
-import closure_7 from "_isNativeReflectConstruct";
-import { DraftType } from "_isNativeReflectConstruct";
-import closure_9 from "_createForOfIteratorHelperLoose";
-import closure_10 from "_isNativeReflectConstruct";
+// Module 11175 (_upload2)
+import Background from "Background";
+import handleChanged from "handleChanged";
+import items from "items";
+import { View } from "dispatcher";
+import ensureGuildLoaded from "ensureGuildLoaded";
+import { DraftType } from "handleChanged";
+import createGuildRecordFromRust from "createGuildRecordFromRust";
+import reinjectEphemerals from "reinjectEphemerals";
 import ME from "ME";
-import jsxProd from "ForumPostGrid";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import jsxProd from "patchThread";
+import createCacheKey from "createCacheKey";
 
-let closure_11;
 let closure_12;
-let closure_13;
 let closure_14;
+let map1;
+let unpackModuleId;
 const require = arg1;
 function _upload2() {
-  // CreateGeneratorClosureLongIndex (0x67)
-  const obj = callback2(tmp);
-  return obj(...arguments);
+  const self = this;
+  const tmp = callback2((arg0) => {
+    let closure_0 = arg0;
+    let c8 = 0;
+    let c9 = 0;
+    let c7 = 0;
+    const iter = (function*(arg0) {
+      let c0;
+      let c4;
+      let closure_1;
+      let closure_2;
+      let message;
+      if (c9 === 2) {
+        c9 = 3;
+        HermesBuiltin.throwTypeError();
+      } else if (tmp8 === 3) {
+        if (arg0 === 1) {
+          throw arg1;
+        } else if (arg0 === 2) {
+          let obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
+        } else {
+          return { value: "HermesInternal", done: null };
+        }
+      } else {
+        try {
+          c9 = 2;
+          if (0 === c8) {
+            if (arg0 === 1) {
+              c9 = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              c9 = 3;
+              obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            } else {
+              let c5 = tmp4;
+              c4 = tmp9;
+              let callback;
+              let callback2;
+              let dependencyMap;
+              message = undefined;
+              c4 = undefined;
+              let onResult = callback;
+              ({ threadId: c0, attachments: closure_1, setIsUploading: closure_2, guild: message, analyticsLocations: c4 } = callback);
+              c5 = undefined;
+              let c6;
+              let attachments;
+              c8 = undefined;
+              c9 = undefined;
+              let store;
+              c8 = 1;
+              c9 = 1;
+              return { value: "ct", done: null };
+            }
+          } else if (1 === tmp9) {
+            if (arg0 === 1) {
+              c9 = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              c9 = 3;
+              const obj1 = { value: null, done: true };
+              obj1[0] = arg1;
+              return obj1;
+            } else {
+              onResult = c4;
+              onResult = c5;
+              onResult = callback2;
+              onResult = dependencyMap;
+              onResult = new.target;
+              onResult = new.target;
+              onResult = new callback2(6150)();
+              const outer1_5 = onResult;
+              onResult = outer1_5;
+              onResult = outer1_5.on("start", () => {
+                dependencyMap(true);
+              });
+              onResult = outer1_5;
+              onResult = outer1_5.on("progress", (currentSize) => {
+                let obj = _undefined(4768);
+                const kestrelConfig = obj.getKestrelConfig({ location: "native.AddMediaToOriginalForumPostActionSheet" });
+                const maxFileSizeResult = _undefined(4727).maxFileSize(message.id);
+                const obj2 = _undefined(4727);
+                const tmp3 = message;
+                const effectiveKestrelLimit = _undefined(4768).getEffectiveKestrelLimit(kestrelConfig, maxFileSizeResult);
+                if (currentSize.currentSize > effectiveKestrelLimit) {
+                  _undefined2.cancel();
+                  dependencyMap(false);
+                  callback(4157).hideActionSheet();
+                  obj = { file: null, maxSize: null, baseMaxSize: null, guildId: null, analyticsLocations: null };
+                  obj[0] = currentSize;
+                  obj[1] = effectiveKestrelLimit;
+                  obj[2] = maxFileSizeResult;
+                  obj[3] = tmp3.id;
+                  obj[4] = c4;
+                  callback(6188)(obj);
+                  const obj4 = callback(4157);
+                }
+              });
+              onResult = outer1_5;
+              onResult = outer1_5.on("error", () => {
+                dependencyMap(false);
+                callback(4157).hideActionSheet();
+              });
+              onResult = outer1_5;
+              onResult = outer1_5.on("complete", () => {
+                dependencyMap(false);
+                callback(6186).clearAll(c0, ChannelMessage.ChannelMessage);
+                const obj = callback(6186);
+                callback(4157).hideActionSheet();
+              });
+              onResult = store;
+              onResult = callback;
+              const messages = store.getMessages(callback);
+              onResult = callback2;
+              onResult = dependencyMap;
+              onResult = callback;
+              attachments = messages.get(callback2(11).castChannelIdAsMessageId(callback));
+              onResult = attachments;
+              if (null != attachments) {
+                attachments = attachments.attachments;
+              } else {
+                attachments = [];
+              }
+              c8 = attachments;
+              attachments = 1;
+              outer1_5.uploadFiles(outer1_1);
+              c8 = 4;
+              c9 = 1;
+              const obj24 = callback2(11);
+            }
+          } else if (2 === tmp9) {
+            attachments = 0;
+            let closure_11 = c6;
+            dependencyMap(false);
+            let obj10 = outer1_1(outer1_2[15]);
+            obj10.hideActionSheet();
+            let obj11 = callback(outer1_2[20]);
+            let obj2 = { file: null, guildId: null, analyticsLocations: null, code: null, reason: null };
+            obj2[0] = closure_11.file;
+            obj2[1] = message.id;
+            obj2[2] = c4;
+            obj2[3] = closure_11.code;
+            obj2[4] = closure_11.reason;
+            const result = obj11.handleUploadMessageAttachmentsErrors(obj2);
+            c9 = 3;
+            let obj3 = { value: null, done: true };
+            obj3[0] = undefined;
+            return obj3;
+          } else if (3 === tmp9) {
+            attachments = 0;
+            dependencyMap(false);
+            let obj8 = outer1_1(outer1_2[15]);
+            obj8.hideActionSheet();
+            c9 = 3;
+            let obj4 = { value: null, done: true };
+            obj4[0] = undefined;
+            return obj4;
+          } else if (4 === tmp9) {
+            if (arg0 === 1) {
+              c9 = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              attachments = 0;
+              c9 = 3;
+              let obj5 = { value: null, done: true };
+              obj5[0] = arg1;
+              return obj5;
+            } else {
+              onResult = c4;
+              c9 = arg1;
+              callback2 = 0;
+              onResult = c8;
+              const items = [];
+              onResult = items;
+              callback2 = HermesBuiltin.arraySpread(c8, 0);
+              onResult = c9;
+              onResult = c9.map((closure_0, closure_1) => _undefined(4723).getAttachmentPayload(closure_0, closure_1));
+              dependencyMap = onResult;
+              if (onResult == null) {
+                dependencyMap = [];
+              }
+              callback2 = HermesBuiltin.arraySpread(dependencyMap, callback2);
+              const outer1_6 = items;
+              attachments = 2;
+              obj5 = callback2(6076);
+              c8 = 6;
+              c9 = 1;
+              const obj6 = { value: null, done: false };
+              obj6[0] = obj5.unarchiveThreadIfNecessary(callback);
+              return obj6;
+            }
+          } else {
+            if (5 === tmp9) {
+              attachments = 0;
+              let closure_12 = c6;
+              dependencyMap(false);
+              obj3 = callback2(4157);
+              obj3.hideActionSheet();
+              const tmp24 = new callback2(11176)(closure_12);
+              store = tmp24;
+              if (store.code === closure_11.EXPLICIT_CONTENT) {
+                obj4 = callback2(5713);
+                const result1 = obj4.sendExplicitMediaClydeError(callback, store.attachments, callback(5862).TrackMediaRedactionContext.EXPLICIT_MEDIA_ADD_MEDIA_TO_FORUM_POST_BLOCKED);
+              } else {
+                onResult = c5;
+                onResult = callback2;
+                onResult = dependencyMap;
+                const obj7 = { title: null, body: null };
+                onResult = callback;
+                onResult = dependencyMap;
+                const intl = callback(1236).intl;
+                onResult = callback;
+                onResult = dependencyMap;
+                obj7[0] = intl.string(callback(1236).t.B3vFdU);
+                onResult = store;
+                onResult = store.getAnyErrorMessage();
+                message = onResult;
+                if (onResult == null) {
+                  message = store.message;
+                }
+                obj7[1] = message;
+                callback2(4529).show(obj7);
+                const obj21 = callback2(4529);
+              }
+              c9 = 3;
+            } else if (6 === tmp9) {
+              if (arg0 === 1) {
+                c9 = 3;
+                throw arg1;
+              } else if (arg0 === 2) {
+                attachments = 0;
+                c9 = 3;
+                obj8 = { value: null, done: true };
+                obj8[0] = arg1;
+                return obj8;
+              } else {
+                attachments = 3;
+                const HTTP = callback(530).HTTP;
+                const obj9 = { url: null, body: null, rejectWithError: true };
+                obj9[0] = closure_12.MESSAGE(callback, callback2(11).castChannelIdAsMessageId(callback));
+                obj10 = { attachments: null };
+                obj10[0] = c6;
+                obj9[1] = obj10;
+                c8 = 7;
+                c9 = 1;
+                obj11 = { value: null, done: false };
+                obj11[0] = HTTP.patch(obj9);
+                return obj11;
+              }
+            } else if (arg0 === 1) {
+              c9 = 3;
+              throw arg1;
+            } else if (arg0 !== 2) {
+              attachments = 0;
+            }
+            attachments = 0;
+            c9 = 3;
+            obj = { value: null, done: true };
+            obj[0] = arg1;
+            return obj;
+          }
+        } catch (tmp80) {
+          c6 = tmp80;
+          if (tmp5 === attachments) {
+            c9 = tmp3;
+            throw tmp80;
+          } else if (tmp2 === tmp82) {
+            c8 = onResult;
+          } else if (onResult === tmp82) {
+            c8 = tmp3;
+          } else {
+            c8 = tmp6;
+          }
+        }
+      }
+    })();
+    iter.next();
+    return iter;
+  });
+  const _upload2 = tmp;
+  const apply = tmp.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
 }
-({ AbortCodes: closure_11, Endpoints: closure_12 } = ME);
-({ jsx: closure_13, jsxs: closure_14 } = jsxProd);
-_createForOfIteratorHelperLoose = { container: { paddingHorizontal: 16, paddingTop: 24 } };
-_createForOfIteratorHelperLoose = { borderWidth: 1, borderColor: require("_createForOfIteratorHelperLoose").colors.BORDER_SUBTLE, borderRadius: require("_createForOfIteratorHelperLoose").radii.md, marginBottom: 32, shadowColor: require("_createForOfIteratorHelperLoose").colors.BLACK, shadowOffset: { width: 0, height: 1 }, shadowOpacity: 0.25, shadowRadius: 4, elevation: 4 };
-_createForOfIteratorHelperLoose.post = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.postContent = { marginBottom: 0, padding: 8 };
-_createForOfIteratorHelperLoose.title = { textAlign: "center", marginBottom: 8 };
-_createForOfIteratorHelperLoose.description = { textAlign: "center", marginBottom: 32 };
-_createForOfIteratorHelperLoose.button = { borderRadius: require("_createForOfIteratorHelperLoose").radii.sm };
-_createForOfIteratorHelperLoose.buttonMargin = { marginBottom: 10 };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-let obj1 = { borderRadius: require("_createForOfIteratorHelperLoose").radii.sm };
-let result = require("result").fileFinishedImporting("modules/forums/native/AddMediaToOriginalForumPostActionSheet.tsx");
+({ AbortCodes: unpackModuleId, Endpoints: closure_12 } = ME);
+({ jsx: map1, jsxs: closure_14 } = jsxProd);
+createCacheKey = { container: { paddingHorizontal: 16, paddingTop: 24 }, post: null, postContent: null, title: null, description: null, button: null, buttonMargin: null };
+createCacheKey = { borderWidth: 1, borderColor: require("Themes").colors.BORDER_SUBTLE, borderRadius: require("Themes").radii.md, marginBottom: 32, shadowColor: require("Themes").colors.BLACK, shadowOffset: { width: 0, height: 1 }, shadowOpacity: 0.25, shadowRadius: 4, elevation: 4 };
+createCacheKey[1] = createCacheKey;
+createCacheKey[2] = { marginBottom: 0, padding: 8 };
+createCacheKey[3] = { textAlign: "center", marginBottom: 8 };
+createCacheKey[4] = { textAlign: "center", marginBottom: 32 };
+createCacheKey[5] = { borderRadius: require("Themes").radii.sm };
+createCacheKey[6] = { marginBottom: 10 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let obj1 = { borderRadius: require("Themes").radii.sm };
+let result = require("noop").fileFinishedImporting("modules/forums/native/AddMediaToOriginalForumPostActionSheet.tsx");
 
 export default function AddMediaToOriginalForumPostActionSheet(threadId) {
-  let DraftType;
-  let tmp10;
+  let c3;
+  let c8;
+  let tmp12;
+  let tmp3;
   threadId = threadId.threadId;
   const attachments = threadId.attachments;
   const sendMessage = threadId.sendMessage;
-  const tmp = _createForOfIteratorHelperLoose();
-  const tmp2 = callback(stateFromStores1.useState(false), 2);
-  const first = tmp2[0];
-  callback = tmp2[1];
+  let callback;
+  let stateFromStores;
+  let stateFromStores1;
+  let stateFromStores2;
+  let analyticsLocations;
+  c8 = undefined;
+  const tmp = createCacheKey();
+  [tmp3, c3] = callback(stateFromStores1.useState(false), 2);
   let obj = threadId(sendMessage[28]);
   const items = [analyticsLocations];
   const items1 = [threadId];
-  const stateFromStores = obj.useStateFromStores(items, () => analyticsLocations.getChannel(threadId), items1);
+  stateFromStores = obj.useStateFromStores(items, () => analyticsLocations.getChannel(threadId), items1);
   let obj1 = threadId(sendMessage[28]);
-  const items2 = [closure_9];
+  const items2 = [createGuildRecordFromRust];
   const items3 = [stateFromStores];
   stateFromStores1 = obj1.useStateFromStores(items2, () => {
     let guildId;
-    if (null != stateFromStores) {
+    if (stateFromStores != null) {
       guildId = stateFromStores.getGuildId();
     }
     return outer1_9.getGuild(guildId);
   }, items3);
   let obj2 = threadId(sendMessage[28]);
-  const items4 = [closure_10];
+  const items4 = [reinjectEphemerals];
   const items5 = [threadId];
-  const stateFromStores2 = obj2.useStateFromStores(items4, () => outer1_10.getMessage(threadId, attachments(sendMessage[18]).castChannelIdAsMessageId(threadId)), items5);
+  stateFromStores2 = obj2.useStateFromStores(items4, () => outer1_10.getMessage(threadId, attachments(sendMessage[18]).castChannelIdAsMessageId(threadId)), items5);
   analyticsLocations = attachments(sendMessage[29])().analyticsLocations;
   const items6 = [stateFromStores, stateFromStores1, stateFromStores2, threadId, attachments, analyticsLocations];
   const items7 = [sendMessage];
@@ -76,11 +369,22 @@ export default function AddMediaToOriginalForumPostActionSheet(threadId) {
     if (null != stateFromStores) {
       if (null != stateFromStores2) {
         if (null != stateFromStores1) {
-          let obj = { added: true };
-          const result = threadId(sendMessage[30]).trackForumAddMediaToOriginalPostClicked(obj);
-          obj = { threadId, attachments, setIsUploading: _slicedToArray, guild: stateFromStores1, analyticsLocations };
+          const result = threadId(sendMessage[30]).trackForumAddMediaToOriginalPostClicked({ added: true });
+          let obj = { threadId: null, attachments: null, setIsUploading: null, guild: null, analyticsLocations: null };
+          obj[0] = threadId;
+          obj[1] = attachments;
+          obj[2] = c3;
+          obj[3] = tmp2;
+          obj[4] = analyticsLocations;
           (function _upload(arg0) {
-            return outer2_16(...arguments);
+            const self = this;
+            const apply = closure_16.apply;
+            if (typeof apply === "unknown") {
+              let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+            } else {
+              applyArgumentsResult = apply(self, arguments);
+            }
+            return applyArgumentsResult;
           })(obj);
           const obj2 = threadId(sendMessage[30]);
         }
@@ -95,73 +399,74 @@ export default function AddMediaToOriginalForumPostActionSheet(threadId) {
     attachments(sendMessage[15]).hideActionSheet();
     sendMessage();
   }, items7);
-  [tmp10, DraftType] = callback(stateFromStores1.useState(null), 2);
+  const tmp2 = callback(stateFromStores1.useState(false), 2);
+  [tmp12, c8] = callback(stateFromStores1.useState(null), 2);
   const items8 = [attachments];
   const effect = stateFromStores1.useEffect(() => {
     if (null != attachments[0]) {
-      const fileInfo = threadId(sendMessage[31]).getFileInfo(attachments[0]);
-      fileInfo.then((uri) => outer1_8(uri.uri));
+      const fileInfo = threadId(sendMessage[31]).getFileInfo(tmp[0]);
+      fileInfo.then((uri) => callback(uri.uri));
       const obj = threadId(sendMessage[31]);
     }
   }, items8);
-  const first1 = attachments[0];
+  const first = attachments[0];
   let item;
-  if (null != first1) {
-    item = first1.item;
+  if (first != null) {
+    item = first.item;
   }
-  let tmp14;
+  let tmp16;
   if (null != item) {
-    if (null != tmp10) {
-      obj = { src: tmp10 };
-      ({ width: obj4.width, height: obj4.height } = item);
-      obj.spoiler = attachments[0].spoiler;
-      obj.alt = attachments[0].description;
-      tmp14 = obj;
+    if (null != tmp12) {
+      obj = { src: null, width: null, height: null, spoiler: null, alt: null };
+      obj[0] = tmp12;
+      ({ width: obj4[1], height: obj4[2] } = item);
+      obj[3] = attachments[0].spoiler;
+      obj[4] = attachments[0].description;
+      tmp16 = obj;
     }
   }
-  obj = { startExpanded: true };
-  obj1 = { style: tmp.container };
-  obj2 = { pointerEvents: "none", style: tmp.post };
-  const obj3 = { threadId, localDeviceMedia: tmp14, style: tmp.postContent };
-  obj2.children = callback3(threadId(sendMessage[33]).ForumPostListDisabled, obj3);
+  obj = { startExpanded: true, children: null };
+  obj1 = { style: tmp.container, children: null };
+  obj2 = { pointerEvents: "none", style: tmp.post, children: null };
+  obj2[2] = callback3(threadId(sendMessage[33]).ForumPostListDisabled, { threadId, localDeviceMedia: tmp16, style: tmp.postContent });
   const items9 = [callback3(stateFromStores2, obj2), , , , , ];
-  const obj4 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary" };
-  const intl = threadId(sendMessage[27]).intl;
-  obj4.children = intl.string(threadId(sendMessage[27]).t["+SZF6S"]);
+  const obj4 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: null };
+  const intl = tmp4(tmp5[27]).intl;
+  obj4[4] = intl.string(threadId(sendMessage[27]).t["+SZF6S"]);
   items9[1] = callback3(threadId(sendMessage[34]).Text, obj4);
-  const obj5 = { style: tmp.description, variant: "text-md/medium", color: "text-default" };
-  const intl2 = threadId(sendMessage[27]).intl;
-  obj5.children = intl2.string(threadId(sendMessage[27]).t["0Ycgw5"]);
+  const obj5 = { style: tmp.description, variant: "text-md/medium", color: "text-default", children: null };
+  const intl2 = tmp4(tmp5[27]).intl;
+  obj5[3] = intl2.string(threadId(sendMessage[27]).t["0Ycgw5"]);
   items9[2] = callback3(threadId(sendMessage[34]).Text, obj5);
-  const obj6 = { style: tmp.buttonMargin };
-  const obj7 = { grow: true, variant: "primary" };
-  const intl3 = threadId(sendMessage[27]).intl;
-  obj7.text = intl3.string(threadId(sendMessage[27]).t.d611xH);
-  obj7.pillStyle = tmp.button;
-  obj7.onPress = callback;
-  obj7.loading = first;
-  obj7.disabled = first;
-  obj6.children = callback3(threadId(sendMessage[35]).BaseTextButton, obj7);
+  const obj6 = { style: tmp.buttonMargin, children: null };
+  const obj7 = { grow: true, variant: "primary", text: null, pillStyle: null, onPress: null, loading: null, disabled: null };
+  const intl3 = tmp4(tmp5[27]).intl;
+  obj7[2] = intl3.string(threadId(sendMessage[27]).t.d611xH);
+  obj7[3] = tmp.button;
+  obj7[4] = callback;
+  obj7[5] = tmp3;
+  obj7[6] = tmp3;
+  obj6[1] = callback3(threadId(sendMessage[35]).BaseTextButton, obj7);
   items9[3] = callback3(stateFromStores2, obj6);
-  const obj8 = { style: tmp.buttonMargin };
-  const obj9 = { grow: true, variant: "secondary" };
-  const intl4 = threadId(sendMessage[27]).intl;
-  obj9.text = intl4.string(threadId(sendMessage[27]).t["8rKVHL"]);
-  obj9.pillStyle = tmp.button;
-  obj9.onPress = callback1;
-  obj9.disabled = first;
-  obj8.children = callback3(threadId(sendMessage[35]).BaseTextButton, obj9);
+  const obj8 = { style: tmp.buttonMargin, children: null };
+  const obj9 = { grow: true, variant: "secondary", text: null, pillStyle: null, onPress: null, disabled: null };
+  const intl4 = tmp4(tmp5[27]).intl;
+  obj9[2] = intl4.string(threadId(sendMessage[27]).t["8rKVHL"]);
+  obj9[3] = tmp.button;
+  obj9[4] = callback1;
+  obj9[5] = tmp3;
+  obj8[1] = callback3(threadId(sendMessage[35]).BaseTextButton, obj9);
   items9[4] = callback3(stateFromStores2, obj8);
-  const obj10 = { grow: true, variant: "secondary" };
-  const intl5 = threadId(sendMessage[27]).intl;
-  obj10.text = intl5.string(threadId(sendMessage[27]).t["ETE/oC"]);
-  obj10.pillStyle = tmp.button;
-  obj10.onPress = function onPress() {
+  const obj10 = { grow: true, variant: "secondary", text: null, pillStyle: null, onPress: null, disabled: null };
+  const intl5 = tmp4(tmp5[27]).intl;
+  obj10[2] = intl5.string(threadId(sendMessage[27]).t["ETE/oC"]);
+  obj10[3] = tmp.button;
+  obj10[4] = function onPress() {
     return attachments(sendMessage[15]).hideActionSheet();
   };
-  obj10.disabled = first;
+  obj10[5] = tmp3;
   items9[5] = callback3(threadId(sendMessage[35]).BaseTextButton, obj10);
-  obj1.children = items9;
-  obj.children = callback4(stateFromStores2, obj1);
+  obj1[1] = items9;
+  obj[1] = callback4(stateFromStores2, obj1);
   return callback3(threadId(sendMessage[32]).BottomSheet, obj);
 };

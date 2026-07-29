@@ -1,12 +1,13 @@
-// Module ID: 12868
-// Function ID: 100085
+// Module ID: 12890
+// Function ID: 12891
 // Name: getVADBeforeProcessingExperimentConfig
-// Dependencies: [1325, 2]
+// Dependencies: [1349, 2]
 // Exports: getVADBeforeProcessingExperimentConfig
 
-// Module 12868 (getVADBeforeProcessingExperimentConfig)
-let obj = { kind: "user", name: "2025-10-vad-before-processing", defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } };
-let closure_0 = require("getUnitId")(obj);
+// Module 12890 (getVADBeforeProcessingExperimentConfig)
+let obj = { 1: null };
+obj[1] = { enabled: true };
+let closure_0 = require("getUnitId")({ kind: "user", name: "2025-10-vad-before-processing", defaultConfig: { enabled: false }, variations: obj });
 const result = require("set").fileFinishedImporting("modules/media_engine/VADBeforeProcessingExperiment.tsx");
 
 export const getVADBeforeProcessingExperimentConfig = function getVADBeforeProcessingExperimentConfig(disable) {
@@ -18,7 +19,8 @@ export const getVADBeforeProcessingExperimentConfig = function getVADBeforeProce
   if (flag) {
     let defaultConfig = obj.definition.defaultConfig;
   } else {
-    obj = { location: disable.location };
+    obj = { location: null };
+    obj[0] = disable.location;
     defaultConfig = obj.getConfig(obj);
   }
   return defaultConfig;

@@ -1,27 +1,28 @@
-// Module ID: 8966
-// Function ID: 70687
+// Module ID: 8990
+// Function ID: 8991
 // Name: CrunchyrollLinkDiscordConsent
-// Dependencies: [31, 8961, 653, 8149, 33, 1456, 8922, 2]
+// Dependencies: [19, 8985, 676, 8173, 21, 1480, 8946, 2]
 // Exports: default
 
-// Module 8966 (CrunchyrollLinkDiscordConsent)
-import result from "result";
+// Module 8990 (CrunchyrollLinkDiscordConsent)
+import noop from "noop";
 import { CrunchyrollLinkModalScenes as closure_3 } from "CrunchyrollLinkModalScenes";
 import { PlatformTypes } from "ME";
 import CRUNCHYROLL_LINK_DEST_ORIGIN from "CRUNCHYROLL_LINK_DEST_ORIGIN";
 import { jsx } from "jsxProd";
 
-let closure_5;
+let c5;
 let closure_6;
 const require = arg1;
-({ CRUNCHYROLL_CLIENT_ID: closure_5, CRUNCHYROLL_CLIENT_SCOPES: closure_6 } = CRUNCHYROLL_LINK_DEST_ORIGIN);
+({ CRUNCHYROLL_CLIENT_ID: c5, CRUNCHYROLL_CLIENT_SCOPES: closure_6 } = CRUNCHYROLL_LINK_DEST_ORIGIN);
 const result = require("ME").fileFinishedImporting("modules/user_settings/connections/native/two_way_link/crunchyroll/CrunchyrollLinkDiscordConsent.tsx");
 
 export default function CrunchyrollLinkDiscordConsent(arg0) {
   let callbackCode;
   let callbackState;
+  let navigation;
   ({ callbackCode, callbackState } = arg0);
-  let obj = navigation(1456);
+  let obj = navigation(1480);
   navigation = obj.useNavigation();
   const items = [navigation];
   const items1 = [navigation];
@@ -32,5 +33,5 @@ export default function CrunchyrollLinkDiscordConsent(arg0) {
     navigation.push(outer1_3.ERROR);
   }, items1);
   obj = { platformType: PlatformTypes.CRUNCHYROLL, callbackCode, callbackState, clientId: closure_5, scopes: closure_6, onNext: callback, onError: callback1 };
-  return jsx(navigation(8922).TwoWayLinkDiscordConsent, { platformType: PlatformTypes.CRUNCHYROLL, callbackCode, callbackState, clientId: closure_5, scopes: closure_6, onNext: callback, onError: callback1 });
+  return jsx(navigation(8946).TwoWayLinkDiscordConsent, { platformType: PlatformTypes.CRUNCHYROLL, callbackCode, callbackState, clientId: closure_5, scopes: closure_6, onNext: callback, onError: callback1 });
 };

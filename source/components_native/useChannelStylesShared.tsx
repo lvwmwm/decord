@@ -1,31 +1,34 @@
-// Module ID: 10371
-// Function ID: 79982
+// Module ID: 10395
+// Function ID: 10396
 // Name: styles
-// Dependencies: [4165, 689, 2]
+// Dependencies: [4189, 712, 2]
 
-// Module 10371 (styles)
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+// Module 10395 (styles)
+import createCacheKey from "createCacheKey";
+import createCacheKey from "createCacheKey";
+import createCacheKey from "createCacheKey";
 
-let obj = { container: { flex: 1 } };
-obj = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW };
-obj.background = obj;
-const styles = _createForOfIteratorHelperLoose.createStyles(obj);
-const obj1 = { flex: { flex: 1 }, scene: { flex: 1, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW }, callPTTButton: { flexGrow: 0 }, header: { shadowColor: "transparent" } };
-const obj2 = { flex: 1, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW };
-obj1.forumChannelStyles = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SURFACE_HIGH, borderBottomColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SURFACE_HIGH };
-obj1.headerLeftContainer = { position: "relative" };
-obj1.headerTitleContainer = { position: "relative", marginLeft: 0, marginRight: 0, left: 0, right: 0, flex: 1 };
-obj1.headerRightContainer = { position: "relative", flexBasis: "auto", flexGrow: 0, flexShrink: 0 };
-const styles1 = _createForOfIteratorHelperLoose.createStyles(obj1);
-const obj4 = { navbarLeft: { marginLeft: 4, marginRight: 4 }, menuIcon: { marginHorizontal: 2 } };
-const obj5 = { bottom: 5, right: 0, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW };
-obj4.mentionBadge = obj5;
-const obj6 = { bottom: 5, right: 0, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SURFACE_HIGH };
-obj4.mentionBadgeAlternate = obj6;
-const styles2 = _createForOfIteratorHelperLoose.createStyles(obj4);
-const obj3 = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SURFACE_HIGH, borderBottomColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SURFACE_HIGH };
+let obj = { container: { flex: 1 }, background: null };
+obj = { backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW };
+obj[1] = obj;
+const styles = createCacheKey.createStyles(obj);
+const obj1 = { flex: { flex: 1 }, scene: null, callPTTButton: null, header: null, forumChannelStyles: null, headerLeftContainer: null, headerTitleContainer: null, headerRightContainer: null };
+obj1[1] = { flex: 1, backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW };
+obj1[2] = { flexGrow: 0 };
+obj1[3] = { shadowColor: "transparent" };
+const obj2 = { flex: 1, backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW };
+obj1[4] = { backgroundColor: require("Themes").colors.BACKGROUND_SURFACE_HIGH, borderBottomColor: require("Themes").colors.BACKGROUND_SURFACE_HIGH };
+obj1[5] = { position: "relative" };
+obj1[6] = { position: "relative", marginLeft: 0, marginRight: 0, left: 0, right: 0, flex: 1 };
+obj1[7] = { position: "relative", flexBasis: "auto", flexGrow: 0, flexShrink: 0 };
+const styles1 = createCacheKey.createStyles(obj1);
+const obj4 = { navbarLeft: { marginLeft: 4, marginRight: 4 }, menuIcon: { marginHorizontal: 2 }, mentionBadge: null, mentionBadgeAlternate: null };
+const obj3 = { backgroundColor: require("Themes").colors.BACKGROUND_SURFACE_HIGH, borderBottomColor: require("Themes").colors.BACKGROUND_SURFACE_HIGH };
+obj4[2] = { bottom: 5, right: 0, backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW };
+const obj5 = { bottom: 5, right: 0, backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW };
+obj4[3] = { bottom: 5, right: 0, backgroundColor: require("Themes").colors.BACKGROUND_SURFACE_HIGH };
+const styles2 = createCacheKey.createStyles(obj4);
+const obj6 = { bottom: 5, right: 0, backgroundColor: require("Themes").colors.BACKGROUND_SURFACE_HIGH };
 const result = require("set").fileFinishedImporting("components_native/useChannelStylesShared.tsx");
 
 export const useChannelStylesShared = styles;

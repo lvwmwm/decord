@@ -1,38 +1,39 @@
-// Module ID: 12370
-// Function ID: 96156
+// Module ID: 12392
+// Function ID: 12393
 // Name: createDisplayNameStylesMobile
-// Dependencies: [4157, 1850, 2]
+// Dependencies: [4181, 1874, 2]
 // Exports: createDisplayNameStylesMobile
 
-// Module 12370 (createDisplayNameStylesMobile)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_1 from "_isNativeReflectConstruct";
+// Module 12392 (createDisplayNameStylesMobile)
+import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
+import mergeGuildAvatar from "mergeGuildAvatar";
 
 const result = require("set").fileFinishedImporting("modules/display_name_styles/native/createDisplayNameStylesMobile.tsx");
 
-export const createDisplayNameStylesMobile = function createDisplayNameStylesMobile(author, merged) {
+export const createDisplayNameStylesMobile = function createDisplayNameStylesMobile(author, member) {
   currentUser = currentUser.getCurrentUser();
   let displayNameStyles = author.displayNameStyles;
   if (tmp2) {
     displayNameStyles = currentUser.displayNameStyles;
   }
   let fontId;
-  if (null != merged) {
-    const displayNameStyles2 = merged.displayNameStyles;
-    if (null != displayNameStyles2) {
+  if (member != null) {
+    const displayNameStyles2 = member.displayNameStyles;
+    if (displayNameStyles2 != null) {
       fontId = displayNameStyles2.fontId;
     }
   }
-  if (null == fontId) {
+  if (fontId == null) {
     let fontId1;
-    if (null != displayNameStyles) {
+    if (displayNameStyles != null) {
       fontId1 = displayNameStyles.fontId;
     }
     fontId = fontId1;
   }
   if (null != fontId) {
     if (obj.displayNameStylesEnabled) {
-      obj = { fontId };
+      obj = { fontId: null };
+      obj[0] = fontId;
       return obj;
     }
   }

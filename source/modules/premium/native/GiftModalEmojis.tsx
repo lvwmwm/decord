@@ -1,31 +1,18 @@
-// Module ID: 8027
-// Function ID: 63811
+// Module ID: 8051
+// Function ID: 8052
 // Name: items
-// Dependencies: [57, 31, 27, 33, 4165, 3810, 5184, 2]
+// Dependencies: [32, 19, 17, 21, 4189, 3834, 5206, 2]
 // Exports: default
 
-// Module 8027 (items)
+// Module 8051 (items)
 import _slicedToArray from "_slicedToArray";
-import "result";
+import "noop";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let items = [100, 0, -40];
-const items1 = [items, , , , , , , , , ];
-const items2 = [120, 40, -10];
-items1[1] = items2;
-items1[2] = [100, 80, 10];
-items1[3] = [180, 20, 20];
-items1[4] = [140, 95, 15];
-items1[5] = [250, 0, 0];
-const items3 = [250, 80, -20];
-items1[6] = items3;
-items1[7] = [400, 90, 10];
-const items4 = [400, 20, -20];
-items1[8] = items4;
-items1[9] = [410, 0, 40];
-let closure_6 = _createForOfIteratorHelperLoose.createStyles({ emojisContainer: { alignItems: "center", justifyContent: "center", height: 250, width: "100%", position: "absolute", zIndex: 1, paddingBottom: 210 } });
+let items = [[100, 0, -40], [120, 40, -10], [100, 80, 10], [180, 20, 20], [140, 95, 15], [250, 0, 0], [250, 80, -20], [400, 90, 10], [400, 20, -20], [410, 0, 40]];
+let closure_6 = createCacheKey.createStyles({ emojisContainer: { alignItems: "center", justifyContent: "center", height: 250, width: "100%", position: "absolute", zIndex: 1, paddingBottom: 210 } });
 const result = require("get ActivityIndicator").fileFinishedImporting("modules/premium/native/GiftModalEmojis.tsx");
 
 export default function _default(emojiName) {
@@ -39,57 +26,51 @@ export default function _default(emojiName) {
   uRL = obj.getURL(emojiName);
   obj = {
     style: callback().emojisContainer,
-    children: items1.map((arg0, arg1) => {
+    children: items.map((arg0, arg1) => {
       let tmp2;
       let tmp3;
       let tmp4;
-      let num = 1;
       [tmp2, tmp3, tmp4] = callback(arg0, 3);
-      let obj = { src: callback, name: emojiName };
-      obj = { position: "absolute" };
+      let obj = { src: callback, name: emojiName, style: null, forceTextEmoji: true };
+      obj = { position: "absolute", top: null, left: null, transform: null };
       const tmp = callback(arg0, 3);
       const tmp5 = outer1_4;
-      obj.top = "" + tmp2 + "%";
-      obj.left = "" + tmp3 + "%";
+      obj[1] = "" + tmp2 + "%";
+      obj[2] = "" + tmp3 + "%";
       obj = { rotate: "" + tmp4 + "deg" };
       const items = [obj, ];
-      const obj1 = {};
+      let num = 1;
       if (flag) {
         const _Math = Math;
         num = 1.5 * Math.random() + 0.5;
       }
-      obj1.scale = num;
-      items[1] = obj1;
-      obj.transform = items;
-      obj.style = obj;
-      obj.forceTextEmoji = true;
+      items[1] = { scale: num };
+      obj[3] = items;
+      obj[2] = obj;
       return tmp5(emojiName(flag[6]), obj, "" + arg1 + "-" + emojiName);
     })
   };
-  return <View style={callback().emojisContainer}>{items1.map((arg0, arg1) => {
+  return <View style={callback().emojisContainer}>{items.map((arg0, arg1) => {
     let tmp2;
     let tmp3;
     let tmp4;
-    let num = 1;
     [tmp2, tmp3, tmp4] = callback(arg0, 3);
-    let obj = { src: callback, name: emojiName };
-    obj = { position: "absolute" };
+    let obj = { src: callback, name: emojiName, style: null, forceTextEmoji: true };
+    obj = { position: "absolute", top: null, left: null, transform: null };
     const tmp = callback(arg0, 3);
     const tmp5 = outer1_4;
-    obj.top = "" + tmp2 + "%";
-    obj.left = "" + tmp3 + "%";
+    obj[1] = "" + tmp2 + "%";
+    obj[2] = "" + tmp3 + "%";
     obj = { rotate: "" + tmp4 + "deg" };
     const items = [obj, ];
-    const obj1 = {};
+    let num = 1;
     if (flag) {
       const _Math = Math;
       num = 1.5 * Math.random() + 0.5;
     }
-    obj1.scale = num;
-    items[1] = obj1;
-    obj.transform = items;
-    obj.style = obj;
-    obj.forceTextEmoji = true;
+    items[1] = { scale: num };
+    obj[3] = items;
+    obj[2] = obj;
     return tmp5(emojiName(flag[6]), obj, "" + arg1 + "-" + emojiName);
   })}</View>;
 };

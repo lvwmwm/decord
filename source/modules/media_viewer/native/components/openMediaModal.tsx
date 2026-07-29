@@ -1,101 +1,207 @@
-// Module ID: 8091
-// Function ID: 64158
+// Module ID: 8115
+// Function ID: 8116
 // Name: _openMediaModal
-// Dependencies: [57, 5, 3858, 653, 1450, 8092, 1935, 8095, 8099, 44, 4133, 8108, 4372, 8109, 2]
+// Dependencies: [32, 5, 3882, 676, 1474, 8116, 1959, 8119, 8123, 38, 4157, 8132, 4395, 8133, 2]
 // Exports: openMediaModal
 
-// Module 8091 (_openMediaModal)
+// Module 8115 (_openMediaModal)
 import _slicedToArray from "_slicedToArray";
 import zustandStore from "zustandStore";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import setContent from "setContent";
 import { MEDIA_MODAL_KEY } from "ME";
 
 const require = arg1;
-async function _openMediaModal(arg0, arg1) {
-  let iter = (function*(arg0) {
-    let closure_1;
-    let closure_2;
-    let _slicedToArray;
-    let zustandStore;
-    let initialIndex;
-    let openAs;
-    let originViewOrOriginLayout;
-    ({ initialIndex, originViewOrOriginLayout } = arg0);
-    if (initialIndex === undefined) {
-      initialIndex = 0;
-    }
-    ({ initialSources: closure_1, analyticsSource: closure_2, channelId: _slicedToArray, onClose: zustandStore, openAs } = arg0);
-    if (openAs === undefined) {
-      openAs = "modal";
-    }
-    Object.setPrototypeOf(null);
-    let closure_6 = Object.assign(arg0, { originViewOrOriginLayout: 0, initialIndex: 0, initialSources: 0, analyticsSource: 0, channelId: 0, onClose: 0, openAs: 0 });
-    let setMediaViewerSources;
-    let MediaViewerAnalytics;
-    let initVideoStateStore;
-    yield undefined;
-    const items = [outer2_0(outer2_2[6])(outer2_2[5], outer2_2.paths), outer2_0(outer2_2[6])(outer2_2[7], outer2_2.paths), outer2_0(outer2_2[6])(outer2_2[8], outer2_2.paths)];
-    let tmp3 = outer2_3(yield Promise.all(items), 3);
-    setMediaViewerSources = tmp3[0].setMediaViewerSources;
-    MediaViewerAnalytics = tmp3[1].MediaViewerAnalytics;
-    initVideoStateStore = tmp3[2].initVideoStateStore;
-    !(function getMeasureInWindowFunction(originViewOrOriginLayout) {
-      let closure_0 = originViewOrOriginLayout;
-      if (null != originViewOrOriginLayout) {
-        if ("measureInWindow" in originViewOrOriginLayout) {
-          const measureInWindow = originViewOrOriginLayout.measureInWindow;
-          let fn = measureInWindow.bind(originViewOrOriginLayout);
-        }
-        return fn;
-      }
-      fn = (arg0) => {
-        if (null != closure_0) {
-          let size = closure_0;
+function _openMediaModal() {
+  const self = this;
+  const tmp = callback((arg0) => {
+    let closure_0 = arg0;
+    let c3 = 0;
+    let c4 = 0;
+    const iter = (function*(arg0) {
+      let c0;
+      let c2;
+      let c3;
+      let c4;
+      let c5;
+      let initialIndex;
+      let openAs;
+      if (c4 === 2) {
+        c4 = 3;
+        HermesBuiltin.throwTypeError();
+      } else if (tmp4 === 3) {
+        if (arg0 === 1) {
+          throw arg1;
+        } else if (arg0 === 2) {
+          let obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
         } else {
-          size = { x: 0, y: 0, width: outer4_0(outer4_2[4]).getWindowDimensions().width };
-          const obj = outer4_0(outer4_2[4]);
-          size.height = outer4_0(outer4_2[4]).getWindowDimensions().height;
-          const obj2 = outer4_0(outer4_2[4]);
+          return { value: "HermesInternal", done: null };
         }
-        arg0(size.x, size.y, size.width, size.height, size.resizeMode);
-      };
-    })(originViewOrOriginLayout)((arg0, arg1, width, height, resizeMode) => {
-      if ("action-sheet" === openAs) {
-        outer3_1(outer3_2[9])(outer3_5.isOpen(), "An action sheet must be open to open the media modal as an action sheet");
-        let obj = outer3_1(outer3_2[10]);
-        const tmp7 = outer3_0(outer3_2[6])(outer3_2[11], outer3_2.paths);
-        obj = {};
-        const merged = Object.assign(closure_6);
-        obj["initialIndex"] = initialIndex;
-        obj = { x: arg0, y: arg1, width, height, resizeMode };
-        obj["originLayout"] = obj;
-        obj["onCloseCallback"] = zustandStore;
-        obj["disableHapticOnOpen"] = true;
-        obj.openLazy(tmp7, outer3_6, obj, "stack");
-        const tmp3 = outer3_1(outer3_2[9]);
       } else {
-        let obj5 = outer3_1(outer3_2[12]);
-        const tmp25 = outer3_0(outer3_2[6])(outer3_2[13], outer3_2.paths);
-        const obj1 = {};
-        const merged1 = Object.assign(closure_6);
-        obj1["initialIndex"] = initialIndex;
-        const obj2 = { x: arg0, y: arg1, width, height, resizeMode };
-        obj1["originLayout"] = obj2;
-        obj1["onCloseCallback"] = zustandStore;
-        const obj3 = { animation: "none" };
-        obj5.pushLazy(tmp25, obj1, outer3_6, obj3);
+        try {
+          c4 = 2;
+          if (0 === v0) {
+            if (arg0 === 1) {
+              c4 = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              c4 = 3;
+              obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            } else {
+              c2 = tmp5;
+              initialIndex = tmp2;
+              let callback;
+              initialIndex = undefined;
+              c2 = undefined;
+              v0 = undefined;
+              c4 = undefined;
+              c5 = undefined;
+              openAs = undefined;
+              let closure_7;
+              ({ originViewOrOriginLayout: c0, initialIndex } = callback);
+              if (initialIndex === undefined) {
+                initialIndex = 0;
+              }
+              ({ initialSources: c2, analyticsSource: c3, channelId: c4, onClose: c5, openAs } = callback);
+              if (openAs === undefined) {
+                openAs = "modal";
+              }
+              closure_7 = Object.assign(tmp27, Object.create(null));
+              let closure_8;
+              let dependencyMap;
+              let setMediaViewerSources;
+              let MediaViewerAnalytics;
+              let initVideoStateStore;
+              v0 = 1;
+              c4 = 1;
+              return { value: "ct", done: null };
+            }
+          } else if (1 === tmp5) {
+            if (arg0 === 1) {
+              c4 = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              c4 = 3;
+              let obj2 = { value: null, done: true };
+              obj2[0] = arg1;
+              return obj2;
+            } else {
+              const items = [callback(c2[6])(c2[5], c2.paths), callback(c2[6])(c2[7], c2.paths), callback(c2[6])(c2[8], c2.paths)];
+              v0 = 2;
+              c4 = 1;
+              let obj3 = { value: null, done: false };
+              obj3[0] = Promise.all(items);
+              return obj3;
+            }
+          } else if (arg0 === 1) {
+            c4 = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            c4 = 3;
+            obj = { value: null, done: true };
+            obj[0] = arg1;
+            return obj;
+          } else {
+            closure_8 = arg1;
+            dependencyMap = v0(closure_8, 3);
+            setMediaViewerSources = 32.setMediaViewerSources;
+            MediaViewerAnalytics = 5.MediaViewerAnalytics;
+            initVideoStateStore = 3882.initVideoStateStore;
+            !(function getMeasureInWindowFunction(c0) {
+              let closure_0 = c0;
+              if (null != c0) {
+                if ("measureInWindow" in c0) {
+                  const measureInWindow = c0.measureInWindow;
+                  let fn = measureInWindow.bind(c0);
+                }
+                return fn;
+              }
+              fn = (arg0) => {
+                let size = c0;
+                if (c0 == null) {
+                  const obj = { x: 0, y: 0, width: null, height: null };
+                  obj[2] = c0(outer1_2[4]).getWindowDimensions().width;
+                  const obj2 = c0(outer1_2[4]);
+                  obj[3] = c0(outer1_2[4]).getWindowDimensions().height;
+                  size = obj;
+                  const obj3 = c0(outer1_2[4]);
+                }
+                arg0(size.x, size.y, size.width, size.height, size.resizeMode);
+              };
+            })(callback)((arg0, arg1, arg2, arg3, arg4) => {
+              if ("action-sheet" === openAs) {
+                initialIndex(_undefined2[9])(_undefined3.isOpen(), "An action sheet must be open to open the media modal as an action sheet");
+                let obj = initialIndex(_undefined2[10]);
+                const tmp12 = _undefined(_undefined2[6])(_undefined2[11], _undefined2.paths);
+                obj = {};
+                const merged = Object.assign(closure_7);
+                obj.initialIndex = initialIndex;
+                obj = { x: null, y: null, width: null, height: null, resizeMode: null };
+                obj[0] = arg0;
+                obj[1] = arg1;
+                obj[2] = arg2;
+                obj[3] = arg3;
+                obj[4] = arg4;
+                obj.originLayout = obj;
+                obj.onCloseCallback = _undefined3;
+                obj.disableHapticOnOpen = true;
+                obj.openLazy(tmp12, openAs, obj, "stack");
+                let tmp24 = initialIndex;
+                const tmp3 = initialIndex(_undefined2[9]);
+              } else {
+                const obj6 = initialIndex(_undefined2[12]);
+                const tmp34 = _undefined(_undefined2[6])(_undefined2[13], _undefined2.paths);
+                const obj1 = {};
+                const merged1 = Object.assign(closure_7);
+                tmp24 = initialIndex;
+                obj1.initialIndex = initialIndex;
+                const obj2 = { x: null, y: null, width: null, height: null, resizeMode: null };
+                obj2[0] = arg0;
+                obj2[1] = arg1;
+                obj2[2] = arg2;
+                obj2[3] = arg3;
+                obj2[4] = arg4;
+                obj1.originLayout = obj2;
+                obj1.onCloseCallback = _undefined3;
+                obj6.pushLazy(tmp34, obj1, openAs, { animation: "none" });
+              }
+              setMediaViewerSources({ sources: _undefined2, initialIndex: tmp24 });
+              MediaViewerAnalytics.markSessionStarted({ channelId: c4, numMediaItems: _undefined2.length, source: c3 });
+              initVideoStateStore();
+            });
+            c4 = 3;
+            return { value: "HermesInternal", done: null };
+          }
+        } catch (tmp8) {
+          c4 = tmp;
+          throw tmp8;
+        }
       }
-      setMediaViewerSources({ sources: length, initialIndex });
-      obj5 = { channelId: _slicedToArray, numMediaItems: length.length, source: closure_2 };
-      MediaViewerAnalytics.markSessionStarted(obj5);
-      initVideoStateStore();
-    });
-  })();
-  iter.next();
-  return iter;
+    })();
+    iter.next();
+    return iter;
+  });
+  const _openMediaModal = tmp;
+  const apply = tmp.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
 }
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/media_viewer/native/components/openMediaModal.tsx");
+const result = require("setContent").fileFinishedImporting("modules/media_viewer/native/components/openMediaModal.tsx");
 
 export const openMediaModal = function openMediaModal(arg0) {
-  return _openMediaModal(...arguments);
+  const self = this;
+  const apply = _openMediaModal.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
 };

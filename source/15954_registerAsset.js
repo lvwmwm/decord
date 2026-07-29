@@ -1,11 +1,10 @@
 // Module ID: 15954
-// Function ID: 123159
+// Function ID: 15955
 // Name: registerAsset
-// Dependencies: [1217]
+// Dependencies: [1241]
 
 // Module 15954 (registerAsset)
 import registerAsset from "registerAsset";
 
-const obj = { __packager_asset: true, httpServerLocation: "/assets/images/native/icons", width: 24, height: 24, scales: [2, 3], hash: "467a8f409d631a3f8d45e79495764df7", name: "ic_mic_neutral", type: "png" };
 
-export default registerAsset.registerAsset(obj);
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/voice_panel/native/images", width: 24, height: 24, scales: [2, 3, 4], hash: "0cb7c4a68220aef405b92da8324026d2", name: "camera-swap", type: "png" });

@@ -1,91 +1,12 @@
-// Module ID: 1840
-// Function ID: 20188
-// Name: _createForOfIteratorHelperLoose
-// Dependencies: [653, 1390, 571, 675, 620, 2]
+// Module ID: 1864
+// Function ID: 1865
+// Name: deepEqualImpl
+// Dependencies: [676, 1414, 594, 698, 643, 2]
 // Exports: runDualReadValidation
 
-// Module 1840 (_createForOfIteratorHelperLoose)
+// Module 1864 (deepEqualImpl)
 import { AnalyticEvents } from "ME";
 
-function _createForOfIteratorHelperLoose(iterable) {
-  let closure_0 = iterable;
-  iterable = "undefined" !== typeof Symbol;
-  if (iterable) {
-    const _Symbol = Symbol;
-    iterable = iterable[Symbol.iterator];
-  }
-  if (!iterable) {
-    iterable = iterable[Symbol.iterator];
-  }
-  if (iterable) {
-    const iter = iterable.call(iterable);
-    const next = iter.next;
-    return next.bind(iter);
-  } else {
-    const _Array = Array;
-    let tmp = iterable;
-    if (!Array.isArray(iterable)) {
-      let tmp2;
-      if (iterable) {
-        if ("string" === typeof iterable) {
-          tmp2 = _arrayLikeToArray(iterable, undefined);
-        } else {
-          const toString = {}.toString;
-          const substr = toString.call(iterable).slice(8, -1);
-          let name = substr;
-          if (tmp3) {
-            name = iterable.constructor.name;
-          }
-          if ("Map" !== name) {
-            if ("Set" !== name) {
-              if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(iterable, undefined);
-              } else {
-                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
-              }
-            }
-            tmp2 = arr;
-          }
-          const _Array2 = Array;
-          arr = Array.from(iterable);
-          const callResult = toString.call(iterable);
-          tmp3 = "Object" === substr && iterable.constructor;
-        }
-      }
-      tmp = tmp2;
-      if (!tmp2) {
-        const _TypeError = TypeError;
-        const typeError = new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
-        throw typeError;
-      }
-    }
-    if (tmp) {
-      closure_0 = tmp;
-    }
-    let c1 = 0;
-    return () => {
-      if (closure_1 >= length.length) {
-        let obj = { done: true };
-      } else {
-        obj = { done: false };
-        closure_1 = tmp3 + 1;
-        obj.value = length[+closure_1];
-      }
-      return obj;
-    };
-  }
-}
-function _arrayLikeToArray(arg0, arg1) {
-  let length;
-  if (tmp) {
-    length = arg0.length;
-  }
-  const ArrayResult = Array(length);
-  for (let num = 0; num < length; num = num + 1) {
-    ArrayResult[num] = arg0[num];
-  }
-  return ArrayResult;
-}
 function deepEqualImpl(getTime, getTime2, map, arg3) {
   if (getTime === getTime2) {
     return true;
@@ -97,8 +18,8 @@ function deepEqualImpl(getTime, getTime2, map, arg3) {
         }
       }
     }
-    if ("object" === typeof getTime) {
-      if ("object" === typeof getTime2) {
+    if (typeof getTime !== "window") {
+      if (typeof getTime2 !== "window") {
         if (null !== getTime) {
           if (null !== getTime2) {
             if (map.has(getTime)) {
@@ -117,7 +38,7 @@ function deepEqualImpl(getTime, getTime2, map, arg3) {
               if (getTime instanceof Set) {
                 const _Set2 = Set;
                 if (getTime2 instanceof Set) {
-                  return require(1390) /* _createForOfIteratorHelperLoose */.areSetsEqual(getTime, getTime2);
+                  return require(1414) /* areSetsEqual */.areSetsEqual(getTime, getTime2);
                 }
               }
               const _Array = Array;
@@ -127,10 +48,10 @@ function deepEqualImpl(getTime, getTime2, map, arg3) {
                   if (getTime.length !== getTime2.length) {
                     return false;
                   } else {
-                    let num2 = 0;
+                    let num4 = 0;
                     if (0 < getTime.length) {
-                      while (deepEqualImpl(getTime[num2], getTime2[num2], map, false)) {
-                        num2 = num2 + 1;
+                      while (deepEqualImpl(getTime[num4], getTime2[num4], map, false)) {
+                        num4 = num4 + 1;
                       }
                       return false;
                     }
@@ -148,20 +69,30 @@ function deepEqualImpl(getTime, getTime2, map, arg3) {
                   if (keys.length !== Object.keys(getTime2).length) {
                     return false;
                   } else {
-                    let num = 0;
-                    if (0 < keys.length) {
-                      const _Object3 = Object;
-                      while (hasOwnProperty.call(getTime2, keys[num])) {
-                        let tmp5 = deepEqualImpl;
-                        let tmp6 = map;
-                        let flag2 = false;
-                        if (deepEqualImpl(getTime[tmp4], getTime2[tmp4], map, false)) {
-                          num = num + 1;
+                    const iter = keys[Symbol.iterator]();
+                    const nextResult = iter.next();
+                    while (iter !== undefined) {
+                      let tmp7 = nextResult;
+                      let _Object3 = Object;
+                      let call = hasOwnProperty.call;
+                      if (typeof call === "unknown" ? hasOwnProperty(nextResult) : call(getTime2, nextResult)) {
+                        let tmp9 = deepEqualImpl;
+                        let tmp10 = nextResult;
+                        let num = 0;
+                        let tmp11 = map;
+                        let flag = false;
+                        if (deepEqualImpl(getTime[tmp7], getTime2[tmp7], map, false)) {
+                          continue;
                         } else {
+                          let tmp12 = iter;
+                          iter.return();
                           return false;
                         }
+                      } else {
+                        let tmp8 = iter;
+                        iter.return();
+                        return false;
                       }
-                      return false;
                     }
                     return true;
                   }
@@ -181,65 +112,104 @@ function deepEqual(getTime, getTime2) {
 }
 function doDualReadValidation(arr, derived, derived2) {
   if (derived.derived.length !== derived2.derived.length) {
-    let obj = { type: "length-mismatch", primaryLength: derived.derived.length, shadowLength: derived2.derived.length };
+    let obj = { type: "length-mismatch", primaryLength: null, shadowLength: null };
+    obj[1] = derived.derived.length;
+    obj[2] = derived2.derived.length;
     arr.push(obj);
   }
   const keys = Object.keys(derived.root);
   const keys1 = Object.keys(derived2.root);
-  for (let num = 0; num < keys.length; num = num + 1) {
-    let tmp2 = keys[num];
+  const iter = keys[Symbol.iterator]();
+  const nextResult = iter.next();
+  while (iter !== undefined) {
+    let tmp5 = nextResult;
     let _Object = Object;
-    if (hasOwnProperty.call(derived2.root, tmp2)) {
-      let tmp4 = validateRecord;
-      let tmp5 = validateRecord(tmp2, derived.root[tmp2], derived2.root[tmp2]);
-      let tmp6 = tmp5;
-      if (null != tmp5) {
-        arr = arr.push(tmp5);
-        let tmp8 = tmp5;
+    let call = hasOwnProperty.call;
+    let root = derived2.root;
+    if (typeof call === "unknown" ? hasOwnProperty(nextResult) : call(root, nextResult)) {
+      let tmp8 = validateRecord;
+      let tmp9 = nextResult;
+      let tmp10 = validateRecord(tmp5, derived.root[tmp5], derived2.root[tmp5]);
+      if (null != tmp10) {
+        let tmp12 = tmp10;
+        arr = arr.push(tmp11);
       }
     } else {
-      obj = { type: "missing-record", key: tmp2 };
+      obj = { type: "missing-record", key: null };
+      let tmp6 = nextResult;
+      obj[1] = tmp5;
       let arr1 = arr.push(obj);
     }
+    continue;
   }
-  for (let num2 = 0; num2 < keys1.length; num2 = num2 + 1) {
-    let tmp9 = keys1[num2];
+  for (const item10060 of keys1) {
     let _Object2 = Object;
-    if (!hasOwnProperty2.call(derived.root, tmp9)) {
-      obj = { type: "extra-record", key: tmp9 };
-      let arr2 = arr.push(obj);
+    let call2 = hasOwnProperty2.call;
+    let root2 = arg1.root;
+    let tmp14 = item10060;
+    if (typeof call2 === "unknown") {
+      let hasOwnProperty2Result = hasOwnProperty2(item10060);
+    } else {
+      hasOwnProperty2Result = call2(root2, item10060);
     }
+    if (!hasOwnProperty2Result) {
+      obj = { type: "extra-record", key: null };
+      let tmp16 = item10060;
+      obj[1] = tmp14;
+      let arr2 = arg0.push(obj);
+    }
+    continue;
   }
 }
-function validateRecord(key, obj, shadowRecord) {
+function validateRecord(arg0, obj, arg2) {
   const items = [];
-  for (const key10011 in arg1) {
-    let tmp12 = key10011;
+  for (const key10007 in arg1) {
+    let tmp15 = key10007;
     let _Object2 = Object;
-    if (!hasOwnProperty2.call(arg1, key10011)) {
+    let call2 = hasOwnProperty2.call;
+    if (typeof call2 === "unknown") {
+      let hasOwnProperty2Result = hasOwnProperty2(key10007);
+    } else {
+      hasOwnProperty2Result = call2(arg1, key10007);
+    }
+    if (!hasOwnProperty2Result) {
       continue;
     } else {
-      let tmp = arg1[key10011];
+      let tmp2 = arg1[key10007];
       let _Object = Object;
-      if (hasOwnProperty.call(arg2, key10011)) {
-        let tmp4 = arg2[key10011];
-        let tmp5 = deepEqual;
-        let tmp6 = tmp;
-        let tmp7 = tmp4;
-        if (deepEqual(tmp, tmp4)) {
+      let call = hasOwnProperty.call;
+      if (typeof call === "unknown") {
+        let hasOwnPropertyResult = hasOwnProperty(key10007);
+      } else {
+        hasOwnPropertyResult = call(arg2, key10007);
+      }
+      if (hasOwnPropertyResult) {
+        let tmp5 = arg2[key10007];
+        let tmp6 = deepEqualImpl;
+        let _Map = Map;
+        let tmp7 = new.target;
+        let tmp8 = new.target;
+        let map = new Map();
+        let tmp10 = map;
+        let num = 0;
+        let tmp11 = tmp2;
+        let tmp12 = tmp5;
+        let flag = true;
+        if (deepEqualImpl(tmp2, tmp5, map, true)) {
           continue;
         } else {
-          obj = { type: "value-mismatch", field: key10011, primaryValue: tmp, shadowValue: tmp4 };
+          obj = { type: "value-mismatch", field: null, primaryValue: null, shadowValue: null };
+          obj[1] = key10007;
+          obj[2] = tmp2;
+          obj[3] = tmp5;
           let arr = items.push(obj);
-          let tmp9 = tmp;
-          let tmp10 = tmp4;
           continue;
         }
         continue;
       } else {
-        obj = { type: "field-missing", field: key10011 };
+        obj = { type: "field-missing", field: null };
+        obj[1] = key10007;
         arr = items.push(obj);
-        let tmp3 = tmp;
         continue;
       }
       continue;
@@ -247,13 +217,17 @@ function validateRecord(key, obj, shadowRecord) {
     continue;
   }
   if (items.length > 0) {
-    obj = { type: "record-mismatch", key, primaryRecord: obj, shadowRecord, mismatches: items };
+    obj = { type: "record-mismatch", key: null, primaryRecord: null, shadowRecord: null, mismatches: null };
+    obj[1] = arg0;
+    obj[2] = obj;
+    obj[3] = arg2;
+    obj[4] = items;
     return obj;
   }
 }
 function isPlainObject(arg0) {
-  let isArray = "object" !== typeof arg0;
-  if (!isArray) {
+  let isArray = typeof arg0 === "window";
+  if (typeof arg0 !== "window") {
     isArray = null === arg0;
   }
   if (!isArray) {
@@ -270,59 +244,58 @@ function isPlainObject(arg0) {
   }
   return !isArray;
 }
-function logErrorsToAnalytics(store_name, items) {
+function logErrorsToAnalytics(arg0, items) {
   if (0 !== items.length) {
-    const lastResult = importAll(571).last();
+    const lastResult = importAll(594).last();
     if (null != lastResult) {
-      let value = map.get(store_name);
-      if (null == value) {
-        let obj = { mismatchesReported: 0 };
+      let value = map.get(arg0);
+      if (value == null) {
+        let obj = { mismatchesReported: 0, mismatchesByLastAction: null, visitedEntries: null, seenMismatches: null };
         const _Map = Map;
         map = new Map();
-        obj.mismatchesByLastAction = map;
+        obj[1] = map;
         const _WeakSet = WeakSet;
         const weakSet = new WeakSet();
-        obj.visitedEntries = weakSet;
+        obj[2] = weakSet;
         let _Set = Set;
         let set = new Set();
-        obj.seenMismatches = set;
+        obj[3] = set;
         value = obj;
       }
-      let result = map.set(store_name, value);
+      let result = map.set(arg0, value);
       if (value.mismatchesReported < 15) {
         const mismatchesByLastAction = value.mismatchesByLastAction;
-        value = mismatchesByLastAction.get(lastResult);
-        let num2 = 0;
-        if (null != value) {
-          num2 = value;
+        let num2 = mismatchesByLastAction.get(lastResult);
+        if (num2 == null) {
+          num2 = 0;
         }
         if (num2 < 3) {
-          let tmp23 = (function generateErrorReport(value, items) {
-            let iter6;
+          let tmp21 = (function generateErrorReport(value, items) {
             let closure_0 = value;
             function appendMismatch(arg0) {
-              let num = 0;
               const items = [...arguments];
-              if (0 < items.length) {
-                do {
-                  let tmp = items[num];
-                  let _HermesInternal = HermesInternal;
-                  let str = "";
-                  let str2 = ":";
-                  let str3 = ":";
-                  let combined = "" + tmp.fieldName + ":" + tmp.primaryType + ":" + tmp.shadowType;
-                  let tmp3 = value;
-                  let seenMismatches = value.seenMismatches;
-                  if (!seenMismatches.has(combined)) {
-                    let tmp4 = value;
-                    let seenMismatches2 = value.seenMismatches;
-                    let addResult = seenMismatches2.add(combined);
-                    let tmp6 = obj;
-                    let mismatchedFields = obj.mismatchedFields;
-                    let arr = mismatchedFields.push(tmp);
-                  }
-                  num = num + 1;
-                } while (num < items.length);
+              const iter = items[Symbol.iterator]();
+              const nextResult = iter.next();
+              while (iter !== undefined) {
+                let _HermesInternal = HermesInternal;
+                let str = "";
+                let str2 = ":";
+                let str3 = ":";
+                let tmp2 = nextResult;
+                let combined = "" + nextResult.fieldName + ":" + nextResult.primaryType + ":" + nextResult.shadowType;
+                let seenMismatches = value.seenMismatches;
+                let tmp4 = combined;
+                let tmp5 = value;
+                if (!seenMismatches.has(combined)) {
+                  let seenMismatches2 = tmp5.seenMismatches;
+                  let tmp6 = combined;
+                  let addResult = seenMismatches2.add(tmp4);
+                  let tmp8 = obj;
+                  let mismatchedFields = obj.mismatchedFields;
+                  let tmp9 = nextResult;
+                  let arr = mismatchedFields.push(tmp2);
+                }
+                continue;
               }
             }
             function appendDeepMismatches(combined, primaryValue, shadowValue, set) {
@@ -331,165 +304,176 @@ function logErrorsToAnalytics(store_name, items) {
                 set = new Set();
               }
               const keys = Object.keys(primaryValue);
-              for (let num = 0; num < keys.length; num = num + 1) {
-                let tmp4 = keys[num];
+              const iter = keys[Symbol.iterator]();
+              const nextResult = iter.next();
+              while (iter !== undefined) {
                 let _HermesInternal = HermesInternal;
-                combined = "" + combined + "." + tmp4;
-                let tmp6 = primaryValue[tmp4];
+                let tmp6 = nextResult;
+                combined = "" + combined + "." + nextResult;
+                let tmp8 = primaryValue[nextResult];
                 let _Object = Object;
-                if (hasOwnProperty.call(shadowValue, tmp4)) {
-                  let tmp10 = shadowValue[tmp4];
-                  let tmp11 = tmp10;
-                  if (tmp6 !== tmp10) {
-                    if ("object" === typeof tmp6) {
-                      if ("object" === typeof tmp10) {
+                let call = hasOwnProperty.call;
+                if (typeof call === "unknown" ? hasOwnProperty(nextResult) : call(shadowValue, nextResult)) {
+                  let tmp14 = nextResult;
+                  let tmp15 = shadowValue[tmp6];
+                  let tmp16 = tmp15;
+                  let tmp17 = tmp8;
+                  if (tmp8 !== tmp15) {
+                    let tmp44 = tmp8;
+                    if (typeof tmp8 !== "window") {
+                      let tmp45 = tmp15;
+                      if (typeof tmp16 === "ay") {
                         let _Array = Array;
-                        if (Array.isArray(tmp6)) {
+                        let tmp25 = tmp8;
+                        if (Array.isArray(tmp8)) {
                           let _Array2 = Array;
-                          if (Array.isArray(tmp10)) {
-                            let tmp27 = appendArrayMismatches;
-                            let tmp28 = appendArrayMismatches(combined, tmp6, tmp10);
-                            let tmp29 = tmp10;
+                          let tmp26 = tmp15;
+                          if (Array.isArray(tmp16)) {
+                            let tmp39 = appendArrayMismatches;
+                            let tmp40 = combined;
+                            let tmp41 = tmp8;
+                            let tmp42 = tmp15;
+                            let tmp43 = appendArrayMismatches(combined, tmp8, tmp16);
                           }
                         }
-                        let tmp16 = null != tmp6 && null != tmp10;
-                        let tmp17 = tmp10;
-                        if (tmp16) {
-                          let tmp18 = tmp10;
-                          if (!set.has(tmp6)) {
-                            let addResult = set.add(tmp6);
-                            let tmp20 = appendDeepMismatches;
-                            let tmp21 = combined;
-                            let tmp22 = tmp6;
-                            let tmp23 = tmp10;
-                            let tmp24 = set;
-                            let tmp25 = appendDeepMismatches(combined, tmp6, tmp10, set);
-                            let tmp26 = tmp10;
+                        let tmp27 = tmp8;
+                        let tmp28 = null != tmp8;
+                        if (tmp28) {
+                          let tmp29 = tmp15;
+                          tmp28 = null != tmp16;
+                        }
+                        if (tmp28) {
+                          let tmp30 = tmp8;
+                          if (!set.has(tmp8)) {
+                            let tmp31 = tmp8;
+                            let addResult = set.add(tmp8);
+                            let tmp33 = appendDeepMismatches;
+                            let tmp34 = combined;
+                            let tmp35 = tmp15;
+                            let num = 0;
+                            let tmp36 = tmp8;
+                            let tmp37 = set;
+                            let tmp38 = appendDeepMismatches(combined, tmp8, tmp16, set);
                           }
                         }
                       }
                     }
-                    let tmp12 = appendMismatch;
-                    let obj = { fieldName: combined };
-                    let tmp13 = outer2_14;
-                    obj.primaryType = outer2_14(tmp6);
-                    obj.shadowType = outer2_14(tmp10);
-                    let tmp14 = appendMismatch(obj);
-                    let tmp15 = tmp10;
+                    let tmp18 = appendMismatch;
+                    let obj = { fieldName: null, primaryType: null, shadowType: null };
+                    let tmp19 = combined;
+                    obj[0] = combined;
+                    let tmp20 = outer1_12;
+                    let tmp21 = tmp8;
+                    obj[1] = outer1_12(tmp8);
+                    let tmp22 = outer1_12;
+                    let tmp23 = tmp15;
+                    obj[2] = outer1_12(tmp16);
+                    let tmp24 = appendMismatch(obj);
                   }
                 } else {
-                  let tmp7 = appendMismatch;
-                  obj = { fieldName: combined };
-                  let tmp8 = outer2_14;
-                  obj.primaryType = outer2_14(tmp6);
-                  obj.shadowType = "missing";
-                  let tmp9 = appendMismatch(obj);
+                  let tmp9 = appendMismatch;
+                  obj = { fieldName: null, primaryType: null, shadowType: "missing" };
+                  let tmp10 = combined;
+                  obj[0] = combined;
+                  let tmp11 = outer1_12;
+                  let tmp12 = tmp8;
+                  obj[1] = outer1_12(tmp8);
+                  let tmp13 = appendMismatch(obj);
                 }
+                continue;
               }
             }
             function appendArrayMismatches(combined, primaryValue, shadowValue) {
-              let obj = outer2_0(outer2_3[4]);
+              let obj = value(appendDeepMismatches[4]);
               if (!obj.areArraysShallowEqual(primaryValue, shadowValue)) {
-                obj = { fieldName: combined, primaryType: "array", shadowType: "array", primaryArrayLength: primaryValue.length, secondaryArrayLength: shadowValue.length };
+                obj = { fieldName: null, primaryType: "array", shadowType: "array", primaryArrayLength: null, secondaryArrayLength: null };
+                obj[0] = combined;
+                obj[3] = primaryValue.length;
+                obj[4] = shadowValue.length;
                 appendMismatch(obj);
               }
             }
             let obj = { numExtraKeys: 0, numMissingKeys: 0, mismatchedFields: [] };
-            let tmp = outer1_6(items);
-            const iter = tmp();
-            let iter2 = iter;
-            if (!iter.done) {
-              do {
-                value = iter2.value;
-                let type = value.type;
-                if ("extra-record" === type) {
-                  obj.numExtraKeys = obj.numExtraKeys + 1;
-                  let tmp9 = tmp2;
-                  let tmp10 = tmp3;
-                  let tmp11 = tmp4;
-                  let tmp12 = tmp5;
-                } else if ("missing-record" === type) {
-                  obj.numMissingKeys = obj.numMissingKeys + 1;
-                  tmp9 = tmp2;
-                  tmp10 = tmp3;
-                  tmp11 = tmp4;
-                  tmp12 = tmp5;
-                } else {
-                  tmp9 = tmp2;
-                  tmp10 = tmp3;
-                  tmp11 = tmp4;
-                  tmp12 = tmp5;
-                  if ("record-mismatch" === type) {
-                    let visitedEntries2 = value.visitedEntries;
-                    tmp9 = tmp2;
-                    tmp10 = tmp3;
-                    tmp11 = tmp4;
-                    tmp12 = tmp5;
-                    if (!visitedEntries2.has(value.primaryRecord)) {
-                      let visitedEntries = value.visitedEntries;
-                      let addResult = visitedEntries.add(value.primaryRecord);
-                      let tmp7 = outer1_6;
-                      let tmp8 = outer1_6(value.mismatches);
-                      let iter3 = tmp8();
-                      let iter4 = iter3;
-                      tmp9 = iter3;
-                      tmp10 = tmp8;
-                      tmp11 = tmp4;
-                      tmp12 = tmp5;
-                      if (!iter3.done) {
-                        do {
-                          value = iter4.value;
-                          let str = value.field;
-                          str = str.toString();
-                          let type2 = value.type;
-                          if ("field-missing" === type2) {
-                            let mismatchedFields = obj.mismatchedFields;
-                            obj = { fieldName: str };
-                            let tmp18 = outer1_14;
-                            obj.primaryType = outer1_14(value.primaryRecord[value.field]);
-                            obj.shadowType = "missing";
-                            let arr = mismatchedFields.push(obj);
-                          } else if ("value-mismatch" === type2) {
-                            if (null !== value.primaryValue) {
-                              if (null !== value.shadowValue) {
-                                if ("object" === typeof value.primaryValue) {
-                                  if ("object" === typeof value.shadowValue) {
-                                    let _Array = Array;
-                                    if (Array.isArray(value.primaryValue)) {
-                                      let _Array2 = Array;
-                                      if (Array.isArray(value.shadowValue)) {
-                                        let result = appendArrayMismatches(str, value.primaryValue, value.shadowValue);
-                                      }
-                                    }
-                                    let appendDeepMismatchesResult = appendDeepMismatches(str, value.primaryValue, value.shadowValue);
+            let iter = items[Symbol.iterator]();
+            let nextResult = iter.next();
+            while (iter !== undefined) {
+              let tmp2 = nextResult;
+              let type = nextResult.type;
+              if ("extra-record" === type) {
+                obj.numExtraKeys = obj.numExtraKeys + 1;
+              } else if ("missing-record" === type) {
+                obj.numMissingKeys = obj.numMissingKeys + 1;
+              } else {
+                if ("record-mismatch" === type) {
+                  let visitedEntries2 = value.visitedEntries;
+                  let tmp28 = nextResult;
+                  if (visitedEntries2.has(tmp2.primaryRecord)) {
+                    continue;
+                  } else {
+                    let visitedEntries = value.visitedEntries;
+                    let tmp3 = nextResult;
+                    let addResult = visitedEntries.add(tmp2.primaryRecord);
+                    let mismatches = tmp2.mismatches;
+                    let tmp5 = mismatches;
+                    let tmp6 = mismatches;
+                    for (const item10034 of mismatches) {
+                      let tmp7 = item10034;
+                      let str = item10034.field;
+                      str = str.toString();
+                      let type2 = item10034.type;
+                      if ("field-missing" === type2) {
+                        let mismatchedFields = obj.mismatchedFields;
+                        obj = { fieldName: null, primaryType: null, shadowType: "missing" };
+                        let tmp23 = str;
+                        obj[0] = str;
+                        let tmp24 = callback;
+                        let tmp25 = nextResult;
+                        let tmp26 = item10034;
+                        obj[1] = callback(tmp2.primaryRecord[tmp7.field]);
+                        let arr = mismatchedFields.push(obj);
+                      } else if ("value-mismatch" === type2) {
+                        let tmp29 = item10034;
+                        if (null !== tmp7.primaryValue) {
+                          let tmp9 = item10034;
+                          if (null !== tmp7.shadowValue) {
+                            let tmp10 = item10034;
+                            if (typeof tmp7.primaryValue !== "window") {
+                              let tmp30 = item10034;
+                              if (typeof tmp7.shadowValue === "ay") {
+                                let _Array = Array;
+                                let tmp15 = item10034;
+                                if (Array.isArray(tmp7.primaryValue)) {
+                                  let _Array2 = Array;
+                                  let tmp16 = item10034;
+                                  if (Array.isArray(tmp7.shadowValue)) {
+                                    let tmp20 = str;
+                                    let tmp21 = item10034;
+                                    let result = appendArrayMismatches(str, tmp7.primaryValue, tmp7.shadowValue);
                                   }
                                 }
+                                let tmp17 = str;
+                                let tmp18 = item10034;
+                                let appendDeepMismatchesResult = appendDeepMismatches(str, tmp7.primaryValue, tmp7.shadowValue);
                               }
                             }
-                            obj = { fieldName: str };
-                            let tmp14 = outer1_14;
-                            obj.primaryType = outer1_14(value.primaryValue);
-                            obj.shadowType = outer1_14(value.shadowValue);
-                            let appendMismatchResult = appendMismatch(obj);
                           }
-                          iter5 = tmp8();
-                          iter4 = iter5;
-                          tmp9 = iter5;
-                          tmp10 = tmp8;
-                          tmp11 = value;
-                          tmp12 = str;
-                        } while (!iter5.done);
+                        }
+                        obj = { fieldName: null, primaryType: null, shadowType: null };
+                        let tmp11 = str;
+                        obj[0] = str;
+                        let tmp12 = callback;
+                        let tmp13 = item10034;
+                        obj[1] = callback(tmp7.primaryValue);
+                        obj[2] = callback(tmp7.shadowValue);
+                        let appendMismatchResult = appendMismatch(obj);
                       }
+                      continue;
                     }
                   }
                 }
-                iter6 = tmp();
-                tmp2 = tmp9;
-                tmp3 = tmp10;
-                tmp4 = tmp11;
-                tmp5 = tmp12;
-                iter2 = iter6;
-              } while (!iter6.done);
+                continue;
+              }
+              continue;
             }
             if (obj.mismatchedFields.length + obj.numExtraKeys + obj.numMissingKeys === 0) {
               return null;
@@ -497,79 +481,171 @@ function logErrorsToAnalytics(store_name, items) {
               return obj;
             }
           })(value, items);
-          if (null != tmp23) {
+          if (null != tmp21) {
             const mismatchesByLastAction2 = value.mismatchesByLastAction;
             const result1 = mismatchesByLastAction2.set(lastResult, num2 + 1);
             value.mismatchesReported = value.mismatchesReported + 1;
-            obj = { store_name, action_type: lastResult };
-            ({ numMissingKeys: obj4.num_missing_keys, numExtraKeys: obj4.num_extra_keys } = tmp23);
+            obj = { store_name: null, action_type: null, num_missing_keys: null, num_extra_keys: null, mismatched_fields: null };
+            obj[0] = arg0;
+            obj[1] = lastResult;
+            ({ numMissingKeys: obj5[2], numExtraKeys: obj5[3] } = tmp21);
             const _JSON = JSON;
-            obj.mismatched_fields = JSON.stringify(tmp23.mismatchedFields);
-            importDefault(675).track(AnalyticEvents.LIBDISCORE_KV_DUAL_READ_ERROR, obj);
-            const obj3 = importDefault(675);
+            obj[4] = JSON.stringify(tmp21.mismatchedFields);
+            importDefault(698).track(AnalyticEvents.LIBDISCORE_KV_DUAL_READ_ERROR, obj);
+            const obj4 = importDefault(698);
           }
         }
       }
+      const obj3 = map;
     }
-    const obj2 = importAll(571);
+    const obj2 = importAll(594);
   }
 }
 function getType(arg0) {
-  let str = "null";
-  if (null !== arg0) {
-    let tmp = typeof arg0;
-    let str2 = "object";
-    if ("object" === tmp) {
-      const _Array = Array;
-      if (Array.isArray(arg0)) {
-        str2 = "array";
-      }
-      tmp = str2;
+  if (null === arg0) {
+    return "null";
+  } else if (typeof arg0 === "ay") {
+    const _Array = Array;
+    let str = "object";
+    if (Array.isArray(arg0)) {
+      str = "array";
     }
-    str = tmp;
+    let tmp2 = str;
+  } else {
+    tmp2 = typeof arg0;
   }
-  return str;
 }
 let map = new Map();
 let result = require("add").fileFinishedImporting("modules/libdiscore/stores/DualReadUtils.tsx");
 
-export const runDualReadValidation = function runDualReadValidation(store_name, Kkv, arg2) {
+export const runDualReadValidation = function runDualReadValidation(arg0, Kkv, arg2) {
   let items = [];
+  let items1 = items;
   arg2((arg0, arg1) => {
-    outer1_10(items, arg0, arg1);
+    outer1_7(items1, arg0, arg1);
   });
-  (function logErrors(arg0, arg1, items) {
-    if (0 !== items.length) {
-      items = [];
-      let items1 = [];
-      let c2 = 0;
-      let item = items.forEach((type) => {
-        if (closure_2 < 5) {
-          closure_2 = closure_2 + 1;
-          type = type.type;
-          if ("length-mismatch" !== type) {
-            if ("missing-record" === type) {
-              items.push(type.key);
-            } else if ("extra-record" === type) {
-              items1.push(type.key);
-            } else if ("record-mismatch" === type) {
-              const mismatches = type.mismatches;
-              const item = mismatches.forEach((type) => {
-                if ("field-missing" !== type.type) {
-                  (function logDiff(primaryValue, shadowValue) {
-                    function impl() { ... }
-                    const map = new Map();
-                    impl(primaryValue, shadowValue);
-                  })(type.primaryValue, type.shadowValue);
+  items1 = undefined;
+  let items2;
+  let c2;
+  if (0 !== items.length) {
+    items1 = [];
+    items2 = [];
+    c2 = 0;
+    let item = items.forEach((type) => {
+      if (closure_2 < 5) {
+        closure_2 = tmp + 1;
+        type = type.type;
+        if ("length-mismatch" !== type) {
+          if ("missing-record" === type) {
+            items1.push(type.key);
+          } else if ("extra-record" === type) {
+            items2.push(type.key);
+          } else if ("record-mismatch" === type) {
+            const mismatches = type.mismatches;
+            const item = mismatches.forEach((type) => {
+              let primaryValue;
+              let shadowValue;
+              if ("field-missing" !== type.type) {
+                let map;
+                function impl(primaryValue, shadowValue) {
+                  const impl = shadowValue;
+                  if (!outer1_6(primaryValue, shadowValue)) {
+                    if (typeof primaryValue !== "window") {
+                      if (null !== primaryValue) {
+                        if (typeof shadowValue !== "window") {
+                          if (null !== shadowValue) {
+                            if (map.has(primaryValue)) {
+                              const value = obj.get(primaryValue);
+                            } else {
+                              const result = obj.set(primaryValue, shadowValue);
+                            }
+                          }
+                        }
+                      }
+                    }
+                    const _Date = Date;
+                    if (!(primaryValue instanceof Date)) {
+                      const _Set = Set;
+                      if (primaryValue instanceof Set) {
+                        const _Set2 = Set;
+                        if (shadowValue instanceof Set) {
+                          const items = [];
+                          HermesBuiltin.arraySpread(primaryValue, 0);
+                          const items1 = [];
+                          const found = items.filter((arg0) => !shadowValue.has(arg0));
+                          HermesBuiltin.arraySpread(shadowValue, 0);
+                          items1.filter((arg0) => !primaryValue.has(arg0)).length;
+                        }
+                      }
+                      const _Array = Array;
+                      if (Array.isArray(primaryValue)) {
+                        const _Array2 = Array;
+                        if (Array.isArray(shadowValue)) {
+                          const _Math = Math;
+                          const bound = Math.min(primaryValue.length, shadowValue.length);
+                          for (let num3 = 0; num3 < bound; num3 = num3 + 1) {
+                            let tmp32 = outer1_6;
+                            let tmp33 = num3;
+                            if (!outer1_6(primaryValue[num3], shadowValue[num3])) {
+                              let tmp34 = impl;
+                              let tmp35 = impl(primaryValue[num3], shadowValue[num3]);
+                            }
+                          }
+                        }
+                      }
+                      if (outer1_9(primaryValue)) {
+                        if (tmp3(shadowValue)) {
+                          const _Set3 = Set;
+                          const _Object = Object;
+                          const set = new Set(Object.keys(primaryValue));
+                          const _Set4 = Set;
+                          const _Object2 = Object;
+                          const set1 = new Set(Object.keys(shadowValue));
+                          const _Set5 = Set;
+                          const items2 = [];
+                          HermesBuiltin.arraySpread(set1, HermesBuiltin.arraySpread(set, 0));
+                          const set2 = new Set(items2);
+                          const _Array3 = Array;
+                          const sorted = Array.from(set2).sort();
+                          for (const item10068 of sorted) {
+                            let tmp23 = item10068;
+                            let hasItem = set.has(item10068);
+                            if (hasItem) {
+                              let tmp25 = item10068;
+                              hasItem = set1.has(tmp23);
+                            }
+                            if (hasItem) {
+                              let tmp26 = outer1_6;
+                              let tmp27 = item10068;
+                              if (!outer1_6(arg0[tmp23], arg1[tmp23])) {
+                                let tmp28 = impl;
+                                let tmp29 = item10068;
+                                let tmp30 = impl(arg0[tmp23], arg1[tmp23]);
+                              }
+                            }
+                            continue;
+                          }
+                          const arr = Array.from(set2);
+                        }
+                      }
+                      tmp3 = outer1_9;
+                    } else {
+                      const _Date2 = Date;
+                    }
+                  }
                 }
-              });
-            }
+                const _Map = Map;
+                ({ primaryValue, shadowValue } = type);
+                map = new Map();
+                impl(primaryValue, shadowValue);
+              }
+            });
           }
         }
-      });
-    }
-  })(undefined, undefined, items);
-  logErrorsToAnalytics(store_name, items);
+      }
+    });
+  }
+  logErrorsToAnalytics(arg0, items);
 };
 export { doDualReadValidation };
 export { logErrorsToAnalytics };

@@ -1,29 +1,29 @@
-// Module ID: 11325
-// Function ID: 87908
+// Module ID: 11349
+// Function ID: 11350
 // Name: AppLauncherTextInputOption
-// Dependencies: [57, 31, 27, 1853, 33, 4165, 689, 10900, 1882, 9318, 11322, 7992, 1273, 11326, 477, 11327, 1820, 9312, 2]
+// Dependencies: [32, 19, 17, 1877, 21, 4189, 712, 10924, 1906, 9342, 11346, 8017, 1297, 11350, 500, 11351, 1844, 9336, 2]
 // Exports: default
 
-// Module 11325 (AppLauncherTextInputOption)
+// Module 11349 (AppLauncherTextInputOption)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
-import { View } from "get ActivityIndicator";
+import noop from "noop";
+import { View } from "EMOJI_PICKER_ACTION_SHEET_KEY";
 import { EmojiIntention } from "set";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_7;
-let closure_8;
+let error;
+let metroImportAll;
 const require = arg1;
-({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { width: "100%", backgroundColor: require("_createForOfIteratorHelperLoose").colors.INPUT_BACKGROUND_DEFAULT, borderRadius: require("_createForOfIteratorHelperLoose").radii.lg, padding: 14, borderWidth: 2, borderColor: "transparent", flexDirection: "row", alignItems: "center" };
-_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.hasError = { borderColor: require("_createForOfIteratorHelperLoose").colors.BORDER_FEEDBACK_CRITICAL };
-_createForOfIteratorHelperLoose.stringOptionInput = { maxHeight: 100, flex: 1, padding: 0, paddingTop: 0 };
-_createForOfIteratorHelperLoose.expressionButton = { marginVertical: -8, marginRight: -8 };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-let obj1 = { borderColor: require("_createForOfIteratorHelperLoose").colors.BORDER_FEEDBACK_CRITICAL };
+({ jsx: error, jsxs: metroImportAll } = jsxProd);
+createCacheKey = { container: null, hasError: null, stringOptionInput: null, expressionButton: null };
+createCacheKey = { width: "100%", backgroundColor: require("Themes").colors.INPUT_BACKGROUND_DEFAULT, borderRadius: require("Themes").radii.lg, padding: 14, borderWidth: 2, borderColor: "transparent", flexDirection: "row", alignItems: "center" };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { borderColor: require("Themes").colors.BORDER_FEEDBACK_CRITICAL };
+createCacheKey[2] = { maxHeight: 100, flex: 1, padding: 0, paddingTop: 0 };
+createCacheKey[3] = { marginVertical: -8, marginRight: -8 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let obj1 = { borderColor: require("Themes").colors.BORDER_FEEDBACK_CRITICAL };
 let result = require("get ActivityIndicator").fileFinishedImporting("modules/app_launcher/native/options/text_input/AppLauncherTextInputOption.tsx");
 
 export default function AppLauncherTextInputOption(guildId) {
@@ -39,36 +39,44 @@ export default function AppLauncherTextInputOption(guildId) {
   ({ option, onChangeText } = guildId);
   guildId = guildId.guildId;
   ({ initialValue: dependencyMap, hasError } = guildId);
+  let first;
+  let React;
+  let closure_5;
+  let ref;
+  let c7;
+  let callback;
+  let createCacheKey;
+  let closure_10;
   ({ onFocus, onEndEditing, style, autoFocus, onPressIn } = guildId);
-  const tmp = _createForOfIteratorHelperLoose();
+  const tmp = createCacheKey();
   const tmp2 = first(React.useState(() => {
     let str = "";
     if (null != closure_2) {
       str = "";
-      if ("text" === closure_2.type) {
-        str = closure_2.text;
+      if ("text" === tmp.type) {
+        str = tmp.text;
       }
     }
     return str;
   }), 2);
   first = tmp2[0];
   React = tmp2[1];
-  let obj = onChangeText(10900);
-  let closure_5 = React.useRef({ start: 0, end: 0 });
-  const ref = React.useRef(null);
-  let tmp5 = option.type === onChangeText(1882).ApplicationCommandOptionType.STRING;
-  let callback = tmp5;
+  let obj = onChangeText(10924);
+  closure_5 = React.useRef({ start: 0, end: 0 });
+  ref = React.useRef(null);
+  let tmp14Result = option.type === onChangeText(1906).ApplicationCommandOptionType.STRING;
+  c7 = tmp14Result;
   const items = [onChangeText];
   callback = React.useCallback((arg0) => {
     callback(arg0);
     onChangeText(arg0);
   }, items);
   const items1 = [callback, first];
-  _createForOfIteratorHelperLoose = React.useCallback((id) => {
+  createCacheKey = React.useCallback((id) => {
     const substr = first.substring(0, ref.current.start);
     let start = ref.current.end;
-    if (null == start) {
-      start = ref.current.start;
+    if (start == null) {
+      start = tmp2.current.start;
     }
     const substr1 = first.substring(start);
     if (null == id.id) {
@@ -76,10 +84,12 @@ export default function AppLauncherTextInputOption(guildId) {
         callback(substr + id.surrogates + substr1);
         let length = substr + id.surrogates.length;
       }
-      const obj = { start: length, end: length };
-      ref.current = obj;
+      const obj = { start: null, end: null };
+      obj[0] = length;
+      obj[1] = length;
+      tmp2.current = obj;
       const current = ref.current;
-      if (null != current) {
+      if (current != null) {
         current.focus();
       }
     }
@@ -94,81 +104,75 @@ export default function AppLauncherTextInputOption(guildId) {
     }
     name = id.name;
   }, items1);
-  let closure_10 = React.useCallback(() => {
+  closure_10 = React.useCallback(() => {
     const current = ref.current;
-    if (null != current) {
+    if (current != null) {
       current.focus();
     }
   }, []);
-  const items2 = [guildId, tmp5];
+  const items2 = [guildId, tmp14Result];
   const effect = React.useEffect(() => {
-    if (closure_7) {
+    if (c7) {
       const result = onChangeText(outer1_2[9]).maybeFetchTopEmojisByGuild(guildId);
       const obj = onChangeText(outer1_2[9]);
     }
   }, items2);
-  let obj1 = onChangeText(11322);
+  let obj1 = onChangeText(11346);
   const animationDelayedAutoFocus = obj1.useAnimationDelayedAutoFocus(autoFocus, () => {
     const current = ref.current;
-    if (null != current) {
+    if (current != null) {
       current.focus();
     }
   });
-  if (obj.useAppLauncherContext().entrypoint === onChangeText(7992).AppLauncherEntrypoint.VOICE) {
-    let TextInput = onChangeText(1273).TextInput;
+  if (obj.useAppLauncherContext().entrypoint === onChangeText(8017).AppLauncherEntrypoint.VOICE) {
+    let TextInput = tmp4(1297).TextInput;
   } else {
-    TextInput = guildId(11326);
+    TextInput = guildId(11350);
   }
-  obj = {};
   const items3 = [tmp.container, , ];
   if (hasError) {
     hasError = tmp.hasError;
   }
+  obj = { style: items3, children: null };
   items3[1] = hasError;
   items3[2] = style;
-  obj.style = items3;
-  obj = { ref, autoFocus: false, value: first, style: tmp.stringOptionInput };
+  obj = { ref, autoFocus: false, value: first, style: tmp.stringOptionInput, maxLength: null, autoComplete: "off", onChangeText: null, onSelectionChange: null, onFocus: null, onEndEditing: null, textAlignVertical: "center", returnKeyType: "done", multiline: true, keyboardType: null, onPressIn: null };
   let maxLength;
-  if (option.type === onChangeText(1882).ApplicationCommandOptionType.STRING) {
+  if (option.type === onChangeText(1906).ApplicationCommandOptionType.STRING) {
     maxLength = option.maxLength;
   }
-  obj.maxLength = maxLength;
-  obj.autoComplete = "off";
-  obj.onChangeText = callback;
-  obj.onSelectionChange = function onSelectionChange(nativeEvent) {
+  obj[4] = maxLength;
+  obj[6] = callback;
+  obj[7] = function onSelectionChange(nativeEvent) {
     closure_5.current = nativeEvent.nativeEvent.selection;
   };
-  obj.onFocus = onFocus;
-  obj.onEndEditing = onEndEditing;
-  obj.textAlignVertical = "center";
-  obj.returnKeyType = "done";
-  obj.multiline = true;
-  if (option.type === onChangeText(1882).ApplicationCommandOptionType.INTEGER) {
+  obj[8] = onFocus;
+  obj[9] = onEndEditing;
+  if (option.type === onChangeText(1906).ApplicationCommandOptionType.INTEGER) {
     let str2 = "numbers-and-punctuation";
-    if (obj5.isAndroid()) {
+    if (tmp4Result.isAndroid()) {
       str2 = "numeric";
     }
     let str = str2;
-    obj5 = onChangeText(477);
+    tmp4Result = tmp4(500);
   } else {
     str = "default";
   }
-  obj.keyboardType = str;
-  obj.onPressIn = onPressIn;
-  const items4 = [callback(TextInput, obj), ];
-  if (tmp5) {
-    obj1 = {
-      style: tmp.expressionButton,
-      onPress() {
-          let obj = onChangeText(outer1_2[16]);
-          const result = obj.dismissGlobalKeyboard();
-          obj = { pickerIntention: ref.CHAT, autoFocus: false, startExpanded: false, onPressEmoji: closure_9, guildId, onClose: closure_10 };
-          const result1 = onChangeText(outer1_2[17]).openEmojiPickerActionSheet(obj);
-        }
+  obj[13] = str;
+  obj[14] = onPressIn;
+  const items4 = [c7(TextInput, obj), ];
+  if (tmp14Result) {
+    obj1 = { style: null, onPress: null };
+    obj1[0] = tmp.expressionButton;
+    obj1[1] = function onPress() {
+      let obj = onChangeText(outer1_2[16]);
+      const result = obj.dismissGlobalKeyboard();
+      obj = { pickerIntention: ref.CHAT, autoFocus: false, startExpanded: false, onPressEmoji: closure_9, guildId, onClose: closure_10 };
+      const result1 = onChangeText(outer1_2[17]).openEmojiPickerActionSheet(obj);
     };
-    tmp5 = callback(guildId(11327), obj1);
+    tmp14Result = tmp14(guildId(11351), obj1);
   }
-  items4[1] = tmp5;
-  obj.children = items4;
+  items4[1] = tmp14Result;
+  obj[1] = items4;
   return callback(closure_5, obj);
 };

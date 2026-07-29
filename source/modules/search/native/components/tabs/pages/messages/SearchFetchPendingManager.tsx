@@ -1,57 +1,80 @@
-// Module ID: 15497
-// Function ID: 118105
-// Name: SearchFetchPendingManager
-// Dependencies: [7, 6, 31, 11428, 5485, 2]
+// Module ID: 15531
+// Function ID: 15532
+// Name: useSearchFetchPendingManager
+// Dependencies: [19, 11452, 5503, 2]
 // Exports: useSearchFetchPendingManager
 
-// Module 15497 (SearchFetchPendingManager)
-import _classCallCheck from "_classCallCheck";
-import result from "result";
-import importDefaultResult from "_defineProperties";
+// Module 15531 (useSearchFetchPendingManager)
+import noop from "noop";
 
-class SearchFetchPendingManager {
-  constructor() {
-    self = this;
-    tmp = c2(this, SearchFetchPendingManager);
-    set = new Set();
-    this.pending = set;
-    this.add = (arg0) => {
-      const pending = self.pending;
-      pending.add(arg0);
-    };
-    this.remove = (arg0) => {
-      const pending = self.pending;
-      pending.delete(arg0);
-    };
-    this.has = (arg0) => {
-      const pending = self.pending;
-      return pending.has(arg0);
-    };
-    this.flush = (searchContext, tab) => {
-      if (self.has(tab)) {
-        if (obj.fetchNextMessages(searchContext, tab)) {
-          self.remove(tab);
-        }
-        obj = self(outer1_1[3]);
+let closure_3 = function SearchFetchPendingManager() {
+  const obj = Object.create(new.target.prototype);
+  obj.pending = new Set();
+  obj.add = function add(arg0) {
+    const pending = obj.pending;
+    pending.add(arg0);
+  };
+  obj.remove = function remove(arg0) {
+    const pending = obj.pending;
+    pending.delete(arg0);
+  };
+  obj.has = function has(arg0) {
+    const pending = obj.pending;
+    return pending.has(arg0);
+  };
+  obj.flush = function flush(searchContext, tab) {
+    if (obj.has(tab)) {
+      if (obj2.fetchNextMessages(searchContext, tab)) {
+        obj.remove(tab);
       }
-    };
-    this.reset = () => {
-      self.pending = new Set();
-    };
-    return;
-  }
-}
-let closure_4 = require("_defineProperties")(SearchFetchPendingManager);
-const result = require("result").fileFinishedImporting("modules/search/native/components/tabs/pages/messages/SearchFetchPendingManager.tsx");
+      obj2 = obj(outer1_1[1]);
+    }
+  };
+  obj.reset = function reset() {
+    obj.pending = new Set();
+  };
+  return obj;
+}.prototype;
+const result = require("useInitialValue").fileFinishedImporting("modules/search/native/components/tabs/pages/messages/SearchFetchPendingManager.tsx");
 
 export const useSearchFetchPendingManager = function useSearchFetchPendingManager(searchContext) {
   const importDefault = searchContext;
-  const tmp = importDefault(5485)(() => new outer1_4());
+  const tmp = importDefault(5503)(() => {
+    if (typeof closure_3 !== "find") {
+      HermesBuiltin.throwTypeError();
+    }
+    const obj = Object.create(closure_3.prototype);
+    obj.pending = new Set();
+    obj.add = function add(arg0) {
+      const pending = obj.pending;
+      pending.add(arg0);
+    };
+    obj.remove = function remove(arg0) {
+      const pending = obj.pending;
+      pending.delete(arg0);
+    };
+    obj.has = function has(arg0) {
+      const pending = obj.pending;
+      return pending.has(arg0);
+    };
+    obj.flush = function flush(searchContext, tab) {
+      if (obj.has(tab)) {
+        if (obj2.fetchNextMessages(searchContext, tab)) {
+          obj.remove(tab);
+        }
+        obj2 = obj(outer1_1[1]);
+      }
+    };
+    obj.reset = function reset() {
+      obj.pending = new Set();
+    };
+    return obj;
+  });
   const dependencyMap = tmp;
   const items = [searchContext, tmp];
-  const effect = React.useEffect(() => searchContext(tmp[3]).subscribeTextInputValue(searchContext, (arg0, arg1) => {
+  const effect = React.useEffect(() => searchContext(tmp[1]).subscribeTextInputValue(searchContext, (arg0, arg1) => {
     if (arg1 !== arg0) {
-      outer1_1.reset();
+      navigation.reset();
     }
   }), items);
   return tmp;

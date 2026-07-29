@@ -1,12 +1,13 @@
-// Module ID: 12786
-// Function ID: 99444
+// Module ID: 12808
+// Function ID: 12809
 // Name: getFrictionlessGDMsEnabled
-// Dependencies: [1325, 2]
+// Dependencies: [1349, 2]
 // Exports: getFrictionlessGDMsEnabled
 
-// Module 12786 (getFrictionlessGDMsEnabled)
-const obj = { kind: "user", name: "2026-05-frictionless-gdms", defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } };
-const tmp2 = require("getUnitId")(obj);
+// Module 12808 (getFrictionlessGDMsEnabled)
+const obj = { 1: null };
+obj[1] = { enabled: true };
+const tmp2 = require("getUnitId")({ kind: "user", name: "2026-05-frictionless-gdms", defaultConfig: { enabled: false }, variations: obj });
 const result = require("set").fileFinishedImporting("modules/header_bar/FrictionlessGDMsExperiment.tsx");
 
 export default tmp2;

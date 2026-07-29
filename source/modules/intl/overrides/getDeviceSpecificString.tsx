@@ -1,25 +1,24 @@
-// Module ID: 6117
-// Function ID: 54447
+// Module ID: 6135
+// Function ID: 6136
 // Name: getDeviceSpecificString
-// Dependencies: [1212, 1553, 2]
+// Dependencies: [1236, 1577, 2]
 // Exports: getDeviceSpecificString
 
-// Module 6117 (getDeviceSpecificString)
+// Module 6135 (getDeviceSpecificString)
 const result = require("set").fileFinishedImporting("modules/intl/overrides/getDeviceSpecificString.tsx");
 
 export const getDeviceSpecificString = function getDeviceSpecificString(arg0, _2Yp7dF) {
-  let tmp = _2Yp7dF;
   let str = null;
   if (obj.isMetaQuest()) {
     str = "quest";
   }
-  let tmp2 = null;
+  let tmp3 = null;
   if (null != str) {
-    tmp2 = arg0[str];
+    tmp3 = arg0[str];
   }
-  if (null != tmp2) {
-    tmp = tmp2;
+  if (tmp3 == null) {
+    tmp3 = _2Yp7dF;
   }
-  const intl = require(1212) /* getSystemLocale */.intl;
-  return intl.string(tmp);
+  const intl = require(1236) /* getSystemLocale */.intl;
+  return intl.string(tmp3);
 };

@@ -1,20 +1,20 @@
-// Module ID: 12389
-// Function ID: 96228
+// Module ID: 12411
+// Function ID: 12412
 // Name: MultiSelect
-// Dependencies: [31, 27, 33, 4165, 689, 5536, 9068, 2]
+// Dependencies: [19, 17, 21, 4189, 712, 5554, 9092, 2]
 // Exports: default
 
-// Module 12389 (MultiSelect)
-import "result";
+// Module 12411 (MultiSelect)
+import "noop";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
 const require = arg1;
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16, paddingVertical: require("_createForOfIteratorHelperLoose").space.PX_16 };
-_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+createCacheKey = { container: null };
+createCacheKey = { paddingHorizontal: require("Themes").space.PX_16, paddingVertical: require("Themes").space.PX_16 };
+createCacheKey[0] = createCacheKey;
+createCacheKey = createCacheKey.createStyles(createCacheKey);
 const result = require("jsxProd").fileFinishedImporting("modules/in_app_reports/native/components/InAppReportsMultiSelect.tsx");
 
 export default function MultiSelect(arg0) {
@@ -25,42 +25,10 @@ export default function MultiSelect(arg0) {
   if (null != element) {
     if ("checkbox" === element.type) {
       const data = element.data;
-      let obj = { style: tmp.container };
-      obj = {
-        hasIcons: false,
-        children: data.map((arg0) => {
-              let tmp;
-              let tmp2;
-              let tmp3;
-              [tmp, tmp2, tmp3] = arg0;
-              return outer1_3(outer1_0(outer1_1[6]).TableCheckboxRow, {
-                label: tmp2,
-                subLabel: tmp3,
-                onPress() {
-                  return outer1_0(closure_0, closure_1);
-                },
-                checked: tmp in closure_1
-              }, tmp);
-            })
-      };
-      obj.children = jsx(require(5536) /* TableRowGroupTitle */.TableRowGroup, {
-        hasIcons: false,
-        children: data.map((arg0) => {
-              let tmp;
-              let tmp2;
-              let tmp3;
-              [tmp, tmp2, tmp3] = arg0;
-              return outer1_3(outer1_0(outer1_1[6]).TableCheckboxRow, {
-                label: tmp2,
-                subLabel: tmp3,
-                onPress() {
-                  return outer1_0(closure_0, closure_1);
-                },
-                checked: tmp in closure_1
-              }, tmp);
-            })
-      });
-      return <View hasIcons={false}>{data.map((arg0) => {
+      let obj = { style: null, children: null };
+      obj[0] = tmp.container;
+      obj = { hasIcons: false, children: null };
+      obj[1] = data.map((arg0) => {
         let tmp;
         let tmp2;
         let tmp3;
@@ -73,7 +41,9 @@ export default function MultiSelect(arg0) {
           },
           checked: tmp in closure_1
         }, tmp);
-      })}</View>;
+      });
+      obj[1] = jsx(require(5554) /* TableRowGroupTitle */.TableRowGroup, { hasIcons: false, children: null });
+      return <View hasIcons={false}>{null}</View>;
     }
   }
   return null;

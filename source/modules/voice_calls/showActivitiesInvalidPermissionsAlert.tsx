@@ -1,19 +1,18 @@
-// Module ID: 10618
-// Function ID: 82594
+// Module ID: 10641
+// Function ID: 10642
 // Name: showActivitiesInvalidPermissionsAlert
-// Dependencies: [4505, 1212, 2]
+// Dependencies: [4528, 1236, 2]
 // Exports: showActivitiesInvalidPermissionsAlert
 
-// Module 10618 (showActivitiesInvalidPermissionsAlert)
+// Module 10641 (showActivitiesInvalidPermissionsAlert)
 const result = require("set").fileFinishedImporting("modules/voice_calls/showActivitiesInvalidPermissionsAlert.tsx");
 
 export const showActivitiesInvalidPermissionsAlert = function showActivitiesInvalidPermissionsAlert() {
-  let obj = importDefault(4505);
-  obj = {};
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj.title = intl.string(require(1212) /* getSystemLocale */.t.otsg2R);
-  const intl2 = require(1212) /* getSystemLocale */.intl;
-  obj.body = intl2.string(require(1212) /* getSystemLocale */.t["/Yx5qX"]);
-  obj.hideActionSheet = false;
+  let obj = importDefault(4528);
+  obj = { title: null, body: null, hideActionSheet: false };
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj[0] = intl.string(require(1236) /* getSystemLocale */.t.otsg2R);
+  const intl2 = require(1236) /* getSystemLocale */.intl;
+  obj[1] = intl2.string(require(1236) /* getSystemLocale */.t["/Yx5qX"]);
   obj.show(obj);
 };

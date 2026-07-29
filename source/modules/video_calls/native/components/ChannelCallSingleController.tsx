@@ -1,19 +1,19 @@
-// Module ID: 10792
-// Function ID: 83596
+// Module ID: 10816
+// Function ID: 10817
 // Name: ChannelCallSingleController
-// Dependencies: [31, 4184, 1194, 653, 4183, 33, 675, 4359, 566, 10793, 10795, 10796, 2]
+// Dependencies: [19, 4208, 1218, 676, 4207, 21, 698, 4384, 589, 10817, 10819, 10820, 2]
 // Exports: ChannelCallSingleController
 
-// Module 10792 (ChannelCallSingleController)
-import result from "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_5 from "_isNativeReflectConstruct";
+// Module 10816 (ChannelCallSingleController)
+import noop from "noop";
+import reset from "reset";
+import fetchFingerprint from "fetchFingerprint";
 import { AnalyticEvents } from "ME";
 import { ParticipantTypes } from "ParticipantTypes";
 import { jsx } from "jsxProd";
 
 const require = arg1;
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/video_calls/native/components/ChannelCallSingleController.tsx");
+const result = require("fetchFingerprint").fileFinishedImporting("modules/video_calls/native/components/ChannelCallSingleController.tsx");
 
 export const ChannelCallSingleController = function ChannelCallSingleController(selectedParticipant) {
   selectedParticipant = selectedParticipant.selectedParticipant;
@@ -25,30 +25,29 @@ export const ChannelCallSingleController = function ChannelCallSingleController(
     const merged = Object.assign(selectedParticipant(outer1_2[7]).collectVoiceAnalyticsMetadata(channel.id));
     obj.track(outer1_6.VIDEO_LAYOUT_TOGGLED, obj);
   }, items);
-  selectedParticipant(566);
-  [][0] = _isNativeReflectConstruct;
+  selectedParticipant(589);
+  [][0] = reset;
   const type = selectedParticipant.type;
   if (ParticipantTypes.STREAM === type) {
-    if (null == tmp3) {
+    if (null == tmp4) {
       return null;
     } else {
-      let tmp19 = channel;
-      if (selectedParticipant.user.id === tmp16) {
-        let tmp21 = 10793;
-      } else {
-        tmp21 = 10795;
-      }
-      tmp19 = tmp19(tmp21);
-      let obj = { participant: selectedParticipant, channel };
-      <tmp19 participant={selectedParticipant} channel={channel} />;
-      const tmp18 = jsx;
+      let tmp18 = channel;
+      tmp18 = tmp18(selectedParticipant.user.id === tmp15 ? 10817 : 10819);
+      let obj = { participant: null, channel: null };
+      obj[0] = selectedParticipant;
+      obj[1] = channel;
+      <tmp18 participant={null} channel={null} />;
+      const tmp17 = jsx;
     }
-  } else if (ParticipantTypes.USER === type) {
-    obj = { participant: selectedParticipant, channel };
-    return jsx(channel(10796), { participant: selectedParticipant, channel });
-  } else if (ParticipantTypes.HIDDEN_STREAM === type) {
+  } else if (tmp5.USER === type) {
+    obj = { participant: null, channel: null };
+    obj[0] = selectedParticipant;
+    obj[1] = channel;
+    return jsx(channel(10820), { participant: null, channel: null });
+  } else if (tmp5.HIDDEN_STREAM === type) {
     return null;
-  } else if (ParticipantTypes.ACTIVITY === type) {
+  } else if (tmp5.ACTIVITY === type) {
     const _Error = Error;
     const error = new Error("Activities are not supported on old voice UI");
     throw error;

@@ -1,48 +1,41 @@
-// Module ID: 16296
-// Function ID: 126285
-// Name: _isNativeReflectConstruct
-// Dependencies: [7, 6, 15, 17, 18, 10193, 1841, 5112, 2]
+// Module ID: 16331
+// Function ID: 16332
+// Name: handleChannelDelete
+// Dependencies: [10214, 1865, 5134, 2]
 
-// Module 16296 (_isNativeReflectConstruct)
-import AutomaticLifecycleManager from "AutomaticLifecycleManager";
-import isFavoritesGuildId from "isFavoritesGuildId";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
-import tmp2 from "AutomaticLifecycleManager";
+// Module 16331 (handleChannelDelete)
+import "initialize";
 
 const require = arg1;
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
-  }
-  const result = _isNativeReflectConstruct();
-}
 function handleChannelDelete(channel) {
-  const result = require(10193) /* _createForOfIteratorHelperLoose */.removeFavoriteChannel(channel.channel.id, { trackAnalytics: false });
+  const result = require(10214) /* getNextPositionFromChannels */.removeFavoriteChannel(channel.channel.id, { trackAnalytics: false });
 }
 function handleCategoryCollapse(id) {
-  const result = require(10193) /* _createForOfIteratorHelperLoose */.setFavoriteCategoryCollapsed(id.id, true);
+  const result = require(10214) /* getNextPositionFromChannels */.setFavoriteCategoryCollapsed(id.id, true);
 }
 function handleCategoryExpand(id) {
-  const result = require(10193) /* _createForOfIteratorHelperLoose */.setFavoriteCategoryCollapsed(id.id, false);
+  const result = require(10214) /* getNextPositionFromChannels */.setFavoriteCategoryCollapsed(id.id, false);
 }
 function handleCategoryCollapseAll(guildId) {
   if (obj.isFavoritesGuildId(guildId.guildId)) {
-    const result = require(10193) /* _createForOfIteratorHelperLoose */.setAllFavoriteCategoriesCollapsed(true);
-    const obj2 = require(10193) /* _createForOfIteratorHelperLoose */;
+    const result = require(10214) /* getNextPositionFromChannels */.setAllFavoriteCategoriesCollapsed(true);
+    const tmpResult = require(10214) /* getNextPositionFromChannels */;
   }
 }
 function handleCategoryExpandAll(guildId) {
   if (obj.isFavoritesGuildId(guildId.guildId)) {
-    const result = require(10193) /* _createForOfIteratorHelperLoose */.setAllFavoriteCategoriesCollapsed(false);
-    const obj2 = require(10193) /* _createForOfIteratorHelperLoose */;
+    const result = require(10214) /* getNextPositionFromChannels */.setAllFavoriteCategoriesCollapsed(false);
+    const tmpResult = require(10214) /* getNextPositionFromChannels */;
   }
 }
-tmp2 = new tmp2();
-let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/favorites/FavoriteManager.tsx");
+let prototype = function FavoriteManager() {
+  const applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
+  applyArgumentsResult.actions = { CHANNEL_DELETE: handleChannelDelete, CATEGORY_COLLAPSE: handleCategoryCollapse, CATEGORY_EXPAND: handleCategoryExpand, CATEGORY_COLLAPSE_ALL: handleCategoryCollapseAll, CATEGORY_EXPAND_ALL: handleCategoryExpandAll };
+  return applyArgumentsResult;
+}.prototype;
+class prototype extends tmp2 {
+}
+prototype = new prototype();
+let result = require("initialize").fileFinishedImporting("modules/favorites/FavoriteManager.tsx");
 
-export default tmp2;
+export default prototype;

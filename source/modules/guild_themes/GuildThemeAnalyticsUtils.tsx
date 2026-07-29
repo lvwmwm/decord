@@ -1,11 +1,11 @@
-// Module ID: 15535
-// Function ID: 119274
+// Module ID: 15569
+// Function ID: 15570
 // Name: collectGuildThemeAnalyticsMetadata
-// Dependencies: [1838, 2]
+// Dependencies: [1862, 2]
 // Exports: collectGuildThemeAnalyticsMetadata
 
-// Module 15535 (collectGuildThemeAnalyticsMetadata)
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+// Module 15569 (collectGuildThemeAnalyticsMetadata)
+import createGuildRecordFromRust from "createGuildRecordFromRust";
 
 const result = require("set").fileFinishedImporting("modules/guild_themes/GuildThemeAnalyticsUtils.tsx");
 
@@ -20,16 +20,16 @@ export const collectGuildThemeAnalyticsMetadata = function collectGuildThemeAnal
       const guildTheme = guild.guildTheme;
       if (null != guildTheme) {
         if (guildTheme.enabled) {
-          const obj = { guild_theme_enabled: true };
           const themeSettings = guildTheme.themeSettings;
           let prop;
-          if (null != themeSettings) {
+          if (themeSettings != null) {
             prop = themeSettings.customUserThemeSettings;
           }
-          obj.guild_theme_is_custom = null != prop;
+          const obj = { guild_theme_enabled: true, guild_theme_is_custom: null };
+          obj[1] = null != prop;
           const themeSettings2 = guildTheme.themeSettings;
           let presetId;
-          if (null != themeSettings2) {
+          if (themeSettings2 != null) {
             presetId = themeSettings2.presetId;
           }
           if (null != presetId) {

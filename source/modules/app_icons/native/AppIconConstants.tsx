@@ -1,10 +1,10 @@
-// Module ID: 6562
-// Function ID: 58395
-// Name: getDefaultIcon
-// Dependencies: [6563, 6564, 1212, 6565, 6566, 6567, 6568, 6569, 6570, 6571, 6572, 6573, 6574, 6575, 6576, 6577, 6578, 6579, 6580, 6581, 6582, 6583, 6584, 6585, 6586, 6587, 6588, 2]
-// Exports: getIconById
+// Module ID: 6583
+// Function ID: 6584
+// Name: items
+// Dependencies: [6584, 6585, 1236, 6586, 6587, 6588, 6589, 6590, 6591, 6592, 6593, 6594, 6595, 6596, 6597, 6598, 6599, 6600, 6601, 6602, 6603, 6604, 6605, 6606, 6607, 6608, 6609, 2]
+// Exports: getDefaultIcon, getIconById, getIcons, getLimitedAlternateIcons, getOfficialAlternateIcons, isIconExpired
 
-// Module 6562 (getDefaultIcon)
+// Module 6583 (items)
 import { intl } from "getSystemLocale";
 import { intl as intl2 } from "getSystemLocale";
 import { intl as intl3 } from "getSystemLocale";
@@ -30,118 +30,172 @@ import { intl as intl22 } from "getSystemLocale";
 import { intl as intl23 } from "getSystemLocale";
 import { intl as intl24 } from "getSystemLocale";
 
-function getDefaultIcon() {
-  const obj = { id: require(6563) /* FreemiumAppIconIds */.FreemiumAppIconIds.DEFAULT, iconSource: importDefault(6564) };
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj.name = intl.string(require(1212) /* getSystemLocale */.t.ANxkLy);
-  obj.isPremium = false;
+let obj = { id: require("FreemiumAppIconIds").PremiumAppIconIds.IN_RAINBOWS, iconSource: require("registerAsset"), isPremium: true, name: null };
+obj[3] = intl.string(require("getSystemLocale").t.yxJB9E);
+let items = [obj, , , , , , , , , , , , , , , , , , , , , , , ];
+obj = { id: require("FreemiumAppIconIds").PremiumAppIconIds.MIDNIGHT_PRISM, iconSource: require("registerAsset"), isPremium: true, name: null };
+obj[3] = intl2.string(require("getSystemLocale").t.nshUZZ);
+items[1] = obj;
+obj = { id: require("FreemiumAppIconIds").PremiumAppIconIds.COLOR_WAVE, iconSource: require("registerAsset"), isPremium: true, name: null };
+obj[3] = intl3.string(require("getSystemLocale").t.MWRYqh);
+items[2] = obj;
+const obj1 = { id: require("FreemiumAppIconIds").PremiumAppIconIds.BLURPLE_TWILIGHT, iconSource: require("registerAsset"), isPremium: true, name: null };
+obj1[3] = intl4.string(require("getSystemLocale").t.Mfoe3p);
+items[3] = obj1;
+const obj2 = { id: require("FreemiumAppIconIds").PremiumAppIconIds.BRAND_INVERTED, iconSource: require("registerAsset"), isPremium: true, name: null };
+obj2[3] = intl5.string(require("getSystemLocale").t.h6UXSt);
+items[4] = obj2;
+const obj3 = { id: require("FreemiumAppIconIds").PremiumAppIconIds.BRAND_DARK, iconSource: require("registerAsset"), name: null, isPremium: true };
+obj3[2] = intl6.string(require("getSystemLocale").t.gZEUBl);
+items[5] = obj3;
+const obj4 = { id: require("FreemiumAppIconIds").PremiumAppIconIds.MATTE_DARK, iconSource: require("registerAsset"), isPremium: true, name: null };
+obj4[3] = intl7.string(require("getSystemLocale").t.NkshQt);
+items[6] = obj4;
+const obj5 = { id: require("FreemiumAppIconIds").PremiumAppIconIds.MATTE_LIGHT, iconSource: require("registerAsset"), name: null, isPremium: true };
+obj5[2] = intl8.string(require("getSystemLocale").t.G2W302);
+items[7] = obj5;
+const obj6 = { id: require("FreemiumAppIconIds").PremiumAppIconIds.PASTEL, iconSource: require("registerAsset"), isPremium: true, name: null };
+obj6[3] = intl9.string(require("getSystemLocale").t.mTSkLT);
+items[8] = obj6;
+const obj7 = { id: require("FreemiumAppIconIds").PremiumAppIconIds.PIRATE, iconSource: require("registerAsset"), isPremium: true, name: null };
+obj7[3] = intl10.string(require("getSystemLocale").t["EgWTY+"]);
+items[9] = obj7;
+const obj8 = { id: require("FreemiumAppIconIds").PremiumAppIconIds.CAMO, iconSource: require("registerAsset"), isPremium: true, name: null };
+obj8[3] = intl11.string(require("getSystemLocale").t.RSKXOK);
+items[10] = obj8;
+const obj9 = { id: require("FreemiumAppIconIds").PremiumAppIconIds.SUNSET, iconSource: require("registerAsset"), isPremium: true, name: null };
+obj9[3] = intl12.string(require("getSystemLocale").t.ixdjPB);
+items[11] = obj9;
+const obj10 = { id: require("FreemiumAppIconIds").PremiumAppIconIds.GALAXY, iconSource: require("registerAsset"), isPremium: true, name: null };
+obj10[3] = intl13.string(require("getSystemLocale").t.cb78Ls);
+items[12] = obj10;
+const obj11 = { id: require("FreemiumAppIconIds").PremiumAppIconIds.Y2K, iconSource: require("registerAsset"), isPremium: true, name: null };
+obj11[3] = intl14.string(require("getSystemLocale").t["s+KoXO"]);
+items[13] = obj11;
+const obj12 = { id: require("FreemiumAppIconIds").PremiumAppIconIds.CHERRY_BLOSSOM, iconSource: require("registerAsset"), isPremium: true, name: null };
+obj12[3] = intl15.string(require("getSystemLocale").t["ta/5RB"]);
+items[14] = obj12;
+const obj13 = { id: require("FreemiumAppIconIds").PremiumAppIconIds.BEANIE, iconSource: require("registerAsset"), isPremium: true, name: null };
+obj13[3] = intl16.string(require("getSystemLocale").t.IoLViw);
+items[15] = obj13;
+const obj14 = { id: require("FreemiumAppIconIds").PremiumAppIconIds.GAMING, iconSource: require("registerAsset"), isPremium: true, name: null };
+obj14[3] = intl17.string(require("getSystemLocale").t["2Tf+c4"]);
+items[16] = obj14;
+const obj15 = { id: require("FreemiumAppIconIds").PremiumAppIconIds.CIRCUIT, iconSource: require("registerAsset"), isPremium: true, name: null };
+obj15[3] = intl18.string(require("getSystemLocale").t.dUpxKb);
+items[17] = obj15;
+const obj16 = { id: require("FreemiumAppIconIds").PremiumAppIconIds.HOLO_WAVES, iconSource: require("registerAsset"), isPremium: true, name: null };
+obj16[3] = intl19.string(require("getSystemLocale").t["9mg7g1"]);
+items[18] = obj16;
+const obj17 = { id: require("FreemiumAppIconIds").PremiumAppIconIds.BLUSH, iconSource: require("registerAsset"), isPremium: true, name: null };
+obj17[3] = intl20.string(require("getSystemLocale").t.nmd90m);
+items[19] = obj17;
+const obj18 = { id: require("FreemiumAppIconIds").PremiumAppIconIds.ANGRY, iconSource: require("registerAsset"), isPremium: true, name: null };
+obj18[3] = intl21.string(require("getSystemLocale").t["9PUXpM"]);
+items[20] = obj18;
+const obj19 = { id: require("FreemiumAppIconIds").PremiumAppIconIds.MANGA, iconSource: require("registerAsset"), isPremium: true, name: null };
+obj19[3] = intl22.string(require("getSystemLocale").t.hGBbF8);
+items[21] = obj19;
+const obj20 = { id: require("FreemiumAppIconIds").PremiumAppIconIds.CONTROLLER, iconSource: require("registerAsset"), isPremium: true, name: null };
+obj20[3] = intl23.string(require("getSystemLocale").t["4QM2U1"]);
+items[22] = obj20;
+const obj21 = { id: require("FreemiumAppIconIds").PremiumAppIconIds.MUSHROOM, iconSource: require("registerAsset"), isPremium: true, name: null };
+obj21[3] = intl24.string(require("getSystemLocale").t.gnLLSK);
+items[23] = obj21;
+let closure_4 = [];
+const result = require("getSystemLocale").fileFinishedImporting("modules/app_icons/native/AppIconConstants.tsx");
+
+export const getDefaultIcon = function getDefaultIcon() {
+  const obj = { id: require(6584) /* FreemiumAppIconIds */.FreemiumAppIconIds.DEFAULT, iconSource: importDefault(6585), name: null, isPremium: false };
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj[2] = intl.string(require(1236) /* getSystemLocale */.t.ANxkLy);
   return obj;
-}
-function isIconExpired(expiresAt) {
+};
+export const isIconExpired = function isIconExpired(expiresAt) {
   let tmp = null != expiresAt.expiresAt;
   if (tmp) {
     const _Date = Date;
     tmp = Date.now() > expiresAt.expiresAt;
   }
   return tmp;
-}
-function getOfficialAlternateIcons() {
-  return items.filter((arg0) => !outer1_6(arg0));
-}
-function getLimitedAlternateIcons() {
-  return closure_4.filter((arg0) => !outer1_6(arg0));
-}
-function getIcons() {
-  const items = [getDefaultIcon(), ...getOfficialAlternateIcons(), ...getLimitedAlternateIcons()];
+};
+export const getOfficialAlternateIcons = function getOfficialAlternateIcons() {
+  return items.filter((expiresAt) => {
+    let tmp = null != expiresAt.expiresAt;
+    if (tmp) {
+      const _Date = Date;
+      tmp = Date.now() > expiresAt.expiresAt;
+    }
+    return !tmp;
+  });
+};
+export const getLimitedAlternateIcons = function getLimitedAlternateIcons() {
+  return closure_4.filter((expiresAt) => {
+    let tmp = null != expiresAt.expiresAt;
+    if (tmp) {
+      const _Date = Date;
+      tmp = Date.now() > expiresAt.expiresAt;
+    }
+    return !tmp;
+  });
+};
+export const getIcons = function getIcons() {
+  const obj = { id: require(6584) /* FreemiumAppIconIds */.FreemiumAppIconIds.DEFAULT, iconSource: importDefault(6585), name: null, isPremium: false };
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj[2] = intl.string(require(1236) /* getSystemLocale */.t.ANxkLy);
+  items = [
+    obj,
+    ...items.filter((expiresAt) => {
+      let tmp = null != expiresAt.expiresAt;
+      if (tmp) {
+        const _Date = Date;
+        tmp = Date.now() > expiresAt.expiresAt;
+      }
+      return !tmp;
+    }),
+    ...closure_4.filter((expiresAt) => {
+      let tmp = null != expiresAt.expiresAt;
+      if (tmp) {
+        const _Date = Date;
+        tmp = Date.now() > expiresAt.expiresAt;
+      }
+      return !tmp;
+    })
+  ];
   return items;
-}
-let obj = { id: require("FreemiumAppIconIds").PremiumAppIconIds.IN_RAINBOWS, iconSource: require("registerAsset"), isPremium: true };
-obj.name = intl.string(require("getSystemLocale").t.yxJB9E);
-let items = [obj, , , , , , , , , , , , , , , , , , , , , , , ];
-obj = { id: require("FreemiumAppIconIds").PremiumAppIconIds.MIDNIGHT_PRISM, iconSource: require("registerAsset"), isPremium: true };
-obj.name = intl2.string(require("getSystemLocale").t.nshUZZ);
-items[1] = obj;
-obj = { id: require("FreemiumAppIconIds").PremiumAppIconIds.COLOR_WAVE, iconSource: require("registerAsset"), isPremium: true };
-obj.name = intl3.string(require("getSystemLocale").t.MWRYqh);
-items[2] = obj;
-const obj1 = { id: require("FreemiumAppIconIds").PremiumAppIconIds.BLURPLE_TWILIGHT, iconSource: require("registerAsset"), isPremium: true };
-obj1.name = intl4.string(require("getSystemLocale").t.Mfoe3p);
-items[3] = obj1;
-const obj2 = { id: require("FreemiumAppIconIds").PremiumAppIconIds.BRAND_INVERTED, iconSource: require("registerAsset"), isPremium: true };
-obj2.name = intl5.string(require("getSystemLocale").t.h6UXSt);
-items[4] = obj2;
-const obj3 = { id: require("FreemiumAppIconIds").PremiumAppIconIds.BRAND_DARK, iconSource: require("registerAsset") };
-obj3.name = intl6.string(require("getSystemLocale").t.gZEUBl);
-obj3.isPremium = true;
-items[5] = obj3;
-const obj4 = { id: require("FreemiumAppIconIds").PremiumAppIconIds.MATTE_DARK, iconSource: require("registerAsset"), isPremium: true };
-obj4.name = intl7.string(require("getSystemLocale").t.NkshQt);
-items[6] = obj4;
-const obj5 = { id: require("FreemiumAppIconIds").PremiumAppIconIds.MATTE_LIGHT, iconSource: require("registerAsset") };
-obj5.name = intl8.string(require("getSystemLocale").t.G2W302);
-obj5.isPremium = true;
-items[7] = obj5;
-const obj6 = { id: require("FreemiumAppIconIds").PremiumAppIconIds.PASTEL, iconSource: require("registerAsset"), isPremium: true };
-obj6.name = intl9.string(require("getSystemLocale").t.mTSkLT);
-items[8] = obj6;
-const obj7 = { id: require("FreemiumAppIconIds").PremiumAppIconIds.PIRATE, iconSource: require("registerAsset"), isPremium: true };
-obj7.name = intl10.string(require("getSystemLocale").t["EgWTY+"]);
-items[9] = obj7;
-const obj8 = { id: require("FreemiumAppIconIds").PremiumAppIconIds.CAMO, iconSource: require("registerAsset"), isPremium: true };
-obj8.name = intl11.string(require("getSystemLocale").t.RSKXOK);
-items[10] = obj8;
-const obj9 = { id: require("FreemiumAppIconIds").PremiumAppIconIds.SUNSET, iconSource: require("registerAsset"), isPremium: true };
-obj9.name = intl12.string(require("getSystemLocale").t.ixdjPB);
-items[11] = obj9;
-const obj10 = { id: require("FreemiumAppIconIds").PremiumAppIconIds.GALAXY, iconSource: require("registerAsset"), isPremium: true };
-obj10.name = intl13.string(require("getSystemLocale").t.cb78Ls);
-items[12] = obj10;
-const obj11 = { id: require("FreemiumAppIconIds").PremiumAppIconIds.Y2K, iconSource: require("registerAsset"), isPremium: true };
-obj11.name = intl14.string(require("getSystemLocale").t["s+KoXO"]);
-items[13] = obj11;
-const obj12 = { id: require("FreemiumAppIconIds").PremiumAppIconIds.CHERRY_BLOSSOM, iconSource: require("registerAsset"), isPremium: true };
-obj12.name = intl15.string(require("getSystemLocale").t["ta/5RB"]);
-items[14] = obj12;
-const obj13 = { id: require("FreemiumAppIconIds").PremiumAppIconIds.BEANIE, iconSource: require("registerAsset"), isPremium: true };
-obj13.name = intl16.string(require("getSystemLocale").t.IoLViw);
-items[15] = obj13;
-const obj14 = { id: require("FreemiumAppIconIds").PremiumAppIconIds.GAMING, iconSource: require("registerAsset"), isPremium: true };
-obj14.name = intl17.string(require("getSystemLocale").t["2Tf+c4"]);
-items[16] = obj14;
-const obj15 = { id: require("FreemiumAppIconIds").PremiumAppIconIds.CIRCUIT, iconSource: require("registerAsset"), isPremium: true };
-obj15.name = intl18.string(require("getSystemLocale").t.dUpxKb);
-items[17] = obj15;
-const obj16 = { id: require("FreemiumAppIconIds").PremiumAppIconIds.HOLO_WAVES, iconSource: require("registerAsset"), isPremium: true };
-obj16.name = intl19.string(require("getSystemLocale").t["9mg7g1"]);
-items[18] = obj16;
-const obj17 = { id: require("FreemiumAppIconIds").PremiumAppIconIds.BLUSH, iconSource: require("registerAsset"), isPremium: true };
-obj17.name = intl20.string(require("getSystemLocale").t.nmd90m);
-items[19] = obj17;
-const obj18 = { id: require("FreemiumAppIconIds").PremiumAppIconIds.ANGRY, iconSource: require("registerAsset"), isPremium: true };
-obj18.name = intl21.string(require("getSystemLocale").t["9PUXpM"]);
-items[20] = obj18;
-const obj19 = { id: require("FreemiumAppIconIds").PremiumAppIconIds.MANGA, iconSource: require("registerAsset"), isPremium: true };
-obj19.name = intl22.string(require("getSystemLocale").t.hGBbF8);
-items[21] = obj19;
-const obj20 = { id: require("FreemiumAppIconIds").PremiumAppIconIds.CONTROLLER, iconSource: require("registerAsset"), isPremium: true };
-obj20.name = intl23.string(require("getSystemLocale").t["4QM2U1"]);
-items[22] = obj20;
-const obj21 = { id: require("FreemiumAppIconIds").PremiumAppIconIds.MUSHROOM, iconSource: require("registerAsset"), isPremium: true };
-obj21.name = intl24.string(require("getSystemLocale").t.gnLLSK);
-items[23] = obj21;
-let closure_4 = [];
-const result = require("getSystemLocale").fileFinishedImporting("modules/app_icons/native/AppIconConstants.tsx");
-
-export { getDefaultIcon };
-export { isIconExpired };
-export { getOfficialAlternateIcons };
-export { getLimitedAlternateIcons };
-export { getIcons };
+};
 export const getIconById = function getIconById(currentAppIcon) {
-  let closure_0 = currentAppIcon;
-  let found = getIcons().find((id) => id.id === closure_0);
+  const _require = currentAppIcon;
+  let obj = { id: _require(6584).FreemiumAppIconIds.DEFAULT, iconSource: importDefault(6585), name: null, isPremium: false };
+  const intl = _require(1236).intl;
+  obj[2] = intl.string(_require(1236).t.ANxkLy);
+  items = [
+    obj,
+    ...items.filter((expiresAt) => {
+      let tmp = null != expiresAt.expiresAt;
+      if (tmp) {
+        const _Date = Date;
+        tmp = Date.now() > expiresAt.expiresAt;
+      }
+      return !tmp;
+    }),
+    ...closure_4.filter((expiresAt) => {
+      let tmp = null != expiresAt.expiresAt;
+      if (tmp) {
+        const _Date = Date;
+        tmp = Date.now() > expiresAt.expiresAt;
+      }
+      return !tmp;
+    })
+  ];
+  let found = items.find((id) => id.id === closure_0);
   if (null == found) {
-    found = getDefaultIcon();
+    obj = { id: null, iconSource: null, name: null, isPremium: false };
+    obj[0] = tmp(6584).FreemiumAppIconIds.DEFAULT;
+    obj[1] = importDefault(6585);
+    const intl2 = tmp(1236).intl;
+    obj[2] = intl2.string(tmp(1236).t.ANxkLy);
+    found = obj;
   }
   return found;
 };

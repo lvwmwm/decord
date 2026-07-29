@@ -1,96 +1,81 @@
-// Module ID: 10083
-// Function ID: 77846
-// Name: getMonths
-// Dependencies: [57, 1348, 1908, 3802, 1907, 4005, 1850, 10084, 10085, 653, 3747, 22, 1212, 4355, 4004, 10082, 10086, 5080, 5009, 6145, 10087, 10088, 2]
+// Module ID: 10104
+// Function ID: 10105
+// Name: getShortcuts
+// Dependencies: [32, 1372, 1932, 3826, 1931, 4029, 1874, 10105, 10106, 676, 3771, 12, 1236, 4380, 4028, 10103, 10107, 5102, 5031, 6163, 10108, 10109, 2]
 // Exports: buildCrossDMSearchTokensConfig, getLocalizedAuthorTypeAnswer, getLocalizedHasAnswer, getRandomDateShortcut, isMeAutcompleteAnswer, isSearchFilterTokenType, isValidFilterAnswerForSubmit, rebuildSearchTokenConfigs
 
-// Module 10083 (getMonths)
+// Module 10104 (getShortcuts)
 import _slicedToArray from "_slicedToArray";
-import closure_4 from "_isNativeReflectConstruct";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_7 from "_isNativeReflectConstruct";
-import closure_8 from "_isNativeReflectConstruct";
-import closure_9 from "_isNativeReflectConstruct";
-import closure_10 from "_isNativeReflectConstruct";
-import closure_11 from "_isNativeReflectConstruct";
-import closure_12 from "_isNativeReflectConstruct";
-import closure_13 from "_isNativeReflectConstruct";
+import ensureGuildLoaded from "ensureGuildLoaded";
+import comparator from "comparator";
+import closure_7 from "comparator";
+import upsertRelationship from "upsertRelationship";
+import handleConnectionOpen from "handleConnectionOpen";
+import initialize from "initialize";
+import mergeGuildAvatar from "mergeGuildAvatar";
+import handleUserSearchResults from "handleUserSearchResults";
+import handleReset from "handleReset";
 import ME from "ME";
 
 let SearchTokenTypes;
+let c5;
 let closure_14;
 let closure_16;
 let closure_17;
 let closure_18;
 let closure_19;
-let closure_5;
 let closure_6;
 const require = arg1;
-function getMonths() {
-  const obj = importDefault(3747);
-  const monthsResult = importDefault(3747).months();
-  return new Set(importDefault(3747).months().map((str) => str.toLowerCase()));
-}
-function getWeekdays() {
-  const obj = importDefault(3747);
-  const weekdaysResult = importDefault(3747).weekdays();
-  return new Set(importDefault(3747).weekdays().map((str) => str.toLowerCase()));
-}
-function getYears() {
-  const fullYear = new Date().getFullYear();
-  const date = new Date();
-  const obj2 = importDefault(22);
-  const rangeResult = importDefault(22).range(2015, fullYear + 1);
-  return new Set(importDefault(22).range(2015, fullYear + 1).map((arg0) => arg0.toString()));
-}
-function makeDateRange(startOfResult, day) {
-  const items = [startOfResult, startOfResult.clone().add(1, day)];
-  return items;
-}
-function makeDate(day) {
-  let num = arg1;
-  if (arg1 === undefined) {
-    num = 0;
-  }
-  const obj = importDefault(3747)();
-  return makeDateRange(importDefault(3747)().startOf(day).add(num, day), day);
-}
-function parseDate(arg0, arg1, day) {
-  return makeDateRange(importDefault(3747)(arg0, arg1).local(), day);
-}
 function getShortcuts() {
-  const obj = {};
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj[intl.string(require(1212) /* getSystemLocale */.t.HYiVEQ)] = () => outer1_30("day");
-  const intl2 = require(1212) /* getSystemLocale */.intl;
-  obj[intl2.string(require(1212) /* getSystemLocale */.t.cu86KC)] = () => outer1_30("day", -1);
-  const intl3 = require(1212) /* getSystemLocale */.intl;
-  obj[intl3.string(require(1212) /* getSystemLocale */.t["FvBj/6"])] = () => outer1_30("week");
-  const intl4 = require(1212) /* getSystemLocale */.intl;
-  obj[intl4.string(require(1212) /* getSystemLocale */.t["20uWCw"])] = () => outer1_30("month");
-  const intl5 = require(1212) /* getSystemLocale */.intl;
-  obj[intl5.string(require(1212) /* getSystemLocale */.t["dXC/hn"])] = () => outer1_30("year");
+  let obj = {};
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj[intl.string(require(1236) /* getSystemLocale */.t.HYiVEQ)] = () => {
+    const obj = callback(3771)();
+    const addResult = callback(3771)().startOf("day").add(0, "day");
+    const items = [addResult, ];
+    const startOfResult = callback(3771)().startOf("day");
+    items[1] = addResult.clone().add(1, "day");
+    return items;
+  };
+  const intl2 = require(1236) /* getSystemLocale */.intl;
+  obj[intl2.string(require(1236) /* getSystemLocale */.t.cu86KC)] = () => {
+    const obj = callback(3771)();
+    const addResult = callback(3771)().startOf("day").add(-1, "day");
+    const items = [addResult, ];
+    const startOfResult = callback(3771)().startOf("day");
+    items[1] = addResult.clone().add(1, "day");
+    return items;
+  };
+  const intl3 = require(1236) /* getSystemLocale */.intl;
+  obj[intl3.string(require(1236) /* getSystemLocale */.t["FvBj/6"])] = () => {
+    const obj = callback(3771)();
+    const addResult = callback(3771)().startOf("week").add(0, "week");
+    const items = [addResult, ];
+    const startOfResult = callback(3771)().startOf("week");
+    items[1] = addResult.clone().add(1, "week");
+    return items;
+  };
+  const intl4 = require(1236) /* getSystemLocale */.intl;
+  obj[intl4.string(require(1236) /* getSystemLocale */.t["20uWCw"])] = () => {
+    const obj = callback(3771)();
+    const addResult = callback(3771)().startOf("month").add(0, "month");
+    const items = [addResult, ];
+    const startOfResult = callback(3771)().startOf("month");
+    items[1] = addResult.clone().add(1, "month");
+    return items;
+  };
+  const intl5 = require(1236) /* getSystemLocale */.intl;
+  obj[intl5.string(require(1236) /* getSystemLocale */.t["dXC/hn"])] = () => {
+    const obj = callback(3771)();
+    const addResult = callback(3771)().startOf("year").add(0, "year");
+    const items = [addResult, ];
+    const startOfResult = callback(3771)().startOf("year");
+    items[1] = addResult.clone().add(1, "year");
+    return items;
+  };
   return obj;
 }
-function buildKey(intl14) {
-  return "" + intl14 + ":";
-}
-function buildFilterRegex(intl13) {
-  const regExp = new RegExp(buildKey(intl13), "i");
-  return regExp;
-}
 function isValidUserAutocomplete(token) {
-  function extractId(byTag) {
-    let tmp = null;
-    if (null != byTag) {
-      let id;
-      if (null != byTag) {
-        id = byTag.id;
-      }
-      tmp = id;
-    }
-    return tmp;
-  }
   const match = token.getMatch(1);
   if (regex2.test(match)) {
     let flag = null != match;
@@ -100,74 +85,130 @@ function isValidUserAutocomplete(token) {
     }
     return flag;
   } else if (match === closure_14) {
-    let extractIdResult = extractId(authStore.getCurrentUser());
+    const currentUser = authStore.getCurrentUser();
+    let tmp15 = null;
+    if (null != currentUser) {
+      let id;
+      if (currentUser != null) {
+        id = currentUser.id;
+      }
+      tmp15 = id;
+    }
+    let tmp6 = tmp15;
   } else if (null != token.getMatch(4)) {
-    extractIdResult = extractId(authStore.findByTag(token.getMatch(4)));
+    const findByTagResult = authStore.findByTag(token.getMatch(4));
+    let tmp10 = null;
+    if (null != findByTagResult) {
+      let id1;
+      if (findByTagResult != null) {
+        id1 = findByTagResult.id;
+      }
+      tmp10 = id1;
+    }
+    tmp6 = tmp10;
   } else {
     const match1 = token.getMatch(2);
-    extractIdResult = extractId(authStore.findByTag(match1, token.getMatch(3)));
+    const findByTagResult1 = authStore.findByTag(match1, token.getMatch(3));
+    tmp6 = null;
+    if (null != findByTagResult1) {
+      let id2;
+      if (findByTagResult1 != null) {
+        id2 = findByTagResult1.id;
+      }
+      tmp6 = id2;
+    }
   }
 }
 function dateValidator(getFullMatch) {
+  let obj10;
+  let obj9;
   const str = getFullMatch.getFullMatch();
   const formatted = getFullMatch.getFullMatch().trim().toLowerCase();
   const tmp2 = getShortcuts()[formatted];
   if (null != tmp2) {
-    const tmp18 = callback(tmp2(), 2);
-    let first = tmp18[0];
-    let obj4 = tmp18[1];
+    [obj9, obj10] = callback(tmp2(), 2);
+    const tmp23 = callback(tmp2(), 2);
   } else {
-    if (obj5.has(formatted)) {
-      const tmp16 = callback(parseDate(formatted, "MMMM", "month"), 2);
-      first = tmp16[0];
-      obj4 = tmp16[1];
+    const _Set3 = Set;
+    const obj20 = importDefault(3771);
+    const set = new Set(importDefault(3771).months().map((str) => str.toLowerCase()));
+    if (set.has(formatted)) {
+      const localResult = tmp32(3771)(formatted, "MMMM").local();
+      const items = [localResult, ];
+      const obj17 = tmp32(3771)(formatted, "MMMM");
+      items[1] = localResult.clone().add(1, "month");
+      const cloneResult = localResult.clone();
+      [obj9, obj10] = callback(items, 2);
+      const tmp21 = callback(items, 2);
     } else {
-      if (obj.has(formatted)) {
-        const tmp13 = callback(parseDate(formatted, "dddd", "day"), 2);
-        first = tmp13[0];
-        obj4 = tmp13[1];
+      const _Set = Set;
+      let tmp32Result = tmp32(3771);
+      const set1 = new Set(tmp32Result.weekdays().map((str) => str.toLowerCase()));
+      if (set1.has(formatted)) {
+        const localResult1 = tmp32(3771)(formatted, "dddd").local();
+        const items1 = [localResult1, ];
+        const obj14 = tmp32(3771)(formatted, "dddd");
+        items1[1] = localResult1.clone().add(1, "day");
+        const cloneResult1 = localResult1.clone();
+        [obj9, obj10] = callback(items1, 2);
+        const tmp19 = callback(items1, 2);
       } else {
-        if (obj2.has(formatted)) {
-          const tmp10 = callback(tmp5(formatted, "YYYY", "year"), 2);
-          first = tmp10[0];
-          obj4 = tmp10[1];
+        const _Date = Date;
+        const date = new Date();
+        const _Set2 = Set;
+        const fullYear = date.getFullYear();
+        tmp32Result = tmp32(12);
+        const set2 = new Set(tmp32Result.range(2015, fullYear + 1).map((arg0) => arg0.toString()));
+        if (set2.has(formatted)) {
+          const localResult2 = tmp32(3771)(formatted, "YYYY").local();
+          const items2 = [localResult2, ];
+          const obj11 = tmp32(3771)(formatted, "YYYY");
+          items2[1] = localResult2.clone().add(1, "year");
+          const cloneResult2 = localResult2.clone();
+          [obj9, obj10] = callback(items2, 2);
+          const tmp17 = callback(items2, 2);
         } else {
-          const tmp8 = callback(tmp5(formatted, closure_16, "day"), 2);
-          first = tmp8[0];
-          obj4 = tmp8[1];
+          const localResult3 = tmp32(3771)(formatted, closure_16).local();
+          const items3 = [localResult3, ];
+          const obj6 = tmp32(3771)(formatted, closure_16);
+          items3[1] = localResult3.clone().add(1, "day");
+          const cloneResult3 = localResult3.clone();
+          [obj9, obj10] = callback(items3, 2);
+          const tmp15 = callback(items3, 2);
         }
-        obj2 = getYears();
+        const rangeResult = tmp32Result.range(2015, fullYear + 1);
       }
-      obj = getWeekdays();
+      const weekdaysResult = tmp32Result.weekdays();
     }
-    obj5 = getMonths();
+    const monthsResult = importDefault(3771).months();
   }
-  let tmp19 = !first.isValid();
-  if (!tmp19) {
-    tmp19 = !obj4.isValid();
+  const isValidResult = obj9.isValid();
+  let tmp25 = !isValidResult;
+  if (isValidResult) {
+    tmp25 = !obj10.isValid();
   }
-  let flag = !tmp19;
-  if (!tmp19) {
-    let tmp20 = null;
-    let tmp21 = first;
+  let flag = !tmp25;
+  if (!tmp25) {
+    let tmp27 = obj9;
+    let tmp28 = null;
     if ("before" !== arg1) {
-      tmp20 = first;
-      tmp21 = obj4;
+      tmp27 = obj10;
+      tmp28 = obj9;
       if ("after" === arg1) {
-        tmp20 = obj4;
-        tmp21 = null;
+        tmp27 = null;
+        tmp28 = obj10;
       }
     }
-    getFullMatch.setData("start", tmp20);
-    getFullMatch.setData("end", tmp21);
+    getFullMatch.setData("start", tmp28);
+    getFullMatch.setData("end", tmp27);
     flag = true;
   }
   return flag;
 }
-function isValidChannelAutocomplete(token, items) {
+function isValidChannelAutocomplete(token, guildId) {
   const str = token.getMatch(1);
   if (regex2.test(str)) {
-    items = [str];
+    const items = [str];
     token.setData("channelIds", items);
     let flag = true;
   } else {
@@ -177,185 +218,161 @@ function isValidChannelAutocomplete(token, items) {
       replaced = substr.replaceAll(/\\(.)/g, (arg0, arg1) => arg1);
     }
     tmp = str.startsWith("\"") && str.endsWith("\"");
-    if (obj2.isGuildLikeSearchContext(items)) {
-      flag = (function isValidGuildChannelAutocomplete(setData, replaced, guildId) {
-        let closure_0 = replaced;
-        const combined = outer1_7.getChannels(guildId)[outer1_5].concat(outer1_7.getChannels(guildId)[outer1_6]);
-        const textChannelNameDisambiguations = outer1_7.getTextChannelNameDisambiguations(guildId);
-        let obj = outer1_7.getChannels(guildId)[outer1_5];
-        const obj2 = outer1_1(outer1_2[11]);
-        const mapped = outer1_1(outer1_2[11]).chain(combined).map((channel) => channel.channel);
-        if (null != guildId) {
-          let allThreadsForGuild = outer1_4.getAllThreadsForGuild(guildId);
-        } else {
-          allThreadsForGuild = [];
+    if (obj2.isGuildLikeSearchContext(guildId)) {
+      guildId = guildId.guildId;
+      let importDefault;
+      const combined = store2.getChannels(guildId)[closure_5].concat(store2.getChannels(guildId)[closure_6]);
+      importDefault = store2.getTextChannelNameDisambiguations(guildId);
+      const obj3 = store2.getChannels(guildId)[closure_5];
+      const obj4 = importDefault(12);
+      const mapped = importDefault(12).chain(combined).map((channel) => channel.channel);
+      if (null != guildId) {
+        let allThreadsForGuild = store.getAllThreadsForGuild(guildId);
+      } else {
+        allThreadsForGuild = [];
+      }
+      const combined1 = mapped.concat(allThreadsForGuild);
+      const chainResult = importDefault(12).chain(combined);
+      const valueResult = combined1.filter((channel) => {
+        let name;
+        if (dependencyMap[channel.id] != null) {
+          name = tmp2.name;
         }
-        const combined1 = mapped.concat(allThreadsForGuild);
-        const chainResult = outer1_1(outer1_2[11]).chain(combined);
-        const valueResult = combined1.filter((channel) => {
-          let name;
-          if (null != table[channel.id]) {
-            name = tmp2.name;
-          }
-          if (null == name) {
-            name = outer2_0(outer2_2[13]).computeChannelName(channel, outer2_11, outer2_8);
-            const obj = outer2_0(outer2_2[13]);
-          }
-          return closure_0 === name;
-        }).value();
-        let length;
-        if (null != valueResult) {
-          length = valueResult.length;
+        if (name == null) {
+          name = replaced(outer1_2[13]).computeChannelName(channel, outer1_11, outer1_8);
+          const obj = replaced(outer1_2[13]);
         }
-        let flag = length > 0;
-        if (flag) {
-          setData.setData("channelIds", valueResult.map((id) => id.id));
-          flag = true;
+        return replaced === name;
+      }).value();
+      let length;
+      if (valueResult != null) {
+        length = valueResult.length;
+      }
+      let flag3 = length > 0;
+      if (flag3) {
+        token.setData("channelIds", valueResult.map((id) => id.id));
+        flag3 = true;
+      }
+      flag = flag3;
+      const iter = combined1.filter((channel) => {
+        let name;
+        if (dependencyMap[channel.id] != null) {
+          name = tmp2.name;
         }
-        return flag;
-      })(token, replaced, items.guildId);
+        if (name == null) {
+          name = replaced(outer1_2[13]).computeChannelName(channel, outer1_11, outer1_8);
+          const obj = replaced(outer1_2[13]);
+        }
+        return replaced === name;
+      });
     } else {
-      flag = items.type === constants.DMS;
+      flag = guildId.type === constants.DMS;
       if (flag) {
-        flag = !closure_10.hidePersonalInformation;
+        flag = !initialize.hidePersonalInformation;
       }
       if (flag) {
-        flag = (function isValidPrivateChannelAutocomplete(setData, replaced) {
-          let closure_0 = replaced;
-          const values = Object.values(outer1_4.getMutablePrivateChannels());
-          const found = values.filter((isGroupDM) => {
-            if (isGroupDM.isGroupDM()) {
-              if (closure_0 === obj.computeChannelName(isGroupDM, outer2_11, outer2_8)) {
-                return true;
-              }
-              obj = outer2_0(outer2_2[13]);
+        const _Object = Object;
+        const values = Object.values(store.getMutablePrivateChannels());
+        const found = values.filter((isGroupDM) => {
+          if (isGroupDM.isGroupDM()) {
+            if (replaced === obj.computeChannelName(isGroupDM, outer1_11, outer1_8)) {
+              return true;
             }
-            if (isGroupDM.isDM()) {
-              const user = outer2_11.getUser(isGroupDM.getRecipientId());
-              if (null == user) {
-                return false;
-              } else {
-                return closure_0 === outer2_1(outer2_2[14]).getUserTag(user);
-              }
-            } else {
+            obj = replaced(outer1_2[13]);
+          }
+          if (isGroupDM.isDM()) {
+            const user = outer1_11.getUser(isGroupDM.getRecipientId());
+            if (null == user) {
               return false;
+            } else {
+              return replaced === dependencyMap(outer1_2[14]).getUserTag(user);
             }
-          });
-          let length;
-          if (null != found) {
-            length = found.length;
+          } else {
+            return false;
           }
-          let flag = length > 0;
-          if (flag) {
-            setData.setData("channelIds", found.map((id) => id.id));
-            flag = true;
-          }
-          return flag;
-        })(token, replaced);
+        });
+        let length1;
+        if (found != null) {
+          length1 = found.length;
+        }
+        let flag2 = length1 > 0;
+        if (flag2) {
+          token.setData("channelIds", found.map((id) => id.id));
+          flag2 = true;
+        }
+        flag = flag2;
       }
     }
-    obj2 = require(10082) /* _createForOfIteratorHelperLoose */;
+    obj2 = replaced(10103);
   }
   return flag;
 }
 function getHasMap() {
   const obj = {};
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj[intl.string(require(1212) /* getSystemLocale */.t.ZNR2fi)] = "link";
-  const intl2 = require(1212) /* getSystemLocale */.intl;
-  obj[intl2.string(require(1212) /* getSystemLocale */.t["20uQR3"])] = "embed";
-  const intl3 = require(1212) /* getSystemLocale */.intl;
-  obj[intl3.string(require(1212) /* getSystemLocale */.t.L4lxyE)] = "poll";
-  const intl4 = require(1212) /* getSystemLocale */.intl;
-  obj[intl4.string(require(1212) /* getSystemLocale */.t.nrpA5E)] = "snapshot";
-  const intl5 = require(1212) /* getSystemLocale */.intl;
-  obj[intl5.string(require(1212) /* getSystemLocale */.t["AV/v6i"])] = "file";
-  const intl6 = require(1212) /* getSystemLocale */.intl;
-  obj[intl6.string(require(1212) /* getSystemLocale */.t.XM9XGP)] = "video";
-  const intl7 = require(1212) /* getSystemLocale */.intl;
-  obj[intl7.string(require(1212) /* getSystemLocale */.t.TNLcpx)] = "image";
-  const intl8 = require(1212) /* getSystemLocale */.intl;
-  obj[intl8.string(require(1212) /* getSystemLocale */.t.F8Wf0e)] = "sound";
-  const intl9 = require(1212) /* getSystemLocale */.intl;
-  obj[intl9.string(require(1212) /* getSystemLocale */.t.PJgX2h)] = "sticker";
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj[intl.string(require(1236) /* getSystemLocale */.t.ZNR2fi)] = "link";
+  const intl2 = require(1236) /* getSystemLocale */.intl;
+  obj[intl2.string(require(1236) /* getSystemLocale */.t["20uQR3"])] = "embed";
+  const intl3 = require(1236) /* getSystemLocale */.intl;
+  obj[intl3.string(require(1236) /* getSystemLocale */.t.L4lxyE)] = "poll";
+  const intl4 = require(1236) /* getSystemLocale */.intl;
+  obj[intl4.string(require(1236) /* getSystemLocale */.t.nrpA5E)] = "snapshot";
+  const intl5 = require(1236) /* getSystemLocale */.intl;
+  obj[intl5.string(require(1236) /* getSystemLocale */.t["AV/v6i"])] = "file";
+  const intl6 = require(1236) /* getSystemLocale */.intl;
+  obj[intl6.string(require(1236) /* getSystemLocale */.t.XM9XGP)] = "video";
+  const intl7 = require(1236) /* getSystemLocale */.intl;
+  obj[intl7.string(require(1236) /* getSystemLocale */.t.TNLcpx)] = "image";
+  const intl8 = require(1236) /* getSystemLocale */.intl;
+  obj[intl8.string(require(1236) /* getSystemLocale */.t.F8Wf0e)] = "sound";
+  const intl9 = require(1236) /* getSystemLocale */.intl;
+  obj[intl9.string(require(1236) /* getSystemLocale */.t.PJgX2h)] = "sticker";
   return obj;
-}
-function getAuthorTypeMap() {
-  const obj = {};
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj[intl.string(require(1212) /* getSystemLocale */.t.tPZo4p)] = "user";
-  const intl2 = require(1212) /* getSystemLocale */.intl;
-  obj[intl2.string(require(1212) /* getSystemLocale */.t.JL7sRS)] = "bot";
-  const intl3 = require(1212) /* getSystemLocale */.intl;
-  obj[intl3.string(require(1212) /* getSystemLocale */.t.WjkIKU)] = "webhook";
-  return obj;
-}
-function getLocalizedAnswer(str, authorTypeMap) {
-  const startsWithResult = str.startsWith("-");
-  let substr = str;
-  if (startsWithResult) {
-    substr = str.slice(1);
-  }
-  const entries = Object.entries(authorTypeMap);
-  const found = entries.find((arg0) => {
-    let tmp;
-    [, tmp] = arg0;
-    return tmp === substr;
-  });
-  let first;
-  if (null != found) {
-    first = found[0];
-  }
-  if (null != first) {
-    substr = first;
-  }
-  let combined = substr;
-  if (startsWithResult) {
-    const _HermesInternal = HermesInternal;
-    combined = "-" + substr;
-  }
-  return combined;
 }
 function isValidHasAutocomplete(token) {
-  return require(10086) /* ANSWER_IN_REGEX */.validateForMapWithNegation("has", getHasMap(), token);
+  return require(10107) /* ANSWER_IN_REGEX */.validateForMapWithNegation("has", getHasMap(), token);
 }
 function isValidAuthorTypeAutocomplete(token) {
-  return require(10086) /* ANSWER_IN_REGEX */.validateForMapWithNegation("author_type", getAuthorTypeMap(), token);
+  let obj = require(10107) /* ANSWER_IN_REGEX */;
+  obj = {};
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj[intl.string(require(1236) /* getSystemLocale */.t.tPZo4p)] = "user";
+  const intl2 = require(1236) /* getSystemLocale */.intl;
+  obj[intl2.string(require(1236) /* getSystemLocale */.t.JL7sRS)] = "bot";
+  const intl3 = require(1236) /* getSystemLocale */.intl;
+  obj[intl3.string(require(1236) /* getSystemLocale */.t.WjkIKU)] = "webhook";
+  return obj.validateForMapWithNegation("author_type", obj, token);
 }
-function isValidPinnedAutocomplete(token) {
-  const match = token.getMatch(1);
+function isValidPinnedAutocomplete(getMatch) {
+  const match = getMatch.getMatch(1);
   if ("true" === match) {
-    token.setData("pinned", true);
+    getMatch.setData("pinned", true);
     let flag = true;
   } else {
     flag = "false" === match;
     if (flag) {
-      token.setData("pinned", false);
+      getMatch.setData("pinned", false);
       flag = true;
     }
   }
   return flag;
 }
 function generateDateAutocompletions() {
-  const items = [...Array.from(getMonths()), ...Array.from(getWeekdays()), ...Array.from(getYears()), ...Object.keys(getShortcuts())];
+  const obj = importDefault(3771);
+  const monthsResult = importDefault(3771).months();
+  const items = [...Array.from(new Set(importDefault(3771).months().map((str) => str.toLowerCase())))];
+  const set = new Set(importDefault(3771).months().map((str) => str.toLowerCase()));
+  const obj2 = importDefault(3771);
+  const weekdaysResult = importDefault(3771).weekdays();
+  let arraySpreadResult = HermesBuiltin.arraySpread(Array.from(new Set(importDefault(3771).weekdays().map((str) => str.toLowerCase()))), tmp2);
+  const set1 = new Set(importDefault(3771).weekdays().map((str) => str.toLowerCase()));
+  const fullYear = new Date().getFullYear();
+  const date = new Date();
+  const obj4 = importDefault(12);
+  const rangeResult = importDefault(12).range(2015, fullYear + 1);
+  arraySpreadResult = HermesBuiltin.arraySpread(Array.from(new Set(importDefault(12).range(2015, fullYear + 1).map((arg0) => arg0.toString()))), arraySpreadResult);
+  HermesBuiltin.arraySpread(Object.keys(getShortcuts()), arraySpreadResult);
   return items;
-}
-function getDateAutocompletions(toLocaleLowerCase, MAX_RECENT_CHANNELS) {
-  let closure_0 = arg2;
-  return genericSearch(toLocaleLowerCase, MAX_RECENT_CHANNELS, generateDateAutocompletions()).map((text) => {
-    const obj = {};
-    const merged = Object.assign(text);
-    obj["group"] = closure_0;
-    obj["key"] = "" + closure_0 + "-" + text.text;
-    return obj;
-  });
-}
-function genericSearch(toLocaleLowerCase, MAX_RECENT_CHANNELS, arg2) {
-  let closure_0 = toLocaleLowerCase.toLocaleLowerCase();
-  const found = importDefault(22)(arg2).filter((toLocaleLowerCase) => outer1_1(outer1_2[17])(closure_0, toLocaleLowerCase.toLocaleLowerCase()));
-  const arr = importDefault(22)(arg2);
-  const takeResult = found.take(MAX_RECENT_CHANNELS);
-  return found.take(MAX_RECENT_CHANNELS).map((text) => ({ text })).value();
 }
 function getUserAutocompletions(tokens) {
   let maxResults;
@@ -363,121 +380,113 @@ function getUserAutocompletions(tokens) {
   let searchContext;
   ({ query, searchContext, maxResults } = tokens);
   tokens = tokens.tokens;
-  let items;
-  let set;
+  let items2;
+  let set1;
   let currentUser1;
   let c3;
-  function maybeAddUser(id) {
-    let hasItem = null == id;
-    if (!hasItem) {
-      hasItem = set.has(id.id);
-    }
-    if (!hasItem) {
-      hasItem = outer1_8.isBlockedOrIgnored(id.id);
-    }
-    if (!hasItem) {
-      const obj = { user: id, text: set(currentUser1[14]).getUserTag(id) };
-      items.push(obj);
-      set.add(id.id);
-      const obj2 = set(currentUser1[14]);
-    }
-  }
-  let obj = {};
+  let obj = { query: null, limit: null, request: false, boosters: null };
   const str2 = query.trim().split("#")[0];
-  obj.query = str2;
-  obj.limit = maxResults;
-  obj.request = false;
-  let obj1 = items(currentUser1[18]);
-  obj.boosters = obj1.getBoosterMap(items(currentUser1[19]).AutocompleterResultTypes.USER);
+  obj[0] = str2;
+  obj[1] = maxResults;
+  let obj1 = items2(currentUser1[18]);
+  obj[3] = obj1.getBoosterMap(items2(currentUser1[19]).AutocompleterResultTypes.USER);
   const type = searchContext.type;
   if (constants.GUILD !== type) {
-    if (constants.GUILD_CHANNEL !== type) {
-      if (constants.THREAD !== type) {
-        if (constants.CHANNEL === type) {
+    if (tmp3.GUILD_CHANNEL !== type) {
+      if (tmp3.THREAD !== type) {
+        if (tmp3.CHANNEL === type) {
           obj = {};
           const merged = Object.assign(obj);
-          obj["channelId"] = searchContext.channelId;
-          let queryChannelUsersResult = set(currentUser1[18]).queryChannelUsers(obj);
-          const obj7 = set(currentUser1[18]);
-        } else if (constants.DMS === type) {
-          if (null == tokens) {
+          obj.channelId = searchContext.channelId;
+          let queryChannelUsersResult = set1(tmp2[18]).queryChannelUsers(obj);
+          const obj7 = set1(tmp2[18]);
+        } else if (tmp3.DMS === type) {
+          if (tokens == null) {
             tokens = [];
           }
-          const arr2 = (function getPrivateChannelRecipients(tokens) {
-            function maybeAddUser(id) {
-              let hasItem = null == id;
-              if (!hasItem) {
-                hasItem = set.has(id.id);
+          if (null == tokens) {
+            let items = [];
+          } else {
+            const _Set = Set;
+            const set = new Set();
+            items2 = set;
+            const items1 = [];
+            set1 = items1;
+            let item = tokens.forEach((getData) => {
+              const data = getData.getData("channelIds");
+              if (null != data) {
+                const item = data.forEach((arg0) => arr.push(arg0));
               }
-              if (!hasItem) {
-                items1.push(id);
-                set.add(id.id);
-              }
-            }
-            if (null == tokens) {
-              return [];
-            } else {
-              const _Set = Set;
-              const set = new Set();
-              const items = [];
-              let item = tokens.forEach((getData) => {
-                const data = getData.getData("channelIds");
-                if (null != data) {
-                  const item = data.forEach((arg0) => outer1_1.push(arg0));
-                }
-              });
-              const items1 = [];
-              const item1 = items.forEach((channelId) => {
-                const channel = maybeAddUser.getChannel(channelId);
-                if (null != channel) {
-                  if (channel.isDM()) {
-                    maybeAddUser(outer2_11.getUser(channel.getRecipientId()));
-                  } else if (channel.isGroupDM()) {
-                    const recipients = channel.recipients;
-                    const item = recipients.forEach((arg0) => {
-                      outer1_3(outer3_11.getUser(arg0));
-                    });
+            });
+            items = [];
+            currentUser1 = items;
+            const item1 = items1.forEach((arg0) => {
+              const channel = outer1_4.getChannel(arg0);
+              if (null != channel) {
+                if (channel.isDM()) {
+                  let user = outer1_11.getUser(channel.getRecipientId());
+                  let hasItem = null == user;
+                  if (!hasItem) {
+                    hasItem = items2.has(user.id);
                   }
+                  if (!hasItem) {
+                    currentUser1.push(user);
+                    items2.add(user.id);
+                  }
+                } else if (channel.isGroupDM()) {
+                  const recipients = channel.recipients;
+                  const item = recipients.forEach((arg0) => {
+                    const user = outer1_11.getUser(arg0);
+                    let hasItem = null == user;
+                    if (!hasItem) {
+                      hasItem = set.has(user.id);
+                    }
+                    if (!hasItem) {
+                      arr = arr.push(user);
+                      set.add(user.id);
+                    }
+                  });
                 }
-              });
-              return items1;
-            }
-          })(tokens);
-          if (null != arr2) {
-            if (arr2.length > 0) {
-              const currentUser = authStore.getCurrentUser();
-              if (null != currentUser) {
-                arr2.push(currentUser);
               }
-              obj = {};
-              const merged1 = Object.assign(obj);
-              obj["users"] = arr2;
-              queryChannelUsersResult = set(currentUser1[18]).queryUsers(obj);
-              const obj5 = set(currentUser1[18]);
-            }
+            });
           }
-          let obj2 = set(currentUser1[18]);
-          obj1 = {};
-          const merged2 = Object.assign(obj);
-          queryChannelUsersResult = obj2.queryAllUsers(obj1);
+          if (items.length > 0) {
+            const currentUser = authStore.getCurrentUser();
+            if (null != currentUser) {
+              items.push(currentUser);
+            }
+            obj = {};
+            const merged1 = Object.assign(obj);
+            obj.users = items;
+            queryChannelUsersResult = set1(tmp2[18]).queryUsers(obj);
+            const obj5 = set1(tmp2[18]);
+          } else {
+            let obj2 = set1(tmp2[18]);
+            obj1 = {};
+            const merged2 = Object.assign(obj);
+            queryChannelUsersResult = obj2.queryAllUsers(obj1);
+          }
         } else {
           return [];
         }
       }
       currentUser1 = authStore.getCurrentUser();
       const replaced = str2.toLowerCase().replace(/^@/, "");
-      let tmp24 = null != currentUser1 && str2.length > 0;
-      if (tmp24) {
-        const intl = items(currentUser1[12]).intl;
-        let startsWithResult = intl.string(items(currentUser1[12]).t.Qf3ptv).startsWith(replaced);
+      let tmp31 = null != currentUser1;
+      if (tmp31) {
+        tmp31 = str2.length > 0;
+      }
+      if (tmp31) {
+        const intl = tmp(tmp2[12]).intl;
+        let startsWithResult = intl.string(tmp(tmp2[12]).t.Qf3ptv).startsWith(replaced);
         if (!startsWithResult) {
           const substr = closure_14.substr(1);
           startsWithResult = substr.startsWith(replaced);
         }
-        tmp24 = startsWithResult;
-        const stringResult = intl.string(items(currentUser1[12]).t.Qf3ptv);
+        tmp31 = startsWithResult;
+        const stringResult = intl.string(tmp(tmp2[12]).t.Qf3ptv);
       }
-      c3 = tmp24;
+      c3 = tmp31;
       const found = queryChannelUsersResult.filter((record) => {
         record = record.record;
         let isBlockedOrIgnoredResult = outer1_8.isBlockedOrIgnored(record.id);
@@ -485,7 +494,7 @@ function getUserAutocompletions(tokens) {
           let tmp2 = c3;
           if (c3) {
             let id;
-            if (null != currentUser1) {
+            if (currentUser1 != null) {
               id = currentUser1.id;
             }
             tmp2 = record.id === id;
@@ -496,36 +505,70 @@ function getUserAutocompletions(tokens) {
       });
       const mapped = found.map((record) => {
         record = record.record;
-        const obj = { text: set(currentUser1[14]).getUserTag(record), user: record };
+        const obj = { text: null, user: null };
+        obj[0] = set1(currentUser1[14]).getUserTag(record);
+        obj[1] = record;
         return obj;
       });
-      if (tmp24) {
-        obj2 = { text: closure_14, user: currentUser1 };
+      if (tmp31) {
+        obj2 = { text: null, user: null };
+        obj2[0] = closure_14;
+        obj2[1] = currentUser1;
         mapped.unshift(obj2);
       }
       return mapped;
     }
   }
   if (0 === str2.length) {
-    items = [];
-    let _Set = Set;
-    set = new Set();
-    currentlySelectedChannelId = currentlySelectedChannelId.getCurrentlySelectedChannelId(searchContext.guildId);
-    const recentlyTalked = set(currentUser1[18]).getRecentlyTalked(currentlySelectedChannelId, maxResults);
-    let item = recentlyTalked.forEach((record) => {
-      maybeAddUser(record.record);
+    items2 = [];
+    const _Set2 = Set;
+    set1 = new Set();
+    const currentlySelectedChannelId = store3.getCurrentlySelectedChannelId(searchContext.guildId);
+    const recentlyTalked = set1(tmp2[18]).getRecentlyTalked(currentlySelectedChannelId, maxResults);
+    const item2 = recentlyTalked.forEach((record) => {
+      record = record.record;
+      let hasItem = null == record;
+      if (!hasItem) {
+        hasItem = set1.has(record.id);
+      }
+      if (!hasItem) {
+        hasItem = outer1_8.isBlockedOrIgnored(record.id);
+      }
+      if (!hasItem) {
+        const obj = { user: null, text: null };
+        obj[0] = record;
+        obj[1] = set1(currentUser1[14]).getUserTag(record);
+        items2.push(obj);
+        set1.add(record.id);
+        const obj2 = set1(currentUser1[14]);
+      }
     });
     recentMessageAuthorIds = recentMessageAuthorIds.getRecentMessageAuthorIds(searchContext.guildId);
-    let item1 = recentMessageAuthorIds.forEach((arg0) => {
-      maybeAddUser(outer1_11.getUser(arg0));
+    const item3 = recentMessageAuthorIds.forEach((arg0) => {
+      const user = outer1_11.getUser(arg0);
+      let hasItem = null == user;
+      if (!hasItem) {
+        hasItem = set1.has(user.id);
+      }
+      if (!hasItem) {
+        hasItem = outer1_8.isBlockedOrIgnored(user.id);
+      }
+      if (!hasItem) {
+        const obj = { user: null, text: null };
+        obj[0] = user;
+        obj[1] = set1(currentUser1[14]).getUserTag(user);
+        items2.push(obj);
+        set1.add(user.id);
+        const obj2 = set1(currentUser1[14]);
+      }
     });
-    return items.slice(0, maxResults);
+    return items2.slice(0, maxResults);
   } else {
     const obj3 = {};
     const merged3 = Object.assign(obj);
-    obj3["guildId"] = searchContext.guildId;
-    queryChannelUsersResult = set(currentUser1[18]).queryGuildUsers(obj3);
-    const obj13 = set(currentUser1[18]);
+    obj3.guildId = searchContext.guildId;
+    queryChannelUsersResult = set1(tmp2[18]).queryGuildUsers(obj3);
+    const obj13 = set1(tmp2[18]);
   }
 }
 function getChannelAutocompletions(arg0) {
@@ -536,86 +579,109 @@ function getChannelAutocompletions(arg0) {
   const str = query.trim();
   if (str.startsWith("\"")) {
     if (str.endsWith("\"")) {
-      const substr = str.substring(1, str.length - 1);
+      let substr = str.substring(1, str.length - 1);
       let str2 = substr.replaceAll(/\\(.)/g, (arg0, arg1) => arg1);
     }
     let substr1 = str2;
     if ("#" === str2[0]) {
       substr1 = str2.substring(1);
     }
-    if (obj3.isGuildLikeSearchContext(searchContext)) {
-      let items = (function getGuildChannelAutocompletions(substr1, guildId, maxResults) {
-        let obj = outer1_1(outer1_2[18]);
-        obj = { query: substr1, type: outer1_5, guildId, limit: Infinity, allowEmptyQueries: true, allowSnowflake: true, includeAllThreads: true, boosters: outer1_0(outer1_2[18]).getBoosterMap(outer1_0(outer1_2[19]).AutocompleterResultTypes.TEXT_CHANNEL) };
-        const obj3 = outer1_0(outer1_2[18]);
-        const queryChannelsResult = obj.queryChannels(obj);
-        obj = { query: substr1, type: outer1_6, guildId, limit: Infinity, allowEmptyQueries: true, allowSnowflake: true };
-        const obj5 = outer1_1(outer1_2[18]);
-        obj.boosters = outer1_0(outer1_2[18]).getBoosterMap(outer1_0(outer1_2[19]).AutocompleterResultTypes.VOICE_CHANNEL);
-        const combined = queryChannelsResult.concat(obj5.queryChannels(obj));
-        const mapped = combined.map((record) => record.record);
-        if (0 === substr1.length) {
-          const channelId = outer1_9.getChannelId(guildId);
-          const found = mapped.find((id) => id.id === closure_0);
-          if (null != found) {
-            mapped.splice(mapped.indexOf(found), 1);
-            mapped.unshift(found);
-          }
-        }
-        const textChannelNameDisambiguations = outer1_7.getTextChannelNameDisambiguations(guildId);
-        const obj7 = outer1_0(outer1_2[18]);
-        const obj8 = outer1_1(outer1_2[11])(mapped);
-        const takeResult = outer1_1(outer1_2[11])(mapped).take(maxResults);
-        return outer1_1(outer1_2[11])(mapped).take(maxResults).map((channel) => {
-          const obj = {};
-          let name;
-          if (null != table[channel.id]) {
-            name = tmp.name;
-          }
-          if (null == name) {
-            name = outer2_0(outer2_2[13]).computeChannelName(channel, outer2_11, outer2_8);
-            const obj2 = outer2_0(outer2_2[13]);
-          }
-          obj.text = "" + name;
-          obj.channel = channel;
-          obj.key = channel.id;
-          return obj;
-        }).value();
-      })(substr1, searchContext.guildId, maxResults);
-    } else {
-      if (searchContext.type === constants.DMS) {
-        if (!closure_10.hidePersonalInformation) {
-          items = (function getPrivateChannelAutocompletions(substr1, maxResults, arg2) {
-            let obj = outer1_1(outer1_2[18]);
-            obj = { query: substr1, limit: maxResults, fuzzy: true, boosters: outer1_0(outer1_2[18]).getBoosterMap(outer1_0(outer1_2[19]).AutocompleterResultTypes.GROUP_DM) };
-            const obj3 = outer1_0(outer1_2[18]);
-            const queryGroupDMsResult = obj.queryGroupDMs(obj);
-            obj = { query: substr1, limit: maxResults };
-            const obj5 = outer1_1(outer1_2[18]);
-            obj.boosters = outer1_0(outer1_2[18]).getBoosterMap(outer1_0(outer1_2[19]).AutocompleterResultTypes.USER);
-            const obj7 = outer1_0(outer1_2[18]);
-            const queryDMChannelsResult = obj5.queryDMChannels(obj);
-            const tmp2 = outer1_1(outer1_2[11]);
-            const sorted = outer1_1(outer1_2[11])(queryGroupDMsResult.concat(queryDMChannelsResult)).sort(outer1_0(outer1_2[19]).sortByMatchScore);
-            const mapped = sorted.map((record) => {
-              record = record.record;
-              const obj = { text: record.comparator, channel: record };
-              let id;
-              if (null != record) {
-                id = record.id;
-              }
-              obj.key = id;
-              return obj;
-            });
-            const tmp2Result = outer1_1(outer1_2[11])(queryGroupDMsResult.concat(queryDMChannelsResult));
-            const iter = mapped.filter((text) => null != text.text && null != text.channel && null != text.key);
-            return mapped.filter((text) => null != text.text && null != text.channel && null != text.key).value().slice(0, maxResults);
-          })(substr1, maxResults, false);
+    let obj2 = _require(10103);
+    if (obj2.isGuildLikeSearchContext(searchContext)) {
+      const guildId = searchContext.guildId;
+      _require = undefined;
+      let importDefault;
+      let obj = { query: null, type: null, guildId: null, limit: Infinity, allowEmptyQueries: true, allowSnowflake: true, includeAllThreads: true, boosters: null };
+      obj[0] = substr1;
+      obj[1] = closure_5;
+      obj[2] = guildId;
+      let tmpResult = tmp(5031);
+      obj[7] = tmpResult.getBoosterMap(tmp(6163).AutocompleterResultTypes.TEXT_CHANNEL);
+      const obj12 = importDefault(5031);
+      const tmp7 = importDefault;
+      const queryChannelsResult = importDefault(5031).queryChannels(obj);
+      obj = { query: null, type: null, guildId: null, limit: Infinity, allowEmptyQueries: true, allowSnowflake: true, boosters: null };
+      obj[0] = substr1;
+      obj[1] = closure_6;
+      obj[2] = guildId;
+      tmpResult = tmp(5031);
+      obj[6] = tmpResult.getBoosterMap(tmp(6163).AutocompleterResultTypes.VOICE_CHANNEL);
+      const combined = queryChannelsResult.concat(importDefault(5031).queryChannels(obj));
+      const mapped = combined.map((record) => record.record);
+      if (0 === substr1.length) {
+        _require = store3.getChannelId(guildId);
+        const found = mapped.find((id) => id.id === closure_0);
+        if (null != found) {
+          mapped.splice(mapped.indexOf(found), 1);
+          mapped.unshift(found);
         }
       }
-      items = [];
+      importDefault = store2.getTextChannelNameDisambiguations(guildId);
+      const obj16 = importDefault(5031);
+      const obj19 = tmp7(12)(mapped);
+      const takeResult = tmp7(12)(mapped).take(maxResults);
+      substr = tmp7(12)(mapped).take(maxResults).map((channel) => {
+        let name;
+        if (table[channel.id] != null) {
+          name = tmp.name;
+        }
+        if (name == null) {
+          let obj = callback(outer1_2[13]);
+          name = obj.computeChannelName(channel, outer1_11, outer1_8);
+        }
+        obj = { text: "" + name, channel, key: channel.id };
+        return obj;
+      }).value();
+      const iter2 = tmp7(12)(mapped).take(maxResults).map((channel) => {
+        let name;
+        if (table[channel.id] != null) {
+          name = tmp.name;
+        }
+        if (name == null) {
+          let obj = callback(outer1_2[13]);
+          name = obj.computeChannelName(channel, outer1_11, outer1_8);
+        }
+        obj = { text: "" + name, channel, key: channel.id };
+        return obj;
+      });
+    } else {
+      if (searchContext.type === constants.DMS) {
+        if (!initialize.hidePersonalInformation) {
+          const obj1 = { query: null, limit: null, fuzzy: true, boosters: null };
+          obj1[0] = substr1;
+          obj1[1] = maxResults;
+          const obj4 = importDefault(5031);
+          obj1[3] = tmp(5031).getBoosterMap(tmp(6163).AutocompleterResultTypes.GROUP_DM);
+          const tmpResult1 = tmp(5031);
+          const queryGroupDMsResult = obj4.queryGroupDMs(obj1);
+          obj2 = { query: null, limit: null, boosters: null };
+          obj2[0] = substr1;
+          obj2[1] = maxResults;
+          const obj8 = importDefault(5031);
+          obj2[2] = tmp(5031).getBoosterMap(tmp(6163).AutocompleterResultTypes.USER);
+          const tmpResult2 = tmp(5031);
+          const queryDMChannelsResult = obj8.queryDMChannels(obj2);
+          const tmp6 = importDefault(12);
+          const sorted = importDefault(12)(queryGroupDMsResult.concat(queryDMChannelsResult)).sort(tmp(6163).sortByMatchScore);
+          const mapped1 = sorted.map((record) => {
+            record = record.record;
+            const obj = { text: record.comparator, channel: record, key: null };
+            let id;
+            if (record != null) {
+              id = record.id;
+            }
+            obj[2] = id;
+            return obj;
+          });
+          const tmp6Result = importDefault(12)(queryGroupDMsResult.concat(queryDMChannelsResult));
+          const iter = mapped1.filter((text) => null != text.text && null != text.channel && null != text.key);
+          substr = mapped1.filter((text) => null != text.text && null != text.channel && null != text.key).value().slice(0, maxResults);
+          const valueResult = mapped1.filter((text) => null != text.text && null != text.channel && null != text.key).value();
+        }
+      }
+      substr = [];
     }
-    return items;
+    return substr;
   }
   str2 = str;
   if (str.startsWith("\"")) {
@@ -651,130 +717,189 @@ function makeSearchTokenConfigs(arg0) {
   const intl12 = _require(items1[12]).intl;
   items1[8] = intl12.string(_require(items1[12]).t.nrpA5E);
   let obj = {};
-  obj = {};
+  obj = { regex: null, componentType: null, key: null, plainText: null, validator: null, getAutocompletions: null };
   const intl13 = _require(items1[12]).intl;
-  obj.regex = buildFilterRegex(intl13.string(_require(items1[12]).t["1TUdFo"]));
-  obj.componentType = obj.FILTER;
+  const regExp = new RegExp("" + intl13.string(_require(items1[12]).t["1TUdFo"]) + ":", "i");
+  obj[0] = regExp;
+  obj[1] = obj.FILTER;
   const intl14 = _require(items1[12]).intl;
-  obj.key = buildKey(intl14.string(_require(items1[12]).t["1TUdFo"]));
+  obj[2] = "" + intl14.string(_require(items1[12]).t["1TUdFo"]) + ":";
   const intl15 = _require(items1[12]).intl;
-  obj.plainText = intl15.string(_require(items1[12]).t["1TUdFo"]);
-  obj.validator = function validator() {
+  obj[3] = intl15.string(_require(items1[12]).t["1TUdFo"]);
+  obj[4] = function validator() {
     return callback(items1[20]).isFromUserFilterSupported();
   };
-  obj.getAutocompletions = getUserAutocompletions;
+  obj[5] = getUserAutocompletions;
   obj[SearchTokenTypes.FILTER_FROM] = obj;
-  obj = { follows: items2, regex: closure_22, validator: isValidUserAutocomplete, mutable: true, componentType: obj.ANSWER, queryKey: "author_id" };
+  obj = { follows: items2, regex: closure_33, validator: isValidUserAutocomplete, mutable: true, componentType: obj.ANSWER, queryKey: "author_id" };
   items2 = [SearchTokenTypes.FILTER_FROM];
   obj[SearchTokenTypes.ANSWER_USERNAME_FROM] = obj;
-  const obj1 = {};
+  const obj1 = { regex: null, componentType: null, key: null, plainText: null, validator: null, getAutocompletions: null };
   const intl16 = _require(items1[12]).intl;
-  obj1.regex = buildFilterRegex(intl16.string(_require(items1[12]).t["i96lO+"]));
-  obj1.componentType = obj.FILTER;
+  const regExp1 = new RegExp("" + intl16.string(_require(items1[12]).t["i96lO+"]) + ":", "i");
+  obj1[0] = regExp1;
+  obj1[1] = obj.FILTER;
   const intl17 = _require(items1[12]).intl;
-  obj1.key = buildKey(intl17.string(_require(items1[12]).t["i96lO+"]));
+  obj1[2] = "" + intl17.string(_require(items1[12]).t["i96lO+"]) + ":";
   const intl18 = _require(items1[12]).intl;
-  obj1.plainText = intl18.string(_require(items1[12]).t["i96lO+"]);
-  obj1.validator = function validator() {
+  obj1[3] = intl18.string(_require(items1[12]).t["i96lO+"]);
+  obj1[4] = function validator() {
     return callback(items1[20]).isMentionsUserFilterSupported();
   };
-  obj1.getAutocompletions = getUserAutocompletions;
+  obj1[5] = getUserAutocompletions;
   obj[SearchTokenTypes.FILTER_MENTIONS] = obj1;
   const items3 = [SearchTokenTypes.FILTER_MENTIONS];
-  obj[SearchTokenTypes.ANSWER_USERNAME_MENTIONS] = { follows: items3, regex: closure_22, validator: isValidUserAutocomplete, mutable: true, componentType: obj.ANSWER, queryKey: "mentions" };
-  const obj3 = {};
+  obj[SearchTokenTypes.ANSWER_USERNAME_MENTIONS] = { follows: items3, regex: closure_33, validator: isValidUserAutocomplete, mutable: true, componentType: obj.ANSWER, queryKey: "mentions" };
+  const obj3 = { regex: null, componentType: null, key: null, plainText: null, getAutocompletions: null };
   const intl19 = _require(items1[12]).intl;
-  obj3.regex = buildFilterRegex(intl19.string(_require(items1[12]).t.CqCvir));
-  obj3.componentType = obj.FILTER;
+  const regExp2 = new RegExp("" + intl19.string(_require(items1[12]).t.CqCvir) + ":", "i");
+  obj3[0] = regExp2;
+  obj3[1] = obj.FILTER;
   const intl20 = _require(items1[12]).intl;
-  obj3.key = buildKey(intl20.string(_require(items1[12]).t.CqCvir));
+  obj3[2] = "" + intl20.string(_require(items1[12]).t.CqCvir) + ":";
   const intl21 = _require(items1[12]).intl;
-  obj3.plainText = intl21.string(_require(items1[12]).t.CqCvir);
-  obj3.getAutocompletions = function getAutocompletions(query) {
-    return outer1_46(query.query, query.maxResults, items1);
+  obj3[3] = intl21.string(_require(items1[12]).t.CqCvir);
+  obj3[4] = function getAutocompletions(query) {
+    query = query.query;
+    let closure_0;
+    closure_0 = query.toLocaleLowerCase();
+    const found = items(items1[11])(items1).filter((toLocaleLowerCase) => outer1_1(outer1_2[17])(closure_0, toLocaleLowerCase.toLocaleLowerCase()));
+    const arr = items(items1[11])(items1);
+    const takeResult = found.take(query.maxResults);
+    return found.take(query.maxResults).map((text) => ({ text })).value();
   };
   obj[SearchTokenTypes.FILTER_HAS] = obj3;
-  const obj4 = {};
+  const obj4 = { regex: null, follows: null, validator: null, componentType: null, queryKey: "has" };
   let obj7 = _require(items1[16]);
-  obj4.regex = obj7.makeRegexForOptionsWithNegation(items1);
+  obj4[0] = obj7.makeRegexForOptionsWithNegation(items1);
   const items4 = [SearchTokenTypes.FILTER_HAS];
-  obj4.follows = items4;
-  obj4.validator = isValidHasAutocomplete;
-  obj4.componentType = obj.ANSWER;
-  obj4.queryKey = "has";
+  obj4[1] = items4;
+  obj4[2] = isValidHasAutocomplete;
+  obj4[3] = obj.ANSWER;
   obj[SearchTokenTypes.ANSWER_HAS] = obj4;
-  const obj5 = {};
+  const obj5 = { regex: null, key: null, plainText: null, componentType: null };
   const intl22 = _require(items1[12]).intl;
-  obj5.regex = buildFilterRegex(intl22.string(_require(items1[12]).t.RpRAZD));
+  const regExp3 = new RegExp("" + intl22.string(_require(items1[12]).t.RpRAZD) + ":", "i");
+  obj5[0] = regExp3;
   const intl23 = _require(items1[12]).intl;
-  obj5.key = buildKey(intl23.string(_require(items1[12]).t.RpRAZD));
+  obj5[1] = "" + intl23.string(_require(items1[12]).t.RpRAZD) + ":";
   const intl24 = _require(items1[12]).intl;
-  obj5.plainText = intl24.string(_require(items1[12]).t.RpRAZD);
-  obj5.componentType = obj.FILTER;
+  obj5[2] = intl24.string(_require(items1[12]).t.RpRAZD);
+  obj5[3] = obj.FILTER;
   obj[SearchTokenTypes.FILTER_LINK_FROM] = obj5;
   const items5 = [SearchTokenTypes.FILTER_LINK_FROM];
   obj[SearchTokenTypes.ANSWER_LINK_FROM] = { regex: _require(items1[16]).GENERIC_REGEX, follows: items5, mutable: true, componentType: obj.ANSWER, queryKey: "link_hostname" };
-  obj7 = {};
+  obj7 = { regex: null, key: null, plainText: null, componentType: null };
   const intl25 = _require(items1[12]).intl;
-  obj7.regex = buildFilterRegex(intl25.string(_require(items1[12]).t.TMNjFm));
+  const regExp4 = new RegExp("" + intl25.string(_require(items1[12]).t.TMNjFm) + ":", "i");
+  obj7[0] = regExp4;
   const intl26 = _require(items1[12]).intl;
-  obj7.key = buildKey(intl26.string(_require(items1[12]).t.TMNjFm));
+  obj7[1] = "" + intl26.string(_require(items1[12]).t.TMNjFm) + ":";
   const intl27 = _require(items1[12]).intl;
-  obj7.plainText = intl27.string(_require(items1[12]).t.TMNjFm);
-  obj7.componentType = obj.FILTER;
+  obj7[2] = intl27.string(_require(items1[12]).t.TMNjFm);
+  obj7[3] = obj.FILTER;
   obj[SearchTokenTypes.FILTER_FILE_TYPE] = obj7;
-  const obj2 = { follows: items3, regex: closure_22, validator: isValidUserAutocomplete, mutable: true, componentType: obj.ANSWER, queryKey: "mentions" };
+  const obj2 = { follows: items3, regex: closure_33, validator: isValidUserAutocomplete, mutable: true, componentType: obj.ANSWER, queryKey: "mentions" };
   const obj6 = { regex: _require(items1[16]).GENERIC_REGEX, follows: items5, mutable: true, componentType: obj.ANSWER, queryKey: "link_hostname" };
   const items6 = [SearchTokenTypes.FILTER_FILE_TYPE];
   obj[SearchTokenTypes.ANSWER_FILE_TYPE] = { regex: _require(items1[16]).GENERIC_REGEX, follows: items6, mutable: true, componentType: obj.ANSWER, queryKey: "attachment_extension" };
-  const obj9 = {};
+  const obj9 = { regex: null, key: null, plainText: null, componentType: null };
   const intl28 = _require(items1[12]).intl;
-  obj9.regex = buildFilterRegex(intl28.string(_require(items1[12]).t["5xtLRC"]));
+  const regExp5 = new RegExp("" + intl28.string(_require(items1[12]).t["5xtLRC"]) + ":", "i");
+  obj9[0] = regExp5;
   const intl29 = _require(items1[12]).intl;
-  obj9.key = buildKey(intl29.string(_require(items1[12]).t["5xtLRC"]));
+  obj9[1] = "" + intl29.string(_require(items1[12]).t["5xtLRC"]) + ":";
   const intl30 = _require(items1[12]).intl;
-  obj9.plainText = intl30.string(_require(items1[12]).t["5xtLRC"]);
-  obj9.componentType = obj.FILTER;
+  obj9[2] = intl30.string(_require(items1[12]).t["5xtLRC"]);
+  obj9[3] = obj.FILTER;
   obj[SearchTokenTypes.FILTER_FILE_NAME] = obj9;
   const obj8 = { regex: _require(items1[16]).GENERIC_REGEX, follows: items6, mutable: true, componentType: obj.ANSWER, queryKey: "attachment_extension" };
   const items7 = [SearchTokenTypes.FILTER_FILE_NAME];
   obj[SearchTokenTypes.ANSWER_FILE_NAME] = { regex: _require(items1[16]).GENERIC_REGEX, follows: items7, mutable: true, componentType: obj.ANSWER, queryKey: "attachment_filename" };
-  const obj11 = {};
+  const obj11 = { regex: null, componentType: null, key: null, plainText: null, getAutocompletions: null };
   const intl31 = _require(items1[12]).intl;
-  obj11.regex = buildFilterRegex(intl31.string(_require(items1[12]).t["qZ+7BA"]));
-  obj11.componentType = obj.FILTER;
+  const regExp6 = new RegExp("" + intl31.string(_require(items1[12]).t["qZ+7BA"]) + ":", "i");
+  obj11[0] = regExp6;
+  obj11[1] = obj.FILTER;
   const intl32 = _require(items1[12]).intl;
-  obj11.key = buildKey(intl32.string(_require(items1[12]).t["qZ+7BA"]));
+  obj11[2] = "" + intl32.string(_require(items1[12]).t["qZ+7BA"]) + ":";
   const intl33 = _require(items1[12]).intl;
-  obj11.plainText = intl33.string(_require(items1[12]).t["qZ+7BA"]);
-  obj11.getAutocompletions = function getAutocompletions(query) {
-    return outer1_45(query.query, query.maxResults, outer1_15.FILTER_BEFORE);
+  obj11[3] = intl33.string(_require(items1[12]).t["qZ+7BA"]);
+  obj11[4] = function getAutocompletions(query) {
+    query = query.query;
+    let FILTER_BEFORE = constants.FILTER_BEFORE;
+    FILTER_BEFORE = undefined;
+    FILTER_BEFORE = query.toLocaleLowerCase();
+    const tmp = callback3();
+    const found = items(items1[11])(callback3()).filter((toLocaleLowerCase) => outer1_1(outer1_2[17])(closure_0, toLocaleLowerCase.toLocaleLowerCase()));
+    const arr = items(items1[11])(callback3());
+    const takeResult = found.take(query.maxResults);
+    const iter = found.take(query.maxResults).map((text) => ({ text }));
+    return found.take(query.maxResults).map((text) => ({ text })).value().map((text) => {
+      const obj = {};
+      const merged = Object.assign(text);
+      obj.group = closure_0;
+      obj.key = "" + closure_0 + "-" + text.text;
+      return obj;
+    });
   };
   obj[SearchTokenTypes.FILTER_BEFORE] = obj11;
-  const obj12 = {};
+  const obj12 = { regex: null, componentType: null, key: null, plainText: null, getAutocompletions: null };
   const intl34 = _require(items1[12]).intl;
   const obj10 = { regex: _require(items1[16]).GENERIC_REGEX, follows: items7, mutable: true, componentType: obj.ANSWER, queryKey: "attachment_filename" };
   const intl35 = _require(items1[12]).intl;
-  obj12.regex = buildFilterRegex("(" + intl34.string(_require(items1[12]).t.tIxkOo) + "|" + intl35.string(_require(items1[12]).t.h2NzSd) + ")");
-  obj12.componentType = obj.FILTER;
+  const regExp7 = new RegExp("" + "(" + intl34.string(_require(items1[12]).t.tIxkOo) + "|" + intl35.string(_require(items1[12]).t.h2NzSd) + ")" + ":", "i");
+  obj12[0] = regExp7;
+  obj12[1] = obj.FILTER;
   const intl36 = _require(items1[12]).intl;
-  obj12.key = buildKey(intl36.string(_require(items1[12]).t.h2NzSd));
+  obj12[2] = "" + intl36.string(_require(items1[12]).t.h2NzSd) + ":";
   const intl37 = _require(items1[12]).intl;
-  obj12.plainText = intl37.string(_require(items1[12]).t.h2NzSd);
-  obj12.getAutocompletions = function getAutocompletions(query) {
-    return outer1_45(query.query, query.maxResults, outer1_15.FILTER_ON);
+  obj12[3] = intl37.string(_require(items1[12]).t.h2NzSd);
+  obj12[4] = function getAutocompletions(query) {
+    query = query.query;
+    let FILTER_ON = constants.FILTER_ON;
+    FILTER_ON = undefined;
+    FILTER_ON = query.toLocaleLowerCase();
+    const tmp = callback3();
+    const found = items(items1[11])(callback3()).filter((toLocaleLowerCase) => outer1_1(outer1_2[17])(closure_0, toLocaleLowerCase.toLocaleLowerCase()));
+    const arr = items(items1[11])(callback3());
+    const takeResult = found.take(query.maxResults);
+    const iter = found.take(query.maxResults).map((text) => ({ text }));
+    return found.take(query.maxResults).map((text) => ({ text })).value().map((text) => {
+      const obj = {};
+      const merged = Object.assign(text);
+      obj.group = closure_0;
+      obj.key = "" + closure_0 + "-" + text.text;
+      return obj;
+    });
   };
   obj[SearchTokenTypes.FILTER_ON] = obj12;
-  const obj13 = {};
+  const obj13 = { regex: null, componentType: null, key: null, plainText: null, getAutocompletions: null };
   const intl38 = _require(items1[12]).intl;
-  obj13.regex = buildFilterRegex(intl38.string(_require(items1[12]).t.KSDx7M));
-  obj13.componentType = obj.FILTER;
+  const regExp8 = new RegExp("" + intl38.string(_require(items1[12]).t.KSDx7M) + ":", "i");
+  obj13[0] = regExp8;
+  obj13[1] = obj.FILTER;
   const intl39 = _require(items1[12]).intl;
-  obj13.key = buildKey(intl39.string(_require(items1[12]).t.KSDx7M));
+  obj13[2] = "" + intl39.string(_require(items1[12]).t.KSDx7M) + ":";
   const intl40 = _require(items1[12]).intl;
-  obj13.plainText = intl40.string(_require(items1[12]).t.KSDx7M);
-  obj13.getAutocompletions = function getAutocompletions(query) {
-    return outer1_45(query.query, query.maxResults, outer1_15.FILTER_AFTER);
+  obj13[3] = intl40.string(_require(items1[12]).t.KSDx7M);
+  obj13[4] = function getAutocompletions(query) {
+    query = query.query;
+    let FILTER_AFTER = constants.FILTER_AFTER;
+    FILTER_AFTER = undefined;
+    FILTER_AFTER = query.toLocaleLowerCase();
+    const tmp = callback3();
+    const found = items(items1[11])(callback3()).filter((toLocaleLowerCase) => outer1_1(outer1_2[17])(closure_0, toLocaleLowerCase.toLocaleLowerCase()));
+    const arr = items(items1[11])(callback3());
+    const takeResult = found.take(query.maxResults);
+    const iter = found.take(query.maxResults).map((text) => ({ text }));
+    return found.take(query.maxResults).map((text) => ({ text })).value().map((text) => {
+      const obj = {};
+      const merged = Object.assign(text);
+      obj.group = closure_0;
+      obj.key = "" + closure_0 + "-" + text.text;
+      return obj;
+    });
   };
   obj[SearchTokenTypes.FILTER_AFTER] = obj13;
   const items8 = [SearchTokenTypes.FILTER_BEFORE];
@@ -784,7 +909,7 @@ function makeSearchTokenConfigs(arg0) {
     componentType: obj.ANSWER,
     mutable: true,
     validator(arg0) {
-      return outer1_36(arg0, "before");
+      return callback2(arg0, "before");
     }
   };
   const items9 = [SearchTokenTypes.FILTER_ON];
@@ -794,7 +919,7 @@ function makeSearchTokenConfigs(arg0) {
     componentType: obj.ANSWER,
     mutable: true,
     validator(arg0) {
-      return outer1_36(arg0, "on");
+      return callback2(arg0, "on");
     }
   };
   const items10 = [SearchTokenTypes.FILTER_AFTER];
@@ -804,21 +929,21 @@ function makeSearchTokenConfigs(arg0) {
     componentType: obj.ANSWER,
     mutable: true,
     validator(arg0) {
-      return outer1_36(arg0, "after");
+      return callback2(arg0, "after");
     }
   };
-  const obj17 = {};
+  const obj17 = { regex: null, componentType: null, key: null, plainText: null, validator: null, getAutocompletions: null };
   const intl41 = _require(items1[12]).intl;
-  obj17.regex = buildFilterRegex(intl41.string(_require(items1[12]).t.WNpFHa));
-  obj17.componentType = obj.FILTER;
+  const regExp9 = new RegExp("" + intl41.string(_require(items1[12]).t.WNpFHa) + ":", "i");
+  obj17[0] = regExp9;
+  obj17[1] = obj.FILTER;
   const intl42 = _require(items1[12]).intl;
-  obj17.key = buildKey(intl42.string(_require(items1[12]).t.WNpFHa));
+  obj17[2] = "" + intl42.string(_require(items1[12]).t.WNpFHa) + ":";
   const intl43 = _require(items1[12]).intl;
-  obj17.plainText = intl43.string(_require(items1[12]).t.WNpFHa);
-  obj17.validator = function validator() {
-    if (null != callback) {
-      let selectedSearchContext = callback;
-    } else {
+  obj17[3] = intl43.string(_require(items1[12]).t.WNpFHa);
+  obj17[4] = function validator() {
+    let selectedSearchContext = callback;
+    if (callback == null) {
       selectedSearchContext = outer1_12.getSelectedSearchContext();
     }
     let result = null != selectedSearchContext;
@@ -828,7 +953,7 @@ function makeSearchTokenConfigs(arg0) {
     }
     return result;
   };
-  obj17.getAutocompletions = getChannelAutocompletions;
+  obj17[5] = getChannelAutocompletions;
   obj[SearchTokenTypes.FILTER_IN] = obj17;
   const obj14 = {
     regex: regExp,
@@ -836,7 +961,7 @@ function makeSearchTokenConfigs(arg0) {
     componentType: obj.ANSWER,
     mutable: true,
     validator(arg0) {
-      return outer1_36(arg0, "before");
+      return callback2(arg0, "before");
     }
   };
   const obj15 = {
@@ -845,7 +970,7 @@ function makeSearchTokenConfigs(arg0) {
     componentType: obj.ANSWER,
     mutable: true,
     validator(arg0) {
-      return outer1_36(arg0, "on");
+      return callback2(arg0, "on");
     }
   };
   const obj16 = {
@@ -854,7 +979,7 @@ function makeSearchTokenConfigs(arg0) {
     componentType: obj.ANSWER,
     mutable: true,
     validator(arg0) {
-      return outer1_36(arg0, "after");
+      return callback2(arg0, "after");
     }
   };
   const stringResult = intl34.string(_require(items1[12]).t.tIxkOo);
@@ -865,98 +990,158 @@ function makeSearchTokenConfigs(arg0) {
     follows: items11,
     componentType: obj.ANSWER,
     validator(arg0) {
-      if (null != closure_0) {
-        let selectedSearchContext = closure_0;
-      } else {
+      let selectedSearchContext = closure_0;
+      if (closure_0 == null) {
         selectedSearchContext = outer1_12.getSelectedSearchContext();
       }
       let tmp3 = null != selectedSearchContext;
       if (tmp3) {
-        tmp3 = outer1_37(arg0, selectedSearchContext);
+        tmp3 = outer1_25(arg0, selectedSearchContext);
       }
       return tmp3;
     },
     queryKey: "channel_id"
   };
-  const obj19 = {};
+  const obj19 = { regex: null, componentType: null, key: null, plainText: null, getAutocompletions: null };
   const intl44 = _require(items1[12]).intl;
-  obj19.regex = buildFilterRegex(intl44.string(_require(items1[12]).t["0B74eY"]));
-  obj19.componentType = obj.FILTER;
+  const regExp10 = new RegExp("" + intl44.string(_require(items1[12]).t["0B74eY"]) + ":", "i");
+  obj19[0] = regExp10;
+  obj19[1] = obj.FILTER;
   const intl45 = _require(items1[12]).intl;
-  obj19.key = buildKey(intl45.string(_require(items1[12]).t["0B74eY"]));
+  obj19[2] = "" + intl45.string(_require(items1[12]).t["0B74eY"]) + ":";
   const intl46 = _require(items1[12]).intl;
-  obj19.plainText = intl46.string(_require(items1[12]).t["0B74eY"]);
-  obj19.getAutocompletions = function getAutocompletions() {
+  obj19[3] = intl46.string(_require(items1[12]).t["0B74eY"]);
+  obj19[4] = function getAutocompletions() {
     const items = [{ text: "true" }, { text: "false" }];
     return items;
   };
   obj[SearchTokenTypes.FILTER_PINNED] = obj19;
   const items12 = [SearchTokenTypes.FILTER_PINNED];
   obj[SearchTokenTypes.ANSWER_PINNED] = { regex: regExp1, componentType: obj.ANSWER, follows: items12, queryKey: "pinned", validator: isValidPinnedAutocomplete };
-  const obj21 = {};
+  const obj21 = { regex: null, componentType: null, key: null, plainText: null, getAutocompletions: null };
   const intl47 = _require(items1[12]).intl;
-  obj21.regex = buildFilterRegex(intl47.string(_require(items1[12]).t.us8IQi));
-  obj21.componentType = obj.FILTER;
+  const regExp11 = new RegExp("" + intl47.string(_require(items1[12]).t.us8IQi) + ":", "i");
+  obj21[0] = regExp11;
+  obj21[1] = obj.FILTER;
   const intl48 = _require(items1[12]).intl;
-  obj21.key = buildKey(intl48.string(_require(items1[12]).t.us8IQi));
+  obj21[2] = "" + intl48.string(_require(items1[12]).t.us8IQi) + ":";
   const intl49 = _require(items1[12]).intl;
-  obj21.plainText = intl49.string(_require(items1[12]).t.us8IQi);
-  obj21.getAutocompletions = function getAutocompletions(query) {
-    return outer1_46(query.query, query.maxResults, items);
+  obj21[3] = intl49.string(_require(items1[12]).t.us8IQi);
+  obj21[4] = function getAutocompletions(query) {
+    query = query.query;
+    let closure_0;
+    closure_0 = query.toLocaleLowerCase();
+    const found = items(items1[11])(items).filter((toLocaleLowerCase) => outer1_1(outer1_2[17])(closure_0, toLocaleLowerCase.toLocaleLowerCase()));
+    const arr = items(items1[11])(items);
+    const takeResult = found.take(query.maxResults);
+    return found.take(query.maxResults).map((text) => ({ text })).value();
   };
   obj[SearchTokenTypes.FILTER_AUTHOR_TYPE] = obj21;
-  const obj22 = {};
+  const obj22 = { regex: null, follows: null, validator: null, componentType: null, queryKey: "author_type" };
   const obj18 = {
     regex: _require(items1[16]).ANSWER_IN_REGEX,
     mutable: true,
     follows: items11,
     componentType: obj.ANSWER,
     validator(arg0) {
-      if (null != closure_0) {
-        let selectedSearchContext = closure_0;
-      } else {
+      let selectedSearchContext = closure_0;
+      if (closure_0 == null) {
         selectedSearchContext = outer1_12.getSelectedSearchContext();
       }
       let tmp3 = null != selectedSearchContext;
       if (tmp3) {
-        tmp3 = outer1_37(arg0, selectedSearchContext);
+        tmp3 = outer1_25(arg0, selectedSearchContext);
       }
       return tmp3;
     },
     queryKey: "channel_id"
   };
   const obj20 = { regex: regExp1, componentType: obj.ANSWER, follows: items12, queryKey: "pinned", validator: isValidPinnedAutocomplete };
-  obj22.regex = _require(items1[16]).makeRegexForOptionsWithNegation(items);
+  obj22[0] = _require(items1[16]).makeRegexForOptionsWithNegation(items);
   const items13 = [SearchTokenTypes.FILTER_AUTHOR_TYPE];
-  obj22.follows = items13;
-  obj22.validator = isValidAuthorTypeAutocomplete;
-  obj22.componentType = obj.ANSWER;
-  obj22.queryKey = "author_type";
+  obj22[1] = items13;
+  obj22[2] = isValidAuthorTypeAutocomplete;
+  obj22[3] = obj.ANSWER;
   obj[SearchTokenTypes.ANSWER_AUTHOR_TYPE] = obj22;
   return obj;
 }
-({ GUILD_SELECTABLE_CHANNELS_KEY: closure_5, GUILD_VOCAL_CHANNELS_KEY: closure_6 } = _isNativeReflectConstruct);
+({ GUILD_SELECTABLE_CHANNELS_KEY: c5, GUILD_VOCAL_CHANNELS_KEY: closure_6 } = comparator);
 ({ ME: closure_14, SearchTokenTypes } = ME);
 ({ SEARCH_DATE_FORMAT: closure_16, SearchTypes: closure_17, IS_SEARCH_FILTER_TOKEN: closure_18, ID_REGEX: closure_19 } = ME);
 let regExp = new RegExp("(?:\\s*(([0-9]{4})-([0-9]{1,2})-([0-9]{1,2})|([0-9]{4})-([0-9]{1,2})|\\d{4}|([^\\d\\s]+)))", "i");
-const regExp1 = new RegExp("\\s*(true|false)", "i");
-const re22 = /^(?:\s*(\d{17,20}|@me|([^@#:]+)#([0-9]{4})|([a-z0-9_.]{2,32})))/i;
+let regExp1 = new RegExp("\\s*(true|false)", "i");
+const re33 = /^(?:\s*(\d{17,20}|@me|([^@#:]+)#([0-9]{4})|([a-z0-9_.]{2,32})))/i;
 let obj = { FILTER: "FILTER", ANSWER: "ANSWER" };
 obj = {};
-let closure_25 = { [SearchTokenTypes.FILTER_HAS]: SearchTokenTypes.ANSWER_HAS, [SearchTokenTypes.FILTER_AUTHOR_TYPE]: SearchTokenTypes.ANSWER_AUTHOR_TYPE, [SearchTokenTypes.FILTER_PINNED]: SearchTokenTypes.ANSWER_PINNED };
-let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/search/tokens/SearchTokens.tsx");
+let closure_37 = { [SearchTokenTypes.FILTER_HAS]: SearchTokenTypes.ANSWER_HAS, [SearchTokenTypes.FILTER_AUTHOR_TYPE]: SearchTokenTypes.ANSWER_AUTHOR_TYPE, [SearchTokenTypes.FILTER_PINNED]: SearchTokenTypes.ANSWER_PINNED };
+let result = require("comparator").fileFinishedImporting("modules/search/tokens/SearchTokens.tsx");
 
 export default obj;
 export { isValidUserAutocomplete };
 export { isValidChannelAutocomplete };
-export const getLocalizedHasAnswer = function getLocalizedHasAnswer(arg0) {
-  return getLocalizedAnswer(arg0, getHasMap());
+export const getLocalizedHasAnswer = function getLocalizedHasAnswer(str) {
+  let substr;
+  const startsWithResult = str.startsWith("-");
+  substr = str;
+  if (startsWithResult) {
+    substr = str.slice(1);
+  }
+  const entries = Object.entries(getHasMap());
+  const found = entries.find((arg0) => {
+    let tmp;
+    [, tmp] = arg0;
+    return tmp === substr;
+  });
+  let first;
+  if (found != null) {
+    first = found[0];
+  }
+  if (first == null) {
+    first = substr;
+  }
+  let combined = first;
+  if (startsWithResult) {
+    const _HermesInternal = HermesInternal;
+    combined = "-" + first;
+  }
+  return combined;
 };
-export const getLocalizedAuthorTypeAnswer = function getLocalizedAuthorTypeAnswer(arg0) {
-  return getLocalizedAnswer(arg0, getAuthorTypeMap());
+export const getLocalizedAuthorTypeAnswer = function getLocalizedAuthorTypeAnswer(str) {
+  const obj = {};
+  const intl = substr(1236).intl;
+  obj[intl.string(substr(1236).t.tPZo4p)] = "user";
+  const intl2 = substr(1236).intl;
+  obj[intl2.string(substr(1236).t.JL7sRS)] = "bot";
+  const intl3 = substr(1236).intl;
+  obj[intl3.string(substr(1236).t.WjkIKU)] = "webhook";
+  substr = undefined;
+  const startsWithResult = str.startsWith("-");
+  substr = str;
+  if (startsWithResult) {
+    substr = str.slice(1);
+  }
+  const entries = Object.entries(obj);
+  const found = entries.find((arg0) => {
+    let tmp;
+    [, tmp] = arg0;
+    return tmp === substr;
+  });
+  let first;
+  if (found != null) {
+    first = found[0];
+  }
+  if (first == null) {
+    first = substr;
+  }
+  let combined = first;
+  if (startsWithResult) {
+    const _HermesInternal = HermesInternal;
+    combined = "-" + first;
+  }
+  return combined;
 };
 export const getRandomDateShortcut = function getRandomDateShortcut() {
-  return importDefault(22).sample(generateDateAutocompletions());
+  return importDefault(12).sample(generateDateAutocompletions());
 };
 export { getUserAutocompletions };
 export const ComponentTypes = obj;
@@ -974,9 +1159,9 @@ export const isMeAutcompleteAnswer = function isMeAutcompleteAnswer(str) {
     return false;
   } else {
     const replaced = str.toLowerCase().replace(/^@/, "");
-    const intl = require(1212) /* getSystemLocale */.intl;
+    const intl = require(1236) /* getSystemLocale */.intl;
     str = str.toLowerCase();
-    let startsWithResult = intl.string(require(1212) /* getSystemLocale */.t.Qf3ptv).startsWith(replaced);
+    let startsWithResult = intl.string(require(1236) /* getSystemLocale */.t.Qf3ptv).startsWith(replaced);
     if (!startsWithResult) {
       const substr = closure_14.substring(1);
       startsWithResult = substr.startsWith(replaced);
@@ -988,17 +1173,35 @@ export const isValidFilterAnswerForSubmit = function isValidFilterAnswerForSubmi
   if (null == table[searchTokenType]) {
     return true;
   } else {
-    const Token = require(10088) /* getMatch */.Token;
     const _HermesInternal = HermesInternal;
     const items = ["filter:" + trimmed, trimmed];
-    const prototype = Token.prototype;
-    const token = new Token(items, tmp);
+    const token = new require(10109) /* getMatch */.Token(items, tmp);
     if (SearchTokenTypes.ANSWER_HAS === tmp) {
-      return isValidHasAutocomplete(token);
-    } else if (SearchTokenTypes.ANSWER_AUTHOR_TYPE === tmp) {
-      return isValidAuthorTypeAutocomplete(token);
-    } else if (SearchTokenTypes.ANSWER_PINNED === tmp) {
-      return isValidPinnedAutocomplete(token);
+      let tmp7Result = tmp7(10107);
+      return tmp7Result.validateForMapWithNegation("has", getHasMap(), token);
+    } else if (tmp15.ANSWER_AUTHOR_TYPE === tmp) {
+      tmp7Result = tmp7(10107);
+      const obj = {};
+      const intl = tmp7(1236).intl;
+      obj[intl.string(tmp7(1236).t.tPZo4p)] = "user";
+      const intl2 = tmp7(1236).intl;
+      obj[intl2.string(tmp7(1236).t.JL7sRS)] = "bot";
+      const intl3 = tmp7(1236).intl;
+      obj[intl3.string(tmp7(1236).t.WjkIKU)] = "webhook";
+      return tmp7Result.validateForMapWithNegation("author_type", obj, token);
+    } else if (tmp15.ANSWER_PINNED === tmp) {
+      const match = token.getMatch(1);
+      if ("true" === match) {
+        token.setData("pinned", true);
+        let flag2 = true;
+      } else {
+        flag2 = "false" === match;
+        if (flag2) {
+          token.setData("pinned", false);
+          flag2 = true;
+        }
+      }
+      return flag2;
     } else {
       return false;
     }

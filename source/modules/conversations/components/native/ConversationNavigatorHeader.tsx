@@ -1,29 +1,27 @@
-// Module ID: 9261
-// Function ID: 72409
+// Module ID: 9285
+// Function ID: 9286
 // Name: ConversationNavigatorHeader
-// Dependencies: [31, 27, 1348, 33, 4165, 689, 566, 4355, 9094, 2]
+// Dependencies: [19, 17, 1372, 21, 4189, 712, 589, 4380, 9118, 2]
 // Exports: default
 
-// Module 9261 (ConversationNavigatorHeader)
-import "result";
+// Module 9285 (ConversationNavigatorHeader)
+import "noop";
 import { View } from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import ensureGuildLoaded from "ensureGuildLoaded";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
 const require = arg1;
-let closure_6 = _createForOfIteratorHelperLoose.createStyles((arg0) => {
-  let obj = {};
-  obj = { flex: 1, paddingVertical: importDefault(689).space.PX_16, paddingRight: null, alignItems: "center", justifyContent: "center" };
+let closure_6 = createCacheKey.createStyles((arg0) => {
+  const container = { flex: 1, paddingVertical: importDefault(712).space.PX_16, paddingRight: null, alignItems: "center", justifyContent: "center" };
   let num = 0;
   if (!arg0) {
-    num = importDefault(689).space.PX_64;
+    num = importDefault(712).space.PX_64;
   }
-  obj.paddingRight = num;
-  obj.container = obj;
-  return obj;
+  container[2] = num;
+  return { container };
 });
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/conversations/components/native/ConversationNavigatorHeader.tsx");
+const result = require("ensureGuildLoaded").fileFinishedImporting("modules/conversations/components/native/ConversationNavigatorHeader.tsx");
 
 export default function ConversationNavigatorHeader(channelId) {
   channelId = channelId.channelId;
@@ -31,20 +29,14 @@ export default function ConversationNavigatorHeader(channelId) {
   if (flag === undefined) {
     flag = false;
   }
-  let obj = channelId(566);
-  const items = [_isNativeReflectConstruct];
+  let obj = channelId(589);
+  const items = [ensureGuildLoaded];
   const items1 = [channelId];
   const stateFromStores = obj.useStateFromStores(items, () => outer1_4.getChannel(channelId), items1);
-  const tmp3 = importDefault(4355)(stateFromStores, true);
-  obj = { style: callback(flag).container };
-  obj = { title: channelId.title };
-  let tmp6;
-  if (null != tmp3) {
-    tmp6 = tmp3;
-  }
-  obj.subtitle = tmp6;
-  obj.variant = "heading-lg/semibold";
-  obj.subtitleColor = "text-muted";
-  obj.children = jsx(channelId(9094).GenericHeaderTitle, { title: channelId.title });
-  return <View title={arg0.title} />;
+  const tmp3 = importDefault(4380)(stateFromStores, true);
+  obj = { style: callback(flag).container, children: null };
+  obj = { title: channelId.title, subtitle: null, variant: "heading-lg/semibold", subtitleColor: "text-muted" };
+  obj[1] = tmp3;
+  obj[1] = jsx(channelId(9118).GenericHeaderTitle, { title: channelId.title, subtitle: null, variant: "heading-lg/semibold", subtitleColor: "text-muted" });
+  return <View title={arg0.title} subtitle={null} variant="heading-lg/semibold" subtitleColor="text-muted" />;
 };

@@ -1,27 +1,26 @@
-// Module ID: 11169
-// Function ID: 86705
+// Module ID: 11193
+// Function ID: 11194
 // Name: ForumPostTitle
-// Dependencies: [31, 33, 4165, 478, 4161, 2]
+// Dependencies: [19, 21, 4189, 501, 4185, 2]
 // Exports: default
 
-// Module 11169 (ForumPostTitle)
-import "result";
+// Module 11193 (ForumPostTitle)
+import "noop";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import isWindows from "isWindows";
+import createCacheKey from "createCacheKey";
+import PlatformTypes from "PlatformTypes";
 
 const require = arg1;
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { marginBottom: 6 };
-let tmp3 = null;
-if (isWindows.isIOS()) {
-  const obj1 = { lineHeight: 22 };
-  tmp3 = obj1;
+createCacheKey = null;
+if (PlatformTypes.isIOS()) {
+  createCacheKey = { lineHeight: 22 };
 }
-const merged = Object.assign(tmp3);
-_createForOfIteratorHelperLoose.title = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/forums/native/posts/ForumPostTitle.tsx");
+createCacheKey = { title: null };
+PlatformTypes = { marginBottom: 6 };
+createCacheKey = Object.assign(createCacheKey);
+createCacheKey[0] = PlatformTypes;
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+const result = require("createCacheKey").fileFinishedImporting("modules/forums/native/posts/ForumPostTitle.tsx");
 
 export default function ForumPostTitle(arg0) {
   let ellipsizeMode;
@@ -34,6 +33,6 @@ export default function ForumPostTitle(arg0) {
   if (hasUnreads) {
     str = "mobile-text-heading-primary";
   }
-  const obj = { variant: "text-md/semibold", color: str, lineClamp, ellipsizeMode, style: _createForOfIteratorHelperLoose().title, onTextLayout, children: title };
-  return jsx(require(4161) /* Text */.Text, { variant: "text-md/semibold", color: str, lineClamp, ellipsizeMode, style: _createForOfIteratorHelperLoose().title, onTextLayout, children: title });
+  const tmp = createCacheKey();
+  return jsx(require(4185) /* Text */.Text, { variant: "text-md/semibold", color: str, lineClamp, ellipsizeMode, style: createCacheKey().title, onTextLayout, children: title });
 };

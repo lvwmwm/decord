@@ -1,179 +1,272 @@
-// Module ID: 7674
-// Function ID: 61274
-// Name: getScreens
-// Dependencies: [5, 57, 31, 7675, 33, 6731, 7676, 1212, 7677, 4594, 5837, 7673, 7671, 5552, 2]
+// Module ID: 7697
+// Function ID: 7698
+// Name: InAppReportModal
+// Dependencies: [5, 32, 19, 7698, 21, 6752, 7699, 1236, 7700, 4616, 5855, 7696, 7694, 5570, 2]
 // Exports: default
 
-// Module 7674 (getScreens)
+// Module 7697 (InAppReportModal)
 import HeaderActionButton from "HeaderActionButton";
 import _slicedToArray from "_slicedToArray";
-import result from "result";
+import noop from "noop";
 import { IN_APP_REPORTS_NODE } from "IN_APP_REPORTS_NODE";
 import { jsx } from "jsxProd";
 
 const require = arg1;
-function getScreens(arg0) {
-  let IN_APP_REPORTS_NODE;
-  let callbacks;
-  let HeaderActionButton;
-  let _slicedToArray;
-  let result;
-  let closure_9;
-  let dependencyMap;
-  let getScreens;
-  let importDefault;
-  let jsx;
-  let require;
-  ({ nodeMap: require, reportType: importDefault, reportSubType: dependencyMap, successNodeId: HeaderActionButton, failNodeId: _slicedToArray, callbacks, reportId: result } = arg0);
-  ({ closeModal: IN_APP_REPORTS_NODE, addOnCloseCallback: jsx, onSubmit: getScreens, onNavigate: closure_9 } = callbacks);
-  return {
-    [closure_6]: {
-      headerRight() {
-        const obj = { source: outer1_1(outer1_2[6]), onPress: closure_6 };
-        const intl = outer1_0(outer1_2[7]).intl;
-        obj.accessibilityLabel = intl.string(outer1_0(outer1_2[7]).t.cpT0Cq);
-        return outer1_7(outer1_0(outer1_2[5]).HeaderActionButton, obj);
-      },
-      headerTitle() {
-        return null;
-      },
-      fullscreen: true,
-      render(arg0) {
-        let closure_0 = arg0;
-        const obj = {};
-        const merged = Object.assign(arg0);
-        obj["nodeMap"] = closure_0;
-        obj["reportType"] = closure_1;
-        obj["reportSubType"] = closure_2;
-        obj["successNodeId"] = HeaderActionButton;
-        obj["failNodeId"] = _slicedToArray;
-        obj["onSubmit"] = function onSubmit(arg0) {
-          const items = [...closure_0.history, arg0];
-          return outer1_8(items);
-        };
-        obj["closeModal"] = closure_6;
-        obj["addOnCloseCallback"] = closure_7;
-        obj["reportId"] = result;
-        obj["onNavigate"] = closure_9;
-        return outer1_7(outer1_1(outer1_2[8]), obj);
-      }
-    }
-  };
-}
-let result = require("result").fileFinishedImporting("modules/in_app_reports/native/components/InAppReportModal.tsx");
+let result = require("noop").fileFinishedImporting("modules/in_app_reports/native/components/InAppReportModal.tsx");
 
 export default function InAppReportModal(arg0) {
-  let IN_APP_REPORTS_NODE;
+  let c10;
+  let c11;
   let c12;
+  let c13;
   let c14;
   let c15;
-  let closure_10;
-  let closure_11;
-  let closure_13;
+  let c4;
+  let c5;
+  let c6;
+  let c7;
   let HeaderActionButton;
-  let _slicedToArray;
-  let result;
   let dependencyMap;
   let initialStack;
-  let jsx;
   let menu;
   let require;
   let screens;
   ({ reportType: require, menu } = arg0);
   ({ afterSubmit: dependencyMap, isEligibleForFeedback: HeaderActionButton } = arg0);
+  let callback;
+  let React;
+  c6 = undefined;
+  let jsx;
   let first;
+  let closure_9;
+  c10 = undefined;
+  c11 = undefined;
   c12 = undefined;
+  c13 = undefined;
   c14 = undefined;
   c15 = undefined;
   function addOnCloseCallback(arg0) {
     let closure_0 = arg0;
-    _undefined2((arg0) => {
-      const items = [...arg0, closure_0];
+    _undefined3((arg0) => {
+      const items = [];
+      items[HermesBuiltin.arraySpread(arg0, 0)] = closure_0;
       return items;
     });
   }
   function closeModal() {
     const result = outer1_0(outer1_2[11]).trackCloseReportModalAnalytics(closure_0, c12, first);
     const obj = outer1_0(outer1_2[11]);
+    const tmp = outer1_0;
+    const tmp2 = outer1_2;
+    const tmp3 = closure_0;
+    const tmp4 = first;
     outer1_0(outer1_2[12]).hideReportModal();
-    const item = _undefined.forEach((arg0) => arg0());
+    const item = _undefined2.forEach((arg0) => arg0());
     if (HeaderActionButton) {
-      const result1 = outer1_0(outer1_2[11]).showInAppReportsFeedbackModal(closure_0, first);
-      const obj3 = outer1_0(outer1_2[11]);
+      const result1 = tmp(tmp2[11]).showInAppReportsFeedbackModal(tmp3, tmp4);
+      const tmpResult = tmp(tmp2[11]);
     }
   }
-  ({ nodes: _slicedToArray, root_node_id: result, success_node_id: IN_APP_REPORTS_NODE, fail_node_id: jsx } = menu);
+  ({ nodes: c4, root_node_id: c5, success_node_id: c6, fail_node_id: c7 } = menu);
   let tmp = callback(React.useState(undefined), 2);
   first = tmp[0];
-  let closure_9 = tmp[1];
-  [closure_10, closure_11] = callback(React.useState(undefined), 2);
-  const tmp3 = callback(React.useState(undefined), 2);
-  [c12, closure_13] = callback(React.useState([]), 2);
-  const tmp4 = callback(React.useState([]), 2);
+  closure_9 = tmp[1];
+  [c10, c11] = callback(React.useState(undefined), 2);
+  let tmp3 = callback(React.useState(undefined), 2);
+  [c12, c13] = callback(React.useState([]), 2);
+  let tmp4 = callback(React.useState([]), 2);
   [c14, c15] = callback(React.useState([]), 2);
-  menu(4594)(() => {
-    const orFetchLinkedUsers = outer1_0(outer1_2[10]).getOrFetchLinkedUsers();
+  menu(4616)(() => {
+    const orFetchLinkedUsers = callback(table[10]).getOrFetchLinkedUsers();
   });
   let items = [closeModal, first];
   const memo = React.useMemo(() => {
-    async function _onSubmit(arg0, arg1) {
-      const tmp = yield outer4_0(outer4_2[11]).submitReport(outer3_1, _onSubmit, arg0);
-      let report_id;
-      if (null != tmp) {
-        const body = tmp.body;
-        if (null != body) {
-          report_id = body.report_id;
-        }
+    function _onSubmit() {
+      const self = this;
+      const tmp = outer2_3((arg0) => {
+        let closure_0 = arg0;
+        let c3 = 0;
+        let c4 = 0;
+        return (function*(arg0) {
+          if (table === 2) {
+            table = 3;
+            HermesBuiltin.throwTypeError();
+          } else if (tmp4 === 3) {
+            if (arg0 === 1) {
+              throw arg1;
+            } else if (arg0 === 2) {
+              let obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            } else {
+              return { value: "HermesInternal", done: null };
+            }
+          } else {
+            try {
+              table = 2;
+              if (0 === nodeRef) {
+                if (arg0 === 1) {
+                  table = 3;
+                  throw arg1;
+                } else if (arg0 === 2) {
+                  table = 3;
+                  obj = { value: null, done: true };
+                  obj[0] = arg1;
+                  return obj;
+                } else {
+                  let report_id = tmp5;
+                  let body = tmp2;
+                  body = undefined;
+                  report_id = undefined;
+                  nodeRef = undefined;
+                  let obj1 = lib(outer2_2[11]);
+                  nodeRef = 1;
+                  table = 1;
+                  obj1 = { value: null, done: false };
+                  obj1[0] = obj1.submitReport(outer1_1, lib, lib);
+                  return obj1;
+                }
+              } else if (arg0 === 1) {
+                table = 3;
+                throw arg1;
+              } else if (arg0 === 2) {
+                table = 3;
+                obj = { value: null, done: true };
+                obj[0] = arg1;
+                return obj;
+              } else {
+                body = arg1;
+                report_id = undefined;
+                if (body != null) {
+                  body = body.body;
+                  if (body != null) {
+                    report_id = body.report_id;
+                  }
+                }
+                if (null != report_id) {
+                  outer1_9(report_id);
+                }
+                nodeRef = lib[lib.length - 1];
+                outer1_11(table[nodeRef.nodeRef].report_type);
+                if (outer1_2 != null) {
+                  outer1_2();
+                }
+                table = 3;
+                return { value: "HermesInternal", done: null };
+              }
+            } catch (tmp28) {
+              table = tmp;
+              throw tmp28;
+            }
+          }
+        })();
+      });
+      const _onSubmit = tmp;
+      const apply = tmp.apply;
+      if (typeof apply === "unknown") {
+        let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+      } else {
+        applyArgumentsResult = apply(self, arguments);
       }
-      if (null != report_id) {
-        outer3_9(report_id);
-      }
-      outer3_11(outer3_4[arg0[arg0.length - 1].nodeRef].report_type);
-      if (null != outer3_2) {
-        outer3_2();
-      }
+      return applyArgumentsResult;
     }
-    if (null == table[result]) {
-      closeModal();
+    if (null == _undefined[noop]) {
+      let obj = outer1_0(outer1_2[11]);
+      const result = obj.trackCloseReportModalAnalytics(_onSubmit, c12, onSubmit);
+      let obj1 = outer1_0(outer1_2[12]);
+      obj1.hideReportModal();
+      const item = _undefined2.forEach((arg0) => arg0());
+      if (HeaderActionButton) {
+        const result1 = outer1_0(outer1_2[11]).showInAppReportsFeedbackModal(_onSubmit, onSubmit);
+        const tmp3Result = outer1_0(outer1_2[11]);
+      }
       return {};
     } else {
-      let obj = {};
-      obj = { name: outer1_6 };
-      obj = { node: tmp, history: [] };
-      obj.params = obj;
+      obj = { initialStack: null, screens: null };
+      obj = { name: null, params: null };
+      obj[0] = c6;
+      obj1 = { node: null, history: null };
+      obj1[0] = tmp2;
+      obj1[1] = [];
+      obj[1] = obj1;
       let items = [obj];
-      obj.initialStack = items;
-      const obj1 = { nodeMap: table, reportType: _onSubmit, reportSubType: closure_10, successNodeId: closure_6, failNodeId: closure_7 };
-      const obj2 = {
-        onSubmit(arg0) {
-            return _onSubmit(...arguments);
-          },
-        closeModal,
-        addOnCloseCallback,
-        onNavigate(key) {
-            let closure_0 = key;
-            outer1_13((arg0) => {
-              const items = [...arg0, closure_0];
-              return items;
-            });
-          }
+      obj[0] = items;
+      _onSubmit = tmp;
+      let closure_1 = _onSubmit;
+      let closure_2 = c10;
+      HeaderActionButton = closure_6;
+      _undefined = closure_7;
+      noop = onSubmit;
+      closure_6 = closeModal;
+      closure_7 = addOnCloseCallback;
+      onSubmit = function onSubmit(arg0) {
+        const self = this;
+        const apply = _onSubmit.apply;
+        if (typeof apply === "unknown") {
+          let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+        } else {
+          applyArgumentsResult = apply(self, arguments);
+        }
+        return applyArgumentsResult;
       };
-      obj1.callbacks = obj2;
-      obj1.reportId = first;
-      obj.screens = first(obj1);
+      function onNavigate(arg0) {
+        let closure_0 = arg0;
+        callback3((arg0) => {
+          const items = [];
+          items[HermesBuiltin.arraySpread(arg0, 0)] = closure_0;
+          return items;
+        });
+      }
+      const obj2 = {};
+      const obj3 = { headerRight: null, headerTitle: null, fullscreen: true, render: null };
+      obj3[0] = function headerRight() {
+        const obj = { source: null, onPress: null, accessibilityLabel: null };
+        obj[0] = callback(7699);
+        obj[1] = closure_6;
+        const intl = _onSubmit(1236).intl;
+        obj[2] = intl.string(_onSubmit(1236).t.cpT0Cq);
+        return callback2(_onSubmit(6752).HeaderActionButton, obj);
+      };
+      obj3[1] = function headerTitle() {
+        return null;
+      };
+      obj3[3] = function render(arg0) {
+        let closure_0 = arg0;
+        const obj = {};
+        const merged = Object.assign(arg0);
+        obj.nodeMap = closure_0;
+        obj.reportType = callback;
+        obj.reportSubType = dependencyMap;
+        obj.successNodeId = HeaderActionButton;
+        obj.failNodeId = _slicedToArray;
+        obj.onSubmit = function onSubmit(arg0) {
+          const items = [];
+          items[HermesBuiltin.arraySpread(history.history, 0)] = arg0;
+          return outer1_8(items);
+        };
+        obj.closeModal = closure_6;
+        obj.addOnCloseCallback = callback2;
+        obj.reportId = noop;
+        obj.onNavigate = onNavigate;
+        return callback2(callback(7700), obj);
+      };
+      obj2[c6] = obj3;
+      obj[1] = obj2;
       return obj;
     }
   }, items);
   ({ initialStack, screens } = memo);
-  let tmp8 = null;
+  let tmp9 = null;
   if (null != initialStack) {
-    tmp8 = null;
+    tmp9 = null;
     if (null != screens) {
-      let obj = { screens, initialRouteStack: initialStack };
-      const intl = require(1212) /* getSystemLocale */.intl;
-      obj.headerBackTitle = intl.string(require(1212) /* getSystemLocale */.t["13/7kX"]);
-      tmp8 = jsx(require(5552) /* NavigationStack */.Navigator, { screens, initialRouteStack: initialStack });
+      let obj = { screens: null, initialRouteStack: null, headerBackTitle: null };
+      obj[0] = screens;
+      obj[1] = initialStack;
+      let intl = require(1236) /* getSystemLocale */.intl;
+      obj[2] = intl.string(require(1236) /* getSystemLocale */.t["13/7kX"]);
+      tmp9 = jsx(require(5570) /* NavigationStack */.Navigator, { screens: null, initialRouteStack: null, headerBackTitle: null });
     }
   }
-  return tmp8;
+  return tmp9;
 };

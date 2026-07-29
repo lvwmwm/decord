@@ -1,36 +1,34 @@
-// Module ID: 14212
-// Function ID: 109161
+// Module ID: 14234
+// Function ID: 14235
 // Name: FormSeparator
-// Dependencies: [31, 27, 33, 4165, 689, 2]
+// Dependencies: [19, 17, 21, 4189, 712, 2]
 // Exports: default
 
-// Module 14212 (FormSeparator)
-import "result";
+// Module 14234 (FormSeparator)
+import "noop";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-_createForOfIteratorHelperLoose = { container: { alignSelf: "stretch" }, margins: { marginTop: 16 } };
-_createForOfIteratorHelperLoose = { width: "100%", height: 1, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BORDER_SUBTLE };
-_createForOfIteratorHelperLoose.separator = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+createCacheKey = { container: { alignSelf: "stretch" }, margins: { marginTop: 16 }, separator: null };
+createCacheKey = { width: "100%", height: 1, backgroundColor: require("Themes").colors.BORDER_SUBTLE };
+createCacheKey[2] = createCacheKey;
+createCacheKey = createCacheKey.createStyles(createCacheKey);
 const result = require("jsxProd").fileFinishedImporting("modules/guild_role_subscriptions/native/components/FormSeparator.tsx");
 
 export default function FormSeparator(arg0) {
   let style;
   let withoutMargins;
   ({ style, withoutMargins } = arg0);
-  const tmp = _createForOfIteratorHelperLoose();
-  let obj = {};
+  const tmp = createCacheKey();
   const items = [tmp.container, , ];
   let margins;
   if (!withoutMargins) {
     margins = tmp.margins;
   }
+  obj = { style: items, children: tmp2(tmp3, obj) };
   items[1] = margins;
   items[2] = style;
-  obj.style = items;
   obj = { style: tmp.separator };
-  obj.children = <View style={tmp.separator} />;
   return <View style={tmp.separator} />;
 };

@@ -1,33 +1,34 @@
-// Module ID: 13996
-// Function ID: 106887
+// Module ID: 14017
+// Function ID: 14018
 // Name: route
-// Dependencies: [31, 653, 6270, 6335, 3811, 12422, 10099, 1212, 13997, 13995, 2]
+// Dependencies: [19, 676, 6291, 6356, 3835, 12444, 10120, 1236, 14018, 14016, 2]
 
-// Module 13996 (route)
-import result from "result";
+// Module 14017 (route)
+import noop from "noop";
 import createToggle from "createToggle";
 
 const require = arg1;
 createToggle = {
   useTitle() {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(require(1212) /* getSystemLocale */.t["z5YcJ+"]);
+    const intl = require(1236) /* getSystemLocale */.intl;
+    return intl.string(require(1236) /* getSystemLocale */.t["z5YcJ+"]);
   },
   parent: null,
   IconComponent: require("SubscriptionIcon").SubscriptionIcon,
   usePreNavigationAction: function useCanNavigateToPaymentSetting() {
     return React.useCallback(() => {
-      let flag = !outer1_0(outer1_2[2]).getIsPaymentsBlocked();
-      if (!flag) {
-        outer1_1(outer1_2[3])();
+      const isPaymentsBlocked = callback(table[2]).getIsPaymentsBlocked();
+      let flag = !isPaymentsBlocked;
+      if (isPaymentsBlocked) {
+        callback2(table[3])();
         flag = false;
       }
       return flag;
     }, []);
   },
   usePredicate: function useShowManageSubscriptionsSetting() {
-    let hasPremiumSubscriptionToDisplay = require(3811) /* _createForOfIteratorHelperLoose */.useHasPremiumSubscriptionToDisplay();
-    const obj = require(3811) /* _createForOfIteratorHelperLoose */;
+    let hasPremiumSubscriptionToDisplay = require(3835) /* getPremiumPlanItem */.useHasPremiumSubscriptionToDisplay();
+    const obj = require(3835) /* getPremiumPlanItem */;
     if (hasPremiumSubscriptionToDisplay) {
       hasPremiumSubscriptionToDisplay = obj2.useMobileNitroManageSubscriptionsSettingsExperiment({ location: "useShowManageSubscriptionsSetting" });
     }
@@ -38,10 +39,10 @@ createToggle = {
 createToggle = {
   route: require("ME").UserSettingsSections.PREMIUM_MANAGE_PLAN,
   getComponent() {
-    return require(13995) /* PremiumPlanSelectSettingScreen */.default;
+    return require(14016) /* PremiumPlanSelectSettingScreen */.default;
   }
 };
 createToggle = createToggle.createRoute(createToggle);
-const result = require("items").fileFinishedImporting("modules/user_settings/defs/native/PremiumManageSubscriptionsSetting.tsx");
+const result = require("useBlockedPaymentsConfig").fileFinishedImporting("modules/user_settings/defs/native/PremiumManageSubscriptionsSetting.tsx");
 
 export default createToggle;

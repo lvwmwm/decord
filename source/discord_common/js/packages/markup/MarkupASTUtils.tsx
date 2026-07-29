@@ -1,291 +1,579 @@
-// Module ID: 7747
-// Function ID: 61673
-// Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 162, 2]
-// Exports: astToString
+// Module ID: 7770
+// Function ID: 7771
+// Name: collectAst
+// Dependencies: [2]
+// Exports: astToString, getIndexedAST
 
-// Module 7747 (_isNativeReflectConstruct)
-import set from "set";
-import _defineProperties from "_defineProperties";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
-
-function _isNativeReflectConstruct() {
-  let set = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return set;
-  }
-  const result = _isNativeReflectConstruct();
-}
-function _createForOfIteratorHelperLoose(iterable) {
-  let set = iterable;
-  iterable = "undefined" !== typeof Symbol;
-  if (iterable) {
-    const _Symbol = Symbol;
-    iterable = iterable[Symbol.iterator];
-  }
-  if (!iterable) {
-    iterable = iterable[Symbol.iterator];
-  }
-  if (iterable) {
-    const iter = iterable.call(iterable);
-    const next = iter.next;
-    return next.bind(iter);
-  } else {
-    const _Array = Array;
-    let tmp = iterable;
-    if (!Array.isArray(iterable)) {
-      let tmp2;
-      if (iterable) {
-        if ("string" === typeof iterable) {
-          tmp2 = _arrayLikeToArray(iterable, undefined);
-        } else {
-          const toString = {}.toString;
-          const substr = toString.call(iterable).slice(8, -1);
-          let name = substr;
-          if (tmp3) {
-            name = iterable.constructor.name;
-          }
-          if ("Map" !== name) {
-            if ("Set" !== name) {
-              if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(iterable, undefined);
-              } else {
-                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
-              }
-            }
-            tmp2 = arr;
-          }
-          const _Array2 = Array;
-          arr = Array.from(iterable);
-          const callResult = toString.call(iterable);
-          tmp3 = "Object" === substr && iterable.constructor;
-        }
-      }
-      tmp = tmp2;
-      if (!tmp2) {
-        const _TypeError = TypeError;
-        const typeError = new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
-        throw typeError;
-      }
-    }
-    if (tmp) {
-      set = tmp;
-    }
-    let c1 = 0;
-    return () => {
-      if (_defineProperties >= length.length) {
-        let obj = { done: true };
-      } else {
-        obj = { done: false };
-        _defineProperties = tmp3 + 1;
-        obj.value = length[+_defineProperties];
-      }
-      return obj;
-    };
-  }
-}
-function _arrayLikeToArray(arg0, arg1) {
-  let length;
-  if (tmp) {
-    length = arg0.length;
-  }
-  const ArrayResult = Array(length);
-  for (let num = 0; num < length; num = num + 1) {
-    ArrayResult[num] = arg0[num];
-  }
-  return ArrayResult;
-}
-function collectAst(content, items) {
-  if (items === undefined) {
+// Module 7770 (collectAst)
+function collectAst(arr) {
+  let items = arg1;
+  if (arg1 === undefined) {
     items = [];
   }
-  if (Array.isArray(content)) {
-    const item = content.forEach((arg0) => outer1_9(arg0, items));
-  } else if ("string" === typeof content.content) {
-    items.push(content.content);
-  } else if (null != content.content) {
-    collectAst(content.content, items);
+  if (Array.isArray(arr)) {
+    const item = arr.forEach((arr) => {
+      let items = items1;
+      if (items1 === undefined) {
+        items = [];
+      }
+      items1 = items;
+      if (Array.isArray(arr)) {
+        let item = arr.forEach((arr) => {
+          let items = items1;
+          if (items1 === undefined) {
+            items = [];
+          }
+          items1 = items;
+          if (Array.isArray(arr)) {
+            let item = arr.forEach((arr) => {
+              let items = items1;
+              if (items1 === undefined) {
+                items = [];
+              }
+              items1 = items;
+              if (Array.isArray(arr)) {
+                let item = arr.forEach((arr) => {
+                  let items = items1;
+                  if (items1 === undefined) {
+                    items = [];
+                  }
+                  items1 = items;
+                  if (Array.isArray(arr)) {
+                    let item = arr.forEach(() => { ... });
+                  } else if (typeof arr.content === "y") {
+                    items.push(arr.content);
+                  } else if (null != arr.content) {
+                    let content = arr.content;
+                    items1 = undefined;
+                    items1 = items;
+                    if (items === undefined) {
+                      items1 = [];
+                    }
+                    let _Array = Array;
+                    if (Array.isArray(content)) {
+                      let item1 = content.forEach(() => { ... });
+                    } else if (typeof content.content === "y") {
+                      items1.push(content.content);
+                    } else if (null != content.content) {
+                      outer1_0(content.content, items1);
+                    }
+                  }
+                  return items;
+                });
+              } else if (typeof arr.content === "y") {
+                items.push(arr.content);
+              } else if (null != arr.content) {
+                let content = arr.content;
+                items1 = undefined;
+                items1 = items;
+                if (items === undefined) {
+                  items1 = [];
+                }
+                let _Array = Array;
+                if (Array.isArray(content)) {
+                  let item1 = content.forEach((arr) => {
+                    let items = items1;
+                    if (items1 === undefined) {
+                      items = [];
+                    }
+                    items1 = items;
+                    if (Array.isArray(arr)) {
+                      let item = arr.forEach(() => { ... });
+                    } else if (typeof arr.content === "y") {
+                      items.push(arr.content);
+                    } else if (null != arr.content) {
+                      let content = arr.content;
+                      items1 = undefined;
+                      items1 = items;
+                      if (items === undefined) {
+                        items1 = [];
+                      }
+                      let _Array = Array;
+                      if (Array.isArray(content)) {
+                        let item1 = content.forEach(() => { ... });
+                      } else if (typeof content.content === "y") {
+                        items1.push(content.content);
+                      } else if (null != content.content) {
+                        outer1_0(content.content, items1);
+                      }
+                    }
+                    return items;
+                  });
+                } else if (typeof content.content === "y") {
+                  items1.push(content.content);
+                } else if (null != content.content) {
+                  outer1_0(content.content, items1);
+                }
+              }
+              return items;
+            });
+          } else if (typeof arr.content === "y") {
+            items.push(arr.content);
+          } else if (null != arr.content) {
+            let content = arr.content;
+            items1 = undefined;
+            items1 = items;
+            if (items === undefined) {
+              items1 = [];
+            }
+            let _Array = Array;
+            if (Array.isArray(content)) {
+              let item1 = content.forEach((arr) => {
+                let items = items1;
+                if (items1 === undefined) {
+                  items = [];
+                }
+                items1 = items;
+                if (Array.isArray(arr)) {
+                  let item = arr.forEach((arr) => {
+                    let items = items1;
+                    if (items1 === undefined) {
+                      items = [];
+                    }
+                    items1 = items;
+                    if (Array.isArray(arr)) {
+                      let item = arr.forEach(() => { ... });
+                    } else if (typeof arr.content === "y") {
+                      items.push(arr.content);
+                    } else if (null != arr.content) {
+                      let content = arr.content;
+                      items1 = undefined;
+                      items1 = items;
+                      if (items === undefined) {
+                        items1 = [];
+                      }
+                      let _Array = Array;
+                      if (Array.isArray(content)) {
+                        let item1 = content.forEach(() => { ... });
+                      } else if (typeof content.content === "y") {
+                        items1.push(content.content);
+                      } else if (null != content.content) {
+                        outer1_0(content.content, items1);
+                      }
+                    }
+                    return items;
+                  });
+                } else if (typeof arr.content === "y") {
+                  items.push(arr.content);
+                } else if (null != arr.content) {
+                  let content = arr.content;
+                  items1 = undefined;
+                  items1 = items;
+                  if (items === undefined) {
+                    items1 = [];
+                  }
+                  let _Array = Array;
+                  if (Array.isArray(content)) {
+                    let item1 = content.forEach((arr) => {
+                      let items = items1;
+                      if (items1 === undefined) {
+                        items = [];
+                      }
+                      items1 = items;
+                      if (Array.isArray(arr)) {
+                        let item = arr.forEach(() => { ... });
+                      } else if (typeof arr.content === "y") {
+                        items.push(arr.content);
+                      } else if (null != arr.content) {
+                        let content = arr.content;
+                        items1 = undefined;
+                        items1 = items;
+                        if (items === undefined) {
+                          items1 = [];
+                        }
+                        let _Array = Array;
+                        if (Array.isArray(content)) {
+                          let item1 = content.forEach(() => { ... });
+                        } else if (typeof content.content === "y") {
+                          items1.push(content.content);
+                        } else if (null != content.content) {
+                          outer1_0(content.content, items1);
+                        }
+                      }
+                      return items;
+                    });
+                  } else if (typeof content.content === "y") {
+                    items1.push(content.content);
+                  } else if (null != content.content) {
+                    outer1_0(content.content, items1);
+                  }
+                }
+                return items;
+              });
+            } else if (typeof content.content === "y") {
+              items1.push(content.content);
+            } else if (null != content.content) {
+              outer1_0(content.content, items1);
+            }
+          }
+          return items;
+        });
+      } else if (typeof arr.content === "y") {
+        items.push(arr.content);
+      } else if (null != arr.content) {
+        let content = arr.content;
+        items1 = undefined;
+        items1 = items;
+        if (items === undefined) {
+          items1 = [];
+        }
+        let _Array = Array;
+        if (Array.isArray(content)) {
+          let item1 = content.forEach((arr) => {
+            let items = items1;
+            if (items1 === undefined) {
+              items = [];
+            }
+            items1 = items;
+            if (Array.isArray(arr)) {
+              let item = arr.forEach((arr) => {
+                let items = items1;
+                if (items1 === undefined) {
+                  items = [];
+                }
+                items1 = items;
+                if (Array.isArray(arr)) {
+                  let item = arr.forEach((arr) => {
+                    let items = items1;
+                    if (items1 === undefined) {
+                      items = [];
+                    }
+                    items1 = items;
+                    if (Array.isArray(arr)) {
+                      let item = arr.forEach(() => { ... });
+                    } else if (typeof arr.content === "y") {
+                      items.push(arr.content);
+                    } else if (null != arr.content) {
+                      let content = arr.content;
+                      items1 = undefined;
+                      items1 = items;
+                      if (items === undefined) {
+                        items1 = [];
+                      }
+                      let _Array = Array;
+                      if (Array.isArray(content)) {
+                        let item1 = content.forEach(() => { ... });
+                      } else if (typeof content.content === "y") {
+                        items1.push(content.content);
+                      } else if (null != content.content) {
+                        outer1_0(content.content, items1);
+                      }
+                    }
+                    return items;
+                  });
+                } else if (typeof arr.content === "y") {
+                  items.push(arr.content);
+                } else if (null != arr.content) {
+                  let content = arr.content;
+                  items1 = undefined;
+                  items1 = items;
+                  if (items === undefined) {
+                    items1 = [];
+                  }
+                  let _Array = Array;
+                  if (Array.isArray(content)) {
+                    let item1 = content.forEach((arr) => {
+                      let items = items1;
+                      if (items1 === undefined) {
+                        items = [];
+                      }
+                      items1 = items;
+                      if (Array.isArray(arr)) {
+                        let item = arr.forEach(() => { ... });
+                      } else if (typeof arr.content === "y") {
+                        items.push(arr.content);
+                      } else if (null != arr.content) {
+                        let content = arr.content;
+                        items1 = undefined;
+                        items1 = items;
+                        if (items === undefined) {
+                          items1 = [];
+                        }
+                        let _Array = Array;
+                        if (Array.isArray(content)) {
+                          let item1 = content.forEach(() => { ... });
+                        } else if (typeof content.content === "y") {
+                          items1.push(content.content);
+                        } else if (null != content.content) {
+                          outer1_0(content.content, items1);
+                        }
+                      }
+                      return items;
+                    });
+                  } else if (typeof content.content === "y") {
+                    items1.push(content.content);
+                  } else if (null != content.content) {
+                    outer1_0(content.content, items1);
+                  }
+                }
+                return items;
+              });
+            } else if (typeof arr.content === "y") {
+              items.push(arr.content);
+            } else if (null != arr.content) {
+              let content = arr.content;
+              items1 = undefined;
+              items1 = items;
+              if (items === undefined) {
+                items1 = [];
+              }
+              let _Array = Array;
+              if (Array.isArray(content)) {
+                let item1 = content.forEach((arr) => {
+                  let items = items1;
+                  if (items1 === undefined) {
+                    items = [];
+                  }
+                  items1 = items;
+                  if (Array.isArray(arr)) {
+                    let item = arr.forEach((arr) => {
+                      let items = items1;
+                      if (items1 === undefined) {
+                        items = [];
+                      }
+                      items1 = items;
+                      if (Array.isArray(arr)) {
+                        let item = arr.forEach(() => { ... });
+                      } else if (typeof arr.content === "y") {
+                        items.push(arr.content);
+                      } else if (null != arr.content) {
+                        let content = arr.content;
+                        items1 = undefined;
+                        items1 = items;
+                        if (items === undefined) {
+                          items1 = [];
+                        }
+                        let _Array = Array;
+                        if (Array.isArray(content)) {
+                          let item1 = content.forEach(() => { ... });
+                        } else if (typeof content.content === "y") {
+                          items1.push(content.content);
+                        } else if (null != content.content) {
+                          outer1_0(content.content, items1);
+                        }
+                      }
+                      return items;
+                    });
+                  } else if (typeof arr.content === "y") {
+                    items.push(arr.content);
+                  } else if (null != arr.content) {
+                    let content = arr.content;
+                    items1 = undefined;
+                    items1 = items;
+                    if (items === undefined) {
+                      items1 = [];
+                    }
+                    let _Array = Array;
+                    if (Array.isArray(content)) {
+                      let item1 = content.forEach((arr) => {
+                        let items = items1;
+                        if (items1 === undefined) {
+                          items = [];
+                        }
+                        items1 = items;
+                        if (Array.isArray(arr)) {
+                          let item = arr.forEach(() => { ... });
+                        } else if (typeof arr.content === "y") {
+                          items.push(arr.content);
+                        } else if (null != arr.content) {
+                          let content = arr.content;
+                          items1 = undefined;
+                          items1 = items;
+                          if (items === undefined) {
+                            items1 = [];
+                          }
+                          let _Array = Array;
+                          if (Array.isArray(content)) {
+                            let item1 = content.forEach(() => { ... });
+                          } else if (typeof content.content === "y") {
+                            items1.push(content.content);
+                          } else if (null != content.content) {
+                            outer1_0(content.content, items1);
+                          }
+                        }
+                        return items;
+                      });
+                    } else if (typeof content.content === "y") {
+                      items1.push(content.content);
+                    } else if (null != content.content) {
+                      outer1_0(content.content, items1);
+                    }
+                  }
+                  return items;
+                });
+              } else if (typeof content.content === "y") {
+                items1.push(content.content);
+              } else if (null != content.content) {
+                outer1_0(content.content, items1);
+              }
+            }
+            return items;
+          });
+        } else if (typeof content.content === "y") {
+          items1.push(content.content);
+        } else if (null != content.content) {
+          outer1_0(content.content, items1);
+        }
+      }
+      return items;
+    });
+  } else if (typeof arr.content === "y") {
+    items.push(arr.content);
+  } else if (null != arr.content) {
+    items(arr.content, items);
   }
   return items;
 }
-function collapseArrays(items, arg1) {
-  if (Array.isArray(arg1)) {
-    for (let num = 0; num < length; num = num + 1) {
-      let arr = items.push(arg1[num]);
-    }
-    length = arg1.length;
-  } else {
-    items.push(arg1);
-  }
-}
-let closure_5 = {};
-let tmp2 = ((arg0) => {
-  class MarkupParserNodeTypeError {
-    constructor(arg0) {
-      self = this;
-      obj = MarkupParserNodeTypeError;
-      tmp = MarkupParserNodeTypeError(this, MarkupParserNodeTypeError);
-      set = new Set();
-      items = [];
-      items[0] = arg0;
-      if (items.length > 0) {
-        do {
-          arr = items.pop();
-          if (undefined !== arr) {
-            _Array3 = Array;
-            if (Array.isArray(arr)) {
-              push3 = items.push;
-              items1 = [];
-              tmp18 = items1;
-              tmp19 = arr;
-              num3 = 0;
-              arraySpreadResult = HermesBuiltin.arraySpread(arr, 0);
-              tmp21 = push3;
-              tmp22 = items1;
-              tmp23 = items;
-              applyResult = HermesBuiltin.apply(items1, items);
-            } else {
-              addResult = set.add(arr.type);
-              isArray = "content" in arr;
-              if (isArray) {
-                _Array = Array;
-                isArray = Array.isArray(arr.content);
-              }
-              if (isArray) {
-                push = items.push;
-                items2 = [];
-                tmp5 = items2;
-                num = 0;
-                arraySpreadResult1 = HermesBuiltin.arraySpread(arr.content, 0);
-                tmp7 = push;
-                tmp8 = items2;
-                tmp9 = items;
-                applyResult1 = HermesBuiltin.apply(items2, items);
-              }
-              isArray1 = "items" in arr;
-              if (isArray1) {
-                _Array2 = Array;
-                isArray1 = Array.isArray(arr.items);
-              }
-              if (isArray1) {
-                push2 = items.push;
-                items3 = [];
-                tmp12 = items3;
-                num2 = 0;
-                arraySpreadResult2 = HermesBuiltin.arraySpread(arr.items, 0);
-                tmp14 = push2;
-                tmp15 = items3;
-                tmp16 = items;
-                applyResult2 = HermesBuiltin.apply(items3, items);
-              }
-            }
+let closure_1 = {};
+let prototype;
+prototype = function MarkupParserNodeTypeError(arg0) {
+  let _Array;
+  let tmp8;
+  let tmp9;
+  let set = new Set();
+  const items = [arg0];
+  if (items.length > 0) {
+    do {
+      let arr = items.pop();
+      if (undefined !== arr) {
+        let _Array2 = Array;
+        if (Array.isArray(arr)) {
+          let push3 = items.push;
+          let items1 = [];
+          let tmp16 = items1;
+          let tmp17 = arr;
+          let num3 = 0;
+          let arraySpreadResult = HermesBuiltin.arraySpread(arr, 0);
+          let tmp19 = push3;
+          tmp8 = items1;
+          tmp9 = items;
+          let applyResult = HermesBuiltin.apply(items1, items);
+        } else {
+          let addResult = set.add(arr.type);
+          let isArray = "content" in arr;
+          if (isArray) {
+            _Array = Array;
+            isArray = Array.isArray(arr.content);
           }
-        } while (items.length > 0);
+          if (isArray) {
+            let push = items.push;
+            let items2 = [];
+            let tmp5 = items2;
+            let num = 0;
+            arraySpreadResult = HermesBuiltin.arraySpread(arr.content, 0);
+            let tmp7 = push;
+            tmp8 = items2;
+            tmp9 = items;
+            let applyResult1 = HermesBuiltin.apply(items2, items);
+          }
+          let isArray1 = "items" in arr;
+          if (isArray1) {
+            _Array = Array;
+            isArray1 = Array.isArray(arr.items);
+          }
+          if (isArray1) {
+            let push2 = items.push;
+            let items3 = [];
+            let tmp12 = items3;
+            let num2 = 0;
+            let arraySpreadResult1 = HermesBuiltin.arraySpread(arr.items, 0);
+            let tmp14 = push2;
+            tmp8 = items3;
+            tmp9 = items;
+            let applyResult2 = HermesBuiltin.apply(items3, items);
+          }
+        }
       }
-      arr1 = Array.from(set);
-      items4 = [];
-      items4[0] = obj.getMessage(arr1);
-      obj3 = outer1_3(obj);
-      tmp26 = outer1_2;
-      if (outer1_6()) {
-        _Reflect = Reflect;
-        tmp28 = outer1_3;
-        constructResult = Reflect.construct(obj3, items4, outer1_3(self).constructor);
-      } else {
-        constructResult = obj3.apply(self, items4);
-      }
-      tmp26Result = tmp26(self, constructResult);
-      tmp26Result.nodeTypes = arr1;
-      return tmp26Result;
-    }
+    } while (items.length > 0);
   }
-  callback2(MarkupParserNodeTypeError, arg0);
-  let items = [
-    {
-      key: "getMessage",
-      value(join) {
-        return "MarkupParserNodeTypeError: Unknown AST node type in \"" + join.join(", ") + "\" caused rendering failure";
-      }
-    }
-  ];
-  return callback(MarkupParserNodeTypeError, null, items);
-})(require("_wrapNativeSuper")(Error));
-let result = require("_possibleConstructorReturn").fileFinishedImporting("../discord_common/js/packages/markup/MarkupASTUtils.tsx");
-function walkAst(content, arg1) {
-  let done;
-  if (Array.isArray(content)) {
-    const tmp8 = _createForOfIteratorHelperLoose(content);
-    let iter = tmp8();
-    if (!iter.done) {
-      do {
-        let tmp9 = walkAst;
-        let tmp10 = walkAst(iter.value, arg1);
-        let iter2 = tmp8();
-        iter = iter2;
-        done = iter2.done;
-      } while (!done);
+  arr = Array.from(set);
+  set = new set(prototype.getMessage(arr), tmp8, tmp9, _Array, tmp4, arr);
+  // ThrowIfThisInitialized (0x7c)
+  set.nodeTypes = arr;
+  return set;
+}.prototype;
+class prototype extends Error {
+}
+prototype["getMessage"] = function getMessage(join) {
+  return "MarkupParserNodeTypeError: Unknown AST node type in \"" + join.join(", ") + "\" caused rendering failure";
+};
+const result = require("set").fileFinishedImporting("../discord_common/js/packages/markup/MarkupASTUtils.tsx");
+function walkAst(parseToASTResult, arg1) {
+  if (Array.isArray(parseToASTResult)) {
+    const tmp8 = parseToASTResult[Symbol.iterator]();
+    while (tmp8 !== undefined) {
+      let tmp12 = walkAst;
+      let tmp13 = walkAst(tmp10, arg1);
+      continue;
     }
   } else {
-    arg1(content, null);
+    arg1(parseToASTResult, null);
     const _Array = Array;
-    if (Array.isArray(content.content)) {
-      walkAst(content.content, arg1);
+    if (Array.isArray(parseToASTResult.content)) {
+      walkAst(parseToASTResult.content, arg1);
     }
-    if ("list" === content.type) {
-      walkAst(content.items, arg1);
+    if ("list" === parseToASTResult.type) {
+      walkAst(parseToASTResult.items, arg1);
     }
   }
 }
 function flattenAst(isSlate, content, content) {
-  let tmp2 = content;
-  let set = isSlate;
+  let closure_0 = isSlate;
+  let tmp3 = content;
   if (content === undefined) {
-    tmp2 = null;
+    tmp3 = null;
   }
   if (Array.isArray(content)) {
     const items = [];
-    for (let num2 = 0; num2 < length; num2 = num2 + 1) {
-      let tmp5 = collapseArrays;
+    for (let num3 = 0; num3 < length; num3 = num3 + 1) {
       let tmp6 = flattenAst;
-      let tmp7 = collapseArrays(items, flattenAst(isSlate, content[num2], tmp2));
+      let arr3 = flattenAst(isSlate, content[num3], tmp3);
+      let _Array = Array;
+      let tmp7 = num3;
+      if (Array.isArray(arr3)) {
+        let length2 = arr3.length;
+        for (let num4 = 0; num4 < length2; num4 = num4 + 1) {
+          let arr = items.push(arr3[num4]);
+        }
+      } else {
+        arr = items.push(arr3);
+      }
     }
     if (!isSlate.isSlate) {
-      let tmp9 = null;
-      let num4 = 0;
+      let num5 = 0;
+      let tmp11 = null;
       if (0 < items.length) {
         do {
-          let tmp10 = items[num4];
-          let tmp11 = tmp10;
-          let diff = num4;
-          if (null != tmp9) {
-            tmp11 = tmp10;
-            diff = num4;
-            if ("text" === tmp9.type) {
-              tmp11 = tmp10;
-              diff = num4;
-              if (tmp9.type === tmp10.type) {
-                tmp11 = tmp10;
-                diff = num4;
-                if ("string" === typeof tmp9.content) {
-                  tmp11 = tmp10;
-                  diff = num4;
-                  if ("string" === typeof tmp10.content) {
-                    tmp9.content = tmp9.content + tmp10.content;
-                    let spliceResult = items.splice(num4, 1);
-                    diff = num4 - 1;
-                    tmp11 = tmp9;
+          let tmp12 = items[num5];
+          let tmp13 = num5;
+          let tmp14 = tmp11;
+          let diff = num5;
+          let tmp16 = tmp12;
+          if (null != tmp11) {
+            diff = num5;
+            tmp16 = tmp12;
+            if ("text" === tmp11.type) {
+              diff = num5;
+              tmp16 = tmp12;
+              if (tmp11.type === tmp12.type) {
+                diff = num5;
+                tmp16 = tmp12;
+                if (typeof tmp11.content !== "init") {
+                  diff = num5;
+                  tmp16 = tmp12;
+                  if (typeof tmp12.content !== "init") {
+                    tmp11.content = tmp11.content + tmp12.content;
+                    let spliceResult = items.splice(num5, 1);
+                    diff = num5 - 1;
+                    tmp16 = tmp11;
                   }
                 }
               }
             }
           }
-          num4 = diff + 1;
-          tmp9 = tmp11;
-        } while (num4 < items.length);
+          num5 = diff + 1;
+          tmp11 = tmp16;
+        } while (num5 < items.length);
       }
     }
     return items;
@@ -294,20 +582,20 @@ function flattenAst(isSlate, content, content) {
       content.content = flattenAst(isSlate, content.content, content);
     }
     if ("inlineCode" === content.type) {
-      delete tmp.validationChildContent;
+      delete tmp2[tmp];
     }
     if ("list" === content.type) {
       const items1 = content.items;
       content.items = items1.map((arg0) => {
         let tmp = arg0;
         if (Array.isArray(arg0)) {
-          tmp = outer1_12(set, arg0, null);
+          tmp = outer1_5(closure_0, arg0, null);
         }
         return tmp;
       });
     }
-    if (null != tmp2) {
-      if (content.type === tmp2.type) {
+    if (null != tmp3) {
+      if (content.type === tmp3.type) {
         content = content.content;
       }
     }
@@ -323,7 +611,7 @@ function constrainAst(content, arg1) {
     let num = 0;
     if (0 < content.length) {
       const ast = constrainAst(content[num], obj).ast;
-      while (ast !== closure_5) {
+      while (ast !== closure_1) {
         content[num] = ast;
         num = num + 1;
       }
@@ -334,7 +622,8 @@ function constrainAst(content, arg1) {
     obj.limit = obj.limit - 1;
     if (obj.limit <= 0) {
       obj.hasBailedAst = true;
-      obj = { ast: closure_5, hasBailedAst: true };
+      obj = { ast: null, hasBailedAst: true };
+      obj[0] = closure_1;
       return obj;
     } else {
       const _Array = Array;
@@ -343,24 +632,858 @@ function constrainAst(content, arg1) {
       }
       if ("list" === content.type) {
         const items = content.items;
-        content.items = items.map((arg0) => outer1_13(arg0, obj).ast);
+        content.items = items.map((arg0) => outer1_6(arg0, obj).ast);
       }
     }
   }
-  obj = { ast: content };
-  obj.hasBailedAst = obj.hasBailedAst;
+  obj = { ast: content, hasBailedAst: obj.hasBailedAst };
   return obj;
 }
-function getIndexedAST(arr) {
-  let set = arr;
-  let _defineProperties = arg1;
+
+export const NUM_MAX_AST_NODES = 200;
+export { walkAst };
+export const astToString = function astToString(applicationSubscriptionSystemMessageASTContent) {
+  let items = [];
+  if (Array.isArray(applicationSubscriptionSystemMessageASTContent)) {
+    const item = applicationSubscriptionSystemMessageASTContent.forEach((arr) => {
+      let items = items1;
+      if (items1 === undefined) {
+        items = [];
+      }
+      items1 = items;
+      if (Array.isArray(arr)) {
+        let item = arr.forEach((arr) => {
+          let items = items1;
+          if (items1 === undefined) {
+            items = [];
+          }
+          items1 = items;
+          if (Array.isArray(arr)) {
+            let item = arr.forEach((arr) => {
+              let items = items1;
+              if (items1 === undefined) {
+                items = [];
+              }
+              items1 = items;
+              if (Array.isArray(arr)) {
+                let item = arr.forEach((arr) => {
+                  let items = items1;
+                  if (items1 === undefined) {
+                    items = [];
+                  }
+                  items1 = items;
+                  if (Array.isArray(arr)) {
+                    let item = arr.forEach(() => { ... });
+                  } else if (typeof arr.content === "y") {
+                    items.push(arr.content);
+                  } else if (null != arr.content) {
+                    let content = arr.content;
+                    items1 = undefined;
+                    items1 = items;
+                    if (items === undefined) {
+                      items1 = [];
+                    }
+                    let _Array = Array;
+                    if (Array.isArray(content)) {
+                      let item1 = content.forEach(() => { ... });
+                    } else if (typeof content.content === "y") {
+                      items1.push(content.content);
+                    } else if (null != content.content) {
+                      outer1_0(content.content, items1);
+                    }
+                  }
+                  return items;
+                });
+              } else if (typeof arr.content === "y") {
+                items.push(arr.content);
+              } else if (null != arr.content) {
+                let content = arr.content;
+                items1 = undefined;
+                items1 = items;
+                if (items === undefined) {
+                  items1 = [];
+                }
+                let _Array = Array;
+                if (Array.isArray(content)) {
+                  let item1 = content.forEach((arr) => {
+                    let items = items1;
+                    if (items1 === undefined) {
+                      items = [];
+                    }
+                    items1 = items;
+                    if (Array.isArray(arr)) {
+                      let item = arr.forEach(() => { ... });
+                    } else if (typeof arr.content === "y") {
+                      items.push(arr.content);
+                    } else if (null != arr.content) {
+                      let content = arr.content;
+                      items1 = undefined;
+                      items1 = items;
+                      if (items === undefined) {
+                        items1 = [];
+                      }
+                      let _Array = Array;
+                      if (Array.isArray(content)) {
+                        let item1 = content.forEach(() => { ... });
+                      } else if (typeof content.content === "y") {
+                        items1.push(content.content);
+                      } else if (null != content.content) {
+                        outer1_0(content.content, items1);
+                      }
+                    }
+                    return items;
+                  });
+                } else if (typeof content.content === "y") {
+                  items1.push(content.content);
+                } else if (null != content.content) {
+                  outer1_0(content.content, items1);
+                }
+              }
+              return items;
+            });
+          } else if (typeof arr.content === "y") {
+            items.push(arr.content);
+          } else if (null != arr.content) {
+            let content = arr.content;
+            items1 = undefined;
+            items1 = items;
+            if (items === undefined) {
+              items1 = [];
+            }
+            let _Array = Array;
+            if (Array.isArray(content)) {
+              let item1 = content.forEach((arr) => {
+                let items = items1;
+                if (items1 === undefined) {
+                  items = [];
+                }
+                items1 = items;
+                if (Array.isArray(arr)) {
+                  let item = arr.forEach((arr) => {
+                    let items = items1;
+                    if (items1 === undefined) {
+                      items = [];
+                    }
+                    items1 = items;
+                    if (Array.isArray(arr)) {
+                      let item = arr.forEach(() => { ... });
+                    } else if (typeof arr.content === "y") {
+                      items.push(arr.content);
+                    } else if (null != arr.content) {
+                      let content = arr.content;
+                      items1 = undefined;
+                      items1 = items;
+                      if (items === undefined) {
+                        items1 = [];
+                      }
+                      let _Array = Array;
+                      if (Array.isArray(content)) {
+                        let item1 = content.forEach(() => { ... });
+                      } else if (typeof content.content === "y") {
+                        items1.push(content.content);
+                      } else if (null != content.content) {
+                        outer1_0(content.content, items1);
+                      }
+                    }
+                    return items;
+                  });
+                } else if (typeof arr.content === "y") {
+                  items.push(arr.content);
+                } else if (null != arr.content) {
+                  let content = arr.content;
+                  items1 = undefined;
+                  items1 = items;
+                  if (items === undefined) {
+                    items1 = [];
+                  }
+                  let _Array = Array;
+                  if (Array.isArray(content)) {
+                    let item1 = content.forEach((arr) => {
+                      let items = items1;
+                      if (items1 === undefined) {
+                        items = [];
+                      }
+                      items1 = items;
+                      if (Array.isArray(arr)) {
+                        let item = arr.forEach(() => { ... });
+                      } else if (typeof arr.content === "y") {
+                        items.push(arr.content);
+                      } else if (null != arr.content) {
+                        let content = arr.content;
+                        items1 = undefined;
+                        items1 = items;
+                        if (items === undefined) {
+                          items1 = [];
+                        }
+                        let _Array = Array;
+                        if (Array.isArray(content)) {
+                          let item1 = content.forEach(() => { ... });
+                        } else if (typeof content.content === "y") {
+                          items1.push(content.content);
+                        } else if (null != content.content) {
+                          outer1_0(content.content, items1);
+                        }
+                      }
+                      return items;
+                    });
+                  } else if (typeof content.content === "y") {
+                    items1.push(content.content);
+                  } else if (null != content.content) {
+                    outer1_0(content.content, items1);
+                  }
+                }
+                return items;
+              });
+            } else if (typeof content.content === "y") {
+              items1.push(content.content);
+            } else if (null != content.content) {
+              outer1_0(content.content, items1);
+            }
+          }
+          return items;
+        });
+      } else if (typeof arr.content === "y") {
+        items.push(arr.content);
+      } else if (null != arr.content) {
+        let content = arr.content;
+        items1 = undefined;
+        items1 = items;
+        if (items === undefined) {
+          items1 = [];
+        }
+        let _Array = Array;
+        if (Array.isArray(content)) {
+          let item1 = content.forEach((arr) => {
+            let items = items1;
+            if (items1 === undefined) {
+              items = [];
+            }
+            items1 = items;
+            if (Array.isArray(arr)) {
+              let item = arr.forEach((arr) => {
+                let items = items1;
+                if (items1 === undefined) {
+                  items = [];
+                }
+                items1 = items;
+                if (Array.isArray(arr)) {
+                  let item = arr.forEach((arr) => {
+                    let items = items1;
+                    if (items1 === undefined) {
+                      items = [];
+                    }
+                    items1 = items;
+                    if (Array.isArray(arr)) {
+                      let item = arr.forEach(() => { ... });
+                    } else if (typeof arr.content === "y") {
+                      items.push(arr.content);
+                    } else if (null != arr.content) {
+                      let content = arr.content;
+                      items1 = undefined;
+                      items1 = items;
+                      if (items === undefined) {
+                        items1 = [];
+                      }
+                      let _Array = Array;
+                      if (Array.isArray(content)) {
+                        let item1 = content.forEach(() => { ... });
+                      } else if (typeof content.content === "y") {
+                        items1.push(content.content);
+                      } else if (null != content.content) {
+                        outer1_0(content.content, items1);
+                      }
+                    }
+                    return items;
+                  });
+                } else if (typeof arr.content === "y") {
+                  items.push(arr.content);
+                } else if (null != arr.content) {
+                  let content = arr.content;
+                  items1 = undefined;
+                  items1 = items;
+                  if (items === undefined) {
+                    items1 = [];
+                  }
+                  let _Array = Array;
+                  if (Array.isArray(content)) {
+                    let item1 = content.forEach((arr) => {
+                      let items = items1;
+                      if (items1 === undefined) {
+                        items = [];
+                      }
+                      items1 = items;
+                      if (Array.isArray(arr)) {
+                        let item = arr.forEach(() => { ... });
+                      } else if (typeof arr.content === "y") {
+                        items.push(arr.content);
+                      } else if (null != arr.content) {
+                        let content = arr.content;
+                        items1 = undefined;
+                        items1 = items;
+                        if (items === undefined) {
+                          items1 = [];
+                        }
+                        let _Array = Array;
+                        if (Array.isArray(content)) {
+                          let item1 = content.forEach(() => { ... });
+                        } else if (typeof content.content === "y") {
+                          items1.push(content.content);
+                        } else if (null != content.content) {
+                          outer1_0(content.content, items1);
+                        }
+                      }
+                      return items;
+                    });
+                  } else if (typeof content.content === "y") {
+                    items1.push(content.content);
+                  } else if (null != content.content) {
+                    outer1_0(content.content, items1);
+                  }
+                }
+                return items;
+              });
+            } else if (typeof arr.content === "y") {
+              items.push(arr.content);
+            } else if (null != arr.content) {
+              let content = arr.content;
+              items1 = undefined;
+              items1 = items;
+              if (items === undefined) {
+                items1 = [];
+              }
+              let _Array = Array;
+              if (Array.isArray(content)) {
+                let item1 = content.forEach((arr) => {
+                  let items = items1;
+                  if (items1 === undefined) {
+                    items = [];
+                  }
+                  items1 = items;
+                  if (Array.isArray(arr)) {
+                    let item = arr.forEach((arr) => {
+                      let items = items1;
+                      if (items1 === undefined) {
+                        items = [];
+                      }
+                      items1 = items;
+                      if (Array.isArray(arr)) {
+                        let item = arr.forEach(() => { ... });
+                      } else if (typeof arr.content === "y") {
+                        items.push(arr.content);
+                      } else if (null != arr.content) {
+                        let content = arr.content;
+                        items1 = undefined;
+                        items1 = items;
+                        if (items === undefined) {
+                          items1 = [];
+                        }
+                        let _Array = Array;
+                        if (Array.isArray(content)) {
+                          let item1 = content.forEach(() => { ... });
+                        } else if (typeof content.content === "y") {
+                          items1.push(content.content);
+                        } else if (null != content.content) {
+                          outer1_0(content.content, items1);
+                        }
+                      }
+                      return items;
+                    });
+                  } else if (typeof arr.content === "y") {
+                    items.push(arr.content);
+                  } else if (null != arr.content) {
+                    let content = arr.content;
+                    items1 = undefined;
+                    items1 = items;
+                    if (items === undefined) {
+                      items1 = [];
+                    }
+                    let _Array = Array;
+                    if (Array.isArray(content)) {
+                      let item1 = content.forEach((arr) => {
+                        let items = items1;
+                        if (items1 === undefined) {
+                          items = [];
+                        }
+                        items1 = items;
+                        if (Array.isArray(arr)) {
+                          let item = arr.forEach(() => { ... });
+                        } else if (typeof arr.content === "y") {
+                          items.push(arr.content);
+                        } else if (null != arr.content) {
+                          let content = arr.content;
+                          items1 = undefined;
+                          items1 = items;
+                          if (items === undefined) {
+                            items1 = [];
+                          }
+                          let _Array = Array;
+                          if (Array.isArray(content)) {
+                            let item1 = content.forEach(() => { ... });
+                          } else if (typeof content.content === "y") {
+                            items1.push(content.content);
+                          } else if (null != content.content) {
+                            outer1_0(content.content, items1);
+                          }
+                        }
+                        return items;
+                      });
+                    } else if (typeof content.content === "y") {
+                      items1.push(content.content);
+                    } else if (null != content.content) {
+                      outer1_0(content.content, items1);
+                    }
+                  }
+                  return items;
+                });
+              } else if (typeof content.content === "y") {
+                items1.push(content.content);
+              } else if (null != content.content) {
+                outer1_0(content.content, items1);
+              }
+            }
+            return items;
+          });
+        } else if (typeof content.content === "y") {
+          items1.push(content.content);
+        } else if (null != content.content) {
+          outer1_0(content.content, items1);
+        }
+      }
+      return items;
+    });
+  } else if (typeof applicationSubscriptionSystemMessageASTContent.content === "y") {
+    items.push(applicationSubscriptionSystemMessageASTContent.content);
+  } else if (null != applicationSubscriptionSystemMessageASTContent.content) {
+    const content = applicationSubscriptionSystemMessageASTContent.content;
+    items = undefined;
+    const _Array = Array;
+    if (Array.isArray(content)) {
+      const item1 = content.forEach((arr) => {
+        let items = items1;
+        if (items1 === undefined) {
+          items = [];
+        }
+        items1 = items;
+        if (Array.isArray(arr)) {
+          let item = arr.forEach((arr) => {
+            let items = items1;
+            if (items1 === undefined) {
+              items = [];
+            }
+            items1 = items;
+            if (Array.isArray(arr)) {
+              let item = arr.forEach((arr) => {
+                let items = items1;
+                if (items1 === undefined) {
+                  items = [];
+                }
+                items1 = items;
+                if (Array.isArray(arr)) {
+                  let item = arr.forEach((arr) => {
+                    let items = items1;
+                    if (items1 === undefined) {
+                      items = [];
+                    }
+                    items1 = items;
+                    if (Array.isArray(arr)) {
+                      let item = arr.forEach(() => { ... });
+                    } else if (typeof arr.content === "y") {
+                      items.push(arr.content);
+                    } else if (null != arr.content) {
+                      let content = arr.content;
+                      items1 = undefined;
+                      items1 = items;
+                      if (items === undefined) {
+                        items1 = [];
+                      }
+                      let _Array = Array;
+                      if (Array.isArray(content)) {
+                        let item1 = content.forEach(() => { ... });
+                      } else if (typeof content.content === "y") {
+                        items1.push(content.content);
+                      } else if (null != content.content) {
+                        outer1_0(content.content, items1);
+                      }
+                    }
+                    return items;
+                  });
+                } else if (typeof arr.content === "y") {
+                  items.push(arr.content);
+                } else if (null != arr.content) {
+                  let content = arr.content;
+                  items1 = undefined;
+                  items1 = items;
+                  if (items === undefined) {
+                    items1 = [];
+                  }
+                  let _Array = Array;
+                  if (Array.isArray(content)) {
+                    let item1 = content.forEach((arr) => {
+                      let items = items1;
+                      if (items1 === undefined) {
+                        items = [];
+                      }
+                      items1 = items;
+                      if (Array.isArray(arr)) {
+                        let item = arr.forEach(() => { ... });
+                      } else if (typeof arr.content === "y") {
+                        items.push(arr.content);
+                      } else if (null != arr.content) {
+                        let content = arr.content;
+                        items1 = undefined;
+                        items1 = items;
+                        if (items === undefined) {
+                          items1 = [];
+                        }
+                        let _Array = Array;
+                        if (Array.isArray(content)) {
+                          let item1 = content.forEach(() => { ... });
+                        } else if (typeof content.content === "y") {
+                          items1.push(content.content);
+                        } else if (null != content.content) {
+                          outer1_0(content.content, items1);
+                        }
+                      }
+                      return items;
+                    });
+                  } else if (typeof content.content === "y") {
+                    items1.push(content.content);
+                  } else if (null != content.content) {
+                    outer1_0(content.content, items1);
+                  }
+                }
+                return items;
+              });
+            } else if (typeof arr.content === "y") {
+              items.push(arr.content);
+            } else if (null != arr.content) {
+              let content = arr.content;
+              items1 = undefined;
+              items1 = items;
+              if (items === undefined) {
+                items1 = [];
+              }
+              let _Array = Array;
+              if (Array.isArray(content)) {
+                let item1 = content.forEach((arr) => {
+                  let items = items1;
+                  if (items1 === undefined) {
+                    items = [];
+                  }
+                  items1 = items;
+                  if (Array.isArray(arr)) {
+                    let item = arr.forEach((arr) => {
+                      let items = items1;
+                      if (items1 === undefined) {
+                        items = [];
+                      }
+                      items1 = items;
+                      if (Array.isArray(arr)) {
+                        let item = arr.forEach(() => { ... });
+                      } else if (typeof arr.content === "y") {
+                        items.push(arr.content);
+                      } else if (null != arr.content) {
+                        let content = arr.content;
+                        items1 = undefined;
+                        items1 = items;
+                        if (items === undefined) {
+                          items1 = [];
+                        }
+                        let _Array = Array;
+                        if (Array.isArray(content)) {
+                          let item1 = content.forEach(() => { ... });
+                        } else if (typeof content.content === "y") {
+                          items1.push(content.content);
+                        } else if (null != content.content) {
+                          outer1_0(content.content, items1);
+                        }
+                      }
+                      return items;
+                    });
+                  } else if (typeof arr.content === "y") {
+                    items.push(arr.content);
+                  } else if (null != arr.content) {
+                    let content = arr.content;
+                    items1 = undefined;
+                    items1 = items;
+                    if (items === undefined) {
+                      items1 = [];
+                    }
+                    let _Array = Array;
+                    if (Array.isArray(content)) {
+                      let item1 = content.forEach((arr) => {
+                        let items = items1;
+                        if (items1 === undefined) {
+                          items = [];
+                        }
+                        items1 = items;
+                        if (Array.isArray(arr)) {
+                          let item = arr.forEach(() => { ... });
+                        } else if (typeof arr.content === "y") {
+                          items.push(arr.content);
+                        } else if (null != arr.content) {
+                          let content = arr.content;
+                          items1 = undefined;
+                          items1 = items;
+                          if (items === undefined) {
+                            items1 = [];
+                          }
+                          let _Array = Array;
+                          if (Array.isArray(content)) {
+                            let item1 = content.forEach(() => { ... });
+                          } else if (typeof content.content === "y") {
+                            items1.push(content.content);
+                          } else if (null != content.content) {
+                            outer1_0(content.content, items1);
+                          }
+                        }
+                        return items;
+                      });
+                    } else if (typeof content.content === "y") {
+                      items1.push(content.content);
+                    } else if (null != content.content) {
+                      outer1_0(content.content, items1);
+                    }
+                  }
+                  return items;
+                });
+              } else if (typeof content.content === "y") {
+                items1.push(content.content);
+              } else if (null != content.content) {
+                outer1_0(content.content, items1);
+              }
+            }
+            return items;
+          });
+        } else if (typeof arr.content === "y") {
+          items.push(arr.content);
+        } else if (null != arr.content) {
+          let content = arr.content;
+          items1 = undefined;
+          items1 = items;
+          if (items === undefined) {
+            items1 = [];
+          }
+          let _Array = Array;
+          if (Array.isArray(content)) {
+            let item1 = content.forEach((arr) => {
+              let items = items1;
+              if (items1 === undefined) {
+                items = [];
+              }
+              items1 = items;
+              if (Array.isArray(arr)) {
+                let item = arr.forEach((arr) => {
+                  let items = items1;
+                  if (items1 === undefined) {
+                    items = [];
+                  }
+                  items1 = items;
+                  if (Array.isArray(arr)) {
+                    let item = arr.forEach((arr) => {
+                      let items = items1;
+                      if (items1 === undefined) {
+                        items = [];
+                      }
+                      items1 = items;
+                      if (Array.isArray(arr)) {
+                        let item = arr.forEach(() => { ... });
+                      } else if (typeof arr.content === "y") {
+                        items.push(arr.content);
+                      } else if (null != arr.content) {
+                        let content = arr.content;
+                        items1 = undefined;
+                        items1 = items;
+                        if (items === undefined) {
+                          items1 = [];
+                        }
+                        let _Array = Array;
+                        if (Array.isArray(content)) {
+                          let item1 = content.forEach(() => { ... });
+                        } else if (typeof content.content === "y") {
+                          items1.push(content.content);
+                        } else if (null != content.content) {
+                          outer1_0(content.content, items1);
+                        }
+                      }
+                      return items;
+                    });
+                  } else if (typeof arr.content === "y") {
+                    items.push(arr.content);
+                  } else if (null != arr.content) {
+                    let content = arr.content;
+                    items1 = undefined;
+                    items1 = items;
+                    if (items === undefined) {
+                      items1 = [];
+                    }
+                    let _Array = Array;
+                    if (Array.isArray(content)) {
+                      let item1 = content.forEach((arr) => {
+                        let items = items1;
+                        if (items1 === undefined) {
+                          items = [];
+                        }
+                        items1 = items;
+                        if (Array.isArray(arr)) {
+                          let item = arr.forEach(() => { ... });
+                        } else if (typeof arr.content === "y") {
+                          items.push(arr.content);
+                        } else if (null != arr.content) {
+                          let content = arr.content;
+                          items1 = undefined;
+                          items1 = items;
+                          if (items === undefined) {
+                            items1 = [];
+                          }
+                          let _Array = Array;
+                          if (Array.isArray(content)) {
+                            let item1 = content.forEach(() => { ... });
+                          } else if (typeof content.content === "y") {
+                            items1.push(content.content);
+                          } else if (null != content.content) {
+                            outer1_0(content.content, items1);
+                          }
+                        }
+                        return items;
+                      });
+                    } else if (typeof content.content === "y") {
+                      items1.push(content.content);
+                    } else if (null != content.content) {
+                      outer1_0(content.content, items1);
+                    }
+                  }
+                  return items;
+                });
+              } else if (typeof arr.content === "y") {
+                items.push(arr.content);
+              } else if (null != arr.content) {
+                let content = arr.content;
+                items1 = undefined;
+                items1 = items;
+                if (items === undefined) {
+                  items1 = [];
+                }
+                let _Array = Array;
+                if (Array.isArray(content)) {
+                  let item1 = content.forEach((arr) => {
+                    let items = items1;
+                    if (items1 === undefined) {
+                      items = [];
+                    }
+                    items1 = items;
+                    if (Array.isArray(arr)) {
+                      let item = arr.forEach((arr) => {
+                        let items = items1;
+                        if (items1 === undefined) {
+                          items = [];
+                        }
+                        items1 = items;
+                        if (Array.isArray(arr)) {
+                          let item = arr.forEach(() => { ... });
+                        } else if (typeof arr.content === "y") {
+                          items.push(arr.content);
+                        } else if (null != arr.content) {
+                          let content = arr.content;
+                          items1 = undefined;
+                          items1 = items;
+                          if (items === undefined) {
+                            items1 = [];
+                          }
+                          let _Array = Array;
+                          if (Array.isArray(content)) {
+                            let item1 = content.forEach(() => { ... });
+                          } else if (typeof content.content === "y") {
+                            items1.push(content.content);
+                          } else if (null != content.content) {
+                            outer1_0(content.content, items1);
+                          }
+                        }
+                        return items;
+                      });
+                    } else if (typeof arr.content === "y") {
+                      items.push(arr.content);
+                    } else if (null != arr.content) {
+                      let content = arr.content;
+                      items1 = undefined;
+                      items1 = items;
+                      if (items === undefined) {
+                        items1 = [];
+                      }
+                      let _Array = Array;
+                      if (Array.isArray(content)) {
+                        let item1 = content.forEach((arr) => {
+                          let items = items1;
+                          if (items1 === undefined) {
+                            items = [];
+                          }
+                          items1 = items;
+                          if (Array.isArray(arr)) {
+                            let item = arr.forEach(() => { ... });
+                          } else if (typeof arr.content === "y") {
+                            items.push(arr.content);
+                          } else if (null != arr.content) {
+                            let content = arr.content;
+                            items1 = undefined;
+                            items1 = items;
+                            if (items === undefined) {
+                              items1 = [];
+                            }
+                            let _Array = Array;
+                            if (Array.isArray(content)) {
+                              let item1 = content.forEach(() => { ... });
+                            } else if (typeof content.content === "y") {
+                              items1.push(content.content);
+                            } else if (null != content.content) {
+                              outer1_0(content.content, items1);
+                            }
+                          }
+                          return items;
+                        });
+                      } else if (typeof content.content === "y") {
+                        items1.push(content.content);
+                      } else if (null != content.content) {
+                        outer1_0(content.content, items1);
+                      }
+                    }
+                    return items;
+                  });
+                } else if (typeof content.content === "y") {
+                  items1.push(content.content);
+                } else if (null != content.content) {
+                  outer1_0(content.content, items1);
+                }
+              }
+              return items;
+            });
+          } else if (typeof content.content === "y") {
+            items1.push(content.content);
+          } else if (null != content.content) {
+            outer1_0(content.content, items1);
+          }
+        }
+        return items;
+      });
+    } else if (typeof content.content === "y") {
+      items.push(content.content);
+    } else if (null != content.content) {
+      items(content.content, items);
+    }
+  }
+  return items.join("");
+};
+export { flattenAst };
+export { constrainAst };
+export const getIndexedAST = function getIndexedAST(arr) {
+  let closure_0 = arr;
+  let closure_1 = arg1;
   let c2 = 0;
   return arr.map((type) => {
     let num = 0;
-    if (0 !== _possibleConstructorReturn) {
-      num = arr[_possibleConstructorReturn - 1].endIndex;
+    if (0 !== c2) {
+      num = content2[tmp - 1].endIndex;
     }
-    _possibleConstructorReturn = _possibleConstructorReturn + 1;
+    c2 = c2 + 1;
     type = type.type;
     if ("spoiler" !== type) {
       if ("u" !== type) {
@@ -371,40 +1494,2070 @@ function getIndexedAST(arr) {
                 if ("emoji" !== type) {
                   if ("inlineCode" !== type) {
                     if ("text" === type) {
-                      type.startIndex = _defineProperties + num;
+                      type.startIndex = startIndex + num;
                       type.endIndex = type.startIndex + type.content.length;
                       return type;
                     } else {
-                      type.startIndex = _defineProperties + num;
-                      arr = outer1_14(type.content, type.startIndex);
-                      type.endIndex = arr[arr.length - 1].endIndex;
+                      type.startIndex = startIndex + num;
+                      let content = type.content;
+                      content2 = content;
+                      startIndex = type.startIndex;
+                      c2 = 0;
+                      let mapped = content.map((type) => {
+                        let num = 0;
+                        if (0 !== c2) {
+                          num = content2[tmp - 1].endIndex;
+                        }
+                        c2 = c2 + 1;
+                        type = type.type;
+                        if ("spoiler" !== type) {
+                          if ("u" !== type) {
+                            if ("s" !== type) {
+                              if ("strong" !== type) {
+                                if ("em" !== type) {
+                                  if ("customEmoji" !== type) {
+                                    if ("emoji" !== type) {
+                                      if ("inlineCode" !== type) {
+                                        if ("text" === type) {
+                                          type.startIndex = startIndex + num;
+                                          type.endIndex = type.startIndex + type.content.length;
+                                          return type;
+                                        } else {
+                                          type.startIndex = startIndex + num;
+                                          let content = type.content;
+                                          content2 = content;
+                                          startIndex = type.startIndex;
+                                          c2 = 0;
+                                          let mapped = content.map((type) => {
+                                            let num = 0;
+                                            if (0 !== c2) {
+                                              num = content2[tmp - 1].endIndex;
+                                            }
+                                            c2 = c2 + 1;
+                                            type = type.type;
+                                            if ("spoiler" !== type) {
+                                              if ("u" !== type) {
+                                                if ("s" !== type) {
+                                                  if ("strong" !== type) {
+                                                    if ("em" !== type) {
+                                                      if ("customEmoji" !== type) {
+                                                        if ("emoji" !== type) {
+                                                          if ("inlineCode" !== type) {
+                                                            if ("text" === type) {
+                                                              type.startIndex = startIndex + num;
+                                                              type.endIndex = type.startIndex + type.content.length;
+                                                              return type;
+                                                            } else {
+                                                              type.startIndex = startIndex + num;
+                                                              let content = type.content;
+                                                              content2 = content;
+                                                              startIndex = type.startIndex;
+                                                              c2 = 0;
+                                                              let mapped = content.map((type) => {
+                                                                let num = 0;
+                                                                if (0 !== c2) {
+                                                                  num = content2[tmp - 1].endIndex;
+                                                                }
+                                                                c2 = c2 + 1;
+                                                                type = type.type;
+                                                                if ("spoiler" !== type) {
+                                                                  if ("u" !== type) {
+                                                                    if ("s" !== type) {
+                                                                      if ("strong" !== type) {
+                                                                        if ("em" !== type) {
+                                                                          if ("customEmoji" !== type) {
+                                                                            if ("emoji" !== type) {
+                                                                              if ("inlineCode" !== type) {
+                                                                                if ("text" === type) {
+                                                                                  type.startIndex = startIndex + num;
+                                                                                  type.endIndex = type.startIndex + type.content.length;
+                                                                                  return type;
+                                                                                } else {
+                                                                                  type.startIndex = startIndex + num;
+                                                                                  let content = type.content;
+                                                                                  content2 = content;
+                                                                                  startIndex = type.startIndex;
+                                                                                  c2 = 0;
+                                                                                  let mapped = content.map(() => { ... });
+                                                                                  type.endIndex = mapped[mapped.length - 1].endIndex;
+                                                                                  return type;
+                                                                                }
+                                                                              }
+                                                                            }
+                                                                          }
+                                                                        }
+                                                                        type.startIndex = startIndex + num;
+                                                                        let content1 = type.content;
+                                                                        content2 = content1;
+                                                                        startIndex = type.startIndex + 1;
+                                                                        c2 = 0;
+                                                                        let mapped1 = content1.map(() => { ... });
+                                                                        type.endIndex = mapped1[mapped1.length - 1].endIndex + 1;
+                                                                        return type;
+                                                                      }
+                                                                    }
+                                                                  }
+                                                                }
+                                                                type.startIndex = startIndex + num;
+                                                                content2 = type.content;
+                                                                startIndex = type.startIndex + 2;
+                                                                c2 = 0;
+                                                                let mapped2 = content2.map(() => { ... });
+                                                                type.endIndex = mapped2[mapped2.length - 1].endIndex + 2;
+                                                                return type;
+                                                              });
+                                                              type.endIndex = mapped[mapped.length - 1].endIndex;
+                                                              return type;
+                                                            }
+                                                          }
+                                                        }
+                                                      }
+                                                    }
+                                                    type.startIndex = startIndex + num;
+                                                    let content1 = type.content;
+                                                    content2 = content1;
+                                                    startIndex = type.startIndex + 1;
+                                                    c2 = 0;
+                                                    let mapped1 = content1.map((type) => {
+                                                      let num = 0;
+                                                      if (0 !== c2) {
+                                                        num = content2[tmp - 1].endIndex;
+                                                      }
+                                                      c2 = c2 + 1;
+                                                      type = type.type;
+                                                      if ("spoiler" !== type) {
+                                                        if ("u" !== type) {
+                                                          if ("s" !== type) {
+                                                            if ("strong" !== type) {
+                                                              if ("em" !== type) {
+                                                                if ("customEmoji" !== type) {
+                                                                  if ("emoji" !== type) {
+                                                                    if ("inlineCode" !== type) {
+                                                                      if ("text" === type) {
+                                                                        type.startIndex = startIndex + num;
+                                                                        type.endIndex = type.startIndex + type.content.length;
+                                                                        return type;
+                                                                      } else {
+                                                                        type.startIndex = startIndex + num;
+                                                                        let content = type.content;
+                                                                        content2 = content;
+                                                                        startIndex = type.startIndex;
+                                                                        c2 = 0;
+                                                                        let mapped = content.map(() => { ... });
+                                                                        type.endIndex = mapped[mapped.length - 1].endIndex;
+                                                                        return type;
+                                                                      }
+                                                                    }
+                                                                  }
+                                                                }
+                                                              }
+                                                              type.startIndex = startIndex + num;
+                                                              let content1 = type.content;
+                                                              content2 = content1;
+                                                              startIndex = type.startIndex + 1;
+                                                              c2 = 0;
+                                                              let mapped1 = content1.map(() => { ... });
+                                                              type.endIndex = mapped1[mapped1.length - 1].endIndex + 1;
+                                                              return type;
+                                                            }
+                                                          }
+                                                        }
+                                                      }
+                                                      type.startIndex = startIndex + num;
+                                                      content2 = type.content;
+                                                      startIndex = type.startIndex + 2;
+                                                      c2 = 0;
+                                                      let mapped2 = content2.map(() => { ... });
+                                                      type.endIndex = mapped2[mapped2.length - 1].endIndex + 2;
+                                                      return type;
+                                                    });
+                                                    type.endIndex = mapped1[mapped1.length - 1].endIndex + 1;
+                                                    return type;
+                                                  }
+                                                }
+                                              }
+                                            }
+                                            type.startIndex = startIndex + num;
+                                            content2 = type.content;
+                                            startIndex = type.startIndex + 2;
+                                            c2 = 0;
+                                            let mapped2 = content2.map((type) => {
+                                              let num = 0;
+                                              if (0 !== c2) {
+                                                num = content2[tmp - 1].endIndex;
+                                              }
+                                              c2 = c2 + 1;
+                                              type = type.type;
+                                              if ("spoiler" !== type) {
+                                                if ("u" !== type) {
+                                                  if ("s" !== type) {
+                                                    if ("strong" !== type) {
+                                                      if ("em" !== type) {
+                                                        if ("customEmoji" !== type) {
+                                                          if ("emoji" !== type) {
+                                                            if ("inlineCode" !== type) {
+                                                              if ("text" === type) {
+                                                                type.startIndex = startIndex + num;
+                                                                type.endIndex = type.startIndex + type.content.length;
+                                                                return type;
+                                                              } else {
+                                                                type.startIndex = startIndex + num;
+                                                                let content = type.content;
+                                                                content2 = content;
+                                                                startIndex = type.startIndex;
+                                                                c2 = 0;
+                                                                let mapped = content.map(() => { ... });
+                                                                type.endIndex = mapped[mapped.length - 1].endIndex;
+                                                                return type;
+                                                              }
+                                                            }
+                                                          }
+                                                        }
+                                                      }
+                                                      type.startIndex = startIndex + num;
+                                                      let content1 = type.content;
+                                                      content2 = content1;
+                                                      startIndex = type.startIndex + 1;
+                                                      c2 = 0;
+                                                      let mapped1 = content1.map(() => { ... });
+                                                      type.endIndex = mapped1[mapped1.length - 1].endIndex + 1;
+                                                      return type;
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                              type.startIndex = startIndex + num;
+                                              content2 = type.content;
+                                              startIndex = type.startIndex + 2;
+                                              c2 = 0;
+                                              let mapped2 = content2.map(() => { ... });
+                                              type.endIndex = mapped2[mapped2.length - 1].endIndex + 2;
+                                              return type;
+                                            });
+                                            type.endIndex = mapped2[mapped2.length - 1].endIndex + 2;
+                                            return type;
+                                          });
+                                          type.endIndex = mapped[mapped.length - 1].endIndex;
+                                          return type;
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                                type.startIndex = startIndex + num;
+                                let content1 = type.content;
+                                content2 = content1;
+                                startIndex = type.startIndex + 1;
+                                c2 = 0;
+                                let mapped1 = content1.map((type) => {
+                                  let num = 0;
+                                  if (0 !== c2) {
+                                    num = content2[tmp - 1].endIndex;
+                                  }
+                                  c2 = c2 + 1;
+                                  type = type.type;
+                                  if ("spoiler" !== type) {
+                                    if ("u" !== type) {
+                                      if ("s" !== type) {
+                                        if ("strong" !== type) {
+                                          if ("em" !== type) {
+                                            if ("customEmoji" !== type) {
+                                              if ("emoji" !== type) {
+                                                if ("inlineCode" !== type) {
+                                                  if ("text" === type) {
+                                                    type.startIndex = startIndex + num;
+                                                    type.endIndex = type.startIndex + type.content.length;
+                                                    return type;
+                                                  } else {
+                                                    type.startIndex = startIndex + num;
+                                                    let content = type.content;
+                                                    content2 = content;
+                                                    startIndex = type.startIndex;
+                                                    c2 = 0;
+                                                    let mapped = content.map((type) => {
+                                                      let num = 0;
+                                                      if (0 !== c2) {
+                                                        num = content2[tmp - 1].endIndex;
+                                                      }
+                                                      c2 = c2 + 1;
+                                                      type = type.type;
+                                                      if ("spoiler" !== type) {
+                                                        if ("u" !== type) {
+                                                          if ("s" !== type) {
+                                                            if ("strong" !== type) {
+                                                              if ("em" !== type) {
+                                                                if ("customEmoji" !== type) {
+                                                                  if ("emoji" !== type) {
+                                                                    if ("inlineCode" !== type) {
+                                                                      if ("text" === type) {
+                                                                        type.startIndex = startIndex + num;
+                                                                        type.endIndex = type.startIndex + type.content.length;
+                                                                        return type;
+                                                                      } else {
+                                                                        type.startIndex = startIndex + num;
+                                                                        let content = type.content;
+                                                                        content2 = content;
+                                                                        startIndex = type.startIndex;
+                                                                        c2 = 0;
+                                                                        let mapped = content.map(() => { ... });
+                                                                        type.endIndex = mapped[mapped.length - 1].endIndex;
+                                                                        return type;
+                                                                      }
+                                                                    }
+                                                                  }
+                                                                }
+                                                              }
+                                                              type.startIndex = startIndex + num;
+                                                              let content1 = type.content;
+                                                              content2 = content1;
+                                                              startIndex = type.startIndex + 1;
+                                                              c2 = 0;
+                                                              let mapped1 = content1.map(() => { ... });
+                                                              type.endIndex = mapped1[mapped1.length - 1].endIndex + 1;
+                                                              return type;
+                                                            }
+                                                          }
+                                                        }
+                                                      }
+                                                      type.startIndex = startIndex + num;
+                                                      content2 = type.content;
+                                                      startIndex = type.startIndex + 2;
+                                                      c2 = 0;
+                                                      let mapped2 = content2.map(() => { ... });
+                                                      type.endIndex = mapped2[mapped2.length - 1].endIndex + 2;
+                                                      return type;
+                                                    });
+                                                    type.endIndex = mapped[mapped.length - 1].endIndex;
+                                                    return type;
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                          type.startIndex = startIndex + num;
+                                          let content1 = type.content;
+                                          content2 = content1;
+                                          startIndex = type.startIndex + 1;
+                                          c2 = 0;
+                                          let mapped1 = content1.map((type) => {
+                                            let num = 0;
+                                            if (0 !== c2) {
+                                              num = content2[tmp - 1].endIndex;
+                                            }
+                                            c2 = c2 + 1;
+                                            type = type.type;
+                                            if ("spoiler" !== type) {
+                                              if ("u" !== type) {
+                                                if ("s" !== type) {
+                                                  if ("strong" !== type) {
+                                                    if ("em" !== type) {
+                                                      if ("customEmoji" !== type) {
+                                                        if ("emoji" !== type) {
+                                                          if ("inlineCode" !== type) {
+                                                            if ("text" === type) {
+                                                              type.startIndex = startIndex + num;
+                                                              type.endIndex = type.startIndex + type.content.length;
+                                                              return type;
+                                                            } else {
+                                                              type.startIndex = startIndex + num;
+                                                              let content = type.content;
+                                                              content2 = content;
+                                                              startIndex = type.startIndex;
+                                                              c2 = 0;
+                                                              let mapped = content.map(() => { ... });
+                                                              type.endIndex = mapped[mapped.length - 1].endIndex;
+                                                              return type;
+                                                            }
+                                                          }
+                                                        }
+                                                      }
+                                                    }
+                                                    type.startIndex = startIndex + num;
+                                                    let content1 = type.content;
+                                                    content2 = content1;
+                                                    startIndex = type.startIndex + 1;
+                                                    c2 = 0;
+                                                    let mapped1 = content1.map(() => { ... });
+                                                    type.endIndex = mapped1[mapped1.length - 1].endIndex + 1;
+                                                    return type;
+                                                  }
+                                                }
+                                              }
+                                            }
+                                            type.startIndex = startIndex + num;
+                                            content2 = type.content;
+                                            startIndex = type.startIndex + 2;
+                                            c2 = 0;
+                                            let mapped2 = content2.map(() => { ... });
+                                            type.endIndex = mapped2[mapped2.length - 1].endIndex + 2;
+                                            return type;
+                                          });
+                                          type.endIndex = mapped1[mapped1.length - 1].endIndex + 1;
+                                          return type;
+                                        }
+                                      }
+                                    }
+                                  }
+                                  type.startIndex = startIndex + num;
+                                  content2 = type.content;
+                                  startIndex = type.startIndex + 2;
+                                  c2 = 0;
+                                  let mapped2 = content2.map((type) => {
+                                    let num = 0;
+                                    if (0 !== c2) {
+                                      num = content2[tmp - 1].endIndex;
+                                    }
+                                    c2 = c2 + 1;
+                                    type = type.type;
+                                    if ("spoiler" !== type) {
+                                      if ("u" !== type) {
+                                        if ("s" !== type) {
+                                          if ("strong" !== type) {
+                                            if ("em" !== type) {
+                                              if ("customEmoji" !== type) {
+                                                if ("emoji" !== type) {
+                                                  if ("inlineCode" !== type) {
+                                                    if ("text" === type) {
+                                                      type.startIndex = startIndex + num;
+                                                      type.endIndex = type.startIndex + type.content.length;
+                                                      return type;
+                                                    } else {
+                                                      type.startIndex = startIndex + num;
+                                                      let content = type.content;
+                                                      content2 = content;
+                                                      startIndex = type.startIndex;
+                                                      c2 = 0;
+                                                      let mapped = content.map(() => { ... });
+                                                      type.endIndex = mapped[mapped.length - 1].endIndex;
+                                                      return type;
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                            type.startIndex = startIndex + num;
+                                            let content1 = type.content;
+                                            content2 = content1;
+                                            startIndex = type.startIndex + 1;
+                                            c2 = 0;
+                                            let mapped1 = content1.map(() => { ... });
+                                            type.endIndex = mapped1[mapped1.length - 1].endIndex + 1;
+                                            return type;
+                                          }
+                                        }
+                                      }
+                                    }
+                                    type.startIndex = startIndex + num;
+                                    content2 = type.content;
+                                    startIndex = type.startIndex + 2;
+                                    c2 = 0;
+                                    let mapped2 = content2.map(() => { ... });
+                                    type.endIndex = mapped2[mapped2.length - 1].endIndex + 2;
+                                    return type;
+                                  });
+                                  type.endIndex = mapped2[mapped2.length - 1].endIndex + 2;
+                                  return type;
+                                });
+                                type.endIndex = mapped1[mapped1.length - 1].endIndex + 1;
+                                return type;
+                              }
+                            }
+                          }
+                        }
+                        type.startIndex = startIndex + num;
+                        content2 = type.content;
+                        startIndex = type.startIndex + 2;
+                        c2 = 0;
+                        let mapped2 = content2.map((type) => {
+                          let num = 0;
+                          if (0 !== c2) {
+                            num = content2[tmp - 1].endIndex;
+                          }
+                          c2 = c2 + 1;
+                          type = type.type;
+                          if ("spoiler" !== type) {
+                            if ("u" !== type) {
+                              if ("s" !== type) {
+                                if ("strong" !== type) {
+                                  if ("em" !== type) {
+                                    if ("customEmoji" !== type) {
+                                      if ("emoji" !== type) {
+                                        if ("inlineCode" !== type) {
+                                          if ("text" === type) {
+                                            type.startIndex = startIndex + num;
+                                            type.endIndex = type.startIndex + type.content.length;
+                                            return type;
+                                          } else {
+                                            type.startIndex = startIndex + num;
+                                            let content = type.content;
+                                            content2 = content;
+                                            startIndex = type.startIndex;
+                                            c2 = 0;
+                                            let mapped = content.map((type) => {
+                                              let num = 0;
+                                              if (0 !== c2) {
+                                                num = content2[tmp - 1].endIndex;
+                                              }
+                                              c2 = c2 + 1;
+                                              type = type.type;
+                                              if ("spoiler" !== type) {
+                                                if ("u" !== type) {
+                                                  if ("s" !== type) {
+                                                    if ("strong" !== type) {
+                                                      if ("em" !== type) {
+                                                        if ("customEmoji" !== type) {
+                                                          if ("emoji" !== type) {
+                                                            if ("inlineCode" !== type) {
+                                                              if ("text" === type) {
+                                                                type.startIndex = startIndex + num;
+                                                                type.endIndex = type.startIndex + type.content.length;
+                                                                return type;
+                                                              } else {
+                                                                type.startIndex = startIndex + num;
+                                                                let content = type.content;
+                                                                content2 = content;
+                                                                startIndex = type.startIndex;
+                                                                c2 = 0;
+                                                                let mapped = content.map(() => { ... });
+                                                                type.endIndex = mapped[mapped.length - 1].endIndex;
+                                                                return type;
+                                                              }
+                                                            }
+                                                          }
+                                                        }
+                                                      }
+                                                      type.startIndex = startIndex + num;
+                                                      let content1 = type.content;
+                                                      content2 = content1;
+                                                      startIndex = type.startIndex + 1;
+                                                      c2 = 0;
+                                                      let mapped1 = content1.map(() => { ... });
+                                                      type.endIndex = mapped1[mapped1.length - 1].endIndex + 1;
+                                                      return type;
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                              type.startIndex = startIndex + num;
+                                              content2 = type.content;
+                                              startIndex = type.startIndex + 2;
+                                              c2 = 0;
+                                              let mapped2 = content2.map(() => { ... });
+                                              type.endIndex = mapped2[mapped2.length - 1].endIndex + 2;
+                                              return type;
+                                            });
+                                            type.endIndex = mapped[mapped.length - 1].endIndex;
+                                            return type;
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                  type.startIndex = startIndex + num;
+                                  let content1 = type.content;
+                                  content2 = content1;
+                                  startIndex = type.startIndex + 1;
+                                  c2 = 0;
+                                  let mapped1 = content1.map((type) => {
+                                    let num = 0;
+                                    if (0 !== c2) {
+                                      num = content2[tmp - 1].endIndex;
+                                    }
+                                    c2 = c2 + 1;
+                                    type = type.type;
+                                    if ("spoiler" !== type) {
+                                      if ("u" !== type) {
+                                        if ("s" !== type) {
+                                          if ("strong" !== type) {
+                                            if ("em" !== type) {
+                                              if ("customEmoji" !== type) {
+                                                if ("emoji" !== type) {
+                                                  if ("inlineCode" !== type) {
+                                                    if ("text" === type) {
+                                                      type.startIndex = startIndex + num;
+                                                      type.endIndex = type.startIndex + type.content.length;
+                                                      return type;
+                                                    } else {
+                                                      type.startIndex = startIndex + num;
+                                                      let content = type.content;
+                                                      content2 = content;
+                                                      startIndex = type.startIndex;
+                                                      c2 = 0;
+                                                      let mapped = content.map(() => { ... });
+                                                      type.endIndex = mapped[mapped.length - 1].endIndex;
+                                                      return type;
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                            type.startIndex = startIndex + num;
+                                            let content1 = type.content;
+                                            content2 = content1;
+                                            startIndex = type.startIndex + 1;
+                                            c2 = 0;
+                                            let mapped1 = content1.map(() => { ... });
+                                            type.endIndex = mapped1[mapped1.length - 1].endIndex + 1;
+                                            return type;
+                                          }
+                                        }
+                                      }
+                                    }
+                                    type.startIndex = startIndex + num;
+                                    content2 = type.content;
+                                    startIndex = type.startIndex + 2;
+                                    c2 = 0;
+                                    let mapped2 = content2.map(() => { ... });
+                                    type.endIndex = mapped2[mapped2.length - 1].endIndex + 2;
+                                    return type;
+                                  });
+                                  type.endIndex = mapped1[mapped1.length - 1].endIndex + 1;
+                                  return type;
+                                }
+                              }
+                            }
+                          }
+                          type.startIndex = startIndex + num;
+                          content2 = type.content;
+                          startIndex = type.startIndex + 2;
+                          c2 = 0;
+                          let mapped2 = content2.map((type) => {
+                            let num = 0;
+                            if (0 !== c2) {
+                              num = content2[tmp - 1].endIndex;
+                            }
+                            c2 = c2 + 1;
+                            type = type.type;
+                            if ("spoiler" !== type) {
+                              if ("u" !== type) {
+                                if ("s" !== type) {
+                                  if ("strong" !== type) {
+                                    if ("em" !== type) {
+                                      if ("customEmoji" !== type) {
+                                        if ("emoji" !== type) {
+                                          if ("inlineCode" !== type) {
+                                            if ("text" === type) {
+                                              type.startIndex = startIndex + num;
+                                              type.endIndex = type.startIndex + type.content.length;
+                                              return type;
+                                            } else {
+                                              type.startIndex = startIndex + num;
+                                              let content = type.content;
+                                              content2 = content;
+                                              startIndex = type.startIndex;
+                                              c2 = 0;
+                                              let mapped = content.map(() => { ... });
+                                              type.endIndex = mapped[mapped.length - 1].endIndex;
+                                              return type;
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                    type.startIndex = startIndex + num;
+                                    let content1 = type.content;
+                                    content2 = content1;
+                                    startIndex = type.startIndex + 1;
+                                    c2 = 0;
+                                    let mapped1 = content1.map(() => { ... });
+                                    type.endIndex = mapped1[mapped1.length - 1].endIndex + 1;
+                                    return type;
+                                  }
+                                }
+                              }
+                            }
+                            type.startIndex = startIndex + num;
+                            content2 = type.content;
+                            startIndex = type.startIndex + 2;
+                            c2 = 0;
+                            let mapped2 = content2.map(() => { ... });
+                            type.endIndex = mapped2[mapped2.length - 1].endIndex + 2;
+                            return type;
+                          });
+                          type.endIndex = mapped2[mapped2.length - 1].endIndex + 2;
+                          return type;
+                        });
+                        type.endIndex = mapped2[mapped2.length - 1].endIndex + 2;
+                        return type;
+                      });
+                      type.endIndex = mapped[mapped.length - 1].endIndex;
                       return type;
                     }
                   }
                 }
               }
             }
-            type.startIndex = _defineProperties + num;
-            const arr2 = outer1_14(type.content, type.startIndex + 1);
-            type.endIndex = arr2[arr2.length - 1].endIndex + 1;
+            type.startIndex = startIndex + num;
+            let content1 = type.content;
+            content2 = content1;
+            startIndex = type.startIndex + 1;
+            c2 = 0;
+            let mapped1 = content1.map((type) => {
+              let num = 0;
+              if (0 !== c2) {
+                num = content2[tmp - 1].endIndex;
+              }
+              c2 = c2 + 1;
+              type = type.type;
+              if ("spoiler" !== type) {
+                if ("u" !== type) {
+                  if ("s" !== type) {
+                    if ("strong" !== type) {
+                      if ("em" !== type) {
+                        if ("customEmoji" !== type) {
+                          if ("emoji" !== type) {
+                            if ("inlineCode" !== type) {
+                              if ("text" === type) {
+                                type.startIndex = startIndex + num;
+                                type.endIndex = type.startIndex + type.content.length;
+                                return type;
+                              } else {
+                                type.startIndex = startIndex + num;
+                                let content = type.content;
+                                content2 = content;
+                                startIndex = type.startIndex;
+                                c2 = 0;
+                                let mapped = content.map((type) => {
+                                  let num = 0;
+                                  if (0 !== c2) {
+                                    num = content2[tmp - 1].endIndex;
+                                  }
+                                  c2 = c2 + 1;
+                                  type = type.type;
+                                  if ("spoiler" !== type) {
+                                    if ("u" !== type) {
+                                      if ("s" !== type) {
+                                        if ("strong" !== type) {
+                                          if ("em" !== type) {
+                                            if ("customEmoji" !== type) {
+                                              if ("emoji" !== type) {
+                                                if ("inlineCode" !== type) {
+                                                  if ("text" === type) {
+                                                    type.startIndex = startIndex + num;
+                                                    type.endIndex = type.startIndex + type.content.length;
+                                                    return type;
+                                                  } else {
+                                                    type.startIndex = startIndex + num;
+                                                    let content = type.content;
+                                                    content2 = content;
+                                                    startIndex = type.startIndex;
+                                                    c2 = 0;
+                                                    let mapped = content.map((type) => {
+                                                      let num = 0;
+                                                      if (0 !== c2) {
+                                                        num = content2[tmp - 1].endIndex;
+                                                      }
+                                                      c2 = c2 + 1;
+                                                      type = type.type;
+                                                      if ("spoiler" !== type) {
+                                                        if ("u" !== type) {
+                                                          if ("s" !== type) {
+                                                            if ("strong" !== type) {
+                                                              if ("em" !== type) {
+                                                                if ("customEmoji" !== type) {
+                                                                  if ("emoji" !== type) {
+                                                                    if ("inlineCode" !== type) {
+                                                                      if ("text" === type) {
+                                                                        type.startIndex = startIndex + num;
+                                                                        type.endIndex = type.startIndex + type.content.length;
+                                                                        return type;
+                                                                      } else {
+                                                                        type.startIndex = startIndex + num;
+                                                                        let content = type.content;
+                                                                        content2 = content;
+                                                                        startIndex = type.startIndex;
+                                                                        c2 = 0;
+                                                                        let mapped = content.map(() => { ... });
+                                                                        type.endIndex = mapped[mapped.length - 1].endIndex;
+                                                                        return type;
+                                                                      }
+                                                                    }
+                                                                  }
+                                                                }
+                                                              }
+                                                              type.startIndex = startIndex + num;
+                                                              let content1 = type.content;
+                                                              content2 = content1;
+                                                              startIndex = type.startIndex + 1;
+                                                              c2 = 0;
+                                                              let mapped1 = content1.map(() => { ... });
+                                                              type.endIndex = mapped1[mapped1.length - 1].endIndex + 1;
+                                                              return type;
+                                                            }
+                                                          }
+                                                        }
+                                                      }
+                                                      type.startIndex = startIndex + num;
+                                                      content2 = type.content;
+                                                      startIndex = type.startIndex + 2;
+                                                      c2 = 0;
+                                                      let mapped2 = content2.map(() => { ... });
+                                                      type.endIndex = mapped2[mapped2.length - 1].endIndex + 2;
+                                                      return type;
+                                                    });
+                                                    type.endIndex = mapped[mapped.length - 1].endIndex;
+                                                    return type;
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                          type.startIndex = startIndex + num;
+                                          let content1 = type.content;
+                                          content2 = content1;
+                                          startIndex = type.startIndex + 1;
+                                          c2 = 0;
+                                          let mapped1 = content1.map((type) => {
+                                            let num = 0;
+                                            if (0 !== c2) {
+                                              num = content2[tmp - 1].endIndex;
+                                            }
+                                            c2 = c2 + 1;
+                                            type = type.type;
+                                            if ("spoiler" !== type) {
+                                              if ("u" !== type) {
+                                                if ("s" !== type) {
+                                                  if ("strong" !== type) {
+                                                    if ("em" !== type) {
+                                                      if ("customEmoji" !== type) {
+                                                        if ("emoji" !== type) {
+                                                          if ("inlineCode" !== type) {
+                                                            if ("text" === type) {
+                                                              type.startIndex = startIndex + num;
+                                                              type.endIndex = type.startIndex + type.content.length;
+                                                              return type;
+                                                            } else {
+                                                              type.startIndex = startIndex + num;
+                                                              let content = type.content;
+                                                              content2 = content;
+                                                              startIndex = type.startIndex;
+                                                              c2 = 0;
+                                                              let mapped = content.map(() => { ... });
+                                                              type.endIndex = mapped[mapped.length - 1].endIndex;
+                                                              return type;
+                                                            }
+                                                          }
+                                                        }
+                                                      }
+                                                    }
+                                                    type.startIndex = startIndex + num;
+                                                    let content1 = type.content;
+                                                    content2 = content1;
+                                                    startIndex = type.startIndex + 1;
+                                                    c2 = 0;
+                                                    let mapped1 = content1.map(() => { ... });
+                                                    type.endIndex = mapped1[mapped1.length - 1].endIndex + 1;
+                                                    return type;
+                                                  }
+                                                }
+                                              }
+                                            }
+                                            type.startIndex = startIndex + num;
+                                            content2 = type.content;
+                                            startIndex = type.startIndex + 2;
+                                            c2 = 0;
+                                            let mapped2 = content2.map(() => { ... });
+                                            type.endIndex = mapped2[mapped2.length - 1].endIndex + 2;
+                                            return type;
+                                          });
+                                          type.endIndex = mapped1[mapped1.length - 1].endIndex + 1;
+                                          return type;
+                                        }
+                                      }
+                                    }
+                                  }
+                                  type.startIndex = startIndex + num;
+                                  content2 = type.content;
+                                  startIndex = type.startIndex + 2;
+                                  c2 = 0;
+                                  let mapped2 = content2.map((type) => {
+                                    let num = 0;
+                                    if (0 !== c2) {
+                                      num = content2[tmp - 1].endIndex;
+                                    }
+                                    c2 = c2 + 1;
+                                    type = type.type;
+                                    if ("spoiler" !== type) {
+                                      if ("u" !== type) {
+                                        if ("s" !== type) {
+                                          if ("strong" !== type) {
+                                            if ("em" !== type) {
+                                              if ("customEmoji" !== type) {
+                                                if ("emoji" !== type) {
+                                                  if ("inlineCode" !== type) {
+                                                    if ("text" === type) {
+                                                      type.startIndex = startIndex + num;
+                                                      type.endIndex = type.startIndex + type.content.length;
+                                                      return type;
+                                                    } else {
+                                                      type.startIndex = startIndex + num;
+                                                      let content = type.content;
+                                                      content2 = content;
+                                                      startIndex = type.startIndex;
+                                                      c2 = 0;
+                                                      let mapped = content.map(() => { ... });
+                                                      type.endIndex = mapped[mapped.length - 1].endIndex;
+                                                      return type;
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                            type.startIndex = startIndex + num;
+                                            let content1 = type.content;
+                                            content2 = content1;
+                                            startIndex = type.startIndex + 1;
+                                            c2 = 0;
+                                            let mapped1 = content1.map(() => { ... });
+                                            type.endIndex = mapped1[mapped1.length - 1].endIndex + 1;
+                                            return type;
+                                          }
+                                        }
+                                      }
+                                    }
+                                    type.startIndex = startIndex + num;
+                                    content2 = type.content;
+                                    startIndex = type.startIndex + 2;
+                                    c2 = 0;
+                                    let mapped2 = content2.map(() => { ... });
+                                    type.endIndex = mapped2[mapped2.length - 1].endIndex + 2;
+                                    return type;
+                                  });
+                                  type.endIndex = mapped2[mapped2.length - 1].endIndex + 2;
+                                  return type;
+                                });
+                                type.endIndex = mapped[mapped.length - 1].endIndex;
+                                return type;
+                              }
+                            }
+                          }
+                        }
+                      }
+                      type.startIndex = startIndex + num;
+                      let content1 = type.content;
+                      content2 = content1;
+                      startIndex = type.startIndex + 1;
+                      c2 = 0;
+                      let mapped1 = content1.map((type) => {
+                        let num = 0;
+                        if (0 !== c2) {
+                          num = content2[tmp - 1].endIndex;
+                        }
+                        c2 = c2 + 1;
+                        type = type.type;
+                        if ("spoiler" !== type) {
+                          if ("u" !== type) {
+                            if ("s" !== type) {
+                              if ("strong" !== type) {
+                                if ("em" !== type) {
+                                  if ("customEmoji" !== type) {
+                                    if ("emoji" !== type) {
+                                      if ("inlineCode" !== type) {
+                                        if ("text" === type) {
+                                          type.startIndex = startIndex + num;
+                                          type.endIndex = type.startIndex + type.content.length;
+                                          return type;
+                                        } else {
+                                          type.startIndex = startIndex + num;
+                                          let content = type.content;
+                                          content2 = content;
+                                          startIndex = type.startIndex;
+                                          c2 = 0;
+                                          let mapped = content.map((type) => {
+                                            let num = 0;
+                                            if (0 !== c2) {
+                                              num = content2[tmp - 1].endIndex;
+                                            }
+                                            c2 = c2 + 1;
+                                            type = type.type;
+                                            if ("spoiler" !== type) {
+                                              if ("u" !== type) {
+                                                if ("s" !== type) {
+                                                  if ("strong" !== type) {
+                                                    if ("em" !== type) {
+                                                      if ("customEmoji" !== type) {
+                                                        if ("emoji" !== type) {
+                                                          if ("inlineCode" !== type) {
+                                                            if ("text" === type) {
+                                                              type.startIndex = startIndex + num;
+                                                              type.endIndex = type.startIndex + type.content.length;
+                                                              return type;
+                                                            } else {
+                                                              type.startIndex = startIndex + num;
+                                                              let content = type.content;
+                                                              content2 = content;
+                                                              startIndex = type.startIndex;
+                                                              c2 = 0;
+                                                              let mapped = content.map(() => { ... });
+                                                              type.endIndex = mapped[mapped.length - 1].endIndex;
+                                                              return type;
+                                                            }
+                                                          }
+                                                        }
+                                                      }
+                                                    }
+                                                    type.startIndex = startIndex + num;
+                                                    let content1 = type.content;
+                                                    content2 = content1;
+                                                    startIndex = type.startIndex + 1;
+                                                    c2 = 0;
+                                                    let mapped1 = content1.map(() => { ... });
+                                                    type.endIndex = mapped1[mapped1.length - 1].endIndex + 1;
+                                                    return type;
+                                                  }
+                                                }
+                                              }
+                                            }
+                                            type.startIndex = startIndex + num;
+                                            content2 = type.content;
+                                            startIndex = type.startIndex + 2;
+                                            c2 = 0;
+                                            let mapped2 = content2.map(() => { ... });
+                                            type.endIndex = mapped2[mapped2.length - 1].endIndex + 2;
+                                            return type;
+                                          });
+                                          type.endIndex = mapped[mapped.length - 1].endIndex;
+                                          return type;
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                                type.startIndex = startIndex + num;
+                                let content1 = type.content;
+                                content2 = content1;
+                                startIndex = type.startIndex + 1;
+                                c2 = 0;
+                                let mapped1 = content1.map((type) => {
+                                  let num = 0;
+                                  if (0 !== c2) {
+                                    num = content2[tmp - 1].endIndex;
+                                  }
+                                  c2 = c2 + 1;
+                                  type = type.type;
+                                  if ("spoiler" !== type) {
+                                    if ("u" !== type) {
+                                      if ("s" !== type) {
+                                        if ("strong" !== type) {
+                                          if ("em" !== type) {
+                                            if ("customEmoji" !== type) {
+                                              if ("emoji" !== type) {
+                                                if ("inlineCode" !== type) {
+                                                  if ("text" === type) {
+                                                    type.startIndex = startIndex + num;
+                                                    type.endIndex = type.startIndex + type.content.length;
+                                                    return type;
+                                                  } else {
+                                                    type.startIndex = startIndex + num;
+                                                    let content = type.content;
+                                                    content2 = content;
+                                                    startIndex = type.startIndex;
+                                                    c2 = 0;
+                                                    let mapped = content.map(() => { ... });
+                                                    type.endIndex = mapped[mapped.length - 1].endIndex;
+                                                    return type;
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                          type.startIndex = startIndex + num;
+                                          let content1 = type.content;
+                                          content2 = content1;
+                                          startIndex = type.startIndex + 1;
+                                          c2 = 0;
+                                          let mapped1 = content1.map(() => { ... });
+                                          type.endIndex = mapped1[mapped1.length - 1].endIndex + 1;
+                                          return type;
+                                        }
+                                      }
+                                    }
+                                  }
+                                  type.startIndex = startIndex + num;
+                                  content2 = type.content;
+                                  startIndex = type.startIndex + 2;
+                                  c2 = 0;
+                                  let mapped2 = content2.map(() => { ... });
+                                  type.endIndex = mapped2[mapped2.length - 1].endIndex + 2;
+                                  return type;
+                                });
+                                type.endIndex = mapped1[mapped1.length - 1].endIndex + 1;
+                                return type;
+                              }
+                            }
+                          }
+                        }
+                        type.startIndex = startIndex + num;
+                        content2 = type.content;
+                        startIndex = type.startIndex + 2;
+                        c2 = 0;
+                        let mapped2 = content2.map((type) => {
+                          let num = 0;
+                          if (0 !== c2) {
+                            num = content2[tmp - 1].endIndex;
+                          }
+                          c2 = c2 + 1;
+                          type = type.type;
+                          if ("spoiler" !== type) {
+                            if ("u" !== type) {
+                              if ("s" !== type) {
+                                if ("strong" !== type) {
+                                  if ("em" !== type) {
+                                    if ("customEmoji" !== type) {
+                                      if ("emoji" !== type) {
+                                        if ("inlineCode" !== type) {
+                                          if ("text" === type) {
+                                            type.startIndex = startIndex + num;
+                                            type.endIndex = type.startIndex + type.content.length;
+                                            return type;
+                                          } else {
+                                            type.startIndex = startIndex + num;
+                                            let content = type.content;
+                                            content2 = content;
+                                            startIndex = type.startIndex;
+                                            c2 = 0;
+                                            let mapped = content.map(() => { ... });
+                                            type.endIndex = mapped[mapped.length - 1].endIndex;
+                                            return type;
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                  type.startIndex = startIndex + num;
+                                  let content1 = type.content;
+                                  content2 = content1;
+                                  startIndex = type.startIndex + 1;
+                                  c2 = 0;
+                                  let mapped1 = content1.map(() => { ... });
+                                  type.endIndex = mapped1[mapped1.length - 1].endIndex + 1;
+                                  return type;
+                                }
+                              }
+                            }
+                          }
+                          type.startIndex = startIndex + num;
+                          content2 = type.content;
+                          startIndex = type.startIndex + 2;
+                          c2 = 0;
+                          let mapped2 = content2.map(() => { ... });
+                          type.endIndex = mapped2[mapped2.length - 1].endIndex + 2;
+                          return type;
+                        });
+                        type.endIndex = mapped2[mapped2.length - 1].endIndex + 2;
+                        return type;
+                      });
+                      type.endIndex = mapped1[mapped1.length - 1].endIndex + 1;
+                      return type;
+                    }
+                  }
+                }
+              }
+              type.startIndex = startIndex + num;
+              content2 = type.content;
+              startIndex = type.startIndex + 2;
+              c2 = 0;
+              let mapped2 = content2.map((type) => {
+                let num = 0;
+                if (0 !== c2) {
+                  num = content2[tmp - 1].endIndex;
+                }
+                c2 = c2 + 1;
+                type = type.type;
+                if ("spoiler" !== type) {
+                  if ("u" !== type) {
+                    if ("s" !== type) {
+                      if ("strong" !== type) {
+                        if ("em" !== type) {
+                          if ("customEmoji" !== type) {
+                            if ("emoji" !== type) {
+                              if ("inlineCode" !== type) {
+                                if ("text" === type) {
+                                  type.startIndex = startIndex + num;
+                                  type.endIndex = type.startIndex + type.content.length;
+                                  return type;
+                                } else {
+                                  type.startIndex = startIndex + num;
+                                  let content = type.content;
+                                  content2 = content;
+                                  startIndex = type.startIndex;
+                                  c2 = 0;
+                                  let mapped = content.map((type) => {
+                                    let num = 0;
+                                    if (0 !== c2) {
+                                      num = content2[tmp - 1].endIndex;
+                                    }
+                                    c2 = c2 + 1;
+                                    type = type.type;
+                                    if ("spoiler" !== type) {
+                                      if ("u" !== type) {
+                                        if ("s" !== type) {
+                                          if ("strong" !== type) {
+                                            if ("em" !== type) {
+                                              if ("customEmoji" !== type) {
+                                                if ("emoji" !== type) {
+                                                  if ("inlineCode" !== type) {
+                                                    if ("text" === type) {
+                                                      type.startIndex = startIndex + num;
+                                                      type.endIndex = type.startIndex + type.content.length;
+                                                      return type;
+                                                    } else {
+                                                      type.startIndex = startIndex + num;
+                                                      let content = type.content;
+                                                      content2 = content;
+                                                      startIndex = type.startIndex;
+                                                      c2 = 0;
+                                                      let mapped = content.map(() => { ... });
+                                                      type.endIndex = mapped[mapped.length - 1].endIndex;
+                                                      return type;
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                            type.startIndex = startIndex + num;
+                                            let content1 = type.content;
+                                            content2 = content1;
+                                            startIndex = type.startIndex + 1;
+                                            c2 = 0;
+                                            let mapped1 = content1.map(() => { ... });
+                                            type.endIndex = mapped1[mapped1.length - 1].endIndex + 1;
+                                            return type;
+                                          }
+                                        }
+                                      }
+                                    }
+                                    type.startIndex = startIndex + num;
+                                    content2 = type.content;
+                                    startIndex = type.startIndex + 2;
+                                    c2 = 0;
+                                    let mapped2 = content2.map(() => { ... });
+                                    type.endIndex = mapped2[mapped2.length - 1].endIndex + 2;
+                                    return type;
+                                  });
+                                  type.endIndex = mapped[mapped.length - 1].endIndex;
+                                  return type;
+                                }
+                              }
+                            }
+                          }
+                        }
+                        type.startIndex = startIndex + num;
+                        let content1 = type.content;
+                        content2 = content1;
+                        startIndex = type.startIndex + 1;
+                        c2 = 0;
+                        let mapped1 = content1.map((type) => {
+                          let num = 0;
+                          if (0 !== c2) {
+                            num = content2[tmp - 1].endIndex;
+                          }
+                          c2 = c2 + 1;
+                          type = type.type;
+                          if ("spoiler" !== type) {
+                            if ("u" !== type) {
+                              if ("s" !== type) {
+                                if ("strong" !== type) {
+                                  if ("em" !== type) {
+                                    if ("customEmoji" !== type) {
+                                      if ("emoji" !== type) {
+                                        if ("inlineCode" !== type) {
+                                          if ("text" === type) {
+                                            type.startIndex = startIndex + num;
+                                            type.endIndex = type.startIndex + type.content.length;
+                                            return type;
+                                          } else {
+                                            type.startIndex = startIndex + num;
+                                            let content = type.content;
+                                            content2 = content;
+                                            startIndex = type.startIndex;
+                                            c2 = 0;
+                                            let mapped = content.map(() => { ... });
+                                            type.endIndex = mapped[mapped.length - 1].endIndex;
+                                            return type;
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                  type.startIndex = startIndex + num;
+                                  let content1 = type.content;
+                                  content2 = content1;
+                                  startIndex = type.startIndex + 1;
+                                  c2 = 0;
+                                  let mapped1 = content1.map(() => { ... });
+                                  type.endIndex = mapped1[mapped1.length - 1].endIndex + 1;
+                                  return type;
+                                }
+                              }
+                            }
+                          }
+                          type.startIndex = startIndex + num;
+                          content2 = type.content;
+                          startIndex = type.startIndex + 2;
+                          c2 = 0;
+                          let mapped2 = content2.map(() => { ... });
+                          type.endIndex = mapped2[mapped2.length - 1].endIndex + 2;
+                          return type;
+                        });
+                        type.endIndex = mapped1[mapped1.length - 1].endIndex + 1;
+                        return type;
+                      }
+                    }
+                  }
+                }
+                type.startIndex = startIndex + num;
+                content2 = type.content;
+                startIndex = type.startIndex + 2;
+                c2 = 0;
+                let mapped2 = content2.map((type) => {
+                  let num = 0;
+                  if (0 !== c2) {
+                    num = content2[tmp - 1].endIndex;
+                  }
+                  c2 = c2 + 1;
+                  type = type.type;
+                  if ("spoiler" !== type) {
+                    if ("u" !== type) {
+                      if ("s" !== type) {
+                        if ("strong" !== type) {
+                          if ("em" !== type) {
+                            if ("customEmoji" !== type) {
+                              if ("emoji" !== type) {
+                                if ("inlineCode" !== type) {
+                                  if ("text" === type) {
+                                    type.startIndex = startIndex + num;
+                                    type.endIndex = type.startIndex + type.content.length;
+                                    return type;
+                                  } else {
+                                    type.startIndex = startIndex + num;
+                                    let content = type.content;
+                                    content2 = content;
+                                    startIndex = type.startIndex;
+                                    c2 = 0;
+                                    let mapped = content.map(() => { ... });
+                                    type.endIndex = mapped[mapped.length - 1].endIndex;
+                                    return type;
+                                  }
+                                }
+                              }
+                            }
+                          }
+                          type.startIndex = startIndex + num;
+                          let content1 = type.content;
+                          content2 = content1;
+                          startIndex = type.startIndex + 1;
+                          c2 = 0;
+                          let mapped1 = content1.map(() => { ... });
+                          type.endIndex = mapped1[mapped1.length - 1].endIndex + 1;
+                          return type;
+                        }
+                      }
+                    }
+                  }
+                  type.startIndex = startIndex + num;
+                  content2 = type.content;
+                  startIndex = type.startIndex + 2;
+                  c2 = 0;
+                  let mapped2 = content2.map(() => { ... });
+                  type.endIndex = mapped2[mapped2.length - 1].endIndex + 2;
+                  return type;
+                });
+                type.endIndex = mapped2[mapped2.length - 1].endIndex + 2;
+                return type;
+              });
+              type.endIndex = mapped2[mapped2.length - 1].endIndex + 2;
+              return type;
+            });
+            type.endIndex = mapped1[mapped1.length - 1].endIndex + 1;
             return type;
           }
         }
       }
     }
-    type.startIndex = _defineProperties + num;
-    const arr3 = outer1_14(type.content, type.startIndex + 2);
-    type.endIndex = arr3[arr3.length - 1].endIndex + 2;
+    type.startIndex = startIndex + num;
+    content2 = type.content;
+    startIndex = type.startIndex + 2;
+    c2 = 0;
+    let mapped2 = content2.map((type) => {
+      let num = 0;
+      if (0 !== c2) {
+        num = content2[tmp - 1].endIndex;
+      }
+      c2 = c2 + 1;
+      type = type.type;
+      if ("spoiler" !== type) {
+        if ("u" !== type) {
+          if ("s" !== type) {
+            if ("strong" !== type) {
+              if ("em" !== type) {
+                if ("customEmoji" !== type) {
+                  if ("emoji" !== type) {
+                    if ("inlineCode" !== type) {
+                      if ("text" === type) {
+                        type.startIndex = startIndex + num;
+                        type.endIndex = type.startIndex + type.content.length;
+                        return type;
+                      } else {
+                        type.startIndex = startIndex + num;
+                        let content = type.content;
+                        content2 = content;
+                        startIndex = type.startIndex;
+                        c2 = 0;
+                        let mapped = content.map((type) => {
+                          let num = 0;
+                          if (0 !== c2) {
+                            num = content2[tmp - 1].endIndex;
+                          }
+                          c2 = c2 + 1;
+                          type = type.type;
+                          if ("spoiler" !== type) {
+                            if ("u" !== type) {
+                              if ("s" !== type) {
+                                if ("strong" !== type) {
+                                  if ("em" !== type) {
+                                    if ("customEmoji" !== type) {
+                                      if ("emoji" !== type) {
+                                        if ("inlineCode" !== type) {
+                                          if ("text" === type) {
+                                            type.startIndex = startIndex + num;
+                                            type.endIndex = type.startIndex + type.content.length;
+                                            return type;
+                                          } else {
+                                            type.startIndex = startIndex + num;
+                                            let content = type.content;
+                                            content2 = content;
+                                            startIndex = type.startIndex;
+                                            c2 = 0;
+                                            let mapped = content.map((type) => {
+                                              let num = 0;
+                                              if (0 !== c2) {
+                                                num = content2[tmp - 1].endIndex;
+                                              }
+                                              c2 = c2 + 1;
+                                              type = type.type;
+                                              if ("spoiler" !== type) {
+                                                if ("u" !== type) {
+                                                  if ("s" !== type) {
+                                                    if ("strong" !== type) {
+                                                      if ("em" !== type) {
+                                                        if ("customEmoji" !== type) {
+                                                          if ("emoji" !== type) {
+                                                            if ("inlineCode" !== type) {
+                                                              if ("text" === type) {
+                                                                type.startIndex = startIndex + num;
+                                                                type.endIndex = type.startIndex + type.content.length;
+                                                                return type;
+                                                              } else {
+                                                                type.startIndex = startIndex + num;
+                                                                let content = type.content;
+                                                                content2 = content;
+                                                                startIndex = type.startIndex;
+                                                                c2 = 0;
+                                                                let mapped = content.map(() => { ... });
+                                                                type.endIndex = mapped[mapped.length - 1].endIndex;
+                                                                return type;
+                                                              }
+                                                            }
+                                                          }
+                                                        }
+                                                      }
+                                                      type.startIndex = startIndex + num;
+                                                      let content1 = type.content;
+                                                      content2 = content1;
+                                                      startIndex = type.startIndex + 1;
+                                                      c2 = 0;
+                                                      let mapped1 = content1.map(() => { ... });
+                                                      type.endIndex = mapped1[mapped1.length - 1].endIndex + 1;
+                                                      return type;
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                              type.startIndex = startIndex + num;
+                                              content2 = type.content;
+                                              startIndex = type.startIndex + 2;
+                                              c2 = 0;
+                                              let mapped2 = content2.map(() => { ... });
+                                              type.endIndex = mapped2[mapped2.length - 1].endIndex + 2;
+                                              return type;
+                                            });
+                                            type.endIndex = mapped[mapped.length - 1].endIndex;
+                                            return type;
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                  type.startIndex = startIndex + num;
+                                  let content1 = type.content;
+                                  content2 = content1;
+                                  startIndex = type.startIndex + 1;
+                                  c2 = 0;
+                                  let mapped1 = content1.map((type) => {
+                                    let num = 0;
+                                    if (0 !== c2) {
+                                      num = content2[tmp - 1].endIndex;
+                                    }
+                                    c2 = c2 + 1;
+                                    type = type.type;
+                                    if ("spoiler" !== type) {
+                                      if ("u" !== type) {
+                                        if ("s" !== type) {
+                                          if ("strong" !== type) {
+                                            if ("em" !== type) {
+                                              if ("customEmoji" !== type) {
+                                                if ("emoji" !== type) {
+                                                  if ("inlineCode" !== type) {
+                                                    if ("text" === type) {
+                                                      type.startIndex = startIndex + num;
+                                                      type.endIndex = type.startIndex + type.content.length;
+                                                      return type;
+                                                    } else {
+                                                      type.startIndex = startIndex + num;
+                                                      let content = type.content;
+                                                      content2 = content;
+                                                      startIndex = type.startIndex;
+                                                      c2 = 0;
+                                                      let mapped = content.map(() => { ... });
+                                                      type.endIndex = mapped[mapped.length - 1].endIndex;
+                                                      return type;
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                            type.startIndex = startIndex + num;
+                                            let content1 = type.content;
+                                            content2 = content1;
+                                            startIndex = type.startIndex + 1;
+                                            c2 = 0;
+                                            let mapped1 = content1.map(() => { ... });
+                                            type.endIndex = mapped1[mapped1.length - 1].endIndex + 1;
+                                            return type;
+                                          }
+                                        }
+                                      }
+                                    }
+                                    type.startIndex = startIndex + num;
+                                    content2 = type.content;
+                                    startIndex = type.startIndex + 2;
+                                    c2 = 0;
+                                    let mapped2 = content2.map(() => { ... });
+                                    type.endIndex = mapped2[mapped2.length - 1].endIndex + 2;
+                                    return type;
+                                  });
+                                  type.endIndex = mapped1[mapped1.length - 1].endIndex + 1;
+                                  return type;
+                                }
+                              }
+                            }
+                          }
+                          type.startIndex = startIndex + num;
+                          content2 = type.content;
+                          startIndex = type.startIndex + 2;
+                          c2 = 0;
+                          let mapped2 = content2.map((type) => {
+                            let num = 0;
+                            if (0 !== c2) {
+                              num = content2[tmp - 1].endIndex;
+                            }
+                            c2 = c2 + 1;
+                            type = type.type;
+                            if ("spoiler" !== type) {
+                              if ("u" !== type) {
+                                if ("s" !== type) {
+                                  if ("strong" !== type) {
+                                    if ("em" !== type) {
+                                      if ("customEmoji" !== type) {
+                                        if ("emoji" !== type) {
+                                          if ("inlineCode" !== type) {
+                                            if ("text" === type) {
+                                              type.startIndex = startIndex + num;
+                                              type.endIndex = type.startIndex + type.content.length;
+                                              return type;
+                                            } else {
+                                              type.startIndex = startIndex + num;
+                                              let content = type.content;
+                                              content2 = content;
+                                              startIndex = type.startIndex;
+                                              c2 = 0;
+                                              let mapped = content.map(() => { ... });
+                                              type.endIndex = mapped[mapped.length - 1].endIndex;
+                                              return type;
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                    type.startIndex = startIndex + num;
+                                    let content1 = type.content;
+                                    content2 = content1;
+                                    startIndex = type.startIndex + 1;
+                                    c2 = 0;
+                                    let mapped1 = content1.map(() => { ... });
+                                    type.endIndex = mapped1[mapped1.length - 1].endIndex + 1;
+                                    return type;
+                                  }
+                                }
+                              }
+                            }
+                            type.startIndex = startIndex + num;
+                            content2 = type.content;
+                            startIndex = type.startIndex + 2;
+                            c2 = 0;
+                            let mapped2 = content2.map(() => { ... });
+                            type.endIndex = mapped2[mapped2.length - 1].endIndex + 2;
+                            return type;
+                          });
+                          type.endIndex = mapped2[mapped2.length - 1].endIndex + 2;
+                          return type;
+                        });
+                        type.endIndex = mapped[mapped.length - 1].endIndex;
+                        return type;
+                      }
+                    }
+                  }
+                }
+              }
+              type.startIndex = startIndex + num;
+              let content1 = type.content;
+              content2 = content1;
+              startIndex = type.startIndex + 1;
+              c2 = 0;
+              let mapped1 = content1.map((type) => {
+                let num = 0;
+                if (0 !== c2) {
+                  num = content2[tmp - 1].endIndex;
+                }
+                c2 = c2 + 1;
+                type = type.type;
+                if ("spoiler" !== type) {
+                  if ("u" !== type) {
+                    if ("s" !== type) {
+                      if ("strong" !== type) {
+                        if ("em" !== type) {
+                          if ("customEmoji" !== type) {
+                            if ("emoji" !== type) {
+                              if ("inlineCode" !== type) {
+                                if ("text" === type) {
+                                  type.startIndex = startIndex + num;
+                                  type.endIndex = type.startIndex + type.content.length;
+                                  return type;
+                                } else {
+                                  type.startIndex = startIndex + num;
+                                  let content = type.content;
+                                  content2 = content;
+                                  startIndex = type.startIndex;
+                                  c2 = 0;
+                                  let mapped = content.map((type) => {
+                                    let num = 0;
+                                    if (0 !== c2) {
+                                      num = content2[tmp - 1].endIndex;
+                                    }
+                                    c2 = c2 + 1;
+                                    type = type.type;
+                                    if ("spoiler" !== type) {
+                                      if ("u" !== type) {
+                                        if ("s" !== type) {
+                                          if ("strong" !== type) {
+                                            if ("em" !== type) {
+                                              if ("customEmoji" !== type) {
+                                                if ("emoji" !== type) {
+                                                  if ("inlineCode" !== type) {
+                                                    if ("text" === type) {
+                                                      type.startIndex = startIndex + num;
+                                                      type.endIndex = type.startIndex + type.content.length;
+                                                      return type;
+                                                    } else {
+                                                      type.startIndex = startIndex + num;
+                                                      let content = type.content;
+                                                      content2 = content;
+                                                      startIndex = type.startIndex;
+                                                      c2 = 0;
+                                                      let mapped = content.map(() => { ... });
+                                                      type.endIndex = mapped[mapped.length - 1].endIndex;
+                                                      return type;
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                            type.startIndex = startIndex + num;
+                                            let content1 = type.content;
+                                            content2 = content1;
+                                            startIndex = type.startIndex + 1;
+                                            c2 = 0;
+                                            let mapped1 = content1.map(() => { ... });
+                                            type.endIndex = mapped1[mapped1.length - 1].endIndex + 1;
+                                            return type;
+                                          }
+                                        }
+                                      }
+                                    }
+                                    type.startIndex = startIndex + num;
+                                    content2 = type.content;
+                                    startIndex = type.startIndex + 2;
+                                    c2 = 0;
+                                    let mapped2 = content2.map(() => { ... });
+                                    type.endIndex = mapped2[mapped2.length - 1].endIndex + 2;
+                                    return type;
+                                  });
+                                  type.endIndex = mapped[mapped.length - 1].endIndex;
+                                  return type;
+                                }
+                              }
+                            }
+                          }
+                        }
+                        type.startIndex = startIndex + num;
+                        let content1 = type.content;
+                        content2 = content1;
+                        startIndex = type.startIndex + 1;
+                        c2 = 0;
+                        let mapped1 = content1.map((type) => {
+                          let num = 0;
+                          if (0 !== c2) {
+                            num = content2[tmp - 1].endIndex;
+                          }
+                          c2 = c2 + 1;
+                          type = type.type;
+                          if ("spoiler" !== type) {
+                            if ("u" !== type) {
+                              if ("s" !== type) {
+                                if ("strong" !== type) {
+                                  if ("em" !== type) {
+                                    if ("customEmoji" !== type) {
+                                      if ("emoji" !== type) {
+                                        if ("inlineCode" !== type) {
+                                          if ("text" === type) {
+                                            type.startIndex = startIndex + num;
+                                            type.endIndex = type.startIndex + type.content.length;
+                                            return type;
+                                          } else {
+                                            type.startIndex = startIndex + num;
+                                            let content = type.content;
+                                            content2 = content;
+                                            startIndex = type.startIndex;
+                                            c2 = 0;
+                                            let mapped = content.map(() => { ... });
+                                            type.endIndex = mapped[mapped.length - 1].endIndex;
+                                            return type;
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                  type.startIndex = startIndex + num;
+                                  let content1 = type.content;
+                                  content2 = content1;
+                                  startIndex = type.startIndex + 1;
+                                  c2 = 0;
+                                  let mapped1 = content1.map(() => { ... });
+                                  type.endIndex = mapped1[mapped1.length - 1].endIndex + 1;
+                                  return type;
+                                }
+                              }
+                            }
+                          }
+                          type.startIndex = startIndex + num;
+                          content2 = type.content;
+                          startIndex = type.startIndex + 2;
+                          c2 = 0;
+                          let mapped2 = content2.map(() => { ... });
+                          type.endIndex = mapped2[mapped2.length - 1].endIndex + 2;
+                          return type;
+                        });
+                        type.endIndex = mapped1[mapped1.length - 1].endIndex + 1;
+                        return type;
+                      }
+                    }
+                  }
+                }
+                type.startIndex = startIndex + num;
+                content2 = type.content;
+                startIndex = type.startIndex + 2;
+                c2 = 0;
+                let mapped2 = content2.map((type) => {
+                  let num = 0;
+                  if (0 !== c2) {
+                    num = content2[tmp - 1].endIndex;
+                  }
+                  c2 = c2 + 1;
+                  type = type.type;
+                  if ("spoiler" !== type) {
+                    if ("u" !== type) {
+                      if ("s" !== type) {
+                        if ("strong" !== type) {
+                          if ("em" !== type) {
+                            if ("customEmoji" !== type) {
+                              if ("emoji" !== type) {
+                                if ("inlineCode" !== type) {
+                                  if ("text" === type) {
+                                    type.startIndex = startIndex + num;
+                                    type.endIndex = type.startIndex + type.content.length;
+                                    return type;
+                                  } else {
+                                    type.startIndex = startIndex + num;
+                                    let content = type.content;
+                                    content2 = content;
+                                    startIndex = type.startIndex;
+                                    c2 = 0;
+                                    let mapped = content.map(() => { ... });
+                                    type.endIndex = mapped[mapped.length - 1].endIndex;
+                                    return type;
+                                  }
+                                }
+                              }
+                            }
+                          }
+                          type.startIndex = startIndex + num;
+                          let content1 = type.content;
+                          content2 = content1;
+                          startIndex = type.startIndex + 1;
+                          c2 = 0;
+                          let mapped1 = content1.map(() => { ... });
+                          type.endIndex = mapped1[mapped1.length - 1].endIndex + 1;
+                          return type;
+                        }
+                      }
+                    }
+                  }
+                  type.startIndex = startIndex + num;
+                  content2 = type.content;
+                  startIndex = type.startIndex + 2;
+                  c2 = 0;
+                  let mapped2 = content2.map(() => { ... });
+                  type.endIndex = mapped2[mapped2.length - 1].endIndex + 2;
+                  return type;
+                });
+                type.endIndex = mapped2[mapped2.length - 1].endIndex + 2;
+                return type;
+              });
+              type.endIndex = mapped1[mapped1.length - 1].endIndex + 1;
+              return type;
+            }
+          }
+        }
+      }
+      type.startIndex = startIndex + num;
+      content2 = type.content;
+      startIndex = type.startIndex + 2;
+      c2 = 0;
+      let mapped2 = content2.map((type) => {
+        let num = 0;
+        if (0 !== c2) {
+          num = content2[tmp - 1].endIndex;
+        }
+        c2 = c2 + 1;
+        type = type.type;
+        if ("spoiler" !== type) {
+          if ("u" !== type) {
+            if ("s" !== type) {
+              if ("strong" !== type) {
+                if ("em" !== type) {
+                  if ("customEmoji" !== type) {
+                    if ("emoji" !== type) {
+                      if ("inlineCode" !== type) {
+                        if ("text" === type) {
+                          type.startIndex = startIndex + num;
+                          type.endIndex = type.startIndex + type.content.length;
+                          return type;
+                        } else {
+                          type.startIndex = startIndex + num;
+                          let content = type.content;
+                          content2 = content;
+                          startIndex = type.startIndex;
+                          c2 = 0;
+                          let mapped = content.map((type) => {
+                            let num = 0;
+                            if (0 !== c2) {
+                              num = content2[tmp - 1].endIndex;
+                            }
+                            c2 = c2 + 1;
+                            type = type.type;
+                            if ("spoiler" !== type) {
+                              if ("u" !== type) {
+                                if ("s" !== type) {
+                                  if ("strong" !== type) {
+                                    if ("em" !== type) {
+                                      if ("customEmoji" !== type) {
+                                        if ("emoji" !== type) {
+                                          if ("inlineCode" !== type) {
+                                            if ("text" === type) {
+                                              type.startIndex = startIndex + num;
+                                              type.endIndex = type.startIndex + type.content.length;
+                                              return type;
+                                            } else {
+                                              type.startIndex = startIndex + num;
+                                              let content = type.content;
+                                              content2 = content;
+                                              startIndex = type.startIndex;
+                                              c2 = 0;
+                                              let mapped = content.map(() => { ... });
+                                              type.endIndex = mapped[mapped.length - 1].endIndex;
+                                              return type;
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                    type.startIndex = startIndex + num;
+                                    let content1 = type.content;
+                                    content2 = content1;
+                                    startIndex = type.startIndex + 1;
+                                    c2 = 0;
+                                    let mapped1 = content1.map(() => { ... });
+                                    type.endIndex = mapped1[mapped1.length - 1].endIndex + 1;
+                                    return type;
+                                  }
+                                }
+                              }
+                            }
+                            type.startIndex = startIndex + num;
+                            content2 = type.content;
+                            startIndex = type.startIndex + 2;
+                            c2 = 0;
+                            let mapped2 = content2.map(() => { ... });
+                            type.endIndex = mapped2[mapped2.length - 1].endIndex + 2;
+                            return type;
+                          });
+                          type.endIndex = mapped[mapped.length - 1].endIndex;
+                          return type;
+                        }
+                      }
+                    }
+                  }
+                }
+                type.startIndex = startIndex + num;
+                let content1 = type.content;
+                content2 = content1;
+                startIndex = type.startIndex + 1;
+                c2 = 0;
+                let mapped1 = content1.map((type) => {
+                  let num = 0;
+                  if (0 !== c2) {
+                    num = content2[tmp - 1].endIndex;
+                  }
+                  c2 = c2 + 1;
+                  type = type.type;
+                  if ("spoiler" !== type) {
+                    if ("u" !== type) {
+                      if ("s" !== type) {
+                        if ("strong" !== type) {
+                          if ("em" !== type) {
+                            if ("customEmoji" !== type) {
+                              if ("emoji" !== type) {
+                                if ("inlineCode" !== type) {
+                                  if ("text" === type) {
+                                    type.startIndex = startIndex + num;
+                                    type.endIndex = type.startIndex + type.content.length;
+                                    return type;
+                                  } else {
+                                    type.startIndex = startIndex + num;
+                                    let content = type.content;
+                                    content2 = content;
+                                    startIndex = type.startIndex;
+                                    c2 = 0;
+                                    let mapped = content.map(() => { ... });
+                                    type.endIndex = mapped[mapped.length - 1].endIndex;
+                                    return type;
+                                  }
+                                }
+                              }
+                            }
+                          }
+                          type.startIndex = startIndex + num;
+                          let content1 = type.content;
+                          content2 = content1;
+                          startIndex = type.startIndex + 1;
+                          c2 = 0;
+                          let mapped1 = content1.map(() => { ... });
+                          type.endIndex = mapped1[mapped1.length - 1].endIndex + 1;
+                          return type;
+                        }
+                      }
+                    }
+                  }
+                  type.startIndex = startIndex + num;
+                  content2 = type.content;
+                  startIndex = type.startIndex + 2;
+                  c2 = 0;
+                  let mapped2 = content2.map(() => { ... });
+                  type.endIndex = mapped2[mapped2.length - 1].endIndex + 2;
+                  return type;
+                });
+                type.endIndex = mapped1[mapped1.length - 1].endIndex + 1;
+                return type;
+              }
+            }
+          }
+        }
+        type.startIndex = startIndex + num;
+        content2 = type.content;
+        startIndex = type.startIndex + 2;
+        c2 = 0;
+        let mapped2 = content2.map((type) => {
+          let num = 0;
+          if (0 !== c2) {
+            num = content2[tmp - 1].endIndex;
+          }
+          c2 = c2 + 1;
+          type = type.type;
+          if ("spoiler" !== type) {
+            if ("u" !== type) {
+              if ("s" !== type) {
+                if ("strong" !== type) {
+                  if ("em" !== type) {
+                    if ("customEmoji" !== type) {
+                      if ("emoji" !== type) {
+                        if ("inlineCode" !== type) {
+                          if ("text" === type) {
+                            type.startIndex = startIndex + num;
+                            type.endIndex = type.startIndex + type.content.length;
+                            return type;
+                          } else {
+                            type.startIndex = startIndex + num;
+                            let content = type.content;
+                            content2 = content;
+                            startIndex = type.startIndex;
+                            c2 = 0;
+                            let mapped = content.map(() => { ... });
+                            type.endIndex = mapped[mapped.length - 1].endIndex;
+                            return type;
+                          }
+                        }
+                      }
+                    }
+                  }
+                  type.startIndex = startIndex + num;
+                  let content1 = type.content;
+                  content2 = content1;
+                  startIndex = type.startIndex + 1;
+                  c2 = 0;
+                  let mapped1 = content1.map(() => { ... });
+                  type.endIndex = mapped1[mapped1.length - 1].endIndex + 1;
+                  return type;
+                }
+              }
+            }
+          }
+          type.startIndex = startIndex + num;
+          content2 = type.content;
+          startIndex = type.startIndex + 2;
+          c2 = 0;
+          let mapped2 = content2.map(() => { ... });
+          type.endIndex = mapped2[mapped2.length - 1].endIndex + 2;
+          return type;
+        });
+        type.endIndex = mapped2[mapped2.length - 1].endIndex + 2;
+        return type;
+      });
+      type.endIndex = mapped2[mapped2.length - 1].endIndex + 2;
+      return type;
+    });
+    type.endIndex = mapped2[mapped2.length - 1].endIndex + 2;
     return type;
   });
-}
-
-export const NUM_MAX_AST_NODES = 200;
-export { walkAst };
-export const astToString = function astToString(intl) {
-  return collectAst(intl).join("");
 };
-export { flattenAst };
-export { constrainAst };
-export { getIndexedAST };
-export const MarkupParserNodeTypeError = tmp2;
+export const MarkupParserNodeTypeError = prototype;

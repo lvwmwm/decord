@@ -1,51 +1,50 @@
-// Module ID: 8408
-// Function ID: 67066
+// Module ID: 8432
+// Function ID: 8433
 // Name: renderTooltipItem
-// Dependencies: [57, 31, 27, 33, 4026, 8409, 3884, 8411, 8412, 2]
+// Dependencies: [32, 19, 17, 21, 4050, 8433, 3908, 8435, 8436, 2]
 // Exports: AnimatedTooltip
 
-// Module 8408 (renderTooltipItem)
+// Module 8432 (renderTooltipItem)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
+import noop from "noop";
 import { StyleSheet } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
 
 const require = arg1;
 function renderTooltipItem(arg0, arg1) {
-  let obj = { style: items, pointerEvents: "box-none" };
+  let obj = { style: items, pointerEvents: "box-none", children: null };
   items = [arg1, StyleSheet.absoluteFill];
-  let tmp2 = null;
+  let tmpResult = null;
   if (null != arg0) {
     obj = {};
     const merged = Object.assign(arg0);
-    tmp2 = jsx(require(8409) /* Tooltip */.Tooltip, {});
+    tmpResult = tmp(require(8433) /* Tooltip */.Tooltip, obj);
   }
-  obj.children = tmp2;
-  return jsx(importDefault(4026).View, { style: items, pointerEvents: "box-none" });
+  obj[2] = tmpResult;
+  return jsx(importDefault(4050).View, { style: items, pointerEvents: "box-none", children: null });
 }
 let result = require("get ActivityIndicator").fileFinishedImporting("design/components/Tooltip/native/AnimatedTooltip.native.tsx");
 
 export const AnimatedTooltip = function AnimatedTooltip(visible) {
   visible = visible.visible;
-  let obj = Object.create(null);
-  obj.visible = 0;
-  const merged = Object.assign(visible, obj);
-  obj = visible(8411);
+  const merged = Object.assign(visible, Object.create(null));
+  let importDefault;
+  let obj = visible(8435);
   const result = obj.tooltipEnterExitAnimation(merged.position);
-  const tmp4 = callback(React.useState(false), 2);
-  const importDefault = tmp4[1];
+  const tmp3 = callback(React.useState(false), 2);
+  importDefault = tmp3[1];
   const items = [visible];
   const effect = React.useEffect(() => {
     callback(visible);
   }, items);
-  obj = { useReducedMotion: React.useContext(visible(3884).AccessibilityPreferencesContext).reducedMotion.enabled };
-  let tmp8;
-  if (tmp4[0]) {
-    tmp8 = merged;
+  obj = { useReducedMotion: React.useContext(visible(3908).AccessibilityPreferencesContext).reducedMotion.enabled, item: null, entering: null, exiting: null, renderItem: null };
+  let tmp7;
+  if (tmp3[0]) {
+    tmp7 = merged;
   }
-  obj.item = tmp8;
-  obj.entering = result;
-  obj.exiting = result;
-  obj.renderItem = renderTooltipItem;
-  return jsx(importDefault(8412), { useReducedMotion: React.useContext(visible(3884).AccessibilityPreferencesContext).reducedMotion.enabled });
+  obj[1] = tmp7;
+  obj[2] = result;
+  obj[3] = result;
+  obj[4] = renderTooltipItem;
+  return jsx(importDefault(8436), { useReducedMotion: React.useContext(visible(3908).AccessibilityPreferencesContext).reducedMotion.enabled, item: null, entering: null, exiting: null, renderItem: null });
 };

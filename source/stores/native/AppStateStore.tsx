@@ -1,73 +1,31 @@
-// Module ID: 6307
-// Function ID: 56430
-// Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 27, 653, 566, 675, 1935, 686, 2]
+// Module ID: 6328
+// Function ID: 6329
+// Name: getState
+// Dependencies: [17, 676, 589, 698, 1959, 709, 2]
 
-// Module 6307 (_isNativeReflectConstruct)
-import ME from "ME";
-import initialize from "initialize";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
+// Module 6328 (getState)
 import { AppStates } from "ME";
-import promise from "expandLocation";
+import { Store } from "initialize";
+import promise from "expandEventProperties";
 
-function _isNativeReflectConstruct() {
-  let ME = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return ME;
-  }
-  const result = _isNativeReflectConstruct();
-}
 const currentState = require("get ActivityIndicator").AppState.currentState;
-let c7 = null;
-let tmp2 = ((Store) => {
-  class AppStateStore {
-    constructor() {
-      self = this;
-      tmp = AppStateStore(this, AppStateStore);
-      obj = outer1_3(AppStateStore);
-      tmp2 = outer1_2;
-      if (outer1_8()) {
-        tmp6 = globalThis;
-        _Reflect = Reflect;
-        tmp7 = outer1_3;
-        tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, outer1_3(self).constructor);
-      } else {
-        tmp3 = arguments;
-        tmp4 = arguments;
-        constructResult = obj(...arguments);
-      }
-      return tmp2(self, constructResult);
-    }
-  }
-  callback2(AppStateStore, Store);
-  let obj = {
-    key: "getState",
-    value() {
-      return outer1_6;
-    }
-  };
-  const items = [obj, ];
-  obj = {
-    key: "getLastActiveTime",
-    value() {
-      return outer1_7;
-    }
-  };
-  items[1] = obj;
-  return callback(AppStateStore, items);
-})(require("initialize").Store);
-tmp2.displayName = "AppStateStore";
-require("expandLocation").then((addExtraAnalyticsDecorator) => {
+let c2 = null;
+class AppStateStore extends Store {
+}
+const prototype = AppStateStore.prototype;
+prototype["getState"] = function getState() {
+  return currentState;
+};
+prototype["getLastActiveTime"] = function getLastActiveTime() {
+  return c2;
+};
+AppStateStore.displayName = "AppStateStore";
+require("expandEventProperties").then((addExtraAnalyticsDecorator) => {
   const result = addExtraAnalyticsDecorator.addExtraAnalyticsDecorator((arg0) => {
-    arg0.client_app_state = outer1_6;
+    arg0.client_app_state = closure_1;
   });
 });
-tmp2 = new tmp2(require("dispatcher"), {
+const appStateStore = new AppStateStore(require("dispatcher"), {
   APP_STATE_UPDATE: function handleAppStateUpdate(state) {
     if (state === state.state) {
       return false;
@@ -75,12 +33,12 @@ tmp2 = new tmp2(require("dispatcher"), {
       state = state.state;
       if (state === AppStates.ACTIVE) {
         const _Date = Date;
-        let closure_7 = Date.now();
+        let closure_2 = Date.now();
       }
     }
   }
 });
-let obj = {
+const obj = {
   APP_STATE_UPDATE: function handleAppStateUpdate(state) {
     if (state === state.state) {
       return false;
@@ -88,11 +46,11 @@ let obj = {
       state = state.state;
       if (state === AppStates.ACTIVE) {
         const _Date = Date;
-        let closure_7 = Date.now();
+        let closure_2 = Date.now();
       }
     }
   }
 };
-let result = require("_possibleConstructorReturn").fileFinishedImporting("stores/native/AppStateStore.tsx");
+let result = require("initialize").fileFinishedImporting("stores/native/AppStateStore.tsx");
 
-export default tmp2;
+export default appStateStore;

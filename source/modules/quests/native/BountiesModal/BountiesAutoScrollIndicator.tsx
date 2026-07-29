@@ -1,56 +1,57 @@
-// Module ID: 14059
-// Function ID: 107381
+// Module ID: 14081
+// Function ID: 14082
 // Name: BouncingArrow
-// Dependencies: [31, 27, 33, 4026, 4166, 4165, 689, 3869, 14060, 4161, 1212, 14062, 2]
+// Dependencies: [19, 17, 21, 4050, 4190, 4189, 712, 3893, 14082, 4185, 1236, 14084, 2]
 // Exports: default
 
-// Module 14059 (BouncingArrow)
-import result from "result";
+// Module 14081 (BouncingArrow)
+import noop from "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_5;
+let c5;
 let closure_6;
 const require = arg1;
 function BouncingArrow(children) {
-  sharedValue = sharedValue(4026).useSharedValue(0);
+  let sharedValue;
+  sharedValue = sharedValue(4050).useSharedValue(0);
   let items = [sharedValue];
   const effect = React.useEffect(() => {
     let obj = sharedValue(outer1_2[3]);
     const obj2 = sharedValue(outer1_2[3]);
-    obj = { duration: 500 };
+    obj = { duration: 500, easing: null };
     const Easing = sharedValue(outer1_2[3]).Easing;
-    obj.easing = Easing.inOut(sharedValue(outer1_2[3]).Easing.quad);
+    obj[1] = Easing.inOut(sharedValue(outer1_2[3]).Easing.quad);
     const obj3 = sharedValue(outer1_2[4]);
     const withTimingResult = sharedValue(outer1_2[4]).withTiming(-6, obj);
-    obj = { duration: 500 };
+    obj = { duration: 500, easing: null };
     const Easing2 = sharedValue(outer1_2[3]).Easing;
-    obj.easing = Easing2.inOut(sharedValue(outer1_2[3]).Easing.quad);
+    obj[1] = Easing2.inOut(sharedValue(outer1_2[3]).Easing.quad);
     const result = sharedValue.set(obj.withRepeat(obj2.withSequence(withTimingResult, sharedValue(outer1_2[4]).withTiming(0, obj)), -1));
-    return () => sharedValue(outer2_2[3]).cancelAnimation(outer1_0);
+    return () => outer1_0(outer1_2[3]).cancelAnimation(closure_0);
   }, items);
-  let obj = sharedValue(4026);
+  let obj = sharedValue(4050);
   const fn = function l() {
-    let obj = {};
+    let obj = { transform: null };
     obj = { translateY: sharedValue.get() };
     const items = [obj];
-    obj.transform = items;
+    obj[0] = items;
     return obj;
   };
   fn.__closure = { translateY: sharedValue };
   fn.__workletHash = 10126349088819;
   fn.__initData = closure_7;
-  const style = sharedValue(4026).useAnimatedStyle(fn);
-  return callback(importDefault(4026).View, { style, children: children.children });
+  const style = sharedValue(4050).useAnimatedStyle(fn);
+  return callback(importDefault(4050).View, { style, children: children.children });
 }
-({ jsx: closure_5, jsxs: closure_6 } = jsxProd);
+({ jsx: c5, jsxs: closure_6 } = jsxProd);
 let closure_7 = { code: "function BountiesAutoScrollIndicatorTsx1(){const{translateY}=this.__closure;return{transform:[{translateY:translateY.get()}]};}" };
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { alignItems: "center", gap: require("_createForOfIteratorHelperLoose").space.PX_8 };
-_createForOfIteratorHelperLoose.root = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.ringContainer = { alignItems: "center", justifyContent: "center", width: 40, height: 40 };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+createCacheKey = { root: null, ringContainer: null };
+createCacheKey = { alignItems: "center", gap: require("Themes").space.PX_8 };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { alignItems: "center", justifyContent: "center", width: 40, height: 40 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
 let result = require("jsxProd").fileFinishedImporting("modules/quests/native/BountiesModal/BountiesAutoScrollIndicator.tsx");
 
 export default function BountiesAutoScrollIndicator(showProgressRing) {
@@ -59,39 +60,34 @@ export default function BountiesAutoScrollIndicator(showProgressRing) {
     flag = true;
   }
   let _require;
-  const tmp = _createForOfIteratorHelperLoose();
-  let obj = _require(3869);
-  const token = obj.useToken(importDefault(689).colors.WHITE);
-  obj = { size: "md", color: importDefault(689).colors.WHITE };
-  const tmp3 = callback(_require(14060).ArrowSmallUpIcon, obj);
-  _require = tmp3;
-  obj = { style: tmp.root };
-  const obj1 = { variant: "text-md/semibold", color: "text-default" };
-  const intl = _require(1212).intl;
-  obj1.children = intl.string(_require(1212).t.eafsh4);
-  const items = [callback(_require(4161).Text, obj1), ];
-  const obj2 = { style: tmp.ringContainer };
+  const tmp = createCacheKey();
+  let obj = _require(3893);
+  const token = obj.useToken(importDefault(712).colors.WHITE);
+  obj = { size: "md", color: null };
+  obj[1] = importDefault(712).colors.WHITE;
+  const tmp6 = callback(_require(14082).ArrowSmallUpIcon, obj);
+  _require = tmp6;
+  obj = { style: tmp.root, children: null };
+  const obj1 = { variant: "text-md/semibold", color: "text-default", children: null };
+  const intl = _require(1236).intl;
+  obj1[2] = intl.string(_require(1236).t.eafsh4);
+  const items = [callback(_require(4185).Text, obj1), ];
+  const obj2 = { style: tmp.ringContainer, children: null };
   if (flag) {
-    const obj3 = {
-      size: 40,
-      width: 3,
-      fill: 100 * showProgressRing.progress,
-      duration: 0,
-      rotation: 0,
-      lineCap: "round",
-      tintColor: token,
-      backgroundColor: "rgba(255, 255, 255, 0.35)",
-      children() {
-          return c0;
-        }
+    const obj3 = { size: 40, width: 3, fill: null, duration: 0, rotation: 0, lineCap: "round", tintColor: null, backgroundColor: "rgba(255, 255, 255, 0.35)", children: null };
+    obj3[2] = 100 * showProgressRing.progress;
+    obj3[6] = token;
+    obj3[8] = function children() {
+      return c0;
     };
-    let tmp7Result = tmp7(_require(14062).AnimatedCircularProgress, obj3);
+    let tmp5Result = tmp5(_require(14084).AnimatedCircularProgress, obj3);
   } else {
-    const obj4 = { children: tmp3 };
-    tmp7Result = tmp7(BouncingArrow, obj4);
+    const obj4 = { children: null };
+    obj4[0] = tmp6;
+    tmp5Result = tmp5(BouncingArrow, obj4);
   }
-  obj2.children = tmp7Result;
+  obj2[1] = tmp5Result;
   items[1] = callback(View, obj2);
-  obj.children = items;
+  obj[1] = items;
   return closure_6(View, obj);
 };

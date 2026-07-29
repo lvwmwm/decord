@@ -1,40 +1,63 @@
-// Module ID: 8272
-// Function ID: 66164
+// Module ID: 8296
+// Function ID: 8297
 // Name: getNoResultsAltSource
-// Dependencies: [31, 27, 33, 6517, 8273, 8274, 8275, 4011, 2]
-// Exports: NoResultsAlt
+// Dependencies: [19, 17, 21, 6538, 8297, 8298, 8299, 4035, 2]
+// Exports: NoResultsAlt, getNoResultsAltSource, useNoResultsAltSource
 
-// Module 8272 (getNoResultsAltSource)
-import "result";
+// Module 8296 (getNoResultsAltSource)
+import "noop";
 import { Image } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
 
 const require = arg1;
-function getNoResultsAltSource(theme) {
-  let obj = require(6517) /* getIllustrationSource */;
+const result = require("jsxProd").fileFinishedImporting("design/components/Illustration/native/redesign/generated/NoResultsAlt.tsx");
+
+export const getNoResultsAltSource = function getNoResultsAltSource(theme) {
+  let obj = require(6538) /* getIllustrationSource */;
   obj = {
     dark() {
-      return outer1_0(outer1_1[4]);
+      return callback(8297);
     },
     darker() {
-      return outer1_0(outer1_1[5]);
+      return callback(8298);
     },
     light() {
-      return outer1_0(outer1_1[6]);
+      return callback(8299);
     }
   };
   return obj.getIllustrationSource(theme, obj);
-}
-function useNoResultsAltSource() {
-  return getNoResultsAltSource(require(4011) /* AccessibilityAnnouncer */.useThemeContext().theme);
-}
-const result = require("jsxProd").fileFinishedImporting("design/components/Illustration/native/redesign/generated/NoResultsAlt.tsx");
-
-export { getNoResultsAltSource };
-export { useNoResultsAltSource };
+};
+export const useNoResultsAltSource = function useNoResultsAltSource() {
+  let obj = require(4035) /* AccessibilityAnnouncer */;
+  obj = {
+    dark() {
+      return callback(8297);
+    },
+    darker() {
+      return callback(8298);
+    },
+    light() {
+      return callback(8299);
+    }
+  };
+  return require(6538) /* getIllustrationSource */.getIllustrationSource(obj.useThemeContext().theme, obj);
+};
 export const NoResultsAlt = function NoResultsAlt(arg0) {
-  const obj = {};
+  let obj = require(4035) /* AccessibilityAnnouncer */;
+  obj = {
+    dark() {
+      return callback(8297);
+    },
+    darker() {
+      return callback(8298);
+    },
+    light() {
+      return callback(8299);
+    }
+  };
+  obj = {};
+  const illustrationSource = require(6538) /* getIllustrationSource */.getIllustrationSource(obj.useThemeContext().theme, obj);
   const merged = Object.assign(arg0);
-  obj["source"] = useNoResultsAltSource();
+  obj.source = illustrationSource;
   return <Image />;
 };

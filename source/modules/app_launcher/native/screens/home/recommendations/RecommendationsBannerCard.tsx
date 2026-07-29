@@ -1,35 +1,35 @@
-// Module ID: 11240
-// Function ID: 87328
+// Module ID: 11264
+// Function ID: 11265
 // Name: RecommendationsBannerCard
-// Dependencies: [31, 27, 653, 33, 4165, 689, 7990, 7959, 1392, 11232, 4695, 11241, 1882, 11235, 4161, 1212, 11206, 5205, 2]
+// Dependencies: [19, 17, 676, 21, 4189, 712, 8015, 7984, 1416, 11256, 4717, 11265, 1906, 11259, 4185, 1236, 11230, 5227, 2]
 // Exports: default
 
-// Module 11240 (RecommendationsBannerCard)
-import result from "result";
-import { View } from "get ActivityIndicator";
+// Module 11264 (RecommendationsBannerCard)
+import noop from "noop";
+import { View } from "TableRowArrow";
 import { EMPTY_STRING_SNOWFLAKE_ID } from "ME";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
 let closure_6;
-let closure_7;
+let error;
 const require = arg1;
-({ jsx: closure_6, jsxs: closure_7 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { borderRadius: require("_createForOfIteratorHelperLoose").radii.lg, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_APP_LAUNCHER_CARD_DEFAULT, width: "100%", overflow: "hidden" };
-_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.banner = { width: "100%", height: 106, overflow: "hidden" };
-let obj1 = { padding: require("_createForOfIteratorHelperLoose").space.PX_16, flexDirection: "row", alignItems: "center", justifyContent: "space-between" };
-_createForOfIteratorHelperLoose.appDetailsContainer = obj1;
-let obj2 = { marginLeft: require("_createForOfIteratorHelperLoose").space.PX_16, flexDirection: "column", flexGrow: 1, flexShrink: 1 };
-_createForOfIteratorHelperLoose.appDetails = obj2;
-_createForOfIteratorHelperLoose.appIconContainer = { flexShrink: 0 };
-let obj3 = { position: "absolute", display: "flex", gap: require("_createForOfIteratorHelperLoose").space.PX_4, right: require("_createForOfIteratorHelperLoose").space.PX_8, top: require("_createForOfIteratorHelperLoose").space.PX_8, alignItems: "flex-end" };
-_createForOfIteratorHelperLoose.notifsContainer = obj3;
-_createForOfIteratorHelperLoose.badge = {};
-_createForOfIteratorHelperLoose.promotedLabelWrapper = { paddingVertical: require("_createForOfIteratorHelperLoose").space.PX_4, paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_8, backgroundColor: require("_createForOfIteratorHelperLoose").colors.CONTROL_SECONDARY_BACKGROUND_DEFAULT, borderRadius: require("_createForOfIteratorHelperLoose").radii.lg };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-let obj4 = { paddingVertical: require("_createForOfIteratorHelperLoose").space.PX_4, paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_8, backgroundColor: require("_createForOfIteratorHelperLoose").colors.CONTROL_SECONDARY_BACKGROUND_DEFAULT, borderRadius: require("_createForOfIteratorHelperLoose").radii.lg };
+({ jsx: closure_6, jsxs: error } = jsxProd);
+createCacheKey = { container: null, banner: null, appDetailsContainer: null, appDetails: null, appIconContainer: null, notifsContainer: null, badge: null, promotedLabelWrapper: null };
+createCacheKey = { borderRadius: require("Themes").radii.lg, backgroundColor: require("Themes").colors.BACKGROUND_APP_LAUNCHER_CARD_DEFAULT, width: "100%", overflow: "hidden" };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { width: "100%", height: 106, overflow: "hidden" };
+createCacheKey[2] = { padding: require("Themes").space.PX_16, flexDirection: "row", alignItems: "center", justifyContent: "space-between" };
+let obj1 = { padding: require("Themes").space.PX_16, flexDirection: "row", alignItems: "center", justifyContent: "space-between" };
+createCacheKey[3] = { marginLeft: require("Themes").space.PX_16, flexDirection: "column", flexGrow: 1, flexShrink: 1 };
+createCacheKey[4] = { flexShrink: 0 };
+let obj2 = { marginLeft: require("Themes").space.PX_16, flexDirection: "column", flexGrow: 1, flexShrink: 1 };
+createCacheKey[5] = { position: "absolute", display: "flex", gap: require("Themes").space.PX_4, right: require("Themes").space.PX_8, top: require("Themes").space.PX_8, alignItems: "flex-end" };
+createCacheKey[6] = {};
+let obj3 = { position: "absolute", display: "flex", gap: require("Themes").space.PX_4, right: require("Themes").space.PX_8, top: require("Themes").space.PX_8, alignItems: "flex-end" };
+createCacheKey[7] = { paddingVertical: require("Themes").space.PX_4, paddingHorizontal: require("Themes").space.PX_8, backgroundColor: require("Themes").colors.CONTROL_SECONDARY_BACKGROUND_DEFAULT, borderRadius: require("Themes").radii.lg };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let obj4 = { paddingVertical: require("Themes").space.PX_4, paddingHorizontal: require("Themes").space.PX_8, backgroundColor: require("Themes").colors.CONTROL_SECONDARY_BACKGROUND_DEFAULT, borderRadius: require("Themes").radii.lg };
 const result = require("ME").fileFinishedImporting("modules/app_launcher/native/screens/home/recommendations/RecommendationsBannerCard.tsx");
 
 export default function RecommendationsBannerCard(application) {
@@ -46,115 +46,120 @@ export default function RecommendationsBannerCard(application) {
   if (showsPromoted === undefined) {
     showsPromoted = false;
   }
-  const tmp = _createForOfIteratorHelperLoose();
+  const tmp = createCacheKey();
   if (!showsPromoted) {
-    let obj = application(7990);
+    let obj = application(8015);
     showsPromoted = obj.isPromotedApplication(application);
   }
-  let obj1 = application(7990);
+  let obj1 = application(8015);
   const shelfBadgeTypeIfActive = obj1.getShelfBadgeTypeIfActive(application);
   let bot = application.bot;
   let id;
-  if (null != bot) {
+  if (bot != null) {
     id = bot.id;
   }
   const items = [id];
   const effect = React.useEffect(() => {
     const bot = application.bot;
     let id;
-    if (null != bot) {
+    if (bot != null) {
       id = bot.id;
     }
-    if (null == id) {
+    if (id == null) {
       id = outer1_5;
     }
     outer1_1(outer1_2[7])(id);
   }, items);
-  let num2 = 8;
-  let obj2 = importDefault(1392);
+  let obj2 = importDefault(1416);
   obj = { id: application.id, icon: application.icon, bot: application.bot, botIconFirst: true };
   const applicationIconSource = obj2.getApplicationIconSource(obj);
   if (isLandscape) {
-    obj = { application, iconSource: applicationIconSource, onPress, isFirstRow: isFirst, isLastRow: isLast };
-    let tmp9Result = callback(application(11232).BaseAppRow, obj);
+    obj = { application: null, iconSource: null, onPress: null, isFirstRow: null, isLastRow: null };
+    obj[0] = application;
+    obj[1] = applicationIconSource;
+    obj[2] = onPress;
+    obj[3] = isFirst;
+    obj[4] = isLast;
+    let tmp12Result = callback(tmp4(11256).BaseAppRow, obj);
   } else {
-    obj1 = {};
     const items1 = [tmp.container, , ];
-    obj2 = {};
-    let num4 = num2;
+    let num = 8;
+    let num2 = 8;
     if (isFirst) {
-      num4 = 0;
-    }
-    obj2.marginTop = num4;
-    if (isLast) {
       num2 = 0;
     }
-    obj2.marginBottom = num2;
-    items1[1] = obj2;
-    items1[2] = style;
-    obj1.style = items1;
-    obj1.onPress = onPress;
-    const obj3 = { style: tmp.banner };
-    const obj4 = { applicationBot: application.bot };
-    let obj8 = application(7990);
-    obj4.applicationEmbedded = obj8.isEmbeddedApp(application);
-    ({ id: obj8.applicationId, icon } = application);
-    let tmp19;
-    if (null != icon) {
-      tmp19 = icon;
+    obj1 = { marginTop: null, marginBottom: null };
+    obj1[0] = num2;
+    if (isLast) {
+      num = 0;
     }
-    obj4.applicationIcon = tmp19;
-    obj4.overrideImageUrl = application.overrideImageUrl;
-    const items2 = [callback(importDefault(11241), obj4), ];
+    obj2 = { style: null, onPress: null, children: null };
+    obj1[1] = num;
+    items1[1] = obj1;
+    items1[2] = style;
+    obj2[0] = items1;
+    obj2[1] = onPress;
+    const obj3 = { style: null, children: null };
+    obj3[0] = tmp.banner;
+    const obj4 = { applicationBot: null, applicationEmbedded: null, applicationId: null, applicationIcon: null, overrideImageUrl: null };
+    obj4[0] = application.bot;
+    const tmp10Result = tmp10(11265);
+    obj4[1] = tmp4(8015).isEmbeddedApp(application);
+    ({ id: obj8[2], icon } = application);
+    obj4[3] = icon;
+    obj4[4] = application.overrideImageUrl;
+    const items2 = [callback(tmp10Result, obj4), ];
     if (showsPromoted) {
-      const obj5 = { style: tmp.notifsContainer };
-      const obj6 = { labelType: shelfBadgeTypeIfActive, replacementStyles: tmp.badge };
-      const items3 = [callback(importDefault(11235), obj6), ];
+      const obj5 = { style: null, children: null };
+      obj5[0] = tmp.notifsContainer;
+      const obj6 = { labelType: null, replacementStyles: null };
+      obj6[0] = shelfBadgeTypeIfActive;
+      obj6[1] = tmp.badge;
+      const items3 = [tmp14(tmp10(11259), obj6), ];
       if (showsPromoted) {
-        const obj7 = { style: tmp.promotedLabelWrapper };
-        obj8 = { variant: "text-xxs/medium", color: "mobile-text-heading-primary" };
-        const intl = application(1212).intl;
-        obj8.children = intl.string(application(1212).t["/eVltv"]);
-        obj7.children = callback(application(4161).Text, obj8);
-        showsPromoted = callback(View, obj7);
+        const obj7 = { style: null, children: null };
+        obj7[0] = tmp.promotedLabelWrapper;
+        const obj8 = { variant: "text-xxs/medium", color: "mobile-text-heading-primary", children: null };
+        const intl = tmp4(1236).intl;
+        obj8[2] = intl.string(tmp4(1236).t["/eVltv"]);
+        obj7[1] = tmp14(tmp4(4185).Text, obj8);
+        showsPromoted = tmp14(tmp13, obj7);
       }
       items3[1] = showsPromoted;
-      obj5.children = items3;
-      let tmp23Result = callback2(View, obj5);
-      const tmp23 = callback2;
-      const tmp24 = View;
+      obj5[1] = items3;
+      tmp12Result = tmp12(tmp13, obj5);
     } else {
-      tmp23Result = null;
+      tmp12Result = null;
     }
-    items2[1] = tmp23Result;
-    obj3.children = items2;
-    const items4 = [callback2(View, obj3), ];
-    const obj9 = { style: tmp.appDetailsContainer };
-    let tmp34 = null != applicationIconSource;
-    if (tmp34) {
-      const obj10 = { iconSource: applicationIconSource, iconSize: 36, wrapperStyle: tmp.appIconContainer };
-      tmp34 = callback(importDefault(11206), obj10);
+    items2[1] = tmp12Result;
+    obj3[1] = items2;
+    const items4 = [closure_7(View, obj3), ];
+    const obj9 = { style: null, children: null };
+    obj9[0] = tmp.appDetailsContainer;
+    let tmp14Result = null != applicationIconSource;
+    if (tmp14Result) {
+      const obj10 = { iconSource: null, iconSize: 36, wrapperStyle: null };
+      obj10[0] = applicationIconSource;
+      obj10[2] = tmp.appIconContainer;
+      tmp14Result = tmp14(tmp10(11230), obj10);
     }
-    const items5 = [tmp34, , ];
-    const obj11 = { style: tmp.appDetails };
-    const obj12 = { variant: "heading-lg/semibold", color: "mobile-text-heading-primary", lineClamp: 1, children: application.name };
-    const items6 = [callback(application(4161).Text, obj12), ];
-    const obj13 = { variant: "text-sm/normal", color: "text-subtle", lineClamp: 1, children: application.description };
-    items6[1] = callback(application(4161).Text, obj13);
-    obj11.children = items6;
-    items5[1] = callback2(View, obj11);
-    items5[2] = callback(application(5205).TableRowArrow, {});
-    obj9.children = items5;
-    items4[1] = callback2(View, obj9);
-    obj1.children = items4;
-    tmp9Result = callback2(application(4695).PressableOpacity, obj1);
-    const tmp12 = callback2;
-    const tmp13 = View;
-    const tmp14 = callback;
-    const tmp17 = importDefault(11241);
-    const tmp32 = callback2;
-    const tmp33 = View;
-    const tmp9 = callback2;
+    const items5 = [tmp14Result, , ];
+    const obj11 = { style: null, children: null };
+    obj11[0] = tmp.appDetails;
+    const obj12 = { variant: "heading-lg/semibold", color: "mobile-text-heading-primary", lineClamp: 1, children: null };
+    obj12[3] = application.name;
+    const items6 = [callback(tmp4(4185).Text, obj12), ];
+    const obj13 = { variant: "text-sm/normal", color: "text-subtle", lineClamp: 1, children: null };
+    obj13[3] = application.description;
+    items6[1] = callback(tmp4(4185).Text, obj13);
+    obj11[1] = items6;
+    items5[1] = closure_7(View, obj11);
+    items5[2] = callback(tmp4(5227).TableRowArrow, {});
+    obj9[1] = items5;
+    items4[1] = closure_7(View, obj9);
+    obj2[2] = items4;
+    tmp12Result = tmp12(tmp4(4717).PressableOpacity, obj2);
+    const tmp4Result = tmp4(8015);
   }
-  return tmp9Result;
+  return tmp12Result;
 };

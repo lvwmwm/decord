@@ -1,77 +1,183 @@
-// Module ID: 6666
-// Function ID: 58699
+// Module ID: 6687
+// Function ID: 6688
 // Name: navigateToSocialLayerStorefrontWithGuildPreview
-// Dependencies: [5, 1838, 5646, 653, 6667, 5644, 1198, 6668, 6672, 2]
+// Dependencies: [5, 1862, 5664, 676, 6688, 5662, 1222, 6689, 6693, 2]
 // Exports: default, eagerNavigateToSocialLayerStorefront, eagerNavigateToSocialLayerStorefrontForApplication
 
-// Module 6666 (navigateToSocialLayerStorefrontWithGuildPreview)
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import closure_4 from "_createForOfIteratorHelperLoose";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 6687 (navigateToSocialLayerStorefrontWithGuildPreview)
+import getPrice from "getPrice";
+import createGuildRecordFromRust from "createGuildRecordFromRust";
+import handleUserSettingsStoreUpdate from "handleUserSettingsStoreUpdate";
 import ME from "ME";
 
 let closure_6;
-let closure_7;
+let error;
 const require = arg1;
 function navigateToSocialLayerStorefrontWithGuildPreview(arg0) {
-  return _navigateToSocialLayerStorefrontWithGuildPreview(...arguments);
+  const self = this;
+  const apply = _navigateToSocialLayerStorefrontWithGuildPreview.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
 }
-async function _navigateToSocialLayerStorefrontWithGuildPreview(arg0, arg1) {
-  let iter = (function*(arg0) {
-    let guildId;
-    let invite;
-    let pageIndex;
-    let skuId;
-    let slug;
-    ({ guildId, invite, pageIndex, skuId, slug } = arg0);
-    yield undefined;
-    let _Set = null;
-    if (null != invite) {
-      let guild = invite.guild;
+function _navigateToSocialLayerStorefrontWithGuildPreview() {
+  const self = this;
+  const tmp = callback((arg0) => {
+    let closure_0 = arg0;
+    let c3 = 0;
+    let c4 = 0;
+    const iter = (function*(arg0) {
+      let c1;
+      let c2;
+      let c3;
+      let c4;
       let id;
-      if (null != guild) {
-        id = guild.id;
-      }
-      _Set = Set;
-      const guild2 = invite.guild;
-      let features;
-      if (null != guild2) {
-        features = guild2.features;
-      }
-      const prototype = _Set.prototype;
-      _Set = new _Set(features);
-      guildId = id;
-    }
-    if (null != guildId) {
-      guild = outer2_4.getGuild(guildId);
-      let joinedAt;
-      if (null != guild) {
-        joinedAt = guild.joinedAt;
-      }
-      if (null == joinedAt) {
-        if (null != _Set) {
-          if (!_Set.has(outer2_6.PREVIEW_ENABLED)) {
-            if (null != invite) {
-              let obj = { inviteKey: invite.code };
-              obj = { location: "game_shop" };
-              obj.context = obj;
-              obj.skipOnboarding = true;
-              return yield outer2_1(outer2_2[8]).acceptInvite(obj);
-            }
-          }
+      if (guild === 2) {
+        guild = 3;
+        HermesBuiltin.throwTypeError();
+      } else if (tmp4 === 3) {
+        if (arg0 === 1) {
+          throw arg1;
+        } else if (arg0 === 2) {
+          let obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
+        } else {
+          return { value: "HermesInternal", done: null };
         }
-        obj = outer2_0(outer2_2[7]);
-        const obj1 = { shouldNavigate: false };
-        yield obj.startLurking(guildId, {}, obj1);
+      } else {
+        try {
+          guild = 2;
+          if (0 === c3) {
+            if (arg0 === 1) {
+              guild = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              guild = 3;
+              obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            } else {
+              let dependencyMap = tmp5;
+              let lib = tmp2;
+              id = undefined;
+              lib = undefined;
+              dependencyMap = undefined;
+              c3 = undefined;
+              guild = undefined;
+              ({ guildId: id, invite: c1, pageIndex: c2, skuId: c3, slug: c4 } = id);
+              let set;
+              let guild3;
+              c3 = 1;
+              guild = 1;
+              return { value: "ct", done: null };
+            }
+          } else {
+            if (1 === tmp5) {
+              if (arg0 === 1) {
+                guild = 3;
+                throw arg1;
+              } else if (arg0 === 2) {
+                guild = 3;
+                const obj1 = { value: null, done: true };
+                obj1[0] = arg1;
+                return obj1;
+              } else {
+                set = null;
+                if (null != lib) {
+                  guild = lib.guild;
+                  id = undefined;
+                  if (guild != null) {
+                    id = guild.id;
+                  }
+                  const guild2 = lib.guild;
+                  let features;
+                  if (guild2 != null) {
+                    features = guild2.features;
+                  }
+                  set = new Set(features);
+                }
+                if (null != id) {
+                  guild3 = guild.getGuild(id);
+                  let joinedAt;
+                  if (guild3 != null) {
+                    joinedAt = guild3.joinedAt;
+                  }
+                  if (null == joinedAt) {
+                    if (null != set) {
+                      if (!set.has(guild3.PREVIEW_ENABLED)) {
+                        if (null != lib) {
+                          let obj4 = lib(6693);
+                          let obj2 = { inviteKey: null, context: null, skipOnboarding: true };
+                          obj2[0] = lib.code;
+                          obj2[1] = { location: "game_shop" };
+                          c3 = 3;
+                          guild = 1;
+                          const obj3 = { value: null, done: false };
+                          obj3[0] = obj4.acceptInvite(obj2);
+                          return obj3;
+                        }
+                      }
+                    }
+                    c3 = 2;
+                    guild = 1;
+                    obj4 = { value: null, done: false };
+                    obj4[0] = id(6689).startLurking(id, {}, { shouldNavigate: false });
+                    return obj4;
+                  }
+                } else {
+                  guild = 3;
+                  return { value: "HermesInternal", done: null };
+                }
+              }
+            } else if (2 === tmp5) {
+              if (arg0 === 1) {
+                guild = 3;
+                throw arg1;
+              } else if (arg0 === 2) {
+                guild = 3;
+                const obj5 = { value: null, done: true };
+                obj5[0] = arg1;
+                return obj5;
+              }
+            } else if (arg0 === 1) {
+              guild = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              guild = 3;
+              obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            }
+            obj2 = id(1222);
+            guild = 3;
+            const obj6 = { value: null, done: true };
+            obj6[0] = obj2.transitionTo(closure_7.CHANNELS_GAME_SHOP(id, dependencyMap, c3, guild));
+            return obj6;
+          }
+        } catch (tmp50) {
+          guild = tmp;
+          throw tmp50;
+        }
       }
-      return outer2_0(outer2_2[6]).transitionTo(outer2_7.CHANNELS_GAME_SHOP(guildId, pageIndex, skuId, slug));
-    }
-  })();
-  iter.next();
-  return iter;
+    })();
+    iter.next();
+    return iter;
+  });
+  const _navigateToSocialLayerStorefrontWithGuildPreview = tmp;
+  const apply = tmp.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
 }
-({ GuildFeatures: closure_6, Routes: closure_7 } = ME);
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/slayer_storefront/navigateToSocialLayerStorefront.tsx");
+({ GuildFeatures: closure_6, Routes: error } = ME);
+const result = require("handleUserSettingsStoreUpdate").fileFinishedImporting("modules/slayer_storefront/navigateToSocialLayerStorefront.tsx");
 
 export default function navigateToSocialLayerStorefront(arg0) {
   let applicationId;
@@ -82,12 +188,12 @@ export default function navigateToSocialLayerStorefront(arg0) {
   let slug;
   ({ applicationId, guildId, pageIndex, invite, skuId, slug } = arg0);
   let applicationIdFromGuildId = applicationId;
-  if (null == applicationId) {
+  if (applicationId == null) {
     applicationIdFromGuildId = applicationIdFromGuildId.getApplicationIdFromGuildId(guildId);
   }
   let socialLayerStorefrontGuildId = guildId;
-  if (null == guildId) {
-    let obj = require(5644) /* _createForOfIteratorHelperLoose */;
+  if (guildId == null) {
+    let obj = require(5662) /* getPrice */;
     socialLayerStorefrontGuildId = obj.getSocialLayerStorefrontGuildId(applicationId);
   }
   if (null == applicationIdFromGuildId) {
@@ -99,10 +205,15 @@ export default function navigateToSocialLayerStorefront(arg0) {
     }
   }
   if (null != applicationIdFromGuildId) {
-    resolved = Promise.resolve(require(1198) /* shouldNavigate */.transitionTo(closure_7.COLLECTIBLES_SHOP_GAME_SHOP(applicationIdFromGuildId, pageIndex, skuId, slug)));
-    const obj3 = require(1198) /* shouldNavigate */;
+    resolved = Promise.resolve(require(1222) /* transitionTo */.transitionTo(closure_7.COLLECTIBLES_SHOP_GAME_SHOP(applicationIdFromGuildId, pageIndex, skuId, slug)));
+    const obj3 = require(1222) /* transitionTo */;
   } else {
-    obj = { guildId: socialLayerStorefrontGuildId, pageIndex, invite, skuId, slug };
+    obj = { guildId: null, pageIndex: null, invite: null, skuId: null, slug: null };
+    obj[0] = socialLayerStorefrontGuildId;
+    obj[1] = pageIndex;
+    obj[2] = invite;
+    obj[3] = skuId;
+    obj[4] = slug;
     resolved = navigateToSocialLayerStorefrontWithGuildPreview(obj);
   }
 };
@@ -113,14 +224,15 @@ export const eagerNavigateToSocialLayerStorefront = function eagerNavigateToSoci
   if (null != invite) {
     const guild = invite.guild;
     let id;
-    if (null != guild) {
+    if (guild != null) {
       id = guild.id;
     }
     guildId = id;
   }
   if (null != guildId) {
-    let obj = require(6667) /* _fetchSocialLayerStorefront */;
-    obj = { eager: true, forceFetch: forceFetch.forceFetch };
+    let obj = require(6688) /* _fetchSocialLayerStorefront */;
+    obj = { eager: true, forceFetch: null };
+    obj[1] = forceFetch.forceFetch;
     const socialLayerStorefront = obj.fetchSocialLayerStorefront(guildId, obj);
   }
 };
@@ -128,6 +240,6 @@ export const eagerNavigateToSocialLayerStorefrontForApplication = function eager
   let applicationId;
   let forceFetch;
   ({ applicationId, forceFetch } = arg0);
-  const socialLayerStorefrontForApplication = require(6667) /* _fetchSocialLayerStorefront */.fetchSocialLayerStorefrontForApplication(applicationId, { eager: true, forceFetch });
+  const socialLayerStorefrontForApplication = require(6688) /* _fetchSocialLayerStorefront */.fetchSocialLayerStorefrontForApplication(applicationId, { eager: true, forceFetch });
 };
 export { navigateToSocialLayerStorefrontWithGuildPreview };

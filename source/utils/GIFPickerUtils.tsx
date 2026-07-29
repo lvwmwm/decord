@@ -1,53 +1,51 @@
-// Module ID: 9577
-// Function ID: 74569
+// Module ID: 9598
+// Function ID: 9599
 // Name: isKlipyProvider
-// Dependencies: [653, 2]
-// Exports: calculateAnalyticsMetadata, getGIFThumbnailForFavorite
+// Dependencies: [676, 2]
+// Exports: calculateAnalyticsMetadata, getGIFThumbnailForFavorite, isKlipyProvider, shouldUseAnimatedWebPThumbnail
 
-// Module 9577 (isKlipyProvider)
+// Module 9598 (isKlipyProvider)
 import { SearchTypes } from "ME";
 
-function isKlipyProvider(providerName) {
-  return "Klipy" === providerName;
-}
-function shouldUseAnimatedWebPThumbnail(providerName) {
-  return isKlipyProvider(providerName);
-}
 const result = require("set").fileFinishedImporting("utils/GIFPickerUtils.tsx");
 
-export { isKlipyProvider };
-export { shouldUseAnimatedWebPThumbnail };
+export function isKlipyProvider(arg0) {
+  return "Klipy" === arg0;
+}
+export function shouldUseAnimatedWebPThumbnail(arg0) {
+  return "Klipy" === arg0;
+}
 export const getGIFThumbnailForFavorite = function getGIFThumbnailForFavorite(providerName) {
-  if (shouldUseAnimatedWebPThumbnail(providerName.providerName)) {
+  if ("Klipy" === providerName.providerName) {
     const thumbnail = providerName.thumbnail;
     if (null != thumbnail) {
       let uri = thumbnail.proxyURL;
-      if (null == uri) {
+      if (uri == null) {
         uri = thumbnail.url;
       }
-      if (null == uri) {
+      if (uri == null) {
         uri = thumbnail.uri;
       }
       return uri;
     }
   }
 };
-export const calculateAnalyticsMetadata = function calculateAnalyticsMetadata(analyticsID, type, arg2) {
+export const calculateAnalyticsMetadata = function calculateAnalyticsMetadata(analyticsID, TRENDING_GIFS, arg2) {
   let limit;
   let offset;
   let results;
-  let obj = arg2;
-  if (null != type) {
-    obj = {};
-    obj[type] = 1;
+  if (null != TRENDING_GIFS) {
+    let obj = {};
+    obj[TRENDING_GIFS] = 1;
   } else {
     obj = {};
   }
-  if (null == obj) {
+  obj = arg2;
+  if (arg2 == null) {
     obj = {};
   }
   ({ offset, limit, results } = obj);
-  const obj1 = { search_type: SearchTypes.GIF, load_id: analyticsID, limit, offset };
+  const obj1 = { search_type: SearchTypes.GIF, load_id: analyticsID, limit, offset, page: null, total_results: null, page_results: null, num_modifiers: null, modifiers: null };
   let num2 = 1;
   if (null != limit) {
     num2 = 1;
@@ -56,14 +54,14 @@ export const calculateAnalyticsMetadata = function calculateAnalyticsMetadata(an
       num2 = Math.floor(offset / limit) + 1;
     }
   }
-  obj1.page = num2;
-  obj1.total_results = obj.totalResults;
+  obj1[4] = num2;
+  obj1[5] = obj.totalResults;
   let tmp2 = null;
   if (null != results) {
     tmp2 = results;
   }
-  obj1.page_results = tmp2;
-  obj1.num_modifiers = Object.keys(obj).length;
-  obj1.modifiers = obj;
+  obj1[6] = tmp2;
+  obj1[7] = Object.keys(obj).length;
+  obj1[8] = obj;
   return obj1;
 };

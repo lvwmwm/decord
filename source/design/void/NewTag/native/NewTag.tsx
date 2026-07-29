@@ -1,25 +1,25 @@
-// Module ID: 13114
-// Function ID: 101212
+// Module ID: 13137
+// Function ID: 13138
 // Name: NewTag
-// Dependencies: [31, 27, 653, 33, 4165, 689, 4589, 4161, 1212, 2]
+// Dependencies: [19, 17, 676, 21, 4189, 712, 4611, 4185, 1236, 2]
 // Exports: default
 
-// Module 13114 (NewTag)
-import "result";
+// Module 13137 (NewTag)
+import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { HorizontalGradient } from "ME";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
 let Platform;
-let closure_3;
+let c3;
 const require = arg1;
-({ View: closure_3, Platform } = get_ActivityIndicator);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { height: "auto", backgroundColor: require("_createForOfIteratorHelperLoose").unsafe_rawColors.RED_400, justifyContent: "center", alignItems: "center", paddingHorizontal: 4, marginBottom: 2, borderRadius: require("_createForOfIteratorHelperLoose").radii.round };
-_createForOfIteratorHelperLoose.tagContainer = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.tagText = { textTransform: "uppercase" };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+({ View: c3, Platform } = get_ActivityIndicator);
+createCacheKey = { tagContainer: null, tagText: null };
+createCacheKey = { height: "auto", backgroundColor: require("Themes").unsafe_rawColors.RED_400, justifyContent: "center", alignItems: "center", paddingHorizontal: 4, marginBottom: 2, borderRadius: require("Themes").radii.round };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { textTransform: "uppercase" };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
 const result = require("ME").fileFinishedImporting("design/void/NewTag/native/NewTag.tsx");
 
 export default function NewTag(color) {
@@ -40,48 +40,52 @@ export default function NewTag(color) {
   }
   let sm = color.borderRadius;
   if (sm === undefined) {
-    sm = importDefault(689).radii.sm;
+    sm = importDefault(712).radii.sm;
   }
   let colors = color.colors;
   if (colors === undefined) {
-    const items = [importDefault(689).unsafe_rawColors.PREMIUM_TIER_2_PURPLE, importDefault(689).unsafe_rawColors.PREMIUM_TIER_2_PINK];
+    const items = [importDefault(712).unsafe_rawColors.PREMIUM_TIER_2_PURPLE, importDefault(712).unsafe_rawColors.PREMIUM_TIER_2_PINK];
     colors = items;
   }
-  let obj = { containerStyle: 0, textStyle: 0, variant: 0, color: 0, gradient: 0, borderRadius: 0, colors: 0 };
-  Object.setPrototypeOf(null);
-  const merged = Object.assign(color, obj);
-  const tmp7 = _createForOfIteratorHelperLoose();
+  const merged = Object.assign(color, Object.create(null));
+  const tmp6 = createCacheKey();
   if (flag) {
-    obj = {};
-    obj = { borderRadius: sm, marginLeft: importDefault(689).space.PX_4 };
-    obj.style = obj;
-    ({ START: obj4.start, END: obj4.end } = HorizontalGradient);
-    obj.colors = colors;
-    const obj1 = {};
-    const items1 = [tmp7.tagContainer, containerStyle];
-    obj1.style = items1;
-    const obj2 = { variant, color: str };
+    let obj = { style: null, start: null, end: null, colors: null, children: null };
+    obj = { borderRadius: null, marginLeft: null };
+    obj[0] = sm;
+    obj[1] = importDefault(712).space.PX_4;
+    obj[0] = obj;
+    ({ START: obj3[1], END: obj3[2] } = HorizontalGradient);
+    obj[3] = colors;
+    const obj1 = { style: null, children: null };
+    const items1 = [tmp6.tagContainer, containerStyle];
+    obj1[0] = items1;
+    const obj2 = { variant: null, color: null };
+    obj2[0] = variant;
+    obj2[1] = str;
     const merged1 = Object.assign(merged);
-    const items2 = [tmp7.tagText, textStyle];
-    obj2["style"] = items2;
-    const intl2 = require(1212) /* getSystemLocale */.intl;
-    obj2["children"] = intl2.string(require(1212) /* getSystemLocale */.t.y2b7CA);
-    obj1.children = tmp8(require(4161) /* Text */.Text, obj2);
-    obj.children = tmp8(closure_3, obj1);
-    let tmp8Result = tmp8(importDefault(4589), obj);
-    const tmp18 = importDefault(4589);
+    const items2 = [tmp6.tagText, textStyle];
+    obj2.style = items2;
+    const intl2 = require(1236) /* getSystemLocale */.intl;
+    obj2.children = intl2.string(require(1236) /* getSystemLocale */.t.y2b7CA);
+    obj1[1] = tmp7(require(4185) /* Text */.Text, obj2);
+    obj[4] = tmp7(closure_3, obj1);
+    let tmp7Result = tmp7(importDefault(4611), obj);
+    const tmp17 = importDefault(4611);
   } else {
-    const obj3 = {};
-    const items3 = [tmp7.tagContainer, containerStyle];
-    obj3.style = items3;
-    const obj4 = { variant, color: str };
+    obj = { style: null, children: null };
+    const items3 = [tmp6.tagContainer, containerStyle];
+    obj[0] = items3;
+    const obj3 = { variant: null, color: null };
+    obj3[0] = variant;
+    obj3[1] = str;
     const merged2 = Object.assign(merged);
-    const items4 = [tmp7.tagText, textStyle];
-    obj4["style"] = items4;
-    const intl = require(1212) /* getSystemLocale */.intl;
-    obj4["children"] = intl.string(require(1212) /* getSystemLocale */.t.y2b7CA);
-    obj3.children = tmp8(require(4161) /* Text */.Text, obj4);
-    tmp8Result = tmp8(closure_3, obj3);
+    const items4 = [tmp6.tagText, textStyle];
+    obj3.style = items4;
+    const intl = require(1236) /* getSystemLocale */.intl;
+    obj3.children = intl.string(require(1236) /* getSystemLocale */.t.y2b7CA);
+    obj[1] = tmp7(require(4185) /* Text */.Text, obj3);
+    tmp7Result = tmp7(closure_3, obj);
   }
-  return tmp8Result;
+  return tmp7Result;
 };

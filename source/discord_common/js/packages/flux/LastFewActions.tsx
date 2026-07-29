@@ -1,10 +1,10 @@
-// Module ID: 571
-// Function ID: 6940
+// Module ID: 594
+// Function ID: 595
 // Name: add
 // Dependencies: [2]
 // Exports: add, clear, last, serialize
 
-// Module 571 (add)
+// Module 594 (add)
 let closure_0 = [];
 const result = require("set").fileFinishedImporting("../discord_common/js/packages/flux/LastFewActions.tsx");
 

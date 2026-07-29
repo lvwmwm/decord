@@ -1,24 +1,24 @@
-// Module ID: 13890
-// Function ID: 106299
+// Module ID: 13911
+// Function ID: 13912
 // Name: useOnNewPendingRequest
-// Dependencies: [31, 5775, 6235, 566, 4594, 5777, 2]
+// Dependencies: [19, 5793, 6255, 589, 4616, 5795, 2]
 // Exports: default
 
-// Module 13890 (useOnNewPendingRequest)
-import result from "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 13911 (useOnNewPendingRequest)
+import noop from "noop";
+import freshTeenActivityWithMap from "freshTeenActivityWithMap";
 
 const require = arg1;
 const result = require("useUserIdsForLinkStatus").fileFinishedImporting("modules/parent_tools/hooks/useOnNewPendingRequest.tsx");
 
-export default function useOnNewPendingRequest(arg0) {
-  const _require = arg0;
+export default function useOnNewPendingRequest(stateFromStores) {
+  const _require = stateFromStores;
   const pendingRequestCount = _require(stateFromStores[2]).usePendingRequestCount();
   let obj = _require(stateFromStores[2]);
-  const items = [_isNativeReflectConstruct];
-  stateFromStores = _require(stateFromStores[3]).useStateFromStores(items, () => authStore.getAreLinkedUsersProcessed());
+  const items = [freshTeenActivityWithMap];
+  stateFromStores = _require(stateFromStores[3]).useStateFromStores(items, () => ref2.getAreLinkedUsersProcessed());
   pendingRequestCount(stateFromStores[4])(() => {
-    if (!authStore.getAreLinkedUsersProcessed()) {
+    if (!ref2.getAreLinkedUsersProcessed()) {
       const linkedUsers = pendingRequestCount(stateFromStores[5]).fetchLinkedUsers();
       linkedUsers.catch(() => {
 
@@ -26,22 +26,22 @@ export default function useOnNewPendingRequest(arg0) {
       const obj = pendingRequestCount(stateFromStores[5]);
     }
   });
-  React = React.useRef(arg0);
-  const items1 = [arg0];
+  React = React.useRef(stateFromStores);
+  const items1 = [stateFromStores];
   const effect = React.useEffect(() => {
-    result.current = closure_0;
+    noop.current = closure_0;
   }, items1);
-  _isNativeReflectConstruct = React.useRef(null);
+  freshTeenActivityWithMap = React.useRef(null);
   const items2 = [stateFromStores, pendingRequestCount];
   const effect1 = React.useEffect(() => {
     if (stateFromStores) {
-      if (null != authStore.current) {
-        authStore.current = pendingRequestCount;
-        if (pendingRequestCount > authStore.current) {
+      if (null != ref2.current) {
+        tmp.current = pendingRequestCount;
+        if (pendingRequestCount > tmp.current) {
           ref.current();
         }
       } else {
-        authStore.current = pendingRequestCount;
+        tmp.current = pendingRequestCount;
       }
     }
   }, items2);

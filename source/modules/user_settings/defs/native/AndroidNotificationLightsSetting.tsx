@@ -1,59 +1,71 @@
-// Module ID: 14430
-// Function ID: 110287
+// Module ID: 14452
+// Function ID: 14453
 // Name: toggle
-// Dependencies: [14418, 7733, 477, 14420, 10099, 1212, 2]
+// Dependencies: [14440, 7756, 500, 14442, 10120, 1236, 2]
 
-// Module 14430 (toggle)
+// Module 14452 (toggle)
 import _initializeAndroidNotificationSettingsStore from "_initializeAndroidNotificationSettingsStore";
 import createToggle from "createToggle";
 
-let closure_2 = _initializeAndroidNotificationSettingsStore.useAndroidNotificationLightsEnabled;
+let obj1;
+let setAndroidNotificationLightsEnabled;
+({ useAndroidNotificationLightsEnabled: obj1, setAndroidNotificationLightsEnabled } = _initializeAndroidNotificationSettingsStore);
 const toggle = createToggle.createToggle({
   useTitle() {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(require(1212) /* getSystemLocale */.t.E3xHUp);
+    const intl = require(1236) /* getSystemLocale */.intl;
+    return intl.string(require(1236) /* getSystemLocale */.t.E3xHUp);
   },
   parent: require("MobileSetting").MobileSetting.NOTIFICATIONS,
   useValue: function useAndroidNotificationLightsSettingValue() {
-    const tmp = callback();
-    return null != tmp && tmp;
+    let flag = callback();
+    if (flag == null) {
+      flag = false;
+    }
+    return flag;
   },
-  onValueChange: _initializeAndroidNotificationSettingsStore.setAndroidNotificationLightsEnabled,
+  onValueChange: setAndroidNotificationLightsEnabled,
   usePredicate: function useHasAndroidNotificationLightsSetting() {
     const tmp = callback();
-    let tmp2 = !require(477) /* set */.isIOS();
-    if (tmp2) {
-      tmp2 = !require(14420) /* hasAndroidNotificationChannels */.hasAndroidNotificationChannels();
-      const obj2 = require(14420) /* hasAndroidNotificationChannels */;
+    const tmp2 = require;
+    const isIOSResult = require(500) /* set */.isIOS();
+    let tmp5 = !isIOSResult;
+    if (!isIOSResult) {
+      tmp5 = !tmp2(14442).hasAndroidNotificationChannels();
+      const tmp2Result = tmp2(14442);
     }
-    if (tmp2) {
-      tmp2 = null != tmp;
+    if (tmp5) {
+      tmp5 = null != tmp;
     }
-    return tmp2;
+    return tmp5;
   }
 });
 const obj = {
   useTitle() {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(require(1212) /* getSystemLocale */.t.E3xHUp);
+    const intl = require(1236) /* getSystemLocale */.intl;
+    return intl.string(require(1236) /* getSystemLocale */.t.E3xHUp);
   },
   parent: require("MobileSetting").MobileSetting.NOTIFICATIONS,
   useValue: function useAndroidNotificationLightsSettingValue() {
-    const tmp = callback();
-    return null != tmp && tmp;
+    let flag = callback();
+    if (flag == null) {
+      flag = false;
+    }
+    return flag;
   },
-  onValueChange: _initializeAndroidNotificationSettingsStore.setAndroidNotificationLightsEnabled,
+  onValueChange: setAndroidNotificationLightsEnabled,
   usePredicate: function useHasAndroidNotificationLightsSetting() {
     const tmp = callback();
-    let tmp2 = !require(477) /* set */.isIOS();
-    if (tmp2) {
-      tmp2 = !require(14420) /* hasAndroidNotificationChannels */.hasAndroidNotificationChannels();
-      const obj2 = require(14420) /* hasAndroidNotificationChannels */;
+    const tmp2 = require;
+    const isIOSResult = require(500) /* set */.isIOS();
+    let tmp5 = !isIOSResult;
+    if (!isIOSResult) {
+      tmp5 = !tmp2(14442).hasAndroidNotificationChannels();
+      const tmp2Result = tmp2(14442);
     }
-    if (tmp2) {
-      tmp2 = null != tmp;
+    if (tmp5) {
+      tmp5 = null != tmp;
     }
-    return tmp2;
+    return tmp5;
   }
 };
 const result = require("set").fileFinishedImporting("modules/user_settings/defs/native/AndroidNotificationLightsSetting.tsx");

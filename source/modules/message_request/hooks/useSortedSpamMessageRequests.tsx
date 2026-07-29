@@ -1,38 +1,38 @@
-// Module ID: 15684
-// Function ID: 120741
+// Module ID: 15719
+// Function ID: 15720
 // Name: useSortedSpamMessageRequests
-// Dependencies: [31, 1348, 1850, 5638, 566, 15674, 2]
+// Dependencies: [19, 1372, 1874, 5656, 589, 15709, 2]
 // Exports: default
 
-// Module 15684 (useSortedSpamMessageRequests)
-import result from "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_4 from "_isNativeReflectConstruct";
-import closure_5 from "_isNativeReflectConstruct";
+// Module 15719 (useSortedSpamMessageRequests)
+import noop from "noop";
+import ensureGuildLoaded from "ensureGuildLoaded";
+import mergeGuildAvatar from "mergeGuildAvatar";
+import processChannel from "processChannel";
 
 const require = arg1;
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/message_request/hooks/useSortedSpamMessageRequests.tsx");
+const result = require("mergeGuildAvatar").fileFinishedImporting("modules/message_request/hooks/useSortedSpamMessageRequests.tsx");
 
 export default function useSortedSpamMessageRequests() {
-  const items = [_isNativeReflectConstruct];
-  const stateFromStores = stateFromStoresArray(stateFromStoresObject[4]).useStateFromStores(items, () => outer1_3.getPrivateChannelsVersion());
+  const items = [ensureGuildLoaded];
+  const stateFromStores = stateFromStoresArray(stateFromStoresObject[4]).useStateFromStores(items, () => store.getPrivateChannelsVersion());
   let obj = stateFromStoresArray(stateFromStoresObject[4]);
-  const items1 = [_isNativeReflectConstruct, closure_5];
+  const items1 = [ensureGuildLoaded, processChannel];
   const items2 = [stateFromStores];
   stateFromStoresArray = stateFromStoresArray(stateFromStoresObject[4]).useStateFromStoresArray(items1, () => {
-    const mutablePrivateChannels = outer1_3.getMutablePrivateChannels();
-    const mapped = Array.from(outer1_5.getSpamChannelIds()).map((arg0) => table[arg0]);
+    const stateFromStoresArray = store.getMutablePrivateChannels();
+    const mapped = Array.from(spamChannelIds.getSpamChannelIds()).map((arg0) => table[arg0]);
     const found = mapped.filter((arg0) => null != arg0);
-    const arr = Array.from(outer1_5.getSpamChannelIds());
+    const arr = Array.from(spamChannelIds.getSpamChannelIds());
     return stateFromStoresArray(stateFromStoresObject[5]).sortChannelIds(found);
   }, items2);
   const obj2 = stateFromStoresArray(stateFromStoresObject[4]);
-  const items3 = [closure_4];
+  const items3 = [mergeGuildAvatar];
   const items4 = [stateFromStoresArray];
   stateFromStoresObject = stateFromStoresArray(stateFromStoresObject[4]).useStateFromStoresObject(items3, () => {
     const obj = {};
     const item = obj.forEach((id) => {
-      const user = outer2_4.getUser(id.recipients[0]);
+      const user = outer1_4.getUser(id.recipients[0]);
       if (null != user) {
         obj[id.id] = user;
       }
@@ -40,5 +40,5 @@ export default function useSortedSpamMessageRequests() {
     return obj;
   }, items4);
   const items5 = [stateFromStoresArray, stateFromStoresObject];
-  return React.useMemo(() => stateFromStoresArray.map((channel) => ({ channel, user: outer1_1[channel.id] })), items5);
+  return React.useMemo(() => stateFromStoresArray.map((channel) => ({ channel, user: table[channel.id] })), items5);
 };

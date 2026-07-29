@@ -1,39 +1,28 @@
-// Module ID: 5803
-// Function ID: 50829
-// Name: CollectiblesMarketingBadgeRecord
-// Dependencies: [6, 7, 5804, 2]
+// Module ID: 5821
+// Function ID: 5822
+// Name: fromServer
+// Dependencies: [5822, 2]
 
-// Module 5803 (CollectiblesMarketingBadgeRecord)
-import _classCallCheck from "_classCallCheck";
-import _defineProperties from "_defineProperties";
-
-const require = arg1;
-const tmp2 = (() => {
-  class CollectiblesMarketingBadgeRecord {
-    constructor(arg0) {
-      tmp = outer1_2(this, CollectiblesMarketingBadgeRecord);
-      this.type = CollectiblesMarketingBadgeRecord(outer1_1[2]).CollectiblesMarketingType.BADGE;
-      ({ dismissibleContent: this.dismissibleContent, version: this.version, refTargetBackground: this.refTargetBackground, badgeIcon: this.badgeIcon, badgeText: this.badgeText, showHoverGradient: this.showHoverGradient } = arg0);
-      return;
-    }
+// Module 5821 (fromServer)
+let prototype;
+prototype = function CollectiblesMarketingBadgeRecord(arg0) {
+  const obj = Object.create(new.target.prototype);
+  obj.type = require(5822) /* CollectiblesMarketingType */.CollectiblesMarketingType.BADGE;
+  ({ dismissibleContent: tmp.dismissibleContent, version: tmp.version, refTargetBackground: tmp.refTargetBackground, badgeIcon: tmp.badgeIcon, badgeText: tmp.badgeText, showHoverGradient: tmp.showHoverGradient } = arg0);
+  return obj;
+}.prototype;
+prototype["fromServer"] = function fromServer(arg0) {
+  let obj = {};
+  const merged = Object.assign(arg0);
+  ({ dismissible_content: obj.dismissibleContent, ref_target_background: obj.refTargetBackground, badge_icon: obj.badgeIcon, badge_text: obj.badgeText, show_hover_gradient: obj.showHoverGradient } = arg0);
+  if (typeof prototype !== "find") {
+    HermesBuiltin.throwTypeError();
   }
-  const items = [
-    {
-      key: "fromServer",
-      value(dismissible_content) {
-        const obj = {};
-        const merged = Object.assign(dismissible_content);
-        obj["dismissibleContent"] = dismissible_content.dismissible_content;
-        obj["refTargetBackground"] = dismissible_content.ref_target_background;
-        obj["badgeIcon"] = dismissible_content.badge_icon;
-        obj["badgeText"] = dismissible_content.badge_text;
-        obj["showHoverGradient"] = dismissible_content.show_hover_gradient;
-        return new CollectiblesMarketingBadgeRecord(obj);
-      }
-    }
-  ];
-  return callback(CollectiblesMarketingBadgeRecord, null, items);
-})();
-const result = require("CollectiblesMarketingType").fileFinishedImporting("modules/collectibles/records/CollectiblesMarketingBadgeRecord.tsx");
+  obj = Object.create(prototype.prototype);
+  obj.type = require(5822) /* CollectiblesMarketingType */.CollectiblesMarketingType.BADGE;
+  ({ dismissibleContent: tmp3.dismissibleContent, version: tmp3.version, refTargetBackground: tmp3.refTargetBackground, badgeIcon: tmp3.badgeIcon, badgeText: tmp3.badgeText, showHoverGradient: tmp3.showHoverGradient } = obj);
+  return obj;
+};
+const result = require("set").fileFinishedImporting("modules/collectibles/records/CollectiblesMarketingBadgeRecord.tsx");
 
-export const CollectiblesMarketingBadgeRecord = tmp2;
+export const CollectiblesMarketingBadgeRecord = prototype;

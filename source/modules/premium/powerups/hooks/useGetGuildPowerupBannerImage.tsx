@@ -1,20 +1,39 @@
-// Module ID: 11588
-// Function ID: 90058
-// Name: getGuildPowerupBannerImage
-// Dependencies: [4157, 566, 2]
-// Exports: default
+// Module ID: 11612
+// Function ID: 11613
+// Name: useGetGuildPowerupBannerImage
+// Dependencies: [4181, 589, 2]
+// Exports: default, getGuildPowerupBannerImage
 
-// Module 11588 (getGuildPowerupBannerImage)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 11612 (useGetGuildPowerupBannerImage)
+import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
 
 const require = arg1;
-function getGuildPowerupBannerImage(found, outer1_4, arg2, arg3) {
+const result = require("set").fileFinishedImporting("modules/premium/powerups/hooks/useGetGuildPowerupBannerImage.tsx");
+
+export default function useGetGuildPowerupBannerImage(animatedImageUrl) {
+  require(589) /* initialize */;
+  [][0] = maybeApplyNoTextColorForLightCustomTheme;
+  if (null != animatedImageUrl) {
+    if (!tmp2) {
+      if (false !== arg1) {
+        if (!arg2) {
+          let staticImageUrl = animatedImageUrl.animatedImageUrl;
+          if (staticImageUrl == null) {
+            staticImageUrl = animatedImageUrl.staticImageUrl;
+          }
+        }
+      }
+    }
+    staticImageUrl = animatedImageUrl.staticImageUrl;
+  }
+};
+export const getGuildPowerupBannerImage = function getGuildPowerupBannerImage(found, outer1_4, arg2) {
   if (null != found) {
     if (!outer1_4) {
       if (false !== arg2) {
         if (!arg3) {
           let staticImageUrl = found.animatedImageUrl;
-          if (null == staticImageUrl) {
+          if (staticImageUrl == null) {
             staticImageUrl = found.staticImageUrl;
           }
         }
@@ -23,11 +42,4 @@ function getGuildPowerupBannerImage(found, outer1_4, arg2, arg3) {
     }
     staticImageUrl = found.staticImageUrl;
   }
-}
-const result = require("set").fileFinishedImporting("modules/premium/powerups/hooks/useGetGuildPowerupBannerImage.tsx");
-
-export default function useGetGuildPowerupBannerImage(found) {
-  const items = [_isNativeReflectConstruct];
-  return getGuildPowerupBannerImage(found, require(566) /* initialize */.useStateFromStores(items, () => outer1_2.useReducedMotion), arg1, arg2);
 };
-export { getGuildPowerupBannerImage };

@@ -1,12 +1,12 @@
-// Module ID: 11639
-// Function ID: 90298
+// Module ID: 11663
+// Function ID: 11664
 // Name: GuildPowerupsMultiPerkCard
-// Dependencies: [31, 4157, 33, 11616, 566, 11640, 11613, 11638, 2]
+// Dependencies: [19, 4181, 21, 11640, 589, 11664, 11637, 11662, 2]
 // Exports: default
 
-// Module 11639 (GuildPowerupsMultiPerkCard)
-import result from "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 11663 (GuildPowerupsMultiPerkCard)
+import noop from "noop";
+import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
 import { jsx } from "jsxProd";
 
 const require = arg1;
@@ -16,30 +16,30 @@ export default function GuildPowerupsMultiPerkCard(guildId) {
   let costDecorator;
   guildId = guildId.guildId;
   const listing = guildId.listing;
-  let badge = listing(11616)(guildId, listing);
-  let obj = guildId(566);
-  const items = [_isNativeReflectConstruct];
-  const stateFromStores = obj.useStateFromStores(items, () => outer1_4.useReducedMotion);
+  let badge = listing(11640)(guildId, listing);
+  let obj = guildId(589);
+  const items = [maybeApplyNoTextColorForLightCustomTheme];
+  const stateFromStores = obj.useStateFromStores(items, () => useReducedMotion.useReducedMotion);
   obj = { guildId, powerups: listing.powerups };
-  costDecorator = listing(11640)(obj);
+  costDecorator = listing(11664)(obj);
   const items1 = [guildId, listing];
-  let tmp3 = null;
+  let tmp5 = null;
   if (null != costDecorator) {
-    tmp3 = null;
+    tmp5 = null;
     if (null != badge) {
-      obj = {};
-      ({ title: obj3.title, description: obj3.description } = badge);
-      obj.cost = costDecorator.cost;
+      obj = { title: null, description: null, cost: null, imageUrl: null, status: null, costDecorator: null, onPress: null, badge: null };
+      ({ title: obj3[0], description: obj3[1] } = badge);
+      obj[2] = costDecorator.cost;
       const image = badge.image;
-      obj.imageUrl = stateFromStores ? image.staticUrl : image.animatedUrl;
-      ({ status: obj3.status, costDecorator } = costDecorator);
-      obj.costDecorator = costDecorator;
-      obj.onPress = tmp2;
+      obj[3] = stateFromStores ? image.staticUrl : image.animatedUrl;
+      ({ status: obj3[4], costDecorator } = costDecorator);
+      obj[5] = costDecorator;
+      obj[6] = tmp4;
       badge = badge.badge;
-      obj.badge = badge;
-      jsx(listing(11638), {});
-      const tmp4 = jsx;
+      obj[7] = badge;
+      jsx(listing(11662), { title: null, description: null, cost: null, imageUrl: null, status: null, costDecorator: null, onPress: null, badge: null });
+      const tmp6 = jsx;
     }
   }
-  return tmp3;
+  return tmp5;
 };

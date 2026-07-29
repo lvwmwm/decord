@@ -1,29 +1,29 @@
-// Module ID: 12031
-// Function ID: 92831
+// Module ID: 12055
+// Function ID: 12056
 // Name: GameFriendApplicationRow
-// Dependencies: [5, 57, 31, 27, 3802, 653, 33, 4165, 689, 11689, 5535, 5153, 1273, 4161, 12032, 5503, 4354, 8894, 3865, 4133, 5533, 5220, 1212, 2]
+// Dependencies: [5, 32, 19, 17, 3826, 676, 21, 4189, 712, 11713, 5553, 5175, 1297, 4185, 12056, 5521, 4379, 8918, 3889, 4157, 5551, 5242, 1236, 2]
 // Exports: default
 
-// Module 12031 (GameFriendApplicationRow)
+// Module 12055 (GameFriendApplicationRow)
 import ME from "ME";
 import _slicedToArray from "_slicedToArray";
-import result from "result";
-import get_ActivityIndicator from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import ACTION_SHEET_HEIGHT_HALF from "ACTION_SHEET_HEIGHT_HALF";
+import get_ActivityIndicator from "handleRelationshipAddError";
+import upsertRelationship from "upsertRelationship";
 import { RelationshipTypes } from "ME";
-import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import jsxProd from "RedesignBottomSheetTitleHeaderBase";
+import createCacheKey from "createCacheKey";
 
-let closure_10;
-let closure_11;
+let c10;
 let closure_6;
-let closure_7;
+let error;
+let unpackModuleId;
 const require = arg1;
 function GameFriendApplicationRow(application) {
   application = application.application;
   const userId = application.userId;
   const userDisplayName = application.userDisplayName;
-  const tmp = _createForOfIteratorHelperLoose();
+  const tmp = createCacheKey();
   const items = [, , , ];
   ({ id: arr[0], name: arr[1] } = application);
   items[2] = userDisplayName;
@@ -33,113 +33,188 @@ function GameFriendApplicationRow(application) {
     obj = { userDisplayName, userId, applicationId: application.id, gameName: application.name };
     const result = obj.confirmRemoveGameFriend(obj);
   }, items);
-  let obj = { trailing: callback3(application(userDisplayName[11]).XSmallIcon, { size: "md", color: "redesign-button-tertiary-text" }) };
-  obj = { style: tmp.applicationNameWrapper };
-  obj = { style: tmp.gameIcon, resizeMode: "contain" };
-  const obj1 = {};
-  const iconURL = application.getIconURL(32);
-  let str = "";
-  if (null != iconURL) {
-    str = iconURL;
+  let obj = { trailing: null, label: null, onPress: null };
+  obj[0] = callback3(application(userDisplayName[11]).XSmallIcon, { size: "md", color: "redesign-button-tertiary-text" });
+  obj = { style: tmp.applicationNameWrapper, children: null };
+  obj = { style: tmp.gameIcon, resizeMode: "contain", source: null, disableColor: true };
+  let str = application.getIconURL(32);
+  if (str == null) {
+    str = "";
   }
-  obj1.uri = str;
-  obj.source = obj1;
-  obj.disableColor = true;
-  const items1 = [callback3(application(userDisplayName[12]).Icon, obj, application.id), ];
-  const obj2 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: application.name };
-  items1[1] = callback3(application(userDisplayName[13]).Text, obj2);
-  obj.children = items1;
-  obj.label = closure_11(closure_7, obj);
-  obj.onPress = callback;
+  obj[2] = { uri: str };
+  const items1 = [callback3(application(userDisplayName[12]).Icon, obj, application.id), callback3(application(userDisplayName[13]).Text, { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: application.name })];
+  obj[1] = items1;
+  obj[1] = closure_11(closure_7, obj);
+  obj[2] = callback;
   return callback3(application(userDisplayName[10]).ActionSheetRow, obj, application.id);
 }
-({ ActivityIndicator: closure_6, View: closure_7 } = get_ActivityIndicator);
-({ jsx: closure_10, jsxs: closure_11 } = jsxProd);
-_createForOfIteratorHelperLoose = { applicationNameWrapper: { flexDirection: "row", justifyContent: "flex-start", alignItems: "center", gap: 12 } };
-_createForOfIteratorHelperLoose = { width: 32, height: 32, borderRadius: require("_createForOfIteratorHelperLoose").radii.sm };
-_createForOfIteratorHelperLoose.gameIcon = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-let result = require("result").fileFinishedImporting("modules/user_profile/native/UserProfileGameFriendActionSheet.tsx");
+({ ActivityIndicator: closure_6, View: error } = get_ActivityIndicator);
+({ jsx: c10, jsxs: unpackModuleId } = jsxProd);
+createCacheKey = { applicationNameWrapper: { flexDirection: "row", justifyContent: "flex-start", alignItems: "center", gap: 12 }, gameIcon: null };
+createCacheKey = { width: 32, height: 32, borderRadius: require("Themes").radii.sm };
+createCacheKey[1] = createCacheKey;
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let result = require("noop").fileFinishedImporting("modules/user_profile/native/UserProfileGameFriendActionSheet.tsx");
 
 export default function UserProfileGameFriendActionSheet(user) {
+  let c4;
   let channelId;
   let guildId;
+  let tmp7;
   user = user.user;
+  let gameFriendsForUser;
+  let memo;
+  let callback;
+  let callback2;
+  let React;
   ({ guildId, channelId } = user);
   let obj = user(memo[14]);
-  const gameFriendsForUser = obj.useGameFriendsForUser(user.id);
+  gameFriendsForUser = obj.useGameFriendsForUser(user.id);
   const items = [gameFriendsForUser];
   memo = React.useMemo(() => gameFriendsForUser.map((applicationId) => applicationId.applicationId), items);
   let obj1 = gameFriendsForUser(memo[16]);
-  let callback = obj1.useName(guildId, channelId, user);
+  callback = obj1.useName(guildId, channelId, user);
   let first = callback2(React.useState(() => {
     if (!outer1_8.isFriend(user.id)) {
-      if (!outer1_8.isBlockedOrIgnored(user.id)) {
-        const relationshipType = outer1_8.getRelationshipType(user.id);
-        let tmp7 = relationshipType !== outer1_9.PENDING_OUTGOING;
-        if (tmp7) {
-          tmp7 = relationshipType !== outer1_9.PENDING_INCOMING;
-        }
-        return tmp7;
+      if (!obj.isBlockedOrIgnored(tmp.id)) {
+        const relationshipType = obj.getRelationshipType(tmp.id);
+        return relationshipType !== outer1_9.PENDING_OUTGOING && relationshipType !== outer1_9.PENDING_INCOMING;
       }
     }
     return false;
   }), 1)[0];
-  const tmp4 = callback2(React.useState(false), 2);
-  callback2 = tmp4[1];
-  const tmp5 = callback2(React.useState(false), 2);
-  React = tmp6;
-  // CreateGeneratorClosureLongIndex (0x67)
+  const arr2 = gameFriendsForUser(memo[15])(memo);
+  [tmp7, c4] = callback2(React.useState(false), 2);
+  const tmp8 = callback2(React.useState(false), 2);
+  React = tmp8[1];
   const items1 = [user.id];
   const items2 = [memo];
-  callback = React.useCallback(callback(tmp6), items1);
+  callback = React.useCallback(callback(function*() {
+    if (v02 === 2) {
+      v02 = 3;
+      HermesBuiltin.throwTypeError();
+    } else if (tmp7 === 3) {
+      if (arg0 === 1) {
+        throw arg1;
+      } else if (arg0 === 2) {
+        let obj = { value: null, done: true };
+        obj[0] = arg1;
+        return obj;
+      } else {
+        return { value: "HermesInternal", done: null };
+      }
+    } else {
+      try {
+        v02 = 2;
+        if (0 === v0) {
+          if (arg0 === 1) {
+            v02 = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            v02 = 3;
+            obj = { value: null, done: true };
+            obj[0] = arg1;
+            return obj;
+          } else {
+            let closure_0 = tmp4;
+            v02(true);
+            outer1_5(true);
+            let c3 = 2;
+            let obj2 = v0(outer1_2[17]);
+            const obj1 = { userId: null, context: null };
+            obj1[0] = outer1_0.id;
+            obj1[1] = { location: "User Profile Action Sheet" };
+            v0 = 3;
+            v02 = 1;
+            obj2 = { value: null, done: false };
+            obj2[0] = obj2.addRelationship(obj1);
+            return obj2;
+          }
+        } else if (1 === tmp8) {
+          c3 = 0;
+          callback(false);
+          throw closure_2;
+        } else {
+          if (2 === tmp8) {
+            c3 = 1;
+            v02(false);
+            c3 = 0;
+            outer1_5(false);
+            v02 = 3;
+          } else if (arg0 === 1) {
+            v02 = 3;
+            throw arg1;
+          } else if (arg0 !== 2) {
+            obj = outer1_0(outer1_2[18]);
+            const result = obj.presentAddedFriendToast();
+            c3 = 1;
+          }
+          c3 = 0;
+          outer1_5(false);
+          v02 = 3;
+          const obj3 = { value: null, done: true };
+          obj3[0] = arg1;
+          return obj3;
+        }
+      } catch (tmp34) {
+        closure_2 = tmp34;
+        if (tmp5 === c3) {
+          v02 = tmp3;
+          throw tmp34;
+        } else if (tmp2 === tmp36) {
+          v0 = tmp2;
+        } else {
+          v0 = tmp;
+        }
+      }
+    }
+  }), items1);
   const effect = React.useEffect(() => {
     if (0 === memo.length) {
       gameFriendsForUser(memo[19]).hideActionSheet();
       const obj = gameFriendsForUser(memo[19]);
     }
   }, items2);
-  obj = {};
-  obj = {};
+  obj = { header: null, children: null };
+  obj = { title: null };
   const intl = user(memo[22]).intl;
-  obj.title = intl.string(user(memo[22]).t["Uv/eTx"]);
-  obj.header = callback3(user(memo[21]).BottomSheetTitleHeader, obj);
-  obj1 = {};
+  obj[0] = intl.string(user(memo[22]).t["Uv/eTx"]);
+  obj[0] = callback3(user(memo[21]).BottomSheetTitleHeader, obj);
+  obj1 = { title: null, hasIcons: false, children: null };
   const intl2 = user(memo[22]).intl;
-  obj1.title = intl2.string(user(memo[22]).t.YpCiMt);
-  obj1.hasIcons = false;
-  obj1.children = gameFriendsForUser(memo[15])(memo).map((application) => {
-    let tmp = null != application;
+  obj1[0] = intl2.string(user(memo[22]).t.YpCiMt);
+  obj1[2] = arr2.map((id) => {
+    let tmp = null != id;
     if (tmp) {
-      const obj = { application, userDisplayName: ME, userId: user.id };
-      tmp = outer1_10(outer1_13, obj, application.id);
+      const obj = { application: null, userDisplayName: null, userId: null };
+      obj[0] = id;
+      obj[1] = ME;
+      obj[2] = user.id;
+      tmp = outer1_10(outer1_13, obj, id.id);
     }
     return tmp;
   });
   const items3 = [callback3(user(memo[10]).ActionSheetRow.Group, obj1), ];
   if (first) {
-    const obj2 = {};
-    const intl3 = user(memo[22]).intl;
-    obj2.title = intl3.string(user(memo[22]).t.GbsGCp);
-    obj2.hasIcons = false;
-    const obj3 = {};
-    const intl4 = user(memo[22]).intl;
-    obj3.label = intl4.string(user(memo[22]).t.LAcY7m);
-    const intl5 = user(memo[22]).intl;
-    obj3.subLabel = intl5.string(user(memo[22]).t.YTvOUx);
-    obj3.onPress = callback;
-    obj3.disabled = tmp4[0];
-    let tmp14 = null;
-    if (tmp5[0]) {
-      tmp14 = callback3(closure_6, {});
+    let obj2 = { title: null, hasIcons: false, children: null };
+    const intl3 = tmp(tmp2[22]).intl;
+    obj2[0] = intl3.string(tmp(tmp2[22]).t.GbsGCp);
+    let obj3 = { label: null, subLabel: null, onPress: null, disabled: null, trailing: null };
+    const intl4 = tmp(tmp2[22]).intl;
+    obj3[0] = intl4.string(tmp(tmp2[22]).t.LAcY7m);
+    const intl5 = tmp(tmp2[22]).intl;
+    obj3[1] = intl5.string(tmp(tmp2[22]).t.YTvOUx);
+    obj3[2] = callback;
+    obj3[3] = tmp7;
+    let tmp12Result = null;
+    if (tmp8[0]) {
+      tmp12Result = tmp12(closure_6, {});
     }
-    obj3.trailing = tmp14;
-    obj2.children = callback3(user(memo[10]).ActionSheetRow, obj3);
-    first = callback3(user(memo[10]).ActionSheetRow.Group, obj2);
-    const tmp10 = callback3;
-    const tmp13 = callback3;
+    obj3[4] = tmp12Result;
+    obj2[2] = tmp12(tmp(tmp2[10]).ActionSheetRow, obj3);
+    first = tmp12(tmp(tmp2[10]).ActionSheetRow.Group, obj2);
   }
   items3[1] = first;
-  obj.children = items3;
+  obj[1] = items3;
   return closure_11(user(memo[20]).ActionSheet, obj);
 };

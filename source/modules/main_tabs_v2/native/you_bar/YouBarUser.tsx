@@ -1,48 +1,47 @@
-// Module ID: 15223
-// Function ID: 115758
-// Dependencies: [31, 27, 1850, 14103, 33, 4165, 689, 566, 4026, 4577, 4004, 15224, 15225, 15226, 2]
+// Module ID: 15256
+// Function ID: 15257
+// Dependencies: [19, 17, 1874, 14125, 21, 4189, 712, 589, 4050, 4599, 4028, 15257, 15258, 15259, 2]
 
-// Module 15223
-import importAllResult from "result";
+// Module 15256
+import importAllResult from "noop";
 import { View } from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import mergeGuildAvatar from "mergeGuildAvatar";
 import CONNECTION_BANNER_HEIGHT from "CONNECTION_BANNER_HEIGHT";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_10;
+let c10;
+let c9;
 let closure_6;
-let closure_7;
-let closure_8;
-let closure_9;
-let require = arg1;
-({ YOU_BAR_SPRING_CONFIG: closure_6, YOU_BAR_LARGE_AVATAR_NAME_MARGIN: closure_7, YOU_BAR_SMALL_AVATAR_NAME_MARGIN: closure_8 } = CONNECTION_BANNER_HEIGHT);
-({ jsx: closure_9, jsxs: closure_10 } = jsxProd);
-let obj = {};
-obj = { flexDirection: "row", alignItems: "center", borderRadius: require("_createForOfIteratorHelperLoose").modules.mobile.YOU_BAR_BORDER_RADIUS };
-obj.youButton = obj;
-obj.userText = { flexDirection: "column", justifyContent: "center", height: "100%", gap: 1 };
-_createForOfIteratorHelperLoose = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_MOD_MUTED, borderRadius: require("_createForOfIteratorHelperLoose").radii.round, height: 16, width: 80 };
-obj.placeholder = _createForOfIteratorHelperLoose;
-let closure_11 = _createForOfIteratorHelperLoose.createStyles(obj);
+let error;
+let metroImportAll;
+const require = arg1;
+let c3 = importAllResult;
+({ YOU_BAR_SPRING_CONFIG: closure_6, YOU_BAR_LARGE_AVATAR_NAME_MARGIN: error, YOU_BAR_SMALL_AVATAR_NAME_MARGIN: metroImportAll } = CONNECTION_BANNER_HEIGHT);
+({ jsx: c9, jsxs: c10 } = jsxProd);
+let obj = { youButton: null, userText: null, placeholder: null };
+obj = { flexDirection: "row", alignItems: "center", borderRadius: require("Themes").modules.mobile.YOU_BAR_BORDER_RADIUS };
+obj[0] = obj;
+obj[1] = { flexDirection: "column", justifyContent: "center", height: "100%", gap: 1 };
+createCacheKey = { backgroundColor: require("Themes").colors.BACKGROUND_MOD_MUTED, borderRadius: require("Themes").radii.round, height: 16, width: 80 };
+obj[2] = createCacheKey;
+let closure_11 = createCacheKey.createStyles(obj);
 let closure_12 = { code: "function YouBarUserTsx1(){const{nameMargin}=this.__closure;return{marginLeft:nameMargin.get()};}" };
-const memoResult = importAllResult.memo(function YouBarUser(arg0) {
-  let isQuestRendered;
-  let onAvatarPress;
+const memoResult = importAllResult.memo(function YouBarUser(isQuestRendered) {
+  isQuestRendered = isQuestRendered.isQuestRendered;
+  let _require;
   let sharedValue;
-  ({ isQuestRendered, onAvatarPress } = arg0);
   const tmp = callback2();
-  let obj = require(566) /* initialize */;
-  const items = [_isNativeReflectConstruct];
-  const stateFromStores = obj.useStateFromStores(items, () => outer1_5.getCurrentUser());
-  require = tmp3;
-  let obj1 = require(4026);
-  sharedValue = obj1.useSharedValue(tmp3 ? closure_7 : closure_8);
+  let obj = _require(589);
+  const items = [mergeGuildAvatar];
+  const stateFromStores = obj.useStateFromStores(items, () => currentUser.getCurrentUser());
+  _require = tmp5;
+  let obj1 = _require(4050);
+  sharedValue = obj1.useSharedValue(isQuestRendered ? closure_8 : closure_7);
   const items1 = [!isQuestRendered, sharedValue];
   const effect = importAllResult.useEffect(() => {
-    const result = sharedValue.set(tmp3(outer1_2[9]).withSpring(tmp3 ? outer1_7 : outer1_8, outer1_6));
+    const result = sharedValue.set(_undefined(outer1_2[9]).withSpring(_undefined ? outer1_7 : outer1_8, outer1_6));
   }, items1);
-  let obj2 = require(4026);
   class S {
     constructor() {
       obj = { marginLeft: c1.get() };
@@ -52,36 +51,39 @@ const memoResult = importAllResult.memo(function YouBarUser(arg0) {
   S.__closure = { nameMargin: sharedValue };
   S.__workletHash = 12063452832866;
   S.__initData = closure_12;
-  const animatedStyle = obj2.useAnimatedStyle(S);
-  let obj3 = sharedValue(4004);
+  const animatedStyle = _require(4050).useAnimatedStyle(S);
+  let obj3 = sharedValue(4028);
   const name = obj3.useName(stateFromStores);
   if (null != stateFromStores) {
     if (null != name) {
-      obj = { style: tmp.youButton };
-      obj = { isLargeAvatar: tmp3, onPress: onAvatarPress };
-      const items2 = [callback(sharedValue(15225), obj), ];
-      obj1 = {};
-      const items3 = [tmp.userText, animatedStyle, ];
-      obj2 = { flexShrink: 1 };
-      items3[2] = obj2;
-      obj1.style = items3;
-      obj3 = { userId: stateFromStores.id, username: name };
-      obj1.children = callback(sharedValue(15226), obj3);
-      items2[1] = callback(sharedValue(4026).View, obj1);
-      obj.children = items2;
+      obj = { style: null, children: null };
+      obj[0] = tmp.youButton;
+      obj = { isLargeAvatar: null, onPress: null };
+      obj[0] = tmp5;
+      obj[1] = isQuestRendered.onAvatarPress;
+      const items2 = [callback(tmp9(15258), obj), ];
+      obj1 = { style: null, children: null };
+      const items3 = [tmp.userText, animatedStyle, { flexShrink: 1 }];
+      obj1[0] = items3;
+      const obj2 = { userId: null, username: null };
+      obj2[0] = stateFromStores.id;
+      obj2[1] = name;
+      obj1[1] = callback(tmp9(15259), obj2);
+      items2[1] = callback(tmp9(4050).View, obj1);
+      obj[1] = items2;
     }
-    return tmp8(tmp9, obj);
+    return tmp11(tmp12, obj);
   }
-  const obj4 = { style: items4 };
+  obj3 = { style: items4, children: null };
   items4 = [tmp.youButton];
-  const items5 = [callback(sharedValue(15224), { isLarge: !isQuestRendered }), ];
-  const obj5 = { style: items6 };
+  const items5 = [callback(sharedValue(15257), { isLarge: !isQuestRendered }), ];
+  const obj4 = { style: items6, children: null };
   items6 = [tmp.userText, animatedStyle, { flexShrink: 1 }];
-  obj5.children = callback(View, { style: tmp.placeholder });
-  items5[1] = callback(sharedValue(4026).View, obj5);
-  obj4.children = items5;
-  obj = obj4;
+  obj4[1] = callback(View, { style: tmp.placeholder });
+  items5[1] = callback(sharedValue(4050).View, obj4);
+  obj3[1] = items5;
+  obj = obj3;
 });
-let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/main_tabs_v2/native/you_bar/YouBarUser.tsx");
+let result = require("mergeGuildAvatar").fileFinishedImporting("modules/main_tabs_v2/native/you_bar/YouBarUser.tsx");
 
 export default memoResult;

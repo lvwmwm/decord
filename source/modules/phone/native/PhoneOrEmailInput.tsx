@@ -1,153 +1,157 @@
-// Module ID: 9186
-// Function ID: 71953
-// Dependencies: [57, 31, 33, 9187, 8231, 1212, 9188, 2]
+// Module ID: 9210
+// Function ID: 9211
+// Dependencies: [32, 19, 21, 9211, 8255, 1236, 9212, 2]
 
-// Module 9186
+// Module 9210
 import _slicedToArray from "_slicedToArray";
-import importAllResult from "result";
+import importAllResult from "noop";
 import { jsx } from "jsxProd";
 
 const require = arg1;
-const forwardRefResult = importAllResult.forwardRef((onChange) => {
+let c4 = importAllResult;
+const forwardRefResult = importAllResult.forwardRef((onChange, ref) => {
   let alpha2;
-  let closure_4;
+  let c4;
   let countryCode;
-  let tmp4;
+  let tmp3;
   onChange = onChange.onChange;
   ({ alpha2, countryCode } = onChange);
   const onPressCountrySelector = onChange.onPressCountrySelector;
   const forceMode = onChange.forceMode;
-  let obj = { onChange: 0, alpha2: 0, countryCode: 0, onPressCountrySelector: 0, forceMode: 0 };
-  Object.setPrototypeOf(null);
-  const merged = Object.assign(onChange, obj);
+  const merged = Object.assign(onChange, Object.create(null));
+  ref = undefined;
+  let c6;
   let combined;
-  [tmp4, closure_4] = forceMode(importAllResult.useState(""), 2);
-  const ref = importAllResult.useRef(null);
-  const imperativeHandle = importAllResult.useImperativeHandle(arg1, () => ({
+  let obj = importAllResult;
+  [tmp3, c4] = forceMode(undefined.useState(""), 2);
+  ref = importAllResult.useRef(null);
+  const imperativeHandle = importAllResult.useImperativeHandle(ref, () => ({
     blur() {
-      const current = outer1_5.current;
+      const current = closure_5.current;
       let blurResult;
-      if (null != current) {
+      if (current != null) {
         blurResult = current.blur();
       }
       return blurResult;
     },
     focus() {
-      const current = outer1_5.current;
+      const current = closure_5.current;
       let focusResult;
-      if (null != current) {
+      if (current != null) {
         focusResult = current.focus();
       }
       return focusResult;
     },
     isFocused() {
-      const current = outer1_5.current;
-      let isFocusedResult;
-      if (null != current) {
-        isFocusedResult = current.isFocused();
+      const current = closure_5.current;
+      let flag;
+      if (current != null) {
+        flag = current.isFocused();
       }
-      return null != isFocusedResult && isFocusedResult;
+      if (flag == null) {
+        flag = false;
+      }
+      return flag;
     },
     setText(arg0) {
-      outer1_4(arg0);
-      const current = outer1_5.current;
-      if (null != current) {
+      callback(arg0);
+      const current = closure_5.current;
+      if (current != null) {
         current.setText(arg0);
       }
     },
     getText() {
-      const current = outer1_5.current;
-      let text;
-      if (null != current) {
-        text = current.getText();
+      const current = closure_5.current;
+      let str;
+      if (current != null) {
+        str = current.getText();
       }
-      let str = "";
-      if (null != text) {
-        str = text;
+      if (str == null) {
+        str = "";
       }
       return str;
     },
     measure(arg0) {
-      const current = outer1_5.current;
+      const current = closure_5.current;
       let measureResult;
-      if (null != current) {
+      if (current != null) {
         measureResult = current.measure(arg0);
       }
       return measureResult;
     },
     measureInWindow(arg0) {
-      const current = outer1_5.current;
+      const current = closure_5.current;
       let measureInWindowResult;
-      if (null != current) {
+      if (current != null) {
         measureInWindowResult = current.measureInWindow(arg0);
       }
       return measureInWindowResult;
     },
     measureLayout(arg0, arg1, arg2) {
-      const current = outer1_5.current;
+      const current = closure_5.current;
       let measureLayoutResult;
-      if (null != current) {
+      if (current != null) {
         measureLayoutResult = current.measureLayout(arg0, arg1, arg2);
       }
       return measureLayoutResult;
     }
   }), []);
-  const tmp3 = forceMode(importAllResult.useState(""), 2);
+  const tmp2 = forceMode(undefined.useState(""), 2);
+  const tmp6 = onChange;
+  const tmp7 = onPressCountrySelector;
   const items = [countryCode, forceMode, onChange];
-  const result = onChange(onPressCountrySelector[3]).shouldShowCountryCodeSelector(forceMode, tmp4);
+  const result = onChange(onPressCountrySelector[3]).shouldShowCountryCodeSelector(forceMode, tmp3);
   const callback = importAllResult.useCallback((value) => {
-    callback(value);
+    _undefined(value);
     let str = "";
     if (obj.shouldShowCountryCodeSelector(forceMode, value)) {
       str = countryCode;
     }
-    if (null != onChange) {
+    if (onChange != null) {
       onChange(value, str);
     }
   }, items);
-  const tmp9 = countryCode(onPressCountrySelector[4])(callback);
-  let closure_6 = tmp9;
-  const items1 = [countryCode, tmp9];
+  const tmp10 = countryCode(onPressCountrySelector[4])(callback);
+  c6 = tmp10;
+  const items1 = [countryCode, tmp10];
   const effect = importAllResult.useEffect(() => {
     const current = ref.current;
-    let text;
-    if (null != current) {
-      text = current.getText();
+    let str;
+    if (current != null) {
+      str = current.getText();
     }
-    let str = "";
-    if (null != text) {
-      str = text;
+    if (str == null) {
+      str = "";
     }
-    closure_6(str);
+    c6(str);
   }, items1);
   combined = undefined;
   if (result) {
-    let str = "";
-    if (null != alpha2) {
-      str = alpha2;
+    if (alpha2 == null) {
+      alpha2 = "";
     }
     const _HermesInternal = HermesInternal;
-    combined = "" + str + " " + countryCode;
+    combined = "" + alpha2 + " " + countryCode;
   }
   const items2 = [combined, onPressCountrySelector];
-  const memo = importAllResult.useMemo(() => {
-    const obj = { onPress: onPressCountrySelector, accessibilityRole: "button" };
-    let str = "";
-    if (null != combined) {
-      str = combined;
+  const memo = obj.useMemo(() => {
+    const obj = { onPress: onPressCountrySelector, accessibilityRole: "button", accessibilityLabel: null, accessibilityHint: null };
+    let str = combined;
+    if (combined == null) {
+      str = "";
     }
-    obj.accessibilityLabel = str;
+    obj[2] = str;
     const intl = onChange(onPressCountrySelector[5]).intl;
-    obj.accessibilityHint = intl.string(onChange(onPressCountrySelector[5]).t.GwAW3k);
+    obj[3] = intl.string(onChange(onPressCountrySelector[5]).t.GwAW3k);
     return obj;
   }, items2);
   obj = {};
   const merged1 = Object.assign(merged);
-  obj["ref"] = ref;
-  obj["onChange"] = callback;
-  obj["leadingText"] = combined;
-  obj["leadingPressableProps"] = memo;
-  return ref(onChange(onPressCountrySelector[6]).SplitTextInput, obj);
+  obj.ref = ref;
+  obj.onChange = callback;
+  obj.leadingText = combined;
+  obj.leadingPressableProps = memo;
+  return ref(tmp6(tmp7[6]).SplitTextInput, obj);
 });
 let result = require("jsxProd").fileFinishedImporting("modules/phone/native/PhoneOrEmailInput.tsx");
 

@@ -1,11 +1,11 @@
-// Module ID: 11007
-// Function ID: 85438
+// Module ID: 11031
+// Function ID: 11032
 // Name: GuildDisableCommunicationModal
-// Dependencies: [31, 33, 9082, 9084, 1212, 4354, 11008, 2]
+// Dependencies: [19, 21, 9106, 9108, 1236, 4379, 11032, 2]
 // Exports: default
 
-// Module 11007 (GuildDisableCommunicationModal)
-import "result";
+// Module 11031 (GuildDisableCommunicationModal)
+import "noop";
 import { jsx } from "jsxProd";
 
 const require = arg1;
@@ -14,15 +14,16 @@ const result = require("useNavigatorBackHandler").fileFinishedImporting("modules
 export default function GuildDisableCommunicationModal(onBeforeGoBack) {
   const guildId = onBeforeGoBack.guildId;
   const user = onBeforeGoBack.user;
+  let onGoBack;
   onGoBack = user(onGoBack[2])({ onBeforeGoBack: onBeforeGoBack.cancelButtonCallback }).onGoBack;
-  let obj = { screenKey: "disableCommunication" };
+  let obj = { screenKey: "disableCommunication", title: null, render: null };
   const intl = guildId(onGoBack[4]).intl;
-  obj = {};
+  obj = { user: null };
   const tmp = user(onGoBack[3]);
-  obj.user = user(onGoBack[5]).getName(guildId, null, user);
-  obj.title = intl.formatToPlainString(guildId(onGoBack[4]).t.FN7NIS, obj);
-  obj.render = function render() {
+  obj[0] = user(onGoBack[5]).getName(guildId, null, user);
+  obj[1] = intl.formatToPlainString(guildId(onGoBack[4]).t.FN7NIS, obj);
+  obj[2] = function render() {
     return outer1_3(user(onGoBack[6]), { user, guildId, onClose: onGoBack });
   };
-  return <tmp />;
+  return <tmp user={null} />;
 };

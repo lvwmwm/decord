@@ -1,18 +1,18 @@
-// Module ID: 11611
-// Function ID: 90157
+// Module ID: 11635
+// Function ID: 11636
 // Name: useGuildPowerupConfigureCallback
-// Dependencies: [31, 653, 4133, 11585, 4056, 8280, 8283, 44, 2]
+// Dependencies: [19, 676, 4157, 11609, 4080, 8304, 8307, 38, 2]
 // Exports: default
 
-// Module 11611 (useGuildPowerupConfigureCallback)
-import result from "result";
+// Module 11635 (useGuildPowerupConfigureCallback)
+import noop from "noop";
 import ME from "ME";
 
-let closure_4;
-let closure_5;
+let c4;
+let c5;
 const require = arg1;
-({ GuildSettingsSections: closure_4, AnalyticsSections: closure_5 } = ME);
-const result = require("showActionSheet").fileFinishedImporting("modules/premium/powerups/native/hooks/useGuildPowerupConfigureCallback.tsx");
+({ GuildSettingsSections: c4, AnalyticsSections: c5 } = ME);
+const result = require("ACTION_SHEET_HEIGHT_HALF").fileFinishedImporting("modules/premium/powerups/native/hooks/useGuildPowerupConfigureCallback.tsx");
 
 export default function useGuildPowerupConfigureCallback(arg0, skuId) {
   let closure_0 = arg0;
@@ -22,16 +22,20 @@ export default function useGuildPowerupConfigureCallback(arg0, skuId) {
     skuId(outer1_2[2]).hideActionSheet(callback(outer1_2[3]).GUILD_POWERUPS_BOTTOM_SHEET_KEY);
     skuId = skuId.skuId;
     if (callback(outer1_2[4]).GUILD_POWERUP_ROLE_COLOR_SKU_ID === skuId) {
-      skuId(outer1_2[5]).open(callback, outer1_4.ROLES, outer1_5.GUILD_POWERUPS_OVERVIEW_CARD);
-    } else if (callback(outer1_2[4]).GUILD_POWERUP_TAG_SKU_ID === skuId) {
-      if (obj2.canUseMobileServerTagSettings(callback)) {
-        skuId(outer1_2[5]).open(callback, outer1_4.TAG, outer1_5.GUILD_POWERUPS_OVERVIEW_CARD);
+      let tmpResult = tmp(tmp2[5]);
+      tmpResult.open(callback, outer1_4.ROLES, outer1_5.GUILD_POWERUPS_OVERVIEW_CARD);
+    } else if (tmp3(tmp2[4]).GUILD_POWERUP_TAG_SKU_ID === skuId) {
+      if (tmp3Result.canUseMobileServerTagSettings(callback)) {
+        tmpResult = tmp(tmp2[5]);
+        tmpResult.open(tmp9, outer1_4.TAG, outer1_5.GUILD_POWERUPS_OVERVIEW_CARD);
       }
-      obj2 = callback(outer1_2[6]);
+      tmp3Result = tmp3(tmp2[6]);
+      tmp9 = callback;
     } else {
       const _HermesInternal = HermesInternal;
-      skuId(outer1_2[7])(false, "Unsupported powerup SKU ID: " + skuId.skuId);
+      tmp(tmp2[7])(false, "Unsupported powerup SKU ID: " + tmp5.skuId);
     }
     const obj = skuId(outer1_2[2]);
+    tmp5 = skuId;
   }, items);
 };

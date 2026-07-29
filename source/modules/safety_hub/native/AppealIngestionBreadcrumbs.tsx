@@ -1,53 +1,55 @@
-// Module ID: 11072
-// Function ID: 85952
+// Module ID: 11096
+// Function ID: 11097
 // Name: AppealIngestionBreadcrumbs
-// Dependencies: [31, 27, 33, 4165, 689, 4161, 1212, 2]
+// Dependencies: [19, 17, 21, 4189, 712, 4185, 1236, 2]
 // Exports: default
 
-// Module 11072 (AppealIngestionBreadcrumbs)
-import "result";
+// Module 11096 (AppealIngestionBreadcrumbs)
+import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_3;
-let closure_4;
-let require = arg1;
-({ jsx: closure_3, jsxs: closure_4 } = jsxProd);
-_createForOfIteratorHelperLoose = { container: { flex: 0, alignSelf: "stretch", marginBottom: 8 }, title: { lineHeight: 16, marginBottom: 8 }, breadCrumbItemContainer: { flexDirection: "row", justifyContent: "flex-start", marginBottom: 8, marginEnd: 32, overflow: "visible" } };
-_createForOfIteratorHelperLoose = { marginStart: 2, marginTop: 8, width: 4, height: 4, borderRadius: 2, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BRAND };
-_createForOfIteratorHelperLoose.breadCrumbDot = _createForOfIteratorHelperLoose;
-let obj1 = { position: "absolute", width: 2, top: 10, bottom: -12, left: 3, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWEST };
-_createForOfIteratorHelperLoose.breadCrumbBar = obj1;
-_createForOfIteratorHelperLoose.breadCrumbText = { marginStart: 8, lineHeight: 20 };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+let c3;
+let c4;
+const require = arg1;
+({ jsx: c3, jsxs: c4 } = jsxProd);
+createCacheKey = { container: { flex: 0, alignSelf: "stretch", marginBottom: 8 }, title: { lineHeight: 16, marginBottom: 8 }, breadCrumbItemContainer: { flexDirection: "row", justifyContent: "flex-start", marginBottom: 8, marginEnd: 32, overflow: "visible" }, breadCrumbDot: null, breadCrumbBar: null, breadCrumbText: null };
+createCacheKey = { marginStart: 2, marginTop: 8, width: 4, height: 4, borderRadius: 2, backgroundColor: require("Themes").colors.BACKGROUND_BRAND };
+createCacheKey[3] = createCacheKey;
+createCacheKey[4] = { position: "absolute", width: 2, top: 10, bottom: -12, left: 3, backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOWEST };
+createCacheKey[5] = { marginStart: 8, lineHeight: 20 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+const obj1 = { position: "absolute", width: 2, top: 10, bottom: -12, left: 3, backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOWEST };
 const result = require("jsxProd").fileFinishedImporting("modules/safety_hub/native/AppealIngestionBreadcrumbs.tsx");
 
 export default function AppealIngestionBreadcrumbs(reasons) {
   reasons = reasons.reasons;
-  const tmp = _createForOfIteratorHelperLoose();
-  const require = tmp;
+  let _require;
+  const tmp = createCacheKey();
+  _require = tmp;
   let tmp2 = null;
   if (0 !== reasons.length) {
-    let obj = { style: tmp.container };
-    obj = { style: tmp.title, accessibilityRole: "header", variant: "text-xs/bold" };
-    const intl = require(1212) /* getSystemLocale */.intl;
-    obj.children = intl.string(require(1212) /* getSystemLocale */.t.eQg0Ck);
+    let obj = { style: null, children: null };
+    obj[0] = tmp.container;
+    obj = { style: null, accessibilityRole: "header", variant: "text-xs/bold", children: null };
+    obj[0] = tmp.title;
+    const intl = _require(1236).intl;
+    obj[3] = intl.string(_require(1236).t.eQg0Ck);
     let items = [
-      callback(require(4161) /* Text */.Text, obj),
+      callback(_require(4185).Text, obj),
       reasons.map((children) => {
-          let obj = { style: tmp.breadCrumbItemContainer };
-          obj = { style: tmp.breadCrumbBar };
+          let obj = { style: _undefined.breadCrumbItemContainer, children: null };
+          obj = { style: _undefined.breadCrumbBar };
           const items = [outer1_3(outer1_2, obj), , ];
-          obj = { style: tmp.breadCrumbDot };
+          obj = { style: _undefined.breadCrumbDot };
           items[1] = outer1_3(outer1_2, obj);
-          const obj1 = { lineClamp: 2, ellipsizeMode: "tail", style: tmp.breadCrumbText, variant: "text-md/medium", children };
-          items[2] = outer1_3(tmp(outer1_1[5]).Text, obj1);
-          obj.children = items;
+          items[2] = outer1_3(_undefined(outer1_1[5]).Text, { lineClamp: 2, ellipsizeMode: "tail", style: _undefined.breadCrumbText, variant: "text-md/medium", children });
+          obj[1] = items;
           return outer1_4(outer1_2, obj, "" + children + "+" + arg1);
         })
     ];
-    obj.children = items;
+    obj[1] = items;
     tmp2 = callback2(View, obj);
   }
   return tmp2;

@@ -1,17 +1,18 @@
-// Module ID: 14152
-// Function ID: 108667
-// Dependencies: [31, 33, 4165, 14128, 10468, 10936, 4576, 689, 14133, 4161, 1212, 2]
+// Module ID: 14174
+// Function ID: 14175
+// Dependencies: [19, 21, 4189, 14150, 10492, 10960, 4598, 712, 14155, 4185, 1236, 2]
 
-// Module 14152
-import importAllResult from "result";
+// Module 14174
+import importAllResult from "noop";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_4;
-let closure_5;
+let c4;
+let c5;
 const require = arg1;
-({ jsx: closure_4, jsxs: closure_5 } = jsxProd);
-let closure_6 = _createForOfIteratorHelperLoose.createStyles({ questName: { textAlign: "center" } });
+let c3 = importAllResult;
+({ jsx: c4, jsxs: c5 } = jsxProd);
+let closure_6 = createCacheKey.createStyles({ questName: { textAlign: "center" } });
 const memoResult = importAllResult.memo(function VideoQuestModalReward(withQuestName) {
   let onTextBlockLayout;
   let withRewardTileAnimation;
@@ -21,16 +22,16 @@ const memoResult = importAllResult.memo(function VideoQuestModalReward(withQuest
     tmp = withQuestName;
   }
   const withRewardAvailableCopy = withQuestName.withRewardAvailableCopy;
-  let tmp2 = undefined === withRewardAvailableCopy || withRewardAvailableCopy;
+  let tmp9Result = undefined === withRewardAvailableCopy || withRewardAvailableCopy;
   const size = withQuestName.size;
   let str = "lg";
   if (undefined !== size) {
     str = size;
   }
   ({ withRewardTileAnimation, onTextBlockLayout } = withQuestName);
-  let obj = quest(14128);
+  let obj = quest(14150);
   quest = obj.useVideoQuestModalContext().quest;
-  let obj1 = quest(10468);
+  let obj1 = quest(10492);
   const items = [quest.id];
   const questTaskDetails = obj1.useQuestTaskDetails(quest);
   const callback = importAllResult.useCallback(() => {
@@ -38,30 +39,36 @@ const memoResult = importAllResult.memo(function VideoQuestModalReward(withQuest
     obj = { questId: quest.id };
     const result = obj.openRewardDetailsBottomSheet(obj);
   }, items);
-  obj = { justify: "center", align: "center", spacing: importDefault(689).space.PX_24, style: withQuestName.style };
+  obj = { justify: "center", align: "center", spacing: null, style: null, children: null };
+  obj[2] = importDefault(712).space.PX_24;
+  obj[3] = withQuestName.style;
   obj = { hasConfetti: true, quest, size: str, progress: questTaskDetails.percentComplete, onPress: callback, withAnimation: withRewardTileAnimation };
-  const items1 = [callback(importDefault(14133), obj), ];
-  obj1 = { align: "center", spacing: importDefault(689).space.PX_4, onLayout: onTextBlockLayout };
+  const items1 = [callback(importDefault(14155), obj), ];
+  obj1 = { align: "center", spacing: null, onLayout: null, children: null };
+  obj1[1] = importDefault(712).space.PX_4;
+  obj1[2] = onTextBlockLayout;
   if (tmp) {
-    const obj2 = { variant: "heading-lg/semibold", color: "text-strong", style: tmp5.questName };
-    const intl = quest(1212).intl;
-    const obj3 = { questName: quest.config.messages.questName };
-    obj2.children = intl.formatToPlainString(quest(1212).t.EAYZAr, obj3);
-    tmp = callback(quest(4161).Text, obj2);
+    const obj2 = { variant: "heading-lg/semibold", color: "text-strong", style: null, children: null };
+    obj2[2] = tmp7.questName;
+    const intl = tmp3(1236).intl;
+    const obj3 = { questName: null };
+    obj3[0] = quest.config.messages.questName;
+    obj2[3] = intl.formatToPlainString(tmp3(1236).t.EAYZAr, obj3);
+    tmp = tmp9(tmp3(4185).Text, obj2);
   }
   const items2 = [tmp, ];
-  if (tmp2) {
-    const obj4 = { variant: "heading-sm/medium", color: "text-subtle" };
-    const intl2 = quest(1212).intl;
-    obj4.children = intl2.string(quest(1212).t["1Wvve2"]);
-    tmp2 = callback(quest(4161).Text, obj4);
+  if (tmp9Result) {
+    const obj4 = { variant: "heading-sm/medium", color: "text-subtle", children: null };
+    const intl2 = tmp3(1236).intl;
+    obj4[2] = intl2.string(tmp3(1236).t["1Wvve2"]);
+    tmp9Result = tmp9(tmp3(4185).Text, obj4);
   }
-  items2[1] = tmp2;
-  obj1.children = items2;
-  items1[1] = closure_5(quest(4576).Stack, obj1);
-  obj.children = items1;
-  return closure_5(quest(4576).Stack, obj);
+  items2[1] = tmp9Result;
+  obj1[3] = items2;
+  items1[1] = closure_5(quest(4598).Stack, obj1);
+  obj[4] = items1;
+  return closure_5(quest(4598).Stack, obj);
 });
-let result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/quests/native/VideoQuestModal/VideoQuestModalReward.tsx");
+let result = require("createCacheKey").fileFinishedImporting("modules/quests/native/VideoQuestModal/VideoQuestModalReward.tsx");
 
 export default memoResult;

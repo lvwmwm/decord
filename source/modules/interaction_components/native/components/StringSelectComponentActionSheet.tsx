@@ -1,22 +1,22 @@
-// Module ID: 10987
-// Function ID: 85195
+// Module ID: 11011
+// Function ID: 11012
 // Name: StringSelectComponentActionSheet
-// Dependencies: [57, 31, 33, 4165, 689, 7875, 1882, 4133, 10988, 5184, 4161, 1212, 2]
+// Dependencies: [32, 19, 21, 4189, 712, 7898, 1906, 4157, 11012, 5206, 4185, 1236, 2]
 // Exports: default
 
-// Module 10987 (StringSelectComponentActionSheet)
+// Module 11011 (StringSelectComponentActionSheet)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
+import noop from "noop";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
 const require = arg1;
-_createForOfIteratorHelperLoose = { selectionOptionItemWithDescription: { minHeight: 64 }, selectionOptionItemDescription: { marginTop: 2 } };
-_createForOfIteratorHelperLoose = { flexShrink: 0, borderRadius: require("_createForOfIteratorHelperLoose").radii.xs, overflow: "hidden" };
-_createForOfIteratorHelperLoose.emojiWrapper = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.textEmoji = { fontSize: 16, color: "#000000" };
-_createForOfIteratorHelperLoose.fastImageEmoji = { width: 24, height: 24 };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+createCacheKey = { selectionOptionItemWithDescription: { minHeight: 64 }, selectionOptionItemDescription: { marginTop: 2 }, emojiWrapper: null, textEmoji: null, fastImageEmoji: null };
+createCacheKey = { flexShrink: 0, borderRadius: require("Themes").radii.xs, overflow: "hidden" };
+createCacheKey[2] = createCacheKey;
+createCacheKey[3] = { fontSize: 16, color: "#000000" };
+createCacheKey[4] = { width: 24, height: 24 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
 const result = require("jsxProd").fileFinishedImporting("modules/interaction_components/native/components/StringSelectComponentActionSheet.tsx");
 
 export default function StringSelectComponentActionSheet(selectionActionComponent) {
@@ -26,32 +26,38 @@ export default function StringSelectComponentActionSheet(selectionActionComponen
   let labelComponent;
   selectionActionComponent = selectionActionComponent.selectionActionComponent;
   let onSubmit = selectionActionComponent.onSubmit;
+  let dependencyMap;
+  let first;
+  let React;
+  let memo;
+  let callback;
   ({ labelComponent, channelId, containerId, allowEmpty } = selectionActionComponent);
   let tmp = callback();
-  const dependencyMap = tmp;
-  let obj = selectionActionComponent(7875);
-  const tmp3 = first(React.useState(new Set(obj.getInitialStringSelectOptions(selectionActionComponent, containerId))), 2);
+  dependencyMap = tmp;
+  let obj = selectionActionComponent(7898);
+  let tmp3 = first(React.useState(new Set(obj.getInitialStringSelectOptions(selectionActionComponent, containerId))), 2);
   first = tmp3[0];
   React = tmp3[1];
   let items = [selectionActionComponent];
-  const memo = React.useMemo(() => selectionActionComponent.maxValues > 1, items);
-  let items1 = [onSubmit];
+  memo = React.useMemo(() => selectionActionComponent.maxValues > 1, items);
+  const items1 = [onSubmit];
   callback = React.useCallback((values) => {
-    tmp = onSubmit({ type: selectionActionComponent(tmp[6]).ComponentType.STRING_SELECT, values });
-    const obj = { type: selectionActionComponent(tmp[6]).ComponentType.STRING_SELECT, values };
-    onSubmit(tmp[7]).hideActionSheet();
+    onSubmit({ type: selectionActionComponent(_undefined[6]).ComponentType.STRING_SELECT, values });
+    const obj = { type: selectionActionComponent(_undefined[6]).ComponentType.STRING_SELECT, values };
+    onSubmit(_undefined[7]).hideActionSheet();
   }, items1);
   const items2 = [first, memo, selectionActionComponent, callback];
   const items3 = [selectionActionComponent];
   const callback1 = React.useCallback((arg0, value) => {
     const selectionActionComponent = value;
-    let tmp = !first.has(value.value);
-    const onSubmit = tmp;
+    const hasItem = first.has(value.value);
+    let tmp3 = !hasItem;
+    const onSubmit = tmp3;
     if (memo) {
-      if (tmp) {
-        tmp = first.size >= selectionActionComponent.maxValues;
+      if (!hasItem) {
+        tmp3 = first.size >= selectionActionComponent.maxValues;
       }
-      if (!tmp) {
+      if (!tmp3) {
         callback((items) => {
           const set = new Set(items);
           if (closure_1) {
@@ -63,14 +69,13 @@ export default function StringSelectComponentActionSheet(selectionActionComponen
         });
       }
     } else {
-      if (tmp) {
-        const items = [value.value];
-        let items1 = items;
+      if (hasItem) {
+        let items = [];
       } else {
-        items1 = [];
+        items = [value.value];
       }
-      callback(items1);
-      const tmp2 = callback;
+      callback(items);
+      const tmp4 = callback;
     }
   }, items2);
   let selectionOptionItemWithDescription = React.useMemo(() => {
@@ -87,9 +92,11 @@ export default function StringSelectComponentActionSheet(selectionActionComponen
     renderIcon(emoji) {
       let tmp = null;
       if (null != emoji.emoji) {
-        const obj = { src: emoji.emoji.src, name: emoji.emoji.name };
-        ({ emojiWrapper: obj.style, textEmoji: obj.textEmojiStyle, fastImageEmoji: obj.fastImageStyle } = tmp);
-        tmp = memo(onSubmit(tmp[9]), obj);
+        const obj = { src: null, name: null, style: null, textEmojiStyle: null, fastImageStyle: null };
+        obj[0] = emoji.emoji.src;
+        obj[1] = emoji.emoji.name;
+        ({ emojiWrapper: obj[2], textEmoji: obj[3], fastImageEmoji: obj[4] } = _undefined);
+        tmp = memo(onSubmit(_undefined[9]), obj);
       }
       return tmp;
     },
@@ -99,15 +106,24 @@ export default function StringSelectComponentActionSheet(selectionActionComponen
       if (null != description.description) {
         tmp = null;
         if ("" !== description.description) {
-          const obj = { style: tmp.selectionOptionItemDescription, variant: "text-xs/medium", color: "text-default", children: description.description };
-          tmp = memo(selectionActionComponent(tmp[10]).Text, obj);
+          const obj = { style: null, variant: "text-xs/medium", color: "text-default", children: null };
+          obj[0] = _undefined.selectionOptionItemDescription;
+          obj[3] = description.description;
+          tmp = memo(selectionActionComponent(_undefined[10]).Text, obj);
         }
       }
       return tmp;
     },
     selectionActionComponent,
     labelComponent,
-    options: selectionActionComponent.options
+    options: selectionActionComponent.options,
+    itemStyle: null,
+    selectedCount: null,
+    isSelected: null,
+    submitSelection: null,
+    itemAccessibilityLabel: null,
+    channelId: null,
+    allowEmpty: null
   };
   let set = new Set(obj.getInitialStringSelectOptions(selectionActionComponent, containerId));
   const tmp9 = memo;
@@ -115,28 +131,25 @@ export default function StringSelectComponentActionSheet(selectionActionComponen
     selectionOptionItemWithDescription = tmp.selectionOptionItemWithDescription;
   }
   const items5 = [selectionOptionItemWithDescription];
-  obj.itemStyle = items5;
-  obj.selectedCount = first.size;
-  obj.isSelected = function isSelected(value) {
+  obj[7] = items5;
+  obj[8] = first.size;
+  obj[9] = function isSelected(value) {
     return first.has(value.value);
   };
-  obj.submitSelection = function submitSelection() {
+  obj[10] = function submitSelection() {
     const items = [...first];
     return callback(items);
   };
-  obj.itemAccessibilityLabel = function itemAccessibilityLabel(emoji) {
-    let name;
-    const intl = selectionActionComponent(tmp[11]).intl;
-    const obj = {};
+  obj[11] = function itemAccessibilityLabel(emoji) {
+    const intl = selectionActionComponent(_undefined[11]).intl;
     emoji = emoji.emoji;
-    if (null != emoji) {
+    let name;
+    if (emoji != null) {
       name = emoji.name;
     }
-    obj.emojiName = name;
-    ({ label: obj.optionName, description: obj.optionDescription } = emoji);
-    return intl.formatToPlainString(selectionActionComponent(tmp[11]).t.ZbrH2f, obj);
+    return intl.formatToPlainString(selectionActionComponent(_undefined[11]).t.ZbrH2f, { emojiName: name, optionName: emoji.label, optionDescription: emoji.description });
   };
-  obj.channelId = channelId;
-  obj.allowEmpty = allowEmpty;
-  return tmp9(onSubmit(10988), obj);
+  obj[12] = channelId;
+  obj[13] = allowEmpty;
+  return tmp9(onSubmit(11012), obj);
 };

@@ -1,49 +1,54 @@
-// Module ID: 13908
-// Function ID: 106382
+// Module ID: 13929
+// Function ID: 13930
 // Name: GuildRow
-// Dependencies: [5775, 33, 4165, 689, 566, 5837, 5198, 5548, 5533, 4161, 1212, 2199, 5536, 2]
+// Dependencies: [5793, 21, 4189, 712, 589, 5855, 5220, 5566, 5551, 4185, 1236, 2223, 5554, 2]
 // Exports: default
 
-// Module 13908 (GuildRow)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 13929 (GuildRow)
+import freshTeenActivityWithMap from "freshTeenActivityWithMap";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_4;
-let closure_5;
+let c4;
+let c5;
 const require = arg1;
 function GuildRow(guildActivity) {
   guildActivity = guildActivity.guildActivity;
-  let obj = guildActivity(566);
-  const items = [_isNativeReflectConstruct];
+  let obj = guildActivity(589);
+  const items = [freshTeenActivityWithMap];
   const stateFromStores = obj.useStateFromStores(items, () => outer1_3.getGuild(guildActivity.guild_id));
   if (null == stateFromStores) {
     return null;
   } else {
-    const topUserOrGuildDescription = guildActivity(5837).getTopUserOrGuildDescription(guildActivity.messages_sent, guildActivity.call_count);
-    obj = { label: stateFromStores.name, subLabel: topUserOrGuildDescription };
-    obj = { guild: stateFromStores, style: tmp.guildIcon };
-    obj.icon = callback(importDefault(5548), obj);
-    return callback(guildActivity(5198).TableRow, obj);
+    const topUserOrGuildDescription = tmp2(5855).getTopUserOrGuildDescription(guildActivity.messages_sent, guildActivity.call_count);
+    obj = { label: null, subLabel: null, icon: null };
+    obj[0] = stateFromStores.name;
+    obj[1] = topUserOrGuildDescription;
+    obj = { guild: null, style: null };
+    obj[0] = stateFromStores;
+    obj[1] = tmp.guildIcon;
+    obj[2] = callback(importDefault(5566), obj);
+    return callback(tmp2(5220).TableRow, obj);
   }
-  tmp = _createForOfIteratorHelperLoose();
+  tmp = createCacheKey();
 }
-({ jsx: closure_4, jsxs: closure_5 } = jsxProd);
-_createForOfIteratorHelperLoose = { header: { textAlign: "center" } };
-_createForOfIteratorHelperLoose = { borderRadius: require("_createForOfIteratorHelperLoose").radii.md, borderColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWEST };
-_createForOfIteratorHelperLoose.guildIcon = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/parent_tools/native/FamilyCenterTopServersBottomSheet.tsx");
+({ jsx: c4, jsxs: c5 } = jsxProd);
+createCacheKey = { header: { textAlign: "center" }, guildIcon: null };
+createCacheKey = { borderRadius: require("Themes").radii.md, borderColor: require("Themes").colors.BACKGROUND_BASE_LOW, backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOWEST };
+createCacheKey[1] = createCacheKey;
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+const result = require("createCacheKey").fileFinishedImporting("modules/parent_tools/native/FamilyCenterTopServersBottomSheet.tsx");
 
 export default function FamilyCenterTopGuildsBottomSheet(topGuildActivities) {
   topGuildActivities = topGuildActivities.topGuildActivities;
-  let obj = {};
-  obj = { variant: "text-md/bold", style: _createForOfIteratorHelperLoose().header };
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj.children = intl.string(importDefault(2199).Lq9Set);
-  const items = [callback(require(4161) /* Text */.Text, obj), ];
-  obj = { hasIcons: true, children: topGuildActivities.map((guildActivity) => outer1_4(outer1_7, { guildActivity }, guildActivity.guild_id)) };
-  items[1] = callback(require(5536) /* TableRowGroupTitle */.TableRowGroup, obj);
-  obj.children = items;
-  return callback2(require(5533) /* ActionSheet */.ActionSheet, obj);
+  let obj = { children: null };
+  obj = { variant: "text-md/bold", style: createCacheKey().header, children: null };
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj[2] = intl.string(importDefault(2223).Lq9Set);
+  const items = [callback(require(4185) /* Text */.Text, obj), ];
+  obj = { hasIcons: true, children: null };
+  obj[1] = topGuildActivities.map((guildActivity) => callback(closure_7, { guildActivity }, guildActivity.guild_id));
+  items[1] = callback(require(5554) /* TableRowGroupTitle */.TableRowGroup, obj);
+  obj[0] = items;
+  return callback2(require(5551) /* ActionSheet */.ActionSheet, obj);
 };

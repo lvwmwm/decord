@@ -1,10 +1,10 @@
-// Module ID: 10016
-// Function ID: 77332
+// Module ID: 10038
+// Function ID: 10039
 // Name: VoicePanelModes
-// Dependencies: [477, 2]
+// Dependencies: [500, 2]
 // Exports: getAnalyticsNameForVoicePanelMode
 
-// Module 10016 (VoicePanelModes)
+// Module 10038 (VoicePanelModes)
 import set from "set";
 import set from "set";
 import set from "set";
@@ -13,13 +13,13 @@ let obj = { DISMISSED: "dismissed", PIP: "pip", PANEL: "panel" };
 obj = { mass: 0.5, damping: 80, stiffness: 200 };
 obj = {};
 const merged = Object.assign(obj);
-obj["overshootClamping"] = true;
+obj.overshootClamping = true;
 const obj1 = {};
 const merged1 = Object.assign(obj);
-obj1["overshootClamping"] = true;
+obj1.overshootClamping = true;
 const obj2 = {};
 const merged2 = Object.assign(obj);
-obj2["mass"] = 0.3;
+obj2.mass = 0.3;
 const obj3 = { NO_VIDEO_PARTICIPANTS: "no_video_participants", CALLER_DISCONNECTED: "caller_disconnected" };
 const obj4 = { [obj3.NO_VIDEO_PARTICIPANTS]: { width: 2, height: 1 } };
 let set = new Set(Object.keys(obj4));
@@ -31,9 +31,9 @@ export const VoicePanelModes = obj;
 export const getAnalyticsNameForVoicePanelMode = function getAnalyticsNameForVoicePanelMode(arg0) {
   if (obj.DISMISSED === arg0) {
     return "dismissed";
-  } else if (obj.PIP === arg0) {
+  } else if (tmp.PIP === arg0) {
     return "pip";
-  } else if (obj.PANEL === arg0) {
+  } else if (tmp.PANEL === arg0) {
     return "grid";
   }
 };

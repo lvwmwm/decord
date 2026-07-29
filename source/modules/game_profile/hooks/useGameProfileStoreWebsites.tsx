@@ -1,11 +1,11 @@
-// Module ID: 8465
-// Function ID: 67416
+// Module ID: 8489
+// Function ID: 8490
 // Name: set
-// Dependencies: [31, 8466, 8467, 8469, 8468, 2]
+// Dependencies: [19, 8490, 8491, 8493, 8492, 2]
 // Exports: useGameProfileStoreWebsites
 
-// Module 8465 (set)
-import result from "result";
+// Module 8489 (set)
+import noop from "noop";
 import set from "buildSteamStoreUrl";
 
 const require = arg1;
@@ -15,50 +15,51 @@ const result = set.fileFinishedImporting("modules/game_profile/hooks/useGameProf
 
 export const useGameProfileStoreWebsites = function useGameProfileStoreWebsites(data) {
   let id;
-  if (null != data) {
+  if (data != null) {
     id = data.id;
   }
   steamWebsiteUrl = steamWebsiteUrl(id1[2]).useSteamWebsiteUrl(id);
-  const tmp3 = importDefault(id1[3])(data);
-  importDefault = tmp3;
+  const tmp4 = importDefault(id1[3])(data);
+  importDefault = tmp4;
   id1 = undefined;
-  if (null != data) {
+  if (data != null) {
     id1 = data.id;
   }
   let websites;
-  if (null != data) {
+  if (data != null) {
     websites = data.websites;
   }
   let steamReleaseStatus;
-  if (null != data) {
+  if (data != null) {
     steamReleaseStatus = data.steamReleaseStatus;
   }
-  const items = [steamWebsiteUrl, websites, id1, steamReleaseStatus, tmp3];
+  const items = [steamWebsiteUrl, websites, id1, steamReleaseStatus, tmp4];
   return websites.useMemo(() => {
+    let arr = websites;
     if (null != websites) {
       if (null != id1) {
         let found;
-        if (null != websites) {
-          found = websites.filter((category) => {
-            let tmp = category.category === steamWebsiteUrl(id1[1]).ThirdPartyGameApplicationWebsiteCategory.EPICGAMES;
-            if (tmp) {
-              tmp = !steamReleaseStatus.has(outer1_2);
+        if (arr != null) {
+          found = arr.filter((category) => {
+            let tmp3 = category.category === outer1_0(outer1_2[1]).ThirdPartyGameApplicationWebsiteCategory.EPICGAMES;
+            if (tmp3) {
+              tmp3 = !outer1_4.has(closure_2);
             }
-            let tmp4 = !tmp;
-            if (!tmp) {
-              let hasItem = category.category !== steamWebsiteUrl(id1[1]).ThirdPartyGameApplicationWebsiteCategory.STEAM;
+            let tmp6 = !tmp3;
+            if (!tmp3) {
+              let hasItem = category.category !== tmp(tmp2[1]).ThirdPartyGameApplicationWebsiteCategory.STEAM;
               if (!hasItem) {
-                hasItem = outer1_4 !== steamWebsiteUrl(id1[4]).SteamReleaseStatus.RETIRED_ABANDONED;
+                hasItem = closure_4 !== tmp(tmp2[4]).SteamReleaseStatus.RETIRED_ABANDONED;
               }
               if (hasItem) {
-                hasItem = outer2_5.includes(category.category);
+                hasItem = outer1_5.includes(category.category);
               }
-              tmp4 = hasItem;
+              tmp6 = hasItem;
             }
-            return tmp4;
+            return tmp6;
           });
         }
-        if (null == found) {
+        if (found == null) {
           found = [];
         }
         let someResult = null == steamWebsiteUrl;
@@ -66,17 +67,19 @@ export const useGameProfileStoreWebsites = function useGameProfileStoreWebsites(
           someResult = steamReleaseStatus === steamWebsiteUrl(id1[4]).SteamReleaseStatus.RETIRED_ABANDONED;
         }
         if (!someResult) {
-          someResult = found.some((category) => category.category === steamWebsiteUrl(id1[1]).ThirdPartyGameApplicationWebsiteCategory.STEAM);
+          someResult = found.some((category) => category.category === callback(8490).ThirdPartyGameApplicationWebsiteCategory.STEAM);
         }
         if (!someResult) {
-          let obj = { category: steamWebsiteUrl(id1[1]).ThirdPartyGameApplicationWebsiteCategory.STEAM, url: steamWebsiteUrl };
-          found.push(obj);
+          let obj = { category: null, url: null };
+          obj[0] = steamWebsiteUrl(id1[1]).ThirdPartyGameApplicationWebsiteCategory.STEAM;
+          obj[1] = steamWebsiteUrl;
+          arr = found.push(obj);
         }
         const sorted = found.sort((category, category2) => {
           let num = -1;
-          if (category.category !== steamWebsiteUrl(id1[1]).ThirdPartyGameApplicationWebsiteCategory.STEAM) {
+          if (category.category !== callback(8490).ThirdPartyGameApplicationWebsiteCategory.STEAM) {
             let num2 = 0;
-            if (category2.category === steamWebsiteUrl(id1[1]).ThirdPartyGameApplicationWebsiteCategory.STEAM) {
+            if (category2.category === callback(8490).ThirdPartyGameApplicationWebsiteCategory.STEAM) {
               num2 = 1;
             }
             num = num2;
@@ -84,8 +87,9 @@ export const useGameProfileStoreWebsites = function useGameProfileStoreWebsites(
           return num;
         });
         if (null != closure_1) {
-          obj = { category: "XBOX_GAME_PASS", url: closure_1 };
-          sorted.unshift(obj);
+          obj = { category: "XBOX_GAME_PASS", url: null };
+          obj[1] = tmp11;
+          arr = sorted.unshift(obj);
         }
         return sorted;
       }

@@ -1,12 +1,12 @@
-// Module ID: 11899
-// Function ID: 92054
+// Module ID: 11923
+// Function ID: 11924
 // Name: useSimilarGames
-// Dependencies: [4186, 1850, 8633, 8632, 5888, 566, 8452, 8463, 2]
+// Dependencies: [4210, 1874, 8657, 8656, 5906, 589, 8476, 8487, 2]
 // Exports: default
 
-// Module 11899 (useSimilarGames)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_3 from "_isNativeReflectConstruct";
+// Module 11923 (useSimilarGames)
+import map from "map";
+import mergeGuildAvatar from "mergeGuildAvatar";
 import { SIMILAR_GAMES_BLOCKED_GAME_IDS as closure_4 } from "set";
 
 let require = arg1;
@@ -15,48 +15,39 @@ let closure_6 = [];
 const result = require("set").fileFinishedImporting("modules/game_profile/hooks/useSimilarGames.tsx");
 
 export default function useSimilarGames(arg0, arg1) {
+  let data;
   let error;
   let isLoading;
   let tmp = arg1;
   if (arg1) {
     tmp = !set.has(arg0);
   }
-  let obj = require(8632) /* _getShopCollection */;
+  let obj = require(8656) /* _getShopCollection */;
   const similarGameIds = obj.useSimilarGameIds(arg0, tmp);
-  const data = similarGameIds.data;
-  ({ isLoading, error } = similarGameIds);
+  ({ data, isLoading, error } = similarGameIds);
   if (!tmp) {
-    let tmp5 = closure_5;
+    let tmp7 = closure_5;
   } else {
-    tmp5 = data;
+    tmp7 = data;
   }
-  require = tmp5;
-  const games = require(5888) /* importDefaultResult1 */.useGames(tmp5);
-  let obj2 = require(5888) /* importDefaultResult1 */;
-  const items = [_isNativeReflectConstruct];
-  const items1 = [tmp5];
-  const stateFromStores = require(566) /* initialize */.useStateFromStores(items, () => tmp5.some((arg0) => {
-    let tmp = null == outer2_2.getGame(arg0);
-    if (tmp) {
-      tmp = !outer2_2.hasNoData(arg0);
-    }
-    if (tmp) {
-      tmp = !outer2_2.didFetchingFail(arg0);
-    }
-    return tmp;
-  }), items1);
-  require(566) /* initialize */;
-  const items2 = [_isNativeReflectConstruct, closure_3];
-  [][0] = tmp5;
-  obj = {};
+  require = tmp7;
+  let tmp3Result = tmp3(5906);
+  const games = tmp3Result.useGames(tmp7);
+  tmp3Result = tmp3(589);
+  const items = [map];
+  const items1 = [tmp7];
+  const stateFromStores = tmp3Result.useStateFromStores(items, () => tmp7.some((gameId) => null == game.getGame(gameId) && !game.hasNoData(gameId) && !game.didFetchingFail(gameId)), items1);
+  require(589) /* initialize */;
+  const items2 = [map, mergeGuildAvatar];
+  [][0] = tmp7;
   if (tmp) {
-    obj.isFetching = null == error && null == data || isLoading || stateFromStores;
-    obj.similarGames = tmp9;
-    let tmp11 = obj;
+    obj = { isFetching: null, similarGames: null };
+    obj[0] = null == error && null == data || isLoading || stateFromStores;
+    obj[1] = tmp11;
+    const tmp14 = null == error && null == data || isLoading || stateFromStores;
   } else {
-    obj.isFetching = false;
-    obj.similarGames = closure_6;
-    tmp11 = obj;
+    obj = { isFetching: false, similarGames: null };
+    obj[1] = closure_6;
   }
-  return tmp11;
+  return obj;
 };

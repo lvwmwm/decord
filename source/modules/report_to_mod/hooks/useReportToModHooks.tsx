@@ -1,31 +1,30 @@
-// Module ID: 9538
-// Function ID: 74215
+// Module ID: 9562
+// Function ID: 9563
 // Name: useIsReportToModEnabled
-// Dependencies: [31, 1838, 4384, 566, 5773, 5772, 6034, 5695, 7960, 2]
+// Dependencies: [19, 1862, 4407, 589, 5791, 5790, 6052, 5713, 7985, 2]
 // Exports: loadOriginalAuthorFromSnapshot, useIsModeratorReportOrPostChannel, useIsModeratorReportPostChannel, useIsReportToModEnabled, useLoadReportedMessage, useReportToModChannelId
 
-// Module 9538 (useIsReportToModEnabled)
-import { useEffect } from "result";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 9562 (useIsReportToModEnabled)
+import { useEffect } from "noop";
+import createGuildRecordFromRust from "createGuildRecordFromRust";
+import reinjectEphemerals from "reinjectEphemerals";
 
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/report_to_mod/hooks/useReportToModHooks.tsx");
+const result = require("reinjectEphemerals").fileFinishedImporting("modules/report_to_mod/hooks/useReportToModHooks.tsx");
 
 export const useIsReportToModEnabled = function useIsReportToModEnabled(arg0) {
   const _require = arg0;
-  const items = [_createForOfIteratorHelperLoose];
-  return _require(566).useStateFromStores(items, () => {
+  const items = [createGuildRecordFromRust];
+  return _require(589).useStateFromStores(items, () => {
     if (null == closure_0) {
       return false;
     } else {
-      const guild = outer1_4.getGuild(closure_0);
+      const guild = outer1_4.getGuild(tmp);
       let tmp4 = null != guild;
       if (tmp4) {
-        let tmp7 = outer1_1(outer1_2[4])(guild);
-        if (tmp7) {
-          tmp7 = null != outer1_1(outer1_2[5])(guild);
-        }
-        tmp4 = tmp7;
+        tmp4 = outer1_1(outer1_2[4])(guild) && null != outer1_1(outer1_2[5])(guild);
+        const tmp5 = outer1_1;
+        const tmp6 = outer1_2;
+        const tmp7 = outer1_1(outer1_2[4])(guild) && null != outer1_1(outer1_2[5])(guild);
       }
       return tmp4;
     }
@@ -33,37 +32,36 @@ export const useIsReportToModEnabled = function useIsReportToModEnabled(arg0) {
 };
 export const useReportToModChannelId = function useReportToModChannelId(arg0) {
   const _require = arg0;
-  const items = [_createForOfIteratorHelperLoose];
-  return _require(566).useStateFromStores(items, () => {
+  const items = [createGuildRecordFromRust];
+  return _require(589).useStateFromStores(items, () => {
     let guild = null;
     if (null != closure_0) {
-      guild = outer1_4.getGuild(closure_0);
+      guild = outer1_4.getGuild(tmp);
     }
     let tmp4 = null;
     if (null != guild) {
-      const tmp7 = outer1_1(outer1_2[5])(guild);
-      let tmp8 = null;
-      if (null != tmp7) {
-        tmp8 = tmp7;
+      let tmp7 = outer1_1(outer1_2[5])(guild);
+      if (tmp7 == null) {
+        tmp7 = null;
       }
-      tmp4 = tmp8;
+      tmp4 = tmp7;
     }
     return tmp4;
   });
 };
-export const useIsModeratorReportOrPostChannel = function useIsModeratorReportOrPostChannel(channel) {
-  return require(6034) /* isModeratorReportOrPostChannelId */.isModeratorReportOrPostChannel(channel);
+export const useIsModeratorReportOrPostChannel = function useIsModeratorReportOrPostChannel(isModeratorReportChannel) {
+  return require(6052) /* canReportMessageToMods */.isModeratorReportOrPostChannel(isModeratorReportChannel);
 };
-export const useIsModeratorReportPostChannel = function useIsModeratorReportPostChannel(channel) {
-  return require(6034) /* isModeratorReportOrPostChannelId */.isModeratorReportPostChannel(channel);
+export const useIsModeratorReportPostChannel = function useIsModeratorReportPostChannel(isModeratorReportChannel) {
+  return require(6052) /* canReportMessageToMods */.isModeratorReportPostChannel(isModeratorReportChannel);
 };
 export const useLoadReportedMessage = function useLoadReportedMessage(messageReference) {
   messageReference = messageReference.messageReference;
-  const items = [_isNativeReflectConstruct];
-  const stateFromStores = messageReference(566).useStateFromStores(items, () => {
+  const items = [reinjectEphemerals];
+  const stateFromStores = messageReference(589).useStateFromStores(items, () => {
     let message = null;
     if (null != messageReference) {
-      message = outer1_5.getMessage(messageReference.channel_id, messageReference.message_id);
+      message = outer1_5.getMessage(tmp.channel_id, tmp.message_id);
     }
     return message;
   });
@@ -75,27 +73,28 @@ export const useLoadReportedMessage = function useLoadReportedMessage(messageRef
     }
     if (tmp) {
       let obj = stateFromStores(outer1_2[7]);
-      obj = { channelId: messageReference.channel_id };
-      obj = { messageId: messageReference.message_id };
-      obj.jump = obj;
-      obj.limit = 10;
+      obj = { channelId: null, jump: null, limit: 10 };
+      obj[0] = messageReference.channel_id;
+      obj = { messageId: null };
+      obj[0] = messageReference.message_id;
+      obj[1] = obj;
       const messages = obj.fetchMessages(obj);
     }
   }, items1);
 };
 export const loadOriginalAuthorFromSnapshot = function loadOriginalAuthorFromSnapshot(arg0) {
   let reported_user_id;
-  if (null != arg0) {
+  if (arg0 != null) {
     const first = arg0.messageSnapshots[0];
-    if (null != first) {
+    if (first != null) {
       const moderatorReport = first.moderatorReport;
-      if (null != moderatorReport) {
+      if (moderatorReport != null) {
         reported_user_id = moderatorReport.reported_user_id;
       }
     }
   }
   if (null != reported_user_id) {
-    const user = require(7960) /* _fetchProfile */.getUser(reported_user_id);
-    const obj = require(7960) /* _fetchProfile */;
+    const user = require(7985) /* _fetchProfile */.getUser(reported_user_id);
+    const obj = require(7985) /* _fetchProfile */;
   }
 };

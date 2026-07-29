@@ -1,24 +1,19 @@
-// Module ID: 4193
-// Function ID: 35257
+// Module ID: 4217
+// Function ID: 4218
 // Name: getIsValorantSocialSDKEnabled
-// Dependencies: [1428, 2]
+// Dependencies: [1452, 2]
 // Exports: getIsValorantSocialSDKEnabled
 
-// Module 4193 (getIsValorantSocialSDKEnabled)
+// Module 4217 (getIsValorantSocialSDKEnabled)
 import ApexExperiment from "ApexExperiment";
 import ApexExperiment from "ApexExperiment";
 import ApexExperiment from "ApexExperiment";
 
-let obj = { [0]: { enabled: false }, [1]: { enabled: true } };
+let obj = { 0: { enabled: false }, 1: { enabled: true } };
 obj = { enabled: false };
-obj = { name: "2026-04-valorant-social-sdk", kind: "user" };
-obj.defaultConfig = obj;
-obj.variations = obj;
-let closure_0 = ApexExperiment.createApexExperiment(obj);
-const obj1 = { name: "2026-05-valorant-social-sdk-us--canada", kind: "user", defaultConfig: obj, variations: obj };
-let closure_1 = ApexExperiment.createApexExperiment(obj1);
-const obj2 = { name: "2026-05-valorant-social-sdk-all-regions", kind: "user", defaultConfig: obj, variations: obj };
-let closure_2 = ApexExperiment.createApexExperiment(obj2);
+let closure_0 = ApexExperiment.createApexExperiment({ name: "2026-04-valorant-social-sdk", kind: "user", defaultConfig: obj, variations: obj });
+let closure_1 = ApexExperiment.createApexExperiment({ name: "2026-05-valorant-social-sdk-us--canada", kind: "user", defaultConfig: obj, variations: obj });
+let closure_2 = ApexExperiment.createApexExperiment({ name: "2026-05-valorant-social-sdk-all-regions", kind: "user", defaultConfig: obj, variations: obj });
 const result = require("set").fileFinishedImporting("modules/application_account_linking/experiments/valorantSocialSDKExperiment.tsx");
 
 export const getIsValorantSocialSDKEnabled = function getIsValorantSocialSDKEnabled(arg0) {

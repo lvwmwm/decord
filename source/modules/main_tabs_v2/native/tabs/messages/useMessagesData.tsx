@@ -1,63 +1,63 @@
-// Module ID: 15015
-// Function ID: 114301
+// Module ID: 15042
+// Function ID: 15043
 // Name: useMessagesData
-// Dependencies: [57, 31, 4843, 1194, 3802, 5636, 566, 15016, 3838, 2]
+// Dependencies: [32, 19, 4865, 1218, 3826, 5654, 589, 15043, 3862, 2]
 // Exports: default
 
-// Module 15015 (useMessagesData)
+// Module 15042 (useMessagesData)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_6 from "_isNativeReflectConstruct";
-import closure_7 from "_isNativeReflectConstruct";
-import closure_8 from "_isNativeReflectConstruct";
+import noop from "noop";
+import _handleConnectionOpen from "_handleConnectionOpen";
+import fetchFingerprint from "fetchFingerprint";
+import upsertRelationship from "upsertRelationship";
+import makeSortedChannel from "makeSortedChannel";
 
 const require = arg1;
 let obj = { HappeningNow: 0, [0]: "HappeningNow", EmptyState: 1, [1]: "EmptyState" };
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/main_tabs_v2/native/tabs/messages/useMessagesData.tsx");
+const result = require("_handleConnectionOpen").fileFinishedImporting("modules/main_tabs_v2/native/tabs/messages/useMessagesData.tsx");
 
 export default function useMessagesData() {
-  let obj = connected(first[6]);
   let items = [numFriendSuggestions, friendSuggestions];
-  const stateFromStoresObject = obj.useStateFromStoresObject(items, () => ({ connected: null != numFriendSuggestions.getSessionId(), connectedToGateway: friendSuggestions.isConnected() }));
+  const stateFromStoresObject = connected(first[6]).useStateFromStoresObject(items, () => ({ connected: null != numFriendSuggestions.getSessionId(), connectedToGateway: friendSuggestions.isConnected() }));
   connected = stateFromStoresObject.connected;
   const connectedToGateway = stateFromStoresObject.connectedToGateway;
+  let obj = connected(first[6]);
   const items1 = [stateFromStores];
-  const tmp2 = callback(connected(first[6]).useStateFromStoresArray(items1, () => stateFromStores.getSortedChannels()), 2);
-  first = tmp2[0];
-  callback = tmp4;
-  obj = { location: "Messages Tab" };
-  let tmp6 = connected;
+  const tmp4 = callback(connected(first[6]).useStateFromStoresArray(items1, () => stateFromStores.getSortedChannels()), 2);
+  first = tmp4[0];
+  callback = tmp6;
+  let tmp8 = connected;
   const obj2 = connected(first[6]);
   if (connected) {
-    tmp6 = connectedToGateway;
+    tmp8 = connectedToGateway;
   }
-  obj.isConnected = tmp6;
-  const tmp5Result = connectedToGateway(first[7])(obj);
-  const setAdded = tmp5Result.setAdded;
-  friendSuggestions = tmp5Result.friendSuggestions;
-  numFriendSuggestions = tmp5Result.numFriendSuggestions;
-  const HappeningNowCardsDisabled = connected(first[8]).HappeningNowCardsDisabled;
+  const tmp7Result = connectedToGateway(first[7])({ location: "Messages Tab", isConnected: tmp8 });
+  const setAdded = tmp7Result.setAdded;
+  friendSuggestions = tmp7Result.friendSuggestions;
+  numFriendSuggestions = tmp7Result.numFriendSuggestions;
+  const HappeningNowCardsDisabled = tmp(tmp2[8]).HappeningNowCardsDisabled;
   const setting = HappeningNowCardsDisabled.useSetting();
-  const tmp5 = connectedToGateway(first[7]);
+  const tmp7 = connectedToGateway(first[7]);
   const items2 = [setting];
   stateFromStores = connected(first[6]).useStateFromStores(items2, () => setting.getFriendCount());
   let closure_9 = setAdded.useRef(-1);
-  const items3 = [connected, connectedToGateway, first, tmp2[1], numFriendSuggestions, friendSuggestions, setting, stateFromStores, setAdded];
+  const items3 = [connected, connectedToGateway, first, tmp4[1], numFriendSuggestions, friendSuggestions, setting, stateFromStores, setAdded];
   return setAdded.useMemo(() => {
-    if (-1 === closure_9.current) {
-      closure_9.current = 0;
+    if (-1 === ref.current) {
+      tmp.current = 0;
     } else {
-      let tmp = connected;
+      let tmp2 = connected;
       if (connected) {
-        tmp = connectedToGateway;
+        tmp2 = connectedToGateway;
       }
-      if (tmp) {
-        closure_9.current = closure_9.current + 1;
+      if (tmp2) {
+        tmp.current = tmp.current + 1;
       }
     }
+    let arr = first;
+    let arr1 = tmp6;
     if (numFriendSuggestions <= 0) {
-      if (tmp4) {
+      if (tmp3) {
         let num3 = 0;
       } else {
         num3 = 15;
@@ -65,16 +65,16 @@ export default function useMessagesData() {
       let bound = num3;
     } else {
       const _Math = Math;
-      bound = Math.min(numFriendSuggestions, 5);
+      bound = Math.min(tmp4, 5);
     }
     const items = [];
-    items.push(first.length);
-    items.push(first.length + tmp4.length > 0.length);
+    arr = items.push(arr.length);
+    arr = items.push(arr1.length);
     let num4 = 0;
     if (numFriendSuggestions > 0) {
       num4 = 1;
     }
-    items.push(num4);
+    arr1 = items.push(num4);
     let num5 = 0;
     if (numFriendSuggestions > 0) {
       num5 = 0;
@@ -87,48 +87,48 @@ export default function useMessagesData() {
     }
     items.push(num5);
     items.push(bound);
-    if (first.length + tmp4.length > 0) {
+    if (first.length + tmp6.length > 0) {
       let HappeningNow = null;
       if (!setting) {
-        HappeningNow = closure_9.HappeningNow;
+        HappeningNow = ref.HappeningNow;
       }
       let EmptyState = HappeningNow;
     } else {
       EmptyState = null;
       if (tmp5) {
-        EmptyState = closure_9.EmptyState;
+        EmptyState = ref.EmptyState;
       }
     }
-    const obj = { channels: first.length + tmp4.length > 0, channelFavorites: first };
+    const obj = { channels: arr1, channelFavorites: arr, dataKey: null, showFullscreenEmptyState: null, setAddedFriendSuggestions: null, friendSuggestions: null, renderHeader: null, renderFooter: null, sections: null };
     let combined = null;
-    if (closure_9.current > 0) {
+    if (ref.current > 0) {
       const _HermesInternal = HermesInternal;
-      combined = "" + closure_9.current;
+      combined = "" + tmp.current;
     }
-    obj.dataKey = combined;
-    let tmp28 = !tmp4;
-    if (first.length + tmp4.length <= 0) {
-      tmp28 = connected;
+    obj[2] = combined;
+    let tmp26 = !tmp3;
+    if (first.length + tmp6.length <= 0) {
+      tmp26 = connected;
     }
-    if (tmp28) {
-      tmp28 = !tmp5;
+    if (tmp26) {
+      tmp26 = !tmp5;
     }
-    obj.showFullscreenEmptyState = tmp28;
-    obj.setAddedFriendSuggestions = setAdded;
-    obj.friendSuggestions = friendSuggestions;
-    obj.renderHeader = EmptyState;
-    let tmp29 = connected;
+    obj[3] = tmp26;
+    obj[4] = setAdded;
+    obj[5] = friendSuggestions;
+    obj[6] = EmptyState;
+    let tmp27 = connected;
     if (connected) {
-      tmp29 = stateFromStores < 4;
+      tmp27 = stateFromStores < 4;
     }
-    if (tmp29) {
-      tmp29 = tmp4;
+    if (tmp27) {
+      tmp27 = tmp3;
     }
-    if (!tmp29) {
-      tmp29 = tmp5;
+    if (!tmp27) {
+      tmp27 = tmp5;
     }
-    obj.renderFooter = tmp29;
-    obj.sections = items;
+    obj[7] = tmp27;
+    obj[8] = items;
     return obj;
   }, items3);
 };

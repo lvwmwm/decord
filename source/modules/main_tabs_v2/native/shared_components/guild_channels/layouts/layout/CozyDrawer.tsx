@@ -1,40 +1,43 @@
-// Module ID: 10265
-// Function ID: 79290
-// Name: items
-// Dependencies: [10266, 10267, 689, 1273, 5548, 5507, 2]
+// Module ID: 10286
+// Function ID: 10287
+// Name: importDefaultResult1
+// Dependencies: [10287, 10288, 712, 1297, 5566, 5525, 2]
 
-// Module 10265 (items)
-import importDefaultResult from "isObject";
-import importDefaultResult1 from "isObject";
+// Module 10286 (importDefaultResult1)
+import importDefaultResult from "merge";
+import importDefaultResult1 from "merge";
 
-let obj = {};
-obj = { borderRadius: require("_createForOfIteratorHelperLoose").radii.md, padding: { paddingVertical: 4, paddingLeft: 20, paddingRight: 12 }, paddingPanels: { paddingVertical: 6, paddingLeft: 8, paddingRight: 8 }, paddingThread: { paddingVertical: 4, paddingLeft: 8, paddingRight: 12 } };
-obj.container = obj;
-obj.channelName = { height: 20, text: { variant: "text-md/semibold" } };
+let obj = { container: null, channelName: null, messagePreview: null, inviteRow: null, icon: null, unreadBadge: null, mentionBadge: null, joinVoiceButton: null, threadSpine: null, happeningNow: null, typing: null, separator: null };
+obj = { borderRadius: null, padding: null, paddingPanels: null, paddingThread: null };
+obj[0] = require("Themes").radii.md;
+obj[1] = { paddingVertical: 4, paddingLeft: 20, paddingRight: 12 };
+obj[2] = { paddingVertical: 6, paddingLeft: 8, paddingRight: 8 };
+obj[3] = { paddingVertical: 4, paddingLeft: 8, paddingRight: 12 };
+obj[0] = obj;
+obj[1] = { height: 20, text: { variant: "text-md/semibold" } };
 obj = { text: { variant: "text-xs/medium" }, messageTypeIconSize: require("Button").IconSizes.EXTRA_SMALL, messageTypeIconSizeNew: "xs", height: 18, margin: { marginTop: 0 } };
-obj.messagePreview = obj;
-obj.inviteRow = { text: { variant: "text-md/semibold" } };
-obj.icon = { avatarSize: require("Button").AvatarSizes.NORMAL, guildIconSize: require("makeSizeStyle").GuildIconSizes.NORMAL, guildBadgeIconSize: require("makeSizeStyle").GuildIconSizes.XXSMALL, wrapper: { size: 40 }, channelIcon: { size: 40 }, margin: { marginRight: 8 }, emoji: { size: 24, lineHeight: 32 } };
-obj.unreadBadge = { positionThread: { left: -68 } };
-obj.mentionBadge = { position: { top: 34 }, positionThread: { top: 27 } };
-const obj2 = { text: { variant: "text-sm/bold" }, layout: { paddingVertical: 6, paddingRight: 12, paddingLeft: 12, height: 32 } };
-const obj1 = { avatarSize: require("Button").AvatarSizes.NORMAL, guildIconSize: require("makeSizeStyle").GuildIconSizes.NORMAL, guildBadgeIconSize: require("makeSizeStyle").GuildIconSizes.XXSMALL, wrapper: { size: 40 }, channelIcon: { size: 40 }, margin: { marginRight: 8 }, emoji: { size: 24, lineHeight: 32 } };
-obj2.icon = { size: require("Button").IconSizes.REFRESH_SMALL_16, gameSize: require("GameIcon").GameIconSizes.SMALL };
-obj.joinVoiceButton = obj2;
-const obj4 = { left: 48, startAndEndHeight: 16, transform: null, topOffset: -6 };
+obj[2] = obj;
+obj[3] = { text: { variant: "text-md/semibold" } };
+obj[4] = { avatarSize: require("Button").AvatarSizes.NORMAL, guildIconSize: require("GuildIconSizes").GuildIconSizes.NORMAL, guildBadgeIconSize: require("GuildIconSizes").GuildIconSizes.XXSMALL, wrapper: { size: 40 }, channelIcon: { size: 40 }, margin: { marginRight: 8 }, emoji: { size: 24, lineHeight: 32 } };
+obj[5] = { positionThread: { left: -68 } };
+obj[6] = { position: { top: 34 }, positionThread: { top: 27 } };
+const obj2 = { text: { variant: "text-sm/bold" }, layout: { paddingVertical: 6, paddingRight: 12, paddingLeft: 12, height: 32 }, icon: null };
+const obj1 = { avatarSize: require("Button").AvatarSizes.NORMAL, guildIconSize: require("GuildIconSizes").GuildIconSizes.NORMAL, guildBadgeIconSize: require("GuildIconSizes").GuildIconSizes.XXSMALL, wrapper: { size: 40 }, channelIcon: { size: 40 }, margin: { marginRight: 8 }, emoji: { size: 24, lineHeight: 32 } };
+obj2[2] = { size: require("Button").IconSizes.REFRESH_SMALL_16, gameSize: require("GameIcon").GameIconSizes.SMALL };
+obj[7] = obj2;
 const items = [{ translateY: 0 }];
-obj4.transform = items;
-obj.threadSpine = obj4;
-obj.happeningNow = { margin: { marginBottom: 20 } };
-obj.typing = { position: { top: 12, left: 12 }, positionThread: { top: 3, left: -17 }, typingIndicator: { position: { top: 25, left: 11 } } };
-obj.separator = { margin: { marginVertical: 20 } };
+obj[8] = { left: 48, startAndEndHeight: 16, transform: items, topOffset: -6 };
+obj[9] = { margin: { marginBottom: 20 } };
+obj[10] = { position: { top: 12, left: 12 }, positionThread: { top: 3, left: -17 }, typingIndicator: { position: { top: 25, left: 11 } } };
+obj[11] = { margin: { marginVertical: 20 } };
 const obj3 = { size: require("Button").IconSizes.REFRESH_SMALL_16, gameSize: require("GameIcon").GameIconSizes.SMALL };
-const importDefaultResultResult = importDefaultResult(require("items").CHANNEL_LIST_STYLES_COMPACT, obj);
-const obj5 = { container: { paddingPanels: { paddingVertical: 8 } } };
-const obj6 = { avatarSize: require("Button").AvatarSizes.REFRESH_MEDIUM_32 };
-obj5.icon = obj6;
-const importDefaultResult1Result = require("isObject")(require("items").CHANNEL_LIST_STYLES_COMPACT, obj5);
-const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/main_tabs_v2/native/shared_components/guild_channels/layouts/layout/CozyDrawer.tsx");
+const importDefaultResultResult = importDefaultResult(require("CHANNEL_LIST_STYLES_COMPACT").CHANNEL_LIST_STYLES_COMPACT, obj);
+const obj4 = { container: { paddingPanels: { paddingVertical: 8 } }, icon: null };
+const obj5 = { avatarSize: null };
+obj5[0] = require("Button").AvatarSizes.REFRESH_MEDIUM_32;
+obj4[1] = obj5;
+const importDefaultResult1Result = require("merge")(require("CHANNEL_LIST_STYLES_COMPACT").CHANNEL_LIST_STYLES_COMPACT, obj4);
+const result = require("Themes").fileFinishedImporting("modules/main_tabs_v2/native/shared_components/guild_channels/layouts/layout/CozyDrawer.tsx");
 
 export const CHANNEL_LIST_STYLES_COZY_DRAWER = importDefaultResultResult;
 export const CHANNEL_LIST_STYLES_COZY_DRAWER_SMOL = importDefaultResult1Result;

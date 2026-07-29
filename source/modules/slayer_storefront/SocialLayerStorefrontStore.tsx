@@ -1,333 +1,197 @@
-// Module ID: 5646
-// Function ID: 47879
-// Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 1922, 1194, 566, 686, 2]
+// Module ID: 5664
+// Function ID: 5665
+// Name: handleUserSettingsStoreUpdate
+// Dependencies: [1946, 1218, 589, 709, 2]
 
-// Module 5646 (_isNativeReflectConstruct)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import initialize from "initialize";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
-import closure_6 from "_isNativeReflectConstruct";
-import closure_7 from "_isNativeReflectConstruct";
-import set from "_possibleConstructorReturn";
+// Module 5664 (handleUserSettingsStoreUpdate)
+import _getSystemLocale from "_getSystemLocale";
+import fetchFingerprint from "fetchFingerprint";
+import { Store } from "initialize";
+import set from "initialize";
 
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
-  }
-  const result = _isNativeReflectConstruct();
-}
-function getGuildAndApplicationId(guildOrApplicationId) {
-  const obj = {};
-  if ("guild" === guildOrApplicationId.type) {
-    let guildId = guildOrApplicationId.guildId;
-  } else {
-    guildId = table2[guildOrApplicationId.applicationId];
-  }
-  obj.guildId = guildId;
-  if ("guild" === guildOrApplicationId.type) {
-    let applicationId = table[guildOrApplicationId.guildId];
-  } else {
-    applicationId = guildOrApplicationId.applicationId;
-  }
-  obj.applicationId = applicationId;
-  return obj;
-}
-function updateStorefrontFetchState(guildId, applicationId, arg2) {
-  if (null != guildId) {
-    let obj = {};
-    const merged = Object.assign(obj[guildId]);
-    const merged1 = Object.assign(arg2);
-    obj[guildId] = obj;
-  }
-  if (null != applicationId) {
-    obj = {};
-    const merged2 = Object.assign(obj1[applicationId]);
-    const merged3 = Object.assign(arg2);
-    obj1[applicationId] = obj;
-  }
-  obj = {};
-  const merged4 = Object.assign(obj);
-  obj1 = {};
-  const merged5 = Object.assign(obj1);
-}
 function handleUserSettingsStoreUpdate() {
-  if (locale === closure_6.locale) {
+  if (locale === _getSystemLocale.locale) {
     return false;
   } else {
-    locale = closure_6.locale;
+    locale = tmp.locale;
+    let closure_3 = {};
+    let closure_4 = {};
+    let closure_5 = {};
+    let closure_6 = {};
+    let closure_7 = {};
     let closure_8 = {};
     let closure_9 = {};
     let closure_10 = {};
-    let closure_11 = {};
-    let closure_12 = {};
-    let closure_13 = {};
-    let closure_14 = {};
-    let closure_15 = {};
   }
 }
+let closure_3 = {};
+let closure_4 = {};
+let closure_5 = {};
+let closure_6 = {};
+let closure_7 = {};
 let closure_8 = {};
 let closure_9 = {};
 let closure_10 = {};
 let closure_11 = {};
 let closure_12 = {};
 let closure_13 = {};
-let closure_14 = {};
-let closure_15 = {};
-let closure_16 = {};
+let set = new Set();
+let closure_15 = { state: "idle" };
+let set1 = new Set();
 let closure_17 = {};
 let closure_18 = {};
-let set = new Set();
-let closure_20 = { state: "idle" };
-let set1 = new Set();
-let closure_22 = {};
-let closure_23 = {};
-let closure_24 = {};
-let closure_25 = {};
+let closure_19 = {};
+let closure_20 = {};
 let set2 = new Set();
-let c27 = null;
-let tmp5 = ((Store) => {
-  class SocialLayerStorefrontStore {
-    constructor() {
-      self = this;
-      tmp = outer1_1(this, SocialLayerStorefrontStore);
-      obj = outer1_4(SocialLayerStorefrontStore);
-      tmp2 = outer1_3;
-      if (outer1_28()) {
-        tmp6 = globalThis;
-        _Reflect = Reflect;
-        tmp7 = outer1_4;
-        tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, outer1_4(self).constructor);
-      } else {
-        tmp3 = arguments;
-        tmp4 = arguments;
-        constructResult = obj(...arguments);
-      }
-      return tmp2(self, constructResult);
-    }
+let c22 = null;
+class SocialLayerStorefrontStore extends Store {
+}
+const prototype = SocialLayerStorefrontStore.prototype;
+prototype["initialize"] = function initialize() {
+  this.waitFor(fetchFingerprint, _getSystemLocale);
+  const items = [_getSystemLocale];
+  this.syncWith(items, handleUserSettingsStoreUpdate);
+  const locale = _getSystemLocale.locale;
+};
+prototype["getStorefrontData"] = function getStorefrontData(arg0) {
+  return dependencyMap[arg0];
+};
+prototype["getStorefrontDataForApplicationId"] = function getStorefrontDataForApplicationId(arg0) {
+  return dependencyMap2[arg0];
+};
+prototype["getStorefrontFetchState"] = function getStorefrontFetchState(closure_0) {
+  if ("guild" === closure_0.type) {
+    let guildId = closure_0.guildId;
+  } else {
+    guildId = dependencyMap6[closure_0.applicationId];
   }
-  callback2(SocialLayerStorefrontStore, Store);
-  let obj = {
-    key: "initialize",
-    value() {
-      this.waitFor(outer1_7, outer1_6);
-      const items = [outer1_6];
-      this.syncWith(items, outer1_31);
-      const SocialLayerStorefrontStore = outer1_6.locale;
-    }
-  };
-  let items = [obj, , , , , , , , , , , , , , , , , , , , , , , ];
-  obj = {
-    key: "getStorefrontData",
-    value(arg0) {
-      return outer1_9[arg0];
-    }
-  };
-  items[1] = obj;
-  obj = {
-    key: "getStorefrontDataForApplicationId",
-    value(arg0) {
-      return outer1_10[arg0];
-    }
-  };
-  items[2] = obj;
-  items[3] = {
-    key: "getStorefrontFetchState",
-    value(arg0) {
-      let applicationId;
-      let guildId;
-      ({ guildId, applicationId } = outer1_29(arg0));
-      if (null != guildId) {
-        let tmp2 = outer1_9[guildId];
-      } else if (null != applicationId) {
-        tmp2 = outer1_10[applicationId];
-      }
-      return tmp2;
-    }
-  };
-  items[4] = {
-    key: "getSkuAssets",
-    value() {
-      return outer1_14;
-    }
-  };
-  items[5] = {
-    key: "getStorefrontMetadata",
-    value(arg0) {
-      return outer1_15[arg0];
-    }
-  };
-  items[6] = {
-    key: "getStorefrontEntries",
-    value(arg0) {
-      return outer1_11[arg0];
-    }
-  };
-  items[7] = {
-    key: "getStorefrontById",
-    value(arg0) {
-      return outer1_12[arg0];
-    }
-  };
-  items[8] = {
-    key: "getPreviewStorefrontId",
-    value(arg0) {
-      let tmp2 = null;
-      if (null != outer1_13[arg0]) {
-        tmp2 = tmp;
-      }
-      return tmp2;
-    }
-  };
-  items[9] = {
-    key: "getStorefrontState",
-    value(arg0) {
-      if (null != arg0) {
-        return outer1_8[arg0];
-      }
-    }
-  };
-  items[10] = {
-    key: "getAnnouncement",
-    value(arg0) {
-      return outer1_16[arg0];
-    }
-  };
-  items[11] = {
-    key: "getConfig",
-    value() {
-      let config = null;
-      if ("success" === outer1_20.state) {
-        config = outer1_20.config;
-      }
-      return config;
-    }
-  };
-  items[12] = {
-    key: "getConfigForApplicationId",
-    value(arg0) {
-      return outer1_25[arg0];
-    }
-  };
-  items[13] = {
-    key: "getApplicationIdFromDetectableId",
-    value(arg0) {
-      return outer1_24[arg0];
-    }
-  };
-  items[14] = {
-    key: "getDetectableIdsToApplicationIds",
-    value() {
-      return outer1_24;
-    }
-  };
-  items[15] = {
-    key: "getGuildIdFromApplicationId",
-    value(arg0) {
-      let tmp;
-      if (null != arg0) {
-        tmp = outer1_23[arg0];
-      }
-      return tmp;
-    }
-  };
-  items[16] = {
-    key: "getApplicationIdFromGuildId",
-    value(arg0) {
-      let tmp;
-      if (null != arg0) {
-        tmp = outer1_22[arg0];
-      }
-      return tmp;
-    }
-  };
-  items[17] = {
-    key: "getConfigFetchState",
-    value() {
-      return outer1_20;
-    }
-  };
-  items[18] = {
-    key: "getStorefrontApplicationIds",
-    value() {
-      return outer1_21;
-    }
-  };
-  items[19] = {
-    key: "getStorefrontGuildIds",
-    value() {
-      return outer1_26;
-    }
-  };
-  items[20] = {
-    key: "getSKUEligibility",
-    value(arg0) {
-      let state;
-      if (null != outer1_17[arg0]) {
-        state = tmp.state;
-      }
-      return state;
-    }
-  };
-  items[21] = {
-    key: "getSKUEligibilityEntry",
-    value(arg0) {
-      return outer1_17[arg0];
-    }
-  };
-  items[22] = {
-    key: "getNormalizedSKUEligibility",
-    value(arg0) {
-      let state;
-      if (null != outer1_17[arg0]) {
-        state = tmp.state;
-      }
-      return "ineligible" !== state;
-    }
-  };
-  items[23] = {
-    key: "getAnnouncementModalContentConfig",
-    value() {
-      return outer1_27;
-    }
-  };
-  return callback(SocialLayerStorefrontStore, items);
-})(require("initialize").Store);
-tmp5.displayName = "SocialLayerStorefrontStore";
-tmp5 = new tmp5(require("dispatcher"), {
+  if ("guild" === closure_0.type) {
+    let applicationId = dependencyMap5[closure_0.guildId];
+  } else {
+    applicationId = closure_0.applicationId;
+  }
+  if (null != guildId) {
+    let tmp3 = dependencyMap[guildId];
+  } else if (null != applicationId) {
+    tmp3 = dependencyMap2[applicationId];
+  }
+  return tmp3;
+};
+prototype["getSkuAssets"] = function getSkuAssets() {
+  return closure_9;
+};
+prototype["getStorefrontMetadata"] = function getStorefrontMetadata(arg0) {
+  return table5[arg0];
+};
+prototype["getStorefrontEntries"] = function getStorefrontEntries(closure_0) {
+  return table2[closure_0];
+};
+prototype["getStorefrontById"] = function getStorefrontById(_getSystemLocale) {
+  return table3[_getSystemLocale];
+};
+prototype["getPreviewStorefrontId"] = function getPreviewStorefrontId(closure_0) {
+  let tmp = table4[closure_0];
+  if (tmp == null) {
+    tmp = null;
+  }
+  return tmp;
+};
+prototype["getStorefrontState"] = function getStorefrontState(arg0) {
+  if (null != arg0) {
+    return table[arg0];
+  }
+};
+prototype["getAnnouncement"] = function getAnnouncement(arg0) {
+  return table6[arg0];
+};
+prototype["getConfig"] = function getConfig() {
+  let config = null;
+  if ("success" === closure_15.state) {
+    config = closure_15.config;
+  }
+  return config;
+};
+prototype["getConfigForApplicationId"] = function getConfigForApplicationId(id) {
+  return table8[id];
+};
+prototype["getApplicationIdFromDetectableId"] = function getApplicationIdFromDetectableId(applicationId) {
+  return table7[applicationId];
+};
+prototype["getDetectableIdsToApplicationIds"] = function getDetectableIdsToApplicationIds() {
+  return closure_19;
+};
+prototype["getGuildIdFromApplicationId"] = function getGuildIdFromApplicationId(closure_0) {
+  let tmp;
+  if (null != closure_0) {
+    tmp = dependencyMap6[closure_0];
+  }
+  return tmp;
+};
+prototype["getApplicationIdFromGuildId"] = function getApplicationIdFromGuildId(id) {
+  let tmp;
+  if (null != id) {
+    tmp = dependencyMap5[id];
+  }
+  return tmp;
+};
+prototype["getConfigFetchState"] = function getConfigFetchState() {
+  return closure_15;
+};
+prototype["getStorefrontApplicationIds"] = function getStorefrontApplicationIds() {
+  return set1;
+};
+prototype["getStorefrontGuildIds"] = function getStorefrontGuildIds() {
+  return set2;
+};
+prototype["getSKUEligibility"] = function getSKUEligibility(closure_0) {
+  let state;
+  if (dependencyMap3[closure_0] != null) {
+    state = tmp.state;
+  }
+  return state;
+};
+prototype["getSKUEligibilityEntry"] = function getSKUEligibilityEntry(arg0) {
+  return dependencyMap3[arg0];
+};
+prototype["getNormalizedSKUEligibility"] = function getNormalizedSKUEligibility(arg0) {
+  let state;
+  if (dependencyMap3[arg0] != null) {
+    state = tmp.state;
+  }
+  return "ineligible" !== state;
+};
+prototype["getAnnouncementModalContentConfig"] = function getAnnouncementModalContentConfig() {
+  return c22;
+};
+SocialLayerStorefrontStore.displayName = "SocialLayerStorefrontStore";
+const socialLayerStorefrontStore = new SocialLayerStorefrontStore(require("dispatcher"), {
   LOGOUT: function handleLogout() {
-    let closure_14 = {};
-    let closure_15 = {};
-    let closure_17 = {};
-    let closure_18 = {};
-    let closure_10 = {};
     let closure_9 = {};
-    let closure_11 = {};
+    let closure_10 = {};
     let closure_12 = {};
     let closure_13 = {};
+    let closure_5 = {};
+    let closure_4 = {};
+    let closure_6 = {};
+    let closure_7 = {};
+    let closure_8 = {};
     const set = new Set();
-    let closure_20 = { state: "idle" };
+    let closure_15 = { state: "idle" };
     const set1 = new Set();
-    let closure_22 = {};
-    let closure_23 = {};
-    let closure_24 = {};
-    let closure_25 = {};
-    const set2 = new Set();
-    let c27 = null;
-  },
-  STOREFRONT_PROMOTION_ID_OVERRIDE_SET: function handleStorefrontPromotionIdOverrideSet() {
-    let closure_10 = {};
-    let closure_9 = {};
-  },
-  POST_CONNECTION_OPEN: function handlePostConnectionOpen() {
     let closure_17 = {};
     let closure_18 = {};
+    let closure_19 = {};
+    let closure_20 = {};
+    const set2 = new Set();
+    let c22 = null;
+  },
+  STOREFRONT_PROMOTION_ID_OVERRIDE_SET: function handleStorefrontPromotionIdOverrideSet() {
+    let closure_5 = {};
+    let closure_4 = {};
+  },
+  POST_CONNECTION_OPEN: function handlePostConnectionOpen() {
+    let closure_12 = {};
+    let closure_13 = {};
     const set = new Set();
   },
   ENTITLEMENT_CREATE: function handleEntitlementCreate(entitlement) {
@@ -345,7 +209,7 @@ tmp5 = new tmp5(require("dispatcher"), {
     interactionId = interactionId.interactionId;
     if (null == interactionId) {
       return false;
-    } else if (null == dependencyMap[interactionId]) {
+    } else if (null == dependencyMap4[interactionId]) {
       const _Object = Object;
       const values = Object.values(obj);
       if (values.some((state) => "checking" === state.state)) {
@@ -364,49 +228,101 @@ tmp5 = new tmp5(require("dispatcher"), {
     }
   },
   INTERACTION_SUCCESS: function handleInteractionSuccess(arg0) {
-    if (null == dependencyMap[arg0.interactionId]) {
+    if (null == dependencyMap4[arg0.interactionId]) {
       return false;
     } else {
       delete tmp[tmp2];
     }
   },
   SOCIAL_LAYER_STOREFRONT_LOAD: function handleSocialLayerStorefrontLoad(guildOrApplicationId) {
-    const tmp = getGuildAndApplicationId(guildOrApplicationId.guildOrApplicationId);
-    updateStorefrontFetchState(tmp.guildId, tmp.applicationId, { state: "loading" });
+    guildOrApplicationId = guildOrApplicationId.guildOrApplicationId;
+    if ("guild" === guildOrApplicationId.type) {
+      let guildId = guildOrApplicationId.guildId;
+    } else {
+      guildId = dependencyMap6[guildOrApplicationId.applicationId];
+    }
+    if ("guild" === guildOrApplicationId.type) {
+      let applicationId = dependencyMap5[guildOrApplicationId.guildId];
+    } else {
+      applicationId = guildOrApplicationId.applicationId;
+    }
+    let obj = { state: "loading" };
+    if (null != guildId) {
+      obj = {};
+      const merged = Object.assign(obj1[guildId]);
+      const merged1 = Object.assign(obj);
+      obj1[guildId] = obj;
+    }
+    if (null != applicationId) {
+      obj = {};
+      const merged2 = Object.assign(obj2[applicationId]);
+      const merged3 = Object.assign(obj);
+      obj2[applicationId] = obj;
+    }
+    obj1 = {};
+    const merged4 = Object.assign(obj1);
+    obj2 = {};
+    const merged5 = Object.assign(obj2);
   },
   SOCIAL_LAYER_STOREFRONT_LOAD_SUCCESS: function handleSocialLayerStorefrontLoadSuccess(arg0) {
     let guildOrApplicationId;
     let storefront;
     ({ guildOrApplicationId, storefront } = arg0);
     if ("guild" === guildOrApplicationId.type) {
-      let guildId = guildOrApplicationId.guildId;
+      let guildId2 = guildOrApplicationId.guildId;
     } else {
-      guildId = getGuildAndApplicationId(guildOrApplicationId).guildId;
+      if ("guild" === guildOrApplicationId.type) {
+        let guildId = guildOrApplicationId.guildId;
+      } else {
+        guildId = obj[guildOrApplicationId.applicationId];
+      }
+      if ("guild" === guildOrApplicationId.type) {
+        guildId2 = guildId;
+      } else {
+        const applicationId = guildOrApplicationId.applicationId;
+        guildId2 = guildId;
+      }
     }
-    let tmp2 = null != guildId;
-    if (tmp2) {
-      tmp2 = null == obj[guildId];
+    let tmp4 = null != guildId2;
+    if (tmp4) {
+      tmp4 = null == obj[guildId2];
     }
-    if (tmp2) {
-      obj[guildId] = storefront.applicationId;
+    if (tmp4) {
+      obj[guildId2] = storefront.applicationId;
       obj = {};
       const merged = Object.assign(obj);
     }
-    let tmp8 = null != storefront.applicationId && null != guildId;
-    if (tmp8) {
-      tmp8 = null == obj[storefront.applicationId];
+    let tmp10 = null != storefront.applicationId && null != guildId2;
+    if (tmp10) {
+      tmp10 = null == obj[storefront.applicationId];
     }
-    if (tmp8) {
-      obj[storefront.applicationId] = guildId;
+    if (tmp10) {
+      obj[storefront.applicationId] = guildId2;
       obj = {};
       const merged1 = Object.assign(obj);
     }
+    const applicationId2 = storefront.applicationId;
     obj = { state: "fetched", fetchedAt: Date.now(), storefront };
-    updateStorefrontFetchState(guildId, storefront.applicationId, obj);
-    if (null != storefront.assets) {
+    if (null != guildId2) {
       const obj1 = {};
-      const merged2 = Object.assign(obj1);
-      const merged3 = Object.assign(storefront.assets);
+      const merged2 = Object.assign(obj3[guildId2]);
+      const merged3 = Object.assign(obj);
+      obj3[guildId2] = obj1;
+    }
+    if (null != applicationId2) {
+      const obj2 = {};
+      const merged4 = Object.assign(obj4[applicationId2]);
+      const merged5 = Object.assign(obj);
+      obj4[applicationId2] = obj2;
+    }
+    obj3 = {};
+    const merged6 = Object.assign(obj3);
+    obj4 = {};
+    const merged7 = Object.assign(obj4);
+    if (null != storefront.assets) {
+      const obj5 = {};
+      const merged8 = Object.assign(obj5);
+      const merged9 = Object.assign(storefront.assets);
     }
   },
   SOCIAL_LAYER_STOREFRONT_PARTIAL_LOAD_SUCCESS: function handleSocialLayerStorefrontPartialLoadSuccess(assets) {
@@ -423,41 +339,81 @@ tmp5 = new tmp5(require("dispatcher"), {
     obj[applicationId] = storefrontMetadata;
   },
   SOCIAL_LAYER_STOREFRONT_LOAD_FAILURE: function handleSocialLayerStorefrontLoadFailure(guildOrApplicationId) {
-    let applicationId;
-    let guildId;
-    ({ guildId, applicationId } = getGuildAndApplicationId(guildOrApplicationId.guildOrApplicationId));
+    guildOrApplicationId = guildOrApplicationId.guildOrApplicationId;
+    if ("guild" === guildOrApplicationId.type) {
+      let guildId = guildOrApplicationId.guildId;
+    } else {
+      guildId = dependencyMap6[guildOrApplicationId.applicationId];
+    }
+    if ("guild" === guildOrApplicationId.type) {
+      let applicationId = dependencyMap5[guildOrApplicationId.guildId];
+    } else {
+      applicationId = guildOrApplicationId.applicationId;
+    }
     if (null != guildId) {
-      let tmp6 = obj[guildId];
+      let tmp6 = obj8[guildId];
     } else if (null != applicationId) {
-      tmp6 = obj1[applicationId];
+      tmp6 = obj9[applicationId];
     }
     if (null == tmp6) {
       return false;
     } else if (guildOrApplicationId.eager) {
       if ("loading" === tmp6.state) {
         if (null != tmp6.storefront) {
-          obj = { state: "fetched" };
-          updateStorefrontFetchState(guildId, applicationId, obj);
+          let obj = { state: "fetched" };
+          if (null != guildId) {
+            obj = {};
+            const merged = Object.assign(obj8[guildId]);
+            const merged1 = Object.assign(obj);
+            obj8[guildId] = obj;
+          }
+          if (null != applicationId) {
+            const obj1 = {};
+            const merged2 = Object.assign(obj9[applicationId]);
+            const merged3 = Object.assign(obj);
+            obj9[applicationId] = obj1;
+          }
+          const obj2 = {};
+          const merged4 = Object.assign(obj8);
+          obj8 = obj2;
+          const obj3 = {};
+          const merged5 = Object.assign(obj9);
+          obj9 = obj3;
         }
       }
       if (null != guildId) {
-        delete tmp4[tmp3];
+        delete tmp[tmp3];
       }
       if (null != applicationId) {
         delete tmp[tmp2];
       }
-      obj = {};
-      const merged = Object.assign(obj);
-      obj1 = {};
-      const merged1 = Object.assign(obj1);
+      const obj4 = {};
+      const merged6 = Object.assign(obj8);
+      obj8 = obj4;
+      const obj5 = {};
+      const merged7 = Object.assign(obj9);
+      obj9 = obj5;
     } else {
-      obj = { state: "error" };
+      obj = { state: "error", fetchedAt: null, storefront: "r" };
       const _Date = Date;
-      obj.fetchedAt = Date.now();
-      obj.storefront = undefined;
-      updateStorefrontFetchState(guildId, applicationId, obj);
+      obj[1] = Date.now();
+      if (null != guildId) {
+        const obj6 = {};
+        const merged8 = Object.assign(obj8[guildId]);
+        const merged9 = Object.assign(obj);
+        obj8[guildId] = obj6;
+      }
+      if (null != applicationId) {
+        const obj7 = {};
+        const merged10 = Object.assign(obj9[applicationId]);
+        const merged11 = Object.assign(obj);
+        obj9[applicationId] = obj7;
+      }
+      obj8 = {};
+      const merged12 = Object.assign(obj8);
+      obj9 = {};
+      const merged13 = Object.assign(obj9);
     }
-    const tmp5 = getGuildAndApplicationId(guildOrApplicationId.guildOrApplicationId);
   },
   SET_SOCIAL_LAYER_STOREFRONT_STATE: function handleSetSocialLayerStorefrontState(activePage) {
     obj[activePage.applicationId] = { activePage: activePage.pageIndex, activeSkuId: activePage.skuId };
@@ -483,7 +439,7 @@ tmp5 = new tmp5(require("dispatcher"), {
     obj[guildId.guildId] = { state: "error" };
   },
   SOCIAL_LAYER_STOREFRONT_CONFIG_FETCH_START: function handleStorefrontConfigFetchStart() {
-    let closure_20 = { state: "loading" };
+    let closure_15 = { state: "loading" };
   },
   SOCIAL_LAYER_STOREFRONT_CONFIG_FETCH_SUCCESS: function handleStorefrontConfigFetchSuccess(config) {
     config = config.config;
@@ -494,26 +450,26 @@ tmp5 = new tmp5(require("dispatcher"), {
     const found = storefronts1.filter((guildId) => null != guildId.guildId);
     const set1 = new Set(found.map((guildId) => guildId.guildId));
     const storefronts2 = config.storefronts;
-    let closure_22 = storefronts2.reduce((arg0, guildId) => {
+    let closure_17 = storefronts2.reduce((arg0, guildId) => {
       if (null != guildId.guildId) {
         arg0[guildId.guildId] = guildId.applicationId;
       }
       return arg0;
     }, {});
     const storefronts3 = config.storefronts;
-    let closure_23 = storefronts3.reduce((arg0, guildId) => {
+    let closure_18 = storefronts3.reduce((arg0, guildId) => {
       if (null != guildId.guildId) {
         ({ guildId: arg0[guildId.applicationId], guildId: arg0[guildId.gameId] } = guildId);
       }
       return arg0;
     }, {});
     const storefronts4 = config.storefronts;
-    let closure_24 = storefronts4.reduce((arg0, arg1) => {
+    let closure_19 = storefronts4.reduce((arg0, arg1) => {
       ({ applicationId: arg0[arg1.gameId], applicationId: arg0[arg1.applicationId] } = arg1);
       return arg0;
     }, {});
     const storefronts5 = config.storefronts;
-    let closure_25 = storefronts5.reduce((arg0, applicationId) => {
+    let closure_20 = storefronts5.reduce((arg0, applicationId) => {
       arg0[applicationId.applicationId] = applicationId;
       return arg0;
     }, {});
@@ -531,7 +487,7 @@ tmp5 = new tmp5(require("dispatcher"), {
     let skuId;
     ({ skuId, interactionId } = arg0);
     let state;
-    if (null != obj[skuId]) {
+    if (obj[skuId] != null) {
       state = tmp.state;
     }
     if ("checking" !== state) {
@@ -542,7 +498,7 @@ tmp5 = new tmp5(require("dispatcher"), {
       const merged = Object.assign(obj);
       obj[skuId] = { state: "error", reason: "interaction_failure" };
     } else {
-      closure_18[interactionId] = skuId;
+      closure_13[interactionId] = skuId;
     }
   },
   SOCIAL_LAYER_SKU_PURCHASE_ELIGIBILITY_CHECK_FAILURE: function handleSKUPurchaseEligibilityCheckFailure(httpStatus) {
@@ -553,7 +509,7 @@ tmp5 = new tmp5(require("dispatcher"), {
       reason = "http_error";
     }
     let state;
-    if (null != obj[skuId]) {
+    if (obj[skuId] != null) {
       state = tmp.state;
     }
     if ("checking" !== state) {
@@ -563,8 +519,7 @@ tmp5 = new tmp5(require("dispatcher"), {
     }
     obj = {};
     const merged = Object.assign(obj);
-    obj = { state: "error", reason, httpStatus: httpStatus.httpStatus };
-    obj[skuId] = obj;
+    obj[skuId] = { state: "error", reason, httpStatus: httpStatus.httpStatus };
   },
   SOCIAL_LAYER_SKU_PURCHASE_ELIGIBILITY_RESPONSE: function handleSKUPurchaseEligibilityResponse(arg0) {
     let eligible;
@@ -580,7 +535,8 @@ tmp5 = new tmp5(require("dispatcher"), {
       if (eligible) {
         obj = { state: "eligible" };
       } else {
-        obj = { state: "ineligible", ineligibleReason };
+        obj = { state: "ineligible", ineligibleReason: null };
+        obj[1] = ineligibleReason;
       }
       obj[skuId] = obj;
     }
@@ -611,9 +567,9 @@ tmp5 = new tmp5(require("dispatcher"), {
     const merged = Object.assign(obj);
     obj = {};
     const merged1 = Object.assign(obj[storefrontId]);
-    obj["storefront"] = null;
-    obj["state"] = "loading";
-    obj["fetchedAt"] = null;
+    obj.storefront = null;
+    obj.state = "loading";
+    obj.fetchedAt = null;
     obj[storefrontId] = obj;
   },
   SOCIAL_LAYER_STOREFRONT_BY_ID_LOAD_SUCCESS: function handleSocialLayerStorefrontByIdLoadSuccess(storefront) {
@@ -648,9 +604,9 @@ tmp5 = new tmp5(require("dispatcher"), {
     config = config.config;
   },
   SOCIAL_LAYER_STOREFRONT_LAUNCH_ANNOUNCEMENT_FETCH_FAILURE: function handleLaunchAnnouncementFetchFailure() {
-    let c27 = null;
+    let c22 = null;
   }
 });
-let result = set.fileFinishedImporting("modules/slayer_storefront/SocialLayerStorefrontStore.tsx");
+const result = set.fileFinishedImporting("modules/slayer_storefront/SocialLayerStorefrontStore.tsx");
 
-export default tmp5;
+export default socialLayerStorefrontStore;

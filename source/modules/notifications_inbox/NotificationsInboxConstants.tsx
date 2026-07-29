@@ -1,10 +1,10 @@
-// Module ID: 7914
-// Function ID: 62915
+// Module ID: 7939
+// Function ID: 7940
 // Name: ANALYTICS_NAME
-// Dependencies: [653, 664, 1212, 1387, 2]
+// Dependencies: [676, 687, 1236, 1411, 2]
 // Exports: getFilterMap, getNotificationsInboxGuild
 
-// Module 7914 (ANALYTICS_NAME)
+// Module 7939 (ANALYTICS_NAME)
 import { NOTIFICATIONS_INBOX } from "ME";
 
 let obj = { UNREAD: "UNREAD", TODAY: "TODAY", YESTERDAY: "YESTERDAY", OLDER: "OLDER" };
@@ -25,18 +25,21 @@ export const MAX_UNREAD_MESSAGES_PER_CHANNEL = 10;
 export const NOTIFICATIONS_INBOX_FEATURE = "notifications-inbox";
 export const getNotificationsInboxGuild = function getNotificationsInboxGuild(arg0) {
   if (arg0 === obj.BOOKMARKS) {
-    const intl3 = require(1212) /* getSystemLocale */.intl;
-    let stringResult = intl3.string(require(1212) /* getSystemLocale */.t["2pAkDA"]);
-  } else if (arg0 === obj.MENTIONS) {
-    const intl2 = require(1212) /* getSystemLocale */.intl;
-    stringResult = intl2.string(require(1212) /* getSystemLocale */.t.jbV6MM);
+    const intl3 = require(1236) /* getSystemLocale */.intl;
+    let stringResult = intl3.string(require(1236) /* getSystemLocale */.t["2pAkDA"]);
+    let tmp2 = require;
+  } else if (arg0 === tmp.MENTIONS) {
+    const intl2 = require(1236) /* getSystemLocale */.intl;
+    stringResult = intl2.string(require(1236) /* getSystemLocale */.t.jbV6MM);
+    tmp2 = require;
   } else {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    stringResult = intl.string(require(1212) /* getSystemLocale */.t.HcoRu0);
+    tmp2 = require;
+    const intl = require(1236) /* getSystemLocale */.intl;
+    stringResult = intl.string(require(1236) /* getSystemLocale */.t.HcoRu0);
   }
-  obj = require(1387) /* fromGuildPropertiesWithAdditionalFields */;
-  obj = { id: NOTIFICATIONS_INBOX, name: stringResult, description: "", icon: undefined, features: [] };
-  return obj.fromGuildBasic(obj);
+  obj = { id: NOTIFICATIONS_INBOX, name: stringResult, description: "", icon: "Array", features: "SUBSCRIPTION" };
+  obj[4] = [];
+  return tmp2(1411).fromGuildBasic(obj);
 };
 export const MessageCategory = obj;
 export const InboxFilters = obj;
@@ -45,12 +48,12 @@ export const InboxMessageType = { ALL_MESSAGES_CHANNEL: "ALL_MESSAGES_CHANNEL", 
 export const MESSAGE_CATEGORY_DISPLAY_MAP = obj;
 export const getFilterMap = function getFilterMap() {
   const obj = {};
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj[obj.ALL] = intl.string(require(1212) /* getSystemLocale */.t.iWyjNt);
-  const intl2 = require(1212) /* getSystemLocale */.intl;
-  obj[obj.MENTIONS] = intl2.string(require(1212) /* getSystemLocale */.t.jbV6MM);
-  const intl3 = require(1212) /* getSystemLocale */.intl;
-  obj[obj.BOOKMARKS] = intl3.string(require(1212) /* getSystemLocale */.t["+rlGYW"]);
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj[obj.ALL] = intl.string(require(1236) /* getSystemLocale */.t.iWyjNt);
+  const intl2 = require(1236) /* getSystemLocale */.intl;
+  obj[obj.MENTIONS] = intl2.string(require(1236) /* getSystemLocale */.t.jbV6MM);
+  const intl3 = require(1236) /* getSystemLocale */.intl;
+  obj[obj.BOOKMARKS] = intl3.string(require(1236) /* getSystemLocale */.t["+rlGYW"]);
   return obj;
 };
 export const ChannelLoadState = { UNLOADED: "unloaded", LOADED: "loaded", LOADED_UNREAD: "loadedUnread" };

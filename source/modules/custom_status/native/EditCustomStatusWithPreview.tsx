@@ -1,37 +1,41 @@
-// Module ID: 11947
-// Function ID: 92302
+// Module ID: 11971
+// Function ID: 11972
 // Name: ClearInputButton
-// Dependencies: [57, 31, 27, 1850, 11948, 653, 1853, 33, 4165, 689, 4695, 1212, 1273, 8974, 11949, 675, 8056, 566, 11950, 11951, 4011, 11953, 4574, 9312, 5193, 9826, 9083, 4024, 11954, 9094, 5121, 4161, 9061, 7620, 5536, 5198, 4133, 11957, 1935, 11959, 4124, 478, 1571, 4372, 5552, 2]
+// Dependencies: [32, 19, 17, 1874, 11972, 676, 1877, 21, 4189, 712, 4717, 1236, 1297, 8998, 11973, 698, 8080, 589, 11974, 11975, 4035, 11977, 4596, 9336, 5215, 9848, 9107, 4048, 11978, 9118, 5143, 4185, 9085, 7643, 5554, 5220, 4157, 11981, 1959, 11983, 4148, 501, 1595, 4395, 5570, 2]
 // Exports: default
 
-// Module 11947 (ClearInputButton)
-import _slicedToArray from "_slicedToArray";
-import Text from "Text";
-import get_ActivityIndicator from "getHighestActiveScreenIndex";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 11971 (ClearInputButton)
+import ActivityEmoji from "ActivityEmoji";
+import setCustomStatus from "setCustomStatus";
+import get_ActivityIndicator from "initialize";
+import mergeGuildAvatar from "mergeGuildAvatar";
 import { STATUS_MAX_LENGTH } from "StatusTypes";
 import ME from "ME";
 import { EmojiIntention } from "set";
-import jsxProd from "module_7620";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import jsxProd from "removeCustomStatus";
+import createCacheKey from "createCacheKey";
 
-let closure_10;
-let closure_11;
-let closure_13;
+let Fonts;
+let c10;
+let c5;
+let c9;
 let closure_14;
-let closure_5;
 let closure_6;
-let closure_9;
+let map1;
+let unpackModuleId;
 const require = arg1;
 function ClearInputButton(onPress) {
-  let obj = { style: { borderRadius: 10, paddingLeft: 8 }, accessibilityRole: "button" };
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj.accessibilityLabel = intl.string(require(1212) /* getSystemLocale */.t.VkKicb);
-  obj.onPress = onPress.onPress;
-  obj.hitSlop = { top: 8, bottom: 8, right: 8 };
-  obj = { source: importDefault(8974), style: _createForOfIteratorHelperLoose().closeIcon, size: require(1273) /* Button */.Icon.Sizes.SMALL };
-  obj.children = callback(require(1273) /* Button */.Icon, obj);
-  return callback(require(4695) /* PressableBase */.PressableOpacity, obj);
+  let obj = { style: { borderRadius: 10, paddingLeft: 8 }, accessibilityRole: "button", accessibilityLabel: null, onPress: null, hitSlop: null, children: null };
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj[2] = intl.string(require(1236) /* getSystemLocale */.t.VkKicb);
+  obj[3] = onPress.onPress;
+  obj[4] = { top: 8, bottom: 8, right: 8 };
+  obj = { source: null, style: null, size: null };
+  obj[0] = importDefault(8998);
+  obj[1] = createCacheKey().closeIcon;
+  obj[2] = require(1297) /* Button */.Icon.Sizes.SMALL;
+  obj[5] = callback(require(1297) /* Button */.Icon, obj);
+  return callback(require(4717) /* PressableBase */.PressableOpacity, obj);
 }
 function EditCustomStatusWithPreview(navigation) {
   navigation = navigation.navigation;
@@ -55,327 +59,339 @@ function EditCustomStatusWithPreview(navigation) {
   let closure_17;
   let memo;
   let callback7;
+  let obj = stateFromStores;
   if (null == _prompt) {
     _prompt = onClose(analyticsLocations[14])();
   }
   ref = stateFromStores.useRef(_prompt);
   const items = [analyticsLocations];
-  const effect = stateFromStores.useEffect(() => {
+  const effect = obj.useEffect(() => {
     let obj = onClose(analyticsLocations[15]);
     obj = { type: constants.EDIT_CUSTOM_STATUS_MODAL_WITH_PREVIEW, location_stack: analyticsLocations };
     obj.track(first2.OPEN_MODAL, obj);
   }, items);
-  const tmp6 = callback3();
-  let obj = navigation(analyticsLocations[16]);
-  const customStatusActivity = obj.useCustomStatusActivity();
-  let obj1 = navigation(analyticsLocations[17]);
+  const tmp5 = callback3();
+  let obj1 = navigation(analyticsLocations[16]);
+  const customStatusActivity = obj1.useCustomStatusActivity();
+  let obj2 = navigation(analyticsLocations[17]);
   const items1 = [first1];
-  stateFromStores = obj1.useStateFromStores(items1, () => first1.getCurrentUser());
-  let state;
-  if (null != customStatusActivity) {
-    state = customStatusActivity.state;
+  stateFromStores = obj2.useStateFromStores(items1, () => first1.getCurrentUser());
+  let str;
+  if (customStatusActivity != null) {
+    str = customStatusActivity.state;
   }
-  let str = "";
-  if (null != state) {
-    str = state;
+  if (str == null) {
+    str = "";
   }
-  const tmp12 = ref(stateFromStores.useState(str), 2);
-  first = tmp12[0];
-  c6 = tmp14;
+  const tmp13 = ref(obj.useState(str), 2);
+  first = tmp13[0];
+  c6 = tmp15;
   let emoji;
-  if (null != customStatusActivity) {
+  if (customStatusActivity != null) {
     emoji = customStatusActivity.emoji;
   }
-  let tmp17 = null;
-  if (null != emoji) {
-    tmp17 = emoji;
+  if (emoji == null) {
+    emoji = null;
   }
-  const tmp18 = ref(stateFromStores.useState(tmp17), 2);
-  first1 = tmp18[0];
-  c8 = tmp20;
-  const tmp21 = ref(stateFromStores.useState(onClose(analyticsLocations[18])()), 2);
-  first2 = tmp21[0];
-  closure_10 = tmp21[1];
+  let tmp12Result = tmp12(obj.useState(emoji), 2);
+  first1 = tmp12Result[0];
+  c8 = tmp19;
+  tmp12Result = tmp12(obj.useState(onClose(analyticsLocations[18])()), 2);
+  first2 = tmp12Result[0];
+  closure_10 = tmp12Result[1];
   if (null != ref.current) {
     let current = ref.current;
     let labelResult = current.label();
   } else {
-    let intl = navigation(analyticsLocations[11]).intl;
-    labelResult = intl.string(navigation(analyticsLocations[11]).t.xod367);
+    let intl = tmp6(tmp7[11]).intl;
+    labelResult = intl.string(tmp6(tmp7[11]).t.xod367);
   }
   c11 = labelResult;
   const items2 = [first, first1, first2, onClose, analyticsLocations];
-  callback = stateFromStores.useCallback(() => {
-    const obj = { text: first, emojiInfo: first1, clearAfter: first2, analyticsLocations };
+  callback = obj.useCallback(() => {
+    const obj = { text: first, emojiInfo: first1, clearAfter: first2, analyticsLocations, prompt: null };
     const current = ref.current;
-    let tmp2;
-    if (null != current) {
-      tmp2 = current;
-    }
-    obj.prompt = tmp2;
+    obj[4] = current;
     onClose(analyticsLocations[19])(obj);
-    const AccessibilityAnnouncer = navigation(analyticsLocations[20]).AccessibilityAnnouncer;
-    const intl = navigation(analyticsLocations[11]).intl;
+    const AccessibilityAnnouncer = navigation(tmp[20]).AccessibilityAnnouncer;
+    const intl = navigation(tmp[11]).intl;
     AccessibilityAnnouncer.announce(intl.string(navigation(analyticsLocations[11]).t.Og40Yn));
     onClose();
   }, items2);
   const items3 = [onClose];
-  const callback1 = stateFromStores.useCallback(() => {
+  const callback1 = obj.useCallback(() => {
     onClose(analyticsLocations[21])();
     const AccessibilityAnnouncer = navigation(analyticsLocations[20]).AccessibilityAnnouncer;
     const intl = navigation(analyticsLocations[11]).intl;
     AccessibilityAnnouncer.announce(intl.string(navigation(analyticsLocations[11]).t.YdUwBS));
     onClose();
   }, items3);
-  ref1 = stateFromStores.useRef(null);
-  callback2 = stateFromStores.useCallback(() => {
+  ref1 = obj.useRef(null);
+  callback2 = obj.useCallback(() => {
     let obj = navigation(analyticsLocations[22]);
     obj = { ref: ref1, delay: 500 };
     const result = obj.setAccessibilityFocus(obj);
   }, []);
   const items4 = [callback2];
-  callback3 = stateFromStores.useCallback((id) => {
-    const obj = { id: id.id };
+  callback3 = obj.useCallback((id) => {
+    const obj = { id: id.id, name: null, animated: null };
     if (null == id.id) {
       if (null != id.surrogates) {
         if ("" !== id.surrogates) {
           let str2 = id.surrogates;
         }
-        obj.name = str2;
-        obj.animated = id.animated;
+        obj[1] = str2;
+        obj[2] = id.animated;
         tmp(obj);
         callback2();
       }
     }
-    const name = id.name;
-    str2 = "";
-    if (null != name) {
-      str2 = name;
+    str2 = id.name;
+    if (str2 == null) {
+      str2 = "";
     }
   }, items4);
   const items5 = [callback3, callback2];
-  const items6 = [tmp18[1], tmp12[1]];
-  const callback4 = stateFromStores.useCallback(() => {
+  const items6 = [tmp12Result[1], tmp13[1]];
+  const callback4 = obj.useCallback(() => {
     let obj = navigation(analyticsLocations[23]);
     obj = { onPressEmoji: callback3, onClose: callback2, pickerIntention: callback.STATUS };
     const result = obj.openEmojiPickerActionSheet(obj);
   }, items5);
-  const callback5 = stateFromStores.useCallback(() => {
+  const callback5 = obj.useCallback(() => {
     _undefined2(null);
     _undefined("");
   }, items6);
-  ref2 = stateFromStores.useRef(null);
-  const ref3 = stateFromStores.useRef(null);
-  const insets = onClose(analyticsLocations[24])({ includeKeyboardHeight: true, isKeyboardAwareOnIOS: false }).insets;
+  ref2 = obj.useRef(null);
+  const ref3 = obj.useRef(null);
+  const insets = tmp10(tmp7[24])({ includeKeyboardHeight: true, isKeyboardAwareOnIOS: false }).insets;
   const items7 = [{ ref: ref2 }];
-  const callback6 = stateFromStores.useCallback(() => {
+  const callback6 = obj.useCallback(() => {
     const current = ref2.current;
-    if (null != current) {
+    if (current != null) {
       current.blur();
     }
   }, []);
-  closure_17 = stateFromStores.useRef({ statusText: first, statusEmoji: first1, clearAfter: first2 });
+  closure_17 = obj.useRef({ statusText: first, statusEmoji: first1, clearAfter: first2 });
   const items8 = [first, first1, first2];
-  memo = stateFromStores.useMemo(() => {
-    let tmp = first !== ref.current.statusText;
-    if (!tmp) {
-      tmp = first1 !== ref.current.statusEmoji;
+  memo = obj.useMemo(() => {
+    let tmp2 = first !== ref.current.statusText;
+    if (!tmp2) {
+      tmp2 = first1 !== tmp.current.statusEmoji;
     }
-    if (!tmp) {
-      tmp = first2 !== ref.current.clearAfter;
+    if (!tmp2) {
+      tmp2 = first2 !== tmp.current.clearAfter;
     }
-    return tmp;
+    return tmp2;
   }, items8);
   const items9 = [memo, onClose];
-  callback7 = stateFromStores.useCallback(() => {
-    const obj = { hasEdits: memo, onHasEdits: navigation(analyticsLocations[27]).dismissKeyboard, resetPending: c11, onConfirm: onClose };
+  callback7 = obj.useCallback(() => {
+    const obj = { hasEdits: memo, onHasEdits: null, resetPending: null, onConfirm: null };
+    obj[1] = navigation(analyticsLocations[27]).dismissKeyboard;
+    obj[2] = c11;
+    obj[3] = onClose;
     onClose(analyticsLocations[26])(obj);
   }, items9);
   const items10 = [stateFromStores, first, first1, labelResult];
   const items11 = [navigation, callback, memo, callback7];
-  const memo1 = stateFromStores.useMemo(() => {
-    let tmp = null;
+  const memo1 = obj.useMemo(() => {
+    let tmp2 = null;
     if (null != stateFromStores) {
-      const obj = { user: stateFromStores, pendingStatusText: first, pendingStatusEmoji: first1, placeholderText: c11 };
-      tmp = ref1(onClose(analyticsLocations[28]), obj);
+      const obj = { user: null, pendingStatusText: null, pendingStatusEmoji: null, placeholderText: null };
+      obj[0] = tmp;
+      obj[1] = first;
+      obj[2] = first1;
+      obj[3] = c11;
+      tmp2 = ref1(onClose(analyticsLocations[28]), obj);
     }
-    return tmp;
+    return tmp2;
   }, items10);
-  const layoutEffect = stateFromStores.useLayoutEffect(() => {
+  const layoutEffect = obj.useLayoutEffect(() => {
     let obj = {
       headerRight() {
-        const obj = {};
-        const intl = navigation(analyticsLocations[11]).intl;
-        obj.label = intl.string(navigation(analyticsLocations[11]).t["R3BPH+"]);
-        obj.onPress = outer1_12;
-        obj.disabled = !outer1_18;
-        return ref1(navigation(analyticsLocations[29]).HeaderTextButton, obj);
+        const obj = { label: null, onPress: null, disabled: null };
+        const intl = outer1_0(outer1_2[11]).intl;
+        obj[0] = intl.string(outer1_0(outer1_2[11]).t["R3BPH+"]);
+        obj[1] = closure_12;
+        obj[2] = !closure_18;
+        return outer1_13(outer1_0(outer1_2[29]).HeaderTextButton, obj);
       },
-      headerLeft: navigation(analyticsLocations[30]).getHeaderCloseButton(callback7)
+      headerLeft: null
     };
+    obj[1] = navigation(analyticsLocations[30]).getHeaderCloseButton(callback7);
     navigation.setOptions(obj);
   }, items11);
   if (null == stateFromStores) {
     return null;
   } else {
-    obj = { style: tmp6.container };
-    obj = { style: tmp6.previewContainer, children: memo1 };
+    obj = { style: null, children: null };
+    obj[0] = tmp5.container;
+    obj = { style: null, children: null };
+    obj[0] = tmp5.previewContainer;
+    obj[1] = memo1;
     const items12 = [ref1(c6, obj), , , ];
-    obj1 = { style: tmp6.statusSection };
-    const obj2 = { style: tmp6.statusSectionHeader };
-    const obj3 = { accessibilityRole: "header", variant: "text-sm/semibold", color: "text-default" };
-    const intl5 = navigation(analyticsLocations[11]).intl;
-    obj3.children = intl5.string(navigation(analyticsLocations[11]).t.zOdg0A);
-    obj2.children = ref1(navigation(analyticsLocations[31]).Text, obj3);
+    obj1 = { style: null, children: null };
+    obj1[0] = tmp5.statusSection;
+    obj2 = { style: null, children: null };
+    obj2[0] = tmp5.statusSectionHeader;
+    const obj3 = { accessibilityRole: "header", variant: "text-sm/semibold", color: "text-default", children: null };
+    const intl5 = tmp6(tmp7[11]).intl;
+    obj3[3] = intl5.string(tmp6(tmp7[11]).t.zOdg0A);
+    obj2[1] = ref1(tmp6(tmp7[31]).Text, obj3);
     const items13 = [ref1(c6, obj2), ];
-    const obj4 = { style: tmp6.statusInput };
-    const obj5 = { style: tmp6.statusInputRow };
-    const obj6 = { ref: ref1 };
-    const intl6 = navigation(analyticsLocations[11]).intl;
-    obj6.accessibilityLabel = intl6.string(navigation(analyticsLocations[11]).t.WkfRZP);
-    const obj7 = {};
+    const obj4 = { style: null, children: null };
+    obj4[0] = tmp5.statusInput;
+    const obj5 = { style: null, children: null };
+    obj5[0] = tmp5.statusInputRow;
+    const obj6 = { ref: null, accessibilityLabel: null, accessibilityValue: null, accessibilityRole: "button", onPress: null, children: null };
+    obj6[0] = ref1;
+    const intl6 = tmp6(tmp7[11]).intl;
+    obj6[1] = intl6.string(tmp6(tmp7[11]).t.WkfRZP);
     let name;
-    if (null != first1) {
+    if (first1 != null) {
       name = first1.name;
     }
-    obj7.text = name;
-    obj6.accessibilityValue = obj7;
-    obj6.accessibilityRole = "button";
-    obj6.onPress = callback4;
-    const obj8 = { emoji: first1, size: 20, style: tmp6.emoji, withPlaceholder: true };
-    obj6.children = ref1(onClose(analyticsLocations[32]), obj8);
-    const items14 = [ref1(navigation(analyticsLocations[10]).PressableOpacity, obj6), , ];
-    const obj9 = { ref: ref2, maxLength: c8, placeholder: labelResult, placeholderTextColor: tmp6.inputPlaceholder.color };
-    const intl2 = navigation(analyticsLocations[11]).intl;
-    obj9.accessibilityLabel = intl2.string(navigation(analyticsLocations[11]).t.xalUlT);
-    obj9.onSubmitEditing = callback6;
-    obj9.onFocus = onClose(analyticsLocations[25])({ insets, inputs: items7, scrollViewRef: ref3 }).onFocus;
-    obj9.style = tmp6.status;
-    obj9.value = first;
-    obj9.onChange = tmp14;
-    obj9.autoCorrect = false;
-    obj9.showBorder = false;
-    obj9.showTopContainer = false;
-    obj9.autoCapitalize = "none";
-    obj9.inputTextStyle = tmp6.statusText;
-    obj9.multiline = true;
-    obj9.submitBehavior = "blurAndSubmit";
-    obj9.returnKeyType = "done";
-    obj9.autoFocus = true;
-    items14[1] = ref1(onClose(analyticsLocations[33]), obj9);
-    let tmp48 = null != first1 || "" !== first;
-    if (tmp48) {
-      const obj10 = { onPress: callback5 };
-      tmp48 = ref1(ref2, obj10);
+    const obj7 = { text: null };
+    obj7[0] = name;
+    obj6[2] = obj7;
+    obj6[4] = callback4;
+    const obj8 = { emoji: null, size: 20, style: null, withPlaceholder: true };
+    obj8[0] = first1;
+    obj8[2] = tmp5.emoji;
+    obj6[5] = ref1(tmp10(tmp7[32]), obj8);
+    const items14 = [ref1(tmp6(tmp7[10]).PressableOpacity, obj6), , ];
+    const obj9 = { ref: null, maxLength: null, placeholder: null, placeholderTextColor: null, accessibilityLabel: null, onSubmitEditing: null, onFocus: null, style: null, value: null, onChange: null, autoCorrect: false, showBorder: false, showTopContainer: false, autoCapitalize: "none", inputTextStyle: null, multiline: true, submitBehavior: "blurAndSubmit", returnKeyType: "done", autoFocus: true };
+    obj9[0] = ref2;
+    obj9[1] = c8;
+    obj9[2] = labelResult;
+    obj9[3] = tmp5.inputPlaceholder.color;
+    const intl2 = tmp6(tmp7[11]).intl;
+    obj9[4] = intl2.string(tmp6(tmp7[11]).t.xalUlT);
+    obj9[5] = callback6;
+    obj9[6] = tmp10(tmp7[25])({ insets, inputs: items7, scrollViewRef: ref3 }).onFocus;
+    obj9[7] = tmp5.status;
+    obj9[8] = first;
+    obj9[9] = tmp15;
+    obj9[14] = tmp5.statusText;
+    items14[1] = ref1(tmp10(tmp7[33]), obj9);
+    let tmp48Result = null != first1;
+    if (!tmp48Result) {
+      tmp48Result = "" !== first;
     }
-    items14[2] = tmp48;
-    obj5.children = items14;
-    obj4.children = callback2(c6, obj5);
+    if (tmp48Result) {
+      const obj10 = { onPress: null };
+      obj10[0] = callback5;
+      tmp48Result = tmp48(ref2, obj10);
+    }
+    items14[2] = tmp48Result;
+    obj5[1] = items14;
+    obj4[1] = callback2(c6, obj5);
     items13[1] = ref1(c6, obj4);
-    obj1.children = items13;
+    obj1[1] = items13;
     items12[1] = callback2(c6, obj1);
-    let obj11 = { hasIcons: false };
-    const obj12 = {};
-    const intl3 = navigation(analyticsLocations[11]).intl;
-    obj12.label = intl3.string(navigation(analyticsLocations[11]).t["+14vvU"]);
-    obj12.arrow = true;
-    obj12.onPress = function onPress() {
+    const obj11 = { hasIcons: false, children: null };
+    const obj12 = { label: null, arrow: true, onPress: null, trailing: null };
+    const intl3 = tmp6(tmp7[11]).intl;
+    obj12[0] = intl3.string(tmp6(tmp7[11]).t["+14vvU"]);
+    obj12[2] = function onPress() {
       let obj = navigation(analyticsLocations[27]);
       obj.dismissKeyboard();
       obj = { initialValue: first2, onChange: closure_10 };
       onClose(analyticsLocations[36]).openLazy(navigation(analyticsLocations[38])(analyticsLocations[37], analyticsLocations.paths), "ClearAfterOptionsActionSheet", obj);
     };
-    const obj13 = { variant: "text-sm/medium", children: onClose(analyticsLocations[39])(first2) };
-    obj12.trailing = ref1(navigation(analyticsLocations[31]).Text, obj13);
-    obj11.children = ref1(navigation(analyticsLocations[35]).TableRow, obj12);
-    items12[2] = ref1(navigation(analyticsLocations[34]).TableRowGroup, obj11);
-    let tmp57 = null != customStatusActivity;
-    if (tmp57) {
-      const obj14 = { hasIcons: true };
-      const obj15 = {};
-      const obj16 = { color: onClose(analyticsLocations[9]).colors.TEXT_FEEDBACK_CRITICAL };
-      obj15.icon = ref1(navigation(analyticsLocations[40]).TrashIcon, obj16);
-      const intl4 = navigation(analyticsLocations[11]).intl;
-      obj15.label = intl4.string(navigation(analyticsLocations[11]).t.wO53tu);
-      obj15.onPress = callback1;
-      obj15.variant = "danger";
-      obj14.children = ref1(navigation(analyticsLocations[35]).TableRow, obj15);
-      tmp57 = ref1(navigation(analyticsLocations[34]).TableRowGroup, obj14);
+    const obj13 = { variant: "text-sm/medium", children: null };
+    obj13[1] = tmp10(tmp7[39])(first2);
+    obj12[3] = ref1(tmp6(tmp7[31]).Text, obj13);
+    obj11[1] = ref1(tmp6(tmp7[35]).TableRow, obj12);
+    items12[2] = ref1(tmp6(tmp7[34]).TableRowGroup, obj11);
+    tmp48Result = null != customStatusActivity;
+    if (tmp48Result) {
+      const obj14 = { hasIcons: true, children: null };
+      const obj15 = { icon: null, label: null, onPress: null, variant: "danger" };
+      const obj16 = { color: null };
+      obj16[0] = tmp10(tmp7[9]).colors.TEXT_FEEDBACK_CRITICAL;
+      obj15[0] = tmp48(tmp6(tmp7[40]).TrashIcon, obj16);
+      const intl4 = tmp6(tmp7[11]).intl;
+      obj15[1] = intl4.string(tmp6(tmp7[11]).t.wO53tu);
+      obj15[2] = callback1;
+      obj14[1] = tmp48(tmp6(tmp7[35]).TableRow, obj15);
+      tmp48Result = tmp48(tmp6(tmp7[34]).TableRowGroup, obj14);
     }
-    items12[3] = tmp57;
-    obj.children = items12;
-    const tmp72Result = callback2(c6, obj);
-    obj11 = navigation(analyticsLocations[41]);
-    if (obj11.isAndroid()) {
-      const obj17 = { ref: ref3, keyboardShouldPersistTaps: "always" };
-      const obj18 = { paddingBottom: insets.bottom };
-      obj17.contentContainerStyle = obj18;
-      obj17.children = tmp72Result;
-      let tmp67Result = tmp67(first, obj17);
+    items12[3] = tmp48Result;
+    obj[1] = items12;
+    const tmp46Result = callback2(c6, obj);
+    const tmp10Result = tmp10(tmp7[33]);
+    if (tmp6Result.isAndroid()) {
+      const obj17 = { ref: null, keyboardShouldPersistTaps: "always", contentContainerStyle: null, children: null };
+      obj17[0] = ref3;
+      const obj18 = { paddingBottom: null };
+      obj18[0] = insets.bottom;
+      obj17[2] = obj18;
+      obj17[3] = tmp46Result;
+      let tmp48Result1 = tmp48(first, obj17);
     } else {
-      const obj19 = { keyboardShouldPersistTaps: "always", children: tmp72Result };
-      tmp67Result = tmp67(navigation(analyticsLocations[42]).KeyboardAwareScrollView, obj19);
+      const obj19 = { keyboardShouldPersistTaps: "always", children: null };
+      obj19[1] = tmp46Result;
+      tmp48Result1 = tmp48(tmp6(tmp7[42]).KeyboardAwareScrollView, obj19);
     }
-    return tmp67Result;
+    return tmp48Result1;
   }
-  const tmp9 = onClose(analyticsLocations[18])();
+  const tmp11 = onClose(analyticsLocations[18])();
 }
-({ ScrollView: closure_5, View: closure_6 } = get_ActivityIndicator);
-({ AnalyticEvents: closure_9, AnalyticsSections: closure_10, NOOP: closure_11 } = ME);
-({ jsx: closure_13, jsxs: closure_14 } = jsxProd);
-_createForOfIteratorHelperLoose = { container: { flexGrow: 1, padding: 16, rowGap: 24 }, statusSection: { rowGap: 8 } };
-_createForOfIteratorHelperLoose = { flexDirection: "column", rowGap: 4, backgroundColor: require("_createForOfIteratorHelperLoose").colors.INPUT_BACKGROUND_DEFAULT, borderRadius: require("_createForOfIteratorHelperLoose").radii.lg, padding: 12 };
-_createForOfIteratorHelperLoose.statusInput = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.statusInputRow = { flexDirection: "row", alignItems: "center" };
-_createForOfIteratorHelperLoose.emoji = { marginRight: 8 };
-let obj1 = { color: require("_createForOfIteratorHelperLoose").colors.TEXT_STRONG, lineHeight: 16, flexGrow: 1, alignSelf: "flex-start", paddingVertical: 0, paddingHorizontal: 0 };
-_createForOfIteratorHelperLoose.status = obj1;
-let obj2 = { fontSize: 16, lineHeight: 20, fontFamily: ME.Fonts.PRIMARY_MEDIUM, color: require("_createForOfIteratorHelperLoose").colors.TEXT_STRONG, flexGrow: 1, height: "auto", textAlignVertical: "center" };
-_createForOfIteratorHelperLoose.statusText = obj2;
-_createForOfIteratorHelperLoose.inputPlaceholder = { color: require("_createForOfIteratorHelperLoose").colors.TEXT_MUTED };
-const merged = Object.assign(require("_createForOfIteratorHelperLoose").shadows.SHADOW_LOW);
-_createForOfIteratorHelperLoose.previewContainer = { alignItems: "center" };
-let obj3 = { color: require("_createForOfIteratorHelperLoose").colors.TEXT_MUTED };
+({ ScrollView: c5, View: closure_6 } = get_ActivityIndicator);
+({ AnalyticEvents: c9, AnalyticsSections: c10, NOOP: unpackModuleId, Fonts } = ME);
+({ jsx: map1, jsxs: closure_14 } = jsxProd);
+createCacheKey = { container: { flexGrow: 1, padding: 16, rowGap: 24 }, statusSection: { rowGap: 8 }, statusInput: null, statusInputRow: null, emoji: null, status: null, statusText: null, inputPlaceholder: null, previewContainer: null, closeIcon: null, statusSectionHeader: null };
+createCacheKey = { flexDirection: "column", rowGap: 4, backgroundColor: require("Themes").colors.INPUT_BACKGROUND_DEFAULT, borderRadius: require("Themes").radii.lg, padding: 12 };
+createCacheKey[2] = createCacheKey;
+createCacheKey[3] = { flexDirection: "row", alignItems: "center" };
+createCacheKey[4] = { marginRight: 8 };
+createCacheKey[5] = { color: require("Themes").colors.TEXT_STRONG, lineHeight: 16, flexGrow: 1, alignSelf: "flex-start", paddingVertical: 0, paddingHorizontal: 0 };
+let obj1 = { color: require("Themes").colors.TEXT_STRONG, lineHeight: 16, flexGrow: 1, alignSelf: "flex-start", paddingVertical: 0, paddingHorizontal: 0 };
+createCacheKey[6] = { fontSize: 16, lineHeight: 20, fontFamily: Fonts.PRIMARY_MEDIUM, color: require("Themes").colors.TEXT_STRONG, flexGrow: 1, height: "auto", textAlignVertical: "center" };
+let obj2 = { fontSize: 16, lineHeight: 20, fontFamily: Fonts.PRIMARY_MEDIUM, color: require("Themes").colors.TEXT_STRONG, flexGrow: 1, height: "auto", textAlignVertical: "center" };
+createCacheKey[7] = { color: require("Themes").colors.TEXT_MUTED };
+const merged = Object.assign(require("Themes").shadows.SHADOW_LOW);
+createCacheKey[8] = { alignItems: "center" };
+let obj3 = { color: require("Themes").colors.TEXT_MUTED };
 let obj4 = { alignItems: "center" };
-_createForOfIteratorHelperLoose.closeIcon = { tintColor: require("_createForOfIteratorHelperLoose").colors.INTERACTIVE_TEXT_DEFAULT, flexShrink: 0 };
-_createForOfIteratorHelperLoose.statusSectionHeader = { flexDirection: "row", alignItems: "center", justifyContent: "space-between" };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-let obj5 = { tintColor: require("_createForOfIteratorHelperLoose").colors.INTERACTIVE_TEXT_DEFAULT, flexShrink: 0 };
+createCacheKey[9] = { tintColor: require("Themes").colors.INTERACTIVE_TEXT_DEFAULT, flexShrink: 0 };
+createCacheKey[10] = { flexDirection: "row", alignItems: "center", justifyContent: "space-between" };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let obj5 = { tintColor: require("Themes").colors.INTERACTIVE_TEXT_DEFAULT, flexShrink: 0 };
 let result = require("get ActivityIndicator").fileFinishedImporting("modules/custom_status/native/EditCustomStatusWithPreview.tsx");
 
 export default function EditCustomStatusWithPreviewModal(analyticsLocations) {
   analyticsLocations = analyticsLocations.analyticsLocations;
   const _prompt = analyticsLocations.prompt;
   const items = [analyticsLocations, _prompt];
-  const memo = React.useMemo(() => (function getScreens(analyticsLocations, _prompt) {
-    let closure_0 = analyticsLocations;
-    let closure_1 = _prompt;
-    let obj = {};
-    obj = {};
-    let intl = analyticsLocations(outer2_2[11]).intl;
-    obj.title = intl.string(analyticsLocations(outer2_2[11]).t.Iuzg8R);
-    obj.headerTitle = function headerTitle() {
-      const obj = {};
-      const intl = analyticsLocations(outer3_2[11]).intl;
-      obj.title = intl.string(analyticsLocations(outer3_2[11]).t.Iuzg8R);
-      return outer3_13(analyticsLocations(outer3_2[29]).GenericHeaderTitle, obj);
+  const memo = React.useMemo(() => {
+    let obj = { root: null };
+    obj = { title: null, headerTitle: null, headerLeft: null, ignoreKeyboard: true, render: null };
+    let intl = analyticsLocations(outer1_2[11]).intl;
+    obj[0] = intl.string(analyticsLocations(outer1_2[11]).t.Iuzg8R);
+    obj[1] = function headerTitle() {
+      const obj = { title: null };
+      const intl = callback(1236).intl;
+      obj[0] = intl.string(callback(1236).t.Iuzg8R);
+      return callback3(callback(9118).GenericHeaderTitle, obj);
     };
-    obj.headerLeft = analyticsLocations(outer2_2[30]).getHeaderCloseButton(_prompt(outer2_2[43]).pop);
-    obj.ignoreKeyboard = true;
-    obj.render = function render(arg0, navigation) {
-      return outer3_13(outer3_17, { navigation, onClose: _prompt(outer3_2[43]).pop, analyticsLocations: closure_0, prompt: closure_1 });
+    obj[2] = analyticsLocations(outer1_2[30]).getHeaderCloseButton(_prompt(outer1_2[43]).pop);
+    obj[4] = function render(arg0, navigation) {
+      return outer1_13(outer1_17, { navigation, onClose: callback2(outer1_2[43]).pop, analyticsLocations: closure_0, prompt: callback2 });
     };
-    obj.root = obj;
+    obj[0] = obj;
     return obj;
-  })(analyticsLocations, _prompt), items);
-  let obj = { initialRouteName: "root", screens: memo, headerStatusBarHeight: 12 };
-  const obj2 = analyticsLocations(478);
+  }, items);
+  let obj = { initialRouteName: "root", screens: memo, headerStatusBarHeight: null, headerStyle: null };
+  obj[2] = 12;
+  const obj2 = analyticsLocations(501);
   const tmp2 = closure_13;
-  let tmp3;
-  if (!obj3.isAndroid()) {
+  const tmp3 = analyticsLocations;
+  obj = undefined;
+  if (!tmp3Result.isAndroid()) {
     obj = { height: 56 };
-    tmp3 = obj;
   }
-  obj.headerStyle = tmp3;
-  return tmp2(analyticsLocations(5552).Navigator, obj);
+  obj[3] = obj;
+  return tmp2(analyticsLocations(5570).Navigator, obj);
 };

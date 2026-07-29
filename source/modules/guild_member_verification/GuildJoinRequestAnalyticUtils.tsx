@@ -1,12 +1,12 @@
-// Module ID: 6159
-// Function ID: 55081
+// Module ID: 6177
+// Function ID: 6178
 // Name: trackMemberApplicationViewed
-// Dependencies: [1194, 1918, 653, 675, 2]
+// Dependencies: [1218, 1942, 676, 698, 2]
 // Exports: trackMemberApplicationAction, trackMemberApplicationInterviewMessage, trackMemberApplicationViewed, trackMemberVerificationApplicationViewed
 
-// Module 6159 (trackMemberApplicationViewed)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_3 from "_isNativeReflectConstruct";
+// Module 6177 (trackMemberApplicationViewed)
+import fetchFingerprint from "fetchFingerprint";
+import trackCommunicationDisabled from "trackCommunicationDisabled";
 import { AnalyticEvents } from "ME";
 
 const result = require("ME").fileFinishedImporting("modules/guild_member_verification/GuildJoinRequestAnalyticUtils.tsx");
@@ -16,7 +16,7 @@ export const trackMemberApplicationViewed = function trackMemberApplicationViewe
   let applicationUserId;
   let guildId;
   ({ guildId, applicationUserId, applicationStatus } = arg0);
-  let obj = importDefault(675);
+  let obj = importDefault(698);
   obj = { guild_id: guildId, viewing_user_id: store.getId(), application_user_id: applicationUserId, application_status: applicationStatus };
   obj.track(AnalyticEvents.GUILD_MEMBER_APPLICATION_VIEWED, obj);
 };
@@ -25,7 +25,7 @@ export const trackMemberApplicationAction = function trackMemberApplicationActio
   let applicationUserId;
   let guildId;
   ({ guildId, actionType, applicationUserId } = arg0);
-  let obj = importDefault(675);
+  let obj = importDefault(698);
   obj = { guild_id: guildId, action_type: actionType, application_user_id: applicationUserId, viewing_user_id: store.getId() };
   obj.track(AnalyticEvents.GUILD_MEMBER_APPLICATION_ACTION, obj);
 };
@@ -39,13 +39,13 @@ export const trackMemberApplicationInterviewMessage = function trackMemberApplic
   const id = store.getId();
   member = member.getMember(guildId, id);
   let joinedAt;
-  if (null != member) {
+  if (member != null) {
     joinedAt = member.joinedAt;
   }
-  importDefault(675).track(AnalyticEvents.GUILD_MEMBER_APPLICATION_INTERVIEW_MESSAGE, { guild_id: guildId, channel_id: channelId, message_id: messageId, message_user_id: id, is_member: null != joinedAt, join_request_status: joinRequestStatus, join_request_user_id: joinRequestUserId });
+  importDefault(698).track(AnalyticEvents.GUILD_MEMBER_APPLICATION_INTERVIEW_MESSAGE, { guild_id: guildId, channel_id: channelId, message_id: messageId, message_user_id: id, is_member: null != joinedAt, join_request_status: joinRequestStatus, join_request_user_id: joinRequestUserId });
 };
 export const trackMemberVerificationApplicationViewed = function trackMemberVerificationApplicationViewed(guild_id) {
-  let obj = importDefault(675);
+  let obj = importDefault(698);
   obj = { guild_id };
   obj.track(AnalyticEvents.MEMBER_VERIFICATION_APPLICATION_VIEWED, obj);
 };

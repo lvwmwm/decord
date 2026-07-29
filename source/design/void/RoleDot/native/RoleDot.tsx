@@ -1,28 +1,28 @@
-// Module ID: 13143
-// Function ID: 101306
+// Module ID: 13166
+// Function ID: 13167
 // Name: RoleDot
-// Dependencies: [31, 27, 33, 4165, 689, 477, 4584, 4606, 4589, 1327, 2]
+// Dependencies: [19, 17, 21, 4189, 712, 500, 4606, 4628, 4611, 1351, 2]
 // Exports: RoleDot
 
-// Module 13143 (RoleDot)
-import "result";
+// Module 13166 (RoleDot)
+import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_4;
-let closure_5;
+let c4;
+let c5;
 const require = arg1;
-({ jsx: closure_4, jsxs: closure_5 } = jsxProd);
-_createForOfIteratorHelperLoose = { container: { flexShrink: 0 }, background: { position: "relative" } };
-_createForOfIteratorHelperLoose = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_MOD_NORMAL, borderRadius: require("_createForOfIteratorHelperLoose").radii.xs };
-_createForOfIteratorHelperLoose.backgroundColor = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.borderBase = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.TEXT_DEFAULT, borderRadius: require("_createForOfIteratorHelperLoose").radii.md };
-let obj1 = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.TEXT_DEFAULT, borderRadius: require("_createForOfIteratorHelperLoose").radii.md };
-_createForOfIteratorHelperLoose.borderColor = { borderRadius: require("_createForOfIteratorHelperLoose").radii.md, opacity: 0.4 };
-_createForOfIteratorHelperLoose.dot = { borderRadius: 10, position: "absolute" };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-let obj2 = { borderRadius: require("_createForOfIteratorHelperLoose").radii.md, opacity: 0.4 };
+({ jsx: c4, jsxs: c5 } = jsxProd);
+createCacheKey = { container: { flexShrink: 0 }, background: { position: "relative" }, backgroundColor: null, borderBase: null, borderColor: null, dot: null };
+createCacheKey = { backgroundColor: require("Themes").colors.BACKGROUND_MOD_NORMAL, borderRadius: require("Themes").radii.xs };
+createCacheKey[2] = createCacheKey;
+createCacheKey[3] = { backgroundColor: require("Themes").colors.TEXT_DEFAULT, borderRadius: require("Themes").radii.md };
+let obj1 = { backgroundColor: require("Themes").colors.TEXT_DEFAULT, borderRadius: require("Themes").radii.md };
+createCacheKey[4] = { borderRadius: require("Themes").radii.md, opacity: 0.4 };
+createCacheKey[5] = { borderRadius: 10, position: "absolute" };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let obj2 = { borderRadius: require("Themes").radii.md, opacity: 0.4 };
 let result = require("jsxProd").fileFinishedImporting("design/void/RoleDot/native/RoleDot.tsx");
 
 export const RoleDot = function RoleDot(background) {
@@ -40,8 +40,8 @@ export const RoleDot = function RoleDot(background) {
     flag = true;
   }
   ({ containerStyles, guildId } = background);
-  const tmp = _createForOfIteratorHelperLoose();
-  let obj = require(4584) /* getFontScale */;
+  const tmp = createCacheKey();
+  let obj = require(4606) /* getFontScale */;
   const fontScale = obj.useFontScale();
   if (null == color) {
     if (null == colors) {
@@ -53,77 +53,56 @@ export const RoleDot = function RoleDot(background) {
     num = 20;
   }
   const result = num * fontScale;
-  const sum = result / 2 + 2;
-  const diff = sum - 2;
-  obj = {};
-  obj = { paddingRight: 2 * fontScale };
-  let obj3 = require(477) /* set */;
-  if (obj3.isAndroid()) {
+  obj = { paddingRight: 2 * fontScale, paddingTop: null, height: null };
+  const tmp5 = importDefault;
+  const tmp6 = importDefault(4628)(guildId, null);
+  if (tmp2Result.isAndroid()) {
     let result1 = 3 * fontScale;
   } else {
     result1 = 2 * fontScale;
   }
-  obj.paddingTop = result1;
-  obj.height = result;
-  obj.container = obj;
-  obj.background = { height: result, width: result, padding: (result - sum) / 2 };
-  obj.border = { height: sum, width: sum };
-  const result2 = diff / 2;
-  obj.dot = { height: diff, width: diff, top: result2, left: result2 };
-  const obj1 = { style: items };
-  items = [tmp.container, obj.container, containerStyles];
-  const obj2 = {};
+  const sum = result / 2 + 2;
+  const diff = sum - 2;
+  obj[1] = result1;
+  obj[2] = result;
+  obj = { height: result, width: result, padding: (result - sum) / 2 };
+  const obj1 = { height: diff, width: diff, top: result2, left: result2 };
+  result2 = diff / 2;
+  const obj2 = { style: items, children: null };
+  items = [tmp.container, obj, containerStyles];
   const items1 = [tmp.background, , ];
   let backgroundColor = null;
   if (flag) {
     backgroundColor = tmp.backgroundColor;
   }
+  const obj3 = { style: items1, children: null };
   items1[1] = backgroundColor;
-  items1[2] = obj.background;
-  obj2.style = items1;
-  obj3 = { style: items2 };
+  items1[2] = obj;
+  const obj4 = { style: items2, children: null };
   items2 = [tmp.borderBase];
-  const obj4 = {};
-  const items3 = [tmp.borderColor, obj.border, ];
-  const obj5 = {};
-  let tmp15;
-  if (null != color) {
-    tmp15 = color;
-  }
-  obj5.backgroundColor = tmp15;
-  items3[2] = obj5;
-  obj4.style = items3;
-  obj3.children = callback(View, obj4);
-  const items4 = [callback(View, obj3), ];
-  if (tmp3) {
+  const items3 = [tmp.borderColor, { height: sum, width: sum }, { backgroundColor: color }];
+  obj4[1] = closure_4(View, { style: items3 });
+  const items4 = [closure_4(View, obj4), ];
+  if (tmp6) {
     if (null != colors) {
       if (null != colors.secondaryColor) {
-        const obj6 = {};
+        const obj5 = { colors: null, start: null, end: null, style: null };
         const items5 = [, , ];
         ({ primaryColor: arr7[0], secondaryColor: arr7[1], tertiaryColor: arr7[2] } = colors);
-        obj6.colors = items5.filter(require(1327) /* isDiscordFrontendDevelopment */.isNotNullish);
-        obj6.start = { x: 0, y: 0 };
-        obj6.end = { x: 1, y: 0 };
-        const items6 = [tmp.dot, obj.dot];
-        obj6.style = items6;
-        let tmp16Result = callback(importDefault(4589), obj6);
-        const tmp23 = importDefault(4589);
+        obj5[0] = items5.filter(tmp2(1351).isNotNullish);
+        obj5[1] = { x: 0, y: 0 };
+        obj5[2] = { x: 1, y: 0 };
+        const items6 = [tmp.dot, obj1];
+        obj5[3] = items6;
+        let tmp12Result = tmp12(tmp5(4611), obj5);
+        const tmp5Result = tmp5(4611);
       }
-      items4[1] = tmp16Result;
-      obj2.children = items4;
-      obj1.children = closure_5(tmp10, obj2);
-      return callback(tmp10, obj1);
+      items4[1] = tmp12Result;
+      obj3[1] = items4;
+      obj2[1] = closure_5(tmp13, obj3);
+      return tmp12(tmp13, obj2);
     }
   }
-  const obj7 = {};
-  const items7 = [tmp.dot, obj.dot, ];
-  const obj8 = {};
-  let tmp18;
-  if (null != color) {
-    tmp18 = color;
-  }
-  obj8.backgroundColor = tmp18;
-  items7[2] = obj8;
-  obj7.style = items7;
-  tmp16Result = callback(View, obj7);
+  const items7 = [tmp.dot, obj1, { backgroundColor: color }];
+  tmp12Result = tmp12(tmp13, { style: items7 });
 };

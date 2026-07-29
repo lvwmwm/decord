@@ -1,52 +1,77 @@
-// Module ID: 5641
-// Function ID: 47814
-// Name: _getIsNewMember
-// Dependencies: [1910, 1918, 3781, 1360, 664, 566, 2]
+// Module ID: 5659
+// Function ID: 5660
+// Name: useIsNewMember
+// Dependencies: [1934, 1942, 3805, 1384, 687, 589, 2]
 // Exports: default, getIsNewMember
 
-// Module 5641 (_getIsNewMember)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_4 from "_isNativeReflectConstruct";
+// Module 5659 (useIsNewMember)
+import initialize from "initialize";
+import trackCommunicationDisabled from "trackCommunicationDisabled";
 import { GuildMemberFlags } from "GuildMemberFlags";
 
 const require = arg1;
-function _getIsNewMember(guildId, closure_4, _isNativeReflectConstruct) {
-  if (_isNativeReflectConstruct.isFullServerPreview(guildId)) {
-    return true;
-  } else {
-    const selfMember = closure_4.getSelfMember(guildId);
-    if (null == selfMember) {
-      return false;
-    } else {
-      const selfMemberJoinedAt = closure_4.getSelfMemberJoinedAt(guildId);
-      let tmp12 = null != selfMemberJoinedAt;
-      if (tmp12) {
-        const flags = selfMember.flags;
-        let num2 = 0;
-        if (null != flags) {
-          num2 = flags;
-        }
-        let tmp6 = !require(1360) /* hasFlag */.hasFlag(num2, GuildMemberFlags.COMPLETED_HOME_ACTIONS);
-        if (tmp6) {
-          const _Date = Date;
-          const timestamp = Date.now();
-          const diff = timestamp - selfMemberJoinedAt.getTime();
-          tmp6 = diff < importDefault(664).Millis.WEEK;
-        }
-        tmp12 = tmp6;
-        const obj = require(1360) /* hasFlag */;
-      }
-      return tmp12;
-    }
-  }
-}
 const result = require("GuildMemberFlags").fileFinishedImporting("modules/guild_onboarding_home/useIsNewMember.tsx");
 
 export default function useIsNewMember(arg0) {
   const _require = arg0;
-  const items = [closure_4, _isNativeReflectConstruct];
-  return _require(566).useStateFromStores(items, () => outer1_6(closure_0, outer1_4, outer1_3));
+  const items = [trackCommunicationDisabled, initialize];
+  return _require(589).useStateFromStores(items, () => {
+    let flag = true;
+    if (!outer1_3.isFullServerPreview(callback)) {
+      const selfMember = obj.getSelfMember(tmp);
+      flag = false;
+      if (null != selfMember) {
+        const selfMemberJoinedAt = obj.getSelfMemberJoinedAt(tmp);
+        let tmp4 = null != selfMemberJoinedAt;
+        if (tmp4) {
+          let num = selfMember.flags;
+          if (num == null) {
+            num = 0;
+          }
+          const hasFlagResult = callback(outer1_2[3]).hasFlag(num, outer1_5.COMPLETED_HOME_ACTIONS);
+          let tmp9 = !hasFlagResult;
+          if (!hasFlagResult) {
+            const _Date = Date;
+            const timestamp = Date.now();
+            const diff = timestamp - selfMemberJoinedAt.getTime();
+            tmp9 = diff < outer1_1(tmp6[4]).Millis.WEEK;
+          }
+          tmp4 = tmp9;
+          const obj3 = callback(outer1_2[3]);
+          tmp6 = outer1_2;
+        }
+        flag = tmp4;
+      }
+    }
+    return flag;
+  });
 };
-export const getIsNewMember = function getIsNewMember(guildId) {
-  return _getIsNewMember(guildId, closure_4, _isNativeReflectConstruct);
+export const getIsNewMember = function getIsNewMember(closure_0) {
+  let flag = true;
+  if (!fullServerPreview.isFullServerPreview(closure_0)) {
+    const selfMember = obj.getSelfMember(closure_0);
+    flag = false;
+    if (null != selfMember) {
+      const selfMemberJoinedAt = obj.getSelfMemberJoinedAt(closure_0);
+      let tmp3 = null != selfMemberJoinedAt;
+      if (tmp3) {
+        let num = selfMember.flags;
+        if (num == null) {
+          num = 0;
+        }
+        const hasFlagResult = require(1384) /* hasFlag */.hasFlag(num, GuildMemberFlags.COMPLETED_HOME_ACTIONS);
+        let tmp8 = !hasFlagResult;
+        if (!hasFlagResult) {
+          const _Date = Date;
+          const timestamp = Date.now();
+          const diff = timestamp - selfMemberJoinedAt.getTime();
+          tmp8 = diff < importDefault(687).Millis.WEEK;
+        }
+        tmp3 = tmp8;
+        const obj3 = require(1384) /* hasFlag */;
+      }
+      flag = tmp3;
+    }
+  }
+  return flag;
 };

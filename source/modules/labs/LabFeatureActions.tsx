@@ -1,11 +1,11 @@
-// Module ID: 14474
-// Function ID: 110474
+// Module ID: 14496
+// Function ID: 14497
 // Name: toggleLabFeature
-// Dependencies: [8163, 686, 2]
+// Dependencies: [8187, 709, 2]
 // Exports: toggleLabFeature
 
-// Module 14474 (toggleLabFeature)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 14496 (toggleLabFeature)
+import getUserAgnosticState from "getUserAgnosticState";
 
 let closure_3 = {};
 const result = require("set").fileFinishedImporting("modules/labs/LabFeatureActions.tsx");
@@ -17,9 +17,9 @@ export const toggleLabFeature = function toggleLabFeature(ICYMI_LAB_FEATURE, arg
   }
   let enabled = tmp.enabled;
   if (enabled === undefined) {
-    enabled = !_isNativeReflectConstruct.get(ICYMI_LAB_FEATURE);
+    enabled = !getUserAgnosticState.get(ICYMI_LAB_FEATURE);
   }
-  let obj = importDefault(686);
+  let obj = importDefault(709);
   obj = { type: "LAB_FEATURE_TOGGLE", labFeature: ICYMI_LAB_FEATURE, enabled };
   obj.dispatch(obj);
 };

@@ -1,60 +1,66 @@
-// Module ID: 16260
-// Function ID: 125913
+// Module ID: 16295
+// Function ID: 16296
 // Name: ParentalConsentWarningModal
-// Dependencies: [31, 27, 5775, 5776, 653, 1345, 33, 1334, 5777, 4017, 6590, 4375, 4165, 689, 1557, 1212, 2199, 675, 686, 1336, 4133, 4372, 16261, 1935, 5221, 4576, 6763, 4161, 4578, 2]
+// Dependencies: [19, 17, 5793, 5794, 676, 1369, 21, 1358, 5795, 4041, 6611, 4398, 4189, 712, 1581, 1236, 2223, 698, 709, 1360, 4157, 4395, 16296, 1959, 5243, 4598, 6785, 4185, 4600, 2]
 // Exports: default
 
-// Module 16260 (ParentalConsentWarningModal)
-import result from "result";
-import { View } from "Text";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 16295 (ParentalConsentWarningModal)
+import addVersionedDismissedContent from "addVersionedDismissedContent";
+import { View } from "expandEventProperties";
+import freshTeenActivityWithMap from "freshTeenActivityWithMap";
 import items from "items";
 import ME from "ME";
 import { ContentDismissActionType } from "ContentDismissActionType";
-import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import jsxProd from "module_4395";
+import createCacheKey from "createCacheKey";
 
-let closure_10;
+let c10;
+let c9;
 let closure_12;
-let closure_13;
 let closure_6;
-let closure_7;
-let closure_8;
-let closure_9;
+let error;
+let map1;
+let metroImportAll;
 const require = arg1;
-({ FamilyCenterSubPages: closure_6, UserLinkStatus: closure_7, UserLinkType: closure_8 } = items);
-({ AnalyticEvents: closure_9, UserSettingsSections: closure_10 } = ME);
-({ jsx: closure_12, jsxs: closure_13 } = jsxProd);
-let closure_14 = require("DismissibleContent").DismissibleContent.PARENTAL_CONSENT_GRACE_WARNING;
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16 };
-_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.illustration = { alignItems: "center", paddingTop: require("_createForOfIteratorHelperLoose").space.PX_12 };
-_createForOfIteratorHelperLoose.title = { textAlign: "center" };
-_createForOfIteratorHelperLoose.body = { textAlign: "center" };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-let obj1 = { alignItems: "center", paddingTop: require("_createForOfIteratorHelperLoose").space.PX_12 };
-let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/parent_tools/native/ParentalConsentWarningModal.tsx");
+({ FamilyCenterSubPages: closure_6, UserLinkStatus: error, UserLinkType: metroImportAll } = items);
+({ AnalyticEvents: c9, UserSettingsSections: c10 } = ME);
+({ jsx: closure_12, jsxs: map1 } = jsxProd);
+const modal = "modal";
+let closure_15 = require("DismissibleContent").DismissibleContent.PARENTAL_CONSENT_GRACE_WARNING;
+createCacheKey = { container: null, illustration: null, title: null, body: null };
+createCacheKey = { paddingHorizontal: require("Themes").space.PX_16 };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { alignItems: "center", paddingTop: require("Themes").space.PX_12 };
+createCacheKey[2] = { textAlign: "center" };
+createCacheKey[3] = { textAlign: "center" };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let obj1 = { alignItems: "center", paddingTop: require("Themes").space.PX_12 };
+let result = require("freshTeenActivityWithMap").fileFinishedImporting("modules/parent_tools/native/ParentalConsentWarningModal.tsx");
 
 export default function ParentalConsentWarningModal(daysRemaining) {
   daysRemaining = daysRemaining.daysRemaining;
-  let tmp = _createForOfIteratorHelperLoose();
+  let importDefault;
+  let callback;
+  let callback1;
+  let tmp = createCacheKey();
   let obj = daysRemaining(callback[15]);
   const syncMessages = obj.useSyncMessages(daysRemaining(callback[16]).messagesLoader);
   const effect = callback1.useEffect(() => {
     let obj = ref(callback[17]);
-    obj = { surface_type: "modal", days_remaining: daysRemaining };
+    obj = { surface_type: outer1_14, days_remaining: daysRemaining };
     obj.track(outer1_9.PARENTAL_CONSENT_WARNING_SURFACE_SHOWN, obj);
     ref(callback[18]).dispatch({ type: "PARENTAL_CONSENT_WARNING_MODAL_SHOWN" });
   }, []);
-  const importDefault = callback1.useRef(false);
+  importDefault = callback1.useRef(false);
   callback = callback1.useCallback(() => {
-    let flag = !ref.current;
-    if (flag) {
-      ref.current = true;
+    const current = ref.current;
+    let flag = !current;
+    if (!current) {
+      tmp.current = true;
       let obj = daysRemaining(callback[19]);
-      obj = { dismissAction: outer1_11.USER_DISMISS };
-      const result = obj.markTimeRecurringDismissibleContentAsDismissed(outer1_14, obj);
+      obj = { dismissAction: null };
+      obj[0] = outer1_11.USER_DISMISS;
+      const result = obj.markTimeRecurringDismissibleContentAsDismissed(outer1_15, obj);
       flag = true;
     }
     return flag;
@@ -63,7 +69,9 @@ export default function ParentalConsentWarningModal(daysRemaining) {
   callback1 = callback1.useCallback(() => {
     if (callback()) {
       let obj = ref(callback[17]);
-      obj = { surface_type: "modal", days_remaining: daysRemaining };
+      obj = { surface_type: null, days_remaining: null };
+      obj[0] = outer1_14;
+      obj[1] = daysRemaining;
       obj.track(outer1_9.PARENTAL_CONSENT_WARNING_SURFACE_DISMISSED, obj);
     }
   }, items);
@@ -75,80 +83,80 @@ export default function ParentalConsentWarningModal(daysRemaining) {
   }, items1);
   const callback3 = callback1.useCallback(() => {
     callback();
-    ref(callback[20]).hideActionSheet();
-    if ((function hasPendingParentLink() {
-      const values = Object.values(outer2_5.getLinkedUsers());
-      return values.some((link_status) => {
-        let tmp = link_status.link_status === outer3_7.PENDING;
-        if (tmp) {
-          tmp = link_status.link_type === outer3_8.PARENT;
+    let obj = ref(callback[20]);
+    obj.hideActionSheet();
+    const values = Object.values(outer1_5.getLinkedUsers());
+    if (values.some((link_status) => {
+      let tmp = link_status.link_status === constants.PENDING;
+      if (tmp) {
+        tmp = link_status.link_type === constants2.PARENT;
+      }
+      return tmp;
+    })) {
+      let tmp2Result = tmp2(tmp3[8]);
+      const tab = tmp2Result.selectTab(outer1_6.REQUESTS);
+      const rootNavigationRef = daysRemaining(tmp3[9]).getRootNavigationRef();
+      if (null != rootNavigationRef) {
+        if (rootNavigationRef.isReady()) {
+          obj = { screen: null };
+          obj[0] = outer1_10.FAMILY_CENTER;
+          tmp9(tmp3[10]).openUserSettings(obj);
+          const tmp9Result = tmp9(tmp3[10]);
         }
-        return tmp;
+      }
+      tmp2Result = tmp2(tmp3[11]);
+      tmp2Result.enqueue(() => {
+        let obj = callback(table[10]);
+        obj = { screen: constants3.FAMILY_CENTER };
+        return obj.openUserSettings(obj);
       });
-    })()) {
-      (function openFamilyCenterRequestsTab() {
-        let obj = callback(callback[8]);
-        const tab = obj.selectTab(outer2_6.REQUESTS);
-        const rootNavigationRef = daysRemaining(callback[9]).getRootNavigationRef();
-        if (null != rootNavigationRef) {
-          if (rootNavigationRef.isReady()) {
-            obj = { screen: outer2_10.FAMILY_CENTER };
-            daysRemaining(callback[10]).openUserSettings(obj);
-            const obj5 = daysRemaining(callback[10]);
-          }
-        }
-        const obj2 = daysRemaining(callback[9]);
-        callback(callback[11]).enqueue(() => {
-          let obj = daysRemaining(callback[10]);
-          obj = { screen: outer3_10.FAMILY_CENTER };
-          return obj.openUserSettings(obj);
-        });
-      })();
+      const obj5 = daysRemaining(tmp3[9]);
+      tmp9 = daysRemaining;
     } else {
-      ref(callback[21]).pushLazy(daysRemaining(callback[23])(callback[22], callback.paths));
-      let obj2 = ref(callback[21]);
+      tmp2(tmp3[21]).pushLazy(daysRemaining(tmp3[23])(tmp3[22], tmp3.paths));
+      const tmp2Result1 = tmp2(tmp3[21]);
     }
   }, items2);
   const intl = daysRemaining(callback[15]).intl;
   if (0 === daysRemaining) {
-    let stringResult = intl.string(importDefault(tmp9[16]).Zo5YZD);
+    let stringResult = intl.string(tmp2(tmp3[16]).Zo5YZD);
   } else {
-    obj = { count: daysRemaining };
-    stringResult = intl.formatToPlainString(importDefault(tmp9[16]).b4sYUn, obj);
+    obj = { count: null };
+    obj[0] = daysRemaining;
+    stringResult = intl.formatToPlainString(tmp2(tmp3[16]).b4sYUn, obj);
   }
-  const intl2 = daysRemaining(callback[15]).intl;
+  const intl2 = tmp4(tmp3[15]).intl;
   if (0 === daysRemaining) {
-    let stringResult1 = intl2.string(importDefault(tmp13[16]).CRZBSY);
+    let stringResult1 = intl2.string(tmp2(tmp3[16]).CRZBSY);
   } else {
-    obj = { count: daysRemaining };
-    stringResult1 = intl2.formatToPlainString(importDefault(tmp13[16]).mQcGGY, obj);
+    obj = { count: null };
+    obj[0] = daysRemaining;
+    stringResult1 = intl2.formatToPlainString(tmp2(tmp3[16]).mQcGGY, obj);
   }
-  const obj1 = { startExpanded: true, onDismiss: callback1 };
-  let obj2 = { style: items3 };
+  const obj1 = { startExpanded: true, onDismiss: callback1, children: null };
+  const obj2 = { style: items3, children: null };
   items3 = [tmp.container, { paddingBottom: importDefault(callback[14])().bottom }];
-  const obj3 = { spacing: importDefault(callback[13]).space.PX_16 };
-  const items4 = [callback(View, { style: tmp.illustration, children: callback(daysRemaining(callback[26]).FamilyKeysSpotIllustration, { accessible: false }) }), , , ];
-  let obj5 = { variant: "heading-lg/bold", color: "text-default", style: tmp.title, accessibilityRole: "header", children: stringResult };
-  items4[1] = callback(daysRemaining(callback[27]).Text, obj5);
-  const obj6 = { variant: "text-md/medium", color: "text-default", style: tmp.body, children: stringResult1 };
-  items4[2] = callback(daysRemaining(callback[27]).Text, obj6);
-  const obj7 = { spacing: importDefault(callback[13]).space.PX_8 };
-  const obj8 = { size: "lg", variant: "primary", grow: true };
-  const intl3 = daysRemaining(callback[15]).intl;
-  obj8.text = intl3.string(importDefault(callback[16]).Kp7sjX);
-  obj8.onPress = callback3;
+  const obj3 = { spacing: null, children: null };
+  obj3[0] = importDefault(callback[13]).space.PX_16;
+  const items4 = [callback(View, { style: tmp.illustration, children: callback(daysRemaining(callback[26]).FamilyKeysSpotIllustration, { accessible: false }) }), callback(daysRemaining(callback[27]).Text, { variant: "heading-lg/bold", color: "text-default", style: tmp.title, accessibilityRole: "header", children: stringResult }), callback(daysRemaining(callback[27]).Text, { variant: "text-md/medium", color: "text-default", style: tmp.body, children: stringResult1 }), ];
+  const obj7 = { spacing: null, children: null };
+  obj7[0] = importDefault(callback[13]).space.PX_8;
+  const obj8 = { size: "lg", variant: "primary", grow: true, text: null, onPress: null };
+  const intl3 = tmp4(tmp3[15]).intl;
+  obj8[3] = intl3.string(importDefault(callback[16]).Kp7sjX);
+  obj8[4] = callback3;
   const items5 = [callback(daysRemaining(callback[28]).Button, obj8), ];
-  const obj9 = { size: "lg", variant: "secondary", grow: true };
-  const intl4 = daysRemaining(callback[15]).intl;
-  obj9.text = intl4.string(importDefault(callback[16]).hST5o8);
-  const intl5 = daysRemaining(callback[15]).intl;
-  obj9.accessibilityHint = intl5.string(importDefault(callback[16])["4fZtHa"]);
-  obj9.onPress = callback2;
+  const obj9 = { size: "lg", variant: "secondary", grow: true, text: null, accessibilityHint: null, onPress: null };
+  const intl4 = tmp4(tmp3[15]).intl;
+  obj9[3] = intl4.string(importDefault(callback[16]).hST5o8);
+  const intl5 = tmp4(tmp3[15]).intl;
+  obj9[4] = intl5.string(importDefault(callback[16])["4fZtHa"]);
+  obj9[5] = callback2;
   items5[1] = callback(daysRemaining(callback[28]).Button, obj9);
-  obj7.children = items5;
+  obj7[1] = items5;
   items4[3] = callback2(daysRemaining(callback[25]).Stack, obj7);
-  obj3.children = items4;
-  obj2.children = callback2(daysRemaining(callback[25]).Stack, obj3);
-  obj1.children = callback(View, obj2);
+  obj3[1] = items4;
+  obj2[1] = callback2(daysRemaining(callback[25]).Stack, obj3);
+  obj1[2] = callback(View, obj2);
   return callback(daysRemaining(callback[24]).BottomSheet, obj1);
 };

@@ -1,17 +1,17 @@
-// Module ID: 11996
-// Function ID: 92597
+// Module ID: 12020
+// Function ID: 12021
 // Name: AvatarPile
-// Dependencies: [31, 33, 11997, 9909, 11688, 7945, 9910, 2]
+// Dependencies: [19, 21, 12021, 9931, 11712, 7970, 9932, 2]
 // Exports: AvatarPile
 
-// Module 11996 (AvatarPile)
-import result from "result";
+// Module 12020 (AvatarPile)
+import noop from "noop";
 import jsxProd from "jsxProd";
 
-let closure_3;
-let closure_4;
+let c3;
+let c4;
 const require = arg1;
-({ jsx: closure_3, jsxs: closure_4 } = jsxProd);
+({ jsx: c3, jsxs: c4 } = jsxProd);
 const result = require("StaticNativeCutoutAvatarImage").fileFinishedImporting("design/components/Pile/native/AvatarPile.native.tsx");
 
 export const AvatarPile = function AvatarPile(arg0) {
@@ -23,21 +23,26 @@ export const AvatarPile = function AvatarPile(arg0) {
   const Children = React.Children;
   ({ size, names } = arg0);
   const countResult = Children.count(children);
-  const tmp2 = require(11997) /* StaticNativeCutoutAvatarImage */.AVATAR_SIZE_MAP[size];
+  const tmp4 = require(12021) /* StaticNativeCutoutAvatarImage */.AVATAR_SIZE_MAP[size];
+  let obj = { "aria-label": null, shape: null, size: null, gap: null, depthX: 0.4, children: null };
+  obj[0] = require(11712) /* getListSummaryLabel */.getListSummaryLabel(names, totalCount);
+  obj[1] = require(7970) /* SolidCutout */.CutoutShape.Circle;
+  obj[2] = tmp4;
   let num = 3;
-  let obj = { "aria-label": require(11688) /* getListSummaryLabel */.getListSummaryLabel(names, totalCount), shape: require(7945) /* SolidCutout */.CutoutShape.Circle, size: tmp2 };
-  if (tmp2 <= 40) {
+  if (tmp4 <= 40) {
     num = 2;
   }
-  obj.gap = num;
-  obj.depthX = 0.4;
+  obj[3] = num;
   const items = [children, ];
-  let tmp4 = null != totalCount && countResult < totalCount;
-  if (tmp4) {
-    obj = { size: tmp2, borderRadius: tmp2 / 2, value: totalCount - countResult };
-    tmp4 = callback(require(9910) /* map */.PileOverflow, obj);
+  let tmp6 = null != totalCount && countResult < totalCount;
+  if (tmp6) {
+    obj = { size: null, borderRadius: null, value: null };
+    obj[0] = tmp4;
+    obj[1] = tmp4 / 2;
+    obj[2] = totalCount - countResult;
+    tmp6 = callback(require(9932) /* map */.PileOverflow, obj);
   }
-  items[1] = tmp4;
-  obj.children = items;
-  return closure_4(require(9909) /* Pile */.Pile, obj);
+  items[1] = tmp6;
+  obj[5] = items;
+  return closure_4(require(9931) /* Pile */.Pile, obj);
 };

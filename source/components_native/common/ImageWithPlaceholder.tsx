@@ -1,22 +1,24 @@
-// Module ID: 8629
-// Function ID: 68357
+// Module ID: 8653
+// Function ID: 8654
 // Name: ImagePlaceholderVersions
-// Dependencies: [27, 33, 477, 8630, 5119, 2]
+// Dependencies: [17, 21, 500, 8654, 5141, 2]
 // Exports: ImageWithPlaceholder
 
-// Module 8629 (ImagePlaceholderVersions)
+// Module 8653 (ImagePlaceholderVersions)
 import get_ActivityIndicator from "get ActivityIndicator";
 import { jsx } from "jsxProd";
 import set from "set";
 import set from "set";
 
-const View = get_ActivityIndicator.View;
+let obj1;
+let requireNativeComponent;
+({ View: obj1, requireNativeComponent } = get_ActivityIndicator);
 let closure_4 = { flex: 1 };
 let obj = { THUMBHASH: 1, [1]: "THUMBHASH" };
 if (set.isAndroid()) {
   let importDefaultResult = require("__INTERNAL_VIEW_CONFIG");
 } else {
-  importDefaultResult = get_ActivityIndicator.requireNativeComponent("DCDImageWithThumbhashPlaceholderView");
+  importDefaultResult = requireNativeComponent("DCDImageWithThumbhashPlaceholderView");
 }
 const result = set.fileFinishedImporting("components_native/common/ImageWithPlaceholder.tsx");
 
@@ -28,24 +30,23 @@ export const ImageWithPlaceholder = function ImageWithPlaceholder(arg0) {
   let style;
   let uri;
   ({ uri, placeholder, placeholderVersion, alt, style } = arg0);
-  let obj = { uri: 0, placeholder: 0, placeholderVersion: 0, alt: 0, style: 0 };
-  Object.setPrototypeOf(null);
-  const merged = Object.assign(arg0, obj);
+  const merged = Object.assign(arg0, Object.create(null));
   if (null != placeholder) {
     if (placeholderVersion === obj.THUMBHASH) {
       obj = {};
       const merged1 = Object.assign(merged);
-      obj["style"] = style;
-      obj["uri"] = uri;
-      obj["placeholder"] = placeholder;
-      obj["placeholderVersion"] = placeholderVersion;
-      obj["alt"] = alt;
-      let tmp5 = <closure_6 />;
+      obj.style = style;
+      obj.uri = uri;
+      obj.placeholder = placeholder;
+      obj.placeholderVersion = placeholderVersion;
+      obj.alt = alt;
+      let tmp4 = <closure_6 />;
     }
-    return tmp5;
+    return tmp4;
   }
   obj = { style };
   const merged2 = Object.assign(merged);
-  obj["children"] = jsx(importDefault(5119), { style: closure_4, resizeMode: "cover", source: { uri }, alt });
-  tmp5 = <View style={style} />;
+  obj = { style: closure_4, resizeMode: "cover", source: { uri }, alt };
+  obj.children = jsx(importDefault(5141), { style: closure_4, resizeMode: "cover", source: { uri }, alt });
+  tmp4 = <closure_2 style={closure_4} resizeMode="cover" source={{ uri }} alt={alt} />;
 };

@@ -1,63 +1,62 @@
-// Module ID: 9198
-// Function ID: 71992
+// Module ID: 9222
+// Function ID: 9223
 // Name: OrSeparator
-// Dependencies: [31, 27, 9199, 33, 4165, 689, 4161, 1212, 5193, 1456, 1450, 8971, 4578, 2]
+// Dependencies: [19, 17, 9223, 21, 4189, 712, 4185, 1236, 5215, 1480, 1474, 8995, 4600, 2]
 // Exports: default
 
-// Module 9198 (OrSeparator)
-import result from "result";
+// Module 9222 (OrSeparator)
+import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import NUXGuildTemplatesAnalytics from "NUXGuildTemplatesAnalytics";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_10;
-let closure_4;
-let closure_5;
+let c10;
+let c4;
+let c5;
+let c9;
 let closure_6;
-let closure_7;
-let closure_8;
-let closure_9;
+let error;
+let metroImportAll;
 const require = arg1;
 class OrSeparator {
   constructor() {
-    tmp = c11();
-    obj = { style: tmp.separator };
+    tmp = Fragment();
+    obj = { style: tmp.separator, children: null };
     obj = { style: tmp.innerSeparator };
     items = [, , ];
     items[0] = jsx(View, obj);
-    obj1 = { style: null, variant: "text-sm/semibold", color: "text-muted" };
-    obj1.style = tmp.orText;
+    obj1 = { style: tmp.orText, variant: "text-sm/semibold", color: "text-muted", children: null };
     intl = require("getSystemLocale").intl;
-    obj1.children = intl.string(require("getSystemLocale").t.HEuagM);
+    obj1[3] = intl.string(require("getSystemLocale").t.HEuagM);
     items[1] = jsx(require("Text").Text, obj1);
     obj2 = { style: tmp.innerSeparator };
     items[2] = jsx(View, obj2);
-    obj.children = items;
+    obj[1] = items;
     return jsxs(View, obj);
   }
 }
-({ View: closure_4, ScrollView: closure_5 } = get_ActivityIndicator);
-({ CREATE_GUILD_SMALL_SCREEN_MAX_HEIGHT: closure_6, CreateGuildModalStates: closure_7 } = NUXGuildTemplatesAnalytics);
-({ jsx: closure_8, jsxs: closure_9, Fragment: closure_10 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { flexGrow: 2, minHeight: require("_createForOfIteratorHelperLoose").space.PX_24 };
-_createForOfIteratorHelperLoose.growSpacing = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.container = { flexGrow: 2, paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16, paddingBottom: require("_createForOfIteratorHelperLoose").space.PX_16 };
-let obj1 = { flexGrow: 2, paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16, paddingBottom: require("_createForOfIteratorHelperLoose").space.PX_16 };
-_createForOfIteratorHelperLoose.textInput = { borderRadius: require("_createForOfIteratorHelperLoose").radii.lg };
-let obj3 = { height: 1, flexGrow: 2, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BORDER_SUBTLE };
-_createForOfIteratorHelperLoose.innerSeparator = obj3;
-_createForOfIteratorHelperLoose.separator = { paddingVertical: 12, flexDirection: "row", justifyContent: "center", alignItems: "center" };
-let obj4 = { textAlign: "center", marginHorizontal: require("_createForOfIteratorHelperLoose").space.PX_8, textTransform: "uppercase" };
-_createForOfIteratorHelperLoose.orText = obj4;
-_createForOfIteratorHelperLoose.header = { textAlign: "center" };
-_createForOfIteratorHelperLoose.description = { textAlign: "center", marginTop: 8, marginBottom: 32 };
-_createForOfIteratorHelperLoose.exampleText = { marginTop: 8 };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+({ View: c4, ScrollView: c5 } = get_ActivityIndicator);
+({ CREATE_GUILD_SMALL_SCREEN_MAX_HEIGHT: closure_6, CreateGuildModalStates: error } = NUXGuildTemplatesAnalytics);
+({ jsx: metroImportAll, jsxs: c9, Fragment: c10 } = jsxProd);
+createCacheKey = { growSpacing: null, container: null, textInput: null, innerSeparator: null, separator: null, orText: null, header: null, description: null, exampleText: null };
+createCacheKey = { flexGrow: 2, minHeight: require("Themes").space.PX_24 };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { flexGrow: 2, paddingHorizontal: require("Themes").space.PX_16, paddingBottom: require("Themes").space.PX_16 };
+let obj1 = { flexGrow: 2, paddingHorizontal: require("Themes").space.PX_16, paddingBottom: require("Themes").space.PX_16 };
+createCacheKey[2] = { borderRadius: require("Themes").radii.lg };
+let obj2 = { borderRadius: require("Themes").radii.lg };
+createCacheKey[3] = { height: 1, flexGrow: 2, backgroundColor: require("Themes").colors.BORDER_SUBTLE };
+createCacheKey[4] = { paddingVertical: 12, flexDirection: "row", justifyContent: "center", alignItems: "center" };
+let obj3 = { height: 1, flexGrow: 2, backgroundColor: require("Themes").colors.BORDER_SUBTLE };
+createCacheKey[5] = { textAlign: "center", marginHorizontal: require("Themes").space.PX_8, textTransform: "uppercase" };
+createCacheKey[6] = { textAlign: "center" };
+createCacheKey[7] = { textAlign: "center", marginTop: 8, marginBottom: 32 };
+createCacheKey[8] = { marginTop: 8 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
 let items = ["https://discord.gg/hTKzmak", "hTKzmak", "https://discord.gg/wumpus-friends"];
 let closure_13 = items[0];
-let obj2 = { borderRadius: require("_createForOfIteratorHelperLoose").radii.lg };
+let obj4 = { textAlign: "center", marginHorizontal: require("Themes").space.PX_8, textTransform: "uppercase" };
 const result = require("NUXGuildTemplatesAnalytics").fileFinishedImporting("modules/accept_invite/native/JoinServer.tsx");
 
 export default function JoinServer(arg0) {
@@ -67,88 +66,86 @@ export default function JoinServer(arg0) {
   let onInviteChange;
   let submitting;
   ({ onDone, submitting } = arg0);
+  let navigation;
   ({ error, inviteString, onInviteChange } = arg0);
-  const tmp = _createForOfIteratorHelperLoose();
-  let obj = navigation(1456);
+  const tmp = createCacheKey();
+  let obj = navigation(1480);
   navigation = obj.useNavigation();
   const items = [navigation];
-  obj = { keyboardShouldPersistTaps: "handled" };
+  obj = { keyboardShouldPersistTaps: "handled", contentContainerStyle: null, children: null };
   const items1 = [tmp.container, ];
-  obj = {};
+  obj = { paddingBottom: null };
   const callback = React.useCallback(() => {
     navigation.push(outer1_7.JOIN_STUDENT_HUB);
   }, items);
-  obj.paddingBottom = importDefault(5193)().insets.bottom + importDefault(689).space.PX_16;
+  obj[0] = importDefault(5215)().insets.bottom + importDefault(712).space.PX_16;
   items1[1] = obj;
-  obj.contentContainerStyle = items1;
-  const obj1 = {};
-  let tmp8 = null;
-  if (importDefault(1450)().height > closure_6) {
-    const obj2 = {};
-    const obj3 = { style: tmp.header, accessibilityRole: "header", variant: "heading-xl/bold", color: "mobile-text-heading-primary" };
-    const intl = navigation(1212).intl;
-    obj3.children = intl.string(navigation(1212).t.jlfuFW);
-    const items2 = [callback(navigation(4161).Text, obj3), ];
-    const obj4 = { style: tmp.description, variant: "text-sm/medium", color: "text-default" };
-    const intl2 = navigation(1212).intl;
-    obj4.children = intl2.string(navigation(1212).t.lVvN3A);
-    items2[1] = callback(navigation(4161).Text, obj4);
-    obj2.children = items2;
-    tmp8 = callback2(closure_10, obj2);
+  obj[1] = items1;
+  let tmp7Result = null;
+  if (importDefault(1474)().height > closure_6) {
+    const obj1 = { children: null };
+    const obj2 = { style: null, accessibilityRole: "header", variant: "heading-xl/bold", color: "mobile-text-heading-primary", children: null };
+    obj2[0] = tmp.header;
+    const intl = tmp4(1236).intl;
+    obj2[4] = intl.string(tmp4(1236).t.jlfuFW);
+    const items2 = [callback(tmp4(4185).Text, obj2), ];
+    const obj3 = { style: null, variant: "text-sm/medium", color: "text-default", children: null };
+    obj3[0] = tmp.description;
+    const intl2 = tmp4(1236).intl;
+    obj3[3] = intl2.string(tmp4(1236).t.lVvN3A);
+    items2[1] = callback(tmp4(4185).Text, obj3);
+    obj1[0] = items2;
+    tmp7Result = tmp7(closure_10, obj1);
   }
-  const items3 = [tmp8, , ];
-  const obj5 = {};
-  const intl3 = navigation(1212).intl;
-  obj5.label = intl3.string(navigation(1212).t.qreV25);
-  obj5.error = error;
-  obj5.value = inviteString;
-  obj5.onChangeText = onInviteChange;
-  obj5.placeholder = closure_13;
-  const intl4 = navigation(1212).intl;
-  obj5.accessibilityLabel = intl4.string(navigation(1212).t.qreV25);
-  obj5.autoFocus = true;
-  obj5.autoCapitalize = "none";
-  obj5.autoCorrect = false;
-  obj5.returnKeyType = "join";
-  obj5.textStyle = tmp.textInput;
-  obj5.onSubmitEditing = onDone;
-  items3[1] = callback(importDefault(8971), obj5);
-  const obj6 = { style: tmp.exampleText, variant: "text-sm/medium", color: "text-muted" };
-  const intl5 = navigation(1212).intl;
-  obj6.children = intl5.format(navigation(1212).t.vwWaTe, {
+  const obj4 = { children: null };
+  const items3 = [tmp7Result, , ];
+  const obj5 = { label: null, error: null, value: null, onChangeText: null, placeholder: null, accessibilityLabel: null, autoFocus: true, autoCapitalize: "none", autoCorrect: false, returnKeyType: "join", textStyle: null, onSubmitEditing: null };
+  const intl3 = tmp4(1236).intl;
+  obj5[0] = intl3.string(navigation(1236).t.qreV25);
+  obj5[1] = error;
+  obj5[2] = inviteString;
+  obj5[3] = onInviteChange;
+  obj5[4] = closure_13;
+  const intl4 = tmp4(1236).intl;
+  obj5[5] = intl4.string(navigation(1236).t.qreV25);
+  obj5[10] = tmp.textInput;
+  obj5[11] = onDone;
+  items3[1] = callback(importDefault(8995), obj5);
+  const obj6 = { style: tmp.exampleText, variant: "text-sm/medium", color: "text-muted", children: null };
+  const intl5 = tmp4(1236).intl;
+  obj6[3] = intl5.format(navigation(1236).t.vwWaTe, {
     example1: items[0],
     example2: items[1],
     example3: items[2],
     exampleHook(children) {
-      const obj = { variant: "text-sm/medium", color: "text-default", children };
-      return outer1_8(navigation(outer1_2[6]).Text, obj, arg1);
+      return callback(navigation(table[6]).Text, { variant: "text-sm/medium", color: "text-default", children }, arg1);
     }
   });
-  items3[2] = callback(navigation(4161).Text, obj6);
-  obj1.children = items3;
-  const items4 = [callback2(closure_4, obj1), ];
-  const obj8 = {};
+  items3[2] = callback(navigation(4185).Text, obj6);
+  obj4[0] = items3;
+  const items4 = [closure_9(closure_4, obj4), ];
+  const obj8 = { children: null };
   const items5 = [callback(closure_4, { style: tmp.growSpacing }), , , ];
-  const obj10 = { size: "lg" };
-  const intl6 = navigation(1212).intl;
-  obj10.text = intl6.string(navigation(1212).t["+H/coT"]);
-  const intl7 = navigation(1212).intl;
-  obj10.accessibilityLabel = intl7.string(navigation(1212).t["+H/coT"]);
-  obj10.loading = submitting;
-  obj10.disabled = submitting;
-  obj10.onPress = onDone;
-  items5[1] = callback(navigation(4578).Button, obj10);
+  const obj10 = { size: "lg", text: null, accessibilityLabel: null, loading: null, disabled: null, onPress: null };
+  const intl6 = tmp4(1236).intl;
+  obj10[1] = intl6.string(navigation(1236).t["+H/coT"]);
+  const intl7 = tmp4(1236).intl;
+  obj10[2] = intl7.string(navigation(1236).t["+H/coT"]);
+  obj10[3] = submitting;
+  obj10[4] = submitting;
+  obj10[5] = onDone;
+  items5[1] = callback(navigation(4600).Button, obj10);
   items5[2] = callback(OrSeparator, {});
-  const obj11 = { size: "lg", variant: "secondary" };
-  const intl8 = navigation(1212).intl;
-  obj11.text = intl8.string(navigation(1212).t["MOqX/G"]);
-  const intl9 = navigation(1212).intl;
-  obj11.accessibilityLabel = intl9.string(navigation(1212).t["MOqX/G"]);
-  obj11.onPress = callback;
-  items5[3] = callback(navigation(4578).Button, obj11);
-  obj8.children = items5;
-  items4[1] = callback2(closure_10, obj8);
-  obj.children = items4;
-  return callback2(closure_5, obj);
+  const obj11 = { size: "lg", variant: "secondary", text: null, accessibilityLabel: null, onPress: null };
+  const intl8 = tmp4(1236).intl;
+  obj11[2] = intl8.string(navigation(1236).t["MOqX/G"]);
+  const intl9 = tmp4(1236).intl;
+  obj11[3] = intl9.string(navigation(1236).t["MOqX/G"]);
+  obj11[4] = callback;
+  items5[3] = callback(navigation(4600).Button, obj11);
+  obj8[0] = items5;
+  items4[1] = closure_9(closure_10, obj8);
+  obj[2] = items4;
+  return closure_9(closure_5, obj);
 };
 export { OrSeparator };

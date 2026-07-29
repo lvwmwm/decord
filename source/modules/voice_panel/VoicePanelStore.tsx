@@ -1,174 +1,172 @@
-// Module ID: 4377
-// Function ID: 38479
+// Module ID: 4400
+// Function ID: 4401
 // Name: withEqualityFn
-// Dependencies: [1348, 677, 4378, 682, 2]
+// Dependencies: [1372, 700, 4401, 705, 2]
 
-// Module 4377 (withEqualityFn)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import useStoreWithEqualityFn from "useStoreWithEqualityFn";
+// Module 4400 (withEqualityFn)
+import ensureGuildLoaded from "ensureGuildLoaded";
+import identity from "identity";
 
 const require = arg1;
-const withEqualityFn = useStoreWithEqualityFn.createWithEqualityFn((arg0, arg1) => {
+const withEqualityFn = identity.createWithEqualityFn((arg0, arg1) => {
   let closure_0 = arg0;
   let closure_1 = arg1;
-  let obj = {
-    channels: new Set(),
-    isActivityFocused: false,
-    isVoicePanelFullscreen() {
-      return dependencyMap().voicePanelsFullscreen.size > 0;
-    },
-    isAnyVoicePanelOpen() {
-      return dependencyMap().voicePanelsOpened.size > 0;
-    }
+  let obj = { channels: null, isActivityFocused: false, isVoicePanelFullscreen: null, isAnyVoicePanelOpen: null, voicePanelsFullscreen: null, voicePanelsOpened: null, voicePanelsPIP: null, openChannel: null, closeChannel: null, isMounted: null, setIsActivityFocused: null, setChannelPanelFullscreen: null, setChannelPanelOpen: null, isChannelOpen: null, setChannelPanelPIP: null };
+  obj[0] = new Set();
+  obj[2] = function isVoicePanelFullscreen() {
+    return dependencyMap().voicePanelsFullscreen.size > 0;
+  };
+  obj[3] = function isAnyVoicePanelOpen() {
+    return dependencyMap().voicePanelsOpened.size > 0;
   };
   let set = new Set();
-  obj.voicePanelsFullscreen = new Set();
+  obj[4] = new Set();
   let set1 = new Set();
-  obj.voicePanelsOpened = new Set();
+  obj[5] = new Set();
   let set2 = new Set();
-  obj.voicePanelsPIP = new Set();
-  obj.openChannel = function openChannel(channelId) {
-    const callback = channelId;
-    let result = callback(4378).isStageVoicePanelEnabled("voice_panel_store");
+  obj[6] = new Set();
+  obj[7] = function openChannel(arg0) {
+    const callback = arg0;
+    let result = callback(4401).isStageVoicePanelEnabled("voice_panel_store");
     if (!result) {
-      const channel = outer1_2.getChannel(channelId);
+      const channel = outer1_2.getChannel(arg0);
       let isGuildStageVoiceResult;
-      if (null != channel) {
+      if (channel != null) {
         isGuildStageVoiceResult = channel.isGuildStageVoice();
       }
       result = true !== isGuildStageVoiceResult;
     }
     if (result) {
       const channels = dependencyMap().channels;
-      if (!channels.has(channelId)) {
-        callback(682).batchUpdates(() => {
-          channelId((channels) => {
+      if (!channels.has(arg0)) {
+        callback(705).batchUpdates(() => {
+          callback((channels) => {
             const obj = {};
             const merged = Object.assign(channels);
-            const items = [outer1_0, ...Array.from(channels.channels)];
-            obj["channels"] = new Set(items);
-            const items1 = [outer1_0, ...Array.from(channels.voicePanelsOpened)];
+            const items = [closure_0, ...Array.from(channels.channels)];
+            obj.channels = new Set(items);
+            const items1 = [closure_0, ...Array.from(channels.voicePanelsOpened)];
             const set = new Set(items);
-            obj["voicePanelsOpened"] = new Set(items1);
+            obj.voicePanelsOpened = new Set(items1);
             return obj;
           });
         });
-        const obj3 = callback(682);
+        const tmpResult = callback(705);
       }
     }
   };
-  obj.closeChannel = function closeChannel(channelId) {
+  obj[8] = function closeChannel(channelId) {
     const callback = channelId;
-    callback(682).batchUpdates(() => {
+    callback(705).batchUpdates(() => {
       channelId((arg0) => {
         let channels;
         let voicePanelsFullscreen;
         let voicePanelsOpened;
         ({ channels, voicePanelsFullscreen, voicePanelsOpened } = arg0);
-        if (!channels.has(outer1_0)) {
-          if (!voicePanelsFullscreen.has(outer1_0)) {
-            let tmp3 = arg0;
+        if (!channels.has(closure_0)) {
+          if (!voicePanelsFullscreen.has(tmp)) {
+            let tmp2 = arg0;
           }
-          return tmp3;
+          return tmp2;
         }
-        let tmp4 = channels;
-        if (channels.has(outer1_0)) {
+        let tmp3 = channels;
+        if (channels.has(closure_0)) {
           const _Set = Set;
           const set = new Set(channels);
-          set.delete(outer1_0);
-          tmp4 = set;
+          set.delete(tmp);
+          tmp3 = set;
         }
-        let tmp12 = voicePanelsFullscreen;
-        if (voicePanelsFullscreen.has(outer1_0)) {
+        let tmp10 = voicePanelsFullscreen;
+        if (voicePanelsFullscreen.has(closure_0)) {
           const _Set2 = Set;
           const set1 = new Set(voicePanelsFullscreen);
-          set1.delete(outer1_0);
-          tmp12 = set1;
+          set1.delete(tmp);
+          tmp10 = set1;
         }
-        let tmp20 = voicePanelsOpened;
-        if (voicePanelsOpened.has(outer1_0)) {
+        let tmp17 = voicePanelsOpened;
+        if (voicePanelsOpened.has(closure_0)) {
           const _Set3 = Set;
           const set2 = new Set(voicePanelsOpened);
-          set2.delete(outer1_0);
-          tmp20 = set2;
+          set2.delete(tmp);
+          tmp17 = set2;
         }
         const obj = {};
         const merged = Object.assign(arg0);
-        obj["channels"] = tmp4;
-        obj["voicePanelsFullscreen"] = tmp12;
-        obj["voicePanelsOpened"] = tmp20;
-        tmp3 = obj;
+        obj.channels = tmp3;
+        obj.voicePanelsFullscreen = tmp10;
+        obj.voicePanelsOpened = tmp17;
+        tmp2 = obj;
       });
     });
   };
-  obj.isMounted = function isMounted(arg0) {
+  obj[9] = function isMounted(arg0) {
     const channels = dependencyMap().channels;
     return channels.has(arg0);
   };
-  obj.setIsActivityFocused = function setIsActivityFocused(arg0) {
+  obj[10] = function setIsActivityFocused(arg0) {
     const callback = arg0;
-    callback(682).batchUpdates(() => {
+    callback(705).batchUpdates(() => {
       callback((isActivityFocused) => {
-        let tmp = isActivityFocused;
-        if (isActivityFocused.isActivityFocused !== outer1_0) {
+        let tmp2 = isActivityFocused;
+        if (isActivityFocused.isActivityFocused !== closure_0) {
           const obj = {};
           const merged = Object.assign(isActivityFocused);
-          obj["isActivityFocused"] = outer1_0;
-          tmp = obj;
+          obj.isActivityFocused = tmp;
+          tmp2 = obj;
         }
-        return tmp;
+        return tmp2;
       });
     });
   };
-  obj.setChannelPanelFullscreen = function setChannelPanelFullscreen(closure_0, closure_02) {
+  obj[11] = function setChannelPanelFullscreen(closure_0, closure_02) {
     const callback = closure_0;
     const dependencyMap = closure_02;
-    callback(682).batchUpdates(() => {
+    callback(705).batchUpdates(() => {
       callback((voicePanelsFullscreen) => {
         const set = new Set(voicePanelsFullscreen.voicePanelsFullscreen);
-        const hasItem = set.has(outer1_0);
-        if (outer1_1) {
+        const hasItem = set.has(closure_0);
+        if (closure_1) {
           if (hasItem) {
             return voicePanelsFullscreen;
           } else {
-            set.add(outer1_0);
+            set.add(tmp);
           }
         } else if (hasItem) {
-          set.delete(outer1_0);
+          set.delete(tmp);
         } else {
           return voicePanelsFullscreen;
         }
         const obj = {};
         const merged = Object.assign(voicePanelsFullscreen);
-        obj["voicePanelsFullscreen"] = set;
+        obj.voicePanelsFullscreen = set;
         return obj;
       });
     });
   };
-  obj.setChannelPanelOpen = function setChannelPanelOpen(channelId, arg1) {
-    const callback = channelId;
+  obj[12] = function setChannelPanelOpen(scrollPosition, arg1) {
+    const callback = scrollPosition;
     const dependencyMap = arg1;
-    callback(682).batchUpdates(() => {
-      channelId((channels) => {
+    callback(705).batchUpdates(() => {
+      scrollPosition((channels) => {
         channels = channels.channels;
-        if (channels.has(outer1_0)) {
+        if (channels.has(closure_0)) {
           const _Set = Set;
           const set = new Set(channels.voicePanelsOpened);
-          const hasItem = set.has(outer1_0);
-          if (outer1_1) {
+          const hasItem = set.has(tmp);
+          if (closure_1) {
             if (hasItem) {
               return channels;
             } else {
-              set.add(outer1_0);
+              set.add(tmp);
             }
           } else if (hasItem) {
-            set.delete(outer1_0);
+            set.delete(tmp);
           } else {
             return channels;
           }
           const obj = {};
           const merged = Object.assign(channels);
-          obj["voicePanelsOpened"] = set;
+          obj.voicePanelsOpened = set;
           return obj;
         } else {
           return channels;
@@ -176,31 +174,31 @@ const withEqualityFn = useStoreWithEqualityFn.createWithEqualityFn((arg0, arg1) 
       });
     });
   };
-  obj.isChannelOpen = function isChannelOpen(closure_0) {
+  obj[13] = function isChannelOpen(closure_0) {
     const voicePanelsOpened = dependencyMap().voicePanelsOpened;
     return voicePanelsOpened.has(closure_0);
   };
-  obj.setChannelPanelPIP = function setChannelPanelPIP(channelId, arg1) {
-    const callback = channelId;
+  obj[14] = function setChannelPanelPIP(scrollPosition, arg1) {
+    const callback = scrollPosition;
     const dependencyMap = arg1;
-    callback(682).batchUpdates(() => {
-      channelId((voicePanelsPIP) => {
+    callback(705).batchUpdates(() => {
+      scrollPosition((voicePanelsPIP) => {
         const set = new Set(voicePanelsPIP.voicePanelsPIP);
-        const hasItem = set.has(outer1_0);
-        if (outer1_1) {
+        const hasItem = set.has(closure_0);
+        if (closure_1) {
           if (hasItem) {
             return voicePanelsPIP;
           } else {
-            set.add(outer1_0);
+            set.add(tmp);
           }
         } else if (hasItem) {
-          set.delete(outer1_0);
+          set.delete(tmp);
         } else {
           return voicePanelsPIP;
         }
         const obj = {};
         const merged = Object.assign(voicePanelsPIP);
-        obj["voicePanelsPIP"] = set;
+        obj.voicePanelsPIP = set;
         return obj;
       });
     });

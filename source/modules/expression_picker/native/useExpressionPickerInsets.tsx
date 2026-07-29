@@ -1,25 +1,26 @@
-// Module ID: 9569
-// Function ID: 74486
+// Module ID: 9593
+// Function ID: 9594
 // Name: useExpressionPickerInsets
-// Dependencies: [31, 653, 1557, 5193, 689, 2]
+// Dependencies: [19, 676, 1581, 5215, 712, 2]
 // Exports: default
 
-// Module 9569 (useExpressionPickerInsets)
-import result from "result";
+// Module 9593 (useExpressionPickerInsets)
+import noop from "noop";
 import { EXPRESSION_FOOTER_HEIGHT } from "ME";
 
 const result = require("useSafeAreaInsets").fileFinishedImporting("modules/expression_picker/native/useExpressionPickerInsets.tsx");
 
 export default function useExpressionPickerInsets(hasCategories) {
-  bottom = bottom(1557)().bottom;
-  const obj = {};
+  let bottom;
+  bottom = bottom(1581)().bottom;
+  const obj = { safeAreaStyle: null, safeAreaBottomKeyboardAware: null };
   const items = [bottom];
-  obj.safeAreaStyle = React.useMemo(() => ({ paddingBottom: bottom }), items);
+  obj[0] = React.useMemo(() => ({ paddingBottom: bottom }), items);
   let num = 0;
   if (hasCategories.hasCategories) {
     num = EXPRESSION_FOOTER_HEIGHT;
   }
-  const sum = bottom(5193)({ includeKeyboardHeight: true, includeCustomKeyboardHeight: false }).insets.bottom + num;
-  obj.safeAreaBottomKeyboardAware = sum + bottom(689).space.PX_16;
+  const sum = bottom(5215)({ includeKeyboardHeight: true, includeCustomKeyboardHeight: false }).insets.bottom + num;
+  obj[1] = sum + bottom(712).space.PX_16;
   return obj;
 };

@@ -1,18 +1,17 @@
-// Module ID: 11946
-// Function ID: 92300
+// Module ID: 11970
+// Function ID: 11971
 // Name: openEditCustomStatusModal
-// Dependencies: [4372, 11947, 1935, 2]
+// Dependencies: [4395, 11971, 1959, 2]
 // Exports: openEditCustomStatusModal
 
-// Module 11946 (openEditCustomStatusModal)
-const result = require("maybeLoadBundle").fileFinishedImporting("modules/custom_status/native/CustomStatusUtils.tsx");
+// Module 11970 (openEditCustomStatusModal)
+const result = require("asyncRequireImpl").fileFinishedImporting("modules/custom_status/native/CustomStatusUtils.tsx");
 
 export const openEditCustomStatusModal = function openEditCustomStatusModal(arg0) {
   let _prompt;
   let analyticsLocations;
   ({ analyticsLocations, prompt: _prompt } = arg0);
-  let obj = importDefault(4372);
+  let obj = importDefault(4395);
   obj = { analyticsLocations, prompt: _prompt };
-  obj = { presentation: "modal" };
-  obj.pushLazy(require(1935) /* maybeLoadBundle */(11947, dependencyMap.paths), obj, undefined, obj);
+  obj.pushLazy(require(1959) /* asyncRequireImpl */(11971, dependencyMap.paths), obj, undefined, { presentation: "modal" });
 };

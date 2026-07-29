@@ -1,9 +1,9 @@
-// Module ID: 9912
-// Function ID: 76616
+// Module ID: 9934
+// Function ID: 9935
 // Name: SAVED_MESSAGES_MAX
 // Dependencies: [2]
 
-// Module 9912 (SAVED_MESSAGES_MAX)
+// Module 9934 (SAVED_MESSAGES_MAX)
 const result = require("set").fileFinishedImporting("../discord_common/js/shared/shared-constants/SavedMessagesConstants.tsx");
 
 export const SAVED_MESSAGES_MAX = 200;

@@ -1,59 +1,59 @@
-// Module ID: 16582
-// Function ID: 129048
+// Module ID: 16617
+// Function ID: 16618
 // Name: GuildRoleSubscriptionTierTemplateSelectedActionSheet
-// Dependencies: [31, 27, 1345, 33, 4165, 689, 1557, 5221, 5223, 4161, 1212, 1273, 4579, 2]
+// Dependencies: [19, 17, 1369, 21, 4189, 712, 1581, 5243, 5245, 4185, 1236, 1297, 4601, 2]
 // Exports: default
 
-// Module 16582 (GuildRoleSubscriptionTierTemplateSelectedActionSheet)
-import "result";
+// Module 16617 (GuildRoleSubscriptionTierTemplateSelectedActionSheet)
+import "noop";
 import { View } from "get ActivityIndicator";
 import { ContentDismissActionType } from "ContentDismissActionType";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_5;
+let c5;
 let closure_6;
 const require = arg1;
-({ jsx: closure_5, jsxs: closure_6 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SURFACE_HIGH, padding: 24 };
-_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.button = { borderRadius: require("_createForOfIteratorHelperLoose").radii.xs };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-let obj1 = { borderRadius: require("_createForOfIteratorHelperLoose").radii.xs };
+({ jsx: c5, jsxs: closure_6 } = jsxProd);
+createCacheKey = { container: null, button: null };
+createCacheKey = { backgroundColor: require("Themes").colors.BACKGROUND_SURFACE_HIGH, padding: 24 };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { borderRadius: require("Themes").radii.xs };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let obj1 = { borderRadius: require("Themes").radii.xs };
 const result = require("ContentDismissActionType").fileFinishedImporting("modules/guild_role_subscriptions/native/guild_settings/tier_templates/GuildRoleSubscriptionTierTemplateSelectedActionSheet.tsx");
 
 export default function GuildRoleSubscriptionTierTemplateSelectedActionSheet(markAsDismissed) {
   markAsDismissed = markAsDismissed.markAsDismissed;
-  const tmp = _createForOfIteratorHelperLoose();
+  const tmp = createCacheKey();
   let obj = {
     backdropOpacity: 0.8,
     onDismiss() {
       return markAsDismissed(outer1_4.UNKNOWN);
-    }
+    },
+    children: null
   };
-  obj = { style: tmp.container };
-  obj = { contentContainerStyle: { paddingBottom: importDefault(1557)().bottom } };
-  const obj1 = { variant: "heading-lg/semibold", color: "mobile-text-heading-primary" };
-  const intl = markAsDismissed(1212).intl;
-  obj1.children = intl.string(markAsDismissed(1212).t.Y0PTc0);
-  const items = [callback(markAsDismissed(4161).Text, obj1), callback(markAsDismissed(1273).Spacer, { size: 12 }), , , ];
-  const obj2 = { variant: "text-sm/normal", color: "text-default" };
-  const intl2 = markAsDismissed(1212).intl;
-  obj2.children = intl2.string(markAsDismissed(1212).t["YSI/1/"]);
-  items[2] = callback(markAsDismissed(4161).Text, obj2);
-  items[3] = callback(markAsDismissed(1273).Spacer, { size: 48 });
-  const obj3 = {};
-  const intl3 = markAsDismissed(1212).intl;
-  obj3.text = intl3.string(markAsDismissed(1212).t.MhldXX);
-  obj3.pillStyle = tmp.button;
-  obj3.onPress = function onPress() {
+  obj = { style: tmp.container, children: null };
+  obj = { contentContainerStyle: { paddingBottom: importDefault(1581)().bottom }, children: null };
+  const obj1 = { variant: "heading-lg/semibold", color: "mobile-text-heading-primary", children: null };
+  const intl = markAsDismissed(1236).intl;
+  obj1[2] = intl.string(markAsDismissed(1236).t.Y0PTc0);
+  const items = [callback(markAsDismissed(4185).Text, obj1), callback(markAsDismissed(1297).Spacer, { size: 12 }), , , ];
+  const obj2 = { variant: "text-sm/normal", color: "text-default", children: null };
+  const intl2 = markAsDismissed(1236).intl;
+  obj2[2] = intl2.string(markAsDismissed(1236).t["YSI/1/"]);
+  items[2] = callback(markAsDismissed(4185).Text, obj2);
+  items[3] = callback(markAsDismissed(1297).Spacer, { size: 48 });
+  const obj3 = { text: null, pillStyle: null, onPress: null, grow: true };
+  const intl3 = markAsDismissed(1236).intl;
+  obj3[0] = intl3.string(markAsDismissed(1236).t.MhldXX);
+  obj3[1] = tmp.button;
+  obj3[2] = function onPress() {
     return markAsDismissed(outer1_4.UNKNOWN);
   };
-  obj3.grow = true;
-  items[4] = callback(markAsDismissed(4579).BaseTextButton, obj3);
-  obj.children = items;
-  obj.children = callback2(markAsDismissed(5223).BottomSheetScrollView, obj);
-  obj.children = callback(View, obj);
-  return callback(markAsDismissed(5221).BottomSheet, obj);
+  items[4] = callback(markAsDismissed(4601).BaseTextButton, obj3);
+  obj[1] = items;
+  obj[1] = callback2(markAsDismissed(5245).BottomSheetScrollView, obj);
+  obj[2] = callback(View, obj);
+  return callback(markAsDismissed(5243).BottomSheet, obj);
 };

@@ -1,88 +1,9 @@
-// Module ID: 689
-// Function ID: 8483
-// Name: _createForOfIteratorHelperLoose
-// Dependencies: [690, 691, 692, 693, 694, 695, 696, 783, 784, 666, 785, 2]
+// Module ID: 712
+// Function ID: 713
+// Name: Themes
+// Dependencies: [713, 714, 715, 716, 717, 718, 719, 806, 807, 689, 808, 2]
 
-// Module 689 (_createForOfIteratorHelperLoose)
-function _createForOfIteratorHelperLoose(iterable) {
-  let closure_0 = iterable;
-  iterable = "undefined" !== typeof Symbol;
-  if (iterable) {
-    const _Symbol = Symbol;
-    iterable = iterable[Symbol.iterator];
-  }
-  if (!iterable) {
-    iterable = iterable[Symbol.iterator];
-  }
-  if (iterable) {
-    const iter = iterable.call(iterable);
-    const next = iter.next;
-    return next.bind(iter);
-  } else {
-    const _Array = Array;
-    let tmp = iterable;
-    if (!Array.isArray(iterable)) {
-      let tmp2;
-      if (iterable) {
-        if ("string" === typeof iterable) {
-          tmp2 = _arrayLikeToArray(iterable, undefined);
-        } else {
-          const toString = {}.toString;
-          const substr = toString.call(iterable).slice(8, -1);
-          let name = substr;
-          if (tmp3) {
-            name = iterable.constructor.name;
-          }
-          if ("Map" !== name) {
-            if ("Set" !== name) {
-              if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(iterable, undefined);
-              } else {
-                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
-              }
-            }
-            tmp2 = arr;
-          }
-          const _Array2 = Array;
-          arr = Array.from(iterable);
-          const callResult = toString.call(iterable);
-          tmp3 = "Object" === substr && iterable.constructor;
-        }
-      }
-      tmp = tmp2;
-      if (!tmp2) {
-        const _TypeError = TypeError;
-        const typeError = new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
-        throw typeError;
-      }
-    }
-    if (tmp) {
-      closure_0 = tmp;
-    }
-    let c1 = 0;
-    return () => {
-      if (closure_1 >= length.length) {
-        let obj = { done: true };
-      } else {
-        obj = { done: false };
-        closure_1 = tmp3 + 1;
-        obj.value = length[+closure_1];
-      }
-      return obj;
-    };
-  }
-}
-function _arrayLikeToArray(arg0, arg1) {
-  let length;
-  if (tmp) {
-    length = arg0.length;
-  }
-  const ArrayResult = Array(length);
-  for (let num = 0; num < length; num = num + 1) {
-    ArrayResult[num] = arg0[num];
-  }
-  return ArrayResult;
-}
+// Module 712 (Themes)
 const Themes = require("items")._private.Themes;
 const SemanticColors = require("_private")._private.SemanticColors;
 const SemanticColorExperiments = require("_private")._private.SemanticColorExperiments;
@@ -94,47 +15,64 @@ obj = {
   colors: require("mapValues")(SemanticColors, (arg0, arg1) => ({ [closure_7]: arg1 })),
   unsafe_rawColors: RawColors,
   shadows: require("mapValues")(Shadows, (arg0) => {
-    let closure_0 = arg0;
-    function createResolve(arg0) {
-      let closure_0 = arg0;
-      return {
-        resolve(isAndroid) {
-          return dependencyMap(dependencyMap[isAndroid.theme].nativeStyles, isAndroid.isAndroid);
-        }
-      };
-    }
+    let f67039 = arg0;
+    f67039 = (shadowOffset) => {
+      shadowOffset = undefined;
+      if (!arg1) {
+        shadowOffset = shadowOffset.shadowOffset;
+      }
+      return shadowOffset;
+    };
+    let shadowOffset = {
+      resolve(isAndroid) {
+        return f67039(f67039[isAndroid.theme].nativeStyles, isAndroid.isAndroid);
+      }
+    };
+    f67039 = (shadowColorAndroid) => arg1 ? shadowColorAndroid.shadowColorAndroid : shadowColorAndroid.shadowColor;
+    const shadowColor = {
+      resolve(isAndroid) {
+        return f67039(f67039[isAndroid.theme].nativeStyles, isAndroid.isAndroid);
+      }
+    };
+    f67039 = (shadowOpacity) => shadowOpacity.shadowOpacity;
+    f67039 = (shadowRadius) => shadowRadius.shadowRadius;
+    f67039 = (elevation) => elevation.elevation;
     return {
-      shadowOffset: createResolve((shadowOffset) => {
-        shadowOffset = undefined;
-        if (!arg1) {
-          shadowOffset = shadowOffset.shadowOffset;
+      shadowOffset,
+      shadowColor,
+      shadowOpacity: {
+        resolve(isAndroid) {
+          return f67039(f67039[isAndroid.theme].nativeStyles, isAndroid.isAndroid);
         }
-        return shadowOffset;
-      }),
-      shadowColor: createResolve((shadowColorAndroid) => arg1 ? shadowColorAndroid.shadowColorAndroid : shadowColorAndroid.shadowColor),
-      shadowOpacity: createResolve((shadowOpacity) => shadowOpacity.shadowOpacity),
-      shadowRadius: createResolve((shadowRadius) => shadowRadius.shadowRadius),
-      elevation: createResolve((elevation) => elevation.elevation)
+      },
+      shadowRadius: {
+        resolve(isAndroid) {
+          return f67039(f67039[isAndroid.theme].nativeStyles, isAndroid.isAndroid);
+        }
+      },
+      elevation: {
+        resolve(isAndroid) {
+          return f67039(f67039[isAndroid.theme].nativeStyles, isAndroid.isAndroid);
+        }
+      }
     };
   }),
   radii: require("Radius").Radius,
-  modules: require("mapValues")(require("_createForOfIteratorHelperLoose")._private.Modules, (arg0) => importDefault(696)(arg0, (arg0) => {
+  modules: require("mapValues")(require("_private")._private.Modules, (arg0) => importDefault(719)(arg0, (arg0) => {
     let closure_0 = arg0;
     return {
       resolve(arg0) {
         let density;
         let enabledExperiments;
         ({ enabledExperiments, density } = arg0);
-        const obj = {};
-        if (null == enabledExperiments) {
+        if (enabledExperiments == null) {
           enabledExperiments = [];
         }
-        obj.enabledExperiments = enabledExperiments;
-        let str = "compact";
-        if (null != density) {
-          str = density;
+        const obj = { enabledExperiments, density: null };
+        if (density == null) {
+          density = "compact";
         }
-        obj.density = str;
+        obj[1] = density;
         return closure_0.resolve(obj);
       }
     };
@@ -144,8 +82,8 @@ obj = {
 };
 obj = {
   isSemanticColor(backgroundColor) {
-    let tmp = "object" === typeof backgroundColor;
-    if (tmp) {
+    let tmp = typeof backgroundColor === "ay";
+    if (typeof backgroundColor !== "window") {
       tmp = null !== backgroundColor;
     }
     if (tmp) {
@@ -157,215 +95,186 @@ obj = {
     return BACKGROUND_BASE_LOW[closure_7];
   },
   resolveSemanticColor(theme, TEXT_FEEDBACK_CRITICAL, semanticColorContextFromThemeContext) {
-    let tmp17;
-    let tmp = theme;
-    if ("string" === typeof theme) {
-      const formatted = theme.toUpperCase();
-      if (formatted in Themes) {
-        tmp = Themes[formatted];
-      } else {
-        const _Error = Error;
-        const _HermesInternal = HermesInternal;
-        const error = new Error("Invalid theme: " + theme);
-        throw error;
+    let tmp = (function sanitizeTheme(theme) {
+      let tmp = theme;
+      if (typeof theme !== "init") {
+        const formatted = theme.toUpperCase();
+        if (formatted in table) {
+          tmp = table[formatted];
+        } else {
+          const _Error = Error;
+          const _HermesInternal = HermesInternal;
+          const error = new Error("Invalid theme: " + theme);
+          throw error;
+        }
       }
-    }
-    const category = tmp10.category;
-    const tmp12 = RawColors[SemanticColors[TEXT_FEEDBACK_CRITICAL[closure_7]][tmp].raw];
-    const opacity = tmp11.opacity;
+      return tmp;
+    })(theme);
+    const category = tmp3.category;
+    let result = RawColors[tmp4.raw];
+    let opacity = tmp4.opacity;
     let enabledExperiments;
-    if (null != semanticColorContextFromThemeContext) {
+    if (semanticColorContextFromThemeContext != null) {
       enabledExperiments = semanticColorContextFromThemeContext.enabledExperiments;
     }
-    let tmp14 = tmp12;
-    let opacity2 = opacity;
     if (null != enabledExperiments) {
-      tmp14 = tmp12;
-      opacity2 = opacity;
       if (semanticColorContextFromThemeContext.enabledExperiments.length > 0) {
-        tmp14 = tmp12;
-        opacity2 = opacity;
-        if (null != SemanticColorExperiments[TEXT_FEEDBACK_CRITICAL[closure_7]]) {
-          const tmp16 = _createForOfIteratorHelperLoose(semanticColorContextFromThemeContext.enabledExperiments);
-          const iter = tmp16();
-          let iter2 = iter;
-          tmp14 = tmp12;
-          opacity2 = opacity;
-          if (!iter.done) {
-            while (true) {
-              tmp17 = undefined;
-              if (null != tmp59) {
-                let tmp18 = tmp59[iter2.value];
-                let tmp19 = tmp18;
-                if (null != tmp18) {
-                  tmp17 = tmp18[tmp];
-                  let tmp20 = tmp18;
-                }
-              }
-              if (null != tmp17) {
-                break;
-              } else {
-                let iter3 = tmp16();
-                iter2 = iter3;
-                tmp14 = tmp12;
-                opacity2 = opacity;
+        if (null != SemanticColorExperiments[TEXT_FEEDBACK_CRITICAL[tmp2]]) {
+          enabledExperiments = semanticColorContextFromThemeContext.enabledExperiments;
+          for (const item10035 of enabledExperiments) {
+            let tmp12;
+            if (tmp8 != null) {
+              let tmp13 = item10035;
+              let tmp14 = tmp8[tmp11];
+              if (tmp14 != null) {
+                tmp12 = tmp14[tmp];
               }
             }
-            tmp14 = RawColors[tmp17.raw];
-            opacity2 = tmp17.opacity;
+            let tmp15 = tmp12;
+            if (null != tmp12) {
+              let tmp16 = RawColors;
+              let tmp17 = RawColors;
+              result = RawColors[tmp12.raw];
+              opacity = tmp12.opacity;
+              let tmp18 = obj;
+              obj.return();
+              break;
+            }
+            break;
           }
         }
       }
     }
-    if (null != semanticColorContextFromThemeContext) {
-      if (semanticColorContextFromThemeContext.isProfileTheme) {
-        if ("userProfileThemes" in tmp10) {
-          theme = undefined;
-          if (null != semanticColorContextFromThemeContext) {
-            let gradient = semanticColorContextFromThemeContext.gradient;
-            if (null != gradient) {
-              theme = gradient.theme;
-            }
-          }
-          let tmp39 = null;
-          if (null != theme) {
-            tmp39 = tmp10.userProfileThemes[theme];
-          }
-          let tmp23 = tmp14;
-          let opacity3 = opacity2;
-          if (null != tmp39) {
-            tmp23 = RawColors[tmp39.raw];
-            opacity3 = tmp39.opacity;
+    let isProfileTheme;
+    if (semanticColorContextFromThemeContext != null) {
+      isProfileTheme = semanticColorContextFromThemeContext.isProfileTheme;
+    }
+    if (isProfileTheme) {
+      if ("userProfileThemes" in tmp3) {
+        theme = undefined;
+        if (semanticColorContextFromThemeContext != null) {
+          let gradient = semanticColorContextFromThemeContext.gradient;
+          if (gradient != null) {
+            theme = gradient.theme;
           }
         }
-        let contrast;
-        if (null != semanticColorContextFromThemeContext) {
-          contrast = semanticColorContextFromThemeContext.contrast;
+        let tmp41 = null;
+        if (null != theme) {
+          tmp41 = tmp3.userProfileThemes[theme];
         }
-        let num3 = 1;
-        if (null != contrast) {
-          num3 = contrast;
+        if (null != tmp41) {
+          result = RawColors[tmp41.raw];
+          opacity = tmp41.opacity;
         }
-        let saturation;
-        if (null != semanticColorContextFromThemeContext) {
-          saturation = semanticColorContextFromThemeContext.saturation;
-        }
-        let num4 = 1;
-        if (null != saturation) {
-          num4 = saturation;
-        }
-        let result = tmp23;
-        if (num4 < 1) {
-          result = require(785) /* interpolate */.transformColorForReducedSaturation(tmp23, category, num4);
-          const obj4 = require(785) /* interpolate */;
-        }
-        let result1 = result;
-        if (1 !== num3) {
-          const obj5 = require(785) /* interpolate */;
-          result1 = obj5.transformColorContrast(result, category, tmp, num3);
-        }
-        let hexResult = result1;
-        if (1 !== opacity3) {
-          const obj6 = importDefault(666)(result1);
-          hexResult = importDefault(666)(result1).alpha(opacity3).hex();
-          const alphaResult = importDefault(666)(result1).alpha(opacity3);
-        }
-        return hexResult;
       }
+      let num2;
+      if (semanticColorContextFromThemeContext != null) {
+        num2 = semanticColorContextFromThemeContext.contrast;
+      }
+      if (num2 == null) {
+        num2 = 1;
+      }
+      let num3;
+      if (semanticColorContextFromThemeContext != null) {
+        num3 = semanticColorContextFromThemeContext.saturation;
+      }
+      if (num3 == null) {
+        num3 = 1;
+      }
+      if (num3 < 1) {
+        result = require(808) /* interpolate */.transformColorForReducedSaturation(result, category, num3);
+        const obj6 = require(808) /* interpolate */;
+      }
+      if (1 !== num2) {
+        const obj7 = require(808) /* interpolate */;
+        result = obj7.transformColorContrast(result, category, tmp, num2);
+      }
+      if (1 === opacity) {
+        let hexResult = result;
+      } else {
+        const obj8 = importDefault(689)(result);
+        hexResult = importDefault(689)(result).alpha(opacity).hex();
+        const alphaResult = importDefault(689)(result).alpha(opacity);
+      }
+      return hexResult;
     }
     gradient = undefined;
-    if (null != semanticColorContextFromThemeContext) {
+    if (semanticColorContextFromThemeContext != null) {
       gradient = semanticColorContextFromThemeContext.gradient;
     }
-    tmp23 = tmp14;
-    opacity3 = opacity2;
     if (null != gradient) {
       let gradient1 = null;
-      if ("gradient" in tmp10) {
-        gradient1 = tmp10.gradient;
+      if ("gradient" in tmp3) {
+        gradient1 = tmp3.gradient;
       }
+      let tmp22 = gradient1;
       let enabledExperiments1;
-      if (null != semanticColorContextFromThemeContext) {
+      if (semanticColorContextFromThemeContext != null) {
         enabledExperiments1 = semanticColorContextFromThemeContext.enabledExperiments;
       }
-      let tmp26 = gradient1;
       if (null != enabledExperiments1) {
-        tmp26 = gradient1;
         if (semanticColorContextFromThemeContext.enabledExperiments.length > 0) {
-          tmp26 = gradient1;
           if (null != SemanticColorExperiments[TEXT_FEEDBACK_CRITICAL[closure_7]]) {
-            const tmp28 = _createForOfIteratorHelperLoose(semanticColorContextFromThemeContext.enabledExperiments);
-            const iter4 = tmp28();
-            let iter5 = iter4;
-            tmp26 = gradient1;
-            if (!iter4.done) {
-              while (true) {
-                let gradient2;
-                if (null != tmp62) {
-                  let tmp30 = tmp62[iter5.value];
-                  let tmp31 = tmp30;
-                  if (null != tmp30) {
-                    gradient2 = tmp30.gradient;
-                    let tmp32 = tmp30;
-                  }
-                }
-                tmp26 = gradient2;
-                if (null != gradient2) {
-                  break;
-                } else {
-                  let iter6 = tmp28();
-                  iter5 = iter6;
-                  tmp26 = gradient1;
-                  if (iter6.done) {
-                    break;
-                  }
+            const enabledExperiments2 = semanticColorContextFromThemeContext.enabledExperiments;
+            for (const item10067 of enabledExperiments2) {
+              let gradient2;
+              if (tmp26 != null) {
+                let tmp31 = item10067;
+                let tmp32 = tmp26[tmp29];
+                if (tmp32 != null) {
+                  gradient2 = tmp32.gradient;
                 }
               }
+              let tmp33 = gradient2;
+              if (null != gradient2) {
+                tmp22 = gradient2;
+                let tmp34 = obj2;
+                obj2.return();
+                break;
+              }
+              break;
             }
           }
         }
       }
-      let tmp33;
-      if (null != tmp26) {
+      let tmp36;
+      if (tmp22 != null) {
         let theme1;
-        if (null != semanticColorContextFromThemeContext) {
+        if (semanticColorContextFromThemeContext != null) {
           theme1 = semanticColorContextFromThemeContext.gradient.theme;
         }
-        tmp33 = tmp26[theme1];
+        tmp36 = tmp22[theme1];
       }
-      tmp23 = tmp14;
-      opacity3 = opacity2;
-      if (null != tmp33) {
-        if (tmp33.color in RawColors) {
-          let tmp35 = RawColors[tmp33.color];
-        } else if (null != semanticColorContextFromThemeContext) {
-          tmp35 = semanticColorContextFromThemeContext.gradient.colors[tmp33.color];
+      if (null != tmp36) {
+        if (tmp36.color in RawColors) {
+          let tmp38 = tmp62[tmp36.color];
+        } else if (semanticColorContextFromThemeContext != null) {
+          tmp38 = semanticColorContextFromThemeContext.gradient.colors[tmp36.color];
         }
-        const tmp65Result = importDefault(666)(tmp35);
-        let result2 = tmp65Result;
-        if ("saturation" in tmp33) {
-          result2 = tmp65Result.set("hsl.s", tmp33.saturation);
+        const tmp61Result = importDefault(689)(tmp38);
+        let result1 = tmp61Result;
+        if ("saturation" in tmp36) {
+          result1 = tmp61Result.set("hsl.s", tmp36.saturation);
         }
-        let result3 = result2;
-        if ("lightness" in tmp33) {
-          result3 = result2.set("hsl.l", tmp33.lightness);
+        let result2 = result1;
+        if ("lightness" in tmp36) {
+          result2 = result1.set("hsl.l", tmp36.lightness);
         }
+        result = result2.hex();
         let num = 1;
-        const tmp65 = importDefault(666);
-        if ("opacity" in tmp33) {
-          num = tmp33.opacity;
+        if ("opacity" in tmp36) {
+          num = tmp36.opacity;
         }
-        opacity3 = num;
-        tmp23 = result3.hex();
-        const hexResult1 = result3.hex();
+        opacity = num;
+        const tmp61 = importDefault(689);
       }
     }
   },
-  adjustColorSaturation(arg0, saturation, generic) {
-    return require(785) /* interpolate */.transformColorForReducedSaturation(arg0, generic, saturation);
+  adjustColorSaturation(result, saturation, generic) {
+    return require(808) /* interpolate */.transformColorForReducedSaturation(result, generic, saturation);
   },
   adjustColorContrast(result, contrast, category, theme) {
-    return require(785) /* interpolate */.transformColorContrast(result, category, theme, contrast);
+    return require(808) /* interpolate */.transformColorContrast(result, category, theme, contrast);
   }
 };
 let result = require("_private").fileFinishedImporting("../discord_common/js/packages/tokens/native.tsx");

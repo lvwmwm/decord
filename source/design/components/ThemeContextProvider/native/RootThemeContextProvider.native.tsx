@@ -1,11 +1,11 @@
-// Module ID: 10842
-// Function ID: 83911
+// Module ID: 10866
+// Function ID: 10867
 // Name: RootThemeContextProvider
-// Dependencies: [31, 482, 33, 3877, 2]
+// Dependencies: [19, 505, 21, 3901, 2]
 // Exports: DisableCustomTheme, RootThemeContextProvider
 
-// Module 10842 (RootThemeContextProvider)
-import result from "result";
+// Module 10866 (RootThemeContextProvider)
+import noop from "noop";
 import { ThemeTypes } from "sum";
 import { jsx } from "jsxProd";
 
@@ -63,18 +63,18 @@ export const RootThemeContextProvider = function RootThemeContextProvider(childr
   return num(DARK(primaryColor[3]).ThemeContext.Provider, { value, children: children.children });
 };
 export const DisableCustomTheme = function DisableCustomTheme(children) {
-  let obj = themeContext(3877);
+  let obj = themeContext(3901);
   themeContext = obj.useThemeContext();
   const items = [themeContext];
   const memo = React.useMemo(() => {
     let obj = themeContext(outer1_1[3]);
     obj = {};
     const merged = Object.assign(themeContext);
-    obj["primaryColor"] = null;
-    obj["secondaryColor"] = null;
-    obj["gradient"] = null;
+    obj.primaryColor = null;
+    obj.secondaryColor = null;
+    obj.gradient = null;
     return obj.createThemedContext(obj);
   }, items);
   obj = { value: memo, children: children.children };
-  return jsx(themeContext(3877).ThemeContext.Provider, { value: memo, children: children.children });
+  return jsx(themeContext(3901).ThemeContext.Provider, { value: memo, children: children.children });
 };

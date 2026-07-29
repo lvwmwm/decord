@@ -1,64 +1,66 @@
-// Module ID: 11696
-// Function ID: 90576
-// Name: useNativeProvisionalAccountExplainerText
-// Dependencies: [31, 27, 33, 4165, 689, 11697, 11698, 5200, 4161, 1212, 6709, 5544, 2]
+// Module ID: 11720
+// Function ID: 11721
+// Name: ChatProvisionalAccountExplainerCard
+// Dependencies: [19, 17, 21, 4189, 712, 11721, 11722, 5222, 4185, 1236, 6730, 5562, 2]
 // Exports: ChatProvisionalAccountExplainerCard, UserProfileProvisionalAccountExplainerCard
 
-// Module 11696 (useNativeProvisionalAccountExplainerText)
-import result from "result";
+// Module 11720 (ChatProvisionalAccountExplainerCard)
+import noop from "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_5;
+let c5;
 let closure_6;
 const require = arg1;
-function useNativeProvisionalAccountExplainerText(userId) {
-  const iconSize = userId.iconSize;
-  const textVariant = userId.textVariant;
-  const items = [iconSize, textVariant];
-  const renderApplicationName = React.useCallback((application) => outer1_5(textVariant(outer1_2[5]), { application, textVariant, iconSize }, application.id), items);
-  return iconSize(11698).useProvisionalAccountExplanationText({ userId: userId.userId, renderApplicationName });
-}
-({ jsx: closure_5, jsxs: closure_6 } = jsxProd);
-let closure_7 = _createForOfIteratorHelperLoose.createStyles(() => {
-  let obj = {};
-  obj = { backgroundColor: importDefault(689).colors.BACKGROUND_MOD_MUTED, gap: importDefault(689).space.PX_8 };
-  obj.chatContainer = obj;
-  obj = { flexDirection: "row", alignItems: "center", gap: importDefault(689).space.PX_4 };
-  obj.header = obj;
+({ jsx: c5, jsxs: closure_6 } = jsxProd);
+let closure_7 = createCacheKey.createStyles(() => {
+  let obj = { chatContainer: null, header: null };
+  obj = { backgroundColor: importDefault(712).colors.BACKGROUND_MOD_MUTED, gap: importDefault(712).space.PX_8 };
+  obj[0] = obj;
+  obj = { flexDirection: "row", alignItems: "center", gap: importDefault(712).space.PX_4 };
+  obj[1] = obj;
   return obj;
 });
 const result = require("jsxProd").fileFinishedImporting("modules/provisional_accounts/native/ProvisionalAccountExplainer.tsx");
 
-export const ChatProvisionalAccountExplainerCard = function ChatProvisionalAccountExplainerCard(arg0) {
-  let iconSize;
+export const ChatProvisionalAccountExplainerCard = function ChatProvisionalAccountExplainerCard(iconSize) {
   let style;
   let userId;
-  ({ style, userId, iconSize } = arg0);
+  iconSize = iconSize.iconSize;
+  ({ style, userId } = iconSize);
   const tmp = callback3();
-  let obj = { style: items };
-  items = [tmp.chatContainer, style];
-  obj = { style: tmp.header };
-  obj = { variant: "text-sm/semibold", color: "text-default" };
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj.children = intl.string(require(1212) /* getSystemLocale */.t.Iyka0U);
-  const items1 = [callback(require(4161) /* Text */.Text, obj), callback(require(6709) /* CircleErrorIcon */.CircleErrorIcon, { size: "xs", color: "text-default" })];
-  obj.children = items1;
-  const items2 = [callback2(View, obj), ];
-  const obj1 = { variant: "text-sm/normal", color: "text-default", children: useNativeProvisionalAccountExplainerText({ userId, iconSize, textVariant: "text-sm/semibold" }) };
-  items2[1] = callback(require(4161) /* Text */.Text, obj1);
-  obj.children = items2;
-  return callback2(require(5200) /* getCardBackgroundToken */.Card, obj);
+  let c1 = "text-sm/semibold";
+  const items = [iconSize, "text-sm/semibold"];
+  const callback = React.useCallback((application) => outer1_5(textmdsemibold(outer1_2[5]), { application, textVariant: textmdsemibold, iconSize }, application.id), items);
+  let obj = iconSize(11722);
+  const provisionalAccountExplanationText = obj.useProvisionalAccountExplanationText({ userId, renderApplicationName: callback });
+  obj = { style: items1, children: null };
+  items1 = [tmp.chatContainer, style];
+  obj = { style: tmp.header, children: null };
+  const obj1 = { variant: "text-sm/semibold", color: "text-default", children: null };
+  const intl = iconSize(1236).intl;
+  obj1[2] = intl.string(iconSize(1236).t.Iyka0U);
+  const items2 = [callback(iconSize(4185).Text, obj1), callback(iconSize(6730).CircleErrorIcon, { size: "xs", color: "text-default" })];
+  obj[1] = items2;
+  const items3 = [callback2(View, obj), callback(iconSize(4185).Text, { variant: "text-sm/normal", color: "text-default", children: provisionalAccountExplanationText })];
+  obj[1] = items3;
+  return callback2(iconSize(5222).Card, obj);
 };
-export const UserProfileProvisionalAccountExplainerCard = function UserProfileProvisionalAccountExplainerCard(userId) {
-  let obj = { userId: userId.userId, iconSize: userId.iconSize, textVariant: "text-md/semibold" };
-  obj = { style: userId.style };
-  const tmp = useNativeProvisionalAccountExplainerText(obj);
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj.title = intl.string(require(1212) /* getSystemLocale */.t.Iyka0U);
-  obj.titleIcon = callback(require(6709) /* CircleErrorIcon */.CircleErrorIcon, { size: "xs", color: "text-default" });
-  obj = { variant: "text-md/normal", color: "text-default", children: tmp };
-  obj.children = callback(require(4161) /* Text */.Text, obj);
-  return callback(importDefault(5544), obj);
+export const UserProfileProvisionalAccountExplainerCard = function UserProfileProvisionalAccountExplainerCard(iconSize) {
+  let style;
+  let userId;
+  iconSize = iconSize.iconSize;
+  const importDefault = "text-md/semibold";
+  const items = [iconSize, "text-md/semibold"];
+  ({ style, userId } = iconSize);
+  const callback = React.useCallback((application) => outer1_5(textmdsemibold(outer1_2[5]), { application, textVariant: textmdsemibold, iconSize }, application.id), items);
+  let obj = iconSize(11722);
+  const provisionalAccountExplanationText = obj.useProvisionalAccountExplanationText({ userId, renderApplicationName: callback });
+  obj = { style, title: null, titleIcon: null, children: null };
+  const intl = iconSize(1236).intl;
+  obj[1] = intl.string(iconSize(1236).t.Iyka0U);
+  obj[2] = callback(iconSize(6730).CircleErrorIcon, { size: "xs", color: "text-default" });
+  obj[3] = callback(iconSize(4185).Text, { variant: "text-md/normal", color: "text-default", children: provisionalAccountExplanationText });
+  return callback(importDefault(5562), obj);
 };

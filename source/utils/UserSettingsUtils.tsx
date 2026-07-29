@@ -1,56 +1,56 @@
-// Module ID: 6485
-// Function ID: 57994
+// Module ID: 6506
+// Function ID: 6507
 // Name: getSanitizedRestrictedGuilds
-// Dependencies: [4504, 1838, 653, 3838, 4359, 6486, 1212, 1207, 2]
+// Dependencies: [4527, 1862, 676, 3862, 4384, 6507, 1236, 1231, 2]
 // Exports: computeFlags, generateNonSpamRetrainingOptInSettingOptions, getSanitizedActivityJoiningRestrictedGuilds, getSanitizedActivityRestrictedGuilds, getSanitizedMessageRequestRestrictedGuilds, getSanitizedRestrictedGuilds, shakeUserSettings, trackUserSettingsPaneViewed
 
-// Module 6485 (getSanitizedRestrictedGuilds)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+// Module 6506 (getSanitizedRestrictedGuilds)
+import handleConnectionOpen from "handleConnectionOpen";
+import createGuildRecordFromRust from "createGuildRecordFromRust";
 import ME from "ME";
 
-let closure_5;
+let c5;
 let closure_6;
-let closure_7;
-let closure_8;
+let error;
+let metroImportAll;
 const require = arg1;
-({ AnalyticEvents: closure_5, FriendSourceFlags: closure_6, AllFriendSourceFlags: closure_7, ComponentActions: closure_8 } = ME);
+({ AnalyticEvents: c5, FriendSourceFlags: closure_6, AllFriendSourceFlags: error, ComponentActions: metroImportAll } = ME);
 let obj = { UNDECIDED: 0, [0]: "UNDECIDED", OPTIN: 1, [1]: "OPTIN", OPTOUT: 2, [2]: "OPTOUT" };
 const result = require("ME").fileFinishedImporting("utils/UserSettingsUtils.tsx");
 
 export const getSanitizedRestrictedGuilds = function getSanitizedRestrictedGuilds() {
-  const RestrictedGuildIds = require(3838) /* explicitContentFromProto */.RestrictedGuildIds;
+  const RestrictedGuildIds = require(3862) /* explicitContentFromProto */.RestrictedGuildIds;
   const setting = RestrictedGuildIds.getSetting();
   let found = setting;
-  if (0 === _isNativeReflectConstruct.totalUnavailableGuilds) {
-    found = setting.filter((guildId) => null != outer1_4.getGuild(guildId));
+  if (0 === handleConnectionOpen.totalUnavailableGuilds) {
+    found = setting.filter((arg0) => null != guild.getGuild(arg0));
   }
   return new Set(found);
 };
 export const getSanitizedMessageRequestRestrictedGuilds = function getSanitizedMessageRequestRestrictedGuilds() {
-  const MessageRequestRestrictedGuildIds = require(3838) /* explicitContentFromProto */.MessageRequestRestrictedGuildIds;
+  const MessageRequestRestrictedGuildIds = require(3862) /* explicitContentFromProto */.MessageRequestRestrictedGuildIds;
   const setting = MessageRequestRestrictedGuildIds.getSetting();
   let found = setting;
-  if (0 === _isNativeReflectConstruct.totalUnavailableGuilds) {
-    found = setting.filter((guildId) => null != outer1_4.getGuild(guildId));
+  if (0 === handleConnectionOpen.totalUnavailableGuilds) {
+    found = setting.filter((arg0) => null != guild.getGuild(arg0));
   }
   return new Set(found);
 };
 export const getSanitizedActivityRestrictedGuilds = function getSanitizedActivityRestrictedGuilds() {
-  const ActivityRestrictedGuilds = require(3838) /* explicitContentFromProto */.ActivityRestrictedGuilds;
+  const ActivityRestrictedGuilds = require(3862) /* explicitContentFromProto */.ActivityRestrictedGuilds;
   const setting = ActivityRestrictedGuilds.getSetting();
   let found = setting;
-  if (0 === _isNativeReflectConstruct.totalUnavailableGuilds) {
-    found = setting.filter((guildId) => null != outer1_4.getGuild(guildId));
+  if (0 === handleConnectionOpen.totalUnavailableGuilds) {
+    found = setting.filter((arg0) => null != guild.getGuild(arg0));
   }
   return new Set(found);
 };
 export const getSanitizedActivityJoiningRestrictedGuilds = function getSanitizedActivityJoiningRestrictedGuilds() {
-  const ActivityJoiningRestrictedGuilds = require(3838) /* explicitContentFromProto */.ActivityJoiningRestrictedGuilds;
+  const ActivityJoiningRestrictedGuilds = require(3862) /* explicitContentFromProto */.ActivityJoiningRestrictedGuilds;
   const setting = ActivityJoiningRestrictedGuilds.getSetting();
   let found = setting;
-  if (0 === _isNativeReflectConstruct.totalUnavailableGuilds) {
-    found = setting.filter((guildId) => null != outer1_4.getGuild(guildId));
+  if (0 === handleConnectionOpen.totalUnavailableGuilds) {
+    found = setting.filter((arg0) => null != guild.getGuild(arg0));
   }
   return new Set(found);
 };
@@ -58,7 +58,9 @@ export const computeFlags = function computeFlags(setting) {
   if ((setting & closure_7) === closure_7) {
     let obj = { all: true, mutualFriends: true, mutualGuilds: true };
   } else {
-    obj = { all: false, mutualFriends: (setting & constants2.MUTUAL_FRIENDS) === constants2.MUTUAL_FRIENDS, mutualGuilds: (setting & constants2.MUTUAL_GUILDS) === constants2.MUTUAL_GUILDS };
+    obj = { all: false, mutualFriends: null, mutualGuilds: null };
+    obj[1] = (setting & constants2.MUTUAL_FRIENDS) === constants2.MUTUAL_FRIENDS;
+    obj[2] = (setting & constants2.MUTUAL_GUILDS) === constants2.MUTUAL_GUILDS;
   }
   return obj;
 };
@@ -70,37 +72,38 @@ export const trackUserSettingsPaneViewed = function trackUserSettingsPaneViewed(
   let source;
   let subsection;
   ({ destinationPane, originPane, source, subsection, locationStack, applicationId } = arg0);
-  let obj = importDefault(4359);
-  obj = { settings_type: "user", origin_pane: originPane, destination_pane: destinationPane, location_stack: locationStack, source, subsection, application_id: applicationId, search_session_id: importDefault(6486).getSearchSessionId() };
+  let obj = importDefault(4384);
+  obj = { settings_type: "user", origin_pane: originPane, destination_pane: destinationPane, location_stack: locationStack, source, subsection, application_id: applicationId, search_session_id: null };
+  obj[7] = importDefault(6507).getSearchSessionId();
   obj.trackWithMetadata(constants.SETTINGS_PANE_VIEWED, obj);
 };
 export const NonSpamRetrainingOptInOptions = obj;
 export const NonSpamRetrainingOptInOptionsToValue = { [obj.UNDECIDED]: undefined, [obj.OPTIN]: true, [obj.OPTOUT]: false };
 export const generateNonSpamRetrainingOptInSettingOptions = function generateNonSpamRetrainingOptInSettingOptions() {
-  let obj = {};
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj.name = intl.string(require(1212) /* getSystemLocale */.t["/yLMRQ"]);
-  const intl2 = require(1212) /* getSystemLocale */.intl;
-  obj.desc = intl2.string(require(1212) /* getSystemLocale */.t["3fzkPq"]);
-  obj.value = obj.OPTIN;
+  let obj = { name: null, desc: null, value: null };
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj[0] = intl.string(require(1236) /* getSystemLocale */.t["/yLMRQ"]);
+  const intl2 = require(1236) /* getSystemLocale */.intl;
+  obj[1] = intl2.string(require(1236) /* getSystemLocale */.t["3fzkPq"]);
+  obj[2] = obj.OPTIN;
   const items = [obj, , ];
-  obj = {};
-  const intl3 = require(1212) /* getSystemLocale */.intl;
-  obj.name = intl3.string(require(1212) /* getSystemLocale */.t["21fP2b"]);
-  const intl4 = require(1212) /* getSystemLocale */.intl;
-  obj.desc = intl4.string(require(1212) /* getSystemLocale */.t.ggJ9jR);
-  obj.value = obj.OPTOUT;
+  obj = { name: null, desc: null, value: null };
+  const intl3 = require(1236) /* getSystemLocale */.intl;
+  obj[0] = intl3.string(require(1236) /* getSystemLocale */.t["21fP2b"]);
+  const intl4 = require(1236) /* getSystemLocale */.intl;
+  obj[1] = intl4.string(require(1236) /* getSystemLocale */.t.ggJ9jR);
+  obj[2] = obj.OPTOUT;
   items[1] = obj;
-  obj = {};
-  const intl5 = require(1212) /* getSystemLocale */.intl;
-  obj.name = intl5.string(require(1212) /* getSystemLocale */.t.OWIo8w);
-  const intl6 = require(1212) /* getSystemLocale */.intl;
-  obj.desc = intl6.string(require(1212) /* getSystemLocale */.t.HqYXpw);
-  obj.value = obj.UNDECIDED;
+  obj = { name: null, desc: null, value: null };
+  const intl5 = require(1236) /* getSystemLocale */.intl;
+  obj[0] = intl5.string(require(1236) /* getSystemLocale */.t.OWIo8w);
+  const intl6 = require(1236) /* getSystemLocale */.intl;
+  obj[1] = intl6.string(require(1236) /* getSystemLocale */.t.HqYXpw);
+  obj[2] = obj.UNDECIDED;
   items[2] = obj;
   return items;
 };
 export const shakeUserSettings = function shakeUserSettings(arg0) {
-  const ComponentDispatch = require(1207) /* reportDevtoolsEvent */.ComponentDispatch;
+  const ComponentDispatch = require(1231) /* ComponentDispatcher */.ComponentDispatch;
   ComponentDispatch.dispatch(constants3.SHAKE_SETTINGS_MODAL, arg0);
 };

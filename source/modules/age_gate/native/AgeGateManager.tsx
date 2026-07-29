@@ -1,39 +1,136 @@
-// Module ID: 16088
-// Function ID: 124232
-// Name: _isNativeReflectConstruct
-// Dependencies: [5, 6, 7, 15, 17, 18, 1348, 1907, 3982, 1197, 653, 4380, 4372, 16089, 1935, 668, 5112, 2]
+// Module ID: 16123
+// Function ID: 16124
+// Name: handlePostConnectionOpen
+// Dependencies: [5, 1372, 1931, 4006, 1221, 676, 5134, 4403, 4395, 16124, 1959, 691, 2]
 
-// Module 16088 (_isNativeReflectConstruct)
-import _inherits from "_inherits";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_5 from "_isNativeReflectConstruct";
-import keys from "keys";
-import set from "set";
-import closure_8 from "_inherits";
-import closure_9 from "_isNativeReflectConstruct";
-import closure_10 from "_isNativeReflectConstruct";
-import closure_11 from "_isNativeReflectConstruct";
+// Module 16123 (handlePostConnectionOpen)
+import closure_3 from "ME";
+import ensureGuildLoaded from "ensureGuildLoaded";
+import handleConnectionOpen from "handleConnectionOpen";
+import closure_6 from "handleConnectionOpen";
 import result from "result";
 import ME from "ME";
-import tmp4 from "AutomaticLifecycleManager";
+import "initialize";
 
-let closure_12;
-let closure_13;
-let closure_14;
-let closure_15;
+let c10;
+let c9;
+let error;
+let metroImportAll;
 const require = arg1;
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
+({ EXISTING_USER_AGE_GATE_MODAL_KEY: error, AgeGateSource: metroImportAll } = result);
+({ ChannelTypes: c9, GuildNSFWContentLevel: c10 } = ME);
+class AgeGateManager extends tmp4 {
+  constructor() {
+    applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
+    applyArgumentsResult.actions = { POST_CONNECTION_OPEN: applyArgumentsResult.handlePostConnectionOpen, CHANNEL_SELECT: applyArgumentsResult.handleChannelSelect, AGE_GATE_MODAL_OPEN: applyArgumentsResult.handleAgeGateModalOpen, AGE_GATE_MODAL_CLOSE: applyArgumentsResult.handleAgeGateModalClose, GUILD_UPDATE: applyArgumentsResult.handleGuildUpdate };
+    return applyArgumentsResult;
   }
-  const result = _isNativeReflectConstruct();
 }
-({ EXISTING_USER_AGE_GATE_MODAL_KEY: closure_12, AgeGateSource: closure_13 } = result);
-({ ChannelTypes: closure_14, GuildNSFWContentLevel: closure_15 } = ME);
-tmp4 = new tmp4();
-result = require("_defineProperties").fileFinishedImporting("modules/age_gate/native/AgeGateManager.tsx");
+const prototype = AgeGateManager.prototype;
+prototype["handlePostConnectionOpen"] = function handlePostConnectionOpen() {
+  const guildId = store.getGuildId();
+  channelId = channelId.getChannelId();
+  require(4403) /* shouldShowAgeGateForVoiceChannel */.maybeShowAgeGate(guildId, channelId);
+};
+prototype["handleChannelSelect"] = function handleChannelSelect(arg0) {
+  let channelId;
+  let guildId;
+  ({ guildId, channelId } = arg0);
+  channel = channel.getChannel(channelId);
+  let tmp2 = null != guildId;
+  if (tmp2) {
+    let type;
+    if (channel != null) {
+      type = channel.type;
+    }
+    tmp2 = type !== constants.GUILD_VOICE;
+  }
+  if (tmp2) {
+    require(4403) /* shouldShowAgeGateForVoiceChannel */.maybeShowAgeGate(guildId, channelId);
+    const obj = require(4403) /* shouldShowAgeGateForVoiceChannel */;
+  }
+};
+prototype["handleAgeGateModalOpen"] = function handleAgeGateModalOpen(source) {
+  source = source.source;
+  importDefault(4395).pushLazy(callback(function*() {
+    if (c3 === 2) {
+      c3 = 3;
+      HermesBuiltin.throwTypeError();
+    } else if (tmp4 === 3) {
+      if (arg0 === 1) {
+        throw arg1;
+      } else if (arg0 === 2) {
+        let obj = { value: null, done: true };
+        obj[0] = arg1;
+        return obj;
+      } else {
+        return { value: "HermesInternal", done: null };
+      }
+    } else {
+      try {
+        c3 = 2;
+        if (0 === paths) {
+          if (arg0 === 1) {
+            c3 = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            c3 = 3;
+            obj = { value: null, done: true };
+            obj[0] = arg1;
+            return obj;
+          } else {
+            let closure_1 = tmp5;
+            let closure_0 = tmp2;
+            closure_0 = undefined;
+            paths = 1;
+            c3 = 1;
+            const obj1 = { value: null, done: false };
+            obj1[0] = outer1_0(paths[10])(paths[9], paths.paths);
+            return obj1;
+          }
+        } else if (arg0 === 1) {
+          c3 = 3;
+          throw arg1;
+        } else if (arg0 === 2) {
+          c3 = 3;
+          const obj2 = { value: null, done: true };
+          obj2[0] = arg1;
+          return obj2;
+        } else {
+          closure_0 = arg1.default;
+          if (closure_0 === outer1_8.AUTH) {
+            obj = { animation: null };
+            obj[0] = outer1_0(paths[11]).ModalAnimation.SLIDE_IN_OUT;
+            outer1_0.modalConfig = obj;
+          }
+          c3 = 3;
+          const obj3 = { value: null, done: true };
+          obj3[0] = outer1_0;
+          return obj3;
+        }
+      } catch (tmp16) {
+        c3 = tmp;
+        throw tmp16;
+      }
+    }
+  }), { source }, closure_7);
+};
+prototype["handleAgeGateModalClose"] = function handleAgeGateModalClose() {
+  importDefault(4395).popWithKey(closure_7);
+};
+prototype["handleGuildUpdate"] = function handleGuildUpdate(guild) {
+  guild = guild.guild;
+  const guildId = store.getGuildId();
+  let tmp2 = null != guildId && guild.id === guildId;
+  if (tmp2) {
+    tmp2 = guild.owner_configured_content_level === constants2.AGE_RESTRICTED;
+  }
+  if (tmp2) {
+    require(4403) /* shouldShowAgeGateForVoiceChannel */.maybeShowAgeGate(guild.id, null);
+    const obj = require(4403) /* shouldShowAgeGateForVoiceChannel */;
+  }
+};
+const ageGateManager = new AgeGateManager();
+result = require("handleConnectionOpen").fileFinishedImporting("modules/age_gate/native/AgeGateManager.tsx");
 
-export default tmp4;
+export default ageGateManager;

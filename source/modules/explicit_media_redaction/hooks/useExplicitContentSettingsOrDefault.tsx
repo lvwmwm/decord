@@ -1,96 +1,80 @@
-// Module ID: 13830
-// Function ID: 105889
+// Module ID: 13851
+// Function ID: 13852
 // Name: useExplicitContentSettingOrDefault
-// Dependencies: [1316, 624, 5863, 5865, 2]
+// Dependencies: [1340, 647, 5881, 5883, 2]
 // Exports: useExplicitContentSettingOrDefault, useGoreContentSettingOrDefault
 
-// Module 13830 (useExplicitContentSettingOrDefault)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 13851 (useExplicitContentSettingOrDefault)
+import handleConnectionClosedOrResumed from "handleConnectionClosedOrResumed";
 
 const require = arg1;
 const result = require("resolveExplicitContentSettingWithDefaults").fileFinishedImporting("modules/explicit_media_redaction/hooks/useExplicitContentSettingsOrDefault.tsx");
 
 export const useExplicitContentSettingOrDefault = function useExplicitContentSettingOrDefault() {
-  let obj = require(624) /* defaultAreStatesEqual */;
-  const items = [_isNativeReflectConstruct];
+  let obj = require(647) /* defaultAreStatesEqual */;
+  const items = [handleConnectionClosedOrResumed];
   const stateFromStoresObject = obj.useStateFromStoresObject(items, () => {
-    const textAndImages = outer1_2.settings.textAndImages;
+    const textAndImages = settings.settings.textAndImages;
     let prop;
-    if (null != textAndImages) {
+    if (textAndImages != null) {
       prop = textAndImages.explicitContentSettings;
     }
-    if (null == prop) {
-      prop = outer1_0(outer1_1[2]).getExplicitContentSettingOrDefault();
-      const obj = outer1_0(outer1_1[2]);
+    if (prop == null) {
+      prop = callback(table[2]).getExplicitContentSettingOrDefault();
+      const obj = callback(table[2]);
     }
     return prop;
   });
-  obj = {};
-  let obj2 = require(5863) /* resolveExplicitContentSettingWithDefaults */;
-  obj = {};
   let prop;
-  if (null != stateFromStoresObject) {
+  if (stateFromStoresObject != null) {
     prop = stateFromStoresObject.explicitContentGuilds;
   }
-  obj.setting = prop;
-  obj.explicitContentGuilds = obj2.resolveExplicitContentSettingWithDefaults(obj);
-  const obj1 = {};
+  obj = { explicitContentGuilds: require(5881) /* resolveExplicitContentSettingWithDefaults */.resolveExplicitContentSettingWithDefaults({ setting: prop }), explicitContentNonFriendDm: null, explicitContentFriendDm: null };
+  let tmpResult = tmp(5881);
   let prop1;
-  if (null != stateFromStoresObject) {
+  if (stateFromStoresObject != null) {
     prop1 = stateFromStoresObject.explicitContentNonFriendDm;
   }
-  obj1.setting = prop1;
-  obj1.isDm = true;
-  obj.explicitContentNonFriendDm = require(5863) /* resolveExplicitContentSettingWithDefaults */.resolveExplicitContentSettingWithDefaults(obj1);
-  const obj5 = require(5863) /* resolveExplicitContentSettingWithDefaults */;
-  obj2 = { setting: null, isDm: true, isFriend: true };
+  obj[1] = tmpResult.resolveExplicitContentSettingWithDefaults({ setting: prop1, isDm: true });
+  tmpResult = tmp(5881);
   let prop2;
-  if (null != stateFromStoresObject) {
+  if (stateFromStoresObject != null) {
     prop2 = stateFromStoresObject.explicitContentFriendDm;
   }
-  obj2.setting = prop2;
-  obj.explicitContentFriendDm = require(5863) /* resolveExplicitContentSettingWithDefaults */.resolveExplicitContentSettingWithDefaults(obj2);
+  obj[2] = tmpResult.resolveExplicitContentSettingWithDefaults({ setting: prop2, isDm: true, isFriend: true });
   return obj;
 };
 export const useGoreContentSettingOrDefault = function useGoreContentSettingOrDefault() {
-  let obj = require(624) /* defaultAreStatesEqual */;
-  const items = [_isNativeReflectConstruct];
+  let obj = require(647) /* defaultAreStatesEqual */;
+  const items = [handleConnectionClosedOrResumed];
   const stateFromStoresObject = obj.useStateFromStoresObject(items, () => {
-    const textAndImages = outer1_2.settings.textAndImages;
+    const textAndImages = settings.settings.textAndImages;
     let goreContentSettings;
-    if (null != textAndImages) {
+    if (textAndImages != null) {
       goreContentSettings = textAndImages.goreContentSettings;
     }
-    if (null == goreContentSettings) {
-      goreContentSettings = outer1_0(outer1_1[3]).getGoreContentSettingOrDefault();
-      const obj = outer1_0(outer1_1[3]);
+    if (goreContentSettings == null) {
+      goreContentSettings = callback(table[3]).getGoreContentSettingOrDefault();
+      const obj = callback(table[3]);
     }
     return goreContentSettings;
   });
-  obj = {};
-  let obj2 = require(5865) /* resolveGoreSettingWithDefaults */;
-  obj = {};
   let goreContentGuilds;
-  if (null != stateFromStoresObject) {
+  if (stateFromStoresObject != null) {
     goreContentGuilds = stateFromStoresObject.goreContentGuilds;
   }
-  obj.setting = goreContentGuilds;
-  obj.goreContentGuilds = obj2.resolveGoreSettingWithDefaults(obj);
-  const obj1 = {};
+  obj = { goreContentGuilds: require(5883) /* resolveGoreSettingWithDefaults */.resolveGoreSettingWithDefaults({ setting: goreContentGuilds }), goreContentNonFriendDm: null, goreContentFriendDm: null };
+  let tmpResult = tmp(5883);
   let prop;
-  if (null != stateFromStoresObject) {
+  if (stateFromStoresObject != null) {
     prop = stateFromStoresObject.goreContentNonFriendDm;
   }
-  obj1.setting = prop;
-  obj1.isDm = true;
-  obj.goreContentNonFriendDm = require(5865) /* resolveGoreSettingWithDefaults */.resolveGoreSettingWithDefaults(obj1);
-  const obj5 = require(5865) /* resolveGoreSettingWithDefaults */;
-  obj2 = { setting: null, isDm: true, isFriend: true };
+  obj[1] = tmpResult.resolveGoreSettingWithDefaults({ setting: prop, isDm: true });
+  tmpResult = tmp(5883);
   let goreContentFriendDm;
-  if (null != stateFromStoresObject) {
+  if (stateFromStoresObject != null) {
     goreContentFriendDm = stateFromStoresObject.goreContentFriendDm;
   }
-  obj2.setting = goreContentFriendDm;
-  obj.goreContentFriendDm = require(5865) /* resolveGoreSettingWithDefaults */.resolveGoreSettingWithDefaults(obj2);
+  obj[2] = tmpResult.resolveGoreSettingWithDefaults({ setting: goreContentFriendDm, isDm: true, isFriend: true });
   return obj;
 };

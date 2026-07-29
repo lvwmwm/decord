@@ -1,36 +1,36 @@
-// Module ID: 11595
-// Function ID: 90082
+// Module ID: 11619
+// Function ID: 11620
 // Name: getIconForPerk
-// Dependencies: [4057, 6555, 6611, 9591, 11596, 11598, 6558, 8262, 9901, 9395, 4689, 6608, 2]
+// Dependencies: [4081, 6576, 6632, 9613, 11620, 11622, 6579, 8286, 9923, 9419, 4711, 6629, 2]
 // Exports: getIconForPerk
 
-// Module 11595 (getIconForPerk)
+// Module 11619 (getIconForPerk)
 const result = require("SoundboardIcon").fileFinishedImporting("modules/guild_boosting/native/GuildBoostingMarketingUtils.tsx");
 
 export const getIconForPerk = function getIconForPerk(perkIcon) {
-  if (require(4057) /* _createForOfIteratorHelperLoose */.PerkIcons.EMOJI === perkIcon) {
-    return require(6555) /* ReactionIcon */.ReactionIcon;
-  } else if (require(4057) /* _createForOfIteratorHelperLoose */.PerkIcons.SOUNDBOARD === perkIcon) {
-    return require(6611) /* SoundboardIcon */.SoundboardIcon;
-  } else if (require(4057) /* _createForOfIteratorHelperLoose */.PerkIcons.ANIMATED === perkIcon) {
-    return require(9591) /* GifIcon */.GifIcon;
-  } else if (require(4057) /* _createForOfIteratorHelperLoose */.PerkIcons.AUDIO === perkIcon) {
-    return require(11596) /* HeadphonesIcon */.HeadphonesIcon;
-  } else if (require(4057) /* _createForOfIteratorHelperLoose */.PerkIcons.STREAM === perkIcon) {
-    return require(11598) /* ScreenArrowIcon */.ScreenArrowIcon;
-  } else if (require(4057) /* _createForOfIteratorHelperLoose */.PerkIcons.UPLOAD === perkIcon) {
-    return require(6558) /* UploadIcon */.UploadIcon;
-  } else if (require(4057) /* _createForOfIteratorHelperLoose */.PerkIcons.CUSTOM_ROLE_ICON === perkIcon) {
-    return require(8262) /* ShieldUserIcon */.ShieldUserIcon;
-  } else if (require(4057) /* _createForOfIteratorHelperLoose */.PerkIcons.CUSTOMIZATION === perkIcon) {
-    return require(9901) /* ImagesIcon */.ImagesIcon;
-  } else if (require(4057) /* _createForOfIteratorHelperLoose */.PerkIcons.VANITY === perkIcon) {
-    return require(9395) /* StarIcon */.StarIcon;
-  } else if (require(4057) /* _createForOfIteratorHelperLoose */.PerkIcons.STAGE_VIDEO === perkIcon) {
-    return require(4689) /* StageIcon */.StageIcon;
-  } else if (require(4057) /* _createForOfIteratorHelperLoose */.PerkIcons.STICKER === perkIcon) {
-    return require(6608) /* StickerIcon */.StickerIcon;
+  if (require(4081) /* getGuildTierFromGuild */.PerkIcons.EMOJI === perkIcon) {
+    return tmp(6576).ReactionIcon;
+  } else if (tmp(4081).PerkIcons.SOUNDBOARD === perkIcon) {
+    return tmp(6632).SoundboardIcon;
+  } else if (tmp(4081).PerkIcons.ANIMATED === perkIcon) {
+    return tmp(9613).GifIcon;
+  } else if (tmp(4081).PerkIcons.AUDIO === perkIcon) {
+    return tmp(11620).HeadphonesIcon;
+  } else if (tmp(4081).PerkIcons.STREAM === perkIcon) {
+    return tmp(11622).ScreenArrowIcon;
+  } else if (tmp(4081).PerkIcons.UPLOAD === perkIcon) {
+    return tmp(6579).UploadIcon;
+  } else if (tmp(4081).PerkIcons.CUSTOM_ROLE_ICON === perkIcon) {
+    return tmp(8286).ShieldUserIcon;
+  } else if (tmp(4081).PerkIcons.CUSTOMIZATION === perkIcon) {
+    return tmp(9923).ImagesIcon;
+  } else if (tmp(4081).PerkIcons.VANITY === perkIcon) {
+    return tmp(9419).StarIcon;
+  } else if (tmp(4081).PerkIcons.STAGE_VIDEO === perkIcon) {
+    return tmp(4711).StageIcon;
+  } else if (tmp(4081).PerkIcons.STICKER === perkIcon) {
+    return tmp(6629).StickerIcon;
   } else {
-    return require(6555) /* ReactionIcon */.ReactionIcon;
+    return tmp(6576).ReactionIcon;
   }
 };

@@ -1,21 +1,21 @@
-// Module ID: 10811
-// Function ID: 83748
+// Module ID: 10835
+// Function ID: 10836
 // Name: StageChannelBackground
-// Dependencies: [31, 27, 33, 4165, 689, 2]
+// Dependencies: [19, 17, 21, 4189, 712, 2]
 // Exports: default
 
-// Module 10811 (StageChannelBackground)
-import "result";
+// Module 10835 (StageChannelBackground)
+import "noop";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { flex: 1, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BLACK };
-_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+createCacheKey = { container: null };
+createCacheKey = { flex: 1, backgroundColor: require("Themes").colors.BLACK };
+createCacheKey[0] = createCacheKey;
+createCacheKey = createCacheKey.createStyles(createCacheKey);
 const result = require("jsxProd").fileFinishedImporting("modules/stage_channels/native/components/StageChannelBackground.tsx");
 
 export default function StageChannelBackground(children) {
-  return <View style={_createForOfIteratorHelperLoose().container}>{arg0.children}</View>;
+  return <View style={createCacheKey().container}>{arg0.children}</View>;
 };

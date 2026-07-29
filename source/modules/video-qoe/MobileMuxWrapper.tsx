@@ -1,286 +1,224 @@
-// Module ID: 14144
-// Function ID: 108578
+// Module ID: 14166
+// Function ID: 14167
 // Name: logger
-// Dependencies: [6, 7, 4, 14145, 2]
+// Dependencies: [4, 14167, 2]
 
-// Module 14144 (logger)
-import _classCallCheck from "_classCallCheck";
-import _defineProperties from "_defineProperties";
-
-const require = arg1;
-const logger = new require("set").Logger("MobileMuxWrapper");
-let tmp3 = (() => {
-  class MobileMuxWrapper {
-    constructor(arg0) {
-      tmp = outer1_2(this, MobileMuxWrapper);
-      this.muxIntegration = null;
-      this.seekingEmitted = false;
-      this.seekTimeout = null;
-      this.config = arg0;
-      return;
+// Module 14166 (logger)
+const logger = new require("log").Logger("MobileMuxWrapper");
+let result = require("set").fileFinishedImporting("modules/video-qoe/MobileMuxWrapper.tsx");
+class MobileMuxWrapper {
+  constructor(arg0) {
+    obj = Object.create(new.target.prototype);
+    obj.config = global;
+    return obj;
+  }
+}
+const prototype = MobileMuxWrapper.prototype;
+prototype["initialize"] = function initialize() {
+  const self = this;
+  try {
+    const mobileCustomMuxIntegration = new require(14167) /* logger */.MobileCustomMuxIntegration(self.config);
+    self.muxIntegration = mobileCustomMuxIntegration;
+    const muxIntegration = self.muxIntegration;
+    muxIntegration.initialize();
+    logger.info("MobileMuxWrapper initialized successfully");
+  } catch (tmp11) {
+    logger.error("Error initializing MobileMuxWrapper", tmp11);
+    tmp.muxIntegration = null;
+  }
+};
+prototype["updatePlayheadTime"] = function updatePlayheadTime(arg0) {
+  const muxIntegration = this.muxIntegration;
+  if (muxIntegration != null) {
+    muxIntegration.updatePlayheadTime(arg0);
+  }
+};
+prototype["updateVideoDimensions"] = function updateVideoDimensions(arg0, arg1) {
+  const muxIntegration = this.muxIntegration;
+  if (muxIntegration != null) {
+    const result = muxIntegration.updateVideoDimensions(arg0, arg1);
+  }
+};
+prototype["updateVideoSourceDimensions"] = function updateVideoSourceDimensions(arg0, arg1) {
+  const muxIntegration = this.muxIntegration;
+  if (muxIntegration != null) {
+    const result = muxIntegration.updateVideoSourceDimensions(arg0, arg1);
+  }
+};
+prototype["updateVideoSource"] = function updateVideoSource(arg0, arg1, arg2) {
+  const muxIntegration = this.muxIntegration;
+  if (muxIntegration != null) {
+    muxIntegration.updateVideoSource(arg0, arg1, arg2);
+  }
+};
+prototype["updatePlayerState"] = function updatePlayerState(arg0, arg1) {
+  const muxIntegration = this.muxIntegration;
+  if (muxIntegration != null) {
+    muxIntegration.updatePlayerState(arg0, arg1);
+  }
+};
+prototype["onLoadStart"] = function onLoadStart(nativeEvent, arg1) {
+  const muxIntegration = this.muxIntegration;
+  if (muxIntegration != null) {
+    muxIntegration.emitLoadStart();
+  }
+};
+prototype["onLoad"] = function onLoad(arg0) {
+  const muxIntegration = this.muxIntegration;
+  if (muxIntegration != null) {
+    muxIntegration.emitLoad(arg0);
+  }
+};
+prototype["onPlay"] = function onPlay() {
+  const muxIntegration = this.muxIntegration;
+  if (muxIntegration != null) {
+    muxIntegration.emitPlay();
+  }
+};
+prototype["onPause"] = function onPause() {
+  const muxIntegration = this.muxIntegration;
+  if (muxIntegration != null) {
+    muxIntegration.emitPause();
+  }
+};
+prototype["onPlaying"] = function onPlaying() {
+  const muxIntegration = this.muxIntegration;
+  if (muxIntegration != null) {
+    muxIntegration.emitPlaying();
+  }
+};
+prototype["onCanPlay"] = function onCanPlay() {
+  const muxIntegration = this.muxIntegration;
+  if (muxIntegration != null) {
+    muxIntegration.emitCanPlay();
+  }
+};
+prototype["onSeek"] = function onSeek(nativeEvent) {
+  let self = this;
+  self = this;
+  if (null != this.muxIntegration) {
+    if (!self.seekingEmitted) {
+      let muxIntegration = self.muxIntegration;
+      muxIntegration.emitSeeking();
+      self.seekingEmitted = true;
+    }
+    if (null != self.seekTimeout) {
+      const _clearTimeout = clearTimeout;
+      clearTimeout(self.seekTimeout);
+    }
+    const _setTimeout = setTimeout;
+    self.seekTimeout = setTimeout(() => {
+      const muxIntegration = self.muxIntegration;
+      if (muxIntegration != null) {
+        muxIntegration.emitSeeked();
+      }
+      self.seekingEmitted = false;
+      self.seekTimeout = null;
+    }, 100);
+  }
+};
+prototype["onEnd"] = function onEnd() {
+  const muxIntegration = this.muxIntegration;
+  if (muxIntegration != null) {
+    muxIntegration.emitEnded();
+  }
+  const muxIntegration2 = this.muxIntegration;
+  if (muxIntegration2 != null) {
+    muxIntegration2.destroy();
+  }
+};
+prototype["onError"] = function onError(arg0) {
+  const muxIntegration = this.muxIntegration;
+  if (muxIntegration != null) {
+    muxIntegration.emitError(arg0);
+  }
+};
+prototype["onProgress"] = function onProgress(arg0) {
+  this.updatePlayheadTime(arg0);
+  const muxIntegration = this.muxIntegration;
+  if (muxIntegration != null) {
+    muxIntegration.emitTimeUpdate();
+  }
+};
+prototype["onBuffer"] = function onBuffer(nativeEvent) {
+  if (!nativeEvent) {
+    const self = this;
+    const muxIntegration = this.muxIntegration;
+    if (muxIntegration != null) {
+      muxIntegration.emitCanPlay();
+    }
+    const muxIntegration2 = self.muxIntegration;
+    let hasPlayStartedResult;
+    if (muxIntegration2 != null) {
+      hasPlayStartedResult = muxIntegration2.hasPlayStarted();
+    }
+    if (hasPlayStartedResult) {
+      const muxIntegration3 = self.muxIntegration;
+      if (muxIntegration3 != null) {
+        muxIntegration3.emitPlaying();
+      }
     }
   }
-  let obj = {
-    key: "initialize",
-    value() {
-      const mobileCustomMuxIntegration = new MobileMuxWrapper(outer1_1[3]).MobileCustomMuxIntegration(this.config);
-      this.muxIntegration = mobileCustomMuxIntegration;
-      const muxIntegration = this.muxIntegration;
-      muxIntegration.initialize();
-      outer1_4.info("MobileMuxWrapper initialized successfully");
+};
+prototype["onReadyForDisplay"] = function onReadyForDisplay(nativeEvent) {
+  const self = this;
+  const muxIntegration = this.muxIntegration;
+  if (muxIntegration != null) {
+    muxIntegration.emitPlayerReady();
+  }
+  const muxIntegration2 = self.muxIntegration;
+  let hasPlayStartedResult;
+  if (muxIntegration2 != null) {
+    hasPlayStartedResult = muxIntegration2.hasPlayStarted();
+  }
+  if (hasPlayStartedResult) {
+    const muxIntegration3 = self.muxIntegration;
+    if (muxIntegration3 != null) {
+      muxIntegration3.emitPlaying();
     }
-  };
-  const items = [obj, , , , , , , , , , , , , , , , , , , , , ];
-  obj = {
-    key: "updatePlayheadTime",
-    value(arg0) {
-      const muxIntegration = this.muxIntegration;
-      if (null != muxIntegration) {
-        muxIntegration.updatePlayheadTime(arg0);
-      }
+  }
+};
+prototype["onVideoTrackChange"] = function onVideoTrackChange(selectedVideoTrackId, videoTracks) {
+  let closure_0 = selectedVideoTrackId;
+  const size = videoTracks.find((trackId) => trackId.trackId === closure_0);
+  if (null != size) {
+    const self = this;
+    const muxIntegration = this.muxIntegration;
+    if (muxIntegration != null) {
+      muxIntegration.emitRenditionChange(size.width, size.height, size.bitrate);
     }
-  };
-  items[1] = obj;
-  obj = {
-    key: "updateVideoDimensions",
-    value(arg0, arg1) {
-      const muxIntegration = this.muxIntegration;
-      if (null != muxIntegration) {
-        const result = muxIntegration.updateVideoDimensions(arg0, arg1);
-      }
+  }
+};
+prototype["destroy"] = function destroy() {
+  try {
+    const self = this;
+    if (null != this.seekTimeout) {
+      const _clearTimeout = clearTimeout;
+      clearTimeout(self.seekTimeout);
+      self.seekTimeout = null;
     }
-  };
-  items[2] = obj;
-  items[3] = {
-    key: "updateVideoSourceDimensions",
-    value(arg0, arg1) {
-      const muxIntegration = this.muxIntegration;
-      if (null != muxIntegration) {
-        const result = muxIntegration.updateVideoSourceDimensions(arg0, arg1);
-      }
+    const muxIntegration = self.muxIntegration;
+    if (muxIntegration != null) {
+      muxIntegration.destroy();
     }
-  };
-  items[4] = {
-    key: "updateVideoSource",
-    value(arg0, arg1, arg2) {
-      const muxIntegration = this.muxIntegration;
-      if (null != muxIntegration) {
-        muxIntegration.updateVideoSource(arg0, arg1, arg2);
-      }
-    }
-  };
-  items[5] = {
-    key: "updatePlayerState",
-    value(arg0, arg1) {
-      const muxIntegration = this.muxIntegration;
-      if (null != muxIntegration) {
-        muxIntegration.updatePlayerState(arg0, arg1);
-      }
-    }
-  };
-  items[6] = {
-    key: "onLoadStart",
-    value() {
-      const muxIntegration = this.muxIntegration;
-      if (null != muxIntegration) {
-        muxIntegration.emitLoadStart();
-      }
-    }
-  };
-  items[7] = {
-    key: "onLoad",
-    value(arg0) {
-      const muxIntegration = this.muxIntegration;
-      if (null != muxIntegration) {
-        muxIntegration.emitLoad(arg0);
-      }
-    }
-  };
-  items[8] = {
-    key: "onPlay",
-    value() {
-      const muxIntegration = this.muxIntegration;
-      if (null != muxIntegration) {
-        muxIntegration.emitPlay();
-      }
-    }
-  };
-  items[9] = {
-    key: "onPause",
-    value() {
-      const muxIntegration = this.muxIntegration;
-      if (null != muxIntegration) {
-        muxIntegration.emitPause();
-      }
-    }
-  };
-  items[10] = {
-    key: "onPlaying",
-    value() {
-      const muxIntegration = this.muxIntegration;
-      if (null != muxIntegration) {
-        muxIntegration.emitPlaying();
-      }
-    }
-  };
-  items[11] = {
-    key: "onCanPlay",
-    value() {
-      const muxIntegration = this.muxIntegration;
-      if (null != muxIntegration) {
-        muxIntegration.emitCanPlay();
-      }
-    }
-  };
-  items[12] = {
-    key: "onSeek",
-    value() {
-      let self = this;
-      self = this;
-      if (null != this.muxIntegration) {
-        if (!self.seekingEmitted) {
-          let muxIntegration = self.muxIntegration;
-          muxIntegration.emitSeeking();
-          self.seekingEmitted = true;
-        }
-        if (null != self.seekTimeout) {
-          const _clearTimeout = clearTimeout;
-          clearTimeout(self.seekTimeout);
-        }
-        const _setTimeout = setTimeout;
-        self.seekTimeout = setTimeout(() => {
-          const muxIntegration = self.muxIntegration;
-          if (null != muxIntegration) {
-            muxIntegration.emitSeeked();
-          }
-          self.seekingEmitted = false;
-          self.seekTimeout = null;
-        }, 100);
-      }
-    }
-  };
-  items[13] = {
-    key: "onEnd",
-    value() {
-      const muxIntegration = this.muxIntegration;
-      if (null != muxIntegration) {
-        muxIntegration.emitEnded();
-      }
-      const muxIntegration2 = this.muxIntegration;
-      if (null != muxIntegration2) {
-        muxIntegration2.destroy();
-      }
-    }
-  };
-  items[14] = {
-    key: "onError",
-    value(arg0) {
-      const muxIntegration = this.muxIntegration;
-      if (null != muxIntegration) {
-        muxIntegration.emitError(arg0);
-      }
-    }
-  };
-  items[15] = {
-    key: "onProgress",
-    value(arg0) {
-      this.updatePlayheadTime(arg0);
-      const muxIntegration = this.muxIntegration;
-      if (null != muxIntegration) {
-        muxIntegration.emitTimeUpdate();
-      }
-    }
-  };
-  items[16] = {
-    key: "onBuffer",
-    value(arg0) {
-      const self = this;
-      if (!arg0) {
-        const muxIntegration = self.muxIntegration;
-        if (null != muxIntegration) {
-          muxIntegration.emitCanPlay();
-        }
-        const muxIntegration2 = self.muxIntegration;
-        if (tmp3) {
-          const muxIntegration3 = self.muxIntegration;
-          if (null != muxIntegration3) {
-            muxIntegration3.emitPlaying();
-          }
-        }
-        tmp3 = null != muxIntegration2 && muxIntegration2.hasPlayStarted();
-      }
-    }
-  };
-  items[17] = {
-    key: "onReadyForDisplay",
-    value() {
-      const self = this;
-      const muxIntegration = this.muxIntegration;
-      if (null != muxIntegration) {
-        muxIntegration.emitPlayerReady();
-      }
-      const muxIntegration2 = self.muxIntegration;
-      if (tmp2) {
-        const muxIntegration3 = self.muxIntegration;
-        if (null != muxIntegration3) {
-          muxIntegration3.emitPlaying();
-        }
-      }
-    }
-  };
-  items[18] = {
-    key: "onVideoTrackChange",
-    value(arg0, arr) {
-      let closure_0 = arg0;
-      const size = arr.find((trackId) => trackId.trackId === closure_0);
-      if (null != size) {
-        const self = this;
-        const muxIntegration = this.muxIntegration;
-        if (null != muxIntegration) {
-          muxIntegration.emitRenditionChange(size.width, size.height, size.bitrate);
-        }
-      }
-    }
-  };
-  items[19] = {
-    key: "destroy",
-    value() {
-      const self = this;
-      if (null != this.seekTimeout) {
-        const _clearTimeout = clearTimeout;
-        clearTimeout(self.seekTimeout);
-        self.seekTimeout = null;
-      }
-      const muxIntegration = self.muxIntegration;
-      if (null != muxIntegration) {
-        muxIntegration.destroy();
-      }
-      self.muxIntegration = null;
-    }
-  };
-  items[20] = {
-    key: "getSessionId",
-    value() {
-      const muxIntegration = this.muxIntegration;
-      let sessionId;
-      if (null != muxIntegration) {
-        sessionId = muxIntegration.getSessionId();
-      }
-      let tmp2 = null;
-      if (null != sessionId) {
-        tmp2 = sessionId;
-      }
-      return tmp2;
-    }
-  };
-  items[21] = {
-    key: "isInitialized",
-    value() {
-      return null != this.muxIntegration;
-    }
-  };
-  return callback(MobileMuxWrapper, items);
-})();
-let result = require("log").fileFinishedImporting("modules/video-qoe/MobileMuxWrapper.tsx");
+    self.muxIntegration = null;
+  } catch (tmp5) {
+    logger.error("Error destroying MobileMuxWrapper", tmp5);
+  }
+};
+prototype["getSessionId"] = function getSessionId() {
+  const muxIntegration = this.muxIntegration;
+  let sessionId;
+  if (muxIntegration != null) {
+    sessionId = muxIntegration.getSessionId();
+  }
+  if (sessionId == null) {
+    sessionId = null;
+  }
+  return sessionId;
+};
+prototype["isInitialized"] = function isInitialized() {
+  return null != this.muxIntegration;
+};
 
-export const MobileMuxWrapper = tmp3;
+export { MobileMuxWrapper };

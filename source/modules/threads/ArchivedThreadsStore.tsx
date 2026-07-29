@@ -1,109 +1,17 @@
-// Module ID: 6059
-// Function ID: 54066
-// Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 57, 1352, 1348, 4177, 3795, 1357, 6060, 22, 1359, 21, 6049, 566, 686, 2]
+// Module ID: 6077
+// Function ID: 6078
+// Name: listKey
+// Dependencies: [32, 1376, 1372, 4201, 3819, 1381, 6078, 12, 1383, 11, 6067, 589, 709, 2]
 
-// Module 6059 (_isNativeReflectConstruct)
-import _callSuper from "_callSuper";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import getForumPostReadStates from "getForumPostReadStates";
-import dispatcher from "dispatcher";
-import set from "set";
+// Module 6077 (listKey)
 import _slicedToArray from "_slicedToArray";
-import { ALL_CHANNEL_TYPES } from "_callSuper";
-import closure_10 from "_isNativeReflectConstruct";
-import closure_11 from "_isNativeReflectConstruct";
-import closure_12 from "_isNativeReflectConstruct";
+import { ALL_CHANNEL_TYPES } from "createChannelRecord";
+import ensureGuildLoaded from "ensureGuildLoaded";
+import generateOldThreadCutoff from "generateOldThreadCutoff";
+import storeThread from "storeThread";
+import { Store } from "initialize";
 
 const require = arg1;
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
-  }
-  const result = _isNativeReflectConstruct();
-}
-function _createForOfIteratorHelperLoose(iterable) {
-  let closure_0 = iterable;
-  iterable = "undefined" !== typeof Symbol;
-  if (iterable) {
-    const _Symbol = Symbol;
-    iterable = iterable[Symbol.iterator];
-  }
-  if (!iterable) {
-    iterable = iterable[Symbol.iterator];
-  }
-  if (iterable) {
-    const iter = iterable.call(iterable);
-    const next = iter.next;
-    return next.bind(iter);
-  } else {
-    const _Array = Array;
-    let tmp = iterable;
-    if (!Array.isArray(iterable)) {
-      let tmp2;
-      if (iterable) {
-        if ("string" === typeof iterable) {
-          tmp2 = _arrayLikeToArray(iterable, undefined);
-        } else {
-          const toString = {}.toString;
-          const substr = toString.call(iterable).slice(8, -1);
-          let name = substr;
-          if (tmp3) {
-            name = iterable.constructor.name;
-          }
-          if ("Map" !== name) {
-            if ("Set" !== name) {
-              if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(iterable, undefined);
-              } else {
-                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
-              }
-            }
-            tmp2 = arr;
-          }
-          const _Array2 = Array;
-          arr = Array.from(iterable);
-          const callResult = toString.call(iterable);
-          tmp3 = "Object" === substr && iterable.constructor;
-        }
-      }
-      tmp = tmp2;
-      if (!tmp2) {
-        const _TypeError = TypeError;
-        const typeError = new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
-        throw typeError;
-      }
-    }
-    if (tmp) {
-      closure_0 = tmp;
-    }
-    let c1 = 0;
-    return () => {
-      if (closure_1 >= length.length) {
-        let obj = { done: true };
-      } else {
-        obj = { done: false };
-        closure_1 = tmp3 + 1;
-        obj.value = length[+closure_1];
-      }
-      return obj;
-    };
-  }
-}
-function _arrayLikeToArray(arg0, arg1) {
-  let length;
-  if (tmp) {
-    length = arg0.length;
-  }
-  const ArrayResult = Array(length);
-  for (let num = 0; num < length; num = num + 1) {
-    ArrayResult[num] = arg0[num];
-  }
-  return ArrayResult;
-}
 function listKey(channelId, sortOrder, tagFilter, tagSetting) {
   let iter = tagFilter;
   const combined = "" + channelId + "|" + sortOrder + "|" + tagSetting + "|";
@@ -119,410 +27,397 @@ function listKey(channelId, sortOrder, tagFilter, tagSetting) {
     const arr = Array.from(iter);
   }
 }
-function getSortValue(channel, sortOrder) {
-  if (sortOrder === require(1357) /* set */.ThreadSortOrder.LATEST_ACTIVITY) {
-    let id = closure_11.lastMessageId(channel.id);
+function getSortValue(id) {
+  if (arg1 === require(1381) /* set */.ThreadSortOrder.LATEST_ACTIVITY) {
+    id = generateOldThreadCutoff.lastMessageId(id.id);
   } else {
-    id = channel.id;
+    id = id.id;
   }
   return id;
 }
 function resortListState(value) {
-  let _callSuper;
+  let _slicedToArray;
   let dependencyMap;
   let importDefault;
   const sortOrder = value.sortOrder;
-  ({ tagFilter: importDefault, tagSetting: dependencyMap, hasMore: _callSuper } = value);
-  const channel = store.getChannel(value.threads[value.threads.length - 1]);
-  let tmp2 = null;
-  if (null != channel) {
-    tmp2 = getSortValue(channel, sortOrder);
-  }
-  let _isNativeReflectConstruct = tmp2;
-  const tmp4 = importDefault(22);
-  const found = importDefault(22)(store.getAllThreadsForParent(value.channelId)).filter((isArchivedThread) => isArchivedThread.isArchivedThread());
-  const found1 = found.filter((appliedTags) => {
-    if (0 !== closure_1.size) {
-      if (sortOrder(outer1_2[13]).ThreadSearchTagSetting.MATCH_SOME === closure_2) {
-        const appliedTags2 = appliedTags.appliedTags;
-        let someResult;
-        if (null != appliedTags2) {
-          someResult = appliedTags2.some((arg0) => outer1_1.has(arg0));
-        }
-        if (true !== someResult) {
-          return false;
-        }
-      } else if (sortOrder(outer1_2[13]).ThreadSearchTagSetting.MATCH_ALL === tmp14) {
-        const tmp21 = outer1_16(closure_1.values());
-        let iter2 = tmp21();
-        if (!iter2.done) {
-          while (true) {
+  ({ tagFilter: importDefault, tagSetting: dependencyMap, hasMore: _slicedToArray } = value);
+  let id = store.getChannel(value.threads[value.threads.length - 1]);
+  if (null == id) {
+    let c4 = null;
+    let tmp7 = importDefault(12);
+    const found = importDefault(12)(store.getAllThreadsForParent(value.channelId)).filter((isArchivedThread) => isArchivedThread.isArchivedThread());
+    const found1 = found.filter((appliedTags) => {
+      if (0 !== size.size) {
+        if (sortOrder(outer1_2[8]).ThreadSearchTagSetting.MATCH_SOME === closure_2) {
+          const appliedTags2 = appliedTags.appliedTags;
+          let someResult;
+          if (appliedTags2 != null) {
+            someResult = appliedTags2.some((arg0) => set.has(arg0));
+          }
+          if (true !== someResult) {
+            return false;
+          }
+        } else if (tmp20(outer1_2[8]).ThreadSearchTagSetting.MATCH_ALL === tmp19) {
+          const values = size.values();
+          const iter = values[Symbol.iterator]();
+          while (iter !== undefined) {
             appliedTags = appliedTags.appliedTags;
             let hasItem;
-            if (null != appliedTags) {
-              hasItem = appliedTags.includes(tmp);
+            if (appliedTags != null) {
+              let tmp7 = nextResult;
+              hasItem = appliedTags.includes(tmp5);
             }
             if (true !== hasItem) {
-              break;
-            } else {
-              let iter = tmp21();
-              iter2 = iter;
+              let tmp8 = iter;
+              iter.return();
+              let flag = false;
+              return false;
             }
           }
-          return false;
+          nextResult = iter.next();
+        }
+        tmp19 = closure_2;
+        tmp20 = sortOrder;
+      }
+      if (_slicedToArray) {
+        if (null != c4) {
+          let tmp13 = null;
+          if (null != appliedTags) {
+            tmp13 = outer1_10(appliedTags, sortOrder);
+          }
+          let tmp16 = null != tmp13;
+          if (tmp16) {
+            tmp16 = outer1_1(outer1_2[9]).compare(tmp13, tmp11) >= 0;
+            const obj2 = outer1_1(outer1_2[9]);
+          }
+          return tmp16;
         }
       }
-      tmp14 = closure_2;
-    }
-    if (_callSuper) {
-      if (null != _isNativeReflectConstruct) {
-        let tmp7 = null;
-        if (null != appliedTags) {
-          tmp7 = outer1_19(appliedTags, sortOrder);
-        }
-        let tmp10 = null != tmp7;
-        if (tmp10) {
-          tmp10 = outer1_1(outer1_2[14]).compare(tmp7, _isNativeReflectConstruct) >= 0;
-          const obj = outer1_1(outer1_2[14]);
-        }
-        return tmp10;
+      return true;
+    });
+    const sorted = found1.sort((id, id2) => {
+      if (sortOrder === sortOrder(outer1_2[5]).ThreadSortOrder.LATEST_ACTIVITY) {
+        id = outer1_6.lastMessageId(id.id);
+      } else {
+        id = id.id;
       }
-    }
-    return true;
-  });
-  const sorted = found1.sort((arg0, arg1) => {
-    const obj = outer1_1(outer1_2[14]);
-    return obj.compare(outer1_19(arg0, sortOrder), outer1_19(arg1, sortOrder));
-  });
-  const mapped = sorted.map((id) => id.id);
-  const tmp4Result = importDefault(22)(store.getAllThreadsForParent(value.channelId));
-  value.threads = mapped.reverse().value();
+      if (sortOrder === sortOrder(outer1_2[5]).ThreadSortOrder.LATEST_ACTIVITY) {
+        id2 = outer1_6.lastMessageId(id2.id);
+      } else {
+        id2 = id2.id;
+      }
+      return outer1_1(outer1_2[9]).compare(id, id2);
+    });
+    const mapped = sorted.map((id) => id.id);
+    const tmp7Result = importDefault(12)(store.getAllThreadsForParent(value.channelId));
+    value.threads = mapped.reverse().value();
+  } else if (sortOrder === sortOrder(1381).ThreadSortOrder.LATEST_ACTIVITY) {
+    id = id.id;
+    let id2 = generateOldThreadCutoff.lastMessageId(id);
+  } else {
+    id2 = id.id;
+  }
 }
 const map = new Map();
-let closure_14 = [];
-let tmp3 = ((Store) => {
-  class ArchivedThreadsStore {
-    constructor() {
-      self = this;
-      tmp = outer1_3(this, ArchivedThreadsStore);
-      obj = outer1_6(ArchivedThreadsStore);
-      tmp2 = outer1_5;
-      if (outer1_15()) {
-        tmp6 = globalThis;
-        _Reflect = Reflect;
-        tmp7 = outer1_6;
-        tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, outer1_6(self).constructor);
-      } else {
-        tmp3 = arguments;
-        tmp4 = arguments;
-        constructResult = obj(...arguments);
-      }
-      return tmp2(self, constructResult);
+let closure_12 = [];
+class ArchivedThreadsStore extends Store {
+}
+const prototype = ArchivedThreadsStore.prototype;
+prototype["initialize"] = function initialize() {
+  this.waitFor(ensureGuildLoaded, storeThread, generateOldThreadCutoff);
+};
+prototype["getCanLoadMore"] = function getCanLoadMore(id, closure_1, closure_2, _slicedToArray) {
+  let iter = closure_2;
+  const combined = "" + id + "|" + closure_1 + "|" + _slicedToArray + "|";
+  if (0 === closure_2.size) {
+    const value = map.get(combined);
+    let tmp7 = null != value;
+    if (tmp7) {
+      tmp7 = value.hasMore && !value.loading && !value.failed;
+      const tmp8 = value.hasMore && !value.loading && !value.failed;
     }
+    return tmp7;
+  } else if (1 === iter.size) {
+    iter = iter.values();
+    let sum = combined + iter.next().value;
+  } else {
+    const _Array = Array;
+    const sorted = Array.from(iter).sort();
+    sum = combined + sorted.join(",");
+    const arr = Array.from(iter);
   }
-  callback2(ArchivedThreadsStore, Store);
-  let obj = {
-    key: "initialize",
-    value() {
-      this.waitFor(outer1_10, outer1_12, outer1_11);
+};
+prototype["getNextOffset"] = function getNextOffset(id, closure_1, closure_2, _slicedToArray) {
+  let iter = closure_2;
+  const combined = "" + id + "|" + closure_1 + "|" + _slicedToArray + "|";
+  if (0 === closure_2.size) {
+    const value = map.get(combined);
+    let num2;
+    if (value != null) {
+      num2 = value.nextOffset;
     }
-  };
-  const items = [obj, , , , , ];
-  obj = {
-    key: "getCanLoadMore",
-    value(arg0, arg1, arg2, arg3) {
-      const value = outer1_13.get(outer1_18(arg0, arg1, arg2, arg3));
-      let tmp2 = null != value;
-      if (tmp2) {
-        tmp2 = value.hasMore && !value.loading && !value.failed;
-        const tmp3 = value.hasMore && !value.loading && !value.failed;
-      }
-      return tmp2;
+    if (num2 == null) {
+      num2 = 0;
     }
-  };
-  items[1] = obj;
-  obj = {
-    key: "getNextOffset",
-    value(arg0, arg1, arg2, arg3) {
-      const value = outer1_13.get(outer1_18(arg0, arg1, arg2, arg3));
-      let nextOffset;
-      if (null != value) {
-        nextOffset = value.nextOffset;
-      }
-      let num = 0;
-      if (null != nextOffset) {
-        num = nextOffset;
-      }
-      return num;
+    return num2;
+  } else if (1 === iter.size) {
+    iter = iter.values();
+    let sum = combined + iter.next().value;
+  } else {
+    const _Array = Array;
+    const sorted = Array.from(iter).sort();
+    sum = combined + sorted.join(",");
+    const arr = Array.from(iter);
+  }
+};
+prototype["getIsInitialLoad"] = function getIsInitialLoad(id, closure_1, closure_2, _slicedToArray) {
+  let iter = closure_2;
+  const combined = "" + id + "|" + closure_1 + "|" + _slicedToArray + "|";
+  if (0 === closure_2.size) {
+    const value = map.get(combined);
+    let flag;
+    if (value != null) {
+      flag = value.isInitialLoad;
     }
-  };
-  items[2] = obj;
-  items[3] = {
-    key: "getIsInitialLoad",
-    value(arg0, arg1, arg2, arg3) {
-      const value = outer1_13.get(outer1_18(arg0, arg1, arg2, arg3));
-      let isInitialLoad;
-      if (null != value) {
-        isInitialLoad = value.isInitialLoad;
-      }
-      return null == isInitialLoad || isInitialLoad;
+    if (flag == null) {
+      flag = true;
     }
-  };
-  items[4] = {
-    key: "isLoading",
-    value(arg0, arg1, arg2, arg3) {
-      const value = outer1_13.get(outer1_18(arg0, arg1, arg2, arg3));
-      let loading;
-      if (null != value) {
-        loading = value.loading;
-      }
-      return null != loading && loading;
+    return flag;
+  } else if (1 === iter.size) {
+    iter = iter.values();
+    let sum = combined + iter.next().value;
+  } else {
+    const _Array = Array;
+    const sorted = Array.from(iter).sort();
+    sum = combined + sorted.join(",");
+    const arr = Array.from(iter);
+  }
+};
+prototype["isLoading"] = function isLoading(arg0, arg1, size) {
+  let iter = size;
+  const combined = "" + arg0 + "|" + arg1 + "|" + arg3 + "|";
+  if (0 === size.size) {
+    const value = map.get(combined);
+    let flag;
+    if (value != null) {
+      flag = value.loading;
     }
-  };
-  items[5] = {
-    key: "getThreads",
-    value(arg0, arg1, arg2, arg3) {
-      const value = outer1_13.get(outer1_18(arg0, arg1, arg2, arg3));
-      let threads;
-      if (null != value) {
-        threads = value.threads;
-      }
-      if (null == threads) {
-        threads = outer1_14;
-      }
-      return threads;
+    if (flag == null) {
+      flag = false;
     }
-  };
-  return callback(ArchivedThreadsStore, items);
-})(require("initialize").Store);
-tmp3.displayName = "ArchivedThreadsStore";
-tmp3 = new tmp3(require("dispatcher"), {
+    return flag;
+  } else if (1 === iter.size) {
+    iter = iter.values();
+    let sum = combined + iter.next().value;
+  } else {
+    const _Array = Array;
+    const sorted = Array.from(iter).sort();
+    sum = combined + sorted.join(",");
+    const arr = Array.from(iter);
+  }
+};
+prototype["getThreads"] = function getThreads(id, closure_1, closure_2, _slicedToArray) {
+  let iter = closure_2;
+  const combined = "" + id + "|" + closure_1 + "|" + _slicedToArray + "|";
+  if (0 === closure_2.size) {
+    const value = map.get(combined);
+    let threads;
+    if (value != null) {
+      threads = value.threads;
+    }
+    if (threads == null) {
+      threads = closure_12;
+    }
+    return threads;
+  } else if (1 === iter.size) {
+    iter = iter.values();
+    let sum = combined + iter.next().value;
+  } else {
+    const _Array = Array;
+    const sorted = Array.from(iter).sort();
+    sum = combined + sorted.join(",");
+    const arr = Array.from(iter);
+  }
+};
+ArchivedThreadsStore.displayName = "ArchivedThreadsStore";
+const archivedThreadsStore = new ArchivedThreadsStore(require("dispatcher"), {
   CONNECTION_OPEN: function resetAll() {
     map.clear();
   },
   THREAD_DELETE: function handleThreadDelete(channel) {
     if (!(function removeThreadIdFromAllLists(id) {
-      let iter3;
       let closure_0 = id;
-      const tmp = outer1_16(outer1_13.values());
-      const iter = tmp();
-      let iter2 = iter;
       let flag = false;
-      let flag2 = false;
-      if (!iter.done) {
-        do {
-          let value = iter2.value;
-          let threads = value.threads;
-          if (threads.indexOf(id) >= 0) {
-            let threads1 = value.threads;
-            value.threads = threads1.filter((arg0) => arg0 !== closure_0);
-            flag = true;
-          }
-          iter3 = tmp();
-          iter2 = iter3;
-          flag2 = flag;
-        } while (!iter3.done);
+      const values = closure_8.values();
+      const iter = values[Symbol.iterator]();
+      const nextResult = iter.next();
+      while (iter !== undefined) {
+        let tmp3 = nextResult;
+        let threads = nextResult.threads;
+        if (threads.indexOf(id) >= 0) {
+          let tmp4 = nextResult;
+          let threads1 = tmp3.threads;
+          tmp3.threads = threads1.filter((arg0) => arg0 !== closure_0);
+          flag = true;
+        }
+        continue;
       }
-      return flag2;
+      return flag;
     })(channel.channel.id)) {
       return false;
     }
   },
   THREAD_UPDATE: function handleThreadUpdate(channel) {
-    let iter3;
     channel = channel.channel;
     if (obj.isForumPostPinned(channel.id)) {
-      const tmp3 = _createForOfIteratorHelperLoose(map.values());
-      const iter = tmp3();
-      let iter2 = iter;
-      let flag2 = false;
-      let flag3 = false;
-      if (!iter.done) {
-        do {
-          let value = iter2.value;
-          let tmp4 = flag2;
-          if (value.channelId === channel.parent_id) {
-            let threads = value.threads;
-            if (threads.indexOf(channel.id) >= 0) {
-              let threads1 = value.threads;
-              value.threads = threads1.filter((arg0) => arg0 !== channel.id);
-              flag2 = true;
-            }
-            tmp4 = flag2;
-          }
-          iter3 = tmp3();
-          flag2 = tmp4;
-          iter2 = iter3;
-          flag3 = tmp4;
-        } while (!iter3.done);
+      let flag = false;
+      const values = map.values();
+      const iter = values[Symbol.iterator]();
+      const nextResult = iter.next();
+      while (iter !== undefined) {
+        let tmp7 = nextResult;
+        let tmp8 = nextResult.channelId === channel.parent_id;
+        if (tmp8) {
+          let tmp9 = nextResult;
+          let threads = tmp7.threads;
+          tmp8 = threads.indexOf(channel.id) >= 0;
+        }
+        if (tmp8) {
+          let tmp10 = nextResult;
+          let threads1 = tmp7.threads;
+          tmp7.threads = threads1.filter((arg0) => arg0 !== channel.id);
+          flag = true;
+        }
+        continue;
       }
-      return flag3;
+      return flag && undefined;
     } else {
       return false;
     }
-    obj = channel(6049);
+    obj = channel(6067);
   },
   CHANNEL_DELETE: function handleChannelDelete(channel) {
-    let iter3;
-    const tmp = _createForOfIteratorHelperLoose(map);
-    const iter = tmp();
-    let iter2 = iter;
     let flag = false;
-    let flag2 = false;
-    if (!iter.done) {
-      do {
-        let tmp2 = callback3;
-        let tmp3 = callback3(iter2.value, 2);
-        if (tmp3[1].channelId === channel.channel.id) {
-          let tmp5 = map;
-          let deleteResult = map.delete(tmp4);
-          flag = true;
-        }
-        iter3 = tmp();
-        iter2 = iter3;
-        flag2 = flag;
-      } while (!iter3.done);
+    while (tmp2 !== undefined) {
+      let tmp4 = callback;
+      let tmp5 = callback(tmp3, 2);
+      let first = tmp5[0];
+      if (tmp5[1].channelId === channel.channel.id) {
+        let tmp7 = map;
+        let tmp8 = first;
+        let deleteResult = map.delete(first);
+        flag = true;
+      }
+      continue;
     }
-    return flag2 ? undefined : false;
+    return flag ? undefined : false;
   },
   LOAD_ARCHIVED_THREADS: function handleLoadArchivedThreads(tagFilter) {
-    let iter2;
-    let tmp7;
-    let tmp8;
     if (tagFilter.tagFilter instanceof Set) {
       tagFilter = tagFilter.tagFilter;
     } else {
       const _Set = Set;
       tagFilter = new Set(tagFilter.tagFilter);
     }
-    const tmp3 = listKey(tagFilter.channelId, tagFilter.sortOrder, tagFilter, tagFilter.tagSetting);
-    const tmp4 = _createForOfIteratorHelperLoose(map);
-    let iter = tmp4();
-    if (!iter.done) {
-      do {
-        let tmp5 = callback3;
-        let tmp6 = callback3(iter.value, 2);
-        [tmp7, tmp8] = tmp6;
-        let tmp9 = tmp7 !== tmp3 && tmp8.channelId === tagFilter.channelId && tmp8.failed;
-        if (tmp9) {
-          let tmp10 = map;
-          let deleteResult = map.delete(tmp7);
-        }
-        iter2 = tmp4();
-        iter = iter2;
-      } while (!iter2.done);
-    }
-    const value = map.get(tmp3);
-    if (null == value) {
-      const obj = { loading: false, isInitialLoad: true, hasMore: false, failed: false, threads: [], nextOffset: 0 };
-      ({ channelId: obj.channelId, sortOrder: obj.sortOrder } = tagFilter);
-      obj.tagFilter = tagFilter;
-      obj.tagSetting = tagFilter.tagSetting;
-      let tmp13 = obj;
-    } else {
-      value.tagFilter = tagFilter;
-      value.failed = false;
-      tmp13 = value;
-    }
-    tmp13.loading = true;
-    tmp13.isInitialLoad = false;
-    map.delete(tmp3);
-    const result = map.set(tmp3, tmp13);
-    if (map.size > 50) {
-      const tmp18 = _createForOfIteratorHelperLoose(map);
-      let iter3 = tmp18();
-      if (!iter3.done) {
-        while (map.size > 50) {
-          if (!tmp20[1].loading) {
-            let tmp23 = map;
-            let deleteResult2 = map.delete(tmp21);
-          }
-          let iter4 = tmp18();
-          iter3 = iter4;
-          if (iter4.done) {
-            break;
-          }
-        }
-        tmp20 = callback3(iter3.value, 2);
-      }
-    }
+    listKey(tagFilter.channelId, tagFilter.sortOrder, tagFilter, tagFilter.tagSetting);
+    map[Symbol.iterator]();
   },
   LOAD_ARCHIVED_THREADS_SUCCESS: function handleLoadArchivedThreadsSuccess(tagFilter) {
     if (tagFilter.tagFilter instanceof Set) {
-      tagFilter = tagFilter.tagFilter;
+      let iter = tagFilter.tagFilter;
     } else {
       const _Set = Set;
-      tagFilter = new Set(tagFilter.tagFilter);
+      iter = new Set(tagFilter.tagFilter);
     }
-    const value = map.get(listKey(tagFilter.channelId, tagFilter.sortOrder, tagFilter, tagFilter.tagSetting));
-    if (null == value) {
-      return false;
-    } else {
-      let threads = tagFilter.threads;
-      const found = threads.filter((type) => outer1_9.has(type.type));
-      threads = value.threads;
-      value.threads = threads.concat(found.map((id) => id.id));
-      const channel = store.getChannel(value.channelId);
-      if (tmp4) {
-        let obj = require(6060) /* trackForumChannelSeenBatch */;
-        obj = {};
-        ({ guild_id: obj2.guildId, id: obj2.channelId } = channel);
-        obj.numArchivedThreads = value.threads.length;
-        obj.hasMoreThreads = tagFilter.hasMore;
-        const _Array = Array;
-        obj.filterTagIds = Array.from(tagFilter.tagFilter);
-        obj.sortOrder = tagFilter.sortOrder;
-        const result = obj.trackForumMorePostsLoaded(obj);
+    const combined = "" + tagFilter.channelId + "|" + tagFilter.sortOrder + "|" + tagFilter.tagSetting + "|";
+    if (0 === iter.size) {
+      const value = map.get(combined);
+      if (null == value) {
+        return false;
+      } else {
+        let threads = tagFilter.threads;
+        const found = threads.filter((type) => set.has(type.type));
+        threads = value.threads;
+        value.threads = threads.concat(found.map((id) => id.id));
+        const channel = store.getChannel(value.channelId);
+        if (tmp9) {
+          const obj = { guildId: null, channelId: null, numArchivedThreads: null, hasMoreThreads: null, filterTagIds: null, sortOrder: null };
+          ({ guild_id: obj4[0], id: obj4[1] } = channel);
+          obj[2] = value.threads.length;
+          obj[3] = tagFilter.hasMore;
+          const _Array2 = Array;
+          obj[4] = Array.from(tagFilter.tagFilter);
+          obj[5] = tagFilter.sortOrder;
+          const result = require(6078) /* trackForumChannelSeenBatch */.trackForumMorePostsLoaded(obj);
+          const obj3 = require(6078) /* trackForumChannelSeenBatch */;
+        }
+        resortListState(value);
+        value.hasMore = tagFilter.hasMore;
+        value.nextOffset = tagFilter.offset + 25;
+        value.loading = false;
+        value.isInitialLoad = false;
       }
-      resortListState(value);
-      value.hasMore = tagFilter.hasMore;
-      value.nextOffset = tagFilter.offset + 25;
-      value.loading = false;
-      value.isInitialLoad = false;
+    } else if (1 === iter.size) {
+      iter = iter.values();
+      let sum = combined + iter.next().value;
+    } else {
+      const _Array = Array;
+      const sorted = Array.from(iter).sort();
+      sum = combined + sorted.join(",");
+      const arr = Array.from(iter);
     }
   },
   LOAD_ARCHIVED_THREADS_FAIL: function handleLoadArchivedThreadsFail(tagFilter) {
     if (tagFilter.tagFilter instanceof Set) {
-      tagFilter = tagFilter.tagFilter;
+      let iter = tagFilter.tagFilter;
     } else {
       const _Set = Set;
-      tagFilter = new Set(tagFilter.tagFilter);
+      iter = new Set(tagFilter.tagFilter);
     }
-    const value = map.get(listKey(tagFilter.channelId, tagFilter.sortOrder, tagFilter, tagFilter.tagSetting));
-    if (null == value) {
-      return false;
+    const combined = "" + tagFilter.channelId + "|" + tagFilter.sortOrder + "|" + tagFilter.tagSetting + "|";
+    if (0 === iter.size) {
+      const value = map.get(combined);
+      if (null == value) {
+        return false;
+      } else {
+        value.loading = false;
+        value.failed = true;
+        value.isInitialLoad = false;
+      }
+    } else if (1 === iter.size) {
+      iter = iter.values();
+      let sum = combined + iter.next().value;
     } else {
-      value.loading = false;
-      value.failed = true;
-      value.isInitialLoad = false;
+      const _Array = Array;
+      const sorted = Array.from(iter).sort();
+      sum = combined + sorted.join(",");
+      const arr = Array.from(iter);
     }
   },
   RESORT_THREADS: function handleResortThreads(channelId) {
-    let iter3;
-    const tmp = _createForOfIteratorHelperLoose(map.values());
-    const iter = tmp();
-    let iter2 = iter;
     let flag = false;
-    let flag2 = false;
-    if (!iter.done) {
-      do {
-        let value = iter2.value;
-        let tmp2 = null != channelId.channelId && value.channelId !== channelId.channelId;
-        if (!tmp2) {
-          let tmp3 = resortListState;
-          let tmp4 = resortListState(value);
-          flag = true;
-        }
-        iter3 = tmp();
-        iter2 = iter3;
-        flag2 = flag;
-      } while (!iter3.done);
+    const values = map.values();
+    const iter = values[Symbol.iterator]();
+    const nextResult = iter.next();
+    while (iter !== undefined) {
+      let tmp3 = nextResult;
+      let tmp4 = null != channelId.channelId;
+      if (tmp4) {
+        let tmp5 = nextResult;
+        tmp4 = tmp3.channelId !== channelId.channelId;
+      }
+      if (!tmp4) {
+        let tmp6 = resortListState;
+        let tmp7 = nextResult;
+        let tmp8 = resortListState(tmp3);
+        flag = true;
+      }
+      continue;
     }
-    return flag2 ? undefined : false;
+    return flag ? undefined : false;
   }
 });
-let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/threads/ArchivedThreadsStore.tsx");
+let result = require("ensureGuildLoaded").fileFinishedImporting("modules/threads/ArchivedThreadsStore.tsx");
 
-export default tmp3;
+export default archivedThreadsStore;
 export const PAGE_SIZE = 25;

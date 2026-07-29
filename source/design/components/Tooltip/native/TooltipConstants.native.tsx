@@ -1,10 +1,10 @@
-// Module ID: 8411
-// Function ID: 67080
+// Module ID: 8435
+// Function ID: 8436
 // Name: tooltipEnterExitAnimation
-// Dependencies: [4577, 2]
+// Dependencies: [4599, 2]
 // Exports: tooltipEnterExitAnimation
 
-// Module 8411 (tooltipEnterExitAnimation)
+// Module 8435 (tooltipEnterExitAnimation)
 let closure_2 = { overshootClamping: true, damping: 35, stiffness: 450, mass: 0.5, restDisplacementThreshold: 0.001 };
 let closure_3 = { code: "function TooltipConstantsNativeTsx1(visible,cleanUp){const{withSpring,translateY,TOOLTIP_SPRING}=this.__closure;return{transform:[{translateY:withSpring(visible===1?0:translateY,TOOLTIP_SPRING,'respect-motion-settings',cleanUp)}],opacity:withSpring(visible,TOOLTIP_SPRING,'respect-motion-settings',cleanUp)};}" };
 const result = require("set").fileFinishedImporting("design/components/Tooltip/native/TooltipConstants.native.tsx");
@@ -14,19 +14,17 @@ export const tooltipEnterExitAnimation = function tooltipEnterExitAnimation(posi
   if ("top" === position) {
     num = 8;
   }
-  const fn = function o(value, fn) {
-    let obj = {};
-    obj = {};
-    const num = 0;
-    obj.translateY = num(outer1_1[0]).withSpring(num, outer1_2, "respect-motion-settings", fn);
+  const fn = function o(value, fn2) {
+    let obj = num(outer1_1[0]);
+    num = 0;
+    obj = { transform: null, opacity: null };
+    obj = { translateY: obj.withSpring(num, outer1_2, "respect-motion-settings", fn2) };
     const items = [obj];
-    obj.transform = items;
-    const obj3 = num(outer1_1[0]);
-    obj.opacity = num(outer1_1[0]).withSpring(value, outer1_2, "respect-motion-settings", fn);
+    obj[0] = items;
+    obj[1] = num(outer1_1[0]).withSpring(value, outer1_2, "respect-motion-settings", fn2);
     return obj;
   };
-  let obj = { withSpring: num(4577).withSpring, translateY: num, TOOLTIP_SPRING: closure_2 };
-  fn.__closure = obj;
+  fn.__closure = { withSpring: num(4599).withSpring, translateY: num, TOOLTIP_SPRING: closure_2 };
   fn.__workletHash = 7727487832145;
   fn.__initData = closure_3;
   return fn;

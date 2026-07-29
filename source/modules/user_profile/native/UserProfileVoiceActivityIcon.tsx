@@ -1,12 +1,12 @@
-// Module ID: 9058
-// Function ID: 71066
+// Module ID: 9082
+// Function ID: 9083
 // Name: UserProfileVoiceActivityIcon
-// Dependencies: [31, 3793, 482, 33, 566, 9059, 4658, 4688, 4689, 4691, 4690, 4693, 2]
+// Dependencies: [19, 3817, 505, 21, 589, 9083, 4680, 4710, 4711, 4713, 4712, 4715, 2]
 // Exports: default
 
-// Module 9058 (UserProfileVoiceActivityIcon)
-import "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 9082 (UserProfileVoiceActivityIcon)
+import "noop";
+import getUncachedChannelPermissions from "getUncachedChannelPermissions";
 import { Permissions } from "sum";
 import { jsx } from "jsxProd";
 
@@ -15,11 +15,9 @@ const result = require("sum").fileFinishedImporting("modules/user_profile/native
 
 export default function UserProfileVoiceActivityIcon(channel) {
   channel = channel.channel;
-  let obj = Object.create(null);
-  obj.channel = 0;
-  const merged = Object.assign(channel, obj);
-  obj = channel(566);
-  const items = [_isNativeReflectConstruct];
+  const merged = Object.assign(channel, Object.create(null));
+  let obj = channel(589);
+  const items = [getUncachedChannelPermissions];
   const stateFromStores = obj.useStateFromStores(items, () => {
     let isPrivateResult = channel.isPrivate();
     if (!isPrivateResult) {
@@ -30,38 +28,38 @@ export default function UserProfileVoiceActivityIcon(channel) {
   if (!channel.isDM()) {
     if (!channel.isGroupDM()) {
       const isGuildStageVoiceResult = channel.isGuildStageVoice();
-      let tmp5 = !stateFromStores;
-      if (!tmp5) {
-        tmp5 = importDefault(4658)(channel);
+      let tmp6 = !stateFromStores;
+      if (stateFromStores) {
+        tmp6 = importDefault(4680)(channel);
       }
       if (isGuildStageVoiceResult) {
-        if (tmp5) {
+        if (tmp6) {
           obj = {};
           const merged1 = Object.assign(merged);
-          let tmp8Result = jsx(channel(4688).StageLockIcon, {});
+          let tmp8Result = jsx(tmp2(4710).StageLockIcon, {});
         }
         return tmp8Result;
       }
       if (isGuildStageVoiceResult) {
-        const obj1 = {};
+        obj = {};
         const merged2 = Object.assign(merged);
-        tmp8Result = jsx(channel(4689).StageIcon, {});
+        tmp8Result = jsx(tmp2(4711).StageIcon, {});
       } else if (channel.isNSFW()) {
-        const obj2 = {};
+        const obj1 = {};
         const merged3 = Object.assign(merged);
-        tmp8Result = tmp8(tmp9(4691).VoiceWarningIcon, obj2);
+        tmp8Result = tmp8(tmp2(4713).VoiceWarningIcon, obj1);
       } else {
-        if (tmp5) {
-          let VoiceNormalIcon = tmp9(4690).VoiceLockIcon;
+        if (tmp6) {
+          let VoiceNormalIcon = tmp2(4712).VoiceLockIcon;
         } else {
-          VoiceNormalIcon = tmp9(4693).VoiceNormalIcon;
+          VoiceNormalIcon = tmp2(4715).VoiceNormalIcon;
         }
-        const obj3 = {};
+        const obj2 = {};
         const merged4 = Object.assign(merged);
-        tmp8Result = tmp8(VoiceNormalIcon, obj3);
+        tmp8Result = tmp8(VoiceNormalIcon, obj2);
       }
     }
   }
   const merged5 = Object.assign(merged);
-  return jsx(channel(9059).PhoneCallIcon, {});
+  return jsx(channel(9083).PhoneCallIcon, {});
 };

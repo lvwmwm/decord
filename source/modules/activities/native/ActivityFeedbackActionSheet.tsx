@@ -1,11 +1,11 @@
-// Module ID: 16137
-// Function ID: 124775
+// Module ID: 16175
+// Function ID: 16176
 // Name: ActivityFeedbackReasons
-// Dependencies: [31, 4190, 653, 9497, 33, 675, 16138, 9518, 1212, 9500, 3865, 16139, 2]
+// Dependencies: [19, 4214, 676, 9521, 21, 698, 16176, 9542, 1236, 9524, 3889, 16177, 2]
 // Exports: default
 
-// Module 16137 (ActivityFeedbackReasons)
-import "result";
+// Module 16175 (ActivityFeedbackReasons)
+import "noop";
 import { ActivityFeedbackReasons } from "items3";
 import { AnalyticEvents } from "ME";
 import { FeedbackType } from "FeedbackRating";
@@ -24,28 +24,27 @@ export default function ActivityFeedbackActionSheet(activityApplication) {
   ({ channel: importDefault, embeddedActivityLocation: dependencyMap, analyticsData: ActivityFeedbackReasons } = activityApplication);
   const embeddedActivityConfig = activityApplication.embeddedActivityConfig;
   let prop;
-  if (null != embeddedActivityConfig) {
+  if (embeddedActivityConfig != null) {
     prop = embeddedActivityConfig.displays_advertisements;
   }
-  let obj = {};
-  const tmp2 = importDefault(16138)(true, true === prop);
-  const intl = activityApplication(1212).intl;
+  let obj = { headerLabel: null, showHeaderCloseButton: true, ratingsBodyLabel: null, reasonsHeaderLabel: null, reasons: null, feedbackReasons: null, otherKey: null, trackOpen: null, trackReport: null };
+  const tmp2 = importDefault(16176)(true, true === prop);
+  const intl = activityApplication(1236).intl;
   obj = { applicationName: activityApplication.name };
-  obj.headerLabel = intl.formatToPlainString(activityApplication(1212).t.QXYwoD, obj);
-  obj.showHeaderCloseButton = true;
-  const intl2 = activityApplication(1212).intl;
-  obj.ratingsBodyLabel = intl2.string(activityApplication(1212).t["9hk2KF"]);
-  const intl3 = activityApplication(1212).intl;
-  obj.reasonsHeaderLabel = intl3.string(activityApplication(1212).t.g1q5fr);
-  obj.reasons = tmp2;
-  obj.feedbackReasons = items;
-  obj.otherKey = ActivityFeedbackReasons.OTHER;
-  obj.trackOpen = function trackOpen() {
+  obj[0] = intl.formatToPlainString(activityApplication(1236).t.QXYwoD, obj);
+  const intl2 = activityApplication(1236).intl;
+  obj[2] = intl2.string(activityApplication(1236).t["9hk2KF"]);
+  const intl3 = activityApplication(1236).intl;
+  obj[3] = intl3.string(activityApplication(1236).t.g1q5fr);
+  obj[4] = tmp2;
+  obj[5] = items;
+  obj[6] = ActivityFeedbackReasons.OTHER;
+  obj[7] = function trackOpen() {
     let obj = outer1_1(outer1_2[5]);
     obj = { type: "Activity Feedback Sheet", application_id: activityApplication.id, application_name: activityApplication.name, game_id: activityApplication.id, source: "Activity End" };
     obj.track(outer1_4.OPEN_POPOUT, obj);
   };
-  obj.trackReport = function trackReport(dontShowAgain) {
+  obj[8] = function trackReport(dontShowAgain) {
     let feedback;
     let rating;
     let reason;
@@ -56,28 +55,32 @@ export default function ActivityFeedbackActionSheet(activityApplication) {
     }
     if (dontShowAgain.dontShowAgain) {
       let obj = outer1_1(outer1_2[5]);
-      obj = { application_id: activityApplication.id, rating };
+      obj = { application_id: null, rating: null };
+      obj[0] = activityApplication.id;
+      obj[1] = rating;
       obj.track(outer1_4.ACTIVITY_REPORT_DONT_SHOW, obj);
-      obj = { feedbackType: outer1_5.ACTIVITY, location: "ActivityFeedbackActionSheet" };
+      obj = { feedbackType: null, location: "ActivityFeedbackActionSheet" };
+      obj[0] = outer1_5.ACTIVITY;
       activityApplication(outer1_2[9]).processOptOut(obj);
       const obj3 = activityApplication(outer1_2[9]);
     }
     if (null != rating) {
       activityApplication(outer1_2[10]).presentFeedbackSent();
-      const obj1 = { problem: value, channel: closure_1, embeddedActivityLocation: closure_2 };
-      let str2 = "";
+      const obj1 = { problem: null, channel: null, embeddedActivityLocation: null, feedback: null, activityApplication: null, analyticsData: null, location: "Activity End", rating: null };
+      obj1[0] = value;
+      obj1[1] = closure_1;
+      obj1[2] = closure_2;
       const obj5 = activityApplication(outer1_2[10]);
-      if (null != feedback) {
-        str2 = feedback;
+      if (feedback == null) {
+        feedback = "";
       }
-      obj1.feedback = str2;
-      obj1.activityApplication = activityApplication;
-      obj1.analyticsData = closure_3;
-      obj1.location = "Activity End";
-      obj1.rating = rating;
+      obj1[3] = feedback;
+      obj1[4] = activityApplication;
+      obj1[5] = closure_3;
+      obj1[7] = rating;
       outer1_1(outer1_2[11])(obj1);
-      const tmp17 = outer1_1(outer1_2[11]);
+      const tmp16 = outer1_1(outer1_2[11]);
     }
   };
-  return jsx(importDefault(9518), { applicationName: activityApplication.name });
+  return jsx(importDefault(9542), { applicationName: activityApplication.name });
 };

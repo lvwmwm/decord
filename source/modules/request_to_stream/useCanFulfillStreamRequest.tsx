@@ -1,43 +1,43 @@
-// Module ID: 10935
-// Function ID: 84727
+// Module ID: 10959
+// Function ID: 10960
 // Name: canFulfillStreamRequest
-// Dependencies: [4185, 4184, 1194, 1348, 1838, 3793, 4252, 4237, 653, 10717, 477, 566, 2]
+// Dependencies: [4209, 4208, 1218, 1372, 1862, 3817, 4276, 4261, 676, 10741, 500, 589, 2]
 // Exports: default
 
-// Module 10935 (canFulfillStreamRequest)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_3 from "_isNativeReflectConstruct";
-import closure_4 from "_isNativeReflectConstruct";
-import closure_5 from "_isNativeReflectConstruct";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import closure_7 from "_isNativeReflectConstruct";
-import closure_8 from "_isNativeReflectConstruct";
-import closure_9 from "_isNativeReflectConstruct";
+// Module 10959 (canFulfillStreamRequest)
+import initialize from "initialize";
+import reset from "reset";
+import fetchFingerprint from "fetchFingerprint";
+import ensureGuildLoaded from "ensureGuildLoaded";
+import createGuildRecordFromRust from "createGuildRecordFromRust";
+import getUncachedChannelPermissions from "getUncachedChannelPermissions";
+import sortActivity from "sortActivity";
+import createRTCConnection from "createRTCConnection";
 import ME from "ME";
 
-let closure_10;
-let closure_11;
+let c10;
+let unpackModuleId;
 const require = arg1;
 function canFulfillStreamRequest(channel_id, arg1) {
   let flag = arg1;
-  let obj = arg2;
-  let obj2 = arg3;
-  let obj3 = arg4;
-  let obj4 = arg6;
   if (arg1 === undefined) {
     flag = false;
   }
-  if (obj === undefined) {
-    obj = closure_3;
+  let obj = arg2;
+  if (arg2 === undefined) {
+    obj = reset;
   }
-  if (obj2 === undefined) {
-    obj2 = closure_5;
+  let obj2 = arg3;
+  if (arg3 === undefined) {
+    obj2 = ensureGuildLoaded;
   }
-  if (obj3 === undefined) {
-    obj3 = closure_8;
+  let obj3 = arg4;
+  if (arg4 === undefined) {
+    obj3 = sortActivity;
   }
-  if (obj4 === undefined) {
-    obj4 = closure_9;
+  let obj4 = arg6;
+  if (arg6 === undefined) {
+    obj4 = createRTCConnection;
   }
   let id;
   let DESKTOP;
@@ -47,22 +47,24 @@ function canFulfillStreamRequest(channel_id, arg1) {
     return items;
   } else {
     const channelId = obj4.getChannelId();
-    const tmp18 = null != obj.getCurrentUserActiveStream();
+    const tmp15 = null != obj.getCurrentUserActiveStream();
+    const tmp16 = flag;
+    const tmp17 = id;
     const application = channel_id.application;
     id = undefined;
     const videoPermission = flag(id[9]).getVideoPermission(channel);
-    if (null != application) {
+    if (application != null) {
       id = application.id;
     }
     DESKTOP = constants.DESKTOP;
     const obj6 = flag(id[9]);
-    DESKTOP = flag(id[10]).isAndroid() ? tmp6.ANDROID : tmp6.IOS;
+    DESKTOP = tmp16(tmp17[10]).isAndroid() ? tmp3.ANDROID : tmp3.IOS;
     if (null == id) {
       const items1 = [false, obj.NOT_RUNNING_GAME];
       return items1;
     } else {
       const activities = obj3.getActivities(id.getId(), channel.guild_id);
-      if (tmp18) {
+      if (tmp15) {
         const items2 = [false, obj.ALREADY_STREAMING];
         let items4 = items2;
       } else if (channelId === channel_id.channel_id) {
@@ -71,34 +73,34 @@ function canFulfillStreamRequest(channel_id, arg1) {
           items3[0] = false;
           items3[1] = obj.NO_PERMISSION;
         }
-        if (tmp24) {
+        if (tmp21) {
           items3[0] = true;
           items3[1] = null;
-          let tmp11 = items3;
+          let tmp8 = items3;
         } else {
           items3[0] = false;
           items3[1] = obj.NOT_RUNNING_GAME;
-          tmp11 = items3;
+          tmp8 = items3;
         }
       } else {
         items4 = [false, obj.NOT_IN_VOICE_CHANNEL];
       }
       return items4;
     }
-    const obj5 = flag(id[10]);
+    const tmp16Result = tmp16(tmp17[10]);
   }
 }
-({ ActivityGamePlatforms: closure_10, ActivityTypes: closure_11 } = ME);
+({ ActivityGamePlatforms: c10, ActivityTypes: unpackModuleId } = ME);
 let obj = { NOT_IN_VOICE_CHANNEL: "NOT_IN_VOICE_CHANNEL", NOT_RUNNING_GAME: "NOT_RUNNING_GAME", ALREADY_STREAMING: "ALREADY_STREAMING", NO_PERMISSION: "NO_PERMISSION", PENDING_REQUEST: "PENDING_REQUEST", EXPIRED: "EXPIRED" };
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/request_to_stream/useCanFulfillStreamRequest.tsx");
+const result = require("fetchFingerprint").fileFinishedImporting("modules/request_to_stream/useCanFulfillStreamRequest.tsx");
 
 export default function useCanFulfillStreamRequest(arg0) {
-  let flag = arg1;
   const _require = arg0;
+  let flag = arg1;
   if (arg1 === undefined) {
     flag = false;
   }
-  const items = [closure_3, closure_5, closure_8, _isNativeReflectConstruct, closure_9, _createForOfIteratorHelperLoose, closure_7];
+  const items = [reset, ensureGuildLoaded, sortActivity, initialize, createRTCConnection, createGuildRecordFromRust, getUncachedChannelPermissions];
   return _require(flag[11]).useStateFromStores(items, () => outer1_13(closure_0, flag, outer1_3, outer1_5, outer1_8, outer1_2, outer1_9, outer1_6, outer1_7));
 };
 export const StreamRequestUnfulfillableReason = obj;

@@ -1,15 +1,16 @@
-// Module ID: 3948
-// Function ID: 32459
+// Module ID: 3972
+// Function ID: 3973
 // Name: BountiesScrollIndicatorRive
-// Dependencies: [29, 31, 33, 3894, 3949, 3945, 2]
+// Dependencies: [109, 19, 21, 3918, 3973, 3969, 2]
 
-// Module 3948 (BountiesScrollIndicatorRive)
+// Module 3972 (BountiesScrollIndicatorRive)
 import _objectWithoutProperties from "_objectWithoutProperties";
-import importAllResult from "result";
+import importAllResult from "noop";
 import { jsx } from "jsxProd";
 
 const require = arg1;
 let closure_3 = ["fallback", "artboard", "stateMachine", "defaultViewModelInstance", "dataBinding", "onDataBindingChange"];
+let c5 = importAllResult;
 let closure_7 = { "Bounties Scroll Indicator": { startAnimation: "trigger", looping: "boolean", color: "color" } };
 let closure_8 = { "Bounties Scroll Indicator": ["Instance"] };
 let closure_9 = {
@@ -20,34 +21,34 @@ let closure_9 = {
     let playIfNeeded;
     ({ instance, dataBinding, onDataBindingChange, playIfNeeded } = arg0);
     let startAnimation;
-    if (null != dataBinding) {
+    if (dataBinding != null) {
       startAnimation = dataBinding.startAnimation;
     }
     let startAnimation1;
-    if (null != onDataBindingChange) {
+    if (onDataBindingChange != null) {
       startAnimation1 = onDataBindingChange.startAnimation;
     }
-    const triggerBinding = require(3894) /* useObservedValue */.useTriggerBinding("startAnimation", instance, startAnimation, startAnimation1, playIfNeeded);
-    const obj = require(3894) /* useObservedValue */;
+    const triggerBinding = require(3918) /* BaseRive */.useTriggerBinding("startAnimation", instance, startAnimation, startAnimation1, playIfNeeded);
+    let tmpResult = tmp(3918);
     let looping;
-    if (null != dataBinding) {
+    if (dataBinding != null) {
       looping = dataBinding.looping;
     }
     let looping1;
-    if (null != onDataBindingChange) {
+    if (onDataBindingChange != null) {
       looping1 = onDataBindingChange.looping;
     }
-    const booleanBinding = require(3894) /* useObservedValue */.useBooleanBinding("looping", instance, looping, looping1, playIfNeeded);
-    const obj2 = require(3894) /* useObservedValue */;
+    const booleanBinding = tmpResult.useBooleanBinding("looping", instance, looping, looping1, playIfNeeded);
+    tmpResult = tmp(3918);
     let color;
-    if (null != dataBinding) {
+    if (dataBinding != null) {
       color = dataBinding.color;
     }
     let color1;
-    if (null != onDataBindingChange) {
+    if (onDataBindingChange != null) {
       color1 = onDataBindingChange.color;
     }
-    const colorBinding = require(3894) /* useObservedValue */.useColorBinding("color", instance, color, color1, playIfNeeded);
+    const colorBinding = tmpResult.useColorBinding("color", instance, color, color1, playIfNeeded);
     return null;
   }
 };
@@ -72,22 +73,29 @@ let closure_10 = importAllResult.forwardRef(function BountiesScrollIndicatorRive
     if (null != outer1_9[str]) {
       const obj = {};
       const merged = Object.assign(arg0);
-      obj["dataBinding"] = dataBinding;
-      obj["onDataBindingChange"] = onDataBindingChange;
+      obj.dataBinding = dataBinding;
+      obj.onDataBindingChange = onDataBindingChange;
       tmp2 = outer1_6(tmp, obj);
     }
     return tmp2;
   }, items);
-  let obj = { ref, src: dataBinding(onDataBindingChange[4]), artboard: str, artboardProperties: closure_7, artboardViewModelInstances: closure_8, defaultViewModelInstance: str2, stateMachine: defaultViewModelInstance.stateMachine, renderDataBinding: callback };
+  let obj = { ref, src: null, artboard: null, artboardProperties: null, artboardViewModelInstances: null, defaultViewModelInstance: null, stateMachine: null, renderDataBinding: null };
+  obj[1] = dataBinding(onDataBindingChange[4]);
+  obj[2] = str;
+  obj[3] = closure_7;
+  obj[4] = closure_8;
+  obj[5] = str2;
+  obj[6] = defaultViewModelInstance.stateMachine;
+  obj[7] = callback;
   let merged = Object.assign(callback(defaultViewModelInstance, closure_3));
-  return jsx(str(onDataBindingChange[3]).BaseRive, { ref, src: dataBinding(onDataBindingChange[4]), artboard: str, artboardProperties: closure_7, artboardViewModelInstances: closure_8, defaultViewModelInstance: str2, stateMachine: defaultViewModelInstance.stateMachine, renderDataBinding: callback });
+  return jsx(str(onDataBindingChange[3]).BaseRive, { ref, src: null, artboard: null, artboardProperties: null, artboardViewModelInstances: null, defaultViewModelInstance: null, stateMachine: null, renderDataBinding: null });
 });
 const forwardRefResult = importAllResult.forwardRef(function BountiesScrollIndicatorRiveWithBoundary(fallback, ref) {
-  let obj = { fallback: fallback.fallback };
+  let obj = { fallback: fallback.fallback, children: null };
   obj = { ref };
   const merged = Object.assign(fallback);
-  obj.children = <closure_10 ref={arg1} />;
-  return jsx(require(3945) /* _isNativeReflectConstruct */.RiveErrorBoundary, { ref });
+  obj[1] = <closure_10 ref={arg1} />;
+  return jsx(require(3969) /* getDerivedStateFromError */.RiveErrorBoundary, { ref });
 });
 const result = require("jsxProd").fileFinishedImporting("../discord_common/js/packages/design/components/Rive/native/generated/BountiesScrollIndicatorRive.tsx");
 

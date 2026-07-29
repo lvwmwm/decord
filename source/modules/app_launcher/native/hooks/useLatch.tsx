@@ -1,11 +1,11 @@
-// Module ID: 11312
-// Function ID: 87806
+// Module ID: 11336
+// Function ID: 11337
 // Name: useLatch
-// Dependencies: [31, 2]
+// Dependencies: [19, 2]
 // Exports: default
 
-// Module 11312 (useLatch)
-import result from "result";
+// Module 11336 (useLatch)
+import noop from "noop";
 
 const result = require("set").fileFinishedImporting("modules/app_launcher/native/hooks/useLatch.tsx");
 
@@ -20,7 +20,7 @@ export default function useLatch(arg0) {
     }, []),
     tryCallback: React.useCallback(() => {
       if (ref.current) {
-        ref.current = false;
+        tmp.current = false;
         callback();
       }
     }, items)

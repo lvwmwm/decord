@@ -1,12 +1,12 @@
-// Module ID: 11006
-// Function ID: 85432
+// Module ID: 11030
+// Function ID: 11031
 // Name: openDisableCommunication
-// Dependencies: [31, 1850, 33, 4372, 11007, 1935, 4506, 11010, 2]
+// Dependencies: [19, 1874, 21, 4395, 11031, 1959, 4529, 11034, 2]
 // Exports: openDisableCommunication, openEnableCommunication
 
-// Module 11006 (openDisableCommunication)
-import "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 11030 (openDisableCommunication)
+import "noop";
+import mergeGuildAvatar from "mergeGuildAvatar";
 import { jsx } from "jsxProd";
 
 const require = arg1;
@@ -18,9 +18,12 @@ export const openDisableCommunication = function openDisableCommunication(userId
   ({ guildId, cancelButtonCallback } = userId);
   user = user.getUser(userId.userId);
   if (null != user) {
-    let obj = importDefault(4372);
-    obj = { guildId, user, cancelButtonCallback };
-    obj.pushLazy(require(1935) /* maybeLoadBundle */(11007, dependencyMap.paths), obj);
+    let obj = importDefault(4395);
+    obj = { guildId: null, user: null, cancelButtonCallback: null };
+    obj[0] = guildId;
+    obj[1] = user;
+    obj[2] = cancelButtonCallback;
+    obj.pushLazy(require(1959) /* asyncRequireImpl */(11031, dependencyMap.paths), obj);
   }
 };
 export const openEnableCommunication = function openEnableCommunication(arg0) {
@@ -28,7 +31,7 @@ export const openEnableCommunication = function openEnableCommunication(arg0) {
   let importDefault;
   let require;
   ({ guildId: require, userId: importDefault, cancelButtonCallback: dependencyMap } = arg0);
-  let obj = importDefault(4506);
+  let obj = importDefault(4529);
   obj = {
     importer() {
       return outer1_0(outer1_2[5])(outer1_2[7], outer1_2.paths).then((arg0) => {
@@ -36,10 +39,10 @@ export const openEnableCommunication = function openEnableCommunication(arg0) {
         return (arg0) => {
           const obj = {};
           const merged = Object.assign(arg0);
-          obj["guildId"] = outer2_0;
-          obj["userId"] = outer2_1;
-          obj["onCancel"] = outer2_2;
-          return outer3_4(closure_0, obj);
+          obj.guildId = closure_0;
+          obj.userId = outer1_1;
+          obj.onCancel = outer1_2;
+          return outer2_4(closure_0, obj);
         };
       });
     }

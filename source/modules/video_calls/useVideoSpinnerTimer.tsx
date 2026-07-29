@@ -1,12 +1,12 @@
-// Module ID: 10532
-// Function ID: 81504
+// Module ID: 10556
+// Function ID: 10557
 // Name: useVideoSpinnerTimer
-// Dependencies: [57, 31, 10533, 2]
+// Dependencies: [32, 19, 10557, 2]
 // Exports: default
 
-// Module 10532 (useVideoSpinnerTimer)
+// Module 10556 (useVideoSpinnerTimer)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
+import noop from "noop";
 
 const require = arg1;
 const result = require("map").fileFinishedImporting("modules/video_calls/useVideoSpinnerTimer.tsx");
@@ -33,7 +33,7 @@ export default function useVideoSpinnerTimer(userId) {
       if (loading) {
         first.onSpinnerStarted();
       } else if (null != streamId) {
-        first.trackSpinnerDuration(videoSpinnerContext, userId, streamId);
+        first.trackSpinnerDuration(videoSpinnerContext, userId, tmp2);
       }
     }
   }, items);

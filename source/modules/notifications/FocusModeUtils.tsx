@@ -1,24 +1,24 @@
-// Module ID: 10234
-// Function ID: 79010
+// Module ID: 10255
+// Function ID: 10256
 // Name: useFocusModeEnabled
-// Dependencies: [4845, 3805, 653, 3838, 1331, 1313, 675, 4505, 1212, 10235, 2]
+// Dependencies: [4867, 3829, 676, 3862, 1355, 1337, 698, 4528, 1236, 10256, 2]
 // Exports: getFocusModeEnabled, setFocusMode, useFocusModeEnabled
 
-// Module 10234 (useFocusModeEnabled)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 10255 (useFocusModeEnabled)
+import filterPlayingActivities from "filterPlayingActivities";
 import { NotificationSettingsUpdateType as closure_4 } from "AccountNotificationFlags";
 import ME from "ME";
 
-let closure_5;
+let c5;
 let closure_6;
 const require = arg1;
-({ AnalyticEvents: closure_5, StatusTypes: closure_6 } = ME);
+({ AnalyticEvents: c5, StatusTypes: closure_6 } = ME);
 const result = require("ME").fileFinishedImporting("modules/notifications/FocusModeUtils.tsx");
 
 export const useFocusModeEnabled = function useFocusModeEnabled() {
-  const FocusMode = require(3838) /* explicitContentFromProto */.FocusMode;
+  const FocusMode = require(3862) /* explicitContentFromProto */.FocusMode;
   let setting = FocusMode.useSetting();
-  const FocusModeExpiresAtSetting = require(3838) /* explicitContentFromProto */.FocusModeExpiresAtSetting;
+  const FocusModeExpiresAtSetting = require(3862) /* explicitContentFromProto */.FocusModeExpiresAtSetting;
   const setting1 = FocusModeExpiresAtSetting.useSetting();
   if (setting) {
     let tmp3 = "0" === setting1;
@@ -36,9 +36,9 @@ export const useFocusModeEnabled = function useFocusModeEnabled() {
   return setting;
 };
 export const getFocusModeEnabled = function getFocusModeEnabled() {
-  const FocusMode = require(3838) /* explicitContentFromProto */.FocusMode;
+  const FocusMode = require(3862) /* explicitContentFromProto */.FocusMode;
   let setting = FocusMode.getSetting();
-  const FocusModeExpiresAtSetting = require(3838) /* explicitContentFromProto */.FocusModeExpiresAtSetting;
+  const FocusModeExpiresAtSetting = require(3862) /* explicitContentFromProto */.FocusModeExpiresAtSetting;
   const setting1 = FocusModeExpiresAtSetting.getSetting();
   if (setting) {
     setting = null != setting1;
@@ -57,9 +57,9 @@ export const getFocusModeEnabled = function getFocusModeEnabled() {
 export const setFocusMode = function setFocusMode(quiet_mode_enabled, arg1) {
   const _require = quiet_mode_enabled;
   const importDefault = arg1;
-  const FocusMode = _require(3838).FocusMode;
+  const FocusMode = _require(3862).FocusMode;
   const setting = FocusMode.getSetting();
-  const PreloadedUserSettingsActionCreators = _require(1331).PreloadedUserSettingsActionCreators;
+  const PreloadedUserSettingsActionCreators = _require(1355).PreloadedUserSettingsActionCreators;
   PreloadedUserSettingsActionCreators.updateAsync("notifications", (arg0) => {
     const BoolValue = quiet_mode_enabled(outer1_2[5]).BoolValue;
     arg0.quietMode = BoolValue.create({ value: quiet_mode_enabled });
@@ -69,32 +69,32 @@ export const setFocusMode = function setFocusMode(quiet_mode_enabled, arg1) {
       if (null != closure_1) {
         const _Date = Date;
         const _HermesInternal = HermesInternal;
-        str = "" + Date.now() + closure_1;
+        str = "" + Date.now() + tmp;
       }
     }
     arg0.focusModeExpiresAtMs = str;
-  }, _require(1331).UserSettingsDelay.INFREQUENT_USER_ACTION);
-  let obj = importDefault(675);
+  }, _require(1355).UserSettingsDelay.INFREQUENT_USER_ACTION);
+  let obj = importDefault(698);
   obj = { update_type: constants.ACCOUNT, quiet_mode_enabled, quiet_mode_enabled_old: setting };
   obj.track(constants2.NOTIFICATION_SETTINGS_UPDATED, obj);
-  let tmp4 = status.getStatus() === constants3.DND && quiet_mode_enabled;
-  if (tmp4) {
-    tmp4 = null == arg1;
+  let tmp7 = status.getStatus() === constants3.DND && quiet_mode_enabled;
+  if (tmp7) {
+    tmp7 = null == arg1;
   }
-  if (tmp4) {
-    obj = {};
-    const intl = _require(1212).intl;
-    obj.title = intl.string(_require(1212).t["B+cbLS"]);
-    const intl2 = _require(1212).intl;
-    obj.body = intl2.string(_require(1212).t.CYVgLI);
-    const intl3 = _require(1212).intl;
-    obj.cancelText = intl3.string(_require(1212).t.f3Pet9);
-    const intl4 = _require(1212).intl;
-    obj.confirmText = intl4.string(_require(1212).t.BddRzS);
-    obj.onConfirm = function onConfirm() {
-      callback(outer1_2[9])({ nextStatus: outer1_6.ONLINE });
+  if (tmp7) {
+    obj = { title: null, body: null, cancelText: null, confirmText: null, onConfirm: null };
+    const intl = tmp(1236).intl;
+    obj[0] = intl.string(tmp(1236).t["B+cbLS"]);
+    const intl2 = tmp(1236).intl;
+    obj[1] = intl2.string(tmp(1236).t.CYVgLI);
+    const intl3 = tmp(1236).intl;
+    obj[2] = intl3.string(tmp(1236).t.f3Pet9);
+    const intl4 = tmp(1236).intl;
+    obj[3] = intl4.string(tmp(1236).t.BddRzS);
+    obj[4] = function onConfirm() {
+      callback(table[9])({ nextStatus: constants.ONLINE });
     };
-    importDefault(4505).show(obj);
-    const obj3 = importDefault(4505);
+    importDefault(4528).show(obj);
+    const tmp5Result = importDefault(4528);
   }
 };

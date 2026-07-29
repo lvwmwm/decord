@@ -1,100 +1,86 @@
-// Module ID: 16336
-// Function ID: 126802
-// Name: _isNativeReflectConstruct
-// Dependencies: [15, 17, 18, 7, 6, 1859, 653, 1184, 3747, 21, 2]
+// Module ID: 16371
+// Function ID: 16372
+// Name: getTargetType
+// Dependencies: [1883, 676, 1208, 3771, 11, 2]
 
-// Module 16336 (_isNativeReflectConstruct)
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
-import importDefaultResult from "isNonEmptyString";
-import closure_6 from "ME";
+// Module 16371 (getTargetType)
+import "toJS";
 import ME from "ME";
-import importDefaultResult1 from "Record";
 
-let closure_7;
-let closure_8;
-let closure_9;
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
-  }
-  const result = _isNativeReflectConstruct();
-}
-function getTargetType(arg0) {
-  if (arg0 === constants2.ALL) {
+let c3;
+let c4;
+let obj1;
+function getTargetType(action) {
+  if (action === constants2.ALL) {
     let CHANNEL = constants.ALL;
-  } else if (arg0 <= constants2.GUILD_UPDATE) {
+  } else if (action <= tmp.GUILD_UPDATE) {
     CHANNEL = constants.GUILD;
   } else {
-    if (arg0 > constants2.CHANNEL_DELETE) {
-      if (arg0 !== constants2.MESSAGE_BULK_DELETE) {
-        if (arg0 <= constants2.CHANNEL_OVERWRITE_DELETE) {
+    if (action > tmp.CHANNEL_DELETE) {
+      if (action !== tmp.MESSAGE_BULK_DELETE) {
+        if (action <= tmp.CHANNEL_OVERWRITE_DELETE) {
           CHANNEL = constants.CHANNEL_OVERWRITE;
         } else {
-          if (arg0 > constants2.BOT_ADD) {
-            if (arg0 !== constants2.MESSAGE_DELETE) {
-              if (arg0 !== constants2.MESSAGE_PIN) {
-                if (arg0 !== constants2.MESSAGE_UNPIN) {
-                  if (arg0 <= constants2.ROLE_DELETE) {
+          if (action > tmp.BOT_ADD) {
+            if (action !== tmp.MESSAGE_DELETE) {
+              if (action !== tmp.MESSAGE_PIN) {
+                if (action !== tmp.MESSAGE_UNPIN) {
+                  if (action <= tmp.ROLE_DELETE) {
                     CHANNEL = constants.ROLE;
-                  } else if (arg0 <= constants2.INVITE_DELETE) {
+                  } else if (action <= tmp.INVITE_DELETE) {
                     CHANNEL = constants.INVITE;
-                  } else if (arg0 <= constants2.WEBHOOK_DELETE) {
+                  } else if (action <= tmp.WEBHOOK_DELETE) {
                     CHANNEL = constants.WEBHOOK;
-                  } else if (arg0 <= constants2.EMOJI_DELETE) {
+                  } else if (action <= tmp.EMOJI_DELETE) {
                     CHANNEL = constants.EMOJI;
-                  } else if (arg0 <= constants2.INTEGRATION_DELETE) {
+                  } else if (action <= tmp.INTEGRATION_DELETE) {
                     CHANNEL = constants.INTEGRATION;
-                  } else if (arg0 <= constants2.STAGE_INSTANCE_DELETE) {
+                  } else if (action <= tmp.STAGE_INSTANCE_DELETE) {
                     CHANNEL = constants.STAGE_INSTANCE;
-                  } else if (arg0 <= constants2.STICKER_DELETE) {
+                  } else if (action <= tmp.STICKER_DELETE) {
                     CHANNEL = constants.STICKER;
-                  } else if (arg0 <= constants2.GUILD_SCHEDULED_EVENT_DELETE) {
+                  } else if (action <= tmp.GUILD_SCHEDULED_EVENT_DELETE) {
                     CHANNEL = constants.GUILD_SCHEDULED_EVENT;
-                  } else if (arg0 <= constants2.THREAD_DELETE) {
+                  } else if (action <= tmp.THREAD_DELETE) {
                     CHANNEL = constants.THREAD;
-                  } else if (arg0 === constants2.APPLICATION_COMMAND_PERMISSION_UPDATE) {
+                  } else if (action === tmp.APPLICATION_COMMAND_PERMISSION_UPDATE) {
                     CHANNEL = constants.APPLICATION_COMMAND;
-                  } else if (arg0 <= constants2.SOUNDBOARD_SOUND_DELETE) {
+                  } else if (action <= tmp.SOUNDBOARD_SOUND_DELETE) {
                     CHANNEL = constants.GUILD_SOUNDBOARD;
-                  } else if (arg0 < constants2.AUTO_MODERATION_BLOCK_MESSAGE) {
+                  } else if (action < tmp.AUTO_MODERATION_BLOCK_MESSAGE) {
                     CHANNEL = constants.AUTO_MODERATION_RULE;
                   } else {
-                    if (arg0 !== constants2.AUTO_MODERATION_BLOCK_MESSAGE) {
-                      if (arg0 !== constants2.AUTO_MODERATION_FLAG_TO_CHANNEL) {
-                        if (arg0 !== constants2.AUTO_MODERATION_USER_COMMUNICATION_DISABLED) {
-                          if (arg0 !== constants2.AUTO_MODERATION_QUARANTINE_USER) {
-                            if (arg0 <= constants2.CREATOR_MONETIZATION_TERMS_ACCEPTED) {
+                    if (action !== tmp.AUTO_MODERATION_BLOCK_MESSAGE) {
+                      if (action !== tmp.AUTO_MODERATION_FLAG_TO_CHANNEL) {
+                        if (action !== tmp.AUTO_MODERATION_USER_COMMUNICATION_DISABLED) {
+                          if (action !== tmp.AUTO_MODERATION_QUARANTINE_USER) {
+                            if (action <= tmp.CREATOR_MONETIZATION_TERMS_ACCEPTED) {
                               CHANNEL = constants.GUILD;
-                            } else if (arg0 <= constants2.ONBOARDING_PROMPT_DELETE) {
+                            } else if (action <= tmp.ONBOARDING_PROMPT_DELETE) {
                               CHANNEL = constants.ONBOARDING_PROMPT;
-                            } else if (arg0 <= constants2.ONBOARDING_UPDATE) {
+                            } else if (action <= tmp.ONBOARDING_UPDATE) {
                               CHANNEL = constants.GUILD_ONBOARDING;
-                            } else if (arg0 <= constants2.GUILD_HOME_REMOVE_ITEM) {
+                            } else if (action <= tmp.GUILD_HOME_REMOVE_ITEM) {
                               CHANNEL = constants.GUILD_HOME;
-                            } else if (arg0 <= constants2.HARMFUL_LINKS_BLOCKED_MESSAGE) {
+                            } else if (action <= tmp.HARMFUL_LINKS_BLOCKED_MESSAGE) {
                               CHANNEL = constants.GUILD;
-                            } else if (arg0 <= constants2.HOME_SETTINGS_UPDATE) {
+                            } else if (action <= tmp.HOME_SETTINGS_UPDATE) {
                               CHANNEL = constants.HOME_SETTINGS;
-                            } else if (arg0 <= constants2.VOICE_CHANNEL_STATUS_DELETE) {
+                            } else if (action <= tmp.VOICE_CHANNEL_STATUS_DELETE) {
                               CHANNEL = constants.VOICE_CHANNEL_STATUS;
-                            } else if (arg0 <= constants2.GUILD_SCHEDULED_EVENT_EXCEPTION_DELETE) {
+                            } else if (action <= tmp.GUILD_SCHEDULED_EVENT_EXCEPTION_DELETE) {
                               CHANNEL = constants.GUILD_SCHEDULED_EVENT_EXCEPTION;
-                            } else if (arg0 <= constants2.GUILD_MEMBER_VERIFICATION_UPDATE) {
+                            } else if (action <= tmp.GUILD_MEMBER_VERIFICATION_UPDATE) {
                               CHANNEL = constants.GUILD_MEMBER_VERIFICATION;
-                            } else if (arg0 <= constants2.GUILD_PROFILE_UPDATE) {
+                            } else if (action <= tmp.GUILD_PROFILE_UPDATE) {
                               CHANNEL = constants.GUILD_PROFILE;
-                            } else if (arg0 <= constants2.GUILD_MIGRATE_BYPASS_SLOWMODE_PERMISSION) {
+                            } else if (action <= tmp.GUILD_MIGRATE_BYPASS_SLOWMODE_PERMISSION) {
                               CHANNEL = constants.GUILD;
                             } else {
                               const _HermesInternal = HermesInternal;
-                              importDefault(1184).captureMessage("Unknown target type for: " + arg0);
+                              importDefault(1208).captureMessage("Unknown target type for: " + action);
                               CHANNEL = constants.UNKNOWN;
-                              const obj = importDefault(1184);
+                              const obj = importDefault(1208);
                             }
                           }
                         }
@@ -114,85 +100,86 @@ function getTargetType(arg0) {
   }
   return CHANNEL;
 }
-function getActionType(arg0) {
-  if (constants2.CHANNEL_CREATE !== arg0) {
-    if (constants2.CHANNEL_OVERWRITE_CREATE !== arg0) {
-      if (constants2.MEMBER_BAN_REMOVE !== arg0) {
-        if (constants2.ROLE_CREATE !== arg0) {
-          if (constants2.INVITE_CREATE !== arg0) {
-            if (constants2.WEBHOOK_CREATE !== arg0) {
-              if (constants2.EMOJI_CREATE !== arg0) {
-                if (constants2.STICKER_CREATE !== arg0) {
-                  if (constants2.MESSAGE_PIN !== arg0) {
-                    if (constants2.BOT_ADD !== arg0) {
-                      if (constants2.INTEGRATION_CREATE !== arg0) {
-                        if (constants2.STAGE_INSTANCE_CREATE !== arg0) {
-                          if (constants2.GUILD_SCHEDULED_EVENT_CREATE !== arg0) {
-                            if (constants2.THREAD_CREATE !== arg0) {
-                              if (constants2.AUTO_MODERATION_RULE_CREATE !== arg0) {
-                                if (constants2.CREATOR_MONETIZATION_REQUEST_CREATED !== arg0) {
-                                  if (constants2.ONBOARDING_PROMPT_CREATE !== arg0) {
-                                    if (constants2.ONBOARDING_CREATE !== arg0) {
-                                      if (constants2.GUILD_HOME_FEATURE_ITEM !== arg0) {
-                                        if (constants2.SOUNDBOARD_SOUND_CREATE !== arg0) {
-                                          if (constants2.HOME_SETTINGS_CREATE !== arg0) {
-                                            if (constants2.VOICE_CHANNEL_STATUS_CREATE !== arg0) {
-                                              if (constants2.CHANNEL_DELETE !== arg0) {
-                                                if (constants2.CHANNEL_OVERWRITE_DELETE !== arg0) {
-                                                  if (constants2.MEMBER_KICK !== arg0) {
-                                                    if (constants2.MEMBER_PRUNE !== arg0) {
-                                                      if (constants2.MEMBER_BAN_ADD !== arg0) {
-                                                        if (constants2.ROLE_DELETE !== arg0) {
-                                                          if (constants2.INVITE_DELETE !== arg0) {
-                                                            if (constants2.WEBHOOK_DELETE !== arg0) {
-                                                              if (constants2.EMOJI_DELETE !== arg0) {
-                                                                if (constants2.STICKER_DELETE !== arg0) {
-                                                                  if (constants2.MESSAGE_DELETE !== arg0) {
-                                                                    if (constants2.MESSAGE_BULK_DELETE !== arg0) {
-                                                                      if (constants2.MESSAGE_UNPIN !== arg0) {
-                                                                        if (constants2.INTEGRATION_DELETE !== arg0) {
-                                                                          if (constants2.MEMBER_DISCONNECT !== arg0) {
-                                                                            if (constants2.STAGE_INSTANCE_DELETE !== arg0) {
-                                                                              if (constants2.GUILD_SCHEDULED_EVENT_DELETE !== arg0) {
-                                                                                if (constants2.GUILD_SCHEDULED_EVENT_EXCEPTION_DELETE !== arg0) {
-                                                                                  if (constants2.THREAD_DELETE !== arg0) {
-                                                                                    if (constants2.AUTO_MODERATION_BLOCK_MESSAGE !== arg0) {
-                                                                                      if (constants2.AUTO_MODERATION_RULE_DELETE !== arg0) {
-                                                                                        if (constants2.ONBOARDING_PROMPT_DELETE !== arg0) {
-                                                                                          if (constants2.GUILD_HOME_REMOVE_ITEM !== arg0) {
-                                                                                            if (constants2.SOUNDBOARD_SOUND_DELETE !== arg0) {
-                                                                                              if (constants2.VOICE_CHANNEL_STATUS_DELETE !== arg0) {
-                                                                                                if (constants2.GUILD_UPDATE !== arg0) {
-                                                                                                  if (constants2.CHANNEL_UPDATE !== arg0) {
-                                                                                                    if (constants2.CHANNEL_OVERWRITE_UPDATE !== arg0) {
-                                                                                                      if (constants2.MEMBER_UPDATE !== arg0) {
-                                                                                                        if (constants2.MEMBER_ROLE_UPDATE !== arg0) {
-                                                                                                          if (constants2.ROLE_UPDATE !== arg0) {
-                                                                                                            if (constants2.INVITE_UPDATE !== arg0) {
-                                                                                                              if (constants2.WEBHOOK_UPDATE !== arg0) {
-                                                                                                                if (constants2.EMOJI_UPDATE !== arg0) {
-                                                                                                                  if (constants2.STICKER_UPDATE !== arg0) {
-                                                                                                                    if (constants2.INTEGRATION_UPDATE !== arg0) {
-                                                                                                                      if (constants2.MEMBER_MOVE !== arg0) {
-                                                                                                                        if (constants2.STAGE_INSTANCE_UPDATE !== arg0) {
-                                                                                                                          if (constants2.GUILD_SCHEDULED_EVENT_UPDATE !== arg0) {
-                                                                                                                            if (constants2.GUILD_SCHEDULED_EVENT_EXCEPTION_CREATE !== arg0) {
-                                                                                                                              if (constants2.GUILD_SCHEDULED_EVENT_EXCEPTION_UPDATE !== arg0) {
-                                                                                                                                if (constants2.THREAD_UPDATE !== arg0) {
-                                                                                                                                  if (constants2.APPLICATION_COMMAND_PERMISSION_UPDATE !== arg0) {
-                                                                                                                                    if (constants2.CREATOR_MONETIZATION_TERMS_ACCEPTED !== arg0) {
-                                                                                                                                      if (constants2.AUTO_MODERATION_RULE_UPDATE !== arg0) {
-                                                                                                                                        if (constants2.AUTO_MODERATION_FLAG_TO_CHANNEL !== arg0) {
-                                                                                                                                          if (constants2.AUTO_MODERATION_USER_COMMUNICATION_DISABLED !== arg0) {
-                                                                                                                                            if (constants2.AUTO_MODERATION_QUARANTINE_USER !== arg0) {
-                                                                                                                                              if (constants2.ONBOARDING_PROMPT_UPDATE !== arg0) {
-                                                                                                                                                if (constants2.ONBOARDING_UPDATE !== arg0) {
-                                                                                                                                                  if (constants2.SOUNDBOARD_SOUND_UPDATE !== arg0) {
-                                                                                                                                                    if (constants2.HOME_SETTINGS_UPDATE !== arg0) {
-                                                                                                                                                      if (constants2.GUILD_MEMBER_VERIFICATION_UPDATE !== arg0) {
-                                                                                                                                                        if (constants2.GUILD_PROFILE_UPDATE !== arg0) {
-                                                                                                                                                          if (constants2.GUILD_MIGRATE_PIN_PERMISSION !== arg0) {
-                                                                                                                                                            if (constants2.GUILD_MIGRATE_BYPASS_SLOWMODE_PERMISSION !== arg0) {
+function getActionType(action) {
+  const tmp = constants2;
+  if (constants2.CHANNEL_CREATE !== action) {
+    if (tmp.CHANNEL_OVERWRITE_CREATE !== action) {
+      if (tmp.MEMBER_BAN_REMOVE !== action) {
+        if (tmp.ROLE_CREATE !== action) {
+          if (tmp.INVITE_CREATE !== action) {
+            if (tmp.WEBHOOK_CREATE !== action) {
+              if (tmp.EMOJI_CREATE !== action) {
+                if (tmp.STICKER_CREATE !== action) {
+                  if (tmp.MESSAGE_PIN !== action) {
+                    if (tmp.BOT_ADD !== action) {
+                      if (tmp.INTEGRATION_CREATE !== action) {
+                        if (tmp.STAGE_INSTANCE_CREATE !== action) {
+                          if (tmp.GUILD_SCHEDULED_EVENT_CREATE !== action) {
+                            if (tmp.THREAD_CREATE !== action) {
+                              if (tmp.AUTO_MODERATION_RULE_CREATE !== action) {
+                                if (tmp.CREATOR_MONETIZATION_REQUEST_CREATED !== action) {
+                                  if (tmp.ONBOARDING_PROMPT_CREATE !== action) {
+                                    if (tmp.ONBOARDING_CREATE !== action) {
+                                      if (tmp.GUILD_HOME_FEATURE_ITEM !== action) {
+                                        if (tmp.SOUNDBOARD_SOUND_CREATE !== action) {
+                                          if (tmp.HOME_SETTINGS_CREATE !== action) {
+                                            if (tmp.VOICE_CHANNEL_STATUS_CREATE !== action) {
+                                              if (tmp.CHANNEL_DELETE !== action) {
+                                                if (tmp.CHANNEL_OVERWRITE_DELETE !== action) {
+                                                  if (tmp.MEMBER_KICK !== action) {
+                                                    if (tmp.MEMBER_PRUNE !== action) {
+                                                      if (tmp.MEMBER_BAN_ADD !== action) {
+                                                        if (tmp.ROLE_DELETE !== action) {
+                                                          if (tmp.INVITE_DELETE !== action) {
+                                                            if (tmp.WEBHOOK_DELETE !== action) {
+                                                              if (tmp.EMOJI_DELETE !== action) {
+                                                                if (tmp.STICKER_DELETE !== action) {
+                                                                  if (tmp.MESSAGE_DELETE !== action) {
+                                                                    if (tmp.MESSAGE_BULK_DELETE !== action) {
+                                                                      if (tmp.MESSAGE_UNPIN !== action) {
+                                                                        if (tmp.INTEGRATION_DELETE !== action) {
+                                                                          if (tmp.MEMBER_DISCONNECT !== action) {
+                                                                            if (tmp.STAGE_INSTANCE_DELETE !== action) {
+                                                                              if (tmp.GUILD_SCHEDULED_EVENT_DELETE !== action) {
+                                                                                if (tmp.GUILD_SCHEDULED_EVENT_EXCEPTION_DELETE !== action) {
+                                                                                  if (tmp.THREAD_DELETE !== action) {
+                                                                                    if (tmp.AUTO_MODERATION_BLOCK_MESSAGE !== action) {
+                                                                                      if (tmp.AUTO_MODERATION_RULE_DELETE !== action) {
+                                                                                        if (tmp.ONBOARDING_PROMPT_DELETE !== action) {
+                                                                                          if (tmp.GUILD_HOME_REMOVE_ITEM !== action) {
+                                                                                            if (tmp.SOUNDBOARD_SOUND_DELETE !== action) {
+                                                                                              if (tmp.VOICE_CHANNEL_STATUS_DELETE !== action) {
+                                                                                                if (tmp.GUILD_UPDATE !== action) {
+                                                                                                  if (tmp.CHANNEL_UPDATE !== action) {
+                                                                                                    if (tmp.CHANNEL_OVERWRITE_UPDATE !== action) {
+                                                                                                      if (tmp.MEMBER_UPDATE !== action) {
+                                                                                                        if (tmp.MEMBER_ROLE_UPDATE !== action) {
+                                                                                                          if (tmp.ROLE_UPDATE !== action) {
+                                                                                                            if (tmp.INVITE_UPDATE !== action) {
+                                                                                                              if (tmp.WEBHOOK_UPDATE !== action) {
+                                                                                                                if (tmp.EMOJI_UPDATE !== action) {
+                                                                                                                  if (tmp.STICKER_UPDATE !== action) {
+                                                                                                                    if (tmp.INTEGRATION_UPDATE !== action) {
+                                                                                                                      if (tmp.MEMBER_MOVE !== action) {
+                                                                                                                        if (tmp.STAGE_INSTANCE_UPDATE !== action) {
+                                                                                                                          if (tmp.GUILD_SCHEDULED_EVENT_UPDATE !== action) {
+                                                                                                                            if (tmp.GUILD_SCHEDULED_EVENT_EXCEPTION_CREATE !== action) {
+                                                                                                                              if (tmp.GUILD_SCHEDULED_EVENT_EXCEPTION_UPDATE !== action) {
+                                                                                                                                if (tmp.THREAD_UPDATE !== action) {
+                                                                                                                                  if (tmp.APPLICATION_COMMAND_PERMISSION_UPDATE !== action) {
+                                                                                                                                    if (tmp.CREATOR_MONETIZATION_TERMS_ACCEPTED !== action) {
+                                                                                                                                      if (tmp.AUTO_MODERATION_RULE_UPDATE !== action) {
+                                                                                                                                        if (tmp.AUTO_MODERATION_FLAG_TO_CHANNEL !== action) {
+                                                                                                                                          if (tmp.AUTO_MODERATION_USER_COMMUNICATION_DISABLED !== action) {
+                                                                                                                                            if (tmp.AUTO_MODERATION_QUARANTINE_USER !== action) {
+                                                                                                                                              if (tmp.ONBOARDING_PROMPT_UPDATE !== action) {
+                                                                                                                                                if (tmp.ONBOARDING_UPDATE !== action) {
+                                                                                                                                                  if (tmp.SOUNDBOARD_SOUND_UPDATE !== action) {
+                                                                                                                                                    if (tmp.HOME_SETTINGS_UPDATE !== action) {
+                                                                                                                                                      if (tmp.GUILD_MEMBER_VERIFICATION_UPDATE !== action) {
+                                                                                                                                                        if (tmp.GUILD_PROFILE_UPDATE !== action) {
+                                                                                                                                                          if (tmp.GUILD_MIGRATE_PIN_PERMISSION !== action) {
+                                                                                                                                                            if (tmp.GUILD_MIGRATE_BYPASS_SLOWMODE_PERMISSION !== action) {
                                                                                                                                                               return constants3.ALL;
                                                                                                                                                             }
                                                                                                                                                           }
@@ -276,82 +263,60 @@ function getActionType(arg0) {
   }
   return constants3.CREATE;
 }
-({ AuditLogTargetTypes: closure_7, AuditLogActions: closure_8, AuditLogActionTypes: closure_9 } = ME);
-class AuditLogChange {
-  constructor(arg0, arg1, arg2) {
-    tmp = c6(this, AuditLogChange);
-    this.key = global;
-    this.oldValue = arg1;
-    this.newValue = importDefault;
-    return;
+({ AuditLogTargetTypes: obj1, AuditLogActions: c3, AuditLogActionTypes: c4 } = ME);
+const prototype = function AuditLogRecord(timestampEnd) {
+  let changes;
+  let timestampStart;
+  const tmp5 = new prototype(tmp4, tmp3, tmp2, tmp, new.target);
+  // ThrowIfThisInitialized (0x7c)
+  ({ id: tmp5.id, action: tmp5.action } = timestampEnd);
+  tmp5.actionType = getActionType(tmp5.action);
+  ({ targetId: tmp5.targetId, timestampStart } = timestampEnd);
+  if (timestampStart == null) {
+    const tmp8 = importDefault(3771);
+    timestampStart = tmp8(importDefault(11).extractTimestamp(tmp5.id));
+    const obj = importDefault(11);
   }
+  tmp5.timestampStart = timestampStart;
+  let timestampStart2 = timestampEnd.timestampEnd;
+  if (timestampStart2 == null) {
+    timestampStart2 = tmp5.timestampStart;
+  }
+  tmp5.timestampEnd = timestampStart2;
+  ({ userId: tmp5.userId, changes } = timestampEnd);
+  if (changes == null) {
+    changes = [];
+  }
+  tmp5.changes = changes;
+  tmp5.targetType = getTargetType(tmp5.action);
+  let options = timestampEnd.options;
+  if (options == null) {
+    options = {};
+  }
+  tmp5.options = options;
+  let id = timestampEnd.target;
+  if (id == null) {
+    id = timestampEnd.id;
+  }
+  tmp5.target = id;
+  let user = timestampEnd.user;
+  if (user == null) {
+    user = null;
+  }
+  tmp5.user = user;
+  return tmp5;
+}.prototype;
+class prototype extends tmp2 {
 }
-const importDefaultResultResult = importDefaultResult(AuditLogChange);
-const tmp6 = ((importDefaultResult1) => {
-  class AuditLogRecord {
-    constructor(arg0) {
-      self = this;
-      tmp = outer1_6(this, AuditLogRecord);
-      obj = outer1_3(AuditLogRecord);
-      tmp2 = outer1_2;
-      if (outer1_10()) {
-        tmp4 = globalThis;
-        _Reflect = Reflect;
-        tmp5 = outer1_3;
-        constructResult = Reflect.construct(obj, [], outer1_3(self).constructor);
-      } else {
-        constructResult = obj.apply(self, undefined);
-      }
-      tmp2Result = tmp2(self, constructResult);
-      ({ id: tmp6.id, action: tmp6.action } = importDefaultResult1);
-      tmp2Result.actionType = outer1_12(tmp2Result.action);
-      ({ targetId: tmp6.targetId, timestampStart } = importDefaultResult1);
-      if (null == timestampStart) {
-        tmp7 = AuditLogRecord;
-        tmp8 = outer1_1;
-        num = 8;
-        num2 = 9;
-        tmp9 = AuditLogRecord(outer1_1[8]);
-        obj2 = AuditLogRecord(outer1_1[9]);
-        timestampStart = tmp9(obj2.extractTimestamp(tmp2Result.id));
-      }
-      tmp2Result.timestampStart = timestampStart;
-      timestampStart2 = importDefaultResult1.timestampEnd;
-      if (null == timestampStart2) {
-        timestampStart2 = tmp2Result.timestampStart;
-      }
-      tmp2Result.timestampEnd = timestampStart2;
-      ({ userId: tmp6.userId, changes } = importDefaultResult1);
-      if (null == changes) {
-        changes = [];
-      }
-      tmp2Result.changes = changes;
-      tmp2Result.targetType = outer1_11(tmp2Result.action);
-      options = importDefaultResult1.options;
-      if (null == options) {
-        options = {};
-      }
-      tmp2Result.options = options;
-      id = importDefaultResult1.target;
-      if (null == id) {
-        id = importDefaultResult1.id;
-      }
-      tmp2Result.target = id;
-      user = importDefaultResult1.user;
-      tmp10 = null;
-      if (null != user) {
-        tmp10 = user;
-      }
-      tmp2Result.user = tmp10;
-      return tmp2Result;
-    }
-  }
-  callback(AuditLogRecord, importDefaultResult1);
-  return importDefaultResult(AuditLogRecord);
-})(importDefaultResult1);
-let result = require("_inherits").fileFinishedImporting("records/AuditLogRecord.tsx");
+const result = require("module_1208").fileFinishedImporting("records/AuditLogRecord.tsx");
 
-export default tmp6;
+export default prototype;
 export { getTargetType };
 export { getActionType };
-export const AuditLogChange = importDefaultResultResult;
+export const AuditLogChange = function AuditLogChange(AVAILABLE_TAG_ADD, oldValue, newValue) {
+  const obj = Object.create(new.target.prototype);
+  obj.key = AVAILABLE_TAG_ADD;
+  obj.oldValue = oldValue;
+  obj.newValue = newValue;
+  return obj;
+}.prototype;

@@ -1,64 +1,66 @@
-// Module ID: 8116
-// Function ID: 64419
+// Module ID: 8140
+// Function ID: 8141
 // Name: PlayerState
-// Dependencies: [31, 27, 33, 477, 4165, 4026, 4166, 3862, 6738, 2]
+// Dependencies: [19, 17, 21, 500, 4189, 4050, 4190, 3886, 6759, 2]
 
-// Module 8116 (PlayerState)
-import importAllResult from "result";
+// Module 8140 (PlayerState)
+import importAllResult from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
 import set from "set";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 import set from "jsxProd";
 
-let closure_4;
-let closure_5;
+let c4;
+let c5;
 let closure_6;
-let closure_7;
+let error;
 const require = arg1;
-({ ActivityIndicator: closure_4, View: closure_5 } = get_ActivityIndicator);
-({ jsx: closure_6, jsxs: closure_7 } = jsxProd);
+let c3 = importAllResult;
+({ ActivityIndicator: c4, View: c5 } = get_ActivityIndicator);
+({ jsx: closure_6, jsxs: error } = jsxProd);
 let str = "";
 if (set.isIOS()) {
   str = "\n  window.addEventListener('click', function(event) {\n    window.ReactNativeWebView.postMessage(JSON.stringify({event: 'click'}));\n  });\n";
 }
 let obj = { UNREADY: 0, [0]: "UNREADY", READY: 1, [1]: "READY", ERRORED: 2, [2]: "ERRORED", UNSTARTED: 3, [3]: "UNSTARTED", ENDED: 4, [4]: "ENDED", PLAYING: 5, [5]: "PLAYING", PAUSED: 6, [6]: "PAUSED", BUFFERING: 7, [7]: "BUFFERING", VIDEO_CUED: 8, [8]: "VIDEO_CUED" };
-let closure_10 = _createForOfIteratorHelperLoose.createStyles({ loading: { top: 0, left: 0, right: 0, bottom: 0, position: "absolute", alignItems: "center", justifyContent: "center" } });
+let closure_10 = createCacheKey.createStyles({ loading: { top: 0, left: 0, right: 0, bottom: 0, position: "absolute", alignItems: "center", justifyContent: "center" } });
 let closure_11 = { code: "function MediaModalWebViewTsx1(){const{withTiming,webviewOpacity}=this.__closure;return{opacity:withTiming(webviewOpacity.get())};}" };
 let closure_12 = { code: "function MediaModalWebViewTsx2(){const{withTiming,loaderOpacity}=this.__closure;return{opacity:withTiming(loaderOpacity.get())};}" };
 let result = set.fileFinishedImporting("modules/media_viewer/native/components/MediaModalWebView.tsx");
 
-export default importAllResult.memo(importAllResult.forwardRef((playerState) => {
+export default importAllResult.memo(importAllResult.forwardRef((playerState, ref) => {
   let injectedJavaScript;
   let style;
   playerState = playerState.playerState;
   const onDataReceived = playerState.onDataReceived;
   const baseURL = playerState.baseURL;
   const panGestureConfig = playerState.panGestureConfig;
-  let obj = { style: 0, playerState: 0, onDataReceived: 0, baseURL: 0, injectedJavaScript: 0, panGestureConfig: 0 };
   ({ style, injectedJavaScript } = playerState);
-  Object.setPrototypeOf(null);
-  const merged = Object.assign(playerState, obj);
+  const merged = Object.assign(playerState, Object.create(null));
+  let sharedValue;
+  let sharedValue1;
+  let obj = playerState(baseURL[5]);
+  sharedValue = obj.useSharedValue(1);
   let obj1 = playerState(baseURL[5]);
-  const sharedValue = obj1.useSharedValue(1);
+  sharedValue1 = obj1.useSharedValue(0);
   let obj2 = playerState(baseURL[5]);
-  const sharedValue1 = obj2.useSharedValue(0);
-  let obj3 = playerState(baseURL[5]);
   const fn = function f() {
-    const obj = { opacity: playerState(baseURL[6]).withTiming(sharedValue1.get()) };
+    const obj = { opacity: null };
+    obj[0] = playerState(baseURL[6]).withTiming(sharedValue1.get());
     return obj;
   };
   obj = { withTiming: playerState(baseURL[6]).withTiming, webviewOpacity: sharedValue1 };
   fn.__closure = obj;
   fn.__workletHash = 2179142865986;
   fn.__initData = closure_11;
-  const animatedStyle = obj3.useAnimatedStyle(fn);
-  const tmp3 = callback2();
+  const animatedStyle = obj2.useAnimatedStyle(fn);
+  let obj4 = playerState(baseURL[5]);
   class S {
     constructor() {
-      obj = {};
+      obj = { opacity: null };
       obj2 = playerState(baseURL[6]);
-      obj.opacity = obj2.withTiming(closure_4.get());
+      obj[0] = obj2.withTiming(c4.get());
       return obj;
     }
   }
@@ -67,16 +69,9 @@ export default importAllResult.memo(importAllResult.forwardRef((playerState) => 
   S.__workletHash = 7752174298017;
   S.__initData = closure_12;
   const items = [playerState, sharedValue, sharedValue1];
-  const animatedStyle1 = playerState(baseURL[5]).useAnimatedStyle(S);
+  const animatedStyle1 = obj4.useAnimatedStyle(S);
   const effect = panGestureConfig.useEffect(() => {
-    let tmp = playerState !== outer1_9.BUFFERING;
-    if (tmp) {
-      tmp = playerState !== outer1_9.PLAYING;
-    }
-    if (tmp) {
-      tmp = playerState !== outer1_9.ERRORED;
-    }
-    if (!tmp) {
+    if (!tmp3) {
       const result = sharedValue.set(0);
       const result1 = sharedValue1.set(1);
     }
@@ -95,7 +90,7 @@ export default importAllResult.memo(importAllResult.forwardRef((playerState) => 
     }
     onDataReceived(nativeEvent.nativeEvent.data);
   }, items1);
-  obj1 = { style };
+  obj1 = { style, children: null };
   const callback1 = panGestureConfig.useCallback((url) => {
     let tmp = "about:blank" !== url.url;
     if (tmp) {
@@ -107,44 +102,43 @@ export default importAllResult.memo(importAllResult.forwardRef((playerState) => 
       const tmp4 = null == url.isTopFrame || url.isTopFrame;
     }
     let flag = !tmp;
-    if (!flag) {
+    if (tmp) {
       onDataReceived(baseURL[7]).openURL(url.url);
       flag = false;
       const obj = onDataReceived(baseURL[7]);
     }
     return flag;
   }, items2);
-  obj2 = { style: items3 };
+  obj2 = { style: items3, children: null };
   items3 = [animatedStyle, { flex: 1 }];
-  obj3 = {};
-  const obj6 = playerState(baseURL[5]);
+  const obj3 = {};
   const tmp11 = closure_7;
   const tmp12 = sharedValue1;
+  const tmp14 = onDataReceived;
+  const tmp2 = callback2();
+  const tmp3 = baseURL;
   const merged1 = Object.assign(merged);
-  obj3["injectedJavaScript"] = "" + injectedJavaScript + "\n" + str;
-  obj3["bounces"] = false;
-  obj3["ref"] = arg1;
-  obj3["scrollEnabled"] = false;
-  obj3["javaScriptEnabled"] = true;
-  obj3["onMessage"] = callback;
-  obj3["allowsInlineMediaPlayback"] = true;
-  obj3["mediaPlaybackRequiresUserAction"] = false;
-  obj3["onShouldStartLoadWithRequest"] = callback1;
-  obj2.children = callback(onDataReceived(baseURL[8]), obj3);
+  obj3.injectedJavaScript = "" + injectedJavaScript + "\n" + str;
+  obj3.bounces = false;
+  obj3.ref = ref;
+  obj3.scrollEnabled = false;
+  obj3.javaScriptEnabled = true;
+  obj3.onMessage = callback;
+  obj3.allowsInlineMediaPlayback = true;
+  obj3.mediaPlaybackRequiresUserAction = false;
+  obj3.onShouldStartLoadWithRequest = callback1;
+  obj2[1] = callback(onDataReceived(baseURL[8]), obj3);
   const items4 = [callback(onDataReceived(baseURL[5]).View, obj2), ];
-  let tmp15 = playerState !== obj.PLAYING;
-  if (tmp15) {
-    tmp15 = playerState !== obj.PAUSED;
+  let tmp13Result = playerState !== obj.PLAYING && playerState !== obj.PAUSED;
+  if (tmp13Result) {
+    obj4 = { style: null, children: null };
+    const items5 = [animatedStyle1, tmp2.loading];
+    obj4[0] = items5;
+    obj4[1] = tmp13(sharedValue, { color: "white", size: "large" });
+    tmp13Result = tmp13(tmp14(tmp3[5]).View, obj4);
   }
-  if (tmp15) {
-    const obj4 = {};
-    const items5 = [animatedStyle1, tmp3.loading];
-    obj4.style = items5;
-    obj4.children = callback(sharedValue, { color: "white", size: "large" });
-    tmp15 = callback(onDataReceived(baseURL[5]).View, obj4);
-  }
-  items4[1] = tmp15;
-  obj1.children = items4;
+  items4[1] = tmp13Result;
+  obj1[1] = items4;
   return tmp11(tmp12, obj1);
 }));
 export const PlayerState = obj;

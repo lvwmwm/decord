@@ -1,205 +1,144 @@
-// Module ID: 5926
-// Function ID: 52431
-// Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 3802, 5927, 566, 686, 2]
+// Module ID: 5945
+// Function ID: 5946
+// Name: recomputeAffinities
+// Dependencies: [3826, 5946, 589, 709, 2]
 
-// Module 5926 (_isNativeReflectConstruct)
-import result from "result";
-import initialize from "initialize";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 5945 (recomputeAffinities)
+import upsertRelationship from "upsertRelationship";
 import { USER_AFFINITY_TTL } from "result";
+import { PersistedStore } from "initialize";
 
-function _isNativeReflectConstruct() {
-  let result = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return result;
-  }
-  const result = _isNativeReflectConstruct();
-}
 function recomputeAffinities() {
   const userAffinities = obj.userAffinities;
-  const found = userAffinities.filter((otherUserId) => !outer1_5.isBlockedOrIgnored(otherUserId.otherUserId));
+  const found = userAffinities.filter((otherUserId) => !blockedOrIgnored.isBlockedOrIgnored(otherUserId.otherUserId));
   const map = new Map(found.map((otherUserId) => {
     const items = [otherUserId.otherUserId, otherUserId];
     return items;
   }));
 }
 let map = new Map();
-let c8 = false;
+let c3 = false;
 const frozen = Object.freeze({ userAffinities: [], lastFetched: 0 });
 let obj = {};
 let merged = Object.assign(frozen);
-let tmp5 = ((PersistedStore) => {
-  class UserAffinitiesV2Store {
-    constructor() {
-      self = this;
-      tmp = UserAffinitiesV2Store(this, UserAffinitiesV2Store);
-      obj = outer1_3(UserAffinitiesV2Store);
-      tmp2 = outer1_2;
-      if (outer1_11()) {
-        tmp6 = globalThis;
-        _Reflect = Reflect;
-        tmp7 = outer1_3;
-        tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, outer1_3(self).constructor);
-      } else {
-        tmp3 = arguments;
-        tmp4 = arguments;
-        constructResult = obj(...arguments);
-      }
-      return tmp2(self, constructResult);
-    }
+class UserAffinitiesV2Store extends PersistedStore {
+}
+const prototype = UserAffinitiesV2Store.prototype;
+prototype["initialize"] = function initialize(userAffinities) {
+  const self = this;
+  this.waitFor(upsertRelationship);
+  if (null != userAffinities) {
+    obj.userAffinities = userAffinities.userAffinities;
+    obj.lastFetched = userAffinities.lastFetched;
+    const _Map = Map;
+    userAffinities = obj.userAffinities;
+    const found = userAffinities.filter((otherUserId) => !blockedOrIgnored.isBlockedOrIgnored(otherUserId.otherUserId));
+    const map = new Map(found.map((otherUserId) => {
+      const items = [otherUserId.otherUserId, otherUserId];
+      return items;
+    }));
   }
-  callback2(UserAffinitiesV2Store, PersistedStore);
-  let obj = {
-    key: "initialize",
-    value(userAffinities) {
-      const self = this;
-      this.waitFor(outer1_5);
-      if (null != userAffinities) {
-        outer1_10.userAffinities = userAffinities.userAffinities;
-        outer1_10.lastFetched = userAffinities.lastFetched;
-        outer1_12();
-      }
-      const items = [outer1_5];
-      self.syncWith(items, outer1_12);
-    }
-  };
-  let items = [obj, , , , , , , , , ];
-  obj = {
-    key: "shouldFetch",
-    value() {
-      if (!outer1_8) {
-        const _Date = Date;
-        return Date.now() - outer1_10.lastFetched > outer1_6;
-      }
-    }
-  };
-  items[1] = obj;
-  obj = {
-    key: "isFetching",
-    value() {
-      return outer1_8;
-    }
-  };
-  items[2] = obj;
-  items[3] = {
-    key: "getUserAffinities",
-    value() {
-      return outer1_10.userAffinities;
-    }
-  };
-  items[4] = {
-    key: "getUserAffinitiesMap",
-    value() {
-      return outer1_7;
-    }
-  };
-  items[5] = {
-    key: "compare",
-    value(arg0, arg1) {
-      let value = outer1_7.get(arg1);
-      let prop;
-      if (null != value) {
-        prop = value.communicationProbability;
-      }
-      let num = 0;
-      if (null != prop) {
-        num = prop;
-      }
-      value = outer1_7.get(arg0);
-      let prop1;
-      if (null != value) {
-        prop1 = value.communicationProbability;
-      }
-      let num2 = 0;
-      if (null != prop1) {
-        num2 = prop1;
-      }
-      return num - num2;
-    }
-  };
-  items[6] = {
-    key: "compareByDmProbability",
-    value(arg0, arg1) {
-      let value = outer1_7.get(arg1);
-      let dmProbability;
-      if (null != value) {
-        dmProbability = value.dmProbability;
-      }
-      let num = 0;
-      if (null != dmProbability) {
-        num = dmProbability;
-      }
-      value = outer1_7.get(arg0);
-      let dmProbability1;
-      if (null != value) {
-        dmProbability1 = value.dmProbability;
-      }
-      let num2 = 0;
-      if (null != dmProbability1) {
-        num2 = dmProbability1;
-      }
-      return num - num2;
-    }
-  };
-  items[7] = {
-    key: "getUserAffinity",
-    value(arg0) {
-      return outer1_7.get(arg0);
-    }
-  };
-  items[8] = {
-    key: "getState",
-    value() {
-      return outer1_10;
-    }
-  };
-  items[9] = {
-    key: "isHighlyAffinedVCUser",
-    value(arg0) {
-      const value = outer1_7.get(arg0);
-      let vcProbability;
-      if (null != value) {
-        vcProbability = value.vcProbability;
-      }
-      let num = 0;
-      if (null != vcProbability) {
-        num = vcProbability;
-      }
-      return num > 0.5;
-    }
-  };
-  return callback(UserAffinitiesV2Store, items);
-})(require("initialize").PersistedStore);
-tmp5.displayName = "UserAffinitiesV2Store";
-tmp5.persistKey = "UserAffinitiesStoreV2";
+  const items = [upsertRelationship];
+  self.syncWith(items, recomputeAffinities);
+};
+prototype["shouldFetch"] = function shouldFetch() {
+  if (!c3) {
+    const _Date = Date;
+    return Date.now() - obj.lastFetched > USER_AFFINITY_TTL;
+  }
+};
+prototype["isFetching"] = function isFetching() {
+  return c3;
+};
+prototype["getUserAffinities"] = function getUserAffinities() {
+  return obj.userAffinities;
+};
+prototype["getUserAffinitiesMap"] = function getUserAffinitiesMap() {
+  return map;
+};
+prototype["compare"] = function compare(arg0, arg1) {
+  let value = map.get(arg1);
+  let num;
+  if (value != null) {
+    num = value.communicationProbability;
+  }
+  if (num == null) {
+    num = 0;
+  }
+  value = map.get(arg0);
+  let num2;
+  if (value != null) {
+    num2 = value.communicationProbability;
+  }
+  if (num2 == null) {
+    num2 = 0;
+  }
+  return num - num2;
+};
+prototype["compareByDmProbability"] = function compareByDmProbability(arg0, arg1) {
+  let value = map.get(arg1);
+  let num;
+  if (value != null) {
+    num = value.dmProbability;
+  }
+  if (num == null) {
+    num = 0;
+  }
+  value = map.get(arg0);
+  let num2;
+  if (value != null) {
+    num2 = value.dmProbability;
+  }
+  if (num2 == null) {
+    num2 = 0;
+  }
+  return num - num2;
+};
+prototype["getUserAffinity"] = function getUserAffinity(userId) {
+  return map.get(userId);
+};
+prototype["getState"] = function getState() {
+  return obj;
+};
+prototype["isHighlyAffinedVCUser"] = function isHighlyAffinedVCUser(arg0) {
+  const value = map.get(arg0);
+  let num;
+  if (value != null) {
+    num = value.vcProbability;
+  }
+  if (num == null) {
+    num = 0;
+  }
+  return num > 0.5;
+};
+UserAffinitiesV2Store.displayName = "UserAffinitiesV2Store";
+UserAffinitiesV2Store.persistKey = "UserAffinitiesStoreV2";
 obj = {
   LOAD_USER_AFFINITIES_V2: function handleLoadUserAffinities() {
-    let c8 = true;
+    let c3 = true;
   },
   LOAD_USER_AFFINITIES_V2_SUCCESS: function handleLoadUserAffinitiesSuccess(affineUsers) {
     obj.lastFetched = Date.now();
-    let c8 = false;
+    let c3 = false;
     obj.userAffinities = affineUsers.affineUsers;
-    recomputeAffinities();
+    const userAffinities = obj.userAffinities;
+    const found = userAffinities.filter((otherUserId) => !blockedOrIgnored.isBlockedOrIgnored(otherUserId.otherUserId));
+    const map = new Map(found.map((otherUserId) => {
+      const items = [otherUserId.otherUserId, otherUserId];
+      return items;
+    }));
   },
   LOAD_USER_AFFINITIES_V2_FAILURE: function handleLoadUserAffinitiesFailure() {
-    let c8 = false;
+    let c3 = false;
   },
   LOGOUT: function handleLogout() {
     const obj = {};
     const merged = Object.assign(frozen);
     const map = new Map();
-    let c8 = false;
+    let c3 = false;
   }
 };
-tmp5 = new tmp5(require("dispatcher"), obj);
-let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/user_affinities/UserAffinitiesV2Store.tsx");
+const userAffinitiesV2Store = new UserAffinitiesV2Store(require("dispatcher"), obj);
+const result = require("initialize").fileFinishedImporting("modules/user_affinities/UserAffinitiesV2Store.tsx");
 
-export default tmp5;
+export default userAffinitiesV2Store;

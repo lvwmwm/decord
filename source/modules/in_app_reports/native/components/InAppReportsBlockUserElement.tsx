@@ -1,62 +1,63 @@
-// Module ID: 12384
-// Function ID: 96197
+// Module ID: 12406
+// Function ID: 12407
 // Name: BlockUserElement
-// Dependencies: [31, 1348, 3802, 653, 33, 566, 4354, 4359, 8894, 6700, 12382, 1212, 10428, 2]
+// Dependencies: [19, 1372, 3826, 676, 21, 589, 4379, 4384, 8918, 6721, 12404, 1236, 10452, 2]
 // Exports: default
 
-// Module 12384 (BlockUserElement)
-import result from "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_5 from "_isNativeReflectConstruct";
+// Module 12406 (BlockUserElement)
+import noop from "noop";
+import ensureGuildLoaded from "ensureGuildLoaded";
+import upsertRelationship from "upsertRelationship";
 import { AnalyticEvents } from "ME";
 import { jsx } from "jsxProd";
 
 const require = arg1;
-let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/in_app_reports/native/components/InAppReportsBlockUserElement.tsx");
+let result = require("upsertRelationship").fileFinishedImporting("modules/in_app_reports/native/components/InAppReportsBlockUserElement.tsx");
 
 export default function BlockUserElement(user) {
   user = user.user;
   const channelId = user.channelId;
   const reportId = user.reportId;
+  let stateFromStores1;
   let obj = user(reportId[5]);
-  const items = [closure_5];
+  const items = [upsertRelationship];
   const items1 = [user];
   const stateFromStores = obj.useStateFromStores(items, () => outer1_5.isBlocked(user.id), items1);
   let obj1 = user(reportId[5]);
-  const items2 = [_isNativeReflectConstruct];
+  const items2 = [ensureGuildLoaded];
   const items3 = [channelId];
-  const stateFromStores1 = obj1.useStateFromStores(items2, () => outer1_4.getChannel(channelId), items3);
+  stateFromStores1 = obj1.useStateFromStores(items2, () => outer1_4.getChannel(channelId), items3);
   const items4 = [stateFromStores1, user];
   const memo = stateFromStores1.useMemo(() => {
     let guild_id;
-    if (null != stateFromStores1) {
-      guild_id = stateFromStores1.guild_id;
+    if (stateFromStores1 != null) {
+      guild_id = tmp.guild_id;
     }
     let id;
-    if (null != stateFromStores1) {
-      id = stateFromStores1.id;
+    if (stateFromStores1 != null) {
+      id = tmp.id;
     }
     return channelId(reportId[6]).getName(guild_id, id, user);
   }, items4);
   const items5 = [user, reportId, channelId];
-  let tmp5 = null;
+  let tmp7 = null;
   if (null != user) {
-    obj = {};
-    const intl = user(reportId[11]).intl;
-    obj = { username: memo };
-    obj.title = intl.formatToPlainString(user(reportId[11]).t["Q1o/f3"], obj);
-    const intl2 = user(reportId[11]).intl;
-    obj1 = { username: memo };
-    obj.disabledTitle = intl2.formatToPlainString(user(reportId[11]).t["kA0S/d"], obj1);
-    const intl3 = user(reportId[11]).intl;
-    obj.description = intl3.string(user(reportId[11]).t.G08MKu);
-    obj.disabled = stateFromStores;
-    obj.variant = "danger";
-    obj.onPress = tmp4;
-    const obj2 = { color: "text-feedback-critical" };
-    obj.icon = jsx(user(reportId[12]).DenyIcon, { color: "text-feedback-critical" });
-    tmp5 = jsx(channelId(reportId[10]), { username: memo });
-    const tmp9 = channelId(reportId[10]);
+    obj = { title: null, disabledTitle: null, description: null, disabled: null, variant: "danger", onPress: null, icon: null };
+    const intl = tmp(tmp2[11]).intl;
+    obj = { username: null };
+    obj[0] = memo;
+    obj[0] = intl.formatToPlainString(tmp(tmp2[11]).t["Q1o/f3"], obj);
+    const intl2 = tmp(tmp2[11]).intl;
+    obj1 = { username: null };
+    obj1[0] = memo;
+    obj[1] = intl2.formatToPlainString(tmp(tmp2[11]).t["kA0S/d"], obj1);
+    const intl3 = tmp(tmp2[11]).intl;
+    obj[2] = intl3.string(tmp(tmp2[11]).t.G08MKu);
+    obj[3] = stateFromStores;
+    obj[5] = tmp6;
+    obj[6] = jsx(tmp(tmp2[12]).DenyIcon, { color: "text-feedback-critical" });
+    tmp7 = jsx(channelId(tmp2[10]), { username: null });
+    const tmp10 = channelId(tmp2[10]);
   }
-  return tmp5;
+  return tmp7;
 };

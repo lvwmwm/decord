@@ -1,60 +1,164 @@
-// Module ID: 11392
-// Function ID: 88364
-// Name: generateBase64EncodedWaveform
-// Dependencies: [5, 4212, 11129, 11130, 653, 3, 11393, 206, 22, 4262, 675, 4134, 477, 2]
-// Exports: emitVoiceMessageRecorded, endAudioRecording, startAudioRecording, triggerHaptic
+// Module ID: 11416
+// Function ID: 11417
+// Name: _startAudioRecording
+// Dependencies: [5, 4236, 11153, 11154, 676, 3, 11417, 206, 12, 4286, 698, 4158, 500, 2]
+// Exports: emitVoiceMessageRecorded, endAudioRecording, generateBase64EncodedWaveform, startAudioRecording, triggerHaptic
 
-// Module 11392 (generateBase64EncodedWaveform)
+// Module 11416 (_startAudioRecording)
 import timestamp from "timestamp";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import _detectH265HardwareDecode from "_detectH265HardwareDecode";
 import VoiceMessageRecordingStatus from "VoiceMessageRecordingStatus";
 import VoiceMessageAnimationState from "VoiceMessageAnimationState";
 import { AnalyticEvents } from "ME";
-import importDefaultResult from "VoiceMessageAnimationState";
-import importDefaultResult1 from "apply";
+import importDefaultResult from "set";
 
-let closure_10;
-let closure_11;
+let c10;
+let c5;
+let c9;
 let closure_12;
-let closure_13;
 let closure_14;
 let closure_15;
 let closure_16;
 let closure_17;
-let closure_5;
 let closure_6;
-let closure_7;
-let closure_8;
-let closure_9;
+let error;
+let map1;
+let metroImportAll;
+let unpackModuleId;
 const require = arg1;
-function generateBase64EncodedWaveform(waveform) {
-  let arr = waveform;
-  if (waveform.length > closure_16) {
-    arr = importDefault(11393)(waveform, tmp);
-  }
-  const mapped = arr.map((arg0) => Math.min(arg0, outer1_13));
-  const uint8Array = new Uint8Array(mapped);
-  return importDefault(206).fromByteArray(uint8Array);
-}
 function _startAudioRecording() {
-  // CreateGeneratorClosureLongIndex (0x67)
-  const obj = callback(tmp);
-  return obj(...arguments);
+  const self = this;
+  const tmp = callback((arg0) => {
+    let closure_0 = arg0;
+    let c5 = 0;
+    let c6 = 0;
+    let c4 = 0;
+    return (function*(arg0) {
+      if (c6 === 2) {
+        c6 = 3;
+        HermesBuiltin.throwTypeError();
+      } else if (tmp7 === 3) {
+        if (arg0 === 1) {
+          throw arg1;
+        } else if (arg0 === 2) {
+          let obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
+        } else {
+          return { value: "HermesInternal", done: null };
+        }
+      } else {
+        try {
+          c6 = 2;
+          if (0 === c5) {
+            if (arg0 === 1) {
+              c6 = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              c6 = 3;
+              obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            } else {
+              let closure_2 = tmp3;
+              let closure_1 = tmp5;
+              closure_1 = undefined;
+              const outer1_19 = null;
+              outer1_9(outer1_12.REQUESTED);
+              outer1_8(callback);
+              const mediaEngine = store.getMediaEngine();
+              mediaEngine.on(callback(outer1_2[9]).MediaEngineEvent.VoiceActivity, outer1_21);
+              store = 1;
+              const _performance2 = performance;
+              closure_1 = performance.now();
+              const mediaEngine1 = store.getMediaEngine();
+              const obj1 = { echoCancellation: null, echoCancellationPreEcho: false, noiseSuppression: null, automaticGainControlConfig: null, noiseCancellation: null };
+              obj1[0] = store.getEchoCancellation();
+              obj1[2] = store.getNoiseSuppression();
+              const obj2 = { enabled: null };
+              obj2[0] = store.getAutomaticGainControl();
+              obj1[3] = obj2;
+              obj1[4] = store.getNoiseCancellation();
+              c5 = 2;
+              c6 = 1;
+              const obj3 = { value: null, done: false };
+              obj3[0] = mediaEngine1.startLocalAudioRecording(obj1);
+              return obj3;
+            }
+          } else if (1 === tmp8) {
+            store = 0;
+            closure_2 = timestamp;
+            callback4();
+            throw closure_2;
+          } else if (arg0 === 1) {
+            c6 = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            store = 0;
+            c6 = 3;
+            obj = { value: null, done: true };
+            obj[0] = arg1;
+            return obj;
+          } else {
+            const _performance = performance;
+            let closure_19 = performance.now() - closure_1;
+            logger.log("Voice message audio startup latency:", closure_19);
+            if (state.getState().recordingId !== callback) {
+              store = 0;
+              c6 = 3;
+              return { value: "HermesInternal", done: null };
+            } else {
+              callback2(constants.STARTED);
+              const _Date = Date;
+              callback3(Date.now());
+              store = 0;
+              c6 = 3;
+              return { value: "HermesInternal", done: null };
+            }
+          }
+        } catch (tmp22) {
+          timestamp = tmp22;
+          if (tmp4 === store) {
+            c6 = tmp2;
+            throw tmp22;
+          } else {
+            c5 = tmp;
+          }
+        }
+      }
+    })();
+  });
+  const _startAudioRecording = tmp;
+  const apply = tmp.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
 }
 function resetAudioRecording() {
   mediaEngine = mediaEngine.getMediaEngine();
-  mediaEngine.removeListener(require(4262) /* getMediaEngineImpl */.MediaEngineEvent.VoiceActivity, closure_21);
+  mediaEngine.removeListener(require(4286) /* BaseConnectionEvent */.MediaEngineEvent.VoiceActivity, closure_21);
   callback3();
 }
 function stopAndGetAudioRecording() {
   callback4(null);
   callback5(null);
   const waveform = store.getState().waveform;
-  let closure_0 = generateBase64EncodedWaveform(waveform.map((arg0) => {
+  const mapped = waveform.map((arg0) => {
     let tmp;
     [tmp] = arg0;
     return tmp;
-  }));
+  });
+  let arr3 = mapped;
+  if (mapped.length > closure_16) {
+    arr3 = importDefault(11417)(mapped, tmp3);
+  }
+  const mapped1 = arr3.map((arg0) => Math.min(arg0, closure_13));
+  const uint8Array = new Uint8Array(mapped1);
+  let closure_0 = importDefault(206).fromByteArray(uint8Array);
+  const obj = importDefault(206);
   return new Promise((arg0) => {
     let closure_0 = arg0;
     const mediaEngine = outer1_4.getMediaEngine();
@@ -64,23 +168,173 @@ function stopAndGetAudioRecording() {
   });
 }
 function _endAudioRecording() {
-  // CreateGeneratorClosureLongIndex (0x67)
-  const obj = callback(tmp);
-  return obj(...arguments);
+  const self = this;
+  const tmp = callback(function*() {
+    if (c3 === 2) {
+      c3 = 3;
+      HermesBuiltin.throwTypeError();
+    } else if (tmp5 === 3) {
+      if (arg0 === 1) {
+        throw arg1;
+      } else if (arg0 === 2) {
+        let obj = { value: null, done: true };
+        obj[0] = arg1;
+        return obj;
+      } else {
+        return { value: "HermesInternal", done: null };
+      }
+    } else {
+      try {
+        c3 = 2;
+        if (0 === c2) {
+          if (arg0 === 1) {
+            c3 = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            c3 = 3;
+            obj = { value: null, done: true };
+            obj[0] = arg1;
+            return obj;
+          } else {
+            let startTimeMillis = tmp2;
+            let closure_0 = tmp3;
+            closure_0 = undefined;
+            startTimeMillis = undefined;
+            const state = outer1_11.getState();
+            closure_0 = state.savedVoiceMessageUploadData;
+            let tmp9 = null == closure_0;
+            if (tmp9) {
+              tmp9 = state.recordingStatus === outer1_12.REQUESTED;
+            }
+            if (tmp9) {
+              outer1_24();
+              closure_0 = { filename: "", durationSecs: 0, waveform: "" };
+            }
+            if (null == closure_0) {
+              c2 = 1;
+              c3 = 1;
+              const obj1 = { value: null, done: false };
+              obj1[0] = outer1_24();
+              return obj1;
+            } else {
+              startTimeMillis = state.getState().startTimeMillis;
+              callback();
+              const obj2 = { data: null, startTimeMillis: null };
+              obj2[0] = closure_0;
+              obj2[1] = startTimeMillis;
+              c3 = 3;
+            }
+          }
+        } else if (arg0 === 1) {
+          c3 = 3;
+          throw arg1;
+        } else if (arg0 !== 2) {
+          closure_0 = arg1;
+        }
+        c3 = 3;
+        obj = { value: null, done: true };
+        obj[0] = arg1;
+        return obj;
+      } catch (tmp21) {
+        c3 = tmp;
+        throw tmp21;
+      }
+    }
+  });
+  const _endAudioRecording = tmp;
+  const apply = tmp.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
 }
 function stopAndCacheAudioRecording() {
-  return _stopAndCacheAudioRecording(...arguments);
+  const self = this;
+  const apply = _stopAndCacheAudioRecording.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
 }
 function _stopAndCacheAudioRecording() {
-  // CreateGeneratorClosureLongIndex (0x67)
-  const obj = callback(tmp);
-  return obj(...arguments);
+  const self = this;
+  const tmp = callback(function*() {
+    if (c3 === 2) {
+      c3 = 3;
+      HermesBuiltin.throwTypeError();
+    } else if (tmp5 === 3) {
+      if (arg0 === 1) {
+        throw arg1;
+      } else if (arg0 === 2) {
+        let obj = { value: null, done: true };
+        obj[0] = arg1;
+        return obj;
+      } else {
+        return { value: "HermesInternal", done: null };
+      }
+    } else {
+      try {
+        c3 = 2;
+        if (0 === table) {
+          if (arg0 === 1) {
+            c3 = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            c3 = 3;
+            obj = { value: null, done: true };
+            obj[0] = arg1;
+            return obj;
+          } else {
+            let closure_1 = tmp2;
+            let callback = tmp3;
+            callback = undefined;
+            table = 1;
+            c3 = 1;
+            const obj1 = { value: null, done: false };
+            obj1[0] = outer1_24();
+            return obj1;
+          }
+        } else if (arg0 === 1) {
+          c3 = 3;
+          throw arg1;
+        } else if (arg0 === 2) {
+          c3 = 3;
+          const obj2 = { value: null, done: true };
+          obj2[0] = arg1;
+          return obj2;
+        } else {
+          callback = arg1;
+          mediaEngine = mediaEngine.getMediaEngine();
+          mediaEngine.removeListener(callback(table[9]).MediaEngineEvent.VoiceActivity, closure_21);
+          callback2(callback);
+          c3 = 3;
+          return { value: "HermesInternal", done: null };
+        }
+      } catch (tmp18) {
+        c3 = tmp;
+        throw tmp18;
+      }
+    }
+  });
+  const _stopAndCacheAudioRecording = tmp;
+  const apply = tmp.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
 }
-({ addVoiceMessageWave: closure_5, resetVoiceMessageState: closure_6, setSavedVoiceMessageUploadData: closure_7, setVoiceMessageRecordingId: closure_8, setVoiceMessageRecordingState: closure_9, setVoiceMessageStartTimeMillis: closure_10, useVoiceMessagesUIStore: closure_11, VoiceMessageRecordingStatus: closure_12 } = VoiceMessageRecordingStatus);
-({ WAVEFORM_WAVE_MAX_VALUE: closure_13, VOICE_RECORDING_MIN_DB: closure_14, VOICE_RECORDING_MAX_DB: closure_15, WAVEFORM_MAX_SAMPLES: closure_16, VOICE_RECORDING_MAX_DURATION_MILLIS: closure_17 } = VoiceMessageAnimationState);
+({ addVoiceMessageWave: c5, resetVoiceMessageState: closure_6, setSavedVoiceMessageUploadData: error, setVoiceMessageRecordingId: metroImportAll, setVoiceMessageRecordingState: c9, setVoiceMessageStartTimeMillis: c10, useVoiceMessagesUIStore: unpackModuleId, VoiceMessageRecordingStatus: closure_12 } = VoiceMessageRecordingStatus);
+({ WAVEFORM_WAVE_MAX_VALUE: map1, VOICE_RECORDING_MIN_DB: closure_14, VOICE_RECORDING_MAX_DB: closure_15, WAVEFORM_MAX_SAMPLES: closure_16, VOICE_RECORDING_MAX_DURATION_MILLIS: closure_17 } = VoiceMessageAnimationState);
 let c19 = null;
-importDefaultResult = new importDefaultResult("VoiceMessages");
-let closure_21 = require("apply").throttle((arg0) => {
+let closure_20 = new require("VoiceMessageAnimationState")("VoiceMessages");
+const tmp4 = new require("VoiceMessageAnimationState")("VoiceMessages");
+let closure_21 = require("set").throttle((arg0) => {
   const state = store.getState();
   if (null != state.startTimeMillis) {
     callback2(closure_13 * ((arg0 - closure_14) / (closure_15 - closure_14)));
@@ -96,30 +350,53 @@ let closure_21 = require("apply").throttle((arg0) => {
 }, 100);
 let result = require("VoiceMessageRecordingStatus").fileFinishedImporting("modules/voice_messages/native/VoiceMessageUtils.tsx");
 
-export { generateBase64EncodedWaveform };
-export const startAudioRecording = function startAudioRecording(nowResult) {
-  return _startAudioRecording(...arguments);
+export const generateBase64EncodedWaveform = function generateBase64EncodedWaveform(arg0) {
+  let arr = arg0;
+  if (arg0.length > closure_16) {
+    arr = importDefault(11417)(arg0, tmp);
+  }
+  const mapped = arr.map((arg0) => Math.min(arg0, closure_13));
+  const uint8Array = new Uint8Array(mapped);
+  return importDefault(206).fromByteArray(uint8Array);
+};
+export const startAudioRecording = function startAudioRecording(outer1_0) {
+  const self = this;
+  const apply = _startAudioRecording.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
 };
 export const endAudioRecording = function endAudioRecording() {
-  return _endAudioRecording(...arguments);
+  const self = this;
+  const apply = _endAudioRecording.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
 };
 export { stopAndCacheAudioRecording };
-export const emitVoiceMessageRecorded = function emitVoiceMessageRecorded(CANCELLED_DURATION, durationSecs, startTimeMillis) {
-  if (null != startTimeMillis) {
-    let obj = importDefault(675);
-    obj = { recording_start_timestamp: startTimeMillis };
+export const emitVoiceMessageRecorded = function emitVoiceMessageRecorded(CANCELLED_DURATION, durationSecs, first) {
+  if (null != first) {
+    let obj = importDefault(698);
+    obj = { recording_start_timestamp: null, recording_stop_timestamp: null, duration_secs: null, result: null, initialize_secs: null };
+    obj[0] = first;
     const _Date = Date;
-    obj.recording_stop_timestamp = Date.now();
-    obj.duration_secs = durationSecs;
-    obj.result = CANCELLED_DURATION;
-    obj.initialize_secs = c19;
+    obj[1] = Date.now();
+    obj[2] = durationSecs;
+    obj[3] = CANCELLED_DURATION;
+    obj[4] = c19;
     obj.track(AnalyticEvents.VOICE_MESSAGE_RECORDED, obj);
     c19 = null;
   }
 };
 export const triggerHaptic = function triggerHaptic() {
-  const obj = require(4134) /* getAndroidLightImpactEffect */;
-  const obj2 = require(477) /* set */;
-  const HapticFeedbackTypes = require(4134) /* getAndroidLightImpactEffect */.HapticFeedbackTypes;
-  const result = obj.triggerHapticFeedback(require(477) /* set */.isAndroid() ? HapticFeedbackTypes.IMPACT_LIGHT : HapticFeedbackTypes.IMPACT_MEDIUM);
+  const obj = require(4158) /* HapticFeedbackTypes */;
+  const obj2 = require(500) /* set */;
+  const HapticFeedbackTypes = require(4158) /* HapticFeedbackTypes */.HapticFeedbackTypes;
+  const result = obj.triggerHapticFeedback(require(500) /* set */.isAndroid() ? HapticFeedbackTypes.IMPACT_LIGHT : HapticFeedbackTypes.IMPACT_MEDIUM);
 };

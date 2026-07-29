@@ -1,107 +1,98 @@
-// Module ID: 5520
-// Function ID: 46963
+// Module ID: 5538
+// Function ID: 5539
 // Name: RoleDot
-// Dependencies: [31, 27, 1918, 1911, 653, 33, 4165, 689, 5521, 3838, 5524, 5525, 3865, 1212, 5522, 5530, 5541, 4161, 4695, 566, 5543, 5544, 2]
+// Dependencies: [19, 17, 1942, 1935, 676, 21, 4189, 712, 5539, 3862, 5542, 5543, 3889, 1236, 5540, 5548, 5559, 4185, 4717, 589, 5561, 5562, 2]
 // Exports: default
 
-// Module 5520 (RoleDot)
-import result from "result";
-import { View } from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_6 from "_createForOfIteratorHelperLoose";
+// Module 5538 (RoleDot)
+import initialize from "initialize";
+import { View } from "Text";
+import trackCommunicationDisabled from "trackCommunicationDisabled";
+import createGuildRoleRecordFromRust from "createGuildRoleRecordFromRust";
 import ME from "ME";
-import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import jsxProd from "Divider";
+import createCacheKey from "createCacheKey";
 
-let closure_10;
-let closure_11;
-let closure_7;
-let closure_8;
-let closure_9;
+let c10;
+let c9;
+let error;
+let metroImportAll;
+let unpackModuleId;
 const require = arg1;
 function RoleDot(color) {
   color = color.color;
-  let obj = {};
-  const items = [_createForOfIteratorHelperLoose().roleDot, ];
-  obj = {};
-  if (null == color) {
+  const style = [createCacheKey().roleDot, ];
+  if (color == null) {
     color = closure_7;
   }
-  obj.backgroundColor = color;
-  items[1] = obj;
-  obj.style = items;
-  return closure_9(View, obj);
+  style[1] = { backgroundColor: color };
+  return closure_9(View, { style });
 }
 class RoleItem {
   constructor(arg0) {
     role = global.role;
     guildId = global.guildId;
     colorString = global.color;
-    concat = undefined;
+    name = undefined;
     colorString = undefined;
     c4 = undefined;
-    guild_connections = undefined;
-    renderContent = function renderContent() {
-      let obj = {};
-      if (_isNativeReflectConstruct) {
-        obj = { roleId: role.id, guildId };
-        let colorString;
-        if (null != role) {
-          colorString = role.colorString;
-        }
-        let tmp17;
-        if (null != colorString) {
-          tmp17 = colorString;
-        }
-        obj.roleColor = tmp17;
-        obj.size = 12;
-        obj.displayRoleIcon = false;
-        let tmp3Result = tmp3(guildId(name[16]), obj);
-        const tmp11 = guildId(name[16]);
-      } else {
-        obj = {};
-        let tmp7;
-        if (null != colorString) {
-          tmp7 = colorString;
-        }
-        obj.color = tmp7;
-        tmp3Result = tmp3(outer1_13, obj);
-        const tmp4 = outer1_13;
-      }
-      const items = [tmp3Result, roleIcon, outer1_9(role(name[17]).Text, { variant: "text-xs/medium", children: name })];
-      obj.children = items;
-      return outer1_11(outer1_10, obj);
-    };
-    tmp = c12();
+    c5 = undefined;
+    tmp = jsxs();
     if (role.name.length <= MAX_VISUAL_ROLE_LENGTH) {
       name = role.name;
     } else {
       name = role.name;
-      tmp2 = MAX_VISUAL_ROLE_LENGTH;
       num = 0;
       tmp3 = globalThis;
       _HermesInternal = HermesInternal;
-      str = "";
-      str2 = "...";
-      name = "" + require("result") + "...";
+      str = "...";
+      str2 = "";
+      name = "" + require("noop") + "...";
     }
-    concat = name;
-    if (null == colorString) {
+    if (colorString == null) {
       colorString = role.colorString;
     }
+    tmp4 = role;
+    tmp5 = name;
     obj = require("useRoleIcon");
     obj = { guildId, roleId: role.id, size: 12 };
     roleIcon = obj.useRoleIcon(obj);
     c4 = roleIcon;
     tags = role.tags;
     guild_connections = undefined;
-    if (null != tags) {
+    if (tags != null) {
       guild_connections = tags.guild_connections;
     }
-    guild_connections = undefined !== guild_connections;
+    renderContent = function renderContent() {
+      if (trackCommunicationDisabled) {
+        let obj = { roleId: null, guildId: null, roleColor: null, size: 12, displayRoleIcon: false };
+        obj[0] = role.id;
+        obj[1] = guildId;
+        let colorString;
+        if (role != null) {
+          colorString = role.colorString;
+        }
+        obj[2] = colorString;
+        let tmp3Result = tmp3(guildId(name[16]), obj);
+        let tmp8 = tmp3;
+        const tmp11 = guildId(name[16]);
+      } else {
+        obj = { color: null };
+        obj[0] = colorString;
+        tmp3Result = tmp3(outer1_13, obj);
+        tmp8 = tmp3;
+        const tmp4 = outer1_13;
+        const tmp5 = colorString;
+      }
+      obj = { children: null };
+      const items = [tmp3Result, roleIcon, tmp8(role(name[17]).Text, { variant: "text-xs/medium", children: name })];
+      obj[0] = items;
+      return outer1_11(outer1_10, obj);
+    };
+    c5 = undefined !== guild_connections;
     DeveloperMode = require("explicitContentFromProto").DeveloperMode;
     setting = DeveloperMode.useSetting();
-    obj3 = require("items");
+    obj3 = require("experiment");
     items = [, ];
     items[0] = role.id;
     items[1] = name;
@@ -114,46 +105,40 @@ class RoleItem {
       const obj = role(name[11]);
       role(name[12]).roleIdCopied(name);
     }, items);
-    tmp9 = jsx;
+    tmp11 = jsx;
     if (setting) {
-      tmp12 = role;
-      tmp13 = concat;
-      num2 = 18;
-      obj1 = {};
-      obj1.onPress = callback;
+      obj1 = { onPress: null, onLongPress: null, accessibilityRole: "button", accessibilityLabel: null, accessibilityHint: null, style: null, children: null };
+      obj1[0] = callback;
       tmp14 = undefined;
       if (setting) {
         if (obj3.useExperiment({ location: "RoleItem" }, { autoTrackExposure: false }).tidaWebformEnabled) {
-          tmp14 = tmp8;
+          tmp14 = tmp10;
         }
       }
-      obj1.onLongPress = tmp14;
-      str3 = "button";
-      obj1.accessibilityRole = "button";
-      obj1.accessibilityLabel = name;
-      tmp15 = role;
-      tmp16 = concat;
-      num3 = 13;
+      obj1[1] = tmp14;
+      obj1[3] = name;
       intl = require("getSystemLocale").intl;
-      obj1.accessibilityHint = intl.string(require("getSystemLocale").t.sMsaLg);
-      obj1.style = tmp.role;
-      obj1.children = renderContent();
-      tmp9Result = tmp9(require("PressableBase").PressableHighlight, obj1);
+      obj1[4] = intl.string(require("getSystemLocale").t.sMsaLg);
+      obj1[5] = tmp.role;
+      num3 = 0;
+      obj1[6] = renderContent();
+      tmp11Result = tmp11(require("PressableBase").PressableHighlight, obj1);
     } else {
-      tmp10 = c4;
-      obj2 = {};
-      obj2.style = tmp.role;
-      obj2.children = renderContent();
-      tmp9Result = tmp9(c4, obj2);
+      tmp12 = c4;
+      obj2 = { style: null, children: null };
+      obj2[0] = tmp.role;
+      num2 = 0;
+      obj2[1] = renderContent();
+      tmp11Result = tmp11(c4, obj2);
     }
-    return tmp9Result;
+    return tmp11Result;
   }
 }
 function RolesList(guildMemberRoleIds) {
   guildMemberRoleIds = guildMemberRoleIds.guildMemberRoleIds;
   const guildId = guildMemberRoleIds.guildId;
-  let obj = guildMemberRoleIds(566);
-  const items = [closure_6];
+  let obj = guildMemberRoleIds(589);
+  const items = [createGuildRoleRecordFromRust];
   const items1 = [guildMemberRoleIds, guildId];
   const stateFromStoresArray = obj.useStateFromStoresArray(items, () => {
     const manyRoles = outer1_6.getManyRoles(guildId, guildMemberRoleIds);
@@ -161,46 +146,50 @@ function RolesList(guildMemberRoleIds) {
   }, items1);
   let tmp2 = null;
   if (0 !== stateFromStoresArray.length) {
-    obj = { style: tmp.roleContainer, children: stateFromStoresArray.map((id) => outer1_9(outer1_14, { role: id, guildId }, id.id)) };
+    obj = { style: null, children: null };
+    obj[0] = tmp.roleContainer;
+    obj[1] = stateFromStoresArray.map((id) => outer1_9(outer1_14, { role: id, guildId }, id.id));
     tmp2 = callback(View, obj);
   }
   return tmp2;
 }
-({ DEFAULT_ROLE_COLOR_HEX: closure_7, MAX_VISUAL_ROLE_LENGTH: closure_8 } = ME);
-({ jsx: closure_9, Fragment: closure_10, jsxs: closure_11 } = jsxProd);
-_createForOfIteratorHelperLoose = { roleContainer: { flexDirection: "row", gap: 8, flexWrap: "wrap" } };
-_createForOfIteratorHelperLoose = { flexDirection: "row", alignItems: "center", columnGap: 4, padding: 6, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_MOD_MUTED, borderRadius: require("_createForOfIteratorHelperLoose").radii.sm };
-_createForOfIteratorHelperLoose.role = _createForOfIteratorHelperLoose;
-let obj1 = { borderRadius: require("_createForOfIteratorHelperLoose").radii.round, height: 12, width: 12 };
-_createForOfIteratorHelperLoose.roleDot = obj1;
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/user_profile/native/UserProfileRolesCard.tsx");
+({ DEFAULT_ROLE_COLOR_HEX: error, MAX_VISUAL_ROLE_LENGTH: metroImportAll } = ME);
+({ jsx: c9, Fragment: c10, jsxs: unpackModuleId } = jsxProd);
+createCacheKey = { roleContainer: { flexDirection: "row", gap: 8, flexWrap: "wrap" }, role: null, roleDot: null };
+createCacheKey = { flexDirection: "row", alignItems: "center", columnGap: 4, padding: 6, backgroundColor: require("Themes").colors.BACKGROUND_MOD_MUTED, borderRadius: require("Themes").radii.sm };
+createCacheKey[1] = createCacheKey;
+createCacheKey[2] = { borderRadius: require("Themes").radii.round, height: 12, width: 12 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let obj1 = { borderRadius: require("Themes").radii.round, height: 12, width: 12 };
+let result = require("trackCommunicationDisabled").fileFinishedImporting("modules/user_profile/native/UserProfileRolesCard.tsx");
 
 export default function UserProfileRolesCard(userId) {
   userId = userId.userId;
   const guildId = userId.guildId;
-  let obj = userId(566);
-  const items = [_isNativeReflectConstruct];
+  let obj = userId(589);
+  const items = [trackCommunicationDisabled];
   const items1 = [userId, guildId];
   const stateFromStores = obj.useStateFromStores(items, () => outer1_5.getMember(guildId, userId), items1);
   let roles;
-  if (null != stateFromStores) {
+  if (stateFromStores != null) {
     roles = stateFromStores.roles;
   }
-  if (null == roles) {
+  if (roles == null) {
     roles = [];
   }
-  let tmp2 = null;
+  let tmp4 = null;
   if (0 !== roles.length) {
-    obj = {};
-    const intl = userId(1212).intl;
-    obj.title = intl.string(userId(1212).t["LPJmL/"]);
-    obj.style = userId.style;
-    obj = { guildId, guildMemberRoleIds: roles };
-    obj.children = callback(RolesList, obj);
-    tmp2 = callback(guildId(5544), obj);
-    const tmp6 = guildId(5544);
+    obj = { title: null, style: null, children: null };
+    const intl = tmp(1236).intl;
+    obj[0] = intl.string(tmp(1236).t["LPJmL/"]);
+    obj[1] = userId.style;
+    obj = { guildId: null, guildMemberRoleIds: null };
+    obj[0] = guildId;
+    obj[1] = roles;
+    obj[2] = callback(RolesList, obj);
+    tmp4 = callback(guildId(5562), obj);
+    const tmp7 = guildId(5562);
   }
-  return tmp2;
+  return tmp4;
 };
 export { RoleItem };

@@ -1,24 +1,24 @@
-// Module ID: 16315
-// Function ID: 126534
+// Module ID: 16350
+// Function ID: 16351
 // Name: dispatcher
-// Dependencies: [686, 2]
+// Dependencies: [709, 2]
 
-// Module 16315 (dispatcher)
+// Module 16350 (dispatcher)
 const result = require("set").fileFinishedImporting("modules/guild_settings/GuildSettingsModalChannelsActionCreators.tsx");
 
 export default {
   terminate() {
-    importDefault(686).dispatch({ type: "GUILD_SETTINGS_MODAL_CHANNELS_TERMINATE" });
+    importDefault(709).dispatch({ type: "GUILD_SETTINGS_MODAL_CHANNELS_TERMINATE" });
   },
-  startReordering(arg0) {
+  startReordering() {
     const items = [...arguments];
-    importDefault(686).dispatch({ type: "GUILD_SETTINGS_MODAL_CHANNELS_START_REORDER", sortingType: items });
+    importDefault(709).dispatch({ type: "GUILD_SETTINGS_MODAL_CHANNELS_START_REORDER", sortingType: items });
   },
   stopReordering() {
-    importDefault(686).dispatch({ type: "GUILD_SETTINGS_MODAL_CHANNELS_STOP_REORDER" });
+    importDefault(709).dispatch({ type: "GUILD_SETTINGS_MODAL_CHANNELS_STOP_REORDER" });
   },
   localChannelUpdate(found) {
-    let obj = importDefault(686);
+    let obj = importDefault(709);
     obj = { type: "GUILD_SETTINGS_MODAL_LOCAL_SORT_CHANGE", updates: found };
     obj.dispatch(obj);
   }

@@ -1,17 +1,16 @@
-// Module ID: 8063
-// Function ID: 63999
-// Name: isValidAnchor
-// Dependencies: [830, 8064, 8065, 8066, 2]
+// Module ID: 8087
+// Function ID: 8088
+// Name: set
+// Dependencies: [853, 8088, 8089, 8090, 2]
 // Exports: compareLayerFiles, isPreviewFilename, parseLayerFilename
 
-// Module 8063 (isValidAnchor)
+// Module 8087 (set)
 import _toArray from "_toArray";
 import set from "ProfileFrameLayerType";
 
 const require = arg1;
-function isValidAnchor(first1) {
-  return set1.has(first1);
-}
+const preview = "preview";
+const responsive = "responsive";
 let obj = { foreground: require("ProfileFrameLayerOrder").ProfileFrameLayerOrder.FRONT, background: require("ProfileFrameLayerOrder").ProfileFrameLayerOrder.BACK };
 const items = [require("ProfileFrameLayerType").ProfileFrameLayerType.STAPLE, require("ProfileFrameLayerType").ProfileFrameLayerType.RAIL, require("ProfileFrameLayerType").ProfileFrameLayerType.BORDER];
 let set = new Set(items);
@@ -25,7 +24,7 @@ const items3 = [...set1];
 obj[obj.INVALID_ANCHOR] = "invalid anchor (expected: " + items3.join(", ") + ")";
 obj[obj.INVALID_RESPONSIVE] = "invalid suffix (expected '" + "responsive" + "')";
 obj[obj.BORDER_HAS_ANCHOR] = "border layers must omit the anchor";
-let closure_6 = { [arg1(8064).ProfileFrameLayerOrder.FRONT]: 0, [arg1(8064).ProfileFrameLayerOrder.BACK]: 1 };
+let closure_8 = { [arg1(8088).ProfileFrameLayerOrder.FRONT]: 0, [arg1(8088).ProfileFrameLayerOrder.BACK]: 1 };
 const result = set.fileFinishedImporting("modules/collectibles/profile_frames/tooling/ProfileFrameLayerParser.tsx");
 
 export const PREVIEW_FILENAME = "preview";
@@ -33,86 +32,87 @@ export const RESPONSIVE_KEYWORD = "responsive";
 export const FOLDER_ORDER_MAP = obj;
 export const ParseErrorKind = obj;
 export const PARSE_ERROR_LABELS = obj;
-export const parseLayerFilename = function parseLayerFilename(filename) {
-  const parts = filename.replace(/\.\w+$/, "").split("_");
+export const parseLayerFilename = function parseLayerFilename(c7) {
+  let tmp19;
+  let tmp20;
+  const parts = c7.replace(/\.\w+$/, "").split("_");
   if (parts.length >= 2) {
     if (parts.length <= 4) {
       const arr2 = callback(parts);
-      const first = arr2[0];
+      [tmp19, tmp20] = arr2;
       const substr = arr2.slice(2);
-      if (obj14.test(first)) {
-        if (set.has(tmp28)) {
-          if (tmp28 === require(8065) /* ProfileFrameLayerType */.ProfileFrameLayerType.BORDER) {
+      if (obj14.test(tmp19)) {
+        if (set.has(tmp20)) {
+          if (tmp20 === require(8089) /* ProfileFrameLayerType */.ProfileFrameLayerType.BORDER) {
             if (substr.length > 0) {
-              if (isValidAnchor(substr[0])) {
-                let obj = { parsed: null };
-                obj.errorType = obj.BORDER_HAS_ANCHOR;
+              if (set1.has(substr[0])) {
+                let obj = { parsed: null, errorType: null };
+                obj[1] = obj.BORDER_HAS_ANCHOR;
                 return obj;
               }
             }
             if (substr.length > 1) {
-              obj = { parsed: null };
-              obj.errorType = obj.WRONG_PART_COUNT;
+              obj = { parsed: null, errorType: null };
+              obj[1] = obj.WRONG_PART_COUNT;
               return obj;
             } else {
               if (1 === substr.length) {
-                if (substr[0] !== "responsive") {
-                  const obj1 = { parsed: null, errorType: obj.INVALID_RESPONSIVE };
+                if (substr[0] !== responsive) {
+                  const obj1 = { parsed: null, errorType: null };
+                  obj1[1] = obj.INVALID_RESPONSIVE;
                   return obj1;
                 }
               }
-              const obj2 = {};
-              const obj3 = {};
+              const obj2 = { parsed: null, errorType: null };
+              const obj3 = { index: null, type: null, anchor: null, responsive: null };
               const _Number2 = Number;
-              obj3.index = Number(first);
-              obj3.type = tmp28;
-              obj3.anchor = require(8066) /* ProfileFrameLayerAnchor */.ProfileFrameLayerAnchor.CENTER;
-              obj3.responsive = 1 === substr.length;
-              obj2.parsed = obj3;
-              obj2.errorType = null;
+              obj3[0] = Number(tmp19);
+              obj3[1] = tmp20;
+              obj3[2] = tmp4(8090).ProfileFrameLayerAnchor.CENTER;
+              obj3[3] = 1 === substr.length;
+              obj2[0] = obj3;
               return obj2;
             }
           } else {
-            const first1 = substr[0];
-            if (null != first1) {
-              if (isValidAnchor(first1)) {
+            const first = substr[0];
+            if (null != first) {
+              if (set1.has(first)) {
                 if (substr.length > 2) {
-                  const obj4 = { parsed: null, errorType: obj.WRONG_PART_COUNT };
+                  const obj4 = { parsed: null, errorType: null };
+                  obj4[1] = obj.WRONG_PART_COUNT;
                   return obj4;
                 } else {
                   if (2 === substr.length) {
-                    if (substr[1] !== "responsive") {
-                      const obj5 = { parsed: null, errorType: obj.INVALID_RESPONSIVE };
+                    if (substr[1] !== responsive) {
+                      const obj5 = { parsed: null, errorType: null };
+                      obj5[1] = obj.INVALID_RESPONSIVE;
                       return obj5;
                     }
                   }
-                  let tmp8 = 2 === substr.length;
-                  if (!tmp8) {
-                    tmp8 = tmp28 === require(8065) /* ProfileFrameLayerType */.ProfileFrameLayerType.RAIL;
-                  }
-                  const obj6 = {};
-                  const obj7 = {};
+                  const obj6 = { parsed: null, errorType: null };
+                  const obj7 = { index: null, type: null, anchor: null, responsive: null };
                   const _Number = Number;
-                  obj7.index = Number(first);
-                  obj7.type = tmp28;
-                  obj7.anchor = first1;
-                  obj7.responsive = tmp8;
-                  obj6.parsed = obj7;
-                  obj6.errorType = null;
+                  obj7[0] = Number(tmp19);
+                  obj7[1] = tmp20;
+                  obj7[2] = first;
+                  obj7[3] = 2 === substr.length || tmp20 === tmp4(8089).ProfileFrameLayerType.RAIL;
+                  obj6[0] = obj7;
                   return obj6;
                 }
               }
             }
-            const obj8 = { parsed: null, errorType: obj.INVALID_ANCHOR };
+            const obj8 = { parsed: null, errorType: null };
+            obj8[1] = obj.INVALID_ANCHOR;
             return obj8;
           }
         } else {
-          const obj9 = { parsed: null, errorType: obj.INVALID_TYPE };
+          const obj9 = { parsed: null, errorType: null };
+          obj9[1] = obj.INVALID_TYPE;
           return obj9;
         }
       } else {
-        obj = { parsed: null };
-        obj.errorType = obj.INVALID_INDEX;
+        obj = { parsed: null, errorType: null };
+        obj[1] = obj.INVALID_INDEX;
         return obj;
       }
       obj14 = /^\d+$/;
@@ -128,5 +128,5 @@ export const compareLayerFiles = function compareLayerFiles(index, index2) {
   return diff;
 };
 export const isPreviewFilename = function isPreviewFilename(str) {
-  return str.replace(/\.\w+$/, "") === "preview";
+  return str.replace(/\.\w+$/, "") === preview;
 };

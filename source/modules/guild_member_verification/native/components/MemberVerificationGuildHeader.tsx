@@ -1,36 +1,37 @@
-// Module ID: 9141
-// Function ID: 71701
+// Module ID: 9165
+// Function ID: 9166
 // Name: AVATAR_SIZE
-// Dependencies: [31, 27, 9120, 33, 4165, 689, 1392, 9142, 1557, 4026, 4589, 5548, 9143, 4161, 1212, 2]
+// Dependencies: [19, 17, 9144, 21, 4189, 712, 1416, 9166, 1581, 4050, 4611, 5566, 9167, 4185, 1236, 2]
 // Exports: default
 
-// Module 9141 (AVATAR_SIZE)
-import "result";
+// Module 9165 (AVATAR_SIZE)
+import "noop";
 import { View } from "get ActivityIndicator";
 import BANNER_RATIO_HEIGHT_16_9 from "BANNER_RATIO_HEIGHT_16_9";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
 let AVATAR_BORDER_WIDTH;
 let AVATAR_SIZE;
 let closure_6;
-let closure_7;
+let error;
 const require = arg1;
 ({ AVATAR_BORDER_WIDTH, AVATAR_SIZE } = BANNER_RATIO_HEIGHT_16_9);
 const useBannerHeight = BANNER_RATIO_HEIGHT_16_9.useBannerHeight;
-({ jsx: closure_6, jsxs: closure_7 } = jsxProd);
-_createForOfIteratorHelperLoose = { header: { flex: 1, flexDirection: "column", justifyContent: "flex-end", alignItems: "center", marginBottom: 12 }, headerContent: { alignItems: "center", marginTop: -48, paddingTop: 20, paddingBottom: 0, paddingHorizontal: 16 }, linearGradient: { position: "absolute", height: 140, top: 0, right: 0, left: 0 } };
-_createForOfIteratorHelperLoose = { borderRadius: require("_createForOfIteratorHelperLoose").radii.lg, borderWidth: 0, borderColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWER, height: AVATAR_SIZE, width: AVATAR_SIZE, margin: 0, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SCRIM };
-_createForOfIteratorHelperLoose.avatar = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.avatarContainer = { borderRadius: 20, borderWidth: AVATAR_BORDER_WIDTH, borderColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWER, height: AVATAR_SIZE + 2 * AVATAR_BORDER_WIDTH, width: AVATAR_SIZE + 2 * AVATAR_BORDER_WIDTH, marginBottom: 16, marginTop: -16, marginLeft: -4, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWER };
-_createForOfIteratorHelperLoose.featureIcon = { position: "absolute", top: 56, right: -8 };
-_createForOfIteratorHelperLoose.headerTitle = { textAlign: "center", marginBottom: 8 };
-_createForOfIteratorHelperLoose.headerDescription = { lineHeight: 18, textAlign: "center" };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-let closure_9 = { code: "function MemberVerificationGuildHeaderTsx1(){const{scrollTop}=this.__closure;return scrollTop.get()*-1;}" };
-let closure_10 = { code: "function MemberVerificationGuildHeaderTsx2(){const{height,interpolate,scrollTop,safeAreaTop,scrollTopNegative}=this.__closure;return{width:'100%',height:height,opacity:interpolate(scrollTop.get(),[0,height-safeAreaTop],[1,0],'clamp'),transform:[{translateY:interpolate(scrollTopNegative.get(),[0,height],[0,-height],'clamp')},{scale:interpolate(scrollTopNegative.get(),[0,height],[1,1.08],'clamp')}]};}" };
-let closure_11 = { code: "function MemberVerificationGuildHeaderTsx3(){const{interpolate,scrollTopNegative,height,ANIMATION_GOLDEN_RATIO,AVATAR_SIZE}=this.__closure;return{transform:[{translateY:interpolate(scrollTopNegative.get(),[0,height],[0,-(height/ANIMATION_GOLDEN_RATIO)],'clamp')},{scale:interpolate(scrollTopNegative.get(),[0,AVATAR_SIZE],[1,ANIMATION_GOLDEN_RATIO],'clamp')}]};}" };
-let obj1 = { borderRadius: 20, borderWidth: AVATAR_BORDER_WIDTH, borderColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWER, height: AVATAR_SIZE + 2 * AVATAR_BORDER_WIDTH, width: AVATAR_SIZE + 2 * AVATAR_BORDER_WIDTH, marginBottom: 16, marginTop: -16, marginLeft: -4, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWER };
+({ jsx: closure_6, jsxs: error } = jsxProd);
+let c8 = 1.20225424859375;
+createCacheKey = { header: { flex: 1, flexDirection: "column", justifyContent: "flex-end", alignItems: "center", marginBottom: 12 }, headerContent: { alignItems: "center", marginTop: -48, paddingTop: 20, paddingBottom: 0, paddingHorizontal: 16 }, linearGradient: { position: "absolute", height: 140, top: 0, right: 0, left: 0 }, avatar: null, avatarContainer: null, featureIcon: null, headerTitle: null, headerDescription: null };
+createCacheKey = { borderRadius: require("Themes").radii.lg, borderWidth: 0, borderColor: require("Themes").colors.BACKGROUND_BASE_LOWER, height: AVATAR_SIZE, width: AVATAR_SIZE, margin: 0, backgroundColor: require("Themes").colors.BACKGROUND_SCRIM };
+createCacheKey[3] = createCacheKey;
+createCacheKey[4] = { borderRadius: 20, borderWidth: AVATAR_BORDER_WIDTH, borderColor: require("Themes").colors.BACKGROUND_BASE_LOWER, height: AVATAR_SIZE + 2 * AVATAR_BORDER_WIDTH, width: AVATAR_SIZE + 2 * AVATAR_BORDER_WIDTH, marginBottom: 16, marginTop: -16, marginLeft: -4, backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOWER };
+createCacheKey[5] = { position: "absolute", top: 56, right: -8 };
+createCacheKey[6] = { textAlign: "center", marginBottom: 8 };
+createCacheKey[7] = { lineHeight: 18, textAlign: "center" };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let closure_10 = { code: "function MemberVerificationGuildHeaderTsx1(){const{scrollTop}=this.__closure;return scrollTop.get()*-1;}" };
+let closure_11 = { code: "function MemberVerificationGuildHeaderTsx2(){const{height,interpolate,scrollTop,safeAreaTop,scrollTopNegative}=this.__closure;return{width:'100%',height:height,opacity:interpolate(scrollTop.get(),[0,height-safeAreaTop],[1,0],'clamp'),transform:[{translateY:interpolate(scrollTopNegative.get(),[0,height],[0,-height],'clamp')},{scale:interpolate(scrollTopNegative.get(),[0,height],[1,1.08],'clamp')}]};}" };
+let closure_12 = { code: "function MemberVerificationGuildHeaderTsx3(){const{interpolate,scrollTopNegative,height,ANIMATION_GOLDEN_RATIO,AVATAR_SIZE}=this.__closure;return{transform:[{translateY:interpolate(scrollTopNegative.get(),[0,height],[0,-(height/ANIMATION_GOLDEN_RATIO)],'clamp')},{scale:interpolate(scrollTopNegative.get(),[0,AVATAR_SIZE],[1,ANIMATION_GOLDEN_RATIO],'clamp')}]};}" };
+let obj1 = { borderRadius: 20, borderWidth: AVATAR_BORDER_WIDTH, borderColor: require("Themes").colors.BACKGROUND_BASE_LOWER, height: AVATAR_SIZE + 2 * AVATAR_BORDER_WIDTH, width: AVATAR_SIZE + 2 * AVATAR_BORDER_WIDTH, marginBottom: 16, marginTop: -16, marginLeft: -4, backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOWER };
 const result = require("BANNER_RATIO_HEIGHT_16_9").fileFinishedImporting("modules/guild_member_verification/native/components/MemberVerificationGuildHeader.tsx");
 
 export default function MemberVerificationGuildHeader(hasManualFormFields) {
@@ -38,17 +39,24 @@ export default function MemberVerificationGuildHeader(hasManualFormFields) {
   let scrollTop;
   ({ guild, scrollTop } = hasManualFormFields);
   hasManualFormFields = hasManualFormFields.hasManualFormFields;
-  const tmp = _createForOfIteratorHelperLoose();
+  let importDefault;
+  let top;
+  let derivedValue;
+  const tmp = createCacheKey();
   if (null != guild.banner) {
     let obj = importDefault(top[6]);
     let guildBannerSource = obj.getGuildBannerSource(guild);
+    let tmp3 = top;
+    let tmp5 = importDefault;
   } else {
+    tmp3 = top;
     guildBannerSource = importDefault(top[7]);
+    tmp5 = importDefault;
   }
-  const tmp7 = useBannerHeight();
-  importDefault = tmp7;
-  top = importDefault(top[8])().top;
-  let obj1 = scrollTop(top[9]);
+  const tmp8 = useBannerHeight();
+  importDefault = tmp8;
+  top = tmp5(tmp3[8])().top;
+  let obj1 = scrollTop(tmp3[9]);
   class N {
     constructor() {
       return -1 * scrollTop.get();
@@ -56,103 +64,103 @@ export default function MemberVerificationGuildHeader(hasManualFormFields) {
   }
   N.__closure = { scrollTop };
   N.__workletHash = 6997429707371;
-  N.__initData = closure_9;
-  const derivedValue = obj1.useDerivedValue(N);
-  let obj2 = scrollTop(top[9]);
+  N.__initData = closure_10;
+  derivedValue = obj1.useDerivedValue(N);
+  let obj2 = scrollTop(tmp3[9]);
   class I {
     constructor() {
-      obj = { width: "100%", height: closure_1 };
+      obj = { width: "100%", height: c1, opacity: null, transform: null };
       obj2 = scrollTop(top[9]);
       items = [0];
-      items[1] = closure_1 - top;
-      obj.opacity = obj2.interpolate(scrollTop.get(), items, [1, 0], "clamp");
-      obj = {};
+      items[1] = c1 - top;
+      obj[2] = obj2.interpolate(scrollTop.get(), items, [1, 0], "clamp");
+      obj = { translateY: null };
       obj4 = scrollTop(top[9]);
       items1 = [0];
-      items1[1] = closure_1;
+      items1[1] = c1;
       items2 = [0];
-      items2[1] = -closure_1;
-      obj.translateY = obj4.interpolate(c3.get(), items1, items2, "clamp");
+      items2[1] = -c1;
+      obj[0] = obj4.interpolate(c3.get(), items1, items2, "clamp");
       items3 = [, ];
       items3[0] = obj;
-      obj1 = {};
+      obj1 = { scale: null };
       obj6 = scrollTop(top[9]);
       items4 = [0];
-      items4[1] = closure_1;
-      obj1.scale = obj6.interpolate(c3.get(), items4, [1, 1.08], "clamp");
+      items4[1] = c1;
+      obj1[0] = obj6.interpolate(c3.get(), items4, [1, 1.08], "clamp");
       items3[1] = obj1;
-      obj.transform = items3;
+      obj[3] = items3;
       return obj;
     }
   }
-  obj = { height: tmp7, interpolate: scrollTop(top[9]).interpolate, scrollTop, safeAreaTop: top, scrollTopNegative: derivedValue };
+  obj = { height: tmp8, interpolate: scrollTop(tmp3[9]).interpolate, scrollTop, safeAreaTop: top, scrollTopNegative: derivedValue };
   I.__closure = obj;
   I.__workletHash = 15738371977789;
-  I.__initData = closure_10;
+  I.__initData = closure_11;
   const animatedStyle = obj2.useAnimatedStyle(I);
-  let obj4 = scrollTop(top[9]);
+  let obj4 = scrollTop(tmp3[9]);
   const fn = function b() {
-    let obj = {};
-    obj = {};
-    const items = [0, closure_1];
-    const items1 = [0, -closure_1 / 1.20225424859375];
-    obj.translateY = scrollTop(top[9]).interpolate(derivedValue.get(), items, items1, "clamp");
+    let obj = { transform: null };
+    obj = { translateY: null };
+    const items = [0, c1];
+    const items1 = [0, -c1 / outer1_8];
+    obj[0] = scrollTop(top[9]).interpolate(derivedValue.get(), items, items1, "clamp");
     const items2 = [obj, ];
-    obj = {};
+    obj = { scale: null };
     const obj3 = scrollTop(top[9]);
     const items3 = [0, outer1_4];
-    const items4 = [1, 1.20225424859375];
-    obj.scale = scrollTop(top[9]).interpolate(derivedValue.get(), items3, items4, "clamp");
+    const items4 = [1, outer1_8];
+    obj[0] = scrollTop(top[9]).interpolate(derivedValue.get(), items3, items4, "clamp");
     items2[1] = obj;
-    obj.transform = items2;
+    obj[0] = items2;
     return obj;
   };
-  obj = { interpolate: scrollTop(top[9]).interpolate, scrollTopNegative: derivedValue, height: tmp7, ANIMATION_GOLDEN_RATIO: 1.20225424859375, AVATAR_SIZE };
+  obj = { interpolate: scrollTop(tmp3[9]).interpolate, scrollTopNegative: derivedValue, height: tmp8, ANIMATION_GOLDEN_RATIO: c8, AVATAR_SIZE };
   fn.__closure = obj;
   fn.__workletHash = 62412230968;
-  fn.__initData = closure_11;
-  obj1 = { style: tmp.header };
+  fn.__initData = closure_12;
+  obj1 = { style: tmp.header, children: null };
   const animatedStyle1 = obj4.useAnimatedStyle(fn);
-  obj2 = { style: animatedStyle };
-  let obj3 = { style: { width: "100%", height: tmp7 }, source: guildBannerSource };
-  let items = [callback(importDefault(top[9]).Image, obj3), ];
-  obj4 = { start: { x: 0, y: 0 }, end: { x: 0, y: 1 }, style: tmp.linearGradient, colors: ["rgba(0,0,0,0.7)", "transparent"] };
-  items[1] = callback(importDefault(top[10]), obj4);
-  obj2.children = items;
-  let items1 = [callback2(importDefault(top[9]).View, obj2), ];
-  const obj5 = { style: tmp.headerContent };
-  const obj6 = { style: items2 };
+  obj2 = { style: animatedStyle, children: null };
+  let items = [callback(tmp5(tmp3[9]).Image, { style: { width: "100%", height: tmp8 }, source: guildBannerSource }), callback(tmp5(tmp3[10]), { start: { x: 0, y: 0 }, end: { x: 0, y: 1 }, style: tmp.linearGradient, colors: ["rgba(0,0,0,0.7)", "transparent"] })];
+  obj2[1] = items;
+  let items1 = [callback2(tmp5(tmp3[9]).View, obj2), ];
+  obj4 = { style: tmp.headerContent, children: null };
+  const obj5 = { style: items2, children: null };
   items2 = [tmp.avatarContainer, animatedStyle1];
-  const obj7 = { style: tmp.avatar, guild, size: scrollTop(top[11]).GuildIconSizes.XLARGE, animate: true };
-  let items3 = [callback(importDefault(top[11]), obj7), callback(importDefault(top[12]), { style: tmp.featureIcon, guild, disableColor: true })];
-  obj6.children = items3;
-  let items4 = [callback2(importDefault(top[9]).View, obj6), , ];
-  const obj9 = { style: tmp.headerTitle, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary" };
-  const intl = scrollTop(top[14]).intl;
+  const obj6 = { style: tmp.avatar, guild, size: null, animate: true };
+  obj6[2] = scrollTop(tmp3[11]).GuildIconSizes.XLARGE;
+  let items3 = [callback(tmp5(tmp3[11]), obj6), callback(tmp5(tmp3[12]), { style: tmp.featureIcon, guild, disableColor: true })];
+  obj5[1] = items3;
+  let items4 = [callback2(tmp5(tmp3[9]).View, obj5), , ];
+  const obj8 = { style: tmp.headerTitle, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: null };
+  const intl = scrollTop(tmp3[14]).intl;
   const format = intl.format;
-  const t = scrollTop(top[14]).t;
+  const t = scrollTop(tmp3[14]).t;
   if (hasManualFormFields) {
-    const obj10 = { guildName: guild.name };
-    let formatResult = format(t.cgX47Z, obj10);
+    const obj9 = { guildName: null };
+    obj9[0] = guild.name;
+    let formatResult = format(t.cgX47Z, obj9);
   } else {
-    const obj11 = { guildName: guild.name };
-    formatResult = format(t.VnxBOA, obj11);
+    const obj10 = { guildName: null };
+    obj10[0] = guild.name;
+    formatResult = format(t.VnxBOA, obj10);
   }
-  obj9.children = formatResult;
-  items4[1] = callback(scrollTop(top[13]).Heading, obj9);
-  const obj12 = { style: tmp.headerDescription, variant: "text-sm/medium", color: "text-default" };
-  const intl2 = scrollTop(top[14]).intl;
+  obj8[3] = formatResult;
+  items4[1] = callback(scrollTop(tmp3[13]).Heading, obj8);
+  const obj11 = { style: tmp.headerDescription, variant: "text-sm/medium", color: "text-default", children: null };
+  const intl2 = tmp9(tmp3[14]).intl;
   const string = intl2.string;
-  const t2 = scrollTop(top[14]).t;
+  const t2 = tmp9(tmp3[14]).t;
   if (hasManualFormFields) {
     let stringResult = string(t2["3smSPP"]);
   } else {
     stringResult = string(t2["7D3C5p"]);
   }
-  obj12.children = stringResult;
-  items4[2] = callback(scrollTop(top[13]).Text, obj12);
-  obj5.children = items4;
-  items1[1] = callback2(derivedValue, obj5);
-  obj1.children = items1;
+  obj11[3] = stringResult;
+  items4[2] = callback(scrollTop(tmp3[13]).Text, obj11);
+  obj4[1] = items4;
+  items1[1] = callback2(derivedValue, obj4);
+  obj1[1] = items1;
   return callback2(derivedValue, obj1);
 };

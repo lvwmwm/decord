@@ -1,30 +1,30 @@
-// Module ID: 14251
-// Function ID: 109478
+// Module ID: 14273
+// Function ID: 14274
 // Name: toggle
-// Dependencies: [4212, 7733, 566, 10763, 10099, 1212, 2]
+// Dependencies: [4236, 7756, 589, 10787, 10120, 1236, 2]
 
-// Module 14251 (toggle)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 14273 (toggle)
+import _detectH265HardwareDecode from "_detectH265HardwareDecode";
 import createToggle from "createToggle";
 
 const require = arg1;
 createToggle = {
   useTitle() {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(require(1212) /* getSystemLocale */.t.t8Qhib);
+    const intl = require(1236) /* getSystemLocale */.intl;
+    return intl.string(require(1236) /* getSystemLocale */.t.t8Qhib);
   },
   parent: require("MobileSetting").MobileSetting.VOICE,
   useValue: function useNoiseSuppressionSettingValue() {
-    const items = [_isNativeReflectConstruct];
-    return require(566) /* initialize */.useStateFromStores(items, () => outer1_2.getNoiseSuppression());
+    const items = [_detectH265HardwareDecode];
+    return require(589) /* initialize */.useStateFromStores(items, () => noiseSuppression.getNoiseSuppression());
   },
   onValueChange: function onNoiseSuppressionSettingValueChange(arg0) {
-    const NoiseSuppressionOpt = require(10763) /* getSelectedNoiseSuppressionOption */.NoiseSuppressionOpt;
-    const result = require(10763) /* getSelectedNoiseSuppressionOption */.handleNoiseSuppressionChange(arg0 ? NoiseSuppressionOpt.STANDARD : NoiseSuppressionOpt.NONE);
+    const NoiseSuppressionOpt = require(10787) /* handleAutomaticGainControlChange */.NoiseSuppressionOpt;
+    const result = require(10787) /* handleAutomaticGainControlChange */.handleNoiseSuppressionChange(arg0 ? NoiseSuppressionOpt.STANDARD : NoiseSuppressionOpt.NONE);
   },
   usePredicate: function useHasNoiseSuppressionSetting() {
-    const items = [_isNativeReflectConstruct];
-    return require(566) /* initialize */.useStateFromStores(items, () => !outer1_2.isNoiseCancellationSupported());
+    const items = [_detectH265HardwareDecode];
+    return require(589) /* initialize */.useStateFromStores(items, () => !noiseCancellationSupported.isNoiseCancellationSupported());
   }
 };
 createToggle = createToggle.createToggle(createToggle);

@@ -1,244 +1,177 @@
-// Module ID: 10094
-// Function ID: 78072
-// Name: isPrefix
-// Dependencies: [6, 7, 9077, 9105, 2]
+// Module ID: 10115
+// Function ID: 10116
+// Name: isComplete
+// Dependencies: [9101, 9129, 2]
 
-// Module 10094 (isPrefix)
-import _classCallCheck from "_classCallCheck";
-import _defineProperties from "_defineProperties";
+// Module 10115 (isComplete)
 import { SearchQueryTagTypes } from "SearchAutocompleteSelectAnalyticsActions";
 import { SearchFilterAddLocations } from "SearchEntrypointAnalyticsLocations";
 
-function isPrefix(type) {
-  return type.type === SearchQueryTagTypes.PREFIX;
-}
 function isComplete(type) {
   return type.type === SearchQueryTagTypes.COMPLETE;
 }
-let tmp2 = (() => {
-  class SearchQueryTagManager {
-    constructor() {
-      tmp = SearchQueryTagManager(this, SearchQueryTagManager);
-      this.tags = [];
-      set = new Set();
-      this.ids = set;
-      set1 = new Set();
-      this.channelIds = set1;
-      this.version = 0;
-      return;
-    }
+const result = require("set").fileFinishedImporting("modules/search/native/stores/SearchQueryTagManager.tsx");
+class SearchQueryTagManager {
+  constructor() {
+    obj = Object.create(new.target.prototype);
+    obj[0] = [];
+    set = new Set();
+    obj[1] = set;
+    set1 = new Set();
+    obj[2] = set1;
+    return obj;
   }
-  let obj = {
-    key: "markChanged",
-    value() {
-      const set = new Set();
-      const set1 = new Set();
-      const tags = this.tags;
-      const item = tags.forEach((text) => {
-        set.add(text.text);
-        let tmp2 = outer2_5(text);
-        if (tmp2) {
-          tmp2 = null != text.channelId;
-        }
-        if (tmp2) {
-          set1.add(text.channelId);
-        }
-      });
-      this.ids = set;
-      this.channelIds = set1;
-      this.version = this.version + 1;
+}
+const prototype = SearchQueryTagManager.prototype;
+prototype["markChanged"] = function markChanged() {
+  const set = new Set();
+  const set1 = new Set();
+  const tags = this.tags;
+  const item = tags.forEach((text) => {
+    set.add(text.text);
+    let tmp2 = text.type === set.COMPLETE;
+    if (tmp2) {
+      tmp2 = null != text.channelId;
     }
-  };
-  let items = [obj, , , , , , , , , , , , , , , ];
-  obj = {
-    key: "mergeTag",
-    value(location, channelId) {
-      let _classCallCheck = location;
-      let _defineProperties = channelId;
-      const tags = this.tags;
-      const items = [
-        ...tags.filter((arg0) => {
-          let tmp = arg0 !== _classCallCheck;
-          if (tmp) {
-            tmp = arg0 !== _defineProperties;
-          }
-          return tmp;
-        }),
-        { type: outer1_2.COMPLETE, text: "" + location.text + " " + channelId.text, location: location.location, searchTokenType: location.searchTokenType, channelId: channelId.channelId, userId: channelId.userId }
-      ];
-      this.tags = items;
+    if (tmp2) {
+      set1.add(text.channelId);
     }
-  };
-  items[1] = obj;
-  obj = {
-    key: "replaceTag",
-    value(arg0, arg1) {
-      let _classCallCheck = arg0;
-      let _defineProperties = arg1;
-      const tags = this.tags;
-      this.tags = tags.map((arg0) => {
-        let tmp = arg0;
-        if (arg0 === _classCallCheck) {
-          tmp = _defineProperties;
-        }
-        return tmp;
-      });
+  });
+  this.ids = set;
+  this.channelIds = set1;
+  this.version = this.version + 1;
+};
+prototype["mergeTag"] = function mergeTag(location, channelId) {
+  const SearchQueryTagTypes = location;
+  let closure_1 = channelId;
+  const tags = this.tags;
+  const items = [];
+  items[HermesBuiltin.arraySpread(tags.filter((arg0) => {
+    let tmp = arg0 !== closure_0;
+    if (tmp) {
+      tmp = arg0 !== closure_1;
     }
-  };
-  items[2] = obj;
-  items[3] = {
-    key: "exists",
-    value(text) {
-      const ids = this.ids;
-      return ids.has(text.text);
+    return tmp;
+  }), 0)] = { type: SearchQueryTagTypes.COMPLETE, text: "" + location.text + " " + channelId.text, location: location.location, searchTokenType: location.searchTokenType, channelId: channelId.channelId, userId: channelId.userId };
+  this.tags = items;
+};
+prototype["replaceTag"] = function replaceTag(arg0, type) {
+  let closure_0 = arg0;
+  let closure_1 = type;
+  const tags = this.tags;
+  this.tags = tags.map((arg0) => {
+    let tmp = arg0;
+    if (arg0 === closure_0) {
+      tmp = closure_1;
     }
-  };
-  items[4] = {
-    key: "getChannelIds",
-    value() {
-      return this.channelIds;
-    }
-  };
-  items[5] = {
-    key: "getUserIds",
-    value(arg0) {
-      let _classCallCheck = arg0;
-      const set = new Set();
-      const tags = this.tags;
-      const item = tags.forEach((userId) => {
-        if (outer2_5(userId)) {
-          userId = userId.userId;
-          let tmp2 = userId.searchTokenType === _classCallCheck;
-          if (tmp2) {
-            tmp2 = null != userId;
-          }
-          if (tmp2) {
-            set.add(userId);
-          }
-        }
-      });
-      return set;
-    }
-  };
-  items[6] = {
-    key: "isChannelTagsOnly",
-    value() {
-      const tags = this.tags;
-      const found = tags.filter(outer1_5);
-      return found.every((channelId) => null != channelId.channelId);
-    }
-  };
-  items[7] = {
-    key: "hasUserAddedTags",
-    value() {
-      const tags = this.tags;
-      const found = tags.filter(outer1_5);
-      return found.some((location) => location.location !== outer2_3.CLIENT_AUTO_ADD);
-    }
-  };
-  items[8] = {
-    key: "isEmpty",
-    value() {
-      return 0 === this.tags.length;
-    }
-  };
-  items[9] = {
-    key: "getPrefixTag",
-    value() {
-      if (null != this.tags[this.tags.length - 1]) {
-        let tmp3;
-        if (outer1_4(tmp)) {
-          tmp3 = tmp;
-        }
-        return tmp3;
+    return tmp;
+  });
+};
+prototype["exists"] = function exists(text) {
+  const ids = this.ids;
+  return ids.has(text.text);
+};
+prototype["getChannelIds"] = function getChannelIds() {
+  return this.channelIds;
+};
+prototype["getUserIds"] = function getUserIds(arg0) {
+  let closure_0 = arg0;
+  const set = new Set();
+  const tags = this.tags;
+  const item = tags.forEach((type) => {
+    if (type.type === constants.COMPLETE) {
+      const userId = type.userId;
+      let tmp2 = type.searchTokenType === constants;
+      if (tmp2) {
+        tmp2 = null != userId;
+      }
+      if (tmp2) {
+        set.add(userId);
       }
     }
-  };
-  items[10] = {
-    key: "get",
-    value() {
-      return this.tags;
+  });
+  return set;
+};
+prototype["isChannelTagsOnly"] = function isChannelTagsOnly() {
+  const tags = this.tags;
+  const found = tags.filter(isComplete);
+  return found.every((channelId) => null != channelId.channelId);
+};
+prototype["hasUserAddedTags"] = function hasUserAddedTags() {
+  const tags = this.tags;
+  const found = tags.filter(isComplete);
+  return found.some((location) => location.location !== constants.CLIENT_AUTO_ADD);
+};
+prototype["isEmpty"] = function isEmpty() {
+  return 0 === this.tags.length;
+};
+prototype["getPrefixTag"] = function getPrefixTag() {
+  if (null != this.tags[this.tags.length - 1]) {
+    let tmp3;
+    if (tmp.type === SearchQueryTagTypes.PREFIX) {
+      tmp3 = tmp;
     }
-  };
-  items[11] = {
-    key: "set",
-    value(tags) {
-      this.tags = tags;
-      this.markChanged();
+    return tmp3;
+  }
+};
+prototype["get"] = function get() {
+  return this.tags;
+};
+prototype["set"] = function set(tags) {
+  this.tags = tags;
+  this.markChanged();
+};
+prototype["getQueryString"] = function getQueryString() {
+  let flag = arg0;
+  if (arg0 === undefined) {
+    flag = false;
+  }
+  const tags = this.tags;
+  const found = tags.filter((type) => {
+    let tmp2 = !tmp;
+    if (type.type === flag.PREFIX) {
+      tmp2 = flag;
     }
-  };
-  items[12] = {
-    key: "getQueryString",
-    value() {
-      let flag = arg0;
-      if (arg0 === undefined) {
-        flag = false;
+    return tmp2;
+  });
+  let str = "";
+  if (0 !== found.length) {
+    const mapped = found.map((text) => text.text);
+    const _HermesInternal = HermesInternal;
+    str = "" + mapped.join(" ");
+  }
+  return str;
+};
+prototype["add"] = function add(type) {
+  const self = this;
+  if (!this.exists(type)) {
+    if (type.type === SearchQueryTagTypes.PREFIX) {
+      if (null != tmp) {
+        if (tmp.type === tmp2.PREFIX) {
+          self.replaceTag(tmp, type);
+        }
+        self.markChanged();
+        self.mergeTag(tmp, type);
       }
-      const tags = this.tags;
-      const found = tags.filter((arg0) => {
-        const tmp = outer2_4(arg0);
-        let tmp2 = !tmp;
-        if (tmp) {
-          tmp2 = flag;
-        }
-        return tmp2;
-      });
-      let str = "";
-      if (0 !== found.length) {
-        const mapped = found.map((text) => text.text);
-        const _HermesInternal = HermesInternal;
-        str = "" + mapped.join(" ");
-      }
-      return str;
     }
-  };
-  items[13] = {
-    key: "add",
-    value(type) {
-      const self = this;
-      if (!this.exists(type)) {
-        if (outer1_4(type)) {
-          if (null != tmp) {
-            if (outer1_4(tmp)) {
-              self.replaceTag(tmp, type);
-            }
-            self.markChanged();
-            self.mergeTag(tmp, type);
-          }
-        }
-        let tmp9 = outer1_4(type);
-        if (!tmp9) {
-          tmp9 = outer1_5(type);
-        }
-        if (tmp9) {
-          const items = [];
-          const arraySpreadResult = HermesBuiltin.arraySpread(self.tags, 0);
-          items[arraySpreadResult] = type;
-          const sum = arraySpreadResult + 1;
-          self.tags = items;
-        }
-      }
+    if (tmp5) {
+      const items = [];
+      items[HermesBuiltin.arraySpread(self.tags, 0)] = type;
+      self.tags = items;
     }
-  };
-  items[14] = {
-    key: "removeAnyPrefixTags",
-    value() {
-      const tags = this.tags;
-      this.tags = tags.filter((arg0) => !outer2_4(arg0));
-      this.markChanged();
-    }
-  };
-  items[15] = {
-    key: "removeAtIndex",
-    value(arg0) {
-      let _classCallCheck = this.tags[arg0];
-      const tags = this.tags;
-      this.tags = tags.filter((arg0) => arg0 !== _classCallCheck);
-      this.markChanged();
-    }
-  };
-  return callback(SearchQueryTagManager, items);
-})();
-const result = require("SearchAutocompleteSelectAnalyticsActions").fileFinishedImporting("modules/search/native/stores/SearchQueryTagManager.tsx");
+    tmp5 = type.type === SearchQueryTagTypes.PREFIX || type.type === SearchQueryTagTypes.COMPLETE;
+  }
+};
+prototype["removeAnyPrefixTags"] = function removeAnyPrefixTags() {
+  const tags = this.tags;
+  this.tags = tags.filter((type) => type.type !== constants.PREFIX);
+  this.markChanged();
+};
+prototype["removeAtIndex"] = function removeAtIndex(closure_0) {
+  closure_0 = this.tags[closure_0];
+  const tags = this.tags;
+  this.tags = tags.filter((arg0) => arg0 !== closure_0);
+  this.markChanged();
+};
 
-export default tmp2;
+export default SearchQueryTagManager;

@@ -1,24 +1,28 @@
-// Module ID: 10141
-// Function ID: 78411
-// Name: useShouldShowHelplineLink
-// Dependencies: [31, 1922, 5775, 6236, 624, 10142, 2]
-// Exports: useShouldShowThroughlineLink
+// Module ID: 10162
+// Function ID: 10163
+// Name: set
+// Dependencies: [19, 1946, 5793, 6256, 647, 10163, 2]
+// Exports: useShouldShowHelplineLink, useShouldShowThroughlineLink
 
-// Module 10141 (useShouldShowHelplineLink)
-import result from "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_5 from "_isNativeReflectConstruct";
-import set from "_isNativeReflectConstruct";
+// Module 10162 (set)
+import noop from "noop";
+import _getSystemLocale from "_getSystemLocale";
+import freshTeenActivityWithMap from "freshTeenActivityWithMap";
+import set from "freshTeenActivityWithMap";
 
 const require = arg1;
-function useShouldShowHelplineLink() {
-  const tmp = importDefault(6236)();
-  const items = [closure_5];
-  stateFromStores = stateFromStores(624).useStateFromStores(items, () => outer1_5.getUserCountry());
-  let obj = stateFromStores(624);
-  const items1 = [_isNativeReflectConstruct];
+let set = new Set(["US"]);
+const set1 = new Set(["en-US", "es-ES"]);
+const result = set.fileFinishedImporting("modules/parent_tools/hooks/useHelpLineVisibility.tsx");
+
+export const useShouldShowHelplineLink = function useShouldShowHelplineLink() {
+  const tmp = importDefault(6256)();
+  const items = [freshTeenActivityWithMap];
+  stateFromStores = stateFromStores(647).useStateFromStores(items, () => userCountry.getUserCountry());
+  const obj = stateFromStores(647);
+  const items1 = [_getSystemLocale];
   const items2 = [stateFromStores];
-  const stateFromStores1 = stateFromStores(624).useStateFromStores(items1, () => outer1_4.locale);
+  const stateFromStores1 = stateFromStores(647).useStateFromStores(items1, () => locale.locale);
   const effect = React.useEffect(() => {
     if (null == stateFromStores) {
       const userCountryCode = stateFromStores(outer1_2[5]).fetchUserCountryCode();
@@ -26,7 +30,7 @@ function useShouldShowHelplineLink() {
     }
   }, items2);
   let hasItem = !tmp;
-  if (hasItem) {
+  if (!tmp) {
     hasItem = null != stateFromStores;
   }
   if (hasItem) {
@@ -36,13 +40,36 @@ function useShouldShowHelplineLink() {
     hasItem = set1.has(stateFromStores1);
   }
   return hasItem;
-}
-let set = new Set(["US"]);
-const set1 = new Set(["en-US", "es-ES"]);
-const result = set.fileFinishedImporting("modules/parent_tools/hooks/useHelpLineVisibility.tsx");
-
-export { useShouldShowHelplineLink };
+};
 export const useShouldShowThroughlineLink = function useShouldShowThroughlineLink() {
-  const tmp = importDefault(6236)();
-  return !importDefault(6236)() && !useShouldShowHelplineLink();
+  const tmp = importDefault(6256)();
+  let stateFromStores;
+  const tmp2 = importDefault(6256)();
+  const items = [freshTeenActivityWithMap];
+  stateFromStores = stateFromStores(647).useStateFromStores(items, () => userCountry.getUserCountry());
+  let obj = stateFromStores(647);
+  const items1 = [_getSystemLocale];
+  const items2 = [stateFromStores];
+  const stateFromStores1 = stateFromStores(647).useStateFromStores(items1, () => locale.locale);
+  const effect = React.useEffect(() => {
+    if (null == stateFromStores) {
+      const userCountryCode = stateFromStores(outer1_2[5]).fetchUserCountryCode();
+      const obj = stateFromStores(outer1_2[5]);
+    }
+  }, items2);
+  let hasItem = !tmp2;
+  if (!tmp2) {
+    hasItem = null != stateFromStores;
+  }
+  if (hasItem) {
+    hasItem = set.has(stateFromStores.alpha2);
+  }
+  if (hasItem) {
+    hasItem = set1.has(stateFromStores1);
+  }
+  let tmp10 = !tmp;
+  if (!tmp) {
+    tmp10 = !hasItem;
+  }
+  return tmp10;
 };

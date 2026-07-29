@@ -1,40 +1,45 @@
-// Module ID: 11715
-// Function ID: 90714
+// Module ID: 11740
+// Function ID: 11741
 // Name: WaveformBar
-// Dependencies: [57, 31, 27, 4157, 11129, 11130, 653, 33, 4026, 4165, 689, 477, 4577, 4166, 1324, 3869, 4739, 4161, 3877, 2]
+// Dependencies: [32, 19, 17, 4181, 11153, 11154, 676, 21, 4050, 4189, 712, 500, 4599, 4190, 1348, 3893, 4761, 4185, 3901, 2]
 
-// Module 11715 (WaveformBar)
+// Module 11740 (WaveformBar)
 import _slicedToArray from "_slicedToArray";
-import importAllResult from "result";
-import get_ActivityIndicator from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import importAllResult from "set";
+import get_ActivityIndicator from "Text";
+import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
 import { useVoiceMessagesUIStore } from "VoiceMessageRecordingStatus";
 import VoiceMessageAnimationState from "VoiceMessageAnimationState";
 import { ThemeTypes } from "ME";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import importDefaultResult from "module_4026";
+import createCacheKey from "createCacheKey";
+import importDefaultResult from "module_4050";
 import set from "set";
 import set from "set";
 import set from "get ActivityIndicator";
 
-let closure_10;
-let closure_11;
+let ActivityIndicator;
+let c10;
+let c5;
+let c9;
 let closure_12;
 let closure_14;
 let closure_15;
-let closure_8;
-let closure_9;
+let metroImportAll;
+let unpackModuleId;
 let require = arg1;
 function WaveformBar(value) {
   value = value.value;
   const require = value;
+  let sharedValue;
+  let sharedValue1;
+  let sharedValue2;
   const tmp = callback3();
-  const sharedValue = require(sharedValue1[8]).useSharedValue(0);
+  sharedValue = require(sharedValue1[8]).useSharedValue(0);
   let obj = require(sharedValue1[8]);
   sharedValue1 = require(sharedValue1[8]).useSharedValue(0);
   const obj2 = require(sharedValue1[8]);
-  const sharedValue2 = require(sharedValue1[8]).useSharedValue(0);
+  sharedValue2 = require(sharedValue1[8]).useSharedValue(0);
   const obj3 = require(sharedValue1[8]);
   const fn = function o() {
     return { height: sharedValue.get(), width: sharedValue1.get(), marginRight: sharedValue2.get() };
@@ -66,7 +71,7 @@ function Waveform() {
   let closure_0 = tmp3[1];
   const substr = useVoiceMessagesUIStore((waveform) => waveform.waveform).slice(-tmp3[0]);
   const arr = useVoiceMessagesUIStore((waveform) => waveform.waveform);
-  return callback2(View, {
+  return callback2(closure_5, {
     style: tmp.waveformContainer,
     onLayout: importAllResult.useCallback((nativeEvent) => {
       callback(Math.round(nativeEvent.nativeEvent.layout.width / 6) + 2);
@@ -75,50 +80,57 @@ function Waveform() {
       let tmp;
       let tmp2;
       [tmp, tmp2] = arg0;
-      return outer1_14(outer1_25, { value }, tmp2);
+      return callback2(closure_19, { value }, tmp2);
     })
   });
 }
 function Duration(animationValue) {
   animationValue = animationValue.animationValue;
+  let importDefault;
+  let first;
+  let callback;
+  let first1;
+  let closure_5;
+  let c6;
+  let useVoiceMessagesUIStore;
   const tmp = callback3();
   let obj = animationValue(first[14]);
   const chatInputFloating = obj.useMobileVisualRefreshConfig({ location: "voice-message-chat" }).chatInputFloating;
-  const tmp2 = useVoiceMessagesUIStore((startTimeMillis) => startTimeMillis.startTimeMillis);
-  const importDefault = tmp2;
-  const tmp3 = callback(first1.useState(() => {
+  const tmp4 = useVoiceMessagesUIStore((startTimeMillis) => startTimeMillis.startTimeMillis);
+  importDefault = tmp4;
+  const tmp5 = callback(first1.useState(() => {
     let num = 0;
-    if (null != closure_1) {
+    if (null != c1) {
       const _Date = Date;
-      num = Date.now() - closure_1;
+      num = Date.now() - tmp;
     }
     return num;
   }), 2);
-  first = tmp3[0];
-  callback = tmp3[1];
-  const tmp5 = callback(first1.useState(undefined), 2);
-  first1 = tmp5[0];
-  let closure_5 = tmp5[1];
-  const tmp7 = useVoiceMessagesUIStore((savedVoiceMessageUploadData) => null != savedVoiceMessageUploadData.savedVoiceMessageUploadData);
-  let _isNativeReflectConstruct = tmp7;
+  first = tmp5[0];
+  callback = tmp5[1];
+  const tmp7 = callback(first1.useState(undefined), 2);
+  first1 = tmp7[0];
+  closure_5 = tmp7[1];
+  const tmp9 = useVoiceMessagesUIStore((savedVoiceMessageUploadData) => null != savedVoiceMessageUploadData.savedVoiceMessageUploadData);
+  c6 = tmp9;
   let obj1 = animationValue(first[15]);
-  const items = [tmp2, tmp7];
+  const items = [tmp4, tmp9];
   const token = obj1.useToken(importDefault(first[10]).modules.mobile.VOICE_MESSAGE_DURATION_TEXT_STYLE);
   const effect = first1.useEffect(() => {
-    if (_isNativeReflectConstruct) {
+    if (c6) {
       callback(outer1_8 + outer1_9);
-      callback2(outer1_19.ENDED);
+      callback2(outer1_21.ENDED);
     } else {
       const _setInterval = setInterval;
       const interval = setInterval(() => {
-        if (null != outer1_1) {
+        if (null != closure_1) {
           const _Date = Date;
-          const diff = Date.now() - outer1_1;
-          outer1_3(diff);
-          if (diff > outer2_10) {
-            outer1_5(outer2_19.REALLY_WARN);
-          } else if (diff > outer2_11) {
-            outer1_5(outer2_19.WARN);
+          const diff = Date.now() - tmp;
+          callback(diff);
+          if (diff > outer1_10) {
+            callback2(outer1_21.REALLY_WARN);
+          } else if (diff > outer1_11) {
+            callback2(outer1_21.WARN);
           }
         }
       }, 100);
@@ -129,16 +141,16 @@ function Duration(animationValue) {
   }, items);
   const items1 = [first];
   const memo = first1.useMemo(() => animationValue(first[16]).getTimeFormat(first / 1000, { padMinutes: false }), items1);
-  const tmp11 = callback(first1.useState(false), 2);
-  useVoiceMessagesUIStore = tmp11[1];
+  const tmp13 = callback(first1.useState(false), 2);
+  useVoiceMessagesUIStore = tmp13[1];
   const items2 = [first1];
   const effect1 = first1.useEffect(() => {
     if (null != first1) {
-      if (first1 !== outer1_19.ENDED) {
+      if (tmp !== outer1_21.ENDED) {
         let num = 1000;
-        if (!tmp7.useReducedMotion) {
+        if (!_undefined.useReducedMotion) {
           let num2 = 250;
-          if (first1 === outer1_19.WARN) {
+          if (tmp === tmp4.WARN) {
             num2 = 500;
           }
           num = num2;
@@ -147,7 +159,9 @@ function Duration(animationValue) {
           outer1_7((arg0) => !arg0);
           const timeout = setTimeout(flash, num);
         }
-        flash();
+        callback3((arg0) => !arg0);
+        const _setTimeout = setTimeout;
+        let timeout = setTimeout(flash, num);
         return () => {
           clearTimeout(closure_0);
         };
@@ -158,7 +172,6 @@ function Duration(animationValue) {
       callback3(false);
     }
   }, items2);
-  let obj2 = animationValue(first[8]);
   class B {
     constructor() {
       obj = { opacity: animationValue.get() };
@@ -167,79 +180,78 @@ function Duration(animationValue) {
   }
   B.__closure = { animationValue };
   B.__workletHash = 4012974382717;
-  B.__initData = closure_20;
-  const animatedStyle = obj2.useAnimatedStyle(B);
-  obj = { style: items3 };
+  B.__initData = closure_22;
+  const animatedStyle = animationValue(first[8]).useAnimatedStyle(B);
+  obj = { style: items3, children: null };
   items3 = [tmp.durationContainer, animatedStyle];
-  obj = {};
   const items4 = [tmp.dot, ];
-  let tmp17 = null != tmp2;
-  if (tmp17) {
-    tmp17 = !tmp7;
+  let tmp19 = null != tmp4;
+  if (tmp19) {
+    tmp19 = !tmp9;
   }
-  let dotDismissed = !tmp17;
-  if (!tmp17) {
+  let dotDismissed = !tmp19;
+  if (!tmp19) {
     dotDismissed = tmp.dotDismissed;
   }
   items4[1] = dotDismissed;
-  obj.style = items4;
-  const items5 = [callback2(closure_5, obj), ];
-  obj1 = { style: tmp.duration, variant: token };
+  const items5 = [closure_14(closure_5, { style: items4 }), ];
+  obj = { style: tmp.duration, variant: token, color: null, tabularNumbers: true, children: null };
   let str = "text-feedback-critical";
-  if (!tmp11[0]) {
+  if (!tmp13[0]) {
     let str2 = "text-overlay-light";
     if (chatInputFloating) {
       str2 = "text-default";
     }
     str = str2;
   }
-  obj1.color = str;
-  obj1.tabularNumbers = true;
-  obj1.children = memo;
-  items5[1] = callback2(animationValue(first[17]).Text, obj1);
-  obj.children = items5;
-  const tmp14Result = closure_15(importDefault(first[8]).View, obj);
-  let tmp20 = tmp14Result;
+  obj[2] = str;
+  obj[4] = memo;
+  items5[1] = closure_14(animationValue(first[17]).Text, obj);
+  obj[1] = items5;
+  const tmp16Result = closure_15(importDefault(first[8]).View, obj);
+  let tmp17Result = tmp16Result;
   if (!chatInputFloating) {
-    obj2 = { theme: ThemeTypes.DARK, children: tmp14Result };
-    tmp20 = callback2(animationValue(first[18]).ThemeContextProvider, obj2);
+    obj1 = { theme: null, children: null };
+    obj1[0] = ThemeTypes.DARK;
+    obj1[1] = tmp16Result;
+    tmp17Result = tmp17(tmp2(tmp3[18]).ThemeContextProvider, obj1);
   }
-  return tmp20;
+  return tmp17Result;
 }
-const View = get_ActivityIndicator.View;
-({ VOICE_RECORDING_MAX_DURATION_MILLIS: closure_8, VOICE_RECORDING_MAX_DURATION_OFFSET: closure_9, VOICE_RECORDING_REALLY_WARN_DURATION_MILLIS: closure_10, VOICE_RECORDING_WARN_DURATION_MILLIS: closure_11, WAVEFORM_WAVE_MAX_VALUE: closure_12 } = VoiceMessageAnimationState);
+let c4 = importAllResult;
+({ View: c5, ActivityIndicator } = get_ActivityIndicator);
+({ VOICE_RECORDING_MAX_DURATION_MILLIS: metroImportAll, VOICE_RECORDING_MAX_DURATION_OFFSET: c9, VOICE_RECORDING_REALLY_WARN_DURATION_MILLIS: c10, VOICE_RECORDING_WARN_DURATION_MILLIS: unpackModuleId, WAVEFORM_WAVE_MAX_VALUE: closure_12 } = VoiceMessageAnimationState);
 ({ jsx: closure_14, jsxs: closure_15 } = jsxProd);
-let closure_16 = require("module_4026").createAnimatedComponent(get_ActivityIndicator.ActivityIndicator);
-let obj = {};
-obj = { height: "100%", flexDirection: "row", alignItems: "center", paddingVertical: require("_createForOfIteratorHelperLoose").modules.mobile.VOICE_MESSAGE_RECORDING_CONTAINER_PADDING_VERTICAL, paddingHorizontal: require("_createForOfIteratorHelperLoose").modules.mobile.VOICE_MESSAGE_RECORDING_PILL_PADDING_HORIZONTAL, gap: require("_createForOfIteratorHelperLoose").modules.mobile.CHAT_INPUT_FLOATING_CONTENT_GAP, borderRadius: require("_createForOfIteratorHelperLoose").modules.mobile.VOICE_MESSAGE_RECORDING_PILL_BORDER_RADIUS, backgroundColor: require("_createForOfIteratorHelperLoose").colors.MOBILE_CHATINPUT_BACKGROUND_DEFAULT, borderWidth: require("_createForOfIteratorHelperLoose").modules.mobile.CHAT_INPUT_FLOATING_ACCESSORY_BORDER_WIDTH, borderColor: require("_createForOfIteratorHelperLoose").colors.MOBILE_CHATINPUT_BORDER_DEFAULT };
-obj.container = obj;
-obj.loading = { position: "absolute", left: 12 };
-let obj1 = { height: 6, width: 6, backgroundColor: require("_createForOfIteratorHelperLoose").unsafe_rawColors.RED_400, marginHorizontal: 4, borderRadius: 6 };
-obj.dot = obj1;
-obj.dotDismissed = { backgroundColor: "transparent" };
-_createForOfIteratorHelperLoose = { flex: 1, height: "100%", overflow: "hidden", justifyContent: "flex-end", flexDirection: "row", alignItems: "center", marginLeft: require("_createForOfIteratorHelperLoose").modules.mobile.VOICE_MESSAGE_RECORDING_WAVEFORM_MARGIN_LEFT };
-obj.waveformContainer = _createForOfIteratorHelperLoose;
-obj.waveformBar = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.MOBILE_VOICE_MESSAGE_RECORDING_WAVEFORM_BAR_BACKGROUND, borderRadius: 1 };
-obj.durationContainer = { flexDirection: "row", alignItems: "center" };
-let obj4 = {};
+let closure_16 = require("module_4050").createAnimatedComponent(ActivityIndicator);
+let obj = { container: null, loading: null, dot: null, dotDismissed: null, waveformContainer: null, waveformBar: null, durationContainer: null, duration: null };
+obj = { height: "100%", flexDirection: "row", alignItems: "center", paddingVertical: require("Themes").modules.mobile.VOICE_MESSAGE_RECORDING_CONTAINER_PADDING_VERTICAL, paddingHorizontal: require("Themes").modules.mobile.VOICE_MESSAGE_RECORDING_PILL_PADDING_HORIZONTAL, gap: require("Themes").modules.mobile.CHAT_INPUT_FLOATING_CONTENT_GAP, borderRadius: require("Themes").modules.mobile.VOICE_MESSAGE_RECORDING_PILL_BORDER_RADIUS, backgroundColor: require("Themes").colors.MOBILE_CHATINPUT_BACKGROUND_DEFAULT, borderWidth: require("Themes").modules.mobile.CHAT_INPUT_FLOATING_ACCESSORY_BORDER_WIDTH, borderColor: require("Themes").colors.MOBILE_CHATINPUT_BORDER_DEFAULT };
+obj[0] = obj;
+obj[1] = { position: "absolute", left: 12 };
+obj[2] = { height: 6, width: 6, backgroundColor: require("Themes").unsafe_rawColors.RED_400, marginHorizontal: 4, borderRadius: 6 };
+obj[3] = { backgroundColor: "transparent" };
+createCacheKey = { flex: 1, height: "100%", overflow: "hidden", justifyContent: "flex-end", flexDirection: "row", alignItems: "center", marginLeft: require("Themes").modules.mobile.VOICE_MESSAGE_RECORDING_WAVEFORM_MARGIN_LEFT };
+obj[4] = createCacheKey;
+let obj1 = { height: 6, width: 6, backgroundColor: require("Themes").unsafe_rawColors.RED_400, marginHorizontal: 4, borderRadius: 6 };
+obj[5] = { backgroundColor: require("Themes").colors.MOBILE_VOICE_MESSAGE_RECORDING_WAVEFORM_BAR_BACKGROUND, borderRadius: 1 };
+obj[6] = { flexDirection: "row", alignItems: "center" };
 set = set.isAndroid();
-const mobile = require("_createForOfIteratorHelperLoose").modules.mobile;
-obj4.lineHeight = set ? mobile.VOICE_MESSAGE_DURATION_LINE_HEIGHT_ANDROID : mobile.VOICE_MESSAGE_DURATION_LINE_HEIGHT_IOS;
+const mobile = require("Themes").modules.mobile;
+let obj4 = { lineHeight: set ? mobile.VOICE_MESSAGE_DURATION_LINE_HEIGHT_ANDROID : mobile.VOICE_MESSAGE_DURATION_LINE_HEIGHT_IOS, textAlignVertical: null };
 let str;
 if (set.isAndroid()) {
   str = "center";
 }
-obj4.textAlignVertical = str;
-obj.duration = obj4;
-let closure_17 = _createForOfIteratorHelperLoose.createStyles(obj);
+obj4[1] = str;
+obj[7] = obj4;
+let closure_17 = createCacheKey.createStyles(obj);
 let closure_18 = { code: "function VoiceMessageChatTsx1(){const{animatedHeight,animatedWidth,animatedMargin}=this.__closure;return{height:animatedHeight.get(),width:animatedWidth.get(),marginRight:animatedMargin.get()};}" };
-let closure_19 = { WARN: 0, [0]: "WARN", REALLY_WARN: 1, [1]: "REALLY_WARN", ENDED: 2, [2]: "ENDED" };
-let closure_20 = { code: "function VoiceMessageChatTsx2(){const{animationValue}=this.__closure;return{opacity:animationValue.get()};}" };
-let closure_21 = { code: "function VoiceMessageChatTsx3(){const{initialAnimation,isRecording}=this.__closure;return initialAnimation.get()===1&&isRecording;}" };
-let closure_22 = { code: "function VoiceMessageChatTsx4(result,previous){const{animationValue,withTiming,Easing,loadingOpacity}=this.__closure;if(result&&result!==previous){animationValue.set(withTiming(1,{easing:Easing.quad,duration:200}));loadingOpacity.set(0);}}" };
-let closure_23 = { code: "function VoiceMessageChatTsx5(){const{initialAnimation,backgroundColor}=this.__closure;return{width:80+20*initialAnimation.get()+\"%\",...(backgroundColor!=null?{backgroundColor:backgroundColor.get()}:{})};}" };
-let closure_24 = { code: "function VoiceMessageChatTsx6(){const{loadingOpacity}=this.__closure;return{opacity:loadingOpacity.get()};}" };
-let obj3 = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.MOBILE_VOICE_MESSAGE_RECORDING_WAVEFORM_BAR_BACKGROUND, borderRadius: 1 };
+let closure_21 = { WARN: 0, [0]: "WARN", REALLY_WARN: 1, [1]: "REALLY_WARN", ENDED: 2, [2]: "ENDED" };
+let closure_22 = { code: "function VoiceMessageChatTsx2(){const{animationValue}=this.__closure;return{opacity:animationValue.get()};}" };
+let closure_24 = { code: "function VoiceMessageChatTsx3(){const{initialAnimation,isRecording}=this.__closure;return initialAnimation.get()===1&&isRecording;}" };
+let closure_25 = { code: "function VoiceMessageChatTsx4(result,previous){const{animationValue,withTiming,Easing,loadingOpacity}=this.__closure;if(result&&result!==previous){animationValue.set(withTiming(1,{easing:Easing.quad,duration:200}));loadingOpacity.set(0);}}" };
+let closure_26 = { code: "function VoiceMessageChatTsx5(){const{initialAnimation,backgroundColor}=this.__closure;return{width:80+20*initialAnimation.get()+\"%\",...(backgroundColor!=null?{backgroundColor:backgroundColor.get()}:{})};}" };
+let closure_27 = { code: "function VoiceMessageChatTsx6(){const{loadingOpacity}=this.__closure;return{opacity:loadingOpacity.get()};}" };
+let obj3 = { backgroundColor: require("Themes").colors.MOBILE_VOICE_MESSAGE_RECORDING_WAVEFORM_BAR_BACKGROUND, borderRadius: 1 };
 let result = set.fileFinishedImporting("modules/voice_messages/native/components/VoiceMessageChat.tsx");
 
 export default importAllResult.memo((isRecording) => {
@@ -248,20 +260,22 @@ export default importAllResult.memo((isRecording) => {
   isRecording = isRecording.isRecording;
   const initialAnimation = isRecording.initialAnimation;
   const backgroundColor = isRecording.backgroundColor;
+  let sharedValue;
+  let sharedValue1;
   ({ leftAccessory, rightAccessory } = isRecording);
   let tmp = callback3();
   let obj = isRecording(backgroundColor[15]);
   const token = obj.useToken(initialAnimation(backgroundColor[10]).colors.MOBILE_VOICE_MESSAGE_RECORDING_SPINNER_COLOR);
   let obj1 = isRecording(backgroundColor[8]);
-  const sharedValue = obj1.useSharedValue(0);
+  sharedValue = obj1.useSharedValue(0);
   const items = [sharedValue, isRecording];
   const effect = sharedValue1.useEffect(() => {
     if (!timeout) {
       const _setTimeout = setTimeout;
       timeout = setTimeout(() => {
-        let obj = isRecording(backgroundColor[13]);
-        obj = { easing: isRecording(backgroundColor[8]).Easing.quad, duration: 200 };
-        const result = outer1_3.set(obj.withTiming(1, obj));
+        let obj = callback(outer1_2[13]);
+        obj = { easing: callback(outer1_2[8]).Easing.quad, duration: 200 };
+        const result = _slicedToArray.set(obj.withTiming(1, obj));
       }, 1000);
       return () => {
         clearTimeout(closure_0);
@@ -278,7 +292,7 @@ export default importAllResult.memo((isRecording) => {
   }
   A.__closure = { initialAnimation, isRecording };
   A.__workletHash = 7599681139161;
-  A.__initData = closure_21;
+  A.__initData = closure_24;
   const fn = function h(arg0, arg1) {
     let tmp = arg0;
     if (arg0) {
@@ -286,7 +300,8 @@ export default importAllResult.memo((isRecording) => {
     }
     if (tmp) {
       let obj = isRecording(backgroundColor[13]);
-      obj = { easing: isRecording(backgroundColor[8]).Easing.quad, duration: 200 };
+      obj = { easing: null, duration: 200 };
+      obj[0] = isRecording(backgroundColor[8]).Easing.quad;
       const result = sharedValue1.set(obj.withTiming(1, obj));
       const result1 = sharedValue.set(0);
     }
@@ -294,16 +309,16 @@ export default importAllResult.memo((isRecording) => {
   obj = { animationValue: sharedValue1, withTiming: isRecording(backgroundColor[13]).withTiming, Easing: isRecording(backgroundColor[8]).Easing, loadingOpacity: sharedValue };
   fn.__closure = obj;
   fn.__workletHash = 7661977794788;
-  fn.__initData = closure_22;
+  fn.__initData = closure_25;
   const animatedReaction = isRecording(backgroundColor[8]).useAnimatedReaction(A, fn);
   const obj4 = isRecording(backgroundColor[8]);
   class I {
     constructor() {
       obj = { width: `${80}${20 * initialAnimation.get()}%` };
+      obj2 = backgroundColor;
       if (null != backgroundColor) {
-        obj = {};
-        tmp = backgroundColor;
-        obj.backgroundColor = backgroundColor.get();
+        obj = { backgroundColor: null };
+        obj[0] = obj2.get();
         obj1 = obj;
       } else {
         obj1 = {};
@@ -314,7 +329,7 @@ export default importAllResult.memo((isRecording) => {
   }
   I.__closure = { initialAnimation, backgroundColor };
   I.__workletHash = 3621425956686;
-  I.__initData = closure_23;
+  I.__initData = closure_26;
   const animatedStyle = isRecording(backgroundColor[8]).useAnimatedStyle(I);
   const obj6 = isRecording(backgroundColor[8]);
   const fn2 = function f() {
@@ -322,20 +337,19 @@ export default importAllResult.memo((isRecording) => {
   };
   fn2.__closure = { loadingOpacity: sharedValue };
   fn2.__workletHash = 17421928475897;
-  fn2.__initData = closure_24;
+  fn2.__initData = closure_27;
   const animatedStyle1 = isRecording(backgroundColor[8]).useAnimatedStyle(fn2);
-  obj = { style: items1 };
+  obj = { style: items1, children: null };
   items1 = [tmp.container, animatedStyle];
   let tmp10 = null;
   if (!isRecording) {
-    obj1 = {};
+    obj1 = { style: null, color: null, size: "small" };
     const items2 = [tmp.loading, animatedStyle1];
-    obj1.style = items2;
-    obj1.color = token;
-    obj1.size = "small";
+    obj1[0] = items2;
+    obj1[1] = token;
     tmp10 = callback2(closure_16, obj1);
   }
   const items3 = [tmp10, leftAccessory, callback2(Duration, { animationValue: sharedValue1 }), callback2(Waveform, {}), rightAccessory];
-  obj.children = items3;
+  obj[1] = items3;
   return closure_15(initialAnimation(backgroundColor[8]).View, obj);
 });

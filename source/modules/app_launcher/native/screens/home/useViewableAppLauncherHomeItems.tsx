@@ -1,15 +1,15 @@
-// Module ID: 11236
-// Function ID: 87318
+// Module ID: 11260
+// Function ID: 11261
 // Name: useViewableAppLauncherHomeItems
-// Dependencies: [31, 7991, 4026, 11237, 8402, 480, 2]
+// Dependencies: [19, 8016, 4050, 11261, 8426, 503, 2]
 // Exports: useViewableAppLauncherHomeItems
 
-// Module 11236 (useViewableAppLauncherHomeItems)
-import result from "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 11260 (useViewableAppLauncherHomeItems)
+import noop from "noop";
+import handleDismissWithDismissed from "handleDismissWithDismissed";
 
 const require = arg1;
-let result = require("module_4026").fileFinishedImporting("modules/app_launcher/native/screens/home/useViewableAppLauncherHomeItems.tsx");
+let result = require("module_4050").fileFinishedImporting("modules/app_launcher/native/screens/home/useViewableAppLauncherHomeItems.tsx");
 
 export const useViewableAppLauncherHomeItems = function useViewableAppLauncherHomeItems() {
   let obj = sharedValue(sharedValue1[2]);
@@ -21,36 +21,38 @@ export const useViewableAppLauncherHomeItems = function useViewableAppLauncherHo
       viewableItems = viewableItems.viewableItems;
       let item = viewableItems.forEach((item) => {
         item = item.item;
-        let value = item.type !== sharedValue(sharedValue1[3]).AppLauncherHomeListItemType.SHELF_ITEM;
+        let value = item.type !== outer1_0(outer1_1[3]).AppLauncherHomeListItemType.SHELF_ITEM;
         if (!value) {
-          value = outer1_0.get();
-        }
-        if (!value) {
-          const result = outer1_0.set(true);
-        }
-        value = item.type !== sharedValue(sharedValue1[3]).AppLauncherHomeListItemType.LEARN_MORE;
-        if (!value) {
-          value = outer1_1.get();
+          value = store.get();
         }
         if (!value) {
-          const result1 = outer1_1.set(true);
+          const result = store.set(true);
         }
-        let tmp9 = item.type !== sharedValue(sharedValue1[3]).AppLauncherHomeListItemType.RECOMMENDATION_SECTION_HEADER;
-        if (tmp9) {
-          tmp9 = item.type !== sharedValue(sharedValue1[3]).AppLauncherHomeListItemType.SECTION_HEADER;
+        value = item.type !== tmp(tmp2[3]).AppLauncherHomeListItemType.LEARN_MORE;
+        if (!value) {
+          value = store2.get();
         }
-        if (!tmp9) {
-          tmp9 = null != outer1_2.current[item.sectionName];
+        if (!value) {
+          const result1 = store2.set(true);
         }
-        if (!tmp9) {
-          outer1_2.current[item.sectionName] = true;
-          let obj = sharedValue(sharedValue1[4]);
-          obj = { type: sharedValue(sharedValue1[5]).ImpressionTypes.VIEW, name: sharedValue(sharedValue1[5]).ImpressionNames.APP_LAUNCHER_SECTION };
-          obj = {};
-          ({ sectionName: obj3.section_name, numItems: obj3.num_items, numVisibleItems: obj3.num_visible_items } = item);
-          obj.source = outer2_3.entrypoint();
-          obj.properties = obj;
-          obj.trackImpression(obj);
+        let tmp11 = item.type !== tmp(tmp2[3]).AppLauncherHomeListItemType.RECOMMENDATION_SECTION_HEADER;
+        if (tmp11) {
+          tmp11 = item.type !== tmp(tmp2[3]).AppLauncherHomeListItemType.SECTION_HEADER;
+        }
+        if (!tmp11) {
+          tmp11 = null != ref.current[item.sectionName];
+        }
+        if (!tmp11) {
+          ref.current[item.sectionName] = true;
+          let obj = { type: null, name: null, properties: null };
+          obj[0] = tmp(tmp2[5]).ImpressionTypes.VIEW;
+          obj[1] = tmp(tmp2[5]).ImpressionNames.APP_LAUNCHER_SECTION;
+          obj = { section_name: null, num_items: null, num_visible_items: null, source: null };
+          ({ sectionName: obj3[0], numItems: obj3[1], numVisibleItems: obj3[2] } = item);
+          obj[3] = outer1_3.entrypoint();
+          obj[2] = obj;
+          tmp(tmp2[4]).trackImpression(obj);
+          const tmpResult = tmp(tmp2[4]);
         }
       });
     }, items),

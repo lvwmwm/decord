@@ -1,15 +1,15 @@
-// Module ID: 15780
-// Function ID: 121536
+// Module ID: 15815
+// Function ID: 15816
 // Name: useTextChannelPressEvents
-// Dependencies: [31, 1348, 4175, 4173, 10343, 15069, 9073, 2]
+// Dependencies: [19, 1372, 4199, 4197, 10364, 15102, 9097, 2]
 // Exports: useTextChannelPressEvents
 
-// Module 15780 (useTextChannelPressEvents)
-import result from "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 15815 (useTextChannelPressEvents)
+import noop from "noop";
+import ensureGuildLoaded from "ensureGuildLoaded";
 
 const require = arg1;
-let result = require("module_4175").fileFinishedImporting("modules/main_tabs_v2/native/shared_components/guild_channels/useTextChannelPressEvents.tsx");
+let result = require("module_4199").fileFinishedImporting("modules/main_tabs_v2/native/shared_components/guild_channels/useTextChannelPressEvents.tsx");
 
 export const useTextChannelPressEvents = function useTextChannelPressEvents(channel, flag2) {
   let closure_0 = channel;
@@ -29,16 +29,16 @@ export const useTextChannelPressEvents = function useTextChannelPressEvents(chan
       channel = outer1_4.getChannel(channel.parent_id);
       if (null != channel) {
         if (channel.isForumLikeChannel()) {
-          if (channel.isForumPost()) {
-            callback(outer1_2[4])(channel, channel);
+          if (obj.isForumPost()) {
+            callback(outer1_2[4])(obj, channel);
           }
         }
       }
       if (channel.isThread()) {
-        callback(outer1_2[5])(channel.id);
+        callback(outer1_2[5])(obj.id);
       } else {
-        const result = channel(outer1_2[6]).openChannelLongPressActionSheet(channel.id);
-        const obj2 = channel(outer1_2[6]);
+        const result = channel(outer1_2[6]).openChannelLongPressActionSheet(obj.id);
+        const obj3 = channel(outer1_2[6]);
       }
     }, items1),
     unstable_pressDelay: 32

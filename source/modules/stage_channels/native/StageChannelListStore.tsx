@@ -1,18 +1,18 @@
-// Module ID: 10813
-// Function ID: 83771
+// Module ID: 10837
+// Function ID: 10838
 // Name: useActiveSpeakerPillScrollHandler
-// Dependencies: [57, 31, 677, 682, 3778, 2]
+// Dependencies: [32, 19, 700, 705, 3802, 2]
 // Exports: useActiveSpeakerPillScrollHandler, useActiveSpeakerPillState
 
-// Module 10813 (useActiveSpeakerPillScrollHandler)
+// Module 10837 (useActiveSpeakerPillScrollHandler)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
-import useStoreWithEqualityFn from "useStoreWithEqualityFn";
+import noop from "noop";
+import identity from "identity";
 
 const require = arg1;
-let closure_4 = useStoreWithEqualityFn.createWithEqualityFn((arg0) => {
+let closure_4 = identity.createWithEqualityFn((arg0) => {
   let closure_0 = arg0;
-  const obj = {
+  return {
     showActiveSpeakerPill: false,
     setShowActiveSpeakerPill(arg0) {
       const callback = arg0;
@@ -24,16 +24,15 @@ let closure_4 = useStoreWithEqualityFn.createWithEqualityFn((arg0) => {
       return callback(outer1_1[3]).batchUpdates(() => callback({ listRef: callback }));
     }
   };
-  return obj;
 });
-const result = require("useStoreWithEqualityFn").fileFinishedImporting("modules/stage_channels/native/StageChannelListStore.tsx");
+const result = require("identity").fileFinishedImporting("modules/stage_channels/native/StageChannelListStore.tsx");
 
 export const useActiveSpeakerPillScrollHandler = function useActiveSpeakerPillScrollHandler() {
   const tmp = callback(callback2((arg0) => {
     const items = [, ];
     ({ listRef: arr[0], setListRef: arr[1] } = arg0);
     return items;
-  }, first(3778).shallow), 2);
+  }, first(3802).shallow), 2);
   first = tmp[0];
   const dependencyMap = tmp3;
   let items = [tmp[1]];
@@ -45,7 +44,7 @@ export const useActiveSpeakerPillScrollHandler = function useActiveSpeakerPillSc
   ];
   const items2 = [first];
   items1[1] = React.useCallback(() => {
-    if (null != first) {
+    if (first != null) {
       first.scrollToLocation({ section: 0, item: 0, animated: true });
     }
   }, items2);
@@ -56,5 +55,5 @@ export const useActiveSpeakerPillState = function useActiveSpeakerPillState() {
     const items = [, ];
     ({ showActiveSpeakerPill: arr[0], setShowActiveSpeakerPill: arr[1] } = arg0);
     return items;
-  }, require(3778) /* isIterable */.shallow);
+  }, require(3802) /* isIterable */.shallow);
 };

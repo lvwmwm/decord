@@ -1,19 +1,19 @@
-// Module ID: 15388
-// Function ID: 117200
+// Module ID: 15421
+// Function ID: 15422
 // Name: OnboardingHomeScrollView
-// Dependencies: [31, 27, 33, 4165, 689, 1557, 2]
+// Dependencies: [19, 17, 21, 4189, 712, 1581, 2]
 // Exports: default
 
-// Module 15388 (OnboardingHomeScrollView)
-import result from "result";
+// Module 15421 (OnboardingHomeScrollView)
+import noop from "noop";
 import { ScrollView } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SURFACE_HIGH };
-_createForOfIteratorHelperLoose.guildFeedBackground = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+createCacheKey = { guildFeedBackground: null };
+createCacheKey = { backgroundColor: require("Themes").colors.BACKGROUND_SURFACE_HIGH };
+createCacheKey[0] = createCacheKey;
+createCacheKey = createCacheKey.createStyles(createCacheKey);
 let result = require("jsxProd").fileFinishedImporting("modules/guild_onboarding_home/native/OnboardingHomeScrollView.tsx");
 
 export default function OnboardingHomeScrollView(children) {
@@ -27,15 +27,15 @@ export default function OnboardingHomeScrollView(children) {
   let React;
   let ref;
   let bottom;
-  let _createForOfIteratorHelperLoose;
+  let createCacheKey;
   React = React.useRef(false);
   ref = React.useRef(null);
   bottom = headerOffset(scrollValue[5])().bottom;
   const items = [guildId];
   const effect = React.useEffect(() => {
-    result.current = false;
+    noop.current = false;
   }, items);
-  _createForOfIteratorHelperLoose = React.useRef(true);
+  createCacheKey = React.useRef(true);
   const items1 = [guildId];
   const effect1 = React.useEffect(() => {
     let current = null == ref.current;
@@ -49,7 +49,7 @@ export default function OnboardingHomeScrollView(children) {
     ref.current = false;
   }, items1);
   const items2 = [bottom, headerOffset];
-  const tmp = _createForOfIteratorHelperLoose();
+  const tmp = createCacheKey();
   return bottom(ref, {
     ref,
     scrollIndicatorInsets: { right: 1 },
@@ -57,7 +57,7 @@ export default function OnboardingHomeScrollView(children) {
       const result = scrollValue.set(nativeEvent.nativeEvent.contentOffset.y);
     },
     scrollEventThrottle: 16,
-    style: _createForOfIteratorHelperLoose().guildFeedBackground,
+    style: createCacheKey().guildFeedBackground,
     contentContainerStyle: React.useMemo(() => ({ paddingBottom: 16 + bottom, marginTop: headerOffset }), items2),
     children: children.children
   });

@@ -1,14 +1,14 @@
-// Module ID: 10810
-// Function ID: 83744
+// Module ID: 10834
+// Function ID: 10835
 // Name: useStageActionBarAnimation
-// Dependencies: [4026, 10662, 10660, 1557, 4166, 2]
+// Dependencies: [4050, 10686, 10684, 1581, 4190, 2]
 // Exports: useStageActionBarAnimation
 
-// Module 10810 (useStageActionBarAnimation)
-import { Easing } from "module_4026";
+// Module 10834 (useStageActionBarAnimation)
+import { Easing } from "module_4050";
 
-let obj = { duration: 250 };
-obj.easing = Easing.bezier(0.66, 0, 0.2, 1);
+let obj = { duration: 250, easing: null };
+obj[1] = Easing.bezier(0.66, 0, 0.2, 1);
 let closure_4 = { code: "function StageChannelAnimationUtilsTsx1(){const{isInvited,actionBarHeight,ACTION_BAR_SAFE_AREA_PADDING,safeAreaTop,controlPadding}=this.__closure;return isInvited?actionBarHeight+ACTION_BAR_SAFE_AREA_PADDING+safeAreaTop:controlPadding;}" };
 let closure_5 = { code: "function StageChannelAnimationUtilsTsx2(){const{withTiming,paddingTop,TIMING_CONFIG}=this.__closure;return{paddingTop:withTiming(paddingTop.get(),TIMING_CONFIG)};}" };
 const result = require("CALL_ACTION_BAR_HEIGHT").fileFinishedImporting("modules/stage_channels/native/components/StageChannelAnimationUtils.tsx");
@@ -33,14 +33,14 @@ export const useStageActionBarAnimation = function useStageActionBarAnimation(ch
       return sum;
     }
   }
-  obj = { isInvited: tmp, actionBarHeight: getActionBarHeight, ACTION_BAR_SAFE_AREA_PADDING: 10, safeAreaTop: top, controlPadding };
-  A.__closure = obj;
+  A.__closure = { isInvited: tmp, actionBarHeight: getActionBarHeight, ACTION_BAR_SAFE_AREA_PADDING: 10, safeAreaTop: top, controlPadding };
   A.__workletHash = 2568370943746;
   A.__initData = derivedValue;
   derivedValue = _require(getActionBarHeight[0]).useDerivedValue(A);
   const obj2 = _require(getActionBarHeight[0]);
   const fn = function c() {
-    const obj = { paddingTop: controlPadding(getActionBarHeight[4]).withTiming(derivedValue.get(), top) };
+    const obj = { paddingTop: null };
+    obj[0] = controlPadding(getActionBarHeight[4]).withTiming(derivedValue.get(), top);
     return obj;
   };
   obj = { withTiming: _require(getActionBarHeight[4]).withTiming, paddingTop: derivedValue, TIMING_CONFIG: top };

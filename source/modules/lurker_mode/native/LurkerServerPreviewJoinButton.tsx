@@ -1,28 +1,30 @@
-// Module ID: 11503
-// Function ID: 89380
-// Dependencies: [31, 1348, 1850, 3794, 653, 33, 566, 10074, 1282, 6671, 11504, 5083, 4578, 1212, 1392, 4004, 2]
+// Module ID: 11527
+// Function ID: 11528
+// Dependencies: [19, 1372, 1874, 3818, 676, 21, 589, 10095, 1306, 6692, 11528, 5105, 4600, 1236, 1416, 4028, 2]
 
-// Module 11503
-import importAllResult from "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_5 from "_isNativeReflectConstruct";
-import closure_6 from "_isNativeReflectConstruct";
+// Module 11527
+import importAllResult from "noop";
+import ensureGuildLoaded from "ensureGuildLoaded";
+import mergeGuildAvatar from "mergeGuildAvatar";
+import initialize from "initialize";
 import { JoinGuildSources } from "ME";
 import { jsx } from "jsxProd";
 
 const require = arg1;
+let c3 = importAllResult;
 const memoResult = importAllResult.memo(function LurkerServerPreviewJoinButton(guildId) {
   guildId = guildId.guildId;
   const joinSource = guildId.joinSource;
   const onBeforeJoin = guildId.onBeforeJoin;
+  let stateFromStores;
   let obj = guildId(onBeforeJoin[6]);
-  const items = [closure_5];
-  const stateFromStores = obj.useStateFromStores(items, () => outer1_5.getCurrentUser());
+  const items = [mergeGuildAvatar];
+  stateFromStores = obj.useStateFromStores(items, () => currentUser.getCurrentUser());
   const items1 = [guildId, joinSource, onBeforeJoin];
   const callback = stateFromStores.useCallback(() => {
     const lurkingSourceForGuild = outer1_6.getLurkingSourceForGuild(guildId);
     let type;
-    if (null != lurkingSourceForGuild) {
+    if (lurkingSourceForGuild != null) {
       type = lurkingSourceForGuild.type;
     }
     if (type === outer1_7.DIRECTORY_ENTRY) {
@@ -34,35 +36,39 @@ const memoResult = importAllResult.memo(function LurkerServerPreviewJoinButton(g
       }
     }
     const obj3 = guildId(onBeforeJoin[9]);
+    const tmp10 = joinSource;
+    const tmp11 = joinSource;
+    const tmp9 = onBeforeJoin;
     obj3.trackJoinClicked(guildId, joinSource, joinSource(onBeforeJoin[10]).hasNavigatedAway(guildId));
-    if (null != onBeforeJoin) {
+    if (onBeforeJoin != null) {
       onBeforeJoin();
     }
     const obj4 = joinSource(onBeforeJoin[10]);
-    joinSource(onBeforeJoin[11]).joinGuild(guildId, { source: joinSource });
+    tmp11(tmp9[11]).joinGuild(guildId, { source: tmp10 });
   }, items1);
   if (null == stateFromStores) {
-    obj = { grow: true, variant: "primary", size: "md" };
-    const intl = guildId(onBeforeJoin[13]).intl;
-    obj.text = intl.string(guildId(onBeforeJoin[13]).t.VJlc0S);
-    obj.onPress = callback;
-    return jsx(guildId(onBeforeJoin[12]).Button, { grow: true, variant: "primary", size: "md" });
+    obj = { grow: true, variant: "primary", size: "md", text: null, onPress: null };
+    const intl = tmp(tmp2[13]).intl;
+    obj[3] = intl.string(tmp(tmp2[13]).t.VJlc0S);
+    obj[4] = callback;
+    return jsx(tmp(tmp2[12]).Button, { grow: true, variant: "primary", size: "md", text: null, onPress: null });
   } else {
-    let obj2 = joinSource(onBeforeJoin[14]);
+    let obj2 = joinSource(tmp2[14]);
     const userAvatarSource = obj2.getUserAvatarSource(stateFromStores, false);
-    const intl2 = guildId(onBeforeJoin[13]).intl;
-    obj = {
-      usernameHook() {
-          return joinSource(onBeforeJoin[15]).getFormattedName(stateFromStores);
-        }
+    const intl2 = tmp(tmp2[13]).intl;
+    obj = { usernameHook: null };
+    obj[0] = function usernameHook() {
+      return joinSource(onBeforeJoin[15]).getFormattedName(stateFromStores);
     };
-    const obj1 = { grow: true, variant: "primary", size: "md", text: intl2.formatToPlainString(guildId(onBeforeJoin[13]).t["5qtVhX"], obj) };
-    obj2 = { source: userAvatarSource, variant: "entity" };
-    obj1.icon = jsx(guildId(onBeforeJoin[12]).Button.Icon, { source: userAvatarSource, variant: "entity" });
-    obj1.onPress = callback;
-    return jsx(guildId(onBeforeJoin[12]).Button, { grow: true, variant: "primary", size: "md", text: intl2.formatToPlainString(guildId(onBeforeJoin[13]).t["5qtVhX"], obj) });
+    const obj1 = { grow: true, variant: "primary", size: "md", text: null, icon: null, onPress: null };
+    obj1[3] = intl2.formatToPlainString(tmp(tmp2[13]).t["5qtVhX"], obj);
+    obj2 = { source: null, variant: "entity" };
+    obj2[0] = userAvatarSource;
+    obj1[4] = jsx(tmp(tmp2[12]).Button.Icon, { source: null, variant: "entity" });
+    obj1[5] = callback;
+    return jsx(tmp(tmp2[12]).Button, { grow: true, variant: "primary", size: "md", text: null, icon: null, onPress: null });
   }
 });
-let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/lurker_mode/native/LurkerServerPreviewJoinButton.tsx");
+let result = require("mergeGuildAvatar").fileFinishedImporting("modules/lurker_mode/native/LurkerServerPreviewJoinButton.tsx");
 
 export default memoResult;

@@ -1,109 +1,112 @@
-// Module ID: 11966
-// Function ID: 92459
-// Name: getApplicationImage
-// Dependencies: [31, 4202, 653, 4190, 8152, 7892, 1212, 11967, 5888, 9056, 1392, 11969, 4849, 11970, 5503, 566, 675, 8155, 2]
-// Exports: useImageForActivity, useImageForContentEntry
+// Module ID: 11990
+// Function ID: 11991
+// Name: useComputedImagesForActivity
+// Dependencies: [19, 4226, 676, 4214, 8176, 7917, 1236, 11991, 5906, 9080, 1416, 11993, 4871, 11994, 5521, 589, 698, 8179, 2]
+// Exports: getApplicationImage, useImageForActivity, useImageForContentEntry
 
-// Module 11966 (getApplicationImage)
-import { useEffect } from "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 11990 (useComputedImagesForActivity)
+import { useEffect } from "noop";
+import addApplication from "addApplication";
 import ME from "ME";
 import { ImageSizes } from "items3";
 
-let closure_5;
+let c5;
 let closure_6;
-function getApplicationImage(getIconURL) {
-  let iconURL;
-  if (null != getIconURL) {
-    iconURL = getIconURL.getIconURL(ImageSizes.LARGE);
-  }
-  if (null != getIconURL) {
-    const name = getIconURL.name;
-  }
-  if (null != iconURL) {
-    let obj = { src: iconURL };
-    if (null == name) {
-      const intl2 = require(1212) /* getSystemLocale */.intl;
-      let stringResult = intl2.string(require(1212) /* getSystemLocale */.t["2B/phM"]);
-    } else {
-      const intl = require(1212) /* getSystemLocale */.intl;
-      obj = { applicationName: name };
-      stringResult = intl.formatToPlainString(require(1212) /* getSystemLocale */.t.tiKyYg, obj);
-    }
-    obj.alt = stringResult;
-    return obj;
-  }
-}
-function useComputedImagesForActivity(activity, application) {
+function useComputedImagesForActivity(activity, getIconURL) {
   let largeImage;
   let smallImage;
-  const tmp = useRichImageForActivity(activity, application);
-  ({ activity, largeImage, smallImage } = { activity, application, largeImage: tmp.largeImage, smallImage: tmp.smallImage });
+  ({ largeImage, smallImage } = useRichImageForActivity(activity, getIconURL));
   if (null != largeImage) {
-    let obj = { largeImage, smallImage };
+    let obj = { largeImage: null, smallImage: null };
+    obj[0] = largeImage;
+    obj[1] = smallImage;
+    let obj8 = obj;
   } else {
-    if (obj15.isStageActivity(activity)) {
-      const result = require(9056) /* unpackStageChannelParty */.unpackStageChannelParty(activity);
+    if (obj17.isStageActivity(activity)) {
+      const result = tmp15(9080).unpackStageChannelParty(activity);
       let guildIconURL;
       if (null != result) {
-        obj = { id: result.guildId };
+        obj = { id: null, icon: null, size: null };
+        obj[0] = result.guildId;
         let small_image;
-        if (null != activity) {
+        if (activity != null) {
           const assets = activity.assets;
-          if (null != assets) {
+          if (assets != null) {
             small_image = assets.small_image;
           }
         }
-        obj.icon = small_image;
-        obj.size = ImageSizes.SMALL;
-        guildIconURL = importDefault(1392).getGuildIconURL(obj);
-        const obj10 = importDefault(1392);
+        obj[1] = small_image;
+        obj[2] = ImageSizes.SMALL;
+        guildIconURL = importDefault(1416).getGuildIconURL(obj);
+        const obj12 = importDefault(1416);
       }
-      const obj1 = {};
-      let tmp25;
+      let tmp14;
       if (null != guildIconURL) {
-        const obj2 = { src: guildIconURL };
-        tmp25 = obj2;
+        const obj1 = { src: null };
+        obj1[0] = guildIconURL;
+        tmp14 = obj1;
       }
-      obj1.largeImage = tmp25;
-      obj1.smallImage = undefined;
-      obj = obj1;
-      const obj9 = require(9056) /* unpackStageChannelParty */;
-    } else if (importDefault(11969)(activity)) {
-      const obj3 = {};
-      let obj4 = {};
-      let obj7 = importDefault(4849);
-      obj4.src = obj7.get(constants.XBOX).icon.customPNG;
-      const intl2 = require(1212) /* getSystemLocale */.intl;
-      obj4.alt = intl2.string(require(1212) /* getSystemLocale */.t.Nfvo72);
-      obj3.largeImage = obj4;
-      obj3.smallImage = undefined;
-      obj = obj3;
+      const obj2 = { largeImage: null, smallImage: "r" };
+      obj2[0] = tmp14;
+      obj8 = obj2;
+      const tmp15Result = tmp15(9080);
+    } else if (importDefault(11993)(activity)) {
+      const obj3 = { largeImage: null, smallImage: "r" };
+      const obj4 = { src: null, alt: null };
+      let tmp2Result = tmp2(4871);
+      obj4[0] = tmp2Result.get(constants.XBOX).icon.customPNG;
+      const intl4 = tmp15(1236).intl;
+      obj4[1] = intl4.string(tmp15(1236).t.Nfvo72);
+      obj3[0] = obj4;
+      obj8 = obj3;
     } else {
       if (null == smallImage) {
-        if (importDefault(11970)(activity)) {
-          const obj5 = {};
-          const obj6 = {};
-          obj4 = importDefault(4849);
-          obj6.src = obj4.get(constants.PLAYSTATION).icon.lightPNG;
-          const intl = require(1212) /* getSystemLocale */.intl;
-          obj6.alt = intl.string(require(1212) /* getSystemLocale */.t.fFl4jo);
-          obj5.largeImage = obj6;
-          obj5.smallImage = undefined;
-          obj = obj5;
+        if (tmp2(11994)(activity)) {
+          const obj5 = { largeImage: null, smallImage: "r" };
+          const obj6 = { src: null, alt: null };
+          tmp2Result = tmp2(4871);
+          obj6[0] = tmp2Result.get(constants.PLAYSTATION).icon.lightPNG;
+          const intl3 = tmp15(1236).intl;
+          obj6[1] = intl3.string(tmp15(1236).t.fFl4jo);
+          obj5[0] = obj6;
+          obj8 = obj5;
         }
       }
-      const tmp8 = getApplicationImage(tmp2);
-      if (null != tmp8) {
-        obj7 = { largeImage: tmp8, smallImage };
-        obj = obj7;
+      let iconURL;
+      if (getIconURL != null) {
+        iconURL = getIconURL.getIconURL(ImageSizes.LARGE);
+      }
+      if (getIconURL != null) {
+        const name = getIconURL.name;
+      }
+      if (null == iconURL) {
+        if (null != undefined) {
+          const obj7 = { largeImage: null, smallImage: null };
+          obj7[0] = undefined;
+          obj7[1] = smallImage;
+          obj8 = obj7;
+        } else {
+          obj8 = { largeImage: null, smallImage: "r" };
+          obj8[0] = smallImage;
+        }
       } else {
-        obj = { largeImage: smallImage, smallImage: undefined };
+        obj = { src: null, alt: null };
+        obj[0] = iconURL;
+        if (null == name) {
+          const intl2 = tmp15(1236).intl;
+          let stringResult = intl2.string(tmp15(1236).t["2B/phM"]);
+        } else {
+          const intl = tmp15(1236).intl;
+          const obj9 = { applicationName: null };
+          obj9[0] = name;
+          stringResult = intl.formatToPlainString(tmp15(1236).t.tiKyYg, obj9);
+        }
+        obj[1] = stringResult;
       }
     }
-    obj15 = require(9056) /* unpackStageChannelParty */;
+    obj17 = require(9080) /* unpackStageChannelParty */;
   }
-  return obj;
+  return obj8;
 }
 function useTrackActivityDefaultIcon(arg0) {
   let activity;
@@ -122,17 +125,17 @@ function useTrackActivityDefaultIcon(arg0) {
   let c9;
   application_id = undefined;
   ({ application, largeImageSrc } = arg0);
-  if (null != activity) {
+  if (activity != null) {
     application_id = activity.application_id;
   }
-  const getOrFetchApplication = trackingSource(5503).useGetOrFetchApplication(application_id);
-  let obj = trackingSource(5503);
+  const getOrFetchApplication = trackingSource(5521).useGetOrFetchApplication(application_id);
+  let obj = trackingSource(5521);
   const items = [c4];
   let tmp4 = null == application_id;
-  const stateFromStores = trackingSource(566).useStateFromStores(items, () => {
+  const stateFromStores = trackingSource(589).useStateFromStores(items, () => {
     let result = null != application_id;
     if (result) {
-      result = _undefined2.didFetchingApplicationFail(application_id);
+      result = _undefined2.didFetchingApplicationFail(tmp);
     }
     return result;
   });
@@ -146,30 +149,30 @@ function useTrackActivityDefaultIcon(arg0) {
   useEffect = tmp5;
   c4 = tmp6;
   name = undefined;
-  if (null != activity) {
+  if (activity != null) {
     name = activity.name;
   }
   type = undefined;
-  if (null != activity) {
+  if (activity != null) {
     type = activity.type;
   }
   session_id = undefined;
-  if (null != activity) {
+  if (activity != null) {
     session_id = activity.session_id;
   }
   let large_image;
-  if (null != activity) {
+  if (activity != null) {
     const assets = activity.assets;
-    if (null != assets) {
+    if (assets != null) {
       large_image = assets.large_image;
     }
   }
   let tmp11 = null != large_image;
   if (!tmp11) {
     let small_image;
-    if (null != activity) {
+    if (activity != null) {
       const assets2 = activity.assets;
-      if (null != assets2) {
+      if (assets2 != null) {
         small_image = assets2.small_image;
       }
     }
@@ -188,99 +191,150 @@ function useTrackActivityDefaultIcon(arg0) {
     }
     if (tmp) {
       let obj = application_id(_undefined[16]);
-      obj = { source: trackingSource, application_id, activity_name: name, activity_type: type, activity_session_id: session_id, application_found: c3, has_rich_assets: c8 };
+      obj = { source: null, application_id: null, activity_name: null, activity_type: null, activity_session_id: null, application_found: null, has_rich_assets: null };
+      obj[0] = trackingSource;
+      obj[1] = application_id;
+      obj[2] = name;
+      obj[3] = type;
+      obj[4] = session_id;
+      obj[5] = c3;
+      obj[6] = c8;
       obj.track(name.ACTIVITY_DEFAULT_ICON_SHOWN, obj);
     }
   }, items1);
 }
 function useRichImageForActivity(activity, activityApplication) {
-  let obj = require(5503) /* useGetOrFetchApplications */;
-  let application_id;
-  if (null != activity) {
-    application_id = activity.application_id;
+  require(5521) /* useGetOrFetchApplications */;
+  if (activity != null) {
+    const application_id = activity.application_id;
   }
-  let getOrFetchApplication = obj.useGetOrFetchApplication(application_id);
   if (null == activity) {
-    obj = { largeImage: undefined, smallImage: undefined };
-    return obj;
+    return { largeImage: "dispatch", smallImage: "isArray" };
   } else {
     let large_image;
-    if (null != activity) {
+    if (activity != null) {
       const assets = activity.assets;
-      if (null != assets) {
+      if (assets != null) {
         large_image = assets.large_image;
       }
     }
-    let tmp21Result;
+    let tmp5;
     if (null != large_image) {
-      obj = {};
-      let obj2 = require(7892) /* _createForOfIteratorHelperLoose */;
-      const items = [ImageSizes.LARGE, ImageSizes.LARGE];
-      obj.src = obj2.getAssetImage(activity.application_id, large_image, items);
+      let obj = { src: null, text: null, url: null };
+      let tmpResult = tmp(7917);
+      const items = [, ];
+      ({ LARGE: arr[0], LARGE: arr[1] } = ImageSizes);
+      obj[0] = tmpResult.getAssetImage(activity.application_id, large_image, items);
       const assets2 = activity.assets;
       let trimmed;
-      if (null != assets2) {
-        if (null != assets2.large_text) {
+      if (assets2 != null) {
+        if (assets2.large_text != null) {
           trimmed = str.trim();
         }
       }
-      obj.text = trimmed;
+      obj[1] = trimmed;
       const assets3 = activity.assets;
       let large_url;
-      if (null != assets3) {
+      if (assets3 != null) {
         large_url = assets3.large_url;
       }
-      obj.url = large_url;
-      tmp21Result = obj;
+      obj[2] = large_url;
+      tmp5 = obj;
     }
-    let small_image;
-    if (!importDefault(8155)(activity)) {
-      if (null != activity) {
+    let tmp10;
+    if (!importDefault(8179)(activity)) {
+      let small_image;
+      if (activity != null) {
         const assets4 = activity.assets;
-        if (null != assets4) {
+        if (assets4 != null) {
           small_image = assets4.small_image;
         }
       }
+      tmp10 = small_image;
     }
-    let tmp14;
-    if (null != small_image) {
-      const obj1 = {};
-      const items1 = [ImageSizes.LARGE, ImageSizes.LARGE];
-      obj1.src = require(7892) /* _createForOfIteratorHelperLoose */.getAssetImage(activity.application_id, small_image, items1);
+    let tmp12;
+    if (null != tmp10) {
+      obj = { src: null, text: null, url: null };
+      tmpResult = tmp(7917);
+      const items1 = [, ];
+      ({ LARGE: arr2[0], LARGE: arr2[1] } = ImageSizes);
+      obj[0] = tmpResult.getAssetImage(activity.application_id, tmp10, items1);
       const assets5 = activity.assets;
       let trimmed1;
-      if (null != assets5) {
-        if (null != assets5.small_text) {
+      if (assets5 != null) {
+        if (assets5.small_text != null) {
           trimmed1 = str2.trim();
         }
       }
-      obj1.text = trimmed1;
+      obj[1] = trimmed1;
       const assets6 = activity.assets;
       let small_url;
-      if (null != assets6) {
+      if (assets6 != null) {
         small_url = assets6.small_url;
       }
-      obj1.url = small_url;
-      tmp14 = obj1;
-      const obj5 = require(7892) /* _createForOfIteratorHelperLoose */;
+      obj[2] = small_url;
+      tmp12 = obj;
     }
-    obj2 = {};
-    if (null == tmp21Result) {
-      if (null != activityApplication) {
-        getOrFetchApplication = activityApplication;
+    if (tmp5 == null) {
+      let obj5 = activityApplication;
+      if (activityApplication == null) {
+        obj5 = tmp3;
       }
-      tmp21Result = getApplicationImage(getOrFetchApplication);
-      const tmp21 = getApplicationImage;
+      let iconURL;
+      if (obj5 != null) {
+        iconURL = obj5.getIconURL(ImageSizes.LARGE);
+      }
+      if (obj5 != null) {
+        const name = obj5.name;
+      }
+      if (null != iconURL) {
+        obj = { src: null, alt: null };
+        obj[0] = iconURL;
+        if (null == name) {
+          const intl2 = tmp(1236).intl;
+          let stringResult = intl2.string(_2B_phM);
+        } else {
+          const intl = tmp(1236).intl;
+          const obj1 = { applicationName: null };
+          obj1[0] = name;
+          stringResult = intl.formatToPlainString(tmp(1236).t.tiKyYg, obj1);
+        }
+        obj[1] = stringResult;
+      }
     }
-    obj2.largeImage = tmp21Result;
-    obj2.smallImage = tmp14;
+    const obj2 = { largeImage: null, smallImage: null };
+    obj2[0] = tmp5;
+    obj2[1] = tmp12;
     return obj2;
   }
 }
-({ AnalyticEvents: closure_5, PlatformTypes: closure_6 } = ME);
+({ AnalyticEvents: c5, PlatformTypes: closure_6 } = ME);
 let result = require("ME").fileFinishedImporting("modules/content_inventory/ContentInventoryActivityImageUtils.tsx");
 
-export { getApplicationImage };
+export const getApplicationImage = function getApplicationImage(getIconURL) {
+  let iconURL;
+  if (getIconURL != null) {
+    iconURL = getIconURL.getIconURL(ImageSizes.LARGE);
+  }
+  if (getIconURL != null) {
+    const name = getIconURL.name;
+  }
+  if (null != iconURL) {
+    let obj = { src: null, alt: null };
+    obj[0] = iconURL;
+    if (null == name) {
+      const intl2 = require(1236) /* getSystemLocale */.intl;
+      let stringResult = intl2.string(require(1236) /* getSystemLocale */.t["2B/phM"]);
+    } else {
+      const intl = require(1236) /* getSystemLocale */.intl;
+      obj = { applicationName: null };
+      obj[0] = name;
+      stringResult = intl.formatToPlainString(require(1236) /* getSystemLocale */.t.tiKyYg, obj);
+    }
+    obj[1] = stringResult;
+    return obj;
+  }
+};
 export const useImageForContentEntry = function useImageForContentEntry(trackingSource) {
   let activity;
   let activityApplication;
@@ -291,86 +345,93 @@ export const useImageForContentEntry = function useImageForContentEntry(tracking
   if (showCoverImage === undefined) {
     showCoverImage = true;
   }
-  ({ activity, activityApplication, fallbackApplication } = importDefault(11967)(entry));
-  let obj = activityApplication;
-  if (null != fallbackApplication) {
-    obj = fallbackApplication;
+  ({ activity, activityApplication, fallbackApplication } = importDefault(11991)(entry));
+  let obj = fallbackApplication;
+  if (fallbackApplication == null) {
+    obj = activityApplication;
   }
-  const tmp2 = useRichImageForActivity(activity, activityApplication);
-  const largeImage = tmp2.largeImage;
+  const tmp3 = useRichImageForActivity(activity, activityApplication);
+  const largeImage = tmp3.largeImage;
   let canonicalGameId;
-  if (null != obj) {
+  if (obj != null) {
     canonicalGameId = obj.getCanonicalGameId();
   }
-  let obj1 = require(5888) /* importDefaultResult1 */;
+  let obj1 = require(5906) /* importDefaultResult1 */;
   const data = obj1.useGame(canonicalGameId).data;
-  if (null != data) {
+  if (data != null) {
     const coverURL = data.getCoverURL();
   }
-  let obj2 = require(8152) /* isPlayedGameEntry */;
-  if (obj2.isListenedSessionEntry(entry)) {
+  let tmp5Result = tmp5(8176);
+  if (tmp5Result.isListenedSessionEntry(entry)) {
     if (entry.extra.entries.length > 0) {
-      obj = { src: entry.extra.entries[0].media.image_url };
+      obj = { src: null };
+      obj[0] = entry.extra.entries[0].media.image_url;
       let tmp7 = obj;
     }
-    obj = { activity };
-    if (null != fallbackApplication) {
-      activityApplication = fallbackApplication;
-    }
-    obj.application = activityApplication;
     if (null != largeImage) {
-      obj1 = { largeImage, smallImage: tmp2.smallImage };
-      let obj5 = obj1;
+      obj = { largeImage: null, smallImage: null };
+      obj[0] = largeImage;
+      obj[1] = tmp3.smallImage;
+      let obj4 = obj;
     } else if (null != tmp7) {
-      obj2 = { largeImage: tmp7, smallImage: undefined };
-      obj5 = obj2;
+      obj1 = { largeImage: null, smallImage: "r" };
+      obj1[0] = tmp7;
+      obj4 = obj1;
     } else {
       if (null != coverURL) {
         if (showCoverImage) {
-          let obj3 = {};
-          const obj4 = { src: coverURL };
-          obj3.largeImage = obj4;
-          obj3.smallImage = undefined;
-          obj5 = obj3;
+          const obj2 = { largeImage: null, smallImage: "r" };
+          const obj3 = { src: null };
+          obj3[0] = coverURL;
+          obj2[0] = obj3;
+          obj4 = obj2;
         }
       }
-      obj5 = { largeImage: useComputedImagesForActivity(activity, obj).largeImage, smallImage: undefined };
+      obj4 = { largeImage: null, smallImage: "r" };
+      obj4[0] = useComputedImagesForActivity(activity, obj).largeImage;
     }
-    const largeImage2 = obj5.largeImage;
+    const obj5 = { activity: null, application: null, largeImageSrc: null, trackingSource: null };
+    obj5[0] = activity;
+    if (fallbackApplication == null) {
+      fallbackApplication = activityApplication;
+    }
+    obj5[1] = fallbackApplication;
+    const largeImage2 = obj4.largeImage;
     let src;
-    if (null != largeImage2) {
+    if (largeImage2 != null) {
       src = largeImage2.src;
     }
-    obj.largeImageSrc = src;
-    obj.trackingSource = trackingSource.trackingSource;
-    useTrackActivityDefaultIcon(obj);
-    return obj5;
+    obj5[2] = src;
+    obj5[3] = trackingSource.trackingSource;
+    useTrackActivityDefaultIcon(obj5);
+    return obj4;
   }
-  obj3 = require(8152) /* isPlayedGameEntry */;
-  if (obj3.isWatchedMediaEntry(entry)) {
-    const obj6 = {};
-    let tmp5Result = tmp5(7892);
-    obj6.src = tmp5Result.getAssetImage(entry.extra.application_id, entry.extra.media_assets_large_image, ImageSizes.LARGE);
-    obj6.alt = entry.extra.media_title;
+  tmp5Result = tmp5(8176);
+  if (tmp5Result.isWatchedMediaEntry(entry)) {
+    const obj6 = { src: null, alt: null };
+    obj6[0] = tmp5(7917).getAssetImage(entry.extra.application_id, entry.extra.media_assets_large_image, ImageSizes.LARGE);
+    obj6[1] = entry.extra.media_title;
     tmp7 = obj6;
+    const tmp5Result1 = tmp5(7917);
   } else {
-    tmp5Result = tmp5(8152);
-    if (tmp5Result.isTopArtistEntry(entry)) {
-      const obj7 = { src: entry.extra.media.image_url };
+    if (tmp5Result2.isTopArtistEntry(entry)) {
+      const obj7 = { src: null };
+      obj7[0] = entry.extra.media.image_url;
       tmp7 = obj7;
     }
+    tmp5Result2 = tmp5(8176);
   }
 };
 export const useImageForActivity = function useImageForActivity(activity, application, user_profile_activity_native) {
   const tmp = useComputedImagesForActivity(activity, application);
-  const obj = { activity, application };
+  const obj = { activity, application, largeImageSrc: null, trackingSource: null };
   const largeImage = tmp.largeImage;
   let src;
-  if (null != largeImage) {
+  if (largeImage != null) {
     src = largeImage.src;
   }
-  obj.largeImageSrc = src;
-  obj.trackingSource = user_profile_activity_native;
+  obj[2] = src;
+  obj[3] = user_profile_activity_native;
   useTrackActivityDefaultIcon(obj);
   return tmp;
 };

@@ -1,51 +1,59 @@
-// Module ID: 11255
-// Function ID: 87423
+// Module ID: 11279
+// Function ID: 11280
 // Name: useTrackSearchItems
-// Dependencies: [31, 10900, 8402, 480, 5686, 2]
+// Dependencies: [19, 10924, 8426, 503, 5704, 2]
 // Exports: useTrackSearchItems
 
-// Module 11255 (useTrackSearchItems)
-import result from "result";
+// Module 11279 (useTrackSearchItems)
+import noop from "noop";
 
 const require = arg1;
 const result = require("trackImpression").fileFinishedImporting("modules/app_launcher/native/screens/search/useTrackSearchItems.tsx");
 
-export const useTrackSearchItems = function useTrackSearchItems(getApplicationIdFromApplicationItem, getImpressionPropsFromApplicationItem, first) {
-  const _require = getApplicationIdFromApplicationItem;
-  const dependencyMap = getImpressionPropsFromApplicationItem;
+export const useTrackSearchItems = function useTrackSearchItems(callback3, memo1, first) {
+  const _require = callback3;
+  const dependencyMap = memo1;
   const React = first;
-  let obj = _require(10900);
+  let obj = _require(10924);
   const entrypoint = obj.useAppLauncherContext().entrypoint;
   let closure_4 = React.useRef({});
   let closure_5 = React.useRef(first);
   obj = {
     handleViewableItemsChanged: React.useCallback((viewableItems) => {
       viewableItems = viewableItems.viewableItems;
-      if (ref.current !== result) {
-        ref.current = result;
+      if (ref.current !== noop) {
+        ref.current = noop;
         closure_4.current = {};
       }
       const item = viewableItems.forEach((isViewable) => {
         let applicationId;
         let commandId;
         if (isViewable.isViewable) {
-          const tmp2 = outer1_0(isViewable.item);
+          const tmp2 = callback(isViewable.item);
           if (null != tmp2) {
-            if (null == outer1_4.current[tmp2]) {
-              outer1_4.current[tmp2] = true;
-              ({ applicationId, commandId } = outer1_1(isViewable.item));
-              let obj = callback(8402);
-              obj = { type: callback(480).ImpressionTypes.VIEW, name: callback(480).ImpressionNames.APP_LAUNCHER_SEARCH_RESULTS_ITEM };
-              obj = { location: callback(5686).ApplicationCommandTriggerLocations.APP_LAUNCHER_HOME_SEARCH, application_id: applicationId, command_id: commandId, search_results_position: isViewable.index, query: outer1_2, source: outer1_3 };
-              obj.properties = obj;
+            if (null == ref.current[tmp2]) {
+              ref.current[tmp2] = true;
+              ({ applicationId, commandId } = callback2(isViewable.item));
+              let obj = outer1_0(outer1_1[2]);
+              obj = { type: null, name: null, properties: null };
+              obj[0] = outer1_0(outer1_1[3]).ImpressionTypes.VIEW;
+              obj[1] = outer1_0(outer1_1[3]).ImpressionNames.APP_LAUNCHER_SEARCH_RESULTS_ITEM;
+              obj = { location: null, application_id: null, command_id: null, search_results_position: null, query: null, source: null };
+              obj[0] = outer1_0(outer1_1[4]).ApplicationCommandTriggerLocations.APP_LAUNCHER_HOME_SEARCH;
+              obj[1] = applicationId;
+              obj[2] = commandId;
+              obj[3] = isViewable.index;
+              obj[4] = noop;
+              obj[5] = closure_3;
+              obj[2] = obj;
               obj.trackImpression(obj, false);
-              const tmp7 = outer1_1(isViewable.item);
+              const tmp5 = callback2(isViewable.item);
             }
           }
         }
       });
     }, items)
   };
-  items = [entrypoint, getApplicationIdFromApplicationItem, getImpressionPropsFromApplicationItem, first];
+  items = [entrypoint, callback3, memo1, first];
   return obj;
 };

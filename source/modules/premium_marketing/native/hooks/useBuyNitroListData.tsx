@@ -1,60 +1,67 @@
-// Module ID: 6553
-// Function ID: 58347
+// Module ID: 6574
+// Function ID: 6575
 // Name: useBuyNitroListData
-// Dependencies: [31, 653, 5497, 675, 6554, 2]
+// Dependencies: [19, 676, 5515, 698, 6575, 2]
 // Exports: default
 
-// Module 6553 (useBuyNitroListData)
-import result from "result";
+// Module 6574 (useBuyNitroListData)
+import noop from "noop";
 import { AnalyticEvents } from "ME";
 
-const result = require("mergeLocations").fileFinishedImporting("modules/premium_marketing/native/hooks/useBuyNitroListData.tsx");
+const result = require("context").fileFinishedImporting("modules/premium_marketing/native/hooks/useBuyNitroListData.tsx");
 
 export default function useBuyNitroListData(selection) {
   selection = selection.selection;
   const setTier = selection.setTier;
-  const tmp = setTier(ref[4])(selection.tier);
-  ref = React.useRef(null);
+  let analyticsLocations = setTier;
+  let dependencyMap;
+  let React;
+  const tmp = analyticsLocations(6575)(selection.tier);
+  const ref = React.useRef(null);
+  dependencyMap = ref;
   React = React.useRef(false);
   const items = [setTier];
   const items1 = [tmp];
-  const callback = React.useCallback((arg0) => {
-    result.current = true;
-    setTier(arg0);
+  const callback = React.useCallback((c4) => {
+    noop.current = true;
+    analyticsLocations(c4);
   }, items);
   const effect = React.useEffect(() => {
-    if (React.current) {
-      React.current = false;
+    if (ref2.current) {
+      tmp.current = false;
       const _requestAnimationFrame = requestAnimationFrame;
       let closure_0 = requestAnimationFrame(() => {
-        const current = outer1_1.current;
+        const current = ref.current;
         let scrollToTopResult;
-        if (null != current) {
-          const obj = { animated: true };
-          scrollToTopResult = current.scrollToTop(obj);
+        if (current != null) {
+          scrollToTopResult = current.scrollToTop({ animated: true });
         }
         return scrollToTopResult;
       });
       return () => cancelAnimationFrame(closure_0);
     }
   }, items1);
-  return {
-    onScroll: (function useBuyNitroListScrollTracking() {
-      const analyticsLocations = setTier(ref[2])().analyticsLocations;
-      let closure_1 = React.useRef(false);
-      return {
-        onScroll(nativeEvent) {
-          if (tmp3) {
-            let obj = setTier(ref[3]);
-            obj = { location_stack: analyticsLocations };
-            obj.track(outer2_3.PREMIUM_MARKETING_SURFACE_REACHED_BOTTOM, obj);
-            ref.current = true;
-          }
-        }
-      };
-    })().onScroll,
-    onSelectNitroTier: callback,
-    listData: tmp,
-    listRef: ref
+  let obj = { onScroll: null, onSelectNitroTier: null, listData: null, listRef: null };
+  analyticsLocations = undefined;
+  dependencyMap = undefined;
+  analyticsLocations = analyticsLocations(5515)().analyticsLocations;
+  dependencyMap = React.useRef(false);
+  obj[0] = function onScroll(nativeEvent) {
+    const current = ref.current;
+    let tmp4 = !current;
+    if (!current) {
+      tmp4 = nativeEvent.nativeEvent.layoutMeasurement.height + tmp.y >= tmp2.height;
+    }
+    if (tmp4) {
+      let obj = analyticsLocations(ref[3]);
+      obj = { location_stack: null };
+      obj[0] = analyticsLocations;
+      obj.track(outer1_3.PREMIUM_MARKETING_SURFACE_REACHED_BOTTOM, obj);
+      ref.current = true;
+    }
   };
+  obj[1] = callback;
+  obj[2] = tmp;
+  obj[3] = ref;
+  return obj;
 };

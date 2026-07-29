@@ -1,64 +1,69 @@
-// Module ID: 11627
-// Function ID: 90203
+// Module ID: 11651
+// Function ID: 11652
 // Name: GuildPowerupsWarning
-// Dependencies: [31, 27, 33, 4165, 689, 11628, 6709, 4161, 2]
+// Dependencies: [19, 17, 21, 4189, 712, 11652, 6730, 4185, 2]
 // Exports: default
 
-// Module 11627 (GuildPowerupsWarning)
-import "result";
+// Module 11651 (GuildPowerupsWarning)
+import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_4;
-let closure_5;
-let require = arg1;
-({ jsx: closure_4, jsxs: closure_5 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { flexDirection: "row", alignItems: "flex-start", padding: require("_createForOfIteratorHelperLoose").space.PX_24, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_FEEDBACK_WARNING, borderWidth: 1, borderColor: require("_createForOfIteratorHelperLoose").colors.STATUS_WARNING, borderRadius: require("_createForOfIteratorHelperLoose").radii.lg, gap: require("_createForOfIteratorHelperLoose").space.PX_8, overflow: "hidden" };
-_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
-let obj1 = { flex: 1, gap: require("_createForOfIteratorHelperLoose").space.PX_4, alignItems: "center" };
-_createForOfIteratorHelperLoose.contentContainer = obj1;
-_createForOfIteratorHelperLoose.warningText = { marginTop: require("_createForOfIteratorHelperLoose").space.PX_4 };
-_createForOfIteratorHelperLoose.text = { textAlign: "center" };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-let obj2 = { marginTop: require("_createForOfIteratorHelperLoose").space.PX_4 };
+let c4;
+let c5;
+const require = arg1;
+({ jsx: c4, jsxs: c5 } = jsxProd);
+createCacheKey = { container: null, contentContainer: null, warningText: null, text: null };
+createCacheKey = { flexDirection: "row", alignItems: "flex-start", padding: require("Themes").space.PX_24, backgroundColor: require("Themes").colors.BACKGROUND_FEEDBACK_WARNING, borderWidth: 1, borderColor: require("Themes").colors.STATUS_WARNING, borderRadius: require("Themes").radii.lg, gap: require("Themes").space.PX_8, overflow: "hidden" };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { flex: 1, gap: require("Themes").space.PX_4, alignItems: "center" };
+let obj1 = { flex: 1, gap: require("Themes").space.PX_4, alignItems: "center" };
+createCacheKey[2] = { marginTop: require("Themes").space.PX_4 };
+createCacheKey[3] = { textAlign: "center" };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let obj2 = { marginTop: require("Themes").space.PX_4 };
 const result = require("jsxProd").fileFinishedImporting("modules/premium/powerups/native/GuildPowerupsWarning.tsx");
 
 export default function GuildPowerupsWarning(warnings) {
   let guildId;
   let powerupNames;
   warnings = warnings.warnings;
+  let _require;
   ({ guildId, powerupNames } = warnings);
-  const tmp = _createForOfIteratorHelperLoose();
-  const require = tmp;
-  let tmp6Result = null;
-  if (tmp2.shouldShow) {
-    let obj = { style: tmp.container };
-    obj = { style: tmp.contentContainer };
-    obj = { color: importDefault(689).colors.TEXT_FEEDBACK_WARNING, size: "md" };
-    let items = [callback(require(6709) /* CircleErrorIcon */.CircleErrorIcon, obj), , , ];
-    const obj1 = { variant: "text-md/semibold", color: "text-feedback-warning", style: tmp.text, children: tmp3 };
-    items[1] = callback(require(4161) /* Text */.Text, obj1);
-    const obj2 = { variant: "text-sm/medium", style: tmp.text, children: tmp4 };
-    items[2] = callback(require(4161) /* Text */.Text, obj2);
+  const tmp = createCacheKey();
+  _require = tmp;
+  let tmp8Result = null;
+  if (tmp4.shouldShow) {
+    let obj = { style: null, children: null };
+    obj[0] = tmp.container;
+    obj = { style: null, children: null };
+    obj[0] = tmp.contentContainer;
+    obj = { color: null, size: "md" };
+    obj[0] = importDefault(712).colors.TEXT_FEEDBACK_WARNING;
+    let items = [callback(_require(6730).CircleErrorIcon, obj), , , ];
+    const obj1 = { variant: "text-md/semibold", color: "text-feedback-warning", style: null, children: null };
+    obj1[2] = tmp.text;
+    obj1[3] = tmp5;
+    items[1] = callback(_require(4185).Text, obj1);
+    const obj2 = { variant: "text-sm/medium", style: null, children: null };
+    obj2[1] = tmp.text;
+    obj2[2] = tmp6;
+    items[2] = callback(_require(4185).Text, obj2);
     let mapped;
-    if (null != warnings) {
+    if (warnings != null) {
       mapped = warnings.map((children) => {
-        const obj = { variant: "text-sm/medium", color: "text-feedback-warning" };
         const items = [, ];
-        ({ warningText: arr[0], text: arr[1] } = tmp);
-        obj.style = items;
-        obj.children = children;
-        return outer1_4(tmp(outer1_2[7]).Text, obj, "warning-" + arg1);
+        ({ warningText: arr[0], text: arr[1] } = _undefined);
+        return outer1_4(_undefined(outer1_2[7]).Text, { variant: "text-sm/medium", color: "text-feedback-warning", style: items, children }, "warning-" + arg1);
       });
     }
     items[3] = mapped;
-    obj.children = items;
-    obj.children = closure_5(View, obj);
-    tmp6Result = callback(tmp7, obj);
-    const tmp6 = callback;
-    const tmp8 = closure_5;
+    obj[1] = items;
+    obj[1] = closure_5(View, obj);
+    tmp8Result = callback(tmp9, obj);
+    const tmp10 = closure_5;
+    const tmp8 = callback;
   }
-  return tmp6Result;
+  return tmp8Result;
 };

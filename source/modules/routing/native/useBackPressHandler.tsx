@@ -1,35 +1,35 @@
-// Module ID: 4575
-// Function ID: 39961
+// Module ID: 4597
+// Function ID: 4598
 // Name: useBackPressHandler
-// Dependencies: [31, 27, 477, 2]
+// Dependencies: [19, 17, 500, 2]
 // Exports: default
 
-// Module 4575 (useBackPressHandler)
-import result from "result";
+// Module 4597 (useBackPressHandler)
+import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 
-let closure_3;
-let closure_4;
+let c3;
+let c4;
 const require = arg1;
-({ BackHandler: closure_3, NativeModules: closure_4 } = get_ActivityIndicator);
+({ BackHandler: c3, NativeModules: c4 } = get_ActivityIndicator);
 const result = require("set").fileFinishedImporting("modules/routing/native/useBackPressHandler.tsx");
 
-export default function useBackPressHandler(arg0) {
+export default function useBackPressHandler(stateFromStores) {
+  let closure_0 = stateFromStores;
   let flag = arg1;
-  let closure_0 = arg0;
   if (arg1 === undefined) {
     flag = true;
   }
   let React;
-  React = React.useRef(arg0);
+  React = React.useRef(stateFromStores);
   const layoutEffect = React.useLayoutEffect(() => {
-    result.current = closure_0;
+    noop.current = closure_0;
   });
   const items = [flag];
   const effect = React.useEffect(() => {
     if (!obj.isIOS()) {
       if (flag) {
-        const callback = outer1_3.addEventListener("hardwareBackPress", () => outer1_2.current());
+        const stateFromStores = outer1_3.addEventListener("hardwareBackPress", () => ref.current());
         return () => closure_0.remove();
       }
     }

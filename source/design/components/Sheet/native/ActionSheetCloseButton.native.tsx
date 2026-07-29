@@ -1,11 +1,11 @@
-// Module ID: 5534
-// Function ID: 47042
+// Module ID: 5552
+// Function ID: 5553
 // Name: ActionSheetCloseButton
-// Dependencies: [31, 33, 4695, 1212, 5153, 689, 2]
+// Dependencies: [19, 21, 4717, 1236, 5175, 712, 2]
 // Exports: ActionSheetCloseButton
 
-// Module 5534 (ActionSheetCloseButton)
-import "result";
+// Module 5552 (ActionSheetCloseButton)
+import "noop";
 import { jsx } from "jsxProd";
 
 const require = arg1;
@@ -17,19 +17,17 @@ export const ActionSheetCloseButton = function ActionSheetCloseButton(arg0) {
   let onPress;
   let variant;
   ({ onPress, variant } = arg0);
-  let obj = { accessibilityRole: "button" };
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj.accessibilityLabel = intl.string(require(1212) /* getSystemLocale */.t.cpT0Cq);
-  obj.hitSlop = closure_5;
-  obj.androidRippleConfig = closure_4;
-  obj.onPress = onPress;
-  obj = {};
+  const obj = { accessibilityRole: "button", accessibilityLabel: null, hitSlop: null, androidRippleConfig: null, onPress: null, children: null };
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj[1] = intl.string(require(1236) /* getSystemLocale */.t.cpT0Cq);
+  obj[2] = closure_5;
+  obj[3] = closure_4;
+  obj[4] = onPress;
   if ("overlay" === variant) {
-    let ICON_STRONG = importDefault(689).colors.WHITE;
+    let ICON_STRONG = importDefault(712).colors.WHITE;
   } else {
-    ICON_STRONG = importDefault(689).colors.ICON_STRONG;
+    ICON_STRONG = importDefault(712).colors.ICON_STRONG;
   }
-  obj.color = ICON_STRONG;
-  obj.children = jsx(require(5153) /* XSmallIcon */.XSmallIcon, {});
-  return jsx(require(4695) /* PressableBase */.PressableOpacity, {});
+  obj[5] = jsx(require(5175) /* XSmallIcon */.XSmallIcon, { color: ICON_STRONG });
+  return jsx(require(4717) /* PressableBase */.PressableOpacity, { accessibilityRole: "button", accessibilityLabel: null, hitSlop: null, androidRippleConfig: null, onPress: null, children: null });
 };

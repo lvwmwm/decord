@@ -1,67 +1,67 @@
-// Module ID: 15186
-// Function ID: 115412
+// Module ID: 15219
+// Function ID: 15220
 // Name: useIsGuildEligibleForRoleSubscriptionsUpsell
-// Dependencies: [1391, 1838, 1850, 653, 566, 12601, 2]
+// Dependencies: [1415, 1862, 1874, 676, 589, 12623, 2]
 // Exports: default
 
-// Module 15186 (useIsGuildEligibleForRoleSubscriptionsUpsell)
-import { isGuildOwner } from "isGuildOwner";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 15219 (useIsGuildEligibleForRoleSubscriptionsUpsell)
+import { isGuildOwner } from "GuildNSFWContentLevel";
+import createGuildRecordFromRust from "createGuildRecordFromRust";
+import mergeGuildAvatar from "mergeGuildAvatar";
 import { GuildFeatures } from "ME";
 
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/guild_role_subscriptions/useIsGuildEligibleForRoleSubscriptionsUpsell.tsx");
+const result = require("mergeGuildAvatar").fileFinishedImporting("modules/guild_role_subscriptions/useIsGuildEligibleForRoleSubscriptionsUpsell.tsx");
 
 export default function useIsGuildEligibleForRoleSubscriptionsUpsell(arg0) {
   const _require = arg0;
-  const items = [_createForOfIteratorHelperLoose];
-  const stateFromStores = _require(566).useStateFromStores(items, () => outer1_3.getGuild(closure_0));
-  _require(566);
-  [][0] = _isNativeReflectConstruct;
-  let tmp4 = null != stateFromStores;
-  if (tmp4) {
-    tmp4 = isGuildOwner(stateFromStores, tmp3);
+  const items = [createGuildRecordFromRust];
+  const stateFromStores = _require(589).useStateFromStores(items, () => outer1_3.getGuild(closure_0));
+  _require(589);
+  [][0] = mergeGuildAvatar;
+  let tmp6 = null != stateFromStores;
+  if (tmp6) {
+    tmp6 = isGuildOwner(stateFromStores, tmp5);
   }
-  const obj = _require(566);
-  const isUserInCreatorMonetizationEligibleCountry = _require(12601).useIsUserInCreatorMonetizationEligibleCountry();
-  if (tmp4) {
-    let hasItem;
-    if (null != stateFromStores) {
+  const obj = _require(589);
+  const tmp = _require;
+  const isUserInCreatorMonetizationEligibleCountry = _require(12623).useIsUserInCreatorMonetizationEligibleCountry();
+  if (tmp6) {
+    let flag;
+    if (stateFromStores != null) {
       const features = stateFromStores.features;
-      hasItem = features.has(GuildFeatures.COMMUNITY);
+      flag = features.has(GuildFeatures.COMMUNITY);
     }
-    tmp4 = null != hasItem;
-    const tmp7 = hasItem;
+    if (flag == null) {
+      flag = false;
+    }
+    tmp6 = flag;
   }
-  if (tmp4) {
-    tmp4 = tmp7;
+  if (tmp6) {
+    tmp6 = isUserInCreatorMonetizationEligibleCountry;
   }
-  if (tmp4) {
-    tmp4 = isUserInCreatorMonetizationEligibleCountry;
-  }
-  if (tmp4) {
-    let hasItem1 = null != stateFromStores;
-    if (hasItem1) {
+  if (tmp6) {
+    let hasItem;
+    if (stateFromStores != null) {
       const features2 = stateFromStores.features;
-      hasItem1 = features2.has(GuildFeatures.CREATOR_MONETIZABLE);
+      hasItem = features2.has(GuildFeatures.CREATOR_MONETIZABLE);
     }
-    if (!hasItem1) {
-      let hasItem2 = null != stateFromStores;
-      if (hasItem2) {
+    if (!hasItem) {
+      let hasItem1;
+      if (stateFromStores != null) {
         const features3 = stateFromStores.features;
-        hasItem2 = features3.has(GuildFeatures.CREATOR_MONETIZABLE_PROVISIONAL);
+        hasItem1 = features3.has(GuildFeatures.CREATOR_MONETIZABLE_PROVISIONAL);
       }
-      hasItem1 = hasItem2;
+      hasItem = hasItem1;
     }
-    if (!hasItem1) {
-      let hasItem3 = null != stateFromStores;
-      if (hasItem3) {
+    if (!hasItem) {
+      let hasItem2;
+      if (stateFromStores != null) {
         const features4 = stateFromStores.features;
-        hasItem3 = features4.has(GuildFeatures.CREATOR_MONETIZABLE_DISABLED);
+        hasItem2 = features4.has(GuildFeatures.CREATOR_MONETIZABLE_DISABLED);
       }
-      hasItem1 = hasItem3;
+      hasItem = hasItem2;
     }
-    tmp4 = !hasItem1;
+    tmp6 = !hasItem;
   }
-  return tmp4;
+  return tmp6;
 };

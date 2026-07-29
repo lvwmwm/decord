@@ -1,69 +1,70 @@
-// Module ID: 9855
-// Function ID: 76236
+// Module ID: 9877
+// Function ID: 9878
 // Name: PublishModal
-// Dependencies: [57, 31, 27, 33, 4165, 5008, 9856, 1273, 1212, 2]
+// Dependencies: [32, 19, 17, 21, 4189, 5030, 9878, 1297, 1236, 2]
 // Exports: default
 
-// Module 9855 (PublishModal)
+// Module 9877 (PublishModal)
 import _slicedToArray from "_slicedToArray";
-import "result";
+import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_4;
-let closure_5;
+let c4;
+let c5;
 const require = arg1;
-({ View: closure_4, ActivityIndicator: closure_5 } = get_ActivityIndicator);
-_createForOfIteratorHelperLoose = { alertContainer: { paddingTop: 16 }, alertLoading: { paddingTop: 62, paddingBottom: 46 } };
-_createForOfIteratorHelperLoose = { marginBottom: 16, fontSize: 16, lineHeight: 24, color: require("result").DARK_PRIMARY_300_LIGHT_PRIMARY_400 };
-_createForOfIteratorHelperLoose.alertBodyText = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+({ View: c4, ActivityIndicator: c5 } = get_ActivityIndicator);
+createCacheKey = { alertContainer: { paddingTop: 16 }, alertLoading: { paddingTop: 62, paddingBottom: 46 }, alertBodyText: null };
+createCacheKey = { marginBottom: 16, fontSize: 16, lineHeight: 24, color: require("result").DARK_PRIMARY_300_LIGHT_PRIMARY_400 };
+createCacheKey[2] = createCacheKey;
+createCacheKey = createCacheKey.createStyles(createCacheKey);
 const result = require("get ActivityIndicator").fileFinishedImporting("modules/action_sheet/native/components/PublishModal.tsx");
 
 export default function PublishModal(channelId) {
-  const tmp = _createForOfIteratorHelperLoose();
-  const tmp2 = callback(importDefault(9856)(channelId.channelId), 2);
-  const first = tmp2[0];
-  if (tmp2[1]) {
-    let obj = { style: tmp.alertLoading };
-    obj = { animating: true };
-    obj.children = <closure_5 animating />;
-    return <closure_4 animating />;
+  const tmp = createCacheKey();
+  const tmp3 = callback(importDefault(9878)(channelId.channelId), 2);
+  const first = tmp3[0];
+  if (tmp3[1]) {
+    let obj = { style: null, children: null };
+    obj[0] = tmp.alertLoading;
+    obj[1] = <closure_5 animating />;
+    return <closure_4 style={null}>{null}</closure_4>;
   } else {
     let guildsFollowing;
-    if (null != first) {
+    if (first != null) {
       guildsFollowing = first.guildsFollowing;
     }
-    let tmp6 = null != guildsFollowing;
-    if (tmp6) {
+    let tmp7 = null != guildsFollowing;
+    if (tmp7) {
       let guildsFollowing1;
-      if (null != first) {
+      if (first != null) {
         guildsFollowing1 = first.guildsFollowing;
       }
-      tmp6 = guildsFollowing1 > 0;
+      tmp7 = guildsFollowing1 > 0;
     }
-    obj = { style: tmp.alertContainer };
-    const obj1 = { style: tmp.alertBodyText };
-    const intl = require(1212) /* getSystemLocale */.intl;
-    if (tmp6) {
-      const obj2 = {};
-      let guildsFollowing2;
-      if (null != first) {
-        guildsFollowing2 = first.guildsFollowing;
+    obj = { style: null, children: null };
+    obj[0] = tmp.alertContainer;
+    obj = { style: null, children: null };
+    obj[0] = tmp.alertBodyText;
+    const intl = require(1236) /* getSystemLocale */.intl;
+    if (tmp7) {
+      let num2;
+      if (first != null) {
+        num2 = first.guildsFollowing;
       }
-      let num3 = 0;
-      if (null != guildsFollowing2) {
-        num3 = guildsFollowing2;
+      if (num2 == null) {
+        num2 = 0;
       }
-      obj2.numGuildsFollowing = num3;
-      obj1.children = intl.format(tmp12(1212).t.GCGrNP, obj2);
-      let tmp14 = obj1;
+      const obj1 = { numGuildsFollowing: null };
+      obj1[0] = num2;
+      obj[1] = intl.format(tmp11(1236).t.GCGrNP, obj1);
+      let tmp12 = obj;
     } else {
-      obj1.children = intl.string(tmp12(1212).t["8FpqOs"]);
-      tmp14 = obj1;
+      obj[1] = intl.string(tmp11(1236).t["8FpqOs"]);
+      tmp12 = obj;
     }
-    obj.children = jsx(require(1273) /* Button */.LegacyText, tmp14);
-    return <closure_4 style={tmp.alertContainer} />;
+    obj[1] = jsx(require(1297) /* Button */.LegacyText, tmp12);
+    return <closure_4 style={null}>{null}</closure_4>;
   }
 };

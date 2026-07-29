@@ -1,130 +1,49 @@
-// Module ID: 6548
-// Function ID: 58290
-// Name: _createForOfIteratorHelperLoose
-// Dependencies: [57, 31, 1852, 6230, 6221, 6481, 477, 6239, 6241, 6549, 6550, 2]
+// Module ID: 6569
+// Function ID: 6570
+// Name: PremiumTypes
+// Dependencies: [32, 19, 1876, 6250, 6241, 6502, 500, 6259, 6261, 6570, 6571, 2]
 // Exports: useBuyNitroPlanSelection
 
-// Module 6548 (_createForOfIteratorHelperLoose)
+// Module 6569 (PremiumTypes)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
+import noop from "noop";
 import GuildFeatures from "GuildFeatures";
 
 const require = arg1;
-function _createForOfIteratorHelperLoose(iterable) {
-  let closure_0 = iterable;
-  iterable = "undefined" !== typeof Symbol;
-  if (iterable) {
-    const _Symbol = Symbol;
-    iterable = iterable[Symbol.iterator];
-  }
-  if (!iterable) {
-    iterable = iterable[Symbol.iterator];
-  }
-  if (iterable) {
-    const iter = iterable.call(iterable);
-    const next = iter.next;
-    return next.bind(iter);
-  } else {
-    const _Array = Array;
-    let tmp = iterable;
-    if (!Array.isArray(iterable)) {
-      let tmp2;
-      if (iterable) {
-        if ("string" === typeof iterable) {
-          tmp2 = _arrayLikeToArray(iterable, undefined);
-        } else {
-          const toString = {}.toString;
-          const substr = toString.call(iterable).slice(8, -1);
-          let name = substr;
-          if (tmp3) {
-            name = iterable.constructor.name;
-          }
-          if ("Map" !== name) {
-            if ("Set" !== name) {
-              if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(iterable, undefined);
-              } else {
-                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
-              }
-            }
-            tmp2 = arr;
-          }
-          const _Array2 = Array;
-          arr = Array.from(iterable);
-          const callResult = toString.call(iterable);
-          tmp3 = "Object" === substr && iterable.constructor;
-        }
-      }
-      tmp = tmp2;
-      if (!tmp2) {
-        const _TypeError = TypeError;
-        const typeError = new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
-        throw typeError;
-      }
-    }
-    if (tmp) {
-      closure_0 = tmp;
-    }
-    let c1 = 0;
-    return () => {
-      if (closure_1 >= length.length) {
-        let obj = { done: true };
-      } else {
-        obj = { done: false };
-        closure_1 = tmp3 + 1;
-        obj.value = length[+closure_1];
-      }
-      return obj;
-    };
-  }
-}
-function _arrayLikeToArray(arg0, arg1) {
-  let length;
-  if (tmp) {
-    length = arg0.length;
-  }
-  const ArrayResult = Array(length);
-  for (let num = 0; num < length; num = num + 1) {
-    ArrayResult[num] = arg0[num];
-  }
-  return ArrayResult;
-}
-let PremiumTypes = GuildFeatures.PremiumTypes;
-let SubscriptionIntervalTypes = GuildFeatures.SubscriptionIntervalTypes;
+const PremiumTypes = GuildFeatures.PremiumTypes;
+const SubscriptionIntervalTypes = GuildFeatures.SubscriptionIntervalTypes;
 let items = [, ];
 ({ TIER_2: arr[0], TIER_0: arr[1] } = PremiumTypes);
 let result = require("GuildFeatures").fileFinishedImporting("modules/premium_marketing/native/hooks/useBuyNitroPlanSelection.tsx");
 
 export const NITRO_PLAN_TIERS = items;
 export const useBuyNitroPlanSelection = function useBuyNitroPlanSelection(tier) {
+  let TIER_2;
   let discountedPriceString;
   let discountedProduct;
-  let obj = _require(memo[4]);
+  let memo2;
+  let obj = memo2(memo[4]);
   const premiumTrialOfferPremiumType = obj.usePremiumTrialOfferPremiumType();
-  const NitroACOMSubscriptionExperiment = _require(memo[5]).NitroACOMSubscriptionExperiment;
-  let obj1 = _require(memo[6]);
+  const NitroACOMSubscriptionExperiment = memo2(memo[5]).NitroACOMSubscriptionExperiment;
+  let obj1 = memo2(memo[6]);
   tier = undefined;
-  if (null != tier) {
+  if (tier != null) {
     tier = tier.tier;
   }
-  let tmp7 = null;
-  if (null != tier) {
-    tmp7 = tier;
+  if (tier == null) {
+    tier = null;
   }
-  const tmp8 = found(found1.useState(tmp7), 2);
-  const first = tmp8[0];
-  _require = tmp8[1];
-  let TIER_2 = tmp2;
-  if (null != first) {
-    TIER_2 = first;
+  [TIER_2, memo2] = found(found1.useState(tier), 2);
+  if (TIER_2 == null) {
+    TIER_2 = tmp4;
   }
-  if (null == TIER_2) {
-    TIER_2 = PremiumTypes.TIER_2;
+  if (TIER_2 == null) {
+    TIER_2 = priceString.TIER_2;
   }
   const items = [TIER_2];
-  memo = found1.useMemo(() => (function getBasePlansForTier(TIER_2) {
-    const callback = TIER_2;
-    const premiumBundlesWithPredicate = callback(memo[3]).getPremiumBundlesWithPredicate((additionalPlans) => {
+  memo = obj3.useMemo(() => {
+    let closure_0 = TIER_2;
+    const premiumBundlesWithPredicate = memo2(memo[3]).getPremiumBundlesWithPredicate((additionalPlans) => {
       let tmp = 0 === additionalPlans.additionalPlans.length;
       if (tmp) {
         tmp = true !== additionalPlans.isDeprecated;
@@ -138,227 +57,209 @@ export const useBuyNitroPlanSelection = function useBuyNitroPlanSelection(tier) 
       return tmp;
     });
     return premiumBundlesWithPredicate.sort((interval, interval2) => interval2.interval - interval.interval);
-  })(TIER_2), items);
-  const premiumDiscountOffer = _require(memo[7]).usePremiumDiscountOffer();
-  const obj3 = _require(memo[7]);
-  const isEligibleForBogoOffer = _require(memo[8]).useIsEligibleForBogoOffer();
-  const obj4 = _require(memo[8]);
-  const discountedPremiumProductInfo = _require(memo[9]).useDiscountedPremiumProductInfo(premiumDiscountOffer, memo);
+  }, items);
+  let tmpResult = tmp(tmp2[7]);
+  const premiumDiscountOffer = tmpResult.usePremiumDiscountOffer();
+  tmpResult = tmp(tmp2[8]);
+  const isEligibleForBogoOffer = tmpResult.useIsEligibleForBogoOffer();
+  const tmp9 = found(found1.useState(tier), 2);
+  const discountedPremiumProductInfo = memo2(memo[9]).useDiscountedPremiumProductInfo(premiumDiscountOffer, memo);
   ({ discountedProduct, discountedPriceString } = discountedPremiumProductInfo);
+  let num = NaN;
   if (null != premiumDiscountOffer) {
     const _parseFloat = parseFloat;
-    let _NaN = parseFloat(premiumDiscountOffer.discount.amount);
-  } else {
-    _NaN = NaN;
+    num = parseFloat(premiumDiscountOffer.discount.amount);
   }
-  obj = {};
   let identifier;
-  if (null != discountedProduct) {
+  if (discountedProduct != null) {
     identifier = discountedProduct.identifier;
   }
-  obj.id = identifier;
-  obj.priceString = discountedPriceString;
-  let userUsageLimit;
-  if (null != premiumDiscountOffer) {
+  obj = { id: identifier, priceString: discountedPriceString, numMonths: null, percentOff: null };
+  let num2;
+  if (premiumDiscountOffer != null) {
     const discount = premiumDiscountOffer.discount;
-    if (null != discount) {
-      userUsageLimit = discount.userUsageLimit;
+    if (discount != null) {
+      num2 = discount.userUsageLimit;
     }
   }
-  let num = 1;
-  if (null != userUsageLimit) {
-    num = userUsageLimit;
+  if (num2 == null) {
+    num2 = 1;
   }
-  obj.numMonths = num;
-  let tmp18 = null;
-  if (!Number.isNaN(_NaN)) {
-    tmp18 = _NaN;
+  obj[2] = num2;
+  let tmp16 = null;
+  if (!Number.isNaN(num)) {
+    tmp16 = num;
   }
-  obj.percentOff = tmp18;
-  found = memo.find((interval) => interval.interval === tmp30.MONTH);
-  found1 = memo.find((interval) => interval.interval === tmp30.YEAR);
+  obj[3] = tmp16;
+  found = memo.find((interval) => interval.interval === priceString1.MONTH);
+  found1 = memo.find((interval) => interval.interval === priceString1.YEAR);
   let basePlanId;
-  const obj5 = _require(memo[9]);
-  if (null != found) {
+  let tmp19 = TIER_2;
+  const tmpResult1 = memo2(memo[9]);
+  if (found != null) {
     basePlanId = found.basePlanId;
   }
-  const tmp21Result = TIER_2(memo[10])(basePlanId);
-  let priceString;
-  if (null != tmp21Result) {
-    priceString = tmp21Result.priceString;
+  const tmp20Result = TIER_2(memo[10])(basePlanId);
+  priceString = undefined;
+  if (tmp20Result != null) {
+    priceString = tmp20Result.priceString;
   }
-  let tmp25 = null;
-  if (null != priceString) {
-    tmp25 = priceString;
+  if (priceString == null) {
+    priceString = null;
   }
-  PremiumTypes = tmp25;
   let basePlanId1;
-  const tmp21 = TIER_2(memo[10]);
-  if (null != found1) {
+  let tmp20 = TIER_2(memo[10]);
+  if (found1 != null) {
     basePlanId1 = found1.basePlanId;
   }
-  const tmp26Result = TIER_2(memo[10])(basePlanId1);
+  const tmp19ResultResult = tmp19(memo[10])(basePlanId1);
   let priceString1;
-  if (null != tmp26Result) {
-    priceString1 = tmp26Result.priceString;
+  if (tmp19ResultResult != null) {
+    priceString1 = tmp19ResultResult.priceString;
   }
-  let tmp30 = null;
-  if (null != priceString1) {
-    tmp30 = priceString1;
+  if (priceString1 == null) {
+    priceString1 = null;
   }
-  const SubscriptionIntervalTypes = tmp30;
-  const tmp31 = found(found1.useState(() => new Map()), 2);
-  const first1 = tmp31[0];
-  let closure_8 = tmp31[1];
-  const items1 = [found, found1, tmp25, tmp30, first1];
-  let callback = found1.useCallback((arg0, arg1) => {
+  let tmp8Result = tmp8(obj3.useState(() => new Map()), 2);
+  const first = tmp8Result[0];
+  let closure_8 = tmp8Result[1];
+  const items1 = [found, found1, priceString, priceString1, first];
+  const callback = obj3.useCallback((arg0, arg1) => {
     let closure_0 = arg0;
     let closure_1 = arg1;
-    callback2((get) => {
+    callback((get) => {
       if (get.get(closure_0) === closure_1) {
         return get;
       } else {
         const _Map = Map;
         const map = new Map(get);
-        const result = map.set(closure_0, closure_1);
+        const result = map.set(tmp, tmp2);
         return map;
       }
+      tmp = closure_0;
     });
   }, []);
-  const memo1 = found1.useMemo(() => {
-    let iter2;
-    let tmp14;
-    let tmp15;
+  const memo1 = obj3.useMemo(() => {
+    let tmp16;
+    let tmp18;
     const map = new Map();
-    let tmp = null != found;
-    if (tmp) {
-      tmp = null != closure_5;
+    let tmp2 = null != found;
+    if (tmp2) {
+      tmp2 = null != priceString;
     }
-    if (tmp) {
-      const result = map.set(found.productId, closure_5);
+    if (tmp2) {
+      const result = map.set(found.productId, priceString);
     }
-    let tmp6 = null != found1;
-    if (tmp6) {
-      tmp6 = null != closure_6;
+    let tmp7 = null != found1;
+    if (tmp7) {
+      tmp7 = null != priceString1;
     }
-    if (tmp6) {
-      const result1 = map.set(found1.productId, closure_6);
+    if (tmp7) {
+      const result1 = map.set(found1.productId, priceString1);
     }
-    const tmp11 = callback2(first1);
-    let iter = tmp11();
-    if (!iter.done) {
-      do {
-        let tmp12 = found;
-        let tmp13 = found(iter.value, 2);
-        [tmp14, tmp15] = tmp13;
-        if (map.has(tmp14)) {
-          let result2 = map.set(tmp14, tmp15);
-        }
-        iter2 = tmp11();
-        iter = iter2;
-      } while (!iter2.done);
+    while (tmp12 !== undefined) {
+      let tmp14 = found;
+      let tmp15 = found(tmp13, 2);
+      [tmp16, tmp18] = tmp15;
+      let tmp17 = tmp16;
+      if (map.has(tmp16)) {
+        let tmp19 = tmp16;
+        let tmp20 = tmp18;
+        let result2 = map.set(tmp17, tmp18);
+      }
+      continue;
     }
     return map;
   }, items1);
   const items2 = [memo, memo1];
-  const memo2 = found1.useMemo(() => {
-    let iter2;
+  memo2 = obj3.useMemo(() => {
     const set = new Set();
     if (memo1.size > 0) {
-      const tmp3 = callback2(memo);
-      let iter = tmp3();
-      if (!iter.done) {
-        do {
-          let value = iter.value;
-          let tmp4 = memo1;
-          if (!memo1.has(value.productId)) {
-            let addResult = set.add(value.productId);
-          }
-          iter2 = tmp3();
-          iter = iter2;
-        } while (!iter2.done);
+      for (const item10015 of memo) {
+        let tmp4 = memo1;
+        let tmp3 = item10015;
+        if (!memo1.has(item10015.productId)) {
+          let tmp5 = item10015;
+          let addResult = set.add(tmp3.productId);
+        }
+        continue;
       }
     }
     return set;
   }, items2);
   let productId;
-  if (null != tier) {
+  if (tier != null) {
     productId = tier.productId;
   }
-  let tmp38 = null;
-  if (null != productId) {
-    tmp38 = productId;
+  if (productId == null) {
+    productId = null;
   }
-  const tmp39 = found(found1.useState(tmp38), 2);
-  const first2 = tmp39[0];
-  let closure_11 = tmp39[1];
+  tmp8Result = tmp8(obj3.useState(productId), 2);
+  let first1 = tmp8Result[0];
+  let closure_11 = tmp8Result[1];
   const items3 = [TIER_2];
   [][0] = TIER_2;
-  const callback1 = found1.useCallback((arg0) => {
+  const callback1 = obj3.useCallback((arg0) => {
     if (arg0 !== TIER_2) {
-      callback(arg0);
-      callback3(null);
+      memo2(arg0);
+      callback2(null);
     }
   }, items3);
-  if (null != first2) {
-    if (memo.some((productId) => productId.productId === first2)) {
-      let tmp43 = first2;
-    }
-    let closure_12 = tmp43;
-    const found2 = memo.find((productId) => productId.productId === closure_12);
-    let tmp48 = null != tmp2;
-    if (tmp48) {
+  if (null != first1) {
+    const found2 = memo.find((productId) => productId.productId === first1);
+    let tmp42 = null != tmp4;
+    if (tmp42) {
       let premiumTier;
-      if (null != found2) {
+      if (found2 != null) {
         premiumTier = found2.premiumTier;
       }
-      tmp48 = premiumTier === tmp2;
+      tmp42 = premiumTier === tmp4;
     }
-    obj = {};
-    obj1 = { tier: TIER_2, setTier: callback1, productId: tmp43, setProductId: tmp42, item: found2 };
-    let tmp50 = null;
+    obj = { tier: null, setTier: null, productId: null, setProductId: null, item: null, priceString: null, isDiscounted: null, isTrial: null };
+    obj[0] = TIER_2;
+    obj[1] = callback1;
+    obj[2] = first1;
+    obj[3] = tmp37;
+    obj[4] = found2;
+    let tmp44 = null;
     if (null != found2) {
-      if (!tmp47) {
+      if (!tmp41) {
         let value = memo1.get(found2.productId);
-        let tmp52 = null;
-        if (null != value) {
-          tmp52 = value;
+        if (value == null) {
+          value = null;
         }
-        discountedPriceString = tmp52;
+        discountedPriceString = value;
       }
-      tmp50 = discountedPriceString;
+      tmp44 = discountedPriceString;
     }
-    obj1.priceString = tmp50;
-    obj1.isDiscounted = null != found2 && found2.productId === obj.id && null != discountedPriceString;
-    obj1.isTrial = tmp48;
-    obj.selection = obj1;
-    obj.items = memo;
-    obj.priceStringByProductId = memo1;
-    obj.unavailableProductIds = memo2;
-    obj.bogoEligible = isEligibleForBogoOffer;
-    obj.hasDiscountOffer = null != premiumDiscountOffer;
-    obj.trialTier = tmp2;
-    obj.discounted = obj;
-    obj.applyOrderPriceOverride = callback;
-    return obj;
+    obj1 = { selection: null, items: null, priceStringByProductId: null, unavailableProductIds: null, bogoEligible: null, hasDiscountOffer: null, trialTier: null, discounted: null, applyOrderPriceOverride: null };
+    obj[5] = tmp44;
+    obj[6] = null != found2 && found2.productId === obj.id && null != discountedPriceString;
+    obj[7] = tmp42;
+    obj1[0] = obj;
+    obj1[1] = memo;
+    obj1[2] = memo1;
+    obj1[3] = memo2;
+    obj1[4] = isEligibleForBogoOffer;
+    obj1[5] = null != premiumDiscountOffer;
+    obj1[6] = tmp4;
+    obj1[7] = obj;
+    obj1[8] = callback;
+    return obj1;
   }
-  const tmp44 = (function getDefaultItem(memo, memo2, arg2) {
-    let arr = memo;
-    let closure_0 = memo2;
-    let closure_1 = arg2;
-    const found = memo.filter((productId) => !memo2.has(productId.productId));
-    if (found.length > 0) {
-      arr = found;
-    }
-    let found1 = arr.find((interval) => interval.interval === closure_1);
-    if (null == found1) {
-      found1 = arr[0];
-    }
-    return found1;
-  })(memo, memo2, isEligibleForBogoOffer ? SubscriptionIntervalTypes.MONTH : SubscriptionIntervalTypes.YEAR);
+  TIER_2 = isEligibleForBogoOffer ? priceString1.MONTH : priceString1.YEAR;
+  const found3 = memo.filter((productId) => !memo2.has(productId.productId));
+  let arr7 = memo;
+  if (found3.length > 0) {
+    arr7 = found3;
+  }
+  let found4 = arr7.find((interval) => interval.interval === TIER_2);
+  if (found4 == null) {
+    found4 = arr7[0];
+  }
   let productId1;
-  if (null != tmp44) {
-    productId1 = tmp44.productId;
+  if (found4 != null) {
+    productId1 = found4.productId;
   }
-  tmp43 = productId1;
+  first1 = productId1;
 };

@@ -1,21 +1,21 @@
-// Module ID: 15194
-// Function ID: 115439
+// Module ID: 15227
+// Function ID: 15228
 // Name: useDefaultAuthorizationNotifiers
-// Dependencies: [31, 6307, 653, 566, 4131, 8101, 3866, 1212, 2813, 2]
+// Dependencies: [19, 6328, 676, 589, 4155, 8125, 3890, 1236, 2837, 2]
 // Exports: useDefaultAuthorizationNotifiers
 
-// Module 15194 (useDefaultAuthorizationNotifiers)
-import result from "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 15227 (useDefaultAuthorizationNotifiers)
+import noop from "noop";
+import getState from "getState";
 import { AppStates } from "ME";
 
 const require = arg1;
 const result = require("ME").fileFinishedImporting("modules/application_account_linking/native/useDefaultAuthorizationNotifiers.tsx");
 
 export const useDefaultAuthorizationNotifiers = function useDefaultAuthorizationNotifiers(startAuthorization, hasAlreadyLinked, value) {
-  let obj = value;
   const _require = startAuthorization;
   let closure_1 = hasAlreadyLinked;
+  let obj = value;
   if (value === undefined) {
     obj = {};
   }
@@ -24,39 +24,39 @@ export const useDefaultAuthorizationNotifiers = function useDefaultAuthorization
     flag = true;
   }
   let React;
-  let c4;
+  let stateFromStores;
   let previousWhen;
   React = React.useRef(false);
-  const items = [c4];
-  const stateFromStores = _require(flag[3]).useStateFromStores(items, () => _undefined.getState() === previousWhen.ACTIVE);
-  const obj2 = _require(flag[3]);
+  const items = [stateFromStores];
+  stateFromStores = _require(flag[3]).useStateFromStores(items, () => stateFromStores.getState() === previousWhen.ACTIVE);
+  const obj2 = React;
+  const obj3 = _require(flag[3]);
+  const tmp = _require;
+  const tmp2 = flag;
   const items1 = [startAuthorization];
   const isInAppBrowserOpen = _require(flag[4]).useIsInAppBrowserOpen();
-  let tmp4 = stateFromStores;
   const callback = React.useCallback((arg0) => {
-    result.current = true;
+    noop.current = true;
     return startAuthorization(arg0);
   }, items1);
   if (stateFromStores) {
-    tmp4 = !isInAppBrowserOpen;
+    stateFromStores = !isInAppBrowserOpen;
   }
-  c4 = tmp4;
-  const obj3 = _require(flag[4]);
-  obj = { value: hasAlreadyLinked, shouldUpdate: tmp4 };
-  previousWhen = _require(flag[5]).usePreviousWhen(obj);
-  const items2 = [hasAlreadyLinked, previousWhen, flag, tmp4];
-  const effect = React.useEffect(() => {
+  const obj4 = _require(flag[4]);
+  obj = { value: hasAlreadyLinked, shouldUpdate: stateFromStores };
+  previousWhen = tmp(tmp2[5]).usePreviousWhen(obj);
+  const items2 = [hasAlreadyLinked, previousWhen, flag, stateFromStores];
+  const effect = obj2.useEffect(() => {
     if (ref.current) {
       if (false === previousWhen) {
         if (true === hasAlreadyLinked) {
-          if (c4) {
-            ref.current = false;
+          if (stateFromStores) {
+            tmp.current = false;
             if (flag) {
               let obj = hasAlreadyLinked(flag[6]);
-              obj = {};
+              obj = { content: null, key: "account-linked-toast" };
               const intl = startAuthorization(flag[7]).intl;
-              obj.content = intl.string(hasAlreadyLinked(flag[8]).uG6teD);
-              obj.key = "account-linked-toast";
+              obj[0] = intl.string(hasAlreadyLinked(flag[8]).uG6teD);
               obj.open(obj);
             }
           }

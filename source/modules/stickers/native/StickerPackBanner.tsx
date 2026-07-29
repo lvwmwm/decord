@@ -1,18 +1,18 @@
-// Module ID: 9610
-// Function ID: 74811
+// Module ID: 9632
+// Function ID: 9633
 // Name: StickerPackBanner
-// Dependencies: [31, 27, 33, 4501, 2]
+// Dependencies: [19, 17, 21, 4524, 2]
 // Exports: default
 
-// Module 9610 (StickerPackBanner)
-import "result";
+// Module 9632 (StickerPackBanner)
+import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { jsx } from "jsxProd";
 
-let closure_2;
-let closure_3;
+let c3;
+let obj1;
 const require = arg1;
-({ Image: closure_2, View: closure_3 } = get_ActivityIndicator);
+({ Image: obj1, View: c3 } = get_ActivityIndicator);
 const result = require("jsxProd").fileFinishedImporting("modules/stickers/native/StickerPackBanner.tsx");
 
 export default function StickerPackBanner(arg0) {
@@ -20,18 +20,19 @@ export default function StickerPackBanner(arg0) {
   let stickerPack;
   let style;
   ({ containerStyle, style, stickerPack } = arg0);
-  let obj = require(4501) /* getStickerPackPreviewSticker */;
+  let obj = require(4524) /* getStickerExtensionFromFormatType */;
   const stickerPackBannerAssetUrl = obj.getStickerPackBannerAssetUrl(stickerPack, 1024);
   let tmp2 = null;
   if (null != stickerPackBannerAssetUrl) {
-    obj = { style: containerStyle };
-    obj = {};
-    const obj1 = { uri: stickerPackBannerAssetUrl };
-    obj.source = obj1;
-    obj.style = style;
-    obj.resizeMode = "contain";
-    obj.children = <closure_2 />;
-    tmp2 = <closure_3 />;
+    obj = { style: null, children: null };
+    obj[0] = containerStyle;
+    obj = { source: null, style: null, resizeMode: "contain" };
+    const obj1 = { uri: null };
+    obj1[0] = stickerPackBannerAssetUrl;
+    obj[0] = obj1;
+    obj[1] = style;
+    obj[1] = <closure_2 source={null} style={null} resizeMode="contain" />;
+    tmp2 = <closure_3 source={null} style={null} resizeMode="contain" />;
   }
   return tmp2;
 };

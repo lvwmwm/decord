@@ -1,10 +1,10 @@
-// Module ID: 13102
-// Function ID: 101161
+// Module ID: 13125
+// Function ID: 13126
 // Name: getNewestBadgeableVersion
 // Dependencies: [2]
 // Exports: getNewestBadgeableVersion
 
-// Module 13102 (getNewestBadgeableVersion)
+// Module 13125 (getNewestBadgeableVersion)
 const result = require("set").fileFinishedImporting("modules/app_launcher/utils/AppLauncherBadgeUtils.tsx");
 
 export const getNewestBadgeableVersion = function getNewestBadgeableVersion(arg0) {
@@ -14,7 +14,7 @@ export const getNewestBadgeableVersion = function getNewestBadgeableVersion(arg0
   const timestamp = Date.now();
   const dateRangesForSurfaces = storeState.dateRangesForSurfaces;
   let tmp2;
-  if (null != dateRangesForSurfaces) {
+  if (dateRangesForSurfaces != null) {
     tmp2 = dateRangesForSurfaces[surface];
   }
   let num = 0;

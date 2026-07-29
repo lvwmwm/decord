@@ -1,19 +1,19 @@
-// Module ID: 6190
-// Function ID: 55259
+// Module ID: 6210
+// Function ID: 6211
 // Name: usePremiumFeatureUpsellGetNitro
-// Dependencies: [57, 31, 3817, 6191, 1852, 653, 5497, 6196, 4486, 6483, 3865, 1212, 4024, 2]
+// Dependencies: [32, 19, 3841, 6211, 1876, 676, 5515, 6216, 4509, 6504, 3889, 1236, 4048, 2]
 // Exports: default
 
-// Module 6190 (usePremiumFeatureUpsellGetNitro)
+// Module 6210 (usePremiumFeatureUpsellGetNitro)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import noop from "noop";
+import reset from "reset";
+import emitChanges from "emitChanges";
 import { PremiumTypes } from "GuildFeatures";
 import { AnalyticsObjectTypes } from "ME";
 
 const require = arg1;
-let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/premium/roadblocks/native/hooks/usePremiumFeatureUpsellGetNitro.tsx");
+let result = require("reset").fileFinishedImporting("modules/premium/roadblocks/native/hooks/usePremiumFeatureUpsellGetNitro.tsx");
 
 export default function usePremiumFeatureUpsellGetNitro(arg0, arg1, arg2, arg3) {
   let closure_0 = arg0;
@@ -22,8 +22,8 @@ export default function usePremiumFeatureUpsellGetNitro(arg0, arg1, arg2, arg3) 
   const dependencyMap = arg3;
   const loading = callback(analyticsLocations.useState(false), 2);
   callback = loading[1];
-  analyticsLocations = importDefault(5497)().analyticsLocations;
-  let _isNativeReflectConstruct = analyticsLocations.useRef(0);
+  analyticsLocations = importDefault(5515)().analyticsLocations;
+  let reset = analyticsLocations.useRef(0);
   let items = [arg2, analyticsLocations, arg1, arg0, arg3];
   const onPress = analyticsLocations.useCallback(() => {
     const premiumTypeSubscription = ref.getPremiumTypeSubscription(false);
@@ -33,20 +33,19 @@ export default function usePremiumFeatureUpsellGetNitro(arg0, arg1, arg2, arg3) 
       const _Object = Object;
       tmp3 = 0 === Object.keys(premiumTypeSubscription).length;
     }
-    let hasFetchedOfferResult = onPress.hasFetchedOffer();
-    if (hasFetchedOfferResult) {
-      hasFetchedOfferResult = !onPress.hasAnyUnexpiredOffer();
-    }
-    const isFetchingOfferResult = onPress.isFetchingOffer();
+    let obj = onPress;
+    const isFetchingOfferResult = obj.isFetchingOffer();
     if (result) {
       if (tmp3) {
-        if (hasFetchedOfferResult) {
-          let obj = {};
-          obj = { page: closure_2, objectType: outer1_9.BUY };
-          obj.analyticsLocation = obj;
-          obj.analyticsLocations = analyticsLocations;
-          obj.premiumType = callback ? outer1_8.TIER_0 : outer1_8.TIER_2;
-          callback2(6196)(obj, dependencyMap);
+        if (tmp5) {
+          obj = { analyticsLocation: null, analyticsLocations: null, premiumType: null };
+          obj = { page: null, objectType: null };
+          obj[0] = closure_2;
+          obj[1] = outer1_9.BUY;
+          obj[0] = obj;
+          obj[1] = analyticsLocations;
+          obj[2] = callback ? outer1_8.TIER_0 : outer1_8.TIER_2;
+          callback2(6216)(obj, dependencyMap);
         }
       }
     }
@@ -56,41 +55,42 @@ export default function usePremiumFeatureUpsellGetNitro(arg0, arg1, arg2, arg3) 
         if (result) {
           let resolved = Promise.resolve();
         } else {
-          obj = callback(4486);
-          resolved = obj.fetchSubscriptions();
+          resolved = callback(4509).fetchSubscriptions();
+          const obj2 = callback(4509);
         }
         const items = [resolved, ];
         if (isFetchingOfferResult) {
           let resolved1 = Promise.resolve();
         } else {
-          resolved1 = callback(6483).fetchUserOffer("usePremiumFeatureUpsellGetNitro");
-          const obj2 = callback(6483);
+          resolved1 = callback(6504).fetchUserOffer("usePremiumFeatureUpsellGetNitro");
+          const obj3 = callback(6504);
         }
         items[1] = resolved1;
         const allPromises = Promise.all(items);
         const nextPromise = Promise.all(items).then(() => {
-          outer1_6.current = outer1_6.current + 1;
-          outer1_7();
+          ref.current = ref.current + 1;
+          callback4();
         });
         Promise.all(items).then(() => {
-          outer1_6.current = outer1_6.current + 1;
-          outer1_7();
+          ref.current = ref.current + 1;
+          callback4();
         }).catch(() => {
-          const intl = callback(1212).intl;
-          callback2(3865).presentFailedToast(intl.string(callback(1212).t.R0RpRX));
-        }).finally(() => outer1_4(false));
+          const intl = callback(1236).intl;
+          callback2(3889).presentFailedToast(intl.string(callback(1236).t.R0RpRX));
+        }).finally(() => callback3(false));
         const catchPromise = Promise.all(items).then(() => {
-          outer1_6.current = outer1_6.current + 1;
-          outer1_7();
+          ref.current = ref.current + 1;
+          callback4();
         }).catch(() => {
-          const intl = callback(1212).intl;
-          callback2(3865).presentFailedToast(intl.string(callback(1212).t.R0RpRX));
+          const intl = callback(1236).intl;
+          callback2(3889).presentFailedToast(intl.string(callback(1236).t.R0RpRX));
         });
       }
     }
     callback2();
-    const bestActiveInput = callback(4024).getBestActiveInput();
-    if (null != bestActiveInput) {
+    tmp5 = onPress.hasFetchedOffer() && !obj.hasAnyUnexpiredOffer();
+    const bestActiveInput = callback(4048).getBestActiveInput();
+    if (bestActiveInput != null) {
       bestActiveInput.closeCustomKeyboard();
     }
   }, items);

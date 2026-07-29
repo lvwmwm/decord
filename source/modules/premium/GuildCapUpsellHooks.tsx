@@ -1,40 +1,29 @@
-// Module ID: 5630
-// Function ID: 47693
-// Name: hasIncreasedGuildCap
-// Dependencies: [1838, 1850, 653, 566, 5631, 3811, 2]
-// Exports: hideInlineGuildCapUpsell, isAtGuildCapAndNonPremium, useShouldShowInlineGuildCapUpsell
+// Module ID: 5648
+// Function ID: 5649
+// Name: useShouldShowInlineGuildCapUpsell
+// Dependencies: [1862, 1874, 676, 589, 5649, 3835, 2]
+// Exports: hasIncreasedGuildCap, hideInlineGuildCapUpsell, isAtGuildCapAndNonPremium, useShouldShowInlineGuildCapUpsell
 
-// Module 5630 (hasIncreasedGuildCap)
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 5648 (useShouldShowInlineGuildCapUpsell)
+import createGuildRecordFromRust from "createGuildRecordFromRust";
+import mergeGuildAvatar from "mergeGuildAvatar";
 import { MAX_USER_GUILDS } from "ME";
 
 const require = arg1;
-function hasIncreasedGuildCap(currentUser) {
-  let result = importDefault(3811).canUseIncreasedGuildCap(currentUser);
-  if (!result) {
-    let isStaffResult;
-    if (null != currentUser) {
-      isStaffResult = currentUser.isStaff();
-    }
-    result = true === isStaffResult;
-  }
-  return result;
-}
 let result = require("ME").fileFinishedImporting("modules/premium/GuildCapUpsellHooks.tsx");
 
 export const useShouldShowInlineGuildCapUpsell = function useShouldShowInlineGuildCapUpsell() {
-  const items = [_createForOfIteratorHelperLoose];
-  let stateFromStores = require(566) /* initialize */.useStateFromStores(items, () => outer1_3.getGuildCount() >= 95);
-  const obj = require(566) /* initialize */;
-  const items1 = [require(5631) /* HotspotStore */.HotspotStore];
-  const stateFromStores1 = require(566) /* initialize */.useStateFromStores(items1, () => {
-    const HotspotStore = outer1_0(outer1_2[4]).HotspotStore;
-    return HotspotStore.hasHotspot(outer1_0(outer1_2[4]).HotspotLocations.GUILD_CAP_INLINE_UPSELL);
+  const items = [createGuildRecordFromRust];
+  let stateFromStores = require(589) /* initialize */.useStateFromStores(items, () => guildCount.getGuildCount() >= 95);
+  const obj = require(589) /* initialize */;
+  const items1 = [require(5649) /* HotspotStore */.HotspotStore];
+  const stateFromStores1 = require(589) /* initialize */.useStateFromStores(items1, () => {
+    const HotspotStore = callback(5649).HotspotStore;
+    return HotspotStore.hasHotspot(callback(5649).HotspotLocations.GUILD_CAP_INLINE_UPSELL);
   });
-  const obj2 = require(566) /* initialize */;
-  const items2 = [_isNativeReflectConstruct];
-  const stateFromStoresObject = require(566) /* initialize */.useStateFromStoresObject(items2, () => !outer1_1(outer1_2[5]).isPremium(outer1_4.getCurrentUser()));
+  const obj2 = require(589) /* initialize */;
+  const items2 = [mergeGuildAvatar];
+  const stateFromStoresObject = require(589) /* initialize */.useStateFromStoresObject(items2, () => !callback2(3835).isPremium(currentUser.getCurrentUser()));
   if (stateFromStores) {
     stateFromStores = stateFromStores1;
   }
@@ -44,13 +33,33 @@ export const useShouldShowInlineGuildCapUpsell = function useShouldShowInlineGui
   return stateFromStores;
 };
 export const hideInlineGuildCapUpsell = function hideInlineGuildCapUpsell() {
-  require(5631) /* HotspotStore */.hideHotspot(require(5631) /* HotspotStore */.HotspotLocations.GUILD_CAP_INLINE_UPSELL);
+  require(5649) /* HotspotStore */.hideHotspot(require(5649) /* HotspotStore */.HotspotLocations.GUILD_CAP_INLINE_UPSELL);
 };
-export { hasIncreasedGuildCap };
+export const hasIncreasedGuildCap = function hasIncreasedGuildCap(currentUser) {
+  let result = importDefault(3835).canUseIncreasedGuildCap(currentUser);
+  if (!result) {
+    let isStaffResult;
+    if (currentUser != null) {
+      isStaffResult = currentUser.isStaff();
+    }
+    result = true === isStaffResult;
+  }
+  return result;
+};
 export const isAtGuildCapAndNonPremium = function isAtGuildCapAndNonPremium() {
   let tmp = guildCount.getGuildCount() >= MAX_USER_GUILDS;
   if (tmp) {
-    tmp = !hasIncreasedGuildCap(currentUser.getCurrentUser());
+    currentUser = currentUser.getCurrentUser();
+    let result = importDefault(3835).canUseIncreasedGuildCap(currentUser);
+    if (!result) {
+      let isStaffResult;
+      if (currentUser != null) {
+        isStaffResult = currentUser.isStaff();
+      }
+      result = true === isStaffResult;
+    }
+    tmp = !result;
+    const obj2 = importDefault(3835);
   }
   return tmp;
 };

@@ -1,38 +1,38 @@
-// Module ID: 13134
-// Function ID: 101280
+// Module ID: 13157
+// Function ID: 13158
 // Name: getStatusSize
-// Dependencies: [31, 27, 653, 1274, 33, 4165, 689, 11997, 13123, 13124, 7945, 7910, 13135, 7944, 13125, 4580, 10572, 10573, 2]
+// Dependencies: [19, 17, 676, 1298, 21, 4189, 712, 12021, 13146, 13147, 7970, 7935, 13158, 7969, 13148, 4602, 10596, 10597, 2]
 
-// Module 13134 (getStatusSize)
-import importAllResult from "result";
-import { View } from "get ActivityIndicator";
+// Module 13157 (getStatusSize)
+import importAllResult from "noop";
+import { View } from "registerAsset";
 import { StatusTypes } from "ME";
 import STATUS_PADDING from "STATUS_PADDING";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
+let c9;
 let closure_6;
-let closure_7;
-let closure_8;
-let closure_9;
+let error;
+let metroImportAll;
 const require = arg1;
 function getStatusSize(arg0) {
-  if (require(11997) /* StaticNativeCutoutAvatarImage */.AvatarSizes.XXSMALL !== arg0) {
-    if (require(11997) /* StaticNativeCutoutAvatarImage */.AvatarSizes.XSMALL !== arg0) {
-      if (require(11997) /* StaticNativeCutoutAvatarImage */.AvatarSizes.XSMALL_20 !== arg0) {
-        if (require(11997) /* StaticNativeCutoutAvatarImage */.AvatarSizes.SMALL !== arg0) {
-          if (require(11997) /* StaticNativeCutoutAvatarImage */.AvatarSizes.REFRESH_MEDIUM_32 === arg0) {
+  if (require(12021) /* StaticNativeCutoutAvatarImage */.AvatarSizes.XXSMALL !== arg0) {
+    if (tmp(12021).AvatarSizes.XSMALL !== arg0) {
+      if (tmp(12021).AvatarSizes.XSMALL_20 !== arg0) {
+        if (tmp(12021).AvatarSizes.SMALL !== arg0) {
+          if (tmp(12021).AvatarSizes.REFRESH_MEDIUM_32 === arg0) {
             return closure_7.REFRESH_MEDIUM_10;
           } else {
-            if (require(11997) /* StaticNativeCutoutAvatarImage */.AvatarSizes.NORMAL !== arg0) {
-              if (require(11997) /* StaticNativeCutoutAvatarImage */.AvatarSizes.TABS_22 !== arg0) {
-                if (require(11997) /* StaticNativeCutoutAvatarImage */.AvatarSizes.LARGE !== arg0) {
-                  if (require(11997) /* StaticNativeCutoutAvatarImage */.AvatarSizes.LARGE_48 !== arg0) {
-                    if (require(11997) /* StaticNativeCutoutAvatarImage */.AvatarSizes.XLARGE !== arg0) {
-                      if (require(11997) /* StaticNativeCutoutAvatarImage */.AvatarSizes.XLARGE_72 !== arg0) {
-                        if (require(11997) /* StaticNativeCutoutAvatarImage */.AvatarSizes.XXLARGE !== arg0) {
-                          if (require(11997) /* StaticNativeCutoutAvatarImage */.AvatarSizes.PROFILE !== arg0) {
-                            if (require(11997) /* StaticNativeCutoutAvatarImage */.AvatarSizes.YOUBAR_60 !== arg0) {
+            if (tmp(12021).AvatarSizes.NORMAL !== arg0) {
+              if (tmp(12021).AvatarSizes.TABS_22 !== arg0) {
+                if (tmp(12021).AvatarSizes.LARGE !== arg0) {
+                  if (tmp(12021).AvatarSizes.LARGE_48 !== arg0) {
+                    if (tmp(12021).AvatarSizes.XLARGE !== arg0) {
+                      if (tmp(12021).AvatarSizes.XLARGE_72 !== arg0) {
+                        if (tmp(12021).AvatarSizes.XXLARGE !== arg0) {
+                          if (tmp(12021).AvatarSizes.PROFILE !== arg0) {
+                            if (tmp(12021).AvatarSizes.YOUBAR_60 !== arg0) {
                               return null;
                             }
                           }
@@ -52,21 +52,24 @@ function getStatusSize(arg0) {
   }
   return closure_7.SMALL;
 }
-function getAvatarDecorationMargin(closure_10) {
-  const decorationSizeForAvatarSize = require(7910) /* getDecorationSizeForAvatarSize */.getDecorationSizeForAvatarSize(closure_10);
-  return (decorationSizeForAvatarSize - require(11997) /* StaticNativeCutoutAvatarImage */.styles[closure_10].width) / 2;
-}
-({ STATUS_PADDING: closure_6, StatusSizes: closure_7 } = STATUS_PADDING);
-({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
-let closure_10 = _createForOfIteratorHelperLoose.createStyles((closure_10) => {
-  let obj = { status: { position: "absolute", right: -3, bottom: -3 } };
-  obj = { position: "absolute", right: -2, bottom: -2, backgroundColor: "transparent", borderWidth: 4, borderColor: importDefault(689).colors.STATUS_SPEAKING };
-  obj.speaking = obj;
-  obj.stageSpeaking = { position: "absolute", right: -2, bottom: -2 };
-  obj = { width: 24, height: 24, justifyContent: "center", alignItems: "center", backgroundColor: importDefault(689).unsafe_rawColors.RED_400, borderRadius: importDefault(689).radii.md, right: 0, bottom: 0 };
-  obj.voiceStatus = obj;
-  obj.decoration = { position: "absolute", top: -getAvatarDecorationMargin(closure_10), left: -getAvatarDecorationMargin(closure_10) };
-  obj.container = { position: "relative" };
+let c3 = importAllResult;
+({ STATUS_PADDING: closure_6, StatusSizes: error } = STATUS_PADDING);
+({ jsx: metroImportAll, jsxs: c9 } = jsxProd);
+let closure_10 = createCacheKey.createStyles((NORMAL) => {
+  let obj = { status: { position: "absolute", right: -3, bottom: -3 }, speaking: null, stageSpeaking: null, voiceStatus: null, decoration: null, container: null };
+  obj = { position: "absolute", right: -2, bottom: -2, backgroundColor: "transparent", borderWidth: 4, borderColor: importDefault(712).colors.STATUS_SPEAKING };
+  obj[1] = obj;
+  obj[2] = { position: "absolute", right: -2, bottom: -2 };
+  obj = { width: 24, height: 24, justifyContent: "center", alignItems: "center", backgroundColor: importDefault(712).unsafe_rawColors.RED_400, borderRadius: importDefault(712).radii.md, right: 0, bottom: 0 };
+  obj[3] = obj;
+  const obj1 = { position: "absolute", top: null, left: null };
+  const decorationSizeForAvatarSize = require(7935) /* getDecorationSizeForAvatarSize */.getDecorationSizeForAvatarSize(NORMAL);
+  obj1[1] = -(decorationSizeForAvatarSize - require(12021) /* StaticNativeCutoutAvatarImage */.styles[NORMAL].width) / 2;
+  const obj5 = require(7935) /* getDecorationSizeForAvatarSize */;
+  const decorationSizeForAvatarSize1 = require(7935) /* getDecorationSizeForAvatarSize */.getDecorationSizeForAvatarSize(NORMAL);
+  obj1[2] = -(decorationSizeForAvatarSize1 - require(12021) /* StaticNativeCutoutAvatarImage */.styles[NORMAL].width) / 2;
+  obj[4] = obj1;
+  obj[5] = { position: "relative" };
   return obj;
 });
 const memoResult = importAllResult.memo((isMobileOnline) => {
@@ -129,233 +132,266 @@ const memoResult = importAllResult.memo((isMobileOnline) => {
   if (typing === undefined) {
     typing = false;
   }
-  const statusSizeOverride = isMobileOnline.statusSizeOverride;
+  let statusSizeOverride = isMobileOnline.statusSizeOverride;
   let callback;
   const tmp3 = callback2(NORMAL);
   callback = tmp3;
   let items = [cutout, autoStatusCutout, flag, flag2, NORMAL, status, typing, statusSizeOverride, tmp3];
   const memo = NORMAL.useMemo(() => {
-    let avatarSize;
     let height;
     let height2;
     let height3;
-    let isMobileOnline;
-    let isVROnline;
-    let statusSizeOverride;
-    let userStatus;
     let width;
     let width2;
     let width3;
     if (null != autoStatusCutout) {
-      let obj = { avatarSize: NORMAL, userStatus: status, isMobileOnline: flag, isVROnline: flag2 };
-      if (true === autoStatusCutout) {
-        let padding = typing;
-      } else {
-        padding = autoStatusCutout.padding;
-      }
-      obj.padding = padding;
-      obj.typing = typing;
-      obj.statusSizeOverride = statusSizeOverride;
-      ({ avatarSize, userStatus, isMobileOnline, isVROnline, statusSizeOverride } = obj);
-      let num = null != userStatus;
-      let tmp12;
-      if (num) {
-        num = autoStatusCutout.UNKNOWN;
-        if (userStatus !== num) {
-          userStatus = flag(status[7]).AVATAR_SIZE_MAP[avatarSize];
-          if (null == statusSizeOverride) {
-            statusSizeOverride = outer1_11(avatarSize);
+      let diff1 = status;
+      let items = statusSizeOverride;
+      let tmp6;
+      if (null != diff1) {
+        if (diff1 !== autoStatusCutout.UNKNOWN) {
+          diff1 = flag(status[7]).AVATAR_SIZE_MAP[tmp2];
+          if (items == null) {
+            items = outer1_11(tmp2);
           }
-          num = 0;
-          if (null != statusSizeOverride) {
-            num = statusSizeOverride;
+          if (items == null) {
+            items = 0;
           }
-          let num3 = num / 4;
-          if (tmp11) {
-            num3 = 8;
-            const statusTypingDimensions = flag(status[8]).getStatusTypingDimensions(num);
+          let result = items / 4;
+          if (tmp5) {
+            const statusTypingDimensions = flag(status[8]).getStatusTypingDimensions(items);
             ({ width: width3, height: height3 } = statusTypingDimensions);
-            let tmp30 = null != isMobileOnline;
-            const obj10 = flag(status[8]);
-            if (tmp30) {
-              tmp30 = isMobileOnline;
+            const obj9 = flag(status[8]);
+            if (flag == null) {
+              flag = false;
             }
-            const tmp29 = flag2(status[9]);
-            const tmp31 = null != isVROnline && isVROnline;
-            num = 2;
+            if (flag2 == null) {
+              flag2 = false;
+            }
             const sum = height3 + 2 * typing;
-            obj = {};
-            obj = { shape: flag(status[10]).CutoutShape.RoundedRect };
-            const diff = userStatus - width3 - typing;
-            const tmp29Result = flag2(status[9])(num, tmp30, null != isVROnline && isVROnline);
-            obj.x = diff + flag(status[num3]).getAnimatedTypingTranslateX(tmp29Result.width);
-            obj.y = userStatus - height3 - typing;
-            obj.width = width3 + 2 * typing;
-            obj.height = sum;
-            obj.cornerRadius = sum / 2;
-            const items = [obj];
-            obj.nativeCutouts = items;
-            tmp12 = obj;
-            const obj13 = flag(status[num3]);
+            let obj = { nativeCutouts: null };
+            obj = { shape: null, x: null, y: null, width: null, height: null, cornerRadius: null };
+            const tmp29 = flag2(status[9]);
+            obj[0] = flag(status[10]).CutoutShape.RoundedRect;
+            const diff = diff1 - width3 - typing;
+            const tmp29Result = flag2(status[9])(items, flag, flag2);
+            obj[1] = diff + flag(status[8]).getAnimatedTypingTranslateX(tmp29Result.width);
+            diff1 = diff1 - height3;
+            obj[2] = diff1 - typing;
+            obj[3] = width3 + 2 * typing;
+            obj[4] = sum;
+            result = sum / 2;
+            obj[5] = result;
+            items = [obj];
+            obj[0] = items;
+            tmp6 = obj;
+            const obj12 = flag(status[8]);
           } else {
-            if (isVROnline) {
-              let obj6 = flag(status[8]);
-              const vRStatusContainerRect = obj6.getVRStatusContainerRect(num);
+            if (flag2) {
+              let obj5 = flag(status[8]);
+              const vRStatusContainerRect = obj5.getVRStatusContainerRect(items);
               ({ width: width2, height: height2 } = vRStatusContainerRect);
-              const obj1 = {};
-              const obj2 = { shape: flag(status[10]).CutoutShape.RoundedRect, x: userStatus - width2 + num3, y: userStatus - height2 + num3, width: width2, height: height2, cornerRadius: vRStatusContainerRect.cornerRadius };
+              const obj1 = { nativeCutouts: null };
+              let obj2 = { shape: null, x: null, y: null, width: null, height: null, cornerRadius: null };
+              obj2[0] = flag(status[10]).CutoutShape.RoundedRect;
+              obj2[1] = diff1 - width2 + result;
+              result = diff1 - height2 + result;
+              obj2[2] = result;
+              obj2[3] = width2;
+              obj2[4] = height2;
+              obj2[5] = vRStatusContainerRect.cornerRadius;
               const items1 = [obj2];
-              obj1.nativeCutouts = items1;
-              tmp12 = obj1;
-            } else if (!isMobileOnline) {
-              const sum1 = num / 2 + tmp10;
-              const diff1 = userStatus - sum1 - 2 * num3;
-              let obj3 = {};
-              const obj4 = { shape: flag(status[10]).CutoutShape.Circle, x: diff1, y: diff1, size: 2 * sum1 };
-              const items2 = [obj4];
-              obj3.nativeCutouts = items2;
-              tmp12 = obj3;
+              obj1[0] = items1;
+              tmp6 = obj1;
+            } else if (!flag) {
+              const sum1 = items / 2 + tmp4;
+              const diff2 = diff1 - sum1 - 2 * result;
+              obj = { nativeCutouts: null };
+              const obj3 = { shape: null, x: null, y: null, size: null };
+              obj3[0] = flag(status[10]).CutoutShape.Circle;
+              obj3[1] = diff2;
+              obj3[2] = diff2;
+              obj3[3] = 2 * sum1;
+              const items2 = [obj3];
+              obj[0] = items2;
+              tmp6 = obj;
             }
-            obj3 = flag(status[8]);
-            const mobileStatusContainerRect = obj3.getMobileStatusContainerRect(num);
+            obj2 = flag(status[8]);
+            const mobileStatusContainerRect = obj2.getMobileStatusContainerRect(items);
             ({ width, height } = mobileStatusContainerRect);
-            const obj5 = {};
-            obj6 = { shape: flag(status[10]).CutoutShape.RoundedRect, x: userStatus - width + num3, y: userStatus - height + num3, width, height, cornerRadius: mobileStatusContainerRect.cornerRadius };
-            const items3 = [obj6];
-            obj5.nativeCutouts = items3;
-            tmp12 = obj5;
+            const obj4 = { nativeCutouts: null };
+            obj5 = { shape: null, x: null, y: null, width: null, height: null, cornerRadius: null };
+            obj5[0] = flag(status[10]).CutoutShape.RoundedRect;
+            obj5[1] = diff1 - width + result;
+            obj5[2] = diff1 - height + result;
+            obj5[3] = width;
+            obj5[4] = height;
+            obj5[5] = mobileStatusContainerRect.cornerRadius;
+            const items3 = [obj5];
+            obj4[0] = items3;
+            tmp6 = obj4;
           }
         }
       }
     } else {
-      const obj7 = { cutout, decorationCutout: flag(status[11]).getDecorationCutoutForAvatarCutout(cutout, -_undefined.decoration.top) };
-      return obj7;
+      const obj6 = { cutout: null, decorationCutout: null };
+      obj6[0] = cutout;
+      obj6[1] = flag(status[11]).getDecorationCutoutForAvatarCutout(cutout, -_undefined.decoration.top);
+      return obj6;
     }
   }, items);
-  let merged = {};
+  let merged = { style: null, needsOffscreenAlphaCompositing: null, accessible: null, accessibilityLabel: null, children: null };
+  let StatusWithTyping = flag;
   ({ cutout: cutout2, decorationCutout } = memo);
   let items1 = [flag(status[7]).styles[NORMAL], tmp3.container, style];
-  merged.style = items1;
-  merged.needsOffscreenAlphaCompositing = needsOffscreenAlphaCompositing;
-  merged.accessible = accessible;
-  merged.accessibilityLabel = accessibilityLabel;
+  merged[0] = items1;
+  merged[1] = needsOffscreenAlphaCompositing;
+  merged[2] = accessible;
+  merged[3] = accessibilityLabel;
   if (!flag4) {
     let items2 = [null, , , , ];
-    merged = { disablePlaceholder, style: avatarStyle, cutout: cutout2 };
+    merged = { disablePlaceholder: null, style: null, cutout: null };
+    merged[0] = disablePlaceholder;
+    merged[1] = avatarStyle;
+    merged[2] = cutout2;
     if (null == source) {
       if (null == user) {
         if (null == channel) {
           items2[1] = null;
-          let tmp39 = null;
+          let tmp33 = null;
           if (null != avatarDecoration) {
-            let obj = {};
-            let obj10 = flag(status[11]);
-            obj.size = obj10.getDecorationSizeForAvatarSize(NORMAL);
-            obj.avatarDecoration = avatarDecoration;
-            obj.decorationStyle = tmp3.decoration;
-            obj.animate = flag3;
-            obj.cutout = decorationCutout;
-            tmp39 = callback(flag2(status[13]), obj, avatarDecoration.asset);
-            const tmp43 = flag2(status[13]);
+            let obj = { size: null, avatarDecoration: null, decorationStyle: null, animate: null, cutout: null };
+            const tmp36 = flag2(tmp7[13]);
+            obj[0] = StatusWithTyping(tmp7[11]).getDecorationSizeForAvatarSize(NORMAL);
+            obj[1] = avatarDecoration;
+            obj[2] = tmp3.decoration;
+            obj[3] = flag3;
+            obj[4] = decorationCutout;
+            tmp33 = callback(tmp36, obj, avatarDecoration.asset);
+            const StatusWithTypingResult = StatusWithTyping(tmp7[11]);
           }
-          items2[2] = tmp39;
-          let tmp45 = null;
+          items2[2] = tmp33;
+          let tmp37 = null;
           if (null != status) {
-            tmp45 = null;
+            tmp37 = null;
             if (status !== autoStatusCutout.UNKNOWN) {
+              if (statusSizeOverride == null) {
+                statusSizeOverride = getStatusSize(NORMAL);
+              }
+              let merged1 = null;
               if (null != statusSizeOverride) {
-                let tmp48 = statusSizeOverride;
-              } else {
-                tmp48 = getStatusSize(NORMAL);
-              }
-              let id = null;
-              if (null != tmp48) {
-                let obj1 = { size: tmp48, isMobileOnline: flag, isVROnline: flag2, status, streaming };
+                let obj1 = { size: null, isMobileOnline: null, isVROnline: null, status: null, streaming: null, style: null };
+                obj1[0] = statusSizeOverride;
+                obj1[1] = flag;
+                obj1[2] = flag2;
+                obj1[3] = status;
+                obj1[4] = streaming;
                 let items3 = [tmp3.status, statusStyle];
-                obj1.style = items3;
-                id = obj1;
+                obj1[5] = items3;
+                merged1 = obj1;
               }
-              if (null == id) {
-                tmp45 = null;
+              if (null == merged1) {
+                tmp37 = null;
               } else {
                 if (!typing) {
                   let obj2 = {};
-                  merged = Object.assign(id);
-                  let tmp58 = callback(flag2(status[14]), obj2);
-                  const tmp54 = flag2(status[14]);
+                  merged = Object.assign(merged1);
+                  let tmp48 = callback(flag2(tmp7[14]), obj2);
+                  const tmp44 = flag2(tmp7[14]);
                 }
+                StatusWithTyping = StatusWithTyping(tmp7[14]).StatusWithTyping;
                 let obj3 = {};
-                const merged1 = Object.assign(id);
-                obj3["typing"] = typing;
-                id = user.id;
-                user = "userId";
-                obj3["userId"] = id;
-                tmp58 = callback(flag(status[14]).StatusWithTyping, obj3);
+                merged1 = Object.assign(merged1);
+                obj3.typing = typing;
+                user = user.id;
+                obj3.userId = user;
+                tmp48 = callback(StatusWithTyping, obj3);
               }
             }
           }
-          items2[3] = tmp45;
+          items2[3] = tmp37;
           if (deaf) {
-            let obj4 = {};
+            let obj4 = { style: null, children: null };
             const items4 = [, ];
             ({ status: arr8[0], voiceStatus: arr8[1] } = tmp3);
-            obj4.style = items4;
-            let obj5 = { size: flag2(status[15]).Sizes.REFRESH_SMALL_16, source: flag2(status[16]), color: flag2(status[6]).unsafe_rawColors.WHITE };
-            obj4.children = callback(flag2(status[15]), obj5);
-            let tmp66 = callback(cutout, obj4);
-            const tmp76 = flag2(status[15]);
+            obj4[0] = items4;
+            let obj5 = { size: null, source: null, color: null };
+            obj5[0] = flag2(tmp7[15]).Sizes.REFRESH_SMALL_16;
+            obj5[1] = flag2(tmp7[16]);
+            obj5[2] = flag2(tmp7[6]).unsafe_rawColors.WHITE;
+            obj4[1] = callback(flag2(tmp7[15]), obj5);
+            let tmp53 = callback(tmp6, obj4);
+            const tmp59 = flag2(tmp7[15]);
           } else if (mute) {
-            let obj6 = {};
+            let obj6 = { style: null, children: null };
             const items5 = [, ];
             ({ status: arr7[0], voiceStatus: arr7[1] } = tmp3);
-            obj6.style = items5;
-            let obj7 = { size: flag2(status[15]).Sizes.REFRESH_SMALL_16, source: flag2(status[17]), color: flag2(status[6]).unsafe_rawColors.WHITE };
-            obj6.children = callback(flag2(status[15]), obj7);
-            tmp66 = callback(cutout, obj6);
-            const tmp71 = flag2(status[15]);
+            obj6[0] = items5;
+            const obj7 = { size: null, source: null, color: null };
+            obj7[0] = flag2(tmp7[15]).Sizes.REFRESH_SMALL_16;
+            obj7[1] = flag2(tmp7[17]);
+            obj7[2] = flag2(tmp7[6]).unsafe_rawColors.WHITE;
+            obj6[1] = callback(flag2(tmp7[15]), obj7);
+            tmp53 = callback(tmp6, obj6);
+            const tmp56 = flag2(tmp7[15]);
           }
-          items2[4] = tmp66;
-          merged.children = items2;
-          return closure_9(cutout, merged);
+          items2[4] = tmp53;
+          merged[4] = items2;
+          return closure_9(tmp6, merged);
         }
       }
     }
     if (null != source) {
-      const obj8 = { source, size: NORMAL, animate: flag3 };
+      const obj8 = { source: null, size: null, animate: null };
+      obj8[0] = source;
+      obj8[1] = NORMAL;
+      obj8[2] = flag3;
       merged = Object.assign(merged);
-      let tmp17 = callback(flag2(status[7]), obj8);
-      const tmp35 = flag2(status[7]);
+      let tmp14 = callback(flag2(tmp7[7]), obj8);
+      let tmp29 = flag2(tmp7[7]);
     } else if (null != user) {
-      const obj9 = { user, guildId, size: NORMAL, animate: flag3 };
+      let obj9 = { user: null, guildId: null, size: null, animate: null };
+      obj9[0] = user;
+      obj9[1] = guildId;
+      obj9[2] = NORMAL;
+      obj9[3] = flag3;
       const merged2 = Object.assign(merged);
-      tmp17 = callback(flag2(status[7]), obj9);
-      const tmp28 = flag2(status[7]);
+      tmp14 = callback(flag2(tmp7[7]), obj9);
+      const tmp23 = flag2(tmp7[7]);
     } else if (null != channel) {
-      obj10 = { channel, size: NORMAL, animate: flag3 };
+      const obj10 = { channel: null, size: null, animate: null };
+      obj10[0] = channel;
+      obj10[1] = NORMAL;
+      obj10[2] = flag3;
       const merged3 = Object.assign(merged);
-      tmp17 = callback(flag2(status[7]), obj10);
-      const tmp21 = flag2(status[7]);
+      tmp14 = callback(flag2(tmp7[7]), obj10);
+      const tmp17 = flag2(tmp7[7]);
     }
   } else {
-    let sum = flag(status[7]).AVATAR_SIZE_MAP[NORMAL] + 4;
+    let sum = StatusWithTyping(tmp7[7]).AVATAR_SIZE_MAP[NORMAL] + 4;
+    const obj11 = { style: null };
     if (isStageCall) {
-      const obj11 = {};
       const items6 = [tmp3.stageSpeaking, ];
-      const obj12 = { width: sum, height: sum, borderRadius: sum / 2 };
+      let obj12 = { width: null, height: null, borderRadius: null };
+      obj12[0] = sum;
+      obj12[1] = sum;
+      obj12[2] = sum / 2;
       items6[1] = obj12;
-      obj11.style = items6;
-      let tmp10Result = tmp10(flag2(status[12]), obj11);
+      obj11[0] = items6;
+      let tmp9Result = tmp9(flag2(tmp7[12]), obj11);
     } else {
-      let obj13 = {};
       const items7 = [tmp3.speaking, ];
-      const obj14 = { width: sum, height: sum, borderRadius: sum / 2 };
-      items7[1] = obj14;
-      obj13.style = items7;
-      tmp10Result = tmp10(cutout, obj13);
+      const obj13 = { width: null, height: null, borderRadius: null };
+      obj13[0] = sum;
+      obj13[1] = sum;
+      obj13[2] = sum / 2;
+      items7[1] = obj13;
+      obj11[0] = items7;
+      tmp9Result = tmp9(tmp6, obj11);
     }
   }
 });
-const result = require("ME").fileFinishedImporting("design/void/Avatar/native/Avatar.tsx");
+let result = require("ME").fileFinishedImporting("design/void/Avatar/native/Avatar.tsx");
 
 export default memoResult;
 export const AvatarSizes = require("StaticNativeCutoutAvatarImage").AvatarSizes;

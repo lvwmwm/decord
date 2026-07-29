@@ -1,57 +1,133 @@
-// Module ID: 12201
-// Function ID: 95398
+// Module ID: 12225
+// Function ID: 12226
 // Name: usePrivateChannelCall
-// Dependencies: [5, 31, 1348, 566, 1212, 8806, 4175, 2]
+// Dependencies: [5, 19, 1372, 589, 1236, 8830, 4199, 2]
 // Exports: default
 
-// Module 12201 (usePrivateChannelCall)
+// Module 12225 (usePrivateChannelCall)
 import getPrivateChannelCall from "getPrivateChannelCall";
-import result from "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import noop from "noop";
+import ensureGuildLoaded from "ensureGuildLoaded";
 
 const require = arg1;
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/calls/native/usePrivateChannelCall.tsx");
+const result = require("ensureGuildLoaded").fileFinishedImporting("modules/calls/native/usePrivateChannelCall.tsx");
 
 export default function usePrivateChannelCall(arg0, arg1, arg2) {
   const _require = arg0;
   let closure_1 = arg1;
-  const dependencyMap = arg2;
-  let obj = _require(566);
-  const items = [_isNativeReflectConstruct];
+  let dependencyMap = arg2;
+  let obj = _require(589);
+  const items = [ensureGuildLoaded];
   const items1 = [arg1, arg0];
   const stateFromStoresObject = obj.useStateFromStoresObject(items, () => {
     const channel = outer1_5.getChannel(outer1_5.getDMFromUserId(callback));
     if (null != channel) {
       if (channel.isPrivate()) {
-        let obj = {};
-        ({ text: obj2.text, accessibilityHint: obj2.accessibilityHint, inCall: obj2.inCall } = callback2(8806)(channel, callback2));
+        let obj = { text: null, accessibilityHint: null, inCall: null };
+        ({ text: obj2[0], accessibilityHint: obj2[1], inCall: obj2[2] } = callback2(8830)(channel, callback2));
         return obj;
       }
     }
-    obj = {};
-    const intl = callback(1212).intl;
+    const intl = callback(1236).intl;
     const string = intl.string;
-    const t = callback(1212).t;
+    const t = callback(1236).t;
     if (callback2) {
       let stringResult = string(t["7AWk50"]);
+      let tmp10 = tmp6;
     } else {
       stringResult = string(t["EZgS+9"]);
+      tmp10 = tmp6;
     }
-    obj.text = stringResult;
-    const intl2 = callback(1212).intl;
+    obj = { text: stringResult, accessibilityHint: null, inCall: false };
+    const intl2 = tmp10(1236).intl;
     const string2 = intl2.string;
-    const t2 = callback(1212).t;
+    const t2 = tmp10(1236).t;
     if (callback2) {
       let string2Result = string2(t2.oCqlGG);
     } else {
       string2Result = string2(t2.focH1t);
     }
-    obj.accessibilityHint = string2Result;
-    obj.inCall = false;
+    obj[1] = string2Result;
     return obj;
   }, items1);
-  obj = { text: stateFromStoresObject.text, inCall: stateFromStoresObject.inCall, accessibilityHint: stateFromStoresObject.accessibilityHint, handlePress: React.useCallback(callback(tmp), items2) };
-  // CreateGeneratorClosureLongIndex (0x67)
+  obj = {
+    text: stateFromStoresObject.text,
+    inCall: stateFromStoresObject.inCall,
+    accessibilityHint: stateFromStoresObject.accessibilityHint,
+    handlePress: React.useCallback(callback(function*() {
+      if (c3 === 2) {
+        c3 = 3;
+        HermesBuiltin.throwTypeError();
+      } else if (tmp5 === 3) {
+        if (arg0 === 1) {
+          throw arg1;
+        } else if (arg0 === 2) {
+          let obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
+        } else {
+          return { value: "HermesInternal", done: null };
+        }
+      } else {
+        try {
+          c3 = 2;
+          if (0 === dependencyMap) {
+            if (arg0 === 1) {
+              c3 = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              c3 = 3;
+              obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            } else {
+              let closure_1 = tmp3;
+              let channel = tmp2;
+              channel = undefined;
+              closure_1 = undefined;
+              channel = outer1_5.getChannel(outer1_5.getDMFromUserId(outer1_0));
+              if (null == channel) {
+                dependencyMap = 1;
+                c3 = 1;
+                let obj1 = { value: null, done: false };
+                obj1[0] = outer1_1(4199).ensurePrivateChannel(tmp33);
+                return obj1;
+              }
+              tmp33 = outer1_0;
+            }
+          } else if (arg0 === 1) {
+            c3 = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            c3 = 3;
+            obj = { value: null, done: true };
+            obj[0] = arg1;
+            return obj;
+          } else {
+            closure_1 = arg1;
+            channel = outer1_5.getChannel(closure_1);
+          }
+          obj1 = channel;
+          let isPrivateResult;
+          if (channel != null) {
+            isPrivateResult = obj1.isPrivate();
+          }
+          if (isPrivateResult) {
+            outer1_1(8830)(channel, closure_1).onPress();
+            const obj3 = outer1_1(8830)(channel, closure_1);
+          }
+          if (dependencyMap != null) {
+            dependencyMap();
+          }
+          c3 = 3;
+          return { value: "HermesInternal", done: null };
+        } catch (tmp25) {
+          c3 = tmp;
+          throw tmp25;
+        }
+      }
+    }), items2)
+  };
   items2 = [arg0, arg1, arg2];
   return obj;
 };

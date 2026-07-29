@@ -1,27 +1,38 @@
-// Module ID: 16099
-// Function ID: 124344
-// Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 5998, 1184, 5112, 2]
+// Module ID: 16134
+// Function ID: 16135
+// Name: onPostConnectionOpen
+// Dependencies: [5134, 6017, 1208, 2]
 
-// Module 16099 (_isNativeReflectConstruct)
-import isNonEmptyString from "isNonEmptyString";
-import AutomaticLifecycleManager from "AutomaticLifecycleManager";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
-import tmp2 from "AutomaticLifecycleManager";
+// Module 16134 (onPostConnectionOpen)
+import "initialize";
 
 const require = arg1;
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
+class ATTManager extends tmp2 {
+  constructor() {
+    applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
+    applyArgumentsResult._openATTPrePromptOrFlowTimeoutId = null;
+    applyArgumentsResult.actions = { POST_CONNECTION_OPEN: applyArgumentsResult.onPostConnectionOpen };
+    return applyArgumentsResult;
   }
-  const result = _isNativeReflectConstruct();
 }
-tmp2 = new tmp2();
-let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/quests/native/ATTModal/ATTManager.android.tsx");
+const prototype = ATTManager.prototype;
+prototype["onPostConnectionOpen"] = function onPostConnectionOpen() {
+  try {
+    const adUser = require(6017) /* _fetchAdUser */.fetchAdUser("post_connection_open");
+  } catch (tmp4) {
+    importDefault(1208).captureException(tmp4);
+    const obj2 = importDefault(1208);
+  }
+};
+prototype["_terminate"] = function _terminate() {
+  const self = this;
+  if (null != this._openATTPrePromptOrFlowTimeoutId) {
+    const _clearTimeout = clearTimeout;
+    clearTimeout(self._openATTPrePromptOrFlowTimeoutId);
+    self._openATTPrePromptOrFlowTimeoutId = null;
+  }
+};
+const aTTManager = new ATTManager();
+const result = require("module_1208").fileFinishedImporting("modules/quests/native/ATTModal/ATTManager.android.tsx");
 
-export default tmp2;
+export default aTTManager;

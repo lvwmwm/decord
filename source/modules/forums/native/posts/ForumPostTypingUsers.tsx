@@ -1,93 +1,107 @@
-// Module ID: 11172
-// Function ID: 86711
+// Module ID: 11196
+// Function ID: 11197
 // Name: ForumPostTypingUsers
-// Dependencies: [31, 27, 33, 4165, 689, 9109, 11173, 11174, 4026, 1273, 4161, 2]
+// Dependencies: [19, 17, 21, 4189, 712, 9133, 11197, 11198, 4050, 1297, 4185, 2]
 // Exports: default
 
-// Module 11172 (ForumPostTypingUsers)
-import "result";
+// Module 11196 (ForumPostTypingUsers)
+import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_4;
-let closure_5;
-let require = arg1;
-({ jsx: closure_4, jsxs: closure_5 } = jsxProd);
-_createForOfIteratorHelperLoose = { container: { display: "flex", flexDirection: "row", alignItems: "center", flex: 1 }, lastTypingUser: { marginEnd: 0 } };
-_createForOfIteratorHelperLoose = { marginEnd: -8, borderWidth: 2, borderRadius: require("_createForOfIteratorHelperLoose").radii.round };
-_createForOfIteratorHelperLoose.typingUser = _createForOfIteratorHelperLoose;
-let obj1 = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWEST, paddingVertical: require("_createForOfIteratorHelperLoose").space.PX_4, paddingLeft: 4, borderRadius: require("_createForOfIteratorHelperLoose").radii.lg, marginStart: -8, borderWidth: 4, marginEnd: 8, marginTop: -1, marginBottom: -1 };
-_createForOfIteratorHelperLoose.dots = obj1;
-_createForOfIteratorHelperLoose.typingText = { flexShrink: 1 };
-_createForOfIteratorHelperLoose.borderColor = { color: require("_createForOfIteratorHelperLoose").colors.CARD_BACKGROUND_DEFAULT };
-let obj2 = { color: require("_createForOfIteratorHelperLoose").colors.CARD_BACKGROUND_DEFAULT };
-_createForOfIteratorHelperLoose.borderColorPressed = { color: require("_createForOfIteratorHelperLoose").colors.CARD_PRIMARY_PRESSED_BG };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+let c4;
+let c5;
+const require = arg1;
+({ jsx: c4, jsxs: c5 } = jsxProd);
+createCacheKey = { container: { display: "flex", flexDirection: "row", alignItems: "center", flex: 1 }, lastTypingUser: { marginEnd: 0 }, typingUser: null, dots: null, typingText: null, borderColor: null, borderColorPressed: null };
+createCacheKey = { marginEnd: -8, borderWidth: 2, borderRadius: require("Themes").radii.round };
+createCacheKey[2] = createCacheKey;
+createCacheKey[3] = { backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOWEST, paddingVertical: require("Themes").space.PX_4, paddingLeft: 4, borderRadius: require("Themes").radii.lg, marginStart: -8, borderWidth: 4, marginEnd: 8, marginTop: -1, marginBottom: -1 };
+createCacheKey[4] = { flexShrink: 1 };
+let obj1 = { backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOWEST, paddingVertical: require("Themes").space.PX_4, paddingLeft: 4, borderRadius: require("Themes").radii.lg, marginStart: -8, borderWidth: 4, marginEnd: 8, marginTop: -1, marginBottom: -1 };
+createCacheKey[5] = { color: require("Themes").colors.CARD_BACKGROUND_DEFAULT };
+let obj2 = { color: require("Themes").colors.CARD_BACKGROUND_DEFAULT };
+createCacheKey[6] = { color: require("Themes").colors.CARD_PRIMARY_PRESSED_BG };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
 let closure_7 = { code: "function ForumPostTypingUsersTsx1(){const{forumPostPressedIn,borderColorPressed,borderColor}=this.__closure;return{borderColor:forumPostPressedIn.value?borderColorPressed:borderColor};}" };
-const obj3 = { color: require("_createForOfIteratorHelperLoose").colors.CARD_PRIMARY_PRESSED_BG };
+const obj3 = { color: require("Themes").colors.CARD_PRIMARY_PRESSED_BG };
 const result = require("jsxProd").fileFinishedImporting("modules/forums/native/posts/ForumPostTypingUsers.tsx");
 
 export default function ForumPostTypingUsers(hasUnreads) {
   let thread;
   let typingUserIds;
   ({ thread, typingUserIds } = hasUnreads);
+  let _require;
+  let facepileUsers;
+  let color;
+  let color2;
+  let forumPostContainerPressedIn;
+  let animatedStyle;
   let guildId;
   const tmp = guildId();
-  const require = tmp;
-  let obj = require(color[5]);
-  const facepileUsers = obj.useFacepileUsers(thread, typingUserIds);
-  obj = { channelId: thread.id, guildId: thread.getGuildId(), typingUserIds };
+  _require = tmp;
+  let obj = _require(color[5]);
+  facepileUsers = obj.useFacepileUsers(thread, typingUserIds);
+  obj = { channelId: thread.id, guildId: null, typingUserIds: null };
+  obj[1] = thread.getGuildId();
+  obj[2] = typingUserIds;
   color = tmp.borderColor.color;
-  const color2 = tmp.borderColorPressed.color;
-  const tmp2 = facepileUsers(color[6]);
-  let obj2 = require(color[7]);
-  const forumPostContainerPressedIn = obj2.useForumPostContainerPressedIn();
-  const tmp2Result = facepileUsers(color[6])(obj);
+  color2 = tmp.borderColorPressed.color;
+  const tmp4 = facepileUsers;
+  const tmp5 = facepileUsers(color[6]);
+  let obj2 = _require(color[7]);
+  forumPostContainerPressedIn = obj2.useForumPostContainerPressedIn();
+  const tmp5Result = facepileUsers(color[6])(obj);
   const fn = function _() {
     return { borderColor: forumPostContainerPressedIn.value ? color2 : color };
   };
   fn.__closure = { forumPostPressedIn: forumPostContainerPressedIn, borderColorPressed: color2, borderColor: color };
   fn.__workletHash = 6320844933544;
   fn.__initData = closure_7;
-  const animatedStyle = require(color[8]).useAnimatedStyle(fn);
+  animatedStyle = _require(color[8]).useAnimatedStyle(fn);
   let str = "text-muted";
   if (hasUnreads.hasUnreads) {
     str = "text-default";
   }
   guildId = thread.getGuildId();
-  let tmp7 = null;
+  let tmp10 = null;
   if (null != guildId) {
-    tmp7 = null;
+    tmp10 = null;
     if (0 !== facepileUsers.length) {
-      obj = { style: tmp.container };
+      obj = { style: null, children: null };
+      obj[0] = tmp.container;
       let items = [
         facepileUsers.map((getAvatarSource) => {
-              let obj = {};
-              const items = [forumPostContainerPressedIn.typingUser, animatedStyle, ];
+              const items = [_undefined.typingUser, animatedStyle, ];
               let lastTypingUser = arg1 === facepileUsers.length - 1;
               if (lastTypingUser) {
-                lastTypingUser = tmp.lastTypingUser;
+                lastTypingUser = _undefined.lastTypingUser;
               }
+              let obj = { style: items, children: null };
               items[2] = lastTypingUser;
-              obj.style = items;
-              obj = { source: getAvatarSource.getAvatarSource(guildId), size: forumPostContainerPressedIn(color[9]).AvatarSizes.SIZE_16 };
-              obj.children = forumPostContainerPressedIn(forumPostContainerPressedIn(color[9]).Avatar, obj);
+              obj = { source: null, size: null };
+              obj[0] = getAvatarSource.getAvatarSource(guildId);
+              obj[1] = _undefined(color[9]).AvatarSizes.SIZE_16;
+              obj[1] = forumPostContainerPressedIn(_undefined(color[9]).Avatar, obj);
               return forumPostContainerPressedIn(facepileUsers(color[8]).View, obj, getAvatarSource.id);
             }),
   ,
 
       ];
-      const obj1 = {};
+      const obj1 = { style: null, children: null };
       const items1 = [tmp.dots, animatedStyle];
-      obj1.style = items1;
-      obj1.children = forumPostContainerPressedIn(require(color[9]).Ellipsis, {});
-      items[1] = forumPostContainerPressedIn(facepileUsers(color[8]).View, obj1);
-      obj2 = { variant: "text-sm/semibold", color: str, style: tmp.typingText, lineClamp: 1, children: tmp2Result };
-      items[2] = forumPostContainerPressedIn(require(color[10]).Text, obj2);
-      obj.children = items;
-      tmp7 = animatedStyle(color2, obj);
+      obj1[0] = items1;
+      obj1[1] = forumPostContainerPressedIn(tmp2(tmp3[9]).Ellipsis, {});
+      items[1] = forumPostContainerPressedIn(tmp4(tmp3[8]).View, obj1);
+      obj2 = { variant: "text-sm/semibold", color: null, style: null, lineClamp: 1, children: null };
+      obj2[1] = str;
+      obj2[2] = tmp.typingText;
+      obj2[4] = tmp5Result;
+      items[2] = forumPostContainerPressedIn(tmp2(tmp3[10]).Text, obj2);
+      obj[1] = items;
+      tmp10 = animatedStyle(color2, obj);
     }
   }
-  return tmp7;
+  return tmp10;
 };

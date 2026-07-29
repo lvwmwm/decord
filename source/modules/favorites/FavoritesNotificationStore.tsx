@@ -1,9 +1,9 @@
-// Module ID: 10195
-// Function ID: 78704
+// Module ID: 10216
+// Function ID: 10217
 // Name: useFavoritesNotificationStore
-// Dependencies: [621, 682, 2]
+// Dependencies: [644, 705, 2]
 
-// Module 10195 (useFavoritesNotificationStore)
+// Module 10216 (useFavoritesNotificationStore)
 import keys from "keys";
 
 const obj = keys.create((arg0) => {
@@ -11,10 +11,10 @@ const obj = keys.create((arg0) => {
   return {
     favoriteAdded: false,
     notifyFavoriteAdded() {
-      return callback(outer1_1[1]).batchUpdates(() => outer1_0({ favoriteAdded: true }));
+      return callback(outer1_1[1]).batchUpdates(() => callback({ favoriteAdded: true }));
     },
     clearFavoriteAdded() {
-      return callback(outer1_1[1]).batchUpdates(() => outer1_0({ favoriteAdded: false }));
+      return callback(outer1_1[1]).batchUpdates(() => callback({ favoriteAdded: false }));
     }
   };
 });

@@ -1,27 +1,47 @@
-// Module ID: 9561
-// Function ID: 74448
-// Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 587, 5112, 2]
+// Module ID: 9585
+// Function ID: 9586
+// Name: _initialize
+// Dependencies: [5134, 595, 2]
 
-// Module 9561 (_isNativeReflectConstruct)
-import AutomaticLifecycleManager from "AutomaticLifecycleManager";
-import set from "set";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
-import tmp2 from "AutomaticLifecycleManager";
+// Module 9585 (_initialize)
+import "initialize";
 
 const require = arg1;
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
+const formGuidelinesStorageKey = "formGuidelinesStorageKey";
+class ForumGuidelinesManager extends tmp2 {
+  constructor() {
+    applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
+    set = new Set();
+    applyArgumentsResult.seenForumGuidelines = set;
+    return applyArgumentsResult;
   }
-  const result = _isNativeReflectConstruct();
 }
-tmp2 = new tmp2();
-let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/forums/ForumGuidelinesManager.tsx");
+const prototype = ForumGuidelinesManager.prototype;
+prototype["_initialize"] = function _initialize() {
+  const Storage = require(595) /* Storage */.Storage;
+  const value = Storage.get(formGuidelinesStorageKey);
+  if (null != value) {
+    const self = this;
+    const _Set = Set;
+    const set = new Set(value);
+    this.seenForumGuidelines = set;
+  }
+};
+prototype["_terminate"] = function _terminate() {
+  const Storage = require(595) /* Storage */.Storage;
+  const result = Storage.set(formGuidelinesStorageKey, this.seenForumGuidelines);
+};
+prototype["markAsSeen"] = function markAsSeen(arg0) {
+  const seenForumGuidelines = this.seenForumGuidelines;
+  seenForumGuidelines.add(arg0);
+  const Storage = require(595) /* Storage */.Storage;
+  const result = Storage.set(formGuidelinesStorageKey, this.seenForumGuidelines);
+};
+prototype["hasSeen"] = function hasSeen(arg0) {
+  const seenForumGuidelines = this.seenForumGuidelines;
+  return seenForumGuidelines.has(arg0);
+};
+const forumGuidelinesManager = new ForumGuidelinesManager();
+let result = require("set").fileFinishedImporting("modules/forums/ForumGuidelinesManager.tsx");
 
-export default tmp2;
+export default forumGuidelinesManager;

@@ -1,128 +1,133 @@
-// Module ID: 14138
-// Function ID: 108080
-// Name: getSafeAreaInsetOrPadding
-// Dependencies: [57, 31, 27, 6307, 5968, 5011, 653, 33, 689, 8119, 4165, 666, 14128, 10468, 9455, 3778, 4026, 4577, 4581, 4166, 4169, 14136, 5989, 14139, 1554, 477, 1207, 10476, 9445, 566, 1184, 1557, 1212, 14147, 4695, 14024, 14026, 14028, 14029, 9949, 8103, 8105, 14030, 14031, 2]
+// Module ID: 14160
+// Function ID: 14161
+// Name: hasVideoEnded
+// Dependencies: [32, 19, 17, 6328, 5987, 5033, 676, 21, 712, 8143, 4189, 689, 14150, 10492, 9479, 3802, 4050, 4599, 4603, 4190, 4193, 14158, 6008, 14161, 1578, 500, 1231, 10500, 9469, 589, 1208, 1581, 1236, 14169, 4717, 14046, 14048, 14050, 14051, 9971, 8127, 8129, 14052, 14053, 2]
 
-// Module 14138 (getSafeAreaInsetOrPadding)
-import _slicedToArray from "_slicedToArray";
-import importAllResult from "useSafeAreaInsets";
-import get_ActivityIndicator from "sendVideoProgress";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 14160 (hasVideoEnded)
+import getSystemLocale from "getSystemLocale";
+import importAllResult from "CONFIG_NEVER_ANIMATE_TIMING";
+import get_ActivityIndicator from "CONFIG_NEVER_ANIMATE";
+import getState from "getState";
 import _toPropertyKey from "_toPropertyKey";
 import { QuestsExperimentLocations } from "QuestsExperimentLocations";
 import ME from "ME";
-import jsxProd from "VideoQuestCaptions";
-import closure_16 from "_isNativeReflectConstruct";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import importDefaultResult from "t";
+import jsxProd from "useVideoQuestPlayerAnalytics";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import createCacheKey from "createCacheKey";
+import importDefaultResult from "n";
 
 let StyleSheet;
-let closure_11;
+let c5;
 let closure_12;
-let closure_13;
 let closure_14;
-let closure_5;
 let closure_6;
-let closure_7;
+let error;
+let map1;
+let unpackModuleId;
 const require = arg1;
-function getSafeAreaInsetOrPadding(arg0, arg1) {
-  return Math.max(arg0[arg1], obj[arg1]);
+let c4 = importAllResult;
+({ View: c5, StyleSheet, Pressable: closure_6, ActivityIndicator: error } = get_ActivityIndicator);
+({ AppStates: unpackModuleId, ComponentActions: closure_12 } = ME);
+({ jsx: map1, jsxs: closure_14 } = jsxProd);
+let obj = { left: require("Themes").space.PX_16, right: require("Themes").space.PX_16, top: require("Themes").space.PX_16, bottom: require("Themes").space.PX_16 };
+function hasVideoEnded(arg0, arg1) {
+  return arg0 >= arg1 - 1;
 }
-({ View: closure_5, StyleSheet, Pressable: closure_6, ActivityIndicator: closure_7 } = get_ActivityIndicator);
-({ AppStates: closure_11, ComponentActions: closure_12 } = ME);
-({ jsx: closure_13, jsxs: closure_14 } = jsxProd);
-let obj = { left: require("_createForOfIteratorHelperLoose").space.PX_16, right: require("_createForOfIteratorHelperLoose").space.PX_16, top: require("_createForOfIteratorHelperLoose").space.PX_16, bottom: require("_createForOfIteratorHelperLoose").space.PX_16 };
-let closure_17 = { code: "function hasVideoEnded_VideoQuestPlayerTsx1(currentTime,videoDuration){return currentTime>=videoDuration-1;}" };
-let closure_18 = (() => {
-  function hasVideoEnded(arg0, arg1) {
-    return arg0 >= arg1 - 1;
+hasVideoEnded.__closure = {};
+hasVideoEnded.__workletHash = 3281537893520;
+hasVideoEnded.__initData = { code: "function hasVideoEnded_VideoQuestPlayerTsx1(currentTime,videoDuration){return currentTime>=videoDuration-1;}" };
+function canSeekForward(arg0, arg1, arg2, arg3) {
+  if (typeof hasVideoEnded !== "find") {
+    HermesBuiltin.throwTypeError();
   }
-  hasVideoEnded.__closure = {};
-  hasVideoEnded.__workletHash = 3281537893520;
-  hasVideoEnded.__initData = closure_17;
-  return hasVideoEnded;
-})();
-let closure_19 = { code: "function canSeekForward_VideoQuestPlayerTsx2(currentTime,maxTimestamp,videoDuration,isQuestCompleted){const{hasVideoEnded}=this.__closure;return!hasVideoEnded(currentTime,videoDuration)&&(isQuestCompleted||currentTime<=maxTimestamp-1);}" };
-let closure_20 = (() => {
-  function canSeekForward(arg0, arg1, arg2, arg3) {
-    let tmp = arg3;
-    let tmp2 = !outer1_18(arg0, arg2);
-    if (tmp2) {
-      if (!tmp) {
-        tmp = arg0 <= arg1 - 1;
-      }
-      tmp2 = tmp;
+  let tmp2 = !tmp;
+  if (arg0 < arg2 - 1) {
+    let tmp3 = arg3;
+    if (!arg3) {
+      tmp3 = arg0 <= arg1 - 1;
     }
-    return tmp2;
+    tmp2 = tmp3;
   }
-  canSeekForward.__closure = { hasVideoEnded: closure_18 };
-  canSeekForward.__workletHash = 741911733910;
-  canSeekForward.__initData = closure_19;
-  return canSeekForward;
-})();
-obj = {};
+  return tmp2;
+}
+canSeekForward.__closure = { hasVideoEnded };
+canSeekForward.__workletHash = 741911733910;
+canSeekForward.__initData = { code: "function canSeekForward_VideoQuestPlayerTsx2(currentTime,maxTimestamp,videoDuration,isQuestCompleted){const{hasVideoEnded}=this.__closure;return!hasVideoEnded(currentTime,videoDuration)&&(isQuestCompleted||currentTime<=maxTimestamp-1);}" };
+obj = { container: null, loadingContainer: null, bufferingSpinner: null, bufferingSpinnerCentered: null, video: null, videoContainer: null, controls: null, controlsTopBottom: null, controlsMiddle: null, controlsTop: null, controlsBottom: null, progressContainer: null, progress: null, icon: null, iconDisabled: null, controlButton: null };
 const merged = Object.assign(StyleSheet.absoluteFillObject);
-obj.container = {};
-_createForOfIteratorHelperLoose = {};
+obj[0] = {};
+createCacheKey = {};
 const merged1 = Object.assign(StyleSheet.absoluteFillObject);
-_createForOfIteratorHelperLoose["backgroundColor"] = require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWEST;
-_createForOfIteratorHelperLoose["justifyContent"] = "center";
-_createForOfIteratorHelperLoose["alignItems"] = "center";
-obj.loadingContainer = _createForOfIteratorHelperLoose;
-obj.bufferingSpinner = { position: "absolute" };
+createCacheKey.backgroundColor = require("Themes").colors.BACKGROUND_BASE_LOWEST;
+createCacheKey.justifyContent = "center";
+createCacheKey.alignItems = "center";
+obj[1] = createCacheKey;
+obj[2] = { position: "absolute" };
 let obj3 = {};
 const merged2 = Object.assign(StyleSheet.absoluteFillObject);
-obj3["justifyContent"] = "center";
-obj3["alignItems"] = "center";
-obj.bufferingSpinnerCentered = obj3;
-obj.video = { height: "100%", width: "100%" };
-obj.videoContainer = { position: "relative", height: "100%", width: "100%" };
+obj3.justifyContent = "center";
+obj3.alignItems = "center";
+obj[3] = obj3;
+obj[4] = { height: "100%", width: "100%" };
+obj[5] = { position: "relative", height: "100%", width: "100%" };
 let obj4 = {};
 const merged3 = Object.assign(StyleSheet.absoluteFillObject);
 let obj1 = {};
-const importDefaultResultResult = require("t")(require("_createForOfIteratorHelperLoose").unsafe_rawColors.BLACK);
-obj4["backgroundColor"] = require("t")(require("_createForOfIteratorHelperLoose").unsafe_rawColors.BLACK).alpha(0.5).hex();
-obj4["justifyContent"] = "center";
-obj4["alignItems"] = "center";
-obj4["flexDirection"] = "column";
-obj.controls = obj4;
-let obj5 = { flexDirection: "row", justifyContent: "flex-end", padding: require("_createForOfIteratorHelperLoose").space.PX_8, position: "absolute", left: 0, right: 0 };
-obj.controlsTopBottom = obj5;
-let obj6 = { justifyContent: "center", alignItems: "center", flexGrow: 1, flexDirection: "row", gap: require("_createForOfIteratorHelperLoose").space.PX_24, pointerEvents: "box-none" };
-obj.controlsMiddle = obj6;
-obj.controlsTop = { top: 0 };
-obj.controlsBottom = { bottom: 0 };
-let obj7 = { position: "absolute", bottom: 0, right: 0, left: 0, justifyContent: "flex-end", height: require("_createForOfIteratorHelperLoose").space.PX_16, overflow: "hidden" };
-obj.progressContainer = obj7;
-let obj8 = { height: 1, backgroundColor: require("_createForOfIteratorHelperLoose").colors.WHITE, shadowOffset: { width: 0, height: 0 }, shadowRadius: 6, shadowOpacity: 1, elevation: 5, shadowColor: "#FFFFFF" };
-obj.progress = obj8;
-const alphaResult = require("t")(require("_createForOfIteratorHelperLoose").unsafe_rawColors.BLACK).alpha(0.5);
-obj.icon = { color: require("_createForOfIteratorHelperLoose").colors.TEXT_DEFAULT };
-let obj9 = { color: require("_createForOfIteratorHelperLoose").colors.TEXT_DEFAULT };
-obj.iconDisabled = { color: require("_createForOfIteratorHelperLoose").colors.TEXT_SUBTLE };
-let obj10 = { color: require("_createForOfIteratorHelperLoose").colors.TEXT_SUBTLE };
-obj.controlButton = { padding: require("_createForOfIteratorHelperLoose").space.PX_8 };
-let closure_21 = _createForOfIteratorHelperLoose.createStyles(obj);
+const importDefaultResultResult = require("n")(require("Themes").unsafe_rawColors.BLACK);
+obj4.backgroundColor = require("n")(require("Themes").unsafe_rawColors.BLACK).alpha(0.5).hex();
+obj4.justifyContent = "center";
+obj4.alignItems = "center";
+obj4.flexDirection = "column";
+obj[6] = obj4;
+const alphaResult = require("n")(require("Themes").unsafe_rawColors.BLACK).alpha(0.5);
+obj[7] = { flexDirection: "row", justifyContent: "flex-end", padding: require("Themes").space.PX_8, position: "absolute", left: 0, right: 0 };
+let obj5 = { flexDirection: "row", justifyContent: "flex-end", padding: require("Themes").space.PX_8, position: "absolute", left: 0, right: 0 };
+obj[8] = { justifyContent: "center", alignItems: "center", flexGrow: 1, flexDirection: "row", gap: require("Themes").space.PX_24, pointerEvents: "box-none" };
+obj[9] = { top: 0 };
+obj[10] = { bottom: 0 };
+let obj6 = { justifyContent: "center", alignItems: "center", flexGrow: 1, flexDirection: "row", gap: require("Themes").space.PX_24, pointerEvents: "box-none" };
+obj[11] = { position: "absolute", bottom: 0, right: 0, left: 0, justifyContent: "flex-end", height: require("Themes").space.PX_16, overflow: "hidden" };
+let obj7 = { position: "absolute", bottom: 0, right: 0, left: 0, justifyContent: "flex-end", height: require("Themes").space.PX_16, overflow: "hidden" };
+obj[12] = { height: 1, backgroundColor: require("Themes").colors.WHITE, shadowOffset: { width: 0, height: 0 }, shadowRadius: 6, shadowOpacity: 1, elevation: 5, shadowColor: "#FFFFFF" };
+let obj8 = { height: 1, backgroundColor: require("Themes").colors.WHITE, shadowOffset: { width: 0, height: 0 }, shadowRadius: 6, shadowOpacity: 1, elevation: 5, shadowColor: "#FFFFFF" };
+obj[13] = { color: require("Themes").colors.TEXT_DEFAULT };
+let obj9 = { color: require("Themes").colors.TEXT_DEFAULT };
+obj[14] = { color: require("Themes").colors.TEXT_SUBTLE };
+let obj10 = { color: require("Themes").colors.TEXT_SUBTLE };
+obj[15] = { padding: require("Themes").space.PX_8 };
+let closure_19 = createCacheKey.createStyles(obj);
 let obj12 = { PAUSED: "paused", PLAYING: "playing", ENDED: "ended", LOADING: "loading", ERRORED: "errored" };
-let closure_23 = { code: "function shouldShowControls_VideoQuestPlayerTsx3(){const{hasLoaded,showControls,playerState,PlayerState,isVideoEnded,externallyPaused}=this.__closure;return hasLoaded&&(showControls.get()||playerState===PlayerState.PAUSED||playerState===PlayerState.ENDED||playerState===PlayerState.ERRORED||isVideoEnded||externallyPaused);}" };
-let closure_24 = { code: "function VideoQuestPlayerTsx4(){const{shouldShowControls,withSpring,SUBTLE_SPRING}=this.__closure;const show=shouldShowControls();return{opacity:withSpring(show?1:0,SUBTLE_SPRING),pointerEvents:show?'auto':'none'};}" };
-let closure_25 = { code: "function VideoQuestPlayerTsx5(){const{withTiming,progress,timingFast}=this.__closure;return{width:withTiming(progress.get()*100+\"%\",timingFast,'animate-always')};}" };
-let obj11 = { padding: require("_createForOfIteratorHelperLoose").space.PX_8 };
+let closure_21 = { code: "function shouldShowControls_VideoQuestPlayerTsx3(){const{hasLoaded,showControls,playerState,PlayerState,isVideoEnded,externallyPaused}=this.__closure;return hasLoaded&&(showControls.get()||playerState===PlayerState.PAUSED||playerState===PlayerState.ENDED||playerState===PlayerState.ERRORED||isVideoEnded||externallyPaused);}" };
+let closure_22 = { code: "function VideoQuestPlayerTsx4(){const{shouldShowControls,withSpring,SUBTLE_SPRING}=this.__closure;const show=shouldShowControls();return{opacity:withSpring(show?1:0,SUBTLE_SPRING),pointerEvents:show?'auto':'none'};}" };
+let closure_23 = { code: "function VideoQuestPlayerTsx5(){const{withTiming,progress,timingFast}=this.__closure;return{width:withTiming(progress.get()*100+\"%\",timingFast,'animate-always')};}" };
+let obj11 = { padding: require("Themes").space.PX_8 };
 const memoResult = importAllResult.memo((onLoad) => {
+  let c45;
   let contentInsets;
+  let duration;
+  let duration2;
   let externallyPaused;
+  let handleBufferAnalytics;
+  let handleEndAnalytics;
   let handleOpenTranscript;
   let handleToggleCaptions;
   let hasCaptionAsset;
-  let isBuffering;
   let isFullscreen;
+  let maxTimestampSec;
+  let orientation;
   let sourceQuestContent;
   let style;
-  let toggleBuffering;
+  let timestampSec;
+  let timestampSec2;
+  let tmp39;
+  let tmp72;
   onLoad = onLoad.onLoad;
+  handleBufferAnalytics = onLoad;
   const onEnd = onLoad.onEnd;
+  let ref1 = onEnd;
   const onToggleFullscreen = onLoad.onToggleFullscreen;
-  const orientation = onLoad.orientation;
+  let dependencyMap = onToggleFullscreen;
+  orientation = onLoad.orientation;
   ({ contentInsets, isFullscreen, externallyPaused } = onLoad);
   let flag = onLoad.captionsEnabled;
   ({ style, handleToggleCaptions, handleOpenTranscript } = onLoad);
@@ -147,22 +152,22 @@ const memoResult = importAllResult.memo((onLoad) => {
   let closure_12;
   let targetSeconds;
   let c14;
-  let c15;
+  let obj;
   let first1;
   let closure_17;
-  let callback;
+  let closure_18;
   let first2;
-  let callback2;
-  let callback3;
   let obj12;
+  let closure_21;
+  let closure_22;
   let closure_23;
   let closure_24;
-  first2 = undefined;
+  let c25;
   let sharedValue;
-  let c27;
+  let shouldShowControls;
   let sharedValue1;
   let closure_29;
-  let handleEndAnalytics;
+  handleEndAnalytics = undefined;
   let handleErrorAnalytics;
   let handleLoadAnalytics;
   let handleLoadStartAnalytics;
@@ -171,203 +176,245 @@ const memoResult = importAllResult.memo((onLoad) => {
   let handleReadyForDisplayAnalytics;
   let handleResumePlaybackAnalytics;
   let handleSeekAnalytics;
-  let ref1;
+  ref1 = undefined;
   let id;
   let gameTitle;
   let url1;
   let videoTitle;
   let str;
-  let closure_45;
-  callback2 = undefined;
+  c45 = undefined;
+  let callback2;
   let callback4;
   let callback6;
   let callback7;
   let c50;
   let ref2;
   let ref3;
-  toggleBuffering = undefined;
-  let left1 = callback3();
+  let callback18;
+  let tmp = first2();
+  obj = externallyPaused;
   ref = externallyPaused.useRef(null);
-  let obj = onLoad(onToggleFullscreen[12]);
-  const videoQuestModalContext = obj.useVideoQuestModalContext();
+  let obj1 = handleBufferAnalytics(14150);
+  const videoQuestModalContext = obj1.useVideoQuestModalContext();
   quest = videoQuestModalContext.quest;
-  let obj1 = onLoad(onToggleFullscreen[13]);
-  questTaskDetails = obj1.useQuestTaskDetails(quest);
+  let obj2 = handleBufferAnalytics(10492);
+  questTaskDetails = obj2.useQuestTaskDetails(quest);
   const userStatus = quest.userStatus;
   let completedAt;
-  if (null != userStatus) {
+  if (userStatus != null) {
     completedAt = userStatus.completedAt;
   }
-  c8 = tmp6;
+  let tmp8 = null != completedAt;
+  c8 = tmp8;
   let items = [quest];
-  memo = externallyPaused.useMemo(() => onLoad(onToggleFullscreen[14]).getQuestAsset(quest, onLoad(onToggleFullscreen[14]).QuestAssetType.VIDEO_PLAYER_VIDEO, undefined, true), items);
+  memo = obj.useMemo(() => handleBufferAnalytics(ref[14]).getQuestAsset(quest, handleBufferAnalytics(ref[14]).QuestAssetType.VIDEO_PLAYER_VIDEO, undefined, true), items);
   let items1 = [quest];
-  memo1 = externallyPaused.useMemo(() => onLoad(onToggleFullscreen[14]).getQuestAsset(quest, onLoad(onToggleFullscreen[14]).QuestAssetType.VIDEO_PLAYER_VIDEO_HLS, undefined, true), items1);
+  memo1 = obj.useMemo(() => handleBufferAnalytics(ref[14]).getQuestAsset(quest, handleBufferAnalytics(ref[14]).QuestAssetType.VIDEO_PLAYER_VIDEO_HLS, undefined, true), items1);
   let url;
-  if (null != memo1) {
+  if (memo1 != null) {
     url = memo1.url;
   }
   if (null != url) {
-    let VIDEO_PLAYER_VIDEO = onLoad(onToggleFullscreen[14]).QuestAssetType.VIDEO_PLAYER_VIDEO_HLS;
+    let VIDEO_PLAYER_VIDEO = tmp3(9479).QuestAssetType.VIDEO_PLAYER_VIDEO_HLS;
   } else {
-    VIDEO_PLAYER_VIDEO = onLoad(onToggleFullscreen[14]).QuestAssetType.VIDEO_PLAYER_VIDEO;
+    VIDEO_PLAYER_VIDEO = tmp3(9479).QuestAssetType.VIDEO_PLAYER_VIDEO;
   }
-  const tmp14 = orientation(externallyPaused.useState(questTaskDetails.targetSeconds), 2);
-  first = tmp14[0];
-  closure_12 = tmp14[1];
+  const tmp13 = orientation(obj.useState(questTaskDetails.targetSeconds), 2);
+  first = tmp13[0];
+  closure_12 = tmp13[1];
   targetSeconds = questTaskDetails.targetSeconds;
-  const tmp16 = memo((setVideoProgress) => setVideoProgress.setVideoProgress);
-  c14 = tmp16;
-  const tmp17 = memo((arg0) => {
+  const tmp15 = memo((setVideoProgress) => setVideoProgress.setVideoProgress);
+  c14 = tmp15;
+  const tmp16 = memo((arg0) => {
     let tmp = arg0.videoProgress[quest.id];
-    if (null == tmp) {
-      const obj = { timestampSec: questTaskDetails.progressSeconds, duration: first, maxTimestampSec: questTaskDetails.progressSeconds };
+    if (tmp == null) {
+      const obj = { timestampSec: null, duration: null, maxTimestampSec: null };
+      obj[0] = questTaskDetails.progressSeconds;
+      obj[1] = first;
+      obj[2] = questTaskDetails.progressSeconds;
       tmp = obj;
     }
     return tmp;
-  }, onLoad(onToggleFullscreen[15]).shallow);
-  c15 = tmp17;
-  const tmp18 = orientation(externallyPaused.useState(obj12.LOADING), 2);
+  }, handleBufferAnalytics(3802).shallow);
+  obj = tmp16;
+  const tmp18 = orientation(obj.useState(obj12.LOADING), 2);
   first1 = tmp18[0];
   closure_17 = tmp18[1];
-  callback = externallyPaused.useRef(false);
-  const tmp20 = orientation(externallyPaused.useState(false), 2);
+  closure_18 = obj.useRef(false);
+  const tmp20 = orientation(obj.useState(false), 2);
   first2 = tmp20[0];
-  callback2 = tmp20[1];
-  callback3 = externallyPaused.useRef(questTaskDetails.progressSeconds);
-  obj12 = externallyPaused.useRef([]);
-  closure_23 = externallyPaused.useRef(null);
-  closure_24 = externallyPaused.useRef(0);
+  obj12 = tmp20[1];
+  closure_21 = obj.useRef(questTaskDetails.progressSeconds);
+  closure_22 = obj.useRef([]);
+  closure_23 = obj.useRef(null);
+  closure_24 = obj.useRef(0);
+  let tmp22 = first2;
   if (first2) {
-    first2 = first1 === obj12.ENDED;
+    tmp22 = first1 === tmp17.ENDED;
   }
-  if (first2) {
-    first2 = callback(tmp17.timestampSec, tmp17.duration);
+  if (tmp22) {
+    ({ timestampSec, duration } = tmp16);
+    if (typeof closure_17 !== "find") {
+      HermesBuiltin.throwTypeError();
+    }
+    tmp22 = timestampSec >= duration - 1;
   }
-  let obj2 = onLoad(onToggleFullscreen[16]);
-  sharedValue = obj2.useSharedValue(false);
-  const tmp25 = (() => {
-    function shouldShowControls() {
-      let tmp = outer1_19;
-      if (outer1_19) {
-        let value = outer1_26.get();
+  c25 = tmp22;
+  let tmp3Result = tmp3(4050);
+  sharedValue = tmp3Result.useSharedValue(false);
+  shouldShowControls = function shouldShowControls() {
+    let tmp = first2;
+    if (first2) {
+      let value = sharedValue.get();
+      if (!value) {
+        value = first1 === lib2.PAUSED;
+      }
+      if (!value) {
+        value = first1 === lib2.ENDED;
+      }
+      if (!value) {
+        value = first1 === lib2.ERRORED;
+      }
+      if (!value) {
+        value = c25;
+      }
+      if (!value) {
+        value = externallyPaused;
+      }
+      tmp = value;
+    }
+    return tmp;
+  };
+  shouldShowControls.__closure = { hasLoaded: first2, showControls: sharedValue, playerState: first1, PlayerState: obj12, isVideoEnded: tmp22, externallyPaused };
+  shouldShowControls.__workletHash = 11602236169344;
+  shouldShowControls.__initData = closure_21;
+  tmp3Result = tmp3(4050);
+  class G {
+    constructor() {
+      if (typeof shouldShowControls !== "find") {
+        str2 = "Trying to call a non-function";
+        throwTypeErrorResult = HermesBuiltin.throwTypeError();
+      }
+      tmp = useState;
+      if (useState) {
+        tmp2 = c26;
+        value = c26.get();
         if (!value) {
-          value = outer1_16 === constants.PAUSED;
+          tmp4 = c16;
+          tmp5 = useState;
+          value = c16 === useState.PAUSED;
         }
         if (!value) {
-          value = outer1_16 === constants.ENDED;
+          tmp6 = c16;
+          tmp7 = useState;
+          value = c16 === useState.ENDED;
         }
         if (!value) {
-          value = outer1_16 === constants.ERRORED;
+          tmp8 = c16;
+          tmp9 = useState;
+          value = c16 === useState.ERRORED;
         }
         if (!value) {
-          value = outer1_25;
+          value = c25;
         }
         if (!value) {
-          value = outer1_4;
+          value = externallyPaused;
         }
         tmp = value;
       }
-      return tmp;
-    }
-    shouldShowControls.__closure = { hasLoaded: first2, showControls: sharedValue, playerState: first1, PlayerState: closure_22, isVideoEnded: first2, externallyPaused };
-    shouldShowControls.__workletHash = 11602236169344;
-    shouldShowControls.__initData = closure_23;
-    return shouldShowControls;
-  })();
-  c27 = tmp25;
-  let obj3 = onLoad(onToggleFullscreen[16]);
-  class K {
-    constructor() {
-      tmp = f108091();
-      obj = {};
-      obj2 = onLoad(onToggleFullscreen[17]);
+      tmp10 = handleBufferAnalytics;
+      tmp11 = useRef;
+      obj = handleBufferAnalytics(useRef[17]);
       num = 0;
       if (tmp) {
         num = 1;
       }
-      obj.opacity = obj2.withSpring(num, onLoad(onToggleFullscreen[18]).SUBTLE_SPRING);
+      obj = { opacity: obj.withSpring(num, tmp10(tmp11[18]).SUBTLE_SPRING), pointerEvents: null };
       str = "none";
       if (tmp) {
         str = "auto";
       }
-      obj.pointerEvents = str;
+      obj[1] = str;
       return obj;
     }
   }
-  obj = { shouldShowControls: tmp25, withSpring: onLoad(onToggleFullscreen[17]).withSpring, SUBTLE_SPRING: onLoad(onToggleFullscreen[18]).SUBTLE_SPRING };
-  K.__closure = obj;
-  K.__workletHash = 6174625876255;
-  K.__initData = closure_24;
-  const animatedStyle = obj3.useAnimatedStyle(K);
-  let obj5 = onLoad(onToggleFullscreen[16]);
-  sharedValue1 = obj5.useSharedValue(0);
-  let obj6 = onLoad(onToggleFullscreen[16]);
-  class W {
+  obj = { shouldShowControls, withSpring: tmp3(4599).withSpring, SUBTLE_SPRING: tmp3(4603).SUBTLE_SPRING };
+  G.__closure = obj;
+  G.__workletHash = 6174625876255;
+  G.__initData = closure_22;
+  const animatedStyle = tmp3Result.useAnimatedStyle(G);
+  if (first2) {
+    first2 = sharedValue.get() || first1 === tmp17.PAUSED || first1 === tmp17.ENDED || first1 === tmp17.ERRORED || tmp22 || externallyPaused;
+    const tmp25 = sharedValue.get() || first1 === tmp17.PAUSED || first1 === tmp17.ENDED || first1 === tmp17.ERRORED || tmp22 || externallyPaused;
+  }
+  sharedValue1 = handleBufferAnalytics(4050).useSharedValue(0);
+  const tmp3Result1 = handleBufferAnalytics(4050);
+  class U {
     constructor() {
-      obj = {};
-      obj2 = onLoad(onToggleFullscreen[19]);
+      obj = { width: null };
+      obj2 = handleBufferAnalytics(useRef[19]);
       result = 100 * c28.get();
-      obj.width = obj2.withTiming(`${tmp}%`, onLoad(onToggleFullscreen[20]).timingFast, "animate-always");
+      obj[0] = obj2.withTiming(`${tmp}%`, handleBufferAnalytics(useRef[20]).timingFast, "animate-always");
       return obj;
     }
   }
-  obj = { withTiming: onLoad(onToggleFullscreen[19]).withTiming, progress: sharedValue1, timingFast: onLoad(onToggleFullscreen[20]).timingFast };
-  W.__closure = obj;
-  W.__workletHash = 4647711667921;
-  W.__initData = first2;
-  const animatedStyle1 = obj6.useAnimatedStyle(W);
-  closure_29 = externallyPaused.useRef(-1);
+  obj = { withTiming: tmp3(4190).withTiming, progress: sharedValue1, timingFast: tmp3(4193).timingFast };
+  U.__closure = obj;
+  U.__workletHash = 4647711667921;
+  U.__initData = closure_23;
+  const animatedStyle1 = handleBufferAnalytics(4050).useAnimatedStyle(U);
+  closure_29 = obj.useRef(-1);
   const items2 = [sharedValue];
-  callback = externallyPaused.useCallback((arg0) => {
+  const callback = obj.useCallback((arg0) => {
     let closure_0 = arg0;
-    return (arg0) => {
+    return () => {
       const items = [...arguments];
       clearTimeout(outer1_29.current);
       let result = outer1_26.set(true);
       outer1_29.current = setTimeout(() => {
-        const result = outer2_26.set(false);
+        const result = closure_26.set(false);
       }, 2000);
       if (null != closure_0) {
         const items1 = [];
         HermesBuiltin.arraySpread(items, 0);
         return HermesBuiltin.apply(items1, undefined);
       }
+      const tmp3 = closure_0;
     };
   }, items2);
-  obj1 = { duration: first, isQuestCompleted: tmp6, playerState: first1, questId: quest.id, videoSessionId: videoQuestModalContext.videoSessionId, videoAssetId: VIDEO_PLAYER_VIDEO, sourceQuestContent };
-  const tmp31 = onEnd(onToggleFullscreen[21])(obj1);
-  handleEndAnalytics = tmp31.handleEndAnalytics;
-  handleErrorAnalytics = tmp31.handleErrorAnalytics;
-  handleLoadAnalytics = tmp31.handleLoadAnalytics;
-  handleLoadStartAnalytics = tmp31.handleLoadStartAnalytics;
-  handlePausePlaybackAnalytics = tmp31.handlePausePlaybackAnalytics;
-  handleProgressAnalytics = tmp31.handleProgressAnalytics;
-  handleReadyForDisplayAnalytics = tmp31.handleReadyForDisplayAnalytics;
-  handleResumePlaybackAnalytics = tmp31.handleResumePlaybackAnalytics;
-  handleSeekAnalytics = tmp31.handleSeekAnalytics;
-  ref1 = externallyPaused.useRef(null);
+  obj1 = { duration: first, isQuestCompleted: tmp8, playerState: first1, questId: quest.id, videoSessionId: videoQuestModalContext.videoSessionId, videoAssetId: VIDEO_PLAYER_VIDEO, sourceQuestContent };
+  const tmp30 = ref1(14158)(obj1);
+  ({ handleBufferAnalytics, handleEndAnalytics } = tmp30);
+  handleErrorAnalytics = tmp30.handleErrorAnalytics;
+  handleLoadAnalytics = tmp30.handleLoadAnalytics;
+  handleLoadStartAnalytics = tmp30.handleLoadStartAnalytics;
+  handlePausePlaybackAnalytics = tmp30.handlePausePlaybackAnalytics;
+  handleProgressAnalytics = tmp30.handleProgressAnalytics;
+  handleReadyForDisplayAnalytics = tmp30.handleReadyForDisplayAnalytics;
+  handleResumePlaybackAnalytics = tmp30.handleResumePlaybackAnalytics;
+  handleSeekAnalytics = tmp30.handleSeekAnalytics;
+  ref1 = obj.useRef(null);
   id = quest.id;
   gameTitle = quest.config.messages.gameTitle;
   url1 = undefined;
-  if (null != memo1) {
+  if (memo1 != null) {
     url1 = memo1.url;
   }
-  if (null == url1) {
+  if (url1 == null) {
     let url2;
-    if (null != memo) {
+    if (memo != null) {
       url2 = memo.url;
     }
     url1 = url2;
   }
-  let obj9 = onLoad(onToggleFullscreen[22]);
-  const defaultWatchVideoTask = obj9.getDefaultWatchVideoTask(quest.config);
+  const tmp3Result2 = handleBufferAnalytics(4050);
+  const defaultWatchVideoTask = handleBufferAnalytics(6008).getDefaultWatchVideoTask(quest.config);
   videoTitle = undefined;
-  if (null != defaultWatchVideoTask) {
+  if (defaultWatchVideoTask != null) {
     videoTitle = defaultWatchVideoTask.messages.videoTitle;
   }
   let url3;
-  if (null != memo1) {
+  if (memo1 != null) {
     url3 = memo1.url;
   }
   str = "mp4";
@@ -375,31 +422,37 @@ const memoResult = importAllResult.memo((onLoad) => {
     str = "hls";
   }
   const items3 = [id, gameTitle, targetSeconds, url1, videoTitle, str];
-  const effect = externallyPaused.useEffect(() => {
+  const effect = obj.useEffect(() => {
     if (null != ref.current) {
       if (null != url1) {
-        if (0 !== url1.length) {
-          let obj = onLoad(onToggleFullscreen[23]);
-          obj = { location: memo1.VIDEO_MODAL_MOBILE };
+        if (0 !== arr.length) {
+          let obj = handleBufferAnalytics(ref[23]);
+          obj = { location: null };
+          obj[0] = memo1.VIDEO_MODAL_MOBILE;
           if (obj.getVideoQoEMetricsConfig(obj).externalAnalyticsEnabled) {
-            const constants = onLoad(onToggleFullscreen[24]).getConstants();
-            obj = { videoRef: ref.current, feature: "quests" };
-            ({ Version: obj4.appVersion, ReleaseChannel: obj4.releaseChannel } = constants);
-            const obj1 = { contentId: url1, videoStreamType: "quests", contentType: "quests", durationMs: 1000 * targetSeconds, title: videoTitle, questId: id, gameName: gameTitle };
-            obj.contentMetadata = obj1;
-            const MobileMuxWrapper = onLoad(onToggleFullscreen[23]).MobileMuxWrapper;
-            const prototype = MobileMuxWrapper.prototype;
-            const mobileMuxWrapper = new MobileMuxWrapper(obj);
+            const constants = tmp2(tmp3[24]).getConstants();
+            obj = { videoRef: null, feature: "quests", appVersion: null, releaseChannel: null, contentMetadata: null };
+            obj[0] = tmp.current;
+            ({ Version: obj4[2], ReleaseChannel: obj4[3] } = constants);
+            const obj1 = { contentId: null, videoStreamType: null, contentType: "quests", durationMs: null, title: null, questId: null, gameName: null };
+            obj1[0] = arr;
+            obj1[1] = str;
+            obj1[3] = 1000 * targetSeconds;
+            obj1[4] = videoTitle;
+            obj1[5] = id;
+            obj1[6] = gameTitle;
+            obj[4] = obj1;
+            const mobileMuxWrapper = new tmp2(tmp3[23]).MobileMuxWrapper(obj);
             ref1.current = mobileMuxWrapper;
             let current = ref1.current;
             current.initialize();
             return () => {
-              if (null != outer1_39.current) {
-                const current = outer1_39.current;
-                current.onProgress(outer1_21.current);
-                const current2 = outer1_39.current;
+              if (null != ref2.current) {
+                const current = tmp.current;
+                current.onProgress(ref.current);
+                const current2 = tmp.current;
                 current2.destroy();
-                outer1_39.current = null;
+                tmp.current = null;
               }
             };
           }
@@ -407,53 +460,55 @@ const memoResult = importAllResult.memo((onLoad) => {
       }
     }
   }, items3);
-  const tmp39 = orientation(externallyPaused.useState(false), 2);
-  closure_45 = tmp39[1];
+  let tmp12Result = tmp12(obj.useState(false), 2);
+  [tmp39, c45] = tmp12Result;
   const items4 = [handleReadyForDisplayAnalytics];
-  const items5 = [tmp17.maxTimestampSec];
-  const callback1 = externallyPaused.useCallback(() => {
+  const items5 = [tmp16.maxTimestampSec];
+  const callback1 = obj.useCallback(() => {
     handleReadyForDisplayAnalytics();
     const current = ref1.current;
-    if (null != current) {
+    if (current != null) {
       current.onReadyForDisplay();
     }
-    callback3(true);
+    _undefined4(true);
   }, items4);
-  callback2 = externallyPaused.useCallback((arg0) => {
+  callback2 = obj.useCallback((arg0) => {
+    let seek = ref;
     if (null != ref.current) {
       const _Math = Math;
       const _Math2 = Math;
       const bound = Math.max(0, Math.min(arg0, _undefined3.maxTimestampSec));
       if (obj.isAndroid()) {
-        ref3.current = (ref3.current + 1) % 100;
-        const current2 = ref.current;
-        current2.seek(bound + 0.0001 * ref3.current);
+        ref5.current = (ref5.current + 1) % 100;
+        const current2 = seek.current;
+        seek = current2.seek;
+        seek(bound + 0.0001 * ref5.current);
       } else {
-        const current = ref.current;
+        const current = seek.current;
         current.seek(bound);
       }
       closure_23.current = bound;
-      obj = onLoad(onToggleFullscreen[25]);
+      obj = handleBufferAnalytics(ref[25]);
     }
   }, items5);
-  const items6 = [null != completedAt, tmp17.timestampSec, handleLoadAnalytics, onLoad, callback2];
-  const items7 = [first1, handlePausePlaybackAnalytics, handleResumePlaybackAnalytics, first2, callback2];
-  callback3 = externallyPaused.useCallback((arg0) => {
+  const items6 = [tmp8, tmp16.timestampSec, handleLoadAnalytics, onLoad, callback2];
+  const items7 = [first1, handlePausePlaybackAnalytics, handleResumePlaybackAnalytics, tmp22, callback2];
+  const callback3 = obj.useCallback((arg0) => {
     let duration;
     let naturalSize;
     let trackId;
     let videoTracks;
     ({ duration, videoTracks, trackId, naturalSize } = arg0);
     lib(duration);
-    callback2(true);
+    lib2(true);
     handleLoadAnalytics();
     const current = ref1.current;
-    if (null != current) {
+    if (current != null) {
       current.onLoad(duration);
     }
     if (null != naturalSize) {
-      const current2 = ref1.current;
-      if (null != current2) {
+      const current2 = tmp4.current;
+      if (current2 != null) {
         const result = current2.updateVideoSourceDimensions(naturalSize.width, naturalSize.height);
       }
     }
@@ -468,30 +523,30 @@ const memoResult = importAllResult.memo((onLoad) => {
       tmp7 = trackId.length > 0;
     }
     if (tmp7) {
-      const current3 = ref1.current;
-      if (null != current3) {
+      const current3 = tmp4.current;
+      if (current3 != null) {
         current3.onVideoTrackChange(trackId, videoTracks);
       }
     }
     if (null != ref.current) {
       const timestampSec = _undefined3.timestampSec;
-      let tmp12 = !c8;
+      let tmp11 = !c8;
       if (!c8) {
-        tmp12 = timestampSec > 5;
+        tmp11 = timestampSec > 5;
       }
-      if (tmp12) {
-        tmp12 = timestampSec < duration - 3;
+      if (tmp11) {
+        tmp11 = timestampSec < duration - 3;
       }
-      if (tmp12) {
+      if (tmp11) {
         callback2(timestampSec - 1);
       }
-      callback(closure_22.PLAYING);
-      if (null != onLoad) {
-        onLoad(arg0);
+      callback(lib2.PLAYING);
+      if (handleBufferAnalytics != null) {
+        handleBufferAnalytics(arg0);
       }
     }
   }, items6);
-  callback4 = externallyPaused.useCallback(() => {
+  callback4 = obj.useCallback(() => {
     let obj = arg0;
     if (arg0 === undefined) {
       obj = {};
@@ -500,216 +555,231 @@ const memoResult = importAllResult.memo((onLoad) => {
     if (flag === undefined) {
       flag = true;
     }
-    if (first1 !== closure_22.ERRORED) {
-      if (first1 !== closure_22.PAUSED) {
-        if (first1 !== closure_22.LOADING) {
-          if (first1 === closure_22.PLAYING) {
-            callback(closure_22.PAUSED);
+    if (first1 !== lib2.ERRORED) {
+      if (tmp !== tmp2.PAUSED) {
+        if (tmp !== tmp2.LOADING) {
+          if (tmp === tmp2.PLAYING) {
+            callback(tmp2.PAUSED);
             handlePausePlaybackAnalytics();
             const current3 = ref1.current;
-            if (null != current3) {
+            if (current3 != null) {
               current3.onPause();
             }
           }
         }
       }
-      callback(closure_22.PLAYING);
+      callback(tmp2.PLAYING);
       handleResumePlaybackAnalytics();
       const current = ref1.current;
-      if (null != current) {
+      if (current != null) {
         current.onPlay();
       }
     }
     callback2(0);
-    callback(closure_22.PLAYING);
+    callback(lib2.PLAYING);
     handleResumePlaybackAnalytics();
     const current2 = ref1.current;
-    if (null != current2) {
+    if (current2 != null) {
       current2.onPlay();
     }
   }, items7);
   const items8 = [callback4];
   const items9 = [first1, handlePausePlaybackAnalytics];
-  const callback5 = externallyPaused.useCallback(() => callback4(), items8);
-  callback6 = externallyPaused.useCallback(() => {
+  const callback5 = obj.useCallback(() => callback4(), items8);
+  callback6 = obj.useCallback(() => {
     closure_18.current = false;
-    if (first1 === closure_22.PLAYING) {
-      closure_18.current = true;
-      callback(closure_22.PAUSED);
+    if (first1 === lib2.PLAYING) {
+      tmp.current = true;
+      callback(tmp2.PAUSED);
       handlePausePlaybackAnalytics();
       const current = ref1.current;
-      if (null != current) {
+      if (current != null) {
         current.onPause();
       }
     }
   }, items9);
   const items10 = [first1, handleResumePlaybackAnalytics];
-  callback7 = externallyPaused.useCallback(() => {
-    if (ref.current) {
-      ref.current = false;
-      if (first1 !== closure_22.ERRORED) {
-        callback(closure_22.PLAYING);
+  callback7 = obj.useCallback(() => {
+    if (ref2.current) {
+      tmp.current = false;
+      if (first1 !== lib2.ERRORED) {
+        callback(tmp3.PLAYING);
         handleResumePlaybackAnalytics();
         const current = ref1.current;
-        if (null != current) {
+        if (current != null) {
           current.onPlay();
         }
       }
     }
   }, items10);
   const items11 = [callback6, callback7];
-  const effect1 = externallyPaused.useEffect(() => {
-    let ComponentDispatch = onLoad(onToggleFullscreen[26]).ComponentDispatch;
+  const effect1 = obj.useEffect(() => {
+    let ComponentDispatch = handleBufferAnalytics(ref[26]).ComponentDispatch;
     const subscription = ComponentDispatch.subscribe(lib.QUEST_GAME_LINK_OPENED, callback6);
-    let ComponentDispatch2 = onLoad(onToggleFullscreen[26]).ComponentDispatch;
+    let ComponentDispatch2 = handleBufferAnalytics(ref[26]).ComponentDispatch;
     const subscription1 = ComponentDispatch2.subscribe(lib.QUEST_APP_STORE_OVERLAY_FINISHED, callback7);
     return () => {
-      const ComponentDispatch = onLoad(onToggleFullscreen[26]).ComponentDispatch;
-      ComponentDispatch.unsubscribe(constants.QUEST_GAME_LINK_OPENED, outer1_48);
-      const ComponentDispatch2 = onLoad(onToggleFullscreen[26]).ComponentDispatch;
-      ComponentDispatch2.unsubscribe(constants.QUEST_APP_STORE_OVERLAY_FINISHED, outer1_49);
+      const ComponentDispatch = outer1_0(outer1_2[26]).ComponentDispatch;
+      ComponentDispatch.unsubscribe(outer1_12.QUEST_GAME_LINK_OPENED, closure_48);
+      const ComponentDispatch2 = outer1_0(outer1_2[26]).ComponentDispatch;
+      ComponentDispatch2.unsubscribe(outer1_12.QUEST_APP_STORE_OVERLAY_FINISHED, closure_49);
     };
   }, items11);
   const items12 = [onToggleFullscreen, orientation];
   const items13 = [sharedValue, callback4];
-  const callback8 = externallyPaused.useCallback(() => {
-    if (null != onToggleFullscreen) {
-      const obj = { orientation };
-      onToggleFullscreen(obj);
+  const callback8 = obj.useCallback(() => {
+    if (closure_2 != null) {
+      const obj = { orientation: null };
+      obj[0] = orientation;
+      tmp(obj);
     }
   }, items12);
-  const items14 = [first, sharedValue1, handleSeekAnalytics, quest.id, tmp16];
-  const callback9 = externallyPaused.useCallback(() => {
+  const items14 = [first, sharedValue1, handleSeekAnalytics, quest.id, tmp15];
+  const callback9 = obj.useCallback(() => {
     if (sharedValue.get()) {
       const result = sharedValue.set(false);
     }
     callback4({ shouldRestartVideo: false });
   }, items13);
-  let tmp51 = first1 === obj12.ERRORED;
-  const callback10 = externallyPaused.useCallback((currentTime) => {
-    let current = closure_22.current;
-    const arr = current.shift();
-    let tmp2 = null;
-    if (null != arr) {
-      tmp2 = arr;
+  let tmp51 = first1 === tmp17.ERRORED;
+  const callback10 = obj.useCallback((currentTime) => {
+    let current = ref3.current;
+    let arr = current.shift();
+    if (arr == null) {
+      arr = null;
     }
     if (null != ref.current) {
       closure_21.current = currentTime.currentTime;
       closure_23.current = null;
       if (first > 0) {
-        const result = sharedValue1.set(currentTime.currentTime / first);
-        _undefined2(quest.id, currentTime.currentTime, first);
+        const result = sharedValue1.set(currentTime.currentTime / tmp15);
+        _undefined2(quest.id, currentTime.currentTime, tmp15);
       }
-      handleSeekAnalytics(tmp2, currentTime.currentTime);
+      handleSeekAnalytics(arr, currentTime.currentTime);
       current = ref1.current;
-      if (null != current) {
+      if (current != null) {
         current.updatePlayheadTime(currentTime.currentTime);
       }
       const current2 = ref1.current;
-      if (null != current2) {
+      if (current2 != null) {
         current2.onSeek();
       }
+      const tmp9 = ref1;
     }
   }, items14);
   if (!tmp51) {
-    tmp51 = !callback2(tmp17.timestampSec, tmp17.maxTimestampSec, tmp17.duration, tmp6);
+    ({ timestampSec: timestampSec2, maxTimestampSec, duration: duration2 } = tmp16);
+    if (typeof closure_18 !== "find") {
+      HermesBuiltin.throwTypeError();
+    }
+    if (typeof closure_17 !== "find") {
+      HermesBuiltin.throwTypeError();
+    }
+    let tmp55 = !tmp54;
+    if (timestampSec2 < duration2 - 1) {
+      if (!tmp8) {
+        tmp8 = timestampSec2 <= maxTimestampSec - 1;
+      }
+      tmp55 = tmp8;
+    }
+    tmp51 = !tmp55;
   }
   c50 = tmp51;
   const items15 = [callback2, first, sharedValue1, tmp51];
   const items16 = [callback2, first, sharedValue1, first1];
-  const callback11 = externallyPaused.useCallback(() => {
+  const callback11 = obj.useCallback(() => {
     if (!c50) {
-      let current = ref2.current;
-      if (null == current) {
+      let current = ref4.current;
+      if (current == null) {
         current = sharedValue1.get() * first;
       }
-      current = closure_22.current;
+      current = ref3.current;
       current.push(current);
       callback2(current + 10);
     }
   }, items15);
-  const tmp25Result = tmp25();
-  const callbackResult = callback(externallyPaused.useCallback(() => {
-    let current = ref2.current;
-    if (null == current) {
+  const tmp3Result3 = handleBufferAnalytics(6008);
+  const callbackResult = callback(obj.useCallback(() => {
+    let current = ref4.current;
+    if (current == null) {
       current = sharedValue1.get() * first;
     }
-    current = closure_22.current;
+    current = ref3.current;
     current.push(current);
     callback2(current - 10);
-    if (first1 === closure_22.ENDED) {
-      callback(closure_22.PLAYING);
+    if (first1 === lib2.ENDED) {
+      callback(tmp5.PLAYING);
     }
   }, items16));
-  ref2 = externallyPaused.useRef(0);
-  ref3 = externallyPaused.useRef(0);
-  const items17 = [sharedValue1, quest, ref2, ref3, questTaskDetails.taskType, tmp16, handleProgressAnalytics];
+  ref2 = obj.useRef(0);
+  ref3 = obj.useRef(0);
+  const items17 = [sharedValue1, quest, ref2, ref3, questTaskDetails.taskType, tmp15, handleProgressAnalytics];
   const items18 = [first, quest, handleEndAnalytics, onEnd];
-  const callback12 = externallyPaused.useCallback((seekableDuration) => {
+  const callback12 = obj.useCallback((seekableDuration) => {
     let num = 0;
     if (0 !== seekableDuration.seekableDuration) {
       num = seekableDuration.currentTime / seekableDuration.seekableDuration;
     }
     closure_21.current = seekableDuration.currentTime;
     if (seekableDuration.currentTime >= ref2.current) {
-      onLoad(onToggleFullscreen[27]).sendVideoProgress(quest, seekableDuration.currentTime);
+      handleBufferAnalytics(ref[27]).sendVideoProgress(quest, seekableDuration.currentTime);
       handleProgressAnalytics(num, seekableDuration.seekableDuration, seekableDuration.currentTime);
       const _Math = Math;
       const sum = seekableDuration.currentTime + 6;
-      ref2.current = sum + 2 * Math.random();
-      const obj2 = onLoad(onToggleFullscreen[27]);
+      tmp.current = sum + 2 * Math.random();
+      const obj = handleBufferAnalytics(ref[27]);
     }
     if (seekableDuration.currentTime >= ref3.current) {
-      const result = onLoad(onToggleFullscreen[28]).updateOptimisticProgress(quest.id, questTaskDetails.taskType, seekableDuration.currentTime);
-      ref3.current = seekableDuration.currentTime + 1;
-      const obj = onLoad(onToggleFullscreen[28]);
+      const result = handleBufferAnalytics(ref[28]).updateOptimisticProgress(quest.id, questTaskDetails.taskType, seekableDuration.currentTime);
+      tmp10.current = seekableDuration.currentTime + 1;
+      const obj2 = handleBufferAnalytics(ref[28]);
     }
     _undefined2(quest.id, seekableDuration.currentTime, seekableDuration.seekableDuration);
     const result1 = sharedValue1.set(num);
     const current = ref1.current;
-    if (null != current) {
+    if (current != null) {
       current.onProgress(seekableDuration.currentTime);
     }
   }, items17);
   const items19 = [handleLoadStartAnalytics];
-  const callback13 = externallyPaused.useCallback(() => {
-    onLoad(onToggleFullscreen[27]).sendVideoProgress(quest, first);
+  const callback13 = obj.useCallback(() => {
+    handleBufferAnalytics(ref[27]).sendVideoProgress(quest, first);
     handleEndAnalytics();
-    callback(closure_22.ENDED);
+    callback(lib2.ENDED);
     const current = ref1.current;
-    if (null != current) {
+    if (current != null) {
       current.onProgress(first);
     }
     const current2 = ref1.current;
-    if (null != current2) {
+    if (current2 != null) {
       current2.onEnd();
     }
-    if (null != onEnd) {
-      onEnd();
+    if (ref1 != null) {
+      ref1();
     }
   }, items18);
   const items20 = [handleErrorAnalytics];
-  const callback14 = externallyPaused.useCallback(() => {
-    callback(closure_22.LOADING);
+  const callback14 = obj.useCallback(() => {
+    callback(lib2.LOADING);
     handleLoadStartAnalytics();
     const current = ref1.current;
-    if (null != current) {
+    if (current != null) {
       current.onLoadStart();
     }
     const current2 = ref1.current;
-    if (null != current2) {
+    if (current2 != null) {
       current2.onPlay();
     }
   }, items19);
-  const callback15 = externallyPaused.useCallback((arg0) => {
-    callback(closure_22.ERRORED);
+  const callback15 = obj.useCallback((arg0) => {
+    callback(lib2.ERRORED);
     handleErrorAnalytics(arg0);
     const current = ref1.current;
-    if (null != current) {
+    if (current != null) {
       current.onError(arg0);
     }
   }, items20);
-  const callback16 = externallyPaused.useCallback((videoTracks) => {
+  const callback16 = obj.useCallback((videoTracks) => {
     let tmp = null != videoTracks && null != videoTracks.videoTracks;
     if (tmp) {
       tmp = videoTracks.videoTracks.length > 0;
@@ -722,410 +792,376 @@ const memoResult = importAllResult.memo((onLoad) => {
     }
     if (tmp) {
       const current = ref1.current;
-      if (null != current) {
+      if (current != null) {
         current.onVideoTrackChange(videoTracks.selectedVideoTrackId, videoTracks.videoTracks);
       }
     }
   }, []);
-  const callback17 = externallyPaused.useCallback((nativeEvent) => {
+  const callback17 = obj.useCallback((nativeEvent) => {
     let height;
     let width;
     let layout;
-    if (null != nativeEvent) {
+    if (nativeEvent != null) {
       nativeEvent = nativeEvent.nativeEvent;
-      if (null != nativeEvent) {
+      if (nativeEvent != null) {
         layout = nativeEvent.layout;
       }
     }
     if (null != layout) {
       ({ width, height } = nativeEvent.nativeEvent.layout);
-      if (width > 0) {
-        if (height > 0) {
-          const current = ref1.current;
-          if (null != current) {
-            const result = current.updateVideoDimensions(width, height);
-          }
+      if (tmp2) {
+        const current = ref1.current;
+        if (current != null) {
+          const result = current.updateVideoDimensions(width, height);
         }
       }
+      tmp2 = width > 0 && height > 0;
     }
   }, []);
-  let obj10 = onLoad(onToggleFullscreen[29]);
+  const callbackResult1 = callback(callback11);
   const items21 = [c8];
-  const tmp65 = obj10.useStateFromStores(items21, () => _undefined.getState()) === first.ACTIVE;
+  const tmp67 = handleBufferAnalytics(589).useStateFromStores(items21, () => _undefined.getState()) === first.ACTIVE;
   const items22 = [memo1, memo];
-  const memo2 = externallyPaused.useMemo(() => {
-    let tmp = null;
+  const memo2 = obj.useMemo(() => {
+    let tmp2 = null;
     if (null != memo) {
-      const obj = {};
       let url;
-      if (null != memo1) {
+      if (memo1 != null) {
         url = memo1.url;
       }
-      if (null == url) {
-        url = memo.url;
+      if (url == null) {
+        url = tmp.url;
       }
-      obj.uri = url;
-      tmp = obj;
+      const obj = { uri: null };
+      obj[0] = url;
+      tmp2 = obj;
     }
-    return tmp;
+    return tmp2;
   }, items22);
-  const layoutEffect = externallyPaused.useLayoutEffect(() => {
+  const layoutEffect = obj.useLayoutEffect(() => {
     if (obj.isAndroid()) {
       const current = ref.current;
       return () => {
-        let tmp2 = tmp;
-        if (null != current) {
-          tmp2 = null == current.setNativeProps;
-        }
-        if (!tmp2) {
-          let obj = { paused: true };
-          obj = { uri: null };
-          obj.src = obj;
-          current.setNativeProps(obj);
+        try {
+          if (current != null) {
+            const setNativeProps = current.setNativeProps;
+            if (setNativeProps != null) {
+              const obj = { paused: true, src: null };
+              obj[1] = { uri: null };
+              setNativeProps(obj);
+            }
+          }
+        } catch (tmp4) {
+          outer1_1(outer1_2[30]).captureException(tmp4);
+          const obj2 = outer1_1(outer1_2[30]);
         }
       };
     }
-    obj = onLoad(onToggleFullscreen[25]);
+    obj = handleBufferAnalytics(ref[25]);
   }, []);
-  let tmp68 = !tmp65;
-  if (tmp65) {
-    tmp68 = first1 === obj12.PAUSED;
+  let tmp70 = !tmp67;
+  if (tmp67) {
+    tmp70 = first1 === tmp17.PAUSED;
   }
-  if (!tmp68) {
-    tmp68 = first1 === obj12.LOADING;
+  if (!tmp70) {
+    tmp70 = first1 === tmp17.LOADING;
   }
-  if (!tmp68) {
-    tmp68 = externallyPaused;
+  if (!tmp70) {
+    tmp70 = externallyPaused;
   }
-  const callbackResult1 = callback(callback11);
-  ({ isBuffering, toggleBuffering } = (function useBufferingState(handleBufferAnalytics) {
-    handleBufferAnalytics = handleBufferAnalytics.handleBufferAnalytics;
-    const videoQoETracker = handleBufferAnalytics.videoQoETracker;
-    let closure_2 = externallyPaused.useRef(false);
-    const tmp = orientation(externallyPaused.useState(false), 2);
-    let _slicedToArray = tmp[1];
-    const items = [handleBufferAnalytics, videoQoETracker];
-    return {
-      isBuffering: tmp[0],
-      toggleBuffering: externallyPaused.useCallback((current) => {
-        callback(current);
-        if (current !== ref.current) {
-          ref.current = current;
-          handleBufferAnalytics(current);
-          current = videoQoETracker.current;
-          if (null != current) {
-            current.onBuffer(current);
-          }
-        }
-      }, items)
-    };
-  })({ handleBufferAnalytics: tmp31.handleBufferAnalytics, videoQoETracker: ref1 }));
-  const items23 = [toggleBuffering, first1];
-  const items24 = [toggleBuffering];
-  const callback18 = externallyPaused.useCallback((isBuffering) => {
+  dependencyMap = obj.useRef(false);
+  tmp12Result = tmp12(obj.useState(false), 2);
+  [tmp72, orientation] = tmp12Result;
+  const items23 = [handleBufferAnalytics, ref1];
+  callback18 = obj.useCallback((current) => {
+    orientation(current);
+    if (current !== ref.current) {
+      ref.current = current;
+      handleBufferAnalytics(current);
+      current = ref1.current;
+      if (current != null) {
+        current.onBuffer(current);
+      }
+    }
+  }, items23);
+  const items24 = [callback18, first1];
+  const items25 = [callback18];
+  const callback19 = obj.useCallback((isBuffering) => {
     isBuffering = isBuffering.isBuffering;
     if (!isBuffering) {
       if (!isBuffering) {
-        toggleBuffering(false);
+        callback18(false);
       }
     } else {
-      if (first1 !== closure_22.LOADING) {
-        const obj = onLoad(onToggleFullscreen[25]);
+      if (first1 !== lib2.LOADING) {
+        const obj = handleBufferAnalytics(ref[25]);
       }
-      toggleBuffering(true);
-    }
-  }, items23);
-  const items25 = [toggleBuffering];
-  const callback19 = externallyPaused.useCallback(() => {
-    if (obj.isIOS()) {
-      toggleBuffering(true);
+      callback18(true);
     }
   }, items24);
-  const callback20 = externallyPaused.useCallback(() => {
+  const items26 = [callback18];
+  const callback20 = obj.useCallback(() => {
     if (obj.isIOS()) {
-      toggleBuffering(false);
+      callback18(true);
     }
   }, items25);
-  const tmp75 = onEnd(onToggleFullscreen[31])();
+  const callback21 = obj.useCallback(() => {
+    if (obj.isIOS()) {
+      callback18(false);
+    }
+  }, items26);
+  const rect = tmp29(1581)();
   if (null == memo2) {
     return null;
   } else {
-    let tmp76 = isFullscreen;
+    let tmp77 = isFullscreen;
     if (isFullscreen) {
-      tmp76 = null != tmp75;
+      tmp77 = null != rect;
     }
-    if (tmp76) {
-      obj2 = { paddingRight: sharedValue(tmp75, "right"), paddingLeft: sharedValue(tmp75, "left") };
-      tmp76 = obj2;
+    if (tmp77) {
+      obj2 = { paddingRight: null, paddingLeft: null };
+      let _Math = Math;
+      obj2[0] = Math.max(rect.right, obj.right);
+      let _Math2 = Math;
+      obj2[1] = Math.max(rect.left, obj.left);
+      tmp77 = obj2;
     }
-    obj3 = {};
-    const items26 = [left1.container, style];
-    obj3.style = items26;
-    obj3.accessible = false;
-    const obj4 = {};
-    const items27 = [left1.videoContainer];
-    obj4.style = items27;
-    obj4.onPress = callback9;
-    obj4.accessible = !tmp25Result;
-    const intl = onLoad(onToggleFullscreen[32]).intl;
-    const t = onLoad(onToggleFullscreen[32]).t;
-    obj4.accessibilityLabel = intl.string(tmp68 ? t.R3aFPe : t.fTMEUi);
-    let tmp87 = first1 !== obj12.ERRORED;
-    if (tmp87) {
-      obj5 = { mixWithOthers: "inherit", ref, accessible: false, importantForAccessibility: "no-hide-descendants", accessibilityRole: "none", style: left1.video, paused: tmp68, source: memo2, onBuffer: callback18, onPlaybackStalled: callback19, onPlaybackResume: callback20, onLoad: callback3, onSeek: callback10, onProgress: callback12, onLoadStart: callback14, onEnd: callback13, onError: callback15, onReadyForDisplay: callback1, onVideoTracks: callback16, onLayout: callback17, resizeMode: "contain" };
-      tmp87 = targetSeconds(first1, obj5);
+    const obj3 = { style: null, accessible: false, children: null };
+    const items27 = [tmp.container, style];
+    obj3[0] = items27;
+    const obj4 = { style: null, onPress: null, accessible: null, accessibilityLabel: null, children: null };
+    const items28 = [tmp.videoContainer];
+    obj4[0] = items28;
+    obj4[1] = callback9;
+    obj4[2] = !first2;
+    const intl = tmp3(1236).intl;
+    const t = tmp3(1236).t;
+    obj4[3] = intl.string(tmp70 ? t.R3aFPe : t.fTMEUi);
+    let tmp80Result = first1 !== tmp17.ERRORED;
+    if (tmp80Result) {
+      const obj5 = { mixWithOthers: "inherit", ref: null, accessible: false, importantForAccessibility: "no-hide-descendants", accessibilityRole: "none", style: null, paused: null, source: null, onBuffer: null, onPlaybackStalled: null, onPlaybackResume: null, onLoad: null, onSeek: null, onProgress: null, onLoadStart: null, onEnd: null, onError: null, onReadyForDisplay: null, onVideoTracks: null, onLayout: null, resizeMode: "contain" };
+      obj5[1] = ref;
+      obj5[5] = tmp.video;
+      obj5[6] = tmp70;
+      obj5[7] = memo2;
+      obj5[8] = callback19;
+      obj5[9] = callback20;
+      obj5[10] = callback21;
+      obj5[11] = callback3;
+      obj5[12] = callback10;
+      obj5[13] = callback12;
+      obj5[14] = callback14;
+      obj5[15] = callback13;
+      obj5[16] = callback15;
+      obj5[17] = callback1;
+      obj5[18] = callback16;
+      obj5[19] = callback17;
+      tmp80Result = tmp80(first1, obj5);
     }
-    const items28 = [tmp87, , , , , ];
-    obj6 = { quest, currentTime: tmp17.timestampSec, visible: flag };
-    const obj7 = {};
-    let top;
-    if (null != contentInsets) {
-      top = contentInsets.top;
+    const items29 = [tmp80Result, , , , , ];
+    const obj6 = { quest: null, currentTime: null, visible: null, style: null };
+    obj6[0] = quest;
+    obj6[1] = tmp16.timestampSec;
+    obj6[2] = flag;
+    let num3;
+    if (contentInsets != null) {
+      num3 = contentInsets.top;
     }
-    let num5 = 0;
-    if (null != top) {
-      num5 = top;
+    if (num3 == null) {
+      num3 = 0;
     }
-    obj7.top = num5;
-    let bottom;
-    if (null != contentInsets) {
-      bottom = contentInsets.bottom;
+    const obj7 = { top: null, bottom: null, left: null, right: null };
+    obj7[0] = num3;
+    let num4;
+    if (contentInsets != null) {
+      num4 = contentInsets.bottom;
     }
-    let num6 = 0;
-    if (null != bottom) {
-      num6 = bottom;
+    if (num4 == null) {
+      num4 = 0;
     }
-    obj7.bottom = num6;
-    let left;
-    if (null != contentInsets) {
-      left = contentInsets.left;
+    obj7[1] = num4;
+    let num5;
+    if (contentInsets != null) {
+      num5 = contentInsets.left;
     }
-    let num7 = 0;
-    if (null != left) {
-      num7 = left;
+    if (num5 == null) {
+      num5 = 0;
     }
-    obj7.left = num7;
-    let right;
-    if (null != contentInsets) {
-      right = contentInsets.right;
+    obj7[2] = num5;
+    let num6;
+    if (contentInsets != null) {
+      num6 = contentInsets.right;
     }
-    let num8 = 0;
-    if (null != right) {
-      num8 = right;
+    if (num6 == null) {
+      num6 = 0;
     }
-    obj7.right = num8;
-    obj6.style = obj7;
-    items28[1] = targetSeconds(onLoad(onToggleFullscreen[33]).VideoQuestCaptions, obj6);
-    if (!isBuffering) {
-      items28[2] = isBuffering;
-      left1 = !tmp39[0];
-      if (left1) {
-        left1 = targetSeconds;
-        left1 = ref;
-        const obj8 = { style: left1.loadingContainer };
-        left1 = questTaskDetails;
-        obj9 = { animating: true };
-        obj8.children = targetSeconds(questTaskDetails, obj9);
-        left1 = targetSeconds(ref, obj8);
+    obj7[3] = num6;
+    obj6[3] = obj7;
+    items29[1] = targetSeconds(tmp3(14169).VideoQuestCaptions, obj6);
+    if (!tmp72) {
+      items29[2] = tmp72;
+      tmp80Result = !tmp39;
+      if (!tmp39) {
+        const obj8 = { style: null, children: null };
+        obj8[0] = tmp.loadingContainer;
+        obj8[1] = tmp80(questTaskDetails, { animating: true });
+        tmp80Result = tmp80(tmp81, obj8);
       }
-      items28[3] = left1;
-      left1 = onEnd;
-      left1 = onToggleFullscreen;
-      left1 = c14;
-      obj10 = {};
-      const items29 = [left1.controls, animatedStyle];
-      obj10.style = items29;
-      obj10.accessible = false;
-      left1 = "landscape" === orientation;
-      if (left1) {
-        const obj11 = {};
-        const items30 = [, , ];
-        ({ controlsTopBottom: arr32[0], controlsTop: arr32[1] } = left1);
-        items30[2] = tmp76;
-        obj11.style = items30;
+      items29[3] = tmp80Result;
+      const obj9 = { style: null, accessible: false, children: null };
+      const items30 = [tmp.controls, animatedStyle];
+      obj9[0] = items30;
+      let tmp80Result4 = "landscape" === orientation;
+      let tmp82Result = tmp80Result4;
+      if (tmp80Result4) {
+        const obj10 = { style: null, children: null };
+        const items31 = [, , ];
+        ({ controlsTopBottom: arr33[0], controlsTop: arr33[1] } = tmp);
+        items31[2] = tmp77;
+        obj10[0] = items31;
         if (!hasCaptionAsset) {
-          const items31 = [hasCaptionAsset, ];
+          const items32 = [hasCaptionAsset, ];
           if (flag2) {
-            left1 = targetSeconds;
-            left1 = onLoad;
-            left1 = onToggleFullscreen;
-            obj12 = { accessibilityRole: "button" };
-            const intl3 = onLoad(onToggleFullscreen[32]).intl;
-            obj12.accessibilityLabel = intl3.string(onLoad(onToggleFullscreen[32]).t.KCzjTi);
-            obj12.onPress = handleOpenTranscript;
-            obj12.style = left1.controlButton;
-            const obj13 = { color: left1.iconDisabled.color };
-            obj12.children = targetSeconds(onLoad(onToggleFullscreen[36]).TranscriptOutlineIcon, obj13);
-            flag2 = targetSeconds(onLoad(onToggleFullscreen[34]).PressableOpacity, obj12);
+            const obj11 = { accessibilityRole: "button", accessibilityLabel: null, onPress: null, style: null, children: null };
+            const intl3 = tmp3(1236).intl;
+            obj11[1] = intl3.string(tmp3(1236).t.KCzjTi);
+            obj11[2] = handleOpenTranscript;
+            obj11[3] = tmp.controlButton;
+            obj12 = { color: null };
+            obj12[0] = tmp.iconDisabled.color;
+            obj11[4] = tmp80(tmp3(14048).TranscriptOutlineIcon, obj12);
+            flag2 = tmp80(tmp3(4717).PressableOpacity, obj11);
           }
-          items31[1] = flag2;
-          obj11.children = items31;
-          left1 = left1(left1, obj11);
+          items32[1] = flag2;
+          obj10[1] = items32;
+          tmp82Result = tmp82(tmp81, obj10);
         } else {
-          left1 = targetSeconds;
-          left1 = onLoad;
-          left1 = onToggleFullscreen;
-          const obj14 = { accessibilityRole: "button" };
-          const intl2 = onLoad(onToggleFullscreen[32]).intl;
-          obj14.accessibilityLabel = intl2.string(onLoad(onToggleFullscreen[32]).t.bDSZO1);
-          obj14.onPress = handleToggleCaptions;
-          obj14.style = left1.controlButton;
-          let obj15 = {};
+          const obj13 = { accessibilityRole: "button", accessibilityLabel: null, onPress: null, style: null, children: null };
+          const intl2 = tmp3(1236).intl;
+          obj13[1] = intl2.string(tmp3(1236).t.bDSZO1);
+          obj13[2] = handleToggleCaptions;
+          obj13[3] = tmp.controlButton;
           if (flag) {
-            let color = left1.icon.color;
+            let color = tmp.icon.color;
           } else {
-            color = left1.iconDisabled.color;
+            color = tmp.iconDisabled.color;
           }
-          obj15.color = color;
-          obj15 = left1(onLoad(onToggleFullscreen[35]).ClosedCaptionsOutlineIcon, obj15);
-          obj14.children = obj15;
-          left1 = left1(onLoad(onToggleFullscreen[34]).PressableOpacity, obj14);
+          const obj14 = { color: null };
+          obj14[0] = color;
+          obj13[4] = tmp80(tmp3(14046).ClosedCaptionsOutlineIcon, obj14);
+          tmp80(tmp3(4717).PressableOpacity, obj13);
         }
       }
-      const items32 = [left1, , ];
-      const obj16 = { style: left1.controlsMiddle };
-      left1 = onLoad;
-      left1 = onToggleFullscreen;
-      left1 = c14;
-      left1 = ref;
-      left1 = targetSeconds;
-      const obj17 = {};
-      left1 = obj12;
-      obj17.disabled = first1 === obj12.ERRORED;
-      obj17.accessibilityRole = "button";
-      const intl4 = onLoad(onToggleFullscreen[32]).intl;
-      obj17.accessibilityLabel = intl4.string(onLoad(onToggleFullscreen[32]).t.r9s3Uv);
-      obj17.onPress = callbackResult;
-      const obj18 = { color: left1.icon.color, width: 16, height: 16 };
-      obj17.children = targetSeconds(onLoad(onToggleFullscreen[38]).SkipBackwardIcon, obj18);
-      const items33 = [targetSeconds(onLoad(onToggleFullscreen[37]).VideoQuestPlayerControlButton, obj17), , ];
-      const obj19 = { accessibilityRole: "button" };
-      if (!first2) {
-        left1 = obj12;
-        if (first1 !== obj12.ERRORED) {
-          left1 = onLoad;
-          left1 = onToggleFullscreen;
-          const t2 = onLoad(onToggleFullscreen[32]).t;
-          let K0e7M9 = tmp68 ? t2.R3aFPe : t2.fTMEUi;
+      const items33 = [tmp82Result, , ];
+      const obj15 = { style: null, children: null };
+      obj15[0] = tmp.controlsMiddle;
+      const obj16 = { disabled: null, accessibilityRole: "button", accessibilityLabel: null, onPress: null, children: null };
+      obj16[0] = first1 === tmp17.ERRORED;
+      const intl4 = tmp3(1236).intl;
+      obj16[2] = intl4.string(tmp3(1236).t.r9s3Uv);
+      obj16[3] = callbackResult;
+      const obj17 = { color: null, width: 16, height: 16 };
+      obj17[0] = tmp.icon.color;
+      obj16[4] = tmp80(tmp3(14051).SkipBackwardIcon, obj17);
+      const items34 = [tmp80(tmp3(14050).VideoQuestPlayerControlButton, obj16), , ];
+      if (!tmp22) {
+        if (first1 !== tmp17.ERRORED) {
+          const t2 = tmp3(1236).t;
+          let K0e7M9 = tmp70 ? t2.R3aFPe : t2.fTMEUi;
         }
-        obj19.accessibilityLabel = left1(K0e7M9);
-        obj19.onPress = callback5;
-        if (!first2) {
-          left1 = obj12;
-          if (first1 !== obj12.ERRORED) {
-            left1 = onLoad;
-            left1 = onToggleFullscreen;
-            left1 = targetSeconds;
-            if (tmp68) {
-              let PauseIcon = left1(left1[40]).PlayIcon;
+        const obj18 = { accessibilityRole: "button", accessibilityLabel: null, onPress: null, children: null };
+        obj18[1] = tmp93(K0e7M9);
+        obj18[2] = callback5;
+        if (!tmp22) {
+          if (first1 !== tmp17.ERRORED) {
+            if (tmp70) {
+              let PauseIcon = tmp3(8127).PlayIcon;
             } else {
-              PauseIcon = left1(left1[41]).PauseIcon;
+              PauseIcon = tmp3(8129).PauseIcon;
             }
-            const obj20 = { size: "lg" };
-            left1 = left1(PauseIcon, obj20);
+            let tmp80Result2 = tmp80(PauseIcon, { size: "lg" });
           }
-          obj19.children = left1;
-          items33[1] = left1(onLoad(onToggleFullscreen[37]).VideoQuestPlayerControlButton, obj19);
-          left1 = targetSeconds;
-          left1 = onLoad;
-          left1 = onToggleFullscreen;
-          const obj21 = { disabled: tmp51, accessibilityRole: "button" };
-          const intl5 = onLoad(onToggleFullscreen[32]).intl;
-          obj21.accessibilityLabel = intl5.string(onLoad(onToggleFullscreen[32]).t.zWDcNP);
-          obj21.onPress = callbackResult1;
-          const obj22 = { color: left1.icon.color, width: 16, height: 16 };
-          obj21.children = targetSeconds(onLoad(onToggleFullscreen[42]).SkipForwardIcon, obj22);
-          items33[2] = targetSeconds(onLoad(onToggleFullscreen[37]).VideoQuestPlayerControlButton, obj21);
-          obj16.children = items33;
-          items32[1] = left1(left1, obj16);
-          if (left1) {
-            left1 = targetSeconds;
-            left1 = ref;
-            const obj23 = {};
-            const items34 = [, , ];
-            ({ controlsTopBottom: arr36[0], controlsBottom: arr36[1] } = left1);
-            items34[2] = tmp76;
-            obj23.style = items34;
-            left1 = onLoad;
-            left1 = onToggleFullscreen;
-            const obj24 = { accessibilityRole: "button" };
-            const intl6 = onLoad(onToggleFullscreen[32]).intl;
-            obj24.accessibilityLabel = intl6.string(onLoad(onToggleFullscreen[32]).t.vKZT5t);
-            obj24.onPress = callback8;
-            obj24.style = left1.controlButton;
-            obj24.children = targetSeconds(onLoad(onToggleFullscreen[43]).FullscreenEnterIcon, {});
-            obj23.children = targetSeconds(onLoad(onToggleFullscreen[34]).PressableOpacity, obj24);
-            left1 = targetSeconds(ref, obj23);
+          obj18[3] = tmp80Result2;
+          items34[1] = tmp80(tmp3(14050).VideoQuestPlayerControlButton, obj18);
+          const obj19 = { disabled: null, accessibilityRole: "button", accessibilityLabel: null, onPress: null, children: null };
+          obj19[0] = tmp51;
+          const intl5 = tmp3(1236).intl;
+          obj19[2] = intl5.string(tmp3(1236).t.zWDcNP);
+          obj19[3] = callbackResult1;
+          const obj20 = { color: null, width: 16, height: 16 };
+          obj20[0] = tmp.icon.color;
+          obj19[4] = tmp80(tmp3(14052).SkipForwardIcon, obj20);
+          items34[2] = tmp80(tmp3(14050).VideoQuestPlayerControlButton, obj19);
+          obj15[1] = items34;
+          items33[1] = tmp82(tmp81, obj15);
+          let tmp80Result3 = tmp80Result4;
+          if (tmp80Result4) {
+            const obj21 = { style: null, children: null };
+            const items35 = [, , ];
+            ({ controlsTopBottom: arr37[0], controlsBottom: arr37[1] } = tmp);
+            items35[2] = tmp77;
+            obj21[0] = items35;
+            const obj22 = { accessibilityRole: "button", accessibilityLabel: null, onPress: null, style: null, children: null };
+            const intl6 = tmp3(1236).intl;
+            obj22[1] = intl6.string(tmp3(1236).t.vKZT5t);
+            obj22[2] = callback8;
+            obj22[3] = tmp.controlButton;
+            obj22[4] = tmp80(tmp3(14053).FullscreenEnterIcon, {});
+            obj21[1] = tmp80(tmp3(4717).PressableOpacity, obj22);
+            tmp80Result3 = tmp80(tmp81, obj21);
           }
-          items32[2] = left1;
-          obj10.children = items32;
-          items28[4] = left1(onEnd(onToggleFullscreen[16]).View, obj10);
-          if (left1) {
-            left1 = targetSeconds;
-            left1 = ref;
-            const obj25 = { style: left1.progressContainer };
-            left1 = onEnd;
-            left1 = onToggleFullscreen;
-            const obj26 = {};
-            const items35 = [left1.progress, animatedStyle1];
-            obj26.style = items35;
-            obj25.children = targetSeconds(onEnd(onToggleFullscreen[16]).View, obj26);
-            left1 = targetSeconds(ref, obj25);
+          items33[2] = tmp80Result3;
+          obj9[2] = items33;
+          items29[4] = tmp82(tmp29(4050).View, obj9);
+          if (tmp80Result4) {
+            const obj23 = { style: null, children: null };
+            obj23[0] = tmp.progressContainer;
+            const obj24 = { style: null };
+            const items36 = [tmp.progress, animatedStyle1];
+            obj24[0] = items36;
+            obj23[1] = tmp80(tmp29(4050).View, obj24);
+            tmp80Result4 = tmp80(tmp81, obj23);
           }
-          items28[5] = left1;
-          obj4.children = items28;
-          obj3.children = tmp80(tmp81, obj4);
-          return tmp78(tmp79, obj3);
+          items29[5] = tmp80Result4;
+          obj4[4] = items29;
+          obj3[2] = tmp82(tmp83, obj4);
+          return tmp80(tmp81, obj3);
         }
-        left1 = targetSeconds;
-        left1 = onLoad;
-        left1 = onToggleFullscreen;
-        const obj27 = { size: "lg" };
-        left1 = targetSeconds(onLoad(onToggleFullscreen[39]).RetryIcon, obj27);
+        tmp80Result2 = tmp80(tmp3(9971).RetryIcon, { size: "lg" });
       }
-      left1 = onLoad;
-      left1 = onToggleFullscreen;
-      K0e7M9 = onLoad(onToggleFullscreen[32]).t.K0e7M9;
+      K0e7M9 = tmp3(1236).t.K0e7M9;
     } else {
-      const obj28 = { animating: true };
-      let items36 = [left1.bufferingSpinner, ];
+      let items37 = [tmp.bufferingSpinner, ];
       if (!isFullscreen) {
         if ("landscape" !== orientation) {
-          let obj29 = {};
-          let top1;
-          if (null != contentInsets) {
-            top1 = contentInsets.top;
+          let num7;
+          if (contentInsets != null) {
+            num7 = contentInsets.top;
           }
-          let num9 = 0;
-          if (null != top1) {
-            num9 = top1;
+          if (num7 == null) {
+            num7 = 0;
           }
-          obj29.top = num9;
-          left1 = undefined;
-          if (null != contentInsets) {
-            left1 = contentInsets.left;
+          let obj25 = { top: null, left: null };
+          obj25[0] = num7;
+          let num8;
+          if (contentInsets != null) {
+            num8 = contentInsets.left;
           }
-          let num10 = 0;
-          if (null != left1) {
-            num10 = left1;
+          if (num8 == null) {
+            num8 = 0;
           }
-          obj29.left = num10;
+          obj25[1] = num8;
         }
-        items36[1] = obj29;
-        obj28.style = items36;
-        left1 = onEnd;
-        left1 = onToggleFullscreen;
-        items36 = onEnd(onToggleFullscreen[8]).unsafe_rawColors.WHITE;
-        obj28.color = items36;
-        left1 = tmp97(tmp98, obj28);
+        const obj26 = { animating: true, style: null, color: null };
+        items37[1] = obj25;
+        obj26[1] = items37;
+        items37 = tmp29(712).unsafe_rawColors.WHITE;
+        obj26[2] = items37;
+        tmp80(tmp86, obj26);
       }
-      obj29 = left1.bufferingSpinnerCentered;
+      obj25 = tmp.bufferingSpinnerCentered;
     }
-    tmp78 = targetSeconds;
-    tmp79 = ref;
-    tmp80 = c14;
-    tmp81 = quest;
-    const tmp90 = targetSeconds;
+    tmp83 = quest;
   }
 });
 let result = require("get ActivityIndicator").fileFinishedImporting("modules/quests/native/VideoQuestModal/VideoQuestPlayer.tsx");

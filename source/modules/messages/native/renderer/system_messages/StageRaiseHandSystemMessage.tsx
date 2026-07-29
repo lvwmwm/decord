@@ -1,79 +1,79 @@
-// Module ID: 7788
-// Function ID: 61804
-// Name: createRequestToSpeakEphemeralIndication
-// Dependencies: [4986, 1348, 3793, 653, 1212, 1921, 7720, 21, 4349, 7722, 7723, 2]
+// Module ID: 7811
+// Function ID: 7812
+// Name: createStageRaiseHandSystemMessage
+// Dependencies: [5008, 1372, 3817, 676, 1236, 1945, 7743, 11, 4374, 7745, 7746, 2]
 // Exports: createStageRaiseHandSystemMessage
 
-// Module 7788 (createRequestToSpeakEphemeralIndication)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_4 from "_isNativeReflectConstruct";
-import closure_5 from "_isNativeReflectConstruct";
+// Module 7811 (createStageRaiseHandSystemMessage)
+import getActiveStageChannelIds from "getActiveStageChannelIds";
+import ensureGuildLoaded from "ensureGuildLoaded";
+import getUncachedChannelPermissions from "getUncachedChannelPermissions";
 import ME from "ME";
 
+let c9;
 let closure_6;
-let closure_7;
-let closure_8;
-let closure_9;
+let error;
+let metroImportAll;
 const require = arg1;
-function createRequestToSpeakEphemeralIndication(message) {
-  if (message.hasFlag(constants2.EPHEMERAL)) {
-    if (message.type === constants3.STAGE_RAISE_HAND) {
-      let obj = {};
-      const intl = require(1212) /* getSystemLocale */.intl;
-      obj = {};
-      obj = { action: "bindDismissMessage", message };
-      obj.handleDelete = obj;
-      obj.content = intl.formatToParts(require(1212) /* getSystemLocale */.t["qDAX++"], obj);
-      obj.helpArticleLink = importDefault(1921).getArticleURL(constants.EPHEMERAL_MESSAGES);
-      const intl2 = require(1212) /* getSystemLocale */.intl;
-      obj.helpButtonAccessibilityLabel = intl2.string(require(1212) /* getSystemLocale */.t.htHOrp);
-      return obj;
-    }
-  }
-}
-({ HelpdeskArticles: closure_6, MessageFlags: closure_7, MessageTypes: closure_8, Permissions: closure_9 } = ME);
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/messages/native/renderer/system_messages/StageRaiseHandSystemMessage.tsx");
+({ HelpdeskArticles: closure_6, MessageFlags: error, MessageTypes: metroImportAll, Permissions: c9 } = ME);
+const result = require("getUncachedChannelPermissions").fileFinishedImporting("modules/messages/native/renderer/system_messages/StageRaiseHandSystemMessage.tsx");
 
 export const createStageRaiseHandSystemMessage = function createStageRaiseHandSystemMessage(roleStyle) {
   const message = roleStyle.message;
-  let obj = require(7720) /* getMessageAuthorWithProcessedColor */;
+  let obj = require(7743) /* getMessageAuthorWithProcessedColor */;
   const messageAuthorWithProcessedColor = obj.getMessageAuthorWithProcessedColor(message);
-  const canResult = closure_5.can(constants4.MUTE_MEMBERS, channel.getChannel(message.channel_id));
+  let canResult = getUncachedChannelPermissions.can(constants4.MUTE_MEMBERS, channel.getChannel(message.channel_id));
   participant = participant.getParticipant(message.channel_id, message.author.id);
-  const obj2 = importDefault(21);
-  let prop;
-  const date = new Date(importDefault(21).extractTimestamp(message.id));
-  if (null != participant) {
+  let obj1 = importDefault(11);
+  let num;
+  const date = new Date(obj1.extractTimestamp(message.id));
+  if (participant != null) {
     const voiceState = participant.voiceState;
-    if (null != voiceState) {
-      prop = voiceState.requestToSpeakTimestamp;
+    if (voiceState != null) {
+      num = voiceState.requestToSpeakTimestamp;
     }
   }
-  let num = 0;
-  if (null != prop) {
-    num = prop;
+  if (num == null) {
+    num = 0;
   }
-  const toISOStringResult = new Date(importDefault(21).extractTimestamp(message.id)).toISOString();
-  let tmp7 = canResult;
+  const toISOStringResult = new Date(obj1.extractTimestamp(message.id)).toISOString();
   const date1 = new Date(num);
   if (canResult) {
     let rtsState;
-    if (null != participant) {
+    if (participant != null) {
       rtsState = participant.rtsState;
     }
-    tmp7 = rtsState === require(4349) /* getAudienceRequestToSpeakState */.RequestToSpeakStates.REQUESTED_TO_SPEAK;
+    canResult = rtsState === tmp(4374).RequestToSpeakStates.REQUESTED_TO_SPEAK;
   }
-  if (tmp7) {
-    tmp7 = tmp6;
+  if (canResult) {
+    canResult = toISOStringResult === toISOStringResult1;
   }
-  obj = {};
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj = { username: messageAuthorWithProcessedColor.nick, usernameOnClick: importDefault(7722)({ message, author: messageAuthorWithProcessedColor, roleStyle: roleStyle.roleStyle }) };
-  obj.content = intl.formatToParts(require(1212) /* getSystemLocale */.t.M87x7Y, obj);
-  obj.showInviteToSpeakButton = tmp7;
-  const intl2 = require(1212) /* getSystemLocale */.intl;
-  obj.buttonLabel = intl2.string(require(1212) /* getSystemLocale */.t.f0T7hI);
-  obj.ephemeralIndication = createRequestToSpeakEphemeralIndication(message);
-  const merged = Object.assign(importDefault(7723)(roleStyle));
+  obj = { content: null, showInviteToSpeakButton: null, buttonLabel: null, ephemeralIndication: null };
+  const intl = tmp(1236).intl;
+  obj = { username: messageAuthorWithProcessedColor.nick, usernameOnClick: null };
+  obj[1] = importDefault(7745)({ message, author: messageAuthorWithProcessedColor, roleStyle: roleStyle.roleStyle });
+  obj[0] = intl.formatToParts(require(1236) /* getSystemLocale */.t.M87x7Y, obj);
+  obj[1] = canResult;
+  const intl2 = tmp(1236).intl;
+  obj[2] = intl2.string(require(1236) /* getSystemLocale */.t.f0T7hI);
+  let tmp10;
+  if (message.hasFlag(constants2.EPHEMERAL)) {
+    if (message.type === constants3.STAGE_RAISE_HAND) {
+      obj1 = { content: null, helpArticleLink: null, helpButtonAccessibilityLabel: null };
+      const intl3 = tmp(1236).intl;
+      const obj2 = { handleDelete: null };
+      const obj3 = { action: "bindDismissMessage", message: null };
+      obj3[1] = message;
+      obj2[0] = obj3;
+      obj1[0] = intl3.formatToParts(tmp(1236).t["qDAX++"], obj2);
+      obj1[1] = tmp6(1945).getArticleURL(constants.EPHEMERAL_MESSAGES);
+      const intl4 = tmp(1236).intl;
+      obj1[2] = intl4.string(tmp(1236).t.htHOrp);
+      tmp10 = obj1;
+      const tmp6Result = tmp6(1945);
+    }
+  }
+  obj[3] = tmp10;
+  const merged = Object.assign(tmp6(7746)(roleStyle));
   return obj;
 };

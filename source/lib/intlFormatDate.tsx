@@ -1,46 +1,65 @@
-// Module ID: 3855
-// Function ID: 31852
+// Module ID: 3879
+// Function ID: 3880
 // Name: makeIntlFormatter
-// Dependencies: [1922, 3852, 1212, 2]
+// Dependencies: [1946, 3876, 1236, 2]
 // Exports: makeFormatter
 
-// Module 3855 (makeIntlFormatter)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 3879 (makeIntlFormatter)
+import _getSystemLocale from "_getSystemLocale";
 
 const require = arg1;
 function makeIntlFormatter(locale, arg1) {
-  return Intl.DateTimeFormat(locale, arg1).format;
+  try {
+    const _Intl = Intl;
+    return Intl.DateTimeFormat(locale, arg1).format;
+  } catch (err) {
+    const _Intl2 = Intl;
+    return Intl.DateTimeFormat(undefined, tmp).format;
+  }
 }
 const result = require("getSystemLocale").fileFinishedImporting("lib/intlFormatDate.tsx");
 
 export const makeFormatter = function makeFormatter(arg0) {
   locale = locale.locale;
   let tmp = (function tryMakeNativeFormatter(locale, arg1) {
-    let closure_0 = locale;
-    let closure_1 = arg1;
-    if (null == outer1_0(outer1_1[1]).makeFormatter) {
+    const callback = locale;
+    const table = arg1;
+    if (null == callback(table[1]).makeFormatter) {
       return null;
     } else {
-      let tmp7 = tmp15;
-      if (null != str) {
-        let first;
-        if (null != outer1_0(outer1_1[2]).systemLocale) {
-          first = outer1_0(outer1_1[2]).systemLocale.split("-")[0];
-          const str3 = outer1_0(outer1_1[2]).systemLocale;
+      try {
+        let tmp4 = null != locale;
+        if (tmp4) {
+          const str2 = tmp2(tmp3[2]).systemLocale;
+          let first;
+          if (str2 != null) {
+            first = str2.split("-")[0];
+          }
+          tmp4 = locale.split("-")[0] === first;
         }
-        tmp7 = str.split("-")[0] === first;
+        if (locale !== tmp2(tmp3[2]).initialLocale) {
+          const tmp7 = locale;
+        }
+        const formatter = tmp2(tmp3[1]).makeFormatter(tmp7, arg1);
+        if (null == formatter) {
+          return null;
+        } else {
+          let c3 = null;
+          return (arg0) => {
+            try {
+              return formatter(arg0);
+            } catch (err) {
+              if (null == _null) {
+                _null = _null(closure_0, closure_1);
+              }
+              return _null(tmp);
+            }
+          };
+        }
+        const tmp2Result = tmp2(tmp3[1]);
+      } catch (err) {
+        return tmp;
       }
-      if (str !== outer1_0(outer1_1[2]).initialLocale) {
-        const tmp12 = locale;
-      }
-      const formatter = outer1_0(outer1_1[1]).makeFormatter(tmp12, arg1);
-      if (null == formatter) {
-        return null;
-      } else {
-        let c3 = null;
-        return (arg0) => formatter(arg0);
-      }
-      const obj = outer1_0(outer1_1[1]);
     }
   })(locale, arg0);
   if (null == tmp) {

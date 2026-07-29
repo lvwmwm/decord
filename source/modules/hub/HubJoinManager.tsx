@@ -1,29 +1,50 @@
-// Module ID: 11817
-// Function ID: 91592
-// Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 1838, 653, 6669, 686, 4565, 2]
+// Module ID: 11842
+// Function ID: 11843
+// Name: _initialize
+// Dependencies: [1862, 676, 4368, 709, 6690, 2]
 
-// Module 11817 (_isNativeReflectConstruct)
-import ME from "ME";
-import transitionToGuild from "transitionToGuild";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+// Module 11842 (_initialize)
+import createGuildRecordFromRust from "createGuildRecordFromRust";
 import { GuildFeatures } from "ME";
-import tmp2 from "LifecycleManager";
+import "initialize";
 
-const require = arg1;
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
+let require = arg1;
+class HubJoinManager extends tmp2 {
+  constructor() {
+    applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
+    closure_0 = applyArgumentsResult;
+    applyArgumentsResult.handleGuildCreate = function handleGuildCreate(guild) {
+      guild = outer1_3.getGuild(guild.guild.id);
+      let tmp2 = null != guild;
+      if (tmp2) {
+        const features = guild.features;
+        let hasItem;
+        if (features != null) {
+          hasItem = features.has(outer1_4.HUB);
+        }
+        tmp2 = hasItem;
+      }
+      if (tmp2) {
+        const onClose = applyArgumentsResult.onClose;
+        if (onClose != null) {
+          onClose();
+        }
+        applyArgumentsResult(outer1_2[4]).transitionToGuild(guild.id);
+        const obj = applyArgumentsResult(outer1_2[4]);
+      }
+    };
+    return applyArgumentsResult;
   }
-  const result = _isNativeReflectConstruct();
 }
-tmp2 = new tmp2();
-let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/hub/HubJoinManager.tsx");
+const prototype = HubJoinManager.prototype;
+prototype["_initialize"] = function _initialize(onClose) {
+  this.onClose = onClose;
+  const subscription = importDefault(709).subscribe("GUILD_CREATE", this.handleGuildCreate);
+};
+prototype["_terminate"] = function _terminate() {
+  importDefault(709).unsubscribe("GUILD_CREATE", this.handleGuildCreate);
+};
+const hubJoinManager = new HubJoinManager();
+const result = require("initialize").fileFinishedImporting("modules/hub/HubJoinManager.tsx");
 
-export default tmp2;
+export default hubJoinManager;

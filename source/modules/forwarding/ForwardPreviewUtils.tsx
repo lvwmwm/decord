@@ -1,14 +1,14 @@
-// Module ID: 9897
-// Function ID: 76552
+// Module ID: 9919
+// Function ID: 9920
 // Name: useForwardPreviewContent
-// Dependencies: [3793, 566, 4499, 2]
+// Dependencies: [3817, 589, 4522, 2]
 // Exports: useForwardPreviewContent
 
-// Module 9897 (useForwardPreviewContent)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 9919 (useForwardPreviewContent)
+import getUncachedChannelPermissions from "getUncachedChannelPermissions";
 
 const require = arg1;
-let result = require("validateSize").fileFinishedImporting("modules/forwarding/ForwardPreviewUtils.tsx");
+let result = require("regExp").fileFinishedImporting("modules/forwarding/ForwardPreviewUtils.tsx");
 
 export const useForwardPreviewContent = function useForwardPreviewContent(message) {
   let dependencyMap;
@@ -18,16 +18,16 @@ export const useForwardPreviewContent = function useForwardPreviewContent(messag
   let onlyAttachmentIds;
   let onlyEmbedIndices;
   onlyAttachmentIds = undefined;
-  if (null != forwardOptions) {
+  if (forwardOptions != null) {
     onlyAttachmentIds = forwardOptions.onlyAttachmentIds;
   }
   onlyEmbedIndices = undefined;
-  if (null != forwardOptions) {
+  if (forwardOptions != null) {
     onlyEmbedIndices = forwardOptions.onlyEmbedIndices;
   }
   const first = message.messageSnapshots[0];
   message = undefined;
-  if (null != first) {
+  if (first != null) {
     message = first.message;
   }
   let attachments = message.attachments;
@@ -38,12 +38,12 @@ export const useForwardPreviewContent = function useForwardPreviewContent(messag
     attachments = [];
   }
   const items = [];
-  let obj = message(566);
+  let obj = message(589);
   const items1 = [onlyAttachmentIds];
   if (obj.useStateFromStores(items1, () => {
     let shouldStripEmbedsResult = null != closure_1;
     if (shouldStripEmbedsResult) {
-      shouldStripEmbedsResult = !message(outer1_1[2]).canEmbedLinks(closure_1, onlyAttachmentIds);
+      shouldStripEmbedsResult = !message(outer1_1[2]).canEmbedLinks(tmp, onlyAttachmentIds);
       const obj = message(outer1_1[2]);
     }
     if (shouldStripEmbedsResult) {
@@ -54,8 +54,11 @@ export const useForwardPreviewContent = function useForwardPreviewContent(messag
   })) {
     let tmp6 = null != onlyEmbedIndices;
     if (!tmp6) {
-      tmp6 = "" === message.content && items.length > 0;
-      const tmp7 = "" === message.content && items.length > 0;
+      let tmp7 = "" === message.content;
+      if (tmp7) {
+        tmp7 = items.length > 0;
+      }
+      tmp6 = tmp7;
     }
     let result = message;
     if (tmp6) {
@@ -66,7 +69,7 @@ export const useForwardPreviewContent = function useForwardPreviewContent(messag
     if (tmp8) {
       const first1 = result.embeds[0];
       let rawDescription;
-      if (null != first1) {
+      if (first1 != null) {
         rawDescription = first1.rawDescription;
       }
       tmp8 = null != rawDescription;
@@ -75,7 +78,11 @@ export const useForwardPreviewContent = function useForwardPreviewContent(messag
     if (tmp8) {
       result1 = result.set("content", result.embeds[0].rawDescription);
     }
-    obj = { attachments, embeds: items, hasContent: "" !== result1.content && null == onlyAttachmentIds, contentMessage: result1 };
+    obj = { attachments: null, embeds: null, hasContent: null, contentMessage: null };
+    obj[0] = attachments;
+    obj[1] = items;
+    obj[2] = "" !== result1.content && null == onlyAttachmentIds;
+    obj[3] = result1;
     return obj;
   } else {
     let embeds = message.embeds;

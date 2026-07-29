@@ -1,256 +1,262 @@
-// Module ID: 11983
-// Function ID: 92537
+// Module ID: 12007
+// Function ID: 12008
 // Name: getActivityHeader
-// Dependencies: [653, 11984, 11985, 1212, 11987, 11988, 9056, 2]
+// Dependencies: [676, 12008, 12009, 1236, 12011, 12012, 9080, 2]
 // Exports: default
 
-// Module 11983 (getActivityHeader)
+// Module 12007 (getActivityHeader)
 import ME from "ME";
 
-let closure_3;
-let closure_4;
-({ ActivityTypes: closure_3, PlatformTypes: closure_4 } = ME);
+let c3;
+let c4;
+({ ActivityTypes: c3, PlatformTypes: c4 } = ME);
 const result = require("PlatformTypes").fileFinishedImporting("modules/user_profile/utils/getActivityHeader.tsx");
 
 export default function getActivityHeader(session_id) {
-  const tmp = importDefault(11984)(session_id.session_id);
-  const tmp2 = importDefault(11985)(session_id);
-  if (null != tmp2) {
-    const icon = tmp2.icon;
+  const tmp3 = importDefault(12008)(session_id.session_id);
+  const tmp4 = importDefault(12009)(session_id);
+  if (tmp4 != null) {
+    const icon = tmp4.icon;
   }
-  let name;
-  if (null != tmp2) {
-    name = tmp2.name;
+  let str;
+  if (tmp4 != null) {
+    str = tmp4.name;
   }
-  let str = "";
-  if (null != name) {
-    str = name;
+  if (str == null) {
+    str = "";
   }
   if (session_id.type === constants.PLAYING) {
     let type;
-    if (null != tmp2) {
-      type = tmp2.type;
+    if (tmp4 != null) {
+      type = tmp4.type;
     }
     if (type === constants2.XBOX) {
-      let obj = {};
-      const intl21 = require(1212) /* getSystemLocale */.intl;
-      obj = {};
-      const intl22 = require(1212) /* getSystemLocale */.intl;
-      obj.platform = intl22.string(require(1212) /* getSystemLocale */.t.Nfvo72);
-      obj.text = intl21.formatToPlainString(require(1212) /* getSystemLocale */.t.A17aM8, obj);
-      obj.platformIcon = icon;
-      obj.platformLabel = str;
+      let obj = { text: null, platformIcon: null, platformLabel: null };
+      const intl21 = require(1236) /* getSystemLocale */.intl;
+      obj = { platform: null };
+      const intl22 = require(1236) /* getSystemLocale */.intl;
+      obj[0] = intl22.string(require(1236) /* getSystemLocale */.t.Nfvo72);
+      obj[0] = intl21.formatToPlainString(require(1236) /* getSystemLocale */.t.A17aM8, obj);
+      obj[1] = icon;
+      obj[2] = str;
       return obj;
     }
   }
   if (session_id.type === constants.PLAYING) {
     let type1;
-    if (null != tmp2) {
-      type1 = tmp2.type;
+    if (tmp4 != null) {
+      type1 = tmp4.type;
     }
     if (type1 === constants2.PLAYSTATION) {
-      const obj1 = {};
-      const intl19 = require(1212) /* getSystemLocale */.intl;
-      const obj2 = {};
-      const intl20 = require(1212) /* getSystemLocale */.intl;
-      obj2.platform = intl20.string(require(1212) /* getSystemLocale */.t.fFl4jo);
-      obj1.text = intl19.formatToPlainString(require(1212) /* getSystemLocale */.t.A17aM8, obj2);
-      obj1.platformIcon = icon;
-      obj1.platformLabel = str;
+      const obj1 = { text: null, platformIcon: null, platformLabel: null };
+      const intl19 = require(1236) /* getSystemLocale */.intl;
+      const obj2 = { platform: null };
+      const intl20 = require(1236) /* getSystemLocale */.intl;
+      obj2[0] = intl20.string(require(1236) /* getSystemLocale */.t.fFl4jo);
+      obj1[0] = intl19.formatToPlainString(require(1236) /* getSystemLocale */.t.A17aM8, obj2);
+      obj1[1] = icon;
+      obj1[2] = str;
       return obj1;
     }
   }
   if (session_id.type === constants.PLAYING) {
     let type2;
-    if (null != tmp2) {
-      type2 = tmp2.type;
+    if (tmp4 != null) {
+      type2 = tmp4.type;
     }
     if (type2 === constants2.META_QUEST_OR_HORIZON) {
-      const obj3 = {};
-      const intl17 = require(1212) /* getSystemLocale */.intl;
-      const obj4 = {};
-      const intl18 = require(1212) /* getSystemLocale */.intl;
+      const intl17 = require(1236) /* getSystemLocale */.intl;
+      const intl18 = require(1236) /* getSystemLocale */.intl;
       const string2 = intl18.string;
-      const t2 = require(1212) /* getSystemLocale */.t;
-      if (tmp64) {
+      const t2 = require(1236) /* getSystemLocale */.t;
+      if (tmp31) {
         let string2Result = string2(t2.BrHQaq);
       } else {
         string2Result = string2(t2.p6vL0e);
       }
-      obj4.platform = string2Result;
-      obj3.text = intl17.formatToPlainString(require(1212) /* getSystemLocale */.t.A17aM8, obj4);
-      obj3.platformIcon = icon;
-      obj3.platformLabel = str;
+      const obj3 = { text: null, platformIcon: null, platformLabel: null };
+      const obj4 = { platform: null };
+      obj4[0] = string2Result;
+      obj3[0] = intl17.formatToPlainString(require(1236) /* getSystemLocale */.t.A17aM8, obj4);
+      obj3[1] = icon;
+      obj3[2] = str;
       return obj3;
     }
   }
   if (session_id.type === constants.WATCHING) {
     let type3;
-    if (null != tmp2) {
-      type3 = tmp2.type;
+    if (tmp4 != null) {
+      type3 = tmp4.type;
     }
     if (type3 === constants2.META_QUEST_OR_HORIZON) {
-      const obj5 = {};
-      const intl15 = require(1212) /* getSystemLocale */.intl;
-      const obj6 = {};
-      const intl16 = require(1212) /* getSystemLocale */.intl;
+      const intl15 = require(1236) /* getSystemLocale */.intl;
+      const intl16 = require(1236) /* getSystemLocale */.intl;
       const string = intl16.string;
-      const t = require(1212) /* getSystemLocale */.t;
-      if (tmp57) {
+      const t = require(1236) /* getSystemLocale */.t;
+      if (tmp28) {
         let stringResult = string(t.BrHQaq);
       } else {
         stringResult = string(t.p6vL0e);
       }
-      obj6.platform = stringResult;
-      obj5.text = intl15.formatToPlainString(require(1212) /* getSystemLocale */.t.ENbTKQ, obj6);
-      obj5.platformIcon = icon;
-      obj5.platformLabel = str;
+      const obj5 = { text: null, platformIcon: null, platformLabel: null };
+      const obj6 = { platform: null };
+      obj6[0] = stringResult;
+      obj5[0] = intl15.formatToPlainString(require(1236) /* getSystemLocale */.t.ENbTKQ, obj6);
+      obj5[1] = icon;
+      obj5[2] = str;
       return obj5;
     }
   }
   if (session_id.type === constants.STREAMING) {
     let type4;
-    if (null != tmp2) {
-      type4 = tmp2.type;
+    if (tmp4 != null) {
+      type4 = tmp4.type;
     }
     if (type4 === constants2.TWITCH) {
-      const obj7 = {};
-      const intl13 = require(1212) /* getSystemLocale */.intl;
-      const obj8 = {};
-      const intl14 = require(1212) /* getSystemLocale */.intl;
-      obj8.name = intl14.string(require(1212) /* getSystemLocale */.t.q4pBG3);
-      obj7.text = intl13.formatToPlainString(require(1212) /* getSystemLocale */.t["4CQq9Q"], obj8);
-      obj7.platformIcon = icon;
-      obj7.platformLabel = str;
+      const obj7 = { text: null, platformIcon: null, platformLabel: null };
+      const intl13 = require(1236) /* getSystemLocale */.intl;
+      const obj8 = { name: null };
+      const intl14 = require(1236) /* getSystemLocale */.intl;
+      obj8[0] = intl14.string(require(1236) /* getSystemLocale */.t.q4pBG3);
+      obj7[0] = intl13.formatToPlainString(require(1236) /* getSystemLocale */.t["4CQq9Q"], obj8);
+      obj7[1] = icon;
+      obj7[2] = str;
       return obj7;
     }
   }
   if (session_id.type === constants.STREAMING) {
     let type5;
-    if (null != tmp2) {
-      type5 = tmp2.type;
+    if (tmp4 != null) {
+      type5 = tmp4.type;
     }
     if (type5 === constants2.YOUTUBE) {
-      const obj9 = {};
-      const intl11 = require(1212) /* getSystemLocale */.intl;
-      const obj10 = {};
-      const intl12 = require(1212) /* getSystemLocale */.intl;
-      obj10.name = intl12.string(require(1212) /* getSystemLocale */.t.aS6cK4);
-      obj9.text = intl11.formatToPlainString(require(1212) /* getSystemLocale */.t["4CQq9Q"], obj10);
-      obj9.platformIcon = icon;
-      obj9.platformLabel = str;
+      const obj9 = { text: null, platformIcon: null, platformLabel: null };
+      const intl11 = require(1236) /* getSystemLocale */.intl;
+      const obj10 = { name: null };
+      const intl12 = require(1236) /* getSystemLocale */.intl;
+      obj10[0] = intl12.string(require(1236) /* getSystemLocale */.t.aS6cK4);
+      obj9[0] = intl11.formatToPlainString(require(1236) /* getSystemLocale */.t["4CQq9Q"], obj10);
+      obj9[1] = icon;
+      obj9[2] = str;
       return obj9;
     }
   }
-  if (null != tmp) {
+  if (null != tmp3) {
     type = session_id.type;
-    if (constants.PLAYING === type) {
-      let Dzgz4u = require(1212) /* getSystemLocale */.t.A17aM8;
-    } else if (constants.WATCHING === type) {
-      Dzgz4u = require(1212) /* getSystemLocale */.t.ENbTKQ;
-    } else if (constants.LISTENING === type) {
-      Dzgz4u = require(1212) /* getSystemLocale */.t.EcHzWI;
-    } else if (constants.COMPETING === type) {
-      Dzgz4u = require(1212) /* getSystemLocale */.t.ikpHeS;
-    } else if (constants.STREAMING === type) {
-      Dzgz4u = require(1212) /* getSystemLocale */.t.Dzgz4u;
+    if (tmp5.PLAYING === type) {
+      let Dzgz4u = require(1236) /* getSystemLocale */.t.A17aM8;
+    } else if (tmp5.WATCHING === type) {
+      Dzgz4u = require(1236) /* getSystemLocale */.t.ENbTKQ;
+    } else if (tmp5.LISTENING === type) {
+      Dzgz4u = require(1236) /* getSystemLocale */.t.EcHzWI;
+    } else if (tmp5.COMPETING === type) {
+      Dzgz4u = require(1236) /* getSystemLocale */.t.ikpHeS;
+    } else if (tmp5.STREAMING === type) {
+      Dzgz4u = require(1236) /* getSystemLocale */.t.Dzgz4u;
     }
     if (undefined !== Dzgz4u) {
-      const obj11 = {};
-      const intl10 = require(1212) /* getSystemLocale */.intl;
-      const obj12 = { platform: tmp74 };
-      obj11.text = intl10.formatToPlainString(Dzgz4u, obj12);
-      obj11.platformIcon = icon;
-      obj11.platformLabel = str;
+      const obj11 = { text: null, platformIcon: null, platformLabel: null };
+      const intl10 = require(1236) /* getSystemLocale */.intl;
+      const obj12 = { platform: null };
+      obj12[0] = tmp35;
+      obj11[0] = intl10.formatToPlainString(Dzgz4u, obj12);
+      obj11[1] = icon;
+      obj11[2] = str;
       return obj11;
     }
-    tmp74 = importDefault(11988)(tmp, session_id);
+    tmp35 = tmp(12012)(tmp3, session_id);
   }
   if (session_id.type === constants.PLAYING) {
-    const obj13 = {};
-    const intl9 = require(1212) /* getSystemLocale */.intl;
-    obj13.text = intl9.string(require(1212) /* getSystemLocale */.t.BMTj28);
-    obj13.platformIcon = icon;
-    obj13.platformLabel = str;
+    const obj13 = { text: null, platformIcon: null, platformLabel: null };
+    const intl9 = require(1236) /* getSystemLocale */.intl;
+    obj13[0] = intl9.string(require(1236) /* getSystemLocale */.t.BMTj28);
+    obj13[1] = icon;
+    obj13[2] = str;
     obj = obj13;
-  } else if (session_id.type === constants.STREAMING) {
-    const obj14 = {};
-    const intl8 = require(1212) /* getSystemLocale */.intl;
-    obj14.text = intl8.string(require(1212) /* getSystemLocale */.t["Jpkr/q"]);
-    obj14.platformIcon = icon;
-    obj14.platformLabel = str;
+  } else if (session_id.type === tmp5.STREAMING) {
+    const obj14 = { text: null, platformIcon: null, platformLabel: null };
+    const intl8 = require(1236) /* getSystemLocale */.intl;
+    obj14[0] = intl8.string(require(1236) /* getSystemLocale */.t["Jpkr/q"]);
+    obj14[1] = icon;
+    obj14[2] = str;
     obj = obj14;
   } else {
     if (obj29.isStageActivity(session_id)) {
-      const obj15 = {};
-      const intl7 = require(1212) /* getSystemLocale */.intl;
-      const obj16 = { name: session_id.name };
-      obj15.text = intl7.formatToPlainString(require(1212) /* getSystemLocale */.t.pW3Ip3, obj16);
+      const obj15 = { text: null };
+      const intl7 = tmp37(1236).intl;
+      const obj16 = { name: null };
+      obj16[0] = session_id.name;
+      obj15[0] = intl7.formatToPlainString(tmp37(1236).t.pW3Ip3, obj16);
       obj = obj15;
     } else {
-      if (session_id.type === constants.LISTENING) {
+      if (session_id.type === tmp5.LISTENING) {
         if (null != session_id.details) {
-          const obj17 = {};
-          const intl6 = require(1212) /* getSystemLocale */.intl;
-          const obj18 = { name: session_id.name };
-          obj17.text = intl6.formatToPlainString(require(1212) /* getSystemLocale */.t["b+lA5+"], obj18);
-          obj17.platformIcon = icon;
-          obj17.platformLabel = str;
+          const obj17 = { text: null, platformIcon: null, platformLabel: null };
+          const intl6 = tmp37(1236).intl;
+          const obj18 = { name: null };
+          obj18[0] = session_id.name;
+          obj17[0] = intl6.formatToPlainString(tmp37(1236).t["b+lA5+"], obj18);
+          obj17[1] = icon;
+          obj17[2] = str;
           obj = obj17;
         }
       }
-      if (session_id.type === constants.LISTENING) {
-        const obj19 = {};
-        const intl5 = require(1212) /* getSystemLocale */.intl;
-        obj19.text = intl5.string(require(1212) /* getSystemLocale */.t.dBISa6);
-        obj19.platformIcon = icon;
-        obj19.platformLabel = str;
+      if (session_id.type === tmp5.LISTENING) {
+        const obj19 = { text: null, platformIcon: null, platformLabel: null };
+        const intl5 = tmp37(1236).intl;
+        obj19[0] = intl5.string(tmp37(1236).t.dBISa6);
+        obj19[1] = icon;
+        obj19[2] = str;
         obj = obj19;
       } else {
-        if (session_id.type === constants.WATCHING) {
+        if (session_id.type === tmp5.WATCHING) {
           if (null != session_id.details) {
-            const obj20 = {};
-            const intl4 = require(1212) /* getSystemLocale */.intl;
-            const obj21 = { name: session_id.name };
-            obj20.text = intl4.formatToPlainString(require(1212) /* getSystemLocale */.t.mqdfDc, obj21);
-            obj20.platformIcon = icon;
-            obj20.platformLabel = str;
+            const obj20 = { text: null, platformIcon: null, platformLabel: null };
+            const intl4 = tmp37(1236).intl;
+            const obj21 = { name: null };
+            obj21[0] = session_id.name;
+            obj20[0] = intl4.formatToPlainString(tmp37(1236).t.mqdfDc, obj21);
+            obj20[1] = icon;
+            obj20[2] = str;
             obj = obj20;
           }
         }
-        if (session_id.type === constants.WATCHING) {
-          const obj22 = {};
-          const intl3 = require(1212) /* getSystemLocale */.intl;
-          obj22.text = intl3.string(require(1212) /* getSystemLocale */.t.GpNXjC);
-          obj22.platformIcon = icon;
-          obj22.platformLabel = str;
+        if (session_id.type === tmp5.WATCHING) {
+          const obj22 = { text: null, platformIcon: null, platformLabel: null };
+          const intl3 = tmp37(1236).intl;
+          obj22[0] = intl3.string(tmp37(1236).t.GpNXjC);
+          obj22[1] = icon;
+          obj22[2] = str;
           obj = obj22;
         } else {
-          if (session_id.type === constants.COMPETING) {
+          if (session_id.type === tmp5.COMPETING) {
             if (null != session_id.details) {
-              const obj23 = {};
-              const intl2 = require(1212) /* getSystemLocale */.intl;
-              const obj24 = { name: session_id.name };
-              obj23.text = intl2.formatToPlainString(require(1212) /* getSystemLocale */.t.oHF7Ch, obj24);
-              obj23.platformIcon = icon;
-              obj23.platformLabel = str;
+              const obj23 = { text: null, platformIcon: null, platformLabel: null };
+              const intl2 = tmp37(1236).intl;
+              const obj24 = { name: null };
+              obj24[0] = session_id.name;
+              obj23[0] = intl2.formatToPlainString(tmp37(1236).t.oHF7Ch, obj24);
+              obj23[1] = icon;
+              obj23[2] = str;
               obj = obj23;
             }
           }
-          if (session_id.type === constants.COMPETING) {
-            const obj25 = {};
-            const intl = require(1212) /* getSystemLocale */.intl;
-            obj25.text = intl.string(require(1212) /* getSystemLocale */.t.OzCsIA);
-            obj25.platformIcon = icon;
-            obj25.platformLabel = str;
+          if (session_id.type === tmp5.COMPETING) {
+            const obj25 = { text: null, platformIcon: null, platformLabel: null };
+            const intl = tmp37(1236).intl;
+            obj25[0] = intl.string(tmp37(1236).t.OzCsIA);
+            obj25[1] = icon;
+            obj25[2] = str;
             obj = obj25;
           } else {
-            obj = { text: undefined, platformIcon: icon, platformLabel: str };
+            obj = { text: "r", platformIcon: "PX_16", platformLabel: "TRANSPARENT" };
+            obj[1] = icon;
+            obj[2] = str;
           }
         }
       }
     }
-    obj29 = require(9056) /* unpackStageChannelParty */;
+    obj29 = require(9080) /* unpackStageChannelParty */;
   }
   return obj;
 };

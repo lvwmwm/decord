@@ -1,29 +1,29 @@
-// Module ID: 13027
-// Function ID: 100905
+// Module ID: 13050
+// Function ID: 13051
 // Name: ServerTagPreviewActionSheet
-// Dependencies: [31, 27, 8257, 33, 4165, 689, 8258, 8259, 13028, 4133, 4161, 1212, 4578, 5618, 5533, 5220, 2]
+// Dependencies: [19, 17, 8281, 21, 4189, 712, 8282, 8283, 13051, 4157, 4185, 1236, 4600, 5636, 5551, 5242, 2]
 // Exports: default
 
-// Module 13027 (ServerTagPreviewActionSheet)
-import result from "result";
+// Module 13050 (ServerTagPreviewActionSheet)
+import noop from "noop";
 import { View } from "get ActivityIndicator";
-import { GuildProfileFetchStatus } from "_isNativeReflectConstruct";
+import { GuildProfileFetchStatus } from "handleUpdateStart";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
 let closure_6;
-let closure_7;
+let error;
 const require = arg1;
-({ jsx: closure_6, jsxs: closure_7 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { paddingVertical: require("_createForOfIteratorHelperLoose").space.PX_24, alignItems: "center", rowGap: require("_createForOfIteratorHelperLoose").space.PX_12 };
-_createForOfIteratorHelperLoose.error = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/guild_settings/native/ServerTagPreviewActionSheet.tsx");
+({ jsx: closure_6, jsxs: error } = jsxProd);
+createCacheKey = { error: null };
+createCacheKey = { paddingVertical: require("Themes").space.PX_24, alignItems: "center", rowGap: require("Themes").space.PX_12 };
+createCacheKey[0] = createCacheKey;
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+const result = require("handleUpdateStart").fileFinishedImporting("modules/guild_settings/native/ServerTagPreviewActionSheet.tsx");
 
 export default function ServerTagPreviewActionSheet(guildId) {
   guildId = guildId.guildId;
-  let obj = guildId(8258);
+  let obj = guildId(8282);
   let guildProfile = obj.useGuildProfile(guildId);
   guildProfile = guildProfile.guildProfile;
   const items = [guildId];
@@ -31,37 +31,40 @@ export default function ServerTagPreviewActionSheet(guildId) {
     const guildProfile = guildId(outer1_2[7]).getGuildProfile(guildId, false, { respectBackoff: true });
   }, items);
   if (null != guildProfile) {
-    obj = { guildId };
-    ({ tag: obj5.tag, badge: obj5.badge, badgeColorPrimary: obj5.primaryColor, badgeColorSecondary: obj5.secondaryColor } = guildProfile);
-    obj.isDirty = false;
-    obj.variant = "plain";
-    obj.onAdopted = function onAdopted(arg0) {
-      return outer1_1(outer1_2[9]).hideActionSheet();
+    obj = { guildId: null, tag: null, badge: null, primaryColor: null, secondaryColor: null, isDirty: false, variant: "plain", onAdopted: null };
+    obj[0] = guildId;
+    ({ tag: obj5[1], badge: obj5[2], badgeColorPrimary: obj5[3], badgeColorSecondary: obj5[4] } = guildProfile);
+    obj[7] = function onAdopted(arg0) {
+      return callback(table[9]).hideActionSheet();
     };
-    let tmp7 = callback(importDefault(13028), obj);
+    let tmp7 = callback(importDefault(13051), obj);
+    let tmp8 = callback;
   } else if (guildProfile.fetchStatus === GuildProfileFetchStatus.FETCHED) {
-    obj = { style: tmp.error };
-    const obj1 = { variant: "text-md/medium", color: "text-muted" };
-    const intl = guildId(1212).intl;
-    obj1.children = intl.string(guildId(1212).t.tmGHjc);
-    const items1 = [callback(guildId(4161).Text, obj1), ];
-    const obj2 = { variant: "secondary" };
-    const intl2 = guildId(1212).intl;
-    obj2.text = intl2.string(guildId(1212).t["5911Lb"]);
-    obj2.onPress = function onPress() {
+    obj = { style: null, children: null };
+    obj[0] = tmp.error;
+    const obj1 = { variant: "text-md/medium", color: "text-muted", children: null };
+    const intl = tmp2(1236).intl;
+    obj1[2] = intl.string(tmp2(1236).t.tmGHjc);
+    const items1 = [callback(tmp2(4185).Text, obj1), ];
+    const obj2 = { variant: "secondary", text: null, onPress: null };
+    const intl2 = tmp2(1236).intl;
+    obj2[1] = intl2.string(tmp2(1236).t["5911Lb"]);
+    obj2[2] = function onPress() {
       return guildId(outer1_2[7]).getGuildProfile(guildId, true);
     };
-    items1[1] = callback(guildId(4578).Button, obj2);
-    obj.children = items1;
+    items1[1] = callback(tmp2(4600).Button, obj2);
+    obj[1] = items1;
     tmp7 = callback2(View, obj);
+    tmp8 = callback;
   } else {
-    tmp7 = callback(guildId(5618).SceneLoadingIndicator, {});
+    tmp7 = callback(tmp2(5636).SceneLoadingIndicator, {});
+    tmp8 = callback;
   }
-  const obj3 = {};
-  const obj4 = {};
-  const intl3 = guildId(1212).intl;
-  obj4.title = intl3.string(guildId(1212).t["2QmKZ2"]);
-  const items2 = [callback(guildId(5220).BottomSheetTitleHeader, obj4), tmp7];
-  obj3.children = items2;
-  return callback2(guildId(5533).ActionSheet, obj3);
+  const obj3 = { children: null };
+  const obj4 = { title: null };
+  const intl3 = tmp2(1236).intl;
+  obj4[0] = intl3.string(guildId(1236).t["2QmKZ2"]);
+  const items2 = [tmp8(guildId(5242).BottomSheetTitleHeader, obj4), tmp7];
+  obj3[0] = items2;
+  return callback2(guildId(5551).ActionSheet, obj3);
 };

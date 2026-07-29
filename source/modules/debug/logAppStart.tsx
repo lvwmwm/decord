@@ -1,16 +1,16 @@
 // Module ID: 1
-// Function ID: 102
-// Dependencies: [2, 3, 14, 2]
+// Function ID: 2
+// Dependencies: [2, 3, 9, 2]
 
 // Module 1
-import set from "_createForOfIteratorHelperLoose";
-import set from "_createForOfIteratorHelperLoose";
+import set from "serialize";
+import set from "serialize";
 
 set = set.clear();
 new require("set").default("app").log("Initializing app");
-const loadIndex = require("_createForOfIteratorHelperLoose").default.loadIndex;
+const loadIndex = require("serialize").default.loadIndex;
 loadIndex.recordStart();
-const loadImports = require("_createForOfIteratorHelperLoose").default.loadImports;
+const loadImports = require("serialize").default.loadImports;
 loadImports.recordStart();
 const result = set.fileFinishedImporting("modules/debug/logAppStart.tsx");
 

@@ -1,43 +1,39 @@
-// Module ID: 15359
-// Function ID: 117024
+// Module ID: 15392
+// Function ID: 15393
 // Name: jsx
-// Dependencies: [31, 8110, 33, 5550, 4524, 2]
+// Dependencies: [19, 8134, 21, 5568, 4547, 2]
 // Exports: default
 
-// Module 15359 (jsx)
-import "result";
-import module_8110 from "module_8110";
+// Module 15392 (jsx)
+import "noop";
+import module_8134 from "module_8134";
 import { jsx } from "jsxProd";
 import set from "set";
 
 const require = arg1;
 const result = require("jsxProd").fileFinishedImporting("modules/panels/morphable/native/AppFreezer.tsx");
 
-export default function AppFreezer(manualFreeze) {
-  let flag = manualFreeze.manualFreeze;
+export default function AppFreezer(children) {
+  let flag = children.manualFreeze;
   if (flag === undefined) {
     flag = false;
   }
-  let placeholder = manualFreeze.placeholder;
+  let placeholder = children.placeholder;
   if (placeholder === undefined) {
     placeholder = set;
   }
-  const lockKeys = manualFreeze.lockKeys;
-  let tmp = callback((lockKeys) => (function shouldFreeze(lockKeys, lockKeys2) {
-    let closure_0 = lockKeys;
-    if (null != lockKeys2) {
-      let someResult = lockKeys2.some((arg0) => lockKeys.has(arg0));
+  let lockKeys = children.lockKeys;
+  let freeze = callback((lockKeys) => {
+    lockKeys = lockKeys.lockKeys;
+    if (null != lockKeys) {
+      let someResult = lockKeys.some((arg0) => lockKeys.has(arg0));
     } else {
       someResult = lockKeys.size > 0;
     }
     return someResult;
-  })(lockKeys.lockKeys, lockKeys));
-  const obj = {};
-  if (!tmp) {
-    tmp = flag;
+  });
+  if (!freeze) {
+    freeze = flag;
   }
-  obj.freeze = tmp;
-  obj.placeholder = placeholder;
-  obj.children = manualFreeze.children;
-  return jsx(lockKeys(4524).Freeze, {});
+  return jsx(lockKeys(4547).Freeze, { freeze, placeholder, children: children.children });
 };

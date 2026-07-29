@@ -1,96 +1,99 @@
-// Module ID: 15076
-// Function ID: 114755
+// Module ID: 15109
+// Function ID: 15110
 // Name: AudienceItem
-// Dependencies: [31, 27, 1918, 33, 4165, 689, 10264, 8801, 566, 15077, 9889, 1212, 11596, 4161, 15081, 2]
+// Dependencies: [19, 17, 1942, 21, 4189, 712, 10285, 8825, 589, 15110, 9911, 1236, 11620, 4185, 15114, 2]
 // Exports: default, getAudienceItemHeight
 
-// Module 15076 (AudienceItem)
+// Module 15109 (AudienceItem)
 import { View } from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import trackCommunicationDisabled from "trackCommunicationDisabled";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import importAllResult from "result";
+import createCacheKey from "createCacheKey";
+import importAllResult from "noop";
 
-let closure_5;
+let c5;
 let closure_6;
 const require = arg1;
 function AudienceItem(arg0) {
   let audienceCount;
   let collapsed;
   ({ audienceCount, collapsed } = arg0);
-  const tmp = callback2(importDefault(8801)());
+  const tmp2 = callback2(importDefault(8825)());
   let formatToPlainStringResult = audienceCount;
   if (!collapsed) {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    let obj = { count: audienceCount };
-    formatToPlainStringResult = intl.formatToPlainString(require(1212) /* getSystemLocale */.t["+v2pN2"], obj);
+    const intl = require(1236) /* getSystemLocale */.intl;
+    let obj = { count: null };
+    obj[0] = audienceCount;
+    formatToPlainStringResult = intl.formatToPlainString(require(1236) /* getSystemLocale */.t["+v2pN2"], obj);
   }
-  obj = { style: collapsed ? tmp.listenersCollapsed : tmp.listeners };
-  obj = { style: tmp.listenersIconWrapper, children: callback(require(11596) /* HeadphonesIcon */.HeadphonesIcon, obj1) };
-  obj1 = { color: "redesign-channel-name-muted-text", size: "custom", style: tmp.headphonesIcon };
-  const items = [callback(View, obj), ];
-  const obj2 = { style: tmp.listenersText, variant: c7, color: "redesign-channel-name-muted-text", children: formatToPlainStringResult };
-  items[1] = callback(require(4161) /* Text */.Text, obj2);
-  obj.children = items;
+  obj = { style: collapsed ? tmp2.listenersCollapsed : tmp2.listeners, children: null };
+  obj = { style: tmp2.listenersIconWrapper, children: callback(require(11620) /* HeadphonesIcon */.HeadphonesIcon, obj1) };
+  const items = [callback(View, obj), callback(require(4185) /* Text */.Text, { style: tmp2.listenersText, variant: c7, color: "redesign-channel-name-muted-text", children: formatToPlainStringResult })];
+  obj[1] = items;
   return closure_6(View, obj);
 }
-({ jsx: closure_5, jsxs: closure_6 } = jsxProd);
+({ jsx: c5, jsxs: closure_6 } = jsxProd);
 let c7 = "text-sm/medium";
-let closure_8 = _createForOfIteratorHelperLoose.createStyles((arg0) => {
-  const colors = importDefault(689).colors;
-  const tmp = arg0 ? colors.MOBILE_EXPRESSION_PICKER_BACKGROUND_DEFAULT : colors.BACKGROUND_BASE_LOWEST;
-  const round = importDefault(689).radii.round;
-  obj = { listeners: { display: "flex", flexDirection: "row", alignItems: "center", padding: 4, marginTop: 4, marginLeft: -8 }, listenersCollapsed: obj };
-  obj = { flexDirection: "row", alignItems: "center", backgroundColor: tmp, borderRadius: round, marginLeft: -16, marginTop: 4, paddingLeft: 2, paddingRight: 6 };
-  obj = { alignItems: "center", justifyContent: "center", backgroundColor: tmp, marginRight: 8, marginLeft: 4, borderRadius: round };
-  const merged = Object.assign(require(10264) /* getLayoutStyles */.makeSizeStyle(20));
-  obj.listenersIconWrapper = obj;
-  obj.listenersText = { marginRight: 4 };
-  obj.userCollapsedOverlap = { marginLeft: -20 };
-  const obj4 = require(10264) /* getLayoutStyles */;
-  obj.headphonesIcon = require(10264) /* getLayoutStyles */.makeSizeStyle(14);
+let closure_8 = createCacheKey.createStyles((arg0) => {
+  const colors = importDefault(712).colors;
+  if (arg0) {
+    let BACKGROUND_BASE_LOWEST = colors.MOBILE_EXPRESSION_PICKER_BACKGROUND_DEFAULT;
+    let tmp4 = tmp;
+  } else {
+    BACKGROUND_BASE_LOWEST = colors.BACKGROUND_BASE_LOWEST;
+    tmp4 = tmp;
+  }
+  const round = tmp4(712).radii.round;
+  let obj = { listeners: { display: "flex", flexDirection: "row", alignItems: "center", padding: 4, marginTop: 4, marginLeft: -8 }, listenersCollapsed: { flexDirection: "row", alignItems: "center", backgroundColor: BACKGROUND_BASE_LOWEST, borderRadius: round, marginLeft: -16, marginTop: 4, paddingLeft: 2, paddingRight: 6 }, listenersIconWrapper: null, listenersText: null, userCollapsedOverlap: null, headphonesIcon: null };
+  obj = { alignItems: "center", justifyContent: "center", backgroundColor: BACKGROUND_BASE_LOWEST, marginRight: 8, marginLeft: 4, borderRadius: round };
+  const merged = Object.assign(require(10285) /* getLayoutStyles */.makeSizeStyle(20));
+  obj[2] = obj;
+  obj[3] = { marginRight: 4 };
+  obj[4] = { marginLeft: -20 };
+  const obj3 = require(10285) /* getLayoutStyles */;
+  obj[5] = require(10285) /* getLayoutStyles */.makeSizeStyle(14);
   return obj;
 });
-let closure_9 = require("result").memo((voiceState) => {
+let closure_9 = require("noop").memo((voiceState) => {
+  let isGuest;
   let member;
+  let storeMember;
   let voiceState2;
   voiceState = voiceState.voiceState;
   const user = voiceState.user;
   ({ member, voiceState: voiceState2 } = voiceState);
   const channel = voiceState.channel;
   const collapsed = voiceState.collapsed;
-  let obj = user(566);
-  const items = [_isNativeReflectConstruct];
+  let obj = user(589);
+  const items = [trackCommunicationDisabled];
   const items1 = [channel.guild_id, user.id];
   const stateFromStoresObject = obj.useStateFromStoresObject(items, () => ({ storeMember: outer1_4.getMember(channel.guild_id, user.id), isGuest: outer1_4.isGuestOrLurker(channel.guild_id, user.id) }), items1);
-  let storeMember = stateFromStoresObject.storeMember;
-  obj = {};
   let userCollapsedOverlap = null;
+  ({ storeMember, isGuest } = stateFromStoresObject);
   if (collapsed) {
     userCollapsedOverlap = null;
     if (!voiceState.isFirst) {
-      userCollapsedOverlap = tmp.userCollapsedOverlap;
+      userCollapsedOverlap = tmp3.userCollapsedOverlap;
     }
   }
-  obj.style = userCollapsedOverlap;
-  obj = { user };
-  tmp = callback2(channel(8801)());
-  const tmp3 = closure_5;
-  const tmp4 = View;
-  const tmp6 = closure_5;
-  if (null != member) {
-    storeMember = member;
+  obj = { style: userCollapsedOverlap, children: null };
+  obj = { user, member: null, mute: null, deaf: null, selfVideo: null, selfMute: null, selfDeaf: null, suppress: null, collapsed: null, sessionId: null, channel: null, isGuest: null };
+  const tmp = channel;
+  tmp3 = callback2(channel(8825)());
+  const tmp6 = View;
+  if (member == null) {
+    member = storeMember;
   }
-  obj.member = storeMember;
-  ({ mute: obj3.mute, deaf: obj3.deaf, selfVideo: obj3.selfVideo, selfMute: obj3.selfMute, selfDeaf: obj3.selfDeaf, suppress: obj3.suppress } = voiceState2);
-  obj.collapsed = collapsed;
-  obj.sessionId = voiceState2.sessionId;
-  obj.channel = channel;
-  obj.isGuest = stateFromStoresObject.isGuest;
-  obj.children = tmp6(channel(15077), obj, user.id);
-  return tmp3(tmp4, obj);
+  obj[1] = member;
+  ({ mute: obj3[2], deaf: obj3[3], selfVideo: obj3[4], selfMute: obj3[5], selfDeaf: obj3[6], suppress: obj3[7] } = voiceState2);
+  obj[8] = collapsed;
+  obj[9] = voiceState2.sessionId;
+  obj[10] = channel;
+  obj[11] = isGuest;
+  obj[1] = closure_5(channel(15110), obj, user.id);
+  return closure_5(tmp6, obj);
 });
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/guild_sidebar/native/VoiceUsers.tsx");
+const result = require("trackCommunicationDisabled").fileFinishedImporting("modules/guild_sidebar/native/VoiceUsers.tsx");
 
 export default function VoiceUsers(collapsed) {
   let audienceCount;
@@ -100,21 +103,24 @@ export default function VoiceUsers(collapsed) {
   ({ channel: importDefault, voiceStates, audienceCount } = collapsed);
   let tmp = null;
   if (0 !== voiceStates.length) {
-    let obj = { collapsed };
+    let obj = { collapsed: null, children: null };
+    obj[0] = collapsed;
     const items = [voiceStates.map((user) => outer1_5(outer1_9, { voiceState: user, channel: closure_1, collapsed, isFirst: 0 === arg1 }, "voice-user-item-" + user.user.id + "-" + user.voiceState.sessionId)), ];
-    let tmp6 = null != audienceCount && audienceCount > 0;
-    if (tmp6) {
-      obj = { audienceCount, collapsed };
-      tmp6 = callback(AudienceItem, obj);
+    let tmp2 = null != audienceCount && audienceCount > 0;
+    if (tmp2) {
+      obj = { audienceCount: null, collapsed: null };
+      obj[0] = audienceCount;
+      obj[1] = collapsed;
+      tmp2 = callback(AudienceItem, obj);
     }
-    items[1] = tmp6;
-    obj.children = items;
-    tmp = closure_6(importDefault(15081), obj);
-    const tmp2 = closure_6;
-    const tmp5 = importDefault(15081);
+    items[1] = tmp2;
+    obj[1] = items;
+    tmp = closure_6(importDefault(15114), obj);
+    const tmp5 = closure_6;
+    const tmp8 = importDefault(15114);
   }
   return tmp;
 };
 export const getAudienceItemHeight = function getAudienceItemHeight(fontScale) {
-  return 8 + Math.max(20, require(9889) /* scaleLineHeight */.scaleTextLineHeight(c7, fontScale));
+  return 8 + Math.max(20, require(9911) /* map */.scaleTextLineHeight(c7, fontScale));
 };

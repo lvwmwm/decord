@@ -1,19 +1,19 @@
-// Module ID: 11394
-// Function ID: 88389
+// Module ID: 11418
+// Function ID: 11419
 // Name: useVoiceMessageTooltip
-// Dependencies: [31, 1452, 11129, 1212, 6723, 8407, 2]
+// Dependencies: [19, 1476, 11153, 1236, 6744, 8431, 2]
 // Exports: default
 
-// Module 11394 (useVoiceMessageTooltip)
-import result from "result";
+// Module 11418 (useVoiceMessageTooltip)
+import noop from "noop";
 import subscribeToKeyboardUIStore from "subscribeToKeyboardUIStore";
 import VoiceMessageRecordingStatus from "VoiceMessageRecordingStatus";
 
-let closure_4;
-let closure_5;
+let c4;
+let c5;
 let closure_6;
 let require = arg1;
-({ hideVoiceMessagesTooltip: closure_4, showVoiceMessagesTooltip: closure_5, useVoiceMessagesUIStore: closure_6 } = VoiceMessageRecordingStatus);
+({ hideVoiceMessagesTooltip: c4, showVoiceMessagesTooltip: c5, useVoiceMessagesUIStore: closure_6 } = VoiceMessageRecordingStatus);
 const result = require("VoiceMessageRecordingStatus").fileFinishedImporting("modules/voice_messages/native/useVoiceMessageTooltip.tsx");
 
 export default function useVoiceMessageTooltip() {
@@ -23,34 +23,32 @@ export default function useVoiceMessageTooltip() {
   const items = [tmp2];
   const items1 = [tmp2];
   const memo = React.useMemo(() => {
-    const obj = { position: "top" };
+    const obj = { position: "top", label: null, visible: null };
     const intl = tmp2(outer1_1[3]).intl;
-    obj.label = intl.string(tmp2(outer1_1[3]).t["hP6+07"]);
-    obj.visible = tmp2;
+    obj[1] = intl.string(tmp2(outer1_1[3]).t["hP6+07"]);
+    obj[2] = tmp2;
     return obj;
   }, items);
   const effect = React.useEffect(() => {
     if (tmp2) {
       tmp2 = outer1_1;
-      let obj = tmp2(outer1_1[4]);
-      obj = { includeCustomKeyboard: true };
-      tmp2 = obj.getKeyboardIsOpen(obj);
+      tmp2 = tmp2(outer1_1[4]).getKeyboardIsOpen({ includeCustomKeyboard: true });
       let closure_1 = outer1_3(() => {
         if (callback !== obj.getKeyboardIsOpen({ includeCustomKeyboard: true })) {
-          outer2_4();
+          outer1_4();
         }
       });
       const _setTimeout = setTimeout;
       const timeout = setTimeout(() => {
-        outer2_4();
+        callback2();
       }, 2000);
       return () => {
-        clearTimeout(result);
-        callback2();
+        clearTimeout(noop);
+        dependencyMap();
       };
     }
   }, items1);
-  let obj = require(8407) /* useTooltipHelper */;
+  let obj = require(8431) /* useTooltip */;
   const tooltip = obj.useTooltip(ref, memo);
   obj = { tooltipTargetRef: ref, showVoiceMessagesTooltip: closure_5 };
   return obj;

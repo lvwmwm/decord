@@ -1,37 +1,37 @@
-// Module ID: 5756
-// Function ID: 49725
+// Module ID: 5774
+// Function ID: 5775
 // Name: Feedback
-// Dependencies: [1212, 2]
+// Dependencies: [1236, 2]
 // Exports: generateFeedbackOptions, getMostImportantRaidResolutionType
 
-// Module 5756 (Feedback)
+// Module 5774 (Feedback)
 let obj = { BUG: "BUG", ALLOWED: "ALLOWED", MENTION_RAID_REMOVE_RESTRICTION: "MENTION_RAID_REMOVE_RESTRICTION" };
 obj = { LEGITIMATE_ACTIVITY: "LEGITIMATE_ACTIVITY", LEGITIMATE_ACCOUNTS: "LEGITIMATE_ACCOUNTS", LEGITIMATE_DMS: "LEGITIMATE_DMS", DM_SPAM: "DM_SPAM", JOIN_RAID: "JOIN_RAID", OTHER: "OTHER" };
 const result = require("set").fileFinishedImporting("modules/guild_automod/AutomodFeedback.tsx");
 
 export const Feedback = obj;
 export const generateFeedbackOptions = function generateFeedbackOptions() {
-  let obj = {};
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj.name = intl.string(require(1212) /* getSystemLocale */.t["+MbOX4"]);
-  obj.value = obj.BUG;
+  let obj = { name: null, value: null };
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj[0] = intl.string(require(1236) /* getSystemLocale */.t["+MbOX4"]);
+  obj[1] = obj.BUG;
   const items = [obj, ];
-  obj = {};
-  const intl2 = require(1212) /* getSystemLocale */.intl;
-  obj.name = intl2.string(require(1212) /* getSystemLocale */.t.CRsCRC);
-  obj.value = obj.ALLOWED;
+  obj = { name: null, value: null };
+  const intl2 = require(1236) /* getSystemLocale */.intl;
+  obj[0] = intl2.string(require(1236) /* getSystemLocale */.t.CRsCRC);
+  obj[1] = obj.ALLOWED;
   items[1] = obj;
   return items;
 };
 export const RaidAlertType = { JOIN_RAID: "JOIN_RAID", MENTION_RAID: "MENTION_RAID" };
 export const RaidResolutionType = obj;
-export const getMostImportantRaidResolutionType = function getMostImportantRaidResolutionType(closure_3) {
-  if (closure_3.includes(obj.LEGITIMATE_ACTIVITY)) {
-    let DM_SPAM = obj.LEGITIMATE_ACTIVITY;
-  } else if (closure_3.includes(obj.DM_SPAM)) {
-    DM_SPAM = obj.DM_SPAM;
+export const getMostImportantRaidResolutionType = function getMostImportantRaidResolutionType(c3) {
+  if (c3.includes(obj.LEGITIMATE_ACTIVITY)) {
+    let DM_SPAM = tmp.LEGITIMATE_ACTIVITY;
+  } else if (c3.includes(tmp.DM_SPAM)) {
+    DM_SPAM = tmp.DM_SPAM;
   } else {
-    DM_SPAM = closure_3.includes(obj.JOIN_RAID) ? tmp3.JOIN_RAID : tmp3.OTHER;
+    DM_SPAM = c3.includes(tmp.JOIN_RAID) ? tmp.JOIN_RAID : tmp.OTHER;
   }
   return DM_SPAM;
 };

@@ -1,13 +1,13 @@
-// Module ID: 14907
-// Function ID: 113555
+// Module ID: 14933
+// Function ID: 14934
 // Name: keys
-// Dependencies: [621, 2]
+// Dependencies: [644, 2]
 
-// Module 14907 (keys)
+// Module 14933 (keys)
 import keys from "keys";
 
 let c0 = null;
-let obj = keys.create((arg0, arg1) => {
+const obj = keys.create((arg0, arg1) => {
   let closure_0 = arg0;
   let closure_1 = arg1;
   return {
@@ -18,13 +18,11 @@ let obj = keys.create((arg0, arg1) => {
         clearInterval(interval);
       }
       interval = setInterval(() => {
-        const obj = {};
         let str = "voice";
-        if ("voice" === outer1_1().currentType) {
+        if ("voice" === callback().currentType) {
           str = "activity";
         }
-        obj.currentType = str;
-        outer1_0(obj);
+        closure_0({ currentType: str });
       }, 3500);
     },
     stopTimer() {

@@ -1,26 +1,25 @@
-// Module ID: 15917
-// Function ID: 122730
+// Module ID: 15952
+// Function ID: 15953
 // Name: useCanConnect
-// Dependencies: [1348, 1838, 3793, 4181, 482, 566, 4347, 2]
+// Dependencies: [1372, 1862, 3817, 4205, 505, 589, 4372, 2]
 // Exports: default
 
-// Module 15917 (useCanConnect)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import closure_4 from "_isNativeReflectConstruct";
-import closure_5 from "_isNativeReflectConstruct";
+// Module 15952 (useCanConnect)
+import ensureGuildLoaded from "ensureGuildLoaded";
+import createGuildRecordFromRust from "createGuildRecordFromRust";
+import getUncachedChannelPermissions from "getUncachedChannelPermissions";
+import updateVoiceState from "updateVoiceState";
 import { Permissions } from "sum";
 
 const require = arg1;
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/voice_panel/native/hooks/useCanConnect.tsx");
+const result = require("getUncachedChannelPermissions").fileFinishedImporting("modules/voice_panel/native/hooks/useCanConnect.tsx");
 
 export default function useCanConnect(arg0) {
   const _require = arg0;
-  const items = [_isNativeReflectConstruct, closure_4, _createForOfIteratorHelperLoose, closure_5];
+  const items = [ensureGuildLoaded, getUncachedChannelPermissions, createGuildRecordFromRust, updateVoiceState];
   const items1 = [arg0];
-  return _require(566).useStateFromStoresObject(items, () => {
+  return _require(589).useStateFromStoresObject(items, () => {
     const channel = outer1_2.getChannel(callback);
-    const obj = {};
     let tmp = null != channel;
     if (tmp) {
       let isPrivateResult = channel.isPrivate();
@@ -29,13 +28,13 @@ export default function useCanConnect(arg0) {
       }
       tmp = isPrivateResult;
     }
-    obj.canConnect = tmp;
+    const obj = { canConnect: tmp, isAtMaxCapacity: null };
     let isChannelFullResult = null == channel;
     if (!isChannelFullResult) {
       isChannelFullResult = callback(outer1_1[6]).isChannelFull(channel, outer1_5, outer1_3);
       const obj3 = callback(outer1_1[6]);
     }
-    obj.isAtMaxCapacity = isChannelFullResult;
+    obj[1] = isChannelFullResult;
     return obj;
   }, items1);
 };

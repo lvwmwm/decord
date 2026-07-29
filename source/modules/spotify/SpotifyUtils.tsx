@@ -1,102 +1,23 @@
-// Module ID: 10917
-// Function ID: 84611
-// Name: _createForOfIteratorHelperLoose
-// Dependencies: [5, 4185, 10918, 4846, 8151, 653, 664, 4849, 10919, 10920, 2]
+// Module ID: 10941
+// Function ID: 10942
+// Name: asString
+// Dependencies: [5, 4209, 10942, 4868, 8175, 676, 687, 4871, 10943, 10944, 2]
 // Exports: ensureSpotifyPlayable, ensureSpotifyPremium, getSpotifyMetadataFromActivity, isSpotifyPlayable, isSpotifyPremium
 
-// Module 10917 (_createForOfIteratorHelperLoose)
+// Module 10941 (asString)
 import ME from "ME";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_5 from "_isNativeReflectConstruct";
-import closure_6 from "_isNativeReflectConstruct";
-import spotifyUtmParams from "spotifyUtmParams";
+import initialize from "initialize";
+import isProtocolRegistered from "isProtocolRegistered";
+import upsertAccount from "upsertAccount";
+import WEB_OPEN from "WEB_OPEN";
 import { PlatformTypes } from "ME";
 
-let closure_7;
-let closure_8;
-let closure_9;
+let c9;
+let error;
+let metroImportAll;
 const require = arg1;
-function _createForOfIteratorHelperLoose(iterable) {
-  let closure_0 = iterable;
-  iterable = "undefined" !== typeof Symbol;
-  if (iterable) {
-    const _Symbol = Symbol;
-    iterable = iterable[Symbol.iterator];
-  }
-  if (!iterable) {
-    iterable = iterable[Symbol.iterator];
-  }
-  if (iterable) {
-    const iter = iterable.call(iterable);
-    const next = iter.next;
-    return next.bind(iter);
-  } else {
-    const _Array = Array;
-    let tmp = iterable;
-    if (!Array.isArray(iterable)) {
-      let tmp2;
-      if (iterable) {
-        if ("string" === typeof iterable) {
-          tmp2 = _arrayLikeToArray(iterable, undefined);
-        } else {
-          const toString = {}.toString;
-          const substr = toString.call(iterable).slice(8, -1);
-          let name = substr;
-          if (tmp3) {
-            name = iterable.constructor.name;
-          }
-          if ("Map" !== name) {
-            if ("Set" !== name) {
-              if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(iterable, undefined);
-              } else {
-                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
-              }
-            }
-            tmp2 = arr;
-          }
-          const _Array2 = Array;
-          arr = Array.from(iterable);
-          const callResult = toString.call(iterable);
-          tmp3 = "Object" === substr && iterable.constructor;
-        }
-      }
-      tmp = tmp2;
-      if (!tmp2) {
-        const _TypeError = TypeError;
-        const typeError = new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
-        throw typeError;
-      }
-    }
-    if (tmp) {
-      closure_0 = tmp;
-    }
-    let c1 = 0;
-    return () => {
-      if (closure_1 >= length.length) {
-        let obj = { done: true };
-      } else {
-        obj = { done: false };
-        closure_1 = tmp3 + 1;
-        obj.value = length[+closure_1];
-      }
-      return obj;
-    };
-  }
-}
-function _arrayLikeToArray(arg0, arg1) {
-  let length;
-  if (tmp) {
-    length = arg0.length;
-  }
-  const ArrayResult = Array(length);
-  for (let num = 0; num < length; num = num + 1) {
-    ArrayResult[num] = arg0[num];
-  }
-  return ArrayResult;
-}
 function asString(arg0) {
-  if ("string" === typeof arg0) {
+  if (typeof arg0 === "y") {
     return arg0;
   } else {
     const _Error = Error;
@@ -105,35 +26,147 @@ function asString(arg0) {
   }
 }
 function _getSpotifyMetadataFromActivity() {
-  // CreateGeneratorClosureLongIndex (0x67)
-  const obj = callback(tmp);
-  return obj(...arguments);
+  const self = this;
+  const tmp = callback((arg0, arg1) => {
+    let closure_0 = arg0;
+    let closure_1 = arg1;
+    let c5 = 0;
+    let c6 = 0;
+    return (function*(arg0, arg1) {
+      if (c6 === 2) {
+        c6 = 3;
+        HermesBuiltin.throwTypeError();
+      } else if (tmp4 === 3) {
+        if (arg0 === 1) {
+          throw arg1;
+        } else if (arg0 === 2) {
+          let obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
+        } else {
+          return { value: "HermesInternal", done: null };
+        }
+      } else {
+        try {
+          c6 = 2;
+          if (0 === c5) {
+            if (arg0 === 1) {
+              c6 = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              c6 = 3;
+              obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            } else {
+              let initialize = tmp5;
+              let ME = tmp2;
+              let lib;
+              let closure_1;
+              let obj2 = lib(outer1_2[9]);
+              c5 = 1;
+              c6 = 1;
+              const obj1 = { value: null, done: false };
+              obj1[0] = obj2.getMetadata(lib, closure_1);
+              return obj1;
+            }
+          } else if (arg0 === 1) {
+            c6 = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            c6 = 3;
+            obj2 = { value: null, done: true };
+            obj2[0] = arg1;
+            return obj2;
+          } else {
+            lib = arg1;
+            const type = lib.type;
+            let TRACK = type;
+            if (type == null) {
+              TRACK = constants.TRACK;
+            }
+            callback(TRACK);
+            closure_1 = closure_9(TRACK);
+            if (null === closure_1) {
+              const _Error = Error;
+              const _HermesInternal = HermesInternal;
+              const error = new Error("invalid type " + lib.type);
+              throw error;
+            } else {
+              let context_uri;
+              if (typeof lib.context_uri !== "init") {
+                context_uri = lib.context_uri;
+              }
+              obj = { context_uri: null, album_id: null, artist_ids: null, type: null, button_urls: null };
+              obj[0] = context_uri;
+              const album_id = lib.album_id;
+              callback(album_id);
+              obj[1] = album_id;
+              const _Array = Array;
+              if (Array.isArray(lib.artist_ids)) {
+                const artist_ids = lib.artist_ids;
+                let mapped = artist_ids.map(callback);
+              } else {
+                mapped = [];
+              }
+              obj[2] = mapped;
+              obj[3] = closure_1;
+              const _Array2 = Array;
+              if (Array.isArray(lib.button_urls)) {
+                const button_urls = lib.button_urls;
+                let mapped1 = button_urls.map(callback);
+              } else {
+                mapped1 = [];
+              }
+              obj[4] = mapped1;
+              c6 = 3;
+            }
+            const tmp49 = closure_9;
+            const tmp50 = callback;
+          }
+        } catch (tmp41) {
+          c6 = tmp;
+          throw tmp41;
+        }
+      }
+    })();
+  });
+  const _getSpotifyMetadataFromActivity = tmp;
+  const apply = tmp.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
 }
-({ SPOTIFY_APP_PROTOCOL: closure_7, SpotifyResourceTypes: closure_8, getSpotifyResourceType: closure_9 } = spotifyUtmParams);
+({ SPOTIFY_APP_PROTOCOL: error, SpotifyResourceTypes: metroImportAll, getSpotifyResourceType: c9 } = WEB_OPEN);
 let closure_11 = 30 * require("set").Millis.SECOND;
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/spotify/SpotifyUtils.tsx");
+const result = require("isProtocolRegistered").fileFinishedImporting("modules/spotify/SpotifyUtils.tsx");
 
 export const isSpotifyPlayable = function isSpotifyPlayable(getActiveSocketAndDevice) {
   let isProtocolRegisteredResult = null != getActiveSocketAndDevice.getActiveSocketAndDevice();
   if (!isProtocolRegisteredResult) {
-    isProtocolRegisteredResult = closure_5.isProtocolRegistered();
+    isProtocolRegisteredResult = isProtocolRegistered.isProtocolRegistered();
   }
   return isProtocolRegisteredResult;
 };
 export const ensureSpotifyPlayable = function ensureSpotifyPlayable() {
   let device;
   let socket;
+  let obj = store;
   const activeSocketAndDevice = store.getActiveSocketAndDevice();
   if (null != activeSocketAndDevice) {
     return Promise.resolve(activeSocketAndDevice);
-  } else if (closure_5.isProtocolRegistered()) {
-    const playableComputerDevices = store.getPlayableComputerDevices();
-    let obj = importDefault(4849);
-    if (observedAppRunning.isObservedAppRunning(obj.get(PlatformTypes.SPOTIFY).name)) {
+  } else if (isProtocolRegistered.isProtocolRegistered()) {
+    let playableComputerDevices = obj.getPlayableComputerDevices();
+    if (observedAppRunning.isObservedAppRunning(obj2.get(PlatformTypes.SPOTIFY).name)) {
       if (playableComputerDevices.length > 0) {
         ({ socket, device } = playableComputerDevices[0]);
-        playableComputerDevices(10919).setActiveDevice(socket.accountId, device.id);
-        obj = { socket, device };
+        playableComputerDevices(10943).setActiveDevice(socket.accountId, device.id);
+        obj = { socket: null, device: null };
+        obj[0] = socket;
+        obj[1] = device;
         return Promise.resolve(obj);
       }
     }
@@ -141,33 +174,28 @@ export const ensureSpotifyPlayable = function ensureSpotifyPlayable() {
       let closure_0 = arg0;
       let closure_1 = arg1;
       function onSpotifyStoreChange() {
-        let done;
+        const playableComputerDevices = outer2_6.getPlayableComputerDevices();
         function _loop(socket, device) {
           let closure_0 = socket;
           let closure_1 = device;
-          if (null == closure_0.find((device) => device.device.id === device.id)) {
+          if (null == outer1_0.find((device) => device.device.id === device.id)) {
             const _clearTimeout = clearTimeout;
-            clearTimeout(outer1_2);
-            outer3_6.removeChangeListener(outer1_3);
+            clearTimeout(closure_2);
+            outer2_6.removeChangeListener(ME);
             const _setImmediate = setImmediate;
             setImmediate(() => {
-              let obj = playableComputerDevices(outer4_2[8]);
+              let obj = socket(table[8]);
               obj.setActiveDevice(socket.accountId, device.id);
               obj = { socket, device };
-              outer2_0(obj);
+              socket(obj);
             });
           }
         }
-        const tmp = outer2_12(outer2_6.getPlayableComputerDevices());
-        let iter = tmp();
-        if (!iter.done) {
-          do {
-            let value = iter.value;
-            let _loopResult = _loop(value.socket, value.device);
-            let iter2 = tmp();
-            iter = iter2;
-            done = iter2.done;
-          } while (!done);
+        const iter = playableComputerDevices[Symbol.iterator]();
+        const nextResult = iter.next();
+        while (iter !== undefined) {
+          let _loopResult = _loop(nextResult.socket, nextResult.device);
+          continue;
         }
       }
       const timeout = setTimeout(() => {
@@ -204,7 +232,7 @@ export const ensureSpotifyPremium = function ensureSpotifyPremium() {
     if (socket.isPremium) {
       let resolved = Promise.resolve();
     } else {
-      const profile = socket(10919).getProfile(socket.accountId, socket.accessToken);
+      const profile = socket(10943).getProfile(socket.accountId, socket.accessToken);
       resolved = profile.then(() => {
         if (!socket.isPremium) {
           const _Error = Error;
@@ -212,11 +240,18 @@ export const ensureSpotifyPremium = function ensureSpotifyPremium() {
           return Promise.reject(error);
         }
       });
-      const obj = socket(10919);
+      const obj = socket(10943);
     }
     return resolved;
   }
 };
 export const getSpotifyMetadataFromActivity = function getSpotifyMetadataFromActivity(closure_0, closure_1) {
-  return _getSpotifyMetadataFromActivity(...arguments);
+  const self = this;
+  const apply = _getSpotifyMetadataFromActivity.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
 };

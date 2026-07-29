@@ -1,93 +1,89 @@
-// Module ID: 12296
-// Function ID: 95850
-// Dependencies: [57, 31, 27, 33, 4165, 689, 477, 3869, 12281, 4026, 4568, 4674, 4161, 1212, 2]
+// Module ID: 12318
+// Function ID: 12319
+// Dependencies: [32, 19, 17, 21, 4189, 712, 500, 3893, 12303, 4050, 4590, 4696, 4185, 1236, 2]
 
-// Module 12296
+// Module 12318
 import _slicedToArray from "_slicedToArray";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 import set from "set";
-import { unsafe_rawColors } from "_createForOfIteratorHelperLoose";
-import importAllResult from "result";
+import { unsafe_rawColors } from "Themes";
+import importAllResult from "noop";
 import set from "get ActivityIndicator";
 
-let closure_4;
-let closure_5;
+let c4;
+let c5;
 let closure_6;
-let closure_7;
+let error;
 const require = arg1;
-({ StyleSheet: closure_4, View: closure_5 } = get_ActivityIndicator);
-({ jsx: closure_6, jsxs: closure_7 } = jsxProd);
-let obj = { spoilerOverlayContainer: { justifyContent: "center", alignContent: "center", flex: 1 } };
-obj = { gap: require("_createForOfIteratorHelperLoose").space.PX_4, justifyContent: "center", alignItems: "center", alignSelf: "center" };
-obj.obscureContentContainer = obj;
-_createForOfIteratorHelperLoose = { paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16, borderRadius: require("_createForOfIteratorHelperLoose").radii.lg, height: require("_createForOfIteratorHelperLoose").space.PX_32 };
+({ StyleSheet: c4, View: c5 } = get_ActivityIndicator);
+({ jsx: closure_6, jsxs: error } = jsxProd);
+let obj = { spoilerOverlayContainer: { justifyContent: "center", alignContent: "center", flex: 1 }, obscureContentContainer: null, spoilerOverlayBackground: null };
+obj = { gap: require("Themes").space.PX_4, justifyContent: "center", alignItems: "center", alignSelf: "center" };
+obj[1] = obj;
+createCacheKey = { paddingHorizontal: require("Themes").space.PX_16, borderRadius: require("Themes").radii.lg, height: require("Themes").space.PX_32, backgroundColor: null, flexGrow: 0, justifyContent: "center", alignItems: "center", alignSelf: "center" };
 set = set.isAndroid();
-_createForOfIteratorHelperLoose.backgroundColor = set ? unsafe_rawColors.PRIMARY_800 : unsafe_rawColors.PRIMARY_600;
-_createForOfIteratorHelperLoose.flexGrow = 0;
-_createForOfIteratorHelperLoose.justifyContent = "center";
-_createForOfIteratorHelperLoose.alignItems = "center";
-_createForOfIteratorHelperLoose.alignSelf = "center";
-obj.spoilerOverlayBackground = _createForOfIteratorHelperLoose;
-let closure_8 = _createForOfIteratorHelperLoose.createStyles(obj);
+createCacheKey[3] = set ? unsafe_rawColors.PRIMARY_800 : unsafe_rawColors.PRIMARY_600;
+obj[2] = createCacheKey;
+let closure_8 = createCacheKey.createStyles(obj);
 const result = set.fileFinishedImporting("modules/media_viewer/native/components/MediaModalSpoilerOverlay.tsx");
 
-export default require("result").memo(function MediaModalSpoilerOverlay(source) {
+export default require("noop").memo(function MediaModalSpoilerOverlay(source) {
   let index;
   let style;
   source = source.source;
   ({ style, index } = source);
-  let tmp = callback4();
-  let obj = require(3869) /* map */;
-  const token = obj.useToken(importDefault(689).colors.SPOILER_HIDDEN_BACKGROUND);
-  let obj1 = require(12281) /* useMediaItemSpoilerState */;
-  if (!tmp3[0]) {
+  let items2 = callback2();
+  let stringResult = dependencyMap;
+  let obj = require(3893) /* map */;
+  const token = obj.useToken(importDefault(712).colors.SPOILER_HIDDEN_BACKGROUND);
+  let obj1 = require(12303) /* useMediaItemSpoilerState */;
+  if (!tmp5[0]) {
     return null;
   } else {
-    obj = {};
-    const items = [style, closure_4.absoluteFill, tmp4];
-    obj.style = items;
-    obj = {};
+    obj = { style: null, children: null };
+    const items = [style, absoluteFill.absoluteFill, tmp6];
+    obj[0] = items;
     if (source.obscure) {
       let str = "dark";
     } else {
-      let obj4 = require(477) /* set */;
       str = "light";
+      const tmpResult = tmp(500);
     }
-    obj.blurTheme = str;
-    obj.android_fallbackColor = token;
-    obj.style = closure_4.absoluteFill;
-    const items1 = [callback2(importDefault(4568), obj), ];
-    obj1 = { style: tmp.spoilerOverlayContainer };
+    obj = { blurTheme: null, android_fallbackColor: null, style: null };
+    obj[0] = str;
+    obj[1] = token;
+    obj[2] = absoluteFill.absoluteFill;
+    const items1 = [closure_6(tmp3(4590), obj), ];
+    obj1 = { style: null, children: null };
+    obj1[0] = items2.spoilerOverlayContainer;
+    const obj2 = { style: null, children: null };
     if (source.obscure) {
-      const obj2 = { style: tmp.obscureContentContainer };
-      const items2 = [callback2(require(4674) /* ImageWarningIcon */.ImageWarningIcon, { size: "lg", color: "white" }), ];
-      const obj3 = { accessibilityRole: "text", variant: "heading-md/medium", color: "text-overlay-light" };
-      const intl2 = require(1212) /* getSystemLocale */.intl;
-      obj3.children = intl2.string(require(1212) /* getSystemLocale */.t.SpxcUR);
-      tmp = callback2(require(4161) /* Text */.Text, obj3);
-      items2[1] = tmp;
-      obj2.children = items2;
-      let tmp20 = callback3(closure_5, obj2);
+      obj2[0] = items2.obscureContentContainer;
+      items2 = [tmp9(tmp(4696).ImageWarningIcon, { size: "lg", color: "white" }), ];
+      const obj3 = { accessibilityRole: "text", variant: "heading-md/medium", color: "text-overlay-light", children: null };
+      const intl2 = tmp(1236).intl;
+      stringResult = intl2.string(tmp(1236).t.SpxcUR);
+      obj3[3] = stringResult;
+      items2[1] = tmp9(tmp(4185).Text, obj3);
+      obj2[1] = items2;
+      let tmp9Result = tmp7(tmp11, obj2);
     } else {
-      obj4 = { style: tmp.spoilerOverlayBackground };
-      const obj5 = { accessibilityRole: "text", variant: "heading-md/medium", color: "text-overlay-light" };
-      const intl = require(1212) /* getSystemLocale */.intl;
-      obj5.children = intl.string(require(1212) /* getSystemLocale */.t["F+x38C"]).toUpperCase();
-      obj4.children = callback2(require(4161) /* Text */.Text, obj5);
-      tmp20 = callback2(closure_5, obj4);
-      const str2 = intl.string(require(1212) /* getSystemLocale */.t["F+x38C"]);
+      obj2[0] = items2.spoilerOverlayBackground;
+      const obj4 = { accessibilityRole: "text", variant: "heading-md/medium", color: "text-overlay-light", children: null };
+      const intl = tmp(1236).intl;
+      obj4[3] = intl.string(tmp(1236).t["F+x38C"]).toUpperCase();
+      obj2[1] = tmp9(tmp(4185).Text, obj4);
+      tmp9Result = tmp9(tmp11, obj2);
+      const str2 = intl.string(tmp(1236).t["F+x38C"]);
     }
-    obj1.children = tmp20;
-    obj1 = callback2(closure_5, obj1);
+    obj1[1] = tmp9Result;
+    obj1 = tmp9(tmp11, obj1);
     items1[1] = obj1;
-    obj.children = items1;
-    callback3(importDefault(4026).View, obj);
-    const tmp10 = importDefault(4568);
-    const tmp14 = callback2;
-    const tmp15 = closure_5;
-    const tmp5 = callback3;
-    const tmp9 = callback2;
+    obj[1] = items1;
+    closure_7(tmp3(4050).View, obj);
+    const tmp3Result = tmp3(4590);
+    const tmp8 = absoluteFill;
   }
 });

@@ -1,12 +1,12 @@
-// Module ID: 15809
-// Function ID: 121770
+// Module ID: 15844
+// Function ID: 15845
 // Name: DEFAULT_PORTRAIT_SAFE_AREAS_CONFIG
-// Dependencies: [5670, 2]
+// Dependencies: [5688, 2]
 
-// Module 15809 (DEFAULT_PORTRAIT_SAFE_AREAS_CONFIG)
-let obj = {};
+// Module 15844 (DEFAULT_PORTRAIT_SAFE_AREAS_CONFIG)
+let obj = { top: null };
 obj = { disable: false, override: require("ActivityPanelModes").ACTIVITY_PANEL_PORTRAIT_HEADER_HEIGHT };
-obj.top = obj;
+obj[0] = obj;
 const result = require("set").fileFinishedImporting("modules/activities/panel/native/ActivityPanelNativeConstants.tsx");
 
 export const DEFAULT_PORTRAIT_SAFE_AREAS_CONFIG = obj;

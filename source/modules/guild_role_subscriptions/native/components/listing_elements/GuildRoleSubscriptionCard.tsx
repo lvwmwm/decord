@@ -1,40 +1,38 @@
-// Module ID: 14232
-// Function ID: 109364
+// Module ID: 14254
+// Function ID: 14255
 // Name: SectionTitle
-// Dependencies: [57, 31, 27, 33, 4165, 689, 4161, 14222, 9405, 1212, 1273, 14233, 14234, 14237, 2]
+// Dependencies: [32, 19, 17, 21, 4189, 712, 4185, 14244, 9429, 1236, 1297, 14255, 14256, 14259, 2]
 // Exports: Content
 
-// Module 14232 (SectionTitle)
+// Module 14254 (SectionTitle)
 import _slicedToArray from "_slicedToArray";
-import "result";
+import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
 let closure_6;
-let closure_7;
-let closure_8;
+let error;
+let metroImportAll;
 const require = arg1;
 class SectionTitle {
   constructor(arg0) {
-    tmp = c9();
-    obj = { variant: "text-xs/bold", color: "text-default" };
-    obj.style = tmp.sectionTitle;
-    obj.children = global.children;
+    tmp = jsxs();
+    obj = { variant: "text-xs/bold", color: "text-default", style: tmp.sectionTitle, children: global.children };
     return jsx(require("Text").Text, obj);
   }
 }
 class Separator {
   constructor() {
-    obj = { style: c9().separator };
+    obj = { style: jsxs().separator };
     return jsx(View, obj);
   }
 }
-({ jsx: closure_6, Fragment: closure_7, jsxs: closure_8 } = jsxProd);
-_createForOfIteratorHelperLoose = { sectionTitle: { textTransform: "uppercase" } };
-_createForOfIteratorHelperLoose = { width: "100%", height: 1, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BORDER_SUBTLE, marginVertical: 24 };
-_createForOfIteratorHelperLoose.separator = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+({ jsx: closure_6, Fragment: error, jsxs: metroImportAll } = jsxProd);
+createCacheKey = { sectionTitle: { textTransform: "uppercase" }, separator: null };
+createCacheKey = { width: "100%", height: 1, backgroundColor: require("Themes").colors.BORDER_SUBTLE, marginVertical: 24 };
+createCacheKey[1] = createCacheKey;
+createCacheKey = createCacheKey.createStyles(createCacheKey);
 const result = require("get ActivityIndicator").fileFinishedImporting("modules/guild_role_subscriptions/native/components/listing_elements/GuildRoleSubscriptionCard.tsx");
 
 export { SectionTitle };
@@ -43,79 +41,79 @@ export const Content = function Content(arg0) {
   let guildId;
   let listingId;
   ({ listingId, guildId } = arg0);
-  let obj = importAll(14222);
+  let obj = importAll(14244);
   const first = callback(obj.useTierEmojiIds(listingId, guildId), 1)[0];
-  let obj1 = importAll(14222);
+  let obj1 = importAll(14244);
   const first1 = callback(obj1.useChannelBenefits(listingId), 1)[0];
-  let obj2 = importAll(14222);
+  let obj2 = importAll(14244);
   const first2 = callback(obj2.useIntangibleBenefits(listingId), 1)[0];
-  let obj3 = importAll(14222);
+  let obj3 = importAll(14244);
   const role = obj3.useRole(listingId, guildId);
   obj = {
     renderGap() {
-      return outer1_6(outer1_11, {});
-    }
+      return callback(closure_11, {});
+    },
+    children: null
   };
-  obj = {};
-  obj1 = {};
-  const intl = guildId(1212).intl;
-  obj1.children = intl.string(guildId(1212).t["DJ+bGu"]);
-  const items = [callback2(SectionTitle, obj1), callback2(guildId(1273).Spacer, { size: 8 }), callback2(guildId(14233).GuildRoleSubscriptionMemberPreview, { guildId, role })];
-  obj.children = items;
+  obj = { children: null };
+  obj1 = { children: null };
+  const intl = guildId(1236).intl;
+  obj1[0] = intl.string(guildId(1236).t["DJ+bGu"]);
+  const items = [callback2(SectionTitle, obj1), callback2(guildId(1297).Spacer, { size: 8 }), callback2(guildId(14255).GuildRoleSubscriptionMemberPreview, { guildId, role })];
+  obj[0] = items;
   const items1 = [callback3(closure_7, obj), , , ];
-  let tmp4 = null;
+  let tmp4Result = null;
   if (first.size > 0) {
-    obj2 = {};
-    obj3 = {};
-    const intl2 = guildId(1212).intl;
-    const obj4 = { numEmojis: first.size };
-    obj3.children = intl2.format(guildId(1212).t.oDeFmv, obj4);
-    const items2 = [callback2(SectionTitle, obj3), , ];
-    const obj5 = { size: 14 };
-    items2[1] = callback2(guildId(1273).Spacer, obj5);
-    const obj6 = {};
+    obj2 = { children: null };
+    obj3 = { children: null };
+    const intl2 = tmp5(1236).intl;
+    const obj4 = { numEmojis: null };
+    obj4[0] = first.size;
+    obj3[0] = intl2.format(tmp5(1236).t.oDeFmv, obj4);
+    const items2 = [tmp7(tmp8, obj3), tmp7(tmp5(1297).Spacer, { size: 14 }), ];
+    const obj5 = { emojiIds: null, guildId: null };
     const items3 = [];
     HermesBuiltin.arraySpread(first, 0);
-    obj6.emojiIds = items3;
-    obj6.guildId = guildId;
-    items2[2] = callback2(importDefault(14234), obj6);
-    obj2.children = items2;
-    tmp4 = callback3(closure_7, obj2);
-    const tmp14 = importDefault(14234);
+    obj5[0] = items3;
+    obj5[1] = guildId;
+    items2[2] = tmp7(importDefault(14256), obj5);
+    obj2[0] = items2;
+    tmp4Result = tmp4(tmp6, obj2);
+    const tmp11 = importDefault(14256);
   }
-  items1[1] = tmp4;
-  let tmp18 = null;
+  items1[1] = tmp4Result;
+  tmp4Result = null;
   if (first1.length > 0) {
-    const obj7 = {};
-    const obj8 = {};
-    const intl3 = guildId(1212).intl;
-    const obj9 = { numChannels: length };
-    obj8.children = intl3.format(guildId(1212).t.l40GUu, obj9);
-    const items4 = [callback2(SectionTitle, obj8), , ];
-    const obj10 = { size: 14 };
-    items4[1] = callback2(guildId(1273).Spacer, obj10);
-    const obj11 = { gap: 14, children: first1.map((benefit) => outer1_6(guildId(outer1_3[13]).ChannelBenefitRow, { benefit, guildId }, benefit.ref_id)) };
-    items4[2] = callback2(guildId(9405).GappedList, obj11);
-    obj7.children = items4;
-    tmp18 = callback3(closure_7, obj7);
+    const obj6 = { children: null };
+    const obj7 = { children: null };
+    const intl3 = tmp5(1236).intl;
+    const obj8 = { numChannels: null };
+    obj8[0] = length;
+    obj7[0] = intl3.format(tmp5(1236).t.l40GUu, obj8);
+    const items4 = [tmp7(tmp8, obj7), tmp7(tmp5(1297).Spacer, { size: 14 }), ];
+    const obj9 = { gap: 14, children: null };
+    obj9[1] = first1.map((benefit) => outer1_6(guildId(outer1_3[13]).ChannelBenefitRow, { benefit, guildId }, benefit.ref_id));
+    items4[2] = tmp7(tmp5(9429).GappedList, obj9);
+    obj6[0] = items4;
+    tmp4Result = tmp4(tmp6, obj6);
   }
-  items1[2] = tmp18;
-  let tmp27 = null;
+  items1[2] = tmp4Result;
+  let tmp4Result1 = null;
   if (first2.length > 0) {
-    const obj12 = {};
-    const obj13 = {};
-    const intl4 = guildId(1212).intl;
-    const obj14 = { numIntangibles: length2 };
-    obj13.children = intl4.format(guildId(1212).t["4V/Mfi"], obj14);
-    const items5 = [callback2(SectionTitle, obj13), , ];
-    const obj15 = { size: 14 };
-    items5[1] = callback2(guildId(1273).Spacer, obj15);
-    const obj16 = { gap: 14, children: first2.map((benefit) => outer1_6(guildId(outer1_3[13]).IntangibleBenefitRow, { benefit, guildId }, arg1)) };
-    items5[2] = callback2(guildId(9405).GappedList, obj16);
-    obj12.children = items5;
-    tmp27 = callback3(closure_7, obj12);
+    const obj10 = { children: null };
+    const obj11 = { children: null };
+    const intl4 = tmp5(1236).intl;
+    const obj12 = { numIntangibles: null };
+    obj12[0] = length2;
+    obj11[0] = intl4.format(tmp5(1236).t["4V/Mfi"], obj12);
+    const items5 = [tmp7(tmp8, obj11), tmp7(tmp5(1297).Spacer, { size: 14 }), ];
+    const obj13 = { gap: 14, children: null };
+    obj13[1] = first2.map((benefit) => outer1_6(guildId(outer1_3[13]).IntangibleBenefitRow, { benefit, guildId }, arg1));
+    items5[2] = tmp7(tmp5(9429).GappedList, obj13);
+    obj10[0] = items5;
+    tmp4Result1 = tmp4(tmp6, obj10);
   }
-  items1[3] = tmp27;
-  obj.children = items1;
-  return callback3(guildId(9405).GappedList, obj);
+  items1[3] = tmp4Result1;
+  obj[1] = items1;
+  return callback3(guildId(9429).GappedList, obj);
 };

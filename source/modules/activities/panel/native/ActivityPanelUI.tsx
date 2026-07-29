@@ -1,25 +1,25 @@
-// Module ID: 15807
-// Function ID: 121742
+// Module ID: 15842
+// Function ID: 15843
 // Name: renderActivityOrPIP
-// Dependencies: [31, 27, 5670, 33, 15808, 15814, 15828, 5484, 4511, 15829, 15806, 2]
+// Dependencies: [19, 17, 5688, 21, 15843, 15849, 15863, 5502, 4534, 15864, 15841, 2]
 // Exports: default
 
-// Module 15807 (renderActivityOrPIP)
-import result from "result";
+// Module 15842 (renderActivityOrPIP)
+import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { ActivityPanelModes } from "ActivityPanelModes";
 import jsxProd from "jsxProd";
 
-let closure_4;
-let closure_5;
-let closure_7;
-let closure_8;
+let c4;
+let c5;
+let error;
+let metroImportAll;
 const require = arg1;
 function renderActivityOrPIP(arg0, arg1, transitionState, transitionCleanUp) {
   if ("pip" === arg1) {
-    let tmp4 = 15808;
+    let tmp4 = 15843;
   } else {
-    tmp4 = 15814;
+    tmp4 = 15849;
   }
   return closure_7(importDefault(tmp4), { transitionState, transitionCleanUp }, arg0);
 }
@@ -31,41 +31,43 @@ function wrapChildren(children) {
 }
 class BaseActivityPanelUI {
   constructor(arg0) {
+    mode = undefined;
+    c1 = undefined;
     ({ renderActivityOrPIP, renderActivityPanelSystemUIManager } = global);
-    mode = result.useContext(global.context).mode;
+    mode = noop.useContext(global.context).mode;
     tmp = require("useIsConnectedToVoiceChannel")();
-    closure_1 = tmp;
+    c1 = tmp;
     items = [, ];
     items[0] = mode;
     items[1] = tmp;
-    memo = result.useMemo(() => {
+    memo = noop.useMemo(() => {
       if (mode !== outer1_6.DISCONNECTED) {
-        if (mode === outer1_6.PIP) {
-          return tmp6;
+        if (tmp === tmp2.PIP) {
+          return tmp4;
         }
-        tmp6 = mode === outer1_6.PIP ? outer1_10 : outer1_11;
+        tmp4 = tmp === tmp2.PIP ? outer1_13 : outer1_14;
       }
-      tmp6 = outer1_9;
+      tmp4 = outer1_12;
     }, items);
-    obj = {};
+    obj = { children: null };
     items1 = [, ];
     items1[0] = renderActivityPanelSystemUIManager();
     obj = { items: memo, renderItem: renderActivityOrPIP, getItemKey: getKey, wrapChildren };
-    items1[1] = jsx(require("_createForOfIteratorHelperLoose").TransitionGroup, obj);
-    obj.children = items1;
+    items1[1] = jsx(require("wrapChildrenDefault").TransitionGroup, obj);
+    obj[0] = items1;
     return jsxs(require("Layer").LayerScope, obj);
   }
 }
-({ View: closure_4, StyleSheet: closure_5 } = get_ActivityIndicator);
-({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-let closure_9 = [];
-let closure_10 = ["pip"];
-let closure_11 = ["activity"];
+({ View: c4, StyleSheet: c5 } = get_ActivityIndicator);
+({ jsx: error, jsxs: metroImportAll } = jsxProd);
+let closure_12 = [];
+let closure_13 = ["pip"];
+let closure_14 = ["activity"];
 const result = require("ActivityPanelModes").fileFinishedImporting("modules/activities/panel/native/ActivityPanelUI.tsx");
 
 export default function ActivityPanelUI() {
-  const callback = React.useCallback(() => outer1_7(outer1_1(outer1_2[9]), {}), []);
+  const callback = React.useCallback(() => callback2(callback(table[9]), {}), []);
   const items = [callback];
-  return React.useMemo(() => outer1_7(outer1_15, { renderActivityOrPIP: outer1_12, context: outer1_1(outer1_2[10]), renderActivityPanelSystemUIManager: callback }), items);
+  return React.useMemo(() => outer1_7(outer1_15, { renderActivityOrPIP: outer1_9, context: outer1_1(outer1_2[10]), renderActivityPanelSystemUIManager: callback }), items);
 };
 export { BaseActivityPanelUI };

@@ -1,10 +1,10 @@
-// Module ID: 6970
-// Function ID: 59726
+// Module ID: 6990
+// Function ID: 6991
 // Name: DiscountsMicrophoneSpotIllustration
-// Dependencies: [33, 5119, 6971, 2]
+// Dependencies: [21, 5141, 6991, 2]
 // Exports: DiscountsMicrophoneSpotIllustration
 
-// Module 6970 (DiscountsMicrophoneSpotIllustration)
+// Module 6990 (DiscountsMicrophoneSpotIllustration)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/DiscountsMicrophoneSpotIllustration.native.tsx");
@@ -26,14 +26,15 @@ export const DiscountsMicrophoneSpotIllustration = function DiscountsMicrophoneS
   if (num3 === undefined) {
     num3 = 1;
   }
-  let obj = { fadeDuration: 0 };
-  obj = { uri: importDefault(6971) };
-  obj.source = obj;
+  let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
+  obj = { uri: null };
+  obj[0] = importDefault(6991);
+  obj[1] = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
-  obj.style = items;
-  obj.accessible = accessible;
-  obj.accessibilityLabel = accessibilityLabel;
-  obj.resizeMode = resizeMode;
-  return jsx(importDefault(5119), { width: num * num3, height: num2 * num3 });
+  obj[2] = items;
+  obj[3] = accessible;
+  obj[4] = accessibilityLabel;
+  obj[5] = resizeMode;
+  return jsx(importDefault(5141), { width: num * num3, height: num2 * num3 });
 };

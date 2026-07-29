@@ -1,41 +1,41 @@
-// Module ID: 7996
-// Function ID: 63478
+// Module ID: 8021
+// Function ID: 8022
 // Name: numberParts
 // Dependencies: [2]
 
-// Module 7996 (numberParts)
+// Module 8021 (numberParts)
 const result = require("set").fileFinishedImporting("intl/number-parts.tsx");
 const obj = Object.create(null);
-obj.bg = { group: " ", decimal: "," };
-obj.cs = { group: " ", decimal: "," };
-obj.da = { group: ".", decimal: "," };
-obj.de = { group: ".", decimal: "," };
-obj.el = { group: ".", decimal: "," };
-obj["en-GB"] = { group: ",", decimal: "." };
-obj["en-US"] = { group: ",", decimal: "." };
-obj["es-ES"] = { group: ".", decimal: "," };
-obj["es-419"] = { group: ".", decimal: "," };
-obj.fi = { group: " ", decimal: "," };
-obj.fr = { group: "\u202F", decimal: "," };
-obj.hi = { group: ",", decimal: "." };
-obj.hr = { group: ".", decimal: "," };
-obj.hu = { group: " ", decimal: "," };
-obj.it = { group: ".", decimal: "," };
-obj.ja = { group: ",", decimal: "." };
-obj.ko = { group: ",", decimal: "." };
-obj.lt = { group: " ", decimal: "," };
-obj.nl = { group: ".", decimal: "," };
-obj.no = { group: " ", decimal: "," };
-obj.pl = { group: " ", decimal: "," };
-obj["pt-BR"] = { group: ".", decimal: "," };
-obj.ro = { group: ".", decimal: "," };
-obj.ru = { group: " ", decimal: "," };
-obj["sv-SE"] = { group: " ", decimal: "," };
-obj.th = { group: ",", decimal: "." };
-obj.tr = { group: ".", decimal: "," };
-obj.uk = { group: " ", decimal: "," };
-obj.vi = { group: ".", decimal: "," };
-obj["zh-CN"] = { group: ",", decimal: "." };
-obj["zh-TW"] = { group: ",", decimal: "." };
+obj[0] = { group: " ", decimal: "," };
+obj[1] = { group: " ", decimal: "," };
+obj[2] = { group: ".", decimal: "," };
+obj[3] = { group: ".", decimal: "," };
+obj[4] = { group: ".", decimal: "," };
+obj[5] = { group: ",", decimal: "." };
+obj[6] = { group: ",", decimal: "." };
+obj[7] = { group: ".", decimal: "," };
+obj[8] = { group: ".", decimal: "," };
+obj[9] = { group: " ", decimal: "," };
+obj[10] = { group: "\u202F", decimal: "," };
+obj[11] = { group: ",", decimal: "." };
+obj[12] = { group: ".", decimal: "," };
+obj[13] = { group: " ", decimal: "," };
+obj[14] = { group: ".", decimal: "," };
+obj[15] = { group: ",", decimal: "." };
+obj[16] = { group: ",", decimal: "." };
+obj[17] = { group: " ", decimal: "," };
+obj[18] = { group: ".", decimal: "," };
+obj[19] = { group: " ", decimal: "," };
+obj[20] = { group: " ", decimal: "," };
+obj[21] = { group: ".", decimal: "," };
+obj[22] = { group: ".", decimal: "," };
+obj[23] = { group: " ", decimal: "," };
+obj[24] = { group: " ", decimal: "," };
+obj[25] = { group: ",", decimal: "." };
+obj[26] = { group: ".", decimal: "," };
+obj[27] = { group: " ", decimal: "," };
+obj[28] = { group: ".", decimal: "," };
+obj[29] = { group: ",", decimal: "." };
+obj[30] = { group: ",", decimal: "." };
 
 export const numberParts = obj;

@@ -1,11 +1,11 @@
-// Module ID: 8875
-// Function ID: 70126
+// Module ID: 8899
+// Function ID: 8900
 // Name: useReadableSecureFramesFingerprint
-// Dependencies: [31, 206, 8853, 2]
+// Dependencies: [19, 206, 8877, 2]
 // Exports: useReadableSecureFramesFingerprint
 
-// Module 8875 (useReadableSecureFramesFingerprint)
-import result from "result";
+// Module 8899 (useReadableSecureFramesFingerprint)
+import noop from "noop";
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/rtc/hooks/useReadableSecureFramesFingerprint.tsx");
@@ -17,16 +17,16 @@ export const useReadableSecureFramesFingerprint = function useReadableSecureFram
   const items = [chunkSize, fingerprintBase64, desiredLength];
   const memo = React.useMemo(() => {
     if (null != fingerprintBase64) {
-      if ("" !== fingerprintBase64) {
+      if ("" !== tmp) {
         const obj = chunkSize(desiredLength[1]);
-        const toByteArrayResult = chunkSize(desiredLength[1]).toByteArray(fingerprintBase64);
+        const toByteArrayResult = chunkSize(desiredLength[1]).toByteArray(tmp);
         const str5 = fingerprintBase64(desiredLength[2]).generateDisplayableCode(toByteArrayResult, desiredLength, chunkSize);
         if (null == str5) {
           return null;
         } else {
           const _RegExp = RegExp;
           const _HermesInternal = HermesInternal;
-          const regExp = new RegExp(".{1," + chunkSize + "}", "g");
+          const regExp = new RegExp(".{1," + tmp14 + "}", "g");
           const match = str5.match(regExp);
           let arr = null;
           if (null != match) {
@@ -36,6 +36,7 @@ export const useReadableSecureFramesFingerprint = function useReadableSecureFram
           return arr;
         }
         const obj2 = fingerprintBase64(desiredLength[2]);
+        tmp14 = chunkSize;
       }
     }
     return null;

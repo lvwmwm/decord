@@ -1,24 +1,24 @@
-// Module ID: 15661
-// Function ID: 120624
+// Module ID: 15696
+// Function ID: 15697
 // Name: ContextMenuCommandItem
-// Dependencies: [31, 27, 33, 4165, 689, 5198, 22, 1212, 11367, 5119, 1882, 4111, 2]
+// Dependencies: [19, 17, 21, 4189, 712, 5220, 12, 1236, 11391, 5141, 1906, 4135, 2]
 // Exports: ContextMenuCommandAppItem, ContextMenuCommandEmptyItem, ContextMenuCommandLoadingItem, default
 
-// Module 15661 (ContextMenuCommandItem)
-import result from "result";
+// Module 15696 (ContextMenuCommandItem)
+import noop from "noop";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
 const require = arg1;
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { width: 32, height: 32, borderRadius: require("_createForOfIteratorHelperLoose").radii.lg };
-_createForOfIteratorHelperLoose.commandIcon = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.loadingIcon = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_MOD_MUTED };
-const obj1 = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_MOD_MUTED };
-_createForOfIteratorHelperLoose.loadingName = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_MOD_MUTED, height: 24, borderRadius: require("_createForOfIteratorHelperLoose").radii.md };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-const obj2 = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_MOD_MUTED, height: 24, borderRadius: require("_createForOfIteratorHelperLoose").radii.md };
+createCacheKey = { commandIcon: null, loadingIcon: null, loadingName: null };
+createCacheKey = { width: 32, height: 32, borderRadius: require("Themes").radii.lg };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { backgroundColor: require("Themes").colors.BACKGROUND_MOD_MUTED };
+const obj1 = { backgroundColor: require("Themes").colors.BACKGROUND_MOD_MUTED };
+createCacheKey[2] = { backgroundColor: require("Themes").colors.BACKGROUND_MOD_MUTED, height: 24, borderRadius: require("Themes").radii.md };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+const obj2 = { backgroundColor: require("Themes").colors.BACKGROUND_MOD_MUTED, height: 24, borderRadius: require("Themes").radii.md };
 const result = require("jsxProd").fileFinishedImporting("modules/application_commands/native/ContextMenuCommandItem.tsx");
 
 export default function ContextMenuCommandItem(item) {
@@ -30,68 +30,68 @@ export default function ContextMenuCommandItem(item) {
   ({ onPress, start, end } = item);
   const items = [item, ];
   let name;
-  if (null != section) {
+  if (section != null) {
     name = section.name;
   }
   items[1] = name;
   const memo = React.useMemo(() => {
     const type = item.type;
-    const intl = item(outer1_2[7]).intl;
-    const obj = {};
+    const intl = tmp2(tmp3[7]).intl;
     let name;
-    if (null != section) {
+    if (section != null) {
       name = section.name;
     }
-    obj.applicationName = name;
-    obj.commandName = item.displayName;
-    return intl.formatToPlainString(item(outer1_2[7]).t.Pk4Mz3, obj);
+    return intl.formatToPlainString(item(outer1_2[7]).t.Pk4Mz3, { applicationName: name, commandName: item.displayName });
   }, items);
-  let obj = item(11367);
+  let obj = item(11391);
   const applicationCommandsIconSource = obj.getApplicationCommandsIconSource(section);
-  obj = { accessibilityLabel: memo, onPress, label: item.displayName };
-  let tmp7 = null != applicationCommandsIconSource;
-  if (tmp7) {
-    obj = { style: tmp.commandIcon, source: applicationCommandsIconSource };
-    tmp7 = jsx(section(5119), { style: tmp.commandIcon, source: applicationCommandsIconSource });
+  obj = { accessibilityLabel: memo, onPress, label: item.displayName, icon: null, trailing: null, start: null, end: null };
+  let tmp8Result = null != applicationCommandsIconSource;
+  if (tmp8Result) {
+    obj = { style: null, source: null };
+    obj[0] = tmp.commandIcon;
+    obj[1] = applicationCommandsIconSource;
+    tmp8Result = tmp8(section(5141), obj);
   }
-  obj.icon = tmp7;
-  obj.trailing = jsx(item(4111).SendMessageIcon, {});
-  obj.start = start;
-  obj.end = end;
-  return jsx(item(5198).TableRow, { accessibilityLabel: memo, onPress, label: item.displayName });
+  obj[3] = tmp8Result;
+  obj[4] = jsx(item(4135).SendMessageIcon, {});
+  obj[5] = start;
+  obj[6] = end;
+  return jsx(item(5220).TableRow, { accessibilityLabel: memo, onPress, label: item.displayName, icon: null, trailing: null, start: null, end: null });
 };
 export const ContextMenuCommandLoadingItem = function ContextMenuCommandLoadingItem(arg0) {
   let end;
   let start;
   ({ start, end } = arg0);
-  const tmp = _createForOfIteratorHelperLoose();
-  let obj = {};
-  obj = {};
+  const tmp = createCacheKey();
+  let obj = { label: null, icon: null, start: null, end: null };
+  obj = { style: null };
   const items = [tmp.loadingName, ];
-  obj = { width: "" + importDefault(22).random(60, 80) + "%" };
+  obj = { width: null };
+  obj[0] = "" + importDefault(12).random(60, 80) + "%";
   items[1] = obj;
-  obj.style = items;
-  obj.label = <View width={"" + importDefault(22).random(60, 80) + "%"} />;
+  obj[0] = items;
+  obj[0] = <View width={null} />;
   const items1 = [, ];
   ({ commandIcon: arr2[0], loadingIcon: arr2[1] } = tmp);
-  obj.icon = <View style={items1} />;
-  obj.start = start;
-  obj.end = end;
-  return jsx(require(5198) /* TableRowInner */.TableRow, { width: "" + importDefault(22).random(60, 80) + "%" });
+  obj[1] = <View style={items1} />;
+  obj[2] = start;
+  obj[3] = end;
+  return jsx(require(5220) /* TableRowInner */.TableRow, { width: null });
 };
 export const ContextMenuCommandEmptyItem = function ContextMenuCommandEmptyItem(arg0) {
   let end;
   let start;
   ({ start, end } = arg0);
-  const obj = {};
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj.label = intl.string(require(1212) /* getSystemLocale */.t.YSNlV2);
+  const obj = { label: null, icon: null, start: null, end: null };
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj[0] = intl.string(require(1236) /* getSystemLocale */.t.YSNlV2);
   const items = [, ];
-  ({ commandIcon: arr[0], loadingIcon: arr[1] } = _createForOfIteratorHelperLoose());
-  obj.icon = <View style={items} />;
-  obj.start = start;
-  obj.end = end;
-  return jsx(require(5198) /* TableRowInner */.TableRow, {});
+  ({ commandIcon: arr[0], loadingIcon: arr[1] } = createCacheKey());
+  obj[1] = <View style={items} />;
+  obj[2] = start;
+  obj[3] = end;
+  return jsx(require(5220) /* TableRowInner */.TableRow, { label: null, icon: null, start: null, end: null });
 };
 export const ContextMenuCommandAppItem = function ContextMenuCommandAppItem(section) {
   let end;
@@ -99,17 +99,18 @@ export const ContextMenuCommandAppItem = function ContextMenuCommandAppItem(sect
   let start;
   section = section.section;
   ({ onPress, start, end } = section);
-  let obj = require(11367) /* getApplicationCommandsIconSource */;
+  let obj = require(11391) /* getApplicationCommandsIconSource */;
   const applicationCommandsIconSource = obj.getApplicationCommandsIconSource(section);
-  obj = { onPress, label: section.name };
-  let tmp4 = null != applicationCommandsIconSource;
-  if (tmp4) {
-    obj = { style: tmp.commandIcon, source: applicationCommandsIconSource };
-    tmp4 = jsx(importDefault(5119), { style: tmp.commandIcon, source: applicationCommandsIconSource });
+  obj = { onPress, label: section.name, icon: null, start: null, end: null, arrow: true };
+  let tmp4Result = null != applicationCommandsIconSource;
+  if (tmp4Result) {
+    obj = { style: null, source: null };
+    obj[0] = tmp.commandIcon;
+    obj[1] = applicationCommandsIconSource;
+    tmp4Result = tmp4(importDefault(5141), obj);
   }
-  obj.icon = tmp4;
-  obj.start = start;
-  obj.end = end;
-  obj.arrow = true;
-  return jsx(require(5198) /* TableRowInner */.TableRow, { onPress, label: section.name });
+  obj[2] = tmp4Result;
+  obj[3] = start;
+  obj[4] = end;
+  return jsx(require(5220) /* TableRowInner */.TableRow, { onPress, label: section.name, icon: null, start: null, end: null, arrow: true });
 };

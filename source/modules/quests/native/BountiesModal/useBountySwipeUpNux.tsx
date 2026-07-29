@@ -1,10 +1,10 @@
-// Module ID: 14018
-// Function ID: 107109
+// Module ID: 14040
+// Function ID: 14041
 // Name: useBountySwipeUpNux
-// Dependencies: [57, 10858, 14019, 1334, 8417, 2]
+// Dependencies: [32, 10882, 14041, 1358, 8441, 2]
 // Exports: useBountySwipeUpNux
 
-// Module 14018 (useBountySwipeUpNux)
+// Module 14040 (useBountySwipeUpNux)
 import _slicedToArray from "_slicedToArray";
 
 const require = arg1;
@@ -12,45 +12,47 @@ const result = require("FORCE_BOUNTIES_SWIPE_UP_NUX_STORAGE_KEY").fileFinishedIm
 
 export const useBountySwipeUpNux = function useBountySwipeUpNux(location) {
   let isEligible = location.isEligible;
-  const BountiesVerticalScrollExperiment = require(10858) /* shouldUseScrollIndicatorOverlay */.BountiesVerticalScrollExperiment;
-  const tmp = "none" === BountiesVerticalScrollExperiment.useConfig({ location: location.location }).scrollAffordanceVariant;
-  let obj = require(14019) /* FORCE_BOUNTIES_SWIPE_UP_NUX_STORAGE_KEY */;
+  const BountiesVerticalScrollExperiment = require(10882) /* apexExperiment */.BountiesVerticalScrollExperiment;
+  const tmp3 = "none" === BountiesVerticalScrollExperiment.useConfig({ location: location.location }).scrollAffordanceVariant;
+  let obj = require(14041) /* FORCE_BOUNTIES_SWIPE_UP_NUX_STORAGE_KEY */;
   const first = callback(obj.useForceBountiesSwipeUpNux(), 1)[0];
   if (isEligible) {
-    if (tmp) {
-      const items = [require(1334) /* DismissibleContent */.DismissibleContent.BOUNTIES_SWIPE_UP_NUX];
+    if (tmp3) {
+      const items = [tmp(1358).DismissibleContent.BOUNTIES_SWIPE_UP_NUX];
     }
     let prop = null;
     if (isEligible) {
       prop = null;
-      if (!tmp) {
-        prop = require(1334) /* DismissibleContent */.DismissibleContent.BOUNTIES_RECURRING_SWIPE_UP_NUX;
+      if (!tmp3) {
+        prop = tmp(1358).DismissibleContent.BOUNTIES_RECURRING_SWIPE_UP_NUX;
       }
     }
-    const obj2 = require(8417) /* useSelectedDismissibleContent */;
+    let tmpResult = tmp(8441);
+    let tmp4Result = tmp4(tmpResult.useSelectedDismissibleContent([]), 2);
     if (first) {
-      let tmp17 = isEligible;
+      let tmp11 = isEligible;
       if (isEligible) {
-        tmp17 = tmp;
+        tmp11 = tmp3;
       }
-      let tmp16 = tmp17;
+      let tmp10 = tmp11;
     } else {
-      tmp16 = tmp13 === require(1334) /* DismissibleContent */.DismissibleContent.BOUNTIES_SWIPE_UP_NUX;
+      tmp10 = tmp9 === tmp(1358).DismissibleContent.BOUNTIES_SWIPE_UP_NUX;
     }
-    const tmp12 = callback(require(8417) /* useSelectedDismissibleContent */.useSelectedDismissibleContent([]), 2);
-    obj = { cooldownDurationMs: 86400000 };
-    const obj3 = require(8417) /* useSelectedDismissibleContent */;
-    obj = { hasSingleUseSwipeUpNux: tmp16, dismissSingleUseSwipeUpNux: tmp12[1] };
+    tmpResult = tmp(8441);
+    tmp4Result = tmp4(tmpResult.useSelectedTimeRecurringDismissibleContent(prop, { cooldownDurationMs: 86400000 }), 2);
+    obj = { hasSingleUseSwipeUpNux: null, dismissSingleUseSwipeUpNux: null, hasRecurringSwipeUpNux: null, dismissRecurringSwipeUpNux: null };
+    obj[0] = tmp10;
+    obj[1] = tmp4Result[1];
     if (first) {
       if (isEligible) {
-        isEligible = !tmp;
+        isEligible = !tmp3;
       }
-      let tmp25 = isEligible;
+      let tmp14 = isEligible;
     } else {
-      tmp25 = tmp22 === require(1334) /* DismissibleContent */.DismissibleContent.BOUNTIES_RECURRING_SWIPE_UP_NUX;
+      tmp14 = tmp13 === tmp(1358).DismissibleContent.BOUNTIES_RECURRING_SWIPE_UP_NUX;
     }
-    obj.hasRecurringSwipeUpNux = tmp25;
-    obj.dismissRecurringSwipeUpNux = callback(require(8417) /* useSelectedDismissibleContent */.useSelectedTimeRecurringDismissibleContent(prop, obj), 2)[1];
+    obj[2] = tmp14;
+    obj[3] = tmp4Result[1];
     return obj;
   }
 };

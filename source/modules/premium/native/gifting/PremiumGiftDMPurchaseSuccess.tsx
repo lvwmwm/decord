@@ -1,44 +1,44 @@
-// Module ID: 9766
-// Function ID: 75901
+// Module ID: 9788
+// Function ID: 9789
 // Name: PremiumGiftDMSuccessBody
-// Dependencies: [31, 27, 33, 4165, 689, 8780, 1456, 8747, 9678, 4578, 1212, 2263, 8754, 4161, 2]
+// Dependencies: [19, 17, 21, 4189, 712, 8804, 1480, 8771, 9700, 4600, 1236, 2287, 8778, 4185, 2]
 // Exports: PremiumGiftDMSuccessActions, default
 
-// Module 9766 (PremiumGiftDMSuccessBody)
-import result from "result";
+// Module 9788 (PremiumGiftDMSuccessBody)
+import noop from "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_5;
+let c5;
 let closure_6;
-let closure_7;
+let error;
 const require = arg1;
-({ jsx: closure_5, Fragment: closure_6, jsxs: closure_7 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { marginTop: require("_createForOfIteratorHelperLoose").space.PX_24, textAlign: "center" };
-_createForOfIteratorHelperLoose.title = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.description = { marginTop: require("_createForOfIteratorHelperLoose").space.PX_8, textAlign: "center" };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-let obj1 = { marginTop: require("_createForOfIteratorHelperLoose").space.PX_8, textAlign: "center" };
+({ jsx: c5, Fragment: closure_6, jsxs: error } = jsxProd);
+createCacheKey = { title: null, description: null };
+createCacheKey = { marginTop: require("Themes").space.PX_24, textAlign: "center" };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { marginTop: require("Themes").space.PX_8, textAlign: "center" };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let obj1 = { marginTop: require("Themes").space.PX_8, textAlign: "center" };
 const result = require("jsxProd").fileFinishedImporting("modules/premium/native/gifting/PremiumGiftDMPurchaseSuccess.tsx");
 
 export default function PremiumGiftDMSuccessBody() {
-  const tmp = _createForOfIteratorHelperLoose();
-  let obj = require(8780) /* importDefaultResult1 */;
-  obj = {};
-  obj = {};
-  obj.children = callback(importDefault(8754), { giftStyle: obj.useNativeGiftContext().giftStyle });
+  const tmp = createCacheKey();
+  let obj = require(8804) /* NativeGiftContextProvider */;
+  obj = { children: null };
+  obj = { children: null };
+  obj[0] = callback(importDefault(8778), { giftStyle: obj.useNativeGiftContext().giftStyle });
   const items = [callback(View, obj), , ];
-  const obj1 = { style: tmp.title, variant: "heading-lg/bold" };
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj1.children = intl.string(require(1212) /* getSystemLocale */.t.MqZXbv);
-  items[1] = callback(require(4161) /* Text */.Text, obj1);
-  const obj2 = { style: tmp.description, variant: "text-md/medium" };
-  const intl2 = require(1212) /* getSystemLocale */.intl;
-  obj2.children = intl2.string(require(1212) /* getSystemLocale */.t.Y1keV0);
-  items[2] = callback(require(4161) /* Text */.Text, obj2);
-  obj.children = items;
+  const obj1 = { style: tmp.title, variant: "heading-lg/bold", children: null };
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj1[2] = intl.string(require(1236) /* getSystemLocale */.t.MqZXbv);
+  items[1] = callback(require(4185) /* Text */.Text, obj1);
+  const obj2 = { style: tmp.description, variant: "text-md/medium", children: null };
+  const intl2 = require(1236) /* getSystemLocale */.intl;
+  obj2[2] = intl2.string(require(1236) /* getSystemLocale */.t.Y1keV0);
+  items[2] = callback(require(4185) /* Text */.Text, obj2);
+  obj[0] = items;
   return callback2(closure_6, obj);
 };
 export const PremiumGiftDMSuccessActions = function PremiumGiftDMSuccessActions() {
@@ -53,16 +53,16 @@ export const PremiumGiftDMSuccessActions = function PremiumGiftDMSuccessActions(
   const callback = enabled.useCallback(() => {
     if (enabled) {
       if (null != prePurchaseGiftingBadgeProgress) {
-        const obj = { currentProgress: prePurchaseGiftingBadgeProgress };
+        const obj = { currentProgress: null };
+        obj[0] = tmp;
         navigation.navigate(onClose(navigation[8]).PremiumGiftScreens.GIFTING_BADGE, obj);
       }
     }
     onClose();
   }, items);
-  obj = {};
+  obj = { text: null, variant: "primary", onPress: null };
   const intl = onClose(navigation[10]).intl;
-  obj.text = intl.string(prePurchaseGiftingBadgeProgress(navigation[11]).bGKjmg);
-  obj.variant = "primary";
-  obj.onPress = callback;
+  obj[0] = intl.string(prePurchaseGiftingBadgeProgress(navigation[11]).bGKjmg);
+  obj[2] = callback;
   return callback(onClose(navigation[9]).Button, obj);
 };

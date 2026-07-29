@@ -1,12 +1,12 @@
-// Module ID: 11230
-// Function ID: 87207
+// Module ID: 11254
+// Function ID: 11255
 // Name: useCustomKeyboardBottomSheetConfig
-// Dependencies: [31, 4157, 477, 1823, 4031, 1555, 1450, 11186, 5485, 10400, 2]
+// Dependencies: [19, 4181, 500, 1847, 4055, 1579, 1474, 11210, 5503, 10424, 2]
 // Exports: default
 
-// Module 11230 (useCustomKeyboardBottomSheetConfig)
-import result from "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 11254 (useCustomKeyboardBottomSheetConfig)
+import noop from "noop";
+import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/action_sheet/native/useCustomKeyboardBottomSheetConfig.tsx");
@@ -25,35 +25,32 @@ export default function useCustomKeyboardBottomSheetConfig(forceMaxHeight) {
   let importDefault;
   let minimum;
   let maximum;
-  let tmp = importDefault(minimum[6])({ ignoreKeyboard: true });
-  importDefault = tmp;
-  const tmp2 = importDefault(minimum[7])();
-  minimum = tmp2.minimum;
-  maximum = tmp2.maximum;
+  const tmp2 = importDefault(minimum[6])({ ignoreKeyboard: true });
+  importDefault = tmp2;
+  let tmp3 = importDefault(minimum[7])();
+  minimum = tmp3.minimum;
+  maximum = tmp3.maximum;
   let items = [flag, maximum, minimum];
   ({ initialPosition, animateOnMount } = importDefault(minimum[8])(() => {
     let obj = { initialPosition: _undefined.height - minimum, animateOnMount: false };
-    let tmp = obj;
+    let tmp3 = obj;
     if (!obj2.isAndroid()) {
-      tmp = obj;
+      tmp3 = obj;
       if (!outer1_4.useReducedMotion) {
-        let tmp5 = obj;
-        if (0 === obj3.getSystemKeyboardHeight()) {
-          const keyboardTypePrevious = flag(minimum[4]).getKeyboardTypePrevious();
-          tmp5 = obj;
-          if (keyboardTypePrevious === flag(minimum[5]).KeyboardTypes.SYSTEM) {
+        let tmpResult = tmp(tmp2[3]);
+        if (0 === tmpResult.getSystemKeyboardHeight()) {
+          tmpResult = tmp(tmp2[4]);
+          const keyboardTypePrevious = tmpResult.getKeyboardTypePrevious();
+          if (keyboardTypePrevious === tmp(tmp2[5]).KeyboardTypes.SYSTEM) {
             obj = { animateOnMount: true };
-            tmp5 = obj;
           }
-          const obj4 = flag(minimum[4]);
         }
-        tmp = tmp5;
-        obj3 = flag(minimum[3]);
+        tmp3 = obj;
       }
     }
-    return tmp;
+    return tmp3;
   }));
-  let obj = { animateOnMount, enablePanDownToClose: flag2 };
+  let obj = { animateOnMount, enablePanDownToClose: flag2, accessible: null, contentHeight: null, containerHeight: null, enableDynamicSizing: false, initialPosition: null, keyboardBehavior: "extend", android_keyboardInputMode: null, snapPoints: null };
   const memo = maximum.useMemo(() => {
     if (flag) {
       const items = [maximum, maximum];
@@ -63,40 +60,37 @@ export default function useCustomKeyboardBottomSheetConfig(forceMaxHeight) {
     }
     return items1;
   }, items);
-  const tmp3 = importDefault(minimum[8])(() => {
+  const tmp = minimum;
+  const tmp4 = importDefault(minimum[8])(() => {
     let obj = { initialPosition: _undefined.height - minimum, animateOnMount: false };
-    let tmp = obj;
+    let tmp3 = obj;
     if (!obj2.isAndroid()) {
-      tmp = obj;
+      tmp3 = obj;
       if (!outer1_4.useReducedMotion) {
-        let tmp5 = obj;
-        if (0 === obj3.getSystemKeyboardHeight()) {
-          const keyboardTypePrevious = flag(minimum[4]).getKeyboardTypePrevious();
-          tmp5 = obj;
-          if (keyboardTypePrevious === flag(minimum[5]).KeyboardTypes.SYSTEM) {
+        let tmpResult = tmp(tmp2[3]);
+        if (0 === tmpResult.getSystemKeyboardHeight()) {
+          tmpResult = tmp(tmp2[4]);
+          const keyboardTypePrevious = tmpResult.getKeyboardTypePrevious();
+          if (keyboardTypePrevious === tmp(tmp2[5]).KeyboardTypes.SYSTEM) {
             obj = { animateOnMount: true };
-            tmp5 = obj;
           }
-          const obj4 = flag(minimum[4]);
         }
-        tmp = tmp5;
-        obj3 = flag(minimum[3]);
+        tmp3 = obj;
       }
     }
-    return tmp;
+    return tmp3;
   });
-  let tmp5 = !flag(minimum[2]).isAndroid();
-  obj.accessible = !tmp5;
-  obj.contentHeight = maximum;
-  obj.containerHeight = tmp.height;
-  obj.enableDynamicSizing = false;
-  obj.initialPosition = initialPosition;
-  obj.keyboardBehavior = "extend";
+  const tmp6 = flag;
+  const obj2 = flag(minimum[2]);
+  obj[2] = flag(minimum[2]).isAndroid() && undefined;
+  obj[3] = maximum;
+  obj[4] = tmp2.height;
+  obj[6] = initialPosition;
   let str;
-  if (flag(minimum[9]).IS_SYSTEM_KEYBOARD_EXTERNAL) {
+  if (tmp6(tmp[9]).IS_SYSTEM_KEYBOARD_EXTERNAL) {
     str = "adjustResize";
   }
-  obj.android_keyboardInputMode = str;
-  obj.snapPoints = memo;
+  obj[8] = str;
+  obj[9] = memo;
   return obj;
 };

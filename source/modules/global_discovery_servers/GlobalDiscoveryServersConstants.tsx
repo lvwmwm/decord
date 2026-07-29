@@ -1,10 +1,10 @@
-// Module ID: 8282
-// Function ID: 66354
+// Module ID: 8306
+// Function ID: 8307
 // Name: DEFAULT_DISCOVERY_CATEGORY_ID
-// Dependencies: [664, 1212, 2]
+// Dependencies: [687, 1236, 2]
 // Exports: getLanguageOptions
 
-// Module 8282 (DEFAULT_DISCOVERY_CATEGORY_ID)
+// Module 8306 (DEFAULT_DISCOVERY_CATEGORY_ID)
 import set from "set";
 
 const require = arg1;
@@ -36,15 +36,15 @@ export const FEATURED_GUILDS_SEARCH_OPTIONS = { categoryId: -1 };
 export const CategoryId = obj;
 export const DISCOVERY_SIDEBAR_CATEGORIES = items1;
 export const getLanguageOptions = function getLanguageOptions() {
-  const languages = require(1212) /* getSystemLocale */.getLanguages();
-  const found = languages.filter((code) => !outer1_2.includes(code.code));
+  const languages = require(1236) /* getSystemLocale */.getLanguages();
+  const found = languages.filter((code) => !closure_2.includes(code.code));
   return found.map((code) => {
     let tmp = code;
     if ("en-US" === code.code) {
       const obj = {};
       const merged = Object.assign(code);
-      const intl = outer1_0(outer1_1[1]).intl;
-      obj["name"] = intl.string(outer1_0(outer1_1[1]).t.LQLMGP);
+      const intl = callback(1236).intl;
+      obj.name = intl.string(callback(1236).t.LQLMGP);
       tmp = obj;
     }
     return tmp;

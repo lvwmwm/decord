@@ -1,45 +1,45 @@
-// Module ID: 7723
-// Function ID: 61582
+// Module ID: 7746
+// Function ID: 7747
 // Name: createCommonMessage
-// Dependencies: [1348, 4165, 4011, 4009, 689, 3835, 7706, 7724, 7725, 7726, 2]
+// Dependencies: [1372, 4189, 4035, 4033, 712, 3859, 7729, 7747, 7748, 7749, 2]
 // Exports: default
 
-// Module 7723 (createCommonMessage)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+// Module 7746 (createCommonMessage)
+import ensureGuildLoaded from "ensureGuildLoaded";
+import createCacheKey from "createCacheKey";
+import createCacheKey from "createCacheKey";
 
 const require = arg1;
-const result = _createForOfIteratorHelperLoose.experimental_createToken((theme) => {
+const result = createCacheKey.experimental_createToken((theme) => {
   let str = "rgba(201,210,240,0.6)";
   if (obj.isThemeDark(theme.theme)) {
-    str = require(4009) /* hexToRgb */.hexWithOpacity(importDefault(689).unsafe_rawColors.WHITE, 0.1);
-    const obj2 = require(4009) /* hexToRgb */;
+    str = require(4033) /* hexToRgba */.hexWithOpacity(importDefault(712).unsafe_rawColors.WHITE, 0.1);
+    const tmpResult = require(4033) /* hexToRgba */;
   }
   return str;
 });
-_createForOfIteratorHelperLoose = { timestampColor: require("_createForOfIteratorHelperLoose").colors.TEXT_MUTED, highlightColor: result };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createNativeStyleProperties(_createForOfIteratorHelperLoose);
+createCacheKey = { timestampColor: require("Themes").colors.TEXT_MUTED, highlightColor: result };
+createCacheKey = createCacheKey.createNativeStyleProperties(createCacheKey);
 const result1 = require("AccessibilityAnnouncer").fileFinishedImporting("modules/messages/native/renderer/system_messages/createCommonMessage.tsx");
 
 export default function createCommonMessage(reactions) {
   let message;
   let theme;
   ({ message, theme } = reactions);
-  const tmp = _createForOfIteratorHelperLoose(theme);
-  const obj = { id: message.id, channelId: message.channel_id, type: message.type, mentioned: message.mentioned };
+  const tmp = createCacheKey(theme);
+  const obj = { id: message.id, channelId: message.channel_id, type: message.type, mentioned: message.mentioned, timestamp: null, timestampColor: null, dark: null, highlightColor: null, reactions: null, swipeToReplyIconUrl: null, swipeToEditIconUrl: null, accessibilityActions: null };
   channel = channel.getChannel(message.channel_id);
-  obj.timestamp = require(3835) /* resetCache */.calendarFormat(message.timestamp, true);
-  obj.timestampColor = tmp.timestampColor;
-  const obj2 = require(3835) /* resetCache */;
-  obj.dark = require(4011) /* AccessibilityAnnouncer */.isThemeDark(theme);
-  obj.highlightColor = tmp.highlightColor;
-  obj.reactions = reactions.reactions;
-  const obj3 = require(4011) /* AccessibilityAnnouncer */;
-  obj.swipeToReplyIconUrl = require(7706) /* frozen */.getAssetUriForEmbed(importDefault(7724));
-  const obj4 = require(7706) /* frozen */;
-  obj.swipeToEditIconUrl = require(7706) /* frozen */.getAssetUriForEmbed(importDefault(7725));
-  const obj5 = require(7706) /* frozen */;
-  obj.accessibilityActions = require(7726) /* getQuickReactionLabel */.createMessageAccessibilityActions(message, channel);
+  obj[4] = require(3859) /* resetCache */.calendarFormat(message.timestamp, true);
+  obj[5] = tmp.timestampColor;
+  const obj2 = require(3859) /* resetCache */;
+  obj[6] = require(4035) /* AccessibilityAnnouncer */.isThemeDark(theme);
+  obj[7] = tmp.highlightColor;
+  obj[8] = reactions.reactions;
+  const obj3 = require(4035) /* AccessibilityAnnouncer */;
+  obj[9] = require(7729) /* frozen */.getAssetUriForEmbed(importDefault(7747));
+  const obj4 = require(7729) /* frozen */;
+  obj[10] = require(7729) /* frozen */.getAssetUriForEmbed(importDefault(7748));
+  const obj5 = require(7729) /* frozen */;
+  obj[11] = require(7749) /* MessageAccessibilityAction */.createMessageAccessibilityActions(message, channel);
   return obj;
 };

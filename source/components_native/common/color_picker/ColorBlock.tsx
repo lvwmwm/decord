@@ -1,20 +1,20 @@
-// Module ID: 13676
-// Function ID: 104952
+// Module ID: 13697
+// Function ID: 13698
 // Name: styles
-// Dependencies: [31, 27, 33, 4165, 689, 665, 4695, 4009, 1273, 9986, 2]
+// Dependencies: [19, 17, 21, 4189, 712, 688, 4717, 4033, 1297, 10008, 2]
 
-// Module 13676 (styles)
+// Module 13697 (styles)
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import importAllResult from "result";
+import createCacheKey from "createCacheKey";
+import importAllResult from "noop";
 
 const require = arg1;
-let obj = {};
-obj = { minWidth: 44, height: 44, borderRadius: require("_createForOfIteratorHelperLoose").radii.xl, marginHorizontal: 12, marginVertical: 8, justifyContent: "center", alignItems: "center" };
-obj.colorBlock = obj;
-const styles = _createForOfIteratorHelperLoose.createStyles(obj);
-const memoResult = require("result").memo((color) => {
+let obj = { colorBlock: null };
+obj = { minWidth: 44, height: 44, borderRadius: require("Themes").radii.xl, marginHorizontal: 12, marginVertical: 8, justifyContent: "center", alignItems: "center" };
+obj[0] = obj;
+const styles = createCacheKey.createStyles(obj);
+const memoResult = require("noop").memo((color) => {
   let selected;
   let style;
   color = color.color;
@@ -24,63 +24,66 @@ const memoResult = require("result").memo((color) => {
   }
   const onSelect = color.onSelect;
   const tmp = styles();
-  let obj = color(665);
+  let unsafe_rawColors = dependencyMap;
+  let obj = color(688);
   const v = obj.int2hsv(color).v;
   if (null != onSelect) {
-    obj = { accessibilityRole: "button" };
-    let obj3 = color(4009);
-    let obj4 = color(665);
-    obj.accessibilityLabel = obj3.hexToColorName(obj4.int2hex(color), true);
-    obj = { selected };
-    obj.accessibilityState = obj;
-    obj.onPress = function onPress() {
+    obj = { accessibilityRole: "button", accessibilityLabel: null, accessibilityState: null, onPress: null, style: null, children: null };
+    let tmp2Result = tmp2(4033);
+    tmp2Result = tmp2(688);
+    obj[1] = tmp2Result.hexToColorName(tmp2Result.int2hex(color), true);
+    obj = { selected: null };
+    obj[0] = selected;
+    obj[2] = obj;
+    obj[3] = function onPress() {
       return onSelect(color);
     };
     const items = [tmp.colorBlock, style, ];
-    const obj1 = { backgroundColor: color(665).int2hex(color) };
+    const obj1 = { backgroundColor: null };
+    obj1[0] = tmp2(688).int2hex(color);
     items[2] = obj1;
-    obj.style = items;
+    obj[4] = items;
     if (!selected) {
-      obj.children = null;
-      let tmp25Result = tmp12(color(4695).PressableOpacity, obj);
+      obj[5] = null;
+      let tmp10Result = tmp6(tmp2(4717).PressableOpacity, obj);
     } else {
-      const obj2 = { source: onSelect(9986) };
+      const obj2 = { source: null, color: null };
+      obj2[0] = onSelect(10008);
       if (v < 0.5) {
-        let BLACK2 = onSelect(689).unsafe_rawColors.WHITE;
+        unsafe_rawColors = tmp8(712).unsafe_rawColors;
+        let BLACK2 = unsafe_rawColors.WHITE;
       } else {
-        BLACK2 = onSelect(689).unsafe_rawColors.BLACK;
+        BLACK2 = tmp8(712).unsafe_rawColors.BLACK;
       }
-      obj2.color = BLACK2;
-      jsx(color(1273).Icon, { source: onSelect(9986) });
-      const tmp16 = jsx;
+      obj2[1] = BLACK2;
+      tmp6(tmp2(1297).Icon, obj2);
     }
-    const obj8 = color(665);
-    tmp12 = jsx;
+    const tmp2Result1 = tmp2(688);
   } else {
-    obj3 = {};
+    const obj3 = { style: null, children: null };
     const items1 = [tmp.colorBlock, style, ];
-    obj4 = { backgroundColor: color(665).int2hex(color) };
+    const obj4 = { backgroundColor: null };
+    obj4[0] = tmp2(688).int2hex(color);
     items1[2] = obj4;
-    obj3.style = items1;
+    obj3[0] = items1;
     if (!selected) {
-      obj3.children = null;
-      tmp25Result = tmp25(tmp26, obj3);
+      obj3[1] = null;
+      tmp10Result = tmp10(tmp11, obj3);
     } else {
-      const obj5 = { source: onSelect(9986) };
+      const obj5 = { source: null, color: null };
+      obj5[0] = onSelect(10008);
       if (v < 0.5) {
-        let BLACK = onSelect(689).unsafe_rawColors.WHITE;
+        let BLACK = tmp3(712).unsafe_rawColors.WHITE;
       } else {
-        BLACK = onSelect(689).unsafe_rawColors.BLACK;
+        BLACK = tmp3(712).unsafe_rawColors.BLACK;
       }
-      obj5.color = BLACK;
-      jsx(color(1273).Icon, { source: onSelect(9986) });
-      const tmp2 = jsx;
+      obj5[1] = BLACK;
+      tmp10Result = tmp10(tmp2(1297).Icon, obj5);
     }
-    const obj12 = color(665);
-    tmp25 = jsx;
-    tmp26 = View;
+    tmp11 = View;
+    const tmp2Result2 = tmp2(688);
   }
-  return tmp25Result;
+  return tmp10Result;
 });
 const result = require("jsxProd").fileFinishedImporting("components_native/common/color_picker/ColorBlock.tsx");
 

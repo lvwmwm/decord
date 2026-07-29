@@ -1,18 +1,18 @@
-// Module ID: 13753
-// Function ID: 105426
+// Module ID: 13774
+// Function ID: 13775
 // Name: CodeRow
-// Dependencies: [31, 27, 12777, 33, 4165, 689, 5525, 3865, 5198, 5187, 1212, 3869, 566, 13754, 4576, 4161, 5536, 2]
+// Dependencies: [19, 17, 12799, 21, 4189, 712, 5543, 3889, 5220, 5209, 1236, 3893, 589, 13775, 4598, 4185, 5554, 2]
 // Exports: default
 
-// Module 13753 (CodeRow)
-import result from "result";
-import { ScrollView } from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 13774 (CodeRow)
+import noop from "noop";
+import { ScrollView } from "set";
+import getVerificationKey from "getVerificationKey";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
 let closure_6;
-let closure_7;
+let error;
 const require = arg1;
 function CodeRow(code) {
   code = code.code;
@@ -23,42 +23,41 @@ function CodeRow(code) {
     const obj = code(outer1_2[6]);
     const result = code(outer1_2[7]).presentCopiedToClipboard();
   }, items);
-  let obj = {};
-  let tmp3;
+  let tmp5;
   if (!showCheckMark) {
-    tmp3 = callback;
+    tmp5 = callback;
   }
-  obj.onPress = tmp3;
-  obj.label = code;
-  let tmp4 = null;
+  let obj = { onPress: tmp5, label: code, trailing: null };
+  let tmp2Result = null;
   if (showCheckMark) {
-    obj = { color: importDefault(689).colors.TEXT_BRAND };
-    tmp4 = callback(code(5187).CheckmarkSmallIcon, obj);
+    obj = { color: null };
+    obj[0] = importDefault(712).colors.TEXT_BRAND;
+    tmp2Result = tmp2(code(5209).CheckmarkSmallIcon, obj);
   }
-  obj.trailing = tmp4;
-  return callback(code(5198).TableRow, obj);
+  obj[2] = tmp2Result;
+  return closure_6(code(5220).TableRow, obj);
 }
-({ jsx: closure_6, jsxs: closure_7 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { color: require("_createForOfIteratorHelperLoose").colors.TEXT_BRAND };
-_createForOfIteratorHelperLoose.generateCode = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/user_settings/account/native/UserSettingsAccountBackupCodes.tsx");
+({ jsx: closure_6, jsxs: error } = jsxProd);
+createCacheKey = { generateCode: null };
+createCacheKey = { color: require("Themes").colors.TEXT_BRAND };
+createCacheKey[0] = createCacheKey;
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let result = require("getVerificationKey").fileFinishedImporting("modules/user_settings/account/native/UserSettingsAccountBackupCodes.tsx");
 
 export default function UserSettingsAccountBackupCodes(headerLabel) {
   let unusedCodes;
   let usedCodes;
   headerLabel = headerLabel.headerLabel;
   if (headerLabel === undefined) {
-    const intl = stateFromStores(1212).intl;
-    headerLabel = intl.format(stateFromStores(1212).t.OhmvYt, {});
+    const intl = stateFromStores(1236).intl;
+    headerLabel = intl.format(stateFromStores(1236).t.OhmvYt, {});
   }
   stateFromStores = undefined;
-  let obj = stateFromStores(3869);
-  const token = obj.useToken(importDefault(689).modules.mobile.TABLE_ROW_PADDING);
-  let obj1 = stateFromStores(566);
-  const items = [_isNativeReflectConstruct];
-  stateFromStores = obj1.useStateFromStores(items, () => outer1_5.getBackupCodes());
+  let obj = stateFromStores(3893);
+  const token = obj.useToken(importDefault(712).modules.mobile.TABLE_ROW_PADDING);
+  let obj1 = stateFromStores(589);
+  const items = [getVerificationKey];
+  stateFromStores = obj1.useStateFromStores(items, () => store.getBackupCodes());
   const items1 = [stateFromStores];
   const memo = React.useMemo(() => {
     const usedCodes = [];
@@ -75,50 +74,51 @@ export default function UserSettingsAccountBackupCodes(headerLabel) {
   }, items1);
   ({ usedCodes, unusedCodes } = memo);
   const effect = React.useEffect(() => () => {
-    outer2_1(outer2_2[13]).clearBackupCodes();
+    callback(table[13]).clearBackupCodes();
   }, []);
-  obj = {};
-  obj = { spacing: importDefault(689).space.PX_24 };
-  obj1 = { paddingHorizontal: token, paddingTop: importDefault(689).space.PX_16 };
-  obj.style = obj1;
-  const items2 = [headerLabel.map((children) => outer1_6(stateFromStores(outer1_2[15]).Text, { variant: "text-sm/medium", children }, arg1)), , , ];
-  let tmp11 = unusedCodes.length > 0;
-  if (tmp11) {
-    const obj2 = {};
-    const intl2 = stateFromStores(1212).intl;
-    obj2.title = intl2.string(stateFromStores(1212).t.zdzyFo);
-    obj2.hasIcons = false;
-    obj2.children = unusedCodes.map((code) => outer1_6(outer1_9, { code: code.code, showCheckMark: false }, arg1));
-    tmp11 = callback(stateFromStores(5536).TableRowGroup, obj2);
+  obj = { spacing: null, style: null, children: null };
+  obj[0] = importDefault(712).space.PX_24;
+  obj = { paddingHorizontal: token, paddingTop: importDefault(712).space.PX_16 };
+  obj[1] = obj;
+  const items2 = [headerLabel.map((children) => callback2(stateFromStores(4185).Text, { variant: "text-sm/medium", children }, arg1)), , , ];
+  let tmp10Result = unusedCodes.length > 0;
+  if (tmp10Result) {
+    obj1 = { title: null, hasIcons: false, children: null };
+    const intl2 = tmp3(1236).intl;
+    obj1[0] = intl2.string(tmp3(1236).t.zdzyFo);
+    obj1[2] = unusedCodes.map((code) => callback2(closure_9, { code: code.code, showCheckMark: false }, arg1));
+    tmp10Result = tmp10(tmp3(5554).TableRowGroup, obj1);
   }
-  items2[1] = tmp11;
-  let tmp15 = usedCodes.length > 0;
-  if (tmp15) {
-    const obj3 = {};
-    const intl3 = stateFromStores(1212).intl;
-    obj3.title = intl3.string(stateFromStores(1212).t.FkFLDN);
-    obj3.hasIcons = false;
-    obj3.children = usedCodes.map((code) => outer1_6(outer1_9, { code: code.code, showCheckMark: true }, arg1));
-    tmp15 = callback(stateFromStores(5536).TableRowGroup, obj3);
+  items2[1] = tmp10Result;
+  tmp10Result = usedCodes.length > 0;
+  if (tmp10Result) {
+    const obj2 = { title: null, hasIcons: false, children: null };
+    const intl3 = tmp3(1236).intl;
+    obj2[0] = intl3.string(tmp3(1236).t.FkFLDN);
+    obj2[2] = usedCodes.map((code) => callback2(closure_9, { code: code.code, showCheckMark: true }, arg1));
+    tmp10Result = tmp10(tmp3(5554).TableRowGroup, obj2);
   }
-  items2[2] = tmp15;
-  let tmp19 = null !== headerLabel.onGenerate;
-  if (tmp19) {
-    const obj4 = { hasIcons: false };
-    const obj5 = {};
-    const obj6 = { variant: "text-md/semibold", style: tmp4.generateCode };
-    const intl4 = stateFromStores(1212).intl;
-    obj6.children = intl4.string(stateFromStores(1212).t.RIThUu);
-    obj5.label = callback(stateFromStores(4161).Text, obj6);
-    obj5.onPress = function onPress() {
-      const verificationKey = outer1_5.getVerificationKey();
-      const result = outer1_1(outer1_2[13]).confirmViewBackupCodes(verificationKey, true);
+  items2[2] = tmp10Result;
+  let tmp10Result1 = null !== headerLabel.onGenerate;
+  if (tmp10Result1) {
+    const obj3 = { hasIcons: false, children: null };
+    const obj4 = { label: null, onPress: null };
+    const obj5 = { variant: "text-md/semibold", style: null, children: null };
+    obj5[1] = tmp6.generateCode;
+    const intl4 = tmp3(1236).intl;
+    obj5[2] = intl4.string(tmp3(1236).t.RIThUu);
+    obj4[0] = tmp10(tmp3(4185).Text, obj5);
+    obj4[1] = function onPress() {
+      const verificationKey = store.getVerificationKey();
+      const result = callback(13775).confirmViewBackupCodes(verificationKey, true);
     };
-    obj4.children = callback(stateFromStores(5198).TableRow, obj5);
-    tmp19 = callback(stateFromStores(5536).TableRowGroup, obj4);
+    obj3[1] = tmp10(tmp3(5220).TableRow, obj4);
+    tmp10Result1 = tmp10(tmp3(5554).TableRowGroup, obj3);
   }
-  items2[3] = tmp19;
-  obj.children = items2;
-  obj.children = closure_7(stateFromStores(4576).Stack, obj);
-  return callback(ScrollView, obj);
+  const tmp11 = ScrollView;
+  const tmp12 = closure_7;
+  tmp6 = createCacheKey();
+  items2[3] = tmp10Result1;
+  obj[2] = items2;
+  return closure_6(tmp11, { children: closure_7(stateFromStores(4598).Stack, obj) });
 };

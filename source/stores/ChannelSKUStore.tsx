@@ -1,69 +1,29 @@
-// Module ID: 12775
-// Function ID: 99263
-// Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 566, 686, 2]
+// Module ID: 12797
+// Function ID: 12798
+// Name: getSkuIdForChannel
+// Dependencies: [589, 709, 2]
 
-// Module 12775 (_isNativeReflectConstruct)
-import dispatcher from "dispatcher";
-import set from "set";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
+// Module 12797 (getSkuIdForChannel)
+import { Store } from "initialize";
 
-function _isNativeReflectConstruct() {
-  let dispatcher = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return dispatcher;
-  }
-  const result = _isNativeReflectConstruct();
+let closure_0 = {};
+class ChannelSKUStore extends Store {
 }
-let closure_5 = {};
-let tmp2 = ((Store) => {
-  class ChannelSKUStore {
-    constructor() {
-      self = this;
-      tmp = ChannelSKUStore(this, ChannelSKUStore);
-      obj = outer1_3(ChannelSKUStore);
-      tmp2 = outer1_2;
-      if (outer1_6()) {
-        tmp6 = globalThis;
-        _Reflect = Reflect;
-        tmp7 = outer1_3;
-        tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, outer1_3(self).constructor);
-      } else {
-        tmp3 = arguments;
-        tmp4 = arguments;
-        constructResult = obj(...arguments);
-      }
-      return tmp2(self, constructResult);
-    }
-  }
-  callback2(ChannelSKUStore, Store);
-  const items = [
-    {
-      key: "getSkuIdForChannel",
-      value(arg0) {
-        return outer1_5[arg0];
-      }
-    }
-  ];
-  return callback(ChannelSKUStore, items);
-})(require("initialize").Store);
-tmp2.displayName = "ChannelSKUStore";
-tmp2 = new tmp2(require("dispatcher"), {
+ChannelSKUStore.prototype["getSkuIdForChannel"] = function getSkuIdForChannel(arg0) {
+  return table[arg0];
+};
+ChannelSKUStore.displayName = "ChannelSKUStore";
+const channelSKUStore = new ChannelSKUStore(require("dispatcher"), {
   CONNECTION_OPEN: function handleConnectionOpen() {
-    let closure_5 = {};
+    let closure_0 = {};
   },
   STORE_LISTING_FETCH_SUCCESS: function handleStoreListingFetchSuccess(channelId) {
     channelId = channelId.channelId;
     if (null != channelId) {
-      closure_5[channelId] = tmp.sku.id;
+      closure_0[channelId] = tmp.sku.id;
     }
   }
 });
-let result = require("_possibleConstructorReturn").fileFinishedImporting("stores/ChannelSKUStore.tsx");
+const result = require("set").fileFinishedImporting("stores/ChannelSKUStore.tsx");
 
-export default tmp2;
+export default channelSKUStore;

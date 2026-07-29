@@ -1,47 +1,47 @@
-// Module ID: 16442
-// Function ID: 128191
+// Module ID: 16477
+// Function ID: 16478
 // Name: realizedOperatorFor
-// Dependencies: [4975, 2]
+// Dependencies: [4997, 2]
 // Exports: displayedValueFor, minDisplayedValueFor, realizedOperatorFor, storedValueFor
 
-// Module 16442 (realizedOperatorFor)
+// Module 16477 (realizedOperatorFor)
 import { OperatorTypes } from "OperatorTypes";
 
 const result = require("set").fileFinishedImporting("modules/connections/RoleConnectionRequirementUtils.tsx");
 
 export const realizedOperatorFor = function realizedOperatorFor(operator) {
   let GREATER_THAN = operator;
-  if (null == operator) {
+  if (operator == null) {
     GREATER_THAN = OperatorTypes.GREATER_THAN;
   }
   return GREATER_THAN;
 };
 export const displayedValueFor = function displayedValueFor(value, realizedOperatorForResult) {
-  let num = 0;
-  if (null != value) {
-    num = value;
+  let num = value;
+  if (value == null) {
+    num = 0;
   }
   const rounded = Math.round(Number(num));
   if (OperatorTypes.GREATER_THAN === realizedOperatorForResult) {
     const _Math2 = Math;
     return Math.max(1, rounded + 1);
-  } else if (OperatorTypes.LESS_THAN === realizedOperatorForResult) {
+  } else if (tmp2.LESS_THAN === realizedOperatorForResult) {
     const _Math = Math;
     return Math.max(0, rounded - 1);
   } else {
     return rounded;
   }
 };
-export const storedValueFor = function storedValueFor(arg0, c7) {
-  let num = 0;
-  if (null != arg0) {
-    num = arg0;
+export const storedValueFor = function storedValueFor(TableSwitchRow, c7) {
+  let num = TableSwitchRow;
+  if (TableSwitchRow == null) {
+    num = 0;
   }
   const str = Math.round(Number(num));
   if (OperatorTypes.GREATER_THAN === c7) {
     const _Math2 = Math;
     return Math.max(0, str - 1).toString();
-  } else if (OperatorTypes.LESS_THAN === c7) {
+  } else if (tmp.LESS_THAN === c7) {
     const _Math = Math;
     return Math.max(1, str + 1).toString();
   } else {
@@ -51,7 +51,7 @@ export const storedValueFor = function storedValueFor(arg0, c7) {
 export const minDisplayedValueFor = function minDisplayedValueFor(arg0) {
   if (OperatorTypes.GREATER_THAN === arg0) {
     return 1;
-  } else if (OperatorTypes.LESS_THAN === arg0) {
+  } else if (tmp.LESS_THAN === arg0) {
     return 0;
   }
 };

@@ -1,73 +1,81 @@
-// Module ID: 8751
-// Function ID: 69215
-// Dependencies: [57, 31, 27, 653, 33, 4165, 689, 1456, 8750, 5497, 5485, 491, 675, 8752, 8753, 4161, 1212, 8785, 8786, 8787, 2]
+// Module ID: 8775
+// Function ID: 8776
+// Dependencies: [32, 19, 17, 676, 21, 4189, 712, 1480, 8774, 5515, 5503, 514, 698, 8776, 8777, 4185, 1236, 8809, 8810, 8811, 2]
 
-// Module 8751
+// Module 8775
 import _slicedToArray from "_slicedToArray";
-import importAllResult from "result";
-import get_ActivityIndicator from "get ActivityIndicator";
+import importAllResult from "GiftCustomMessage";
+import get_ActivityIndicator from "LockedRecipientField";
 import { AnalyticEvents } from "ME";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_5;
+let c5;
+let c9;
 let closure_6;
-let closure_8;
-let closure_9;
+let metroImportAll;
 const require = arg1;
-({ ScrollView: closure_5, View: closure_6 } = get_ActivityIndicator);
-({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
-let obj = {};
-obj = { flex: 1, paddingTop: require("_createForOfIteratorHelperLoose").space.PX_12, alignItems: "stretch" };
-obj.container = obj;
-_createForOfIteratorHelperLoose = { paddingBottom: require("_createForOfIteratorHelperLoose").space.PX_24 };
-obj.scrollView = _createForOfIteratorHelperLoose;
-obj.sectionHeader = { marginTop: require("_createForOfIteratorHelperLoose").space.PX_24, marginBottom: require("_createForOfIteratorHelperLoose").space.PX_8, paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16, textTransform: "capitalize" };
-let closure_10 = _createForOfIteratorHelperLoose.createStyles(obj);
-let obj2 = { marginTop: require("_createForOfIteratorHelperLoose").space.PX_24, marginBottom: require("_createForOfIteratorHelperLoose").space.PX_8, paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16, textTransform: "capitalize" };
+let c4 = importAllResult;
+({ ScrollView: c5, View: closure_6 } = get_ActivityIndicator);
+({ jsx: metroImportAll, jsxs: c9 } = jsxProd);
+let obj = { container: null, scrollView: null, sectionHeader: null };
+obj = { flex: 1, paddingTop: require("Themes").space.PX_12, alignItems: "stretch" };
+obj[0] = obj;
+createCacheKey = { paddingBottom: require("Themes").space.PX_24 };
+obj[1] = createCacheKey;
+obj[2] = { marginTop: require("Themes").space.PX_24, marginBottom: require("Themes").space.PX_8, paddingHorizontal: require("Themes").space.PX_16, textTransform: "capitalize" };
+let closure_10 = createCacheKey.createStyles(obj);
+let obj2 = { marginTop: require("Themes").space.PX_24, marginBottom: require("Themes").space.PX_8, paddingHorizontal: require("Themes").space.PX_16, textTransform: "capitalize" };
 const memoResult = importAllResult.memo((skuId) => {
+  let c5;
   let lockedRecipient;
   let renderProductDetails;
   let renderPurchaseSection;
   let setRecipientUser;
+  let tmp6;
   skuId = skuId.skuId;
   const applicationId = skuId.applicationId;
   const recipientUser = skuId.recipientUser;
   const validateRecipient = skuId.validateRecipient;
+  let navigation;
+  c5 = undefined;
+  let closure_6;
+  let analyticsLocations;
+  let callback;
+  let memo;
+  let first;
+  let ref;
+  let first1;
+  let first2;
   ({ setRecipientUser, lockedRecipient, renderProductDetails, renderPurchaseSection } = skuId);
-  const tmp = first1();
+  const tmp = first();
   let obj = skuId(recipientUser[7]);
-  const navigation = obj.useNavigation();
-  const tmp3 = validateRecipient(navigation.useState(true), 2);
-  const first = tmp3[0];
-  let closure_5 = tmp3[1];
-  const tmp5 = validateRecipient(navigation.useState(false), 2);
-  let closure_6 = tmp5[1];
+  navigation = obj.useNavigation();
+  [tmp6, c5] = validateRecipient(navigation.useState(true), 2);
+  const tmp7 = validateRecipient(navigation.useState(false), 2);
+  closure_6 = tmp7[1];
   const items = [navigation];
-  let callback = navigation.useCallback(() => {
+  callback = navigation.useCallback(() => {
     navigation.navigate(skuId(recipientUser[8]).UnifiedGiftModalScreens.RECIPENT_SELECT);
   }, items);
-  const analyticsLocations = applicationId(recipientUser[9])().analyticsLocations;
-  const tmp7 = applicationId(recipientUser[10])(() => skuId(recipientUser[11]).v4());
-  callback = tmp7;
-  const items1 = [analyticsLocations, skuId, applicationId, tmp7];
-  const memo = navigation.useMemo(() => {
-    const obj = { is_gift: true, location_stack: analyticsLocations, payment_type: "sku", sku_id: skuId, application_id: applicationId, load_id: closure_8 };
-    return obj;
-  }, items1);
+  analyticsLocations = applicationId(recipientUser[9])().analyticsLocations;
+  const tmp10 = applicationId(recipientUser[10])(() => skuId(recipientUser[11]).v4());
+  callback = tmp10;
+  const items1 = [analyticsLocations, skuId, applicationId, tmp10];
+  memo = navigation.useMemo(() => ({ is_gift: true, location_stack: analyticsLocations, payment_type: "sku", sku_id: skuId, application_id: applicationId, load_id: c8 }), items1);
   const items2 = [recipientUser, skuId, validateRecipient];
   const effect = navigation.useEffect(() => {
-    callback(true);
+    _undefined(true);
     if (null != recipientUser) {
-      callback2(true);
-      const promise = validateRecipient(recipientUser.id);
-      validateRecipient(recipientUser.id).then((arg0) => {
-        outer1_5(arg0);
+      callback(true);
+      const promise = validateRecipient(tmp2.id);
+      validateRecipient(tmp2.id).then((arg0) => {
+        callback(arg0);
       }).finally(() => {
-        outer1_6(false);
+        callback2(false);
       });
-      const nextPromise = validateRecipient(recipientUser.id).then((arg0) => {
-        outer1_5(arg0);
+      const nextPromise = validateRecipient(tmp2.id).then((arg0) => {
+        callback(arg0);
       });
     }
   }, items2);
@@ -77,69 +85,81 @@ const memoResult = importAllResult.memo((skuId) => {
     obj.track(analyticsLocations.PAYMENT_FLOW_STARTED, memo);
     obj = {};
     const merged = Object.assign(memo);
-    obj["initial_step"] = "gift_customization";
+    obj.initial_step = "gift_customization";
     applicationId(recipientUser[12]).track(analyticsLocations.PAYMENT_FLOW_LOADED, obj);
   }, items3);
   let obj1 = skuId(recipientUser[13]);
-  const tmp11 = validateRecipient(navigation.useState(obj1.useGiftStyles()[0]), 2);
-  first1 = tmp11[0];
-  const ref = navigation.useRef(null);
-  const tmp14 = validateRecipient(navigation.useState(0), 2);
-  const first2 = tmp14[0];
-  const tmp16 = validateRecipient(navigation.useState(undefined), 2);
-  const first3 = tmp16[0];
-  const items4 = [first2];
-  const items5 = [first1, recipientUser, first3];
+  const tmp14 = validateRecipient(navigation.useState(obj1.useGiftStyles()[0]), 2);
+  first = tmp14[0];
+  ref = navigation.useRef(null);
+  const tmp17 = validateRecipient(navigation.useState(0), 2);
+  first1 = tmp17[0];
+  const tmp19 = validateRecipient(navigation.useState(undefined), 2);
+  first2 = tmp19[0];
+  const items4 = [first1];
+  const items5 = [first, recipientUser, first2];
   const callback1 = navigation.useCallback(() => {
     const timerId = setTimeout(() => {
-      const current = outer1_11.current;
+      const current = ref.current;
       let scrollToResult;
-      if (null != current) {
-        const obj = { y: outer1_12, animated: true };
+      if (current != null) {
+        const obj = { y: null, animated: true };
+        obj[0] = closure_12;
         scrollToResult = current.scrollTo(obj);
       }
       return scrollToResult;
     }, 100);
   }, items4);
-  obj = { style: tmp.container };
-  obj = { ref, contentContainerStyle: tmp.scrollView, showsVerticalScrollIndicator: false };
+  obj = { style: tmp.container, children: null };
+  obj = { ref, contentContainerStyle: tmp.scrollView, showsVerticalScrollIndicator: false, children: null };
   const memo1 = navigation.useMemo(() => {
-    const obj = { gift_style: first1 };
+    const obj = { gift_style: first, recipient_id: null, custom_message: null };
     let id;
-    if (null != recipientUser) {
+    if (recipientUser != null) {
       id = recipientUser.id;
     }
-    obj.recipient_id = id;
-    obj.custom_message = first3;
+    obj[1] = id;
+    obj[2] = first2;
     return obj;
   }, items5);
-  const items6 = [callback(skuId(recipientUser[14]).GiftBackgroundSelect, { giftStyle: first1, setGiftStyle: tmp11[1], withConsistentHeight: false }), , , , , ];
-  obj1 = { variant: "text-sm/semibold", style: tmp.sectionHeader };
+  const items6 = [callback(skuId(recipientUser[14]).GiftBackgroundSelect, { giftStyle: first, setGiftStyle: tmp14[1], withConsistentHeight: false }), , , , , ];
+  obj1 = { variant: "text-sm/semibold", style: tmp.sectionHeader, children: null };
   const intl = skuId(recipientUser[16]).intl;
-  obj1.children = intl.string(skuId(recipientUser[16]).t.xFn72s);
+  obj1[2] = intl.string(skuId(recipientUser[16]).t.xFn72s);
   items6[1] = callback(skuId(recipientUser[15]).Text, obj1);
   if (lockedRecipient) {
     if (null != recipientUser) {
-      const obj2 = { user: recipientUser };
-      let tmp23 = callback(applicationId(recipientUser[17]), obj2);
+      const obj2 = { user: null };
+      obj2[0] = recipientUser;
+      let tmp26Result = tmp26(tmp9(tmp3[17]), obj2);
     }
-    items6[2] = tmp23;
-    const obj3 = { variant: "text-sm/semibold", style: tmp.sectionHeader };
-    const intl2 = skuId(recipientUser[16]).intl;
-    obj3.children = intl2.string(skuId(recipientUser[16]).t.PpoJzt);
-    items6[3] = callback(skuId(recipientUser[15]).Text, obj3);
-    const obj4 = { recipientUser, isValidRecipient: first };
+    items6[2] = tmp26Result;
+    const obj3 = { variant: "text-sm/semibold", style: null, children: null };
+    obj3[1] = tmp.sectionHeader;
+    const intl2 = tmp2(tmp3[16]).intl;
+    obj3[2] = intl2.string(tmp2(tmp3[16]).t.PpoJzt);
+    items6[3] = tmp26(tmp2(tmp3[15]).Text, obj3);
+    const obj4 = { recipientUser: null, isValidRecipient: null };
+    obj4[0] = recipientUser;
+    obj4[1] = tmp6;
     items6[4] = renderProductDetails(obj4);
-    const obj5 = { onFocusMessage: callback1, setMessagePosition: tmp14[1], customGiftMessage: first3, setCustomGiftMessage: tmp16[1] };
-    items6[5] = callback(skuId(recipientUser[19]).GiftCustomMessage, obj5);
-    obj.children = items6;
-    const items7 = [tmp20(closure_5, obj), ];
-    const obj6 = { isPurchaseDisabled: null == recipientUser || tmp5[0] || !first, giftOptions: memo1, baseAnalyticsFields: memo };
+    const obj5 = { onFocusMessage: null, setMessagePosition: null, customGiftMessage: null, setCustomGiftMessage: null };
+    obj5[0] = callback1;
+    obj5[1] = tmp17[1];
+    obj5[2] = first2;
+    obj5[3] = tmp19[1];
+    items6[5] = tmp26(tmp2(tmp3[19]).GiftCustomMessage, obj5);
+    obj[3] = items6;
+    const items7 = [tmp23(c5, obj), ];
+    const obj6 = { isPurchaseDisabled: null, giftOptions: null, baseAnalyticsFields: null };
+    obj6[0] = null == recipientUser || tmp7[0] || !tmp6;
+    obj6[1] = memo1;
+    obj6[2] = memo;
     items7[1] = renderPurchaseSection(obj6);
-    obj.children = items7;
-    return tmp20(closure_6, obj);
+    obj[1] = items7;
+    return tmp23(closure_6, obj);
   }
-  tmp23 = callback(applicationId(recipientUser[18]), { selectedUser: recipientUser, onPress: callback, setSelectedUser: setRecipientUser });
+  tmp26Result = tmp26(tmp9(tmp3[18]), { selectedUser: recipientUser, onPress: callback, setSelectedUser: setRecipientUser });
 });
 const result = require("get ActivityIndicator").fileFinishedImporting("modules/checkout/native/gifting/UnifiedGiftModalDetailsScreen.tsx");
 

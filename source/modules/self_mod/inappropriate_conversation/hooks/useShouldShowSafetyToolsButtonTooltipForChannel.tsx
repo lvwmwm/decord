@@ -1,25 +1,26 @@
-// Module ID: 10132
-// Function ID: 78343
+// Module ID: 10153
+// Function ID: 10154
 // Name: useSafetyToolsButtonTooltipForChannel
-// Dependencies: [9075, 664, 10108, 10112, 10133, 10134, 2]
+// Dependencies: [9099, 687, 10129, 10133, 10154, 10155, 2]
 // Exports: useSafetyToolsButtonTooltipForChannel
 
-// Module 10132 (useSafetyToolsButtonTooltipForChannel)
-import { SafetyWarningTypes } from "_isNativeReflectConstruct";
+// Module 10153 (useSafetyToolsButtonTooltipForChannel)
+import { SafetyWarningTypes } from "handleConnectionOpen";
 
 const HOUR = require("set").Millis.HOUR;
 let closure_4 = 12 * require("set").Millis.HOUR;
 const result = require("useInappropriateConversationSafetyToolsWarningForChannel").fileFinishedImporting("modules/self_mod/inappropriate_conversation/hooks/useShouldShowSafetyToolsButtonTooltipForChannel.tsx");
 
 export const useSafetyToolsButtonTooltipForChannel = function useSafetyToolsButtonTooltipForChannel(channelId) {
-  const inappropriateConversationSafetyToolsWarningForChannel = require(10108) /* useInappropriateConversationSafetyToolsWarningForChannel */.useInappropriateConversationSafetyToolsWarningForChannel(channelId);
-  const obj = require(10108) /* useInappropriateConversationSafetyToolsWarningForChannel */;
-  const inappropriateConversationWarningsForChannel = require(10112) /* useInappropriateConversationWarningsForChannel */.useInappropriateConversationWarningsForChannel(channelId);
-  const obj2 = require(10112) /* useInappropriateConversationWarningsForChannel */;
+  const inappropriateConversationSafetyToolsWarningForChannel = require(10129) /* useInappropriateConversationSafetyToolsWarningForChannel */.useInappropriateConversationSafetyToolsWarningForChannel(channelId);
+  const obj = require(10129) /* useInappropriateConversationSafetyToolsWarningForChannel */;
+  const tmp = require;
+  const inappropriateConversationWarningsForChannel = require(10133) /* useInappropriateConversationWarningsForChannel */.useInappropriateConversationWarningsForChannel(channelId);
+  const obj2 = require(10133) /* useInappropriateConversationWarningsForChannel */;
   if (null != inappropriateConversationSafetyToolsWarningForChannel) {
     if (!obj3.useShouldShowInitialSafetyToolsButtonTooltip(channelId)) {
-      if (!obj4.shouldShowTakeoverForWarnings(inappropriateConversationWarningsForChannel)) {
-        const someResult = inappropriateConversationWarningsForChannel.some((type) => type.type === outer1_2.INAPPROPRIATE_CONVERSATION_TIER_1);
+      if (!tmpResult.shouldShowTakeoverForWarnings(inappropriateConversationWarningsForChannel)) {
+        const someResult = inappropriateConversationWarningsForChannel.some((type) => type.type === closure_2.INAPPROPRIATE_CONVERSATION_TIER_1);
         const found = inappropriateConversationWarningsForChannel.filter((dismiss_timestamp) => null != dismiss_timestamp.dismiss_timestamp);
         const sorted = found.sort((dismiss_timestamp, dismiss_timestamp2) => {
           let num = 1;
@@ -37,9 +38,9 @@ export const useSafetyToolsButtonTooltipForChannel = function useSafetyToolsButt
           if (null == dismiss_timestamp) {
             {
               const found1 = inappropriateConversationWarningsForChannel.filter((dismiss_timestamp) => null == dismiss_timestamp.dismiss_timestamp);
-              let findLastResult = found1.findLast((type) => type.type === outer1_2.INAPPROPRIATE_CONVERSATION_TIER_1);
-              if (null == findLastResult) {
-                findLastResult = found1.findLast((type) => type.type === outer1_2.INAPPROPRIATE_CONVERSATION_TIER_2);
+              let findLastResult = found1.findLast((type) => type.type === closure_2.INAPPROPRIATE_CONVERSATION_TIER_1);
+              if (findLastResult == null) {
+                findLastResult = found1.findLast((type) => type.type === closure_2.INAPPROPRIATE_CONVERSATION_TIER_2);
               }
               return findLastResult;
             }
@@ -48,16 +49,13 @@ export const useSafetyToolsButtonTooltipForChannel = function useSafetyToolsButt
             const _Date = Date;
             const date = new Date(dismiss_timestamp);
             let time = date.getTime();
-            let _Date2 = time1.Date;
-            const prototype2 = _Date2.prototype;
-            const sum = time + (flag ? HOUR : closure_4);
-            _Date2 = new _Date2();
-            time = _Date2;
-            time1 = _Date2.getTime();
+            time = time + (flag ? HOUR : closure_4);
+            const date1 = new time1.Date();
+            time1 = date1.getTime();
           }
         }
       }
-      obj4 = require(10134) /* shouldShowTakeoverForWarnings */;
+      tmpResult = tmp(10155);
     }
   }
 };

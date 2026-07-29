@@ -1,29 +1,31 @@
-// Module ID: 9651
-// Function ID: 75151
+// Module ID: 9673
+// Function ID: 9674
 // Name: hideMediaKeyboardActionSheet
-// Dependencies: [27, 4133, 9652, 1935, 2]
+// Dependencies: [17, 4157, 9674, 1959, 2]
 // Exports: hideMediaKeyboardActionSheet, presentLimitedLibraryPicker, showMediaKeyboardActionSheet
 
-// Module 9651 (hideMediaKeyboardActionSheet)
+// Module 9673 (hideMediaKeyboardActionSheet)
 import { NativeModules } from "get ActivityIndicator";
 
+const MEDIA_KEYBOARD_ACTION_SHEET = "MEDIA_KEYBOARD_ACTION_SHEET";
 let result = require("MediaKeyboardActionSheet").fileFinishedImporting("modules/media_keyboard/native/showMediaKeyboardActionSheet.tsx");
 
 export const hideMediaKeyboardActionSheet = function hideMediaKeyboardActionSheet() {
-  importDefault(4133).hideActionSheet("MEDIA_KEYBOARD_ACTION_SHEET");
+  importDefault(4157).hideActionSheet(MEDIA_KEYBOARD_ACTION_SHEET);
 };
 export const showMediaKeyboardActionSheet = function showMediaKeyboardActionSheet(arg0) {
-  importDefault(4133).openLazy(require(1935) /* maybeLoadBundle */(9652, dependencyMap.paths), "MEDIA_KEYBOARD_ACTION_SHEET", arg0);
+  importDefault(4157).openLazy(require(1959) /* asyncRequireImpl */(9674, dependencyMap.paths), MEDIA_KEYBOARD_ACTION_SHEET, arg0);
 };
 export const presentLimitedLibraryPicker = function presentLimitedLibraryPicker() {
   const NativePermissionManager = NativeModules.NativePermissionManager;
   let result;
-  if (null != NativePermissionManager) {
-    if (null != NativePermissionManager.presentLimitedLibraryPicker) {
-      result = NativePermissionManager.presentLimitedLibraryPicker();
+  if (NativePermissionManager != null) {
+    const presentLimitedLibraryPicker = NativePermissionManager.presentLimitedLibraryPicker;
+    if (presentLimitedLibraryPicker != null) {
+      result = presentLimitedLibraryPicker();
     }
   }
-  if (null == result) {
+  if (result == null) {
     result = Promise.resolve();
   }
   return result;

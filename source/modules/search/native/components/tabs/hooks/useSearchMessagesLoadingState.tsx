@@ -1,12 +1,12 @@
-// Module ID: 15495
-// Function ID: 118094
+// Module ID: 15529
+// Function ID: 15530
 // Name: useSearchMessagesLoadingState
-// Dependencies: [5857, 10081, 9077, 15450, 566, 10082, 2]
+// Dependencies: [5875, 10102, 9101, 15484, 589, 10103, 2]
 // Exports: useSearchMessagesLoadingState
 
-// Module 15495 (useSearchMessagesLoadingState)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_3 from "_isNativeReflectConstruct";
+// Module 15529 (useSearchMessagesLoadingState)
+import handleReaction from "handleReaction";
+import prototype from "prototype";
 import { SEARCH_TABS_TO_SEARCH_QUERY_LIMITS as closure_4 } from "SearchAutocompleteSelectAnalyticsActions";
 
 const require = arg1;
@@ -18,25 +18,26 @@ export const useSearchMessagesLoadingState = function useSearchMessagesLoadingSt
   let placeholderHeight;
   let require;
   ({ searchContext: require, tab: dependencyMap } = arg0);
+  let handleReaction;
   ({ placeholderHeight, numColumns } = arg0);
-  let _isNativeReflectConstruct = require(15450) /* useFullscreenPlaceholderCount */.useFullscreenPlaceholderCount({ placeholderHeight, numColumns });
-  let obj = require(15450) /* useFullscreenPlaceholderCount */;
-  const items = [closure_3, _isNativeReflectConstruct];
-  return require(566) /* initialize */.useStateFromStoresObject(items, () => {
+  handleReaction = require(15484) /* useFullscreenPlaceholderCount */.useFullscreenPlaceholderCount({ placeholderHeight, numColumns });
+  let obj = require(15484) /* useFullscreenPlaceholderCount */;
+  const items = [prototype, handleReaction];
+  return require(589) /* initialize */.useStateFromStoresObject(items, () => {
     let obj = outer1_0(outer1_1[5]);
     const searchTabFetchId = obj.getSearchTabFetchId(closure_0, closure_1, outer1_3.getSearchResultsQuery(closure_0));
     const isInitialFetchComplete = store.getIsInitialFetchComplete(searchTabFetchId);
-    let isFetching = !tmp4;
-    if (!!isInitialFetchComplete) {
+    let isFetching = !tmp5;
+    if (isInitialFetchComplete) {
       isFetching = store.getIsFetching(searchTabFetchId);
     }
-    obj = { isFirstPageLoading: tmp4, isNextPageLoading: isFetching };
+    obj = { isFirstPageLoading: tmp5, isNextPageLoading: isFetching, placeholderCount: null };
     if (!isInitialFetchComplete) {
-      let num = Math.max(store, outer1_4[closure_1]);
+      let num = Math.max(store, outer1_4[tmp2]);
     } else {
       num = 0;
     }
-    obj.placeholderCount = num;
+    obj[2] = num;
     return obj;
   });
 };

@@ -1,133 +1,148 @@
-// Module ID: 12217
-// Function ID: 95476
+// Module ID: 12241
+// Function ID: 12242
 // Name: InstantInviteQRCodeActionSheet
-// Dependencies: [31, 27, 1838, 1850, 653, 33, 4165, 689, 5548, 566, 1212, 686, 3865, 5533, 5220, 12218, 4161, 2]
+// Dependencies: [19, 17, 1862, 1874, 676, 21, 4189, 712, 5566, 589, 1236, 709, 3889, 5551, 5242, 12242, 4185, 2]
 // Exports: default
 
-// Module 12217 (InstantInviteQRCodeActionSheet)
-import result from "result";
-import { View } from "get ActivityIndicator";
-import closure_5 from "_createForOfIteratorHelperLoose";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 12241 (InstantInviteQRCodeActionSheet)
+import noop from "noop";
+import { View } from "set";
+import createGuildRecordFromRust from "createGuildRecordFromRust";
+import mergeGuildAvatar from "mergeGuildAvatar";
 import ME from "ME";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_10;
-let closure_7;
-let closure_8;
-let closure_9;
+let c10;
+let c9;
+let error;
+let metroImportAll;
 const require = arg1;
-({ InstantInviteSources: closure_7, RelationshipTypes: closure_8 } = ME);
-({ jsx: closure_9, jsxs: closure_10 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { padding: require("_createForOfIteratorHelperLoose").space.PX_12, display: "flex", alignItems: "center", justifyContent: "center", gap: require("_createForOfIteratorHelperLoose").space.PX_24 };
-_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.iconContainer = { position: "absolute", top: 0, left: 0, right: 0, bottom: 0, justifyContent: "center", alignItems: "center" };
-let obj1 = { padding: require("_createForOfIteratorHelperLoose").space.PX_4, borderRadius: require("_createForOfIteratorHelperLoose").radii.lg + require("_createForOfIteratorHelperLoose").space.PX_4, backgroundColor: require("_createForOfIteratorHelperLoose").colors.WHITE };
-_createForOfIteratorHelperLoose.icon = obj1;
-_createForOfIteratorHelperLoose.code = { alignSelf: "center" };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/instant_invite/native/components/InstantInviteQRCodeActionSheet.tsx");
+({ InstantInviteSources: error, RelationshipTypes: metroImportAll } = ME);
+({ jsx: c9, jsxs: c10 } = jsxProd);
+createCacheKey = { container: null, iconContainer: null, icon: null, code: null };
+createCacheKey = { padding: require("Themes").space.PX_12, display: "flex", alignItems: "center", justifyContent: "center", gap: require("Themes").space.PX_24 };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { position: "absolute", top: 0, left: 0, right: 0, bottom: 0, justifyContent: "center", alignItems: "center" };
+let obj1 = { padding: require("Themes").space.PX_4, borderRadius: null, backgroundColor: null };
+obj1[1] = require("Themes").radii.lg + require("Themes").space.PX_4;
+obj1[2] = require("Themes").colors.WHITE;
+createCacheKey[2] = obj1;
+createCacheKey[3] = { alignSelf: "center" };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+const result = require("createGuildRecordFromRust").fileFinishedImporting("modules/instant_invite/native/components/InstantInviteQRCodeActionSheet.tsx");
 
 export default function InstantInviteQRCodeActionSheet(location) {
-  const tmp = _createForOfIteratorHelperLoose();
+  let _location;
+  let channel;
+  const tmp = createCacheKey();
   if (location.location === constants.ADD_FRIENDS_MODAL) {
-    let intl2 = require(1212) /* getSystemLocale */.intl;
-    let stringResult = intl2.string(require(1212) /* getSystemLocale */.t.VUNqoc);
+    const intl2 = presentFriendRequestAcceptedToast(1236).intl;
+    let stringResult = intl2.string(presentFriendRequestAcceptedToast(1236).t.VUNqoc);
+    let tmp6 = presentFriendRequestAcceptedToast;
   } else {
-    let intl = require(1212) /* getSystemLocale */.intl;
-    stringResult = intl.string(require(1212) /* getSystemLocale */.t.DqE26p);
+    const intl = presentFriendRequestAcceptedToast(1236).intl;
+    stringResult = intl.string(presentFriendRequestAcceptedToast(1236).t.DqE26p);
+    tmp6 = presentFriendRequestAcceptedToast;
   }
-  const tmp7 = (function useDescription(channel) {
-    channel = channel.channel;
-    let obj = outer1_0(outer1_2[9]);
-    const items = [outer1_6];
-    const stateFromStores = obj.useStateFromStores(items, () => outer2_6.getCurrentUser());
-    if (null != channel) {
-      const guild = outer1_5.getGuild(channel.guild_id);
-      if (null != guild) {
-        obj = {};
-        const intl3 = outer1_0(outer1_2[10]).intl;
-        obj = { name: guild.name };
-        obj.visible = intl3.format(outer1_0(outer1_2[10]).t.VK3zyF, obj);
-        const intl4 = outer1_0(outer1_2[10]).intl;
-        const obj1 = { name: guild.name };
-        obj.plainText = intl4.formatToPlainString(outer1_0(outer1_2[10]).t.VK3zyF, obj1);
-        return obj;
-      }
-    }
-    let tmp4 = null;
-    if (channel.location === outer1_7.ADD_FRIENDS_MODAL) {
-      tmp4 = null;
-      if (null != stateFromStores) {
-        const obj2 = {};
-        const intl = outer1_0(outer1_2[10]).intl;
-        const obj3 = { name: stateFromStores.username };
-        obj2.visible = intl.format(outer1_0(outer1_2[10]).t.zDGAfl, obj3);
-        const intl2 = outer1_0(outer1_2[10]).intl;
-        const obj4 = { name: stateFromStores.username };
-        obj2.plainText = intl2.formatToPlainString(outer1_0(outer1_2[10]).t.zDGAfl, obj4);
-        tmp4 = obj2;
-      }
-    }
-    return tmp4;
-  })(location);
-  let channel = location.channel;
-  let tmp8 = null;
+  ({ channel, location: _location } = location);
+  const items = [mergeGuildAvatar];
+  const stateFromStores = tmp6(589).useStateFromStores(items, () => currentUser.getCurrentUser());
   if (null != channel) {
-    tmp8 = null;
-    if (null != store.getGuild(channel.guild_id)) {
-      let obj = { guild: store.getGuild(channel.guild_id), size: require(5548) /* makeSizeStyle */.GuildIconSizes.LARGE };
-      tmp8 = callback(importDefault(5548), obj);
-      const tmp13 = importDefault(5548);
+    const guild = store.getGuild(channel.guild_id);
+    if (null != guild) {
+      let obj = { visible: null, plainText: null };
+      const intl5 = tmp6(1236).intl;
+      obj = { name: null };
+      obj[0] = guild.name;
+      obj[0] = intl5.format(tmp6(1236).t.VK3zyF, obj);
+      const intl6 = tmp6(1236).intl;
+      const obj1 = { name: null };
+      obj1[0] = guild.name;
+      obj[1] = intl6.formatToPlainString(tmp6(1236).t.VK3zyF, obj1);
+      let tmp12 = obj;
     }
-  }
-  (function useOnFriendAdded(presentFriendRequestAcceptedToast) {
-    let closure_0 = presentFriendRequestAcceptedToast;
-    const items = [presentFriendRequestAcceptedToast];
-    const effect = outer1_3.useEffect(() => {
+    const channel2 = location.channel;
+    let tmp13 = null;
+    if (null != channel2) {
+      let obj7 = store;
+      tmp13 = null;
+      if (null != store.getGuild(channel2.guild_id)) {
+        const obj2 = { guild: null, size: null };
+        obj2[0] = obj7.getGuild(channel2.guild_id);
+        obj2[1] = tmp6(5566).GuildIconSizes.LARGE;
+        tmp13 = callback(importDefault(5566), obj2);
+        const tmp16 = importDefault(5566);
+      }
+    }
+    presentFriendRequestAcceptedToast = tmp6(3889).presentFriendRequestAcceptedToast;
+    const items1 = [presentFriendRequestAcceptedToast];
+    const effect = React.useEffect(() => {
       function handleRelationshipAdd(relationship) {
         relationship = relationship.relationship;
-        if (relationship.type === outer3_8.FRIEND) {
+        if (relationship.type === outer1_8.FRIEND) {
           handleRelationshipAdd(relationship.user);
         }
       }
-      const subscription = outer2_1(outer2_2[11]).subscribe("RELATIONSHIP_ADD", handleRelationshipAdd);
+      const subscription = outer1_1(outer1_2[11]).subscribe("RELATIONSHIP_ADD", handleRelationshipAdd);
       return () => {
-        outer3_1(outer3_2[11]).unsubscribe("RELATIONSHIP_ADD", handleRelationshipAdd);
+        outer2_1(outer2_2[11]).unsubscribe("RELATIONSHIP_ADD", handleRelationshipAdd);
       };
-    }, items);
-  })(require(3865) /* presentAddedFriendToast */.presentFriendRequestAcceptedToast);
-  obj = {};
-  obj = { title: stringResult };
-  obj.header = callback(require(5220) /* RedesignBottomSheetTitleHeaderBase */.BottomSheetTitleHeader, obj);
-  let obj1 = { style: tmp.container };
-  let obj2 = {};
-  let obj3 = { text: location.link, size: 240, style: tmp.code };
-  let plainText;
-  if (null != tmp7) {
-    plainText = tmp7.plainText;
+    }, items1);
+    const obj3 = { header: null, children: null };
+    const obj4 = { title: null };
+    obj4[0] = stringResult;
+    obj3[0] = callback(tmp6(5242).BottomSheetTitleHeader, obj4);
+    const obj5 = { style: null, children: null };
+    obj5[0] = tmp.container;
+    const obj6 = { text: null, size: 240, style: null, accessibilityLabel: null };
+    obj6[0] = location.link;
+    obj6[2] = tmp.code;
+    let plainText;
+    if (tmp12 != null) {
+      plainText = tmp12.plainText;
+    }
+    obj6[3] = plainText;
+    const items2 = [callback(importDefault(12242), obj6), ];
+    let tmp19Result = null != tmp13;
+    if (tmp19Result) {
+      obj7 = { style: null, children: null };
+      obj7[0] = tmp.iconContainer;
+      const obj8 = { style: null, children: null };
+      obj8[0] = tmp.icon;
+      obj8[1] = tmp13;
+      obj7[1] = tmp19(tmp21, obj8);
+      tmp19Result = tmp19(tmp21, obj7);
+    }
+    const obj9 = { children: null };
+    items2[1] = tmp19Result;
+    obj9[0] = items2;
+    const items3 = [closure_10(View, obj9), ];
+    tmp19Result = null != tmp12;
+    if (tmp19Result) {
+      const obj10 = { variant: "text-md/normal", children: null };
+      obj10[1] = tmp12.visible;
+      tmp19Result = tmp19(tmp6(4185).Text, obj10);
+    }
+    items3[1] = tmp19Result;
+    obj5[1] = items3;
+    obj3[1] = closure_10(View, obj5);
+    return callback(tmp6(5551).ActionSheet, obj3);
   }
-  obj3.accessibilityLabel = plainText;
-  let items = [callback(importDefault(12218), obj3), ];
-  let tmp22 = null != tmp8;
-  if (tmp22) {
-    let obj4 = { style: tmp.iconContainer };
-    const obj5 = { style: tmp.icon, children: tmp8 };
-    obj4.children = callback(View, obj5);
-    tmp22 = callback(View, obj4);
+  tmp12 = null;
+  if (_location === constants.ADD_FRIENDS_MODAL) {
+    tmp12 = null;
+    if (null != stateFromStores) {
+      const obj11 = { visible: null, plainText: null };
+      const intl3 = tmp6(1236).intl;
+      const obj12 = { name: null };
+      obj12[0] = stateFromStores.username;
+      obj11[0] = intl3.format(tmp6(1236).t.zDGAfl, obj12);
+      const intl4 = tmp6(1236).intl;
+      const obj13 = { name: null };
+      obj13[0] = stateFromStores.username;
+      obj11[1] = intl4.formatToPlainString(tmp6(1236).t.zDGAfl, obj13);
+      tmp12 = obj11;
+    }
   }
-  items[1] = tmp22;
-  obj2.children = items;
-  const items1 = [closure_10(View, obj2), ];
-  let tmp25 = null != tmp7;
-  if (tmp25) {
-    const obj6 = { variant: "text-md/normal", children: tmp7.visible };
-    tmp25 = callback(require(4161) /* Text */.Text, obj6);
-  }
-  items1[1] = tmp25;
-  obj1.children = items1;
-  obj.children = closure_10(View, obj1);
-  return callback(require(5533) /* ActionSheet */.ActionSheet, obj);
 };

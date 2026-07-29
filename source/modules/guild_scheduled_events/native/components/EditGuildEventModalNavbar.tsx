@@ -1,55 +1,55 @@
-// Module ID: 8208
-// Function ID: 65697
+// Module ID: 8232
+// Function ID: 8233
 // Name: EditGuildEventModalNavbar
-// Dependencies: [57, 31, 27, 33, 4165, 8185, 1327, 5155, 4161, 1212, 6731, 7676, 2]
+// Dependencies: [32, 19, 17, 21, 4189, 8209, 1351, 5177, 4185, 1236, 6752, 7699, 2]
 // Exports: default
 
-// Module 8208 (EditGuildEventModalNavbar)
+// Module 8232 (EditGuildEventModalNavbar)
 import _slicedToArray from "_slicedToArray";
-import "result";
+import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_5;
+let c5;
 let closure_6;
 const require = arg1;
-({ jsx: closure_5, jsxs: closure_6 } = jsxProd);
-let closure_7 = _createForOfIteratorHelperLoose.createStyles({ header: { flexDirection: "row", alignItems: "center", justifyContent: "space-between", paddingHorizontal: 4, paddingVertical: 8 }, headerTitle: { lineHeight: 28, textTransform: "uppercase" }, buttonContainer: { width: 60 }, rightButton: { marginLeft: 12 } });
+({ jsx: c5, jsxs: closure_6 } = jsxProd);
+let closure_7 = createCacheKey.createStyles({ header: { flexDirection: "row", alignItems: "center", justifyContent: "space-between", paddingHorizontal: 4, paddingVertical: 8 }, headerTitle: { lineHeight: 28, textTransform: "uppercase" }, buttonContainer: { width: 60 }, rightButton: { marginLeft: 12 } });
 const result = require("get ActivityIndicator").fileFinishedImporting("modules/guild_scheduled_events/native/components/EditGuildEventModalNavbar.tsx");
 
 export default function EditGuildEventModalNavbar(screen) {
-  let tmp8;
-  let tmp9;
+  let tmp6;
+  let tmp7;
   screen = screen.screen;
   const tmp = callback4();
-  if (require(8185) /* recurrenceRuleToServer */.EditGuildEventScreens.CHANNEL_SELECTOR === screen) {
+  if (require(8209) /* EditGuildEventScreens */.EditGuildEventScreens.CHANNEL_SELECTOR === screen) {
     let items = [1, 3];
-  } else if (require(8185) /* recurrenceRuleToServer */.EditGuildEventScreens.DETAILS === screen) {
+  } else if (tmp2(8209).EditGuildEventScreens.DETAILS === screen) {
     items = [2, 3];
-  } else if (require(8185) /* recurrenceRuleToServer */.EditGuildEventScreens.PREVIEW === screen) {
+  } else if (tmp2(8209).EditGuildEventScreens.PREVIEW === screen) {
     items = [3, 3];
   } else {
-    let obj = require(1327) /* isDiscordFrontendDevelopment */;
-    obj.assertNever(screen);
+    tmp2(1351).assertNever(screen);
+    const tmp2Result = tmp2(1351);
   }
-  [tmp8, tmp9] = callback(items, 2);
-  obj = { top: true, style: tmp.header };
+  [tmp6, tmp7] = callback(items, 2);
+  let obj = { top: true, style: tmp.header, children: null };
   obj = { style: tmp.buttonContainer };
   const items1 = [callback2(View, obj), , ];
-  const obj1 = { style: tmp.headerTitle, variant: "text-xs/bold", color: "text-default" };
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj1.children = intl.format(require(1212) /* getSystemLocale */.t["42HaFY"], { step: tmp8, total: tmp9 });
-  items1[1] = callback2(require(4161) /* Text */.Text, obj1);
-  const obj2 = { style: tmp.buttonContainer };
-  const obj3 = {};
-  const intl2 = require(1212) /* getSystemLocale */.intl;
-  obj3.accessibilityLabel = intl2.string(require(1212) /* getSystemLocale */.t.cpT0Cq);
-  obj3.onPress = screen.onClose;
-  obj3.source = importDefault(7676);
-  obj3.style = tmp.rightButton;
-  obj2.children = callback2(require(6731) /* HeaderActionButton */.HeaderActionButton, obj3);
+  const obj1 = { style: tmp.headerTitle, variant: "text-xs/bold", color: "text-default", children: null };
+  const intl = tmp2(1236).intl;
+  obj1[3] = intl.format(require(1236) /* getSystemLocale */.t["42HaFY"], { step: tmp6, total: tmp7 });
+  items1[1] = callback2(require(4185) /* Text */.Text, obj1);
+  const obj2 = { style: tmp.buttonContainer, children: null };
+  const obj3 = { accessibilityLabel: null, onPress: null, source: null, style: null };
+  const intl2 = tmp2(1236).intl;
+  obj3[0] = intl2.string(require(1236) /* getSystemLocale */.t.cpT0Cq);
+  obj3[1] = screen.onClose;
+  obj3[2] = importDefault(7699);
+  obj3[3] = tmp.rightButton;
+  obj2[1] = callback2(require(6752) /* HeaderActionButton */.HeaderActionButton, obj3);
   items1[2] = callback2(View, obj2);
-  obj.children = items1;
-  return callback3(require(5155) /* SafeAreaPaddingView */.SafeAreaPaddingView, obj);
+  obj[2] = items1;
+  return callback3(require(5177) /* SafeAreaPaddingView */.SafeAreaPaddingView, obj);
 };

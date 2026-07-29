@@ -1,95 +1,101 @@
-// Module ID: 12546
-// Function ID: 96988
+// Module ID: 12568
+// Function ID: 12569
 // Name: GuildBoostingGuildListItem
-// Dependencies: [31, 27, 1838, 5005, 653, 33, 4165, 689, 4101, 566, 4072, 8316, 6669, 6484, 5548, 4161, 9624, 1212, 12515, 2]
+// Dependencies: [19, 17, 1862, 5027, 676, 21, 4189, 712, 4125, 589, 4096, 8340, 6690, 6505, 5566, 4185, 9646, 1236, 12537, 2]
 // Exports: default
 
-// Module 12546 (GuildBoostingGuildListItem)
-import "result";
-import get_ActivityIndicator from "get ActivityIndicator";
-import closure_5 from "_createForOfIteratorHelperLoose";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 12568 (GuildBoostingGuildListItem)
+import "set";
+import get_ActivityIndicator from "getSystemLocale";
+import createGuildRecordFromRust from "createGuildRecordFromRust";
+import insertUnsortedGuilds from "insertUnsortedGuilds";
 import { NUMBER_OF_GUILDS_TO_RECOMMEND_BOOSTING as closure_7 } from "ME";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_3;
-let closure_4;
-let closure_8;
-let closure_9;
+let c3;
+let c4;
+let c9;
+let metroImportAll;
 const require = arg1;
 function GuildBoostingGuildListItem(guildId) {
   guildId = guildId.guildId;
-  const tmp = _createForOfIteratorHelperLoose();
-  let obj = guildId(566);
-  const items = [closure_5];
+  const tmp = createCacheKey();
+  let obj = guildId(589);
+  const items = [createGuildRecordFromRust];
   const stateFromStores = obj.useStateFromStores(items, () => outer1_5.getGuild(guildId));
-  importDefault(4072);
-  if (null != stateFromStores) {
+  importDefault(4096);
+  if (stateFromStores != null) {
     const id = stateFromStores.id;
   }
-  let tmp6 = null;
+  let tmp9 = null;
   if (null != stateFromStores) {
-    obj = {
-      style: tmp.guildCard,
-      activeOpacity: 0.5,
-      onPress() {
-          guildId(outer1_2[12]).transitionToGuild(guildId, { state: { shouldShowSubscribeTooltip: true } });
-          const obj = guildId(outer1_2[12]);
-          outer1_1(outer1_2[13]).close();
-        }
+    obj = { style: null, activeOpacity: 0.5, onPress: null, children: null };
+    obj[0] = tmp.guildCard;
+    obj[2] = function onPress() {
+      guildId(outer1_2[12]).transitionToGuild(guildId, { state: { shouldShowSubscribeTooltip: true } });
+      const obj = guildId(outer1_2[12]);
+      outer1_1(outer1_2[13]).close();
     };
-    obj = { guild: stateFromStores };
-    const tmp10 = importDefault(8316);
-    obj.size = guildId(5548).GuildIconSizes.LARGE;
-    obj.style = tmp.guildIcon;
-    obj.selected = false;
-    const items1 = [callback(importDefault(5548), obj), , ];
-    const obj1 = { style: tmp.guildCardDescription };
-    const obj2 = { variant: "text-md/bold", children: stateFromStores.name };
-    const items2 = [callback(guildId(4161).Text, obj2), ];
-    const obj3 = { style: tmp.subscriptionInfo };
-    const obj4 = { source: importDefault(9624), style: tmp.premiumGuildImage, resizeMode: "contain", resizeMethod: "resize" };
+    let tmp2Result = tmp2(8340);
+    obj = { guild: null, size: null, style: null, selected: false };
+    obj[0] = stateFromStores;
+    tmp2Result = tmp2(5566);
+    obj[1] = tmp5(5566).GuildIconSizes.LARGE;
+    obj[2] = tmp.guildIcon;
+    const items1 = [callback(tmp2Result, obj), , ];
+    const obj1 = { style: null, children: null };
+    obj1[0] = tmp.guildCardDescription;
+    const obj2 = { variant: "text-md/bold", children: null };
+    obj2[1] = stateFromStores.name;
+    const items2 = [callback(tmp5(4185).Text, obj2), ];
+    const obj3 = { style: null, children: null };
+    obj3[0] = tmp.subscriptionInfo;
+    const obj4 = { source: null, style: null, resizeMode: "contain", resizeMethod: "resize" };
+    obj4[0] = tmp2(9646);
+    obj4[1] = tmp.premiumGuildImage;
     const items3 = [callback(closure_4, obj4), ];
-    const obj5 = { variant: "text-xs/medium" };
-    const intl = guildId(1212).intl;
-    const obj6 = { subscriberCount: tmp5 };
-    obj5.children = intl.format(guildId(1212).t.If4iTS, obj6);
-    items3[1] = callback(guildId(4161).Text, obj5);
-    obj3.children = items3;
+    const obj5 = { variant: "text-xs/medium", children: null };
+    const intl = tmp5(1236).intl;
+    const obj6 = { subscriberCount: null };
+    obj6[0] = tmp8;
+    obj5[1] = intl.format(tmp5(1236).t.If4iTS, obj6);
+    items3[1] = callback(tmp5(4185).Text, obj5);
+    obj3[1] = items3;
     items2[1] = callback2(closure_3, obj3);
-    obj1.children = items2;
+    obj1[1] = items2;
     items1[1] = callback2(closure_3, obj1);
-    const obj7 = { guild: stateFromStores, theme: tmp2 };
-    items1[2] = callback(importDefault(12515), obj7);
-    obj.children = items1;
-    tmp6 = callback2(tmp10, obj);
-    const tmp12 = importDefault(5548);
+    const obj7 = { guild: null, theme: null };
+    obj7[0] = stateFromStores;
+    obj7[1] = tmp4;
+    items1[2] = callback(tmp2(12537), obj7);
+    obj[3] = items1;
+    tmp9 = callback2(tmp2Result, obj);
   }
-  return tmp6;
+  return tmp9;
 }
-({ View: closure_3, Image: closure_4 } = get_ActivityIndicator);
-({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { padding: 12, paddingLeft: 16, borderRadius: require("_createForOfIteratorHelperLoose").radii.xs, marginBottom: 8, minHeight: 96, flexDirection: "row", justifyContent: "center", alignItems: "center", backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWEST };
-_createForOfIteratorHelperLoose.guildCard = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.guildIcon = { marginRight: 16 };
-_createForOfIteratorHelperLoose.guildCardDescription = { flex: 1 };
-_createForOfIteratorHelperLoose.subscriptionInfo = { flexDirection: "row", alignItems: "center" };
-_createForOfIteratorHelperLoose.premiumGuildImage = { width: 18, height: 12, marginLeft: -5 };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("components_native/premium/GuildBoostingGuildList.tsx");
+({ View: c3, Image: c4 } = get_ActivityIndicator);
+({ jsx: metroImportAll, jsxs: c9 } = jsxProd);
+createCacheKey = { guildCard: null, guildIcon: null, guildCardDescription: null, subscriptionInfo: null, premiumGuildImage: null };
+createCacheKey = { padding: 12, paddingLeft: 16, borderRadius: require("Themes").radii.xs, marginBottom: 8, minHeight: 96, flexDirection: "row", justifyContent: "center", alignItems: "center", backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOWEST };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { marginRight: 16 };
+createCacheKey[2] = { flex: 1 };
+createCacheKey[3] = { flexDirection: "row", alignItems: "center" };
+createCacheKey[4] = { width: 18, height: 12, marginLeft: -5 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+const result = require("createGuildRecordFromRust").fileFinishedImporting("components_native/premium/GuildBoostingGuildList.tsx");
 
 export default function GuildBoostingGuildList(guildCount) {
   guildCount = guildCount.guildCount;
   if (guildCount === undefined) {
     guildCount = closure_7;
   }
-  let obj = require(566) /* initialize */;
-  const items = [_isNativeReflectConstruct];
-  const stateFromStores = obj.useStateFromStores(items, () => outer1_6.getFlattenedGuildIds());
-  obj = { style: guildCount.style };
+  let obj = require(589) /* initialize */;
+  const items = [insertUnsortedGuilds];
+  const stateFromStores = obj.useStateFromStores(items, () => flattenedGuildIds.getFlattenedGuildIds());
+  obj = { style: guildCount.style, children: null };
   const substr = stateFromStores.slice(0, guildCount);
-  obj.children = substr.map((guildId) => outer1_8(outer1_11, { guildId }, guildId));
+  obj[1] = substr.map((guildId) => callback(closure_11, { guildId }, guildId));
   return callback(closure_3, obj);
 };

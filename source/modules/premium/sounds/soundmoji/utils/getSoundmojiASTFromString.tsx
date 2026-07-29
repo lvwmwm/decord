@@ -1,27 +1,116 @@
-// Module ID: 4612
-// Function ID: 40251
-// Name: getSoundmojiFromMessage
-// Dependencies: [4613, 4384, 653, 4617, 4618, 4619, 4621, 1392, 2]
-// Exports: default
+// Module ID: 4634
+// Function ID: 4635
+// Name: getSoundmojiASTFromString
+// Dependencies: [4635, 4407, 676, 4639, 4640, 4641, 4643, 1416, 2]
+// Exports: default, getSoundmojiFromMessage
 
-// Module 4612 (getSoundmojiFromMessage)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_4 from "_isNativeReflectConstruct";
+// Module 4634 (getSoundmojiASTFromString)
+import handleSoundCreateOrUpdate from "handleSoundCreateOrUpdate";
+import reinjectEphemerals from "reinjectEphemerals";
 import { MessageStates } from "ME";
 
 const require = arg1;
-function getSoundmojiFromMessage(guildId, channelId, messageId, soundId, soundboardSounds) {
+const result = require("ME").fileFinishedImporting("modules/premium/sounds/soundmoji/utils/getSoundmojiASTFromString.tsx");
+
+export default function getSoundmojiASTFromString(soundId, guildId) {
+  let channelId;
+  let messageId;
+  let soundboardSounds;
+  ({ channelId, messageId, soundboardSounds } = guildId);
+  let obj = require(4639) /* getSoundmojiRenderingExperiment */;
+  let tmp5;
   if (obj.getSoundmojiRenderingExperiment({ location: "getSoundmojiASTFromString" })) {
-    soundById = soundById.getSoundById(soundId);
-    const tmp6 = importDefault(4618)(soundById, guildId, channelId);
+    const soundById = store.getSoundById(tmp2);
+    const tmp9 = importDefault(4640)(soundById, guildId.guildId, channelId);
     if (null != messageId) {
       if (null != channelId) {
-        const tmp15 = importDefault(4619)(channelId, messageId, soundId, soundboardSounds);
-        if (tmp6) {
-          if (null == tmp15) {
-            message = message.getMessage(channelId, messageId);
+        const tmp16 = tmp8(4641)(channelId, messageId, tmp2, soundboardSounds);
+        tmp5 = tmp16;
+        if (tmp9) {
+          tmp5 = tmp16;
+          if (null == tmp16) {
+            const message = store2.getMessage(channelId, messageId);
             let state;
-            if (null != message) {
+            if (message != null) {
+              state = message.state;
+            }
+            tmp5 = tmp16;
+            if (state !== MessageStates.SENT) {
+              tmp5 = soundById;
+            }
+          }
+        }
+      }
+    }
+    if (tmp9) {
+      let tmp11;
+      if (null != soundById) {
+        tmp11 = soundById;
+      }
+      tmp5 = tmp11;
+    }
+    tmp8 = importDefault;
+  }
+  if (null == tmp5) {
+    obj = { type: "text", content: null };
+    obj[1] = importDefault(4643)(tmp, tmp2);
+    return obj;
+  } else {
+    let name;
+    if (tmp5 != null) {
+      name = tmp5.name;
+    }
+    if (name == null) {
+      name = tmp2;
+    }
+    obj = { type: "soundboard", soundId: null, guildId: null, messageId: null, channelId: null, content: null, emojiId: null, emojiName: null, emojiSrc: null };
+    obj[1] = tmp2;
+    obj[2] = tmp;
+    ({ messageId: obj2[3], channelId: obj2[4] } = guildId);
+    obj[5] = name;
+    let emojiId;
+    if (tmp5 != null) {
+      emojiId = tmp5.emojiId;
+    }
+    obj[6] = emojiId;
+    let emojiName;
+    if (tmp5 != null) {
+      emojiName = tmp5.emojiName;
+    }
+    obj[7] = emojiName;
+    let emojiId1;
+    if (tmp5 != null) {
+      emojiId1 = tmp5.emojiId;
+    }
+    let emojiURL;
+    if (null != emojiId1) {
+      let emojiId2;
+      if (tmp5 != null) {
+        emojiId2 = tmp5.emojiId;
+      }
+      const obj1 = { id: null, animated: false, size: 16 };
+      obj1[0] = emojiId2;
+      emojiURL = tmp3(1416).getEmojiURL(obj1);
+      const tmp3Result = tmp3(1416);
+    }
+    obj[8] = emojiURL;
+    return obj;
+  }
+  tmp3 = require;
+};
+export const soundmojiRawFormatRegex = /^<sound:(\d+):(\d+)>/;
+export const getSoundmojiFromMessage = function getSoundmojiFromMessage(guildId, channelId, messageId, soundId, arg4) {
+  if (obj.getSoundmojiRenderingExperiment({ location: "getSoundmojiASTFromString" })) {
+    const soundById = store.getSoundById(soundId);
+    const tmp9 = importDefault(4640)(soundById, guildId, channelId);
+    if (null != messageId) {
+      if (null != channelId) {
+        const tmp16 = tmp8(4641)(channelId, messageId, soundId, arg4);
+        if (tmp9) {
+          if (null == tmp16) {
+            const message = store2.getMessage(channelId, messageId);
+            let state;
+            if (message != null) {
               state = message.state;
             }
             if (state !== MessageStates.SENT) {
@@ -29,65 +118,16 @@ function getSoundmojiFromMessage(guildId, channelId, messageId, soundId, soundbo
             }
           }
         }
-        return tmp15;
+        return tmp16;
       }
     }
-    if (tmp6) {
-      let tmp8;
+    if (tmp9) {
+      let tmp11;
       if (null != soundById) {
-        tmp8 = soundById;
+        tmp11 = soundById;
       }
-      return tmp8;
+      return tmp11;
     }
-  }
-}
-const result = require("ME").fileFinishedImporting("modules/premium/sounds/soundmoji/utils/getSoundmojiASTFromString.tsx");
-
-export default function getSoundmojiASTFromString(soundId, guildId) {
-  const tmp3 = getSoundmojiFromMessage(guildId.guildId, guildId.channelId, guildId.messageId, soundId[2], guildId.soundboardSounds);
-  if (null == tmp3) {
-    let obj = { type: "text", content: importDefault(4621)(tmp, tmp2) };
-    return obj;
-  } else {
-    let name;
-    if (null != tmp3) {
-      name = tmp3.name;
-    }
-    let tmp5 = tmp2;
-    if (null != name) {
-      tmp5 = name;
-    }
-    obj = { type: "soundboard", soundId: tmp2, guildId: tmp };
-    ({ messageId: obj.messageId, channelId: obj.channelId } = guildId);
-    obj.content = tmp5;
-    let emojiId;
-    if (null != tmp3) {
-      emojiId = tmp3.emojiId;
-    }
-    obj.emojiId = emojiId;
-    let emojiName;
-    if (null != tmp3) {
-      emojiName = tmp3.emojiName;
-    }
-    obj.emojiName = emojiName;
-    let emojiId1;
-    if (null != tmp3) {
-      emojiId1 = tmp3.emojiId;
-    }
-    let emojiURL;
-    if (null != emojiId1) {
-      obj = { id: null, animated: false, size: 16 };
-      let emojiId2;
-      if (null != tmp3) {
-        emojiId2 = tmp3.emojiId;
-      }
-      obj.id = emojiId2;
-      emojiURL = require(1392) /* getAvatarURL */.getEmojiURL(obj);
-      const obj2 = require(1392) /* getAvatarURL */;
-    }
-    obj.emojiSrc = emojiURL;
-    return obj;
+    tmp8 = importDefault;
   }
 };
-export const soundmojiRawFormatRegex = /^<sound:(\d+):(\d+)>/;
-export { getSoundmojiFromMessage };

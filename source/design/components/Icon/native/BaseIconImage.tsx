@@ -1,16 +1,16 @@
-// Module ID: 3868
-// Function ID: 32108
+// Module ID: 3892
+// Function ID: 3893
 // Name: BaseIconImage
-// Dependencies: [31, 27, 33, 3869, 2]
+// Dependencies: [19, 17, 21, 3893, 2]
 // Exports: BaseIconImage
 
-// Module 3868 (BaseIconImage)
-import "result";
+// Module 3892 (BaseIconImage)
+import "noop";
 import { Image } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
 
 const require = arg1;
-let closure_4 = { xxs: { width: 12, height: 12 }, xs: { width: 16, height: 16 }, sm: { width: 18, height: 18 }, md: { width: 24, height: 24 }, lg: { width: 32, height: 32 }, custom: { width: undefined, height: undefined }, refresh_sm: { width: 18, height: 18 } };
+let closure_4 = { xxs: { width: 12, height: 12 }, xs: { width: 16, height: 16 }, sm: { width: 18, height: 18 }, md: { width: 24, height: 24 }, lg: { width: 32, height: 32 }, custom: { width: "dispatch", height: "isArray" }, refresh_sm: { width: 18, height: 18 } };
 const result = require("jsxProd").fileFinishedImporting("design/components/Icon/native/BaseIconImage.tsx");
 
 export const BaseIconImage = function BaseIconImage(source) {
@@ -24,20 +24,19 @@ export const BaseIconImage = function BaseIconImage(source) {
   }
   const color = source.color;
   ({ resizeMode, style, accessible, accessibilityLabel } = source);
-  let obj = require(3869) /* map */;
+  let obj = require(3893) /* map */;
   const token = obj.useToken(color);
   if (null != token) {
-    obj = { tintColor: token };
+    obj = { tintColor: null };
+    obj[0] = token;
     let tmp3 = obj;
   } else {
-    let tmp2 = null != color;
     if (tmp2) {
-      tmp2 = "string" === typeof color;
-    }
-    if (tmp2) {
-      obj = { tintColor: color };
+      obj = { tintColor: null };
+      obj[0] = color;
       tmp3 = obj;
     }
+    tmp2 = null != color && typeof color === "y";
   }
   style = [table[str], tmp3, ];
   style[2] = style;

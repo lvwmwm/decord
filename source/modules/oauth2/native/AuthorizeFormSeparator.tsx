@@ -1,19 +1,19 @@
-// Module ID: 8989
-// Function ID: 70785
+// Module ID: 9013
+// Function ID: 9014
 // Name: AuthorizeFormSeparator
-// Dependencies: [27, 33, 4165, 689, 2]
+// Dependencies: [17, 21, 4189, 712, 2]
 // Exports: AuthorizeFormSeparator
 
-// Module 8989 (AuthorizeFormSeparator)
+// Module 9013 (AuthorizeFormSeparator)
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let obj = {};
-obj = { height: 1, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BORDER_SUBTLE };
-obj.separator = obj;
-let closure_2 = _createForOfIteratorHelperLoose.createStyles(obj);
-const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/oauth2/native/AuthorizeFormSeparator.tsx");
+let obj = { separator: null };
+obj = { height: 1, backgroundColor: require("Themes").colors.BORDER_SUBTLE };
+obj[0] = obj;
+let closure_2 = createCacheKey.createStyles(obj);
+const result = require("createCacheKey").fileFinishedImporting("modules/oauth2/native/AuthorizeFormSeparator.tsx");
 
 export const AuthorizeFormSeparator = function AuthorizeFormSeparator() {
   return <View style={callback().separator} />;

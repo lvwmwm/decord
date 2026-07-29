@@ -1,45 +1,43 @@
-// Module ID: 9674
-// Function ID: 75267
+// Module ID: 9696
+// Function ID: 9697
 // Name: MediaKeyboardEmptyState
-// Dependencies: [31, 27, 4379, 33, 4165, 689, 4161, 4578, 8987, 1212, 9675, 9669, 9676, 2]
+// Dependencies: [19, 17, 4402, 21, 4189, 712, 4185, 4600, 9011, 1236, 9697, 9691, 9698, 2]
 // Exports: getMediaEmptyStateComponentOrNull
 
-// Module 9674 (MediaKeyboardEmptyState)
-import "result";
+// Module 9696 (MediaKeyboardEmptyState)
+import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { NativePermissionStatus } from "NativePermissionStatus";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_3;
-let closure_4;
+let c3;
+let c4;
 let closure_6;
-let closure_7;
+let error;
 const require = arg1;
 class MediaKeyboardEmptyState {
   constructor(arg0) {
     ({ actionIcon, actionLabel, actionPress, imageSource, label } = global);
-    tmp = c8();
-    obj = { style: tmp.container };
+    tmp = jsxs();
+    obj = { style: tmp.container, children: null };
     items = [, , ];
     items[0] = jsx(Image, { source: imageSource });
-    obj = { variant: "text-sm/semibold", color: "text-muted" };
-    obj.style = tmp.label;
-    obj.children = label;
+    obj = { variant: "text-sm/semibold", color: "text-muted", style: tmp.label, children: label };
     items[1] = jsx(require("Text").Text, obj);
     items[2] = jsx(require("Button").Button, { icon: actionIcon, size: "sm", text: actionLabel, onPress: actionPress });
-    obj.children = items;
+    obj[1] = items;
     return jsxs(View, obj);
   }
 }
-({ Image: closure_3, View: closure_4 } = get_ActivityIndicator);
-({ jsx: closure_6, jsxs: closure_7 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { marginHorizontal: require("_createForOfIteratorHelperLoose").space.PX_8, marginVertical: require("_createForOfIteratorHelperLoose").space.PX_32, justifyContent: "center", alignItems: "center" };
-_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.label = { textAlign: "center", marginVertical: require("_createForOfIteratorHelperLoose").space.PX_16 };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-const obj1 = { textAlign: "center", marginVertical: require("_createForOfIteratorHelperLoose").space.PX_16 };
+({ Image: c3, View: c4 } = get_ActivityIndicator);
+({ jsx: closure_6, jsxs: error } = jsxProd);
+createCacheKey = { container: null, label: null };
+createCacheKey = { marginHorizontal: require("Themes").space.PX_8, marginVertical: require("Themes").space.PX_32, justifyContent: "center", alignItems: "center" };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { textAlign: "center", marginVertical: require("Themes").space.PX_16 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+const obj1 = { textAlign: "center", marginVertical: require("Themes").space.PX_16 };
 const result = require("NativePermissionStatus").fileFinishedImporting("modules/media_keyboard/native/components/MediaKeyboardEmptyState.tsx");
 
 export default MediaKeyboardEmptyState;
@@ -51,36 +49,38 @@ export const getMediaEmptyStateComponentOrNull = function getMediaEmptyStateComp
     showCameraButton = true;
   }
   if (photoPermissionStatus !== NativePermissionStatus.DENIED) {
-    if (photoPermissionStatus !== NativePermissionStatus.RESTRICTED) {
+    if (photoPermissionStatus !== tmp3.RESTRICTED) {
       if (photosEmpty.photosEmpty) {
-        if (photoPermissionStatus === NativePermissionStatus.LIMITED) {
-          let obj = { actionIcon: callback(require(8987) /* SettingsIcon */.SettingsIcon, { color: "white", size: "sm" }) };
-          const intl3 = require(1212) /* getSystemLocale */.intl;
-          obj.actionLabel = intl3.string(require(1212) /* getSystemLocale */.t.JuXTi6);
-          obj.actionPress = tmp2;
-          obj.imageSource = importDefault(9675);
-          const intl4 = require(1212) /* getSystemLocale */.intl;
-          obj.label = intl4.string(require(1212) /* getSystemLocale */.t["5g7NcN"]);
+        if (photoPermissionStatus === tmp3.LIMITED) {
+          let obj = { actionIcon: null, actionLabel: null, actionPress: null, imageSource: null, label: null };
+          obj[0] = callback(require(9011) /* SettingsIcon */.SettingsIcon, { color: "white", size: "sm" });
+          const intl3 = require(1236) /* getSystemLocale */.intl;
+          obj[1] = intl3.string(require(1236) /* getSystemLocale */.t.JuXTi6);
+          obj[2] = tmp2;
+          obj[3] = importDefault(9697);
+          const intl4 = require(1236) /* getSystemLocale */.intl;
+          obj[4] = intl4.string(require(1236) /* getSystemLocale */.t["5g7NcN"]);
           return callback(MediaKeyboardEmptyState, obj);
         } else if (showCameraButton) {
-          obj = { actionIcon: callback(require(9669) /* CameraIcon */.CameraIcon, { color: "white", size: "sm" }) };
-          const intl = require(1212) /* getSystemLocale */.intl;
-          obj.actionLabel = intl.string(require(1212) /* getSystemLocale */.t.tpoWUd);
-          obj.actionPress = tmp;
-          obj.imageSource = importDefault(9676);
-          const intl2 = require(1212) /* getSystemLocale */.intl;
-          obj.label = intl2.string(require(1212) /* getSystemLocale */.t.YOvRBZ);
+          obj = { actionIcon: null, actionLabel: null, actionPress: null, imageSource: null, label: null };
+          obj[0] = callback(require(9691) /* CameraIcon */.CameraIcon, { color: "white", size: "sm" });
+          const intl = require(1236) /* getSystemLocale */.intl;
+          obj[1] = intl.string(require(1236) /* getSystemLocale */.t.tpoWUd);
+          obj[2] = tmp;
+          obj[3] = importDefault(9698);
+          const intl2 = require(1236) /* getSystemLocale */.intl;
+          obj[4] = intl2.string(require(1236) /* getSystemLocale */.t.YOvRBZ);
           return callback(MediaKeyboardEmptyState, obj);
         }
       }
     }
   }
-  obj = { actionIcon: callback(require(8987) /* SettingsIcon */.SettingsIcon, { color: "white", size: "sm" }) };
-  const intl5 = require(1212) /* getSystemLocale */.intl;
-  obj.actionLabel = intl5.string(require(1212) /* getSystemLocale */.t["457oeG"]);
-  obj.actionPress = photosEmpty.onPressPrivacySettings;
-  obj.imageSource = importDefault(9675);
-  const intl6 = require(1212) /* getSystemLocale */.intl;
-  obj.label = intl6.string(require(1212) /* getSystemLocale */.t["8p9jGu"]);
+  obj = { actionIcon: callback(require(9011) /* SettingsIcon */.SettingsIcon, { color: "white", size: "sm" }), actionLabel: null, actionPress: null, imageSource: null, label: null };
+  const intl5 = require(1236) /* getSystemLocale */.intl;
+  obj[1] = intl5.string(require(1236) /* getSystemLocale */.t["457oeG"]);
+  obj[2] = photosEmpty.onPressPrivacySettings;
+  obj[3] = importDefault(9697);
+  const intl6 = require(1236) /* getSystemLocale */.intl;
+  obj[4] = intl6.string(require(1236) /* getSystemLocale */.t["8p9jGu"]);
   return callback(MediaKeyboardEmptyState, obj);
 };

@@ -1,78 +1,84 @@
-// Module ID: 14345
-// Function ID: 110010
+// Module ID: 14367
+// Function ID: 14368
 // Name: DisplayNameStylesColorPickerSheet
-// Dependencies: [57, 31, 27, 1862, 653, 33, 4165, 689, 7928, 8362, 4134, 4133, 13674, 675, 5221, 5220, 1212, 2557, 4578, 22, 665, 1863, 14343, 2]
+// Dependencies: [32, 19, 17, 1886, 676, 21, 4189, 712, 7953, 8386, 4158, 4157, 13695, 698, 5243, 5242, 1236, 2581, 4600, 12, 688, 1887, 14365, 2]
 // Exports: default
 
-// Module 14345 (DisplayNameStylesColorPickerSheet)
+// Module 14367 (DisplayNameStylesColorPickerSheet)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
-import get_ActivityIndicator from "get ActivityIndicator";
+import apply from "apply";
+import get_ActivityIndicator from "messagesProxy";
 import { getColorPresetsForEffect } from "items3";
 import { AnalyticEvents } from "ME";
-import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import jsxProd from "DisplayNameEffect";
+import createCacheKey from "createCacheKey";
 
-let closure_10;
-let closure_5;
+let c10;
+let c5;
+let c9;
 let closure_6;
-let closure_9;
 const require = arg1;
-({ View: closure_5, Pressable: closure_6 } = get_ActivityIndicator);
-({ jsx: closure_9, jsxs: closure_10 } = jsxProd);
-_createForOfIteratorHelperLoose = { header: { paddingTop: 4 }, headerTrailing: { justifyContent: "center", alignItems: "center" }, container: { flex: 1 } };
-_createForOfIteratorHelperLoose = { paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16, paddingBottom: require("_createForOfIteratorHelperLoose").space.PX_16 };
-_createForOfIteratorHelperLoose.contentContainer = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.presetGrid = { gap: require("_createForOfIteratorHelperLoose").space.PX_16, marginBottom: require("_createForOfIteratorHelperLoose").space.PX_16 };
-let obj2 = { gap: require("_createForOfIteratorHelperLoose").space.PX_16, flexDirection: "row", justifyContent: "center" };
-_createForOfIteratorHelperLoose.presetRow = obj2;
-let obj3 = { width: 40, height: 40, borderRadius: require("_createForOfIteratorHelperLoose").radii.sm, borderWidth: 2, borderColor: "transparent" };
-_createForOfIteratorHelperLoose.presetColor = obj3;
-let obj1 = { gap: require("_createForOfIteratorHelperLoose").space.PX_16, marginBottom: require("_createForOfIteratorHelperLoose").space.PX_16 };
-_createForOfIteratorHelperLoose.presetColorSelected = { borderColor: require("_createForOfIteratorHelperLoose").colors.CONTROL_BRAND_FOREGROUND };
-let obj4 = { borderColor: require("_createForOfIteratorHelperLoose").colors.CONTROL_BRAND_FOREGROUND };
-_createForOfIteratorHelperLoose.buttonsContainer = { flexDirection: "row", gap: require("_createForOfIteratorHelperLoose").space.PX_16 };
-_createForOfIteratorHelperLoose.button = { flex: 1 };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-let obj5 = { flexDirection: "row", gap: require("_createForOfIteratorHelperLoose").space.PX_16 };
+({ View: c5, Pressable: closure_6 } = get_ActivityIndicator);
+({ jsx: c9, jsxs: c10 } = jsxProd);
+createCacheKey = { header: { paddingTop: 4 }, headerTrailing: { justifyContent: "center", alignItems: "center" }, container: { flex: 1 }, contentContainer: null, presetGrid: null, presetRow: null, presetColor: null, presetColorSelected: null, buttonsContainer: null, button: null };
+createCacheKey = { paddingHorizontal: require("Themes").space.PX_16, paddingBottom: require("Themes").space.PX_16 };
+createCacheKey[3] = createCacheKey;
+createCacheKey[4] = { gap: require("Themes").space.PX_16, marginBottom: require("Themes").space.PX_16 };
+let obj1 = { gap: require("Themes").space.PX_16, marginBottom: require("Themes").space.PX_16 };
+createCacheKey[5] = { gap: require("Themes").space.PX_16, flexDirection: "row", justifyContent: "center" };
+let obj2 = { gap: require("Themes").space.PX_16, flexDirection: "row", justifyContent: "center" };
+createCacheKey[6] = { width: 40, height: 40, borderRadius: require("Themes").radii.sm, borderWidth: 2, borderColor: "transparent" };
+let obj3 = { width: 40, height: 40, borderRadius: require("Themes").radii.sm, borderWidth: 2, borderColor: "transparent" };
+createCacheKey[7] = { borderColor: require("Themes").colors.CONTROL_BRAND_FOREGROUND };
+let obj4 = { borderColor: require("Themes").colors.CONTROL_BRAND_FOREGROUND };
+createCacheKey[8] = { flexDirection: "row", gap: require("Themes").space.PX_16 };
+createCacheKey[9] = { flex: 1 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let obj5 = { flexDirection: "row", gap: require("Themes").space.PX_16 };
 let result = require("get ActivityIndicator").fileFinishedImporting("modules/display_name_styles/native/DisplayNameStylesColorPickerSheet.tsx");
 
 export default function DisplayNameStylesColorPickerSheet(selectedColor) {
   selectedColor = selectedColor.selectedColor;
   const selectedEffectId = selectedColor.selectedEffectId;
   const onSelectColor = selectedColor.onSelectColor;
-  let tmp = _createForOfIteratorHelperLoose();
-  let callback = tmp;
+  let callback;
+  let React;
+  let first;
+  let closure_6;
+  let memo1;
+  let closure_8;
+  let tmp = createCacheKey();
+  callback = tmp;
   let obj = selectedColor(onSelectColor[8]);
-  let tmp2 = selectedEffectId(onSelectColor[9])()[selectedEffectId];
-  const React = tmp2;
+  let tmp5 = selectedEffectId(onSelectColor[9])()[selectedEffectId];
+  React = tmp5;
   let items = [selectedEffectId];
   const memo = React.useMemo(() => memo1(selectedEffectId).map((arg0) => arg0[0]), items);
-  const tmp3 = callback(React.useState(selectedColor), 2);
-  const first = tmp3[0];
-  let closure_6 = tmp3[1];
+  let tmp6 = callback(React.useState(selectedColor), 2);
+  first = tmp6[0];
+  closure_6 = tmp6[1];
   const items1 = [first, selectedColor];
-  const memo1 = React.useMemo(() => first !== selectedColor, items1);
-  let closure_8 = React.useCallback((arg0) => {
+  memo1 = React.useMemo(() => first !== selectedColor, items1);
+  closure_8 = React.useCallback((arg0) => {
     callback(arg0);
   }, []);
-  const items2 = [tmp2, onSelectColor];
+  const items2 = [tmp5, onSelectColor];
   const items3 = [first, onSelectColor];
   callback = React.useCallback(() => {
     const result = selectedColor(onSelectColor[10]).triggerHapticFeedback(selectedColor(onSelectColor[10]).HapticFeedbackTypes.IMPACT_LIGHT);
+    onSelectColor(_undefined2[0]);
     const obj = selectedColor(onSelectColor[10]);
-    tmp2 = onSelectColor(tmp2[0]);
     selectedEffectId(onSelectColor[11]).hideActionSheet();
   }, items2);
-  const items4 = [memo1, first, onSelectColor, tmp2];
+  const items4 = [memo1, first, onSelectColor, tmp5];
   const callback1 = React.useCallback(() => {
     selectedEffectId(onSelectColor[12])({
       color: first,
       onSelect(arg0) {
-        const result = selectedColor(onSelectColor[10]).triggerHapticFeedback(selectedColor(onSelectColor[10]).HapticFeedbackTypes.IMPACT_MEDIUM);
-        outer1_2(arg0);
-        const obj = selectedColor(onSelectColor[10]);
-        selectedEffectId(onSelectColor[11]).hideActionSheet();
+        const result = outer1_0(outer1_2[10]).triggerHapticFeedback(outer1_0(outer1_2[10]).HapticFeedbackTypes.IMPACT_MEDIUM);
+        callback(arg0);
+        const obj = outer1_0(outer1_2[10]);
+        outer1_1(outer1_2[11]).hideActionSheet();
       },
       actionButtonVariant: "primary"
     });
@@ -82,88 +88,91 @@ export default function DisplayNameStylesColorPickerSheet(selectedColor) {
     const result = obj.triggerHapticFeedback(selectedColor(onSelectColor[10]).HapticFeedbackTypes.IMPACT_MEDIUM);
     if (memo1) {
       onSelectColor(first);
-      obj = { default: first === onSelectColor[0] };
+      obj = { default: null, colors: null };
+      obj[0] = first === _undefined2[0];
       const items = [first];
-      obj.colors = items;
-      selectedEffectId(onSelectColor[13]).track(constants.DISPLAY_NAME_STYLES_COLOR_SELECTED, obj);
-      const obj2 = selectedEffectId(onSelectColor[13]);
+      obj[1] = items;
+      selectedEffectId(tmp[13]).track(constants.DISPLAY_NAME_STYLES_COLOR_SELECTED, obj);
+      const obj2 = selectedEffectId(tmp[13]);
     }
     selectedEffectId(onSelectColor[11]).hideActionSheet();
   }, items4);
-  obj = { ref: obj.useBottomSheetRef().bottomSheetRef };
-  obj = { style: tmp.header };
-  const obj1 = {};
+  obj = { ref: obj.useBottomSheetRef().bottomSheetRef, header: null, children: null };
+  obj = { style: tmp.header, children: null };
+  const obj1 = { title: null, trailing: null };
   const intl = selectedColor(onSelectColor[16]).intl;
-  obj1.title = intl.string(selectedEffectId(onSelectColor[17])["6OxgN7"]);
-  let obj2 = { style: tmp.headerTrailing };
-  let obj3 = {};
+  obj1[0] = intl.string(selectedEffectId(onSelectColor[17])["6OxgN7"]);
+  let obj2 = { style: tmp.headerTrailing, children: null };
+  let obj3 = { text: null, onPress: null, variant: "primary", size: "sm" };
   const intl2 = selectedColor(onSelectColor[16]).intl;
-  obj3.text = intl2.string(selectedColor(onSelectColor[16]).t.XqMe3N);
-  obj3.onPress = callback2;
-  obj3.variant = "primary";
-  obj3.size = "sm";
-  obj2.children = callback2(selectedColor(onSelectColor[18]).Button, obj3);
-  obj1.trailing = callback2(first, obj2);
-  obj.children = callback2(selectedColor(onSelectColor[15]).BottomSheetTitleHeader, obj1);
-  obj.header = callback2(first, obj);
-  const obj4 = { style: tmp.container };
-  const obj5 = { style: tmp.contentContainer };
-  const obj6 = { style: tmp.presetGrid };
+  obj3[0] = intl2.string(selectedColor(onSelectColor[16]).t.XqMe3N);
+  obj3[1] = callback2;
+  obj2[1] = callback2(selectedColor(onSelectColor[18]).Button, obj3);
+  obj1[1] = callback2(first, obj2);
+  obj[1] = callback2(selectedColor(onSelectColor[15]).BottomSheetTitleHeader, obj1);
+  obj[1] = callback2(first, obj);
+  const obj4 = { style: tmp.container, children: null };
+  const obj5 = { style: tmp.contentContainer, children: null };
+  const obj6 = { style: tmp.presetGrid, children: null };
   let obj9 = selectedEffectId(onSelectColor[19]);
-  obj6.children = obj9.chunk(memo.slice(0, 12), 6).map((arr) => {
+  obj6[1] = obj9.chunk(memo.slice(0, 12), 6).map((arr) => {
     let closure_0 = arg1;
     return outer1_9(first, {
-      style: tmp.presetRow,
+      style: _undefined.presetRow,
       children: arr.map((color) => {
         let closure_0 = color;
         let obj = {
           onPress() {
-            return outer2_8(closure_0);
-          }
+            return outer1_8(closure_0);
+          },
+          style: null,
+          accessibilityRole: "button",
+          accessibilityLabel: null
         };
         const items = [outer1_3.presetColor, , ];
-        obj = { backgroundColor: selectedColor(onSelectColor[20]).int2hex(color) };
+        obj = { backgroundColor: null };
+        obj[0] = selectedColor(onSelectColor[20]).int2hex(color);
         items[1] = obj;
-        let presetColorSelected = color === outer1_5;
-        if (presetColorSelected) {
-          presetColorSelected = outer1_3.presetColorSelected;
-        }
-        items[2] = presetColorSelected;
-        obj.style = items;
-        obj.accessibilityRole = "button";
+        items[2] = color === outer1_5 && outer1_3.presetColorSelected;
+        obj[1] = items;
         const obj3 = selectedColor(onSelectColor[20]);
         const tmp = outer2_9;
         const tmp2 = closure_6;
-        obj.accessibilityLabel = selectedColor(onSelectColor[20]).int2hex(color);
+        const tmp3 = outer1_3;
+        const tmp4 = selectedColor;
+        const tmp5 = onSelectColor;
+        const tmp6 = color === outer1_5 && outer1_3.presetColorSelected;
+        obj[3] = selectedColor(onSelectColor[20]).int2hex(color);
         return tmp(tmp2, obj, 6 * closure_0 + arg1);
       })
     }, arg1);
   });
   const items5 = [callback2(first, obj6), ];
-  const obj7 = { style: tmp.buttonsContainer };
-  let tmp12 = selectedEffectId === selectedColor(onSelectColor[21]).DisplayNameEffect.SOLID;
-  if (tmp12) {
-    const obj8 = { style: tmp.button };
+  const obj7 = { style: tmp.buttonsContainer, children: null };
+  let tmp12Result = selectedEffectId === selectedColor(onSelectColor[21]).DisplayNameEffect.SOLID;
+  if (tmp12Result) {
+    const obj8 = { style: null, children: null };
+    obj8[0] = tmp.button;
     obj9 = { text: null, onPress: null, variant: "secondary", size: "md", grow: true };
-    const intl3 = selectedColor(onSelectColor[16]).intl;
-    obj9.text = intl3.string(selectedEffectId(onSelectColor[17]).gIeJTK);
-    obj9.onPress = callback;
-    obj8.children = callback2(selectedColor(onSelectColor[18]).Button, obj9);
-    tmp12 = callback2(first, obj8);
+    const intl3 = tmp2(tmp3[16]).intl;
+    obj9[0] = intl3.string(selectedEffectId(tmp3[17]).gIeJTK);
+    obj9[1] = callback;
+    obj8[1] = tmp12(tmp2(tmp3[18]).Button, obj9);
+    tmp12Result = tmp12(tmp13, obj8);
   }
-  const items6 = [tmp12, ];
-  const obj10 = { style: tmp.button };
+  const items6 = [tmp12Result, ];
+  const obj10 = { style: tmp.button, children: null };
   const obj11 = { text: null, onPress: null, variant: "secondary", size: "md", icon: null, grow: true };
-  const intl4 = selectedColor(onSelectColor[16]).intl;
-  obj11.text = intl4.string(selectedColor(onSelectColor[16]).t["FHBa/1"]);
-  obj11.onPress = callback1;
-  obj11.icon = callback2(selectedColor(onSelectColor[22]).EyeDropperIcon, { size: "sm" });
-  obj10.children = callback2(selectedColor(onSelectColor[18]).Button, obj11);
+  const intl4 = tmp2(tmp3[16]).intl;
+  obj11[0] = intl4.string(selectedColor(onSelectColor[16]).t["FHBa/1"]);
+  obj11[1] = callback1;
+  obj11[4] = callback2(selectedColor(onSelectColor[22]).EyeDropperIcon, { size: "sm" });
+  obj10[1] = callback2(selectedColor(onSelectColor[18]).Button, obj11);
   items6[1] = callback2(first, obj10);
-  obj7.children = items6;
+  obj7[1] = items6;
   items5[1] = closure_10(first, obj7);
-  obj5.children = items5;
-  obj4.children = closure_10(first, obj5);
-  obj.children = callback2(first, obj4);
+  obj5[1] = items5;
+  obj4[1] = closure_10(first, obj5);
+  obj[2] = callback2(first, obj4);
   return callback2(selectedColor(onSelectColor[14]).BottomSheet, obj);
 };

@@ -1,39 +1,36 @@
-// Module ID: 11644
-// Function ID: 90321
+// Module ID: 11668
+// Function ID: 11669
 // Name: useGameServerFeaturedGameNames
-// Dependencies: [4054, 5888, 2]
+// Dependencies: [4078, 5906, 2]
 // Exports: default
 
-// Module 11644 (useGameServerFeaturedGameNames)
-import NewGamesCoachmarkContent from "NewGamesCoachmarkContent";
+// Module 11668 (useGameServerFeaturedGameNames)
+import str11 from "str11";
 
-let closure_2;
-let closure_3;
-({ MINECRAFT_GAME_ID: closure_2, HYTALE_GAME_ID: closure_3 } = NewGamesCoachmarkContent);
+let c3;
+let obj1;
+({ MINECRAFT_GAME_ID: obj1, HYTALE_GAME_ID: c3 } = require("str11"));
 const result = require("set").fileFinishedImporting("modules/premium/game_server/hooks/useGameServerFeaturedGameNames.tsx");
 
 export default function useGameServerFeaturedGameNames() {
-  let obj = require(5888) /* importDefaultResult1 */;
+  let obj = require(5906) /* importDefaultResult1 */;
   const data = obj.useGame(closure_2).data;
-  const data2 = require(5888) /* importDefaultResult1 */.useGame(closure_3).data;
-  obj = {};
-  let name;
-  if (null != data) {
-    name = data.name;
+  const data2 = require(5906) /* importDefaultResult1 */.useGame(closure_3).data;
+  let str;
+  if (data != null) {
+    str = data.name;
   }
-  let str = "Minecraft";
-  if (null != name) {
-    str = name;
+  if (str == null) {
+    str = "Minecraft";
   }
-  obj.gameName = str;
-  let name1;
-  if (null != data2) {
-    name1 = data2.name;
+  obj = { gameName: str, gameName2: null };
+  let str2;
+  if (data2 != null) {
+    str2 = data2.name;
   }
-  let str2 = "Hytale";
-  if (null != name1) {
-    str2 = name1;
+  if (str2 == null) {
+    str2 = "Hytale";
   }
-  obj.gameName2 = str2;
+  obj[1] = str2;
   return obj;
 };

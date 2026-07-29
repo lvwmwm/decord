@@ -1,11 +1,11 @@
-// Module ID: 15474
-// Function ID: 117946
+// Module ID: 15508
+// Function ID: 15509
 // Name: useSearchMessageTimestamp
-// Dependencies: [31, 21, 5908, 2]
+// Dependencies: [19, 11, 5927, 2]
 // Exports: useSearchMessageTimestamp
 
-// Module 15474 (useSearchMessageTimestamp)
-import result from "result";
+// Module 15508 (useSearchMessageTimestamp)
+import noop from "noop";
 
 const require = arg1;
 const result = require("getRelativeTimestamp").fileFinishedImporting("modules/search/native/hooks/useSearchMessageTimestamp.tsx");
@@ -17,13 +17,14 @@ export const useSearchMessageTimestamp = function useSearchMessageTimestamp(mess
   return React.useMemo(() => {
     let obj = channel(outer1_2[1]);
     let id = message.id;
-    if (null == id) {
+    if (id == null) {
       id = channel.id;
     }
     const extractTimestampResult = obj.extractTimestamp(id);
-    obj = { timestamp: message(outer1_2[2]).getRelativeTimestamp(extractTimestampResult, true) };
+    obj = { timestamp: null, timestampAccessibilityLabel: null };
+    obj[0] = message(outer1_2[2]).getRelativeTimestamp(extractTimestampResult, true);
     const obj3 = message(outer1_2[2]);
-    obj.timestampAccessibilityLabel = message(outer1_2[2]).getRelativeTimestamp(extractTimestampResult, false);
+    obj[1] = message(outer1_2[2]).getRelativeTimestamp(extractTimestampResult, false);
     return obj;
   }, items);
 };

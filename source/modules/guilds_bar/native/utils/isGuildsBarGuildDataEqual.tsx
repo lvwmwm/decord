@@ -1,10 +1,10 @@
-// Module ID: 14961
-// Function ID: 113961
+// Module ID: 14987
+// Function ID: 14988
 // Name: isGuildsBarGuildDataEqual
 // Dependencies: [2]
 // Exports: default
 
-// Module 14961 (isGuildsBarGuildDataEqual)
+// Module 14987 (isGuildsBarGuildDataEqual)
 const result = require("set").fileFinishedImporting("modules/guilds_bar/native/utils/isGuildsBarGuildDataEqual.tsx");
 
 export default function isGuildsBarGuildDataEqual(icon, icon2) {

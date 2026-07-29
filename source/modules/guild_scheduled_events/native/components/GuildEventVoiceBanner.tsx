@@ -1,57 +1,54 @@
-// Module ID: 12815
-// Function ID: 99604
-// Dependencies: [31, 27, 1907, 5761, 33, 4165, 689, 8297, 566, 8242, 8186, 4133, 8205, 4376, 8193, 4695, 8201, 4578, 1212, 2]
+// Module ID: 12837
+// Function ID: 12838
+// Dependencies: [19, 17, 1931, 5779, 21, 4189, 712, 8321, 589, 8266, 8210, 4157, 8229, 4399, 8217, 4717, 8225, 4600, 1236, 2]
 
-// Module 12815
-import importAllResult from "result";
-import { View } from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import { isGuildScheduledEventActive as closure_6 } from "_isNativeReflectConstruct";
+// Module 12837
+import importAllResult from "set";
+import { View } from "Button";
+import handleConnectionOpen from "handleConnectionOpen";
+import { isGuildScheduledEventActive as closure_6 } from "scheduledEventSort";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_7;
-let closure_8;
+let error;
+let metroImportAll;
 const require = arg1;
-({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-let obj = {};
-obj = { margin: 12, padding: 12, borderRadius: require("_createForOfIteratorHelperLoose").radii.sm, borderColor: require("_createForOfIteratorHelperLoose").colors.BORDER_SUBTLE, borderWidth: 1, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SURFACE_HIGH };
-obj.header = obj;
-obj.descriptionContainerStyle = { paddingTop: 4 };
-obj.buttonContainer = { marginTop: 12 };
-let closure_9 = _createForOfIteratorHelperLoose.createStyles(obj);
+let c3 = importAllResult;
+({ jsx: error, jsxs: metroImportAll } = jsxProd);
+let obj = { header: null, descriptionContainerStyle: null, buttonContainer: null };
+obj = { margin: 12, padding: 12, borderRadius: require("Themes").radii.sm, borderColor: require("Themes").colors.BORDER_SUBTLE, borderWidth: 1, backgroundColor: require("Themes").colors.BACKGROUND_SURFACE_HIGH };
+obj[0] = obj;
+obj[1] = { paddingTop: 4 };
+obj[2] = { marginTop: 12 };
+let closure_9 = createCacheKey.createStyles(obj);
 const memoResult = importAllResult.memo((channel) => {
   channel = channel.channel;
+  let activeEvent;
   let dependencyMap;
-  let importAllResult;
+  let nextRecurrenceIdInEvent;
   let tmp = callback3();
-  let obj = channel(8297);
-  const activeEvent = obj.useActiveEvent(channel.id);
-  let obj1 = channel(8297);
+  let obj = channel(8321);
+  activeEvent = obj.useActiveEvent(channel.id);
+  let obj1 = channel(8321);
   const imminentUpcomingGuildEvents = obj1.useImminentUpcomingGuildEvents(channel.id);
-  let obj2 = channel(566);
-  const items = [_isNativeReflectConstruct];
-  let tmp4 = obj2.useStateFromStores(items, () => outer1_5.getVoiceChannelId()) === channel.id;
-  let tmp5 = activeEvent;
-  if (null == activeEvent) {
+  let obj2 = channel(589);
+  const items = [handleConnectionOpen];
+  let tmp7 = activeEvent;
+  const stateFromStores = obj2.useStateFromStores(items, () => voiceChannelId.getVoiceChannelId());
+  if (activeEvent == null) {
     let first;
-    if (null != imminentUpcomingGuildEvents) {
+    if (imminentUpcomingGuildEvents != null) {
       first = imminentUpcomingGuildEvents[0];
     }
-    tmp5 = first;
+    tmp7 = first;
   }
-  dependencyMap = tmp5;
-  let obj3 = channel(8242);
-  const canManageGuildEventResult = obj3.useManageResourcePermissions(channel).canManageGuildEvent(tmp5);
-  const nextRecurrenceIdInEvent = channel(8186).getNextRecurrenceIdInEvent(tmp5);
-  let tmp9;
-  if (null != nextRecurrenceIdInEvent) {
-    tmp9 = nextRecurrenceIdInEvent;
-  }
-  importAllResult = tmp9;
-  const items1 = [tmp5, channel, activeEvent, tmp9];
-  [][0] = tmp5;
-  const callback = importAllResult.useCallback(() => {
+  dependencyMap = tmp7;
+  let tmp2Result = tmp2(8266);
+  tmp2Result = tmp2(8210);
+  nextRecurrenceIdInEvent = tmp2Result.getNextRecurrenceIdInEvent(tmp7);
+  const items1 = [tmp7, channel, activeEvent, nextRecurrenceIdInEvent];
+  [][0] = tmp7;
+  const callback = nextRecurrenceIdInEvent.useCallback(() => {
     let tmp = null == activeEvent;
     if (tmp) {
       tmp = null != _undefined;
@@ -59,41 +56,49 @@ const memoResult = importAllResult.memo((channel) => {
     if (tmp) {
       activeEvent(_undefined[11]).hideActionSheet();
       const obj = activeEvent(_undefined[11]);
-      let result = channel(_undefined[12]).openStartGuildEventModal(_undefined, c3, () => {
-        const result = channel(table[13]).openVoiceChannelActionSheet(outer1_0);
+      let result = channel(_undefined[12]).openStartGuildEventModal(_undefined, nextRecurrenceIdInEvent, () => {
+        const result = outer1_0(outer1_2[13]).openVoiceChannelActionSheet(closure_0);
       });
       const obj2 = channel(_undefined[12]);
     }
   }, items1);
-  if (null == tmp5) {
+  if (null == tmp7) {
     return null;
   } else {
-    obj = { accessibilityRole: "button", onPress: tmp11, style: tmp.header };
-    obj = { event: tmp5, showUserCount: false };
-    const items2 = [callback2(channel(8201).GuildEventCardHeader, obj), , ];
-    obj1 = { event: tmp5, descriptionContainerStyle: tmp.descriptionContainerStyle, condensed: tmp4 };
-    items2[1] = callback2(channel(8201).GuildEventCardMetaInfo, obj1);
-    if (tmp4) {
-      tmp4 = canManageGuildEventResult;
+    let tmp18Result = stateFromStores === channel.id;
+    obj = { accessibilityRole: "button", onPress: null, style: null, children: null };
+    obj[1] = tmp12;
+    obj[2] = tmp.header;
+    obj = { event: null, showUserCount: false };
+    obj[0] = tmp7;
+    const items2 = [callback2(tmp2(8225).GuildEventCardHeader, obj), , ];
+    obj1 = { event: null, descriptionContainerStyle: null, condensed: null };
+    obj1[0] = tmp7;
+    obj1[1] = tmp.descriptionContainerStyle;
+    obj1[2] = tmp18Result;
+    items2[1] = callback2(tmp2(8225).GuildEventCardMetaInfo, obj1);
+    if (tmp18Result) {
+      tmp18Result = canManageGuildEventResult;
     }
-    if (tmp4) {
-      tmp4 = !tmp17;
+    if (tmp18Result) {
+      tmp18Result = !tmp16;
     }
-    if (tmp4) {
-      obj2 = { style: tmp.buttonContainer };
-      obj3 = { text: null, onPress: null, variant: "active", size: "sm", grow: true };
-      const intl = channel(1212).intl;
-      obj3.text = intl.string(channel(1212).t.cK1GGY);
-      obj3.onPress = callback;
-      obj2.children = callback2(channel(4578).Button, obj3);
-      tmp4 = callback2(View, obj2);
+    if (tmp18Result) {
+      obj2 = { style: null, children: null };
+      obj2[0] = tmp.buttonContainer;
+      const obj3 = { text: null, onPress: null, variant: "active", size: "sm", grow: true };
+      const intl = tmp2(1236).intl;
+      obj3[0] = intl.string(tmp2(1236).t.cK1GGY);
+      obj3[1] = callback;
+      obj2[1] = tmp18(tmp2(4600).Button, obj3);
+      tmp18Result = tmp18(View, obj2);
     }
-    items2[2] = tmp4;
-    obj.children = items2;
-    return closure_8(channel(4695).PressableOpacity, obj);
+    items2[2] = tmp18Result;
+    obj[3] = items2;
+    return closure_8(tmp2(4717).PressableOpacity, obj);
   }
-  const obj5 = channel(8186);
+  canManageGuildEventResult = tmp2Result.useManageResourcePermissions(channel).canManageGuildEvent(tmp7);
 });
-let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/guild_scheduled_events/native/components/GuildEventVoiceBanner.tsx");
+let result = require("handleConnectionOpen").fileFinishedImporting("modules/guild_scheduled_events/native/components/GuildEventVoiceBanner.tsx");
 
 export default memoResult;

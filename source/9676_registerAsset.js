@@ -1,11 +1,10 @@
 // Module ID: 9676
-// Function ID: 75271
+// Function ID: 9677
 // Name: registerAsset
-// Dependencies: [1217]
+// Dependencies: [1241]
 
 // Module 9676 (registerAsset)
 import registerAsset from "registerAsset";
 
-const obj = { __packager_asset: true, httpServerLocation: "/assets/modules/media_keyboard/native/images", width: 200, height: 80, scales: [2, 3], hash: "e341a934511095337dabafab8c60034b", name: "empty_photos", type: "png" };
 
-export default registerAsset.registerAsset(obj);
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "651f23c3c753462d68eac15857d95d39", name: "PollsIcon", type: "png" });

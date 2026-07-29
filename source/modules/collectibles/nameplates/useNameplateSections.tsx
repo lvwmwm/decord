@@ -1,29 +1,29 @@
-// Module ID: 13711
-// Function ID: 105157
+// Module ID: 13732
+// Function ID: 13733
 // Name: useNameplateSections
-// Dependencies: [57, 31, 5780, 5796, 624, 5792, 1212, 2]
+// Dependencies: [32, 19, 5798, 5814, 647, 5810, 1236, 2]
 // Exports: default
 
-// Module 13711 (useNameplateSections)
+// Module 13732 (useNameplateSections)
 import _slicedToArray from "_slicedToArray";
-import { useMemo } from "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_5 from "_isNativeReflectConstruct";
+import { useMemo } from "noop";
+import updateCategoriesAndProducts from "updateCategoriesAndProducts";
+import map from "map";
 
 const require = arg1;
 let obj = { PURCHASE: "purchase", PREMIUM_PURCHASE: "premium_purchase", PREVIEW: "preview" };
 obj = { skuId: "None" };
 obj = { skuId: "Shop" };
-let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/collectibles/nameplates/useNameplateSections.tsx");
+let result = require("updateCategoriesAndProducts").fileFinishedImporting("modules/collectibles/nameplates/useNameplateSections.tsx");
 
 export default function useNameplateSections() {
-  let items = [closure_5];
-  stateFromStores = stateFromStores(first[4]).useStateFromStores(items, () => outer1_5.purchases);
+  let items = [map];
+  stateFromStores = stateFromStores(first[4]).useStateFromStores(items, () => purchases.purchases);
   let obj = stateFromStores(first[4]);
-  let items1 = [_isNativeReflectConstruct];
+  let items1 = [updateCategoriesAndProducts];
   const tmp2 = callback(stateFromStores(first[4]).useStateFromStoresArray(items1, () => {
     const items = [, ];
-    ({ categories: arr[0], products: arr[1] } = outer1_4);
+    ({ categories: arr[0], products: arr[1] } = updateCategoriesAndProducts);
     return items;
   }), 2);
   first = tmp2[0];
@@ -33,18 +33,21 @@ export default function useNameplateSections() {
     let obj = stateFromStores(first[5]);
     const nameplates = obj.getNameplates(stateFromStores, first);
     const reduced = nameplates.reduce((premium_purchase, skuId) => {
-      let value = outer1_0.get(skuId.skuId);
-      value = outer1_2.get(skuId.skuId);
+      let value = closure_0.get(skuId.skuId);
+      value = _slicedToArray.get(skuId.skuId);
       if (null != value) {
-        let result = stateFromStores(first[5]).isPremiumCollectiblesPurchase(value);
-        const obj2 = stateFromStores(first[5]);
+        let result = outer1_0(outer1_1[5]).isPremiumCollectiblesPurchase(value);
+        const obj2 = outer1_0(outer1_1[5]);
       } else {
-        result = stateFromStores(first[5]).isPremiumCollectiblesProduct(value);
-        const obj = stateFromStores(first[5]);
+        result = outer1_0(outer1_1[5]).isPremiumCollectiblesProduct(value);
+        const obj = outer1_0(outer1_1[5]);
       }
-      let isCategoryReward;
-      if (null != value) {
-        isCategoryReward = value.isCategoryReward;
+      let flag;
+      if (value != null) {
+        flag = value.isCategoryReward;
+      }
+      if (flag == null) {
+        flag = false;
       }
       if (result) {
         premium_purchase = premium_purchase.premium_purchase;
@@ -52,26 +55,25 @@ export default function useNameplateSections() {
       } else if (null != value) {
         const purchase = premium_purchase.purchase;
         purchase.push(skuId);
-      } else if (!tmp9) {
+      } else if (!flag) {
         const preview = premium_purchase.preview;
         preview.push(skuId);
       }
       return premium_purchase;
     }, { purchase: [], premium_purchase: [], preview: [] });
-    obj = { section: outer1_6.PURCHASE };
+    obj = { section: outer1_6.PURCHASE, items: null, height: 12, header: null };
     const items = [outer1_7, outer1_8, ...reduced.purchase];
-    obj.items = items;
-    obj.height = 12;
+    obj[1] = items;
     const intl = stateFromStores(first[6]).intl;
-    obj.header = intl.string(stateFromStores(first[6]).t.WfGV52);
+    obj[3] = intl.string(stateFromStores(first[6]).t.WfGV52);
     const items1 = [obj, , ];
-    obj = { section: outer1_6.PREMIUM_PURCHASE, items: reduced.premium_purchase, height: 12 };
+    obj = { section: outer1_6.PREMIUM_PURCHASE, items: reduced.premium_purchase, height: 12, header: null };
     const intl2 = stateFromStores(first[6]).intl;
-    obj.header = intl2.string(stateFromStores(first[6]).t.TiLCgw);
+    obj[3] = intl2.string(stateFromStores(first[6]).t.TiLCgw);
     items1[1] = obj;
-    const obj1 = { section: outer1_6.PREVIEW, items: reduced.preview, height: 12 };
+    const obj1 = { section: outer1_6.PREVIEW, items: reduced.preview, height: 12, header: null };
     const intl3 = stateFromStores(first[6]).intl;
-    obj1.header = intl3.string(stateFromStores(first[6]).t["1vbbee"]);
+    obj1[3] = intl3.string(stateFromStores(first[6]).t["1vbbee"]);
     items1[2] = obj1;
     return items1.filter((items) => items.items.length > 0);
   }, items2);

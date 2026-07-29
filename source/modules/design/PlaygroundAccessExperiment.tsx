@@ -1,63 +1,66 @@
-// Module ID: 9887
-// Function ID: 76503
-// Name: usePlaygroundAccessExperiment
-// Dependencies: [1850, 1428, 566, 2]
-// Exports: getHasPlaygroundAccess, useHasPlaygroundAccess
+// Module ID: 9909
+// Function ID: 9910
+// Name: apexExperiment
+// Dependencies: [1874, 1452, 589, 2]
+// Exports: getHasPlaygroundAccess, getPlaygroundAccessExperiment, useHasPlaygroundAccess, usePlaygroundAccessExperiment
 
-// Module 9887 (usePlaygroundAccessExperiment)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 9909 (apexExperiment)
+import mergeGuildAvatar from "mergeGuildAvatar";
 import ApexExperiment from "ApexExperiment";
 
 const require = arg1;
-function usePlaygroundAccessExperiment(design_systems_settings) {
-  return ApexExperiment.useConfig({ location: design_systems_settings }).enabled;
-}
-function getPlaygroundAccessExperiment(location) {
-  return ApexExperiment.getConfig({ location }).enabled;
-}
-ApexExperiment = { name: "2026-02-mana-playground-access", kind: "user", defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } };
-ApexExperiment = ApexExperiment.createApexExperiment(ApexExperiment);
+ApexExperiment = { 1: null };
+ApexExperiment[1] = { enabled: true };
+const apexExperiment = ApexExperiment.createApexExperiment({ name: "2026-02-mana-playground-access", kind: "user", defaultConfig: { enabled: false }, variations: ApexExperiment });
 const result = require("initialize").fileFinishedImporting("modules/design/PlaygroundAccessExperiment.tsx");
 
-export default ApexExperiment;
-export { usePlaygroundAccessExperiment };
-export { getPlaygroundAccessExperiment };
-export const useHasPlaygroundAccess = function useHasPlaygroundAccess(design_systems_settings) {
-  const items = [_isNativeReflectConstruct];
-  const stateFromStores = require(566) /* initialize */.useStateFromStores(items, () => outer1_2.getCurrentUser());
+export default apexExperiment;
+export const usePlaygroundAccessExperiment = function usePlaygroundAccessExperiment(design_systems_settings) {
+  return apexExperiment.useConfig({ location: design_systems_settings }).enabled;
+};
+export const getPlaygroundAccessExperiment = function getPlaygroundAccessExperiment(location) {
+  return apexExperiment.getConfig({ location }).enabled;
+};
+export const useHasPlaygroundAccess = function useHasPlaygroundAccess(location) {
+  let obj = require(589) /* initialize */;
+  const items = [mergeGuildAvatar];
+  const stateFromStores = obj.useStateFromStores(items, () => currentUser.getCurrentUser());
   let isStaffResult;
-  if (null != stateFromStores) {
+  if (stateFromStores != null) {
     isStaffResult = stateFromStores.isStaff();
   }
-  let tmp2 = true === isStaffResult;
-  if (!tmp2) {
+  let enabled = true === isStaffResult;
+  if (!enabled) {
     let isStaffPersonalResult;
-    if (null != stateFromStores) {
+    if (stateFromStores != null) {
       isStaffPersonalResult = stateFromStores.isStaffPersonal();
     }
-    tmp2 = true === isStaffPersonalResult;
+    enabled = true === isStaffPersonalResult;
   }
-  if (!tmp2) {
-    tmp2 = usePlaygroundAccessExperiment(design_systems_settings);
+  obj = { location };
+  if (!enabled) {
+    enabled = apexExperiment.useConfig(obj).enabled;
   }
-  return tmp2;
+  return enabled;
 };
 export const getHasPlaygroundAccess = function getHasPlaygroundAccess(quickswitcher_action) {
   currentUser = currentUser.getCurrentUser();
   let isStaffResult;
-  if (null != currentUser) {
+  if (currentUser != null) {
     isStaffResult = currentUser.isStaff();
   }
-  let tmp2 = true === isStaffResult;
-  if (!tmp2) {
+  let enabled = true === isStaffResult;
+  if (!enabled) {
     let isStaffPersonalResult;
-    if (null != currentUser) {
+    if (currentUser != null) {
       isStaffPersonalResult = currentUser.isStaffPersonal();
     }
-    tmp2 = true === isStaffPersonalResult;
+    enabled = true === isStaffPersonalResult;
   }
-  if (!tmp2) {
-    tmp2 = getPlaygroundAccessExperiment(quickswitcher_action);
+  if (!enabled) {
+    const obj = { location: null };
+    obj[0] = quickswitcher_action;
+    enabled = apexExperiment.getConfig(obj).enabled;
   }
-  return tmp2;
+  return enabled;
 };

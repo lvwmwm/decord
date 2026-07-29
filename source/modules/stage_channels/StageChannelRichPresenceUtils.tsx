@@ -1,35 +1,46 @@
-// Module ID: 9056
-// Function ID: 71059
+// Module ID: 9080
+// Function ID: 9081
 // Name: unpackStageChannelParty
-// Dependencies: [57, 1194, 1348, 1838, 4989, 4982, 653, 2]
+// Dependencies: [32, 1218, 1372, 1862, 5011, 5004, 676, 2]
 // Exports: isStageActivity, packStageChannelPartyId, shouldShowActivity
 
-// Module 9056 (unpackStageChannelParty)
+// Module 9080 (unpackStageChannelParty)
 import _slicedToArray from "_slicedToArray";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_2 from "_isNativeReflectConstruct";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import closure_4 from "_isNativeReflectConstruct";
+import fetchFingerprint from "fetchFingerprint";
+import ensureGuildLoaded from "ensureGuildLoaded";
+import createGuildRecordFromRust from "createGuildRecordFromRust";
+import buildStageChannelUserRoles from "buildStageChannelUserRoles";
 import { STAGE_APPLICATION_ID } from "MAX_STAGE_TOPIC_LENGTH";
 import { GuildFeatures } from "ME";
 
-function unpackStageChannelParty(activity) {
-  if (null != activity) {
-    if (null != tmp.party) {
-      if (null != activity.party.id) {
-        if (str.startsWith(c7)) {
-          const tmp7 = callback(str.split(":"), 5);
-          const _parseInt = parseInt;
-          const parsed = parseInt(tmp7[3], 16);
-          const obj = { guildId: tmp7[1], channelId: tmp7[2], size: tmp3, userIsSpeaker: 1 & parsed, guildIsPartnered: 2 & parsed, guildIsVerified: 4 & parsed, stageInstanceId: tmp7[4] };
-          return obj;
+function unpackStageChannelParty(c17) {
+  if (null != c17) {
+    if (null != c17.party) {
+      try {
+        if (null != str) {
+          if (str.startsWith(c7)) {
+            const tmp4 = callback(str.split(":"), 5);
+            const _parseInt = parseInt;
+            const parsed = parseInt(tmp4[3], 16);
+            const obj = { guildId: null, channelId: null, size: null, userIsSpeaker: null, guildIsPartnered: null, guildIsVerified: null, stageInstanceId: null };
+            obj[0] = tmp4[1];
+            obj[1] = tmp4[2];
+            obj[2] = tmp2;
+            obj[3] = 1 & parsed;
+            obj[4] = 2 & parsed;
+            obj[5] = 4 & parsed;
+            obj[6] = tmp4[4];
+            return obj;
+          }
         }
+      } catch (err) {
+        return tmp;
       }
     }
   }
 }
 let c7 = "stage:";
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/stage_channels/StageChannelRichPresenceUtils.tsx");
+const result = require("ensureGuildLoaded").fileFinishedImporting("modules/stage_channels/StageChannelRichPresenceUtils.tsx");
 
 export const packStageChannelPartyId = function packStageChannelPartyId(channel, stageInstanceByChannel) {
   let num = 0;
@@ -45,24 +56,25 @@ export const packStageChannelPartyId = function packStageChannelPartyId(channel,
       tmp3 = num | 2;
     }
     const features2 = guild.features;
-    let tmp5 = tmp3;
-    if (features2.has(GuildFeatures.VERIFIED)) {
-      tmp5 = tmp3 | 4;
+    let tmp4 = tmp3;
+    if (features2.has(tmp2.VERIFIED)) {
+      tmp4 = tmp3 | 4;
     }
-    str = tmp5;
+    str = tmp4;
+    tmp2 = GuildFeatures;
   }
   return "" + c7 + channel.guild_id + ":" + channel.id + ":" + str.toString(16) + ":" + stageInstanceByChannel.id;
 };
 export { unpackStageChannelParty };
-export const isStageActivity = function isStageActivity(activity) {
-  let application_id;
-  if (null != activity) {
-    application_id = activity.application_id;
+export const isStageActivity = function isStageActivity(application_id) {
+  application_id = undefined;
+  if (application_id != null) {
+    application_id = application_id.application_id;
   }
   return application_id === STAGE_APPLICATION_ID;
 };
-export const shouldShowActivity = function shouldShowActivity(activity) {
-  const tmp = unpackStageChannelParty(activity);
+export const shouldShowActivity = function shouldShowActivity(c17) {
+  const tmp = unpackStageChannelParty(c17);
   if (null == tmp) {
     return false;
   } else {

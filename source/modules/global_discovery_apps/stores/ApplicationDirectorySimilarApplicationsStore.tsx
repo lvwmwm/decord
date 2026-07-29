@@ -1,109 +1,68 @@
-// Module ID: 11224
-// Function ID: 87149
-// Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 1362, 566, 686, 2]
+// Module ID: 11248
+// Function ID: 11249
+// Name: getSimilarApplications
+// Dependencies: [1386, 589, 709, 2]
 
-// Module 11224 (_isNativeReflectConstruct)
-import initialize from "initialize";
-import dispatcher from "dispatcher";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
-import importDefaultResult from "priv";
+// Module 11248 (getSimilarApplications)
+import { Store } from "initialize";
 
-function _isNativeReflectConstruct() {
-  let initialize = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return initialize;
-  }
-  const result = _isNativeReflectConstruct();
-}
-function getCacheKey(applicationId) {
-  return "applicationId:" + applicationId.applicationId + " guildId:" + applicationId.guildId + " page:" + applicationId.page;
-}
 let obj = { NOT_FETCHED: 0, [0]: "NOT_FETCHED", FETCHING: 1, [1]: "FETCHING", FETCHED: 2, [2]: "FETCHED", ERROR: 3, [3]: "ERROR" };
-obj = { max: 20 };
-importDefaultResult = new importDefaultResult(obj);
-let closure_7 = {};
-let tmp4 = ((Store) => {
-  class ApplicationDirectorySimilarApplicationsStore {
-    constructor() {
-      self = this;
-      tmp = ApplicationDirectorySimilarApplicationsStore(this, ApplicationDirectorySimilarApplicationsStore);
-      obj = outer1_3(ApplicationDirectorySimilarApplicationsStore);
-      tmp2 = outer1_2;
-      if (outer1_8()) {
-        tmp6 = globalThis;
-        _Reflect = Reflect;
-        tmp7 = outer1_3;
-        tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, outer1_3(self).constructor);
-      } else {
-        tmp3 = arguments;
-        tmp4 = arguments;
-        constructResult = obj(...arguments);
-      }
-      return tmp2(self, constructResult);
-    }
+let closure_1 = new require("priv")({ max: 20 });
+let closure_2 = {};
+class ApplicationDirectorySimilarApplicationsStore extends Store {
+}
+const prototype = ApplicationDirectorySimilarApplicationsStore.prototype;
+prototype["getSimilarApplications"] = function getSimilarApplications(arg0) {
+  let applicationId;
+  let guildId;
+  let page;
+  ({ applicationId, guildId, page } = arg0);
+  if (null != applicationId) {
+    const _HermesInternal = HermesInternal;
+    return applicationId.get("applicationId:" + applicationId + " guildId:" + guildId + " page:" + page);
   }
-  callback2(ApplicationDirectorySimilarApplicationsStore, Store);
-  let obj = {
-    key: "getSimilarApplications",
-    value(applicationId) {
-      applicationId = applicationId.applicationId;
-      if (null != applicationId) {
-        const obj = { applicationId, guildId: tmp, page: tmp2 };
-        return outer1_6.get(outer1_9(obj));
-      }
-    }
-  };
-  const items = [obj, ];
-  obj = {
-    key: "getFetchState",
-    value(applicationId) {
-      applicationId = applicationId.applicationId;
-      if (null != applicationId) {
-        const obj = { applicationId, guildId: tmp, page: tmp2 };
-        return outer1_7[outer1_9(undefined, obj)];
-      }
-    }
-  };
-  items[1] = obj;
-  return callback(ApplicationDirectorySimilarApplicationsStore, items);
-})(require("initialize").Store);
-tmp4.displayName = "ApplicationDirectorySimilarApplicationsStore";
+};
+prototype["getFetchState"] = function getFetchState(arg0) {
+  let applicationId;
+  let guildId;
+  let page;
+  ({ applicationId, guildId, page } = arg0);
+  if (null != applicationId) {
+    const _HermesInternal = HermesInternal;
+    return table["applicationId:" + applicationId + " guildId:" + guildId + " page:" + page];
+  }
+};
+ApplicationDirectorySimilarApplicationsStore.displayName = "ApplicationDirectorySimilarApplicationsStore";
 obj = {
   APPLICATION_DIRECTORY_FETCH_SIMILAR_APPLICATIONS: function handleFetchSimilarApplications(applicationId) {
-    let obj = { applicationId: applicationId.applicationId, guildId: applicationId.guildId, page: applicationId.page };
-    obj = {};
+    const obj = {};
+    const combined = "applicationId:" + applicationId.applicationId + " guildId:" + applicationId.guildId + " page:" + applicationId.page;
     const merged = Object.assign(obj);
-    obj[getCacheKey(obj)] = obj.FETCHING;
+    obj[combined] = obj.FETCHING;
   },
-  APPLICATION_DIRECTORY_FETCH_SIMILAR_APPLICATIONS_SUCCESS: function handleFetchSimilarApplicationsSuccess(applicationId) {
+  APPLICATION_DIRECTORY_FETCH_SIMILAR_APPLICATIONS_SUCCESS: function handleFetchSimilarApplicationsSuccess(page) {
     let loadId;
     let similarApplications;
     let totalPages;
-    const page = applicationId.page;
-    let obj = { applicationId: applicationId.applicationId, guildId: applicationId.guildId, page };
-    ({ similarApplications, loadId, totalPages } = applicationId);
-    const tmp = getCacheKey(obj);
-    obj = { lastFetchTimeMs: Date.now(), applications: similarApplications, loadId, page, totalPages };
-    const result = importDefaultResult.set(tmp, obj);
+    page = page.page;
+    ({ similarApplications, loadId, totalPages } = page);
+    const combined = "applicationId:" + page.applicationId + " guildId:" + page.guildId + " page:" + page;
+    let obj = { lastFetchTimeMs: Date.now(), applications: similarApplications, loadId, page, totalPages };
+    const result = tmp2.set(combined, obj);
     obj = {};
     const merged = Object.assign(obj);
-    obj[tmp] = obj.FETCHED;
+    obj[combined] = obj.FETCHED;
   },
   APPLICATION_DIRECTORY_FETCH_SIMILAR_APPLICATIONS_FAILURE: function handleFetchSimilarApplicationsFailure(applicationId) {
-    let obj = { applicationId: applicationId.applicationId, guildId: applicationId.guildId, page: applicationId.page };
-    obj = {};
+    const obj = {};
+    const combined = "applicationId:" + applicationId.applicationId + " guildId:" + applicationId.guildId + " page:" + applicationId.page;
     const merged = Object.assign(obj);
-    obj[getCacheKey(obj)] = obj.ERROR;
+    obj[combined] = obj.ERROR;
   }
 };
-tmp4 = new tmp4(require("dispatcher"), obj);
-let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/global_discovery_apps/stores/ApplicationDirectorySimilarApplicationsStore.tsx");
+const applicationDirectorySimilarApplicationsStore = new ApplicationDirectorySimilarApplicationsStore(require("dispatcher"), obj);
+const tmp2 = new require("priv")({ max: 20 });
+let result = require("dispatcher").fileFinishedImporting("modules/global_discovery_apps/stores/ApplicationDirectorySimilarApplicationsStore.tsx");
 
-export default tmp4;
+export default applicationDirectorySimilarApplicationsStore;
 export const FetchState = obj;

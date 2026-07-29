@@ -1,166 +1,170 @@
-// Module ID: 16515
-// Function ID: 128603
+// Module ID: 16550
+// Function ID: 16551
 // Name: useOnboardingMonetizationEnableFlow
-// Dependencies: [31, 1391, 1850, 653, 12601, 624, 16516, 16517, 16518, 12594, 1212, 1921, 16519, 2]
+// Dependencies: [19, 1415, 1874, 676, 12623, 647, 16551, 16552, 16553, 12616, 1236, 1945, 16554, 2]
 // Exports: default
 
-// Module 16515 (useOnboardingMonetizationEnableFlow)
-import result from "result";
-import { isGuildOwner } from "isGuildOwner";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 16550 (useOnboardingMonetizationEnableFlow)
+import noop from "noop";
+import { isGuildOwner } from "GuildNSFWContentLevel";
+import mergeGuildAvatar from "mergeGuildAvatar";
 import ME from "ME";
 
 let closure_6;
-let closure_7;
-let closure_8;
+let error;
+let metroImportAll;
 const require = arg1;
-({ GuildFeatures: closure_6, HelpdeskArticles: closure_7, MarketingURLs: closure_8 } = ME);
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/creator_monetization_eligibility/guild_settings/useOnboardingMonetizationEnableFlow.tsx");
+({ GuildFeatures: closure_6, HelpdeskArticles: error, MarketingURLs: metroImportAll } = ME);
+const result = require("mergeGuildAvatar").fileFinishedImporting("modules/creator_monetization_eligibility/guild_settings/useOnboardingMonetizationEnableFlow.tsx");
 
 export default function useOnboardingMonetizationEnableFlow(features) {
   let createEnableRequest;
+  let eligibility;
   let error;
   let error2;
   let isApplicationRejected;
   let loading;
   let loading2;
   let requestCooldownDuration;
+  let submittedRequest;
   const _require = features;
-  let obj = _require(12601);
-  const isExpeditedOnboardingGuild = obj.useIsExpeditedOnboardingGuild(features);
-  if (null != features) {
+  let obj = _require(12623);
+  let isExpeditedOnboardingGuild = obj.useIsExpeditedOnboardingGuild(features);
+  if (features != null) {
     features = features.features;
     const hasItem = features.has(constants.CREATOR_MONETIZABLE_PROVISIONAL);
   }
-  if (null != features) {
+  if (features != null) {
     const features2 = features.features;
     const hasItem1 = features2.has(constants.CREATOR_MONETIZABLE);
   }
-  let obj1 = _require(624);
-  const items = [_isNativeReflectConstruct];
-  const stateFromStores = obj1.useStateFromStores(items, () => {
-    let tmp2 = null != closure_0;
-    if (tmp2) {
-      tmp2 = outer1_4(closure_0, tmp);
+  let tmpResult = tmp(647);
+  const items = [mergeGuildAvatar];
+  const stateFromStores = tmpResult.useStateFromStores(items, () => {
+    let tmp3 = null != closure_0;
+    if (tmp3) {
+      tmp3 = outer1_4(tmp2, tmp);
     }
-    return tmp2;
+    return tmp3;
   });
   let id;
-  if (null != features) {
+  if (features != null) {
     id = features.id;
   }
-  const tmp7Result = refresh(16516)(id);
-  const submittedRequest = tmp7Result.submittedRequest;
-  ({ error, loading, createEnableRequest } = tmp7Result);
+  const tmp10 = refresh(16551);
+  ({ submittedRequest, error, loading, createEnableRequest } = refresh(16551)(id));
   let id1;
-  const tmp7 = refresh(16516);
-  if (null != features) {
+  let tmp9Result = tmp9(16552);
+  if (features != null) {
     id1 = features.id;
   }
-  const tmp10Result = refresh(16517)(id1);
-  refresh = tmp10Result.refresh;
-  const eligibility = tmp10Result.eligibility;
-  ({ loading: loading2, error: error2 } = tmp10Result);
-  const tmp10 = refresh(16517);
-  ({ isApplicationRejected, requestCooldownDuration } = refresh(16518)(eligibility));
+  const tmp9ResultResult = tmp9Result(id1);
+  refresh = tmp9ResultResult.refresh;
+  ({ eligibility, loading: loading2, error: error2 } = tmp9ResultResult);
+  const tmp10Result = refresh(16551)(id);
+  ({ isApplicationRejected, requestCooldownDuration } = refresh(16553)(eligibility));
   let hasItem2;
-  if (null != features) {
+  if (features != null) {
     const features3 = features.features;
     hasItem2 = features3.has(constants.CREATOR_MONETIZABLE_RESTRICTED);
   }
-  let tmp16 = true === hasItem2;
-  if (!tmp16) {
+  let tmp19 = true === hasItem2;
+  if (!tmp19) {
     let hasItem3;
-    if (null != features) {
+    if (features != null) {
       const features4 = features.features;
       hasItem3 = features4.has(constants.CREATOR_MONETIZABLE_DISABLED);
     }
-    tmp16 = true === hasItem3;
+    tmp19 = true === hasItem3;
   }
-  let obj2 = _require(12594);
+  tmpResult = tmp(12616);
   let id2;
-  if (null != features) {
+  if (features != null) {
     id2 = features.id;
   }
-  let tmp20 = submittedRequest;
+  let tmp23 = submittedRequest;
   if (!submittedRequest) {
     let isApplicationPending;
-    if (null != eligibility) {
+    if (eligibility != null) {
       isApplicationPending = eligibility.isApplicationPending;
     }
-    tmp20 = true === isApplicationPending;
+    tmp23 = true === isApplicationPending;
   }
   let canApply;
-  if (null != eligibility) {
+  if (eligibility != null) {
     canApply = eligibility.canApply;
   }
-  const intl = _require(1212).intl;
-  obj = {};
-  const tmp13 = refresh(16518)(eligibility);
-  obj.faqUrl = refresh(1921).getArticleURL(constants2.CREATOR_FAQ);
-  const obj5 = refresh(1921);
+  const intl = tmp(1236).intl;
+  obj = { faqUrl: null };
+  tmp9Result = tmp9(1945);
+  obj[0] = tmp9Result.getArticleURL(constants2.CREATOR_FAQ);
+  const tmp16 = refresh(16553)(eligibility);
+  const tmp26 = constants2;
   if (isApplicationRejected) {
-    if (obj2.useIsMonetizationReapplicationDisabled(id2).isMonetizationReapplicationDisabled) {
+    if (tmpResult.useIsMonetizationReapplicationDisabled(id2).isMonetizationReapplicationDisabled) {
       if (true === hasItem) {
-        const intl4 = _require(1212).intl;
-        obj = { communityGuidelineUrl: constants3.GUIDELINES };
-        let formatResult1 = intl4.format(_require(1212).t["0o1Q+t"], obj);
+        const intl4 = tmp(1236).intl;
+        obj = { communityGuidelineUrl: null };
+        obj[0] = constants3.GUIDELINES;
+        let formatResult1 = intl4.format(tmp(1236).t["0o1Q+t"], obj);
       } else {
-        const intl3 = _require(1212).intl;
-        obj1 = { communityGuidelineUrl: constants3.GUIDELINES };
-        formatResult1 = intl3.format(_require(1212).t.b6h59n, obj1);
+        const intl3 = tmp(1236).intl;
+        const obj1 = { communityGuidelineUrl: null };
+        obj1[0] = constants3.GUIDELINES;
+        formatResult1 = intl3.format(tmp(1236).t.b6h59n, obj1);
       }
     }
   }
-  let tmp25 = isApplicationRejected;
+  let tmp28 = isApplicationRejected;
   if (isApplicationRejected) {
-    tmp25 = null != requestCooldownDuration;
+    tmp28 = null != requestCooldownDuration;
   }
   let formatResult2;
-  if (tmp25) {
-    const intl2 = _require(1212).intl;
-    obj2 = { requestCooldownDuration, creatorRevenuePolicyUrl: refresh(1921).getArticleURL(constants2.CREATOR_POLICY) };
-    formatResult2 = intl2.format(_require(1212).t.TvX207, obj2);
-    const obj7 = refresh(1921);
+  if (tmp28) {
+    const intl2 = tmp(1236).intl;
+    const obj2 = { requestCooldownDuration: null, creatorRevenuePolicyUrl: null };
+    obj2[0] = requestCooldownDuration;
+    obj2[1] = tmp9(1945).getArticleURL(tmp26.CREATOR_POLICY);
+    formatResult2 = intl2.format(tmp(1236).t.TvX207, obj2);
+    const tmp9Result1 = tmp9(1945);
   }
-  let tmp39 = isExpeditedOnboardingGuild;
+  let tmp34 = isExpeditedOnboardingGuild;
   if (isExpeditedOnboardingGuild) {
-    tmp39 = stateFromStores;
+    tmp34 = stateFromStores;
   }
-  if (tmp39) {
-    tmp39 = false === hasItem1;
+  if (tmp34) {
+    tmp34 = false === hasItem1;
   }
-  const dependencyMap = tmp39;
-  let tmp40 = isExpeditedOnboardingGuild;
+  const dependencyMap = tmp34;
   if (isExpeditedOnboardingGuild) {
-    tmp40 = false === hasItem;
+    isExpeditedOnboardingGuild = false === hasItem;
   }
-  const formatResult = intl.format(_require(1212).t.aJUdOi, obj);
+  const formatResult = intl.format(_require(1236).t.aJUdOi, obj);
   let formatResult3;
-  const creatorMonetizationAcceptTermsCheckboxText = _require(16519).getCreatorMonetizationAcceptTermsCheckboxText();
+  const creatorMonetizationAcceptTermsCheckboxText = _require(16554).getCreatorMonetizationAcceptTermsCheckboxText();
   if (isApplicationRejected) {
-    if (tmp23) {
+    if (tmp35) {
       if (stateFromStores) {
-        const intl5 = _require(1212).intl;
-        formatResult3 = intl5.format(_require(1212).t.wbVIUB, {});
+        const intl5 = tmp(1236).intl;
+        formatResult3 = intl5.format(tmp(1236).t.wbVIUB, {});
       }
     }
   }
-  const items1 = [refresh, tmp39];
+  const items1 = [refresh, tmp34];
   const effect = React.useEffect(() => {
     if (closure_2) {
       refresh();
     }
   }, items1);
-  const obj3 = { resubmittingEnableRequest: loading, resubmissionError: error, isGuildOwner: stateFromStores, createEnableRequest, resubmittedRequest: submittedRequest, eligibilityLoading: loading2, eligibilityError: error2, refreshEligibility: refresh, eligibility, eligibleForMonetization: true === canApply, isApplicationPending: tmp20, hasPreviousApplicationRejection: isApplicationRejected, requestRejectedNoticeText: formatResult2, reapplyNoticeText: formatResult3, showAcceptTermsFlow: tmp40 };
-  if (tmp40) {
-    if (!tmp16) {
-      tmp16 = isApplicationRejected;
+  const obj3 = { resubmittingEnableRequest: loading, resubmissionError: error, isGuildOwner: stateFromStores, createEnableRequest, resubmittedRequest: submittedRequest, eligibilityLoading: loading2, eligibilityError: error2, refreshEligibility: refresh, eligibility, eligibleForMonetization: true === canApply, isApplicationPending: tmp23, hasPreviousApplicationRejection: isApplicationRejected, requestRejectedNoticeText: formatResult2, reapplyNoticeText: formatResult3, showAcceptTermsFlow: isExpeditedOnboardingGuild, wasRejectedInV1: null, requirementsFinePrintText: null, acceptTermsCheckboxText: null };
+  if (isExpeditedOnboardingGuild) {
+    if (!tmp19) {
+      tmp19 = isApplicationRejected;
     }
-    tmp40 = tmp16;
+    isExpeditedOnboardingGuild = tmp19;
   }
-  obj3.wasRejectedInV1 = tmp40;
-  obj3.requirementsFinePrintText = formatResult;
-  obj3.acceptTermsCheckboxText = creatorMonetizationAcceptTermsCheckboxText;
+  obj3[15] = isExpeditedOnboardingGuild;
+  obj3[16] = formatResult;
+  obj3[17] = creatorMonetizationAcceptTermsCheckboxText;
   return obj3;
 };

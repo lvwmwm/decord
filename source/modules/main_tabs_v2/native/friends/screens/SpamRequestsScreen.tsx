@@ -1,35 +1,41 @@
-// Module ID: 15577
-// Function ID: 119728
+// Module ID: 15611
+// Function ID: 15612
 // Name: SpamRequestsScreen
-// Dependencies: [31, 3802, 1850, 8789, 653, 33, 5497, 5517, 566, 15576, 8402, 480, 8335, 8796, 2]
+// Dependencies: [19, 3826, 1874, 8813, 676, 21, 5515, 5535, 589, 15610, 8426, 503, 8359, 8820, 2]
 // Exports: default
 
-// Module 15577 (SpamRequestsScreen)
-import result from "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_5 from "_isNativeReflectConstruct";
+// Module 15611 (SpamRequestsScreen)
+import noop from "noop";
+import upsertRelationship from "upsertRelationship";
+import mergeGuildAvatar from "mergeGuildAvatar";
 import { UserRowModes } from "UserRowModes";
 import { RelationshipTypes } from "ME";
 import { jsx } from "jsxProd";
 
 const require = arg1;
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/main_tabs_v2/native/friends/screens/SpamRequestsScreen.tsx");
+const result = require("mergeGuildAvatar").fileFinishedImporting("modules/main_tabs_v2/native/friends/screens/SpamRequestsScreen.tsx");
 
 export default function SpamRequestsScreen(navigation) {
   navigation = navigation.navigation;
-  const analyticsLocations = stateFromStoresArray(stateFromStoresArray1[6])(stateFromStoresArray(stateFromStoresArray1[7]).FRIEND_REQUESTS).analyticsLocations;
+  let analyticsLocations;
+  let stateFromStoresArray;
+  let stateFromStoresArray1;
+  let callback;
+  analyticsLocations = stateFromStoresArray(stateFromStoresArray1[6])(stateFromStoresArray(stateFromStoresArray1[7]).FRIEND_REQUESTS).analyticsLocations;
   let obj = analyticsLocations(stateFromStoresArray1[8]);
-  const items = [_isNativeReflectConstruct];
-  stateFromStoresArray = obj.useStateFromStoresArray(items, () => analyticsLocations(stateFromStoresArray1[9]).getPendingRelationshipIds(outer1_4.getMutableRelationships()).spamIds);
-  obj = {};
-  const tmp = stateFromStoresArray(stateFromStoresArray1[6]);
-  obj.name = analyticsLocations(stateFromStoresArray1[11]).ImpressionNames.FRIEND_REQUESTS_SPAM_INBOX;
+  const items = [upsertRelationship];
+  stateFromStoresArray = obj.useStateFromStoresArray(items, () => analyticsLocations(stateFromStoresArray1[9]).getPendingRelationshipIds(mutableRelationships.getMutableRelationships()).spamIds);
+  obj = { name: null };
+  const tmp = stateFromStoresArray1;
+  const tmp2 = stateFromStoresArray(stateFromStoresArray1[6]);
+  const tmp3 = analyticsLocations;
+  obj[0] = analyticsLocations(stateFromStoresArray1[11]).ImpressionNames.FRIEND_REQUESTS_SPAM_INBOX;
   stateFromStoresArray(stateFromStoresArray1[10])(obj);
-  const tmp3 = stateFromStoresArray(stateFromStoresArray1[10]);
-  const items1 = [closure_5];
+  const tmp5 = stateFromStoresArray(stateFromStoresArray1[10]);
+  const items1 = [mergeGuildAvatar];
   const items2 = [stateFromStoresArray];
   stateFromStoresArray1 = analyticsLocations(stateFromStoresArray1[8]).useStateFromStoresArray(items1, () => {
-    const mapped = stateFromStoresArray.map((arg0) => outer2_5.getUser(arg0));
+    const mapped = stateFromStoresArray.map((arg0) => user.getUser(arg0));
     return mapped.filter((arg0) => null != arg0);
   }, items2);
   const items3 = [analyticsLocations];
@@ -41,10 +47,12 @@ export default function SpamRequestsScreen(navigation) {
 
   }, []);
   if (0 !== stateFromStoresArray1.length) {
-    obj = { getItemProps: tmp7, getSectionProps: callback1 };
+    obj = { getItemProps: null, getSectionProps: null, sections: null };
+    obj[0] = tmp9;
+    obj[1] = callback1;
     const items5 = [stateFromStoresArray1.length];
-    obj.sections = items5;
-    return jsx(analyticsLocations(stateFromStoresArray1[13]).UsersFastList, { getItemProps: tmp7, getSectionProps: callback1 });
+    obj[2] = items5;
+    return jsx(tmp3(tmp[13]).UsersFastList, { getItemProps: null, getSectionProps: null, sections: null });
   } else {
     navigation.goBack();
   }

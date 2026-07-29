@@ -1,27 +1,27 @@
-// Module ID: 11991
-// Function ID: 92558
+// Module ID: 12015
+// Function ID: 12016
 // Name: UserProfileActivityTimebar
-// Dependencies: [31, 27, 653, 33, 4165, 689, 1324, 11992, 4161, 2]
+// Dependencies: [19, 17, 676, 21, 4189, 712, 1348, 12016, 4185, 2]
 // Exports: default
 
-// Module 11991 (UserProfileActivityTimebar)
-import "result";
+// Module 12015 (UserProfileActivityTimebar)
+import "noop";
 import { View } from "get ActivityIndicator";
 import { Fonts } from "ME";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_5;
+let c5;
 let closure_6;
 const require = arg1;
-({ jsx: closure_5, jsxs: closure_6 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_MOD_MUTED, borderRadius: require("_createForOfIteratorHelperLoose").radii.xs, height: 4, marginBottom: 4 };
-_createForOfIteratorHelperLoose.bar = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.progress = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.ACTIVITY_TIMEBAR_PROGRESS_BACKGROUND, borderRadius: require("_createForOfIteratorHelperLoose").radii.xs, height: "100%", minWidth: 4 };
-_createForOfIteratorHelperLoose.textRow = { flexDirection: "row", justifyContent: "space-between" };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-let obj1 = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.ACTIVITY_TIMEBAR_PROGRESS_BACKGROUND, borderRadius: require("_createForOfIteratorHelperLoose").radii.xs, height: "100%", minWidth: 4 };
+({ jsx: c5, jsxs: closure_6 } = jsxProd);
+createCacheKey = { bar: null, progress: null, textRow: null };
+createCacheKey = { backgroundColor: require("Themes").colors.BACKGROUND_MOD_MUTED, borderRadius: require("Themes").radii.xs, height: 4, marginBottom: 4 };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { backgroundColor: require("Themes").colors.ACTIVITY_TIMEBAR_PROGRESS_BACKGROUND, borderRadius: require("Themes").radii.xs, height: "100%", minWidth: 4 };
+createCacheKey[2] = { flexDirection: "row", justifyContent: "space-between" };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+const obj1 = { backgroundColor: require("Themes").colors.ACTIVITY_TIMEBAR_PROGRESS_BACKGROUND, borderRadius: require("Themes").radii.xs, height: "100%", minWidth: 4 };
 const result = require("ME").fileFinishedImporting("modules/user_profile/native/UserProfileActivityTimebar.tsx");
 
 export default function UserProfileActivityTimebar(arg0) {
@@ -32,44 +32,42 @@ export default function UserProfileActivityTimebar(arg0) {
   let start;
   let style;
   ({ start, end, style } = arg0);
-  const tmp = importDefault(1324)("UserProfileActivityTimebar");
-  const tmp2 = _createForOfIteratorHelperLoose();
-  let tmp4;
-  ({ elapsed, duration, percentage } = importDefault(11992)({ start, end }));
-  if (!tmp) {
-    let obj = { fontFamily: Fonts.CODE_NORMAL };
-    tmp4 = obj;
+  const tmp2 = importDefault(1348)("UserProfileActivityTimebar");
+  const tmp3 = createCacheKey();
+  let tmp5;
+  ({ elapsed, duration, percentage } = importDefault(12016)({ start, end }));
+  if (!tmp2) {
+    let obj = { fontFamily: null };
+    obj[0] = Fonts.CODE_NORMAL;
+    tmp5 = obj;
   }
-  obj = { style };
-  obj = { style: tmp2.bar, children: callback(View, { style: items }) };
-  items = [tmp2.progress, { width: `${100 * percentage}%` }];
+  obj = { style, children: null };
+  obj = { style: tmp3.bar, children: callback(View, { style: items }) };
+  items = [tmp3.progress, { width: `${100 * percentage}%` }];
   const items1 = [callback(View, obj), ];
-  const obj2 = { style: tmp2.textRow };
-  const obj3 = { variant: "text-xs/normal", style: tmp4, tabularNumbers: tmp };
+  const obj2 = { style: tmp3.textRow, children: null };
+  const obj3 = { variant: "text-xs/normal", style: tmp5, tabularNumbers: null, color: null, children: null };
+  obj3[2] = tmp2;
   let str;
-  if (tmp) {
+  if (tmp2) {
     str = "text-subtle";
   }
-  obj3.color = str;
-  const obj1 = { width: `${100 * percentage}%` };
-  const tmp3 = importDefault(11992)({ start, end });
-  const tmp8 = callback;
-  const tmp9 = tmp;
-  obj3.children = require(11992) /* extractTimeComponents */.formatTime(elapsed);
-  const items2 = [tmp8(require(4161) /* Text */.Text, obj3), ];
-  const obj4 = { variant: "text-xs/normal", style: tmp4, tabularNumbers: tmp };
+  obj3[3] = str;
+  let tmp10Result = tmp10(12016);
+  obj3[4] = tmp10Result.formatTime(elapsed);
+  const items2 = [callback(require(4185) /* Text */.Text, obj3), ];
+  const obj4 = { variant: "text-xs/normal", style: tmp5, tabularNumbers: null, color: null, children: null };
+  obj4[2] = tmp2;
   let str2;
-  if (tmp) {
+  if (tmp2) {
     str2 = "text-subtle";
   }
-  obj4.color = str2;
-  const obj7 = require(11992) /* extractTimeComponents */;
-  const tmp10 = callback;
-  const tmp11 = tmp;
-  obj4.children = require(11992) /* extractTimeComponents */.formatTime(duration);
-  items2[1] = tmp10(require(4161) /* Text */.Text, obj4);
-  obj2.children = items2;
+  obj4[3] = str2;
+  tmp10Result = tmp10(12016);
+  obj4[4] = tmp10Result.formatTime(duration);
+  items2[1] = callback(require(4185) /* Text */.Text, obj4);
+  obj2[1] = items2;
   items1[1] = closure_6(View, obj2);
-  obj.children = items1;
+  obj[1] = items1;
   return closure_6(View, obj);
 };

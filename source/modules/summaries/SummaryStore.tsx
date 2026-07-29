@@ -1,360 +1,270 @@
-// Module ID: 9481
-// Function ID: 73792
-// Name: _isNativeReflectConstruct
-// Dependencies: [57, 153, 6, 7, 15, 17, 18, 4079, 6141, 1348, 1838, 4177, 1907, 4360, 1850, 9482, 6145, 21, 664, 9483, 566, 686, 9484, 22, 2]
+// Module ID: 9505
+// Function ID: 9506
+// Name: handleQuickSwitcherUpdate
+// Dependencies: [32, 4103, 6159, 1372, 1862, 4201, 1931, 4385, 1874, 9506, 6163, 589, 11, 687, 9507, 709, 9508, 12, 2]
 
-// Module 9481 (_isNativeReflectConstruct)
+// Module 9505 (handleQuickSwitcherUpdate)
 import _slicedToArray from "_slicedToArray";
-import "_readOnlyError";
-import _inherits from "_inherits";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import result from "result";
-import DISCORD_EPOCH from "DISCORD_EPOCH";
-import set from "set";
-import closure_9 from "_isNativeReflectConstruct";
-import closure_10 from "_isNativeReflectConstruct";
-import closure_11 from "_isNativeReflectConstruct";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import closure_13 from "_isNativeReflectConstruct";
-import closure_14 from "_isNativeReflectConstruct";
-import closure_15 from "_isNativeReflectConstruct";
-import closure_16 from "_isNativeReflectConstruct";
+import getHash from "getHash";
+import getGeneralQueryResultTypes from "getGeneralQueryResultTypes";
+import ensureGuildLoaded from "ensureGuildLoaded";
+import createGuildRecordFromRust from "createGuildRecordFromRust";
+import generateOldThreadCutoff from "generateOldThreadCutoff";
+import handleConnectionOpen from "handleConnectionOpen";
+import updateUserGuildSettingsInternal from "updateUserGuildSettingsInternal";
+import mergeGuildAvatar from "mergeGuildAvatar";
 import { SUMMARY_POLL_INTERVAL } from "result";
+import { PersistedStore } from "initialize";
 
 const require = arg1;
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
-  }
-  const result = _isNativeReflectConstruct();
-}
 function handleQuickSwitcherUpdate() {
   const results = props.getProps().results;
   const found = results.filter((type) => {
-    let tmp = type.type === outer1_0(outer1_2[16]).AutocompleterResultTypes.TEXT_CHANNEL;
+    let tmp = type.type === callback(table[10]).AutocompleterResultTypes.TEXT_CHANNEL;
     if (tmp) {
       tmp = 0 === type.record.type;
     }
     return tmp;
   });
-  let closure_29 = found.map((record) => record.record.id);
+  let closure_24 = found.map((record) => record.record.id);
 }
 let obj = { FETCHING: "fetching", OK: "ok", ERROR: "error" };
-let closure_23 = {};
-let closure_24 = {};
-let closure_25 = {};
-let closure_26 = [];
-let closure_27 = {};
-obj = { status: null, lastRequest: null, lastResponse: null };
-obj.status = obj.OK;
-let closure_29 = [];
-let closure_30 = [];
-let tmp3 = ((PersistedStore) => {
-  class SummaryStore {
-    constructor() {
-      self = this;
-      tmp = outer1_4(this, SummaryStore);
-      obj = outer1_7(SummaryStore);
-      tmp2 = outer1_6;
-      if (outer1_31()) {
-        tmp6 = globalThis;
-        _Reflect = Reflect;
-        tmp7 = outer1_7;
-        tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, outer1_7(self).constructor);
-      } else {
-        tmp3 = arguments;
-        tmp4 = arguments;
-        constructResult = obj(...arguments);
+let closure_18 = {};
+let closure_19 = {};
+let closure_20 = {};
+let closure_21 = [];
+let closure_22 = {};
+let closure_23 = { status: obj.OK, lastRequest: null, lastResponse: null };
+let closure_24 = [];
+let closure_25 = [];
+class SummaryStore extends PersistedStore {
+}
+const prototype = SummaryStore.prototype;
+prototype["getState"] = function getState() {
+  return { shouldShowTopicsBar: closure_3 };
+};
+prototype["initialize"] = function initialize(shouldShowTopicsBar) {
+  let flag;
+  if (shouldShowTopicsBar != null) {
+    flag = shouldShowTopicsBar.shouldShowTopicsBar;
+  }
+  if (flag == null) {
+    flag = true;
+  }
+  this.waitFor(ensureGuildLoaded, getHash, createGuildRecordFromRust, getGeneralQueryResultTypes, generateOldThreadCutoff, handleConnectionOpen, updateUserGuildSettingsInternal, mergeGuildAvatar);
+  const items = [getGeneralQueryResultTypes];
+  this.syncWith(items, handleQuickSwitcherUpdate);
+};
+prototype["allSummaries"] = function allSummaries() {
+  return closure_18;
+};
+prototype["topSummaries"] = function topSummaries() {
+  const values = Object.values(closure_18);
+  const found = values.flat().filter((people) => {
+    let tmp = people.people.length > 1;
+    if (tmp) {
+      const _Date = Date;
+      const obj = callback(11);
+      const date = new Date();
+      const time = date.getTime();
+      tmp = callback(11).extractTimestamp(people.endId) > time - 5 * callback(687).Millis.HOUR;
+      const extractTimestampResult = callback(11).extractTimestamp(people.endId);
+    }
+    return tmp;
+  });
+  return found.sort((endId, endId2) => {
+    const obj = callback(11);
+    const extractTimestampResult = callback(11).extractTimestamp(endId2.endId);
+    return extractTimestampResult - callback(11).extractTimestamp(endId.endId);
+  });
+};
+prototype["summaries"] = function summaries(channelId) {
+  let tmp = dependencyMap2[channelId];
+  if (tmp == null) {
+    tmp = closure_25;
+  }
+  return tmp;
+};
+prototype["shouldShowTopicsBar"] = function shouldShowTopicsBar() {
+  return closure_3;
+};
+prototype["findSummary"] = function findSummary(channelId, summaryId) {
+  let closure_0 = summaryId;
+  let found = this.summaries(channelId).find((id) => id.id === closure_0);
+  if (found == null) {
+    found = null;
+  }
+  return found;
+};
+prototype["selectedSummary"] = function selectedSummary(id) {
+  let findSummaryResult = null;
+  if (null != closure_6) {
+    findSummaryResult = null;
+    if (closure_6.channelId === id) {
+      findSummaryResult = null;
+      if (null != closure_6.summaryId) {
+        let summaryId;
+        const self = this;
+        if (closure_6 != null) {
+          summaryId = closure_6.summaryId;
+        }
+        findSummaryResult = this.findSummary(id, summaryId);
       }
-      return tmp2(self, constructResult);
     }
   }
-  callback2(SummaryStore, PersistedStore);
-  let obj = {
-    key: "getState",
-    value() {
-      return { shouldShowTopicsBar: outer1_18 };
+  return findSummaryResult;
+};
+prototype["summaryFeedback"] = function summaryFeedback(arg0) {
+  let tmp = null;
+  if (null != arg0) {
+    tmp = table[arg0.id];
+  }
+  return tmp;
+};
+prototype["isFetching"] = function isFetching(arg0, arg1) {
+  if (null != arg1) {
+    let summaryId;
+    if (dependencyMap3[arg0] != null) {
+      summaryId = tmp6.summaryId;
     }
-  };
-  let items = [obj, , , , , , , , , , , , , , , , , ];
-  obj = {
-    key: "initialize",
-    value(shouldShowTopicsBar) {
-      const self = this;
-      shouldShowTopicsBar = undefined;
-      if (null != shouldShowTopicsBar) {
-        shouldShowTopicsBar = shouldShowTopicsBar.shouldShowTopicsBar;
+    let tmp4 = summaryId === arg1;
+  } else {
+    let fetching;
+    if (dependencyMap3[arg0] != null) {
+      fetching = tmp2.fetching;
+    }
+    tmp4 = true === fetching;
+  }
+  return tmp4;
+};
+prototype["status"] = function status(arg0) {
+  return dependencyMap3[arg0];
+};
+prototype["shouldFetch"] = function shouldFetch(arg0, arg1) {
+  channel = channel.getChannel(arg0);
+  if (obj.canSeeChannelSummaries(channel)) {
+    if (null != arg1) {
+      let num3;
+      if (tmp != null) {
+        num3 = tmp.summaryIdLastRequestedAt;
       }
-      const outer1_18 = null == shouldShowTopicsBar || shouldShowTopicsBar;
-      self.waitFor(outer1_11, outer1_9, outer1_12, outer1_10, outer1_13, outer1_14, outer1_15, outer1_16);
-      const items = [outer1_10];
-      self.syncWith(items, outer1_32);
-    }
-  };
-  items[1] = obj;
-  obj = {
-    key: "allSummaries",
-    value() {
-      return outer1_23;
-    }
-  };
-  items[2] = obj;
-  items[3] = {
-    key: "topSummaries",
-    value: function topSummaries() {
-      const values = Object.values(outer1_23);
-      const found = values.flat().filter((people) => {
-        let tmp = people.people.length > 1;
-        if (tmp) {
-          const _Date = Date;
-          const obj = outer2_1(outer2_2[17]);
-          const date = new Date();
-          const time = date.getTime();
-          tmp = outer2_1(outer2_2[17]).extractTimestamp(people.endId) > time - 5 * outer2_1(outer2_2[18]).Millis.HOUR;
-          const extractTimestampResult = outer2_1(outer2_2[17]).extractTimestamp(people.endId);
-        }
-        return tmp;
-      });
-      return found.sort((endId, endId2) => {
-        const obj = outer2_1(outer2_2[17]);
-        const extractTimestampResult = outer2_1(outer2_2[17]).extractTimestamp(endId2.endId);
-        return extractTimestampResult - outer2_1(outer2_2[17]).extractTimestamp(endId.endId);
-      });
-    }
-  };
-  items[4] = {
-    key: "summaries",
-    value(arg0) {
-      let tmp = outer1_23[arg0];
-      if (null == tmp) {
-        tmp = outer1_30;
+      if (num3 == null) {
+        num3 = 0;
       }
-      return tmp;
-    }
-  };
-  items[5] = {
-    key: "shouldShowTopicsBar",
-    value() {
-      return outer1_18;
-    }
-  };
-  items[6] = {
-    key: "findSummary",
-    value(arg0, arg1) {
-      let closure_0 = arg1;
-      const found = this.summaries(arg0).find((id) => id.id === closure_0);
-      let tmp2 = null;
-      if (null != found) {
-        tmp2 = found;
+      const _Date = Date;
+      let summaryId;
+      const diff = Date.now() - num3;
+      if (tmp != null) {
+        summaryId = tmp.summaryId;
       }
-      return tmp2;
-    }
-  };
-  items[7] = {
-    key: "selectedSummary",
-    value(arg0) {
-      const self = this;
-      let findSummaryResult = null;
-      if (null != outer1_21) {
-        findSummaryResult = null;
-        if (outer1_21.channelId === arg0) {
-          findSummaryResult = null;
-          if (null != outer1_21.summaryId) {
-            let summaryId;
-            if (null != outer1_21) {
-              summaryId = outer1_21.summaryId;
-            }
-            findSummaryResult = self.findSummary(arg0, summaryId);
-          }
-        }
+      let tmp12 = arg1 !== summaryId;
+      if (!tmp12) {
+        tmp12 = diff > SUMMARY_POLL_INTERVAL;
       }
-      return findSummaryResult;
-    }
-  };
-  items[8] = {
-    key: "summaryFeedback",
-    value(arg0) {
-      let tmp = null;
-      if (null != arg0) {
-        tmp = outer1_25[arg0.id];
+      return tmp12;
+    } else {
+      let num;
+      if (tmp != null) {
+        num = tmp.lastReceivedAt;
       }
-      return tmp;
-    }
-  };
-  items[9] = {
-    key: "isFetching",
-    value(arg0, arg1) {
-      if (null != arg1) {
-        let summaryId;
-        if (null != outer1_24[arg0]) {
-          summaryId = tmp6.summaryId;
-        }
-        let tmp4 = summaryId === arg1;
-      } else {
-        let fetching;
-        if (null != outer1_24[arg0]) {
-          fetching = tmp2.fetching;
-        }
-        tmp4 = true === fetching;
+      if (num == null) {
+        num = 0;
       }
-      return tmp4;
-    }
-  };
-  items[10] = {
-    key: "status",
-    value(arg0) {
-      return outer1_24[arg0];
-    }
-  };
-  items[11] = {
-    key: "shouldFetch",
-    value(channelId) {
-      const channel = outer1_11.getChannel(channelId);
-      if (obj.canSeeChannelSummaries(channel)) {
-        if (null != arg1) {
-          let prop;
-          if (null != tmp) {
-            prop = tmp.summaryIdLastRequestedAt;
-          }
-          let num3 = 0;
-          if (null != prop) {
-            num3 = prop;
-          }
-          const _Date = Date;
-          let summaryId;
-          const diff = Date.now() - num3;
-          if (null != tmp) {
-            summaryId = tmp.summaryId;
-          }
-          let tmp12 = arg1 !== summaryId;
-          if (!tmp12) {
-            tmp12 = diff > outer1_17;
-          }
-          return tmp12;
-        } else {
-          let lastReceivedAt;
-          if (null != tmp) {
-            lastReceivedAt = tmp.lastReceivedAt;
-          }
-          let num2 = 0;
-          if (null != lastReceivedAt) {
-            num2 = lastReceivedAt;
-          }
-          let fetching;
-          if (null != tmp) {
-            fetching = tmp.fetching;
-          }
-          return !Boolean(fetching) && 0 === num2;
-        }
-      } else {
-        return false;
+      let fetching;
+      if (tmp != null) {
+        fetching = tmp.fetching;
       }
-      obj = SummaryStore(outer1_2[19]);
-    }
-  };
-  items[12] = {
-    key: "channelAffinities",
-    value() {
-      return outer1_26;
-    }
-  };
-  items[13] = {
-    key: "channelAffinitiesById",
-    value() {
-      return outer1_27;
-    }
-  };
-  items[14] = {
-    key: "channelAffinitiesStatus",
-    value() {
-      return outer1_28;
-    }
-  };
-  items[15] = {
-    key: "shouldFetchChannelAffinities",
-    value() {
-      let tmp = outer1_28.status !== outer1_22.FETCHING;
-      if (tmp) {
-        let tmp4 = null != outer1_28.lastResponse;
-        if (tmp4) {
-          const _Date = Date;
-          const diff = Date.now() - outer1_28.lastResponse;
-          tmp4 = diff < 30 * outer1_1(outer1_2[18]).Millis.SECOND;
-        }
-        tmp = !tmp4;
+      const BooleanResult = Boolean(fetching);
+      let tmp8 = !BooleanResult;
+      if (!BooleanResult) {
+        tmp8 = 0 === num;
       }
-      return tmp;
+      return tmp8;
     }
-  };
-  items[16] = {
-    key: "defaultChannelIds",
-    value(numChannels) {
-      let withChannelAffinities;
-      let withQuickSwitcher;
-      let withUnreads;
-      let num = numChannels.numChannels;
-      ({ withQuickSwitcher, withChannelAffinities, withUnreads } = numChannels);
-      if (num === undefined) {
-        num = 25;
-      }
-      const items = [];
-      let combined = items;
-      if (withQuickSwitcher) {
-        combined = items.concat(outer1_29);
-      }
-      let combined1 = combined;
-      if (withChannelAffinities) {
-        combined1 = combined.concat(outer1_26.map((channel_id) => channel_id.channel_id));
-      }
-      let found = combined1;
-      if (withUnreads) {
-        found = combined1.filter((channelId) => {
-          const channel = outer2_11.getChannel(channelId);
-          let hasUnreadResult = null != channel;
-          if (hasUnreadResult) {
-            hasUnreadResult = !outer2_15.isChannelMuted(channel.guild_id, channelId);
-          }
-          if (hasUnreadResult) {
-            hasUnreadResult = outer2_13.hasUnread(channelId);
-          }
-          return hasUnreadResult;
-        });
-      }
-      const found1 = found.filter((channelId) => {
-        const channel = outer2_11.getChannel(channelId);
-        return SummaryStore(outer2_2[19]).canSeeChannelSummaries(channel, false, false);
-      });
-      return found1.slice(0, num);
+  } else {
+    return false;
+  }
+  obj = require(9507) /* canSeeChannelSummaries */;
+};
+prototype["channelAffinities"] = function channelAffinities() {
+  return closure_21;
+};
+prototype["channelAffinitiesById"] = function channelAffinitiesById() {
+  return closure_22;
+};
+prototype["channelAffinitiesStatus"] = function channelAffinitiesStatus() {
+  return closure_23;
+};
+prototype["shouldFetchChannelAffinities"] = function shouldFetchChannelAffinities() {
+  let tmp = closure_23.status !== obj.FETCHING;
+  if (tmp) {
+    let tmp4 = null != closure_23.lastResponse;
+    if (tmp4) {
+      const _Date = Date;
+      const diff = Date.now() - closure_23.lastResponse;
+      tmp4 = diff < 30 * importDefault(687).Millis.SECOND;
     }
-  };
-  items[17] = {
-    key: "visibleSummaryIndex",
-    value() {
-      return outer1_20;
-    }
-  };
-  return callback(SummaryStore, items);
-})(require("initialize").PersistedStore);
-tmp3.persistKey = "SummaryStore";
+    tmp = !tmp4;
+  }
+  return tmp;
+};
+prototype["defaultChannelIds"] = function defaultChannelIds(numChannels) {
+  let withChannelAffinities;
+  let withQuickSwitcher;
+  let withUnreads;
+  let num = numChannels.numChannels;
+  ({ withQuickSwitcher, withChannelAffinities, withUnreads } = numChannels);
+  if (num === undefined) {
+    num = 25;
+  }
+  const items = [];
+  let combined = items;
+  if (withQuickSwitcher) {
+    combined = items.concat(closure_24);
+  }
+  let combined1 = combined;
+  if (withChannelAffinities) {
+    combined1 = combined.concat(closure_21.map((channel_id) => channel_id.channel_id));
+  }
+  let found = combined1;
+  if (withUnreads) {
+    found = combined1.filter((id) => {
+      const channel = store.getChannel(id);
+      let hasUnreadResult = null != channel;
+      if (hasUnreadResult) {
+        hasUnreadResult = !channelMuted.isChannelMuted(channel.guild_id, id);
+      }
+      if (hasUnreadResult) {
+        hasUnreadResult = generateOldThreadCutoff.hasUnread(id);
+      }
+      return hasUnreadResult;
+    });
+  }
+  const found1 = found.filter((arg0) => {
+    const channel = store.getChannel(arg0);
+    return callback(table[14]).canSeeChannelSummaries(channel, false, false);
+  });
+  return found1.slice(0, num);
+};
+prototype["visibleSummaryIndex"] = function visibleSummaryIndex() {
+  return closure_5;
+};
+SummaryStore.persistKey = "SummaryStore";
 obj = {
   CONNECTION_OPEN() {
     return false;
   },
   CHANNEL_SELECT(channelId) {
     channelId = undefined;
-    if (null != c21) {
-      channelId = c21.channelId;
+    if (c6 != null) {
+      channelId = c6.channelId;
     }
     if (channelId !== channelId.channelId) {
-      c21 = null;
+      c6 = null;
     }
   },
   TOGGLE_TOPICS_BAR() {
-    closure_18 = !closure_18;
+    closure_3 = !closure_3;
   },
   RECEIVE_CHANNEL_SUMMARY(arg0) {
     let channelId;
@@ -367,16 +277,17 @@ obj = {
     if (null != summary) {
       const _Object = Object;
       if (Object.keys(summary).length > 0) {
-        summaryFromServer = summaryFromServer(9484).createSummaryFromServer(summary, channelId);
+        let obj = summaryFromServer(9508);
+        summaryFromServer = obj.createSummaryFromServer(summary, channelId);
         let items = dependencyMap2[channelId];
-        if (null == items) {
+        if (items == null) {
           items = [];
         }
         const items1 = [];
         HermesBuiltin.arraySpread(items, 0);
-        const findIndexResult = items1.findIndex((id) => {
+        let findIndexResult = items1.findIndex((id) => {
           id = undefined;
-          if (null != summaryFromServer) {
+          if (summaryFromServer != null) {
             id = summaryFromServer.id;
           }
           return id.id === id;
@@ -386,64 +297,60 @@ obj = {
         } else {
           items1.push(summaryFromServer);
         }
+        findIndexResult = dependencyMap2;
         dependencyMap2[channelId] = items1;
-        const obj3 = summaryFromServer(9484);
       }
     }
-    let obj = {};
-    let tmp7 = dependencyMap3[channelId];
-    if (null == tmp7) {
+    obj = dependencyMap3[channelId];
+    if (obj == null) {
       obj = { fetching: false };
-      tmp7 = obj;
     }
-    const merged = Object.assign(tmp7);
-    obj["summaryId"] = undefined;
-    obj["summaryIdLastReceivedAt"] = receivedAt;
-    obj["summaryIdError"] = error;
+    obj = {};
+    const merged = Object.assign(obj);
+    obj.summaryId = undefined;
+    obj.summaryIdLastReceivedAt = receivedAt;
+    obj.summaryIdError = error;
     dependencyMap3[channelId] = obj;
   },
   REQUEST_CHANNEL_SUMMARY(channelId) {
     let requestedAt;
     let summaryId;
     channelId = channelId.channelId;
-    let obj = {};
-    let tmp2 = dependencyMap3[channelId];
+    let obj = dependencyMap3[channelId];
     ({ summaryId, requestedAt } = channelId);
-    if (null == tmp2) {
+    if (obj == null) {
       obj = { fetching: false };
-      tmp2 = obj;
     }
-    const merged = Object.assign(tmp2);
-    obj["summaryId"] = summaryId;
-    obj["summaryIdLastRequestedAt"] = requestedAt;
+    obj = {};
+    const merged = Object.assign(obj);
+    obj.summaryId = summaryId;
+    obj.summaryIdLastRequestedAt = requestedAt;
     dependencyMap3[channelId] = obj;
   },
-  RECEIVE_CHANNEL_SUMMARIES(arg0) {
+  RECEIVE_CHANNEL_SUMMARIES(error) {
     let channelId;
-    let error;
-    let receivedAt;
     let summaries;
-    ({ summaries, channelId } = arg0);
-    ({ error, receivedAt } = arg0);
+    ({ summaries, channelId } = error);
+    error = error.error;
     const found = summaries.filter((arg0) => Object.keys(arg0).length > 0);
-    const mapped = found.map((summary) => channelId(outer1_2[22]).createSummaryFromServer(summary, channelId));
-    if (null != closure_21) {
-      if (closure_21.channelId === channelId) {
+    const mapped = found.map((summary) => channelId(outer1_2[16]).createSummaryFromServer(summary, channelId));
+    if (null != closure_6) {
+      if (closure_6.channelId === channelId) {
         if (!mapped.some((id) => {
           let summaryId;
-          if (null != outer1_21) {
-            summaryId = outer1_21.summaryId;
+          if (closure_6 != null) {
+            summaryId = closure_6.summaryId;
           }
           return id.id === summaryId;
         })) {
           let items = dependencyMap2[channelId];
-          if (null == items) {
+          if (items == null) {
             items = [];
           }
           const found1 = items.find((id) => {
             let summaryId;
-            if (null != outer1_21) {
-              summaryId = outer1_21.summaryId;
+            if (closure_6 != null) {
+              summaryId = closure_6.summaryId;
             }
             return id.id === summaryId;
           });
@@ -453,44 +360,44 @@ obj = {
         }
       }
     }
-    let obj = channelId(22);
-    dependencyMap2[channelId] = obj.sortBy(mapped, (startId) => outer1_1(outer1_2[17]).extractTimestamp(startId.startId)).reverse();
+    let obj = channelId(12);
+    dependencyMap2[channelId] = obj.sortBy(mapped, (startId) => callback(table[12]).extractTimestamp(startId.startId)).reverse();
     obj = {};
     const merged = Object.assign(dependencyMap3[channelId]);
-    obj["fetching"] = false;
-    obj["error"] = undefined;
-    obj["lastReceivedAt"] = receivedAt;
+    obj.fetching = false;
+    obj.error = undefined;
+    obj.lastReceivedAt = error.receivedAt;
     if (null != error) {
       obj.error = error;
     }
     dependencyMap3[channelId] = obj;
   },
   REQUEST_CHANNEL_SUMMARIES(requestedAt) {
-    let obj = {};
-    obj = dependencyMap3[requestedAt.channelId];
-    if (null == obj) {
+    let obj = dependencyMap3[requestedAt.channelId];
+    if (obj == null) {
       obj = {};
     }
+    obj = {};
     const merged = Object.assign(obj);
-    obj["fetching"] = true;
-    obj["lastRequestedAt"] = requestedAt.requestedAt;
+    obj.fetching = true;
+    obj.lastRequestedAt = requestedAt.requestedAt;
     dependencyMap3[requestedAt.channelId] = obj;
   },
   SET_HIGHLIGHTED_SUMMARY(channelId) {
     let summaryId;
-    if (null == closure_19) {
+    if (null == closure_4) {
       if (null == channelId.channelId) {
         return false;
       }
     }
     channelId = undefined;
-    if (null != closure_19) {
-      channelId = closure_19.channelId;
+    if (closure_4 != null) {
+      channelId = closure_4.channelId;
     }
     if (channelId.channelId === channelId) {
       summaryId = undefined;
-      if (null != closure_19) {
-        summaryId = closure_19.summaryId;
+      if (closure_4 != null) {
+        summaryId = closure_4.summaryId;
       }
       if (channelId.summaryId === summaryId) {
         return false;
@@ -498,29 +405,29 @@ obj = {
     }
     let tmp3 = null;
     if (null != channelId.channelId) {
-      const obj = {};
-      ({ channelId: obj.channelId, summaryId } = channelId);
-      let tmp4 = null;
-      if (null != summaryId) {
-        tmp4 = summaryId;
+      const obj = { channelId: null, summaryId: null };
+      ({ channelId: obj[0], summaryId } = channelId);
+      if (summaryId == null) {
+        summaryId = null;
       }
-      obj.summaryId = tmp4;
+      obj[1] = summaryId;
       tmp3 = obj;
     }
-    closure_19 = tmp3;
+    closure_4 = tmp3;
     if (null != tmp3) {
-      if (closure_19.channelId === channelId.channelId) {
-        if (null != closure_19.summaryId) {
+      if (closure_4.channelId === channelId.channelId) {
+        if (null != closure_4.summaryId) {
           let findIndexResult;
-          if (null != dependencyMap2[closure_19.channelId]) {
+          if (dependencyMap2[closure_4.channelId] != null) {
             findIndexResult = obj2.findIndex((id) => {
               let summaryId;
-              if (null != tmp3) {
+              if (tmp3 != null) {
                 summaryId = tmp3.summaryId;
               }
               return id.id === summaryId;
             });
           }
+          let closure_5 = findIndexResult;
         }
       }
     }
@@ -529,15 +436,15 @@ obj = {
     let closure_0 = arg0;
     channelId = channelId.getChannelId();
     if (null != channelId) {
-      if (null != closure_19) {
-        if (closure_19.channelId === channelId) {
-          if (null != closure_19.summaryId) {
+      if (null != closure_4) {
+        if (closure_4.channelId === channelId) {
+          if (null != closure_4.summaryId) {
             let findIndexResult;
-            if (null != dependencyMap2[closure_19.channelId]) {
+            if (dependencyMap2[closure_4.channelId] != null) {
               findIndexResult = obj2.findIndex((id) => {
                 let summaryId;
-                if (null != outer1_19) {
-                  summaryId = outer1_19.summaryId;
+                if (summaryId != null) {
+                  summaryId = summaryId.summaryId;
                 }
                 return id.id === summaryId;
               });
@@ -547,7 +454,7 @@ obj = {
         }
       }
       findIndexResult1 = undefined;
-      if (null != dependencyMap2[channelId]) {
+      if (dependencyMap2[channelId] != null) {
         findIndexResult1 = obj.findIndex((endId) => {
           let bottomVisibleMessage;
           let topVisibleMessage;
@@ -572,25 +479,25 @@ obj = {
     let tmp = null;
     if (null != channelId) {
       channelId = undefined;
-      if (null != obj) {
+      if (obj != null) {
         channelId = obj.channelId;
       }
       let tmp3 = channelId !== channelId;
       if (!tmp3) {
         let summaryId;
-        if (null != obj) {
+        if (obj != null) {
           summaryId = obj.summaryId;
         }
         tmp3 = channelId.summaryId !== summaryId;
       }
       if (tmp3) {
-        obj = { channelId };
-        summaryId = channelId.summaryId;
-        let tmp5 = null;
-        if (null != summaryId) {
-          tmp5 = summaryId;
+        obj = { channelId: null, summaryId: null };
+        obj[0] = channelId;
+        let summaryId1 = channelId.summaryId;
+        if (summaryId1 == null) {
+          summaryId1 = null;
         }
-        obj.summaryId = tmp5;
+        obj[1] = summaryId1;
       }
       tmp = tmp3;
     }
@@ -601,7 +508,7 @@ obj = {
     let summary;
     ({ summary, rating } = arg0);
     if (null != rating) {
-      closure_25[summary.id] = rating;
+      closure_20[summary.id] = rating;
     } else {
       const id = summary.id;
       delete tmp2[tmp];
@@ -610,8 +517,8 @@ obj = {
   REQUEST_CHANNEL_AFFINITIES() {
     const obj = {};
     const merged = Object.assign(obj);
-    obj["status"] = obj.FETCHING;
-    obj["lastRequest"] = Date.now();
+    obj.status = obj.FETCHING;
+    obj.lastRequest = Date.now();
   },
   RECEIVE_CHANNEL_AFFINITIES(affinities) {
     affinities = affinities.affinities;
@@ -620,29 +527,29 @@ obj = {
       let reduced = {};
       let obj = {};
       const merged = Object.assign(obj);
-      obj["status"] = obj.ERROR;
+      obj.status = obj.ERROR;
       const _Date2 = Date;
-      obj["lastResponse"] = Date.now();
+      obj.lastResponse = Date.now();
     } else {
       items = affinities;
-      if (null == affinities) {
+      if (affinities == null) {
         items = [];
       }
       reduced = undefined;
-      if (null != affinities) {
+      if (affinities != null) {
         reduced = affinities.reduce((arg0, channel_id) => {
           arg0[channel_id.channel_id] = channel_id.affinity;
           return arg0;
         }, {});
       }
-      if (null == reduced) {
+      if (reduced == null) {
         reduced = {};
       }
       obj = {};
       const merged1 = Object.assign(obj);
-      obj["status"] = obj.OK;
+      obj.status = obj.OK;
       const _Date = Date;
-      obj["lastResponse"] = Date.now();
+      obj.lastResponse = Date.now();
     }
   },
   REQUEST_CHANNEL_SUMMARIES_BULK(arg0) {
@@ -651,14 +558,14 @@ obj = {
     ({ channelIds, requestedAt: require } = arg0);
     const reduced = channelIds.reduce((arg0, arg1) => {
       obj = obj[arg1];
-      if (null == obj) {
+      if (obj == null) {
         obj = {};
       }
       obj = {};
       const merged = Object.assign(obj);
-      obj["fetching"] = true;
-      obj["lastRequestedAt"] = closure_0;
-      obj["error"] = undefined;
+      obj.fetching = true;
+      obj.lastRequestedAt = closure_0;
+      obj.error = undefined;
       arg0[arg1] = obj;
       return arg0;
     }, {});
@@ -671,22 +578,23 @@ obj = {
     let require;
     ({ receivedAt: require, error: importDefault } = requestArgs);
     const channelIds = requestArgs.requestArgs.channelIds;
-    let obj = importDefault(22);
-    const dependencyMap = obj.toPairs(requestArgs.summaries).reduce((arg0, arg1) => {
-      const tmp = outer1_3(arg1, 2);
+    let dependencyMap;
+    let obj = importDefault(12);
+    dependencyMap = obj.toPairs(requestArgs.summaries).reduce((arg0, arg1) => {
+      const tmp = callback2(arg1, 2);
       const first = tmp[0];
       const arr = tmp[1];
-      const obj = outer1_1(22);
-      const chainResult = outer1_1(22).chain(tmp[1].map((summary) => outer2_0(9484).createSummaryFromServer(summary, first)));
-      const sortByResult = outer1_1(22).chain(tmp[1].map((summary) => outer2_0(9484).createSummaryFromServer(summary, first))).sortBy((startId) => outer2_1(21).extractTimestamp(startId.startId));
-      const reversed = outer1_1(22).chain(tmp[1].map((summary) => outer2_0(9484).createSummaryFromServer(summary, first))).sortBy((startId) => outer2_1(21).extractTimestamp(startId.startId)).takeRight(75).reverse();
-      const takeRightResult = outer1_1(22).chain(tmp[1].map((summary) => outer2_0(9484).createSummaryFromServer(summary, first))).sortBy((startId) => outer2_1(21).extractTimestamp(startId.startId)).takeRight(75);
+      const obj = callback(12);
+      const chainResult = callback(12).chain(tmp[1].map((summary) => first(outer1_2[16]).createSummaryFromServer(summary, first)));
+      const sortByResult = callback(12).chain(tmp[1].map((summary) => first(outer1_2[16]).createSummaryFromServer(summary, first))).sortBy((startId) => callback(table[12]).extractTimestamp(startId.startId));
+      const reversed = callback(12).chain(tmp[1].map((summary) => first(outer1_2[16]).createSummaryFromServer(summary, first))).sortBy((startId) => callback(table[12]).extractTimestamp(startId.startId)).takeRight(75).reverse();
+      const takeRightResult = callback(12).chain(tmp[1].map((summary) => first(outer1_2[16]).createSummaryFromServer(summary, first))).sortBy((startId) => callback(table[12]).extractTimestamp(startId.startId)).takeRight(75);
       arg0[first] = reversed.filter((arg0) => Object.keys(arg0).length > 0).value();
       return arg0;
     }, {});
     const reduced = channelIds.reduce((summariesByChannel) => {
       obj = obj[arg1];
-      if (null == obj) {
+      if (obj == null) {
         obj = {};
       }
       if (null != dependencyMap[arg1]) {
@@ -694,9 +602,9 @@ obj = {
       }
       obj = {};
       const merged = Object.assign(obj);
-      obj["fetching"] = false;
-      obj["error"] = closure_1;
-      obj["lastReceivedAt"] = closure_0;
+      obj.fetching = false;
+      obj.error = closure_1;
+      obj.lastReceivedAt = closure_0;
       summariesByChannel.summaryFetchStatusByChannel[arg1] = obj;
       return summariesByChannel;
     }, { summariesByChannel: {}, summaryFetchStatusByChannel: {} });
@@ -710,43 +618,47 @@ obj = {
   CONVERSATION_SUMMARY_UPDATE(channel_id) {
     channel_id = channel_id.channel_id;
     const timestamp = Date.now();
-    let obj = importDefault(22);
+    let obj = importDefault(12);
     const chainResult = obj.chain(channel_id.summaries);
-    const found = obj.chain(channel_id.summaries).sortBy((start_id) => outer1_1(outer1_2[17]).extractTimestamp(start_id.start_id)).filter((arg0) => Object.keys(arg0).length > 0);
-    const mapped = found.map((summary) => channel_id(outer1_2[22]).createSummaryFromServer(summary, channel_id));
-    const sortByResult = obj.chain(channel_id.summaries).sortBy((start_id) => outer1_1(outer1_2[17]).extractTimestamp(start_id.start_id));
+    const tmp2 = importDefault;
+    const found = obj.chain(channel_id.summaries).sortBy((start_id) => callback(11).extractTimestamp(start_id.start_id)).filter((arg0) => Object.keys(arg0).length > 0);
+    const mapped = found.map((summary) => channel_id(outer1_2[16]).createSummaryFromServer(summary, channel_id));
+    const sortByResult = obj.chain(channel_id.summaries).sortBy((start_id) => callback(11).extractTimestamp(start_id.start_id));
     let items = dependencyMap2[channel_id];
     const iter = mapped.reverse();
-    if (null == items) {
+    if (items == null) {
       items = [];
     }
     const valueResult = mapped.reverse().value();
-    const obj4 = importDefault(22);
-    const combined = importDefault(22).chain(valueResult).concat(items);
-    const chainResult1 = importDefault(22).chain(valueResult);
-    const sortByResult1 = combined.sortBy((startId) => outer1_1(outer1_2[17]).extractTimestamp(startId.startId));
-    const takeRightResult = combined.sortBy((startId) => outer1_1(outer1_2[17]).extractTimestamp(startId.startId)).takeRight(75);
-    const uniqByResult = combined.sortBy((startId) => outer1_1(outer1_2[17]).extractTimestamp(startId.startId)).takeRight(75).uniqBy("id");
-    dependencyMap2[channel_id] = combined.sortBy((startId) => outer1_1(outer1_2[17]).extractTimestamp(startId.startId)).takeRight(75).uniqBy("id").reverse().value();
+    const tmp2Result = tmp2(12);
+    const combined = tmp2(12).chain(valueResult).concat(items);
+    const chainResult1 = tmp2(12).chain(valueResult);
+    const sortByResult1 = combined.sortBy((startId) => callback(11).extractTimestamp(startId.startId));
+    const takeRightResult = combined.sortBy((startId) => callback(11).extractTimestamp(startId.startId)).takeRight(75);
+    const uniqByResult = combined.sortBy((startId) => callback(11).extractTimestamp(startId.startId)).takeRight(75).uniqBy("id");
+    dependencyMap2[channel_id] = combined.sortBy((startId) => callback(11).extractTimestamp(startId.startId)).takeRight(75).uniqBy("id").reverse().value();
     obj = {};
     const merged = Object.assign(dependencyMap3[channel_id]);
-    obj["error"] = undefined;
-    let fetching;
-    if (null != dependencyMap3[channel_id]) {
-      fetching = tmp5.fetching;
+    obj.error = undefined;
+    let flag;
+    if (dependencyMap3[channel_id] != null) {
+      flag = tmp7.fetching;
     }
-    obj["fetching"] = null != fetching && fetching;
-    obj["lastReceivedAt"] = timestamp;
+    if (flag == null) {
+      flag = false;
+    }
+    obj.fetching = flag;
+    obj.lastReceivedAt = timestamp;
     dependencyMap3[channel_id] = obj;
   },
   CLEAR_CONVERSATION_SUMMARIES() {
-    let closure_23 = {};
-    let closure_24 = {};
+    let closure_18 = {};
+    let closure_19 = {};
   },
   DELETE_SUMMARY(summary) {
     const channelId = summary.summary.channelId;
     let items = dependencyMap2[channelId];
-    if (null == items) {
+    if (items == null) {
       items = [];
     }
     const index = items.indexOf(summary.summary);
@@ -756,7 +668,7 @@ obj = {
     }
   }
 };
-tmp3 = new tmp3(require("dispatcher"), obj);
-let result = require("_classCallCheck").fileFinishedImporting("modules/summaries/SummaryStore.tsx");
+const summaryStore = new SummaryStore(require("dispatcher"), obj);
+const result = require("getGeneralQueryResultTypes").fileFinishedImporting("modules/summaries/SummaryStore.tsx");
 
-export default tmp3;
+export default summaryStore;

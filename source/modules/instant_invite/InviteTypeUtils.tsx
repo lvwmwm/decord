@@ -1,19 +1,25 @@
-// Module ID: 6002
-// Function ID: 53208
-// Name: isGroupDMInvite
-// Dependencies: [5761, 1352, 6003, 6004, 2]
-// Exports: getGuildInviteExtendedType, getInviteType, isRoleSubscriptionInvite, isStreamInvite
+// Module ID: 6020
+// Function ID: 6021
+// Name: InviteTypes
+// Dependencies: [5779, 1376, 6021, 6022, 2]
+// Exports: getGuildInviteExtendedType, getInviteType, isEmbeddedApplicationInvite, isFriendInvite, isGroupDMInvite, isGuildScheduledEventInviteEmbed, isRoleSubscriptionInvite, isStreamInvite, isVoiceChannelInvite
 
-// Module 6002 (isGroupDMInvite)
-import { isEventUpcoming } from "_isNativeReflectConstruct";
-import _callSuper from "_callSuper";
+// Module 6020 (InviteTypes)
+import { isEventUpcoming } from "scheduledEventSort";
+import createChannelRecord from "createChannelRecord";
 import InviteSendStates from "InviteSendStates";
 
-let closure_3;
-let closure_4;
-let closure_5;
+let c3;
+let c4;
+let c5;
 let closure_6;
-function isGroupDMInvite(invite) {
+({ isGuildVocalChannelType: c3, isMultiUserDM: c4 } = createChannelRecord);
+({ InviteTargetTypes: c5, InviteTypes: closure_6 } = InviteSendStates);
+let obj = { EVENT: "event", APPLICATION: "application", PROFILE: "profile", DEFAULT: "default", VOICE_CHANNEL: "voice_channel" };
+const result = require("InviteSendStates").fileFinishedImporting("modules/instant_invite/InviteTypeUtils.tsx");
+
+export const InviteTypes = require("InviteSendStates").InviteTypes;
+export const isGroupDMInvite = function isGroupDMInvite(invite) {
   let tmp = invite.type === constants2.GROUP_DM;
   if (!tmp) {
     let tmp3 = null != invite.channel;
@@ -23,41 +29,15 @@ function isGroupDMInvite(invite) {
     tmp = tmp3;
   }
   return tmp;
-}
-function isGuildScheduledEventInviteEmbed(invite) {
+};
+export const isGuildScheduledEventInviteEmbed = function isGuildScheduledEventInviteEmbed(invite) {
   const guild_scheduled_event = invite.guild_scheduled_event;
   let tmp = null != guild_scheduled_event;
   if (tmp) {
     tmp = isEventUpcoming(guild_scheduled_event);
   }
   return tmp;
-}
-function isFriendInvite(invite) {
-  let tmp = invite.type === constants2.FRIEND;
-  if (!tmp) {
-    tmp = null == invite.guild && null != invite.inviter;
-    const tmp3 = null == invite.guild && null != invite.inviter;
-  }
-  return tmp;
-}
-function isEmbeddedApplicationInvite(invite) {
-  return invite.target_type === constants.EMBEDDED_APPLICATION;
-}
-function isVoiceChannelInvite(value) {
-  let tmp = null != value.channel;
-  if (tmp) {
-    tmp = callback(value.channel.type);
-  }
-  return tmp;
-}
-({ isGuildVocalChannelType: closure_3, isMultiUserDM: closure_4 } = _callSuper);
-({ InviteTargetTypes: closure_5, InviteTypes: closure_6 } = InviteSendStates);
-let obj = { EVENT: "event", APPLICATION: "application", PROFILE: "profile", DEFAULT: "default", VOICE_CHANNEL: "voice_channel" };
-const result = require("InviteSendStates").fileFinishedImporting("modules/instant_invite/InviteTypeUtils.tsx");
-
-export const InviteTypes = require("InviteSendStates").InviteTypes;
-export { isGroupDMInvite };
-export { isGuildScheduledEventInviteEmbed };
+};
 export const isRoleSubscriptionInvite = function isRoleSubscriptionInvite(invite) {
   return invite.target_type === constants.ROLE_SUBSCRIPTIONS_PURCHASE;
 };
@@ -68,31 +48,70 @@ export const isStreamInvite = function isStreamInvite(invite) {
   }
   return tmp;
 };
-export { isFriendInvite };
-export { isEmbeddedApplicationInvite };
-export { isVoiceChannelInvite };
-export const getInviteType = function getInviteType(invite) {
-  if ("number" === typeof invite.type) {
-    let GROUP_DM = invite.type;
-  } else if (isGroupDMInvite(invite)) {
-    GROUP_DM = constants2.GROUP_DM;
+export const isFriendInvite = function isFriendInvite(invite) {
+  let tmp = invite.type === constants2.FRIEND;
+  if (!tmp) {
+    tmp = null == invite.guild && null != invite.inviter;
+    const tmp3 = null == invite.guild && null != invite.inviter;
+  }
+  return tmp;
+};
+export const isEmbeddedApplicationInvite = function isEmbeddedApplicationInvite(invite) {
+  return invite.target_type === constants.EMBEDDED_APPLICATION;
+};
+export const isVoiceChannelInvite = function isVoiceChannelInvite(addResult) {
+  let tmp = null != addResult.channel;
+  if (tmp) {
+    tmp = callback(addResult.channel.type);
+  }
+  return tmp;
+};
+export const getInviteType = function getInviteType(body) {
+  if (typeof body.type === "Object") {
+    let GROUP_DM = body.type;
   } else {
-    GROUP_DM = isFriendInvite(invite) ? tmp3.FRIEND : tmp3.GUILD;
+    let tmp4 = body.type === constants2.GROUP_DM;
+    if (!tmp4) {
+      let tmp2 = null != body.channel;
+      if (tmp2) {
+        tmp2 = callback2(body.channel.type);
+      }
+      tmp4 = tmp2;
+    }
+    if (tmp4) {
+      GROUP_DM = tmp8.GROUP_DM;
+    } else {
+      let tmp5 = body.type === tmp8.FRIEND;
+      if (!tmp5) {
+        tmp5 = null == body.guild && null != body.inviter;
+        const tmp7 = null == body.guild && null != body.inviter;
+      }
+      GROUP_DM = tmp5 ? tmp8.FRIEND : tmp8.GUILD;
+    }
   }
   return GROUP_DM;
 };
 export const GuildInviteExtendedType = obj;
 export const getGuildInviteExtendedType = function getGuildInviteExtendedType(invite) {
-  if (isGuildScheduledEventInviteEmbed(invite)) {
+  const guild_scheduled_event = invite.guild_scheduled_event;
+  let tmp = null != guild_scheduled_event;
+  if (tmp) {
+    tmp = isEventUpcoming(guild_scheduled_event);
+  }
+  if (tmp) {
     let PROFILE = obj.EVENT;
-  } else if (isEmbeddedApplicationInvite(invite)) {
+  } else if (invite.target_type === constants.EMBEDDED_APPLICATION) {
     PROFILE = obj.APPLICATION;
   } else {
-    obj = require(6004) /* getEstablishedDate */;
+    obj = require(6022) /* getEstablishedDate */;
     if (obj.guildInviteCanEmbedProfile(invite)) {
       PROFILE = obj.PROFILE;
     } else {
-      PROFILE = isVoiceChannelInvite(invite) ? tmp5.VOICE_CHANNEL : tmp5.DEFAULT;
+      let tmp6 = null != invite.channel;
+      if (tmp6) {
+        tmp6 = callback(invite.channel.type);
+      }
+      PROFILE = tmp6 ? tmp8.VOICE_CHANNEL : tmp8.DEFAULT;
     }
   }
   return PROFILE;

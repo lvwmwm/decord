@@ -1,22 +1,20 @@
-// Module ID: 16206
-// Function ID: 125436
-// Name: importDefaultResult1
-// Dependencies: [3, 16207, 2]
+// Module ID: 16241
+// Function ID: 16242
+// Name: queueMessageLinkFetch
+// Dependencies: [3, 16242, 2]
 // Exports: queueMessageLinkFetch
 
-// Module 16206 (importDefaultResult1)
-import importDefaultResult from "timestamp";
-import importDefaultResult1 from "_isNativeReflectConstruct";
-
-importDefaultResult = new importDefaultResult("codedLinkQueue");
-importDefaultResult1 = new importDefaultResult1({ concurrency: 5, intervalCap: 10, interval: 2000 });
-importDefaultResult1.on("add", () => {
-  if (importDefaultResult1.size > 0) {
-    importDefaultResult.warn("Message link fetch queue backlog:", importDefaultResult1.size);
+// Module 16241 (queueMessageLinkFetch)
+let c0 = new require("timestamp")("codedLinkQueue");
+const obj = new require("_isNativeReflectConstruct")({ concurrency: 5, intervalCap: 10, interval: 2000 });
+obj.on("add", () => {
+  if (obj.size > 0) {
+    tmp2.warn("Message link fetch queue backlog:", tmp.size);
   }
 });
+const tmp2 = new require("timestamp")("codedLinkQueue");
 const result = require("set").fileFinishedImporting("modules/coded_links/codedLinkQueue.tsx");
 
 export const queueMessageLinkFetch = function queueMessageLinkFetch(arg0) {
-  importDefaultResult1.add(arg0);
+  obj.add(arg0);
 };

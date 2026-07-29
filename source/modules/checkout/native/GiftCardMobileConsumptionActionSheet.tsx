@@ -1,49 +1,52 @@
-// Module ID: 12467
-// Function ID: 96580
+// Module ID: 12489
+// Function ID: 12490
 // Name: GiftCardMobileConsumptionActionSheet
-// Dependencies: [31, 27, 1345, 33, 4165, 689, 1557, 4133, 5221, 4576, 6763, 4161, 1212, 2003, 4578, 2]
+// Dependencies: [19, 17, 1369, 21, 4189, 712, 1581, 4157, 5243, 4598, 6785, 4185, 1236, 2027, 4600, 2]
 // Exports: default
 
-// Module 12467 (GiftCardMobileConsumptionActionSheet)
-import result from "result";
+// Module 12489 (GiftCardMobileConsumptionActionSheet)
+import noop from "noop";
 import { View } from "get ActivityIndicator";
 import { ContentDismissActionType } from "ContentDismissActionType";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
 let closure_6;
-let closure_7;
+let error;
 const require = arg1;
-({ jsx: closure_6, jsxs: closure_7 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW };
-_createForOfIteratorHelperLoose.sheet = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.container = { paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16 };
-let obj2 = { alignSelf: "stretch", alignItems: "center", paddingTop: require("_createForOfIteratorHelperLoose").space.PX_12 };
-_createForOfIteratorHelperLoose.illustration = obj2;
-_createForOfIteratorHelperLoose.body = { textAlign: "center", fontFamily: "gg sans", fontSize: 16, fontWeight: 600, lineHeight: 20, alignSelf: "center", width: 280 };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-const obj1 = { paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16 };
+({ jsx: closure_6, jsxs: error } = jsxProd);
+createCacheKey = { sheet: null, container: null, illustration: null, body: null };
+createCacheKey = { backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { paddingHorizontal: require("Themes").space.PX_16 };
+const obj1 = { paddingHorizontal: require("Themes").space.PX_16 };
+createCacheKey[2] = { alignSelf: "stretch", alignItems: "center", paddingTop: require("Themes").space.PX_12 };
+createCacheKey[3] = { textAlign: "center", fontFamily: "gg sans", fontSize: 16, fontWeight: 600, lineHeight: 20, alignSelf: "center", width: 280 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let obj2 = { alignSelf: "stretch", alignItems: "center", paddingTop: require("Themes").space.PX_12 };
 const result = require("ContentDismissActionType").fileFinishedImporting("modules/checkout/native/GiftCardMobileConsumptionActionSheet.tsx");
 
 export default function GiftCardMobileConsumptionActionSheet(markAsDismissed) {
   markAsDismissed = markAsDismissed.markAsDismissed;
-  const tmp = _createForOfIteratorHelperLoose();
-  const importDefault = React.useRef(false);
-  const dependencyMap = React.useRef(markAsDismissed);
+  let importDefault;
+  let dependencyMap;
+  let React;
+  const tmp = createCacheKey();
+  importDefault = React.useRef(false);
+  dependencyMap = React.useRef(markAsDismissed);
   const items = [markAsDismissed];
   const effect = React.useEffect(() => {
     closure_2.current = markAsDismissed;
   }, items);
   const effect1 = React.useEffect(() => () => {
-    if (!outer1_1.current) {
-      outer1_2.current(outer2_5.AUTO_DISMISS);
+    if (!ref.current) {
+      ref2.current(outer1_5.AUTO_DISMISS);
     }
   }, []);
   const items1 = [markAsDismissed];
   React = React.useCallback((arg0) => {
     if (!ref.current) {
-      ref.current = true;
+      tmp.current = true;
       markAsDismissed(arg0);
       ref(table[7]).hideActionSheet();
       const obj = ref(table[7]);
@@ -54,25 +57,27 @@ export default function GiftCardMobileConsumptionActionSheet(markAsDismissed) {
     backgroundStyles: tmp.sheet,
     onDismiss() {
       return callback(outer1_5.USER_DISMISS);
-    }
+    },
+    children: null
   };
-  obj = { style: items2 };
-  items2 = [tmp.container, { paddingBottom: importDefault(1557)().bottom }];
-  obj = { spacing: importDefault(689).space.PX_16 };
-  const items3 = [callback(View, { style: tmp.illustration, children: callback(markAsDismissed(6763).LaptopSpotIllustration, { scale: 1, width: 150, height: 123 }) }), , ];
-  const obj2 = { variant: "text-md/medium", color: "text-default", style: tmp.body };
-  const intl = markAsDismissed(1212).intl;
-  obj2.children = intl.string(importDefault(2003).V3DI1E);
-  items3[1] = callback(markAsDismissed(4161).Text, obj2);
-  const obj3 = { size: "lg", variant: "secondary", grow: true };
-  const intl2 = markAsDismissed(1212).intl;
-  obj3.text = intl2.string(importDefault(2003).YZePWx);
-  obj3.onPress = function onPress() {
+  obj = { style: items2, children: null };
+  items2 = [tmp.container, { paddingBottom: importDefault(1581)().bottom }];
+  obj = { spacing: null, children: null };
+  obj[0] = importDefault(712).space.PX_16;
+  const items3 = [callback(View, { style: tmp.illustration, children: callback(markAsDismissed(6785).LaptopSpotIllustration, { scale: 1, width: 150, height: 123 }) }), , ];
+  const obj2 = { variant: "text-md/medium", color: "text-default", style: tmp.body, children: null };
+  const intl = markAsDismissed(1236).intl;
+  obj2[3] = intl.string(importDefault(2027).V3DI1E);
+  items3[1] = callback(markAsDismissed(4185).Text, obj2);
+  const obj3 = { size: "lg", variant: "secondary", grow: true, text: null, onPress: null };
+  const intl2 = markAsDismissed(1236).intl;
+  obj3[3] = intl2.string(importDefault(2027).YZePWx);
+  obj3[4] = function onPress() {
     return callback(outer1_5.USER_DISMISS);
   };
-  items3[2] = callback(markAsDismissed(4578).Button, obj3);
-  obj.children = items3;
-  obj.children = callback2(markAsDismissed(4576).Stack, obj);
-  obj.children = callback(View, obj);
-  return callback(markAsDismissed(5221).BottomSheet, obj);
+  items3[2] = callback(markAsDismissed(4600).Button, obj3);
+  obj[1] = items3;
+  obj[1] = callback2(markAsDismissed(4598).Stack, obj);
+  obj[3] = callback(View, obj);
+  return callback(markAsDismissed(5243).BottomSheet, obj);
 };

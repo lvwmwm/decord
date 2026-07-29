@@ -1,103 +1,24 @@
-// Module ID: 10974
-// Function ID: 85072
-// Name: _createForOfIteratorHelperLoose
-// Dependencies: [57, 31, 27, 4079, 1194, 1838, 4080, 33, 4165, 689, 10465, 10466, 5193, 8803, 10975, 22, 1273, 8345, 9215, 9217, 7857, 4087, 4133, 5198, 4161, 490, 10972, 5536, 7855, 5525, 3866, 4126, 5221, 5220, 2]
+// Module ID: 10998
+// Function ID: 10999
+// Name: UserExperimentDebugView
+// Dependencies: [32, 19, 17, 4103, 1218, 1862, 4104, 21, 4189, 712, 10489, 10490, 5215, 8827, 10999, 12, 1297, 8369, 9239, 9241, 7880, 4111, 4157, 5220, 4185, 513, 10996, 5554, 7878, 5543, 3890, 4150, 5243, 5242, 2]
 
-// Module 10974 (_createForOfIteratorHelperLoose)
-import _slicedToArray from "_slicedToArray";
-import importAllResult from "CircleCheckIcon";
-import { View } from "TableRowGroupTitle";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_7 from "_isNativeReflectConstruct";
-import closure_8 from "_createForOfIteratorHelperLoose";
+// Module 10998 (UserExperimentDebugView)
+import Background from "Background";
+import importAllResult from "module_9241";
+import { View } from "getNoResultsSource";
+import getHash from "getHash";
+import fetchFingerprint from "fetchFingerprint";
+import createGuildRecordFromRust from "createGuildRecordFromRust";
 import ExperimentBuckets from "ExperimentBuckets";
-import jsxProd from "RedesignBottomSheetTitleHeaderBase";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import jsxProd from "trackExposureToExperiment";
+import createCacheKey from "createCacheKey";
 
-let closure_10;
-let closure_11;
+let c10;
+let c9;
 let closure_12;
-let closure_9;
+let unpackModuleId;
 const require = arg1;
-function _createForOfIteratorHelperLoose(iterable) {
-  let closure_0 = iterable;
-  iterable = "undefined" !== typeof Symbol;
-  if (iterable) {
-    const _Symbol = Symbol;
-    iterable = iterable[Symbol.iterator];
-  }
-  if (!iterable) {
-    iterable = iterable[Symbol.iterator];
-  }
-  if (iterable) {
-    const iter = iterable.call(iterable);
-    const next = iter.next;
-    return next.bind(iter);
-  } else {
-    const _Array = Array;
-    let tmp = iterable;
-    if (!Array.isArray(iterable)) {
-      let tmp2;
-      if (iterable) {
-        if ("string" === typeof iterable) {
-          tmp2 = _arrayLikeToArray(iterable, undefined);
-        } else {
-          const toString = {}.toString;
-          const substr = toString.call(iterable).slice(8, -1);
-          let name = substr;
-          if (tmp3) {
-            name = iterable.constructor.name;
-          }
-          if ("Map" !== name) {
-            if ("Set" !== name) {
-              if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(iterable, undefined);
-              } else {
-                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
-              }
-            }
-            tmp2 = arr;
-          }
-          const _Array2 = Array;
-          arr = Array.from(iterable);
-          const callResult = toString.call(iterable);
-          tmp3 = "Object" === substr && iterable.constructor;
-        }
-      }
-      tmp = tmp2;
-      if (!tmp2) {
-        const _TypeError = TypeError;
-        const typeError = new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
-        throw typeError;
-      }
-    }
-    if (tmp) {
-      closure_0 = tmp;
-    }
-    let c1 = 0;
-    return () => {
-      if (closure_1 >= length.length) {
-        let obj = { done: true };
-      } else {
-        obj = { done: false };
-        closure_1 = tmp3 + 1;
-        obj.value = length[+closure_1];
-      }
-      return obj;
-    };
-  }
-}
-function _arrayLikeToArray(arg0, arg1) {
-  let length;
-  if (tmp) {
-    length = arg0.length;
-  }
-  const ArrayResult = Array(length);
-  for (let num = 0; num < length; num = num + 1) {
-    ArrayResult[num] = arg0[num];
-  }
-  return ArrayResult;
-}
 function UserExperimentDebugView(id) {
   let experiment;
   let override;
@@ -106,7 +27,7 @@ function UserExperimentDebugView(id) {
   const installationForTracking = store2.getInstallationForTracking();
   let maybeExtractIdResult = null;
   if (null != installationForTracking) {
-    let obj = require(490) /* extractId */;
+    let obj = require(513) /* extractId */;
     maybeExtractIdResult = obj.maybeExtractId(installationForTracking);
   }
   let tmp7 = id;
@@ -116,11 +37,11 @@ function UserExperimentDebugView(id) {
       tmp7 = maybeExtractIdResult;
     }
   }
-  let obj1 = require(10972) /* getExperimentServerAssignment */;
+  let obj1 = require(10996) /* useExperimentAssignment */;
   const experimentAssignment = obj1.useExperimentAssignment(experiment, tmp7);
-  let obj2 = require(10972) /* getExperimentServerAssignment */;
+  let obj2 = require(10996) /* useExperimentAssignment */;
   const experimentServerAssignment = obj2.useExperimentServerAssignment(experiment, tmp7);
-  let obj3 = importDefault(22);
+  let obj3 = importDefault(12);
   const tmp = callback3();
   const mapped = obj3.sortBy(store.getRecentExposures(constants2.USER, id.id), (arg0) => {
     let tmp;
@@ -132,9 +53,9 @@ function UserExperimentDebugView(id) {
     [tmp, tmp2] = arg0;
     return "" + new Date(tmp2).toLocaleString() + " (" + tmp + ")";
   });
-  if (experiment.system === require(4087) /* trackExposureToExperiment */.ExperimentSystem.LEGACY) {
+  if (experiment.system === require(4111) /* trackExposureToExperiment */.ExperimentSystem.LEGACY) {
     let NOT_ELIGIBLE = experimentAssignment;
-    if (null == experimentAssignment) {
+    if (experimentAssignment == null) {
       NOT_ELIGIBLE = constants.NOT_ELIGIBLE;
     }
     const _HermesInternal2 = HermesInternal;
@@ -146,59 +67,55 @@ function UserExperimentDebugView(id) {
       str = "Currently assigned to variant " + experimentAssignment;
     }
   }
-  obj = { style: tmp.debugContainer };
-  obj = { title: "Overview", hasIcons: false };
-  obj1 = { label: str };
+  obj = { style: tmp.debugContainer, children: null };
+  obj = { label: str, subLabel: null };
   let str4;
   if (null == experimentServerAssignment) {
     str4 = "Warning: Server did not send any experiment config. You may need to check the \"Send to Client\" box in the admin UI.";
   }
-  obj1.subLabel = str4;
-  obj.children = callback(require(5198) /* TableRowInner */.TableRow, obj1);
-  const items = [callback(require(5536) /* TableRowGroupTitle */.TableRowGroup, obj), callback(require(1273) /* Button */.Spacer, { size: 16 }), , , , , ];
-  obj2 = { title: "Server Descriptor", hasIcons: false };
-  obj3 = {};
+  obj1 = { title: "Overview", hasIcons: false, children: tmp17(tmp8(5220).TableRow, obj) };
+  obj[1] = str4;
+  const items = [closure_11(require(5554) /* TableRowGroupTitle */.TableRowGroup, obj1), closure_11(require(1297) /* Button */.Spacer, { size: 16 }), , , , , ];
   let str5 = "None";
   let str6 = "None";
   if (null != experimentServerAssignment) {
     const _JSON = JSON;
     str6 = JSON.stringify(experimentServerAssignment, undefined, 2);
   }
-  obj3.label = str6;
-  obj2.children = callback(require(5198) /* TableRowInner */.TableRow, obj3);
-  items[2] = callback(require(5536) /* TableRowGroupTitle */.TableRowGroup, obj2);
-  items[3] = callback(require(1273) /* Button */.Spacer, { size: 16 });
-  const obj4 = { title: "Override Descriptor", hasIcons: false };
-  const obj5 = {};
+  obj2 = { title: "Server Descriptor", hasIcons: false, children: tmp17(tmp8(5220).TableRow, { label: str6 }) };
+  items[2] = closure_11(require(5554) /* TableRowGroupTitle */.TableRowGroup, obj2);
+  items[3] = closure_11(require(1297) /* Button */.Spacer, { size: 16 });
   let json = str5;
   if (null != override) {
     const _JSON2 = JSON;
     json = JSON.stringify(override.originalDescriptor, undefined, 2);
   }
-  obj5.label = json;
-  obj4.children = callback(require(5198) /* TableRowInner */.TableRow, obj5);
-  items[4] = callback(require(5536) /* TableRowGroupTitle */.TableRowGroup, obj4);
-  items[5] = callback(require(1273) /* Button */.Spacer, { size: 16 });
-  const obj6 = { title: "Recent Exposures", hasIcons: false };
-  const obj7 = {};
+  obj3 = { title: "Override Descriptor", hasIcons: false, children: tmp17(tmp8(5220).TableRow, { label: json }) };
+  items[4] = closure_11(require(5554) /* TableRowGroupTitle */.TableRowGroup, obj3);
+  items[5] = closure_11(require(1297) /* Button */.Spacer, { size: 16 });
   if (0 !== mapped.length) {
     str5 = mapped.join("\n");
   }
-  obj7.label = str5;
-  obj6.children = callback(require(5198) /* TableRowInner */.TableRow, obj7);
-  items[6] = callback(require(5536) /* TableRowGroupTitle */.TableRowGroup, obj6);
-  obj.children = items;
-  return closure_12(View, obj);
+  const sortByResult = obj3.sortBy(store.getRecentExposures(constants2.USER, id.id), (arg0) => {
+    let tmp;
+    [, tmp] = arg0;
+    return -tmp;
+  });
+  const tmp15 = closure_12;
+  const tmp16 = View;
+  items[6] = closure_11(require(5554) /* TableRowGroupTitle */.TableRowGroup, { title: "Recent Exposures", hasIcons: false, children: closure_11(require(5220) /* TableRowInner */.TableRow, { label: str5 }) });
+  obj[1] = items;
+  return tmp15(tmp16, obj);
 }
 function GuildExperimentDebugView(arg0) {
   let id;
-  let iter2;
   let override;
   ({ id, override } = arg0);
+  let obj;
   const loadedGuildExperiment = store.getLoadedGuildExperiment(id);
-  let obj = importDefault(22);
+  obj = importDefault(12);
   const tmp = callback3();
-  const mapped = obj.sortBy(store.getRecentExposures(constants2.GUILD, id), (arg0) => {
+  let mapped = obj.sortBy(store.getRecentExposures(constants2.GUILD, id), (arg0) => {
     let tmp;
     [, tmp] = arg0;
     return -tmp;
@@ -208,159 +125,155 @@ function GuildExperimentDebugView(arg0) {
     [tmp, tmp2] = arg0;
     return "" + new Date(tmp2).toLocaleString() + " (" + tmp + ")";
   });
-  let obj1 = importDefault(22);
+  let obj1 = importDefault(12);
+  const sortByResult = obj.sortBy(store.getRecentExposures(constants2.GUILD, id), (arg0) => {
+    let tmp;
+    [, tmp] = arg0;
+    return -tmp;
+  });
   obj = {};
   const items = [];
-  const tmp3 = _createForOfIteratorHelperLoose(obj1.sortBy(guildsArray.getGuildsArray(), (name) => name.name.toLowerCase()));
-  let iter = tmp3();
-  if (!iter.done) {
-    do {
-      let value = iter.value;
-      let tmp4 = store;
-      let guildExperimentDescriptor = store.getGuildExperimentDescriptor(id, value.id);
-      let bucket;
-      if (null != guildExperimentDescriptor) {
-        bucket = guildExperimentDescriptor.bucket;
-      }
-      if (null == bucket) {
-        let tmp7 = constants;
-        bucket = constants.NOT_ELIGIBLE;
-      }
-      if (!(bucket in obj)) {
-        obj[bucket] = 0;
-      }
-      obj[bucket] = obj[bucket] + 1;
-      let _HermesInternal = HermesInternal;
-      let arr = items.push("" + value.name + ": " + bucket);
-      iter2 = tmp3();
-      iter = iter2;
-    } while (!iter2.done);
+  const iter = obj1.sortBy(guildsArray.getGuildsArray(), (name) => name.name.toLowerCase())[Symbol.iterator]();
+  const nextResult = iter.next();
+  while (iter !== undefined) {
+    let tmp6 = store;
+    let tmp5 = nextResult;
+    let guildExperimentDescriptor = store.getGuildExperimentDescriptor(id, nextResult.id);
+    let bucket;
+    if (guildExperimentDescriptor != null) {
+      bucket = guildExperimentDescriptor.bucket;
+    }
+    if (bucket == null) {
+      let tmp9 = constants;
+      bucket = constants.NOT_ELIGIBLE;
+    }
+    let tmp10 = bucket;
+    if (!(bucket in obj)) {
+      let tmp11 = bucket;
+      obj[tmp10] = 0;
+    }
+    let tmp12 = bucket;
+    obj[tmp10] = obj[tmp10] + 1;
+    let tmp13 = nextResult;
+    let _HermesInternal = HermesInternal;
+    let arr = items.push("" + tmp5.name + ": " + tmp10);
+    continue;
   }
-  let obj3 = importDefault(22)(obj);
+  let obj3 = importDefault(12)(obj);
   const keys = obj3.keys();
   const mapped1 = keys.map(Number);
   const sorted = mapped1.sort();
   const mapped2 = sorted.map((arg0) => "" + obj[arg0] + " guilds are in bucket " + arg0);
-  obj = { style: tmp.debugContainer };
+  obj = { style: tmp.debugContainer, children: null };
   const joined = mapped2.join(", ");
-  obj1 = { title: "Overview", hasIcons: false };
-  const obj2 = { label: "Current Assignments: " + joined };
+  obj1 = { label: null, subLabel: null };
+  obj1[0] = "Current Assignments: " + joined;
   let str = null;
   if (null == loadedGuildExperiment) {
     str = "Warning: Server did not send any experiment config. You may need to check the 'Send to Client' box in the admin UI.";
   }
-  obj2.subLabel = str;
-  obj1.children = callback(obj(5198).TableRow, obj2);
-  const items1 = [callback(obj(5536).TableRowGroup, obj1), callback(obj(1273).Spacer, { size: 16 }), , , , , , , ];
-  obj3 = { title: "Guild Assignments", hasIcons: false };
-  const obj4 = { label: items.join("\n") };
-  obj3.children = callback(obj(5198).TableRow, obj4);
-  items1[2] = callback(obj(5536).TableRowGroup, obj3);
-  items1[3] = callback(obj(1273).Spacer, { size: 16 });
-  const obj5 = { title: "Server Descriptor", hasIcons: false };
-  const obj6 = {};
+  const sortByResult1 = obj1.sortBy(guildsArray.getGuildsArray(), (name) => name.name.toLowerCase());
+  const tmp17 = closure_12;
+  const tmp18 = View;
+  obj1[1] = str;
+  const items1 = [closure_11(obj(5554).TableRowGroup, { title: "Overview", hasIcons: false, children: closure_11(obj(5220).TableRow, obj1) }), closure_11(obj(1297).Spacer, { size: 16 }), , , , , , , ];
+  obj3 = { title: "Guild Assignments", hasIcons: false, children: null };
+  const obj4 = { label: null };
+  obj4[0] = items.join("\n");
+  obj3[2] = closure_11(obj(5220).TableRow, obj4);
+  items1[2] = closure_11(obj(5554).TableRowGroup, obj3);
+  items1[3] = closure_11(obj(1297).Spacer, { size: 16 });
   let str2 = "None";
   let str3 = "None";
   if (null != loadedGuildExperiment) {
     const _JSON = JSON;
     str3 = JSON.stringify(loadedGuildExperiment, undefined, 2);
   }
-  obj6.label = str3;
-  obj5.children = callback(obj(5198).TableRow, obj6);
-  items1[4] = callback(obj(5536).TableRowGroup, obj5);
-  items1[5] = callback(obj(1273).Spacer, { size: 16 });
-  const obj7 = { title: "Override Descriptor", hasIcons: false };
-  const obj8 = {};
+  const obj2 = { title: "Overview", hasIcons: false, children: closure_11(obj(5220).TableRow, obj1) };
+  items1[4] = closure_11(obj(5554).TableRowGroup, { title: "Server Descriptor", hasIcons: false, children: closure_11(obj(5220).TableRow, { label: str3 }) });
+  items1[5] = closure_11(obj(1297).Spacer, { size: 16 });
   if (null != override) {
     const _JSON2 = JSON;
     str2 = JSON.stringify(override, undefined, 2);
   }
-  obj8.label = str2;
-  obj7.children = callback(obj(5198).TableRow, obj8);
-  items1[6] = callback(obj(5536).TableRowGroup, obj7);
-  items1[7] = callback(obj(1273).Spacer, { size: 16 });
-  const obj9 = { title: "Recent Exposures", hasIcons: false };
+  const obj5 = { title: "Server Descriptor", hasIcons: false, children: closure_11(obj(5220).TableRow, { label: str3 }) };
+  items1[6] = closure_11(obj(5554).TableRowGroup, { title: "Override Descriptor", hasIcons: false, children: closure_11(obj(5220).TableRow, { label: str2 }) });
+  items1[7] = closure_11(obj(1297).Spacer, { size: 16 });
   if (0 === mapped.length) {
-    const obj10 = { label: "none" };
-    let mapped3 = callback(obj(5198).TableRow, obj10);
+    mapped = tmp19(tmp20(5220).TableRow, { label: "none" });
   } else {
-    mapped3 = mapped.map((label) => {
+    mapped = mapped.map((label) => {
       const obj = { label, labelLineClamp: 1 };
-      return outer1_11(obj(outer1_2[23]).TableRow, obj, label);
+      return callback(obj(table[23]).TableRow, obj, label);
     });
   }
-  obj9.children = mapped3;
-  items1[8] = callback(obj(5536).TableRowGroup, obj9);
-  obj.children = items1;
-  return closure_12(View, obj);
+  items1[8] = closure_11(obj(5554).TableRowGroup, { title: "Recent Exposures", hasIcons: false, children: mapped });
+  obj[1] = items1;
+  return tmp17(tmp18, obj);
 }
 class ExperimentDetails {
   constructor(arg0) {
     ({ experiment, override, id, options, onCopyLink } = global);
-    tmp = c13();
+    c1 = undefined;
+    tmp = jsxs();
     obj = require("regExp");
     uRLForExperiment = obj.getURLForExperiment(id);
-    closure_1 = uRLForExperiment;
+    c1 = uRLForExperiment;
     items = [, ];
     items[0] = uRLForExperiment;
     items[1] = onCopyLink;
-    obj = {};
-    obj1 = {};
-    callback = closure_4.useCallback(() => {
+    obj = { style: null, children: null };
+    obj1 = { paddingHorizontal: null };
+    callback = Object.useCallback(() => {
       onCopyLink(outer1_2[29]).copy(uRLForExperiment, () => {
-        let obj = uRLForExperiment(outer2_2[30]);
-        obj = { key: "experiment-link-copied", content: "Copied experiment link", IconComponent: onCopyLink(outer2_2[31]).CircleCheckIcon, iconColor: "status-positive" };
+        let obj = outer1_1(outer1_2[30]);
+        obj = { key: "experiment-link-copied", content: "Copied experiment link", IconComponent: outer1_0(outer1_2[31]).CircleCheckIcon, iconColor: "status-positive" };
         obj.open(obj);
-        if (null != outer1_0) {
-          outer1_0();
+        if (callback != null) {
+          callback();
         }
       });
     }, items);
     tmp4 = jsxs;
     tmp5 = View;
-    obj1.paddingHorizontal = require("_createForOfIteratorHelperLoose").space.PX_12;
-    obj.style = obj1;
-    obj2 = { title: "Experiment Assignments", hasIcons: false };
-    obj2.children = options.map((arg0, arg1) => {
+    obj1[0] = require("Themes").space.PX_12;
+    obj[0] = obj1;
+    tmp6 = jsx;
+    obj2 = { title: "Experiment Assignments", hasIcons: false, children: null };
+    obj2[2] = options.map((arg0, arg1) => {
       let isDestructive;
       let label;
       let onPress;
       ({ label, isDestructive, onPress } = arg0);
-      const obj = {};
-      let str = "default";
+      let variant = "default";
       if (isDestructive) {
-        str = "danger";
+        variant = "danger";
       }
-      obj.variant = str;
-      obj.label = label;
-      obj.onPress = onPress;
-      return outer1_11(onCopyLink(outer1_2[23]).TableRow, obj, arg1);
+      return closure_11(onCopyLink(table[23]).TableRow, { variant, label, onPress }, arg1);
     });
     items1 = [, , ];
     items1[0] = jsx(require("TableRowGroupTitle").TableRowGroup, obj2);
-    obj3 = { style: tmp.copyExperimentLink };
-    obj4 = { title: "Share", hasIcons: false };
-    obj4.children = jsx(require("TableRowInner").TableRow, { label: "Copy Link", subLabel: uRLForExperiment, onPress: callback });
-    obj3.children = jsx(require("TableRowGroupTitle").TableRowGroup, obj4);
+    obj3 = { style: tmp.copyExperimentLink, children: null };
+    obj4 = { title: "Share", hasIcons: false, children: null };
+    obj4[2] = jsx(require("TableRowInner").TableRow, { label: "Copy Link", subLabel: uRLForExperiment, onPress: callback });
+    obj3[1] = jsx(require("TableRowGroupTitle").TableRowGroup, obj4);
     items1[1] = jsx(View, obj3);
     if ("guild" === experiment.kind) {
-      tmp9 = jsx;
-      tmp10 = GuildExperimentDebugView;
-      obj5 = {};
-      obj5.id = id;
-      obj5.override = override;
-      tmp8 = jsx(GuildExperimentDebugView, obj5);
+      tmp9 = GuildExperimentDebugView;
+      obj5 = { id: null, override: null };
+      obj5[0] = id;
+      obj5[1] = override;
+      tmp6Result = tmp6(GuildExperimentDebugView, obj5);
     } else {
-      tmp6 = jsx;
       tmp7 = UserExperimentDebugView;
-      obj6 = {};
-      obj6.id = id;
-      obj6.override = override;
-      obj6.experiment = experiment;
-      tmp8 = jsx(UserExperimentDebugView, obj6);
+      obj6 = { id: null, override: null, experiment: null };
+      obj6[0] = id;
+      obj6[1] = override;
+      obj6[2] = experiment;
+      tmp6Result = tmp6(UserExperimentDebugView, obj6);
     }
-    items1[2] = tmp8;
-    obj.children = items1;
+    items1[2] = tmp6Result;
+    obj[1] = items1;
     return tmp4(tmp5, obj);
   }
 }
@@ -372,37 +285,40 @@ function ExperimentActionSheet(arg0) {
   let override;
   ({ id, experiment } = arg0);
   ({ override, options, onCopyLink } = arg0);
-  let obj = {};
+  let obj = { header: null, children: null };
   obj = { title: experiment.title, subtitle: id };
-  obj.header = callback(require(5220) /* RedesignBottomSheetTitleHeaderBase */.BottomSheetTitleHeader, obj);
-  obj.children = callback(ExperimentDetails, { experiment, override, id, options, onCopyLink });
-  return callback(require(5221) /* Background */.BottomSheet, obj);
+  obj[0] = callback(require(5242) /* RedesignBottomSheetTitleHeaderBase */.BottomSheetTitleHeader, obj);
+  obj[1] = callback(ExperimentDetails, { experiment, override, id, options, onCopyLink });
+  return callback(require(5243) /* Background */.BottomSheet, obj);
 }
-({ ExperimentBuckets: closure_9, ExperimentTypes: closure_10 } = ExperimentBuckets);
-({ jsx: closure_11, jsxs: closure_12 } = jsxProd);
-let obj = {};
-obj = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW, flex: 1 };
-obj.container = obj;
-_createForOfIteratorHelperLoose = { paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_12 };
-obj.listContainer = _createForOfIteratorHelperLoose;
-obj.searchBar = { paddingVertical: require("_createForOfIteratorHelperLoose").space.PX_16, paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_12 };
-let obj2 = { paddingVertical: require("_createForOfIteratorHelperLoose").space.PX_16, paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_12 };
-obj.debugContainer = { marginTop: require("_createForOfIteratorHelperLoose").space.PX_16 };
-let obj3 = { marginTop: require("_createForOfIteratorHelperLoose").space.PX_16 };
-obj.copyExperimentLink = { marginTop: require("_createForOfIteratorHelperLoose").space.PX_16 };
-let closure_13 = _createForOfIteratorHelperLoose.createStyles(obj);
-let obj4 = { marginTop: require("_createForOfIteratorHelperLoose").space.PX_16 };
+let c4 = importAllResult;
+({ ExperimentBuckets: c9, ExperimentTypes: c10 } = ExperimentBuckets);
+({ jsx: unpackModuleId, jsxs: closure_12 } = jsxProd);
+let obj = { container: null, listContainer: null, searchBar: null, debugContainer: null, copyExperimentLink: null };
+obj = { backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW, flex: 1 };
+obj[0] = obj;
+createCacheKey = { paddingHorizontal: require("Themes").space.PX_12 };
+obj[1] = createCacheKey;
+obj[2] = { paddingVertical: require("Themes").space.PX_16, paddingHorizontal: require("Themes").space.PX_12 };
+let obj2 = { paddingVertical: require("Themes").space.PX_16, paddingHorizontal: require("Themes").space.PX_12 };
+obj[3] = { marginTop: require("Themes").space.PX_16 };
+let obj3 = { marginTop: require("Themes").space.PX_16 };
+obj[4] = { marginTop: require("Themes").space.PX_16 };
+let closure_13 = createCacheKey.createStyles(obj);
+let obj4 = { marginTop: require("Themes").space.PX_16 };
 let closure_14 = importAllResult.memo((id) => {
   let end;
   let start;
   id = id.id;
+  let variantId = id;
   const override = id.override;
   const experiment = id.experiment;
+  let memo;
   let items = [experiment];
   ({ start, end } = id);
-  const memo = importAllResult.useMemo(() => id(experiment[20]).getExperimentVariantsForDevTools(experiment), items);
+  memo = importAllResult.useMemo(() => variantId(experiment[20]).getExperimentVariantsForDevTools(experiment), items);
   const items1 = [id, experiment, override, memo];
-  let variantId;
+  variantId = undefined;
   const callback = importAllResult.useCallback(() => {
     const map = new Map();
     const item = memo.forEach((id) => {
@@ -414,9 +330,9 @@ let closure_14 = importAllResult.memo((id) => {
       items.push({
         label: label.label,
         onPress() {
-          id(experiment[21]).overrideBucket(outer2_2.system, map, label.id);
-          const obj = id(experiment[21]);
-          override(experiment[22]).hideActionSheet("UserSettingsExperimentBucket");
+          map(outer2_2[21]).overrideBucket(outer1_2.system, label, label.id);
+          const obj = map(outer2_2[21]);
+          items(outer2_2[22]).hideActionSheet("UserSettingsExperimentBucket");
         }
       });
     });
@@ -424,49 +340,46 @@ let closure_14 = importAllResult.memo((id) => {
       label: "Clear Override",
       isDestructive: true,
       onPress() {
-        id(experiment[21]).overrideBucket(outer1_2.system, map, null);
-        const obj = id(experiment[21]);
-        override(experiment[22]).hideActionSheet("UserSettingsExperimentBucket");
+        map(outer1_2[21]).overrideBucket(system.system, map, null);
+        const obj = map(outer1_2[21]);
+        items(outer1_2[22]).hideActionSheet("UserSettingsExperimentBucket");
       }
     };
     items.push(obj);
-    obj = { default: outer1_20 };
+    obj = { default: outer1_18 };
     obj = {
       id: map,
       experiment,
       override: items,
       options: items,
       onCopyLink(arg0) {
-        return override(experiment[22]).hideActionSheet("UserSettingsExperimentBucket");
+        return items(system[22]).hideActionSheet("UserSettingsExperimentBucket");
       }
     };
     override(experiment[22]).openLazy(Promise.resolve(obj), "UserSettingsExperimentBucket", obj);
   }, items1);
-  if (null != override) {
+  if (override != null) {
     variantId = override.variantId;
   }
-  let obj = { height: "100%", start, end, label: experiment.title, labelLineClamp: 1, onPress: callback };
-  obj = {
-    variant: "text-md/medium",
-    color: "text-muted",
-    children: (function getVariantLabel(memo, variantId) {
-      let closure_0 = variantId;
-      if (null == variantId) {
-        return "N/A";
-      } else {
-        const found = memo.find((id) => id.id === closure_0);
-        if (null != found) {
-          let label = found.label;
-        } else {
-          const _HermesInternal = HermesInternal;
-          label = "Unknown (" + variantId + ")";
-        }
-        return label;
-      }
-    })(memo, variantId)
-  };
-  obj.trailing = callback(id(experiment[24]).Text, obj);
-  return callback(id(experiment[23]).TableRow, obj);
+  if (null == variantId) {
+    let obj = { height: "100%", start: null, end: null, label: null, labelLineClamp: 1, onPress: null, trailing: null };
+    obj[1] = start;
+    obj[2] = end;
+    obj[3] = experiment.title;
+    obj[5] = callback;
+    obj = { variant: "text-md/medium", color: "text-muted", children: null };
+    obj[2] = "N/A";
+    obj[6] = callback(variantId(experiment[24]).Text, obj);
+    return callback(variantId(experiment[23]).TableRow, obj);
+  } else {
+    const found = memo.find((id) => id.id === variantId);
+    if (null != found) {
+      let label = found.label;
+    } else {
+      const _HermesInternal = HermesInternal;
+      label = "Unknown (" + variantId + ")";
+    }
+  }
 });
 const memoResult = importAllResult.memo(() => {
   let tmp3;
@@ -496,7 +409,7 @@ const memoResult = importAllResult.memo(() => {
   const tmp2 = overridesInfo2(memo1.useState(""), 2);
   let obj2 = experiments(experiments2[14]);
   let obj3 = experiments(experiments2[14]);
-  const tmp9 = overridesInfo(experiments2[13])();
+  const tmp12 = overridesInfo(experiments2[13])();
   const bestMatches = obj2.getBestMatches(obj3.sortEntries(experiments(experiments2[14]).getEntries(memo), memo1), tmp3);
   const items2 = [bestMatches.length];
   const items3 = [bestMatches, memo1];
@@ -507,21 +420,30 @@ const memoResult = importAllResult.memo(() => {
   const callback = memo1.useCallback((arg0, arg1) => outer1_11(outer1_14, { id: bestMatches[arg1].id, experiment: bestMatches[arg1].experiment, override: memo1[bestMatches[arg1].id], start: 0 === arg1, end: arg1 === bestMatches.length - 1 }), items3);
   const obj5 = experiments(experiments2[14]);
   if (obj6.isEmpty(memo)) {
-    obj = { Illustration: experiments(experiments2[17]).NoResults, title: "No Experiments", body: "No experiments are currently running." };
-    let tmp22 = callback(experiments(experiments2[16]).EmptyState, obj);
+    obj = { Illustration: null, title: "No Experiments", body: "No experiments are currently running." };
+    obj[0] = tmp5(tmp6[17]).NoResults;
+    let tmp19 = callback(tmp5(tmp6[16]).EmptyState, obj);
   } else {
-    obj = { style: tmp.container };
-    obj1 = { style: tmp.searchBar };
-    obj2 = { size: "md", onChange: tmp4 };
-    obj1.children = callback(experiments(experiments2[18]).SearchField, obj2);
+    obj = { style: null, children: null };
+    obj[0] = tmp.container;
+    obj1 = { style: null, children: null };
+    obj1[0] = tmp.searchBar;
+    obj2 = { size: "md", onChange: null };
+    obj2[1] = tmp4;
+    obj1[1] = callback(tmp5(tmp6[18]).SearchField, obj2);
     const items4 = [callback(bestMatches, obj1), ];
-    obj3 = { style: tmp.listContainer, sections: memo2, estimatedListSize: "windowSize", itemSize: tmp9, insetEnd: overridesInfo(experiments2[12])({ includeKeyboardHeight: true }).insets.bottom + overridesInfo(experiments2[9]).space.PX_16, renderItem: callback };
-    items4[1] = callback(overridesInfo(experiments2[19]), obj3);
-    obj.children = items4;
-    tmp22 = callback2(bestMatches, obj);
-    const tmp21 = overridesInfo(experiments2[19]);
+    obj3 = { style: null, sections: null, estimatedListSize: "windowSize", itemSize: null, insetEnd: null, renderItem: null };
+    obj3[0] = tmp.listContainer;
+    obj3[1] = memo2;
+    obj3[3] = tmp12;
+    obj3[4] = overridesInfo(experiments2[12])({ includeKeyboardHeight: true }).insets.bottom + tmp11(tmp6[9]).space.PX_16;
+    obj3[5] = callback;
+    items4[1] = callback(tmp11(tmp6[19]), obj3);
+    obj[1] = items4;
+    tmp19 = callback2(bestMatches, obj);
+    const tmp11Result = tmp11(tmp6[19]);
   }
-  return tmp22;
+  return tmp19;
 });
 let result = require("get ActivityIndicator").fileFinishedImporting("modules/devtools/native/components/screens/DevToolsExperimentsScreen.tsx");
 

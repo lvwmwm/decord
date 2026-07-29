@@ -1,115 +1,117 @@
-// Module ID: 13585
-// Function ID: 104411
+// Module ID: 13608
+// Function ID: 13609
 // Name: GestureWrapper
-// Dependencies: [57, 31, 27, 10233, 1348, 1907, 653, 1355, 33, 4165, 689, 4026, 4698, 13586, 4375, 1207, 1185, 4017, 4513, 5615, 13588, 13589, 4016, 1198, 4101, 675, 4018, 13590, 5621, 1457, 1327, 13591, 477, 10872, 13592, 13600, 3941, 13602, 1453, 10639, 10845, 10851, 13603, 4036, 13604, 13606, 13608, 13609, 13610, 14819, 14827, 14828, 1184, 2]
+// Dependencies: [32, 19, 17, 10254, 1372, 1931, 676, 1379, 21, 4189, 712, 4050, 4720, 13609, 4398, 1231, 1209, 4041, 4536, 5633, 13611, 13612, 4040, 1222, 4125, 698, 4042, 13613, 5639, 1481, 1351, 13614, 500, 10896, 13615, 13623, 3965, 13625, 1477, 10663, 10869, 10875, 13626, 4060, 10385, 13627, 13629, 13630, 13631, 14845, 14853, 14854, 1208, 2]
 
-// Module 13585 (GestureWrapper)
-import _slicedToArray from "_slicedToArray";
-import useRequestGatewaySocket from "useRequestGatewaySocket";
-import { NativeModules } from "timestamp";
-import { handleHistoryStoreNavigationChange as closure_7 } from "_createForOfIteratorHelperLoose";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_9 from "_isNativeReflectConstruct";
+// Module 13608 (GestureWrapper)
+import set from "set";
+import designConfig from "designConfig";
+import { NativeModules } from "getRootNavigationRef";
+import { handleHistoryStoreNavigationChange as closure_7 } from "getIdFromHistoryItem";
+import ensureGuildLoaded from "ensureGuildLoaded";
+import handleConnectionOpen from "handleConnectionOpen";
 import ME from "ME";
 import { isStaticChannelRoute } from "set";
-import jsxProd from "setLevels";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import module_4026 from "module_4026";
-import enableScreens from "enableScreens";
-import designConfig from "designConfig";
-import importDefaultResult from "isNonEmptyString";
+import jsxProd from "getChannelDetailsFromRoute";
+import createCacheKey from "createCacheKey";
+import module_4050 from "module_4050";
 
-let closure_10;
-let closure_11;
+let c10;
 let closure_12;
 let closure_14;
 let closure_15;
+let unpackModuleId;
 const require = arg1;
 function GestureWrapper(children) {
-  const tmp = _createForOfIteratorHelperLoose();
-  const global = tmp;
-  isScreenLandscape = isScreenLandscape(4698).useIsScreenLandscape();
+  let c0;
+  let isScreenLandscape;
+  const tmp = createCacheKey();
+  c0 = tmp;
+  isScreenLandscape = isScreenLandscape(4720).useIsScreenLandscape();
   let items = [isScreenLandscape, tmp];
   const style = React.useMemo(() => {
-    const items = [tmp.flex, ];
+    const items = [_undefined.flex, ];
     let rootBackgroundColor;
     if (isScreenLandscape) {
-      rootBackgroundColor = tmp.rootBackgroundColor;
+      rootBackgroundColor = _undefined.rootBackgroundColor;
     }
     items[1] = rootBackgroundColor;
     return items;
   }, items);
-  return callback2(importDefault(13586), { style, children: children.children });
+  return callback2(importDefault(13609), { style, children: children.children });
 }
 function handleNavigationOnReady() {
-  importDefault(4375).flush();
-  const ComponentDispatch = require(1207) /* reportDevtoolsEvent */.ComponentDispatch;
+  importDefault(4398).flush();
+  const ComponentDispatch = require(1231) /* ComponentDispatcher */.ComponentDispatch;
   ComponentDispatch.dispatch(constants.NAVIGATOR_READY);
-  const routingInstrumentation = require(1185) /* _maybeBackfillMissingBreadcrumbsFromTelemetryRing */.routingInstrumentation;
-  const obj = importDefault(4375);
-  const result = routingInstrumentation.registerNavigationContainer(require(4017) /* getRootNavigationRef */.getRootNavigationRef());
+  const routingInstrumentation = require(1209) /* _maybeBackfillMissingBreadcrumbsFromTelemetryRing */.routingInstrumentation;
+  const obj = importDefault(4398);
+  const result = routingInstrumentation.registerNavigationContainer(require(4041) /* getRootNavigationRef */.getRootNavigationRef());
   callback();
 }
 function AppNavigationContainer(children) {
-  let closure_0 = React.useRef(undefined);
+  let closure_0;
+  let _require;
+  closure_0 = React.useRef(undefined);
   const callback = React.useCallback(() => {
     const rootNavigationRef = ref2(outer1_3[17]).getRootNavigationRef();
     if (null != rootNavigationRef) {
       if (rootNavigationRef.isReady()) {
         const currentRoute = rootNavigationRef.getCurrentRoute();
-        const obj3 = ref2(outer1_3[22]);
-        const tmp4 = null != ref2(outer1_3[22]).coerceGuildsRoute(currentRoute);
-        const obj4 = ref2(outer1_3[22]);
+        let tmpResult = tmp(tmp2[22]);
+        tmpResult = tmp(tmp2[22]);
+        const tmp4 = null != tmpResult.coerceGuildsRoute(currentRoute);
+        const tmp5 = ref;
         if (tmp6) {
-          outer1_2(outer1_3[25]).track(outer1_10.NAV_DRAWER_OPENED);
-          const obj5 = outer1_2(outer1_3[25]);
+          outer1_2(tmp2[25]).track(outer1_10.NAV_DRAWER_OPENED);
+          const obj5 = outer1_2(tmp2[25]);
         }
-        ref.current = currentRoute;
-        tmp6 = null != ref2(outer1_3[22]).coerceChannelRoute(ref.current) && tmp4;
-        const tmp17 = outer1_4(outer1_2(outer1_3[21])(currentRoute, true), 2)[1];
-        if (null != tmp17) {
-          if (outer1_13(tmp17)) {
-            if (tmp17 !== outer1_9.getChannelId()) {
-              const coerceChannelRouteResult = ref2(outer1_3[22]).coerceChannelRoute(currentRoute);
-              if (!tmp23) {
-                ref2(outer1_3[23]).transitionTo(outer1_12.CHANNEL(tmp16, tmp17), { openChannel: true, navigationReplace: false });
-                const obj7 = ref2(outer1_3[23]);
+        tmp5.current = currentRoute;
+        tmp6 = null != tmpResult.coerceChannelRoute(ref.current) && null != tmpResult.coerceGuildsRoute(currentRoute);
+        const tmp14 = outer1_4(outer1_2(tmp2[21])(currentRoute, true), 2)[1];
+        if (null != tmp14) {
+          if (outer1_13(tmp14)) {
+            if (tmp14 !== outer1_9.getChannelId()) {
+              const coerceChannelRouteResult = tmp(tmp2[22]).coerceChannelRoute(currentRoute);
+              if (!tmp18) {
+                tmp(tmp2[23]).transitionTo(outer1_12.CHANNEL(tmp13, tmp14), { openChannel: true, navigationReplace: false });
+                const tmpResult2 = tmp(tmp2[23]);
               }
-              const obj6 = ref2(outer1_3[22]);
-              tmp23 = null != coerceChannelRouteResult && coerceChannelRouteResult.params.showCreateThread;
+              tmp18 = null != coerceChannelRouteResult && coerceChannelRouteResult.params.showCreateThread;
+              const tmpResult1 = tmp(tmp2[22]);
             }
           }
         }
-        const tmp15 = outer1_4(outer1_2(outer1_3[21])(currentRoute, true), 2);
+        const tmp12 = outer1_4(outer1_2(tmp2[21])(currentRoute, true), 2);
       }
     }
     outer1_7();
   }, []);
   const memo = React.useMemo(() => {
-    const tmp = outer1_2(outer1_3[26])();
+    const tmp = callback(4042)();
     let name;
-    if (null != tmp) {
+    if (tmp != null) {
       const first = tmp.routes[0];
-      if (null != first) {
+      if (first != null) {
         name = first.name;
       }
     }
-    outer1_2(outer1_3[27]).log("Initial Screen: " + name);
+    callback(13613).log("Initial Screen: " + name);
     return tmp;
   }, []);
-  const _require = React.useRef(true);
+  _require = React.useRef(true);
   const effect = React.useEffect(() => {
     if (ref2.current) {
-      ref2.current = false;
+      tmp.current = false;
     } else {
       const _setTimeout = setTimeout;
       const timeout = setTimeout(() => {
-        const rootNavigationRef = callback(outer2_3[17]).getRootNavigationRef();
+        const rootNavigationRef = callback(table[17]).getRootNavigationRef();
         if (null != rootNavigationRef) {
           if (rootNavigationRef.isReady()) {
             const routes = rootNavigationRef.getState().routes;
             const found = routes.filter((name) => "modal" === name.name);
-            rootNavigationRef.reset(outer2_2(outer2_3[26])(found));
+            rootNavigationRef.reset(callback2(table[26])(found));
           }
         }
       }, 0);
@@ -118,85 +120,97 @@ function AppNavigationContainer(children) {
       };
     }
   }, []);
-  let obj = _require(5621);
-  const navigationTheme = obj.useNavigationTheme(importDefault(4101)());
-  obj = { theme: navigationTheme };
-  let tmp = importDefault(4101)();
-  obj.ref = _require(4017).getRootNavigationRef();
-  obj.onReady = handleNavigationOnReady;
-  obj.onStateChange = callback;
-  obj.initialState = memo;
-  obj.children = children.children;
-  return callback2(_require(1457).NavigationContainer, obj);
+  let obj = _require(5639);
+  const navigationTheme = obj.useNavigationTheme(importDefault(4125)());
+  obj = { theme: navigationTheme, ref: null, onReady: null, onStateChange: null, initialState: null, children: null };
+  let tmp = importDefault(4125)();
+  obj[1] = _require(4041).getRootNavigationRef();
+  obj[2] = handleNavigationOnReady;
+  obj[3] = callback;
+  obj[4] = memo;
+  obj[5] = children.children;
+  return callback2(_require(1481).NavigationContainer, obj);
 }
 function ShareNavigationContainer(children) {
-  const tmp = importDefault(4101)();
-  const theme = require(5621) /* useNavigationTheme */.useNavigationTheme(tmp);
-  return callback2(require(1457) /* Link */.NavigationContainer, { theme, children: children.children });
+  const tmp = importDefault(4125)();
+  const theme = require(5639) /* useNavigationTheme */.useNavigationTheme(tmp);
+  return callback2(require(1481) /* Link */.NavigationContainer, { theme, children: children.children });
 }
 function AppNavigationContainerOrEmpty(arg0) {
   let appEntryKey;
   let children;
   ({ children, appEntryKey } = arg0);
   if ("main" === appEntryKey) {
-    let obj = { children };
+    let obj = { children: null };
+    obj[0] = children;
     return callback2(AppNavigationContainer, obj);
   } else if ("share" === appEntryKey) {
-    obj = { children };
+    obj = { children: null };
+    obj[0] = children;
     return callback2(ShareNavigationContainer, obj);
   } else {
-    obj = require(1327) /* isDiscordFrontendDevelopment */;
+    obj = require(1351) /* isDiscordFrontendDevelopment */;
     return obj.assertNever(appEntryKey);
   }
 }
-({ AnalyticEvents: closure_10, ComponentActions: closure_11, Routes: closure_12 } = ME);
+({ AnalyticEvents: c10, ComponentActions: unpackModuleId, Routes: closure_12 } = ME);
 ({ jsx: closure_14, jsxs: closure_15 } = jsxProd);
-_createForOfIteratorHelperLoose = { flex: { flex: 1 } };
-_createForOfIteratorHelperLoose = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.ANDROID_NAVIGATION_BAR_BACKGROUND };
-_createForOfIteratorHelperLoose.rootBackgroundColor = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-let result = module_4026.configureReanimatedLogger({ level: require("module_4026").ReanimatedLogLevel.error, strict: false });
-enableScreens = enableScreens.enableFreeze();
-let obj1 = { level: require("module_4026").ReanimatedLogLevel.error, strict: false };
-designConfig.setDesignConfig({ useTrackNavigatorScreenImpression: require("useTrackNavigatorScreenImpression").useTrackNavigatorScreenImpression });
-let c17 = false;
-let closure_18 = { code: "function AppContainerTsx1(){const{RNScreensTurboModule}=this.__closure;global.RNScreensTurboModule=RNScreensTurboModule;}" };
-let obj2 = { useTrackNavigatorScreenImpression: require("useTrackNavigatorScreenImpression").useTrackNavigatorScreenImpression };
-const result1 = require("isNonEmptyString").profiledRootComponent(function AppContainer(children) {
-  children = children.children;
-  const appEntryKey = children.appEntryKey;
-  const requestGatewaySocket = appEntryKey(13591).useRequestGatewaySocket("AppContainer:" + appEntryKey);
-  const effect = React.useEffect(() => {
-    if (!outer1_17) {
-      const RNScreensTurboModule = children.RNScreensTurboModule;
-      let obj = appEntryKey(outer1_3[11]);
-      const fn = function e() {
-        children.RNScreensTurboModule = RNScreensTurboModule;
-      };
-      obj = { RNScreensTurboModule };
-      fn.__closure = obj;
-      fn.__workletHash = 8891274578898;
-      fn.__initData = outer1_18;
-      obj.runOnUI(fn)();
-      outer1_17 = true;
-    }
-  }, []);
-  const effect1 = React.useEffect(() => {
-    let SplashScreenManager = appEntryKey(outer1_3[32]).isIOS();
-    if (SplashScreenManager) {
-      SplashScreenManager = outer1_6.SplashScreenManager;
-    }
-    if (SplashScreenManager) {
-      const SplashScreenManager2 = outer1_6.SplashScreenManager;
-      SplashScreenManager2.hideSplashScreen();
-    }
-  }, []);
-  let tmp4 = (function useManaContextProviderValue() {
-    const riveRendererExperiment = appEntryKey(outer1_3[50]).useRiveRendererExperiment("AppContainer");
-    let obj = appEntryKey(outer1_3[50]);
-    const riveAppStatePlaybackExperiment = appEntryKey(outer1_3[51]).useRiveAppStatePlaybackExperiment("AppContainer");
+createCacheKey = { flex: { flex: 1 }, rootBackgroundColor: null };
+createCacheKey = { backgroundColor: require("Themes").colors.ANDROID_NAVIGATION_BAR_BACKGROUND };
+createCacheKey[1] = createCacheKey;
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let result = module_4050.configureReanimatedLogger({ level: require("module_4050").ReanimatedLogLevel.error, strict: false });
+try {
+  require("enableScreens").enableFreeze();
+  let obj6 = require("enableScreens");
+  let obj2 = { useTrackNavigatorScreenImpression: null };
+  obj2[0] = require("useTrackNavigatorScreenImpression").useTrackNavigatorScreenImpression;
+  require("designConfig").setDesignConfig(obj2);
+  let c22 = false;
+  let closure_23 = { code: "function AppContainerTsx1(){const{RNScreensTurboModule}=this.__closure;global.RNScreensTurboModule=RNScreensTurboModule;}" };
+  let obj7 = require("designConfig");
+  const result1 = require("module_1208").profiledRootComponent(function AppContainer(children) {
+    children = children.children;
+    let riveRendererExperiment = children;
+    const appEntryKey = children.appEntryKey;
+    let riveAppStatePlaybackExperiment = appEntryKey;
+    let memo1;
+    const requestGatewaySocket = riveAppStatePlaybackExperiment(13614).useRequestGatewaySocket("AppContainer:" + appEntryKey);
+    const effect = React.useEffect(() => {
+      if (!c22) {
+        RNScreensTurboModule = RNScreensTurboModule.RNScreensTurboModule;
+        let obj = riveAppStatePlaybackExperiment(4050);
+        const fn = function e() {
+          RNScreensTurboModule.RNScreensTurboModule = RNScreensTurboModule;
+        };
+        obj = { RNScreensTurboModule: null };
+        obj[0] = RNScreensTurboModule;
+        fn.__closure = obj;
+        fn.__workletHash = 8891274578898;
+        fn.__initData = closure_23;
+        obj.runOnUI(fn)();
+        c22 = true;
+      }
+    }, []);
+    const effect1 = React.useEffect(() => {
+      let SplashScreenManager = riveAppStatePlaybackExperiment(500).isIOS();
+      if (SplashScreenManager) {
+        SplashScreenManager = closure_6.SplashScreenManager;
+      }
+      if (SplashScreenManager) {
+        const SplashScreenManager2 = closure_6.SplashScreenManager;
+        SplashScreenManager2.hideSplashScreen();
+      }
+    }, []);
+    riveRendererExperiment = undefined;
+    riveAppStatePlaybackExperiment = undefined;
+    memo1 = undefined;
+    let obj = riveAppStatePlaybackExperiment(13614);
+    riveRendererExperiment = riveAppStatePlaybackExperiment(14853).useRiveRendererExperiment("AppContainer");
+    let obj2 = riveAppStatePlaybackExperiment(14853);
+    riveAppStatePlaybackExperiment = riveAppStatePlaybackExperiment(14854).useRiveAppStatePlaybackExperiment("AppContainer");
     let items = [riveRendererExperiment, riveAppStatePlaybackExperiment];
-    const memo = outer1_5.useMemo(() => {
+    const memo = React.useMemo(() => {
       const items = [];
       if (riveRendererExperiment) {
         items.push("rive-mobile-renderer");
@@ -206,64 +220,66 @@ const result1 = require("isNonEmptyString").profiledRootComponent(function AppCo
       }
       return items;
     }, items);
-    const items1 = [memo];
-    return outer1_5.useMemo(() => {
+    memo1 = memo;
+    let items1 = [memo];
+    memo1 = React.useMemo(() => {
       obj = {
         experiments: obj,
         captureException(arg0, tags) {
-          let obj = callback(outer3_3[52]);
+          let obj = callback(table[52]);
           obj = { tags };
           return obj.captureException(arg0, obj);
         }
       };
-      obj = { enabledExperiments: memo };
+      obj = { enabledExperiments: memo1 };
       return obj;
     }, items1);
-  })();
-  const importDefault = tmp4;
-  let items = [appEntryKey, children, tmp4];
-  return React.useMemo(() => {
-    let obj = { profile: appEntryKey(outer1_3[33]).Profiles.AppContainer };
-    obj = {};
-    obj = {};
-    const obj1 = { value: tmp4 };
-    const obj2 = {};
-    const tmp = tmp4(outer1_3[33]);
-    const obj3 = { value: appEntryKey };
-    const obj4 = { appEntryKey };
-    const obj5 = {};
-    const obj6 = {};
-    let obj9 = tmp4(outer1_3[41]);
-    obj6.history = obj9.getHistory();
-    const obj7 = {};
-    const obj8 = {};
-    const tmp2 = tmp4(outer1_3[37]);
-    obj9 = {};
-    const obj10 = {};
-    const obj11 = {};
-    tmp4 = tmp4(outer1_3[45]);
-    const items = [outer1_14(tmp4(outer1_3[46]), {}), ];
-    const obj12 = {};
-    const items1 = [children, outer1_14(appEntryKey(outer1_3[47]).SafeAreaReporter, {}), outer1_14(tmp4(outer1_3[48]), {}), outer1_14(tmp4(outer1_3[49]), {})];
-    obj12.children = items1;
-    items[1] = outer1_15(appEntryKey(outer1_3[47]).SafeAreaProvider, obj12);
-    obj11.children = items;
-    obj10.children = outer1_15(tmp4, obj11);
-    obj9.children = outer1_14(tmp4(outer1_3[44]).Component, obj10);
-    obj8.children = outer1_14(appEntryKey(outer1_3[43]).PortalProvider, obj9);
-    obj7.children = outer1_14(tmp4(outer1_3[42]), obj8);
-    obj6.children = outer1_14(outer1_19, obj7);
-    obj5.children = outer1_14(appEntryKey(outer1_3[40]).Router, obj6);
-    obj4.children = outer1_14(appEntryKey(outer1_3[39]).WebViewContextProvider, obj5);
-    obj3.children = outer1_14(outer1_23, obj4);
-    obj2.children = outer1_14(appEntryKey(outer1_3[38]).AppEntryKeyContext.Provider, obj3);
-    obj1.children = outer1_14(tmp2, obj2);
-    obj.children = outer1_14(appEntryKey(outer1_3[36]).ManaContextProvider, obj1);
-    obj.children = outer1_14(appEntryKey(outer1_3[35]).RootThemeContextProvider, obj);
-    obj.children = outer1_14(appEntryKey(outer1_3[34]).ReanimatedScreenProvider, obj);
-    return outer1_14(tmp, obj);
-  }, items);
-});
-const result2 = require("get ActivityIndicator").fileFinishedImporting("components_native/AppContainer.tsx");
-
-export default result1;
+    const items2 = [appEntryKey, children, memo1];
+    return React.useMemo(() => {
+      let obj = { profile: null, children: null };
+      obj[0] = riveAppStatePlaybackExperiment(outer1_3[33]).Profiles.AppContainer;
+      obj = { children: null };
+      obj = { children: null };
+      const obj1 = { value: memo1, children: null };
+      const obj2 = { children: null };
+      const tmp = memo1(outer1_3[33]);
+      const obj3 = { value: riveAppStatePlaybackExperiment, children: null };
+      const obj4 = { appEntryKey: riveAppStatePlaybackExperiment, children: null };
+      const obj5 = { children: null };
+      const obj6 = { history: null, children: null };
+      let obj9 = memo1(outer1_3[41]);
+      obj6[0] = obj9.getHistory();
+      const obj7 = { children: null };
+      const obj8 = { children: null };
+      const tmp2 = memo1(outer1_3[37]);
+      obj9 = { children: null };
+      const obj10 = { children: null };
+      const obj11 = { children: null };
+      const tmp3 = memo1(outer1_3[42]);
+      const items = [outer1_14(memo1(outer1_3[46]), {}), ];
+      const obj12 = { children: null };
+      const items1 = [riveRendererExperiment, outer1_14(riveAppStatePlaybackExperiment(outer1_3[47]).SafeAreaReporter, {}), outer1_14(memo1(outer1_3[48]), {}), outer1_14(memo1(outer1_3[49]), {})];
+      obj12[0] = items1;
+      items[1] = outer1_15(riveAppStatePlaybackExperiment(outer1_3[47]).SafeAreaProvider, obj12);
+      obj11[0] = items;
+      obj10[0] = outer1_15(memo1(outer1_3[45]), obj11);
+      obj9[0] = outer1_14(memo1(outer1_3[44]).Component, obj10);
+      obj8[0] = outer1_14(riveAppStatePlaybackExperiment(outer1_3[43]).PortalProvider, obj9);
+      obj7[0] = outer1_14(tmp3, obj8);
+      obj6[1] = outer1_14(outer1_17, obj7);
+      obj5[0] = outer1_14(riveAppStatePlaybackExperiment(outer1_3[40]).Router, obj6);
+      obj4[1] = outer1_14(riveAppStatePlaybackExperiment(outer1_3[39]).WebViewContextProvider, obj5);
+      obj3[1] = outer1_14(outer1_21, obj4);
+      obj2[0] = outer1_14(riveAppStatePlaybackExperiment(outer1_3[38]).AppEntryKeyContext.Provider, obj3);
+      obj1[1] = outer1_14(tmp2, obj2);
+      obj[0] = outer1_14(riveAppStatePlaybackExperiment(outer1_3[36]).ManaContextProvider, obj1);
+      obj[0] = outer1_14(riveAppStatePlaybackExperiment(outer1_3[35]).RootThemeContextProvider, obj);
+      obj[1] = outer1_14(riveAppStatePlaybackExperiment(outer1_3[34]).ReanimatedScreenProvider, obj);
+      return outer1_14(tmp, obj);
+    }, items2);
+  });
+  const importDefaultResult = require("module_1208");
+  const result2 = require("get ActivityIndicator").fileFinishedImporting("components_native/AppContainer.tsx");
+  exports.default = result1;
+} catch (err) {
+}

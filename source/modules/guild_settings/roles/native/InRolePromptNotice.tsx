@@ -1,60 +1,70 @@
-// Module ID: 16435
-// Function ID: 128092
+// Module ID: 16470
+// Function ID: 16471
 // Name: InRolePromptNotice
-// Dependencies: [31, 27, 653, 33, 4165, 689, 1360, 16436, 1273, 8322, 4161, 1212, 2]
+// Dependencies: [19, 17, 676, 21, 4189, 712, 1384, 16471, 1297, 8346, 4185, 1236, 2]
 // Exports: default
 
-// Module 16435 (InRolePromptNotice)
-import "result";
+// Module 16470 (InRolePromptNotice)
+import "noop";
 import { View } from "get ActivityIndicator";
 import { RoleFlags } from "ME";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_5;
+let c5;
 let closure_6;
 const require = arg1;
-({ jsx: closure_5, jsxs: closure_6 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16, paddingBottom: require("_createForOfIteratorHelperLoose").space.PX_4, flexDirection: "row", alignItems: "center" };
-_createForOfIteratorHelperLoose.promptRow = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.promptText = { marginLeft: require("_createForOfIteratorHelperLoose").space.PX_4 };
-_createForOfIteratorHelperLoose.icon = { height: 16, width: 16 };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-let obj1 = { marginLeft: require("_createForOfIteratorHelperLoose").space.PX_4 };
+({ jsx: c5, jsxs: closure_6 } = jsxProd);
+createCacheKey = { promptRow: null, promptText: null, icon: null };
+createCacheKey = { paddingHorizontal: require("Themes").space.PX_16, paddingBottom: require("Themes").space.PX_4, flexDirection: "row", alignItems: "center" };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { marginLeft: require("Themes").space.PX_4 };
+createCacheKey[2] = { height: 16, width: 16 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let obj1 = { marginLeft: require("Themes").space.PX_4 };
 const result = require("ME").fileFinishedImporting("modules/guild_settings/roles/native/InRolePromptNotice.tsx");
 
 export default function InRolePromptNotice(role) {
   role = role.role;
-  let stringResult = _createForOfIteratorHelperLoose();
-  let obj = require(1360) /* hasFlag */;
+  let string = createCacheKey();
+  let stringResult = dependencyMap;
+  let obj = require(1384) /* hasFlag */;
   if (!obj.hasFlag(role.flags, RoleFlags.IN_PROMPT)) {
     return null;
   } else {
-    let obj1 = require(16436) /* _createForOfIteratorHelperLoose */;
-    obj = { style: stringResult.promptRow };
-    let Icon = require(1273) /* Button */.Icon;
+    obj = { style: null, children: null };
+    obj[0] = string.promptRow;
+    const tmpResult = tmp(16471);
+    let Icon = tmp(1297).Icon;
     if (isRolePowerfulResult) {
-      obj = { style: stringResult.icon, source: importDefault(8322), color: importDefault(689).unsafe_rawColors.YELLOW_300 };
-      const items = [tmp7(Icon, obj), ];
-      obj1 = { style: stringResult.promptText, variant: "text-sm/medium" };
-      const intl2 = tmp8(1212).intl;
-      stringResult = intl2.string(tmp8(1212).t.YRbgXz);
-      obj1.children = stringResult;
-      Icon = tmp7(tmp8(4161).Text, obj1);
+      obj = { style: null, source: null, color: null };
+      obj[0] = string.icon;
+      obj[1] = importDefault(8346);
+      obj[2] = importDefault(712).unsafe_rawColors.YELLOW_300;
+      const items = [tmp6(Icon, obj), ];
+      const obj1 = { style: null, variant: "text-sm/medium", children: null };
+      obj1[0] = string.promptText;
+      const intl2 = tmp(1236).intl;
+      string = intl2.string;
+      stringResult = string(tmp(1236).t.YRbgXz);
+      obj1[2] = stringResult;
+      Icon = tmp6(tmp(4185).Text, obj1);
       items[1] = Icon;
-      obj.children = items;
-      let tmp5Result = tmp5(tmp6, obj);
+      obj[1] = items;
+      let tmp4Result = tmp4(tmp5, obj);
     } else {
-      const obj2 = { style: stringResult.icon, source: importDefault(8322) };
-      const items1 = [tmp7(Icon, obj2), ];
-      const obj3 = { style: stringResult.promptText, variant: "text-sm/medium" };
-      const intl = tmp8(1212).intl;
-      obj3.children = intl.string(tmp8(1212).t.mqeO2v);
-      items1[1] = tmp7(tmp8(4161).Text, obj3);
-      obj.children = items1;
-      tmp5Result = tmp5(tmp6, obj);
+      const obj2 = { style: null, source: null };
+      obj2[0] = string.icon;
+      obj2[1] = importDefault(8346);
+      const items1 = [tmp6(Icon, obj2), ];
+      const obj3 = { style: null, variant: "text-sm/medium", children: null };
+      obj3[0] = string.promptText;
+      const intl = tmp(1236).intl;
+      obj3[2] = intl.string(tmp(1236).t.mqeO2v);
+      items1[1] = tmp6(tmp(4185).Text, obj3);
+      obj[1] = items1;
+      tmp4Result = tmp4(tmp5, obj);
     }
-    isRolePowerfulResult = obj1.isRolePowerful(role);
+    isRolePowerfulResult = tmp(16471).isRolePowerful(role);
   }
 };

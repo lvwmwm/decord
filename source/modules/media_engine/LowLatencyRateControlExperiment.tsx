@@ -1,12 +1,13 @@
-// Module ID: 12880
-// Function ID: 100107
+// Module ID: 12902
+// Function ID: 12903
 // Name: getLowLatencyRateControlExperimentConfig
-// Dependencies: [1325, 2]
+// Dependencies: [1349, 2]
 // Exports: getLowLatencyRateControlExperimentConfig
 
-// Module 12880 (getLowLatencyRateControlExperimentConfig)
-let obj = { kind: "user", name: "2025-10-low-latency-rate-control", defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } };
-let closure_0 = require("getUnitId")(obj);
+// Module 12902 (getLowLatencyRateControlExperimentConfig)
+let obj = { 1: null };
+obj[1] = { enabled: true };
+let closure_0 = require("getUnitId")({ kind: "user", name: "2025-10-low-latency-rate-control", defaultConfig: { enabled: false }, variations: obj });
 const result = require("set").fileFinishedImporting("modules/media_engine/LowLatencyRateControlExperiment.tsx");
 
 export const getLowLatencyRateControlExperimentConfig = function getLowLatencyRateControlExperimentConfig(disable) {
@@ -18,7 +19,8 @@ export const getLowLatencyRateControlExperimentConfig = function getLowLatencyRa
   if (flag) {
     let defaultConfig = obj.definition.defaultConfig;
   } else {
-    obj = { location: disable.location };
+    obj = { location: null };
+    obj[0] = disable.location;
     defaultConfig = obj.getConfig(obj);
   }
   return defaultConfig;

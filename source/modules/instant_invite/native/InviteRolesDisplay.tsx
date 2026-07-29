@@ -1,45 +1,49 @@
-// Module ID: 10185
-// Function ID: 78612
+// Module ID: 10206
+// Function ID: 10207
 // Name: InviteRolesDisplay
-// Dependencies: [31, 27, 1911, 33, 4165, 566, 4161, 1212, 10186, 2]
+// Dependencies: [19, 17, 1935, 21, 4189, 589, 4185, 1236, 10207, 2]
 // Exports: default
 
-// Module 10185 (InviteRolesDisplay)
-import "result";
+// Module 10206 (InviteRolesDisplay)
+import "noop";
 import { View } from "get ActivityIndicator";
-import closure_4 from "_createForOfIteratorHelperLoose";
+import createGuildRoleRecordFromRust from "createGuildRoleRecordFromRust";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_5;
+let c5;
 let closure_6;
 const require = arg1;
-({ jsx: closure_5, jsxs: closure_6 } = jsxProd);
-let closure_7 = _createForOfIteratorHelperLoose.createStyles({ container: { marginTop: 8 }, label: { marginBottom: 4 }, rolesRow: { flexDirection: "row", flexWrap: "wrap" } });
-const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/instant_invite/native/InviteRolesDisplay.tsx");
+({ jsx: c5, jsxs: closure_6 } = jsxProd);
+let closure_7 = createCacheKey.createStyles({ container: { marginTop: 8 }, label: { marginBottom: 4 }, rolesRow: { flexDirection: "row", flexWrap: "wrap" } });
+const result = require("createGuildRoleRecordFromRust").fileFinishedImporting("modules/instant_invite/native/InviteRolesDisplay.tsx");
 
 export default function InviteRolesDisplay(roleIds) {
   roleIds = roleIds.roleIds;
   const guildId = roleIds.guildId;
   const tmp = callback3();
-  let obj = roleIds(566);
-  const items = [closure_4];
+  let obj = roleIds(589);
+  const items = [createGuildRoleRecordFromRust];
   const items1 = [roleIds, guildId];
   const stateFromStoresArray = obj.useStateFromStoresArray(items, () => {
-    const mapped = roleIds.map((arg0) => outer2_4.getRole(outer1_1, arg0));
+    const mapped = roleIds.map((arg0) => outer1_4.getRole(closure_1, arg0));
     return mapped.filter((arg0) => null != arg0);
   }, items1);
-  let tmp2 = null;
+  let tmp4 = null;
   if (0 !== stateFromStoresArray.length) {
-    obj = { style: tmp.container };
-    obj = { variant: "text-xs/semibold", color: "text-muted", style: tmp.label };
-    const intl = roleIds(1212).intl;
-    obj.children = intl.string(roleIds(1212).t.stcSfI);
-    const items2 = [callback(roleIds(4161).Text, obj), ];
-    const obj1 = { style: tmp.rolesRow, children: stateFromStoresArray.map((id) => outer1_5(guildId(outer1_2[8]), { role: id, guildId }, id.id)) };
+    obj = { style: null, children: null };
+    obj[0] = tmp.container;
+    obj = { variant: "text-xs/semibold", color: "text-muted", style: null, children: null };
+    obj[2] = tmp.label;
+    const intl = tmp2(1236).intl;
+    obj[3] = intl.string(tmp2(1236).t.stcSfI);
+    const items2 = [callback(tmp2(4185).Text, obj), ];
+    const obj1 = { style: null, children: null };
+    obj1[0] = tmp.rolesRow;
+    obj1[1] = stateFromStoresArray.map((id) => outer1_5(guildId(outer1_2[8]), { role: id, guildId }, id.id));
     items2[1] = callback(View, obj1);
-    obj.children = items2;
-    tmp2 = callback2(View, obj);
+    obj[1] = items2;
+    tmp4 = callback2(View, obj);
   }
-  return tmp2;
+  return tmp4;
 };

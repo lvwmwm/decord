@@ -1,27 +1,32 @@
-// Module ID: 16199
-// Function ID: 125368
-// Name: _isNativeReflectConstruct
-// Dependencies: [7, 6, 15, 17, 18, 3866, 1212, 5112, 2]
+// Module ID: 16234
+// Function ID: 16235
+// Name: prototype
+// Dependencies: [5134, 3890, 1236, 2]
 
-// Module 16199 (_isNativeReflectConstruct)
-import AutomaticLifecycleManager from "AutomaticLifecycleManager";
-import getSystemLocale from "getSystemLocale";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
-import tmp2 from "AutomaticLifecycleManager";
+// Module 16234 (prototype)
+import "initialize";
 
-const require = arg1;
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
-  }
-  const result = _isNativeReflectConstruct();
+let require = arg1;
+let prototype = function InstantInviteManager() {
+  const applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
+  const require = applyArgumentsResult;
+  applyArgumentsResult.actions = {
+    NATIVE_APP_INSTANT_INVITE_GDM_SHARE_FAILED() {
+      return applyArgumentsResult.shareInviteFailed();
+    }
+  };
+  applyArgumentsResult.shareInviteFailed = function shareInviteFailed() {
+    let obj = callback(3890);
+    obj = { key: "GROUP_DM_ADD_ERROR", content: null };
+    const intl = applyArgumentsResult(1236).intl;
+    obj[1] = intl.string(applyArgumentsResult(1236).t["N/9OFy"]);
+    obj.open(obj);
+  };
+  return applyArgumentsResult;
+}.prototype;
+class prototype extends tmp2 {
 }
-tmp2 = new tmp2();
-let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/instant_invite/native/InstantInviteManager.native.tsx");
+prototype = new prototype();
+const result = require("getSystemLocale").fileFinishedImporting("modules/instant_invite/native/InstantInviteManager.native.tsx");
 
-export default tmp2;
+export default prototype;

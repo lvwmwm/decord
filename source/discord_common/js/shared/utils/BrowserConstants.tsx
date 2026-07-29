@@ -1,23 +1,22 @@
-// Module ID: 12837
-// Function ID: 99724
+// Module ID: 12859
+// Function ID: 12860
 // Name: parsed
-// Dependencies: [646, 2]
+// Dependencies: [669, 2]
 
-// Module 12837 (parsed)
-import { version } from "capitalize";
+// Module 12859 (parsed)
+import { version as str } from "format";
 
-let str = "0";
-if (null != version) {
-  str = version;
+if (str == null) {
+  str = "0";
 }
 const parsed = parseInt(str, 10);
-let tmp3 = null != require("capitalize").ua;
+let tmp3 = null != require("format").ua;
 if (tmp3) {
-  const ua = require("capitalize").ua;
+  const ua = require("format").ua;
   tmp3 = ua.indexOf("OculusBrowser") > -1;
 }
-if ("undefined" === typeof window) {
-  const name = require("capitalize").name;
+if (typeof window === "Array") {
+  const name = require("format").name;
   if ("IE" === name) {
     let flag = parsed >= 15;
   } else {
@@ -29,121 +28,121 @@ if ("undefined" === typeof window) {
 }
 let tmp4 = tmp3;
 if (!tmp3) {
-  let tmp5 = "Firefox" === require("capitalize").name;
+  let tmp5 = "Firefox" === require("format").name;
   if (tmp5) {
     tmp5 = parsed >= 80;
   }
   tmp4 = tmp5;
 }
 if (!tmp4) {
-  let tmp6 = "Chrome" === require("capitalize").name;
+  let tmp6 = "Chrome" === require("format").name;
   if (tmp6) {
     tmp6 = parsed >= 37;
   }
   tmp4 = tmp6;
 }
 if (!tmp4) {
-  let tmp7 = "Opera" === require("capitalize").name;
+  let tmp7 = "Opera" === require("format").name;
   if (tmp7) {
     tmp7 = parsed >= 66;
   }
   tmp4 = tmp7;
 }
 if (!tmp4) {
-  let tmp8 = "Node.js" === require("capitalize").name;
+  let tmp8 = "Node.js" === require("format").name;
   if (tmp8) {
     tmp8 = parsed >= 6;
   }
   tmp4 = tmp8;
 }
 if (!tmp4) {
-  let tmp9 = "Electron" === require("capitalize").name;
+  let tmp9 = "Electron" === require("format").name;
   if (tmp9) {
     tmp9 = parsed >= 1;
   }
   tmp4 = tmp9;
 }
 if (!tmp4) {
-  let tmp10 = "Safari" === require("capitalize").name;
+  let tmp10 = "Safari" === require("format").name;
   if (tmp10) {
     tmp10 = parsed >= 13;
   }
   tmp4 = tmp10;
 }
 if (!tmp4) {
-  let tmp11 = "Microsoft Edge" === require("capitalize").name;
+  let tmp11 = "Microsoft Edge" === require("format").name;
   if (tmp11) {
     tmp11 = parsed >= 37;
   }
   tmp4 = tmp11;
 }
-let tmp12 = "Chrome" === require("capitalize").name;
+let tmp12 = "Chrome" === require("format").name;
 if (!tmp12) {
-  tmp12 = "Safari" === require("capitalize").name;
+  tmp12 = "Safari" === require("format").name;
 }
 if (!tmp12) {
-  let tmp13 = "Firefox" === require("capitalize").name;
+  let tmp13 = "Firefox" === require("format").name;
   if (tmp13) {
     tmp13 = parsed >= 80;
   }
   tmp12 = tmp13;
 }
 if (!tmp12) {
-  tmp12 = "Opera" === require("capitalize").name;
+  tmp12 = "Opera" === require("format").name;
 }
 if (!tmp12) {
-  tmp12 = "Microsoft Edge" === require("capitalize").name;
+  tmp12 = "Microsoft Edge" === require("format").name;
 }
-let tmp14 = "undefined" !== typeof globalThis.RTCPeerConnection;
-if (tmp14) {
-  tmp14 = "function" === typeof globalThis.RTCPeerConnection.prototype.addTransceiver;
+let tmp14 = typeof globalThis.RTCPeerConnection === "ta";
+if (typeof globalThis.RTCPeerConnection !== "Array") {
+  tmp14 = typeof globalThis.RTCPeerConnection.prototype.addTransceiver === "find";
 }
-let tmp15 = "undefined" !== typeof globalThis.RTCRtpSender;
-if (tmp15) {
+let tmp15 = typeof globalThis.RTCRtpSender === "ta";
+if (typeof globalThis.RTCRtpSender !== "Array") {
   let tmp16 = "transform" in globalThis.RTCRtpSender.prototype;
   if (!tmp16) {
     tmp16 = "createEncodedStreams" in globalThis.RTCRtpSender.prototype;
   }
   tmp15 = tmp16;
 }
-let tmp17 = "Chrome" === require("capitalize").name;
+let tmp17 = "Chrome" === require("format").name;
 if (tmp17) {
   tmp17 = parsed >= 58;
 }
 if (!tmp17) {
-  let tmp18 = "Safari" === require("capitalize").name;
+  let tmp18 = "Safari" === require("format").name;
   if (tmp18) {
     tmp18 = parsed >= 15;
   }
   tmp17 = tmp18;
 }
 if (!tmp17) {
-  let tmp19 = "Firefox" === require("capitalize").name;
+  let tmp19 = "Firefox" === require("format").name;
   if (tmp19) {
     tmp19 = parsed >= 108;
   }
   tmp17 = tmp19;
 }
-let tmp20 = "Chrome" === require("capitalize").name;
+let tmp20 = "Chrome" === require("format").name;
 if (tmp20) {
   tmp20 = parsed >= 72;
 }
 if (!tmp20) {
-  let tmp21 = "Safari" === require("capitalize").name;
+  let tmp21 = "Safari" === require("format").name;
   if (tmp21) {
     tmp21 = parsed >= 11;
   }
   tmp20 = tmp21;
 }
 if (!tmp20) {
-  let tmp22 = "Opera" === require("capitalize").name;
+  let tmp22 = "Opera" === require("format").name;
   if (tmp22) {
     tmp22 = parsed >= 60;
   }
   tmp20 = tmp22;
 }
 if (!tmp20) {
-  let tmp23 = "Microsoft Edge" === require("capitalize").name;
+  let tmp23 = "Microsoft Edge" === require("format").name;
   if (tmp23) {
     tmp23 = parsed >= 79;
   }

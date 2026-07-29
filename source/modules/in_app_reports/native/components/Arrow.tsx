@@ -1,22 +1,25 @@
-// Module ID: 7679
-// Function ID: 61340
+// Module ID: 7702
+// Function ID: 7703
 // Name: Arrow
-// Dependencies: [31, 33, 4165, 689, 1273, 7680, 2]
+// Dependencies: [19, 21, 4189, 712, 1297, 7703, 2]
 // Exports: default
 
-// Module 7679 (Arrow)
-import "result";
+// Module 7702 (Arrow)
+import "noop";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
 const require = arg1;
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { tintColor: require("_createForOfIteratorHelperLoose").colors.INTERACTIVE_TEXT_DEFAULT };
-_createForOfIteratorHelperLoose.tintColor = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/in_app_reports/native/components/Arrow.tsx");
+createCacheKey = { tintColor: null };
+createCacheKey = { tintColor: require("Themes").colors.INTERACTIVE_TEXT_DEFAULT };
+createCacheKey[0] = createCacheKey;
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+const result = require("createCacheKey").fileFinishedImporting("modules/in_app_reports/native/components/Arrow.tsx");
 
 export default function Arrow() {
-  const obj = { source: importDefault(7680), size: require(1273) /* Button */.Icon.Sizes.MEDIUM, style: _createForOfIteratorHelperLoose().tintColor };
-  return jsx(require(1273) /* Button */.Icon, { source: importDefault(7680), size: require(1273) /* Button */.Icon.Sizes.MEDIUM, style: _createForOfIteratorHelperLoose().tintColor });
+  const obj = { source: null, size: null, style: null };
+  obj[0] = importDefault(7703);
+  obj[1] = require(1297) /* Button */.Icon.Sizes.MEDIUM;
+  obj[2] = createCacheKey().tintColor;
+  return jsx(require(1297) /* Button */.Icon, { source: null, size: null, style: null });
 };

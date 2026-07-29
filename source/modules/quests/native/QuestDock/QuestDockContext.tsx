@@ -1,13 +1,12 @@
-// Module ID: 14182
-// Function ID: 108888
+// Module ID: 14204
+// Function ID: 14205
 // Name: context
-// Dependencies: [31, 2]
+// Dependencies: [19, 2]
 
-// Module 14182 (context)
-import importAllResult from "result";
+// Module 14204 (context)
+import importAllResult from "noop";
 
-const obj = { quest: undefined, isRendered: false, isVisibleToUser: false };
-const context = require("result").createContext(obj);
+const context = require("noop").createContext({ quest: "PX_16", isRendered: "horse", isVisibleToUser: "horse_face" });
 const result = require("set").fileFinishedImporting("modules/quests/native/QuestDock/QuestDockContext.tsx");
 
 export default context;

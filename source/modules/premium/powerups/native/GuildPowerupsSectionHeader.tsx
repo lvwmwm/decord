@@ -1,30 +1,29 @@
-// Module ID: 11619
-// Function ID: 90178
+// Module ID: 11643
+// Function ID: 11644
 // Name: GuildPowerupsSectionHeader
-// Dependencies: [27, 33, 4165, 689, 4161, 2]
+// Dependencies: [17, 21, 4189, 712, 4185, 2]
 // Exports: default
 
-// Module 11619 (GuildPowerupsSectionHeader)
+// Module 11643 (GuildPowerupsSectionHeader)
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_3;
-let closure_4;
-({ jsx: closure_3, jsxs: closure_4 } = jsxProd);
-let obj = {};
-obj = { padding: require("_createForOfIteratorHelperLoose").space.PX_16 };
-obj.headerContainer = obj;
-let closure_5 = _createForOfIteratorHelperLoose.createStyles(obj);
-const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/premium/powerups/native/GuildPowerupsSectionHeader.tsx");
+let c3;
+let c4;
+({ jsx: c3, jsxs: c4 } = jsxProd);
+let obj = { headerContainer: null };
+obj = { padding: require("Themes").space.PX_16 };
+obj[0] = obj;
+let closure_5 = createCacheKey.createStyles(obj);
+const result = require("createCacheKey").fileFinishedImporting("modules/premium/powerups/native/GuildPowerupsSectionHeader.tsx");
 
 export default function GuildPowerupsSectionHeader(arg0) {
   let description;
   let title;
   ({ title, description } = arg0);
-  let obj = { style: callback3().headerContainer };
-  obj = { variant: "heading-lg/semibold", accessibilityRole: "header", children: title };
-  const items = [callback(require(4161) /* Text */.Text, obj), callback(require(4161) /* Text */.Text, { variant: "text-md/normal", children: description })];
-  obj.children = items;
+  const obj = { style: callback3().headerContainer, children: null };
+  const items = [callback(require(4185) /* Text */.Text, { variant: "heading-lg/semibold", accessibilityRole: "header", children: title }), callback(require(4185) /* Text */.Text, { variant: "text-md/normal", children: description })];
+  obj[1] = items;
   return callback2(View, obj);
 };

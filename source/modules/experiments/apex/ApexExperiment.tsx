@@ -1,13 +1,13 @@
-// Module ID: 1325
-// Function ID: 15561
+// Module ID: 1349
+// Function ID: 1350
 // Name: getUnitId
-// Dependencies: [57, 1194, 1188, 1326, 490, 1327, 566, 2]
+// Dependencies: [32, 1218, 1212, 1350, 513, 1351, 589, 2]
 // Exports: default
 
-// Module 1325 (getUnitId)
+// Module 1349 (getUnitId)
 import _slicedToArray from "_slicedToArray";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_5 from "_isNativeReflectConstruct";
+import fetchFingerprint from "fetchFingerprint";
+import initialize from "initialize";
 
 const require = arg1;
 function getUnitId(arg0, guildId) {
@@ -16,42 +16,42 @@ function getUnitId(arg0, guildId) {
   } else if ("user" === arg0) {
     return store.getId();
   } else if ("installation" === arg0) {
-    const maybeExtractIdResult = require(490) /* extractId */.maybeExtractId(store.getInstallationForTracking());
-    let str2 = "";
-    if (null != maybeExtractIdResult) {
-      str2 = maybeExtractIdResult;
+    let str2 = require(513) /* extractId */.maybeExtractId(store.getInstallationForTracking());
+    if (str2 == null) {
+      str2 = "";
     }
     return str2;
   } else {
-    require(1327) /* isDiscordFrontendDevelopment */.assertNever(arg0);
+    require(1351) /* isDiscordFrontendDevelopment */.assertNever(arg0);
   }
 }
 function useUnitId(arg0, guildId) {
-  let items = [_isNativeReflectConstruct];
-  callback(require(566) /* initialize */.useStateFromStoresArray(items, () => {
-    const items = [outer1_4.getId(), outer1_4.getInstallationForTracking()];
+  let items = [fetchFingerprint];
+  callback(require(589) /* initialize */.useStateFromStoresArray(items, () => {
+    const items = [store.getId(), store.getInstallationForTracking()];
     return items;
   }), 2);
   if ("guild" === arg0) {
     return guildId.guildId;
   } else if ("user" === arg0) {
-    return tmp2;
+    return tmp4;
   } else if ("installation" === arg0) {
-    const maybeExtractIdResult = require(490) /* extractId */.maybeExtractId(tmp3);
-    let str3 = "";
-    if (null != maybeExtractIdResult) {
-      str3 = maybeExtractIdResult;
+    let tmpResult = tmp(513);
+    let str3 = tmpResult.maybeExtractId(tmp5);
+    if (str3 == null) {
+      str3 = "";
     }
     return str3;
   } else {
-    require(1327) /* isDiscordFrontendDevelopment */.assertNever(arg0);
+    tmpResult = tmp(1351);
+    tmpResult.assertNever(arg0);
   }
-  const obj = require(566) /* initialize */;
+  const obj = require(589) /* initialize */;
 }
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/experiments/apex/ApexExperiment.tsx");
+const result = require("initialize").fileFinishedImporting("modules/experiments/apex/ApexExperiment.tsx");
 
-export default function createApexExperiment(ApexExperiment) {
-  return importDefault(1326)(ApexExperiment, closure_5, getUnitId, useUnitId);
+export default function createApexExperiment(arg0) {
+  return importDefault(1350)(arg0, initialize, getUnitId, useUnitId);
 };
-export const ApexExperiment = require("createApexExperimentCommon").ApexExperiment;
+export const ApexExperiment = require("logger").ApexExperiment;
 export { getUnitId };

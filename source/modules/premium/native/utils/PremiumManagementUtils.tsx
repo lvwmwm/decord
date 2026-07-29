@@ -1,16 +1,35 @@
-// Module ID: 6531
-// Function ID: 58158
-// Name: getPremiumManagementMethod
-// Dependencies: [653, 482, 33, 3, 4506, 1212, 477, 1553, 6532, 6535, 2]
-// Exports: getExternalManagementMessage
+// Module ID: 6552
+// Function ID: 6553
+// Name: defaultMobileWebNitroManagementSuccessCallback
+// Dependencies: [676, 505, 21, 3, 4529, 1236, 500, 1577, 6553, 6556, 2]
+// Exports: getExternalManagementMessage, getPremiumManagementMethod
 
-// Module 6531 (getPremiumManagementMethod)
+// Module 6552 (defaultMobileWebNitroManagementSuccessCallback)
 import { SubscriptionStatusTypes } from "ME";
 import { PaymentGatewayToFriendlyName as closure_4 } from "sum";
 import { jsx } from "jsxProd";
-import importDefaultResult from "timestamp";
 
-function getPremiumManagementMethod(isOnPlatformMatchingExternalPaymentGateway) {
+function defaultMobileWebNitroManagementSuccessCallback() {
+  return tmp2.log("Successfully opened mobile web Nitro Management page");
+}
+function defaultMobileWebNitroManagementFailureCallback(arg0) {
+  tmp2.error("Failed to open mobile web Nitro Management page, error response: ", arg0);
+  let obj = importDefault(4529);
+  obj = { title: null, body: null, hideActionSheet: true };
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj[0] = intl.string(require(1236) /* getSystemLocale */.t.NrBVjw);
+  const intl2 = require(1236) /* getSystemLocale */.intl;
+  obj[1] = intl2.string(require(1236) /* getSystemLocale */.t["gD+grx"]);
+  obj.show(obj);
+}
+let closure_6 = new require("timestamp")("PremiumManagementUtils");
+let obj = { IN_APP: "manage_in_app", IN_EXTERNAL_MOBILE_PAYMENT_GATEWAY: "manage_in_external_mobile_payment_gateway", IN_WEB: "manage_in_web" };
+const tmp2 = new require("timestamp")("PremiumManagementUtils");
+let result = require("jsxProd").fileFinishedImporting("modules/premium/native/utils/PremiumManagementUtils.tsx");
+
+export const MobileWebDestinationTypes = { PREMIUM_MANAGEMENT: "premium_management" };
+export const PremiumManagementMethod = obj;
+export const getPremiumManagementMethod = function getPremiumManagementMethod(isOnPlatformMatchingExternalPaymentGateway) {
   if (null == isOnPlatformMatchingExternalPaymentGateway) {
     return null;
   } else if (isOnPlatformMatchingExternalPaymentGateway.isOnPlatformMatchingExternalPaymentGateway) {
@@ -23,117 +42,102 @@ function getPremiumManagementMethod(isOnPlatformMatchingExternalPaymentGateway) 
     }
     IN_WEB = obj.IN_WEB;
   }
-}
-function defaultMobileWebNitroManagementSuccessCallback() {
-  return importDefaultResult.log("Successfully opened mobile web Nitro Management page");
-}
-function defaultMobileWebNitroManagementFailureCallback(arg0) {
-  importDefaultResult.error("Failed to open mobile web Nitro Management page, error response: ", arg0);
-  let obj = importDefault(4506);
-  obj = {};
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj.title = intl.string(require(1212) /* getSystemLocale */.t.NrBVjw);
-  const intl2 = require(1212) /* getSystemLocale */.intl;
-  obj.body = intl2.string(require(1212) /* getSystemLocale */.t["gD+grx"]);
-  obj.hideActionSheet = true;
-  obj.show(obj);
-}
-importDefaultResult = new importDefaultResult("PremiumManagementUtils");
-let obj = { IN_APP: "manage_in_app", IN_EXTERNAL_MOBILE_PAYMENT_GATEWAY: "manage_in_external_mobile_payment_gateway", IN_WEB: "manage_in_web" };
-const result = require("jsxProd").fileFinishedImporting("modules/premium/native/utils/PremiumManagementUtils.tsx");
-
-export const MobileWebDestinationTypes = { PREMIUM_MANAGEMENT: "premium_management" };
-export const PremiumManagementMethod = obj;
-export { getPremiumManagementMethod };
+};
 export const getExternalManagementMessage = function getExternalManagementMessage(subscription, arg1) {
   let tmp = arg1;
   if (arg1 === undefined) {
     tmp = null;
   }
   const require = tmp;
-  function manageExternalNitroSubscription() {
-    if (null != tmp) {
-      let obj = tmp(outer1_2[8]);
-      obj = { loadId: tmp.loadId };
-      if (null != tmp.onSuccessCallback) {
-        let onSuccessCallback = tmp.onSuccessCallback;
-      } else {
-        onSuccessCallback = outer1_9;
-      }
-      if (null != tmp.onFailureCallback) {
-        let onFailureCallback = tmp.onFailureCallback;
-      } else {
-        onFailureCallback = outer1_10;
-      }
-      return obj.goToStandaloneNitroManagementFromMobileApp("premium_external_management", obj, onSuccessCallback, onFailureCallback);
-    }
-  }
-  const tmp2 = getPremiumManagementMethod(subscription);
-  if (null != tmp2) {
-    if (tmp2 !== obj.IN_APP) {
-      let str2 = "iOS";
-      if (!obj8.isIOS()) {
-        obj = require(1553) /* isMetaQuest */;
-        let str = "Android";
-        if (obj.isMetaQuest()) {
-          str = "Meta Quest";
-        }
-        str2 = str;
-      }
-      if (tmp2 === obj.IN_EXTERNAL_MOBILE_PAYMENT_GATEWAY) {
-        if (null != subscription) {
-          if (null != subscription.paymentGateway) {
-            const intl4 = require(1212) /* getSystemLocale */.intl;
-            obj = { mobilePlatform: str2, externalPaymentGateway: table[subscription.paymentGateway] };
-            return intl4.formatToPlainString(require(1212) /* getSystemLocale */.t.cFZnqX, obj);
+  if (null == subscription) {
+    if (null != null) {
+      if (null !== obj.IN_APP) {
+        let str2 = "iOS";
+        if (!obj7.isIOS()) {
+          let tmp13Result = tmp13(1577);
+          let str = "Android";
+          if (tmp13Result.isMetaQuest()) {
+            str = "Meta Quest";
           }
+          str2 = str;
         }
-      }
-      if (tmp2 === obj.IN_WEB) {
-        if (null != tmp) {
-          if (tmp.shouldAllowExternalManagement) {
-            if ("iOS" !== str2) {
-              let obj1 = require(1553) /* isMetaQuest */;
-            }
-            let status;
-            if (null != subscription) {
-              status = subscription.status;
-            }
-            let tmp13 = status === SubscriptionStatusTypes.CANCELED;
-            if (!tmp13) {
-              tmp13 = status === SubscriptionStatusTypes.PAUSE_PENDING;
-            }
-            if (!tmp13) {
-              tmp13 = status === SubscriptionStatusTypes.PAST_DUE;
-            }
-            if (tmp.returnCtaAsComponent) {
-              obj = {};
-              obj1 = { justifyContent: "flex-start" };
-              obj.containerStyle = obj1;
-              obj.onPress = function onPress() {
-                return manageExternalNitroSubscription();
-              };
-              const intl3 = require(1212) /* getSystemLocale */.intl;
-              const t = require(1212) /* getSystemLocale */.t;
-              obj.text = intl3.string(tmp13 ? t.tqSSSA : t["olSp/D"]);
-              obj.variant = "text-sm/semibold";
-              jsx(require(6535) /* LinkButton */.LinkButton, {});
-              const tmp18 = jsx;
-            } else {
-              const intl2 = require(1212) /* getSystemLocale */.intl;
-              const obj2 = { manageExternalNitroSubscription };
-              return intl2.format(require(1212) /* getSystemLocale */.t.IERwUb, obj2);
+        if (null === tmp12.IN_EXTERNAL_MOBILE_PAYMENT_GATEWAY) {
+          if (null != subscription) {
+            if (null != subscription.paymentGateway) {
+              const intl4 = tmp13(1236).intl;
+              obj = { mobilePlatform: null, externalPaymentGateway: null };
+              obj[0] = str2;
+              obj[1] = table[subscription.paymentGateway];
+              return intl4.formatToPlainString(tmp13(1236).t.cFZnqX, obj);
             }
           }
         }
-        const intl = require(1212) /* getSystemLocale */.intl;
-        const obj3 = { mobilePlatform: str2 };
-        return intl.formatToPlainString(require(1212) /* getSystemLocale */.t.CnoyAN, obj3);
-      } else {
-        return null;
+        if (null === tmp12.IN_WEB) {
+          if (null != tmp) {
+            if (tmp.shouldAllowExternalManagement) {
+              if ("iOS" !== str2) {
+                tmp13Result = tmp13(1577);
+              }
+              let status;
+              if (subscription != null) {
+                status = subscription.status;
+              }
+              if (tmp.returnCtaAsComponent) {
+                obj = { containerStyle: null, onPress: null, text: null, variant: "text-sm/semibold" };
+                obj[0] = { justifyContent: "flex-start" };
+                obj[1] = function onPress() {
+                  if (null != tmp) {
+                    let obj = tmp(outer1_2[8]);
+                    obj = { loadId: null };
+                    obj[0] = tmp.loadId;
+                    const tmp4 = null != tmp.onSuccessCallback ? tmp.onSuccessCallback : outer1_8;
+                    const tmp5 = null != tmp.onFailureCallback ? tmp.onFailureCallback : outer1_9;
+                    const result = obj.goToStandaloneNitroManagementFromMobileApp("premium_external_management", obj, tmp4, tmp5);
+                  }
+                };
+                const intl3 = tmp13(1236).intl;
+                const t = tmp13(1236).t;
+                obj[2] = intl3.string(tmp8 ? t.tqSSSA : t["olSp/D"]);
+                jsx(tmp13(6556).LinkButton, { containerStyle: null, onPress: null, text: null, variant: "text-sm/semibold" });
+                const tmp9 = jsx;
+              } else {
+                function manageExternalNitroSubscription() {
+                  if (null != tmp) {
+                    let obj = tmp(outer1_2[8]);
+                    obj = { loadId: null };
+                    obj[0] = tmp.loadId;
+                    const tmp4 = null != tmp.onSuccessCallback ? tmp.onSuccessCallback : outer1_8;
+                    const tmp5 = null != tmp.onFailureCallback ? tmp.onFailureCallback : outer1_9;
+                    return obj.goToStandaloneNitroManagementFromMobileApp("premium_external_management", obj, tmp4, tmp5);
+                  }
+                }
+                const intl2 = tmp13(1236).intl;
+                const obj1 = { manageExternalNitroSubscription: null };
+                obj1[0] = manageExternalNitroSubscription;
+                return intl2.format(tmp13(1236).t.IERwUb, obj1);
+              }
+              tmp8 = status === SubscriptionStatusTypes.CANCELED || status === SubscriptionStatusTypes.PAUSE_PENDING || status === SubscriptionStatusTypes.PAST_DUE;
+            }
+          }
+          const intl = tmp13(1236).intl;
+          const obj2 = { mobilePlatform: null };
+          obj2[0] = str2;
+          return intl.formatToPlainString(tmp13(1236).t.CnoyAN, obj2);
+        } else {
+          return null;
+        }
+        obj7 = require(500) /* set */;
       }
-      obj8 = require(477) /* set */;
     }
+    return null;
+  } else if (subscription.isOnPlatformMatchingExternalPaymentGateway) {
+    let IN_WEB = obj.IN_APP;
+  } else {
+    if (subscription.isPurchasedExternally) {
+      if (null != subscription.paymentGateway) {
+        IN_WEB = obj.IN_EXTERNAL_MOBILE_PAYMENT_GATEWAY;
+      }
+    }
+    IN_WEB = obj.IN_WEB;
   }
-  return null;
 };

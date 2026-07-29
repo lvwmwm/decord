@@ -1,15 +1,15 @@
-// Module ID: 14355
-// Function ID: 110068
+// Module ID: 14377
+// Function ID: 14378
 // Name: toggle
-// Dependencies: [7733, 10099, 1212, 3838, 2]
+// Dependencies: [7756, 10120, 1236, 3862, 2]
 
-// Module 14355 (toggle)
+// Module 14377 (toggle)
 import createToggle from "createToggle";
 
 const toggle = createToggle.createToggle({
   useTitle() {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(require(1212) /* getSystemLocale */.t["9ptHSs"]);
+    const intl = require(1236) /* getSystemLocale */.intl;
+    return intl.string(require(1236) /* getSystemLocale */.t["9ptHSs"]);
   },
   parent: require("MobileSetting").MobileSetting.ACCESSIBILITY,
   useValue: require("explicitContentFromProto").GifAutoPlay.useSetting,
@@ -17,8 +17,8 @@ const toggle = createToggle.createToggle({
 });
 const obj = {
   useTitle() {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(require(1212) /* getSystemLocale */.t["9ptHSs"]);
+    const intl = require(1236) /* getSystemLocale */.intl;
+    return intl.string(require(1236) /* getSystemLocale */.t["9ptHSs"]);
   },
   parent: require("MobileSetting").MobileSetting.ACCESSIBILITY,
   useValue: require("explicitContentFromProto").GifAutoPlay.useSetting,

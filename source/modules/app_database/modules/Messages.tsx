@@ -1,502 +1,529 @@
-// Module ID: 5715
-// Function ID: 49252
-// Name: _createForOfIteratorHelperLoose
-// Dependencies: [5, 57, 6, 7, 4843, 1348, 5716, 3, 4842, 1883, 5722, 5725, 1884, 2]
+// Module ID: 5733
+// Function ID: 5734
+// Name: computeUsersAndMembers
+// Dependencies: [5, 32, 4865, 1372, 5734, 3, 4864, 1907, 5740, 5743, 1908, 2]
+// Exports: isLikelyNotDelta
 
-// Module 5715 (_createForOfIteratorHelperLoose)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import _slicedToArray from "_slicedToArray";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+// Module 5733 (computeUsersAndMembers)
 import timestamp from "timestamp";
-import closure_7 from "_isNativeReflectConstruct";
-import closure_8 from "_isNativeReflectConstruct";
-import closure_9 from "_createForOfIteratorHelperLoose";
-import importDefaultResult from "_defineProperties";
+import _slicedToArray from "_slicedToArray";
+import _handleConnectionOpen from "_handleConnectionOpen";
+import ensureGuildLoaded from "ensureGuildLoaded";
+import handleSelectedChannelStoreChanged from "handleSelectedChannelStoreChanged";
+import set from "_handleConnectionOpen";
 
-const require = arg1;
-function _createForOfIteratorHelperLoose(iterable) {
-  let closure_0 = iterable;
-  iterable = "undefined" !== typeof Symbol;
-  if (iterable) {
-    const _Symbol = Symbol;
-    iterable = iterable[Symbol.iterator];
-  }
-  if (!iterable) {
-    iterable = iterable[Symbol.iterator];
-  }
-  if (iterable) {
-    const iter = iterable.call(iterable);
-    const next = iter.next;
-    return next.bind(iter);
-  } else {
-    const _Array = Array;
-    let tmp = iterable;
-    if (!Array.isArray(iterable)) {
-      let tmp2;
-      if (iterable) {
-        if ("string" === typeof iterable) {
-          tmp2 = _arrayLikeToArray(iterable, undefined);
-        } else {
-          const toString = {}.toString;
-          const substr = toString.call(iterable).slice(8, -1);
-          let name = substr;
-          if (tmp3) {
-            name = iterable.constructor.name;
-          }
-          if ("Map" !== name) {
-            if ("Set" !== name) {
-              if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(iterable, undefined);
-              } else {
-                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
-              }
-            }
-            tmp2 = arr;
-          }
-          const _Array2 = Array;
-          arr = Array.from(iterable);
-          const callResult = toString.call(iterable);
-          tmp3 = "Object" === substr && iterable.constructor;
-        }
-      }
-      tmp = tmp2;
-      if (!tmp2) {
-        const _TypeError = TypeError;
-        const typeError = new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
-        throw typeError;
-      }
+const metroImportAll = new require("ensureGuildLoaded")("Messages");
+let prototype;
+prototype = function ChannelHistory(arr) {
+  let tmp6;
+  let tmp7;
+  const obj = Object.create(new.target.prototype);
+  obj[1] = [];
+  obj[2] = [];
+  obj[3] = [];
+  if (arr.length > 0) {
+    const first = arr[0];
+    let connectionId;
+    if (first != null) {
+      connectionId = first.connectionId;
     }
-    if (tmp) {
-      closure_0 = tmp;
+    let everyResult = arr.length > 0;
+    [tmp6, tmp7] = callback2(prototype.computeUsersAndMembers(arr), 2);
+    if (everyResult) {
+      everyResult = arr.every((connectionId) => connectionId.connectionId === connectionId);
     }
-    let c1 = 0;
-    return () => {
-      if (closure_1 >= length.length) {
-        let obj = { done: true };
-      } else {
-        obj = { done: false };
-        closure_1 = tmp3 + 1;
-        obj.value = length[+closure_1];
+    if (everyResult) {
+      obj.connectionId = connectionId;
+    }
+    obj.users = tmp6;
+    obj.members = tmp7;
+    obj.messages = arr.map((message) => message.message);
+    const tmp5 = callback2(prototype.computeUsersAndMembers(arr), 2);
+  }
+  return obj;
+}.prototype;
+prototype["computeUsersAndMembers"] = function computeUsersAndMembers(arr) {
+  const self = this;
+  obj = obj(4864);
+  const result = obj.requireSortedDescending(arr);
+  const map = new Map();
+  const map1 = new Map();
+  const iter = arr[Symbol.iterator]();
+  const nextResult = iter.next();
+  while (iter !== undefined) {
+    let addIntoMapResult = self.addIntoMap(map, nextResult.users, (id) => id.id);
+    let addIntoMapResult1 = self.addIntoMap(map1, nextResult.members, (userId) => userId.userId);
+    continue;
+  }
+  const items = [Array.from(map.values()), Array.from(map1.values())];
+  return items;
+};
+prototype["addIntoMap"] = function addIntoMap(map, members, arg2) {
+  const iter = members[Symbol.iterator]();
+  const nextResult = iter.next();
+  while (iter !== undefined) {
+    let tmp2 = nextResult;
+    let tmp3 = arg2(nextResult);
+    let tmp4 = tmp3;
+    let value = map.get(tmp3);
+    let tmp7 = null == value;
+    if (!tmp7) {
+      let tmp8 = value;
+      let incomplete = tmp6.incomplete;
+      if (incomplete) {
+        let tmp9 = nextResult;
+        incomplete = !tmp2.incomplete;
       }
-      return obj;
+      tmp7 = incomplete;
+    }
+    if (tmp7) {
+      let tmp10 = tmp3;
+      let tmp11 = nextResult;
+      let result = map.set(tmp4, tmp2);
+    }
+    continue;
+  }
+};
+class Messages {
+  constructor() {
+    obj = Object.create(new.target.prototype);
+    Messages = obj;
+    obj.actions = {
+      CHANNEL_DELETE(arg0, arg1) {
+            return obj.handleChannelDelete(arg0, arg1);
+          },
+      GUILD_DELETE(arg0, arg1) {
+            return obj.handleGuildDelete(arg0, arg1);
+          },
+      LOAD_MESSAGES_SUCCESS(arg0, arg1) {
+            return obj.handleLoadMessagesSuccess(arg0, arg1);
+          },
+      MESSAGE_CREATE(arg0, arg1) {
+            return obj.handleMessageCreate(arg0, arg1);
+          },
+      MESSAGE_DELETE_BULK(arg0, arg1) {
+            return obj.handleMessageDeleteBulk(arg0, arg1);
+          },
+      MESSAGE_DELETE(arg0, arg1) {
+            return obj.handleMessageDelete(arg0, arg1);
+          },
+      MESSAGE_PREVIEWS_LOADED(arg0, arg1) {
+            return obj.handleMessagePreviewsLoaded(arg0, arg1);
+          },
+      MESSAGE_UPDATE(arg0, arg1) {
+            return obj.handleMessageUpdate(arg0, arg1);
+          }
     };
+    return obj;
   }
 }
-function _arrayLikeToArray(arg0, arg1) {
-  let length;
-  if (tmp) {
-    length = arg0.length;
-  }
-  const ArrayResult = Array(length);
-  for (let num = 0; num < length; num = num + 1) {
-    ArrayResult[num] = arg0[num];
-  }
-  return ArrayResult;
-}
-function isLikelyNotDelta(author) {
-  return null != author.author && null != author.content && null != author.mentions && null != author.timestamp;
-}
-importDefaultResult = new importDefaultResult("Messages");
-let tmp4 = (() => {
-  class ChannelHistory {
-    constructor(arg0) {
-      self = this;
-      tmp = outer1_5(this, connectionId);
-      this.connectionId = null;
-      this.users = [];
-      this.members = [];
-      this.messages = [];
-      if (arg0.length > 0) {
-        first = arg0[0];
-        connectionId = undefined;
-        if (null != first) {
-          connectionId = first.connectionId;
-        }
-        tmp3 = connectionId;
-        tmp4 = outer1_4;
-        num = 2;
-        tmp5 = outer1_4(connectionId.computeUsersAndMembers(arg0), 2);
-        num2 = 1;
-        everyResult = arg0.length > 0;
-        [tmp6, tmp7] = tmp5;
-        if (everyResult) {
-          everyResult = arg0.every((connectionId) => connectionId.connectionId === connectionId);
-        }
-        if (everyResult) {
-          self.connectionId = connectionId;
-        }
-        self.users = tmp6;
-        self.members = tmp7;
-        self.messages = arg0.map((message) => message.message);
-      }
-      return;
-    }
-  }
-  let obj = {
-    key: "computeUsersAndMembers",
-    value(messages) {
-      let done;
-      const self = this;
-      const result = ChannelHistory(outer1_2[8]).requireSortedDescending(messages);
-      const map = new Map();
-      const map1 = new Map();
-      const tmp2 = outer1_12(messages);
-      let iter = tmp2();
-      if (!iter.done) {
-        do {
-          let value = iter.value;
-          let addIntoMapResult = self.addIntoMap(map, value.users, (id) => id.id);
-          let addIntoMapResult1 = self.addIntoMap(map1, value.members, (userId) => userId.userId);
-          let iter2 = tmp2();
-          iter = iter2;
-          done = iter2.done;
-        } while (!done);
-      }
-      const items = [Array.from(map.values()), Array.from(map1.values())];
-      return items;
-    }
-  };
-  let items = [obj, ];
-  obj = {
-    key: "addIntoMap",
-    value(get) {
-      let iter2;
-      const tmp = outer1_12(arg1);
-      let iter = tmp();
-      if (!iter.done) {
-        do {
-          let value = iter.value;
-          let tmp2 = arg2(value);
-          value = get.get(tmp2);
-          let tmp4 = null == value;
-          if (!tmp4) {
-            let tmp5 = value.incomplete && !value.incomplete;
-            tmp4 = tmp5;
-          }
-          if (tmp4) {
-            let result = get.set(tmp2, value);
-          }
-          iter2 = tmp();
-          iter = iter2;
-        } while (!iter2.done);
-      }
-    }
-  };
-  items[1] = obj;
-  return callback(ChannelHistory, null, items);
-})();
-let closure_11 = tmp4;
-let tmp5 = (() => {
-  class Messages {
-    constructor() {
-      self = this;
-      tmp = outer1_5(this, Messages);
-      this.actions = {
-        CHANNEL_DELETE(arg0, arg1) {
-              return self.handleChannelDelete(arg0, arg1);
-            },
-        GUILD_DELETE(arg0, arg1) {
-              return self.handleGuildDelete(arg0, arg1);
-            },
-        LOAD_MESSAGES_SUCCESS(arg0, arg1) {
-              return self.handleLoadMessagesSuccess(arg0, arg1);
-            },
-        MESSAGE_CREATE(arg0, arg1) {
-              return self.handleMessageCreate(arg0, arg1);
-            },
-        MESSAGE_DELETE_BULK(arg0, arg1) {
-              return self.handleMessageDeleteBulk(arg0, arg1);
-            },
-        MESSAGE_DELETE(arg0, arg1) {
-              return self.handleMessageDelete(arg0, arg1);
-            },
-        MESSAGE_PREVIEWS_LOADED(arg0, arg1) {
-              return self.handleMessagePreviewsLoaded(arg0, arg1);
-            },
-        MESSAGE_UPDATE(arg0, arg1) {
-              return self.handleMessageUpdate(arg0, arg1);
-            }
-      };
-      return;
-    }
-  }
-  let obj = { key: "startupLoad" };
-  let closure_2 = Messages(async (arg0, arg1, arg2, arg3) => {
-    const obj = callback(table[9]);
-    const messagesResult = callback(table[9]).messages(arg0);
-    const tmp = yield callback(table[9]).messages(arg0).getLatest(arg1, arg2, arg3);
-    return new outer2_11(yield callback(table[9]).messages(arg0).getLatest(arg1, arg2, arg3));
-  });
-  obj.value = function startupLoad(arg0, guildId, channelId, outer2_14) {
-    return dependencyMap(...arguments);
-  };
-  const items = [obj, , , , , , , , , , , , , , , , , , ];
-  obj = { key: "load" };
-  let closure_1 = Messages(async (arg0, arg1, arg2) => {
-    const basicChannel = outer2_8.getBasicChannel(arg1);
-    if (null != arg1) {
-      if (null != basicChannel) {
-        if (obj.isReadableChannel(basicChannel)) {
-          const obj2 = callback2(1883);
-          const tmp9 = yield callback2(1883).messages(arg0).getLatest(basicChannel.guild_id, arg1, arg2);
-          const prototype = outer2_11.prototype;
-          const tmp14 = new outer2_11(tmp9);
-          return tmp14;
-        }
-        obj = callback(5722);
-      }
-    }
-    return new outer2_11([]);
-  });
-  obj.value = function load() {
-    return callback2(...arguments);
-  };
-  items[1] = obj;
-  obj = {
-    key: "handleMessageCreate",
-    value(optimistic) {
-      const self = this;
-      let tmp = optimistic.optimistic || optimistic.isPushNotification;
-      if (!tmp) {
-        tmp = null != optimistic.sendMessageOptions;
-      }
-      if (!tmp) {
-        if (obj.isReadableChannelId(optimistic.channelId)) {
-          self.upsertOne(optimistic.guildId, optimistic.channelId, optimistic.message, arg1);
-        }
-        obj = callback(5722);
-      }
-    }
-  };
-  items[2] = obj;
-  items[3] = {
-    key: "handleMessageUpdate",
-    value(message) {
-      const self = this;
-      let isReadableChannelIdResult = null != message.message.id && null != message.message.channel_id;
-      if (isReadableChannelIdResult) {
-        isReadableChannelIdResult = callback(5722).isReadableChannelId(message.message.channel_id);
-        const obj = callback(5722);
-      }
-      if (isReadableChannelIdResult) {
-        if (outer1_14(message.message)) {
-          self.upsertOne(message.guildId, message.message.channel_id, message.message, arg1);
-        } else {
-          self.updateOne(message.guildId, message.message.channel_id, message.message, arg1);
-        }
-      }
-    }
-  };
-  items[4] = {
-    key: "handleMessagePreviewsLoaded",
-    value(messages) {
-      let iter2;
-      const self = this;
-      const tmp = outer1_12(messages.messages);
-      let iter = tmp();
-      if (!iter.done) {
-        do {
-          let value = iter.value;
-          let tmp2 = callback;
-          let tmp3 = dependencyMap;
-          let obj = callback(5722);
-          if (obj.isReadableChannelId(value.channel_id)) {
-            let tmp4 = self;
-            let tmp5 = value;
-            let tmp6 = arg1;
-            let insertStaleResult = self.insertStale(messages.guildId, value.channel_id, value, arg1);
-          }
-          iter2 = tmp();
-          iter = iter2;
-        } while (!iter2.done);
-      }
-    }
-  };
-  items[5] = {
-    key: "handleLoadMessagesSuccess",
-    value(channelId) {
-      const self = this;
-      const basicChannel = outer1_8.getBasicChannel(channelId.channelId);
-      if (null != basicChannel) {
-        if (obj.isReadableChannelId(channelId.channelId)) {
-          if (!channelId.isAfter) {
-            if (!channelId.isBefore) {
-              if (!channelId.hasMoreAfter) {
-                if (channelId.limit > 5) {
-                  self.replaceChannel(basicChannel.guild_id, channelId.channelId, channelId.messages, arg1);
-                }
-              }
-            }
-          }
-          self.upsertMany(basicChannel.guild_id, channelId.channelId, channelId.messages, arg1);
-        }
-        obj = callback(5722);
-      }
-    }
-  };
-  items[6] = {
-    key: "handleMessageDelete",
-    value(id) {
-      const self = this;
-      if (null != id.id) {
-        self.deleteOne(id.guildId, id.channelId, id.id, arg1);
-      }
-    }
-  };
-  items[7] = {
-    key: "handleMessageDeleteBulk",
-    value(ids) {
-      let done;
-      const self = this;
-      const tmp = outer1_12(ids.ids);
-      let iter = tmp();
-      if (!iter.done) {
-        do {
-          let tmp2 = self;
-          let tmp3 = arg1;
-          let deleteOneResult = self.deleteOne(ids.guildId, ids.channelId, iter.value, arg1);
-          let iter2 = tmp();
-          iter = iter2;
-          done = iter2.done;
-        } while (!done);
-      }
-    }
-  };
-  items[8] = {
-    key: "handleChannelDelete",
-    value(channel) {
-      this.deleteChannel(channel.channel.guild_id, channel.channel.id, arg1);
-    }
-  };
-  items[9] = {
-    key: "handleGuildDelete",
-    value(guild) {
-      const self = this;
-      if (!guild.guild.unavailable) {
-        self.deleteGuild(guild.guild.id, arg1);
-      }
-    }
-  };
-  items[10] = {
-    key: "resetInMemoryState",
-    value() {
-
-    }
-  };
-  items[11] = {
-    key: "insertStale",
-    value(arg0, arg1, arg2, arg3) {
-      const obj = callback2(1883);
-      const result = outer1_7.lastTimeConnectedChanged();
-      const KvMessage = callback(5725).KvMessage;
-      const messagesTransactionResult = callback2(1883).messagesTransaction(arg3);
-      messagesTransactionResult.put(arg0, arg1, KvMessage.fromMessage(arg0, arg1, arg2, result), callback(1884).ConflictOptions.Skip);
-    }
-  };
-  items[12] = {
-    key: "upsertOne",
-    value(items, limit) {
-      const messagesTransactionResult = callback2(1883).messagesTransaction(arg3);
-      const result = outer1_7.lastTimeConnectedChanged();
-      const KvMessage = callback(5725).KvMessage;
-      const obj = callback2(1883);
-      messagesTransactionResult.put(items, limit, KvMessage.fromMessage(items, limit, arg2, result), callback(1884).ConflictOptions.Replace);
-      messagesTransactionResult.trimChannel(items, limit, outer1_9.saveLimit(limit));
-    }
-  };
-  items[13] = {
-    key: "upsertMany",
-    value(items, limit) {
-      let done;
-      const messagesTransactionResult = callback2(1883).messagesTransaction(arg3);
-      const result = outer1_7.lastTimeConnectedChanged();
-      const tmp2 = outer1_12(arg2);
-      let iter = tmp2();
-      if (!iter.done) {
-        do {
-          let tmp3 = callback;
-          let tmp4 = dependencyMap;
-          let KvMessage = callback(5725).KvMessage;
-          let tmp5 = KvMessage;
-          let tmp6 = items;
-          let tmp7 = limit;
-          let tmp8 = result;
-          let putResult = messagesTransactionResult.put(items, limit, KvMessage.fromMessage(items, limit, iter.value, result));
-          let iter2 = tmp2();
-          iter = iter2;
-          done = iter2.done;
-        } while (!done);
-      }
-      messagesTransactionResult.trimChannel(items, limit, outer1_9.saveLimit(limit));
-    }
-  };
-  items[14] = {
-    key: "replaceChannel",
-    value(items, limit, arr) {
-      let closure_0 = items;
-      const callback2 = limit;
-      const messagesTransactionResult = callback2(1883).messagesTransaction(arg3);
-      const dependencyMap = outer1_7.lastTimeConnectedChanged();
-      const saveLimitResult = outer1_9.saveLimit(limit);
-      let substr = arr;
-      if (arr.length > saveLimitResult) {
-        substr = arr.slice(arr.length - saveLimitResult);
-      }
-      messagesTransactionResult.replaceChannel(items, limit, substr.map((arg0) => {
-        const KvMessage = items(table[11]).KvMessage;
-        return KvMessage.fromMessage(items, closure_1, arg0, table);
-      }));
-      messagesTransactionResult.trimChannel(items, limit, outer1_9.saveLimit(limit));
-    }
-  };
-  const obj13 = { key: "updateOne" };
-  let closure_0 = Messages(async (arg0, arg1, arg2, arg3) => {
-    if (null != arg2.id) {
-      let obj = callback2(1883);
-      const messagesResult = obj.messages(arg3.database);
-      const tmp6 = yield messagesResult.get(arg0, arg1, arg2.id);
-      const result = outer2_7.lastTimeConnectedChanged();
-      if (null != tmp6) {
-        const KvMessage = callback(5725).KvMessage;
-        obj = {};
-        const merged = Object.assign(tmp6.message);
-        const merged1 = Object.assign(arg2);
-        messagesResult.put(arg0, arg1, KvMessage.fromMessage(arg0, arg1, obj, result));
+const prototype2 = Messages.prototype;
+prototype2["startupLoad"] = function startupLoad(arg0, arg1, arg2, outer1_9) {
+  let closure_0 = arg0;
+  let closure_1 = arg1;
+  let closure_2 = arg2;
+  const callback = outer1_9;
+  return callback(function*() {
+    if (c3 === 2) {
+      c3 = 3;
+      HermesBuiltin.throwTypeError();
+    } else if (tmp4 === 3) {
+      if (arg0 === 1) {
+        throw arg1;
+      } else if (arg0 === 2) {
+        let obj = { value: null, done: true };
+        obj[0] = arg1;
+        return obj;
+      } else {
+        return { value: "HermesInternal", done: null };
       }
     } else {
-      outer2_10.warn("updateOne: message.id is null; cannot update a message if we do not know its id.");
+      try {
+        c3 = 2;
+        if (0 === table) {
+          if (arg0 === 1) {
+            c3 = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            c3 = 3;
+            obj = { value: null, done: true };
+            obj[0] = arg1;
+            return obj;
+          } else {
+            let closure_1 = tmp5;
+            let closure_0 = tmp2;
+            closure_0 = undefined;
+            let obj2 = outer1_1(table[7]);
+            table = 1;
+            c3 = 1;
+            const obj1 = { value: null, done: false };
+            obj1[0] = obj2.messages(outer1_0).getLatest(outer1_1, table, c3);
+            return obj1;
+          }
+        } else if (arg0 === 1) {
+          c3 = 3;
+          throw arg1;
+        } else if (arg0 === 2) {
+          c3 = 3;
+          obj2 = { value: null, done: true };
+          obj2[0] = arg1;
+          return obj2;
+        } else {
+          closure_0 = arg1;
+          c3 = 3;
+          obj = { value: null, done: true };
+          obj[0] = new outer1_9(closure_0);
+          return obj;
+        }
+      } catch (tmp17) {
+        c3 = tmp;
+        throw tmp17;
+      }
     }
-  });
-  obj13.value = function updateOne(guildId, channel_id, message, arg3) {
-    return callback(...arguments);
-  };
-  items[15] = obj13;
-  items[16] = {
-    key: "deleteOne",
-    value(arg0, arg1, arg2, arg3) {
-      const obj = callback2(1883);
-      callback2(1883).messagesTransaction(arg3).deleteMessage(arg0, arg1, arg2);
+  })();
+};
+prototype2["load"] = function load(arg0, arg1, arg2) {
+  let closure_0 = arg0;
+  let closure_1 = arg1;
+  let closure_2 = arg2;
+  return callback(function*() {
+    if (c3 === 2) {
+      c3 = 3;
+      HermesBuiltin.throwTypeError();
+    } else if (tmp4 === 3) {
+      if (arg0 === 1) {
+        throw arg1;
+      } else if (arg0 === 2) {
+        let obj = { value: null, done: true };
+        obj[0] = arg1;
+        return obj;
+      } else {
+        return { value: "HermesInternal", done: null };
+      }
+    } else {
+      try {
+        c3 = 2;
+        if (0 === table) {
+          if (arg0 === 1) {
+            c3 = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            c3 = 3;
+            obj = { value: null, done: true };
+            obj[0] = arg1;
+            return obj;
+          } else {
+            let closure_1 = tmp5;
+            let closure_0 = tmp2;
+            closure_0 = undefined;
+            const basicChannel = outer1_6.getBasicChannel(outer1_1);
+            if (null != outer1_1) {
+              if (null != basicChannel) {
+                let obj2 = outer1_0(table[8]);
+                if (obj2.isReadableChannel(basicChannel)) {
+                  const obj5 = outer1_1(tmp12[7]);
+                  table = 1;
+                  c3 = 1;
+                  const obj1 = { value: null, done: false };
+                  obj1[0] = outer1_1(tmp12[7]).messages(outer1_0).getLatest(basicChannel.guild_id, outer1_1, table);
+                  return obj1;
+                }
+                tmp12 = table;
+              }
+            }
+            c3 = 3;
+            obj2 = { value: null, done: true };
+            obj2[0] = new outer1_9([]);
+            return obj2;
+          }
+        } else if (arg0 === 1) {
+          c3 = 3;
+          throw arg1;
+        } else if (arg0 === 2) {
+          c3 = 3;
+          const obj3 = { value: null, done: true };
+          obj3[0] = arg1;
+          return obj3;
+        } else {
+          closure_0 = arg1;
+          c3 = 3;
+          obj = { value: null, done: true };
+          obj[0] = new outer1_9(closure_0);
+          return obj;
+        }
+      } catch (tmp18) {
+        c3 = tmp;
+        throw tmp18;
+      }
     }
-  };
-  items[17] = {
-    key: "deleteChannel",
-    value(arg0, arg1, arg2) {
-      const obj = callback2(1883);
-      callback2(1883).messagesTransaction(arg2).deleteChannel(arg0, arg1);
+  })();
+};
+prototype2["handleMessageCreate"] = function handleMessageCreate(optimistic, database) {
+  let tmp = optimistic.optimistic || optimistic.isPushNotification;
+  if (!tmp) {
+    tmp = null != optimistic.sendMessageOptions;
+  }
+  if (!tmp) {
+    obj = obj(5740);
+    if (obj.isReadableChannelId(optimistic.channelId)) {
+      const self = this;
+      const self2 = this;
+      this.upsertOne(optimistic.guildId, optimistic.channelId, optimistic.message, database);
     }
-  };
-  items[18] = {
-    key: "deleteGuild",
-    value(arg0, arg1) {
-      const obj = callback2(1883);
-      callback2(1883).messagesTransaction(arg1).deleteGuild(arg0);
+  }
+};
+prototype2["handleMessageUpdate"] = function handleMessageUpdate(message, database) {
+  let isReadableChannelIdResult = null != message.message.id && null != message.message.channel_id;
+  if (isReadableChannelIdResult) {
+    obj = obj(5740);
+    isReadableChannelIdResult = obj.isReadableChannelId(message.message.channel_id);
+  }
+  if (isReadableChannelIdResult) {
+    message = message.message;
+    const self = this;
+    if (tmp4) {
+      self.upsertOne(message.guildId, message.message.channel_id, message.message, database);
+    } else {
+      self.updateOne(message.guildId, message.message.channel_id, message.message, database);
     }
-  };
-  return callback(Messages, items);
-})();
-tmp5 = new tmp5();
-let result = require("_classCallCheck").fileFinishedImporting("modules/app_database/modules/Messages.tsx");
+    tmp4 = null != message.author && null != message.content && null != message.mentions && null != message.timestamp;
+  }
+};
+prototype2["handleMessagePreviewsLoaded"] = function handleMessagePreviewsLoaded(guildId, database) {
+  const self = this;
+  for (const item10009 of tmp) {
+    let tmp2 = item10009;
+    let tmp3 = obj;
+    let tmp4 = dependencyMap;
+    let obj = obj(5740);
+    if (obj.isReadableChannelId(item10009.channel_id)) {
+      let tmp5 = item10009;
+      let tmp6 = self;
+      let tmp7 = tmp2;
+      let tmp8 = arg1;
+      let insertStaleResult = self.insertStale(arg0.guildId, tmp2.channel_id, item10009, arg1);
+    }
+    continue;
+  }
+};
+prototype2["handleLoadMessagesSuccess"] = function handleLoadMessagesSuccess(channelId, database) {
+  basicChannel = basicChannel.getBasicChannel(channelId.channelId);
+  if (null != basicChannel) {
+    obj = obj(5740);
+    if (obj.isReadableChannelId(channelId.channelId)) {
+      const self = this;
+      if (!channelId.isAfter) {
+        if (!channelId.isBefore) {
+          if (!channelId.hasMoreAfter) {
+            if (channelId.limit > 5) {
+              self.replaceChannel(basicChannel.guild_id, channelId.channelId, channelId.messages, database);
+            }
+          }
+        }
+      }
+      self.upsertMany(basicChannel.guild_id, channelId.channelId, channelId.messages, database);
+    }
+  }
+};
+prototype2["handleMessageDelete"] = function handleMessageDelete(id) {
+  if (null != id.id) {
+    const self = this;
+    const self2 = this;
+    this.deleteOne(id.guildId, id.channelId, id.id, arg1);
+  }
+};
+prototype2["handleMessageDeleteBulk"] = function handleMessageDeleteBulk(guildId) {
+  const self = this;
+  for (const item10008 of tmp) {
+    let tmp2 = self;
+    let tmp3 = item10008;
+    let tmp4 = arg1;
+    let deleteOneResult = self.deleteOne(arg0.guildId, arg0.channelId, item10008, arg1);
+    continue;
+  }
+};
+prototype2["handleChannelDelete"] = function handleChannelDelete(channel) {
+  this.deleteChannel(channel.channel.guild_id, channel.channel.id, arg1);
+};
+prototype2["handleGuildDelete"] = function handleGuildDelete(guild) {
+  if (!guild.guild.unavailable) {
+    const self = this;
+    this.deleteGuild(guild.guild.id, arg1);
+  }
+};
+prototype2["resetInMemoryState"] = function resetInMemoryState() {
 
-export default tmp5;
-export const ChannelHistory = tmp4;
-export { isLikelyNotDelta };
+};
+prototype2["insertStale"] = function insertStale(guildId, channel_id, item10009, database) {
+  const obj = importDefault(1907);
+  const result = _handleConnectionOpen.lastTimeConnectedChanged();
+  const KvMessage = obj(5743).KvMessage;
+  const messagesTransactionResult = obj.messagesTransaction(database);
+  messagesTransactionResult.put(guildId, channel_id, KvMessage.fromMessage(guildId, channel_id, item10009, result), obj(1908).ConflictOptions.Skip);
+};
+prototype2["upsertOne"] = function upsertOne(guildId, channelId, message, database) {
+  const obj = importDefault(1907);
+  const messagesTransactionResult = obj.messagesTransaction(database);
+  const result = _handleConnectionOpen.lastTimeConnectedChanged();
+  const KvMessage = obj(5743).KvMessage;
+  messagesTransactionResult.put(guildId, channelId, KvMessage.fromMessage(guildId, channelId, message, result), obj(1908).ConflictOptions.Replace);
+  messagesTransactionResult.trimChannel(guildId, channelId, handleSelectedChannelStoreChanged.saveLimit(channelId));
+};
+prototype2["upsertMany"] = function upsertMany(guild_id, channelId, messages, database) {
+  const obj = importDefault(1907);
+  const messagesTransactionResult = obj.messagesTransaction(database);
+  const result = _handleConnectionOpen.lastTimeConnectedChanged();
+  const iter = messages[Symbol.iterator]();
+  const nextResult = iter.next();
+  while (iter !== undefined) {
+    let tmp3 = obj;
+    let tmp4 = dependencyMap;
+    let KvMessage = obj(5743).KvMessage;
+    let tmp5 = KvMessage;
+    let tmp6 = guild_id;
+    let tmp7 = channelId;
+    let tmp8 = nextResult;
+    let tmp9 = result;
+    let putResult = messagesTransactionResult.put(guild_id, channelId, KvMessage.fromMessage(guild_id, channelId, nextResult, result));
+    continue;
+  }
+  messagesTransactionResult.trimChannel(guild_id, channelId, handleSelectedChannelStoreChanged.saveLimit(channelId));
+};
+prototype2["replaceChannel"] = function replaceChannel(arg0, channelId, arr, database) {
+  let closure_0 = arg0;
+  const importDefault = channelId;
+  const messagesTransactionResult = importDefault(1907).messagesTransaction(database);
+  const dependencyMap = _handleConnectionOpen.lastTimeConnectedChanged();
+  const saveLimitResult = handleSelectedChannelStoreChanged.saveLimit(channelId);
+  let substr = arr;
+  if (arr.length > saveLimitResult) {
+    substr = arr.slice(arr.length - saveLimitResult);
+  }
+  messagesTransactionResult.replaceChannel(arg0, channelId, substr.map((nextResult) => {
+    const KvMessage = callback(table[9]).KvMessage;
+    return KvMessage.fromMessage(callback, closure_1, nextResult, table);
+  }));
+  messagesTransactionResult.trimChannel(arg0, channelId, handleSelectedChannelStoreChanged.saveLimit(channelId));
+};
+prototype2["updateOne"] = function updateOne(guildId, channel_id, message, database) {
+  let closure_0 = guildId;
+  let closure_1 = channel_id;
+  let closure_2 = message;
+  const callback = database;
+  return callback(function*() {
+    if (database === 2) {
+      database = 3;
+      HermesBuiltin.throwTypeError();
+    } else if (tmp4 === 3) {
+      if (arg0 === 1) {
+        throw arg1;
+      } else if (arg0 === 2) {
+        let obj = { value: null, done: true };
+        obj[0] = arg1;
+        return obj;
+      } else {
+        return { value: "HermesInternal", done: null };
+      }
+    } else {
+      try {
+        database = 2;
+        if (0 === closure_2) {
+          if (arg0 === 1) {
+            database = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            database = 3;
+            obj = { value: null, done: true };
+            obj[0] = arg1;
+            return obj;
+          } else {
+            let message = tmp5;
+            let c0 = tmp2;
+            c0 = undefined;
+            message = undefined;
+            closure_2 = undefined;
+            if (null != user.id) {
+              let obj1 = outer1_1(user[7]);
+              const messagesResult = obj1.messages(database.database);
+              c0 = messagesResult;
+              closure_2 = 1;
+              database = 1;
+              obj1 = { value: null, done: false };
+              obj1[0] = messagesResult.get(outer1_0, outer1_1, user.id);
+              return obj1;
+            } else {
+              outer1_8.warn("updateOne: message.id is null; cannot update a message if we do not know its id.");
+              database = 3;
+            }
+          }
+        } else if (arg0 === 1) {
+          database = 3;
+          throw arg1;
+        } else if (arg0 !== 2) {
+          message = arg1;
+          closure_2 = outer1_5.lastTimeConnectedChanged();
+          if (null != message) {
+            const KvMessage = outer1_0(user[9]).KvMessage;
+            const obj2 = {};
+            const merged = Object.assign(message.message);
+            const merged1 = Object.assign(closure_2);
+            c0.put(c0, message, KvMessage.fromMessage(c0, message, obj2, closure_2));
+          }
+        }
+        database = 3;
+        obj = { value: null, done: true };
+        obj[0] = arg1;
+        return obj;
+      } catch (tmp14) {
+        database = tmp;
+        throw tmp14;
+      }
+    }
+  })();
+};
+prototype2["deleteOne"] = function deleteOne(arg0, arg1, arg2, database) {
+  const obj = importDefault(1907);
+  importDefault(1907).messagesTransaction(database).deleteMessage(arg0, arg1, arg2);
+};
+prototype2["deleteChannel"] = function deleteChannel(arg0, arg1, database) {
+  const obj = importDefault(1907);
+  importDefault(1907).messagesTransaction(database).deleteChannel(arg0, arg1);
+};
+prototype2["deleteGuild"] = function deleteGuild(arg0, database) {
+  const obj = importDefault(1907);
+  importDefault(1907).messagesTransaction(database).deleteGuild(arg0);
+};
+let set = Object.create(Messages.prototype);
+set.actions = {
+  CHANNEL_DELETE(arg0, arg1) {
+    return obj.handleChannelDelete(arg0, arg1);
+  },
+  GUILD_DELETE(arg0, arg1) {
+    return obj.handleGuildDelete(arg0, arg1);
+  },
+  LOAD_MESSAGES_SUCCESS(arg0, arg1) {
+    return obj.handleLoadMessagesSuccess(arg0, arg1);
+  },
+  MESSAGE_CREATE(arg0, arg1) {
+    return obj.handleMessageCreate(arg0, arg1);
+  },
+  MESSAGE_DELETE_BULK(arg0, arg1) {
+    return obj.handleMessageDeleteBulk(arg0, arg1);
+  },
+  MESSAGE_DELETE(arg0, arg1) {
+    return obj.handleMessageDelete(arg0, arg1);
+  },
+  MESSAGE_PREVIEWS_LOADED(arg0, arg1) {
+    return obj.handleMessagePreviewsLoaded(arg0, arg1);
+  },
+  MESSAGE_UPDATE(arg0, arg1) {
+    return obj.handleMessageUpdate(arg0, arg1);
+  }
+};
+let result = set.fileFinishedImporting("modules/app_database/modules/Messages.tsx");
+
+export default set;
+export const ChannelHistory = prototype;
+export const isLikelyNotDelta = function isLikelyNotDelta(author) {
+  return null != author.author && null != author.content && null != author.mentions && null != author.timestamp;
+};

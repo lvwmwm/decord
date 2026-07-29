@@ -1,21 +1,21 @@
-// Module ID: 13713
-// Function ID: 105171
+// Module ID: 13734
+// Function ID: 13735
 // Name: UserProfilePrimaryGuildEditButton
-// Dependencies: [31, 1838, 7701, 33, 4165, 689, 566, 13714, 7916, 7917, 1212, 477, 4161, 13696, 4133, 13715, 1935, 5548, 8428, 2]
+// Dependencies: [19, 1862, 7724, 21, 4189, 712, 589, 13735, 7941, 7942, 1236, 500, 4185, 13717, 4157, 13736, 1959, 5566, 8452, 2]
 // Exports: default
 
-// Module 13713 (UserProfilePrimaryGuildEditButton)
-import "result";
-import closure_3 from "_createForOfIteratorHelperLoose";
+// Module 13734 (UserProfilePrimaryGuildEditButton)
+import "set";
+import createGuildRecordFromRust from "createGuildRecordFromRust";
 import { GuildTagBadgeSize } from "items";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
 const require = arg1;
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { paddingHorizontal: 6, paddingVertical: 2, columnGap: 4, borderRadius: require("_createForOfIteratorHelperLoose").radii.sm };
-_createForOfIteratorHelperLoose.tag = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+createCacheKey = { tag: null };
+createCacheKey = { paddingHorizontal: 6, paddingVertical: 2, columnGap: 4, borderRadius: require("Themes").radii.sm };
+createCacheKey[0] = createCacheKey;
+createCacheKey = createCacheKey.createStyles(createCacheKey);
 const result = require("items").fileFinishedImporting("modules/user_profile/native/UserProfilePrimaryGuildEditButton.tsx");
 
 export default function UserProfilePrimaryGuildEditButton(arg0) {
@@ -35,19 +35,20 @@ export default function UserProfilePrimaryGuildEditButton(arg0) {
   ({ disabled, tagStyle } = arg0);
   if (undefined === pendingPrimaryGuildId) {
     const primaryGuild = user.primaryGuild;
-    let tmp3 = null;
-    if (null != primaryGuild) {
-      tmp3 = null;
-      if (primaryGuild.identityEnabled) {
-        const primaryGuild2 = user.primaryGuild;
-        let identityGuildId;
-        if (null != primaryGuild2) {
-          identityGuildId = primaryGuild2.identityGuildId;
-        }
-        tmp3 = identityGuildId;
-      }
+    let identityEnabled;
+    if (primaryGuild != null) {
+      identityEnabled = primaryGuild.identityEnabled;
     }
-    pendingPrimaryGuildId = tmp3;
+    let tmp4 = null;
+    if (identityEnabled) {
+      const primaryGuild2 = user.primaryGuild;
+      let identityGuildId;
+      if (primaryGuild2 != null) {
+        identityGuildId = primaryGuild2.identityGuildId;
+      }
+      tmp4 = identityGuildId;
+    }
+    pendingPrimaryGuildId = tmp4;
   }
   let obj = pendingPrimaryGuildId(userAvailableGuildsWithTags[6]);
   const items = [handleSelectPrimaryGuild];
@@ -58,86 +59,79 @@ export default function UserProfilePrimaryGuildEditButton(arg0) {
   if (null != user) {
     if (userAvailableGuildsWithTags.length > 0) {
       let profile;
-      if (null != stateFromStores) {
+      if (stateFromStores != null) {
         profile = stateFromStores.profile;
       }
       let guildTagBadgeUrl = null != stateFromStores;
       if (guildTagBadgeUrl) {
-        let obj2 = pendingPrimaryGuildId(userAvailableGuildsWithTags[9]);
+        let tmp6Result = tmp6(tmp7[9]);
         let badge;
-        if (null != profile) {
+        if (profile != null) {
           badge = profile.badge;
         }
-        let tmp11;
-        if (null != badge) {
-          tmp11 = badge;
-        }
-        guildTagBadgeUrl = obj2.getGuildTagBadgeUrl(stateFromStores.id, tmp11, GuildTagBadgeSize.SIZE_24);
+        guildTagBadgeUrl = tmp6Result.getGuildTagBadgeUrl(stateFromStores.id, badge, GuildTagBadgeSize.SIZE_24);
       }
       if (null != stateFromStores) {
         let name = stateFromStores.name;
       } else {
-        const intl = pendingPrimaryGuildId(userAvailableGuildsWithTags[10]).intl;
-        name = intl.string(pendingPrimaryGuildId(userAvailableGuildsWithTags[10]).t.ECv270);
+        const intl = tmp6(tmp7[10]).intl;
+        name = intl.string(tmp6(tmp7[10]).t.ECv270);
       }
       let combined = name;
       if (null != profile) {
         const _HermesInternal = HermesInternal;
         combined = "" + name + ", " + profile.tag;
       }
-      let obj3 = pendingPrimaryGuildId(userAvailableGuildsWithTags[11]);
-      let num4 = 4;
-      if (obj3.isAndroid()) {
-        num4 = 1;
+      tmp6Result = tmp6(tmp7[11]);
+      let num = 4;
+      if (tmp6Result.isAndroid()) {
+        num = 1;
       }
-      const sum = pendingPrimaryGuildId(userAvailableGuildsWithTags[12]).TextStyleSheet["text-md/semibold"].fontSize + num4;
-      obj = {};
-      const intl2 = pendingPrimaryGuildId(userAvailableGuildsWithTags[10]).intl;
-      obj.label = intl2.string(pendingPrimaryGuildId(userAvailableGuildsWithTags[10]).t["DUD+5n"]);
-      obj.buttonText = name;
-      obj = { text: combined };
-      obj.accessibilityValue = obj;
-      obj.onPress = function onPress() {
+      const sum = tmp6(tmp7[12]).TextStyleSheet["text-md/semibold"].fontSize + num;
+      obj = { label: null, buttonText: null, accessibilityValue: null, onPress: null, leading: null, trailing: null, disabled: null };
+      const intl2 = tmp6(tmp7[10]).intl;
+      obj[0] = intl2.string(tmp6(tmp7[10]).t["DUD+5n"]);
+      obj[1] = name;
+      obj = { text: null };
+      obj[0] = combined;
+      obj[2] = obj;
+      obj[3] = function onPress() {
         let obj = stateFromStores(userAvailableGuildsWithTags[14]);
-        obj = { availableGuilds: userAvailableGuildsWithTags };
-        let tmp2 = null;
-        if (null != stateFromStores) {
-          tmp2 = stateFromStores;
+        obj = { availableGuilds: userAvailableGuildsWithTags, userPrimaryGuild: null, onSelectGuild: null };
+        let tmp2 = stateFromStores;
+        if (stateFromStores == null) {
+          tmp2 = null;
         }
-        obj.userPrimaryGuild = tmp2;
-        obj.onSelectGuild = handleSelectPrimaryGuild;
+        obj[1] = tmp2;
+        obj[2] = handleSelectPrimaryGuild;
         obj.openLazy(pendingPrimaryGuildId(userAvailableGuildsWithTags[16])(userAvailableGuildsWithTags[15], userAvailableGuildsWithTags.paths), "UserPrimaryGuildListBottomSheet", obj);
       };
-      let tmp24 = null;
+      let tmp17Result = null;
       if (null != stateFromStores) {
-        obj1 = { guild: stateFromStores, size: pendingPrimaryGuildId(userAvailableGuildsWithTags[17]).GuildIconSizes.LARGE };
-        tmp24 = jsx(stateFromStores(userAvailableGuildsWithTags[17]), { guild: stateFromStores, size: pendingPrimaryGuildId(userAvailableGuildsWithTags[17]).GuildIconSizes.LARGE });
-        const tmp28 = stateFromStores(userAvailableGuildsWithTags[17]);
+        obj1 = { guild: null, size: null };
+        obj1[0] = stateFromStores;
+        obj1[1] = tmp6(tmp7[17]).GuildIconSizes.LARGE;
+        tmp17Result = tmp17(stateFromStores(tmp7[17]), obj1);
+        const tmp20 = stateFromStores(tmp7[17]);
       }
-      obj.leading = tmp24;
-      let tmp31Result = null;
+      obj[4] = tmp17Result;
+      tmp17Result = null;
       if (null != profile) {
-        obj2 = {};
+        const obj2 = { containerStyles: null, textStyle: null, guildTag: null, guildBadge: null, badgeSize: null, textVariant: "text-md/semibold", textColor: "text-default" };
         const items2 = [tmp.tag, tagStyle];
-        obj2.containerStyles = items2;
-        obj3 = { lineHeight: sum };
-        obj2.textStyle = obj3;
+        obj2[0] = items2;
+        const obj3 = { lineHeight: null };
+        obj3[0] = sum;
+        obj2[1] = obj3;
         const tag = profile.tag;
-        let tmp34;
-        if (null != tag) {
-          tmp34 = tag;
-        }
-        obj2.guildTag = tmp34;
-        obj2.guildBadge = guildTagBadgeUrl;
-        obj2.badgeSize = GuildTagBadgeSize.SIZE_16;
-        obj2.textVariant = "text-md/semibold";
-        obj2.textColor = "text-default";
-        tmp31Result = jsx(pendingPrimaryGuildId(userAvailableGuildsWithTags[18]).BaseGuildTagChiplet, {});
-        const tmp31 = jsx;
+        obj2[2] = tag;
+        obj2[3] = guildTagBadgeUrl;
+        obj2[4] = GuildTagBadgeSize.SIZE_16;
+        tmp17Result = tmp17(tmp6(tmp7[18]).BaseGuildTagChiplet, obj2);
       }
-      obj.trailing = tmp31Result;
-      obj.disabled = disabled;
-      return jsx(pendingPrimaryGuildId(userAvailableGuildsWithTags[13]).UserProfileEditFormButton, { text: combined });
+      obj[5] = tmp17Result;
+      obj[6] = disabled;
+      return jsx(tmp6(tmp7[13]).UserProfileEditFormButton, { text: null });
     }
   }
   return null;

@@ -1,20 +1,20 @@
-// Module ID: 15882
-// Function ID: 122420
+// Module ID: 15917
+// Function ID: 15918
 // Name: usePanelOpenState
-// Dependencies: [57, 31, 4377, 10016, 653, 4026, 1207, 10851, 3987, 4000, 10844, 5676, 2]
+// Dependencies: [32, 19, 4400, 10038, 676, 4050, 1231, 10875, 4011, 4024, 10868, 5694, 2]
 // Exports: default
 
-// Module 15882 (usePanelOpenState)
+// Module 15917 (usePanelOpenState)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
+import noop from "noop";
 import withEqualityFn from "withEqualityFn";
 import { VoicePanelModes } from "VoicePanelModes";
 import ME from "ME";
 
-let closure_7;
-let closure_8;
+let error;
+let metroImportAll;
 const require = arg1;
-({ ComponentActions: closure_7, Routes: closure_8 } = ME);
+({ ComponentActions: error, Routes: metroImportAll } = ME);
 let closure_9 = { code: "function usePanelOpenStateTsx1(){const{connected}=this.__closure;return{connected:connected.get()};}" };
 let closure_10 = { code: "function usePanelOpenStateTsx2(props,previous){const{runOnJS,doCloseChannel}=this.__closure;const isConnected=props.connected;const wasConnected=(previous===null||previous===void 0?void 0:previous.connected)===true;if(wasConnected&&!isConnected){runOnJS(doCloseChannel)();}}" };
 const result = require("withEqualityFn").fileFinishedImporting("modules/voice_panel/native/controller/usePanelOpenState.tsx");
@@ -25,10 +25,10 @@ export default function usePanelOpenState(arg0, arg1, arg2, connected) {
   const dependencyMap = arg2;
   const callback = connected;
   function doCloseChannel() {
-    state = state.getState();
+    const state = first.getState();
     return state.closeChannel(closure_0);
   }
-  let obj = _require(4026);
+  let obj = _require(4050);
   const fn = function f() {
     return { connected: connected.get() };
   };
@@ -38,14 +38,13 @@ export default function usePanelOpenState(arg0, arg1, arg2, connected) {
   class O {
     constructor(arg0, arg1) {
       connected = undefined;
-      if (null != arg1) {
+      if (arg1 != null) {
         connected = arg1.connected;
       }
       tmp2 = true === connected && !arg0.connected;
       if (tmp2) {
         tmp3 = closure_0;
         tmp4 = closure_2;
-        num = 5;
         obj = closure_0(closure_2[5]);
         tmp5 = doCloseChannel;
         tmp6 = obj.runOnJS(doCloseChannel)();
@@ -53,68 +52,69 @@ export default function usePanelOpenState(arg0, arg1, arg2, connected) {
       return;
     }
   }
-  obj = { runOnJS: _require(4026).runOnJS, doCloseChannel };
+  obj = { runOnJS: _require(4050).runOnJS, doCloseChannel };
   O.__closure = obj;
   O.__workletHash = 9166012598595;
   O.__initData = closure_10;
   const animatedReaction = obj.useAnimatedReaction(fn, O);
   const items = [arg0, arg1, arg2, connected];
-  const effect = first.useEffect(() => {
+  const effect = doCloseChannel.useEffect(() => {
     function componentActionOpen(channelId) {
       let tmp = componentActionOpen === channelId.channelId;
       if (tmp) {
-        tmp = componentActionClose.get() !== doCloseChannel.PANEL;
+        tmp = componentActionClose.get() !== outer1_6.PANEL;
       }
       if (tmp) {
-        outer1_2(doCloseChannel.PANEL);
+        dependencyMap(outer1_6.PANEL);
       }
     }
     function componentActionClose() {
-      if (outer1_3.get()) {
-        if (componentActionClose.get() !== doCloseChannel.PIP) {
-          outer1_2(doCloseChannel.PIP);
+      if (_slicedToArray.get()) {
+        if (componentActionClose.get() !== outer1_6.PIP) {
+          dependencyMap(tmp5.PIP);
         }
       } else {
-        state = state.getState();
+        const state = outer1_5.getState();
         state.closeChannel(componentActionOpen);
       }
     }
-    let ComponentDispatch = callback(1207).ComponentDispatch;
+    let ComponentDispatch = callback(1231).ComponentDispatch;
     const subscription = ComponentDispatch.subscribe(outer1_7.VOICE_PANEL_OPEN, componentActionOpen);
-    let ComponentDispatch2 = callback(1207).ComponentDispatch;
+    let ComponentDispatch2 = callback(1231).ComponentDispatch;
     const subscription1 = ComponentDispatch2.subscribe(outer1_7.VOICE_PANEL_CLOSE, componentActionClose);
     return () => {
-      const ComponentDispatch = componentActionOpen(1207).ComponentDispatch;
+      const ComponentDispatch = componentActionOpen(1231).ComponentDispatch;
       ComponentDispatch.unsubscribe(outer2_7.VOICE_PANEL_OPEN, componentActionOpen);
-      const ComponentDispatch2 = componentActionOpen(1207).ComponentDispatch;
+      const ComponentDispatch2 = componentActionOpen(1231).ComponentDispatch;
       ComponentDispatch2.unsubscribe(outer2_7.VOICE_PANEL_CLOSE, componentActionClose);
     };
   }, items);
-  const tmp3 = callback(first.useState(() => callback2(10851).getHistory().location.pathname), 2);
-  first = tmp3[0];
-  let withEqualityFn = tmp3[1];
+  const tmp3 = callback(doCloseChannel.useState(() => callback2(10875).getHistory().location.pathname), 2);
+  const first = tmp3[0];
+  let closure_6 = tmp3[1];
   const items1 = [arg0, first];
-  const effect1 = first.useEffect(() => {
-    let closure_0 = callback2(10851).addRouteChangeListener((pathname) => {
-      if (outer1_4 !== pathname.pathname) {
-        outer1_5(outer1_4);
-        let obj = callback(3987);
-        obj = {};
-        const RouteParam = callback(4000).RouteParam;
-        const RouteParam2 = callback(4000).RouteParam;
-        obj.path = outer2_8.CHANNEL(RouteParam.guildId(), RouteParam2.channelId());
+  const effect1 = doCloseChannel.useEffect(() => {
+    let closure_0 = callback2(10875).addRouteChangeListener((pathname) => {
+      if (withEqualityFn !== pathname.pathname) {
+        callback2(tmp);
+        let obj = callback(outer1_2[8]);
+        obj = { path: null };
+        const RouteParam = callback(outer1_2[9]).RouteParam;
+        const RouteParam2 = callback(outer1_2[9]).RouteParam;
+        obj[0] = outer1_8.CHANNEL(RouteParam.guildId(), RouteParam2.channelId());
         const matchPathResult = obj.matchPath(pathname.pathname, obj);
         const guildIdResult = RouteParam.guildId();
+        const tmp9 = outer1_2;
         if (null == obj3.extractParamsFromVoiceModalRoute(pathname).voiceChannelId) {
-          let tmp = null != matchPathResult;
-          if (tmp) {
-            tmp = matchPathResult.params.channelId === callback;
+          let tmp2 = null != matchPathResult;
+          if (tmp2) {
+            tmp2 = matchPathResult.params.channelId === callback;
           }
-          if (!tmp) {
-            callback2(5676)();
+          if (!tmp2) {
+            outer1_1(tmp9[11])();
           }
         }
-        obj3 = callback(10844);
+        obj3 = callback(outer1_2[10]);
       }
     });
     return () => {

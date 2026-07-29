@@ -1,29 +1,31 @@
-// Module ID: 11156
-// Function ID: 86641
+// Module ID: 11180
+// Function ID: 11181
 // Name: ForumPostPinIcon
-// Dependencies: [31, 27, 33, 4165, 689, 1273, 11157, 2]
+// Dependencies: [19, 17, 21, 4189, 712, 1297, 11181, 2]
 // Exports: default
 
-// Module 11156 (ForumPostPinIcon)
-import "result";
+// Module 11180 (ForumPostPinIcon)
+import "noop";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
 const require = arg1;
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "center", borderRadius: require("_createForOfIteratorHelperLoose").radii.round, width: 23, height: 23, marginEnd: 4, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BRAND };
-_createForOfIteratorHelperLoose.pin = _createForOfIteratorHelperLoose;
-const obj1 = { height: 14, width: 14, tintColor: require("_createForOfIteratorHelperLoose").colors.WHITE };
-_createForOfIteratorHelperLoose.pinIcon = obj1;
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+createCacheKey = { pin: null, pinIcon: null };
+createCacheKey = { display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "center", borderRadius: require("Themes").radii.round, width: 23, height: 23, marginEnd: 4, backgroundColor: require("Themes").colors.BACKGROUND_BRAND };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { height: 14, width: 14, tintColor: require("Themes").colors.WHITE };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+const obj1 = { height: 14, width: 14, tintColor: require("Themes").colors.WHITE };
 const result = require("jsxProd").fileFinishedImporting("modules/forums/native/posts/ForumPostPinIcon.tsx");
 
 export default function ForumPostPinIcon(containerStyle) {
-  const tmp = _createForOfIteratorHelperLoose();
-  let obj = { style: items };
+  const tmp = createCacheKey();
+  let obj = { style: items, children: null };
   items = [tmp.pin, containerStyle.containerStyle];
-  obj = { source: importDefault(11157), style: tmp.pinIcon };
-  obj.children = jsx(require(1273) /* Button */.Icon, { source: importDefault(11157), style: tmp.pinIcon });
-  return <View source={importDefault(11157)} style={tmp.pinIcon} />;
+  obj = { source: null, style: null };
+  obj[0] = importDefault(11181);
+  obj[1] = tmp.pinIcon;
+  obj[1] = jsx(require(1297) /* Button */.Icon, { source: null, style: null });
+  return <View source={null} style={null} />;
 };

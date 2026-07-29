@@ -1,16 +1,12 @@
-// Module ID: 12006
-// Function ID: 92649
+// Module ID: 12030
+// Function ID: 12031
 // Name: isOnConsole
-// Dependencies: [11969, 11970, 2]
+// Dependencies: [11993, 11994, 2]
 // Exports: default
 
-// Module 12006 (isOnConsole)
+// Module 12030 (isOnConsole)
 const result = require("set").fileFinishedImporting("modules/activities/utils/isOnConsole.tsx");
 
 export default function isOnConsole(arg0) {
-  let tmp = importDefault(11969)(arg0);
-  if (!tmp) {
-    tmp = importDefault(11970)(arg0);
-  }
-  return tmp;
+  return importDefault(11993)(arg0) || importDefault(11994)(arg0);
 };

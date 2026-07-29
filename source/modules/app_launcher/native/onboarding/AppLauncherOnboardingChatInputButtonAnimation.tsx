@@ -1,97 +1,93 @@
-// Module ID: 11378
-// Function ID: 88245
+// Module ID: 11402
+// Function ID: 11403
 // Name: EnteringAnimation
-// Dependencies: [31, 27, 4157, 33, 4165, 4582, 689, 4166, 4169, 566, 8800, 11187, 4026, 5488, 11379, 11212, 2]
+// Dependencies: [19, 17, 4181, 21, 4189, 4604, 712, 4190, 4193, 589, 8824, 11211, 4050, 5506, 11403, 11236, 2]
 // Exports: AppLauncherOnboardingChatInputButtonAnimation
 
-// Module 11378 (EnteringAnimation)
-import "result";
+// Module 11402 (EnteringAnimation)
+import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_3;
-let closure_4;
+let c3;
+let c4;
 let closure_6;
-let closure_7;
-let closure_8;
+let error;
+let metroImportAll;
 const require = arg1;
-({ View: closure_3, StyleSheet: closure_4 } = get_ActivityIndicator);
-({ jsx: closure_6, jsxs: closure_7, Fragment: closure_8 } = jsxProd);
-let closure_9 = _createForOfIteratorHelperLoose.createStyles(() => {
-  const sum = require(4582) /* getButtonPadding */.SMALL_BUTTON_HEIGHT + require(4582) /* getButtonPadding */.SMALL_BUTTON_PADDING + 2;
-  let obj = {};
-  obj = { zIndex: 3, borderWidth: 1.5, borderColor: importDefault(689).colors.BACKGROUND_BRAND, borderRadius: importDefault(689).radii.round, alignItems: "center", justifyContent: "center", width: sum, height: sum, marginLeft: 4 };
-  obj.fakeButton = obj;
-  obj = { zIndex: 1, position: "absolute", borderRadius: importDefault(689).radii.round, top: 0, left: 0, width: sum, height: sum, backgroundColor: importDefault(689).colors.BACKGROUND_BASE_LOW, marginLeft: 4 };
-  obj.glowMask = obj;
-  obj.glowLottie = { width: "150%", height: "150%", position: "absolute", top: "-25%", left: "-25%", zIndex: 0, opacity: 0.8 };
-  obj.trinketsLottie = { zIndex: 4, position: "absolute", pointerEvents: "none", width: "175%", height: "175%", top: "-43%", left: "-38%" };
-  obj.glowAnimation = { pointerEvents: "none" };
+({ View: c3, StyleSheet: c4 } = get_ActivityIndicator);
+({ jsx: closure_6, jsxs: error, Fragment: metroImportAll } = jsxProd);
+let closure_9 = createCacheKey.createStyles(() => {
+  const sum = require(4604) /* MINIMUM_HIT_AREA */.SMALL_BUTTON_HEIGHT + require(4604) /* MINIMUM_HIT_AREA */.SMALL_BUTTON_PADDING + 2;
+  let obj = { fakeButton: null, glowMask: null, glowLottie: null, trinketsLottie: null, glowAnimation: null };
+  obj = { zIndex: 3, borderWidth: 1.5, borderColor: importDefault(712).colors.BACKGROUND_BRAND, borderRadius: importDefault(712).radii.round, alignItems: "center", justifyContent: "center", width: sum, height: sum, marginLeft: 4 };
+  obj[0] = obj;
+  obj = { zIndex: 1, position: "absolute", borderRadius: importDefault(712).radii.round, top: 0, left: 0, width: sum, height: sum, backgroundColor: importDefault(712).colors.BACKGROUND_BASE_LOW, marginLeft: 4 };
+  obj[1] = obj;
+  obj[2] = { width: "150%", height: "150%", position: "absolute", top: "-25%", left: "-25%", zIndex: 0, opacity: 0.8 };
+  obj[3] = { zIndex: 4, position: "absolute", pointerEvents: "none", width: "175%", height: "175%", top: "-43%", left: "-38%" };
+  obj[4] = { pointerEvents: "none" };
   return obj;
 });
-let closure_10 = { code: "function EnteringAnimation_AppLauncherOnboardingChatInputButtonAnimationTsx1(){const{withTiming,timingStandard}=this.__closure;const initialValues={opacity:0};const animations={opacity:withTiming(1,timingStandard)};return{initialValues:initialValues,animations:animations};}" };
-let closure_11 = (() => {
-  class EnteringAnimation {
-    constructor() {
-      obj = { initialValues: { opacity: 0 } };
-      obj = {};
-      obj3 = outer1_0(outer1_2[7]);
-      obj.opacity = obj3.withTiming(1, outer1_0(outer1_2[8]).timingStandard);
-      obj.animations = obj;
-      return obj;
-    }
+class EnteringAnimation {
+  constructor() {
+    obj = { initialValues: { opacity: 0 }, animations: null };
+    obj = { opacity: null };
+    obj3 = require("CONFIG_NEVER_ANIMATE_TIMING");
+    obj[0] = require("get ActivityIndicator");
+    obj[1] = obj;
+    return obj;
   }
-  EnteringAnimation.__closure = { withTiming: require(4166) /* withTiming */.withTiming, timingStandard: require(4169) /* timingNone */.timingStandard };
-  EnteringAnimation.__workletHash = 2327377243473;
-  EnteringAnimation.__initData = closure_10;
-  return EnteringAnimation;
-})();
-let closure_12 = { code: "function ExitingAnimation_AppLauncherOnboardingChatInputButtonAnimationTsx2(){const{withTiming,timingStandard}=this.__closure;const initialValues={opacity:1};const animations={opacity:withTiming(0,timingStandard)};return{initialValues:initialValues,animations:animations};}" };
-let closure_13 = (() => {
-  class ExitingAnimation {
-    constructor() {
-      obj = { initialValues: { opacity: 1 } };
-      obj = {};
-      obj3 = outer1_0(outer1_2[7]);
-      obj.opacity = obj3.withTiming(0, outer1_0(outer1_2[8]).timingStandard);
-      obj.animations = obj;
-      return obj;
-    }
+}
+createCacheKey = { withTiming: require("CONFIG_NEVER_ANIMATE_TIMING").withTiming, timingStandard: require("timingNone").timingStandard };
+EnteringAnimation.__closure = createCacheKey;
+EnteringAnimation.__workletHash = 2327377243473;
+EnteringAnimation.__initData = { code: "function EnteringAnimation_AppLauncherOnboardingChatInputButtonAnimationTsx1(){const{withTiming,timingStandard}=this.__closure;const initialValues={opacity:0};const animations={opacity:withTiming(1,timingStandard)};return{initialValues:initialValues,animations:animations};}" };
+class ExitingAnimation {
+  constructor() {
+    obj = { initialValues: { opacity: 1 }, animations: null };
+    obj = { opacity: null };
+    obj3 = require("CONFIG_NEVER_ANIMATE_TIMING");
+    obj[0] = require("noop");
+    obj[1] = obj;
+    return obj;
   }
-  ExitingAnimation.__closure = { withTiming: require(4166) /* withTiming */.withTiming, timingStandard: require(4169) /* timingNone */.timingStandard };
-  ExitingAnimation.__workletHash = 1065249287738;
-  ExitingAnimation.__initData = closure_12;
-  return ExitingAnimation;
-})();
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/app_launcher/native/onboarding/AppLauncherOnboardingChatInputButtonAnimation.tsx");
+}
+createCacheKey = { withTiming: require("CONFIG_NEVER_ANIMATE_TIMING").withTiming, timingStandard: require("timingNone").timingStandard };
+ExitingAnimation.__closure = createCacheKey;
+ExitingAnimation.__workletHash = 1065249287738;
+ExitingAnimation.__initData = { code: "function ExitingAnimation_AppLauncherOnboardingChatInputButtonAnimationTsx2(){const{withTiming,timingStandard}=this.__closure;const initialValues={opacity:1};const animations={opacity:withTiming(0,timingStandard)};return{initialValues:initialValues,animations:animations};}" };
+const result = require("maybeApplyNoTextColorForLightCustomTheme").fileFinishedImporting("modules/app_launcher/native/onboarding/AppLauncherOnboardingChatInputButtonAnimation.tsx");
 
 export const APP_LAUNCHER_ONBOARDING_CHAT_INPUT_BUTTON_ANIMATION_DURATION_MS = 7000;
 export const AppLauncherOnboardingChatInputButtonAnimation = function AppLauncherOnboardingChatInputButtonAnimation(channelId) {
   const tmp = callback3();
-  let obj = require(566) /* initialize */;
-  const items = [_isNativeReflectConstruct];
-  const stateFromStores = obj.useStateFromStores(items, () => outer1_5.useReducedMotion);
-  let obj1 = require(8800) /* useGradientBottom */;
+  let obj = require(589) /* initialize */;
+  const items = [maybeApplyNoTextColorForLightCustomTheme];
+  const stateFromStores = obj.useStateFromStores(items, () => useReducedMotion.useReducedMotion);
+  let obj1 = require(8824) /* useGradientBottom */;
   const gradientBottom = obj1.useGradientBottom();
-  importDefault(11187)({ channelId: channelId.channelId });
-  obj = {};
-  obj = { entering: closure_11, exiting: closure_13, style: items1, collapsable: false };
+  importDefault(11211)({ channelId: channelId.channelId });
+  obj = { children: null };
+  obj = { entering: EnteringAnimation, exiting: ExitingAnimation, style: items1, collapsable: false, children: null };
   items1 = [absoluteFill.absoluteFill, tmp.glowAnimation];
-  obj1 = { collapsable: false, style: tmp.glowLottie, source: require(11379) /* items */, autoPlay: !stateFromStores };
-  const items2 = [callback(importDefault(5488), obj1), , ];
+  obj1 = { collapsable: false, style: tmp.glowLottie, source: null, autoPlay: null };
+  obj1[2] = require(11403);
+  obj1[3] = !stateFromStores;
+  const items2 = [callback(importDefault(5506), obj1), , ];
   const items3 = [tmp.glowMask, gradientBottom];
   items2[1] = callback(closure_3, { collapsable: false, style: items3 });
   items2[2] = callback(closure_3, { collapsable: false, style: tmp.fakeButton });
-  obj.children = items2;
-  const items4 = [callback2(importDefault(4026).View, obj), ];
-  const obj3 = { collapsable: false, style: tmp.trinketsLottie };
+  obj[4] = items2;
+  const items4 = [callback2(importDefault(4050).View, obj), ];
+  const obj3 = { collapsable: false, style: tmp.trinketsLottie, source: null, autoPlay: null };
   const obj2 = { collapsable: false, style: tmp.fakeButton };
-  const tmp5 = importDefault(5488);
-  obj3.source = require(11212) /* items1 */;
-  obj3.autoPlay = !stateFromStores;
-  items4[1] = callback(importDefault(5488), obj3);
-  obj.children = items4;
+  const tmp5 = importDefault(5506);
+  obj3[2] = require(11236);
+  obj3[3] = !stateFromStores;
+  items4[1] = callback(importDefault(5506), obj3);
+  obj[0] = items4;
   return callback2(closure_8, obj);
 };

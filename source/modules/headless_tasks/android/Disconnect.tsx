@@ -1,10 +1,10 @@
-// Module ID: 16732
-// Function ID: 130348
+// Module ID: 16768
+// Function ID: 16769
 // Name: promise
-// Dependencies: [1348, 16733, 8807, 2]
+// Dependencies: [1372, 16769, 8831, 2]
 
-// Module 16732 (promise)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 16768 (promise)
+import ensureGuildLoaded from "ensureGuildLoaded";
 
 const require = arg1;
 const result = require("_handleToggleVideo").fileFinishedImporting("modules/headless_tasks/android/Disconnect.tsx");

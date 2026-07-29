@@ -1,92 +1,97 @@
-// Module ID: 11943
-// Function ID: 92276
+// Module ID: 11967
+// Function ID: 11968
 // Name: ReportAppProfile
-// Dependencies: [31, 4202, 33, 5533, 4161, 1212, 5535, 4133, 7669, 566, 5498, 2]
+// Dependencies: [19, 4226, 21, 5551, 4185, 1236, 5553, 4157, 7692, 589, 5516, 2]
 // Exports: default
 
-// Module 11943 (ReportAppProfile)
-import "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 11967 (ReportAppProfile)
+import "noop";
+import addApplication from "addApplication";
 import jsxProd from "jsxProd";
 
-let closure_4;
-let closure_5;
+let c4;
+let c5;
 const require = arg1;
 function ReportAppProfile(arg0) {
-  let _isNativeReflectConstruct;
+  let addApplication;
   let dependencyMap;
   let importDefault;
   let require;
-  ({ user: require, contextualGuildId: importDefault, onSubmit: dependencyMap, appContext: _isNativeReflectConstruct } = arg0);
-  let obj = {};
-  obj = { variant: "heading-md/semibold" };
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj.children = intl.string(require(1212) /* getSystemLocale */.t.eyEkG1);
-  obj.label = callback(require(4161) /* Text */.Text, obj);
-  obj = { variant: "text-xs/medium" };
-  const intl2 = require(1212) /* getSystemLocale */.intl;
-  obj.children = intl2.string(require(1212) /* getSystemLocale */.t.ptItsj);
-  obj.subLabel = callback(require(4161) /* Text */.Text, obj);
-  obj.onPress = function onPress() {
+  ({ user: require, contextualGuildId: importDefault, onSubmit: dependencyMap, appContext: addApplication } = arg0);
+  let obj = { label: null, subLabel: null, onPress: null, arrow: true };
+  obj = { variant: "heading-md/semibold", children: null };
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj[1] = intl.string(require(1236) /* getSystemLocale */.t.eyEkG1);
+  obj[0] = callback(require(4185) /* Text */.Text, obj);
+  obj = { variant: "text-xs/medium", children: null };
+  const intl2 = require(1236) /* getSystemLocale */.intl;
+  obj[1] = intl2.string(require(1236) /* getSystemLocale */.t.ptItsj);
+  obj[1] = callback(require(4185) /* Text */.Text, obj);
+  obj[2] = function onPress() {
     outer1_1(outer1_2[7]).hideActionSheet(outer1_6);
     const obj = outer1_1(outer1_2[7]);
-    const result = outer1_0(outer1_2[8]).showReportModalForUser(closure_0, closure_1, closure_2, _isNativeReflectConstruct);
+    const result = outer1_0(outer1_2[8]).showReportModalForUser(closure_0, closure_1, closure_2, addApplication);
   };
-  obj.arrow = true;
-  return callback(require(5535) /* ActionSheetRowIcon */.ActionSheetRow, obj);
+  return callback(require(5553) /* ActionSheetRowIcon */.ActionSheetRow, obj);
 }
 function ReportAppBehavior(arg0) {
-  let _isNativeReflectConstruct;
+  let addApplication;
   let closure_4;
   let closure_5;
   let dependencyMap;
   let importDefault;
   let require;
-  ({ user: require, entrypoint: importDefault, contextualGuildId: dependencyMap, contextualChannelId: _isNativeReflectConstruct, onSubmit: closure_4, appContext: closure_5 } = arg0);
-  let obj = require(566) /* initialize */;
-  const items = [_isNativeReflectConstruct];
+  ({ user: require, entrypoint: importDefault, contextualGuildId: dependencyMap, contextualChannelId: addApplication, onSubmit: closure_4, appContext: closure_5 } = arg0);
+  let data;
+  let obj = require(589) /* initialize */;
+  const items = [addApplication];
   const stateFromStores = obj.useStateFromStores(items, () => outer1_3.getAppIdForBotUserId(id.id));
-  let obj1 = require(5498) /* fetchApplication */;
-  const data = obj1.useApplication(stateFromStores).data;
-  obj = {};
-  obj = { variant: "heading-md/semibold" };
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj.children = intl.string(require(1212) /* getSystemLocale */.t.atP0yX);
-  obj.label = callback(require(4161) /* Text */.Text, obj);
-  obj1 = { variant: "text-xs/medium" };
-  const intl2 = require(1212) /* getSystemLocale */.intl;
-  obj1.children = intl2.string(require(1212) /* getSystemLocale */.t.UGg603);
-  obj.subLabel = callback(require(4161) /* Text */.Text, obj1);
-  obj.onPress = function onPress() {
+  let obj1 = require(5516) /* fetchApplication */;
+  data = obj1.useApplication(stateFromStores).data;
+  obj = { label: null, subLabel: null, onPress: null, arrow: true, disabled: null };
+  obj = { variant: "heading-md/semibold", children: null };
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj[1] = intl.string(require(1236) /* getSystemLocale */.t.atP0yX);
+  obj[0] = callback(require(4185) /* Text */.Text, obj);
+  obj1 = { variant: "text-xs/medium", children: null };
+  const intl2 = require(1236) /* getSystemLocale */.intl;
+  obj1[1] = intl2.string(require(1236) /* getSystemLocale */.t.UGg603);
+  obj[1] = callback(require(4185) /* Text */.Text, obj1);
+  obj[2] = function onPress() {
     if (null != data) {
       let obj = outer1_1(outer1_2[7]);
       obj.hideActionSheet(data);
-      obj = { application: data, entrypoint: closure_1, contextualGuildId: closure_2, contextualChannelId: _isNativeReflectConstruct, onSubmit: closure_4, appContext: closure_5 };
+      obj = { application: null, entrypoint: null, contextualGuildId: null, contextualChannelId: null, onSubmit: null, appContext: null };
+      obj[0] = tmp;
+      obj[1] = closure_1;
+      obj[2] = closure_2;
+      obj[3] = addApplication;
+      obj[4] = closure_4;
+      obj[5] = closure_5;
       const result = outer1_0(outer1_2[8]).showReportModalForApp(obj);
       const obj2 = outer1_0(outer1_2[8]);
     }
   };
-  obj.arrow = true;
-  obj.disabled = null == data;
-  return callback(require(5535) /* ActionSheetRowIcon */.ActionSheetRow, obj);
+  obj[4] = null == data;
+  return callback(require(5553) /* ActionSheetRowIcon */.ActionSheetRow, obj);
 }
-({ jsx: closure_4, jsxs: closure_5 } = jsxProd);
+({ jsx: c4, jsxs: c5 } = jsxProd);
 const BotReportChooser = "BotReportChooser";
 let result = require("jsxProd").fileFinishedImporting("modules/in_app_reports/native/BotReportChooser.tsx");
 
 export default function BotReportChooser(arg0) {
-  let obj = {};
-  obj = { style: { textAlign: "center" }, variant: "redesign/heading-18/bold" };
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj.children = intl.string(require(1212) /* getSystemLocale */.t.Bd10bR);
-  obj.header = callback(require(4161) /* Text */.Text, obj);
-  obj = { hasIcons: false };
+  let obj = { header: null, children: null };
+  obj = { style: { textAlign: "center" }, variant: "redesign/heading-18/bold", children: null };
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj[2] = intl.string(require(1236) /* getSystemLocale */.t.Bd10bR);
+  obj[0] = callback(require(4185) /* Text */.Text, obj);
+  obj = { hasIcons: false, children: null };
   const merged = Object.assign(arg0);
   const items = [callback(ReportAppProfile, {}), ];
   const merged1 = Object.assign(arg0);
   items[1] = callback(ReportAppBehavior, {});
-  obj.children = items;
-  obj.children = callback2(require(5535) /* ActionSheetRowIcon */.ActionSheetRow.Group, obj);
-  return callback(require(5533) /* ActionSheet */.ActionSheet, obj);
+  obj[1] = items;
+  obj[1] = callback2(require(5553) /* ActionSheetRowIcon */.ActionSheetRow.Group, obj);
+  return callback(require(5551) /* ActionSheet */.ActionSheet, obj);
 };
 export const BOT_REPORT_CHOOSER_KEY = "BotReportChooser";

@@ -1,17 +1,17 @@
-// Module ID: 8028
-// Function ID: 63814
+// Module ID: 8052
+// Function ID: 8053
 // Name: WarningBox
-// Dependencies: [31, 27, 33, 4165, 8029, 4161, 1212, 8031, 3137, 2]
+// Dependencies: [19, 17, 21, 4189, 8053, 4185, 1236, 8055, 3161, 2]
 // Exports: default
 
-// Module 8028 (WarningBox)
-import "result";
+// Module 8052 (WarningBox)
+import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_4;
-let closure_5;
+let c4;
+let c5;
 const require = arg1;
 function WarningBox(application) {
   let canStartAuthorization;
@@ -20,45 +20,49 @@ function WarningBox(application) {
   let sku;
   application = application.application;
   ({ canStartAuthorization, hasAccountLinked, mobileAccountLinkingDisabled, sku } = application);
-  let name = null;
+  let tmp2 = null;
   if (hasAccountLinked) {
     return null;
   } else {
-    let obj = {};
-    let tmp8 = dependencyMap;
-    obj.look = require(8031) /* InfoBox */.InfoBoxLooks.WARNING;
-    obj.style = tmp.warningBox;
-    const intl = require(1212) /* getSystemLocale */.intl;
+    let name = importDefault;
+    let BMMo2K = dependencyMap;
+    let obj = { look: null, style: null, children: null };
+    obj[0] = require(8055) /* InfoBox */.InfoBoxLooks.WARNING;
+    obj[1] = tmp.warningBox;
+    const intl = require(1236) /* getSystemLocale */.intl;
     if (mobileAccountLinkingDisabled) {
-      obj = {};
-      tmp8 = name == application;
+      BMMo2K = name(3161).BMMo2K;
+      tmp2 = application == tmp2;
       name = undefined;
-      if (!tmp8) {
+      if (!tmp2) {
         name = application.name;
       }
-      obj.applicationName = name;
-      obj.children = intl.formatToPlainString(importDefault(3137).BMMo2K, obj);
-      let tmp9 = obj;
+      obj = { applicationName: null };
+      obj[0] = name;
+      application = intl.formatToPlainString(BMMo2K, obj);
+      obj[2] = application;
+      let tmp7 = obj;
     } else if (canStartAuthorization) {
-      obj = { skuName: sku.name };
+      obj = { skuName: null, applicationName: null };
+      obj[0] = sku.name;
       let name1;
-      if (name != application) {
+      if (application != tmp2) {
         name1 = application.name;
       }
-      obj.applicationName = name1;
-      obj.children = intl.formatToPlainString(tmp7(1212).t["EgCl+Q"], obj);
-      tmp9 = obj;
+      obj[1] = name1;
+      obj[2] = intl.formatToPlainString(tmp6(1236).t["EgCl+Q"], obj);
+      tmp7 = obj;
     } else {
-      obj.children = intl.format(tmp7(1212).t["3T0cpx"], {});
-      tmp9 = obj;
+      obj[2] = intl.format(tmp6(1236).t["3T0cpx"], {});
+      tmp7 = obj;
     }
-    closure_4(importDefault(8031), tmp9);
+    closure_4(importDefault(8055), tmp7);
     const tmp3 = closure_4;
-    const tmp6 = importDefault(8031);
+    const tmp5 = importDefault(8055);
   }
 }
-({ jsx: closure_4, jsxs: closure_5 } = jsxProd);
-let closure_6 = _createForOfIteratorHelperLoose.createStyles({ container: { alignItems: "center", justifyContent: "center", gap: 16, marginTop: 20 }, text: { textAlign: "center", paddingHorizontal: 32 }, warningBox: { marginHorizontal: 16 } });
+({ jsx: c4, jsxs: c5 } = jsxProd);
+let closure_6 = createCacheKey.createStyles({ container: { alignItems: "center", justifyContent: "center", gap: 16, marginTop: 20 }, text: { textAlign: "center", paddingHorizontal: 32 }, warningBox: { marginHorizontal: 16 } });
 const result = require("jsxProd").fileFinishedImporting("modules/slayer_storefront/native/SlayerStorefrontGiftPreview.tsx");
 
 export default function SlayerStorefrontGiftPreview(arg0) {
@@ -76,26 +80,35 @@ export default function SlayerStorefrontGiftPreview(arg0) {
   const tmp = callback2();
   let tmp3Result = null;
   if (null != sku) {
-    let obj = { style: tmp.container };
-    obj = { sku };
-    const items = [callback(importDefault(8029), obj), , ];
-    obj = { variant: "heading-md/normal", color: "mobile-text-heading-primary", style: tmp.text };
-    const intl = require(1212) /* getSystemLocale */.intl;
-    const obj1 = { sender, skuName: sku.name };
+    let obj = { style: null, children: null };
+    obj[0] = tmp.container;
+    obj = { sku: null };
+    obj[0] = sku;
+    const items = [callback(importDefault(8053), obj), , ];
+    obj = { variant: "heading-md/normal", color: "mobile-text-heading-primary", style: null, children: null };
+    obj[2] = tmp.text;
+    const intl = require(1236) /* getSystemLocale */.intl;
+    const obj1 = { sender: null, skuName: null, applicationName: null };
+    obj1[0] = sender;
+    obj1[1] = sku.name;
     let name;
-    if (null != application) {
+    if (application != null) {
       name = application.name;
     }
-    obj1.applicationName = name;
-    obj.children = intl.formatToPlainString(require(1212) /* getSystemLocale */.t["2tBYtA"], obj1);
-    items[1] = callback(require(4161) /* Text */.Text, obj);
-    const obj2 = { canStartAuthorization, hasAccountLinked, mobileAccountLinkingDisabled, sku, application };
+    obj1[2] = name;
+    obj[3] = intl.formatToPlainString(require(1236) /* getSystemLocale */.t["2tBYtA"], obj1);
+    items[1] = callback(require(4185) /* Text */.Text, obj);
+    const obj2 = { canStartAuthorization: null, hasAccountLinked: null, mobileAccountLinkingDisabled: null, sku: null, application: null };
+    obj2[0] = canStartAuthorization;
+    obj2[1] = hasAccountLinked;
+    obj2[2] = mobileAccountLinkingDisabled;
+    obj2[3] = sku;
+    obj2[4] = application;
     items[2] = callback(WarningBox, obj2);
-    obj.children = items;
+    obj[1] = items;
     tmp3Result = closure_5(View, obj);
     const tmp3 = closure_5;
     const tmp4 = View;
-    const tmp8 = callback;
   }
   return tmp3Result;
 };

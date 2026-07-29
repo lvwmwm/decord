@@ -1,29 +1,193 @@
-// Module ID: 4187
-// Function ID: 35197
-// Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 1859, 4188, 1882, 4195, 1392, 1327, 2]
+// Module ID: 4211
+// Function ID: 4212
+// Name: applicationId
+// Dependencies: [1883, 4212, 1906, 4219, 1416, 1351, 2]
 
-// Module 4187 (_isNativeReflectConstruct)
-import _callSuper from "_callSuper";
-import PermissionOverwriteType from "PermissionOverwriteType";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
-import closure_8 from "_callSuper";
-import { createExecutable } from "_callSuper";
-import importDefaultResult from "Record";
-import tmp3 from "Record";
+// Module 4211 (applicationId)
+import "toJS";
+import createExecutable from "createExecutable";
+import { createExecutable } from "createExecutable";
 
 const require = arg1;
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
+const result = require("PermissionOverwriteType").fileFinishedImporting("modules/games/GameRecord.tsx");
+class GameRecord extends tmp2 {
+  constructor(arg0) {
+    tmp5 = new GameRecord(tmp4, tmp3, tmp2, tmp, new.target, new.target);
+    // ThrowIfThisInitialized (0x7c)
+    ({ id: tmp5.id, name: tmp5.name, description: tmp5.description, aliases } = global);
+    if (aliases == null) {
+      aliases = [];
+    }
+    tmp5.aliases = aliases;
+    executables = global.executables;
+    if (executables == null) {
+      executables = [];
+    }
+    tmp5.executables = executables.map(createExecutable);
+    flag = global.overlay;
+    if (flag == null) {
+      flag = false;
+    }
+    tmp5.overlay = flag;
+    flag2 = global.overlay_warn;
+    if (flag2 == null) {
+      flag2 = false;
+    }
+    tmp5.overlayWarn = flag2;
+    flag3 = global.overlay_compatibility_hook;
+    if (flag3 == null) {
+      flag3 = false;
+    }
+    tmp5.overlayCompatibilityHook = flag3;
+    flag4 = global.hook;
+    if (flag4 == null) {
+      flag4 = true;
+    }
+    tmp5.hook = flag4;
+    tmp5.supportsOutOfProcessOverlay = __esModule.supportsOutOfProcessOverlay(global.overlay_methods);
+    third_party_skus = global.third_party_skus;
+    if (third_party_skus == null) {
+      third_party_skus = [];
+    }
+    tmp5.thirdPartySkus = third_party_skus;
+    themes = global.themes;
+    if (themes == null) {
+      themes = [];
+    }
+    tmp5.themes = themes;
+    ({ linked_applications: tmp5.linkedApplications, genres } = global);
+    if (genres == null) {
+      genres = [];
+    }
+    tmp5.genres = genres;
+    platforms = global.platforms;
+    if (platforms == null) {
+      platforms = [];
+    }
+    tmp5.platforms = platforms;
+    websites = global.websites;
+    if (websites == null) {
+      websites = [];
+    }
+    tmp5.websites = websites;
+    ({ companies: tmp5.companies, screenshot_hashes: tmp5.screenshotHashes, screenshot_urls: tmp5.screenshotUrls, trailers: tmp5.trailers, l30_rank: tmp5.l30Rank, summary_localized: tmp5.summaryLocalized, media: tmp5.media, first_release_date: tmp5.firstReleaseDate, shop_collection_ids: tmp5.shopCollectionIds, steam_release_status: tmp5.steamReleaseStatus, reviews } = global);
+    steam = undefined;
+    if (reviews != null) {
+      steam = reviews.steam;
+    }
+    if (null != steam) {
+      tmp9 = undefined;
+      if (null != reviews.steam) {
+        obj = { rating: null, ratingCount: null, recentRating: null, recentRatingCount: null, localizedRating: null, localizedRatingCount: null };
+        obj[0] = reviews.steam.rating;
+        obj[1] = reviews.steam.rating_count;
+        obj[2] = reviews.steam.recent_rating;
+        obj[3] = reviews.steam.recent_rating_count;
+        obj[4] = reviews.steam.localized_rating;
+        obj[5] = reviews.steam.localized_rating_count;
+        tmp9 = obj;
+      }
+      obj = { steam: null, opencritic: null };
+      obj[0] = tmp9;
+      tmp10 = undefined;
+      if (null != reviews.opencritic) {
+        obj1 = { topCriticRating: null, topCriticRatingCount: null, tier: null };
+        obj1[0] = reviews.opencritic.top_critic_rating;
+        obj1[1] = reviews.opencritic.top_critic_rating_count;
+        obj1[2] = reviews.opencritic.tier;
+        tmp10 = obj1;
+      }
+      obj[1] = tmp10;
+      tmp8 = obj;
+    } else {
+      opencritic = undefined;
+      if (reviews != null) {
+        opencritic = reviews.opencritic;
+      }
+    }
+    tmp5.reviews = tmp8;
+    ({ opencritic_url: tmp5.opencriticUrl, game_flags } = global);
+    if (game_flags == null) {
+      game_flags = 0;
+    }
+    tmp5.gameFlags = game_flags;
+    tmp5.contentClassification = global.content_classification;
+    return tmp5;
   }
-  const result = _isNativeReflectConstruct();
 }
-let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/games/GameRecord.tsx");
+const prototype = GameRecord.prototype;
+Object.defineProperty(prototype, "applicationId", {
+  get: function applicationId(renderApplication, arg1) {
+    return this.id;
+  },
+  set: undefined
+});
+prototype["getOfficialApplicationId"] = function getOfficialApplicationId() {
+  const linkedApplications = this.linkedApplications;
+  let id;
+  if (linkedApplications != null) {
+    const found = linkedApplications.find((type) => type.type === callback(table[2]).GameLinkTypes.OFFICIAL);
+    if (found != null) {
+      id = found.id;
+    }
+  }
+  return id;
+};
+prototype["getIconURL"] = function getIconURL(size, format) {
+  const media = this.media;
+  let icon;
+  if (media != null) {
+    icon = media.icon;
+  }
+  return importDefault(4219)(this.id, icon, { size, format });
+};
+prototype["getBannerURL"] = function getBannerURL(size) {
+  const media = this.media;
+  let banner;
+  if (media != null) {
+    banner = media.banner;
+  }
+  return importDefault(4219)(this.id, banner, { keepAspectRatio: true, size });
+};
+prototype["getCoverURL"] = function getCoverURL(size) {
+  const media = this.media;
+  let cover;
+  if (media != null) {
+    cover = media.cover;
+  }
+  let str = "png";
+  if (require(1416) /* getAvatarURL */.SUPPORTS_WEBP) {
+    str = "webp";
+  }
+  return importDefault(4219)(this.id, cover, { keepAspectRatio: true, format: str, size });
+};
+prototype["getArtworkURLs"] = function getArtworkURLs() {
+  const self = this;
+  const media = this.media;
+  let artwork;
+  if (media != null) {
+    artwork = media.artwork;
+  }
+  if (artwork == null) {
+    artwork = [];
+  }
+  const mapped = artwork.map((arg0) => outer1_1(outer1_2[3])(self.id, arg0, { keepAspectRatio: true }));
+  return mapped.filter(self(1351).isNotNullish);
+};
+prototype["getCompanyByRole"] = function getCompanyByRole(DEVELOPER) {
+  let closure_0 = DEVELOPER;
+  const companies = this.companies;
+  let found;
+  if (companies != null) {
+    found = companies.filter((roles) => {
+      roles = roles.roles;
+      return roles.includes(closure_0);
+    });
+  }
+  if (found == null) {
+    found = [];
+  }
+  return found;
+};
 
-export default tmp3;
+export default GameRecord;

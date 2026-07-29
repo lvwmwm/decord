@@ -1,37 +1,38 @@
-// Module ID: 10313
-// Function ID: 79539
-// Name: NotificationPressable
-// Dependencies: [31, 10241, 653, 33, 4165, 689, 10240, 10281, 4026, 4577, 10256, 4166, 4359, 4695, 10314, 10317, 2]
+// Module ID: 10334
+// Function ID: 10335
+// Name: NOTIFICATION_MAX_WIDTH
+// Dependencies: [19, 10262, 676, 21, 4189, 712, 10261, 10302, 4050, 4599, 10277, 4190, 4384, 4717, 10335, 10338, 2]
 // Exports: NotificationPressable
 
-// Module 10313 (NotificationPressable)
-import result from "result";
+// Module 10334 (NOTIFICATION_MAX_WIDTH)
+import noop from "noop";
 import set from "set";
 import { AnalyticEvents } from "ME";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 import set from "ME";
 
-let closure_4;
-let closure_5;
-let closure_7;
-let closure_8;
+let NOTIFICATION_MAX_WIDTH;
+let c4;
+let c5;
+let error;
+let metroImportAll;
 const require = arg1;
-({ MIN_SWIPE_VELOCITY: closure_4, STARTED_SWIPE_THRESHOLD: closure_5 } = set);
-({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = {};
-let merged = Object.assign(require("_createForOfIteratorHelperLoose").shadows.SHADOW_HIGH);
-_createForOfIteratorHelperLoose["backgroundColor"] = require("_createForOfIteratorHelperLoose").colors.MOBILE_ALERT_BACKGROUND_DEFAULT;
-_createForOfIteratorHelperLoose["borderRadius"] = require("_createForOfIteratorHelperLoose").radii.lg;
-_createForOfIteratorHelperLoose["maxWidth"] = set.NOTIFICATION_MAX_WIDTH;
-_createForOfIteratorHelperLoose["width"] = "100%";
-_createForOfIteratorHelperLoose["alignSelf"] = "center";
-_createForOfIteratorHelperLoose["borderWidth"] = 1;
-_createForOfIteratorHelperLoose["borderColor"] = require("_createForOfIteratorHelperLoose").colors.BORDER_SUBTLE;
-_createForOfIteratorHelperLoose.shadow = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.container = { borderRadius: require("_createForOfIteratorHelperLoose").radii.lg, overflow: "hidden" };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+({ MIN_SWIPE_VELOCITY: c4, STARTED_SWIPE_THRESHOLD: c5, NOTIFICATION_MAX_WIDTH } = set);
+({ jsx: error, jsxs: metroImportAll } = jsxProd);
+createCacheKey = { shadow: null, container: null };
+createCacheKey = {};
+let merged = Object.assign(require("Themes").shadows.SHADOW_HIGH);
+createCacheKey.backgroundColor = require("Themes").colors.MOBILE_ALERT_BACKGROUND_DEFAULT;
+createCacheKey.borderRadius = require("Themes").radii.lg;
+createCacheKey.maxWidth = NOTIFICATION_MAX_WIDTH;
+createCacheKey.width = "100%";
+createCacheKey.alignSelf = "center";
+createCacheKey.borderWidth = 1;
+createCacheKey.borderColor = require("Themes").colors.BORDER_SUBTLE;
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { borderRadius: require("Themes").radii.lg, overflow: "hidden" };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
 let closure_10 = { mass: 1, overshootClamping: true, damping: 27, stiffness: 300 };
 let closure_11 = { code: "function NotificationTsx1(){const{withSpring,scale,ON_PRESS_SPRING_CONFIG}=this.__closure;return{transform:[{scale:withSpring(scale.get(),ON_PRESS_SPRING_CONFIG)}]};}" };
 let closure_12 = { code: "function NotificationTsx2(finished){const{runOnJS,handleDismissNotification}=this.__closure;if(finished){runOnJS(handleDismissNotification)('timeout');}}" };
@@ -60,9 +61,7 @@ export const NotificationPressable = function NotificationPressable(notification
   }
   const onPress = notification.onPress;
   const onSettingsPress = notification.onSettingsPress;
-  let obj = { notification: 0, expandableContent: 0, icon: 0, children: 0, accessoryLabelNode: 0, rightAccessory: 0, header: 0, showDragHandle: 0, onAccessibilityExpand: 0, bodyStyle: 0, expandedContentVisible: 0, onPress: 0, onSettingsPress: 0 };
-  Object.setPrototypeOf(null);
-  let merged = Object.assign(notification, obj);
+  let merged = Object.assign(notification, Object.create(null));
   let guildId;
   let channelId;
   let messageId;
@@ -82,7 +81,7 @@ export const NotificationPressable = function NotificationPressable(notification
   let c19;
   let callback2;
   let callback3;
-  const tmp3 = autoDismissing();
+  let tmp2 = autoDismissing();
   let items = [notification];
   const memo = guildId.useMemo(() => {
     const merged = Object.assign(notification(onSettingsPress[6]).extractMetadataFromNotification(notification));
@@ -92,8 +91,8 @@ export const NotificationPressable = function NotificationPressable(notification
   channelId = memo.channelId;
   messageId = memo.messageId;
   type = memo.type;
-  let obj1 = notification(onSettingsPress[7]);
-  const inAppNotificationContext = obj1.useInAppNotificationContext();
+  let obj = notification(onSettingsPress[7]);
+  const inAppNotificationContext = obj.useInAppNotificationContext();
   notificationGestureY = inAppNotificationContext.notificationGestureY;
   velocityY = inAppNotificationContext.velocityY;
   autoDismissing = inAppNotificationContext.autoDismissing;
@@ -104,22 +103,22 @@ export const NotificationPressable = function NotificationPressable(notification
   initialized = inAppNotificationContext.initialized;
   panning = inAppNotificationContext.panning;
   isExpandableNotification = inAppNotificationContext.isExpandableNotification;
-  let obj2 = notification(onSettingsPress[8]);
-  sharedValue = obj2.useSharedValue(1);
+  let obj1 = notification(onSettingsPress[8]);
+  sharedValue = obj1.useSharedValue(1);
   const items1 = [sharedValue];
   const items2 = [sharedValue];
   const callback = guildId.useCallback(() => sharedValue.set(0.95), items1);
   const callback1 = guildId.useCallback(() => sharedValue.set(1), items2);
-  let obj3 = notification(onSettingsPress[8]);
+  let obj2 = notification(onSettingsPress[8]);
   class R {
     constructor() {
-      obj = {};
-      obj = {};
+      obj = { transform: null };
+      obj = { scale: null };
       obj3 = notification(onSettingsPress[9]);
-      obj.scale = obj3.withSpring(c17.get(), isExpanded);
+      obj[0] = obj3.withSpring(c17.get(), isExpanded);
       items = [];
       items[0] = obj;
-      obj.transform = items;
+      obj[0] = items;
       return obj;
     }
   }
@@ -127,11 +126,12 @@ export const NotificationPressable = function NotificationPressable(notification
   R.__closure = obj;
   R.__workletHash = 5485274967370;
   R.__initData = expandedSV;
-  let animatedStyle = obj3.useAnimatedStyle(R);
+  let animatedStyle = obj2.useAnimatedStyle(R);
   const memo1 = guildId.useMemo(() => ({ foreground: true }), []);
-  const obj6 = notification(onSettingsPress[10]);
+  const obj5 = notification(onSettingsPress[10]);
+  const tmp4 = notification;
   sharedValue1 = notification(onSettingsPress[8]).useSharedValue(100);
-  c19 = tmp12;
+  c19 = tmp13;
   const items3 = [initialized, panning, notification, sharedValue1, handleDismissNotification, isExpanded, autoDismissing, notification.duration !== Infinity];
   const effect = guildId.useEffect(() => {
     if (initialized) {
@@ -141,20 +141,24 @@ export const NotificationPressable = function NotificationPressable(notification
             if (!autoDismissing) {
               const value = sharedValue1.get();
               let obj = notification(onSettingsPress[11]);
-              obj = { duration: value / 100 * tmp, easing: notification(onSettingsPress[8]).Easing.linear };
+              obj = { duration: null, easing: null };
+              obj[0] = value / 100 * tmp;
+              obj[1] = notification(onSettingsPress[8]).Easing.linear;
               const fn = function s(arg0) {
                 if (arg0) {
-                  notification(onSettingsPress[8]).runOnJS(outer1_13)("timeout");
-                  const obj = notification(onSettingsPress[8]);
+                  outer1_0(outer1_2[8]).runOnJS(closure_13)("timeout");
+                  const obj = outer1_0(outer1_2[8]);
                 }
               };
-              obj = { runOnJS: notification(onSettingsPress[8]).runOnJS, handleDismissNotification };
+              obj = { runOnJS: null, handleDismissNotification: null };
+              obj[0] = notification(onSettingsPress[8]).runOnJS;
+              obj[1] = handleDismissNotification;
               fn.__closure = obj;
               fn.__workletHash = 5704836747866;
               fn.__initData = setExpanded;
               const result = sharedValue1.set(obj.withTiming(0, obj, "animate-always", fn));
               return () => {
-                notification(onSettingsPress[8]).cancelAnimation(outer1_18);
+                outer1_0(outer1_2[8]).cancelAnimation(closure_18);
               };
             }
           }
@@ -172,23 +176,36 @@ export const NotificationPressable = function NotificationPressable(notification
     return tmp;
   }, items4);
   const items5 = [callback2, autoDismissing, type, notification.inAppNotificationId, guildId, channelId, messageId, sharedValue1, isExpanded, notification.duration !== Infinity];
-  callback3 = guildId.useCallback((arg0, arg1) => {
+  callback3 = guildId.useCallback((IAR_MODAL_OPEN) => {
+    const tmp = callback2();
+    let tmp2 = !tmp;
     if (tmp) {
-      onPress(onSettingsPress[12]);
-      const obj = { type, notif_guild_id: guildId, notif_channel_id: channelId, message_id: messageId, in_app_notification_id: notification.inAppNotificationId };
-      if (!c19) {
-        obj.percent = undefined;
-        tmp5(arg0, obj);
-        if (null != arg1) {
-          arg1();
+      tmp2 = isExpanded;
+    }
+    if (!tmp2) {
+      tmp2 = autoDismissing;
+    }
+    if (tmp2) {
+      let obj = onPress(onSettingsPress[12]);
+      obj = { type: null, notif_guild_id: null, notif_channel_id: null, message_id: null, in_app_notification_id: null, percent: null };
+      obj[0] = type;
+      obj[1] = guildId;
+      obj[2] = channelId;
+      obj[3] = messageId;
+      obj[4] = notification.inAppNotificationId;
+      let rounded;
+      if (c19) {
+        let value = sharedValue1;
+        if (typeof sharedValue1 !== "Object") {
+          value = obj3.get();
         }
-      } else {
-        if ("number" === typeof sharedValue1) {
-          let value = sharedValue1;
-        } else {
-          value = sharedValue1.get();
-        }
-        const rounded = Math.floor(value);
+        rounded = Math.floor(value);
+        obj3 = sharedValue1;
+      }
+      obj[5] = rounded;
+      obj.trackWithMetadata(IAR_MODAL_OPEN, obj);
+      if (arg1 != null) {
+        arg1();
       }
     }
   }, items5);
@@ -202,15 +219,16 @@ export const NotificationPressable = function NotificationPressable(notification
       callback3(type.IN_APP_NOTIFICATION_LONG_PRESSED, onSettingsPress);
     }
   }, items7);
-  const obj7 = notification(onSettingsPress[8]);
+  const obj6 = notification(onSettingsPress[8]);
   function ai() {
-    let obj = {};
+    let obj = notification(onSettingsPress[11]);
     const value = expandedSV.get();
     const radii = onPress(onSettingsPress[5]).radii;
-    obj = { duration: 220 };
+    obj = { borderRadius: null };
+    obj = { duration: 220, easing: null };
     const Easing = notification(onSettingsPress[8]).Easing;
-    obj.easing = Easing.bezier(0.16, 1, 0.3, 1);
-    obj.borderRadius = notification(onSettingsPress[11]).withTiming(value ? radii.xl : radii.lg, obj);
+    obj[1] = Easing.bezier(0.16, 1, 0.3, 1);
+    obj[0] = obj.withTiming(value ? radii.xl : radii.lg, obj);
     return obj;
   }
   obj = { withTiming: notification(onSettingsPress[11]).withTiming, expandedSV, tokens: onPress(onSettingsPress[5]), Easing: notification(onSettingsPress[8]).Easing };
@@ -218,35 +236,36 @@ export const NotificationPressable = function NotificationPressable(notification
   ai.__workletHash = 15276203537259;
   ai.__initData = handleDismissNotification;
   const animatedStyle1 = notification(onSettingsPress[8]).useAnimatedStyle(ai);
-  obj1 = {};
-  const items8 = [tmp3.shadow, ];
+  const items8 = [tmp2.shadow, ];
   if (isExpandableNotification) {
     animatedStyle = animatedStyle1;
   }
+  obj1 = { style: items8, children: null };
   items8[1] = animatedStyle;
-  obj1.style = items8;
   obj2 = {};
   const merged1 = Object.assign(merged);
-  obj2["onAccessibilityEscape"] = function onAccessibilityEscape() {
+  obj2.onAccessibilityEscape = function onAccessibilityEscape() {
     return handleDismissNotification("accessibility_escape");
   };
-  obj2["style"] = tmp3.container;
-  obj2["androidRippleConfig"] = memo1;
-  obj2["onPress"] = callback4;
-  obj2["onPressIn"] = callback;
-  obj2["onPressOut"] = callback1;
-  obj2["onLongPress"] = callback5;
-  obj2["accessibilityRole"] = "button";
-  obj3 = { icon, children, accessoryLabelNode, rightAccessory, header, showDragHandle: flag, onAccessibilityExpand, bodyStyle, expandedContentVisible };
-  const items9 = [notificationGestureY(onPress(onSettingsPress[14]), obj3), , ];
-  let tmp22 = null;
+  obj2.style = tmp2.container;
+  obj2.androidRippleConfig = memo1;
+  obj2.onPress = callback4;
+  obj2.onPressIn = callback;
+  obj2.onPressOut = callback1;
+  obj2.onLongPress = callback5;
+  obj2.accessibilityRole = "button";
+  const items9 = [notificationGestureY(onPress(onSettingsPress[14]), { icon, children, accessoryLabelNode, rightAccessory, header, showDragHandle: flag, onAccessibilityExpand, bodyStyle, expandedContentVisible }), , ];
+  let tmp21Result = null;
   if (notification.duration !== Infinity) {
-    const obj4 = { canExpand: obj6.useCanExpandInAppNotification("NotificationPressable").canExpand, percent: sharedValue1, type };
-    tmp22 = notificationGestureY(onPress(onSettingsPress[15]), obj4);
+    let obj3 = { canExpand: null, percent: null, type: null };
+    obj3[0] = obj5.useCanExpandInAppNotification("NotificationPressable").canExpand;
+    obj3[1] = sharedValue1;
+    obj3[2] = type;
+    tmp21Result = tmp21(tmp19(tmp5[15]), obj3);
   }
-  items9[1] = tmp22;
+  items9[1] = tmp21Result;
   items9[2] = expandableContent;
-  obj2["children"] = items9;
-  obj1.children = velocityY(notification(onSettingsPress[13]).PressableHighlight, obj2);
+  obj2.children = items9;
+  obj1[1] = velocityY(tmp4(onSettingsPress[13]).PressableHighlight, obj2);
   return notificationGestureY(onPress(onSettingsPress[8]).View, obj1);
 };

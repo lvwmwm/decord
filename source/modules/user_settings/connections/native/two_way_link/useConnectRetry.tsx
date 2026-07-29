@@ -1,11 +1,11 @@
-// Module ID: 8955
-// Function ID: 70646
+// Module ID: 8979
+// Function ID: 8980
 // Name: useConnectRetry
-// Dependencies: [31, 2]
+// Dependencies: [19, 2]
 // Exports: useConnectRetry
 
-// Module 8955 (useConnectRetry)
-import result from "result";
+// Module 8979 (useConnectRetry)
+import noop from "noop";
 
 const result = require("set").fileFinishedImporting("modules/user_settings/connections/native/two_way_link/useConnectRetry.tsx");
 
@@ -14,12 +14,13 @@ export const useConnectRetry = function useConnectRetry(navigation, PRE_CONNECT)
   let closure_1 = PRE_CONNECT;
   const items = [navigation, PRE_CONNECT];
   return React.useCallback(() => {
+    let arr = navigation;
     const routes = navigation.getState().routes;
-    const findIndexResult = routes.findIndex((name) => name.name === outer1_1);
+    const findIndexResult = routes.findIndex((name) => name.name === closure_1);
     if (findIndexResult >= 0) {
-      navigation.pop(routes.length - findIndexResult - 1);
+      arr = arr.pop(routes.length - findIndexResult - 1);
     } else {
-      navigation.popToTop();
+      arr.popToTop();
     }
   }, items);
 };

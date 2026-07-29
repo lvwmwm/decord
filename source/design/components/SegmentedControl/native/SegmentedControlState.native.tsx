@@ -1,11 +1,11 @@
-// Module ID: 8200
-// Function ID: 65582
+// Module ID: 8224
+// Function ID: 8225
 // Name: useSegmentedControlState
-// Dependencies: [31, 689, 3884, 4026, 4134, 4563, 2]
+// Dependencies: [19, 712, 3908, 4050, 4158, 4586, 2]
 // Exports: useSegmentedControlState
 
-// Module 8200 (useSegmentedControlState)
-import result from "result";
+// Module 8224 (useSegmentedControlState)
+import noop from "noop";
 
 const require = arg1;
 let closure_4 = { code: "function SegmentedControlStateNativeTsx1(index,dimensions){const{itemDimensions,itemCount}=this.__closure;itemDimensions.get()[index]=dimensions;itemDimensions.set([...itemDimensions.get()].slice(0,itemCount));}" };
@@ -42,9 +42,9 @@ export const useSegmentedControlState = function useSegmentedControlState(items)
   sharedValue = items(PX_24[3]).useSharedValue([]);
   let obj = items(PX_24[3]);
   sharedValue1 = items(PX_24[3]).useSharedValue(-1);
-  let obj2 = items(PX_24[3]);
+  const obj2 = items(PX_24[3]);
   sharedValue2 = items(PX_24[3]).useSharedValue(0);
-  const obj3 = items(PX_24[3]);
+  let obj3 = items(PX_24[3]);
   sharedValue3 = items(PX_24[3]).useSharedValue(0);
   const obj4 = items(PX_24[3]);
   sharedValue4 = items(PX_24[3]).useSharedValue(num);
@@ -62,64 +62,82 @@ export const useSegmentedControlState = function useSegmentedControlState(items)
   }, items2);
   const items3 = [sharedValue4, onPageChangeStart, pageWidth, sharedValue1, animatedRef, enabled, onSetActiveIndex];
   callback = onPageChange.useCallback((arg0) => {
-    let flag = arg1;
-    let flag2 = arg2;
     let closure_0 = arg0;
+    let flag = arg1;
     if (arg1 === undefined) {
       flag = true;
     }
-    if (flag2 === undefined) {
+    let flag2 = arg2;
+    if (arg2 === undefined) {
       flag2 = false;
-    }
-    function updateIndex(arg0) {
-      const result = outer1_11.set(arg0);
-      const result1 = arg0 * flag2;
-      const result2 = outer1_8.set(result1);
-      let tmp4 = !flag2;
-      if (tmp4) {
-        tmp4 = !outer1_6;
-      }
-      if (tmp4) {
-        let obj = items(PX_24[5]);
-        tmp4 = !obj.getIsScreenReaderEnabled();
-      }
-      let tmp8 = null == outer1_13;
-      if (!tmp8) {
-        const current = outer1_13.current;
-        tmp8 = null == current;
-        const obj2 = current;
-      }
-      if (!tmp8) {
-        obj = { x: result1, animated: tmp4 };
-        obj2.scrollTo(obj);
-      }
-      if (null != outer1_5) {
-        outer1_5(arg0);
-      }
     }
     if (flag) {
       flag = sharedValue4.get() !== arg0;
     }
     if (flag) {
-      let result = items(PX_24[4]).triggerHapticFeedback(items(PX_24[4]).HapticFeedbackTypes.IMPACT_MEDIUM);
       let obj = items(PX_24[4]);
+      let result = obj.triggerHapticFeedback(items(PX_24[4]).HapticFeedbackTypes.IMPACT_MEDIUM);
     }
     if (arg0 !== sharedValue4.get()) {
       if (null != onPageChangeStart) {
-        onPageChangeStart(arg0, () => {
-          updateIndex(closure_0);
+        tmp14(arg0, () => {
+          const result = outer1_11.set(closure_0);
+          const result1 = closure_0 * flag2;
+          const result2 = outer1_8.set(result1);
+          let tmp5 = !flag2;
+          if (!flag2) {
+            tmp5 = !outer1_6;
+          }
+          if (tmp5) {
+            let obj = items(PX_24[5]);
+            tmp5 = !obj.getIsScreenReaderEnabled();
+          }
+          if (outer1_13 != null) {
+            const current = outer1_13.current;
+            if (current != null) {
+              obj = { x: null, animated: null };
+              obj[0] = result1;
+              obj[1] = tmp5;
+              current.scrollTo(obj);
+            }
+          }
+          if (outer1_5 != null) {
+            tmp10(closure_0);
+          }
         });
       } else {
-        updateIndex(arg0);
+        let result1 = sharedValue4.set(arg0);
+        let result2 = arg0 * flag2;
+        const result3 = sharedValue1.set(result2);
+        let tmp8 = !flag2;
+        if (!flag2) {
+          tmp8 = !enabled;
+        }
+        if (tmp8) {
+          tmp8 = !items(PX_24[5]).getIsScreenReaderEnabled();
+          const obj3 = items(PX_24[5]);
+        }
+        if (animatedRef != null) {
+          let current = animatedRef.current;
+          if (current != null) {
+            obj = { x: null, animated: null };
+            obj[0] = result2;
+            obj[1] = tmp8;
+            current.scrollTo(obj);
+          }
+        }
+        if (onSetActiveIndex != null) {
+          onSetActiveIndex(arg0);
+        }
       }
     }
   }, items3);
   length = items.length;
   class M {
     constructor(arg0, arg1) {
-      c7.get()[items] = arg1;
-      items = [...c7.get()];
-      result = c7.set(items.slice(0, length));
+      useContext.get()[items] = arg1;
+      items = [...useContext.get()];
+      result = useContext.set(items.slice(0, length));
       return;
     }
   }

@@ -1,36 +1,40 @@
-// Module ID: 11688
-// Function ID: 90554
+// Module ID: 11712
+// Function ID: 11713
 // Name: getListSummaryLabel
-// Dependencies: [1212, 2]
+// Dependencies: [1236, 2]
 // Exports: getListSummaryLabel
 
-// Module 11688 (getListSummaryLabel)
+// Module 11712 (getListSummaryLabel)
 const result = require("set").fileFinishedImporting("utils/ListUtils.tsx");
 
 export const getListSummaryLabel = function getListSummaryLabel(names, length) {
-  if (null == length) {
-    length = names.length;
+  let first = names;
+  if (length == null) {
+    length = first.length;
   }
-  let num = 0;
   if (0 === length) {
     return "";
   } else if (1 === length) {
-    const intl4 = require(dependencyMap[num]).intl;
-    let obj = {};
-    num = names[num];
-    obj.first = num;
-    let formatToPlainStringResult = intl4.formatToPlainString(require(dependencyMap[num]).t["8s9z8P"], obj);
+    const intl4 = require(1236) /* getSystemLocale */.intl;
+    let obj = { first: null };
+    first = first[0];
+    obj[0] = first;
+    let formatToPlainStringResult = intl4.formatToPlainString(require(1236) /* getSystemLocale */.t["8s9z8P"], obj);
   } else if (2 === length) {
-    const intl3 = require(dependencyMap[num]).intl;
-    obj = { first: names[num], second: names[1] };
-    formatToPlainStringResult = intl3.formatToPlainString(require(dependencyMap[num]).t["i0K/dw"], obj);
+    const intl3 = require(1236) /* getSystemLocale */.intl;
+    obj = { first: null, second: null };
+    [obj3[0], obj3[1]] = first;
+    formatToPlainStringResult = intl3.formatToPlainString(require(1236) /* getSystemLocale */.t["i0K/dw"], obj);
   } else if (3 === length) {
-    const intl2 = require(dependencyMap[num]).intl;
-    const obj1 = { first: names[num], second: names[1], third: names[2] };
-    formatToPlainStringResult = intl2.formatToPlainString(require(dependencyMap[num]).t["/KSOKY"], obj1);
+    const intl2 = require(1236) /* getSystemLocale */.intl;
+    [obj2[0], obj2[1], obj2[2]] = first;
+    formatToPlainStringResult = intl2.formatToPlainString(require(1236) /* getSystemLocale */.t["/KSOKY"], { first: null, second: null, third: null });
+    const obj1 = { first: null, second: null, third: null };
   } else {
-    const intl = require(dependencyMap[num]).intl;
-    obj = { first: names[num], second: names[1], third: names[2], count: length - 3 };
-    formatToPlainStringResult = intl.formatToPlainString(require(dependencyMap[num]).t.xpU76u, obj);
+    const intl = require(1236) /* getSystemLocale */.intl;
+    obj = { first: null, second: null, third: null, count: null };
+    [obj[0], obj[1], obj[2]] = first;
+    obj[3] = length - 3;
+    formatToPlainStringResult = intl.formatToPlainString(require(1236) /* getSystemLocale */.t.xpU76u, obj);
   }
 };

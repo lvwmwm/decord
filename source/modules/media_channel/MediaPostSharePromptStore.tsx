@@ -1,70 +1,28 @@
-// Module ID: 7699
-// Function ID: 61459
-// Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 1909, 1194, 1348, 7700, 21, 566, 686, 2]
+// Module ID: 7722
+// Function ID: 7723
+// Name: set
+// Dependencies: [1933, 1218, 1372, 7723, 11, 589, 709, 2]
 
-// Module 7699 (_isNativeReflectConstruct)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_4 from "_isNativeReflectConstruct";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
-import closure_8 from "_isNativeReflectConstruct";
-import closure_9 from "_isNativeReflectConstruct";
-import closure_10 from "_isNativeReflectConstruct";
-import set from "_possibleConstructorReturn";
+// Module 7722 (set)
+import isSubscriptionGated from "isSubscriptionGated";
+import fetchFingerprint from "fetchFingerprint";
+import ensureGuildLoaded from "ensureGuildLoaded";
+import { Store } from "initialize";
+import set from "ensureGuildLoaded";
 
 const require = arg1;
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
-  }
-  const result = _isNativeReflectConstruct();
-}
 let set = new Set();
-let tmp3 = ((Store) => {
-  class MediaPostSharePromptStore {
-    constructor() {
-      self = this;
-      tmp = outer1_3(this, MediaPostSharePromptStore);
-      obj = outer1_6(MediaPostSharePromptStore);
-      tmp2 = outer1_5;
-      if (outer1_12()) {
-        tmp6 = globalThis;
-        _Reflect = Reflect;
-        tmp7 = outer1_6;
-        tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, outer1_6(self).constructor);
-      } else {
-        tmp3 = arguments;
-        tmp4 = arguments;
-        constructResult = obj(...arguments);
-      }
-      return tmp2(self, constructResult);
-    }
-  }
-  callback2(MediaPostSharePromptStore, Store);
-  let obj = {
-    key: "initialize",
-    value() {
-      this.waitFor(outer1_9, outer1_10, outer1_8);
-    }
-  };
-  const items = [obj, ];
-  obj = {
-    key: "shouldDisplayPrompt",
-    value(arg0) {
-      return outer1_11.has(arg0);
-    }
-  };
-  items[1] = obj;
-  return callback(MediaPostSharePromptStore, items);
-})(require("initialize").Store);
-tmp3.displayName = "MediaPostSharePromptStore";
-tmp3 = new tmp3(require("dispatcher"), {
+class MediaPostSharePromptStore extends Store {
+}
+const prototype = MediaPostSharePromptStore.prototype;
+prototype["initialize"] = function initialize() {
+  this.waitFor(fetchFingerprint, ensureGuildLoaded, isSubscriptionGated);
+};
+prototype["shouldDisplayPrompt"] = function shouldDisplayPrompt(id) {
+  return set.has(id);
+};
+MediaPostSharePromptStore.displayName = "MediaPostSharePromptStore";
+const mediaPostSharePromptStore = new MediaPostSharePromptStore(require("dispatcher"), {
   CONNECTION_OPEN: function handleConnectionOpen() {
     const set = new Set();
   },
@@ -74,7 +32,7 @@ tmp3 = new tmp3(require("dispatcher"), {
       const author = message.author;
       let id1;
       id = id.getId();
-      if (null != author) {
+      if (author != null) {
         id1 = author.id;
       }
       if (id === id1) {
@@ -83,13 +41,13 @@ tmp3 = new tmp3(require("dispatcher"), {
           if (null != channel) {
             if (null != channel.parent_id) {
               if (channelGated.isChannelGated(channel.guild_id, channel.parent_id)) {
-                set.add(importDefault(21).castMessageIdAsChannelId(isPushNotification.message.id));
-                const obj = importDefault(21);
+                set.add(importDefault(11).castMessageIdAsChannelId(isPushNotification.message.id));
+                const obj = importDefault(11);
               }
             }
           }
         }
-        obj2 = require(7700) /* isFirstMessageInMediaPost */;
+        obj2 = require(7723) /* useIsFirstMessageInMediaPost */;
       }
     }
   },
@@ -100,6 +58,6 @@ tmp3 = new tmp3(require("dispatcher"), {
     set.clear();
   }
 });
-let result = set.fileFinishedImporting("modules/media_channel/MediaPostSharePromptStore.tsx");
+const result = set.fileFinishedImporting("modules/media_channel/MediaPostSharePromptStore.tsx");
 
-export default tmp3;
+export default mediaPostSharePromptStore;

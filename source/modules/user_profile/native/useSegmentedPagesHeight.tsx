@@ -1,19 +1,19 @@
-// Module ID: 12154
-// Function ID: 95070
+// Module ID: 12178
+// Function ID: 12179
 // Name: usePageHeights
-// Dependencies: [57, 31, 4026, 1450, 1557, 2]
+// Dependencies: [32, 19, 4050, 1474, 1581, 2]
 // Exports: usePageHeights, usePagerFillHeight, usePagesHeightStyle
 
-// Module 12154 (usePageHeights)
+// Module 12178 (usePageHeights)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
+import noop from "noop";
 
 const require = arg1;
 let closure_5 = { code: "function useSegmentedPagesHeightTsx1(){const{pageHeights,visiblePageRange,fillHeight}=this.__closure;var _heights$lo,_heights$hi;const heights=pageHeights.get();const[lo,hi]=visiblePageRange.get();const contentHeight=Math.max((_heights$lo=heights[lo])!==null&&_heights$lo!==void 0?_heights$lo:0,(_heights$hi=heights[hi])!==null&&_heights$hi!==void 0?_heights$hi:0);const height=Math.max(contentHeight,fillHeight);return height>0?{height:height}:{};}" };
-let result = require("module_4026").fileFinishedImporting("modules/user_profile/native/useSegmentedPagesHeight.tsx");
+let result = require("module_4050").fileFinishedImporting("modules/user_profile/native/useSegmentedPagesHeight.tsx");
 
 export const usePageHeights = function usePageHeights() {
-  let obj = sharedValue(4026);
+  let obj = sharedValue(4050);
   sharedValue = obj.useSharedValue([]);
   let closure_1 = React.useRef([]);
   let items = [sharedValue];
@@ -35,8 +35,8 @@ export const usePageHeights = function usePageHeights() {
   return obj;
 };
 export const usePagerFillHeight = function usePagerFillHeight() {
-  const height = bottom(1450)().height;
-  bottom = bottom(1557)().bottom;
+  const height = bottom(1474)().height;
+  bottom = bottom(1581)().bottom;
   const tmp = ref(React.useState(0), 2);
   const dependencyMap = tmp[1];
   ref = React.useRef(null);
@@ -46,50 +46,49 @@ export const usePagerFillHeight = function usePagerFillHeight() {
     fillHeight: tmp[0],
     measureFill: React.useCallback(() => {
       const current = ref.current;
-      if (null != current) {
+      if (current != null) {
         current.measureInWindow((arg0, arg1) => {
-          const diff = outer1_0 - arg1 - outer1_1;
+          const diff = closure_0 - arg1 - closure_1;
           let num = 0;
           if (diff > 0) {
             num = diff;
           }
-          outer1_2(num);
+          closure_2(num);
         });
       }
     }, items)
   };
 };
 export const usePagesHeightStyle = function usePagesHeightStyle(segmentedControlState, pageHeights, fillHeight) {
-  let num = fillHeight;
   const _require = pageHeights;
+  let num = fillHeight;
   if (fillHeight === undefined) {
     num = 0;
   }
   let visiblePageRange;
   visiblePageRange = segmentedControlState.visiblePageRange;
-  let obj = _require(visiblePageRange[2]);
   const fn = function u() {
     const value = pageHeights.get();
     const tmp2 = outer1_3(visiblePageRange.get(), 2);
-    let num = 0;
-    if (null != value[tmp2[0]]) {
-      num = tmp3;
+    let num = value[tmp2[0]];
+    if (num == null) {
+      num = 0;
     }
-    let num2 = 0;
-    if (null != value[tmp2[1]]) {
-      num2 = tmp4;
+    let num2 = value[tmp2[1]];
+    if (num2 == null) {
+      num2 = 0;
     }
     const bound = Math.max(Math.max(num, num2), num);
     if (bound > 0) {
-      let obj = { height: bound };
+      let obj = { height: null };
+      obj[0] = bound;
     } else {
       obj = {};
     }
     return obj;
   };
-  obj = { pageHeights, visiblePageRange, fillHeight: num };
-  fn.__closure = obj;
+  fn.__closure = { pageHeights, visiblePageRange, fillHeight: num };
   fn.__workletHash = 7484186791578;
   fn.__initData = closure_5;
-  return obj.useAnimatedStyle(fn);
+  return _require(visiblePageRange[2]).useAnimatedStyle(fn);
 };

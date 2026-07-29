@@ -1,10 +1,10 @@
-// Module ID: 9522
-// Function ID: 74047
+// Module ID: 9546
+// Function ID: 9547
 // Name: showLongPressURLActionSheet
-// Dependencies: [4134, 1212, 3865, 5525, 3862, 8172, 9523, 5530, 2]
+// Dependencies: [4158, 1236, 3889, 5543, 3886, 8196, 9547, 5548, 2]
 // Exports: default
 
-// Module 9522 (showLongPressURLActionSheet)
+// Module 9546 (showLongPressURLActionSheet)
 let result = require("presentAddedFriendToast").fileFinishedImporting("modules/links/native/showLongPressURLActionSheet.tsx");
 
 export default function showLongPressURLActionSheet(urlString) {
@@ -26,70 +26,69 @@ export default function showLongPressURLActionSheet(urlString) {
   const items = [];
   match = str.match(/^(tel|sms|mailto):([^?;]+)/);
   if (null != match) {
-    obj = {};
     const intl7 = str(channelId[1]).intl;
     if ("mailto" === match[1]) {
     } else {
     }
-    obj.label = intl7.string(_3zozoR);
-    obj.onPress = function onPress() {
+    obj = { label: null, onPress: null };
+    obj[0] = intl7.string(_3zozoR);
+    obj[1] = function onPress() {
       str(channelId[2]).presentLinkCopied();
       const obj = str(channelId[2]);
       str(channelId[3]).copy(match[2]);
     };
     items.push(obj);
     if ("tel" === match[1]) {
-      obj = {};
-      const intl = str(channelId[1]).intl;
-      obj.label = intl.string(str(channelId[1]).t["+wbjMW"]);
-      obj.onPress = function onPress() {
+      obj = { label: null, onPress: null };
+      const intl = tmp12(tmp13[1]).intl;
+      obj[0] = intl.string(tmp12(tmp13[1]).t["+wbjMW"]);
+      obj[1] = function onPress() {
         outer1_1(channelId[4]).openURL(str.replace("tel:", "sms:"));
       };
       items.push(obj);
     }
   }
-  const obj1 = {};
+  const obj1 = { label: null, onPress: null };
   const intl2 = str(channelId[1]).intl;
-  obj1.label = intl2.string(str(channelId[1]).t.wuRE8M);
-  obj1.onPress = function onPress() {
+  obj1[0] = intl2.string(str(channelId[1]).t.wuRE8M);
+  obj1[1] = function onPress() {
     outer1_1(channelId[4]).openURL(str);
   };
   const items1 = [obj1, , ];
-  const obj2 = {};
+  const obj2 = { label: null, onPress: null };
   const intl3 = str(channelId[1]).intl;
-  obj2.label = intl3.string(str(channelId[1]).t.WqhZss);
-  obj2.onPress = function onPress() {
+  obj2[0] = intl3.string(str(channelId[1]).t.WqhZss);
+  obj2[1] = function onPress() {
     str(channelId[2]).presentLinkCopied();
     const obj = str(channelId[2]);
     str(channelId[3]).copy(str);
   };
   items1[1] = obj2;
-  const obj3 = {};
+  const obj3 = { label: null, onPress: null };
   const intl4 = str(channelId[1]).intl;
-  obj3.label = intl4.string(str(channelId[1]).t.Ej3B3Y);
-  obj3.onPress = function onPress() {
+  obj3[0] = intl4.string(str(channelId[1]).t.Ej3B3Y);
+  obj3[1] = function onPress() {
     let obj = str(channelId[5]);
     obj = { url: str };
     obj.showShareActionSheet(obj, "Share Link");
   };
   items1[HermesBuiltin.arraySpread(items, 2)] = obj3;
   if (null != channelId) {
-    const obj4 = {};
-    const intl5 = str(channelId[1]).intl;
-    obj4.label = intl5.string(str(channelId[1]).t.aW2YlJ);
-    obj4.onPress = function onPress() {
+    const obj4 = { label: null, onPress: null };
+    const intl5 = tmp7(tmp8[1]).intl;
+    obj4[0] = intl5.string(tmp7(tmp8[1]).t.aW2YlJ);
+    obj4[1] = function onPress() {
       outer1_1(channelId[6])({ guildId: closure_1, channelId, messageId: closure_3, navigationSettings: { navigationReplace: true, safe: true } });
     };
     items1.unshift(obj4);
   }
-  let obj6 = str(channelId[7]);
-  const obj5 = { key: "LongPressUrl" };
-  obj6 = {};
-  const intl6 = str(channelId[1]).intl;
-  obj6.title = intl6.string(str(channelId[1]).t["5oIOLX"]);
-  obj6.subtitle = str;
-  obj5.header = obj6;
-  obj5.options = items1;
-  obj5.hasIcons = false;
-  const result1 = obj6.showSimpleActionSheet(obj5);
+  const arraySpreadResult = HermesBuiltin.arraySpread(items, 2);
+  const obj5 = { key: "LongPressUrl", header: null, options: null, hasIcons: false };
+  const obj6 = { title: null, subtitle: null };
+  const intl6 = tmp7(tmp8[1]).intl;
+  obj6[0] = intl6.string(str(channelId[1]).t["5oIOLX"]);
+  obj6[1] = str;
+  obj5[1] = obj6;
+  obj5[2] = items1;
+  const result1 = str(channelId[7]).showSimpleActionSheet(obj5);
 };

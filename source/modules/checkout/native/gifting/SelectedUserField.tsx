@@ -1,111 +1,109 @@
-// Module ID: 8786
-// Function ID: 69327
+// Module ID: 8810
+// Function ID: 8811
 // Name: SelectedUserField
-// Dependencies: [31, 27, 33, 4165, 689, 6719, 1212, 4004, 8270, 1273, 4161, 6715, 2]
+// Dependencies: [19, 17, 21, 4189, 712, 6740, 1236, 4028, 8294, 1297, 4185, 6736, 2]
 // Exports: default
 
-// Module 8786 (SelectedUserField)
-import "result";
+// Module 8810 (SelectedUserField)
+import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_3;
-let closure_4;
-let closure_5;
+let c3;
+let c4;
+let c5;
 let closure_6;
 const require = arg1;
-({ Pressable: closure_3, View: closure_4 } = get_ActivityIndicator);
-({ jsx: closure_5, jsxs: closure_6 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { marginHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16 };
-_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.content = { flexDirection: "row", overflow: "hidden", alignItems: "center", display: "flex" };
-let obj1 = { flexDirection: "row", alignItems: "center", flex: 1, paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16, paddingVertical: 6 };
-_createForOfIteratorHelperLoose.opener = obj1;
-_createForOfIteratorHelperLoose.openerWithClearButton = { paddingRight: 0 };
-_createForOfIteratorHelperLoose.searchIcon = { marginRight: require("_createForOfIteratorHelperLoose").space.PX_8 };
-let obj3 = { flexDirection: "row", alignItems: "center", backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SURFACE_HIGH, borderRadius: require("_createForOfIteratorHelperLoose").radii.lg, paddingVertical: 6, paddingHorizontal: 6 };
-_createForOfIteratorHelperLoose.userPill = obj3;
-_createForOfIteratorHelperLoose.userPillText = { marginLeft: 6 };
-let obj4 = { alignItems: "center", justifyContent: "center", minWidth: 44, minHeight: 44, paddingRight: require("_createForOfIteratorHelperLoose").space.PX_16, paddingLeft: require("_createForOfIteratorHelperLoose").space.PX_8 };
-_createForOfIteratorHelperLoose.clearButton = obj4;
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-let obj2 = { marginRight: require("_createForOfIteratorHelperLoose").space.PX_8 };
+({ Pressable: c3, View: c4 } = get_ActivityIndicator);
+({ jsx: c5, jsxs: closure_6 } = jsxProd);
+createCacheKey = { container: null, content: null, opener: null, openerWithClearButton: null, searchIcon: null, userPill: null, userPillText: null, clearButton: null };
+createCacheKey = { marginHorizontal: require("Themes").space.PX_16 };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { flexDirection: "row", overflow: "hidden", alignItems: "center", display: "flex" };
+createCacheKey[2] = { flexDirection: "row", alignItems: "center", flex: 1, paddingHorizontal: require("Themes").space.PX_16, paddingVertical: 6 };
+createCacheKey[3] = { paddingRight: 0 };
+const obj1 = { flexDirection: "row", alignItems: "center", flex: 1, paddingHorizontal: require("Themes").space.PX_16, paddingVertical: 6 };
+createCacheKey[4] = { marginRight: require("Themes").space.PX_8 };
+let obj2 = { marginRight: require("Themes").space.PX_8 };
+createCacheKey[5] = { flexDirection: "row", alignItems: "center", backgroundColor: require("Themes").colors.BACKGROUND_SURFACE_HIGH, borderRadius: require("Themes").radii.lg, paddingVertical: 6, paddingHorizontal: 6 };
+createCacheKey[6] = { marginLeft: 6 };
+let obj3 = { flexDirection: "row", alignItems: "center", backgroundColor: require("Themes").colors.BACKGROUND_SURFACE_HIGH, borderRadius: require("Themes").radii.lg, paddingVertical: 6, paddingHorizontal: 6 };
+createCacheKey[7] = { alignItems: "center", justifyContent: "center", minWidth: 44, minHeight: 44, paddingRight: require("Themes").space.PX_16, paddingLeft: require("Themes").space.PX_8 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let obj4 = { alignItems: "center", justifyContent: "center", minWidth: 44, minHeight: 44, paddingRight: require("Themes").space.PX_16, paddingLeft: require("Themes").space.PX_8 };
 const result = require("jsxProd").fileFinishedImporting("modules/checkout/native/gifting/SelectedUserField.tsx");
 
 export default function SelectedUserField(onPress) {
   let require;
   let selectedUser;
   ({ selectedUser, setSelectedUser: require } = onPress);
-  const tmp = _createForOfIteratorHelperLoose();
-  let obj = { style: tmp.container };
-  obj = {};
-  obj = { style: tmp.content };
-  const obj1 = {};
+  const tmp = createCacheKey();
+  let obj = { style: tmp.container, children: null };
+  obj = { style: tmp.content, children: null };
   const items = [tmp.opener, ];
   let openerWithClearButton = null != selectedUser;
   if (openerWithClearButton) {
     openerWithClearButton = tmp.openerWithClearButton;
   }
+  obj = { style: items, onPress: onPress.onPress, accessibilityRole: "button", accessibilityLabel: null, children: null };
   items[1] = openerWithClearButton;
-  obj1.style = items;
-  obj1.onPress = onPress.onPress;
-  obj1.accessibilityRole = "button";
   if (null != selectedUser) {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    let obj4 = importDefault(4004);
-    const _HermesInternal = HermesInternal;
-    let combined = "" + intl.string(require(1212) /* getSystemLocale */.t.xFn72s) + ", " + obj4.getName(selectedUser);
-    const stringResult = intl.string(require(1212) /* getSystemLocale */.t.xFn72s);
-  } else {
-    const intl4 = require(1212) /* getSystemLocale */.intl;
-    const intl5 = require(1212) /* getSystemLocale */.intl;
+    const intl3 = tmp4(1236).intl;
+    let obj3 = importDefault(4028);
     const _HermesInternal2 = HermesInternal;
-    combined = "" + intl4.string(require(1212) /* getSystemLocale */.t.xFn72s) + ", " + intl5.string(require(1212) /* getSystemLocale */.t.R0vK0N);
-    const stringResult1 = intl4.string(require(1212) /* getSystemLocale */.t.xFn72s);
-  }
-  obj1.accessibilityLabel = combined;
-  const obj2 = { style: tmp.searchIcon, size: "xs", color: "interactive-text-default" };
-  const items1 = [callback(require(8270) /* MagnifyingGlassIcon */.MagnifyingGlassIcon, obj2), ];
-  if (null != selectedUser) {
-    const obj3 = { style: tmp.userPill };
-    obj4 = { user: selectedUser, guildId: undefined, size: require(1273) /* Button */.AvatarSizes.XSMALL_20 };
-    const items2 = [callback(require(1273) /* Button */.Avatar, obj4), ];
-    const obj5 = { variant: "text-md/medium", style: tmp.userPillText, children: importDefault(4004).getName(selectedUser) };
-    items2[1] = callback(require(4161) /* Text */.Text, obj5);
-    obj3.children = items2;
-    let tmp15 = callback2(closure_4, obj3);
-    const obj11 = importDefault(4004);
+    let combined = "" + intl3.string(tmp4(1236).t.xFn72s) + ", " + obj3.getName(selectedUser);
+    const stringResult = intl3.string(tmp4(1236).t.xFn72s);
   } else {
-    const obj6 = { variant: "text-sm/semibold", color: "text-subtle", style: tmp.userPillText };
-    const intl2 = require(1212) /* getSystemLocale */.intl;
-    obj6.children = intl2.string(require(1212) /* getSystemLocale */.t.R0vK0N);
-    tmp15 = callback(require(4161) /* Text */.Text, obj6);
+    const intl = tmp4(1236).intl;
+    const intl2 = tmp4(1236).intl;
+    const _HermesInternal = HermesInternal;
+    combined = "" + intl.string(tmp4(1236).t.xFn72s) + ", " + intl2.string(tmp4(1236).t.R0vK0N);
+    const stringResult1 = intl.string(tmp4(1236).t.xFn72s);
   }
-  items1[1] = tmp15;
-  obj1.children = items1;
-  const items3 = [callback2(closure_3, obj1), ];
-  let tmp22 = null;
+  obj[3] = combined;
+  const items1 = [closure_5(require(8294) /* MagnifyingGlassIcon */.MagnifyingGlassIcon, { style: tmp.searchIcon, size: "xs", color: "interactive-text-default" }), ];
   if (null != selectedUser) {
-    const obj7 = {
-      style: tmp.clearButton,
-      onPress() {
-          return callback(undefined);
-        },
-      accessibilityRole: "button"
-    };
-    const intl3 = require(1212) /* getSystemLocale */.intl;
-    const obj8 = { text: importDefault(4004).getName(selectedUser) };
-    obj7.accessibilityLabel = intl3.formatToPlainString(require(1212) /* getSystemLocale */.t["0Vb9FQ"], obj8);
-    const obj9 = { size: "xs" };
-    obj7.children = callback(require(6715) /* CircleXIcon */.CircleXIcon, obj9);
-    tmp22 = callback(closure_3, obj7);
-    const obj14 = importDefault(4004);
+    const obj2 = { style: null, children: null };
+    obj2[0] = tmp.userPill;
+    obj3 = { user: null, guildId: "Array", size: 2086900762484230000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 };
+    obj3[0] = selectedUser;
+    obj3[2] = tmp4(1297).AvatarSizes.XSMALL_20;
+    const items2 = [tmp2(tmp4(1297).Avatar, obj3), ];
+    const obj4 = { variant: "text-md/medium", style: null, children: null };
+    obj4[1] = tmp.userPillText;
+    obj4[2] = importDefault(4028).getName(selectedUser);
+    items2[1] = tmp2(tmp4(4185).Text, obj4);
+    obj2[1] = items2;
+    let tmp2Result = tmp6(tmp3, obj2);
+    const obj10 = importDefault(4028);
+  } else {
+    const obj5 = { variant: "text-sm/semibold", color: "text-subtle", style: null, children: null };
+    obj5[2] = tmp.userPillText;
+    const intl4 = tmp4(1236).intl;
+    obj5[3] = intl4.string(tmp4(1236).t.R0vK0N);
+    tmp2Result = tmp2(tmp4(4185).Text, obj5);
   }
-  items3[1] = tmp22;
-  obj.children = items3;
-  obj.children = callback2(closure_4, obj);
-  obj.children = callback(require(6719) /* useInputStyles */.InputFieldContainer, obj);
-  return callback(closure_4, obj);
+  items1[1] = tmp2Result;
+  obj[4] = items1;
+  const items3 = [closure_6(closure_3, obj), ];
+  tmp2Result = null;
+  if (null != selectedUser) {
+    const obj6 = { style: null, onPress: null, accessibilityRole: "button", accessibilityLabel: null, children: null };
+    obj6[0] = tmp.clearButton;
+    obj6[1] = function onPress() {
+      return callback(undefined);
+    };
+    const intl5 = tmp4(1236).intl;
+    const obj7 = { text: null };
+    obj7[0] = importDefault(4028).getName(selectedUser);
+    obj6[3] = intl5.formatToPlainString(tmp4(1236).t["0Vb9FQ"], obj7);
+    obj6[4] = tmp2(tmp4(6736).CircleXIcon, { size: "xs" });
+    tmp2Result = tmp2(tmp7, obj6);
+    const obj13 = importDefault(4028);
+  }
+  items3[1] = tmp2Result;
+  obj[1] = items3;
+  obj[1] = closure_5(require(6740) /* useInputStyles */.InputFieldContainer, { children: closure_6(closure_4, obj) });
+  return closure_5(closure_4, obj);
 };

@@ -1,104 +1,12 @@
-// Module ID: 4603
-// Function ID: 40181
-// Name: _createForOfIteratorHelperLoose
-// Dependencies: [57, 1362, 4604, 4598, 1327, 4149, 1443, 4605, 3864, 22, 2]
+// Module ID: 4625
+// Function ID: 4626
+// Name: validateContentTypes
+// Dependencies: [32, 1386, 4626, 4620, 1351, 4173, 1467, 4627, 3888, 12, 2]
 
-// Module 4603 (_createForOfIteratorHelperLoose)
+// Module 4625 (validateContentTypes)
 import _slicedToArray from "_slicedToArray";
-import importDefaultResult from "priv";
 
 const require = arg1;
-function _createForOfIteratorHelperLoose(iterable) {
-  let closure_0 = iterable;
-  iterable = "undefined" !== typeof Symbol;
-  if (iterable) {
-    const _Symbol = Symbol;
-    iterable = iterable[Symbol.iterator];
-  }
-  if (!iterable) {
-    iterable = iterable[Symbol.iterator];
-  }
-  if (iterable) {
-    const iter = iterable.call(iterable);
-    const next = iter.next;
-    return next.bind(iter);
-  } else {
-    const _Array = Array;
-    let tmp = iterable;
-    if (!Array.isArray(iterable)) {
-      let tmp2;
-      if (iterable) {
-        if ("string" === typeof iterable) {
-          tmp2 = _arrayLikeToArray(iterable, undefined);
-        } else {
-          const toString = {}.toString;
-          const substr = toString.call(iterable).slice(8, -1);
-          let name = substr;
-          if (tmp3) {
-            name = iterable.constructor.name;
-          }
-          if ("Map" !== name) {
-            if ("Set" !== name) {
-              if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(iterable, undefined);
-              } else {
-                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
-              }
-            }
-            tmp2 = arr;
-          }
-          const _Array2 = Array;
-          arr = Array.from(iterable);
-          const callResult = toString.call(iterable);
-          tmp3 = "Object" === substr && iterable.constructor;
-        }
-      }
-      tmp = tmp2;
-      if (!tmp2) {
-        const _TypeError = TypeError;
-        const typeError = new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
-        throw typeError;
-      }
-    }
-    if (tmp) {
-      closure_0 = tmp;
-    }
-    let c1 = 0;
-    return () => {
-      if (closure_1 >= length.length) {
-        let obj = { done: true };
-      } else {
-        obj = { done: false };
-        closure_1 = tmp3 + 1;
-        obj.value = length[+closure_1];
-      }
-      return obj;
-    };
-  }
-}
-function _arrayLikeToArray(arg0, arg1) {
-  let length;
-  if (tmp) {
-    length = arg0.length;
-  }
-  const ArrayResult = Array(length);
-  for (let num = 0; num < length; num = num + 1) {
-    ArrayResult[num] = arg0[num];
-  }
-  return ArrayResult;
-}
-function sanitizeWithCache(outer1_0) {
-  const value = importDefaultResult.get(outer1_0);
-  if (null != value) {
-    return value;
-  } else {
-    let obj = require(4604) /* makeMatcher */;
-    const sanitizeWhitespaceResult = obj.sanitizeWhitespace(outer1_0);
-    obj = { whitespaceSanitized: sanitizeWhitespaceResult, fullySanitized: require(4604) /* makeMatcher */.sanitizeUnicodeConfusables(sanitizeWhitespaceResult) };
-    const result = importDefaultResult.set(outer1_0, obj);
-    return obj;
-  }
-}
 function validateContentTypes(content, items, items2) {
   items = items2;
   if (items2 === undefined) {
@@ -109,333 +17,374 @@ function validateContentTypes(content, items, items2) {
     const items1 = [content];
     tmp = items1;
   }
-  const tmp2 = _createForOfIteratorHelperLoose(tmp);
-  let iter = tmp2();
-  if (!iter.done) {
-    const value = iter.value;
-    while (undefined !== value) {
-      if (!items.includes(value.type)) {
-        break;
-      } else {
-        let tmp3 = require;
-        let tmp4 = dependencyMap;
-        if (value.type === require(4598) /* AST_KEY */.AST_KEY.INLINE_CODE) {
+  const iter = tmp[Symbol.iterator]();
+  const nextResult = iter.next();
+  while (iter !== undefined) {
+    let tmp3 = nextResult;
+    if (undefined !== nextResult) {
+      let tmp20 = nextResult;
+      if (items.includes(tmp3.type)) {
+        let tmp4 = nextResult;
+        let tmp5 = require;
+        let tmp6 = dependencyMap;
+        if (tmp3.type === require(4620) /* AST_KEY */.AST_KEY.INLINE_CODE) {
           items2 = [];
-          let tmp5 = items2;
-          let tmp6 = items;
-          let num = 0;
           let tmp7 = items2;
           let tmp8 = items;
+          let num = 0;
+          let tmp9 = items2;
+          let tmp10 = items;
           let arraySpreadResult = HermesBuiltin.arraySpread(items, HermesBuiltin.arraySpread(items, 0));
-          let tmp10 = validateContentTypes;
-          if (null == validateContentTypes(value.validationChildContent, items2)) {
+          let tmp12 = validateContentTypes;
+          let tmp13 = nextResult;
+          if (null == validateContentTypes(tmp3.validationChildContent, items2)) {
+            let tmp18 = iter;
+            iter.return();
             return null;
           }
         }
         let _Array = Array;
-        if (Array.isArray(value.content)) {
-          let tmp11 = validateContentTypes;
-          if (null == validateContentTypes(value.content, items)) {
+        let tmp14 = nextResult;
+        if (Array.isArray(tmp3.content)) {
+          let tmp15 = validateContentTypes;
+          let tmp16 = nextResult;
+          if (null == validateContentTypes(tmp3.content, items)) {
+            let tmp17 = iter;
+            iter.return();
             return null;
           }
         }
-        let iter2 = tmp2();
-        iter = iter2;
+        continue;
       }
     }
+    let tmp19 = iter;
+    iter.return();
     return null;
   }
   return tmp;
 }
 function getRawText(content) {
-  const tmp = _createForOfIteratorHelperLoose(content);
-  const iter = tmp();
-  let iter2 = iter;
   let str = "";
-  let str2 = "";
-  if (!iter.done) {
-    while (true) {
-      let value = iter2.value;
-      let type = value.type;
-      let tmp2 = require;
-      let tmp3 = dependencyMap;
-      if (require(4598) /* AST_KEY */.AST_KEY.TEXT !== type) {
-        let tmp13 = require;
-        let tmp14 = dependencyMap;
-        if (require(4598) /* AST_KEY */.AST_KEY.INLINE_CODE !== type) {
-          let tmp15 = require;
-          let tmp16 = dependencyMap;
-          if (require(4598) /* AST_KEY */.AST_KEY.CUSTOM_EMOJI === type) {
-            let text = `${value.name}`;
-          } else {
-            let tmp17 = require;
-            let tmp18 = dependencyMap;
-            if (require(4598) /* AST_KEY */.AST_KEY.EMOJI === type) {
-              text = `${value.surrogate}`;
-            } else {
-              let tmp19 = require;
-              let tmp20 = dependencyMap;
-              if (require(4598) /* AST_KEY */.AST_KEY.LINE_BREAK === type) {
-                text = `
+  const iter = content[Symbol.iterator]();
+  const nextResult = iter.next();
+  for (; iter !== undefined; str = str + tmp2.content) {
+    tmp2 = nextResult;
+    let type = nextResult.type;
+    let tmp3 = require;
+    let tmp4 = dependencyMap;
+    if (require(4620) /* AST_KEY */.AST_KEY.TEXT !== type) {
+      if (tmp3(4620).AST_KEY.INLINE_CODE !== type) {
+        if (tmp3(4620).AST_KEY.CUSTOM_EMOJI === type) {
+          let tmp16 = str;
+          let tmp17 = nextResult;
+          str = `${tmp2.name}`;
+        } else if (tmp3(4620).AST_KEY.EMOJI === type) {
+          let tmp14 = str;
+          let tmp15 = nextResult;
+          str = `${tmp2.name}${tmp2.surrogate}`;
+        } else if (tmp3(4620).AST_KEY.LINE_BREAK === type) {
+          let tmp13 = str;
+          str = `${tmp2.name}${tmp2.surrogate}
   `;
-              } else {
-                let tmp21 = require;
-                let tmp22 = dependencyMap;
-                if (require(4598) /* AST_KEY */.AST_KEY.STRONG !== type) {
-                  let tmp23 = require;
-                  let tmp24 = dependencyMap;
-                  if (require(4598) /* AST_KEY */.AST_KEY.ITALICS !== type) {
-                    let tmp25 = require;
-                    let tmp26 = dependencyMap;
-                    if (require(4598) /* AST_KEY */.AST_KEY.UNDERLINE !== type) {
-                      let tmp27 = require;
-                      let tmp28 = dependencyMap;
-                      if (require(4598) /* AST_KEY */.AST_KEY.STRIKETHROUGH !== type) {
-                        let tmp29 = require;
-                        let tmp30 = dependencyMap;
-                        if (require(4598) /* AST_KEY */.AST_KEY.SPOILER !== type) {
-                          let tmp31 = require;
-                          let tmp32 = dependencyMap;
-                          if (require(4598) /* AST_KEY */.AST_KEY.TIMESTAMP === type) {
-                            text = `<timestamp>`;
-                          } else {
-                            let tmp33 = require;
-                            let tmp34 = dependencyMap;
-                            if (require(4598) /* AST_KEY */.AST_KEY.BLOCK_QUOTE !== type) {
-                              let tmp35 = require;
-                              let tmp36 = dependencyMap;
-                              if (require(4598) /* AST_KEY */.AST_KEY.LIST !== type) {
-                                let tmp4 = require;
-                                let tmp5 = dependencyMap;
-                                if (require(4598) /* AST_KEY */.AST_KEY.HEADING !== type) {
-                                  let tmp6 = require;
-                                  let tmp7 = dependencyMap;
-                                  if (require(4598) /* AST_KEY */.AST_KEY.SUBTEXT !== type) {
-                                    let tmp8 = require;
-                                    let tmp9 = dependencyMap;
-                                    let obj = require(1327) /* isDiscordFrontendDevelopment */;
-                                    let assertNeverResult = obj.assertNever(value.type);
-                                    text = str;
-                                  }
-                                }
-                              }
+        } else {
+          if (tmp3(4620).AST_KEY.STRONG !== type) {
+            if (tmp3(4620).AST_KEY.ITALICS !== type) {
+              if (tmp3(4620).AST_KEY.UNDERLINE !== type) {
+                if (tmp3(4620).AST_KEY.STRIKETHROUGH !== type) {
+                  if (tmp3(4620).AST_KEY.SPOILER !== type) {
+                    if (tmp3(4620).AST_KEY.TIMESTAMP === type) {
+                      let tmp9 = str;
+                      str = `${tmp2.name}${tmp2.surrogate}
+  <timestamp>`;
+                    } else {
+                      if (tmp3(4620).AST_KEY.BLOCK_QUOTE !== type) {
+                        if (tmp3(4620).AST_KEY.LIST !== type) {
+                          if (tmp3(4620).AST_KEY.HEADING !== type) {
+                            if (tmp3(4620).AST_KEY.SUBTEXT !== type) {
+                              let tmp3Result = tmp3(1351);
+                              let tmp5 = nextResult;
+                              let assertNeverResult = tmp3Result.assertNever(tmp2.type);
                             }
-                            let _HermesInternal = HermesInternal;
-                            text = str + "<" + value.type + "Content>";
                           }
                         }
                       }
+                      let tmp7 = str;
+                      let tmp8 = nextResult;
+                      let _HermesInternal = HermesInternal;
+                      str = str + "<" + tmp2.type + "Content>";
                     }
                   }
                 }
-                let tmp12 = getRawText;
-                text = str + getRawText(value.content);
               }
             }
           }
-        }
-        let iter3 = tmp();
-        str = text;
-        iter2 = iter3;
-        str2 = text;
-        if (iter3.done) {
-          break;
+          let tmp10 = str;
+          let tmp11 = getRawText;
+          let tmp12 = nextResult;
+          str = str + getRawText(tmp2.content);
         }
       }
-      text = str + value.content;
+      continue;
     }
+    let tmp18 = str;
+    let tmp19 = nextResult;
   }
-  return str2;
+  return str;
 }
-function isSuspiciousUrl(outer1_0) {
-  if (obj.isSuspiciousCodedLink(outer1_0)) {
-    return true;
-  } else if (sanitizeWithCache(outer1_0).whitespaceSanitized !== outer1_0) {
+function isSuspiciousUrl(url) {
+  let obj = require(4173) /* getPathsFromURL */;
+  if (obj.isSuspiciousCodedLink(url)) {
     return true;
   } else {
-    const toURLSafeResult = importDefault(1443).toURLSafe(outer1_0);
-    if (null == toURLSafeResult) {
+    let value = tmp2.get(url);
+    if (null == value) {
+      let tmpResult = tmp(4626);
+      const sanitizeWhitespaceResult = tmpResult.sanitizeWhitespace(url);
+      obj = { whitespaceSanitized: null, fullySanitized: null };
+      obj[0] = sanitizeWhitespaceResult;
+      tmpResult = tmp(4626);
+      obj[1] = tmpResult.sanitizeUnicodeConfusables(sanitizeWhitespaceResult);
+      const result = obj2.set(url, obj);
+      value = obj;
+    }
+    if (value.whitespaceSanitized !== url) {
       return true;
     } else {
-      if ("http:" !== toURLSafeResult.protocol) {
-        if ("https:" !== toURLSafeResult.protocol) {
-          return false;
+      const toURLSafeResult = importDefault(1467).toURLSafe(url);
+      if (null == toURLSafeResult) {
+        return true;
+      } else {
+        if ("http:" !== toURLSafeResult.protocol) {
+          if ("https:" !== toURLSafeResult.protocol) {
+            return false;
+          }
         }
-      }
-      const parts = outer1_0.split("/");
-      let tmp2 = parts.length < 3;
-      if (!tmp2) {
-        let tmp3 = "" !== parts[1];
-        if (!tmp3) {
-          tmp3 = importDefault(1443).safeDecodeURIComponent(parts[2]) !== parts[2];
-          const obj2 = importDefault(1443);
+        const parts = url.split("/");
+        let tmp7 = parts.length < 3;
+        if (!tmp7) {
+          let tmp8 = "" !== parts[1];
+          if (!tmp8) {
+            tmp8 = tmp9(1467).safeDecodeURIComponent(parts[2]) !== parts[2];
+            const tmp9Result = tmp9(1467);
+          }
+          tmp7 = tmp8;
         }
-        tmp2 = tmp3;
+        return tmp7;
       }
-      return tmp2;
+      const obj7 = importDefault(1467);
+      tmp9 = importDefault;
     }
-    const obj3 = importDefault(1443);
+    obj2 = tmp2;
   }
-  obj = require(4149) /* _createForOfIteratorHelperLoose */;
 }
-function punycodeLink(outer1_0) {
-  if (isSuspiciousUrl(outer1_0)) {
-    const _Error3 = Error;
-    const _JSON = JSON;
-    const error = new Error("Rejected due to suspicious characters in URL: " + JSON.stringify(outer1_0));
-    throw error;
-  } else {
-    const _URL = URL;
-    const uRL = new URL(outer1_0);
-    const protocol = uRL.protocol;
-    let str2 = "";
-    if (null != protocol) {
-      str2 = protocol;
-    }
-    if (items.includes(str2.toLowerCase())) {
-      if ("http:" === tmp9) {
-        const _Error2 = Error;
-        const error1 = new Error("no hostname");
-        throw error1;
-      }
-      let obj = importDefault(4605);
-      tmp6.hostname = obj.toASCII(tmp6.hostname.toLowerCase());
-      tmp6.username = "";
-      tmp6.password = "";
-      obj = { target: require(4604) /* makeMatcher */.safelyMakeUrlHumanReadable(tmp6) };
-      const obj2 = require(4604) /* makeMatcher */;
-      const str7 = tmp6.hostname;
-      obj.displayTarget = require(4604) /* makeMatcher */.safelyMakeUrlHumanReadable(tmp6);
-      return obj;
+function punycodeLink(url) {
+  try {
+    if (isSuspiciousUrl(url)) {
+      const _Error3 = Error;
+      const _JSON = JSON;
+      const error = new Error("Rejected due to suspicious characters in URL: " + JSON.stringify(url));
+      throw error;
     } else {
-      const _Error = Error;
-      const error2 = new Error("Provided protocol is not allowed: " + tmp9);
-      throw error2;
+      const _URL = URL;
+      const uRL = new URL(url);
+      let str = uRL.protocol;
+      if (str == null) {
+        str = "";
+      }
+      if (items.includes(str.toLowerCase())) {
+        if ("http:" === tmp11) {
+          const _Error2 = Error;
+          const error1 = new Error("no hostname");
+          throw error1;
+        }
+        let obj = importDefault(4627);
+        tmp9.hostname = obj.toASCII(tmp9.hostname.toLowerCase());
+        tmp9.username = "";
+        tmp9.password = "";
+        obj = { target: null, displayTarget: null };
+        obj[0] = require(4626) /* safelyPartiallyDecodeURIComponent */.safelyMakeUrlHumanReadable(tmp9);
+        const obj2 = require(4626) /* safelyPartiallyDecodeURIComponent */;
+        const str6 = tmp9.hostname;
+        obj[1] = require(4626) /* safelyPartiallyDecodeURIComponent */.safelyMakeUrlHumanReadable(tmp9);
+        return obj;
+      } else {
+        const _Error = Error;
+        const error2 = new Error("Provided protocol is not allowed: " + tmp11);
+        throw error2;
+      }
     }
+  } catch (err) {
+    return null;
   }
 }
-let obj = { max: 50 };
-importDefaultResult = new importDefaultResult(obj);
+let c4 = new require("priv")({ max: 50 });
 let items = ["http:", "https:", "discord:", "tel:", "sms:", "mailto:"];
 let items1 = [require("AST_KEY").AST_KEY.TEXT, require("AST_KEY").AST_KEY.UNDERLINE, require("AST_KEY").AST_KEY.STRONG, require("AST_KEY").AST_KEY.ITALICS, require("AST_KEY").AST_KEY.STRIKETHROUGH, require("AST_KEY").AST_KEY.INLINE_CODE, require("AST_KEY").AST_KEY.SPOILER, require("AST_KEY").AST_KEY.LINE_BREAK, require("AST_KEY").AST_KEY.TIMESTAMP];
 let items2 = [...items1, require("AST_KEY").AST_KEY.EMOJI, require("AST_KEY").AST_KEY.CUSTOM_EMOJI];
 const items3 = [require("AST_KEY").AST_KEY.LIST, require("AST_KEY").AST_KEY.HEADING, require("AST_KEY").AST_KEY.BLOCK_QUOTE, require("AST_KEY").AST_KEY.SUBTEXT];
 const items4 = [require("AST_KEY").AST_KEY.TEXT];
 const items5 = [require("AST_KEY").AST_KEY.UNDERLINE, require("AST_KEY").AST_KEY.STRONG, require("AST_KEY").AST_KEY.ITALICS, require("AST_KEY").AST_KEY.STRIKETHROUGH, require("AST_KEY").AST_KEY.INLINE_CODE, require("AST_KEY").AST_KEY.SPOILER, require("AST_KEY").AST_KEY.LINE_BREAK, require("AST_KEY").AST_KEY.TIMESTAMP, require("AST_KEY").AST_KEY.EMOJI, require("AST_KEY").AST_KEY.CUSTOM_EMOJI, require("AST_KEY").AST_KEY.LIST, require("AST_KEY").AST_KEY.HEADING, require("AST_KEY").AST_KEY.BLOCK_QUOTE, require("AST_KEY").AST_KEY.SUBTEXT];
-obj = {};
+let obj = {};
 let merged = Object.assign(require("t").defaultRules.link);
-obj["match"] = function match(arr, allowLinks) {
+obj.match = function match(arr, allowLinks) {
   if (allowLinks.allowLinks) {
     if (-1 === arr.indexOf("](")) {
       return null;
     } else {
+      let num3 = 0;
       let num4 = 0;
       let num5 = 0;
-      let num3 = 0;
       if (0 < arr.length) {
         while (true) {
-          let tmp2 = arr[num3];
-          let tmp3 = num4;
+          let tmp3 = arr[num3];
+          let tmp4 = num3;
+          let tmp5 = num4;
+          let tmp6 = num5;
           let num2 = 0;
-          if (")" !== tmp2) {
-            if ("[" === tmp2) {
-              let sum = num4 + 1;
-              if (sum > 10) {
+          let tmp7 = num5;
+          if (")" !== tmp3) {
+            if ("[" === tmp3) {
+              let sum = num5 + 1;
+              if (10 < sum) {
                 break;
               }
-            } else if ("]" === tmp2) {
-              sum = num4;
-              if (num4 > 0) {
-                sum = num4 - 1;
+            } else if ("]" === tmp3) {
+              sum = num5;
+              if (0 < num5) {
+                sum = num5 - 1;
               }
             } else {
-              sum = num4;
-              tmp3 = num4;
-              num2 = num5;
+              sum = num5;
+              num2 = num4;
+              tmp7 = num5;
             }
-            num2 = num5 + 1;
-            tmp3 = sum;
-            if (num2 > 200) {
-              let tmp8 = null;
+            num2 = num4 + 1;
+            tmp7 = sum;
+            if (200 < num2) {
+              let tmp12 = null;
               return null;
             }
           }
           num3 = num3 + 1;
-          num4 = tmp3;
-          num5 = num2;
+          num4 = num2;
+          num5 = tmp7;
         }
         return null;
       }
-      return importDefault(3864).defaultRules.link.match(arr, allowLinks, arg2);
+      return importDefault(3888).defaultRules.link.match(arr, allowLinks, arg2);
     }
   } else {
     return null;
   }
 };
-obj["parse"] = function parse(arg0, rules, allowEmojiLinks) {
-  function renderIndividualParts() {
-    return { type: callback(outer1_2[3]).AST_KEY.TEXT, content: callback };
-  }
-  const tmp = callback(arg0, 4);
-  const _require = tmp[0];
-  if (isSuspiciousUrl(tmp[2])) {
-    return renderIndividualParts();
+obj.parse = function parse(arg0, rules, allowEmojiLinks) {
+  let tmp2;
+  let tmp3;
+  let tmp4;
+  let tmp5;
+  [tmp2, tmp3, tmp4, tmp5] = callback(arg0, 4);
+  if (isSuspiciousUrl(tmp4)) {
+    let obj = { type: null, content: null };
+    obj[0] = require(4620) /* AST_KEY */.AST_KEY.TEXT;
+    obj[1] = tmp2;
+    return obj;
   } else {
-    const tmp7 = sanitizeWithCache(tmp2);
-    let str = "";
-    if (null != tmp4) {
-      str = tmp4;
+    obj = tmp2;
+    let value = tmp2.get(tmp4);
+    if (null == value) {
+      let obj1 = require(4626) /* safelyPartiallyDecodeURIComponent */;
+      const sanitizeWhitespaceResult = obj1.sanitizeWhitespace(tmp4);
+      obj = { whitespaceSanitized: null, fullySanitized: null };
+      obj[0] = sanitizeWhitespaceResult;
+      let obj3 = require(4626) /* safelyPartiallyDecodeURIComponent */;
+      obj[1] = obj3.sanitizeUnicodeConfusables(sanitizeWhitespaceResult);
+      const result = obj.set(tmp4, obj);
+      value = obj;
     }
-    const tmp5Result = sanitizeWithCache(str);
-    const tmp5 = sanitizeWithCache;
-    const tmp6 = sanitizeWithCache(tmp3);
+    value = obj.get(tmp3);
+    if (null == value) {
+      let obj4 = require(4626) /* safelyPartiallyDecodeURIComponent */;
+      const sanitizeWhitespaceResult1 = obj4.sanitizeWhitespace(tmp3);
+      obj1 = { whitespaceSanitized: null, fullySanitized: null };
+      obj1[0] = sanitizeWhitespaceResult1;
+      let obj6 = require(4626) /* safelyPartiallyDecodeURIComponent */;
+      obj1[1] = obj6.sanitizeUnicodeConfusables(sanitizeWhitespaceResult1);
+      const result1 = obj.set(tmp3, obj1);
+      value = obj1;
+    }
+    let str = "";
+    if (null != tmp5) {
+      str = tmp5;
+    }
+    let value1 = obj.get(str);
+    if (null == value1) {
+      let obj7 = require(4626) /* safelyPartiallyDecodeURIComponent */;
+      const sanitizeWhitespaceResult2 = obj7.sanitizeWhitespace(str);
+      const obj2 = { whitespaceSanitized: null, fullySanitized: null };
+      obj2[0] = sanitizeWhitespaceResult2;
+      obj2[1] = require(4626) /* safelyPartiallyDecodeURIComponent */.sanitizeUnicodeConfusables(sanitizeWhitespaceResult2);
+      const result2 = obj.set(str, obj2);
+      value1 = obj2;
+      const obj10 = require(4626) /* safelyPartiallyDecodeURIComponent */;
+    }
     const trimmed = str3.trim();
     if (0 !== str2.trim().length) {
       if (0 !== trimmed.length) {
-        const tmp38 = punycodeLink(importDefault(3864).unescapeUrl(tmp3));
-        let tmp12 = importDefault(4149)(tmp2).length > 0;
-        if (!tmp12) {
-          tmp12 = importDefault(4149)(tmp4).length > 0;
-        }
-        if (null != tmp38) {
-          if (!tmp12) {
-            let obj = {};
+        const tmp53 = punycodeLink(importDefault(3888).unescapeUrl(tmp4));
+        const obj20 = importDefault(3888);
+        if (null != tmp53) {
+          if (!tmp23) {
+            obj3 = {};
             const merged = Object.assign(allowEmojiLinks);
-            obj["allowEscape"] = false;
-            obj["parseInlineCodeChildContent"] = true;
-            const tmp16 = allowEmojiLinks.allowEmojiLinks ? items2 : items1;
+            obj3.allowEscape = false;
+            obj3.parseInlineCodeChildContent = true;
+            const tmp28 = allowEmojiLinks.allowEmojiLinks ? items2 : items1;
             const items = [];
-            HermesBuiltin.arraySpread(items3, HermesBuiltin.arraySpread(tmp16, 0));
+            HermesBuiltin.arraySpread(items3, HermesBuiltin.arraySpread(tmp28, 0));
             items1 = [];
             HermesBuiltin.arraySpread(items5, HermesBuiltin.arraySpread(items4, 0));
-            items2 = [_require(4598).AST_KEY.EMOJI];
-            const tmp31 = validateContentTypes(rules(str3, obj), items, items2);
-            if (null != tmp31) {
-              if (null != validateContentTypes(rules(tmp5Result.fullySanitized, obj), items1)) {
-                if (0 === str6.trim().length) {
-                  return renderIndividualParts();
+            items2 = [require(4620) /* AST_KEY */.AST_KEY.EMOJI];
+            const tmp43 = validateContentTypes(rules(str3, obj3), items, items2);
+            if (null != tmp43) {
+              if (null != validateContentTypes(rules(value1.fullySanitized, obj3), items1)) {
+                if (0 === str4.trim().length) {
+                  obj4 = { type: null, content: null };
+                  obj4[0] = tmp42(4620).AST_KEY.TEXT;
+                  obj4[1] = tmp2;
+                  return obj4;
                 } else {
-                  const obj2 = importDefault(22);
-                  const pickResult = importDefault(22).pick(rules.rules, tmp16);
-                  obj = {};
-                  obj.content = importDefault(3864).parserFor(pickResult)(tmp7.whitespaceSanitized, obj);
-                  obj.target = tmp38.target;
-                  obj.title = tmp5Result.whitespaceSanitized;
-                  return obj;
+                  let tmp51Result = tmp51(12);
+                  tmp51Result = tmp51(3888);
+                  const obj5 = { content: null, target: null, title: null };
+                  obj5[0] = tmp51Result.parserFor(tmp51Result.pick(rules.rules, tmp28))(value.whitespaceSanitized, obj3);
+                  obj5[1] = tmp53.target;
+                  obj5[2] = value1.whitespaceSanitized;
+                  return obj5;
                 }
-                str6 = getRawText(tmp31);
+                str4 = getRawText(tmp43);
               }
             }
-            return renderIndividualParts();
+            obj6 = { type: null, content: null };
+            obj6[0] = require(4620) /* AST_KEY */.AST_KEY.TEXT;
+            obj6[1] = tmp2;
+            return obj6;
           }
         }
-        return renderIndividualParts();
+        obj7 = { type: null, content: null };
+        obj7[0] = require(4620) /* AST_KEY */.AST_KEY.TEXT;
+        obj7[1] = tmp2;
+        return obj7;
       }
     }
-    return renderIndividualParts();
+    const obj8 = { type: null, content: null };
+    obj8[0] = require(4620) /* AST_KEY */.AST_KEY.TEXT;
+    obj8[1] = tmp2;
+    return obj8;
   }
+  const tmp = callback(arg0, 4);
 };
-let result = require("makeMatcher").fileFinishedImporting("modules/markup/MarkupLinkRule.tsx");
+let tmp2 = new require("priv")({ max: 50 });
+let result = require("safelyPartiallyDecodeURIComponent").fileFinishedImporting("modules/markup/MarkupLinkRule.tsx");
 
 export default obj;
 export const ALLOWED_PROTOCOLS = items;

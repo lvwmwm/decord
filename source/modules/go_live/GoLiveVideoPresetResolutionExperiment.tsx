@@ -1,20 +1,19 @@
-// Module ID: 10724
-// Function ID: 83335
-// Dependencies: [4220, 1325, 2]
+// Module ID: 10748
+// Function ID: 10749
+// Dependencies: [4244, 1349, 2]
 
-// Module 10724
-import { ApplicationStreamResolutions } from "makeButton";
+// Module 10748
+import { ApplicationStreamResolutions } from "RESOLUTION_720";
 import importDefaultResult from "getUnitId";
 
 let obj = { videoPresetResolutionMax: ApplicationStreamResolutions.RESOLUTION_1440 };
-obj = { name: "2026-02-go-live-video-preset-resolution", kind: "user" };
-obj.defaultConfig = obj;
-obj = {};
+obj = { name: "2026-02-go-live-video-preset-resolution", kind: "user", defaultConfig: obj, variations: null };
+obj = { 1: null };
 const obj1 = {};
 const merged = Object.assign(obj);
-obj1["videoPresetResolutionMax"] = ApplicationStreamResolutions.RESOLUTION_1080;
+obj1.videoPresetResolutionMax = ApplicationStreamResolutions.RESOLUTION_1080;
 obj[1] = obj1;
-obj.variations = obj;
+obj[3] = obj;
 const importDefaultResultResult = require("getUnitId")(obj);
 const result = require("set").fileFinishedImporting("modules/go_live/GoLiveVideoPresetResolutionExperiment.tsx");
 

@@ -1,28 +1,27 @@
-// Module ID: 9097
-// Function ID: 71315
-// Name: MIN_HEADER_HEIGHT
-// Dependencies: [27, 9095, 33, 4165, 689, 2]
+// Module ID: 9121
+// Function ID: 9122
+// Name: PressableNavigatorButtonWrapper
+// Dependencies: [17, 9119, 21, 4189, 712, 2]
 // Exports: default
 
-// Module 9097 (MIN_HEADER_HEIGHT)
+// Module 9121 (PressableNavigatorButtonWrapper)
 import { View } from "get ActivityIndicator";
 import { MIN_HEADER_HEIGHT } from "MIN_HEADER_HEIGHT";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let obj = {};
-obj = { flexShrink: 0, flexDirection: "row", alignItems: "center", padding: require("_createForOfIteratorHelperLoose").space.PX_8, height: MIN_HEADER_HEIGHT, width: MIN_HEADER_HEIGHT };
-obj.buttonWrapper = obj;
-obj.buttonWrapperModal = { marginLeft: -8 };
-let closure_2 = _createForOfIteratorHelperLoose.createStyles(obj);
+let obj = { buttonWrapper: null, buttonWrapperModal: null };
+obj = { flexShrink: 0, flexDirection: "row", alignItems: "center", padding: require("Themes").space.PX_8, height: MIN_HEADER_HEIGHT, width: MIN_HEADER_HEIGHT };
+obj[0] = obj;
+obj[1] = { marginLeft: -8 };
+let closure_2 = createCacheKey.createStyles(obj);
 const result = require("jsxProd").fileFinishedImporting("modules/main_tabs_v2/native/shared_components/navigator/PressableNavigatorButtonWrapper.tsx");
 
-export default function PressableNavigatorButtonWrapper(isModal) {
-  let flag = isModal.isModal;
+export default function PressableNavigatorButtonWrapper(children) {
+  let flag = children.isModal;
   if (flag === undefined) {
     flag = false;
   }
   const tmp = callback();
-  const obj = { collapsable: false, style: flag ? tmp.buttonWrapperModal : tmp.buttonWrapper, importantForAccessibility: "yes", children: isModal.children };
   return <View collapsable={false} style={flag ? tmp.buttonWrapperModal : tmp.buttonWrapper} importantForAccessibility="yes">{arg0.children}</View>;
 };

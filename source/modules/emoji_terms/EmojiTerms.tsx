@@ -1,16 +1,26 @@
-// Module ID: 5034
-// Function ID: 43383
-// Name: importDefaultResult2
-// Dependencies: [7, 6, 5035, 5036, 2]
+// Module ID: 5056
+// Function ID: 5057
+// Dependencies: [5057, 5058, 2]
 
-// Module 5034 (importDefaultResult2)
-import "_defineProperties";
-import "_classCallCheck";
-import importDefaultResult2 from "LazyPromiseInitializer";
-
+// Module 5056
 const require = arg1;
-importDefaultResult2 = new importDefaultResult2(function loadEmoji(arg0) {
-  const tmp = require(5036) /* emojiTermsImporter */.emojiTermsImporter[arg0];
+const obj = {
+  setEmojiLocale(locale) {
+    tmp2.setParams(locale);
+  },
+  getTermsForEmoji(name) {
+    const value = tmp2.get();
+    if (undefined !== value) {
+      let items = value[name];
+      tmp2 = name;
+    } else {
+      items = [];
+    }
+    return items;
+  }
+};
+let tmp2 = new require("setParams")(function loadEmoji(arg0) {
+  const tmp = require(5058) /* emojiTermsImporter */.emojiTermsImporter[arg0];
   if (undefined !== tmp) {
     let nextPromise = tmp().then((arg0) => arg0.default);
     const tmpResult = tmp();
@@ -19,19 +29,6 @@ importDefaultResult2 = new importDefaultResult2(function loadEmoji(arg0) {
   }
   return nextPromise;
 });
-const result = require("LazyPromiseInitializer").fileFinishedImporting("modules/emoji_terms/EmojiTerms.tsx");
+const result = require("set").fileFinishedImporting("modules/emoji_terms/EmojiTerms.tsx");
 
-export default {
-  setEmojiLocale(locale) {
-    importDefaultResult2.setParams(locale);
-  },
-  getTermsForEmoji(name) {
-    const value = importDefaultResult2.get();
-    if (undefined !== value) {
-      let items = value[name];
-    } else {
-      items = [];
-    }
-    return items;
-  }
-};
+export default obj;

@@ -1,11 +1,10 @@
 // Module ID: 3202
-// Function ID: 25727
+// Function ID: 3203
 // Name: registerAsset
-// Dependencies: [1217]
+// Dependencies: [1241]
 
 // Module 3202 (registerAsset)
 import registerAsset from "registerAsset";
 
-const obj = { __packager_asset: true, httpServerLocation: "/assets/modules/spatial_audio", scales: [1], hash: "3d1a75c972ac0602a167f63fd159ff4e", name: "SpatialAudio.compiled.messages", type: "jsona" };
 
-export default registerAsset.registerAsset(obj);
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9jb252ZXJzYXRpb25z", scales: [1], hash: "a5a675e9606df3e628e12655523d9ab4", name: "fi.messages.a5a675e9606df3e628e12655523d9ab4.compiled.messages", type: "jsona" });

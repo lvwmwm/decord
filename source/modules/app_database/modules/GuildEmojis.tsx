@@ -1,260 +1,206 @@
-// Module ID: 5032
-// Function ID: 43350
-// Name: _createForOfIteratorHelperLoose
-// Dependencies: [5, 6, 7, 3, 1883, 2]
+// Module ID: 5054
+// Function ID: 5055
+// Name: getAsync
+// Dependencies: [5, 3, 1907, 2]
 
-// Module 5032 (_createForOfIteratorHelperLoose)
-import set from "set";
-import _classCallCheck from "_classCallCheck";
-import _defineProperties from "_defineProperties";
-import importDefaultResult from "timestamp";
+// Module 5054 (getAsync)
+import asyncGeneratorStep from "asyncGeneratorStep";
+import set from "items";
 
-function _createForOfIteratorHelperLoose(iterable) {
-  let closure_0 = iterable;
-  iterable = "undefined" !== typeof Symbol;
-  if (iterable) {
-    const _Symbol = Symbol;
-    iterable = iterable[Symbol.iterator];
-  }
-  if (!iterable) {
-    iterable = iterable[Symbol.iterator];
-  }
-  if (iterable) {
-    const iter = iterable.call(iterable);
-    const next = iter.next;
-    return next.bind(iter);
-  } else {
-    const _Array = Array;
-    let tmp = iterable;
-    if (!Array.isArray(iterable)) {
-      let tmp2;
-      if (iterable) {
-        if ("string" === typeof iterable) {
-          tmp2 = _arrayLikeToArray(iterable, undefined);
-        } else {
-          const toString = {}.toString;
-          const substr = toString.call(iterable).slice(8, -1);
-          let name = substr;
-          if (tmp3) {
-            name = iterable.constructor.name;
+let c3 = new require("set")("GuildEmojis");
+class GuildEmojis {
+  constructor() {
+    obj = Object.create(new.target.prototype);
+    GuildEmojis = obj;
+    obj.actions = {
+      BACKGROUND_SYNC(arg0, arg1) {
+            return obj.handleBackgroundSync(arg0, arg1);
+          },
+      CONNECTION_OPEN(arg0, arg1) {
+            return obj.handleConnectionOpen(arg0, arg1);
+          },
+      GUILD_CREATE(arg0, arg1) {
+            return obj.handleGuildCreate(arg0, arg1);
+          },
+      GUILD_DELETE(arg0, arg1) {
+            return obj.handleGuildDelete(arg0, arg1);
+          },
+      GUILD_EMOJIS_UPDATE(arg0, arg1) {
+            return obj.handleGuildEmojisUpdate(arg0, arg1);
+          },
+      GUILD_UPDATE(arg0, arg1) {
+            return obj.handleGuildUpdate(arg0, arg1);
           }
-          if ("Map" !== name) {
-            if ("Set" !== name) {
-              if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(iterable, undefined);
-              } else {
-                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
-              }
-            }
-            tmp2 = arr;
-          }
-          const _Array2 = Array;
-          arr = Array.from(iterable);
-          const callResult = toString.call(iterable);
-          tmp3 = "Object" === substr && iterable.constructor;
-        }
-      }
-      tmp = tmp2;
-      if (!tmp2) {
-        const _TypeError = TypeError;
-        const typeError = new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
-        throw typeError;
-      }
-    }
-    if (tmp) {
-      closure_0 = tmp;
-    }
-    let c1 = 0;
-    return () => {
-      if (closure_1 >= length.length) {
-        let obj = { done: true };
-      } else {
-        obj = { done: false };
-        closure_1 = tmp3 + 1;
-        obj.value = length[+closure_1];
-      }
-      return obj;
     };
+    return obj;
   }
 }
-function _arrayLikeToArray(arg0, arg1) {
-  let length;
-  if (tmp) {
-    length = arg0.length;
-  }
-  const ArrayResult = Array(length);
-  for (let num = 0; num < length; num = num + 1) {
-    ArrayResult[num] = arg0[num];
-  }
-  return ArrayResult;
-}
-importDefaultResult = new importDefaultResult("GuildEmojis");
-let tmp4 = (() => {
-  class GuildEmojis {
-    constructor() {
-      self = this;
-      tmp = outer1_3(this, GuildEmojis);
-      this.actions = {
-        BACKGROUND_SYNC(arg0, arg1) {
-              return self.handleBackgroundSync(arg0, arg1);
-            },
-        CONNECTION_OPEN(arg0, arg1) {
-              return self.handleConnectionOpen(arg0, arg1);
-            },
-        GUILD_CREATE(arg0, arg1) {
-              return self.handleGuildCreate(arg0, arg1);
-            },
-        GUILD_DELETE(arg0, arg1) {
-              return self.handleGuildDelete(arg0, arg1);
-            },
-        GUILD_EMOJIS_UPDATE(arg0, arg1) {
-              return self.handleGuildEmojisUpdate(arg0, arg1);
-            },
-        GUILD_UPDATE(arg0, arg1) {
-              return self.handleGuildUpdate(arg0, arg1);
-            }
-      };
-      return;
-    }
-  }
-  let obj = { key: "getAsync" };
-  let closure_0 = callback(async (arg0) => {
-    const nowResult = performance.now();
-    const obj = callback(GuildEmojis[4]);
-    const arr = yield callback(GuildEmojis[4]).emojis(arg0).getMapEntries();
-    outer2_5.log("asynchronously loaded in " + performance.now() - nowResult + "ms (guilds: " + arr.length + ")");
-    return arr;
-  });
-  obj.value = function getAsync() {
-    return callback(...arguments);
-  };
-  let items = [obj, , , , , , , , , , , ];
-  obj = {
-    key: "handleConnectionOpen",
-    value(unavailableGuilds) {
-      let done;
-      const self = this;
-      const items = [...unavailableGuilds.unavailableGuilds];
-      const obj = callback(GuildEmojis[4]);
-      callback(GuildEmojis[4]).emojisTransaction(arg1).deleteAllExcept(items);
-      const tmp2 = outer1_6(unavailableGuilds.guilds);
-      let iter = tmp2();
-      if (!iter.done) {
-        do {
-          let handleOneGuildCreateResult = self.handleOneGuildCreate(iter.value, arg1);
-          let iter2 = tmp2();
-          iter = iter2;
-          done = iter2.done;
-        } while (!done);
-      }
-    }
-  };
-  items[1] = obj;
-  obj = {
-    key: "handleGuildCreate",
-    value(guild) {
-      this.handleOneGuildCreate(guild.guild, arg1);
-    }
-  };
-  items[2] = obj;
-  items[3] = {
-    key: "handleGuildUpdate",
-    value(guild) {
-      const replaced = this.replace(guild.guild.id, guild.guild.emojis, arg1);
-    }
-  };
-  items[4] = {
-    key: "handleGuildDelete",
-    value(guild) {
-      this.delete(guild.guild.id, arg1);
-    }
-  };
-  items[5] = {
-    key: "handleGuildEmojisUpdate",
-    value(guildId) {
-      const replaced = this.replace(guildId.guildId, guildId.emojis, arg1);
-    }
-  };
-  items[6] = {
-    key: "handleBackgroundSync",
-    value(promisesForBackgroundSyncToWaitOn) {
-      const self = this;
-      let closure_1 = arg1;
-      const prop = promisesForBackgroundSyncToWaitOn.promisesForBackgroundSyncToWaitOn;
-      const emojis = promisesForBackgroundSyncToWaitOn.emojis;
-      prop.push(Promise.all(emojis.map((dataMode) => {
-        if ("unavailable" === dataMode.dataMode) {
-          return Promise.resolve();
-        } else if ("full" === dataMode.dataMode) {
-          const _HermesInternal2 = HermesInternal;
-          outer2_5.verbose("Replacing " + dataMode.entities.length + " emojis for " + dataMode.guildId);
-          const replaced = self.replace(dataMode.guildId, dataMode.entities, closure_1);
-        } else {
-          if (tmp) {
-            const _HermesInternal = HermesInternal;
-            outer2_5.verbose("Updating " + dataMode.updatedEntities.length + " and deleting " + dataMode.deletedEntityIds.length + " emojis for " + dataMode.guildId);
-            self.update(dataMode.guildId, dataMode.updatedEntities, dataMode.deletedEntityIds, closure_1);
-          }
-          tmp = dataMode.updatedEntities.length > 0 || dataMode.deletedEntityIds.length > 0;
-        }
-      })));
-    }
-  };
-  items[7] = {
-    key: "handleOneGuildCreate",
-    value(emojis) {
-      const self = this;
-      const op = emojis.emojis.op;
-      if ("full_sync" === op) {
-        const replaced = self.replace(emojis.id, emojis.emojis.items, arg1);
-      } else if ("update" === op) {
-        self.update(emojis.id, emojis.emojis.writes, emojis.emojis.deletes, arg1);
+const prototype = GuildEmojis.prototype;
+prototype["getAsync"] = function getAsync(arg0) {
+  let closure_0 = arg0;
+  return callback(function*() {
+    if (logger === 2) {
+      logger = 3;
+      HermesBuiltin.throwTypeError();
+    } else if (tmp4 === 3) {
+      if (arg0 === 1) {
+        throw arg1;
+      } else if (arg0 === 2) {
+        let obj = { value: null, done: true };
+        obj[0] = arg1;
+        return obj;
       } else {
-        emojis = emojis.emojis;
+        return { value: "HermesInternal", done: null };
+      }
+    } else {
+      try {
+        logger = 2;
+        if (0 === asyncGeneratorStep) {
+          if (arg0 === 1) {
+            logger = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            logger = 3;
+            obj = { value: null, done: true };
+            obj[0] = arg1;
+            return obj;
+          } else {
+            let length = tmp5;
+            let closure_0 = tmp2;
+            closure_0 = undefined;
+            length = undefined;
+            asyncGeneratorStep = undefined;
+            const _performance2 = performance;
+            closure_0 = performance.now();
+            const obj6 = outer1_0(outer1_1[2]);
+            asyncGeneratorStep = 1;
+            logger = 1;
+            const obj1 = { value: null, done: false };
+            obj1[0] = outer1_0(outer1_1[2]).emojis(outer1_0).getMapEntries();
+            return obj1;
+          }
+        } else if (arg0 === 1) {
+          logger = 3;
+          throw arg1;
+        } else if (arg0 === 2) {
+          logger = 3;
+          const obj2 = { value: null, done: true };
+          obj2[0] = arg1;
+          return obj2;
+        } else {
+          length = arg1;
+          const _performance = performance;
+          asyncGeneratorStep = performance.now();
+          const _HermesInternal = HermesInternal;
+          logger.log("asynchronously loaded in " + asyncGeneratorStep - closure_0 + "ms (guilds: " + length.length + ")");
+          logger = 3;
+          obj = { value: null, done: true };
+          obj[0] = length;
+          return obj;
+        }
+      } catch (tmp6) {
+        logger = tmp;
+        throw tmp6;
       }
     }
-  };
-  items[8] = {
-    key: "resetInMemoryState",
-    value() {
-
-    }
-  };
-  items[9] = {
-    key: "replace",
-    value(arg0, arg1, arg2) {
-      const obj = callback(GuildEmojis[4]);
-      const replaced = callback(GuildEmojis[4]).emojisTransaction(arg2).replaceAll(arg0, arg1);
-    }
-  };
-  items[10] = {
-    key: "delete",
-    value(arg0, arg1) {
-      const obj = callback(GuildEmojis[4]);
-      callback(GuildEmojis[4]).emojisTransaction(arg1).delete(arg0);
-    }
-  };
-  items[11] = {
-    key: "update",
-    value(arg0, arg1, arg2, arg3) {
-      let done;
-      const emojisTransactionResult = callback(GuildEmojis[4]).emojisTransaction(arg3);
-      emojisTransactionResult.putAll(arg0, arg1);
-      const tmp2 = outer1_6(arg2);
-      let iter = tmp2();
-      if (!iter.done) {
-        do {
-          let deleteResult = emojisTransactionResult.delete(arg0, iter.value);
-          let iter2 = tmp2();
-          iter = iter2;
-          done = iter2.done;
-        } while (!done);
+  })();
+};
+prototype["handleConnectionOpen"] = function handleConnectionOpen(unavailableGuilds, database) {
+  const self = this;
+  const items = [...unavailableGuilds.unavailableGuilds];
+  obj = obj(1907);
+  obj.emojisTransaction(database).deleteAllExcept(items);
+  for (const item10027 of tmp2) {
+    let handleOneGuildCreateResult = self.handleOneGuildCreate(item10027, arg1);
+    continue;
+  }
+};
+prototype["handleGuildCreate"] = function handleGuildCreate(guild) {
+  this.handleOneGuildCreate(guild.guild, arg1);
+};
+prototype["handleGuildUpdate"] = function handleGuildUpdate(guild) {
+  const replaced = this.replace(guild.guild.id, guild.guild.emojis, arg1);
+};
+prototype["handleGuildDelete"] = function handleGuildDelete(guild) {
+  this.delete(guild.guild.id, arg1);
+};
+prototype["handleGuildEmojisUpdate"] = function handleGuildEmojisUpdate(guildId) {
+  const replaced = this.replace(guildId.guildId, guildId.emojis, arg1);
+};
+prototype["handleBackgroundSync"] = function handleBackgroundSync(promisesForBackgroundSyncToWaitOn) {
+  const self = this;
+  let closure_0 = arg1;
+  const prop = promisesForBackgroundSyncToWaitOn.promisesForBackgroundSyncToWaitOn;
+  const emojis = promisesForBackgroundSyncToWaitOn.emojis;
+  prop.push(Promise.all(emojis.map((dataMode) => {
+    if ("unavailable" === dataMode.dataMode) {
+      return Promise.resolve();
+    } else if ("full" === dataMode.dataMode) {
+      const _HermesInternal2 = HermesInternal;
+      outer1_3.verbose("Replacing " + dataMode.entities.length + " emojis for " + dataMode.guildId);
+      const replaced = self.replace(dataMode.guildId, dataMode.entities, closure_0);
+    } else {
+      if (tmp) {
+        const _HermesInternal = HermesInternal;
+        outer1_3.verbose("Updating " + dataMode.updatedEntities.length + " and deleting " + dataMode.deletedEntityIds.length + " emojis for " + dataMode.guildId);
+        self.update(dataMode.guildId, dataMode.updatedEntities, dataMode.deletedEntityIds, closure_0);
       }
+      tmp = dataMode.updatedEntities.length > 0 || dataMode.deletedEntityIds.length > 0;
     }
-  };
-  return callback2(GuildEmojis, items);
-})();
-tmp4 = new tmp4();
-const result = require("_defineProperties").fileFinishedImporting("modules/app_database/modules/GuildEmojis.tsx");
+  })));
+};
+prototype["handleOneGuildCreate"] = function handleOneGuildCreate(emojis) {
+  const op = emojis.emojis.op;
+  const self = this;
+  if ("full_sync" === op) {
+    const replaced = self.replace(emojis.id, emojis.emojis.items, arg1);
+  } else if ("update" === op) {
+    self.update(emojis.id, emojis.emojis.writes, emojis.emojis.deletes, arg1);
+  } else {
+    emojis = emojis.emojis;
+  }
+};
+prototype["resetInMemoryState"] = function resetInMemoryState() {
 
-export default tmp4;
+};
+prototype["replace"] = function replace(arg0, arg1, database) {
+  obj = obj(1907);
+  const replaced = obj.emojisTransaction(database).replaceAll(arg0, arg1);
+};
+prototype["delete"] = function delete(arg0, database) {
+  obj = obj(1907);
+  obj.emojisTransaction(database).delete(arg0);
+};
+prototype["update"] = function update(arg0, arg1, arg2, database) {
+  obj = obj(1907);
+  const emojisTransactionResult = obj.emojisTransaction(database);
+  emojisTransactionResult.putAll(arg0, arg1);
+  while (tmp2 !== undefined) {
+    let deleteResult = emojisTransactionResult.delete(arg0, tmp3);
+    continue;
+  }
+};
+let set = Object.create(GuildEmojis.prototype);
+set.actions = {
+  BACKGROUND_SYNC(arg0, arg1) {
+    return obj.handleBackgroundSync(arg0, arg1);
+  },
+  CONNECTION_OPEN(arg0, arg1) {
+    return obj.handleConnectionOpen(arg0, arg1);
+  },
+  GUILD_CREATE(arg0, arg1) {
+    return obj.handleGuildCreate(arg0, arg1);
+  },
+  GUILD_DELETE(arg0, arg1) {
+    return obj.handleGuildDelete(arg0, arg1);
+  },
+  GUILD_EMOJIS_UPDATE(arg0, arg1) {
+    return obj.handleGuildEmojisUpdate(arg0, arg1);
+  },
+  GUILD_UPDATE(arg0, arg1) {
+    return obj.handleGuildUpdate(arg0, arg1);
+  }
+};
+const result = set.fileFinishedImporting("modules/app_database/modules/GuildEmojis.tsx");
+
+export default set;

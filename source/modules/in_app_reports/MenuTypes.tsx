@@ -1,9 +1,9 @@
-// Module ID: 7670
-// Function ID: 61206
+// Module ID: 7693
+// Function ID: 7694
 // Name: ReportNames
 // Dependencies: [2]
 
-// Module 7670 (ReportNames)
+// Module 7693 (ReportNames)
 const result = require("set").fileFinishedImporting("modules/in_app_reports/MenuTypes.tsx");
 
 export const ReportNames = { GUILD: "guild", GUILD_DISCOVERY: "guild_discovery", GUILD_DIRECTORY_ENTRY: "guild_directory_entry", MESSAGE: "message", STAGE_CHANNEL: "stage_channel", GUILD_SCHEDULED_EVENT: "guild_scheduled_event", FIRST_DM: "first_dm", USER: "user", APPLICATION: "application", WIDGET: "widget" };

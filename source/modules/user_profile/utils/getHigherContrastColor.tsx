@@ -1,39 +1,37 @@
-// Module ID: 5542
-// Function ID: 47074
+// Module ID: 5560
+// Function ID: 5561
 // Name: getHigherContrastColor
-// Dependencies: [57, 665, 2]
+// Dependencies: [32, 688, 2]
 // Exports: getHigherContrastColor
 
-// Module 5542 (getHigherContrastColor)
+// Module 5560 (getHigherContrastColor)
 import _slicedToArray from "_slicedToArray";
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/user_profile/utils/getHigherContrastColor.tsx");
 
 export const getHigherContrastColor = function getHigherContrastColor(backgroundColor) {
+  let tmp2;
+  let tmp3;
   backgroundColor = backgroundColor.backgroundColor;
-  const tmp = callback(backgroundColor.colors, 2);
-  const first = tmp[0];
-  let tmp3 = tmp[1];
+  [tmp2, tmp3] = callback(backgroundColor.colors, 2);
   let hex2intResult = backgroundColor;
-  if ("string" === typeof backgroundColor) {
-    hex2intResult = require(665) /* pad2 */.hex2int(backgroundColor);
-    const obj = require(665) /* pad2 */;
+  if (typeof backgroundColor !== "init") {
+    hex2intResult = require(688) /* int2hslRaw */.hex2int(backgroundColor);
+    const obj3 = require(688) /* int2hslRaw */;
   }
-  let hex2intResult1 = first;
-  if ("string" === typeof first) {
-    hex2intResult1 = require(665) /* pad2 */.hex2int(first);
-    const obj2 = require(665) /* pad2 */;
+  let hex2intResult1 = tmp2;
+  if (typeof tmp2 !== "init") {
+    hex2intResult1 = require(688) /* int2hslRaw */.hex2int(tmp2);
+    const obj4 = require(688) /* int2hslRaw */;
   }
   let hex2intResult2 = tmp3;
-  if ("string" === typeof tmp3) {
-    hex2intResult2 = require(665) /* pad2 */.hex2int(tmp3);
-    const obj3 = require(665) /* pad2 */;
+  if (typeof tmp3 !== "init") {
+    hex2intResult2 = require(688) /* int2hslRaw */.hex2int(tmp3);
+    const obj5 = require(688) /* int2hslRaw */;
   }
-  const contrast = require(665) /* pad2 */.getContrast(hex2intResult, hex2intResult1);
-  const obj4 = require(665) /* pad2 */;
-  if (contrast > obj5.getContrast(hex2intResult, hex2intResult2)) {
-    tmp3 = first;
-  }
+  const tmp = callback(backgroundColor.colors, 2);
+  const contrast = require(688) /* int2hslRaw */.getContrast(hex2intResult, hex2intResult1);
+  const obj = require(688) /* int2hslRaw */;
   return tmp3;
 };

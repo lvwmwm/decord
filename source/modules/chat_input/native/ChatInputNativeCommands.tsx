@@ -1,63 +1,67 @@
-// Module ID: 11140
-// Function ID: 86440
-// Dependencies: [27, 11141, 11143, 6021, 1184, 2]
+// Module ID: 11164
+// Function ID: 11165
+// Dependencies: [17, 11165, 11167, 6039, 1208, 2]
 
-// Module 11140
+// Module 11164
 import get_ActivityIndicator from "get ActivityIndicator";
 
-let closure_3;
-let closure_4;
-({ findNodeHandle: closure_3, NativeModules: closure_4 } = get_ActivityIndicator);
+let c3;
+let c4;
+({ findNodeHandle: c3, NativeModules: c4 } = get_ActivityIndicator);
 let result = require("__INTERNAL_VIEW_CONFIG").fileFinishedImporting("modules/chat_input/native/ChatInputNativeCommands.tsx");
 
 export default {
   backspace(arg0) {
     if (null != arg0) {
       if (obj.shouldUseFabricChatInput()) {
-        const Commands = require(11143) /* __INTERNAL_VIEW_CONFIG */.Commands;
+        const Commands = tmp(11167).Commands;
         Commands.backspace(arg0);
       } else {
         const DCDChatInputLegacyManager = closure_4.DCDChatInputLegacyManager;
         DCDChatInputLegacyManager.backspace(callback(arg0));
       }
-      obj = require(11141) /* resolveShouldUseFabric */;
+      obj = require(11165) /* useShouldUseFabricChatInput */;
+      tmp = require;
     }
   },
   blur(arg0) {
     if (null != arg0) {
       if (obj.shouldUseFabricChatInput()) {
-        const Commands = require(11143) /* __INTERNAL_VIEW_CONFIG */.Commands;
+        const Commands = tmp(11167).Commands;
         Commands.blur(arg0);
       } else {
         const DCDChatInputLegacyManager = closure_4.DCDChatInputLegacyManager;
         DCDChatInputLegacyManager.blur(callback(arg0));
       }
-      obj = require(11141) /* resolveShouldUseFabric */;
+      obj = require(11165) /* useShouldUseFabricChatInput */;
+      tmp = require;
     }
   },
   closeCustomKeyboard(arg0) {
     if (null != arg0) {
       if (obj.shouldUseFabricChatInput()) {
-        const Commands = require(11143) /* __INTERNAL_VIEW_CONFIG */.Commands;
+        const Commands = tmp(11167).Commands;
         Commands.closeCustomKeyboard(arg0);
       } else {
         const DCDChatInputLegacyManager = closure_4.DCDChatInputLegacyManager;
         DCDChatInputLegacyManager.closeCustomKeyboard(callback(arg0));
       }
-      obj = require(11141) /* resolveShouldUseFabric */;
+      obj = require(11165) /* useShouldUseFabricChatInput */;
+      tmp = require;
     }
   },
   flushText(arg0, arg1) {
     if (null != arg0) {
       if (obj.shouldUseFabricChatInput()) {
-        const Commands = require(11143) /* __INTERNAL_VIEW_CONFIG */.Commands;
+        const Commands = tmp(11167).Commands;
         Commands.flushText(arg0, arg1);
       } else {
         const _Error = Error;
         const error = new Error("flushText is not supported/needed on iOS");
         throw error;
       }
-      obj = require(11141) /* resolveShouldUseFabric */;
+      obj = require(11165) /* useShouldUseFabricChatInput */;
+      tmp = require;
     }
   },
   getText(arg0, set) {
@@ -66,108 +70,111 @@ export default {
     if (null == arg0) {
       return null;
     } else if (obj3.shouldUseFabricChatInput()) {
-      nonce = _require(nonce[3]).createNonce();
+      const nonce = tmp17(tmp18[3]).createNonce();
       const result = set.set(nonce, (arg0) => {
         set.delete(nonce);
         callback(arg0);
       });
-      const Commands = _require(nonce[2]).Commands;
+      const Commands = tmp17(tmp18[2]).Commands;
       Commands.flushText(arg0, nonce);
-      const obj2 = _require(nonce[3]);
+      const tmp17Result = tmp17(tmp18[3]);
     } else {
       const tmp2 = callback(arg0);
       if (null == tmp2) {
         const _Error = Error;
         const error = new Error("inputRef is null");
-        importDefault(nonce[4]).captureException(error);
-        const obj = importDefault(nonce[4]);
+        importDefault(tmp18[4]).captureException(error);
+        const obj = importDefault(tmp18[4]);
       } else {
         const DCDChatInputLegacyManager = closure_4.DCDChatInputLegacyManager;
-        DCDChatInputLegacyManager.markTextInputChanged(callback(arg0));
+        DCDChatInputLegacyManager.markTextInputChanged(tmp(arg0));
         const DCDChatInputLegacyManager2 = closure_4.DCDChatInputLegacyManager;
         const text = DCDChatInputLegacyManager2.getText(tmp2);
-        text.then(arg2).catch(importDefault(nonce[4]).captureException);
+        text.then(arg2).catch(importDefault(tmp18[4]).captureException);
         const nextPromise = text.then(arg2);
       }
+      tmp = callback;
     }
   },
   focus(arg0) {
     if (null != arg0) {
       if (obj.shouldUseFabricChatInput()) {
-        const Commands = require(11143) /* __INTERNAL_VIEW_CONFIG */.Commands;
+        const Commands = tmp(11167).Commands;
         Commands.focus(arg0);
       } else {
         const DCDChatInputLegacyManager = closure_4.DCDChatInputLegacyManager;
         DCDChatInputLegacyManager.focus(callback(arg0));
       }
-      obj = require(11141) /* resolveShouldUseFabric */;
+      obj = require(11165) /* useShouldUseFabricChatInput */;
+      tmp = require;
     }
   },
   openCustomKeyboard(arg0) {
     if (null != arg0) {
       if (obj.shouldUseFabricChatInput()) {
-        const Commands = require(11143) /* __INTERNAL_VIEW_CONFIG */.Commands;
+        const Commands = tmp(11167).Commands;
         Commands.openCustomKeyboard(arg0);
       } else {
         const _Error = Error;
         const error = new Error("openCustomKeyboard is not supported/needed on iOS");
         throw error;
       }
-      obj = require(11141) /* resolveShouldUseFabric */;
+      obj = require(11165) /* useShouldUseFabricChatInput */;
+      tmp = require;
     }
   },
   openSystemKeyboard(arg0) {
     if (null != arg0) {
       if (obj.shouldUseFabricChatInput()) {
-        const Commands = require(11143) /* __INTERNAL_VIEW_CONFIG */.Commands;
+        const Commands = tmp(11167).Commands;
         Commands.openSystemKeyboard(arg0);
       } else {
         const DCDChatInputLegacyManager = closure_4.DCDChatInputLegacyManager;
         DCDChatInputLegacyManager.openSystemKeyboard(callback(arg0));
       }
-      obj = require(11141) /* resolveShouldUseFabric */;
+      obj = require(11165) /* useShouldUseFabricChatInput */;
+      tmp = require;
     }
   },
   setText(arg0, arg1) {
     if (null != arg0) {
       if (obj.shouldUseFabricChatInput()) {
-        const Commands = require(11143) /* __INTERNAL_VIEW_CONFIG */.Commands;
+        const Commands = tmp2(11167).Commands;
         Commands.setText(arg0, arg1);
       } else {
         const DCDChatInputLegacyManager = closure_4.DCDChatInputLegacyManager;
         DCDChatInputLegacyManager.setText(callback(arg0), arg1);
       }
-      obj = require(11141) /* resolveShouldUseFabric */;
+      obj = require(11165) /* useShouldUseFabricChatInput */;
+      tmp2 = require;
     }
   },
   setSelectedRange(arg0, arg1, arg2) {
     if (null != arg0) {
       if (obj.shouldUseFabricChatInput()) {
-        const Commands = require(11143) /* __INTERNAL_VIEW_CONFIG */.Commands;
+        const Commands = tmp3(11167).Commands;
         Commands.setSelectedRange(arg0, arg1, arg2);
       } else {
         const DCDChatInputLegacyManager = closure_4.DCDChatInputLegacyManager;
         DCDChatInputLegacyManager.setSelectedRange(callback(arg0), arg1, arg2);
       }
-      obj = require(11141) /* resolveShouldUseFabric */;
+      obj = require(11165) /* useShouldUseFabricChatInput */;
+      tmp3 = require;
     }
   },
   updateTextBlocks(arg0, arg1, arg2) {
     if (null != arg0) {
       if (obj.shouldUseFabricChatInput()) {
-        const Commands = require(11143) /* __INTERNAL_VIEW_CONFIG */.Commands;
+        const Commands = tmp9(11167).Commands;
         const _JSON = JSON;
-        let tmp8;
         const json = JSON.stringify(arg1);
-        if (null != arg2) {
-          tmp8 = arg2;
-        }
-        Commands.updateTextBlocks(arg0, json, tmp8);
+        Commands.updateTextBlocks(arg0, json, tmp6);
       } else {
         const DCDChatInputLegacyManager = closure_4.DCDChatInputLegacyManager;
-        DCDChatInputLegacyManager.updateTextBlocks(callback(arg0), arg1, arg2);
+        DCDChatInputLegacyManager.updateTextBlocks(callback(arg0), arg1, tmp6);
       }
-      obj = require(11141) /* resolveShouldUseFabric */;
+      obj = require(11165) /* useShouldUseFabricChatInput */;
+      tmp9 = require;
     }
   },
   replaceRange(arg0, keepCursorPosition) {
@@ -186,14 +193,15 @@ export default {
     const editId = keepCursorPosition.editId;
     if (null != arg0) {
       if (obj.shouldUseFabricChatInput()) {
-        const Commands = require(11143) /* __INTERNAL_VIEW_CONFIG */.Commands;
+        const Commands = tmp20(11167).Commands;
         const _JSON = JSON;
         Commands.replaceRange(arg0, _location, length, text, JSON.stringify(nodes), flag, editId);
       } else {
         const DCDChatInputLegacyManager = closure_4.DCDChatInputLegacyManager;
         DCDChatInputLegacyManager.replaceRange(callback(arg0), _location, length, text, nodes, flag, editId);
       }
-      obj = require(11141) /* resolveShouldUseFabric */;
+      obj = require(11165) /* useShouldUseFabricChatInput */;
+      tmp20 = require;
     }
   }
 };

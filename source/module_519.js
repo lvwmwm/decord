@@ -1,12 +1,6 @@
 // Module ID: 519
-// Function ID: 6622
-// Dependencies: [520]
+// Function ID: 520
+// Dependencies: []
 
 // Module 519
-import module_520 from "module_520";
-
-if (module_520) {
-  module_520([], "length");
-}
-
-export default module_520;
+arg5.default = /^(?:[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}|00000000-0000-0000-0000-000000000000)$/i;

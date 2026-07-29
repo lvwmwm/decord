@@ -1,38 +1,20 @@
-// Module ID: 1897
-// Function ID: 21281
-// Name: Kv
-// Dependencies: [6, 7, 1893, 2]
+// Module ID: 1921
+// Function ID: 1922
+// Name: databases
+// Dependencies: [1916, 2]
 
-// Module 1897 (Kv)
-import _classCallCheck from "_classCallCheck";
-import _defineProperties from "_defineProperties";
+// Module 1921 (databases)
+const result = require("set").fileFinishedImporting("../discord_common/js/packages/kv-storage/js/api/Kv.tsx");
+const prototype = function Kv() {
+  return Object.create(new.target.prototype);
+}.prototype;
+prototype["databases"] = function databases() {
+  const Host = require(1916) /* open */.Host;
+  return Host.list();
+};
+prototype["optimize"] = function optimize(arg0) {
+  const Host = require(1916) /* open */.Host;
+  return Host.optimize(arg0);
+};
 
-const require = arg1;
-const tmp2 = (() => {
-  class Kv {
-    constructor() {
-      tmp = outer1_2(this, Kv);
-      return;
-    }
-  }
-  let obj = {
-    key: "databases",
-    value() {
-      const Host = Kv(outer1_1[2]).Host;
-      return Host.list();
-    }
-  };
-  const items = [obj, ];
-  obj = {
-    key: "optimize",
-    value(arg0) {
-      const Host = Kv(outer1_1[2]).Host;
-      return Host.optimize(arg0);
-    }
-  };
-  items[1] = obj;
-  return callback(Kv, null, items);
-})();
-const result = require("Host").fileFinishedImporting("../discord_common/js/packages/kv-storage/js/api/Kv.tsx");
-
-export const Kv = tmp2;
+export const Kv = prototype;

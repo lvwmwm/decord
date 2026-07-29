@@ -1,91 +1,92 @@
-// Module ID: 16324
-// Function ID: 126620
+// Module ID: 16359
+// Function ID: 16360
 // Name: HasCreatedListingsSection
-// Dependencies: [31, 1391, 1850, 653, 33, 566, 5536, 1212, 5198, 16325, 16326, 16327, 16328, 12600, 2]
+// Dependencies: [19, 1415, 1874, 676, 21, 589, 5554, 1236, 5220, 16360, 16361, 16362, 16363, 12622, 2]
 // Exports: default
 
-// Module 16324 (HasCreatedListingsSection)
-import "result";
-import { isGuildOwner } from "isGuildOwner";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 16359 (HasCreatedListingsSection)
+import "noop";
+import { isGuildOwner } from "GuildNSFWContentLevel";
+import mergeGuildAvatar from "mergeGuildAvatar";
 import ME from "ME";
 import jsxProd from "jsxProd";
 
-let closure_5;
+let c5;
 let closure_6;
-let closure_7;
-let closure_8;
+let error;
+let metroImportAll;
 const require = arg1;
 function HasCreatedListingsSection(arg0) {
   let importDefault;
   let require;
   ({ guild: require, pushScreen: importDefault } = arg0);
-  let obj = require(566) /* initialize */;
-  const items = [_isNativeReflectConstruct];
+  let obj = require(589) /* initialize */;
+  const items = [mergeGuildAvatar];
   let stateFromStores = obj.useStateFromStores(items, () => outer1_3(closure_0, outer1_4.getCurrentUser()));
-  obj = {};
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj.title = intl.string(require(1212) /* getSystemLocale */.t["KzCF/6"]);
-  obj.hasIcons = true;
-  obj = {};
-  const intl2 = require(1212) /* getSystemLocale */.intl;
-  obj.label = intl2.string(require(1212) /* getSystemLocale */.t["/CfKoD"]);
-  obj.arrow = true;
-  const obj1 = { source: importDefault(16325) };
-  obj.icon = callback(require(5198) /* TableRowInner */.TableRow.Icon, obj1);
-  obj.onPress = function onPress() {
+  obj = { title: null, hasIcons: true, children: null };
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj[0] = intl.string(require(1236) /* getSystemLocale */.t["KzCF/6"]);
+  obj = { label: null, arrow: true, icon: null, onPress: null };
+  const intl2 = require(1236) /* getSystemLocale */.intl;
+  obj[0] = intl2.string(require(1236) /* getSystemLocale */.t["/CfKoD"]);
+  const obj1 = { source: null };
+  obj1[0] = importDefault(16360);
+  obj[2] = callback(require(5220) /* TableRowInner */.TableRow.Icon, obj1);
+  obj[3] = function onPress() {
     return callback(outer1_6.ROLE_SUBSCRIPTIONS_BASIC);
   };
-  const items1 = [callback(require(5198) /* TableRowInner */.TableRow, obj, "guild-role-subscriptions-basic"), , , ];
-  const obj2 = {};
-  const intl3 = require(1212) /* getSystemLocale */.intl;
-  obj2.label = intl3.string(require(1212) /* getSystemLocale */.t.pXbGYc);
-  obj2.arrow = true;
-  const obj3 = { source: importDefault(16326) };
-  obj2.icon = callback(require(5198) /* TableRowInner */.TableRow.Icon, obj3);
-  obj2.onPress = function onPress() {
+  const items1 = [callback(require(5220) /* TableRowInner */.TableRow, obj, "guild-role-subscriptions-basic"), , , ];
+  const obj2 = { label: null, arrow: true, icon: null, onPress: null };
+  const intl3 = require(1236) /* getSystemLocale */.intl;
+  obj2[0] = intl3.string(require(1236) /* getSystemLocale */.t.pXbGYc);
+  const obj3 = { source: null };
+  obj3[0] = importDefault(16361);
+  obj2[2] = callback(require(5220) /* TableRowInner */.TableRow.Icon, obj3);
+  obj2[3] = function onPress() {
     return callback(outer1_6.ROLE_SUBSCRIPTIONS_TIERS);
   };
-  items1[1] = callback(require(5198) /* TableRowInner */.TableRow, obj2, "guild-role-subscriptions-tiers");
+  items1[1] = callback(require(5220) /* TableRowInner */.TableRow, obj2, "guild-role-subscriptions-tiers");
   if (stateFromStores) {
-    const obj4 = {};
-    const intl4 = require(1212) /* getSystemLocale */.intl;
-    obj4.label = intl4.string(require(1212) /* getSystemLocale */.t.p2Rsdl);
-    obj4.arrow = true;
-    const obj5 = { source: importDefault(16327) };
-    obj4.icon = callback(require(5198) /* TableRowInner */.TableRow.Icon, obj5);
-    obj4.onPress = function onPress() {
+    const obj4 = { label: null, arrow: true, icon: null, onPress: null };
+    const intl4 = tmp(1236).intl;
+    obj4[0] = intl4.string(tmp(1236).t.p2Rsdl);
+    const obj5 = { source: null };
+    obj5[0] = tmp6(16362);
+    obj4[2] = tmp5(tmp(5220).TableRow.Icon, obj5);
+    obj4[3] = function onPress() {
       return callback(outer1_6.ROLE_SUBSCRIPTIONS_PAYMENTS, { guildId: id.id });
     };
-    stateFromStores = callback(require(5198) /* TableRowInner */.TableRow, obj4, "guild-role-subscriptions-payments");
+    stateFromStores = tmp5(tmp(5220).TableRow, obj4, "guild-role-subscriptions-payments");
   }
   items1[2] = stateFromStores;
-  const obj6 = {};
-  const intl5 = require(1212) /* getSystemLocale */.intl;
-  obj6.label = intl5.string(require(1212) /* getSystemLocale */.t.C5Dbwn);
-  obj6.arrow = true;
-  const obj7 = { source: importDefault(16328) };
-  obj6.icon = callback(require(5198) /* TableRowInner */.TableRow.Icon, obj7);
-  obj6.onPress = function onPress() {
+  const obj6 = { label: null, arrow: true, icon: null, onPress: null };
+  const intl5 = tmp(1236).intl;
+  obj6[0] = intl5.string(require(1236) /* getSystemLocale */.t.C5Dbwn);
+  const obj7 = { source: null };
+  obj7[0] = importDefault(16363);
+  obj6[2] = callback(require(5220) /* TableRowInner */.TableRow.Icon, obj7);
+  obj6[3] = function onPress() {
     return callback(outer1_6.ROLE_SUBSCRIPTIONS_EMOJIS);
   };
-  items1[3] = callback(require(5198) /* TableRowInner */.TableRow, obj6, "guild-role-subscriptions-emojis");
-  obj.children = items1;
-  return closure_8(require(5536) /* TableRowGroupTitle */.TableRowGroup, obj);
+  items1[3] = callback(require(5220) /* TableRowInner */.TableRow, obj6, "guild-role-subscriptions-emojis");
+  obj[2] = items1;
+  return closure_8(require(5554) /* TableRowGroupTitle */.TableRowGroup, obj);
 }
-({ GuildFeatures: closure_5, GuildSettingsSections: closure_6 } = ME);
-({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/guild_role_subscriptions/native/guild_settings/GuildSettingsRoleSubscriptionsSection.tsx");
+({ GuildFeatures: c5, GuildSettingsSections: closure_6 } = ME);
+({ jsx: error, jsxs: metroImportAll } = jsxProd);
+const result = require("mergeGuildAvatar").fileFinishedImporting("modules/guild_role_subscriptions/native/guild_settings/GuildSettingsRoleSubscriptionsSection.tsx");
 
 export default function GuildSettingsRoleSubscriptionsSection(guild) {
   guild = guild.guild;
-  let obj = require(12600) /* canSeeGuildRoleSubscriptionSettingsContent */;
+  let obj = require(12622) /* computeGuildRoleSubscriptionSettingsVisibility */;
   let tmp = null;
   if (obj.useCanSeeGuildRoleSubscriptionSettings(guild)) {
     const features = guild.features;
     tmp = null;
     if (features.has(constants.ROLE_SUBSCRIPTIONS_ENABLED)) {
-      obj = { pushScreen: guild.pushScreen, guild };
+      obj = { pushScreen: null, guild: null };
+      obj[0] = guild.pushScreen;
+      obj[1] = guild;
       tmp = callback(HasCreatedListingsSection, obj);
     }
   }

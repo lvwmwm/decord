@@ -1,81 +1,82 @@
-// Module ID: 15104
-// Function ID: 114887
+// Module ID: 15137
+// Function ID: 15138
 // Name: PreviewOverlay
-// Dependencies: [31, 27, 33, 4165, 689, 4013, 15105, 4101, 4589, 2]
+// Dependencies: [19, 17, 21, 4189, 712, 4037, 15138, 4125, 4611, 2]
 // Exports: default
 
-// Module 15104 (PreviewOverlay)
-import result from "result";
+// Module 15137 (PreviewOverlay)
+import noop from "noop";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
 const require = arg1;
 function PreviewOverlay() {
-  return <View pointerEvents="none" style={_createForOfIteratorHelperLoose().previewOverlay}>{jsx(importDefault(15105), {})}</View>;
+  return <View pointerEvents="none" style={createCacheKey().previewOverlay}>{jsx(importDefault(15138), {})}</View>;
 }
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { position: "relative", width: 256, aspectRatio: 1.5705521472392638, overflow: "hidden", borderRadius: require("_createForOfIteratorHelperLoose").radii.md, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SURFACE_HIGH };
-_createForOfIteratorHelperLoose.previewArt = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.previewOverlay = { position: "absolute", top: 7.314, left: 7.461, width: 259.862, height: 154.514 };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+createCacheKey = { previewArt: null, previewOverlay: null };
+createCacheKey = { position: "relative", width: 256, aspectRatio: 1.5705521472392638, overflow: "hidden", borderRadius: require("Themes").radii.md, backgroundColor: require("Themes").colors.BACKGROUND_SURFACE_HIGH };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { position: "absolute", top: 7.314, left: 7.461, width: 259.862, height: 154.514 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
 const result = require("jsxProd").fileFinishedImporting("modules/guild_themes/native/GuildThemePreviewArt.tsx");
 
 export default function GuildThemePreviewArt(themeSettings) {
   themeSettings = themeSettings.themeSettings;
-  const tmp2 = importDefault(4101)();
-  importDefault = tmp2;
-  let items = [themeSettings, tmp2];
-  const memo = React.useMemo(() => (function getGradientConfig(themeSettings, closure_1) {
-    if (null == themeSettings) {
-      return null;
-    } else {
-      const customUserThemeSettings = themeSettings.customUserThemeSettings;
+  let importDefault;
+  const tmp4 = importDefault(4125)();
+  importDefault = tmp4;
+  let items = [themeSettings, tmp4];
+  const memo = React.useMemo(() => {
+    let tmp3 = null;
+    if (null != themeSettings) {
+      const customUserThemeSettings = tmp.customUserThemeSettings;
       if (null != customUserThemeSettings) {
         const first = customUserThemeSettings.colors[0];
         if (null != first) {
-          let obj = {};
+          let obj = { colors: null, angle: null };
           const items = [];
-          HermesBuiltin.arraySpread(themeSettings(outer2_2[5]).getSingleColorGuildThemeGradientColors(first, closure_1), 0);
-          obj.colors = items;
-          const gradientAngle = customUserThemeSettings.gradientAngle;
-          let num5 = 0;
-          if (null != gradientAngle) {
-            num5 = gradientAngle;
+          HermesBuiltin.arraySpread(themeSettings(outer1_2[5]).getSingleColorGuildThemeGradientColors(first, tmp2), 0);
+          obj[0] = items;
+          let num2 = customUserThemeSettings.gradientAngle;
+          if (num2 == null) {
+            num2 = 0;
           }
-          obj.angle = num5;
-          return obj;
+          obj[1] = num2;
+          tmp3 = obj;
+          const obj5 = themeSettings(outer1_2[5]);
         }
       }
-      obj = themeSettings(outer2_2[5]);
-      const guildThemePreset = obj.getGuildThemePreset(themeSettings.presetId);
+      obj = themeSettings(outer1_2[5]);
+      const guildThemePreset = obj.getGuildThemePreset(tmp.presetId);
+      tmp3 = null;
       if (null != guildThemePreset) {
-        const guildThemePresetAppearance = themeSettings(outer2_2[5]).getGuildThemePresetAppearance(guildThemePreset, closure_1);
-        obj = {};
+        const guildThemePresetAppearance = themeSettings(outer1_2[5]).getGuildThemePresetAppearance(guildThemePreset, tmp2);
+        obj = { colors: null, locations: null, angle: null };
         const colors = guildThemePresetAppearance.colors;
-        obj.colors = colors.map((hex) => hex.hex);
+        obj[0] = colors.map((hex) => hex.hex);
         const colors1 = guildThemePresetAppearance.colors;
-        obj.locations = colors1.map((stop) => stop.stop / 100);
-        obj.angle = guildThemePresetAppearance.angle;
-        return obj;
-      } else {
-        return null;
+        obj[1] = colors1.map((stop) => stop.stop / 100);
+        obj[2] = guildThemePresetAppearance.angle;
+        tmp3 = obj;
+        const obj2 = themeSettings(outer1_2[5]);
       }
     }
-  })(themeSettings, closure_1), items);
-  const items1 = [_createForOfIteratorHelperLoose().previewArt, themeSettings.style];
+    return tmp3;
+  }, items);
+  const items1 = [createCacheKey().previewArt, themeSettings.style];
   if (null == memo) {
-    let obj = { style: items1, children: <PreviewOverlay /> };
-    let tmp10 = <View style={items1}><PreviewOverlay /></View>;
+    let obj = { style: null, children: null };
+    obj[0] = items1;
+    obj[1] = <PreviewOverlay />;
+    let tmp9 = <View style={null}>{null}</View>;
   } else {
-    obj = {};
-    ({ colors: obj.colors, locations: obj.locations } = memo);
-    obj.useAngle = true;
-    obj.angle = memo.angle;
-    obj.style = items1;
-    obj.children = <PreviewOverlay />;
-    tmp10 = jsx(importDefault(4589), {});
-    const tmp7 = importDefault(4589);
+    obj = { colors: null, locations: null, useAngle: true, angle: null, style: null, children: null };
+    ({ colors: obj[0], locations: obj[1], angle: obj[3] } = memo);
+    obj[4] = items1;
+    obj[5] = <PreviewOverlay />;
+    tmp9 = jsx(importDefault(4611), { colors: null, locations: null, useAngle: true, angle: null, style: null, children: null });
+    const tmp2Result = importDefault(4611);
   }
-  return tmp10;
+  return tmp9;
 };

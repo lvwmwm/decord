@@ -1,17 +1,17 @@
-// Module ID: 11591
-// Function ID: 90066
+// Module ID: 11615
+// Function ID: 11616
 // Name: GuildPowerupsImage
-// Dependencies: [4157, 33, 4165, 566, 478, 6188, 5119, 2]
+// Dependencies: [4181, 21, 4189, 589, 501, 6208, 5141, 2]
 // Exports: default
 
-// Module 11591 (GuildPowerupsImage)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 11615 (GuildPowerupsImage)
+import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
 const require = arg1;
-let closure_5 = _createForOfIteratorHelperLoose.createStyles({ image: { width: "75%", height: "100%", alignSelf: "center", resizeMode: "contain" } });
-const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/premium/powerups/native/GuildPowerupsImage.tsx");
+let closure_5 = createCacheKey.createStyles({ image: { width: "75%", height: "100%", alignSelf: "center", resizeMode: "contain" } });
+const result = require("createCacheKey").fileFinishedImporting("modules/premium/powerups/native/GuildPowerupsImage.tsx");
 
 export default function GuildPowerupsImage(style) {
   let imageUrl;
@@ -22,21 +22,21 @@ export default function GuildPowerupsImage(style) {
   }
   style = style.style;
   const tmp = callback();
-  let obj = require(566) /* initialize */;
-  const items = [_isNativeReflectConstruct];
-  const stateFromStores = obj.useStateFromStores(items, () => outer1_3.useReducedMotion);
+  let obj = require(589) /* initialize */;
+  const items = [maybeApplyNoTextColorForLightCustomTheme];
+  const stateFromStores = obj.useStateFromStores(items, () => useReducedMotion.useReducedMotion);
   if (obj2.isAndroid()) {
     if (isAnimated) {
       if (!stateFromStores) {
-        obj = {};
+        obj = { style: null, url: null };
         const items1 = [tmp.image, style];
-        obj.style = items1;
-        obj.url = imageUrl;
-        let tmp6 = jsx(importDefault(6188), {});
+        obj[0] = items1;
+        obj[1] = imageUrl;
+        let tmp6 = jsx(importDefault(6208), { style: null, url: null });
       }
       return tmp6;
     }
   }
   const items2 = [tmp.image, style];
-  tmp6 = jsx(importDefault(5119), { style: items2, source: { uri: imageUrl } });
+  tmp6 = jsx(importDefault(5141), { style: items2, source: { uri: imageUrl } });
 };

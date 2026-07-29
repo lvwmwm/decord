@@ -1,9 +1,9 @@
-// Module ID: 7922
-// Function ID: 62985
+// Module ID: 7947
+// Function ID: 7948
 // Name: UploadTypes
-// Dependencies: [7923, 2]
+// Dependencies: [7948, 2]
 
-// Module 7922 (UploadTypes)
+// Module 7947 (UploadTypes)
 import { BACKGROUND_REPLACEMENT_SIZE } from "VideoFilterType";
 
 const result = BACKGROUND_REPLACEMENT_SIZE.width / BACKGROUND_REPLACEMENT_SIZE.height;

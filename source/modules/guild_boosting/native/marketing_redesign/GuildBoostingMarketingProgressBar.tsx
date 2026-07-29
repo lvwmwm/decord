@@ -1,56 +1,61 @@
-// Module ID: 12623
-// Function ID: 97549
+// Module ID: 12645
+// Function ID: 12646
 // Name: BoostedGuildTiers
-// Dependencies: [57, 31, 27, 4157, 653, 33, 4165, 12624, 689, 4101, 624, 4026, 4057, 4577, 4589, 4011, 2]
+// Dependencies: [32, 19, 17, 4181, 676, 21, 4189, 12646, 712, 4125, 647, 4050, 4081, 4599, 4611, 4035, 2]
 // Exports: default
 
-// Module 12623 (BoostedGuildTiers)
+// Module 12645 (BoostedGuildTiers)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
+import noop from "noop";
 import { View } from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
 import { BoostedGuildTiers } from "ME";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_8;
-let closure_9;
+let c9;
+let metroImportAll;
 const require = arg1;
-({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { display: "flex", alignItems: "center", width: "100%", marginTop: 40, paddingHorizontal: require("ProgressBarMarkerInnerContent").MARKER_DIMENSIONS / 2 + 34 };
-_createForOfIteratorHelperLoose.progressBarContainer = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.progressBar = { height: 54, maxWidth: 660, width: "100%" };
-_createForOfIteratorHelperLoose.progressBarScrubber = { height: 8, top: require("ProgressBarMarkerInnerContent").MARKER_DIMENSIONS / 2 - 4, marginHorizontal: require("ProgressBarMarkerInnerContent").MARKER_DIMENSIONS / 2 + 2 };
-let obj2 = { borderRadius: 8, height: "100%", width: "100%", position: "absolute", zIndex: 0, backgroundColor: require("_createForOfIteratorHelperLoose").colors.SPINE_DEFAULT };
-_createForOfIteratorHelperLoose.progressBarTrack = obj2;
-_createForOfIteratorHelperLoose.progressBarFill = { borderRadius: 8, position: "absolute", height: "100%", left: 0, zIndex: 1 };
-_createForOfIteratorHelperLoose.progressBarGradientFill = { height: "100%", width: "100%", borderRadius: 8 };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+({ jsx: metroImportAll, jsxs: c9 } = jsxProd);
+createCacheKey = { progressBarContainer: null, progressBar: null, progressBarScrubber: null, progressBarTrack: null, progressBarFill: null, progressBarGradientFill: null };
+createCacheKey = { display: "flex", alignItems: "center", width: "100%", marginTop: 40, paddingHorizontal: require("ProgressBarMarkerInnerContent").MARKER_DIMENSIONS / 2 + 34 };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { height: 54, maxWidth: 660, width: "100%" };
+createCacheKey[2] = { height: 8, top: require("ProgressBarMarkerInnerContent").MARKER_DIMENSIONS / 2 - 4, marginHorizontal: require("ProgressBarMarkerInnerContent").MARKER_DIMENSIONS / 2 + 2 };
+let obj1 = { height: 8, top: require("ProgressBarMarkerInnerContent").MARKER_DIMENSIONS / 2 - 4, marginHorizontal: require("ProgressBarMarkerInnerContent").MARKER_DIMENSIONS / 2 + 2 };
+createCacheKey[3] = { borderRadius: 8, height: "100%", width: "100%", position: "absolute", zIndex: 0, backgroundColor: require("Themes").colors.SPINE_DEFAULT };
+createCacheKey[4] = { borderRadius: 8, position: "absolute", height: "100%", left: 0, zIndex: 1 };
+createCacheKey[5] = { height: "100%", width: "100%", borderRadius: 8 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
 let items = [, , , ];
 ({ NONE: arr[0], TIER_1: arr[1], TIER_2: arr[2], TIER_3: arr[3] } = BoostedGuildTiers);
 let closure_12 = { stiffness: 27, damping: 10 };
 let closure_13 = { code: "function GuildBoostingMarketingProgressBarTsx1(){const{width}=this.__closure;return{width:width.get()+\"%\"};}" };
 let closure_14 = { code: "function GuildBoostingMarketingProgressBarTsx2(){const{width}=this.__closure;return width.get();}" };
 let closure_15 = { code: "function GuildBoostingMarketingProgressBarTsx3(width){const{BoostedGuildTiers,TIER_REACHED_OFFSET,revealedTier,runOnJS,setRevealedTier}=this.__closure;let tier=BoostedGuildTiers.NONE;if(width>=33.33-TIER_REACHED_OFFSET)tier=BoostedGuildTiers.TIER_1;if(width>=66.67-TIER_REACHED_OFFSET)tier=BoostedGuildTiers.TIER_2;if(width>=100-TIER_REACHED_OFFSET)tier=BoostedGuildTiers.TIER_3;if(tier!==revealedTier)runOnJS(setRevealedTier)(tier);}" };
-let obj1 = { height: 8, top: require("ProgressBarMarkerInnerContent").MARKER_DIMENSIONS / 2 - 4, marginHorizontal: require("ProgressBarMarkerInnerContent").MARKER_DIMENSIONS / 2 + 2 };
+let obj2 = { borderRadius: 8, height: "100%", width: "100%", position: "absolute", zIndex: 0, backgroundColor: require("Themes").colors.SPINE_DEFAULT };
 let result = require("get ActivityIndicator").fileFinishedImporting("modules/guild_boosting/native/marketing_redesign/GuildBoostingMarketingProgressBar.tsx");
 
 export default function ProgressBar(guild) {
   guild = guild.guild;
-  const tmp = _createForOfIteratorHelperLoose();
+  let stateFromStores;
+  let sharedValue;
+  let first;
+  let React;
+  let fillFactor;
+  const tmp = createCacheKey();
   let obj = guild(sharedValue[10]);
-  const items = [_isNativeReflectConstruct];
-  const stateFromStores = obj.useStateFromStores(items, () => outer1_6.useReducedMotion);
+  const items = [maybeApplyNoTextColorForLightCustomTheme];
+  stateFromStores = obj.useStateFromStores(items, () => useReducedMotion.useReducedMotion);
   let obj1 = guild(sharedValue[11]);
   sharedValue = obj1.useSharedValue(0);
-  const tmp5 = first(React.useState(BoostedGuildTiers.NONE), 2);
-  first = tmp5[0];
-  React = tmp7;
+  const tmp7 = first(React.useState(BoostedGuildTiers.NONE), 2);
+  first = tmp7[0];
+  React = tmp9;
   let obj2 = guild(sharedValue[11]);
   class I {
     constructor() {
-      obj = { width: "" + closure_2.get() + "%" };
+      obj = { width: "" + c2.get() + "%" };
       return obj;
     }
   }
@@ -68,26 +73,26 @@ export default function ProgressBar(guild) {
   const fn2 = function w(arg0) {
     let TIER_3 = outer1_7.NONE;
     if (arg0 >= 28.33) {
-      TIER_3 = outer1_7.TIER_1;
+      TIER_3 = tmp.TIER_1;
     }
     if (arg0 >= 61.67) {
-      TIER_3 = outer1_7.TIER_2;
+      TIER_3 = tmp.TIER_2;
     }
     if (arg0 >= 95) {
-      TIER_3 = outer1_7.TIER_3;
+      TIER_3 = tmp.TIER_3;
     }
     if (TIER_3 !== first) {
-      guild(sharedValue[11]).runOnJS(result)(TIER_3);
+      guild(sharedValue[11]).runOnJS(c4)(TIER_3);
       const obj = guild(sharedValue[11]);
     }
   };
-  obj = { BoostedGuildTiers, TIER_REACHED_OFFSET: 5, revealedTier: first, runOnJS: guild(sharedValue[11]).runOnJS, setRevealedTier: tmp7 };
+  obj = { BoostedGuildTiers, TIER_REACHED_OFFSET: 5, revealedTier: first, runOnJS: guild(sharedValue[11]).runOnJS, setRevealedTier: tmp9 };
   fn2.__closure = obj;
   fn2.__workletHash = 4844648302516;
   fn2.__initData = closure_15;
   const animatedReaction = obj3.useAnimatedReaction(fn, fn2);
   const items1 = [guild];
-  const fillFactor = React.useMemo(() => guild(sharedValue[12]).getGuildBoostingProgressBarFillFactor(guild), items1).fillFactor;
+  fillFactor = React.useMemo(() => guild(sharedValue[12]).getGuildBoostingProgressBarFillFactor(guild), items1).fillFactor;
   const items2 = [fillFactor, sharedValue, stateFromStores];
   const effect = React.useEffect(() => {
     let result = 100 * fillFactor;
@@ -105,39 +110,37 @@ export default function ProgressBar(guild) {
       window.clearTimeout(closure_1);
     };
   }, items2);
-  obj = { style: tmp.progressBarContainer };
-  obj1 = { style: tmp.progressBar };
-  obj2 = { style: tmp.progressBarScrubber };
-  obj3 = { style: items3 };
+  obj = { style: tmp.progressBarContainer, children: null };
+  obj1 = { style: tmp.progressBar, children: null };
+  obj2 = { style: tmp.progressBarScrubber, children: null };
+  obj3 = { style: items3, children: null };
   items3 = [tmp.progressBarFill, animatedStyle];
-  const obj4 = { useAngle: true, angle: 90 };
-  const tmp2 = stateFromStores(sharedValue[9])();
-  const tmp14 = stateFromStores(sharedValue[14]);
+  const tmp2 = stateFromStores;
+  const tmp3 = sharedValue;
+  let tmp4 = stateFromStores(sharedValue[9])();
+  const tmp16 = stateFromStores(sharedValue[14]);
   let str = "#515359";
-  if (!obj11.isThemeDark(tmp2)) {
-    str = stateFromStores(sharedValue[8]).unsafe_rawColors.PRIMARY_160;
+  if (!obj10.isThemeDark(tmp4)) {
+    str = tmp2(tmp3[8]).unsafe_rawColors.PRIMARY_160;
   }
   const items4 = [str, "#AB77F2"];
-  obj4.colors = items4;
-  obj4.locations = [0.1577, 0.9905];
-  obj4.style = tmp.progressBarGradientFill;
-  obj3.children = callback(tmp14, obj4);
-  const items5 = [callback(stateFromStores(sharedValue[11]).View, obj3), callback(fillFactor, { style: tmp.progressBarTrack })];
-  obj2.children = items5;
+  obj3[1] = closure_8(tmp16, { useAngle: true, angle: 90, colors: items4, locations: [0.1577, 0.9905], style: tmp.progressBarGradientFill });
+  const items5 = [closure_8(stateFromStores(sharedValue[11]).View, obj3), closure_8(fillFactor, { style: tmp.progressBarTrack })];
+  obj2[1] = items5;
   const items6 = [
     closure_9(fillFactor, obj2),
     items.map((tier) => {
-      const obj = { guild, tier, revealedTier: first, useReducedMotion: stateFromStores };
-      let tmp3 = guild.premiumTier <= tier;
-      if (tmp3) {
-        tmp3 = fillFactor > guild(sharedValue[7]).TierMarkerPositions[tier];
+      const obj = { guild, tier, revealedTier: first, useReducedMotion: stateFromStores, isDisabled: null };
+      let tmp4 = guild.premiumTier <= tier;
+      if (tmp4) {
+        tmp4 = fillFactor > guild(sharedValue[7]).TierMarkerPositions[tier];
       }
-      obj.isDisabled = tmp3;
+      obj[4] = tmp4;
       return outer1_8(stateFromStores(sharedValue[7]), obj, tier);
     })
   ];
-  obj1.children = items6;
-  obj.children = closure_9(fillFactor, obj1);
-  return callback(fillFactor, obj);
+  obj1[1] = items6;
+  obj[1] = closure_9(fillFactor, obj1);
+  return closure_8(fillFactor, obj);
 };
 export const PROGRESS_BAR_SPACING = 40;

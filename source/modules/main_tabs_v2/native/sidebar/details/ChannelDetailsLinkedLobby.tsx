@@ -1,77 +1,75 @@
-// Module ID: 15532
-// Function ID: 119225
+// Module ID: 15566
+// Function ID: 15567
 // Name: ChannelDetailsLinkedLobby
-// Dependencies: [31, 27, 653, 33, 4165, 689, 5503, 4161, 1212, 1921, 2]
+// Dependencies: [19, 17, 676, 21, 4189, 712, 5521, 4185, 1236, 1945, 2]
 // Exports: default
 
-// Module 15532 (ChannelDetailsLinkedLobby)
-import "result";
+// Module 15566 (ChannelDetailsLinkedLobby)
+import "noop";
 import { View } from "get ActivityIndicator";
 import { HelpdeskArticles } from "ME";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_5;
+let c5;
 let closure_6;
-let closure_7;
+let error;
 const require = arg1;
-({ Fragment: closure_5, jsxs: closure_6, jsx: closure_7 } = jsxProd);
-_createForOfIteratorHelperLoose = { container: { alignItems: "center" } };
-_createForOfIteratorHelperLoose = { height: 1, width: 48, marginTop: 12, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BORDER_STRONG };
-_createForOfIteratorHelperLoose.divider = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+({ Fragment: c5, jsxs: closure_6, jsx: error } = jsxProd);
+createCacheKey = { container: { alignItems: "center" }, divider: null };
+createCacheKey = { height: 1, width: 48, marginTop: 12, backgroundColor: require("Themes").colors.BORDER_STRONG };
+createCacheKey[1] = createCacheKey;
+createCacheKey = createCacheKey.createStyles(createCacheKey);
 const result = require("ME").fileFinishedImporting("modules/main_tabs_v2/native/sidebar/details/ChannelDetailsLinkedLobby.tsx");
 
 export default function ChannelDetailsLinkedLobby(channel) {
   channel = channel.channel;
-  let divider = _createForOfIteratorHelperLoose();
-  let obj = require(5503) /* useGetOrFetchApplications */;
+  let divider = createCacheKey();
+  let BPDKoA = require;
+  let getArticleURL = dependencyMap;
+  let obj = require(5521) /* useGetOrFetchApplications */;
   const linkedLobby = channel.linkedLobby;
   let application_id;
-  if (null != linkedLobby) {
+  if (linkedLobby != null) {
     application_id = linkedLobby.application_id;
   }
-  let getOrFetchApplication = obj.useGetOrFetchApplication(application_id);
+  let intl = obj.useGetOrFetchApplication(application_id);
   if (null == channel.linkedLobby) {
     return null;
   } else {
-    obj = {};
+    obj = { style: null, children: null };
     const items = [divider.container, channel.containerStyle];
-    obj.style = items;
-    let tmp5 = callback;
-    let Text = require(4161) /* Text */.Text;
-    obj = { variant: "text-sm/normal", color: "text-default" };
-    let obj1 = {};
-    if (null != getOrFetchApplication) {
-      const intl2 = require(1212) /* getSystemLocale */.intl;
-      const obj2 = { applicationName: getOrFetchApplication.name };
-      let formatResult = intl2.format(require(1212) /* getSystemLocale */.t.SgxMJs, obj2);
+    obj[0] = items;
+    let Text = BPDKoA(4185).Text;
+    if (null != intl) {
+      const intl3 = BPDKoA(1236).intl;
+      obj = { applicationName: null };
+      obj[0] = intl.name;
+      let formatResult = intl3.format(BPDKoA(1236).t.SgxMJs, obj);
     } else {
-      const intl = require(1212) /* getSystemLocale */.intl;
-      formatResult = intl.string(require(1212) /* getSystemLocale */.t.yQqVss);
+      const intl2 = BPDKoA(1236).intl;
+      formatResult = intl2.string(BPDKoA(1236).t.yQqVss);
     }
+    const obj1 = { variant: "text-sm/normal", color: "text-default", children: null };
+    const obj2 = { children: null };
     const items1 = [formatResult, "  \u2022  ", ];
-    const intl3 = require(1212) /* getSystemLocale */.intl;
-    const obj3 = {};
-    getOrFetchApplication = importDefault(1921).getArticleURL(HelpdeskArticles.LINKED_LOBBIES);
-    obj3.helpdeskArticle = getOrFetchApplication;
-    items1[2] = intl3.format(require(1212) /* getSystemLocale */.t.BPDKoA, obj3);
-    obj1.children = items1;
-    obj1 = tmp3(closure_5, obj1);
-    obj.children = obj1;
-    const obj6 = importDefault(1921);
-    const tmp4 = View;
-    const tmp8 = closure_5;
-    obj = [, ];
-    obj[0] = tmp5(Text, obj);
-    tmp5 = callback;
-    Text = View;
-    const obj4 = {};
+    intl = BPDKoA(1236).intl;
+    BPDKoA = BPDKoA(1236).t.BPDKoA;
+    const obj3 = { helpdeskArticle: null };
+    getArticleURL = importDefault(1945).getArticleURL;
+    obj3[0] = getArticleURL(HelpdeskArticles.LINKED_LOBBIES);
+    items1[2] = intl.format(BPDKoA, obj3);
+    obj2[0] = items1;
+    obj1[2] = closure_6(closure_5, obj2);
+    const items2 = [closure_7(Text, obj1), ];
+    const obj4 = { style: null };
     divider = divider.divider;
-    obj4.style = divider;
-    obj[1] = callback(View, obj4);
-    obj.children = obj;
-    closure_6(tmp4, obj);
-    const tmp5Result = tmp5(Text, obj);
+    obj4[0] = divider;
+    Text = tmp4(tmp3, obj4);
+    items2[1] = Text;
+    obj[1] = items2;
+    closure_6(View, obj);
+    const tmp5 = closure_5;
+    const tmp8 = importDefault(1945);
   }
 };

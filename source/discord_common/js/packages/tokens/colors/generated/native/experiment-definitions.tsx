@@ -1,9 +1,9 @@
-// Module ID: 692
-// Function ID: 8506
+// Module ID: 715
+// Function ID: 716
 // Name: _private
-// Dependencies: [690, 2]
+// Dependencies: [713, 2]
 
-// Module 692 (_private)
+// Module 715 (_private)
 const Themes = require("items")._private.Themes;
 const result = require("set").fileFinishedImporting("../discord_common/js/packages/tokens/colors/generated/native/experiment-definitions.tsx");
 

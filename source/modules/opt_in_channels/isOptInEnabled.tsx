@@ -1,44 +1,49 @@
-// Module ID: 5771
-// Function ID: 50170
+// Module ID: 5789
+// Function ID: 5790
 // Name: useOptInEnabledForGuild
-// Dependencies: [1838, 3793, 4360, 1850, 653, 566, 2]
+// Dependencies: [1862, 3817, 4385, 1874, 676, 589, 2]
 // Exports: isOptInEnabledForGuild, useOptInEnabledForGuild, useShouldShowOnboardingAdminUpsellForGuild
 
-// Module 5771 (useOptInEnabledForGuild)
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_4 from "_isNativeReflectConstruct";
-import closure_5 from "_isNativeReflectConstruct";
+// Module 5789 (useOptInEnabledForGuild)
+import createGuildRecordFromRust from "createGuildRecordFromRust";
+import getUncachedChannelPermissions from "getUncachedChannelPermissions";
+import updateUserGuildSettingsInternal from "updateUserGuildSettingsInternal";
+import mergeGuildAvatar from "mergeGuildAvatar";
 import ME from "ME";
 
 let closure_6;
-let closure_7;
+let error;
 const require = arg1;
-({ GuildFeatures: closure_6, Permissions: closure_7 } = ME);
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/opt_in_channels/isOptInEnabled.tsx");
+({ GuildFeatures: closure_6, Permissions: error } = ME);
+const result = require("updateUserGuildSettingsInternal").fileFinishedImporting("modules/opt_in_channels/isOptInEnabled.tsx");
 
 export const useOptInEnabledForGuild = function useOptInEnabledForGuild(guild_id) {
   const _require = guild_id;
-  const items = [closure_4, _createForOfIteratorHelperLoose, closure_5];
-  return _require(566).useStateFromStores(items, () => {
+  const items = [updateUserGuildSettingsInternal, createGuildRecordFromRust, mergeGuildAvatar];
+  return _require(589).useStateFromStores(items, () => {
     let isOptInEnabledResult = outer1_4.isOptInEnabled(closure_0);
     const guild = outer1_2.getGuild(closure_0);
-    let hasItem;
-    if (null != guild) {
+    let flag;
+    if (guild != null) {
       const features = guild.features;
-      hasItem = features.has(outer1_6.COMMUNITY);
+      flag = features.has(outer1_6.COMMUNITY);
     }
-    let tmp5 = null != hasItem && hasItem;
+    if (flag == null) {
+      flag = false;
+    }
     const currentUser = outer1_5.getCurrentUser();
-    let isStaffResult;
-    if (null != currentUser) {
-      isStaffResult = currentUser.isStaff();
+    let flag2;
+    if (currentUser != null) {
+      flag2 = currentUser.isStaff();
+    }
+    if (flag2 == null) {
+      flag2 = false;
     }
     if (isOptInEnabledResult) {
-      if (!tmp5) {
-        tmp5 = tmp7;
+      if (!flag) {
+        flag = flag2;
       }
-      isOptInEnabledResult = tmp5;
+      isOptInEnabledResult = flag;
     }
     return isOptInEnabledResult;
   });
@@ -59,17 +64,19 @@ export const isOptInEnabledForGuild = function isOptInEnabledForGuild(_guildId) 
 };
 export const useShouldShowOnboardingAdminUpsellForGuild = function useShouldShowOnboardingAdminUpsellForGuild(arg0) {
   const _require = arg0;
-  const items = [_createForOfIteratorHelperLoose, _isNativeReflectConstruct];
-  return _require(566).useStateFromStores(items, () => {
+  const items = [createGuildRecordFromRust, getUncachedChannelPermissions];
+  return _require(589).useStateFromStores(items, () => {
     const guild = outer1_2.getGuild(closure_0);
-    let hasItem;
+    let flag;
     const canResult = outer1_3.can(outer1_7.MANAGE_GUILD, guild);
-    if (null != guild) {
+    if (guild != null) {
       const features = guild.features;
-      hasItem = features.has(outer1_6.GUILD_ONBOARDING_EVER_ENABLED);
+      flag = features.has(outer1_6.GUILD_ONBOARDING_EVER_ENABLED);
+    }
+    if (flag == null) {
+      flag = false;
     }
     const canResult1 = outer1_3.can(outer1_7.MANAGE_ROLES, guild);
-    const tmp6 = null != hasItem && hasItem;
-    return null != guild && canResult && outer1_3.can(outer1_7.MANAGE_ROLES, guild) && !(null != hasItem && hasItem);
+    return null != guild && canResult && outer1_3.can(outer1_7.MANAGE_ROLES, guild) && !flag;
   });
 };

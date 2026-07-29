@@ -1,186 +1,125 @@
-// Module ID: 7696
-// Function ID: 61402
-// Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 1348, 4384, 653, 6127, 6160, 4386, 5746, 21, 566, 686, 2]
+// Module ID: 7719
+// Function ID: 7720
+// Name: handleMessageSendFailedAutomod
+// Dependencies: [1372, 4407, 676, 6145, 6178, 4409, 5764, 11, 589, 709, 2]
 
-// Module 7696 (_isNativeReflectConstruct)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_4 from "ME";
-import set from "set";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
-import closure_8 from "_isNativeReflectConstruct";
-import closure_9 from "_isNativeReflectConstruct";
+// Module 7719 (handleMessageSendFailedAutomod)
+import ensureGuildLoaded from "ensureGuildLoaded";
+import reinjectEphemerals from "reinjectEphemerals";
 import ME from "ME";
+import { PersistedStore } from "initialize";
 
-let closure_10;
-let closure_11;
-let closure_12;
+let c5;
+let closure_6;
+let error;
 const require = arg1;
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
-  }
-  const result = _isNativeReflectConstruct();
-}
-function removeFailedMessage(id) {
-  if (null != table[id]) {
-    delete tmp[tmp2];
-  }
-  closure_14 = closure_14 + 1;
-}
 function handleMessageSendFailedAutomod(messageData) {
   messageData = messageData.messageData;
-  let obj = require(6127) /* _isNativeReflectConstruct */;
+  let obj = require(6145) /* items */;
   const failedMessageId = obj.getFailedMessageId(messageData);
-  obj = { id: failedMessageId, isBlockedEdit: require(6127) /* _isNativeReflectConstruct */.isMessageDataEdit(messageData), messageData };
-  const obj3 = require(6127) /* _isNativeReflectConstruct */;
-  obj.errorMessage = require(6160) /* _callSuper */.getAutomodErrorMessage(messageData, messageData.errorResponseBody);
-  closure_13[failedMessageId] = obj;
-  closure_14 = closure_14 + 1;
+  obj = { id: failedMessageId, isBlockedEdit: null, messageData: null, errorMessage: null };
+  obj[1] = require(6145) /* items */.isMessageDataEdit(messageData);
+  obj[2] = messageData;
+  const obj3 = require(6145) /* items */;
+  obj[3] = require(6178) /* getAutomodErrorMessageFromErrorResponse */.getAutomodErrorMessage(messageData, messageData.errorResponseBody);
+  closure_8[failedMessageId] = obj;
+  closure_9 = closure_9 + 1;
   return true;
 }
 function handleLoadMessages(messages) {
   messages = messages.messages;
   channel = channel.getChannel(messages.channelId);
   let guildId;
-  if (null != channel) {
+  if (channel != null) {
     guildId = channel.getGuildId();
   }
   if (null == guildId) {
     return false;
   } else {
     const reduced = messages.reduce((arg0, type) => {
-      let tmp = arg0;
-      if (type.type === outer1_12.AUTO_MODERATION_ACTION) {
+      if (type.type === constants.AUTO_MODERATION_ACTION) {
         const embeds = type.embeds;
         let someResult;
-        if (null != embeds) {
-          someResult = embeds.some((type) => type.type === outer2_11.AUTO_MODERATION_NOTIFICATION);
+        if (embeds != null) {
+          someResult = embeds.some((type) => type.type === constants.AUTO_MODERATION_NOTIFICATION);
         }
-        tmp = arg0;
+        let tmp3 = arg0;
         if (someResult) {
           if (null == arg0) {
             const id = type.id;
           } else {
-            const obj = outer1_1(outer1_2[12]);
+            const obj = callback(table[7]);
           }
-          tmp = id;
+          tmp3 = id;
         }
+        return tmp3;
+      } else {
+        return arg0;
       }
-      return tmp;
-    }, dependencyMap[guildId]);
-    let flag = null != reduced;
+    }, dependencyMap2[guildId]);
+    let flag = null != reduced && tmp2[guildId] !== reduced;
     if (flag) {
-      flag = dependencyMap[guildId] !== reduced;
-    }
-    if (flag) {
-      dependencyMap[guildId] = reduced;
+      tmp2[guildId] = reduced;
       flag = true;
     }
     return flag;
   }
 }
-({ AbortCodes: closure_10, MessageEmbedTypes: closure_11, MessageTypes: closure_12 } = ME);
-let closure_13 = {};
-let c14 = 0;
-let closure_15 = {};
-let closure_16 = {};
-let tmp3 = ((PersistedStore) => {
-  class GuildAutomodMessageStore {
-    constructor() {
-      self = this;
-      tmp = outer1_3(this, GuildAutomodMessageStore);
-      obj = outer1_6(GuildAutomodMessageStore);
-      tmp2 = outer1_5;
-      if (outer1_17()) {
-        tmp6 = globalThis;
-        _Reflect = Reflect;
-        tmp7 = outer1_6;
-        tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, outer1_6(self).constructor);
-      } else {
-        tmp3 = arguments;
-        tmp4 = arguments;
-        constructResult = obj(...arguments);
-      }
-      return tmp2(self, constructResult);
-    }
+({ AbortCodes: c5, MessageEmbedTypes: closure_6, MessageTypes: error } = ME);
+let closure_8 = {};
+let c9 = 0;
+let closure_10 = {};
+let closure_11 = {};
+class GuildAutomodMessageStore extends PersistedStore {
+}
+const prototype = GuildAutomodMessageStore.prototype;
+prototype["initialize"] = function initialize(arg0) {
+  let closure_10;
+  let closure_8;
+  this.waitFor(ensureGuildLoaded, reinjectEphemerals);
+  if (null != arg0) {
+    ({ automodFailedMessages: closure_8, mentionRaidDetectionByGuild: closure_10 } = arg0);
   }
-  callback2(GuildAutomodMessageStore, PersistedStore);
-  let obj = {
-    key: "initialize",
-    value(arg0) {
-      let outer1_13;
-      let outer1_15;
-      this.waitFor(outer1_8, outer1_9);
-      if (null != arg0) {
-        ({ automodFailedMessages: outer1_13, mentionRaidDetectionByGuild: outer1_15 } = arg0);
-      }
+};
+prototype["getState"] = function getState() {
+  return { automodFailedMessages: closure_8, mentionRaidDetectionByGuild: closure_10, lastIncidentAlertMessage: closure_11 };
+};
+prototype["getMessage"] = function getMessage(arg0) {
+  let tmp = null;
+  if (null != arg0) {
+    let tmp3 = dependencyMap[arg0];
+    if (tmp3 == null) {
+      tmp3 = null;
     }
-  };
-  const items = [obj, , , , , ];
-  obj = {
-    key: "getState",
-    value() {
-      return { automodFailedMessages: outer1_13, mentionRaidDetectionByGuild: outer1_15, lastIncidentAlertMessage: outer1_16 };
-    }
-  };
-  items[1] = obj;
-  obj = {
-    key: "getMessage",
-    value(arg0) {
-      let tmp = null;
-      if (null != arg0) {
-        let tmp4 = null;
-        if (null != outer1_13[arg0]) {
-          tmp4 = tmp3;
-        }
-        tmp = tmp4;
-      }
-      return tmp;
-    }
-  };
-  items[2] = obj;
-  items[3] = {
-    key: "getMessagesVersion",
-    value() {
-      return outer1_14;
-    }
-  };
-  items[4] = {
-    key: "getMentionRaidDetected",
-    value(arg0) {
-      let tmp2 = null;
-      if (null != outer1_15[arg0]) {
-        tmp2 = tmp;
-      }
-      return tmp2;
-    }
-  };
-  items[5] = {
-    key: "getLastIncidentAlertMessage",
-    value(arg0) {
-      let tmp2 = null;
-      if (null != outer1_16[arg0]) {
-        tmp2 = tmp;
-      }
-      return tmp2;
-    }
-  };
-  return callback(GuildAutomodMessageStore, items);
-})(require("initialize").PersistedStore);
-tmp3.displayName = "GuildAutomodMessageStore";
-tmp3.persistKey = "GuildAutomodMessages";
-tmp3 = new tmp3(require("dispatcher"), {
+    tmp = tmp3;
+  }
+  return tmp;
+};
+prototype["getMessagesVersion"] = function getMessagesVersion() {
+  return c9;
+};
+prototype["getMentionRaidDetected"] = function getMentionRaidDetected(arg0) {
+  let tmp = table[arg0];
+  if (tmp == null) {
+    tmp = null;
+  }
+  return tmp;
+};
+prototype["getLastIncidentAlertMessage"] = function getLastIncidentAlertMessage(arg0) {
+  let tmp = dependencyMap2[arg0];
+  if (tmp == null) {
+    tmp = null;
+  }
+  return tmp;
+};
+GuildAutomodMessageStore.displayName = "GuildAutomodMessageStore";
+GuildAutomodMessageStore.persistKey = "GuildAutomodMessages";
+const guildAutomodMessageStore = new GuildAutomodMessageStore(require("dispatcher"), {
   CONNECTION_OPEN: function handleConnectionOpen() {
-    let flag = 0 !== Object.keys(closure_13).length;
+    let flag = 0 !== Object.keys(closure_8).length;
     if (flag) {
-      closure_13 = {};
-      closure_14 = closure_14 + 1;
+      closure_8 = {};
+      closure_9 = closure_9 + 1;
       flag = true;
     }
     return flag;
@@ -196,33 +135,35 @@ tmp3 = new tmp3(require("dispatcher"), {
     } else if (message.type !== constants2.AUTO_MODERATION_ACTION) {
       return false;
     } else {
-      const messageRecord = require(4386) /* createMinimalMessageRecord */.createMessageRecord(message);
-      const obj2 = require(4386) /* createMinimalMessageRecord */;
-      const tmp10 = !require(5746) /* getEmbedFieldFromMessage */.isAutomodMessageRecord(messageRecord);
-      let tmp5 = !tmp10;
-      if (!tmp10) {
-        const tmp3 = !require(5746) /* getEmbedFieldFromMessage */.isAutomodNotification(messageRecord);
-        let flag = !tmp3;
-        if (!tmp3) {
-          closure_16[guildId] = messageRecord.id;
+      const messageRecord = require(4409) /* createMinimalMessageRecord */.createMessageRecord(message);
+      const obj = require(4409) /* createMinimalMessageRecord */;
+      const tmp = require;
+      let result = require(5764) /* getDecisionOutcomeFromMessage */.isAutomodMessageRecord(messageRecord);
+      if (result) {
+        let flag = tmp(5764).isAutomodNotification(messageRecord);
+        if (flag) {
+          closure_11[guildId] = messageRecord.id;
           flag = true;
         }
-        tmp5 = flag;
-        const obj = require(5746) /* getEmbedFieldFromMessage */;
+        result = flag;
+        const tmpResult = tmp(5764);
       }
-      return tmp5;
+      return result;
     }
   },
   MESSAGE_SEND_FAILED_AUTOMOD: handleMessageSendFailedAutomod,
   MESSAGE_EDIT_FAILED_AUTOMOD: handleMessageSendFailedAutomod,
-  REMOVE_AUTOMOD_MESSAGE_NOTICE: function handleMessageNoticeRemove(messageId) {
-    removeFailedMessage(messageId.messageId);
+  REMOVE_AUTOMOD_MESSAGE_NOTICE: function handleMessageNoticeRemove(arg0) {
+    if (null != dependencyMap[arg0.messageId]) {
+      delete tmp[tmp2];
+    }
+    closure_9 = closure_9 + 1;
     return true;
   },
   MESSAGE_END_EDIT: function handleMessageEndEdit(response) {
     response = response.response;
     let body;
-    if (null != response) {
+    if (response != null) {
       body = response.body;
     }
     if (null == body) {
@@ -234,13 +175,16 @@ tmp3 = new tmp3(require("dispatcher"), {
       if (null == id) {
         return false;
       } else {
-        removeFailedMessage(id);
+        if (null != dependencyMap[id]) {
+          delete tmp[tmp2];
+        }
+        closure_9 = closure_9 + 1;
       }
     }
   },
   AUTO_MODERATION_MENTION_RAID_DETECTION: function handleMentionRaidDetection(decisionId) {
     const guildId = decisionId.guildId;
-    closure_15[guildId] = { guildId, decisionId: decisionId.decisionId, suspiciousMentionActivityUntil: decisionId.suspiciousMentionActivityUntil };
+    closure_10[guildId] = { guildId, decisionId: decisionId.decisionId, suspiciousMentionActivityUntil: decisionId.suspiciousMentionActivityUntil };
     return true;
   },
   AUTO_MODERATION_MENTION_RAID_NOTICE_DISMISS: function handleMentionRaidNoticeDismiss(arg0) {
@@ -248,6 +192,6 @@ tmp3 = new tmp3(require("dispatcher"), {
     return true;
   }
 });
-let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/guild_automod/GuildAutomodMessageStore.tsx");
+let result = require("ME").fileFinishedImporting("modules/guild_automod/GuildAutomodMessageStore.tsx");
 
-export default tmp3;
+export default guildAutomodMessageStore;

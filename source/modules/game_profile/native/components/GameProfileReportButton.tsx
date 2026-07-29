@@ -1,15 +1,15 @@
-// Module ID: 11918
-// Function ID: 92104
+// Module ID: 11942
+// Function ID: 11943
 // Name: GameProfileReportButton
-// Dependencies: [31, 33, 4133, 8462, 4372, 11919, 1935, 11919, 4578, 1212, 2]
+// Dependencies: [19, 21, 4157, 8486, 4395, 11943, 1959, 11943, 4600, 1236, 2]
 // Exports: default
 
-// Module 11918 (GameProfileReportButton)
-import result from "result";
+// Module 11942 (GameProfileReportButton)
+import noop from "noop";
 import { jsx } from "jsxProd";
 
 const require = arg1;
-const result = require("showActionSheet").fileFinishedImporting("modules/game_profile/native/components/GameProfileReportButton.tsx");
+const result = require("ACTION_SHEET_HEIGHT_HALF").fileFinishedImporting("modules/game_profile/native/components/GameProfileReportButton.tsx");
 
 export default function GameProfileReportButton(applicationId) {
   applicationId = applicationId.applicationId;
@@ -23,9 +23,9 @@ export default function GameProfileReportButton(applicationId) {
     const obj2 = trackAction(outer1_2[4]);
     obj2.pushLazy(applicationId(outer1_2[6])(outer1_2[5], outer1_2.paths), obj, applicationId(outer1_2[7]).MODAL_KEY);
   }, items);
-  let obj = { variant: "secondary", size: "md" };
-  const intl = applicationId(1212).intl;
-  obj.text = intl.string(applicationId(1212).t.qP2cXd);
-  obj.onPress = callback;
-  return jsx(applicationId(4578).Button, { variant: "secondary", size: "md" });
+  let obj = { variant: "secondary", size: "md", text: null, onPress: null };
+  const intl = applicationId(1236).intl;
+  obj[2] = intl.string(applicationId(1236).t.qP2cXd);
+  obj[3] = callback;
+  return jsx(applicationId(4600).Button, { variant: "secondary", size: "md", text: null, onPress: null });
 };

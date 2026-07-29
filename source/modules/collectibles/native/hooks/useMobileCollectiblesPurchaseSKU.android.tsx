@@ -1,29 +1,27 @@
-// Module ID: 11864
-// Function ID: 91895
+// Module ID: 11888
+// Function ID: 11889
 // Name: useMobileCollectiblesPurchaseSKU
-// Dependencies: [1850, 566, 8692, 9738, 2]
+// Dependencies: [1874, 589, 8716, 9760, 2]
 // Exports: default
 
-// Module 11864 (useMobileCollectiblesPurchaseSKU)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 11888 (useMobileCollectiblesPurchaseSKU)
+import mergeGuildAvatar from "mergeGuildAvatar";
 
 const require = arg1;
-const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/collectibles/native/hooks/useMobileCollectiblesPurchaseSKU.android.tsx");
+const result = require("hasAtLeastOneGPlaySynced").fileFinishedImporting("modules/collectibles/native/hooks/useMobileCollectiblesPurchaseSKU.android.tsx");
 
 export default function useMobileCollectiblesPurchaseSKU(product) {
   product = product.product;
-  let obj = Object.create(null);
-  obj.product = 0;
-  const merged = Object.assign(product, obj);
-  obj = require(566) /* initialize */;
-  const items = [_isNativeReflectConstruct];
-  const stateFromStores = obj.useStateFromStores(items, () => outer1_3.getCurrentUser());
-  const collectibleGoogleSkuId = require(8692) /* _createForOfIteratorHelperLoose */.getCollectibleGoogleSkuId(product, stateFromStores);
+  const merged = Object.assign(product, Object.create(null));
+  let obj = require(589) /* initialize */;
+  const items = [mergeGuildAvatar];
+  const stateFromStores = obj.useStateFromStores(items, () => currentUser.getCurrentUser());
+  const collectibleGoogleSkuId = require(8716) /* hasAtLeastOneGPlaySynced */.getCollectibleGoogleSkuId(product, stateFromStores);
   obj = {};
-  const obj2 = require(8692) /* _createForOfIteratorHelperLoose */;
+  const obj2 = require(8716) /* hasAtLeastOneGPlaySynced */;
   const merged1 = Object.assign(merged);
-  obj["skuId"] = product.skuId;
-  obj["platformSkuId"] = collectibleGoogleSkuId;
-  obj["isFreeForStaffSelfPurchase"] = true;
-  return importDefault(9738)(obj);
+  obj.skuId = product.skuId;
+  obj.platformSkuId = collectibleGoogleSkuId;
+  obj.isFreeForStaffSelfPurchase = true;
+  return importDefault(9760)(obj);
 };

@@ -1,13 +1,13 @@
-// Module ID: 16736
-// Function ID: 130362
+// Module ID: 16772
+// Function ID: 16773
 // Name: promise
-// Dependencies: [1348, 16733, 10788, 10773, 2]
+// Dependencies: [1372, 16769, 10812, 10797, 2]
 
-// Module 16736 (promise)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 16772 (promise)
+import ensureGuildLoaded from "ensureGuildLoaded";
 
 const require = arg1;
-const result = require("getDeafStates").fileFinishedImporting("modules/headless_tasks/android/ToggleDeafen.tsx");
+const result = require("useDeafStates").fileFinishedImporting("modules/headless_tasks/android/ToggleDeafen.tsx");
 
 export default (channelId) => {
   channelId = channelId.channelId;

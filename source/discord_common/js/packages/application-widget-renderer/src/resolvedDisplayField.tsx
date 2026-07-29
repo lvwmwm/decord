@@ -1,63 +1,43 @@
-// Module ID: 12048
-// Function ID: 92936
-// Name: decimalToClampedPercentage
-// Dependencies: [12049, 12050, 2]
-// Exports: resolveProgressPercentage, resolveSingleStringOrSkeleton, resolveStatComponentValues, resolveTextComponentValues
+// Module ID: 12072
+// Function ID: 12073
+// Name: resolveTextComponentValues
+// Dependencies: [12073, 12074, 2]
+// Exports: decimalToClampedPercentage, resolveProgressPercentage, resolveSingleStringOrSkeleton, resolveStatComponentValues, resolveTextComponentValues
 
-// Module 12048 (decimalToClampedPercentage)
-function decimalToClampedPercentage(value) {
-  let num = 0;
-  if (!isNaN(value)) {
-    const _Math = Math;
-    const _Math2 = Math;
-    const _Math3 = Math;
-    num = Math.min(Math.max(Math.round(100 * value), 0), 100);
-  }
-  return num;
-}
-const result = require("set").fileFinishedImporting("../discord_common/js/packages/application-widget-renderer/src/resolvedDisplayField.tsx");
+// Module 12072 (resolveTextComponentValues)
+let result = require("set").fileFinishedImporting("../discord_common/js/packages/application-widget-renderer/src/resolvedDisplayField.tsx");
 
 export const resolveTextComponentValues = function resolveTextComponentValues(subtitle_1, resolveFieldValue, numberFormat, arg3) {
   let flag = arg3;
-  let flag2 = arg4;
   if (arg3 === undefined) {
     flag = false;
   }
-  if (flag2 === undefined) {
+  let flag2 = arg4;
+  if (arg4 === undefined) {
     flag2 = false;
   }
   if (null == subtitle_1) {
-    let obj = {};
-    if (flag) {
-      obj.status = "skeleton";
-      let tmp12 = obj;
-    } else {
-      obj.status = "hidden";
-      tmp12 = obj;
-    }
-    return tmp12;
+    return flag ? { status: "skeleton" } : { status: "hidden" };
   } else {
-    const items = [require(12049) /* resolveFieldValue */.ResolvedValueType.STRING, require(12049) /* resolveFieldValue */.ResolvedValueType.NUMBER];
+    const items = [require(12073) /* resolveFieldValue */.ResolvedValueType.STRING, require(12073) /* resolveFieldValue */.ResolvedValueType.NUMBER];
     let iter = resolveFieldValue(subtitle_1.fields.text, items);
     let str = null;
     if (!flag2) {
-      const items1 = [require(12049) /* resolveFieldValue */.ResolvedValueType.STRING, require(12049) /* resolveFieldValue */.ResolvedValueType.NUMBER];
+      const items1 = [tmp9(12073).ResolvedValueType.STRING, tmp9(12073).ResolvedValueType.NUMBER];
       str = resolveFieldValue(subtitle_1.fields.label, items1);
     }
     if (null == iter) {
       if (null == str) {
-        obj = { status: "skeleton" };
-        return obj;
+        return { status: "skeleton" };
       }
     }
-    const items2 = [require(12049) /* resolveFieldValue */.ResolvedValueType.MEDIA];
-    const tmp5 = resolveFieldValue(subtitle_1.fields.icon, items2);
-    obj = { status: "value" };
-    let str4 = "";
+    const items2 = [require(12073) /* resolveFieldValue */.ResolvedValueType.MEDIA];
+    const tmp2 = resolveFieldValue(subtitle_1.fields.icon, items2);
+    let str3 = "";
     if (null != str) {
-      str4 = "";
+      str3 = "";
       if ("" !== str.value) {
-        if ("number" === typeof str.value) {
+        if (typeof str.value === "Object") {
           let formatResult = numberFormat.format(str.value);
         } else {
           formatResult = str.value;
@@ -67,11 +47,11 @@ export const resolveTextComponentValues = function resolveTextComponentValues(su
         const combined = "" + formatResult + ": ";
       }
     }
-    let str7 = "\u2013";
+    let str5 = "\u2013";
     if (null != iter) {
-      str7 = "\u2013";
+      str5 = "\u2013";
       if ("" !== iter.value) {
-        if ("number" === typeof iter.value) {
+        if (typeof iter.value === "Object") {
           iter = iter.value;
           let formatResult1 = numberFormat.format(iter);
         } else {
@@ -79,17 +59,17 @@ export const resolveTextComponentValues = function resolveTextComponentValues(su
         }
       }
     }
+    const obj = { status: "value", text: null, icon: null };
     const _HermesInternal2 = HermesInternal;
-    obj.text = "" + str4 + str7;
+    obj[1] = "" + str3 + str5;
     let media;
-    if (null != tmp5) {
-      media = tmp5.media;
+    if (tmp2 != null) {
+      media = tmp2.media;
     }
-    let tmp11 = null;
-    if (null != media) {
-      tmp11 = media;
+    if (media == null) {
+      media = null;
     }
-    obj.icon = tmp11;
+    obj[2] = media;
     return obj;
   }
 };
@@ -99,85 +79,109 @@ export const resolveStatComponentValues = function resolveStatComponentValues(fi
     flag = false;
   }
   if (null == fields) {
-    let tmp6 = null;
+    let tmp4 = null;
     if (flag) {
-      let obj = {};
-      obj = { status: "skeleton" };
-      obj.value = obj;
-      const obj1 = { status: "skeleton" };
-      obj.label = obj1;
-      tmp6 = obj;
+      let obj = { value: null, label: null };
+      obj[0] = { status: "skeleton" };
+      obj[1] = { status: "skeleton" };
+      tmp4 = obj;
     }
-    return tmp6;
+    return tmp4;
   } else {
-    const items = [require(12049) /* resolveFieldValue */.ResolvedValueType.STRING, require(12049) /* resolveFieldValue */.ResolvedValueType.NUMBER];
+    const items = [require(12073) /* resolveFieldValue */.ResolvedValueType.STRING, require(12073) /* resolveFieldValue */.ResolvedValueType.NUMBER];
     const iter = closure_1(fields.fields.value, items);
-    const items1 = [require(12049) /* resolveFieldValue */.ResolvedValueType.STRING];
+    const items1 = [require(12073) /* resolveFieldValue */.ResolvedValueType.STRING];
     const iter2 = closure_1(fields.fields.label, items1);
-    const items2 = [require(12049) /* resolveFieldValue */.ResolvedValueType.MEDIA];
-    const tmp9 = closure_1(fields.fields.icon, items2);
-    const obj2 = {};
+    const items2 = [require(12073) /* resolveFieldValue */.ResolvedValueType.MEDIA];
+    const tmp8 = closure_1(fields.fields.icon, items2);
     if (null == iter) {
       obj = { status: "skeleton" };
-      let obj3 = obj;
     } else {
-      obj3 = { status: "value" };
-      if (iter.type === require(12049) /* resolveFieldValue */.ResolvedValueType.STRING) {
+      if (iter.type === tmp6(12073).ResolvedValueType.STRING) {
         let formatResult = iter.value;
-      } else if (iter.presentationType === require(12050) /* ApplicationWidgetFieldPresentationType */.ApplicationWidgetFieldPresentationType.DURATION) {
+      } else if (iter.presentationType === tmp6(12074).ApplicationWidgetFieldPresentationType.DURATION) {
         formatResult = formatDurationNarrow(iter.value);
       } else {
         formatResult = closure_2.format(iter.value);
       }
-      obj3.text = formatResult;
+      obj = { status: "value", text: null, icon: null };
+      obj[1] = formatResult;
       let media;
-      if (null != tmp9) {
-        media = tmp9.media;
+      if (tmp8 != null) {
+        media = tmp8.media;
       }
-      let tmp5 = null;
-      if (null != media) {
-        tmp5 = media;
+      if (media == null) {
+        media = null;
       }
-      obj3.icon = tmp5;
+      obj[2] = media;
     }
-    obj2.value = obj3;
+    obj = { value: null, label: null };
+    obj[0] = obj;
     if (null == fields.fields.label) {
-      const obj4 = { status: "hidden" };
-      let obj6 = obj4;
+      let obj1 = { status: "hidden" };
     } else if (null == iter2) {
-      const obj5 = { status: "skeleton" };
-      obj6 = obj5;
+      obj1 = { status: "skeleton" };
     } else {
-      obj6 = { status: "value", text: iter2.value };
+      obj1 = { status: "value", text: null };
+      obj1[1] = iter2.value;
     }
-    obj2.label = obj6;
-    return obj2;
+    obj[1] = obj1;
+    return obj;
   }
 };
 export const resolveSingleStringOrSkeleton = function resolveSingleStringOrSkeleton(componentConfig, description, resolveFieldValue) {
   let tmp;
-  if (null != componentConfig) {
+  if (componentConfig != null) {
     tmp = componentConfig.fields[description];
   }
-  const items = [require(12049) /* resolveFieldValue */.ResolvedValueType.STRING];
+  const items = [require(12073) /* resolveFieldValue */.ResolvedValueType.STRING];
   const iter = resolveFieldValue(tmp, items);
   if (null == iter) {
     let obj = { status: "skeleton" };
   } else {
-    obj = { status: "value", text: iter.value };
+    obj = { status: "value", text: null };
+    obj[1] = iter.value;
   }
   return obj;
 };
-export { decimalToClampedPercentage };
+export const decimalToClampedPercentage = function decimalToClampedPercentage(value) {
+  let num = 0;
+  if (!isNaN(value)) {
+    const _Math = Math;
+    const _Math2 = Math;
+    const _Math3 = Math;
+    num = Math.min(Math.max(Math.round(100 * value), 0), 100);
+  }
+  return num;
+};
 export const resolveProgressPercentage = function resolveProgressPercentage(iter, iter2) {
+  let num = iter;
   if (null == iter) {
     return 0;
   } else if (null == iter2) {
-    let num = decimalToClampedPercentage(iter.value);
-  } else {
+    const value = num.value;
+    const _isNaN2 = isNaN;
     num = 0;
+    if (!isNaN(value)) {
+      const _Math4 = Math;
+      const _Math5 = Math;
+      const _Math6 = Math;
+      num = Math.min(Math.max(Math.round(100 * value), 0), 100);
+    }
+    let num2 = num;
+  } else {
+    num2 = 0;
     if (0 !== iter2.value) {
-      num = decimalToClampedPercentage(iter.value / iter2.value);
+      const result = num.value / iter2.value;
+      const _isNaN = isNaN;
+      let num3 = 0;
+      if (!isNaN(result)) {
+        const _Math = Math;
+        const _Math2 = Math;
+        const _Math3 = Math;
+        num3 = Math.min(Math.max(Math.round(100 * result), 0), 100);
+      }
+      num2 = num3;
     }
   }
 };

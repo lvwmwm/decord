@@ -1,22 +1,22 @@
-// Module ID: 15655
-// Function ID: 120559
+// Module ID: 15690
+// Function ID: 15691
 // Name: UnmuteOptions
-// Dependencies: [31, 27, 1348, 1838, 3802, 1850, 653, 33, 4165, 689, 6058, 5113, 5108, 10285, 5198, 1273, 10287, 4161, 1212, 4355, 10288, 1456, 10349, 10284, 1457, 624, 9094, 1557, 2]
+// Dependencies: [19, 17, 1372, 1862, 3826, 1874, 676, 21, 4189, 712, 6076, 5135, 5130, 10306, 5220, 1297, 10308, 4185, 1236, 4380, 10309, 1480, 10370, 10305, 1481, 647, 9118, 1581, 2]
 
-// Module 15655 (UnmuteOptions)
-import importAllResult from "result";
-import { View } from "useSafeAreaInsets";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_6 from "_createForOfIteratorHelperLoose";
-import closure_7 from "_isNativeReflectConstruct";
-import closure_8 from "_isNativeReflectConstruct";
+// Module 15690 (UnmuteOptions)
+import importAllResult from "computeChannelName";
+import { View } from "Text";
+import ensureGuildLoaded from "ensureGuildLoaded";
+import createGuildRecordFromRust from "createGuildRecordFromRust";
+import upsertRelationship from "upsertRelationship";
+import mergeGuildAvatar from "mergeGuildAvatar";
 import { ChannelSettingsSections } from "ME";
-import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import jsxProd from "useNavigation";
+import createCacheKey from "createCacheKey";
 
-let closure_10;
-let closure_11;
+let c10;
 let closure_12;
+let unpackModuleId;
 const require = arg1;
 function UnmuteOptions(channel) {
   channel = channel.channel;
@@ -24,44 +24,45 @@ function UnmuteOptions(channel) {
   const items = [, , ];
   ({ guild_id: arr[0], id: arr[1] } = channel);
   items[2] = navigation;
-  let obj = { style: callback3().options };
+  let obj = { style: callback3().options, children: null };
   const callback = importAllResult.useCallback(() => {
     navigation.goBack();
     channel(outer1_2[13]).handleUnmutePress(channel.id, channel.guild_id);
   }, items);
-  obj = {};
-  obj = { disableColor: true, source: navigation(10287) };
-  obj.icon = callback(channel(1273).Icon, obj);
-  const obj1 = { variant: "text-md/semibold", color: "mobile-text-heading-primary" };
-  const intl = channel(1212).intl;
-  const obj2 = {};
+  obj = { icon: null, label: null, onPress: null, start: true, end: true };
+  obj = { disableColor: true, source: null };
+  obj[1] = navigation(10308);
+  obj[0] = callback(channel(1297).Icon, obj);
+  const obj1 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: null };
+  const intl = channel(1236).intl;
+  const obj2 = { name: null };
   const tmp = callback3();
   const tmp3 = closure_11;
   const tmp4 = View;
-  obj2.name = channel(4355).computeChannelName(channel, closure_8, closure_7, true);
-  obj1.children = intl.format(channel(1212).t["eC+9rj"], obj2);
-  obj.label = callback(channel(4161).Text, obj1);
-  obj.onPress = callback;
-  obj.start = true;
-  obj.end = true;
-  const items1 = [callback(channel(5198).TableRow, obj), ];
-  const obj3 = { muteConfig: channel.muteConfig };
-  const obj6 = channel(4355);
   const tmp5 = callback;
-  const tmp6 = navigation(10288);
-  const MuteSettingType = channel(10288).MuteSettingType;
-  obj3.type = channel.isPrivate() ? MuteSettingType.DM : MuteSettingType.CHANNEL;
+  obj2[0] = channel(4380).computeChannelName(channel, mergeGuildAvatar, upsertRelationship, true);
+  obj1[2] = intl.format(channel(1236).t["eC+9rj"], obj2);
+  obj[1] = callback(channel(4185).Text, obj1);
+  obj[2] = callback;
+  const items1 = [callback(channel(5220).TableRow, obj), ];
+  const obj3 = { muteConfig: channel.muteConfig, type: null };
+  const obj6 = channel(4380);
+  const tmp6 = navigation(10309);
+  const MuteSettingType = channel(10309).MuteSettingType;
+  obj3[1] = channel.isPrivate() ? MuteSettingType.DM : MuteSettingType.CHANNEL;
   items1[1] = tmp5(tmp6, obj3);
-  obj.children = items1;
+  obj[1] = items1;
   return tmp3(tmp4, obj);
 }
 function MuteOptions(channel) {
   channel = channel.channel;
   const applicationId = channel.applicationId;
   const navigation = channel.navigation;
+  let memo;
+  let closure_4;
   memo = memo.useMemo(() => channel(navigation[13]).getMuteOptions(), []);
   const items = [channel, navigation, applicationId];
-  let closure_4 = memo.useCallback((muteDurationSeconds) => {
+  closure_4 = memo.useCallback((muteDurationSeconds) => {
     navigation.goBack();
     let obj = channel(navigation[13]);
     obj = {
@@ -70,44 +71,46 @@ function MuteOptions(channel) {
       onOptionPress(arg0) {
         let mute_config;
         let muted;
-        let obj = outer1_0;
+        let obj = closure_0;
         ({ muted, mute_config } = arg0);
         if (mute_config === undefined) {
           mute_config = null;
         }
         if (undefined !== muted) {
           if (obj.isThread()) {
-            obj = { muted };
-            let tmp25 = null;
-            if (null != mute_config) {
-              tmp25 = mute_config;
+            obj = { muted: null, mute_config: null };
+            obj[0] = muted;
+            if (mute_config == null) {
+              mute_config = null;
             }
-            obj.mute_config = tmp25;
-            const result = applicationId(navigation[10]).setNotificationSettings(obj, obj);
-            const obj4 = applicationId(navigation[10]);
+            obj[1] = mute_config;
+            const result = outer1_1(outer1_2[10]).setNotificationSettings(obj, obj);
+            const obj4 = outer1_1(outer1_2[10]);
           } else if (null != tmp) {
-            let obj1 = applicationId(navigation[11]);
+            let obj1 = outer1_1(outer1_2[11]);
             const guildId = obj.getGuildId();
             const id = obj.id;
-            obj = { muted };
-            let tmp14 = null;
-            if (null != mute_config) {
-              tmp14 = mute_config;
+            obj = { muted: null, mute_config: null };
+            obj[0] = muted;
+            let tmp14 = mute_config;
+            if (mute_config == null) {
+              tmp14 = null;
             }
-            obj.mute_config = tmp14;
-            const NotificationLabel2 = channel(navigation[12]).NotificationLabel;
+            obj[1] = tmp14;
+            const NotificationLabel2 = outer1_0(outer1_2[12]).NotificationLabel;
             const result1 = obj1.updateAppDMOverrideSettings(guildId, id, tmp, obj, NotificationLabel2.muted(muted));
           } else {
-            const obj6 = applicationId(navigation[11]);
+            const obj6 = outer1_1(outer1_2[11]);
             const guildId1 = obj.getGuildId();
             const id2 = obj.id;
-            obj1 = { muted };
-            let tmp3 = null;
-            if (null != mute_config) {
-              tmp3 = mute_config;
+            obj1 = { muted: null, mute_config: null };
+            obj1[0] = muted;
+            let tmp3 = mute_config;
+            if (mute_config == null) {
+              tmp3 = null;
             }
-            obj1.mute_config = tmp3;
-            const NotificationLabel = channel(navigation[12]).NotificationLabel;
+            obj1[1] = tmp3;
+            const NotificationLabel = outer1_0(outer1_2[12]).NotificationLabel;
             const result2 = obj6.updateChannelOverrideSettings(guildId1, id2, obj1, NotificationLabel.muted(muted));
           }
         }
@@ -140,6 +143,7 @@ function NotificationSettingsButton(guildMessageNotifications) {
   let messageNotifications;
   const channel = guildMessageNotifications.channel;
   ({ isMuted, isGuildMuted, messageNotifications } = guildMessageNotifications);
+  let navigation;
   const tmp = callback3();
   let obj = channel(navigation[21]);
   navigation = obj.useNavigation();
@@ -153,36 +157,34 @@ function NotificationSettingsButton(guildMessageNotifications) {
       navigation.navigate(outer1_9.NOTIFICATIONS);
     }
   }, items);
-  obj = {};
   const memo = importAllResult.useMemo(() => channel(navigation[13]).getMessageNotificationsText(messageNotifications), items1);
-  obj = {};
+  obj = { label: null, onPress: null, trailing: null, disabled: null, start: true, end: true };
   const intl = channel(navigation[18]).intl;
-  obj.label = intl.string(channel(navigation[18]).t.h850Ss);
-  obj.onPress = callback;
-  const obj1 = { style: tmp.trailing };
-  const obj2 = { variant: "text-md/medium", color: "text-muted", children: memo };
-  const items2 = [callback(channel(navigation[17]).Text, obj2), callback(channel(navigation[14]).TableRow.Arrow, {})];
-  obj1.children = items2;
-  obj.trailing = callback2(View, obj1);
-  let tmp8 = isMuted;
+  obj[0] = intl.string(channel(navigation[18]).t.h850Ss);
+  obj[1] = callback;
+  obj = { style: tmp.trailing, children: null };
+  const items2 = [callback(channel(navigation[17]).Text, { variant: "text-md/medium", color: "text-muted", children: memo }), callback(channel(navigation[14]).TableRow.Arrow, {})];
+  obj[1] = items2;
+  obj[2] = callback2(View, obj);
+  let tmp11 = isMuted;
   if (!isMuted) {
-    tmp8 = isGuildMuted;
+    tmp11 = isGuildMuted;
   }
-  obj.disabled = tmp8;
-  obj.start = true;
-  obj.end = true;
+  const obj1 = { children: null };
+  obj[3] = tmp11;
   const items3 = [callback(channel(navigation[14]).TableRow, obj), callback(View, { style: tmp.hint, children: callback(channel(navigation[23]).MuteSettingsHint, { isMuted, isGuildMuted, guildMessageNotifications: guildMessageNotifications.guildMessageNotifications }) })];
-  obj.children = items3;
-  return callback2(closure_12, obj);
+  obj1[0] = items3;
+  return callback2(closure_12, obj1);
 }
-({ jsx: closure_10, jsxs: closure_11, Fragment: closure_12 } = jsxProd);
-let obj = {};
-obj = { flex: 1, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWER, padding: 16 };
-obj.container = obj;
-obj.options = { marginBottom: 16 };
-obj.trailing = { flexDirection: "row", alignItems: "center" };
-obj.hint = { marginTop: 8, paddingHorizontal: 12 };
-let closure_13 = _createForOfIteratorHelperLoose.createStyles(obj);
+let c3 = importAllResult;
+({ jsx: c10, jsxs: unpackModuleId, Fragment: closure_12 } = jsxProd);
+let obj = { container: null, options: null, trailing: null, hint: null };
+obj = { flex: 1, backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOWER, padding: 16 };
+obj[0] = obj;
+obj[1] = { marginBottom: 16 };
+obj[2] = { flexDirection: "row", alignItems: "center" };
+obj[3] = { marginTop: 8, paddingHorizontal: 12 };
+let closure_13 = createCacheKey.createStyles(obj);
 const memoResult = importAllResult.memo(() => {
   let guildMessageNotifications;
   let guildMuted;
@@ -195,13 +197,13 @@ const memoResult = importAllResult.memo(() => {
   const channelId = route.params.channelId;
   const applicationId = route.params.applicationId;
   let obj2 = navigation(stateFromStores[25]);
-  const items = [_isNativeReflectConstruct];
+  const items = [ensureGuildLoaded];
   stateFromStores = obj2.useStateFromStores(items, () => channel.getChannel(channelId));
   const tmp = callback3();
-  const items1 = [closure_6];
+  const items1 = [createGuildRecordFromRust];
   const stateFromStores1 = navigation(stateFromStores[25]).useStateFromStores(items1, () => {
     let guild_id;
-    if (null != stateFromStores) {
+    if (stateFromStores != null) {
       guild_id = stateFromStores.guild_id;
     }
     return outer1_6.getGuild(guild_id);
@@ -209,12 +211,12 @@ const memoResult = importAllResult.memo(() => {
   const items2 = [stateFromStores, stateFromStores1];
   let closure_4 = stateFromStores1.useMemo(() => navigation(stateFromStores[13]).getMuteSettingLabel(stateFromStores, stateFromStores1), items2);
   const items3 = [stateFromStores, stateFromStores1];
-  _isNativeReflectConstruct = stateFromStores1.useMemo(() => navigation(stateFromStores[13]).getMuteSettingSublabel(stateFromStores, stateFromStores1), items3);
+  ensureGuildLoaded = stateFromStores1.useMemo(() => navigation(stateFromStores[13]).getMuteSettingSublabel(stateFromStores, stateFromStores1), items3);
   const layoutEffect = stateFromStores1.useLayoutEffect(() => {
     navigation.setOptions({
-      title: "" + closure_4 + " (" + _isNativeReflectConstruct + ")",
+      title: "" + closure_4 + " (" + ensureGuildLoaded + ")",
       headerTitle() {
-        return outer2_10(navigation(stateFromStores[26]).GenericHeaderTitle, { title: outer1_4, subtitle: outer1_5 });
+        return outer1_10(outer1_0(outer1_2[26]).GenericHeaderTitle, { title: closure_4, subtitle: ensureGuildLoaded });
       },
       headerTitleAlign: "center"
     });
@@ -225,32 +227,48 @@ const memoResult = importAllResult.memo(() => {
   ({ muteConfig, messageNotifications, guildMessageNotifications, guildMuted } = memo);
   let tmp9Result = null;
   if (null != stateFromStores) {
-    obj = {};
+    obj = { style: null, children: null };
     const items5 = [tmp.container, ];
-    obj = { paddingBottom: tmp7 };
+    obj = { paddingBottom: null };
+    obj[0] = tmp7;
     items5[1] = obj;
-    obj.style = items5;
+    obj[0] = items5;
     if (muted) {
-      obj1 = { channel: stateFromStores, applicationId, muteConfig, navigation };
+      obj1 = { channel: null, applicationId: null, muteConfig: null, navigation: null };
+      obj1[0] = stateFromStores;
+      obj1[1] = applicationId;
+      obj1[2] = muteConfig;
+      obj1[3] = navigation;
       let tmp11Result = tmp11(UnmuteOptions, obj1);
+      let tmp14 = tmp11;
     } else {
-      obj2 = { channel: stateFromStores, applicationId, navigation };
+      obj2 = { channel: null, applicationId: null, navigation: null };
+      obj2[0] = stateFromStores;
+      obj2[1] = applicationId;
+      obj2[2] = navigation;
       tmp11Result = tmp11(MuteOptions, obj2);
+      tmp14 = tmp11;
     }
     const items6 = [tmp11Result, ];
-    let tmp15 = !stateFromStores.isPrivate();
-    if (tmp15) {
-      const obj3 = { isMuted: muted, isGuildMuted: guildMuted, channel: stateFromStores, messageNotifications, guildMessageNotifications };
-      tmp15 = callback(NotificationSettingsButton, obj3);
+    const isPrivateResult = stateFromStores.isPrivate();
+    let tmp14Result = !isPrivateResult;
+    if (!isPrivateResult) {
+      const obj3 = { isMuted: null, isGuildMuted: null, channel: null, messageNotifications: null, guildMessageNotifications: null };
+      obj3[0] = muted;
+      obj3[1] = guildMuted;
+      obj3[2] = stateFromStores;
+      obj3[3] = messageNotifications;
+      obj3[4] = guildMessageNotifications;
+      tmp14Result = tmp14(NotificationSettingsButton, obj3);
     }
-    items6[1] = tmp15;
-    obj.children = items6;
+    items6[1] = tmp14Result;
+    obj[1] = items6;
     tmp9Result = closure_11(closure_4, obj);
     const tmp10 = closure_4;
     const tmp9 = closure_11;
   }
   return tmp9Result;
 });
-let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/main_tabs_v2/native/sidebar/details/screens/MuteSettingsScreen.tsx");
+let result = require("ensureGuildLoaded").fileFinishedImporting("modules/main_tabs_v2/native/sidebar/details/screens/MuteSettingsScreen.tsx");
 
 export default memoResult;

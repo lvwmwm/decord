@@ -1,11 +1,11 @@
-// Module ID: 9533
-// Function ID: 74203
+// Module ID: 9557
+// Function ID: 9558
 // Name: hasForLaterPremiumType
-// Dependencies: [1850, 1852, 1873, 2]
+// Dependencies: [1874, 1876, 1897, 2]
 // Exports: default
 
-// Module 9533 (hasForLaterPremiumType)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 9557 (hasForLaterPremiumType)
+import mergeGuildAvatar from "mergeGuildAvatar";
 import { PremiumTypes } from "GuildFeatures";
 
 const require = arg1;
@@ -13,5 +13,5 @@ const result = require("isPremiumAtLeast").fileFinishedImporting("modules/saved_
 
 export default function hasForLaterPremiumType() {
   currentUser = currentUser.getCurrentUser();
-  return require(1873) /* isPremiumAtLeast */.isPremium(currentUser, PremiumTypes.TIER_2);
+  return require(1897) /* isPremiumAtLeast */.isPremium(currentUser, PremiumTypes.TIER_2);
 };

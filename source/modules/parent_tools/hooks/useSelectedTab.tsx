@@ -1,29 +1,29 @@
-// Module ID: 13881
-// Function ID: 106258
+// Module ID: 13902
+// Function ID: 13903
 // Name: useSelectedMyFamilyTab
-// Dependencies: [5775, 5776, 653, 624, 5777, 675, 2]
+// Dependencies: [5793, 5794, 676, 647, 5795, 698, 2]
 // Exports: default
 
-// Module 13881 (useSelectedMyFamilyTab)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 13902 (useSelectedMyFamilyTab)
+import freshTeenActivityWithMap from "freshTeenActivityWithMap";
 import items from "items";
 import { AnalyticEvents } from "ME";
 
 let FamilyCenterSubPages;
-let closure_4;
+let c4;
 const require = arg1;
-({ FamilyCenterAction: closure_4, FamilyCenterSubPages } = items);
+({ FamilyCenterAction: c4, FamilyCenterSubPages } = items);
 const result = require("ME").fileFinishedImporting("modules/parent_tools/hooks/useSelectedTab.tsx");
 
 export default function useSelectedMyFamilyTab() {
-  let obj = {};
-  const items = [_isNativeReflectConstruct];
-  obj.selectedTab = require(624) /* defaultAreStatesEqual */.useStateFromStores(items, () => outer1_3.getSelectedTab());
-  obj.handleTabChange = function handleTabChange(tab) {
-    let obj = outer1_1(outer1_2[4]);
+  let obj = { selectedTab: null, handleTabChange: null };
+  const items = [freshTeenActivityWithMap];
+  obj[0] = require(647) /* defaultAreStatesEqual */.useStateFromStores(items, () => selectedTab.getSelectedTab());
+  obj[1] = function handleTabChange(tab) {
+    let obj = callback(5795);
     tab = obj.selectTab(tab);
-    obj = { action: outer1_4.TabChange, tab };
-    outer1_1(outer1_2[5]).track(outer1_5.FAMILY_CENTER_ACTION, obj);
+    obj = { action: TabChange.TabChange, tab };
+    callback(698).track(constants.FAMILY_CENTER_ACTION, obj);
   };
   return obj;
 };

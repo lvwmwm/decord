@@ -1,14 +1,13 @@
-// Module ID: 4733
-// Function ID: 41057
+// Module ID: 4755
+// Function ID: 4756
 // Name: getVideoFrameRateValidationExperimentConfig
-// Dependencies: [1428, 2]
+// Dependencies: [1452, 2]
 // Exports: getVideoFrameRateValidationExperimentConfig
 
-// Module 4733 (getVideoFrameRateValidationExperimentConfig)
+// Module 4755 (getVideoFrameRateValidationExperimentConfig)
 import ApexExperiment from "ApexExperiment";
 
-const obj = { name: "2025-10-video-frame-rate-validation", kind: "user", defaultConfig: { enableFrameRateValidation: false }, variations: { [0]: { enableFrameRateValidation: false }, [1]: { enableFrameRateValidation: true } } };
-let closure_0 = ApexExperiment.createApexExperiment(obj);
+let closure_0 = ApexExperiment.createApexExperiment({ name: "2025-10-video-frame-rate-validation", kind: "user", defaultConfig: { enableFrameRateValidation: false }, variations: { 0: { enableFrameRateValidation: false }, 1: { enableFrameRateValidation: true } } });
 const result = require("set").fileFinishedImporting("modules/media_uploads/experiments/VideoFrameRateValidationExperiment.tsx");
 
 export const getVideoFrameRateValidationExperimentConfig = function getVideoFrameRateValidationExperimentConfig(location) {

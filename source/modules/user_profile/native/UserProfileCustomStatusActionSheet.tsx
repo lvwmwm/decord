@@ -1,32 +1,34 @@
-// Module ID: 11955
-// Function ID: 92381
+// Module ID: 11979
+// Function ID: 11980
 // Name: UserProfileCustomStatusActionSheet
-// Dependencies: [31, 27, 1850, 5545, 33, 4165, 689, 566, 11940, 4354, 1212, 11673, 7951, 11945, 2]
+// Dependencies: [19, 17, 1874, 5563, 21, 4189, 712, 589, 11964, 4379, 1236, 11697, 7976, 11969, 2]
 // Exports: default
 
-// Module 11955 (UserProfileCustomStatusActionSheet)
-import "result";
+// Module 11979 (UserProfileCustomStatusActionSheet)
+import "noop";
 import { View } from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import mergeGuildAvatar from "mergeGuildAvatar";
 import ARBITRARY_LARGE_OFFSET from "ARBITRARY_LARGE_OFFSET";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_5;
+let AVATAR_CONTAINER_SIZE;
+let AVATAR_CUSTOM_STATUS_GAP;
+let c5;
 let closure_6;
 const require = arg1;
-const AVATAR_CONTAINER_SIZE = ARBITRARY_LARGE_OFFSET.AVATAR_CONTAINER_SIZE;
-({ jsx: closure_5, jsxs: closure_6 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { flexDirection: "row", columnGap: ARBITRARY_LARGE_OFFSET.AVATAR_CUSTOM_STATUS_GAP, marginHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16 };
-_createForOfIteratorHelperLoose.statusPreviewContainer = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.avatarContainer = { height: AVATAR_CONTAINER_SIZE, width: AVATAR_CONTAINER_SIZE, alignItems: "center", justifyContent: "center" };
-_createForOfIteratorHelperLoose.avatarStatus = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.MOBILE_ACTIONSHEET_BACKGROUND };
+({ AVATAR_CONTAINER_SIZE, AVATAR_CUSTOM_STATUS_GAP } = ARBITRARY_LARGE_OFFSET);
+({ jsx: c5, jsxs: closure_6 } = jsxProd);
+createCacheKey = { statusPreviewContainer: null, avatarContainer: null, avatarStatus: null, customStatusBubble: null };
+createCacheKey = { flexDirection: "row", columnGap: AVATAR_CUSTOM_STATUS_GAP, marginHorizontal: require("Themes").space.PX_16 };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { height: AVATAR_CONTAINER_SIZE, width: AVATAR_CONTAINER_SIZE, alignItems: "center", justifyContent: "center" };
+createCacheKey[2] = { backgroundColor: require("Themes").colors.MOBILE_ACTIONSHEET_BACKGROUND };
+createCacheKey[3] = { marginTop: AVATAR_CONTAINER_SIZE / 2 + 10, flexShrink: 1, flexGrow: 1 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let obj1 = { backgroundColor: require("Themes").colors.MOBILE_ACTIONSHEET_BACKGROUND };
 let obj2 = { marginTop: AVATAR_CONTAINER_SIZE / 2 + 10, flexShrink: 1, flexGrow: 1 };
-_createForOfIteratorHelperLoose.customStatusBubble = obj2;
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-let obj1 = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.MOBILE_ACTIONSHEET_BACKGROUND };
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/user_profile/native/UserProfileCustomStatusActionSheet.tsx");
+const result = require("mergeGuildAvatar").fileFinishedImporting("modules/user_profile/native/UserProfileCustomStatusActionSheet.tsx");
 
 export default function UserProfileCustomStatusActionSheet(user) {
   let channelId;
@@ -35,36 +37,35 @@ export default function UserProfileCustomStatusActionSheet(user) {
   let previewText;
   user = user.user;
   ({ guildId, channelId, previewEmoji, previewText } = user);
-  const tmp = _createForOfIteratorHelperLoose();
-  let obj = user(566);
-  const items = [_isNativeReflectConstruct];
+  const tmp = createCacheKey();
+  let obj = user(589);
+  const items = [mergeGuildAvatar];
   const items1 = [user];
   const stateFromStores = obj.useStateFromStores(items, () => {
     const currentUser = outer1_4.getCurrentUser();
     let id;
-    if (null != currentUser) {
+    if (currentUser != null) {
       id = currentUser.id;
     }
     return id === user.id;
   }, items1);
-  let obj1 = importDefault(4354);
+  let obj1 = importDefault(4379);
   const name = obj1.useName(guildId, channelId, user);
-  const intl = user(1212).intl;
+  const intl = user(1236).intl;
   if (stateFromStores) {
-    let stringResult = intl.string(tmp5(1212).t.AHoLf4);
+    let stringResult = intl.string(tmp2(1236).t.AHoLf4);
   } else {
-    obj = { username: name };
-    stringResult = intl.formatToPlainString(tmp5(1212).t["pP5Aa+"], obj);
+    obj = { username: null };
+    obj[0] = name;
+    stringResult = intl.formatToPlainString(tmp2(1236).t["pP5Aa+"], obj);
   }
-  obj = { title: stringResult };
-  obj1 = { style: tmp.statusPreviewContainer };
-  const obj2 = { style: tmp.avatarContainer };
-  const tmp3 = importDefault(11940)(user.id);
-  obj2.children = callback(importDefault(7951), { user, statusStyle: tmp.avatarStatus });
-  const items2 = [callback(View, obj2), ];
-  const obj4 = { customStatusActivity: tmp3, hasCustomProfileTheme: false, showFullStatus: true, style: tmp.customStatusBubble, previewEmoji, previewText };
-  items2[1] = callback(importDefault(11945), obj4);
-  obj1.children = items2;
-  obj.children = callback2(View, obj1);
-  return callback(importDefault(11673), obj);
+  obj = { title: stringResult, children: null };
+  obj1 = { style: tmp.statusPreviewContainer, children: null };
+  const obj2 = { style: tmp.avatarContainer, children: null };
+  const tmp6 = importDefault(11964)(user.id);
+  obj2[1] = callback(importDefault(7976), { user, statusStyle: tmp.avatarStatus });
+  const items2 = [callback(View, obj2), callback(importDefault(11969), { customStatusActivity: tmp6, hasCustomProfileTheme: false, showFullStatus: true, style: tmp.customStatusBubble, previewEmoji, previewText })];
+  obj1[1] = items2;
+  obj[1] = callback2(View, obj1);
+  return callback(importDefault(11697), obj);
 };

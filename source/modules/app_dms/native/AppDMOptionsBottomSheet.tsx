@@ -1,38 +1,39 @@
-// Module ID: 10130
-// Function ID: 78324
+// Module ID: 10151
+// Function ID: 10152
 // Name: AppDMOptionsBottomSheet
-// Dependencies: [31, 27, 5101, 653, 33, 4165, 689, 566, 8335, 4133, 6590, 5505, 5221, 5536, 5198, 1212, 2]
+// Dependencies: [19, 17, 5123, 676, 21, 4189, 712, 589, 8359, 4157, 6611, 5523, 5243, 5554, 5220, 1236, 2]
 // Exports: default
 
-// Module 10130 (AppDMOptionsBottomSheet)
-import result from "result";
+// Module 10151 (AppDMOptionsBottomSheet)
+import noop from "noop";
 import { View } from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import recomputeFromAppTokens from "recomputeFromAppTokens";
 import { UserSettingsSections } from "ME";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_7;
-let closure_8;
+let error;
+let metroImportAll;
 const require = arg1;
-({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWEST };
-_createForOfIteratorHelperLoose.sheet = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.content = { paddingLeft: 16, paddingRight: 16, paddingBottom: 24 };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/app_dms/native/AppDMOptionsBottomSheet.tsx");
+({ jsx: error, jsxs: metroImportAll } = jsxProd);
+createCacheKey = { sheet: null, content: null };
+createCacheKey = { backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOWEST };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { paddingLeft: 16, paddingRight: 16, paddingBottom: 24 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+const result = require("recomputeFromAppTokens").fileFinishedImporting("modules/app_dms/native/AppDMOptionsBottomSheet.tsx");
 
 export default function AppDMOptionsBottomSheet(userId) {
   userId = userId.userId;
   const channel = userId.channel;
   const application = userId.application;
-  let tmp = _createForOfIteratorHelperLoose();
+  let stateFromStores;
+  let tmp = createCacheKey();
   let obj = userId(application[7]);
-  const items = [_isNativeReflectConstruct];
-  const stateFromStores = obj.useStateFromStores(items, () => {
+  const items = [recomputeFromAppTokens];
+  stateFromStores = obj.useStateFromStores(items, () => {
     let id;
-    if (null != application) {
+    if (application != null) {
       id = application.id;
     }
     return outer1_5.getNewestTokenForApplication(id);
@@ -50,9 +51,11 @@ export default function AppDMOptionsBottomSheet(userId) {
     }
     if (tmp) {
       let obj = userId(application[10]);
-      obj = { screen: outer1_6.AUTHORIZED_APP };
-      obj = { oauth2Token: stateFromStores };
-      obj.params = obj;
+      obj = { screen: null, params: null };
+      obj[0] = outer1_6.AUTHORIZED_APP;
+      obj = { oauth2Token: null };
+      obj[0] = stateFromStores;
+      obj[1] = obj;
       obj.openUserSettings(obj);
       channel(application[9]).hideActionSheet();
       const obj4 = channel(application[9]);
@@ -61,22 +64,22 @@ export default function AppDMOptionsBottomSheet(userId) {
   const effect = stateFromStores.useEffect(() => {
     const response = channel(application[11]).fetch();
   }, []);
-  obj = { startExpanded: true, backgroundStyles: tmp.sheet };
-  obj = { style: tmp.content };
-  const obj1 = { hasIcons: false };
-  const obj2 = {};
+  obj = { startExpanded: true, backgroundStyles: tmp.sheet, children: null };
+  obj = { style: tmp.content, children: null };
+  const obj1 = { hasIcons: false, children: null };
+  const obj2 = { label: null, onPress: null };
   const intl = userId(application[15]).intl;
-  obj2.label = intl.string(userId(application[15]).t.iXAna6);
-  obj2.onPress = callback;
+  obj2[0] = intl.string(userId(application[15]).t.iXAna6);
+  obj2[1] = callback;
   const items3 = [callback(userId(application[14]).TableRow, obj2), ];
-  const obj3 = {};
+  const obj3 = { label: null, onPress: null, disabled: null };
   const intl2 = userId(application[15]).intl;
-  obj3.label = intl2.string(userId(application[15]).t.KUsDNI);
-  obj3.onPress = callback1;
-  obj3.disabled = null == stateFromStores;
+  obj3[0] = intl2.string(userId(application[15]).t.KUsDNI);
+  obj3[1] = callback1;
+  obj3[2] = null == stateFromStores;
   items3[1] = callback(userId(application[14]).TableRow, obj3);
-  obj1.children = items3;
-  obj.children = callback2(userId(application[13]).TableRowGroup, obj1);
-  obj.children = callback(View, obj);
+  obj1[1] = items3;
+  obj[1] = callback2(userId(application[13]).TableRowGroup, obj1);
+  obj[2] = callback(View, obj);
   return callback(userId(application[12]).BottomSheet, obj);
 };

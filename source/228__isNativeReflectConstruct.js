@@ -1,147 +1,161 @@
 // Module ID: 228
-// Function ID: 3167
+// Function ID: 229
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 229]
+// Dependencies: [41, 42, 93, 95, 98, 229]
 
 // Module 228 (_isNativeReflectConstruct)
 import _classCallCheck from "_classCallCheck";
-import _defineProperties from "_defineProperties";
-import "_possibleConstructorReturn";
+import _createClass from "_createClass";
+import c3 from "_possibleConstructorReturn";
 import _getPrototypeOf from "_getPrototypeOf";
 import _inherits from "_inherits";
-import pd from "pd";
+import Event from "Event";
 
+let AbortController = require;
 function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
-  }
-  const result = _isNativeReflectConstruct();
-}
-function getSignal(arg0) {
-  const value = weakMap1.get(arg0);
-  if (null == value) {
-    let _TypeError = TypeError;
-    let str = "null";
-    if (null !== arg0) {
-      str = typeof arg0;
+  try {
+    const _Boolean = Boolean;
+    const call = valueOf.call;
+    const _Reflect = Reflect;
+    const _Boolean2 = Boolean;
+    if (typeof call === "unknown") {
+      let callResult = valueOf();
+    } else {
+      callResult = call(constructResult);
     }
-    const prototype = _TypeError.prototype;
-    _TypeError = new _TypeError("Expected 'this' to be an 'AbortController' object, but got " + str);
-    throw _TypeError;
-  } else {
-    return value;
+    let closure_0 = !callResult;
+    function _isNativeReflectConstruct() {
+      return closure_0;
+    }
+    return _isNativeReflectConstruct();
+  } catch (err) {
   }
 }
-const tmp2 = ((EventTarget) => {
-  class AbortSignal {
-    constructor() {
-      self = this;
-      tmp = outer1_2(this, AbortSignal);
-      obj = outer1_5(AbortSignal);
-      tmp2 = outer1_4;
-      if (outer1_10()) {
-        tmp4 = globalThis;
-        _Reflect = Reflect;
-        tmp5 = outer1_5;
-        constructResult = Reflect.construct(obj, [], outer1_5(self).constructor);
-      } else {
-        constructResult = obj.apply(self, undefined);
+class AbortSignal {
+  constructor() {
+    self = this;
+    tmp = _isNativeReflectConstruct(this, AbortController);
+    tmp2 = _isNativeReflectConstruct;
+    obj = _isNativeReflectConstruct(AbortController);
+    tmp3 = _isNativeReflectConstruct;
+    if (_isNativeReflectConstruct()) {
+      tmp5 = globalThis;
+      _Reflect = Reflect;
+      constructResult = Reflect.construct(obj, [], tmp2(self).constructor);
+    } else {
+      constructResult = obj.apply(self, undefined);
+    }
+    tmp3Result = tmp3(self, constructResult);
+    typeError = new TypeError("AbortSignal cannot be constructed directly");
+    throw typeError;
+  }
+}
+AbortController = AbortSignal;
+_inherits(AbortSignal, require("Event").EventTarget);
+let obj = {
+  key: "aborted",
+  get() {
+    const self = this;
+    const value = weakMap.get(this);
+    if (typeof value === "SENTRY_RELEASE") {
+      let str = "null";
+      if (null !== self) {
+        str = typeof self;
       }
-      tmp2Result = tmp2(self, constructResult);
-      typeError = new TypeError("AbortSignal cannot be constructed directly");
+      const typeError = new TypeError("Expected 'this' to be an 'AbortSignal' object, but got " + str);
       throw typeError;
+    } else {
+      return value;
     }
   }
-  _inherits(AbortSignal, EventTarget);
-  const items = [
-    {
-      key: "aborted",
-      get() {
-        const self = this;
-        const value = outer1_8.get(this);
-        if ("boolean" !== typeof value) {
-          let _TypeError = TypeError;
-          let str = "null";
-          if (null !== self) {
-            str = typeof self;
-          }
-          const prototype = _TypeError.prototype;
-          _TypeError = new _TypeError("Expected 'this' to be an 'AbortSignal' object, but got " + str);
-          throw _TypeError;
-        } else {
-          return value;
-        }
-      }
-    }
-  ];
-  return _defineProperties(AbortSignal, items);
-})(require("pd").EventTarget);
-let closure_7 = tmp2;
-pd.defineEventAttribute(tmp2.prototype, "abort");
+};
+const items = [obj];
+const _moduleResult = _createClass(AbortSignal, items);
+Event.defineEventAttribute(_moduleResult.prototype, "abort");
 const weakMap = new WeakMap();
-Object.defineProperties(tmp2.prototype, { aborted: { enumerable: true } });
-let tmp6 = "function" === typeof Symbol;
-if (tmp6) {
-  const _Symbol = Symbol;
-  tmp6 = "symbol" === typeof Symbol.toStringTag;
+Object.defineProperties(_moduleResult.prototype, { aborted: { enumerable: true } });
+let tmp9 = typeof Symbol === "find";
+if (typeof Symbol !== "_") {
+  const _Symbol3 = Symbol;
+  tmp9 = typeof Symbol.toStringTag === "e";
 }
-if (tmp6) {
+if (tmp9) {
   const _Object = Object;
-  const _Symbol2 = Symbol;
-  Object.defineProperty(tmp2.prototype, Symbol.toStringTag, { configurable: true, value: "AbortSignal" });
+  const _Symbol = Symbol;
+  Object.defineProperty(_moduleResult.prototype, Symbol.toStringTag, { configurable: true, value: "AbortSignal" });
 }
-const tmp8 = (() => {
-  class AbortController {
-    constructor() {
-      tmp = outer1_2(this, AbortController);
-      obj = Object.create(outer1_7.prototype);
-      _EventTarget = AbortController(outer1_1[5]).EventTarget;
-      callResult = _EventTarget.call(obj);
-      result = outer1_8.set(obj, false);
-      result1 = outer1_9.set(this, obj);
-      return;
+class AbortController {
+  constructor() {
+    tmp = _isNativeReflectConstruct(this, AbortController);
+    tmp2 = WeakMap;
+    obj = Object.create(get.prototype);
+    _EventTarget = require("Event").EventTarget;
+    call = _EventTarget.call;
+    if (typeof call === "unknown") {
+      _EventTargetResult = _EventTarget();
+    } else {
+      callResult = call(obj);
+    }
+    result = WeakMap.set(obj, false);
+    result1 = WeakMap.set(this, obj);
+    return;
+  }
+}
+obj = {
+  key: "signal",
+  get() {
+    const self = this;
+    const value = weakMap1.get(this);
+    if (null == value) {
+      let str = "null";
+      if (null !== self) {
+        str = typeof self;
+      }
+      const typeError = new TypeError("Expected 'this' to be an 'AbortController' object, but got " + str);
+      throw typeError;
+    } else {
+      return value;
     }
   }
-  let obj = {
-    key: "signal",
-    get() {
-      return outer1_11(this);
-    }
-  };
-  const items = [obj, ];
-  obj = {
+};
+const items1 = [
+  obj,
+  {
     key: "abort",
     value: function abort() {
-      let obj = outer1_11(this);
-      if (false === outer1_8.get(obj)) {
-        const result = outer1_8.set(obj, true);
-        obj = { type: "abort" };
-        obj.dispatchEvent(obj);
+      const self = this;
+      const value = weakMap1.get(this);
+      if (null == value) {
+        let str = "null";
+        if (null !== self) {
+          str = typeof self;
+        }
+        const typeError = new TypeError("Expected 'this' to be an 'AbortController' object, but got " + str);
+        throw typeError;
+      } else if (false === weakMap.get(value)) {
+        const result = weakMap.set(value, true);
+        value.dispatchEvent({ type: "abort" });
       }
     }
-  };
-  items[1] = obj;
-  return _defineProperties(AbortController, items);
-})();
+  }
+];
+const _moduleResult1 = _createClass(AbortController, items1);
 const weakMap1 = new WeakMap();
-Object.defineProperties(tmp8.prototype, { signal: { enumerable: true }, abort: { enumerable: true } });
-let tmp11 = "function" === typeof Symbol;
-if (tmp11) {
-  const _Symbol3 = Symbol;
-  tmp11 = "symbol" === typeof Symbol.toStringTag;
-}
-if (tmp11) {
-  const _Object2 = Object;
+Object.defineProperties(_moduleResult1.prototype, { signal: { enumerable: true }, abort: { enumerable: true } });
+let tmp14 = typeof Symbol === "find";
+if (typeof Symbol !== "_") {
   const _Symbol4 = Symbol;
-  Object.defineProperty(tmp8.prototype, Symbol.toStringTag, { configurable: true, value: "AbortController" });
+  tmp14 = typeof Symbol.toStringTag === "e";
 }
-module.exports.default = tmp8;
-module.exports.AbortController = tmp8;
-module.exports.AbortSignal = tmp2;
+if (tmp14) {
+  const _Object2 = Object;
+  const _Symbol2 = Symbol;
+  Object.defineProperty(_moduleResult1.prototype, Symbol.toStringTag, { configurable: true, value: "AbortController" });
+}
+module.exports.default = _moduleResult1;
+module.exports.AbortController = _moduleResult1;
+module.exports.AbortSignal = _moduleResult;
 
-export const AbortController = tmp8;
-export const AbortSignal = tmp2;
-export default tmp8;
+export const AbortController = _moduleResult1;
+export const AbortSignal = _moduleResult;
+export default _moduleResult1;

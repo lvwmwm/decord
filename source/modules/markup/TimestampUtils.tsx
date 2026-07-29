@@ -1,94 +1,63 @@
-// Module ID: 4622
-// Function ID: 40339
-// Name: formatTimestampMention
-// Dependencies: [3835, 3747, 664, 2]
-// Exports: parseTimestamp, unparseTimestamp
+// Module ID: 4644
+// Function ID: 4645
+// Name: TIMESTAMP_FORMATS
+// Dependencies: [3859, 3771, 687, 2]
+// Exports: formatTimestampMention, parseTimestamp, unparseTimestamp
 
-// Module 4622 (formatTimestampMention)
-function formatTimestampMention(arg0) {
-  let format;
-  let timestamp;
-  ({ timestamp, format } = arg0);
-  const tmp = importDefault(3747);
-  const tmpResult = tmp(Number(timestamp) * importDefault(664).Millis.SECOND);
-  if (tmpResult.isValid()) {
-    let f;
-    if (null != format) {
-      f = obj[format];
-    }
-    if (null == f) {
-      f = obj.f;
-    }
-    obj = { timestamp, format, parsed: tmpResult };
-    obj.full = obj.F(tmpResult);
-    obj.formatted = f(tmpResult);
-    return obj;
-  } else {
-    return null;
-  }
-  const NumberResult = Number(timestamp);
-}
+// Module 4644 (TIMESTAMP_FORMATS)
 let obj = {
   t(date) {
-    return require(3835) /* resetCache */.dateFormat(date, "LT");
+    return require(3859) /* resetCache */.dateFormat(date, "LT");
   },
   T(date) {
-    return require(3835) /* resetCache */.dateFormat(date, "LTS");
+    return require(3859) /* resetCache */.dateFormat(date, "LTS");
   },
   d(date) {
-    return require(3835) /* resetCache */.dateFormat(date, "L");
+    return require(3859) /* resetCache */.dateFormat(date, "L");
   },
   D(date) {
-    return require(3835) /* resetCache */.dateFormat(date, "LL");
+    return require(3859) /* resetCache */.dateFormat(date, "LL");
   },
   f(date) {
-    return require(3835) /* resetCache */.dateFormat(date, "LLL");
+    return require(3859) /* resetCache */.dateFormat(date, "LLL");
   },
   F(date) {
-    return require(3835) /* resetCache */.dateFormat(date, "LLLL");
+    return require(3859) /* resetCache */.dateFormat(date, "LLLL");
   },
   s(date) {
-    return require(3835) /* resetCache */.dateFormat(date, "L LT");
+    return require(3859) /* resetCache */.dateFormat(date, "L LT");
   },
   S(date) {
-    return require(3835) /* resetCache */.dateFormat(date, "L LTS");
+    return require(3859) /* resetCache */.dateFormat(date, "L LTS");
   },
   R(toDate) {
-    const result = importDefault(3747).relativeTimeThreshold("s");
-    const obj = importDefault(3747);
-    const result1 = importDefault(3747).relativeTimeThreshold("s", 60);
-    const obj2 = importDefault(3747);
-    const result2 = importDefault(3747).relativeTimeThreshold("ss");
-    const obj3 = importDefault(3747);
-    const result3 = importDefault(3747).relativeTimeThreshold("ss", -1);
-    const obj4 = importDefault(3747);
-    const result4 = importDefault(3747).relativeTimeThreshold("m");
-    const obj5 = importDefault(3747);
-    const result5 = importDefault(3747).relativeTimeThreshold("m", 60);
-    const obj6 = importDefault(3747);
-    const tmp7 = importDefault(3747);
-    const fromNowResult = importDefault(3747)(toDate.toDate()).fromNow();
-    while (true) {
-      let tmp9 = importDefault;
-      let tmp10 = dependencyMap;
-      let obj8 = importDefault(3747);
-      let result6 = obj8.relativeTimeThreshold("s", result);
-      let obj9 = importDefault(3747);
-      let result7 = obj9.relativeTimeThreshold("ss", result2);
-      let obj10 = importDefault(3747);
-      let result8 = obj10.relativeTimeThreshold("m", result4);
-      let tmp14 = fromNowResult;
-      if (null != fromNowResult) {
-        let fromNowResult1 = fromNowResult;
-      } else {
-        let tmp15 = importDefault;
-        let tmp16 = dependencyMap;
-        let tmp18 = toDate;
-        let tmp17 = importDefault(3747);
-        let tmp17Result = tmp17(toDate.toDate());
-        fromNowResult1 = tmp17Result.fromNow();
+    const result = importDefault(3771).relativeTimeThreshold("s");
+    const obj = importDefault(3771);
+    const result1 = importDefault(3771).relativeTimeThreshold("s", 60);
+    const obj2 = importDefault(3771);
+    const result2 = importDefault(3771).relativeTimeThreshold("ss");
+    const obj3 = importDefault(3771);
+    const result3 = importDefault(3771).relativeTimeThreshold("ss", -1);
+    const obj4 = importDefault(3771);
+    const result4 = importDefault(3771).relativeTimeThreshold("m");
+    const obj5 = importDefault(3771);
+    const result5 = importDefault(3771).relativeTimeThreshold("m", 60);
+    try {
+      let tmpResult = tmp(3771);
+      let fromNowResult = tmpResult(toDate.toDate()).fromNow();
+      tmpResult = tmp(3771);
+      const result6 = tmpResult.relativeTimeThreshold("s", result);
+      const tmpResultResult = tmpResult(toDate.toDate());
+      const result7 = tmp(3771).relativeTimeThreshold("ss", result2);
+      const tmpResult1 = tmp(3771);
+      const result8 = tmp(3771).relativeTimeThreshold("m", result4);
+      if (fromNowResult == null) {
+        const tmpResult3 = tmp(3771);
+        fromNowResult = tmp(3771)(toDate.toDate()).fromNow();
+        const tmpResult4Result = tmp(3771)(toDate.toDate());
       }
-      return fromNowResult1;
+      return fromNowResult;
+    } catch (err) {
     }
   }
 };
@@ -100,9 +69,53 @@ let result = require("set").fileFinishedImporting("modules/markup/TimestampUtils
 export const TIMESTAMP_FORMATS = obj;
 export const DEFAULT_TIMESTAMP_FORMAT = "f";
 export const TIMESTAMP_REGEX = regExp;
-export { formatTimestampMention };
-export const parseTimestamp = function parseTimestamp(timestamp, format) {
-  return formatTimestampMention({ timestamp, format });
+export const formatTimestampMention = function formatTimestampMention(arg0) {
+  let format;
+  let timestamp;
+  ({ timestamp, format } = arg0);
+  const tmp = importDefault(3771);
+  const tmpResult = tmp(Number(timestamp) * importDefault(687).Millis.SECOND);
+  if (tmpResult.isValid()) {
+    let f;
+    if (null != format) {
+      f = obj[format];
+    }
+    if (null == f) {
+      f = obj.f;
+    }
+    obj = { timestamp: null, format: null, parsed: null, full: null, formatted: null };
+    obj[0] = timestamp;
+    obj[1] = format;
+    obj[2] = tmpResult;
+    obj[3] = obj.F(tmpResult);
+    obj[4] = f(tmpResult);
+    return obj;
+  } else {
+    return null;
+  }
+  const NumberResult = Number(timestamp);
+};
+export const parseTimestamp = function parseTimestamp(arg0, arg1) {
+  const tmp = importDefault(3771);
+  const tmpResult = tmp(Number(arg0) * importDefault(687).Millis.SECOND);
+  let tmp3 = null;
+  if (tmpResult.isValid()) {
+    let f;
+    if (null != arg1) {
+      f = obj[arg1];
+    }
+    if (null == f) {
+      f = obj.f;
+    }
+    obj = { timestamp: null, format: null, parsed: null, full: null, formatted: null };
+    obj[0] = arg0;
+    obj[1] = arg1;
+    obj[2] = tmpResult;
+    obj[3] = obj.F(tmpResult);
+    obj[4] = f(tmpResult);
+    tmp3 = obj;
+  }
+  return tmp3;
 };
 export const unparseTimestamp = function unparseTimestamp(arg0, arg1) {
   if (null != arg1) {

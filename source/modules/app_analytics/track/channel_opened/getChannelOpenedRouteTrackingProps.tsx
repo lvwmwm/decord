@@ -1,37 +1,39 @@
-// Module ID: 15536
-// Function ID: 119276
+// Module ID: 15570
+// Function ID: 15571
 // Name: getChannelOpenedRouteTrackingProps
-// Dependencies: [1348, 6067, 1198, 2]
+// Dependencies: [1372, 6085, 1222, 2]
 // Exports: getChannelOpenedRouteTrackingProps
 
-// Module 15536 (getChannelOpenedRouteTrackingProps)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 15570 (getChannelOpenedRouteTrackingProps)
+import ensureGuildLoaded from "ensureGuildLoaded";
 
 const require = arg1;
-let result = require("shouldNavigate").fileFinishedImporting("modules/app_analytics/track/channel_opened/getChannelOpenedRouteTrackingProps.tsx");
+let result = require("transitionTo").fileFinishedImporting("modules/app_analytics/track/channel_opened/getChannelOpenedRouteTrackingProps.tsx");
 
 export const getChannelOpenedRouteTrackingProps = function getChannelOpenedRouteTrackingProps(selectedChannelId) {
-  let obj = require(6067) /* collectThreadMetadata */;
-  let result = obj.collectThreadMetadata(channel.getChannel(selectedChannelId), true);
+  let obj = require(6085) /* collectThreadMetadata */;
+  const result = obj.collectThreadMetadata(channel.getChannel(selectedChannelId), true);
   let _location;
-  if (null != result) {
+  if (result != null) {
     _location = result.location;
   }
-  if (null == _location) {
-    _location = require(1198) /* shouldNavigate */.getLastRouteChangeSource();
-    const obj3 = require(1198) /* shouldNavigate */;
+  if (_location == null) {
+    _location = require(1222) /* transitionTo */.getLastRouteChangeSource();
+    const tmpResult = require(1222) /* transitionTo */;
+  }
+  obj = result;
+  if (result == null) {
+    obj = {};
   }
   obj = {};
-  if (null == result) {
-    result = {};
-  }
-  const merged = Object.assign(result);
+  const merged = Object.assign(obj);
   if (null != _location) {
-    obj = { location: _location };
-    let obj1 = obj;
+    const obj1 = { location: null };
+    obj1[0] = _location;
+    let obj2 = obj1;
   } else {
-    obj1 = {};
+    obj2 = {};
   }
-  const merged1 = Object.assign(obj1);
+  const merged1 = Object.assign(obj2);
   return obj;
 };

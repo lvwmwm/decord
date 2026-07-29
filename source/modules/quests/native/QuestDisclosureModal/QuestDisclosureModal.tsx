@@ -1,27 +1,21 @@
-// Module ID: 14111
-// Function ID: 107851
+// Module ID: 14133
+// Function ID: 14134
 // Name: CloseButton
-// Dependencies: [33, 6731, 7676, 14110, 1212, 5121, 14112, 5552, 2]
+// Dependencies: [21, 6752, 7699, 14132, 1236, 5143, 14134, 5570, 2]
 // Exports: default
 
-// Module 14111 (CloseButton)
+// Module 14133 (CloseButton)
 import { jsx } from "jsxProd";
 
 function CloseButton() {
-  const obj = {
-    source: importDefault(7676),
-    onPress() {
-      return outer1_1(outer1_2[3]).hideModal();
-    }
+  const obj = { source: null, onPress: null, accessibilityLabel: null };
+  obj[0] = importDefault(7699);
+  obj[1] = function onPress() {
+    return callback(table[3]).hideModal();
   };
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj.accessibilityLabel = intl.string(require(1212) /* getSystemLocale */.t.cpT0Cq);
-  return jsx(require(6731) /* HeaderActionButton */.HeaderActionButton, {
-    source: importDefault(7676),
-    onPress() {
-      return outer1_1(outer1_2[3]).hideModal();
-    }
-  });
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj[2] = intl.string(require(1236) /* getSystemLocale */.t.cpT0Cq);
+  return jsx(require(6752) /* HeaderActionButton */.HeaderActionButton, { source: null, onPress: null, accessibilityLabel: null });
 }
 let closure_4 = { DISCLOSURE: "disclosure" };
 const result = require("registerAsset").fileFinishedImporting("modules/quests/native/QuestDisclosureModal/QuestDisclosureModal.tsx");
@@ -34,7 +28,7 @@ export default function QuestDisclosureModal(arg0) {
   let require;
   ({ isTargetedDisclosure: require, gamePublisher: importDefault, gameTitle: dependencyMap, cosponsorName: jsx, isVideoQuest: closure_4 } = arg0);
   function onClose() {
-    return outer1_1(outer1_2[3]).hideModal();
+    return callback2(14132).hideModal();
   }
   let obj = {
     headerLeft: onClose,
@@ -42,17 +36,17 @@ export default function QuestDisclosureModal(arg0) {
       return null;
     },
     headerTitle() {
-      const obj = {};
-      const intl = outer1_0(outer1_2[4]).intl;
-      obj.title = intl.string(outer1_0(outer1_2[4]).t.GcsZKJ);
-      return outer1_3(outer1_0(outer1_2[5]).NavigatorHeader, obj);
+      const obj = { title: null };
+      const intl = callback(1236).intl;
+      obj[0] = intl.string(callback(1236).t.GcsZKJ);
+      return callback3(callback(5143).NavigatorHeader, obj);
     },
     render() {
       return outer1_3(outer1_1(outer1_2[6]), { isTargetedDisclosure: closure_0, gamePublisher: closure_1, gameTitle: closure_2, onClose, cosponsorName: closure_3, isVideoQuest: closure_4 });
     }
   };
-  obj = { screens: { [closure_4.DISCLOSURE]: obj }, initialRouteName: constants.DISCLOSURE };
-  let intl = require(1212) /* getSystemLocale */.intl;
-  obj.headerBackTitle = intl.string(require(1212) /* getSystemLocale */.t["13/7kX"]);
-  return jsx(require(5552) /* NavigationStack */.Navigator, { screens: { [closure_4.DISCLOSURE]: obj }, initialRouteName: constants.DISCLOSURE });
+  obj = { screens: { [closure_4.DISCLOSURE]: obj }, initialRouteName: constants.DISCLOSURE, headerBackTitle: null };
+  let intl = require(1236) /* getSystemLocale */.intl;
+  obj[2] = intl.string(require(1236) /* getSystemLocale */.t["13/7kX"]);
+  return jsx(require(5570) /* NavigationStack */.Navigator, { screens: { [closure_4.DISCLOSURE]: obj }, initialRouteName: constants.DISCLOSURE, headerBackTitle: null });
 };

@@ -1,167 +1,164 @@
-// Module ID: 15788
-// Function ID: 121598
+// Module ID: 15823
+// Function ID: 15824
 // Name: StyleSheet
-// Dependencies: [31, 27, 5776, 653, 33, 689, 4165, 1557, 13876, 13875, 15789, 10663, 3869, 5790, 675, 5777, 6590, 4161, 4589, 1212, 2199, 2]
+// Dependencies: [19, 17, 5794, 676, 21, 712, 4189, 1581, 13897, 13896, 15824, 10687, 3893, 5808, 698, 5795, 6611, 4185, 4611, 1236, 2223, 2]
 // Exports: default
 
-// Module 15788 (StyleSheet)
-import result from "result";
-import get_ActivityIndicator from "get ActivityIndicator";
+// Module 15823 (StyleSheet)
+import getSystemLocale from "getSystemLocale";
+import get_ActivityIndicator from "Text";
 import { FamilyCenterSubPages } from "items";
 import ME from "ME";
-import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import jsxProd from "set";
+import createCacheKey from "createCacheKey";
 
 let StyleSheet;
-let closure_10;
-let closure_11;
+let c10;
+let c4;
+let c9;
 let closure_12;
-let closure_13;
-let closure_4;
-let closure_8;
-let closure_9;
-let require = arg1;
-({ Pressable: closure_4, StyleSheet } = get_ActivityIndicator);
+let map1;
+let metroImportAll;
+let unpackModuleId;
+const require = arg1;
+({ Pressable: c4, StyleSheet } = get_ActivityIndicator);
 const View = get_ActivityIndicator.View;
-({ AnalyticEvents: closure_8, UserSettingsSections: closure_9, VerticalGradient: closure_10 } = ME);
-({ jsx: closure_11, jsxs: closure_12, Fragment: closure_13 } = jsxProd);
-let closure_14 = 28 + require("_createForOfIteratorHelperLoose").space.PX_16;
+({ AnalyticEvents: metroImportAll, UserSettingsSections: c9, VerticalGradient: c10 } = ME);
+({ jsx: unpackModuleId, jsxs: closure_12, Fragment: map1 } = jsxProd);
+let closure_14 = 28 + require("Themes").space.PX_16;
 let closure_15 = [0.5875, 1];
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { position: "absolute", top: 0, left: 0, right: 0, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWEST };
-_createForOfIteratorHelperLoose.strip = _createForOfIteratorHelperLoose;
+createCacheKey = { strip: null, pressable: null, label: null, link: null };
+createCacheKey = { position: "absolute", top: 0, left: 0, right: 0, backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOWEST };
+createCacheKey[0] = createCacheKey;
 let obj1 = {};
 const merged = Object.assign(StyleSheet.absoluteFillObject);
-obj1["flexDirection"] = "row";
-obj1["alignItems"] = "center";
-obj1["justifyContent"] = "center";
-obj1["paddingHorizontal"] = require("_createForOfIteratorHelperLoose").space.PX_12;
-obj1["paddingBottom"] = require("_createForOfIteratorHelperLoose").space.PX_16;
-_createForOfIteratorHelperLoose.pressable = obj1;
-_createForOfIteratorHelperLoose.label = { paddingRight: require("_createForOfIteratorHelperLoose").space.PX_8 };
-_createForOfIteratorHelperLoose.link = { textDecorationLine: "underline" };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-let obj2 = { paddingRight: require("_createForOfIteratorHelperLoose").space.PX_8 };
+obj1.flexDirection = "row";
+obj1.alignItems = "center";
+obj1.justifyContent = "center";
+obj1.paddingHorizontal = require("Themes").space.PX_12;
+obj1.paddingBottom = require("Themes").space.PX_16;
+createCacheKey[1] = obj1;
+createCacheKey[2] = { paddingRight: require("Themes").space.PX_8 };
+createCacheKey[3] = { textDecorationLine: "underline" };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let obj2 = { paddingRight: require("Themes").space.PX_8 };
 const result = require("items").fileFinishedImporting("modules/parent_tools/native/ParentalConsentWarningBanner.tsx");
 
 export default function ParentalConsentWarningBanner(children) {
-  let dependencyMap;
-  const tmp = _createForOfIteratorHelperLoose();
-  const require = tmp;
-  const tmp2 = token(1557)();
-  let obj = require(13876) /* useParentalConsentWarning */;
-  const parentalConsentWarning = obj.useParentalConsentWarning();
-  let obj1 = require(13875) /* useIsParentalConsentBannerActive */;
-  const isParentalConsentBannerActive = obj1.useIsParentalConsentBannerActive();
-  let obj2 = require(15789) /* getActiveRoute */;
-  const isOnMainSurface = obj2.useIsOnMainSurface();
-  let obj3 = require(10663) /* useGlobalStatusIndicatorState */;
-  let obj4 = require(3869) /* map */;
-  token = obj4.useToken(token(689).colors.BACKGROUND_FEEDBACK_WARNING);
-  let items = [token];
+  let _require;
+  let token;
   let daysRemaining;
+  const tmp = createCacheKey();
+  _require = tmp;
+  let Gfqlpa = token;
+  let obj = daysRemaining;
+  const tmp2 = token(daysRemaining[7])();
+  let intl = _require;
+  let obj1 = _require(daysRemaining[8]);
+  const parentalConsentWarning = obj1.useParentalConsentWarning();
+  let obj2 = _require(daysRemaining[9]);
+  const isParentalConsentBannerActive = obj2.useIsParentalConsentBannerActive();
+  let obj3 = _require(daysRemaining[10]);
+  let isOnMainSurface = obj3.useIsOnMainSurface();
+  let obj4 = _require(daysRemaining[11]);
+  let obj5 = _require(daysRemaining[12]);
+  token = obj5.useToken(token(daysRemaining[5]).colors.BACKGROUND_FEEDBACK_WARNING);
+  let items = [token];
+  daysRemaining = undefined;
   const memo = React.useMemo(() => {
     const items = [token, ];
-    const obj = token(_undefined[13])(token);
-    items[1] = token(_undefined[13])(token).setAlpha(0).toRgbString();
+    const obj = token(daysRemaining[13])(token);
+    items[1] = token(daysRemaining[13])(token).setAlpha(0).toRgbString();
     return items;
   }, items);
-  if (null != parentalConsentWarning) {
+  if (parentalConsentWarning != null) {
     daysRemaining = parentalConsentWarning.daysRemaining;
   }
-  let tmp9 = null;
-  if (null != daysRemaining) {
-    tmp9 = daysRemaining;
+  if (daysRemaining == null) {
+    daysRemaining = null;
   }
-  dependencyMap = tmp9;
-  let tmp10 = isOnMainSurface;
   if (isOnMainSurface) {
-    tmp10 = isParentalConsentBannerActive;
+    isOnMainSurface = isParentalConsentBannerActive;
   }
-  if (tmp10) {
-    tmp10 = !obj3.useGlobalStatusIndicatorState().isVisible;
+  if (isOnMainSurface) {
+    isOnMainSurface = !obj4.useGlobalStatusIndicatorState().isVisible;
   }
-  if (tmp10) {
-    tmp10 = null != tmp9;
+  if (isOnMainSurface) {
+    isOnMainSurface = null != daysRemaining;
   }
-  if (tmp10) {
-    tmp10 = tmp9 >= 0;
+  if (isOnMainSurface) {
+    isOnMainSurface = daysRemaining >= 0;
   }
-  const items1 = [tmp9];
+  const items1 = [daysRemaining];
   const sum = tmp2.top + closure_14;
   const items2 = [tmp.link];
-  const callback = React.useCallback(() => {
-    let obj = token(_undefined[14]);
-    obj = { days_remaining: _undefined };
+  const callback = obj7.useCallback(() => {
+    let obj = token(daysRemaining[14]);
+    obj = { days_remaining: daysRemaining };
     obj.track(outer1_8.PARENTAL_CONSENT_WARNING_BANNER_TAPPED, obj);
-    const tab = token(_undefined[15]).selectTab(outer1_7.REQUESTS);
-    const obj3 = token(_undefined[15]);
+    const tab = token(daysRemaining[15]).selectTab(outer1_7.REQUESTS);
+    const obj3 = token(daysRemaining[15]);
     obj = { screen: outer1_9.FAMILY_CENTER };
-    tmp(_undefined[16]).openUserSettings(obj);
+    _undefined(daysRemaining[16]).openUserSettings(obj);
   }, items1);
-  const callback1 = React.useCallback((children) => {
-    const obj = { variant: "text-sm/medium", color: "text-strong", style: tmp.link, children };
-    return outer1_11(tmp(_undefined[17]).Text, obj, arg1);
-  }, items2);
-  obj = {};
-  obj = {};
+  const callback1 = obj7.useCallback((children) => outer1_11(_undefined(daysRemaining[17]).Text, { variant: "text-sm/medium", color: "text-strong", style: _undefined.link, children }, arg1), items2);
   const items3 = [StyleSheet.absoluteFill, ];
-  obj1 = {};
   let num2 = 0;
-  if (tmp10) {
+  if (isOnMainSurface) {
     num2 = closure_14;
   }
-  obj1.marginTop = num2;
-  items3[1] = obj1;
-  obj.style = items3;
-  obj.children = children.children;
-  const items4 = [callback(View, obj), ];
+  items3[1] = { marginTop: num2 };
+  children = [closure_11(View, { style: items3, children: children.children }), ];
   let tmp18 = null;
-  if (tmp10) {
+  if (isOnMainSurface) {
     tmp18 = null;
-    if (null != tmp9) {
-      obj2 = {};
+    if (null != daysRemaining) {
+      obj = { style: null, pointerEvents: "box-none", children: null };
       const items5 = [tmp.strip, ];
-      obj3 = { height: sum };
-      items5[1] = obj3;
-      obj2.style = items5;
-      obj2.pointerEvents = "box-none";
-      obj4 = { pointerEvents: "none", style: StyleSheet.absoluteFill, colors: memo, locations: closure_15 };
-      ({ START: obj11.start, END: obj11.end } = closure_10);
-      const items6 = [callback(token(4589), obj4), ];
-      let obj5 = { accessibilityRole: "button" };
-      let num4 = 19;
-      const intl = require(1212) /* getSystemLocale */.intl;
-      obj5.accessibilityHint = intl.string(token(2199).O2HKdA);
-      obj5.onPress = callback;
+      obj = { height: null };
+      obj[0] = sum;
+      items5[1] = obj;
+      obj[0] = items5;
+      obj1 = { pointerEvents: "none", style: null, colors: null, locations: null, start: null, end: null };
+      obj1[1] = StyleSheet.absoluteFill;
+      obj1[2] = memo;
+      obj1[3] = closure_15;
+      ({ START: obj10[4], END: obj10[5] } = closure_10);
+      const items6 = [tmp15(Gfqlpa(obj[18]), obj1), ];
+      obj2 = { accessibilityRole: "button", accessibilityHint: null, onPress: null, style: null, children: null };
+      const intl2 = intl(obj[19]).intl;
+      obj2[1] = intl2.string(Gfqlpa(obj[20]).O2HKdA);
+      obj2[2] = callback;
       const items7 = [tmp.pressable, ];
-      const obj6 = { paddingTop: tmp2.top + 8 };
-      items7[1] = obj6;
-      obj5.style = items7;
-      let obj7 = { variant: "text-sm/medium", color: "text-strong", lineClamp: 1, style: tmp.label };
-      if (0 === tmp9) {
-        const intl3 = require(dependencyMap[num4]).intl;
-        num4 = intl3.format;
-        const obj8 = { connectHook: callback1 };
-        let num4Result = num4(token(2199).Gfqlpa, obj8);
+      obj3 = { paddingTop: null };
+      obj3[0] = tmp2.top + 8;
+      items7[1] = obj3;
+      obj2[3] = items7;
+      obj4 = { variant: "text-sm/medium", color: "text-strong", lineClamp: 1, style: null, children: null };
+      obj4[3] = tmp.label;
+      if (0 === daysRemaining) {
+        intl = intl(obj[19]).intl;
+        Gfqlpa = Gfqlpa(obj[20]).Gfqlpa;
+        obj = { connectHook: null };
+        obj[0] = callback1;
+        let formatResult = intl.format(Gfqlpa, obj);
       } else {
-        const intl2 = require(dependencyMap[num4]).intl;
-        const obj9 = { count: tmp9, connectHook: callback1 };
-        num4Result = intl2.format(token(2199).ZBK5mM, obj9);
+        const intl3 = intl(obj[19]).intl;
+        obj5 = { count: null, connectHook: null };
+        obj5[0] = daysRemaining;
+        obj5[1] = callback1;
+        formatResult = intl3.format(Gfqlpa(obj[20]).ZBK5mM, obj5);
       }
-      obj7.children = num4Result;
-      obj7 = tmp21(require(4161) /* Text */.Text, obj7);
-      obj5.children = obj7;
-      obj5 = tmp21(closure_4, obj5);
-      items6[1] = obj5;
-      obj2.children = items6;
-      closure_12(View, obj2);
-      const tmp19 = closure_12;
-      const tmp20 = View;
-      const tmp27 = closure_4;
+      obj4[4] = formatResult;
+      obj4 = tmp15(intl(obj[17]).Text, obj4);
+      obj2[4] = obj4;
+      obj2 = tmp15(closure_4, obj2);
+      items6[1] = obj2;
+      obj[2] = items6;
+      tmp13(tmp16, obj);
+      const tmp21 = closure_4;
     }
   }
-  items4[1] = tmp18;
-  obj.children = items4;
-  return closure_12(closure_13, obj);
+  children[1] = tmp18;
+  return closure_12(closure_13, { children });
 };

@@ -1,15 +1,15 @@
-// Module ID: 7794
-// Function ID: 61820
+// Module ID: 7817
+// Function ID: 7818
 // Name: PUBLIC_SUCCESS_MODAL_SEEN_KEY
-// Dependencies: [653, 483, 2]
+// Dependencies: [676, 506, 2]
 
-// Module 7794 (PUBLIC_SUCCESS_MODAL_SEEN_KEY)
-import importAllResult from "fromHexReverseArray";
+// Module 7817 (PUBLIC_SUCCESS_MODAL_SEEN_KEY)
+import importAllResult from "fromString";
 
 const items = [, , , , , , , , , , , , , ];
 ({ ADMINISTRATOR: arr[0], KICK_MEMBERS: arr[1], BAN_MEMBERS: arr[2], MANAGE_GUILD: arr[3], MANAGE_CHANNELS: arr[4], MANAGE_ROLES: arr[5], MANAGE_MESSAGES: arr[6], MANAGE_GUILD_EXPRESSIONS: arr[7], CREATE_GUILD_EXPRESSIONS: arr[8], MANAGE_EVENTS: arr[9], CREATE_EVENTS: arr[10], MODERATE_MEMBERS: arr[11], MENTION_EVERYONE: arr[12], MANAGE_OFFICIAL_MESSAGES: arr[13] } = require("ME").Permissions);
 const items1 = [...items];
-const applyResult = require("fromHexReverseArray").combine.apply(items1);
+const applyResult = require("fromString").combine.apply(items1);
 const result = require("set").fileFinishedImporting("modules/public_guilds/PublicGuildsConstants.tsx");
 
 export const PUBLIC_SUCCESS_MODAL_SEEN_KEY = "publicSuccessModalSeen";

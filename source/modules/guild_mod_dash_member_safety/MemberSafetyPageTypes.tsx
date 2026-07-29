@@ -1,17 +1,17 @@
-// Module ID: 15407
-// Function ID: 117297
+// Module ID: 15440
+// Function ID: 15441
 // Name: SUBMITTED
-// Dependencies: [3985, 2]
+// Dependencies: [4009, 2]
 
-// Module 15407 (SUBMITTED)
+// Module 15440 (SUBMITTED)
 const obj = { ALL_MEMBERS: "ALL_MEMBERS" };
-const SUBMITTED = require("isTermsFormField").GuildJoinRequestApplicationStatuses.SUBMITTED;
+const SUBMITTED = require("MAX_RESULTS_PER_PAGE").GuildJoinRequestApplicationStatuses.SUBMITTED;
 obj.PENDING = SUBMITTED;
 obj[SUBMITTED] = "PENDING";
-const REJECTED = require("isTermsFormField").GuildJoinRequestApplicationStatuses.REJECTED;
+const REJECTED = require("MAX_RESULTS_PER_PAGE").GuildJoinRequestApplicationStatuses.REJECTED;
 obj.REJECTED = REJECTED;
 obj[REJECTED] = "REJECTED";
-const APPROVED = require("isTermsFormField").GuildJoinRequestApplicationStatuses.APPROVED;
+const APPROVED = require("MAX_RESULTS_PER_PAGE").GuildJoinRequestApplicationStatuses.APPROVED;
 obj.APPROVED = APPROVED;
 obj[APPROVED] = "APPROVED";
 const result = require("set").fileFinishedImporting("modules/guild_mod_dash_member_safety/MemberSafetyPageTypes.tsx");

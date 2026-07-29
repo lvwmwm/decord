@@ -1,24 +1,27 @@
-// Module ID: 5828
-// Function ID: 50949
+// Module ID: 5846
+// Function ID: 5847
 // Name: constructGoLiveSource
-// Dependencies: [4220, 4262, 5829, 5830, 3835, 2]
+// Dependencies: [4244, 4286, 5847, 5848, 3859, 2]
 // Exports: buildFetchCollectiblesOptionsQuery, constructGoLiveSource, getOptimizedProfileEffectThumbnailUrl, useFetchFractionalPremiumInfo
 
-// Module 5828 (constructGoLiveSource)
-import { ApplicationStreamPresets } from "makeButton";
+// Module 5846 (constructGoLiveSource)
+import { ApplicationStreamPresets } from "RESOLUTION_720";
 
 const result = require("ShopVariantsReturnStyle").fileFinishedImporting("modules/collectibles/utils/CollectiblesUtils.tsx");
 
 export const constructGoLiveSource = function constructGoLiveSource(resolution, frameRate, desktopSource) {
-  obj = { qualityOptions: obj, context: require(4262) /* getMediaEngineImpl */.MediaEngineContextTypes.STREAM };
+  obj = { qualityOptions: obj, context: require(4286) /* BaseConnectionEvent */.MediaEngineContextTypes.STREAM };
   obj = { preset: ApplicationStreamPresets.PRESET_CUSTOM, resolution, frameRate };
   if (null != desktopSource) {
     if (null != desktopSource.desktopSource) {
-      obj = { sourceId: desktopSource.desktopSource.id, sound: true };
+      obj = { sourceId: null, sound: true };
+      obj[0] = desktopSource.desktopSource.id;
       obj.desktopSettings = obj;
     }
     if (null != desktopSource.cameraSource) {
-      const obj1 = { videoDeviceGuid: desktopSource.cameraSource.videoDeviceGuid, audioDeviceGuid: desktopSource.cameraSource.audioDeviceGuid };
+      const obj1 = { videoDeviceGuid: null, audioDeviceGuid: null };
+      obj1[0] = desktopSource.cameraSource.videoDeviceGuid;
+      obj1[1] = desktopSource.cameraSource.audioDeviceGuid;
       obj.cameraSettings = obj1;
     }
   }
@@ -52,8 +55,8 @@ export const buildFetchCollectiblesOptionsQuery = function buildFetchCollectible
     if (null !== noCache.paymentGateway) {
       obj.payment_gateway = noCache.paymentGateway;
     }
-    if (noCache.variantsReturnStyle === require(5829) /* ShopVariantsReturnStyle */.ShopVariantsReturnStyle.VARIANTS_GROUP) {
-      obj.variants_return_style = require(5829) /* ShopVariantsReturnStyle */.ShopVariantsReturnStyle.VARIANTS_GROUP;
+    if (noCache.variantsReturnStyle === require(5847) /* ShopVariantsReturnStyle */.ShopVariantsReturnStyle.VARIANTS_GROUP) {
+      obj.variants_return_style = tmp2(5847).ShopVariantsReturnStyle.VARIANTS_GROUP;
     }
     if (null != noCache.shopHomeConfig) {
       obj.shop_home_config = noCache.shopHomeConfig;
@@ -61,6 +64,7 @@ export const buildFetchCollectiblesOptionsQuery = function buildFetchCollectible
     if (null != noCache.skipNumCategories) {
       obj.skip_num_categories = noCache.skipNumCategories;
     }
+    tmp2 = require;
   }
   return obj;
 };
@@ -71,8 +75,8 @@ export const getOptimizedProfileEffectThumbnailUrl = function getOptimizedProfil
   }
 };
 export const useFetchFractionalPremiumInfo = function useFetchFractionalPremiumInfo() {
-  const tmp = importDefault(5830)({ forceFetch: true });
-  let obj = require(3835) /* resetCache */;
+  const tmp = importDefault(5848)({ forceFetch: true });
+  let obj = require(3859) /* resetCache */;
   obj = { isLoading: !tmp.fetched, isFractionalPremiumActive: tmp.isFractionalPremiumActive, expiresAt: obj.dateFormat(tmp.endsAt, "L") };
   return obj;
 };

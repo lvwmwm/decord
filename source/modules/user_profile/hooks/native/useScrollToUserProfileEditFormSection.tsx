@@ -1,51 +1,52 @@
-// Module ID: 13685
-// Function ID: 105006
+// Module ID: 13706
+// Function ID: 13707
 // Name: useScrollToUserProfileEditFormSection
-// Dependencies: [31, 27, 4157, 9779, 566, 2]
+// Dependencies: [19, 17, 4181, 9801, 589, 2]
 // Exports: default
 
-// Module 13685 (useScrollToUserProfileEditFormSection)
-import result from "result";
+// Module 13706 (useScrollToUserProfileEditFormSection)
+import noop from "noop";
 import { findNodeHandle } from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
 import zustandStore from "zustandStore";
 
 const require = arg1;
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/user_profile/hooks/native/useScrollToUserProfileEditFormSection.tsx");
+const result = require("maybeApplyNoTextColorForLightCustomTheme").fileFinishedImporting("modules/user_profile/hooks/native/useScrollToUserProfileEditFormSection.tsx");
 
 export default function useScrollToUserProfileEditFormSection(arg0, arg1) {
   const _require = arg0;
   const dependencyMap = arg1;
   ref = ref.useRef({});
-  const items = [_isNativeReflectConstruct];
-  let closure_3 = _require(566).useStateFromStores(items, () => outer1_4.useReducedMotion);
+  const items = [maybeApplyNoTextColorForLightCustomTheme];
+  let closure_3 = _require(589).useStateFromStores(items, () => useReducedMotion.useReducedMotion);
   const effect = ref.useEffect(() => {
-    let tmp = null != closure_1;
-    if (tmp) {
+    let tmp2 = null != closure_1;
+    if (tmp2) {
       let current = ref.current;
-      let tmp3;
-      if (null != current) {
-        tmp3 = current[closure_1];
+      let tmp4;
+      if (current != null) {
+        tmp4 = current[tmp];
       }
-      tmp = null != tmp3;
+      tmp2 = null != tmp4;
     }
-    if (tmp) {
+    if (tmp2) {
       const _setTimeout = setTimeout;
       const timerId = setTimeout(() => {
-        let obj = outer1_2.current[outer1_1];
-        const tmp = callback(outer1_0.current);
+        const tmp = outer1_3(ref.current);
         if (null != tmp) {
-          if (null != obj) {
+          if (obj != null) {
             obj.measureLayout(tmp, (arg0, arg1) => {
-              const current = outer2_0.current;
-              if (null != current) {
-                const obj = { x: arg0, y: arg1, animated: !outer2_3 };
+              const current = ref.current;
+              if (current != null) {
+                const obj = { x: null, y: null, animated: null };
+                obj[0] = arg0;
+                obj[1] = arg1;
+                obj[2] = !closure_3;
                 current.scrollTo(obj);
               }
             });
           }
-          obj = { scrollPosition: null };
-          outer2_5.setState(obj);
+          outer1_5.setState({ scrollPosition: null });
         }
       }, 0);
     }

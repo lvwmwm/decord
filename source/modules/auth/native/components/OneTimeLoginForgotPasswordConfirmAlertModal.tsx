@@ -1,27 +1,27 @@
-// Module ID: 9171
-// Function ID: 71890
+// Module ID: 9195
+// Function ID: 9196
 // Name: OneTimeLoginForgotPasswordConfirmAlertModal
-// Dependencies: [31, 33, 4510, 1212, 4510, 2]
+// Dependencies: [19, 21, 4533, 1236, 4533, 2]
 // Exports: default
 
-// Module 9171 (OneTimeLoginForgotPasswordConfirmAlertModal)
-import "result";
+// Module 9195 (OneTimeLoginForgotPasswordConfirmAlertModal)
+import "noop";
 import { jsx } from "jsxProd";
 
 const require = arg1;
 const result = require("getAlertModalItemKey").fileFinishedImporting("modules/auth/native/components/OneTimeLoginForgotPasswordConfirmAlertModal.tsx");
 
 export default function OneTimeLoginForgotPasswordConfirmAlertModal() {
-  let obj = {};
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj.title = intl.string(require(1212) /* getSystemLocale */.t["6Ecyts"]);
-  const intl2 = require(1212) /* getSystemLocale */.intl;
-  obj.content = intl2.string(require(1212) /* getSystemLocale */.t.iAcrqV);
-  obj = {};
-  obj = {};
-  const intl3 = require(1212) /* getSystemLocale */.intl;
-  obj.text = intl3.string(require(1212) /* getSystemLocale */.t.BddRzS);
-  obj.children = jsx(require(4510) /* getAlertModalItemKey */.AlertActionButton, {}, "okay");
-  obj.actions = jsx(require(4510) /* getAlertModalItemKey */.AlertActions, {});
-  return jsx(require(4510) /* getAlertModalItemKey */.AlertModal, {});
+  let obj = { title: null, content: null, actions: null };
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj[0] = intl.string(require(1236) /* getSystemLocale */.t["6Ecyts"]);
+  const intl2 = require(1236) /* getSystemLocale */.intl;
+  obj[1] = intl2.string(require(1236) /* getSystemLocale */.t.iAcrqV);
+  obj = { children: null };
+  obj = { text: null };
+  const intl3 = require(1236) /* getSystemLocale */.intl;
+  obj[0] = intl3.string(require(1236) /* getSystemLocale */.t.BddRzS);
+  obj[0] = jsx(require(4533) /* getAlertModalItemKey */.AlertActionButton, { text: null }, "okay");
+  obj[2] = jsx(require(4533) /* getAlertModalItemKey */.AlertActions, { text: null });
+  return jsx(require(4533) /* getAlertModalItemKey */.AlertModal, { text: null });
 };

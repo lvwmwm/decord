@@ -1,9 +1,9 @@
-// Module ID: 13510
-// Function ID: 103694
-// Dependencies: [1850, 4068, 653, 10595, 1392, 10592, 1447, 2]
+// Module ID: 13533
+// Function ID: 13534
+// Dependencies: [1874, 4092, 676, 10629, 1416, 10626, 1471, 2]
 
-// Module 13510
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 13533
+import mergeGuildAvatar from "mergeGuildAvatar";
 import ME from "ME";
 
 const require = arg1;
@@ -11,19 +11,19 @@ const RPCErrors = ME.RPCErrors;
 let obj = {
   scope: require("RPC_SCOPE_CONFIG").RPC_LOCAL_SCOPE,
   validation(string) {
-    let obj = importDefault(10595)(string);
-    obj = {};
+    let obj = importDefault(10629)(string);
+    obj = { type: null, id: null, format: null, size: null };
     const requiredResult = obj.required();
     const stringResult = string.string();
-    obj.type = string.string().required().valid(["user"]);
+    obj[0] = string.string().required().valid(["user"]);
     const requiredResult1 = string.string().required();
-    obj.id = string.string().required();
+    obj[1] = string.string().required();
     const stringResult1 = string.string();
     const stringResult2 = string.string();
-    obj.format = string.string().required().valid(["png", "webp", "jpg"]);
+    obj[2] = string.string().required().valid(["png", "webp", "jpg"]);
     const requiredResult2 = string.string().required();
     const numberResult = string.number();
-    obj.size = string.number().required().valid([16, 32, 64, 128, 256, 512, 1024]);
+    obj[3] = string.number().required().valid([16, 32, 64, 128, 256, 512, 1024]);
     return requiredResult.keys(obj);
   },
   handler(args) {
@@ -42,14 +42,14 @@ let obj = {
     if ("user" === args.type) {
       user = user.getUser(id);
       if (null == user) {
-        let tmp15 = importDefault(10592);
-        let obj = { errorCode: RPCErrors.INVALID_USER };
+        let obj = { errorCode: null };
+        obj[0] = RPCErrors.INVALID_USER;
         const _HermesInternal = HermesInternal;
-        const prototype2 = tmp15.prototype;
-        tmp15 = new tmp15(obj, "Invalid user id: " + id);
-        throw tmp15;
+        let tmp14 = importDefault(10626);
+        tmp14 = new tmp14(obj, "Invalid user id: " + id);
+        throw tmp14;
       } else {
-        const obj3 = importDefault(1392);
+        const obj3 = importDefault(1416);
         const userAvatarURL = obj3.getUserAvatarURL(user, false, num, format);
         const _window = window;
         let tmp2 = null != CDN_HOST;
@@ -63,16 +63,15 @@ let obj = {
       }
     }
     if (null == text) {
-      let tmp6 = importDefault(10592);
-      obj = { errorCode: RPCErrors.INVALID_COMMAND };
-      const prototype = tmp6.prototype;
-      tmp6 = new tmp6(obj, "No valid type.");
-      throw tmp6;
+      obj = { errorCode: null };
+      obj[0] = RPCErrors.INVALID_COMMAND;
+      const tmp10 = new importDefault(10626)(obj, "No valid type.");
+      throw tmp10;
     } else {
       const _fetch = fetch;
       const response = fetch(text);
       const nextPromise = response.then((blob) => blob.blob());
-      return response.then((blob) => blob.blob()).then((arg0) => outer1_0(outer1_2[6]).readFileAsBase64(arg0)).then((data_url) => ({ data_url }));
+      return response.then((blob) => blob.blob()).then((arg0) => callback(table[6]).readFileAsBase64(arg0)).then((data_url) => ({ data_url }));
     }
   }
 };

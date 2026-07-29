@@ -1,44 +1,50 @@
-// Module ID: 10441
-// Function ID: 80375
+// Module ID: 10465
+// Function ID: 10466
 // Name: ChatOverlays
-// Dependencies: [1347, 1348, 10439, 5670, 624, 3783, 10442, 2]
+// Dependencies: [1371, 1372, 10463, 5688, 647, 3807, 10466, 2]
 // Exports: default
 
-// Module 10441 (ChatOverlays)
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 10465 (ChatOverlays)
+import participantFromServer from "participantFromServer";
+import ensureGuildLoaded from "ensureGuildLoaded";
 import { ChatOverlays } from "ChatOverlays";
 import { ActivityPanelModes } from "ActivityPanelModes";
 
 const require = arg1;
-let items = [, , ];
+const no_text_activity = "no_text_activity";
+let obj = { no_text_activity: items };
+items = [, , ];
 ({ NEW_MESSAGES: arr[0], OPT_IN_CHANNEL: arr[1], SUMMARIES: arr[2] } = ChatOverlays);
 let items1 = [, , ];
 ({ NEW_MESSAGES: arr2[0], OPT_IN_CHANNEL: arr2[1], SUMMARIES: arr2[2] } = ChatOverlays);
+obj[ActivityPanelModes.DISCONNECTED] = items1;
 const items2 = [, , ];
 ({ NEW_MESSAGES: arr3[0], OPT_IN_CHANNEL: arr3[1], SUMMARIES: arr3[2] } = ChatOverlays);
+obj[ActivityPanelModes.LAUNCHING_WITH_ORIENTATION_CHANGE] = items2;
+obj[ActivityPanelModes.PANEL] = [];
 const items3 = [, , ];
 ({ NEW_MESSAGES: arr4[0], OPT_IN_CHANNEL: arr4[1], SUMMARIES: arr4[2] } = ChatOverlays);
+obj[ActivityPanelModes.PIP] = items3;
 const items4 = [, , ];
 ({ NEW_MESSAGES: arr5[0], OPT_IN_CHANNEL: arr5[1], SUMMARIES: arr5[2] } = ChatOverlays);
-let closure_5 = { ["no_text_activity"]: items, [ActivityPanelModes.DISCONNECTED]: items1, [ActivityPanelModes.LAUNCHING_WITH_ORIENTATION_CHANGE]: items2, [ActivityPanelModes.PANEL]: [], [ActivityPanelModes.PIP]: items3, [ActivityPanelModes.ACTIVITY_POPOUT_WINDOW]: items4 };
+obj[ActivityPanelModes.ACTIVITY_POPOUT_WINDOW] = items4;
 const result = require("ChatOverlays").fileFinishedImporting("modules/messages/useAllowedChatOverlays.tsx");
 
 export default function useAllowedChatOverlays() {
-  const items = [_createForOfIteratorHelperLoose];
-  const stateFromStores = require(624) /* defaultAreStatesEqual */.useStateFromStores(items, () => outer1_3.getCurrentEmbeddedActivity());
-  const obj = require(624) /* defaultAreStatesEqual */;
-  const items1 = [_createForOfIteratorHelperLoose];
-  const stateFromStores1 = require(624) /* defaultAreStatesEqual */.useStateFromStores(items1, () => outer1_3.getActivityPanelMode());
-  require(3783) /* getEmbeddedActivityLocationChannelId */;
-  if (null != stateFromStores) {
+  const obj = require(647) /* defaultAreStatesEqual */;
+  const items = [participantFromServer];
+  const stateFromStores = obj.useStateFromStores(items, () => store.getCurrentEmbeddedActivity());
+  const items1 = [participantFromServer];
+  const stateFromStores1 = require(647) /* defaultAreStatesEqual */.useStateFromStores(items1, () => store.getActivityPanelMode());
+  require(3807) /* getEmbeddedActivityLocationChannelId */;
+  if (stateFromStores != null) {
     const _location = stateFromStores.location;
   }
   if (undefined !== stateFromStores) {
-    if (!importDefault(10442)(tmp4, _isNativeReflectConstruct)) {
-      no_text_activity = no_text_activity[stateFromStores1];
+    if (!importDefault(10466)(tmp5, ensureGuildLoaded)) {
+      let tmp9 = obj[stateFromStores1];
     }
-    return no_text_activity;
+    return tmp9;
   }
-  no_text_activity = no_text_activity.no_text_activity;
+  tmp9 = obj[no_text_activity];
 };

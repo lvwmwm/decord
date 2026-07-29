@@ -1,120 +1,122 @@
-// Module ID: 9683
-// Function ID: 75330
+// Module ID: 9705
+// Function ID: 9706
 // Name: GiftingBadgeInfoActionSheet
-// Dependencies: [31, 27, 4157, 8085, 653, 33, 4165, 689, 1557, 566, 8082, 675, 5221, 4161, 1212, 2295, 9684, 2]
+// Dependencies: [19, 17, 4181, 8109, 676, 21, 4189, 712, 1581, 589, 8106, 698, 5243, 4185, 1236, 2319, 9706, 2]
 // Exports: default
 
-// Module 9683 (GiftingBadgeInfoActionSheet)
-import result from "result";
-import { View } from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_6 from "_isNativeReflectConstruct";
-import { getSingleRequirementThreshold as closure_7 } from "_isNativeReflectConstruct";
+// Module 9705 (GiftingBadgeInfoActionSheet)
+import noop from "noop";
+import { View } from "set";
+import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
+import map from "map";
+import { getSingleRequirementThreshold as closure_7 } from "map";
 import { AnalyticEvents } from "ME";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_10;
-let closure_9;
+let c10;
+let c9;
 let require = arg1;
-({ jsx: closure_9, jsxs: closure_10 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { alignItems: "center", paddingTop: require("_createForOfIteratorHelperLoose").space.PX_16, paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16 };
-_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.headerContainer = { paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_8 };
-let obj1 = { paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_8 };
-_createForOfIteratorHelperLoose.title = { textAlign: "center", marginBottom: require("_createForOfIteratorHelperLoose").space.PX_8 };
-let obj2 = { textAlign: "center", marginBottom: require("_createForOfIteratorHelperLoose").space.PX_8 };
-_createForOfIteratorHelperLoose.description = { textAlign: "center", marginBottom: require("_createForOfIteratorHelperLoose").space.PX_16 };
-let obj4 = { flexDirection: "row", flexWrap: "wrap", rowGap: require("_createForOfIteratorHelperLoose").space.PX_8 };
-_createForOfIteratorHelperLoose.tierCards = obj4;
-let obj5 = { width: "33.33%", alignItems: "center", padding: require("_createForOfIteratorHelperLoose").space.PX_8 };
-_createForOfIteratorHelperLoose.tierCard = obj5;
-let obj3 = { textAlign: "center", marginBottom: require("_createForOfIteratorHelperLoose").space.PX_16 };
-_createForOfIteratorHelperLoose.iconWrapper = { paddingVertical: require("_createForOfIteratorHelperLoose").space.PX_8 };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-const obj6 = { paddingVertical: require("_createForOfIteratorHelperLoose").space.PX_8 };
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/premium/gifting/native/GiftingBadgeInfoActionSheet.tsx");
+({ jsx: c9, jsxs: c10 } = jsxProd);
+createCacheKey = { container: null, headerContainer: null, title: null, description: null, tierCards: null, tierCard: null, iconWrapper: null };
+createCacheKey = { alignItems: "center", paddingTop: require("Themes").space.PX_16, paddingHorizontal: require("Themes").space.PX_16 };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { paddingHorizontal: require("Themes").space.PX_8 };
+let obj1 = { paddingHorizontal: require("Themes").space.PX_8 };
+createCacheKey[2] = { textAlign: "center", marginBottom: require("Themes").space.PX_8 };
+let obj2 = { textAlign: "center", marginBottom: require("Themes").space.PX_8 };
+createCacheKey[3] = { textAlign: "center", marginBottom: require("Themes").space.PX_16 };
+let obj3 = { textAlign: "center", marginBottom: require("Themes").space.PX_16 };
+createCacheKey[4] = { flexDirection: "row", flexWrap: "wrap", rowGap: require("Themes").space.PX_8 };
+let obj4 = { flexDirection: "row", flexWrap: "wrap", rowGap: require("Themes").space.PX_8 };
+createCacheKey[5] = { width: "33.33%", alignItems: "center", padding: require("Themes").space.PX_8 };
+let obj5 = { width: "33.33%", alignItems: "center", padding: require("Themes").space.PX_8 };
+createCacheKey[6] = { paddingVertical: require("Themes").space.PX_8 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+const obj6 = { paddingVertical: require("Themes").space.PX_8 };
+const result = require("maybeApplyNoTextColorForLightCustomTheme").fileFinishedImporting("modules/premium/gifting/native/GiftingBadgeInfoActionSheet.tsx");
 
 export default function GiftingBadgeInfoActionSheet() {
-  const tmp = _createForOfIteratorHelperLoose();
+  const tmp = createCacheKey();
   const require = tmp;
-  let obj = require(566) /* initialize */;
-  let items = [closure_6];
-  const stateFromStores = obj.useStateFromStores(items, () => outer1_6.getBadgeById(tmp(outer1_2[10]).BadgeId.GIFTING));
-  let obj1 = require(566) /* initialize */;
-  const items1 = [_isNativeReflectConstruct];
-  const importDefault = obj1.useStateFromStores(items1, () => outer1_5.useReducedMotion);
+  let obj = require(589) /* initialize */;
+  let items = [map];
+  const stateFromStores = obj.useStateFromStores(items, () => badgeById.getBadgeById(tmp(8106).BadgeId.GIFTING));
+  let obj1 = require(589) /* initialize */;
+  const items1 = [maybeApplyNoTextColorForLightCustomTheme];
+  const importDefault = obj1.useStateFromStores(items1, () => useReducedMotion.useReducedMotion);
   const effect = React.useEffect(() => {
-    callback(outer1_2[11]).track(outer1_8.GIFTING_BADGE_INFO_ACTION_SHEET_OPENED);
+    callback(698).track(constants.GIFTING_BADGE_INFO_ACTION_SHEET_OPENED);
   }, []);
-  obj = { scrollable: false, startExpanded: true };
-  obj = {};
+  obj = { style: null, children: null };
   const items2 = [tmp.container, ];
-  obj1 = { paddingBottom: importDefault(1557)().bottom + importDefault(689).space.PX_16 };
-  items2[1] = obj1;
-  obj.style = items2;
-  let obj2 = { style: tmp.headerContainer };
-  let obj3 = { style: tmp.title, variant: "heading-xl/semibold", color: "text-strong", accessibilityRole: "header" };
-  let intl = require(1212) /* getSystemLocale */.intl;
-  obj3.children = intl.string(importDefault(2295)["0MB2C6"]);
-  const items3 = [callback(require(4161) /* Text */.Text, obj3), ];
-  const obj4 = { style: tmp.description, variant: "text-md/medium", color: "text-default" };
-  const intl2 = require(1212) /* getSystemLocale */.intl;
-  obj4.children = intl2.string(importDefault(2295).k9sNVH);
-  items3[1] = callback(require(4161) /* Text */.Text, obj4);
-  obj2.children = items3;
-  const items4 = [callback2(View, obj2), ];
-  const obj5 = { style: tmp.tierCards };
+  obj = { paddingBottom: null };
+  obj[0] = importDefault(1581)().bottom + importDefault(712).space.PX_16;
+  items2[1] = obj;
+  obj[0] = items2;
+  obj1 = { style: tmp.headerContainer, children: null };
+  let obj2 = { style: tmp.title, variant: "heading-xl/semibold", color: "text-strong", accessibilityRole: "header", children: null };
+  let intl = require(1236) /* getSystemLocale */.intl;
+  obj2[4] = intl.string(importDefault(2319)["0MB2C6"]);
+  const items3 = [callback(require(4185) /* Text */.Text, obj2), ];
+  let obj3 = { style: tmp.description, variant: "text-md/medium", color: "text-default", children: null };
+  const intl2 = require(1236) /* getSystemLocale */.intl;
+  obj3[3] = intl2.string(importDefault(2319).k9sNVH);
+  items3[1] = callback(require(4185) /* Text */.Text, obj3);
+  obj1[1] = items3;
+  const items4 = [callback2(View, obj1), ];
+  const obj4 = { style: tmp.tierCards, children: null };
   let mapped;
-  if (null != stateFromStores) {
+  if (stateFromStores != null) {
     const tiers = stateFromStores.tiers;
-    if (null != tiers) {
-      mapped = tiers.map((complex_icon_static_url) => {
+    if (tiers != null) {
+      mapped = tiers.map((children) => {
         if (callback) {
-          let simple_icon_url2 = complex_icon_static_url.complex_icon_static_url;
-          if (null == simple_icon_url2) {
-            simple_icon_url2 = complex_icon_static_url.simple_icon_url;
+          let simple_icon_url2 = children.complex_icon_static_url;
+          if (simple_icon_url2 == null) {
+            simple_icon_url2 = children.simple_icon_url;
           }
           let simple_icon_url = simple_icon_url2;
         } else {
-          simple_icon_url = complex_icon_static_url.complex_icon_animated_url;
-          if (null == simple_icon_url) {
-            simple_icon_url = complex_icon_static_url.complex_icon_static_url;
+          simple_icon_url = children.complex_icon_animated_url;
+          if (simple_icon_url == null) {
+            simple_icon_url = children.complex_icon_static_url;
           }
-          if (null == simple_icon_url) {
-            simple_icon_url = complex_icon_static_url.simple_icon_url;
+          if (simple_icon_url == null) {
+            simple_icon_url = children.simple_icon_url;
           }
         }
-        const tmp3 = outer1_7(complex_icon_static_url);
-        let obj = { style: tmp.tierCard };
-        let tmp6 = null != simple_icon_url;
-        if (tmp6) {
-          obj = { style: tmp.iconWrapper };
-          obj = { icon: simple_icon_url, size: 58 };
-          obj.children = outer1_9(callback(outer1_2[16]), obj);
-          tmp6 = outer1_9(outer1_4, obj);
+        const tmp3 = outer1_7(children);
+        let obj = { style: tmp.tierCard, children: null };
+        let tmp7 = null != simple_icon_url;
+        if (tmp7) {
+          obj = { style: null, children: null };
+          obj[0] = tmp6.iconWrapper;
+          obj = { icon: null, size: 58 };
+          obj[0] = simple_icon_url;
+          obj[1] = outer1_9(callback(outer1_2[16]), obj);
+          tmp7 = outer1_9(tmp5, obj);
         }
-        const items = [tmp6, , ];
-        const obj1 = { variant: "text-lg/semibold", color: "text-strong", children: complex_icon_static_url.name };
-        items[1] = outer1_9(tmp(outer1_2[13]).Text, obj1);
-        let tmp12 = null != tmp3;
-        if (tmp12) {
-          const obj2 = { variant: "text-md/normal", color: "text-subtle" };
-          const intl = tmp(outer1_2[14]).intl;
-          const obj3 = { count: tmp3 };
-          obj2.children = intl.formatToPlainString(callback(outer1_2[15]).qvx9E4, obj3);
-          tmp12 = outer1_9(tmp(outer1_2[13]).Text, obj2);
+        const items = [tmp7, outer1_9(tmp(outer1_2[13]).Text, { variant: "text-lg/semibold", color: "text-strong", children: children.name }), ];
+        let tmp11Result = null != tmp3;
+        if (tmp11Result) {
+          const obj2 = { variant: "text-md/normal", color: "text-subtle", children: null };
+          const intl = tmp12(tmp13[14]).intl;
+          const obj3 = { count: null };
+          obj3[0] = tmp3;
+          obj2[2] = intl.formatToPlainString(callback(tmp13[15]).qvx9E4, obj3);
+          tmp11Result = outer1_9(tmp12(tmp13[13]).Text, obj2);
         }
-        items[2] = tmp12;
-        obj.children = items;
-        return outer1_10(outer1_4, obj, complex_icon_static_url.key);
+        items[2] = tmp11Result;
+        obj[1] = items;
+        return outer1_10(outer1_4, obj, children.key);
       });
     }
   }
-  obj5.children = mapped;
-  items4[1] = callback(View, obj5);
-  obj.children = items4;
-  obj.children = callback2(View, obj);
-  return callback(require(5221) /* Background */.BottomSheet, obj);
+  const obj5 = { scrollable: false, startExpanded: true, children: null };
+  obj4[1] = mapped;
+  items4[1] = callback(View, obj4);
+  obj[1] = items4;
+  obj5[2] = callback2(View, obj);
+  return callback(require(5243) /* Background */.BottomSheet, obj5);
 };

@@ -1,104 +1,25 @@
-// Module ID: 694
-// Function ID: 8508
-// Name: _createForOfIteratorHelperLoose
+// Module ID: 717
+// Function ID: 718
+// Name: _private
 // Dependencies: [2]
 
-// Module 694 (_createForOfIteratorHelperLoose)
+// Module 717 (_private)
 import set from "set";
 
-function _createForOfIteratorHelperLoose(iterable) {
-  let closure_0 = iterable;
-  iterable = "undefined" !== typeof Symbol;
-  if (iterable) {
-    const _Symbol = Symbol;
-    iterable = iterable[Symbol.iterator];
-  }
-  if (!iterable) {
-    iterable = iterable[Symbol.iterator];
-  }
-  if (iterable) {
-    const iter = iterable.call(iterable);
-    const next = iter.next;
-    return next.bind(iter);
-  } else {
-    const _Array = Array;
-    let tmp = iterable;
-    if (!Array.isArray(iterable)) {
-      let tmp2;
-      if (iterable) {
-        if ("string" === typeof iterable) {
-          tmp2 = _arrayLikeToArray(iterable, undefined);
-        } else {
-          const toString = {}.toString;
-          const substr = toString.call(iterable).slice(8, -1);
-          let name = substr;
-          if (tmp3) {
-            name = iterable.constructor.name;
-          }
-          if ("Map" !== name) {
-            if ("Set" !== name) {
-              if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(iterable, undefined);
-              } else {
-                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
-              }
-            }
-            tmp2 = arr;
-          }
-          const _Array2 = Array;
-          arr = Array.from(iterable);
-          const callResult = toString.call(iterable);
-          tmp3 = "Object" === substr && iterable.constructor;
-        }
-      }
-      tmp = tmp2;
-      if (!tmp2) {
-        const _TypeError = TypeError;
-        const typeError = new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
-        throw typeError;
-      }
-    }
-    if (tmp) {
-      closure_0 = tmp;
-    }
-    _arrayLikeToArray = 0;
-    return () => {
-      if (closure_1 >= length.length) {
-        let obj = { done: true };
-      } else {
-        obj = { done: false };
-        closure_1 = tmp3 + 1;
-        obj.value = length[+closure_1];
-      }
-      return obj;
-    };
-  }
-}
-function _arrayLikeToArray(arg0, arg1) {
-  let length;
-  if (tmp) {
-    length = arg0.length;
-  }
-  const ArrayResult = Array(length);
-  for (let num = 0; num < length; num = num + 1) {
-    ArrayResult[num] = arg0[num];
-  }
-  return ArrayResult;
-}
 let set = {
   resolve(enabledExperiments) {
     enabledExperiments = enabledExperiments.enabledExperiments;
     if (0 === enabledExperiments.length) {
       return 2147483647;
     } else {
-      const tmp2 = _createForOfIteratorHelperLoose(enabledExperiments);
-      let iter = tmp2();
-      if (!iter.done) {
-        while ("mobile-visual-refresh" !== iter.value) {
-          let iter2 = tmp2();
-          iter = iter2;
+      const iter = enabledExperiments[Symbol.iterator]();
+      while (iter !== undefined) {
+        if ("mobile-visual-refresh" === iter.next()) {
+          let tmp4 = iter;
+          iter.return();
+          let num = 8;
+          return 8;
         }
-        return 8;
       }
       return 2147483647;
     }
@@ -110,14 +31,14 @@ let obj = {
     if (0 === enabledExperiments.length) {
       return 2147483647;
     } else {
-      const tmp2 = _createForOfIteratorHelperLoose(enabledExperiments);
-      let iter = tmp2();
-      if (!iter.done) {
-        while ("mobile-visual-refresh" !== iter.value) {
-          let iter2 = tmp2();
-          iter = iter2;
+      const iter = enabledExperiments[Symbol.iterator]();
+      while (iter !== undefined) {
+        if ("mobile-visual-refresh" === iter.next()) {
+          let tmp4 = iter;
+          iter.return();
+          let num = 12;
+          return 12;
         }
-        return 12;
       }
       return 2147483647;
     }
@@ -164,14 +85,14 @@ set = {
     if (0 === enabledExperiments.length) {
       return 16;
     } else {
-      const tmp2 = _createForOfIteratorHelperLoose(enabledExperiments);
-      let iter = tmp2();
-      if (!iter.done) {
-        while ("mobile-visual-refresh" !== iter.value) {
-          let iter2 = tmp2();
-          iter = iter2;
+      const iter = enabledExperiments[Symbol.iterator]();
+      while (iter !== undefined) {
+        if ("mobile-visual-refresh" === iter.next()) {
+          let tmp4 = iter;
+          iter.return();
+          let num = 12;
+          return 12;
         }
-        return 12;
       }
       return 16;
     }
@@ -183,14 +104,14 @@ set = {
     if (0 === enabledExperiments.length) {
       return "heading-md/bold";
     } else {
-      const tmp2 = _createForOfIteratorHelperLoose(enabledExperiments);
-      let iter = tmp2();
-      if (!iter.done) {
-        while ("mobile-visual-refresh" !== iter.value) {
-          let iter2 = tmp2();
-          iter = iter2;
+      const iter = enabledExperiments[Symbol.iterator]();
+      while (iter !== undefined) {
+        if ("mobile-visual-refresh" === iter.next()) {
+          let tmp4 = iter;
+          iter.return();
+          let str2 = "heading-lg/semibold";
+          return "heading-lg/semibold";
         }
-        return "heading-lg/semibold";
       }
       return "heading-md/bold";
     }
@@ -202,14 +123,14 @@ set = {
     if (0 === enabledExperiments.length) {
       return 0;
     } else {
-      const tmp2 = _createForOfIteratorHelperLoose(enabledExperiments);
-      let iter = tmp2();
-      if (!iter.done) {
-        while ("mobile-visual-refresh" !== iter.value) {
-          let iter2 = tmp2();
-          iter = iter2;
+      const iter = enabledExperiments[Symbol.iterator]();
+      while (iter !== undefined) {
+        if ("mobile-visual-refresh" === iter.next()) {
+          let tmp4 = iter;
+          iter.return();
+          let num = 1;
+          return 1;
         }
-        return 1;
       }
       return 0;
     }
@@ -221,14 +142,14 @@ set = {
     if (0 === enabledExperiments.length) {
       return 8;
     } else {
-      const tmp2 = _createForOfIteratorHelperLoose(enabledExperiments);
-      let iter = tmp2();
-      if (!iter.done) {
-        while ("mobile-visual-refresh" !== iter.value) {
-          let iter2 = tmp2();
-          iter = iter2;
+      const iter = enabledExperiments[Symbol.iterator]();
+      while (iter !== undefined) {
+        if ("mobile-visual-refresh" === iter.next()) {
+          let tmp4 = iter;
+          iter.return();
+          let num = 4;
+          return 4;
         }
-        return 4;
       }
       return 8;
     }
@@ -240,14 +161,14 @@ set = {
     if (0 === enabledExperiments.length) {
       return 16;
     } else {
-      const tmp2 = _createForOfIteratorHelperLoose(enabledExperiments);
-      let iter = tmp2();
-      if (!iter.done) {
-        while ("mobile-visual-refresh" !== iter.value) {
-          let iter2 = tmp2();
-          iter = iter2;
+      const iter = enabledExperiments[Symbol.iterator]();
+      while (iter !== undefined) {
+        if ("mobile-visual-refresh" === iter.next()) {
+          let tmp4 = iter;
+          iter.return();
+          let num = 12;
+          return 12;
         }
-        return 12;
       }
       return 16;
     }
@@ -259,14 +180,14 @@ set = {
     if (0 === enabledExperiments.length) {
       return 12;
     } else {
-      const tmp2 = _createForOfIteratorHelperLoose(enabledExperiments);
-      let iter = tmp2();
-      if (!iter.done) {
-        while ("mobile-visual-refresh" !== iter.value) {
-          let iter2 = tmp2();
-          iter = iter2;
+      const iter = enabledExperiments[Symbol.iterator]();
+      while (iter !== undefined) {
+        if ("mobile-visual-refresh" === iter.next()) {
+          let tmp4 = iter;
+          iter.return();
+          let num = 8;
+          return 8;
         }
-        return 8;
       }
       return 12;
     }
@@ -278,14 +199,14 @@ set = {
     if (0 === enabledExperiments.length) {
       return 12;
     } else {
-      const tmp2 = _createForOfIteratorHelperLoose(enabledExperiments);
-      let iter = tmp2();
-      if (!iter.done) {
-        while ("mobile-visual-refresh" !== iter.value) {
-          let iter2 = tmp2();
-          iter = iter2;
+      const iter = enabledExperiments[Symbol.iterator]();
+      while (iter !== undefined) {
+        if ("mobile-visual-refresh" === iter.next()) {
+          let tmp4 = iter;
+          iter.return();
+          let num = 8;
+          return 8;
         }
-        return 8;
       }
       return 12;
     }
@@ -297,14 +218,14 @@ set = {
     if (0 === enabledExperiments.length) {
       return 2147483647;
     } else {
-      const tmp2 = _createForOfIteratorHelperLoose(enabledExperiments);
-      let iter = tmp2();
-      if (!iter.done) {
-        while ("mobile-visual-refresh" !== iter.value) {
-          let iter2 = tmp2();
-          iter = iter2;
+      const iter = enabledExperiments[Symbol.iterator]();
+      while (iter !== undefined) {
+        if ("mobile-visual-refresh" === iter.next()) {
+          let tmp4 = iter;
+          iter.return();
+          let num = 8;
+          return 8;
         }
-        return 8;
       }
       return 2147483647;
     }
@@ -316,14 +237,14 @@ set = {
     if (0 === enabledExperiments.length) {
       return "text-md/medium";
     } else {
-      const tmp2 = _createForOfIteratorHelperLoose(enabledExperiments);
-      let iter = tmp2();
-      if (!iter.done) {
-        while ("mobile-visual-refresh" !== iter.value) {
-          let iter2 = tmp2();
-          iter = iter2;
+      const iter = enabledExperiments[Symbol.iterator]();
+      while (iter !== undefined) {
+        if ("mobile-visual-refresh" === iter.next()) {
+          let tmp4 = iter;
+          iter.return();
+          let str2 = "text-md/normal";
+          return "text-md/normal";
         }
-        return "text-md/normal";
       }
       return "text-md/medium";
     }
@@ -335,14 +256,14 @@ set = {
     if (0 === enabledExperiments.length) {
       return "text-sm/medium";
     } else {
-      const tmp2 = _createForOfIteratorHelperLoose(enabledExperiments);
-      let iter = tmp2();
-      if (!iter.done) {
-        while ("mobile-visual-refresh" !== iter.value) {
-          let iter2 = tmp2();
-          iter = iter2;
+      const iter = enabledExperiments[Symbol.iterator]();
+      while (iter !== undefined) {
+        if ("mobile-visual-refresh" === iter.next()) {
+          let tmp4 = iter;
+          iter.return();
+          let str2 = "text-md/normal";
+          return "text-md/normal";
         }
-        return "text-md/normal";
       }
       return "text-sm/medium";
     }
@@ -354,14 +275,14 @@ set = {
     if (0 === enabledExperiments.length) {
       return "text-xs/medium";
     } else {
-      const tmp2 = _createForOfIteratorHelperLoose(enabledExperiments);
-      let iter = tmp2();
-      if (!iter.done) {
-        while ("mobile-visual-refresh" !== iter.value) {
-          let iter2 = tmp2();
-          iter = iter2;
+      const iter = enabledExperiments[Symbol.iterator]();
+      while (iter !== undefined) {
+        if ("mobile-visual-refresh" === iter.next()) {
+          let tmp4 = iter;
+          iter.return();
+          let str2 = "text-xs/normal";
+          return "text-xs/normal";
         }
-        return "text-xs/normal";
       }
       return "text-xs/medium";
     }
@@ -373,14 +294,14 @@ set = {
     if (0 === enabledExperiments.length) {
       return 12;
     } else {
-      const tmp2 = _createForOfIteratorHelperLoose(enabledExperiments);
-      let iter = tmp2();
-      if (!iter.done) {
-        while ("mobile-visual-refresh" !== iter.value) {
-          let iter2 = tmp2();
-          iter = iter2;
+      const iter = enabledExperiments[Symbol.iterator]();
+      while (iter !== undefined) {
+        if ("mobile-visual-refresh" === iter.next()) {
+          let tmp4 = iter;
+          iter.return();
+          let num = 8;
+          return 8;
         }
-        return 8;
       }
       return 12;
     }
@@ -402,14 +323,14 @@ set = {
     if (0 === enabledExperiments.length) {
       return 12;
     } else {
-      const tmp2 = _createForOfIteratorHelperLoose(enabledExperiments);
-      let iter = tmp2();
-      if (!iter.done) {
-        while ("mobile-visual-refresh" !== iter.value) {
-          let iter2 = tmp2();
-          iter = iter2;
+      const iter = enabledExperiments[Symbol.iterator]();
+      while (iter !== undefined) {
+        if ("mobile-visual-refresh" === iter.next()) {
+          let tmp4 = iter;
+          iter.return();
+          let num = 16;
+          return 16;
         }
-        return 16;
       }
       return 12;
     }
@@ -421,14 +342,14 @@ set = {
     if (0 === enabledExperiments.length) {
       return 2147483647;
     } else {
-      const tmp2 = _createForOfIteratorHelperLoose(enabledExperiments);
-      let iter = tmp2();
-      if (!iter.done) {
-        while ("mobile-visual-refresh" !== iter.value) {
-          let iter2 = tmp2();
-          iter = iter2;
+      const iter = enabledExperiments[Symbol.iterator]();
+      while (iter !== undefined) {
+        if ("mobile-visual-refresh" === iter.next()) {
+          let tmp4 = iter;
+          iter.return();
+          let num = 16;
+          return 16;
         }
-        return 16;
       }
       return 2147483647;
     }
@@ -440,14 +361,14 @@ set = {
     if (0 === enabledExperiments.length) {
       return 0;
     } else {
-      const tmp2 = _createForOfIteratorHelperLoose(enabledExperiments);
-      let iter = tmp2();
-      if (!iter.done) {
-        while ("mobile-visual-refresh" !== iter.value) {
-          let iter2 = tmp2();
-          iter = iter2;
+      const iter = enabledExperiments[Symbol.iterator]();
+      while (iter !== undefined) {
+        if ("mobile-visual-refresh" === iter.next()) {
+          let tmp4 = iter;
+          iter.return();
+          let num = 1;
+          return 1;
         }
-        return 1;
       }
       return 0;
     }
@@ -459,14 +380,13 @@ set = {
     if (0 === enabledExperiments.length) {
       return 24;
     } else {
-      const tmp2 = _createForOfIteratorHelperLoose(enabledExperiments);
-      let iter = tmp2();
-      if (!iter.done) {
-        while ("mobile-visual-refresh" !== iter.value) {
-          let iter2 = tmp2();
-          iter = iter2;
+      const iter = enabledExperiments[Symbol.iterator]();
+      while (iter !== undefined) {
+        if ("mobile-visual-refresh" === iter.next()) {
+          let tmp4 = iter;
+          iter.return();
+          return 0;
         }
-        return 0;
       }
       return 24;
     }
@@ -478,14 +398,14 @@ set = {
     if (0 === enabledExperiments.length) {
       return 16;
     } else {
-      const tmp2 = _createForOfIteratorHelperLoose(enabledExperiments);
-      let iter = tmp2();
-      if (!iter.done) {
-        while ("mobile-visual-refresh" !== iter.value) {
-          let iter2 = tmp2();
-          iter = iter2;
+      const iter = enabledExperiments[Symbol.iterator]();
+      while (iter !== undefined) {
+        if ("mobile-visual-refresh" === iter.next()) {
+          let tmp4 = iter;
+          iter.return();
+          let num = 4;
+          return 4;
         }
-        return 4;
       }
       return 16;
     }
@@ -497,14 +417,14 @@ set = {
     if (0 === enabledExperiments.length) {
       return 16;
     } else {
-      const tmp2 = _createForOfIteratorHelperLoose(enabledExperiments);
-      let iter = tmp2();
-      if (!iter.done) {
-        while ("mobile-visual-refresh" !== iter.value) {
-          let iter2 = tmp2();
-          iter = iter2;
+      const iter = enabledExperiments[Symbol.iterator]();
+      while (iter !== undefined) {
+        if ("mobile-visual-refresh" === iter.next()) {
+          let tmp4 = iter;
+          iter.return();
+          let num = 12;
+          return 12;
         }
-        return 12;
       }
       return 16;
     }
@@ -516,14 +436,14 @@ set = {
     if (0 === enabledExperiments.length) {
       return 0;
     } else {
-      const tmp2 = _createForOfIteratorHelperLoose(enabledExperiments);
-      let iter = tmp2();
-      if (!iter.done) {
-        while ("mobile-visual-refresh" !== iter.value) {
-          let iter2 = tmp2();
-          iter = iter2;
+      const iter = enabledExperiments[Symbol.iterator]();
+      while (iter !== undefined) {
+        if ("mobile-visual-refresh" === iter.next()) {
+          let tmp4 = iter;
+          iter.return();
+          let num = 8;
+          return 8;
         }
-        return 8;
       }
       return 0;
     }
@@ -535,14 +455,14 @@ set = {
     if (0 === enabledExperiments.length) {
       return 0;
     } else {
-      const tmp2 = _createForOfIteratorHelperLoose(enabledExperiments);
-      let iter = tmp2();
-      if (!iter.done) {
-        while ("mobile-visual-refresh" !== iter.value) {
-          let iter2 = tmp2();
-          iter = iter2;
+      const iter = enabledExperiments[Symbol.iterator]();
+      while (iter !== undefined) {
+        if ("mobile-visual-refresh" === iter.next()) {
+          let tmp4 = iter;
+          iter.return();
+          let num = 8;
+          return 8;
         }
-        return 8;
       }
       return 0;
     }
@@ -554,14 +474,14 @@ set = {
     if (0 === enabledExperiments.length) {
       return "icon-default";
     } else {
-      const tmp2 = _createForOfIteratorHelperLoose(enabledExperiments);
-      let iter = tmp2();
-      if (!iter.done) {
-        while ("mobile-visual-refresh" !== iter.value) {
-          let iter2 = tmp2();
-          iter = iter2;
+      const iter = enabledExperiments[Symbol.iterator]();
+      while (iter !== undefined) {
+        if ("mobile-visual-refresh" === iter.next()) {
+          let tmp4 = iter;
+          iter.return();
+          let str2 = "icon-default";
+          return "icon-default";
         }
-        return "icon-default";
       }
       return "icon-default";
     }
@@ -573,14 +493,14 @@ set = {
     if (0 === enabledExperiments.length) {
       return 0;
     } else {
-      const tmp2 = _createForOfIteratorHelperLoose(enabledExperiments);
-      let iter = tmp2();
-      if (!iter.done) {
-        while ("mobile-visual-refresh" !== iter.value) {
-          let iter2 = tmp2();
-          iter = iter2;
+      const iter = enabledExperiments[Symbol.iterator]();
+      while (iter !== undefined) {
+        if ("mobile-visual-refresh" === iter.next()) {
+          let tmp4 = iter;
+          iter.return();
+          let num = 4;
+          return 4;
         }
-        return 4;
       }
       return 0;
     }
@@ -592,14 +512,14 @@ set = {
     if (0 === enabledExperiments.length) {
       return "text-default";
     } else {
-      const tmp2 = _createForOfIteratorHelperLoose(enabledExperiments);
-      let iter = tmp2();
-      if (!iter.done) {
-        while ("mobile-visual-refresh" !== iter.value) {
-          let iter2 = tmp2();
-          iter = iter2;
+      const iter = enabledExperiments[Symbol.iterator]();
+      while (iter !== undefined) {
+        if ("mobile-visual-refresh" === iter.next()) {
+          let tmp4 = iter;
+          iter.return();
+          let str2 = "text-default";
+          return "text-default";
         }
-        return "text-default";
       }
       return "text-default";
     }
@@ -611,14 +531,14 @@ set = {
     if (0 === enabledExperiments.length) {
       return "text-xs/semibold";
     } else {
-      const tmp2 = _createForOfIteratorHelperLoose(enabledExperiments);
-      let iter = tmp2();
-      if (!iter.done) {
-        while ("mobile-visual-refresh" !== iter.value) {
-          let iter2 = tmp2();
-          iter = iter2;
+      const iter = enabledExperiments[Symbol.iterator]();
+      while (iter !== undefined) {
+        if ("mobile-visual-refresh" === iter.next()) {
+          let tmp4 = iter;
+          iter.return();
+          let str2 = "text-xs/medium";
+          return "text-xs/medium";
         }
-        return "text-xs/medium";
       }
       return "text-xs/semibold";
     }
@@ -630,14 +550,14 @@ set = {
     if (0 === enabledExperiments.length) {
       return 0;
     } else {
-      const tmp2 = _createForOfIteratorHelperLoose(enabledExperiments);
-      let iter = tmp2();
-      if (!iter.done) {
-        while ("mobile-visual-refresh" !== iter.value) {
-          let iter2 = tmp2();
-          iter = iter2;
+      const iter = enabledExperiments[Symbol.iterator]();
+      while (iter !== undefined) {
+        if ("mobile-visual-refresh" === iter.next()) {
+          let tmp4 = iter;
+          iter.return();
+          let num = 8;
+          return 8;
         }
-        return 8;
       }
       return 0;
     }
@@ -649,14 +569,14 @@ set = {
     if (0 === enabledExperiments.length) {
       return 8;
     } else {
-      const tmp2 = _createForOfIteratorHelperLoose(enabledExperiments);
-      let iter = tmp2();
-      if (!iter.done) {
-        while ("mobile-visual-refresh" !== iter.value) {
-          let iter2 = tmp2();
-          iter = iter2;
+      const iter = enabledExperiments[Symbol.iterator]();
+      while (iter !== undefined) {
+        if ("mobile-visual-refresh" === iter.next()) {
+          let tmp4 = iter;
+          iter.return();
+          let num = 12;
+          return 12;
         }
-        return 12;
       }
       return 8;
     }
@@ -673,14 +593,14 @@ set = {
     if (0 === enabledExperiments.length) {
       return 16;
     } else {
-      const tmp2 = _createForOfIteratorHelperLoose(enabledExperiments);
-      let iter = tmp2();
-      if (!iter.done) {
-        while ("mobile-visual-refresh" !== iter.value) {
-          let iter2 = tmp2();
-          iter = iter2;
+      const iter = enabledExperiments[Symbol.iterator]();
+      while (iter !== undefined) {
+        if ("mobile-visual-refresh" === iter.next()) {
+          let tmp4 = iter;
+          iter.return();
+          let num = 12;
+          return 12;
         }
-        return 12;
       }
       return 16;
     }
@@ -692,14 +612,14 @@ set = {
     if (0 === enabledExperiments.length) {
       return 8;
     } else {
-      const tmp2 = _createForOfIteratorHelperLoose(enabledExperiments);
-      let iter = tmp2();
-      if (!iter.done) {
-        while ("mobile-visual-refresh" !== iter.value) {
-          let iter2 = tmp2();
-          iter = iter2;
+      const iter = enabledExperiments[Symbol.iterator]();
+      while (iter !== undefined) {
+        if ("mobile-visual-refresh" === iter.next()) {
+          let tmp4 = iter;
+          iter.return();
+          let num = 12;
+          return 12;
         }
-        return 12;
       }
       return 8;
     }
@@ -716,14 +636,14 @@ set = {
     if (0 === enabledExperiments.length) {
       return "redesign/channel-title/semibold";
     } else {
-      const tmp2 = _createForOfIteratorHelperLoose(enabledExperiments);
-      let iter = tmp2();
-      if (!iter.done) {
-        while ("mobile-visual-refresh" !== iter.value) {
-          let iter2 = tmp2();
-          iter = iter2;
+      const iter = enabledExperiments[Symbol.iterator]();
+      while (iter !== undefined) {
+        if ("mobile-visual-refresh" === iter.next()) {
+          let tmp4 = iter;
+          iter.return();
+          let str2 = "text-md/medium";
+          return "text-md/medium";
         }
-        return "text-md/medium";
       }
       return "redesign/channel-title/semibold";
     }
@@ -735,14 +655,14 @@ set = {
     if (0 === enabledExperiments.length) {
       return 8;
     } else {
-      const tmp2 = _createForOfIteratorHelperLoose(enabledExperiments);
-      let iter = tmp2();
-      if (!iter.done) {
-        while ("mobile-visual-refresh" !== iter.value) {
-          let iter2 = tmp2();
-          iter = iter2;
+      const iter = enabledExperiments[Symbol.iterator]();
+      while (iter !== undefined) {
+        if ("mobile-visual-refresh" === iter.next()) {
+          let tmp4 = iter;
+          iter.return();
+          let num = 16;
+          return 16;
         }
-        return 16;
       }
       return 8;
     }
@@ -754,14 +674,14 @@ set = {
     if (0 === enabledExperiments.length) {
       return 15;
     } else {
-      const tmp2 = _createForOfIteratorHelperLoose(enabledExperiments);
-      let iter = tmp2();
-      if (!iter.done) {
-        while ("mobile-visual-refresh-floating" !== iter.value) {
-          let iter2 = tmp2();
-          iter = iter2;
+      const iter = enabledExperiments[Symbol.iterator]();
+      while (iter !== undefined) {
+        if ("mobile-visual-refresh-floating" === iter.next()) {
+          let tmp4 = iter;
+          iter.return();
+          let num = 24;
+          return 24;
         }
-        return 24;
       }
       return 15;
     }
@@ -773,14 +693,14 @@ set = {
     if (0 === enabledExperiments.length) {
       return 0;
     } else {
-      const tmp2 = _createForOfIteratorHelperLoose(enabledExperiments);
-      let iter = tmp2();
-      if (!iter.done) {
-        while ("mobile-visual-refresh-floating" !== iter.value) {
-          let iter2 = tmp2();
-          iter = iter2;
+      const iter = enabledExperiments[Symbol.iterator]();
+      while (iter !== undefined) {
+        if ("mobile-visual-refresh-floating" === iter.next()) {
+          let tmp4 = iter;
+          iter.return();
+          let num = 24;
+          return 24;
         }
-        return 24;
       }
       return 0;
     }
@@ -797,14 +717,14 @@ set = {
     if (0 === enabledExperiments.length) {
       return 24;
     } else {
-      const tmp2 = _createForOfIteratorHelperLoose(enabledExperiments);
-      let iter = tmp2();
-      if (!iter.done) {
-        while ("mobile-visual-refresh" !== iter.value) {
-          let iter2 = tmp2();
-          iter = iter2;
+      const iter = enabledExperiments[Symbol.iterator]();
+      while (iter !== undefined) {
+        if ("mobile-visual-refresh" === iter.next()) {
+          let tmp4 = iter;
+          iter.return();
+          let num = 16;
+          return 16;
         }
-        return 16;
       }
       return 24;
     }
@@ -816,14 +736,14 @@ set = {
     if (0 === enabledExperiments.length) {
       return 16;
     } else {
-      const tmp2 = _createForOfIteratorHelperLoose(enabledExperiments);
-      let iter = tmp2();
-      if (!iter.done) {
-        while ("mobile-visual-refresh" !== iter.value) {
-          let iter2 = tmp2();
-          iter = iter2;
+      const iter = enabledExperiments[Symbol.iterator]();
+      while (iter !== undefined) {
+        if ("mobile-visual-refresh" === iter.next()) {
+          let tmp4 = iter;
+          iter.return();
+          let num = 8;
+          return 8;
         }
-        return 8;
       }
       return 16;
     }
@@ -835,14 +755,14 @@ set = {
     if (0 === enabledExperiments.length) {
       return 16;
     } else {
-      const tmp2 = _createForOfIteratorHelperLoose(enabledExperiments);
-      let iter = tmp2();
-      if (!iter.done) {
-        while ("mobile-visual-refresh" !== iter.value) {
-          let iter2 = tmp2();
-          iter = iter2;
+      const iter = enabledExperiments[Symbol.iterator]();
+      while (iter !== undefined) {
+        if ("mobile-visual-refresh" === iter.next()) {
+          let tmp4 = iter;
+          iter.return();
+          let num = 24;
+          return 24;
         }
-        return 24;
       }
       return 16;
     }
@@ -859,14 +779,14 @@ set = {
     if (0 === enabledExperiments.length) {
       return 12;
     } else {
-      const tmp2 = _createForOfIteratorHelperLoose(enabledExperiments);
-      let iter = tmp2();
-      if (!iter.done) {
-        while ("mobile-visual-refresh" !== iter.value) {
-          let iter2 = tmp2();
-          iter = iter2;
+      const iter = enabledExperiments[Symbol.iterator]();
+      while (iter !== undefined) {
+        if ("mobile-visual-refresh" === iter.next()) {
+          let tmp4 = iter;
+          iter.return();
+          let num = 24;
+          return 24;
         }
-        return 24;
       }
       return 12;
     }
@@ -878,14 +798,14 @@ set = {
     if (0 === enabledExperiments.length) {
       return 4;
     } else {
-      const tmp2 = _createForOfIteratorHelperLoose(enabledExperiments);
-      let iter = tmp2();
-      if (!iter.done) {
-        while ("mobile-visual-refresh" !== iter.value) {
-          let iter2 = tmp2();
-          iter = iter2;
+      const iter = enabledExperiments[Symbol.iterator]();
+      while (iter !== undefined) {
+        if ("mobile-visual-refresh" === iter.next()) {
+          let tmp4 = iter;
+          iter.return();
+          let num = 8;
+          return 8;
         }
-        return 8;
       }
       return 4;
     }
@@ -897,14 +817,14 @@ set = {
     if (0 === enabledExperiments.length) {
       return 32;
     } else {
-      const tmp2 = _createForOfIteratorHelperLoose(enabledExperiments);
-      let iter = tmp2();
-      if (!iter.done) {
-        while ("mobile-visual-refresh" !== iter.value) {
-          let iter2 = tmp2();
-          iter = iter2;
+      const iter = enabledExperiments[Symbol.iterator]();
+      while (iter !== undefined) {
+        if ("mobile-visual-refresh" === iter.next()) {
+          let tmp4 = iter;
+          iter.return();
+          let num = 36;
+          return 36;
         }
-        return 36;
       }
       return 32;
     }
@@ -916,14 +836,13 @@ set = {
     if (0 === enabledExperiments.length) {
       return 16;
     } else {
-      const tmp2 = _createForOfIteratorHelperLoose(enabledExperiments);
-      let iter = tmp2();
-      if (!iter.done) {
-        while ("mobile-visual-refresh" !== iter.value) {
-          let iter2 = tmp2();
-          iter = iter2;
+      const iter = enabledExperiments[Symbol.iterator]();
+      while (iter !== undefined) {
+        if ("mobile-visual-refresh" === iter.next()) {
+          let tmp4 = iter;
+          iter.return();
+          return 0;
         }
-        return 0;
       }
       return 16;
     }
@@ -935,14 +854,14 @@ set = {
     if (0 === enabledExperiments.length) {
       return 0;
     } else {
-      const tmp2 = _createForOfIteratorHelperLoose(enabledExperiments);
-      let iter = tmp2();
-      if (!iter.done) {
-        while ("mobile-visual-refresh" !== iter.value) {
-          let iter2 = tmp2();
-          iter = iter2;
+      const iter = enabledExperiments[Symbol.iterator]();
+      while (iter !== undefined) {
+        if ("mobile-visual-refresh" === iter.next()) {
+          let tmp4 = iter;
+          iter.return();
+          let num = 8;
+          return 8;
         }
-        return 8;
       }
       return 0;
     }
@@ -954,14 +873,14 @@ set = {
     if (0 === enabledExperiments.length) {
       return 14;
     } else {
-      const tmp2 = _createForOfIteratorHelperLoose(enabledExperiments);
-      let iter = tmp2();
-      if (!iter.done) {
-        while ("mobile-visual-refresh" !== iter.value) {
-          let iter2 = tmp2();
-          iter = iter2;
+      const iter = enabledExperiments[Symbol.iterator]();
+      while (iter !== undefined) {
+        if ("mobile-visual-refresh" === iter.next()) {
+          let tmp4 = iter;
+          iter.return();
+          let num = 8;
+          return 8;
         }
-        return 8;
       }
       return 14;
     }
@@ -973,14 +892,14 @@ set = {
     if (0 === enabledExperiments.length) {
       return 8;
     } else {
-      const tmp2 = _createForOfIteratorHelperLoose(enabledExperiments);
-      let iter = tmp2();
-      if (!iter.done) {
-        while ("mobile-visual-refresh" !== iter.value) {
-          let iter2 = tmp2();
-          iter = iter2;
+      const iter = enabledExperiments[Symbol.iterator]();
+      while (iter !== undefined) {
+        if ("mobile-visual-refresh" === iter.next()) {
+          let tmp4 = iter;
+          iter.return();
+          let num = 12;
+          return 12;
         }
-        return 12;
       }
       return 8;
     }
@@ -992,14 +911,14 @@ set = {
     if (0 === enabledExperiments.length) {
       return 16;
     } else {
-      const tmp2 = _createForOfIteratorHelperLoose(enabledExperiments);
-      let iter = tmp2();
-      if (!iter.done) {
-        while ("mobile-visual-refresh" !== iter.value) {
-          let iter2 = tmp2();
-          iter = iter2;
+      const iter = enabledExperiments[Symbol.iterator]();
+      while (iter !== undefined) {
+        if ("mobile-visual-refresh" === iter.next()) {
+          let tmp4 = iter;
+          iter.return();
+          let num = 12;
+          return 12;
         }
-        return 12;
       }
       return 16;
     }
@@ -1011,14 +930,14 @@ set = {
     if (0 === enabledExperiments.length) {
       return 36;
     } else {
-      const tmp2 = _createForOfIteratorHelperLoose(enabledExperiments);
-      let iter = tmp2();
-      if (!iter.done) {
-        while ("mobile-visual-refresh" !== iter.value) {
-          let iter2 = tmp2();
-          iter = iter2;
+      const iter = enabledExperiments[Symbol.iterator]();
+      while (iter !== undefined) {
+        if ("mobile-visual-refresh" === iter.next()) {
+          let tmp4 = iter;
+          iter.return();
+          let num = 32;
+          return 32;
         }
-        return 32;
       }
       return 36;
     }
@@ -1035,14 +954,14 @@ set = {
     if (0 === enabledExperiments.length) {
       return "text-sm/medium";
     } else {
-      const tmp2 = _createForOfIteratorHelperLoose(enabledExperiments);
-      let iter = tmp2();
-      if (!iter.done) {
-        while ("mobile-visual-refresh" !== iter.value) {
-          let iter2 = tmp2();
-          iter = iter2;
+      const iter = enabledExperiments[Symbol.iterator]();
+      while (iter !== undefined) {
+        if ("mobile-visual-refresh" === iter.next()) {
+          let tmp4 = iter;
+          iter.return();
+          let str2 = "text-sm/normal";
+          return "text-sm/normal";
         }
-        return "text-sm/normal";
       }
       return "text-sm/medium";
     }
@@ -1054,14 +973,14 @@ set = {
     if (0 === enabledExperiments.length) {
       return 60;
     } else {
-      const tmp2 = _createForOfIteratorHelperLoose(enabledExperiments);
-      let iter = tmp2();
-      if (!iter.done) {
-        while ("mobile-visual-refresh" !== iter.value) {
-          let iter2 = tmp2();
-          iter = iter2;
+      const iter = enabledExperiments[Symbol.iterator]();
+      while (iter !== undefined) {
+        if ("mobile-visual-refresh" === iter.next()) {
+          let tmp4 = iter;
+          iter.return();
+          let num = 56;
+          return 56;
         }
-        return 56;
       }
       return 60;
     }
@@ -1078,14 +997,14 @@ set = {
     if (0 === enabledExperiments.length) {
       return "mobile-text-heading-primary";
     } else {
-      const tmp2 = _createForOfIteratorHelperLoose(enabledExperiments);
-      let iter = tmp2();
-      if (!iter.done) {
-        while ("mobile-visual-refresh" !== iter.value) {
-          let iter2 = tmp2();
-          iter = iter2;
+      const iter = enabledExperiments[Symbol.iterator]();
+      while (iter !== undefined) {
+        if ("mobile-visual-refresh" === iter.next()) {
+          let tmp4 = iter;
+          iter.return();
+          let str2 = "text-strong";
+          return "text-strong";
         }
-        return "text-strong";
       }
       return "mobile-text-heading-primary";
     }
@@ -1097,14 +1016,14 @@ set = {
     if (0 === enabledExperiments.length) {
       return "text-md/semibold";
     } else {
-      const tmp2 = _createForOfIteratorHelperLoose(enabledExperiments);
-      let iter = tmp2();
-      if (!iter.done) {
-        while ("mobile-visual-refresh" !== iter.value) {
-          let iter2 = tmp2();
-          iter = iter2;
+      const iter = enabledExperiments[Symbol.iterator]();
+      while (iter !== undefined) {
+        if ("mobile-visual-refresh" === iter.next()) {
+          let tmp4 = iter;
+          iter.return();
+          let str2 = "text-md/medium";
+          return "text-md/medium";
         }
-        return "text-md/medium";
       }
       return "text-md/semibold";
     }
@@ -1121,14 +1040,14 @@ set = {
     if (0 === enabledExperiments.length) {
       return 22;
     } else {
-      const tmp2 = _createForOfIteratorHelperLoose(enabledExperiments);
-      let iter = tmp2();
-      if (!iter.done) {
-        while ("mobile-visual-refresh" !== iter.value) {
-          let iter2 = tmp2();
-          iter = iter2;
+      const iter = enabledExperiments[Symbol.iterator]();
+      while (iter !== undefined) {
+        if ("mobile-visual-refresh" === iter.next()) {
+          let tmp4 = iter;
+          iter.return();
+          let num = 12;
+          return 12;
         }
-        return 12;
       }
       return 22;
     }
@@ -1140,14 +1059,14 @@ set = {
     if (0 === enabledExperiments.length) {
       return -6;
     } else {
-      const tmp2 = _createForOfIteratorHelperLoose(enabledExperiments);
-      let iter = tmp2();
-      if (!iter.done) {
-        while ("mobile-visual-refresh" !== iter.value) {
-          let iter2 = tmp2();
-          iter = iter2;
+      const iter = enabledExperiments[Symbol.iterator]();
+      while (iter !== undefined) {
+        if ("mobile-visual-refresh" === iter.next()) {
+          let tmp4 = iter;
+          iter.return();
+          let num = -4;
+          return -4;
         }
-        return -4;
       }
       return -6;
     }
@@ -1159,14 +1078,14 @@ set = {
     if (0 === enabledExperiments.length) {
       return "text-xxs/semibold";
     } else {
-      const tmp2 = _createForOfIteratorHelperLoose(enabledExperiments);
-      let iter = tmp2();
-      if (!iter.done) {
-        while ("mobile-visual-refresh" !== iter.value) {
-          let iter2 = tmp2();
-          iter = iter2;
+      const iter = enabledExperiments[Symbol.iterator]();
+      while (iter !== undefined) {
+        if ("mobile-visual-refresh" === iter.next()) {
+          let tmp4 = iter;
+          iter.return();
+          let str2 = "text-xs/medium";
+          return "text-xs/medium";
         }
-        return "text-xs/medium";
       }
       return "text-xxs/semibold";
     }
@@ -1178,14 +1097,14 @@ set = {
     if (0 === enabledExperiments.length) {
       return "text-sm/semibold";
     } else {
-      const tmp2 = _createForOfIteratorHelperLoose(enabledExperiments);
-      let iter = tmp2();
-      if (!iter.done) {
-        while ("mobile-visual-refresh" !== iter.value) {
-          let iter2 = tmp2();
-          iter = iter2;
+      const iter = enabledExperiments[Symbol.iterator]();
+      while (iter !== undefined) {
+        if ("mobile-visual-refresh" === iter.next()) {
+          let tmp4 = iter;
+          iter.return();
+          let str2 = "text-sm/medium";
+          return "text-sm/medium";
         }
-        return "text-sm/medium";
       }
       return "text-sm/semibold";
     }
@@ -1202,14 +1121,14 @@ set = {
     if (0 === enabledExperiments.length) {
       return 22;
     } else {
-      const tmp2 = _createForOfIteratorHelperLoose(enabledExperiments);
-      let iter = tmp2();
-      if (!iter.done) {
-        while ("mobile-visual-refresh" !== iter.value) {
-          let iter2 = tmp2();
-          iter = iter2;
+      const iter = enabledExperiments[Symbol.iterator]();
+      while (iter !== undefined) {
+        if ("mobile-visual-refresh" === iter.next()) {
+          let tmp4 = iter;
+          iter.return();
+          let num = 20;
+          return 20;
         }
-        return 20;
       }
       return 22;
     }
@@ -1221,14 +1140,14 @@ set = {
     if (0 === enabledExperiments.length) {
       return 0;
     } else {
-      const tmp2 = _createForOfIteratorHelperLoose(enabledExperiments);
-      let iter = tmp2();
-      if (!iter.done) {
-        while ("mobile-visual-refresh" !== iter.value) {
-          let iter2 = tmp2();
-          iter = iter2;
+      const iter = enabledExperiments[Symbol.iterator]();
+      while (iter !== undefined) {
+        if ("mobile-visual-refresh" === iter.next()) {
+          let tmp4 = iter;
+          iter.return();
+          let num = 1;
+          return 1;
         }
-        return 1;
       }
       return 0;
     }
@@ -1240,14 +1159,14 @@ set = {
     if (0 === enabledExperiments.length) {
       return 14;
     } else {
-      const tmp2 = _createForOfIteratorHelperLoose(enabledExperiments);
-      let iter = tmp2();
-      if (!iter.done) {
-        while ("mobile-visual-refresh" !== iter.value) {
-          let iter2 = tmp2();
-          iter = iter2;
+      const iter = enabledExperiments[Symbol.iterator]();
+      while (iter !== undefined) {
+        if ("mobile-visual-refresh" === iter.next()) {
+          let tmp4 = iter;
+          iter.return();
+          let num = 13;
+          return 13;
         }
-        return 13;
       }
       return 14;
     }
@@ -1264,14 +1183,14 @@ set = {
     if (0 === enabledExperiments.length) {
       return "text-sm/semibold";
     } else {
-      const tmp2 = _createForOfIteratorHelperLoose(enabledExperiments);
-      let iter = tmp2();
-      if (!iter.done) {
-        while ("mobile-visual-refresh" !== iter.value) {
-          let iter2 = tmp2();
-          iter = iter2;
+      const iter = enabledExperiments[Symbol.iterator]();
+      while (iter !== undefined) {
+        if ("mobile-visual-refresh" === iter.next()) {
+          let tmp4 = iter;
+          iter.return();
+          let str2 = "text-xs/semibold";
+          return "text-xs/semibold";
         }
-        return "text-xs/semibold";
       }
       return "text-sm/semibold";
     }
@@ -1283,20 +1202,20 @@ set = {
     if (0 === enabledExperiments.length) {
       return 40;
     } else {
-      const tmp2 = _createForOfIteratorHelperLoose(enabledExperiments);
-      let iter = tmp2();
-      if (!iter.done) {
-        const value = iter.value;
-        while ("mobile-visual-refresh" !== value) {
-          if ("mobile-visual-refresh-floating" === value) {
-            let num = 54;
-            return 54;
-          } else {
-            let iter2 = tmp2();
-            iter = iter2;
-          }
+      const iter = enabledExperiments[Symbol.iterator]();
+      const nextResult = iter.next();
+      while (iter !== undefined) {
+        if ("mobile-visual-refresh" === nextResult) {
+          let tmp6 = iter;
+          iter.return();
+          let num2 = 32;
+          return 32;
+        } else if ("mobile-visual-refresh-floating" === nextResult) {
+          let tmp5 = iter;
+          iter.return();
+          let num = 54;
+          return 54;
         }
-        return 32;
       }
       return 40;
     }
@@ -1308,14 +1227,13 @@ set = {
     if (0 === enabledExperiments.length) {
       return 8;
     } else {
-      const tmp2 = _createForOfIteratorHelperLoose(enabledExperiments);
-      let iter = tmp2();
-      if (!iter.done) {
-        while ("mobile-visual-refresh-floating" !== iter.value) {
-          let iter2 = tmp2();
-          iter = iter2;
+      const iter = enabledExperiments[Symbol.iterator]();
+      while (iter !== undefined) {
+        if ("mobile-visual-refresh-floating" === iter.next()) {
+          let tmp4 = iter;
+          iter.return();
+          return 0;
         }
-        return 0;
       }
       return 8;
     }
@@ -1327,14 +1245,13 @@ set = {
     if (0 === enabledExperiments.length) {
       return 9;
     } else {
-      const tmp2 = _createForOfIteratorHelperLoose(enabledExperiments);
-      let iter = tmp2();
-      if (!iter.done) {
-        while ("mobile-visual-refresh-floating" !== iter.value) {
-          let iter2 = tmp2();
-          iter = iter2;
+      const iter = enabledExperiments[Symbol.iterator]();
+      while (iter !== undefined) {
+        if ("mobile-visual-refresh-floating" === iter.next()) {
+          let tmp4 = iter;
+          iter.return();
+          return 0;
         }
-        return 0;
       }
       return 9;
     }
@@ -1346,14 +1263,14 @@ set = {
     if (0 === enabledExperiments.length) {
       return 12;
     } else {
-      const tmp2 = _createForOfIteratorHelperLoose(enabledExperiments);
-      let iter = tmp2();
-      if (!iter.done) {
-        while ("mobile-visual-refresh-floating" !== iter.value) {
-          let iter2 = tmp2();
-          iter = iter2;
+      const iter = enabledExperiments[Symbol.iterator]();
+      while (iter !== undefined) {
+        if ("mobile-visual-refresh-floating" === iter.next()) {
+          let tmp4 = iter;
+          iter.return();
+          let num = 16;
+          return 16;
         }
-        return 16;
       }
       return 12;
     }
@@ -1365,19 +1282,19 @@ set = {
     if (0 === enabledExperiments.length) {
       return 10;
     } else {
-      const tmp2 = _createForOfIteratorHelperLoose(enabledExperiments);
-      let iter = tmp2();
-      if (!iter.done) {
-        const value = iter.value;
-        while ("mobile-visual-refresh" !== value) {
-          if ("mobile-visual-refresh-floating" === value) {
-            return 0;
-          } else {
-            let iter2 = tmp2();
-            iter = iter2;
-          }
+      const iter = enabledExperiments[Symbol.iterator]();
+      const nextResult = iter.next();
+      while (iter !== undefined) {
+        if ("mobile-visual-refresh" === nextResult) {
+          let tmp6 = iter;
+          iter.return();
+          let num = 6;
+          return 6;
+        } else if ("mobile-visual-refresh-floating" === nextResult) {
+          let tmp5 = iter;
+          iter.return();
+          return 0;
         }
-        return 6;
       }
       return 10;
     }
@@ -1389,14 +1306,14 @@ set = {
     if (0 === enabledExperiments.length) {
       return 32;
     } else {
-      const tmp2 = _createForOfIteratorHelperLoose(enabledExperiments);
-      let iter = tmp2();
-      if (!iter.done) {
-        while ("mobile-visual-refresh-floating" !== iter.value) {
-          let iter2 = tmp2();
-          iter = iter2;
+      const iter = enabledExperiments[Symbol.iterator]();
+      while (iter !== undefined) {
+        if ("mobile-visual-refresh-floating" === iter.next()) {
+          let tmp4 = iter;
+          iter.return();
+          let num = 16;
+          return 16;
         }
-        return 16;
       }
       return 32;
     }
@@ -1408,20 +1325,20 @@ set = {
     if (0 === enabledExperiments.length) {
       return 12;
     } else {
-      const tmp2 = _createForOfIteratorHelperLoose(enabledExperiments);
-      let iter = tmp2();
-      if (!iter.done) {
-        const value = iter.value;
-        while ("mobile-visual-refresh-floating" !== value) {
-          if ("mobile-visual-refresh-legacy-send-button" === value) {
-            let num = 12;
-            return 12;
-          } else {
-            let iter2 = tmp2();
-            iter = iter2;
-          }
+      const iter = enabledExperiments[Symbol.iterator]();
+      const nextResult = iter.next();
+      while (iter !== undefined) {
+        if ("mobile-visual-refresh-floating" === nextResult) {
+          let tmp6 = iter;
+          iter.return();
+          let num2 = 10;
+          return 10;
+        } else if ("mobile-visual-refresh-legacy-send-button" === nextResult) {
+          let tmp5 = iter;
+          iter.return();
+          let num = 12;
+          return 12;
         }
-        return 10;
       }
       return 12;
     }
@@ -1433,14 +1350,13 @@ set = {
     if (0 === enabledExperiments.length) {
       return 8;
     } else {
-      const tmp2 = _createForOfIteratorHelperLoose(enabledExperiments);
-      let iter = tmp2();
-      if (!iter.done) {
-        while ("mobile-visual-refresh-floating" !== iter.value) {
-          let iter2 = tmp2();
-          iter = iter2;
+      const iter = enabledExperiments[Symbol.iterator]();
+      while (iter !== undefined) {
+        if ("mobile-visual-refresh-floating" === iter.next()) {
+          let tmp4 = iter;
+          iter.return();
+          return 0;
         }
-        return 0;
       }
       return 8;
     }
@@ -1452,14 +1368,14 @@ set = {
     if (0 === enabledExperiments.length) {
       return 32;
     } else {
-      const tmp2 = _createForOfIteratorHelperLoose(enabledExperiments);
-      let iter = tmp2();
-      if (!iter.done) {
-        while ("mobile-visual-refresh" !== iter.value) {
-          let iter2 = tmp2();
-          iter = iter2;
+      const iter = enabledExperiments[Symbol.iterator]();
+      while (iter !== undefined) {
+        if ("mobile-visual-refresh" === iter.next()) {
+          let tmp4 = iter;
+          iter.return();
+          let num = 16;
+          return 16;
         }
-        return 16;
       }
       return 32;
     }
@@ -1471,14 +1387,14 @@ set = {
     if (0 === enabledExperiments.length) {
       return 16;
     } else {
-      const tmp2 = _createForOfIteratorHelperLoose(enabledExperiments);
-      let iter = tmp2();
-      if (!iter.done) {
-        while ("mobile-visual-refresh" !== iter.value) {
-          let iter2 = tmp2();
-          iter = iter2;
+      const iter = enabledExperiments[Symbol.iterator]();
+      while (iter !== undefined) {
+        if ("mobile-visual-refresh" === iter.next()) {
+          let tmp4 = iter;
+          iter.return();
+          let num = 4;
+          return 4;
         }
-        return 4;
       }
       return 16;
     }
@@ -1490,14 +1406,14 @@ set = {
     if (0 === enabledExperiments.length) {
       return 12;
     } else {
-      const tmp2 = _createForOfIteratorHelperLoose(enabledExperiments);
-      let iter = tmp2();
-      if (!iter.done) {
-        while ("mobile-visual-refresh" !== iter.value) {
-          let iter2 = tmp2();
-          iter = iter2;
+      const iter = enabledExperiments[Symbol.iterator]();
+      while (iter !== undefined) {
+        if ("mobile-visual-refresh" === iter.next()) {
+          let tmp4 = iter;
+          iter.return();
+          let num = 16;
+          return 16;
         }
-        return 16;
       }
       return 12;
     }
@@ -1509,14 +1425,14 @@ set = {
     if (0 === enabledExperiments.length) {
       return 12;
     } else {
-      const tmp2 = _createForOfIteratorHelperLoose(enabledExperiments);
-      let iter = tmp2();
-      if (!iter.done) {
-        while ("mobile-visual-refresh" !== iter.value) {
-          let iter2 = tmp2();
-          iter = iter2;
+      const iter = enabledExperiments[Symbol.iterator]();
+      while (iter !== undefined) {
+        if ("mobile-visual-refresh" === iter.next()) {
+          let tmp4 = iter;
+          iter.return();
+          let num = 16;
+          return 16;
         }
-        return 16;
       }
       return 12;
     }
@@ -1528,14 +1444,14 @@ set = {
     if (0 === enabledExperiments.length) {
       return 24;
     } else {
-      const tmp2 = _createForOfIteratorHelperLoose(enabledExperiments);
-      let iter = tmp2();
-      if (!iter.done) {
-        while ("mobile-visual-refresh" !== iter.value) {
-          let iter2 = tmp2();
-          iter = iter2;
+      const iter = enabledExperiments[Symbol.iterator]();
+      while (iter !== undefined) {
+        if ("mobile-visual-refresh" === iter.next()) {
+          let tmp4 = iter;
+          iter.return();
+          let num = 12;
+          return 12;
         }
-        return 12;
       }
       return 24;
     }
@@ -1547,14 +1463,14 @@ set = {
     if (0 === enabledExperiments.length) {
       return 28;
     } else {
-      const tmp2 = _createForOfIteratorHelperLoose(enabledExperiments);
-      let iter = tmp2();
-      if (!iter.done) {
-        while ("mobile-visual-refresh" !== iter.value) {
-          let iter2 = tmp2();
-          iter = iter2;
+      const iter = enabledExperiments[Symbol.iterator]();
+      while (iter !== undefined) {
+        if ("mobile-visual-refresh" === iter.next()) {
+          let tmp4 = iter;
+          iter.return();
+          let num = 16;
+          return 16;
         }
-        return 16;
       }
       return 28;
     }
@@ -1693,17 +1609,25 @@ export const _private = {
           if (0 === enabledExperiments.length) {
             return 40;
           } else {
-            const tmp2 = _createForOfIteratorHelperLoose(enabledExperiments);
-            let iter = tmp2();
-            if (!iter.done) {
-              while ("refresh-fast-follow-avatars" !== iter.value) {
-                let iter2 = tmp2();
-                iter = iter2;
+            const iter = enabledExperiments[Symbol.iterator]();
+            while (iter !== undefined) {
+              if ("refresh-fast-follow-avatars" === iter.next()) {
+                let str2 = "compact";
+                if ("compact" !== density) {
+                  let str3 = "default";
+                  if ("default" !== density) {
+                    let str4 = "cozy";
+                  }
+                  let tmp4 = iter;
+                  iter.return();
+                  let num = 44;
+                  return 44;
+                }
+                let tmp5 = iter;
+                iter.return();
+                let num2 = 40;
+                return 40;
               }
-              if ("compact" !== density) {
-                return 44;
-              }
-              return 40;
             }
             return 40;
           }
@@ -1717,17 +1641,25 @@ export const _private = {
           if (0 === enabledExperiments.length) {
             return 48;
           } else {
-            const tmp2 = _createForOfIteratorHelperLoose(enabledExperiments);
-            let iter = tmp2();
-            if (!iter.done) {
-              while ("refresh-fast-follow-avatars" !== iter.value) {
-                let iter2 = tmp2();
-                iter = iter2;
+            const iter = enabledExperiments[Symbol.iterator]();
+            while (iter !== undefined) {
+              if ("refresh-fast-follow-avatars" === iter.next()) {
+                let str2 = "compact";
+                if ("compact" !== density) {
+                  let str3 = "default";
+                  if ("default" !== density) {
+                    let str4 = "cozy";
+                  }
+                  let tmp4 = iter;
+                  iter.return();
+                  let num = 52;
+                  return 52;
+                }
+                let tmp5 = iter;
+                iter.return();
+                let num2 = 48;
+                return 48;
               }
-              if ("compact" !== density) {
-                return 52;
-              }
-              return 48;
             }
             return 48;
           }
@@ -1768,14 +1700,14 @@ export const _private = {
           if (0 === enabledExperiments.length) {
             return 24;
           } else {
-            const tmp2 = _createForOfIteratorHelperLoose(enabledExperiments);
-            let iter = tmp2();
-            if (!iter.done) {
-              while ("mobile-visual-refresh" !== iter.value) {
-                let iter2 = tmp2();
-                iter = iter2;
+            const iter = enabledExperiments[Symbol.iterator]();
+            while (iter !== undefined) {
+              if ("mobile-visual-refresh" === iter.next()) {
+                let tmp4 = iter;
+                iter.return();
+                let num = 12;
+                return 12;
               }
-              return 12;
             }
             return 24;
           }
@@ -1792,14 +1724,13 @@ export const _private = {
           if (0 === enabledExperiments.length) {
             return 12;
           } else {
-            const tmp2 = _createForOfIteratorHelperLoose(enabledExperiments);
-            let iter = tmp2();
-            if (!iter.done) {
-              while ("mobile-visual-refresh" !== iter.value) {
-                let iter2 = tmp2();
-                iter = iter2;
+            const iter = enabledExperiments[Symbol.iterator]();
+            while (iter !== undefined) {
+              if ("mobile-visual-refresh" === iter.next()) {
+                let tmp4 = iter;
+                iter.return();
+                return 0;
               }
-              return 0;
             }
             return 12;
           }
@@ -1811,14 +1742,14 @@ export const _private = {
           if (0 === enabledExperiments.length) {
             return "sm";
           } else {
-            const tmp2 = _createForOfIteratorHelperLoose(enabledExperiments);
-            let iter = tmp2();
-            if (!iter.done) {
-              while ("mobile-visual-refresh" !== iter.value) {
-                let iter2 = tmp2();
-                iter = iter2;
+            const iter = enabledExperiments[Symbol.iterator]();
+            while (iter !== undefined) {
+              if ("mobile-visual-refresh" === iter.next()) {
+                let tmp4 = iter;
+                iter.return();
+                let str2 = "lg";
+                return "lg";
               }
-              return "lg";
             }
             return "sm";
           }
@@ -1830,14 +1761,14 @@ export const _private = {
           if (0 === enabledExperiments.length) {
             return "tertiary";
           } else {
-            const tmp2 = _createForOfIteratorHelperLoose(enabledExperiments);
-            let iter = tmp2();
-            if (!iter.done) {
-              while ("mobile-visual-refresh" !== iter.value) {
-                let iter2 = tmp2();
-                iter = iter2;
+            const iter = enabledExperiments[Symbol.iterator]();
+            while (iter !== undefined) {
+              if ("mobile-visual-refresh" === iter.next()) {
+                let tmp4 = iter;
+                iter.return();
+                let str2 = "icon-only";
+                return "icon-only";
               }
-              return "icon-only";
             }
             return "tertiary";
           }
@@ -1849,14 +1780,13 @@ export const _private = {
           if (0 === enabledExperiments.length) {
             return 8;
           } else {
-            const tmp2 = _createForOfIteratorHelperLoose(enabledExperiments);
-            let iter = tmp2();
-            if (!iter.done) {
-              while ("mobile-visual-refresh-floating" !== iter.value) {
-                let iter2 = tmp2();
-                iter = iter2;
+            const iter = enabledExperiments[Symbol.iterator]();
+            while (iter !== undefined) {
+              if ("mobile-visual-refresh-floating" === iter.next()) {
+                let tmp4 = iter;
+                iter.return();
+                return 0;
               }
-              return 0;
             }
             return 8;
           }
@@ -1868,14 +1798,14 @@ export const _private = {
           if (0 === enabledExperiments.length) {
             return 0;
           } else {
-            const tmp2 = _createForOfIteratorHelperLoose(enabledExperiments);
-            let iter = tmp2();
-            if (!iter.done) {
-              while ("mobile-visual-refresh-floating" !== iter.value) {
-                let iter2 = tmp2();
-                iter = iter2;
+            const iter = enabledExperiments[Symbol.iterator]();
+            while (iter !== undefined) {
+              if ("mobile-visual-refresh-floating" === iter.next()) {
+                let tmp4 = iter;
+                iter.return();
+                let num = 1;
+                return 1;
               }
-              return 1;
             }
             return 0;
           }
@@ -1887,14 +1817,13 @@ export const _private = {
           if (0 === enabledExperiments.length) {
             return 8;
           } else {
-            const tmp2 = _createForOfIteratorHelperLoose(enabledExperiments);
-            let iter = tmp2();
-            if (!iter.done) {
-              while ("mobile-visual-refresh-floating" !== iter.value) {
-                let iter2 = tmp2();
-                iter = iter2;
+            const iter = enabledExperiments[Symbol.iterator]();
+            while (iter !== undefined) {
+              if ("mobile-visual-refresh-floating" === iter.next()) {
+                let tmp4 = iter;
+                iter.return();
+                return 0;
               }
-              return 0;
             }
             return 8;
           }
@@ -1906,14 +1835,14 @@ export const _private = {
           if (0 === enabledExperiments.length) {
             return "md";
           } else {
-            const tmp2 = _createForOfIteratorHelperLoose(enabledExperiments);
-            let iter = tmp2();
-            if (!iter.done) {
-              while ("mobile-visual-refresh" !== iter.value) {
-                let iter2 = tmp2();
-                iter = iter2;
+            const iter = enabledExperiments[Symbol.iterator]();
+            while (iter !== undefined) {
+              if ("mobile-visual-refresh" === iter.next()) {
+                let tmp4 = iter;
+                iter.return();
+                let str2 = "xs";
+                return "xs";
               }
-              return "xs";
             }
             return "md";
           }
@@ -1925,14 +1854,14 @@ export const _private = {
           if (0 === enabledExperiments.length) {
             return 12;
           } else {
-            const tmp2 = _createForOfIteratorHelperLoose(enabledExperiments);
-            let iter = tmp2();
-            if (!iter.done) {
-              while ("mobile-visual-refresh" !== iter.value) {
-                let iter2 = tmp2();
-                iter = iter2;
+            const iter = enabledExperiments[Symbol.iterator]();
+            while (iter !== undefined) {
+              if ("mobile-visual-refresh" === iter.next()) {
+                let tmp4 = iter;
+                iter.return();
+                let num = 8;
+                return 8;
               }
-              return 8;
             }
             return 12;
           }
@@ -1944,14 +1873,14 @@ export const _private = {
           if (0 === enabledExperiments.length) {
             return "text-xs/medium";
           } else {
-            const tmp2 = _createForOfIteratorHelperLoose(enabledExperiments);
-            let iter = tmp2();
-            if (!iter.done) {
-              while ("mobile-visual-refresh" !== iter.value) {
-                let iter2 = tmp2();
-                iter = iter2;
+            const iter = enabledExperiments[Symbol.iterator]();
+            while (iter !== undefined) {
+              if ("mobile-visual-refresh" === iter.next()) {
+                let tmp4 = iter;
+                iter.return();
+                let str2 = "text-sm/medium";
+                return "text-sm/medium";
               }
-              return "text-sm/medium";
             }
             return "text-xs/medium";
           }
@@ -1963,14 +1892,14 @@ export const _private = {
           if (0 === enabledExperiments.length) {
             return "redesign/heading-18/bold";
           } else {
-            const tmp2 = _createForOfIteratorHelperLoose(enabledExperiments);
-            let iter = tmp2();
-            if (!iter.done) {
-              while ("mobile-visual-refresh" !== iter.value) {
-                let iter2 = tmp2();
-                iter = iter2;
+            const iter = enabledExperiments[Symbol.iterator]();
+            while (iter !== undefined) {
+              if ("mobile-visual-refresh" === iter.next()) {
+                let tmp4 = iter;
+                iter.return();
+                let str2 = "heading-lg/semibold";
+                return "heading-lg/semibold";
               }
-              return "heading-lg/semibold";
             }
             return "redesign/heading-18/bold";
           }
@@ -1982,14 +1911,13 @@ export const _private = {
           if (0 === enabledExperiments.length) {
             return 1;
           } else {
-            const tmp2 = _createForOfIteratorHelperLoose(enabledExperiments);
-            let iter = tmp2();
-            if (!iter.done) {
-              while ("mobile-visual-refresh" !== iter.value) {
-                let iter2 = tmp2();
-                iter = iter2;
+            const iter = enabledExperiments[Symbol.iterator]();
+            while (iter !== undefined) {
+              if ("mobile-visual-refresh" === iter.next()) {
+                let tmp4 = iter;
+                iter.return();
+                return 0;
               }
-              return 0;
             }
             return 1;
           }
@@ -2001,14 +1929,14 @@ export const _private = {
           if (0 === enabledExperiments.length) {
             return 12;
           } else {
-            const tmp2 = _createForOfIteratorHelperLoose(enabledExperiments);
-            let iter = tmp2();
-            if (!iter.done) {
-              while ("mobile-visual-refresh" !== iter.value) {
-                let iter2 = tmp2();
-                iter = iter2;
+            const iter = enabledExperiments[Symbol.iterator]();
+            while (iter !== undefined) {
+              if ("mobile-visual-refresh" === iter.next()) {
+                let tmp4 = iter;
+                iter.return();
+                let num = 8;
+                return 8;
               }
-              return 8;
             }
             return 12;
           }
@@ -2020,14 +1948,14 @@ export const _private = {
           if (0 === enabledExperiments.length) {
             return "background-base-low";
           } else {
-            const tmp2 = _createForOfIteratorHelperLoose(enabledExperiments);
-            let iter = tmp2();
-            if (!iter.done) {
-              while ("mobile-visual-refresh" !== iter.value) {
-                let iter2 = tmp2();
-                iter = iter2;
+            const iter = enabledExperiments[Symbol.iterator]();
+            while (iter !== undefined) {
+              if ("mobile-visual-refresh" === iter.next()) {
+                let tmp4 = iter;
+                iter.return();
+                let str2 = "background-base-lower";
+                return "background-base-lower";
               }
-              return "background-base-lower";
             }
             return "background-base-low";
           }
@@ -2039,21 +1967,22 @@ export const _private = {
           if (0 === enabledExperiments.length) {
             return 0;
           } else {
-            const tmp2 = _createForOfIteratorHelperLoose(enabledExperiments);
-            let iter = tmp2();
-            if (!iter.done) {
-              const value = iter.value;
-              while ("mobile-visual-refresh" !== value) {
-                if ("mobile-visual-refresh-legacy-send-button" === value) {
-                  break;
-                } else if ("mobile-visual-refresh-floating" === value) {
-                  let num = 10;
-                  return 10;
-                } else {
-                  let iter2 = tmp2();
-                  iter = iter2;
+            const iter = enabledExperiments[Symbol.iterator]();
+            const nextResult = iter.next();
+            while (iter !== undefined) {
+              if ("mobile-visual-refresh" !== nextResult) {
+                if ("mobile-visual-refresh-legacy-send-button" !== nextResult) {
+                  if ("mobile-visual-refresh-floating" === nextResult) {
+                    let tmp5 = iter;
+                    iter.return();
+                    let num = 10;
+                    return 10;
+                  }
                 }
               }
+              let tmp6 = iter;
+              iter.return();
+              let num2 = 8;
               return 8;
             }
             return 0;
@@ -2066,14 +1995,13 @@ export const _private = {
           if (0 === enabledExperiments.length) {
             return 4;
           } else {
-            const tmp2 = _createForOfIteratorHelperLoose(enabledExperiments);
-            let iter = tmp2();
-            if (!iter.done) {
-              while ("mobile-visual-refresh" !== iter.value) {
-                let iter2 = tmp2();
-                iter = iter2;
+            const iter = enabledExperiments[Symbol.iterator]();
+            while (iter !== undefined) {
+              if ("mobile-visual-refresh" === iter.next()) {
+                let tmp4 = iter;
+                iter.return();
+                return 0;
               }
-              return 0;
             }
             return 4;
           }
@@ -2085,14 +2013,14 @@ export const _private = {
           if (0 === enabledExperiments.length) {
             return 40;
           } else {
-            const tmp2 = _createForOfIteratorHelperLoose(enabledExperiments);
-            let iter = tmp2();
-            if (!iter.done) {
-              while ("mobile-visual-refresh" !== iter.value) {
-                let iter2 = tmp2();
-                iter = iter2;
+            const iter = enabledExperiments[Symbol.iterator]();
+            while (iter !== undefined) {
+              if ("mobile-visual-refresh" === iter.next()) {
+                let tmp4 = iter;
+                iter.return();
+                let num = 32;
+                return 32;
               }
-              return 32;
             }
             return 40;
           }
@@ -2104,14 +2032,14 @@ export const _private = {
           if (0 === enabledExperiments.length) {
             return "text-brand";
           } else {
-            const tmp2 = _createForOfIteratorHelperLoose(enabledExperiments);
-            let iter = tmp2();
-            if (!iter.done) {
-              while ("mobile-visual-refresh" !== iter.value) {
-                let iter2 = tmp2();
-                iter = iter2;
+            const iter = enabledExperiments[Symbol.iterator]();
+            while (iter !== undefined) {
+              if ("mobile-visual-refresh" === iter.next()) {
+                let tmp4 = iter;
+                iter.return();
+                let str2 = "icon-strong";
+                return "icon-strong";
               }
-              return "icon-strong";
             }
             return "text-brand";
           }
@@ -2123,14 +2051,14 @@ export const _private = {
           if (0 === enabledExperiments.length) {
             return 24;
           } else {
-            const tmp2 = _createForOfIteratorHelperLoose(enabledExperiments);
-            let iter = tmp2();
-            if (!iter.done) {
-              while ("mobile-visual-refresh" !== iter.value) {
-                let iter2 = tmp2();
-                iter = iter2;
+            const iter = enabledExperiments[Symbol.iterator]();
+            while (iter !== undefined) {
+              if ("mobile-visual-refresh" === iter.next()) {
+                let tmp4 = iter;
+                iter.return();
+                let num = 20;
+                return 20;
               }
-              return 20;
             }
             return 24;
           }
@@ -2142,14 +2070,14 @@ export const _private = {
           if (0 === enabledExperiments.length) {
             return 24;
           } else {
-            const tmp2 = _createForOfIteratorHelperLoose(enabledExperiments);
-            let iter = tmp2();
-            if (!iter.done) {
-              while ("mobile-visual-refresh" !== iter.value) {
-                let iter2 = tmp2();
-                iter = iter2;
+            const iter = enabledExperiments[Symbol.iterator]();
+            while (iter !== undefined) {
+              if ("mobile-visual-refresh" === iter.next()) {
+                let tmp4 = iter;
+                iter.return();
+                let num = 8;
+                return 8;
               }
-              return 8;
             }
             return 24;
           }
@@ -2166,14 +2094,14 @@ export const _private = {
           if (0 === enabledExperiments.length) {
             return 0;
           } else {
-            const tmp2 = _createForOfIteratorHelperLoose(enabledExperiments);
-            let iter = tmp2();
-            if (!iter.done) {
-              while ("mobile-visual-refresh" !== iter.value) {
-                let iter2 = tmp2();
-                iter = iter2;
+            const iter = enabledExperiments[Symbol.iterator]();
+            while (iter !== undefined) {
+              if ("mobile-visual-refresh" === iter.next()) {
+                let tmp4 = iter;
+                iter.return();
+                let num = 1;
+                return 1;
               }
-              return 1;
             }
             return 0;
           }
@@ -2185,14 +2113,14 @@ export const _private = {
           if (0 === enabledExperiments.length) {
             return 8;
           } else {
-            const tmp2 = _createForOfIteratorHelperLoose(enabledExperiments);
-            let iter = tmp2();
-            if (!iter.done) {
-              while ("mobile-visual-refresh" !== iter.value) {
-                let iter2 = tmp2();
-                iter = iter2;
+            const iter = enabledExperiments[Symbol.iterator]();
+            while (iter !== undefined) {
+              if ("mobile-visual-refresh" === iter.next()) {
+                let tmp4 = iter;
+                iter.return();
+                let num = 16;
+                return 16;
               }
-              return 16;
             }
             return 8;
           }
@@ -2204,14 +2132,14 @@ export const _private = {
           if (0 === enabledExperiments.length) {
             return 0;
           } else {
-            const tmp2 = _createForOfIteratorHelperLoose(enabledExperiments);
-            let iter = tmp2();
-            if (!iter.done) {
-              while ("mobile-visual-refresh-floating" !== iter.value) {
-                let iter2 = tmp2();
-                iter = iter2;
+            const iter = enabledExperiments[Symbol.iterator]();
+            while (iter !== undefined) {
+              if ("mobile-visual-refresh-floating" === iter.next()) {
+                let tmp4 = iter;
+                iter.return();
+                let num = 8;
+                return 8;
               }
-              return 8;
             }
             return 0;
           }
@@ -2223,14 +2151,14 @@ export const _private = {
           if (0 === enabledExperiments.length) {
             return 0;
           } else {
-            const tmp2 = _createForOfIteratorHelperLoose(enabledExperiments);
-            let iter = tmp2();
-            if (!iter.done) {
-              while ("mobile-visual-refresh-floating" !== iter.value) {
-                let iter2 = tmp2();
-                iter = iter2;
+            const iter = enabledExperiments[Symbol.iterator]();
+            while (iter !== undefined) {
+              if ("mobile-visual-refresh-floating" === iter.next()) {
+                let tmp4 = iter;
+                iter.return();
+                let num = 12;
+                return 12;
               }
-              return 12;
             }
             return 0;
           }
@@ -2242,14 +2170,14 @@ export const _private = {
           if (0 === enabledExperiments.length) {
             return 0;
           } else {
-            const tmp2 = _createForOfIteratorHelperLoose(enabledExperiments);
-            let iter = tmp2();
-            if (!iter.done) {
-              while ("mobile-visual-refresh-floating" !== iter.value) {
-                let iter2 = tmp2();
-                iter = iter2;
+            const iter = enabledExperiments[Symbol.iterator]();
+            while (iter !== undefined) {
+              if ("mobile-visual-refresh-floating" === iter.next()) {
+                let tmp4 = iter;
+                iter.return();
+                let num = 8;
+                return 8;
               }
-              return 8;
             }
             return 0;
           }
@@ -2261,14 +2189,14 @@ export const _private = {
           if (0 === enabledExperiments.length) {
             return 6;
           } else {
-            const tmp2 = _createForOfIteratorHelperLoose(enabledExperiments);
-            let iter = tmp2();
-            if (!iter.done) {
-              while ("mobile-visual-refresh" !== iter.value) {
-                let iter2 = tmp2();
-                iter = iter2;
+            const iter = enabledExperiments[Symbol.iterator]();
+            while (iter !== undefined) {
+              if ("mobile-visual-refresh" === iter.next()) {
+                let tmp4 = iter;
+                iter.return();
+                let num = 12;
+                return 12;
               }
-              return 12;
             }
             return 6;
           }
@@ -2280,14 +2208,14 @@ export const _private = {
           if (0 === enabledExperiments.length) {
             return 6;
           } else {
-            const tmp2 = _createForOfIteratorHelperLoose(enabledExperiments);
-            let iter = tmp2();
-            if (!iter.done) {
-              while ("mobile-visual-refresh" !== iter.value) {
-                let iter2 = tmp2();
-                iter = iter2;
+            const iter = enabledExperiments[Symbol.iterator]();
+            while (iter !== undefined) {
+              if ("mobile-visual-refresh" === iter.next()) {
+                let tmp4 = iter;
+                iter.return();
+                let num = 10;
+                return 10;
               }
-              return 10;
             }
             return 6;
           }
@@ -2299,14 +2227,14 @@ export const _private = {
           if (0 === enabledExperiments.length) {
             return 0;
           } else {
-            const tmp2 = _createForOfIteratorHelperLoose(enabledExperiments);
-            let iter = tmp2();
-            if (!iter.done) {
-              while ("mobile-visual-refresh-floating" !== iter.value) {
-                let iter2 = tmp2();
-                iter = iter2;
+            const iter = enabledExperiments[Symbol.iterator]();
+            while (iter !== undefined) {
+              if ("mobile-visual-refresh-floating" === iter.next()) {
+                let tmp4 = iter;
+                iter.return();
+                let num = 1;
+                return 1;
               }
-              return 1;
             }
             return 0;
           }
@@ -2318,14 +2246,14 @@ export const _private = {
           if (0 === enabledExperiments.length) {
             return 0;
           } else {
-            const tmp2 = _createForOfIteratorHelperLoose(enabledExperiments);
-            let iter = tmp2();
-            if (!iter.done) {
-              while ("mobile-visual-refresh-floating" !== iter.value) {
-                let iter2 = tmp2();
-                iter = iter2;
+            const iter = enabledExperiments[Symbol.iterator]();
+            while (iter !== undefined) {
+              if ("mobile-visual-refresh-floating" === iter.next()) {
+                let tmp4 = iter;
+                iter.return();
+                let num = 8;
+                return 8;
               }
-              return 8;
             }
             return 0;
           }
@@ -2337,14 +2265,14 @@ export const _private = {
           if (0 === enabledExperiments.length) {
             return 0;
           } else {
-            const tmp2 = _createForOfIteratorHelperLoose(enabledExperiments);
-            let iter = tmp2();
-            if (!iter.done) {
-              while ("mobile-visual-refresh-floating" !== iter.value) {
-                let iter2 = tmp2();
-                iter = iter2;
+            const iter = enabledExperiments[Symbol.iterator]();
+            while (iter !== undefined) {
+              if ("mobile-visual-refresh-floating" === iter.next()) {
+                let tmp4 = iter;
+                iter.return();
+                let num = 16;
+                return 16;
               }
-              return 16;
             }
             return 0;
           }
@@ -2356,14 +2284,13 @@ export const _private = {
           if (0 === enabledExperiments.length) {
             return 4;
           } else {
-            const tmp2 = _createForOfIteratorHelperLoose(enabledExperiments);
-            let iter = tmp2();
-            if (!iter.done) {
-              while ("mobile-visual-refresh-floating" !== iter.value) {
-                let iter2 = tmp2();
-                iter = iter2;
+            const iter = enabledExperiments[Symbol.iterator]();
+            while (iter !== undefined) {
+              if ("mobile-visual-refresh-floating" === iter.next()) {
+                let tmp4 = iter;
+                iter.return();
+                return 0;
               }
-              return 0;
             }
             return 4;
           }
@@ -2375,14 +2302,13 @@ export const _private = {
           if (0 === enabledExperiments.length) {
             return 1;
           } else {
-            const tmp2 = _createForOfIteratorHelperLoose(enabledExperiments);
-            let iter = tmp2();
-            if (!iter.done) {
-              while ("mobile-visual-refresh-floating" !== iter.value) {
-                let iter2 = tmp2();
-                iter = iter2;
+            const iter = enabledExperiments[Symbol.iterator]();
+            while (iter !== undefined) {
+              if ("mobile-visual-refresh-floating" === iter.next()) {
+                let tmp4 = iter;
+                iter.return();
+                return 0;
               }
-              return 0;
             }
             return 1;
           }
@@ -2394,14 +2320,14 @@ export const _private = {
           if (0 === enabledExperiments.length) {
             return 0;
           } else {
-            const tmp2 = _createForOfIteratorHelperLoose(enabledExperiments);
-            let iter = tmp2();
-            if (!iter.done) {
-              while ("mobile-visual-refresh-floating" !== iter.value) {
-                let iter2 = tmp2();
-                iter = iter2;
+            const iter = enabledExperiments[Symbol.iterator]();
+            while (iter !== undefined) {
+              if ("mobile-visual-refresh-floating" === iter.next()) {
+                let tmp4 = iter;
+                iter.return();
+                let num = 16;
+                return 16;
               }
-              return 16;
             }
             return 0;
           }
@@ -2413,14 +2339,14 @@ export const _private = {
           if (0 === enabledExperiments.length) {
             return 0;
           } else {
-            const tmp2 = _createForOfIteratorHelperLoose(enabledExperiments);
-            let iter = tmp2();
-            if (!iter.done) {
-              while ("mobile-visual-refresh-floating" !== iter.value) {
-                let iter2 = tmp2();
-                iter = iter2;
+            const iter = enabledExperiments[Symbol.iterator]();
+            while (iter !== undefined) {
+              if ("mobile-visual-refresh-floating" === iter.next()) {
+                let tmp4 = iter;
+                iter.return();
+                let num = 8;
+                return 8;
               }
-              return 8;
             }
             return 0;
           }
@@ -2432,20 +2358,20 @@ export const _private = {
           if (0 === enabledExperiments.length) {
             return 0;
           } else {
-            const tmp2 = _createForOfIteratorHelperLoose(enabledExperiments);
-            let iter = tmp2();
-            if (!iter.done) {
-              const value = iter.value;
-              while ("mobile-visual-refresh-floating" !== value) {
-                if ("mobile-visual-refresh-legacy-send-button" === value) {
-                  let num = 12;
-                  return 12;
-                } else {
-                  let iter2 = tmp2();
-                  iter = iter2;
-                }
+            const iter = enabledExperiments[Symbol.iterator]();
+            const nextResult = iter.next();
+            while (iter !== undefined) {
+              if ("mobile-visual-refresh-floating" === nextResult) {
+                let tmp6 = iter;
+                iter.return();
+                let num2 = 10;
+                return 10;
+              } else if ("mobile-visual-refresh-legacy-send-button" === nextResult) {
+                let tmp5 = iter;
+                iter.return();
+                let num = 12;
+                return 12;
               }
-              return 10;
             }
             return 0;
           }
@@ -2457,20 +2383,20 @@ export const _private = {
           if (0 === enabledExperiments.length) {
             return 0;
           } else {
-            const tmp2 = _createForOfIteratorHelperLoose(enabledExperiments);
-            let iter = tmp2();
-            if (!iter.done) {
-              const value = iter.value;
-              while ("mobile-visual-refresh-floating" !== value) {
-                if ("mobile-visual-refresh-legacy-send-button" === value) {
-                  let num = 12;
-                  return 12;
-                } else {
-                  let iter2 = tmp2();
-                  iter = iter2;
-                }
+            const iter = enabledExperiments[Symbol.iterator]();
+            const nextResult = iter.next();
+            while (iter !== undefined) {
+              if ("mobile-visual-refresh-floating" === nextResult) {
+                let tmp6 = iter;
+                iter.return();
+                let num2 = 10;
+                return 10;
+              } else if ("mobile-visual-refresh-legacy-send-button" === nextResult) {
+                let tmp5 = iter;
+                iter.return();
+                let num = 12;
+                return 12;
               }
-              return 10;
             }
             return 0;
           }
@@ -2482,14 +2408,14 @@ export const _private = {
           if (0 === enabledExperiments.length) {
             return 0;
           } else {
-            const tmp2 = _createForOfIteratorHelperLoose(enabledExperiments);
-            let iter = tmp2();
-            if (!iter.done) {
-              while ("mobile-visual-refresh" !== iter.value) {
-                let iter2 = tmp2();
-                iter = iter2;
+            const iter = enabledExperiments[Symbol.iterator]();
+            while (iter !== undefined) {
+              if ("mobile-visual-refresh" === iter.next()) {
+                let tmp4 = iter;
+                iter.return();
+                let num = 20;
+                return 20;
               }
-              return 20;
             }
             return 0;
           }
@@ -2501,14 +2427,14 @@ export const _private = {
           if (0 === enabledExperiments.length) {
             return 0;
           } else {
-            const tmp2 = _createForOfIteratorHelperLoose(enabledExperiments);
-            let iter = tmp2();
-            if (!iter.done) {
-              while ("mobile-visual-refresh" !== iter.value) {
-                let iter2 = tmp2();
-                iter = iter2;
+            const iter = enabledExperiments[Symbol.iterator]();
+            while (iter !== undefined) {
+              if ("mobile-visual-refresh" === iter.next()) {
+                let tmp4 = iter;
+                iter.return();
+                let num = 16;
+                return 16;
               }
-              return 16;
             }
             return 0;
           }
@@ -2520,14 +2446,14 @@ export const _private = {
           if (0 === enabledExperiments.length) {
             return 0;
           } else {
-            const tmp2 = _createForOfIteratorHelperLoose(enabledExperiments);
-            let iter = tmp2();
-            if (!iter.done) {
-              while ("mobile-visual-refresh" !== iter.value) {
-                let iter2 = tmp2();
-                iter = iter2;
+            const iter = enabledExperiments[Symbol.iterator]();
+            while (iter !== undefined) {
+              if ("mobile-visual-refresh" === iter.next()) {
+                let tmp4 = iter;
+                iter.return();
+                let num = 56;
+                return 56;
               }
-              return 56;
             }
             return 0;
           }
@@ -2539,14 +2465,14 @@ export const _private = {
           if (0 === enabledExperiments.length) {
             return 0;
           } else {
-            const tmp2 = _createForOfIteratorHelperLoose(enabledExperiments);
-            let iter = tmp2();
-            if (!iter.done) {
-              while ("mobile-visual-refresh" !== iter.value) {
-                let iter2 = tmp2();
-                iter = iter2;
+            const iter = enabledExperiments[Symbol.iterator]();
+            while (iter !== undefined) {
+              if ("mobile-visual-refresh" === iter.next()) {
+                let tmp4 = iter;
+                iter.return();
+                let num = 36;
+                return 36;
               }
-              return 36;
             }
             return 0;
           }
@@ -2558,14 +2484,14 @@ export const _private = {
           if (0 === enabledExperiments.length) {
             return 0;
           } else {
-            const tmp2 = _createForOfIteratorHelperLoose(enabledExperiments);
-            let iter = tmp2();
-            if (!iter.done) {
-              while ("mobile-visual-refresh" !== iter.value) {
-                let iter2 = tmp2();
-                iter = iter2;
+            const iter = enabledExperiments[Symbol.iterator]();
+            while (iter !== undefined) {
+              if ("mobile-visual-refresh" === iter.next()) {
+                let tmp4 = iter;
+                iter.return();
+                let num = 24;
+                return 24;
               }
-              return 24;
             }
             return 0;
           }
@@ -2577,14 +2503,14 @@ export const _private = {
           if (0 === enabledExperiments.length) {
             return 0;
           } else {
-            const tmp2 = _createForOfIteratorHelperLoose(enabledExperiments);
-            let iter = tmp2();
-            if (!iter.done) {
-              while ("mobile-visual-refresh" !== iter.value) {
-                let iter2 = tmp2();
-                iter = iter2;
+            const iter = enabledExperiments[Symbol.iterator]();
+            while (iter !== undefined) {
+              if ("mobile-visual-refresh" === iter.next()) {
+                let tmp4 = iter;
+                iter.return();
+                let num = 12;
+                return 12;
               }
-              return 12;
             }
             return 0;
           }
@@ -2596,14 +2522,14 @@ export const _private = {
           if (0 === enabledExperiments.length) {
             return "interactive-text-default";
           } else {
-            const tmp2 = _createForOfIteratorHelperLoose(enabledExperiments);
-            let iter = tmp2();
-            if (!iter.done) {
-              while ("mobile-visual-refresh" !== iter.value) {
-                let iter2 = tmp2();
-                iter = iter2;
+            const iter = enabledExperiments[Symbol.iterator]();
+            while (iter !== undefined) {
+              if ("mobile-visual-refresh" === iter.next()) {
+                let tmp4 = iter;
+                iter.return();
+                let str2 = "interactive-icon-default";
+                return "interactive-icon-default";
               }
-              return "interactive-icon-default";
             }
             return "interactive-text-default";
           }
@@ -2615,14 +2541,14 @@ export const _private = {
           if (0 === enabledExperiments.length) {
             return "medium";
           } else {
-            const tmp2 = _createForOfIteratorHelperLoose(enabledExperiments);
-            let iter = tmp2();
-            if (!iter.done) {
-              while ("mobile-visual-refresh" !== iter.value) {
-                let iter2 = tmp2();
-                iter = iter2;
+            const iter = enabledExperiments[Symbol.iterator]();
+            while (iter !== undefined) {
+              if ("mobile-visual-refresh" === iter.next()) {
+                let tmp4 = iter;
+                iter.return();
+                let str2 = "small20";
+                return "small20";
               }
-              return "small20";
             }
             return "medium";
           }
@@ -2634,14 +2560,14 @@ export const _private = {
           if (0 === enabledExperiments.length) {
             return 0;
           } else {
-            const tmp2 = _createForOfIteratorHelperLoose(enabledExperiments);
-            let iter = tmp2();
-            if (!iter.done) {
-              while ("mobile-visual-refresh" !== iter.value) {
-                let iter2 = tmp2();
-                iter = iter2;
+            const iter = enabledExperiments[Symbol.iterator]();
+            while (iter !== undefined) {
+              if ("mobile-visual-refresh" === iter.next()) {
+                let tmp4 = iter;
+                iter.return();
+                let num = 1;
+                return 1;
               }
-              return 1;
             }
             return 0;
           }
@@ -2653,14 +2579,14 @@ export const _private = {
           if (0 === enabledExperiments.length) {
             return 4;
           } else {
-            const tmp2 = _createForOfIteratorHelperLoose(enabledExperiments);
-            let iter = tmp2();
-            if (!iter.done) {
-              while ("mobile-visual-refresh" !== iter.value) {
-                let iter2 = tmp2();
-                iter = iter2;
+            const iter = enabledExperiments[Symbol.iterator]();
+            while (iter !== undefined) {
+              if ("mobile-visual-refresh" === iter.next()) {
+                let tmp4 = iter;
+                iter.return();
+                let num = 8;
+                return 8;
               }
-              return 8;
             }
             return 4;
           }
@@ -2672,14 +2598,13 @@ export const _private = {
           if (0 === enabledExperiments.length) {
             return 2;
           } else {
-            const tmp2 = _createForOfIteratorHelperLoose(enabledExperiments);
-            let iter = tmp2();
-            if (!iter.done) {
-              while ("mobile-visual-refresh" !== iter.value) {
-                let iter2 = tmp2();
-                iter = iter2;
+            const iter = enabledExperiments[Symbol.iterator]();
+            while (iter !== undefined) {
+              if ("mobile-visual-refresh" === iter.next()) {
+                let tmp4 = iter;
+                iter.return();
+                return 0;
               }
-              return 0;
             }
             return 2;
           }
@@ -2691,14 +2616,13 @@ export const _private = {
           if (0 === enabledExperiments.length) {
             return 4;
           } else {
-            const tmp2 = _createForOfIteratorHelperLoose(enabledExperiments);
-            let iter = tmp2();
-            if (!iter.done) {
-              while ("mobile-visual-refresh-floating" !== iter.value) {
-                let iter2 = tmp2();
-                iter = iter2;
+            const iter = enabledExperiments[Symbol.iterator]();
+            while (iter !== undefined) {
+              if ("mobile-visual-refresh-floating" === iter.next()) {
+                let tmp4 = iter;
+                iter.return();
+                return 0;
               }
-              return 0;
             }
             return 4;
           }
@@ -2710,14 +2634,14 @@ export const _private = {
           if (0 === enabledExperiments.length) {
             return 20;
           } else {
-            const tmp2 = _createForOfIteratorHelperLoose(enabledExperiments);
-            let iter = tmp2();
-            if (!iter.done) {
-              while ("mobile-visual-refresh-floating" !== iter.value) {
-                let iter2 = tmp2();
-                iter = iter2;
+            const iter = enabledExperiments[Symbol.iterator]();
+            while (iter !== undefined) {
+              if ("mobile-visual-refresh-floating" === iter.next()) {
+                let tmp4 = iter;
+                iter.return();
+                let num = 16;
+                return 16;
               }
-              return 16;
             }
             return 20;
           }
@@ -2729,21 +2653,22 @@ export const _private = {
           if (0 === enabledExperiments.length) {
             return 40;
           } else {
-            const tmp2 = _createForOfIteratorHelperLoose(enabledExperiments);
-            let iter = tmp2();
-            if (!iter.done) {
-              const value = iter.value;
-              while ("mobile-visual-refresh" !== value) {
-                if ("mobile-visual-refresh-legacy-send-button" === value) {
-                  break;
-                } else if ("mobile-visual-refresh-floating" === value) {
-                  let num = 36;
-                  return 36;
-                } else {
-                  let iter2 = tmp2();
-                  iter = iter2;
+            const iter = enabledExperiments[Symbol.iterator]();
+            const nextResult = iter.next();
+            while (iter !== undefined) {
+              if ("mobile-visual-refresh" !== nextResult) {
+                if ("mobile-visual-refresh-legacy-send-button" !== nextResult) {
+                  if ("mobile-visual-refresh-floating" === nextResult) {
+                    let tmp5 = iter;
+                    iter.return();
+                    let num = 36;
+                    return 36;
+                  }
                 }
               }
+              let tmp6 = iter;
+              iter.return();
+              let num2 = 32;
               return 32;
             }
             return 40;
@@ -2756,23 +2681,25 @@ export const _private = {
           if (0 === enabledExperiments.length) {
             return 40;
           } else {
-            const tmp2 = _createForOfIteratorHelperLoose(enabledExperiments);
-            let iter = tmp2();
-            if (!iter.done) {
-              const value = iter.value;
-              while ("mobile-visual-refresh" !== value) {
-                if ("mobile-visual-refresh-floating" === value) {
-                  let num2 = 36;
-                  return 36;
-                } else if ("mobile-visual-refresh-legacy-send-button" === value) {
-                  let num = 40;
-                  return 40;
-                } else {
-                  let iter2 = tmp2();
-                  iter = iter2;
-                }
+            const iter = enabledExperiments[Symbol.iterator]();
+            const nextResult = iter.next();
+            while (iter !== undefined) {
+              if ("mobile-visual-refresh" === nextResult) {
+                let tmp7 = iter;
+                iter.return();
+                let num3 = 32;
+                return 32;
+              } else if ("mobile-visual-refresh-floating" === nextResult) {
+                let tmp6 = iter;
+                iter.return();
+                let num2 = 36;
+                return 36;
+              } else if ("mobile-visual-refresh-legacy-send-button" === nextResult) {
+                let tmp5 = iter;
+                iter.return();
+                let num = 40;
+                return 40;
               }
-              return 32;
             }
             return 40;
           }
@@ -2784,14 +2711,14 @@ export const _private = {
           if (0 === enabledExperiments.length) {
             return 260;
           } else {
-            const tmp2 = _createForOfIteratorHelperLoose(enabledExperiments);
-            let iter = tmp2();
-            if (!iter.done) {
-              while ("mobile-visual-refresh" !== iter.value) {
-                let iter2 = tmp2();
-                iter = iter2;
+            const iter = enabledExperiments[Symbol.iterator]();
+            while (iter !== undefined) {
+              if ("mobile-visual-refresh" === iter.next()) {
+                let tmp4 = iter;
+                iter.return();
+                let num = 240;
+                return 240;
               }
-              return 240;
             }
             return 260;
           }
@@ -2803,14 +2730,14 @@ export const _private = {
           if (0 === enabledExperiments.length) {
             return 12;
           } else {
-            const tmp2 = _createForOfIteratorHelperLoose(enabledExperiments);
-            let iter = tmp2();
-            if (!iter.done) {
-              while ("mobile-visual-refresh" !== iter.value) {
-                let iter2 = tmp2();
-                iter = iter2;
+            const iter = enabledExperiments[Symbol.iterator]();
+            while (iter !== undefined) {
+              if ("mobile-visual-refresh" === iter.next()) {
+                let tmp4 = iter;
+                iter.return();
+                let num = 16;
+                return 16;
               }
-              return 16;
             }
             return 12;
           }
@@ -2822,14 +2749,14 @@ export const _private = {
           if (0 === enabledExperiments.length) {
             return 8;
           } else {
-            const tmp2 = _createForOfIteratorHelperLoose(enabledExperiments);
-            let iter = tmp2();
-            if (!iter.done) {
-              while ("mobile-visual-refresh" !== iter.value) {
-                let iter2 = tmp2();
-                iter = iter2;
+            const iter = enabledExperiments[Symbol.iterator]();
+            while (iter !== undefined) {
+              if ("mobile-visual-refresh" === iter.next()) {
+                let tmp4 = iter;
+                iter.return();
+                let num = 4;
+                return 4;
               }
-              return 4;
             }
             return 8;
           }
@@ -2841,14 +2768,14 @@ export const _private = {
           if (0 === enabledExperiments.length) {
             return 2;
           } else {
-            const tmp2 = _createForOfIteratorHelperLoose(enabledExperiments);
-            let iter = tmp2();
-            if (!iter.done) {
-              while ("mobile-visual-refresh" !== iter.value) {
-                let iter2 = tmp2();
-                iter = iter2;
+            const iter = enabledExperiments[Symbol.iterator]();
+            while (iter !== undefined) {
+              if ("mobile-visual-refresh" === iter.next()) {
+                let tmp4 = iter;
+                iter.return();
+                let num = 1.2;
+                return 1.2;
               }
-              return 1.2;
             }
             return 2;
           }
@@ -2865,14 +2792,14 @@ export const _private = {
           if (0 === enabledExperiments.length) {
             return 2;
           } else {
-            const tmp2 = _createForOfIteratorHelperLoose(enabledExperiments);
-            let iter = tmp2();
-            if (!iter.done) {
-              while ("mobile-visual-refresh" !== iter.value) {
-                let iter2 = tmp2();
-                iter = iter2;
+            const iter = enabledExperiments[Symbol.iterator]();
+            while (iter !== undefined) {
+              if ("mobile-visual-refresh" === iter.next()) {
+                let tmp4 = iter;
+                iter.return();
+                let num = 1.2;
+                return 1.2;
               }
-              return 1.2;
             }
             return 2;
           }
@@ -2884,14 +2811,14 @@ export const _private = {
           if (0 === enabledExperiments.length) {
             return 10;
           } else {
-            const tmp2 = _createForOfIteratorHelperLoose(enabledExperiments);
-            let iter = tmp2();
-            if (!iter.done) {
-              while ("mobile-visual-refresh" !== iter.value) {
-                let iter2 = tmp2();
-                iter = iter2;
+            const iter = enabledExperiments[Symbol.iterator]();
+            while (iter !== undefined) {
+              if ("mobile-visual-refresh" === iter.next()) {
+                let tmp4 = iter;
+                iter.return();
+                let num = 8;
+                return 8;
               }
-              return 8;
             }
             return 10;
           }
@@ -2908,14 +2835,14 @@ export const _private = {
           if (0 === enabledExperiments.length) {
             return 32;
           } else {
-            const tmp2 = _createForOfIteratorHelperLoose(enabledExperiments);
-            let iter = tmp2();
-            if (!iter.done) {
-              while ("mobile-visual-refresh" !== iter.value) {
-                let iter2 = tmp2();
-                iter = iter2;
+            const iter = enabledExperiments[Symbol.iterator]();
+            while (iter !== undefined) {
+              if ("mobile-visual-refresh" === iter.next()) {
+                let tmp4 = iter;
+                iter.return();
+                let num = 28;
+                return 28;
               }
-              return 28;
             }
             return 32;
           }
@@ -2927,14 +2854,14 @@ export const _private = {
           if (0 === enabledExperiments.length) {
             return 16;
           } else {
-            const tmp2 = _createForOfIteratorHelperLoose(enabledExperiments);
-            let iter = tmp2();
-            if (!iter.done) {
-              while ("mobile-visual-refresh" !== iter.value) {
-                let iter2 = tmp2();
-                iter = iter2;
+            const iter = enabledExperiments[Symbol.iterator]();
+            while (iter !== undefined) {
+              if ("mobile-visual-refresh" === iter.next()) {
+                let tmp4 = iter;
+                iter.return();
+                let num = 28;
+                return 28;
               }
-              return 28;
             }
             return 16;
           }
@@ -2946,14 +2873,14 @@ export const _private = {
           if (0 === enabledExperiments.length) {
             return 24;
           } else {
-            const tmp2 = _createForOfIteratorHelperLoose(enabledExperiments);
-            let iter = tmp2();
-            if (!iter.done) {
-              while ("mobile-visual-refresh" !== iter.value) {
-                let iter2 = tmp2();
-                iter = iter2;
+            const iter = enabledExperiments[Symbol.iterator]();
+            while (iter !== undefined) {
+              if ("mobile-visual-refresh" === iter.next()) {
+                let tmp4 = iter;
+                iter.return();
+                let num = 20;
+                return 20;
               }
-              return 20;
             }
             return 24;
           }
@@ -2965,14 +2892,14 @@ export const _private = {
           if (0 === enabledExperiments.length) {
             return 48;
           } else {
-            const tmp2 = _createForOfIteratorHelperLoose(enabledExperiments);
-            let iter = tmp2();
-            if (!iter.done) {
-              while ("mobile-visual-refresh" !== iter.value) {
-                let iter2 = tmp2();
-                iter = iter2;
+            const iter = enabledExperiments[Symbol.iterator]();
+            while (iter !== undefined) {
+              if ("mobile-visual-refresh" === iter.next()) {
+                let tmp4 = iter;
+                iter.return();
+                let num = 56;
+                return 56;
               }
-              return 56;
             }
             return 48;
           }
@@ -2984,14 +2911,14 @@ export const _private = {
           if (0 === enabledExperiments.length) {
             return 48;
           } else {
-            const tmp2 = _createForOfIteratorHelperLoose(enabledExperiments);
-            let iter = tmp2();
-            if (!iter.done) {
-              while ("mobile-visual-refresh" !== iter.value) {
-                let iter2 = tmp2();
-                iter = iter2;
+            const iter = enabledExperiments[Symbol.iterator]();
+            while (iter !== undefined) {
+              if ("mobile-visual-refresh" === iter.next()) {
+                let tmp4 = iter;
+                iter.return();
+                let num = 48;
+                return 48;
               }
-              return 48;
             }
             return 48;
           }
@@ -3003,14 +2930,14 @@ export const _private = {
           if (0 === enabledExperiments.length) {
             return 28;
           } else {
-            const tmp2 = _createForOfIteratorHelperLoose(enabledExperiments);
-            let iter = tmp2();
-            if (!iter.done) {
-              while ("mobile-visual-refresh" !== iter.value) {
-                let iter2 = tmp2();
-                iter = iter2;
+            const iter = enabledExperiments[Symbol.iterator]();
+            while (iter !== undefined) {
+              if ("mobile-visual-refresh" === iter.next()) {
+                let tmp4 = iter;
+                iter.return();
+                let num = 22;
+                return 22;
               }
-              return 22;
             }
             return 28;
           }
@@ -3022,14 +2949,14 @@ export const _private = {
           if (0 === enabledExperiments.length) {
             return 33;
           } else {
-            const tmp2 = _createForOfIteratorHelperLoose(enabledExperiments);
-            let iter = tmp2();
-            if (!iter.done) {
-              while ("mobile-visual-refresh" !== iter.value) {
-                let iter2 = tmp2();
-                iter = iter2;
+            const iter = enabledExperiments[Symbol.iterator]();
+            while (iter !== undefined) {
+              if ("mobile-visual-refresh" === iter.next()) {
+                let tmp4 = iter;
+                iter.return();
+                let num = 28;
+                return 28;
               }
-              return 28;
             }
             return 33;
           }
@@ -3041,14 +2968,14 @@ export const _private = {
           if (0 === enabledExperiments.length) {
             return 12;
           } else {
-            const tmp2 = _createForOfIteratorHelperLoose(enabledExperiments);
-            let iter = tmp2();
-            if (!iter.done) {
-              while ("mobile-visual-refresh" !== iter.value) {
-                let iter2 = tmp2();
-                iter = iter2;
+            const iter = enabledExperiments[Symbol.iterator]();
+            while (iter !== undefined) {
+              if ("mobile-visual-refresh" === iter.next()) {
+                let tmp4 = iter;
+                iter.return();
+                let num = 12;
+                return 12;
               }
-              return 12;
             }
             return 12;
           }
@@ -3060,14 +2987,14 @@ export const _private = {
           if (0 === enabledExperiments.length) {
             return 28;
           } else {
-            const tmp2 = _createForOfIteratorHelperLoose(enabledExperiments);
-            let iter = tmp2();
-            if (!iter.done) {
-              while ("mobile-visual-refresh" !== iter.value) {
-                let iter2 = tmp2();
-                iter = iter2;
+            const iter = enabledExperiments[Symbol.iterator]();
+            while (iter !== undefined) {
+              if ("mobile-visual-refresh" === iter.next()) {
+                let tmp4 = iter;
+                iter.return();
+                let num = 24;
+                return 24;
               }
-              return 24;
             }
             return 28;
           }
@@ -3079,14 +3006,14 @@ export const _private = {
           if (0 === enabledExperiments.length) {
             return 0;
           } else {
-            const tmp2 = _createForOfIteratorHelperLoose(enabledExperiments);
-            let iter = tmp2();
-            if (!iter.done) {
-              while ("mobile-visual-refresh" !== iter.value) {
-                let iter2 = tmp2();
-                iter = iter2;
+            const iter = enabledExperiments[Symbol.iterator]();
+            while (iter !== undefined) {
+              if ("mobile-visual-refresh" === iter.next()) {
+                let tmp4 = iter;
+                iter.return();
+                let num = 16;
+                return 16;
               }
-              return 16;
             }
             return 0;
           }
@@ -3098,14 +3025,14 @@ export const _private = {
           if (0 === enabledExperiments.length) {
             return 72;
           } else {
-            const tmp2 = _createForOfIteratorHelperLoose(enabledExperiments);
-            let iter = tmp2();
-            if (!iter.done) {
-              while ("mobile-visual-refresh" !== iter.value) {
-                let iter2 = tmp2();
-                iter = iter2;
+            const iter = enabledExperiments[Symbol.iterator]();
+            while (iter !== undefined) {
+              if ("mobile-visual-refresh" === iter.next()) {
+                let tmp4 = iter;
+                iter.return();
+                let num = 64;
+                return 64;
               }
-              return 64;
             }
             return 72;
           }
@@ -3117,14 +3044,14 @@ export const _private = {
           if (0 === enabledExperiments.length) {
             return 4;
           } else {
-            const tmp2 = _createForOfIteratorHelperLoose(enabledExperiments);
-            let iter = tmp2();
-            if (!iter.done) {
-              while ("mobile-visual-refresh" !== iter.value) {
-                let iter2 = tmp2();
-                iter = iter2;
+            const iter = enabledExperiments[Symbol.iterator]();
+            while (iter !== undefined) {
+              if ("mobile-visual-refresh" === iter.next()) {
+                let tmp4 = iter;
+                iter.return();
+                let num = 6;
+                return 6;
               }
-              return 6;
             }
             return 4;
           }
@@ -3146,14 +3073,14 @@ export const _private = {
           if (0 === enabledExperiments.length) {
             return 12;
           } else {
-            const tmp2 = _createForOfIteratorHelperLoose(enabledExperiments);
-            let iter = tmp2();
-            if (!iter.done) {
-              while ("mobile-visual-refresh" !== iter.value) {
-                let iter2 = tmp2();
-                iter = iter2;
+            const iter = enabledExperiments[Symbol.iterator]();
+            while (iter !== undefined) {
+              if ("mobile-visual-refresh" === iter.next()) {
+                let tmp4 = iter;
+                iter.return();
+                let num = 8;
+                return 8;
               }
-              return 8;
             }
             return 12;
           }
@@ -3165,14 +3092,14 @@ export const _private = {
           if (0 === enabledExperiments.length) {
             return 2147483647;
           } else {
-            const tmp2 = _createForOfIteratorHelperLoose(enabledExperiments);
-            let iter = tmp2();
-            if (!iter.done) {
-              while ("mobile-visual-refresh" !== iter.value) {
-                let iter2 = tmp2();
-                iter = iter2;
+            const iter = enabledExperiments[Symbol.iterator]();
+            while (iter !== undefined) {
+              if ("mobile-visual-refresh" === iter.next()) {
+                let tmp4 = iter;
+                iter.return();
+                let num = 16;
+                return 16;
               }
-              return 16;
             }
             return 2147483647;
           }
@@ -3184,14 +3111,14 @@ export const _private = {
           if (0 === enabledExperiments.length) {
             return 0;
           } else {
-            const tmp2 = _createForOfIteratorHelperLoose(enabledExperiments);
-            let iter = tmp2();
-            if (!iter.done) {
-              while ("mobile-visual-refresh" !== iter.value) {
-                let iter2 = tmp2();
-                iter = iter2;
+            const iter = enabledExperiments[Symbol.iterator]();
+            while (iter !== undefined) {
+              if ("mobile-visual-refresh" === iter.next()) {
+                let tmp4 = iter;
+                iter.return();
+                let num = 8;
+                return 8;
               }
-              return 8;
             }
             return 0;
           }

@@ -1,755 +1,557 @@
-// Module ID: 5919
-// Function ID: 52261
-// Name: _createForOfIteratorHelperLoose
-// Dependencies: [6, 7, 1352, 1194, 1348, 1918, 1911, 1838, 3793, 653, 1355, 482, 483, 3, 1883, 3784, 491, 675, 1360, 2]
+// Module ID: 5938
+// Function ID: 5939
+// Name: getAll
+// Dependencies: [1376, 1218, 1372, 1942, 1935, 1862, 3817, 676, 1379, 505, 506, 3, 1907, 3808, 514, 698, 1384, 2]
 
-// Module 5919 (_createForOfIteratorHelperLoose)
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import closure_5 from "_createForOfIteratorHelperLoose";
-import _callSuper from "_callSuper";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_9 from "_isNativeReflectConstruct";
-import closure_10 from "_isNativeReflectConstruct";
-import closure_11 from "_createForOfIteratorHelperLoose";
-import closure_12 from "_createForOfIteratorHelperLoose";
-import closure_13 from "_isNativeReflectConstruct";
+// Module 5938 (getAll)
+import createChannelRecord from "createChannelRecord";
+import fetchFingerprint from "fetchFingerprint";
+import ensureGuildLoaded from "ensureGuildLoaded";
+import trackCommunicationDisabled from "trackCommunicationDisabled";
+import createGuildRoleRecordFromRust from "createGuildRoleRecordFromRust";
+import createGuildRecordFromRust from "createGuildRecordFromRust";
+import getUncachedChannelPermissions from "getUncachedChannelPermissions";
 import ME from "ME";
 import { ChannelFlags } from "set";
 import { Permissions } from "sum";
-import importDefaultResult from "_isNativeReflectConstruct";
-import importAllResult from "fromHexReverseArray";
+import importAllResult from "fromString";
 
-let closure_14;
-let closure_15;
-let closure_6;
-let closure_7;
-const require = arg1;
-function _createForOfIteratorHelperLoose(iterable) {
-  let closure_0 = iterable;
-  iterable = "undefined" !== typeof Symbol;
-  if (iterable) {
-    const _Symbol = Symbol;
-    iterable = iterable[Symbol.iterator];
-  }
-  if (!iterable) {
-    iterable = iterable[Symbol.iterator];
-  }
-  if (iterable) {
-    const iter = iterable.call(iterable);
-    const next = iter.next;
-    return next.bind(iter);
-  } else {
-    const _Array = Array;
-    let tmp = iterable;
-    if (!Array.isArray(iterable)) {
-      let tmp2;
-      if (iterable) {
-        if ("string" === typeof iterable) {
-          tmp2 = _arrayLikeToArray(iterable, undefined);
-        } else {
-          const toString = {}.toString;
-          const substr = toString.call(iterable).slice(8, -1);
-          let name = substr;
-          if (tmp3) {
-            name = iterable.constructor.name;
+let c4;
+let c5;
+let closure_12;
+let map1;
+let obj = require;
+({ createChannelRecordFromServer: c4, ChannelRecordBase: c5 } = createChannelRecord);
+({ AnalyticEvents: closure_12, BasicPermissions: map1 } = ME);
+let closure_15 = require("fromString").combine(Permissions.VIEW_CHANNEL, Permissions.ADMINISTRATOR);
+let closure_16 = new require("trackCommunicationDisabled")("GuildsRequiringChannelSync");
+let closure_17 = { NewGuild: "new_guild", OwnershipChange: "ownership_change", RolePermissions: "role_permissions", RoleSubscriptionTags: "role_subscription_tags", MemberRoles: "member_roles", ChannelVisibleParentHidden: "channel_visible_parent_hidden", Unknown: "unknown" };
+let closure_18 = { ConnectionOpen: "connection_open", GuildCreate: "guild_create", BackgroundSync: "background_sync" };
+class GuildsRequiringChannelSync {
+  constructor() {
+    obj = Object.create(new.target.prototype);
+    GuildsRequiringChannelSync = obj;
+    obj.actions = {
+      BACKGROUND_SYNC(arg0, arg1) {
+            return obj.handleBackgroundSync(arg0, arg1);
+          },
+      CONNECTION_OPEN(arg0, arg1) {
+            return obj.handleConnectionOpen(arg0, arg1);
+          },
+      GUILD_CREATE(arg0, arg1) {
+            return obj.handleGuildCreate(arg0, arg1);
+          },
+      CHANNEL_SYNC(arg0, arg1) {
+            return obj.handleChannelSync(arg0, arg1);
+          },
+      UNMARK_RESYNC_GUILDS(guildIds, database) {
+            return obj.handleUnmarkResyncGuilds(guildIds, database);
           }
-          if ("Map" !== name) {
-            if ("Set" !== name) {
-              if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(iterable, undefined);
-              } else {
-                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
-              }
-            }
-            tmp2 = arr;
-          }
-          const _Array2 = Array;
-          arr = Array.from(iterable);
-          const callResult = toString.call(iterable);
-          tmp3 = "Object" === substr && iterable.constructor;
-        }
-      }
-      tmp = tmp2;
-      if (!tmp2) {
-        const _TypeError = TypeError;
-        const typeError = new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
-        throw typeError;
-      }
-    }
-    if (tmp) {
-      closure_0 = tmp;
-    }
-    let c1 = 0;
-    return () => {
-      if (closure_1 >= length.length) {
-        let obj = { done: true };
-      } else {
-        obj = { done: false };
-        closure_1 = tmp3 + 1;
-        obj.value = length[+closure_1];
-      }
-      return obj;
     };
+    return obj;
   }
 }
-function _arrayLikeToArray(arg0, arg1) {
-  let length;
-  if (tmp) {
-    length = arg0.length;
+const prototype = GuildsRequiringChannelSync.prototype;
+prototype["getAll"] = function getAll() {
+  const result = importDefault(1907).guildsRequiringChannelSync();
+  if (null == result) {
+    let resolved = Promise.resolve([]);
+  } else {
+    resolved = result.getMany();
   }
-  const ArrayResult = Array(length);
-  for (let num = 0; num < length; num = num + 1) {
-    ArrayResult[num] = arg0[num];
+  return resolved;
+};
+prototype["handleConnectionOpen"] = function handleConnectionOpen(arg0, arg1) {
+  const self = this;
+  for (const item10008 of tmp) {
+    let tmp2 = closure_18;
+    let handleGuildResult = self.handleGuild(item10008, arg1, closure_18.ConnectionOpen);
+    continue;
   }
-  return ArrayResult;
-}
-({ createChannelRecordFromServer: closure_6, ChannelRecordBase: closure_7 } = _callSuper);
-({ AnalyticEvents: closure_14, BasicPermissions: closure_15 } = ME);
-let closure_17 = require("fromHexReverseArray").combine(Permissions.VIEW_CHANNEL, Permissions.ADMINISTRATOR);
-importDefaultResult = new importDefaultResult("GuildsRequiringChannelSync");
-let closure_19 = { NewGuild: "new_guild", OwnershipChange: "ownership_change", RolePermissions: "role_permissions", RoleSubscriptionTags: "role_subscription_tags", MemberRoles: "member_roles", ChannelVisibleParentHidden: "channel_visible_parent_hidden", Unknown: "unknown" };
-let closure_20 = { ConnectionOpen: "connection_open", GuildCreate: "guild_create", BackgroundSync: "background_sync" };
-let tmp6 = (() => {
-  class GuildsRequiringChannelSync {
-    constructor() {
-      self = this;
-      tmp = outer1_4(this, self);
-      this.actions = {
-        BACKGROUND_SYNC(arg0, arg1) {
-              return self.handleBackgroundSync(arg0, arg1);
-            },
-        CONNECTION_OPEN(arg0, arg1) {
-              return self.handleConnectionOpen(arg0, arg1);
-            },
-        GUILD_CREATE(arg0, arg1) {
-              return self.handleGuildCreate(arg0, arg1);
-            },
-        CHANNEL_SYNC(integrity_check) {
-              return self.handleChannelSync(integrity_check, arg1);
-            },
-        UNMARK_RESYNC_GUILDS(arg0, arg1) {
-              return self.handleUnmarkResyncGuilds(arg0, arg1);
-            }
-      };
-      return;
+};
+prototype["handleGuildCreate"] = function handleGuildCreate(guild) {
+  guild = guild.guild;
+  if (true !== guild.unavailable) {
+    const self = this;
+    this.handleGuild(guild, arg1, closure_18.GuildCreate);
+  }
+};
+prototype["handleBackgroundSync"] = function handleBackgroundSync(arg0, database) {
+  const self = this;
+  for (const item10008 of tmp) {
+    let result = self.handleBackgroundSyncGuild(item10008, arg1);
+    continue;
+  }
+};
+prototype["handleUnmarkResyncGuilds"] = function handleUnmarkResyncGuilds(guildIds, database) {
+  const self = this;
+  guildIds = guildIds.guildIds;
+  for (const item10008 of guildIds) {
+    let unmarkGuildForResyncResult = self.unmarkGuildForResync(item10008, arg1);
+    continue;
+  }
+  tmp4.verbose("Unmarked guilds " + JSON.stringify(guildIds));
+};
+prototype["detectRoleVisibilityChanges"] = function detectRoleVisibilityChanges(id, unsafeMutableRoles, obj, set) {
+  for (const key10008 in arg2) {
+    let tmp16 = key10008;
+    let tmp17 = arg2[key10008];
+    let tmp18 = arg1[key10008];
+    let isSubscriptionRoleResult = null != tmp18;
+    if (isSubscriptionRoleResult) {
+      let tmp = obj;
+      let tmp2 = dependencyMap;
+      obj = obj(3808);
+      isSubscriptionRoleResult = obj.isSubscriptionRole(tmp18);
     }
-  }
-  let obj = {
-    key: "getAll",
-    value() {
-      const result = outer1_1(outer1_3[14]).guildsRequiringChannelSync();
-      if (null == result) {
-        let resolved = Promise.resolve([]);
+    if (isSubscriptionRoleResult) {
+      let tmp4 = obj;
+      let tmp5 = dependencyMap;
+      let obj2 = obj(3808);
+      isSubscriptionRoleResult = obj2.isSubscriptionRoleAvailableForPurchase(tmp18);
+    }
+    let tmp7 = dependencyMap;
+    let tmp6 = obj;
+    let obj3 = obj(3808);
+    let isSubscriptionRoleResult1 = obj3.isSubscriptionRole(tmp17);
+    if (isSubscriptionRoleResult1) {
+      let tmp6Result = tmp6(3808);
+      isSubscriptionRoleResult1 = tmp6Result.isSubscriptionRoleAvailableForPurchase(tmp17);
+    }
+    if (!isSubscriptionRoleResult) {
+      if (isSubscriptionRoleResult1) {
+        let tmp9 = closure_17;
+        return closure_17.RoleSubscriptionTags;
+      }
+    }
+    if (key10008 === arg0) {
+      if (null == tmp18) {
+        let tmp15 = closure_17;
+        return closure_17.RolePermissions;
       } else {
-        resolved = result.getMany();
-      }
-      return resolved;
-    }
-  };
-  let items = [obj, , , , , , , , , , , , , , , , , , , ];
-  obj = {
-    key: "handleConnectionOpen",
-    value(guilds) {
-      let done;
-      const self = this;
-      const tmp = outer1_21(guilds.guilds);
-      let iter = tmp();
-      if (!iter.done) {
-        do {
-          let tmp2 = outer1_20;
-          let handleGuildResult = self.handleGuild(iter.value, arg1, outer1_20.ConnectionOpen);
-          let iter2 = tmp();
-          iter = iter2;
-          done = iter2.done;
-        } while (!done);
+        let tmp10 = importAll;
+        let arr = importAll(506);
+        let tmp11 = closure_15;
+        let found = arr.filter(tmp18.permissions, closure_15);
+        let arr2 = importAll(506);
+        let found1 = arr2.filter(tmp17.permissions, closure_15);
+        let obj5 = importAll(506);
+        if (obj5.equals(found, found1)) {
+          continue;
+        } else {
+          let tmp14 = closure_17;
+          return closure_17.RolePermissions;
+        }
       }
     }
-  };
-  items[1] = obj;
-  obj = {
-    key: "handleGuildCreate",
-    value(guild) {
-      const self = this;
-      guild = guild.guild;
-      if (true !== guild.unavailable) {
-        self.handleGuild(guild, arg1, outer1_20.GuildCreate);
-      }
+    continue;
+  }
+  return null;
+};
+prototype["processMemberRoleIds"] = function processMemberRoleIds(arg0, roles) {
+  if (arg0.length !== roles.length) {
+    return { rolesAreDifferent: true, allRoleIds: null };
+  } else {
+    const _Set = Set;
+    const set = new Set();
+    const tmp18 = arg0[Symbol.iterator]();
+    while (tmp18 !== undefined) {
+      let addResult = set.add(tmp2);
+      continue;
     }
-  };
-  items[2] = obj;
-  items[3] = {
-    key: "handleBackgroundSync",
-    value(guilds) {
-      let done;
-      const self = this;
-      const tmp = outer1_21(guilds.guilds);
-      let iter = tmp();
-      if (!iter.done) {
-        do {
-          let result = self.handleBackgroundSyncGuild(iter.value, arg1);
-          let iter2 = tmp();
-          iter = iter2;
-          done = iter2.done;
-        } while (!done);
-      }
-    }
-  };
-  items[4] = {
-    key: "handleUnmarkResyncGuilds",
-    value(guildIds) {
-      let done;
-      const self = this;
-      guildIds = guildIds.guildIds;
-      const tmp = outer1_21(guildIds);
-      let iter = tmp();
-      if (!iter.done) {
-        do {
-          let unmarkGuildForResyncResult = self.unmarkGuildForResync(iter.value, arg1);
-          let iter2 = tmp();
-          iter = iter2;
-          done = iter2.done;
-        } while (!done);
-      }
-      outer1_18.verbose("Unmarked guilds " + JSON.stringify(guildIds));
-    }
-  };
-  items[5] = {
-    key: "detectRoleVisibilityChanges",
-    value(arg0, arg1, obj, has) {
-      for (const key10010 in arg2) {
-        let tmp19 = key10010;
-        let tmp20 = arg2[key10010];
-        let tmp21 = arg1[key10010];
-        let isSubscriptionRoleResult = null != tmp21;
-        if (isSubscriptionRoleResult) {
-          let tmp = GuildsRequiringChannelSync;
-          let tmp2 = outer1_3;
-          obj = GuildsRequiringChannelSync(outer1_3[15]);
-          isSubscriptionRoleResult = obj.isSubscriptionRole(tmp21);
-        }
-        if (isSubscriptionRoleResult) {
-          let tmp4 = GuildsRequiringChannelSync;
-          let tmp5 = outer1_3;
-          let obj2 = GuildsRequiringChannelSync(outer1_3[15]);
-          isSubscriptionRoleResult = obj2.isSubscriptionRoleAvailableForPurchase(tmp21);
-        }
-        let tmp6 = GuildsRequiringChannelSync;
-        let tmp7 = outer1_3;
-        let obj3 = GuildsRequiringChannelSync(outer1_3[15]);
-        let isSubscriptionRoleResult1 = obj3.isSubscriptionRole(tmp20);
-        if (isSubscriptionRoleResult1) {
-          let tmp9 = GuildsRequiringChannelSync;
-          let tmp10 = outer1_3;
-          let obj4 = GuildsRequiringChannelSync(outer1_3[15]);
-          isSubscriptionRoleResult1 = obj4.isSubscriptionRoleAvailableForPurchase(tmp20);
-        }
-        if (!isSubscriptionRoleResult) {
-          if (isSubscriptionRoleResult1) {
-            let tmp11 = outer1_19;
-            return outer1_19.RoleSubscriptionTags;
-          }
-        }
-        if (key10010 === arg0) {
-          if (null == tmp21) {
-            let tmp18 = outer1_19;
-            return outer1_19.RolePermissions;
-          } else {
-            let tmp12 = outer1_2;
-            let tmp13 = outer1_3;
-            let arr = outer1_2(outer1_3[12]);
-            let tmp14 = outer1_17;
-            let found = arr.filter(tmp21.permissions, outer1_17);
-            let arr2 = outer1_2(outer1_3[12]);
-            let found1 = arr2.filter(tmp20.permissions, outer1_17);
-            let obj5 = outer1_2(outer1_3[12]);
-            if (obj5.equals(found, found1)) {
-              continue;
-            } else {
-              let tmp17 = outer1_19;
-              return outer1_19.RolePermissions;
-            }
-          }
-        }
+    const iter = roles[Symbol.iterator]();
+    const nextResult = iter.next();
+    while (iter !== undefined) {
+      let tmp9 = nextResult;
+      if (set.has(nextResult)) {
+        let tmp11 = nextResult;
+        let addResult1 = set.add(tmp9);
         continue;
-      }
-      return null;
-    }
-  };
-  items[6] = {
-    key: "processMemberRoleIds",
-    value(arg0, arg1) {
-      let done;
-      if (arg0.length !== arg1.length) {
-        return { rolesAreDifferent: true, allRoleIds: null };
       } else {
-        const _Set = Set;
-        const set = new Set();
-        const tmp10 = outer1_21(arg0);
-        let iter2 = tmp10();
-        if (!iter2.done) {
-          do {
-            let addResult = set.add(iter2.value);
-            let iter = tmp10();
-            iter2 = iter;
-            done = iter.done;
-          } while (!done);
-        }
-        const tmp3 = outer1_21(arg1);
-        let iter3 = tmp3();
-        if (!iter3.done) {
-          const value = iter3.value;
-          while (set.has(value)) {
-            let addResult1 = set.add(value);
-            let iter4 = tmp3();
-            iter3 = iter4;
-          }
-          return { rolesAreDifferent: true, allRoleIds: null };
-        }
-        const obj = { rolesAreDifferent: false, allRoleIds: set };
+        let tmp10 = iter;
+        let obj = { rolesAreDifferent: true, allRoleIds: null };
+        iter.return();
         return obj;
       }
     }
-  };
-  items[7] = {
-    key: "userBecameGuildOwner",
-    value(arg0, arg1, arg2) {
-      let tmp = null != arg2;
-      if (tmp) {
-        let tmp3 = arg1 === arg2;
-        if (tmp3) {
-          tmp3 = arg0 !== arg2;
-        }
-        tmp = tmp3;
-      }
-      return tmp;
+    obj = { rolesAreDifferent: false, allRoleIds: null };
+    obj[1] = set;
+    return obj;
+  }
+};
+prototype["userBecameGuildOwner"] = function userBecameGuildOwner(ownerId, owner_id, id) {
+  let tmp = null != id;
+  if (tmp) {
+    let tmp3 = owner_id === id;
+    if (tmp3) {
+      tmp3 = ownerId !== id;
     }
-  };
-  items[8] = {
-    key: "handleBackgroundSyncGuild",
-    value(id) {
-      let iter;
-      const self = this;
-      let selfMember = outer1_10.getSelfMember(id.id);
-      if (null == selfMember) {
-        selfMember = outer1_10.getCachedSelfMember(id.id);
-      }
-      if (null != selfMember) {
-        if ("partial" === id.data_mode) {
-          if (self.backgroundSyncGuildHasObfuscatedChannels(id)) {
-            let ChannelVisibleParentHidden = outer1_19.Unknown;
-            let obj = {};
-            if (null != id.partial_updates.roles) {
-              const tmp35 = outer1_21(id.partial_updates.roles);
-              let iter2 = tmp35();
-              if (!iter2.done) {
-                do {
-                  let value = iter2.value;
-                  obj = { id: value.id };
-                  let tmp5 = outer1_2;
-                  let tmp6 = outer1_3;
-                  let obj3 = outer1_2(outer1_3[12]);
-                  obj.permissions = obj3.deserialize(value.permissions);
-                  let tags = value.tags;
-                  if (null == tags) {
-                    tags = {};
-                  }
-                  obj.tags = tags;
-                  obj[value.id] = obj;
-                  iter = tmp35();
-                  iter2 = iter;
-                } while (!iter.done);
-              }
+    tmp = tmp3;
+  }
+  return tmp;
+};
+prototype["handleBackgroundSyncGuild"] = function handleBackgroundSyncGuild(item10008, database) {
+  let obj = store3;
+  let selfMember = store3.getSelfMember(item10008.id);
+  if (selfMember == null) {
+    selfMember = obj.getCachedSelfMember(item10008.id);
+  }
+  if (null != selfMember) {
+    const self = this;
+    if ("partial" === item10008.data_mode) {
+      if (self.backgroundSyncGuildHasObfuscatedChannels(item10008)) {
+        let ChannelVisibleParentHidden = closure_17.Unknown;
+        obj = {};
+        if (null != item10008.partial_updates.roles) {
+          let roles = item10008.partial_updates.roles;
+          for (const item10021 of roles) {
+            obj = { id: null, permissions: null, tags: null };
+            obj[0] = item10021.id;
+            let tmp5 = importAll;
+            let tmp6 = dependencyMap;
+            let obj4 = importAll(506);
+            obj[1] = obj4.deserialize(item10021.permissions);
+            let tags = item10021.tags;
+            if (tags == null) {
+              tags = {};
             }
-            const properties = id.properties;
-            const guild = outer1_12.getGuild(id.id);
-            let ownerId;
-            if (null != guild) {
-              ownerId = guild.ownerId;
-            }
-            let owner_id;
-            if (null != properties) {
-              owner_id = properties.owner_id;
-            }
-            const userBecameGuildOwnerResult = self.userBecameGuildOwner(ownerId, owner_id, outer1_8.getId());
-            if (userBecameGuildOwnerResult) {
-              ChannelVisibleParentHidden = outer1_19.OwnershipChange;
-              let flag = userBecameGuildOwnerResult;
-            } else {
-              const unsafeMutableRoles = outer1_11.getUnsafeMutableRoles(id.id);
-              let _Set = Set;
-              let roles;
-              if (null != selfMember) {
-                roles = selfMember.roles;
-              }
-              if (null == roles) {
-                roles = [];
-              }
-              const prototype = _Set.prototype;
-              _Set = new _Set(roles);
-              const result = self.detectRoleVisibilityChanges(id.id, unsafeMutableRoles, obj, _Set);
-              flag = userBecameGuildOwnerResult;
-              if (null != result) {
-                flag = true;
-                ChannelVisibleParentHidden = result;
-              }
-            }
-            let result1 = !flag;
-            if (result1) {
-              let channels = id.partial_updates.channels;
-              if (null == channels) {
-                channels = [];
-              }
-              let deleted_channel_ids = id.partial_updates.deleted_channel_ids;
-              if (null == deleted_channel_ids) {
-                deleted_channel_ids = [];
-              }
-              result1 = self.hasNewlyVisibleChannelWithHiddenParent(id.id, channels, deleted_channel_ids);
-            }
-            if (result1) {
-              ChannelVisibleParentHidden = outer1_19.ChannelVisibleParentHidden;
-              flag = true;
-            }
-            if (flag) {
-              self.markGuildForResync(id.id, arg1, outer1_20.BackgroundSync, ChannelVisibleParentHidden);
-            }
-          } else {
-            self.unmarkGuildForResync(id.id, arg1);
+            obj[2] = tags;
+            obj[item10021.id] = obj;
+            continue;
           }
-        } else if ("full" === id.data_mode) {
-          self.unmarkGuildForResync(id.id, arg1);
         }
-      }
-    }
-  };
-  items[9] = {
-    key: "handleGuild",
-    value(channels) {
-      let allRoleIds;
-      let iter2;
-      let rolesAreDifferent;
-      const self = this;
-      if ("full_sync" !== channels.channels.op) {
-        const id = outer1_8.getId();
-        const guild = outer1_12.getGuild(channels.id);
-        if (null != guild) {
-          const properties = channels.properties;
-          let owner_id;
-          if (null != properties) {
-            owner_id = properties.owner_id;
-          }
-          const userBecameGuildOwnerResult = self.userBecameGuildOwner(guild.ownerId, owner_id, id);
+        const properties = item10008.properties;
+        const guild = store5.getGuild(item10008.id);
+        let ownerId;
+        if (guild != null) {
+          ownerId = guild.ownerId;
+        }
+        let owner_id;
+        if (properties != null) {
+          owner_id = properties.owner_id;
+        }
+        const userBecameGuildOwnerResult = self.userBecameGuildOwner(ownerId, owner_id, store.getId());
+        if (userBecameGuildOwnerResult) {
+          ChannelVisibleParentHidden = closure_17.OwnershipChange;
           let flag = userBecameGuildOwnerResult;
-          let MemberRoles = outer1_19.Unknown;
-          if (userBecameGuildOwnerResult) {
-            MemberRoles = outer1_19.OwnershipChange;
-            flag = userBecameGuildOwnerResult;
-          }
         } else {
-          MemberRoles = outer1_19.NewGuild;
-          flag = true;
-        }
-        let tmp12 = MemberRoles;
-        let tmp13 = null;
-        if (!flag) {
-          let selfMember = outer1_10.getSelfMember(channels.id);
-          if (null == selfMember) {
-            selfMember = outer1_10.getCachedSelfMember(channels.id);
+          const unsafeMutableRoles = store4.getUnsafeMutableRoles(item10008.id);
+          roles = undefined;
+          if (selfMember != null) {
+            roles = selfMember.roles;
           }
-          const members = channels.members;
-          const found = members.find((user) => user.user.id === id);
-          let roles;
-          if (null != found) {
-            roles = found.roles;
-          }
-          if (null == roles) {
+          if (roles == null) {
             roles = [];
           }
-          ({ rolesAreDifferent, allRoleIds } = self.processMemberRoleIds(null != selfMember ? selfMember.roles : [], roles));
-          if (rolesAreDifferent) {
-            MemberRoles = outer1_19.MemberRoles;
+          const set = new Set(roles);
+          const result = self.detectRoleVisibilityChanges(item10008.id, unsafeMutableRoles, obj, set);
+          flag = userBecameGuildOwnerResult;
+          if (null != result) {
+            flag = true;
+            ChannelVisibleParentHidden = result;
           }
-          flag = rolesAreDifferent;
-          tmp12 = MemberRoles;
-          tmp13 = null;
-          if (null != allRoleIds) {
-            flag = rolesAreDifferent;
-            tmp12 = MemberRoles;
-            tmp13 = allRoleIds;
-          }
-          const processMemberRoleIdsResult = self.processMemberRoleIds(null != selfMember ? selfMember.roles : [], roles);
-          const tmp18 = null != selfMember ? selfMember.roles : [];
         }
-        let ChannelVisibleParentHidden = tmp12;
-        let flag2 = flag;
+        let result1 = !flag;
         if (!flag) {
-          flag2 = flag;
-          ChannelVisibleParentHidden = tmp12;
-          if (null != tmp13) {
-            const unsafeMutableRoles = outer1_11.getUnsafeMutableRoles(channels.id);
-            let obj = {};
-            if ("full_sync" === channels.roles.op) {
-              let writes = channels.roles.items;
-            } else {
-              writes = channels.roles.writes;
-            }
-            const tmp39Result = outer1_21(writes);
-            let iter = tmp39Result();
-            if (!iter.done) {
-              do {
-                let value = iter.value;
-                obj = { id: value.id };
-                let tmp22 = outer1_2;
-                let tmp23 = outer1_3;
-                let obj2 = outer1_2(outer1_3[12]);
-                obj.permissions = obj2.deserialize(value.permissions);
-                let tags = value.tags;
-                if (null == tags) {
-                  tags = {};
-                }
-                obj.tags = tags;
-                obj[value.id] = obj;
-                iter2 = tmp39Result();
-                iter = iter2;
-              } while (!iter2.done);
-            }
-            const result = self.detectRoleVisibilityChanges(channels.id, unsafeMutableRoles, obj, tmp13);
-            flag2 = flag;
-            ChannelVisibleParentHidden = tmp12;
-            if (null != result) {
-              flag2 = true;
-              ChannelVisibleParentHidden = result;
-            }
-            const tmp39 = outer1_21;
+          let channels = item10008.partial_updates.channels;
+          if (channels == null) {
+            channels = [];
+          }
+          let deleted_channel_ids = item10008.partial_updates.deleted_channel_ids;
+          if (deleted_channel_ids == null) {
+            deleted_channel_ids = [];
+          }
+          result1 = self.hasNewlyVisibleChannelWithHiddenParent(item10008.id, channels, deleted_channel_ids);
+        }
+        if (result1) {
+          ChannelVisibleParentHidden = closure_17.ChannelVisibleParentHidden;
+          flag = true;
+        }
+        if (flag) {
+          self.markGuildForResync(item10008.id, database, closure_18.BackgroundSync, ChannelVisibleParentHidden);
+        }
+      } else {
+        self.unmarkGuildForResync(item10008.id, database);
+      }
+    } else if ("full" === item10008.data_mode) {
+      self.unmarkGuildForResync(item10008.id, database);
+    }
+  }
+};
+prototype["handleGuild"] = function handleGuild(channels, database, BackgroundSync) {
+  let allRoleIds;
+  let rolesAreDifferent;
+  const self = this;
+  if ("full_sync" !== channels.channels.op) {
+    const id = store.getId();
+    const guild = store5.getGuild(channels.id);
+    if (null != guild) {
+      const properties = channels.properties;
+      let owner_id;
+      if (properties != null) {
+        owner_id = properties.owner_id;
+      }
+      const userBecameGuildOwnerResult = self.userBecameGuildOwner(guild.ownerId, owner_id, id);
+      let MemberRoles = closure_17.Unknown;
+      let flag = userBecameGuildOwnerResult;
+      if (userBecameGuildOwnerResult) {
+        MemberRoles = tmp2.OwnershipChange;
+        flag = userBecameGuildOwnerResult;
+      }
+    } else {
+      MemberRoles = tmp2.NewGuild;
+      flag = true;
+    }
+    let tmp10 = null;
+    let tmp11 = MemberRoles;
+    if (!flag) {
+      let obj = store3;
+      let selfMember = store3.getSelfMember(channels.id);
+      if (selfMember == null) {
+        selfMember = obj.getCachedSelfMember(channels.id);
+      }
+      const members = channels.members;
+      const found = members.find((user) => user.user.id === id);
+      let roles;
+      if (found != null) {
+        roles = found.roles;
+      }
+      if (roles == null) {
+        roles = [];
+      }
+      ({ rolesAreDifferent, allRoleIds } = self.processMemberRoleIds(null != selfMember ? selfMember.roles : [], roles));
+      if (rolesAreDifferent) {
+        MemberRoles = tmp2.MemberRoles;
+      }
+      tmp10 = null;
+      tmp11 = MemberRoles;
+      flag = rolesAreDifferent;
+      if (null != allRoleIds) {
+        tmp10 = allRoleIds;
+        tmp11 = MemberRoles;
+        flag = rolesAreDifferent;
+      }
+      const processMemberRoleIdsResult = self.processMemberRoleIds(null != selfMember ? selfMember.roles : [], roles);
+      const tmp14 = null != selfMember ? selfMember.roles : [];
+    }
+    let ChannelVisibleParentHidden = tmp11;
+    let flag2 = flag;
+    if (!flag) {
+      ChannelVisibleParentHidden = tmp11;
+      flag2 = flag;
+      if (null != tmp10) {
+        const unsafeMutableRoles = store4.getUnsafeMutableRoles(channels.id);
+        if ("full_sync" === channels.roles.op) {
+          let writes = channels.roles.items;
+        } else {
+          writes = channels.roles.writes;
+        }
+        obj = {};
+        writes[Symbol.iterator]();
+      }
+    }
+    while (true) {
+      let result = !flag2;
+      if (flag2) {
+        break;
+      } else {
+        result = self.hasNewlyVisibleChannelWithHiddenParent(channels.id, channels.channels.writes, channels.channels.deletes);
+        break;
+      }
+      if (result) {
+        let tmp19 = closure_17;
+        ChannelVisibleParentHidden = closure_17.ChannelVisibleParentHidden;
+        flag2 = true;
+      }
+      if (flag2) {
+        if (self.gatewayGuildHasObfuscatedChannels(channels)) {
+          let tmp21 = BackgroundSync;
+          let tmp22 = self;
+          let tmp23 = database;
+          let tmp24 = ChannelVisibleParentHidden;
+          let markGuildForResyncResult = self.markGuildForResync(channels.id, database, BackgroundSync, ChannelVisibleParentHidden);
+        } else {
+          let unmarkGuildForResyncResult = self.unmarkGuildForResync(channels.id, database);
+        }
+      }
+    }
+  } else {
+    self.unmarkGuildForResync(channels.id, database);
+  }
+};
+prototype["handleChannelSync"] = function handleChannelSync(integrity_check, database) {
+  if (!integrity_check.integrity_check) {
+    const self = this;
+    this.unmarkGuildForResync(tmp, database);
+  }
+};
+prototype["markGuildForResync"] = function markGuildForResync(id, database, BackgroundSync, ChannelVisibleParentHidden) {
+  obj = obj(514);
+  const v4Result = obj.v4();
+  obj = { guild_id: id, request_id: v4Result, trigger: BackgroundSync, change_type: ChannelVisibleParentHidden };
+  importDefault(698).track(constants.GUILD_CHANNEL_RESYNC_REQUESTED, obj);
+  const obj2 = importDefault(698);
+  const result = importDefault(1907).guildsRequiringChannelSyncTransaction(database);
+  obj = { id, requestId: v4Result };
+  result.put(obj);
+};
+prototype["unmarkGuildForResync"] = function unmarkGuildForResync(id, database) {
+  const result = importDefault(1907).guildsRequiringChannelSyncTransaction(database);
+  result.delete(id);
+};
+prototype["hasNewlyVisibleChannelWithHiddenParent"] = function hasNewlyVisibleChannelWithHiddenParent(id, channels, deleted_channel_ids) {
+  let items = deleted_channel_ids;
+  if (deleted_channel_ids === undefined) {
+    items = [];
+  }
+  if (0 === channels.length) {
+    return false;
+  } else {
+    const mutableBasicGuildChannelsForGuild = store2.getMutableBasicGuildChannelsForGuild(id);
+    const _Set = Set;
+    const set = new Set(items);
+    const _Map = Map;
+    const map = new Map();
+    const iter2 = channels[Symbol.iterator]();
+    const nextResult = iter2.next();
+    while (iter2 !== undefined) {
+      let tmp5 = closure_5;
+      if (nextResult instanceof closure_5) {
+        let tmp8 = nextResult;
+      } else {
+        let tmp6 = callback;
+        let tmp7 = nextResult;
+        tmp8 = callback(tmp4, id);
+      }
+      let result = map.set(tmp8.id, tmp8);
+      continue;
+    }
+    const values = map.values();
+    const iter = values[Symbol.iterator]();
+    const nextResult1 = iter.next();
+    while (iter !== undefined) {
+      let obj2 = nextResult1;
+      if (!nextResult1.isCategory()) {
+        let tmp15 = nextResult1;
+        let tmp16 = mutableBasicGuildChannelsForGuild[obj2.id];
+        let tmp17 = tmp16;
+        let canBasicChannelResult = null != tmp16;
+        if (canBasicChannelResult) {
+          let tmp19 = getUncachedChannelPermissions;
+          let tmp20 = constants2;
+          let tmp21 = tmp16;
+          canBasicChannelResult = getUncachedChannelPermissions.canBasicChannel(constants2.VIEW_CHANNEL, tmp17);
+        }
+        let tmp22 = nextResult1;
+        let tmp23 = !obj2.isObfuscated();
+        if (canBasicChannelResult) {
+          let tmp24 = tmp16;
+          if (null != tmp17) {
+            let tmp25 = tmp16;
+            let tmp26 = nextResult1;
           }
         }
-        if (tmp29) {
-          ChannelVisibleParentHidden = outer1_19.ChannelVisibleParentHidden;
-          flag2 = true;
-        }
-        if (flag2) {
-          if (self.gatewayGuildHasObfuscatedChannels(channels)) {
-            self.markGuildForResync(channels.id, arg1, arg2, ChannelVisibleParentHidden);
-          } else {
-            self.unmarkGuildForResync(channels.id, arg1);
-          }
-        }
-        tmp29 = !flag2 && self.hasNewlyVisibleChannelWithHiddenParent(channels.id, channels.channels.writes, channels.channels.deletes);
-      } else {
-        self.unmarkGuildForResync(channels.id, arg1);
-      }
-    }
-  };
-  items[10] = {
-    key: "handleChannelSync",
-    value(integrity_check) {
-      const self = this;
-      if (!integrity_check.integrity_check) {
-        self.unmarkGuildForResync(tmp, arg1);
-      }
-    }
-  };
-  items[11] = {
-    key: "markGuildForResync",
-    value(guild_id, arg1, trigger, change_type) {
-      let obj = GuildsRequiringChannelSync(outer1_3[16]);
-      const v4Result = obj.v4();
-      obj = { guild_id, request_id: v4Result, trigger, change_type };
-      outer1_1(outer1_3[17]).track(outer1_14.GUILD_CHANNEL_RESYNC_REQUESTED, obj);
-      const obj2 = outer1_1(outer1_3[17]);
-      const result = outer1_1(outer1_3[14]).guildsRequiringChannelSyncTransaction(arg1);
-      obj = { id: guild_id, requestId: v4Result };
-      result.put(obj);
-    }
-  };
-  items[12] = {
-    key: "unmarkGuildForResync",
-    value(arg0, arg1) {
-      const result = outer1_1(outer1_3[14]).guildsRequiringChannelSyncTransaction(arg1);
-      result.delete(arg0);
-    }
-  };
-  items[13] = {
-    key: "hasNewlyVisibleChannelWithHiddenParent",
-    value(arg0, arg1, items) {
-      let iter;
-      if (items === undefined) {
-        items = [];
-      }
-      if (0 === arg1.length) {
-        return false;
-      } else {
-        const mutableBasicGuildChannelsForGuild = outer1_9.getMutableBasicGuildChannelsForGuild(arg0);
-        const _Set = Set;
-        const set = new Set(items);
-        const _Map = Map;
-        const map = new Map();
-        const tmp43 = outer1_21(arg1);
-        let iter2 = tmp43();
-        if (!iter2.done) {
-          do {
-            let value = iter2.value;
-            let tmp = outer1_7;
-            let tmp2 = value;
-            if (!(value instanceof outer1_7)) {
-              let tmp3 = outer1_6;
-              tmp2 = outer1_6(value, arg0);
-            }
-            let result = map.set(tmp2.id, tmp2);
-            iter = tmp43();
-            iter2 = iter;
-          } while (!iter.done);
-        }
-        const tmp6 = outer1_21(map.values());
-        const iter3 = tmp6();
-        let iter4 = iter3;
-        if (!iter3.done) {
-          while (true) {
-            value = iter4.value;
-            let tmp10 = tmp8;
-            let tmp11 = tmp9;
-            if (!value.isCategory()) {
-              let tmp12 = mutableBasicGuildChannelsForGuild[value.id];
-              let canBasicChannelResult = null != tmp12;
-              if (canBasicChannelResult) {
-                let tmp14 = outer1_13;
-                let tmp15 = outer1_15;
-                canBasicChannelResult = outer1_13.canBasicChannel(outer1_15.VIEW_CHANNEL, tmp12);
-              }
-              let tmp16 = !value.isObfuscated();
-              if (canBasicChannelResult) {
-                if (null != tmp12) {
-                  let tmp17 = tmp12;
-                  let tmp18 = tmp16;
-                  tmp10 = tmp8;
-                  tmp11 = tmp9;
+        let tmp27 = tmp23;
+        if (tmp23) {
+          let tmp28 = nextResult1;
+          let parent_id = obj2.parent_id;
+          let tmp29 = parent_id;
+          if (null != parent_id) {
+            let tmp30 = parent_id;
+            if (!set.has(tmp29)) {
+              let tmp31 = parent_id;
+              if (null == map.get(tmp29)) {
+                let tmp32 = parent_id;
+                let tmp33 = mutableBasicGuildChannelsForGuild[tmp29];
+                if (null != tmp33) {
+                  let tmp35 = getUncachedChannelPermissions;
+                  let tmp36 = constants2;
+                  let tmp37 = tmp33;
                 }
-              }
-              let tmp19 = tmp12;
-              tmp10 = tmp8;
-              tmp11 = tmp9;
-              let tmp20 = tmp16;
-              if (tmp16) {
-                let parent_id = value.parent_id;
-                let tmp21 = tmp12;
-                let tmp22 = tmp16;
-                tmp10 = parent_id;
-                tmp11 = tmp9;
-                if (null != parent_id) {
-                  let tmp23 = tmp12;
-                  let tmp24 = tmp16;
-                  tmp10 = parent_id;
-                  tmp11 = tmp9;
-                  if (!set.has(parent_id)) {
-                    let tmp25 = tmp12;
-                    let tmp26 = tmp16;
-                    tmp10 = parent_id;
-                    tmp11 = tmp9;
-                    if (null == map.get(parent_id)) {
-                      let tmp27 = mutableBasicGuildChannelsForGuild[parent_id];
-                      if (null == tmp27) {
-                        break;
-                      } else {
-                        let tmp28 = outer1_13;
-                        let tmp29 = outer1_15;
-                        let tmp30 = tmp12;
-                        let tmp31 = tmp16;
-                        tmp10 = parent_id;
-                        tmp11 = tmp27;
-                        if (!outer1_13.canBasicChannel(outer1_15.VIEW_CHANNEL, tmp27)) {
-                          break;
-                        }
-                      }
-                    }
-                  }
-                }
+                let tmp38 = iter;
+                iter.return();
+                let flag = true;
+                return true;
               }
             }
-            let iter5 = tmp6();
-            tmp8 = tmp10;
-            tmp9 = tmp11;
-            iter4 = iter5;
           }
-          return true;
         }
-        return false;
       }
+      continue;
     }
-  };
-  items[14] = {
-    key: "gatewayGuildHasObfuscatedChannels",
-    value(channels) {
-      const self = this;
-      if ("full_sync" === channels.channels.op) {
-        let writes = channels.channels.items;
-        let items = [];
-      } else {
-        writes = channels.channels.writes;
-        items = channels.channels.deletes;
-      }
-      return self.guildHasStoredObfuscatedChannels(channels.id, items) || self.anyChannelRecordsObfuscated(writes);
+    return false;
+  }
+};
+prototype["gatewayGuildHasObfuscatedChannels"] = function gatewayGuildHasObfuscatedChannels(channels) {
+  if ("full_sync" === channels.channels.op) {
+    let writes = channels.channels.items;
+    let items = [];
+  } else {
+    writes = channels.channels.writes;
+    items = channels.channels.deletes;
+  }
+  const self = this;
+  return this.guildHasStoredObfuscatedChannels(channels.id, items) || self.anyChannelRecordsObfuscated(writes);
+};
+prototype["backgroundSyncGuildHasObfuscatedChannels"] = function backgroundSyncGuildHasObfuscatedChannels(data_mode) {
+  if ("partial" === data_mode.data_mode) {
+    let channels = data_mode.partial_updates.channels;
+    if (channels == null) {
+      channels = [];
     }
-  };
-  items[15] = {
-    key: "backgroundSyncGuildHasObfuscatedChannels",
-    value(data_mode) {
-      const self = this;
-      if ("partial" === data_mode.data_mode) {
-        let channels = data_mode.partial_updates.channels;
-        if (null == channels) {
-          channels = [];
-        }
-        let deleted_channel_ids = data_mode.partial_updates.deleted_channel_ids;
-        if (null == deleted_channel_ids) {
-          deleted_channel_ids = [];
-        }
-        let items = deleted_channel_ids;
-      } else {
-        channels = data_mode.channels;
-        items = [];
-      }
-      return self.guildHasStoredObfuscatedChannels(data_mode.id, items) || self.anyChannelsObfuscated(channels);
+    let deleted_channel_ids = data_mode.partial_updates.deleted_channel_ids;
+    if (deleted_channel_ids == null) {
+      deleted_channel_ids = [];
     }
-  };
-  items[16] = {
-    key: "guildHasStoredObfuscatedChannels",
-    value(arg0) {
-      let items = arg1;
-      const self = this;
-      if (arg1 === undefined) {
-        items = [];
-      }
-      const values = Object.values(outer1_9.getMutableGuildChannelsForGuild(arg0));
-      return self.anyChannelRecordsObfuscated(values.filter((id) => -1 === items.indexOf(id.id)));
+    let items = deleted_channel_ids;
+  } else {
+    channels = data_mode.channels;
+    items = [];
+  }
+  const self = this;
+  return this.guildHasStoredObfuscatedChannels(data_mode.id, items) || self.anyChannelsObfuscated(channels);
+};
+prototype["guildHasStoredObfuscatedChannels"] = function guildHasStoredObfuscatedChannels(id, items) {
+  if (items === undefined) {
+    items = [];
+  }
+  const values = Object.values(store2.getMutableGuildChannelsForGuild(id));
+  return this.anyChannelRecordsObfuscated(values.filter((id) => -1 === items.indexOf(id.id)));
+};
+prototype["anyChannelRecordsObfuscated"] = function anyChannelRecordsObfuscated(values) {
+  return null != values.find((isObfuscated) => isObfuscated.isObfuscated());
+};
+prototype["anyChannelsObfuscated"] = function anyChannelsObfuscated(channels) {
+  return null != channels.find((flags) => {
+    let num = flags.flags;
+    if (num == null) {
+      num = 0;
     }
-  };
-  items[17] = {
-    key: "anyChannelRecordsObfuscated",
-    value(arr) {
-      return null != arr.find((isObfuscated) => isObfuscated.isObfuscated());
-    }
-  };
-  items[18] = {
-    key: "anyChannelsObfuscated",
-    value(arr) {
-      return null != arr.find((flags) => {
-        flags = flags.flags;
-        let num = 0;
-        if (null != flags) {
-          num = flags;
-        }
-        return GuildsRequiringChannelSync(outer2_3[18]).hasFlag(num, outer2_16.OBFUSCATED);
-      });
-    }
-  };
-  items[19] = {
-    key: "resetInMemoryState",
-    value() {
+    return callback(table[16]).hasFlag(num, constants.OBFUSCATED);
+  });
+};
+prototype["resetInMemoryState"] = function resetInMemoryState() {
 
-    }
-  };
-  return callback(GuildsRequiringChannelSync, items);
-})();
-tmp6 = new tmp6();
-let result = require("_callSuper").fileFinishedImporting("modules/app_database/modules/GuildsRequiringChannelSync.tsx");
+};
+obj = Object.create(GuildsRequiringChannelSync.prototype);
+obj.actions = {
+  BACKGROUND_SYNC(arg0, arg1) {
+    return obj.handleBackgroundSync(arg0, arg1);
+  },
+  CONNECTION_OPEN(arg0, arg1) {
+    return obj.handleConnectionOpen(arg0, arg1);
+  },
+  GUILD_CREATE(arg0, arg1) {
+    return obj.handleGuildCreate(arg0, arg1);
+  },
+  CHANNEL_SYNC(arg0, arg1) {
+    return obj.handleChannelSync(arg0, arg1);
+  },
+  UNMARK_RESYNC_GUILDS(guildIds, database) {
+    return obj.handleUnmarkResyncGuilds(guildIds, database);
+  }
+};
+let tmp4 = new require("trackCommunicationDisabled")("GuildsRequiringChannelSync");
+let result = require("ensureGuildLoaded").fileFinishedImporting("modules/app_database/modules/GuildsRequiringChannelSync.tsx");
 
-export default tmp6;
+export default obj;

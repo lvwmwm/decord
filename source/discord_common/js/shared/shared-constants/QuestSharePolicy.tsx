@@ -1,9 +1,9 @@
-// Module ID: 5990
-// Function ID: 53150
+// Module ID: 6009
+// Function ID: 6010
 // Name: QuestSharePolicy
 // Dependencies: [2]
 
-// Module 5990 (QuestSharePolicy)
+// Module 6009 (QuestSharePolicy)
 const result = require("set").fileFinishedImporting("../discord_common/js/shared/shared-constants/QuestSharePolicy.tsx");
 
 export const QuestSharePolicy = { SHAREABLE_EVERYWHERE: "shareable_everywhere", NOT_SHAREABLE: "not_shareable" };

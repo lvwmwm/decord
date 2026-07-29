@@ -1,11 +1,11 @@
-// Module ID: 14852
-// Function ID: 113140
+// Module ID: 14878
+// Function ID: 14879
 // Name: useFocusRefOnNavigation
-// Dependencies: [31, 1457, 5617, 2]
+// Dependencies: [19, 1481, 5635, 2]
 // Exports: default
 
-// Module 14852 (useFocusRefOnNavigation)
-import result from "result";
+// Module 14878 (useFocusRefOnNavigation)
+import noop from "noop";
 
 const require = arg1;
 const result = require("runAfterInteractions").fileFinishedImporting("design/components/Navigator/native/useFocusRefOnNavigation.tsx");
@@ -21,13 +21,13 @@ export default function useFocusRefOnNavigation(inputRef) {
   const items = [flag, inputRef, isFocused];
   const effect = isFocused.useEffect(() => {
     let closure_0 = inputRef(flag[2]).runAfterInteractions(() => {
-      let tmp = outer1_1;
-      if (outer1_1) {
-        tmp = outer1_2;
+      let tmp = closure_1;
+      if (closure_1) {
+        tmp = noop;
       }
       if (tmp) {
         const current = ref.current;
-        if (null != current) {
+        if (current != null) {
           current.focus();
         }
       }

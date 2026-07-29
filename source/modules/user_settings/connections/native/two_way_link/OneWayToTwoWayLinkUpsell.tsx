@@ -1,44 +1,44 @@
-// Module ID: 13976
-// Function ID: 106819
+// Module ID: 13997
+// Function ID: 13998
 // Name: OneWayToTwoWayNewTag
-// Dependencies: [31, 27, 653, 1345, 33, 4165, 689, 5087, 1273, 9642, 4161, 4578, 1212, 2]
+// Dependencies: [19, 17, 676, 1369, 21, 4189, 712, 5109, 1297, 9664, 4185, 4600, 1236, 2]
 // Exports: OneWayToTwoWayLinkUpsell
 
-// Module 13976 (OneWayToTwoWayNewTag)
-import result from "result";
+// Module 13997 (OneWayToTwoWayNewTag)
+import noop from "noop";
 import { View } from "get ActivityIndicator";
 import { Fonts } from "ME";
 import { ContentDismissActionType } from "ContentDismissActionType";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 import importDefaultResult from "createTextStyle";
 import importDefaultResult1 from "createTextStyle";
 
 let closure_6;
-let closure_7;
+let error;
 const require = arg1;
 function OneWayToTwoWayNewTag(markAsDismissed) {
   markAsDismissed = markAsDismissed.markAsDismissed;
   const items = [markAsDismissed];
   const effect = React.useEffect(() => markAsDismissed(outer1_5.UNKNOWN), items);
-  const tmp = _createForOfIteratorHelperLoose();
-  return callback(markAsDismissed(1273).NewTag, { containerStyle: _createForOfIteratorHelperLoose().newContainer, variant: "text-xs/bold" });
+  const tmp = createCacheKey();
+  return callback(markAsDismissed(1297).NewTag, { containerStyle: createCacheKey().newContainer, variant: "text-xs/bold" });
 }
-({ jsx: closure_6, jsxs: closure_7 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_MOD_NORMAL, margin: 16, padding: 12, borderRadius: require("_createForOfIteratorHelperLoose").radii.sm };
-_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.header = { flexDirection: "row", marginBottom: 4, alignItems: "center" };
-_createForOfIteratorHelperLoose.titleContainer = { flexGrow: 1, flexShrink: 1 };
-const merged = Object.assign(require("createTextStyle")(Fonts.PRIMARY_SEMIBOLD, require("_createForOfIteratorHelperLoose").colors.TEXT_DEFAULT, 16));
-_createForOfIteratorHelperLoose.title = {};
+({ jsx: closure_6, jsxs: error } = jsxProd);
+createCacheKey = { container: null, header: null, titleContainer: null, title: null, body: null, newContainer: null, reconnectButton: null };
+createCacheKey = { backgroundColor: require("Themes").colors.BACKGROUND_MOD_NORMAL, margin: 16, padding: 12, borderRadius: require("Themes").radii.sm };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { flexDirection: "row", marginBottom: 4, alignItems: "center" };
+createCacheKey[2] = { flexGrow: 1, flexShrink: 1 };
+const merged = Object.assign(require("createTextStyle")(Fonts.PRIMARY_SEMIBOLD, require("Themes").colors.TEXT_DEFAULT, 16));
+createCacheKey[3] = {};
 const obj1 = {};
 const obj2 = {};
-const merged1 = Object.assign(require("createTextStyle")(Fonts.PRIMARY_MEDIUM, require("_createForOfIteratorHelperLoose").colors.TEXT_DEFAULT, 14));
-_createForOfIteratorHelperLoose.body = obj2;
-_createForOfIteratorHelperLoose.newContainer = { paddingHorizontal: 6, width: "auto", alignSelf: "flex-start", marginBottom: 4 };
-_createForOfIteratorHelperLoose.reconnectButton = { marginTop: 8 };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+const merged1 = Object.assign(require("createTextStyle")(Fonts.PRIMARY_MEDIUM, require("Themes").colors.TEXT_DEFAULT, 14));
+createCacheKey[4] = obj2;
+createCacheKey[5] = { paddingHorizontal: 6, width: "auto", alignSelf: "flex-start", marginBottom: 4 };
+createCacheKey[6] = { marginTop: 8 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
 const result = require("ME").fileFinishedImporting("modules/user_settings/connections/native/two_way_link/OneWayToTwoWayLinkUpsell.tsx");
 
 export const OneWayToTwoWayLinkUpsell = function OneWayToTwoWayLinkUpsell(newIndicatorDismissibleContent) {
@@ -48,36 +48,37 @@ export const OneWayToTwoWayLinkUpsell = function OneWayToTwoWayLinkUpsell(newInd
   let title;
   newIndicatorDismissibleContent = newIndicatorDismissibleContent.newIndicatorDismissibleContent;
   ({ title, body, img, onPress } = newIndicatorDismissibleContent);
-  const tmp = _createForOfIteratorHelperLoose();
-  let obj = { style: tmp.container };
-  obj = { style: tmp.header };
-  obj = { style: tmp.titleContainer };
+  const tmp = createCacheKey();
+  let obj = { style: tmp.container, children: null };
+  obj = { style: tmp.header, children: null };
+  obj = { style: tmp.titleContainer, children: null };
   const items = [newIndicatorDismissibleContent];
   const items1 = [
-    callback(importDefault(9642), {
+    callback(importDefault(9664), {
       contentTypes: items,
       children(visibleContent) {
         let tmp2 = null;
         if (visibleContent.visibleContent === newIndicatorDismissibleContent) {
-          const obj = { markAsDismissed: tmp };
+          const obj = { markAsDismissed: null };
+          obj[0] = tmp;
           tmp2 = outer1_6(outer1_9, obj);
         }
         return tmp2;
       }
     }),
-    callback(newIndicatorDismissibleContent(4161).Text, { style: tmp.title, variant: "text-md/semibold", children: title })
+    callback(newIndicatorDismissibleContent(4185).Text, { style: tmp.title, variant: "text-md/semibold", children: title })
   ];
-  obj.children = items1;
+  obj[1] = items1;
   const items2 = [callback2(View, obj), img];
-  obj.children = items2;
-  const items3 = [callback2(View, obj), callback(newIndicatorDismissibleContent(4161).Text, { style: tmp.body, variant: "text-sm/medium", children: body }), ];
-  const obj4 = { style: tmp.reconnectButton };
-  const obj5 = {};
-  const intl = newIndicatorDismissibleContent(1212).intl;
-  obj5.text = intl.string(newIndicatorDismissibleContent(1212).t.vD60Pv);
-  obj5.onPress = onPress;
-  obj4.children = callback(newIndicatorDismissibleContent(4578).Button, obj5);
+  obj[1] = items2;
+  const items3 = [callback2(View, obj), callback(newIndicatorDismissibleContent(4185).Text, { style: tmp.body, variant: "text-sm/medium", children: body }), ];
+  const obj4 = { style: tmp.reconnectButton, children: null };
+  const obj5 = { text: null, onPress: null };
+  const intl = newIndicatorDismissibleContent(1236).intl;
+  obj5[0] = intl.string(newIndicatorDismissibleContent(1236).t.vD60Pv);
+  obj5[1] = onPress;
+  obj4[1] = callback(newIndicatorDismissibleContent(4600).Button, obj5);
   items3[2] = callback(View, obj4);
-  obj.children = items3;
+  obj[1] = items3;
   return callback2(View, obj);
 };

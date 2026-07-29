@@ -1,58 +1,56 @@
-// Module ID: 15920
-// Function ID: 122735
+// Module ID: 15955
+// Function ID: 15956
 // Name: VoicePanelHeaderChatButton
-// Dependencies: [31, 653, 33, 4165, 689, 1207, 15921, 5550, 15826, 4664, 1212, 2]
+// Dependencies: [19, 676, 21, 4189, 712, 1231, 15956, 5568, 15861, 4686, 1236, 2]
 // Exports: default
 
-// Module 15920 (VoicePanelHeaderChatButton)
-import result from "result";
+// Module 15955 (VoicePanelHeaderChatButton)
+import noop from "noop";
 import { ComponentActions } from "ME";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_5;
+let c5;
 let closure_6;
 const require = arg1;
-({ jsx: closure_5, jsxs: closure_6 } = jsxProd);
-_createForOfIteratorHelperLoose = { badgeContainer: { position: "absolute", top: -2, right: -2 } };
-_createForOfIteratorHelperLoose = { width: 8, height: 8, borderRadius: require("_createForOfIteratorHelperLoose").radii.round };
-_createForOfIteratorHelperLoose.badge = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.mentionBadge = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_FEEDBACK_NOTIFICATION };
-let obj1 = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_FEEDBACK_NOTIFICATION };
-_createForOfIteratorHelperLoose.unreadBadge = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.CONTROL_BRAND_FOREGROUND };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-let obj2 = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.CONTROL_BRAND_FOREGROUND };
+({ jsx: c5, jsxs: closure_6 } = jsxProd);
+createCacheKey = { badgeContainer: { position: "absolute", top: -2, right: -2 }, badge: null, notificationBadge: null };
+createCacheKey = { width: 8, height: 8, borderRadius: require("Themes").radii.round };
+createCacheKey[1] = createCacheKey;
+createCacheKey[2] = { backgroundColor: require("Themes").colors.BACKGROUND_FEEDBACK_NOTIFICATION };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let obj1 = { backgroundColor: require("Themes").colors.BACKGROUND_FEEDBACK_NOTIFICATION };
 const result = require("jsxProd").fileFinishedImporting("modules/voice_panel/native/header/VoicePanelHeaderChatButton.tsx");
 
 export default function VoicePanelHeaderChatButton(channelId) {
-  const tmp = _createForOfIteratorHelperLoose();
+  const tmp = createCacheKey();
   const callback = React.useCallback(() => {
-    const ComponentDispatch = outer1_0(outer1_2[5]).ComponentDispatch;
-    ComponentDispatch.dispatch(outer1_4.VOICE_PANEL_OPEN_CHAT_TAB);
+    const ComponentDispatch = callback(table[5]).ComponentDispatch;
+    ComponentDispatch.dispatch(constants.VOICE_PANEL_OPEN_CHAT_TAB);
   }, []);
-  const tmp3 = importDefault(15921)(channelId.channelId);
-  let obj = {};
-  obj = {};
-  const tmp4 = "mention" === tmp3 ? tmp.mentionBadge : tmp.unreadBadge;
-  const tmp5 = closure_6;
-  const tmp6 = importDefault(5550);
-  obj = { color: importDefault(689).colors.WHITE, size: "sm" };
-  obj.icon = callback(require(4664) /* ChatIcon */.ChatIcon, obj);
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj.accessibilityLabel = intl.string(require(1212) /* getSystemLocale */.t["5KxXrK"]);
-  obj.onPress = callback;
-  const items = [callback(importDefault(15826), obj), ];
-  let tmp8 = null != tmp3;
-  if (tmp8) {
-    const obj1 = { style: tmp.badgeContainer };
-    const obj2 = {};
-    const items1 = [tmp.badge, tmp4];
-    obj2.style = items1;
-    obj1.children = callback(importDefault(5550), obj2);
-    tmp8 = callback(importDefault(5550), obj1);
-    const tmp12 = importDefault(5550);
+  const tmp5 = importDefault(15956)(channelId.channelId);
+  const tmp6 = closure_6;
+  let obj = { icon: null, accessibilityLabel: null, onPress: null };
+  const tmp7 = importDefault(5568);
+  obj = { color: null, size: "sm" };
+  obj[0] = importDefault(712).colors.WHITE;
+  obj[0] = callback(require(4686) /* ChatIcon */.ChatIcon, obj);
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj[1] = intl.string(require(1236) /* getSystemLocale */.t["5KxXrK"]);
+  obj[2] = callback;
+  const children = [callback(importDefault(15861), obj), ];
+  let tmp8Result = null != tmp5;
+  if (tmp8Result) {
+    obj = { style: null, children: null };
+    obj[0] = tmp.badgeContainer;
+    const obj1 = { style: null };
+    const items1 = [, ];
+    ({ badge: arr2[0], notificationBadge: arr2[1] } = tmp);
+    obj1[0] = items1;
+    obj[1] = tmp8(tmp3(5568), obj1);
+    tmp8Result = tmp8(tmp3(5568), obj);
+    const tmp3Result = tmp3(5568);
   }
-  items[1] = tmp8;
-  obj.children = items;
-  return tmp5(tmp6, obj);
+  children[1] = tmp8Result;
+  return tmp6(tmp7, { children });
 };

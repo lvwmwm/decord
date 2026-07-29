@@ -1,12 +1,13 @@
-// Module ID: 10219
-// Function ID: 78794
+// Module ID: 10240
+// Function ID: 10241
 // Name: context
-// Dependencies: [31, 2]
+// Dependencies: [19, 2]
 // Exports: useVoiceChatNavigationContext
 
-// Module 10219 (context)
-import importAllResult from "result";
+// Module 10240 (context)
+import importAllResult from "noop";
 
+let c0 = importAllResult;
 const context = importAllResult.createContext(null);
 const result = require("set").fileFinishedImporting("modules/voice_chat/native/VoiceChatModalContext.tsx");
 

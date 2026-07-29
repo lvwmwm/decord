@@ -1,485 +1,387 @@
-// Module ID: 12747
-// Function ID: 98877
-// Name: _createForOfIteratorHelperLoose
-// Dependencies: [57, 6, 7, 15, 17, 18, 1348, 4384, 3, 686, 12748, 4842, 566, 2]
+// Module ID: 12769
+// Function ID: 12770
+// Name: initialize
+// Dependencies: [32, 1372, 4407, 3, 589, 709, 12770, 4864, 2]
 
-// Module 12747 (_createForOfIteratorHelperLoose)
+// Module 12769 (initialize)
 import _slicedToArray from "_slicedToArray";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_5 from "_isNativeReflectConstruct";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
-import closure_9 from "_isNativeReflectConstruct";
-import closure_10 from "_isNativeReflectConstruct";
-import importDefaultResult from "_possibleConstructorReturn";
+import ensureGuildLoaded from "ensureGuildLoaded";
+import reinjectEphemerals from "reinjectEphemerals";
+import { Store } from "initialize";
 
-const require = arg1;
-function _createForOfIteratorHelperLoose(iterable) {
-  let closure_0 = iterable;
-  iterable = "undefined" !== typeof Symbol;
-  if (iterable) {
-    const _Symbol = Symbol;
-    iterable = iterable[Symbol.iterator];
-  }
-  if (!iterable) {
-    iterable = iterable[Symbol.iterator];
-  }
-  if (iterable) {
-    const iter = iterable.call(iterable);
-    const next = iter.next;
-    return next.bind(iter);
-  } else {
-    const _Array = Array;
-    let tmp = iterable;
-    if (!Array.isArray(iterable)) {
-      let tmp2;
-      if (iterable) {
-        if ("string" === typeof iterable) {
-          tmp2 = _arrayLikeToArray(iterable, undefined);
-        } else {
-          const toString = {}.toString;
-          const substr = toString.call(iterable).slice(8, -1);
-          let name = substr;
-          if (tmp3) {
-            name = iterable.constructor.name;
+let object = arg1;
+let c6 = -Infinity;
+const error = new require("timestamp")("MessagePreviewStore");
+class MessagePreviewStore extends Store {
+  constructor() {
+    c0 = undefined;
+    obj = {
+      CONNECTION_OPEN(arg0) {
+            return obj.handleConnectionOpen(arg0);
+          },
+      GUILD_CREATE(arg0) {
+            return obj.handleGuildCreate(arg0);
+          },
+      GUILD_DELETE(arg0) {
+            return obj.handleGuildDelete(arg0);
+          },
+      LOAD_MESSAGES_SUCCESS(arg0) {
+            return obj.handleLoadMessagesSuccess(arg0);
+          },
+      LOCAL_MESSAGES_LOADED(arg0) {
+            return obj.handleLocalMessagesLoaded(arg0);
+          },
+      LOGOUT(arg0) {
+            return obj.handleLogout(arg0);
+          },
+      MESSAGE_CREATE(arg0) {
+            return obj.handleMessageCreate(arg0);
+          },
+      MESSAGE_DELETE(arg0) {
+            return obj.handleMessageDelete(arg0);
+          },
+      MESSAGE_PREVIEWS_LOADED(arg0) {
+            return obj.handleMessagePreviewsLoaded(arg0);
+          },
+      MESSAGE_PREVIEWS_LOCALLY_LOADED(guildId) {
+            return obj.handleMessagePreviewsLocallyLoaded(guildId);
+          },
+      MESSAGE_UPDATE(arg0) {
+            return obj.handleMessageUpdate(arg0);
+          },
+      THREAD_LIST_SYNC(arg0) {
+            return obj.handleThreadListSync(arg0);
           }
-          if ("Map" !== name) {
-            if ("Set" !== name) {
-              if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(iterable, undefined);
-              } else {
-                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
-              }
-            }
-            tmp2 = arr;
-          }
-          const _Array2 = Array;
-          arr = Array.from(iterable);
-          const callResult = toString.call(iterable);
-          tmp3 = "Object" === substr && iterable.constructor;
-        }
-      }
-      tmp = tmp2;
-      if (!tmp2) {
-        const _TypeError = TypeError;
-        const typeError = new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
-        throw typeError;
-      }
-    }
-    if (tmp) {
-      closure_0 = tmp;
-    }
-    let c1 = 0;
-    return () => {
-      if (closure_1 >= length.length) {
-        let obj = { done: true };
-      } else {
-        obj = { done: false };
-        closure_1 = tmp3 + 1;
-        obj.value = length[+closure_1];
-      }
-      return obj;
     };
+    tmp2 = new tmp2(require("dispatcher"), obj, new.target, tmp2, tmp, new.target, undefined);
+    // ThrowIfThisInitialized (0x7c)
+    c0 = tmp2;
+    map = new Map();
+    tmp2.guilds = map;
+    tmp2.generation = 0;
+    return tmp2;
   }
 }
-function _arrayLikeToArray(arg0, arg1) {
-  let length;
-  if (tmp) {
-    length = arg0.length;
+const prototype = MessagePreviewStore.prototype;
+prototype["initialize"] = function initialize() {
+  this.waitFor(ensureGuildLoaded, reinjectEphemerals);
+};
+prototype["isLatest"] = function isLatest(arg0, arg1) {
+  let tmp = arg0;
+  const guilds = this.guilds;
+  if (arg0 == null) {
+    tmp = null;
   }
-  const ArrayResult = Array(length);
-  for (let num = 0; num < length; num = num + 1) {
-    ArrayResult[num] = arg0[num];
+  const value = guilds.get(tmp);
+  let flag;
+  if (value != null) {
+    flag = value.isLatest(arg1, this.generation);
   }
-  return ArrayResult;
-}
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
+  if (flag == null) {
+    flag = false;
   }
-  const result = _isNativeReflectConstruct();
-}
-importDefaultResult = new importDefaultResult("MessagePreviewStore");
-let tmp4 = ((Store) => {
-  class MessagePreviewStore {
-    constructor() {
-      self = this;
-      tmp = outer1_4(this, apply);
-      items = [, ];
-      items[0] = outer1_1(outer1_2[9]);
-      items[1] = {
-        CONNECTION_OPEN(arg0) {
-              return tmp2Result.handleConnectionOpen(arg0);
-            },
-        GUILD_CREATE(arg0) {
-              return tmp2Result.handleGuildCreate(arg0);
-            },
-        GUILD_DELETE(arg0) {
-              return tmp2Result.handleGuildDelete(arg0);
-            },
-        LOAD_MESSAGES_SUCCESS(arg0) {
-              return tmp2Result.handleLoadMessagesSuccess(arg0);
-            },
-        LOCAL_MESSAGES_LOADED(arg0) {
-              return tmp2Result.handleLocalMessagesLoaded(arg0);
-            },
-        LOGOUT(arg0) {
-              return tmp2Result.handleLogout(arg0);
-            },
-        MESSAGE_CREATE(arg0) {
-              return tmp2Result.handleMessageCreate(arg0);
-            },
-        MESSAGE_DELETE(arg0) {
-              return tmp2Result.handleMessageDelete(arg0);
-            },
-        MESSAGE_PREVIEWS_LOADED(arg0) {
-              return tmp2Result.handleMessagePreviewsLoaded(arg0);
-            },
-        MESSAGE_PREVIEWS_LOCALLY_LOADED(arg0) {
-              return tmp2Result.handleMessagePreviewsLocallyLoaded(arg0);
-            },
-        MESSAGE_UPDATE(arg0) {
-              return tmp2Result.handleMessageUpdate(arg0);
-            },
-        THREAD_LIST_SYNC(arg0) {
-              return tmp2Result.handleThreadListSync(arg0);
-            }
-      };
-      obj = outer1_7(apply);
-      tmp2 = outer1_6;
-      if (outer1_14()) {
-        tmp4 = globalThis;
-        _Reflect = Reflect;
-        tmp5 = outer1_7;
-        constructResult = Reflect.construct(obj, items, outer1_7(self).constructor);
-      } else {
-        constructResult = obj.apply(self, items);
+  return flag;
+};
+prototype["isLocalFetchNeeded"] = function isLocalFetchNeeded(outer1_0) {
+  const guilds = this.guilds;
+  const value = guilds.get(outer1_0);
+  let flag;
+  if (value != null) {
+    flag = value.localNeeded;
+  }
+  if (flag == null) {
+    flag = true;
+  }
+  return flag;
+};
+prototype["message"] = function message(arg0, arg1) {
+  const guilds = this.guilds;
+  const value = guilds.get(arg0);
+  let messageRecordResult;
+  if (value != null) {
+    messageRecordResult = value.messageRecord(arg1);
+  }
+  if (messageRecordResult == null) {
+    messageRecordResult = null;
+  }
+  return messageRecordResult;
+};
+prototype["data"] = function data(guildId, items, arg2) {
+  const self = this;
+  const guilds = this.guilds;
+  if (!guilds.has(guildId)) {
+    const guilds2 = self.guilds;
+    const previewData = new object(12770).PreviewData();
+    const result = guilds2.set(guildId, previewData);
+  }
+  const guilds3 = self.guilds;
+  return guilds3.get(guildId);
+};
+prototype["handleOneGuildCreate"] = function handleOneGuildCreate(id) {
+  const self = this;
+  const dataResult = this.data(id.id);
+  let lastMessages = id.lastMessages;
+  if (lastMessages == null) {
+    lastMessages = [];
+  }
+  dataResult.putMany(lastMessages, self.generation);
+  let threadMessages = id.threadMessages;
+  if (threadMessages == null) {
+    threadMessages = [];
+  }
+  dataResult.putMany(threadMessages, self.generation);
+  if (null != id.lastMessages) {
+    dataResult.localNeeded = false;
+  }
+};
+prototype["handleConnectionOpen"] = function handleConnectionOpen(arg0) {
+  const self = this;
+  this.generation = this.generation + 1;
+  for (const item10010 of tmp) {
+    let handleOneGuildCreateResult = self.handleOneGuildCreate(item10010);
+    continue;
+  }
+};
+prototype["handleGuildCreate"] = function handleGuildCreate(guild) {
+  this.handleOneGuildCreate(guild.guild);
+};
+prototype["handleGuildDelete"] = function handleGuildDelete(guild) {
+  const guilds = this.guilds;
+  guilds.delete(guild.guild.id);
+};
+prototype["handleMessageCreate"] = function handleMessageCreate(optimistic) {
+  if (!optimistic.optimistic) {
+    if (!optimistic.isPushNotification) {
+      const self = this;
+      let guildId = optimistic.guildId;
+      if (guildId == null) {
+        guildId = null;
       }
-      tmp2Result = tmp2(self, constructResult);
-      apply = tmp2Result;
-      map = new Map();
-      tmp2Result.guilds = map;
-      tmp2Result.generation = 0;
-      return tmp2Result;
+      this.data(guildId).put(optimistic.message.channel_id, optimistic.message, self.generation);
     }
   }
-  callback2(MessagePreviewStore, Store);
-  let obj = {
-    key: "initialize",
-    value() {
-      this.waitFor(outer1_9, outer1_10);
+  return false;
+};
+prototype["handleMessageDelete"] = function handleMessageDelete(guildId) {
+  guildId = guildId.guildId;
+  if (guildId == null) {
+    guildId = null;
+  }
+  const self = this;
+  const dataResult = this.data(guildId);
+  let messageIdResult;
+  if (dataResult != null) {
+    messageIdResult = dataResult.messageId(guildId.channelId);
+  }
+  if (messageIdResult === guildId.id) {
+    messages = messages.getMessages(guildId.channelId);
+    let lastResult = null;
+    if (!messages.hasMoreAfter) {
+      lastResult = messages.last();
     }
-  };
-  let items = [obj, , , , , , , , , , , , , , , , , ];
-  obj = {
-    key: "isLatest",
-    value(arg0, arg1) {
-      const guilds = this.guilds;
-      let tmp = null;
-      if (null != arg0) {
-        tmp = arg0;
-      }
-      const value = guilds.get(tmp);
-      let isLatestResult;
-      if (null != value) {
-        isLatestResult = value.isLatest(arg1, this.generation);
-      }
-      return null != isLatestResult && isLatestResult;
+    if (null != lastResult) {
+      self.data(guildId).put(guildId.channelId, lastResult, self.generation);
+      const dataResult1 = self.data(guildId);
+    } else {
+      self.data(guildId).delete(guildId.channelId);
+      const dataResult2 = self.data(guildId);
     }
-  };
-  items[1] = obj;
-  obj = {
-    key: "isLocalFetchNeeded",
-    value(arg0) {
-      const guilds = this.guilds;
-      const value = guilds.get(arg0);
-      let localNeeded;
-      if (null != value) {
-        localNeeded = value.localNeeded;
-      }
-      return null == localNeeded || localNeeded;
-    }
-  };
-  items[2] = obj;
-  items[3] = {
-    key: "message",
-    value(arg0, arg1) {
-      const guilds = this.guilds;
-      const value = guilds.get(arg0);
-      let messageRecordResult;
-      if (null != value) {
-        messageRecordResult = value.messageRecord(arg1);
-      }
-      let tmp3 = null;
-      if (null != messageRecordResult) {
-        tmp3 = messageRecordResult;
-      }
-      return tmp3;
-    }
-  };
-  items[4] = {
-    key: "data",
-    value(arg0) {
+  }
+};
+prototype["handleMessageUpdate"] = function handleMessageUpdate(guildId) {
+  guildId = guildId.guildId;
+  if (guildId == null) {
+    guildId = null;
+  }
+  const channel_id = guildId.message.channel_id;
+  const id = guildId.message.id;
+  if (null != channel_id) {
+    if (null != id) {
       const self = this;
-      const guilds = this.guilds;
-      if (!guilds.has(arg0)) {
-        const guilds2 = self.guilds;
-        const PreviewData = MessagePreviewStore(outer1_2[10]).PreviewData;
-        const prototype = PreviewData.prototype;
-        const previewData = new PreviewData();
-        const result = guilds2.set(arg0, previewData);
-      }
-      const guilds3 = self.guilds;
-      return guilds3.get(arg0);
-    }
-  };
-  items[5] = {
-    key: "handleOneGuildCreate",
-    value(id) {
-      const self = this;
-      const dataResult = this.data(id.id);
-      let lastMessages = id.lastMessages;
-      if (null == lastMessages) {
-        lastMessages = [];
-      }
-      dataResult.putMany(lastMessages, self.generation);
-      let threadMessages = id.threadMessages;
-      if (null == threadMessages) {
-        threadMessages = [];
-      }
-      dataResult.putMany(threadMessages, self.generation);
-      if (null != id.lastMessages) {
-        dataResult.localNeeded = false;
-      }
-    }
-  };
-  items[6] = {
-    key: "handleConnectionOpen",
-    value(guilds) {
-      let done;
-      const self = this;
-      this.generation = this.generation + 1;
-      const tmp = outer1_12(guilds.guilds);
-      let iter = tmp();
-      if (!iter.done) {
-        do {
-          let handleOneGuildCreateResult = self.handleOneGuildCreate(iter.value);
-          let iter2 = tmp();
-          iter = iter2;
-          done = iter2.done;
-        } while (!done);
-      }
-    }
-  };
-  items[7] = {
-    key: "handleGuildCreate",
-    value(guild) {
-      this.handleOneGuildCreate(guild.guild);
-    }
-  };
-  items[8] = {
-    key: "handleGuildDelete",
-    value(guild) {
-      const guilds = this.guilds;
-      guilds.delete(guild.guild.id);
-    }
-  };
-  items[9] = {
-    key: "handleMessageCreate",
-    value(optimistic) {
-      const self = this;
-      if (!optimistic.optimistic) {
-        if (!optimistic.isPushNotification) {
-          const guildId = optimistic.guildId;
-          let tmp = null;
-          if (null != guildId) {
-            tmp = guildId;
-          }
-          self.data(tmp).put(optimistic.message.channel_id, optimistic.message, self.generation);
-        }
-      }
-      return false;
-    }
-  };
-  items[10] = {
-    key: "handleMessageDelete",
-    value(guildId) {
-      const self = this;
-      guildId = guildId.guildId;
-      let tmp = null;
-      if (null != guildId) {
-        tmp = guildId;
-      }
-      const dataResult = self.data(tmp);
+      const dataResult = this.data(guildId);
       let messageIdResult;
-      if (null != dataResult) {
-        messageIdResult = dataResult.messageId(guildId.channelId);
+      if (dataResult != null) {
+        messageIdResult = dataResult.messageId(channel_id);
       }
-      if (messageIdResult === guildId.id) {
-        const messages = outer1_10.getMessages(guildId.channelId);
-        let lastResult = null;
-        if (!messages.hasMoreAfter) {
-          lastResult = messages.last();
-        }
-        if (null != lastResult) {
-          self.data(tmp).put(guildId.channelId, lastResult, self.generation);
-          const dataResult1 = self.data(tmp);
-        } else {
-          self.data(tmp).delete(guildId.channelId);
-          const dataResult2 = self.data(tmp);
-        }
-      }
-    }
-  };
-  items[11] = {
-    key: "handleMessageUpdate",
-    value(guildId) {
-      const self = this;
-      guildId = guildId.guildId;
-      let tmp = null;
-      if (null != guildId) {
-        tmp = guildId;
-      }
-      const channel_id = guildId.message.channel_id;
-      const id = guildId.message.id;
-      if (null != channel_id) {
-        if (null != id) {
-          const dataResult = self.data(tmp);
-          let messageIdResult;
-          if (null != dataResult) {
-            messageIdResult = dataResult.messageId(channel_id);
-          }
-          if (messageIdResult !== id) {
-            return false;
-          } else if (null != dataResult) {
-            dataResult.update(guildId.message);
-          }
-        }
-      }
-      return false;
-    }
-  };
-  items[12] = {
-    key: "handleThreadListSync",
-    value(guildId) {
-      let mostRecentMessages = guildId.mostRecentMessages;
-      if (null == mostRecentMessages) {
-        mostRecentMessages = [];
-      }
-      this.data(guildId.guildId).putMany(mostRecentMessages, this.generation);
-    }
-  };
-  items[13] = {
-    key: "handleLoadMessagesSuccess",
-    value(channelId) {
-      const self = this;
-      const basicChannel = outer1_9.getBasicChannel(channelId.channelId);
-      if (null == basicChannel) {
+      if (messageIdResult !== id) {
         return false;
-      } else {
-        const result = MessagePreviewStore(outer1_2[11]).requireSortedDescending(channelId.messages);
-        if (!channelId.isAfter) {
-          if (!channelId.isBefore) {
-            if (!channelId.hasMoreAfter) {
-              const first = channelId.messages[0];
-              let tmp3 = null;
-              if (null != first) {
-                tmp3 = first;
-              }
-              self.data(basicChannel.guild_id).put(channelId.channelId, tmp3, self.generation);
-              const dataResult = self.data(basicChannel.guild_id);
-            }
+      } else if (dataResult != null) {
+        dataResult.update(guildId.message);
+      }
+    }
+  }
+  return false;
+};
+prototype["handleThreadListSync"] = function handleThreadListSync(guildId) {
+  let mostRecentMessages = guildId.mostRecentMessages;
+  if (mostRecentMessages == null) {
+    mostRecentMessages = [];
+  }
+  this.data(guildId.guildId).putMany(mostRecentMessages, this.generation);
+};
+prototype["handleLoadMessagesSuccess"] = function handleLoadMessagesSuccess(channelId) {
+  const basicChannel = store.getBasicChannel(channelId.channelId);
+  if (null == basicChannel) {
+    return false;
+  } else {
+    const self = this;
+    const result = object(4864).requireSortedDescending(channelId.messages);
+    if (!channelId.isAfter) {
+      if (!channelId.isBefore) {
+        if (!channelId.hasMoreAfter) {
+          let first = channelId.messages[0];
+          if (first == null) {
+            first = null;
           }
+          self.data(basicChannel.guild_id).put(channelId.channelId, first, self.generation);
+          const dataResult = self.data(basicChannel.guild_id);
         }
-        const obj3 = MessagePreviewStore(outer1_2[11]);
-        const first1 = channelId.messages[0];
-        let tmp6 = null;
-        if (null != first1) {
-          tmp6 = first1;
-        }
-        self.data(basicChannel.guild_id).putNew(channelId.channelId, tmp6, self.generation);
-        const dataResult1 = self.data(basicChannel.guild_id);
       }
     }
-  };
-  items[14] = {
-    key: "handleLocalMessagesLoaded",
-    value(channelId) {
-      const self = this;
-      const basicChannel = outer1_9.getBasicChannel(channelId.channelId);
-      if (null != basicChannel) {
-        const result = MessagePreviewStore(outer1_2[11]).requireSortedDescending(channelId.messages);
-        const obj = MessagePreviewStore(outer1_2[11]);
-        const first = channelId.messages[0];
-        let tmp6 = null;
-        if (null != first) {
-          tmp6 = first;
-        }
-        self.data(basicChannel.guild_id).putNew(channelId.channelId, tmp6, -Infinity);
-        const dataResult = self.data(basicChannel.guild_id);
-      }
+    const obj3 = object(4864);
+    let first1 = channelId.messages[0];
+    if (first1 == null) {
+      first1 = null;
     }
-  };
-  items[15] = {
-    key: "handleMessagePreviewsLoaded",
-    value(guildId) {
-      let iter2;
-      const self = this;
-      outer1_11.verbose("adding remote previews (guildId: " + guildId.guildId + ", messages: " + guildId.messages.length + ")");
-      const dataResult = this.data(guildId.guildId);
-      const tmp2 = outer1_12(guildId.messages);
-      let iter = tmp2();
-      if (!iter.done) {
-        do {
-          let value = iter.value;
-          if (!dataResult.isLatest(value.channel_id, self.generation)) {
-            let putResult = dataResult.put(value.channel_id, value, self.generation);
-          }
-          iter2 = tmp2();
-          iter = iter2;
-        } while (!iter2.done);
-      }
+    self.data(basicChannel.guild_id).putNew(channelId.channelId, first1, self.generation);
+    const dataResult1 = self.data(basicChannel.guild_id);
+  }
+};
+prototype["handleLocalMessagesLoaded"] = function handleLocalMessagesLoaded(channelId) {
+  const basicChannel = store.getBasicChannel(channelId.channelId);
+  if (null != basicChannel) {
+    const self = this;
+    const result = object(4864).requireSortedDescending(channelId.messages);
+    const obj = object(4864);
+    let first = channelId.messages[0];
+    if (first == null) {
+      first = null;
     }
-  };
-  items[16] = {
-    key: "handleMessagePreviewsLocallyLoaded",
-    value(guildId) {
-      let iter2;
-      let tmp5;
-      let tmp6;
-      outer1_11.verbose("adding local previews (guildId: " + guildId.guildId + ", messages: " + guildId.messages.length + ")");
-      const dataResult = this.data(guildId.guildId);
-      const tmp2 = outer1_12(guildId.messages);
-      let iter = tmp2();
-      if (!iter.done) {
-        do {
-          let tmp3 = outer1_3;
-          let tmp4 = outer1_3(iter.value, 2);
-          [tmp5, tmp6] = tmp4;
-          if (!dataResult.has(tmp5)) {
-            let putResult = dataResult.put(tmp5, tmp6, -Infinity);
-          }
-          iter2 = tmp2();
-          iter = iter2;
-        } while (!iter2.done);
-      }
-      dataResult.localNeeded = false;
+    this.data(basicChannel.guild_id).putNew(channelId.channelId, first, c6);
+    const dataResult = this.data(basicChannel.guild_id);
+  }
+};
+prototype["handleMessagePreviewsLoaded"] = function handleMessagePreviewsLoaded(guildId) {
+  let tmp3;
+  const self = this;
+  tmp3.verbose("adding remote previews (guildId: " + guildId.guildId + ", messages: " + guildId.messages.length + ")");
+  const dataResult = this.data(guildId.guildId);
+  for (const item10024 of tmp2) {
+    tmp3 = item10024;
+    if (!dataResult.isLatest(item10024.channel_id, self.generation)) {
+      let tmp4 = item10024;
+      let putResult = dataResult.put(tmp3.channel_id, tmp3, self.generation);
     }
-  };
-  items[17] = {
-    key: "handleLogout",
-    value() {
-      const guilds = this.guilds;
-      guilds.clear();
+    continue;
+  }
+};
+prototype["handleMessagePreviewsLocallyLoaded"] = function handleMessagePreviewsLocallyLoaded(guildId) {
+  let tmp6;
+  let tmp8;
+  tmp3.verbose("adding local previews (guildId: " + guildId.guildId + ", messages: " + guildId.messages.length + ")");
+  const dataResult = this.data(guildId.guildId);
+  while (tmp2 !== undefined) {
+    let tmp4 = callback;
+    let tmp5 = callback(tmp3, 2);
+    [tmp6, tmp8] = tmp5;
+    let tmp7 = tmp6;
+    if (!dataResult.has(tmp6)) {
+      let tmp9 = tmp6;
+      let tmp10 = tmp8;
+      let tmp11 = c6;
+      let putResult = dataResult.put(tmp7, tmp8, c6);
     }
-  };
-  return callback(MessagePreviewStore, items);
-})(require("initialize").Store);
-tmp4 = new tmp4();
-let result = require("_defineProperties").fileFinishedImporting("modules/message_previews/MessagePreviewStore.tsx");
+    continue;
+  }
+  dataResult.localNeeded = false;
+};
+function handleLogout() {
+  const guilds = this.guilds;
+  guilds.clear();
+}
+prototype["handleLogout"] = handleLogout;
+object = undefined;
+object = new Object(require("dispatcher"), {
+  CONNECTION_OPEN(arg0) {
+    return obj.handleConnectionOpen(arg0);
+  },
+  GUILD_CREATE(arg0) {
+    return obj.handleGuildCreate(arg0);
+  },
+  GUILD_DELETE(arg0) {
+    return obj.handleGuildDelete(arg0);
+  },
+  LOAD_MESSAGES_SUCCESS(arg0) {
+    return obj.handleLoadMessagesSuccess(arg0);
+  },
+  LOCAL_MESSAGES_LOADED(arg0) {
+    return obj.handleLocalMessagesLoaded(arg0);
+  },
+  LOGOUT(arg0) {
+    return obj.handleLogout(arg0);
+  },
+  MESSAGE_CREATE(arg0) {
+    return obj.handleMessageCreate(arg0);
+  },
+  MESSAGE_DELETE(arg0) {
+    return obj.handleMessageDelete(arg0);
+  },
+  MESSAGE_PREVIEWS_LOADED(arg0) {
+    return obj.handleMessagePreviewsLoaded(arg0);
+  },
+  MESSAGE_PREVIEWS_LOCALLY_LOADED(guildId) {
+    return obj.handleMessagePreviewsLocallyLoaded(guildId);
+  },
+  MESSAGE_UPDATE(arg0) {
+    return obj.handleMessageUpdate(arg0);
+  },
+  THREAD_LIST_SYNC(arg0) {
+    return obj.handleThreadListSync(arg0);
+  }
+}, tmp, MessagePreviewStore, Object, prototype, new.target, undefined, handleLogout, globalThis, arg1);
+// ThrowIfThisInitialized (0x7c)
+let obj = {
+  CONNECTION_OPEN(arg0) {
+    return obj.handleConnectionOpen(arg0);
+  },
+  GUILD_CREATE(arg0) {
+    return obj.handleGuildCreate(arg0);
+  },
+  GUILD_DELETE(arg0) {
+    return obj.handleGuildDelete(arg0);
+  },
+  LOAD_MESSAGES_SUCCESS(arg0) {
+    return obj.handleLoadMessagesSuccess(arg0);
+  },
+  LOCAL_MESSAGES_LOADED(arg0) {
+    return obj.handleLocalMessagesLoaded(arg0);
+  },
+  LOGOUT(arg0) {
+    return obj.handleLogout(arg0);
+  },
+  MESSAGE_CREATE(arg0) {
+    return obj.handleMessageCreate(arg0);
+  },
+  MESSAGE_DELETE(arg0) {
+    return obj.handleMessageDelete(arg0);
+  },
+  MESSAGE_PREVIEWS_LOADED(arg0) {
+    return obj.handleMessagePreviewsLoaded(arg0);
+  },
+  MESSAGE_PREVIEWS_LOCALLY_LOADED(guildId) {
+    return obj.handleMessagePreviewsLocallyLoaded(guildId);
+  },
+  MESSAGE_UPDATE(arg0) {
+    return obj.handleMessageUpdate(arg0);
+  },
+  THREAD_LIST_SYNC(arg0) {
+    return obj.handleThreadListSync(arg0);
+  }
+};
+let tmp3 = new require("timestamp")("MessagePreviewStore");
+object.guilds = new Map();
+object.generation = 0;
+const map = new Map();
+let result = require("reinjectEphemerals").fileFinishedImporting("modules/message_previews/MessagePreviewStore.tsx");
 
-export default tmp4;
+export default object;

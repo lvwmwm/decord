@@ -1,54 +1,60 @@
-// Module ID: 14176
-// Function ID: 108821
+// Module ID: 14198
+// Function ID: 14199
 // Name: MobileQuestPreviewControlBar
-// Dependencies: [5, 57, 31, 27, 5966, 482, 33, 4165, 689, 10468, 566, 9445, 5531, 1212, 5525, 14177, 14180, 6661, 13618, 12285, 4161, 2]
+// Dependencies: [5, 32, 19, 17, 5985, 505, 21, 4189, 712, 10492, 589, 9469, 5549, 1236, 5543, 14199, 14202, 6682, 13639, 12307, 4185, 2]
 
-// Module 14176 (MobileQuestPreviewControlBar)
+// Module 14198 (MobileQuestPreviewControlBar)
 import sum from "sum";
 import _slicedToArray from "_slicedToArray";
-import result from "result";
-import { View } from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import MoreVerticalIcon from "MoreVerticalIcon";
+import { View } from "IconButton";
+import initializeState from "initializeState";
 import { AppRoutes } from "sum";
-import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import jsxProd from "set";
+import createCacheKey from "createCacheKey";
 
-let closure_10;
-let closure_9;
+let c10;
+let c9;
 const require = arg1;
 class MobileQuestPreviewControlBar {
   constructor(arg0) {
     questId = global.questId;
     setQuestId = global.setQuestId;
     refreshQuest = global.refreshQuest;
-    tmp = c11();
-    tmp2 = c4(useStateFromStores.useState(false), 2);
-    first = tmp2[0];
-    c3 = tmp2[1];
-    obj = require("_createForOfIteratorHelperLoose");
+    useState = undefined;
+    useState = undefined;
+    c5 = undefined;
+    useCallback = undefined;
+    useCallback = undefined;
+    tmp = jsxs();
+    tmp2 = useState(c5.useState(false), 2);
+    [tmp3, useState] = tmp2;
+    tmp4 = questId;
+    tmp5 = refreshQuest;
+    obj = require("useQuests");
     questsWithPreviewAccess = obj.useQuestsWithPreviewAccess();
-    c4 = questsWithPreviewAccess;
+    useState = questsWithPreviewAccess;
     obj2 = require("initialize");
     items = [];
-    items[0] = useMemo;
+    items[0] = useCallback;
     items1 = [];
     items1[0] = questId;
     stateFromStores = obj2.useStateFromStores(items, () => {
       let fetchQuestPreviewError = null;
       if (null != questId) {
-        fetchQuestPreviewError = callback3.getFetchQuestPreviewError(questId);
+        fetchQuestPreviewError = callback3.getFetchQuestPreviewError(tmp);
       }
       return fetchQuestPreviewError;
     }, items1);
     obj3 = require("initialize");
     items2 = [];
-    items2[0] = useMemo;
+    items2[0] = useCallback;
     items3 = [];
     items3[0] = questId;
     stateFromStores1 = obj3.useStateFromStores(items2, () => {
       let result = null != questId;
       if (result) {
-        result = callback3.isFetchingQuestPreview(questId);
+        result = callback3.isFetchingQuestPreview(tmp);
       }
       return result;
     }, items3);
@@ -57,184 +63,369 @@ class MobileQuestPreviewControlBar {
     items4[1] = questId;
     items5 = [];
     items5[0] = setQuestId;
-    fn = (arg0) => {
-      if (null != setQuestId) {
-        setQuestId(arg0);
-      }
-    };
-    memo = useStateFromStores.useMemo(() => {
+    memo = c5.useMemo(() => {
       const mapped = questsWithPreviewAccess.map((config) => {
-        const obj = {};
         config = config.config;
         let questName;
-        if (null != config) {
+        if (config != null) {
           const messages = config.messages;
-          if (null != messages) {
+          if (messages != null) {
             questName = messages.questName;
           }
         }
-        if (null == questName) {
+        if (questName == null) {
           questName = config.id;
         }
-        obj.label = "" + questName + " (" + config.id + ")";
-        obj.value = config.id;
-        return obj;
+        return { label: "" + questName + " (" + config.id + ")", value: config.id };
       });
-      if (!tmp) {
-        let obj = { label: questId, value: questId };
+      if (!tmp2) {
+        const obj = { label: null, value: null };
+        obj[0] = tmp;
+        obj[1] = tmp;
         mapped.unshift(obj);
       }
       return mapped;
     }, items4);
-    // CreateGeneratorClosureLongIndex (0x67)
-    callback = useStateFromStores.useCallback(fn, items5);
+    callback = c5.useCallback((arg0) => {
+      if (null != setQuestId) {
+        tmp(arg0);
+      }
+    }, items5);
     items6 = [, ];
     items6[0] = questId;
     items6[1] = refreshQuest;
-    callback1 = useStateFromStores.useCallback(c3(fn), items6);
-    useStateFromStores = callback1;
-    // CreateGeneratorClosureLongIndex (0x67)
+    callback1 = c5.useCallback(useState(function*() {
+      if (c4 === 2) {
+        c4 = 3;
+        HermesBuiltin.throwTypeError();
+      } else if (tmp6 === 3) {
+        if (arg0 === 1) {
+          throw arg1;
+        } else if (arg0 === 2) {
+          let obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
+        } else {
+          return { value: "HermesInternal", done: null };
+        }
+      } else {
+        try {
+          c4 = 2;
+          if (0 === c1) {
+            if (arg0 === 1) {
+              c4 = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              c4 = 3;
+              obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            } else {
+              let closure_0 = tmp3;
+              if (null != outer1_0) {
+                v0(true);
+                v0 = 1;
+                let obj1 = outer1_0(outer1_2[11]);
+                c1 = 2;
+                c4 = 1;
+                obj1 = { value: null, done: false };
+                obj1[0] = obj1.completeQuestPreview(tmp22, 1);
+                return obj1;
+              } else {
+                c4 = 3;
+              }
+            }
+          } else if (1 === tmp7) {
+            v0 = 0;
+            v0(false);
+            throw callback;
+          } else if (arg0 === 1) {
+            c4 = 3;
+            throw arg1;
+          } else if (arg0 !== 2) {
+            callback();
+            v0 = 0;
+            v0(false);
+          }
+          v0 = 0;
+          v0(false);
+          c4 = 3;
+          obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
+        } catch (tmp27) {
+          callback = tmp27;
+          if (tmp4 === v0) {
+            c4 = tmp2;
+            throw tmp27;
+          } else {
+            c1 = tmp;
+          }
+        }
+      }
+    }), items6);
+    c5 = callback1;
     items7 = [, ];
     items7[0] = questId;
     items7[1] = refreshQuest;
-    callback2 = useStateFromStores.useCallback(c3(items6), items7);
-    View = callback2;
-    // CreateGeneratorClosureLongIndex (0x67)
+    callback2 = c5.useCallback(useState(function*() {
+      if (c4 === 2) {
+        c4 = 3;
+        HermesBuiltin.throwTypeError();
+      } else if (tmp6 === 3) {
+        if (arg0 === 1) {
+          throw arg1;
+        } else if (arg0 === 2) {
+          let obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
+        } else {
+          return { value: "HermesInternal", done: null };
+        }
+      } else {
+        try {
+          c4 = 2;
+          if (0 === c1) {
+            if (arg0 === 1) {
+              c4 = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              c4 = 3;
+              obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            } else {
+              let closure_0 = tmp3;
+              if (null != outer1_0) {
+                v0(true);
+                v0 = 1;
+                let obj1 = outer1_0(outer1_2[11]);
+                c1 = 2;
+                c4 = 1;
+                obj1 = { value: null, done: false };
+                obj1[0] = obj1.resetQuestPreviewStatus(tmp22);
+                return obj1;
+              } else {
+                c4 = 3;
+              }
+            }
+          } else if (1 === tmp7) {
+            v0 = 0;
+            v0(false);
+            throw callback;
+          } else if (arg0 === 1) {
+            c4 = 3;
+            throw arg1;
+          } else if (arg0 !== 2) {
+            callback();
+            v0 = 0;
+            v0(false);
+          }
+          v0 = 0;
+          v0(false);
+          c4 = 3;
+          obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
+        } catch (tmp27) {
+          callback = tmp27;
+          if (tmp4 === v0) {
+            c4 = tmp2;
+            throw tmp27;
+          } else {
+            c1 = tmp;
+          }
+        }
+      }
+    }), items7);
+    useCallback = callback2;
     items8 = [, ];
     items8[0] = questId;
     items8[1] = refreshQuest;
-    callback3 = useStateFromStores.useCallback(c3(items7), items8);
-    useMemo = callback3;
+    callback3 = c5.useCallback(useState(function*() {
+      if (c4 === 2) {
+        c4 = 3;
+        HermesBuiltin.throwTypeError();
+      } else if (tmp6 === 3) {
+        if (arg0 === 1) {
+          throw arg1;
+        } else if (arg0 === 2) {
+          let obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
+        } else {
+          return { value: "HermesInternal", done: null };
+        }
+      } else {
+        try {
+          c4 = 2;
+          if (0 === c1) {
+            if (arg0 === 1) {
+              c4 = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              c4 = 3;
+              obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            } else {
+              let closure_0 = tmp3;
+              if (null != outer1_0) {
+                v0(true);
+                v0 = 1;
+                const _Math = Math;
+                const random = Math.random();
+                let obj1 = outer1_0(outer1_2[11]);
+                c1 = 2;
+                c4 = 1;
+                obj1 = { value: null, done: false };
+                obj1[0] = obj1.completeQuestPreview(tmp22, random);
+                return obj1;
+              } else {
+                c4 = 3;
+              }
+            }
+          } else if (1 === tmp7) {
+            v0 = 0;
+            v0(false);
+            throw callback;
+          } else if (arg0 === 1) {
+            c4 = 3;
+            throw arg1;
+          } else if (arg0 !== 2) {
+            callback();
+            v0 = 0;
+            v0(false);
+          }
+          v0 = 0;
+          v0(false);
+          c4 = 3;
+          obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
+        } catch (tmp28) {
+          callback = tmp28;
+          if (tmp4 === v0) {
+            c4 = tmp2;
+            throw tmp28;
+          } else {
+            c1 = tmp;
+          }
+        }
+      }
+    }), items8);
+    useCallback = callback3;
     items9 = [, , , ];
     items9[0] = questId;
     items9[1] = callback1;
     items9[2] = callback2;
     items9[3] = callback3;
-    obj = { style: tmp.container };
-    callback4 = useStateFromStores.useCallback(() => {
+    tmp15 = jsxs;
+    tmp16 = useCallback;
+    obj = { style: tmp.container, children: null };
+    tmp17 = jsx;
+    callback4 = c5.useCallback(() => {
       let obj = questId(refreshQuest[12]);
       obj = { key: "quest-preview-menu", options: null, hasIcons: false };
-      obj = {};
+      obj = { label: null, onPress: null };
       const intl = questId(refreshQuest[13]).intl;
-      obj.label = intl.string(questId(refreshQuest[13]).t.jQEfRT);
-      obj.onPress = callback1;
+      obj[0] = intl.string(questId(refreshQuest[13]).t.jQEfRT);
+      obj[1] = callback1;
       const items = [obj, , , ];
-      const obj1 = {};
+      const obj1 = { label: null, onPress: null };
       const intl2 = questId(refreshQuest[13]).intl;
-      obj1.label = intl2.string(questId(refreshQuest[13]).t.taqkwK);
-      obj1.onPress = callback2;
+      obj1[0] = intl2.string(questId(refreshQuest[13]).t.taqkwK);
+      obj1[1] = callback2;
       items[1] = obj1;
-      const obj2 = {};
+      const obj2 = { label: null, onPress: null };
       const intl3 = questId(refreshQuest[13]).intl;
-      obj2.label = intl3.string(questId(refreshQuest[13]).t.cKSLr4);
-      obj2.onPress = callback3;
+      obj2[0] = intl3.string(questId(refreshQuest[13]).t.cKSLr4);
+      obj2[1] = callback3;
       items[2] = obj2;
-      const obj3 = {};
+      const obj3 = { label: null, onPress: null };
       const intl4 = questId(refreshQuest[13]).intl;
-      obj3.label = intl4.string(questId(refreshQuest[13]).t.rNGQfD);
-      obj3.onPress = function onPress() {
-        if (null != outer1_0) {
-          questId(refreshQuest[14]).copy(outer2_8.QUEST_PREVIEW_TOOL_2(outer1_0));
-          const obj = questId(refreshQuest[14]);
+      obj3[0] = intl4.string(questId(refreshQuest[13]).t.rNGQfD);
+      obj3[1] = function onPress() {
+        if (null != closure_0) {
+          outer1_0(outer1_2[14]).copy(outer1_8.QUEST_PREVIEW_TOOL_2(tmp));
+          const obj = outer1_0(outer1_2[14]);
         }
       };
       items[3] = obj3;
-      obj.options = items;
+      obj[1] = items;
       const result = obj.showSimpleActionSheet(obj);
     }, items9);
-    tmp13 = jsxs;
-    tmp14 = View;
     items10 = [, , ];
     items10[0] = jsx(require("QuestThemePicker"), {});
-    obj1 = { style: tmp.questInputContainer };
-    obj2 = { style: tmp.searchField };
-    tmp15 = jsxs;
-    tmp16 = View;
-    tmp17 = jsx;
-    tmp18 = View;
-    tmp19 = jsx;
-    obj3 = { options: memo, value: questId, onChange: callback };
+    obj1 = { style: tmp.questInputContainer, children: null };
+    obj2 = { style: tmp.searchField, children: null };
+    obj3 = { options: memo, value: questId, onChange: callback, placeholder: null, allowCustomValue: true, isDisabled: null };
     intl = require("getSystemLocale").intl;
-    obj3.placeholder = intl.string(require("getSystemLocale").t.Zw8jxn);
-    obj3.allowCustomValue = true;
-    tmp20 = stateFromStores1;
+    obj3[3] = intl.string(require("getSystemLocale").t.Zw8jxn);
+    tmp18 = stateFromStores1;
     if (!stateFromStores1) {
-      tmp20 = first;
+      tmp18 = tmp3;
     }
-    obj3.isDisabled = tmp20;
-    obj2.children = tmp19(require("MobileSearchableSelect").MobileSearchableSelect, obj3);
+    obj3[5] = tmp18;
+    obj2[1] = tmp17(require("MobileSearchableSelect").MobileSearchableSelect, obj3);
     items11 = [, ];
-    items11[0] = tmp17(tmp18, obj2);
-    obj4 = { style: tmp.iconsColumn };
-    tmp21 = jsxs;
-    tmp22 = View;
-    tmp23 = jsx;
-    obj5 = {};
-    obj5.icon = jsx(require("RefreshIcon").RefreshIcon, {});
+    items11[0] = tmp17(tmp16, obj2);
+    obj4 = { style: tmp.iconsColumn, children: null };
+    obj5 = { icon: null, accessibilityLabel: null, onPress: null, disabled: null, loading: null, size: "sm", variant: "secondary" };
+    obj5[0] = tmp17(require("RefreshIcon").RefreshIcon, {});
     intl2 = require("getSystemLocale").intl;
-    obj5.accessibilityLabel = intl2.string(require("getSystemLocale").t.wzzjk9);
-    obj5.onPress = refreshQuest;
-    tmp24 = stateFromStores1;
+    obj5[1] = intl2.string(require("getSystemLocale").t.wzzjk9);
+    obj5[2] = refreshQuest;
+    tmp19 = stateFromStores1;
     if (!stateFromStores1) {
-      tmp25 = null;
-      tmp24 = null == questId;
+      tmp20 = null;
+      tmp19 = null == questId;
     }
-    obj5.disabled = tmp24;
-    obj5.loading = stateFromStores1;
-    obj5.size = "sm";
-    obj5.variant = "secondary";
+    obj5[3] = tmp19;
+    obj5[4] = stateFromStores1;
     items12 = [, ];
-    items12[0] = tmp23(require("IconButton").IconButton, obj5);
-    tmp27Result = null != questId;
-    if (tmp27Result) {
-      tmp28 = questId;
-      tmp29 = refreshQuest;
-      tmp27 = jsx;
-      obj6 = { icon: null, size: "sm", variant: "secondary" };
-      tmp30 = jsx;
-      num = 19;
-      obj6.icon = jsx(require("MoreVerticalIcon").MoreVerticalIcon, {});
+    items12[0] = tmp17(require("IconButton").IconButton, obj5);
+    tmp17Result = null != questId;
+    if (tmp17Result) {
+      obj6 = { icon: null, size: "sm", variant: "secondary", accessibilityLabel: null, disabled: null, onPress: null };
+      obj6[0] = tmp17(require("MoreVerticalIcon").MoreVerticalIcon, {});
       intl3 = require("getSystemLocale").intl;
-      obj6.accessibilityLabel = intl3.string(require("getSystemLocale").t["+1H47t"]);
+      obj6[3] = intl3.string(require("getSystemLocale").t["+1H47t"]);
       if (!stateFromStores1) {
-        stateFromStores1 = first;
+        stateFromStores1 = tmp3;
       }
-      obj6.disabled = stateFromStores1;
-      obj6.onPress = callback4;
-      tmp27Result = tmp27(require("IconButton").IconButton, obj6);
+      obj6[4] = stateFromStores1;
+      obj6[5] = callback4;
+      tmp17Result = tmp17(require("IconButton").IconButton, obj6);
     }
-    items12[1] = tmp27Result;
-    obj4.children = items12;
-    items11[1] = tmp21(tmp22, obj4);
-    obj1.children = items11;
+    items12[1] = tmp17Result;
+    obj4[1] = items12;
+    items11[1] = tmp15(tmp16, obj4);
+    obj1[1] = items11;
     items10[1] = tmp15(tmp16, obj1);
-    tmp31 = null != stateFromStores;
-    if (tmp31) {
-      tmp32 = jsx;
-      tmp33 = questId;
-      tmp34 = refreshQuest;
-      num2 = 20;
-      obj7 = { variant: "text-sm/medium", color: "text-feedback-critical" };
-      obj7.style = tmp.errorText;
-      obj7.children = stateFromStores.message;
-      tmp31 = jsx(require("Text").Text, obj7);
+    tmp17Result1 = null != stateFromStores;
+    if (tmp17Result1) {
+      obj7 = { variant: "text-sm/medium", color: "text-feedback-critical", style: null, children: null };
+      obj7[2] = tmp.errorText;
+      obj7[3] = stateFromStores.message;
+      tmp17Result1 = tmp17(require("Text").Text, obj7);
     }
-    items10[2] = tmp31;
-    obj.children = items10;
-    return tmp13(tmp14, obj);
+    items10[2] = tmp17Result1;
+    obj[1] = items10;
+    return tmp15(tmp16, obj);
   }
 }
-({ jsx: closure_9, jsxs: closure_10 } = jsxProd);
-_createForOfIteratorHelperLoose = { container: { overflow: "visible", zIndex: 1 } };
-_createForOfIteratorHelperLoose = { flexDirection: "row", alignItems: "flex-start", justifyContent: "flex-start", gap: require("_createForOfIteratorHelperLoose").space.PX_8, zIndex: 2, overflow: "visible" };
-_createForOfIteratorHelperLoose.questInputContainer = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.searchField = { flex: 1, zIndex: 3, overflow: "visible" };
-_createForOfIteratorHelperLoose.iconsColumn = { flexDirection: "row", gap: require("_createForOfIteratorHelperLoose").space.PX_8, paddingTop: require("_createForOfIteratorHelperLoose").space.PX_4 };
-let obj1 = { flexDirection: "row", gap: require("_createForOfIteratorHelperLoose").space.PX_8, paddingTop: require("_createForOfIteratorHelperLoose").space.PX_4 };
-_createForOfIteratorHelperLoose.errorText = { marginTop: require("_createForOfIteratorHelperLoose").space.PX_4, zIndex: 1 };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-let obj2 = { marginTop: require("_createForOfIteratorHelperLoose").space.PX_4, zIndex: 1 };
-let result = require("result").fileFinishedImporting("modules/user_settings/quests/native/MobileQuestPreviewControlBar.tsx");
+({ jsx: c9, jsxs: c10 } = jsxProd);
+createCacheKey = { container: { overflow: "visible", zIndex: 1 }, questInputContainer: null, searchField: null, iconsColumn: null, errorText: null };
+createCacheKey = { flexDirection: "row", alignItems: "flex-start", justifyContent: "flex-start", gap: require("Themes").space.PX_8, zIndex: 2, overflow: "visible" };
+createCacheKey[1] = createCacheKey;
+createCacheKey[2] = { flex: 1, zIndex: 3, overflow: "visible" };
+createCacheKey[3] = { flexDirection: "row", gap: require("Themes").space.PX_8, paddingTop: require("Themes").space.PX_4 };
+let obj1 = { flexDirection: "row", gap: require("Themes").space.PX_8, paddingTop: require("Themes").space.PX_4 };
+createCacheKey[4] = { marginTop: require("Themes").space.PX_4, zIndex: 1 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let obj2 = { marginTop: require("Themes").space.PX_4, zIndex: 1 };
+let result = require("noop").fileFinishedImporting("modules/user_settings/quests/native/MobileQuestPreviewControlBar.tsx");
 
 export default MobileQuestPreviewControlBar;
 export { MobileQuestPreviewControlBar };

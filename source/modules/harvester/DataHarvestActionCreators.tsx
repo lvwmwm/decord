@@ -1,36 +1,37 @@
-// Module ID: 13873
-// Function ID: 106212
+// Module ID: 13894
+// Function ID: 13895
 // Name: getDataHarvestStatus
-// Dependencies: [653, 686, 507, 9202, 2]
+// Dependencies: [676, 709, 530, 9226, 2]
 // Exports: getDataHarvestStatus, requestDataHarvest
 
-// Module 13873 (getDataHarvestStatus)
+// Module 13894 (getDataHarvestStatus)
 import { Endpoints } from "ME";
 
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/harvester/DataHarvestActionCreators.tsx");
+const result = require("sendRequest").fileFinishedImporting("modules/harvester/DataHarvestActionCreators.tsx");
 
 export const getDataHarvestStatus = function getDataHarvestStatus() {
-  let obj = importDefault(686);
+  let obj = importDefault(709);
   obj.dispatch({ type: "LOAD_DATA_HARVEST_TYPE_START" });
-  const HTTP = require(507) /* _isNativeReflectConstruct */.HTTP;
+  const HTTP = require(530) /* sendRequest */.HTTP;
   obj = { url: Endpoints.USER_HARVEST, oldFormErrors: true, rejectWithError: false };
   const value = HTTP.get(obj);
   return value.then((body) => {
-    let obj = outer1_1(outer1_2[1]);
+    let obj = callback(709);
     obj = { type: "UPDATE_DATA_HARVEST_TYPE", harvestType: body.body };
     obj.dispatch(obj);
   }).catch((error) => {
-    let obj = outer1_1(outer1_2[1]);
+    let obj = callback(709);
     obj = { type: "LOAD_DATA_HARVEST_TYPE_FAILURE", error };
     obj.dispatch(obj);
   });
 };
 export const requestDataHarvest = function requestDataHarvest(mapped) {
-  const harvest = require(9202) /* saveProfileAndAccountRequest */.requestHarvest(mapped);
+  const harvest = require(9226) /* saveProfileAndAccountRequest */.requestHarvest(mapped);
   return harvest.then((body) => {
     if (tmp) {
-      let obj = outer1_1(outer1_2[1]);
-      obj = { type: "UPDATE_DATA_HARVEST_TYPE", harvestType: body.body };
+      let obj = callback(table[1]);
+      obj = { type: "UPDATE_DATA_HARVEST_TYPE", harvestType: null };
+      obj[1] = body.body;
       obj.dispatch(obj);
     }
     return body;

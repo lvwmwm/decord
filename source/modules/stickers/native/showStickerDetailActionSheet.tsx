@@ -1,15 +1,16 @@
-// Module ID: 9617
-// Function ID: 74840
+// Module ID: 9639
+// Function ID: 9640
 // Name: hideStickerDetailActionSheet
-// Dependencies: [4133, 9618, 1935, 2]
+// Dependencies: [4157, 9640, 1959, 2]
 // Exports: hideStickerDetailActionSheet, showStickerDetailActionSheet
 
-// Module 9617 (hideStickerDetailActionSheet)
-const result = require("maybeLoadBundle").fileFinishedImporting("modules/stickers/native/showStickerDetailActionSheet.tsx");
+// Module 9639 (hideStickerDetailActionSheet)
+const sticker_detail_action_sheet = "sticker_detail_action_sheet";
+const result = require("asyncRequireImpl").fileFinishedImporting("modules/stickers/native/showStickerDetailActionSheet.tsx");
 
 export const hideStickerDetailActionSheet = function hideStickerDetailActionSheet() {
-  importDefault(4133).hideActionSheet("sticker_detail_action_sheet");
+  importDefault(4157).hideActionSheet(sticker_detail_action_sheet);
 };
 export const showStickerDetailActionSheet = function showStickerDetailActionSheet(arg0) {
-  importDefault(4133).openLazy(require(1935) /* maybeLoadBundle */(9618, dependencyMap.paths), "sticker_detail_action_sheet", arg0);
+  importDefault(4157).openLazy(require(1959) /* asyncRequireImpl */(9640, dependencyMap.paths), sticker_detail_action_sheet, arg0);
 };

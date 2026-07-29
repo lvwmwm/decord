@@ -1,97 +1,166 @@
-// Module ID: 13627
-// Function ID: 104660
+// Module ID: 13648
+// Function ID: 13649
 // Name: PoolIdInput
-// Dependencies: [5, 57, 31, 27, 13628, 1194, 33, 10991, 9004, 8744, 13629, 11094, 13631, 10729, 13633, 12958, 13635, 13637, 13639, 13641, 9411, 13643, 13645, 13647, 13649, 8987, 4165, 689, 4576, 6706, 4578, 4133, 13651, 5221, 5220, 5536, 5198, 4117, 566, 5193, 2]
+// Dependencies: [5, 32, 19, 17, 13649, 1218, 21, 11015, 9028, 8768, 13650, 11118, 13652, 10753, 13654, 12981, 13656, 13658, 13660, 13662, 9435, 13664, 13666, 13668, 13670, 9011, 4189, 712, 4598, 6727, 4600, 4157, 13672, 5243, 5242, 5554, 5220, 4141, 589, 5215, 2]
 // Exports: default
 
-// Module 13627 (PoolIdInput)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import _slicedToArray from "_slicedToArray";
-import showActionSheet from "showActionSheet";
-import get_ActivityIndicator from "_createForOfIteratorHelperLoose";
-import closure_8 from "_isNativeReflectConstruct";
-import closure_9 from "_isNativeReflectConstruct";
-import jsxProd from "Background";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+// Module 13648 (PoolIdInput)
+import fetchFingerprint from "fetchFingerprint";
+import _getGeneratedPoolById from "_getGeneratedPoolById";
+import InventoryIcon from "InventoryIcon";
+import get_ActivityIndicator from "TrainIcon";
+import handleAddUser from "handleAddUser";
+import closure_9 from "fetchFingerprint";
+import jsxProd from "BurgerIcon";
+import createCacheKey from "createCacheKey";
 
-let closure_10;
-let closure_11;
+let c10;
 let closure_6;
-let closure_7;
+let error;
+let unpackModuleId;
 const require = arg1;
 function PoolIdInput(onSubmit) {
-  let showActionSheet;
-  let tmp8;
+  let c5;
+  let tmp7;
   onSubmit = onSubmit.onSubmit;
-  const tmp3 = callback(React.useState(""), 2);
-  const first = tmp3[0];
-  const dependencyMap = tmp4;
-  const tmp5 = callback(React.useState(""), 2);
-  const first1 = tmp5[0];
-  callback = tmp6;
-  const tmp2 = _createForOfIteratorHelperLoose();
-  [tmp8, showActionSheet] = callback(React.useState(false), 2);
-  // CreateGeneratorClosureLongIndex (0x67)
+  let first;
+  let dependencyMap;
+  let first1;
+  let callback2;
+  let React;
+  const tmp2 = callback2(React.useState(""), 2);
+  first = tmp2[0];
+  dependencyMap = tmp3;
+  const tmp4 = callback2(React.useState(""), 2);
+  first1 = tmp4[0];
+  callback2 = tmp5;
+  const tmp = createCacheKey();
+  [tmp7, c5] = callback2(React.useState(false), 2);
   const items = [first, first1, onSubmit];
-  callback = React.useCallback(first1(tmp), items);
-  let obj = { spacing: 4, style: tmp2.inputContainer };
-  obj = { size: "md", placeholder: "Enter Pool ID", onChange: tmp3[1], autoCapitalize: "none", autoCorrect: false, autoComplete: "off", isClearable: true };
-  const items1 = [callback2(onSubmit(6706).TextInput, obj), , ];
-  obj = { size: "md", secureTextEntry: true, placeholder: "Enter Password", onChange: tmp5[1], autoCapitalize: "none", autoCorrect: false, autoComplete: "off", isClearable: true };
-  items1[1] = callback2(onSubmit(6706).TextInput, obj);
-  const obj1 = { size: "md", variant: "primary", text: "Get Pool" };
-  let tmp12 = 0 === first.length;
-  if (!tmp12) {
-    tmp12 = 0 === first1.length;
+  let callback = React.useCallback(first1(function*() {
+    if (v0 === 2) {
+      v0 = 3;
+      HermesBuiltin.throwTypeError();
+    } else if (tmp6 === 3) {
+      if (arg0 === 1) {
+        throw arg1;
+      } else if (arg0 === 2) {
+        let obj = { value: null, done: true };
+        obj[0] = arg1;
+        return obj;
+      } else {
+        return { value: "HermesInternal", done: null };
+      }
+    } else {
+      try {
+        v0 = 2;
+        if (0 === length) {
+          if (arg0 === 1) {
+            v0 = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            v0 = 3;
+            obj = { value: null, done: true };
+            obj[0] = arg1;
+            return obj;
+          } else {
+            let closure_0 = tmp3;
+            if (0 !== length.length) {
+              outer1_5(true);
+              let c3 = 1;
+              length = 2;
+              v0 = 1;
+              const obj1 = { value: null, done: false };
+              obj1[0] = outer1_0(tmp24, c3);
+              return obj1;
+            } else {
+              v0 = 3;
+            }
+          }
+        } else if (1 === tmp7) {
+          c3 = 0;
+          callback2(false);
+          throw callback;
+        } else if (arg0 === 1) {
+          v0 = 3;
+          throw arg1;
+        } else if (arg0 !== 2) {
+          callback("");
+          v0("");
+          c3 = 0;
+          callback2(false);
+        }
+        c3 = 0;
+        callback2(false);
+        v0 = 3;
+        obj = { value: null, done: true };
+        obj[0] = arg1;
+        return obj;
+      } catch (tmp29) {
+        callback = tmp29;
+        if (tmp4 === c3) {
+          v0 = tmp2;
+          throw tmp29;
+        } else {
+          length = tmp;
+        }
+      }
+    }
+  }), items);
+  let obj = { spacing: 4, style: tmp.inputContainer, children: null };
+  const items1 = [callback3(onSubmit(6727).TextInput, { size: "md", placeholder: "Enter Pool ID", onChange: tmp2[1], autoCapitalize: "none", autoCorrect: false, autoComplete: "off", isClearable: true }), callback3(onSubmit(6727).TextInput, { size: "md", secureTextEntry: true, placeholder: "Enter Password", onChange: tmp4[1], autoCapitalize: "none", autoCorrect: false, autoComplete: "off", isClearable: true }), ];
+  let tmp11 = 0 === first.length;
+  if (!tmp11) {
+    tmp11 = 0 === first1.length;
   }
-  if (!tmp12) {
-    tmp12 = tmp8;
+  if (!tmp11) {
+    tmp11 = tmp7;
   }
-  obj1.disabled = tmp12;
-  obj1.loading = tmp8;
-  obj1.onPress = callback;
-  items1[2] = callback2(onSubmit(4578).Button, obj1);
-  obj.children = items1;
-  return closure_11(onSubmit(4576).Stack, obj);
+  items1[2] = callback3(onSubmit(4600).Button, { size: "md", variant: "primary", text: "Get Pool", disabled: tmp11, loading: tmp7, onPress: callback });
+  obj[2] = items1;
+  return closure_11(onSubmit(4598).Stack, obj);
 }
 function UserActionSheet(pool) {
   pool = pool.pool;
-  const usersForPool = authStore.getUsersForPool(pool.id);
-  const dependencyMap = id.getId();
+  let usersForPool;
+  let dependencyMap;
+  let fetchFingerprint;
+  usersForPool = authStore.getUsersForPool(pool.id);
+  dependencyMap = id.getId();
   const items = [pool.id];
-  let _isNativeReflectConstruct = React.useCallback((arg0) => {
-    usersForPool(4133).hideActionSheet("generated-test-users");
-    const obj = usersForPool(4133);
-    pool(13651).loginAsGeneratedUser(pool.id, arg0);
+  fetchFingerprint = React.useCallback((arg0) => {
+    usersForPool(4157).hideActionSheet("generated-test-users");
+    const obj = usersForPool(4157);
+    pool(13672).loginAsGeneratedUser(pool.id, arg0);
   }, items);
-  let obj = {};
-  obj = { title: pool.summary, subtitle: "" + usersForPool.length + " users" };
-  obj.header = callback2(pool(5220).BottomSheetTitleHeader, obj);
-  obj = { style: { paddingHorizontal: usersForPool(689).space.PX_12 } };
-  const obj2 = {
-    title: "Select User to Login As",
-    hasIcons: true,
-    children: usersForPool.map((id) => {
-      let closure_0 = id;
-      const obj = { icon: outer1_10(pool(10991).UserIcon, { size: "md" }) };
-      ({ username: obj.label, email: obj.subLabel } = id);
-      obj.onPress = function onPress() {
-        return outer1_3(id.id);
-      };
-      obj.disabled = id.id === dependencyMap;
-      let tmp3;
-      if (id.id === dependencyMap) {
-        tmp3 = outer1_10(pool(4117).CheckmarkLargeIcon, { size: "md", color: "text-feedback-positive" });
-      }
-      obj.trailing = tmp3;
-      obj.start = 0 === arg1;
-      obj.end = arg1 === usersForPool.length - 1;
-      return outer1_10(pool(5198).TableRow, obj, id.id);
-    })
-  };
-  obj.children = callback2(pool(5536).TableRowGroup, obj2);
-  obj.children = callback2(closure_6, obj);
-  return callback2(pool(5221).BottomSheet, obj);
+  let obj = { header: null, children: null };
+  obj = { title: pool.summary, subtitle: null };
+  obj[1] = "" + usersForPool.length + " users";
+  obj[0] = callback3(pool(5242).BottomSheetTitleHeader, obj);
+  obj = { style: null, children: null };
+  obj[0] = { paddingHorizontal: usersForPool(712).space.PX_12 };
+  const obj2 = { title: "Select User to Login As", hasIcons: true, children: null };
+  obj2[2] = usersForPool.map((id) => {
+    let closure_0 = id;
+    const obj = { icon: null, label: null, subLabel: null, onPress: null, disabled: null, trailing: null, start: null, end: null };
+    obj[0] = outer1_10(pool(11015).UserIcon, { size: "md" });
+    ({ username: obj[1], email: obj[2] } = id);
+    obj[3] = function onPress() {
+      return outer1_3(id.id);
+    };
+    obj[4] = id.id === dependencyMap;
+    let tmp2Result;
+    if (id.id === dependencyMap) {
+      tmp2Result = tmp2(pool(4141).CheckmarkLargeIcon, { size: "md", color: "text-feedback-positive" });
+    }
+    obj[5] = tmp2Result;
+    obj[6] = 0 === arg1;
+    obj[7] = arg1 === usersForPool.length - 1;
+    return outer1_10(pool(5220).TableRow, obj, id.id);
+  });
+  obj[1] = callback3(pool(5554).TableRowGroup, obj2);
+  obj[1] = callback3(closure_6, obj);
+  return callback3(pool(5243).BottomSheet, obj);
 }
 function PoolUsers(pool) {
   let end;
@@ -107,61 +176,129 @@ function PoolUsers(pool) {
     obj = { pool };
     obj.openLazy(Promise.resolve(obj), "generated-test-users", obj);
   }, items);
-  let obj = { icon: callback2(items[Number(undefined, id) % items.length], { size: "md", color: length[Number(undefined, id) % length.length] }), label: pool.summary, subLabel: "" + usersForPool.length + " users", arrow: true, onPress: callback, start, end };
-  return callback2(pool(5198).TableRow, obj);
+  let obj = { icon: null, label: null, subLabel: null, arrow: true, onPress: null, start: null, end: null };
+  obj[0] = callback3(items[Number(undefined, id) % items.length], { size: "md", color: length[Number(undefined, id) % length.length] });
+  obj[1] = pool.summary;
+  obj[2] = "" + usersForPool.length + " users";
+  obj[4] = callback;
+  obj[5] = start;
+  obj[6] = end;
+  return callback3(pool(5220).TableRow, obj);
 }
-({ View: closure_6, ScrollView: closure_7 } = get_ActivityIndicator);
-({ jsx: closure_10, jsxs: closure_11 } = jsxProd);
+({ View: closure_6, ScrollView: error } = get_ActivityIndicator);
+({ jsx: c10, jsxs: unpackModuleId } = jsxProd);
 let items = [require("UserIcon").UserIcon, require("ShieldIcon").ShieldIcon, require("GiftIcon").GiftIcon, require("AchievementsIcon").AchievementsIcon, require("PiggyBankIcon").PiggyBankIcon, require("TreehouseIcon").TreehouseIcon, require("SpeedometerIcon").SpeedometerIcon, require("CompassIcon").CompassIcon, require("SignPostIcon").SignPostIcon, require("CarIcon").CarIcon, require("TrainIcon").TrainIcon, require("TeacupIcon").TeacupIcon, require("InventoryIcon").InventoryIcon, require("FoodIcon").FoodIcon, require("BurgerIcon").BurgerIcon, require("MagicDoorIcon").MagicDoorIcon, require("PawPrintIcon").PawPrintIcon, require("RecordPlayerIcon").RecordPlayerIcon, require("SettingsIcon").SettingsIcon];
 let closure_13 = ["text-default", "text-feedback-positive", "text-feedback-warning", "text-feedback-critical", "text-link", "text-brand"];
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW, flex: 1 };
-_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.contentContainer = { padding: require("_createForOfIteratorHelperLoose").space.PX_16 };
-let obj1 = { padding: require("_createForOfIteratorHelperLoose").space.PX_16 };
-_createForOfIteratorHelperLoose.inputContainer = { marginBottom: require("_createForOfIteratorHelperLoose").space.PX_16 };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-let obj2 = { marginBottom: require("_createForOfIteratorHelperLoose").space.PX_16 };
-const result = require("result").fileFinishedImporting("modules/devtools/native/components/screens/DevToolsGeneratedTestUsersScreen.tsx");
+createCacheKey = { container: null, contentContainer: null, inputContainer: null };
+createCacheKey = { backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW, flex: 1 };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { padding: require("Themes").space.PX_16 };
+let obj1 = { padding: require("Themes").space.PX_16 };
+createCacheKey[2] = { marginBottom: require("Themes").space.PX_16 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let obj2 = { marginBottom: require("Themes").space.PX_16 };
+const result = require("noop").fileFinishedImporting("modules/devtools/native/components/screens/DevToolsGeneratedTestUsersScreen.tsx");
 
 export default function DevToolsGeneratedTestUsersScreen() {
-  const tmp = _createForOfIteratorHelperLoose();
-  let obj = stateFromStoresArray(566);
-  const items = [closure_8];
-  stateFromStoresArray = obj.useStateFromStoresArray(items, () => {
-    let pools = outer1_8.getPools();
-    if (null == pools) {
+  const tmp = createCacheKey();
+  let obj = _require(589);
+  const items = [handleAddUser];
+  const stateFromStoresArray = obj.useStateFromStoresArray(items, () => {
+    pools = pools.getPools();
+    if (pools == null) {
       pools = [];
     }
     return pools;
   });
-  obj = { style: tmp.container };
-  obj = {};
+  _require = stateFromStoresArray;
+  _require = undefined;
+  _require = callback((arg0, arg1) => {
+    let closure_0 = arg0;
+    let closure_1 = arg1;
+    let c3 = 0;
+    let c2 = 0;
+    return (function*(arg0, arg1) {
+      if (table === 2) {
+        table = 3;
+        HermesBuiltin.throwTypeError();
+      } else if (tmp3 === 3) {
+        if (arg0 === 1) {
+          throw arg1;
+        } else if (arg0 === 2) {
+          let obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
+        } else {
+          return { value: "HermesInternal", done: null };
+        }
+      } else {
+        try {
+          table = 2;
+          if (0 === c3) {
+            if (arg0 === 1) {
+              table = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              table = 3;
+              obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            } else {
+              let obj1 = callback(table[32]);
+              c3 = 1;
+              table = 1;
+              obj1 = { value: null, done: false };
+              obj1[0] = obj1.getGeneratedPoolById(callback, closure_1);
+              return obj1;
+            }
+          } else if (arg0 === 1) {
+            table = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            table = 3;
+            obj = { value: null, done: true };
+            obj[0] = arg1;
+            return obj;
+          } else {
+            table = 3;
+            return { value: "HermesInternal", done: null };
+          }
+        } catch (tmp9) {
+          table = tmp;
+          throw tmp9;
+        }
+      }
+    })();
+  });
+  obj = { style: tmp.container, children: null };
+  obj = { contentContainerStyle: null, children: null };
   const items1 = [tmp.contentContainer, ];
-  const obj1 = {};
-  const callback = React.useCallback((() => {
-    // CreateGeneratorClosureLongIndex (0x67)
-    let closure_0 = outer1_3(tmp);
-    return function() {
-      return callback(...arguments);
-    };
-  })(), []);
-  obj1.paddingBottom = importDefault(689).space.PX_16 + importDefault(5193)({ includeKeyboardHeight: true }).insets.bottom;
+  let obj1 = { paddingBottom: null };
+  callback = React.useCallback(function() {
+    const self = this;
+    const apply = closure_0.apply;
+    if (typeof apply === "unknown") {
+      let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+    } else {
+      applyArgumentsResult = apply(self, arguments);
+    }
+    return applyArgumentsResult;
+  }, []);
+  obj1[0] = importDefault(712).space.PX_16 + importDefault(5215)({ includeKeyboardHeight: true }).insets.bottom;
   items1[1] = obj1;
-  obj.contentContainerStyle = items1;
-  const obj2 = { spacing: 16 };
-  const items2 = [callback2(PoolIdInput, { onSubmit: callback }), ];
-  const obj3 = { title: "Generated Test User Pools", hasIcons: true };
-  let tmp9 = 0 === stateFromStoresArray.length;
-  if (tmp9) {
-    const obj4 = { label: "No pools available." };
-    tmp9 = callback2(stateFromStoresArray(5198).TableRow, obj4);
+  obj[0] = items1;
+  const items2 = [callback3(PoolIdInput, { onSubmit: callback }), ];
+  let tmp5Result = 0 === stateFromStoresArray.length;
+  if (tmp5Result) {
+    tmp5Result = tmp5(_require(5220).TableRow, { label: "No pools available." });
   }
-  const items3 = [tmp9, stateFromStoresArray.map((id) => outer1_10(outer1_17, { pool: id, start: 0 === arg1, end: arg1 === stateFromStoresArray.length - 1 }, id.id))];
-  obj3.children = items3;
-  items2[1] = closure_11(stateFromStoresArray(5536).TableRowGroup, obj3);
-  obj2.children = items2;
-  obj.children = closure_11(stateFromStoresArray(4576).Stack, obj2);
-  obj.children = callback2(closure_7, obj);
-  return callback2(closure_6, obj);
+  const obj2 = { spacing: 16, children: null };
+  const obj3 = { title: "Generated Test User Pools", hasIcons: true, children: null };
+  const items3 = [tmp5Result, stateFromStoresArray.map((id) => outer1_10(outer1_17, { pool: id, start: 0 === arg1, end: arg1 === length.length - 1 }, id.id))];
+  obj3[2] = items3;
+  items2[1] = closure_11(_require(5554).TableRowGroup, obj3);
+  obj2[1] = items2;
+  obj[1] = closure_11(_require(4598).Stack, obj2);
+  obj[1] = callback3(closure_7, obj);
+  return callback3(closure_6, obj);
 };

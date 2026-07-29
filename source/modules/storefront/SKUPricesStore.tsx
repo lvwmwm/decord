@@ -1,179 +1,246 @@
-// Module ID: 5649
-// Function ID: 47988
-// Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 1922, 1327, 566, 686, 2]
+// Module ID: 5667
+// Function ID: 5668
+// Name: resetStoreState
+// Dependencies: [1946, 589, 1351, 709, 2]
 
-// Module 5649 (_isNativeReflectConstruct)
-import isDiscordFrontendDevelopment from "isDiscordFrontendDevelopment";
-import initialize from "initialize";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 5667 (resetStoreState)
+import _getSystemLocale from "_getSystemLocale";
+import { Store } from "initialize";
 
 const require = arg1;
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
-  }
-  const result = _isNativeReflectConstruct();
-}
-function serializeStorefrontPriceId(type) {
-  if ("application" === type.type) {
-    const _HermesInternal2 = HermesInternal;
-    let combined = "application:" + type.applicationId;
-  } else {
-    const _HermesInternal = HermesInternal;
-    combined = "skus:" + type.skuId;
-  }
-  return combined;
-}
-function setPriceIdState(priceId, arg1) {
-  let closure_0 = arg1;
-  if ("application" === priceId.type) {
-    let obj = {};
-    const merged = Object.assign(closure_8);
-    obj = { type: "application", applicationId: priceId.applicationId };
-    obj[serializeStorefrontPriceId(obj)] = arg1;
-    let tmp7 = obj;
-  } else {
-    obj = {};
-    const merged1 = Object.assign(closure_8);
-    const _Object = Object;
-    const skuIds = priceId.skuIds;
-    const merged2 = Object.assign(Object.fromEntries(skuIds.map((skuId) => {
-      const items = [outer1_13({ type: "sku", skuId }), closure_0];
-      return items;
-    })));
-    tmp7 = obj;
-  }
-  closure_8 = tmp7;
-}
 function resetStoreState() {
-  let closure_8 = {};
-  let closure_9 = {};
-  let closure_10 = {};
-  let closure_11 = {};
+  let closure_3 = {};
+  let closure_4 = {};
+  let closure_5 = {};
+  let closure_6 = {};
 }
-let closure_8 = {};
-let closure_9 = {};
-let closure_10 = {};
-let closure_11 = {};
-let tmp2 = ((Store) => {
-  class SKUPricesStore {
-    constructor() {
-      self = this;
-      tmp = outer1_2(this, SKUPricesStore);
-      obj = outer1_5(SKUPricesStore);
-      tmp2 = outer1_4;
-      if (outer1_12()) {
-        tmp6 = globalThis;
-        _Reflect = Reflect;
-        tmp7 = outer1_5;
-        tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, outer1_5(self).constructor);
-      } else {
-        tmp3 = arguments;
-        tmp4 = arguments;
-        constructResult = obj(...arguments);
-      }
-      return tmp2(self, constructResult);
+let closure_3 = {};
+let closure_4 = {};
+let closure_5 = {};
+let closure_6 = {};
+class SKUPricesStore extends Store {
+}
+const prototype = SKUPricesStore.prototype;
+prototype["initialize"] = function initialize() {
+  this.waitFor(_getSystemLocale);
+  const items = [_getSystemLocale];
+  this.syncWith(items, resetStoreState);
+};
+prototype["getPricesForSkuId"] = function getPricesForSkuId(id) {
+  if (null != id) {
+    let pricingResultId;
+    if (dependencyMap[id] != null) {
+      pricingResultId = tmp2.pricingResultId;
+    }
+    if (null != pricingResultId) {
+      return table[pricingResultId];
     }
   }
-  callback2(SKUPricesStore, Store);
-  let obj = {
-    key: "initialize",
-    value() {
-      this.waitFor(outer1_7);
-      const items = [outer1_7];
-      this.syncWith(items, outer1_15);
+};
+prototype["getFetchStateForSkuId"] = function getFetchStateForSkuId(arg0) {
+  if (null != arg0) {
+    const obj = { type: "sku", skuId: null };
+    obj[1] = arg0;
+    if ("application" === obj.type) {
+      const _HermesInternal2 = HermesInternal;
+      let combined = "application:" + obj.applicationId;
+    } else {
+      const _HermesInternal = HermesInternal;
+      combined = "skus:" + obj.skuId;
     }
-  };
-  let items = [obj, , , , ];
-  obj = {
-    key: "getPricesForSkuId",
-    value(arg0) {
-      if (null != arg0) {
-        let pricingResultId;
-        if (null != outer1_11[arg0]) {
-          pricingResultId = tmp2.pricingResultId;
-        }
-        if (null != pricingResultId) {
-          return outer1_9[pricingResultId];
-        }
-      }
+    return closure_3[combined];
+  }
+};
+prototype["getFetchStateForApplicationId"] = function getFetchStateForApplicationId(arg0) {
+  if (null != arg0) {
+    const obj = { type: "application", applicationId: null };
+    obj[1] = arg0;
+    if ("application" === obj.type) {
+      const _HermesInternal2 = HermesInternal;
+      let combined = "application:" + obj.applicationId;
+    } else {
+      const _HermesInternal = HermesInternal;
+      combined = "skus:" + obj.skuId;
     }
-  };
-  items[1] = obj;
-  obj = {
-    key: "getFetchStateForSkuId",
-    value(skuId) {
-      if (null != skuId) {
-        const obj = { type: "sku", skuId };
-        return outer1_8[outer1_13(undefined, obj)];
-      }
+    return closure_3[combined];
+  }
+};
+prototype["getRewardsForSkuId"] = function getRewardsForSkuId(id) {
+  if (null != id) {
+    if (null != dependencyMap[id]) {
+      const mapped = tmp2.rewardResultIds.map((arg0) => table[arg0]);
+      return mapped.filter(require(1351) /* isDiscordFrontendDevelopment */.isNotNullish);
     }
-  };
-  items[2] = obj;
-  items[3] = {
-    key: "getFetchStateForApplicationId",
-    value(applicationId) {
-      if (null != applicationId) {
-        const obj = { type: "application", applicationId };
-        return outer1_8[outer1_13(undefined, obj)];
-      }
-    }
-  };
-  items[4] = {
-    key: "getRewardsForSkuId",
-    value(arg0) {
-      if (null != arg0) {
-        if (null != outer1_11[arg0]) {
-          const mapped = tmp2.rewardResultIds.map((arg0) => outer2_10[arg0]);
-          return mapped.filter(SKUPricesStore(outer1_1[6]).isNotNullish);
-        }
-      }
-    }
-  };
-  return callback(SKUPricesStore, items);
-})(require("initialize").Store);
-tmp2.displayName = "SKUPricesStore";
-tmp2 = new tmp2(require("dispatcher"), {
+  }
+};
+SKUPricesStore.displayName = "SKUPricesStore";
+const sKUPricesStore = new SKUPricesStore(require("dispatcher"), {
   LOGOUT: resetStoreState,
   SKUS_PRICING_FETCH_START: function handleFetchStart(priceId) {
-    setPriceIdState(priceId.priceId, { type: "loading" });
+    priceId = priceId.priceId;
+    let obj = { type: "loading" };
+    if ("application" === priceId.type) {
+      obj = {};
+      const merged = Object.assign(obj);
+      let str = { type: "application", applicationId: null };
+      str[1] = priceId.applicationId;
+      if ("application" === str.type) {
+        const _HermesInternal2 = HermesInternal;
+        str = "application:";
+        let combined = "application:" + str.applicationId;
+      } else {
+        const _HermesInternal = HermesInternal;
+        combined = "skus:" + `application:`.skuId;
+      }
+      obj[combined] = obj;
+    } else {
+      obj = {};
+      const merged1 = Object.assign(obj);
+      const _Object = Object;
+      const skuIds = priceId.skuIds;
+      const merged2 = Object.assign(Object.fromEntries(skuIds.map((skuId) => {
+        const obj = { type: "sku", skuId };
+        if ("application" === obj.type) {
+          const _HermesInternal2 = HermesInternal;
+          let combined = "application:" + obj.applicationId;
+        } else {
+          const _HermesInternal = HermesInternal;
+          combined = "skus:" + obj.skuId;
+        }
+        const items = [combined, obj];
+        return items;
+      })));
+    }
   },
   SKUS_PRICING_FETCH_SUCCESS: function handleFetchSuccess(arg0) {
     let data;
     let priceId;
     ({ priceId, data } = arg0);
+    let str = globalThis;
     const timestamp = Date.now();
-    setPriceIdState(priceId, { type: "success", fetchedAt: timestamp });
+    let obj = { type: "success", fetchedAt: timestamp };
+    let obj5 = obj;
     if ("application" === priceId.type) {
-      let obj = { type: "skus" };
+      obj = {};
+      const merged = Object.assign(obj6);
+      let str2 = { type: "application", applicationId: null };
+      str2[1] = priceId.applicationId;
+      if ("application" === str2.type) {
+        const _HermesInternal2 = HermesInternal;
+        str2 = "application:";
+        let combined = "application:" + str2.applicationId;
+      } else {
+        const _HermesInternal = HermesInternal;
+        combined = "skus:" + `application:`.skuId;
+      }
+      obj[combined] = obj;
+    } else {
+      obj = {};
+      const merged1 = Object.assign(obj6);
       const _Object = Object;
-      obj.skuIds = Object.keys(data.skuPriceMap);
-      obj = { type: "success", fetchedAt: timestamp };
-      setPriceIdState(obj, obj);
+      const skuIds = priceId.skuIds;
+      const merged2 = Object.assign(Object.fromEntries(skuIds.map((skuId) => {
+        const obj = { type: "sku", skuId };
+        if ("application" === obj.type) {
+          const _HermesInternal2 = HermesInternal;
+          let combined = "application:" + obj.applicationId;
+        } else {
+          const _HermesInternal = HermesInternal;
+          combined = "skus:" + obj.skuId;
+        }
+        const items = [combined, obj];
+        return items;
+      })));
+      obj6 = obj;
+      if ("application" !== priceId.type) {
+        const obj1 = {};
+        const merged3 = Object.assign(obj1);
+        const merged4 = Object.assign(data.pricingResultIdMap);
+        const obj2 = {};
+        const merged5 = Object.assign(obj2);
+        const merged6 = Object.assign(data.skuPriceMap);
+        const obj3 = {};
+        const merged7 = Object.assign(obj3);
+        const merged8 = Object.assign(data.rewardResultIdMap);
+      } else {
+        const obj4 = { type: "skus", skuIds: null };
+        const _Object3 = Object;
+        obj4[1] = Object.keys(data.skuPriceMap);
+        obj5 = { type: "success", fetchedAt: null };
+        obj5[1] = timestamp;
+        if ("application" !== obj4.type) {
+          obj6 = {};
+          const merged9 = Object.assign(obj6);
+          const _Object2 = Object;
+          const skuIds1 = obj4.skuIds;
+          const merged10 = Object.assign(Object.fromEntries(skuIds1.map((skuId) => {
+            const obj = { type: "sku", skuId };
+            if ("application" === obj.type) {
+              const _HermesInternal2 = HermesInternal;
+              let combined = "application:" + obj.applicationId;
+            } else {
+              const _HermesInternal = HermesInternal;
+              combined = "skus:" + obj.skuId;
+            }
+            const items = [combined, obj];
+            return items;
+          })));
+        }
+        const obj7 = {};
+        const merged11 = Object.assign(obj6);
+        let obj8 = { type: "application", applicationId: null };
+        obj8[1] = obj4.applicationId;
+        if ("application" === obj8.type) {
+          obj8 = str.HermesInternal.concat;
+          str = "application:";
+          let obj9Result = obj8(obj8.applicationId);
+        } else {
+          const _HermesInternal3 = HermesInternal;
+          obj9Result = "skus:" + obj8.skuId;
+        }
+        obj7[obj9Result] = obj5;
+      }
     }
-    obj = {};
-    const merged = Object.assign(obj);
-    const merged1 = Object.assign(data.pricingResultIdMap);
-    const obj1 = {};
-    const merged2 = Object.assign(obj1);
-    const merged3 = Object.assign(data.skuPriceMap);
-    const obj2 = {};
-    const merged4 = Object.assign(obj2);
-    const merged5 = Object.assign(data.rewardResultIdMap);
   },
   SKUS_PRICING_FETCH_FAIL: function handleFetchFail(priceId) {
-    setPriceIdState(priceId.priceId, { type: "error", fetchedAt: Date.now() });
+    priceId = priceId.priceId;
+    let obj = { type: "error", fetchedAt: Date.now() };
+    let str = globalThis;
+    if ("application" === priceId.type) {
+      obj = {};
+      const merged = Object.assign(obj1);
+      obj = { type: "application", applicationId: null };
+      obj[1] = priceId.applicationId;
+      if ("application" === obj.type) {
+        obj = str.HermesInternal.concat;
+        str = "application:";
+        let obj1Result = obj(obj.applicationId);
+      } else {
+        let _HermesInternal = HermesInternal;
+        obj1Result = "skus:" + obj.skuId;
+      }
+      obj[obj1Result] = obj;
+    } else {
+      obj1 = {};
+      const merged1 = Object.assign(obj1);
+      const _Object = Object;
+      const skuIds = priceId.skuIds;
+      const merged2 = Object.assign(Object.fromEntries(skuIds.map((skuId) => {
+        const obj = { type: "sku", skuId };
+        if ("application" === obj.type) {
+          const _HermesInternal2 = HermesInternal;
+          let combined = "application:" + obj.applicationId;
+        } else {
+          const _HermesInternal = HermesInternal;
+          combined = "skus:" + obj.skuId;
+        }
+        const items = [combined, obj];
+        return items;
+      })));
+    }
   },
   STOREFRONT_PROMOTION_ID_OVERRIDE_SET: resetStoreState
 });
-let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/storefront/SKUPricesStore.tsx");
+const result = require("isDiscordFrontendDevelopment").fileFinishedImporting("modules/storefront/SKUPricesStore.tsx");
 
-export default tmp2;
+export default sKUPricesStore;

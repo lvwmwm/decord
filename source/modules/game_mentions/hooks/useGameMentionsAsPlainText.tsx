@@ -1,56 +1,56 @@
-// Module ID: 9042
-// Function ID: 71031
+// Module ID: 9066
+// Function ID: 9067
 // Name: useGameMentionsAsPlainText
-// Dependencies: [31, 4186, 1850, 4602, 5888, 566, 1832, 8463, 1212, 2]
+// Dependencies: [19, 4210, 1874, 4624, 5906, 589, 1856, 8487, 1236, 2]
 // Exports: useGameMentionsAsPlainText
 
-// Module 9042 (useGameMentionsAsPlainText)
-import result from "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_4 from "_isNativeReflectConstruct";
+// Module 9066 (useGameMentionsAsPlainText)
+import noop from "noop";
+import map from "map";
+import mergeGuildAvatar from "mergeGuildAvatar";
 import regExp from "regExp";
 
-let closure_5;
+let c5;
 let closure_6;
 const require = arg1;
-({ extractGameMentionIds: closure_5, GAME_MENTION_RAW_RE_GLOBAL: closure_6 } = regExp);
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/game_mentions/hooks/useGameMentionsAsPlainText.tsx");
+({ extractGameMentionIds: c5, GAME_MENTION_RAW_RE_GLOBAL: closure_6 } = regExp);
+const result = require("mergeGuildAvatar").fileFinishedImporting("modules/game_mentions/hooks/useGameMentionsAsPlainText.tsx");
 
 export const useGameMentionsAsPlainText = function useGameMentionsAsPlainText(state) {
   const _require = state;
   const items = [state];
   const memo = React.useMemo(() => {
-    let str = "";
-    if (null != closure_0) {
-      str = closure_0;
+    let str = closure_0;
+    if (closure_0 == null) {
+      str = "";
     }
     return outer1_5(str);
   }, items);
   const games = _require(memo[4]).useGames(memo);
   const obj = _require(memo[4]);
-  const items1 = [_isNativeReflectConstruct, closure_4];
+  const items1 = [map, mergeGuildAvatar];
   const items2 = [state, memo];
   return _require(memo[5]).useStateFromStores(items1, () => {
     if (!obj.isNullOrEmpty(nsfwAllowed)) {
       if (0 !== memo.length) {
         const currentUser = outer1_4.getCurrentUser();
         nsfwAllowed = undefined;
-        if (null != currentUser) {
+        if (currentUser != null) {
           nsfwAllowed = currentUser.nsfwAllowed;
         }
-        return nsfwAllowed.replace(outer1_6, (arg0, arg1) => {
-          const game = outer2_3.getGame(arg1);
+        return str.replace(outer1_6, (arg0, gameId) => {
+          const game = outer1_3.getGame(gameId);
           if (obj.isGameProfileObscured(game, nsfwAllowed)) {
-            const intl2 = nsfwAllowed(memo[8]).intl;
-            let stringResult = intl2.string(nsfwAllowed(memo[8]).t["11pdXZ"]);
+            const intl2 = tmp2(tmp3[8]).intl;
+            let stringResult = intl2.string(tmp2(tmp3[8]).t["11pdXZ"]);
           } else {
             stringResult = undefined;
-            if (null != game) {
+            if (game != null) {
               stringResult = game.name;
             }
-            if (null == stringResult) {
-              const intl = nsfwAllowed(memo[8]).intl;
-              stringResult = intl.string(nsfwAllowed(memo[8]).t["11pdXZ"]);
+            if (stringResult == null) {
+              const intl = tmp2(tmp3[8]).intl;
+              stringResult = intl.string(tmp2(tmp3[8]).t["11pdXZ"]);
             }
           }
           return stringResult;

@@ -1,58 +1,224 @@
-// Module ID: 5183
-// Function ID: 45035
+// Module ID: 5205
+// Function ID: 5206
 // Name: _fetchMemberCountsFromBackend
-// Dependencies: [5, 5182, 653, 686, 507, 1362, 5083, 2]
+// Dependencies: [5, 5204, 676, 709, 530, 1386, 5105, 2]
 // Exports: fetchMemberCounts, requestMembersForRole
 
-// Module 5183 (_fetchMemberCountsFromBackend)
+// Module 5205 (_fetchMemberCountsFromBackend)
 import priv from "priv";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import getRoleMemberCount from "getRoleMemberCount";
 import { Endpoints } from "ME";
-import importDefaultResult from "priv";
 
 const require = arg1;
-async function _fetchMemberCountsFromBackend(arg0, arg1) {
-  let obj = outer2_1(outer2_2[3]);
-  obj = { type: "GUILD_ROLE_MEMBER_COUNT_FETCH_START", guildId: arg0 };
-  obj.dispatch(obj);
-  const HTTP = outer2_0(outer2_2[4]).HTTP;
-  obj = { url: outer2_5.GUILD_ROLE_MEMBER_COUNTS(arg0), rejectWithError: true };
-  const obj4 = outer2_1(outer2_2[3]);
-  obj4.dispatch({ type: "GUILD_ROLE_MEMBER_COUNT_FETCH_SUCCESS", guildId: arg0, roleMemberCount: yield HTTP.get(obj).body });
-}
-async function _fetchMemberCounts(arg0, arg1) {
-  if (outer2_4.shouldFetch(arg0)) {
-    yield (function fetchMemberCountsFromBackend(fetchState) {
-      return outer3_7(...arguments);
-    })(arg0);
+function _fetchMemberCountsFromBackend() {
+  const self = this;
+  const tmp = callback((arg0) => {
+    let closure_0 = arg0;
+    let c5 = 0;
+    let c6 = 0;
+    let c4 = 0;
+    return (function*(arg0, body) {
+      if (c6 === 2) {
+        c6 = 3;
+        HermesBuiltin.throwTypeError();
+      } else if (tmp6 === 3) {
+        if (arg0 === 1) {
+          throw body;
+        } else if (arg0 === 2) {
+          let obj = { value: null, done: true };
+          obj[0] = body;
+          return obj;
+        } else {
+          return { value: "HermesInternal", done: null };
+        }
+      } else {
+        try {
+          c6 = 2;
+          if (0 === c5) {
+            if (arg0 === 1) {
+              c6 = 3;
+              throw body;
+            } else if (arg0 === 2) {
+              c6 = 3;
+              obj = { value: null, done: true };
+              obj[0] = body;
+              return obj;
+            } else {
+              const dependencyMap = tmp3;
+              body = tmp7;
+              body = undefined;
+              let c4 = 1;
+              const obj1 = { type: "GUILD_ROLE_MEMBER_COUNT_FETCH_START", guildId: null };
+              obj1[1] = callback;
+              outer1_1(outer1_2[3]).dispatch(obj1);
+              const HTTP = callback(outer1_2[4]).HTTP;
+              const obj2 = { url: null, rejectWithError: true };
+              obj2[0] = c5.GUILD_ROLE_MEMBER_COUNTS(callback);
+              c5 = 2;
+              c6 = 1;
+              let obj3 = { value: null, done: false };
+              obj3[0] = HTTP.get(obj2);
+              return obj3;
+            }
+          } else {
+            if (1 === tmp7) {
+              c4 = 0;
+              obj3 = body(709);
+              const obj4 = { type: "GUILD_ROLE_MEMBER_COUNT_FETCH_FAILURE", guildId: null };
+              obj4[1] = callback;
+              obj3.dispatch(obj4);
+              c6 = 3;
+            } else if (arg0 === 1) {
+              c6 = 3;
+              throw body;
+            } else if (arg0 !== 2) {
+              body = body.body;
+              obj = body(709);
+              const obj5 = { type: "GUILD_ROLE_MEMBER_COUNT_FETCH_SUCCESS", guildId: null, roleMemberCount: null };
+              obj5[1] = callback;
+              obj5[2] = body;
+              obj.dispatch(obj5);
+              c4 = 0;
+            }
+            c4 = 0;
+            c6 = 3;
+            const obj6 = { value: null, done: true };
+            obj6[0] = body;
+            return obj6;
+          }
+        } catch (tmp22) {
+          let priv = tmp22;
+          if (tmp4 === c4) {
+            c6 = tmp2;
+            throw tmp22;
+          } else {
+            c5 = tmp;
+          }
+        }
+      }
+    })();
+  });
+  const _fetchMemberCountsFromBackend = tmp;
+  const apply = tmp.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
   }
+  return applyArgumentsResult;
 }
-importDefaultResult = new importDefaultResult({ maxAge: 10000 });
+function _fetchMemberCounts() {
+  let self = this;
+  const tmp = callback((arg0) => {
+    let closure_0 = arg0;
+    let c2 = 0;
+    let c1 = 0;
+    return (function*(arg0) {
+      if (c1 === 2) {
+        c1 = 3;
+        HermesBuiltin.throwTypeError();
+      } else if (tmp3 === 3) {
+        if (arg0 === 1) {
+          throw arg1;
+        } else if (arg0 === 2) {
+          let obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
+        } else {
+          return { value: "HermesInternal", done: null };
+        }
+      } else {
+        try {
+          c1 = 2;
+          if (0 === c2) {
+            if (arg0 === 1) {
+              c1 = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              c1 = 3;
+              obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            } else {
+              if (outer1_4.shouldFetch(closure_0)) {
+                c2 = 1;
+                c1 = 1;
+                const obj1 = { value: null, done: false };
+                obj1[0] = (function fetchMemberCountsFromBackend(arg0) {
+                  const self = this;
+                  const apply = closure_6.apply;
+                  if (typeof apply === "unknown") {
+                    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+                  } else {
+                    applyArgumentsResult = apply(self, arguments);
+                  }
+                  return applyArgumentsResult;
+                })(tmp5);
+                return obj1;
+              }
+              tmp5 = closure_0;
+            }
+          } else if (arg0 === 1) {
+            c1 = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            c1 = 3;
+            obj = { value: null, done: true };
+            obj[0] = arg1;
+            return obj;
+          }
+          c1 = 3;
+          return { value: "HermesInternal", done: null };
+        } catch (tmp7) {
+          c1 = tmp;
+          throw tmp7;
+        }
+      }
+    })();
+  });
+  const _fetchMemberCounts = tmp;
+  let apply = tmp.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
+}
+const metroImportAll = new require("priv")({ maxAge: 10000 });
+const tmp2 = new require("priv")({ maxAge: 10000 });
 let result = require("ME").fileFinishedImporting("modules/guild_settings/GuildRoleMemberActionCreators.tsx");
 
-export const fetchMemberCounts = function fetchMemberCounts(closure_0) {
-  return _fetchMemberCounts(...arguments);
+export const fetchMemberCounts = function fetchMemberCounts(guildId) {
+  const self = this;
+  const apply = _fetchMemberCounts.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
 };
-export const requestMembersForRole = function requestMembersForRole(closure_0, closure_1, arg2) {
+export const requestMembersForRole = function requestMembersForRole(closure_0, callback, arg2) {
   let flag = arg2;
   if (arg2 === undefined) {
     flag = true;
   }
-  const combined = "" + closure_0 + "-" + closure_1;
+  const combined = "" + closure_0 + "-" + callback;
   if (flag) {
-    if (null != importDefaultResult.get(combined)) {
+    if (null != tmp2.get(combined)) {
       let resolved = Promise.resolve(null);
     }
     return resolved;
   }
-  const result = importDefaultResult.set(combined, true);
-  resolved = (function doRequestMembersForRole(closure_0, closure_1) {
-    const HTTP = outer1_0(outer1_2[4]).HTTP;
-    const obj = { url: outer1_5.GUILD_ROLE_MEMBER_IDS(closure_0, closure_1), rejectWithError: outer1_0(outer1_2[4]).rejectWithMigratedError() };
-    const value = HTTP.get(obj);
-    return value.then((body) => {
-      const membersById = outer2_1(outer2_2[6]).requestMembersById(closure_0, body.body, false);
-      return body.body.length;
-    });
-  })(closure_0, closure_1);
+  const result = tmp2.set(combined, true);
+  const _require = closure_0;
+  const HTTP = _require(530).HTTP;
+  const obj = { url: Endpoints.GUILD_ROLE_MEMBER_IDS(closure_0, callback), rejectWithError: null };
+  obj[1] = _require(530).rejectWithMigratedError();
+  const value = HTTP.get(obj);
+  resolved = value.then((body) => {
+    const membersById = outer1_1(outer1_2[6]).requestMembersById(closure_0, body.body, false);
+    return body.body.length;
+  });
 };

@@ -1,17 +1,17 @@
-// Module ID: 11167
-// Function ID: 86701
+// Module ID: 11191
+// Function ID: 11192
 // Name: ForumPostTimestamp
-// Dependencies: [31, 11154, 33, 4165, 9109, 4161, 2]
+// Dependencies: [19, 11178, 21, 4189, 9133, 4185, 2]
 // Exports: default
 
-// Module 11167 (ForumPostTimestamp)
-import "result";
+// Module 11191 (ForumPostTimestamp)
+import "noop";
 import { useForumChannelStore } from "set";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
 const require = arg1;
-let closure_4 = _createForOfIteratorHelperLoose.createStyles({ text: { lineHeight: 18, height: 18 } });
+let closure_4 = createCacheKey.createStyles({ text: { lineHeight: 18, height: 18 } });
 const result = require("jsxProd").fileFinishedImporting("modules/forums/native/posts/ForumPostTimestamp.tsx");
 
 export default function ForumPostTimestamp(thread) {
@@ -20,15 +20,13 @@ export default function ForumPostTimestamp(thread) {
   let textStyle;
   thread = thread.thread;
   ({ textStyle, hasUnreads, format } = thread);
-  let obj = require(9109) /* sortForumPostReactionsByPopularityDesc */;
-  let str = "text-muted";
-  const lastActiveTimestamp = obj.useLastActiveTimestamp(thread, useForumChannelStore(thread.parent_id).sortOrder, format);
+  const tmp = callback();
+  const tmp2 = require;
+  let color = "text-muted";
+  const children = require(9133) /* useLoadForumUnreadCounts */.useLastActiveTimestamp(thread, useForumChannelStore(thread.parent_id).sortOrder, format);
   if (hasUnreads) {
-    str = "text-default";
+    color = "text-default";
   }
-  obj = { lineClamp: 1, variant: "text-xs/normal", color: str };
-  const items = [textStyle, callback().text];
-  obj.style = items;
-  obj.children = lastActiveTimestamp;
-  return jsx(require(4161) /* Text */.Text, { lineClamp: 1, variant: "text-xs/normal", color: str });
+  const style = [textStyle, tmp.text];
+  return jsx(tmp2(4185).Text, { lineClamp: 1, variant: "text-xs/normal", color, style, children });
 };

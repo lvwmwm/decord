@@ -1,26 +1,25 @@
-// Module ID: 10598
-// Function ID: 82424
+// Module ID: 10632
+// Function ID: 10633
 // Name: transformUser
-// Dependencies: [1828, 2]
+// Dependencies: [1852, 2]
 // Exports: default
 
-// Module 10598 (transformUser)
+// Module 10632 (transformUser)
 const result = require("set").fileFinishedImporting("modules/rpc/helpers/transformUser.tsx");
 
 export default function transformUser(id) {
   let avatarDecoration;
   let bot;
   let flags;
-  const premiumType = id.premiumType;
-  const obj = { id: id.id, username: id.username, discriminator: id.discriminator, global_name: id.globalName, avatar: id.avatar };
-  let num = 0;
+  let num = id.premiumType;
+  const obj = { id: id.id, username: id.username, discriminator: id.discriminator, global_name: id.globalName, avatar: id.avatar, avatar_decoration_data: null, bot: null, flags: null, premium_type: null };
   ({ avatarDecoration, bot, flags } = id);
-  obj.avatar_decoration_data = require(1828) /* parseAvatarDecorationData */.parseAvatarDecorationData(avatarDecoration);
-  obj.bot = bot;
-  obj.flags = flags;
-  if (null != premiumType) {
-    num = premiumType;
+  obj[5] = require(1852) /* parseAvatarDecorationData */.parseAvatarDecorationData(avatarDecoration);
+  obj[6] = bot;
+  obj[7] = flags;
+  if (num == null) {
+    num = 0;
   }
-  obj.premium_type = num;
+  obj[8] = num;
   return obj;
 };

@@ -1,100 +1,105 @@
-// Module ID: 9758
-// Function ID: 75858
+// Module ID: 9780
+// Function ID: 9781
 // Name: PremiumGiftCustomization
-// Dependencies: [57, 31, 27, 1852, 33, 4165, 689, 1456, 8780, 9759, 1212, 8753, 9760, 4161, 8785, 8787, 9761, 2]
+// Dependencies: [32, 19, 17, 1876, 21, 4189, 712, 1480, 8804, 9781, 1236, 8777, 9782, 4185, 8809, 8811, 9783, 2]
 // Exports: default
 
-// Module 9758 (PremiumGiftCustomization)
+// Module 9780 (PremiumGiftCustomization)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
-import get_ActivityIndicator from "get ActivityIndicator";
+import noop from "noop";
+import get_ActivityIndicator from "set";
 import { PremiumTypes } from "GuildFeatures";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_10;
-let closure_5;
+let c10;
+let c5;
+let c9;
 let closure_6;
-let closure_8;
-let closure_9;
+let metroImportAll;
 const require = arg1;
-({ View: closure_5, ScrollView: closure_6 } = get_ActivityIndicator);
-({ jsx: closure_8, Fragment: closure_9, jsxs: closure_10 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { flex: 1, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW };
-_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.scrollViewContainer = { paddingBottom: require("_createForOfIteratorHelperLoose").space.PX_24 };
-let obj1 = { paddingBottom: require("_createForOfIteratorHelperLoose").space.PX_24 };
-_createForOfIteratorHelperLoose.senderHeaderTitle = { marginTop: require("_createForOfIteratorHelperLoose").space.PX_24, marginLeft: require("_createForOfIteratorHelperLoose").space.PX_16, marginBottom: require("_createForOfIteratorHelperLoose").space.PX_8, fontSize: 14 };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-let obj2 = { marginTop: require("_createForOfIteratorHelperLoose").space.PX_24, marginLeft: require("_createForOfIteratorHelperLoose").space.PX_16, marginBottom: require("_createForOfIteratorHelperLoose").space.PX_8, fontSize: 14 };
+({ View: c5, ScrollView: closure_6 } = get_ActivityIndicator);
+({ jsx: metroImportAll, Fragment: c9, jsxs: c10 } = jsxProd);
+createCacheKey = { container: null, scrollViewContainer: null, senderHeaderTitle: null };
+createCacheKey = { flex: 1, backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { paddingBottom: require("Themes").space.PX_24 };
+let obj1 = { paddingBottom: require("Themes").space.PX_24 };
+createCacheKey[2] = { marginTop: require("Themes").space.PX_24, marginLeft: require("Themes").space.PX_16, marginBottom: require("Themes").space.PX_8, fontSize: 14 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let obj2 = { marginTop: require("Themes").space.PX_24, marginLeft: require("Themes").space.PX_16, marginBottom: require("Themes").space.PX_8, fontSize: 14 };
 const result = require("get ActivityIndicator").fileFinishedImporting("modules/premium/native/gifting/PremiumGiftCustomization.tsx");
 
 export default function PremiumGiftCustomization() {
   let claimableRewards;
   let premiumType;
+  let recipientUser;
   let selectedGiftingPromotionReward;
   let obj = navigation(ref[7]);
   navigation = obj.useNavigation();
-  const tmp2 = _createForOfIteratorHelperLoose();
+  const tmp4 = createCacheKey();
   let obj1 = navigation(ref[8]);
   const nativeGiftContext = obj1.useNativeGiftContext();
-  const recipientUser = nativeGiftContext.recipientUser;
-  ({ premiumType, claimableRewards, selectedGiftingPromotionReward } = nativeGiftContext);
+  ({ recipientUser, premiumType, claimableRewards, selectedGiftingPromotionReward } = nativeGiftContext);
   let obj2 = navigation(ref[9]);
+  let obj3 = React;
   const giftingPromotionDefaultSelectionV2 = obj2.useGiftingPromotionDefaultSelectionV2(claimableRewards, selectedGiftingPromotionReward);
-  const tmp5 = stringResult(React.useState(0), 2);
-  const first = tmp5[0];
+  const tmp7 = callback(React.useState(0), 2);
+  const first = tmp7[0];
   ref = React.useRef(null);
   const items = [first];
-  const callback = React.useCallback(() => {
+  callback = React.useCallback(() => {
     const timerId = setTimeout(() => {
-      const current = outer1_2.current;
+      const current = ref.current;
       let scrollToResult;
-      if (null != current) {
-        const obj = { y: outer1_1, animated: true };
+      if (current != null) {
+        const obj = { y: null, animated: true };
+        obj[0] = closure_1;
         scrollToResult = current.scrollTo(obj);
       }
       return scrollToResult;
     }, 100);
   }, items);
   if (premiumType === PremiumTypes.TIER_2) {
-    const intl2 = navigation(ref[10]).intl;
-    stringResult = intl2.string(navigation(ref[10]).t.lG6a5x);
+    const intl2 = tmp(tmp2[10]).intl;
+    let stringResult = intl2.string(tmp(tmp2[10]).t.lG6a5x);
   } else {
-    let intl = navigation(ref[10]).intl;
-    stringResult = intl.string(navigation(ref[10]).t["t9uG/o"]);
+    let intl = tmp(tmp2[10]).intl;
+    stringResult = intl.string(tmp(tmp2[10]).t["t9uG/o"]);
   }
+  callback = stringResult;
   const items1 = [navigation, stringResult];
-  const effect = React.useEffect(() => {
-    let obj = {};
+  const effect = obj3.useEffect(() => {
+    let obj = { title: null };
     const intl = navigation(ref[10]).intl;
     obj = { nitroTierName: _slicedToArray };
-    obj.title = intl.formatToPlainString(navigation(ref[10]).t["RMu0/q"], obj);
+    obj[0] = intl.formatToPlainString(navigation(ref[10]).t["RMu0/q"], obj);
     navigation.setOptions(obj);
   }, items1);
-  obj = { style: tmp2.container };
-  obj = { ref, contentContainerStyle: tmp2.scrollViewContainer, showsVerticalScrollIndicator: false };
-  obj1 = {};
-  const items2 = [callback(first(ref[11]), {}), callback(first(ref[12]), {}), ];
-  let tmp19 = null != recipientUser;
-  if (tmp19) {
-    obj2 = {};
-    const obj3 = { style: tmp2.senderHeaderTitle, variant: "text-md/semibold" };
-    const intl3 = navigation(ref[10]).intl;
-    obj3.children = intl3.string(navigation(ref[10]).t.NlkxGS);
-    const items3 = [callback(navigation(ref[13]).Text, obj3), , ];
-    const obj4 = { user: recipientUser };
-    items3[1] = callback(first(ref[14]), obj4);
-    const obj5 = { onFocusMessage: callback, setMessagePosition: tmp5[1] };
-    items3[2] = callback(first(ref[15]), obj5);
-    obj2.children = items3;
-    tmp19 = callback2(closure_9, obj2);
+  obj = { style: tmp4.container, children: null };
+  obj = { ref, contentContainerStyle: tmp4.scrollViewContainer, showsVerticalScrollIndicator: false, children: null };
+  const items2 = [callback2(first(ref[11]), {}), callback2(first(ref[12]), {}), ];
+  let tmp13Result = null != recipientUser;
+  if (tmp13Result) {
+    obj1 = { children: null };
+    obj2 = { style: null, variant: "text-md/semibold", children: null };
+    obj2[0] = tmp4.senderHeaderTitle;
+    const intl3 = tmp(tmp2[10]).intl;
+    obj2[2] = intl3.string(tmp(tmp2[10]).t.NlkxGS);
+    const items3 = [tmp15(tmp(tmp2[13]).Text, obj2), , ];
+    obj3 = { user: null };
+    obj3[0] = recipientUser;
+    items3[1] = tmp15(tmp17(tmp2[14]), obj3);
+    const obj4 = { onFocusMessage: null, setMessagePosition: null };
+    obj4[0] = callback;
+    obj4[1] = tmp7[1];
+    items3[2] = tmp15(tmp17(tmp2[15]), obj4);
+    obj1[0] = items3;
+    tmp13Result = tmp13(closure_9, obj1);
   }
-  items2[2] = tmp19;
-  obj1.children = items2;
-  obj.children = callback2(closure_5, obj1);
-  const items4 = [callback(closure_6, obj), callback(first(ref[16]), { defaultSelection: giftingPromotionDefaultSelectionV2 })];
-  obj.children = items4;
-  return callback2(closure_5, obj);
+  items2[2] = tmp13Result;
+  obj[3] = closure_10(closure_5, { children: items2 });
+  const items4 = [callback2(closure_6, obj), callback2(first(ref[16]), { defaultSelection: giftingPromotionDefaultSelectionV2 })];
+  obj[1] = items4;
+  return closure_10(closure_5, obj);
 };

@@ -1,73 +1,164 @@
-// Module ID: 16687
-// Function ID: 130004
+// Module ID: 16723
+// Function ID: 16724
 // Name: ErrorScreen
-// Dependencies: [5, 57, 31, 27, 33, 4165, 689, 1456, 16669, 16673, 4161, 1212, 4576, 4578, 5623, 2]
+// Dependencies: [5, 32, 19, 17, 21, 4189, 712, 1480, 16705, 16709, 4185, 1236, 4598, 4600, 5641, 2]
 // Exports: default
 
-// Module 16687 (ErrorScreen)
-import closure_3 from "_createForOfIteratorHelperLoose";
+// Module 16723 (ErrorScreen)
+import closure_3 from "createCacheKey";
 import _slicedToArray from "_slicedToArray";
-import result from "result";
+import noop from "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_7;
-let closure_8;
+let error;
+let metroImportAll;
 const require = arg1;
-({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { flexDirection: "column", justifyContent: "center", gap: require("_createForOfIteratorHelperLoose").space.PX_8, padding: require("_createForOfIteratorHelperLoose").space.PX_16, alignItems: "center" };
-_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.buttonContainer = { marginTop: require("_createForOfIteratorHelperLoose").space.PX_8 };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-let obj1 = { marginTop: require("_createForOfIteratorHelperLoose").space.PX_8 };
-const result = require("result").fileFinishedImporting("modules/safety_flows/native/ErrorScreen.tsx");
+({ jsx: error, jsxs: metroImportAll } = jsxProd);
+createCacheKey = { container: null, buttonContainer: null };
+createCacheKey = { flexDirection: "column", justifyContent: "center", gap: require("Themes").space.PX_8, padding: require("Themes").space.PX_16, alignItems: "center" };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { marginTop: require("Themes").space.PX_8 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let obj1 = { marginTop: require("Themes").space.PX_8 };
+let result = require("noop").fileFinishedImporting("modules/safety_flows/native/ErrorScreen.tsx");
 
 export default function ErrorScreen() {
   function _handleRetry() {
-    // CreateGeneratorClosureLongIndex (0x67)
-    const obj = outer1_3(tmp);
-    return obj(...arguments);
+    const self = this;
+    const tmp = outer1_3(function*() {
+      if (c5 === 2) {
+        c5 = 3;
+        HermesBuiltin.throwTypeError();
+      } else if (tmp6 === 3) {
+        if (arg0 === 1) {
+          throw arg1;
+        } else if (arg0 === 2) {
+          let obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
+        } else {
+          return { value: "HermesInternal", done: null };
+        }
+      } else {
+        try {
+          c5 = 2;
+          if (0 === c4) {
+            if (arg0 === 1) {
+              c5 = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              c5 = 3;
+              obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            } else {
+              let closure_1 = tmp3;
+              let callback = tmp7;
+              callback = undefined;
+              let c3 = 1;
+              outer1_0(true);
+              let obj2 = outer1_0(outer1_2[8]);
+              c4 = 2;
+              c5 = 1;
+              const obj1 = { value: null, done: false };
+              obj1[0] = obj2.getCurrentTask();
+              return obj1;
+            }
+          } else if (1 === tmp7) {
+            c3 = 0;
+            callback(false);
+            throw closure_2;
+          } else if (arg0 === 1) {
+            c5 = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            c3 = 0;
+            callback(false);
+            c5 = 3;
+            obj2 = { value: null, done: true };
+            obj2[0] = arg1;
+            return obj2;
+          } else {
+            callback = arg1;
+            if (null != callback) {
+              obj = outer1_0(outer1_2[9]);
+              const result = obj.navigateToScreenForTask(closure_1, callback);
+            }
+            c3 = 0;
+            callback(false);
+            c5 = 3;
+            return { value: "HermesInternal", done: null };
+          }
+        } catch (tmp32) {
+          closure_2 = tmp32;
+          if (tmp4 === c3) {
+            c5 = tmp2;
+            throw tmp32;
+          } else {
+            c4 = tmp;
+          }
+        }
+      }
+    });
+    const _handleRetry = tmp;
+    const apply = tmp.apply;
+    if (typeof apply === "unknown") {
+      let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+    } else {
+      applyArgumentsResult = apply(self, arguments);
+    }
+    return applyArgumentsResult;
   }
-  const tmp = callback(React.useState(false), 2);
+  let tmp = callback(React.useState(false), 2);
   const _require = tmp[1];
   let obj = _require(_handleRetry[7]);
   let closure_1 = obj.useNavigation();
-  const tmp2 = _createForOfIteratorHelperLoose();
-  obj = { style: tmp2.container };
-  obj = { variant: "heading-lg/semibold" };
+  const tmp2 = createCacheKey();
+  obj = { style: tmp2.container, children: null };
+  obj = { variant: "heading-lg/semibold", children: null };
   const intl = _require(_handleRetry[11]).intl;
-  obj.children = intl.string(_require(_handleRetry[11]).t.c6kn6F);
+  obj[1] = intl.string(_require(_handleRetry[11]).t.c6kn6F);
   const items = [callback2(_require(_handleRetry[10]).Text, obj), , ];
-  const obj1 = { variant: "text-md/normal", color: "text-muted" };
+  let obj1 = { variant: "text-md/normal", color: "text-muted", children: null };
   const intl2 = _require(_handleRetry[11]).intl;
-  obj1.children = intl2.string(_require(_handleRetry[11]).t.ZUEGFn);
+  obj1[2] = intl2.string(_require(_handleRetry[11]).t.ZUEGFn);
   items[1] = callback2(_require(_handleRetry[10]).Text, obj1);
-  const obj2 = { style: tmp2.buttonContainer, spacing: 8 };
+  let obj2 = { style: tmp2.buttonContainer, spacing: 8, children: null };
   const obj3 = {
     onPress() {
       return callback(_handleRetry[14]).logout("safety_flows_error_screen");
-    }
+    },
+    text: null,
+    variant: "secondary",
+    size: "md"
   };
   const intl3 = _require(_handleRetry[11]).intl;
-  obj3.text = intl3.string(_require(_handleRetry[11]).t["2jxGer"]);
-  obj3.variant = "secondary";
-  obj3.size = "md";
+  obj3[1] = intl3.string(_require(_handleRetry[11]).t["2jxGer"]);
   const items1 = [callback2(_require(_handleRetry[13]).Button, obj3), ];
   const obj4 = {
     onPress: function handleRetry() {
-      return _handleRetry(...arguments);
-    }
+      const self = this;
+      const apply = _handleRetry.apply;
+      if (typeof apply === "unknown") {
+        let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+      } else {
+        applyArgumentsResult = apply(self, arguments);
+      }
+      return applyArgumentsResult;
+    },
+    text: null,
+    variant: "primary",
+    size: "md",
+    loading: null
   };
   const intl4 = _require(_handleRetry[11]).intl;
-  obj4.text = intl4.string(_require(_handleRetry[11]).t["7NqTJn"]);
-  obj4.variant = "primary";
-  obj4.size = "md";
-  obj4.loading = tmp[0];
+  obj4[1] = intl4.string(_require(_handleRetry[11]).t["7NqTJn"]);
+  obj4[4] = tmp[0];
   items1[1] = callback2(_require(_handleRetry[13]).Button, obj4);
-  obj2.children = items1;
+  obj2[2] = items1;
   items[2] = callback3(_require(_handleRetry[12]).Stack, obj2);
-  obj.children = items;
+  obj[1] = items;
   return callback3(View, obj);
 };

@@ -1,68 +1,69 @@
-// Module ID: 16471
-// Function ID: 128413
-// Name: EnableCommunityModalIcons
-// Dependencies: [57, 6, 7, 31, 482, 4011, 16472, 16473, 16474, 16478, 16479, 7676, 4101, 2]
+// Module ID: 16506
+// Function ID: 16507
+// Name: safetyCheck
+// Dependencies: [32, 19, 505, 4035, 16507, 16508, 16509, 16513, 16514, 7699, 4125, 2]
 // Exports: default
 
-// Module 16471 (EnableCommunityModalIcons)
+// Module 16506 (safetyCheck)
 import _slicedToArray from "_slicedToArray";
-import registerAsset from "registerAsset";
-import closure_5 from "registerAsset";
-import result from "result";
+import noop from "noop";
 import { ThemeTypes } from "sum";
 
 const require = arg1;
-let closure_8 = (() => {
-  class EnableCommunityModalIcons {
-    constructor(arg0) {
-      tmp = outer1_4(this, EnableCommunityModalIcons);
-      this.theme = outer1_7.LIGHT;
-      this.theme = arg0;
-      return;
-    }
+class EnableCommunityModalIcons {
+  constructor(arg0) {
+    obj = Object.create(new.target.prototype);
+    obj[0] = ThemeTypes.LIGHT;
+    obj.theme = global;
+    return obj;
   }
-  let obj = {
-    key: "safetyCheck",
-    get() {
-      if (obj.isThemeDark(this.theme)) {
-        let tmpResult = tmp(tmp2[6]);
-      } else {
-        tmpResult = tmp(tmp2[7]);
-      }
-      return tmpResult;
+}
+const prototype = EnableCommunityModalIcons.prototype;
+Object.defineProperty(prototype, "safetyCheck", {
+  get: function safetyCheck() {
+    if (obj.isThemeDark(this.theme)) {
+      let tmpResult = tmp(16507);
+    } else {
+      tmpResult = tmp(16508);
     }
-  };
-  const items = [obj, , , ];
-  obj = {
-    key: "channelSetup",
-    get() {
-      return EnableCommunityModalIcons(outer1_2[8]).getChannelSetupSource(this.theme);
+    return tmpResult;
+  },
+  set: undefined
+});
+Object.defineProperty(prototype, "channelSetup", {
+  get: function channelSetup() {
+    return require(16509) /* getChannelSetupSource */.getChannelSetupSource(this.theme);
+  },
+  set: undefined
+});
+Object.defineProperty(prototype, "finishingTouches", {
+  get: function finishingTouches() {
+    if (obj.isThemeDark(this.theme)) {
+      let tmpResult = tmp(16513);
+    } else {
+      tmpResult = tmp(16514);
     }
-  };
-  items[1] = obj;
-  obj = {
-    key: "finishingTouches",
-    get() {
-      if (obj.isThemeDark(this.theme)) {
-        let tmpResult = tmp(tmp2[9]);
-      } else {
-        tmpResult = tmp(tmp2[10]);
-      }
-      return tmpResult;
-    }
-  };
-  items[2] = obj;
-  items[3] = {
-    key: "close",
-    get() {
-      return EnableCommunityModalIcons(outer1_2[11]);
-    }
-  };
-  return callback2(EnableCommunityModalIcons, items);
-})();
-const result = require("_defineProperties").fileFinishedImporting("modules/public_guilds/native/components/EnableCommunityModal/useEnableCommunityModalIcons.tsx");
+    return tmpResult;
+  },
+  set: undefined
+});
+Object.defineProperty(prototype, "close", {
+  get: function close() {
+    return require(7699) /* registerAsset */;
+  },
+  set: undefined
+});
+const result = require("sum").fileFinishedImporting("modules/public_guilds/native/components/EnableCommunityModal/useEnableCommunityModalIcons.tsx");
 
 export default function useEnableCommunityModalIcons() {
-  let closure_0 = importDefault(4101)();
-  return callback(React.useState(() => new outer1_8(closure_0)), 1)[0];
+  let closure_0 = importDefault(4125)();
+  return callback(React.useState(() => {
+    if (typeof outer1_6 !== "find") {
+      HermesBuiltin.throwTypeError();
+    }
+    const obj = Object.create(outer1_6.prototype);
+    obj[0] = outer1_5.LIGHT;
+    obj.theme = closure_0;
+    return obj;
+  }), 1)[0];
 };

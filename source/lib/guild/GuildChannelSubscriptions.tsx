@@ -1,82 +1,59 @@
-// Module ID: 6040
-// Function ID: 53693
-// Name: serializeChannelRanges
-// Dependencies: [6, 7, 1362, 22, 2]
+// Module ID: 6058
+// Function ID: 6059
+// Name: reset
+// Dependencies: [1386, 12, 2]
 
-// Module 6040 (serializeChannelRanges)
-import _classCallCheck from "_classCallCheck";
-import _defineProperties from "_defineProperties";
-
-function serializeChannelRanges(arr) {
+// Module 6058 (reset)
+let result = require("set").fileFinishedImporting("lib/guild/GuildChannelSubscriptions.tsx");
+class GuildChannelSubscriptions {
+  constructor(arg0) {
+    obj = Object.create(new.target.prototype);
+    obj[0] = {};
+    obj._onChange = global;
+    return obj;
+  }
+}
+const prototype = GuildChannelSubscriptions.prototype;
+prototype["reset"] = function reset() {
+  this._subscriptions = {};
+};
+prototype["get"] = function get(arg0) {
   const obj = {};
-  const item = arr.forEach((arg0, arg1) => {
+  const item = this._get(arg0).forEach((arg0, arg1) => {
     obj[arg1] = arg0;
   });
   return obj;
-}
-const tmp2 = (() => {
-  class GuildChannelSubscriptions {
-    constructor(arg0) {
-      tmp = outer1_2(this, GuildChannelSubscriptions);
-      this._subscriptions = {};
-      this._onChange = arg0;
-      return;
-    }
+};
+prototype["_get"] = function _get(arg0) {
+  let tmp = this._subscriptions[arg0];
+  if (tmp == null) {
+    tmp = new importDefault(1386)({ max: 5 });
   }
-  let obj = {
-    key: "reset",
-    value() {
-      this._subscriptions = {};
-    }
-  };
-  const items = [obj, , , , ];
-  obj = {
-    key: "get",
-    value(arg0) {
-      return outer1_4(this._get(arg0));
-    }
-  };
-  items[1] = obj;
-  obj = {
-    key: "_get",
-    value(arg0) {
-      let tmp = this._subscriptions[arg0];
-      if (null == tmp) {
-        const tmp4 = GuildChannelSubscriptions(outer1_1[2]);
-        const obj = { max: 5 };
-        const prototype = tmp4.prototype;
-        tmp = new tmp4(obj);
-      }
-      return tmp;
-    }
-  };
-  items[2] = obj;
-  items[3] = {
-    key: "clear",
-    value(arg0) {
-      delete tmp2[tmp];
-    }
-  };
-  items[4] = {
-    key: "subscribe",
-    value(_pending) {
-      const self = this;
-      const _getResult = this._get(_pending);
-      let flag = !GuildChannelSubscriptions(outer1_1[3]).isEqual(_getResult.get(arg1), arg2);
-      if (flag) {
-        const result = _getResult.set(arg1, arg2);
-        self._subscriptions[_pending] = _getResult;
-        self._onChange(_pending, outer1_4(_getResult));
-        flag = true;
-      }
-      return flag;
-    }
-  };
-  return callback(GuildChannelSubscriptions, items);
-})();
-let result = require("priv").fileFinishedImporting("lib/guild/GuildChannelSubscriptions.tsx");
-let items = [[0, 99]];
+  return tmp;
+};
+prototype["clear"] = function clear(arg0) {
+  delete tmp2[tmp];
+};
+prototype["subscribe"] = function subscribe(arg0, arg1, arg2) {
+  const self = this;
+  const _getResult = this._get(arg0);
+  obj = obj(12);
+  const isEqualResult = obj.isEqual(_getResult.get(arg1), arg2);
+  let flag = !isEqualResult;
+  if (!isEqualResult) {
+    const result = _getResult.set(arg1, arg2);
+    self._subscriptions[arg0] = _getResult;
+    obj = {};
+    const item = _getResult.forEach((arg0, arg1) => {
+      obj[arg1] = arg0;
+    });
+    self._onChange(arg0, obj);
+    flag = true;
+  }
+  return flag;
+};
+const items = [[0, 99]];
 
-export default tmp2;
+export default GuildChannelSubscriptions;
 export const MINIMUM_RANGE = 100;
 export const DEFAULT_RANGES = items;

@@ -1,47 +1,47 @@
-// Module ID: 16194
-// Function ID: 125333
+// Module ID: 16229
+// Function ID: 16230
 // Name: InteractionIframeModal
-// Dependencies: [57, 31, 27, 4191, 33, 4165, 689, 16182, 5193, 8143, 16195, 4575, 3866, 1212, 10638, 10644, 4695, 4119, 4161, 8366, 2]
+// Dependencies: [32, 19, 17, 4215, 21, 4189, 712, 16217, 5215, 8167, 16230, 4597, 3890, 1236, 10662, 10668, 4717, 4143, 4185, 8390, 2]
 // Exports: default
 
-// Module 16194 (InteractionIframeModal)
+// Module 16229 (InteractionIframeModal)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
-import { View } from "get ActivityIndicator";
+import getBotLabel from "getBotLabel";
+import { View } from "XLargeIcon";
 import { BotTagTypes } from "ApplicationTypes";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_7;
-let closure_8;
+let error;
+let metroImportAll;
 const require = arg1;
-({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SURFACE_HIGH, flex: 1 };
-_createForOfIteratorHelperLoose.wrapper = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.header = { flexDirection: "row", padding: 16, justifyContent: "space-between", alignItems: "center" };
-_createForOfIteratorHelperLoose.headerCenterContainer = { flexDirection: "column", alignItems: "center" };
-_createForOfIteratorHelperLoose.headerTitleContainer = { flexDirection: "row", marginBottom: 2 };
-_createForOfIteratorHelperLoose.closeButton = { marginEnd: 8 };
-_createForOfIteratorHelperLoose.spacerView = { marginStart: 8, width: 32 };
-_createForOfIteratorHelperLoose.botTag = { marginStart: 4 };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+({ jsx: error, jsxs: metroImportAll } = jsxProd);
+createCacheKey = { wrapper: null, header: null, headerCenterContainer: null, headerTitleContainer: null, closeButton: null, spacerView: null, botTag: null };
+createCacheKey = { backgroundColor: require("Themes").colors.BACKGROUND_SURFACE_HIGH, flex: 1 };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { flexDirection: "row", padding: 16, justifyContent: "space-between", alignItems: "center" };
+createCacheKey[2] = { flexDirection: "column", alignItems: "center" };
+createCacheKey[3] = { flexDirection: "row", marginBottom: 2 };
+createCacheKey[4] = { marginEnd: 8 };
+createCacheKey[5] = { marginStart: 8, width: 32 };
+createCacheKey[6] = { marginStart: 4 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
 let result = require("get ActivityIndicator").fileFinishedImporting("modules/interaction_components/native/InteractionIframeModal.tsx");
 
-export default function InteractionIframeModal(application) {
-  const tmp = _createForOfIteratorHelperLoose();
-  application = application.application;
+export default function InteractionIframeModal(children) {
+  const tmp = createCacheKey();
+  const application = children.application;
   const id = application.id;
   let obj = id(callback[7]);
-  const iframeModalState = obj.useIframeModalState(application);
+  const iframeModalState = obj.useIframeModalState(children);
   const queryParams = iframeModalState.queryParams;
-  const tmp3 = callback(React.useState(false), 2);
-  const importDefault = tmp3[1];
+  const tmp5 = callback(React.useState(false), 2);
+  const importDefault = tmp5[1];
   const insets = importDefault(callback[8])({ includeKeyboardHeight: true }).insets;
   const layoutEffect = React.useLayoutEffect(() => {
     id(callback[9]).lockOrientation("PORTRAIT");
     return () => {
-      const result = id(callback[9]).restoreDefaultOrientation();
+      const result = callback(table[9]).restoreDefaultOrientation();
     };
   }, []);
   const items = [id];
@@ -54,68 +54,61 @@ export default function InteractionIframeModal(application) {
     return true;
   }, items1);
   importDefault(callback[11])(callback1);
-  let tmp8 = null;
-  if (!tmp3[0]) {
-    obj = {
-      onActivityCrash() {
-          callback(true);
-          const timerId = setTimeout(() => outer1_1(false), 0);
-        },
-      applicationId: application.id
+  let tmp11 = null;
+  if (!tmp5[0]) {
+    obj = { onActivityCrash: null, applicationId: null, channelId: null, guildId: null, activityUrl: null, activitySessionId: null, queryParams: null, onLoadError: null, allowPopups: null, referrerPolicy: "origin", isPipOrGridMode: false, webViewKey: "ct", ignoreSilentHardwareSwitch: true };
+    obj[0] = function onActivityCrash() {
+      callback(true);
+      const timerId = setTimeout(() => callback(false), 0);
     };
-    ({ channel_id: obj2.channelId, guild_id: obj2.guildId } = queryParams);
-    obj.activityUrl = iframeModalState.iframeUrl;
-    obj.activitySessionId = queryParams.instance_id;
-    obj.queryParams = queryParams;
-    obj.onLoadError = function onLoadError() {
+    obj[1] = application.id;
+    ({ channel_id: obj2[2], guild_id: obj2[3] } = queryParams);
+    obj[4] = iframeModalState.iframeUrl;
+    obj[5] = queryParams.instance_id;
+    obj[6] = queryParams;
+    obj[7] = function onLoadError() {
       let obj = callback(callback[12]);
-      obj = { key: "interaction_iframe_modal" };
+      obj = { key: "interaction_iframe_modal", content: null };
       const intl = id(callback[13]).intl;
-      obj.content = intl.string(id(callback[13]).t.HehpFW);
+      obj[1] = intl.string(id(callback[13]).t.HehpFW);
       obj.open(obj);
       callback();
     };
-    let obj2 = id(callback[15]);
-    obj.allowPopups = obj2.allowPopups(application);
-    obj.referrerPolicy = "origin";
-    obj.isPipOrGridMode = false;
-    obj.webViewKey = undefined;
-    obj.ignoreSilentHardwareSwitch = false;
-    tmp8 = callback2(importDefault(callback[14]), obj);
-    const tmp12 = importDefault(callback[14]);
+    let tmp6Result = tmp6(tmp3[14]);
+    obj[8] = tmp2(tmp3[15]).allowPopups(application);
+    tmp11 = callback2(tmp6Result, obj);
+    const tmp2Result = tmp2(tmp3[15]);
   }
-  obj = { style: items2 };
+  obj = { style: items2, children: null };
   items2 = [tmp.wrapper, { paddingTop: insets.top, paddingBottom: insets.bottom }];
-  const obj1 = { style: tmp.header };
-  obj2 = { accessibilityRole: "button" };
-  let intl = id(callback[13]).intl;
-  obj2.accessibilityLabel = intl.string(id(callback[13]).t.cpT0Cq);
-  obj2.onPress = callback;
-  obj2.style = tmp.closeButton;
-  obj2.children = callback2(id(callback[17]).XLargeIcon, {});
+  const obj1 = { style: tmp.header, children: null };
+  const obj2 = { accessibilityRole: "button", accessibilityLabel: null, onPress: null, style: null, children: null };
+  let intl = tmp2(tmp3[13]).intl;
+  obj2[1] = intl.string(id(callback[13]).t.cpT0Cq);
+  obj2[2] = callback;
+  obj2[3] = tmp.closeButton;
+  obj2[4] = callback2(id(callback[17]).XLargeIcon, {});
   const items3 = [callback2(id(callback[16]).PressableOpacity, obj2), , ];
-  const obj3 = { style: tmp.headerCenterContainer };
-  const obj4 = { style: tmp.headerTitleContainer };
-  const obj5 = { variant: "heading-sm/bold", color: "mobile-text-heading-primary", children: application.name };
-  const items4 = [callback2(id(callback[18]).Text, obj5), ];
-  const obj6 = { type: BotTagTypes.BOT };
+  const obj3 = { style: tmp.headerCenterContainer, children: null };
+  const obj4 = { style: tmp.headerTitleContainer, children: null };
+  const items4 = [callback2(id(callback[18]).Text, { variant: "heading-sm/bold", color: "mobile-text-heading-primary", children: application.name }), ];
+  const obj6 = { type: BotTagTypes.BOT, verified: null, style: null };
   const bot = application.bot;
   let verified;
-  if (null != bot) {
+  tmp6Result = tmp6(tmp3[19]);
+  if (bot != null) {
     verified = bot.verified;
   }
-  obj6.verified = verified;
-  obj6.style = tmp.botTag;
-  items4[1] = callback2(importDefault(callback[19]), obj6);
-  obj4.children = items4;
-  const items5 = [closure_8(View, obj4), ];
-  const obj7 = { variant: "text-xs/medium", color: "interactive-text-default", children: application.title };
-  items5[1] = callback2(id(callback[18]).Text, obj7);
-  obj3.children = items5;
+  obj6[1] = verified;
+  obj6[2] = tmp.botTag;
+  items4[1] = callback2(tmp6Result, obj6);
+  obj4[1] = items4;
+  const items5 = [closure_8(View, obj4), callback2(id(callback[18]).Text, { variant: "text-xs/medium", color: "interactive-text-default", children: children.title })];
+  obj3[1] = items5;
   items3[1] = closure_8(View, obj3);
   items3[2] = callback2(View, { style: tmp.spacerView });
-  obj1.children = items3;
-  const items6 = [closure_8(View, obj1), tmp8];
-  obj.children = items6;
+  obj1[1] = items3;
+  const items6 = [closure_8(View, obj1), tmp11];
+  obj[1] = items6;
   return closure_8(View, obj);
 };

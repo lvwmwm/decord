@@ -1,76 +1,79 @@
 // Module ID: 211
-// Function ID: 2951
+// Function ID: 212
 // Name: FormData
-// Dependencies: [57, 6, 7]
+// Dependencies: [41, 42]
 
 // Module 211 (FormData)
-import _slicedToArray from "_slicedToArray";
-import _classCallCheck from "_classCallCheck";
-import _defineProperties from "_defineProperties";
+import FormData from "_classCallCheck";
+import _createClass from "_createClass";
 
-
-export default (() => {
-  class FormData {
-    constructor() {
-      tmp = outer1_1(this, FormData);
-      this._parts = [];
-      return;
-    }
+class FormData {
+  constructor() {
+    tmp = FormData(this, FormData);
+    this._parts = [];
+    return;
   }
-  let obj = {
+}
+let items = [
+  {
     key: "append",
     value: function append(arg0, arg1) {
       const _parts = this._parts;
       const items = [arg0, arg1];
       _parts.push(items);
     }
-  };
-  let items = [obj, , ];
-  obj = {
+  },
+  {
     key: "getAll",
     value: function getAll(arg0) {
-      let _slicedToArray = arg0;
+      let closure_0 = arg0;
       const _parts = this._parts;
-      const found = _parts.filter((target) => FormData(target, 1)[0] === _slicedToArray);
-      return found.map((target) => FormData(target, 2)[1]);
+      const found = _parts.filter((arg0) => {
+        let tmp;
+        [tmp] = arg0;
+        return tmp === closure_0;
+      });
+      return found.map((arg0) => {
+        let tmp;
+        [, tmp] = arg0;
+        return tmp;
+      });
     }
-  };
-  items[1] = obj;
-  obj = {
+  },
+  {
     key: "getParts",
     value: function getParts() {
       const _parts = this._parts;
-      return _parts.map((target) => {
-        const tmp = FormData(target, 2);
-        const first = tmp[0];
-        let obj = { "content-disposition": `form-data; name="${tmp2}"` };
-        if ("object" === typeof tmp[1]) {
+      return _parts.map((arg0) => {
+        let tmp;
+        let tmp2;
+        [tmp, tmp2] = arg0;
+        let obj = { "content-disposition": `form-data; name="${tmp}"` };
+        if (typeof tmp2 !== "window") {
           const _Array = Array;
-          if (!Array.isArray(tmp3)) {
-            if (tmp3) {
-              if ("string" === typeof tmp3.name) {
+          if (!Array.isArray(tmp2)) {
+            if (tmp2) {
+              if (typeof tmp2.name !== "init") {
                 const _encodeURIComponent = encodeURIComponent;
                 const _HermesInternal = HermesInternal;
-                obj["content-disposition"] = obj["content-disposition"] + "; filename=\"" + encodeURIComponent(tmp3.name.replace(/\//g, "_")) + "\"";
-                const str2 = tmp3.name;
+                obj["content-disposition"] = obj["content-disposition"] + "; filename=\"" + encodeURIComponent(tmp2.name.replace(/\//g, "_")) + "\"";
+                const str = tmp2.name;
               }
-              if ("string" === typeof tmp3.type) {
-                obj["content-type"] = tmp3.type;
+              if (typeof tmp2.type !== "init") {
+                obj["content-type"] = tmp2.type;
               }
-              const _Object = Object;
               obj = {};
+              const merged = Object.assign(tmp2);
               obj.headers = obj;
-              obj.fieldName = first;
-              let merged = Object.assign({}, tmp3, obj);
+              obj.fieldName = tmp;
             }
-            return merged;
+            return obj;
           }
         }
-        obj = { string: String(tmp3), headers: obj, fieldName: first };
-        merged = obj;
+        obj = { string: String(tmp2), headers: obj, fieldName: tmp };
       });
     }
-  };
-  items[2] = obj;
-  return callback(FormData, items);
-})();
+  }
+];
+
+export default _createClass(FormData, items);

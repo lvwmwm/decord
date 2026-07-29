@@ -1,89 +1,95 @@
 // Module ID: 221
-// Function ID: 3067
+// Function ID: 222
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 201]
+// Dependencies: [41, 42, 93, 95, 98, 133]
 
 // Module 221 (_isNativeReflectConstruct)
-import _classCallCheck from "_classCallCheck";
-import _defineProperties from "_defineProperties";
+import CloseEvent from "_classCallCheck";
 import _possibleConstructorReturn from "_possibleConstructorReturn";
 import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
+import importDefaultResult from "_createClass";
 
 function _isNativeReflectConstruct() {
-  let _classCallCheck = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return _classCallCheck;
-  }
-  const result = _isNativeReflectConstruct();
-}
-
-export default ((arg0) => {
-  class CloseEvent {
-    constructor(arg0, arg1) {
-      self = this;
-      tmp = CloseEvent(this, CloseEvent);
-      items = [, ];
-      items[0] = arg0;
-      items[1] = arg1;
-      obj = outer1_3(CloseEvent);
-      tmp2 = outer1_2;
-      if (outer1_5()) {
-        tmp4 = globalThis;
-        _Reflect = Reflect;
-        tmp5 = outer1_3;
-        constructResult = Reflect.construct(obj, items, outer1_3(self).constructor);
-      } else {
-        constructResult = obj.apply(self, items);
-      }
-      tmp2Result = tmp2(self, constructResult);
-      wasClean = undefined;
-      if (null != arg1) {
-        wasClean = arg1.wasClean;
-      }
-      tmp2Result._wasClean = Boolean(wasClean);
-      code = undefined;
-      if (null != arg1) {
-        code = arg1.code;
-      }
-      tmp9 = Number(code) || 0;
-      tmp2Result._code = tmp9;
-      reason = undefined;
-      if (null != arg1) {
-        reason = arg1.reason;
-      }
-      str = "";
-      if (null != reason) {
-        _String = String;
-        str = String(arg1.reason);
-      }
-      tmp2Result._reason = str;
-      return tmp2Result;
+  try {
+    const _Boolean = Boolean;
+    const call = valueOf.call;
+    const _Reflect = Reflect;
+    const _Boolean2 = Boolean;
+    if (typeof call === "unknown") {
+      let callResult = valueOf();
+    } else {
+      callResult = call(constructResult);
     }
+    let closure_0 = !callResult;
+    function _isNativeReflectConstruct() {
+      return closure_0;
+    }
+    return _isNativeReflectConstruct();
+  } catch (err) {
   }
-  callback2(CloseEvent, arg0);
-  let obj = {
+}
+class CloseEvent {
+  constructor(arg0, arg1) {
+    self = this;
+    tmp = CloseEvent(this, CloseEvent);
+    items = [, ];
+    items[0] = global;
+    items[1] = arg1;
+    tmp2 = __esModule;
+    obj = __esModule(CloseEvent);
+    tmp3 = __esModule;
+    if (_isNativeReflectConstruct()) {
+      tmp5 = globalThis;
+      _Reflect = Reflect;
+      constructResult = Reflect.construct(obj, items, tmp2(self).constructor);
+    } else {
+      constructResult = obj.apply(self, items);
+    }
+    tmp3Result = tmp3(self, constructResult);
+    wasClean = undefined;
+    if (arg1 != null) {
+      wasClean = arg1.wasClean;
+    }
+    tmp3Result._wasClean = Boolean(wasClean);
+    code = undefined;
+    if (arg1 != null) {
+      code = arg1.code;
+    }
+    tmp9 = Number(code) || 0;
+    tmp3Result._code = tmp9;
+    reason = undefined;
+    if (arg1 != null) {
+      reason = arg1.reason;
+    }
+    str = "";
+    if (null != reason) {
+      _String = String;
+      str = String(arg1.reason);
+    }
+    tmp3Result._reason = str;
+    return tmp3Result;
+  }
+}
+require("_inherits")(CloseEvent, require("Event"));
+let items = [
+  {
     key: "wasClean",
     get() {
       return this._wasClean;
     }
-  };
-  let items = [obj, , ];
-  obj = {
+  },
+  {
     key: "code",
     get() {
       return this._code;
     }
-  };
-  items[1] = obj;
-  obj = {
+  },
+  {
     key: "reason",
     get() {
       return this._reason;
     }
-  };
-  items[2] = obj;
-  return callback(CloseEvent, items);
-})(require("Event"));
+  }
+];
+
+export default importDefaultResult(CloseEvent, items);

@@ -1,37 +1,33 @@
-// Module ID: 11937
-// Function ID: 92231
+// Module ID: 11961
+// Function ID: 11962
 // Name: useBotProfileCommands
-// Dependencies: [31, 7999, 1882, 2]
+// Dependencies: [19, 8024, 1906, 2]
 // Exports: default
 
-// Module 11937 (useBotProfileCommands)
-import result from "result";
+// Module 11961 (useBotProfileCommands)
+import noop from "noop";
 
 const require = arg1;
 const result = require("PermissionOverwriteType").fileFinishedImporting("modules/user_profile/useBotProfileCommands.tsx");
 
 export default function useBotProfileCommands(channel) {
-  let obj = importAll(7999);
+  let obj = importAll(8024);
   const accessibleCommandsForApplication = obj.useAccessibleCommandsForApplication(channel, arg1, arg2);
   const commands = accessibleCommandsForApplication.commands;
   obj = {
     application: accessibleCommandsForApplication.application,
     commands: React.useMemo(() => {
       let found;
-      if (null != commands) {
+      if (commands != null) {
         found = commands.filter((nsfw) => {
           let tmp = true !== nsfw.nsfw;
           if (tmp) {
             const options = nsfw.options;
             let found;
-            if (null != options) {
+            if (options != null) {
               found = options.find((type) => {
                 type = type.type;
-                let tmp = type === commands(outer3_2[2]).ApplicationCommandOptionType.SUB_COMMAND;
-                if (!tmp) {
-                  tmp = type === commands(outer3_2[2]).ApplicationCommandOptionType.SUB_COMMAND_GROUP;
-                }
-                return tmp;
+                return type === callback(table[2]).ApplicationCommandOptionType.SUB_COMMAND || type === callback(table[2]).ApplicationCommandOptionType.SUB_COMMAND_GROUP;
               });
             }
             tmp = null == found;

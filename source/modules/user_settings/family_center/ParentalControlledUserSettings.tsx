@@ -1,9 +1,9 @@
-// Module ID: 13835
-// Function ID: 105922
+// Module ID: 13856
+// Function ID: 13857
 // Name: result
-// Dependencies: [3840, 653, 13836, 3838, 620, 1313, 1282, 13837, 2]
+// Dependencies: [3864, 676, 13857, 3862, 643, 1337, 1306, 13858, 2]
 
-// Module 13835 (result)
+// Module 13856 (result)
 import { ExplicitContentFilterTypes as closure_2 } from "items";
 import { AllFriendSourceFlags } from "ME";
 import defineParentalControlledSetting from "defineParentalControlledSetting";
@@ -17,88 +17,102 @@ import defineParentalControlledSetting from "defineParentalControlledSetting";
 import defineParentalControlledSetting from "defineParentalControlledSetting";
 import defineParentalControlledSetting from "defineParentalControlledSetting";
 
-let obj = { comparator: require("shallowEqual") };
+let obj = { comparator: null };
+obj[0] = require("shallowEqual");
 const result = defineParentalControlledSetting.defineParentalControlledSetting("textAndImages", "explicitContentSettings", require("explicitContentFromProto").explicitContentFromProto, require("explicitContentFromProto").explicitContentToProto, obj);
 const result1 = defineParentalControlledSetting.defineParentalControlledSetting("textAndImages", "explicitContentFilter", (value) => {
   let NON_FRIENDS;
-  if (null != value) {
+  if (value != null) {
     NON_FRIENDS = value.value;
   }
-  if (null == NON_FRIENDS) {
+  if (NON_FRIENDS == null) {
     NON_FRIENDS = constants.NON_FRIENDS;
   }
   return NON_FRIENDS;
 }, (value) => {
-  const UInt32Value = require(1313) /* _callSuper */.UInt32Value;
+  const UInt32Value = require(1337) /* defineProperty */.UInt32Value;
   return UInt32Value.create({ value });
 });
-obj = { comparator: require("shallowEqual") };
+obj = { comparator: null };
+obj[0] = require("shallowEqual");
 const result2 = defineParentalControlledSetting.defineParentalControlledSetting("textAndImages", "goreContentSettings", require("explicitContentFromProto").goreContentFromProto, require("explicitContentFromProto").goreContentToProto, obj);
 const result3 = defineParentalControlledSetting.defineParentalControlledSetting("privacy", "defaultMessageRequestRestricted", (value) => {
   value = undefined;
-  if (null != value) {
+  if (value != null) {
     value = value.value;
   }
   return value;
 }, (value) => {
-  const BoolValue = require(1313) /* _callSuper */.BoolValue;
+  const BoolValue = require(1337) /* defineProperty */.BoolValue;
   return BoolValue.create({ value });
 });
-const result4 = defineParentalControlledSetting.defineParentalControlledSetting("privacy", "defaultGuildsRestricted", (arg0) => null != arg0 && arg0, (arg0) => arg0);
+const result4 = defineParentalControlledSetting.defineParentalControlledSetting("privacy", "defaultGuildsRestricted", (arg0) => {
+  let flag = arg0;
+  if (arg0 == null) {
+    flag = false;
+  }
+  return flag;
+}, (arg0) => arg0);
 const result5 = defineParentalControlledSetting.defineParentalControlledSetting("privacy", "defaultGuildsRestrictedV2", (value) => {
   value = undefined;
-  if (null != value) {
+  if (value != null) {
     value = value.value;
   }
   return value;
 }, (value) => {
-  const BoolValue = require(1313) /* _callSuper */.BoolValue;
+  const BoolValue = require(1337) /* defineProperty */.BoolValue;
   return BoolValue.create({ value });
 });
 const result6 = defineParentalControlledSetting.defineParentalControlledSetting("privacy", "friendSourceFlags", (value) => {
   value = undefined;
-  if (null != value) {
+  if (value != null) {
     value = value.value;
   }
-  if (null == value) {
+  if (value == null) {
     value = AllFriendSourceFlags;
   }
   return value;
 }, (value) => {
-  const UInt32Value = require(1313) /* _callSuper */.UInt32Value;
+  const UInt32Value = require(1337) /* defineProperty */.UInt32Value;
   return UInt32Value.create({ value });
 });
 const result7 = defineParentalControlledSetting.defineParentalControlledSetting("privacy", "dropsOptedOut", (value) => {
-  value = undefined;
-  if (null != value) {
-    value = value.value;
+  let flag;
+  if (value != null) {
+    flag = value.value;
   }
-  return null != value && value;
+  if (flag == null) {
+    flag = false;
+  }
+  return flag;
 }, (value) => {
-  const BoolValue = require(1313) /* _callSuper */.BoolValue;
+  const BoolValue = require(1337) /* defineProperty */.BoolValue;
   return BoolValue.create({ value });
 });
 const result8 = defineParentalControlledSetting.defineParentalControlledSetting("privacy", "quests3PDataOptedOut", (value) => {
-  value = undefined;
-  if (null != value) {
-    value = value.value;
+  let flag;
+  if (value != null) {
+    flag = value.value;
   }
-  return null != value && value;
+  if (flag == null) {
+    flag = false;
+  }
+  return flag;
 }, (value) => {
-  const BoolValue = require(1313) /* _callSuper */.BoolValue;
+  const BoolValue = require(1337) /* defineProperty */.BoolValue;
   return BoolValue.create({ value });
 });
 const result9 = defineParentalControlledSetting.defineParentalControlledSetting("safetySettings", "spendingLimitSettings", (oneTimePurchaseLimit) => {
   oneTimePurchaseLimit = undefined;
-  if (null != oneTimePurchaseLimit) {
+  if (oneTimePurchaseLimit != null) {
     oneTimePurchaseLimit = oneTimePurchaseLimit.oneTimePurchaseLimit;
   }
   let tmp2 = null;
   if (null != oneTimePurchaseLimit) {
-    const obj = {};
+    const obj = { amount: null, currency: null };
     const _Number = Number;
-    obj.amount = Number(oneTimePurchaseLimit.amount);
-    obj.currency = oneTimePurchaseLimit.currency;
+    obj[0] = Number(oneTimePurchaseLimit.amount);
+    obj[1] = oneTimePurchaseLimit.currency;
     tmp2 = obj;
   }
   return tmp2;
@@ -106,18 +120,18 @@ const result9 = defineParentalControlledSetting.defineParentalControlledSetting(
   let amount;
   let currency;
   if (null == arg0) {
-    const SpendingLimitSettings2 = require(1282) /* _callSuper */.SpendingLimitSettings;
+    const SpendingLimitSettings2 = require(1306) /* create */.SpendingLimitSettings;
     return SpendingLimitSettings2.create({});
   } else {
     ({ amount, currency } = arg0);
-    const SpendingLimitSettings = require(1282) /* _callSuper */.SpendingLimitSettings;
-    let obj = {};
-    const SpendingLimit = require(1282) /* _callSuper */.SpendingLimit;
-    obj = {};
+    const SpendingLimitSettings = require(1306) /* create */.SpendingLimitSettings;
+    let obj = { oneTimePurchaseLimit: null };
+    const SpendingLimit = require(1306) /* create */.SpendingLimit;
+    obj = { amount: null, currency: null };
     const _String = String;
-    obj.amount = String(amount);
-    obj.currency = currency;
-    obj.oneTimePurchaseLimit = SpendingLimit.create(obj);
+    obj[0] = String(amount);
+    obj[1] = currency;
+    obj[0] = SpendingLimit.create(obj);
     return SpendingLimitSettings.create(obj);
   }
 }, { comparator: require("spendingLimitEqual").spendingLimitEqual });

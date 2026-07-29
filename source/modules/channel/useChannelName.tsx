@@ -1,110 +1,102 @@
-// Module ID: 4355
-// Function ID: 37973
-// Name: computeDefaultGroupDmNameFromUserIds
-// Dependencies: [57, 4079, 3802, 1850, 653, 1327, 4004, 1212, 566, 2]
-// Exports: computeGroupDmName, default, unescapeChannelName, useComputedGroupDmName
+// Module ID: 4380
+// Function ID: 4381
+// Name: computeChannelName
+// Dependencies: [32, 4103, 3826, 1874, 676, 1351, 4028, 1236, 589, 2]
+// Exports: computeDefaultGroupDmName, computeDefaultGroupDmNameFromUserIds, computeGroupDmName, default, escapeChannelName, unescapeChannelName, useComputedGroupDmName
 
-// Module 4355 (computeDefaultGroupDmNameFromUserIds)
+// Module 4380 (computeChannelName)
 import _slicedToArray from "_slicedToArray";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_5 from "_isNativeReflectConstruct";
-import closure_6 from "_isNativeReflectConstruct";
+import getHash from "getHash";
+import upsertRelationship from "upsertRelationship";
+import mergeGuildAvatar from "mergeGuildAvatar";
 import { ChannelTypes } from "ME";
 
 const require = arg1;
-function computeDefaultGroupDmNameFromUserIds(recipients, getUser, closure_7) {
-  const _require = closure_7;
-  const mapped = recipients.map(getUser.getUser);
-  const found = mapped.filter(_require(1327).isNotNullish);
-  const mapped1 = found.map((id) => {
-    nickname = nickname.getNickname(id.id);
-    if (null == nickname) {
-      nickname = outer1_1(outer1_2[6]).getName(id);
-      const obj = outer1_1(outer1_2[6]);
-    }
-    return nickname;
-  });
-  if (mapped1.length > 0) {
-    let joined = mapped1.join(", ");
-  } else {
-    const intl = _require(1212).intl;
-    let obj = { name: importDefault(4004).getName(getUser.getCurrentUser()) };
-    joined = intl.formatToPlainString(_require(1212).t["9Uk8PF"], obj);
-    const obj2 = importDefault(4004);
-  }
-  return joined;
-}
-function computeDefaultGroupDmName(recipients, closure_14, closure_7) {
-  return computeDefaultGroupDmNameFromUserIds(recipients.recipients, closure_14, closure_7);
-}
-function computeChannelName(channel, closure_14, closure_7, arg3, arg4) {
+function computeChannelName(channel, closure_9, closure_7, arg3, arg4) {
   let flag = arg3;
-  let flag2 = arg4;
   if (arg3 === undefined) {
     flag = false;
   }
-  if (flag2 === undefined) {
+  let flag2 = arg4;
+  if (arg4 === undefined) {
     flag2 = false;
   }
-  function maybeFormatDmName(name) {
-    let combined = name;
-    if (flag) {
-      const _HermesInternal = HermesInternal;
-      combined = "@" + name;
-    }
-    return combined;
-  }
-  const name = channel.name;
   if (channel.isObfuscated()) {
-    const intl = flag(1212).intl;
-    return intl.string(flag(1212).t["/YzI63"]);
+    const intl2 = _require(1236).intl;
+    return intl2.string(_require(1236).t["/YzI63"]);
   } else {
     const type = channel.type;
     if (ChannelTypes.DM === type) {
-      if ("" !== name) {
-        return maybeFormatDmName(name);
+      if ("" !== str) {
+        let combined = str;
+        if (flag) {
+          const _HermesInternal5 = HermesInternal;
+          combined = "@" + str;
+        }
+        return combined;
       } else {
         const recipients = channel.recipients;
-        const mapped = recipients.map(closure_14.getUser);
-        const first = callback(mapped.filter(flag(1327).isNotNullish), 1)[0];
+        const mapped = recipients.map(closure_9.getUser);
+        const first = callback(mapped.filter(_require(1351).isNotNullish), 1)[0];
         if (null == first) {
           return "???";
         } else {
-          if (first.isProvisional) {
-            if (null != first.globalName) {
-              return first.globalName;
+          if (!first.isProvisional) {
+            let str12 = closure_7.getNickname(first.id);
+            if (str12 == null) {
+              str12 = importDefault(4028).getName(first);
+              const obj3 = importDefault(4028);
+            }
+            if (str12 == null) {
+              str12 = "???";
+            }
+            let globalName = str12;
+            if (flag) {
+              const _HermesInternal4 = HermesInternal;
+              globalName = "@" + str12;
             }
           }
-          let nickname = closure_7.getNickname(first.id);
-          if (null == nickname) {
-            nickname = importDefault(4004).getName(first);
-            const obj = importDefault(4004);
-          }
-          let str7 = "???";
-          if (null != nickname) {
-            str7 = nickname;
-          }
-          return maybeFormatDmName(str7);
+          globalName = first.globalName;
         }
       }
-    } else if (ChannelTypes.GROUP_DM === type) {
-      let tmp13 = name;
-      if ("" === name) {
-        tmp13 = computeDefaultGroupDmName(channel, closure_14, closure_7);
+    } else if (tmp3.GROUP_DM === type) {
+      if ("" !== str) {
+        return str;
+      } else {
+        const recipients1 = channel.recipients;
+        _require = closure_7;
+        const mapped1 = recipients1.map(closure_9.getUser);
+        const found = mapped1.filter(_require(1351).isNotNullish);
+        const mapped2 = found.map((id) => {
+          nickname = nickname.getNickname(id.id);
+          if (nickname == null) {
+            nickname = outer1_1(outer1_2[6]).getName(id);
+            const obj = outer1_1(outer1_2[6]);
+          }
+          return nickname;
+        });
+        if (mapped2.length > 0) {
+          let joined = mapped2.join(", ");
+        } else {
+          const intl = tmp20(1236).intl;
+          const obj = { name: null };
+          obj[0] = importDefault(4028).getName(closure_9.getCurrentUser());
+          joined = intl.formatToPlainString(tmp20(1236).t["9Uk8PF"], obj);
+          const obj2 = importDefault(4028);
+        }
       }
-      return tmp13;
     } else {
-      if (ChannelTypes.GUILD_ANNOUNCEMENT !== type) {
-        if (ChannelTypes.GUILD_TEXT !== type) {
-          if (ChannelTypes.GUILD_FORUM !== type) {
-            if (ChannelTypes.GUILD_MEDIA !== type) {
-              if (ChannelTypes.PUBLIC_THREAD !== type) {
-                if (ChannelTypes.PRIVATE_THREAD !== type) {
-                  if (ChannelTypes.ANNOUNCEMENT_THREAD !== type) {
-                    if (ChannelTypes.GUILD_VOICE !== type) {
-                      if (ChannelTypes.GUILD_STAGE_VOICE !== type) {
-                        if (ChannelTypes.GUILD_CATEGORY !== type) {
-                          return name;
+      if (tmp3.GUILD_ANNOUNCEMENT !== type) {
+        if (tmp3.GUILD_TEXT !== type) {
+          if (tmp3.GUILD_FORUM !== type) {
+            if (tmp3.GUILD_MEDIA !== type) {
+              if (tmp3.PUBLIC_THREAD !== type) {
+                if (tmp3.PRIVATE_THREAD !== type) {
+                  if (tmp3.ANNOUNCEMENT_THREAD !== type) {
+                    if (tmp3.GUILD_VOICE !== type) {
+                      if (tmp3.GUILD_STAGE_VOICE !== type) {
+                        if (tmp3.GUILD_CATEGORY !== type) {
+                          return str;
                         }
                       }
                     }
@@ -113,62 +105,127 @@ function computeChannelName(channel, closure_14, closure_7, arg3, arg4) {
               }
               if (flag2) {
                 const _HermesInternal2 = HermesInternal;
-                let combined = "#\"" + escapeChannelName(name) + "\"";
+                let combined1 = "#\"" + str.replace(/\\/g, "\\\\").replace(/"/g, "\\\"") + "\"";
+                const str4 = str.replace(/\\/g, "\\\\");
               } else {
-                combined = name;
+                combined1 = str;
                 if (flag) {
-                  combined = name;
+                  combined1 = str;
                   if (channel.isThread()) {
-                    let _HermesInternal = HermesInternal;
-                    combined = "\"" + name + "\"";
+                    const _HermesInternal = HermesInternal;
+                    combined1 = "\"" + str + "\"";
                   }
                 }
               }
-              return combined;
+              return combined1;
             }
           }
         }
       }
-      let combined1 = name;
+      let combined2 = str;
       if (flag) {
         const _HermesInternal3 = HermesInternal;
-        combined1 = "#" + name;
+        combined2 = "#" + str;
       }
-      return combined1;
+      return combined2;
     }
   }
 }
-function escapeChannelName(channelName) {
-  return channelName.replace(/\\/g, "\\\\").replace(/"/g, "\\\"");
-}
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/channel/useChannelName.tsx");
+const result = require("upsertRelationship").fileFinishedImporting("modules/channel/useChannelName.tsx");
 
 export default function useChannelName(arg0) {
-  let flag = arg1;
   const _require = arg0;
+  let flag = arg1;
   if (arg1 === undefined) {
     flag = false;
   }
-  const items = [closure_6, _isNativeReflectConstruct, closure_5];
-  return _require(566).useStateFromStores(items, () => {
-    let tmp = null;
+  const items = [mergeGuildAvatar, getHash, upsertRelationship];
+  return _require(589).useStateFromStores(items, () => {
+    let tmp2 = null;
     if (null != closure_0) {
-      tmp = outer1_10(closure_0, outer1_6, outer1_5, flag);
+      tmp2 = outer1_8(tmp, outer1_6, outer1_5, flag);
     }
-    return tmp;
+    return tmp2;
   });
 };
-export { computeDefaultGroupDmNameFromUserIds };
-export { computeDefaultGroupDmName };
+export const computeDefaultGroupDmNameFromUserIds = function computeDefaultGroupDmNameFromUserIds(arr, getUser) {
+  const _require = arg2;
+  const mapped = arr.map(getUser.getUser);
+  const found = mapped.filter(_require(1351).isNotNullish);
+  const mapped1 = found.map((id) => {
+    nickname = nickname.getNickname(id.id);
+    if (nickname == null) {
+      nickname = outer1_1(outer1_2[6]).getName(id);
+      const obj = outer1_1(outer1_2[6]);
+    }
+    return nickname;
+  });
+  if (mapped1.length > 0) {
+    let joined = mapped1.join(", ");
+  } else {
+    const intl = tmp(1236).intl;
+    const obj = { name: null };
+    obj[0] = importDefault(4028).getName(getUser.getCurrentUser());
+    joined = intl.formatToPlainString(tmp(1236).t["9Uk8PF"], obj);
+    const obj2 = importDefault(4028);
+  }
+  return joined;
+};
+export const computeDefaultGroupDmName = function computeDefaultGroupDmName(recipients, getUser) {
+  recipients = recipients.recipients;
+  const _require = arg2;
+  const mapped = recipients.map(getUser.getUser);
+  const found = mapped.filter(_require(1351).isNotNullish);
+  const mapped1 = found.map((id) => {
+    nickname = nickname.getNickname(id.id);
+    if (nickname == null) {
+      nickname = outer1_1(outer1_2[6]).getName(id);
+      const obj = outer1_1(outer1_2[6]);
+    }
+    return nickname;
+  });
+  if (mapped1.length > 0) {
+    let joined = mapped1.join(", ");
+  } else {
+    const intl = tmp(1236).intl;
+    const obj = { name: null };
+    obj[0] = importDefault(4028).getName(getUser.getCurrentUser());
+    joined = intl.formatToPlainString(tmp(1236).t["9Uk8PF"], obj);
+    const obj2 = importDefault(4028);
+  }
+  return joined;
+};
 export const useComputedGroupDmName = function useComputedGroupDmName(arg0) {
   const _require = arg0;
-  const items = [closure_6, closure_5];
-  return _require(566).useStateFromStores(items, () => {
+  const items = [mergeGuildAvatar, upsertRelationship];
+  return _require(589).useStateFromStores(items, () => {
+    let obj = callback;
     let tmp = null;
-    if (null != multiUserDM) {
+    if (null != callback) {
       tmp = null;
-      if (multiUserDM.isMultiUserDM()) {
-        tmp = outer1_9(multiUserDM, outer1_6, outer1_5);
+      if (obj.isMultiUserDM()) {
+        const recipients = obj.recipients;
+        callback = outer1_5;
+        const mapped = recipients.map(outer1_6.getUser);
+        const found = mapped.filter(callback(outer1_2[5]).isNotNullish);
+        const mapped1 = found.map((id) => {
+          nickname = nickname.getNickname(id.id);
+          if (nickname == null) {
+            nickname = outer1_1(outer1_2[6]).getName(id);
+            const obj = outer1_1(outer1_2[6]);
+          }
+          return nickname;
+        });
+        if (mapped1.length > 0) {
+          let joined = mapped1.join(", ");
+        } else {
+          const intl = tmp3(tmp4[7]).intl;
+          obj = { name: null };
+          obj[0] = outer1_1(tmp4[6]).getName(obj2.getCurrentUser());
+          joined = intl.formatToPlainString(tmp3(tmp4[7]).t["9Uk8PF"], obj);
+          const obj4 = outer1_1(tmp4[6]);
+        }
+        obj2 = outer1_6;
       }
     }
     return tmp;
@@ -187,7 +244,9 @@ export const computeGroupDmName = function computeGroupDmName(isObfuscated) {
   }
 };
 export { computeChannelName };
-export { escapeChannelName };
-export const unescapeChannelName = function unescapeChannelName(closure_0) {
-  return closure_0.replace(/\\"/g, "\"").replace(/\\\\/g, "\\");
+export const escapeChannelName = function escapeChannelName(channelName) {
+  return channelName.replace(/\\/g, "\\\\").replace(/"/g, "\\\"");
+};
+export const unescapeChannelName = function unescapeChannelName(str) {
+  return str.replace(/\\"/g, "\"").replace(/\\\\/g, "\\");
 };

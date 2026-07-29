@@ -1,12 +1,12 @@
-// Module ID: 10106
-// Function ID: 78175
+// Module ID: 10127
+// Function ID: 10128
 // Name: useCanSearchForumPostsByChannelId
-// Dependencies: [1348, 3793, 653, 566, 2]
+// Dependencies: [1372, 3817, 676, 589, 2]
 // Exports: useCanSearchForumPostsByChannelId
 
-// Module 10106 (useCanSearchForumPostsByChannelId)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_3 from "_isNativeReflectConstruct";
+// Module 10127 (useCanSearchForumPostsByChannelId)
+import ensureGuildLoaded from "ensureGuildLoaded";
+import getUncachedChannelPermissions from "getUncachedChannelPermissions";
 import { Permissions } from "ME";
 
 const require = arg1;
@@ -14,8 +14,8 @@ const result = require("ME").fileFinishedImporting("modules/forums/native/hooks/
 
 export const useCanSearchForumPostsByChannelId = function useCanSearchForumPostsByChannelId(channelId) {
   const _require = channelId;
-  const items = [_isNativeReflectConstruct, closure_3];
-  return _require(566).useStateFromStores(items, () => {
+  const items = [ensureGuildLoaded, getUncachedChannelPermissions];
+  return _require(589).useStateFromStores(items, () => {
     const channel = outer1_2.getChannel(closure_0);
     let canResult = null != channel;
     if (canResult) {

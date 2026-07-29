@@ -1,9 +1,9 @@
-// Module ID: 6877
-// Function ID: 59587
+// Module ID: 6899
+// Function ID: 6900
 // Name: metadata
 // Dependencies: [2]
 
-// Module 6877 (metadata)
+// Module 6899 (metadata)
 const result = require("set").fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/BuildingBlocksSpotIllustration-2x.png.js");
 
 export default "https://cdn.discordapp.com/assets/content/d21d8bc51ac3c9ac62ad70c58141b333e9d1bd64e1659e7cd29409afb4b6024e.png";

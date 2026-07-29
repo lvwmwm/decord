@@ -1,9 +1,9 @@
-// Module ID: 589
-// Function ID: 7009
+// Module ID: 597
+// Function ID: 598
 // Name: enforcing
-// Dependencies: [27, 2]
+// Dependencies: [17, 2]
 
-// Module 589 (enforcing)
+// Module 597 (enforcing)
 import { TurboModuleRegistry } from "get ActivityIndicator";
 
 const enforcing = TurboModuleRegistry.getEnforcing("NativeCacheModule");

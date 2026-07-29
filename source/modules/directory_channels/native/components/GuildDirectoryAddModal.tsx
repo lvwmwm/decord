@@ -1,43 +1,43 @@
-// Module ID: 10040
-// Function ID: 77483
+// Module ID: 10061
+// Function ID: 10062
 // Name: GuildDirectoryAddModal
-// Dependencies: [31, 10041, 33, 4165, 5118, 480, 5121, 10039, 10042, 10050, 10054, 10064, 5155, 5485, 5552, 1212, 2]
+// Dependencies: [19, 10062, 21, 4189, 5140, 503, 5143, 10060, 10063, 10071, 10075, 10085, 5177, 5503, 5570, 1236, 2]
 // Exports: GuildDirectoryAddModalScreen, default
 
-// Module 10040 (GuildDirectoryAddModal)
-import "result";
+// Module 10061 (GuildDirectoryAddModal)
+import "noop";
 import { GuildDirectoryCreate } from "GuildDirectoryCreate";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
 const require = arg1;
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { marginTop: require("NAV_BAR_HEIGHT").NAV_BAR_HEIGHT, flex: 1 };
-_createForOfIteratorHelperLoose.safeArea = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+createCacheKey = { safeArea: null };
+createCacheKey = { marginTop: require("NAV_BAR_HEIGHT").NAV_BAR_HEIGHT, flex: 1 };
+createCacheKey[0] = createCacheKey;
+createCacheKey = createCacheKey.createStyles(createCacheKey);
 const result = require("jsxProd").fileFinishedImporting("modules/directory_channels/native/components/GuildDirectoryAddModal.tsx");
 
 export default function GuildDirectoryAddModal(arg0) {
   let initialStack;
   let screens;
   const _require = arg0;
-  ({ screens, initialStack } = importDefault(5485)(() => {
-    let obj = { name: outer1_3.CREATE_OR_ADD };
+  ({ screens, initialStack } = importDefault(5503)(() => {
+    let obj = { name: outer1_3.CREATE_OR_ADD, params: null };
     obj = {};
     let merged = Object.assign(callback);
-    obj.params = obj;
+    obj[1] = obj;
     const items = [obj];
-    obj = {};
+    obj = { screens: null, initialStack: null };
     const obj1 = {};
-    const obj2 = { fullscreen: true, impressionName: callback(outer1_2[5]).ImpressionNames.HUB_EXISTING_GUILD_CHOOSE };
+    const obj2 = { fullscreen: true, impressionName: callback(outer1_2[5]).ImpressionNames.HUB_EXISTING_GUILD_CHOOSE, headerLeft: null, headerTitle: null, render: null };
     let obj5 = callback(outer1_2[6]);
-    obj2.headerLeft = obj5.getHeaderCloseButton(outer1_1(outer1_2[7]).close);
-    obj2.headerTitle = function headerTitle() {
+    obj2[2] = obj5.getHeaderCloseButton(outer1_1(outer1_2[7]).close);
+    obj2[3] = function headerTitle() {
       return null;
     };
-    obj2.render = function render(arg0) {
+    obj2[4] = function render(arg0) {
       const merged = Object.assign(arg0);
-      return outer2_4(outer2_1(outer2_2[8]), {});
+      return callback2(callback(10063), {});
     };
     obj1[outer1_3.CREATE_OR_ADD] = obj2;
     obj1[outer1_3.DESCRIPTION] = {
@@ -48,7 +48,7 @@ export default function GuildDirectoryAddModal(arg0) {
       },
       render(arg0) {
         const merged = Object.assign(arg0);
-        return outer2_4(outer2_1(outer2_2[9]), {});
+        return callback2(callback(10071), {});
       }
     };
     const obj3 = {
@@ -59,7 +59,7 @@ export default function GuildDirectoryAddModal(arg0) {
       },
       render(arg0) {
         const merged = Object.assign(arg0);
-        return outer2_4(outer2_1(outer2_2[9]), {});
+        return callback2(callback(10071), {});
       }
     };
     obj1[outer1_3.TEMPLATES] = {
@@ -70,7 +70,7 @@ export default function GuildDirectoryAddModal(arg0) {
       },
       render(arg0) {
         const merged = Object.assign(arg0);
-        return outer2_4(outer2_1(outer2_2[10]), {});
+        return callback2(callback(10075), {});
       }
     };
     obj5 = {
@@ -81,20 +81,20 @@ export default function GuildDirectoryAddModal(arg0) {
       impressionName: callback(outer1_2[5]).ImpressionNames.HUB_CREATE_GUILD_CUSTOMIZE,
       render(arg0) {
         const merged = Object.assign(arg0);
-        return outer2_4(outer2_1(outer2_2[11]), {});
+        return callback2(callback(10085), {});
       }
     };
     obj1[outer1_3.CREATE] = obj5;
-    obj.screens = obj1;
-    obj.initialStack = items;
+    obj[0] = obj1;
+    obj[1] = items;
     return obj;
   }));
-  let obj = { screens, initialRouteStack: initialStack };
-  const intl = _require(1212).intl;
-  obj.headerBackTitle = intl.string(_require(1212).t["13/7kX"]);
-  return jsx(_require(5552).Navigator, { screens, initialRouteStack: initialStack });
+  let obj = { screens, initialRouteStack: initialStack, headerBackTitle: null };
+  const intl = _require(1236).intl;
+  obj[2] = intl.string(_require(1236).t["13/7kX"]);
+  return jsx(_require(5570).Navigator, { screens, initialRouteStack: initialStack, headerBackTitle: null });
 };
 export const GuildDirectoryAddModalScreen = function GuildDirectoryAddModalScreen(children) {
-  const tmp = _createForOfIteratorHelperLoose();
-  return jsx(require(5155) /* SafeAreaPaddingView */.SafeAreaPaddingView, { top: true, style: _createForOfIteratorHelperLoose().safeArea, children: children.children });
+  const tmp = createCacheKey();
+  return jsx(require(5177) /* SafeAreaPaddingView */.SafeAreaPaddingView, { top: true, style: createCacheKey().safeArea, children: children.children });
 };

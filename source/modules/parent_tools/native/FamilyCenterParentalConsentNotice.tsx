@@ -1,59 +1,61 @@
-// Module ID: 13883
-// Function ID: 106264
+// Module ID: 13904
+// Function ID: 13905
 // Name: FamilyCenterParentalConsentNotice
-// Dependencies: [31, 33, 4165, 689, 13875, 13876, 3862, 4161, 13884, 1212, 2199, 2]
+// Dependencies: [19, 21, 4189, 712, 13896, 13897, 3886, 4185, 13905, 1236, 2223, 2]
 // Exports: default
 
-// Module 13883 (FamilyCenterParentalConsentNotice)
-import result from "result";
+// Module 13904 (FamilyCenterParentalConsentNotice)
+import noop from "noop";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
 let require = arg1;
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { marginTop: require("_createForOfIteratorHelperLoose").space.PX_16 };
-_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.link = { textDecorationLine: "underline" };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/parent_tools/native/FamilyCenterParentalConsentNotice.tsx");
+createCacheKey = { container: null, link: null };
+createCacheKey = { marginTop: require("Themes").space.PX_16 };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { textDecorationLine: "underline" };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+const result = require("createCacheKey").fileFinishedImporting("modules/parent_tools/native/FamilyCenterParentalConsentNotice.tsx");
 
 export default function FamilyCenterParentalConsentNotice() {
-  function learnMoreHook(children) {
-    const obj = { variant: "text-sm/medium", color: "text-strong", style: tmp.link, accessibilityRole: "link", onPress: closure_1, children };
-    return outer1_4(tmp(outer1_2[7]).Text, obj, arg1);
-  }
-  const tmp = _createForOfIteratorHelperLoose();
+  const tmp = createCacheKey();
   const require = tmp;
-  let obj = require(13875) /* useIsParentalConsentBannerActive */;
+  let obj = require(13896) /* useIsParentalConsentBannerActive */;
   const isParentalConsentBannerActive = obj.useIsParentalConsentBannerActive();
-  let obj1 = require(13876) /* useParentalConsentWarning */;
+  let obj1 = require(13897) /* useParentalConsentWarning */;
   const parentalConsentWarning = obj1.useParentalConsentWarning();
   let daysRemaining;
-  if (null != parentalConsentWarning) {
+  if (parentalConsentWarning != null) {
     daysRemaining = parentalConsentWarning.daysRemaining;
   }
-  let tmp5 = null;
-  if (null != daysRemaining) {
-    tmp5 = daysRemaining;
+  if (daysRemaining == null) {
+    daysRemaining = null;
   }
   const importDefault = React.useCallback(() => {
-    callback(outer1_2[6]).openURL("https://support.discord.com/hc/articles/14155060633623");
+    callback(table[6]).openURL("https://support.discord.com/hc/articles/14155060633623");
   }, []);
   if (isParentalConsentBannerActive) {
-    if (null != tmp5) {
-      if (tmp5 >= 0) {
-        obj = { style: tmp.container };
-        if (0 === tmp5) {
-          const intl2 = require(1212) /* getSystemLocale */.intl;
-          obj = { learnMoreHook };
-          let formatResult = intl2.format(importDefault(2199).S5kmfO, obj);
-        } else {
-          const intl = require(1212) /* getSystemLocale */.intl;
-          obj1 = { count: tmp5, learnMoreHook };
-          formatResult = intl.format(importDefault(2199)["5jm+T3"], obj1);
+    if (null != daysRemaining) {
+      if (daysRemaining >= 0) {
+        function learnMoreHook(children) {
+          return outer1_4(tmp(outer1_2[7]).Text, { variant: "text-sm/medium", color: "text-strong", style: tmp.link, accessibilityRole: "link", onPress: closure_1, children }, arg1);
         }
-        obj.text = formatResult;
-        return jsx(importDefault(13884), { style: tmp.container });
+        obj = { style: null, text: null };
+        obj[0] = tmp.container;
+        if (0 === daysRemaining) {
+          const intl2 = tmp2(1236).intl;
+          obj = { learnMoreHook: null };
+          obj[0] = learnMoreHook;
+          let formatResult = intl2.format(tmp9(2223).S5kmfO, obj);
+        } else {
+          const intl = tmp2(1236).intl;
+          obj1 = { count: null, learnMoreHook: null };
+          obj1[0] = daysRemaining;
+          obj1[1] = learnMoreHook;
+          formatResult = intl.format(tmp9(2223)["5jm+T3"], obj1);
+        }
+        obj[1] = formatResult;
+        return jsx(importDefault(13905), { style: null, text: null });
       }
     }
   }

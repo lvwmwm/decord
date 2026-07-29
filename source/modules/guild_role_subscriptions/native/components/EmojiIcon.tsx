@@ -1,11 +1,11 @@
-// Module ID: 14235
-// Function ID: 109378
+// Module ID: 14257
+// Function ID: 14258
 // Name: EmojiIcon
-// Dependencies: [31, 33, 14236, 5119, 9342, 5184, 1392, 2]
+// Dependencies: [19, 21, 14258, 5141, 9366, 5206, 1416, 2]
 // Exports: default
 
-// Module 14235 (EmojiIcon)
-import "result";
+// Module 14257 (EmojiIcon)
+import "noop";
 import { jsx } from "jsxProd";
 
 const require = arg1;
@@ -29,57 +29,61 @@ export default function EmojiIcon(size) {
   if (lineHeight === undefined) {
     lineHeight = num + 4;
   }
-  let obj = require(14236) /* useEmojiByIdOrName */;
+  let obj = require(14258) /* useEmojiByIdOrName */;
   const emojiByIdOrName = obj.useEmojiByIdOrName(guildId, id);
   if (null == emojiByIdOrName) {
-    let tmp6 = null;
+    let tmp4 = null;
     if (flag) {
-      obj = { resizeMode: "contain" };
-      obj = { width: num, height: num };
-      obj.style = obj;
-      obj.source = importDefault(9342);
-      tmp6 = jsx(importDefault(5119), { width: num, height: num });
-      const tmp10 = importDefault(5119);
+      obj = { resizeMode: "contain", style: null, source: null };
+      obj = { width: null, height: null };
+      obj[0] = num;
+      obj[1] = num;
+      obj[1] = obj;
+      obj[2] = importDefault(9366);
+      tmp4 = jsx(importDefault(5141), { width: null, height: null });
+      const tmp7 = importDefault(5141);
     }
-    let tmp11Result = tmp6;
+    let tmp8Result = tmp4;
   } else {
-    let obj1 = { style: size.style };
-    const obj2 = { width: num, height: num };
-    obj1.fastImageStyle = obj2;
-    const obj3 = {};
-    let tmp2 = num;
-    if (null != fontSize) {
-      tmp2 = fontSize;
+    const obj1 = { style: null, fastImageStyle: null, textEmojiStyle: null, name: null, src: null };
+    obj1[0] = size.style;
+    const obj2 = { width: null, height: null };
+    obj2[0] = num;
+    obj2[1] = num;
+    obj1[1] = obj2;
+    if (fontSize == null) {
+      fontSize = num;
     }
-    obj3.fontSize = tmp2;
-    obj3.lineHeight = lineHeight;
-    obj1.textEmojiStyle = obj3;
+    const obj3 = { fontSize: null, lineHeight: null };
+    obj3[0] = fontSize;
+    obj3[1] = lineHeight;
+    obj1[2] = obj3;
     if (null != emojiByIdOrName.id) {
       let str = emojiByIdOrName.name;
     } else {
-      let name = emojiByIdOrName.surrogates;
-      if (null == name) {
-        name = emojiByIdOrName.name;
+      str = emojiByIdOrName.surrogates;
+      if (str == null) {
+        str = emojiByIdOrName.name;
       }
-      str = "";
-      if (null != name) {
-        str = name;
+      if (str == null) {
+        str = "";
       }
     }
-    obj1.name = str;
+    obj1[3] = str;
     if (null != emojiByIdOrName.id) {
-      obj1 = importDefault(1392);
-      const obj4 = {};
-      ({ id: obj3.id, animated: obj3.animated } = emojiByIdOrName);
-      obj4.size = num;
-      let url = obj1.getEmojiURL(obj4);
+      const obj4 = { id: null, animated: null, size: null };
+      ({ id: obj4[0], animated: obj4[1] } = emojiByIdOrName);
+      obj4[2] = num;
+      let url = tmp9(1416).getEmojiURL(obj4);
+      const tmp9Result = tmp9(1416);
     } else {
       url = emojiByIdOrName.url;
     }
-    obj1.src = url;
-    tmp11Result = jsx(importDefault(5184), { style: size.style });
-    const tmp11 = jsx;
-    const tmp14 = importDefault(5184);
+    obj1[4] = url;
+    tmp8Result = jsx(importDefault(5206), { style: null, fastImageStyle: null, textEmojiStyle: null, name: null, src: null });
+    const tmp10 = importDefault(5206);
+    const tmp8 = jsx;
+    tmp9 = importDefault;
   }
-  return tmp11Result;
+  return tmp8Result;
 };

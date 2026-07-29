@@ -1,14 +1,15 @@
-// Module ID: 12879
-// Function ID: 100105
+// Module ID: 12901
+// Function ID: 12902
 // Name: getSystemwideEchoCancellationExperimentConfig
-// Dependencies: [1428, 2]
+// Dependencies: [1452, 2]
 // Exports: getSystemwideEchoCancellationExperimentConfig
 
-// Module 12879 (getSystemwideEchoCancellationExperimentConfig)
+// Module 12901 (getSystemwideEchoCancellationExperimentConfig)
 import ApexExperiment from "ApexExperiment";
 
-const obj = { kind: "user", name: "2026-06-systemwide-echo-cancellation-for-people-who-refuse-to-wear-headphones", defaultConfig: { echoReferenceMode: "mix" }, variations: { [1]: { echoReferenceMode: "auto" } } };
-let closure_0 = ApexExperiment.createApexExperiment(obj);
+const obj = { 1: null };
+obj[1] = { echoReferenceMode: "auto" };
+let closure_0 = ApexExperiment.createApexExperiment({ kind: "user", name: "2026-06-systemwide-echo-cancellation-for-people-who-refuse-to-wear-headphones", defaultConfig: { echoReferenceMode: "mix" }, variations: obj });
 const result = require("set").fileFinishedImporting("modules/media_engine/SystemwideEchoCancellationExperiment.tsx");
 
 export const getSystemwideEchoCancellationExperimentConfig = function getSystemwideEchoCancellationExperimentConfig(location) {

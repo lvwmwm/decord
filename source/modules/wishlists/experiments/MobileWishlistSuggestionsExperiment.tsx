@@ -1,14 +1,13 @@
-// Module ID: 12169
-// Function ID: 95193
+// Module ID: 12193
+// Function ID: 12194
 // Name: useIsMobileWishlistSuggestionsEnabled
-// Dependencies: [1428, 2]
+// Dependencies: [1452, 2]
 // Exports: getIsMobileWishlistSuggestionsEnabled, useIsMobileWishlistSuggestionsEnabled
 
-// Module 12169 (useIsMobileWishlistSuggestionsEnabled)
+// Module 12193 (useIsMobileWishlistSuggestionsEnabled)
 import ApexExperiment from "ApexExperiment";
 
-const obj = { name: "2026-07-smag-mobile-wishlist-suggestions", kind: "user", defaultConfig: { isEnabled: false }, variations: { [0]: { isEnabled: false }, [1]: { isEnabled: true } } };
-let closure_0 = ApexExperiment.createApexExperiment(obj);
+let closure_0 = ApexExperiment.createApexExperiment({ name: "2026-07-smag-mobile-wishlist-suggestions", kind: "user", defaultConfig: { isEnabled: false }, variations: { 0: { isEnabled: false }, 1: { isEnabled: true } } });
 const result = require("set").fileFinishedImporting("modules/wishlists/experiments/MobileWishlistSuggestionsExperiment.tsx");
 
 export const useIsMobileWishlistSuggestionsEnabled = function useIsMobileWishlistSuggestionsEnabled(WishlistEmptyState) {

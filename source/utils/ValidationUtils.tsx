@@ -1,9 +1,9 @@
-// Module ID: 8182
-// Function ID: 65090
+// Module ID: 8206
+// Function ID: 8207
 // Name: set
 // Dependencies: [2]
 
-// Module 8182 (set)
+// Module 8206 (set)
 const re0 = /^([\w-+]+(?:\.[\w-+]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,63}(?:\.[a-z]{2})?)$/i;
 const re1 = /^((https:\/\/)?(discord\.gg\/)|(discord\.com\/)(invite\/)?)?[A-Za-z0-9]{8,8}$/;
 const re2 = /^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$/;
@@ -29,7 +29,11 @@ export default {
       if (match.length > 1) {
         let closure_0 = tmp;
         const someResult = closure_5.some((arg0) => tmp.includes(arg0));
-        return !closure_5.some((arg0) => tmp.includes(arg0)) && !closure_6.includes(match[1]);
+        let tmp5 = !someResult;
+        if (!someResult) {
+          tmp5 = !closure_6.includes(tmp);
+        }
+        return tmp5;
       }
     }
     return false;

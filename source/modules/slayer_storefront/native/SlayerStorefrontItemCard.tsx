@@ -1,25 +1,25 @@
-// Module ID: 8029
-// Function ID: 63817
+// Module ID: 8053
+// Function ID: 8054
 // Name: SlayerStorefrontItemCard
-// Dependencies: [31, 27, 33, 4165, 689, 5644, 8030, 5790, 5119, 4589, 2]
+// Dependencies: [19, 17, 21, 4189, 712, 5662, 8054, 5808, 5141, 4611, 2]
 // Exports: default
 
-// Module 8029 (SlayerStorefrontItemCard)
-import result from "result";
+// Module 8053 (SlayerStorefrontItemCard)
+import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_4;
-let closure_5;
+let c4;
+let c5;
 const require = arg1;
-({ ImageBackground: closure_4, View: closure_5 } = get_ActivityIndicator);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { borderRadius: require("_createForOfIteratorHelperLoose").radii.md, overflow: "hidden", shadowColor: "#000", shadowOffset: { width: 0, height: 4 }, shadowOpacity: 0.3, shadowRadius: 8, elevation: 8 };
-_createForOfIteratorHelperLoose.cardContainer = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.cardImageBackground = { width: "100%", height: "100%", alignItems: "center", justifyContent: "center" };
-_createForOfIteratorHelperLoose.cardImage = { width: "100%", height: "100%", resizeMode: "cover" };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+({ ImageBackground: c4, View: c5 } = get_ActivityIndicator);
+createCacheKey = { cardContainer: null, cardImageBackground: null, cardImage: null };
+createCacheKey = { borderRadius: require("Themes").radii.md, overflow: "hidden", shadowColor: "#000", shadowOffset: { width: 0, height: 4 }, shadowOpacity: 0.3, shadowRadius: 8, elevation: 8 };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { width: "100%", height: "100%", alignItems: "center", justifyContent: "center" };
+createCacheKey[2] = { width: "100%", height: "100%", resizeMode: "cover" };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
 const result = require("jsxProd").fileFinishedImporting("modules/slayer_storefront/native/SlayerStorefrontItemCard.tsx");
 
 export default function SlayerStorefrontItemCard(sku) {
@@ -30,10 +30,12 @@ export default function SlayerStorefrontItemCard(sku) {
   }
   let bound;
   let dominantColorFromImage;
-  let cardImage = _createForOfIteratorHelperLoose();
+  let cardImage = createCacheKey();
   let size = num;
-  if ("object" !== typeof num) {
-    let obj = { width: num, height: num };
+  if (typeof num !== "ay") {
+    let obj = { width: null, height: null };
+    obj[0] = num;
+    obj[1] = num;
     size = obj;
   }
   bound = Math.max(size.width, size.height);
@@ -44,57 +46,62 @@ export default function SlayerStorefrontItemCard(sku) {
     return obj.getCardImageURL(sku, obj);
   }, items);
   let items1 = [sku, bound];
-  let str2 = React.useMemo(() => {
+  const str2 = React.useMemo(() => {
     let obj = sku(dominantColorFromImage[5]);
     obj = { size: bound };
     return obj.getCardBackgroundImageURL(sku, obj);
   }, items1);
-  let obj1 = sku(dominantColorFromImage[6]);
+  let tmp7Result = dominantColorFromImage;
+  obj = sku(dominantColorFromImage[6]);
   str = undefined;
-  if (null != str) {
+  if (str != null) {
     str = str.toString();
   }
-  dominantColorFromImage = obj1.useDominantColorFromImage(str);
+  dominantColorFromImage = obj.useDominantColorFromImage(str);
   [][0] = dominantColorFromImage;
-  let tmp5 = null;
+  let tmp6 = null;
   if (null != sku) {
-    tmp5 = null;
+    tmp6 = null;
     if (null != str) {
-      obj = {};
+      obj = { style: null, children: null };
       const items2 = [cardImage.cardContainer, size, sku.containerStyle];
-      obj.style = items2;
+      obj[0] = items2;
       if (null != str2) {
-        obj = {};
-        obj1 = { uri: str2.toString() };
-        obj.source = obj1;
-        obj.style = cardImage.cardImageBackground;
-        const obj2 = {};
-        const obj3 = {};
-        str2 = str.toString();
-        obj3.uri = str2;
-        obj2.source = obj3;
+        const obj1 = { source: null, style: null, children: null };
+        const obj2 = { uri: null };
+        obj2[0] = str2.toString();
+        obj1[0] = obj2;
+        obj1[1] = cardImage.cardImageBackground;
+        const obj3 = { source: null, style: null };
+        const obj4 = { uri: null };
+        obj4[0] = str.toString();
+        obj3[0] = obj4;
         cardImage = cardImage.cardImage;
-        obj2.style = cardImage;
-        obj.children = jsx(bound(dominantColorFromImage[8]), {});
-        let tmp13 = <closure_4 />;
-        const tmp12 = bound(dominantColorFromImage[8]);
+        obj3[1] = cardImage;
+        tmp7Result = tmp7(bound(tmp7Result[8]), obj3);
+        obj1[2] = tmp7Result;
+        tmp7Result = tmp7(closure_4, obj1);
+        const tmp11 = bound(tmp7Result[8]);
       } else {
-        const obj4 = { colors: tmp4, start: { x: 0, y: 0 }, end: { x: 1, y: 1 }, style: cardImage.cardImageBackground };
-        let obj5 = {};
-        const obj6 = {};
-        const tmp18 = bound(dominantColorFromImage[9]);
-        obj6.uri = str.toString();
-        obj5.source = obj6;
-        obj5.style = cardImage.cardImage;
-        obj4.children = jsx(bound(dominantColorFromImage[8]), {});
-        tmp13 = <tmp18 colors={tmp4} start={{ x: 0, y: 0 }} end={{ x: 1, y: 1 }} style={cardImage.cardImageBackground} />;
-        const tmp19 = bound(dominantColorFromImage[8]);
+        let obj5 = { colors: null, start: null, end: null, style: null, children: null };
+        obj5[0] = tmp5;
+        obj5[1] = { x: 0, y: 0 };
+        obj5[2] = { x: 1, y: 1 };
+        obj5[3] = cardImage.cardImageBackground;
+        const obj6 = { source: null, style: null };
+        const obj7 = { uri: null };
+        const tmp15 = bound(tmp7Result[9]);
+        obj7[0] = str.toString();
+        obj6[0] = obj7;
+        obj6[1] = cardImage.cardImage;
+        obj5[4] = tmp7(bound(tmp7Result[8]), obj6);
+        tmp7Result = tmp7(tmp15, obj5);
+        const tmp16 = bound(tmp7Result[8]);
       }
-      obj.children = tmp13;
-      <closure_5 />;
-      const tmp6 = jsx;
-      const tmp7 = closure_5;
+      obj[1] = tmp7Result;
+      <closure_5 style={null}>{null}</closure_5>;
+      const tmp8 = closure_5;
     }
   }
-  return tmp5;
+  return tmp6;
 };

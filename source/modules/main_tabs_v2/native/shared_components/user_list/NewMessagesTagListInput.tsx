@@ -1,32 +1,33 @@
-// Module ID: 11442
-// Function ID: 88800
-// Dependencies: [31, 27, 1850, 33, 4165, 689, 477, 1324, 1327, 8793, 8265, 4695, 1212, 11443, 11284, 4161, 3878, 2]
+// Module ID: 11466
+// Function ID: 11467
+// Dependencies: [19, 17, 1874, 21, 4189, 712, 500, 1348, 1351, 8817, 8289, 4717, 1236, 11467, 11308, 4185, 3902, 2]
 
-// Module 11442
-import importAllResult from "result";
-import { View } from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 11466
+import importAllResult from "noop";
+import { View } from "set";
+import mergeGuildAvatar from "mergeGuildAvatar";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 import set from "set";
-import set from "_isNativeReflectConstruct";
+import set from "mergeGuildAvatar";
 
 const require = arg1;
+let c3 = importAllResult;
+let obj = { searchBarContainer: null, header: null, showSearchButton: null, searchBar: null };
+obj = { paddingHorizontal: require("Themes").space.PX_16, paddingBottom: require("Themes").space.PX_8, backgroundColor: require("Themes").colors.MOBILE_ACTIONSHEET_BACKGROUND };
+obj[0] = obj;
+createCacheKey = { marginLeft: require("Themes").space.PX_12, marginBottom: null };
 let num = 0;
-let obj = {};
-obj = { paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16, paddingBottom: require("_createForOfIteratorHelperLoose").space.PX_8, backgroundColor: require("_createForOfIteratorHelperLoose").colors.MOBILE_ACTIONSHEET_BACKGROUND };
-obj.searchBarContainer = obj;
-_createForOfIteratorHelperLoose = { marginLeft: require("_createForOfIteratorHelperLoose").space.PX_12 };
 if (set.isAndroid()) {
   num = 2;
 }
-_createForOfIteratorHelperLoose.marginBottom = num;
-obj.header = _createForOfIteratorHelperLoose;
-obj.showSearchButton = { marginHorizontal: require("_createForOfIteratorHelperLoose").space.PX_12 };
-let obj2 = { marginHorizontal: require("_createForOfIteratorHelperLoose").space.PX_12 };
-obj.searchBar = { borderRadius: require("_createForOfIteratorHelperLoose").radii.md };
-let closure_7 = _createForOfIteratorHelperLoose.createStyles(obj);
-let obj3 = { borderRadius: require("_createForOfIteratorHelperLoose").radii.md };
+createCacheKey[1] = num;
+obj[1] = createCacheKey;
+obj[2] = { marginHorizontal: require("Themes").space.PX_12 };
+let obj2 = { marginHorizontal: require("Themes").space.PX_12 };
+obj[3] = { borderRadius: require("Themes").radii.md };
+let closure_7 = createCacheKey.createStyles(obj);
+const obj3 = { borderRadius: require("Themes").radii.md };
 const result = set.fileFinishedImporting("modules/main_tabs_v2/native/shared_components/user_list/NewMessagesTagListInput.tsx");
 
 export default importAllResult.memo(function NewMessagesTagListInput(forceSearchResults) {
@@ -39,76 +40,73 @@ export default importAllResult.memo(function NewMessagesTagListInput(forceSearch
   let selectedUserIds;
   let tagListInputRef;
   ({ onSelectUser: require, selectedUserIds } = forceSearchResults);
+  let memo;
   ({ autoFocus, onChangeText, onFocus, hasQuery, onForceSearchResults, tagListInputRef } = forceSearchResults);
   const tmp = callback();
   let obj = require(memo[7]);
-  const items = [selectedUserIds];
+  let items = [selectedUserIds];
   memo = importAllResult.useMemo(() => {
-    const mapped = null != selectedUserIds ? selectedUserIds : [].map(outer1_5.getUser);
+    let items = selectedUserIds;
+    if (selectedUserIds == null) {
+      items = [];
+    }
+    const mapped = items.map(outer1_5.getUser);
     const found = mapped.filter(outer1_0(memo[8]).isNotNullish);
     return found.map(selectedUserIds(memo[9]));
   }, items);
-  obj = { style: tmp.searchBarContainer };
-  obj = {};
+  obj = { style: tmp.searchBarContainer, children: null };
   let searchBar;
   if (!obj.useMobileVisualRefreshConfig({ location: "NewMessagesTagListInput" }).enabled) {
     searchBar = tmp.searchBar;
   }
-  obj.style = searchBar;
-  obj.autoFocus = autoFocus;
-  obj.focusOnAdd = true;
-  let tmp6 = null;
+  obj = { style: searchBar, autoFocus, focusOnAdd: true, footer: null, icon: null, onChangeText: null, onFocus: null, onRemove: null, placeholder: null, tags: null, ref: null };
+  let tmp8 = null;
   if (!hasQuery) {
-    tmp6 = null;
+    tmp8 = null;
     if (memo.length > 0) {
-      const obj1 = { accessibilityRole: "button" };
-      let intl = require(memo[12]).intl;
+      let intl = tmp2(tmp3[12]).intl;
       const string = intl.string;
-      const t = require(memo[12]).t;
+      const t = tmp2(tmp3[12]).t;
       if (forceSearchResults) {
         let stringResult = string(t["4wv+DE"]);
       } else {
         stringResult = string(t.fTcQm2);
       }
-      obj1.accessibilityLabel = stringResult;
-      obj1.onPress = onForceSearchResults;
-      obj1.style = tmp.showSearchButton;
-      let str2 = require;
+      const obj1 = { accessibilityRole: "button", accessibilityLabel: null, onPress: null, style: null, children: null };
+      obj1[1] = stringResult;
+      obj1[2] = onForceSearchResults;
+      obj1[3] = tmp.showSearchButton;
       if (forceSearchResults) {
-        let CirclePlusIcon = str2(tmp14[13]).ChevronLargeRightIcon;
+        let CirclePlusIcon = tmp2(tmp3[13]).ChevronLargeRightIcon;
       } else {
-        CirclePlusIcon = str2(tmp14[14]).CirclePlusIcon;
+        CirclePlusIcon = tmp2(tmp3[14]).CirclePlusIcon;
       }
-      const obj2 = {};
-      str2 = "xs";
-      obj2.size = "xs";
-      obj1.children = <CirclePlusIcon />;
-      jsx(require(memo[11]).PressableOpacity, { accessibilityRole: "button" });
-      const tmp13 = jsx;
-      const tmp7 = jsx;
+      obj1[4] = tmp4(CirclePlusIcon, { size: "xs" });
+      tmp4(tmp2(tmp3[11]).PressableOpacity, obj1);
     }
   }
-  obj.footer = tmp6;
-  const obj3 = { style: tmp.header, variant: "text-sm/medium", color: "text-muted", accessible: false };
-  const intl2 = require(memo[12]).intl;
-  obj3.children = intl2.string(require(memo[12]).t.kHyiXs);
-  obj.icon = jsx(require(memo[15]).Text, { style: tmp.header, variant: "text-sm/medium", color: "text-muted", accessible: false });
-  obj.onChangeText = onChangeText;
-  obj.onFocus = onFocus;
-  obj.onRemove = function onRemove(arg0) {
+  obj[3] = tmp8;
+  const obj2 = { style: tmp.header, variant: "text-sm/medium", color: "text-muted", accessible: false, children: null };
+  const intl2 = tmp2(tmp3[12]).intl;
+  obj2[4] = intl2.string(require(memo[12]).t.kHyiXs);
+  obj[4] = jsx(require(memo[15]).Text, { style: tmp.header, variant: "text-sm/medium", color: "text-muted", accessible: false, children: null });
+  obj[5] = onChangeText;
+  obj[6] = onFocus;
+  obj[7] = function onRemove(arg0) {
     const user = outer1_5.getUser(tmp.id);
     if (null != user) {
       callback(user);
       const AccessibilityAnnouncer = outer1_0(memo[16]).AccessibilityAnnouncer;
       const intl = outer1_0(memo[12]).intl;
-      const obj = { text: tmp.text };
+      const obj = { text: null };
+      obj[0] = tmp.text;
       AccessibilityAnnouncer.announce(intl.formatToPlainString(outer1_0(memo[12]).t.srlxB8, obj));
     }
   };
-  const intl3 = require(memo[12]).intl;
-  obj.placeholder = intl3.string(require(memo[12]).t.CaEER6);
-  obj.tags = memo;
-  obj.ref = tagListInputRef;
-  obj.children = jsx(selectedUserIds(memo[10]), {});
-  return <View />;
+  const intl3 = tmp2(tmp3[12]).intl;
+  obj[8] = intl3.string(require(memo[12]).t.CaEER6);
+  obj[9] = memo;
+  obj[10] = tagListInputRef;
+  obj[1] = jsx(selectedUserIds(memo[10]), { style: searchBar, autoFocus, focusOnAdd: true, footer: null, icon: null, onChangeText: null, onFocus: null, onRemove: null, placeholder: null, tags: null, ref: null });
+  return <View style={searchBar} autoFocus={autoFocus} focusOnAdd footer={null} icon={null} onChangeText={null} onFocus={null} onRemove={null} placeholder={null} tags={null} ref={null} />;
 });

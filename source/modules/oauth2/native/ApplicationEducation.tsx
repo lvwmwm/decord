@@ -1,40 +1,41 @@
-// Module ID: 8984
-// Function ID: 70775
+// Module ID: 9008
+// Function ID: 9009
 // Name: ApplicationEducationEntry
-// Dependencies: [31, 27, 653, 33, 4165, 689, 8931, 8150, 1212, 3867, 8985, 8911, 8987, 4161, 8989, 2]
+// Dependencies: [19, 17, 676, 21, 4189, 712, 8955, 8174, 1236, 3891, 9009, 8935, 9011, 4185, 9013, 2]
 // Exports: default
 
-// Module 8984 (ApplicationEducationEntry)
-import "result";
+// Module 9008 (ApplicationEducationEntry)
+import "noop";
 import { View } from "get ActivityIndicator";
 import { MAX_FRIENDS } from "ME";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_5;
+let c5;
 let closure_6;
-let closure_7;
+let error;
 const require = arg1;
 function ApplicationEducationEntry(children) {
   const iconComponent = children.iconComponent;
-  const tmp = _createForOfIteratorHelperLoose();
-  let obj = { style: tmp.entry };
+  const tmp = createCacheKey();
+  let obj = { style: tmp.entry, children: null };
   let iconComponentResult = null;
   if (null != iconComponent) {
-    obj = { style: tmp.entryIcon };
+    obj = { style: null };
+    obj[0] = tmp.entryIcon;
     iconComponentResult = iconComponent(obj);
   }
   const items = [iconComponentResult, ];
   obj = { variant: "text-md/normal", style: tmp.entryText, children: children.text };
-  items[1] = callback(require(4161) /* Text */.Text, obj);
-  obj.children = items;
+  items[1] = callback(require(4185) /* Text */.Text, obj);
+  obj[1] = items;
   return closure_6(View, obj);
 }
-({ jsx: closure_5, jsxs: closure_6, Fragment: closure_7 } = jsxProd);
-_createForOfIteratorHelperLoose = { applicationEducation: { flexDirection: "column", gap: 16 }, entry: { flexDirection: "row", alignItems: "center", gap: 12 }, entryText: { flex: 1 } };
-_createForOfIteratorHelperLoose = { width: 20, height: 20, tintColor: require("_createForOfIteratorHelperLoose").colors.TEXT_MUTED };
-_createForOfIteratorHelperLoose.entryIcon = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+({ jsx: c5, jsxs: closure_6, Fragment: error } = jsxProd);
+createCacheKey = { applicationEducation: { flexDirection: "column", gap: 16 }, entry: { flexDirection: "row", alignItems: "center", gap: 12 }, entryText: { flex: 1 }, entryIcon: null };
+createCacheKey = { width: 20, height: 20, tintColor: require("Themes").colors.TEXT_MUTED };
+createCacheKey[3] = createCacheKey;
+createCacheKey = createCacheKey.createStyles(createCacheKey);
 const result = require("ME").fileFinishedImporting("modules/oauth2/native/ApplicationEducation.tsx");
 
 export default function ApplicationEducation(arg0) {
@@ -42,122 +43,137 @@ export default function ApplicationEducation(arg0) {
   let application;
   ({ application, accountScopes } = arg0);
   const items = [];
-  const tmp2 = importDefault(8931)(application);
-  if (accountScopes.includes(require(8150) /* set */.OAuth2Scopes.SDK_SOCIAL_LAYER)) {
-    const intl5 = require(1212) /* getSystemLocale */.intl;
-    if (tmp2) {
-      let obj = { applicationName: application.name };
-      let formatToPlainStringResult = intl5.formatToPlainString(tmp26(1212).t["3Mau0y"], obj);
+  const tmp3 = importDefault(8955)(application);
+  if (accountScopes.includes(require(8174) /* set */.OAuth2Scopes.SDK_SOCIAL_LAYER)) {
+    const intl5 = tmp4(1236).intl;
+    if (tmp3) {
+      let obj = { applicationName: null };
+      obj[0] = application.name;
+      let formatToPlainStringResult = intl5.formatToPlainString(tmp4(1236).t["3Mau0y"], obj);
     } else {
-      formatToPlainStringResult = intl5.string(tmp26(1212).t.ex4sMU);
+      formatToPlainStringResult = intl5.string(tmp4(1236).t.ex4sMU);
     }
-    obj = { iconComponent: require(3867) /* FriendsIcon */.FriendsIcon };
-    const intl6 = require(1212) /* getSystemLocale */.intl;
+    obj = { iconComponent: null, text: null };
+    obj[0] = tmp4(3891).FriendsIcon;
+    const intl6 = tmp4(1236).intl;
     const formatToPlainString2 = intl6.formatToPlainString;
-    const t4 = require(1212) /* getSystemLocale */.t;
-    if (tmp2) {
-      const obj1 = { maxFriends: MAX_FRIENDS };
+    const t4 = tmp4(1236).t;
+    if (tmp3) {
+      const obj1 = { maxFriends: null };
+      obj1[0] = MAX_FRIENDS;
       let formatToPlainString2Result = formatToPlainString2(t4.z9peav, obj1);
     } else {
-      const obj2 = { maxFriends: MAX_FRIENDS };
+      const obj2 = { maxFriends: null };
+      obj2[0] = MAX_FRIENDS;
       formatToPlainString2Result = formatToPlainString2(t4.WNKzo9, obj2);
     }
-    obj.text = formatToPlainString2Result;
-    const obj3 = { iconComponent: require(8985) /* ChatSmileIcon */.ChatSmileIcon };
-    const intl7 = require(1212) /* getSystemLocale */.intl;
+    obj[1] = formatToPlainString2Result;
+    const obj3 = { iconComponent: null, text: null };
+    obj3[0] = tmp4(9009).ChatSmileIcon;
+    const intl7 = tmp4(1236).intl;
     const string3 = intl7.string;
-    const t5 = require(1212) /* getSystemLocale */.t;
-    if (tmp2) {
+    const t5 = tmp4(1236).t;
+    if (tmp3) {
       let string3Result = string3(t5.daY6xj);
     } else {
       string3Result = string3(t5.j7peBh);
     }
-    obj3.text = string3Result;
-    const obj4 = { iconComponent: require(8911) /* GameControllerIcon */.GameControllerIcon };
-    const intl8 = require(1212) /* getSystemLocale */.intl;
+    obj3[1] = string3Result;
+    const obj4 = { iconComponent: null, text: null };
+    obj4[0] = tmp4(8935).GameControllerIcon;
+    const intl8 = tmp4(1236).intl;
     const string4 = intl8.string;
-    const t6 = require(1212) /* getSystemLocale */.t;
-    if (tmp2) {
+    const t6 = tmp4(1236).t;
+    if (tmp3) {
       let string4Result = string4(t6["/bdaNN"]);
     } else {
       string4Result = string4(t6["feD3+i"]);
     }
-    obj4.text = string4Result;
-    let obj5 = { iconComponent: require(8987) /* SettingsIcon */.SettingsIcon };
-    const intl9 = require(1212) /* getSystemLocale */.intl;
+    obj4[1] = string4Result;
+    let obj5 = { iconComponent: null, text: null };
+    obj5[0] = tmp4(9011).SettingsIcon;
+    const intl9 = tmp4(1236).intl;
     const string5 = intl9.string;
-    let mSqazC = require(1212) /* getSystemLocale */.t;
-    if (tmp2) {
+    let mSqazC = tmp4(1236).t;
+    if (tmp3) {
       mSqazC = mSqazC.mSqazC;
       let string5Result = string5(mSqazC);
     } else {
       string5Result = string5(mSqazC.YFFVM1);
     }
-    obj5.text = string5Result;
+    obj5[1] = string5Result;
     obj5 = items.push(obj, obj3, obj4, obj5);
   } else {
-    if (accountScopes.includes(require(8150) /* set */.OAuth2Scopes.SDK_SOCIAL_LAYER_PRESENCE)) {
-      const intl = require(1212) /* getSystemLocale */.intl;
-      if (tmp2) {
-        obj = { applicationName: application.name };
-        let formatToPlainStringResult1 = intl.formatToPlainString(tmp5(1212).t["3Mau0y"], obj);
+    if (accountScopes.includes(tmp4(8174).OAuth2Scopes.SDK_SOCIAL_LAYER_PRESENCE)) {
+      const intl = tmp4(1236).intl;
+      if (tmp3) {
+        obj = { applicationName: null };
+        obj[0] = application.name;
+        let formatToPlainStringResult1 = intl.formatToPlainString(tmp4(1236).t["3Mau0y"], obj);
       } else {
-        formatToPlainStringResult1 = intl.string(tmp5(1212).t.ex4sMU);
+        formatToPlainStringResult1 = intl.string(tmp4(1236).t.ex4sMU);
       }
-      const obj6 = { iconComponent: require(3867) /* FriendsIcon */.FriendsIcon };
-      const intl2 = require(1212) /* getSystemLocale */.intl;
+      const obj6 = { iconComponent: null, text: null };
+      obj6[0] = tmp4(3891).FriendsIcon;
+      const intl2 = tmp4(1236).intl;
       const formatToPlainString = intl2.formatToPlainString;
-      const t = require(1212) /* getSystemLocale */.t;
-      if (tmp2) {
-        const obj7 = { maxFriends: MAX_FRIENDS };
+      const t = tmp4(1236).t;
+      if (tmp3) {
+        const obj7 = { maxFriends: null };
+        obj7[0] = MAX_FRIENDS;
         let formatToPlainStringResult2 = formatToPlainString(t.z9peav, obj7);
       } else {
-        const obj8 = { maxFriends: MAX_FRIENDS };
+        const obj8 = { maxFriends: null };
+        obj8[0] = MAX_FRIENDS;
         formatToPlainStringResult2 = formatToPlainString(t.WNKzo9, obj8);
       }
-      obj6.text = formatToPlainStringResult2;
-      const obj9 = { iconComponent: require(8911) /* GameControllerIcon */.GameControllerIcon };
-      const intl3 = require(1212) /* getSystemLocale */.intl;
+      obj6[1] = formatToPlainStringResult2;
+      const obj9 = { iconComponent: null, text: null };
+      obj9[0] = tmp4(8935).GameControllerIcon;
+      const intl3 = tmp4(1236).intl;
       const string = intl3.string;
-      const t2 = require(1212) /* getSystemLocale */.t;
-      if (tmp2) {
+      const t2 = tmp4(1236).t;
+      if (tmp3) {
         let stringResult = string(t2["/bdaNN"]);
       } else {
         stringResult = string(t2["feD3+i"]);
       }
-      obj9.text = stringResult;
-      const obj10 = { iconComponent: require(8987) /* SettingsIcon */.SettingsIcon };
-      const intl4 = require(1212) /* getSystemLocale */.intl;
+      obj9[1] = stringResult;
+      const obj10 = { iconComponent: null, text: null };
+      obj10[0] = tmp4(9011).SettingsIcon;
+      const intl4 = tmp4(1236).intl;
       const string2 = intl4.string;
-      const t3 = require(1212) /* getSystemLocale */.t;
-      if (tmp2) {
+      const t3 = tmp4(1236).t;
+      if (tmp3) {
         let string2Result = string2(t3.mSqazC);
       } else {
         string2Result = string2(t3.YFFVM1);
       }
-      obj10.text = string2Result;
+      obj10[1] = string2Result;
       items.push(obj6, obj9, obj10);
     }
-    let tmp66Result = null;
+    let tmp30Result = null;
     if (0 !== items.length) {
-      const obj11 = {};
-      const obj12 = { style: tmp.applicationEducation };
-      let tmp59 = null;
+      const obj11 = { style: null, children: null };
+      obj11[0] = tmp.applicationEducation;
+      let tmp27 = null;
       if (null != arr2) {
-        tmp59 = null;
+        tmp27 = null;
         if (arr2.length > 0) {
-          const obj13 = { variant: "text-sm/normal", color: "text-default", children: arr2 };
-          tmp59 = callback(require(4161) /* Text */.Text, obj13);
+          const obj12 = { variant: "text-sm/normal", color: "text-default", children: null };
+          obj12[2] = arr2;
+          tmp27 = callback(tmp4(4185).Text, obj12);
         }
       }
-      const items1 = [tmp59, items.map((iconComponent) => outer1_5(outer1_9, { iconComponent: iconComponent.iconComponent, text: iconComponent.text }, arg1))];
-      obj12.children = items1;
-      const items2 = [closure_6(View, obj12), callback(require(8989) /* AuthorizeFormSeparator */.AuthorizeFormSeparator, {})];
-      obj11.children = items2;
-      tmp66Result = tmp66(closure_7, obj11);
-      const tmp67 = closure_7;
-      const tmp68 = View;
+      const obj13 = { children: null };
+      const items1 = [tmp27, items.map((iconComponent) => callback(closure_9, { iconComponent: iconComponent.iconComponent, text: iconComponent.text }, arg1))];
+      obj11[1] = items1;
+      const items2 = [closure_6(View, obj11), callback(tmp4(9013).AuthorizeFormSeparator, {})];
+      obj13[0] = items2;
+      tmp30Result = tmp30(closure_7, obj13);
+      const tmp31 = closure_7;
+      const tmp32 = View;
     }
-    return tmp66Result;
+    return tmp30Result;
   }
 };

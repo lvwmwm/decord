@@ -1,306 +1,174 @@
-// Module ID: 11968
-// Function ID: 92472
-// Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 4252, 8147, 653, 7884, 7889, 8166, 8152, 8148, 22, 566, 686, 2]
+// Module ID: 11992
+// Function ID: 11993
+// Name: entryToKey
+// Dependencies: [4276, 8171, 676, 7909, 7914, 8190, 8176, 8172, 12, 589, 709, 2]
 
-// Module 11968 (_isNativeReflectConstruct)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import ME from "ME";
-import dispatcher from "dispatcher";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
-import closure_8 from "_isNativeReflectConstruct";
-import closure_9 from "_isNativeReflectConstruct";
+// Module 11992 (entryToKey)
+import sortActivity from "sortActivity";
+import map from "map";
 import { ActivityTypes } from "ME";
-import set from "_possibleConstructorReturn";
+import { Store } from "initialize";
+import set from "ME";
 
-const require = arg1;
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
-  }
-  const result = _isNativeReflectConstruct();
-}
-function _createForOfIteratorHelperLoose(iterable) {
-  let closure_0 = iterable;
-  iterable = "undefined" !== typeof Symbol;
-  if (iterable) {
-    const _Symbol = Symbol;
-    iterable = iterable[Symbol.iterator];
-  }
-  if (!iterable) {
-    iterable = iterable[Symbol.iterator];
-  }
-  if (iterable) {
-    const iter = iterable.call(iterable);
-    const next = iter.next;
-    return next.bind(iter);
-  } else {
-    const _Array = Array;
-    let tmp = iterable;
-    if (!Array.isArray(iterable)) {
-      let tmp2;
-      if (iterable) {
-        if ("string" === typeof iterable) {
-          tmp2 = _arrayLikeToArray(iterable, undefined);
-        } else {
-          const toString = {}.toString;
-          const substr = toString.call(iterable).slice(8, -1);
-          let name = substr;
-          if (tmp3) {
-            name = iterable.constructor.name;
-          }
-          if ("Map" !== name) {
-            if ("Set" !== name) {
-              if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(iterable, undefined);
-              } else {
-                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
-              }
-            }
-            tmp2 = arr;
-          }
-          const _Array2 = Array;
-          arr = Array.from(iterable);
-          const callResult = toString.call(iterable);
-          tmp3 = "Object" === substr && iterable.constructor;
-        }
-      }
-      tmp = tmp2;
-      if (!tmp2) {
-        const _TypeError = TypeError;
-        const typeError = new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
-        throw typeError;
-      }
-    }
-    if (tmp) {
-      closure_0 = tmp;
-    }
-    let c1 = 0;
-    return () => {
-      if (closure_1 >= length.length) {
-        let obj = { done: true };
-      } else {
-        obj = { done: false };
-        closure_1 = tmp3 + 1;
-        obj.value = length[+closure_1];
-      }
-      return obj;
-    };
-  }
-}
-function _arrayLikeToArray(arg0, arg1) {
-  let length;
-  if (tmp) {
-    length = arg0.length;
-  }
-  const ArrayResult = Array(length);
-  for (let num = 0; num < length; num = num + 1) {
-    ArrayResult[num] = arg0[num];
-  }
-  return ArrayResult;
-}
+let require = arg1;
 function entryToKey(content) {
   return "" + content.author_id + ":" + content.id;
 }
-function getMatchingActivity(closure_0) {
-  const _require = closure_0;
-  let tmp = null;
-  if (!obj.isEntryExpired(closure_0)) {
+function getMatchingActivity(author_type) {
+  const _require = author_type;
+  let tmp3 = null;
+  if (!obj.isEntryExpired(author_type)) {
     let found;
-    if (obj2.isEntryActive(closure_0)) {
-      if (closure_0.author_type === _require(8166).ContentInventoryAuthorType.USER) {
-        activities = activities.getActivities(closure_0.author_id);
+    if (tmpResult.isEntryActive(author_type)) {
+      if (author_type.author_type === tmp(8190).ContentInventoryAuthorType.USER) {
+        activities = activities.getActivities(author_type.author_id);
         found = activities.find((type) => {
-          if (type.type === outer1_10.PLAYING) {
-            if (obj.isApplicationEntry(callback)) {
-              let result = callback(outer1_2[12]).isMatchingApplicationActivity(callback, type);
-              const obj4 = callback(outer1_2[12]);
+          if (type.type === outer1_5.PLAYING) {
+            if (obj.isApplicationEntry(author_type)) {
+              let result = author_type(outer1_2[7]).isMatchingApplicationActivity(author_type, type);
+              const tmp2Result = author_type(outer1_2[7]);
             }
             return result;
           }
-          let tmp4 = type.type !== outer1_10.LISTENING;
-          if (!tmp4) {
-            tmp4 = !callback(outer1_2[11]).isListenedSessionEntry(callback);
-            const obj2 = callback(outer1_2[11]);
+          let tmp5 = type.type !== outer1_5.LISTENING;
+          if (!tmp5) {
+            tmp5 = !author_type(outer1_2[6]).isListenedSessionEntry(author_type);
+            const obj2 = author_type(outer1_2[6]);
           }
-          result = !tmp4;
-          if (!tmp4) {
-            result = callback(outer1_2[12]).isMatchingListeningActivity(callback, type);
-            const obj3 = callback(outer1_2[12]);
+          result = !tmp5;
+          if (!tmp5) {
+            result = author_type(outer1_2[7]).isMatchingListeningActivity(author_type, type);
+            const obj3 = author_type(outer1_2[7]);
           }
         });
       }
     }
-    tmp = found;
-    obj2 = _require(7889);
+    tmp3 = found;
+    tmpResult = tmp(7914);
   }
-  return tmp;
+  return tmp3;
 }
 function detectMatchingActivityForEntries(entries) {
-  let iter3;
   const updatedKeys = new Set();
   const matchedKeys = new Set();
-  const tmp = _createForOfIteratorHelperLoose(entries);
-  const iter = tmp();
-  let iter2 = iter;
-  if (!iter.done) {
-    do {
-      let value = iter2.value;
-      let tmp2 = getMatchingActivity;
-      let tmp3 = getMatchingActivity(value.content);
-      if (undefined !== tmp3) {
-        let tmp4 = entryToKey;
-        let tmp5 = entryToKey(value.content);
-        let addResult = matchedKeys.add(tmp5);
-        let tmp7 = map;
-        let tmp8 = tmp5;
-        if (tmp3 !== map.get(tmp5)) {
-          let addResult1 = updatedKeys.add(tmp5);
-          let tmp10 = map;
-          let result = map.set(tmp5, tmp3);
-          let tmp12 = tmp5;
-        }
+  const iter = entries[Symbol.iterator]();
+  const nextResult = iter.next();
+  while (iter !== undefined) {
+    let tmp3 = getMatchingActivity;
+    let tmp2 = nextResult;
+    let tmp4 = getMatchingActivity(nextResult.content);
+    let tmp5 = tmp4;
+    if (undefined !== tmp4) {
+      let tmp6 = entryToKey;
+      let tmp7 = nextResult;
+      let tmp8 = entryToKey(tmp2.content);
+      let tmp9 = tmp8;
+      let addResult = matchedKeys.add(tmp8);
+      let tmp11 = tmp4;
+      let obj3 = map;
+      if (tmp5 !== map.get(tmp8)) {
+        let tmp12 = tmp8;
+        let addResult1 = updatedKeys.add(tmp9);
+        let tmp14 = tmp4;
+        let result = obj3.set(tmp9, tmp5);
       }
-      iter3 = tmp();
-      iter2 = iter3;
-    } while (!iter3.done);
+    }
+    continue;
   }
   return { updatedKeys, matchedKeys };
 }
 function handlePresenceUpdates() {
-  let done3;
-  let iter7;
+  let flag = false;
   const set = new Set();
   const set1 = new Set();
   feeds = feeds.getFeeds();
-  const tmp2 = _createForOfIteratorHelperLoose(feeds.values());
-  const iter = tmp2();
-  let iter2 = iter;
-  let flag = false;
-  let flag2 = false;
-  if (!iter.done) {
-    do {
-      let value = iter2.value;
-      let tmp3 = detectMatchingActivityForEntries;
+  const values = feeds.values();
+  const iter = values[Symbol.iterator]();
+  while (true) {
+    let tmp5 = values;
+    let nextResult = iter.next();
+    let tmp7 = iter;
+    if (iter === undefined) {
+      let tmp15 = importDefault;
+      let tmp16 = dependencyMap;
+      let obj2 = importDefault(12);
+      let items = [];
+      let tmp17 = items;
+      let tmp18 = set1;
+      let num = 0;
+      let arraySpreadResult = HermesBuiltin.arraySpread(set1, 0);
+      let differenceResult = obj2.difference(arr, items);
+      let tmp21 = differenceResult;
+      let tmp22 = differenceResult;
+      for (const item10081 of differenceResult) {
+        let tmp23 = map;
+        let deleteResult = map.delete(item10081);
+        flag = true;
+        continue;
+      }
+      return flag;
+    } else {
+      let tmp8 = nextResult;
+      let tmp9 = detectMatchingActivityForEntries;
       if (set.size > 0) {
-        let entries = value.entries;
-        entries = entries.filter((content) => !set.has(outer1_16(content.content)));
+        let tmp11 = nextResult;
+        let entries = tmp8.entries;
+        entries = entries.filter((content) => {
+          content = content.content;
+          return !set.has("" + content.author_id + ":" + content.id);
+        });
       } else {
-        entries = value.entries;
+        let tmp10 = nextResult;
+        entries = tmp8.entries;
       }
-      let tmp3Result = tmp3(entries);
-      let updatedKeys = tmp3Result.updatedKeys;
-      let tmp5 = _createForOfIteratorHelperLoose;
-      let tmp6 = _createForOfIteratorHelperLoose(updatedKeys);
-      let iter3 = tmp6();
-      if (!iter3.done) {
-        do {
-          let addResult = set.add(iter3.value);
-          let iter4 = tmp6();
-          iter3 = iter4;
-          done = iter4.done;
-        } while (!done);
-      }
-      let tmp8 = _createForOfIteratorHelperLoose;
-      let tmp9 = _createForOfIteratorHelperLoose(tmp3Result.matchedKeys);
-      let iter5 = tmp9();
-      if (!iter5.done) {
-        do {
-          let addResult1 = set1.add(iter5.value);
-          let iter6 = tmp9();
-          iter5 = iter6;
-          done2 = iter6.done;
-        } while (!done2);
-      }
-      if (!flag) {
-        flag = updatedKeys.size > 0;
-      }
-      iter7 = tmp2();
-      iter2 = iter7;
-      flag2 = flag;
-    } while (!iter7.done);
+      let tmp9Result = tmp9(entries);
+      let updatedKeys = tmp9Result.updatedKeys;
+      let tmp13 = updatedKeys;
+      let matchedKeys = tmp9Result.matchedKeys;
+      let tmp14 = updatedKeys;
+      tmp9 = updatedKeys[Symbol.iterator]();
+    }
   }
-  const arr = Array.from(map.keys());
-  const items = [...set1];
-  const tmp11 = _createForOfIteratorHelperLoose(importDefault(22).difference(arr, items));
-  let iter8 = tmp11();
-  if (!iter8.done) {
-    do {
-      let tmp12 = map;
-      let deleteResult = map.delete(iter8.value);
-      let iter9 = tmp11();
-      iter8 = iter9;
-      flag2 = true;
-      done3 = iter9.done;
-    } while (!done3);
-  }
-  return flag2;
 }
 let items = [require("ContentInventoryEntryType").ContentInventoryEntryType.LISTENED_SESSION];
 let set = new Set(items);
 const map = new Map();
-let tmp4 = ((Store) => {
-  class ContentInventoryActivityStore {
-    constructor(arg0) {
-      self = this;
-      items = [...arguments];
-      tmp = outer1_3(this, apply);
-      items1 = [...items];
-      obj = outer1_6(apply);
-      tmp2 = outer1_5;
-      if (outer1_13()) {
-        tmp4 = globalThis;
-        _Reflect = Reflect;
-        tmp5 = outer1_6;
-        constructResult = Reflect.construct(obj, items1, outer1_6(self).constructor);
-      } else {
-        constructResult = obj.apply(self, items1);
-      }
-      tmp2Result = tmp2(self, constructResult);
-      apply = tmp2Result;
-      tmp2Result.canRenderContent = (content_type) => {
-        let tmp = !ContentInventoryActivityStore(outer2_2[9]).isEntryExpired(content_type);
-        if (tmp) {
-          let tmp3 = !outer2_11.has(content_type.content_type);
-          if (!tmp3) {
-            tmp3 = null != tmp2Result.getMatchingActivity(content_type);
-          }
-          tmp = tmp3;
+class ContentInventoryActivityStore extends Store {
+  constructor() {
+    applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
+    closure_0 = applyArgumentsResult;
+    applyArgumentsResult.canRenderContent = function canRenderContent(content_type) {
+      const isEntryExpiredResult = applyArgumentsResult(outer1_2[4]).isEntryExpired(content_type);
+      let tmp2 = !isEntryExpiredResult;
+      if (!isEntryExpiredResult) {
+        const hasItem = outer1_6.has(content_type.content_type);
+        let tmp5 = !hasItem;
+        if (hasItem) {
+          tmp5 = null != applyArgumentsResult.getMatchingActivity(content_type);
         }
-        return tmp;
-      };
-      return tmp2Result;
-    }
-  }
-  callback2(ContentInventoryActivityStore, Store);
-  let obj = {
-    key: "initialize",
-    value() {
-      this.waitFor(outer1_9, outer1_8);
-      const items = [outer1_8];
-      this.syncWith(items, outer1_19);
-    }
-  };
-  let items = [obj, ];
-  obj = {
-    key: "getMatchingActivity",
-    value(content) {
-      let value = null;
-      if (!obj.isEntryExpired(content)) {
-        value = outer1_12.get(outer1_16(content));
+        tmp2 = tmp5;
       }
-      return value;
-    }
-  };
-  items[1] = obj;
-  return callback(ContentInventoryActivityStore, items);
-})(require("initialize").Store);
-tmp4.displayName = "ContentInventoryActivityStore";
-tmp4 = new tmp4(require("dispatcher"), {
+      return tmp2;
+    };
+    return applyArgumentsResult;
+  }
+}
+const prototype = ContentInventoryActivityStore.prototype;
+prototype["initialize"] = function initialize() {
+  this.waitFor(map, sortActivity);
+  const items = [sortActivity];
+  this.syncWith(items, handlePresenceUpdates);
+};
+prototype["getMatchingActivity"] = function getMatchingActivity(author_id) {
+  let value = null;
+  if (!obj.isEntryExpired(author_id)) {
+    const _HermesInternal = HermesInternal;
+    value = map.get("" + author_id.author_id + ":" + author_id.id);
+  }
+  return value;
+};
+ContentInventoryActivityStore.displayName = "ContentInventoryActivityStore";
+const contentInventoryActivityStore = new ContentInventoryActivityStore(require("dispatcher"), {
   CONNECTION_OPEN: function handleConnectionOpen() {
     map.clear();
   },
@@ -310,5 +178,5 @@ tmp4 = new tmp4(require("dispatcher"), {
 });
 let result = set.fileFinishedImporting("modules/content_inventory/ContentInventoryActivityStore.tsx");
 
-export default tmp4;
+export default contentInventoryActivityStore;
 export { entryToKey };

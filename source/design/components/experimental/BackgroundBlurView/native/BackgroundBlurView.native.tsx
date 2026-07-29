@@ -1,44 +1,47 @@
-// Module ID: 7615
-// Function ID: 60797
+// Module ID: 7638
+// Function ID: 7639
 // Name: BackgroundBlurView
-// Dependencies: [31, 27, 33, 4165, 7616, 2]
+// Dependencies: [19, 17, 21, 4189, 7639, 2]
 
-// Module 7615 (BackgroundBlurView)
+// Module 7638 (BackgroundBlurView)
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import importAllResult from "result";
+import createCacheKey from "createCacheKey";
+import importAllResult from "noop";
 
-let closure_3;
-let closure_4;
+let c3;
+let c4;
 const require = arg1;
-({ jsx: closure_3, jsxs: closure_4 } = jsxProd);
-let closure_5 = _createForOfIteratorHelperLoose.createStyles({ container: { position: "relative", overflow: "hidden" } });
-const forwardRefResult = require("result").forwardRef(function BackgroundBlurViewComponent(arg0, arg1) {
+({ jsx: c3, jsxs: c4 } = jsxProd);
+let closure_5 = createCacheKey.createStyles({ container: { position: "relative", overflow: "hidden" } });
+const forwardRefResult = require("noop").forwardRef(function BackgroundBlurViewComponent(arg0, ref) {
   let android_blurTargetViewNativeId;
   let blurTheme;
   let children;
   let pressed;
   let style;
   ({ blurTheme, pressed, android_blurTargetViewNativeId } = arg0);
-  let obj = { children: 0, style: 0, blurTheme: 0, pressed: 0, android_blurTargetViewNativeId: 0 };
   ({ children, style } = arg0);
-  Object.setPrototypeOf(null);
-  const merged = Object.assign(arg0, obj);
-  obj = {};
+  const merged = Object.assign(arg0, Object.create(null));
+  let obj = {};
   const merged1 = Object.assign(merged);
   const items = [callback2().container, style];
-  obj["style"] = items;
-  obj["ref"] = arg1;
+  obj.style = items;
+  obj.ref = ref;
   if (null != pressed) {
-    obj = { blurTheme, pressed, android_blurTargetViewNativeId };
-    let tmp10 = callback(require(7616) /* useBlurTheme */.BackgroundBlurFillWithPress, obj);
+    obj = { blurTheme: null, pressed: null, android_blurTargetViewNativeId: null };
+    obj[0] = blurTheme;
+    obj[1] = pressed;
+    obj[2] = android_blurTargetViewNativeId;
+    let tmp9 = callback(require(7639) /* BlurTheme */.BackgroundBlurFillWithPress, obj);
   } else {
-    const obj1 = { blurTheme, android_blurTargetViewNativeId };
-    tmp10 = callback(require(7616) /* useBlurTheme */.BackgroundBlurFill, obj1);
+    obj = { blurTheme: null, android_blurTargetViewNativeId: null };
+    obj[0] = blurTheme;
+    obj[1] = android_blurTargetViewNativeId;
+    tmp9 = callback(require(7639) /* BlurTheme */.BackgroundBlurFill, obj);
   }
-  const items1 = [tmp10, children];
-  obj["children"] = items1;
+  const items1 = [tmp9, children];
+  obj.children = items1;
   return closure_4(View, obj);
 });
 const result = require("jsxProd").fileFinishedImporting("design/components/experimental/BackgroundBlurView/native/BackgroundBlurView.native.tsx");

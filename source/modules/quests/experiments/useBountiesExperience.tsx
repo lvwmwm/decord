@@ -1,20 +1,20 @@
-// Module ID: 10857
-// Function ID: 84034
+// Module ID: 10881
+// Function ID: 10882
 // Name: useBountiesExperience
-// Dependencies: [10858, 10859, 10860, 2]
+// Dependencies: [10882, 10883, 10884, 2]
 // Exports: useBountiesExperience
 
-// Module 10857 (useBountiesExperience)
+// Module 10881 (useBountiesExperience)
 const result = require("apexExperiment").fileFinishedImporting("modules/quests/experiments/useBountiesExperience.tsx");
 
 export const useBountiesExperience = function useBountiesExperience(VIDEO_MODAL_MOBILE) {
-  const BountiesVerticalScrollExperiment = require(10858) /* shouldUseScrollIndicatorOverlay */.BountiesVerticalScrollExperiment;
+  const BountiesVerticalScrollExperiment = require(10882) /* apexExperiment */.BountiesVerticalScrollExperiment;
   let obj = { location: VIDEO_MODAL_MOBILE };
   const config = BountiesVerticalScrollExperiment.useConfig(obj);
-  const BountiesStage1Experiment = require(10859) /* apexExperiment */.BountiesStage1Experiment;
+  const BountiesStage1Experiment = require(10883) /* apexExperiment */.BountiesStage1Experiment;
   obj = { location: VIDEO_MODAL_MOBILE };
   const config1 = BountiesStage1Experiment.useConfig(obj);
-  const QuestHomeBountiesExperiment = require(10860) /* apexExperiment */.QuestHomeBountiesExperiment;
+  const QuestHomeBountiesExperiment = require(10884) /* apexExperiment */.QuestHomeBountiesExperiment;
   obj = { location: VIDEO_MODAL_MOBILE };
   let num = 50;
   const config2 = QuestHomeBountiesExperiment.useConfig(obj);
@@ -26,19 +26,18 @@ export const useBountiesExperience = function useBountiesExperience(VIDEO_MODAL_
     num2 = config1.rewardTimerSeconds;
   }
   if (config.enabled) {
-    const obj1 = { showBounties: true, ownedByVerticalScrollExperiment: true, verticalScrollEnabled: null, loopingEnabled: false };
-    ({ verticalScrollEnabled: obj5.verticalScrollEnabled, ctaTimerMilliSeconds: obj5.ctaTimerMilliSeconds, scrollAffordanceVariant: obj5.scrollAffordanceVariant } = config);
-    obj1.stage1Enabled = config1.enabled;
-    obj1.orbAmount = num;
-    obj1.rewardTimerSeconds = num2;
+    const obj1 = { showBounties: true, ownedByVerticalScrollExperiment: true, verticalScrollEnabled: null, loopingEnabled: false, ctaTimerMilliSeconds: null, scrollAffordanceVariant: null, stage1Enabled: null, orbAmount: null, rewardTimerSeconds: null };
+    ({ verticalScrollEnabled: obj5[2], ctaTimerMilliSeconds: obj5[4], scrollAffordanceVariant: obj5[5] } = config);
+    obj1[6] = config1.enabled;
+    obj1[7] = num;
+    obj1[8] = num2;
     let obj2 = obj1;
   } else {
-    obj2 = { showBounties: config2.enabled, ownedByVerticalScrollExperiment: false };
-    ({ verticalScrollEnabled: obj4.verticalScrollEnabled, loopingEnabled: obj4.loopingEnabled, ctaTimerMilliSeconds: obj4.ctaTimerMilliSeconds } = config1);
-    obj2.scrollAffordanceVariant = "none";
-    obj2.stage1Enabled = config1.enabled;
-    obj2.orbAmount = num;
-    obj2.rewardTimerSeconds = num2;
+    obj2 = { showBounties: null, ownedByVerticalScrollExperiment: false, verticalScrollEnabled: null, loopingEnabled: null, ctaTimerMilliSeconds: null, scrollAffordanceVariant: "none", stage1Enabled: null, orbAmount: null, rewardTimerSeconds: null };
+    obj2[0] = config2.enabled;
+    ({ verticalScrollEnabled: obj4[2], loopingEnabled: obj4[3], ctaTimerMilliSeconds: obj4[4], enabled: obj4[6] } = config1);
+    obj2[7] = num;
+    obj2[8] = num2;
   }
   return obj2;
 };

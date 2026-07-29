@@ -1,103 +1,48 @@
-// Module ID: 4837
-// Function ID: 41863
-// Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 620, 566, 686, 2]
+// Module ID: 4859
+// Function ID: 4860
+// Name: percentageScrolled
+// Dependencies: [643, 589, 709, 2]
 
-// Module 4837 (_isNativeReflectConstruct)
-import initialize from "initialize";
-import dispatcher from "dispatcher";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
+// Module 4859 (percentageScrolled)
+import { Store } from "initialize";
 
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
+let closure_2 = {};
+let closure_3 = {};
+let closure_4 = { scrollTop: 0 };
+class DimensionStore extends Store {
+}
+const prototype = DimensionStore.prototype;
+prototype["percentageScrolled"] = function percentageScrolled(arg0) {
+  if (null != dependencyMap[arg0]) {
+    return dependencyMap[arg0].scrollTop / dependencyMap[arg0].scrollHeight;
+  } else {
+    return 1;
   }
-  const result = _isNativeReflectConstruct();
-}
-function guildDimensionFactory(guildId) {
-  const obj = { guildId, scrollTop: null, scrollTo: null };
-  return obj;
-}
-function _isAtBottom(channelId) {
+};
+prototype["getChannelDimensions"] = function getChannelDimensions(arg0) {
+  return dependencyMap[arg0];
+};
+prototype["getGuildDimensions"] = function getGuildDimensions(arg0) {
+  let tmp = dependencyMap2[arg0];
+  if (tmp == null) {
+    const obj = { guildId: null, scrollTop: null, scrollTo: null };
+    obj[0] = arg0;
+    tmp = obj;
+  }
+  return tmp;
+};
+prototype["getGuildListDimensions"] = function getGuildListDimensions() {
+  return closure_4;
+};
+prototype["isAtBottom"] = function isAtBottom(channelId) {
+  let tmp;
   if (null != dependencyMap[channelId]) {
-    return dependencyMap[channelId].scrollTop === dependencyMap[channelId].scrollHeight - dependencyMap[channelId].offsetHeight;
+    tmp = tmp2.scrollTop === tmp2.scrollHeight - tmp2.offsetHeight;
   }
-}
-let closure_7 = {};
-let closure_8 = {};
-let closure_9 = { scrollTop: 0 };
-let tmp2 = ((Store) => {
-  class DimensionStore {
-    constructor() {
-      self = this;
-      tmp = outer1_2(this, DimensionStore);
-      obj = outer1_5(DimensionStore);
-      tmp2 = outer1_4;
-      if (outer1_10()) {
-        tmp6 = globalThis;
-        _Reflect = Reflect;
-        tmp7 = outer1_5;
-        tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, outer1_5(self).constructor);
-      } else {
-        tmp3 = arguments;
-        tmp4 = arguments;
-        constructResult = obj(...arguments);
-      }
-      return tmp2(self, constructResult);
-    }
-  }
-  callback2(DimensionStore, Store);
-  let obj = {
-    key: "percentageScrolled",
-    value(arg0) {
-      if (null != outer1_7[arg0]) {
-        return outer1_7[arg0].scrollTop / outer1_7[arg0].scrollHeight;
-      } else {
-        return 1;
-      }
-    }
-  };
-  const items = [obj, , , , ];
-  obj = {
-    key: "getChannelDimensions",
-    value(arg0) {
-      return outer1_7[arg0];
-    }
-  };
-  items[1] = obj;
-  obj = {
-    key: "getGuildDimensions",
-    value(arg0) {
-      let tmp = outer1_8[arg0];
-      if (null == tmp) {
-        tmp = outer1_11(arg0);
-      }
-      return tmp;
-    }
-  };
-  items[2] = obj;
-  items[3] = {
-    key: "getGuildListDimensions",
-    value() {
-      return outer1_9;
-    }
-  };
-  items[4] = {
-    key: "isAtBottom",
-    value(arg0) {
-      return outer1_12(arg0);
-    }
-  };
-  return callback(DimensionStore, items);
-})(require("initialize").Store);
-tmp2.displayName = "DimensionStore";
-tmp2 = new tmp2(require("dispatcher"), {
+  return tmp;
+};
+DimensionStore.displayName = "DimensionStore";
+const dimensionStore = new DimensionStore(require("dispatcher"), {
   UPDATE_CHANNEL_DIMENSIONS: function handleChannelScroll(arg0) {
     let channelId;
     let offsetHeight;
@@ -107,13 +52,17 @@ tmp2 = new tmp2(require("dispatcher"), {
     if (null != scrollTop) {
       if (null != scrollHeight) {
         if (null != offsetHeight) {
-          const obj = { channelId, scrollTop, scrollHeight, offsetHeight };
-          if (null != tmp3) {
-            if (importDefault(620)(tmp3, obj)) {
+          const obj = { channelId: null, scrollTop: null, scrollHeight: null, offsetHeight: null };
+          obj[0] = channelId;
+          obj[1] = scrollTop;
+          obj[2] = scrollHeight;
+          obj[3] = offsetHeight;
+          if (null != tmp4) {
+            if (importDefault(643)(tmp4, obj)) {
               return false;
             }
           }
-          dependencyMap[channelId] = obj;
+          tmp3[channelId] = obj;
         }
       }
     }
@@ -129,27 +78,34 @@ tmp2 = new tmp2(require("dispatcher"), {
     let scrollTop;
     ({ guildId, scrollTop, scrollTo } = arg0);
     if (null == dependencyMap2[guildId]) {
-      dependencyMap2[guildId] = guildDimensionFactory(guildId);
+      const obj = { guildId: null, scrollTop: null, scrollTo: null };
+      obj[0] = guildId;
+      tmp[guildId] = obj;
     }
     if (undefined !== scrollTop) {
-      dependencyMap2[guildId].scrollTop = scrollTop;
+      tmp[guildId].scrollTop = scrollTop;
     }
     let flag = false;
     if (undefined !== scrollTo) {
-      flag = dependencyMap2[guildId].scrollTo !== scrollTo;
-      dependencyMap2[guildId].scrollTo = scrollTo;
+      flag = tmp[guildId].scrollTo !== scrollTo;
+      tmp[guildId].scrollTo = scrollTo;
     }
     return null != scrollTo || flag;
   },
   UPDATE_GUILD_LIST_DIMENSIONS: function handleGuildListUpdate(scrollTop) {
-    closure_9.scrollTop = scrollTop.scrollTop;
+    closure_4.scrollTop = scrollTop.scrollTop;
   },
   CALL_CREATE: function handleCallCreate(channelId) {
-    if (_isAtBottom(channelId.channelId)) {
+    channelId = channelId.channelId;
+    let tmp3;
+    if (null != dependencyMap[channelId]) {
+      tmp3 = tmp4.scrollTop === tmp4.scrollHeight - tmp4.offsetHeight;
+    }
+    if (tmp3) {
       delete tmp[tmp2];
     }
   }
 });
-let result = require("_possibleConstructorReturn").fileFinishedImporting("stores/DimensionStore.tsx");
+const result = require("dispatcher").fileFinishedImporting("stores/DimensionStore.tsx");
 
-export default tmp2;
+export default dimensionStore;

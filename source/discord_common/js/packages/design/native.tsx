@@ -1,75 +1,75 @@
-// Module ID: 3877
-// Function ID: 32134
+// Module ID: 3901
+// Function ID: 3902
 // Name: ManaContext
-// Dependencies: [2, 3878, 3883, 3884, 3885, 3879, 3886, 3887, 3888, 3889, 3890, 3891, 3892, 3974, 3941, 3975]
+// Dependencies: [2, 3902, 3907, 3908, 3909, 3903, 3910, 3911, 3912, 3913, 3914, 3915, 3916, 3998, 3965, 3999]
 
-// Module 3877 (ManaContext)
+// Module 3901 (ManaContext)
 import LOW_SATURATION_THRESHOLD from "LOW_SATURATION_THRESHOLD";
 
 const result = require("useCheckboxA11yNative").fileFinishedImporting("../discord_common/js/packages/design/native.tsx");
-for (const key10021 in require("AccessibilityAnnouncer")) {
-  let tmp4 = key10021;
-  arg5[key10021] = require("AccessibilityAnnouncer")[key10021];
+for (const key10018 in require("AccessibilityAnnouncer")) {
+  let tmp4 = key10018;
+  arg5[key10018] = require("AccessibilityAnnouncer")[key10018];
   continue;
 }
-for (const key10026 in require("useCheckboxA11yNative")) {
-  let tmp5 = key10026;
-  arg5[key10026] = require("useCheckboxA11yNative")[key10026];
+for (const key10022 in require("useCheckboxA11yNative")) {
+  let tmp5 = key10022;
+  arg5[key10022] = require("useCheckboxA11yNative")[key10022];
   continue;
 }
-for (const key10031 in require("context")) {
-  let tmp6 = key10031;
-  arg5[key10031] = require("context")[key10031];
+for (const key10026 in require("context")) {
+  let tmp6 = key10026;
+  arg5[key10026] = require("context")[key10026];
   continue;
 }
-for (const key10037 in _module1) {
-  let tmp7 = key10037;
-  arg5[key10037] = LOW_SATURATION_THRESHOLD[key10037];
+for (const key10031 in _module1) {
+  let tmp7 = key10031;
+  arg5[key10031] = LOW_SATURATION_THRESHOLD[key10031];
   continue;
 }
-for (const key10042 in require("updateAccessibilityAnnouncerLiveRegionMessage")) {
-  let tmp8 = key10042;
-  arg5[key10042] = require("updateAccessibilityAnnouncerLiveRegionMessage")[key10042];
+for (const key10035 in require("updateAccessibilityAnnouncerLiveRegionMessage")) {
+  let tmp8 = key10035;
+  arg5[key10035] = require("updateAccessibilityAnnouncerLiveRegionMessage")[key10035];
   continue;
 }
-for (const key10047 in require("isThemeLight")) {
-  let tmp9 = key10047;
-  arg5[key10047] = require("isThemeLight")[key10047];
+for (const key10039 in require("isThemeLight")) {
+  let tmp9 = key10039;
+  arg5[key10039] = require("isThemeLight")[key10039];
   continue;
 }
-for (const key10052 in require("set")) {
-  let tmp10 = key10052;
-  arg5[key10052] = require("set")[key10052];
+for (const key10043 in require("set")) {
+  let tmp10 = key10043;
+  arg5[key10043] = require("set")[key10043];
   continue;
 }
-for (const key10057 in require("createThemedContext")) {
-  let tmp11 = key10057;
-  arg5[key10057] = require("createThemedContext")[key10057];
+for (const key10047 in require("json")) {
+  let tmp11 = key10047;
+  arg5[key10047] = require("json")[key10047];
   continue;
 }
-for (const key10062 in require("ThemeContextProvider")) {
-  let tmp12 = key10062;
-  arg5[key10062] = require("ThemeContextProvider")[key10062];
+for (const key10051 in require("ThemeContextProvider")) {
+  let tmp12 = key10051;
+  arg5[key10051] = require("ThemeContextProvider")[key10051];
   continue;
 }
-for (const key10067 in require("ClientThemeType")) {
-  let tmp13 = key10067;
-  arg5[key10067] = require("ClientThemeType")[key10067];
+for (const key10055 in require("ClientThemeType")) {
+  let tmp13 = key10055;
+  arg5[key10055] = require("ClientThemeType")[key10055];
   continue;
 }
-for (const key10072 in require("hasThemeFlag")) {
-  let tmp14 = key10072;
-  arg5[key10072] = require("hasThemeFlag")[key10072];
+for (const key10059 in require("ThemeContextFlags")) {
+  let tmp14 = key10059;
+  arg5[key10059] = require("ThemeContextFlags")[key10059];
   continue;
 }
-for (const key10077 in require("module_3892")) {
-  let tmp15 = key10077;
-  arg5[key10077] = require("module_3892")[key10077];
+for (const key10063 in require("module_3916")) {
+  let tmp15 = key10063;
+  arg5[key10063] = require("module_3916")[key10063];
   continue;
 }
-for (const key10082 in require("toRGBAString")) {
-  let tmp16 = key10082;
-  arg5[key10082] = require("toRGBAString")[key10082];
+for (const key10067 in require("WCAGContrastRatios")) {
+  let tmp16 = key10067;
+  arg5[key10067] = require("WCAGContrastRatios")[key10067];
   continue;
 }
 

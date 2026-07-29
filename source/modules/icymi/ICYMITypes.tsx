@@ -1,16 +1,16 @@
-// Module ID: 6138
-// Function ID: 54701
+// Module ID: 6156
+// Function ID: 6157
 // Name: MessageEmbedTypes
-// Dependencies: [653, 2]
+// Dependencies: [676, 2]
 // Exports: typeToString
 
-// Module 6138 (MessageEmbedTypes)
+// Module 6156 (MessageEmbedTypes)
 import ME from "ME";
 import set from "set";
 
 let MessageEmbedTypes;
-let closure_0;
-({ ChannelTypes: closure_0, MessageEmbedTypes } = ME);
+let c0;
+({ ChannelTypes: c0, MessageEmbedTypes } = ME);
 const obj = { MESSAGE: 0, [0]: "MESSAGE", ACTIVITY: 2, [2]: "ACTIVITY", CUSTOM_STATUS: 3, [3]: "CUSTOM_STATUS", GUILD_EVENT: 5, [5]: "GUILD_EVENT", RECOMMENDED_GUILDS: 6, [6]: "RECOMMENDED_GUILDS" };
 const items = [, ];
 ({ MESSAGE: arr[0], CUSTOM_STATUS: arr[1] } = obj);
@@ -31,7 +31,7 @@ export const typeToString = function typeToString(type) {
     if (type.data.channel_type !== constants.GUILD_ANNOUNCEMENT) {
       const message_context = type.data.message_context;
       let prop;
-      if (null != message_context) {
+      if (message_context != null) {
         prop = message_context.external_content_application_id;
       }
       let str6 = "message";
@@ -41,13 +41,13 @@ export const typeToString = function typeToString(type) {
       str5 = str6;
     }
     return str5;
-  } else if (obj.ACTIVITY === type) {
+  } else if (tmp.ACTIVITY === type) {
     return "hotwheels_gaming_activity";
-  } else if (obj.CUSTOM_STATUS === type) {
+  } else if (tmp.CUSTOM_STATUS === type) {
     return "hotwheels_custom_status";
-  } else if (obj.GUILD_EVENT === type) {
+  } else if (tmp.GUILD_EVENT === type) {
     return "guild_event";
-  } else if (obj.RECOMMENDED_GUILDS === type) {
+  } else if (tmp.RECOMMENDED_GUILDS === type) {
     return "recommended_guilds";
   }
 };

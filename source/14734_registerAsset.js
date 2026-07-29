@@ -1,11 +1,10 @@
 // Module ID: 14734
-// Function ID: 112067
+// Function ID: 14735
 // Name: registerAsset
-// Dependencies: [1217]
+// Dependencies: [1241]
 
 // Module 14734 (registerAsset)
 import registerAsset from "registerAsset";
 
-const obj = { __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "aa6654f8bc64e9c09fd740f0157dd47b", name: "ClipboardCheckIcon", type: "png" };
 
-export default registerAsset.registerAsset(obj);
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9pbnRs", scales: [1], hash: "5e84f9eca1bcd2b0b2019b6de2f79246", name: "hi.messages.5e84f9eca1bcd2b0b2019b6de2f79246.compiled.messages", type: "jsona" });

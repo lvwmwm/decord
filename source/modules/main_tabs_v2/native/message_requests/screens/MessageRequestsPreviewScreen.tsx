@@ -1,12 +1,12 @@
-// Module ID: 15686
-// Function ID: 120754
+// Module ID: 15721
+// Function ID: 15722
 // Name: MessageRequestsScreen
-// Dependencies: [31, 4177, 653, 33, 11508, 9877, 10220, 15687, 10389, 2]
+// Dependencies: [19, 4201, 676, 21, 11532, 9899, 10241, 15722, 10413, 2]
 // Exports: default
 
-// Module 15686 (MessageRequestsScreen)
-import result from "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 15721 (MessageRequestsScreen)
+import noop from "noop";
+import generateOldThreadCutoff from "generateOldThreadCutoff";
 import { ME } from "ME";
 import { jsx } from "jsxProd";
 
@@ -15,7 +15,7 @@ const result = require("ME").fileFinishedImporting("modules/main_tabs_v2/native/
 
 export default function MessageRequestsScreen(route) {
   const channelId = route.route.params.channelId;
-  let obj = channelId(11508);
+  let obj = channelId(11532);
   const items = [channelId];
   const isMessageRequestRestrictedViewer = obj.useIsMessageRequestRestrictedViewer("MessageRequestsPreviewScreen");
   const effect = React.useEffect(() => {
@@ -23,14 +23,18 @@ export default function MessageRequestsScreen(route) {
     obj = { channelId, messageId: outer1_4.lastMessageId(channelId) };
     const messages = obj.fetchMessages(obj);
   }, items);
-  obj = { guildId: ME, channelId };
+  obj = { guildId: ME, channelId, children: null };
   if (isMessageRequestRestrictedViewer) {
-    obj = { channelId };
-    let tmp5Result = tmp5(tmp6(15687), obj);
+    obj = { channelId: null };
+    obj[0] = channelId;
+    let tmp5Result = tmp5(tmp7(15722), obj);
   } else {
-    const obj1 = { guildId: ME, channelId, chatInputRef: ref, HACK_fixModalInteraction: true, screenIndex: "message-request" };
-    tmp5Result = tmp5(tmp6(10389), obj1);
+    const obj1 = { guildId: null, channelId: null, chatInputRef: null, HACK_fixModalInteraction: true, screenIndex: "message-request" };
+    obj1[0] = tmp6;
+    obj1[1] = channelId;
+    obj1[2] = ref;
+    tmp5Result = tmp5(tmp7(10413), obj1);
   }
-  obj.children = tmp5Result;
-  return jsx(channelId(10220).ChannelContainer, { guildId: ME, channelId });
+  obj[2] = tmp5Result;
+  return jsx(channelId(10241).ChannelContainer, { guildId: ME, channelId, children: null });
 };

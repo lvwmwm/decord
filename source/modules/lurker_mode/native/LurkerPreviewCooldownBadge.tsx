@@ -1,30 +1,31 @@
-// Module ID: 14929
-// Function ID: 113790
+// Module ID: 14955
+// Function ID: 14956
 // Name: useHasExpired
-// Dependencies: [57, 31, 27, 33, 4026, 8507, 4165, 689, 1273, 11504, 3869, 4166, 2]
+// Dependencies: [32, 19, 17, 21, 4050, 8531, 4189, 712, 1297, 11528, 3893, 4190, 2]
 // Exports: useHasExpired
 
-// Module 14929 (useHasExpired)
+// Module 14955 (useHasExpired)
 import _slicedToArray from "_slicedToArray";
-import importAllResult from "result";
+import importAllResult from "noop";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import importDefaultResult from "module_4026";
+import createCacheKey from "createCacheKey";
+import importDefaultResult from "module_4050";
 
 const require = arg1;
+let c4 = importAllResult;
 let closure_7 = 2 * Math.PI * 6;
-let obj = { duration: 1000, easing: require("module_4026").Easing.linear };
-let closure_9 = require("module_4026").createAnimatedComponent(require("inlineStyles").Circle);
-obj = {};
-let obj1 = { borderRadius: 20, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWEST, position: "absolute", bottom: -require("Button").BADGE_PADDING, right: -require("Button").BADGE_PADDING, padding: require("Button").BADGE_PADDING, height: 22, width: 22, alignItems: "center", justifyContent: "center" };
-obj.outerRing = obj1;
-let obj2 = { borderRadius: 20, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_MOD_STRONG, height: 16, width: 16, alignItems: "center", justifyContent: "center" };
-obj.innerFill = obj2;
+let obj = { duration: 1000, easing: require("module_4050").Easing.linear };
+let closure_9 = require("module_4050").createAnimatedComponent(require("inlineStyles").Circle);
+obj = { outerRing: null, innerFill: null, progressRing: null };
+obj[0] = { borderRadius: 20, backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOWEST, position: "absolute", bottom: -require("Button").BADGE_PADDING, right: -require("Button").BADGE_PADDING, padding: require("Button").BADGE_PADDING, height: 22, width: 22, alignItems: "center", justifyContent: "center" };
+let obj1 = { borderRadius: 20, backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOWEST, position: "absolute", bottom: -require("Button").BADGE_PADDING, right: -require("Button").BADGE_PADDING, padding: require("Button").BADGE_PADDING, height: 22, width: 22, alignItems: "center", justifyContent: "center" };
+obj[1] = { borderRadius: 20, backgroundColor: require("Themes").colors.BACKGROUND_MOD_STRONG, height: 16, width: 16, alignItems: "center", justifyContent: "center" };
 let items = [{ rotate: "90deg" }, { scaleX: -1 }];
-obj.progressRing = { position: "absolute", transform: items };
-let closure_10 = _createForOfIteratorHelperLoose.createStyles(obj);
+obj[2] = { position: "absolute", transform: items };
+let closure_10 = createCacheKey.createStyles(obj);
 let closure_11 = { code: "function LurkerPreviewCooldownBadgeTsx1(){const{PROGRESS_CIRCUMFERENCE,animatedProgress}=this.__closure;return{strokeDashoffset:PROGRESS_CIRCUMFERENCE*(1-animatedProgress.get())};}" };
+let obj2 = { borderRadius: 20, backgroundColor: require("Themes").colors.BACKGROUND_MOD_STRONG, height: 16, width: 16, alignItems: "center", justifyContent: "center" };
 const memoResult = importAllResult.memo(function LurkerPreviewCooldownBadge(expiresAt) {
   expiresAt = expiresAt.expiresAt;
   let LURKER_PREVIEW_PERSIST_MS = expiresAt.totalDurationMs;
@@ -55,7 +56,7 @@ const memoResult = importAllResult.memo(function LurkerPreviewCooldownBadge(expi
   const effect = importAllResult.useEffect(() => {
     let result = sharedValue.set(expiresAt(callback[11]).withTiming(callback(), outer1_8, "animate-always"));
     const interval = setInterval(() => {
-      const result = outer1_3.set(expiresAt(callback[11]).withTiming(outer1_2(), outer2_8, "animate-always"));
+      const result = _slicedToArray.set(callback(outer1_2[11]).withTiming(callback2(), outer1_8, "animate-always"));
     }, 1000);
     return () => {
       clearInterval(closure_0);
@@ -69,17 +70,15 @@ const memoResult = importAllResult.memo(function LurkerPreviewCooldownBadge(expi
   fn.__closure = obj;
   fn.__workletHash = 7162520447613;
   fn.__initData = closure_11;
-  obj = { style: null, pointerEvents: "none", accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants" };
-  const items2 = [tmp3.outerRing, expiresAt.style];
-  obj.style = items2;
-  obj1 = { style: tmp3.innerFill };
+  obj = { style: items2, pointerEvents: "none", accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: null };
+  items2 = [tmp3.outerRing, expiresAt.style];
+  obj1 = { style: tmp3.innerFill, children: null };
   const animatedProps = obj2.useAnimatedProps(fn);
-  obj2 = { width: 16, height: 16, style: tmp3.progressRing };
-  const obj3 = { cx: 8, cy: 8, r: 6, fill: "none", stroke: token, strokeWidth: 4, strokeDasharray: closure_7, strokeLinecap: "butt", animatedProps };
-  obj2.children = <closure_9 cx={8} cy={8} r={6} fill="none" stroke={token} strokeWidth={4} strokeDasharray={closure_7} strokeLinecap="butt" animatedProps={animatedProps} />;
-  obj1.children = jsx(LURKER_PREVIEW_PERSIST_MS(callback[5]), { width: 16, height: 16, style: tmp3.progressRing });
-  obj.children = <View style={tmp3.innerFill} />;
-  return <View style={null} pointerEvents="none" accessibilityElementsHidden importantForAccessibility="no-hide-descendants" />;
+  obj2 = { width: 16, height: 16, style: tmp3.progressRing, children: null };
+  obj2[3] = <closure_9 cx={8} cy={8} r={6} fill="none" stroke={token} strokeWidth={4} strokeDasharray={closure_7} strokeLinecap="butt" animatedProps={animatedProps} />;
+  obj1[1] = jsx(LURKER_PREVIEW_PERSIST_MS(callback[5]), { width: 16, height: 16, style: tmp3.progressRing, children: null });
+  obj[4] = <View style={tmp3.innerFill}>{null}</View>;
+  return <View style={items2} pointerEvents="none" accessibilityElementsHidden importantForAccessibility="no-hide-descendants">{null}</View>;
 });
 let result = require("get ActivityIndicator").fileFinishedImporting("modules/lurker_mode/native/LurkerPreviewCooldownBadge.tsx");
 
@@ -94,7 +93,7 @@ export const useHasExpired = function useHasExpired(prop) {
       const _Math = Math;
       const _Date = Date;
       const _setTimeout = setTimeout;
-      timeout = setTimeout(() => outer1_1(closure_0), Math.max(0, timeout - Date.now()));
+      timeout = setTimeout(() => callback(closure_0), Math.max(0, tmp - Date.now()));
       return () => clearTimeout(closure_0);
     }
   }, items);

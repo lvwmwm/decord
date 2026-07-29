@@ -1,82 +1,41 @@
-// Module ID: 11551
-// Function ID: 89832
-// Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 566, 686, 2]
+// Module ID: 11575
+// Function ID: 11576
+// Name: handleGameServerUpsert
+// Dependencies: [589, 709, 2]
 
-// Module 11551 (_isNativeReflectConstruct)
-import dispatcher from "dispatcher";
-import set from "set";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
+// Module 11575 (handleGameServerUpsert)
+import { Store } from "initialize";
 
-function _isNativeReflectConstruct() {
-  let dispatcher = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return dispatcher;
-  }
-  const result = _isNativeReflectConstruct();
-}
 function handleGameServerUpsert(gameServer) {
   gameServer = gameServer.gameServer;
-  gameServer = undefined;
+  let mapped;
   if (null == gameServer.guildId) {
-    if (-1 === mapped.findIndex((id) => id.id === gameServer.id)) {
+    mapped = gameServer;
+    if (-1 === mapped.findIndex((id) => id.id === mapped.id)) {
       const items = [];
-      const arraySpreadResult = HermesBuiltin.arraySpread(mapped, 0);
-      items[arraySpreadResult] = gameServer;
-      gameServer = arraySpreadResult + 1;
+      items[HermesBuiltin.arraySpread(mapped, 0)] = gameServer;
       mapped = items;
     } else {
       mapped = mapped.map((id) => {
         let tmp = id;
-        if (id.id === gameServer.id) {
-          tmp = gameServer;
+        if (id.id === mapped.id) {
+          tmp = mapped;
         }
         return tmp;
       });
     }
   }
 }
-let closure_5 = [];
-let tmp2 = ((Store) => {
-  class OwnedGameServersStore {
-    constructor() {
-      self = this;
-      tmp = OwnedGameServersStore(this, OwnedGameServersStore);
-      obj = outer1_3(OwnedGameServersStore);
-      tmp2 = outer1_2;
-      if (outer1_6()) {
-        tmp6 = globalThis;
-        _Reflect = Reflect;
-        tmp7 = outer1_3;
-        tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, outer1_3(self).constructor);
-      } else {
-        tmp3 = arguments;
-        tmp4 = arguments;
-        constructResult = obj(...arguments);
-      }
-      return tmp2(self, constructResult);
-    }
-  }
-  callback2(OwnedGameServersStore, Store);
-  const items = [
-    {
-      key: "getGameServers",
-      value() {
-        return outer1_5;
-      }
-    }
-  ];
-  return callback(OwnedGameServersStore, items);
-})(require("initialize").Store);
-tmp2.displayName = "OwnedGameServersStore";
-tmp2 = new tmp2(require("dispatcher"), {
+let closure_0 = [];
+class OwnedGameServersStore extends Store {
+}
+OwnedGameServersStore.prototype["getGameServers"] = function getGameServers() {
+  return closure_0;
+};
+OwnedGameServersStore.displayName = "OwnedGameServersStore";
+const ownedGameServersStore = new OwnedGameServersStore(require("dispatcher"), {
   LOGOUT: function handleReset() {
-    let closure_5 = [];
+    let closure_0 = [];
   },
   GAME_SERVER_FETCH_MY_SERVERS_SUCCESS: function handleFetchMyServersSuccess(gameServers) {
     gameServers = gameServers.gameServers;
@@ -86,10 +45,10 @@ tmp2 = new tmp2(require("dispatcher"), {
   GAME_SERVER_DELETE: function handleGameServerDeleted(gameServerId) {
     gameServerId = gameServerId.gameServerId;
     if (null == gameServerId.guildId) {
-      closure_5 = closure_5.filter((id) => id.id !== gameServerId);
+      gameServerId = gameServerId.filter((id) => id.id !== closure_0);
     }
   }
 });
-let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/premium/game_server/OwnedGameServersStore.tsx");
+const result = require("set").fileFinishedImporting("modules/premium/game_server/OwnedGameServersStore.tsx");
 
-export default tmp2;
+export default ownedGameServersStore;

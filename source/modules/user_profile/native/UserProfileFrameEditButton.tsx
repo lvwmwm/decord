@@ -1,29 +1,29 @@
-// Module ID: 13704
-// Function ID: 105114
+// Module ID: 13725
+// Function ID: 13726
 // Name: COLLECTIBLES_PREVIEW_SIZE
-// Dependencies: [57, 31, 27, 5545, 1345, 482, 33, 689, 4165, 8676, 8417, 1334, 7918, 8021, 1877, 4133, 13705, 1935, 1212, 13696, 5619, 1273, 8670, 7940, 2]
+// Dependencies: [32, 19, 17, 5563, 1369, 505, 21, 712, 4189, 8700, 8441, 1358, 7943, 8045, 1901, 4157, 13726, 1959, 1236, 13717, 5637, 1297, 8694, 7965, 2]
 // Exports: default
 
-// Module 13704 (COLLECTIBLES_PREVIEW_SIZE)
+// Module 13725 (COLLECTIBLES_PREVIEW_SIZE)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
-import { View } from "get ActivityIndicator";
+import FormControlText from "FormControlText";
+import { View } from "asyncRequireImpl";
 import { COLLECTIBLES_PREVIEW_SIZE } from "ARBITRARY_LARGE_OFFSET";
 import { ContentDismissActionType } from "ContentDismissActionType";
 import { NOOP } from "sum";
-import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import { jsx } from "Button";
+import createCacheKey from "createCacheKey";
 
 const require = arg1;
-const PX_4 = require("_createForOfIteratorHelperLoose").space.PX_4;
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { height: COLLECTIBLES_PREVIEW_SIZE, width: COLLECTIBLES_PREVIEW_SIZE, paddingVertical: PX_4, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_MOD_MUTED, justifyContent: "center", alignItems: "center", borderRadius: require("_createForOfIteratorHelperLoose").radii.xs, overflow: "hidden" };
-_createForOfIteratorHelperLoose.previewContainer = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.noneIcon = { tintColor: require("_createForOfIteratorHelperLoose").colors.TEXT_SUBTLE };
-let obj1 = { tintColor: require("_createForOfIteratorHelperLoose").colors.TEXT_SUBTLE };
-_createForOfIteratorHelperLoose.newBadge = { paddingTop: 0, marginLeft: require("_createForOfIteratorHelperLoose").space.PX_4 };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-let obj2 = { paddingTop: 0, marginLeft: require("_createForOfIteratorHelperLoose").space.PX_4 };
+const PX_4 = require("Themes").space.PX_4;
+createCacheKey = { previewContainer: null, noneIcon: null, newBadge: null };
+createCacheKey = { height: COLLECTIBLES_PREVIEW_SIZE, width: COLLECTIBLES_PREVIEW_SIZE, paddingVertical: PX_4, backgroundColor: require("Themes").colors.BACKGROUND_MOD_MUTED, justifyContent: "center", alignItems: "center", borderRadius: require("Themes").radii.xs, overflow: "hidden" };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { tintColor: require("Themes").colors.TEXT_SUBTLE };
+let obj1 = { tintColor: require("Themes").colors.TEXT_SUBTLE };
+createCacheKey[2] = { paddingTop: 0, marginLeft: require("Themes").space.PX_4 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let obj2 = { paddingTop: 0, marginLeft: require("Themes").space.PX_4 };
 const result = require("get ActivityIndicator").fileFinishedImporting("modules/user_profile/native/UserProfileFrameEditButton.tsx");
 
 export default function UserProfileFrameEditButton(arg0) {
@@ -33,119 +33,126 @@ export default function UserProfileFrameEditButton(arg0) {
   let user;
   ({ displayProfile, user } = arg0);
   ({ pendingProfileFrame, guildId } = arg0);
+  let dependencyMap;
   let userProfileFrame;
-  const tmp = _createForOfIteratorHelperLoose();
-  let obj = user(8676);
+  const tmp = createCacheKey();
+  let obj = user(8700);
   const canViewProfileFramesInCollectiblesShop = obj.useCanViewProfileFramesInCollectiblesShop("UserProfileFrameEditButton");
-  let obj1 = user(8417);
-  const items = [user(1334).DismissibleContent.PROFILE_FRAME_USER_PROFILE_NEW_BADGE];
-  const tmp3 = userProfileFrame(obj1.useSelectedDismissibleContent(items), 2);
-  const dependencyMap = tmp4;
-  let obj2 = user(7918);
-  obj = { pendingValue: pendingProfileFrame };
+  let obj1 = user(8441);
+  const items = [user(1358).DismissibleContent.PROFILE_FRAME_USER_PROFILE_NEW_BADGE];
+  const tmp5 = userProfileFrame(obj1.useSelectedDismissibleContent(items), 2);
+  dependencyMap = tmp6;
+  let obj2 = user(7943);
+  obj = { pendingValue: pendingProfileFrame, userValue: null, guildValue: null, guildId: null };
   let profileFrame;
-  if (null != displayProfile) {
+  if (displayProfile != null) {
     const _userProfile = displayProfile._userProfile;
-    if (null != _userProfile) {
+    if (_userProfile != null) {
       profileFrame = _userProfile.profileFrame;
     }
   }
-  obj.userValue = profileFrame;
+  obj[1] = profileFrame;
   let profileFrame1;
-  if (null != displayProfile) {
+  if (displayProfile != null) {
     const _guildMemberProfile = displayProfile._guildMemberProfile;
-    if (null != _guildMemberProfile) {
+    if (_guildMemberProfile != null) {
       profileFrame1 = _guildMemberProfile.profileFrame;
     }
   }
-  obj.guildValue = profileFrame1;
-  obj.guildId = guildId;
+  obj[2] = profileFrame1;
+  obj[3] = guildId;
   const profilePreviewValue = obj2.getProfilePreviewValue(obj);
-  let obj4 = user(8021);
+  let tmp2Result = tmp2(8045);
   let skuId;
-  if (null != profilePreviewValue) {
+  if (profilePreviewValue != null) {
     skuId = profilePreviewValue.skuId;
   }
-  const fetchCollectiblesProduct = obj4.useFetchCollectiblesProduct(skuId);
+  const fetchCollectiblesProduct = tmp2Result.useFetchCollectiblesProduct(skuId);
   const product = fetchCollectiblesProduct.product;
   let type;
-  if (null != product) {
+  if (product != null) {
     const first = product.items[0];
-    if (null != first) {
+    if (first != null) {
       type = first.type;
     }
   }
-  if (type === user(1877).CollectiblesItemType.PROFILE_FRAME) {
+  if (type === user(1901).CollectiblesItemType.PROFILE_FRAME) {
     const first1 = product.items[0];
   }
-  let obj5 = user(7918);
-  userProfileFrame = obj5.useUserProfileFrame({ user, guildId });
+  tmp2Result = tmp2(7943);
+  userProfileFrame = tmp2Result.useUserProfileFrame({ user, guildId });
   if (undefined !== pendingProfileFrame) {
     userProfileFrame = pendingProfileFrame;
   }
-  const items1 = [userProfileFrame, guildId, user, tmp3[1]];
+  const items1 = [userProfileFrame, guildId, user, tmp5[1]];
   if (canViewProfileFramesInCollectiblesShop) {
     let name;
-    if (null != product) {
+    if (product != null) {
       name = product.name;
     }
-    if (null == name) {
-      const intl = user(1212).intl;
-      name = intl.string(user(1212).t.PoWNfe);
+    if (name == null) {
+      const intl = tmp2(1236).intl;
+      name = intl.string(tmp2(1236).t.PoWNfe);
     }
     let formatToPlainStringResult = name;
     if (null != guildId) {
       formatToPlainStringResult = name;
       if (null == userProfileFrame) {
-        const intl2 = user(1212).intl;
-        obj = { label: name };
-        formatToPlainStringResult = intl2.formatToPlainString(user(1212).t.ep5D4i, obj);
+        const intl2 = tmp2(1236).intl;
+        obj = { label: null };
+        obj[0] = name;
+        formatToPlainStringResult = intl2.formatToPlainString(tmp2(1236).t.ep5D4i, obj);
       }
     }
     if (fetchCollectiblesProduct.isFetching) {
-      obj1 = {};
-      const intl5 = user(1212).intl;
-      obj1.label = intl5.string(user(1212).t.GWrZOd);
-      const intl6 = user(1212).intl;
-      obj1.buttonText = intl6.string(user(1212).t.MKDeyL);
-      obj1.onPress = NOOP;
-      obj1.leading = jsx(user(5619).ActivityIndicator, { animating: true, size: "large" });
-      obj1.loading = true;
-      obj1.disabled = true;
-      obj1.hideArrow = true;
+      obj1 = { label: null, buttonText: null, onPress: null, leading: null, loading: true, disabled: true, hideArrow: true };
+      const intl5 = tmp2(1236).intl;
+      obj1[0] = intl5.string(tmp2(1236).t.GWrZOd);
+      const intl6 = tmp2(1236).intl;
+      obj1[1] = intl6.string(tmp2(1236).t.MKDeyL);
+      obj1[2] = NOOP;
+      obj1[3] = tmp19(tmp2(5637).ActivityIndicator, { animating: true, size: "large" });
       obj2 = obj1;
     } else {
-      obj2 = {};
-      const intl3 = user(1212).intl;
-      obj2.label = intl3.string(user(1212).t.GWrZOd);
-      let tmp26;
-      if (tmp3[0] === user(1334).DismissibleContent.PROFILE_FRAME_USER_PROFILE_NEW_BADGE) {
-        const obj3 = { "aria-hidden": true };
-        obj4 = {};
-        const intl4 = user(1212).intl;
-        obj4.text = intl4.string(user(1212).t.y2b7CA);
-        obj4.style = tmp.newBadge;
-        obj3.children = jsx(user(1273).TextBadge, {});
-        tmp26 = <View aria-hidden />;
+      obj2 = { label: null, labelTrailing: null, buttonText: null, accessibilityValue: null, onPress: null, leading: null };
+      const intl3 = tmp2(1236).intl;
+      obj2[0] = intl3.string(tmp2(1236).t.GWrZOd);
+      let tmp19Result;
+      if (tmp5[0] === tmp2(1358).DismissibleContent.PROFILE_FRAME_USER_PROFILE_NEW_BADGE) {
+        const obj3 = { "aria-hidden": true, children: null };
+        const obj4 = { text: null, style: null };
+        const intl4 = tmp2(1236).intl;
+        obj4[0] = intl4.string(tmp2(1236).t.y2b7CA);
+        obj4[1] = tmp.newBadge;
+        obj3[1] = tmp19(tmp2(1297).TextBadge, obj4);
+        tmp19Result = tmp19(View, obj3);
       }
-      obj2.labelTrailing = tmp26;
-      obj2.buttonText = formatToPlainStringResult;
-      obj5 = { text: formatToPlainStringResult };
-      obj2.accessibilityValue = obj5;
-      obj2.onPress = tmp14;
+      obj2[1] = tmp19Result;
+      obj2[2] = formatToPlainStringResult;
+      const obj5 = { text: null };
+      obj5[0] = formatToPlainStringResult;
+      obj2[3] = obj5;
+      obj2[4] = tmp16;
       if (null != first1) {
-        const obj6 = { style: tmp.previewContainer };
-        const obj7 = { profileFrame: first1, previewWidth: COLLECTIBLES_PREVIEW_SIZE - 2 * guildId(689).space.PX_8, previewHeight: COLLECTIBLES_PREVIEW_SIZE - 2 * PX_4, profileBackgroundColor: guildId(689).colors.BACKGROUND_SURFACE_HIGH };
-        obj6.children = jsx(guildId(8670), { profileFrame: first1, previewWidth: COLLECTIBLES_PREVIEW_SIZE - 2 * guildId(689).space.PX_8, previewHeight: COLLECTIBLES_PREVIEW_SIZE - 2 * PX_4, profileBackgroundColor: guildId(689).colors.BACKGROUND_SURFACE_HIGH });
-        let tmp35 = <View style={tmp.previewContainer} />;
-        const tmp40 = guildId(8670);
+        const obj6 = { style: null, children: null };
+        obj6[0] = tmp.previewContainer;
+        const obj7 = { profileFrame: null, previewWidth: null, previewHeight: null, profileBackgroundColor: null };
+        obj7[0] = first1;
+        obj7[1] = COLLECTIBLES_PREVIEW_SIZE - 2 * guildId(712).space.PX_8;
+        obj7[2] = COLLECTIBLES_PREVIEW_SIZE - 2 * PX_4;
+        obj7[3] = guildId(712).colors.BACKGROUND_SURFACE_HIGH;
+        obj6[1] = tmp19(guildId(8694), obj7);
+        tmp19Result = tmp19(View, obj6);
+        const tmp26 = guildId(8694);
       } else {
-        const obj8 = { source: guildId(7940), style: tmp.noneIcon };
-        tmp35 = jsx(user(1273).Icon, { source: guildId(7940), style: tmp.noneIcon });
+        const obj8 = { source: null, style: null };
+        obj8[0] = guildId(7965);
+        obj8[1] = tmp.noneIcon;
+        tmp19Result = tmp19(tmp2(1297).Icon, obj8);
       }
-      obj2.leading = tmp35;
+      obj2[5] = tmp19Result;
     }
-    return jsx(user(13696).UserProfileEditFormButton, obj2);
+    return jsx(tmp2(13717).UserProfileEditFormButton, obj2);
   } else {
     return null;
   }

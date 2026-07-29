@@ -1,41 +1,48 @@
-// Module ID: 6239
-// Function ID: 55782
-// Name: useGetDiscountOffer
-// Dependencies: [5654, 1852, 6240, 5657, 624, 2]
+// Module ID: 6259
+// Function ID: 6260
+// Name: usePremiumDiscountOffer
+// Dependencies: [5672, 1876, 6260, 5675, 647, 2]
 // Exports: usePremiumDiscountOffer, usePremiumGroupDiscountOffer
 
-// Module 6239 (useGetDiscountOffer)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 6259 (usePremiumDiscountOffer)
+import updateProduct from "updateProduct";
 import GuildFeatures from "GuildFeatures";
 
-let closure_4;
-let closure_5;
+let c4;
+let c5;
 const require = arg1;
-function useGetDiscountOffer(closure_4, offerIds) {
-  const _require = offerIds;
-  const values = Object.values(_require(5657).DiscountIdToProductOfferId[closure_4]);
-  let tmp2 = null;
-  if (0 !== values.length) {
-    let tmp3 = null;
-    if (values.every((arg0) => offerIds.has(arg0))) {
-      tmp3 = tmp;
-    }
-    tmp2 = tmp3;
-  }
-  return tmp2;
-}
-({ PREMIUM_TIER_2_LIKELIHOOD_1_MONTH_40_PERCENT_DISCOUNT_ID: closure_4, PREMIUM_TIER_2_REENGAGEMENT_1_MONTH_40_PERCENT_DISCOUNT_ID: closure_5 } = GuildFeatures);
+({ PREMIUM_TIER_2_LIKELIHOOD_1_MONTH_40_PERCENT_DISCOUNT_ID: c4, PREMIUM_TIER_2_REENGAGEMENT_1_MONTH_40_PERCENT_DISCOUNT_ID: c5 } = GuildFeatures);
 const result = require("useDiscountOffer").fileFinishedImporting("modules/premium/hooks/usePremiumDiscountOffer.android.tsx");
 
 export const usePremiumDiscountOffer = function usePremiumDiscountOffer() {
-  const items = [_isNativeReflectConstruct];
-  const offerIds = require(624) /* defaultAreStatesEqual */.useStateFromStoresObject(items, () => ({ isFetchingProducts: outer1_3.isFetchingProducts(), offerIds: outer1_3.getOfferIds() })).offerIds;
-  const tmp = useGetDiscountOffer(closure_4, offerIds);
-  let tmp2 = useGetDiscountOffer(closure_5, offerIds);
-  if (null != tmp) {
-    tmp2 = tmp;
+  const items = [updateProduct];
+  offerIds = offerIds(647).useStateFromStoresObject(items, () => ({ isFetchingProducts: updateProduct.isFetchingProducts(), offerIds: updateProduct.getOfferIds() })).offerIds;
+  const obj = offerIds(647);
+  const tmp = offerIds;
+  const tmp3 = importDefault;
+  let values = Object.values(offerIds(5675).DiscountIdToProductOfferId[closure_4]);
+  let tmp5 = null;
+  if (0 !== values.length) {
+    let tmp6 = null;
+    if (values.every((arg0) => offerIds.has(arg0))) {
+      tmp6 = tmp4;
+    }
+    tmp5 = tmp6;
   }
-  return tmp2;
+  tmp4 = importDefault(6260)(closure_4);
+  values = Object.values(tmp(5675).DiscountIdToProductOfferId[closure_5]);
+  let tmp8 = null;
+  if (0 !== values.length) {
+    let tmp9 = null;
+    if (values.every((arg0) => offerIds.has(arg0))) {
+      tmp9 = tmp7;
+    }
+    tmp8 = tmp9;
+  }
+  if (tmp5 == null) {
+    tmp5 = tmp8;
+  }
+  return tmp5;
 };
 export function usePremiumGroupDiscountOffer() {
   return null;

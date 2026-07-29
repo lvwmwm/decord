@@ -1,44 +1,41 @@
-// Module ID: 1360
-// Function ID: 16296
+// Module ID: 1384
+// Function ID: 1385
 // Name: hasFlag
 // Dependencies: [2]
-// Exports: hasAnyFlag, removeFlags, setFlag, toggleFlag
+// Exports: addFlag, hasAnyFlag, hasFlag, removeFlag, removeFlags, setFlag, toggleFlag
 
-// Module 1360 (hasFlag)
-function hasFlag(arg0, arg1) {
-  return (arg0 & arg1) === arg1;
-}
-function addFlag(setting, MUTUAL_FRIENDS) {
-  return setting | MUTUAL_FRIENDS;
-}
-function removeFlag(flags, OBFUSCATED) {
-  return flags & ~OBFUSCATED;
-}
+// Module 1384 (hasFlag)
 const result = require("set").fileFinishedImporting("../discord_common/js/shared/utils/FlagUtils.tsx");
 
-export { hasFlag };
+export const hasFlag = function hasFlag(arg0, arg1) {
+  return (arg0 & arg1) === arg1;
+};
 export const hasAnyFlag = function hasAnyFlag(flags, arg1) {
   return flags & arg1;
 };
-export { addFlag };
-export { removeFlag };
-export const removeFlags = function removeFlags(setting, MUTUAL_FRIENDS, NO_RELATION) {
+export const addFlag = function addFlag(setting, MUTUAL_FRIENDS) {
+  return setting | MUTUAL_FRIENDS;
+};
+export const removeFlag = function removeFlag(flags, OBFUSCATED) {
+  return flags & ~OBFUSCATED;
+};
+export const removeFlags = function removeFlags(setting, UNREADS_ALL_MESSAGES, NO_RELATION) {
   const substr = [...arguments].slice();
-  return substr.reduce((arg0, arg1) => outer1_2(arg0, arg1), setting);
+  return substr.reduce((arg0, arg1) => arg0 & ~arg1, setting);
 };
-export const setFlag = function setFlag(setting, MUTUAL_FRIENDS) {
+export const setFlag = function setFlag(arg0, arg1, arg2) {
   if (arg2) {
-    let tmp2 = addFlag(setting, MUTUAL_FRIENDS);
+    let tmp = arg0 | arg1;
   } else {
-    tmp2 = removeFlag(setting, MUTUAL_FRIENDS);
+    tmp = arg0 & ~arg1;
   }
-  return tmp2;
+  return tmp;
 };
-export const toggleFlag = function toggleFlag(setting, MUTUAL_FRIENDS) {
-  if (hasFlag(setting, MUTUAL_FRIENDS)) {
-    let tmp2 = removeFlag(setting, MUTUAL_FRIENDS);
+export const toggleFlag = function toggleFlag(arg0, arg1) {
+  if ((arg0 & arg1) === arg1) {
+    let tmp = arg0 & ~arg1;
   } else {
-    tmp2 = addFlag(setting, MUTUAL_FRIENDS);
+    tmp = arg0 | arg1;
   }
-  return tmp2;
+  return tmp;
 };

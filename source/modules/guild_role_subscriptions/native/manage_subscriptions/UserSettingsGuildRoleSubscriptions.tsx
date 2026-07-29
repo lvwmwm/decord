@@ -1,32 +1,32 @@
-// Module ID: 14204
-// Function ID: 109032
+// Module ID: 14226
+// Function ID: 14227
 // Name: GuildRoleSubscriptionsSectionHeader
-// Dependencies: [31, 27, 33, 4165, 4161, 1212, 1273, 14205, 14206, 14207, 14210, 14211, 2]
+// Dependencies: [19, 17, 21, 4189, 4185, 1236, 1297, 14227, 14228, 14229, 14232, 14233, 2]
 // Exports: default
 
-// Module 14204 (GuildRoleSubscriptionsSectionHeader)
-import "result";
+// Module 14226 (GuildRoleSubscriptionsSectionHeader)
+import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_3;
-let closure_4;
-let closure_5;
+let c3;
+let c4;
+let c5;
 let closure_6;
 const require = arg1;
 function GuildRoleSubscriptionsSectionHeader() {
   const tmp = callback3();
-  let obj = { style: tmp.sectionHeader };
-  obj = { variant: "eyebrow", color: "text-default" };
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj.children = intl.string(require(1212) /* getSystemLocale */.t["KzCF/6"]);
-  const items = [callback(require(4161) /* Text */.Text, obj), ];
-  obj = { style: tmp.sectionSubtitle, variant: "text-sm/medium", color: "text-default" };
-  const intl2 = require(1212) /* getSystemLocale */.intl;
-  obj.children = intl2.string(require(1212) /* getSystemLocale */.t["Y+ucR7"]);
-  items[1] = callback(require(4161) /* Text */.Text, obj);
-  obj.children = items;
+  let obj = { style: tmp.sectionHeader, children: null };
+  obj = { variant: "eyebrow", color: "text-default", children: null };
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj[2] = intl.string(require(1236) /* getSystemLocale */.t["KzCF/6"]);
+  const items = [callback(require(4185) /* Text */.Text, obj), ];
+  obj = { style: tmp.sectionSubtitle, variant: "text-sm/medium", color: "text-default", children: null };
+  const intl2 = require(1236) /* getSystemLocale */.intl;
+  obj[3] = intl2.string(require(1236) /* getSystemLocale */.t["Y+ucR7"]);
+  items[1] = callback(require(4185) /* Text */.Text, obj);
+  obj[1] = items;
   return callback2(closure_3, obj);
 }
 function renderSectionHeader(section) {
@@ -37,39 +37,41 @@ function renderSectionHeader(section) {
   return tmp;
 }
 function ItemSeparator() {
-  return callback(require(1273) /* Button */.Spacer, { size: 8 });
+  return callback(require(1297) /* Button */.Spacer, { size: 8 });
 }
-({ View: closure_3, SectionList: closure_4 } = get_ActivityIndicator);
-({ jsx: closure_5, jsxs: closure_6 } = jsxProd);
+({ View: c3, SectionList: c4 } = get_ActivityIndicator);
+({ jsx: c5, jsxs: closure_6 } = jsxProd);
 let c7 = "role-subscriptions";
-let closure_8 = _createForOfIteratorHelperLoose.createStyles({ container: { flex: 1 }, list: { flex: 1 }, listContentContainer: { paddingHorizontal: 16 }, sectionHeader: { paddingVertical: 24 }, sectionSubtitle: { marginTop: 4 } });
+let closure_8 = createCacheKey.createStyles({ container: { flex: 1 }, list: { flex: 1 }, listContentContainer: { paddingHorizontal: 16 }, sectionHeader: { paddingVertical: 24 }, sectionSubtitle: { marginTop: 4 } });
 const result = require("jsxProd").fileFinishedImporting("modules/guild_role_subscriptions/native/manage_subscriptions/UserSettingsGuildRoleSubscriptions.tsx");
 
 export default function UserSettingsGuildRoleSubscriptions() {
   const tmp = callback3();
-  importDefault(14205)({ forceRestore: true });
-  const tmp3 = importDefault(14206)({ ensureFresh: true });
-  let obj = require(14207) /* _createForOfIteratorHelperLoose */;
-  if (obj.useFetchListingsForSubscriptions(tmp3).loading) {
-    let tmp4Result = tmp4(importDefault(14210), {});
+  importDefault(14227)({ forceRestore: true });
+  const tmp5 = importDefault(14228)({ ensureFresh: true });
+  let obj = require(14229) /* useFetchListingsForGuild */;
+  if (obj.useFetchListingsForSubscriptions(tmp5).loading) {
+    let tmp6Result = tmp6(importDefault(14232), {});
   } else {
-    obj = { style: tmp.container };
-    obj = {};
-    ({ listContentContainer: obj3.contentContainerStyle, list: obj3.style } = tmp);
-    const obj1 = { key: c7, data: tmp3 };
+    obj = { style: null, children: null };
+    obj[0] = tmp.container;
+    obj = { contentContainerStyle: null, style: null, sections: null, stickySectionHeadersEnabled: false, keyExtractor: null, renderSectionHeader: null, renderItem: null, ItemSeparatorComponent: null };
+    ({ listContentContainer: obj3[0], list: obj3[1] } = tmp);
+    const obj1 = { key: null, data: null };
+    obj1[0] = c7;
+    obj1[1] = tmp5;
     const items = [obj1];
-    obj.sections = items;
-    obj.stickySectionHeadersEnabled = false;
-    obj.keyExtractor = function keyExtractor(id) {
+    obj[2] = items;
+    obj[4] = function keyExtractor(id) {
       return id.id;
     };
-    obj.renderSectionHeader = renderSectionHeader;
-    obj.renderItem = function renderItem(subscription) {
-      return outer1_5(outer1_1(outer1_2[11]), { subscription: subscription.item });
+    obj[5] = renderSectionHeader;
+    obj[6] = function renderItem(subscription) {
+      return callback2(callback(table[11]), { subscription: subscription.item });
     };
-    obj.ItemSeparatorComponent = ItemSeparator;
-    obj.children = callback(closure_4, obj);
-    tmp4Result = tmp4(closure_3, obj);
+    obj[7] = ItemSeparator;
+    obj[1] = tmp6(closure_4, obj);
+    tmp6Result = tmp6(closure_3, obj);
   }
-  return tmp4Result;
+  return tmp6Result;
 };

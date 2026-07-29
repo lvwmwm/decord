@@ -1,46 +1,47 @@
-// Module ID: 16637
-// Function ID: 129648
+// Module ID: 16673
+// Function ID: 16674
 // Name: AVErrorNoAudioInputDetectedDefinition
-// Dependencies: [1348, 4212, 4237, 653, 8828, 16638, 2]
+// Dependencies: [1372, 4236, 4261, 676, 8852, 16674, 2]
 
-// Module 16637 (AVErrorNoAudioInputDetectedDefinition)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_3 from "_isNativeReflectConstruct";
-import closure_4 from "_isNativeReflectConstruct";
+// Module 16673 (AVErrorNoAudioInputDetectedDefinition)
+import ensureGuildLoaded from "ensureGuildLoaded";
+import _detectH265HardwareDecode from "_detectH265HardwareDecode";
+import createRTCConnection from "createRTCConnection";
 import ME from "ME";
 
-let closure_5;
+let c5;
 let closure_6;
 const require = arg1;
-({ InputModes: closure_5, RTCConnectionStates: closure_6 } = ME);
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/errors/av_errors/definitions/AVErrorNoAudioInputDetected.tsx");
+({ InputModes: c5, RTCConnectionStates: closure_6 } = ME);
+const result = require("createRTCConnection").fileFinishedImporting("modules/errors/av_errors/definitions/AVErrorNoAudioInputDetected.tsx");
 
 export const AVErrorNoAudioInputDetectedDefinition = {
   getActiveErrors(voiceState) {
     voiceState = voiceState.voiceState;
     channel = channel.getChannel(voiceState.voiceChannelId);
     let isGuildStageVoiceResult;
-    if (null != channel) {
+    if (channel != null) {
       isGuildStageVoiceResult = channel.isGuildStageVoice();
     }
     if (isGuildStageVoiceResult) {
       let suppress;
-      if (null != voiceState) {
+      if (voiceState != null) {
         suppress = voiceState.suppress;
       }
       isGuildStageVoiceResult = suppress;
     }
     if (null != channel) {
-      if (null != store2.getMediaSessionId()) {
-        if (!store.getInputDetectedThisConnection()) {
-          if (store2.getState() === constants2.RTC_CONNECTED) {
-            if (store.getSettings().mode === constants.VOICE_ACTIVITY) {
-              if (store.getSettings().silenceWarning) {
-                if (false === store.getInputDetected()) {
+      if (null != mediaSessionId.getMediaSessionId()) {
+        if (!inputDetectedThisConnection.getInputDetectedThisConnection()) {
+          if (mediaSessionId.getState() === constants2.RTC_CONNECTED) {
+            if (obj5.getSettings().mode === constants.VOICE_ACTIVITY) {
+              if (obj5.getSettings().silenceWarning) {
+                if (false === obj5.getInputDetected()) {
                   if (!isGuildStageVoiceResult) {
-                    if (!store.isSelfMute()) {
-                      const obj = { type: require(8828) /* validateUniqueErrorCodes */.AVError.NO_AUDIO_INPUT_DETECTED };
-                      const merged = Object.assign(require(16638) /* getCommonErrorContext */.getVoiceChannelErrorContext());
+                    if (!obj5.isSelfMute()) {
+                      const obj = { type: null };
+                      obj[0] = require(8852) /* mapped */.AVError.NO_AUDIO_INPUT_DETECTED;
+                      const merged = Object.assign(require(16674) /* getVoiceChannelErrorContext */.getVoiceChannelErrorContext());
                       const items = [obj];
                       return items;
                     }

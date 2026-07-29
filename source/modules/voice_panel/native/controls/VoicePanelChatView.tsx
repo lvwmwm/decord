@@ -1,33 +1,29 @@
-// Module ID: 11408
-// Function ID: 88461
-// Name: updateChatOpen
-// Dependencies: [31, 27, 10014, 653, 33, 4165, 4358, 1324, 1207, 11406, 1212, 4120, 6661, 10015, 4026, 7656, 4697, 8800, 1450, 1557, 11409, 4175, 4012, 10867, 3877, 4560, 11410, 10389, 2]
+// Module ID: 11432
+// Function ID: 11433
+// Name: memoResult1
+// Dependencies: [19, 17, 10036, 676, 21, 4189, 4383, 1348, 1231, 11430, 1236, 4144, 6682, 10037, 4050, 7679, 4719, 8824, 1474, 1581, 11433, 4199, 4036, 10891, 3901, 4583, 11434, 10413, 2]
 
-// Module 11408 (updateChatOpen)
-import importAllResult from "result";
-import { Platform } from "module_10389";
+// Module 11432 (memoResult1)
+import importAllResult from "useSafeAreaInsets";
+import { Platform } from "useGradientBottom";
 import { CONTROLS_DRAWER_HEADER_SIZE } from "VoicePanelControlsModes";
 import ME from "ME";
-import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import jsxProd from "module_4199";
+import createCacheKey from "createCacheKey";
 
-let closure_4;
-let closure_5;
+let c4;
+let c5;
 let closure_6;
-let closure_7;
+let error;
 const require = arg1;
-function updateChatOpen(arg0, arg1) {
-  importDefault(4358).updateChatOpen(arg0, arg1);
-}
-({ ComponentActions: closure_4, ME: closure_5 } = ME);
-({ jsx: closure_6, jsxs: closure_7 } = jsxProd);
-let obj = { flex: 1, overflow: "hidden", paddingTop: CONTROLS_DRAWER_HEADER_SIZE };
-obj = { position: "absolute", top: CONTROLS_DRAWER_HEADER_SIZE, left: 0 };
-let closure_8 = _createForOfIteratorHelperLoose.createStyles({ container: obj, gradientWrapper: obj, titleBlur: { opacity: 0 } });
+let c3 = importAllResult;
+({ ComponentActions: c4, ME: c5 } = ME);
+({ jsx: closure_6, jsxs: error } = jsxProd);
+let closure_8 = createCacheKey.createStyles({ container: { flex: 1, overflow: "hidden", paddingTop: CONTROLS_DRAWER_HEADER_SIZE }, gradientWrapper: { position: "absolute", top: CONTROLS_DRAWER_HEADER_SIZE, left: 0 }, titleBlur: { opacity: 0 } });
 let closure_9 = { code: "function VoicePanelChatViewTsx1(){const{windowDimensions}=this.__closure;return{width:windowDimensions.get().width,height:windowDimensions.get().height};}" };
 let closure_10 = importAllResult.memo(() => {
-  const windowDimensions = importAllResult.useContext(importDefault(10015)).windowDimensions;
-  let obj = windowDimensions(4026);
+  const windowDimensions = importAllResult.useContext(importDefault(10037)).windowDimensions;
+  let obj = windowDimensions(4050);
   const fn = function n() {
     return { width: windowDimensions.get().width, height: windowDimensions.get().height };
   };
@@ -35,40 +31,42 @@ let closure_10 = importAllResult.memo(() => {
   fn.__workletHash = 16775846409623;
   fn.__initData = closure_9;
   const animatedStyle = obj.useAnimatedStyle(fn);
-  obj = { style: items };
+  obj = { style: items, children: null };
   items = [callback2().gradientWrapper, animatedStyle];
   const tmp = callback2();
-  obj.children = callback(importDefault(4697), { absolute: true });
-  return callback(importDefault(7656), obj);
+  obj[1] = callback(importDefault(4719), { absolute: true });
+  return callback(importDefault(7679), obj);
 });
 const memoResult = importAllResult.memo(function VoicePanelDismissChatButton() {
   const callback = importAllResult.useCallback(() => {
-    const ComponentDispatch = outer1_0(outer1_2[8]).ComponentDispatch;
-    ComponentDispatch.dispatch(outer1_4.VOICE_PANEL_TIV_CLOSE);
+    const ComponentDispatch = callback(table[8]).ComponentDispatch;
+    ComponentDispatch.dispatch(constants.VOICE_PANEL_TIV_CLOSE);
   }, []);
-  if (tmp) {
-    let obj = {};
-    const intl2 = require(1212) /* getSystemLocale */.intl;
-    obj.accessibilityLabel = intl2.string(require(1212) /* getSystemLocale */.t["5MstTl"]);
-    obj.icon = importDefault(4120);
-    obj.onPress = callback;
-    let tmp3Result = tmp3(importDefault(11406), obj);
-    const tmp10 = importDefault(11406);
+  if (tmp3) {
+    let obj = { accessibilityLabel: null, icon: null, onPress: null };
+    const intl2 = require(1236) /* getSystemLocale */.intl;
+    obj[0] = intl2.string(require(1236) /* getSystemLocale */.t["5MstTl"]);
+    obj[1] = tmp(4144);
+    obj[2] = callback;
+    let tmp5Result = tmp5(tmp(11430), obj);
+    const tmpResult = tmp(11430);
   } else {
-    obj = {};
-    const intl = require(1212) /* getSystemLocale */.intl;
-    obj.accessibilityLabel = intl.string(require(1212) /* getSystemLocale */.t["5MstTl"]);
-    obj.icon = importDefault(4120);
-    obj.onPress = callback;
-    obj.variant = "primary-overlay";
-    tmp3Result = tmp3(require(6661) /* IconButton */.IconButton, obj);
+    obj = { accessibilityLabel: null, icon: null, onPress: null, variant: "primary-overlay" };
+    const intl = require(1236) /* getSystemLocale */.intl;
+    obj[0] = intl.string(require(1236) /* getSystemLocale */.t["5MstTl"]);
+    obj[1] = tmp(4144);
+    obj[2] = callback;
+    tmp5Result = tmp5(require(6682) /* IconButton */.IconButton, obj);
   }
-  return tmp3Result;
+  return tmp5Result;
 });
 const memoResult1 = importAllResult.memo(function VoicePanelChatView(shown) {
   shown = shown.shown;
-  const tmp = callback2();
-  const ref = channelId.useRef(null);
+  let ref;
+  let guildId;
+  let channelId;
+  let tmp = callback2();
+  ref = channelId.useRef(null);
   const context = channelId.useContext(ref(guildId[13]));
   guildId = context.guildId;
   channelId = context.channelId;
@@ -79,59 +77,57 @@ const memoResult1 = importAllResult.memo(function VoicePanelChatView(shown) {
   const items = [guildId, channelId];
   const controlsDrawerOpenWidth = obj1.getControlsDrawerOpenWidth(ref(guildId[18])().width, rect.left, rect.right);
   const effect = channelId.useEffect(() => {
-    ref(guildId[21]).preload(null != guildId ? guildId : outer1_5, channelId);
+    let tmp = guildId;
+    if (guildId == null) {
+      tmp = outer1_5;
+    }
+    ref(guildId[21]).preload(tmp, channelId);
     return () => {
-      outer2_11(outer1_3, false);
+      outer1_1(outer1_2[6]).updateChatOpen(closure_3, false);
     };
   }, items);
   const items1 = [channelId, shown];
   const effect1 = channelId.useEffect(() => {
-    outer1_11(channelId, shown);
+    ref(guildId[6]).updateChatOpen(channelId, shown);
     const current = ref.current;
     if (shown) {
-      if (null != current) {
+      if (current != null) {
         const result = current.chatInputTrackerRegister();
       }
     } else {
-      if (null != current) {
+      if (current != null) {
         const result1 = current.chatInputTrackerUnregister();
       }
-      const current2 = ref.current;
-      if (null != current2) {
+      const current2 = tmp2.current;
+      if (current2 != null) {
         current2.blur();
       }
     }
   }, items1);
   const callback = channelId.useCallback(() => {
     const ComponentDispatch = shown(guildId[8]).ComponentDispatch;
-    ComponentDispatch.dispatch(outer1_4.VOICE_PANEL_TIV_CLOSE);
+    ComponentDispatch.dispatch(constants.VOICE_PANEL_TIV_CLOSE);
   }, []);
-  obj = { value: controlsDrawerOpenWidth };
-  obj = { gradient: ref(guildId[22])() };
-  obj1 = { nativeID: "voice-panel-chat-view", accessibilityViewIsModal: shown, onAccessibilityEscape: callback, style: items2 };
+  obj = { value: controlsDrawerOpenWidth, children: null };
+  obj = { gradient: ref(guildId[22])(), children: null };
+  obj1 = { nativeID: "voice-panel-chat-view", accessibilityViewIsModal: shown, onAccessibilityEscape: callback, style: items2, children: null };
   items2 = [tmp.container, gradientTop];
   const items3 = [callback(closure_10, {}), , ];
-  const obj2 = {};
+  const obj2 = { title: null, disablePill: true, blurStyle: null };
   const tmp11 = closure_7;
   const tmp9 = ref(guildId[22])();
   const intl = shown(guildId[10]).intl;
-  obj2.title = intl.string(shown(guildId[10]).t["/VQax8"]);
-  obj2.disablePill = true;
-  obj2.blurStyle = tmp.titleBlur;
+  obj2[0] = intl.string(shown(guildId[10]).t["/VQax8"]);
+  obj2[2] = tmp.titleBlur;
   items3[1] = callback(ref(guildId[26]), obj2);
-  const obj3 = { disableGradient: true, alwaysRespectKeyboard: false, setNoExtractUI: false };
   const tmp12 = ref(guildId[26]);
-  if (null == guildId) {
+  if (guildId == null) {
     guildId = closure_5;
   }
-  obj3.guildId = guildId;
-  obj3.channelId = channelId;
-  obj3.chatInputRef = ref;
-  obj3.screenIndex = "voice-panel";
-  items3[2] = callback(ref(guildId[27]), obj3);
-  obj1.children = items3;
-  obj.children = tmp11(shown(guildId[25]).AccessibilityView, obj1);
-  obj.children = callback(shown(guildId[24]).ThemeContextProvider, obj);
+  items3[2] = callback(ref(guildId[27]), { disableGradient: true, alwaysRespectKeyboard: false, setNoExtractUI: false, guildId, channelId, chatInputRef: ref, screenIndex: "voice-panel" });
+  obj1[4] = items3;
+  obj[1] = tmp11(shown(guildId[25]).AccessibilityView, obj1);
+  obj[1] = callback(shown(guildId[24]).ThemeContextProvider, obj);
   return callback(ref(guildId[23]).Provider, obj);
 });
 let result = require("VoicePanelControlsModes").fileFinishedImporting("modules/voice_panel/native/controls/VoicePanelChatView.tsx");

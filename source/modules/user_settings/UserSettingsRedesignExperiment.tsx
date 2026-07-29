@@ -1,14 +1,13 @@
-// Module ID: 5021
-// Function ID: 43110
+// Module ID: 5043
+// Function ID: 5044
 // Name: apexExperiment
-// Dependencies: [1428, 2]
+// Dependencies: [1452, 2]
 // Exports: getIsEligibleForUserSettingsRedesign4DExperiment, useIsEligibleForUserSettingsRedesign4DExperiment
 
-// Module 5021 (apexExperiment)
+// Module 5043 (apexExperiment)
 import ApexExperiment from "ApexExperiment";
 
-const obj = { name: "2026-05-user-settings-redesign-4d", kind: "user", defaultConfig: { enabled: false }, variations: { [0]: { enabled: false }, [1]: { enabled: true } } };
-const apexExperiment = ApexExperiment.createApexExperiment(obj);
+const apexExperiment = ApexExperiment.createApexExperiment({ name: "2026-05-user-settings-redesign-4d", kind: "user", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true } } });
 const result = require("set").fileFinishedImporting("modules/user_settings/UserSettingsRedesignExperiment.tsx");
 
 export const UserSettingsRedesign4DExperiment = apexExperiment;

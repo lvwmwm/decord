@@ -1,136 +1,148 @@
-// Module ID: 13909
-// Function ID: 106387
+// Module ID: 13930
+// Function ID: 13931
 // Name: FamilyCenterActivitySectionHeader
-// Dependencies: [57, 31, 27, 5776, 33, 4165, 689, 6236, 5837, 13904, 4161, 11086, 1212, 2199, 13910, 4695, 2]
+// Dependencies: [32, 19, 17, 5794, 21, 4189, 712, 6256, 5855, 13925, 4185, 11110, 1236, 2223, 13931, 4717, 2]
 // Exports: default
 
-// Module 13909 (FamilyCenterActivitySectionHeader)
+// Module 13930 (FamilyCenterActivitySectionHeader)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
+import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import items from "items";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
+import createCacheKey from "createCacheKey";
 
-let closure_10;
-let closure_5;
+let c10;
+let c5;
+let c9;
 let closure_6;
-let closure_7;
-let closure_8;
-let closure_9;
+let error;
+let metroImportAll;
 const require = arg1;
 function FamilyCenterActivitySectionHeader(displayType) {
   displayType = displayType.displayType;
-  const tmp = _createForOfIteratorHelperLoose();
-  const tmp2 = importDefault(6236)();
-  let obj = require(5837) /* getActivityTypeTextConfigs */;
+  const tmp = createCacheKey();
+  let flag = importDefault(6256)();
+  let obj = require(5855) /* getEmptyActivityFormatter */;
   const activityTypeTextConfigs = obj.getActivityTypeTextConfigs();
   const value = activityTypeTextConfigs.get(displayType);
-  const actionsForDisplayType = require(13904) /* useActionTotalsForDisplayType */.useActionsForDisplayType(displayType);
-  const obj4 = require(13904) /* useActionTotalsForDisplayType */;
-  let length = require(13904) /* useActionTotalsForDisplayType */.useFormattedTotalForDisplayType(displayType);
+  const actionsForDisplayType = require(13925) /* useActionsForDisplayType */.useActionsForDisplayType(displayType);
+  const obj4 = require(13925) /* useActionsForDisplayType */;
+  const formattedTotalForDisplayType = require(13925) /* useActionsForDisplayType */.useFormattedTotalForDisplayType(displayType);
   if (displayType === constants.PURCHASES) {
+    let length = formattedTotalForDisplayType;
     let sectionHeaderResult;
-    if (null != value) {
+    if (value != null) {
       sectionHeaderResult = value.sectionHeader(length);
     }
     let sectionDescription;
-    if (null != value) {
+    if (value != null) {
       sectionDescription = value.sectionDescription;
     }
-    let tmp8 = null;
+    let tmp10 = null;
     if (undefined !== sectionDescription) {
       let sectionDescriptionResult;
-      if (null != value) {
-        let tmp10 = null != tmp2;
-        if (tmp10) {
-          tmp10 = tmp2;
+      if (value != null) {
+        if (flag == null) {
+          flag = false;
         }
-        sectionDescriptionResult = value.sectionDescription(tmp10);
+        sectionDescriptionResult = value.sectionDescription(flag);
       }
-      tmp8 = sectionDescriptionResult;
+      tmp10 = sectionDescriptionResult;
     }
-    obj = {};
-    obj = { variant: "text-sm/semibold", style: tmp.header, children: sectionHeaderResult };
-    const items = [callback2(require(4161) /* Text */.Text, obj), ];
-    let tmp16 = null;
-    if (null !== tmp8) {
-      const obj1 = { variant: "text-sm/medium", color: "text-muted", style: tmp.description, children: tmp8 };
-      tmp16 = callback2(require(4161) /* Text */.Text, obj1);
+    obj = { variant: "text-sm/semibold", style: null, children: null };
+    obj[1] = tmp.header;
+    obj[2] = sectionHeaderResult;
+    const items = [callback2(tmp3(4185).Text, obj), ];
+    let tmp14Result = null;
+    if (null !== tmp10) {
+      obj = { variant: "text-sm/medium", color: "text-muted", style: null, children: null };
+      obj[2] = tmp.description;
+      obj[3] = tmp10;
+      tmp14Result = callback2(tmp3(4185).Text, obj);
     }
-    items[1] = tmp16;
-    obj.children = items;
-    return closure_10(closure_6, obj);
+    const obj1 = { children: null };
+    items[1] = tmp14Result;
+    obj1[0] = items;
+    return closure_10(closure_6, obj1);
   }
   length = actionsForDisplayType.length;
 }
-({ ActivityIndicator: closure_5, View: closure_6 } = get_ActivityIndicator);
-({ FAMILY_CENTER_ITEMS_SHOWN_INCREMENTS: closure_7, TeenActionDisplayType: closure_8 } = items);
-({ jsx: closure_9, jsxs: closure_10 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { marginBottom: require("_createForOfIteratorHelperLoose").space.PX_4 };
-_createForOfIteratorHelperLoose.header = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.description = { marginBottom: require("_createForOfIteratorHelperLoose").space.PX_8 };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-let obj2 = { container: { display: "flex" }, loadMoreContainer: { display: "flex", flexDirection: "row", flex: 1, alignItems: "center", justifyContent: "center", width: "100%" } };
-let obj3 = { display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "center", borderBottomRightRadius: require("_createForOfIteratorHelperLoose").radii.sm, borderBottomLeftRadius: require("_createForOfIteratorHelperLoose").radii.sm, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_MOD_SUBTLE, width: "60%" };
-obj2.loadMore = obj3;
-obj2.loadMoreButton = { paddingVertical: 4 };
-let closure_12 = _createForOfIteratorHelperLoose.createStyles(obj2);
-let obj1 = { marginBottom: require("_createForOfIteratorHelperLoose").space.PX_8 };
+({ ActivityIndicator: c5, View: closure_6 } = get_ActivityIndicator);
+({ FAMILY_CENTER_ITEMS_SHOWN_INCREMENTS: error, TeenActionDisplayType: metroImportAll } = items);
+({ jsx: c9, jsxs: c10 } = jsxProd);
+createCacheKey = { header: null, description: null };
+createCacheKey = { marginBottom: require("Themes").space.PX_4 };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { marginBottom: require("Themes").space.PX_8 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let obj2 = { container: { display: "flex" }, loadMoreContainer: { display: "flex", flexDirection: "row", flex: 1, alignItems: "center", justifyContent: "center", width: "100%" }, loadMore: null, loadMoreButton: null };
+let obj1 = { marginBottom: require("Themes").space.PX_8 };
+obj2[2] = { display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "center", borderBottomRightRadius: require("Themes").radii.sm, borderBottomLeftRadius: require("Themes").radii.sm, backgroundColor: require("Themes").colors.BACKGROUND_MOD_SUBTLE, width: "60%" };
+obj2[3] = { paddingVertical: 4 };
+let closure_13 = createCacheKey.createStyles(obj2);
+let obj3 = { display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "center", borderBottomRightRadius: require("Themes").radii.sm, borderBottomLeftRadius: require("Themes").radii.sm, backgroundColor: require("Themes").colors.BACKGROUND_MOD_SUBTLE, width: "60%" };
 const result = require("get ActivityIndicator").fileFinishedImporting("modules/parent_tools/native/FamilyCenterActivitySection.tsx");
 
 export default function FamilyCenterActivitySection(displayType) {
   displayType = displayType.displayType;
+  let loadMore;
+  let dependencyMap;
   let loadMoreButton = callback3();
-  let obj = displayType(13904);
+  let obj = displayType(13925);
   const actionsForDisplayType = obj.useActionsForDisplayType(displayType);
-  let obj1 = displayType(13904);
+  let obj1 = displayType(13925);
   const actionTotalsForDisplayType = obj1.useActionTotalsForDisplayType(displayType);
-  let obj2 = displayType(11086);
+  let obj2 = displayType(11110);
   const familyCenterActions = obj2.useFamilyCenterActions({});
-  const loadMore = familyCenterActions.loadMore;
-  const tmp3 = callback(React.useState(closure_7), 2);
-  const dependencyMap = tmp3[1];
-  const substr = actionsForDisplayType.slice(0, tmp3[0]);
+  loadMore = familyCenterActions.loadMore;
+  const tmp6 = callback(React.useState(closure_7), 2);
+  dependencyMap = tmp6[1];
+  const substr = actionsForDisplayType.slice(0, tmp6[0]);
   const items = [loadMore, displayType];
   if (0 === actionsForDisplayType.length) {
     return null;
   } else {
-    const intl = displayType(1212).intl;
-    obj = {};
+    const intl = tmp(1236).intl;
+    obj = { pageSize: null };
     const _Math = Math;
-    obj.pageSize = Math.min(actionTotalsForDisplayType - substr.length, closure_7);
-    const formatToPlainStringResult = intl.formatToPlainString(loadMore(2199)["7dMmJY"], obj);
-    obj = { style: loadMoreButton.container };
-    obj1 = { displayType };
-    const items1 = [callback2(FamilyCenterActivitySectionHeader, obj1), substr.map((action) => outer1_9(loadMore(13910), { action }, action.event_id)), ];
+    obj[0] = Math.min(actionTotalsForDisplayType - substr.length, closure_7);
+    const formatToPlainStringResult = intl.formatToPlainString(loadMore(2223)["7dMmJY"], obj);
+    obj = { style: null, children: null };
+    obj[0] = loadMoreButton.container;
+    obj1 = { displayType: null };
+    obj1[0] = displayType;
+    const items1 = [callback2(FamilyCenterActivitySectionHeader, obj1), substr.map((action) => callback(loadMore(13931), { action }, action.event_id)), ];
     if (substr.length >= actionTotalsForDisplayType) {
       items1[2] = null;
-      obj.children = items1;
-      return tmp23(tmp24, obj);
+      obj[1] = items1;
+      return tmp15(tmp16, obj);
     } else {
-      obj2 = { style: loadMoreButton.loadMoreContainer };
+      obj2 = { style: null, children: null };
+      obj2[0] = loadMoreButton.loadMoreContainer;
       if (familyCenterActions.isMoreLoading) {
-        const obj3 = { style: loadMoreButton.loadMore };
+        const obj3 = { style: null, children: null };
+        obj3[0] = loadMoreButton.loadMore;
         const obj4 = { style: null, animating: true, color: "#fff", size: "small" };
         loadMoreButton = loadMoreButton.loadMoreButton;
-        obj4.style = loadMoreButton;
-        obj3.children = callback2(closure_5, obj4);
-        let tmp7Result = tmp7(closure_6, obj3);
+        obj4[0] = loadMoreButton;
+        obj3[1] = tmp17(closure_5, obj4);
+        let tmp17Result = tmp17(tmp16, obj3);
       } else {
-        const obj5 = { style: loadMoreButton.loadMore, accessibilityLabel: formatToPlainStringResult, accessibilityRole: "button", onPress: tmp4 };
-        const obj6 = { style: loadMoreButton.loadMoreButton, variant: "text-xs/semibold", color: "text-overlay-light", children: formatToPlainStringResult };
-        obj5.children = callback2(displayType(4161).Text, obj6);
-        tmp7Result = tmp7(displayType(4695).PressableOpacity, obj5);
+        const obj5 = { style: null, accessibilityLabel: null, accessibilityRole: "button", onPress: null, children: null };
+        obj5[0] = loadMoreButton.loadMore;
+        obj5[1] = formatToPlainStringResult;
+        obj5[3] = tmp7;
+        const obj6 = { style: null, variant: "text-xs/semibold", color: "text-overlay-light", children: null };
+        obj6[0] = loadMoreButton.loadMoreButton;
+        obj6[3] = formatToPlainStringResult;
+        obj5[4] = tmp17(tmp(4185).Text, obj6);
+        tmp17Result = tmp17(tmp(4717).PressableOpacity, obj5);
       }
-      obj2.children = tmp7Result;
-      callback2(closure_6, obj2);
-      const tmp5 = callback2;
-      const tmp6 = closure_6;
+      obj2[1] = tmp17Result;
+      tmp17Result = tmp17(tmp16, obj2);
     }
-    tmp23 = closure_10;
-    tmp24 = closure_6;
+    tmp15 = closure_10;
   }
 };

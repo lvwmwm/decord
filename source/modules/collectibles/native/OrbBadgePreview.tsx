@@ -1,30 +1,30 @@
-// Module ID: 8728
-// Function ID: 69057
+// Module ID: 8752
+// Function ID: 8753
 // Name: OrbBadgePreview
-// Dependencies: [31, 27, 33, 4165, 8640, 8052, 8692, 1212, 2]
+// Dependencies: [19, 17, 21, 4189, 8664, 8076, 8716, 1236, 2]
 // Exports: OrbBadgePreview
 
-// Module 8728 (OrbBadgePreview)
-import "result";
+// Module 8752 (OrbBadgePreview)
+import "noop";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
 const require = arg1;
-let closure_5 = _createForOfIteratorHelperLoose.createStyles({ container: { flex: 1, justifyContent: "center", alignItems: "center" } });
+let closure_5 = createCacheKey.createStyles({ container: { flex: 1, justifyContent: "center", alignItems: "center" } });
 const result = require("jsxProd").fileFinishedImporting("modules/collectibles/native/OrbBadgePreview.tsx");
 
 export const OrbBadgePreview = function OrbBadgePreview() {
-  let obj = require(8640) /* useCurrentUser */;
-  obj = { style: callback().container };
+  let obj = require(8664) /* useCurrentUser */;
+  obj = { style: callback().container, children: null };
   const currentUser = obj.useCurrentUser();
-  obj = { compact: true, user: currentUser };
+  obj = { compact: true, user: currentUser, additionalBadges: null, accessibilityLabel: null };
   const tmp = callback();
-  const tmp3 = importDefault(8052);
-  const items = [require(8692) /* _createForOfIteratorHelperLoose */.createOrbProfileBadge()];
-  obj.additionalBadges = items;
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj.accessibilityLabel = intl.string(require(1212) /* getSystemLocale */.t.bxcI6Y);
-  obj.children = <tmp3 compact user={currentUser} />;
-  return <View compact user={currentUser} />;
+  const tmp3 = importDefault(8076);
+  const items = [require(8716) /* hasAtLeastOneGPlaySynced */.createOrbProfileBadge()];
+  obj[2] = items;
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj[3] = intl.string(require(1236) /* getSystemLocale */.t.bxcI6Y);
+  obj[1] = <tmp3 compact user={currentUser} additionalBadges={null} accessibilityLabel={null} />;
+  return <View compact user={currentUser} additionalBadges={null} accessibilityLabel={null} />;
 };

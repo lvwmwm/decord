@@ -1,112 +1,21 @@
-// Module ID: 11543
-// Function ID: 89723
-// Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 1194, 1348, 1838, 11537, 21, 566, 686, 2]
+// Module ID: 11567
+// Function ID: 11568
+// Name: completeStep
+// Dependencies: [1218, 1372, 1862, 11561, 11, 589, 709, 2]
 
-// Module 11543 (_isNativeReflectConstruct)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
-import closure_7 from "_isNativeReflectConstruct";
-import closure_8 from "_isNativeReflectConstruct";
-import closure_9 from "_createForOfIteratorHelperLoose";
+// Module 11567 (completeStep)
+import fetchFingerprint from "fetchFingerprint";
+import ensureGuildLoaded from "ensureGuildLoaded";
+import createGuildRecordFromRust from "createGuildRecordFromRust";
 import { Steps } from "Steps";
+import { PersistedStore } from "initialize";
 
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
-  }
-  const result = _isNativeReflectConstruct();
-}
-function _createForOfIteratorHelperLoose(iterable) {
-  let closure_0 = iterable;
-  iterable = "undefined" !== typeof Symbol;
-  if (iterable) {
-    const _Symbol = Symbol;
-    iterable = iterable[Symbol.iterator];
-  }
-  if (!iterable) {
-    iterable = iterable[Symbol.iterator];
-  }
-  if (iterable) {
-    const iter = iterable.call(iterable);
-    const next = iter.next;
-    return next.bind(iter);
-  } else {
-    const _Array = Array;
-    let tmp = iterable;
-    if (!Array.isArray(iterable)) {
-      let tmp2;
-      if (iterable) {
-        if ("string" === typeof iterable) {
-          tmp2 = _arrayLikeToArray(iterable, undefined);
-        } else {
-          const toString = {}.toString;
-          const substr = toString.call(iterable).slice(8, -1);
-          let name = substr;
-          if (tmp3) {
-            name = iterable.constructor.name;
-          }
-          if ("Map" !== name) {
-            if ("Set" !== name) {
-              if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(iterable, undefined);
-              } else {
-                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
-              }
-            }
-            tmp2 = arr;
-          }
-          const _Array2 = Array;
-          arr = Array.from(iterable);
-          const callResult = toString.call(iterable);
-          tmp3 = "Object" === substr && iterable.constructor;
-        }
-      }
-      tmp = tmp2;
-      if (!tmp2) {
-        const _TypeError = TypeError;
-        const typeError = new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
-        throw typeError;
-      }
-    }
-    if (tmp) {
-      closure_0 = tmp;
-    }
-    let c1 = 0;
-    return () => {
-      if (closure_1 >= length.length) {
-        let obj = { done: true };
-      } else {
-        obj = { done: false };
-        closure_1 = tmp3 + 1;
-        obj.value = length[+closure_1];
-      }
-      return obj;
-    };
-  }
-}
-function _arrayLikeToArray(arg0, arg1) {
-  let length;
-  if (tmp) {
-    length = arg0.length;
-  }
-  const ArrayResult = Array(length);
-  for (let num = 0; num < length; num = num + 1) {
-    ArrayResult[num] = arg0[num];
-  }
-  return ArrayResult;
-}
 function completeStep(guild_id, CHANNEL) {
   let tmp = null != obj;
   if (tmp) {
-    let flag = !obj.has(CHANNEL);
-    if (flag) {
+    const hasItem = obj.has(CHANNEL);
+    let flag = !hasItem;
+    if (!hasItem) {
       const _Set = Set;
       const set = new Set(obj.add(CHANNEL));
       dependencyMap[guild_id] = set;
@@ -116,92 +25,71 @@ function completeStep(guild_id, CHANNEL) {
   }
   return tmp;
 }
-let closure_11 = {};
-let tmp2 = ((PersistedStore) => {
-  class GuildProgressStore {
-    constructor() {
-      self = this;
-      tmp = outer1_2(this, GuildProgressStore);
-      obj = outer1_5(GuildProgressStore);
-      tmp2 = outer1_4;
-      if (outer1_12()) {
-        tmp6 = globalThis;
-        _Reflect = Reflect;
-        tmp7 = outer1_5;
-        tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, outer1_5(self).constructor);
-      } else {
-        tmp3 = arguments;
-        tmp4 = arguments;
-        constructResult = obj(...arguments);
+let closure_6 = {};
+class GuildProgressStore extends PersistedStore {
+}
+const prototype = GuildProgressStore.prototype;
+prototype["initialize"] = function initialize(arg0) {
+  const importDefault = arg0;
+  this.waitFor(fetchFingerprint, ensureGuildLoaded, createGuildRecordFromRust);
+  let closure_6 = {};
+  if (null != arg0) {
+    const keys = importDefault(11).keys(arg0);
+    const item = keys.forEach((arg0) => {
+      let tmp2 = null != tmp;
+      if (tmp2) {
+        const _Symbol = Symbol;
+        tmp2 = typeof tmp[Symbol.iterator] === "find";
       }
-      return tmp2(self, constructResult);
-    }
+      if (tmp2) {
+        const _Set = Set;
+        const set = new Set(tmp);
+        closure_6[arg0] = set;
+      }
+    });
+    const obj = importDefault(11);
   }
-  callback2(GuildProgressStore, PersistedStore);
-  let obj = {
-    key: "initialize",
-    value(arg0) {
-      let closure_0 = arg0;
-      this.waitFor(outer1_7, outer1_8, outer1_9);
-      const outer1_11 = {};
-      if (null != arg0) {
-        const keys = GuildProgressStore(outer1_1[9]).keys(arg0);
-        const item = keys.forEach((arg0) => {
-          let tmp2 = null != tmp;
-          if (tmp2) {
-            const _Symbol = Symbol;
-            tmp2 = "function" === typeof tmp[Symbol.iterator];
-          }
-          if (tmp2) {
-            const _Set = Set;
-            const set = new Set(tmp);
-            outer2_11[arg0] = set;
-          }
-        });
-        const obj = GuildProgressStore(outer1_1[9]);
-      }
-    }
-  };
-  const items = [obj, , , ];
-  obj = {
-    key: "getProgress",
-    value(arg0) {
-      return outer1_11[arg0];
-    }
-  };
-  items[1] = obj;
-  obj = {
-    key: "hasProgress",
-    value(arg0) {
-      let tmp = null != obj;
-      if (tmp) {
-        tmp = !obj.has(outer1_10.DISMISSED);
-      }
-      return tmp;
-    }
-  };
-  items[2] = obj;
-  items[3] = {
-    key: "getState",
-    value() {
-      return outer1_11;
-    }
-  };
-  return callback(GuildProgressStore, items);
-})(require("initialize").PersistedStore);
-tmp2.displayName = "GuildProgressStore";
-tmp2.persistKey = "GuildProgressStore";
-tmp2 = new tmp2(require("dispatcher"), {
+};
+prototype["getProgress"] = function getProgress(arg0) {
+  return dependencyMap[arg0];
+};
+prototype["hasProgress"] = function hasProgress(hasAlreadyLinked) {
+  let tmp = null != obj;
+  if (tmp) {
+    tmp = !obj.has(Steps.DISMISSED);
+  }
+  return tmp;
+};
+prototype["getState"] = function getState() {
+  return closure_6;
+};
+GuildProgressStore.displayName = "GuildProgressStore";
+GuildProgressStore.persistKey = "GuildProgressStore";
+const guildProgressStore = new GuildProgressStore(require("dispatcher"), {
   CONNECTION_OPEN: function handleConnectionOpen() {
     const items = [];
-    const keys = items(21).keys(closure_11);
+    const keys = items(11).keys(closure_6);
     const item = keys.forEach((arg0) => {
-      if (obj.has(outer1_10.COMPLETED)) {
+      if (obj.has(outer1_5.COMPLETED)) {
         items.push(arg0);
       }
     });
-    const item1 = items.forEach((arg0) => outer1_15(arg0, outer1_10.DISMISSED));
+    const item1 = items.forEach((arg0) => {
+      const DISMISSED = constants.DISMISSED;
+      let tmp = null != obj;
+      if (tmp) {
+        const hasItem = obj.has(DISMISSED);
+        let flag = !hasItem;
+        if (!hasItem) {
+          const _Set = Set;
+          const set = new Set(obj.add(DISMISSED));
+          table[arg0] = set;
+          flag = true;
+        }
+        tmp = flag;
+      }
+      return tmp;
+    });
   },
   GUILD_PROGRESS_INITIALIZE: function handleInitialize(guildId) {
     guildId = guildId.guildId;
@@ -226,7 +114,21 @@ tmp2 = new tmp2(require("dispatcher"), {
     }
   },
   GUILD_PROGRESS_DISMISS: function handleGuildProgressDismiss(guildId) {
-    return completeStep(guildId.guildId, Steps.DISMISSED);
+    guildId = guildId.guildId;
+    const DISMISSED = Steps.DISMISSED;
+    let tmp = null != obj;
+    if (tmp) {
+      const hasItem = obj.has(DISMISSED);
+      let flag = !hasItem;
+      if (!hasItem) {
+        const _Set = Set;
+        const set = new Set(obj.add(DISMISSED));
+        dependencyMap[guildId] = set;
+        flag = true;
+      }
+      tmp = flag;
+    }
+    return tmp;
   },
   GUILD_CREATE: function handleGuildCreate(guild) {
     guild = guild.guild;
@@ -257,39 +159,52 @@ tmp2 = new tmp2(require("dispatcher"), {
       tmp = null != dependencyMap[channel.guild_id];
     }
     if (tmp) {
-      tmp = completeStep(channel.guild_id, Steps.CHANNEL);
+      const guild_id = channel.guild_id;
+      const CHANNEL = Steps.CHANNEL;
+      let tmp5 = null != obj;
+      if (tmp5) {
+        const hasItem = obj.has(CHANNEL);
+        let flag = !hasItem;
+        if (!hasItem) {
+          const _Set = Set;
+          const set = new Set(obj.add(CHANNEL));
+          dependencyMap[guild_id] = set;
+          flag = true;
+        }
+        tmp5 = flag;
+      }
+      tmp = tmp5;
     }
     return tmp;
   },
-  CHANNEL_UPDATES: function handleChannelUpdates(channels) {
-    let iter3;
-    const tmp = _createForOfIteratorHelperLoose(channels.channels);
-    const iter = tmp();
-    let iter2 = iter;
+  CHANNEL_UPDATES: function handleChannelUpdates(arg0) {
     let flag = false;
-    let flag2 = false;
-    if (!iter.done) {
-      do {
-        let value = iter2.value;
-        let tmp2 = null != value && null != value.guild_id;
-        if (tmp2) {
-          let tmp3 = dependencyMap;
-          tmp2 = null != dependencyMap[value.guild_id];
-        }
-        if (tmp2) {
-          let tmp4 = completeStep;
-          let tmp5 = Steps;
-          tmp2 = false !== completeStep(value.guild_id, Steps.CHANNEL);
-        }
-        if (tmp2) {
-          flag = true;
-        }
-        iter3 = tmp();
-        iter2 = iter3;
-        flag2 = flag;
-      } while (!iter3.done);
+    const iter = arg0.channels[Symbol.iterator]();
+    const nextResult = iter.next();
+    while (iter !== undefined) {
+      let tmp2 = nextResult;
+      let tmp3 = null != nextResult;
+      if (tmp3) {
+        let tmp4 = nextResult;
+        tmp3 = null != tmp2.guild_id;
+      }
+      if (tmp3) {
+        let tmp5 = dependencyMap;
+        let tmp6 = nextResult;
+        tmp3 = null != dependencyMap[tmp2.guild_id];
+      }
+      if (tmp3) {
+        let tmp7 = completeStep;
+        let tmp8 = nextResult;
+        let tmp9 = Steps;
+        tmp3 = false !== completeStep(tmp2.guild_id, Steps.CHANNEL);
+      }
+      if (tmp3) {
+        flag = true;
+      }
+      continue;
     }
-    return flag2;
+    return flag;
   },
   GUILD_SETTINGS_SUBMIT_SUCCESS: function handleGuildSettings(guild) {
     guild = guild.guild;
@@ -303,7 +218,21 @@ tmp2 = new tmp2(require("dispatcher"), {
         tmp2 = null != guild.icon;
       }
       if (tmp2) {
-        tmp2 = completeStep(guild.id, Steps.AVATAR);
+        const id = guild.id;
+        const AVATAR = Steps.AVATAR;
+        let tmp6 = null != obj;
+        if (tmp6) {
+          const hasItem = obj.has(AVATAR);
+          let flag = !hasItem;
+          if (!hasItem) {
+            const _Set = Set;
+            const set = new Set(obj.add(AVATAR));
+            dependencyMap[id] = set;
+            flag = true;
+          }
+          tmp6 = flag;
+        }
+        tmp2 = tmp6;
       }
       tmp = tmp2;
     }
@@ -313,7 +242,7 @@ tmp2 = new tmp2(require("dispatcher"), {
     channel = channel.getChannel(channelId.channelId);
     const author = channelId.message.author;
     let id;
-    if (null != author) {
+    if (author != null) {
       id = author.id;
     }
     let tmp3 = id === store.getId() && null != channel;
@@ -321,7 +250,21 @@ tmp2 = new tmp2(require("dispatcher"), {
       tmp3 = null != dependencyMap[channel.guild_id];
     }
     if (tmp3) {
-      tmp3 = completeStep(channel.guild_id, Steps.MESSAGE);
+      const guild_id = channel.guild_id;
+      const MESSAGE = Steps.MESSAGE;
+      let tmp7 = null != obj;
+      if (tmp7) {
+        const hasItem = obj.has(MESSAGE);
+        let flag = !hasItem;
+        if (!hasItem) {
+          const _Set = Set;
+          const set = new Set(obj.add(MESSAGE));
+          dependencyMap[guild_id] = set;
+          flag = true;
+        }
+        tmp7 = flag;
+      }
+      tmp3 = tmp7;
     }
     return tmp3;
   },
@@ -332,11 +275,24 @@ tmp2 = new tmp2(require("dispatcher"), {
       tmp2 = tmp > 1;
     }
     if (tmp2) {
-      tmp2 = completeStep(guildId, Steps.INVITE);
+      const INVITE = Steps.INVITE;
+      let tmp5 = null != obj;
+      if (tmp5) {
+        const hasItem = obj.has(INVITE);
+        let flag = !hasItem;
+        if (!hasItem) {
+          const _Set = Set;
+          const set = new Set(obj.add(INVITE));
+          dependencyMap[guildId] = set;
+          flag = true;
+        }
+        tmp5 = flag;
+      }
+      tmp2 = tmp5;
     }
     return tmp2;
   }
 });
-let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/guild_progress/GuildProgressStore.tsx");
+const result = require("createGuildRecordFromRust").fileFinishedImporting("modules/guild_progress/GuildProgressStore.tsx");
 
-export default tmp2;
+export default guildProgressStore;

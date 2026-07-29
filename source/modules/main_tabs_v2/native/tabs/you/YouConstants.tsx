@@ -1,9 +1,9 @@
-// Module ID: 15211
-// Function ID: 115623
+// Module ID: 15244
+// Function ID: 15245
 // Name: YOU_SCREEN_ID
-// Dependencies: [1273, 689, 2]
+// Dependencies: [1297, 712, 2]
 
-// Module 15211 (YOU_SCREEN_ID)
+// Module 15244 (YOU_SCREEN_ID)
 const result = require("set").fileFinishedImporting("modules/main_tabs_v2/native/tabs/you/YouConstants.tsx");
 
 export const YOU_SCREEN_ID = "you-screen-native-id";
@@ -12,7 +12,7 @@ export const YOU_AVATAR_PADDING = 6;
 export const YOU_AVATAR_SIZE = require("Button").AVATAR_SIZE_MAP[require("Button").AvatarSizes.XXLARGE];
 export const YOU_CUSTOM_STATUS_MODAL_KEY = "you-custom-status-modal-key";
 export const YOU_ACCOUNT_ACTION_SHEET_KEY = "you-account-action-sheet-key";
-export const YOU_CARD_BORDER_RADIUS = require("_createForOfIteratorHelperLoose").radii.lg;
+export const YOU_CARD_BORDER_RADIUS = require("Themes").radii.lg;
 export const YOU_CARD_BORDER_WIDTH = 1;
 export const YOU_SCROLL_EVENT_THROTTLE = 16;
 export const YOU_ACTION_SHEET_TOP_INSET = 12;

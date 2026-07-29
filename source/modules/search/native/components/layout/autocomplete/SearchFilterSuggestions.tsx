@@ -1,15 +1,15 @@
-// Module ID: 15433
-// Function ID: 117569
+// Module ID: 15466
+// Function ID: 15467
 // Name: SearchFilterPrefixRow
-// Dependencies: [57, 31, 27, 9105, 33, 4165, 689, 15434, 5198, 4161, 4026, 4577, 4581, 4511, 15439, 11428, 2]
+// Dependencies: [32, 19, 17, 9129, 21, 4189, 712, 15467, 5220, 4185, 4050, 4599, 4603, 4534, 15472, 11452, 2]
 
-// Module 15433 (SearchFilterPrefixRow)
+// Module 15466 (SearchFilterPrefixRow)
 import _slicedToArray from "_slicedToArray";
-import importAllResult from "result";
+import importAllResult from "noop";
 import { View } from "get ActivityIndicator";
 import { SearchFilterAddLocations } from "SearchEntrypointAnalyticsLocations";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
 let require = arg1;
 function SearchFilterPrefixRow(text) {
@@ -17,18 +17,14 @@ function SearchFilterPrefixRow(text) {
   const require = text;
   const searchTokenType = text.searchTokenType;
   const onPress = text.onPress;
-  let obj = { text: 0, searchTokenType: 0, onPress: 0 };
-  Object.setPrototypeOf(null);
-  const merged = Object.assign(text, obj);
+  const merged = Object.assign(text, Object.create(null));
   const items = [searchTokenType];
   const items1 = [searchTokenType];
   const memo = importAllResult.useMemo(() => {
-    let obj = text(onPress[7]);
-    const searchTokenIcon = obj.getSearchTokenIcon(searchTokenType);
+    const searchTokenIcon = text(onPress[7]).getSearchTokenIcon(searchTokenType);
     let tmp2 = null;
     if (null != searchTokenIcon) {
-      obj = { size: "sm" };
-      tmp2 = outer1_7(searchTokenIcon, obj);
+      tmp2 = outer1_7(searchTokenIcon, { size: "sm" });
     }
     return tmp2;
   }, items);
@@ -37,12 +33,11 @@ function SearchFilterPrefixRow(text) {
   const callback = importAllResult.useCallback(() => {
     onPress(closure_0);
   }, items2);
-  obj = { icon: memo, onPress: callback };
-  obj = { lineClamp: 1, variant: "text-md/semibold", color: "mobile-text-heading-primary", children: text };
-  obj.label = jsx(require(onPress[9]).Text, { lineClamp: 1, variant: "text-md/semibold", color: "mobile-text-heading-primary", children: text });
-  obj.subLabel = memo1;
+  const obj = { icon: memo, onPress: callback, label: null, subLabel: null };
+  obj[2] = jsx(require(onPress[9]).Text, { lineClamp: 1, variant: "text-md/semibold", color: "mobile-text-heading-primary", children: text });
+  obj[3] = memo1;
   const merged1 = Object.assign(merged);
-  return jsx(require(onPress[8]).TableRow, { lineClamp: 1, variant: "text-md/semibold", color: "mobile-text-heading-primary", children: text });
+  return jsx(require(onPress[8]).TableRow, { icon: memo, onPress: callback, label: null, subLabel: null });
 }
 function getSuggestionsKey(arr) {
   const mapped = arr.map((text) => text.text);
@@ -51,41 +46,46 @@ function getSuggestionsKey(arr) {
 function AnimatedEnterExitContainer(children) {
   const state = children.state;
   const cleanUp = children.cleanUp;
+  let sharedValue;
   let obj = state(sharedValue[10]);
   sharedValue = obj.useSharedValue(0);
   let fn = function l() {
-    let obj = {};
+    let obj = { opacity: null, transform: null };
     const value = sharedValue.get();
     const fn = function t(arg0) {
       let tmp = arg0;
       if (arg0) {
-        tmp = outer1_0 === state(sharedValue[13]).TransitionStates.YEETED;
+        tmp = closure_0 === outer1_0(outer1_2[13]).TransitionStates.YEETED;
       }
       if (tmp) {
-        state(sharedValue[10]).runOnJS(outer1_1)();
-        const obj = state(sharedValue[10]);
+        outer1_0(outer1_2[10]).runOnJS(closure_1)();
+        const obj = outer1_0(outer1_2[10]);
       }
     };
-    obj = { state, TransitionStates: state(sharedValue[13]).TransitionStates, runOnJS: state(sharedValue[10]).runOnJS, cleanUp };
+    obj = { state, TransitionStates: null, runOnJS: null, cleanUp: null };
+    obj[1] = state(sharedValue[13]).TransitionStates;
+    obj[2] = state(sharedValue[10]).runOnJS;
+    obj[3] = cleanUp;
     fn.__closure = obj;
     fn.__workletHash = 10696166249954;
-    fn.__initData = outer1_10;
-    obj.opacity = state(sharedValue[11]).withSpring(value, state(sharedValue[12]).springStandard, "respect-motion-settings", fn);
-    obj = {};
+    fn.__initData = outer1_12;
+    obj[0] = state(sharedValue[11]).withSpring(value, state(sharedValue[12]).springStandard, "respect-motion-settings", fn);
     const obj2 = state(sharedValue[11]);
+    let tmp = state;
+    const tmp2 = sharedValue;
     let num = -15;
     if (1 === sharedValue.get()) {
       num = 0;
     }
-    obj.translateY = state(sharedValue[11]).withSpring(num, state(sharedValue[12]).springStandard);
+    obj = { translateY: state(sharedValue[11]).withSpring(num, tmp(tmp2[12]).springStandard) };
     const items = [obj];
-    obj.transform = items;
+    obj[1] = items;
     return obj;
   };
   obj = { withSpring: state(sharedValue[11]).withSpring, opacity: sharedValue, springStandard: state(sharedValue[12]).springStandard, state, TransitionStates: state(sharedValue[13]).TransitionStates, runOnJS: state(sharedValue[10]).runOnJS, cleanUp };
   fn.__closure = obj;
   fn.__workletHash = 334512108462;
-  fn.__initData = closure_9;
+  fn.__initData = closure_11;
   let items = [sharedValue, state];
   const style = state(sharedValue[10]).useAnimatedStyle(fn);
   const effect = importAllResult.useEffect(() => {
@@ -97,27 +97,36 @@ function AnimatedEnterExitContainer(children) {
   }, items);
   return jsx(cleanUp(sharedValue[10]).View, { style, children: children.children });
 }
-let obj = {};
-obj = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SURFACE_HIGHEST, borderRadius: require("_createForOfIteratorHelperLoose").radii.lg, borderColor: require("_createForOfIteratorHelperLoose").colors.BORDER_SUBTLE, borderWidth: 1 };
-let merged = Object.assign(require("_createForOfIteratorHelperLoose").shadows.SHADOW_LOW);
-obj.card = obj;
-let closure_8 = _createForOfIteratorHelperLoose.createStyles(obj);
-let closure_9 = { code: "function SearchFilterSuggestionsTsx1(){const{withSpring,opacity,springStandard,state,TransitionStates,runOnJS,cleanUp}=this.__closure;return{opacity:withSpring(opacity.get(),springStandard,'respect-motion-settings',function(finished){if(finished&&state===TransitionStates.YEETED){runOnJS(cleanUp)();}}),transform:[{translateY:withSpring(opacity.get()===1?0:-15,springStandard)}]};}" };
-let closure_10 = { code: "function SearchFilterSuggestionsTsx2(finished){const{state,TransitionStates,runOnJS,cleanUp}=this.__closure;if(finished&&state===TransitionStates.YEETED){runOnJS(cleanUp)();}}" };
-let closure_11 = [];
-let closure_12 = { code: "function SearchFilterSuggestionsTsx3(){const{dismissed}=this.__closure;return dismissed.get();}" };
-let closure_13 = { code: "function SearchFilterSuggestionsTsx4(isDismissed){const{runOnJS,setSuggestions,EMPTY_SEARCH_FILTER_ROWS}=this.__closure;if(isDismissed){runOnJS(setSuggestions)(EMPTY_SEARCH_FILTER_ROWS);}}" };
+let c4 = importAllResult;
+let obj = { card: null };
+obj = { backgroundColor: require("Themes").colors.BACKGROUND_SURFACE_HIGHEST, borderRadius: require("Themes").radii.lg, borderColor: require("Themes").colors.BORDER_SUBTLE, borderWidth: 1 };
+let merged = Object.assign(require("Themes").shadows.SHADOW_LOW);
+obj[0] = obj;
+let closure_8 = createCacheKey.createStyles(obj);
+let closure_11 = { code: "function SearchFilterSuggestionsTsx1(){const{withSpring,opacity,springStandard,state,TransitionStates,runOnJS,cleanUp}=this.__closure;return{opacity:withSpring(opacity.get(),springStandard,'respect-motion-settings',function(finished){if(finished&&state===TransitionStates.YEETED){runOnJS(cleanUp)();}}),transform:[{translateY:withSpring(opacity.get()===1?0:-15,springStandard)}]};}" };
+let closure_12 = { code: "function SearchFilterSuggestionsTsx2(finished){const{state,TransitionStates,runOnJS,cleanUp}=this.__closure;if(finished&&state===TransitionStates.YEETED){runOnJS(cleanUp)();}}" };
+let closure_14 = [];
+let closure_15 = { code: "function SearchFilterSuggestionsTsx3(){const{dismissed}=this.__closure;return dismissed.get();}" };
+let closure_16 = { code: "function SearchFilterSuggestionsTsx4(isDismissed){const{runOnJS,setSuggestions,EMPTY_SEARCH_FILTER_ROWS}=this.__closure;if(isDismissed){runOnJS(setSuggestions)(EMPTY_SEARCH_FILTER_ROWS);}}" };
 const memoResult = importAllResult.memo(function SearchFilterSuggestions(searchContext) {
   searchContext = searchContext.searchContext;
   const onLayoutMeasure = searchContext.onLayoutMeasure;
   const containerStyle = searchContext.containerStyle;
   const dismissed = searchContext.dismissed;
-  let tmp = memo();
+  let importAllResult;
+  let validFilterTokens;
+  let first;
+  let jsx;
+  let memo;
+  let closure_9;
+  let callback;
+  const tmp = memo();
+  importAllResult = tmp;
   let obj = searchContext(containerStyle[14]);
-  const validFilterTokens = obj.useValidFilterTokens(searchContext);
-  const tmp3 = dismissed(tmp.useState([]), 2);
-  const first = tmp3[0];
-  const jsx = tmp5;
+  validFilterTokens = obj.useValidFilterTokens(searchContext);
+  const tmp3 = dismissed(importAllResult.useState([]), 2);
+  first = tmp3[0];
+  jsx = tmp5;
   let items = [validFilterTokens, searchContext, tmp3[1]];
   const effect = importAllResult.useEffect(() => onLayoutMeasure(containerStyle[15]).subscribeSearchQueryState(searchContext, (getTextInputValue) => ({ textInputValue: getTextInputValue.getTextInputValue(), isAutocompleteVisible: getTextInputValue.isAutocompleteVisible() }), (arg0) => {
     let isAutocompleteVisible;
@@ -125,70 +134,77 @@ const memoResult = importAllResult.memo(function SearchFilterSuggestions(searchC
     ({ textInputValue, isAutocompleteVisible } = arg0);
     if ("" !== textInputValue.trim()) {
       if (!isAutocompleteVisible) {
-        const searchFilterSuggestions = searchContext(containerStyle[7]).getSearchFilterSuggestions(textInputValue);
+        const searchFilterSuggestions = outer1_0(outer1_2[7]).getSearchFilterSuggestions(textInputValue);
         if (0 !== searchFilterSuggestions.length) {
           let closure_1 = [];
           const item = searchFilterSuggestions.forEach((token) => {
             token = token.token;
-            if (outer2_5.has(token)) {
-              const obj = { text: token.text, searchTokenType: token, start: 0 === arg1, end: arg1 === searchFilterSuggestions.length - 1, onPress: searchContext(containerStyle[7]).getSearchTokenPressHandler(outer2_0, token, first.SEARCH_INPUT_DROPDOWN) };
+            if (outer1_5.has(token)) {
+              const obj = { text: null, searchTokenType: null, start: null, end: null, onPress: null };
+              obj[0] = token.text;
+              obj[1] = token;
+              obj[2] = 0 === arg1;
+              obj[3] = arg1 === searchFilterSuggestions.length - 1;
+              obj[4] = outer2_0(outer2_2[7]).getSearchTokenPressHandler(searchFilterSuggestions, token, outer2_6.SEARCH_INPUT_DROPDOWN);
               arr = arr.push(obj);
-              const obj2 = searchContext(containerStyle[7]);
+              const obj2 = outer2_0(outer2_2[7]);
             }
           });
-          outer1_7((arg0) => {
-            let tmp = arg0;
-            if (tmp2 !== outer3_15(closure_1)) {
-              tmp = closure_1;
+          callback((arr) => {
+            const mapped = arr.map((text) => text.text);
+            let tmp2 = arr;
+            const joined = mapped.join(" ");
+            const mapped1 = arr.map((text) => text.text);
+            if (joined === mapped1.join(" ")) {
+              tmp2 = arr;
             }
-            return tmp;
+            return tmp2;
           });
         } else {
-          outer1_7(outer2_11);
+          callback(outer1_14);
         }
-        let obj = searchContext(containerStyle[7]);
+        let obj = outer1_0(outer1_2[7]);
       }
     }
-    outer1_7(outer2_11);
+    callback(outer1_14);
   }), items);
   const fn = function b() {
     return dismissed.get();
   };
   fn.__closure = { dismissed };
   fn.__workletHash = 17191989548971;
-  fn.__initData = closure_12;
+  fn.__initData = closure_15;
   class E {
     constructor(arg0) {
       if (searchContext) {
         tmp = searchContext;
         tmp2 = containerStyle;
-        num = 10;
         obj = searchContext(containerStyle[10]);
-        tmp3 = closure_7;
-        tmp4 = outer1_11;
-        tmp5 = obj.runOnJS(closure_7)(outer1_11);
+        tmp3 = c7;
+        tmp4 = outer1_14;
+        tmp5 = obj.runOnJS(c7)(outer1_14);
       }
       return;
     }
   }
-  obj = { runOnJS: searchContext(containerStyle[10]).runOnJS, setSuggestions: tmp5, EMPTY_SEARCH_FILTER_ROWS: closure_11 };
+  obj = { runOnJS: searchContext(containerStyle[10]).runOnJS, setSuggestions: tmp5, EMPTY_SEARCH_FILTER_ROWS: closure_14 };
   E.__closure = obj;
   E.__workletHash = 8991360021943;
-  E.__initData = closure_13;
+  E.__initData = closure_16;
   const animatedReaction = searchContext(containerStyle[10]).useAnimatedReaction(fn, E);
   let items1 = [containerStyle, tmp.card];
   memo = importAllResult.useMemo(() => {
-    const items = [tmp.card, containerStyle];
+    const items = [_undefined.card, containerStyle];
     return items;
   }, items1);
-  let closure_9 = importAllResult.useRef(null);
+  closure_9 = importAllResult.useRef(null);
   const items2 = [onLayoutMeasure];
-  const callback = importAllResult.useCallback(() => {
+  callback = importAllResult.useCallback(() => {
     const timerId = setTimeout(() => {
-      const current = outer1_9.current;
-      if (null != current) {
+      const current = ref.current;
+      if (current != null) {
         current.measure((arg0, arg1, arg2, arg3, left, top) => {
-          outer2_1({ top, bottom: top + arg3, left, right: left + arg2 });
+          callback({ top, bottom: top + arg3, left, right: left + arg2 });
         });
       }
     });
@@ -197,7 +213,7 @@ const memoResult = importAllResult.memo(function SearchFilterSuggestions(searchC
   const items4 = [memo, callback];
   const memo1 = importAllResult.useMemo(() => {
     if (first.length > 0) {
-      const items = [first];
+      const items = [tmp];
       let items1 = items;
     } else {
       items1 = [];
@@ -205,7 +221,7 @@ const memoResult = importAllResult.memo(function SearchFilterSuggestions(searchC
     return items1;
   }, items3);
   const callback1 = importAllResult.useCallback((arg0, arr, state, cleanUp) => {
-    let obj = { state, cleanUp };
+    let obj = { state, cleanUp, children: null };
     obj = {
       ref: closure_9,
       style: memo,
@@ -213,14 +229,14 @@ const memoResult = importAllResult.memo(function SearchFilterSuggestions(searchC
       onLayout: callback,
       children: arr.map((text) => {
         const merged = Object.assign(text);
-        return callback(outer2_14, {}, text.text);
+        return callback(closure_9, {}, text.text);
       })
     };
-    obj.children = tmp5(validFilterTokens, obj);
-    return tmp5(outer1_16, obj, arg0);
+    obj[2] = _undefined2(validFilterTokens, obj);
+    return _undefined2(outer1_13, obj, arg0);
   }, items4);
-  obj = { items: memo1, renderItem: callback1, getItemKey: getSuggestionsKey };
-  return jsx(searchContext(containerStyle[13]).TransitionGroup, { items: memo1, renderItem: callback1, getItemKey: getSuggestionsKey });
+  obj = { items: memo1, renderItem: callback1, getItemKey: callback };
+  return jsx(searchContext(containerStyle[13]).TransitionGroup, { items: memo1, renderItem: callback1, getItemKey: callback });
 });
 let result = require("get ActivityIndicator").fileFinishedImporting("modules/search/native/components/layout/autocomplete/SearchFilterSuggestions.tsx");
 

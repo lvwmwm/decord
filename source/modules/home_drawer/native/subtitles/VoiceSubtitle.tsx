@@ -1,11 +1,11 @@
-// Module ID: 14956
-// Function ID: 113946
+// Module ID: 14982
+// Function ID: 14983
 // Name: VoiceSubtitle
-// Dependencies: [31, 33, 4161, 1212, 4354, 2]
+// Dependencies: [19, 21, 4185, 1236, 4379, 2]
 // Exports: default
 
-// Module 14956 (VoiceSubtitle)
-import "result";
+// Module 14982 (VoiceSubtitle)
+import "noop";
 import { jsx } from "jsxProd";
 
 const require = arg1;
@@ -15,13 +15,13 @@ export default function VoiceSubtitle(arg0) {
   let require;
   let voiceUsers;
   ({ guildId: require, voiceUsers } = arg0);
-  let obj = { variant: "text-xs/medium", color: "text-voice-connected", lineClamp: 1 };
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj = {};
+  let obj = { variant: "text-xs/medium", color: "text-voice-connected", lineClamp: 1, children: null };
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj = { users: null, overflowCount: null };
   const substr = voiceUsers.slice(0, 2);
   const mapped = substr.map((arg0) => outer1_1(outer1_2[4]).getName(closure_0, null, arg0));
-  obj.users = mapped.join(", ");
-  obj.overflowCount = Math.max(voiceUsers.length - 2, 0);
-  obj.children = intl.format(require(1212) /* getSystemLocale */.t.r1Vkoc, obj);
-  return jsx(require(4161) /* Text */.Text, {});
+  obj[0] = mapped.join(", ");
+  obj[1] = Math.max(voiceUsers.length - 2, 0);
+  obj[3] = intl.format(require(1236) /* getSystemLocale */.t.r1Vkoc, obj);
+  return jsx(require(4185) /* Text */.Text, { users: null, overflowCount: null });
 };

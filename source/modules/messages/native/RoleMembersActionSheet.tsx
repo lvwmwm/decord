@@ -1,90 +1,95 @@
-// Module ID: 10882
-// Function ID: 84431
+// Module ID: 10906
+// Function ID: 10907
 // Name: RoleMembersActionSheet
-// Dependencies: [31, 27, 4157, 6037, 1911, 33, 4165, 689, 21, 5183, 566, 5181, 1273, 4161, 5221, 10883, 2]
+// Dependencies: [19, 17, 4181, 6055, 1935, 21, 4189, 712, 11, 5205, 589, 5203, 1297, 4185, 5243, 10907, 2]
 // Exports: default
 
-// Module 10882 (RoleMembersActionSheet)
-import result from "result";
+// Module 10906 (RoleMembersActionSheet)
+import noop from "noop";
 import { View } from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import { EVERYONE_CHANNEL_ID } from "_isNativeReflectConstruct";
-import closure_7 from "_createForOfIteratorHelperLoose";
+import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
+import { EVERYONE_CHANNEL_ID } from "getMemberListId";
+import createGuildRoleRecordFromRust from "createGuildRoleRecordFromRust";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_8;
-let closure_9;
+let c9;
+let metroImportAll;
 const require = arg1;
-({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { flexDirection: "row", alignItems: "center", gap: require("_createForOfIteratorHelperLoose").space.PX_4, paddingTop: require("_createForOfIteratorHelperLoose").space.PX_12, paddingBottom: require("_createForOfIteratorHelperLoose").space.PX_4, paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16 };
-_createForOfIteratorHelperLoose.header = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.headerText = { flex: 1 };
-_createForOfIteratorHelperLoose.roleDot = { paddingTop: 0 };
-_createForOfIteratorHelperLoose.memberCount = { color: require("_createForOfIteratorHelperLoose").colors.TEXT_MUTED };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-let obj1 = { color: require("_createForOfIteratorHelperLoose").colors.TEXT_MUTED };
-let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/messages/native/RoleMembersActionSheet.tsx");
+({ jsx: metroImportAll, jsxs: c9 } = jsxProd);
+createCacheKey = { header: null, headerText: null, roleDot: null, memberCount: null };
+createCacheKey = { flexDirection: "row", alignItems: "center", gap: require("Themes").space.PX_4, paddingTop: require("Themes").space.PX_12, paddingBottom: require("Themes").space.PX_4, paddingHorizontal: require("Themes").space.PX_16 };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { flex: 1 };
+createCacheKey[2] = { paddingTop: 0 };
+createCacheKey[3] = { color: require("Themes").colors.TEXT_MUTED };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let obj1 = { color: require("Themes").colors.TEXT_MUTED };
+let result = require("maybeApplyNoTextColorForLightCustomTheme").fileFinishedImporting("modules/messages/native/RoleMembersActionSheet.tsx");
 
 export default function RoleMembersActionSheet(guildId) {
   guildId = guildId.guildId;
   const roleId = guildId.roleId;
   let channelId = guildId.channelId;
+  let dependencyMap;
+  let stateFromStores;
   let c4;
   let c5;
-  const tmp = _createForOfIteratorHelperLoose();
-  const dependencyMap = tmp;
+  const tmp = createCacheKey();
+  dependencyMap = tmp;
   let items = [guildId, roleId];
   const effect = stateFromStores.useEffect(() => {
     if (roleId !== obj.castGuildIdAsEveryoneGuildRoleId(guildId)) {
-      const membersForRole = guildId(guildId[9]).requestMembersForRole(guildId, roleId);
-      const obj2 = guildId(guildId[9]);
+      const membersForRole = guildId(_undefined[9]).requestMembersForRole(guildId, roleId);
+      const obj2 = guildId(_undefined[9]);
     }
   }, items);
-  let obj = guildId(566);
-  const items1 = [closure_7];
+  let obj = guildId(589);
+  const items1 = [createGuildRoleRecordFromRust];
   const items2 = [guildId, roleId];
   stateFromStores = obj.useStateFromStores(items1, () => outer1_7.getRole(guildId, roleId), items2);
   const items3 = [c5];
-  let tmp4 = "dot" === guildId(566).useStateFromStores(items3, () => _undefined.roleStyle);
-  if (tmp4) {
+  let tmp6 = "dot" === guildId(589).useStateFromStores(items3, () => _undefined2.roleStyle);
+  if (tmp6) {
     let colorString;
-    if (null != stateFromStores) {
+    if (stateFromStores != null) {
       colorString = stateFromStores.colorString;
     }
-    tmp4 = null != colorString;
+    tmp6 = null != colorString;
   }
-  c4 = tmp4;
-  let obj2 = guildId(566);
-  const result = roleId(21).castGuildIdAsEveryoneGuildRoleId(guildId);
-  const tmp8 = roleId(5181)(guildId);
-  let tmp9 = null;
+  c4 = tmp6;
+  let obj2 = guildId(589);
+  const tmp3 = guildId;
+  const tmp9 = roleId;
+  const result = roleId(11).castGuildIdAsEveryoneGuildRoleId(guildId);
+  const tmp11 = roleId(5203)(guildId);
+  let tmp12 = null;
   if (roleId !== result) {
-    let tmp10;
-    if (null != tmp8) {
-      tmp10 = tmp8[roleId];
+    let tmp13;
+    if (tmp11 != null) {
+      tmp13 = tmp11[roleId];
     }
-    let tmp11 = null;
-    if (null != tmp10) {
-      tmp11 = tmp10;
+    if (tmp13 == null) {
+      tmp13 = null;
     }
-    tmp9 = tmp11;
+    tmp12 = tmp13;
   }
-  c5 = tmp9;
-  const items4 = [tmp4, stateFromStores, tmp9, tmp];
-  let tmp14Result = null;
+  c5 = tmp12;
+  const items4 = [tmp6, stateFromStores, tmp12, tmp];
+  let tmp16Result = null;
   if (null != stateFromStores) {
-    obj = { scrollable: true, header: tmp12 };
-    obj = { guildId, channelId: null, roleId: null, headerShown: false, inActionSheet: true, disableStickySections: true, disableThemedGradient: true };
-    if (null == channelId) {
+    obj = { scrollable: true, header: null, children: null };
+    obj[1] = tmp14;
+    obj = { guildId: null, channelId: null, roleId: null, headerShown: false, inActionSheet: true, disableStickySections: true, disableThemedGradient: true };
+    obj[0] = guildId;
+    if (channelId == null) {
       channelId = EVERYONE_CHANNEL_ID;
     }
-    obj.channelId = channelId;
-    obj.roleId = roleId;
-    obj.children = closure_8(roleId(10883), obj);
-    tmp14Result = tmp14(guildId(5221).BottomSheet, obj);
-    const tmp18 = roleId(10883);
+    obj[1] = channelId;
+    obj[2] = roleId;
+    obj[2] = closure_8(tmp9(10907), obj);
+    tmp16Result = tmp16(tmp3(5243).BottomSheet, obj);
+    let tmp9Result = tmp9(10907);
   }
-  return tmp14Result;
+  return tmp16Result;
 };

@@ -1,25 +1,21 @@
-// Module ID: 12724
-// Function ID: 98600
+// Module ID: 12746
+// Function ID: 12747
 // Name: apexExperiment
-// Dependencies: [4080, 1428, 4077, 8162, 2]
+// Dependencies: [4104, 1452, 4101, 8186, 2]
 // Exports: isEligibleForContentInventoryV1, isEligibleForImpressionCapping, useIsHotwheelsClickableGameIconEnabled
 
-// Module 12724 (apexExperiment)
+// Module 12746 (apexExperiment)
 import ApexExperiment from "ApexExperiment";
 import createExperiment from "createExperiment";
 import ApexExperiment from "ApexExperiment";
 
-let obj = { kind: "user", name: "2026-03-content-inventory-memberlist-and-ranker", defaultConfig: { enabled: true, impressionCappingEnabled: true }, variations: { [0]: { enabled: false, impressionCappingEnabled: false } } };
-const apexExperiment = ApexExperiment.createApexExperiment(obj);
-obj = { kind: "user", id: "2025-09_hotwheels_nvidia_boost", label: "Next iteration of the activity feed ranking model.", commonTriggerPoint: require("ExperimentBuckets").CommonTriggerPoints.CONNECTION_OPEN, defaultConfig: {} };
-const obj1 = { id: 16, label: "ML model V3 - Nvidia small boost", config: {} };
-const items = [obj1, ];
-const obj2 = { id: 17, label: "ML model V3 - Nvidia big boost", config: {} };
-items[1] = obj2;
-obj.treatments = items;
+const apexExperiment = ApexExperiment.createApexExperiment({ kind: "user", name: "2026-03-content-inventory-memberlist-and-ranker", defaultConfig: { enabled: true, impressionCappingEnabled: true }, variations: { 0: { enabled: false, impressionCappingEnabled: false } } });
+let obj = { kind: "user", id: "2025-09_hotwheels_nvidia_boost", label: "Next iteration of the activity feed ranking model.", commonTriggerPoint: require("ExperimentBuckets").CommonTriggerPoints.CONNECTION_OPEN, defaultConfig: {}, treatments: items };
+items = [{ id: 16, label: "ML model V3 - Nvidia small boost", config: {} }, { id: 17, label: "ML model V3 - Nvidia big boost", config: {} }];
 const experiment = createExperiment.createExperiment(obj);
-const obj3 = { name: "2026-07-hotwheels-clickable-game-icon", kind: "user", defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } };
-const apexExperiment1 = ApexExperiment.createApexExperiment(obj3);
+obj = { 1: null };
+obj[1] = { enabled: true };
+const apexExperiment1 = ApexExperiment.createApexExperiment({ name: "2026-07-hotwheels-clickable-game-icon", kind: "user", defaultConfig: { enabled: false }, variations: obj });
 const result = require("createExperiment").fileFinishedImporting("modules/content_inventory/ContentInventoryExperiments.tsx");
 
 export const MemberlistRankerExperiment = apexExperiment;

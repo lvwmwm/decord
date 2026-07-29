@@ -1,87 +1,45 @@
-// Module ID: 10229
-// Function ID: 78965
-// Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 1194, 566, 686, 2]
+// Module ID: 10250
+// Function ID: 10251
+// Name: initialize
+// Dependencies: [1218, 589, 709, 2]
 
-// Module 10229 (_isNativeReflectConstruct)
-import initialize from "initialize";
-import dispatcher from "dispatcher";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 10250 (initialize)
+import fetchFingerprint from "fetchFingerprint";
+import { Store } from "initialize";
 
-function _isNativeReflectConstruct() {
-  let initialize = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return initialize;
-  }
-  const result = _isNativeReflectConstruct();
+let closure_1 = {};
+class RpcNotificationSettingsStore extends Store {
 }
-let closure_6 = {};
-let tmp2 = ((Store) => {
-  class RpcNotificationSettingsStore {
-    constructor() {
-      self = this;
-      tmp = RpcNotificationSettingsStore(this, RpcNotificationSettingsStore);
-      obj = outer1_3(RpcNotificationSettingsStore);
-      tmp2 = outer1_2;
-      if (outer1_7()) {
-        tmp6 = globalThis;
-        _Reflect = Reflect;
-        tmp7 = outer1_3;
-        tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, outer1_3(self).constructor);
-      } else {
-        tmp3 = arguments;
-        tmp4 = arguments;
-        constructResult = obj(...arguments);
-      }
-      return tmp2(self, constructResult);
+const prototype = RpcNotificationSettingsStore.prototype;
+prototype["initialize"] = function initialize() {
+  this.waitFor(fetchFingerprint);
+};
+prototype["areSlayerNotificationsSuppressed"] = function areSlayerNotificationsSuppressed() {
+  for (const key10002 in closure_1) {
+    let tmp = key10002;
+    let tmp2 = table;
+    let tmp3 = id;
+    if (table[key10002] !== id.getId()) {
+      continue;
+    } else {
+      let flag = true;
+      return true;
     }
   }
-  callback2(RpcNotificationSettingsStore, Store);
-  let obj = {
-    key: "initialize",
-    value() {
-      this.waitFor(outer1_5);
-    }
-  };
-  const items = [obj, ];
-  obj = {
-    key: "areSlayerNotificationsSuppressed",
-    value() {
-      for (const key10002 in outer1_6) {
-        let tmp = key10002;
-        let tmp2 = outer1_6;
-        let tmp3 = outer1_5;
-        if (outer1_6[key10002] !== outer1_5.getId()) {
-          continue;
-        } else {
-          let flag = true;
-          return true;
-        }
-      }
-      return false;
-    }
-  };
-  items[1] = obj;
-  return callback(RpcNotificationSettingsStore, items);
-})(require("initialize").Store);
-tmp2.displayName = "RpcNotificationSettingsStore";
-tmp2 = new tmp2(require("dispatcher"), {
+  return false;
+};
+RpcNotificationSettingsStore.displayName = "RpcNotificationSettingsStore";
+const rpcNotificationSettingsStore = new RpcNotificationSettingsStore(require("dispatcher"), {
   RPC_APP_DISCONNECTED: function handleRpcAppDisconnected(arg0) {
     delete tmp2[tmp];
   },
   SET_RPC_NOTIFICATION_SETTINGS: function handleSetRpcNotificationSettings(suppressNotifications) {
     delete tmp2[tmp];
     if (suppressNotifications.suppressNotifications) {
-      closure_6[suppressNotifications.socketId] = suppressNotifications.targetUserId;
+      closure_1[suppressNotifications.socketId] = suppressNotifications.targetUserId;
     }
   }
 });
-let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/notifications/RpcNotificationSettingsStore.tsx");
+const result = require("dispatcher").fileFinishedImporting("modules/notifications/RpcNotificationSettingsStore.tsx");
 
-export default tmp2;
+export default rpcNotificationSettingsStore;

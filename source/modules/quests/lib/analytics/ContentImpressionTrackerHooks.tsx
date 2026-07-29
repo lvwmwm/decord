@@ -1,29 +1,17 @@
-// Module ID: 10472
-// Function ID: 80995
-// Name: useQuestImpressionRef
-// Dependencies: [31, 5966, 5994, 566, 5993, 8101, 10473, 2]
-// Exports: useAdContentImpressionTrackerProps, useGetQuestImpressionId, useQuestImpressionId, useQuestStatusChanged
+// Module ID: 10496
+// Function ID: 10497
+// Name: useAdContentImpressionTrackerProps
+// Dependencies: [19, 5985, 6013, 589, 6012, 8125, 10497, 2]
+// Exports: useAdContentImpressionTrackerProps, useGetQuestImpressionId, useQuestImpression, useQuestImpressionId, useQuestImpressionRef, useQuestStatusChanged
 
-// Module 10472 (useQuestImpressionRef)
-import result from "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 10496 (useAdContentImpressionTrackerProps)
+import noop from "noop";
+import initializeState from "initializeState";
 
-let require = arg1;
-function useQuestImpressionRef() {
-  return React.useContext(require(10473) /* getQuestPlacementCombinationKey */.QuestImpressionContext);
-}
-function useQuestImpression() {
-  let current;
-  const tmp2 = useQuestImpressionRef();
-  if (null != tmp2) {
-    current = tmp2.current;
-  }
-  return current;
-}
+const require = arg1;
 const result = require("AdCreativeType").fileFinishedImporting("modules/quests/lib/analytics/ContentImpressionTrackerHooks.tsx");
 
 export const useAdContentImpressionTrackerProps = function useAdContentImpressionTrackerProps(questOrQuests) {
-  const _require = questOrQuests;
   questOrQuests = undefined;
   if ("questOrQuests" in questOrQuests) {
     questOrQuests = questOrQuests.questOrQuests;
@@ -32,55 +20,49 @@ export const useAdContentImpressionTrackerProps = function useAdContentImpressio
   if ("adContentId" in questOrQuests) {
     adContentId = questOrQuests.adContentId;
   }
-  const tmp3 = (function useAdContentIds(questOrQuests, adContentId) {
-    let closure_0 = questOrQuests;
-    let closure_1 = adContentId;
-    let items = [questOrQuests, adContentId];
-    return outer1_3.useMemo(() => {
-      if (null != closure_1) {
-        const items = [closure_1];
-        let items1 = items;
-      } else if (null != closure_0) {
-        const _Array = Array;
-        if (Array.isArray(closure_0)) {
-          let mapped = arr2.map((id) => id.id);
-        } else {
-          mapped = [arr2.id];
-        }
+  let memo = adContentId;
+  let items = [questOrQuests, adContentId];
+  memo = React.useMemo(() => {
+    if (null != memo) {
+      const items = [tmp];
+      let items1 = items;
+    } else if (null != questOrQuests) {
+      const _Array = Array;
+      if (Array.isArray(arr)) {
+        let mapped = arr.map((id) => id.id);
       } else {
-        items1 = [];
+        mapped = [arr.id];
       }
-      return items1;
-    }, items);
-  })(questOrQuests, adContentId);
-  const importDefault = tmp3;
+    } else {
+      items1 = [];
+    }
+    return items1;
+  }, items);
   if ("questOrQuests" in questOrQuests) {
-    adCreativeType = _require(adCreativeType[2]).AdCreativeType.QUEST;
+    adCreativeType = questOrQuests(adCreativeType[2]).AdCreativeType.QUEST;
   } else {
     adCreativeType = questOrQuests.adCreativeType;
   }
-  let items = [tmp3, questOrQuests.questContent, adCreativeType];
+  let items1 = [memo, questOrQuests.questContent, adCreativeType];
   return React.useMemo(() => {
-    let obj = { adContentIds: closure_1, questContent: questOrQuests.questContent };
-    const items = [...obj.adContentIds];
+    const items = [...memo];
     const sorted = items.sort();
-    const combined = "" + sorted.join("_") + "_" + obj.questContent;
+    const combined = "" + sorted.join("_") + "_" + questOrQuests.questContent;
     const QUEST = questOrQuests(adCreativeType[2]).AdCreativeType.QUEST;
-    obj = { adContentIds: closure_1, adCreativeType, key: combined };
-    return obj;
-  }, items);
+    return { adContentIds: memo, adCreativeType, key: combined };
+  }, items1);
 };
 export const useQuestStatusChanged = function useQuestStatusChanged(adContentIds) {
   adContentIds = adContentIds.adContentIds;
   const adCreativeType = adContentIds.adCreativeType;
-  const items = [_isNativeReflectConstruct];
+  const items = [initializeState];
   const items1 = [adContentIds, adCreativeType];
   stateFromStores = adContentIds(stateFromStores[3]).useStateFromStores(items, () => {
     let quest = null;
     if (adCreativeType === adContentIds(stateFromStores[2]).AdCreativeType.QUEST) {
       quest = null;
       if (1 === adContentIds.length) {
-        quest = outer1_4.getQuest(adContentIds[0]);
+        quest = outer1_4.getQuest(tmp2[0]);
       }
     }
     return quest;
@@ -89,32 +71,44 @@ export const useQuestStatusChanged = function useQuestStatusChanged(adContentIds
   const memo = React.useMemo(() => {
     let questStatus = null;
     if (null != stateFromStores) {
-      questStatus = adContentIds(stateFromStores[4]).getQuestStatus(stateFromStores);
+      questStatus = adContentIds(stateFromStores[4]).getQuestStatus(tmp);
       const obj = adContentIds(stateFromStores[4]);
     }
     return questStatus;
   }, items2);
   return memo !== adCreativeType(stateFromStores[5])(memo);
 };
-export { useQuestImpressionRef };
-export { useQuestImpression };
+export const useQuestImpressionRef = function useQuestImpressionRef() {
+  return React.useContext(require(10497) /* set */.QuestImpressionContext);
+};
+export const useQuestImpression = function useQuestImpression() {
+  const context = React.useContext(require(10497) /* set */.QuestImpressionContext);
+  let current;
+  if (context != null) {
+    current = context.current;
+  }
+  return current;
+};
 export const useQuestImpressionId = function useQuestImpressionId() {
+  const context = React.useContext(require(10497) /* set */.QuestImpressionContext);
+  let current;
+  if (context != null) {
+    current = context.current;
+  }
   let id;
-  const obj = useQuestImpression();
-  if (null != obj) {
-    id = obj.getId();
+  if (current != null) {
+    id = current.getId();
   }
   return id;
 };
 export const useGetQuestImpressionId = function useGetQuestImpressionId() {
-  const tmp = useQuestImpressionRef();
-  const require = tmp;
-  const items = [tmp];
+  context = React.useContext(context(10497).QuestImpressionContext);
+  const items = [context];
   return React.useCallback(() => {
     let id;
-    if (null != tmp) {
-      const current = tmp.current;
-      if (null != current) {
+    if (context != null) {
+      const current = context.current;
+      if (current != null) {
         id = current.getId();
       }
     }

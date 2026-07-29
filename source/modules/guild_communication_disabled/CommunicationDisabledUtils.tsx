@@ -1,11 +1,13 @@
-// Module ID: 3782
-// Function ID: 28705
+// Module ID: 3806
+// Function ID: 3807
 // Name: isCommunicationDisabled
 // Dependencies: [2]
-// Exports: isMemberCommunicationDisabled
+// Exports: isCommunicationDisabled, isMemberCommunicationDisabled
 
-// Module 3782 (isCommunicationDisabled)
-function isCommunicationDisabled(arg0) {
+// Module 3806 (isCommunicationDisabled)
+const result = require("set").fileFinishedImporting("modules/guild_communication_disabled/CommunicationDisabledUtils.tsx");
+
+export const isCommunicationDisabled = function isCommunicationDisabled(arg0) {
   let tmp = null != arg0;
   if (tmp) {
     const _Date = Date;
@@ -15,14 +17,19 @@ function isCommunicationDisabled(arg0) {
     tmp = date > date1;
   }
   return tmp;
-}
-const result = require("set").fileFinishedImporting("modules/guild_communication_disabled/CommunicationDisabledUtils.tsx");
-
-export { isCommunicationDisabled };
+};
 export const isMemberCommunicationDisabled = function isMemberCommunicationDisabled(member) {
   let prop;
-  if (null != member) {
+  if (member != null) {
     prop = member.communicationDisabledUntil;
   }
-  return isCommunicationDisabled(prop);
+  let tmp2 = null != prop;
+  if (tmp2) {
+    const _Date = Date;
+    const date = new Date(prop);
+    const _Date2 = Date;
+    const date1 = new Date();
+    tmp2 = date > date1;
+  }
+  return tmp2;
 };

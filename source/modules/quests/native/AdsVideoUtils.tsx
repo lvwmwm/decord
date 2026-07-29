@@ -1,37 +1,36 @@
-// Module ID: 14038
-// Function ID: 107287
-// Name: items
-// Dependencies: [477, 2]
+// Module ID: 14060
+// Function ID: 14061
+// Name: isSourceError
+// Dependencies: [500, 2]
 // Exports: isSourceError
 
-// Module 14038 (items)
-const items = [-1000, -1003, -1004, -1008];
+// Module 14060 (isSourceError)
+let closure_2 = [-1000, -1003, -1004, -1008];
 const result = require("set").fileFinishedImporting("modules/quests/native/AdsVideoUtils.tsx");
 
 export const isSourceError = function isSourceError(error) {
-  if (null != error) {
+  if (error != null) {
     const code = error.error.code;
   }
-  if (null != error) {
+  if (error != null) {
     const errorException = error.error.errorException;
   }
   if (obj.isAndroid()) {
-    let tmp7 = null == errorException;
-    if (!tmp7) {
-      tmp7 = !errorException.includes("Source error");
+    let hasItem;
+    if (errorException != null) {
+      hasItem = errorException.includes("Source error");
     }
-    let tmp4 = !tmp7;
+    let isIOSResult = hasItem;
   } else {
-    const tmp3 = !require(477) /* set */.isIOS();
-    tmp4 = !tmp3;
-    if (!tmp3) {
-      let hasItem = null != code;
-      if (hasItem) {
-        hasItem = items.includes(code);
+    isIOSResult = require(500) /* set */.isIOS();
+    if (isIOSResult) {
+      let hasItem1 = null != code;
+      if (hasItem1) {
+        hasItem1 = closure_2.includes(code);
       }
-      tmp4 = hasItem;
+      isIOSResult = hasItem1;
     }
-    const obj2 = require(477) /* set */;
+    const tmpResult = require(500) /* set */;
   }
-  return tmp4;
+  return isIOSResult;
 };

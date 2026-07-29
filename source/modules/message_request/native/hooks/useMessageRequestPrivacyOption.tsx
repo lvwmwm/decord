@@ -1,21 +1,22 @@
-// Module ID: 13024
-// Function ID: 100849
+// Module ID: 13047
+// Function ID: 13048
 // Name: MessageRequestRestrictedGuildPrivacyOption
-// Dependencies: [31, 33, 3838, 6485, 5535, 1212, 11513, 2]
+// Dependencies: [19, 21, 3862, 6506, 5553, 1236, 11537, 2]
 // Exports: useMessageRequestPrivacyOption
 
-// Module 13024 (MessageRequestRestrictedGuildPrivacyOption)
-import result from "result";
+// Module 13047 (MessageRequestRestrictedGuildPrivacyOption)
+import noop from "noop";
 import { jsx } from "jsxProd";
 
 const require = arg1;
 function MessageRequestRestrictedGuildPrivacyOption(guild) {
   guild = guild.guild;
-  const id = guild.id;
-  let MessageRequestRestrictedGuildIds = id(3838).MessageRequestRestrictedGuildIds;
+  let id;
+  id = guild.id;
+  let MessageRequestRestrictedGuildIds = id(3862).MessageRequestRestrictedGuildIds;
   const setting = MessageRequestRestrictedGuildIds.useSetting();
   const hasItem = setting.includes(id);
-  const RestrictedGuildIds = id(3838).RestrictedGuildIds;
+  const RestrictedGuildIds = id(3862).RestrictedGuildIds;
   const setting1 = RestrictedGuildIds.useSetting();
   const hasItem1 = setting1.includes(guild.id);
   const items = [id];
@@ -29,23 +30,28 @@ function MessageRequestRestrictedGuildPrivacyOption(guild) {
     const MessageRequestRestrictedGuildIds = id(outer1_2[2]).MessageRequestRestrictedGuildIds;
     MessageRequestRestrictedGuildIds.updateSetting(Array.from(sanitizedMessageRequestRestrictedGuilds));
   }, items);
-  const obj = {};
-  const intl = id(1212).intl;
-  obj.label = intl.string(id(1212).t["7UgSGP"]);
-  const intl2 = id(1212).intl;
-  obj.subLabel = intl2.string(id(1212).t.INRaYb);
-  obj.value = !hasItem1 && !hasItem;
-  obj.onValueChange = callback;
-  obj.disabled = hasItem1;
-  return jsx(id(5535).ActionSheetSwitchRow, {});
+  const obj = { label: null, subLabel: null, value: null, onValueChange: null, disabled: null };
+  const intl = id(1236).intl;
+  obj[0] = intl.string(id(1236).t["7UgSGP"]);
+  const intl2 = id(1236).intl;
+  obj[1] = intl2.string(id(1236).t.INRaYb);
+  let tmp5 = !hasItem1;
+  if (!hasItem1) {
+    tmp5 = !hasItem;
+  }
+  obj[2] = tmp5;
+  obj[3] = callback;
+  obj[4] = hasItem1;
+  return jsx(id(5553).ActionSheetSwitchRow, { label: null, subLabel: null, value: null, onValueChange: null, disabled: null });
 }
 const result = require("explicitContentFromProto").fileFinishedImporting("modules/message_request/native/hooks/useMessageRequestPrivacyOption.tsx");
 
 export const useMessageRequestPrivacyOption = function useMessageRequestPrivacyOption(guild) {
   let tmp = null;
-  if (!importDefault(11513)()) {
-    const obj = { guild: guild.guild };
-    tmp = <MessageRequestRestrictedGuildPrivacyOption guild={arg0.guild} />;
+  if (!importDefault(11537)()) {
+    const obj = { guild: null };
+    obj[0] = guild.guild;
+    tmp = <MessageRequestRestrictedGuildPrivacyOption guild={null} />;
   }
   return tmp;
 };

@@ -1,16 +1,16 @@
-// Module ID: 8366
-// Function ID: 66954
+// Module ID: 8390
+// Function ID: 8391
 // Name: getBotLabel
-// Dependencies: [31, 27, 4191, 33, 4165, 689, 1212, 8367, 4161, 2]
+// Dependencies: [19, 17, 4215, 21, 4189, 712, 1236, 8391, 4185, 2]
 
-// Module 8366 (getBotLabel)
-import "result";
+// Module 8390 (getBotLabel)
+import "noop";
 import { View } from "get ActivityIndicator";
 import { BotTagTypes } from "ApplicationTypes";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_5;
+let c5;
 let closure_6;
 const require = arg1;
 function getBotLabel(BOT) {
@@ -18,20 +18,20 @@ function getBotLabel(BOT) {
     BOT = BotTagTypes.BOT;
   }
   if (BotTagTypes.SYSTEM_DM !== BOT) {
-    if (BotTagTypes.OFFICIAL !== BOT) {
-      if (BotTagTypes.SERVER === BOT) {
-        const intl2 = require(1212) /* getSystemLocale */.intl;
-        let stringResult = intl2.string(require(1212) /* getSystemLocale */.t.PuJGuM);
+    if (tmp2.OFFICIAL !== BOT) {
+      if (tmp2.SERVER === BOT) {
+        const intl2 = require(1236) /* getSystemLocale */.intl;
+        let stringResult = intl2.string(require(1236) /* getSystemLocale */.t.PuJGuM);
       } else {
-        const BOT2 = BotTagTypes.BOT;
-        const intl = require(1212) /* getSystemLocale */.intl;
-        stringResult = intl.string(require(1212) /* getSystemLocale */.t["9RNkeF"]);
+        const BOT2 = tmp2.BOT;
+        const intl = require(1236) /* getSystemLocale */.intl;
+        stringResult = intl.string(require(1236) /* getSystemLocale */.t["9RNkeF"]);
       }
     }
     return stringResult;
   }
-  const intl3 = require(1212) /* getSystemLocale */.intl;
-  stringResult = intl3.string(require(1212) /* getSystemLocale */.t.lKQ7Wt);
+  const intl3 = require(1236) /* getSystemLocale */.intl;
+  stringResult = intl3.string(require(1236) /* getSystemLocale */.t.lKQ7Wt);
 }
 class BotTag {
   constructor(arg0) {
@@ -45,28 +45,24 @@ class BotTag {
       BOT = BotTagTypes.BOT;
     }
     verified = global.verified;
-    tmp2 = c7();
-    tmp4 = BOT === BotTagTypes.OFFICIAL;
+    tmp2 = jsxs();
+    tmp4 = BotTagTypes;
+    tmp5 = BOT === BotTagTypes.OFFICIAL;
     tmp3 = getBotLabel(BOT);
-    if (!tmp4) {
-      tmp5 = BotTagTypes;
-      tmp4 = BOT === BotTagTypes.SYSTEM_DM;
+    if (!tmp5) {
+      tmp5 = BOT === tmp4.SYSTEM_DM;
     }
     if (!verified) {
-      verified = tmp4;
+      verified = tmp5;
     }
     tmp6 = null;
     if (verified) {
       tmp7 = jsx;
       tmp8 = closure_0;
       tmp9 = closure_2;
-      num = 7;
-      obj = {};
-      str = "xs";
-      obj.size = "xs";
+      obj = { size: "xs", color: null };
       tmp10 = closure_1;
-      num2 = 5;
-      obj.color = require("_createForOfIteratorHelperLoose").colors.WHITE;
+      obj[1] = require("Themes").colors.WHITE;
       tmp6 = jsx(require("CheckmarkSmallBoldIcon").CheckmarkSmallBoldIcon, obj);
     }
     prop = null;
@@ -75,69 +71,64 @@ class BotTag {
     if (null != tmp6) {
       prop = tmp2.verifiedTagLeftPadding;
     }
-    if (tmp4) {
+    if (tmp5) {
       tmp22 = closure_0;
       tmp23 = closure_2;
-      num6 = 6;
       intl4 = require("getSystemLocale").intl;
       stringResult = intl4.string(require("getSystemLocale").t["7s687k"]);
+      tmp15 = closure_2;
+      tmp17 = closure_0;
     } else if (verified) {
       tmp20 = closure_0;
       tmp21 = closure_2;
-      num5 = 6;
       intl3 = require("getSystemLocale").intl;
       stringResult = intl3.string(require("getSystemLocale").t.g76OcH);
+      tmp15 = closure_2;
+      tmp17 = closure_0;
+    } else if (BOT === tmp4.SERVER) {
+      tmp18 = closure_0;
+      tmp19 = closure_2;
+      intl2 = require("getSystemLocale").intl;
+      stringResult = intl2.string(require("getSystemLocale").t["39trQT"]);
+      tmp15 = closure_2;
+      tmp17 = closure_0;
     } else {
-      tmp14 = BotTagTypes;
-      if (BOT === BotTagTypes.SERVER) {
-        tmp18 = closure_0;
-        tmp19 = closure_2;
-        num4 = 6;
-        intl2 = require("getSystemLocale").intl;
-        stringResult = intl2.string(require("getSystemLocale").t["39trQT"]);
-      } else {
-        tmp15 = closure_0;
-        tmp16 = closure_2;
-        num3 = 6;
-        intl = require("getSystemLocale").intl;
-        stringResult = intl.string(require("getSystemLocale").t.qwJHjo);
-      }
+      tmp14 = closure_0;
+      tmp15 = closure_2;
+      intl = require("getSystemLocale").intl;
+      stringResult = intl.string(require("getSystemLocale").t.qwJHjo);
+      tmp17 = closure_0;
     }
-    obj = { style: null, accessible: true, accessibilityRole: "image" };
+    obj = { style: items, accessible: true, accessibilityRole: "image", accessibilityLabel: stringResult, children: null };
     items = [, , , ];
     items[0] = tmp2.tag;
     items[1] = tmp11;
     items[2] = global.style;
     items[3] = prop;
-    obj.style = items;
-    obj.accessibilityLabel = stringResult;
     items1 = [, ];
     items1[0] = tmp6;
-    obj1 = { variant: "text-xs/semibold", lineClamp: 1, maxFontSizeMultiplier: 2 };
     items2 = [];
     items2[0] = tmp12;
-    obj1.style = items2;
-    obj1.children = tmp3;
-    items1[1] = jsx(require("Text").Text, obj1);
-    obj.children = items1;
+    items1[1] = jsx(require("Text").Text, { variant: "text-xs/semibold", lineClamp: 1, maxFontSizeMultiplier: 2, style: items2, children: tmp3 });
+    obj[4] = items1;
     return jsxs(View, obj);
   }
 }
-({ jsx: closure_5, jsxs: closure_6 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { paddingLeft: 4, paddingRight: 4, borderRadius: require("_createForOfIteratorHelperLoose").radii.xs, display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center", gap: 1 };
-_createForOfIteratorHelperLoose.tag = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.verifiedTagLeftPadding = { paddingLeft: 1 };
-_createForOfIteratorHelperLoose.tagNormal = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BRAND };
-const obj1 = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BRAND };
-_createForOfIteratorHelperLoose.tagInverted = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.WHITE };
-const obj2 = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.WHITE };
-_createForOfIteratorHelperLoose.tagTextNormal = { color: require("_createForOfIteratorHelperLoose").colors.WHITE };
-const obj3 = { color: require("_createForOfIteratorHelperLoose").colors.WHITE };
-_createForOfIteratorHelperLoose.tagTextInverted = { color: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BRAND };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+({ jsx: c5, jsxs: closure_6 } = jsxProd);
+createCacheKey = { tag: null, verifiedTagLeftPadding: null, tagNormal: null, tagInverted: null, tagTextNormal: null, tagTextInverted: null };
+createCacheKey = { paddingLeft: 4, paddingRight: 4, borderRadius: require("Themes").radii.xs, display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center", gap: 1 };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { paddingLeft: 1 };
+createCacheKey[2] = { backgroundColor: require("Themes").colors.BACKGROUND_BRAND };
+const obj1 = { backgroundColor: require("Themes").colors.BACKGROUND_BRAND };
+createCacheKey[3] = { backgroundColor: require("Themes").colors.WHITE };
+const obj2 = { backgroundColor: require("Themes").colors.WHITE };
+createCacheKey[4] = { color: require("Themes").colors.WHITE };
+const obj3 = { color: require("Themes").colors.WHITE };
+createCacheKey[5] = { color: require("Themes").colors.BACKGROUND_BRAND };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
 BotTag.Types = BotTagTypes;
-const obj4 = { color: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BRAND };
+const obj4 = { color: require("Themes").colors.BACKGROUND_BRAND };
 const result = require("ApplicationTypes").fileFinishedImporting("modules/applications/native/BotTag.tsx");
 
 export default BotTag;

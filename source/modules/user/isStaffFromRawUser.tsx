@@ -1,24 +1,23 @@
-// Module ID: 11486
-// Function ID: 89181
+// Module ID: 11510
+// Function ID: 11511
 // Name: isStaff
-// Dependencies: [653, 2]
+// Dependencies: [676, 2]
 // Exports: default
 
-// Module 11486 (isStaff)
+// Module 11510 (isStaff)
 import { UserFlags } from "ME";
 
 const result = require("set").fileFinishedImporting("modules/user/isStaffFromRawUser.tsx");
 
 export default function isStaff(flags) {
-  flags = flags.flags;
-  let num = 0;
-  if (null != flags) {
-    num = flags;
+  let num = flags.flags;
+  if (num == null) {
+    num = 0;
   }
   let tmp = (num & UserFlags.STAFF) === UserFlags.STAFF;
   if (!tmp) {
     let prop;
-    if (null != flags) {
+    if (flags != null) {
       prop = flags.personal_connection_id;
     }
     tmp = null != prop;

@@ -1,25 +1,27 @@
-// Module ID: 10764
-// Function ID: 83511
+// Module ID: 10788
+// Function ID: 10789
 // Name: getNoiseCancellationDeferredToSystem
-// Dependencies: [4212, 10765, 566, 2]
-// Exports: useNoiseCancellationDeferredToSystem
+// Dependencies: [4236, 10789, 589, 2]
+// Exports: getNoiseCancellationDeferredToSystem, useNoiseCancellationDeferredToSystem
 
-// Module 10764 (getNoiseCancellationDeferredToSystem)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 10788 (getNoiseCancellationDeferredToSystem)
+import _detectH265HardwareDecode from "_detectH265HardwareDecode";
 
 const require = arg1;
-function getNoiseCancellationDeferredToSystem(arg0) {
-  let obj = arg0;
-  if (arg0 === undefined) {
-    obj = _isNativeReflectConstruct;
-  }
-  const systemMicrophoneMode = obj.getSystemMicrophoneMode();
-  return !importDefault(10765)(true, systemMicrophoneMode);
-}
 const result = require("initialize").fileFinishedImporting("modules/noise_cancellation/NoiseCancellationUtils.tsx");
 
-export { getNoiseCancellationDeferredToSystem };
+export const getNoiseCancellationDeferredToSystem = function getNoiseCancellationDeferredToSystem(_detectH265HardwareDecode) {
+  let obj = _detectH265HardwareDecode;
+  if (_detectH265HardwareDecode === undefined) {
+    obj = _detectH265HardwareDecode;
+  }
+  const systemMicrophoneMode = obj.getSystemMicrophoneMode();
+  return !importDefault(10789)(true, systemMicrophoneMode);
+};
 export const useNoiseCancellationDeferredToSystem = function useNoiseCancellationDeferredToSystem() {
-  const items = [_isNativeReflectConstruct];
-  return require(566) /* initialize */.useStateFromStores(items, () => outer1_4(outer1_3));
+  const items = [_detectH265HardwareDecode];
+  return require(589) /* initialize */.useStateFromStores(items, () => {
+    systemMicrophoneMode = systemMicrophoneMode.getSystemMicrophoneMode();
+    return !callback(table[1])(true, systemMicrophoneMode);
+  });
 };

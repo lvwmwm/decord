@@ -1,67 +1,61 @@
-// Module ID: 14840
-// Function ID: 113044
+// Module ID: 14866
+// Function ID: 14867
 // Name: AccountStatusIcon
-// Dependencies: [31, 27, 1858, 4005, 1850, 11484, 33, 4165, 566, 4126, 689, 4121, 4161, 1212, 4695, 3883, 1273, 4004, 2]
+// Dependencies: [19, 17, 1882, 4029, 1874, 11508, 21, 4189, 589, 4150, 712, 4145, 4185, 1236, 4717, 3907, 1297, 4028, 2]
 // Exports: default
 
-// Module 14840 (AccountStatusIcon)
-import "result";
-import get_ActivityIndicator from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_6 from "_isNativeReflectConstruct";
-import closure_7 from "_isNativeReflectConstruct";
-import { MultiAccountTokenStatus } from "_isNativeReflectConstruct";
+// Module 14866 (AccountStatusIcon)
+import "noop";
+import get_ActivityIndicator from "nameFromUser";
+import createdAt from "createdAt";
+import initialize from "initialize";
+import mergeGuildAvatar from "mergeGuildAvatar";
+import { MultiAccountTokenStatus } from "initialize";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_10;
-let closure_3;
-let closure_4;
-let closure_9;
+let c10;
+let c3;
+let c4;
+let c9;
 const require = arg1;
 class AccountStatusIcon {
   constructor(arg0) {
     user = global.user;
+    tmp = closure_0;
+    tmp2 = closure_2;
     obj = require("initialize");
     items = [];
-    items[0] = c7;
-    stateFromStores = obj.useStateFromStores(items, () => outer1_7.getCurrentUser());
+    items[0] = View;
+    stateFromStores = obj.useStateFromStores(items, () => currentUser.getCurrentUser());
     id = undefined;
-    if (null != stateFromStores) {
+    if (stateFromStores != null) {
       id = stateFromStores.id;
     }
     if (user.id === id) {
       tmp9 = jsx;
-      tmp10 = closure_0;
-      tmp11 = closure_2;
-      num3 = 9;
-      obj = {};
-      tmp12 = closure_1;
-      num4 = 10;
-      obj.color = require("_createForOfIteratorHelperLoose").colors.TEXT_BRAND;
-      tmp4 = jsx(require("CircleCheckIcon").CircleCheckIcon, obj);
+      obj = { color: null };
+      tmp10 = closure_1;
+      obj[0] = require("Themes").colors.TEXT_BRAND;
+      tmp6 = jsx(require("CircleCheckIcon").CircleCheckIcon, obj);
     } else {
-      tmp3 = MultiAccountTokenStatus;
-      tmp4 = null;
+      tmp5 = MultiAccountTokenStatus;
+      tmp6 = null;
       if (user.tokenStatus === MultiAccountTokenStatus.INVALID) {
-        tmp5 = jsx;
-        tmp6 = closure_0;
-        tmp7 = closure_2;
-        num = 11;
-        obj1 = {};
+        tmp7 = jsx;
+        obj1 = { color: null };
         tmp8 = closure_1;
-        num2 = 10;
-        obj1.color = require("_createForOfIteratorHelperLoose").colors.ICON_FEEDBACK_CRITICAL;
-        tmp4 = jsx(require("CircleInformationIcon").CircleInformationIcon, obj1);
+        obj1[0] = require("Themes").colors.ICON_FEEDBACK_CRITICAL;
+        tmp6 = jsx(require("CircleInformationIcon").CircleInformationIcon, obj1);
       }
     }
-    return tmp4;
+    return tmp6;
   }
 }
-({ Pressable: closure_3, View: closure_4 } = get_ActivityIndicator);
-({ jsx: closure_9, jsxs: closure_10 } = jsxProd);
-let closure_11 = _createForOfIteratorHelperLoose.createStyles({ accountListTag: { marginLeft: 12, flex: 1 }, tagContainer: { display: "flex", flexDirection: "row" }, accountSwitcherListItem: { display: "flex", flexDirection: "row", justifyContent: "flex-start", alignItems: "center", paddingVertical: 8, paddingHorizontal: 16 }, username: { flexShrink: 1 }, accountInfo: { flex: 1, minWidth: "30%", display: "flex", flexDirection: "row", alignItems: "center" } });
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/multi_account/native/AccountSwitcherListItem.tsx");
+({ Pressable: c3, View: c4 } = get_ActivityIndicator);
+({ jsx: c9, jsxs: c10 } = jsxProd);
+let closure_11 = createCacheKey.createStyles({ accountListTag: { marginLeft: 12, flex: 1 }, tagContainer: { display: "flex", flexDirection: "row" }, accountSwitcherListItem: { display: "flex", flexDirection: "row", justifyContent: "flex-start", alignItems: "center", paddingVertical: 8, paddingHorizontal: 16 }, username: { flexShrink: 1 }, accountInfo: { flex: 1, minWidth: "30%", display: "flex", flexDirection: "row", alignItems: "center" } });
+const result = require("createdAt").fileFinishedImporting("modules/multi_account/native/AccountSwitcherListItem.tsx");
 
 export default function AccountSwitcherListItem(arg0) {
   let delayLongPress;
@@ -78,87 +72,97 @@ export default function AccountSwitcherListItem(arg0) {
   ({ sortHandlers, trailing } = arg0);
   ({ delayLongPress, leading } = arg0);
   const tmp = callback2();
-  let obj = require(566) /* initialize */;
-  const items = [closure_6];
-  const stateFromStores = obj.useStateFromStores(items, () => outer1_6.hidePersonalInformation);
-  let obj1 = require(566) /* initialize */;
-  const items1 = [closure_7];
-  const stateFromStores1 = obj1.useStateFromStores(items1, () => outer1_7.getCurrentUser());
+  let obj = require(589) /* initialize */;
+  const items = [initialize];
+  const stateFromStores = obj.useStateFromStores(items, () => obj.hidePersonalInformation);
+  let obj1 = require(589) /* initialize */;
+  const items1 = [mergeGuildAvatar];
+  const stateFromStores1 = obj1.useStateFromStores(items1, () => currentUser.getCurrentUser());
   let id;
-  if (null != stateFromStores1) {
+  if (stateFromStores1 != null) {
     id = stateFromStores1.id;
   }
-  let obj2 = new _isNativeReflectConstruct(user);
+  let obj2 = new createdAt(user);
   if (user.id === id) {
     if (showActiveAccountLabel) {
-      obj = { variant: "text-sm/semibold", color: "text-brand" };
-      const intl = require(1212) /* getSystemLocale */.intl;
-      obj.children = intl.string(require(1212) /* getSystemLocale */.t.seV8yt);
-      let tmp6 = callback(require(4161) /* Text */.Text, obj);
+      obj = { variant: "text-sm/semibold", color: "text-brand", children: null };
+      const intl = tmp2(1236).intl;
+      obj[2] = intl.string(tmp2(1236).t.seV8yt);
+      let tmp8 = callback(tmp2(4185).Text, obj);
     }
     if (null == onPressUser) {
       let PressableOpacity = closure_3;
     } else {
-      PressableOpacity = require(4695) /* PressableBase */.PressableOpacity;
+      PressableOpacity = tmp2(4717).PressableOpacity;
     }
-    let obj4 = require(3883) /* useCheckboxA11yNative */;
-    obj = { selected: tmp5 };
-    const radioA11yNative = obj4.useRadioA11yNative(obj);
-    obj1 = {};
-    ({ accessibilityRole: obj7.accessibilityRole, accessibilityState: obj7.accessibilityState } = radioA11yNative);
+    obj = { selected: null };
+    obj[0] = tmp7;
+    const radioA11yNative = tmp2(3907).useRadioA11yNative(obj);
+    obj1 = { accessibilityRole: null, accessibilityState: null, accessibilityHint: null, style: null, delayLongPress: null, onPress: null };
+    ({ accessibilityRole: obj7[0], accessibilityState: obj7[1] } = radioA11yNative);
     let stringResult;
-    if (!tmp5) {
-      const intl2 = require(1212) /* getSystemLocale */.intl;
-      stringResult = intl2.string(require(1212) /* getSystemLocale */.t.wY4y0R);
+    if (!tmp7) {
+      const intl2 = tmp2(1236).intl;
+      stringResult = intl2.string(tmp2(1236).t.wY4y0R);
     }
-    obj1.accessibilityHint = stringResult;
-    obj1.style = tmp.accountSwitcherListItem;
-    obj1.delayLongPress = delayLongPress;
-    obj1.onPress = onPressUser;
+    obj1[2] = stringResult;
+    obj1[3] = tmp.accountSwitcherListItem;
+    obj1[4] = delayLongPress;
+    obj1[5] = onPressUser;
     const merged = Object.assign(sortHandlers);
     const items2 = [leading, , ];
-    obj2 = { style: tmp.accountInfo };
-    const obj3 = { user: obj2, guildId: undefined };
-    const items3 = [callback(require(1273) /* Button */.Avatar, obj3), ];
-    obj4 = { style: tmp.accountListTag };
-    const obj5 = { style: tmp.tagContainer };
-    const obj6 = { variant: "text-md/semibold", color: "text-default", style: tmp.username, lineClamp: 1 };
-    const obj7 = { mode: "username" };
-    let str2 = "always";
+    obj2 = { style: null, children: null };
+    obj2[0] = tmp.accountInfo;
+    const obj3 = { user: null, guildId: "r" };
+    obj3[0] = obj2;
+    const items3 = [callback(tmp2(1297).Avatar, obj3), ];
+    const obj4 = { style: null, children: null };
+    obj4[0] = tmp.accountListTag;
+    const obj5 = { style: null, children: null };
+    obj5[0] = tmp.tagContainer;
+    const obj6 = { variant: "text-md/semibold", color: "text-default", style: null, lineClamp: 1, children: null };
+    obj6[2] = tmp.username;
+    const tmp2Result = tmp2(3907);
+    let str = "always";
     if (stateFromStores) {
-      str2 = "never";
+      str = "never";
     }
-    obj7.identifiable = str2;
-    obj6.children = importDefault(4004).getUserTag(obj2, obj7);
-    const items4 = [callback(require(4161) /* Text */.Text, obj6), ];
-    let tmp29 = !stateFromStores && !obj2.hasUniqueUsername();
-    if (tmp29) {
-      const obj8 = { variant: "text-md/normal", color: "text-muted" };
+    const obj7 = { mode: "username", identifiable: null };
+    obj7[1] = str;
+    obj6[4] = importDefault(4028).getUserTag(obj2, obj7);
+    const items4 = [callback(tmp2(4185).Text, obj6), ];
+    let tmp18Result = !stateFromStores;
+    if (!stateFromStores) {
+      tmp18Result = !obj2.hasUniqueUsername();
+    }
+    if (tmp18Result) {
+      const obj8 = { variant: "text-md/normal", color: "text-muted", children: null };
       const _HermesInternal = HermesInternal;
-      obj8.children = "#" + obj2.discriminator;
-      tmp29 = callback(require(4161) /* Text */.Text, obj8);
+      obj8[2] = "#" + obj2.discriminator;
+      tmp18Result = tmp18(tmp2(4185).Text, obj8);
     }
-    items4[1] = tmp29;
-    obj5.children = items4;
-    const items5 = [closure_10(closure_4, obj5), tmp6];
-    obj4.children = items5;
+    items4[1] = tmp18Result;
+    obj5[1] = items4;
+    const items5 = [closure_10(closure_4, obj5), tmp8];
+    obj4[1] = items5;
     items3[1] = closure_10(closure_4, obj4);
-    obj2.children = items3;
+    obj2[1] = items3;
     items2[1] = closure_10(closure_4, obj2);
     if (undefined === trailing) {
-      const obj9 = { user };
-      trailing = callback(AccountStatusIcon, obj9);
+      const obj9 = { user: null };
+      obj9[0] = user;
+      trailing = tmp18(AccountStatusIcon, obj9);
     }
     items2[2] = trailing;
-    obj1["children"] = items2;
+    obj1.children = items2;
     return closure_10(PressableOpacity, obj1, user.id);
   }
-  tmp6 = null;
+  tmp8 = null;
   if (user.tokenStatus === MultiAccountTokenStatus.INVALID) {
-    const obj10 = { variant: "text-sm/semibold", color: "text-feedback-critical" };
-    const intl3 = require(1212) /* getSystemLocale */.intl;
-    obj10.children = intl3.string(require(1212) /* getSystemLocale */.t.tYX2ps);
-    tmp6 = callback(require(4161) /* Text */.Text, obj10);
+    const obj10 = { variant: "text-sm/semibold", color: "text-feedback-critical", children: null };
+    const intl3 = tmp2(1236).intl;
+    obj10[2] = intl3.string(tmp2(1236).t.tYX2ps);
+    tmp8 = callback(tmp2(4185).Text, obj10);
   }
 };
 export { AccountStatusIcon };

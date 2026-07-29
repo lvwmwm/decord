@@ -1,36 +1,36 @@
-// Module ID: 11693
-// Function ID: 90570
+// Module ID: 11717
+// Function ID: 11718
 // Name: UserProfileConfirmVideoUnstableConnection
-// Dependencies: [31, 33, 4510, 1212, 4510, 2]
+// Dependencies: [19, 21, 4533, 1236, 4533, 2]
 // Exports: default
 
-// Module 11693 (UserProfileConfirmVideoUnstableConnection)
-import "result";
+// Module 11717 (UserProfileConfirmVideoUnstableConnection)
+import "noop";
 import jsxProd from "jsxProd";
 
-let closure_2;
-let closure_3;
+let c3;
+let obj1;
 const require = arg1;
-({ jsx: closure_2, jsxs: closure_3 } = jsxProd);
+({ jsx: obj1, jsxs: c3 } = jsxProd);
 const result = require("getAlertModalItemKey").fileFinishedImporting("modules/user_profile/native/UserProfileConfirmVideoUnstableConnection.tsx");
 
 export default function UserProfileConfirmVideoUnstableConnection(onConfirm) {
-  let obj = {};
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj.title = intl.string(require(1212) /* getSystemLocale */.t.m2Hyj0);
-  const intl2 = require(1212) /* getSystemLocale */.intl;
-  obj.content = intl2.string(require(1212) /* getSystemLocale */.t.EhaK6B);
-  obj = {};
-  obj = {};
-  const intl3 = require(1212) /* getSystemLocale */.intl;
-  obj.text = intl3.string(require(1212) /* getSystemLocale */.t.ND1my3);
-  obj.onPress = onConfirm.onConfirm;
-  const items = [callback(require(4510) /* getAlertModalItemKey */.AlertActionButton, obj, "confirm"), ];
-  const obj1 = { variant: "secondary" };
-  const intl4 = require(1212) /* getSystemLocale */.intl;
-  obj1.text = intl4.string(require(1212) /* getSystemLocale */.t.jEqEhy);
-  items[1] = callback(require(4510) /* getAlertModalItemKey */.AlertActionButton, obj1, "cancel");
-  obj.children = items;
-  obj.actions = callback2(require(4510) /* getAlertModalItemKey */.AlertActions, obj);
-  return callback(require(4510) /* getAlertModalItemKey */.AlertModal, obj);
+  let obj = { title: null, content: null, actions: null };
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj[0] = intl.string(require(1236) /* getSystemLocale */.t.m2Hyj0);
+  const intl2 = require(1236) /* getSystemLocale */.intl;
+  obj[1] = intl2.string(require(1236) /* getSystemLocale */.t.EhaK6B);
+  obj = { children: null };
+  obj = { text: null, onPress: null };
+  const intl3 = require(1236) /* getSystemLocale */.intl;
+  obj[0] = intl3.string(require(1236) /* getSystemLocale */.t.ND1my3);
+  obj[1] = onConfirm.onConfirm;
+  const items = [callback(require(4533) /* getAlertModalItemKey */.AlertActionButton, obj, "confirm"), ];
+  const obj1 = { variant: "secondary", text: null };
+  const intl4 = require(1236) /* getSystemLocale */.intl;
+  obj1[1] = intl4.string(require(1236) /* getSystemLocale */.t.jEqEhy);
+  items[1] = callback(require(4533) /* getAlertModalItemKey */.AlertActionButton, obj1, "cancel");
+  obj[0] = items;
+  obj[2] = callback2(require(4533) /* getAlertModalItemKey */.AlertActions, obj);
+  return callback(require(4533) /* getAlertModalItemKey */.AlertModal, obj);
 };

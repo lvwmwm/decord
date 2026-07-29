@@ -1,31 +1,17 @@
-// Module ID: 4716
-// Function ID: 40918
-// Name: NativePermissionActionCreators
-// Dependencies: [6, 7, 686, 2]
+// Module ID: 4738
+// Function ID: 4739
+// Name: setPermission
+// Dependencies: [709, 2]
 
-// Module 4716 (NativePermissionActionCreators)
-import _classCallCheck from "_classCallCheck";
-import _defineProperties from "_defineProperties";
+// Module 4738 (setPermission)
+const prototype = function NativePermissionActionCreators() {
+  return Object.create(new.target.prototype);
+}.prototype;
+prototype["setPermission"] = function setPermission(closure_0, c2) {
+  let obj = importDefault(709);
+  obj = { type: "SET_NATIVE_PERMISSION", permissionType: closure_0, state: c2 };
+  obj.dispatch(obj);
+};
+const result = require("set").fileFinishedImporting("modules/native_permissions/NativePermissionActionCreators.tsx");
 
-const tmp2 = (() => {
-  class NativePermissionActionCreators {
-    constructor() {
-      tmp = outer1_2(this, NativePermissionActionCreators);
-      return;
-    }
-  }
-  const items = [
-    {
-      key: "setPermission",
-      value(permissionType, state) {
-        let obj = NativePermissionActionCreators(outer1_1[2]);
-        obj = { type: "SET_NATIVE_PERMISSION", permissionType, state };
-        obj.dispatch(obj);
-      }
-    }
-  ];
-  return callback(NativePermissionActionCreators, null, items);
-})();
-const result = require("dispatcher").fileFinishedImporting("modules/native_permissions/NativePermissionActionCreators.tsx");
-
-export default tmp2;
+export default prototype;

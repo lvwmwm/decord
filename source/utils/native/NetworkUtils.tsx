@@ -1,77 +1,44 @@
-// Module ID: 1431
-// Function ID: 16721
-// Name: ensureChangeListenerCreated
-// Dependencies: [653, 3, 1432, 2]
+// Module ID: 1455
+// Function ID: 1456
+// Name: notifyListeners
+// Dependencies: [676, 3, 1456, 2]
 
-// Module 1431 (ensureChangeListenerCreated)
+// Module 1455 (notifyListeners)
 import { NetworkConnectionTypes } from "ME";
-import importDefaultResult from "set";
-import importDefaultResult1 from "configure";
+import importDefaultResult from "configure";
 
-function ensureChangeListenerCreated() {
-  if (null == closure_7) {
-    closure_7 = importDefault(1432).addEventListener(notifyListeners);
-    const obj = importDefault(1432);
-  }
-}
-function cleanupChangeListener() {
-  let tmp = null != _null;
-  if (tmp) {
-    tmp = 0 === length.length;
-  }
-  if (tmp) {
-    tmp = 0 === length2.length;
-  }
-  if (tmp) {
-    tmp = 0 === arr.length;
-  }
-  if (tmp) {
-    _null();
-    _null = null;
-  }
-}
-function convertNetInfo(isConnected) {
+function notifyListeners(isConnected) {
   let details;
   let type;
+  isConnected = isConnected.isConnected;
   ({ type, details } = isConnected);
-  const obj = { type };
+  const obj = { type, effectiveSpeed: null, serviceProvider: null };
   let cellularGeneration = null;
   if (type === NetworkConnectionTypes.CELLULAR) {
     cellularGeneration = details.cellularGeneration;
   }
-  obj.effectiveSpeed = cellularGeneration;
+  obj[1] = cellularGeneration;
   let carrier = null;
   if (type === NetworkConnectionTypes.CELLULAR) {
     carrier = details.carrier;
   }
-  obj.serviceProvider = carrier;
-  return obj;
-}
-function notifyListeners(isConnected) {
-  isConnected = isConnected.isConnected;
-  const tmp = convertNetInfo(isConnected);
-  const dependencyMap = tmp;
-  const arr = isConnected ? closure_4 : closure_5;
-  let closure_8 = null != isConnected && isConnected;
-  importDefaultResult.log("Network status changed: isConnected:" + isConnected + " type:" + isConnected.type + " speed:" + tmp.cellularGeneration);
-  const item = arr.forEach((arg0) => arg0(null != isConnected && isConnected, closure_1));
-  const item1 = arr.forEach((arg0) => arg0(closure_1));
-}
-function addCallback(arg0, _handleNetworkOffline) {
-  let arr = arg0 ? closure_4 : closure_5;
-  arr = arr.push(_handleNetworkOffline);
-  ensureChangeListenerCreated();
-}
-function removeCallback(arg0, _handleNetworkOffline) {
-  const arr = arg0 ? closure_4 : closure_5;
-  const index = arr.indexOf(_handleNetworkOffline);
-  if (-1 !== index) {
-    arr.splice(index, 1);
-    cleanupChangeListener();
+  obj[2] = carrier;
+  let flag = isConnected;
+  if (isConnected == null) {
+    flag = false;
   }
+  obj.log("Network status changed: isConnected:" + isConnected + " type:" + isConnected.type + " speed:" + obj.cellularGeneration);
+  const item = isConnected ? closure_4 : closure_5.forEach((arg0) => {
+    let flag = isConnected;
+    if (isConnected == null) {
+      flag = false;
+    }
+    return arg0(flag, obj);
+  });
+  const item1 = arr3.forEach((arg0) => arg0(obj));
 }
-importDefaultResult = new importDefaultResult("NetworkUtils");
-importDefaultResult.enableNativeLogger(true);
+let obj = new require("set")("NetworkUtils");
+obj.enableNativeLogger(true);
 let closure_4 = [];
 let closure_5 = [];
 let closure_6 = [];
@@ -79,35 +46,111 @@ let c7 = null;
 let c8 = false;
 let response = require("configure").fetch();
 response.then((isConnected) => {
-  isConnected = isConnected.isConnected;
-  let closure_8 = null != isConnected && isConnected;
+  let flag = isConnected.isConnected;
+  if (flag == null) {
+    flag = false;
+  }
 });
-let obj = {
+obj = {
   addOnlineCallback(_handleNetworkOnline) {
-    addCallback(true, _handleNetworkOnline);
+    if (null == closure_7) {
+      closure_7 = importDefault(1456).addEventListener(notifyListeners);
+      const obj = importDefault(1456);
+    }
   },
   removeOnlineCallback(_handleNetworkOnline) {
-    removeCallback(true, _handleNetworkOnline);
-  },
-  addOfflineCallback(_handleNetworkOffline) {
-    addCallback(false, _handleNetworkOffline);
-  },
-  removeOfflineCallback(_handleNetworkOffline) {
-    removeCallback(false, _handleNetworkOffline);
-  },
-  addChangeCallback(outer1_14) {
-    ensureChangeListenerCreated();
-  },
-  removeChangeCallback(arg0) {
-    const index = arr.indexOf(arg0);
+    const index = arr.indexOf(_handleNetworkOnline);
     if (-1 !== index) {
       arr.splice(index, 1);
-      cleanupChangeListener();
+      let tmp5 = null != _null;
+      if (tmp5) {
+        tmp5 = 0 === arr.length;
+      }
+      if (tmp5) {
+        tmp5 = 0 === arr2.length;
+      }
+      if (tmp5) {
+        tmp5 = 0 === arr3.length;
+      }
+      if (tmp5) {
+        _null();
+        _null = null;
+      }
+    }
+  },
+  addOfflineCallback(_handleNetworkOffline) {
+    arr2.push(_handleNetworkOffline);
+    if (null == closure_7) {
+      closure_7 = importDefault(1456).addEventListener(notifyListeners);
+      const obj = importDefault(1456);
+    }
+  },
+  removeOfflineCallback(_handleNetworkOffline) {
+    const index = arr2.indexOf(_handleNetworkOffline);
+    if (-1 !== index) {
+      arr.splice(index, 1);
+      let tmp5 = null != _null;
+      if (tmp5) {
+        tmp5 = 0 === arr.length;
+      }
+      if (tmp5) {
+        tmp5 = 0 === arr.length;
+      }
+      if (tmp5) {
+        tmp5 = 0 === arr3.length;
+      }
+      if (tmp5) {
+        _null();
+        _null = null;
+      }
+    }
+  },
+  addChangeCallback(handleConnectionInfoChange) {
+    arr3.push(handleConnectionInfoChange);
+    if (null == closure_7) {
+      closure_7 = importDefault(1456).addEventListener(notifyListeners);
+      const obj = importDefault(1456);
+    }
+  },
+  removeChangeCallback(arg0) {
+    const index = arr3.indexOf(arg0);
+    if (-1 !== index) {
+      arr.splice(index, 1);
+      let tmp5 = null != _null;
+      if (tmp5) {
+        tmp5 = 0 === arr.length;
+      }
+      if (tmp5) {
+        tmp5 = 0 === arr2.length;
+      }
+      if (tmp5) {
+        tmp5 = 0 === arr.length;
+      }
+      if (tmp5) {
+        _null();
+        _null = null;
+      }
     }
   },
   getNetworkInformation() {
-    const response = importDefault(1432).fetch();
-    return response.then((arg0) => outer1_11(arg0));
+    const response = importDefault(1456).fetch();
+    return response.then((arg0) => {
+      let details;
+      let type;
+      ({ type, details } = arg0);
+      const obj = { type, effectiveSpeed: null, serviceProvider: null };
+      let cellularGeneration = null;
+      if (type === constants.CELLULAR) {
+        cellularGeneration = details.cellularGeneration;
+      }
+      obj[1] = cellularGeneration;
+      let carrier = null;
+      if (type === constants.CELLULAR) {
+        carrier = details.carrier;
+      }
+      obj[2] = carrier;
+      return obj;
+    });
   },
   isOnline() {
     return c8;

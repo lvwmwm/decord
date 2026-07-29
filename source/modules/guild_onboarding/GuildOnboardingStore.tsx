@@ -1,106 +1,55 @@
-// Module ID: 5089
-// Function ID: 43872
-// Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 653, 1841, 566, 686, 2]
+// Module ID: 5111
+// Function ID: 5112
+// Name: shouldShowOnboarding
+// Dependencies: [676, 589, 1865, 709, 2]
+// Exports: isOnboarding
 
-// Module 5089 (_isNativeReflectConstruct)
-import isFavoritesGuildId from "isFavoritesGuildId";
-import initialize from "initialize";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
+// Module 5111 (shouldShowOnboarding)
 import { ME } from "ME";
+import { Store } from "initialize";
 
-const require = arg1;
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
-  }
-  const result = _isNativeReflectConstruct();
-}
-function isOnboarding(arg0) {
-  let hasItem = null != arg0;
-  if (hasItem) {
-    const items = [obj.STARTED, obj.READY];
-    hasItem = items.includes(arg0);
-  }
-  return hasItem;
-}
 let obj = { STARTED: "started", READY: "ready", COMPLETED: "completed", NOT_APPLICABLE: "not_applicable" };
-let closure_9 = {};
-let closure_10 = {};
-let tmp2 = ((Store) => {
-  class GuildOnboardingStore {
-    constructor() {
-      self = this;
-      tmp = outer1_2(this, GuildOnboardingStore);
-      obj = outer1_5(GuildOnboardingStore);
-      tmp2 = outer1_4;
-      if (outer1_11()) {
-        tmp6 = globalThis;
-        _Reflect = Reflect;
-        tmp7 = outer1_5;
-        tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, outer1_5(self).constructor);
-      } else {
-        tmp3 = arguments;
-        tmp4 = arguments;
-        constructResult = obj(...arguments);
-      }
-      return tmp2(self, constructResult);
-    }
+let closure_4 = {};
+let closure_5 = {};
+class GuildOnboardingStore extends Store {
+}
+const prototype = GuildOnboardingStore.prototype;
+prototype["shouldShowOnboarding"] = function shouldShowOnboarding(c0) {
+  let tmp = c0 !== ME;
+  if (tmp) {
+    const obj = require(1865) /* getFavoritesAwareGuildName */;
+    tmp = !obj.isFavoritesGuildId(c0);
   }
-  callback2(GuildOnboardingStore, Store);
-  let obj = {
-    key: "shouldShowOnboarding",
-    value(guildId) {
-      let tmp = guildId !== outer1_7;
-      if (tmp) {
-        tmp = !GuildOnboardingStore(outer1_1[6]).isFavoritesGuildId(guildId);
-        const obj = GuildOnboardingStore(outer1_1[6]);
-      }
-      if (tmp) {
-        tmp = outer1_12(outer1_9[guildId]);
-      }
-      return tmp;
+  if (tmp) {
+    let hasItem = null != tmp5;
+    if (hasItem) {
+      const items = [, ];
+      ({ STARTED: arr[0], READY: arr[1] } = obj);
+      hasItem = items.includes(tmp5);
     }
-  };
-  const items = [obj, , , ];
-  obj = {
-    key: "getOnboardingStatus",
-    value(arg0) {
-      return outer1_9[arg0];
-    }
-  };
-  items[1] = obj;
-  obj = {
-    key: "resetOnboardingStatus",
-    value(arg0) {
-      outer1_9[arg0] = outer1_8.STARTED;
-      outer1_10[arg0] = "cover";
-    }
-  };
-  items[2] = obj;
-  items[3] = {
-    key: "getCurrentOnboardingStep",
-    value(arg0) {
-      let str = "cover";
-      if (null != outer1_10[arg0]) {
-        str = tmp;
-      }
-      return str;
-    }
-  };
-  return callback(GuildOnboardingStore, items);
-})(require("initialize").Store);
-tmp2.displayName = "GuildOnboardingStore";
+    tmp = hasItem;
+  }
+  return tmp;
+};
+prototype["getOnboardingStatus"] = function getOnboardingStatus(guildId) {
+  return dependencyMap[guildId];
+};
+prototype["resetOnboardingStatus"] = function resetOnboardingStatus(arg0) {
+  closure_4[arg0] = obj.STARTED;
+  closure_5[arg0] = "cover";
+};
+prototype["getCurrentOnboardingStep"] = function getCurrentOnboardingStep(arg0) {
+  let str = table[arg0];
+  if (str == null) {
+    str = "cover";
+  }
+  return str;
+};
+GuildOnboardingStore.displayName = "GuildOnboardingStore";
 obj = {
   LOGOUT: function handleReset() {
-    let closure_9 = {};
-    let closure_10 = {};
+    let closure_4 = {};
+    let closure_5 = {};
   },
   GUILD_DELETE: function handleDelete(guild) {
     guild = guild.guild;
@@ -108,32 +57,40 @@ obj = {
     delete tmp2[tmp];
   },
   GUILD_ONBOARDING_START: function handleOnboardingStart(guildId) {
-    closure_9[guildId.guildId] = obj.STARTED;
+    closure_4[guildId.guildId] = obj.STARTED;
   },
   GUILD_ONBOARDING_PROMPTS_FETCH_SUCCESS: function handlePromptsFetchSuccess(guildId) {
     guildId = guildId.guildId;
-    if (table[guildId] !== obj.STARTED) {
+    if (dependencyMap[guildId] !== obj.STARTED) {
       return false;
     } else {
-      table[guildId] = tmp ? obj.READY : obj.NOT_APPLICABLE;
+      dependencyMap[guildId] = tmp ? tmp2.READY : tmp2.NOT_APPLICABLE;
     }
   },
   GUILD_ONBOARDING_PROMPTS_FETCH_FAILURE: function handlePromptsFetchFailure(guildId) {
-    closure_9[guildId.guildId] = obj.NOT_APPLICABLE;
+    closure_4[guildId.guildId] = obj.NOT_APPLICABLE;
   },
   GUILD_ONBOARDING_COMPLETE: function handleCompleteOnboarding(guildId) {
-    closure_9[guildId.guildId] = obj.COMPLETED;
+    closure_4[guildId.guildId] = obj.COMPLETED;
   },
   GUILD_ONBOARDING_SET_STEP: function handleOnboardingStep(guildId) {
-    closure_10[guildId.guildId] = guildId.step;
+    closure_5[guildId.guildId] = guildId.step;
   },
   CONNECTION_OPEN: function handleResetOnboardingStep() {
-    let closure_10 = {};
+    let closure_5 = {};
   }
 };
-tmp2 = new tmp2(require("dispatcher"), obj);
-let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/guild_onboarding/GuildOnboardingStore.tsx");
+const guildOnboardingStore = new GuildOnboardingStore(require("dispatcher"), obj);
+const result = require("getFavoritesAwareGuildName").fileFinishedImporting("modules/guild_onboarding/GuildOnboardingStore.tsx");
 
-export default tmp2;
+export default guildOnboardingStore;
 export const GuildOnboardingStatus = obj;
-export { isOnboarding };
+export const isOnboarding = function isOnboarding(arg0) {
+  let hasItem = null != arg0;
+  if (hasItem) {
+    const items = [, ];
+    ({ STARTED: arr[0], READY: arr[1] } = obj);
+    hasItem = items.includes(arg0);
+  }
+  return hasItem;
+};

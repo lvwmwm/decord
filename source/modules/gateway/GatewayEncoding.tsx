@@ -1,71 +1,46 @@
-// Module ID: 12671
-// Function ID: 97849
-// Name: JSONEncoding
-// Dependencies: [6, 7, 12672, 4712, 2]
+// Module ID: 12693
+// Function ID: 12694
+// Name: pack
+// Dependencies: [12694, 4734, 2]
 
-// Module 12671 (JSONEncoding)
-import _classCallCheck from "_classCallCheck";
-import _defineProperties from "_defineProperties";
+// Module 12693 (pack)
 import getErlpackEncoding from "getErlpackEncoding";
-import { ProcessArgs } from "ProcessArgs";
+import { ProcessArgs } from "get";
 
 getErlpackEncoding = getErlpackEncoding.getErlpackEncoding();
-const tmp3 = (() => {
-  class JSONEncoding {
-    constructor() {
-      tmp = JSONEncoding(this, JSONEncoding);
-      return;
+class JSONEncoding {
+}
+const prototype = JSONEncoding.prototype;
+prototype["pack"] = function pack(arg0) {
+  return JSON.stringify(arg0);
+};
+prototype["unpack"] = function unpack(arg0) {
+  if (typeof arg0 === "init") {
+    let tmp2 = null;
+    if (null != arg0) {
+      tmp2 = typeof arg0;
     }
+    const _HermesInternal = HermesInternal;
+    const error = new Error("Expected a string to be passed to JSONEncoding.unpack, got " + tmp2);
+    throw error;
+  } else {
+    const _JSON = JSON;
+    return JSON.parse(arg0);
   }
-  let obj = {
-    key: "pack",
-    value(arg0) {
-      return JSON.stringify(arg0);
-    }
-  };
-  const items = [obj, , , ];
-  obj = {
-    key: "unpack",
-    value(arg0) {
-      if ("string" !== typeof arg0) {
-        let _Error = Error;
-        let tmp4 = null;
-        if (null != arg0) {
-          tmp4 = tmp;
-        }
-        const _HermesInternal = HermesInternal;
-        const prototype = _Error.prototype;
-        _Error = new _Error("Expected a string to be passed to JSONEncoding.unpack, got " + tmp4);
-        throw _Error;
-      } else {
-        const _JSON = JSON;
-        return JSON.parse(arg0);
-      }
-    }
-  };
-  items[1] = obj;
-  obj = {
-    key: "getName",
-    value() {
-      return "json";
-    }
-  };
-  items[2] = obj;
-  items[3] = {
-    key: "wantsString",
-    value() {
-      return true;
-    }
-  };
-  return callback(JSONEncoding, items);
-})();
-let tmp4 = tmp3;
+};
+prototype["getName"] = function getName() {
+  return "json";
+};
+prototype["wantsString"] = function wantsString() {
+  return true;
+};
+let tmp3 = JSONEncoding;
 if (undefined !== getErlpackEncoding) {
-  tmp4 = getErlpackEncoding;
+  tmp3 = getErlpackEncoding;
 }
 if (ProcessArgs.isDiscordGatewayPlaintextSet()) {
-  tmp4 = tmp3;
+  tmp3 = JSONEncoding;
 }
-const result = require("getErlpackEncoding").fileFinishedImporting("modules/gateway/GatewayEncoding.tsx");
+const result = require("set").fileFinishedImporting("modules/gateway/GatewayEncoding.tsx");
 
-export default tmp4;
+export default tmp3;

@@ -1,46 +1,50 @@
-// Module ID: 15613
-// Function ID: 120101
+// Module ID: 15648
+// Function ID: 15649
 // Name: ConnectedChannelSettingsInstantInvites
-// Dependencies: [57, 31, 27, 7664, 1348, 653, 33, 4165, 689, 1557, 566, 7663, 10170, 1273, 10188, 10189, 1212, 5618, 15614, 9217, 2]
+// Dependencies: [32, 19, 17, 7687, 1372, 676, 21, 4189, 712, 1581, 589, 7686, 10191, 1297, 10209, 10210, 1236, 5636, 15649, 9241, 2]
 // Exports: default
 
-// Module 15613 (ConnectedChannelSettingsInstantInvites)
+// Module 15648 (ConnectedChannelSettingsInstantInvites)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
-import { View } from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_7 from "_isNativeReflectConstruct";
+import module_9241 from "module_9241";
+import { View } from "SceneLoadingIndicator";
+import normalizeChannelPropertyForCompare from "normalizeChannelPropertyForCompare";
+import ensureGuildLoaded from "ensureGuildLoaded";
 import { ChannelSettingsSections } from "ME";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_10;
-let closure_9;
-const require = arg1;
-({ jsx: closure_9, jsxs: closure_10 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWER, flex: 1 };
-_createForOfIteratorHelperLoose.content = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.gap = { height: require("_createForOfIteratorHelperLoose").space.PX_16 };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-let obj1 = { height: require("_createForOfIteratorHelperLoose").space.PX_16 };
+let c10;
+let c9;
+let require = arg1;
+({ jsx: c9, jsxs: c10 } = jsxProd);
+createCacheKey = { content: null, gap: null };
+createCacheKey = { paddingHorizontal: require("Themes").space.PX_16, backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOWER, flex: 1 };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { height: require("Themes").space.PX_16 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let obj1 = { height: require("Themes").space.PX_16 };
 const result = require("get ActivityIndicator").fileFinishedImporting("components_native/channel_settings/ChannelSettingsInstantInvites.tsx");
 
 export default function ConnectedChannelSettingsInstantInvites() {
-  let items8 = _createForOfIteratorHelperLoose();
-  const tmp = invites(memo.useState(undefined), 2);
-  const first = tmp[0];
-  const importDefault = tmp[1];
-  let items = [items8];
+  let importDefault;
+  let tmp4;
+  let tmp = createCacheKey();
+  const require = tmp;
+  let tmp2 = importDefault;
+  let obj = dependencyMap;
+  [tmp4, importDefault] = invites(memo.useState(undefined), 2);
+  let items = [tmp];
+  let tmpResult = require;
   const callback = memo.useCallback((arg0) => {
-    callback(arg0 + items8.gap.height);
+
   }, items);
-  let obj = items8(566);
+  let obj1 = require(589) /* initialize */;
   const items1 = [memo1];
-  const dependencyMap = obj.useStateFromStores(items1, () => memo1.getChannel());
-  let obj1 = items8(566);
+  dependencyMap = obj1.useStateFromStores(items1, () => memo1.getChannel());
+  let obj2 = require(589) /* initialize */;
   const items2 = [memo1];
-  const stateFromStoresObject = obj1.useStateFromStoresObject(items2, () => memo1.getInvites());
+  const stateFromStoresObject = obj2.useStateFromStoresObject(items2, () => memo1.getInvites());
   invites = stateFromStoresObject.invites;
   const loading = stateFromStoresObject.loading;
   const items3 = [invites];
@@ -48,33 +52,31 @@ export default function ConnectedChannelSettingsInstantInvites() {
     const values = Object.values(invites);
     return values.sort((inviter, inviter2) => {
       inviter = inviter.inviter;
-      let username;
-      if (null != inviter) {
-        username = inviter.username;
+      let str;
+      if (inviter != null) {
+        str = inviter.username;
       }
-      let str = "";
-      let str2 = "";
-      if (null != username) {
-        str2 = username;
+      if (str == null) {
+        str = "";
       }
-      const formatted = str2.toLowerCase();
+      const formatted = str.toLowerCase();
       inviter2 = inviter2.inviter;
-      let username1;
-      if (null != inviter2) {
-        username1 = inviter2.username;
+      let str2;
+      if (inviter2 != null) {
+        str2 = inviter2.username;
       }
-      if (null != username1) {
-        str = username1;
+      if (str2 == null) {
+        str2 = "";
       }
-      return formatted.localeCompare(str.toLowerCase());
+      return formatted.localeCompare(str2.toLowerCase());
     });
   }, items3);
-  let obj2 = items8(566);
-  const items4 = [closure_7];
-  const stateFromStoresArray = obj2.useStateFromStoresArray(items4, () => {
-    if (null != guild_id) {
-      const sortedLinkedChannelsForGuild = outer1_7.getSortedLinkedChannelsForGuild(guild_id.guild_id);
-      let found = sortedLinkedChannelsForGuild.filter((id) => id.id === outer1_2.id);
+  const tmp3 = invites(memo.useState(undefined), 2);
+  const items4 = [ensureGuildLoaded];
+  const stateFromStoresArray = require(589) /* initialize */.useStateFromStoresArray(items4, () => {
+    if (null != closure_2) {
+      const sortedLinkedChannelsForGuild = outer1_7.getSortedLinkedChannelsForGuild(tmp.guild_id);
+      let found = sortedLinkedChannelsForGuild.filter((id) => id.id === id.id);
     } else {
       found = [];
     }
@@ -87,49 +89,60 @@ export default function ConnectedChannelSettingsInstantInvites() {
   }, items5);
   const items6 = [memo1.length];
   const effect = memo.useEffect(() => {
-    callback(guild_id[11]).setSection(outer1_8.INSTANT_INVITES);
+    callback(7686).setSection(constants.INSTANT_INVITES);
   }, []);
   const items7 = [memo1];
   const callback1 = memo.useCallback((arg0, arg1) => {
     if ("invite" === memo1[arg1].type) {
-      let obj = { invite: tmp.data };
-      let tmp5 = outer1_9(callback(guild_id[12]), obj);
+      let obj = { invite: null };
+      obj[0] = tmp.data;
+      let tmp5 = outer1_9(outer1_1(10191), obj);
     } else {
-      obj = { channel: tmp.data };
-      tmp5 = outer1_9(items8(guild_id[12]).LinkedChannelInvite, obj);
+      obj = { channel: null };
+      obj[0] = tmp.data;
+      tmp5 = outer1_9(tmp(10191).LinkedChannelInvite, obj);
     }
     return tmp5;
   }, items7);
   if (!loading) {
     if (0 === memo1.length) {
-      obj = { lightSource: importDefault(10188), darkSource: importDefault(10189) };
-      const intl = items8(1212).intl;
-      obj.title = intl.string(items8(1212).t["+nLJkZ"]);
-      const intl2 = items8(1212).intl;
-      obj.body = intl2.string(items8(1212).t.F53CAc);
-      return callback(items8(1273).EmptyState, obj);
+      obj = { lightSource: null, darkSource: null, title: null, body: null };
+      obj[0] = tmp2(10209);
+      obj[1] = tmp2(10210);
+      const intl = tmpResult(1236).intl;
+      obj[2] = intl.string(tmpResult(1236).t["+nLJkZ"]);
+      const intl2 = tmpResult(1236).intl;
+      obj[3] = intl2.string(tmpResult(1236).t.F53CAc);
+      return callback(tmpResult(1297).EmptyState, obj);
     }
   }
   if (!loading) {
-    if (null != first) {
-      obj = { style: items8.content };
-      obj1 = { sections: items6, estimatedListSize: "windowSize", itemSize: first, renderItem: callback1, insetStart: items8.gap.height, insetEnd: importDefault(1557)().bottom };
-      obj.children = callback(importDefault(9217), obj1);
-      let tmp15Result = callback(stateFromStoresArray, obj);
+    if (null != tmp4) {
+      obj = { style: null, children: null };
+      obj[0] = tmp.content;
+      obj1 = { sections: null, estimatedListSize: "windowSize", itemSize: null, renderItem: null, insetStart: null, insetEnd: null };
+      obj1[0] = items6;
+      obj1[2] = tmp4;
+      obj1[3] = callback1;
+      obj1[4] = tmp.gap.height;
+      obj1[5] = importDefault(1581)().bottom;
+      obj[1] = callback(tmp2(9241), obj1);
+      let tmp16Result = callback(stateFromStoresArray, obj);
     }
   }
-  obj2 = { style: items8.content };
-  items8 = [, ];
-  items8[0] = callback(items8(5618).SceneLoadingIndicator, {});
-  let tmp17 = null;
+  obj2 = { style: tmp.content, children: null };
+  tmp = callback;
+  const items8 = [callback(tmpResult(5636).SceneLoadingIndicator, {}), ];
+  tmpResult = null;
   if (memo1.length > 0) {
-    const obj3 = {};
+    tmp2 = tmp2(15649);
+    obj = { item: null, onMeasured: null };
     memo1 = memo1[0];
-    obj3.item = memo1;
-    obj3.onMeasured = callback;
-    tmp17 = callback(importDefault(15614), obj3);
+    obj[0] = memo1;
+    obj[1] = callback;
+    tmpResult = tmp(tmp2, obj);
   }
-  items8[1] = tmp17;
-  obj2.children = items8;
-  tmp15Result = closure_10(stateFromStoresArray, obj2);
+  items8[1] = tmpResult;
+  obj2[1] = items8;
+  tmp16Result = closure_10(stateFromStoresArray, obj2);
 };

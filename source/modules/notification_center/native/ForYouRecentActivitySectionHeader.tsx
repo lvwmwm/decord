@@ -1,30 +1,30 @@
-// Module ID: 15273
-// Function ID: 116129
+// Module ID: 15306
+// Function ID: 15307
 // Name: ForYouRecentActivitySectionHeader
-// Dependencies: [31, 27, 33, 4165, 689, 4161, 1212, 2]
+// Dependencies: [19, 17, 21, 4189, 712, 4185, 1236, 2]
 // Exports: ForYouRecentActivitySectionHeader
 
-// Module 15273 (ForYouRecentActivitySectionHeader)
-import "result";
+// Module 15306 (ForYouRecentActivitySectionHeader)
+import "noop";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
 const require = arg1;
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { marginTop: require("_createForOfIteratorHelperLoose").space.PX_8, marginBottom: require("_createForOfIteratorHelperLoose").space.PX_8, paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_24 };
-_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.textHeader = { marginTop: require("_createForOfIteratorHelperLoose").space.PX_8 };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-const obj1 = { marginTop: require("_createForOfIteratorHelperLoose").space.PX_8 };
+createCacheKey = { container: null, textHeader: null };
+createCacheKey = { marginTop: require("Themes").space.PX_8, marginBottom: require("Themes").space.PX_8, paddingHorizontal: require("Themes").space.PX_24 };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { marginTop: require("Themes").space.PX_8 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+const obj1 = { marginTop: require("Themes").space.PX_8 };
 const result = require("jsxProd").fileFinishedImporting("modules/notification_center/native/ForYouRecentActivitySectionHeader.tsx");
 
 export const ForYouRecentActivitySectionHeader = function ForYouRecentActivitySectionHeader() {
-  const tmp = _createForOfIteratorHelperLoose();
-  let obj = { style: tmp.container };
-  obj = { style: tmp.textHeader, color: "text-muted", variant: "text-sm/semibold", accessibilityRole: "header" };
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj.children = intl.string(require(1212) /* getSystemLocale */.t.yM9Krm);
-  obj.children = jsx(require(4161) /* Text */.Text, { style: tmp.textHeader, color: "text-muted", variant: "text-sm/semibold", accessibilityRole: "header" });
-  return <View style={tmp.textHeader} color="text-muted" variant="text-sm/semibold" accessibilityRole="header" />;
+  const tmp = createCacheKey();
+  let obj = { style: tmp.container, children: null };
+  obj = { style: tmp.textHeader, color: "text-muted", variant: "text-sm/semibold", accessibilityRole: "header", children: null };
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj[4] = intl.string(require(1236) /* getSystemLocale */.t.yM9Krm);
+  obj[1] = jsx(require(4185) /* Text */.Text, { style: tmp.textHeader, color: "text-muted", variant: "text-sm/semibold", accessibilityRole: "header", children: null });
+  return <View style={tmp.textHeader} color="text-muted" variant="text-sm/semibold" accessibilityRole="header">{null}</View>;
 };

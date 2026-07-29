@@ -1,14 +1,16 @@
-// Module ID: 6646
-// Function ID: 58610
+// Module ID: 6667
+// Function ID: 6668
 // Name: useTimeout
-// Dependencies: [31, 2]
+// Dependencies: [19, 2]
 // Exports: default
 
-// Module 6646 (useTimeout)
-import result from "result";
+// Module 6667 (useTimeout)
+import noop from "noop";
 
-({ useEffect: closure_0, useRef: closure_1 } = result);
-result = require("set").fileFinishedImporting("hooks/useTimeout.tsx");
+let c0;
+let closure_1;
+({ useEffect: c0, useRef: closure_1 } = noop);
+const result = require("set").fileFinishedImporting("hooks/useTimeout.tsx");
 
 export default function useTimeout(arg0, arg1) {
   const callback = arg0;
@@ -23,7 +25,7 @@ export default function useTimeout(arg0, arg1) {
   callback(() => {
     if (null !== closure_1) {
       const _setTimeout = setTimeout;
-      const timeout = setTimeout(() => outer1_2.current(), closure_1);
+      const timeout = setTimeout(() => ref.current(), tmp);
       return () => clearTimeout(closure_0);
     }
   }, items1);

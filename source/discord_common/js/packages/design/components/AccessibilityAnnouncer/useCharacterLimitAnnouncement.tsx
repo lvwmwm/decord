@@ -1,11 +1,11 @@
-// Module ID: 7623
-// Function ID: 60835
+// Module ID: 7646
+// Function ID: 7647
 // Name: useCharacterLimitAnnouncement
-// Dependencies: [31, 3878, 2]
+// Dependencies: [19, 3902, 2]
 // Exports: useCharacterLimitAnnouncement
 
-// Module 7623 (useCharacterLimitAnnouncement)
-import result from "result";
+// Module 7646 (useCharacterLimitAnnouncement)
+import noop from "noop";
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("../discord_common/js/packages/design/components/AccessibilityAnnouncer/useCharacterLimitAnnouncement.tsx");
@@ -14,18 +14,19 @@ export const useCharacterLimitAnnouncement = function useCharacterLimitAnnouncem
   currentLength = currentLength.currentLength;
   const maxLength = currentLength.maxLength;
   const message = currentLength.message;
-  let closure_3 = message.useRef(false);
+  let closure_3;
+  closure_3 = message.useRef(false);
   const items = [currentLength, maxLength, message];
   const effect = message.useEffect(() => {
     if (null != maxLength) {
-      if (currentLength >= maxLength) {
+      if (currentLength >= tmp) {
         if (!ref.current) {
-          ref.current = true;
+          tmp4.current = true;
           const AccessibilityAnnouncer = currentLength(maxLength[1]).AccessibilityAnnouncer;
           AccessibilityAnnouncer.announce(message, "assertive");
         }
       }
-      if (currentLength < maxLength) {
+      if (currentLength < tmp) {
         ref.current = false;
       }
     }

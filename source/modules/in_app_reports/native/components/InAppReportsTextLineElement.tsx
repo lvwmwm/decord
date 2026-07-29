@@ -1,118 +1,199 @@
-// Module ID: 7687
-// Function ID: 61375
+// Module ID: 7710
+// Function ID: 7711
 // Name: TextLineElement
-// Dependencies: [5, 57, 31, 27, 33, 4165, 689, 5485, 4597, 477, 4145, 3862, 4161, 4578, 1212, 5525, 3865, 2]
+// Dependencies: [5, 32, 19, 17, 21, 4189, 712, 5503, 4619, 500, 4169, 3886, 4185, 4600, 1236, 5543, 3889, 2]
 // Exports: default
 
-// Module 7687 (TextLineElement)
-import closure_4 from "_createForOfIteratorHelperLoose";
+// Module 7710 (TextLineElement)
+import closure_4 from "createCacheKey";
 import _slicedToArray from "_slicedToArray";
-import result from "result";
-import get_ActivityIndicator from "get ActivityIndicator";
+import noop from "noop";
+import get_ActivityIndicator from "set";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_10;
-let closure_7;
-let closure_8;
-let closure_9;
+let c10;
+let c9;
+let error;
+let metroImportAll;
 const require = arg1;
-({ View: closure_7, Linking: closure_8 } = get_ActivityIndicator);
-({ jsx: closure_9, jsxs: closure_10 } = jsxProd);
-_createForOfIteratorHelperLoose = { container: { marginBottom: 16, paddingHorizontal: 16 }, header: { marginBottom: 8 }, description: { marginBottom: 16 }, trailingButtonContainer: { paddingHorizontal: 8 }, smsInfoContainer: { display: "flex", flexDirection: "row", alignItems: "center" } };
-_createForOfIteratorHelperLoose = { flex: 1, display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "space-between", borderRadius: require("_createForOfIteratorHelperLoose").radii.xs, borderColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWEST, borderWidth: 1, padding: 8, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW, marginBottom: 8 };
-_createForOfIteratorHelperLoose.smsNumberContainer = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.smsNumberContainerSuccess = { borderColor: require("_createForOfIteratorHelperLoose").colors.STATUS_POSITIVE_BACKGROUND };
-_createForOfIteratorHelperLoose.startButtonContainer = { paddingHorizontal: 12, marginBottom: 8, marginLeft: 12 };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-let obj1 = { borderColor: require("_createForOfIteratorHelperLoose").colors.STATUS_POSITIVE_BACKGROUND };
-let result = require("result").fileFinishedImporting("modules/in_app_reports/native/components/InAppReportsTextLineElement.tsx");
+({ View: error, Linking: metroImportAll } = get_ActivityIndicator);
+({ jsx: c9, jsxs: c10 } = jsxProd);
+createCacheKey = { container: { marginBottom: 16, paddingHorizontal: 16 }, header: { marginBottom: 8 }, description: { marginBottom: 16 }, trailingButtonContainer: { paddingHorizontal: 8 }, smsInfoContainer: { display: "flex", flexDirection: "row", alignItems: "center" }, smsNumberContainer: null, smsNumberContainerSuccess: null, startButtonContainer: null };
+createCacheKey = { flex: 1, display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "space-between", borderRadius: require("Themes").radii.xs, borderColor: require("Themes").colors.BACKGROUND_BASE_LOWEST, borderWidth: 1, padding: 8, backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW, marginBottom: 8 };
+createCacheKey[5] = createCacheKey;
+createCacheKey[6] = { borderColor: require("Themes").colors.STATUS_POSITIVE_BACKGROUND };
+createCacheKey[7] = { paddingHorizontal: 12, marginBottom: 8, marginLeft: 12 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let obj1 = { borderColor: require("Themes").colors.STATUS_POSITIVE_BACKGROUND };
+let result = require("noop").fileFinishedImporting("modules/in_app_reports/native/components/InAppReportsTextLineElement.tsx");
 
 export default function TextLineElement(element) {
   let body;
+  let c2;
   let is_localized;
   let title;
+  let tmp3;
   const data = element.element.data;
   const sms = data.sms;
   const sms_body = data.sms_body;
-  async function _handleOpenSms() {
-    let str = "?";
-    if (obj.isIOS()) {
-      let str2 = "&";
-      if (obj2.getSystemVersionMajor() < 8) {
-        str2 = ";";
+  c2 = undefined;
+  function _handleOpenSms() {
+    const self = this;
+    const tmp = outer1_4(function*() {
+      if (table === 2) {
+        table = 3;
+        HermesBuiltin.throwTypeError();
+      } else if (tmp5 === 3) {
+        if (arg0 === 1) {
+          throw arg1;
+        } else if (arg0 === 2) {
+          let obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
+        } else {
+          return { value: "HermesInternal", done: null };
+        }
+      } else {
+        try {
+          table = 2;
+          if (0 === c2) {
+            if (arg0 === 1) {
+              table = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              table = 3;
+              obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            } else {
+              let closure_1 = tmp3;
+              let c0 = tmp2;
+              c0 = undefined;
+              const tmp15 = (function buildSmsUrl(outer1_0, outer1_1) {
+                let str = "?";
+                if (obj.isIOS()) {
+                  let str2 = "&";
+                  if (tmpResult.getSystemVersionMajor() < 8) {
+                    str2 = ";";
+                  }
+                  str = str2;
+                  tmpResult = _undefined(table[10]);
+                }
+                let str3 = "";
+                const combined = "sms:" + outer1_0;
+                if (null != outer1_1) {
+                  const _encodeURIComponent = encodeURIComponent;
+                  const _HermesInternal = HermesInternal;
+                  str3 = "" + str + "body=" + encodeURIComponent(outer1_1);
+                }
+                return combined + str3;
+              })(outer1_0, outer1_1);
+              c0 = tmp15;
+              c2 = 1;
+              table = 1;
+              const obj1 = { value: null, done: false };
+              obj1[0] = outer1_8.canOpenURL(tmp15);
+              return obj1;
+            }
+          } else if (arg0 === 1) {
+            table = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            table = 3;
+            const obj2 = { value: null, done: true };
+            obj2[0] = arg1;
+            return obj2;
+          } else {
+            if (arg1) {
+              obj = outer1_1(table[11]);
+              obj.openURL(c0);
+            }
+            table = 3;
+            return { value: "HermesInternal", done: null };
+          }
+        } catch (tmp17) {
+          table = tmp;
+          throw tmp17;
+        }
       }
-      str = str2;
-      obj2 = sms(_handleOpenSms[10]);
+    });
+    const _handleOpenSms = tmp;
+    const apply = tmp.apply;
+    if (typeof apply === "unknown") {
+      let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+    } else {
+      applyArgumentsResult = apply(self, arguments);
     }
-    let str3 = "";
-    const combined = "sms:" + outer2_0;
-    if (null != outer2_1) {
-      const _encodeURIComponent = encodeURIComponent;
-      const _HermesInternal = HermesInternal;
-      str3 = "" + str + "body=" + encodeURIComponent(tmp2);
-    }
-    const sum = combined + str3;
-    if (yield outer3_8.canOpenURL(sum)) {
-      sms_body(_handleOpenSms[11]).openURL(sum);
-      const obj3 = sms_body(_handleOpenSms[11]);
-    }
+    return applyArgumentsResult;
   }
   ({ title, body, is_localized } = data);
-  const tmp = _createForOfIteratorHelperLoose();
-  const tmp2 = callback(React.useState(false), 2);
-  const first = tmp2[0];
-  let closure_2 = tmp2[1];
+  let tmp = createCacheKey();
+  [tmp3, c2] = callback(React.useState(false), 2);
   if (is_localized) {
-    let obj = { style: tmp.container };
-    obj = { style: tmp.header, variant: "heading-md/extrabold", color: "mobile-text-heading-primary", accessibilityRole: "header", children: title };
-    const items = [callback2(sms(_handleOpenSms[12]).Text, obj), , ];
-    obj = { style: tmp.description, variant: "text-md/medium", children: tmp4(body) };
-    items[1] = callback2(sms(_handleOpenSms[12]).Text, obj);
-    const obj1 = { style: tmp.smsInfoContainer };
-    let obj2 = {};
-    const items1 = [tmp.smsNumberContainer, first ? tmp.smsNumberContainerSuccess : {}];
-    obj2.style = items1;
-    let obj3 = { variant: "text-sm/semibold", color: "interactive-text-active", children: sms };
-    const items2 = [callback2(sms(_handleOpenSms[12]).Text, obj3), ];
-    const obj4 = { style: tmp.trailingButtonContainer };
-    const obj5 = {};
-    const intl = sms(_handleOpenSms[14]).intl;
+    let obj = { style: null, children: null };
+    obj[0] = tmp.container;
+    obj = { style: null, variant: "heading-md/extrabold", color: "mobile-text-heading-primary", accessibilityRole: "header", children: null };
+    obj[0] = tmp.header;
+    obj[4] = title;
+    const items = [callback2(sms(tmp4[12]).Text, obj), , ];
+    obj = { style: null, variant: "text-md/medium", children: null };
+    obj[0] = tmp.description;
+    obj[2] = tmp5(body);
+    items[1] = callback2(sms(tmp4[12]).Text, obj);
+    let obj1 = { style: null, children: null };
+    obj1[0] = tmp.smsInfoContainer;
+    let obj2 = { style: null, children: null };
+    const items1 = [tmp.smsNumberContainer, tmp3 ? tmp.smsNumberContainerSuccess : {}];
+    obj2[0] = items1;
+    const obj3 = { variant: "text-sm/semibold", color: "interactive-text-active", children: null };
+    obj3[2] = sms;
+    const items2 = [callback2(sms(tmp4[12]).Text, obj3), ];
+    const obj4 = { style: null, children: null };
+    obj4[0] = tmp.trailingButtonContainer;
+    const intl = sms(tmp4[14]).intl;
     const string = intl.string;
-    const t = sms(_handleOpenSms[14]).t;
-    if (first) {
+    const t = sms(tmp4[14]).t;
+    if (tmp3) {
       let stringResult = string(t.t5VZ88);
     } else {
       stringResult = string(t.OpuAlK);
     }
-    obj5.text = stringResult;
-    obj5.size = "sm";
-    obj5.onPress = function handleCopyPress() {
+    const obj5 = { text: null, size: "sm", onPress: null, variant: "secondary" };
+    obj5[0] = stringResult;
+    obj5[2] = function handleCopyPress() {
       sms(_handleOpenSms[15]).copy(sms);
       const obj = sms(_handleOpenSms[15]);
       const result = sms(_handleOpenSms[16]).presentCopiedToClipboard();
-      callback(true);
+      _undefined(true);
     };
-    obj5.variant = "secondary";
-    obj4.children = callback2(sms(_handleOpenSms[13]).Button, obj5);
+    obj4[1] = callback2(sms(tmp4[13]).Button, obj5);
     items2[1] = callback2(closure_7, obj4);
-    obj2.children = items2;
+    obj2[1] = items2;
     const items3 = [closure_10(closure_7, obj2), ];
-    const obj6 = { style: tmp.startButtonContainer };
-    const obj7 = {};
-    const intl2 = sms(_handleOpenSms[14]).intl;
-    obj7.text = intl2.string(sms(_handleOpenSms[14]).t.BDYHSe);
-    obj7.size = "md";
-    obj7.onPress = function handleOpenSms() {
-      return _handleOpenSms(...arguments);
+    const obj6 = { style: null, children: null };
+    obj6[0] = tmp.startButtonContainer;
+    const obj7 = { text: null, size: "md", onPress: null };
+    const intl2 = tmp11(tmp4[14]).intl;
+    obj7[0] = intl2.string(sms(tmp4[14]).t.BDYHSe);
+    obj7[2] = function handleOpenSms() {
+      const self = this;
+      const apply = _handleOpenSms.apply;
+      if (typeof apply === "unknown") {
+        let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+      } else {
+        applyArgumentsResult = apply(self, arguments);
+      }
+      return applyArgumentsResult;
     };
-    obj6.children = callback2(sms(_handleOpenSms[13]).Button, obj7);
+    obj6[1] = callback2(sms(tmp4[13]).Button, obj7);
     items3[1] = callback2(closure_7, obj6);
-    obj1.children = items3;
+    obj1[1] = items3;
     items[2] = closure_10(closure_7, obj1);
-    obj.children = items;
+    obj[1] = items;
     return closure_10(closure_7, obj);
   } else {
     return null;
   }
+  const tmp2 = callback(React.useState(false), 2);
 };

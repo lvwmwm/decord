@@ -1,38 +1,40 @@
-// Module ID: 6304
-// Function ID: 56399
-// Name: items
-// Dependencies: [31, 27, 33, 4165, 689, 4026, 4166, 666, 2]
+// Module ID: 6325
+// Function ID: 6326
+// Dependencies: [19, 17, 21, 4189, 712, 4050, 4190, 689, 2]
 
-// Module 6304 (items)
-import importAllResult from "result";
+// Module 6325
+import importAllResult from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_4;
-let closure_5;
+let StyleSheet;
+let c4;
+let c5;
 let closure_6;
-let closure_7;
+let error;
 const require = arg1;
-({ Image: closure_4, View: closure_5 } = get_ActivityIndicator);
-({ jsx: closure_6, jsxs: closure_7 } = jsxProd);
+let c3 = importAllResult;
+({ Image: c4, View: c5, StyleSheet } = get_ActivityIndicator);
+({ jsx: closure_6, jsxs: error } = jsxProd);
 let closure_8 = Object.freeze({ FLASH_TIME_PERCENT: 0.72, FLASH_DURATION_PERCENT: 0.08 });
-let obj = { container: { overflow: "hidden" } };
+let obj = { container: { overflow: "hidden" }, shineContainer: null, shine: null, shineInner: null };
 obj = {};
-const merged = Object.assign(get_ActivityIndicator.StyleSheet.absoluteFillObject);
-obj.shineContainer = obj;
-_createForOfIteratorHelperLoose = { transform: null, width: 56, flex: 0, height: "300%", top: "-10%" };
+const merged = Object.assign(StyleSheet.absoluteFillObject);
+obj[1] = obj;
 let items = [{ rotate: "30deg" }];
-_createForOfIteratorHelperLoose.transform = items;
-obj.shine = _createForOfIteratorHelperLoose;
-obj.shineInner = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_MOD_NORMAL, flex: 1 };
-let closure_9 = _createForOfIteratorHelperLoose.createStyles(obj);
+obj[2] = { transform: items, width: 56, flex: 0, height: "300%", top: "-10%" };
+createCacheKey = { backgroundColor: require("Themes").colors.BACKGROUND_MOD_NORMAL, flex: 1 };
+obj[3] = createCacheKey;
+let closure_9 = createCacheKey.createStyles(obj);
 let closure_10 = { code: "function ShineAnimationTsx1(){const{interpolate,progress}=this.__closure;const widthPercent=interpolate(progress.get(),[0,1],[20,160]);return{width:widthPercent+\"%\"};}" };
 let closure_11 = { code: "function ShineAnimationTsx2(){const{ShineAnimationConfig,interpolateColor,progress,flashStartColor,flashEndColor}=this.__closure;const startTime=ShineAnimationConfig.FLASH_TIME_PERCENT;const duration=ShineAnimationConfig.FLASH_DURATION_PERCENT;return{backgroundColor:interpolateColor(progress.get(),[0,startTime,startTime,startTime+duration,1],[flashStartColor,flashStartColor,flashEndColor,flashEndColor,flashStartColor])};}" };
-let obj2 = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_MOD_NORMAL, flex: 1 };
 const memoResult = importAllResult.memo(function ShineAnimation(arg0) {
   let source;
   let style;
+  let sharedValue;
+  let importDefault;
+  let hexResult1;
   ({ source, style } = arg0);
   const tmp = callback3();
   let obj = sharedValue(hexResult1[5]);
@@ -46,9 +48,9 @@ const memoResult = importAllResult.memo(function ShineAnimation(arg0) {
   let obj1 = sharedValue(hexResult1[5]);
   class A {
     constructor() {
-      obj = {};
-      obj2 = outer1_0(alpha[5]);
-      obj.width = "" + obj2.interpolate(closure_0.get(), [0, 1], [20, 160]) + "%";
+      obj = { width: null };
+      obj2 = c0(c2[5]);
+      obj[0] = "" + obj2.interpolate(c0.get(), [0, 1], [20, 160]) + "%";
       return obj;
     }
   }
@@ -69,20 +71,20 @@ const memoResult = importAllResult.memo(function ShineAnimation(arg0) {
   class E {
     constructor() {
       FLASH_TIME_PERCENT = outer1_8.FLASH_TIME_PERCENT;
-      obj = {};
-      obj2 = outer1_0(alpha[5]);
+      obj = { backgroundColor: null };
+      obj2 = c0(c2[5]);
       items = [0];
       items[1] = FLASH_TIME_PERCENT;
       items[2] = FLASH_TIME_PERCENT;
       items[3] = FLASH_TIME_PERCENT + outer1_8.FLASH_DURATION_PERCENT;
       items[4] = 1;
       items1 = [, , , , ];
-      items1[0] = closure_1;
-      items1[1] = closure_1;
-      items1[2] = alpha;
-      items1[3] = alpha;
-      items1[4] = closure_1;
-      obj.backgroundColor = obj2.interpolateColor(closure_0.get(), items, items1);
+      items1[0] = c1;
+      items1[1] = c1;
+      items1[2] = c2;
+      items1[3] = c2;
+      items1[4] = c1;
+      obj[0] = obj2.interpolateColor(c0.get(), items, items1);
       return obj;
     }
   }
@@ -91,15 +93,15 @@ const memoResult = importAllResult.memo(function ShineAnimation(arg0) {
   E.__workletHash = 9845866779228;
   E.__initData = closure_11;
   const animatedStyle1 = sharedValue(hexResult1[5]).useAnimatedStyle(E);
-  obj1 = { style: items1 };
+  obj1 = { style: items1, children: null };
   items1 = [tmp.container, style, animatedStyle1];
-  let obj2 = { style: tmp.shineContainer };
+  let obj2 = { style: tmp.shineContainer, children: null };
   const items2 = [callback(importDefault(hexResult1[5]).View, { style: animatedStyle }), ];
   const obj8 = sharedValue(hexResult1[5]);
   items2[1] = callback(closure_5, { style: tmp.shine, children: callback(closure_5, obj4) });
-  obj2.children = items2;
+  obj2[1] = items2;
   const items3 = [callback2(closure_5, obj2), callback(closure_4, { source })];
-  obj1.children = items3;
+  obj1[1] = items3;
   return callback2(importDefault(hexResult1[5]).View, obj1);
 });
 let result = require("jsxProd").fileFinishedImporting("components_native/premium/ShineAnimation.tsx");

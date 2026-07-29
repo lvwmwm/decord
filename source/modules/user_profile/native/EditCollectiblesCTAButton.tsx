@@ -1,129 +1,123 @@
-// Module ID: 7929
-// Function ID: 63014
-// Dependencies: [31, 4157, 655, 1552, 33, 4165, 1557, 566, 7930, 4026, 4577, 3811, 5792, 1212, 4134, 7931, 5779, 4133, 4578, 2]
+// Module ID: 7954
+// Function ID: 7955
+// Dependencies: [19, 4181, 678, 1576, 21, 4189, 1581, 589, 7955, 4050, 4599, 3835, 5810, 1236, 4158, 7956, 5797, 4157, 4600, 2]
 
-// Module 7929
-import importAllResult from "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 7954
+import importAllResult from "set";
+import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
 import { CollectiblesMobileShopScreen as closure_5 } from "items";
 import { MEDIA_PICKER_SEND_BUTTON_SPRING as closure_6 } from "DRAG_HANDLE";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
 const require = arg1;
-let closure_8 = _createForOfIteratorHelperLoose.createStyles({ buttonRowContainer: { flexGrow: 0, flexDirection: "row", justifyContent: "flex-end", paddingHorizontal: 12, height: 48 }, buttonContainer: { position: "absolute", bottom: 0, left: 0, right: 0, marginLeft: 24, marginRight: 24, flexDirection: "column", justifyContent: "flex-end" } });
+let c3 = importAllResult;
+let closure_8 = createCacheKey.createStyles({ buttonRowContainer: { flexGrow: 0, flexDirection: "row", justifyContent: "flex-end", paddingHorizontal: 12, height: 48 }, buttonContainer: { position: "absolute", bottom: 0, left: 0, right: 0, marginLeft: 24, marginRight: 24, flexDirection: "column", justifyContent: "flex-end" } });
 let closure_9 = { code: "function EditCollectiblesCTAButtonTsx1(){const{shouldShowButton,APPLY_BUTTON_BOUNCE_DISTANCE,APPLY_BUTTON_SCALE_TRANSITION,reducedMotion,withSpring,MEDIA_PICKER_SEND_BUTTON_SPRING}=this.__closure;const targetTranslateY=shouldShowButton.get()?0:APPLY_BUTTON_BOUNCE_DISTANCE;const targetScale=shouldShowButton.get()?1:APPLY_BUTTON_SCALE_TRANSITION;return{transform:[{translateY:reducedMotion?targetTranslateY:withSpring(targetTranslateY,MEDIA_PICKER_SEND_BUTTON_SPRING)},{scale:reducedMotion?targetScale:withSpring(targetScale,MEDIA_PICKER_SEND_BUTTON_SPRING)}]};}" };
 let closure_10 = { code: "function EditCollectiblesCTAButtonTsx2(){const{shouldShowButton}=this.__closure;return{pointerEvents:shouldShowButton.get()?'box-none':'none'};}" };
 let closure_11 = { code: "function EditCollectiblesCTAButtonTsx3(){const{shouldShowButton,reducedMotion,withSpring,MEDIA_PICKER_SEND_BUTTON_SPRING}=this.__closure;const targetOpacity=shouldShowButton.get()?1:0;return{opacity:reducedMotion?targetOpacity:withSpring(targetOpacity,{...MEDIA_PICKER_SEND_BUTTON_SPRING,overshootClamping:true})};}" };
 const memoResult = importAllResult.memo((user) => {
   let isTryItOut;
   let onApply;
+  let product;
+  let purchase;
   user = user.user;
   const currentSkuId = user.currentSkuId;
   const selectedSkuId = user.selectedSkuId;
   ({ isTryItOut, onApply } = user);
   const analyticsLocations = user.analyticsLocations;
   const analyticsSource = user.analyticsSource;
+  let stateFromStores;
+  let sharedValue;
   let callback;
   let c9;
   const tmp = callback();
   let obj = user(selectedSkuId[7]);
-  let items = [analyticsLocations];
-  const stateFromStores = obj.useStateFromStores(items, () => analyticsLocations.useReducedMotion);
-  const tmp3 = currentSkuId(selectedSkuId[8])(selectedSkuId);
-  const purchase = tmp3.purchase;
+  const items = [analyticsLocations];
+  stateFromStores = obj.useStateFromStores(items, () => analyticsLocations.useReducedMotion);
+  ({ purchase, product } = currentSkuId(selectedSkuId[8])(selectedSkuId));
   let obj1 = user(selectedSkuId[9]);
-  const sharedValue = obj1.useSharedValue(false);
+  sharedValue = obj1.useSharedValue(false);
+  let obj2 = onApply;
   const items1 = [selectedSkuId, currentSkuId, sharedValue];
   const effect = onApply.useEffect(() => {
     const result = sharedValue.set(selectedSkuId !== currentSkuId);
   }, items1);
-  let obj2 = user(selectedSkuId[9]);
+  const tmp6 = currentSkuId(selectedSkuId[8])(selectedSkuId);
   class O {
     constructor() {
+      obj = c7;
       num = 60;
-      if (closure_7.get()) {
+      if (c7.get()) {
         num = 0;
       }
       num2 = 0.9;
-      if (closure_7.get()) {
+      if (obj.get()) {
         num2 = 1;
       }
-      obj = {};
-      obj = {};
       withSpringResult = num;
-      if (!closure_6) {
-        tmp2 = user;
-        tmp3 = selectedSkuId;
-        num3 = 10;
-        obj3 = user(selectedSkuId[10]);
-        tmp4 = outer1_6;
-        withSpringResult = obj3.withSpring(num, outer1_6);
+      tmp = c6;
+      if (!c6) {
+        tmp3 = user;
+        tmp4 = selectedSkuId;
+        obj2 = user(selectedSkuId[10]);
+        tmp5 = c6;
+        withSpringResult = obj2.withSpring(num, c6);
       }
-      obj.translateY = withSpringResult;
       items = [, ];
-      items[0] = obj;
-      obj1 = {};
+      items[0] = { translateY: withSpringResult };
       withSpringResult1 = num2;
-      if (!closure_6) {
-        tmp6 = user;
-        tmp7 = selectedSkuId;
-        num4 = 10;
-        obj5 = user(selectedSkuId[10]);
-        tmp8 = outer1_6;
-        withSpringResult1 = obj5.withSpring(num2, outer1_6);
+      if (!tmp) {
+        tmp7 = user;
+        tmp8 = selectedSkuId;
+        obj3 = user(selectedSkuId[10]);
+        tmp9 = c6;
+        withSpringResult1 = obj3.withSpring(num2, c6);
       }
-      obj1.scale = withSpringResult1;
-      items[1] = obj1;
-      obj.transform = items;
-      return obj;
+      items[1] = { scale: withSpringResult1 };
+      return { transform: items };
     }
   }
   obj = { shouldShowButton: sharedValue, APPLY_BUTTON_BOUNCE_DISTANCE: 60, APPLY_BUTTON_SCALE_TRANSITION: 0.9, reducedMotion: stateFromStores, withSpring: user(selectedSkuId[10]).withSpring, MEDIA_PICKER_SEND_BUTTON_SPRING: stateFromStores };
   O.__closure = obj;
   O.__workletHash = 15594859424201;
   O.__initData = c9;
-  const animatedStyle = obj2.useAnimatedStyle(O);
+  const animatedStyle = user(selectedSkuId[9]).useAnimatedStyle(O);
+  let obj4 = user(selectedSkuId[9]);
   class M {
     constructor() {
-      obj = {};
-      str = "none";
-      if (closure_7.get()) {
-        str = "box-none";
+      pointerEvents = "none";
+      if (c7.get()) {
+        pointerEvents = "box-none";
       }
-      obj.pointerEvents = str;
-      return obj;
+      return { pointerEvents };
     }
   }
   M.__closure = { shouldShowButton: sharedValue };
   M.__workletHash = 16151141699021;
   M.__initData = closure_10;
   const animatedProps = user(selectedSkuId[9]).useAnimatedProps(M);
-  let obj5 = user(selectedSkuId[9]);
+  const obj6 = user(selectedSkuId[9]);
   class R {
     constructor() {
       num = 0;
-      if (closure_7.get()) {
+      if (c7.get()) {
         num = 1;
       }
-      obj = {};
       withSpringResult = num;
-      if (!closure_6) {
+      if (!c6) {
         tmp2 = user;
         tmp3 = selectedSkuId;
-        num2 = 10;
-        obj2 = user(selectedSkuId[10]);
+        obj = user(selectedSkuId[10]);
         obj = {};
-        tmp4 = outer1_6;
+        tmp4 = c6;
         tmp5 = obj;
-        merged = Object.assign(outer1_6);
+        merged = Object.assign(c6);
         flag = true;
-        str = "overshootClamping";
-        obj["overshootClamping"] = true;
-        withSpringResult = obj2.withSpring(num, obj);
+        obj.overshootClamping = true;
+        withSpringResult = obj.withSpring(num, obj);
       }
-      obj.opacity = withSpringResult;
-      return obj;
+      return { opacity: withSpringResult };
     }
   }
   obj = { shouldShowButton: sharedValue, reducedMotion: stateFromStores, withSpring: user(selectedSkuId[10]).withSpring, MEDIA_PICKER_SEND_BUTTON_SPRING: stateFromStores };
@@ -131,32 +125,32 @@ const memoResult = importAllResult.memo((user) => {
   R.__workletHash = 13351061137085;
   R.__initData = closure_11;
   const animatedStyle1 = user(selectedSkuId[9]).useAnimatedStyle(R);
-  const obj6 = user(selectedSkuId[9]);
+  const obj7 = user(selectedSkuId[9]);
   const canUseCollectiblesResult = currentSkuId(selectedSkuId[11]).canUseCollectibles(user);
-  const obj8 = currentSkuId(selectedSkuId[11]);
-  let result = user(selectedSkuId[12]).isPremiumCollectiblesProduct(tmp3.product);
+  const obj9 = currentSkuId(selectedSkuId[11]);
+  let result = user(selectedSkuId[12]).isPremiumCollectiblesProduct(product);
   if (!result) {
-    result = user(selectedSkuId[12]).isPremiumCollectiblesPurchase(purchase);
-    const obj10 = user(selectedSkuId[12]);
+    let tmp4Result = tmp4(tmp3[12]);
+    result = tmp4Result.isPremiumCollectiblesPurchase(purchase);
   }
   let result1 = !canUseCollectiblesResult;
-  if (result1) {
-    result1 = user(selectedSkuId[12]).isPremiumCollectiblesPurchase(purchase);
-    const obj11 = user(selectedSkuId[12]);
+  if (!canUseCollectiblesResult) {
+    tmp4Result = tmp4(tmp3[12]);
+    result1 = tmp4Result.isPremiumCollectiblesPurchase(purchase);
   }
-  let tmp16 = null == selectedSkuId;
-  if (!tmp16) {
-    tmp16 = null != purchase && !result1;
-    const tmp17 = null != purchase && !result1;
+  let tmp15 = null == selectedSkuId;
+  if (!tmp15) {
+    tmp15 = null != purchase && !result1;
+    const tmp16 = null != purchase && !result1;
   }
-  if (!tmp16) {
-    let tmp18 = result;
+  if (!tmp15) {
+    let tmp17 = result;
     if (result) {
-      tmp18 = isTryItOut;
+      tmp17 = isTryItOut;
     }
-    tmp16 = tmp18;
+    tmp15 = tmp17;
   }
-  callback = tmp16;
+  callback = tmp15;
   if (result) {
     result = !canUseCollectiblesResult;
   }
@@ -164,9 +158,9 @@ const memoResult = importAllResult.memo((user) => {
     result = !isTryItOut;
   }
   c9 = result;
-  const items2 = [tmp16, result, user];
-  const items3 = [tmp16, onApply, result, analyticsLocations, analyticsSource, selectedSkuId];
-  const memo = onApply.useMemo(() => {
+  const items2 = [tmp15, result, user];
+  const items3 = [tmp15, onApply, result, analyticsLocations, analyticsSource, selectedSkuId];
+  const memo = obj2.useMemo(() => {
     if (c8) {
       const intl3 = user(selectedSkuId[13]).intl;
       let stringResult = intl3.string(user(selectedSkuId[13]).t.Jh8fJz);
@@ -188,7 +182,7 @@ const memoResult = importAllResult.memo((user) => {
     }
     return stringResult;
   }, items2);
-  callback = onApply.useCallback(() => {
+  callback = obj2.useCallback(() => {
     if (c8) {
       const result = user(selectedSkuId[14]).triggerHapticFeedback(user(selectedSkuId[14]).HapticFeedbackTypes.IMPACT_MEDIUM);
       onApply();
@@ -198,27 +192,25 @@ const memoResult = importAllResult.memo((user) => {
       const result1 = tmp2Result.navigateToNitroManagement();
     } else {
       tmp2Result = tmp2(tmp3[16]);
-      const obj = { analyticsLocations, analyticsSource, initialProductSkuId: selectedSkuId, screen: analyticsSource.SHOP_ALL };
+      const obj = { analyticsLocations: null, analyticsSource: null, initialProductSkuId: null, screen: null };
+      obj[0] = analyticsLocations;
+      obj[1] = analyticsSource;
+      obj[2] = selectedSkuId;
+      obj[3] = analyticsSource.SHOP_ALL;
       const result2 = tmp2Result.openCollectiblesShopMobile(obj);
     }
     currentSkuId(selectedSkuId[17]).hideActionSheet();
   }, items3);
-  obj1 = { style: items4, animatedProps };
+  obj1 = { style: items4, animatedProps, children: null };
   items4 = [tmp.buttonContainer, animatedStyle1];
-  obj2 = { style: items5, pointerEvents: "box-none" };
+  obj2 = { style: items5, pointerEvents: "box-none", children: null };
   items5 = [tmp.buttonRowContainer, animatedStyle, { marginBottom: currentSkuId(selectedSkuId[6])().bottom }];
-  let obj3 = {};
   let str = "primary";
   if (result) {
     str = "active";
   }
-  obj3.variant = str;
-  obj3.onPress = callback;
-  obj3.size = "md";
-  obj3.text = memo;
-  obj3.grow = true;
-  obj2.children = sharedValue(user(selectedSkuId[18]).Button, obj3);
-  obj1.children = sharedValue(currentSkuId(selectedSkuId[9]).View, obj2);
+  obj2[2] = sharedValue(user(selectedSkuId[18]).Button, { variant: str, onPress: callback, size: "md", text: memo, grow: true });
+  obj1[2] = sharedValue(currentSkuId(selectedSkuId[9]).View, obj2);
   return sharedValue(currentSkuId(selectedSkuId[9]).View, obj1);
 });
 let result = require("items").fileFinishedImporting("modules/user_profile/native/EditCollectiblesCTAButton.tsx");

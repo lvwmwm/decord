@@ -1,35 +1,36 @@
-// Module ID: 8463
-// Function ID: 67407
-// Name: isGameProfileObscured
-// Dependencies: [1850, 8003, 566, 2]
-// Exports: default
+// Module ID: 8487
+// Function ID: 8488
+// Name: useGameProfileObscured
+// Dependencies: [1874, 5908, 589, 2]
+// Exports: default, isGameProfileObscured
 
-// Module 8463 (isGameProfileObscured)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 8487 (useGameProfileObscured)
+import mergeGuildAvatar from "mergeGuildAvatar";
 
 const require = arg1;
-function isGameProfileObscured(game, nsfwAllowed) {
+let result = require("initialize").fileFinishedImporting("modules/game_profile/hooks/useGameProfileObscured.tsx");
+
+export default function useGameProfileObscured(contentClassification) {
+  require(589) /* initialize */;
+  [][0] = mergeGuildAvatar;
+  let result = null != contentClassification;
+  if (result) {
+    result = false === tmp4;
+  }
+  if (result) {
+    result = require(5908) /* isAgeRestrictedContentClassification */.isAgeRestrictedContentClassification(contentClassification.contentClassification);
+    const tmpResult = require(5908) /* isAgeRestrictedContentClassification */;
+  }
+  return result;
+};
+export const isGameProfileObscured = function isGameProfileObscured(game, nsfwAllowed) {
   let result = null != game;
   if (result) {
     result = false === nsfwAllowed;
   }
   if (result) {
-    result = require(8003) /* isAgeRestrictedContentClassification */.isAgeRestrictedContentClassification(game.contentClassification);
-    const obj = require(8003) /* isAgeRestrictedContentClassification */;
+    result = require(5908) /* isAgeRestrictedContentClassification */.isAgeRestrictedContentClassification(game.contentClassification);
+    const obj = require(5908) /* isAgeRestrictedContentClassification */;
   }
   return result;
-}
-let result = require("initialize").fileFinishedImporting("modules/game_profile/hooks/useGameProfileObscured.tsx");
-
-export default function useGameProfileObscured(game) {
-  const items = [_isNativeReflectConstruct];
-  return isGameProfileObscured(game, require(566) /* initialize */.useStateFromStores(items, () => {
-    const currentUser = outer1_2.getCurrentUser();
-    let nsfwAllowed;
-    if (null != currentUser) {
-      nsfwAllowed = currentUser.nsfwAllowed;
-    }
-    return nsfwAllowed;
-  }));
 };
-export { isGameProfileObscured };

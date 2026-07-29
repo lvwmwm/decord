@@ -1,112 +1,114 @@
-// Module ID: 13969
-// Function ID: 106745
+// Module ID: 13990
+// Function ID: 13991
 // Name: EmptyStateCard
-// Dependencies: [31, 27, 653, 33, 4165, 689, 4101, 8941, 13970, 13971, 1392, 4011, 5200, 1273, 4133, 13967, 1935, 4161, 5741, 1557, 4576, 1212, 2]
+// Dependencies: [19, 17, 676, 21, 4189, 712, 4125, 8965, 13991, 13992, 1416, 4035, 5222, 1297, 4157, 13988, 1959, 4185, 5759, 1581, 4598, 1236, 2]
 // Exports: default
 
-// Module 13969 (EmptyStateCard)
-import result from "result";
-import { View } from "get ActivityIndicator";
+// Module 13990 (EmptyStateCard)
+import useSafeAreaInsets from "useSafeAreaInsets";
+import { View } from "Text";
 import { AnalyticsLocations } from "ME";
-import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import jsxProd from "getSystemLocale";
+import createCacheKey from "createCacheKey";
 
 let closure_6;
-let closure_7;
+let error;
 const require = arg1;
 function EmptyStateCard(platform) {
   platform = platform.platform;
+  let importDefault;
+  let connectionBackgroundColor;
   const tmp = callback3();
-  const tmp2 = importDefault(connectionBackgroundColor[6])();
-  importDefault = tmp2;
+  const tmp3 = importDefault(connectionBackgroundColor[6])();
+  importDefault = tmp3;
   const items = [platform];
   const callback = React.useCallback(() => {
     let obj = { platformType: platform.type, location: outer1_5.CONNECTIONS_EMPTY_STATE };
-    tmp2(connectionBackgroundColor[7])(obj);
+    _undefined(connectionBackgroundColor[7])(obj);
     obj = { platformType: platform.type };
     const result = platform(connectionBackgroundColor[8]).trackEmptyStateCardClicked(obj);
   }, items);
   let obj = platform(connectionBackgroundColor[9]);
   connectionBackgroundColor = obj.getConnectionBackgroundColor(platform.type);
-  const items1 = [connectionBackgroundColor, platform.icon.darkPNG, platform.icon.lightPNG, platform.icon.whitePNG, tmp2];
+  const items1 = [connectionBackgroundColor, platform.icon.darkPNG, platform.icon.lightPNG, platform.icon.whitePNG, tmp3];
   const memo = React.useMemo(() => {
     if (null != connectionBackgroundColor) {
       let whitePNG = platform.icon.whitePNG;
     } else {
       const icon = platform.icon;
-      whitePNG = platform(connectionBackgroundColor[11]).isThemeDark(closure_1) ? icon.darkPNG : icon.lightPNG;
-      const obj2 = platform(connectionBackgroundColor[11]);
+      whitePNG = platform(connectionBackgroundColor[11]).isThemeDark(c1) ? icon.darkPNG : icon.lightPNG;
+      const tmpResult = platform(connectionBackgroundColor[11]);
     }
     return platform(connectionBackgroundColor[10]).makeSource(whitePNG);
   }, items1);
-  obj = { onPress: callback, style: tmp.card, border: "strong" };
-  obj = {};
+  obj = { onPress: callback, style: tmp.card, border: "strong", children: null };
   const items2 = [tmp.iconContainer, ];
-  let tmp9 = null != platform.color;
-  if (tmp9) {
-    const obj1 = { backgroundColor: connectionBackgroundColor };
-    tmp9 = obj1;
+  let tmp10 = null != platform.color;
+  if (tmp10) {
+    obj = { backgroundColor: null };
+    obj[0] = connectionBackgroundColor;
+    tmp10 = obj;
   }
-  items2[1] = tmp9;
-  obj.style = items2;
-  obj.children = callback(platform(connectionBackgroundColor[13]).Icon, { style: tmp.icon, source: memo, resizeMode: "contain", disableColor: true, accessibilityLabel: platform.name });
-  obj.children = callback(View, obj);
-  return callback(platform(connectionBackgroundColor[12]).Card, obj);
+  items2[1] = tmp10;
+  obj[3] = closure_6(View, { style: items2, children: closure_6(platform(connectionBackgroundColor[13]).Icon, obj2) });
+  return closure_6(platform(connectionBackgroundColor[12]).Card, obj);
 }
 function OtherConnectionsCard(count) {
   const callback = React.useCallback(() => {
-    outer1_1(outer1_2[14]).openLazy(outer1_0(outer1_2[16])(outer1_2[15], outer1_2.paths), "AddConnection");
+    callback2(paths[14]).openLazy(callback(paths[16])(paths[15], paths.paths), "AddConnection");
   }, []);
-  let obj = { onPress: callback, style: callback3().card, border: "strong" };
-  obj = { variant: "text-md/medium", color: "interactive-text-default", children: "+" + count.count };
-  obj.children = callback(require(4161) /* Text */.Text, obj);
-  return callback(require(5200) /* getCardBackgroundToken */.Card, obj);
+  let obj = { onPress: callback, style: callback3().card, border: "strong", children: null };
+  obj = { variant: "text-md/medium", color: "interactive-text-default", children: null };
+  obj[2] = "+" + count.count;
+  obj[3] = callback(require(4185) /* Text */.Text, obj);
+  return callback(require(5222) /* PressableCard */.Card, obj);
 }
-({ jsx: closure_6, jsxs: closure_7 } = jsxProd);
-let closure_8 = _createForOfIteratorHelperLoose.createStyles(() => {
-  let obj = { container: { flex: 1, alignItems: "center" }, content: { flex: 1, width: "100%", maxWidth: 260, alignItems: "center", justifyContent: "center" }, card: { flex: 1, maxHeight: 76, maxWidth: 76, aspectRatio: 1, alignItems: "center", justifyContent: "center", padding: 12 }, textContainer: { marginTop: 32 }, text: { textAlign: "center" } };
-  obj = { flex: 1, maxHeight: 52, maxWidth: 52, aspectRatio: 1, borderRadius: importDefault(689).radii.round, alignItems: "center", justifyContent: "center", padding: 8 };
-  obj.iconContainer = obj;
-  obj.icon = { flex: 1, aspectRatio: 1 };
+({ jsx: closure_6, jsxs: error } = jsxProd);
+let closure_8 = createCacheKey.createStyles(() => {
+  let obj = { container: { flex: 1, alignItems: "center" }, content: { flex: 1, width: "100%", maxWidth: 260, alignItems: "center", justifyContent: "center" }, card: { flex: 1, maxHeight: 76, maxWidth: 76, aspectRatio: 1, alignItems: "center", justifyContent: "center", padding: 12 }, textContainer: { marginTop: 32 }, text: { textAlign: "center" }, iconContainer: null, icon: null };
+  obj = { flex: 1, maxHeight: 52, maxWidth: 52, aspectRatio: 1, borderRadius: importDefault(712).radii.round, alignItems: "center", justifyContent: "center", padding: 8 };
+  obj[5] = obj;
+  obj[6] = { flex: 1, aspectRatio: 1 };
   return obj;
 });
 let result = require("ME").fileFinishedImporting("modules/user_settings/connections/native/ConnectionsEmptyStateUpsell.tsx");
 
 export default function ConnectionsEmptyStateUpsell() {
   const tmp = callback3();
-  let obj = emptyStatePlatforms(5741);
+  let obj = emptyStatePlatforms(5759);
   emptyStatePlatforms = obj.useEmptyStatePlatforms();
   const items = [emptyStatePlatforms];
   const memo = React.useMemo(() => emptyStatePlatforms.slice(0, 3), items);
   const items1 = [emptyStatePlatforms];
   const memo1 = React.useMemo(() => emptyStatePlatforms.slice(3, 5), items1);
-  obj = {};
+  obj = { style: null, children: null };
   const items2 = [tmp.container, ];
-  obj = { paddingBottom: importDefault(1557)().bottom };
+  obj = { paddingBottom: importDefault(1581)().bottom };
   items2[1] = obj;
-  obj.style = items2;
-  const obj1 = { style: tmp.content };
-  const obj2 = { spacing: 16, direction: "vertical", align: "center", style: tmp.textContainer };
-  const obj3 = { spacing: 16, justify: "center", direction: "horizontal", children: memo.map((platform) => outer1_6(outer1_9, { platform }, platform.type)) };
-  const items3 = [callback(emptyStatePlatforms(4576).Stack, obj3), ];
-  const obj4 = { spacing: 16, justify: "center", direction: "horizontal" };
-  const items4 = [memo1.map((platform) => outer1_6(outer1_9, { platform }, platform.type)), callback(OtherConnectionsCard, { count: emptyStatePlatforms.length - 5 })];
-  obj4.children = items4;
-  items3[1] = callback2(emptyStatePlatforms(4576).Stack, obj4);
-  obj2.children = items3;
-  const items5 = [callback2(emptyStatePlatforms(4576).Stack, obj2), ];
-  const obj6 = { spacing: 8, align: "center", style: tmp.textContainer };
-  const obj7 = { variant: "text-lg/bold", color: "mobile-text-heading-primary", style: tmp.text };
-  const intl = emptyStatePlatforms(1212).intl;
-  obj7.children = intl.string(emptyStatePlatforms(1212).t.JlrHXb);
-  const items6 = [callback(emptyStatePlatforms(4161).Text, obj7), ];
-  const obj8 = { variant: "text-md/medium", color: "text-default", style: tmp.text };
-  const intl2 = emptyStatePlatforms(1212).intl;
-  obj8.children = intl2.string(emptyStatePlatforms(1212).t.XijaQP);
-  items6[1] = callback(emptyStatePlatforms(4161).Text, obj8);
-  obj6.children = items6;
-  items5[1] = callback2(emptyStatePlatforms(4576).Stack, obj6);
-  obj1.children = items5;
-  obj.children = callback2(View, obj1);
+  obj[0] = items2;
+  const obj1 = { style: tmp.content, children: null };
+  const obj2 = { spacing: 16, direction: "vertical", align: "center", style: tmp.textContainer, children: null };
+  const obj3 = { spacing: 16, justify: "center", direction: "horizontal", children: null };
+  obj3[3] = memo.map((platform) => callback(closure_9, { platform }, platform.type));
+  const items3 = [callback(emptyStatePlatforms(4598).Stack, obj3), ];
+  const obj4 = { spacing: 16, justify: "center", direction: "horizontal", children: null };
+  const items4 = [memo1.map((platform) => callback(closure_9, { platform }, platform.type)), callback(OtherConnectionsCard, { count: emptyStatePlatforms.length - 5 })];
+  obj4[3] = items4;
+  items3[1] = callback2(emptyStatePlatforms(4598).Stack, obj4);
+  obj2[4] = items3;
+  const items5 = [callback2(emptyStatePlatforms(4598).Stack, obj2), ];
+  const obj6 = { spacing: 8, align: "center", style: tmp.textContainer, children: null };
+  const obj7 = { variant: "text-lg/bold", color: "mobile-text-heading-primary", style: tmp.text, children: null };
+  const intl = emptyStatePlatforms(1236).intl;
+  obj7[3] = intl.string(emptyStatePlatforms(1236).t.JlrHXb);
+  const items6 = [callback(emptyStatePlatforms(4185).Text, obj7), ];
+  const obj8 = { variant: "text-md/medium", color: "text-default", style: tmp.text, children: null };
+  const intl2 = emptyStatePlatforms(1236).intl;
+  obj8[3] = intl2.string(emptyStatePlatforms(1236).t.XijaQP);
+  items6[1] = callback(emptyStatePlatforms(4185).Text, obj8);
+  obj6[3] = items6;
+  items5[1] = callback2(emptyStatePlatforms(4598).Stack, obj6);
+  obj1[1] = items5;
+  obj[1] = callback2(View, obj1);
   return callback(View, obj);
 };

@@ -1,270 +1,338 @@
-// Module ID: 10651
-// Function ID: 82825
-// Name: getScreens
-// Dependencies: [5, 57, 31, 27, 10652, 10215, 653, 10653, 33, 4165, 1450, 10219, 4026, 10654, 10213, 10218, 4380, 4372, 9996, 1935, 1207, 10711, 10011, 4012, 10667, 477, 3877, 4046, 5552, 2]
+// Module ID: 10675
+// Function ID: 10676
+// Name: CallWithVoiceChat
+// Dependencies: [5, 32, 19, 17, 10676, 10236, 676, 10677, 21, 4189, 1474, 10240, 4050, 10678, 10234, 10239, 4403, 4395, 10018, 1959, 1231, 10735, 10033, 4036, 10691, 500, 3901, 4070, 5570, 2]
 // Exports: default
 
-// Module 10651 (getScreens)
+// Module 10675 (CallWithVoiceChat)
 import BOX_MODE_ACTIONSHEET_WIDTH from "BOX_MODE_ACTIONSHEET_WIDTH";
 import _slicedToArray from "_slicedToArray";
-import result from "result";
-import get_ActivityIndicator from "context";
-import module_10652 from "module_10652";
+import asyncRequireImpl from "asyncRequireImpl";
+import get_ActivityIndicator from "module_4395";
+import module_10676 from "module_10676";
 import { ChannelCallScreens } from "BOX_MODE_ACTIONSHEET_WIDTH";
 import { ComponentActions } from "ME";
 import { OAUTH2_AUTHORIZE_MODAL_KEY as closure_11 } from "OAUTH2_AUTHORIZE_MODAL_KEY";
-import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import jsxProd from "useIsVoiceChannelFull";
+import createCacheKey from "createCacheKey";
 
 let StyleSheet;
 let closure_12;
-let closure_13;
 let closure_6;
-let require = arg1;
-function getScreens(channel) {
-  channel = channel.channel;
-  const obj = {
-    headerShown: false,
-    ignoreKeyboard: true,
-    gestureEnabled: false,
-    title: "",
-    render() {
-      return outer1_12(outer1_21, { channel });
-    }
-  };
-  return { [closure_9.MAIN_CALL_SCREEN]: obj };
-}
+let map1;
+const require = arg1;
 function CallWithVoiceChat(channel) {
   channel = channel.channel;
+  let _require;
   let translateX;
   let dependencyMap;
-  let tmp = _createForOfIteratorHelperLoose();
-  const result = 2 * translateX(1450)().width;
-  const require = result;
-  let obj = require(10219) /* context */;
+  let tmp = createCacheKey();
+  const result = 2 * translateX(1474)().width;
+  _require = result;
+  let obj = _require(10240);
   const voiceChatNavigationContext = obj.useVoiceChatNavigationContext();
   translateX = undefined;
-  if (null != voiceChatNavigationContext) {
+  if (voiceChatNavigationContext != null) {
     translateX = voiceChatNavigationContext.translateX;
   }
-  let obj1 = require(4026);
-  const fn = function h() {
-    let obj = { width: closure_0 };
-    obj = {};
-    let value;
-    if (null != translateX) {
-      value = translateX.get();
+  let tmp5Result = tmp5(4050);
+  const fn = function o() {
+    const obj = { width: c0, transform: null };
+    let num;
+    if (translateX != null) {
+      num = translateX.get();
     }
-    let num = 0;
-    if (null != value) {
-      num = value;
+    if (num == null) {
+      num = 0;
     }
-    obj.translateX = num;
-    const items = [obj];
-    obj.transform = items;
+    const items = [{ translateX: num }];
+    obj[1] = items;
     return obj;
   };
-  obj = { width: result, translateX };
-  fn.__closure = obj;
+  fn.__closure = { width: result, translateX };
   fn.__workletHash = 4309613236072;
   fn.__initData = closure_15;
-  const animatedStyle = obj1.useAnimatedStyle(fn);
-  let obj3 = require(4026);
-  const fn2 = function _() {
-    const obj = { backgroundColor: "black" };
-    let value;
-    if (null != translateX) {
-      value = translateX.get();
+  const animatedStyle = tmp5Result.useAnimatedStyle(fn);
+  tmp5Result = tmp5(4050);
+  const fn2 = function c() {
+    let obj = _undefined(_undefined2[12]);
+    let num;
+    if (translateX != null) {
+      num = translateX.get();
     }
-    let num = 0;
-    if (null != value) {
-      num = value;
+    if (num == null) {
+      num = 0;
     }
-    const items = [-closure_0, 0];
-    obj.opacity = result(_undefined[12]).interpolate(num, items, [0.9, 0]);
+    obj = { backgroundColor: "black", opacity: obj.interpolate(num, items, [0.9, 0]) };
+    items = [-_undefined, 0];
     return obj;
   };
-  obj = { interpolate: require(4026).interpolate, translateX, width: result };
+  obj = { interpolate: tmp5(4050).interpolate, translateX, width: result };
   fn2.__closure = obj;
   fn2.__workletHash = 1339801810447;
   fn2.__initData = closure_16;
-  let value;
-  const animatedStyle1 = obj3.useAnimatedStyle(fn2);
-  if (null != translateX) {
-    value = translateX.get();
+  let num;
+  const animatedStyle1 = tmp5Result.useAnimatedStyle(fn2);
+  if (translateX != null) {
+    num = translateX.get();
   }
-  let num = 0;
-  if (null != value) {
-    num = value;
+  if (num == null) {
+    num = 0;
   }
-  const tmp9 = callback(React.useState(num > 0), 2);
-  dependencyMap = tmp10;
-  let obj5 = require(4026);
-  class C {
-    constructor() {
-      value = undefined;
-      if (null != translateX) {
-        tmp2 = translateX;
-        value = translateX.get();
-      }
-      num = 0;
-      if (null != value) {
-        num = value;
-      }
-      return Math.abs(num) > 0;
+  const tmp11 = callback(React.useState(num > 0), 2);
+  dependencyMap = tmp12;
+  const fn3 = function _() {
+    let num;
+    if (translateX != null) {
+      num = translateX.get();
     }
-  }
-  obj1 = { translateX };
-  C.__closure = obj1;
-  C.__workletHash = 3076815293699;
-  C.__initData = closure_17;
-  const fn3 = function v(arg0, arg1) {
+    if (num == null) {
+      num = 0;
+    }
+    return Math.abs(num) > 0;
+  };
+  fn3.__closure = { translateX };
+  fn3.__workletHash = 3076815293699;
+  fn3.__initData = closure_17;
+  const fn4 = function h(arg0, arg1) {
     let tmp = arg0;
     if (arg0) {
       tmp = arg0 !== arg1;
     }
     if (tmp) {
-      result(_undefined[12]).runOnJS(_undefined)(true);
-      const obj = result(_undefined[12]);
+      _undefined(_undefined2[12]).runOnJS(_undefined2)(true);
+      const obj = _undefined(_undefined2[12]);
     }
   };
-  fn3.__closure = { runOnJS: require(4026).runOnJS, setShouldRenderChat: tmp9[1] };
-  fn3.__workletHash = 661145094859;
-  fn3.__initData = closure_18;
-  const animatedReaction = obj5.useAnimatedReaction(C, fn3);
-  obj3 = { style: items };
+  obj = { runOnJS: tmp5(4050).runOnJS, setShouldRenderChat: tmp12 };
+  fn4.__closure = obj;
+  fn4.__workletHash = 661145094859;
+  fn4.__initData = closure_18;
+  const animatedReaction = _require(4050).useAnimatedReaction(fn3, fn4);
+  const obj1 = { style: items, children: null };
   items = [tmp.textInVoiceContainer, animatedStyle];
-  const obj4 = { style: tmp.voiceContainer };
-  let tmp15 = null;
+  const obj2 = { style: tmp.voiceContainer, children: null };
+  let tmp16 = null;
   if (channel.isGuildStageVoice()) {
-    obj5 = { channel };
-    tmp15 = callback2(translateX(10654), obj5);
+    const obj3 = { channel: null };
+    obj3[0] = channel;
+    tmp16 = callback2(tmp2(10678), obj3);
   }
-  const items1 = [tmp15, ];
+  const items1 = [tmp16, ];
   const items2 = [animatedStyle1, StyleSheet.absoluteFill];
-  items1[1] = callback2(translateX(4026).View, { pointerEvents: "box-none", style: items2 });
-  obj4.children = items1;
-  const items3 = [closure_13(closure_6, obj4), ];
-  const obj6 = { style: tmp.textContainer };
-  let tmp21 = null;
-  if (tmp9[0]) {
-    const obj7 = { channel };
-    tmp21 = callback2(translateX(10213), obj7);
+  items1[1] = callback2(translateX(4050).View, { pointerEvents: "box-none", style: items2 });
+  obj2[1] = items1;
+  const items3 = [closure_13(closure_6, obj2), ];
+  const obj4 = { style: tmp.textContainer, children: null };
+  let tmp18Result = null;
+  if (tmp11[0]) {
+    const obj5 = { channel: null };
+    obj5[0] = channel;
+    tmp18Result = tmp18(tmp2(10234), obj5);
   }
-  obj6.children = tmp21;
-  items3[1] = callback2(closure_6, obj6);
-  obj3.children = items3;
-  return closure_13(translateX(4026).View, obj3);
+  obj4[1] = tmp18Result;
+  items3[1] = callback2(closure_6, obj4);
+  obj1[1] = items3;
+  return closure_13(translateX(4050).View, obj1);
 }
 function MainCallScreen(channel) {
   channel = channel.channel;
-  let obj = isConnectedToVoiceChannel(10218);
+  let isConnectedToVoiceChannel;
+  let id;
+  let obj = isConnectedToVoiceChannel(10239);
   isConnectedToVoiceChannel = obj.useIsConnectedToVoiceChannel(channel);
-  const id = React.useId();
+  id = React.useId();
   const items = [isConnectedToVoiceChannel, id];
   const effect = React.useEffect(() => {
     let state = outer1_8.getState();
     let safeAreaDisableLock = state.requestSafeAreaDisableLock({ key: id, lockEnabled: isConnectedToVoiceChannel });
     return () => {
-      const state = outer2_8.getState();
-      const safeAreaDisableLock = state.requestSafeAreaDisableLock({ key: outer1_1, lockEnabled: false });
+      const state = outer1_8.getState();
+      const safeAreaDisableLock = state.requestSafeAreaDisableLock({ key: closure_1, lockEnabled: false });
     };
   }, items);
-  let obj1 = isConnectedToVoiceChannel(4380);
+  let obj1 = isConnectedToVoiceChannel(4403);
   const isChannelContentGated = obj1.useIsChannelContentGated(channel);
   const effect1 = React.useEffect(() => {
     function dismissOAuthModal() {
       if (c0) {
-        id(outer2_2[17]).popWithKey(outer2_11);
+        dismissOAuthModal(showOAuth2Modal[17]).popWithKey(outer1_11);
         c0 = false;
-        const obj = id(outer2_2[17]);
+        const obj = dismissOAuthModal(showOAuth2Modal[17]);
       }
     }
     function showOAuth2Modal() {
-      return _showOAuth2Modal(...arguments);
+      const self = this;
+      const apply = _showOAuth2Modal.apply;
+      if (typeof apply === "unknown") {
+        let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+      } else {
+        applyArgumentsResult = apply(self, arguments);
+      }
+      return applyArgumentsResult;
     }
-    function _showOAuth2Modal() {
-      // CreateGeneratorClosureLongIndex (0x67)
-      const obj = outer2_3(tmp);
-      return obj(...arguments);
+    function _showOAuth2Modal(arg0) {
+      const self = this;
+      const tmp = _showOAuth2Modal((arg0) => {
+        let closure_0 = arg0;
+        let c2 = 0;
+        let c3 = 0;
+        return (function*(arg0) {
+          if (c3 === 2) {
+            c3 = 3;
+            HermesBuiltin.throwTypeError();
+          } else if (tmp4 === 3) {
+            if (arg0 === 1) {
+              throw arg1;
+            } else if (arg0 === 2) {
+              let obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            } else {
+              return { value: "HermesInternal", done: null };
+            }
+          } else {
+            try {
+              c3 = 2;
+              if (0 === paths) {
+                if (arg0 === 1) {
+                  c3 = 3;
+                  throw arg1;
+                } else if (arg0 === 2) {
+                  c3 = 3;
+                  obj = { value: null, done: true };
+                  obj[0] = arg1;
+                  return obj;
+                } else {
+                  let closure_1 = tmp2;
+                  outer1_1(paths[17]).popWithKey(outer1_11);
+                  const obj5 = outer1_1(paths[17]);
+                  const obj1 = {};
+                  const obj6 = outer1_1(paths[17]);
+                  const merged = Object.assign(c0);
+                  obj1.dismissOAuthModal = outer1_1;
+                  paths = 1;
+                  c3 = 1;
+                  const obj2 = { value: null, done: false };
+                  obj2[0] = obj6.pushLazy(callback(paths[19])(paths[18], paths.paths), obj1, outer1_11);
+                  return obj2;
+                }
+              } else if (arg0 === 1) {
+                c3 = 3;
+                throw arg1;
+              } else if (arg0 === 2) {
+                c3 = 3;
+                obj = { value: null, done: true };
+                obj[0] = arg1;
+                return obj;
+              } else {
+                c0 = true;
+                c3 = 3;
+                return { value: "HermesInternal", done: null };
+              }
+            } catch (tmp7) {
+              c3 = tmp;
+              throw tmp7;
+            }
+          }
+        })();
+      });
+      _showOAuth2Modal = tmp;
+      const apply = tmp.apply;
+      if (typeof apply === "unknown") {
+        let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+      } else {
+        applyArgumentsResult = apply(self, arguments);
+      }
+      return applyArgumentsResult;
     }
-    let c0 = false;
-    let ComponentDispatch = isConnectedToVoiceChannel(outer1_2[20]).ComponentDispatch;
-    const subscription = ComponentDispatch.subscribe(outer1_10.SHOW_OAUTH2_MODAL, showOAuth2Modal);
+    const isConnectedToVoiceChannel = false;
+    let ComponentDispatch = isConnectedToVoiceChannel(showOAuth2Modal[20]).ComponentDispatch;
+    const subscription = ComponentDispatch.subscribe(SHOW_OAUTH2_MODAL.SHOW_OAUTH2_MODAL, showOAuth2Modal);
     return () => {
-      const ComponentDispatch = isConnectedToVoiceChannel(outer2_2[20]).ComponentDispatch;
-      ComponentDispatch.unsubscribe(outer2_10.SHOW_OAUTH2_MODAL, showOAuth2Modal);
-      dismissOAuthModal();
+      const ComponentDispatch = callback(showOAuth2Modal[20]).ComponentDispatch;
+      ComponentDispatch.unsubscribe(outer1_10.SHOW_OAUTH2_MODAL, showOAuth2Modal);
+      if (callback) {
+        dismissOAuthModal(showOAuth2Modal[17]).popWithKey(outer1_11);
+        callback = false;
+        const obj = dismissOAuthModal(showOAuth2Modal[17]);
+      }
     };
   }, []);
-  isConnectedToVoiceChannel(10711);
+  isConnectedToVoiceChannel(10735);
   if (isChannelContentGated) {
-    obj = { onReturnToSafety: id(4372).pop };
-    ({ guild_id: obj6.guildId, id: obj6.channelId } = channel);
-    let tmp12Result = callback2(id(10011), obj);
-    const tmp21 = id(10011);
+    obj = { onReturnToSafety: null, guildId: null, channelId: null };
+    obj[0] = id(4395).pop;
+    ({ guild_id: obj6[1], id: obj6[2] } = channel);
+    let tmp14Result = callback2(id(10033), obj);
+    let tmp11 = callback2;
+    const tmp20 = id(10033);
   } else {
-    if (!tmp8) {
+    if (!tmp10) {
       if (!channel.isVocalThread()) {
-        obj = { channel };
-        tmp12Result = callback2(CallWithVoiceChat, obj);
+        tmp11 = callback2;
+        obj = { channel: null };
+        obj[0] = channel;
+        tmp14Result = callback2(CallWithVoiceChat, obj);
       }
     }
-    obj1 = { style: tmp.flex };
-    let tmp14 = null;
+    obj1 = { style: null, children: null };
+    obj1[0] = tmp.flex;
+    tmp14Result = null;
     if (channel.isGuildStageVoice()) {
-      const obj2 = { channel };
-      tmp14 = callback2(id(10654), obj2);
+      let obj2 = { channel: null };
+      obj2[0] = channel;
+      tmp14Result = tmp14(id(10678), obj2);
     }
-    obj1.children = tmp14;
-    tmp12Result = callback2(closure_6, obj1);
-    const tmp12 = callback2;
-    const tmp13 = closure_6;
+    obj1[1] = tmp14Result;
+    tmp14Result = tmp14(closure_6, obj1);
+    tmp11 = tmp14;
+    const tmp15 = closure_6;
   }
-  tmp = _createForOfIteratorHelperLoose();
-  const obj3 = {};
-  const tmp22 = id(4012)();
-  const tmp23 = callback2;
-  const tmp24 = id(10667);
-  const obj8 = isConnectedToVoiceChannel(477);
-  obj3.forceHide = isConnectedToVoiceChannel(477).isAndroid() || !isConnectedToVoiceChannel;
-  obj3.showWhenParticipantOnScreen = !isConnectedToVoiceChannel;
-  const obj4 = { gradient: tmp22, children: tmp12Result };
-  obj3.children = callback2(isConnectedToVoiceChannel(3877).ThemeContextProvider, obj4);
-  return tmp23(tmp24, obj3);
+  tmp = createCacheKey();
+  const tmp21 = id(4036)();
+  const tmp22 = id(10691);
+  const tmp2Result = isConnectedToVoiceChannel(500);
+  const tmp23 = isConnectedToVoiceChannel(500).isAndroid() || !isConnectedToVoiceChannel;
+  return tmp11(tmp22, { forceHide: isConnectedToVoiceChannel(500).isAndroid() || !isConnectedToVoiceChannel, showWhenParticipantOnScreen: !isConnectedToVoiceChannel, children: tmp11(isConnectedToVoiceChannel(3901).ThemeContextProvider, { gradient: tmp21, children: tmp14Result }) });
 }
 ({ View: closure_6, StyleSheet } = get_ActivityIndicator);
-({ jsx: closure_12, jsxs: closure_13 } = jsxProd);
-_createForOfIteratorHelperLoose = { flex: { flex: 1, alignSelf: "stretch" } };
-_createForOfIteratorHelperLoose = {};
-const merged = Object.assign(StyleSheet.absoluteFillObject);
-_createForOfIteratorHelperLoose["right"] = undefined;
-_createForOfIteratorHelperLoose.textInVoiceContainer = _createForOfIteratorHelperLoose;
+({ jsx: closure_12, jsxs: map1 } = jsxProd);
+createCacheKey = { flex: { flex: 1, alignSelf: "stretch" }, textInVoiceContainer: null, voiceContainer: null, textContainer: null };
+createCacheKey = {};
+let merged = Object.assign(StyleSheet.absoluteFillObject);
+createCacheKey.right = undefined;
+createCacheKey[1] = createCacheKey;
 let obj1 = {};
 const merged1 = Object.assign(StyleSheet.absoluteFillObject);
-obj1["right"] = "50%";
-_createForOfIteratorHelperLoose.voiceContainer = obj1;
+obj1.right = "50%";
+createCacheKey[2] = obj1;
 let obj2 = {};
 const merged2 = Object.assign(StyleSheet.absoluteFillObject);
-obj2["left"] = "50%";
-_createForOfIteratorHelperLoose.textContainer = obj2;
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+obj2.left = "50%";
+createCacheKey[3] = obj2;
+createCacheKey = createCacheKey.createStyles(createCacheKey);
 let closure_15 = { code: "function ChannelCallNavigatorTsx1(){const{width,translateX}=this.__closure;var _translateX$get,_translateX;return{width:width,transform:[{translateX:(_translateX$get=(_translateX=translateX)===null||_translateX===void 0?void 0:_translateX.get())!==null&&_translateX$get!==void 0?_translateX$get:0}]};}" };
 let closure_16 = { code: "function ChannelCallNavigatorTsx2(){const{interpolate,translateX,width}=this.__closure;var _translateX$get,_translateX;return{backgroundColor:'black',opacity:interpolate((_translateX$get=(_translateX=translateX)===null||_translateX===void 0?void 0:_translateX.get())!==null&&_translateX$get!==void 0?_translateX$get:0,[-width,0],[0.9,0])};}" };
 let closure_17 = { code: "function ChannelCallNavigatorTsx3(){const{translateX}=this.__closure;var _translateX$get,_translateX;return Math.abs((_translateX$get=(_translateX=translateX)===null||_translateX===void 0?void 0:_translateX.get())!==null&&_translateX$get!==void 0?_translateX$get:0)>0;}" };
 let closure_18 = { code: "function ChannelCallNavigatorTsx4(isMoving,previous){const{runOnJS,setShouldRenderChat}=this.__closure;if(!isMoving||isMoving===previous)return;runOnJS(setShouldRenderChat)(true);}" };
-let result = require("result").fileFinishedImporting("modules/video_calls/native/components/ChannelCallNavigator.tsx");
+let result = require("noop").fileFinishedImporting("modules/video_calls/native/components/ChannelCallNavigator.tsx");
 
 export default function ChannelCallNavigator(channel) {
   channel = channel.channel;
-  let obj = {};
-  const guild_id = channel.guild_id;
-  let tmp2 = null;
-  if (null != guild_id) {
-    tmp2 = guild_id;
+  let guild_id = channel.guild_id;
+  if (guild_id == null) {
+    guild_id = null;
   }
-  obj.value = tmp2;
-  obj = { screens: getScreens({ channel }), initialRouteName: ChannelCallScreens.MAIN_CALL_SCREEN };
-  obj.children = callback2(require(5552) /* NavigationStack */.Navigator, obj);
-  return callback2(importDefault(4046).Provider, obj);
+  obj = { value: guild_id, children: tmp2(channel(5570).Navigator, { screens: { [ChannelCallScreens.MAIN_CALL_SCREEN]: obj }, initialRouteName: ChannelCallScreens.MAIN_CALL_SCREEN }) };
+  obj = {
+    headerShown: false,
+    ignoreKeyboard: true,
+    gestureEnabled: false,
+    title: "",
+    render() {
+      return outer1_12(outer1_20, { channel });
+    }
+  };
+  return closure_12(importDefault(4070).Provider, obj);
 };

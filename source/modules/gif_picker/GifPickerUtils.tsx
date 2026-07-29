@@ -1,21 +1,24 @@
-// Module ID: 9585
-// Function ID: 74619
+// Module ID: 9603
+// Function ID: 9604
 // Name: getSearchPlaceholder
-// Dependencies: [1212, 2]
-// Exports: getSearchPlaceholder
+// Dependencies: [1236, 2]
+// Exports: filterFavoriteGIFsByQuery, getSearchPlaceholder
 
-// Module 9585 (getSearchPlaceholder)
+// Module 9603 (getSearchPlaceholder)
 const result = require("set").fileFinishedImporting("modules/gif_picker/GifPickerUtils.tsx");
 
-export const getSearchPlaceholder = function getSearchPlaceholder(arg0) {
-  if ("giphy" === arg0) {
-    const intl3 = require(1212) /* getSystemLocale */.intl;
-    return intl3.string(require(1212) /* getSystemLocale */.t.DFoK1a);
-  } else if ("klipy" === arg0) {
-    const intl2 = require(1212) /* getSystemLocale */.intl;
-    return intl2.string(require(1212) /* getSystemLocale */.t.T1Frnm);
+export const getSearchPlaceholder = function getSearchPlaceholder() {
+  const intl = require(1236) /* getSystemLocale */.intl;
+  return intl.string(require(1236) /* getSystemLocale */.t.T1Frnm);
+};
+export const filterFavoriteGIFsByQuery = function filterFavoriteGIFsByQuery(favorites, first2) {
+  if ("" === first2) {
+    return favorites;
   } else {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(require(1212) /* getSystemLocale */.t.TnYqke);
+    let closure_0 = first2.toLowerCase().replace(/[-_ ]/g, "");
+    return favorites.filter((url) => {
+      const replaced = url.url.toLowerCase().replace(/[-_]/g, "");
+      return replaced.includes(closure_0);
+    });
   }
 };

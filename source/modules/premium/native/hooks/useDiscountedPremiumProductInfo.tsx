@@ -1,12 +1,12 @@
-// Module ID: 6549
-// Function ID: 58313
+// Module ID: 6570
+// Function ID: 6571
 // Name: useDiscountedPremiumProductInfo
-// Dependencies: [31, 5654, 482, 566, 5657, 5651, 2]
+// Dependencies: [19, 5672, 505, 589, 5675, 5669, 2]
 // Exports: useDiscountedPremiumProductInfo
 
-// Module 6549 (useDiscountedPremiumProductInfo)
-import result from "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 6570 (useDiscountedPremiumProductInfo)
+import noop from "noop";
+import updateProduct from "updateProduct";
 import { CurrencyCodes } from "sum";
 
 const require = arg1;
@@ -20,24 +20,24 @@ export const useDiscountedPremiumProductInfo = function useDiscountedPremiumProd
     if (null == planIds) {
       return null;
     } else {
-      const discount = planIds.discount;
+      const discount = tmp.discount;
       planIds = undefined;
-      if (null != discount) {
+      if (discount != null) {
         planIds = discount.planIds;
       }
-      if (null == planIds) {
+      if (planIds == null) {
         planIds = [];
       }
       return items3.find((basePlanId) => planIds.includes(basePlanId.basePlanId));
     }
   }, items);
-  let obj = _require(566);
+  let obj = _require(589);
   const items1 = [stateFromStores];
   const items2 = [memo];
   stateFromStores = obj.useStateFromStores(items1, () => {
     let product = null;
     if (null != memo) {
-      product = stateFromStores.getProduct(memo.productId);
+      product = stateFromStores.getProduct(tmp.productId);
     }
     return product;
   }, items2);
@@ -47,37 +47,37 @@ export const useDiscountedPremiumProductInfo = function useDiscountedPremiumProd
     discountedPriceString: memo.useMemo(() => {
       if (null != premiumDiscountOffer) {
         if (null != stateFromStores) {
-          const tmp13 = premiumDiscountOffer(items3[4]).DiscountIdToProductOfferId[premiumDiscountOffer.discountId];
+          const tmp8 = premiumDiscountOffer(items3[4]).DiscountIdToProductOfferId[tmp.discountId];
           let tmp2;
-          if (null != tmp13) {
-            tmp2 = tmp13[stateFromStores.identifier];
+          if (tmp8 != null) {
+            tmp2 = tmp8[tmp5.identifier];
           }
           premiumDiscountOffer = tmp2;
           if (null == tmp2) {
             return null;
           } else {
             if (str2.toUpperCase() in outer1_4) {
-              let USD = stateFromStores.currencyCode.toLowerCase();
-              const str = stateFromStores.currencyCode;
+              let USD = tmp5.currencyCode.toLowerCase();
+              const str = tmp5.currencyCode;
             } else {
-              USD = outer1_4.USD;
+              USD = tmp9.USD;
             }
-            if (null != stateFromStores.subscriptionOffers) {
-              const subscriptionOffers = stateFromStores.subscriptionOffers;
+            if (null != tmp5.subscriptionOffers) {
+              const subscriptionOffers = tmp5.subscriptionOffers;
               const found = subscriptionOffers.find((offerId) => offerId.offerId === closure_0);
               if (null != found) {
                 if (null != found.pricingPhases) {
                   if (found.pricingPhases.length > 0) {
                     const result = found.pricingPhases[0].price / 100;
-                    let obj = premiumDiscountOffer(items3[5]);
-                    obj = { convertToMajorUnits: false };
-                    return obj.formatPrice(result, USD, obj);
+                    return tmp6(tmp7[5]).formatPrice(result, USD, { convertToMajorUnits: false });
                   }
                 }
               }
             }
             return null;
           }
+          tmp6 = premiumDiscountOffer;
+          tmp7 = items3;
         }
       }
       return null;

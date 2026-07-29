@@ -1,22 +1,22 @@
-// Module ID: 9433
-// Function ID: 73358
+// Module ID: 9457
+// Function ID: 9458
 // Name: useCanRemoveAllReactions
-// Dependencies: [3793, 653, 6030, 566, 2]
+// Dependencies: [3817, 676, 6048, 589, 2]
 // Exports: default
 
-// Module 9433 (useCanRemoveAllReactions)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 9457 (useCanRemoveAllReactions)
+import getUncachedChannelPermissions from "getUncachedChannelPermissions";
 import { Permissions } from "ME";
 
 const require = arg1;
-const result = require("useCanStartPublicThread").fileFinishedImporting("modules/reactions/useCanRemoveAllReactions.tsx");
+const result = require("useCanUnarchiveThread").fileFinishedImporting("modules/reactions/useCanRemoveAllReactions.tsx");
 
-export default function useCanRemoveAllReactions(stateFromStores) {
-  const _require = stateFromStores;
-  isActiveChannelOrUnarchivableThread = _require(isActiveChannelOrUnarchivableThread[2]).useIsActiveChannelOrUnarchivableThread(stateFromStores);
+export default function useCanRemoveAllReactions(channel) {
+  const _require = channel;
+  isActiveChannelOrUnarchivableThread = _require(isActiveChannelOrUnarchivableThread[2]).useIsActiveChannelOrUnarchivableThread(channel);
   const obj = _require(isActiveChannelOrUnarchivableThread[2]);
-  const items = [_isNativeReflectConstruct];
-  const items1 = [stateFromStores, isActiveChannelOrUnarchivableThread];
+  const items = [getUncachedChannelPermissions];
+  const items1 = [channel, isActiveChannelOrUnarchivableThread];
   const obj2 = _require(isActiveChannelOrUnarchivableThread[3]);
-  return null != stateFromStores && _require(isActiveChannelOrUnarchivableThread[3]).useStateFromStores(items, () => outer1_2.can(outer1_3.MANAGE_MESSAGES, closure_0) && isActiveChannelOrUnarchivableThread, items1);
+  return null != channel && _require(isActiveChannelOrUnarchivableThread[3]).useStateFromStores(items, () => outer1_2.can(outer1_3.MANAGE_MESSAGES, closure_0) && isActiveChannelOrUnarchivableThread, items1);
 };

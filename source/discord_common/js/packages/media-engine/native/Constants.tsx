@@ -1,9 +1,9 @@
-// Module ID: 4264
-// Function ID: 37214
+// Module ID: 4288
+// Function ID: 4289
 // Name: AudioSubsystems
-// Dependencies: [4226, 2]
+// Dependencies: [4250, 2]
 
-// Module 4264 (AudioSubsystems)
+// Module 4288 (AudioSubsystems)
 import { InputModes } from "DesktopSources";
 
 const result = require("set").fileFinishedImporting("../discord_common/js/packages/media-engine/native/Constants.tsx");

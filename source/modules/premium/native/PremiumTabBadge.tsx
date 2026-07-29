@@ -1,37 +1,35 @@
-// Module ID: 13991
-// Function ID: 106874
+// Module ID: 14012
+// Function ID: 14013
 // Name: ThemedTabBadge
-// Dependencies: [57, 31, 27, 3817, 1852, 6207, 33, 4165, 689, 4011, 4101, 4161, 8402, 480, 6546, 1273, 13992, 6222, 6239, 3811, 3981, 1334, 566, 8417, 7814, 7813, 6542, 1212, 4589, 668, 477, 2]
+// Dependencies: [32, 19, 17, 3841, 1876, 6227, 21, 4189, 712, 4035, 4125, 4185, 8426, 503, 6567, 1297, 14013, 6242, 6259, 3835, 4005, 1358, 589, 8441, 7837, 7836, 6563, 1236, 4611, 691, 500, 2]
 // Exports: default
 
-// Module 13991 (ThemedTabBadge)
+// Module 14012 (ThemedTabBadge)
 import _slicedToArray from "_slicedToArray";
-import "set";
-import { View } from "getSystemLocale";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import "getPremiumPlanItem";
+import { View } from "usePremiumTrialOffer";
+import reset from "reset";
 import { PREMIUM_TIER_2_REFERRAL_TRIAL_ID as closure_6 } from "GuildFeatures";
 import { Gradients } from "items";
-import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import jsxProd from "DismissibleContent";
+import createCacheKey from "createCacheKey";
 
-let closure_8;
-let closure_9;
+let c9;
+let metroImportAll;
 const require = arg1;
-function ThemedTabBadge(label) {
-  const tmp = _createForOfIteratorHelperLoose();
-  let obj = require(4011) /* AccessibilityAnnouncer */;
-  const isThemeDarkResult = obj.isThemeDark(importDefault(4101)());
-  obj = { style: items };
-  items = [tmp.badge, isThemeDarkResult ? tmp.badgeBackgroundDarkTheme : tmp.badgeBackgroundLightTheme];
-  obj = { variant: "eyebrow" };
+function ThemedTabBadge(children) {
+  const tmp = createCacheKey();
+  let obj = require(4035) /* AccessibilityAnnouncer */;
+  const isThemeDarkResult = obj.isThemeDark(importDefault(4125)());
+  const items = [tmp.badge, ];
+  obj = { style: items, children: null };
+  items[1] = isThemeDarkResult ? tmp.badgeBackgroundDarkTheme : tmp.badgeBackgroundLightTheme;
   let str = "text-overlay-light";
   if (isThemeDarkResult) {
     str = "text-overlay-dark";
   }
-  obj.color = str;
-  obj.style = tmp.text;
-  obj.children = label.label;
-  obj.children = closure_8(require(4161) /* Text */.Text, obj);
+  obj = { variant: "eyebrow", color: str, style: tmp.text, children: children.label };
+  obj[1] = closure_8(require(4185) /* Text */.Text, obj);
   return closure_8(View, obj);
 }
 function OfferBadge(componentId) {
@@ -40,199 +38,234 @@ function OfferBadge(componentId) {
   let badgeCopy;
   componentId = componentId.componentId;
   ({ acked, badgeCopy, ackedBadgeCopy } = componentId);
-  const tmp = _createForOfIteratorHelperLoose();
-  let obj = { type: require(480) /* isThrottled */.ImpressionTypes.VIEW, name: require(480) /* isThrottled */.ImpressionNames.PREMIUM_MARKETING_COMPONENT };
-  obj = { component_type: require(6546) /* MarketingComponentType */.MarketingComponentType.PREMIUM_TAB, component_id: componentId };
-  obj.properties = obj;
+  const tmp = createCacheKey();
+  let obj = { type: null, name: null, properties: null };
+  obj[0] = require(503) /* encodeProperties */.ImpressionTypes.VIEW;
+  obj[1] = require(503) /* encodeProperties */.ImpressionNames.PREMIUM_MARKETING_COMPONENT;
+  obj = { component_type: require(6567) /* MarketingComponentType */.MarketingComponentType.PREMIUM_TAB, component_id: componentId };
+  obj[2] = obj;
   obj = { disableTrack: null == componentId };
-  importDefault(8402)(obj, obj);
+  importDefault(8426)(obj, obj);
   if (acked) {
-    const obj1 = { style: tmp.acked };
-    const obj2 = { source: importDefault(13992), size: require(1273) /* Button */.Icon.Sizes.EXTRA_SMALL, color: tmp.icon.color, style: tmp.icon };
-    const items = [callback2(require(1273) /* Button */.Icon, obj2), ];
-    const obj3 = { variant: "eyebrow", color: "interactive-text-default", style: tmp.text, children: ackedBadgeCopy };
-    items[1] = callback2(require(4161) /* Text */.Text, obj3);
-    obj1.children = items;
-    let tmp6 = callback3(View, obj1);
+    const obj1 = { style: null, children: null };
+    obj1[0] = tmp.acked;
+    const obj2 = { source: null, size: null, color: null, style: null };
+    obj2[0] = importDefault(14013);
+    obj2[1] = tmp5(1297).Icon.Sizes.EXTRA_SMALL;
+    obj2[2] = tmp.icon.color;
+    obj2[3] = tmp.icon;
+    const items = [callback2(tmp5(1297).Icon, obj2), ];
+    const obj3 = { variant: "eyebrow", color: "interactive-text-default", style: null, children: null };
+    obj3[2] = tmp.text;
+    obj3[3] = ackedBadgeCopy;
+    items[1] = callback2(tmp5(4185).Text, obj3);
+    obj1[1] = items;
+    let tmp9 = callback3(View, obj1);
   } else {
-    const obj4 = { label: badgeCopy };
-    tmp6 = callback2(ThemedTabBadge, obj4);
+    const obj4 = { label: null };
+    obj4[0] = badgeCopy;
+    tmp9 = callback2(ThemedTabBadge, obj4);
   }
-  return tmp6;
+  return tmp9;
 }
-({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { paddingVertical: 4, paddingHorizontal: 8, borderRadius: require("_createForOfIteratorHelperLoose").radii.round };
-_createForOfIteratorHelperLoose.tag = _createForOfIteratorHelperLoose;
-let obj1 = { display: "flex", minWidth: 16, minHeight: 16, paddingHorizontal: 8, justifyContent: "center", alignItems: "center", gap: 4, borderRadius: require("_createForOfIteratorHelperLoose").radii.round };
-_createForOfIteratorHelperLoose.badge = obj1;
-_createForOfIteratorHelperLoose.badgeBackgroundLightTheme = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BRAND };
-let obj2 = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BRAND };
-_createForOfIteratorHelperLoose.badgeBackgroundDarkTheme = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.WHITE };
-let obj4 = { paddingVertical: 2, paddingHorizontal: 12, borderRadius: require("_createForOfIteratorHelperLoose").radii.round, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BORDER_SUBTLE, display: "flex", flexDirection: "row", alignItems: "center", textAlignVertical: "center" };
-_createForOfIteratorHelperLoose.acked = obj4;
-let obj3 = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.WHITE };
-_createForOfIteratorHelperLoose.ackedBadge = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BORDER_SUBTLE };
-let obj5 = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BORDER_SUBTLE };
-_createForOfIteratorHelperLoose.icon = { color: require("_createForOfIteratorHelperLoose").colors.INTERACTIVE_TEXT_DEFAULT, marginRight: 2 };
-_createForOfIteratorHelperLoose.text = { paddingBottom: 2 };
-let obj7 = { paddingVertical: 2, paddingHorizontal: 12, borderRadius: require("_createForOfIteratorHelperLoose").radii.round, display: "flex", flexDirection: "row", alignItems: "center", textAlignVertical: "center" };
-_createForOfIteratorHelperLoose.premiumDiscountBadge = obj7;
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-let obj6 = { color: require("_createForOfIteratorHelperLoose").colors.INTERACTIVE_TEXT_DEFAULT, marginRight: 2 };
-const result = require("get ActivityIndicator").fileFinishedImporting("modules/premium/native/PremiumTabBadge.tsx");
+({ jsx: metroImportAll, jsxs: c9 } = jsxProd);
+createCacheKey = { tag: null, badge: null, badgeBackgroundLightTheme: null, badgeBackgroundDarkTheme: null, acked: null, ackedBadge: null, icon: null, text: null, premiumDiscountBadge: null };
+createCacheKey = { paddingVertical: 4, paddingHorizontal: 8, borderRadius: require("Themes").radii.round };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { display: "flex", minWidth: 16, minHeight: 16, paddingHorizontal: 8, justifyContent: "center", alignItems: "center", gap: 4, borderRadius: require("Themes").radii.round };
+let obj1 = { display: "flex", minWidth: 16, minHeight: 16, paddingHorizontal: 8, justifyContent: "center", alignItems: "center", gap: 4, borderRadius: require("Themes").radii.round };
+createCacheKey[2] = { backgroundColor: require("Themes").colors.BACKGROUND_BRAND };
+let obj2 = { backgroundColor: require("Themes").colors.BACKGROUND_BRAND };
+createCacheKey[3] = { backgroundColor: require("Themes").colors.WHITE };
+let obj3 = { backgroundColor: require("Themes").colors.WHITE };
+createCacheKey[4] = { paddingVertical: 2, paddingHorizontal: 12, borderRadius: require("Themes").radii.round, backgroundColor: require("Themes").colors.BORDER_SUBTLE, display: "flex", flexDirection: "row", alignItems: "center", textAlignVertical: "center" };
+let obj4 = { paddingVertical: 2, paddingHorizontal: 12, borderRadius: require("Themes").radii.round, backgroundColor: require("Themes").colors.BORDER_SUBTLE, display: "flex", flexDirection: "row", alignItems: "center", textAlignVertical: "center" };
+createCacheKey[5] = { backgroundColor: require("Themes").colors.BORDER_SUBTLE };
+let obj5 = { backgroundColor: require("Themes").colors.BORDER_SUBTLE };
+createCacheKey[6] = { color: require("Themes").colors.INTERACTIVE_TEXT_DEFAULT, marginRight: 2 };
+createCacheKey[7] = { paddingBottom: 2 };
+let obj6 = { color: require("Themes").colors.INTERACTIVE_TEXT_DEFAULT, marginRight: 2 };
+createCacheKey[8] = { paddingVertical: 2, paddingHorizontal: 12, borderRadius: require("Themes").radii.round, display: "flex", flexDirection: "row", alignItems: "center", textAlignVertical: "center" };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let obj7 = { paddingVertical: 2, paddingHorizontal: 12, borderRadius: require("Themes").radii.round, display: "flex", flexDirection: "row", alignItems: "center", textAlignVertical: "center" };
+let result = require("get ActivityIndicator").fileFinishedImporting("modules/premium/native/PremiumTabBadge.tsx");
 
 export default function PremiumTabBadge() {
-  let string = _createForOfIteratorHelperLoose();
-  let obj = require(6222) /* usePremiumTrialOffer */;
+  let tmp14;
+  let tmp18;
+  let tmp = createCacheKey();
+  let obj = require(6242) /* usePremiumTrialOffer */;
   const premiumTrialOffer = obj.usePremiumTrialOffer();
-  let obj1 = require(6239) /* useGetDiscountOffer */;
+  let obj1 = require(6259) /* usePremiumDiscountOffer */;
   const premiumDiscountOffer = obj1.usePremiumDiscountOffer();
-  let obj3 = require(3811) /* _createForOfIteratorHelperLoose */;
+  let obj3 = require(3835) /* getPremiumPlanItem */;
   const hasTier2Premium = obj3.useHasTier2Premium();
-  let obj4 = require(3981) /* UNSAFE_isDismissibleContentDismissed */;
-  const tmp3 = !obj4.useIsDismissibleContentDismissed_UNSAFE(require(1334) /* DismissibleContent */.DismissibleContent.MOBILE_NITRO_HOME_SETTINGS_BADGE) && hasTier2Premium;
-  let obj5 = require(566) /* initialize */;
-  const items = [_isNativeReflectConstruct];
-  const stateFromStores = obj5.useStateFromStores(items, () => outer1_5.getPremiumTypeSubscription());
+  let obj4 = require(4005) /* UNSAFE_isDismissibleContentDismissed */;
+  const result = obj4.useIsDismissibleContentDismissed_UNSAFE(require(1358) /* DismissibleContent */.DismissibleContent.MOBILE_NITRO_HOME_SETTINGS_BADGE);
+  let tmp7 = !result;
+  if (!result) {
+    tmp7 = hasTier2Premium;
+  }
+  let tmp2Result = tmp2(589);
+  const items = [reset];
+  const stateFromStores = tmp2Result.useStateFromStores(items, () => premiumTypeSubscription.getPremiumTypeSubscription());
   let trialId;
-  if (null != stateFromStores) {
+  if (stateFromStores != null) {
     trialId = stateFromStores.trialId;
   }
-  require(8417) /* useSelectedDismissibleContent */;
+  tmp2Result = tmp2(8441);
   if (trialId === closure_6) {
-    if (!tmp3) {
-      let items1 = [require(1334) /* DismissibleContent */.DismissibleContent.REFERRAL_TRIAL_MOBILE_NITRO_HOME_BADGE];
+    if (!tmp7) {
+      let items1 = [tmp2(1358).DismissibleContent.REFERRAL_TRIAL_MOBILE_NITRO_HOME_BADGE];
     }
-    const tmp11 = callback(tmp7(items1, undefined, true), 2);
-    require(8417) /* useSelectedDismissibleContent */;
-    if (!tmp3) {
+    [tmp14, r10051] = callback(tmp11(items1, undefined, true), 2);
+    tmp2(8441);
+    if (!tmp7) {
       if (hasTier2Premium) {
-        let items2 = [require(1334) /* DismissibleContent */.DismissibleContent.WHATS_NEW_TENURE_BADGE_REWARD];
+        let items2 = [tmp2(1358).DismissibleContent.WHATS_NEW_TENURE_BADGE_REWARD];
       }
-      const tmp20 = callback(tmp16(items2, undefined, true), 2);
-      let obj6 = require(7814) /* useIsEligibleSenderForReferralProgram */;
-      const isEligibleSenderForReferralProgram = obj6.useIsEligibleSenderForReferralProgram();
-      let obj7 = require(7813) /* isReferralProgramPopoverSeen */;
-      const isReferralProgramEntrypointBadgeAcknowledged = obj7.useIsReferralProgramEntrypointBadgeAcknowledged();
-      let obj8 = require(6542) /* usePromotionMarketingComponent */;
-      const promotionMarketingComponent = obj8.usePromotionMarketingComponent(require(6546) /* MarketingComponentType */.MarketingComponentType.PREMIUM_TAB);
-      let obj9 = require(8417) /* useSelectedDismissibleContent */;
+      let tmp12Result = tmp12(tmp16(items2, undefined, true), 2);
+      [tmp18, r10063] = tmp12Result;
+      const isEligibleSenderForReferralProgram = tmp2(7837).useIsEligibleSenderForReferralProgram();
+      const tmp2Result2 = tmp2(7837);
+      const isReferralProgramEntrypointBadgeAcknowledged = tmp2(7836).useIsReferralProgramEntrypointBadgeAcknowledged();
+      const tmp2Result3 = tmp2(7836);
+      const promotionMarketingComponent = tmp2(6563).usePromotionMarketingComponent(tmp2(6567).MarketingComponentType.PREMIUM_TAB);
+      const tmp2Result5 = tmp2(8441);
       let prop = null;
       if (null != promotionMarketingComponent) {
         prop = null;
         if ("premiumTab" === promotionMarketingComponent.properties.properties.oneofKind) {
-          prop = require(1334) /* DismissibleContent */.DismissibleContent.PREMIUM_TAB_MARKETING_MOMENT_OFFER_BADGE;
+          prop = tmp2(1358).DismissibleContent.PREMIUM_TAB_MARKETING_MOMENT_OFFER_BADGE;
         }
       }
-      let promotionId;
-      if (null != promotionMarketingComponent) {
-        promotionId = promotionMarketingComponent.promotionId;
+      let str2;
+      if (promotionMarketingComponent != null) {
+        str2 = promotionMarketingComponent.promotionId;
       }
-      let str2 = "";
-      if (null != promotionId) {
-        str2 = promotionId;
+      if (str2 == null) {
+        str2 = "";
       }
+      tmp12Result = tmp12(tmp2Result5.useSelectedSnowflakeBoundDismissibleContent(prop, str2, undefined, true), 2);
       if (null != promotionMarketingComponent) {
         if ("premiumTab" === promotionMarketingComponent.properties.properties.oneofKind) {
-          obj = { acked: tmp36 !== require(1334) /* DismissibleContent */.DismissibleContent.PREMIUM_TAB_MARKETING_MOMENT_OFFER_BADGE, badgeCopy: promotionMarketingComponent.properties.properties.premiumTab.badgeLabel, ackedBadgeCopy: promotionMarketingComponent.properties.properties.premiumTab.acknowledgedBadgeLabel, componentId: promotionMarketingComponent.id };
+          obj = { acked: null, badgeCopy: null, ackedBadgeCopy: null, componentId: null };
+          obj[0] = tmp27 !== tmp2(1358).DismissibleContent.PREMIUM_TAB_MARKETING_MOMENT_OFFER_BADGE;
+          obj[1] = promotionMarketingComponent.properties.properties.premiumTab.badgeLabel;
+          obj[2] = promotionMarketingComponent.properties.properties.premiumTab.acknowledgedBadgeLabel;
+          obj[3] = promotionMarketingComponent.id;
           return callback2(OfferBadge, obj);
         }
       }
-      if (tmp11[0] === require(1334) /* DismissibleContent */.DismissibleContent.REFERRAL_TRIAL_MOBILE_NITRO_HOME_BADGE) {
-        const intl2 = require(1212) /* getSystemLocale */.intl;
-        let stringResult = intl2.string(require(1212) /* getSystemLocale */.t.uO4bXn);
+      if (tmp14 === tmp2(1358).DismissibleContent.REFERRAL_TRIAL_MOBILE_NITRO_HOME_BADGE) {
+        const intl2 = tmp2(1236).intl;
+        let stringResult = intl2.string(tmp2(1236).t.uO4bXn);
       } else {
         stringResult = null;
-        if (tmp20[0] === require(1334) /* DismissibleContent */.DismissibleContent.WHATS_NEW_TENURE_BADGE_REWARD) {
-          const intl = require(1212) /* getSystemLocale */.intl;
-          stringResult = intl.string(require(1212) /* getSystemLocale */.t["jyYgZ+"]);
+        if (tmp18 === tmp2(1358).DismissibleContent.WHATS_NEW_TENURE_BADGE_REWARD) {
+          const intl = tmp2(1236).intl;
+          stringResult = intl.string(tmp2(1236).t["jyYgZ+"]);
         }
       }
       if (isEligibleSenderForReferralProgram) {
         if (!isReferralProgramEntrypointBadgeAcknowledged) {
-          obj = {};
-          const intl3 = require(1212) /* getSystemLocale */.intl;
-          obj.label = intl3.string(require(1212) /* getSystemLocale */.t.RDE0Sc);
+          obj = { label: null };
+          const intl3 = tmp2(1236).intl;
+          obj[0] = intl3.string(tmp2(1236).t.RDE0Sc);
           return callback2(ThemedTabBadge, obj);
         }
       }
-      if (tmp3) {
-        obj1 = { style: string.tag, colors: Gradients.PREMIUM_TIER_2, start: require(668) /* keys */.HorizontalGradient.START, end: require(668) /* keys */.HorizontalGradient.END };
-        const obj2 = { variant: "eyebrow", color: "text-overlay-light" };
-        const tmp80 = callback2;
-        const tmp83 = importDefault(4589);
-        const tmp86 = callback2;
+      if (tmp7) {
+        obj1 = { style: null, colors: null, start: null, end: null, children: null };
+        obj1[0] = tmp.tag;
+        obj1[1] = Gradients.PREMIUM_TIER_2;
+        obj1[2] = tmp2(691).HorizontalGradient.START;
+        obj1[3] = tmp2(691).HorizontalGradient.END;
+        const tmp52 = importDefault(4611);
         let text;
-        if (obj23.isAndroid()) {
-          text = string.text;
+        if (tmp2Result6.isAndroid()) {
+          text = tmp.text;
         }
-        obj2.style = text;
-        const intl8 = require(1212) /* getSystemLocale */.intl;
-        string = intl8.string;
-        obj2.children = string(require(1212) /* getSystemLocale */.t.y2b7CA);
-        obj1.children = tmp86(require(4161) /* Text */.Text, obj2);
-        let tmp75Result = tmp80(tmp83, obj1);
-        obj23 = require(477) /* set */;
+        const obj2 = { variant: "eyebrow", color: "text-overlay-light", style: null, children: null };
+        obj2[2] = text;
+        const intl8 = tmp2(1236).intl;
+        obj2[3] = intl8.string(tmp2(1236).t.y2b7CA);
+        tmp = tmp50(tmp2(4185).Text, obj2);
+        obj1[4] = tmp;
+        let tmp47Result = tmp50(tmp52, obj1);
+        tmp2Result6 = tmp2(500);
       } else if (null != premiumTrialOffer) {
-        obj3 = {};
         let expires_at;
-        if (null != premiumTrialOffer) {
+        if (premiumTrialOffer != null) {
           expires_at = premiumTrialOffer.expires_at;
         }
-        obj3.acked = null != expires_at;
-        const intl6 = require(1212) /* getSystemLocale */.intl;
-        obj3.badgeCopy = intl6.string(require(1212) /* getSystemLocale */.t.OS9KPu);
-        const intl7 = require(1212) /* getSystemLocale */.intl;
-        obj3.ackedBadgeCopy = intl7.string(require(1212) /* getSystemLocale */.t.OS9KPu);
-        tmp75Result = callback2(OfferBadge, obj3);
-        const tmp75 = callback2;
-        const tmp76 = OfferBadge;
+        obj3 = { acked: null, badgeCopy: null, ackedBadgeCopy: null };
+        obj3[0] = null != expires_at;
+        const intl6 = tmp2(1236).intl;
+        obj3[1] = intl6.string(tmp2(1236).t.OS9KPu);
+        const intl7 = tmp2(1236).intl;
+        obj3[2] = intl7.string(tmp2(1236).t.OS9KPu);
+        tmp47Result = callback2(OfferBadge, obj3);
+        const tmp47 = callback2;
+        const tmp48 = OfferBadge;
       } else if (null != premiumDiscountOffer) {
         if (premiumDiscountOffer.hasAcknowledged()) {
-          obj4 = {};
+          obj4 = { style: null, children: null };
           const items3 = [, ];
-          ({ premiumDiscountBadge: arr4[0], ackedBadge: arr4[1] } = string);
-          obj4.style = items3;
-          obj5 = { source: importDefault(13992), size: require(1273) /* Button */.Icon.Sizes.EXTRA_SMALL, color: string.icon.color, style: string.icon };
-          const items4 = [callback2(require(1273) /* Button */.Icon, obj5), ];
-          obj6 = { variant: "eyebrow", color: "interactive-text-default", style: string.text };
-          const intl5 = require(1212) /* getSystemLocale */.intl;
-          obj6.children = intl5.string(require(1212) /* getSystemLocale */.t["/DTtr6"]);
-          items4[1] = callback2(require(4161) /* Text */.Text, obj6);
-          obj4.children = items4;
-          let tmp66 = callback3(View, obj4);
+          ({ premiumDiscountBadge: arr4[0], ackedBadge: arr4[1] } = tmp);
+          obj4[0] = items3;
+          const obj5 = { source: null, size: null, color: null, style: null };
+          obj5[0] = importDefault(14013);
+          obj5[1] = tmp2(1297).Icon.Sizes.EXTRA_SMALL;
+          obj5[2] = tmp.icon.color;
+          obj5[3] = tmp.icon;
+          const items4 = [callback2(tmp2(1297).Icon, obj5), ];
+          const obj6 = { variant: "eyebrow", color: "interactive-text-default", style: null, children: null };
+          obj6[2] = tmp.text;
+          const intl5 = tmp2(1236).intl;
+          obj6[3] = intl5.string(tmp2(1236).t["/DTtr6"]);
+          items4[1] = callback2(tmp2(4185).Text, obj6);
+          obj4[1] = items4;
+          let tmp41 = callback3(View, obj4);
         } else {
-          obj7 = { style: string.premiumDiscountBadge, colors: ["#db00a4", "#5968f0"], start: require(668) /* keys */.HorizontalGradient.START, end: require(668) /* keys */.HorizontalGradient.END };
-          obj8 = { variant: "eyebrow", color: "text-overlay-light", style: string.text };
-          const intl4 = require(1212) /* getSystemLocale */.intl;
-          obj8.children = intl4.string(require(1212) /* getSystemLocale */.t["/DTtr6"]);
-          obj7.children = callback2(require(4161) /* Text */.Text, obj8);
-          tmp66 = callback2(importDefault(4589), obj7);
-          const tmp63 = importDefault(4589);
+          const obj7 = { style: null, colors: null, start: null, end: null, children: null };
+          obj7[0] = tmp.premiumDiscountBadge;
+          obj7[1] = ["#db00a4", "#5968f0"];
+          obj7[2] = tmp2(691).HorizontalGradient.START;
+          obj7[3] = tmp2(691).HorizontalGradient.END;
+          const obj8 = { variant: "eyebrow", color: "text-overlay-light", style: null, children: null };
+          obj8[2] = tmp.text;
+          const intl4 = tmp2(1236).intl;
+          obj8[3] = intl4.string(tmp2(1236).t["/DTtr6"]);
+          obj7[4] = callback2(tmp2(4185).Text, obj8);
+          tmp41 = callback2(importDefault(4611), obj7);
+          const tmp40 = importDefault(4611);
         }
       } else {
-        tmp75Result = null;
+        tmp47Result = null;
         if (null != stringResult) {
-          obj9 = { style: string.tag, colors: Gradients.PREMIUM_TIER_2, start: require(668) /* keys */.HorizontalGradient.START, end: require(668) /* keys */.HorizontalGradient.END };
-          const obj10 = { variant: "eyebrow", color: "text-overlay-light" };
-          const tmp51 = callback2;
-          const tmp54 = importDefault(4589);
-          const tmp57 = callback2;
+          const obj9 = { style: null, colors: null, start: null, end: null, children: null };
+          obj9[0] = tmp.tag;
+          obj9[1] = Gradients.PREMIUM_TIER_2;
+          obj9[2] = tmp2(691).HorizontalGradient.START;
+          obj9[3] = tmp2(691).HorizontalGradient.END;
+          const tmp34 = importDefault(4611);
           let text1;
-          if (obj14.isAndroid()) {
-            text1 = string.text;
+          if (tmp2Result7.isAndroid()) {
+            text1 = tmp.text;
           }
-          obj10.style = text1;
-          obj10.children = stringResult;
-          obj9.children = tmp57(require(4161) /* Text */.Text, obj10);
-          tmp75Result = tmp51(tmp54, obj9);
-          obj14 = require(477) /* set */;
+          const obj10 = { variant: "eyebrow", color: "text-overlay-light", style: null, children: null };
+          obj10[2] = text1;
+          obj10[3] = stringResult;
+          obj9[4] = callback2(tmp2(4185).Text, obj10);
+          tmp47Result = tmp32(tmp34, obj9);
+          tmp2Result7 = tmp2(500);
         }
       }
-      const tmp35 = callback(obj9.useSelectedSnowflakeBoundDismissibleContent(prop, str2, undefined, true), 2);
+      const tmp2Result4 = tmp2(6563);
     }
     items2 = [];
+    const tmp13 = callback(tmp11(items1, undefined, true), 2);
   }
   items1 = [];
 };

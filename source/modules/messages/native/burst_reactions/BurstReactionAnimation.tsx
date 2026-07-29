@@ -1,17 +1,17 @@
-// Module ID: 6119
-// Function ID: 54451
+// Module ID: 6137
+// Function ID: 6138
 // Name: BurstReactionAnimation
-// Dependencies: [31, 4157, 33, 4165, 6077, 566, 6120, 5488, 2]
+// Dependencies: [19, 4181, 21, 4189, 6095, 589, 6138, 5506, 2]
 // Exports: default
 
-// Module 6119 (BurstReactionAnimation)
-import "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 6137 (BurstReactionAnimation)
+import "noop";
+import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
 const require = arg1;
-let closure_5 = _createForOfIteratorHelperLoose.createStyles({ content: { width: "100%" } });
+let closure_5 = createCacheKey.createStyles({ content: { width: "100%" } });
 const result = require("jsxProd").fileFinishedImporting("modules/messages/native/burst_reactions/BurstReactionAnimation.tsx");
 
 export default function BurstReactionAnimation(arg0) {
@@ -26,39 +26,32 @@ export default function BurstReactionAnimation(arg0) {
   if (withFadeOut === undefined) {
     withFadeOut = true;
   }
-  let obj = { channelId: 0, messageId: 0, emoji: 0, isFullscreen: 0, onComplete: 0, withFadeOut: 0 };
-  Object.setPrototypeOf(null);
-  const merged = Object.assign(arg0, obj);
-  const tmp3 = callback();
-  const burstReactionAnimationSource = require(6077) /* _generateAnimationSource */.useBurstReactionAnimationSource({ emoji, messageId, channelId, isFullscreen });
-  require(566) /* initialize */;
-  [][0] = _isNativeReflectConstruct;
+  const merged = Object.assign(arg0, Object.create(null));
+  let obj = require(6095) /* _generateAnimationSource */;
+  const burstReactionAnimationSource = obj.useBurstReactionAnimationSource({ emoji, messageId, channelId, isFullscreen });
+  require(589) /* initialize */;
+  [][0] = maybeApplyNoTextColorForLightCustomTheme;
   if (null == burstReactionAnimationSource) {
     return null;
   } else {
     if (withFadeOut) {
-      let tmp7 = 6120;
+      obj = { onComplete: null };
+      obj[0] = onComplete;
     } else {
-      tmp7 = 5488;
+      obj = { onAnimationFinish: null };
+      obj[0] = onComplete;
     }
-    obj = {};
-    if (withFadeOut) {
-      obj.onComplete = onComplete;
-      let tmp9 = obj;
-    } else {
-      obj.onAnimationFinish = onComplete;
-      tmp9 = obj;
-    }
-    obj = { style: tmp3.content, loop: false };
-    let num3 = 1.2;
+    const obj1 = { style: null, loop: false, speed: null };
+    obj1[0] = tmp2.content;
+    let num = 1.2;
     if (tmp6) {
-      num3 = 0.5;
+      num = 0.5;
     }
-    obj.speed = num3;
+    obj1[2] = num;
     const merged1 = Object.assign(merged);
-    const merged2 = Object.assign(tmp9);
-    obj["source"] = burstReactionAnimationSource;
-    return jsx(importDefault(tmp7), { style: tmp3.content, loop: false });
+    const merged2 = Object.assign(obj);
+    obj1.source = burstReactionAnimationSource;
+    return jsx(importDefault(withFadeOut ? 6138 : 5506), { style: null, loop: false, speed: null });
   }
-  const obj2 = require(6077) /* _generateAnimationSource */;
+  tmp2 = callback();
 };

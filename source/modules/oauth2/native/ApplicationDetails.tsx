@@ -1,38 +1,39 @@
-// Module ID: 8995
-// Function ID: 70826
+// Module ID: 9019
+// Function ID: 9020
 // Name: ApplicationDetailsEntry
-// Dependencies: [31, 27, 33, 4165, 689, 8928, 8996, 8998, 21, 8926, 4109, 1212, 4687, 8930, 9000, 4129, 8150, 9002, 9004, 4161, 2]
+// Dependencies: [19, 17, 21, 4189, 712, 8952, 9020, 9022, 11, 8950, 4133, 1236, 4709, 8954, 9024, 4153, 8174, 9026, 9028, 4185, 2]
 // Exports: default
 
-// Module 8995 (ApplicationDetailsEntry)
-import "result";
-import { View } from "get ActivityIndicator";
+// Module 9019 (ApplicationDetailsEntry)
+import "Text";
+import { View } from "RobotIcon";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_4;
-let closure_5;
+let c4;
+let c5;
 const require = arg1;
-function ApplicationDetailsEntry(iconComponent) {
-  iconComponent = iconComponent.iconComponent;
-  const tmp = _createForOfIteratorHelperLoose();
-  let obj = { style: tmp.entry };
+function ApplicationDetailsEntry(children) {
+  const iconComponent = children.iconComponent;
+  const tmp = createCacheKey();
+  let obj = { style: tmp.entry, children: null };
   let iconComponentResult = null;
   if (null != iconComponent) {
-    obj = { style: tmp.entryIcon };
+    obj = { style: null };
+    obj[0] = tmp.entryIcon;
     iconComponentResult = iconComponent(obj);
   }
   const items = [iconComponentResult, ];
-  obj = { variant: "text-sm/normal", color: "text-default", style: tmp.entryText, children: iconComponent.text };
-  items[1] = callback(require(4161) /* Text */.Text, obj);
-  obj.children = items;
+  obj = { variant: "text-sm/normal", color: "text-default", style: tmp.entryText, children: children.text };
+  items[1] = callback(require(4185) /* Text */.Text, obj);
+  obj[1] = items;
   return closure_5(View, obj);
 }
-({ jsx: closure_4, jsxs: closure_5 } = jsxProd);
-_createForOfIteratorHelperLoose = { applicationDetails: { flexDirection: "column", gap: 16 }, entry: { flexDirection: "row", alignItems: "center", gap: 8 }, entryText: { flex: 1 } };
-_createForOfIteratorHelperLoose = { width: 16, height: 16, tintColor: require("_createForOfIteratorHelperLoose").colors.TEXT_MUTED };
-_createForOfIteratorHelperLoose.entryIcon = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+({ jsx: c4, jsxs: c5 } = jsxProd);
+createCacheKey = { applicationDetails: { flexDirection: "column", gap: 16 }, entry: { flexDirection: "row", alignItems: "center", gap: 8 }, entryText: { flex: 1 }, entryIcon: null };
+createCacheKey = { width: 16, height: 16, tintColor: require("Themes").colors.TEXT_MUTED };
+createCacheKey[3] = createCacheKey;
+createCacheKey = createCacheKey.createStyles(createCacheKey);
 const result = require("jsxProd").fileFinishedImporting("modules/oauth2/native/ApplicationDetails.tsx");
 
 export default function ApplicationDetails(arg0) {
@@ -45,140 +46,103 @@ export default function ApplicationDetails(arg0) {
   let scopes;
   ({ application, scopes, redirectUri, approximateGuildCount, disclosures } = arg0);
   ({ isEmbeddedFlow, connectedAccount } = arg0);
-  let obj = importDefault(21);
-  const tmp = _createForOfIteratorHelperLoose();
-  let obj1 = require(8926) /* items */;
+  let obj = importDefault(11);
+  const tmp2 = createCacheKey();
+  let obj1 = require(8950) /* items */;
   let joined = null;
   const securityMessage = obj1.getSecurityMessage(scopes);
   if (null != redirectUri) {
     if (!isEmbeddedFlow) {
-      const _URL = URL;
-      const uRL = new URL(redirectUri);
-      const parts = uRL.href.split("/");
-      const substr = parts.slice(0, 3);
-      joined = substr.join("/");
-      const str = uRL.href;
-    }
-  }
-  while (true) {
-    obj = { style: tmp.applicationDetails };
-    let tmp12 = joined;
-    let tmp13 = null;
-    let tmp10 = closure_5;
-    let tmp11 = View;
-    if (null == joined) {
-      break;
-    } else {
-      let tmp14 = callback;
-      let tmp15 = ApplicationDetailsEntry;
-      obj = {};
-      let tmp16 = require;
-      let tmp17 = dependencyMap;
-      let num3 = 10;
-      obj.iconComponent = require(4109) /* LinkIcon */.LinkIcon;
-      let num4 = 11;
-      let intl = require(1212) /* getSystemLocale */.intl;
-      obj1 = { origin: joined };
-      obj.text = intl.format(require(1212) /* getSystemLocale */.t["5k5OKD"], obj1);
-      tmp13 = callback(ApplicationDetailsEntry, obj);
-      break;
-    }
-    let items = [tmp13, , , , , , ];
-    let tmp18 = callback;
-    let tmp19 = ApplicationDetailsEntry;
-    let obj2 = {};
-    let tmp20 = require;
-    let tmp21 = dependencyMap;
-    let num5 = 12;
-    obj2.iconComponent = require(4687) /* LockIcon */.LockIcon;
-    let num6 = 13;
-    let obj7 = require(8930) /* getApplicationDetailsText */;
-    obj2.text = obj7.getApplicationDetailsText(application);
-    items[1] = callback(ApplicationDetailsEntry, obj2);
-    let tmp22 = null;
-    if (null != connectedAccount) {
-      let tmp23 = callback;
-      let tmp24 = ApplicationDetailsEntry;
-      let obj3 = {};
-      let tmp25 = require;
-      let tmp26 = dependencyMap;
-      let num7 = 14;
-      obj3.iconComponent = require(9000) /* HammerIcon */.HammerIcon;
-      let num8 = 11;
-      let intl2 = require(1212) /* getSystemLocale */.intl;
-      obj3.text = intl2.string(require(1212) /* getSystemLocale */.t["8qui3M"]);
-      tmp22 = callback(ApplicationDetailsEntry, obj3);
-    }
-    items[2] = tmp22;
-    let tmp27 = callback;
-    let tmp28 = ApplicationDetailsEntry;
-    let obj4 = {};
-    let tmp29 = require;
-    let tmp30 = dependencyMap;
-    let num9 = 15;
-    obj4.iconComponent = require(4129) /* ClockIcon */.ClockIcon;
-    let num10 = 11;
-    let intl3 = require(1212) /* getSystemLocale */.intl;
-    let obj5 = { date };
-    obj4.text = intl3.formatToPlainString(require(1212) /* getSystemLocale */.t["+1bjc8"], obj5);
-    items[3] = callback(ApplicationDetailsEntry, obj4);
-    let num11 = 16;
-    let tmp31 = null;
-    if (scopes.includes(require(8150) /* set */.OAuth2Scopes.BOT)) {
-      tmp31 = null;
-      if (null != approximateGuildCount) {
-        let tmp32 = callback;
-        let tmp33 = ApplicationDetailsEntry;
-        let obj6 = {};
-        let tmp34 = require;
-        let tmp35 = dependencyMap;
-        let num12 = 17;
-        obj6.iconComponent = require(9002) /* RobotIcon */.RobotIcon;
-        let intl4 = require(1212) /* getSystemLocale */.intl;
-        obj7 = { guildCount: approximateGuildCount };
-        obj6.text = intl4.formatToPlainString(require(1212) /* getSystemLocale */.t.UHGHSP, obj7);
-        tmp31 = callback(ApplicationDetailsEntry, obj6);
+      try {
+        const _URL = URL;
+        const uRL = new URL(redirectUri);
+        const parts = uRL.href.split("/");
+        const substr = parts.slice(0, 3);
+        joined = substr.join("/");
+        const str = uRL.href;
+      } catch (err) {
+        joined = tmp;
       }
     }
-    items[4] = tmp31;
-    let tmp36 = callback;
-    let tmp37 = ApplicationDetailsEntry;
-    let obj8 = {};
-    let tmp38 = require;
-    let tmp39 = dependencyMap;
-    let num13 = 18;
-    obj8.iconComponent = require(9004) /* ShieldIcon */.ShieldIcon;
-    obj8.text = securityMessage;
-    items[5] = callback(ApplicationDetailsEntry, obj8);
-    let mapped = null;
-    if (null != disclosures) {
-      mapped = disclosures.map((toFixed) => {
-        let obj = outer1_0(outer1_2[5]);
-        const textForDisclosure = obj.getTextForDisclosure(toFixed);
-        if (outer1_0(outer1_2[5]).ApplicationDisclosure.IP_LOCATION === toFixed) {
-          obj = { iconComponent: outer1_0(outer1_2[6]).GlobeEarthIcon };
-          let tmp4 = obj;
-        } else {
-          tmp4 = null;
-          if (outer1_0(outer1_2[5]).ApplicationDisclosure.DISPLAYS_ADVERTISEMENTS === toFixed) {
-            obj = { iconComponent: outer1_0(outer1_2[7]).EmbedIcon };
-            tmp4 = obj;
-          }
-        }
-        let tmp9 = null;
-        if (null != tmp4) {
-          tmp9 = null;
-          if (null != textForDisclosure) {
-            const obj1 = { text: textForDisclosure };
-            const merged = Object.assign(tmp4);
-            tmp9 = outer1_4(outer1_7, obj1, toFixed.toFixed());
-          }
-        }
-        return tmp9;
-      });
-    }
-    items[6] = mapped;
-    obj.children = items;
-    return tmp10(tmp11, obj);
   }
+  obj = { style: tmp2.applicationDetails, children: null };
+  let tmp15 = null;
+  if (null != joined) {
+    obj = { iconComponent: null, text: null };
+    obj[0] = tmp5(4133).LinkIcon;
+    const intl = tmp5(1236).intl;
+    obj1 = { origin: null };
+    obj1[0] = joined;
+    obj[1] = intl.format(tmp5(1236).t["5k5OKD"], obj1);
+    tmp15 = callback(ApplicationDetailsEntry, obj);
+  }
+  const items = [tmp15, , , , , , ];
+  const obj2 = { iconComponent: require(4709) /* LockIcon */.LockIcon, text: null };
+  const date = new Date(obj.extractTimestamp(application.id));
+  const tmp13 = closure_5;
+  const tmp14 = View;
+  obj2[1] = require(8954) /* getApplicationDetailsText */.getApplicationDetailsText(application);
+  items[1] = callback(ApplicationDetailsEntry, obj2);
+  let tmp18Result = null;
+  if (null != connectedAccount) {
+    const obj3 = { iconComponent: null, text: null };
+    obj3[0] = tmp5(9024).HammerIcon;
+    const intl2 = tmp5(1236).intl;
+    obj3[1] = intl2.string(tmp5(1236).t["8qui3M"]);
+    tmp18Result = tmp18(tmp19, obj3);
+  }
+  items[2] = tmp18Result;
+  const obj4 = { iconComponent: require(4153) /* ClockIcon */.ClockIcon, text: null };
+  const intl3 = tmp5(1236).intl;
+  obj4[1] = intl3.formatToPlainString(require(1236) /* getSystemLocale */.t["+1bjc8"], { date });
+  items[3] = callback(ApplicationDetailsEntry, obj4);
+  tmp18Result = null;
+  if (scopes.includes(require(8174) /* set */.OAuth2Scopes.BOT)) {
+    tmp18Result = null;
+    if (null != approximateGuildCount) {
+      const obj5 = { iconComponent: null, text: null };
+      obj5[0] = tmp5(9026).RobotIcon;
+      const intl4 = tmp5(1236).intl;
+      const obj6 = { guildCount: null };
+      obj6[0] = approximateGuildCount;
+      obj5[1] = intl4.formatToPlainString(tmp5(1236).t.UHGHSP, obj6);
+      tmp18Result = tmp18(tmp19, obj5);
+    }
+  }
+  items[4] = tmp18Result;
+  const tmp5Result = require(8954) /* getApplicationDetailsText */;
+  items[5] = callback(ApplicationDetailsEntry, { iconComponent: require(9028) /* ShieldIcon */.ShieldIcon, text: securityMessage });
+  let mapped = null;
+  if (null != disclosures) {
+    mapped = disclosures.map((toFixed) => {
+      let obj = callback(8952);
+      const textForDisclosure = obj.getTextForDisclosure(toFixed);
+      if (callback(8952).ApplicationDisclosure.IP_LOCATION === toFixed) {
+        obj = { iconComponent: null };
+        obj[0] = tmp(9020).GlobeEarthIcon;
+        let tmp4 = obj;
+      } else {
+        tmp4 = null;
+        if (tmp(8952).ApplicationDisclosure.DISPLAYS_ADVERTISEMENTS === toFixed) {
+          obj = { iconComponent: null };
+          obj[0] = tmp(9022).EmbedIcon;
+          tmp4 = obj;
+        }
+      }
+      let tmp5 = null;
+      if (null != tmp4) {
+        tmp5 = null;
+        if (null != textForDisclosure) {
+          const obj1 = { text: null };
+          obj1[0] = textForDisclosure;
+          const merged = Object.assign(tmp4);
+          tmp5 = callback2(closure_7, obj1, toFixed.toFixed());
+        }
+      }
+      return tmp5;
+    });
+  }
+  items[6] = mapped;
+  obj[1] = items;
+  return tmp13(tmp14, obj);
 };

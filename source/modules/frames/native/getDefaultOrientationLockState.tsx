@@ -1,21 +1,23 @@
-// Module ID: 15836
-// Function ID: 121958
+// Module ID: 15871
+// Function ID: 15872
 // Name: setOrientationLockState
-// Dependencies: [10632, 686, 2]
+// Dependencies: [10656, 709, 2]
 // Exports: setOrientationLockState
 
-// Module 15836 (setOrientationLockState)
+// Module 15871 (setOrientationLockState)
 const result = require("set").fileFinishedImporting("modules/frames/native/getDefaultOrientationLockState.tsx");
 
 export const setOrientationLockState = function setOrientationLockState(id) {
   let defaultOrientationLockState = arg1;
-  if (null == arg1) {
-    let obj = require(10632) /* getIsTabletActivitySurface */;
+  if (arg1 == null) {
+    let obj = require(10656) /* getIsTabletActivitySurface */;
     defaultOrientationLockState = obj.getDefaultOrientationLockState(id);
   }
   if (null != defaultOrientationLockState) {
-    obj = { type: "FRAME_SET_ORIENTATION_LOCK_STATE", applicationId: id.id, lockState: defaultOrientationLockState };
-    importDefault(686).dispatch(obj);
-    const obj2 = importDefault(686);
+    obj = { type: "FRAME_SET_ORIENTATION_LOCK_STATE", applicationId: null, lockState: null };
+    obj[1] = id.id;
+    obj[2] = defaultOrientationLockState;
+    importDefault(709).dispatch(obj);
+    const obj2 = importDefault(709);
   }
 };

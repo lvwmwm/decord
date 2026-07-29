@@ -1,52 +1,48 @@
-// Module ID: 10741
-// Function ID: 83374
+// Module ID: 10765
+// Function ID: 10766
 // Name: UserSettingsVoice
-// Dependencies: [31, 27, 10742, 10743, 33, 4165, 5536, 10744, 4576, 10745, 10747, 4161, 1212, 10751, 10760, 10762, 5155, 2]
+// Dependencies: [19, 17, 10766, 10767, 21, 4189, 5554, 10768, 4598, 10769, 10771, 4185, 1236, 10775, 10784, 10786, 5177, 2]
 // Exports: UserSettingsTableRowGroup, default
 
-// Module 10741 (UserSettingsVoice)
-import "result";
-import { View } from "get ActivityIndicator";
-import { isMobileOverlaySupported } from "_isNativeReflectConstruct";
+// Module 10765 (UserSettingsVoice)
+import "noop";
+import { View } from "set";
+import { isMobileOverlaySupported } from "getUserAgnosticState";
 import { USER_SETTINGS_VOICE_GUILD_URL as closure_5 } from "combined";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
 let closure_6;
-let closure_7;
+let error;
 const require = arg1;
-({ jsx: closure_6, jsxs: closure_7 } = jsxProd);
-let closure_8 = _createForOfIteratorHelperLoose.createStyles({ container: { paddingHorizontal: 16 }, tableRow: { marginTop: 12 } });
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/user_settings/voice/native/UserSettingsVoice.tsx");
+({ jsx: closure_6, jsxs: error } = jsxProd);
+let closure_8 = createCacheKey.createStyles({ container: { paddingHorizontal: 16 }, tableRow: { marginTop: 12 } });
+const result = require("getUserAgnosticState").fileFinishedImporting("modules/user_settings/voice/native/UserSettingsVoice.tsx");
 
 export default function UserSettingsVoice() {
   const tmp = callback2();
-  let obj = importDefault(10744);
+  let obj = importDefault(10768);
   let nonContextualStreamOutputPresent = obj.useConfig({ location: "NewUserSettingsVoice" }).nonContextualStreamOutputPresent;
-  obj = { style: tmp.container };
-  obj = { spacing: 24 };
-  const items = [callback(importDefault(10745), {}), , , , , , ];
+  obj = { style: tmp.container, children: null };
+  const items = [callback(importDefault(10769), {}), , , , , , ];
   if (nonContextualStreamOutputPresent) {
-    nonContextualStreamOutputPresent = callback(importDefault(10747), {});
+    nonContextualStreamOutputPresent = tmp4(tmp2(10771), {});
   }
   items[1] = nonContextualStreamOutputPresent;
-  const obj1 = { style: tmp.tableRow, variant: "text-sm/medium" };
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj1.children = intl.format(require(1212) /* getSystemLocale */.t["V+B3FH"], { guideURL: closure_5 });
-  items[2] = callback(require(4161) /* Text */.Text, obj1);
-  items[3] = callback(importDefault(10751), {});
-  let tmp8 = isMobileOverlaySupported();
-  if (tmp8) {
-    tmp8 = callback(importDefault(10760), {});
-  }
-  items[4] = tmp8;
-  items[5] = callback(importDefault(10762), {});
-  items[6] = callback(require(5155) /* SafeAreaPaddingView */.SafeAreaPaddingView, { bottom: true });
-  obj.children = items;
-  obj.children = closure_7(require(4576) /* Stack */.Stack, obj);
+  obj = { style: tmp.tableRow, variant: "text-sm/medium", children: null };
+  const intl = tmp7(1236).intl;
+  obj[2] = intl.format(require(1236) /* getSystemLocale */.t["V+B3FH"], { guideURL: closure_5 });
+  items[2] = callback(require(4185) /* Text */.Text, obj);
+  items[3] = callback(importDefault(10775), {});
+  const obj2 = { spacing: 24, children: null };
+  items[4] = isMobileOverlaySupported() && callback(importDefault(10784), {});
+  items[5] = callback(importDefault(10786), {});
+  items[6] = callback(require(5177) /* SafeAreaPaddingView */.SafeAreaPaddingView, { bottom: true });
+  obj2[1] = items;
+  obj[1] = closure_7(require(4598) /* Stack */.Stack, obj2);
   return callback(View, obj);
 };
 export const UserSettingsTableRowGroup = function UserSettingsTableRowGroup(arg0) {
   const merged = Object.assign(arg0);
-  return callback(require(5536) /* TableRowGroupTitle */.TableRowGroup, {});
+  return callback(require(5554) /* TableRowGroupTitle */.TableRowGroup, {});
 };

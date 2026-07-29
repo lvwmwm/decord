@@ -1,31 +1,30 @@
-// Module ID: 16079
-// Function ID: 124043
+// Module ID: 16114
+// Function ID: 16115
 // Name: useFormattedEndTime
-// Dependencies: [1850, 1212, 566, 2]
+// Dependencies: [1874, 1236, 589, 2]
 // Exports: default
 
-// Module 16079 (useFormattedEndTime)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 16114 (useFormattedEndTime)
+import mergeGuildAvatar from "mergeGuildAvatar";
 
 const require = arg1;
 const result = require("initialize").fileFinishedImporting("modules/parent_tools/hooks/useFormattedEndTime.tsx");
 
 export default function useFormattedEndTime() {
-  const items = [_isNativeReflectConstruct];
-  return require(566) /* initialize */.useStateFromStores(items, () => {
-    const currentUser = outer1_2.getCurrentUser();
+  const items = [mergeGuildAvatar];
+  return require(589) /* initialize */.useStateFromStores(items, () => {
+    currentUser = currentUser.getCurrentUser();
     let nextEndTime;
-    if (null != currentUser) {
+    if (currentUser != null) {
       const restrictedSchedule = currentUser.restrictedSchedule;
-      if (null != restrictedSchedule) {
+      if (restrictedSchedule != null) {
         nextEndTime = restrictedSchedule.getNextEndTime();
       }
     }
     let formatResult = null;
     if (null != nextEndTime) {
       const _Intl = Intl;
-      const prototype = DateTimeFormat.prototype;
-      const dateTimeFormat = new DateTimeFormat(outer1_0(outer1_1[1]).intl.currentLocale, { hour: "numeric", minute: "2-digit", weekday: "long" });
+      const dateTimeFormat = new Intl.DateTimeFormat(callback(table[1]).intl.currentLocale, { hour: "numeric", minute: "2-digit", weekday: "long" });
       formatResult = dateTimeFormat.format(nextEndTime);
     }
     return formatResult;

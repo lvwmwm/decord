@@ -1,14 +1,15 @@
-// Module ID: 13493
-// Function ID: 103471
+// Module ID: 13516
+// Function ID: 13517
 // Name: knownExperimentConfigs
-// Dependencies: [1428, 2]
+// Dependencies: [1452, 2]
 
-// Module 13493 (knownExperimentConfigs)
+// Module 13516 (knownExperimentConfigs)
 import ApexExperiment from "ApexExperiment";
 
-let obj = {};
-obj = { name: "2026-05-noisier-notif-settings-defaults", kind: "user", defaultConfig: { variation: 0 }, variations: { [1]: { variation: 1 }, [2]: { variation: 2 }, [3]: { variation: 3 }, [4]: { variation: 4 }, [5]: { variation: 5 } } };
-obj["2026-05-noisier-notif-settings-defaults"] = ApexExperiment.createApexExperiment(obj);
+let obj = { "2026-05-noisier-notif-settings-defaults": null };
+obj = { 1: null, 2: { variation: 1 }, 3: { variation: 2 }, 4: { variation: 3 }, 5: { variation: 4 } };
+obj[5] = { variation: 5 };
+obj[0] = ApexExperiment.createApexExperiment({ name: "2026-05-noisier-notif-settings-defaults", kind: "user", defaultConfig: { variation: 0 }, variations: obj });
 const result = require("set").fileFinishedImporting("modules/notifications/NotificationSettingsExperiments.tsx");
 
 export const knownExperimentConfigs = obj;

@@ -1,27 +1,45 @@
-// Module ID: 4387
-// Function ID: 38738
-// Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 1859, 1858, 2]
+// Module ID: 4410
+// Function ID: 4411
+// Name: createFromServer
+// Dependencies: [1883, 1882, 2]
 
-// Module 4387 (_isNativeReflectConstruct)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import set from "set";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
-import closure_5 from "_isNativeReflectConstruct";
-import importDefaultResult from "Record";
-import tmp3 from "Record";
+// Module 4410 (createFromServer)
+import "toJS";
+import createdAt from "createdAt";
 
-function _isNativeReflectConstruct() {
-  let _isNativeReflectConstruct = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return _isNativeReflectConstruct;
+let prototype;
+prototype = function InteractionRecord(name) {
+  let name_localized;
+  const tmp = new prototype(new.target, name, new.target);
+  // ThrowIfThisInitialized (0x7c)
+  ({ id: tmp.id, name: tmp.name, type: tmp.type, user: tmp.user, name_localized } = name);
+  if (name_localized == null) {
+    name_localized = name.name;
   }
-  const result = _isNativeReflectConstruct();
+  tmp.displayName = name_localized;
+  return tmp;
+}.prototype;
+class prototype extends tmp2 {
 }
-let result = require("_possibleConstructorReturn").fileFinishedImporting("records/InteractionRecord.tsx");
+prototype["createFromServer"] = function createFromServer(user) {
+  let name_localized;
+  const obj = {};
+  const merged = Object.assign(user);
+  let str = user.user;
+  obj.user = new createdAt(str);
+  if (typeof prototype !== "find") {
+    str = "Trying to call a non-function";
+    HermesBuiltin.throwTypeError();
+  }
+  const tmp4 = new prototype(str, user, createdAt);
+  // ThrowIfThisInitialized (0x7c)
+  ({ id: tmp4.id, name: tmp4.name, type: tmp4.type, user: tmp4.user, name_localized } = obj);
+  if (name_localized == null) {
+    name_localized = obj.name;
+  }
+  tmp4.displayName = name_localized;
+  return tmp4;
+};
+const result = require("set").fileFinishedImporting("records/InteractionRecord.tsx");
 
-export default tmp3;
+export default prototype;

@@ -1,8 +1,8 @@
-// Module ID: 9478
-// Function ID: 73784
-// Dependencies: [3781, 1360, 6688, 2]
+// Module ID: 9502
+// Function ID: 9503
+// Dependencies: [3805, 1384, 6709, 2]
 
-// Module 9478
+// Module 9502
 import { GuildMemberFlags } from "GuildMemberFlags";
 
 const result = require("set").fileFinishedImporting("modules/guests/GuestUtils.tsx");
@@ -15,26 +15,25 @@ export default {
     let tmp = null == guild;
     if (!tmp) {
       const selfMember = obj.getSelfMember(guild.id);
-      let flags;
-      if (null != selfMember) {
-        flags = selfMember.flags;
+      let num;
+      if (selfMember != null) {
+        num = selfMember.flags;
       }
-      let num2 = 0;
-      if (null != flags) {
-        num2 = flags;
+      if (num == null) {
+        num = 0;
       }
-      let hasFlagResult = !require(1360) /* hasFlag */.hasFlag(num2, GuildMemberFlags.IS_GUEST);
-      if (!hasFlagResult) {
-        flags = guild.flags;
-        let num3 = 0;
-        if (null != flags) {
-          num3 = flags;
+      const hasFlagResult = require(1384) /* hasFlag */.hasFlag(num, GuildMemberFlags.IS_GUEST);
+      let hasFlagResult1 = !hasFlagResult;
+      if (hasFlagResult) {
+        let num2 = guild.flags;
+        if (num2 == null) {
+          num2 = 0;
         }
-        hasFlagResult = require(1360) /* hasFlag */.hasFlag(num3, require(6688) /* set */.GuildInviteFlags.IS_GUEST_INVITE);
-        const obj3 = require(1360) /* hasFlag */;
+        hasFlagResult1 = tmp2(1384).hasFlag(num2, tmp2(6709).GuildInviteFlags.IS_GUEST_INVITE);
+        const tmp2Result = tmp2(1384);
       }
-      tmp = hasFlagResult;
-      const obj2 = require(1360) /* hasFlag */;
+      tmp = hasFlagResult1;
+      const obj2 = require(1384) /* hasFlag */;
     }
     return tmp;
   }

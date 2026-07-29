@@ -1,11 +1,11 @@
-// Module ID: 8051
-// Function ID: 63920
+// Module ID: 8075
+// Function ID: 8076
 // Name: ProfileEffectUserPreview
-// Dependencies: [31, 33, 8052, 1212, 2]
+// Dependencies: [19, 21, 8076, 1236, 2]
 // Exports: default
 
-// Module 8051 (ProfileEffectUserPreview)
-import "result";
+// Module 8075 (ProfileEffectUserPreview)
+import "noop";
 import { jsx } from "jsxProd";
 
 const require = arg1;
@@ -13,19 +13,18 @@ const result = require("filterLayer").fileFinishedImporting("modules/collectible
 
 export default function ProfileEffectUserPreview(profileEffect) {
   profileEffect = profileEffect.profileEffect;
-  let obj = Object.create(null);
-  obj.profileEffect = 0;
-  const merged = Object.assign(profileEffect, obj);
-  obj = { profileEffectOverride: profileEffect };
+  const merged = Object.assign(profileEffect, Object.create(null));
+  let obj = { profileEffectOverride: profileEffect, accessibilityLabel: null };
   if (null != profileEffect) {
-    const intl2 = require(1212) /* getSystemLocale */.intl;
-    obj = { a11y_text: profileEffect.accessibilityLabel };
-    let formatToPlainStringResult = intl2.formatToPlainString(require(1212) /* getSystemLocale */.t.mbHmX2, obj);
+    const intl2 = require(1236) /* getSystemLocale */.intl;
+    obj = { a11y_text: null };
+    obj[0] = profileEffect.accessibilityLabel;
+    let formatToPlainStringResult = intl2.formatToPlainString(require(1236) /* getSystemLocale */.t.mbHmX2, obj);
   } else {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    formatToPlainStringResult = intl.string(require(1212) /* getSystemLocale */.t.XYdHeC);
+    const intl = require(1236) /* getSystemLocale */.intl;
+    formatToPlainStringResult = intl.string(require(1236) /* getSystemLocale */.t.XYdHeC);
   }
-  obj.accessibilityLabel = formatToPlainStringResult;
+  obj[1] = formatToPlainStringResult;
   const merged1 = Object.assign(merged);
-  return jsx(importDefault(8052), { profileEffectOverride: profileEffect });
+  return jsx(importDefault(8076), { profileEffectOverride: profileEffect, accessibilityLabel: null });
 };

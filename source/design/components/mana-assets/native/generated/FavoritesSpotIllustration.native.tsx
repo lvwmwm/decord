@@ -1,10 +1,10 @@
-// Module ID: 7012
-// Function ID: 59789
+// Module ID: 7032
+// Function ID: 7033
 // Name: FavoritesSpotIllustration
-// Dependencies: [33, 5119, 7013, 2]
+// Dependencies: [21, 5141, 7033, 2]
 // Exports: FavoritesSpotIllustration
 
-// Module 7012 (FavoritesSpotIllustration)
+// Module 7032 (FavoritesSpotIllustration)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/FavoritesSpotIllustration.native.tsx");
@@ -26,14 +26,15 @@ export const FavoritesSpotIllustration = function FavoritesSpotIllustration(widt
   if (num3 === undefined) {
     num3 = 1;
   }
-  let obj = { fadeDuration: 0 };
-  obj = { uri: importDefault(7013) };
-  obj.source = obj;
+  let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
+  obj = { uri: null };
+  obj[0] = importDefault(7033);
+  obj[1] = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
-  obj.style = items;
-  obj.accessible = accessible;
-  obj.accessibilityLabel = accessibilityLabel;
-  obj.resizeMode = resizeMode;
-  return jsx(importDefault(5119), { width: num * num3, height: num2 * num3 });
+  obj[2] = items;
+  obj[3] = accessible;
+  obj[4] = accessibilityLabel;
+  obj[5] = resizeMode;
+  return jsx(importDefault(5141), { width: num * num3, height: num2 * num3 });
 };

@@ -1,30 +1,32 @@
-// Module ID: 15041
-// Function ID: 114517
+// Module ID: 15071
+// Function ID: 15072
 // Name: HAPPENING_NOW_CONTENT_HEIGHT
-// Dependencies: [5, 57, 31, 27, 4252, 14289, 482, 33, 4165, 689, 624, 4396, 8359, 15042, 15043, 9042, 8292, 14290, 477, 9061, 1273, 4161, 2]
+// Dependencies: [5, 32, 19, 17, 4276, 14311, 505, 21, 4189, 712, 647, 4419, 8383, 15072, 15073, 9066, 8316, 14312, 500, 9085, 1297, 4185, 2]
 // Exports: CustomStatusActivityCard
 
-// Module 15041 (HAPPENING_NOW_CONTENT_HEIGHT)
+// Module 15071 (HAPPENING_NOW_CONTENT_HEIGHT)
 import closure_3 from "HAPPENING_NOW_PANELS_CONTAINER_PADDING";
 import _slicedToArray from "_slicedToArray";
-import result from "result";
-import get_ActivityIndicator from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import ActivityEmoji from "ActivityEmoji";
+import get_ActivityIndicator from "HAPPENING_NOW_CARD_MARGIN_RIGHT";
+import sortActivity from "sortActivity";
 import HAPPENING_NOW_PANELS_CONTAINER_PADDING from "HAPPENING_NOW_PANELS_CONTAINER_PADDING";
 import { StatusTypes } from "sum";
-import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import jsxProd from "Text";
+import createCacheKey from "createCacheKey";
 
 let closure_12;
-let closure_13;
 let closure_14;
 let closure_6;
-let closure_7;
+let error;
+let map1;
 const require = arg1;
-({ View: closure_6, Image: closure_7 } = get_ActivityIndicator);
+({ View: closure_6, Image: error } = get_ActivityIndicator);
 const HAPPENING_NOW_CONTENT_HEIGHT = HAPPENING_NOW_PANELS_CONTAINER_PADDING.HAPPENING_NOW_CONTENT_HEIGHT;
 const STATUS_CUTOUT_SMALL = HAPPENING_NOW_PANELS_CONTAINER_PADDING.STATUS_CUTOUT_SMALL;
-({ jsx: closure_12, jsxs: closure_13, Fragment: closure_14 } = jsxProd);
+({ jsx: closure_12, jsxs: map1, Fragment: closure_14 } = jsxProd);
+let c15 = 16;
+let c16 = 32;
 let obj = { left: (HAPPENING_NOW_CONTENT_HEIGHT - 16) / 2, top: -3, transform: items };
 items = [{ rotate: "24deg" }];
 let items1 = [obj, , , , , ];
@@ -40,20 +42,19 @@ let items5 = [{ rotate: "12deg" }];
 items1[4] = { left: -3, top: (HAPPENING_NOW_CONTENT_HEIGHT - 16 + 32) / 2, transform: items5 };
 let items6 = [{ rotate: "-12deg" }];
 items1[5] = { left: -3, top: (HAPPENING_NOW_CONTENT_HEIGHT - 32 - 16) / 2, transform: items6 };
-let closure_16 = _createForOfIteratorHelperLoose.createStyles((arg0) => {
-  let obj = { customStatusContainer: { flexShrink: 1, flexDirection: "row", alignItems: "center" }, customStatusContextContainer: { flexShrink: 1, flexDirection: "column", marginLeft: 12, gap: 2 }, statusAvatar: { marginBottom: 2 }, largeEmoji: { width: 32, height: 32, borderRadius: 2, overflow: "hidden" }, smallEmoji: { position: "absolute", width: 16, height: 16, borderRadius: 2, opacity: 0.6 } };
-  obj = { justifyContent: "center" };
+let closure_18 = createCacheKey.createStyles((arg0) => {
+  obj = { customStatusContainer: { flexShrink: 1, flexDirection: "row", alignItems: "center" }, customStatusContextContainer: { flexShrink: 1, flexDirection: "column", marginLeft: 12, gap: 2 }, statusAvatar: { marginBottom: 2 }, largeEmoji: obj, smallEmoji: obj, cardContainer: null, emojisContainer: null };
+  obj = { width: c16, height: c16, borderRadius: 2, overflow: "hidden" };
+  obj = { position: "absolute", width: c15, height: c15, borderRadius: 2, opacity: 0.6 };
   let num;
   if (arg0) {
     num = 12;
   }
-  obj.paddingLeft = num;
-  obj.cardContainer = obj;
-  obj = { width: HAPPENING_NOW_CONTENT_HEIGHT, height: HAPPENING_NOW_CONTENT_HEIGHT, justifyContent: "center", alignItems: "center", borderRadius: importDefault(689).radii.sm, overflow: "hidden" };
-  obj.emojisContainer = obj;
+  obj[5] = { justifyContent: "center", paddingLeft: num };
+  obj[6] = { width: HAPPENING_NOW_CONTENT_HEIGHT, height: HAPPENING_NOW_CONTENT_HEIGHT, justifyContent: "center", alignItems: "center", borderRadius: importDefault(712).radii.sm, overflow: "hidden" };
   return obj;
 });
-const result = require("result").fileFinishedImporting("modules/main_tabs_v2/native/shared_components/happening_now/HappeningNowCustomStatus.tsx");
+const result = require("noop").fileFinishedImporting("modules/main_tabs_v2/native/shared_components/happening_now/HappeningNowCustomStatus.tsx");
 
 export const CustomStatusActivityCard = function CustomStatusActivityCard(user) {
   let activity;
@@ -78,152 +79,276 @@ export const CustomStatusActivityCard = function CustomStatusActivityCard(user) 
   c3 = undefined;
   let first;
   let React;
-  const tmp = callback3(null == activity.emoji);
+  let tmp = callback2(null == activity.emoji);
   dependencyMap = tmp;
+  let num = 2;
   [tmp3, c3] = first(React.useState(undefined), 2);
   const tmp4 = first(React.useState(undefined), 2);
   first = tmp4[0];
   React = tmp4[1];
-  let obj = user(624);
-  let items = [_isNativeReflectConstruct];
+  let obj = user(647);
+  let items = [sortActivity];
   const stateFromStoresObject = obj.useStateFromStoresObject(items, () => {
+    let obj = outer1_8;
     const status = outer1_8.getStatus(user.id);
-    const obj = {};
-    let tmp2 = null;
+    let tmp3 = null;
     if (status !== outer1_11.OFFLINE) {
-      tmp2 = status;
+      tmp3 = status;
     }
-    obj.status = tmp2;
-    obj.isMobileOnline = outer1_8.isMobileOnline(user.id);
-    obj.isVROnline = outer1_8.isVROnline(user.id);
+    obj = { status: tmp3, isMobileOnline: obj.isMobileOnline(tmp.id), isVROnline: obj.isVROnline(tmp.id) };
     return obj;
   });
   ({ status, isMobileOnline, isVROnline } = stateFromStoresObject);
   obj = { userId: user.id, guildId };
-  let tmp2 = first(React.useState(undefined), 2);
-  let obj2 = user(8359);
-  const displayNameStylesFont = obj2.useDisplayNameStylesFont({ displayNameStyles: activity(4396)(obj) });
+  const tmp2 = first(React.useState(undefined), 2);
+  let obj2 = user(8383);
+  const displayNameStylesFont = obj2.useDisplayNameStylesFont({ displayNameStyles: activity(4419)(obj) });
   let items1 = [activity.emoji];
   const effect = React.useEffect(() => {
     function _loadEmoji() {
-      // CreateGeneratorClosureLongIndex (0x67)
-      const obj = callback(tmp);
-      return obj(...arguments);
+      const self = this;
+      const tmp = callback(function*() {
+        if (v0 === 2) {
+          v0 = 3;
+          HermesBuiltin.throwTypeError();
+        } else if (tmp3 === 3) {
+          if (arg0 === 1) {
+            throw arg1;
+          } else if (arg0 === 2) {
+            let obj = { value: null, done: true };
+            obj[0] = arg1;
+            return obj;
+          } else {
+            return { value: "HermesInternal", done: null };
+          }
+        } else {
+          try {
+            v0 = 2;
+            if (0 === dependencyMap) {
+              if (arg0 === 1) {
+                v0 = 3;
+                throw arg1;
+              } else if (arg0 === 2) {
+                v0 = 3;
+                obj = { value: null, done: true };
+                obj[0] = arg1;
+                return obj;
+              } else {
+                let length = 0;
+                let callback = tmp4;
+                callback = undefined;
+                length = undefined;
+                dependencyMap = undefined;
+                if (null != outer1_1.emoji) {
+                  dependencyMap = 1;
+                  v0 = 1;
+                  let obj1 = { value: null, done: false };
+                  obj1[0] = callback(outer2_2[13]).getEmojiSource(outer1_1.emoji);
+                  return obj1;
+                } else {
+                  v0 = 3;
+                }
+              }
+            } else if (1 === tmp4) {
+              if (arg0 === 1) {
+                v0 = 3;
+                throw arg1;
+              } else if (arg0 === 2) {
+                v0 = 3;
+                const obj2 = { value: null, done: true };
+                obj2[0] = arg1;
+                return obj2;
+              } else {
+                callback = arg1;
+                obj1 = callback(outer2_2[14]);
+                const obj3 = { emoji: null, emojiSource: null };
+                obj3[0] = outer1_1.emoji;
+                obj3[1] = callback;
+                dependencyMap = 2;
+                v0 = 1;
+                const obj4 = { value: null, done: false };
+                obj4[0] = obj1.getEmojiDominantColors(obj3);
+                return obj4;
+              }
+            } else if (arg0 === 1) {
+              v0 = 3;
+              throw arg1;
+            } else if (arg0 !== 2) {
+              length = arg1;
+              if (length.length > 0) {
+                dependencyMap = length[0];
+                const _HermesInternal = HermesInternal;
+                v0("rgba(" + 5 + ", " + 32 + ", " + 19 + ", 0.16)");
+              }
+              outer1_5(callback);
+            }
+            v0 = 3;
+            obj = { value: null, done: true };
+            obj[0] = arg1;
+            return obj;
+          } catch (tmp28) {
+            v0 = tmp;
+            throw tmp28;
+          }
+        }
+      });
+      const _loadEmoji = tmp;
+      const apply = tmp.apply;
+      if (typeof apply === "unknown") {
+        let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+      } else {
+        applyArgumentsResult = apply(self, arguments);
+      }
+      return applyArgumentsResult;
     }
     !(function loadEmoji() {
-      return _loadEmoji(...arguments);
+      const self = this;
+      const apply = _loadEmoji.apply;
+      if (typeof apply === "unknown") {
+        let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+      } else {
+        applyArgumentsResult = apply(self, arguments);
+      }
+      return applyArgumentsResult;
     })();
   }, items1);
-  let num = 2;
   if (null != activity.emoji) {
     num = 1;
   }
-  let obj3 = user(9042);
-  const gameMentionsAsPlainText = obj3.useGameMentionsAsPlainText(activity.state);
+  let tmp6Result = tmp6(9066);
+  const gameMentionsAsPlainText = tmp6Result.useGameMentionsAsPlainText(activity.state);
   const items2 = [userTitle, , ];
-  let obj4 = user(8292);
-  items2[1] = obj4.getStatusLabel(status);
+  tmp6Result = tmp6(8316);
+  items2[1] = tmp6Result.getStatusLabel(status);
   items2[2] = gameMentionsAsPlainText;
   const joined = items2.join(", ");
-  obj = { onPress };
+  obj = { onPress, width: null, style: null, accessibilityLabel: null, panelVariant: null, children: null };
   let str = "stretchy";
-  const tmp12 = callback;
-  const tmp7 = activity(4396)(obj);
+  let tmp10 = activity(4419)(obj);
   if (fullwidth) {
     str = "full";
   }
-  obj.width = str;
-  obj.style = tmp.cardContainer;
-  obj.accessibilityLabel = joined;
-  obj.panelVariant = panelVariant;
-  const obj1 = { style: tmp.customStatusContainer };
+  obj[1] = str;
+  obj[2] = tmp.cardContainer;
+  obj[3] = joined;
+  obj[4] = panelVariant;
+  let obj1 = { style: tmp.customStatusContainer, children: null };
   if (null != activity.emoji) {
-    obj2 = {};
-    obj3 = {};
+    obj2 = { style: null, children: null };
     const items3 = [tmp.emojisContainer, ];
-    obj4 = { backgroundColor: tmp3 };
-    items3[1] = obj4;
-    obj3.style = items3;
-    let obj10 = user(477);
-    if (obj10.isAndroid()) {
-      let tmp25 = null != first;
-      if (tmp25) {
-        const obj5 = { source: first, style: tmp.largeEmoji };
-        tmp25 = callback(closure_7, obj5);
+    let obj3 = { backgroundColor: null };
+    obj3[0] = tmp3;
+    items3[1] = obj3;
+    obj2[0] = items3;
+    if (tmp6Result1.isAndroid()) {
+      let tmp15Result = null != first;
+      if (tmp15Result) {
+        let obj4 = { source: null, style: null };
+        obj4[0] = first;
+        obj4[1] = tmp.largeEmoji;
+        tmp15Result = tmp15(closure_7, obj4);
       }
-      let tmp24 = tmp25;
     } else {
-      const obj6 = { emoji: activity.emoji, size: 32, style: tmp.largeEmoji, animate: false };
-      tmp24 = callback(activity(9061), obj6);
+      const obj5 = { emoji: null, size: null, style: null, animate: false };
+      obj5[0] = activity.emoji;
+      obj5[1] = c16;
+      obj5[2] = tmp.largeEmoji;
+      tmp15Result = tmp15(tmp9(9085), obj5);
     }
     const items4 = [
-      tmp24,
+      tmp15Result,
       items1.map((arg0, arg1) => {
           let obj = user(_undefined[18]);
           if (obj.isAndroid()) {
-            let tmp9 = null != first;
-            if (tmp9) {
-              obj = { source: first };
+            let tmp10 = null != first;
+            if (tmp10) {
+              obj = { source: null, style: null };
+              obj[0] = tmp8;
               const items = [_undefined.smallEmoji, arg0];
-              obj.style = items;
-              tmp9 = outer1_12(outer1_7, obj, arg1);
+              obj[1] = items;
+              tmp10 = outer1_12(outer1_7, obj, arg1);
             }
-            let tmp6 = tmp9;
+            let tmp7 = tmp10;
           } else {
-            obj = { emoji: activity.emoji, size: 16 };
+            obj = { emoji: null, size: null, style: null, animate: false };
+            obj[0] = activity.emoji;
+            obj[1] = outer1_15;
             const items1 = [_undefined.smallEmoji, arg0];
-            obj.style = items1;
-            obj.animate = false;
-            tmp6 = outer1_12(activity(_undefined[19]), obj, arg1);
+            obj[2] = items1;
+            tmp7 = outer1_12(activity(_undefined[19]), obj, arg1);
           }
-          return tmp6;
+          return tmp7;
         })
     ];
-    obj3.children = items4;
-    const items5 = [callback2(closure_6, obj3), ];
-    const obj7 = { style: tmp.customStatusContextContainer };
-    const obj8 = { user, avatarDecoration: user.avatarDecoration, size: user(1273).AvatarSizes.XSMALL, guildId, status, isMobileOnline, isVROnline, style: tmp.statusAvatar, autoStatusCutout: STATUS_CUTOUT_SMALL };
-    const items6 = [callback(user(1273).Avatar, obj8), , ];
-    const obj9 = { noMargin: true, displayNameFont: displayNameStylesFont, children: userTitle };
-    items6[1] = callback(user(14290).HappeningNowCardHeader, obj9);
+    obj2[1] = items4;
+    const items5 = [callback(tmp17, obj2), ];
+    const obj6 = { style: null, children: null };
+    obj6[0] = tmp.customStatusContextContainer;
+    const obj7 = { user: null, avatarDecoration: null, size: null, guildId: null, status: null, isMobileOnline: null, isVROnline: null, style: null, autoStatusCutout: null };
+    obj7[0] = user;
+    obj7[1] = user.avatarDecoration;
+    obj7[2] = tmp6(1297).AvatarSizes.XSMALL;
+    obj7[3] = guildId;
+    obj7[4] = status;
+    obj7[5] = isMobileOnline;
+    obj7[6] = isVROnline;
+    obj7[7] = tmp.statusAvatar;
+    obj7[8] = STATUS_CUTOUT_SMALL;
+    const items6 = [tmp15(tmp6(1297).Avatar, obj7), , ];
+    const obj8 = { noMargin: true, displayNameFont: null, children: null };
+    obj8[1] = displayNameStylesFont;
+    obj8[2] = userTitle;
+    items6[1] = tmp15(tmp6(14312).HappeningNowCardHeader, obj8);
     const state = activity.state;
-    let length;
-    if (null != state) {
-      length = state.length;
+    let num2;
+    if (state != null) {
+      num2 = state.length;
     }
-    let num6 = 0;
-    if (null != length) {
-      num6 = length;
+    if (num2 == null) {
+      num2 = 0;
     }
-    let tmp36 = num6 > 0;
-    if (tmp36) {
-      obj10 = { ellipsizeMode: "tail", variant: "text-xs/medium", color: "text-default", lineClamp: num, maxFontSizeMultiplier: 2, children: gameMentionsAsPlainText };
-      tmp36 = callback(user(4161).Text, obj10);
+    let tmp15Result1 = num2 > 0;
+    if (tmp15Result1) {
+      const obj9 = { ellipsizeMode: "tail", variant: "text-xs/medium", color: "text-default", lineClamp: null, maxFontSizeMultiplier: 2, children: null };
+      obj9[3] = num;
+      obj9[5] = gameMentionsAsPlainText;
+      tmp15Result1 = tmp15(tmp6(4185).Text, obj9);
     }
-    items6[2] = tmp36;
-    obj7.children = items6;
-    items5[1] = callback2(closure_6, obj7);
-    obj2.children = items5;
-    let tmp16Result = tmp16(closure_14, obj2);
-    const tmp17 = closure_14;
-    const tmp18 = closure_6;
-    const tmp29 = callback2;
-    const tmp30 = closure_6;
+    const obj10 = { children: null };
+    items6[2] = tmp15Result1;
+    obj6[1] = items6;
+    items5[1] = callback(tmp17, obj6);
+    obj10[0] = items5;
+    let tmp18Result = tmp18(closure_14, obj10);
+    const tmp19 = closure_14;
+    tmp6Result1 = tmp6(500);
   } else {
-    const obj11 = {};
-    const obj12 = { user, avatarDecoration: user.avatarDecoration, size: user(1273).AvatarSizes.LARGE, guildId, status, isMobileOnline, isVROnline, autoStatusCutout: true };
-    const items7 = [callback(user(1273).Avatar, obj12), ];
-    const obj13 = { style: tmp.customStatusContextContainer };
-    const obj14 = { noMargin: true, displayNameFont: displayNameStylesFont, children: userTitle };
-    const items8 = [callback(user(14290).HappeningNowCardHeader, obj14), ];
-    const obj15 = { ellipsizeMode: "tail", variant: "text-xs/medium", color: "text-default", lineClamp: num, maxFontSizeMultiplier: 2, children: gameMentionsAsPlainText };
-    items8[1] = callback(user(4161).Text, obj15);
-    obj13.children = items8;
-    items7[1] = callback2(closure_6, obj13);
-    obj11.children = items7;
-    tmp16Result = callback2(closure_14, obj11);
+    const obj11 = { children: null };
+    const obj12 = { user: null, avatarDecoration: null, size: null, guildId: null, status: null, isMobileOnline: null, isVROnline: null, autoStatusCutout: true };
+    obj12[0] = user;
+    obj12[1] = user.avatarDecoration;
+    obj12[2] = tmp6(1297).AvatarSizes.LARGE;
+    obj12[3] = guildId;
+    obj12[4] = status;
+    obj12[5] = isMobileOnline;
+    obj12[6] = isVROnline;
+    const items7 = [tmp15(tmp6(1297).Avatar, obj12), ];
+    const obj13 = { style: null, children: null };
+    obj13[0] = tmp.customStatusContextContainer;
+    const obj14 = { noMargin: true, displayNameFont: null, children: null };
+    obj14[1] = displayNameStylesFont;
+    obj14[2] = userTitle;
+    const items8 = [tmp15(tmp6(14312).HappeningNowCardHeader, obj14), ];
+    const obj15 = { ellipsizeMode: "tail", variant: "text-xs/medium", color: "text-default", lineClamp: null, maxFontSizeMultiplier: 2, children: null };
+    obj15[3] = num;
+    obj15[5] = gameMentionsAsPlainText;
+    items8[1] = tmp15(tmp6(4185).Text, obj15);
+    obj13[1] = items8;
+    items7[1] = callback(tmp17, obj13);
+    obj11[0] = items7;
+    tmp18Result = callback(closure_14, obj11);
   }
-  obj1.children = tmp16Result;
-  obj.children = callback(closure_6, obj1);
-  return tmp12(activity(14290), obj);
+  obj1[1] = tmp18Result;
+  obj[5] = closure_12(closure_6, obj1);
+  return closure_12(activity(14312), obj);
 };

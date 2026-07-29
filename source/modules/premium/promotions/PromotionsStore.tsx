@@ -1,391 +1,318 @@
-// Module ID: 6242
-// Function ID: 55802
-// Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 1316, 6243, 6245, 6244, 566, 686, 2]
+// Module ID: 6262
+// Function ID: 6263
+// Name: createEmptyPromotionsByType
+// Dependencies: [1340, 6263, 6265, 6264, 589, 709, 2]
 
-// Module 6242 (_isNativeReflectConstruct)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_3 from "_isNativeReflectConstruct";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
-import closure_7 from "_isNativeReflectConstruct";
-import closure_8 from "_isNativeReflectConstruct";
-import closure_9 from "_isNativeReflectConstruct";
+// Module 6262 (createEmptyPromotionsByType)
+import handleConnectionClosedOrResumed from "handleConnectionClosedOrResumed";
+import createFromServer from "createFromServer";
+import closure_4 from "createFromServer";
+import { PersistedStore } from "initialize";
 
 const require = arg1;
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
-  }
-  const result = _isNativeReflectConstruct();
-}
 function createEmptyPromotionsByType() {
-  return { [closure_0(closure_1[8]).PromotionTypes.THIRD_PARTY]: {}, [closure_0(closure_1[8]).PromotionTypes.BOGO]: {}, [closure_0(closure_1[8]).PromotionTypes.THIRD_PARTY_DIRECT_FULFILLMENT]: {}, [closure_0(closure_1[8]).PromotionTypes.MARKETING_MOMENT]: {}, [closure_0(closure_1[8]).PromotionTypes.THIRD_PARTY_INBOUND]: {}, [closure_0(closure_1[8]).PromotionTypes.THIRD_PARTY_OUTBOUND]: {}, [closure_0(closure_1[8]).PromotionTypes.GIFT_PROMOTION]: {}, [closure_0(closure_1[8]).PromotionTypes.THIRD_PARTY_OUTBOUND_RECURRING]: {} };
+  return { [closure_0(closure_1[3]).PromotionTypes.THIRD_PARTY]: {}, [closure_0(closure_1[3]).PromotionTypes.BOGO]: {}, [closure_0(closure_1[3]).PromotionTypes.THIRD_PARTY_DIRECT_FULFILLMENT]: {}, [closure_0(closure_1[3]).PromotionTypes.MARKETING_MOMENT]: {}, [closure_0(closure_1[3]).PromotionTypes.THIRD_PARTY_INBOUND]: {}, [closure_0(closure_1[3]).PromotionTypes.THIRD_PARTY_OUTBOUND]: {}, [closure_0(closure_1[3]).PromotionTypes.GIFT_PROMOTION]: {}, [closure_0(closure_1[3]).PromotionTypes.THIRD_PARTY_OUTBOUND_RECURRING]: {} };
 }
 function getLatestActiveOutboundPromotionStartDate() {
-  const values = Object.values(dependencyMap[require(undefined, 6244) /* CountryListMode */.PromotionTypes.THIRD_PARTY_OUTBOUND]);
-  let num = 0;
   let startDate = null;
-  let tmp2 = null;
-  if (0 < values.length) {
-    do {
-      let tmp3 = values[num];
-      let tmp4 = null == startDate || tmp3.startDate > startDate;
-      if (tmp4) {
-        startDate = tmp3.startDate;
-      }
-      num = num + 1;
-      tmp2 = startDate;
-    } while (num < values.length);
+  const values = Object.values(dependencyMap[require(undefined, 6264) /* CountryListMode */.PromotionTypes.THIRD_PARTY_OUTBOUND]);
+  for (const item10019 of values) {
+    let tmp3 = item10019;
+    let tmp4 = startDate;
+    let tmp5 = null == startDate;
+    if (!tmp5) {
+      let tmp6 = item10019;
+      let tmp7 = startDate;
+      tmp5 = tmp3.startDate > startDate;
+    }
+    if (tmp5) {
+      let tmp8 = item10019;
+      startDate = tmp3.startDate;
+    }
+    continue;
   }
   let toISOStringResult;
-  if (null != tmp2) {
-    toISOStringResult = tmp2.toISOString();
+  if (startDate != null) {
+    toISOStringResult = startDate.toISOString();
   }
-  let tmp6 = null;
-  if (null != toISOStringResult) {
-    tmp6 = toISOStringResult;
+  if (toISOStringResult == null) {
+    toISOStringResult = null;
   }
-  return tmp6;
+  return toISOStringResult;
 }
 function initializeFromUserSettings() {
   const userContent = settings.settings.userContent;
   let value;
-  if (null != userContent) {
-    if (null != userContent.lastDismissedOutboundPromotionStartDate) {
+  if (userContent != null) {
+    if (userContent.lastDismissedOutboundPromotionStartDate != null) {
       value = iter.value;
     }
   }
-  let tmp2 = null;
-  if (null != value) {
-    tmp2 = value;
+  if (value == null) {
+    value = null;
   }
-  let c18 = tmp2;
+  let c14 = value;
 }
-let closure_10 = { hasFetchedConsumedInboundPromotionId: false, consumedInboundPromotionId: null, lastSeenOutboundPromotionStartDate: null };
+let closure_5 = { hasFetchedConsumedInboundPromotionId: false, consumedInboundPromotionId: null, lastSeenOutboundPromotionStartDate: null };
+let c7 = null;
+let c8 = false;
+let c9 = null;
+let c10 = false;
 let c11 = null;
-let c12 = false;
-let c13 = null;
-let c14 = false;
-let c15 = null;
-let c16 = null;
-let closure_17 = createEmptyPromotionsByType();
-let c18 = null;
+let c12 = null;
+let closure_13 = createEmptyPromotionsByType();
+let c14 = null;
 let map = new Map();
-let closure_20 = [];
-let c21 = false;
-let tmp3 = ((PersistedStore) => {
-  class PromotionsStore {
-    constructor() {
-      self = this;
-      tmp = outer1_2(this, PromotionsStore);
-      obj = outer1_5(PromotionsStore);
-      tmp2 = outer1_4;
-      if (outer1_22()) {
-        tmp6 = globalThis;
-        _Reflect = Reflect;
-        tmp7 = outer1_5;
-        tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, outer1_5(self).constructor);
-      } else {
-        tmp3 = arguments;
-        tmp4 = arguments;
-        constructResult = obj(...arguments);
-      }
-      return tmp2(self, constructResult);
-    }
+let closure_16 = [];
+let c17 = false;
+class PromotionsStore extends PersistedStore {
+}
+const prototype = PromotionsStore.prototype;
+prototype["initialize"] = function initialize(arg0) {
+  if (null != arg0) {
+    let closure_5 = arg0;
   }
-  callback2(PromotionsStore, PersistedStore);
-  let obj = {
-    key: "initialize",
-    value(arg0) {
-      const self = this;
-      if (null != arg0) {
-        const outer1_10 = arg0;
-      }
-      self.waitFor(outer1_7);
-      const items = [outer1_7];
-      self.syncWith(items, outer1_25);
+  this.waitFor(handleConnectionClosedOrResumed);
+  const items = [handleConnectionClosedOrResumed];
+  this.syncWith(items, initializeFromUserSettings);
+};
+Object.defineProperty(prototype, "outboundPromotions", {
+  get: function outboundPromotions() {
+    return Object.values(dependencyMap[require(undefined, 6264) /* CountryListMode */.PromotionTypes.THIRD_PARTY_OUTBOUND]);
+  },
+  set: undefined
+});
+Object.defineProperty(prototype, "outboundRecurringPromotions", {
+  get: function outboundRecurringPromotions() {
+    return Object.values(dependencyMap[require(undefined, 6264) /* CountryListMode */.PromotionTypes.THIRD_PARTY_OUTBOUND_RECURRING]);
+  },
+  set: undefined
+});
+Object.defineProperty(prototype, "lastSeenOutboundPromotionStartDate", {
+  get: function lastSeenOutboundPromotionStartDate() {
+    return closure_5.lastSeenOutboundPromotionStartDate;
+  },
+  set: undefined
+});
+Object.defineProperty(prototype, "lastDismissedOutboundPromotionStartDate", {
+  get: function lastDismissedOutboundPromotionStartDate(arg0) {
+    return c14;
+  },
+  set: undefined
+});
+Object.defineProperty(prototype, "lastFetchedActivePromotions", {
+  get: function lastFetchedActivePromotions() {
+    return c11;
+  },
+  set: undefined
+});
+Object.defineProperty(prototype, "lastFetchedActivePromotionsLocale", {
+  get: function lastFetchedActivePromotionsLocale() {
+    return c12;
+  },
+  set: undefined
+});
+Object.defineProperty(prototype, "isFetchingActivePromotions", {
+  get: function isFetchingActivePromotions() {
+    return c10;
+  },
+  set: undefined
+});
+Object.defineProperty(prototype, "hasFetchedConsumedInboundPromotionId", {
+  get: function hasFetchedConsumedInboundPromotionId() {
+    return closure_5.hasFetchedConsumedInboundPromotionId;
+  },
+  set: undefined
+});
+Object.defineProperty(prototype, "consumedInboundPromotionId", {
+  get: function consumedInboundPromotionId() {
+    return closure_5.consumedInboundPromotionId;
+  },
+  set: undefined
+});
+Object.defineProperty(prototype, "bogoPromotion", {
+  get: function bogoPromotion(arg0) {
+    return c7;
+  },
+  set: undefined
+});
+Object.defineProperty(prototype, "isFetchingActiveBogoPromotion", {
+  get: function isFetchingActiveBogoPromotion() {
+    return c8;
+  },
+  set: undefined
+});
+Object.defineProperty(prototype, "lastFetchedActiveBogoPromotion", {
+  get: function lastFetchedActiveBogoPromotion() {
+    return c9;
+  },
+  set: undefined
+});
+Object.defineProperty(prototype, "promotionsByType", {
+  get: function promotionsByType() {
+    return closure_13;
+  },
+  set: undefined
+});
+prototype["getPromotionByTypeAndId"] = function getPromotionByTypeAndId(MARKETING_MOMENT, promotionId) {
+  let tmp2;
+  if (dependencyMap[MARKETING_MOMENT] != null) {
+    tmp2 = tmp[promotionId];
+  }
+  return tmp2;
+};
+prototype["getPromotionByTypeAndKey"] = function getPromotionByTypeAndKey(arg0, arg1) {
+  let closure_0 = arg1;
+  const values = Object.values(dependencyMap[arg0]);
+  return values.find((promotionKey) => promotionKey.promotionKey === closure_0);
+};
+prototype["getState"] = function getState() {
+  return closure_5;
+};
+prototype["getMarketingComponentByType"] = function getMarketingComponentByType(GIFT_CUSTOMIZATION_BANNER) {
+  let value = map.get(GIFT_CUSTOMIZATION_BANNER);
+  if (value == null) {
+    value = null;
+  }
+  return value;
+};
+prototype["hasPromotion"] = function hasPromotion(closure_0) {
+  let values = Object.values(closure_13);
+  return values.some((arg0) => {
+    const values = Object.values(arg0);
+    return values.some((promotionKey) => promotionKey.promotionKey === closure_0);
+  });
+};
+prototype["getPromotionsByPartner"] = function getPromotionsByPartner(arg0) {
+  const _require = arg0;
+  const obj = { oneTime: null, recurring: null };
+  let values = Object.values(dependencyMap[_require(undefined, 6264).PromotionTypes.THIRD_PARTY_OUTBOUND]);
+  obj[0] = values.filter((partnerId) => partnerId.partnerId === closure_0);
+  values = Object.values(dependencyMap[_require(undefined, 6264).PromotionTypes.THIRD_PARTY_OUTBOUND_RECURRING]);
+  obj[1] = values.filter((partnerId) => partnerId.partnerId === closure_0);
+  return obj;
+};
+prototype["getGiftPromotion"] = function getGiftPromotion() {
+  const tmp = dependencyMap[require(undefined, 6264) /* CountryListMode */.PromotionTypes.GIFT_PROMOTION];
+  const keys = Object.keys(tmp);
+  let tmp2 = null;
+  if (0 !== keys.length) {
+    tmp2 = tmp[keys[0]];
+  }
+  return tmp2;
+};
+prototype["getGiftPromotionRewardSkuIds"] = function getGiftPromotionRewardSkuIds() {
+  const giftPromotion = this.getGiftPromotion();
+  let rewardSkuIds;
+  if (giftPromotion != null) {
+    rewardSkuIds = giftPromotion.rewardSkuIds;
+  }
+  if (rewardSkuIds == null) {
+    rewardSkuIds = [];
+  }
+  return rewardSkuIds;
+};
+prototype["getMarketingMomentPromotion"] = function getMarketingMomentPromotion() {
+  const tmp = dependencyMap[require(undefined, 6264) /* CountryListMode */.PromotionTypes.MARKETING_MOMENT];
+  const keys = Object.keys(tmp);
+  if (0 === keys.length) {
+    return null;
+  } else {
+    const _Date = Date;
+    const date = new Date();
+    let tmp7 = null;
+    if (tmp[keys[0]].endDate >= date) {
+      tmp7 = tmp2;
     }
-  };
-  let items = [obj, , , , , , , , , , , , , , , , , , , , , , , , , , ];
-  obj = {
-    key: "outboundPromotions",
-    get() {
-      return Object.values(outer1_17[PromotionsStore(undefined, outer1_1[8]).PromotionTypes.THIRD_PARTY_OUTBOUND]);
+    return tmp7;
+  }
+};
+prototype["getMarketingMomentRewardSkuIds"] = function getMarketingMomentRewardSkuIds() {
+  const marketingMomentPromotion = this.getMarketingMomentPromotion();
+  let rewardSkuIds;
+  if (marketingMomentPromotion != null) {
+    rewardSkuIds = marketingMomentPromotion.rewardSkuIds;
+  }
+  if (rewardSkuIds == null) {
+    rewardSkuIds = [];
+  }
+  return rewardSkuIds;
+};
+prototype["getActiveBogoRewardPromotion"] = function getActiveBogoRewardPromotion() {
+  const date = new Date();
+  const values = Object.values(dependencyMap[date(undefined, 6264).PromotionTypes.MARKETING_MOMENT]);
+  let found = values.find((hasBogoReward) => {
+    hasBogoReward = hasBogoReward.hasBogoReward;
+    if (hasBogoReward) {
+      hasBogoReward = hasBogoReward.endDate >= date;
     }
-  };
-  items[1] = obj;
-  obj = {
-    key: "outboundRecurringPromotions",
-    get() {
-      return Object.values(outer1_17[PromotionsStore(undefined, outer1_1[8]).PromotionTypes.THIRD_PARTY_OUTBOUND_RECURRING]);
-    }
-  };
-  items[2] = obj;
-  items[3] = {
-    key: "lastSeenOutboundPromotionStartDate",
-    get() {
-      return outer1_10.lastSeenOutboundPromotionStartDate;
-    }
-  };
-  items[4] = {
-    key: "lastDismissedOutboundPromotionStartDate",
-    get() {
-      return outer1_18;
-    }
-  };
-  items[5] = {
-    key: "lastFetchedActivePromotions",
-    get() {
-      return outer1_15;
-    }
-  };
-  items[6] = {
-    key: "lastFetchedActivePromotionsLocale",
-    get() {
-      return outer1_16;
-    }
-  };
-  items[7] = {
-    key: "isFetchingActivePromotions",
-    get() {
-      return outer1_14;
-    }
-  };
-  items[8] = {
-    key: "hasFetchedConsumedInboundPromotionId",
-    get() {
-      return outer1_10.hasFetchedConsumedInboundPromotionId;
-    }
-  };
-  items[9] = {
-    key: "consumedInboundPromotionId",
-    get() {
-      return outer1_10.consumedInboundPromotionId;
-    }
-  };
-  items[10] = {
-    key: "bogoPromotion",
-    get() {
-      return outer1_11;
-    }
-  };
-  items[11] = {
-    key: "isFetchingActiveBogoPromotion",
-    get() {
-      return outer1_12;
-    }
-  };
-  items[12] = {
-    key: "lastFetchedActiveBogoPromotion",
-    get() {
-      return outer1_13;
-    }
-  };
-  items[13] = {
-    key: "promotionsByType",
-    get() {
-      return outer1_17;
-    }
-  };
-  items[14] = {
-    key: "getPromotionByTypeAndId",
-    value(arg0, arg1) {
-      let tmp2;
-      if (null != outer1_17[arg0]) {
-        tmp2 = tmp[arg1];
-      }
-      return tmp2;
-    }
-  };
-  items[15] = {
-    key: "getPromotionByTypeAndKey",
-    value(arg0, arg1) {
-      let closure_0 = arg1;
-      const values = Object.values(outer1_17[arg0]);
-      return values.find((promotionKey) => promotionKey.promotionKey === closure_0);
-    }
-  };
-  items[16] = {
-    key: "getState",
-    value() {
-      return outer1_10;
-    }
-  };
-  items[17] = {
-    key: "getMarketingComponentByType",
-    value(arg0) {
-      const value = outer1_19.get(arg0);
-      let tmp2 = null;
-      if (null != value) {
-        tmp2 = value;
-      }
-      return tmp2;
-    }
-  };
-  items[18] = {
-    key: "hasPromotion",
-    value(arg0) {
-      let closure_0 = arg0;
-      let values = Object.values(outer1_17);
-      return values.some((arg0) => {
-        const values = Object.values(arg0);
-        return values.some((promotionKey) => promotionKey.promotionKey === outer1_0);
-      });
-    }
-  };
-  items[19] = {
-    key: "getPromotionsByPartner",
-    value(arg0) {
-      let closure_0 = arg0;
-      const obj = {};
-      let values = Object.values(outer1_17[PromotionsStore(undefined, outer1_1[8]).PromotionTypes.THIRD_PARTY_OUTBOUND]);
-      obj.oneTime = values.filter((partnerId) => partnerId.partnerId === closure_0);
-      values = Object.values(outer1_17[PromotionsStore(undefined, outer1_1[8]).PromotionTypes.THIRD_PARTY_OUTBOUND_RECURRING]);
-      obj.recurring = values.filter((partnerId) => partnerId.partnerId === closure_0);
-      return obj;
-    }
-  };
-  items[20] = {
-    key: "getGiftPromotion",
-    value() {
-      const tmp = outer1_17[PromotionsStore(undefined, outer1_1[8]).PromotionTypes.GIFT_PROMOTION];
-      const keys = Object.keys(tmp);
-      let tmp2 = null;
-      if (0 !== keys.length) {
-        tmp2 = tmp[keys[0]];
-      }
-      return tmp2;
-    }
-  };
-  items[21] = {
-    key: "getGiftPromotionRewardSkuIds",
-    value() {
-      const giftPromotion = this.getGiftPromotion();
-      let rewardSkuIds;
-      if (null != giftPromotion) {
-        rewardSkuIds = giftPromotion.rewardSkuIds;
-      }
-      if (null == rewardSkuIds) {
-        rewardSkuIds = [];
-      }
-      return rewardSkuIds;
-    }
-  };
-  items[22] = {
-    key: "getMarketingMomentPromotion",
-    value() {
-      const tmp = outer1_17[PromotionsStore(undefined, outer1_1[8]).PromotionTypes.MARKETING_MOMENT];
-      const keys = Object.keys(tmp);
-      if (0 === keys.length) {
-        return null;
-      } else {
-        const _Date = Date;
-        const date = new Date();
-        let tmp7 = null;
-        if (tmp[keys[0]].endDate >= date) {
-          tmp7 = tmp2;
-        }
-        return tmp7;
-      }
-    }
-  };
-  items[23] = {
-    key: "getMarketingMomentRewardSkuIds",
-    value() {
-      const marketingMomentPromotion = this.getMarketingMomentPromotion();
-      let rewardSkuIds;
-      if (null != marketingMomentPromotion) {
-        rewardSkuIds = marketingMomentPromotion.rewardSkuIds;
-      }
-      if (null == rewardSkuIds) {
-        rewardSkuIds = [];
-      }
-      return rewardSkuIds;
-    }
-  };
-  items[24] = {
-    key: "getActiveBogoRewardPromotion",
-    value() {
-      const date = new Date();
-      const values = Object.values(outer1_17[PromotionsStore(undefined, outer1_1[8]).PromotionTypes.MARKETING_MOMENT]);
-      const found = values.find((hasBogoReward) => {
-        hasBogoReward = hasBogoReward.hasBogoReward;
-        if (hasBogoReward) {
-          hasBogoReward = hasBogoReward.endDate >= date;
-        }
-        return hasBogoReward;
-      });
-      let tmp3 = null;
-      if (null != found) {
-        tmp3 = found;
-      }
-      return tmp3;
-    }
-  };
-  items[25] = {
-    key: "claimedOutboundPromotionCodes",
-    get() {
-      return outer1_20;
-    }
-  };
-  items[26] = {
-    key: "claimedOutboundPromotionCodesLoaded",
-    get() {
-      return outer1_21;
-    }
-  };
-  return callback(PromotionsStore, items);
-})(require("initialize").PersistedStore);
-tmp3.displayName = "PromotionsStore";
-tmp3.persistKey = "PromotionsPersistedStore";
+    return hasBogoReward;
+  });
+  if (found == null) {
+    found = null;
+  }
+  return found;
+};
+Object.defineProperty(prototype, "claimedOutboundPromotionCodes", {
+  get: function claimedOutboundPromotionCodes() {
+    return closure_16;
+  },
+  set: undefined
+});
+Object.defineProperty(prototype, "claimedOutboundPromotionCodesLoaded", {
+  get: function claimedOutboundPromotionCodesLoaded() {
+    return c17;
+  },
+  set: undefined
+});
+PromotionsStore.displayName = "PromotionsStore";
+PromotionsStore.persistKey = "PromotionsPersistedStore";
 let items = [
   (arg0) => {
-    delete tmp.bogoPromotion;
+    try {
+      delete tmp[tmp2];
+      return arg0;
+    } catch (err) {
+    }
   }
 ];
-tmp3.migrations = items;
-tmp3 = new tmp3(require("dispatcher"), {
+PromotionsStore.migrations = items;
+const promotionsStore = new PromotionsStore(require("dispatcher"), {
   ACTIVE_PROMOTIONS_FETCH_SUCCESS: function handleActivePromotionsFetchSuccess(promotions) {
     promotions = promotions.promotions;
-    let closure_17 = createEmptyPromotionsByType();
+    let closure_13 = createEmptyPromotionsByType();
     const map = new Map();
     let item = promotions.forEach((id) => {
-      table[id.promotion_type][id.id] = outer1_8.createFromServer(id);
+      table[id.promotion_type][id.id] = createFromServer.createFromServer(id);
       const marketing_components = id.marketing_components;
-      if (null != marketing_components) {
+      if (marketing_components != null) {
         const item = marketing_components.forEach((component_type) => {
-          const result = map.set(component_type.component_type, outer2_9.createFromServer(component_type));
+          const result = closure_15.set(component_type.component_type, closure_4.createFromServer(component_type));
         });
       }
     });
-    let closure_15 = Date.now();
-    let c14 = false;
-    if (!obj.hasFetchedConsumedInboundPromotionId) {
-      obj.hasFetchedConsumedInboundPromotionId = true;
-      obj.consumedInboundPromotionId = promotions.consumedInboundPromotionId;
+    let closure_11 = Date.now();
+    let c10 = false;
+    if (!closure_5.hasFetchedConsumedInboundPromotionId) {
+      closure_5.hasFetchedConsumedInboundPromotionId = true;
+      closure_5.consumedInboundPromotionId = promotions.consumedInboundPromotionId;
     }
   },
   ACTIVE_PROMOTIONS_FETCH: function handleActivePromotionsFetchStart(locale) {
-    let c14 = true;
+    let c10 = true;
     locale = locale.locale;
   },
   ACTIVE_PROMOTIONS_FETCH_FAIL: function handleActivePromotionsFetchFail() {
-    let closure_17 = createEmptyPromotionsByType();
+    let closure_13 = createEmptyPromotionsByType();
     const map = new Map();
-    let c14 = false;
+    let c10 = false;
   },
   ACTIVE_PROMOTIONS_CLEAR: function handleActivePromotionsClear() {
-    let closure_17 = createEmptyPromotionsByType();
+    let closure_13 = createEmptyPromotionsByType();
     const map = new Map();
-    let c11 = null;
-    let c14 = false;
-    let closure_15 = Date.now();
+    let c7 = null;
+    let c10 = false;
+    let closure_11 = Date.now();
   },
   ACTIVE_BOGO_PROMOTION_FETCH_SUCCESS: function handleActiveBogoPromotionFetchSuccess(activePromotion) {
     let endDate;
@@ -393,44 +320,44 @@ tmp3 = new tmp3(require("dispatcher"), {
     activePromotion = activePromotion.activePromotion;
     const obj = { id: activePromotion.id, startDate: startDate.toISOString(), endDate: endDate.toISOString() };
     ({ startDate, endDate } = activePromotion);
-    let closure_13 = Date.now();
-    let c12 = false;
+    let closure_9 = Date.now();
+    let c8 = false;
   },
   ACTIVE_BOGO_PROMOTION_FETCH: function handleActiveBogoPromotionFetchStart() {
-    let c12 = true;
+    let c8 = true;
   },
   ACTIVE_BOGO_PROMOTION_FETCH_FAIL: function handleActiveBogoPromotionFetchFail() {
-    let c11 = null;
-    let c12 = false;
+    let c7 = null;
+    let c8 = false;
   },
   OUTBOUND_PROMOTION_NOTICE_DISMISS: function handleDismissOutboundPromotionNotice() {
-    if (0 === Object.values(dependencyMap[require(undefined, 6244) /* CountryListMode */.PromotionTypes.THIRD_PARTY_OUTBOUND]).length) {
+    if (0 === Object.values(dependencyMap[require(undefined, 6264) /* CountryListMode */.PromotionTypes.THIRD_PARTY_OUTBOUND]).length) {
       return false;
     } else {
       const tmp2 = getLatestActiveOutboundPromotionStartDate();
       if (null != tmp2) {
-        let c18 = tmp2;
+        let c14 = tmp2;
       }
     }
   },
   OUTBOUND_PROMOTIONS_SEEN: function handleOutboundPromotionsSeen() {
-    if (0 === Object.values(dependencyMap[require(undefined, 6244) /* CountryListMode */.PromotionTypes.THIRD_PARTY_OUTBOUND]).length) {
+    if (0 === Object.values(dependencyMap[require(undefined, 6264) /* CountryListMode */.PromotionTypes.THIRD_PARTY_OUTBOUND]).length) {
       return false;
     } else {
       const tmp2 = getLatestActiveOutboundPromotionStartDate();
       if (null != tmp2) {
-        let c18 = tmp2;
-        closure_10.lastSeenOutboundPromotionStartDate = tmp2;
+        let c14 = tmp2;
+        closure_5.lastSeenOutboundPromotionStartDate = tmp2;
       }
     }
   },
   CLAIMED_OUTBOUND_PROMOTION_CODES_FETCH_SUCCESS: function handleClaimedOutboundPromotionCodesFetchSuccess(claimedOutboundPromotionCodes) {
-    let closure_20 = claimedOutboundPromotionCodes.claimedOutboundPromotionCodes;
-    let c21 = true;
+    let closure_16 = claimedOutboundPromotionCodes.claimedOutboundPromotionCodes;
+    let c17 = true;
   },
   CLAIMED_OUTBOUND_PROMOTION_CODES_FETCH_FAIL: function handleClaimedOutboundPromotionCodesFetchFail() {
-    let closure_20 = [];
-    let c21 = true;
+    let closure_16 = [];
+    let c17 = true;
   },
   CLAIMED_OUTBOUND_PROMOTION_CODE_ADD: function handleClaimedOutboundPromotionCodeAdd(claimedOutboundPromotionCode) {
     claimedOutboundPromotionCode = claimedOutboundPromotionCode.claimedOutboundPromotionCode;
@@ -438,32 +365,30 @@ tmp3 = new tmp3(require("dispatcher"), {
       return false;
     } else {
       items = [];
-      const arraySpreadResult = HermesBuiltin.arraySpread(items, 0);
-      items[arraySpreadResult] = claimedOutboundPromotionCode;
-      const sum = arraySpreadResult + 1;
+      items[HermesBuiltin.arraySpread(items, 0)] = claimedOutboundPromotionCode;
     }
   },
   LOGOUT: function handleLogout() {
-    let closure_10 = { hasFetchedConsumedInboundPromotionId: false, consumedInboundPromotionId: null, lastSeenOutboundPromotionStartDate: null };
-    let c14 = false;
-    let c15 = null;
-    let c12 = false;
-    let c13 = null;
-    let closure_17 = createEmptyPromotionsByType();
+    let closure_5 = { hasFetchedConsumedInboundPromotionId: false, consumedInboundPromotionId: null, lastSeenOutboundPromotionStartDate: null };
+    let c10 = false;
     let c11 = null;
+    let c8 = false;
+    let c9 = null;
+    let closure_13 = createEmptyPromotionsByType();
+    let c7 = null;
     map.clear();
-    let closure_20 = [];
-    let c21 = false;
+    let closure_16 = [];
+    let c17 = false;
   },
   PREMIUM_MARKETING_PREVIEW: function handlePremiumMarketingPreview(data) {
     data = data.data;
-    const fromServer = closure_9.createFromServer(data);
+    const fromServer = closure_4.createFromServer(data);
     const result = map.set(fromServer.componentType, fromServer);
     if (null != data.promotion) {
-      dependencyMap[data.promotion.promotion_type][data.promotion.id] = closure_8.createFromServer(data.promotion);
+      dependencyMap[data.promotion.promotion_type][data.promotion.id] = createFromServer.createFromServer(data.promotion);
     }
   }
 });
-let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/premium/promotions/PromotionsStore.tsx");
+let result = require("createFromServer").fileFinishedImporting("modules/premium/promotions/PromotionsStore.tsx");
 
-export default tmp3;
+export default promotionsStore;

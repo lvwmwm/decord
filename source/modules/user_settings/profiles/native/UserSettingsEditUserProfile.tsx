@@ -1,37 +1,38 @@
-// Module ID: 13667
-// Function ID: 104901
+// Module ID: 13688
+// Function ID: 13689
 // Name: UserSettingsEditUserProfile
-// Dependencies: [31, 1850, 33, 5497, 5517, 566, 7959, 13668, 2]
+// Dependencies: [19, 1874, 21, 5515, 5535, 589, 7984, 13689, 2]
 // Exports: default
 
-// Module 13667 (UserSettingsEditUserProfile)
-import result from "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 13688 (UserSettingsEditUserProfile)
+import noop from "noop";
+import mergeGuildAvatar from "mergeGuildAvatar";
 import { jsx } from "jsxProd";
 
 const require = arg1;
 const result = require("jsxProd").fileFinishedImporting("modules/user_settings/profiles/native/UserSettingsEditUserProfile.tsx");
 
 export default function UserSettingsEditUserProfile(arg0) {
-  let obj = stateFromStores(566);
-  const items = [_isNativeReflectConstruct];
-  stateFromStores = obj.useStateFromStores(items, () => outer1_4.getCurrentUser());
+  let obj = stateFromStores(589);
+  const items = [mergeGuildAvatar];
+  stateFromStores = obj.useStateFromStores(items, () => currentUser.getCurrentUser());
   const items1 = [stateFromStores];
   const effect = React.useEffect(() => {
     if (null != stateFromStores) {
-      const obj = { dispatchWait: true };
-      outer1_1(outer1_2[6])(stateFromStores.id, stateFromStores.getAvatarURL(undefined, 80), obj);
+      outer1_1(outer1_2[6])(obj.id, obj.getAvatarURL(undefined, 80), { dispatchWait: true });
       const tmp3 = outer1_1(outer1_2[6]);
     }
   }, items1);
-  let tmp4 = null;
+  let tmp7 = null;
   if (null != stateFromStores) {
-    obj = { value: tmp(importDefault(5517).USER_SETTINGS_USER_PROFILE).analyticsLocations };
-    obj = { currentUser: stateFromStores };
+    obj = { value: null, children: null };
+    obj[0] = tmp3(importDefault(5535).USER_SETTINGS_USER_PROFILE).analyticsLocations;
+    obj = { currentUser: null };
+    obj[0] = stateFromStores;
     const merged = Object.assign(arg0);
-    obj.children = jsx(importDefault(13668), { currentUser: stateFromStores });
-    tmp4 = jsx(stateFromStores(5497).AnalyticsLocationProvider, { currentUser: stateFromStores });
-    const tmp9 = importDefault(13668);
+    obj[1] = jsx(importDefault(13689), { currentUser: null });
+    tmp7 = jsx(stateFromStores(5515).AnalyticsLocationProvider, { currentUser: null });
+    const tmpResult = importDefault(13689);
   }
-  return tmp4;
+  return tmp7;
 };

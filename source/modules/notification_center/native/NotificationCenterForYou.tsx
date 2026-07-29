@@ -1,30 +1,27 @@
-// Module ID: 15248
-// Function ID: 115919
-// Name: isHoisted
-// Dependencies: [57, 31, 27, 5902, 4177, 1850, 5906, 15249, 653, 8743, 4361, 33, 5907, 1457, 4016, 3838, 1450, 3843, 15250, 566, 15252, 15016, 4380, 21, 5908, 4146, 668, 22, 675, 15251, 15253, 8402, 480, 15254, 15255, 2]
+// Module ID: 15281
+// Function ID: 15282
+// Name: YouBarNavigatorScreens
+// Dependencies: [32, 19, 17, 5921, 4201, 1874, 5925, 15282, 676, 8767, 4386, 21, 5926, 1481, 4040, 3862, 1474, 3867, 15283, 589, 15285, 15043, 4403, 11, 5927, 4170, 691, 12, 698, 15284, 15286, 8426, 503, 15287, 15288, 2]
 // Exports: NotificationCenterForYou
 
-// Module 15248 (isHoisted)
-import _slicedToArray from "_slicedToArray";
-import trackImpression from "trackImpression";
-import { View } from "apply";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_7 from "_isNativeReflectConstruct";
-import closure_8 from "_isNativeReflectConstruct";
-import closure_9 from "_isNativeReflectConstruct";
-import closure_10 from "_isNativeReflectConstruct";
+// Module 15281 (YouBarNavigatorScreens)
+import encodeProperties from "encodeProperties";
+import initialize from "initialize";
+import { View } from "ChannelListLayoutTypes";
+import updateGuildUnreadSentinel from "updateGuildUnreadSentinel";
+import generateOldThreadCutoff from "generateOldThreadCutoff";
+import mergeGuildAvatar from "mergeGuildAvatar";
+import _validate from "_validate";
+import handleLoadFinished from "handleLoadFinished";
 import { AnalyticEvents } from "ME";
 import MODE_CHANGE_PHYSICS from "MODE_CHANGE_PHYSICS";
 import { ReadStateTypes } from "ReadStateTypes";
-import { jsx } from "ForYouMentionPlaceholder";
+import { jsx } from "useSuggestedFriends";
 import set from "get ActivityIndicator";
 
 let RootNavigatorScreen;
 let YouBarNavigatorScreens;
 const require = arg1;
-function isHoisted(type) {
-  return type.type === require(5907) /* NotificationCenterScenes */.NotificationCenterLocalItems.INCOMING_FRIEND_REQUESTS;
-}
 ({ RootNavigatorScreen, YouBarNavigatorScreens } = MODE_CHANGE_PHYSICS);
 let items = [, , , , ];
 ({ YOU: arr[0], SETTINGS: arr[1] } = RootNavigatorScreen);
@@ -39,8 +36,6 @@ export const NotificationCenterForYou = (panelVariant) => {
   if (flag === undefined) {
     flag = false;
   }
-  let obj = Object.create(null);
-  obj.panelVariant = 0;
   let isFocused;
   let currentNavigationRouteName;
   let setting;
@@ -69,8 +64,8 @@ export const NotificationCenterForYou = (panelVariant) => {
   let friendSuggestions;
   let shouldAgeVerifyForAgeGate;
   let memo2;
-  const merged = Object.assign(panelVariant, obj);
-  obj = isFocused(setting[13]);
+  const merged = Object.assign(panelVariant, Object.create(null));
+  let obj = isFocused(setting[13]);
   isFocused = obj.useIsFocused();
   let obj1 = isFocused(setting[14]);
   currentNavigationRouteName = obj1.useCurrentNavigationRouteName();
@@ -78,22 +73,22 @@ export const NotificationCenterForYou = (panelVariant) => {
   setting = NotificationCenterAckedBeforeId.useSetting();
   items = [currentNavigationRouteName, isFocused];
   memo = height.useMemo(() => {
-    let tmp2 = !isFocused;
+    let tmp3 = !isFocused;
     const hasItem = first.has(currentNavigationRouteName);
-    if (tmp2) {
-      tmp2 = currentNavigationRouteName !== stateFromStores1.NOTIFICATIONS;
+    if (!isFocused) {
+      tmp3 = currentNavigationRouteName !== stateFromStores1.NOTIFICATIONS;
     }
-    if (tmp2) {
-      tmp2 = hasItem;
+    if (tmp3) {
+      tmp3 = hasItem;
     }
-    return tmp2;
+    return tmp3;
   }, items);
   height = currentNavigationRouteName(setting[16])().height;
   const ChannelListLayoutSetting = isFocused(setting[15]).ChannelListLayoutSetting;
   const setting1 = ChannelListLayoutSetting.useSetting();
-  const tmp8 = setting1 === isFocused(setting[17]).ChannelListLayoutTypes.COMPACT;
-  c5 = tmp8;
-  let items1 = [tmp8, height];
+  const tmp9 = setting1 === isFocused(setting[17]).ChannelListLayoutTypes.COMPACT;
+  c5 = tmp9;
+  let items1 = [tmp9, height];
   const memo1 = height.useMemo(() => {
     let num = 68;
     if (c5) {
@@ -115,6 +110,8 @@ export const NotificationCenterForYou = (panelVariant) => {
   let items3 = [setReadNotifItemToAcked];
   stateFromStores1 = isFocused(setting[19]).useStateFromStores(items3, () => setReadNotifItemToAcked.localItems, []);
   const obj5 = isFocused(setting[19]);
+  const tmp2 = isFocused;
+  let tmp3 = setting;
   const getOrFetchNotificationCenterItemsApplications = isFocused(setting[20]).useGetOrFetchNotificationCenterItemsApplications(stateFromStores1);
   const obj6 = isFocused(setting[20]);
   let items4 = [items, hasMore];
@@ -129,17 +126,17 @@ export const NotificationCenterForYou = (panelVariant) => {
   const obj7 = isFocused(setting[19]);
   let items5 = [initialized];
   stateFromStores3 = isFocused(setting[19]).useStateFromStores(items5, () => initialized.getTotalNotificationsMentionCount(true));
-  const tmp16 = memo(height.useState(stateFromStores2), 2);
-  first = tmp16[0];
-  c16 = tmp18;
-  let tmp19 = memo(height.useState(false), 2);
-  c17 = tmp20;
+  const tmp17 = memo(height.useState(stateFromStores2), 2);
+  first = tmp17[0];
+  c16 = tmp19;
+  const tmp20 = memo(height.useState(false), 2);
+  c17 = tmp21;
   const obj8 = isFocused(setting[19]);
   first1 = memo(height.useState(Date.now()), 2)[0];
-  let tmp21 = memo(height.useState(Date.now()), 2);
-  const tmp24 = memo(height.useState(new Set()), 2);
-  first2 = tmp24[0];
-  closure_20 = tmp24[1];
+  let tmp22 = memo(height.useState(Date.now()), 2);
+  const tmp25 = memo(height.useState(new Set()), 2);
+  first2 = tmp25[0];
+  closure_20 = tmp25[1];
   let items6 = [first2];
   let items7 = [first2];
   const callback = height.useCallback((arg0) => first2.has(arg0), items6);
@@ -147,7 +144,7 @@ export const NotificationCenterForYou = (panelVariant) => {
     if (!forceUnacked.forceUnacked) {
       if (!first2.has(forceUnacked.id)) {
         const _Set = Set;
-        const set = new Set(first2);
+        const set = new Set(tmp);
         set.add(forceUnacked.id);
         callback(set);
       }
@@ -165,32 +162,33 @@ export const NotificationCenterForYou = (panelVariant) => {
     const current = ref.current;
     return current.has(id.id);
   }, []);
-  const tmp32 = currentNavigationRouteName(setting[21])();
-  setAdded = tmp32.setAdded;
-  friendSuggestions = tmp32.friendSuggestions;
+  const tmp33 = currentNavigationRouteName(setting[21])();
+  setAdded = tmp33.setAdded;
+  friendSuggestions = tmp33.friendSuggestions;
   let items8 = [setAdded];
   let items9 = [setAdded];
   const callback4 = height.useCallback((arg0) => {
     let closure_0 = arg0;
     setAdded((arg0) => {
-      const items = [...arg0, closure_0];
+      const items = [];
+      items[HermesBuiltin.arraySpread(arg0, 0)] = closure_0;
       return items;
     });
   }, items8);
   const callback5 = height.useCallback((arg0) => {
     let closure_0 = arg0;
-    setAdded((arr) => arr.filter((user) => user.user.id !== outer1_0.user.id));
+    setAdded((arr) => arr.filter((user) => user.user.id !== user.user.id));
   }, items9);
   const set2 = new Set();
   shouldAgeVerifyForAgeGate = isFocused(setting[22]).useShouldAgeVerifyForAgeGate();
   let items10 = [items, hasMore, stateFromStores1, friendSuggestions, initialized, stateFromStores, errored, setting, first, setReadNotifItemToAcked, callback3, stateFromStores3, shouldAgeVerifyForAgeGate];
   memo2 = height.useMemo(() => {
-    function sortBySnowflake(items1) {
-      const sorted = items1.sort((id, id2) => -1 * currentNavigationRouteName(setting[23]).compare(id.id, id2.id));
-    }
+    let arr7;
+    let arr8;
+    let arr = items;
     let id;
     if (items.length > 0) {
-      id = items[items.length - 1].id;
+      id = arr[arr.length - 1].id;
     }
     if (hasMore) {
       if (null != id) {
@@ -204,28 +202,29 @@ export const NotificationCenterForYou = (panelVariant) => {
         });
       }
       items = [];
-      HermesBuiltin.arraySpread(found, HermesBuiltin.arraySpread(items, 0));
+      HermesBuiltin.arraySpread(found, HermesBuiltin.arraySpread(arr, 0));
       let found1 = items;
       if (shouldAgeVerifyForAgeGate) {
         found1 = items.filter((kind) => {
           let tmp = "notification-center-item" !== kind.kind;
           if (!tmp) {
-            tmp = !isFocused(setting[22]).shouldShowAgeGateForChannelId(kind.message_channel_id);
-            const obj = isFocused(setting[22]);
+            tmp = !id(items2[22]).shouldShowAgeGateForChannelId(kind.message_channel_id);
+            const obj = id(items2[22]);
           }
           return tmp;
         });
       }
-      let items1 = [];
-      let arr6 = items1;
+      const items1 = [];
+      arr7 = items1;
       const items2 = [];
       const items3 = [];
       const item = found1.forEach((kind) => {
         let addResult = kind;
         if ("notification-center-item" === kind.kind) {
           if (null != addResult.local_id) {
-            let tmp22 = !addResult.acked;
-            if (tmp22) {
+            const acked = addResult.acked;
+            let tmp22 = !acked;
+            if (!acked) {
               tmp22 = !errored.isLocalItemAcked(addResult);
             }
             let flag = tmp22;
@@ -244,7 +243,7 @@ export const NotificationCenterForYou = (panelVariant) => {
                   }
                 }
                 if (null != outer1_15) {
-                  flag = currentNavigationRouteName(setting[23]).compare(addResult.id, outer1_15) > 0;
+                  flag = currentNavigationRouteName(setting[23]).compare(addResult.id, tmp9) > 0;
                   const obj2 = currentNavigationRouteName(setting[23]);
                 }
               }
@@ -253,12 +252,12 @@ export const NotificationCenterForYou = (panelVariant) => {
             const isRemoteAckedResult = isFocused(setting[24]).isRemoteAcked(addResult, items2);
             if ("go_live_push" === addResult.type) {
               if (null != addResult.deeplink) {
-                let tmp17 = currentNavigationRouteName(setting[25])(addResult.deeplink).payload.type === isFocused(setting[26]).LinkingTypes.VOICE_CHANNEL && !isRemoteAckedResult;
+                let tmp16 = currentNavigationRouteName(setting[25])(addResult.deeplink).payload.type === isFocused(setting[26]).LinkingTypes.VOICE_CHANNEL && !isRemoteAckedResult;
                 const tmp21 = currentNavigationRouteName(setting[25])(addResult.deeplink).payload.type === isFocused(setting[26]).LinkingTypes.VOICE_CHANNEL && !isRemoteAckedResult;
               }
-              flag = tmp17;
+              flag = tmp16;
             }
-            tmp17 = !isRemoteAckedResult;
+            tmp16 = !isRemoteAckedResult;
             const obj3 = isFocused(setting[24]);
           }
           if (!flag) {
@@ -266,114 +265,119 @@ export const NotificationCenterForYou = (panelVariant) => {
           }
           const current2 = outer1_22.current;
           if (current2.has(addResult.id)) {
-            arr6.push(addResult);
+            arr7.push(addResult);
             addResult.acked = false;
             const current3 = outer1_21.current;
             addResult = current3.add(addResult.id);
-          } else if (!callback(addResult)) {
+          } else if (addResult.type !== isFocused(setting[12]).NotificationCenterLocalItems.INCOMING_FRIEND_REQUESTS) {
             if (!flag) {
               items3.push(addResult);
             }
           } else {
-            arr6.push(addResult);
+            arr7.push(addResult);
           }
           items2.push(addResult);
         }
       });
-      sortBySnowflake(items1);
-      sortBySnowflake(items2);
-      sortBySnowflake(items3);
+      const sorted = items1.sort((id, id2) => -1 * arr7(items2[23]).compare(id.id, id2.id));
+      const sorted1 = items2.sort((id, id2) => -1 * arr7(items2[23]).compare(id.id, id2.id));
+      const sorted2 = items3.sort((id, id2) => -1 * arr7(items2[23]).compare(id.id, id2.id));
       let obj = currentNavigationRouteName(setting[27]);
-      const tmp19 = memo(obj.partition(items1, (type) => type.type === isFocused(setting[12]).NotificationCenterLocalItems.INCOMING_FRIEND_REQUESTS && type.acked), 2);
-      const first = tmp19[0];
-      arr6 = tmp19[1];
-      if (first.length > 3) {
-        obj = { kind: "notification-center-item", type: isFocused(setting[12]).NotificationCenterLocalItems.FRIEND_REQUESTS_GROUPED, id: first[0].id, local_id: "friend_requests_grouped", acked: false, other_user: first[0].other_user, other_users: first.map((other_user) => other_user.other_user), forceUnacked: true };
-        arr6.push(obj);
-        items1 = arr6;
+      [arr7, arr8] = memo(obj.partition(items1, (type) => type.type === id(items2[12]).NotificationCenterLocalItems.INCOMING_FRIEND_REQUESTS && type.acked), 2);
+      let arr9 = items1;
+      if (arr6.length > 3) {
+        obj = { kind: "notification-center-item", type: null, id: null, local_id: "friend_requests_grouped", acked: false, other_user: null, other_users: null, forceUnacked: true };
+        obj[1] = isFocused(setting[12]).NotificationCenterLocalItems.FRIEND_REQUESTS_GROUPED;
+        obj[2] = arr6[0].id;
+        obj[5] = arr6[0].other_user;
+        obj[6] = arr6.map((other_user) => other_user.other_user);
+        arr = arr7.push(obj);
+        arr9 = arr7;
       }
-      const item1 = items1.forEach((arg0) => {
-        const tmp = !outer1_23(arg0);
+      const item1 = arr9.forEach((arg0) => {
+        const tmp = !callback(arg0);
         arg0.enableBadge = tmp;
         return tmp;
       });
       const items4 = [];
       if (friendSuggestions.length > 0) {
-        obj = { kind: "suggested-friends-header", id: "suggested-friends-header", showDivider: items1.length > 0 };
-        items4.push(obj);
-        let num7 = 2;
-        if (friendSuggestions.length <= 3) {
-          num7 = friendSuggestions.length;
+        obj = { kind: "suggested-friends-header", id: "suggested-friends-header", showDivider: null };
+        obj[2] = arr9.length > 0;
+        arr = items4.push(obj);
+        let num5 = 2;
+        if (arr11.length <= 3) {
+          num5 = arr11.length;
         }
         const _Math = Math;
-        const substr = friendSuggestions.slice(0, Math.min(friendSuggestions.length, num7));
+        const substr = arr11.slice(0, Math.min(arr11.length, num5));
         const item2 = substr.forEach((id) => {
           items4.push({ kind: "suggested-friends-row", id: id.user.id, suggestedFriend: id });
         });
-        if (friendSuggestions.length > 3) {
-          const obj1 = { kind: "suggested-friends-show-all-row", id: "suggested-friends-show-all-row", suggestedFriends: friendSuggestions };
+        if (arr11.length > 3) {
+          const obj1 = { kind: "suggested-friends-show-all-row", id: "suggested-friends-show-all-row", suggestedFriends: null };
+          obj1[2] = arr11;
           items4.push(obj1);
         }
       }
       const items5 = [];
       HermesBuiltin.arraySpread(items3, HermesBuiltin.arraySpread(items2, 0));
-      let num9 = 0;
+      let num7 = 0;
       if (initialized) {
-        num9 = 0;
+        num7 = 0;
         if (stateFromStores) {
           const _Math2 = Math;
           const _Math3 = Math;
           const bound = Math.min(Math.max(stateFromStores3, 1), 6);
-          let num11 = 0;
-          num9 = bound;
+          let num10 = 0;
+          num7 = bound;
           if (0 < bound) {
             do {
-              let obj2 = { kind: "mentions-placeholder" };
+              let obj2 = { kind: "mentions-placeholder", id: null };
               let _HermesInternal = HermesInternal;
-              obj2.id = "mp-" + num11;
+              obj2[1] = "mp-" + num10;
               let arr2 = items5.unshift(obj2);
-              num11 = num11 + 1;
-              num9 = bound;
-            } while (num11 < bound);
+              num10 = num10 + 1;
+              num7 = bound;
+            } while (num10 < bound);
           }
         }
       }
       if (errored) {
         items5.push({ kind: "load-more", id: "load-more" });
       }
-      let obj3 = { kind: "recent-activity-section-header", id: "rash" };
-      if (items1.length > 0) {
-        items1.unshift({ kind: "hoisted-items-header", id: "hoisted-items-header" });
+      if (arr9.length > 0) {
+        arr9.unshift({ kind: "hoisted-items-header", id: "hoisted-items-header" });
       }
+      let obj3 = { kind: "recent-activity-section-header", id: "rash" };
       const items6 = [];
-      if (items1.length > 0) {
+      if (arr9.length > 0) {
         const spliceResult = items5.splice(0, 3);
         const push3 = items6.push;
         const items7 = [];
-        HermesBuiltin.arraySpread(items4, HermesBuiltin.arraySpread(items1, 0));
+        HermesBuiltin.arraySpread(items4, HermesBuiltin.arraySpread(arr9, 0));
         HermesBuiltin.apply(items7, items6);
-        if (tmp74) {
+        if (tmp69) {
           items6.push(obj3);
         }
         const push4 = items6.push;
         const items8 = [];
         HermesBuiltin.arraySpread(items5, HermesBuiltin.arraySpread(spliceResult, 0));
         HermesBuiltin.apply(items8, items6);
-        tmp74 = spliceResult.length > 0 || items5.length > 0;
+        tmp69 = spliceResult.length > 0 || items5.length > 0;
       } else {
-        let num12 = 3;
+        let num11 = 3;
         if (items2.length > 0) {
-          num12 = 3;
+          num11 = 3;
           if (items5.length > 0) {
-            num12 = 3;
+            num11 = 3;
             if ("mentions-placeholder" === items5[0].kind) {
-              num12 = num9 + items2.length - 1;
+              num11 = num7 + items2.length - 1;
             }
           }
         }
-        const spliceResult1 = items5.splice(0, num12);
+        const spliceResult1 = items5.splice(0, num11);
         let flag = false;
-        if (tmp45) {
+        if (tmp40) {
           arr6 = items6.push(obj3);
           flag = true;
         }
@@ -381,18 +385,18 @@ export const NotificationCenterForYou = (panelVariant) => {
         const items9 = [];
         HermesBuiltin.arraySpread(items4, HermesBuiltin.arraySpread(spliceResult1, 0));
         HermesBuiltin.apply(items9, items6);
-        let tmp56 = !flag;
+        let tmp51 = !flag;
         if (!flag) {
-          tmp56 = items5.length > 0;
+          tmp51 = items5.length > 0;
         }
-        if (tmp56) {
-          items6.push(obj3);
+        if (tmp51) {
+          arr7 = items6.push(obj3);
         }
         const push2 = items6.push;
         const items10 = [];
         HermesBuiltin.arraySpread(items5, 0);
         HermesBuiltin.apply(items10, items6);
-        tmp45 = 0 === items4.length && items5.length > 0;
+        tmp40 = 0 === items4.length && items5.length > 0;
       }
       return items6;
     }
@@ -402,74 +406,88 @@ export const NotificationCenterForYou = (panelVariant) => {
   const layoutEffect = height.useLayoutEffect(() => {
     if (initialized) {
       let obj = currentNavigationRouteName(setting[28]);
-      obj = { version: "v2", load_start_timestamp: first1 };
+      obj = { version: "v2", load_start_timestamp: null, tti_millis: null };
+      obj[1] = first1;
       const _Date = Date;
-      obj.tti_millis = Date.now() - first1;
+      obj[2] = Date.now() - first1;
       obj.track(stateFromStores.NOTIFICATION_CENTER_LOADED, obj);
     }
   }, items11);
-  const items12 = [memo, stateFromStores2, first, memo2, setting, tmp16[1], callback3];
+  const items12 = [memo, stateFromStores2, first, memo2, setting, tmp17[1], callback3];
   const effect = height.useEffect(() => {
     if (memo) {
       const found = memo2.filter((kind) => "notification-center-item" === kind.kind);
       const current = ref.current;
       current.clear();
-      const item = found.forEach((arg0) => {
-        if (!callback(arg0)) {
-          arg0.enableBadge = false;
+      const item = found.forEach((type) => {
+        if (type.type !== callback(table[12]).NotificationCenterLocalItems.INCOMING_FRIEND_REQUESTS) {
+          type.enableBadge = false;
         }
       });
       if (stateFromStores2 !== first) {
-        _undefined(stateFromStores2);
+        _undefined(tmp5);
         const found1 = found.filter((local_id) => {
           let tmp = null != local_id.local_id;
           if (tmp) {
-            tmp = !errored.isLocalItemAcked(local_id);
+            tmp = !localItemAcked.isLocalItemAcked(local_id);
           }
           return tmp;
         });
         const mapped = found1.map((local_id) => local_id.local_id);
         const result = isFocused(setting[29]).markNotificationCenterLocalItemsAcked(mapped);
         const obj = isFocused(setting[29]);
-        const result1 = isFocused(setting[29]).bulkMarkNotificationCenterItemsAcked(found.filter((addResult) => !isFocused(setting[24]).isRemoteAcked(addResult, outer1_2)));
+        const result1 = isFocused(setting[29]).bulkMarkNotificationCenterItemsAcked(found.filter((addResult) => !outer1_0(outer1_2[24]).isRemoteAcked(addResult, closure_2)));
         const obj2 = isFocused(setting[29]);
         const result2 = isFocused(setting[30]).clearNotificationGuildMentions();
         const obj3 = isFocused(setting[30]);
       }
     }
   }, items12);
-  const items13 = [isFocused, tmp19[1]];
+  const items13 = [isFocused, tmp20[1]];
   const effect1 = height.useEffect(() => {
     if (isFocused) {
       _undefined2(false);
     }
     const result = isFocused(setting[29]).setNotificationCenterTabFocused(isFocused);
-    return () => isFocused(setting[29]).setNotificationCenterTabFocused(false);
+    return () => callback(table[29]).setNotificationCenterTabFocused(false);
   }, items13);
-  const items14 = [memo, tmp19[1]];
+  const items14 = [memo, tmp20[1]];
   const effect2 = height.useEffect(() => {
     if (memo) {
       _undefined2(true);
     }
   }, items14);
-  obj = {};
+  obj = { type: null, name: null, properties: null };
   const obj9 = isFocused(setting[22]);
-  obj.type = isFocused(setting[32]).ImpressionTypes.VIEW;
-  obj.name = isFocused(setting[32]).ImpressionNames.NOTIFICATION_CENTER_LANDING;
-  obj.properties = { empty: 0 === memo2.length };
+  obj[0] = isFocused(setting[32]).ImpressionTypes.VIEW;
+  obj[1] = isFocused(setting[32]).ImpressionNames.NOTIFICATION_CENTER_LANDING;
+  obj = { empty: 0 === memo2.length };
+  obj[2] = obj;
   obj1 = { disableTrack: !initialized };
   const items15 = [initialized];
   currentNavigationRouteName(setting[31])(obj, obj1, items15);
   if (initialized) {
-    obj2 = { items: memo2, loadingMore, loadMore, nestedInLaunchPad: merged.nestedInLaunchPad, shouldScrollToTop: tmp19[0], isSoftAcked: callback, onSoftAckItem: callback1, forceHoistItem: callback2, isForceHoisted: callback3, suggestedFriendAdded: callback4, onAddSuggestionAnimationFinish: callback5, panelVariant: flag };
-    let tmp42Result = tmp42(isFocused(setting[34]).ForYouItems, obj2);
+    obj2 = { items: null, loadingMore: null, loadMore: null, nestedInLaunchPad: null, shouldScrollToTop: null, isSoftAcked: null, onSoftAckItem: null, forceHoistItem: null, isForceHoisted: null, suggestedFriendAdded: null, onAddSuggestionAnimationFinish: null, panelVariant: null };
+    obj2[0] = memo2;
+    obj2[1] = loadingMore;
+    obj2[2] = loadMore;
+    obj2[3] = merged.nestedInLaunchPad;
+    obj2[4] = tmp20[0];
+    obj2[5] = callback;
+    obj2[6] = callback1;
+    obj2[7] = callback2;
+    obj2[8] = callback3;
+    obj2[9] = callback4;
+    obj2[10] = callback5;
+    obj2[11] = flag;
+    let tmp43Result = tmp43(tmp2(tmp3[34]).ForYouItems, obj2);
   } else {
-    obj3 = {};
+    obj3 = { children: null };
     const _Array = Array;
     const _Array2 = Array;
-    obj3.children = Array.from(Array(10)).map((arg0, arg1) => stateFromStores3(isFocused(setting[33]).ForYouMentionPlaceholder, {}, arg1));
-    tmp42Result = tmp42(c5, obj3);
-    const arr = Array.from(Array(10));
+    obj3[0] = Array.from(Array(10)).map((arg0, arg1) => stateFromStores3(isFocused(setting[33]).ForYouMentionPlaceholder, {}, arg1));
+    tmp43Result = tmp43(c5, obj3);
+    let arr = Array.from(Array(10));
   }
-  return tmp42Result;
+  return tmp43Result;
 };

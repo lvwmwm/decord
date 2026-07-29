@@ -1,350 +1,245 @@
-// Module ID: 6008
-// Function ID: 53234
-// Name: _createForOfIteratorHelperLoose
-// Dependencies: [4255, 4184, 4251, 4218, 4222, 4704, 4229, 6009, 2]
-// Exports: getClipSignalTypes, getPostSaveClipAnalytics, getPreSaveClipAnalytics
+// Module ID: 6026
+// Function ID: 6027
+// Name: getClipBaseProperties
+// Dependencies: [4279, 4208, 4275, 4242, 4246, 4726, 4253, 6027, 2]
+// Exports: getClipContextProperties, getClipSignalTypes, getClipType, getPostSaveClipAnalytics, getPreSaveClipAnalytics
 
-// Module 6008 (_createForOfIteratorHelperLoose)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_3 from "_isNativeReflectConstruct";
-import closure_4 from "_isNativeReflectConstruct";
-import closure_5 from "_isNativeReflectConstruct";
+// Module 6026 (getClipBaseProperties)
+import ApplicationStreamPresets from "ApplicationStreamPresets";
+import reset from "reset";
+import initialize from "initialize";
+import _migrateDefaultStorage from "_migrateDefaultStorage";
 
 const require = arg1;
-function _createForOfIteratorHelperLoose(iterable) {
-  let closure_0 = iterable;
-  iterable = "undefined" !== typeof Symbol;
-  if (iterable) {
-    const _Symbol = Symbol;
-    iterable = iterable[Symbol.iterator];
-  }
-  if (!iterable) {
-    iterable = iterable[Symbol.iterator];
-  }
-  if (iterable) {
-    const iter = iterable.call(iterable);
-    const next = iter.next;
-    return next.bind(iter);
-  } else {
-    const _Array = Array;
-    let tmp = iterable;
-    if (!Array.isArray(iterable)) {
-      let tmp2;
-      if (iterable) {
-        if ("string" === typeof iterable) {
-          tmp2 = _arrayLikeToArray(iterable, undefined);
-        } else {
-          const toString = {}.toString;
-          const substr = toString.call(iterable).slice(8, -1);
-          let name = substr;
-          if (tmp3) {
-            name = iterable.constructor.name;
-          }
-          if ("Map" !== name) {
-            if ("Set" !== name) {
-              if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(iterable, undefined);
-              } else {
-                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
-              }
-            }
-            tmp2 = arr;
-          }
-          const _Array2 = Array;
-          arr = Array.from(iterable);
-          const callResult = toString.call(iterable);
-          tmp3 = "Object" === substr && iterable.constructor;
-        }
-      }
-      tmp = tmp2;
-      if (!tmp2) {
-        const _TypeError = TypeError;
-        const typeError = new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
-        throw typeError;
-      }
-    }
-    if (tmp) {
-      closure_0 = tmp;
-    }
-    let c1 = 0;
-    return () => {
-      if (closure_1 >= length.length) {
-        let obj = { done: true };
-      } else {
-        obj = { done: false };
-        closure_1 = tmp3 + 1;
-        obj.value = length[+closure_1];
-      }
-      return obj;
-    };
-  }
-}
-function _arrayLikeToArray(arg0, arg1) {
-  let length;
-  if (tmp) {
-    length = arg0.length;
-  }
-  const ArrayResult = Array(length);
-  for (let num = 0; num < length; num = num + 1) {
-    ArrayResult[num] = arg0[num];
-  }
-  return ArrayResult;
-}
-function getClipType(decision) {
-  decision = decision.decision;
+function getClipBaseProperties(clip) {
+  const decision = clip.decision;
   let type;
-  if (null != decision) {
+  if (decision != null) {
     const signal = decision.signal;
-    if (null != signal) {
+    if (signal != null) {
       type = signal.type;
     }
   }
-  if (require(4222) /* getClipCropAspectRatio */.ClipSignalTypes.MANUAL === type) {
+  let str = "manual";
+  if (require(4246) /* ClipSignalTypes */.ClipSignalTypes.MANUAL !== type) {
+    str = "distributed";
+    if (tmp2(4246).ClipSignalTypes.DISTRIBUTED !== type) {
+      if (tmp2(4246).ClipSignalTypes.LAUGHTER !== type) {
+        if (tmp2(4246).ClipSignalTypes.SHOUTING !== type) {
+          str = "unknown";
+        }
+      }
+      str = "auto_ml";
+    }
+  }
+  return { clip_type: str, num_clip_participants: clip.users.length, clip_session_id: clip.gameSessionId, is_candidate: clip.isCandidate };
+}
+let result = require("initialize").fileFinishedImporting("modules/clips/ClipAnalyticsUtils.tsx");
+
+export const getClipType = function getClipType(decision) {
+  decision = decision.decision;
+  let type;
+  if (decision != null) {
+    const signal = decision.signal;
+    if (signal != null) {
+      type = signal.type;
+    }
+  }
+  if (require(4246) /* ClipSignalTypes */.ClipSignalTypes.MANUAL === type) {
     return "manual";
-  } else if (require(4222) /* getClipCropAspectRatio */.ClipSignalTypes.DISTRIBUTED === type) {
+  } else if (tmp2(4246).ClipSignalTypes.DISTRIBUTED === type) {
     return "distributed";
   } else {
-    if (require(4222) /* getClipCropAspectRatio */.ClipSignalTypes.LAUGHTER !== type) {
-      if (require(4222) /* getClipCropAspectRatio */.ClipSignalTypes.SHOUTING !== type) {
-        if (require(4222) /* getClipCropAspectRatio */.ClipSignalTypes.GAME_EVENT !== type) {
+    if (tmp2(4246).ClipSignalTypes.LAUGHTER !== type) {
+      if (tmp2(4246).ClipSignalTypes.SHOUTING !== type) {
+        if (tmp2(4246).ClipSignalTypes.GAME_EVENT !== type) {
           return "unknown";
         }
       }
     }
     return "auto_ml";
   }
-}
-function getClipBaseProperties(clip) {
-  return { clip_type: getClipType(clip), num_clip_participants: clip.users.length, clip_session_id: clip.gameSessionId, is_candidate: clip.isCandidate };
-}
-function getClipContextProperties(getPreSaveClipAnalytics) {
-  const obj = {};
-  let id;
-  obj.clip_runtime = require(4704) /* isClipsV3Enabled */.getClipsRuntime(getPreSaveClipAnalytics);
+};
+export { getClipBaseProperties };
+export const getClipContextProperties = function getClipContextProperties(trackClipsShared) {
+  const obj = { clip_runtime: null, current_clip_session_id: null };
+  obj[0] = require(4726) /* apexExperiment */.getClipsRuntime(trackClipsShared);
   const currentClipsSession = store.getCurrentClipsSession();
-  if (null != currentClipsSession) {
+  let id;
+  if (currentClipsSession != null) {
     id = currentClipsSession.id;
   }
-  obj.current_clip_session_id = id;
+  obj[1] = id;
   return obj;
-}
-let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/clips/ClipAnalyticsUtils.tsx");
-
-export { getClipType };
-export { getClipBaseProperties };
-export { getClipContextProperties };
-export const getClipSignalTypes = function getClipSignalTypes(timeline) {
-  let iter2;
+};
+export const getClipSignalTypes = function getClipSignalTypes(arg0) {
   const items = [];
-  const tmp = _createForOfIteratorHelperLoose(timeline.timeline);
-  let iter = tmp();
-  if (!iter.done) {
-    do {
-      let value = iter.value;
-      let type = value.signal.type;
-      let tmp2 = require;
-      let tmp3 = dependencyMap;
-      if (require(4222) /* getClipCropAspectRatio */.ClipSignalTypes.MANUAL === type) {
-        let arr = items.push("manual");
-      } else {
-        let tmp13 = require;
-        let tmp14 = dependencyMap;
-        if (require(4222) /* getClipCropAspectRatio */.ClipSignalTypes.DISTRIBUTED === type) {
-          arr = items.push("distributed");
-        } else {
-          let tmp15 = require;
-          let tmp16 = dependencyMap;
-          if (require(4222) /* getClipCropAspectRatio */.ClipSignalTypes.LAUGHTER === type) {
-            let arr1 = items.push("laughter");
-          } else {
-            let tmp4 = require;
-            let tmp5 = dependencyMap;
-            if (require(4222) /* getClipCropAspectRatio */.ClipSignalTypes.SHOUTING === type) {
-              let arr2 = items.push("shouting");
-            } else {
-              let tmp6 = require;
-              let tmp7 = dependencyMap;
-              if (require(4222) /* getClipCropAspectRatio */.ClipSignalTypes.GAME_EVENT === type) {
-                let _HermesInternal = HermesInternal;
-                let arr3 = items.push("game_event:" + value.signal.eventType);
-              }
-            }
-          }
-        }
-      }
-      iter2 = tmp();
-      iter = iter2;
-    } while (!iter2.done);
+  const iter = arg0.timeline[Symbol.iterator]();
+  const nextResult = iter.next();
+  while (iter !== undefined) {
+    let type = nextResult.signal.type;
+    let tmp3 = require;
+    let tmp4 = dependencyMap;
+    let tmp2 = nextResult;
+    if (require(4246) /* ClipSignalTypes */.ClipSignalTypes.MANUAL === type) {
+      let arr = items.push("manual");
+    } else if (tmp3(4246).ClipSignalTypes.DISTRIBUTED === type) {
+      arr = items.push("distributed");
+    } else if (tmp3(4246).ClipSignalTypes.LAUGHTER === type) {
+      let arr1 = items.push("laughter");
+    } else if (tmp3(4246).ClipSignalTypes.SHOUTING === type) {
+      let arr2 = items.push("shouting");
+    } else if (tmp3(4246).ClipSignalTypes.GAME_EVENT === type) {
+      let tmp5 = nextResult;
+      let _HermesInternal = HermesInternal;
+      let arr3 = items.push("game_event:" + tmp2.signal.eventType);
+    }
+    continue;
   }
   return items;
 };
-export const getPreSaveClipAnalytics = function getPreSaveClipAnalytics(guildId) {
+export const getPreSaveClipAnalytics = function getPreSaveClipAnalytics(timeline) {
   currentUserActiveStream = currentUserActiveStream.getCurrentUserActiveStream();
   let rTCConnection = null;
   if (null != currentUserActiveStream) {
-    let obj = require(4229) /* isStreamKey */;
+    let obj = require(4253) /* isStreamKey */;
     rTCConnection = rTCConnection.getRTCConnection(obj.encodeStreamKey(currentUserActiveStream));
   }
   obj = {};
-  const merged = Object.assign(getClipBaseProperties(guildId));
-  const merged1 = Object.assign(getClipContextProperties("getPreSaveClipAnalytics"));
+  const merged = Object.assign(getClipBaseProperties(timeline));
+  obj = { clip_runtime: null, current_clip_session_id: null };
+  obj[0] = require(4726) /* apexExperiment */.getClipsRuntime("getPreSaveClipAnalytics");
+  const currentClipsSession = store.getCurrentClipsSession();
+  let id;
+  if (currentClipsSession != null) {
+    id = currentClipsSession.id;
+  }
+  obj[1] = id;
+  const merged1 = Object.assign(obj);
   let rTCConnectionId;
-  if (null != rTCConnection) {
+  if (rTCConnection != null) {
     rTCConnectionId = rTCConnection.getRTCConnectionId();
   }
-  obj["rtc_connection_id"] = rTCConnectionId;
+  obj.rtc_connection_id = rTCConnectionId;
   let mediaSessionId;
-  if (null != rTCConnection) {
+  if (rTCConnection != null) {
     mediaSessionId = rTCConnection.getMediaSessionId();
   }
-  obj["media_session_id"] = mediaSessionId;
+  obj.media_session_id = mediaSessionId;
   let parentMediaSessionId;
-  if (null != rTCConnection) {
+  if (rTCConnection != null) {
     parentMediaSessionId = rTCConnection.parentMediaSessionId;
   }
-  obj["parent_media_session_id"] = parentMediaSessionId;
-  obj["guild_id"] = guildId.guildId;
-  obj["channel_id"] = guildId.channelId;
-  obj["application_id"] = guildId.applicationId;
-  obj["application_name"] = guildId.applicationName;
-  obj["clip_uuid"] = guildId.id;
-  obj["clip_event_timeline_size"] = guildId.timeline.length;
+  obj.parent_media_session_id = parentMediaSessionId;
+  ({ guildId: obj2.guild_id, channelId: obj2.channel_id, applicationId: obj2.application_id, applicationName: obj2.application_name, id: obj2.clip_uuid } = timeline);
+  obj.clip_event_timeline_size = timeline.timeline.length;
   return obj;
 };
 export const getPostSaveClipAnalytics = function getPostSaveClipAnalytics(arg0, framesEncodedByEncoder) {
   const map = new Map();
-  for (const key10013 in arg1.framesEncodedByEncoder) {
-    let tmp22 = key10013;
-    let tmp23 = require;
-    let tmp24 = dependencyMap;
-    let obj3 = require(6009) /* _isNativeReflectConstruct */;
-    let parseEncoderResult = obj3.parseEncoder(key10013);
-    let value = map.get(parseEncoderResult);
-    let num = 0;
-    if (null != value) {
-      num = value;
+  for (const key10011 in arg1.framesEncodedByEncoder) {
+    let tmp7 = key10011;
+    let tmp8 = require;
+    let tmp9 = dependencyMap;
+    let obj3 = require(6027) /* parseEncoder */;
+    let parseEncoderResult = obj3.parseEncoder(key10011);
+    let num = map.get(parseEncoderResult);
+    if (num == null) {
+      num = 0;
     }
-    let result = map.set(parseEncoderResult, num + arg1.framesEncodedByEncoder[key10013]);
+    let result = map.set(parseEncoderResult, num + arg1.framesEncodedByEncoder[key10011]);
     continue;
   }
   const obj = {};
   const merged = Object.assign(arg0);
-  value = map.get(require(6009) /* _isNativeReflectConstruct */.Encoders.NVIDIA_CUDA);
-  let num2 = 0;
-  if (null != value) {
-    num2 = value;
+  let num2 = map.get(require(6027) /* parseEncoder */.Encoders.NVIDIA_CUDA);
+  if (num2 == null) {
+    num2 = 0;
   }
-  obj["frames_encoded_nvidia_cuda"] = num2;
-  const value1 = map.get(require(6009) /* _isNativeReflectConstruct */.Encoders.NVIDIA_DIRECT_3D);
-  let num3 = 0;
-  if (null != value1) {
-    num3 = value1;
+  obj.frames_encoded_nvidia_cuda = num2;
+  let num3 = map.get(tmp3(6027).Encoders.NVIDIA_DIRECT_3D);
+  if (num3 == null) {
+    num3 = 0;
   }
-  obj["frames_encoded_nvidia_direct3d"] = num3;
-  const value2 = map.get(require(6009) /* _isNativeReflectConstruct */.Encoders.OPENH264);
-  let num4 = 0;
-  if (null != value2) {
-    num4 = value2;
+  obj.frames_encoded_nvidia_direct3d = num3;
+  let num4 = map.get(tmp3(6027).Encoders.OPENH264);
+  if (num4 == null) {
+    num4 = 0;
   }
-  obj["frames_encoded_openh264"] = num4;
-  const value3 = map.get(require(6009) /* _isNativeReflectConstruct */.Encoders.VIDEOTOOLBOX);
-  let num5 = 0;
-  if (null != value3) {
-    num5 = value3;
+  obj.frames_encoded_openh264 = num4;
+  let num5 = map.get(tmp3(6027).Encoders.VIDEOTOOLBOX);
+  if (num5 == null) {
+    num5 = 0;
   }
-  obj["frames_encoded_videotoolbox"] = num5;
-  const value4 = map.get(require(6009) /* _isNativeReflectConstruct */.Encoders.AMD_DIRECT_3D);
-  let num6 = 0;
-  if (null != value4) {
-    num6 = value4;
+  obj.frames_encoded_videotoolbox = num5;
+  let num6 = map.get(tmp3(6027).Encoders.AMD_DIRECT_3D);
+  if (num6 == null) {
+    num6 = 0;
   }
-  obj["frames_encoded_amd_direct3d"] = num6;
-  const value5 = map.get(require(6009) /* _isNativeReflectConstruct */.Encoders.AMD_VAAPI);
-  let num7 = 0;
-  if (null != value5) {
-    num7 = value5;
+  obj.frames_encoded_amd_direct3d = num6;
+  let num7 = map.get(tmp3(6027).Encoders.AMD_VAAPI);
+  if (num7 == null) {
+    num7 = 0;
   }
-  obj["frames_encoded_amd_vaapi"] = num7;
-  const value6 = map.get(require(6009) /* _isNativeReflectConstruct */.Encoders.INTEL);
-  let num8 = 0;
-  if (null != value6) {
-    num8 = value6;
+  obj.frames_encoded_amd_vaapi = num7;
+  let num8 = map.get(tmp3(6027).Encoders.INTEL);
+  if (num8 == null) {
+    num8 = 0;
   }
-  obj["frames_encoded_intel"] = num8;
-  const value7 = map.get(require(6009) /* _isNativeReflectConstruct */.Encoders.INTEL_DIRECT_3D);
-  let num9 = 0;
-  if (null != value7) {
-    num9 = value7;
+  obj.frames_encoded_intel = num8;
+  let num9 = map.get(tmp3(6027).Encoders.INTEL_DIRECT_3D);
+  if (num9 == null) {
+    num9 = 0;
   }
-  obj["frames_encoded_intel_direct3d"] = num9;
-  const value8 = map.get(require(6009) /* _isNativeReflectConstruct */.Encoders.WMF_DIRECT_3D_INTEL);
-  let num10 = 0;
-  if (null != value8) {
-    num10 = value8;
+  obj.frames_encoded_intel_direct3d = num9;
+  let num10 = map.get(tmp3(6027).Encoders.WMF_DIRECT_3D_INTEL);
+  if (num10 == null) {
+    num10 = 0;
   }
-  obj["frames_encoded_wmf_direct3d_intel"] = num10;
-  const value9 = map.get(require(6009) /* _isNativeReflectConstruct */.Encoders.WMF_DIRECT_3D_NVIDIA);
-  let num11 = 0;
-  if (null != value9) {
-    num11 = value9;
+  obj.frames_encoded_wmf_direct3d_intel = num10;
+  let num11 = map.get(tmp3(6027).Encoders.WMF_DIRECT_3D_NVIDIA);
+  if (num11 == null) {
+    num11 = 0;
   }
-  obj["frames_encoded_wmf_direct3d_nvidia"] = num11;
-  const value10 = map.get(require(6009) /* _isNativeReflectConstruct */.Encoders.WMF_DIRECT_3D_AMD);
-  let num12 = 0;
-  if (null != value10) {
-    num12 = value10;
+  obj.frames_encoded_wmf_direct3d_nvidia = num11;
+  let num12 = map.get(tmp3(6027).Encoders.WMF_DIRECT_3D_AMD);
+  if (num12 == null) {
+    num12 = 0;
   }
-  obj["frames_encoded_wmf_direct3d_amd"] = num12;
-  const value11 = map.get(require(6009) /* _isNativeReflectConstruct */.Encoders.WMF_DIRECT_3D);
-  let num13 = 0;
-  if (null != value11) {
-    num13 = value11;
+  obj.frames_encoded_wmf_direct3d_amd = num12;
+  let num13 = map.get(tmp3(6027).Encoders.WMF_DIRECT_3D);
+  if (num13 == null) {
+    num13 = 0;
   }
-  const value12 = map.get(require(6009) /* _isNativeReflectConstruct */.Encoders.WMF_DIRECT_3D_INTEL);
-  let num14 = 0;
-  if (null != value12) {
-    num14 = value12;
+  let num14 = map.get(tmp3(6027).Encoders.WMF_DIRECT_3D_INTEL);
+  if (num14 == null) {
+    num14 = 0;
   }
   const sum = num13 + num14;
-  const value13 = map.get(require(6009) /* _isNativeReflectConstruct */.Encoders.WMF_DIRECT_3D_NVIDIA);
-  let num15 = 0;
-  if (null != value13) {
-    num15 = value13;
+  let num15 = map.get(tmp3(6027).Encoders.WMF_DIRECT_3D_NVIDIA);
+  if (num15 == null) {
+    num15 = 0;
   }
   const sum1 = sum + num15;
-  const value14 = map.get(require(6009) /* _isNativeReflectConstruct */.Encoders.WMF_DIRECT_3D_AMD);
-  let num16 = 0;
-  if (null != value14) {
-    num16 = value14;
+  let num16 = map.get(tmp3(6027).Encoders.WMF_DIRECT_3D_AMD);
+  if (num16 == null) {
+    num16 = 0;
   }
-  obj["frames_encoded_wmf_direct3d"] = sum1 + num16;
-  const value15 = map.get(require(6009) /* _isNativeReflectConstruct */.Encoders.UNCATEGORIZED);
-  let num17 = 0;
-  if (null != value15) {
-    num17 = value15;
+  obj.frames_encoded_wmf_direct3d = sum1 + num16;
+  let num17 = map.get(tmp3(6027).Encoders.UNCATEGORIZED);
+  if (num17 == null) {
+    num17 = 0;
   }
-  obj["frames_encoded_uncategorized"] = num17;
-  const value16 = map.get(require(6009) /* _isNativeReflectConstruct */.Encoders.UNKNOWN);
-  let num18 = 0;
-  if (null != value16) {
-    num18 = value16;
+  obj.frames_encoded_uncategorized = num17;
+  let num18 = map.get(tmp3(6027).Encoders.UNKNOWN);
+  if (num18 == null) {
+    num18 = 0;
   }
-  obj["frames_encoded_unknown"] = num18;
-  obj["frames_submitted"] = framesEncodedByEncoder.framesSubmitted;
-  obj["frames_submitted_during_clip"] = framesEncodedByEncoder.framesSubmittedDuringClip;
-  obj["frames_encoded"] = framesEncodedByEncoder.framesEncoded;
-  obj["frames_encoded_during_clip"] = framesEncodedByEncoder.framesEncodedDuringClip;
-  obj["frames_dropped"] = framesEncodedByEncoder.framesDropped;
-  obj["frames_dropped_during_clip"] = framesEncodedByEncoder.framesDroppedDuringClip;
-  obj["clip_duration_setting"] = store.getSettings().clipsLength;
-  obj["clip_duration"] = framesEncodedByEncoder.clipDuration;
-  obj["clip_resolution_width"] = framesEncodedByEncoder.clipResolutionWidth;
-  obj["clip_resolution_height"] = framesEncodedByEncoder.clipResolutionHeight;
-  obj["min_fps"] = framesEncodedByEncoder.minFps;
-  obj["max_fps"] = framesEncodedByEncoder.maxFps;
-  obj["submitted_fps"] = framesEncodedByEncoder.submittedFps;
-  obj["target_fps"] = state.getState().fps;
-  obj["audio_track_count"] = framesEncodedByEncoder.audioTrackCount;
-  obj["saved_at"] = framesEncodedByEncoder.savedAt;
+  obj.frames_encoded_unknown = num18;
+  ({ framesSubmitted: obj2.frames_submitted, framesSubmittedDuringClip: obj2.frames_submitted_during_clip, framesEncoded: obj2.frames_encoded, framesEncodedDuringClip: obj2.frames_encoded_during_clip, framesDropped: obj2.frames_dropped, framesDroppedDuringClip: obj2.frames_dropped_during_clip } = framesEncodedByEncoder);
+  obj.clip_duration_setting = store.getSettings().clipsLength;
+  ({ clipDuration: obj2.clip_duration, clipResolutionWidth: obj2.clip_resolution_width, clipResolutionHeight: obj2.clip_resolution_height, minFps: obj2.min_fps, maxFps: obj2.max_fps, submittedFps: obj2.submitted_fps } = framesEncodedByEncoder);
+  obj.target_fps = state.getState().fps;
+  ({ audioTrackCount: obj2.audio_track_count, savedAt: obj2.saved_at } = framesEncodedByEncoder);
   return obj;
 };

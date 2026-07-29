@@ -1,24 +1,24 @@
-// Module ID: 10284
-// Function ID: 79401
+// Module ID: 10305
+// Function ID: 10306
 // Name: MuteSettings
-// Dependencies: [31, 1348, 1838, 3802, 1850, 653, 33, 4161, 1212, 10285, 4133, 5536, 5198, 1273, 10287, 4355, 10288, 5533, 5220, 2]
+// Dependencies: [19, 1372, 1862, 3826, 1874, 676, 21, 4185, 1236, 10306, 4157, 5554, 5220, 1297, 10308, 4380, 10309, 5551, 5242, 2]
 // Exports: MuteSettingsHint, default
 
-// Module 10284 (MuteSettings)
-import result from "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import closure_6 from "_isNativeReflectConstruct";
-import closure_7 from "_isNativeReflectConstruct";
+// Module 10305 (MuteSettings)
+import set from "set";
+import ensureGuildLoaded from "ensureGuildLoaded";
+import createGuildRecordFromRust from "createGuildRecordFromRust";
+import upsertRelationship from "upsertRelationship";
+import mergeGuildAvatar from "mergeGuildAvatar";
 import { UserNotificationSettings } from "ME";
 import jsxProd from "jsxProd";
 
-let closure_10;
-let closure_11;
-let closure_9;
+let c10;
+let c9;
+let unpackModuleId;
 const require = arg1;
-({ jsx: closure_9, Fragment: closure_10, jsxs: closure_11 } = jsxProd);
-let result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/main_tabs_v2/native/sidebar/details/screens/MuteSettingsActionSheet.tsx");
+({ jsx: c9, Fragment: c10, jsxs: unpackModuleId } = jsxProd);
+let result = require("createGuildRecordFromRust").fileFinishedImporting("modules/main_tabs_v2/native/sidebar/details/screens/MuteSettingsActionSheet.tsx");
 
 export default function MuteSettings(guildId) {
   let muteConfig;
@@ -26,6 +26,9 @@ export default function MuteSettings(guildId) {
   guildId = guildId.guildId;
   const channelId = guildId.channelId;
   const onOptionPress = guildId.onOptionPress;
+  let guild;
+  let channel;
+  guild = undefined;
   guild = guild.getGuild(guildId);
   channel = channel.getChannel(channelId);
   const items = [channelId];
@@ -50,98 +53,97 @@ export default function MuteSettings(guildId) {
   const memo2 = guild.useMemo(() => guildId(onOptionPress[9]).getMuteSettingSublabel(channel, guild), items4);
   if (null != channel) {
     if (muted) {
-      let obj = {};
-      obj = { hasIcons: true };
-      let obj1 = {};
-      const obj2 = { disableColor: true, source: channelId(onOptionPress[14]) };
-      obj1.icon = callback(guildId(onOptionPress[13]).Icon, obj2);
+      let obj = { hasIcons: true, children: null };
+      obj = { icon: null, label: null, onPress: null };
+      let obj1 = { disableColor: true, source: null };
+      obj1[1] = channelId(onOptionPress[14]);
+      obj[0] = callback(guildId(onOptionPress[13]).Icon, obj1);
       const intl = guildId(onOptionPress[8]).intl;
-      const obj3 = {};
-      const obj9 = guildId(onOptionPress[15]);
-      obj3.name = obj9.computeChannelName(channel, closure_7, closure_6, true);
-      obj1.label = intl.format(guildId(onOptionPress[8]).t["eC+9rj"], obj3);
-      obj1.onPress = callback;
-      obj.children = callback(guildId(onOptionPress[12]).TableRow, obj1);
+      const obj2 = { name: null };
+      const obj8 = guildId(onOptionPress[15]);
+      obj2[0] = obj8.computeChannelName(channel, mergeGuildAvatar, upsertRelationship, true);
+      obj[1] = intl.format(guildId(onOptionPress[8]).t["eC+9rj"], obj2);
+      obj[2] = callback;
+      obj[1] = callback(guildId(onOptionPress[12]).TableRow, obj);
       const items5 = [callback(guildId(onOptionPress[11]).TableRowGroup, obj), ];
-      let obj4 = { muteConfig };
-      const tmp17 = channelId(onOptionPress[16]);
-      const tmp7 = callback2;
-      const tmp8 = closure_10;
-      const tmp9 = callback;
-      const MuteSettingType = guildId(onOptionPress[16]).MuteSettingType;
-      obj4.type = channel.isPrivate() ? MuteSettingType.DM : MuteSettingType.CHANNEL;
-      obj4 = tmp9(tmp17, obj4);
-      items5[1] = obj4;
-      obj.children = items5;
-      tmp7(tmp8, obj);
+      let obj3 = { muteConfig: null, type: null };
+      obj3[0] = muteConfig;
+      const tmp10 = callback2;
+      const tmp11 = closure_10;
+      const tmp13 = guildId;
+      const tmp14 = onOptionPress;
+      const tmp20 = channelId(onOptionPress[16]);
+      let MuteSettingType = guildId(onOptionPress[16]).MuteSettingType;
       const isPrivateResult = channel.isPrivate();
+      MuteSettingType = { children: null };
+      obj3[1] = channel.isPrivate() ? MuteSettingType.DM : MuteSettingType.CHANNEL;
+      obj3 = tmp12(tmp20, obj3);
+      items5[1] = obj3;
+      MuteSettingType[0] = items5;
+      tmp10(tmp11, MuteSettingType);
+      const tmp22 = channel.isPrivate() ? MuteSettingType.DM : MuteSettingType.CHANNEL;
     }
   }
   obj1 = guildId(onOptionPress[9]);
   const muteOptions = obj1.getMuteOptions();
-  const obj5 = {
-    hasIcons: false,
-    children: muteOptions.map((arg0) => {
-      let guildId;
-      let label;
-      ({ label, duration: guildId } = arg0);
-      return outer1_9(guildId(onOptionPress[12]).TableRow, {
-        label,
-        onPress() {
-          return outer1_5(closure_0);
-        }
-      }, label);
-    })
-  };
-  const obj6 = {};
-  const items6 = [callback(guildId(onOptionPress[18]).BottomSheetTitleHeader, { title: memo1, subtitle: memo2 }), callback(guildId(onOptionPress[11]).TableRowGroup, obj5)];
-  obj6.children = items6;
-  return callback2(guildId(onOptionPress[17]).ActionSheet, obj6);
+  const obj4 = { hasIcons: false, children: null };
+  obj4[1] = muteOptions.map((arg0) => {
+    let guildId;
+    let label;
+    ({ label, duration: guildId } = arg0);
+    return outer1_9(guildId(onOptionPress[12]).TableRow, {
+      label,
+      onPress() {
+        return outer1_5(closure_0);
+      }
+    }, label);
+  });
+  const obj5 = { children: null };
+  const items6 = [callback(guildId(onOptionPress[18]).BottomSheetTitleHeader, { title: memo1, subtitle: memo2 }), callback(guildId(onOptionPress[11]).TableRowGroup, obj4)];
+  obj5[0] = items6;
+  return callback2(guildId(onOptionPress[17]).ActionSheet, obj5);
 };
 export const MuteSettingsHint = function MuteSettingsHint(guildMessageNotifications) {
   guildMessageNotifications = guildMessageNotifications.guildMessageNotifications;
   if (guildMessageNotifications.isMuted) {
-    let obj = { variant: "text-sm/medium", color: "text-default" };
-    const intl5 = require(1212) /* getSystemLocale */.intl;
-    obj.children = intl5.string(require(1212) /* getSystemLocale */.t.t0mEt2);
-    let tmp4 = callback(require(4161) /* Text */.Text, obj);
+    let obj = { variant: "text-sm/medium", color: "text-default", children: null };
+    const intl5 = require(1236) /* getSystemLocale */.intl;
+    obj[2] = intl5.string(require(1236) /* getSystemLocale */.t.t0mEt2);
+    let tmp3 = callback(require(4185) /* Text */.Text, obj);
   } else if (tmp) {
-    obj = { variant: "text-sm/medium", color: "text-default" };
-    const intl4 = require(1212) /* getSystemLocale */.intl;
-    const obj1 = {
-      mutedHook(children) {
-          const obj = { variant: "text-sm/medium", color: "text-feedback-critical", children };
-          return outer1_9(outer1_0(outer1_2[7]).Text, obj, arg1);
-        }
+    obj = { variant: "text-sm/medium", color: "text-default", children: null };
+    const intl4 = require(1236) /* getSystemLocale */.intl;
+    const obj1 = { mutedHook: null };
+    obj1[0] = function mutedHook(children) {
+      return callback2(callback(4185).Text, { variant: "text-sm/medium", color: "text-feedback-critical", children }, arg1);
     };
-    obj.children = intl4.format(require(1212) /* getSystemLocale */.t.O34r15, obj1);
-    tmp4 = callback(require(4161) /* Text */.Text, obj);
+    obj[2] = intl4.format(require(1236) /* getSystemLocale */.t.O34r15, obj1);
+    tmp3 = callback(require(4185) /* Text */.Text, obj);
   } else if (guildMessageNotifications === UserNotificationSettings.NO_MESSAGES) {
-    const obj2 = { variant: "text-sm/medium", color: "text-default" };
-    const intl3 = require(1212) /* getSystemLocale */.intl;
-    const obj3 = {
-      notificationHook(children) {
-          const obj = { variant: "text-sm/medium", color: "text-feedback-warning", children };
-          return outer1_9(outer1_0(outer1_2[7]).Text, obj, arg1);
-        }
+    const obj2 = { variant: "text-sm/medium", color: "text-default", children: null };
+    const intl3 = require(1236) /* getSystemLocale */.intl;
+    const obj3 = { notificationHook: null };
+    obj3[0] = function notificationHook(children) {
+      return callback2(callback(4185).Text, { variant: "text-sm/medium", color: "text-feedback-warning", children }, arg1);
     };
-    obj2.children = intl3.format(require(1212) /* getSystemLocale */.t.nRwUIL, obj3);
-    tmp4 = callback(require(4161) /* Text */.Text, obj2);
+    obj2[2] = intl3.format(require(1236) /* getSystemLocale */.t.nRwUIL, obj3);
+    tmp3 = callback(require(4185) /* Text */.Text, obj2);
   } else {
-    if (guildMessageNotifications !== UserNotificationSettings.ALL_MESSAGES) {
-      tmp4 = null;
+    if (guildMessageNotifications !== tmp2.ALL_MESSAGES) {
+      tmp3 = null;
     }
-    obj = { variant: "text-sm/medium", color: "text-default" };
-    if (guildMessageNotifications === UserNotificationSettings.ALL_MESSAGES) {
-      const intl2 = require(1212) /* getSystemLocale */.intl;
-      let stringResult = intl2.string(require(1212) /* getSystemLocale */.t.mUbulW);
+    obj = dependencyMap;
+    if (guildMessageNotifications === tmp2.ALL_MESSAGES) {
+      const intl2 = tmp5(1236).intl;
+      let stringResult = intl2.string(tmp5(1236).t.mUbulW);
     } else {
-      const intl = require(1212) /* getSystemLocale */.intl;
-      stringResult = intl.string(require(1212) /* getSystemLocale */.t.GGAdHV);
+      const intl = tmp5(1236).intl;
+      stringResult = intl.string(tmp5(1236).t.GGAdHV);
     }
-    obj.children = stringResult;
-    callback(require(4161) /* Text */.Text, obj);
-    const tmp5 = callback;
+    obj = { variant: "text-sm/medium", color: "text-default", children: null };
+    obj[2] = stringResult;
+    callback(require(4185) /* Text */.Text, obj);
+    const tmp4 = callback;
   }
-  return tmp4;
+  return tmp3;
 };

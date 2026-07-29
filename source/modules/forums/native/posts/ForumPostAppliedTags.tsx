@@ -1,27 +1,27 @@
-// Module ID: 11166
-// Function ID: 86696
+// Module ID: 11190
+// Function ID: 11191
 // Name: ForumPostAppliedTagPills
-// Dependencies: [31, 27, 33, 4165, 689, 9644, 2]
+// Dependencies: [19, 17, 21, 4189, 712, 9666, 2]
 // Exports: ForumPostAppliedTagPills, ForumPostAppliedTags
 
-// Module 11166 (ForumPostAppliedTagPills)
-import "result";
+// Module 11190 (ForumPostAppliedTagPills)
+import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_3;
-let closure_4;
-let closure_5;
+let c3;
+let c4;
+let c5;
 const require = arg1;
-({ jsx: closure_3, jsxs: closure_4, Fragment: closure_5 } = jsxProd);
-_createForOfIteratorHelperLoose = { pillTagsContainer: { display: "flex", flexDirection: "row", alignItems: "center" } };
-_createForOfIteratorHelperLoose = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SURFACE_HIGH };
-_createForOfIteratorHelperLoose.tag = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.tagsContainer = { display: "flex", flexDirection: "row", alignItems: "center" };
-let obj1 = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BORDER_SUBTLE, height: 4, width: 4, borderRadius: 10, marginHorizontal: 8 };
-_createForOfIteratorHelperLoose.dot = obj1;
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+({ jsx: c3, jsxs: c4, Fragment: c5 } = jsxProd);
+createCacheKey = { pillTagsContainer: { display: "flex", flexDirection: "row", alignItems: "center" }, tag: null, tagsContainer: null, dot: null };
+createCacheKey = { backgroundColor: require("Themes").colors.BACKGROUND_SURFACE_HIGH };
+createCacheKey[1] = createCacheKey;
+createCacheKey[2] = { display: "flex", flexDirection: "row", alignItems: "center" };
+createCacheKey[3] = { backgroundColor: require("Themes").colors.BORDER_SUBTLE, height: 4, width: 4, borderRadius: 10, marginHorizontal: 8 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let obj1 = { backgroundColor: require("Themes").colors.BORDER_SUBTLE, height: 4, width: 4, borderRadius: 10, marginHorizontal: 8 };
 const result = require("jsxProd").fileFinishedImporting("modules/forums/native/posts/ForumPostAppliedTags.tsx");
 
 export const ForumPostAppliedTagPills = function ForumPostAppliedTagPills(additionalTagsCount) {
@@ -33,24 +33,24 @@ export const ForumPostAppliedTagPills = function ForumPostAppliedTagPills(additi
     num = 0;
   }
   let dependencyMap;
-  const tmp = _createForOfIteratorHelperLoose();
+  const tmp = createCacheKey();
   dependencyMap = tmp;
-  let obj = { style: items };
+  let obj = { style: items, children: null };
   items = [additionalTagsCount.containerStyle, tmp.pillTagsContainer];
   const items1 = [appliedTags.map((id) => outer1_3(hasUnreads(_undefined[5]).AppliedForumTagPill, { tag: id, containerStyle: _undefined.tag, hasUnreads }, id.id)), ];
   let tmp4 = num > 0;
   if (tmp4) {
-    obj = {};
-    obj = { id: "-1" };
+    obj = { tag: null, containerStyle: null, hasUnreads: null };
+    obj = { id: "-1", name: null };
     const _HermesInternal = HermesInternal;
-    obj.name = "+" + num;
-    obj.tag = obj;
-    obj.containerStyle = tmp.tag;
-    obj.hasUnreads = hasUnreads;
-    tmp4 = callback(hasUnreads(9644).AppliedForumTagPill, obj);
+    obj[1] = "+" + num;
+    obj[0] = obj;
+    obj[1] = tmp.tag;
+    obj[2] = hasUnreads;
+    tmp4 = callback(hasUnreads(9666).AppliedForumTagPill, obj);
   }
   items1[1] = tmp4;
-  obj.children = items1;
+  obj[1] = items1;
   return closure_4(View, obj);
 };
 export const ForumPostAppliedTags = function ForumPostAppliedTags(appliedTags) {
@@ -61,42 +61,42 @@ export const ForumPostAppliedTags = function ForumPostAppliedTags(appliedTags) {
     num = 0;
   }
   let c2;
-  const tmp = _createForOfIteratorHelperLoose();
+  const tmp = createCacheKey();
   c2 = tmp;
-  let obj = { style: items };
+  let obj = { style: items, children: null };
   items = [appliedTags.containerStyle, tmp.tagsContainer];
   const items1 = [
     appliedTags.map((id) => {
-      let obj = {};
-      obj = { tag: id, hasUnreads };
-      const items = [outer1_3(appliedTags(hasUnreads[5]).AppliedForumTag, obj, id.id), ];
-      let tmp3 = arg1 !== appliedTags.length - 1;
-      if (tmp3) {
-        obj = { style: _undefined.dot };
-        tmp3 = outer1_3(_undefined, obj);
+      let obj = { tag: id, hasUnreads };
+      const children = [outer1_3(appliedTags(hasUnreads[5]).AppliedForumTag, obj, id.id), ];
+      let tmp3Result = arg1 !== appliedTags.length - 1;
+      if (tmp3Result) {
+        obj = { style: null };
+        obj[0] = _undefined.dot;
+        tmp3Result = outer1_3(_undefined, obj);
       }
-      items[1] = tmp3;
-      obj.children = items;
-      return outer1_4(outer1_5, obj);
+      children[1] = tmp3Result;
+      return outer1_4(outer1_5, { children });
     }),
 
   ];
-  let tmp4 = num > 0;
-  if (tmp4) {
-    obj = {};
-    obj = { style: tmp.dot };
-    const items2 = [callback(c2, obj), ];
-    const obj1 = {};
-    const obj2 = { id: "-1" };
+  let tmp2Result = num > 0;
+  if (tmp2Result) {
+    obj = { children: null };
+    obj = { style: null };
+    obj[0] = tmp.dot;
+    const items2 = [callback(tmp3, obj), ];
+    const obj1 = { tag: null, hasUnreads: null };
+    const obj2 = { id: "-1", name: null };
     const _HermesInternal = HermesInternal;
-    obj2.name = "+" + num;
-    obj1.tag = obj2;
-    obj1.hasUnreads = hasUnreads;
+    obj2[1] = "+" + num;
+    obj1[0] = obj2;
+    obj1[1] = hasUnreads;
     items2[1] = callback(appliedTags(hasUnreads[5]).AppliedForumTag, obj1);
-    obj.children = items2;
-    tmp4 = callback2(closure_5, obj);
+    obj[0] = items2;
+    tmp2Result = tmp2(closure_5, obj);
   }
-  items1[1] = tmp4;
-  obj.children = items1;
-  return callback2(c2, obj);
+  items1[1] = tmp2Result;
+  obj[1] = items1;
+  return closure_4(c2, obj);
 };

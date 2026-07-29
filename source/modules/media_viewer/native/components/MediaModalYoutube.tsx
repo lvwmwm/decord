@@ -1,54 +1,41 @@
-// Module ID: 12293
-// Function ID: 95830
-// Name: HTML
-// Dependencies: [57, 31, 653, 33, 8116, 8101, 8095, 8093, 12294, 477, 2]
+// Module ID: 12315
+// Function ID: 12316
+// Dependencies: [32, 19, 676, 21, 8140, 8125, 8119, 8117, 12316, 500, 2]
 
-// Module 12293 (HTML)
+// Module 12315
 import _slicedToArray from "_slicedToArray";
-import importAllResult from "result";
+import importAllResult from "noop";
 import { YOUTUBE_EMBED_PAGE_TYPE } from "ME";
 import { jsx } from "jsxProd";
 
 const require = arg1;
-function HTML(start) {
-  let str = "";
-  let str2 = "";
-  if (null != start.start) {
-    const _HermesInternal = HermesInternal;
-    str2 = "'start': " + start.start + ",";
-  }
-  let combined = str;
-  if (null != start.clip) {
-    const _HermesInternal2 = HermesInternal;
-    combined = "'clip': '" + start.clip + "',";
-  }
-  if (null != start.clipt) {
-    const _HermesInternal3 = HermesInternal;
-    str = "'clipt': '" + start.clipt + "',";
-  }
-  return "\n<html>\n  <head>\n    <meta name=\"viewport\" content=\"initial-scale=1\">\n    <style>\n      * {\n        margin: 0;\n        padding: 0;\n        background-color: #000;\n      }\n    </style>\n    <script>" + "\nconst tag = document.createElement('script');\ntag.setAttribute('src', \"https://www.youtube.com/iframe_api\");\ndocument.head.appendChild(tag);\n\nfunction onYouTubeIframeAPIReady() {\n  window.player = new YT.Player('player', {\n    height:     '100%',\n    width:      '100%',\n    videoId:    '" + start.videoId + "',\n    playerVars: {\n      'playsinline': 1,\n      'fs': 0,\n      'pageType': " + YOUTUBE_EMBED_PAGE_TYPE + ",\n      " + str + "\n      " + combined + "\n      " + str2 + "\n    },\n    events: {\n      'onReady': (e) => {\n        window.ReactNativeWebView.postMessage(\n          JSON.stringify({type: 'onReady', value: window.player.getPlayerState()})\n        );\n      },\n      'onError': (e) => {\n        window.ReactNativeWebView.postMessage(\n          JSON.stringify({type: 'onError', value: e.data})\n        );\n      },\n      'onStateChange': (e) => {\n        window.ReactNativeWebView.postMessage(\n          JSON.stringify({type: 'onStateChange', value: e.data})\n        );\n      }\n    }\n  });\n}\n" + "</script>\n  </head>\n  <body>\n    <div id=\"player\"></div>\n  </body>\n</html>\n";
-}
+let c4 = importAllResult;
 let closure_7 = "https:" + window.GLOBAL_ENV.WEBAPP_ENDPOINT;
 const memoResult = importAllResult.memo((visible) => {
   visible = visible.visible;
   const source = visible.source;
-  let obj = { visible: 0, style: 0, source: 0 };
-  Object.setPrototypeOf(null);
-  const merged = Object.assign(visible, obj);
-  const tmp3 = callback(importAllResult.useState(visible(8116).PlayerState.UNREADY), 2);
-  const first = tmp3[0];
-  const dependencyMap = tmp3[1];
-  let tmp5 = callback(importAllResult.useState(undefined), 2);
-  callback = tmp5[1];
-  const tmp6 = first(8101)(first);
-  const tmp7 = first(8101)(visible);
-  const YOUTUBE_EMBED_PAGE_TYPE = tmp7;
-  const ref = importAllResult.useRef(null);
+  const merged = Object.assign(visible, Object.create(null));
+  let first;
+  let dependencyMap;
+  let callback;
+  let importAllResult;
+  let c5;
+  let ref;
+  let tmp4 = callback(importAllResult.useState(visible(8140).PlayerState.UNREADY), 2);
+  first = tmp4[0];
+  dependencyMap = tmp4[1];
+  const tmp6 = callback(importAllResult.useState(undefined), 2);
+  callback = tmp6[1];
+  const tmp8 = first(8125)(first);
+  importAllResult = tmp8;
+  const tmp9 = first(8125)(visible);
+  c5 = tmp9;
+  ref = importAllResult.useRef(null);
   const effect = importAllResult.useEffect(() => {
-    const MediaViewerAnalytics = visible(8095).MediaViewerAnalytics;
+    const MediaViewerAnalytics = visible(8119).MediaViewerAnalytics;
     const result = MediaViewerAnalytics.trackMessageEmbedsActionCompleted({ platform: "youtube", action: "attempted" });
   }, []);
-  const items = [ref, visible, tmp7, tmp6, first];
+  const items = [ref, visible, tmp9, tmp8, first];
   callback = importAllResult.useCallback((arg0) => {
     let type;
     let value;
@@ -56,116 +43,139 @@ const memoResult = importAllResult.memo((visible) => {
     ({ type, value } = parsed);
     if ("onReady" === type) {
       if ("-1" === value) {
-        let READY = visible(8116).PlayerState.ERRORED;
+        let READY = visible(8140).PlayerState.ERRORED;
       } else {
-        READY = visible(8116).PlayerState.READY;
+        READY = visible(8140).PlayerState.READY;
       }
       dependencyMap(READY);
-      const tmp15 = dependencyMap;
+      const tmp17 = dependencyMap;
     } else if ("onError" === type) {
-      let str = "number";
-      str = value;
-      if ("number" === typeof value) {
+      let str = value;
+      if (typeof value !== "os") {
         str = value.toString();
       }
+      str = "2";
       if ("2" === str) {
-        let str7 = "invalid_parameter";
+        let str6 = "invalid_parameter";
       } else if ("5" === str) {
-        str7 = "html5_error";
+        str6 = "html5_error";
       } else if ("100" === str) {
-        str7 = "video_not_found";
+        str6 = "video_not_found";
       } else {
-        str7 = "embed_not_allowed";
+        str6 = "embed_not_allowed";
         if ("101" !== str) {
-          str7 = "embed_not_allowed";
+          str6 = "embed_not_allowed";
           if ("150" !== str) {
-            str7 = "unknown";
+            str6 = "unknown";
           }
         }
       }
-      dependencyMap(visible(8116).PlayerState.ERRORED);
-      callback(str7);
-      const MediaViewerAnalytics = visible(8095).MediaViewerAnalytics;
-      let obj = { platform: "youtube", action: "errored", error: str7 };
+      dependencyMap(visible(8140).PlayerState.ERRORED);
+      callback(str6);
+      const MediaViewerAnalytics = visible(8119).MediaViewerAnalytics;
+      let obj = { platform: "youtube", action: "errored", error: null };
+      obj[2] = str6;
       const result = MediaViewerAnalytics.trackMessageEmbedsActionCompleted(obj);
     } else if ("onStateChange" === type) {
-      obj = { "-1": visible(8116).PlayerState.UNSTARTED };
-      obj[0] = visible(8116).PlayerState.ENDED;
-      obj[1] = visible(8116).PlayerState.PLAYING;
-      obj[2] = visible(8116).PlayerState.PAUSED;
-      obj[3] = visible(8116).PlayerState.BUFFERING;
-      obj[5] = visible(8116).PlayerState.VIDEO_CUED;
-      let tmp4 = null != tmp23;
+      obj = { "-1": null, 0: null, 1: null, 2: null, 3: null, 5: null };
+      obj[0] = visible(8140).PlayerState.UNSTARTED;
+      obj[0] = visible(8140).PlayerState.ENDED;
+      obj[1] = visible(8140).PlayerState.PLAYING;
+      obj[2] = visible(8140).PlayerState.PAUSED;
+      obj[3] = visible(8140).PlayerState.BUFFERING;
+      obj[5] = visible(8140).PlayerState.VIDEO_CUED;
+      let tmp4 = null != tmp35;
       if (tmp4) {
-        tmp4 = tmp23 in visible(8116).PlayerState;
+        tmp4 = tmp35 in visible(8140).PlayerState;
       }
       if (tmp4) {
-        dependencyMap(tmp23);
+        dependencyMap(tmp35);
       }
     }
   }, []);
   const effect1 = importAllResult.useEffect(() => {
-    let tmp = null != ref.current;
-    if (tmp) {
-      tmp = first !== visible(8116).PlayerState.UNREADY;
+    let tmp2 = null != ref.current;
+    if (tmp2) {
+      tmp2 = first !== visible(8140).PlayerState.UNREADY;
     }
-    if (tmp) {
-      let tmp5 = visible;
+    if (tmp2) {
+      let tmp7 = visible;
       if (visible) {
-        tmp5 = closure_4 === visible(8116).PlayerState.UNREADY;
+        tmp7 = c4 === visible(8140).PlayerState.UNREADY;
       }
-      if (tmp5) {
-        tmp5 = first === visible(8116).PlayerState.READY;
+      if (tmp7) {
+        tmp7 = first === visible(8140).PlayerState.READY;
       }
-      if (tmp5) {
-        const current = ref.current;
+      if (tmp7) {
+        const current = tmp.current;
         current.injectJavaScript("window.player.playVideo();  true;");
       }
-      let tmp14 = visible;
+      let tmp15 = tmp6;
       if (visible) {
-        tmp14 = !closure_5;
+        tmp15 = !c5;
       }
-      if (tmp14) {
-        const current2 = ref.current;
+      if (tmp15) {
+        const current2 = tmp.current;
         current2.injectJavaScript("window.player.playVideo();  true;");
       }
-      if (tmp19) {
-        const current3 = ref.current;
+      let tmp18 = !tmp6;
+      if (!visible) {
+        tmp18 = c5;
+      }
+      if (tmp18) {
+        const current3 = tmp.current;
         current3.injectJavaScript("window.player.pauseVideo(); true;");
       }
-      tmp19 = !visible && closure_5;
     }
   }, items);
-  let obj1 = visible(8093);
-  let youtubeVideoIdFromURI = obj1.getYoutubeVideoIdFromURI(source.uri);
-  if (null == youtubeVideoIdFromURI) {
-    youtubeVideoIdFromURI = visible(8093).getYoutubeClipVideoIdFromURI(source.uri);
-    const obj3 = visible(8093);
+  let obj = visible(8117);
+  let youtubeVideoIdFromURI = obj.getYoutubeVideoIdFromURI(source.uri);
+  if (youtubeVideoIdFromURI == null) {
+    let tmp2Result = tmp2(8117);
+    youtubeVideoIdFromURI = tmp2Result.getYoutubeClipVideoIdFromURI(source.uri);
   }
   if (null == youtubeVideoIdFromURI) {
     return null;
   } else {
-    if (first === visible(8116).PlayerState.ERRORED) {
-      if ("embed_not_allowed" === tmp5[0]) {
-        obj = { videoId: youtubeVideoIdFromURI.videoId };
-        return ref(first(12294), obj);
+    if (first === tmp2(8140).PlayerState.ERRORED) {
+      if ("embed_not_allowed" === tmp6[0]) {
+        obj = { videoId: null };
+        obj[0] = youtubeVideoIdFromURI.videoId;
+        return ref(tmp7(12316), obj);
       }
     }
-    const tmp17 = visible(477).isAndroid() ? { nestedScrollEnabled: true, overScrollMode: "never", domStorageEnabled: true, mixedContentMode: "compatibility" } : {};
-    obj = { ref, style: visible.style };
-    obj1 = {};
-    const obj4 = visible(477);
-    obj1.html = HTML(youtubeVideoIdFromURI);
-    obj1.baseUrl = closure_7;
-    obj.source = obj1;
-    obj.baseURL = closure_7;
-    obj.playerState = first;
-    obj.onDataReceived = callback;
-    obj.javaScriptEnabled = true;
-    obj.javaScriptCanOpenWindowsAutomatically = true;
-    const merged1 = Object.assign(tmp17);
+    tmp2Result = tmp2(500);
+    let tmp15 = tmp2Result.isAndroid() ? { nestedScrollEnabled: true, overScrollMode: "never", domStorageEnabled: true, mixedContentMode: "compatibility" } : {};
+    obj = { ref: null, style: null, source: null, baseURL: null, playerState: null, onDataReceived: null, javaScriptEnabled: true, javaScriptCanOpenWindowsAutomatically: true };
+    obj[0] = ref;
+    obj[1] = visible.style;
+    let str2 = "";
+    let str3 = "";
+    if (null != youtubeVideoIdFromURI.start) {
+      const _HermesInternal = HermesInternal;
+      str3 = "'start': " + youtubeVideoIdFromURI.start + ",";
+    }
+    let combined = str2;
+    if (null != youtubeVideoIdFromURI.clip) {
+      const _HermesInternal2 = HermesInternal;
+      combined = "'clip': '" + youtubeVideoIdFromURI.clip + "',";
+    }
+    if (null != youtubeVideoIdFromURI.clipt) {
+      const _HermesInternal3 = HermesInternal;
+      str2 = "'clipt': '" + youtubeVideoIdFromURI.clipt + "',";
+    }
+    const obj1 = { html: null, baseUrl: null };
+    const _HermesInternal4 = HermesInternal;
+    const _HermesInternal5 = HermesInternal;
+    obj1[0] = "\n<html>\n  <head>\n    <meta name=\"viewport\" content=\"initial-scale=1\">\n    <style>\n      * {\n        margin: 0;\n        padding: 0;\n        background-color: #000;\n      }\n    </style>\n    <script>" + "\nconst tag = document.createElement('script');\ntag.setAttribute('src', \"https://www.youtube.com/iframe_api\");\ndocument.head.appendChild(tag);\n\nfunction onYouTubeIframeAPIReady() {\n  window.player = new YT.Player('player', {\n    height:     '100%',\n    width:      '100%',\n    videoId:    '" + youtubeVideoIdFromURI.videoId + "',\n    playerVars: {\n      'playsinline': 1,\n      'fs': 0,\n      'pageType': " + c5 + ",\n      " + str2 + "\n      " + combined + "\n      " + str3 + "\n    },\n    events: {\n      'onReady': (e) => {\n        window.ReactNativeWebView.postMessage(\n          JSON.stringify({type: 'onReady', value: window.player.getPlayerState()})\n        );\n      },\n      'onError': (e) => {\n        window.ReactNativeWebView.postMessage(\n          JSON.stringify({type: 'onError', value: e.data})\n        );\n      },\n      'onStateChange': (e) => {\n        window.ReactNativeWebView.postMessage(\n          JSON.stringify({type: 'onStateChange', value: e.data})\n        );\n      }\n    }\n  });\n}\n" + "</script>\n  </head>\n  <body>\n    <div id=\"player\"></div>\n  </body>\n</html>\n";
+    obj1[1] = closure_7;
+    obj[2] = obj1;
+    obj[3] = closure_7;
+    obj[4] = first;
+    obj[5] = callback;
+    const merged1 = Object.assign(tmp15);
     const merged2 = Object.assign(merged);
-    return ref(first(8116), obj, youtubeVideoIdFromURI.videoId);
+    return ref(tmp7(8140), obj, youtubeVideoIdFromURI.videoId);
   }
 });
 let result = require("ME").fileFinishedImporting("modules/media_viewer/native/components/MediaModalYoutube.tsx");

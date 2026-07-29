@@ -1,84 +1,91 @@
-// Module ID: 13899
-// Function ID: 106322
+// Module ID: 13920
+// Function ID: 13921
 // Name: FamilyCenterActivityCardPrefaceText
-// Dependencies: [31, 27, 5776, 653, 33, 4165, 689, 6236, 6235, 5837, 11089, 1212, 2199, 1273, 13900, 4161, 8316, 4372, 13901, 1935, 6529, 13902, 13903, 11086, 4133, 3865, 4004, 8222, 675, 10713, 13904, 13905, 13906, 13909, 13916, 2]
+// Dependencies: [19, 17, 5794, 676, 21, 4189, 712, 6256, 6255, 5855, 11113, 1236, 2223, 1297, 13921, 4185, 8340, 4395, 13922, 1959, 6550, 13923, 13924, 11110, 4157, 3889, 4028, 8246, 698, 10737, 13925, 13926, 13927, 13930, 13937, 2]
 // Exports: default
 
-// Module 13899 (FamilyCenterActivityCardPrefaceText)
-import importAllResult from "FamilyCenterActivityTotal";
-import { View } from "ItemSelectorActionSheet";
+// Module 13920 (FamilyCenterActivityCardPrefaceText)
+import importAllResult from "asyncRequireImpl";
+import { View } from "module_4395";
 import items from "items";
 import { AnalyticEvents } from "ME";
-import jsxProd from "FamilyCenterActivitySectionHeader";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import jsxProd from "FamilyCenterUsernameHeader";
+import createCacheKey from "createCacheKey";
+import createCacheKey from "createCacheKey";
+import createCacheKey from "createCacheKey";
+import createCacheKey from "createCacheKey";
 
-let closure_5;
+let c5;
+let c9;
 let closure_6;
-let closure_8;
-let closure_9;
+let metroImportAll;
 let require = arg1;
 function FamilyCenterActivityCardPrefaceText() {
   const tmp = callback3();
-  const tmp2 = importDefault(6236)();
-  let obj = require(6235) /* useUserIdsForLinkStatus */;
+  const tmp4 = importDefault(6256)();
+  let obj = require(6255) /* useUserIdsForLinkStatus */;
   const activeLinkUserIds = obj.useActiveLinkUserIds();
-  let obj1 = require(5837) /* getActivityTypeTextConfigs */;
-  const activityWindowTimestampFormatter = obj1.getActivityWindowTimestampFormatter(tmp2);
-  let obj2 = require(6235) /* useUserIdsForLinkStatus */;
+  let obj1 = require(5855) /* getEmptyActivityFormatter */;
+  const activityWindowTimestampFormatter = obj1.getActivityWindowTimestampFormatter(tmp4);
+  let obj2 = require(6255) /* useUserIdsForLinkStatus */;
   const activityWindowTimeStamp = obj2.useActivityWindowTimeStamp(activityWindowTimestampFormatter);
-  let obj3 = require(11089) /* useAgeSpecificText */;
-  const intl = require(1212) /* getSystemLocale */.intl;
+  let obj3 = require(11113) /* useAgeSpecificText */;
+  const intl = require(1236) /* getSystemLocale */.intl;
   obj = { activeLinks: activeLinkUserIds.length };
-  const intl2 = require(1212) /* getSystemLocale */.intl;
-  const ageSpecificText = obj3.useAgeSpecificText(intl.formatToPlainString(importDefault(2199).tazvHQ, obj), intl2.string(importDefault(2199).KrLnkE));
-  obj = { style: tmp.container };
-  let tmp9 = null;
-  if (!tmp2) {
-    obj1 = { color: tmp.icon.color, source: importDefault(13900), style: tmp.icon };
-    tmp9 = callback(require(1273) /* Button */.Icon, obj1);
+  const intl2 = require(1236) /* getSystemLocale */.intl;
+  const ageSpecificText = obj3.useAgeSpecificText(intl.formatToPlainString(importDefault(2223).tazvHQ, obj), intl2.string(importDefault(2223).KrLnkE));
+  obj = { style: tmp.container, children: null };
+  let tmp12 = null;
+  if (!tmp4) {
+    obj1 = { color: null, source: null, style: null };
+    obj1[0] = tmp.icon.color;
+    obj1[1] = tmp2(13921);
+    obj1[2] = tmp.icon;
+    tmp12 = callback(tmp5(1297).Icon, obj1);
   }
-  const items = [tmp9, , ];
-  obj2 = { style: tmp.text, variant: "text-xs/semibold", color: "text-subtle" };
+  const items = [tmp12, , ];
+  obj2 = { style: tmp.text, variant: "text-xs/semibold", color: "text-subtle", children: null };
   let tmp15 = ageSpecificText;
   if (activeLinkUserIds.length > 1) {
     tmp15 = ageSpecificText;
-    if (tmp2) {
+    if (tmp4) {
       tmp15 = activityWindowTimeStamp;
     }
   }
-  obj2.children = tmp15;
-  items[1] = callback(require(4161) /* Text */.Text, obj2);
+  obj2[3] = tmp15;
+  items[1] = callback(require(4185) /* Text */.Text, obj2);
   obj3 = {
     onPress() {
-      outer1_1(outer1_2[17]).pushLazy(outer1_0(outer1_2[19])(outer1_2[18], outer1_2.paths));
-    }
+      callback2(paths[17]).pushLazy(callback(paths[19])(paths[18], paths.paths));
+    },
+    children: null
   };
-  const formatToPlainStringResult = intl.formatToPlainString(importDefault(2199).tazvHQ, obj);
-  const tmp14 = callback;
-  const tmp7 = closure_9;
-  const tmp8 = View;
-  const obj4 = { color: tmp.icon.color, source: importDefault(6529), size: require(1273) /* Button */.Icon.Sizes.EXTRA_SMALL, style: tmp.icon };
-  obj3.children = callback(require(1273) /* Button */.Icon, obj4);
-  items[2] = callback(importDefault(8316), obj3);
-  obj.children = items;
-  return tmp7(tmp8, obj);
+  const formatToPlainStringResult = intl.formatToPlainString(importDefault(2223).tazvHQ, obj);
+  const tmp10 = closure_9;
+  const tmp11 = View;
+  const obj4 = { color: tmp.icon.color, source: null, size: null, style: null };
+  obj4[1] = importDefault(6550);
+  obj4[2] = require(1297) /* Button */.Icon.Sizes.EXTRA_SMALL;
+  obj4[3] = tmp.icon;
+  obj3[1] = callback(require(1297) /* Button */.Icon, obj4);
+  items[2] = callback(importDefault(8340), obj3);
+  obj[1] = items;
+  return tmp10(tmp11, obj);
 }
 function FamilyCenterHeaderSubText() {
-  const tmp = importDefault(6236)();
-  let obj = require(6235) /* useUserIdsForLinkStatus */;
+  const tmp2 = importDefault(6256)();
+  let obj = require(6255) /* useUserIdsForLinkStatus */;
   const activeLinkUserIds = obj.useActiveLinkUserIds();
-  const activityWindowTimestampFormatter = require(5837) /* getActivityTypeTextConfigs */.getActivityWindowTimestampFormatter(tmp);
-  require(6235) /* useUserIdsForLinkStatus */;
-  if (!tmp) {
-    obj = { variant: "text-sm/medium", color: "text-muted", children: tmp4 };
-    let tmp5 = callback(require(4161) /* Text */.Text, obj);
+  const activityWindowTimestampFormatter = require(5855) /* getEmptyActivityFormatter */.getActivityWindowTimestampFormatter(tmp2);
+  require(6255) /* useUserIdsForLinkStatus */;
+  if (!tmp2) {
+    obj = { variant: "text-sm/medium", color: "text-muted", children: null };
+    obj[2] = tmp6;
+    let tmp7 = callback(require(4185) /* Text */.Text, obj);
   } else {
-    tmp5 = null;
+    tmp7 = null;
   }
-  return tmp5;
+  return tmp7;
 }
 class FamilyCenterActivityCardHeader {
   constructor() {
@@ -93,11 +100,11 @@ class FamilyCenterActivityCardHeader {
       if (!tmp) {
         tmp3 = jsx;
         tmp4 = View;
-        obj = {};
-        tmp5 = f106335;
-        obj1 = {};
-        obj1.user = selectedTeenUser;
-        obj.children = jsx(f106335, obj1);
+        obj = { children: null };
+        tmp5 = f58139;
+        obj1 = { user: null };
+        obj1[0] = selectedTeenUser;
+        obj[0] = jsx(f58139, obj1);
         tmp6 = jsx(View, obj);
         tmp9 = tmp6;
       } else {
@@ -113,6 +120,8 @@ class FamilyCenterActivityCardHeader {
 class FamilyCenterActivityCardAccountSelect {
   constructor() {
     tmp = FamilyCenterActivityCardAccount();
+    tmp2 = useActiveLinkUsers;
+    tmp3 = selectTeenUser;
     obj = require("useUserIdsForLinkStatus");
     activeLinkUsers = obj.useActiveLinkUsers();
     useActiveLinkUsers = activeLinkUsers;
@@ -122,7 +131,7 @@ class FamilyCenterActivityCardAccountSelect {
     obj3 = require("useFamilyCenterActions");
     obj = {
       onSuccess() {
-            return selectedTeenUser(selectTeenUser[24]).hideActionSheet(outer1_10);
+            return selectedTeenUser(selectTeenUser[24]).hideActionSheet(closure_10);
           },
       onError() {
             const intl = activeLinkUsers(selectTeenUser[11]).intl;
@@ -132,213 +141,216 @@ class FamilyCenterActivityCardAccountSelect {
     selectTeenUser = obj3.useFamilyCenterActions(obj).selectTeenUser;
     items = [];
     items[0] = activeLinkUsers;
-    f106330 = f106330.useMemo(() => activeLinkUsers.map((id) => {
-      const obj = {};
-      const name = selectedTeenUser(selectTeenUser[26]).getName(id);
-      const obj2 = selectedTeenUser(selectTeenUser[26]);
-      obj.label = "" + name + " (" + selectedTeenUser(selectTeenUser[26]).getUserTag(id) + ")";
-      obj.value = id.id;
+    f92271 = f92271.useMemo(() => activeLinkUsers.map((id) => {
+      const obj = { label: null, value: null };
+      const name = callback(4028).getName(id);
+      const obj2 = callback(4028);
+      obj[0] = "" + name + " (" + callback(4028).getUserTag(id) + ")";
+      obj[1] = id.id;
       return obj;
     }), items);
-    tmp4 = null;
+    tmp6 = null;
     if (undefined !== selectedTeenUser) {
-      tmp5 = jsx;
-      tmp6 = View;
-      obj1 = {};
-      tmp7 = jsxs;
-      tmp8 = closure_1;
-      tmp9 = selectTeenUser;
-      num = 16;
-      obj2 = {};
-      obj2.style = tmp.touch;
-      str = "spinbutton";
-      obj2.accessibilityRole = "spinbutton";
-      obj2.onPress = function onPress() {
+      tmp7 = jsx;
+      tmp8 = View;
+      obj1 = { children: null };
+      tmp9 = jsxs;
+      tmp10 = closure_1;
+      obj2 = { style: null, accessibilityRole: "spinbutton", onPress: null, children: null };
+      obj2[0] = tmp.touch;
+      obj2[2] = function onPress() {
         if (undefined !== selectedTeenUser) {
           let obj = selectedTeenUser(selectTeenUser[24]);
-          obj = {};
+          obj = { title: null, items: null, onItemSelect: null, selectedItem: null, hasIcons: false };
           const intl = activeLinkUsers(selectTeenUser[11]).intl;
-          obj.title = intl.string(selectedTeenUser(selectTeenUser[12]).vORl9Q);
-          obj.items = closure_3;
-          obj.onItemSelect = function onItemSelect(arg0) {
+          obj[0] = intl.string(selectedTeenUser(selectTeenUser[12]).vORl9Q);
+          obj[1] = closure_3;
+          obj[2] = function onItemSelect(arg0) {
             let tmp = null != arg0;
             if (tmp) {
-              tmp = arg0 !== outer1_1.id;
+              tmp = arg0 !== id.id;
             }
             if (tmp) {
-              outer1_2(arg0);
-              let obj = selectedTeenUser(selectTeenUser[28]);
-              obj = { action: outer2_5.SelectTeen };
-              obj.track(outer2_7.FAMILY_CENTER_ACTION, obj);
+              callback(arg0);
+              let obj = outer1_1(outer1_2[28]);
+              obj = { action: null };
+              obj[0] = outer1_5.SelectTeen;
+              obj.track(outer1_7.FAMILY_CENTER_ACTION, obj);
             }
             setImmediate(() => {
-              selectedTeenUser(selectTeenUser[24]).hideActionSheet(outer3_10);
+              callback(table[24]).hideActionSheet(closure_10);
             });
           };
-          obj.selectedItem = selectedTeenUser.id;
-          obj.hasIcons = false;
+          obj[3] = tmp.id;
           obj.openLazy(activeLinkUsers(selectTeenUser[19])(selectTeenUser[27], selectTeenUser.paths), outer1_10, obj);
-          const tmp4 = activeLinkUsers(selectTeenUser[19])(selectTeenUser[27], selectTeenUser.paths);
+          const tmp5 = activeLinkUsers(selectTeenUser[19])(selectTeenUser[27], selectTeenUser.paths);
         }
       };
-      tmp11 = jsx;
-      tmp12 = f106335;
-      obj3 = {};
-      obj3.user = selectedTeenUser;
-      flag = true;
-      obj3.inSelector = true;
-      tmp10 = require("_isNativeReflectConstruct");
+      tmp12 = f58139;
+      obj3 = { user: null, inSelector: true };
+      obj3[0] = selectedTeenUser;
+      tmp11 = require("render");
       items1 = [, ];
-      items1[0] = jsx(f106335, obj3);
-      tmp13 = jsx;
-      tmp14 = useActiveLinkUsers;
-      num2 = 13;
-      obj4 = {};
-      obj4.style = tmp.icon;
-      obj4.size = require("Button").Icon.Sizes.MEDIUM;
-      num3 = 29;
-      obj4.source = require("registerAsset");
+      items1[0] = jsx(f58139, obj3);
+      obj4 = { style: null, size: null, source: null };
+      obj4[0] = tmp.icon;
+      obj4[1] = require("Button").Icon.Sizes.MEDIUM;
+      obj4[2] = require("registerAsset");
       items1[1] = jsx(require("Button").Icon, obj4);
-      obj2.children = items1;
-      obj1.children = jsxs(tmp10, obj2);
-      tmp4 = jsx(View, obj1);
+      obj2[3] = items1;
+      obj1[0] = jsxs(tmp11, obj2);
+      tmp6 = jsx(View, obj1);
     }
-    return tmp4;
+    return tmp6;
   }
 }
-({ FamilyCenterAction: closure_5, TeenActionDisplayType: closure_6 } = items);
-({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
+let c3 = importAllResult;
+({ FamilyCenterAction: c5, TeenActionDisplayType: closure_6 } = items);
+({ jsx: metroImportAll, jsxs: c9 } = jsxProd);
 const FamilyCenterTeenAccountSelect = "FamilyCenterTeenAccountSelect";
-let obj = { container: { display: "flex", flexDirection: "row", alignItems: "center" } };
-obj = { color: require("_createForOfIteratorHelperLoose").colors.ICON_SUBTLE, width: require("_createForOfIteratorHelperLoose").space.PX_16, height: require("_createForOfIteratorHelperLoose").space.PX_16 };
-obj.icon = obj;
-_createForOfIteratorHelperLoose = { marginHorizontal: require("_createForOfIteratorHelperLoose").space.PX_4 };
-obj.text = _createForOfIteratorHelperLoose;
-let closure_11 = _createForOfIteratorHelperLoose.createStyles(obj);
-let obj2 = {};
-let obj3 = { display: "flex", flexDirection: "row", alignItems: "center", padding: require("_createForOfIteratorHelperLoose").space.PX_12, flex: 1, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SURFACE_HIGHEST, borderTopLeftRadius: require("_createForOfIteratorHelperLoose").radii.md, borderTopRightRadius: require("_createForOfIteratorHelperLoose").radii.md };
-obj2.header = obj3;
-let obj4 = { borderRadius: require("Button").AVATAR_SIZE_MAP[require("Button").AvatarSizes.NORMAL] / 2, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SURFACE_HIGH };
-obj2.avatar = obj4;
-_createForOfIteratorHelperLoose = { marginRight: require("_createForOfIteratorHelperLoose").space.PX_12, alignItems: "flex-start" };
-obj2.avatarContainer = _createForOfIteratorHelperLoose;
-const obj6 = { display: "flex", flexDirection: "column", width: "100%", paddingRight: require("_createForOfIteratorHelperLoose").space.PX_16 };
-obj2.userHeader = obj6;
-obj2.nonSelectorHeader = { flex: 1, paddingRight: require("_createForOfIteratorHelperLoose").space.PX_16 };
-let closure_12 = _createForOfIteratorHelperLoose.createStyles(obj2);
+let obj = { container: { display: "flex", flexDirection: "row", alignItems: "center" }, icon: null, text: null };
+obj = { color: require("Themes").colors.ICON_SUBTLE, width: require("Themes").space.PX_16, height: require("Themes").space.PX_16 };
+obj[1] = obj;
+createCacheKey = { marginHorizontal: require("Themes").space.PX_4 };
+obj[2] = createCacheKey;
+let closure_11 = createCacheKey.createStyles(obj);
+let obj2 = { header: null, avatar: null, avatarContainer: null, userHeader: null, nonSelectorHeader: null };
+obj2[0] = { display: "flex", flexDirection: "row", alignItems: "center", padding: require("Themes").space.PX_12, flex: 1, backgroundColor: require("Themes").colors.BACKGROUND_SURFACE_HIGHEST, borderTopLeftRadius: require("Themes").radii.md, borderTopRightRadius: require("Themes").radii.md };
+let obj4 = { borderRadius: null, backgroundColor: null };
+obj4[0] = require("Button").AVATAR_SIZE_MAP[require("Button").AvatarSizes.NORMAL] / 2;
+obj4[1] = require("Themes").colors.BACKGROUND_SURFACE_HIGH;
+obj2[1] = obj4;
+createCacheKey = { marginRight: require("Themes").space.PX_12, alignItems: "flex-start" };
+obj2[2] = createCacheKey;
+let obj3 = { display: "flex", flexDirection: "row", alignItems: "center", padding: require("Themes").space.PX_12, flex: 1, backgroundColor: require("Themes").colors.BACKGROUND_SURFACE_HIGHEST, borderTopLeftRadius: require("Themes").radii.md, borderTopRightRadius: require("Themes").radii.md };
+obj2[3] = { display: "flex", flexDirection: "column", width: "100%", paddingRight: require("Themes").space.PX_16 };
+const obj6 = { display: "flex", flexDirection: "column", width: "100%", paddingRight: require("Themes").space.PX_16 };
+obj2[4] = { flex: 1, paddingRight: require("Themes").space.PX_16 };
+let closure_14 = createCacheKey.createStyles(obj2);
 const memoResult = importAllResult.memo((arg0) => {
   let inSelector;
   let user;
   ({ user, inSelector } = arg0);
   const tmp = callback4();
-  const AvatarSizes = require(1273) /* Button */.AvatarSizes;
-  let obj = { style: tmp.header };
-  obj = { style: tmp.avatarContainer, children: callback(require(1273) /* Button */.Avatar, obj) };
-  obj = { avatarStyle: tmp.avatar, user, guildId: undefined, disablePlaceholder: true, avatarDecoration: user.avatarDecoration, size: inSelector ? AvatarSizes.SMALL : AvatarSizes.NORMAL };
+  const AvatarSizes = require(1297) /* Button */.AvatarSizes;
+  if (inSelector) {
+    let NORMAL = AvatarSizes.SMALL;
+    let tmp4 = tmp2;
+  } else {
+    NORMAL = AvatarSizes.NORMAL;
+    tmp4 = tmp2;
+  }
+  let obj = { style: tmp.header, children: null };
+  obj = { style: tmp.avatarContainer, children: callback(tmp4(1297).Avatar, obj) };
+  obj = { avatarStyle: tmp.avatar, user, guildId: "HermesInternal", disablePlaceholder: null, avatarDecoration: user.avatarDecoration, size: 391.685 };
+  obj[5] = NORMAL;
   const items = [callback(View, obj), ];
-  const obj1 = {};
   const items1 = [tmp.userHeader, ];
   let nonSelectorHeader;
   if (!inSelector) {
     nonSelectorHeader = tmp.nonSelectorHeader;
   }
+  const obj1 = { style: items1, children: null };
   items1[1] = nonSelectorHeader;
-  obj1.style = items1;
-  const items2 = [callback(importDefault(13902), { user }), callback(FamilyCenterHeaderSubText, {})];
-  obj1.children = items2;
+  const items2 = [callback(importDefault(13923), { user }), callback(FamilyCenterHeaderSubText, {})];
+  obj1[1] = items2;
   items[1] = closure_9(View, obj1);
-  obj.children = items;
+  obj[1] = items;
   return closure_9(View, obj);
 });
 memoResult.displayName = "FamilyCenterActivityCardAccount";
-const obj8 = {};
-const obj9 = { display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "flex-start", backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SURFACE_HIGHEST };
-const merged = Object.assign(require("_createForOfIteratorHelperLoose").shadows.SHADOW_LOW);
-obj8.touch = obj9;
-const obj7 = { flex: 1, paddingRight: require("_createForOfIteratorHelperLoose").space.PX_16 };
+const obj8 = { touch: null, icon: null };
+const obj7 = { flex: 1, paddingRight: require("Themes").space.PX_16 };
+const merged = Object.assign(require("Themes").shadows.SHADOW_LOW);
+obj8[0] = { display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "flex-start", backgroundColor: require("Themes").colors.BACKGROUND_SURFACE_HIGHEST };
+const obj9 = { display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "flex-start", backgroundColor: require("Themes").colors.BACKGROUND_SURFACE_HIGHEST };
 items = [{ rotate: "90deg" }];
-obj8.icon = { color: require("_createForOfIteratorHelperLoose").colors.INTERACTIVE_TEXT_DEFAULT, width: require("_createForOfIteratorHelperLoose").space.PX_24, height: require("_createForOfIteratorHelperLoose").space.PX_24, transform: items, marginHorizontal: require("_createForOfIteratorHelperLoose").space.PX_8 };
-let closure_14 = _createForOfIteratorHelperLoose.createStyles(obj8);
-const obj11 = {};
-_createForOfIteratorHelperLoose = { marginTop: require("_createForOfIteratorHelperLoose").space.PX_16 };
-obj11.card = _createForOfIteratorHelperLoose;
-const obj10 = { color: require("_createForOfIteratorHelperLoose").colors.INTERACTIVE_TEXT_DEFAULT, width: require("_createForOfIteratorHelperLoose").space.PX_24, height: require("_createForOfIteratorHelperLoose").space.PX_24, transform: items, marginHorizontal: require("_createForOfIteratorHelperLoose").space.PX_8 };
-obj11.preface = { display: "flex", marginBottom: require("_createForOfIteratorHelperLoose").space.PX_12 };
-const obj13 = { display: "flex", marginBottom: require("_createForOfIteratorHelperLoose").space.PX_12 };
-obj11.container = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SURFACE_HIGH, borderRadius: require("_createForOfIteratorHelperLoose").radii.md };
-const obj15 = { padding: require("_createForOfIteratorHelperLoose").space.PX_16, display: "flex", flexDirection: "column", gap: require("_createForOfIteratorHelperLoose").space.PX_32 };
-obj11.content = obj15;
-_createForOfIteratorHelperLoose = { display: "flex", flexDirection: "row", flexWrap: "wrap", justifyContent: "space-between", gap: require("_createForOfIteratorHelperLoose").space.PX_8 };
-obj11.totals = _createForOfIteratorHelperLoose;
-obj11.first = { width: "100%" };
-obj11.other = { width: "48.5%" };
-const obj17 = { display: "flex", flexDirection: "column", gap: require("_createForOfIteratorHelperLoose").space.PX_32 };
-obj11.activities = obj17;
-const obj14 = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SURFACE_HIGH, borderRadius: require("_createForOfIteratorHelperLoose").radii.md };
-obj11.settingsControls = { marginTop: require("_createForOfIteratorHelperLoose").space.PX_24 };
-let closure_15 = _createForOfIteratorHelperLoose.createStyles(obj11);
-const obj18 = { marginTop: require("_createForOfIteratorHelperLoose").space.PX_24 };
+obj8[1] = { color: require("Themes").colors.INTERACTIVE_TEXT_DEFAULT, width: require("Themes").space.PX_24, height: require("Themes").space.PX_24, transform: items, marginHorizontal: require("Themes").space.PX_8 };
+let closure_17 = createCacheKey.createStyles(obj8);
+const obj11 = { card: null, preface: null, container: null, content: null, totals: null, first: null, other: null, activities: null, settingsControls: null };
+createCacheKey = { marginTop: require("Themes").space.PX_16 };
+obj11[0] = createCacheKey;
+const obj10 = { color: require("Themes").colors.INTERACTIVE_TEXT_DEFAULT, width: require("Themes").space.PX_24, height: require("Themes").space.PX_24, transform: items, marginHorizontal: require("Themes").space.PX_8 };
+obj11[1] = { display: "flex", marginBottom: require("Themes").space.PX_12 };
+const obj13 = { display: "flex", marginBottom: require("Themes").space.PX_12 };
+obj11[2] = { backgroundColor: require("Themes").colors.BACKGROUND_SURFACE_HIGH, borderRadius: require("Themes").radii.md };
+const obj14 = { backgroundColor: require("Themes").colors.BACKGROUND_SURFACE_HIGH, borderRadius: require("Themes").radii.md };
+obj11[3] = { padding: require("Themes").space.PX_16, display: "flex", flexDirection: "column", gap: require("Themes").space.PX_32 };
+createCacheKey = { display: "flex", flexDirection: "row", flexWrap: "wrap", justifyContent: "space-between", gap: require("Themes").space.PX_8 };
+obj11[4] = createCacheKey;
+obj11[5] = { width: "100%" };
+obj11[6] = { width: "48.5%" };
+const obj15 = { padding: require("Themes").space.PX_16, display: "flex", flexDirection: "column", gap: require("Themes").space.PX_32 };
+obj11[7] = { display: "flex", flexDirection: "column", gap: require("Themes").space.PX_32 };
+const obj17 = { display: "flex", flexDirection: "column", gap: require("Themes").space.PX_32 };
+obj11[8] = { marginTop: require("Themes").space.PX_24 };
+let closure_19 = createCacheKey.createStyles(obj11);
+const obj18 = { marginTop: require("Themes").space.PX_24 };
 const result = require("items").fileFinishedImporting("modules/parent_tools/native/FamilyCenterActivityCard.tsx");
 
 export default function FamilyCenterActivityCard() {
   const tmp = callback6();
   const require = tmp;
-  let obj = require(13903) /* useSelectedTeenUser */;
+  let obj = require(13924) /* useSelectedTeenUser */;
   const selectedTeenUser = obj.useSelectedTeenUser();
-  require(13904) /* useActionTotalsForDisplayType */;
+  require(13925) /* useActionsForDisplayType */;
   if (undefined === selectedTeenUser) {
     return null;
   } else {
-    let obj3 = require(5837) /* getActivityTypeTextConfigs */;
-    const sortedActivityTypeConfigs = obj3.getSortedActivityTypeConfigs();
-    obj = { style: tmp.card };
-    obj = { style: tmp.preface, children: callback(FamilyCenterActivityCardPrefaceText, {}) };
+    const sortedActivityTypeConfigs = tmp2(5855).getSortedActivityTypeConfigs();
+    obj = { style: null, children: null };
+    obj[0] = tmp.card;
+    obj = { style: null, children: null };
+    obj[0] = tmp.preface;
+    obj[1] = callback(FamilyCenterActivityCardPrefaceText, {});
     const items = [callback(View, obj), , ];
-    const obj1 = { style: tmp.container };
+    const obj1 = { style: null, children: null };
+    obj1[0] = tmp.container;
     const items1 = [callback(FamilyCenterActivityCardHeader, {}), ];
-    const obj2 = { style: tmp.content };
-    obj3 = { style: tmp.totals };
+    const obj2 = { style: null, children: null };
+    obj2[0] = tmp.content;
+    const obj3 = { style: null, children: null };
+    obj3[0] = tmp.totals;
     const found = sortedActivityTypeConfigs.filter((arg0) => {
       let tmp;
       [tmp] = arg0;
-      return tmp !== outer1_6.GIFTS;
+      return tmp !== constants.GIFTS;
     });
-    obj3.children = found.map((arg0, arg1) => {
+    obj3[1] = found.map((arg0, arg1) => {
       let tmp;
       [tmp, ] = arg0;
-      const obj = {};
       if (0 === arg1) {
         let other = tmp.first;
       } else {
         other = tmp.other;
       }
-      obj.style = other;
-      obj.children = outer1_8(outer1_1(outer1_2[31]), { displayType: tmp });
-      return outer1_8(outer1_4, obj, "total-" + tmp);
+      return outer1_8(outer1_4, { style: other, children: outer1_8(outer1_1(outer1_2[31]), { displayType: tmp }) }, "total-" + tmp);
     });
-    const items2 = [callback(View, obj3), callback(importDefault(13906), {}), ];
-    let tmp7 = null;
-    if (tmp4) {
-      const obj4 = {
-        style: tmp.activities,
-        children: sortedActivityTypeConfigs.map((arg0) => {
-              let tmp;
-              [tmp, ] = arg0;
-              return outer1_8(outer1_1(outer1_2[33]), { displayType }, "section-" + displayType);
-            })
-      };
-      tmp7 = callback(View, obj4);
+    const items2 = [callback(View, obj3), callback(importDefault(13927), {}), ];
+    let tmp11Result = null;
+    if (tmp6) {
+      const obj4 = { style: null, children: null };
+      obj4[0] = tmp.activities;
+      obj4[1] = sortedActivityTypeConfigs.map((arg0) => {
+        let tmp;
+        [tmp, ] = arg0;
+        return callback2(callback(table[33]), { displayType }, "section-" + displayType);
+      });
+      tmp11Result = tmp11(tmp10, obj4);
     }
-    items2[2] = tmp7;
-    obj2.children = items2;
+    items2[2] = tmp11Result;
+    obj2[1] = items2;
     items1[1] = closure_9(View, obj2);
-    obj1.children = items1;
+    obj1[1] = items1;
     items[1] = closure_9(View, obj1);
-    const obj5 = { style: tmp.settingsControls, children: callback(importDefault(13916), {}) };
+    const obj5 = { style: null, children: null };
+    obj5[0] = tmp.settingsControls;
+    obj5[1] = callback(importDefault(13937), {});
     items[2] = callback(View, obj5);
-    obj.children = items;
+    obj[1] = items;
     return closure_9(View, obj);
   }
+  tmp2 = require;
 };
 export const FamilyCenterActivityCardAccount = memoResult;
 export { FamilyCenterActivityCardHeader };

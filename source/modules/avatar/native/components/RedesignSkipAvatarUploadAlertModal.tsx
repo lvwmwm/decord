@@ -1,35 +1,35 @@
-// Module ID: 16240
-// Function ID: 125738
+// Module ID: 16275
+// Function ID: 16276
 // Name: RedesignSkipAvatarUploadAlertModal
-// Dependencies: [31, 33, 4510, 1212, 4510, 2]
+// Dependencies: [19, 21, 4533, 1236, 4533, 2]
 // Exports: default
 
-// Module 16240 (RedesignSkipAvatarUploadAlertModal)
-import "result";
+// Module 16275 (RedesignSkipAvatarUploadAlertModal)
+import "noop";
 import jsxProd from "jsxProd";
 
-let closure_2;
-let closure_3;
+let c3;
+let obj1;
 const require = arg1;
-({ jsx: closure_2, jsxs: closure_3 } = jsxProd);
+({ jsx: obj1, jsxs: c3 } = jsxProd);
 const result = require("getAlertModalItemKey").fileFinishedImporting("modules/avatar/native/components/RedesignSkipAvatarUploadAlertModal.tsx");
 
 export default function RedesignSkipAvatarUploadAlertModal(onConfirm) {
-  let obj = {};
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj.title = intl.string(require(1212) /* getSystemLocale */.t.DnKHuV);
-  const intl2 = require(1212) /* getSystemLocale */.intl;
-  obj.content = intl2.string(require(1212) /* getSystemLocale */.t["1EPySE"]);
-  obj = {};
-  obj = { onPress: onConfirm.onConfirm };
-  const intl3 = require(1212) /* getSystemLocale */.intl;
-  obj.text = intl3.string(require(1212) /* getSystemLocale */.t.nhJ8OC);
-  const items = [callback(require(4510) /* getAlertModalItemKey */.AlertActionButton, obj, "confirm"), ];
-  const obj1 = { variant: "secondary" };
-  const intl4 = require(1212) /* getSystemLocale */.intl;
-  obj1.text = intl4.string(require(1212) /* getSystemLocale */.t["7eZ3ji"]);
-  items[1] = callback(require(4510) /* getAlertModalItemKey */.AlertActionButton, obj1, "add-profile-picture");
-  obj.children = items;
-  obj.actions = callback2(require(4510) /* getAlertModalItemKey */.AlertActions, obj);
-  return callback(require(4510) /* getAlertModalItemKey */.AlertModal, obj);
+  let obj = { title: null, content: null, actions: null };
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj[0] = intl.string(require(1236) /* getSystemLocale */.t.DnKHuV);
+  const intl2 = require(1236) /* getSystemLocale */.intl;
+  obj[1] = intl2.string(require(1236) /* getSystemLocale */.t["1EPySE"]);
+  obj = { children: null };
+  obj = { onPress: onConfirm.onConfirm, text: null };
+  const intl3 = require(1236) /* getSystemLocale */.intl;
+  obj[1] = intl3.string(require(1236) /* getSystemLocale */.t.nhJ8OC);
+  const items = [callback(require(4533) /* getAlertModalItemKey */.AlertActionButton, obj, "confirm"), ];
+  const obj1 = { variant: "secondary", text: null };
+  const intl4 = require(1236) /* getSystemLocale */.intl;
+  obj1[1] = intl4.string(require(1236) /* getSystemLocale */.t["7eZ3ji"]);
+  items[1] = callback(require(4533) /* getAlertModalItemKey */.AlertActionButton, obj1, "add-profile-picture");
+  obj[0] = items;
+  obj[2] = callback2(require(4533) /* getAlertModalItemKey */.AlertActions, obj);
+  return callback(require(4533) /* getAlertModalItemKey */.AlertModal, obj);
 };

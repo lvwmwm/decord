@@ -1,30 +1,30 @@
-// Module ID: 9376
-// Function ID: 73082
+// Module ID: 9400
+// Function ID: 9401
 // Name: __INTERNAL_VIEW_CONFIG
-// Dependencies: [110, 42, 117, 2]
+// Dependencies: [106, 65, 114, 2]
 
-// Module 9376 (__INTERNAL_VIEW_CONFIG)
+// Module 9400 (__INTERNAL_VIEW_CONFIG)
 import weakSet from "weakSet";
-import get from "get";
+import setRuntimeConfigProvider from "setRuntimeConfigProvider";
 
-let obj = { uiViewClassName: "EmojiPickerView", directEventTypes: { topStickyHeaderRender: { registrationName: "onStickyHeaderRender" }, topPressEmoji: { registrationName: "onPressEmoji" }, topLongPressEmoji: { registrationName: "onLongPressEmoji" }, topScroll: { registrationName: "onScroll" }, topScrollBeginDrag: { registrationName: "onScrollBeginDrag" }, topScrollEndDrag: { registrationName: "onScrollEndDrag" }, topShowNitroUpsell: { registrationName: "onShowNitroUpsell" } } };
+let obj = { uiViewClassName: "EmojiPickerView", directEventTypes: { topStickyHeaderRender: { registrationName: "onStickyHeaderRender" }, topPressEmoji: { registrationName: "onPressEmoji" }, topLongPressEmoji: { registrationName: "onLongPressEmoji" }, topScroll: { registrationName: "onScroll" }, topScrollBeginDrag: { registrationName: "onScrollBeginDrag" }, topScrollEndDrag: { registrationName: "onScrollEndDrag" }, topShowNitroUpsell: { registrationName: "onShowNitroUpsell" } }, validAttributes: null };
 obj = { config: true, paddingTop: true, paddingBottom: true, useTier0UpsellContent: true, emojiData: true, emojiMargin: true, emojiSize: true };
 const merged = Object.assign(weakSet.ConditionallyIgnoredEventHandlers({ onStickyHeaderRender: true, onPressEmoji: true, onLongPressEmoji: true, onScroll: true, onScrollBeginDrag: true, onScrollEndDrag: true, onShowNitroUpsell: true }));
-obj.validAttributes = obj;
+obj[2] = obj;
 obj = {
   refreshEmojis(current) {
-    require(117) /* renderElement */.dispatchCommand(current, "refreshEmojis", []);
+    require(114) /* renderElement */.dispatchCommand(current, "refreshEmojis", []);
   },
   scrollingEnabled(current, arg1) {
     const items = [arg1];
-    require(117) /* renderElement */.dispatchCommand(current, "scrollingEnabled", items);
+    require(114) /* renderElement */.dispatchCommand(current, "scrollingEnabled", items);
   },
-  scrollToHeaderIndex(nodeFromPublicInstance) {
+  scrollToHeaderIndex(arg0, arg1, arg2) {
     const items = [arg1, arg2];
-    require(117) /* renderElement */.dispatchCommand(nodeFromPublicInstance, "scrollToHeaderIndex", items);
+    require(114) /* renderElement */.dispatchCommand(arg0, "scrollToHeaderIndex", items);
   }
 };
-const value = get.get("EmojiPickerView", () => obj);
+const value = setRuntimeConfigProvider.get("EmojiPickerView", () => obj);
 const result = require("renderElement").fileFinishedImporting("../discord_common/js/packages/rtn-codegen/js/EmojiPickerNativeComponent.tsx");
 
 export default value;

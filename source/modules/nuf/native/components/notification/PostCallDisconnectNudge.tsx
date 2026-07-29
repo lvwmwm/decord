@@ -1,53 +1,55 @@
-// Module ID: 15363
-// Function ID: 117051
+// Module ID: 15396
+// Function ID: 15397
 // Name: PostCallDisconnectNudge
-// Dependencies: [57, 31, 1907, 4181, 11480, 11481, 33, 15362, 1212, 14419, 11482, 566, 8417, 1334, 11483, 4133, 15363, 1935, 2]
+// Dependencies: [32, 19, 1931, 4205, 11504, 11505, 21, 15395, 1236, 14441, 11506, 589, 8441, 1358, 11507, 4157, 15396, 1959, 2]
 // Exports: default, usePostCallDisconnectNudge
 
-// Module 15363 (PostCallDisconnectNudge)
+// Module 15396 (PostCallDisconnectNudge)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_6 from "_isNativeReflectConstruct";
-import { PermissionPromptType } from "_isNativeReflectConstruct";
+import noop from "noop";
+import handleConnectionOpen from "handleConnectionOpen";
+import updateVoiceState from "updateVoiceState";
+import { PermissionPromptType } from "set";
 import EventActionType from "EventActionType";
 import { jsx } from "jsxProd";
 
-let closure_8;
-let closure_9;
+let c9;
+let metroImportAll;
 const require = arg1;
-({ EventActionLocation: closure_8, NotificationNudgeSurface: closure_9 } = EventActionType);
-let closure_11 = { cooldownDurationMs: 604800000 };
-let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/nuf/native/components/notification/PostCallDisconnectNudge.tsx");
+({ EventActionLocation: metroImportAll, NotificationNudgeSurface: c9 } = EventActionType);
+let c11 = "post-call-disconnect-nudge-key";
+let closure_12 = { cooldownDurationMs: 604800000 };
+let result = require("handleConnectionOpen").fileFinishedImporting("modules/nuf/native/components/notification/PostCallDisconnectNudge.tsx");
 
 export default function PostCallDisconnectNudge(arg0) {
   let markAsDismissed;
   let onHide;
   ({ markAsDismissed, onHide } = arg0);
-  const obj = {};
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj.title = intl.string(require(1212) /* getSystemLocale */.t.pJbYq1);
-  const intl2 = require(1212) /* getSystemLocale */.intl;
-  obj.body = intl2.string(require(1212) /* getSystemLocale */.t.vegtFT);
-  obj.actionLocation = constants.CALL_DISCONNECT;
-  obj.surface = constants2.CALL_DISCONNECT_BOTTOM_SHEET;
-  obj.markAsDismissed = markAsDismissed;
-  obj.onHide = onHide;
-  return jsx(importDefault(15362), {});
+  const obj = { title: null, body: null, actionLocation: null, surface: null, markAsDismissed: null, onHide: null };
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj[0] = intl.string(require(1236) /* getSystemLocale */.t.pJbYq1);
+  const intl2 = require(1236) /* getSystemLocale */.intl;
+  obj[1] = intl2.string(require(1236) /* getSystemLocale */.t.vegtFT);
+  obj[2] = constants.CALL_DISCONNECT;
+  obj[3] = constants2.CALL_DISCONNECT_BOTTOM_SHEET;
+  obj[4] = markAsDismissed;
+  obj[5] = onHide;
+  return jsx(importDefault(15395), { title: null, body: null, actionLocation: null, surface: null, markAsDismissed: null, onHide: null });
 };
 export const POST_CALL_DISCONNECT_NUDGE_KEY = "post-call-disconnect-nudge-key";
 export const usePostCallDisconnectNudge = function usePostCallDisconnectNudge() {
-  let obj = stateFromStores1(14419);
-  const canSeePushNotificationNudge = stateFromStores(11482).useCanSeePushNotificationNudge();
-  let obj2 = stateFromStores(11482);
-  const items = [closure_6];
-  stateFromStores = stateFromStores(566).useStateFromStores(items, () => outer1_6.getCurrentClientVoiceChannelId(null));
-  const obj3 = stateFromStores(566);
-  const items1 = [_isNativeReflectConstruct];
-  stateFromStores1 = stateFromStores(566).useStateFromStores(items1, () => tmp11.getChannelId());
+  let obj = stateFromStores1(14441);
+  let tmp2 = stateFromStores;
+  const canSeePushNotificationNudge = stateFromStores(11506).useCanSeePushNotificationNudge();
+  let obj2 = stateFromStores(11506);
+  const items = [updateVoiceState];
+  stateFromStores = stateFromStores(589).useStateFromStores(items, () => currentClientVoiceChannelId.getCurrentClientVoiceChannelId(null));
+  const obj3 = stateFromStores(589);
+  const items1 = [handleConnectionOpen];
+  stateFromStores1 = stateFromStores(589).useStateFromStores(items1, () => tmp12.getChannelId());
   const dependencyMap = first.useRef(stateFromStores);
-  const tmp4 = callback(first.useState(false), 2);
-  callback = tmp4[1];
+  const tmp7 = callback(first.useState(false), 2);
+  callback = tmp7[1];
   const items2 = [stateFromStores, stateFromStores1];
   const effect = first.useEffect(() => {
     const current = ref.current;
@@ -61,27 +63,30 @@ export const usePostCallDisconnectNudge = function usePostCallDisconnectNudge() 
     }
     _slicedToArray(tmp2);
   }, items2);
-  const obj4 = stateFromStores(566);
+  const obj4 = stateFromStores(589);
+  const obj5 = first;
+  const tmp6 = callback;
   let prop = null;
-  if (tmp4[0]) {
+  if (tmp7[0]) {
     prop = null;
     if (!obj.useConfig({ location: "usePostCallDisconnectNudge" }).inHoldout) {
       prop = null;
       if (canSeePushNotificationNudge) {
-        prop = stateFromStores(1334).DismissibleContent.NOTIFICATION_NUDGE_POST_CALL_DISCONNECT;
+        prop = tmp2(1358).DismissibleContent.NOTIFICATION_NUDGE_POST_CALL_DISCONNECT;
       }
     }
   }
-  const tmp9 = callback(stateFromStores(8417).useSelectedTimeRecurringDismissibleContent(prop, closure_11), 2);
-  first = tmp9[0];
-  _isNativeReflectConstruct = tmp11;
-  const items3 = [first, tmp9[1]];
-  const effect1 = first.useEffect(() => {
+  const tmp6Result = tmp6(stateFromStores(8441).useSelectedTimeRecurringDismissibleContent(prop, closure_12), 2);
+  first = tmp6Result[0];
+  handleConnectionOpen = tmp12;
+  const items3 = [first, tmp6Result[1]];
+  const effect1 = obj5.useEffect(() => {
     if (null != first) {
       let obj = stateFromStores(ref[14]);
       const result = obj.setPushPermissionReactivationSeen(outer1_7.CALL_DISCONNECT_BOTTOM_SHEET);
-      obj = { markAsDismissed: _isNativeReflectConstruct };
-      stateFromStores1(ref[15]).openLazy(stateFromStores(ref[17])(ref[16], ref.paths), "post-call-disconnect-nudge-key", obj);
+      obj = { markAsDismissed: null };
+      obj[0] = handleConnectionOpen;
+      stateFromStores1(ref[15]).openLazy(stateFromStores(ref[17])(ref[16], ref.paths), outer1_11, obj);
       const obj2 = stateFromStores1(ref[15]);
     }
   }, items3);

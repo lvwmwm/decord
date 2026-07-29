@@ -1,7 +1,7 @@
 // Module ID: 238
-// Function ID: 3258
+// Function ID: 239
 // Name: _isNativeReflectConstruct
-// Dependencies: [101]
+// Dependencies: [92]
 
 // Module 238 (_isNativeReflectConstruct)
 

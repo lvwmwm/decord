@@ -1,34 +1,31 @@
-// Module ID: 11298
-// Function ID: 87655
+// Module ID: 11322
+// Function ID: 11323
 // Name: useIsAppDM
-// Dependencies: [1850, 624, 2]
+// Dependencies: [1874, 647, 2]
 // Exports: default
 
-// Module 11298 (useIsAppDM)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 11322 (useIsAppDM)
+import mergeGuildAvatar from "mergeGuildAvatar";
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/app_dms/useIsAppDM.tsx");
 
 export default function useIsAppDM(arg0) {
   const _require = arg0;
-  const items = [_isNativeReflectConstruct];
-  return _require(624).useStateFromStores(items, () => {
-    let isDMResult = null != dM;
-    if (isDMResult) {
-      isDMResult = dM.isDM();
+  const items = [mergeGuildAvatar];
+  return _require(647).useStateFromStores(items, () => {
+    let tmp = null != closure_0 && obj.isDM();
+    if (tmp) {
+      tmp = 1 === obj.recipients.length;
     }
-    if (isDMResult) {
-      isDMResult = 1 === dM.recipients.length;
-    }
-    if (isDMResult) {
-      const user = outer1_2.getUser(dM.recipients[0]);
+    if (tmp) {
+      const user = outer1_2.getUser(obj.recipients[0]);
       let bot;
-      if (null != user) {
+      if (user != null) {
         bot = user.bot;
       }
-      isDMResult = true === bot;
+      tmp = true === bot;
     }
-    return isDMResult;
+    return tmp;
   });
 };

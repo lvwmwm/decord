@@ -1,93 +1,217 @@
-// Module ID: 6204
-// Function ID: 55590
+// Module ID: 6224
+// Function ID: 6225
 // Name: SyncedLoadingAlertModal
-// Dependencies: [5, 57, 31, 33, 4510, 1212, 4507, 2]
-// Exports: showCheckoutOrderErrorModal
+// Dependencies: [5, 32, 19, 21, 4533, 1236, 4530, 2]
+// Exports: showCheckoutOrderErrorModal, showRetryConfirmModal
 
-// Module 6204 (SyncedLoadingAlertModal)
+// Module 6224 (SyncedLoadingAlertModal)
 import getSystemLocale from "getSystemLocale";
 import _slicedToArray from "_slicedToArray";
-import result from "result";
+import noop from "noop";
 import jsxProd from "jsxProd";
 
-let closure_5;
+let c5;
 let closure_6;
-let closure_7;
+let error;
 const require = arg1;
 function SyncedLoadingAlertModal(onConfirm) {
+  let c1;
   let confirmText;
   let content;
   let onCancel;
   let title;
+  let tmp2;
   onConfirm = onConfirm.onConfirm;
+  let dependencyMap;
   ({ title, content, confirmText, onCancel } = onConfirm);
-  const tmp = callback2(React.useState(false), 2);
-  const first = tmp[0];
-  const dependencyMap = tmp[1];
-  let obj = { title, content };
-  obj = {};
-  obj = {
-    variant: "primary",
-    text: confirmText,
-    onPress: callback(async () => {
-      outer1_1(true);
-      yield outer1_0();
-      outer1_1(false);
-    }),
-    loading: first
-  };
-  const items = [callback3(onConfirm(4510).AlertActionButton, obj), ];
-  const obj1 = { variant: "secondary" };
-  const intl = onConfirm(1212).intl;
-  obj1.text = intl.string(onConfirm(1212).t["ETE/oC"]);
-  obj1.onPress = onCancel;
-  obj1.loading = first;
-  items[1] = callback3(onConfirm(4510).AlertActionButton, obj1);
-  obj.children = items;
-  obj.actions = callback4(closure_6, obj);
-  return callback3(onConfirm(4510).AlertModal, obj);
+  [tmp2, c1] = callback2(React.useState(false), 2);
+  let obj = { title, content, actions: null };
+  obj = { children: null };
+  obj = { variant: "primary", text: confirmText, onPress: null, loading: null };
+  obj[2] = callback(function*() {
+    if (c4 === 2) {
+      c4 = 3;
+      HermesBuiltin.throwTypeError();
+    } else if (tmp6 === 3) {
+      if (arg0 === 1) {
+        throw arg1;
+      } else if (arg0 === 2) {
+        let obj = { value: null, done: true };
+        obj[0] = arg1;
+        return obj;
+      } else {
+        return { value: "HermesInternal", done: null };
+      }
+    } else {
+      try {
+        c4 = 2;
+        if (0 === v0) {
+          if (arg0 === 1) {
+            c4 = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            c4 = 3;
+            obj = { value: null, done: true };
+            obj[0] = arg1;
+            return obj;
+          } else {
+            let closure_0 = tmp3;
+            v0(true);
+            let c3 = 1;
+            v0 = 2;
+            c4 = 1;
+            const obj1 = { value: null, done: false };
+            obj1[0] = outer1_0();
+            return obj1;
+          }
+        } else if (1 === tmp7) {
+          c3 = 0;
+          v0(false);
+          throw getSystemLocale;
+        } else if (arg0 === 1) {
+          c4 = 3;
+          throw arg1;
+        } else if (arg0 === 2) {
+          c3 = 0;
+          v0(false);
+          c4 = 3;
+          obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
+        } else {
+          c3 = 0;
+          v0(false);
+          c4 = 3;
+          return { value: "HermesInternal", done: null };
+        }
+      } catch (tmp22) {
+        getSystemLocale = tmp22;
+        if (tmp4 === c3) {
+          c4 = tmp2;
+          throw tmp22;
+        } else {
+          v0 = tmp;
+        }
+      }
+    }
+  });
+  obj[3] = tmp2;
+  const items = [callback3(onConfirm(4533).AlertActionButton, obj), ];
+  let obj1 = { variant: "secondary", text: null, onPress: null, loading: null };
+  const intl = onConfirm(1236).intl;
+  obj1[1] = intl.string(onConfirm(1236).t["ETE/oC"]);
+  obj1[2] = onCancel;
+  obj1[3] = tmp2;
+  items[1] = callback3(onConfirm(4533).AlertActionButton, obj1);
+  obj[0] = items;
+  obj[2] = callback4(closure_6, obj);
+  return callback3(onConfirm(4533).AlertModal, obj);
 }
-function showRetryConfirmModal(dismissable) {
+({ jsx: c5, Fragment: closure_6, jsxs: error } = jsxProd);
+const result = require("noop").fileFinishedImporting("modules/checkout/native/showCheckoutOrderErrorModal.tsx");
+
+export const showRetryConfirmModal = function showRetryConfirmModal(dismissable) {
   let key;
   let onCloseCallback;
   ({ key, onCloseCallback } = dismissable);
-  let obj = { key: 0, onCloseCallback: 0, dismissable: 0 };
-  Object.setPrototypeOf(null);
-  const merged = Object.assign(dismissable, obj);
+  const merged = Object.assign(dismissable, Object.create(null));
+  let obj = require(4530) /* useAlertStore */;
   obj = {};
   const merged1 = Object.assign(merged);
   obj = { dismissable: dismissable.dismissable };
-  require(4507) /* useAlertStore */.openAlert(key, callback3(SyncedLoadingAlertModal, obj), onCloseCallback, obj);
-}
-({ jsx: closure_5, Fragment: closure_6, jsxs: closure_7 } = jsxProd);
-const result = require("result").fileFinishedImporting("modules/checkout/native/showCheckoutOrderErrorModal.tsx");
-
-export { showRetryConfirmModal };
-export const showCheckoutOrderErrorModal = function showCheckoutOrderErrorModal(arg0, arg1) {
+  obj.openAlert(key, callback3(SyncedLoadingAlertModal, obj), onCloseCallback, obj);
+};
+export const showCheckoutOrderErrorModal = function showCheckoutOrderErrorModal(arg0, c5) {
   let closure_0 = arg0;
-  let closure_1 = arg1;
+  let closure_1 = c5;
   return new Promise((arg0) => {
-    const callback = arg0;
-    const obj = { key: "checkout-order-error" };
-    const intl = callback(1212).intl;
-    obj.title = intl.string(callback(1212).t.zrhHH3);
-    const intl2 = callback(1212).intl;
-    obj.content = intl2.string(callback(1212).t.PjfUXe);
-    const intl3 = callback(1212).intl;
-    obj.confirmText = intl3.string(callback(1212).t["7NqTJn"]);
-    const dependencyMap = outer1_2(async () => {
-      outer1_0(yield closure_0());
+    let key;
+    let onCloseCallback;
+    let callback = arg0;
+    let obj = { key: "checkout-order-error", title: null, content: null, confirmText: null, onConfirm: null, onCancel: null, dismissable: false };
+    const intl = callback(1236).intl;
+    obj[1] = intl.string(callback(1236).t.zrhHH3);
+    const intl2 = callback(1236).intl;
+    obj[2] = intl2.string(callback(1236).t.PjfUXe);
+    const intl3 = callback(1236).intl;
+    obj[3] = intl3.string(callback(1236).t["7NqTJn"]);
+    const dependencyMap = outer1_2(function*() {
+      if (c3 === 2) {
+        c3 = 3;
+        HermesBuiltin.throwTypeError();
+      } else if (tmp4 === 3) {
+        if (arg0 === 1) {
+          throw arg1;
+        } else if (arg0 === 2) {
+          let obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
+        } else {
+          return { value: "HermesInternal", done: null };
+        }
+      } else {
+        try {
+          c3 = 2;
+          if (0 === c2) {
+            if (arg0 === 1) {
+              c3 = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              c3 = 3;
+              obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            } else {
+              let closure_1 = tmp5;
+              let callback = tmp2;
+              callback = undefined;
+              c2 = 1;
+              c3 = 1;
+              const obj1 = { value: null, done: false };
+              obj1[0] = outer1_0();
+              return obj1;
+            }
+          } else if (arg0 === 1) {
+            c3 = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            c3 = 3;
+            obj = { value: null, done: true };
+            obj[0] = arg1;
+            return obj;
+          } else {
+            callback = arg1;
+            callback(callback);
+            c3 = 3;
+            return { value: "HermesInternal", done: null };
+          }
+        } catch (tmp12) {
+          c3 = tmp;
+          throw tmp12;
+        }
+      }
     });
-    obj.onConfirm = function() {
-      return callback2(...arguments);
+    obj[4] = function() {
+      const self = this;
+      const apply = closure_1.apply;
+      if (typeof apply === "unknown") {
+        let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+      } else {
+        applyArgumentsResult = apply(self, arguments);
+      }
+      return applyArgumentsResult;
     };
-    obj.onCancel = function onCancel() {
-      if (null != callback2) {
-        callback2();
+    obj[5] = function onCancel() {
+      if (closure_1 != null) {
+        tmp();
       }
       callback(undefined);
     };
-    obj.dismissable = false;
-    outer1_9(obj);
+    ({ key, onCloseCallback } = obj);
+    const merged = Object.assign(obj, Object.create(null));
+    obj = {};
+    const merged1 = Object.assign(merged);
+    obj = { dismissable: obj.dismissable };
+    callback(4530).openAlert(key, outer1_5(outer1_8, obj), onCloseCallback, obj);
   });
 };

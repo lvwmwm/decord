@@ -1,71 +1,71 @@
-// Module ID: 15758
-// Function ID: 121372
-// Name: nativeEventEmitter
-// Dependencies: [31, 27, 4026, 10665, 2]
+// Module ID: 15793
+// Function ID: 15794
+// Name: useLaunchPadPullTabMinimized
+// Dependencies: [19, 17, 4050, 10689, 2]
 // Exports: default
 
-// Module 15758 (nativeEventEmitter)
-import result from "result";
+// Module 15793 (useLaunchPadPullTabMinimized)
+import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 
 const require = arg1;
-const NativeEventEmitter = get_ActivityIndicator.NativeEventEmitter;
 const DCDScrollTracker = get_ActivityIndicator.NativeModules.DCDScrollTracker;
-let nativeEventEmitter;
+let tmp3;
 if (DCDScrollTracker) {
-  const prototype = NativeEventEmitter.prototype;
-  nativeEventEmitter = new NativeEventEmitter(DCDScrollTracker);
+  tmp3 = new tmp3(DCDScrollTracker);
 }
+let c3 = tmp3;
 let closure_4 = { code: "function useLaunchPadPullTabMinimizedTsx1(){const{launchPadPullTabState,isVoicePanelOpen,launchPadSharedState,isMinimizedDuringScroll}=this.__closure;const isMinimized=(launchPadPullTabState.get().minimized||isVoicePanelOpen)&&launchPadSharedState.get()<=0;return isMinimized||isMinimizedDuringScroll.get();}" };
-let result = require("module_4026").fileFinishedImporting("modules/launchpad/native/useLaunchPadPullTabMinimized.tsx");
+let result = require("module_4050").fileFinishedImporting("modules/launchpad/native/useLaunchPadPullTabMinimized.tsx");
 
 export default function useLaunchPadPullTabMinimized(launchPadSharedState) {
   launchPadSharedState = launchPadSharedState.launchPadSharedState;
-  const launchPadPullTabState = launchPadSharedState.launchPadPullTabState;
-  const isVoicePanelFullscreen = launchPadSharedState(launchPadPullTabState[3]).useIsVoicePanelFullscreen();
-  const tmp2 = (function useIsMinimizedDuringScroll() {
-    const sharedValue = launchPadSharedState(launchPadPullTabState[2]).useSharedValue(false);
-    const items = [sharedValue];
-    const effect = isVoicePanelFullscreen.useEffect(() => {
-      let c0 = -1;
-      let addListenerResult;
-      if (null != closure_3) {
-        addListenerResult = closure_3.addListener("isScrollingOrDragging", (isScrollingOrDragging) => {
-          clearTimeout(timeout);
-          if (isScrollingOrDragging.isScrollingOrDragging) {
-            let result = v1.set(true);
-          } else {
-            const _setTimeout = setTimeout;
-            timeout = setTimeout(() => {
-              const result = c0.set(false);
-            }, 1000);
-          }
-        });
-      }
-      let closure_1 = addListenerResult;
-      return () => {
-        clearTimeout(c0);
-        if (null != addListenerResult) {
-          addListenerResult.remove();
+  let sharedValue = launchPadSharedState;
+  let launchPadPullTabState = launchPadSharedState.launchPadPullTabState;
+  let isVoicePanelFullscreen;
+  sharedValue = undefined;
+  isVoicePanelFullscreen = sharedValue(launchPadPullTabState[3]).useIsVoicePanelFullscreen();
+  sharedValue = undefined;
+  const obj = sharedValue(launchPadPullTabState[3]);
+  sharedValue = sharedValue(launchPadPullTabState[2]).useSharedValue(false);
+  const items = [sharedValue];
+  const effect = isVoicePanelFullscreen.useEffect(() => {
+    let c0 = -1;
+    let addListenerResult;
+    if (sharedValue != null) {
+      addListenerResult = sharedValue.addListener("isScrollingOrDragging", (isScrollingOrDragging) => {
+        clearTimeout(timeout);
+        if (isScrollingOrDragging.isScrollingOrDragging) {
+          let result = v1.set(true);
+        } else {
+          const _setTimeout = setTimeout;
+          timeout = setTimeout(() => {
+            const result = closure_0.set(false);
+          }, 1000);
         }
-      };
-    }, items);
-    return sharedValue;
-  })();
-  const nativeEventEmitter = tmp2;
-  const obj = launchPadSharedState(launchPadPullTabState[3]);
+      });
+    }
+    const launchPadPullTabState = addListenerResult;
+    return () => {
+      clearTimeout(c0);
+      if (closure_1 != null) {
+        closure_1.remove();
+      }
+    };
+  }, items);
+  const obj2 = sharedValue(launchPadPullTabState[2]);
   const fn = function u() {
     let value = launchPadPullTabState.get().minimized || isVoicePanelFullscreen;
     if (value) {
-      value = launchPadSharedState.get() <= 0;
+      value = sharedValue.get() <= 0;
     }
     if (!value) {
-      value = tmp2.get();
+      value = sharedValue.get();
     }
     return value;
   };
-  fn.__closure = { launchPadPullTabState, isVoicePanelOpen: isVoicePanelFullscreen, launchPadSharedState, isMinimizedDuringScroll: tmp2 };
+  fn.__closure = { launchPadPullTabState, isVoicePanelOpen: isVoicePanelFullscreen, launchPadSharedState, isMinimizedDuringScroll: sharedValue };
   fn.__workletHash = 14263056934448;
   fn.__initData = closure_4;
-  return launchPadSharedState(launchPadPullTabState[2]).useDerivedValue(fn);
+  return sharedValue(launchPadPullTabState[2]).useDerivedValue(fn);
 };

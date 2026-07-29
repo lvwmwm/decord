@@ -1,63 +1,102 @@
-// Module ID: 9483
-// Function ID: 73865
+// Module ID: 9507
+// Function ID: 9508
 // Name: canSeeChannelSummaries
-// Dependencies: [1391, 1838, 653, 1355, 1841, 624, 2]
-// Exports: channelEligibleForSummaries, useChannelSummariesExperiment, useGuildEligibleForSummaries
+// Dependencies: [1415, 1862, 676, 1379, 1865, 647, 2]
+// Exports: canGuildUseConversationSummaries, channelEligibleForSummaries, useChannelSummariesExperiment, useGuildEligibleForSummaries
 
-// Module 9483 (canSeeChannelSummaries)
-import { isGuildNSFW } from "isGuildOwner";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+// Module 9507 (canSeeChannelSummaries)
+import { isGuildNSFW } from "GuildNSFWContentLevel";
+import createGuildRecordFromRust from "createGuildRecordFromRust";
 import ME from "ME";
 import { ChannelFlags } from "set";
 
-let closure_4;
-let closure_5;
+let c4;
+let c5;
 let closure_6;
-let closure_7;
-function canSeeChannelSummaries(channel, flag, flag2) {
+let error;
+function canSeeChannelSummaries(channel, flag, arg2) {
   if (flag === undefined) {
     flag = false;
   }
-  if (flag2 === undefined) {
+  let flag2 = arg2;
+  if (arg2 === undefined) {
     flag2 = true;
   }
   let tmp = null != channel;
   if (tmp) {
     let flag4 = false;
     if (null != channel) {
-      let guild_id;
-      if (null != channel) {
-        guild_id = channel.guild_id;
+      let str;
+      if (channel != null) {
+        str = channel.guild_id;
       }
-      let str = "";
-      if (null != guild_id) {
-        str = guild_id;
+      if (str == null) {
+        str = "";
       }
       const guild = store.getGuild(str);
       const SUMMARIZEABLE = constants.SUMMARIZEABLE;
-      const tmp5 = null != guild && guild.rulesChannelId === channel.id;
-      const tmp7 = isGuildNSFW(guild);
+      const tmp4 = null != guild && guild.rulesChannelId === channel.id;
+      const tmp6 = isGuildNSFW(guild);
       flag4 = SUMMARIZEABLE.has(channel.type) && !channel.isNSFW() && !(null != guild && guild.rulesChannelId === channel.id) && !isGuildNSFW(guild);
-      const tmp9 = SUMMARIZEABLE.has(channel.type) && !channel.isNSFW() && !(null != guild && guild.rulesChannelId === channel.id) && !isGuildNSFW(guild);
+      const tmp8 = SUMMARIZEABLE.has(channel.type) && !channel.isNSFW() && !(null != guild && guild.rulesChannelId === channel.id) && !isGuildNSFW(guild);
     }
-    let tmp11 = !tmp10;
-    if (!!flag4) {
-      let tmp12 = false !== flag;
-      if (!tmp12) {
-        tmp12 = !channel.hasFlag(ChannelFlags.SUMMARIES_DISABLED);
+    let tmp9 = flag4;
+    if (tmp9) {
+      let tmp10 = false !== flag;
+      if (!tmp10) {
+        tmp10 = !channel.hasFlag(ChannelFlags.SUMMARIES_DISABLED);
       }
-      if (tmp12) {
-        tmp12 = canGuildUseConversationSummaries(store.getGuild(channel.guild_id), flag2);
+      if (tmp10) {
+        const guild1 = store.getGuild(channel.guild_id);
+        if (flag2 === undefined) {
+          flag2 = true;
+        }
+        let tmp14 = null != guild1;
+        if (tmp14) {
+          const id = guild1.id;
+          let tmp15 = null != id;
+          if (tmp15) {
+            let isFavoritesGuildIdResult = id === closure_4;
+            if (!isFavoritesGuildIdResult) {
+              isFavoritesGuildIdResult = require(1865) /* getFavoritesAwareGuildName */.isFavoritesGuildId(id);
+              const obj = require(1865) /* getFavoritesAwareGuildName */;
+            }
+            tmp15 = isFavoritesGuildIdResult;
+          }
+          let tmp20 = !tmp15;
+          if (!tmp15) {
+            const features = guild1.features;
+            let hasItem = features.has(constants2.SUMMARIES_ENABLED_GA);
+            if (hasItem) {
+              hasItem = !flag2;
+              if (flag2) {
+                const features2 = guild1.features;
+                hasItem = features2.has(tmp21.SUMMARIES_ENABLED_BY_USER);
+              }
+            }
+            tmp20 = hasItem;
+            tmp21 = constants2;
+          }
+          tmp14 = tmp20;
+        }
+        tmp10 = tmp14;
       }
-      tmp11 = tmp12;
+      tmp9 = tmp10;
     }
-    tmp = tmp11;
+    tmp = tmp9;
   }
   return tmp;
 }
-function canGuildUseConversationSummaries(guild, flag2) {
-  let flag = flag2;
-  if (flag2 === undefined) {
+({ ME: c4, ChannelTypesSets: c5, GuildFeatures: closure_6, EMPTY_STRING_SNOWFLAKE_ID: error } = ME);
+const result = require("ME").fileFinishedImporting("experiments/ChannelSummariesExperiment.tsx");
+
+export const channelEligibleForSummaries = function channelEligibleForSummaries(channel) {
+  return canSeeChannelSummaries(channel, true, false);
+};
+export { canSeeChannelSummaries };
+export const canGuildUseConversationSummaries = function canGuildUseConversationSummaries(guild, arg1) {
+  let flag = arg1;
+  if (arg1 === undefined) {
     flag = true;
   }
   let tmp = null != guild;
@@ -67,38 +106,29 @@ function canGuildUseConversationSummaries(guild, flag2) {
     if (tmp2) {
       let isFavoritesGuildIdResult = id === closure_4;
       if (!isFavoritesGuildIdResult) {
-        isFavoritesGuildIdResult = require(1841) /* isFavoritesGuildId */.isFavoritesGuildId(id);
-        const obj = require(1841) /* isFavoritesGuildId */;
+        isFavoritesGuildIdResult = require(1865) /* getFavoritesAwareGuildName */.isFavoritesGuildId(id);
+        const obj = require(1865) /* getFavoritesAwareGuildName */;
       }
       tmp2 = isFavoritesGuildIdResult;
     }
     let tmp7 = !tmp2;
-    if (tmp7) {
+    if (!tmp2) {
       const features = guild.features;
-      const tmp9 = !features.has(constants2.SUMMARIES_ENABLED_GA);
-      let tmp10 = !tmp9;
-      if (!tmp9) {
-        let hasItem = !flag;
-        if (!hasItem) {
+      let hasItem = features.has(constants2.SUMMARIES_ENABLED_GA);
+      if (hasItem) {
+        hasItem = !flag;
+        if (flag) {
           const features2 = guild.features;
-          hasItem = features2.has(constants2.SUMMARIES_ENABLED_BY_USER);
+          hasItem = features2.has(tmp8.SUMMARIES_ENABLED_BY_USER);
         }
-        tmp10 = hasItem;
       }
-      tmp7 = tmp10;
+      tmp7 = hasItem;
+      tmp8 = constants2;
     }
     tmp = tmp7;
   }
   return tmp;
-}
-({ ME: closure_4, ChannelTypesSets: closure_5, GuildFeatures: closure_6, EMPTY_STRING_SNOWFLAKE_ID: closure_7 } = ME);
-const result = require("ME").fileFinishedImporting("experiments/ChannelSummariesExperiment.tsx");
-
-export const channelEligibleForSummaries = function channelEligibleForSummaries(channel) {
-  return canSeeChannelSummaries(channel, true, false);
 };
-export { canSeeChannelSummaries };
-export { canGuildUseConversationSummaries };
 export const useChannelSummariesExperiment = function useChannelSummariesExperiment(channel, arg1, flag) {
   if (flag === undefined) {
     flag = false;
@@ -107,16 +137,41 @@ export const useChannelSummariesExperiment = function useChannelSummariesExperim
 };
 export const useGuildEligibleForSummaries = function useGuildEligibleForSummaries(arg0) {
   const _require = arg0;
-  const items = [_createForOfIteratorHelperLoose];
+  const items = [createGuildRecordFromRust];
   const items1 = [arg0];
-  return _require(624).useStateFromStores(items, () => {
+  return _require(647).useStateFromStores(items, () => {
     let id;
-    if (null != id) {
-      id = id.id;
+    if (lib != null) {
+      id = lib.id;
     }
-    if (null == id) {
+    if (id == null) {
       id = outer1_7;
     }
-    return outer1_10(outer1_3.getGuild(id), false);
+    const guild = outer1_3.getGuild(id);
+    let tmp4 = null != guild;
+    if (tmp4) {
+      id = guild.id;
+      let tmp5 = null != id;
+      if (tmp5) {
+        let isFavoritesGuildIdResult = id === outer1_4;
+        if (!isFavoritesGuildIdResult) {
+          isFavoritesGuildIdResult = lib(outer1_1[4]).isFavoritesGuildId(id);
+          const obj = lib(outer1_1[4]);
+        }
+        tmp5 = isFavoritesGuildIdResult;
+      }
+      let tmp10 = !tmp5;
+      if (!tmp5) {
+        const features = guild.features;
+        let hasItem = features.has(outer1_6.SUMMARIES_ENABLED_GA);
+        if (hasItem) {
+          // // eliminated: always false
+          hasItem = flag2;
+        }
+        tmp10 = hasItem;
+      }
+      tmp4 = tmp10;
+    }
+    return tmp4;
   }, items1);
 };

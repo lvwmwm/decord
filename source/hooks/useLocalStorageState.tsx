@@ -1,41 +1,41 @@
-// Module ID: 10705
-// Function ID: 83230
+// Module ID: 10729
+// Function ID: 10730
 // Name: useLocalStorageState
-// Dependencies: [57, 31, 587, 4594, 2]
+// Dependencies: [32, 19, 595, 4616, 2]
 // Exports: useLocalStorageState
 
-// Module 10705 (useLocalStorageState)
+// Module 10729 (useLocalStorageState)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
+import noop from "noop";
 
 const require = arg1;
 let result = require("Storage").fileFinishedImporting("hooks/useLocalStorageState.tsx");
 
-export const useLocalStorageState = function useLocalStorageState(arg0, arg1) {
-  let closure_0 = arg0;
+export const useLocalStorageState = function useLocalStorageState(c2, arg1) {
+  let closure_0 = c2;
   const importDefault = arg1;
   const tmp = callback(React.useState(() => {
-    const Storage = callback(587).Storage;
-    let value = Storage.get(callback);
+    const Storage = c2(595).Storage;
+    let value = Storage.get(c2);
     if (null == value) {
       value = closure_1;
     }
     return value;
   }), 2);
   const dependencyMap = tmp[1];
-  importDefault(4594)(() => {
-    const Storage = callback(587).Storage;
-    if (null == Storage.get(callback)) {
-      const Storage2 = callback(587).Storage;
-      const result = Storage2.set(callback, closure_1);
+  importDefault(4616)(() => {
+    const Storage = c2(595).Storage;
+    if (null == Storage.get(c2)) {
+      const Storage2 = c2(595).Storage;
+      const result = Storage2.set(c2, closure_1);
     }
   });
   const items = [tmp[0], ];
-  const items1 = [arg0];
+  const items1 = [c2];
   items[1] = React.useCallback((arg0) => {
     dependencyMap(arg0);
-    const Storage = callback(587).Storage;
-    const result = Storage.set(callback, arg0);
+    const Storage = c2(595).Storage;
+    const result = Storage.set(c2, arg0);
   }, items1);
   return items;
 };

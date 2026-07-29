@@ -1,12 +1,12 @@
-// Module ID: 12582
-// Function ID: 97221
+// Module ID: 12604
+// Function ID: 12605
 // Name: getGiftingBadgeProgressPercent
-// Dependencies: [8085, 1850, 8747, 12583, 566, 3981, 1334, 2]
+// Dependencies: [8109, 1874, 8771, 12605, 589, 4005, 1358, 2]
 // Exports: getGiftingBadgeProgressPercent, getIsGiftingBadgesDesktopEnabled, useIsEligibleToShowGiftingBadgeCoachmark, useIsGiftingBadgesDesktopEnabled
 
-// Module 12582 (getGiftingBadgeProgressPercent)
-import { getSingleRequirementThreshold as closure_2 } from "_isNativeReflectConstruct";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 12604 (getGiftingBadgeProgressPercent)
+import { getSingleRequirementThreshold as closure_2 } from "map";
+import mergeGuildAvatar from "mergeGuildAvatar";
 
 let result = require("apexExperiment").fileFinishedImporting("modules/premium/gifting/GiftingBadgesUtils.tsx");
 
@@ -29,65 +29,66 @@ export const getGiftingBadgeProgressPercent = function getGiftingBadgeProgressPe
   return Math.min(Math.max(num3, 0), 100);
 };
 export const useIsGiftingBadgesDesktopEnabled = function useIsGiftingBadgesDesktopEnabled(location) {
-  const GiftingBadgeExperiment = require(8747) /* apexExperiment */.GiftingBadgeExperiment;
+  const GiftingBadgeExperiment = require(8771) /* apexExperiment */.GiftingBadgeExperiment;
   let obj = { location };
   const enabled = GiftingBadgeExperiment.useConfig(obj).enabled;
-  const GiftingBadgeDesktopExperiment = require(12583) /* apexExperiment */.GiftingBadgeDesktopExperiment;
-  obj = {};
+  const GiftingBadgeDesktopExperiment = require(12605) /* apexExperiment */.GiftingBadgeDesktopExperiment;
   let str = "-DISABLED";
   if (enabled) {
     str = "";
   }
-  obj.location = "" + location + str;
+  obj = { location: "" + location + str };
   return GiftingBadgeDesktopExperiment.useConfig(obj).enabled && enabled;
 };
 export const getIsGiftingBadgesDesktopEnabled = function getIsGiftingBadgesDesktopEnabled(location) {
-  const GiftingBadgeExperiment = require(8747) /* apexExperiment */.GiftingBadgeExperiment;
+  const GiftingBadgeExperiment = require(8771) /* apexExperiment */.GiftingBadgeExperiment;
   let obj = { location };
-  const tmp = !GiftingBadgeExperiment.getConfig(obj).enabled;
-  let enabled = !tmp;
-  if (!tmp) {
-    const GiftingBadgeDesktopExperiment = require(12583) /* apexExperiment */.GiftingBadgeDesktopExperiment;
-    obj = { location };
+  let enabled = GiftingBadgeExperiment.getConfig(obj).enabled;
+  if (enabled) {
+    const GiftingBadgeDesktopExperiment = require(12605) /* apexExperiment */.GiftingBadgeDesktopExperiment;
+    obj = { location: null };
+    obj[0] = location;
     enabled = GiftingBadgeDesktopExperiment.getConfig(obj).enabled;
   }
   return enabled;
 };
 export const useIsEligibleToShowGiftingBadgeCoachmark = function useIsEligibleToShowGiftingBadgeCoachmark(location) {
   const _location = location.location;
-  const GiftingBadgeExperiment = require(8747) /* apexExperiment */.GiftingBadgeExperiment;
+  const GiftingBadgeExperiment = require(8771) /* apexExperiment */.GiftingBadgeExperiment;
   const enabled = GiftingBadgeExperiment.useConfig({ location: _location }).enabled;
-  const GiftingBadgeDesktopExperiment = require(12583) /* apexExperiment */.GiftingBadgeDesktopExperiment;
-  const obj = {};
+  const GiftingBadgeDesktopExperiment = require(12605) /* apexExperiment */.GiftingBadgeDesktopExperiment;
   let str = "-DISABLED";
   if ("web" === location.platform) {
     str = "";
   }
-  obj.location = "" + _location + str;
-  let enabled2 = GiftingBadgeDesktopExperiment.useConfig(obj).enabled;
-  let tmp2 = enabled;
+  let enabled2 = GiftingBadgeDesktopExperiment.useConfig({ location: "" + _location + str }).enabled;
+  let tmp4 = enabled;
   if ("web" === location.platform) {
     if (enabled2) {
       enabled2 = enabled;
     }
-    tmp2 = enabled2;
+    tmp4 = enabled2;
   }
-  const items = [_isNativeReflectConstruct];
-  const stateFromStores = require(566) /* initialize */.useStateFromStores(items, () => {
-    const currentUser = outer1_3.getCurrentUser();
-    let hasHadPremiumResult;
-    if (null != currentUser) {
-      hasHadPremiumResult = currentUser.hasHadPremium();
+  let tmpResult = tmp(589);
+  const items = [mergeGuildAvatar];
+  const stateFromStores = tmpResult.useStateFromStores(items, () => {
+    currentUser = currentUser.getCurrentUser();
+    let flag;
+    if (currentUser != null) {
+      flag = currentUser.hasHadPremium();
     }
-    return null != hasHadPremiumResult && hasHadPremiumResult;
+    if (flag == null) {
+      flag = false;
+    }
+    return flag;
   });
-  const obj2 = require(566) /* initialize */;
-  const result = require(3981) /* UNSAFE_isDismissibleContentDismissed */.useIsDismissibleContentDismissed_UNSAFE(require(1334) /* DismissibleContent */.DismissibleContent.NEW_GIFTING_BADGES_COACHMARK);
-  if (tmp2) {
-    tmp2 = stateFromStores;
+  tmpResult = tmp(4005);
+  const result = tmpResult.useIsDismissibleContentDismissed_UNSAFE(tmp(1358).DismissibleContent.NEW_GIFTING_BADGES_COACHMARK);
+  if (tmp4) {
+    tmp4 = stateFromStores;
   }
-  if (tmp2) {
-    tmp2 = !result;
+  if (tmp4) {
+    tmp4 = !result;
   }
-  return tmp2;
+  return tmp4;
 };

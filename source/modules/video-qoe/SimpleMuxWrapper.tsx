@@ -1,81 +1,76 @@
-// Module ID: 14140
-// Function ID: 108130
+// Module ID: 14162
+// Function ID: 14163
 // Name: logger
-// Dependencies: [6, 7, 4, 14141, 14142, 14143, 2]
+// Dependencies: [4, 14163, 14164, 14165, 2]
 
-// Module 14140 (logger)
-import set from "set";
-import _defineProperties from "_defineProperties";
-
-const require = arg1;
-const logger = new require("MuxIntegration").Logger("SimpleMuxWrapper");
-const tmp3 = (() => {
-  class SimpleMuxWrapper {
-    constructor(arg0) {
-      tmp = outer1_3(this, SimpleMuxWrapper);
-      this.isMonitoring = false;
-      this.config = arg0;
-      this.videoElement = arg0.videoElement;
-      SessionManager = SimpleMuxWrapper(outer1_2[3]).SessionManager;
-      this.sessionId = SessionManager.generateSessionId();
-      this.hlsInstance = arg0.hlsInstance;
-      return;
+// Module 14162 (logger)
+const logger = new require("set").Logger("SimpleMuxWrapper");
+const result = require("mapDiscordToMuxMetadata").fileFinishedImporting("modules/video-qoe/SimpleMuxWrapper.tsx");
+class SimpleMuxWrapper {
+  constructor(arg0) {
+    obj = Object.create(new.target.prototype);
+    obj.config = global;
+    obj.videoElement = global.videoElement;
+    SessionManager = require("generateSessionId").SessionManager;
+    obj.sessionId = SessionManager.generateSessionId();
+    obj.hlsInstance = global.hlsInstance;
+    return obj;
+  }
+}
+const prototype = SimpleMuxWrapper.prototype;
+prototype["initialize"] = function initialize() {
+  const self = this;
+  let flag = this.config.debug;
+  if (flag == null) {
+    flag = false;
+  }
+  const obj = { debug: flag, disableCookies: true, respectDoNotTrack: true, data: null };
+  const MuxIntegration = require(14164) /* mapDiscordToMuxMetadata */.MuxIntegration;
+  obj[3] = MuxIntegration.mapDiscordToMuxMetadata(self.config, self.sessionId);
+  if (null != self.hlsInstance) {
+    obj.hlsjs = self.hlsInstance;
+    obj.Hls = self.hlsInstance.constructor;
+  }
+  try {
+    importDefault(14165).monitor(self.videoElement, obj);
+    self.isMonitoring = true;
+  } catch (tmp5) {
+    logger.error("Error creating Mux monitor", tmp5);
+    tmp.isMonitoring = false;
+  }
+};
+prototype["endSession"] = function endSession() {
+  const self = this;
+  if (this.isMonitoring) {
+    try {
+      if (typeof importDefault(14165).destroyMonitor !== "_") {
+        tmp(14165).destroyMonitor(self.videoElement);
+        const tmpResult = tmp(14165);
+      }
+      self.isMonitoring = false;
+      tmp = importDefault;
+    } catch (tmp3) {
+      logger.error("Error ending Mux session", tmp3);
     }
   }
-  let obj = {
-    key: "initialize",
-    value() {
-      const self = this;
-      const obj = { debug: null, disableCookies: true, respectDoNotTrack: true };
-      const debug = this.config.debug;
-      obj.debug = null != debug && debug;
-      const MuxIntegration = SimpleMuxWrapper(outer1_2[4]).MuxIntegration;
-      obj.data = MuxIntegration.mapDiscordToMuxMetadata(self.config, self.sessionId);
-      if (null != self.hlsInstance) {
-        tmp.hlsjs = self.hlsInstance;
-        tmp.Hls = self.hlsInstance.constructor;
+};
+prototype["destroy"] = function destroy() {
+  const self = this;
+  if (this.isMonitoring) {
+    try {
+      if (typeof importDefault(14165).destroyMonitor !== "_") {
+        tmp(14165).destroyMonitor(self.videoElement);
+        const tmpResult = tmp(14165);
       }
-      outer1_1(outer1_2[5]).monitor(self.videoElement, obj);
-      self.isMonitoring = true;
+      self.isMonitoring = false;
+      tmp = importDefault;
+    } catch (tmp3) {
+      logger.error("Error destroying Mux monitor", tmp3);
     }
-  };
-  const items = [obj, , , ];
-  obj = {
-    key: "endSession",
-    value() {
-      const self = this;
-      if (this.isMonitoring) {
-        if ("function" === typeof outer1_1(outer1_2[5]).destroyMonitor) {
-          outer1_1(outer1_2[5]).destroyMonitor(self.videoElement);
-          const obj = outer1_1(outer1_2[5]);
-        }
-        self.isMonitoring = false;
-      }
-    }
-  };
-  items[1] = obj;
-  obj = {
-    key: "destroy",
-    value() {
-      const self = this;
-      if (this.isMonitoring) {
-        if ("function" === typeof outer1_1(outer1_2[5]).destroyMonitor) {
-          outer1_1(outer1_2[5]).destroyMonitor(self.videoElement);
-          const obj = outer1_1(outer1_2[5]);
-        }
-        self.isMonitoring = false;
-      }
-    }
-  };
-  items[2] = obj;
-  items[3] = {
-    key: "getSessionId",
-    value() {
-      return this.sessionId;
-    }
-  };
-  return callback(SimpleMuxWrapper, items);
-})();
-const result = require("log").fileFinishedImporting("modules/video-qoe/SimpleMuxWrapper.tsx");
+  }
+};
+prototype["getSessionId"] = function getSessionId() {
+  return this.sessionId;
+};
 
-export const SimpleMuxWrapper = tmp3;
+export { SimpleMuxWrapper };

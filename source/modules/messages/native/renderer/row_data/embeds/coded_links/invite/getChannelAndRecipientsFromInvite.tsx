@@ -1,11 +1,11 @@
-// Module ID: 9477
-// Function ID: 73782
+// Module ID: 9501
+// Function ID: 9502
 // Name: getChannelAndRecipientsFromInvite
-// Dependencies: [1352, 2]
+// Dependencies: [1376, 2]
 // Exports: default
 
-// Module 9477 (getChannelAndRecipientsFromInvite)
-import { createChannelRecordFromInvite as closure_0 } from "_callSuper";
+// Module 9501 (getChannelAndRecipientsFromInvite)
+import { createChannelRecordFromInvite as closure_0 } from "createChannelRecord";
 
 const result = require("set").fileFinishedImporting("modules/messages/native/renderer/row_data/embeds/coded_links/invite/getChannelAndRecipientsFromInvite.tsx");
 
@@ -15,15 +15,16 @@ export default function getChannelAndRecipientsFromInvite(channel) {
       const recipients = channel.channel.recipients;
       let substr = recipients.slice();
     }
-    let obj = { recipients_: substr };
+    let obj = { recipients_: null, channel: null };
+    obj[0] = substr;
     let tmp = null;
     if (null != channel.channel) {
       obj = {};
       const merged = Object.assign(channel.channel);
-      obj["recipients"] = substr;
+      obj.recipients = substr;
       tmp = callback(obj);
     }
-    obj.channel = tmp;
+    obj[1] = tmp;
     return obj;
   }
   substr = [];

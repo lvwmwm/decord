@@ -1,35 +1,33 @@
-// Module ID: 12832
-// Function ID: 99705
+// Module ID: 12854
+// Function ID: 12855
 // Name: OnGoingCallTimer
-// Dependencies: [31, 4844, 33, 566, 21, 12833, 2]
+// Dependencies: [19, 4866, 21, 589, 11, 12855, 2]
 // Exports: default
 
-// Module 12832 (OnGoingCallTimer)
-import "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 12854 (OnGoingCallTimer)
+import "noop";
+import callConnect from "callConnect";
 import { jsx } from "jsxProd";
 
 const require = arg1;
 const result = require("jsxProd").fileFinishedImporting("modules/voice_calls/native/components/OngoingCallTimer.tsx");
 
-export default function OnGoingCallTimer(channelId) {
-  channelId = channelId.channelId;
-  let obj = channelId(566);
-  const items = [_isNativeReflectConstruct];
+export default function OnGoingCallTimer(style) {
+  const channelId = style.channelId;
+  const items = [callConnect];
   const items1 = [channelId];
-  const stateFromStores = obj.useStateFromStores(items, () => {
+  const stateFromStores = channelId(589).useStateFromStores(items, () => {
     const call = outer1_3.getCall(channelId);
     let messageId;
-    if (null != call) {
+    if (call != null) {
       messageId = call.messageId;
     }
     return messageId;
   }, items1);
-  let num = 0;
+  let timestamp = 0;
   if (null != stateFromStores) {
-    num = importDefault(21).extractTimestamp(stateFromStores);
-    const obj2 = importDefault(21);
+    timestamp = importDefault(11).extractTimestamp(stateFromStores);
+    const obj2 = importDefault(11);
   }
-  obj = { style: channelId.style, timestamp: num };
-  return jsx(importDefault(12833), { style: channelId.style, timestamp: num });
+  return jsx(importDefault(12855), { style: style.style, timestamp });
 };

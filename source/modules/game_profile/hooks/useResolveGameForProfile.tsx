@@ -1,53 +1,53 @@
-// Module ID: 8454
-// Function ID: 67311
+// Module ID: 8478
+// Function ID: 8479
 // Name: useResolveGameForProfile
-// Dependencies: [5503, 4336, 8455, 4337, 5888, 2]
+// Dependencies: [5521, 4360, 8479, 4361, 5906, 2]
 // Exports: default
 
-// Module 8454 (useResolveGameForProfile)
+// Module 8478 (useResolveGameForProfile)
 let result = require("useResolveGame").fileFinishedImporting("modules/game_profile/hooks/useResolveGameForProfile.tsx");
 
 export default function useResolveGameForProfile(arg0) {
   let applicationId;
   let gameId;
   ({ applicationId, gameId } = arg0);
-  let obj = require(5503) /* useGetOrFetchApplications */;
-  let tmp;
+  let obj = require(5521) /* useGetOrFetchApplications */;
+  let tmp3;
   if (null == gameId) {
-    tmp = applicationId;
+    tmp3 = applicationId;
   }
-  const getOrFetchApplication = obj.useGetOrFetchApplication(tmp);
+  const getOrFetchApplication = obj.useGetOrFetchApplication(tmp3);
   let result = null != getOrFetchApplication;
   if (result) {
-    result = require(4336) /* hasSubgameInfoChanged */.isRobloxSubgameApplication(getOrFetchApplication);
-    const obj2 = require(4336) /* hasSubgameInfoChanged */;
+    let tmpResult = tmp(4360);
+    result = tmpResult.isRobloxSubgameApplication(getOrFetchApplication);
   }
-  obj = { applicationId };
+  obj = { applicationId, gameId: null };
   if (result) {
-    gameId = require(4337) /* ROBLOX_PROTOCOL_URL */.ROBLOX_GAME_ID;
+    gameId = tmp(4361).ROBLOX_GAME_ID;
   }
-  obj.gameId = gameId;
-  let tmp6Result = importDefault(8455)(obj);
+  obj[1] = gameId;
+  let tmp6Result = importDefault(8479)(obj);
   let isRobloxSubgameGameResult = null != tmp6Result.gameRecord;
   if (isRobloxSubgameGameResult) {
-    isRobloxSubgameGameResult = require(4336) /* hasSubgameInfoChanged */.isRobloxSubgameGame(tmp6Result.gameRecord);
-    const obj4 = require(4336) /* hasSubgameInfoChanged */;
+    tmpResult = tmp(4360);
+    isRobloxSubgameGameResult = tmpResult.isRobloxSubgameGame(tmp6Result.gameRecord);
   }
-  const tmp6 = importDefault(8455);
+  const tmp6 = importDefault(8479);
   let ROBLOX_GAME_ID;
   if (isRobloxSubgameGameResult) {
-    ROBLOX_GAME_ID = require(4337) /* ROBLOX_PROTOCOL_URL */.ROBLOX_GAME_ID;
+    ROBLOX_GAME_ID = tmp(4361).ROBLOX_GAME_ID;
   }
-  const game = require(5888) /* importDefaultResult1 */.useGame(ROBLOX_GAME_ID);
-  const data = game.data;
+  const game = require(5906) /* importDefaultResult1 */.useGame(ROBLOX_GAME_ID);
+  let data = game.data;
   if (isRobloxSubgameGameResult) {
-    obj = { gameId: require(4337) /* ROBLOX_PROTOCOL_URL */.ROBLOX_GAME_ID };
-    let tmp20 = null;
-    if (null != data) {
-      tmp20 = data;
+    obj = { gameId: null, gameRecord: null, isLoading: null };
+    obj[0] = tmp(4361).ROBLOX_GAME_ID;
+    if (data == null) {
+      data = null;
     }
-    obj.gameRecord = tmp20;
-    obj.isLoading = tmp17;
+    obj[1] = data;
+    obj[2] = tmp12;
     tmp6Result = obj;
   }
   return tmp6Result;

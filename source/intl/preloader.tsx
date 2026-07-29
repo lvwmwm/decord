@@ -1,23 +1,71 @@
-// Module ID: 1934
-// Function ID: 21822
+// Module ID: 1958
+// Function ID: 1959
 // Name: _preloadAllIntlMessageFiles
-// Dependencies: [5, 1212, 1935, 1937, 1969, 2001, 2003, 2005, 2037, 2069, 2101, 2133, 2135, 2167, 2199, 2231, 2263, 2295, 2297, 2299, 2301, 2333, 2365, 2397, 2429, 2461, 2493, 2525, 2557, 2589, 2621, 2653, 2685, 2717, 2749, 2781, 2813, 2845, 2847, 2879, 2911, 2913, 2945, 2977, 3009, 3041, 3073, 3105, 3137, 3169, 3201, 3203, 3235, 3237, 2]
+// Dependencies: [5, 1236, 1959, 1961, 1993, 2025, 2027, 2029, 2061, 2093, 2125, 2157, 2159, 2191, 2223, 2255, 2287, 2319, 2321, 2323, 2325, 2357, 2389, 2421, 2453, 2485, 2517, 2549, 2581, 2613, 2645, 2677, 2709, 2741, 2773, 2805, 2837, 2869, 2871, 2903, 2935, 2937, 2969, 3001, 3033, 3065, 3097, 3129, 3161, 3193, 3225, 3227, 3259, 3261, 2]
 // Exports: preloadAllIntlMessageFiles
 
-// Module 1934 (_preloadAllIntlMessageFiles)
+// Module 1958 (_preloadAllIntlMessageFiles)
 import messagesProxy from "messagesProxy";
 
 const require = arg1;
-async function _preloadAllIntlMessageFiles() {
-  if (obj) {
-    return obj.resume();
+function _preloadAllIntlMessageFiles() {
+  const self = this;
+  const tmp = callback(function*() {
+    if (v0 === 2) {
+      v0 = 3;
+      HermesBuiltin.throwTypeError();
+    } else if (tmp3 === 3) {
+      if (arg0 === 1) {
+        throw arg1;
+      } else if (arg0 === 2) {
+        let obj = { value: null, done: true };
+        obj[0] = arg1;
+        return obj;
+      } else {
+        return { value: "HermesInternal", done: null };
+      }
+    } else {
+      try {
+        v0 = 2;
+        if (arg0 === 1) {
+          v0 = 3;
+          throw arg1;
+        } else if (arg0 === 2) {
+          v0 = 3;
+          obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
+        } else {
+          const items = [v0(outer1_1[2])(outer1_1[1], outer1_1.paths), v0(outer1_1[2])(outer1_1[3], outer1_1.paths), v0(outer1_1[2])(outer1_1[4], outer1_1.paths), v0(outer1_1[2])(outer1_1[5], outer1_1.paths), v0(outer1_1[2])(outer1_1[6], outer1_1.paths), v0(outer1_1[2])(outer1_1[7], outer1_1.paths), v0(outer1_1[2])(outer1_1[8], outer1_1.paths), v0(outer1_1[2])(outer1_1[9], outer1_1.paths), v0(outer1_1[2])(outer1_1[10], outer1_1.paths), v0(outer1_1[2])(outer1_1[11], outer1_1.paths), v0(outer1_1[2])(outer1_1[12], outer1_1.paths), v0(outer1_1[2])(outer1_1[13], outer1_1.paths), v0(outer1_1[2])(outer1_1[14], outer1_1.paths), v0(outer1_1[2])(outer1_1[15], outer1_1.paths), v0(outer1_1[2])(outer1_1[16], outer1_1.paths), v0(outer1_1[2])(outer1_1[17], outer1_1.paths), v0(outer1_1[2])(outer1_1[18], outer1_1.paths), v0(outer1_1[2])(outer1_1[19], outer1_1.paths), v0(outer1_1[2])(outer1_1[20], outer1_1.paths), v0(outer1_1[2])(outer1_1[21], outer1_1.paths), v0(outer1_1[2])(outer1_1[22], outer1_1.paths), v0(outer1_1[2])(outer1_1[23], outer1_1.paths), v0(outer1_1[2])(outer1_1[24], outer1_1.paths), v0(outer1_1[2])(outer1_1[25], outer1_1.paths), v0(outer1_1[2])(outer1_1[26], outer1_1.paths), v0(outer1_1[2])(outer1_1[27], outer1_1.paths), v0(outer1_1[2])(outer1_1[28], outer1_1.paths), v0(outer1_1[2])(outer1_1[29], outer1_1.paths), v0(outer1_1[2])(outer1_1[30], outer1_1.paths), v0(outer1_1[2])(outer1_1[31], outer1_1.paths), v0(outer1_1[2])(outer1_1[32], outer1_1.paths), v0(outer1_1[2])(outer1_1[33], outer1_1.paths), v0(outer1_1[2])(outer1_1[34], outer1_1.paths), v0(outer1_1[2])(outer1_1[35], outer1_1.paths), v0(outer1_1[2])(outer1_1[36], outer1_1.paths), v0(outer1_1[2])(outer1_1[37], outer1_1.paths), v0(outer1_1[2])(outer1_1[38], outer1_1.paths), v0(outer1_1[2])(outer1_1[39], outer1_1.paths), v0(outer1_1[2])(outer1_1[40], outer1_1.paths), v0(outer1_1[2])(outer1_1[41], outer1_1.paths), v0(outer1_1[2])(outer1_1[42], outer1_1.paths), v0(outer1_1[2])(outer1_1[43], outer1_1.paths), v0(outer1_1[2])(outer1_1[44], outer1_1.paths), v0(outer1_1[2])(outer1_1[45], outer1_1.paths), v0(outer1_1[2])(outer1_1[46], outer1_1.paths), v0(outer1_1[2])(outer1_1[47], outer1_1.paths), v0(outer1_1[2])(outer1_1[48], outer1_1.paths), v0(outer1_1[2])(outer1_1[49], outer1_1.paths), v0(outer1_1[2])(outer1_1[50], outer1_1.paths), v0(outer1_1[2])(outer1_1[51], outer1_1.paths), v0(outer1_1[2])(outer1_1[52], outer1_1.paths), v0(outer1_1[2])(outer1_1[53], outer1_1.paths)];
+          v0 = 3;
+          obj = { value: null, done: true };
+          obj[0] = Promise.all(items);
+          return obj;
+        }
+      } catch (tmp4) {
+        v0 = tmp;
+        throw tmp4;
+      }
+    }
+  });
+  const _preloadAllIntlMessageFiles = tmp;
+  const apply = tmp.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
   } else {
-    const items = [outer2_0(outer2_1[2])(outer2_1[1], outer2_1.paths), outer2_0(outer2_1[2])(outer2_1[3], outer2_1.paths), outer2_0(outer2_1[2])(outer2_1[4], outer2_1.paths), outer2_0(outer2_1[2])(outer2_1[5], outer2_1.paths), outer2_0(outer2_1[2])(outer2_1[6], outer2_1.paths), outer2_0(outer2_1[2])(outer2_1[7], outer2_1.paths), outer2_0(outer2_1[2])(outer2_1[8], outer2_1.paths), outer2_0(outer2_1[2])(outer2_1[9], outer2_1.paths), outer2_0(outer2_1[2])(outer2_1[10], outer2_1.paths), outer2_0(outer2_1[2])(outer2_1[11], outer2_1.paths), outer2_0(outer2_1[2])(outer2_1[12], outer2_1.paths), outer2_0(outer2_1[2])(outer2_1[13], outer2_1.paths), outer2_0(outer2_1[2])(outer2_1[14], outer2_1.paths), outer2_0(outer2_1[2])(outer2_1[15], outer2_1.paths), outer2_0(outer2_1[2])(outer2_1[16], outer2_1.paths), outer2_0(outer2_1[2])(outer2_1[17], outer2_1.paths), outer2_0(outer2_1[2])(outer2_1[18], outer2_1.paths), outer2_0(outer2_1[2])(outer2_1[19], outer2_1.paths), outer2_0(outer2_1[2])(outer2_1[20], outer2_1.paths), outer2_0(outer2_1[2])(outer2_1[21], outer2_1.paths), outer2_0(outer2_1[2])(outer2_1[22], outer2_1.paths), outer2_0(outer2_1[2])(outer2_1[23], outer2_1.paths), outer2_0(outer2_1[2])(outer2_1[24], outer2_1.paths), outer2_0(outer2_1[2])(outer2_1[25], outer2_1.paths), outer2_0(outer2_1[2])(outer2_1[26], outer2_1.paths), outer2_0(outer2_1[2])(outer2_1[27], outer2_1.paths), outer2_0(outer2_1[2])(outer2_1[28], outer2_1.paths), outer2_0(outer2_1[2])(outer2_1[29], outer2_1.paths), outer2_0(outer2_1[2])(outer2_1[30], outer2_1.paths), outer2_0(outer2_1[2])(outer2_1[31], outer2_1.paths), outer2_0(outer2_1[2])(outer2_1[32], outer2_1.paths), outer2_0(outer2_1[2])(outer2_1[33], outer2_1.paths), outer2_0(outer2_1[2])(outer2_1[34], outer2_1.paths), outer2_0(outer2_1[2])(outer2_1[35], outer2_1.paths), outer2_0(outer2_1[2])(outer2_1[36], outer2_1.paths), outer2_0(outer2_1[2])(outer2_1[37], outer2_1.paths), outer2_0(outer2_1[2])(outer2_1[38], outer2_1.paths), outer2_0(outer2_1[2])(outer2_1[39], outer2_1.paths), outer2_0(outer2_1[2])(outer2_1[40], outer2_1.paths), outer2_0(outer2_1[2])(outer2_1[41], outer2_1.paths), outer2_0(outer2_1[2])(outer2_1[42], outer2_1.paths), outer2_0(outer2_1[2])(outer2_1[43], outer2_1.paths), outer2_0(outer2_1[2])(outer2_1[44], outer2_1.paths), outer2_0(outer2_1[2])(outer2_1[45], outer2_1.paths), outer2_0(outer2_1[2])(outer2_1[46], outer2_1.paths), outer2_0(outer2_1[2])(outer2_1[47], outer2_1.paths), outer2_0(outer2_1[2])(outer2_1[48], outer2_1.paths), outer2_0(outer2_1[2])(outer2_1[49], outer2_1.paths), outer2_0(outer2_1[2])(outer2_1[50], outer2_1.paths), outer2_0(outer2_1[2])(outer2_1[51], outer2_1.paths), outer2_0(outer2_1[2])(outer2_1[52], outer2_1.paths), outer2_0(outer2_1[2])(outer2_1[53], outer2_1.paths)];
-    return Promise.all(items);
+    applyArgumentsResult = apply(self, arguments);
   }
+  return applyArgumentsResult;
 }
-const result = require("maybeLoadBundle").fileFinishedImporting("intl/preloader.tsx");
+const result = require("asyncRequireImpl").fileFinishedImporting("intl/preloader.tsx");
 
 export const preloadAllIntlMessageFiles = function preloadAllIntlMessageFiles() {
-  return _preloadAllIntlMessageFiles(...arguments);
+  const self = this;
+  const apply = _preloadAllIntlMessageFiles.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
 };

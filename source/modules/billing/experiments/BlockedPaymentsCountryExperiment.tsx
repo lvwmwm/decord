@@ -1,20 +1,18 @@
-// Module ID: 6270
-// Function ID: 56239
-// Name: items
-// Dependencies: [4077, 1428, 6271, 2]
+// Module ID: 6291
+// Function ID: 6292
+// Name: useBlockedPaymentsConfig
+// Dependencies: [4101, 1452, 6292, 2]
 // Exports: getIsPaymentsBlocked, useBlockedPaymentsConfig, useIsPaymentsBlocked
 
-// Module 6270 (items)
+// Module 6291 (useBlockedPaymentsConfig)
 import createExperiment from "createExperiment";
 import ApexExperiment from "ApexExperiment";
 
-let obj = { kind: "user", id: "2022-03_block_russian_purchases", label: "Block purchases based on country", defaultConfig: { paymentsBlocked: false } };
-obj = { id: 1, label: "Payments Blocked", config: { paymentsBlocked: true } };
-const items = [obj];
-obj.treatments = items;
-let closure_2 = createExperiment.createExperiment(obj);
-const obj1 = { name: "2026-03-block-purchases", kind: "user", defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } };
-let closure_3 = ApexExperiment.createApexExperiment(obj1);
+const items = [{ id: 1, label: "Payments Blocked", config: { paymentsBlocked: true } }];
+let closure_2 = createExperiment.createExperiment({ kind: "user", id: "2022-03_block_russian_purchases", label: "Block purchases based on country", defaultConfig: { paymentsBlocked: false }, treatments: items });
+const obj = { 1: null };
+obj[1] = { enabled: true };
+let closure_3 = ApexExperiment.createApexExperiment({ name: "2026-03-block-purchases", kind: "user", defaultConfig: { enabled: false }, variations: obj });
 const result = require("useGeoForUser").fileFinishedImporting("modules/billing/experiments/BlockedPaymentsCountryExperiment.tsx");
 
 export const useBlockedPaymentsConfig = function useBlockedPaymentsConfig() {
@@ -23,7 +21,7 @@ export const useBlockedPaymentsConfig = function useBlockedPaymentsConfig() {
     enabled = closure_3.useConfig({ location: "c519a9_1" }).enabled;
   }
   if (!enabled) {
-    enabled = "RU" === importDefault(6271)().defaultBillingCountryCode;
+    enabled = "RU" === importDefault(6292)().defaultBillingCountryCode;
   }
   return enabled;
 };

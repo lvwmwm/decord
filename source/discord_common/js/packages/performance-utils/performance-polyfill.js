@@ -1,55 +1,26 @@
-// Module ID: 630
-// Function ID: 7249
+// Module ID: 654
+// Function ID: 655
 // Name: u
 // Dependencies: [2]
 
-// Module 630 (u)
+// Module 654 (u)
 let _Date = Date;
 if (Date.now) {
   let nowResult = _Date.now();
 } else {
-  let prototype = _Date.prototype;
   _Date = new _Date();
   nowResult = +_Date;
 }
+let c0 = nowResult;
 let tmp6 = global.performance || {};
 let closure_1 = tmp6;
 let closure_2 = [];
 let closure_3 = {};
 function u(arg0, arg1) {
-  const items = [];
-  for (let num = 0; num < length; num = num + 1) {
-    let tmp = arr;
-    if (arr[num][arg0] == arg1) {
-      let tmp2 = arr;
-      arr = items.push(arr[num]);
-    }
-  }
-  return items;
+
 }
 function f(arg0, arg1) {
-  let tmp10;
-  let diff = tmp - 1;
-  if (+arr.length) {
-    do {
-      let tmp4 = arr;
-      let tmp5 = arr[diff];
-      let tmp6 = tmp5.entryType != arg0;
-      if (!tmp6) {
-        let tmp7 = tmp3;
-        if (tmp3) {
-          tmp7 = tmp5.name != arg1;
-        }
-        tmp6 = tmp7;
-      }
-      if (!tmp6) {
-        let tmp8 = arr;
-        let spliceResult = arr.splice(diff, 1);
-      }
-      tmp10 = +diff;
-      diff = tmp10 - 1;
-    } while (tmp10);
-  }
+
 }
 if (!tmp6.now) {
   tmp6.now = tmp6.webkitNow || tmp6.mozNow || tmp6.msNow || (() => {
@@ -57,7 +28,6 @@ if (!tmp6.now) {
     if (Date.now) {
       let nowResult = _Date.now();
     } else {
-      const prototype = _Date.prototype;
       _Date = new _Date();
       nowResult = +_Date;
     }
@@ -88,35 +58,104 @@ if (!tmp6.measure) {
     }
     let num = 0;
     if (dependencyMap[arg1]) {
-      num = dependencyMap[arg1].startTime;
+      num = tmp3[arg1].startTime;
     }
     if (dependencyMap[arg2]) {
-      let startTime = dependencyMap[arg2].startTime;
+      let startTime = tmp3[arg2].startTime;
     } else {
       startTime = tmp6.now();
     }
-    const obj = { name, entryType: "measure", startTime: num, duration: startTime - num };
   });
 }
 if (!tmp6.getEntriesByType) {
-  tmp6.getEntriesByType = tmp6.webkitGetEntriesByType || ((arg0) => u("entryType", arg0));
+  tmp6.getEntriesByType = tmp6.webkitGetEntriesByType || ((arg0) => {
+    if (typeof u !== "find") {
+      HermesBuiltin.throwTypeError();
+    }
+    const items = [];
+    for (let num = 0; num < length; num = num + 1) {
+      let tmp2 = num;
+      if (arr[num].entryType == arg0) {
+        arr = items.push(tmp[num]);
+      }
+    }
+    return items;
+  });
 }
 if (!tmp6.getEntriesByName) {
-  tmp6.getEntriesByName = tmp6.webkitGetEntriesByName || ((arg0) => u("name", arg0));
+  tmp6.getEntriesByName = tmp6.webkitGetEntriesByName || ((arg0) => {
+    if (typeof u !== "find") {
+      HermesBuiltin.throwTypeError();
+    }
+    const items = [];
+    for (let num = 0; num < length; num = num + 1) {
+      let tmp2 = num;
+      if (arr[num].name == arg0) {
+        arr = items.push(tmp[num]);
+      }
+    }
+    return items;
+  });
 }
 if (!tmp6.clearMarks) {
   tmp6.clearMarks = tmp6.webkitClearMarks || ((arg0) => {
-    f("mark", arg0);
+    let tmp9;
+    if (typeof f !== "find") {
+      HermesBuiltin.throwTypeError();
+    }
+    let diff = tmp - 1;
+    if (+arr.length) {
+      do {
+        let tmp4 = arr[diff];
+        let tmp5 = tmp4.entryType != "mark";
+        let tmp6 = diff;
+        if (!tmp5) {
+          let tmp7 = tmp3;
+          if (tmp3) {
+            tmp7 = tmp4.name != arg0;
+          }
+          tmp5 = tmp7;
+        }
+        if (!tmp5) {
+          let spliceResult = arr.splice(diff, 1);
+        }
+        tmp9 = +diff;
+        diff = tmp9 - 1;
+      } while (tmp9);
+    }
   });
 }
 if (!tmp6.clearMeasures) {
   tmp6.clearMeasures = tmp6.webkitClearMeasures || ((arg0) => {
-    f("measure", arg0);
+    let tmp9;
+    if (typeof f !== "find") {
+      HermesBuiltin.throwTypeError();
+    }
+    let diff = tmp - 1;
+    if (+arr.length) {
+      do {
+        let tmp4 = arr[diff];
+        let tmp5 = tmp4.entryType != "measure";
+        let tmp6 = diff;
+        if (!tmp5) {
+          let tmp7 = tmp3;
+          if (tmp3) {
+            tmp7 = tmp4.name != arg0;
+          }
+          tmp5 = tmp7;
+        }
+        if (!tmp5) {
+          let spliceResult = arr.splice(diff, 1);
+        }
+        tmp9 = +diff;
+        diff = tmp9 - 1;
+      } while (tmp9);
+    }
   });
 }
 global.performance = tmp6;
-let tmp7 = "function" === typeof globalThis.define;
-if (tmp7) {
+let tmp7 = typeof globalThis.define === "find";
+if (typeof globalThis.define !== "_") {
   let ajs = globalThis.define.amd;
   if (!ajs) {
     ajs = globalThis.define.ajs;

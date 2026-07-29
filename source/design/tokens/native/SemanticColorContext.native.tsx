@@ -1,10 +1,10 @@
-// Module ID: 3870
-// Function ID: 32113
+// Module ID: 3894
+// Function ID: 3895
 // Name: getSemanticColorContextFromThemeContext
-// Dependencies: [665, 666, 3871, 3876, 3976, 2]
+// Dependencies: [688, 689, 3895, 3900, 4000, 2]
 // Exports: getSemanticColorContextFromThemeContext
 
-// Module 3870 (getSemanticColorContextFromThemeContext)
+// Module 3894 (getSemanticColorContextFromThemeContext)
 const result = require("getNodeText").fileFinishedImporting("design/tokens/native/SemanticColorContext.native.tsx");
 
 export const getSemanticColorContextFromThemeContext = function getSemanticColorContextFromThemeContext(themeContext) {
@@ -13,52 +13,58 @@ export const getSemanticColorContextFromThemeContext = function getSemanticColor
   let primaryColor2;
   let saturation;
   let secondaryColor;
-  let obj = require(3876) /* getGradientThemeFromFlags */;
+  let obj = require(3900) /* getGradientThemeFromFlags */;
   const primaryColor = themeContext.primaryColor;
   const gradientThemeFromFlags = obj.getGradientThemeFromFlags(themeContext);
   ({ contrast, saturation, enabledExperiments } = themeContext);
-  let obj1 = require(3976) /* colorToHex */;
+  let obj1 = require(4000) /* getGradientColorByPercentage */;
   let gradientThemeMetadata = obj1.getGradientThemeMetadata(gradientThemeFromFlags, themeContext.gradient);
   if (null != primaryColor) {
     ({ primaryColor: primaryColor2, secondaryColor } = themeContext);
-    let tmp11 = null;
+    let tmp9 = null;
     if (null != primaryColor2) {
-      const int2hexResult = require(665) /* pad2 */.int2hex(primaryColor2);
-      const obj3 = require(665) /* pad2 */;
-      if (null != secondaryColor) {
-        primaryColor2 = secondaryColor;
+      let tmpResult = tmp(688);
+      const int2hexResult = tmpResult.int2hex(primaryColor2);
+      tmpResult = tmp(688);
+      if (secondaryColor == null) {
+        secondaryColor = primaryColor2;
       }
-      const int2hexResult1 = require(665) /* pad2 */.int2hex(primaryColor2);
-      const obj4 = require(665) /* pad2 */;
-      const obj5 = importDefault(666)(int2hexResult);
-      obj = {};
-      const mixResult = importDefault(666)(int2hexResult).mix(int2hexResult1, 0.5);
-      const hexResult = importDefault(666)(int2hexResult).mix(int2hexResult1, 0.5).hex();
+      const int2hexResult1 = tmpResult.int2hex(secondaryColor);
+      const obj5 = importDefault(689)(int2hexResult);
+      const mixResult = importDefault(689)(int2hexResult).mix(int2hexResult1, 0.5);
+      const hexResult = importDefault(689)(int2hexResult).mix(int2hexResult1, 0.5).hex();
       let str = "dark";
-      if (obj8.isThemeLight(tmp12)) {
+      if (tmpResult1.isThemeLight(tmp10)) {
         str = "light";
       }
-      obj.theme = str;
-      obj = { "gradient.start": int2hexResult, "gradient.mid": hexResult, "gradient.end": int2hexResult1, "gradient.top": int2hexResult, "gradient.bottom": int2hexResult1, "gradient.primary": int2hexResult, "gradient.secondary": int2hexResult1 };
-      obj.colors = obj;
-      tmp11 = obj;
-      obj8 = require(3871) /* getNodeText */;
+      obj = { theme: null, colors: null };
+      obj[0] = str;
+      obj = { "gradient.start": null, "gradient.mid": null, "gradient.end": null, "gradient.top": null, "gradient.bottom": null, "gradient.primary": null, "gradient.secondary": null };
+      obj[0] = int2hexResult;
+      obj[1] = hexResult;
+      obj[2] = int2hexResult1;
+      obj[3] = int2hexResult;
+      obj[4] = int2hexResult1;
+      obj[5] = int2hexResult;
+      obj[6] = int2hexResult1;
+      obj[1] = obj;
+      tmp9 = obj;
+      tmpResult1 = tmp(3895);
     }
-    gradientThemeMetadata = tmp11;
+    gradientThemeMetadata = tmp9;
   }
-  obj1 = {};
-  let num5 = 1;
-  let num6 = 1;
+  let num2 = 1;
+  let num3 = 1;
   if (null == primaryColor) {
-    num6 = contrast;
+    num3 = contrast;
   }
-  obj1.contrast = num6;
+  obj1 = { contrast: num3, saturation: null, gradient: null, isProfileTheme: null, enabledExperiments: null };
   if (null == primaryColor) {
-    num5 = saturation;
+    num2 = saturation;
   }
-  obj1.saturation = num5;
-  obj1.gradient = gradientThemeMetadata;
-  obj1.isProfileTheme = null != primaryColor;
-  obj1.enabledExperiments = enabledExperiments;
+  obj1[1] = num2;
+  obj1[2] = gradientThemeMetadata;
+  obj1[3] = null != primaryColor;
+  obj1[4] = enabledExperiments;
   return obj1;
 };

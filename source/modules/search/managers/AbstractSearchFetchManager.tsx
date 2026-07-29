@@ -1,64 +1,41 @@
-// Module ID: 10092
-// Function ID: 78057
-// Name: AbstractSearchFetchManager
-// Dependencies: [6, 7, 2]
+// Module ID: 10112
+// Function ID: 10113
+// Name: cleanUp
+// Dependencies: [2]
 
-// Module 10092 (AbstractSearchFetchManager)
-import _classCallCheck from "_classCallCheck";
-import _defineProperties from "_defineProperties";
-
-const tmp2 = (() => {
-  class AbstractSearchFetchManager {
-    constructor() {
-      tmp = AbstractSearchFetchManager(this, AbstractSearchFetchManager);
-      map = new Map();
-      this.searchFetchers = map;
-      return;
-    }
-  }
-  let obj = {
-    key: "cleanUp",
-    value(arg0) {
-      this.cancel(arg0);
-      this.delete(arg0);
-    }
-  };
-  const items = [obj, , , , ];
-  obj = {
-    key: "cancel",
-    value(arg0) {
-      const searchFetchers = this.searchFetchers;
-      const value = searchFetchers.get(arg0);
-      if (null != value) {
-        value.cancel();
-      }
-    }
-  };
-  items[1] = obj;
-  obj = {
-    key: "delete",
-    value(arg0) {
-      const searchFetchers = this.searchFetchers;
-      searchFetchers.delete(arg0);
-    }
-  };
-  items[2] = obj;
-  items[3] = {
-    key: "get",
-    value(arg0) {
-      const searchFetchers = this.searchFetchers;
-      return searchFetchers.get(arg0);
-    }
-  };
-  items[4] = {
-    key: "set",
-    value(arg0, arg1) {
-      const searchFetchers = this.searchFetchers;
-      const result = searchFetchers.set(arg0, arg1);
-    }
-  };
-  return callback(AbstractSearchFetchManager, items);
-})();
+// Module 10112 (cleanUp)
 let result = require("set").fileFinishedImporting("modules/search/managers/AbstractSearchFetchManager.tsx");
+class AbstractSearchFetchManager {
+  constructor() {
+    obj = Object.create(new.target.prototype);
+    map = new Map();
+    obj[0] = map;
+    return obj;
+  }
+}
+const prototype = AbstractSearchFetchManager.prototype;
+prototype["cleanUp"] = function cleanUp(arg0) {
+  this.cancel(arg0);
+  this.delete(arg0);
+};
+prototype["cancel"] = function cancel(arg0) {
+  const searchFetchers = this.searchFetchers;
+  const value = searchFetchers.get(arg0);
+  if (value != null) {
+    value.cancel();
+  }
+};
+prototype["delete"] = function delete(arg0) {
+  const searchFetchers = this.searchFetchers;
+  searchFetchers.delete(arg0);
+};
+prototype["get"] = function get(arg0) {
+  const searchFetchers = this.searchFetchers;
+  return searchFetchers.get(arg0);
+};
+prototype["set"] = function set(arg0, arg1) {
+  const searchFetchers = this.searchFetchers;
+  const result = searchFetchers.set(arg0, arg1);
+};
 
-export const AbstractSearchFetchManager = tmp2;
+export { AbstractSearchFetchManager };

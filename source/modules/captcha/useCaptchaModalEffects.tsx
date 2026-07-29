@@ -1,11 +1,11 @@
-// Module ID: 16072
-// Function ID: 123982
+// Module ID: 16107
+// Function ID: 16108
 // Name: useCaptchaModalEffects
-// Dependencies: [31, 653, 4594, 9446, 675, 2]
+// Dependencies: [19, 676, 4616, 9470, 698, 2]
 // Exports: default
 
-// Module 16072 (useCaptchaModalEffects)
-import result from "result";
+// Module 16107 (useCaptchaModalEffects)
+import noop from "noop";
 import { AnalyticEvents } from "ME";
 
 const require = arg1;
@@ -20,10 +20,10 @@ export default function useCaptchaModalEffects(arg0) {
   }
   let dependencyMap;
   dependencyMap = React.useRef(true);
-  analyticsType(4594)(() => () => {
-    if (outer1_2.current) {
-      if (null != outer1_0) {
-        outer1_0(outer2_0(table[3]).CaptchaError.CANCEL);
+  analyticsType(4616)(() => () => {
+    if (ref.current) {
+      if (closure_0 != null) {
+        tmp(outer1_0(outer1_2[3]).CaptchaError.CANCEL);
       }
     }
   });
@@ -33,10 +33,11 @@ export default function useCaptchaModalEffects(arg0) {
     obj = { type: analyticsType };
     obj.track(outer1_4.OPEN_MODAL, obj);
     return () => {
-      if (outer1_2.current) {
-        let obj = analyticsType(table[4]);
-        obj = { type: outer1_1 };
-        obj.track(outer2_4.MODAL_DISMISSED, obj);
+      if (ref.current) {
+        let obj = outer1_1(outer1_2[4]);
+        obj = { type: null };
+        obj[0] = closure_1;
+        obj.track(outer1_4.MODAL_DISMISSED, obj);
       }
     };
   }, items);

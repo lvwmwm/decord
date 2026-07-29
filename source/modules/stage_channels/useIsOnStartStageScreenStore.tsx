@@ -1,46 +1,49 @@
-// Module ID: 6691
-// Function ID: 58965
+// Module ID: 6712
+// Function ID: 6713
 // Name: setIsOnStartStageScreen
-// Dependencies: [31, 3793, 1907, 621, 682, 566, 1356, 6692, 2]
-// Exports: useUpdateIsOnStartStageScreenEffect
+// Dependencies: [19, 3817, 1931, 644, 705, 589, 1380, 6713, 2]
+// Exports: setIsOnStartStageScreen, useUpdateIsOnStartStageScreenEffect
 
-// Module 6691 (setIsOnStartStageScreen)
-import result from "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_5 from "_isNativeReflectConstruct";
+// Module 6712 (setIsOnStartStageScreen)
+import noop from "noop";
+import getUncachedChannelPermissions from "getUncachedChannelPermissions";
+import handleConnectionOpen from "handleConnectionOpen";
 import keys from "keys";
 
 const require = arg1;
-function setIsOnStartStageScreen(arg0) {
-  const _require = arg0;
-  _require(682).batchUpdates(() => outer1_6.setState({ isOnStartStageScreen: closure_0 }));
-}
 keys = keys.create(() => ({ isOnStartStageScreen: true }));
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/stage_channels/useIsOnStartStageScreenStore.tsx");
+const result = require("handleConnectionOpen").fileFinishedImporting("modules/stage_channels/useIsOnStartStageScreenStore.tsx");
 
 export default keys;
-export { setIsOnStartStageScreen };
+export const setIsOnStartStageScreen = function setIsOnStartStageScreen(arg0) {
+  const _require = arg0;
+  _require(705).batchUpdates(() => outer1_6.setState({ isOnStartStageScreen: c0 }));
+};
 export const useUpdateIsOnStartStageScreenEffect = function useUpdateIsOnStartStageScreenEffect(id) {
   const _require = id;
-  const items = [closure_5];
-  const stateFromStores = _require(566).useStateFromStores(items, () => outer1_5.getVoiceChannelId() === id.id);
-  const obj = _require(566);
-  const items1 = [_isNativeReflectConstruct];
+  const items = [handleConnectionOpen];
+  const stateFromStores = _require(589).useStateFromStores(items, () => outer1_5.getVoiceChannelId() === id.id);
+  let obj = _require(589);
+  const items1 = [getUncachedChannelPermissions];
   const items2 = [id];
-  const stateFromStores1 = _require(566).useStateFromStores(items1, () => outer1_4.can(id(tmp3[6]).MODERATE_STAGE_CHANNEL_PERMISSIONS, id), items2);
+  const stateFromStores1 = _require(589).useStateFromStores(items1, () => outer1_4.can(id(tmp3[6]).MODERATE_STAGE_CHANNEL_PERMISSIONS, id), items2);
   let tmp3 = stateFromStores1;
   if (stateFromStores1) {
-    tmp3 = !stateFromStores(6692)(id.id);
+    tmp3 = !stateFromStores(6713)(id.id);
   }
   const dependencyMap = tmp3;
   const items3 = [stateFromStores, tmp3];
   const effect = React.useEffect(() => {
     if (stateFromStores) {
-      if (!closure_2) {
-        outer1_7(false);
+      if (!tmp) {
+        let c0 = false;
+        id(tmp3[4]).batchUpdates(() => outer1_6.setState({ isOnStartStageScreen: c0 }));
+        const obj2 = id(tmp3[4]);
       }
     } else {
-      outer1_7(closure_2);
+      c0 = tmp;
+      id(tmp3[4]).batchUpdates(() => outer1_6.setState({ isOnStartStageScreen: c0 }));
+      const obj = id(tmp3[4]);
     }
   }, items3);
 };

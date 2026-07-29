@@ -1,89 +1,89 @@
-// Module ID: 14786
-// Function ID: 112565
+// Module ID: 14812
+// Function ID: 14813
 // Name: StringSelectActionComponent
-// Dependencies: [31, 33, 4388, 7868, 44, 1882, 14787, 4133, 10987, 1935, 2]
+// Dependencies: [19, 21, 4411, 7891, 38, 1906, 14813, 4157, 11011, 1959, 2]
 // Exports: default
 
-// Module 14786 (StringSelectActionComponent)
-import result from "result";
+// Module 14812 (StringSelectActionComponent)
+import noop from "noop";
 import { jsx } from "jsxProd";
 
 const require = arg1;
-const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/interaction_components/native/actions/StringSelectActionComponent.tsx");
+const result = require("flattenComponents").fileFinishedImporting("modules/interaction_components/native/actions/StringSelectActionComponent.tsx");
 
 export default function StringSelectActionComponent(type) {
   const _require = type;
   type = type.type;
   const options = type.options;
   let obj = _require(options[2]);
-  let items = [options];
+  let obj1 = componentStateContext;
+  const items = [options];
   const selectPlaceholder = obj.getSelectPlaceholder(type);
   const memo = componentStateContext.useMemo(() => {
     const found = options.filter((arg0) => arg0.default);
     return found.map((value) => value.value);
   }, items);
-  let obj1 = _require(options[3]);
-  componentStateContext = obj1.useComponentStateContext();
+  componentStateContext = _require(options[3]).useComponentStateContext();
   let modal;
-  if (null != componentStateContext) {
+  const obj3 = _require(options[3]);
+  let tmp = _require;
+  const tmp4 = type;
+  if (componentStateContext != null) {
     modal = componentStateContext.modal;
   }
   type(options[4])(null != modal, "StringSelectActionComponent must be rendered inside a modal ComponentStateContext");
-  let tmp5;
+  let tmp8;
   if (memo.length > 0) {
-    obj = { type, values: memo };
-    tmp5 = obj;
+    obj = { type: null, values: null };
+    obj[0] = type;
+    obj[1] = memo;
+    tmp8 = obj;
   }
-  const componentState = componentStateContext.useComponentState(type, tmp5);
+  const componentState = componentStateContext.useComponentState(type, tmp8);
   const state = componentState.state;
   const executeStateUpdate = componentState.executeStateUpdate;
   const items1 = [options, type, state];
   const customId = componentStateContext.modal.customId;
-  const memo1 = componentStateContext.useMemo(() => {
+  const memo1 = obj1.useMemo(() => {
     let type;
-    if (null != state) {
-      type = state.type;
+    if (state != null) {
+      type = tmp.type;
     }
-    if (type === type) {
-      let items = state.values;
-    } else {
-      items = [];
-    }
-    const mapped = items.map((arg0) => {
+    const mapped = type === type ? state.values : [].map((arg0) => {
       let closure_0 = arg0;
-      return outer1_2.findIndex((value) => value.value === closure_0);
+      return closure_2.findIndex((value) => value.value === closure_0);
     });
     return mapped.filter((arg0) => -1 !== arg0);
   }, items1);
   const parents = componentStateContext.getParents(type);
   let first;
-  if (null != parents) {
+  if (parents != null) {
     first = parents[0];
   }
   type = undefined;
-  if (null != first) {
+  if (first != null) {
     type = first.type;
   }
-  let tmp11;
-  if (type === _require(options[5]).ComponentType.LABEL) {
-    tmp11 = first;
+  let tmp14;
+  if (type === tmp(options[5]).ComponentType.LABEL) {
+    tmp14 = first;
   }
-  let closure_7 = tmp11;
-  obj = {};
+  let closure_7 = tmp14;
+  obj = { model: null, onTap: null };
   obj1 = {};
-  const tmp2 = type(options[4]);
+  const tmp5 = type(options[4]);
   const merged = Object.assign(type);
-  obj1["placeholder"] = selectPlaceholder;
-  obj1["state"] = componentState.visualState;
-  obj1["selectedOptions"] = memo1;
-  obj.model = obj1;
-  obj.onTap = function onTap() {
+  obj1.placeholder = selectPlaceholder;
+  obj1.state = componentState.visualState;
+  obj1.selectedOptions = memo1;
+  obj[0] = obj1;
+  obj[1] = function onTap() {
     let obj = type(options[7]);
-    obj = { selectionActionComponent: type, labelComponent: closure_7, channelId: componentStateContext.channelId, containerId: customId, onSubmit: executeStateUpdate };
+    obj = { selectionActionComponent: type, labelComponent: closure_7, channelId: componentStateContext.channelId, containerId: customId, onSubmit: executeStateUpdate, allowEmpty: null };
     const combined = "StringSelectComponentActionSheet:" + customId;
     const tmp = type(options[9])(options[8], options.paths);
-    obj.allowEmpty = type(options[2]).canSelectBeEmpty(type, "modal");
+    obj[5] = type(options[2]).canSelectBeEmpty(type, "modal");
     obj.openLazy(tmp, combined, obj);
   };
-  return state(type(options[6]), obj);
+  return state(tmp4(options[6]), obj);
 };

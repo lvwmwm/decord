@@ -1,69 +1,72 @@
-// Module ID: 9520
-// Function ID: 74043
+// Module ID: 9544
+// Function ID: 9545
 // Name: onClose
-// Dependencies: [31, 27, 653, 33, 4165, 5087, 689, 4133, 5221, 5220, 5534, 9521, 4161, 1212, 1921, 2]
+// Dependencies: [19, 17, 676, 21, 4189, 5109, 712, 4157, 5243, 5242, 5552, 9545, 4185, 1236, 1945, 2]
 // Exports: default
 
-// Module 9520 (onClose)
-import "result";
+// Module 9544 (onClose)
+import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import ME from "ME";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 import importDefaultResult from "createTextStyle";
 
-let closure_3;
-let closure_4;
+let Fonts;
+let c3;
+let c4;
+let c5;
 let closure_6;
-let closure_7;
+let error;
 const require = arg1;
 function onClose() {
-  importDefault(4133).hideActionSheet();
+  importDefault(4157).hideActionSheet();
 }
-({ View: closure_3, Image: closure_4 } = get_ActivityIndicator);
-const HelpdeskArticles = ME.HelpdeskArticles;
-({ jsx: closure_6, jsxs: closure_7 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = {};
-const merged = Object.assign(require("createTextStyle")(ME.Fonts.DISPLAY_EXTRABOLD, require("_createForOfIteratorHelperLoose").colors.INTERACTIVE_TEXT_ACTIVE, 16));
-_createForOfIteratorHelperLoose["marginTop"] = 8;
-_createForOfIteratorHelperLoose["marginBottom"] = 8;
-_createForOfIteratorHelperLoose.title = _createForOfIteratorHelperLoose;
-let obj1 = { color: require("_createForOfIteratorHelperLoose").colors.INTERACTIVE_TEXT_ACTIVE, textAlign: "center", width: 343 };
-_createForOfIteratorHelperLoose.subtitle = obj1;
-_createForOfIteratorHelperLoose.view = { paddingTop: 50, paddingBottom: 100, alignItems: "center" };
-_createForOfIteratorHelperLoose.rating = { width: 116, height: 93 };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+({ View: c3, Image: c4 } = get_ActivityIndicator);
+({ HelpdeskArticles: c5, Fonts } = ME);
+({ jsx: closure_6, jsxs: error } = jsxProd);
+createCacheKey = { title: null, subtitle: null, view: null, rating: null };
+createCacheKey = {};
+const merged = Object.assign(require("createTextStyle")(Fonts.DISPLAY_EXTRABOLD, require("Themes").colors.INTERACTIVE_TEXT_ACTIVE, 16));
+createCacheKey.marginTop = 8;
+createCacheKey.marginBottom = 8;
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { color: require("Themes").colors.INTERACTIVE_TEXT_ACTIVE, textAlign: "center", width: 343 };
+createCacheKey[2] = { paddingTop: 50, paddingBottom: 100, alignItems: "center" };
+createCacheKey[3] = { width: 116, height: 93 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let obj1 = { color: require("Themes").colors.INTERACTIVE_TEXT_ACTIVE, textAlign: "center", width: 343 };
 const result = require("ME").fileFinishedImporting("modules/notifications/native/NotificationSurveyResponseActionSheet.tsx");
 
 export default function NotificationSurveyResponseActionSheet(header) {
   header = header.header;
-  const tmp = _createForOfIteratorHelperLoose();
-  let obj = {};
-  let tmp3 = null != header;
-  if (tmp3) {
-    obj = { title: header };
-    obj = { onPress: onClose };
-    obj.trailing = callback(require(5534) /* ActionSheetCloseButton */.ActionSheetCloseButton, obj);
-    tmp3 = callback(require(5220) /* RedesignBottomSheetTitleHeaderBase */.BottomSheetTitleHeader, obj);
+  const tmp = createCacheKey();
+  let tmp5 = null != header;
+  if (tmp5) {
+    let obj = { title: null, trailing: null };
+    obj[0] = header;
+    obj = { onPress: null };
+    obj[0] = onClose;
+    obj[1] = callback(tmp3(5552).ActionSheetCloseButton, obj);
+    tmp5 = callback(tmp3(5242).BottomSheetTitleHeader, obj);
   }
-  const items = [tmp3, ];
-  const obj1 = { style: tmp.view };
-  const items1 = [callback(closure_4, { style: tmp.rating, source: importDefault(9521) }), , ];
-  const obj3 = { style: tmp.title, variant: "heading-md/bold" };
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj3.children = intl.string(require(1212) /* getSystemLocale */.t["d9+vQ8"]);
-  items1[1] = callback(require(4161) /* Text */.Text, obj3);
-  const obj4 = { style: tmp.subtitle, variant: "text-md/normal" };
-  const intl2 = require(1212) /* getSystemLocale */.intl;
-  const obj5 = {};
-  const obj2 = { style: tmp.rating, source: importDefault(9521) };
-  const tmp2 = callback2;
-  obj5.helpUrl = importDefault(1921).getArticleURL(HelpdeskArticles.HIGHLIGHTS_NOTIFICATIONS);
-  obj4.children = intl2.format(require(1212) /* getSystemLocale */.t.WxD5QY, obj5);
-  items1[2] = callback(require(4161) /* Text */.Text, obj4);
-  obj1.children = items1;
-  items[1] = callback2(closure_3, obj1);
-  obj.children = items;
-  return tmp2(require(5221) /* Background */.BottomSheet, obj);
+  obj = { children: null };
+  const items = [tmp5, ];
+  const obj1 = { style: tmp.view, children: null };
+  const items1 = [callback(closure_4, { style: tmp.rating, source: importDefault(9545) }), , ];
+  const obj3 = { style: tmp.title, variant: "heading-md/bold", children: null };
+  const intl = tmp3(1236).intl;
+  obj3[2] = intl.string(require(1236) /* getSystemLocale */.t["d9+vQ8"]);
+  items1[1] = callback(require(4185) /* Text */.Text, obj3);
+  const obj4 = { style: tmp.subtitle, variant: "text-md/normal", children: null };
+  const intl2 = tmp3(1236).intl;
+  const obj5 = { helpUrl: null };
+  const obj2 = { style: tmp.rating, source: importDefault(9545) };
+  obj5[0] = importDefault(1945).getArticleURL(constants.HIGHLIGHTS_NOTIFICATIONS);
+  obj4[2] = intl2.format(require(1236) /* getSystemLocale */.t.WxD5QY, obj5);
+  items1[2] = callback(require(4185) /* Text */.Text, obj4);
+  obj1[1] = items1;
+  items[1] = closure_7(closure_3, obj1);
+  obj[0] = items;
+  return closure_7(require(5243) /* Background */.BottomSheet, obj);
 };

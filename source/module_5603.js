@@ -1,55 +1,74 @@
 // Module ID: 5603
-// Function ID: 47477
-// Dependencies: [57, 29, 31, 27, 33]
+// Function ID: 5604
+// Dependencies: [19, 21, 1584, 5604, 1481, 5605, 5579, 5606]
 
 // Module 5603
-import _slicedToArray from "_slicedToArray";
-import _objectWithoutProperties from "_objectWithoutProperties";
-import importAllResult from "result";
-import get_ActivityIndicator from "get ActivityIndicator";
+import importAllResult from "noop";
 import { jsx } from "jsxProd";
 
-let StyleSheet;
-let closure_4;
-let closure_0 = ["enabled", "layout", "style"];
-({ StyleSheet, View: closure_4 } = get_ActivityIndicator);
-const styles = StyleSheet.create({ page: { minHeight: "100%" }, card: { flex: 1, overflow: "hidden" } });
+const require = arg1;
+let c3 = importAllResult;
 
-export default importAllResult.forwardRef(function CardSheet(layout) {
-  let enabled;
-  let style;
-  layout = layout.layout;
-  ({ enabled, style } = layout);
-  let tmp2 = callback(importAllResult.useState(false), 2);
-  callback = tmp2[1];
-  const tmp3 = callback(importAllResult.useState("auto"), 2);
-  const callback2 = tmp3[1];
-  const imperativeHandle = importAllResult.useImperativeHandle(arg1, () => ({ setPointerEvents: _objectWithoutProperties }));
-  const items = [, ];
-  ({ height: arr[0], width: arr[1] } = layout);
-  const effect = importAllResult.useEffect(() => {
-    if ("undefined" !== typeof document) {
-      const _document = document;
-      if (document.body) {
-        const _document2 = document;
-        const _document3 = document;
-        let tmp4 = document.body.clientWidth === layout.width;
-        if (tmp4) {
-          tmp4 = tmp === layout.height;
-        }
-        _slicedToArray(tmp4);
-        const tmp2 = _slicedToArray;
+export default importAllResult.memo(function Header(navigation) {
+  let back;
+  let layout;
+  let options;
+  let progress;
+  let route;
+  let styleInterpolator;
+  ({ back, options, route } = navigation);
+  navigation = navigation.navigation;
+  ({ layout, progress, styleInterpolator } = navigation);
+  let obj = route(1584);
+  const safeAreaInsets = obj.useSafeAreaInsets();
+  if (undefined !== options.headerBackTitle) {
+    let headerBackTitle = options.headerBackTitle;
+  } else if (back) {
+    headerBackTitle = back.title;
+  }
+  const items = [navigation, route.key];
+  const callback = importAllResult.useCallback(navigation(5604)(() => {
+    let obj = navigation;
+    if (tmp) {
+      obj = {};
+      const StackActions = route(outer1_2[4]).StackActions;
+      const merged = Object.assign(StackActions.pop());
+      obj.source = route.key;
+      obj.dispatch(obj);
+    }
+  }, 50), items);
+  const context = importAllResult.useContext(navigation(5605));
+  if (undefined !== options.headerStatusBarHeight) {
+    let num = options.headerStatusBarHeight;
+  } else {
+    num = 0;
+    if (!context) {
+      num = 0;
+      if (!tmp7) {
+        num = safeAreaInsets.top;
       }
     }
-  }, items);
-  const obj = { pointerEvents: tmp3[0] };
-  if (enabled) {
-    if (tmp2[0]) {
-      let card = closure_6.page;
-    }
-    const items1 = [card, style];
-    obj.style = items1;
-    return tmp6(tmp7, tmp9({}, tmp, obj));
   }
-  card = closure_6.card;
+  obj = {};
+  let merged = Object.assign(options);
+  const tmp = route;
+  const tmp4 = navigation;
+  const tmp4Result = navigation(5606);
+  const tmp8 = jsx;
+  obj.title = route(5579).getHeaderTitle(options, route.name);
+  obj.progress = progress;
+  obj.layout = layout;
+  obj.modal = context;
+  if (undefined !== options.headerBackTitle) {
+    headerBackTitle = options.headerBackTitle;
+  }
+  obj.headerBackTitle = headerBackTitle;
+  obj.headerStatusBarHeight = num;
+  let tmp11;
+  if (back) {
+    tmp11 = callback;
+  }
+  obj.onGoBack = tmp11;
+  obj.styleInterpolator = styleInterpolator;
+  return tmp8(tmp4Result, obj);
 });

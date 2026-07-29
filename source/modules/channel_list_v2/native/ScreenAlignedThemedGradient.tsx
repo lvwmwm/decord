@@ -1,11 +1,11 @@
-// Module ID: 15174
-// Function ID: 115360
+// Module ID: 15207
+// Function ID: 15208
 // Name: ScreenAlignedThemedGradient
-// Dependencies: [31, 27, 33, 8802, 4026, 9891, 4697, 2]
+// Dependencies: [19, 17, 21, 8826, 4050, 9913, 4719, 2]
 // Exports: default
 
-// Module 15174 (ScreenAlignedThemedGradient)
-import "result";
+// Module 15207 (ScreenAlignedThemedGradient)
+import "noop";
 import { StyleSheet } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
 
@@ -20,24 +20,23 @@ export default function ScreenAlignedThemedGradient(offsetX) {
   const parentSpringTranslateX = offsetX.parentSpringTranslateX;
   let obj = offsetX(parentSpringTranslateX[3]);
   const isClientThemeOrCustomThemeActive = obj.useIsClientThemeOrCustomThemeActive();
-  let obj1 = offsetX(parentSpringTranslateX[4]);
   const fn = function c() {
-    let obj = {};
-    obj = { translateX: offsetY(parentSpringTranslateX[5])(-offsetX - parentSpringTranslateX.get()) };
+    let obj = { transform: null };
+    obj = { translateX: null };
+    obj[0] = offsetY(parentSpringTranslateX[5])(-offsetX - parentSpringTranslateX.get());
     const items = [obj, ];
     obj = { translateY: offsetY(parentSpringTranslateX[5])(-offsetY) };
     items[1] = obj;
-    obj.transform = items;
+    obj[0] = items;
     return obj;
   };
   obj = { roundToNearestPixel: offsetY(parentSpringTranslateX[5]), offsetX, parentSpringTranslateX, offsetY };
   fn.__closure = obj;
   fn.__workletHash = 13846065523130;
   fn.__initData = closure_4;
-  const animatedStyle = obj1.useAnimatedStyle(fn);
-  obj = { pointerEvents: "none", style: items };
+  const animatedStyle = offsetX(parentSpringTranslateX[4]).useAnimatedStyle(fn);
+  obj = { pointerEvents: "none", style: items, children: null };
   items = [container.container, animatedStyle];
-  obj1 = { absolute: true, tall: true, wide: true, mix: isClientThemeOrCustomThemeActive };
-  obj.children = jsx(offsetY(parentSpringTranslateX[6]), { absolute: true, tall: true, wide: true, mix: isClientThemeOrCustomThemeActive });
-  return jsx(offsetY(parentSpringTranslateX[4]).View, { pointerEvents: "none", style: items });
+  obj[2] = jsx(offsetY(parentSpringTranslateX[6]), { absolute: true, tall: true, wide: true, mix: isClientThemeOrCustomThemeActive });
+  return jsx(offsetY(parentSpringTranslateX[4]).View, { pointerEvents: "none", style: items, children: null });
 };

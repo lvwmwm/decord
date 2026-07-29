@@ -1,32 +1,25 @@
-// Module ID: 5816
-// Function ID: 50877
-// Name: FramesBannerBlockRecord
-// Dependencies: [6, 7, 5811, 2]
+// Module ID: 5834
+// Function ID: 5835
+// Name: fromServer
+// Dependencies: [5829, 2]
 
-// Module 5816 (FramesBannerBlockRecord)
-import _classCallCheck from "_classCallCheck";
-import _defineProperties from "_defineProperties";
-
-const require = arg1;
-const tmp2 = (() => {
-  class FramesBannerBlockRecord {
-    constructor(arg0) {
-      tmp = outer1_2(this, FramesBannerBlockRecord);
-      this.type = FramesBannerBlockRecord(outer1_1[2]).ShopBlockType.FRAMES_BANNER;
-      ({ title: this.title, body: this.body, mobile_background_image: this.mobileBackgroundImage, mobile_foreground_image: this.mobileForegroundImage, desktop_background_image: this.desktopBackgroundImage } = arg0);
-      return;
-    }
+// Module 5834 (fromServer)
+let prototype;
+prototype = function FramesBannerBlockRecord(arg0) {
+  const obj = Object.create(new.target.prototype);
+  obj.type = require(5829) /* ShopBlockType */.ShopBlockType.FRAMES_BANNER;
+  ({ title: tmp.title, body: tmp.body, mobile_background_image: tmp.mobileBackgroundImage, mobile_foreground_image: tmp.mobileForegroundImage, desktop_background_image: tmp.desktopBackgroundImage } = arg0);
+  return obj;
+}.prototype;
+prototype["fromServer"] = function fromServer(arg0) {
+  if (typeof prototype !== "find") {
+    HermesBuiltin.throwTypeError();
   }
-  const items = [
-    {
-      key: "fromServer",
-      value(arg0) {
-        return new FramesBannerBlockRecord(arg0);
-      }
-    }
-  ];
-  return callback(FramesBannerBlockRecord, null, items);
-})();
-const result = require("ShopBlockType").fileFinishedImporting("modules/collectibles/records/FramesBannerBlockRecord.tsx");
+  const obj = Object.create(prototype.prototype);
+  obj.type = require(5829) /* ShopBlockType */.ShopBlockType.FRAMES_BANNER;
+  ({ title: tmp2.title, body: tmp2.body, mobile_background_image: tmp2.mobileBackgroundImage, mobile_foreground_image: tmp2.mobileForegroundImage, desktop_background_image: tmp2.desktopBackgroundImage } = arg0);
+  return obj;
+};
+const result = require("set").fileFinishedImporting("modules/collectibles/records/FramesBannerBlockRecord.tsx");
 
-export const FramesBannerBlockRecord = tmp2;
+export const FramesBannerBlockRecord = prototype;

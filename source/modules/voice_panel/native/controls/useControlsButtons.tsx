@@ -1,257 +1,194 @@
-// Module ID: 15968
-// Function ID: 123255
-// Name: _createForOfIteratorHelperLoose
-// Dependencies: [31, 4212, 10014, 653, 33, 15969, 15972, 15978, 15980, 15982, 15984, 15986, 15989, 15892, 1553, 10015, 15828, 566, 4026, 11409, 8094, 2]
+// Module ID: 16003
+// Function ID: 16004
+// Name: useControlsButtons
+// Dependencies: [19, 4236, 10036, 676, 21, 16004, 16007, 16013, 16015, 16017, 16019, 16021, 16024, 15927, 1577, 10037, 15863, 589, 4050, 11433, 8118, 2]
 // Exports: default
 
-// Module 15968 (_createForOfIteratorHelperLoose)
-import result from "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 16003 (useControlsButtons)
+import VOICE_PANEL_DRAWER_MAX_WIDTH from "VOICE_PANEL_DRAWER_MAX_WIDTH";
+import _detectH265HardwareDecode from "_detectH265HardwareDecode";
 import VoicePanelControlsModes from "VoicePanelControlsModes";
 import { InputModes } from "ME";
-import { jsx } from "jsxProd";
+import { jsx } from "set";
 
-let closure_5;
+let c5;
 let closure_6;
 const require = arg1;
-function _createForOfIteratorHelperLoose(iterable) {
-  let closure_0 = iterable;
-  iterable = "undefined" !== typeof Symbol;
-  if (iterable) {
-    const _Symbol = Symbol;
-    iterable = iterable[Symbol.iterator];
-  }
-  if (!iterable) {
-    iterable = iterable[Symbol.iterator];
-  }
-  if (iterable) {
-    const iter = iterable.call(iterable);
-    const next = iter.next;
-    return next.bind(iter);
-  } else {
-    const _Array = Array;
-    let tmp = iterable;
-    if (!Array.isArray(iterable)) {
-      let tmp2;
-      if (iterable) {
-        if ("string" === typeof iterable) {
-          tmp2 = _arrayLikeToArray(iterable, undefined);
-        } else {
-          const toString = {}.toString;
-          const substr = toString.call(iterable).slice(8, -1);
-          let name = substr;
-          if (tmp3) {
-            name = iterable.constructor.name;
-          }
-          if ("Map" !== name) {
-            if ("Set" !== name) {
-              if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(iterable, undefined);
-              } else {
-                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
-              }
-            }
-            tmp2 = arr;
-          }
-          const _Array2 = Array;
-          arr = Array.from(iterable);
-          const callResult = toString.call(iterable);
-          tmp3 = "Object" === substr && iterable.constructor;
-        }
-      }
-      tmp = tmp2;
-      if (!tmp2) {
-        const _TypeError = TypeError;
-        const typeError = new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
-        throw typeError;
-      }
-    }
-    if (tmp) {
-      closure_0 = tmp;
-    }
-    let c1 = 0;
-    return () => {
-      if (closure_1 >= length.length) {
-        let obj = { done: true };
-      } else {
-        obj = { done: false };
-        closure_1 = tmp3 + 1;
-        obj.value = length[+closure_1];
-      }
-      return obj;
-    };
-  }
-}
-function _arrayLikeToArray(arg0, arg1) {
-  let length;
-  if (tmp) {
-    length = arg0.length;
-  }
-  const ArrayResult = Array(length);
-  for (let num = 0; num < length; num = num + 1) {
-    ArrayResult[num] = arg0[num];
-  }
-  return ArrayResult;
-}
-({ CONTROLS_BUTTON_SIZE_LARGE: closure_5, CONTROLS_BUTTON_SIZE_NORMAL: closure_6 } = VoicePanelControlsModes);
+({ CONTROLS_BUTTON_SIZE_LARGE: c5, CONTROLS_BUTTON_SIZE_NORMAL: closure_6 } = VoicePanelControlsModes);
 let closure_9 = {
   mic(arg0, arg1) {
     const merged = Object.assign(arg1);
-    return jsx(require(15969) /* useMuteHandlers */.MicButton, {}, arg0);
+    return jsx(require(16004) /* PTTButton */.MicButton, {}, arg0);
   },
   ptt(arg0, arg1) {
     const merged = Object.assign(arg1);
-    return jsx(require(15969) /* useMuteHandlers */.PTTButton, {}, arg0);
+    return jsx(require(16004) /* PTTButton */.PTTButton, {}, arg0);
   },
   micConnected(arg0, arg1) {
     const merged = Object.assign(arg1);
-    return jsx(require(15969) /* useMuteHandlers */.MicButton, {}, arg0);
+    return jsx(require(16004) /* PTTButton */.MicButton, {}, arg0);
   },
   connect(arg0, arg1) {
     const merged = Object.assign(arg1);
-    return jsx(importDefault(15972), {}, arg0);
+    return jsx(importDefault(16007), {}, arg0);
   },
   chat(arg0, arg1) {
     const merged = Object.assign(arg1);
-    return jsx(importDefault(15978), {}, arg0);
+    return jsx(importDefault(16013), {}, arg0);
   },
   disconnectCancel(arg0, arg1) {
     const merged = Object.assign(arg1);
-    return jsx(importDefault(15980), {}, arg0);
+    return jsx(importDefault(16015), {}, arg0);
   },
-  video(arg0, arg1, arg2, arg3) {
+  video(arg0, arg1) {
     const merged = Object.assign(arg1);
-    return jsx(importDefault(15982), {}, arg0);
+    return jsx(importDefault(16017), {}, arg0);
   },
   soundboard(arg0, arg1) {
     const merged = Object.assign(arg1);
-    return jsx(importDefault(15984), {}, arg0);
+    return jsx(importDefault(16019), {}, arg0);
   },
   screenshare(arg0, arg1) {
     const merged = Object.assign(arg1);
-    return jsx(importDefault(15986), {}, arg0);
+    return jsx(importDefault(16021), {}, arg0);
   },
   drawerToggle(arg0, arg1) {
     const merged = Object.assign(arg1);
-    return jsx(importDefault(15989), {}, arg0);
+    return jsx(importDefault(16024), {}, arg0);
   }
 };
 let closure_10 = { code: "function useControlsButtonsTsx1(){const{getControlsDefaultWidth,windowDimensions,safeArea}=this.__closure;return getControlsDefaultWidth(windowDimensions.get().width,safeArea.get().left,safeArea.get().right);}" };
 const result = require("VoicePanelControlsModes").fileFinishedImporting("modules/voice_panel/native/controls/useControlsButtons.tsx");
 
 export default function useControlsButtons() {
-  const context = treatment.useContext(safeArea(10015));
+  const context = treatment.useContext(safeArea(10037));
   const windowDimensions = context.windowDimensions;
   safeArea = context.safeArea;
-  const tmp2 = safeArea(15828)(context.channelId);
+  const tmp2 = safeArea(15863)(context.channelId);
   const dependencyMap = tmp2;
-  let obj = safeArea(15892);
+  let obj = safeArea(15927);
   treatment = obj.useConfig({ location: "VoicePanelControlButtons" }).treatment;
   let items = [stateFromStores];
-  stateFromStores = windowDimensions(566).useStateFromStores(items, () => stateFromStores.getMode() === outer1_7.PUSH_TO_TALK);
-  let obj2 = windowDimensions(566);
-  const fn = function n() {
+  stateFromStores = windowDimensions(589).useStateFromStores(items, () => stateFromStores.getMode() === constants.PUSH_TO_TALK);
+  let obj2 = windowDimensions(589);
+  const fn = function o() {
     return windowDimensions(tmp2[19]).getControlsDefaultWidth(windowDimensions.get().width, safeArea.get().left, safeArea.get().right);
   };
-  obj = { getControlsDefaultWidth: windowDimensions(11409).getControlsDefaultWidth, windowDimensions, safeArea };
+  obj = { getControlsDefaultWidth: windowDimensions(11433).getControlsDefaultWidth, windowDimensions, safeArea };
   fn.__closure = obj;
   fn.__workletHash = 16456936876254;
   fn.__initData = closure_10;
-  const derivedValue = windowDimensions(4026).useDerivedValue(fn);
-  const tmp5 = safeArea(8094)(derivedValue);
+  const derivedValue = windowDimensions(4050).useDerivedValue(fn);
+  const tmp5 = safeArea(8118)(derivedValue);
   let closure_5 = tmp5;
   const items1 = [tmp2, stateFromStores, tmp5, treatment];
   return treatment.useMemo(() => {
-    let iter2;
     let c0 = false;
     let c1 = 0;
-    const items = [];
-    const push = items.push;
-    if (treatment) {
-      let obj = { type: "icon-normal", key: "connected-video", render: outer1_9.video };
-      push(obj);
-      if (!tmp) {
-        obj = { type: "icon-normal", key: "connected-mic", render: outer1_9.micConnected };
-        items.push(obj);
-      }
-      if (tmp2 === windowDimensions(tmp2[13]).MobileGoLiveEntrypointTreatment.SCREENSHARE_REPLACES_CHAT) {
-        const obj1 = { type: "icon-normal", key: "connected-screenshare", render: outer1_9.screenshare };
-        items.push(obj1);
+    const mapped = (function getButtons(closure_2, stateFromStores, treatment) {
+      const items = [];
+      const push = items.push;
+      if (closure_2) {
+        let obj = { type: "icon-normal", key: "connected-video", render: null };
+        obj[2] = redux.video;
+        push(obj);
+        if (!stateFromStores) {
+          obj = { type: "icon-normal", key: "connected-mic", render: null };
+          obj[2] = tmp6.micConnected;
+          items.push(obj);
+        }
+        if (treatment === callback(15927).MobileGoLiveEntrypointTreatment.SCREENSHARE_REPLACES_CHAT) {
+          const obj1 = { type: "icon-normal", key: "connected-screenshare", render: null };
+          obj1[2] = tmp6.screenshare;
+          items.push(obj1);
+        } else {
+          const obj2 = { type: "icon-normal", key: "connected-chat", render: null };
+          obj2[2] = tmp6.chat;
+          items.push(obj2);
+        }
+        if (stateFromStores) {
+          const obj3 = { type: "icon-large", key: "connected-ptt", render: null };
+          obj3[2] = tmp6.ptt;
+          items.push(obj3);
+        }
+        if (treatment === tmp10(15927).MobileGoLiveEntrypointTreatment.SCREENSHARE_REPLACES_SOUNDBOARD) {
+          const obj4 = { type: "icon-normal", key: "connected-screenshare", render: null };
+          obj4[2] = tmp6.screenshare;
+          items.push(obj4);
+        } else {
+          const obj5 = { type: "icon-normal", key: "connected-soundboard", render: null };
+          obj5[2] = tmp6.soundboard;
+          items.push(obj5);
+        }
+        const obj6 = { type: "icon-normal", key: "connected-disconnect", render: null };
+        obj6[2] = redux.disconnectCancel;
+        items.push(obj6);
+        tmp10 = callback;
       } else {
-        const obj2 = { type: "icon-normal", key: "connected-chat", render: outer1_9.chat };
-        items.push(obj2);
-      }
-      if (tmp) {
-        const obj3 = { type: "icon-large", key: "connected-ptt", render: outer1_9.ptt };
-        items.push(obj3);
-      }
-      if (tmp2 === windowDimensions(tmp2[13]).MobileGoLiveEntrypointTreatment.SCREENSHARE_REPLACES_SOUNDBOARD) {
-        const obj4 = { type: "icon-normal", key: "connected-screenshare", render: outer1_9.screenshare };
-        items.push(obj4);
-      } else {
-        const obj5 = { type: "icon-normal", key: "connected-soundboard", render: outer1_9.soundboard };
-        items.push(obj5);
-      }
-      const obj6 = { type: "icon-normal", key: "connected-disconnect", render: outer1_9.disconnectCancel };
-      items.push(obj6);
-    } else {
-      obj = { type: "icon-normal", key: "disconnected-mute", render: outer1_9.mic };
-      push(obj);
-      const obj7 = { type: "label", key: "disconnected-connect", render: outer1_9.connect };
-      items.push(obj7);
-      const obj8 = { type: "icon-normal", key: "disconnected-chat", render: outer1_9.chat };
-      items.push(obj8);
-      if (obj12.isMetaQuest()) {
-        const obj9 = { type: "icon-normal", key: "drawer-toggle", render: outer1_9.drawerToggle };
-        items.push(obj9);
-      }
-      const mapped = items.map((type) => {
-        if ("label" === type.type) {
-          let c0 = true;
+        obj = { type: "icon-normal", key: "disconnected-mute", render: null };
+        obj[2] = redux.mic;
+        push(obj);
+        const obj7 = { type: "label", key: "disconnected-connect", render: null };
+        obj7[2] = redux.connect;
+        items.push(obj7);
+        const obj8 = { type: "icon-normal", key: "disconnected-chat", render: null };
+        obj8[2] = redux.chat;
+        items.push(obj8);
+        if (obj12.isMetaQuest()) {
+          const obj9 = { type: "icon-normal", key: "drawer-toggle", render: null };
+          obj9[2] = redux.drawerToggle;
+          items.push(obj9);
         }
-        let tmp = outer2_6;
-        if ("icon-large" === type.type) {
-          closure_1 = closure_1 + 1;
-          tmp = closure_5;
-        }
-        const obj = {};
-        const merged = Object.assign(type);
-        obj["height"] = tmp;
-        let num2 = -1;
-        if ("label" !== type.type) {
-          num2 = tmp;
-        }
-        obj["width"] = num2;
-        obj["x"] = 0;
-        obj["y"] = 0;
-        return obj;
-      });
-      let num3 = 16;
-      let num4 = 16;
-      if (!c0) {
-        num4 = (closure_5 - c1 * closure_5 - (mapped.length - c1) * outer1_6 - 32) / (mapped.length - 1);
+        return items;
       }
-      const tmp38 = outer1_11(mapped);
-      let iter = tmp38();
-      if (!iter.done) {
-        do {
-          let value = iter.value;
-          let width = value.width;
-          if (-1 === width) {
-            let tmp39 = outer1_6;
-            let tmp40 = closure_5;
-            let diff = closure_5 - (32 + (mapped.length - 1) * outer1_6 + (mapped.length - 1) * num4);
-            value.width = diff;
-            width = diff;
-          }
-          let tmp42 = closure_5;
-          value.x = num3 - closure_5 / 2 + width / 2;
-          num3 = num3 + (width + num4);
-          iter2 = tmp38();
-          iter = iter2;
-        } while (!iter2.done);
+    })(closure_2, stateFromStores, treatment).map((type) => {
+      if ("label" === type.type) {
+        let c0 = true;
       }
-      return mapped;
+      let tmp = outer1_6;
+      if ("icon-large" === type.type) {
+        closure_1 = closure_1 + 1;
+        tmp = outer1_5;
+      }
+      const obj = {};
+      const merged = Object.assign(type);
+      obj.height = tmp;
+      let num2 = -1;
+      if ("label" !== type.type) {
+        num2 = tmp;
+      }
+      obj.width = num2;
+      obj.x = 0;
+      obj.y = 0;
+      return obj;
+    });
+    let num = 16;
+    if (!c0) {
+      num = (closure_5 - c1 * closure_5 - (mapped.length - c1) * outer1_6 - 32) / (mapped.length - 1);
     }
+    let num4 = 16;
+    const iter = mapped[Symbol.iterator]();
+    const nextResult = iter.next();
+    while (iter !== undefined) {
+      let tmp7 = nextResult;
+      let width = nextResult.width;
+      let tmp8 = width;
+      if (-1 === width) {
+        let tmp9 = outer1_6;
+        let tmp10 = closure_5;
+        let diff = closure_5 - (32 + (mapped.length - 1) * outer1_6 + (mapped.length - 1) * num);
+        tmp8 = diff;
+        let tmp12 = nextResult;
+        tmp7.width = diff;
+      }
+      let tmp13 = nextResult;
+      let tmp14 = num4;
+      let tmp15 = closure_5;
+      let tmp16 = tmp8;
+      tmp7.x = num4 - closure_5 / 2 + tmp8 / 2;
+      num4 = num4 + (tmp8 + num);
+      continue;
+    }
+    return mapped;
   }, items1);
 };

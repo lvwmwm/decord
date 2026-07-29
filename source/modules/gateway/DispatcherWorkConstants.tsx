@@ -1,62 +1,48 @@
-// Module ID: 12679
-// Function ID: 97927
-// Name: WorkIdleDeadline
-// Dependencies: [6, 7, 2]
+// Module ID: 12701
+// Function ID: 12702
+// Name: DISPATCHER_STANDARD_TIMEOUT_MS
+// Dependencies: [2]
 
-// Module 12679 (WorkIdleDeadline)
-import _classCallCheck from "_classCallCheck";
-import _defineProperties from "_defineProperties";
-
-const tmp2 = (() => {
-  class WorkIdleDeadline {
-    constructor(arg0) {
-      flag = arg1;
-      self = this;
-      if (arg1 === undefined) {
-        flag = false;
-      }
-      tmp = WorkIdleDeadline(self, WorkIdleDeadline);
-      self._deadlineMs = Math.max(2.0833333333333335, arg0);
-      self._browserDeadlineMs = arg0;
-      self._firedDueToMaxTimeout = flag;
-      self._startMs = performance.now();
-      return;
-    }
-  }
-  let obj = {
-    key: "timeRemaining",
-    value() {
-      return Math.max(0, this._deadlineMs - (performance.now() - this._startMs));
-    }
-  };
-  const items = [obj, , , ];
-  obj = {
-    key: "didTimeout",
-    get() {
-      return this._firedDueToMaxTimeout;
-    }
-  };
-  items[1] = obj;
-  obj = {
-    key: "timeSinceExpiration",
-    get() {
-      return performance.now() - (this._startMs + this._deadlineMs);
-    }
-  };
-  items[2] = obj;
-  items[3] = {
-    key: "generateDeadlineMetrics",
-    value() {
-      const obj = { isDeadlineNotIdeal: this._browserDeadlineMs < 2.0833333333333335, deadlineMs: _deadlineMs.toFixed(2) };
-      _deadlineMs = this._deadlineMs;
-      const diff = performance.now() - this._startMs;
-      obj.timeSinceStartMs = diff.toFixed(2);
-      return obj;
-    }
-  };
-  return callback(WorkIdleDeadline, items);
-})();
+// Module 12701 (DISPATCHER_STANDARD_TIMEOUT_MS)
+let c0 = 2.0833333333333335;
 const result = require("set").fileFinishedImporting("modules/gateway/DispatcherWorkConstants.tsx");
+class WorkIdleDeadline {
+  constructor(arg0) {
+    flag = require;
+    if (require === undefined) {
+      flag = false;
+    }
+    obj = Object.create(new.target.prototype);
+    obj._deadlineMs = Math.max(c0, global);
+    obj._browserDeadlineMs = global;
+    obj._firedDueToMaxTimeout = flag;
+    obj._startMs = performance.now();
+    return obj;
+  }
+}
+const prototype = WorkIdleDeadline.prototype;
+prototype["timeRemaining"] = function timeRemaining() {
+  return Math.max(0, this._deadlineMs - (performance.now() - this._startMs));
+};
+Object.defineProperty(prototype, "didTimeout", {
+  get: function didTimeout() {
+    return this._firedDueToMaxTimeout;
+  },
+  set: undefined
+});
+Object.defineProperty(prototype, "timeSinceExpiration", {
+  get: function timeSinceExpiration() {
+    return performance.now() - (this._startMs + this._deadlineMs);
+  },
+  set: undefined
+});
+prototype["generateDeadlineMetrics"] = function generateDeadlineMetrics() {
+  const obj = { isDeadlineNotIdeal: this._browserDeadlineMs < c0, deadlineMs: _deadlineMs.toFixed(2), timeSinceStartMs: null };
+  _deadlineMs = this._deadlineMs;
+  const diff = performance.now() - this._startMs;
+  obj[2] = diff.toFixed(2);
+  return obj;
+};
 
 export const DISPATCHER_STANDARD_TIMEOUT_MS = 50;
 export const DISPATCHER_IDEAL_TIME_LIMIT_MS = 50;
@@ -68,4 +54,4 @@ export const DISPATCHER_LONG_TIMEOUT_MS = 200;
 export const MAX_DISPATCHER_TIMEOUT_MS = 1000;
 export const MAX_DISPATCHER_FLUSH_DEADLINE_TRIES = 2;
 export const DISPATCHER_CALLBACK_MAX_TIME_REMAINING_MS = 50;
-export const WorkIdleDeadline = tmp2;
+export { WorkIdleDeadline };

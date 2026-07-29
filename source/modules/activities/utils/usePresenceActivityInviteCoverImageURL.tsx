@@ -1,12 +1,12 @@
-// Module ID: 12359
-// Function ID: 96121
+// Module ID: 12381
+// Function ID: 12382
 // Name: _getPresenceActivityInviteCoverImageURL
-// Dependencies: [31, 12360, 1825, 7892, 566, 12361, 2]
+// Dependencies: [19, 12382, 1849, 7917, 589, 12383, 2]
 // Exports: getPresenceActivityInviteCoverImageURL, usePresenceActivityInviteCoverImageURL
 
-// Module 12359 (_getPresenceActivityInviteCoverImageURL)
-import result from "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 12381 (_getPresenceActivityInviteCoverImageURL)
+import noop from "noop";
+import getCoverImageURL from "getCoverImageURL";
 
 const require = arg1;
 function _getPresenceActivityInviteCoverImageURL(messageId) {
@@ -18,31 +18,31 @@ function _getPresenceActivityInviteCoverImageURL(messageId) {
   if (null === coverImageURL) {
     return { cachedImageURL: null, imageURL: null };
   } else {
-    const result = 600 * importDefault(1825)();
-    obj = { cachedImageURL: coverImageURL };
+    const result = 600 * importDefault(1849)();
+    obj = { cachedImageURL: null, imageURL: null };
+    obj[0] = coverImageURL;
     let invite_cover_image;
-    if (null != presenceActivity) {
+    if (presenceActivity != null) {
       const assets = presenceActivity.assets;
-      if (null != assets) {
+      if (assets != null) {
         invite_cover_image = assets.invite_cover_image;
       }
     }
     let assetImage = null;
     if (null != invite_cover_image) {
-      assetImage = require(7892) /* _createForOfIteratorHelperLoose */.getAssetImage(presenceActivity.application_id, presenceActivity.assets.invite_cover_image, result);
-      const obj2 = require(7892) /* _createForOfIteratorHelperLoose */;
+      assetImage = require(7917) /* updateAssets */.getAssetImage(presenceActivity.application_id, presenceActivity.assets.invite_cover_image, result);
+      const obj2 = require(7917) /* updateAssets */;
     }
-    if (null != assetImage) {
-      coverImageURL = assetImage;
+    if (assetImage == null) {
+      assetImage = coverImageURL;
     }
-    if (null == coverImageURL) {
-      coverImageURL = application.getCoverImageURL(result);
+    if (assetImage == null) {
+      assetImage = application.getCoverImageURL(result);
     }
-    let tmp6 = null;
-    if (null != coverImageURL) {
-      tmp6 = coverImageURL;
+    if (assetImage == null) {
+      assetImage = null;
     }
-    obj.imageURL = tmp6;
+    obj[1] = assetImage;
     return obj;
   }
 }
@@ -52,16 +52,20 @@ export const usePresenceActivityInviteCoverImageURL = (messageId) => {
   messageId = messageId.messageId;
   const presenceActivity = messageId.presenceActivity;
   const application = messageId.application;
-  const items = [_isNativeReflectConstruct];
+  let cachedImageURL;
+  let imageURL;
+  const items = [getCoverImageURL];
   const items1 = [messageId, presenceActivity, application];
   const stateFromStoresObject = messageId(cachedImageURL[4]).useStateFromStoresObject(items, () => outer1_6({ messageId, presenceActivity, application }), items1);
   cachedImageURL = stateFromStoresObject.cachedImageURL;
-  const imageURL = stateFromStoresObject.imageURL;
+  imageURL = stateFromStoresObject.imageURL;
   const items2 = [cachedImageURL, imageURL, messageId];
   const effect = imageURL.useEffect(() => {
     if (cachedImageURL !== imageURL) {
       let obj = application(cachedImageURL[5]);
-      obj = { messageId, coverImageURL: imageURL };
+      obj = { messageId: null, coverImageURL: null };
+      obj[0] = messageId;
+      obj[1] = tmp;
       obj.setCoverImageURL(obj);
     }
   }, items2);
@@ -73,9 +77,11 @@ export const getPresenceActivityInviteCoverImageURL = function getPresenceActivi
   const tmp = _getPresenceActivityInviteCoverImageURL(obj);
   const imageURL = tmp.imageURL;
   if (tmp.cachedImageURL !== imageURL) {
-    obj = { messageId, coverImageURL: imageURL };
-    importAll(12361).setCoverImageURL(obj);
-    const obj2 = importAll(12361);
+    obj = { messageId: null, coverImageURL: null };
+    obj[0] = messageId;
+    obj[1] = imageURL;
+    importAll(12383).setCoverImageURL(obj);
+    const obj2 = importAll(12383);
   }
   return imageURL;
 };

@@ -1,25 +1,98 @@
-// Module ID: 5525
-// Function ID: 46990
+// Module ID: 5543
+// Function ID: 5544
 // Name: _copy
-// Dependencies: [5, 5526, 2]
+// Dependencies: [5, 5544, 2]
 // Exports: copy, getString
 
-// Module 5525 (_copy)
+// Module 5543 (_copy)
 import asyncGeneratorStep from "asyncGeneratorStep";
 
-async function _copy(arg0, arg1, arg2) {
-  outer2_0(outer2_1[1]).setString(arg0);
-  if (null != arg1) {
-    arg1();
+function _copy() {
+  const self = this;
+  const tmp = callback((arg0, arg1) => {
+    let closure_0 = arg0;
+    let closure_1 = arg1;
+    let c3 = 0;
+    let c2 = 0;
+    return (function*(arg0, arg1) {
+      if (c2 === 2) {
+        c2 = 3;
+        HermesBuiltin.throwTypeError();
+      } else if (tmp3 === 3) {
+        if (arg0 === 1) {
+          throw arg1;
+        } else if (arg0 === 2) {
+          let obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
+        } else {
+          return { value: "HermesInternal", done: null };
+        }
+      } else {
+        try {
+          c2 = 2;
+          if (0 === c3) {
+            if (arg0 === 1) {
+              c2 = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              c2 = 3;
+              obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            } else {
+              let obj1 = callback(table[1]);
+              obj1.setString(callback);
+              if (table != null) {
+                table();
+              }
+              c3 = 1;
+              c2 = 1;
+              obj1 = { value: null, done: false };
+              obj1[0] = Promise.resolve();
+              return obj1;
+            }
+          } else if (arg0 === 1) {
+            c2 = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            c2 = 3;
+            obj = { value: null, done: true };
+            obj[0] = arg1;
+            return obj;
+          } else {
+            c2 = 3;
+            return { value: "HermesInternal", done: null };
+          }
+        } catch (tmp13) {
+          c2 = tmp;
+          throw tmp13;
+        }
+      }
+    })();
+  });
+  const _copy = tmp;
+  const apply = tmp.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
   }
-  yield Promise.resolve();
+  return applyArgumentsResult;
 }
 const result = require("set").fileFinishedImporting("utils/ClipboardUtils.native.tsx");
 
 export const SUPPORTS_COPY = true;
 export const copy = function copy() {
-  return _copy(...arguments);
+  const self = this;
+  const apply = _copy.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
 };
 export const getString = function getString() {
-  return importDefault(5526).getString();
+  return importDefault(5544).getString();
 };

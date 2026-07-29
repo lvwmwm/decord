@@ -1,38 +1,39 @@
-// Module ID: 10840
-// Function ID: 83905
-// Dependencies: [31, 27, 33, 4165, 5118, 10801, 10797, 2]
+// Module ID: 10864
+// Function ID: 10865
+// Dependencies: [19, 17, 21, 4189, 5140, 10825, 10821, 2]
 
-// Module 10840
+// Module 10864
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import importAllResult from "result";
+import createCacheKey from "createCacheKey";
+import importAllResult from "noop";
 
-let closure_4;
-let closure_5;
+let c4;
+let c5;
 const require = arg1;
-({ jsx: closure_4, jsxs: closure_5 } = jsxProd);
-let obj = {};
+({ jsx: c4, jsxs: c5 } = jsxProd);
+let obj = { header: null };
 obj = { height: require("NAV_BAR_HEIGHT").NAV_BAR_HEIGHT, flexDirection: "row", alignItems: "center", paddingHorizontal: 8, marginTop: 4, overflow: "visible" };
-obj.header = obj;
-let closure_6 = _createForOfIteratorHelperLoose.createStyles(obj);
-const memoResult = require("result").memo((channel) => {
+obj[0] = obj;
+let closure_6 = createCacheKey.createStyles(obj);
+const memoResult = require("noop").memo((channel) => {
   channel = channel.channel;
-  const tmp2 = importDefault(10801)(channel.id);
+  const tmp3 = importDefault(10825)(channel.id);
   let speaker;
-  if (null != tmp2) {
-    speaker = tmp2.speaker;
+  if (tmp3 != null) {
+    speaker = tmp3.speaker;
   }
-  let obj = { style: callback2().header, pointerEvents: "box-none" };
-  const items = [callback(require(10797) /* closeStageModal */.HideStageChannelCallIcon, { channel }), callback(require(10797) /* closeStageModal */.StageChannelCallHeader, { channel }), , ];
+  let obj = { style: callback2().header, pointerEvents: "box-none", children: null };
+  const items = [callback(require(10821) /* HideStageChannelCallIcon */.HideStageChannelCallIcon, { channel }), callback(require(10821) /* HideStageChannelCallIcon */.StageChannelCallHeader, { channel }), , ];
   if (speaker) {
-    obj = { channelId: channel.id };
-    speaker = callback(require(10797) /* closeStageModal */.MusicMuteButton, obj);
+    obj = { channelId: null };
+    obj[0] = channel.id;
+    speaker = tmp7(tmp8(10821).MusicMuteButton, obj);
   }
   items[2] = speaker;
   obj = { channelId: channel.id };
-  items[3] = callback(require(10797) /* closeStageModal */.StageInviteButton, obj);
-  obj.children = items;
+  items[3] = callback(require(10821) /* HideStageChannelCallIcon */.StageInviteButton, obj);
+  obj[2] = items;
   return closure_5(View, obj);
 });
 const result = require("jsxProd").fileFinishedImporting("modules/stage_channels/native/components/ModeratorStartStageHeader.tsx");

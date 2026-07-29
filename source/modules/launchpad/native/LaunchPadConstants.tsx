@@ -1,23 +1,23 @@
-// Module ID: 10455
-// Function ID: 80633
+// Module ID: 10479
+// Function ID: 10480
 // Name: LAUNCH_PAD_SPRING_CONFIG
-// Dependencies: [27, 477, 4145, 2]
+// Dependencies: [17, 500, 4169, 2]
 
-// Module 10455 (LAUNCH_PAD_SPRING_CONFIG)
+// Module 10479 (LAUNCH_PAD_SPRING_CONFIG)
 import { Dimensions } from "get ActivityIndicator";
 import set from "set";
-import set from "getSystemVersion";
+import set from "DCDDeviceManager";
 
 const size = Dimensions.get("screen");
 let num = 24;
 if (!set.isAndroid()) {
-  const _module1 = require("getSystemVersion");
-  let num3 = 13;
+  const _module1 = require("DCDDeviceManager");
+  let num2 = 13;
   if (!_module1.isIpadOS()) {
     const _Math = Math;
-    num3 = 0.09 * Math.min(size.width, size.height);
+    num2 = 0.09 * Math.min(size.width, size.height);
   }
-  num = num3;
+  num = num2;
 }
 const result = set.fileFinishedImporting("modules/launchpad/native/LaunchPadConstants.tsx");
 

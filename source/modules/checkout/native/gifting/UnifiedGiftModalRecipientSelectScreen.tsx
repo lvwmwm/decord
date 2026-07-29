@@ -1,28 +1,29 @@
-// Module ID: 8788
-// Function ID: 69335
+// Module ID: 8812
+// Function ID: 8813
 // Name: UnifiedGiftModalRecipientSelectScreen
-// Dependencies: [31, 27, 8789, 33, 4165, 689, 1456, 8790, 8750, 2]
+// Dependencies: [19, 17, 8813, 21, 4189, 712, 1480, 8814, 8774, 2]
 // Exports: default
 
-// Module 8788 (UnifiedGiftModalRecipientSelectScreen)
-import "result";
+// Module 8812 (UnifiedGiftModalRecipientSelectScreen)
+import "noop";
 import { View } from "get ActivityIndicator";
 import { UserRowModes } from "UserRowModes";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
 const require = arg1;
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { flex: 1, paddingTop: 16, backgroundColor: require("_createForOfIteratorHelperLoose").colors.MOBILE_ACTIONSHEET_BACKGROUND };
-_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+createCacheKey = { container: null };
+createCacheKey = { flex: 1, paddingTop: 16, backgroundColor: require("Themes").colors.MOBILE_ACTIONSHEET_BACKGROUND };
+createCacheKey[0] = createCacheKey;
+createCacheKey = createCacheKey.createStyles(createCacheKey);
 const result = require("UserRowModes").fileFinishedImporting("modules/checkout/native/gifting/UnifiedGiftModalRecipientSelectScreen.tsx");
 
 export default function UnifiedGiftModalRecipientSelectScreen(setRecipientUser) {
   setRecipientUser = setRecipientUser.setRecipientUser;
-  let obj = setRecipientUser(1456);
-  const importDefault = obj.useNavigation();
-  obj = { style: _createForOfIteratorHelperLoose().container, children: jsx(importDefault(8790), obj) };
+  let importDefault;
+  let obj = setRecipientUser(1480);
+  importDefault = obj.useNavigation();
+  obj = { style: createCacheKey().container, children: jsx(importDefault(8814), obj) };
   obj = {
     onSelectUser(user) {
       setRecipientUser(user);

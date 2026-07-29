@@ -1,270 +1,144 @@
-// Module ID: 5718
-// Function ID: 49352
-// Name: _createForOfIteratorHelperLoose
-// Dependencies: [57, 6, 7, 5719, 5720, 2]
+// Module ID: 5736
+// Function ID: 5737
+// Name: totalLength
+// Dependencies: [32, 5737, 5738, 2]
 
-// Module 5718 (_createForOfIteratorHelperLoose)
+// Module 5736 (totalLength)
 import _slicedToArray from "_slicedToArray";
-import _classCallCheck from "_classCallCheck";
-import _defineProperties from "_defineProperties";
 
 const require = arg1;
-function _createForOfIteratorHelperLoose(iterable) {
-  let closure_0 = iterable;
-  iterable = "undefined" !== typeof Symbol;
-  if (iterable) {
-    const _Symbol = Symbol;
-    iterable = iterable[Symbol.iterator];
+const result = require("next").fileFinishedImporting("modules/app_database/util/ExtendedMemoryLru.tsx");
+class ExtendedMemoryLru {
+  constructor(arg0, arg1) {
+    obj = Object.create(new.target.prototype);
+    lru = new require("length").Lru(global);
+    obj.primary = lru;
+    lru1 = new require("length").Lru(arg1);
+    obj.extended = lru1;
+    return obj;
   }
-  if (!iterable) {
-    iterable = iterable[Symbol.iterator];
+}
+const prototype = ExtendedMemoryLru.prototype;
+Object.defineProperty(prototype, "totalLength", {
+  get: function totalLength() {
+    return this.primary.length + this.extended.length;
+  },
+  set: undefined
+});
+Object.defineProperty(prototype, "primaryCapacity", {
+  get: function primaryCapacity() {
+    return this.primary.capacity;
+  },
+  set: undefined
+});
+Object.defineProperty(prototype, "extendedCapacity", {
+  get: function extendedCapacity() {
+    return this.extended.capacity;
+  },
+  set: undefined
+});
+prototype["clear"] = function clear() {
+  const primary = this.primary;
+  primary.clear();
+  const extended = this.extended;
+  extended.clear();
+};
+prototype["has"] = function has(arg0) {
+  const primary = this.primary;
+  return primary.has(arg0);
+};
+prototype["hasExtended"] = function hasExtended(id) {
+  const primary = this.primary;
+  let hasItem = primary.has(id);
+  if (!hasItem) {
+    const extended = this.extended;
+    hasItem = extended.has(id);
   }
-  if (iterable) {
-    const iter = iterable.call(iterable);
-    const next = iter.next;
-    return next.bind(iter);
-  } else {
-    const _Array = Array;
-    let tmp = iterable;
-    if (!Array.isArray(iterable)) {
-      let tmp2;
-      if (iterable) {
-        if ("string" === typeof iterable) {
-          tmp2 = _arrayLikeToArray(iterable, undefined);
-        } else {
-          const toString = {}.toString;
-          const substr = toString.call(iterable).slice(8, -1);
-          let name = substr;
-          if (tmp3) {
-            name = iterable.constructor.name;
-          }
-          if ("Map" !== name) {
-            if ("Set" !== name) {
-              if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(iterable, undefined);
-              } else {
-                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
-              }
-            }
-            tmp2 = arr;
-          }
-          const _Array2 = Array;
-          arr = Array.from(iterable);
-          const callResult = toString.call(iterable);
-          tmp3 = "Object" === substr && iterable.constructor;
-        }
-      }
-      tmp = tmp2;
-      if (!tmp2) {
-        const _TypeError = TypeError;
-        const typeError = new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
-        throw typeError;
-      }
-    }
-    if (tmp) {
-      closure_0 = tmp;
-    }
-    let c1 = 0;
-    return () => {
-      if (closure_1 >= length.length) {
-        let obj = { done: true };
+  return hasItem;
+};
+prototype["get"] = function get(arg0) {
+  const primary = this.primary;
+  return primary.get(arg0);
+};
+prototype["put"] = function put(arg0, arg1) {
+  const primary = this.primary;
+  const putResult = primary.put(arg0, arg1);
+  if (undefined !== putResult) {
+    const extended = this.extended;
+    extended.put(putResult[0], putResult[1]);
+  }
+};
+prototype["delete"] = function delete(arg0) {
+  const primary = this.primary;
+  let deleteResult = primary.delete(arg0);
+  const extended = this.extended;
+  this.upstreamItems();
+  if (!deleteResult) {
+    deleteResult = deleteResult1;
+  }
+  return deleteResult;
+};
+prototype["upstreamItems"] = function upstreamItems() {
+  const self = this;
+  if (this.canUpstreamItems()) {
+    const extended = self.extended;
+    const entries = extended.entries();
+    const obj = entries[Symbol.iterator]();
+    while (obj !== undefined) {
+      let tmp6 = callback;
+      let tmp7 = callback(tmp4, 2);
+      let first = tmp7[0];
+      let primary = self.primary;
+      let putResult = primary.put(first, tmp7[1]);
+      let extended2 = self.extended;
+      let deleteResult = extended2.delete(first);
+      if (self.canUpstreamItems()) {
+        continue;
       } else {
-        obj = { done: false };
-        closure_1 = tmp3 + 1;
-        obj.value = length[+closure_1];
+        let tmp11 = obj;
+        obj.return();
+        break;
       }
-      return obj;
-    };
+      break;
+    }
   }
-}
-function _arrayLikeToArray(arg0, arg1) {
-  let length;
+};
+prototype["canUpstreamItems"] = function canUpstreamItems() {
+  let tmp = this.primary.length < this.primary.capacity;
   if (tmp) {
-    length = arg0.length;
+    tmp = this.extended.length > 0;
   }
-  const ArrayResult = Array(length);
-  for (let num = 0; num < length; num = num + 1) {
-    ArrayResult[num] = arg0[num];
-  }
-  return ArrayResult;
-}
-let tmp2 = (() => {
-  class ExtendedMemoryLru {
-    constructor(arg0, arg1) {
-      tmp = outer1_4(this, ExtendedMemoryLru);
-      lru = new ExtendedMemoryLru(outer1_2[3]).Lru(arg0);
-      this.primary = lru;
-      lru1 = new ExtendedMemoryLru(outer1_2[3]).Lru(arg1);
-      this.extended = lru1;
-      return;
-    }
-  }
-  let obj = {
-    key: "totalLength",
-    get() {
-      return this.primary.length + this.extended.length;
-    }
-  };
-  const items = [obj, , , , , , , , , , , , , , , , ];
-  obj = {
-    key: "primaryCapacity",
-    get() {
-      return this.primary.capacity;
-    }
-  };
-  items[1] = obj;
-  obj = {
-    key: "extendedCapacity",
-    get() {
-      return this.extended.capacity;
-    }
-  };
-  items[2] = obj;
-  items[3] = {
-    key: "clear",
-    value() {
-      const primary = this.primary;
-      primary.clear();
-      const extended = this.extended;
-      extended.clear();
-    }
-  };
-  items[4] = {
-    key: "has",
-    value(arg0) {
-      const primary = this.primary;
-      return primary.has(arg0);
-    }
-  };
-  items[5] = {
-    key: "hasExtended",
-    value(arg0) {
-      const primary = this.primary;
-      let hasItem = primary.has(arg0);
-      if (!hasItem) {
-        const extended = this.extended;
-        hasItem = extended.has(arg0);
-      }
-      return hasItem;
-    }
-  };
-  items[6] = {
-    key: "get",
-    value(arg0) {
-      const primary = this.primary;
-      return primary.get(arg0);
-    }
-  };
-  items[7] = {
-    key: "put",
-    value(arg0, arg1) {
-      const primary = this.primary;
-      const putResult = primary.put(arg0, arg1);
-      if (undefined !== putResult) {
-        const extended = this.extended;
-        extended.put(putResult[0], putResult[1]);
-      }
-    }
-  };
-  items[8] = {
-    key: "delete",
-    value(arg0) {
-      const primary = this.primary;
-      let deleteResult = primary.delete(arg0);
-      const extended = this.extended;
-      this.upstreamItems();
-      if (!deleteResult) {
-        deleteResult = deleteResult1;
-      }
-      return deleteResult;
-    }
-  };
-  items[9] = {
-    key: "upstreamItems",
-    value() {
-      const self = this;
-      if (this.canUpstreamItems()) {
-        const extended = self.extended;
-        const tmp2 = outer1_6(extended.entries());
-        let iter = tmp2();
-        if (!iter.done) {
-          const tmp4 = outer1_3(iter.value, 2);
-          const first = tmp4[0];
-          const primary = self.primary;
-          primary.put(first, tmp4[1]);
-          const extended2 = self.extended;
-          extended2.delete(first);
-          while (self.canUpstreamItems()) {
-            let iter2 = tmp2();
-            iter = iter2;
-            if (iter2.done) {
-              break;
-            }
-          }
-        }
-      }
-    }
-  };
-  items[10] = {
-    key: "canUpstreamItems",
-    value() {
-      let tmp = this.primary.length < this.primary.capacity;
-      if (tmp) {
-        tmp = this.extended.length > 0;
-      }
-      return tmp;
-    }
-  };
-  items[11] = {
-    key: "entries",
-    value() {
-      const primary = this.primary;
-      return primary.entries();
-    }
-  };
-  items[12] = {
-    key: "keys",
-    value() {
-      const primary = this.primary;
-      return primary.keys();
-    }
-  };
-  items[13] = {
-    key: "values",
-    value() {
-      const primary = this.primary;
-      return primary.values();
-    }
-  };
-  items[14] = {
-    key: "allEntries",
-    value() {
-      const extended = this.extended;
-      const primary = this.primary;
-      const entries = extended.entries();
-      return outer1_1(outer1_2[4]).chain(entries, primary.entries());
-    }
-  };
-  items[15] = {
-    key: "allKeys",
-    value() {
-      const extended = this.extended;
-      const primary = this.primary;
-      const keys = extended.keys();
-      return outer1_1(outer1_2[4]).chain(keys, primary.keys());
-    }
-  };
-  items[16] = {
-    key: "allValues",
-    value() {
-      const extended = this.extended;
-      const primary = this.primary;
-      const values = extended.values();
-      return outer1_1(outer1_2[4]).chain(values, primary.values());
-    }
-  };
-  return callback(ExtendedMemoryLru, items);
-})();
-const result = require("_defineProperties").fileFinishedImporting("modules/app_database/util/ExtendedMemoryLru.tsx");
+  return tmp;
+};
+prototype["entries"] = function entries() {
+  const primary = this.primary;
+  return primary.entries();
+};
+prototype["keys"] = function keys() {
+  const primary = this.primary;
+  return primary.keys();
+};
+prototype["values"] = function values() {
+  const primary = this.primary;
+  return primary.values();
+};
+prototype["allEntries"] = function allEntries() {
+  const extended = this.extended;
+  const primary = this.primary;
+  const entries = extended.entries();
+  return importAll(5738).chain(entries, primary.entries());
+};
+prototype["allKeys"] = function allKeys() {
+  const extended = this.extended;
+  const primary = this.primary;
+  const keys = extended.keys();
+  return importAll(5738).chain(keys, primary.keys());
+};
+prototype["allValues"] = function allValues() {
+  const extended = this.extended;
+  const primary = this.primary;
+  const values = extended.values();
+  return importAll(5738).chain(values, primary.values());
+};
 
-export const ExtendedMemoryLru = tmp2;
+export { ExtendedMemoryLru };

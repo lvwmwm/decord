@@ -1,11 +1,11 @@
-// Module ID: 15460
-// Function ID: 117863
+// Module ID: 15494
+// Function ID: 15495
 // Name: ChannelSubtitle
-// Dependencies: [31, 33, 10264, 4161, 15158, 10261, 2]
+// Dependencies: [19, 21, 10285, 4185, 15191, 10282, 2]
 // Exports: renderChannelSubtitle
 
-// Module 15460 (ChannelSubtitle)
-import "result";
+// Module 15494 (ChannelSubtitle)
+import "noop";
 import { jsx } from "jsxProd";
 
 const require = arg1;
@@ -19,26 +19,25 @@ function ChannelSubtitle(arg0) {
   let textProps;
   ({ muted, textProps } = arg0);
   ({ connected, channelId, guildId, layout, subtitle } = arg0);
-  let obj = require(15158) /* getChannelSubtitleData */;
+  let obj = require(15191) /* getChannelSubtitleData */;
   const channelSubtitleData = obj.getChannelSubtitleData(subtitle);
   if (null == channelSubtitleData) {
     return null;
   } else {
     obj = {};
     const merged = Object.assign(textProps);
-    obj = { content: channelSubtitleData.subtitle };
-    let tmp9 = null != muted;
-    if (tmp9) {
-      tmp9 = muted;
+    obj = { content: null, muted: null, channelId: null, guildId: null, layout: null, color: "text-muted", disableAnimatedEmoji: null };
+    obj[0] = channelSubtitleData.subtitle;
+    if (muted == null) {
+      muted = false;
     }
-    obj.muted = tmp9;
-    obj.channelId = channelId;
-    obj.guildId = guildId;
-    obj.layout = layout;
-    obj.color = "text-muted";
-    obj.disableAnimatedEmoji = !("voice" === channelSubtitleData.type && connected);
-    obj["children"] = require(10261) /* getRules */.renderMessagePreviewMarkup(obj);
-    return jsx(require(4161) /* Text */.Text, { content: channelSubtitleData.subtitle });
+    obj[1] = muted;
+    obj[2] = channelId;
+    obj[3] = guildId;
+    obj[4] = layout;
+    obj[6] = !("voice" === channelSubtitleData.type && connected);
+    obj.children = tmp(10282).renderMessagePreviewMarkup(obj);
+    return jsx(tmp(4185).Text, { content: null, muted: null, channelId: null, guildId: null, layout: null, color: "text-muted", disableAnimatedEmoji: null });
   }
 }
 const result = require("getLayoutStyles").fileFinishedImporting("modules/main_tabs_v2/native/shared_components/guild_channels/ChannelSubtitle.tsx");
@@ -50,17 +49,24 @@ export const renderChannelSubtitle = function renderChannelSubtitle(arg0) {
   if (null == subtitle) {
     return null;
   } else {
-    let obj = { variant: require(10264) /* getLayoutStyles */.getLayoutStyles(layout).messagePreview.text.variant, color: "text-muted", lineClamp: 1, maxFontSizeMultiplier: 1.75 };
-    if ("string" === typeof subtitle) {
+    let obj = { variant: null, color: "text-muted", lineClamp: 1, maxFontSizeMultiplier: 1.75 };
+    obj[0] = require(10285) /* getLayoutStyles */.getLayoutStyles(layout).messagePreview.text.variant;
+    if (typeof subtitle === "y") {
       obj = {};
       const merged = Object.assign(obj);
-      obj["children"] = subtitle;
-      let tmp7 = jsx(require(4161) /* Text */.Text, {});
+      obj.children = subtitle;
+      let tmp9 = jsx(require(4185) /* Text */.Text, {});
     } else {
-      obj = { channelId: tmp2, guildId: tmp3, layout, subtitle, muted: tmp, connected: tmp4 };
-      obj.textProps = obj;
-      tmp7 = <ChannelSubtitle channelId={tmp2} guildId={tmp3} layout={layout} subtitle={subtitle} muted={tmp} connected={tmp4} />;
+      obj = { channelId: null, guildId: null, layout: null, subtitle: null, muted: null, connected: null, textProps: null };
+      obj[0] = tmp2;
+      obj[1] = tmp3;
+      obj[2] = layout;
+      obj[3] = subtitle;
+      obj[4] = tmp;
+      obj[5] = tmp4;
+      obj[6] = obj;
+      tmp9 = <ChannelSubtitle channelId={null} guildId={null} layout={null} subtitle={null} muted={null} connected={null} textProps={null} />;
     }
-    return tmp7;
+    return tmp9;
   }
 };

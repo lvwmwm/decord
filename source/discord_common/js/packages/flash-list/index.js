@@ -1,85 +1,79 @@
-// Module ID: 6655
-// Function ID: 58645
-// Name: useModalDismissGuardRefreshControl
-// Dependencies: [31, 27, 33, 477, 5389, 4026, 5388, 5223, 2]
+// Module ID: 6676
+// Function ID: 6677
+// Name: noop
+// Dependencies: [19, 17, 21, 500, 5411, 4050, 5410, 5245, 2]
 
-// Module 6655 (useModalDismissGuardRefreshControl)
-import importAllResult from "result";
+// Module 6676 (noop)
+import importAllResult from "noop";
 import { RefreshControl } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
 import set from "set";
-import importDefaultResult from "module_4026";
-import importDefaultResult1 from "module_4026";
+import importDefaultResult from "module_4050";
+import importDefaultResult1 from "module_4050";
 import set from "jsxProd";
 
 const require = arg1;
-function useModalDismissGuardRefreshControl(arg0, arg1) {
-  let closure_0 = arg0;
-  let closure_1 = arg1;
-  const items = [arg0, arg1];
-  return importAllResult.useMemo(() => {
-    if (null == closure_1) {
-      if (true === callback) {
-        let obj = callback(outer1_2[3]);
-        if (obj.isIOS()) {
-          obj = { refreshing: false, onRefresh: outer1_7, tintColor: "transparent" };
-          let tmp4 = outer1_5(outer1_4, obj);
-        }
-        return tmp4;
-      }
-    }
-    tmp4 = closure_1;
-  }, items);
-}
-let tmp2;
+let c3 = importAllResult;
+let obj;
 if (set.isAndroid()) {
-  let obj = { disabled: true };
-  tmp2 = obj;
+  obj = { disabled: true };
 }
-let closure_6 = tmp2;
 function noop() {
 
 }
 const forwardRefResult = importAllResult.forwardRef((arg0, ref) => {
+  obj = { maintainVisibleContentPosition: obj, ref };
   const merged = Object.assign(arg0);
-  return jsx(require(5389).FlashList, { maintainVisibleContentPosition: closure_6, ref });
+  return jsx(require(5411).FlashList, { maintainVisibleContentPosition: obj, ref });
 });
-let closure_8 = require("module_4026").createAnimatedComponent(require("module_5389").FlashList);
+let closure_8 = require("module_4050").createAnimatedComponent(require("module_5411").FlashList);
 const forwardRefResult1 = importAllResult.forwardRef((arg0, ref) => {
+  obj = { maintainVisibleContentPosition: obj, ref };
   const merged = Object.assign(arg0);
-  return <closure_8 maintainVisibleContentPosition={closure_6} ref={arg1} />;
+  return <closure_8 maintainVisibleContentPosition={obj} ref={arg1} />;
 });
 const forwardRefResult2 = importAllResult.forwardRef((arg0, ref) => {
-  let obj = Object.create(null);
-  obj.preventNativeModalDismiss = 0;
-  const merged = Object.assign(arg0, obj);
-  obj = { ref, maintainVisibleContentPosition: closure_6, masonry: true };
+  const merged = Object.assign(arg0, Object.create(null));
+  obj = { ref, maintainVisibleContentPosition: obj, masonry: true };
   const merged1 = Object.assign(merged);
-  return jsx(require(5389).FlashList, { ref, maintainVisibleContentPosition: closure_6, masonry: true });
+  return jsx(require(5411).FlashList, { ref, maintainVisibleContentPosition: obj, masonry: true });
 });
-let closure_9 = require("module_4026").createAnimatedComponent(require("module_5389").FlashList);
+let closure_9 = require("module_4050").createAnimatedComponent(require("module_5411").FlashList);
 const forwardRefResult3 = importAllResult.forwardRef((arg0, ref) => {
   let preventNativeModalDismiss;
   let refreshControl;
   ({ preventNativeModalDismiss, refreshControl } = arg0);
-  let obj = Object.create(null);
-  obj.preventNativeModalDismiss = 0;
-  obj.refreshControl = 0;
-  const merged = Object.assign(arg0, obj);
-  obj = { ref, maintainVisibleContentPosition: closure_6 };
-  const tmp3 = useModalDismissGuardRefreshControl(preventNativeModalDismiss, refreshControl);
+  const merged = Object.assign(arg0, Object.create(null));
+  const items = [preventNativeModalDismiss, refreshControl];
+  const memo = importAllResult.useMemo(() => {
+    let tmp2 = refreshControl;
+    if (null == refreshControl) {
+      tmp2 = tmp;
+      if (true === preventNativeModalDismiss) {
+        let obj = preventNativeModalDismiss(outer1_2[3]);
+        tmp2 = tmp;
+        if (obj.isIOS()) {
+          obj = { refreshing: false, onRefresh: null, tintColor: "transparent" };
+          obj[1] = outer1_7;
+          tmp2 = outer1_5(outer1_4, obj);
+        }
+      }
+    }
+    return tmp2;
+  }, items);
+  obj = { ref, maintainVisibleContentPosition: obj };
   const merged1 = Object.assign(merged);
-  obj["refreshControl"] = tmp3;
-  return jsx(importDefault(5388), { ref, maintainVisibleContentPosition: closure_6 });
+  obj.refreshControl = memo;
+  return jsx(refreshControl(5410), { ref, maintainVisibleContentPosition: obj });
 });
 const result = set.fileFinishedImporting("../discord_common/js/packages/flash-list/index.js");
-for (const key10073 in require("module_5389")) {
-  let tmp9 = key10073;
-  arg5[key10073] = require("module_5389")[key10073];
+for (const key10063 in require("module_5411")) {
+  let tmp8 = key10063;
+  arg5[key10063] = require("module_5411")[key10063];
   continue;
 }
 
-export const defaultMVCPConfig = tmp2;
+export const defaultMVCPConfig = obj;
 export const FlashList = forwardRefResult;
 export const AnimatedFlashList = forwardRefResult1;
 export const MasonryFlashList = forwardRefResult2;
@@ -88,12 +82,27 @@ export const BottomSheetMasonryFlashList = importAllResult.forwardRef((arg0, ref
   let preventNativeModalDismiss;
   let refreshControl;
   ({ preventNativeModalDismiss, refreshControl } = arg0);
-  let obj = Object.create(null);
-  obj.preventNativeModalDismiss = 0;
-  obj.refreshControl = 0;
-  const merged = Object.assign(arg0, obj);
-  obj = { ref, maintainVisibleContentPosition: closure_6, masonry: true, renderScrollComponent: require(5223) /* BottomSheetModal */.BottomSheetScrollView };
+  const merged = Object.assign(arg0, Object.create(null));
+  const items = [preventNativeModalDismiss, refreshControl];
+  obj = { ref, maintainVisibleContentPosition: obj, masonry: true, renderScrollComponent: null };
+  const memo = importAllResult.useMemo(() => {
+    let tmp2 = refreshControl;
+    if (null == refreshControl) {
+      tmp2 = tmp;
+      if (true === preventNativeModalDismiss) {
+        let obj = preventNativeModalDismiss(outer1_2[3]);
+        tmp2 = tmp;
+        if (obj.isIOS()) {
+          obj = { refreshing: false, onRefresh: null, tintColor: "transparent" };
+          obj[1] = outer1_7;
+          tmp2 = outer1_5(outer1_4, obj);
+        }
+      }
+    }
+    return tmp2;
+  }, items);
+  obj[3] = preventNativeModalDismiss(5245).BottomSheetScrollView;
   const merged1 = Object.assign(merged);
-  obj["refreshControl"] = useModalDismissGuardRefreshControl(preventNativeModalDismiss, refreshControl);
-  return <closure_9 ref={arg1} maintainVisibleContentPosition={closure_6} masonry renderScrollComponent={require(5223) /* BottomSheetModal */.BottomSheetScrollView} />;
+  obj.refreshControl = memo;
+  return <closure_9 ref={arg1} maintainVisibleContentPosition={obj} masonry renderScrollComponent={null} />;
 });

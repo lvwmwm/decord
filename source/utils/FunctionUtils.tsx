@@ -1,11 +1,13 @@
-// Module ID: 1917
-// Function ID: 21614
+// Module ID: 1941
+// Function ID: 1942
 // Name: areArraysShallowlyEqual
 // Dependencies: [2]
-// Exports: cachedFunction, clearObject, isPlainObjectEmpty
+// Exports: areArraysShallowlyEqual, cachedFunction, clearObject, isPlainObjectEmpty
 
-// Module 1917 (areArraysShallowlyEqual)
-function areArraysShallowlyEqual(arg0, arg1) {
+// Module 1941 (areArraysShallowlyEqual)
+const result = require("set").fileFinishedImporting("utils/FunctionUtils.tsx");
+
+export const areArraysShallowlyEqual = function areArraysShallowlyEqual(arg0, arg1) {
   if (arg0 === arg1) {
     return true;
   } else {
@@ -25,17 +27,39 @@ function areArraysShallowlyEqual(arg0, arg1) {
     }
     return false;
   }
-}
-const result = require("set").fileFinishedImporting("utils/FunctionUtils.tsx");
-
-export { areArraysShallowlyEqual };
+};
 export function cachedFunction(arg0) {
   let closure_0 = arg0;
   let c1 = null;
   let c2 = null;
-  return (arg0) => {
+  return () => {
     const items = [...arguments];
-    if (!callback(items, items)) {
+    let flag = true;
+    if (items !== items) {
+      flag = false;
+      if (null != arr2) {
+        flag = false;
+        if (null != items) {
+          flag = false;
+          if (arr2.length === items.length) {
+            let num2 = 0;
+            flag = true;
+            if (0 < arr2.length) {
+              flag = false;
+              while (arr2[num2] === items[num2]) {
+                let sum = num2 + 1;
+                num2 = sum;
+                flag = true;
+                if (sum >= length) {
+                  break;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    if (!flag) {
       const items1 = [];
       HermesBuiltin.arraySpread(items, 0);
       let closure_2 = HermesBuiltin.apply(items1, undefined);
@@ -55,7 +79,7 @@ export const clearObject = function clearObject(obj) {
     continue;
   }
 };
-export function isPlainObjectEmpty(arg0) {
+export const isPlainObjectEmpty = function isPlainObjectEmpty(arg0) {
   const keys = Object.keys();
   if (keys !== undefined) {
     if (keys[tmp] !== undefined) {
@@ -63,4 +87,4 @@ export function isPlainObjectEmpty(arg0) {
     }
   }
   return true;
-}
+};

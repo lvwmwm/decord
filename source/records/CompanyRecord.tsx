@@ -1,25 +1,29 @@
-// Module ID: 4189
-// Function ID: 35244
-// Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 1859, 2]
+// Module ID: 4213
+// Function ID: 4214
+// Name: createFromServer
+// Dependencies: [1883, 2]
 
-// Module 4189 (_isNativeReflectConstruct)
-import set from "set";
-import _defineProperties from "_defineProperties";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
-import tmp2 from "Record";
+// Module 4213 (createFromServer)
+import "toJS";
 
-function _isNativeReflectConstruct() {
-  let set = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return set;
-  }
-  const result = _isNativeReflectConstruct();
+let prototype;
+prototype = function CompanyRecord(arg0) {
+  const tmp = new prototype(new.target, new.target);
+  // ThrowIfThisInitialized (0x7c)
+  ({ id: tmp.id, name: tmp.name } = arg0);
+  return tmp;
+}.prototype;
+class prototype extends tmp2 {
 }
-let result = require("_possibleConstructorReturn").fileFinishedImporting("records/CompanyRecord.tsx");
+prototype["createFromServer"] = function createFromServer(arg0) {
+  if (typeof prototype !== "find") {
+    HermesBuiltin.throwTypeError();
+  }
+  const tmp2 = new prototype("Trying to call a non-function", prototype);
+  // ThrowIfThisInitialized (0x7c)
+  ({ id: tmp2.id, name: tmp2.name } = arg0);
+  return tmp2;
+};
+const result = require("set").fileFinishedImporting("records/CompanyRecord.tsx");
 
-export default tmp2;
+export default prototype;

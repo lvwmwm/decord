@@ -1,12 +1,12 @@
-// Module ID: 8838
-// Function ID: 69798
+// Module ID: 8862
+// Function ID: 8863
 // Name: isStableVoiceStateEqual
-// Dependencies: [4212, 4181, 620, 566, 2]
-// Exports: useMuteDeafenIconState, useVideoIconState
+// Dependencies: [4236, 4205, 643, 589, 2]
+// Exports: useMuteDeafenIconState, useStableVideoState, useStableVoiceParticipant, useVideoIconState
 
-// Module 8838 (isStableVoiceStateEqual)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_4 from "_isNativeReflectConstruct";
+// Module 8862 (isStableVoiceStateEqual)
+import _detectH265HardwareDecode from "_detectH265HardwareDecode";
+import updateVoiceState from "updateVoiceState";
 
 const require = arg1;
 function isStableVoiceStateEqual(arg0, arg1) {
@@ -14,56 +14,11 @@ function isStableVoiceStateEqual(arg0, arg1) {
   if (!tmp) {
     let tmp3 = null != arg0 && null != arg1;
     if (tmp3) {
-      tmp3 = importDefault(620)(arg0, arg1);
+      tmp3 = importDefault(643)(arg0, arg1);
     }
     tmp = tmp3;
   }
   return tmp;
-}
-function useStableVoiceParticipant(id, guildId) {
-  const _require = id;
-  let closure_1 = guildId;
-  const items = [_isNativeReflectConstruct, closure_4];
-  const items1 = [id, guildId];
-  return _require(566).useStateFromStores(items, () => {
-    if (null != closure_0) {
-      const voiceState = outer1_4.getVoiceState(closure_1, closure_0);
-      if (null != voiceState) {
-        const obj = {};
-        ({ deaf: obj.deaf, selfDeaf: obj.selfDeaf, mute: obj.mute } = voiceState);
-        obj.isLocalMute = outer1_3.isLocalMute(voiceState.userId);
-        obj.selfMute = voiceState.selfMute;
-        return obj;
-      }
-    }
-  }, items1, isStableVoiceStateEqual);
-}
-function useStableVideoState(id, guildId) {
-  const _require = id;
-  let closure_1 = guildId;
-  const items = [_isNativeReflectConstruct, closure_4];
-  const items1 = [guildId, id];
-  return _require(566).useStateFromStoresObject(items, () => {
-    if (null != closure_0) {
-      const voiceState = outer1_4.getVoiceState(closure_1, closure_0);
-    }
-    if (null != closure_0) {
-      if (null != voiceState) {
-        const obj = { selfVideo: voiceState.selfVideo };
-        let tmp6 = null;
-        if (outer1_3.isLocalVideoDisabled(voiceState.userId)) {
-          let str = "manual";
-          if (outer1_3.isLocalVideoAutoDisabled(voiceState.userId)) {
-            str = "auto";
-          }
-          tmp6 = str;
-        }
-        obj.localVideoDisabledState = tmp6;
-        return obj;
-      }
-    }
-    return { selfVideo: false, localVideoDisabledState: null };
-  }, items1);
 }
 let obj = { DEAFENED_SERVER: 0, [0]: "DEAFENED_SERVER", DEAFENED: 1, [1]: "DEAFENED", MUTED_SERVER: 2, [2]: "MUTED_SERVER", MUTED_LOCAL: 3, [3]: "MUTED_LOCAL", MUTED: 4, [4]: "MUTED" };
 obj = { VIDEO_DISABLED_LOCAL_AUTO: 0, [0]: "VIDEO_DISABLED_LOCAL_AUTO", VIDEO_DISABLED_LOCAL: 1, [1]: "VIDEO_DISABLED_LOCAL", VIDEO_ACTIVE: 2, [2]: "VIDEO_ACTIVE" };
@@ -71,36 +26,124 @@ const result = require("shallowEqual").fileFinishedImporting("modules/voice_pane
 
 export const MuteDeafenIconState = obj;
 export const VideoIconState = obj;
-export { useStableVoiceParticipant };
+export const useStableVoiceParticipant = function useStableVoiceParticipant(arg0, arg1) {
+  const _require = arg0;
+  let closure_1 = arg1;
+  const items = [_detectH265HardwareDecode, updateVoiceState];
+  const items1 = [arg0, arg1];
+  return _require(589).useStateFromStores(items, () => {
+    if (null != closure_0) {
+      const voiceState = outer1_4.getVoiceState(closure_1, tmp);
+      if (null != voiceState) {
+        const obj = { deaf: null, selfDeaf: null, mute: null, isLocalMute: null, selfMute: null };
+        ({ deaf: obj[0], selfDeaf: obj[1], mute: obj[2] } = voiceState);
+        obj[3] = outer1_3.isLocalMute(voiceState.userId);
+        obj[4] = voiceState.selfMute;
+        return obj;
+      }
+    }
+  }, items1, isStableVoiceStateEqual);
+};
 export const useMuteDeafenIconState = function useMuteDeafenIconState(id, guildId) {
-  const tmp = useStableVoiceParticipant(id, guildId);
-  if (null == tmp) {
+  const _require = id;
+  let closure_1 = guildId;
+  let obj = _require(589);
+  const items = [_detectH265HardwareDecode, updateVoiceState];
+  const items1 = [id, guildId];
+  const stateFromStores = obj.useStateFromStores(items, () => {
+    if (null != closure_0) {
+      const voiceState = outer1_4.getVoiceState(closure_1, tmp);
+      if (null != voiceState) {
+        const obj = { deaf: null, selfDeaf: null, mute: null, isLocalMute: null, selfMute: null };
+        ({ deaf: obj[0], selfDeaf: obj[1], mute: obj[2] } = voiceState);
+        obj[3] = outer1_3.isLocalMute(voiceState.userId);
+        obj[4] = voiceState.selfMute;
+        return obj;
+      }
+    }
+  }, items1, isStableVoiceStateEqual);
+  if (null == stateFromStores) {
     return null;
-  } else if (tmp.deaf) {
+  } else if (stateFromStores.deaf) {
     let DEAFENED_SERVER = obj.DEAFENED_SERVER;
-  } else if (tmp.selfDeaf) {
+  } else if (stateFromStores.selfDeaf) {
     DEAFENED_SERVER = obj.DEAFENED;
-  } else if (tmp.mute) {
+  } else if (stateFromStores.mute) {
     DEAFENED_SERVER = obj.MUTED_SERVER;
-  } else if (tmp.isLocalMute) {
+  } else if (stateFromStores.isLocalMute) {
     DEAFENED_SERVER = obj.MUTED_LOCAL;
   } else {
     DEAFENED_SERVER = null;
-    if (tmp.selfMute) {
+    if (stateFromStores.selfMute) {
       DEAFENED_SERVER = obj.MUTED;
     }
   }
 };
-export { useStableVideoState };
+export const useStableVideoState = function useStableVideoState(arg0, arg1) {
+  const _require = arg0;
+  let closure_1 = arg1;
+  const items = [_detectH265HardwareDecode, updateVoiceState];
+  const items1 = [arg1, arg0];
+  return _require(589).useStateFromStoresObject(items, () => {
+    if (null != closure_0) {
+      const voiceState = outer1_4.getVoiceState(closure_1, tmp);
+    }
+    if (null != closure_0) {
+      if (null != voiceState) {
+        let obj = outer1_3;
+        obj = { selfVideo: null, localVideoDisabledState: null };
+        obj[0] = voiceState.selfVideo;
+        let tmp5 = null;
+        if (outer1_3.isLocalVideoDisabled(voiceState.userId)) {
+          let str = "manual";
+          if (obj.isLocalVideoAutoDisabled(voiceState.userId)) {
+            str = "auto";
+          }
+          tmp5 = str;
+        }
+        obj[1] = tmp5;
+        return obj;
+      }
+    }
+    return { selfVideo: false, localVideoDisabledState: null };
+  }, items1);
+};
 export const useVideoIconState = function useVideoIconState(id, guildId) {
-  const tmp = useStableVideoState(id, guildId);
+  const _require = id;
+  let closure_1 = guildId;
+  let obj = _require(589);
+  const items = [_detectH265HardwareDecode, updateVoiceState];
+  const items1 = [guildId, id];
+  const stateFromStoresObject = obj.useStateFromStoresObject(items, () => {
+    if (null != closure_0) {
+      const voiceState = outer1_4.getVoiceState(closure_1, tmp);
+    }
+    if (null != closure_0) {
+      if (null != voiceState) {
+        let obj = outer1_3;
+        obj = { selfVideo: null, localVideoDisabledState: null };
+        obj[0] = voiceState.selfVideo;
+        let tmp5 = null;
+        if (outer1_3.isLocalVideoDisabled(voiceState.userId)) {
+          let str = "manual";
+          if (obj.isLocalVideoAutoDisabled(voiceState.userId)) {
+            str = "auto";
+          }
+          tmp5 = str;
+        }
+        obj[1] = tmp5;
+        return obj;
+      }
+    }
+    return { selfVideo: false, localVideoDisabledState: null };
+  }, items1);
   let tmp2 = null;
-  if (null != tmp) {
-    if (!tmp.selfVideo) {
+  if (null != stateFromStoresObject) {
+    if (!stateFromStoresObject.selfVideo) {
       tmp2 = null;
-    } else if ("auto" === tmp.localVideoDisabledState) {
+    } else if ("auto" === stateFromStoresObject.localVideoDisabledState) {
       let VIDEO_ACTIVE = obj.VIDEO_DISABLED_LOCAL_AUTO;
-    } else if ("manual" === tmp.localVideoDisabledState) {
+    } else if ("manual" === stateFromStoresObject.localVideoDisabledState) {
       VIDEO_ACTIVE = obj.VIDEO_DISABLED_LOCAL;
     } else {
       VIDEO_ACTIVE = obj.VIDEO_ACTIVE;

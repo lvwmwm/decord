@@ -1,252 +1,188 @@
-// Module ID: 1894
-// Function ID: 21176
-// Name: EntityDao
-// Dependencies: [6, 7, 1888, 1890, 2]
+// Module ID: 1918
+// Function ID: 1919
+// Name: prefix
+// Dependencies: [1912, 1914, 2]
 
-// Module 1894 (EntityDao)
-import _classCallCheck from "_classCallCheck";
-import _defineProperties from "_defineProperties";
-
-const require = arg1;
-const tmp2 = (() => {
-  class EntityDao {
-    constructor(arg0, arg1, arg2) {
-      flag = arg3;
-      self = this;
-      if (arg3 === undefined) {
-        flag = true;
-      }
-      tmp = outer1_2(self, EntityDao);
-      self.originalPrefix = arg0;
-      items = [];
-      items[0] = arg0;
-      table = new EntityDao(outer1_1[2]).Table(items, arg1, arg2, flag);
-      self.table = table;
-      return;
+// Module 1918 (prefix)
+let EntityDao;
+class EntityDao {
+  constructor(arg0, arg1, arg2) {
+    flag = importAll;
+    if (importAll === undefined) {
+      flag = true;
     }
+    obj = Object.create(new.target.prototype);
+    obj.originalPrefix = global;
+    items = [];
+    items[0] = global;
+    table = new require("fromDatabaseTransaction").Table(items, require, importDefault, flag);
+    obj.table = table;
+    return obj;
   }
-  let obj = {
-    key: "prefix",
-    get() {
-      return this.table.prefix;
-    }
-  };
-  let items = [obj, , , , , , , , , , , , , , , , ];
-  obj = {
-    key: "withoutLogging",
-    value() {
-      return new EntityDao(this.originalPrefix, this.table.tableId, this.table.database, false);
-    }
-  };
-  items[1] = obj;
-  obj = {
-    key: "get",
-    value(arg0) {
-      const table = this.table;
-      const items = [arg0];
-      return table.get(items);
-    }
-  };
-  items[2] = obj;
-  items[3] = {
-    key: "getMany",
-    value(arg0) {
-      const table = this.table;
-      return table.getMany([], arg0);
-    }
-  };
-  items[4] = {
-    key: "getRange",
-    value(arg0, arg1, arg2) {
-      const table = this.table;
-      const items = [arg0];
-      const items1 = [arg1];
-      return table.getRange(items, items1, arg2);
-    }
-  };
-  items[5] = {
-    key: "getKvEntries",
-    value() {
-      const table = this.table;
-      return table.getKvEntries();
-    }
-  };
-  items[6] = {
-    key: "getMapEntries",
-    value() {
-      const table = this.table;
-      return table.getMapEntries();
-    }
-  };
-  items[7] = {
-    key: "getIds",
-    value() {
-      const table = this.table;
-      return table.getChildIds([]);
-    }
-  };
-  items[8] = {
-    key: "getParentId",
-    value(arg0) {
-      const table = this.table;
-      const items = [null, arg0];
-      return table.getParentId(items);
-    }
-  };
-  items[9] = {
-    key: "put",
-    value(arg0) {
-      let Replace = arg1;
-      const self = this;
-      let closure_0 = arg0;
-      if (arg1 === undefined) {
-        Replace = EntityDao(outer1_1[3]).ConflictOptions.Replace;
-      }
-      return self.transaction((put) => put.put(closure_0, Replace), "" + self.prefix + " put");
-    }
-  };
-  items[10] = {
-    key: "putAll",
-    value(arg0) {
-      let Replace = arg1;
-      const self = this;
-      let closure_0 = arg0;
-      if (arg1 === undefined) {
-        Replace = EntityDao(outer1_1[3]).ConflictOptions.Replace;
-      }
-      return self.transaction((putAll) => putAll.putAll(closure_0, Replace), "" + self.prefix + " putAll");
-    }
-  };
-  items[11] = {
-    key: "replaceAll",
-    value(arg0) {
-      let closure_0 = arg0;
-      return this.transaction((str) => str.replaceAll(closure_0), "" + this.prefix + " replaceAll");
-    }
-  };
-  items[12] = {
-    key: "delete",
-    value(arg0) {
-      let closure_0 = arg0;
-      return this.transaction((arg0) => arg0.delete(closure_0), "" + this.prefix + " delete");
-    }
-  };
-  items[13] = {
-    key: "transaction",
-    value(arg0, arg1) {
-      let closure_0 = arg0;
-      const table = this.table;
-      return table.transaction((arg0) => callback(new outer2_5(arg0)), arg1);
-    }
-  };
-  items[14] = {
-    key: "upgradeTransaction",
-    value(arg0) {
-      const table = this.table;
-      return new outer1_5(table.upgradeTransaction(arg0));
-    }
-  };
-  items[15] = {
-    key: "getManySyncUnsafe",
-    value(arg0) {
-      const table = this.table;
-      return table.getManySyncUnsafe([], arg0);
-    }
-  };
-  items[16] = {
-    key: "getMapEntriesSyncUnsafe",
-    value() {
-      const table = this.table;
-      return table.getMapEntriesSyncUnsafe();
-    }
-  };
-  let items1 = [
-    {
-      key: "cell",
-      value(data, generation) {
-        const items = [data.id];
-        return { key: items, data, generation };
-      }
-    }
-  ];
-  return callback(EntityDao, items, items1);
-})();
-let closure_4 = tmp2;
-const tmp3 = (() => {
-  class EntityDaoTransaction {
-    constructor(arg0) {
-      tmp = outer1_2(this, EntityDaoTransaction);
-      this.transaction = arg0;
-      return;
-    }
+}
+const prototype = EntityDao.prototype;
+Object.defineProperty(prototype, "prefix", {
+  get: function prefix() {
+    return this.table.prefix;
+  },
+  set: undefined
+});
+prototype["withoutLogging"] = function withoutLogging() {
+  const originalPrefix = this.originalPrefix;
+  if (typeof EntityDao !== "find") {
+    HermesBuiltin.throwTypeError();
   }
-  let obj = {
-    key: "put",
-    value(arg0) {
-      let Replace = arg1;
-      if (arg1 === undefined) {
-        Replace = EntityDaoTransaction(outer1_1[3]).ConflictOptions.Replace;
-      }
-      const transaction = this.transaction;
-      return transaction.put(outer1_4.cell(arg0, null), Replace);
+  const obj = Object.create(EntityDao.prototype);
+  obj.originalPrefix = originalPrefix;
+  const items = [originalPrefix];
+  const table = new require(1912) /* fromDatabaseTransaction */.Table(items, this.table.tableId, this.table.database, false);
+  obj.table = table;
+  return obj;
+};
+prototype["get"] = function get(arg0) {
+  const table = this.table;
+  const items = [arg0];
+  return table.get(items);
+};
+prototype["getMany"] = function getMany(arg0) {
+  const table = this.table;
+  return table.getMany([], arg0);
+};
+prototype["getRange"] = function getRange(arg0, arg1, arg2) {
+  const table = this.table;
+  const items = [arg0];
+  const items1 = [arg1];
+  return table.getRange(items, items1, arg2);
+};
+prototype["getKvEntries"] = function getKvEntries() {
+  const table = this.table;
+  return table.getKvEntries();
+};
+prototype["getMapEntries"] = function getMapEntries() {
+  const table = this.table;
+  return table.getMapEntries();
+};
+prototype["getIds"] = function getIds() {
+  const table = this.table;
+  return table.getChildIds([]);
+};
+prototype["getParentId"] = function getParentId(arg0) {
+  const table = this.table;
+  const items = [null, arg0];
+  return table.getParentId(items);
+};
+prototype["put"] = function put(arg0) {
+  const _require = arg0;
+  let Replace = arg1;
+  if (arg1 === undefined) {
+    Replace = _require(Replace[1]).ConflictOptions.Replace;
+  }
+  return this.transaction((put) => put.put(closure_0, Replace), "" + this.prefix + " put");
+};
+prototype["putAll"] = function putAll(arg0) {
+  const _require = arg0;
+  let Replace = arg1;
+  if (arg1 === undefined) {
+    Replace = _require(Replace[1]).ConflictOptions.Replace;
+  }
+  return this.transaction((putAll) => putAll.putAll(closure_0, Replace), "" + this.prefix + " putAll");
+};
+prototype["replaceAll"] = function replaceAll(arg0) {
+  let closure_0 = arg0;
+  return this.transaction((str) => str.replaceAll(closure_0), "" + this.prefix + " replaceAll");
+};
+prototype["delete"] = function delete(arg0) {
+  let closure_0 = arg0;
+  return this.transaction((arg0) => arg0.delete(closure_0), "" + this.prefix + " delete");
+};
+prototype["transaction"] = function transaction(arg0, arg1) {
+  let closure_0 = arg0;
+  const table = this.table;
+  return table.transaction((transaction) => {
+    if (typeof outer1_3 !== "find") {
+      HermesBuiltin.throwTypeError();
     }
-  };
-  let items = [obj, , , , ];
-  obj = {
-    key: "putAll",
-    value(arr) {
-      let Replace = arg1;
-      if (arg1 === undefined) {
-        Replace = EntityDaoTransaction(outer1_1[3]).ConflictOptions.Replace;
-      }
-      const transaction = this.transaction;
-      return transaction.putAll(arr.map((arg0) => outer2_4.cell(arg0, null)), Replace);
-    }
-  };
-  items[1] = obj;
-  obj = {
-    key: "replaceAll",
-    value(arg0) {
-      this.delete();
-      this.putAll(arg0);
-    }
-  };
-  items[2] = obj;
-  items[3] = {
-    key: "delete",
-    value(arg0) {
-      const self = this;
-      if (0 === arguments.length) {
-        const transaction2 = self.transaction;
-        let deleteResult = transaction2.delete([]);
-      } else {
-        const transaction = self.transaction;
-        const items = [arg0];
-        deleteResult = transaction.delete(items);
-      }
-      return deleteResult;
-    }
-  };
-  items[4] = {
-    key: "deleteAllExcept",
-    value(arg0) {
-      const transaction = this.transaction;
-      transaction.deleteAllExcept([], arg0);
-    }
-  };
-  const items1 = [
-    {
-      key: "fromDatabaseTransaction",
-      value(prefix, tableId, transaction) {
-        const tableTransaction = new EntityDaoTransaction(outer1_1[2]).TableTransaction(prefix, tableId, transaction);
-        return new EntityDaoTransaction(tableTransaction);
-      }
-    }
-  ];
-  return callback(EntityDaoTransaction, items, items1);
-})();
-let closure_5 = tmp3;
-const result = require("prefixCell").fileFinishedImporting("../discord_common/js/packages/kv-storage/js/api/EntityDao.tsx");
+    const obj = Object.create(outer1_3.prototype);
+    obj.transaction = transaction;
+    return closure_0(obj);
+  }, arg1);
+};
+prototype["upgradeTransaction"] = function upgradeTransaction(arg0) {
+  const table = this.table;
+  if (typeof EntityDaoTransaction !== "find") {
+    HermesBuiltin.throwTypeError();
+  }
+  const obj = Object.create(EntityDaoTransaction.prototype);
+  obj.transaction = table.upgradeTransaction(arg0);
+  return obj;
+};
+prototype["getManySyncUnsafe"] = function getManySyncUnsafe(arg0) {
+  const table = this.table;
+  return table.getManySyncUnsafe([], arg0);
+};
+prototype["getMapEntriesSyncUnsafe"] = function getMapEntriesSyncUnsafe() {
+  const table = this.table;
+  return table.getMapEntriesSyncUnsafe();
+};
+EntityDao["cell"] = function cell(data, generation) {
+  const items = [data.id];
+  return { key: items, data, generation };
+};
+let EntityDaoTransaction;
+class EntityDaoTransaction {
+  constructor(arg0) {
+    obj = Object.create(new.target.prototype);
+    obj.transaction = global;
+    return obj;
+  }
+}
+const prototype2 = EntityDaoTransaction.prototype;
+EntityDaoTransaction["fromDatabaseTransaction"] = function fromDatabaseTransaction(prefix, tableId, transaction) {
+  const tableTransaction = new require(1912) /* fromDatabaseTransaction */.TableTransaction(prefix, tableId, transaction);
+  if (typeof EntityDaoTransaction !== "find") {
+    HermesBuiltin.throwTypeError();
+  }
+  const obj = Object.create(EntityDaoTransaction.prototype);
+  obj.transaction = tableTransaction;
+  return obj;
+};
+prototype2["put"] = function put(arg0) {
+  let Replace = arg1;
+  if (arg1 === undefined) {
+    Replace = require(1914) /* TableId */.ConflictOptions.Replace;
+  }
+  const transaction = this.transaction;
+  return transaction.put(EntityDao.cell(arg0, null), Replace);
+};
+prototype2["putAll"] = function putAll(arr) {
+  let Replace = arg1;
+  if (arg1 === undefined) {
+    Replace = require(1914) /* TableId */.ConflictOptions.Replace;
+  }
+  const transaction = this.transaction;
+  return transaction.putAll(arr.map((arg0) => closure_2.cell(arg0, null)), Replace);
+};
+prototype2["replaceAll"] = function replaceAll(arg0) {
+  this.delete();
+  this.putAll(arg0);
+};
+prototype2["delete"] = function delete(arg0) {
+  const self = this;
+  if (0 === arguments.length) {
+    const transaction2 = self.transaction;
+    let deleteResult = transaction2.delete([]);
+  } else {
+    const transaction = self.transaction;
+    const items = [arg0];
+    deleteResult = transaction.delete(items);
+  }
+  return deleteResult;
+};
+prototype2["deleteAllExcept"] = function deleteAllExcept(arg0) {
+  const transaction = this.transaction;
+  transaction.deleteAllExcept([], arg0);
+};
+const result = require("set").fileFinishedImporting("../discord_common/js/packages/kv-storage/js/api/EntityDao.tsx");
 
-export const EntityDao = tmp2;
-export const EntityDaoTransaction = tmp3;
+export { EntityDao };
+export { EntityDaoTransaction };

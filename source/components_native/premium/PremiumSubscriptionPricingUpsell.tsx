@@ -1,25 +1,24 @@
-// Module ID: 12545
-// Function ID: 96977
+// Module ID: 12567
+// Function ID: 12568
 // Name: PricingSubheadingCopy
-// Dependencies: [57, 31, 27, 1922, 1850, 3816, 3817, 5654, 653, 1852, 33, 4165, 566, 3811, 12425, 686, 6310, 5657, 4161, 477, 5652, 5651, 1212, 1827, 2]
+// Dependencies: [32, 19, 17, 1946, 1874, 3840, 3841, 5672, 676, 1876, 21, 4189, 589, 3835, 12447, 709, 6331, 5675, 4185, 500, 5670, 5669, 1236, 1851, 2]
 // Exports: default
 
-// Module 12545 (PricingSubheadingCopy)
+// Module 12567 (PricingSubheadingCopy)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
-import { View } from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_7 from "_isNativeReflectConstruct";
-import closure_8 from "_isNativeReflectConstruct";
-import closure_9 from "_isNativeReflectConstruct";
-import closure_10 from "_isNativeReflectConstruct";
+import set from "set";
+import { View } from "SubscriptionPlans";
+import _getSystemLocale from "_getSystemLocale";
+import mergeGuildAvatar from "mergeGuildAvatar";
+import addSubscriptionPlan from "addSubscriptionPlan";
+import reset from "reset";
+import updateProduct from "updateProduct";
 import { CurrencyCodes } from "ME";
 import GuildFeatures from "GuildFeatures";
-import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import jsxProd from "formatSingleCurrencyPrice";
+import createCacheKey from "createCacheKey";
 
 let closure_12;
-let closure_13;
 let closure_14;
 let closure_15;
 let closure_16;
@@ -27,214 +26,225 @@ let closure_17;
 let closure_18;
 let closure_19;
 let closure_20;
+let map1;
 let require = arg1;
 function PricingSubheadingCopy() {
   let interval;
   let intervalCount;
+  let tmp12;
+  let tmp13;
+  let tmp14;
+  let tmp15;
+  let tmp16;
   let tmp = callback3();
   const require = tmp;
   let obj = require(str3[12]);
-  let items = [closure_7];
-  const stateFromStores = obj.useStateFromStores(items, () => outer1_7.getCurrentUser());
+  let items = [mergeGuildAvatar];
+  const stateFromStores = obj.useStateFromStores(items, () => currentUser.getCurrentUser());
   let obj1 = importDefault(str3[13]);
   const hasBoostDiscountResult = obj1.hasBoostDiscount(stateFromStores);
   let obj2 = require(str3[12]);
-  const items1 = [_isNativeReflectConstruct];
-  const stateFromStores1 = obj2.useStateFromStores(items1, () => outer1_6.locale);
+  const items1 = [_getSystemLocale];
+  const stateFromStores1 = obj2.useStateFromStores(items1, () => locale.locale);
   let obj3 = require(str3[14]);
   const subscriptionPlansLoaded = obj3.useSubscriptionPlansLoaded();
   let obj4 = require(str3[12]);
-  const items2 = [closure_9];
-  importDefault = obj4.useStateFromStores(items2, () => outer1_9.getPremiumTypeSubscription());
+  const items2 = [reset];
+  importDefault = obj4.useStateFromStores(items2, () => premiumTypeSubscription.getPremiumTypeSubscription());
   let obj5 = require(str3[12]);
-  const items3 = [closure_8];
+  const items3 = [addSubscriptionPlan];
   let stateFromStores2 = obj5.useStateFromStores(items3, () => {
     let value;
-    if (null != lib) {
-      value = outer1_8.get(lib.planId);
+    if (null != closure_1) {
+      value = outer1_8.get(tmp.planId);
     }
     return value;
   });
   const effect = React.useEffect(() => {
-    if (!outer1_10.isReady()) {
-      lib(str3[15]).wait(() => callback(str3[16]).loadProducts());
-      const obj = lib(str3[15]);
+    if (!store.isReady()) {
+      callback(str3[15]).wait(() => callback(table[16]).loadProducts());
+      const obj = callback(str3[15]);
     }
   }, []);
   let obj6 = require(str3[12]);
-  const items4 = [ready];
-  const tmp8 = str2(obj6.useStateFromStoresArray(items4, () => {
-    const items = [outer1_10.getProduct(tmp(str3[17]).ProductIds.PREMIUM_GUILD_1_MONTHLY), outer1_10.getProduct(tmp(str3[17]).ProductIds.PREMIUM_TIER_2_MONTHLY), outer1_10.getProduct(tmp(str3[17]).ProductIds.PREMIUM_TIER_2_PREMIUM_GUILD_1_MONTHLY), outer1_10.getProduct(tmp(str3[17]).ProductIds.PREMIUM_TIER_2_YEARLY), outer1_10.getProduct(tmp(str3[17]).ProductIds.PREMIUM_TIER_2_PREMIUM_GUILD_1_YEARLY)];
+  let obj7 = updateProduct;
+  const items4 = [updateProduct];
+  [tmp12, tmp13, tmp14, tmp15, tmp16] = str2(obj6.useStateFromStoresArray(items4, () => {
+    const items = [store.getProduct(tmp(str3[17]).ProductIds.PREMIUM_GUILD_1_MONTHLY), store.getProduct(tmp(str3[17]).ProductIds.PREMIUM_TIER_2_MONTHLY), store.getProduct(tmp(str3[17]).ProductIds.PREMIUM_TIER_2_PREMIUM_GUILD_1_MONTHLY), store.getProduct(tmp(str3[17]).ProductIds.PREMIUM_TIER_2_YEARLY), store.getProduct(tmp(str3[17]).ProductIds.PREMIUM_TIER_2_PREMIUM_GUILD_1_YEARLY)];
     return items;
   }), 5);
-  const first = tmp8[0];
-  if (null == stateFromStores2) {
+  if (stateFromStores2 == null) {
     stateFromStores2 = table[constants.PREMIUM_MONTH_GUILD];
   }
   ({ interval, intervalCount } = stateFromStores2);
   if (subscriptionPlansLoaded) {
-    if (ready.isReady()) {
-      if (null != first) {
-        if (null != first) {
-          const formatted = first.currencyCode.toLowerCase();
-          const str = first.currencyCode;
+    if (obj7.isReady()) {
+      if (null != tmp12) {
+        if (tmp12 != null) {
+          const formatted = tmp12.currencyCode.toLowerCase();
+          const str = tmp12.currencyCode;
         }
-        if (null != first) {
-          let price = first.price;
+        if (tmp12 != null) {
+          const price = tmp12.price;
         }
         if (interval === constants2.YEAR) {
           let diff = null;
-          if (null != tmp13) {
+          if (null != tmp16) {
             diff = null;
-            if (null != tmp12) {
-              diff = tmp13.price - tmp12.price;
+            if (null != tmp15) {
+              diff = tmp16.price - tmp15.price;
             }
           }
+          let tmp22 = diff;
           let diff1 = diff;
-          let tmp20 = diff;
         } else {
-          diff1 = price;
-          tmp20 = price;
+          let tmp21 = hasBoostDiscountResult;
           if (hasBoostDiscountResult) {
-            diff1 = price;
-            tmp20 = price;
-            if (null != price) {
-              price = undefined;
-              if (null != tmp11) {
-                price = tmp11.price;
-              }
-              let num = 0;
-              if (null != price) {
-                num = price;
-              }
-              let price1;
-              if (null != tmp10) {
-                price1 = tmp10.price;
-              }
-              let num2 = 0;
-              if (null != price1) {
-                num2 = price1;
-              }
-              diff1 = num - num2;
-              tmp20 = price;
+            tmp21 = null != price;
+          }
+          tmp22 = price;
+          diff1 = price;
+          if (tmp21) {
+            let num;
+            if (tmp14 != null) {
+              num = tmp14.price;
             }
+            if (num == null) {
+              num = 0;
+            }
+            let num2;
+            if (tmp13 != null) {
+              num2 = tmp13.price;
+            }
+            if (num2 == null) {
+              num2 = 0;
+            }
+            diff1 = num - num2;
+            tmp22 = price;
           }
         }
-        let obj7 = require(str3[19]);
+        let tmp2Result = tmp2(tmp3[19]);
         let result = diff1;
-        if (tmp26) {
-          let obj8 = require(str3[20]);
-          result = obj8.convertToMajorCurrencyUnits(diff1, CurrencyCodes.USD);
+        if (tmp25) {
+          tmp2Result = tmp2(tmp3[20]);
+          result = tmp2Result.convertToMajorCurrencyUnits(diff1, CurrencyCodes.USD);
         }
-        let obj9 = require(str3[19]);
-        tmp26 = obj7.isAndroid() && null != diff1;
-        let result1 = tmp20;
-        if (tmp33) {
-          let obj10 = require(str3[20]);
-          result1 = obj10.convertToMajorCurrencyUnits(tmp20, CurrencyCodes.USD);
+        tmp25 = tmp2Result.isAndroid() && null != diff1;
+        const tmp2Result1 = tmp2(tmp3[19]);
+        let result1 = tmp22;
+        if (tmp28) {
+          result1 = tmp2(tmp3[20]).convertToMajorCurrencyUnits(tmp22, CurrencyCodes.USD);
+          const tmp2Result2 = tmp2(tmp3[20]);
         }
         str2 = "...";
         str3 = "...";
         if (null != result) {
-          let obj11 = require(str3[21]);
-          let obj12 = require(str3[21]);
-          obj = { convertToMajorUnits: false };
-          str3 = obj11.formatRate(obj12.formatPrice(result, formatted, obj), interval, intervalCount);
+          const tmp2Result3 = tmp2(tmp3[21]);
+          str3 = tmp2Result3.formatRate(tmp2(tmp3[21]).formatPrice(result, formatted, { convertToMajorUnits: false }), interval, intervalCount);
+          const tmp2Result4 = tmp2(tmp3[21]);
         }
         if (null != result1) {
-          const obj15 = require(str3[21]);
-          obj = { convertToMajorUnits: false };
-          str2 = obj15.formatRate(require(str3[21]).formatPrice(result1, formatted, obj), interval, intervalCount);
-          const obj16 = require(str3[21]);
+          const tmp2Result5 = tmp2(tmp3[21]);
+          str2 = tmp2Result5.formatRate(tmp2(tmp3[21]).formatPrice(result1, formatted, { convertToMajorUnits: false }), interval, intervalCount);
+          const tmp2Result6 = tmp2(tmp3[21]);
         }
         if (result !== result1) {
-          obj1 = { style: tmp.cardText };
-          const intl2 = require(str3[22]).intl;
-          obj2 = { price: str3, originalPrice: str2 };
-          obj1.accessibilityLabel = intl2.formatToPlainString(require(str3[22]).t.lEIwDw, obj2);
-          obj1.variant = "text-md/medium";
-          const intl3 = require(str3[22]).intl;
-          obj3 = {
-            price: str3,
-            originalPrice: str2,
-            originalPriceHook(children) {
-                      let tmp = null;
-                      if (str3 !== str2) {
-                        const obj = { style: tmp.originalPrice, variant: "text-sm/medium", color: "text-muted", children };
-                        tmp = outer1_18(tmp(str3[18]).Text, obj, arg1);
-                      }
-                      return tmp;
-                    }
-          };
-          obj1.children = intl3.format(require(str3[22]).t.eRSsbf, obj3);
-          obj4 = obj1;
-        } else {
-          obj4 = { style: tmp.cardText, variant: "text-md/medium" };
-          const intl = require(str3[22]).intl;
-          obj5 = { price: str3 };
-          obj4.children = intl.format(require(str3[22]).t.Mmf63F, obj5);
-        }
-        const tmp42Result = callback(require(str3[18]).Text, obj4);
-        tmp33 = obj9.isAndroid() && null != tmp20;
-        const tmp42 = callback;
-        if (obj23.hasFreeBoosts(stateFromStores)) {
-          if (hasBoostDiscountResult) {
-            if (obj24.isPremium(stateFromStores, closure_14.TIER_2)) {
-              obj6 = {};
-              obj7 = { style: tmp.cardText, variant: "text-md/medium" };
-              const intl5 = require(str3[22]).intl;
-              obj8 = { freeSubscriptionCount: closure_16, discountPercent: require(str3[23]).formatPercent(stateFromStores1, closure_17 / 100) };
-              obj7.children = intl5.format(require(str3[22]).t["ZikTt+"], obj8);
-              const items5 = [callback(require(str3[18]).Text, obj7), tmp42Result];
-              obj6.children = items5;
-              let tmp55 = callback2(closure_19, obj6);
-              const obj33 = require(str3[23]);
+          obj = { style: null, accessibilityLabel: null, variant: "text-md/medium", children: null };
+          obj[0] = tmp.cardText;
+          const intl2 = tmp2(tmp3[22]).intl;
+          obj = { price: null, originalPrice: null };
+          obj[0] = str3;
+          obj[1] = str2;
+          obj[1] = intl2.formatToPlainString(tmp2(tmp3[22]).t.lEIwDw, obj);
+          const intl3 = tmp2(tmp3[22]).intl;
+          obj1 = { price: null, originalPrice: null, originalPriceHook: null };
+          obj1[0] = str3;
+          obj1[1] = str2;
+          obj1[2] = function originalPriceHook(arg0, arg1) {
+            let tmp = null;
+            if (str3 !== str2) {
+              const obj = { style: null, variant: "text-sm/medium", color: "text-muted", children: null };
+              obj[0] = tmp.originalPrice;
+              obj[3] = arg0;
+              tmp = outer1_18(tmp(str3[18]).Text, obj, arg1);
             }
-            return tmp55;
+            return tmp;
+          };
+          obj[3] = intl3.format(tmp2(tmp3[22]).t.eRSsbf, obj1);
+          obj2 = obj;
+        } else {
+          obj2 = { style: null, variant: "text-md/medium", children: null };
+          obj2[0] = tmp.cardText;
+          const intl = tmp2(tmp3[22]).intl;
+          obj3 = { price: null };
+          obj3[0] = str3;
+          obj2[2] = intl.format(tmp2(tmp3[22]).t.Mmf63F, obj3);
+        }
+        const tmp31Result = callback(tmp2(tmp3[18]).Text, obj2);
+        let tmp5Result = tmp5(tmp3[13]);
+        if (tmp5Result.hasFreeBoosts(stateFromStores)) {
+          if (hasBoostDiscountResult) {
+            tmp5Result = tmp5(tmp3[13]);
+            if (tmp5Result.isPremium(stateFromStores, closure_14.TIER_2)) {
+              obj4 = { children: null };
+              obj5 = { style: null, variant: "text-md/medium", children: null };
+              obj5[0] = tmp.cardText;
+              const intl5 = tmp2(tmp3[22]).intl;
+              obj6 = { freeSubscriptionCount: null, discountPercent: null };
+              obj6[0] = closure_16;
+              obj6[1] = tmp2(tmp3[23]).formatPercent(stateFromStores1, closure_17 / 100);
+              obj5[2] = intl5.format(tmp2(tmp3[22]).t["ZikTt+"], obj6);
+              const items5 = [tmp31(tmp2(tmp3[18]).Text, obj5), tmp31Result];
+              obj4[0] = items5;
+              let tmp34 = callback2(closure_19, obj4);
+              const tmp2Result7 = tmp2(tmp3[23]);
+            }
+            return tmp34;
           }
         }
-        tmp55 = tmp42Result;
+        tmp34 = tmp31Result;
         if (hasBoostDiscountResult) {
-          tmp55 = tmp42Result;
-          if (obj25.isPremium(stateFromStores, closure_14.TIER_1)) {
-            obj9 = {};
-            obj10 = { style: tmp.cardText, variant: "text-md/medium" };
-            const intl4 = require(str3[22]).intl;
-            obj11 = { discountPercent: require(str3[23]).formatPercent(stateFromStores1, closure_17 / 100) };
-            obj10.children = intl4.format(require(str3[22]).t.XVMAKU, obj11);
-            const items6 = [callback(require(str3[18]).Text, obj10), tmp42Result];
-            obj9.children = items6;
-            tmp55 = callback2(closure_19, obj9);
-            const obj29 = require(str3[23]);
+          tmp34 = tmp31Result;
+          if (tmp5Result1.isPremium(stateFromStores, closure_14.TIER_1)) {
+            obj7 = { children: null };
+            const obj8 = { style: null, variant: "text-md/medium", children: null };
+            obj8[0] = tmp.cardText;
+            const intl4 = tmp2(tmp3[22]).intl;
+            const obj9 = { discountPercent: null };
+            obj9[0] = tmp2(tmp3[23]).formatPercent(stateFromStores1, closure_17 / 100);
+            obj8[2] = intl4.format(tmp2(tmp3[22]).t.XVMAKU, obj9);
+            const items6 = [tmp31(tmp2(tmp3[18]).Text, obj8), tmp31Result];
+            obj7[0] = items6;
+            tmp34 = callback2(closure_19, obj7);
+            const tmp2Result8 = tmp2(tmp3[23]);
           }
-          obj25 = importDefault(str3[13]);
+          tmp5Result1 = tmp5(tmp3[13]);
         }
-        obj23 = importDefault(str3[13]);
+        tmp28 = tmp2(tmp3[19]).isAndroid() && null != tmp22;
       }
     }
   }
-  obj12 = { style: tmp.cardText, variant: "text-md/medium", children: "..." };
-  return callback(require(str3[18]).Text, obj12);
+  return callback(require(str3[18]).Text, { style: tmp.cardText, variant: "text-md/medium", children: "..." });
 }
-({ SubscriptionPlans: closure_12, SubscriptionPlanInfo: closure_13, PremiumTypes: closure_14, SubscriptionIntervalTypes: closure_15, NUM_FREE_GUILD_BOOSTS_WITH_PREMIUM: closure_16, GUILD_BOOST_COST_FOR_PREMIUM_USER_DISCOUNT_PERCENT: closure_17 } = GuildFeatures);
+({ SubscriptionPlans: closure_12, SubscriptionPlanInfo: map1, PremiumTypes: closure_14, SubscriptionIntervalTypes: closure_15, NUM_FREE_GUILD_BOOSTS_WITH_PREMIUM: closure_16, GUILD_BOOST_COST_FOR_PREMIUM_USER_DISCOUNT_PERCENT: closure_17 } = GuildFeatures);
 ({ jsx: closure_18, Fragment: closure_19, jsxs: closure_20 } = jsxProd);
-let closure_21 = _createForOfIteratorHelperLoose.createStyles({ title: { marginTop: 16 }, pricingSection: { alignItems: "center" }, originalPrice: { textDecorationLine: "line-through" }, cardText: { lineHeight: 20, marginTop: 8, textAlign: "center" } });
+let closure_21 = createCacheKey.createStyles({ title: { marginTop: 16 }, pricingSection: { alignItems: "center" }, originalPrice: { textDecorationLine: "line-through" }, cardText: { lineHeight: 20, marginTop: 8, textAlign: "center" } });
 let result = require("get ActivityIndicator").fileFinishedImporting("components_native/premium/PremiumSubscriptionPricingUpsell.tsx");
 
 export default function PremiumSubscriptionPricingUpsell() {
   const tmp = callback3();
-  let obj = require(12425) /* _createForOfIteratorHelperLoose */;
-  obj = { style: tmp.pricingSection };
+  let obj = require(12447) /* getSubscriptionPlansLoaded */;
+  obj = { style: tmp.pricingSection, children: null };
   const subscriptionPlansLoaded = obj.useSubscriptionPlansLoaded();
-  obj = { style: tmp.title, accessibilityRole: "header", variant: "heading-lg/semibold", color: "mobile-text-heading-primary" };
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj.children = intl.string(require(1212) /* getSystemLocale */.t["3x1PFE"]);
-  const items = [callback(require(4161) /* Text */.Text, obj), ];
-  let tmp5 = null;
+  obj = { style: tmp.title, accessibilityRole: "header", variant: "heading-lg/semibold", color: "mobile-text-heading-primary", children: null };
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj[4] = intl.string(require(1236) /* getSystemLocale */.t["3x1PFE"]);
+  const items = [callback(require(4185) /* Text */.Text, obj), ];
+  let tmp5Result = null;
   if (subscriptionPlansLoaded) {
-    tmp5 = callback(PricingSubheadingCopy, {});
+    tmp5Result = callback(PricingSubheadingCopy, {});
   }
-  items[1] = tmp5;
-  obj.children = items;
+  items[1] = tmp5Result;
+  obj[1] = items;
   return closure_20(View, obj);
 };

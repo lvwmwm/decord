@@ -1,29 +1,54 @@
-// Module ID: 5645
-// Function ID: 47869
-// Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 1859, 4204, 4188, 2]
+// Module ID: 5663
+// Function ID: 5664
+// Name: fromServer
+// Dependencies: [1883, 4228, 4212, 2]
 
-// Module 5645 (_isNativeReflectConstruct)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import _callSuper from "_callSuper";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
-import closure_5 from "_isNativeReflectConstruct";
-import closure_6 from "_callSuper";
-import importDefaultResult from "Record";
-import tmp3 from "Record";
+// Module 5663 (fromServer)
+import "toJS";
+import createFromServer from "createFromServer";
+import createExecutable from "createExecutable";
 
-function _isNativeReflectConstruct() {
-  let _isNativeReflectConstruct = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
+let prototype;
+prototype = function WishlistRecommendationRecord(skus) {
+  const tmp5 = new prototype(tmp4, tmp3, tmp2, tmp);
+  // ThrowIfThisInitialized (0x7c)
+  skus = skus.skus;
+  tmp5.skus = skus.map((arg0) => createFromServer.createFromServer(arg0));
+  const entries = Object.entries(skus.skus_to_user_and_reason);
+  tmp5.skusToUserAndReason = Object.fromEntries(entries.map((arg0) => {
+    let tmp;
+    let tmp2;
+    [tmp, tmp2] = arg0;
+    const items = [tmp, tmp2];
+    return items;
   }));
-  function _isNativeReflectConstruct() {
-    return _isNativeReflectConstruct;
-  }
-  const result = _isNativeReflectConstruct();
+  const applications = skus.applications;
+  tmp5.applications = applications.map((arg0) => createExecutable.createFromServer(arg0));
+  return tmp5;
+}.prototype;
+class prototype extends tmp2 {
 }
-let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/wishlists/records/WishlistRecommendationRecord.tsx");
+prototype["fromServer"] = function fromServer(skus) {
+  if (typeof prototype !== "find") {
+    HermesBuiltin.throwTypeError();
+  }
+  const tmp4 = new prototype("Trying to call a non-function", tmp3, tmp2, tmp);
+  // ThrowIfThisInitialized (0x7c)
+  skus = skus.skus;
+  tmp4.skus = skus.map((arg0) => createFromServer.createFromServer(arg0));
+  const entries = Object.entries(skus.skus_to_user_and_reason);
+  tmp4.skusToUserAndReason = Object.fromEntries(entries.map((arg0) => {
+    let tmp;
+    let tmp2;
+    [tmp, tmp2] = arg0;
+    const items = [tmp, tmp2];
+    return items;
+  }));
+  const applications = skus.applications;
+  tmp4.applications = applications.map((arg0) => createExecutable.createFromServer(arg0));
+  return tmp4;
+};
+const result = require("createExecutable").fileFinishedImporting("modules/wishlists/records/WishlistRecommendationRecord.tsx");
 
-export default tmp3;
+export default prototype;
 export const WishlistRecommendationReason = { WISHLIST: "WISHLIST", RECOMMENDATION: "RECOMMENDATION" };

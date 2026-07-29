@@ -1,38 +1,36 @@
-// Module ID: 8217
-// Function ID: 65734
+// Module ID: 8241
+// Function ID: 8242
 // Name: PressableScale
-// Dependencies: [29, 31, 27, 33, 4026, 4583, 2]
+// Dependencies: [109, 19, 17, 21, 4050, 4605, 2]
 
-// Module 8217 (PressableScale)
+// Module 8241 (PressableScale)
 import _objectWithoutProperties from "_objectWithoutProperties";
 import { jsx } from "jsxProd";
-import importAllResult from "result";
-import importDefaultResult from "module_4026";
+import importAllResult from "noop";
+import importDefaultResult from "module_4050";
 
 const require = arg1;
 let closure_2 = ["style"];
-let closure_5 = require("module_4026").createAnimatedComponent(require("get ActivityIndicator").Pressable);
-const forwardRefResult = importAllResult.forwardRef((scaleAmountInPx) => {
+let closure_5 = require("module_4050").createAnimatedComponent(require("get ActivityIndicator").Pressable);
+const forwardRefResult = importAllResult.forwardRef((scaleAmountInPx, ref) => {
   let onPressIn;
   let onPressOut;
   let num = scaleAmountInPx.scaleAmountInPx;
   if (num === undefined) {
     num = 8;
   }
-  let obj = { style: 0, scaleAmountInPx: 0, onLayout: 0, onPressIn: 0, onPressOut: 0 };
   ({ onPressIn, onPressOut } = scaleAmountInPx);
-  Object.setPrototypeOf(null);
-  const merged = Object.assign(scaleAmountInPx, obj);
-  const sharedValue = require(4026).useSharedValue(0);
-  const obj2 = require(4026);
-  const buttonPressAnimationProps = require(4583) /* useProfileThemedButtonStyles */.useButtonPressAnimationProps(sharedValue, num, scaleAmountInPx.onLayout, onPressIn, onPressOut);
+  const merged = Object.assign(scaleAmountInPx, Object.create(null));
+  let obj = require(4050);
+  const sharedValue = obj.useSharedValue(0);
+  const buttonPressAnimationProps = require(4605) /* styleProperties */.useButtonPressAnimationProps(sharedValue, num, scaleAmountInPx.onLayout, onPressIn, onPressOut);
   obj = {};
   const merged1 = Object.assign(callback(buttonPressAnimationProps, closure_2));
   const merged2 = Object.assign(merged);
-  obj["ref"] = arg1;
-  obj["accessibilityRole"] = "button";
+  obj.ref = ref;
+  obj.accessibilityRole = "button";
   const items = [buttonPressAnimationProps.style, scaleAmountInPx.style];
-  obj["style"] = items;
+  obj.style = items;
   return <closure_5 />;
 });
 const result = require("get ActivityIndicator").fileFinishedImporting("design/components/experimental/Button/native/PressableScale.native.tsx");

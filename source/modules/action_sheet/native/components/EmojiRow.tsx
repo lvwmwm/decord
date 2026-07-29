@@ -1,85 +1,90 @@
-// Module ID: 9945
-// Function ID: 76863
+// Module ID: 9967
+// Function ID: 9968
 // Name: EmojiRow
-// Dependencies: [31, 27, 5222, 33, 4165, 4133, 4134, 6056, 3804, 5695, 9324, 3869, 689, 9946, 9947, 9288, 9948, 5517, 2]
+// Dependencies: [19, 17, 5244, 21, 4189, 4157, 4158, 6075, 3828, 5713, 9348, 3893, 712, 9968, 9969, 9312, 9970, 5535, 2]
 // Exports: default
 
-// Module 9945 (EmojiRow)
-import "result";
-import { View } from "get ActivityIndicator";
+// Module 9967 (EmojiRow)
+import "noop";
+import { View } from "QUICK_SWITCHER";
 import { ACTION_SHEET_MAX_WIDTH } from "ACTION_SHEET_START_HEIGHT_RATIO";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_5;
+let c5;
 let closure_6;
 const require = arg1;
-({ jsx: closure_5, jsxs: closure_6 } = jsxProd);
-let closure_7 = _createForOfIteratorHelperLoose.createStyles({ emojiRowContainer: { flexDirection: "column", justifyContent: "center", alignItems: "center" }, emojiRow: { height: 52, alignSelf: "stretch", flexDirection: "row", justifyContent: "space-between", alignItems: "center", marginTop: 0, marginBottom: 0 } });
+({ jsx: c5, jsxs: closure_6 } = jsxProd);
+let closure_7 = createCacheKey.createStyles({ emojiRowContainer: { flexDirection: "column", justifyContent: "center", alignItems: "center" }, emojiRow: { height: 52, alignSelf: "stretch", flexDirection: "row", justifyContent: "space-between", alignItems: "center", marginTop: 0, marginBottom: 0 } });
 let result = require("ACTION_SHEET_START_HEIGHT_RATIO").fileFinishedImporting("modules/action_sheet/native/components/EmojiRow.tsx");
 
 export default function EmojiRow(arg0) {
   let channel;
   let require;
   ({ message: require, channel } = arg0);
-  let obj = require(3869) /* map */;
-  const dependencyMap = obj.useToken(channel(689).modules.mobile.EMOJI_ROW_EMOJI_SIZE);
-  let obj1 = require(3869) /* map */;
-  let closure_3 = obj1.useToken(channel(689).modules.mobile.EMOJI_ROW_EMOJI_FONT_SIZE);
-  let obj2 = require(3869) /* map */;
-  let closure_4 = obj2.useToken(channel(689).modules.mobile.EMOJI_ROW_EMOJI_LINE_HEIGHT);
-  const token = require(3869) /* map */.useToken(channel(689).modules.mobile.EMOJI_ROW_EMOJI_CONTAINER_SIZE);
-  let obj4 = require(3869) /* map */;
-  const token1 = require(3869) /* map */.useToken(channel(689).modules.mobile.EMOJI_ROW_EMOJI_MIN_SPACING);
-  let obj5 = require(3869) /* map */;
-  const emojisForReactionRow = require(9946) /* useEmojisForReactionRow */.useEmojisForReactionRow(channel, closure_4, token + token1);
+  let dependencyMap;
+  let closure_3;
+  let closure_4;
+  let token;
+  let obj = require(3893) /* map */;
+  dependencyMap = obj.useToken(channel(712).modules.mobile.EMOJI_ROW_EMOJI_SIZE);
+  let obj1 = require(3893) /* map */;
+  closure_3 = obj1.useToken(channel(712).modules.mobile.EMOJI_ROW_EMOJI_FONT_SIZE);
+  let obj2 = require(3893) /* map */;
+  closure_4 = obj2.useToken(channel(712).modules.mobile.EMOJI_ROW_EMOJI_LINE_HEIGHT);
+  token = require(3893) /* map */.useToken(channel(712).modules.mobile.EMOJI_ROW_EMOJI_CONTAINER_SIZE);
+  let obj4 = require(3893) /* map */;
+  const token1 = require(3893) /* map */.useToken(channel(712).modules.mobile.EMOJI_ROW_EMOJI_MIN_SPACING);
+  const obj5 = require(3893) /* map */;
+  const emojisForReactionRow = require(9968) /* useEmojisForReactionRow */.useEmojisForReactionRow(channel, closure_4, token + token1);
   const tmp3 = callback2();
-  obj = { style: tmp3.emojiRowContainer };
-  obj = { style: tmp3.emojiRow };
+  obj = { style: tmp3.emojiRowContainer, children: null };
+  obj = { style: tmp3.emojiRow, children: null };
   const items = [
     emojisForReactionRow.map((emoji) => {
       let closure_0 = emoji;
-      return token(outer1_0(9947).EmojiReactionRowButton, {
+      return token(outer1_0(9969).EmojiReactionRowButton, {
         emoji,
         onPress() {
           let channel_id;
           let id;
-          let obj = channel(4133);
+          let obj = channel(table[5]);
           obj.hideActionSheet();
           if (null != closure_0) {
-            const result = outer2_0(4134).triggerHapticFeedback(outer2_0(4134).HapticFeedbackTypes.IMPACT_LIGHT);
-            const obj2 = outer2_0(4134);
+            const result = outer2_0(tmp4[6]).triggerHapticFeedback(outer2_0(tmp4[6]).HapticFeedbackTypes.IMPACT_LIGHT);
+            const obj2 = outer2_0(tmp4[6]);
             ({ channel_id, id } = tmp);
-            const obj3 = outer2_0(6056);
-            obj3.addReaction(channel_id, id, outer2_0(3804).toReactionEmoji(tmp2));
-            const obj4 = outer2_0(3804);
-            obj = {};
-            ({ channel_id: obj6.channelId, id: obj6.messageId } = tmp);
-            channel(5695).focusMessage(obj);
-            const obj5 = channel(5695);
-            const result1 = outer2_0(9324).maybeShowDoubleTapReminderToast(tmp2);
-            const obj7 = outer2_0(9324);
+            const obj3 = outer2_0(tmp4[7]);
+            obj3.addReaction(channel_id, id, outer2_0(tmp4[8]).toReactionEmoji(tmp2));
+            const obj4 = outer2_0(tmp4[8]);
+            obj = { channelId: null, messageId: null };
+            ({ channel_id: obj6[0], id: obj6[1] } = tmp);
+            channel(tmp4[9]).focusMessage(obj);
+            const tmp3Result = channel(tmp4[9]);
+            const result1 = outer2_0(tmp4[10]).maybeShowDoubleTapReminderToast(tmp2);
+            const obj7 = outer2_0(tmp4[10]);
           }
         },
         emojiSize: dependencyMap,
         emojiFontSize: closure_3,
         emojiLineHeight: closure_4,
         emojiContainerSize: token
-      }, outer1_0(9947).getEmojiKey(emoji, arg1));
+      }, outer1_0(9969).getEmojiKey(emoji, arg1));
     }),
 
   ];
   obj1 = {
     emojiContainerSize: token,
     onPress() {
-      return outer1_0(9288).handleAddNewReactions(channel, id.id, outer1_0(6056).ReactionLocations.MESSAGE);
+      return outer1_0(9312).handleAddNewReactions(channel, id.id, outer1_0(6075).ReactionLocations.MESSAGE);
     }
   };
-  items[1] = token(require(9947) /* EmojiPickerRowButton */.EmojiPickerRowButton, obj1);
-  obj.children = items;
+  items[1] = token(require(9969) /* EmojiPickerRowButton */.EmojiPickerRowButton, obj1);
+  obj[1] = items;
   const items1 = [callback(closure_3, obj), ];
-  obj2 = { location: channel(5517).MESSAGE_LONG_PRESS_MENU };
-  items1[1] = token(require(9948) /* DoubleTapEmojiEditNudgeInner */.DoubleTapEmojiEditNudge, obj2);
-  obj.children = items1;
+  obj2 = { location: null };
+  obj2[0] = channel(5535).MESSAGE_LONG_PRESS_MENU;
+  items1[1] = token(require(9970) /* DoubleTapEmojiEditNudgeInner */.DoubleTapEmojiEditNudge, obj2);
+  obj[1] = items1;
   return callback(closure_3, obj);
 };

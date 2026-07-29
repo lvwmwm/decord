@@ -1,42 +1,43 @@
-// Module ID: 16553
-// Function ID: 128852
+// Module ID: 16588
+// Function ID: 16589
 // Name: FormTrialActiveUserLimitPicker
-// Dependencies: [31, 33, 16554, 13011, 1212, 4133, 8222, 1935, 2]
+// Dependencies: [19, 21, 16589, 13034, 1236, 4157, 8246, 1959, 2]
 // Exports: default
 
-// Module 16553 (FormTrialActiveUserLimitPicker)
-import "result";
+// Module 16588 (FormTrialActiveUserLimitPicker)
+import "noop";
 import { jsx } from "jsxProd";
 
 const require = arg1;
+let c4 = "GuildRoleSubscriptionTrialActiveUserLimitSelect";
 const result = require("useTrialActiveUserLimitOptions").fileFinishedImporting("modules/guild_role_subscriptions/native/components/FormTrialActiveUserLimitPicker.tsx");
 
 export default function FormTrialActiveUserLimitPicker(activeTrialUserlimit) {
   const str = activeTrialUserlimit.activeTrialUserlimit;
   const onChange = activeTrialUserlimit.onChange;
-  const dependencyMap = onChange(16554)();
-  let obj = {};
+  let dependencyMap;
+  dependencyMap = onChange(16589)();
   if (null == str) {
-    let intl = str(1212).intl;
-    let stringResult = intl.string(str(1212).t.zHfL6o);
+    let intl = str(1236).intl;
+    let stringResult = intl.string(str(1236).t.zHfL6o);
   } else {
     stringResult = str.toString();
   }
-  obj.label = stringResult;
-  obj.onPress = function onPress() {
-    let obj = onChange(paths[5]);
-    obj = {};
-    const intl = str(paths[4]).intl;
-    obj.title = intl.string(str(paths[4]).t["/JD9oe"]);
-    obj.items = paths;
-    obj.onItemSelect = function onItemSelect(arg0) {
-      outer1_1(arg0);
-      onChange(table[5]).hideActionSheet("GuildRoleSubscriptionTrialActiveUserLimitSelect");
-    };
-    obj.selectedItem = str;
-    obj.hasIcons = false;
-    obj.openLazy(str(paths[7])(paths[6], paths.paths), "GuildRoleSubscriptionTrialActiveUserLimitSelect", obj);
-  };
-  obj.disabled = activeTrialUserlimit.disabled;
-  return jsx(onChange(13011), {});
+  return jsx(onChange(13034), {
+    label: stringResult,
+    onPress() {
+      let obj = onChange(paths[5]);
+      obj = { title: null, items: null, onItemSelect: null, selectedItem: null, hasIcons: false };
+      const intl = str(paths[4]).intl;
+      obj[0] = intl.string(str(paths[4]).t["/JD9oe"]);
+      obj[1] = paths;
+      obj[2] = function onItemSelect(arg0) {
+        callback(arg0);
+        outer1_1(outer1_2[5]).hideActionSheet(outer1_4);
+      };
+      obj[3] = str;
+      obj.openLazy(str(paths[7])(paths[6], paths.paths), outer1_4, obj);
+    },
+    disabled: activeTrialUserlimit.disabled
+  });
 };

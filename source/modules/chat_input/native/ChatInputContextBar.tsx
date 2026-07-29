@@ -1,78 +1,84 @@
-// Module ID: 10365
-// Function ID: 79922
+// Module ID: 10389
+// Function ID: 10390
 // Name: ChatInputReplyBarNoAuthor
-// Dependencies: [31, 27, 4157, 1850, 653, 33, 1273, 4165, 689, 1324, 3869, 4161, 1212, 4695, 8974, 566, 3883, 4396, 8359, 7721, 4029, 10366, 3976, 4026, 4166, 9541, 675, 9539, 1198, 4395, 10367, 2]
+// Dependencies: [19, 17, 4181, 1874, 676, 21, 1297, 4189, 712, 1348, 3893, 4185, 1236, 4717, 8998, 589, 3907, 4419, 8383, 7744, 4053, 10390, 4000, 4050, 4190, 9565, 698, 9563, 1222, 4418, 10391, 2]
 
-// Module 10365 (ChatInputReplyBarNoAuthor)
-import importAllResult from "set";
-import get_ActivityIndicator from "getContextBarCancelReason";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_7 from "_isNativeReflectConstruct";
+// Module 10389 (ChatInputReplyBarNoAuthor)
+import importAllResult from "processColorStrings";
+import get_ActivityIndicator from "useDisplayNameStyles";
+import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
+import mergeGuildAvatar from "mergeGuildAvatar";
 import ME from "ME";
-import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import jsxProd from "registerAsset";
+import createCacheKey from "createCacheKey";
+import createCacheKey from "createCacheKey";
 
-let closure_10;
-let closure_11;
+let c10;
+let c4;
+let c5;
+let c9;
 let closure_12;
-let closure_4;
-let closure_5;
-let closure_8;
-let closure_9;
+let metroImportAll;
+let unpackModuleId;
 const require = arg1;
 function ChatInputReplyBarNoAuthor(onCancelReplying) {
   onCancelReplying = onCancelReplying.onCancelReplying;
-  let obj = require(1324) /* useIsMobileVisualRefreshExperimentEnabled */;
-  const tmp = callback4();
-  let obj1 = require(3869) /* map */;
-  const token = obj1.useToken(importDefault(689).modules.mobile.CHAT_INPUT_BUTTON_MIN_TOUCH_TARGET_SIZE);
-  let obj2 = require(3869) /* map */;
-  const bound = Math.max(0, (token - obj2.useToken(importDefault(689).modules.mobile.CHAT_INPUT_REPLY_MENTION_ICON_SIZE)) / 2);
+  let obj = require(1348) /* useIsMobileVisualRefreshExperimentEnabled */;
+  const tmp3 = callback3();
+  let obj1 = require(3893) /* map */;
+  const token = obj1.useToken(importDefault(712).modules.mobile.CHAT_INPUT_BUTTON_MIN_TOUCH_TARGET_SIZE);
+  let obj2 = require(3893) /* map */;
+  const bound = Math.max(0, (token - obj2.useToken(importDefault(712).modules.mobile.CHAT_INPUT_REPLY_MENTION_ICON_SIZE)) / 2);
   if (obj.useMobileVisualRefreshConfig({ location: "ChatInputContextBar" }).chatInputFloating) {
-    obj = { style: tmp.contextBarRow };
-    obj = { lineClamp: 1, variant: "text-sm/normal", color: "text-strong", style: tmp.floatingReplyTextWrapper };
-    const intl3 = require(1212) /* getSystemLocale */.intl;
-    obj.children = intl3.string(require(1212) /* getSystemLocale */.t["5IEsGx"]);
-    const items = [callback(require(4161) /* Text */.Text, obj), ];
-    obj1 = { style: tmp.floatingRightActions };
-    obj2 = { activeOpacity: 0.5, accessibilityRole: "button" };
-    const intl4 = require(1212) /* getSystemLocale */.intl;
-    obj2.accessibilityLabel = intl4.string(require(1212) /* getSystemLocale */.t.jSnJGT);
-    let tmp20;
+    obj = { style: null, children: null };
+    obj[0] = tmp3.contextBarRow;
+    obj = { lineClamp: 1, variant: "text-sm/normal", color: "text-strong", style: null, children: null };
+    obj[3] = tmp3.floatingReplyTextWrapper;
+    const intl3 = tmp(1236).intl;
+    obj[4] = intl3.string(tmp(1236).t["5IEsGx"]);
+    const items = [callback(tmp(4185).Text, obj), ];
+    obj1 = { style: null, children: null };
+    obj1[0] = tmp3.floatingRightActions;
+    obj2 = { activeOpacity: 0.5, accessibilityRole: "button", accessibilityLabel: null, hitSlop: null, onPress: null, children: null };
+    const intl4 = tmp(1236).intl;
+    obj2[2] = intl4.string(tmp(1236).t.jSnJGT);
+    let tmp13;
     if (bound > 0) {
-      tmp20 = bound;
+      tmp13 = bound;
     }
-    obj2.hitSlop = tmp20;
-    obj2.onPress = onCancelReplying;
-    const obj3 = { source: importDefault(8974), size: require(1273) /* Button */.Icon.Sizes.CUSTOM, style: tmp.floatingCloseIcon };
-    obj2.children = callback(require(1273) /* Button */.Icon, obj3);
-    obj1.children = callback(require(4695) /* PressableBase */.PressableOpacity, obj2);
+    obj2[3] = tmp13;
+    obj2[4] = onCancelReplying;
+    const obj3 = { source: null, size: null, style: null };
+    obj3[0] = tmp4(8998);
+    obj3[1] = tmp(1297).Icon.Sizes.CUSTOM;
+    obj3[2] = tmp3.floatingCloseIcon;
+    obj2[5] = callback(tmp(1297).Icon, obj3);
+    obj1[1] = callback(tmp(4717).PressableOpacity, obj2);
     items[1] = callback(closure_5, obj1);
-    obj.children = items;
-    let tmp4Result = tmp4(closure_5, obj);
-    const tmp13 = closure_5;
-    const tmp17 = callback;
-    const tmp18 = closure_5;
-    const tmp19 = callback;
+    obj[1] = items;
+    let tmp7Result = tmp7(tmp11, obj);
   } else {
-    const obj4 = { activeOpacity: 0.5, accessibilityRole: "button" };
-    const intl = require(1212) /* getSystemLocale */.intl;
-    obj4.accessibilityLabel = intl.string(require(1212) /* getSystemLocale */.t.jSnJGT);
-    obj4.onPress = onCancelReplying;
-    obj4.style = tmp.contextBarRow;
-    const obj5 = { style: tmp.contextCancelIconWrapper };
-    const obj6 = { source: importDefault(8974), size: require(1273) /* Button */.Icon.Sizes.SMALL_20 };
-    obj5.children = callback(require(1273) /* Button */.Icon, obj6);
+    const obj4 = { activeOpacity: 0.5, accessibilityRole: "button", accessibilityLabel: null, onPress: null, style: null, children: null };
+    const intl = tmp(1236).intl;
+    obj4[2] = intl.string(tmp(1236).t.jSnJGT);
+    obj4[3] = onCancelReplying;
+    obj4[4] = tmp3.contextBarRow;
+    const obj5 = { style: null, children: null };
+    obj5[0] = tmp3.contextCancelIconWrapper;
+    const obj6 = { source: null, size: null };
+    obj6[0] = tmp4(8998);
+    obj6[1] = tmp(1297).Icon.Sizes.SMALL_20;
+    obj5[1] = callback(tmp(1297).Icon, obj6);
     const items1 = [callback(closure_5, obj5), ];
-    const obj7 = { lineClamp: 1, variant: "text-sm/medium", color: "text-default", style: tmp.contextButtonText };
-    const intl2 = require(1212) /* getSystemLocale */.intl;
-    obj7.children = intl2.string(require(1212) /* getSystemLocale */.t["5IEsGx"]);
-    items1[1] = callback(require(4161) /* Text */.Text, obj7);
-    obj4.children = items1;
-    tmp4Result = tmp4(require(4695) /* PressableBase */.PressableOpacity, obj4);
+    const obj7 = { lineClamp: 1, variant: "text-sm/medium", color: "text-default", style: null, children: null };
+    obj7[3] = tmp3.contextButtonText;
+    const intl2 = tmp(1236).intl;
+    obj7[4] = intl2.string(tmp(1236).t["5IEsGx"]);
+    items1[1] = callback(tmp(4185).Text, obj7);
+    obj4[5] = items1;
+    tmp7Result = tmp7(tmp(4717).PressableOpacity, obj4);
   }
-  return tmp4Result;
+  return tmp7Result;
 }
 class ChatInputReplyBar {
   constructor(arg0) {
@@ -83,74 +89,29 @@ class ChatInputReplyBar {
     colorStrings = undefined;
     nick = undefined;
     guildId = undefined;
-    f79928 = undefined;
-    c7 = undefined;
-    useDisplayNameStylesFont = undefined;
+    f84553 = undefined;
+    f84553 = undefined;
+    id = undefined;
     author = undefined;
-    replyText = function replyText(arg0) {
-      let c0 = "text-sm/semibold";
-      const intl = pendingReply(colorString[12]).intl;
-      return intl.format(pendingReply(colorString[12]).t["8E4GxS"], {
-        userHook(arg0, arg1) {
-          if ("dot" === outer1_1) {
-            if (null != outer1_2) {
-              let obj = {};
-              obj = { color: outer1_2, colors: outer1_3, guildId: outer1_5, size: "small" };
-              const items = [outer2_10(pendingReply(colorString[6]).RoleDot, obj), ];
-              let obj1 = { variant: message };
-              let tmp19;
-              if (null != outer1_7) {
-                const obj2 = { fontFamily: outer1_7 };
-                tmp19 = obj2;
-              }
-              obj1.style = tmp19;
-              obj1.children = outer1_4;
-              items[1] = outer2_10(pendingReply(colorString[11]).Text, obj1, arg1);
-              obj.children = items;
-              let tmp3Result = outer2_11(outer2_12, obj);
-              const tmp16 = outer2_10;
-              const tmp8 = outer2_11;
-              const tmp9 = outer2_12;
-            }
-            return tmp3Result;
-          }
-          obj = { variant: message };
-          obj1 = pendingReply(colorString[20]);
-          obj.experimental_useNativeText = !obj1.isFabric();
-          const items1 = [outer1_6, ];
-          let tmp4 = null != outer1_7;
-          if (tmp4) {
-            const obj3 = { fontFamily: outer1_7 };
-            tmp4 = obj3;
-          }
-          items1[1] = tmp4;
-          obj.style = items1;
-          let tmp6;
-          if (outer1_9) {
-            tmp6 = outer1_8;
-          }
-          obj.gradientColors = tmp6;
-          obj.children = outer1_4;
-          tmp3Result = outer2_10(pendingReply(colorString[11]).Text, obj, "" + arg1 + "-" + message.message.author.id);
-        }
-      });
-    };
+    tmp = pendingReply;
+    tmp2 = colorString;
     ({ onToggleReplyMention, chatInputFloatingOverride } = global);
     obj = require("useIsMobileVisualRefreshExperimentEnabled");
-    tmp = obj.useMobileVisualRefreshConfig({ location: "ChatInputContextBar" }).chatInputFloating || chatInputFloatingOverride;
-    tmp2 = f79931();
-    obj2 = require("map");
-    token = obj2.useToken(require("_createForOfIteratorHelperLoose").modules.mobile.CHAT_INPUT_BUTTON_MIN_TOUCH_TARGET_SIZE);
-    obj3 = require("map");
-    bound = require("result");
-    obj4 = require("initialize");
+    tmp3 = obj.useMobileVisualRefreshConfig({ location: "ChatInputContextBar" }).chatInputFloating || chatInputFloatingOverride;
+    tmp4 = f48792();
+    tmpResult = require("map");
+    tmp5 = c1;
+    token = tmpResult.useToken(require("Themes").modules.mobile.CHAT_INPUT_BUTTON_MIN_TOUCH_TARGET_SIZE);
+    tmpResult1 = require("map");
+    bound = require("noop");
+    tmpResult2 = require("initialize");
     items = [];
-    items[0] = f79928;
-    stateFromStores = obj4.useStateFromStores(items, () => roleStyle.roleStyle);
+    items[0] = f84553;
+    stateFromStores = tmpResult2.useStateFromStores(items, () => roleStyle.roleStyle);
     c1 = stateFromStores;
-    obj5 = require("useCheckboxA11yNative");
+    tmpResult3 = require("useCheckboxA11yNative");
     obj = { checked: pendingReply.shouldMention };
-    checkboxA11yNative = obj5.useCheckboxA11yNative(obj);
+    checkboxA11yNative = tmpResult3.useCheckboxA11yNative(obj);
     colorString = pendingReplyAuthor.colorString;
     colorStrings = pendingReplyAuthor.colorStrings;
     nick = pendingReplyAuthor.nick;
@@ -159,11 +120,12 @@ class ChatInputReplyBar {
     items1[0] = colorString;
     items1[1] = stateFromStores;
     ({ accessibilityRole, accessibilityState } = checkboxA11yNative);
-    f79928 = colorStrings.useMemo(() => {
+    f84553 = colorStrings.useMemo(() => {
       let tmp;
       if ("hidden" !== stateFromStores) {
         if (null != colorString) {
-          const obj = { color: colorString };
+          const obj = { color: null };
+          obj[0] = tmp2;
           const items = [obj];
           tmp = items;
         }
@@ -171,422 +133,464 @@ class ChatInputReplyBar {
       return tmp;
     }, items1);
     obj1 = { userId: pendingReply.message.author.id, guildId };
-    tmp7 = require("useDisplayNameStyles")(obj1);
-    obj8 = require("DISPLAY_NAME_STYLES_FONT_FAMILY_MAP");
-    c7 = obj8.useDisplayNameStylesFont({ displayNameStyles: tmp7 });
-    obj9 = require("processColorStringsInternal");
-    processColorStringsArray = obj9.useProcessColorStringsArray(colorStrings);
-    useDisplayNameStylesFont = processColorStringsArray;
-    obj10 = require("processColorStringsInternal");
-    author = obj10.useIsRoleStyleAndRoleColorsEligibleForERC(guildId, pendingReply.message.author.id, stateFromStores, processColorStringsArray);
+    tmp10 = require("useDisplayNameStyles")(obj1);
+    tmpResult4 = require("DISPLAY_NAME_STYLES_FONT_FAMILY_MAP");
+    f84553 = tmpResult4.useDisplayNameStylesFont({ displayNameStyles: tmp10 });
+    tmpResult5 = require("processColorStrings");
+    processColorStringsArray = tmpResult5.useProcessColorStringsArray(colorStrings);
+    id = processColorStringsArray;
+    tmpResult6 = require("processColorStrings");
+    author = tmpResult6.useIsRoleStyleAndRoleColorsEligibleForERC(guildId, pendingReply.message.author.id, stateFromStores, processColorStringsArray);
     if (null == onTapContextBarReply) {
-      tmp14 = pendingReply;
-      tmp15 = colorString;
-      num5 = 11;
       tmp13 = jsx;
-      obj2 = {};
-      num6 = 1;
-      obj2.lineClamp = 1;
-      str5 = "text-sm/medium";
-      if (tmp) {
-        str5 = "text-sm/normal";
+      str3 = "text-sm/medium";
+      if (tmp3) {
+        str3 = "text-sm/normal";
       }
-      obj2.variant = str5;
-      str6 = "text-default";
-      if (tmp) {
-        str6 = "text-strong";
+      obj2 = { lineClamp: 1, variant: null, color: null, children: null };
+      obj2[1] = str3;
+      str4 = "text-default";
+      if (tmp3) {
+        str4 = "text-strong";
       }
-      obj2.color = str6;
-      str7 = "text-sm/semibold";
-      obj2.children = replyText("text-sm/semibold");
+      obj2[2] = str4;
+      intl4 = require("getSystemLocale").intl;
+      obj3 = { userHook: null };
+      obj3[0] = function userHook(arg0, arg1) {
+        if ("dot" === stateFromStores) {
+          if (null != colorString) {
+            let obj = { color: null, colors: null, guildId: null, size: "small" };
+            obj[0] = tmp;
+            obj[1] = colorStrings;
+            obj[2] = guildId;
+            const items = [outer1_10(pendingReply(colorString[6]).RoleDot, obj), ];
+            obj = { variant: null, style: null, children: null };
+            obj[0] = "text-sm/semibold";
+            let tmp19;
+            if (null != mergeGuildAvatar) {
+              let obj1 = { fontFamily: null };
+              obj1[0] = tmp18;
+              tmp19 = obj1;
+            }
+            const obj2 = { children: null };
+            obj[1] = tmp19;
+            obj[2] = nick;
+            items[1] = outer1_10(pendingReply(colorString[11]).Text, obj, arg1);
+            obj2[0] = items;
+            let tmp3Result = outer1_11(outer1_12, obj2);
+            const tmp15 = outer1_10;
+            const tmp8 = outer1_11;
+            const tmp9 = outer1_12;
+          }
+          return tmp3Result;
+        }
+        obj = { variant: "text-sm/semibold", experimental_useNativeText: null, style: null, gradientColors: null, children: null };
+        obj1 = pendingReply(colorString[20]);
+        obj[1] = !obj1.isFabric();
+        const items1 = [maybeApplyNoTextColorForLightCustomTheme, ];
+        let tmp5 = null != mergeGuildAvatar;
+        if (tmp5) {
+          const obj3 = { fontFamily: null };
+          obj3[0] = tmp4;
+          tmp5 = obj3;
+        }
+        items1[1] = tmp5;
+        obj[2] = items1;
+        let tmp6;
+        if (closure_9) {
+          tmp6 = processColorStringsArray;
+        }
+        obj[3] = tmp6;
+        obj[4] = nick;
+        tmp3Result = outer1_10(pendingReply(colorString[11]).Text, obj, "" + arg1 + "-" + pendingReply.message.author.id);
+      };
+      obj2[3] = intl4.format(require("getSystemLocale").t["8E4GxS"], obj3);
       tmp13Result = tmp13(require("Text").Text, obj2);
+      tmp14 = tmp13;
     } else {
-      tmp58 = pendingReply;
-      tmp59 = colorString;
-      num17 = 13;
-      tmp57 = jsx;
-      obj3 = {};
-      obj3.style = tmp ? tmp2.floatingReplyTextWrapper : tmp2.contextButtonText;
-      str = "link";
-      obj3.accessibilityRole = "link";
-      tmp9 = pendingReply;
-      tmp10 = colorString;
-      num = 12;
+      tmp14 = jsx;
+      obj4 = { style: null, accessibilityRole: "link", accessibilityLabel: null, accessibilityHint: null, activeOpacity: 0.5, onPress: null, children: null };
+      obj4[0] = tmp3 ? tmp4.floatingReplyTextWrapper : tmp4.contextButtonText;
       intl = require("getSystemLocale").intl;
-      obj4 = {};
-      obj4.username = nick;
-      obj3.accessibilityLabel = intl.formatToPlainString(require("getSystemLocale").t.EpJL4E, obj4);
+      obj5 = { username: null };
+      obj5[0] = nick;
+      obj4[2] = intl.formatToPlainString(require("getSystemLocale").t.EpJL4E, obj5);
       intl2 = require("getSystemLocale").intl;
-      obj3.accessibilityHint = intl2.string(require("getSystemLocale").t["0CfCVW"]);
-      num2 = 0.5;
-      obj3.activeOpacity = 0.5;
-      obj3.onPress = onTapContextBarReply;
-      num3 = 11;
-      tmp11 = jsx;
-      obj5 = {};
-      num4 = 1;
-      obj5.lineClamp = 1;
-      str2 = "text-sm/medium";
-      if (tmp) {
-        str2 = "text-sm/normal";
+      obj4[3] = intl2.string(require("getSystemLocale").t["0CfCVW"]);
+      obj4[5] = onTapContextBarReply;
+      str = "text-sm/medium";
+      if (tmp3) {
+        str = "text-sm/normal";
       }
-      obj5.variant = str2;
-      str3 = "text-default";
-      if (tmp) {
-        str3 = "text-strong";
+      obj6 = { lineClamp: 1, variant: null, color: null, children: null };
+      obj6[1] = str;
+      str2 = "text-default";
+      if (tmp3) {
+        str2 = "text-strong";
       }
-      obj5.color = str3;
-      str4 = "text-sm/semibold";
-      obj5.children = replyText("text-sm/semibold");
-      obj3.children = tmp11(require("Text").Text, obj5);
-      tmp13Result = tmp57(require("PressableBase").PressableOpacity, obj3);
-    }
-    tmp17Result = null;
-    if (null != onCancelReplying) {
-      tmp18 = pendingReply;
-      tmp19 = colorString;
-      num7 = 13;
-      tmp17 = jsx;
-      obj6 = { accessibilityRole: "button", accessibilityLabel: null, activeOpacity: 0.5 };
-      num8 = 12;
+      obj6[2] = str2;
       intl3 = require("getSystemLocale").intl;
-      obj6.accessibilityLabel = intl3.string(require("getSystemLocale").t.jSnJGT);
-      tmp20 = undefined;
-      if (tmp) {
+      obj7 = { userHook: null };
+      obj7[0] = function userHook(arg0, arg1) {
+        if ("dot" === stateFromStores) {
+          if (null != colorString) {
+            let obj = { color: null, colors: null, guildId: null, size: "small" };
+            obj[0] = tmp;
+            obj[1] = colorStrings;
+            obj[2] = guildId;
+            const items = [outer1_10(pendingReply(colorString[6]).RoleDot, obj), ];
+            obj = { variant: null, style: null, children: null };
+            obj[0] = "text-sm/semibold";
+            let tmp19;
+            if (null != mergeGuildAvatar) {
+              let obj1 = { fontFamily: null };
+              obj1[0] = tmp18;
+              tmp19 = obj1;
+            }
+            const obj2 = { children: null };
+            obj[1] = tmp19;
+            obj[2] = nick;
+            items[1] = outer1_10(pendingReply(colorString[11]).Text, obj, arg1);
+            obj2[0] = items;
+            let tmp3Result = outer1_11(outer1_12, obj2);
+            const tmp15 = outer1_10;
+            const tmp8 = outer1_11;
+            const tmp9 = outer1_12;
+          }
+          return tmp3Result;
+        }
+        obj = { variant: "text-sm/semibold", experimental_useNativeText: null, style: null, gradientColors: null, children: null };
+        obj1 = pendingReply(colorString[20]);
+        obj[1] = !obj1.isFabric();
+        const items1 = [maybeApplyNoTextColorForLightCustomTheme, ];
+        let tmp5 = null != mergeGuildAvatar;
+        if (tmp5) {
+          const obj3 = { fontFamily: null };
+          obj3[0] = tmp4;
+          tmp5 = obj3;
+        }
+        items1[1] = tmp5;
+        obj[2] = items1;
+        let tmp6;
+        if (closure_9) {
+          tmp6 = processColorStringsArray;
+        }
+        obj[3] = tmp6;
+        obj[4] = nick;
+        tmp3Result = outer1_10(pendingReply(colorString[11]).Text, obj, "" + arg1 + "-" + pendingReply.message.author.id);
+      };
+      obj6[3] = intl3.format(require("getSystemLocale").t["8E4GxS"], obj7);
+      obj4[6] = tmp14(require("Text").Text, obj6);
+      tmp13Result = tmp14(require("PressableBase").PressableOpacity, obj4);
+    }
+    tmp14Result = null;
+    if (null != onCancelReplying) {
+      obj8 = { accessibilityRole: "button", accessibilityLabel: null, activeOpacity: 0.5, hitSlop: null, style: null, onPress: null, children: null };
+      intl5 = require("getSystemLocale").intl;
+      obj8[1] = intl5.string(require("getSystemLocale").t.jSnJGT);
+      tmp16 = undefined;
+      if (tmp3) {
         if (bound > 0) {
-          tmp20 = bound;
+          tmp16 = bound;
         }
       }
-      obj6.hitSlop = tmp20;
+      obj8[3] = tmp16;
       prop = undefined;
-      if (!tmp) {
-        prop = tmp2.contextCancelIconWrapper;
+      if (!tmp3) {
+        prop = tmp4.contextCancelIconWrapper;
       }
-      obj6.style = prop;
-      obj6.onPress = onCancelReplying;
-      tmp23 = pendingReply;
-      tmp24 = colorString;
-      num9 = 6;
-      tmp22 = jsx;
-      obj7 = {};
-      tmp25 = c1;
-      num10 = 14;
-      obj7.source = require("registerAsset");
-      tmp26 = pendingReply;
-      tmp27 = colorString;
+      obj8[4] = prop;
+      obj8[5] = onCancelReplying;
+      obj9 = { source: null, size: null, style: null };
+      obj9[0] = require("registerAsset");
       Sizes = require("Button").Icon.Sizes;
-      obj7.size = tmp ? Sizes.CUSTOM : Sizes.SMALL_20;
+      obj9[1] = tmp3 ? Sizes.CUSTOM : Sizes.SMALL_20;
       floatingCloseIcon = undefined;
-      if (tmp) {
-        floatingCloseIcon = tmp2.floatingCloseIcon;
+      if (tmp3) {
+        floatingCloseIcon = tmp4.floatingCloseIcon;
       }
-      obj7.style = floatingCloseIcon;
-      obj6.children = tmp22(require("Button").Icon, obj7);
-      tmp17Result = tmp17(require("PressableBase").PressableOpacity, obj6);
+      obj9[2] = floatingCloseIcon;
+      obj8[6] = tmp14(require("Button").Icon, obj9);
+      tmp14Result = tmp14(require("PressableBase").PressableOpacity, obj8);
     }
-    tmp29 = null;
-    if (null != pendingReply) {
-      tmp29 = null;
-      if (pendingReply.showMentionToggle) {
-        tmp31 = pendingReply;
-        tmp32 = colorString;
-        num11 = 13;
-        tmp30 = jsxs;
-        obj8 = {};
-        obj8.accessibilityRole = accessibilityRole;
-        obj8.accessibilityState = accessibilityState;
-        num12 = 12;
-        intl4 = require("getSystemLocale").intl;
-        obj8.accessibilityLabel = intl4.string(require("getSystemLocale").t.P8tvKG);
-        tmp33 = pendingReply;
-        tmp34 = colorString;
-        intl5 = require("getSystemLocale").intl;
-        string = intl5.string;
-        t = require("getSystemLocale").t;
-        if (pendingReply.shouldMention) {
-          stringResult = string(t.PBgTSF);
-        } else {
-          stringResult = string(t["+LXBxU"]);
-        }
-        obj8.accessibilityHint = stringResult;
-        num13 = 0.5;
-        obj8.activeOpacity = 0.5;
-        obj8.onPress = onToggleReplyMention;
-        obj8.style = tmp ? tmp2.floatingMentionGroup : tmp2.replyMentionButton;
-        tmp37 = pendingReply;
-        tmp38 = colorString;
-        num14 = 6;
-        tmp36 = jsx;
-        obj9 = {};
-        tmp39 = c1;
-        num15 = 21;
-        obj9.source = require("registerAsset");
-        obj9.size = require("Button").Icon.Sizes.CUSTOM;
-        items2 = [, ];
-        items2[0] = tmp2.replyMentionIcon;
-        items2[1] = pendingReply.shouldMention && tmp2.replyMentionIconActive;
-        obj9.style = items2;
-        items3 = [, ];
-        items3[0] = tmp36(require("Button").Icon, obj9);
-        tmp41 = pendingReply;
-        tmp42 = colorString;
-        num16 = 11;
-        tmp40 = jsx;
-        obj10 = {};
-        str8 = "text-sm/bold";
-        if (tmp) {
-          str8 = "text-sm/semibold";
-        }
-        obj10.variant = str8;
-        str9 = "text-muted";
-        obj10.color = "text-muted";
-        prop1 = undefined;
-        if (pendingReply.shouldMention) {
-          prop1 = tmp2.replyMentionButtonActive;
-        }
-        obj10.style = prop1;
-        tmp44 = pendingReply;
-        tmp45 = colorString;
-        intl6 = require("getSystemLocale").intl;
-        string2 = intl6.string;
-        p9jC2r = require("getSystemLocale").t;
-        if (pendingReply.shouldMention) {
-          p9jC2r = p9jC2r.p9jC2r;
-          string2Result = string2(p9jC2r);
-        } else {
-          string2Result = string2(p9jC2r.U7f3bK);
-        }
-        obj10.children = string2Result;
-        obj10 = tmp40(require("Text").Text, obj10);
-        items3[1] = obj10;
-        obj8.children = items3;
-        tmp30Result = tmp30(require("PressableBase").PressableOpacity, obj8);
+    showMentionToggle = undefined;
+    if (pendingReply != null) {
+      showMentionToggle = pendingReply.showMentionToggle;
+    }
+    if (!showMentionToggle) {
+      showMentionToggle1 = undefined;
+      if (pendingReply != null) {
+        showMentionToggle1 = pendingReply.showMentionToggle;
       }
-    }
-    tmp48 = null;
-    if (null != pendingReply) {
-      tmp48 = null;
-      if (pendingReply.showMentionToggle) {
-        tmp48 = null;
-        if (null != tmp17Result) {
-          tmp49 = jsx;
-          tmp50 = guildId;
-          obj11 = {};
-          obj11.style = tmp2.floatingDivider;
-          tmp48 = jsx(guildId, obj11);
+      tmp14Result1 = null;
+      if (showMentionToggle1) {
+        tmp14Result1 = null;
+        if (null != tmp14Result) {
+          tmp27 = guildId;
+          obj10 = { style: null };
+          obj10[0] = tmp4.floatingDivider;
+          tmp14Result1 = tmp14(guildId, obj10);
         }
       }
+      tmp28 = jsxs;
+      tmp29 = guildId;
+      obj11 = { style: null, children: null };
+      obj11[0] = tmp4.contextBarRow;
+      tmp30 = !tmp3;
+      if (!tmp3) {
+        tmp30 = tmp14Result;
+      }
+      items2 = [, , ];
+      items2[0] = tmp30;
+      items2[1] = tmp13Result;
+      tmp28Result = null;
+      if (tmp3) {
+        obj12 = { style: null, children: null };
+        obj12[0] = tmp4.floatingRightActions;
+        items3 = [, , ];
+        items3[0] = null;
+        items3[1] = tmp14Result1;
+        items3[2] = tmp14Result;
+        obj12[1] = items3;
+        tmp28Result = tmp28(tmp29, obj12);
+      }
+      items2[2] = tmp28Result;
+      obj11[1] = items2;
+      return tmp28(tmp29, obj11);
+    } else {
+      tmp20 = jsxs;
+      obj13 = { accessibilityRole: null, accessibilityState: null, accessibilityLabel: null, accessibilityHint: null, activeOpacity: 0.5, onPress: null, style: null, children: null };
+      obj13[0] = accessibilityRole;
+      obj13[1] = accessibilityState;
+      intl6 = require("getSystemLocale").intl;
+      obj13[2] = intl6.string(require("getSystemLocale").t.P8tvKG);
+      intl7 = require("getSystemLocale").intl;
+      string = intl7.string;
+      t = require("getSystemLocale").t;
+      if (pendingReply.shouldMention) {
+        stringResult = string(t.PBgTSF);
+      } else {
+        stringResult = string(t["+LXBxU"]);
+      }
+      obj13[3] = stringResult;
+      obj13[5] = onToggleReplyMention;
+      obj13[6] = tmp3 ? tmp4.floatingMentionGroup : tmp4.replyMentionButton;
+      obj14 = { source: null, size: null, style: null };
+      obj14[0] = require("registerAsset");
+      obj14[1] = require("Button").Icon.Sizes.CUSTOM;
+      items4 = [, ];
+      items4[0] = tmp4.replyMentionIcon;
+      items4[1] = pendingReply.shouldMention && tmp4.replyMentionIconActive;
+      obj14[2] = items4;
+      items5 = [, ];
+      items5[0] = tmp14(require("Button").Icon, obj14);
+      str5 = "text-sm/bold";
+      if (tmp3) {
+        str5 = "text-sm/semibold";
+      }
+      obj15 = { variant: null, color: "text-muted", style: null, children: null };
+      obj15[0] = str5;
+      prop1 = undefined;
+      if (pendingReply.shouldMention) {
+        prop1 = tmp4.replyMentionButtonActive;
+      }
+      obj15[2] = prop1;
+      intl8 = require("getSystemLocale").intl;
+      string2 = intl8.string;
+      p9jC2r = require("getSystemLocale").t;
+      if (pendingReply.shouldMention) {
+        p9jC2r = p9jC2r.p9jC2r;
+        string2Result = string2(p9jC2r);
+      } else {
+        string2Result = string2(p9jC2r.U7f3bK);
+      }
+      obj15[3] = string2Result;
+      obj15 = tmp14(require("Text").Text, obj15);
+      items5[1] = obj15;
+      obj13[7] = items5;
+      tmp20Result = tmp20(require("PressableBase").PressableOpacity, obj13);
     }
-    obj12 = { style: tmp2.contextBarRow };
-    tmp53 = !tmp;
-    tmp51 = jsxs;
-    tmp52 = guildId;
-    if (tmp53) {
-      tmp53 = tmp17Result;
-    }
-    items4 = [, , ];
-    items4[0] = tmp53;
-    items4[1] = tmp13Result;
-    tmp54 = tmp29;
-    if (tmp) {
-      tmp55 = jsxs;
-      tmp56 = guildId;
-      obj13 = {};
-      obj13.style = tmp2.floatingRightActions;
-      items5 = [, , ];
-      items5[0] = tmp29;
-      items5[1] = tmp48;
-      items5[2] = tmp17Result;
-      obj13.children = items5;
-      tmp54 = jsxs(guildId, obj13);
-    }
-    items4[2] = tmp54;
-    obj12.children = items4;
-    return tmp51(tmp52, obj12);
+    return;
   }
 }
 function ChatInputEditBar(onCancelEditing) {
-  let obj = require(1324) /* useIsMobileVisualRefreshExperimentEnabled */;
+  let obj = require(1348) /* useIsMobileVisualRefreshExperimentEnabled */;
   const chatInputFloating = obj.useMobileVisualRefreshConfig({ location: "ChatInputContextBar" }).chatInputFloating;
-  const tmp = callback4();
-  let obj1 = require(3869) /* map */;
-  const token = obj1.useToken(importDefault(689).modules.mobile.CHAT_INPUT_BUTTON_MIN_TOUCH_TARGET_SIZE);
-  let obj2 = require(3869) /* map */;
-  const bound = Math.max(0, (token - obj2.useToken(importDefault(689).modules.mobile.CHAT_INPUT_REPLY_MENTION_ICON_SIZE)) / 2);
-  obj = { lineClamp: 1 };
+  const tmp3 = callback3();
+  let obj1 = require(3893) /* map */;
+  const token = obj1.useToken(importDefault(712).modules.mobile.CHAT_INPUT_BUTTON_MIN_TOUCH_TARGET_SIZE);
+  let obj2 = require(3893) /* map */;
+  const bound = Math.max(0, (token - obj2.useToken(importDefault(712).modules.mobile.CHAT_INPUT_REPLY_MENTION_ICON_SIZE)) / 2);
   let str = "text-sm/medium";
   if (chatInputFloating) {
     str = "text-sm/normal";
   }
-  obj.variant = str;
+  obj = { lineClamp: 1, variant: str, color: null, style: null, children: null };
   let str2 = "text-default";
   if (chatInputFloating) {
     str2 = "text-strong";
   }
-  obj.color = str2;
-  obj.style = chatInputFloating ? tmp.floatingReplyTextWrapper : tmp.contextButtonText;
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj.children = intl.string(require(1212) /* getSystemLocale */.t.rtNXxN);
-  const tmp4Result = callback(require(4161) /* Text */.Text, obj);
-  obj = { accessibilityRole: "button", accessibilityLabel: null, activeOpacity: 0.5 };
-  const intl2 = require(1212) /* getSystemLocale */.intl;
-  obj.accessibilityLabel = intl2.string(require(1212) /* getSystemLocale */.t.qv9j1K);
-  let tmp7;
+  obj[2] = str2;
+  obj[3] = chatInputFloating ? tmp3.floatingReplyTextWrapper : tmp3.contextButtonText;
+  const intl = tmp(1236).intl;
+  obj[4] = intl.string(require(1236) /* getSystemLocale */.t.rtNXxN);
+  let tmp7Result = tmp7(require(4185) /* Text */.Text, obj);
+  obj = { accessibilityRole: "button", accessibilityLabel: null, activeOpacity: 0.5, hitSlop: null, style: null, onPress: null, children: null };
+  const intl2 = tmp(1236).intl;
+  obj[1] = intl2.string(require(1236) /* getSystemLocale */.t.qv9j1K);
+  let tmp9;
   if (chatInputFloating) {
     if (bound > 0) {
-      tmp7 = bound;
+      tmp9 = bound;
     }
   }
-  obj.hitSlop = tmp7;
+  obj[3] = tmp9;
   let prop;
   if (!chatInputFloating) {
-    prop = tmp.contextCancelIconWrapper;
+    prop = tmp3.contextCancelIconWrapper;
   }
-  obj.style = prop;
-  obj.onPress = onCancelEditing.onCancelEditing;
-  obj1 = { source: importDefault(8974) };
-  const Sizes = require(1273) /* Button */.Icon.Sizes;
-  obj1.size = chatInputFloating ? Sizes.CUSTOM : Sizes.SMALL_20;
+  obj[4] = prop;
+  obj[5] = onCancelEditing.onCancelEditing;
+  obj1 = { source: null, size: null, style: null };
+  obj1[0] = importDefault(8998);
+  const Sizes = tmp(1297).Icon.Sizes;
+  obj1[1] = chatInputFloating ? Sizes.CUSTOM : Sizes.SMALL_20;
   let floatingCloseIcon;
   if (chatInputFloating) {
-    floatingCloseIcon = tmp.floatingCloseIcon;
+    floatingCloseIcon = tmp3.floatingCloseIcon;
   }
-  obj1.style = floatingCloseIcon;
-  obj.children = callback(require(1273) /* Button */.Icon, obj1);
-  const tmp6Result = callback(require(4695) /* PressableBase */.PressableOpacity, obj);
-  obj2 = { style: tmp.contextBarRow };
-  const obj3 = {};
+  obj1[2] = floatingCloseIcon;
+  obj[6] = closure_10(require(1297) /* Button */.Icon, obj1);
+  tmp7Result = tmp7(tmp(4717).PressableOpacity, obj);
+  obj2 = { style: tmp3.contextBarRow, children: null };
+  const obj3 = { children: null };
   const items = [, ];
   if (chatInputFloating) {
-    items[0] = tmp4Result;
-    const obj4 = { style: tmp.floatingRightActions, children: tmp6Result };
-    items[1] = callback(closure_5, obj4);
-    obj3.children = items;
+    items[0] = tmp7Result;
+    const obj4 = { style: null, children: null };
+    obj4[0] = tmp3.floatingRightActions;
+    obj4[1] = tmp7Result;
+    items[1] = tmp7(tmp13, obj4);
+    obj3[0] = items;
     let tmp16 = obj3;
   } else {
-    items[0] = tmp6Result;
-    items[1] = tmp4Result;
-    obj3.children = items;
+    items[0] = tmp7Result;
+    items[1] = tmp7Result;
+    obj3[0] = items;
     tmp16 = obj3;
   }
-  obj2.children = closure_11(closure_12, tmp16);
-  return callback(closure_5, obj2);
+  obj2[1] = closure_11(closure_12, tmp16);
+  return closure_10(closure_5, obj2);
 }
-({ StyleSheet: closure_4, View: closure_5 } = get_ActivityIndicator);
-({ AnalyticEvents: closure_8, Routes: closure_9 } = ME);
-({ jsx: closure_10, jsxs: closure_11, Fragment: closure_12 } = jsxProd);
+let c3 = importAllResult;
+({ StyleSheet: c4, View: c5 } = get_ActivityIndicator);
+({ AnalyticEvents: metroImportAll, Routes: c9 } = ME);
+({ jsx: c10, jsxs: unpackModuleId, Fragment: closure_12 } = jsxProd);
 let obj = { duration: 250, easing: require("Button").STANDARD_EASING };
-let closure_14 = _createForOfIteratorHelperLoose.createStyles((arg0) => {
-  let MOBILE_FLOATING_ACCESSORY_BACKGROUND = arg0;
-  let obj = {};
-  obj = {};
-  if (null == arg0) {
-    MOBILE_FLOATING_ACCESSORY_BACKGROUND = importDefault(689).colors.MOBILE_FLOATING_ACCESSORY_BACKGROUND;
+let closure_14 = createCacheKey.createStyles((arg0) => {
+  let backgroundColor = arg0;
+  if (arg0 == null) {
+    backgroundColor = importDefault(712).colors.MOBILE_FLOATING_ACCESSORY_BACKGROUND;
   }
-  obj.backgroundColor = MOBILE_FLOATING_ACCESSORY_BACKGROUND;
-  obj.contextBar = obj;
+  return { contextBar: { backgroundColor } };
+});
+let closure_15 = createCacheKey.createStyles(() => {
+  let obj = { contextBarRow: null, floatingReplyTextWrapper: null, contextCancelIconWrapper: null, contextButtonText: null, floatingContextBar: null, replyMentionButton: null, replyMentionButtonActive: null, replyMentionIcon: null, replyMentionIconActive: null, floatingRightActions: null, floatingMentionGroup: null, floatingDivider: null, floatingCloseIcon: null };
+  obj = { overflow: "hidden", flexDirection: "row", alignItems: "center", paddingHorizontal: importDefault(712).modules.mobile.CHAT_INPUT_CONTEXT_BAR_PADDING_HORIZONTAL, paddingVertical: importDefault(712).modules.mobile.CHAT_INPUT_CONTEXT_BAR_PADDING_VERTICAL, gap: importDefault(712).modules.mobile.CHAT_INPUT_CONTEXT_BAR_GAP };
+  obj[0] = obj;
+  obj[1] = { flexShrink: 1, minWidth: 0 };
+  obj[2] = { paddingHorizontal: 12, paddingVertical: 10 };
+  obj[3] = { flexGrow: 1, flexShrink: 1, justifyContent: "center", alignSelf: "stretch", paddingRight: 12, paddingVertical: 10 };
+  obj = { borderBottomWidth: closure_4.hairlineWidth, borderBottomColor: importDefault(712).colors.BORDER_MUTED, overflow: "hidden" };
+  obj[4] = obj;
+  obj[5] = { flexDirection: "row", alignItems: "center", paddingHorizontal: 12, paddingVertical: 10 };
+  obj[6] = { color: importDefault(712).colors.CONTROL_BRAND_FOREGROUND };
+  const obj1 = { color: importDefault(712).colors.CONTROL_BRAND_FOREGROUND };
+  obj[7] = { width: importDefault(712).modules.mobile.CHAT_INPUT_REPLY_MENTION_ICON_SIZE, height: importDefault(712).modules.mobile.CHAT_INPUT_REPLY_MENTION_ICON_SIZE, tintColor: importDefault(712).colors.TEXT_MUTED, marginRight: importDefault(712).modules.mobile.CHAT_INPUT_REPLY_MENTION_ICON_MARGIN_RIGHT };
+  const obj2 = { width: importDefault(712).modules.mobile.CHAT_INPUT_REPLY_MENTION_ICON_SIZE, height: importDefault(712).modules.mobile.CHAT_INPUT_REPLY_MENTION_ICON_SIZE, tintColor: importDefault(712).colors.TEXT_MUTED, marginRight: importDefault(712).modules.mobile.CHAT_INPUT_REPLY_MENTION_ICON_MARGIN_RIGHT };
+  obj[8] = { tintColor: importDefault(712).colors.CONTROL_BRAND_FOREGROUND };
+  obj[9] = { flexGrow: 1, flexShrink: 0, flexDirection: "row", alignItems: "center", justifyContent: "flex-end", gap: 8 };
+  obj[10] = { flexDirection: "row", alignItems: "center", gap: 2 };
+  const obj3 = { tintColor: importDefault(712).colors.CONTROL_BRAND_FOREGROUND };
+  obj[11] = { width: closure_4.hairlineWidth, alignSelf: "stretch", backgroundColor: importDefault(712).colors.BORDER_SUBTLE };
+  const obj4 = { width: closure_4.hairlineWidth, alignSelf: "stretch", backgroundColor: importDefault(712).colors.BORDER_SUBTLE };
+  obj[12] = { width: importDefault(712).modules.mobile.CHAT_INPUT_REPLY_MENTION_ICON_SIZE, height: importDefault(712).modules.mobile.CHAT_INPUT_REPLY_MENTION_ICON_SIZE, tintColor: importDefault(712).colors.INTERACTIVE_ICON_DEFAULT };
   return obj;
 });
-let closure_15 = _createForOfIteratorHelperLoose.createStyles(() => {
-  let obj = {};
-  obj = { overflow: "hidden", flexDirection: "row", alignItems: "center", paddingHorizontal: importDefault(689).modules.mobile.CHAT_INPUT_CONTEXT_BAR_PADDING_HORIZONTAL, paddingVertical: importDefault(689).modules.mobile.CHAT_INPUT_CONTEXT_BAR_PADDING_VERTICAL, gap: importDefault(689).modules.mobile.CHAT_INPUT_CONTEXT_BAR_GAP };
-  obj.contextBarRow = obj;
-  obj.floatingReplyTextWrapper = { flexShrink: 1, minWidth: 0 };
-  obj.contextCancelIconWrapper = { paddingHorizontal: 12, paddingVertical: 10 };
-  obj.contextButtonText = { flexGrow: 1, flexShrink: 1, justifyContent: "center", alignSelf: "stretch", paddingRight: 12, paddingVertical: 10 };
-  obj = { borderBottomWidth: closure_4.hairlineWidth, borderBottomColor: importDefault(689).colors.BORDER_MUTED, overflow: "hidden" };
-  obj.floatingContextBar = obj;
-  obj.replyMentionButton = { flexDirection: "row", alignItems: "center", paddingHorizontal: 12, paddingVertical: 10 };
-  obj.replyMentionButtonActive = { color: importDefault(689).colors.CONTROL_BRAND_FOREGROUND };
-  const obj1 = { color: importDefault(689).colors.CONTROL_BRAND_FOREGROUND };
-  obj.replyMentionIcon = { width: importDefault(689).modules.mobile.CHAT_INPUT_REPLY_MENTION_ICON_SIZE, height: importDefault(689).modules.mobile.CHAT_INPUT_REPLY_MENTION_ICON_SIZE, tintColor: importDefault(689).colors.TEXT_MUTED, marginRight: importDefault(689).modules.mobile.CHAT_INPUT_REPLY_MENTION_ICON_MARGIN_RIGHT };
-  const obj2 = { width: importDefault(689).modules.mobile.CHAT_INPUT_REPLY_MENTION_ICON_SIZE, height: importDefault(689).modules.mobile.CHAT_INPUT_REPLY_MENTION_ICON_SIZE, tintColor: importDefault(689).colors.TEXT_MUTED, marginRight: importDefault(689).modules.mobile.CHAT_INPUT_REPLY_MENTION_ICON_MARGIN_RIGHT };
-  obj.replyMentionIconActive = { tintColor: importDefault(689).colors.CONTROL_BRAND_FOREGROUND };
-  obj.floatingRightActions = { flexGrow: 1, flexShrink: 0, flexDirection: "row", alignItems: "center", justifyContent: "flex-end", gap: 8 };
-  obj.floatingMentionGroup = { flexDirection: "row", alignItems: "center", gap: 2 };
-  const obj3 = { tintColor: importDefault(689).colors.CONTROL_BRAND_FOREGROUND };
-  obj.floatingDivider = { width: closure_4.hairlineWidth, alignSelf: "stretch", backgroundColor: importDefault(689).colors.BORDER_SUBTLE };
-  const obj4 = { width: closure_4.hairlineWidth, alignSelf: "stretch", backgroundColor: importDefault(689).colors.BORDER_SUBTLE };
-  obj.floatingCloseIcon = { width: importDefault(689).modules.mobile.CHAT_INPUT_REPLY_MENTION_ICON_SIZE, height: importDefault(689).modules.mobile.CHAT_INPUT_REPLY_MENTION_ICON_SIZE, tintColor: importDefault(689).colors.INTERACTIVE_ICON_DEFAULT };
-  return obj;
-});
-let closure_16 = { code: "function ChatInputContextBarTsx1(){const{stylesBackgroundColor,chatInputFloating,heightSv}=this.__closure;return{backgroundColor:stylesBackgroundColor,...(chatInputFloating?{maxHeight:heightSv.get()}:{height:heightSv.get()})};}" };
-let closure_17 = { code: "function ChatInputContextBarTsx2(finished){const{runOnJS,handleTransitionFinished}=this.__closure;if(finished){runOnJS(handleTransitionFinished)();}}" };
-let closure_18 = importAllResult.forwardRef((children) => {
+let closure_19 = { code: "function ChatInputContextBarTsx1(){const{stylesBackgroundColor,chatInputFloating,heightSv}=this.__closure;return{backgroundColor:stylesBackgroundColor,...(chatInputFloating?{maxHeight:heightSv.get()}:{height:heightSv.get()})};}" };
+let closure_20 = { code: "function ChatInputContextBarTsx2(finished){const{runOnJS,handleTransitionFinished}=this.__closure;if(finished){runOnJS(handleTransitionFinished)();}}" };
+let closure_21 = importAllResult.forwardRef((children, ref) => {
+  let floatingContextBar;
+  let backgroundColor;
   let num;
   let sharedValue;
-  let ref;
+  ref = undefined;
   let closure_5;
+  const gradientValue = floatingContextBar(num[22]).useGradientValue(floatingContextBar(num[22]).GradientPercentage.END);
   let obj = floatingContextBar(num[22]);
-  const gradientValue = obj.useGradientValue(floatingContextBar(num[22]).GradientPercentage.END);
   floatingContextBar = floatingContextBar(num[9]).useMobileVisualRefreshConfig({ location: "ChatInputContextBar" }).chatInputFloating;
-  const backgroundColor = callback3(gradientValue).contextBar.backgroundColor;
+  backgroundColor = callback2(gradientValue).contextBar.backgroundColor;
   num = 40;
   const obj2 = floatingContextBar(num[9]);
   if (floatingContextBar) {
     num = 60;
   }
-  let tmp2 = callback4();
-  sharedValue = floatingContextBar(num[23]).useSharedValue(0);
-  const obj3 = floatingContextBar(num[23]);
-  let fn = function o() {
+  let tmpResult = tmp(tmp2[23]);
+  sharedValue = tmpResult.useSharedValue(0);
+  tmpResult = tmp(tmp2[23]);
+  let fn = function l() {
     let obj = { backgroundColor };
-    obj = {};
-    const value = sharedValue.get();
     if (floatingContextBar) {
-      obj.maxHeight = value;
-      let tmp2 = obj;
+      obj = { maxHeight: null };
+      obj[0] = sharedValue.get();
     } else {
-      obj.height = value;
-      tmp2 = obj;
+      obj = { height: null };
+      obj[0] = sharedValue.get();
     }
-    const merged = Object.assign(tmp2);
+    const merged = Object.assign(obj);
     return obj;
   };
-  obj = { stylesBackgroundColor: backgroundColor, chatInputFloating: floatingContextBar, heightSv: sharedValue };
-  fn.__closure = obj;
+  fn.__closure = { stylesBackgroundColor: backgroundColor, chatInputFloating: floatingContextBar, heightSv: sharedValue };
   fn.__workletHash = 3976432455712;
-  fn.__initData = closure_16;
-  const animatedStyle = floatingContextBar(num[23]).useAnimatedStyle(fn);
+  fn.__initData = closure_19;
+  const animatedStyle = tmpResult.useAnimatedStyle(fn);
   ref = sharedValue.useRef(null);
   const items = [ref];
   closure_5 = sharedValue.useCallback(() => {
-    if (null != ref.current) {
-      ref.current();
+    const current = ref.current;
+    if (current != null) {
+      current();
     }
   }, items);
-  const imperativeHandle = sharedValue.useImperativeHandle(arg1, () => ({
+  const imperativeHandle = sharedValue.useImperativeHandle(ref, () => ({
     componentDidAppear() {
-      const result = outer1_3.set(floatingContextBar(num[24]).withTiming(outer1_2, outer2_13));
+      const result = store.set(outer1_0(outer1_2[24]).withTiming(closure_2, outer1_13));
     },
     componentDidEnter() {
-      const result = outer1_3.set(floatingContextBar(num[24]).withTiming(outer1_2, outer2_13));
+      const result = store.set(outer1_0(outer1_2[24]).withTiming(closure_2, outer1_13));
     },
     componentWillLeave(current) {
-      outer1_4.current = current;
-      let obj = floatingContextBar(num[24]);
+      closure_4.current = current;
+      let obj = outer1_0(outer1_2[24]);
       const fn = function n(arg0) {
         if (arg0) {
-          floatingContextBar(23[23]).runOnJS(outer2_5)();
-          const obj = floatingContextBar(23[23]);
+          outer1_0(outer1_2[23]).runOnJS(closure_5)();
+          const obj = outer1_0(outer1_2[23]);
         }
       };
-      obj = { runOnJS: floatingContextBar(num[23]).runOnJS, handleTransitionFinished: outer1_5 };
+      obj = { runOnJS: outer1_0(outer1_2[23]).runOnJS, handleTransitionFinished: closure_5 };
       fn.__closure = obj;
       fn.__workletHash = 10908592279914;
-      fn.__initData = outer2_17;
-      const result = outer1_3.set(obj.withTiming(0, outer2_13, "respect-motion-settings", fn));
+      fn.__initData = outer1_20;
+      const result = store.set(obj.withTiming(0, outer1_13, "respect-motion-settings", fn));
     }
   }));
-  obj = {};
-  const items1 = [animatedStyle, ];
+  const style = [animatedStyle, ];
   if (floatingContextBar) {
-    floatingContextBar = tmp2.floatingContextBar;
+    floatingContextBar = tmp4.floatingContextBar;
   }
-  items1[1] = floatingContextBar;
-  obj.style = items1;
-  obj.children = children.children;
-  return closure_10(backgroundColor(num[23]).View, obj);
+  style[1] = floatingContextBar;
+  return closure_10(backgroundColor(num[23]).View, { style, children: children.children });
 });
 const memoResult = importAllResult.memo(function ChatInputContextBar(channel) {
   let onCancelEditing;
@@ -598,50 +602,52 @@ const memoResult = importAllResult.memo(function ChatInputContextBar(channel) {
   const items = [channel, chatInputRef, pendingReply];
   const memo = importAllResult.useMemo(() => ({
     onCancelEditing() {
-      const current = outer1_1.current;
-      if (null != current) {
+      const current = ref.current;
+      if (current != null) {
         current.handleCancelEditing();
       }
     },
     onCancelReplying() {
-      if (null != outer1_2) {
-        channel(pendingReply[25]).deletePendingReply(outer1_0.id);
-        const obj2 = channel(pendingReply[25]);
-        let obj = {};
-        let id;
-        if (null != outer1_2) {
-          id = outer1_2.message.id;
+      if (null != closure_2) {
+        outer1_0(outer1_2[25]).deletePendingReply(id.id);
+        const obj3 = outer1_0(outer1_2[25]);
+        const tmp10 = id;
+        const tmp8 = outer1_0;
+        const tmp9 = outer1_2;
+        id = undefined;
+        if (tmp != null) {
+          id = tmp.message.id;
         }
-        obj.message_id = id;
-        ({ id: obj4.channel_id, guild_id: obj4.guild_id } = outer1_0);
-        obj.context_action = "reply";
-        obj = channel(pendingReply[27]);
-        obj.reason = obj.getContextBarCancelReason("reply", "cancel");
-        const currentUser = outer2_7.getCurrentUser();
+        const obj = { message_id: null, channel_id: null, guild_id: null, context_action: "reply", reason: null, is_own_message: null };
+        obj[0] = id;
+        ({ id: obj[1], guild_id: obj[2] } = tmp10);
+        const obj4 = outer1_1(outer1_2[26]);
+        obj[4] = tmp8(tmp9[27]).getContextBarCancelReason("reply", "cancel");
+        const currentUser = outer1_7.getCurrentUser();
         let id1;
-        if (null != currentUser) {
+        if (currentUser != null) {
           id1 = currentUser.id;
         }
         let id2;
-        if (null != outer1_2) {
-          id2 = outer1_2.message.author.id;
+        if (tmp != null) {
+          id2 = tmp.message.author.id;
         }
-        obj.is_own_message = id1 === id2;
-        chatInputRef(pendingReply[26]).track(outer2_8.CHAT_CONTEXT_BAR_ACTION_CANCELED, obj);
-        const obj3 = chatInputRef(pendingReply[26]);
+        obj[5] = id1 === id2;
+        obj4.track(outer1_8.CHAT_CONTEXT_BAR_ACTION_CANCELED, obj);
+        const tmp8Result = tmp8(tmp9[27]);
       }
     },
     onTapContextBarReply() {
-      if (null != outer1_2) {
-        const channel = outer1_2.channel;
-        channel(pendingReply[28]).transitionTo(outer2_9.CHANNEL(channel.getGuildId(), outer1_2.channel.id, outer1_2.message.id));
-        const obj = channel(pendingReply[28]);
+      if (null != closure_2) {
+        const channel = tmp.channel;
+        outer1_0(outer1_2[28]).transitionTo(outer1_9.CHANNEL(channel.getGuildId(), tmp.channel.id, tmp.message.id));
+        const obj = outer1_0(outer1_2[28]);
       }
     },
     onToggleReplyMention() {
-      if (null != outer1_2) {
-        const result = channel(pendingReply[25]).setPendingReplyShouldMention(outer1_2.channel.id, !outer1_2.shouldMention);
-        const obj = channel(pendingReply[25]);
+      if (null != closure_2) {
+        const result = outer1_0(outer1_2[25]).setPendingReplyShouldMention(tmp.channel.id, !tmp.shouldMention);
+        const obj = outer1_0(outer1_2[25]);
       }
     }
   }), items);
@@ -649,42 +655,49 @@ const memoResult = importAllResult.memo(function ChatInputContextBar(channel) {
   ({ onCancelEditing, onTapContextBarReply, onToggleReplyMention } = memo);
   let obj = channel(pendingReply[29]);
   let message;
-  if (null != pendingReply) {
+  if (pendingReply != null) {
     message = pendingReply.message;
   }
   const nullableMessageAuthor = obj.useNullableMessageAuthor(message);
-  obj = { component: closure_5 };
-  let tmp5 = null != pendingReply;
-  if (tmp5) {
-    tmp5 = null != nullableMessageAuthor;
+  obj = { component: closure_5, children: null };
+  let tmp7 = null != pendingReply;
+  if (tmp7) {
+    tmp7 = null != nullableMessageAuthor;
   }
-  if (tmp5) {
-    obj = {};
-    const obj1 = { pendingReply, pendingReplyAuthor: nullableMessageAuthor, onTapContextBarReply, onCancelReplying, onToggleReplyMention };
-    obj.children = callback(ChatInputReplyBar, obj1);
-    tmp5 = callback(closure_18, obj);
+  if (tmp7) {
+    obj = { children: null };
+    const obj1 = { pendingReply: null, pendingReplyAuthor: null, onTapContextBarReply: null, onCancelReplying: null, onToggleReplyMention: null };
+    obj1[0] = pendingReply;
+    obj1[1] = nullableMessageAuthor;
+    obj1[2] = onTapContextBarReply;
+    obj1[3] = onCancelReplying;
+    obj1[4] = onToggleReplyMention;
+    obj[0] = callback(ChatInputReplyBar, obj1);
+    tmp7 = callback(closure_21, obj);
   }
-  const items1 = [tmp5, , ];
-  let tmp9 = null != pendingReply && null == nullableMessageAuthor;
-  if (tmp9) {
-    let obj2 = {};
-    let obj3 = { onCancelReplying };
-    obj2.children = callback(ChatInputReplyBarNoAuthor, obj3);
-    tmp9 = callback(closure_18, obj2);
+  const items1 = [tmp7, , ];
+  let tmp11 = null != pendingReply && null == nullableMessageAuthor;
+  if (tmp11) {
+    const obj2 = { children: null };
+    let obj3 = { onCancelReplying: null };
+    obj3[0] = onCancelReplying;
+    obj2[0] = callback(ChatInputReplyBarNoAuthor, obj3);
+    tmp11 = callback(closure_21, obj2);
   }
-  items1[1] = tmp9;
-  let tmp13 = null != channel.pendingEdit;
-  if (tmp13) {
-    const obj4 = {};
-    const obj5 = { onCancelEditing };
-    obj4.children = callback(ChatInputEditBar, obj5);
-    tmp13 = callback(closure_18, obj4);
+  items1[1] = tmp11;
+  let tmp15 = null != channel.pendingEdit;
+  if (tmp15) {
+    let obj4 = { children: null };
+    const obj5 = { onCancelEditing: null };
+    obj5[0] = onCancelEditing;
+    obj4[0] = callback(ChatInputEditBar, obj5);
+    tmp15 = callback(closure_21, obj4);
   }
-  items1[2] = tmp13;
-  obj.children = items1;
+  items1[2] = tmp15;
+  obj[1] = items1;
   return closure_11(channel(pendingReply[30]).TransitionGroup, obj);
 });
-let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/chat_input/native/ChatInputContextBar.tsx");
+let result = require("maybeApplyNoTextColorForLightCustomTheme").fileFinishedImporting("modules/chat_input/native/ChatInputContextBar.tsx");
 
 export default memoResult;
 export { ChatInputReplyBar };

@@ -1,31 +1,28 @@
-// Module ID: 1552
-// Function ID: 17602
+// Module ID: 1576
+// Function ID: 1577
 // Name: DRAG_HANDLE
-// Dependencies: [1553, 689, 2]
+// Dependencies: [1577, 712, 2]
 
-// Module 1552 (DRAG_HANDLE)
+// Module 1576 (DRAG_HANDLE)
 import isMetaQuest from "isMetaQuest";
 
-const obj = {};
 if (isMetaQuest.isMetaQuest()) {
-  obj.slotHeight = 24;
-  obj.barColor = require("_createForOfIteratorHelperLoose").colors.BACKGROUND_MOD_STRONG;
-  obj.barWidth = require("_createForOfIteratorHelperLoose").space.PX_64;
-  obj.barHeight = require("_createForOfIteratorHelperLoose").space.PX_8;
-  obj.barMarginTop = require("_createForOfIteratorHelperLoose").space.PX_16;
-  let tmp2 = obj;
+  let obj = { slotHeight: 24, barColor: null, barWidth: null, barHeight: null, barMarginTop: null };
+  obj[1] = require("Themes").colors.BACKGROUND_MOD_STRONG;
+  obj[2] = require("Themes").space.PX_64;
+  obj[3] = require("Themes").space.PX_8;
+  obj[4] = require("Themes").space.PX_16;
 } else {
-  obj.slotHeight = 16;
-  obj.barColor = require("_createForOfIteratorHelperLoose").colors.BACKGROUND_MOD_MUTED;
-  obj.barWidth = require("_createForOfIteratorHelperLoose").space.PX_32;
-  obj.barHeight = require("_createForOfIteratorHelperLoose").space.PX_4;
-  obj.barMarginTop = require("_createForOfIteratorHelperLoose").space.PX_4;
-  tmp2 = obj;
+  obj = { slotHeight: 16, barColor: null, barWidth: null, barHeight: null, barMarginTop: null };
+  obj[1] = require("Themes").colors.BACKGROUND_MOD_MUTED;
+  obj[2] = require("Themes").space.PX_32;
+  obj[3] = require("Themes").space.PX_4;
+  obj[4] = require("Themes").space.PX_4;
 }
 const result = require("set").fileFinishedImporting("modules/media_keyboard/native/MediaKeyboardConstants.tsx");
 
-export const DRAG_HANDLE = tmp2;
-export const HEADER_HANDLE_HEIGHT = tmp2.slotHeight;
+export const DRAG_HANDLE = obj;
+export const HEADER_HANDLE_HEIGHT = obj.slotHeight;
 export const MediaKeyboardTarget = { CHAT: 0, [0]: "CHAT", COMMAND: 1, [1]: "COMMAND", APP_LAUNCHER: 2, [2]: "APP_LAUNCHER", INTERACTION_MODAL: 3, [3]: "INTERACTION_MODAL" };
 export const InAppCameraUsedViews = { FULLY_EXPANDED: "fully expanded" };
 export const InAppCameraUsedCameraPreviewTypes = { CAMERA_TILE: "camera tile", CAMERA_BUTTON: "camera button", TAKE_A_PHOTO_BUTTON: "take a photo button" };

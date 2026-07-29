@@ -1,188 +1,219 @@
-// Module ID: 8243
-// Function ID: 65867
+// Module ID: 8267
+// Function ID: 8268
 // Name: EditGuildEventWhere
-// Dependencies: [57, 31, 1348, 3793, 5761, 1354, 653, 33, 4165, 1212, 8189, 566, 1456, 8244, 8211, 4161, 4578, 1820, 8185, 3878, 8209, 8278, 3747, 8279, 8280, 2]
+// Dependencies: [32, 19, 1372, 3817, 5779, 1378, 676, 21, 4189, 1236, 8213, 589, 1480, 8268, 8235, 4185, 4600, 1844, 8209, 3902, 8233, 8302, 3771, 8303, 8304, 2]
 // Exports: default
 
-// Module 8243 (EditGuildEventWhere)
+// Module 8267 (EditGuildEventWhere)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_7 from "_isNativeReflectConstruct";
-import { isGuildScheduledEventActive as closure_8 } from "_isNativeReflectConstruct";
+import AccessibilityAnnouncer from "AccessibilityAnnouncer";
+import ensureGuildLoaded from "ensureGuildLoaded";
+import getUncachedChannelPermissions from "getUncachedChannelPermissions";
+import { isGuildScheduledEventActive as closure_8 } from "scheduledEventSort";
 import GUILD_EVENT_MAX_NAME_LENGTH from "GUILD_EVENT_MAX_NAME_LENGTH";
 import ME from "ME";
-import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import jsxProd from "EditGuildEventStepHeader";
+import createCacheKey from "createCacheKey";
 
-let closure_10;
-let closure_11;
+let c10;
+let c9;
 let closure_12;
-let closure_13;
 let closure_14;
 let closure_15;
-let closure_9;
+let map1;
+let unpackModuleId;
 const require = arg1;
-({ AGE_VERIFICATION_STAGE_CHANNEL_TYPES: closure_9, GuildScheduledEventEntityTypes: closure_10 } = GUILD_EVENT_MAX_NAME_LENGTH);
-({ Permissions: closure_11, GuildSettingsSections: closure_12 } = ME);
-({ jsx: closure_13, Fragment: closure_14, jsxs: closure_15 } = jsxProd);
-let closure_16 = _createForOfIteratorHelperLoose.createStyles({ channelSelection: { marginTop: 16 }, error: { paddingVertical: 8 }, text: { marginTop: 24 } });
-let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/guild_scheduled_events/native/components/EditGuildEventWhere.tsx");
+({ AGE_VERIFICATION_STAGE_CHANNEL_TYPES: c9, GuildScheduledEventEntityTypes: c10 } = GUILD_EVENT_MAX_NAME_LENGTH);
+({ Permissions: unpackModuleId, GuildSettingsSections: closure_12 } = ME);
+({ jsx: map1, Fragment: closure_14, jsxs: closure_15 } = jsxProd);
+let closure_16 = createCacheKey.createStyles({ channelSelection: { marginTop: 16 }, error: { paddingVertical: 8 }, text: { marginTop: 24 } });
+let result = require("ensureGuildLoaded").fileFinishedImporting("modules/guild_scheduled_events/native/components/EditGuildEventWhere.tsx");
 
 export default function EditGuildEventWhere(guild) {
+  let c4;
   let guildEventId;
   let initialGuildEvent;
+  let tmp8;
   guild = guild.guild;
   const guildEvent = guild.guildEvent;
   const onChange = guild.onChange;
+  let ref;
+  let callback;
+  let React;
   ({ guildEventId, initialGuildEvent } = guild);
-  const tmp = callback4();
-  const ref = React.useRef(null);
+  const tmp = callback3();
+  ref = React.useRef(null);
   let obj = guild(ref[11]);
-  const items = [_isNativeReflectConstruct];
+  const items = [ensureGuildLoaded];
   const items1 = [guildEvent.channelId];
   const stateFromStores = obj.useStateFromStores(items, () => outer1_6.getChannel(guildEvent.channelId), items1);
   let obj1 = guild(ref[11]);
-  const items2 = [closure_7];
+  const items2 = [getUncachedChannelPermissions];
   const items3 = [guild];
   let stateFromStores1 = obj1.useStateFromStores(items2, () => outer1_7.can(outer1_11.MANAGE_ROLES, guild), items3);
-  const tmp5 = callback(React.useState(null), 2);
-  const first = tmp5[0];
-  callback = tmp5[1];
+  [tmp8, c4] = callback(React.useState(null), 2);
   let obj2 = guild(ref[12]);
   React = obj2.useNavigation();
-  obj = { guild, channel: stateFromStores, guildEventId };
+  const tmp7 = callback(React.useState(null), 2);
+  obj = { guild, channel: stateFromStores, guildEventId, channelType: null, onChangeChannel: null, style: null };
   guildEvent(ref[13]);
   let obj4 = guild(ref[10]);
-  obj.channelType = obj4.getChannelTypeFromEntity(guildEvent.entityType);
-  obj.onChangeChannel = function onChangeChannel(channelId) {
-    callback(null);
+  obj[3] = obj4.getChannelTypeFromEntity(guildEvent.entityType);
+  obj[4] = function onChangeChannel(channelId) {
+    _undefined(null);
     onChange({ channelId: channelId.id });
   };
-  obj.style = tmp.channelSelection;
+  obj[5] = tmp.channelSelection;
   if (guildEvent.entityType === constants.EXTERNAL) {
-    obj = {};
-    let obj6 = guild(ref[10]);
-    const locationFromEventData = obj6.getLocationFromEventData(guildEvent);
-    let str = "";
-    if (null != locationFromEventData) {
-      str = locationFromEventData;
+    let str = tmp3(tmp4[10]).getLocationFromEventData(guildEvent);
+    if (str == null) {
+      str = "";
     }
-    obj.location = str;
-    obj.onChange = function handleChangeEventLocation(location) {
-      callback(null);
+    obj = { location: null, onChange: null, onFocus: null };
+    obj[0] = str;
+    obj[1] = function handleChangeEventLocation(location) {
+      _undefined(null);
       onChange({ entityMetadata: { location } });
     };
-    obj.onFocus = function onFocus() {
+    obj[2] = function onFocus() {
       const timerId = setTimeout(() => {
-        if (null != outer1_3.current) {
-          const current = outer1_3.current;
+        if (null != ref.current) {
+          const current = ref.current;
           current.scrollToEnd();
         }
       }, 100);
     };
-    let tmp11Result = callback3(guild(ref[14]).GuildEventLocation, obj);
-    const tmp11 = callback3;
+    let tmp10Result = tmp10(tmp3(tmp4[14]).GuildEventLocation, obj);
+    const tmp3Result = tmp3(tmp4[10]);
   } else {
-    tmp11Result = tmp9;
+    tmp10Result = tmp13;
     if (null == stateFromStores) {
-      tmp11Result = null;
+      tmp10Result = null;
     }
   }
-  obj1 = {};
-  let tmp17 = null;
-  if (null != first) {
-    obj2 = { style: tmp.error, variant: "text-sm/normal", color: "text-feedback-critical", children: first };
-    tmp17 = callback3(guild(ref[15]).Text, obj2);
+  tmp10Result = null;
+  if (null != tmp8) {
+    obj1 = { style: null, variant: "text-sm/normal", color: "text-feedback-critical", children: null };
+    obj1[0] = tmp.error;
+    obj1[3] = tmp8;
+    tmp10Result = tmp10(tmp3(tmp4[15]).Text, obj1);
   }
-  const items4 = [tmp17, ];
-  const obj3 = {};
-  let intl = guild(ref[9]).intl;
-  obj3.text = intl.string(guild(ref[9]).t.PDTjLN);
-  obj3.variant = "primary";
-  obj3.onPress = function onPress() {
+  obj2 = { children: null };
+  const items4 = [tmp10Result, ];
+  const obj3 = { text: null, variant: "primary", onPress: null, disabled: null };
+  let intl = tmp3(tmp4[9]).intl;
+  obj3[0] = intl.string(guild(ref[9]).t.PDTjLN);
+  obj3[2] = function onPress() {
     const result = onChange(ref[17]).dismissGlobalKeyboard();
-    callback(null);
-    const entityType = guildEvent.entityType;
-    if (entityType === outer1_10.NONE) {
-      const _Error3 = Error;
-      const intl3 = guild(ref[9]).intl;
-      const error = new Error(intl3.string(guild(ref[9]).t.C4KzmQ));
-      throw error;
-    } else {
-      if (entityType === outer1_10.EXTERNAL) {
-        if (null == obj2.getLocationFromEventData(tmp3)) {
-          const _Error2 = Error;
-          const intl2 = guild(ref[9]).intl;
-          const error1 = new Error(intl2.string(guild(ref[9]).t.q91szp));
-          throw error1;
+    try {
+      _undefined(null);
+      (function assertGuildEventWhereIsValid(guildEvent) {
+        const entityType = guildEvent.entityType;
+        if (entityType === constants.NONE) {
+          const _Error3 = Error;
+          const intl3 = callback(1236).intl;
+          const error = new Error(intl3.string(callback(1236).t.C4KzmQ));
+          throw error;
+        } else {
+          if (entityType === tmp2.EXTERNAL) {
+            if (null == obj.getLocationFromEventData(guildEvent)) {
+              const _Error2 = Error;
+              const intl2 = tmp3(1236).intl;
+              const error1 = new Error(intl2.string(tmp3(1236).t.q91szp));
+              throw error1;
+            }
+            obj = callback(8213);
+          }
+          if (null == tmp) {
+            if (entityType !== tmp2.EXTERNAL) {
+              const _Error = Error;
+              const intl = callback(1236).intl;
+              const error2 = new Error(intl.string(callback(1236).t["4LQwnw"]));
+              throw error2;
+            }
+          }
         }
-        obj2 = guild(ref[10]);
-      }
-      if (null == tmp4) {
-        if (entityType !== outer1_10.EXTERNAL) {
-          const _Error = Error;
-          const intl = guild(ref[9]).intl;
-          const error2 = new Error(intl.string(guild(ref[9]).t["4LQwnw"]));
-          throw error2;
-        }
-      }
+      })(guildEvent);
       arr = arr.push(guild(ref[18]).EditGuildEventScreens.DETAILS);
+    } catch (tmp13) {
+      _undefined(tmp13.message);
+      const AccessibilityAnnouncer = guild(tmp2[19]).AccessibilityAnnouncer;
+      AccessibilityAnnouncer.announce(tmp13.message);
     }
   };
-  obj3.disabled = null != first;
-  items4[1] = callback3(guild(ref[16]).Button, obj3);
-  obj1.children = items4;
-  const tmp15 = closure_15;
+  obj3[3] = null != tmp8;
+  items4[1] = closure_13(guild(ref[16]).Button, obj3);
+  obj2[0] = items4;
   const tmp16 = closure_14;
-  const tmp7 = callback2(initialGuildEvent);
-  obj4 = { action: closure_15(closure_14, obj1), ref };
-  const tmp15Result = closure_15(closure_14, obj1);
-  const tmp22 = closure_15;
-  const obj5 = {};
-  const tmp23 = guildEvent(ref[20]);
-  let intl2 = guild(ref[9]).intl;
-  obj5.title = intl2.string(guild(ref[9]).t["DC+Qm8"]);
-  let intl3 = guild(ref[9]).intl;
-  obj5.subtitle = intl3.string(guild(ref[9]).t.IwmXLP);
-  const items5 = [callback3(guildEvent(ref[21]), obj5), , , , ];
-  obj6 = {
+  const tmp9 = callback2(initialGuildEvent);
+  obj4 = { action: closure_15(closure_14, obj2), ref, children: null };
+  let tmp11Result = tmp11(tmp4[20]);
+  const obj5 = { title: null, subtitle: null };
+  tmp11Result = tmp11(tmp4[21]);
+  let intl2 = tmp3(tmp4[9]).intl;
+  obj5[0] = intl2.string(guild(ref[9]).t["DC+Qm8"]);
+  let intl3 = tmp3(tmp4[9]).intl;
+  obj5[1] = intl3.string(guild(ref[9]).t.IwmXLP);
+  const items5 = [
+    closure_13(tmp11Result, obj5),
+    closure_13(guild(ref[14]).GuildEventEntityTypeSelection, {
+      guild,
+      entityType: guildEvent.entityType,
+      onChange(entityType) {
+        _undefined(null);
+        const obj = { entityType, scheduledEndTime: "r" };
+        if (entityType === outer1_10.EXTERNAL) {
+          let obj2 = guildEvent(ref[22])(guildEvent.scheduledStartTime);
+          if (obj2 == null) {
+            obj2 = tmp2(tmp3[22])();
+          }
+          obj.scheduledEndTime = obj2.add(1, "hour").toISOString();
+          const addResult = obj2.add(1, "hour");
+          tmp2 = guildEvent;
+          tmp3 = ref;
+        }
+        onChange(obj);
+      },
+      disabled: tmp9
+    }),
+    tmp10Result,
+  ,
+
+  ];
+  const obj6 = {
     guild,
     entityType: guildEvent.entityType,
     onChange(entityType) {
-      callback(null);
-      const obj = { entityType, scheduledEndTime: undefined };
+      _undefined(null);
+      const obj = { entityType, scheduledEndTime: "r" };
       if (entityType === outer1_10.EXTERNAL) {
         let obj2 = guildEvent(ref[22])(guildEvent.scheduledStartTime);
-        if (null == obj2) {
-          obj2 = guildEvent(ref[22])();
+        if (obj2 == null) {
+          obj2 = tmp2(tmp3[22])();
         }
         obj.scheduledEndTime = obj2.add(1, "hour").toISOString();
         const addResult = obj2.add(1, "hour");
+        tmp2 = guildEvent;
+        tmp3 = ref;
       }
       onChange(obj);
     },
-    disabled: tmp7
+    disabled: tmp9
   };
-  items5[1] = callback3(guild(ref[14]).GuildEventEntityTypeSelection, obj6);
-  items5[2] = tmp11Result;
-  let hasItem = set.has(guildEvent.entityType);
-  if (hasItem) {
-    hasItem = callback3(guildEvent(ref[23]), {});
-  }
-  items5[3] = hasItem;
+  const tmp15Result = closure_15(closure_14, obj2);
+  items5[3] = set.has(guildEvent.entityType) && closure_13(guildEvent(ref[23]), {});
   if (stateFromStores1) {
-    const obj7 = { style: tmp.text, variant: "text-sm/normal", color: "text-default" };
-    const intl4 = guild(ref[9]).intl;
-    const obj8 = {
-      onClick() {
-          guildEvent(ref[24]).open(guild.id, outer1_12.ROLES);
-        }
+    const obj7 = { style: null, variant: "text-sm/normal", color: "text-default", children: null };
+    obj7[0] = tmp.text;
+    const intl4 = tmp3(tmp4[9]).intl;
+    const obj8 = { onClick: null };
+    obj8[0] = function onClick() {
+      guildEvent(ref[24]).open(guild.id, outer1_12.ROLES);
     };
-    obj7.children = intl4.format(guild(ref[9]).t["K+DH2o"], obj8);
-    stateFromStores1 = callback3(guild(ref[15]).Text, obj7);
+    obj7[3] = intl4.format(tmp3(tmp4[9]).t["K+DH2o"], obj8);
+    stateFromStores1 = tmp10(tmp3(tmp4[15]).Text, obj7);
   }
   items5[4] = stateFromStores1;
-  obj4.children = items5;
-  return tmp22(tmp23, obj4);
+  obj4[2] = items5;
+  return closure_15(tmp11Result, obj4);
 };

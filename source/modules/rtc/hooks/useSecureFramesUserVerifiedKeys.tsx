@@ -1,19 +1,19 @@
-// Module ID: 14623
-// Function ID: 111437
+// Module ID: 14648
+// Function ID: 14649
 // Name: useSecureFramesUserVerifiedKeys
-// Dependencies: [8852, 566, 22, 2]
+// Dependencies: [8876, 589, 12, 2]
 // Exports: useSecureFramesUserVerifiedKeys
 
-// Module 14623 (useSecureFramesUserVerifiedKeys)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 14648 (useSecureFramesUserVerifiedKeys)
+import initialize from "initialize";
 
 const require = arg1;
 const result = require("apply").fileFinishedImporting("modules/rtc/hooks/useSecureFramesUserVerifiedKeys.tsx");
 
 export const useSecureFramesUserVerifiedKeys = function useSecureFramesUserVerifiedKeys(userId) {
   const _require = userId;
-  const items = [_isNativeReflectConstruct];
-  return _require(566).useStateFromStoresArray(items, () => {
+  const items = [initialize];
+  return _require(589).useStateFromStoresArray(items, () => {
     const tmp = outer1_1(outer1_2[2]);
     const entries = outer1_1(outer1_2[2])(outer1_3.getUserVerifiedKeys(closure_0)).entries();
     const mapped = entries.map((arg0) => {

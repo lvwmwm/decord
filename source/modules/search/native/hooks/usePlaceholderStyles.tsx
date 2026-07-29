@@ -1,11 +1,11 @@
-// Module ID: 15450
-// Function ID: 117779
+// Module ID: 15484
+// Function ID: 15485
 // Name: useFullscreenPlaceholderCount
-// Dependencies: [4157, 9077, 1450, 566, 4026, 4166, 1273, 2]
+// Dependencies: [4181, 9101, 1474, 589, 4050, 4190, 1297, 2]
 // Exports: useFullscreenPlaceholderCount, usePlaceholderAnimatedStyle
 
-// Module 15450 (useFullscreenPlaceholderCount)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 15484 (useFullscreenPlaceholderCount)
+import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
 import { FADE_LAYOUT_ANIMATION_DURATION as closure_4 } from "SearchAutocompleteSelectAnalyticsActions";
 
 const require = arg1;
@@ -16,70 +16,72 @@ export const useFullscreenPlaceholderCount = function useFullscreenPlaceholderCo
   let numColumns;
   let placeholderHeight;
   ({ placeholderHeight, numColumns } = arg0);
-  return Math.ceil(importDefault(1450)({ ignoreKeyboard: true }).height / placeholderHeight) * numColumns;
+  return Math.ceil(importDefault(1474)({ ignoreKeyboard: true }).height / placeholderHeight) * numColumns;
 };
 export const usePlaceholderAnimatedStyle = function usePlaceholderAnimatedStyle(visible) {
   const _require = visible;
-  let obj = _require(566);
-  const items = [_isNativeReflectConstruct];
-  const stateFromStores = obj.useStateFromStores(items, () => outer1_3.useReducedMotion);
+  let obj = _require(589);
+  const items = [maybeApplyNoTextColorForLightCustomTheme];
+  const stateFromStores = obj.useStateFromStores(items, () => useReducedMotion.useReducedMotion);
   class A {
     constructor() {
-      obj = {};
+      obj = { opacity: null };
       tmp = closure_0;
       if (closure_1) {
-        num11 = 0;
+        num5 = 0;
         if (tmp) {
-          num11 = 1;
+          num5 = 1;
         }
-        obj.opacity = num11;
+        obj[0] = num5;
         tmp5 = obj;
       } else {
         tmp2 = closure_0;
         tmp3 = outer1_2;
         if (tmp) {
-          num3 = 4;
           tmp2Result = tmp2(tmp3[4]);
-          tmp2Result1 = tmp2(tmp3[4]);
-          num4 = 5;
-          tmp2Result2 = tmp2(tmp3[5]);
-          obj = {};
-          num5 = 0;
-          obj.duration = 0;
-          num6 = 0.5;
-          withTimingResult = tmp2Result2.withTiming(0.5, obj);
-          tmp2Result3 = tmp2(tmp3[5]);
-          obj1 = {};
-          num7 = 1300;
-          obj1.duration = 1300;
-          num8 = 6;
-          obj1.easing = tmp2(tmp3[6]).STANDARD_EASING;
-          num9 = 1;
-          withTimingResult1 = tmp2Result3.withTiming(1, obj1);
-          tmp2Result4 = tmp2(tmp3[5]);
-          obj2 = {};
-          obj2.duration = 1300;
-          obj2.easing = tmp2(tmp3[6]).STANDARD_EASING;
-          num10 = -1;
-          obj.opacity = tmp2Result.withRepeat(tmp2Result1.withSequence(withTimingResult, withTimingResult1, tmp2Result4.withTiming(0.5, obj2)), -1);
+          tmp6 = closure_0;
+          tmp7 = outer1_2;
+          obj5 = closure_0(outer1_2[4]);
+          tmp8 = closure_0;
+          tmp9 = outer1_2;
+          obj6 = closure_0(outer1_2[5]);
+          num2 = 0.5;
+          tmp11 = closure_0;
+          tmp12 = outer1_2;
+          withTimingResult = obj6.withTiming(0.5, { duration: 0 });
+          obj7 = closure_0(outer1_2[5]);
+          obj = { duration: 1300, easing: null };
+          tmp13 = closure_0;
+          tmp14 = outer1_2;
+          obj[1] = closure_0(outer1_2[6]).STANDARD_EASING;
+          num3 = 1;
+          tmp16 = closure_0;
+          tmp17 = outer1_2;
+          withTimingResult1 = obj7.withTiming(1, obj);
+          obj9 = closure_0(outer1_2[5]);
+          obj1 = { duration: 1300, easing: null };
+          tmp18 = closure_0;
+          tmp19 = outer1_2;
+          obj1[1] = closure_0(outer1_2[6]).STANDARD_EASING;
+          num4 = -1;
+          obj[0] = tmp2Result.withRepeat(obj5.withSequence(withTimingResult, withTimingResult1, obj9.withTiming(0.5, obj1)), -1);
           tmp5 = obj;
         } else {
-          num = 5;
-          tmp2Result5 = tmp2(tmp3[5]);
-          obj3 = {};
+          tmp2Result1 = tmp2(tmp3[5]);
+          obj2 = { duration: null };
           tmp4 = outer1_4;
-          obj3.duration = outer1_4;
-          num2 = 0;
-          obj.opacity = tmp2Result5.withTiming(0, obj3);
+          obj2[0] = outer1_4;
+          num = 0;
+          obj[0] = tmp2Result1.withTiming(0, obj2);
           tmp5 = obj;
         }
       }
       return tmp5;
     }
   }
-  obj = { useReducedMotion: stateFromStores, visible, withRepeat: _require(4026).withRepeat, withSequence: _require(4026).withSequence, withTiming: _require(4166).withTiming, STANDARD_EASING: _require(1273).STANDARD_EASING, FADE_LAYOUT_ANIMATION_DURATION: closure_4 };
+  obj = { useReducedMotion: stateFromStores, visible, withRepeat: _require(4050).withRepeat, withSequence: _require(4050).withSequence, withTiming: _require(4190).withTiming, STANDARD_EASING: _require(1297).STANDARD_EASING, FADE_LAYOUT_ANIMATION_DURATION: closure_4 };
   A.__closure = obj;
   A.__workletHash = 9750536800906;
   A.__initData = closure_5;
-  return _require(4026).useAnimatedStyle(A);
+  return _require(4050).useAnimatedStyle(A);
 };

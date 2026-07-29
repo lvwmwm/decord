@@ -1,29 +1,29 @@
-// Module ID: 14353
-// Function ID: 110058
+// Module ID: 14375
+// Function ID: 14376
 // Name: toggle
-// Dependencies: [4157, 7733, 566, 13479, 10099, 1212, 2]
+// Dependencies: [4181, 7756, 589, 13502, 10120, 1236, 2]
 
-// Module 14353 (toggle)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 14375 (toggle)
+import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
 import createToggle from "createToggle";
 
 const require = arg1;
 createToggle = {
   useTitle() {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(require(1212) /* getSystemLocale */.t.e3TR1b);
+    const intl = require(1236) /* getSystemLocale */.intl;
+    return intl.string(require(1236) /* getSystemLocale */.t.e3TR1b);
   },
   parent: require("MobileSetting").MobileSetting.ACCESSIBILITY,
   useValue: function useReducedMotionSettingValue() {
-    const items = [_isNativeReflectConstruct];
-    return require(566) /* initialize */.useStateFromStores(items, () => outer1_2.useReducedMotion);
+    const items = [maybeApplyNoTextColorForLightCustomTheme];
+    return require(589) /* initialize */.useStateFromStores(items, () => useReducedMotion.useReducedMotion);
   },
   onValueChange: function onReducedMotionSettingValueChange(arg0) {
     let str = "no-preference";
     if (arg0) {
       str = "reduce";
     }
-    const result = require(13479) /* setFontSize */.setPrefersReducedMotion(str);
+    const result = require(13502) /* setFontSize */.setPrefersReducedMotion(str);
   }
 };
 createToggle = createToggle.createToggle(createToggle);

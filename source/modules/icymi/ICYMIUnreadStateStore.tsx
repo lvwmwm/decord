@@ -1,183 +1,43 @@
-// Module ID: 8159
-// Function ID: 64836
-// Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 664, 6138, 8160, 566, 686, 2]
+// Module ID: 8183
+// Function ID: 8184
+// Name: initialize
+// Dependencies: [687, 6156, 8184, 589, 709, 2]
 
-// Module 8159 (_isNativeReflectConstruct)
-import MessageEmbedTypes from "MessageEmbedTypes";
-import generateHydrationId from "generateHydrationId";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
+// Module 8183 (initialize)
+import { DeviceSettingsStore } from "initialize";
 
 const require = arg1;
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
-  }
-  const result = _isNativeReflectConstruct();
+let closure_2 = 7 * require("set").Millis.DAY;
+let closure_3 = { readIdToTimestampMap: {} };
+class ICYMIUnreadStateStore extends DeviceSettingsStore {
 }
-function _createForOfIteratorHelperLoose(iterable) {
-  let closure_0 = iterable;
-  iterable = "undefined" !== typeof Symbol;
-  if (iterable) {
-    const _Symbol = Symbol;
-    iterable = iterable[Symbol.iterator];
+const prototype = ICYMIUnreadStateStore.prototype;
+prototype["initialize"] = function initialize(arg0) {
+  let tmp = arg0;
+  if (null == arg0) {
+    let obj = { readIdToTimestampMap: null };
+    obj[0] = {};
+    const _Date = Date;
+    let closure_0 = Date.now() - closure_2;
+    const _Object = Object;
+    const keys = Object.keys(obj.readIdToTimestampMap);
+    const found = keys.filter((arg0) => obj.readIdToTimestampMap[arg0] < closure_0);
+    tmp = found[Symbol.iterator]();
   }
-  if (!iterable) {
-    iterable = iterable[Symbol.iterator];
-  }
-  if (iterable) {
-    const iter = iterable.call(iterable);
-    const next = iter.next;
-    return next.bind(iter);
-  } else {
-    const _Array = Array;
-    let tmp = iterable;
-    if (!Array.isArray(iterable)) {
-      let tmp2;
-      if (iterable) {
-        if ("string" === typeof iterable) {
-          tmp2 = _arrayLikeToArray(iterable, undefined);
-        } else {
-          const toString = {}.toString;
-          const substr = toString.call(iterable).slice(8, -1);
-          let name = substr;
-          if (tmp3) {
-            name = iterable.constructor.name;
-          }
-          if ("Map" !== name) {
-            if ("Set" !== name) {
-              if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(iterable, undefined);
-              } else {
-                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
-              }
-            }
-            tmp2 = arr;
-          }
-          const _Array2 = Array;
-          arr = Array.from(iterable);
-          const callResult = toString.call(iterable);
-          tmp3 = "Object" === substr && iterable.constructor;
-        }
-      }
-      tmp = tmp2;
-      if (!tmp2) {
-        const _TypeError = TypeError;
-        const typeError = new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
-        throw typeError;
-      }
-    }
-    if (tmp) {
-      closure_0 = tmp;
-    }
-    let c1 = 0;
-    return () => {
-      if (closure_1 >= length.length) {
-        let obj = { done: true };
-      } else {
-        obj = { done: false };
-        closure_1 = tmp3 + 1;
-        obj.value = length[+closure_1];
-      }
-      return obj;
-    };
-  }
-}
-function _arrayLikeToArray(arg0, arg1) {
-  let length;
-  if (tmp) {
-    length = arg0.length;
-  }
-  const ArrayResult = Array(length);
-  for (let num = 0; num < length; num = num + 1) {
-    ArrayResult[num] = arg0[num];
-  }
-  return ArrayResult;
-}
-let closure_7 = 7 * require("set").Millis.DAY;
-let closure_8 = { readIdToTimestampMap: {} };
-let tmp2 = ((DeviceSettingsStore) => {
-  class ICYMIUnreadStateStore {
-    constructor() {
-      self = this;
-      tmp = outer1_2(this, ICYMIUnreadStateStore);
-      obj = outer1_5(ICYMIUnreadStateStore);
-      tmp2 = outer1_4;
-      if (outer1_9()) {
-        tmp6 = globalThis;
-        _Reflect = Reflect;
-        tmp7 = outer1_5;
-        tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, outer1_5(self).constructor);
-      } else {
-        tmp3 = arguments;
-        tmp4 = arguments;
-        constructResult = obj(...arguments);
-      }
-      return tmp2(self, constructResult);
-    }
-  }
-  callback2(ICYMIUnreadStateStore, DeviceSettingsStore);
-  let obj = {
-    key: "initialize",
-    value(readIdToTimestampMap) {
-      let done;
-      if (null != readIdToTimestampMap) {
-        if (null != readIdToTimestampMap.readIdToTimestampMap) {
-          const obj = { readIdToTimestampMap: readIdToTimestampMap.readIdToTimestampMap };
-        }
-        const outer1_8 = { readIdToTimestampMap: {} };
-        const _Date = Date;
-        let closure_0 = Date.now() - outer1_7;
-        const _Object = Object;
-        const keys = Object.keys(outer1_8.readIdToTimestampMap);
-        const tmp8 = outer1_10(keys.filter((arg0) => outer2_8.readIdToTimestampMap[arg0] < closure_0));
-        let iter = tmp8();
-        if (!iter.done) {
-          do {
-            let value = iter.value;
-            let tmp9 = outer1_8;
-            readIdToTimestampMap = outer1_8.readIdToTimestampMap;
-            delete tmp[tmp2];
-            let iter2 = tmp8();
-            iter = iter2;
-            done = iter2.done;
-          } while (!done);
-        }
-      }
-    }
-  };
-  const items = [obj, , , ];
-  obj = {
-    key: "getReadTimestamp",
-    value(arg0) {
-      return outer1_8.readIdToTimestampMap[arg0];
-    }
-  };
-  items[1] = obj;
-  obj = {
-    key: "getState",
-    value() {
-      return outer1_8;
-    }
-  };
-  items[2] = obj;
-  items[3] = {
-    key: "getUserAgnosticState",
-    value() {
-      return outer1_8;
-    }
-  };
-  return callback(ICYMIUnreadStateStore, items);
-})(require("initialize").DeviceSettingsStore);
-tmp2.displayName = "ICYMIUnreadStateStore";
-tmp2.persistKey = "ICYMIUnreadStateStore";
-tmp2 = new tmp2(require("dispatcher"), {
+  obj = { readIdToTimestampMap: tmp.readIdToTimestampMap };
+};
+prototype["getReadTimestamp"] = function getReadTimestamp(id) {
+  return closure_3.readIdToTimestampMap[id];
+};
+prototype["getState"] = function getState() {
+  return closure_3;
+};
+prototype["getUserAgnosticState"] = function getUserAgnosticState() {
+  return closure_3;
+};
+ICYMIUnreadStateStore.displayName = "ICYMIUnreadStateStore";
+ICYMIUnreadStateStore.persistKey = "ICYMIUnreadStateStore";
+const iCYMIUnreadStateStore = new ICYMIUnreadStateStore(require("dispatcher"), {
   ICYMI_ACK_ITEMS: function handleTabAck(arg0) {
     let items;
     let require;
@@ -185,60 +45,52 @@ tmp2 = new tmp2(require("dispatcher"), {
     const item = items.forEach((id) => {
       let tmp = null != id;
       if (tmp) {
-        tmp = null == outer1_8.readIdToTimestampMap[id.id] || closure_0;
-        const tmp3 = null == outer1_8.readIdToTimestampMap[id.id] || closure_0;
+        tmp = null == outer1_3.readIdToTimestampMap[id.id] || closure_0;
+        const tmp3 = null == outer1_3.readIdToTimestampMap[id.id] || closure_0;
       }
       if (tmp) {
-        outer1_8.readIdToTimestampMap[id.id] = id.timestamp;
+        outer1_3.readIdToTimestampMap[id.id] = id.timestamp;
       }
     });
   },
-  LOAD_ICYMI_DEHYDRATED: function handleLoadDehydrated(items) {
-    let iter3;
-    const tmp = _createForOfIteratorHelperLoose(items.items);
-    const iter = tmp();
-    let iter2 = iter;
-    if (!iter.done) {
-      do {
-        let value = iter2.value;
-        let tmp3 = require;
-        let tmp4 = dependencyMap;
-        let tmp5 = tmp2;
-        if (value.type === require(6138) /* MessageEmbedTypes */.ICYMIItemTypes.MESSAGE) {
-          let tmp11 = closure_8;
-          let result = null != closure_8.readIdToTimestampMap[value.id];
-          if (!result) {
-            let message_context = value.data.message_context;
-            let prop;
-            if (null != message_context) {
-              prop = message_context.external_content_application_id;
-            }
-            result = null != prop;
-            tmp2 = message_context;
+  LOAD_ICYMI_DEHYDRATED: function handleLoadDehydrated(arg0) {
+    const iter = arg0.items[Symbol.iterator]();
+    const nextResult = iter.next();
+    while (iter !== undefined) {
+      let tmp2 = nextResult;
+      let tmp3 = require;
+      let tmp4 = dependencyMap;
+      if (nextResult.type === require(6156) /* MessageEmbedTypes */.ICYMIItemTypes.MESSAGE) {
+        let tmp11 = closure_3;
+        let tmp12 = nextResult;
+        let result = null != closure_3.readIdToTimestampMap[tmp2.id];
+        if (!result) {
+          let tmp5 = nextResult;
+          let message_context = tmp2.data.message_context;
+          let prop;
+          if (message_context != null) {
+            prop = message_context.external_content_application_id;
           }
-          if (!result) {
-            let tmp8 = require;
-            let tmp9 = dependencyMap;
-            let obj = require(8160) /* generateHydrationId */;
-            result = obj.isItemUnreadInChannel(value.data.channel_id, value.data.message_id);
-          }
-          tmp5 = tmp2;
-          if (!result) {
-            let tmp10 = closure_8;
-            closure_8.readIdToTimestampMap[value.id] = 0;
-            tmp5 = tmp2;
-          }
+          result = null != prop;
         }
-        iter3 = tmp();
-        tmp2 = tmp5;
-        iter2 = iter3;
-      } while (!iter3.done);
+        if (!result) {
+          let tmp3Result = tmp3(8184);
+          let tmp8 = nextResult;
+          result = tmp3Result.isItemUnreadInChannel(tmp2.data.channel_id, tmp2.data.message_id);
+        }
+        if (!result) {
+          let tmp9 = closure_3;
+          let tmp10 = nextResult;
+          closure_3.readIdToTimestampMap[tmp2.id] = 0;
+        }
+      }
+      continue;
     }
   },
   CLEAR_ICYMI_READ_STATES: function handleClearReadStates() {
-    closure_8.readIdToTimestampMap = {};
+    closure_3.readIdToTimestampMap = {};
   }
 });
-let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/icymi/ICYMIUnreadStateStore.tsx");
+let result = require("generateHydrationId").fileFinishedImporting("modules/icymi/ICYMIUnreadStateStore.tsx");
 
-export default tmp2;
+export default iCYMIUnreadStateStore;

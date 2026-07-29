@@ -1,75 +1,43 @@
-// Module ID: 6486
-// Function ID: 58007
-// Name: SettingSearchSessionAnalyticsManager
-// Dependencies: [6, 7, 491, 6487, 2]
+// Module ID: 6507
+// Function ID: 6508
+// Name: getSearchSessionId
+// Dependencies: [514, 6508, 2]
 
-// Module 6486 (SettingSearchSessionAnalyticsManager)
-import _classCallCheck from "_classCallCheck";
-import _defineProperties from "_defineProperties";
-
-const require = arg1;
-let tmp2 = (() => {
-  class SettingSearchSessionAnalyticsManager {
-    constructor() {
-      tmp = outer1_2(this, SettingSearchSessionAnalyticsManager);
-      this.searchSessionId = null;
-      this.searchSessionStartTime = null;
-      this.isQueryEnteredTracked = false;
-      return;
-    }
+// Module 6507 (getSearchSessionId)
+class SettingSearchSessionAnalyticsManager {
+}
+const prototype = SettingSearchSessionAnalyticsManager.prototype;
+prototype["getSearchSessionId"] = function getSearchSessionId() {
+  return this.searchSessionId;
+};
+prototype["isSessionActive"] = function isSessionActive() {
+  return null != this.searchSessionId;
+};
+prototype["initialize"] = function initialize() {
+  this.searchSessionId = require(514) /* v1 */.v4();
+  this.searchSessionStartTime = Date.now();
+  this.isQueryEnteredTracked = false;
+};
+prototype["maybeTrackQueryEntered"] = function maybeTrackQueryEntered() {
+  if (!this.isQueryEnteredTracked) {
+    const result = require(6508) /* trackSettingSearchInputFocused */.trackSettingSearchQueryEntered();
+    tmp.isQueryEnteredTracked = true;
+    const obj = require(6508) /* trackSettingSearchInputFocused */;
   }
-  let obj = {
-    key: "getSearchSessionId",
-    value() {
-      return this.searchSessionId;
-    }
-  };
-  const items = [obj, , , , ];
-  obj = {
-    key: "isSessionActive",
-    value() {
-      return null != this.searchSessionId;
-    }
-  };
-  items[1] = obj;
-  obj = {
-    key: "initialize",
-    value() {
-      this.searchSessionId = SettingSearchSessionAnalyticsManager(outer1_1[2]).v4();
-      this.searchSessionStartTime = Date.now();
-      this.isQueryEnteredTracked = false;
-    }
-  };
-  items[2] = obj;
-  items[3] = {
-    key: "maybeTrackQueryEntered",
-    value() {
-      if (!this.isQueryEnteredTracked) {
-        const result = SettingSearchSessionAnalyticsManager(outer1_1[3]).trackSettingSearchQueryEntered();
-        tmp.isQueryEnteredTracked = true;
-        const obj = SettingSearchSessionAnalyticsManager(outer1_1[3]);
-      }
-    }
-  };
-  items[4] = {
-    key: "terminate",
-    value() {
-      const self = this;
-      if (tmp) {
-        let obj = SettingSearchSessionAnalyticsManager(outer1_1[3]);
-        obj = {};
-        const _Date = Date;
-        obj.searchSessionDuration = Date.now() - self.searchSessionStartTime;
-        const result = obj.trackSettingSearchClosed(obj);
-        self.searchSessionId = null;
-        self.searchSessionStartTime = null;
-        self.isQueryEnteredTracked = false;
-      }
-    }
-  };
-  return callback(SettingSearchSessionAnalyticsManager, items);
-})();
-tmp2 = new tmp2();
-let result = require("v1").fileFinishedImporting("modules/settings/tracking/SettingSearchSessionAnalyticsManager.tsx");
+};
+prototype["terminate"] = function terminate() {
+  const self = this;
+  if (tmp) {
+    let obj = require(6508) /* trackSettingSearchInputFocused */;
+    obj = { searchSessionDuration: null };
+    const _Date = Date;
+    obj[0] = Date.now() - self.searchSessionStartTime;
+    const result = obj.trackSettingSearchClosed(obj);
+    self.searchSessionId = null;
+    self.searchSessionStartTime = null;
+    self.isQueryEnteredTracked = false;
+  }
+};
+let result = require("set").fileFinishedImporting("modules/settings/tracking/SettingSearchSessionAnalyticsManager.tsx");
 
-export default tmp2;
+export default Object.create(SettingSearchSessionAnalyticsManager.prototype);

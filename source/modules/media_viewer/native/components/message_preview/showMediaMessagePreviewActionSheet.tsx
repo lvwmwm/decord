@@ -1,15 +1,15 @@
-// Module ID: 12291
-// Function ID: 95822
+// Module ID: 12313
+// Function ID: 12314
 // Name: showMediaMessagePreviewActionSheet
-// Dependencies: [1348, 1850, 4133, 12292, 1935, 2]
+// Dependencies: [1372, 1874, 4157, 12314, 1959, 2]
 // Exports: default
 
-// Module 12291 (showMediaMessagePreviewActionSheet)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_4 from "_isNativeReflectConstruct";
+// Module 12313 (showMediaMessagePreviewActionSheet)
+import ensureGuildLoaded from "ensureGuildLoaded";
+import mergeGuildAvatar from "mergeGuildAvatar";
 
 const require = arg1;
-const result = require("showActionSheet").fileFinishedImporting("modules/media_viewer/native/components/message_preview/showMediaMessagePreviewActionSheet.tsx");
+const result = require("ACTION_SHEET_HEIGHT_HALF").fileFinishedImporting("modules/media_viewer/native/components/message_preview/showMediaMessagePreviewActionSheet.tsx");
 
 export default function showMediaMessagePreviewActionSheet(message) {
   message = message.message;
@@ -18,9 +18,13 @@ export default function showMediaMessagePreviewActionSheet(message) {
     if (null != message) {
       user = user.getUser(message.author.id);
       if (null != user) {
-        let obj = importDefault(4133);
-        obj = { channel, message, user, closeMediaModal: message.closeMediaModal };
-        obj.openLazy(require(1935) /* maybeLoadBundle */(12292, dependencyMap.paths), "MediaMessagePreviewActionSheet", obj);
+        let obj = importDefault(4157);
+        obj = { channel: null, message: null, user: null, closeMediaModal: null };
+        obj[0] = channel;
+        obj[1] = message;
+        obj[2] = user;
+        obj[3] = message.closeMediaModal;
+        obj.openLazy(require(1959) /* asyncRequireImpl */(12314, dependencyMap.paths), "MediaMessagePreviewActionSheet", obj);
       }
     }
   }

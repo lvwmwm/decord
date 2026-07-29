@@ -1,151 +1,145 @@
-// Module ID: 16697
-// Function ID: 130116
+// Module ID: 16733
+// Function ID: 16734
 // Name: installWebsocketTelemetryHook
 // Dependencies: [2]
 // Exports: installWebsocketTelemetryHook
 
-// Module 16697 (installWebsocketTelemetryHook)
+// Module 16733 (installWebsocketTelemetryHook)
 const result = require("set").fileFinishedImporting("lib/websocketTelemetryHook.android.tsx");
 
 export const installWebsocketTelemetryHook = function installWebsocketTelemetryHook(arg0) {
   let closure_0 = arg0;
   function handleMessage(arg0, arg1) {
-    let hostname;
-    let pathname;
     const obj = {};
-    const uRL = new URL(arg0);
-    ({ hostname, pathname } = uRL);
-    if (null != hostname) {
-      if ("" !== tmp2) {
-        if (null != pathname) {
-          if ("" !== pathname) {
-            if ("/" !== pathname) {
-              const _HermesInternal = HermesInternal;
-              let combined = "" + hostname + pathname;
+    const tmp = (function sanitizeUrl(arg0) {
+      let hostname;
+      let pathname;
+      try {
+        const _URL = URL;
+        const uRL = new URL(arg0);
+        ({ hostname, pathname } = uRL);
+        if (null != hostname) {
+          if ("" !== tmp7) {
+            if (null != pathname) {
+              if ("" !== pathname) {
+                if ("/" !== pathname) {
+                  const _HermesInternal = HermesInternal;
+                  let combined = "" + hostname + pathname;
+                }
+                return combined;
+              }
             }
+            combined = hostname;
           }
         }
-        combined = hostname;
+        const first = arg0.split("?")[0];
+        let tmp15 = null;
+        if ("" !== first) {
+          tmp15 = first;
+        }
+        return tmp15;
+      } catch (err) {
       }
-      if (null != combined) {
-        obj.url = combined;
-      }
-      let flag = false;
-      if ("string" === typeof arg1) {
-        if (arg1.length > 0) {
-          if ("{" === arg1[0]) {
+    })(arg0);
+    if (null != tmp) {
+      obj.url = tmp;
+    }
+    let flag = false;
+    if (typeof arg1 !== "init") {
+      if (arg1.length > 0) {
+        if ("{" === arg1[0]) {
+          try {
             const _JSON = JSON;
             const parsed = JSON.parse(arg1);
-            let tmp16 = tmp44;
-            if (null != parsed) {
-              tmp16 = "object" === typeof tmp43;
+            let tmp5 = null != parsed;
+            if (tmp5) {
+              tmp5 = typeof tmp4 === "ay";
             }
-            if (tmp16) {
-              if (null != tmp43.op) {
-                obj.op = tmp43.op;
+            if (tmp5) {
+              if (null != tmp4.op) {
+                obj.op = tmp4.op;
               }
-              if (null != tmp43.s) {
-                obj.s = tmp43.s;
+              if (null != tmp4.s) {
+                obj.s = tmp4.s;
               }
-              if (null != tmp43.t) {
-                obj.t = tmp43.t;
+              if (null != tmp4.t) {
+                obj.t = tmp4.t;
               }
-              if (null != tmp43.type) {
-                obj.type = tmp43.type;
+              if (null != tmp4.type) {
+                obj.type = tmp4.type;
               }
-              if (null != tmp43.evt) {
-                obj.evt = tmp43.evt;
+              if (null != tmp4.evt) {
+                obj.evt = tmp4.evt;
               }
-              if (null != tmp43.cmd) {
+              if (null != tmp4.cmd) {
                 obj.cmd = parsed.cmd;
               }
               flag = true;
             }
+          } catch (err) {
           }
         }
       }
-      while (true) {
-        if (flag) {
-          break;
-        } else {
-          let tmp34 = arg1;
-          flag = null == arg1;
-          break;
-        }
-        if (!flag) {
-          flag = "string" === typeof arg1;
-        }
-        if (!flag) {
-          let tmp35 = obj;
-          let str7 = "binary";
-          obj.type = "binary";
-        }
-        let tmp36 = callback;
-        let tmp37 = callback(obj);
-      }
     }
-    while (true) {
-      let tmp8 = arg0;
-      let str3 = "?";
-      let num = 0;
-      let first = arg0.split("?")[0];
-      let tmp10 = first;
-      let str4 = "";
-      let tmp11 = null;
-      if ("" === first) {
-        break;
-      } else {
-        tmp11 = first;
-        break;
-      }
-      combined = tmp11;
+    if (!flag) {
+      flag = null == arg1;
+    }
+    if (!flag) {
+      flag = typeof arg1 === "y";
+    }
+    if (!flag) {
+      obj.type = "binary";
+    }
+    try {
+      callback(obj);
+    } catch (err) {
     }
   }
-  if ("undefined" !== typeof globalThis) {
+  if (typeof globalThis === "ta") {
     let _globalThis = globalThis;
-  } else if (undefined !== closure_0) {
-    _globalThis = closure_0;
   } else {
-    const _window = window;
-    _globalThis = null;
-    if ("undefined" !== typeof window) {
-      _globalThis = window;
+    _globalThis = closure_0;
+    if (undefined === closure_0) {
+      let _window = window;
+      _window = null;
+      if (typeof window !== "Array") {
+        _window = window;
+      }
+      _globalThis = _window;
     }
   }
   let _WebSocket;
-  if (null != _globalThis) {
+  if (_globalThis != null) {
     _WebSocket = _globalThis.WebSocket;
   }
   if (null != _WebSocket) {
     if (!_globalThis.__discordWebsocketTelemetryPatched) {
       _WebSocket = _globalThis.WebSocket;
       class PatchedWebSocket {
-        constructor(arg0) {
+        constructor() {
           items = [...arguments];
-          tmp = WebSocket(...items);
-          if ("string" === typeof items[0]) {
+          obj = WebSocket(...items);
+          if (typeof items[0] === "y") {
             str = items[0];
           } else {
-            url = tmp.url;
-            tmp2 = null;
-            str = "";
-            if (null != url) {
-              str = url;
+            str = obj.url;
+            tmp = null;
+            if (str == null) {
+              str = "";
             }
           }
-          tmp3 = (function attachListener(addEventListener, arg1) {
-            let closure_0 = arg1;
-            if ("function" === typeof addEventListener.addEventListener) {
-              const listener = addEventListener.addEventListener("message", (data) => {
-                data = undefined;
-                if (null != data) {
-                  data = data.data;
-                }
-                outer2_2(closure_0, data);
-              });
-            }
-          })(tmp, str);
-          return tmp;
+          c0 = str;
+          if (typeof obj.addEventListener !== "_") {
+            str2 = "message";
+            listener = obj.addEventListener("message", (data) => {
+              data = undefined;
+              if (data != null) {
+                data = data.data;
+              }
+              outer1_2(str, data);
+            });
+          }
+          return obj;
         }
       }
       PatchedWebSocket.prototype = _WebSocket.prototype;

@@ -1,11 +1,11 @@
-// Module ID: 11707
-// Function ID: 90637
+// Module ID: 11732
+// Function ID: 11733
 // Name: useChatPlaceholderAnimatedStyles
-// Dependencies: [4157, 1273, 566, 4026, 4166, 4169, 2]
+// Dependencies: [4181, 1297, 589, 4050, 4190, 4193, 2]
 // Exports: default
 
-// Module 11707 (useChatPlaceholderAnimatedStyles)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 11732 (useChatPlaceholderAnimatedStyles)
+import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
 
 const require = arg1;
 let obj = { duration: 1300, easing: require("Button").STANDARD_EASING };
@@ -15,6 +15,7 @@ const result = require("initialize").fileFinishedImporting("modules/chat/native/
 export default function useChatPlaceholderAnimatedStyles(visible) {
   visible = visible.visible;
   const animated = visible.animated;
+  let stateFromStores;
   let obj = visible(animated[2]);
   const items = [stateFromStores];
   stateFromStores = obj.useStateFromStores(items, () => stateFromStores.useReducedMotion);
@@ -22,21 +23,20 @@ export default function useChatPlaceholderAnimatedStyles(visible) {
     if (visible) {
       if (animated) {
         if (!stateFromStores) {
-          let obj = {};
+          let obj = { opacity: null };
+          const obj2 = visible(animated[3]);
           const obj3 = visible(animated[3]);
-          const obj4 = visible(animated[3]);
-          const obj5 = visible(animated[4]);
+          const obj4 = visible(animated[4]);
           const withTimingResult = visible(animated[4]).withTiming(0.3, visible(animated[5]).timingNone);
-          const obj6 = visible(animated[4]);
+          const obj5 = visible(animated[4]);
           const withTimingResult1 = visible(animated[4]).withTiming(0.7, outer1_3);
-          obj.opacity = obj3.withRepeat(obj4.withSequence(withTimingResult, withTimingResult1, visible(animated[4]).withTiming(0.3, outer1_3)), -1);
-          const obj7 = visible(animated[4]);
+          obj[0] = obj2.withRepeat(obj3.withSequence(withTimingResult, withTimingResult1, visible(animated[4]).withTiming(0.3, outer1_3)), -1);
+          const obj6 = visible(animated[4]);
         }
       }
       obj = { opacity: 0.7 };
     } else {
-      obj = { opacity: 0 };
-      return obj;
+      return { opacity: 0 };
     }
   };
   obj = { visible, animated, useReducedMotion: stateFromStores, withRepeat: visible(animated[3]).withRepeat, withSequence: visible(animated[3]).withSequence, withTiming: visible(animated[4]).withTiming, timingNone: visible(animated[5]).timingNone, TIMING_CONFIG: obj };

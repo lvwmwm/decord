@@ -1,24 +1,26 @@
-// Module ID: 14016
-// Function ID: 107096
+// Module ID: 14038
+// Function ID: 14039
 // Name: useVisibilityTransition
-// Dependencies: [57, 31, 4026, 4166, 2]
+// Dependencies: [32, 19, 4050, 4190, 2]
 // Exports: useVisibilityTransition
 
-// Module 14016 (useVisibilityTransition)
+// Module 14038 (useVisibilityTransition)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
+import noop from "noop";
 
 const require = arg1;
 let closure_4 = { code: "function useVisibilityTransitionTsx1(){const{withTiming,visibility,visible,entranceTiming,exitTiming,runOnJS,animationCallbackJSThread}=this.__closure;return{opacity:withTiming(visibility,visible?entranceTiming:exitTiming,'respect-motion-settings',function(){'worklet';runOnJS(animationCallbackJSThread)();})};}" };
 let closure_5 = { code: "function useVisibilityTransitionTsx2(){const{runOnJS,animationCallbackJSThread}=this.__closure;runOnJS(animationCallbackJSThread)();}" };
-const result = require("module_4026").fileFinishedImporting("modules/quests/native/BountiesModal/useVisibilityTransition.tsx");
+const result = require("module_4050").fileFinishedImporting("modules/quests/native/BountiesModal/useVisibilityTransition.tsx");
 
 export const useVisibilityTransition = function useVisibilityTransition(visible) {
   visible = visible.visible;
   const entranceTiming = visible.entranceTiming;
   const exitTiming = visible.exitTiming;
+  let React;
   let callback;
   let num;
+  let obj = React;
   const tmp = exitTiming(React.useState(false), 2);
   React = tmp2;
   const tmp3 = exitTiming(React.useState(visible), 2);
@@ -28,34 +30,35 @@ export const useVisibilityTransition = function useVisibilityTransition(visible)
       tmp2(true);
     }
   }
-  callback = React.useCallback(() => {
-    tmp2(false);
+  callback = obj.useCallback(() => {
+    _undefined(false);
   }, []);
   num = 0;
   if (visible) {
     num = 1;
   }
-  let obj = {};
+  obj = { opacityStyle: null, shouldRender: null };
   let fn = function k() {
-    let obj = {};
+    let obj = visible(entranceTiming[3]);
+    obj = { opacity: null };
     const fn = function n() {
-      visible(entranceTiming[2]).runOnJS(outer1_4)();
+      outer1_0(outer1_1[2]).runOnJS(closure_4)();
     };
     obj = { runOnJS: visible(entranceTiming[2]).runOnJS, animationCallbackJSThread: callback };
     fn.__closure = obj;
     fn.__workletHash = 11904317879470;
     fn.__initData = num;
-    obj.opacity = visible(entranceTiming[3]).withTiming(num, visible ? entranceTiming : exitTiming, "respect-motion-settings", fn);
+    obj[0] = obj.withTiming(num, visible ? entranceTiming : exitTiming, "respect-motion-settings", fn);
     return obj;
   };
   obj = { withTiming: visible(entranceTiming[3]).withTiming, visibility: num, visible, entranceTiming, exitTiming, runOnJS: visible(entranceTiming[2]).runOnJS, animationCallbackJSThread: callback };
   fn.__closure = obj;
   fn.__workletHash = 12648900540770;
   fn.__initData = callback;
-  obj.opacityStyle = visible(entranceTiming[2]).useAnimatedStyle(fn);
+  obj[0] = visible(entranceTiming[2]).useAnimatedStyle(fn);
   if (!visible) {
     visible = tmp[0];
   }
-  obj.shouldRender = visible;
+  obj[1] = visible;
   return obj;
 };

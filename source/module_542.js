@@ -1,7 +1,16 @@
 // Module ID: 542
-// Function ID: 6656
-// Dependencies: []
+// Function ID: 543
+// Dependencies: [543]
 
 // Module 542
+import module_543 from "module_543";
 
-export default Math.abs;
+if (module_543) {
+  try {
+    module_543([], "length");
+  } catch (err) {
+    module_543 = null;
+  }
+}
+
+export default module_543;

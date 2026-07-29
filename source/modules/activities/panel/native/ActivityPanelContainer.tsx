@@ -1,56 +1,59 @@
-// Module ID: 15797
-// Function ID: 121675
-// Dependencies: [31, 1348, 1907, 1347, 33, 566, 3783, 669, 15798, 15807, 2]
+// Module ID: 15832
+// Function ID: 15833
+// Dependencies: [19, 1372, 1931, 1371, 21, 589, 3807, 692, 15833, 15842, 2]
 
-// Module 15797
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_4 from "_isNativeReflectConstruct";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+// Module 15832
+import ensureGuildLoaded from "ensureGuildLoaded";
+import handleConnectionOpen from "handleConnectionOpen";
+import participantFromServer from "participantFromServer";
 import { jsx } from "jsxProd";
-import importAllResult from "result";
+import importAllResult from "noop";
 
 const require = arg1;
-const memoResult = require("result").memo(function ActivityPanelContainer() {
-  let obj = require(566) /* initialize */;
-  const items = [_createForOfIteratorHelperLoose, _isNativeReflectConstruct, closure_4];
-  let tmp = null;
+const memoResult = require("noop").memo(function ActivityPanelContainer() {
+  let obj = require(589) /* initialize */;
+  const items = [participantFromServer, ensureGuildLoaded, handleConnectionOpen];
+  let tmp2 = null;
   if (obj.useStateFromStores(items, () => {
-    const connectedActivityLocation = outer1_5.getConnectedActivityLocation();
+    connectedActivityLocation = connectedActivityLocation.getConnectedActivityLocation();
     if (null == connectedActivityLocation) {
       return false;
     } else {
-      const embeddedActivityLocationChannelId = outer1_0(outer1_2[6]).getEmbeddedActivityLocationChannelId(connectedActivityLocation);
+      const embeddedActivityLocationChannelId = callback(table[6]).getEmbeddedActivityLocationChannelId(connectedActivityLocation);
       if (null == embeddedActivityLocationChannelId) {
         return false;
       } else {
-        const channel = outer1_3.getChannel(embeddedActivityLocationChannelId);
+        channel = channel.getChannel(embeddedActivityLocationChannelId);
         let type;
-        if (null != channel) {
+        if (channel != null) {
           type = channel.type;
         }
-        let tmp6 = type === outer1_0(outer1_2[7]).ChannelTypes.GUILD_TEXT;
-        if (!tmp6) {
+        let tmp4 = type === tmp8(tmp9[7]).ChannelTypes.GUILD_TEXT;
+        if (!tmp4) {
           let isPrivateResult;
-          if (null != channel) {
+          if (channel != null) {
             isPrivateResult = channel.isPrivate();
           }
-          let tmp8;
+          let tmp6;
           if (true === isPrivateResult) {
-            tmp8 = outer1_4.getVoiceChannelId() !== embeddedActivityLocationChannelId;
+            tmp6 = voiceChannelId.getVoiceChannelId() !== embeddedActivityLocationChannelId;
           }
-          tmp6 = tmp8;
+          tmp4 = tmp6;
         }
-        return tmp6;
+        return tmp4;
       }
-      const obj2 = outer1_0(outer1_2[6]);
+      const obj2 = callback(table[6]);
+      tmp8 = callback;
+      tmp9 = table;
     }
   }, [])) {
-    obj = { children: jsx(importDefault(15807), {}) };
-    tmp = jsx(importDefault(15798), { children: jsx(importDefault(15807), {}) });
-    const tmp5 = importDefault(15798);
+    obj = { children: null };
+    obj[0] = jsx(importDefault(15842), {});
+    tmp2 = jsx(importDefault(15833), { children: null });
+    const tmp5 = importDefault(15833);
   }
-  return tmp;
+  return tmp2;
 });
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/activities/panel/native/ActivityPanelContainer.tsx");
+const result = require("handleConnectionOpen").fileFinishedImporting("modules/activities/panel/native/ActivityPanelContainer.tsx");
 
 export default memoResult;

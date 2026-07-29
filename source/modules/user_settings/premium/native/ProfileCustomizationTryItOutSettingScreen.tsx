@@ -1,52 +1,53 @@
-// Module ID: 14575
-// Function ID: 111166
+// Module ID: 14600
+// Function ID: 14601
 // Name: ProfileCustomizationTryItOutSettingScreen
-// Dependencies: [31, 27, 1850, 653, 1852, 33, 4165, 689, 5497, 5517, 566, 7933, 7912, 7959, 5792, 14331, 14332, 7919, 1861, 675, 13668, 2]
+// Dependencies: [19, 17, 1874, 676, 1876, 21, 4189, 712, 5515, 5535, 589, 7958, 7937, 7984, 5810, 14353, 14354, 7944, 1885, 698, 13689, 2]
 // Exports: default
 
-// Module 14575 (ProfileCustomizationTryItOutSettingScreen)
-import result from "result";
-import get_ActivityIndicator from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 14600 (ProfileCustomizationTryItOutSettingScreen)
+import expandEventProperties from "expandEventProperties";
+import get_ActivityIndicator from "_saveProfileChanges";
+import mergeGuildAvatar from "mergeGuildAvatar";
 import ME from "ME";
 import { PremiumUpsellTypes } from "GuildFeatures";
-import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import { jsx } from "set";
+import createCacheKey from "createCacheKey";
 
-let closure_4;
-let closure_5;
-let closure_7;
-let closure_8;
+let StyleSheet;
+let c4;
+let c5;
+let error;
+let metroImportAll;
 const require = arg1;
-({ View: closure_4, ActivityIndicator: closure_5 } = get_ActivityIndicator);
-({ AnalyticEvents: closure_7, AnalyticsPages: closure_8 } = ME);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWER };
-const merged = Object.assign(get_ActivityIndicator.StyleSheet.absoluteFillObject);
-_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.activityIndicator = { height: "100%", alignItems: "center", justifyContent: "center" };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/user_settings/premium/native/ProfileCustomizationTryItOutSettingScreen.tsx");
+({ View: c4, ActivityIndicator: c5, StyleSheet } = get_ActivityIndicator);
+({ AnalyticEvents: error, AnalyticsPages: metroImportAll } = ME);
+createCacheKey = { container: null, activityIndicator: null };
+createCacheKey = { backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOWER };
+const merged = Object.assign(StyleSheet.absoluteFillObject);
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { height: "100%", alignItems: "center", justifyContent: "center" };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let result = require("mergeGuildAvatar").fileFinishedImporting("modules/user_settings/premium/native/ProfileCustomizationTryItOutSettingScreen.tsx");
 
 export default function ProfileCustomizationTryItOutSettingScreen() {
   let analyticsLocations;
   let sourceAnalyticsLocations;
-  let tmp = _createForOfIteratorHelperLoose();
-  const tmp2 = stateFromStores(categories[8]);
+  let tmp = createCacheKey();
+  const tmp2 = stateFromStores;
+  const tmp4 = stateFromStores(categories[8]);
   ({ analyticsLocations, sourceAnalyticsLocations } = stateFromStores(categories[8])(stateFromStores(categories[9]).USER_SETTINGS_TRY_OUT_PREMIUM));
   let obj = sourceAnalyticsLocations(categories[10]);
   const items = [visibleEffectOrder];
   stateFromStores = obj.useStateFromStores(items, () => visibleEffectOrder.getCurrentUser());
-  const tmp5 = stateFromStores(categories[11])();
-  categories = tmp5.categories;
-  const tmp6 = stateFromStores(categories[12])({ isTryItOut: true, analyticsLocations });
-  const pendingAvatarDecoration = tmp6.pendingAvatarDecoration;
-  const setPendingAvatarDecoration = tmp6.setPendingAvatarDecoration;
+  const tmp8 = stateFromStores(categories[11])();
+  categories = tmp8.categories;
+  const tmp9 = stateFromStores(categories[12])({ isTryItOut: true, analyticsLocations });
+  const pendingAvatarDecoration = tmp9.pendingAvatarDecoration;
+  const setPendingAvatarDecoration = tmp9.setPendingAvatarDecoration;
   const items1 = [stateFromStores];
   const effect = pendingAvatarDecoration.useEffect(() => {
     if (null != stateFromStores) {
-      const obj = { dispatchWait: true };
-      stateFromStores(categories[13])(stateFromStores.id, stateFromStores.getAvatarURL(undefined, 80), obj);
+      stateFromStores(categories[13])(obj.id, obj.getAvatarURL(undefined, 80), { dispatchWait: true });
       const tmp3 = stateFromStores(categories[13]);
     }
   }, items1);
@@ -78,17 +79,21 @@ export default function ProfileCustomizationTryItOutSettingScreen() {
   }, items4);
   if (null == stateFromStores) {
     return null;
-  } else if (tmp5.isFetching) {
-    obj = { style: tmp.activityIndicator };
+  } else if (tmp8.isFetching) {
+    obj = { style: null, children: null };
+    obj[0] = tmp.activityIndicator;
     tmp = visibleFontOrder;
-    obj.children = <visibleFontOrder animating size="large" />;
-    let tmp18 = <setPendingAvatarDecoration style={tmp.activityIndicator} />;
+    obj[1] = <visibleFontOrder animating size="large" />;
+    let tmp18 = <setPendingAvatarDecoration style={null}>{null}</setPendingAvatarDecoration>;
   } else if (undefined !== pendingAvatarDecoration) {
-    obj = { value: analyticsLocations };
-    obj1 = { style: tmp.container };
-    obj2 = { currentUser: stateFromStores, isTryItOut: true };
-    obj1.children = jsx(stateFromStores(categories[20]), { currentUser: stateFromStores, isTryItOut: true });
-    obj.children = <setPendingAvatarDecoration style={tmp.container} />;
-    tmp18 = jsx(sourceAnalyticsLocations(categories[8]).AnalyticsLocationProvider, { value: analyticsLocations });
+    obj = { value: null, children: null };
+    obj[0] = analyticsLocations;
+    obj1 = { style: null, children: null };
+    obj1[0] = tmp.container;
+    obj2 = { currentUser: null, isTryItOut: true };
+    obj2[0] = stateFromStores;
+    obj1[1] = jsx(tmp2(tmp3[20]), { currentUser: null, isTryItOut: true });
+    obj[1] = <setPendingAvatarDecoration style={null}>{null}</setPendingAvatarDecoration>;
+    tmp18 = jsx(sourceAnalyticsLocations(tmp3[8]).AnalyticsLocationProvider, { value: null, children: null });
   }
 };

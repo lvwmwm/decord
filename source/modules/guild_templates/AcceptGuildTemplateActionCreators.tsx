@@ -1,10 +1,10 @@
-// Module ID: 10967
-// Function ID: 85040
-// Dependencies: [4843, 1838, 653, 686, 507, 6669, 2]
+// Module ID: 10991
+// Function ID: 10992
+// Dependencies: [4865, 1862, 676, 709, 530, 6690, 2]
 
-// Module 10967
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+// Module 10991
+import _handleConnectionOpen from "_handleConnectionOpen";
+import createGuildRecordFromRust from "createGuildRecordFromRust";
 import { Endpoints } from "ME";
 
 const require = arg1;
@@ -15,36 +15,37 @@ export default {
     let closure_0 = code;
     const importDefault = first;
     const dependencyMap = first1;
-    let obj = importDefault(686);
+    let obj = importDefault(709);
     obj = { type: "GUILD_TEMPLATE_ACCEPT", code };
     obj.dispatch(obj);
     return new Promise((closure_0) => {
       const code = closure_0;
       let closure_1 = arg1;
-      const HTTP = code(507).HTTP;
-      obj = { url: outer1_5.UNRESOLVED_GUILD_TEMPLATE(code), body: obj, oldFormErrors: true };
-      obj = { name: closure_1, icon: dependencyMap, rejectWithError: code(507).rejectWithMigratedError() };
-      let obj3 = code(507);
+      const HTTP = code(530).HTTP;
+      obj = { url: outer1_5.UNRESOLVED_GUILD_TEMPLATE(code), body: obj, oldFormErrors: true, rejectWithError: null };
+      obj = { name: closure_1, icon: dependencyMap };
+      obj[3] = code(530).rejectWithMigratedError();
+      let obj3 = code(530);
       HTTP.post(obj).then((body) => {
         body = body.body;
-        let obj = callback2(686);
+        let obj = callback2(709);
         obj = { type: "GUILD_TEMPLATE_ACCEPT_SUCCESS", code: callback, guild: body };
         obj.dispatch(obj);
         if (outer2_3.isConnected()) {
           const result = outer2_4.addConditionalChangeListener(() => {
             if (null != outer3_4.getGuild(body.id)) {
-              body(table[5]).transitionToGuild(body.id);
-              body(body);
+              body(table[5]).transitionToGuild(tmp.id);
+              body(tmp);
               return false;
             }
           });
         } else {
-          callback(6669).transitionToGuild(body.id);
+          callback(6690).transitionToGuild(body.id);
           body(body);
-          const obj3 = callback(6669);
+          const obj3 = callback(6690);
         }
       }, (body) => {
-        let obj = callback2(686);
+        let obj = callback2(709);
         obj = { type: "GUILD_TEMPLATE_ACCEPT_FAILURE", code: closure_0 };
         obj.dispatch(obj);
         callback2(body.body);

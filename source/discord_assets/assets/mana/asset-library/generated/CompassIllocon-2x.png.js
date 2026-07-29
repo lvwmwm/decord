@@ -1,9 +1,9 @@
-// Module ID: 6921
-// Function ID: 59653
+// Module ID: 6943
+// Function ID: 6944
 // Name: metadata
 // Dependencies: [2]
 
-// Module 6921 (metadata)
+// Module 6943 (metadata)
 const result = require("set").fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/CompassIllocon-2x.png.js");
 
 export default "https://cdn.discordapp.com/assets/content/4a9d2430a709cfea52d79ee49c561838582d1a9860bf1cc2f4b31669d2b4043b.png";

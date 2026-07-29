@@ -1,112 +1,206 @@
-// Module ID: 13918
-// Function ID: 106451
+// Module ID: 13939
+// Function ID: 13940
 // Name: useChangeSpendingLimitFormState
-// Dependencies: [5, 57, 31, 5775, 13835, 566, 5652, 13837, 2]
+// Dependencies: [5, 32, 19, 5793, 13856, 589, 5670, 13858, 2]
 // Exports: useChangeSpendingLimitFormState
 
-// Module 13918 (useChangeSpendingLimitFormState)
+// Module 13939 (useChangeSpendingLimitFormState)
 import initialize from "initialize";
 import _slicedToArray from "_slicedToArray";
-import result from "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import noop from "noop";
+import freshTeenActivityWithMap from "freshTeenActivityWithMap";
 
 const require = arg1;
-const result = require("result").fileFinishedImporting("modules/parent_tools/ChangeSpendingLimitFormState.tsx");
+const result = require("noop").fileFinishedImporting("modules/parent_tools/ChangeSpendingLimitFormState.tsx");
 
 export const useChangeSpendingLimitFormState = function useChangeSpendingLimitFormState(teenId) {
+  let noop;
+  let tmp12;
   const _require = teenId;
-  const ParentalControlledSpendingLimit = _require(controlledSetting[4]).ParentalControlledSpendingLimit;
+  let ParentalControlledSpendingLimit = _require(controlledSetting[4]).ParentalControlledSpendingLimit;
   controlledSetting = ParentalControlledSpendingLimit.useControlledSetting(teenId);
   let obj = _require(controlledSetting[5]);
-  const items = [_isNativeReflectConstruct];
+  const items = [freshTeenActivityWithMap];
   const stateFromStores = obj.useStateFromStores(items, () => tmp14.getSpendingLimit());
-  const items1 = [_isNativeReflectConstruct];
+  const items1 = [freshTeenActivityWithMap];
   const stateFromStores1 = _require(controlledSetting[5]).useStateFromStores(items1, () => {
     const monthlyPurchases = tmp14.getMonthlyPurchases();
     let total_amount;
-    if (null != monthlyPurchases) {
+    if (monthlyPurchases != null) {
       total_amount = monthlyPurchases.total_amount;
     }
-    let tmp3 = null;
-    if (null != total_amount) {
-      tmp3 = total_amount;
+    if (total_amount == null) {
+      total_amount = null;
     }
-    return tmp3;
+    return total_amount;
   });
-  let currency;
-  if (null != controlledSetting) {
-    currency = controlledSetting.currency;
+  let str;
+  if (controlledSetting != null) {
+    str = controlledSetting.currency;
   }
-  if (null == currency) {
-    let currency1;
-    if (null != stateFromStores) {
-      currency1 = stateFromStores.currency;
+  if (str == null) {
+    let currency;
+    if (stateFromStores != null) {
+      currency = stateFromStores.currency;
     }
-    currency = currency1;
-  }
-  let str = "usd";
-  if (null != currency) {
     str = currency;
   }
+  if (str == null) {
+    str = "usd";
+  }
   const formatted = str.toLowerCase();
-  const tmp8 = _require(controlledSetting[6]).CurrencyExponents[formatted];
-  let num = 2;
-  if (null != tmp8) {
-    num = tmp8;
+  let num = tmp(tmp2[6]).CurrencyExponents[formatted];
+  if (num == null) {
+    num = 2;
   }
   const items2 = [formatted];
   const memo = React.useMemo(() => teenId(controlledSetting[7]).getCurrencySymbol(formatted), items2);
-  const memo1 = React.useMemo(_require(controlledSetting[7]).getNextRenewalDateLabel, []);
-  const tmp11 = num(React.useState(() => {
+  const memo1 = React.useMemo(tmp(tmp2[7]).getNextRenewalDateLabel, []);
+  let obj2 = _require(controlledSetting[5]);
+  const tmp10 = num;
+  [tmp12, noop] = num(React.useState(() => {
     let str = "";
     if (null != controlledSetting) {
       const _String = String;
-      str = String(controlledSetting.amount / 10 ** num);
+      str = String(tmp.amount / 10 ** num);
     }
     return str;
   }), 2);
-  const first = tmp11[0];
-  React = tmp11[1];
   const items3 = [num];
-  let tmp14 = "" === first;
+  let tmp14 = "" === tmp12;
   const callback = React.useCallback((arg0) => callback(teenId(controlledSetting[7]).sanitizeAmountInput(arg0, num)), items3);
   if (tmp14) {
     tmp14 = null != controlledSetting;
   }
-  _isNativeReflectConstruct = tmp14;
-  const parsed = parseFloat(first);
-  const tmp16 = !Number.isNaN(parsed) && parsed >= 0;
-  let tmp17 = tmp14;
-  if (!tmp14) {
-    tmp17 = tmp16;
+  freshTeenActivityWithMap = tmp14;
+  const parsed = parseFloat(tmp12);
+  const isNaNResult = Number.isNaN(parsed);
+  let tmp17 = !isNaNResult;
+  if (!isNaNResult) {
+    tmp17 = parsed >= 0;
   }
-  let closure_6 = tmp17;
+  let tmp18 = tmp14;
+  if (!tmp14) {
+    tmp18 = tmp17;
+  }
+  let closure_6 = tmp18;
   let rounded = null;
-  if (tmp16) {
+  if (tmp17) {
     const _Math = Math;
     rounded = Math.round(parsed * 10 ** num);
   }
-  const tmp20 = num(React.useState(false), 2);
-  let closure_8 = tmp20[1];
-  // CreateGeneratorClosureLongIndex (0x67)
-  const items4 = [tmp17, tmp14, rounded, teenId, formatted];
-  obj = { amountInput: first, handleAmountChange: callback, currency: formatted, currencySymbol: memo, exponent: num, isClearingCap: tmp14 };
-  let tmp22 = null != stateFromStores1;
-  const callback1 = React.useCallback(formatted(tmp), items4);
-  if (tmp22) {
-    tmp22 = stateFromStores1 > 0;
+  const tmp10Result = tmp10(React.useState(false), 2);
+  let closure_8 = tmp10Result[1];
+  const items4 = [tmp18, tmp14, rounded, teenId, formatted];
+  obj = { amountInput: tmp12, handleAmountChange: callback, currency: formatted, currencySymbol: memo, exponent: num, isClearingCap: tmp14, isOverspending: null, canSave: null, isSubmitting: null, renewalDate: null, monthlySpend: null, save: null };
+  let tmp23 = null != stateFromStores1;
+  const callback1 = obj3.useCallback(formatted(function*() {
+    if (c4 === 2) {
+      c4 = 3;
+      HermesBuiltin.throwTypeError();
+    } else if (tmp6 === 3) {
+      if (arg0 === 1) {
+        throw arg1;
+      } else if (arg0 === 2) {
+        let obj = { value: null, done: true };
+        obj[0] = arg1;
+        return obj;
+      } else {
+        return { value: "HermesInternal", done: null };
+      }
+    } else {
+      try {
+        c4 = 2;
+        if (0 === dependencyMap) {
+          if (arg0 === 1) {
+            c4 = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            c4 = 3;
+            obj = { value: null, done: true };
+            obj[0] = arg1;
+            return obj;
+          } else {
+            let closure_0 = tmp3;
+            if (outer1_6) {
+              outer1_8(true);
+              let c3 = 1;
+              if (outer1_5) {
+                const ParentalControlledSpendingLimit2 = outer1_0(13856).ParentalControlledSpendingLimit;
+                dependencyMap = 2;
+                c4 = 1;
+                const obj1 = { value: null, done: false };
+                obj1[0] = ParentalControlledSpendingLimit2.updateControlledSetting(outer1_0, null);
+                return obj1;
+              } else if (null != outer1_7) {
+                const ParentalControlledSpendingLimit = outer1_0(13856).ParentalControlledSpendingLimit;
+                const obj2 = { amount: null, currency: null };
+                obj2[0] = tmp16;
+                obj2[1] = outer1_2;
+                dependencyMap = 3;
+                c4 = 1;
+                const obj3 = { value: null, done: false };
+                obj3[0] = ParentalControlledSpendingLimit.updateControlledSetting(outer1_0, obj2);
+                return obj3;
+              }
+            }
+            c4 = 3;
+            return { value: "HermesInternal", done: null };
+          }
+        } else if (1 === tmp7) {
+          c3 = 0;
+          callback(false);
+          throw initialize;
+        } else if (2 === tmp7) {
+          if (arg0 === 1) {
+            c4 = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            c3 = 0;
+            callback(false);
+            c4 = 3;
+            const obj4 = { value: null, done: true };
+            obj4[0] = arg1;
+            return obj4;
+          }
+        } else if (arg0 === 1) {
+          c4 = 3;
+          throw arg1;
+        } else if (arg0 === 2) {
+          c3 = 0;
+          callback(false);
+          c4 = 3;
+          obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
+        }
+        c3 = 0;
+        callback(false);
+      } catch (tmp27) {
+        initialize = tmp27;
+        if (tmp4 === c3) {
+          c4 = tmp2;
+          throw tmp27;
+        } else {
+          dependencyMap = tmp;
+        }
+      }
+    }
+  }), items4);
+  if (tmp23) {
+    tmp23 = stateFromStores1 > 0;
   }
-  if (tmp22) {
-    tmp22 = null != rounded;
+  if (tmp23) {
+    tmp23 = null != rounded;
   }
-  if (tmp22) {
-    tmp22 = rounded <= stateFromStores1;
+  if (tmp23) {
+    tmp23 = rounded <= stateFromStores1;
   }
-  obj.isOverspending = tmp22;
-  obj.canSave = tmp17;
-  obj.isSubmitting = tmp20[0];
-  obj.renewalDate = memo1;
-  obj.monthlySpend = stateFromStores1;
-  obj.save = callback1;
+  obj[6] = tmp23;
+  obj[7] = tmp18;
+  obj[8] = tmp10Result[0];
+  obj[9] = memo1;
+  obj[10] = stateFromStores1;
+  obj[11] = callback1;
   return obj;
 };

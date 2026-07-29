@@ -1,11 +1,11 @@
-// Module ID: 12478
-// Function ID: 96664
+// Module ID: 12500
+// Function ID: 12501
 // Name: useScheduledForcedUpdate
-// Dependencies: [31, 6215, 2]
+// Dependencies: [19, 6235, 2]
 // Exports: default
 
-// Module 12478 (useScheduledForcedUpdate)
-import result from "result";
+// Module 12500 (useScheduledForcedUpdate)
+import noop from "noop";
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/premium/hooks/useScheduledForcedUpdate.tsx");
@@ -24,8 +24,8 @@ export default function useScheduledForcedUpdate(delay) {
       if (!flag) {
         const _setTimeout = setTimeout;
         timeout = setTimeout(() => {
-          outer1_2();
-        }, timeout);
+          callback();
+        }, tmp);
         return () => clearTimeout(closure_0);
       }
     }

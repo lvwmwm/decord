@@ -1,25 +1,63 @@
-// Module ID: 4062
-// Function ID: 33662
-// Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 1859, 2]
+// Module ID: 4086
+// Function ID: 4087
+// Name: createFromServer
+// Dependencies: [1883, 2]
 
-// Module 4062 (_isNativeReflectConstruct)
-import set from "set";
-import _defineProperties from "_defineProperties";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
-import tmp2 from "Record";
+// Module 4086 (createFromServer)
+import "toJS";
 
-function _isNativeReflectConstruct() {
-  let set = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return set;
+let prototype;
+prototype = function AppliedGuildBoostRecord(endsAt) {
+  const tmp = new prototype(new.target, endsAt, new.target);
+  // ThrowIfThisInitialized (0x7c)
+  ({ id: tmp.id, guildId: tmp.guildId, userId: tmp.userId, user: tmp.user, ended: tmp.ended } = endsAt);
+  endsAt = null;
+  if (null != endsAt.endsAt) {
+    endsAt = endsAt.endsAt;
   }
-  const result = _isNativeReflectConstruct();
+  tmp.endsAt = endsAt;
+  return tmp;
+}.prototype;
+class prototype extends tmp2 {
 }
-let result = require("_possibleConstructorReturn").fileFinishedImporting("records/AppliedGuildBoostRecord.tsx");
+prototype["createFromServer"] = function createFromServer(user) {
+  let guild_id;
+  let id;
+  ({ id, guild_id } = user);
+  if (null != user.user) {
+    let user_id = user.user.id;
+  } else {
+    user_id = user.user_id;
+  }
+  user = user.user;
+  let date = null;
+  if (null != user.ends_at) {
+    let _Date = user.ends_at;
+    let str = "";
+    date = null;
+    if ("" !== _Date) {
+      _Date = Date;
+      str = new.target;
+      date = new Date(user.ends_at);
+    }
+  }
+  if (typeof prototype !== "find") {
+    HermesBuiltin.throwTypeError();
+  }
+  const tmp5 = new prototype(str2, _Date, str, prototype, new.target, id, guild_id, user_id, user);
+  // ThrowIfThisInitialized (0x7c)
+  tmp5.id = id;
+  tmp5.guildId = guild_id;
+  tmp5.userId = user_id;
+  tmp5.user = user;
+  tmp5.ended = user.ended;
+  let tmp6 = null;
+  if (null != date) {
+    tmp6 = date;
+  }
+  tmp5.endsAt = tmp6;
+  return tmp5;
+};
+const result = require("set").fileFinishedImporting("records/AppliedGuildBoostRecord.tsx");
 
-export default tmp2;
+export default prototype;

@@ -1,172 +1,80 @@
-// Module ID: 6281
-// Function ID: 56368
-// Name: getHeaderBackground
-// Dependencies: [31, 27, 653, 33, 4165, 5008, 3811, 6282, 6283, 6284, 6285, 6286, 6226, 6227, 6287, 6288, 6289, 6290, 6291, 6292, 6293, 4011, 6294, 6295, 6296, 6297, 6298, 6299, 6300, 6301, 6302, 1212, 4101, 4596, 6303, 6304, 1273, 2]
+// Module ID: 6302
+// Function ID: 6303
+// Name: PremiumActivatedAlert
+// Dependencies: [19, 17, 676, 21, 4189, 5030, 3835, 6303, 6304, 6305, 6306, 6307, 6246, 6247, 6308, 6309, 6310, 6311, 6312, 6313, 6314, 4035, 6315, 6316, 6317, 6318, 6319, 6320, 6321, 6322, 6323, 1236, 4125, 4618, 6324, 6325, 1297, 2]
 // Exports: default
 
-// Module 6281 (getHeaderBackground)
-import "getSystemLocale";
+// Module 6302 (PremiumActivatedAlert)
+import "registerAsset";
 import get_ActivityIndicator from "registerAsset";
 import { SubscriptionStatusTypes } from "ME";
-import jsxProd from "_isNativeReflectConstruct";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import jsxProd from "AccessibilityAnnouncer";
+import createCacheKey from "createCacheKey";
+import createCacheKey from "createCacheKey";
+import createCacheKey from "createCacheKey";
 
-let closure_3;
-let closure_4;
-let closure_5;
-let closure_7;
-let closure_8;
+let c3;
+let c4;
+let c5;
+let error;
+let metroImportAll;
 const require = arg1;
-function getHeaderBackground(arg0) {
-  if (require(3811) /* _createForOfIteratorHelperLoose */.Branding.TIER_0 === arg0) {
-    return importDefault(6282);
-  } else if (require(3811) /* _createForOfIteratorHelperLoose */.Branding.TIER_1 === arg0) {
-    return importDefault(6283);
-  } else if (require(3811) /* _createForOfIteratorHelperLoose */.Branding.TIER_2 === arg0) {
-    return importDefault(6284);
-  } else if (require(3811) /* _createForOfIteratorHelperLoose */.Branding.BUNDLE === arg0) {
-    return importDefault(6285);
-  } else if (require(3811) /* _createForOfIteratorHelperLoose */.Branding.PREMIUM_GUILD === arg0) {
-    return importDefault(6286);
-  }
-}
-function getHeaderImage(premiumBranding) {
-  if (require(3811) /* _createForOfIteratorHelperLoose */.Branding.TIER_0 === premiumBranding) {
-    return importDefault(6226);
-  } else if (require(3811) /* _createForOfIteratorHelperLoose */.Branding.TIER_1 === premiumBranding) {
-    return importDefault(6227);
-  } else if (require(3811) /* _createForOfIteratorHelperLoose */.Branding.TIER_2 === premiumBranding) {
-    return importDefault(6287);
-  } else if (require(3811) /* _createForOfIteratorHelperLoose */.Branding.BUNDLE === premiumBranding) {
-    return importDefault(6288);
-  } else if (require(3811) /* _createForOfIteratorHelperLoose */.Branding.PREMIUM_GUILD === premiumBranding) {
-    return importDefault(6289);
-  }
-}
-function getLogo(arg0) {
-  if (require(3811) /* _createForOfIteratorHelperLoose */.Branding.TIER_0 === arg0) {
-    return importDefault(6290);
-  } else if (require(3811) /* _createForOfIteratorHelperLoose */.Branding.TIER_1 === arg0) {
-    return importDefault(6291);
-  } else {
-    if (require(3811) /* _createForOfIteratorHelperLoose */.Branding.BUNDLE !== arg0) {
-      if (require(3811) /* _createForOfIteratorHelperLoose */.Branding.TIER_2 !== arg0) {
-        if (require(3811) /* _createForOfIteratorHelperLoose */.Branding.PREMIUM_GUILD === arg0) {
-          return importDefault(6293);
-        }
-      }
-    }
-    return importDefault(6292);
-  }
-}
-function getActivatedImage(premiumBranding, arg1) {
-  if (require(3811) /* _createForOfIteratorHelperLoose */.Branding.TIER_0 === premiumBranding) {
-    if (obj4.isThemeDark(arg1)) {
-      let tmp22Result = tmp22(6294);
-    } else {
-      tmp22Result = tmp22(6295);
-    }
-    return tmp22Result;
-  } else if (require(3811) /* _createForOfIteratorHelperLoose */.Branding.TIER_1 === premiumBranding) {
-    if (obj3.isThemeDark(arg1)) {
-      let tmp17Result = tmp17(6296);
-    } else {
-      tmp17Result = tmp17(6297);
-    }
-    return tmp17Result;
-  } else if (require(3811) /* _createForOfIteratorHelperLoose */.Branding.TIER_2 === premiumBranding) {
-    if (obj2.isThemeDark(arg1)) {
-      let tmp12Result = tmp12(6298);
-    } else {
-      tmp12Result = tmp12(6299);
-    }
-    return tmp12Result;
-  } else if (require(3811) /* _createForOfIteratorHelperLoose */.Branding.BUNDLE === premiumBranding) {
-    if (obj.isThemeDark(arg1)) {
-      let tmp7Result = tmp7(6300);
-    } else {
-      tmp7Result = tmp7(6301);
-    }
-    return tmp7Result;
-  } else if (require(3811) /* _createForOfIteratorHelperLoose */.Branding.PREMIUM_GUILD === premiumBranding) {
-    return importDefault(6302);
-  }
-}
-function getDescription(arg0, arg1) {
-  if (require(3811) /* _createForOfIteratorHelperLoose */.Branding.TIER_0 !== arg0) {
-    if (require(3811) /* _createForOfIteratorHelperLoose */.Branding.TIER_1 !== arg0) {
-      if (require(3811) /* _createForOfIteratorHelperLoose */.Branding.TIER_2 === arg0) {
-        const intl2 = require(1212) /* getSystemLocale */.intl;
-        return intl2.string(require(1212) /* getSystemLocale */.t.aTUr3Z);
-      } else {
-        const intl = require(1212) /* getSystemLocale */.intl;
-        let obj = {};
-        obj = {};
-        ({ planId: obj3.planId, additionalPlans: obj3.additionalPlans } = arg1);
-        obj.planName = require(3811) /* _createForOfIteratorHelperLoose */.getExternalPlanDisplayName(obj);
-        return intl.format(require(1212) /* getSystemLocale */.t.YJUUH3, obj);
-      }
-    }
-  }
-  const intl3 = require(1212) /* getSystemLocale */.intl;
-  return intl3.string(require(1212) /* getSystemLocale */.t.knvOVz);
-}
-({ Image: closure_3, ImageBackground: closure_4, View: closure_5 } = get_ActivityIndicator);
-({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-_createForOfIteratorHelperLoose = { alert: { overflow: "hidden", paddingBottom: 24 }, header: { alignSelf: "stretch", margin: -16, padding: 16, height: 100, position: "relative" }, headerImage: { position: "absolute", left: "50%" }, body: { paddingHorizontal: 16, marginTop: 40, maxWidth: 300, alignSelf: "center", alignItems: "center" }, logoPlusPremiumGuild: { marginTop: 3, width: 101, height: 19 } };
-_createForOfIteratorHelperLoose = { fontSize: 14, lineHeight: 16, textAlign: "center", marginTop: 20, color: require("result").DARK_PRIMARY_300_LIGHT_PRIMARY_400 };
-_createForOfIteratorHelperLoose.description = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-let closure_10 = _createForOfIteratorHelperLoose.createStyles((arg0) => {
-  if (require(3811) /* _createForOfIteratorHelperLoose */.Branding.TIER_0 === arg0) {
-    let obj = { headerImage: { marginLeft: -27, width: 88, top: 18 } };
+({ Image: c3, ImageBackground: c4, View: c5 } = get_ActivityIndicator);
+({ jsx: error, jsxs: metroImportAll } = jsxProd);
+createCacheKey = { alert: { overflow: "hidden", paddingBottom: 24 }, header: { alignSelf: "stretch", margin: -16, padding: 16, height: 100, position: "relative" }, headerImage: { position: "absolute", left: "50%" }, body: { paddingHorizontal: 16, marginTop: 40, maxWidth: 300, alignSelf: "center", alignItems: "center" }, logoPlusPremiumGuild: { marginTop: 3, width: 101, height: 19 }, description: null };
+createCacheKey = { fontSize: 14, lineHeight: 16, textAlign: "center", marginTop: 20, color: require("result").DARK_PRIMARY_300_LIGHT_PRIMARY_400 };
+createCacheKey[5] = createCacheKey;
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let closure_10 = createCacheKey.createStyles((arg0) => {
+  if (require(3835) /* getPremiumPlanItem */.Branding.TIER_0 === arg0) {
+    let obj = { headerImage: null };
+    obj[0] = { marginLeft: -27, width: 88, top: 18 };
     return obj;
-  } else if (require(3811) /* _createForOfIteratorHelperLoose */.Branding.TIER_1 === arg0) {
-    obj = { headerImage: { marginLeft: -27, width: 87, top: 18 } };
+  } else if (tmp(3835).Branding.TIER_1 === arg0) {
+    obj = { headerImage: null };
+    obj[0] = { marginLeft: -27, width: 87, top: 18 };
     return obj;
-  } else if (require(3811) /* _createForOfIteratorHelperLoose */.Branding.BUNDLE === arg0) {
-    const obj1 = { headerImage: { marginLeft: -29.5, width: 91, top: 18 } };
+  } else if (tmp(3835).Branding.BUNDLE === arg0) {
+    const obj1 = { headerImage: null };
+    obj1[0] = { marginLeft: -29.5, width: 91, top: 18 };
     return obj1;
-  } else if (require(3811) /* _createForOfIteratorHelperLoose */.Branding.TIER_2 === arg0) {
-    const obj2 = { headerImage: { marginLeft: -58, width: 122, height: 90, top: 18 } };
+  } else if (tmp(3835).Branding.TIER_2 === arg0) {
+    const obj2 = { headerImage: null };
+    obj2[0] = { marginLeft: -58, width: 122, height: 90, top: 18 };
     return obj2;
-  } else if (require(3811) /* _createForOfIteratorHelperLoose */.Branding.PREMIUM_GUILD === arg0) {
-    obj = { headerImage: { marginLeft: -54, width: 140, top: 18 } };
+  } else if (tmp(3835).Branding.PREMIUM_GUILD === arg0) {
+    obj = { headerImage: null };
+    obj[0] = { marginLeft: -54, width: 140, top: 18 };
     return obj;
   }
 });
-let closure_11 = _createForOfIteratorHelperLoose.createStyles((arg0) => {
-  if (require(3811) /* _createForOfIteratorHelperLoose */.Branding.BUNDLE === arg0) {
-    let obj = {};
-    obj = { borderRadius: 6 };
-    obj.animation = obj;
+let closure_11 = createCacheKey.createStyles((arg0) => {
+  if (require(3835) /* getPremiumPlanItem */.Branding.BUNDLE === arg0) {
+    let obj = { animation: null };
+    obj[0] = { borderRadius: 6 };
     return obj;
   } else {
-    if (require(3811) /* _createForOfIteratorHelperLoose */.Branding.TIER_0 !== arg0) {
-      if (require(3811) /* _createForOfIteratorHelperLoose */.Branding.TIER_1 !== arg0) {
-        if (require(3811) /* _createForOfIteratorHelperLoose */.Branding.TIER_2 !== arg0) {
-          if (require(3811) /* _createForOfIteratorHelperLoose */.Branding.PREMIUM_GUILD === arg0) {
-            obj = {};
-            const obj1 = { borderRadius: 9 };
-            obj.animation = obj1;
+    if (tmp(3835).Branding.TIER_0 !== arg0) {
+      if (tmp(3835).Branding.TIER_1 !== arg0) {
+        if (tmp(3835).Branding.TIER_2 !== arg0) {
+          if (tmp(3835).Branding.PREMIUM_GUILD === arg0) {
+            obj = { animation: null };
+            obj[0] = { borderRadius: 9 };
             return obj;
           }
         }
       }
     }
-    const obj2 = {};
-    const obj3 = { borderRadius: 5 };
-    obj2.animation = obj3;
-    return obj2;
+    obj = { animation: null };
+    obj[0] = { borderRadius: 5 };
+    return obj;
   }
 });
 const result = require("ME").fileFinishedImporting("components_native/premium/PremiumActivatedAlert.tsx");
 
 export default function PremiumActivatedAlert(onClose) {
   const subscription = onClose.subscription;
-  const tmp = _createForOfIteratorHelperLoose();
+  const tmp = createCacheKey();
   let renewalMutations = subscription;
   if (null != subscription.renewalMutations) {
     const _Object = Object;
@@ -181,59 +89,157 @@ export default function PremiumActivatedAlert(onClose) {
       }
     }
   }
-  let obj = require(3811) /* _createForOfIteratorHelperLoose */;
+  const tmp6 = importDefault(4125)();
+  let obj = require(3835) /* getPremiumPlanItem */;
   const premiumBranding = obj.getPremiumBranding(renewalMutations);
-  if (require(3811) /* _createForOfIteratorHelperLoose */.Branding.TIER_0 === premiumBranding) {
-    obj = { logo: { width: 82, height: 44 } };
-    let tmp13 = obj;
-  } else if (require(3811) /* _createForOfIteratorHelperLoose */.Branding.TIER_1 === premiumBranding) {
-    obj = { logo: { width: 82, height: 32 } };
-    tmp13 = obj;
+  if (require(3835) /* getPremiumPlanItem */.Branding.TIER_0 === premiumBranding) {
+    obj = { logo: null };
+    obj[0] = { width: 82, height: 44 };
+    let tmp9 = obj;
+  } else if (tmp7(3835).Branding.TIER_1 === premiumBranding) {
+    obj = { logo: null };
+    obj[0] = { width: 82, height: 32 };
+    tmp9 = obj;
   } else {
-    if (require(3811) /* _createForOfIteratorHelperLoose */.Branding.BUNDLE !== premiumBranding) {
-      if (require(3811) /* _createForOfIteratorHelperLoose */.Branding.TIER_2 !== premiumBranding) {
-        if (require(3811) /* _createForOfIteratorHelperLoose */.Branding.PREMIUM_GUILD === premiumBranding) {
-          const obj1 = { logo: { width: 82, height: 18 } };
-          tmp13 = obj1;
+    if (tmp7(3835).Branding.BUNDLE !== premiumBranding) {
+      if (tmp7(3835).Branding.TIER_2 !== premiumBranding) {
+        if (tmp7(3835).Branding.PREMIUM_GUILD === premiumBranding) {
+          const obj1 = { logo: null };
+          obj1[0] = { width: 82, height: 18 };
+          tmp9 = obj1;
         }
       }
     }
-    const obj2 = { logo: { width: 79, height: 32 } };
-    tmp13 = obj2;
+    const obj2 = { logo: null };
+    obj2[0] = { width: 79, height: 32 };
+    tmp9 = obj2;
   }
-  const tmp4 = importDefault;
-  const tmp6 = importDefault(4101)();
-  const tmp14 = callback3(premiumBranding);
-  const obj3 = { onClose: onClose.onClose };
-  const tmp15 = callback4(premiumBranding);
-  const intl = tmp7(1212).intl;
-  obj3.confirmText = intl.string(require(1212) /* getSystemLocale */.t.TkTvBz);
-  obj3.style = tmp.alert;
-  const obj4 = { style: tmp.header, source: getHeaderBackground(premiumBranding) };
-  const obj5 = { source: getLogo(premiumBranding), style: tmp13.logo };
-  const items = [callback(closure_3, obj5), , ];
-  let tmp19 = null;
-  if (premiumBranding === require(3811) /* _createForOfIteratorHelperLoose */.Branding.BUNDLE) {
-    const obj6 = { source: importDefault(6303), style: tmp.logoPlusPremiumGuild };
-    tmp19 = callback(closure_3, obj6);
+  const tmp10 = callback(premiumBranding);
+  const obj3 = { onClose: onClose.onClose, confirmText: null, style: null, children: null };
+  let tmp4Result = tmp4(4618);
+  const intl = tmp7(1236).intl;
+  obj3[1] = intl.string(require(1236) /* getSystemLocale */.t.TkTvBz);
+  obj3[2] = tmp.alert;
+  const obj4 = { style: tmp.header, source: null, children: null };
+  if (require(3835) /* getPremiumPlanItem */.Branding.TIER_0 === premiumBranding) {
+    tmp4Result = tmp4(6303);
+  } else if (tmp7(3835).Branding.TIER_1 === premiumBranding) {
+    tmp4Result = tmp4(6304);
+  } else if (tmp7(3835).Branding.TIER_2 === premiumBranding) {
+    tmp4Result = tmp4(6305);
+  } else if (tmp7(3835).Branding.BUNDLE === premiumBranding) {
+    tmp4Result = tmp4(6306);
+  } else if (tmp7(3835).Branding.PREMIUM_GUILD === premiumBranding) {
+    tmp4Result = tmp4(6307);
   }
-  items[1] = tmp19;
-  const tmp18 = closure_4;
-  const tmp4Result = tmp4(4596);
-  const items1 = [tmp14.headerImage, tmp.headerImage];
-  items[2] = callback(closure_3, { source: getHeaderImage(premiumBranding), style: items1 });
-  obj4.children = items;
-  const items2 = [callback2(tmp18, obj4), ];
-  const obj8 = { style: tmp.body };
-  const obj9 = {};
-  const obj7 = { source: getHeaderImage(premiumBranding), style: items1 };
-  obj9.source = getActivatedImage(premiumBranding, tmp6);
-  obj9.style = tmp15.animation;
-  const items3 = [callback(importDefault(6304), obj9), ];
-  const obj10 = { style: tmp.description, children: getDescription(premiumBranding, renewalMutations) };
-  items3[1] = callback(require(1273) /* Button */.LegacyText, obj10);
-  obj8.children = items3;
-  items2[1] = callback2(closure_5, obj8);
-  obj3.children = items2;
-  return callback2(tmp4Result, obj3);
+  obj4[1] = tmp4Result;
+  if (require(3835) /* getPremiumPlanItem */.Branding.TIER_0 === premiumBranding) {
+    let tmp4Result1 = tmp4(6311);
+  } else if (tmp7(3835).Branding.TIER_1 === premiumBranding) {
+    tmp4Result1 = tmp4(6312);
+  } else {
+    if (tmp7(3835).Branding.BUNDLE !== premiumBranding) {
+      if (tmp7(3835).Branding.TIER_2 !== premiumBranding) {
+        if (tmp7(3835).Branding.PREMIUM_GUILD === premiumBranding) {
+          tmp4Result1 = tmp4(6314);
+        }
+      }
+    }
+    tmp4Result1 = tmp4(6313);
+  }
+  const items = [closure_7(closure_3, { source: tmp4Result1, style: tmp9.logo }), , ];
+  let tmp16Result = null;
+  if (premiumBranding === require(3835) /* getPremiumPlanItem */.Branding.BUNDLE) {
+    const obj6 = { source: null, style: null };
+    obj6[0] = tmp4(6324);
+    obj6[1] = tmp.logoPlusPremiumGuild;
+    tmp16Result = tmp16(tmp17, obj6);
+  }
+  items[1] = tmp16Result;
+  if (require(3835) /* getPremiumPlanItem */.Branding.TIER_0 === premiumBranding) {
+    let tmp4Result2 = tmp4(6246);
+  } else if (tmp7(3835).Branding.TIER_1 === premiumBranding) {
+    tmp4Result2 = tmp4(6247);
+  } else if (tmp7(3835).Branding.TIER_2 === premiumBranding) {
+    tmp4Result2 = tmp4(6308);
+  } else if (tmp7(3835).Branding.BUNDLE === premiumBranding) {
+    tmp4Result2 = tmp4(6309);
+  } else if (tmp7(3835).Branding.PREMIUM_GUILD === premiumBranding) {
+    tmp4Result2 = tmp4(6310);
+  }
+  const items1 = [tmp10.headerImage, tmp.headerImage];
+  items[2] = closure_7(closure_3, { source: tmp4Result2, style: items1 });
+  obj4[2] = items;
+  const items2 = [closure_8(closure_4, obj4), ];
+  const obj7 = { style: tmp.body, children: null };
+  const obj5 = { source: tmp4Result1, style: tmp9.logo };
+  const tmp11 = callback2(premiumBranding);
+  const tmp14 = closure_4;
+  const tmp21 = closure_5;
+  if (require(3835) /* getPremiumPlanItem */.Branding.TIER_0 === premiumBranding) {
+    let tmp7Result = tmp7(4035);
+    if (tmp7Result.isThemeDark(tmp6)) {
+      let tmp4Result4 = tmp4(6315);
+    } else {
+      tmp4Result4 = tmp4(6316);
+    }
+  } else {
+    if (tmp7(3835).Branding.TIER_1 === premiumBranding) {
+      tmp7Result = tmp7(4035);
+      if (tmp7Result.isThemeDark(tmp6)) {
+        let tmp4Result5 = tmp4(6317);
+      } else {
+        tmp4Result5 = tmp4(6318);
+      }
+      let tmp4Result8 = tmp4Result5;
+    } else if (tmp7(3835).Branding.TIER_2 === premiumBranding) {
+      if (tmp7Result1.isThemeDark(tmp6)) {
+        let tmp4Result6 = tmp4(6319);
+      } else {
+        tmp4Result6 = tmp4(6320);
+      }
+      tmp4Result8 = tmp4Result6;
+      tmp7Result1 = tmp7(4035);
+    } else if (tmp7(3835).Branding.BUNDLE === premiumBranding) {
+      if (tmp7Result2.isThemeDark(tmp6)) {
+        let tmp4Result7 = tmp4(6321);
+      } else {
+        tmp4Result7 = tmp4(6322);
+      }
+      tmp4Result8 = tmp4Result7;
+      tmp7Result2 = tmp7(4035);
+    } else if (tmp7(3835).Branding.PREMIUM_GUILD === premiumBranding) {
+      tmp4Result8 = tmp4(6323);
+    }
+    const obj8 = { source: null, style: null };
+    obj8[0] = tmp4Result8;
+    obj8[1] = tmp11.animation;
+    const items3 = [tmp16(tmp4Result3, obj8), ];
+    const obj9 = { style: null, children: null };
+    obj9[0] = tmp.description;
+    if (tmp7(3835).Branding.TIER_0 !== premiumBranding) {
+      if (tmp7(3835).Branding.TIER_1 !== premiumBranding) {
+        if (tmp7(3835).Branding.TIER_2 === premiumBranding) {
+          const intl3 = tmp7(1236).intl;
+          let stringResult = intl3.string(tmp7(1236).t.aTUr3Z);
+        } else if (tmp7(3835).Branding.BUNDLE === premiumBranding) {
+          const intl2 = tmp7(1236).intl;
+          const obj10 = { planName: null };
+          ({ planId: obj19[0], additionalPlans: obj19[1] } = renewalMutations);
+          obj10[0] = tmp7(3835).getExternalPlanDisplayName({ planId: null, additionalPlans: null });
+          stringResult = intl2.format(tmp7(1236).t.YJUUH3, obj10);
+          const obj11 = { planId: null, additionalPlans: null };
+          const tmp7Result3 = tmp7(3835);
+        }
+      }
+      obj9[1] = stringResult;
+      items3[1] = tmp16(tmp7(1297).LegacyText, obj9);
+      obj7[1] = items3;
+      items2[1] = tmp12(tmp21, obj7);
+      obj3[3] = items2;
+      return tmp12(tmp4Result, obj3);
+    }
+    const intl4 = tmp7(1236).intl;
+    stringResult = intl4.string(tmp7(1236).t.knvOVz);
+  }
 };

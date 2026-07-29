@@ -1,56 +1,110 @@
-// Module ID: 14917
-// Function ID: 113654
+// Module ID: 14943
+// Function ID: 14944
 // Name: getGuildsBarGuildMenuItems
-// Dependencies: [5, 3794, 1838, 4360, 653, 10686, 1212, 6671, 11505, 10289, 9238, 13075, 1935, 10208, 5113, 8987, 13022, 11452, 4133, 10284, 11453, 5108, 2]
+// Dependencies: [5, 3818, 1862, 4385, 676, 10710, 1236, 6692, 11529, 10310, 9262, 13098, 1959, 10229, 5135, 9011, 13045, 11476, 4157, 10305, 11477, 5130, 2]
 // Exports: default
 
-// Module 14917 (getGuildsBarGuildMenuItems)
+// Module 14943 (getGuildsBarGuildMenuItems)
 import DoorExitIcon from "DoorExitIcon";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import closure_6 from "_isNativeReflectConstruct";
+import initialize from "initialize";
+import createGuildRecordFromRust from "createGuildRecordFromRust";
+import updateUserGuildSettingsInternal from "updateUserGuildSettingsInternal";
 import { AnalyticsSections } from "ME";
 
 const require = arg1;
-let result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/guilds_bar/native/utils/getGuildsBarGuildMenuItems.tsx");
+let result = require("createGuildRecordFromRust").fileFinishedImporting("modules/guilds_bar/native/utils/getGuildsBarGuildMenuItems.tsx");
 
-export default function getGuildsBarGuildMenuItems(id) {
-  const _require = id;
-  if (lurking.isLurking(id)) {
-    let obj = { IconComponent: tmp(10686).DoorExitIcon };
-    const intl6 = tmp(1212).intl;
-    obj.label = intl6.string(tmp(1212).t["2vl7qn"]);
-    obj.variant = "destructive";
-    obj.action = function action() {
-      const result = id(outer1_2[7]).trackLongPressLeaveClicked(id);
-      const obj = id(outer1_2[7]);
-      id(outer1_2[8]).stopLurkingForGuild(id);
+export default function getGuildsBarGuildMenuItems(guildId) {
+  let closure_0 = guildId;
+  if (lurking.isLurking(guildId)) {
+    let obj = { IconComponent: null, label: null, variant: "destructive", action: null };
+    obj[0] = tmp(10710).DoorExitIcon;
+    const intl6 = tmp(1236).intl;
+    obj[1] = intl6.string(tmp(1236).t["2vl7qn"]);
+    obj[3] = function action() {
+      const result = guildId(outer1_2[7]).trackLongPressLeaveClicked(guildId);
+      const obj = guildId(outer1_2[7]);
+      guildId(outer1_2[8]).stopLurkingForGuild(guildId);
     };
-    const items = [obj];
+    let items = [obj];
     return items;
   } else {
-    let result = tmp(10289).shouldShowUseNewNotificationSystem("GuildPopoutMenu");
-    obj = {};
-    const tmpResult = tmp(10289);
-    obj.IconComponent = tmp(9238).EnvelopeIcon;
-    const intl = tmp(1212).intl;
-    obj.label = intl.string(tmp(1212).t.e6RscS);
-    obj.action = function action() {
-      // CreateGeneratorClosureLongIndex (0x67)
-      return outer1_3(tmp)();
+    let result = tmp(10310).shouldShowUseNewNotificationSystem("GuildPopoutMenu");
+    obj = { IconComponent: null, label: null, action: null };
+    const tmpResult = tmp(10310);
+    obj[0] = tmp(9262).EnvelopeIcon;
+    const intl = tmp(1236).intl;
+    obj[1] = intl.string(tmp(1236).t.e6RscS);
+    obj[2] = function action() {
+      return outer1_3(function*() {
+        if (paths === 2) {
+          paths = 3;
+          HermesBuiltin.throwTypeError();
+        } else if (tmp3 === 3) {
+          if (arg0 === 1) {
+            throw arg1;
+          } else if (arg0 === 2) {
+            let obj = { value: null, done: true };
+            obj[0] = arg1;
+            return obj;
+          } else {
+            return { value: "HermesInternal", done: null };
+          }
+        } else {
+          try {
+            paths = 2;
+            if (0 === c1) {
+              if (arg0 === 1) {
+                paths = 3;
+                throw arg1;
+              } else if (arg0 === 2) {
+                paths = 3;
+                obj = { value: null, done: true };
+                obj[0] = arg1;
+                return obj;
+              } else {
+                let closure_0 = tmp4;
+                c1 = 1;
+                paths = 1;
+                const obj1 = { value: null, done: false };
+                obj1[0] = outer1_0(paths[12])(paths[11], paths.paths);
+                return obj1;
+              }
+            } else if (arg0 === 1) {
+              paths = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              paths = 3;
+              obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            } else {
+              const items = [closure_0];
+              arg1.default(items, outer1_7.GUILD_LIST);
+              paths = 3;
+              return { value: "HermesInternal", done: null };
+            }
+          } catch (tmp11) {
+            paths = tmp;
+            throw tmp11;
+          }
+        }
+      })();
     };
     const items1 = [obj, , ];
-    const obj1 = { IconComponent: tmp(10208).BellIcon };
-    const intl2 = tmp(1212).intl;
-    obj1.label = intl2.string(tmp(1212).t.HcoRu0);
-    obj1.action = function action() {
+    let obj1 = { IconComponent: null, label: null, action: null };
+    obj1[0] = tmp(10229).BellIcon;
+    const intl2 = tmp(1236).intl;
+    obj1[1] = intl2.string(tmp(1236).t.HcoRu0);
+    obj1[2] = function action() {
       outer1_1(outer1_2[14]).open(closure_0);
     };
     items1[1] = obj1;
-    const obj2 = { IconComponent: tmp(8987).SettingsIcon };
-    const intl3 = tmp(1212).intl;
-    obj2.label = intl3.string(tmp(1212).t.PdRCRg);
-    obj2.action = function action() {
+    const obj2 = { IconComponent: null, label: null, action: null };
+    obj2[0] = tmp(9011).SettingsIcon;
+    const intl3 = tmp(1236).intl;
+    obj2[1] = intl3.string(tmp(1236).t.PdRCRg);
+    obj2[2] = function action() {
       const guild = outer1_5.getGuild(closure_0);
       if (null != guild) {
         outer1_1(outer1_2[16])(guild);
@@ -59,27 +113,26 @@ export default function getGuildsBarGuildMenuItems(id) {
     items1[2] = obj2;
     if (result) {
       const splice = items1.splice;
-      const obj3 = {};
+      const obj3 = { iconSource: null, label: null, action: null };
       if (isMutedResult) {
-        obj3.iconSource = tmp6(11453);
-        const intl5 = _require(1212).intl;
-        obj3.label = intl5.string(_require(1212).t.De0BTC);
-        obj3.action = function action() {
-          if (null != id) {
-            let obj = outer1_1(outer1_2[14]);
-            obj = { muted: false };
-            const result = obj.updateGuildNotificationSettings(id, obj, id(outer1_2[21]).NotificationLabels.Unmuted);
+        obj3[0] = tmp6(11477);
+        const intl5 = tmp(1236).intl;
+        obj3[1] = intl5.string(tmp(1236).t.De0BTC);
+        obj3[2] = function action() {
+          if (null != guildId) {
+            const result = outer1_1(outer1_2[14]).updateGuildNotificationSettings(tmp, { muted: false }, guildId(outer1_2[21]).NotificationLabels.Unmuted);
+            const obj = outer1_1(outer1_2[14]);
           }
         };
         splice(1, 0, obj3);
       } else {
-        obj3.iconSource = tmp6(11452);
-        const intl4 = _require(1212).intl;
-        obj3.label = intl4.string(_require(1212).t.vRzp7P);
-        obj3.action = function action() {
+        obj3[0] = tmp6(11476);
+        const intl4 = tmp(1236).intl;
+        obj3[1] = intl4.string(tmp(1236).t.vRzp7P);
+        obj3[2] = function action() {
           let obj = outer1_1(outer1_2[18]);
-          obj = { guildId: id };
-          obj.openLazy(id(outer1_2[12])(outer1_2[19], outer1_2.paths), "muteSettings" + id, obj);
+          obj = { guildId };
+          obj.openLazy(guildId(outer1_2[12])(outer1_2[19], outer1_2.paths), "muteSettings" + guildId, obj);
         };
         splice(1, 0, obj3);
       }

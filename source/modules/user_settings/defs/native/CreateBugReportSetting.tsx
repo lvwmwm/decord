@@ -1,38 +1,35 @@
-// Module ID: 14520
-// Function ID: 110789
+// Module ID: 14545
+// Function ID: 14546
 // Name: toggle
-// Dependencies: [683, 685, 10337, 566, 477, 10099, 1212, 14498, 14513, 2]
+// Dependencies: [706, 708, 10358, 589, 500, 10120, 1236, 14523, 14538, 2]
 
-// Module 14520 (toggle)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 14545 (toggle)
+import refreshSourceMapCookie from "refreshSourceMapCookie";
 import createToggle from "createToggle";
 
 const require = arg1;
 createToggle = {
   useTitle() {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(require(1212) /* getSystemLocale */.t.aIkGJD);
+    const intl = require(1236) /* getSystemLocale */.intl;
+    return intl.string(require(1236) /* getSystemLocale */.t.aIkGJD);
   },
   parent: null,
   IconComponent: require("WrenchIcon").WrenchIcon,
   onValueChange: function handleCreateBugReportSettingToggle(arg0) {
-    const setDeveloperOptionSettings = require(685) /* setDeveloperOptionSettings */.setDeveloperOptionSettings;
-    const obj = {};
+    const setDeveloperOptionSettings = require(708) /* setDeveloperOptionSettings */.setDeveloperOptionSettings;
     if (arg0) {
-      obj.bugReporterEnabled = true;
-      const result = setDeveloperOptionSettings(obj);
-      importDefault(10337).initialize();
-      const obj3 = importDefault(10337);
+      const result = setDeveloperOptionSettings({ bugReporterEnabled: true });
+      importDefault(10358).initialize();
+      const obj2 = importDefault(10358);
     } else {
-      obj.bugReporterEnabled = false;
-      const result1 = setDeveloperOptionSettings(obj);
-      importDefault(10337).terminate(true);
-      const obj2 = importDefault(10337);
+      const result1 = setDeveloperOptionSettings({ bugReporterEnabled: false });
+      importDefault(10358).terminate(true);
+      const obj = importDefault(10358);
     }
   },
   useValue: function useCreateBugReportSettingToggleValue() {
-    const items = [_isNativeReflectConstruct];
-    return require(566) /* initialize */.useStateFromStores(items, () => outer1_3.isBugReporterEnabled);
+    const items = [refreshSourceMapCookie];
+    return require(589) /* initialize */.useStateFromStores(items, () => isBugReporterEnabled.isBugReporterEnabled);
   },
   useDescription: function useCreateBugReportSettingDescription() {
     return "Photo permission is required";
@@ -40,6 +37,6 @@ createToggle = {
   usePredicate: require("useBugReporterExperimentSettingPredicate").useBugReporterExperimentSettingPredicate
 };
 createToggle = createToggle.createToggle(createToggle);
-let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/user_settings/defs/native/CreateBugReportSetting.tsx");
+let result = require("showNotification").fileFinishedImporting("modules/user_settings/defs/native/CreateBugReportSetting.tsx");
 
 export default createToggle;

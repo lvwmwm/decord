@@ -1,24 +1,24 @@
-// Module ID: 10456
-// Function ID: 80634
+// Module ID: 10480
+// Function ID: 10481
 // Name: useLaunchPadType
-// Dependencies: [10455, 3838, 1282, 2]
+// Dependencies: [10479, 3862, 1306, 2]
 // Exports: default
 
-// Module 10456 (useLaunchPadType)
+// Module 10480 (useLaunchPadType)
 import { LaunchPadTypes } from "LAUNCH_PAD_SPRING_CONFIG";
 
-const result = require("_callSuper").fileFinishedImporting("modules/launchpad/native/useLaunchPadType.tsx");
+const result = require("create").fileFinishedImporting("modules/launchpad/native/useLaunchPadType.tsx");
 
 export default function useLaunchPadType() {
-  const LaunchPadModeSetting = require(3838) /* explicitContentFromProto */.LaunchPadModeSetting;
+  const LaunchPadModeSetting = require(3862) /* explicitContentFromProto */.LaunchPadModeSetting;
   const setting = LaunchPadModeSetting.useSetting();
-  if (require(1282) /* _callSuper */.LaunchPadMode.LAUNCH_PAD_DISABLED === setting) {
+  if (require(1306) /* create */.LaunchPadMode.LAUNCH_PAD_DISABLED === setting) {
     return LaunchPadTypes.DISABLED;
-  } else if (require(1282) /* _callSuper */.LaunchPadMode.LAUNCH_PAD_GESTURE_FULL_SCREEN === setting) {
+  } else if (tmp(1306).LaunchPadMode.LAUNCH_PAD_GESTURE_FULL_SCREEN === setting) {
     return LaunchPadTypes.GESTURE_FULL;
-  } else if (require(1282) /* _callSuper */.LaunchPadMode.LAUNCH_PAD_GESTURE_RIGHT_EDGE === setting) {
+  } else if (tmp(1306).LaunchPadMode.LAUNCH_PAD_GESTURE_RIGHT_EDGE === setting) {
     return LaunchPadTypes.GESTURE_EDGE;
-  } else if (require(1282) /* _callSuper */.LaunchPadMode.LAUNCH_PAD_PULL_TAB === setting) {
+  } else if (tmp(1306).LaunchPadMode.LAUNCH_PAD_PULL_TAB === setting) {
     return LaunchPadTypes.PULL_TAB;
   }
 };

@@ -1,100 +1,107 @@
-// Module ID: 11515
-// Function ID: 89498
+// Module ID: 11539
+// Function ID: 11540
 // Name: SpamMessageRequestHamActionSheet
-// Dependencies: [57, 31, 27, 1850, 33, 4165, 689, 566, 11510, 3866, 1212, 9148, 4133, 5221, 5220, 5534, 7611, 4578, 2]
+// Dependencies: [32, 19, 17, 1874, 21, 4189, 712, 589, 11534, 3890, 1236, 9172, 4157, 5243, 5242, 5552, 7634, 4600, 2]
 // Exports: default
 
-// Module 11515 (SpamMessageRequestHamActionSheet)
+// Module 11539 (SpamMessageRequestHamActionSheet)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
-import { View } from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import noop from "noop";
+import { View } from "Button";
+import mergeGuildAvatar from "mergeGuildAvatar";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_7;
-let closure_8;
+let error;
+let metroImportAll;
 const require = arg1;
-({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SURFACE_HIGH };
-_createForOfIteratorHelperLoose.header = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.container = { marginTop: require("_createForOfIteratorHelperLoose").space.PX_24, paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16 };
-let obj1 = { marginTop: require("_createForOfIteratorHelperLoose").space.PX_24, paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16 };
-_createForOfIteratorHelperLoose.buttonContainer = { marginTop: require("_createForOfIteratorHelperLoose").space.PX_24 };
-_createForOfIteratorHelperLoose.switch = { paddingHorizontal: 0 };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-const obj2 = { marginTop: require("_createForOfIteratorHelperLoose").space.PX_24 };
+({ jsx: error, jsxs: metroImportAll } = jsxProd);
+createCacheKey = { header: null, container: null, buttonContainer: null, switch: null };
+createCacheKey = { backgroundColor: require("Themes").colors.BACKGROUND_SURFACE_HIGH };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { marginTop: require("Themes").space.PX_24, paddingHorizontal: require("Themes").space.PX_16 };
+let obj1 = { marginTop: require("Themes").space.PX_24, paddingHorizontal: require("Themes").space.PX_16 };
+createCacheKey[2] = { marginTop: require("Themes").space.PX_24 };
+createCacheKey[3] = { paddingHorizontal: 0 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+const obj2 = { marginTop: require("Themes").space.PX_24 };
 const result = require("get ActivityIndicator").fileFinishedImporting("modules/message_request/native/spam/SpamMessageHamActionSheet.tsx");
 
 export default function SpamMessageRequestHamActionSheet(arg0) {
-  let View;
+  let c5;
   let dependencyMap;
   let importDefault;
   let isAcceptLoading;
   let isOptimisticAccepted;
   let require;
   ({ channel: require, onConfirm: importDefault, onCancel: dependencyMap } = arg0);
-  const tmp = _createForOfIteratorHelperLoose();
+  let first;
+  let React;
+  c5 = undefined;
+  const tmp = createCacheKey();
   const tmp2 = first(React.useState(false), 2);
   first = tmp2[0];
   React = tmp2[1];
-  let obj = require(566) /* initialize */;
-  const items = [_isNativeReflectConstruct];
+  let obj = require(589) /* initialize */;
+  const items = [mergeGuildAvatar];
   const stateFromStores = obj.useStateFromStores(items, () => outer1_6.getUser(recipientId.getRecipientId()));
-  let obj1 = require(11510) /* _createForOfIteratorHelperLoose */;
+  let obj1 = require(11534) /* useMessageRequestActions */;
   obj = {
     user: stateFromStores,
     onError() {
-      let obj = outer1_1(outer1_2[9]);
-      obj = { key: "MESSAGE_REQUEST_REQUEST_ERROR_ALERT_TITLE" };
-      const intl = outer1_0(outer1_2[10]).intl;
-      obj.content = intl.string(outer1_0(outer1_2[10]).t["EDYbS+"]);
-      obj.icon = outer1_1(outer1_2[11]);
+      let obj = callback(3890);
+      obj = { key: "MESSAGE_REQUEST_REQUEST_ERROR_ALERT_TITLE", content: null, icon: null };
+      const intl = recipientId(1236).intl;
+      obj[1] = intl.string(recipientId(1236).t["EDYbS+"]);
+      obj[2] = callback(9172);
       obj.open(obj);
     },
     onAcceptSuccess(arg0) {
-      outer1_1(outer1_2[12]).hideActionSheet();
+      callback(4157).hideActionSheet();
     }
   };
   const messageRequestActions = obj1.useMessageRequestActions(obj);
-  ({ acceptMessageRequest: View, isAcceptLoading, isOptimisticAccepted } = messageRequestActions);
+  ({ acceptMessageRequest: c5, isAcceptLoading, isOptimisticAccepted } = messageRequestActions);
   obj = {
     onDismiss() {
-      callback2();
-    }
+      dependencyMap();
+    },
+    children: null
   };
-  obj1 = {};
-  let intl = require(1212) /* getSystemLocale */.intl;
-  obj1.title = intl.string(require(1212) /* getSystemLocale */.t["9ty6yc"]);
-  obj1.trailing = callback(require(5534) /* ActionSheetCloseButton */.ActionSheetCloseButton, {
+  obj1 = { title: null, trailing: null, backgroundColor: null };
+  let intl = require(1236) /* getSystemLocale */.intl;
+  obj1[0] = intl.string(require(1236) /* getSystemLocale */.t["9ty6yc"]);
+  obj1[1] = callback(require(5552) /* ActionSheetCloseButton */.ActionSheetCloseButton, {
     onPress() {
       outer1_1(outer1_2[12]).hideActionSheet();
-      callback2();
+      dependencyMap();
     }
   });
-  obj1.backgroundColor = tmp.header;
-  const items1 = [callback(require(5220) /* RedesignBottomSheetTitleHeaderBase */.BottomSheetTitleHeader, obj1), ];
-  const obj3 = { style: tmp.container };
-  const obj4 = { style: tmp.switch };
-  const intl2 = require(1212) /* getSystemLocale */.intl;
-  obj4.label = intl2.string(require(1212) /* getSystemLocale */.t.ZhGpNQ);
-  obj4.value = first;
-  obj4.switchProps = { renderIosBackground: true };
-  obj4.onValueChange = function onValueChange(arg0) {
-    return callback3(arg0);
+  obj1[2] = tmp.header;
+  const items1 = [callback(require(5242) /* RedesignBottomSheetTitleHeaderBase */.BottomSheetTitleHeader, obj1), ];
+  const obj3 = { style: tmp.container, children: null };
+  const obj4 = { style: tmp.switch, label: null, value: null, switchProps: null, onValueChange: null };
+  const intl2 = require(1236) /* getSystemLocale */.intl;
+  obj4[1] = intl2.string(require(1236) /* getSystemLocale */.t.ZhGpNQ);
+  obj4[2] = first;
+  obj4[3] = { renderIosBackground: true };
+  obj4[4] = function onValueChange(arg0) {
+    return callback2(arg0);
   };
-  const items2 = [callback(require(7611) /* Form */.FormSwitchRow, obj4), ];
-  const obj5 = { style: tmp.buttonContainer };
+  const items2 = [callback(require(7634) /* Form */.FormSwitchRow, obj4), ];
+  const obj5 = { style: tmp.buttonContainer, children: null };
   const obj6 = {
     size: "md",
     onPress() {
       callback(first);
-      callback4(recipientId.id);
-    }
+      _undefined(recipientId.id);
+    },
+    text: null,
+    disabled: null,
+    loading: null
   };
-  const intl3 = require(1212) /* getSystemLocale */.intl;
-  obj6.text = intl3.string(require(1212) /* getSystemLocale */.t.olZgw5);
+  const intl3 = require(1236) /* getSystemLocale */.intl;
+  obj6[2] = intl3.string(require(1236) /* getSystemLocale */.t.olZgw5);
   let isUserProfileLoading = isAcceptLoading;
   if (!isAcceptLoading) {
     isUserProfileLoading = messageRequestActions.isUserProfileLoading;
@@ -102,15 +109,15 @@ export default function SpamMessageRequestHamActionSheet(arg0) {
   if (!isUserProfileLoading) {
     isUserProfileLoading = isOptimisticAccepted;
   }
-  obj6.disabled = isUserProfileLoading;
+  obj6[3] = isUserProfileLoading;
   if (!isAcceptLoading) {
     isAcceptLoading = isOptimisticAccepted;
   }
-  obj6.loading = isAcceptLoading;
-  obj5.children = callback(require(4578) /* Button */.Button, obj6);
-  items2[1] = callback(View, obj5);
-  obj3.children = items2;
-  items1[1] = closure_8(View, obj3);
-  obj.children = items1;
-  return closure_8(require(5221) /* Background */.BottomSheet, obj);
+  obj6[4] = isAcceptLoading;
+  obj5[1] = callback(require(4600) /* Button */.Button, obj6);
+  items2[1] = callback(c5, obj5);
+  obj3[1] = items2;
+  items1[1] = closure_8(c5, obj3);
+  obj[1] = items1;
+  return closure_8(require(5243) /* Background */.BottomSheet, obj);
 };

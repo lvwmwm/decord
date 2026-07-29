@@ -1,17 +1,17 @@
-// Module ID: 9364
-// Function ID: 73034
+// Module ID: 9388
+// Function ID: 9389
 // Name: __INTERNAL_VIEW_CONFIG
-// Dependencies: [110, 42, 2]
+// Dependencies: [106, 65, 2]
 
-// Module 9364 (__INTERNAL_VIEW_CONFIG)
+// Module 9388 (__INTERNAL_VIEW_CONFIG)
 import weakSet from "weakSet";
-import get from "get";
+import setRuntimeConfigProvider from "setRuntimeConfigProvider";
 
-let obj = { uiViewClassName: "EmojiPickerRowView", directEventTypes: { topPressEmoji: { registrationName: "onPressEmoji" }, topLongPressEmoji: { registrationName: "onLongPressEmoji" } } };
+let obj = { uiViewClassName: "EmojiPickerRowView", directEventTypes: { topPressEmoji: { registrationName: "onPressEmoji" }, topLongPressEmoji: { registrationName: "onLongPressEmoji" } }, validAttributes: null };
 obj = { rowData: true };
 const merged = Object.assign(weakSet.ConditionallyIgnoredEventHandlers({ onPressEmoji: true, onLongPressEmoji: true }));
-obj.validAttributes = obj;
-const value = get.get("EmojiPickerRowView", () => obj);
+obj[2] = obj;
+const value = setRuntimeConfigProvider.get("EmojiPickerRowView", () => obj);
 const result = require("set").fileFinishedImporting("../discord_common/js/packages/rtn-codegen/js/EmojiPickerRowViewNativeComponent.tsx");
 
 export default value;

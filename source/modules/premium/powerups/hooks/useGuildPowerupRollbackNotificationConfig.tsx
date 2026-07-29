@@ -1,61 +1,64 @@
-// Module ID: 11565
-// Function ID: 89938
+// Module ID: 11589
+// Function ID: 11590
 // Name: useGuildPowerupRollbackNotificationConfig
-// Dependencies: [4052, 566, 4056, 11566, 1334, 1212, 2231, 11568, 2]
+// Dependencies: [4076, 589, 4080, 11590, 1358, 1236, 2255, 11592, 2]
 // Exports: default
 
-// Module 11565 (useGuildPowerupRollbackNotificationConfig)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 11589 (useGuildPowerupRollbackNotificationConfig)
+import calculateAppliedBoosts from "calculateAppliedBoosts";
 
 const require = arg1;
 const result = require("VANITY_URL_POWERUP_SKU_ID").fileFinishedImporting("modules/premium/powerups/hooks/useGuildPowerupRollbackNotificationConfig.tsx");
 
 export default function useGuildPowerupRollbackNotificationConfig(guildId, location) {
   const _require = guildId;
-  let obj = _require(566);
-  const items = [_isNativeReflectConstruct];
+  let obj = _require(589);
+  const items = [calculateAppliedBoosts];
   const stateFromStores = obj.useStateFromStores(items, () => outer1_3.getStateForGuild(closure_0));
-  let tmp2;
-  if (null != stateFromStores) {
-    tmp2 = stateFromStores.allPowerups[_require(undefined, 4056).GUILD_POWERUP_MAX_FILE_SIZE_250_MB_SKU_ID];
+  let tmp4;
+  if (stateFromStores != null) {
+    tmp4 = stateFromStores.allPowerups[tmp(undefined, 4080).GUILD_POWERUP_MAX_FILE_SIZE_250_MB_SKU_ID];
   }
-  if (null != tmp2) {
-    const storeRemovalDate = tmp2.storeRemovalDate;
+  if (tmp4 != null) {
+    const storeRemovalDate = tmp4.storeRemovalDate;
   }
-  let obj1 = _require(11566);
   let tmp5 = null;
-  if (obj1.useShouldShowFileUploadRollback(guildId, location)) {
+  if (tmpResult.useShouldShowFileUploadRollback(guildId, location)) {
     tmp5 = null;
     if (null != storeRemovalDate) {
       let title;
-      if (null != tmp2) {
-        title = tmp2.title;
+      if (tmp4 != null) {
+        title = tmp4.title;
       }
       tmp5 = null;
       if (null != title) {
         let cost;
-        if (null != tmp2) {
-          cost = tmp2.cost;
+        if (tmp4 != null) {
+          cost = tmp4.cost;
         }
         tmp5 = null;
         if (null != cost) {
-          obj = { dismissibleContent: _require(1334).DismissibleContent.FILE_UPLOAD_POWERUP_ROLLBACK_NOTIFICATION };
-          const intl = _require(1212).intl;
-          obj = { dateString: importDefault(11568)(storeRemovalDate) };
-          obj.title = intl.formatToPlainString(importDefault(2231)["6e2ry1"], obj);
-          const intl2 = _require(1212).intl;
-          obj1 = { startDate: importDefault(11568)(storeRemovalDate), endDate: importDefault(11568)(storeRemovalDate) };
+          obj = { dismissibleContent: null, title: null, description: null };
+          obj[0] = tmp(1358).DismissibleContent.FILE_UPLOAD_POWERUP_ROLLBACK_NOTIFICATION;
+          const intl = tmp(1236).intl;
+          obj = { dateString: null };
+          obj[0] = importDefault(11592)(storeRemovalDate);
+          obj[1] = intl.formatToPlainString(importDefault(2255)["6e2ry1"], obj);
+          const intl2 = tmp(1236).intl;
+          const obj1 = { startDate: null, endDate: null, perkName: null, boostCount: null };
+          obj1[0] = importDefault(11592)(storeRemovalDate);
+          obj1[1] = importDefault(11592)(storeRemovalDate);
           let title1;
-          if (null != tmp2) {
-            title1 = tmp2.title;
+          if (tmp4 != null) {
+            title1 = tmp4.title;
           }
-          obj1.perkName = title1;
+          obj1[2] = title1;
           let cost1;
-          if (null != tmp2) {
-            cost1 = tmp2.cost;
+          if (tmp4 != null) {
+            cost1 = tmp4.cost;
           }
-          obj1.boostCount = cost1;
-          obj.description = intl2.formatToPlainString(importDefault(2231).jd8fki, obj1);
+          obj1[3] = cost1;
+          obj[2] = intl2.formatToPlainString(importDefault(2255).jd8fki, obj1);
           tmp5 = obj;
         }
       }

@@ -1,68 +1,44 @@
-// Module ID: 9446
-// Function ID: 73561
-// Name: _isNativeReflectConstruct
-// Dependencies: [7, 6, 15, 17, 18, 162, 9447, 9448, 2]
+// Module ID: 9470
+// Function ID: 9471
+// Name: prototype
+// Dependencies: [9471, 9472, 2]
 // Exports: emitCaptchaDistributionMetric, extractCaptchaPropsFromResponse
 
-// Module 9446 (_isNativeReflectConstruct)
-import CAPTCHA_SERVE_VOLUME_DISTRIBUTION_AGGREGATION_WINDOW_MS from "CAPTCHA_SERVE_VOLUME_DISTRIBUTION_AGGREGATION_WINDOW_MS";
-import closure_1 from "useCaptchaStore";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
+// Module 9470 (prototype)
 import useCaptchaStore from "useCaptchaStore";
-import { CAPTCHA_SERVE_VOLUME_DISTRIBUTION_AGGREGATION_WINDOW_MS as closure_8 } from "CAPTCHA_SERVE_VOLUME_DISTRIBUTION_AGGREGATION_WINDOW_MS";
-import importDefaultResult from "_wrapNativeSuper";
+import { CAPTCHA_SERVE_VOLUME_DISTRIBUTION_AGGREGATION_WINDOW_MS as closure_3 } from "CAPTCHA_SERVE_VOLUME_DISTRIBUTION_AGGREGATION_WINDOW_MS";
 
-let closure_5;
-let closure_6;
-let closure_7;
-function _isNativeReflectConstruct() {
-  let CAPTCHA_SERVE_VOLUME_DISTRIBUTION_AGGREGATION_WINDOW_MS = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return CAPTCHA_SERVE_VOLUME_DISTRIBUTION_AGGREGATION_WINDOW_MS;
-  }
-  const result = _isNativeReflectConstruct();
+let c0;
+let closure_1;
+let obj1;
+({ incrementCaptchaServeVolume: c0, flushCaptchaServeVolume: closure_1, isCaptchaStoreVolumeEmpty: obj1 } = useCaptchaStore);
+const prototype = function CaptchaCancelError() {
+  tmp = new tmp("Captcha cancelled", new.target);
+  // ThrowIfThisInitialized (0x7c)
+  return tmp;
+}.prototype;
+class prototype extends Error {
 }
-({ incrementCaptchaServeVolume: closure_5, flushCaptchaServeVolume: closure_6, isCaptchaStoreVolumeEmpty: closure_7 } = useCaptchaStore);
-const tmp4 = ((arg0) => {
-  class CaptchaCancelError {
-    constructor() {
-      self = this;
-      tmp = outer1_1(this, CaptchaCancelError);
-      items = ["Captcha cancelled"];
-      obj = outer1_3(CaptchaCancelError);
-      tmp2 = outer1_2;
-      if (outer1_9()) {
-        tmp4 = globalThis;
-        _Reflect = Reflect;
-        tmp5 = outer1_3;
-        constructResult = Reflect.construct(obj, items, outer1_3(self).constructor);
-      } else {
-        constructResult = obj.apply(self, items);
-      }
-      return tmp2(self, constructResult);
-    }
-  }
-  callback(CaptchaCancelError, arg0);
-  return CaptchaCancelError(CaptchaCancelError);
-})(require("_wrapNativeSuper")(Error));
-let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/captcha/SharedCaptchaUtils.tsx");
+const result = require("set").fileFinishedImporting("modules/captcha/SharedCaptchaUtils.tsx");
 
 export const CaptchaError = { CANCEL: "cancel", ERROR: "error", EXPIRED: "expired" };
 export const extractCaptchaPropsFromResponse = function extractCaptchaPropsFromResponse(body) {
-  obj = { captchaService: body.captcha_service, sitekey: body.captcha_sitekey, captchaSessionId: body.captcha_session_id, options: obj };
-  obj = { rqdata: body.captcha_rqdata, rqtoken: body.captcha_rqtoken, serveInvisible: tmp, userflow: body.user_flow };
-  const should_serve_invisible = body.should_serve_invisible;
+  let obj = { captchaService: body.captcha_service, sitekey: body.captcha_sitekey, captchaSessionId: body.captcha_session_id, options: null };
+  obj = { rqdata: body.captcha_rqdata, rqtoken: body.captcha_rqtoken, serveInvisible: null, userflow: null };
+  let flag = body.should_serve_invisible;
+  if (flag == null) {
+    flag = false;
+  }
+  obj[2] = flag;
+  obj[3] = body.user_flow;
+  obj[3] = obj;
   return obj;
 };
 export const emitCaptchaDistributionMetric = function emitCaptchaDistributionMetric(closure_7) {
-  if (callback3()) {
+  if (callback2()) {
     const _setTimeout = setTimeout;
-    const timerId = setTimeout(() => outer1_6(), closure_8);
+    const timerId = setTimeout(() => callback(), closure_3);
   }
-  callback2(closure_7);
+  callback(closure_7);
 };
-export const CaptchaCancelError = tmp4;
+export const CaptchaCancelError = prototype;

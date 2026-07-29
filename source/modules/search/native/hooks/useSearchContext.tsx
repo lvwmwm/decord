@@ -1,26 +1,15 @@
-// Module ID: 10079
-// Function ID: 77721
-// Name: getChannelDetailsSearchContext
-// Dependencies: [31, 1348, 653, 44, 624, 2]
-// Exports: useChannelDetailsSearchContext, useGuildChannelSearchContext, useGuildSearchContext
+// Module ID: 10100
+// Function ID: 10101
+// Name: useGuildSearchContext
+// Dependencies: [19, 1372, 676, 38, 647, 2]
+// Exports: getChannelDetailsSearchContext, useChannelDetailsSearchContext, useGuildChannelSearchContext, useGuildSearchContext
 
-// Module 10079 (getChannelDetailsSearchContext)
-import result from "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 10100 (useGuildSearchContext)
+import noop from "noop";
+import ensureGuildLoaded from "ensureGuildLoaded";
 import { SearchTypes } from "ME";
 
 const require = arg1;
-function getChannelDetailsSearchContext(channelId, guildId, isThreadResult) {
-  if (isThreadResult) {
-    importDefault(44)(null != guildId, "[useChannelDetailsSearchContext] Thread must have a guild id");
-    let obj = { type: SearchTypes.THREAD, guildId, channelId };
-  } else if (null == guildId) {
-    obj = { type: SearchTypes.CHANNEL, channelId };
-  } else {
-    obj = { type: SearchTypes.GUILD_CHANNEL, guildId, channelId };
-  }
-  return obj;
-}
 const result = require("ME").fileFinishedImporting("modules/search/native/hooks/useSearchContext.tsx");
 
 export const useGuildSearchContext = function useGuildSearchContext(guildId) {
@@ -34,19 +23,58 @@ export const useGuildChannelSearchContext = function useGuildChannelSearchContex
   const items = [arg0, arg1];
   return React.useMemo(() => ({ type: outer1_5.GUILD_CHANNEL, guildId: closure_0, channelId: closure_1 }), items);
 };
-export { getChannelDetailsSearchContext };
+export const getChannelDetailsSearchContext = function getChannelDetailsSearchContext(id, guildId, isThreadResult) {
+  if (isThreadResult) {
+    importDefault(38)(null != guildId, "[useChannelDetailsSearchContext] Thread must have a guild id");
+    let obj = { type: null, guildId: null, channelId: null };
+    obj[0] = SearchTypes.THREAD;
+    obj[1] = guildId;
+    obj[2] = id;
+  } else if (null == guildId) {
+    obj = { type: null, channelId: null };
+    obj[0] = SearchTypes.CHANNEL;
+    obj[1] = id;
+  } else {
+    obj = { type: null, guildId: null, channelId: null };
+    obj[0] = SearchTypes.GUILD_CHANNEL;
+    obj[1] = guildId;
+    obj[2] = id;
+  }
+  return obj;
+};
 export const useChannelDetailsSearchContext = function useChannelDetailsSearchContext(channelId, guildId) {
   const _require = channelId;
   let closure_1 = guildId;
-  const items = [_isNativeReflectConstruct];
+  const items = [ensureGuildLoaded];
   stateFromStores = _require(stateFromStores[4]).useStateFromStores(items, () => {
     const channel = outer1_4.getChannel(closure_0);
-    let isThreadResult;
-    if (null != channel) {
-      isThreadResult = channel.isThread();
+    let flag;
+    if (channel != null) {
+      flag = channel.isThread();
     }
-    return null != isThreadResult && isThreadResult;
+    if (flag == null) {
+      flag = false;
+    }
+    return flag;
   });
   const items1 = [channelId, guildId, stateFromStores];
-  return React.useMemo(() => outer1_6(closure_0, closure_1, stateFromStores), items1);
+  return React.useMemo(() => {
+    if (stateFromStores) {
+      guildId(stateFromStores[3])(null != tmp2, "[useChannelDetailsSearchContext] Thread must have a guild id");
+      let obj = { type: null, guildId: null, channelId: null };
+      obj[0] = outer1_5.THREAD;
+      obj[1] = tmp2;
+      obj[2] = tmp;
+    } else if (null == tmp2) {
+      obj = { type: null, channelId: null };
+      obj[0] = outer1_5.CHANNEL;
+      obj[1] = tmp;
+    } else {
+      obj = { type: null, guildId: null, channelId: null };
+      obj[0] = outer1_5.GUILD_CHANNEL;
+      obj[1] = tmp2;
+      obj[2] = tmp;
+    }
+    return obj;
+  }, items1);
 };

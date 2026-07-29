@@ -1,22 +1,22 @@
-// Module ID: 9777
-// Function ID: 75971
+// Module ID: 9799
+// Function ID: 9800
 // Name: getCurrentUserProfile
-// Dependencies: [1850, 5878, 2]
+// Dependencies: [1874, 5896, 2]
 // Exports: default
 
-// Module 9777 (getCurrentUserProfile)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_1 from "_isNativeReflectConstruct";
+// Module 9799 (getCurrentUserProfile)
+import mergeGuildAvatar from "mergeGuildAvatar";
+import createUserWidgetFromServer from "createUserWidgetFromServer";
 
 const result = require("set").fileFinishedImporting("modules/user_profile/utils/getCurrentUserProfile.tsx");
 
-export default function getCurrentUserProfile(arg0) {
+export default function getCurrentUserProfile(guildId) {
   let id = currentUser.getCurrentUser();
   if (null == id) {
     return null;
-  } else if (null != arg0) {
+  } else if (null != guildId) {
     id = id.id;
-    let guildMemberProfile = authStore.getGuildMemberProfile(id, arg0);
+    let guildMemberProfile = authStore.getGuildMemberProfile(id, guildId);
   } else {
     guildMemberProfile = authStore.getUserProfile(id.id);
   }

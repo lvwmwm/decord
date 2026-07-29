@@ -1,93 +1,103 @@
-// Module ID: 13719
-// Function ID: 105201
+// Module ID: 13740
+// Function ID: 13741
 // Name: UserSettingsEditGuildProfile
-// Dependencies: [31, 27, 7913, 1850, 33, 4165, 689, 5497, 5517, 566, 13720, 9781, 7959, 13722, 5198, 5548, 9083, 4133, 13724, 1935, 13725, 2]
+// Dependencies: [19, 17, 7938, 1874, 21, 4189, 712, 5515, 5535, 589, 13741, 9803, 7984, 13743, 5220, 5566, 9107, 4157, 13745, 1959, 13746, 2]
 // Exports: default
 
-// Module 13719 (UserSettingsEditGuildProfile)
-import result from "result";
-import get_ActivityIndicator from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_6 from "_isNativeReflectConstruct";
-import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+// Module 13740 (UserSettingsEditGuildProfile)
+import asyncRequireImpl from "asyncRequireImpl";
+import get_ActivityIndicator from "ACTION_SHEET_HEIGHT_HALF";
+import handleFormOpen from "handleFormOpen";
+import mergeGuildAvatar from "mergeGuildAvatar";
+import jsxProd from "set";
+import createCacheKey from "createCacheKey";
 
 let StyleSheet;
-let closure_4;
-let closure_7;
-let closure_8;
+let c4;
+let error;
+let metroImportAll;
 const require = arg1;
-({ View: closure_4, StyleSheet } = get_ActivityIndicator);
-({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SURFACE_HIGH, borderRadius: require("_createForOfIteratorHelperLoose").radii.none, borderTopWidth: StyleSheet.hairlineWidth, borderBottomWidth: StyleSheet.hairlineWidth, borderColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWEST, overflow: "hidden" };
-_createForOfIteratorHelperLoose.guildSelector = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/user_settings/profiles/native/UserSettingsEditGuildProfile.tsx");
+({ View: c4, StyleSheet } = get_ActivityIndicator);
+({ jsx: error, jsxs: metroImportAll } = jsxProd);
+createCacheKey = { guildSelector: null };
+createCacheKey = { backgroundColor: require("Themes").colors.BACKGROUND_SURFACE_HIGH, borderRadius: require("Themes").radii.none, borderTopWidth: StyleSheet.hairlineWidth, borderBottomWidth: StyleSheet.hairlineWidth, borderColor: require("Themes").colors.BACKGROUND_BASE_LOWEST, overflow: "hidden" };
+createCacheKey[0] = createCacheKey;
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+const result = require("handleFormOpen").fileFinishedImporting("modules/user_settings/profiles/native/UserSettingsEditGuildProfile.tsx");
 
 export default function UserSettingsEditGuildProfile() {
   function onSelectGuild(id) {
     resetPending();
     stateFromStores(resetPending[11]).setCurrentGuild(id.id);
   }
-  let tmp = _createForOfIteratorHelperLoose();
+  let tmp = createCacheKey();
   let obj = stateFromStores(resetPending[9]);
-  const items = [closure_6];
-  stateFromStores = obj.useStateFromStores(items, () => outer1_6.getCurrentUser());
-  const tmp4 = guild(resetPending[10])();
-  guild = tmp4.guild;
-  resetPending = tmp4.resetPending;
+  const items = [mergeGuildAvatar];
+  stateFromStores = obj.useStateFromStores(items, () => currentUser.getCurrentUser());
+  const tmp7 = guild(resetPending[10])();
+  guild = tmp7.guild;
+  resetPending = tmp7.resetPending;
   let obj1 = stateFromStores(resetPending[9]);
-  const items1 = [_isNativeReflectConstruct];
-  const React = obj1.useStateFromStores(items1, () => outer1_5.showNotice());
+  const items1 = [handleFormOpen];
+  const React = obj1.useStateFromStores(items1, () => handleFormOpen.showNotice());
   const items2 = [stateFromStores, guild];
   const effect = React.useEffect(() => {
+    let obj = stateFromStores;
     let tmp = null != stateFromStores;
     if (tmp) {
       tmp = null != guild;
     }
     if (tmp) {
-      let obj = stateFromStores(resetPending[11]);
-      obj.setCurrentGuild(guild.id);
-      obj = { guildId: guild.id, dispatchWait: true };
-      guild(resetPending[12])(stateFromStores.id, stateFromStores.getAvatarURL(guild.id, 80), obj);
+      stateFromStores(resetPending[11]).setCurrentGuild(guild.id);
+      const obj2 = stateFromStores(resetPending[11]);
+      obj = { guildId: null, dispatchWait: true };
+      obj[0] = guild.id;
+      guild(resetPending[12])(obj.id, obj.getAvatarURL(guild.id, 80), obj);
       const tmp8 = guild(resetPending[12]);
     }
   }, items2);
   if (null != stateFromStores) {
     if (null != guild) {
-      obj = { value: tmp2(guild(resetPending[8]).USER_SETTINGS_GUILD_PROFILE).analyticsLocations };
-      obj = { style: tmp.guildSelector };
-      obj1 = {};
-      const obj2 = { guild, size: stateFromStores(resetPending[15]).GuildIconSizes.XSMALL };
-      obj1.icon = callback(guild(resetPending[15]), obj2);
-      obj1.label = guild.name;
-      obj1.arrow = true;
-      obj1.onPress = function onPress() {
+      obj = { value: null, children: null };
+      obj[0] = tmp4(guild(resetPending[8]).USER_SETTINGS_GUILD_PROFILE).analyticsLocations;
+      obj = { style: null, children: null };
+      obj[0] = tmp.guildSelector;
+      obj1 = { icon: null, label: null, arrow: true, onPress: null };
+      let obj2 = { guild: null, size: null };
+      obj2[0] = guild;
+      let tmp2Result = tmp2(tmp3[15]);
+      obj2[1] = tmp5(tmp3[15]).GuildIconSizes.XSMALL;
+      obj1[0] = callback(tmp2Result, obj2);
+      obj1[1] = guild.name;
+      obj1[3] = function onPress() {
         guild(resetPending[16])({
           onConfirm() {
-            let tmp = null != outer1_0;
-            if (tmp) {
-              tmp = null != outer1_1;
+            let tmp2 = null != closure_0;
+            if (tmp2) {
+              tmp2 = null != closure_1;
             }
-            if (tmp) {
-              let obj = guild(resetPending[17]);
-              obj = { user: outer1_0, selectedGuild: outer1_1, onSelectGuild: outer1_4 };
-              obj.openLazy(stateFromStores(resetPending[19])(resetPending[18], resetPending.paths), "GuildSelectComponentActionSheet", obj);
+            if (tmp2) {
+              let obj = outer1_1(outer1_2[17]);
+              obj = { user: null, selectedGuild: null, onSelectGuild: null };
+              obj[0] = closure_0;
+              obj[1] = closure_1;
+              obj[2] = closure_4;
+              obj.openLazy(outer1_0(outer1_2[19])(outer1_2[18], outer1_2.paths), "GuildSelectComponentActionSheet", obj);
             }
           },
-          hasEdits: result,
+          hasEdits: asyncRequireImpl,
           resetPending
         });
       };
-      obj.children = callback(stateFromStores(resetPending[14]).TableRow, obj1);
+      obj[1] = callback(tmp5(tmp3[14]).TableRow, obj1);
       const items3 = [callback(onSelectGuild, obj), ];
-      const obj3 = { currentUser: stateFromStores };
+      const obj3 = { currentUser: null };
+      obj3[0] = stateFromStores;
       const _HermesInternal = HermesInternal;
-      const tmp12 = guild(resetPending[15]);
-      items3[1] = callback(guild(resetPending[20]), obj3, "" + stateFromStores.id + "-" + guild.id);
-      obj.children = items3;
-      return callback2(stateFromStores(resetPending[7]).AnalyticsLocationProvider, obj);
+      tmp2Result = tmp2(tmp3[20]);
+      items3[1] = callback(tmp2Result, obj3, "" + stateFromStores.id + "-" + guild.id);
+      obj[1] = items3;
+      return callback2(tmp5(tmp3[7]).AnalyticsLocationProvider, obj);
     }
   }
   return callback(guild(resetPending[13]), {});

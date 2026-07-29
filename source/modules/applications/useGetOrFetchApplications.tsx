@@ -1,17 +1,19 @@
-// Module ID: 5503
-// Function ID: 46869
+// Module ID: 5521
+// Function ID: 5522
 // Name: useGetOrFetchApplications
-// Dependencies: [31, 4202, 620, 5498, 22, 1327, 566, 2]
-// Exports: useGetOrFetchApplication
+// Dependencies: [19, 4226, 643, 5516, 12, 1351, 589, 2]
+// Exports: default, useGetOrFetchApplication
 
-// Module 5503 (useGetOrFetchApplications)
-import result from "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 5521 (useGetOrFetchApplications)
+import noop from "noop";
+import addApplication from "addApplication";
 
 const require = arg1;
-function useGetOrFetchApplications(arg0) {
-  let flag = arg1;
+const result = require("shallowEqual").fileFinishedImporting("modules/applications/useGetOrFetchApplications.tsx");
+
+export default function useGetOrFetchApplications(arg0) {
   const _require = arg0;
+  let flag = arg1;
   if (arg1 === undefined) {
     flag = true;
   }
@@ -21,30 +23,27 @@ function useGetOrFetchApplications(arg0) {
   const effect = React.useEffect(() => {
     let tmp = flag;
     if (flag) {
-      tmp = !lib(ref[2]).areArraysShallowEqual(lib, ref.current);
-      const obj = lib(ref[2]);
+      tmp = !items1(ref[2]).areArraysShallowEqual(items1, ref.current);
+      const obj = items1(ref[2]);
     }
     if (tmp) {
       const obj2 = flag(ref[3]);
-      const found = flag(ref[4])(lib).filter(lib(ref[5]).isNotNullish);
-      const arr = flag(ref[4])(lib);
+      const found = flag(ref[4])(items1).filter(items1(ref[5]).isNotNullish);
+      const arr = flag(ref[4])(items1);
       const applications = obj2.fetchApplications(found.uniq().value(), false);
-      ref.current = lib;
+      ref.current = items1;
       const iter = found.uniq();
     }
   }, items);
-  const items1 = [_isNativeReflectConstruct];
-  return _require(566).useStateFromStoresArray(items1, () => lib.map((applicationId) => {
+  const items1 = [addApplication];
+  return _require(589).useStateFromStoresArray(items1, () => items1.map((arg0) => {
     let application;
-    if (null != applicationId) {
-      application = outer2_4.getApplication(applicationId);
+    if (null != arg0) {
+      application = application.getApplication(arg0);
     }
     return application;
   }));
-}
-const result = require("shallowEqual").fileFinishedImporting("modules/applications/useGetOrFetchApplications.tsx");
-
-export default useGetOrFetchApplications;
+};
 export const useGetOrFetchApplication = function useGetOrFetchApplication(applicationId, fetchesApplication) {
   let flag = fetchesApplication;
   if (fetchesApplication === undefined) {
@@ -56,5 +55,33 @@ export const useGetOrFetchApplication = function useGetOrFetchApplication(applic
   } else {
     items1 = [];
   }
-  return useGetOrFetchApplications(items1, flag)[0];
+  if (flag === undefined) {
+    flag = true;
+  }
+  let dependencyMap;
+  dependencyMap = React.useRef([]);
+  const items2 = [items1, flag];
+  const effect = React.useEffect(() => {
+    let tmp = flag;
+    if (flag) {
+      tmp = !items1(ref[2]).areArraysShallowEqual(items1, ref.current);
+      const obj = items1(ref[2]);
+    }
+    if (tmp) {
+      const obj2 = flag(ref[3]);
+      const found = flag(ref[4])(items1).filter(items1(ref[5]).isNotNullish);
+      const arr = flag(ref[4])(items1);
+      const applications = obj2.fetchApplications(found.uniq().value(), false);
+      ref.current = items1;
+      const iter = found.uniq();
+    }
+  }, items2);
+  const items3 = [addApplication];
+  return items1(589).useStateFromStoresArray(items3, () => items1.map((arg0) => {
+    let application;
+    if (null != arg0) {
+      application = application.getApplication(arg0);
+    }
+    return application;
+  }))[0];
 };

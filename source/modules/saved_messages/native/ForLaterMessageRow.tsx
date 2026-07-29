@@ -1,11 +1,11 @@
-// Module ID: 9930
-// Function ID: 76740
+// Module ID: 9952
+// Function ID: 9953
 // Name: ForLaterMessageRow
-// Dependencies: [31, 33, 4101, 4165, 689, 3838, 7690, 9266, 477, 2]
+// Dependencies: [19, 21, 4125, 4189, 712, 3862, 7713, 9290, 500, 2]
 // Exports: ForLaterMessageRow
 
-// Module 9930 (ForLaterMessageRow)
-import result from "result";
+// Module 9952 (ForLaterMessageRow)
+import noop from "noop";
 import { jsx } from "jsxProd";
 
 const require = arg1;
@@ -15,6 +15,10 @@ export const ForLaterMessageRow = function ForLaterMessageRow(lineClamp) {
   let maxHeight;
   let message;
   lineClamp = lineClamp.lineClamp;
+  let importDefault;
+  let setting;
+  let setting1;
+  let setting2;
   ({ message, maxHeight } = lineClamp);
   let obj = lineClamp(setting[3]);
   obj = { seeMoreLabelColor: importDefault(setting[4]).colors.TEXT_DEFAULT };
@@ -22,30 +26,31 @@ export const ForLaterMessageRow = function ForLaterMessageRow(lineClamp) {
   const RenderEmbeds = lineClamp(setting[5]).RenderEmbeds;
   setting = RenderEmbeds.getSetting();
   const InlineEmbedMedia = lineClamp(setting[5]).InlineEmbedMedia;
-  const setting1 = InlineEmbedMedia.getSetting();
+  setting1 = InlineEmbedMedia.getSetting();
   const InlineAttachmentMedia = lineClamp(setting[5]).InlineAttachmentMedia;
-  const setting2 = InlineAttachmentMedia.getSetting();
+  setting2 = InlineAttachmentMedia.getSetting();
   const items = [setting, setting1, setting2];
   const memo = setting1.useMemo(() => {
-    let tmp = lib(setting[6]);
-    tmp = new tmp();
-    const obj = { renderEmbeds: setting, inlineEmbedMedia: setting1, inlineAttachmentMedia: setting2, renderReplies: false, renderExecutedCommands: false, animateEmoji: false, renderGiftCode: false, renderActivityInstanceEmbed: false, renderActivityInviteEmbed: false, renderThreadEmbeds: false, renderForumPostActions: false, ignoreMentioned: true, shouldDisableInteractiveComponents: true };
-    tmp.setOptions(obj);
-    return tmp;
+    let obj = new lib(setting[6])();
+    obj = { renderEmbeds: setting, inlineEmbedMedia: setting1, inlineAttachmentMedia: setting2, renderReplies: false, renderExecutedCommands: false, animateEmoji: false, renderGiftCode: false, renderActivityInstanceEmbed: false, renderActivityInviteEmbed: false, renderThreadEmbeds: false, renderForumPostActions: false, ignoreMentioned: true, shouldDisableInteractiveComponents: true };
+    obj.setOptions(obj);
+    return obj;
   }, items);
   obj = {
     pointerEvents: "none",
     horizontalOffset: 0,
     modifyRow(arg0) {
       if (null != lineClamp) {
-        const obj = { numberOfLines: lineClamp, expandable: lineClamp(setting[8]).isIOS() };
+        const obj = { numberOfLines: null, expandable: null, seeMoreLabel: null, seeMoreLabelColor: null };
+        obj[0] = tmp;
+        obj[1] = lineClamp(setting[8]).isIOS();
         const obj2 = lineClamp(setting[8]);
         let str = "";
         if (obj3.isIOS()) {
           str = "...";
         }
-        obj.seeMoreLabel = str;
-        obj.seeMoreLabelColor = lib.seeMoreLabelColor;
+        obj[2] = str;
+        obj[3] = lib.seeMoreLabelColor;
         arg0.truncation = obj;
         obj3 = lineClamp(setting[8]);
       }

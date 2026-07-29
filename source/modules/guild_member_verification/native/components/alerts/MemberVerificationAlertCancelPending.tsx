@@ -1,18 +1,18 @@
-// Module ID: 9131
-// Function ID: 71627
+// Module ID: 9155
+// Function ID: 9156
 // Name: MemberVerificationAlertCancelPending
-// Dependencies: [31, 33, 9132, 9128, 1212, 4578, 2]
+// Dependencies: [19, 21, 9156, 9152, 1236, 4600, 2]
 // Exports: default
 
-// Module 9131 (MemberVerificationAlertCancelPending)
-import result from "result";
+// Module 9155 (MemberVerificationAlertCancelPending)
+import noop from "noop";
 import jsxProd from "jsxProd";
 
-let closure_4;
-let closure_5;
+let c4;
+let c5;
 let closure_6;
 const require = arg1;
-({ jsx: closure_4, Fragment: closure_5, jsxs: closure_6 } = jsxProd);
+({ jsx: c4, Fragment: c5, jsxs: closure_6 } = jsxProd);
 let result = require("_fetchGuildJoinRequests").fileFinishedImporting("modules/guild_member_verification/native/components/alerts/MemberVerificationAlertCancelPending.tsx");
 
 export default function MemberVerificationAlertCancelPending(guildId) {
@@ -21,41 +21,35 @@ export default function MemberVerificationAlertCancelPending(guildId) {
   let subtitleText;
   guildId = guildId.guildId;
   ({ confirmText, subtitleText, onClose } = guildId);
-  let obj = { guildId: 0, confirmText: 0, subtitleText: 0, onClose: 0 };
-  Object.setPrototypeOf(null);
-  const merged = Object.assign(guildId, obj);
+  const merged = Object.assign(guildId, Object.create(null));
   const items = [guildId, onClose];
   const callback = React.useCallback(() => {
-    if (null != onClose) {
-      onClose();
+    if (onClose != null) {
+      tmp();
     }
     const result = onClose(outer1_2[2]).removeGuildJoinRequest(guildId);
   }, items);
-  obj = {};
+  let obj = {};
   const merged1 = Object.assign(merged);
-  const intl = guildId(1212).intl;
-  obj["header"] = intl.string(guildId(1212).t.KYiN1Q);
-  if (null == subtitleText) {
-    const intl2 = guildId(1212).intl;
-    subtitleText = intl2.string(guildId(1212).t.nQHxqm);
+  const intl = guildId(1236).intl;
+  obj.header = intl.string(guildId(1236).t.KYiN1Q);
+  if (subtitleText == null) {
+    const intl2 = tmp7(1236).intl;
+    subtitleText = intl2.string(tmp7(1236).t.nQHxqm);
   }
-  obj["subtitle"] = subtitleText;
-  obj = {};
-  const obj1 = { variant: "destructive" };
-  if (null == confirmText) {
-    const intl3 = guildId(1212).intl;
-    confirmText = intl3.string(guildId(1212).t.OzHPde);
+  obj.subtitle = subtitleText;
+  if (confirmText == null) {
+    const intl3 = tmp7(1236).intl;
+    confirmText = intl3.string(tmp7(1236).t.OzHPde);
   }
-  obj1.text = confirmText;
-  obj1.onPress = callback;
-  const items1 = [callback(guildId(4578).Button, obj1), ];
-  const obj2 = {};
-  const intl4 = guildId(1212).intl;
-  obj2.text = intl4.string(guildId(1212).t.bANR0R);
-  obj2.variant = "secondary";
-  obj2.onPress = onClose;
-  items1[1] = callback(guildId(4578).Button, obj2);
-  obj.children = items1;
-  obj["buttons"] = closure_6(closure_5, obj);
-  return callback(onClose(9128), obj);
+  obj = { children: null };
+  const items1 = [closure_4(guildId(4600).Button, { variant: "destructive", text: confirmText, onPress: callback }), ];
+  obj = { text: null, variant: "secondary", onPress: null };
+  const intl4 = tmp7(1236).intl;
+  obj[0] = intl4.string(guildId(1236).t.bANR0R);
+  obj[2] = onClose;
+  items1[1] = closure_4(guildId(4600).Button, obj);
+  obj[0] = items1;
+  obj.buttons = closure_6(closure_5, obj);
+  return closure_4(onClose(9152), obj);
 };

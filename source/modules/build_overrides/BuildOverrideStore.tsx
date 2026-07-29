@@ -1,117 +1,72 @@
-// Module ID: 10444
-// Function ID: 80469
-// Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 4081, 686, 566, 2]
+// Module ID: 10468
+// Function ID: 10469
+// Name: getCurrentBuildOverride
+// Dependencies: [4105, 709, 589, 2]
 
-// Module 10444 (_isNativeReflectConstruct)
-import dispatcher from "dispatcher";
-import initialize from "initialize";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
+// Module 10468 (getCurrentBuildOverride)
+import { Store } from "initialize";
 
 const require = arg1;
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
-  }
-  const result = _isNativeReflectConstruct();
-}
 let obj = { NotResolved: 0, [0]: "NotResolved", Resolving: 1, [1]: "Resolving", Resolved: 2, [2]: "Resolved", Invalid: 3, [3]: "Invalid" };
 const NotResolved = obj.NotResolved;
-let c10 = null;
-let closure_11 = {};
-let tmp2 = ((Store) => {
-  class BuildOverrideStore {
-    constructor() {
-      self = this;
-      tmp = outer1_3(this, BuildOverrideStore);
-      obj = outer1_6(BuildOverrideStore);
-      tmp2 = outer1_5;
-      if (outer1_12()) {
-        tmp6 = globalThis;
-        _Reflect = Reflect;
-        tmp7 = outer1_6;
-        tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, outer1_6(self).constructor);
-      } else {
-        tmp3 = arguments;
-        tmp4 = arguments;
-        constructResult = obj(...arguments);
-      }
-      return tmp2(self, constructResult);
-    }
+let c5 = null;
+let closure_6 = {};
+class BuildOverrideStore extends Store {
+}
+const prototype = BuildOverrideStore.prototype;
+prototype["getCurrentBuildOverride"] = function getCurrentBuildOverride() {
+  if (Resolving === obj.NotResolved) {
+    Resolving = obj.Resolving;
+    obj = require(4105) /* Version */;
+    const buildOverride = obj.getBuildOverride();
+    buildOverride.then((overrides) => {
+      let obj = callback(table[1]);
+      obj = { type: "CURRENT_BUILD_OVERRIDE_RESOLVED", overrides };
+      obj.dispatch(obj);
+    });
   }
-  callback2(BuildOverrideStore, Store);
-  let obj = {
-    key: "getCurrentBuildOverride",
-    value() {
-      (function resolveCurrentOverrideIfNecessary() {
-        if (outer2_9 === outer2_8.NotResolved) {
-          outer2_9 = outer2_8.Resolving;
-          const buildOverride = BuildOverrideStore(outer2_2[5]).getBuildOverride();
-          buildOverride.then((overrides) => {
-            let obj = outer3_1(outer3_2[6]);
-            obj = { type: "CURRENT_BUILD_OVERRIDE_RESOLVED", overrides };
-            obj.dispatch(obj);
-          });
-          let obj = BuildOverrideStore(outer2_2[5]);
-        }
-      })();
-      return { state: outer1_9, overrides: outer1_10 };
+  obj = { state: Resolving, overrides: c5 };
+  return obj;
+};
+prototype["getBuildOverride"] = function getBuildOverride(target) {
+  const _require = target;
+  if (!(target in obj1)) {
+    let obj = _require(4105);
+    const validateURLResult = obj.validateURL(target);
+    if (null != validateURLResult) {
+      obj = {};
+      const merged = Object.assign(obj1);
+      obj = { url: null, validatedURL: null, payload: null, state: null };
+      obj[0] = target;
+      obj[1] = validateURLResult.url;
+      const _String = String;
+      obj[2] = String(validateURLResult.payload);
+      obj[3] = obj.Resolving;
+      obj[target] = obj;
+      obj1 = obj;
+      const buildOverrideMeta = tmp(4105).getBuildOverrideMeta(validateURLResult.url);
+      buildOverrideMeta.then((override) => {
+        let obj = outer1_1(outer1_2[1]);
+        obj = { type: "BUILD_OVERRIDE_RESOLVED", url: closure_0, override };
+        obj.dispatch(obj);
+      });
+      const tmpResult = tmp(4105);
+    } else {
+      obj1 = {};
+      const merged1 = Object.assign(obj1);
+      const obj2 = { url: null, state: null };
+      obj2[0] = target;
+      obj2[1] = obj.Invalid;
+      obj1[target] = obj2;
     }
-  };
-  const items = [obj, , ];
-  obj = {
-    key: "getBuildOverride",
-    value(url) {
-      (function resolveBuildOverrideIfNecessary(url) {
-        let closure_0 = url;
-        if (!(url in outer2_11)) {
-          let obj = BuildOverrideStore(outer2_2[5]);
-          const validateURLResult = obj.validateURL(url);
-          if (null != validateURLResult) {
-            obj = {};
-            const merged = Object.assign(outer2_11);
-            obj = { url, validatedURL: validateURLResult.url };
-            const _String = String;
-            obj.payload = String(validateURLResult.payload);
-            obj.state = outer2_8.Resolving;
-            obj[url] = obj;
-            outer2_11 = obj;
-            const buildOverrideMeta = BuildOverrideStore(outer2_2[5]).getBuildOverrideMeta(validateURLResult.url);
-            buildOverrideMeta.then((override) => {
-              let obj = outer3_1(outer3_2[6]);
-              obj = { type: "BUILD_OVERRIDE_RESOLVED", url: closure_0, override };
-              obj.dispatch(obj);
-            });
-            const obj6 = BuildOverrideStore(outer2_2[5]);
-          } else {
-            const obj1 = {};
-            const merged1 = Object.assign(outer2_11);
-            const obj2 = { url, state: outer2_8.Invalid };
-            obj1[url] = obj2;
-            outer2_11 = obj1;
-          }
-        }
-      })(url);
-      return outer1_11[url];
-    }
-  };
-  items[1] = obj;
-  obj = {
-    key: "getBuildOverrides",
-    value() {
-      return outer1_11;
-    }
-  };
-  items[2] = obj;
-  return callback(BuildOverrideStore, items);
-})(require("initialize").Store);
-tmp2.displayName = "BuildOverrideStore";
+    tmp = _require;
+  }
+  return obj1[target];
+};
+prototype["getBuildOverrides"] = function getBuildOverrides() {
+  return closure_6;
+};
+BuildOverrideStore.displayName = "BuildOverrideStore";
 obj = {
   BUILD_OVERRIDE_RESOLVED: function handleBuildOverrideResolved(arg0) {
     let override;
@@ -126,8 +81,8 @@ obj = {
     const merged = Object.assign(obj);
     obj = {};
     const merged1 = Object.assign(obj[url]);
-    obj["state"] = Resolved;
-    obj["override"] = override;
+    obj.state = Resolved;
+    obj.override = override;
     obj[url] = obj;
   },
   CURRENT_BUILD_OVERRIDE_RESOLVED: function handleCurrentBuildOverrideResolved(overrides) {
@@ -135,8 +90,8 @@ obj = {
     overrides = overrides.overrides;
   }
 };
-tmp2 = new tmp2(require("dispatcher"), obj);
-let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/build_overrides/BuildOverrideStore.tsx");
+const buildOverrideStore = new BuildOverrideStore(require("dispatcher"), obj);
+const result = require("initialize").fileFinishedImporting("modules/build_overrides/BuildOverrideStore.tsx");
 
-export default tmp2;
+export default buildOverrideStore;
 export const State = obj;

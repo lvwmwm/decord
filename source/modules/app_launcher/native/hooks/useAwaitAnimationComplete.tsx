@@ -1,13 +1,14 @@
-// Module ID: 11315
-// Function ID: 87830
+// Module ID: 11339
+// Function ID: 11340
 // Name: AwaitAnimationContext
-// Dependencies: [31, 33, 2]
+// Dependencies: [19, 21, 2]
 // Exports: AwaitAnimationContext, useAwaitAnimationCompletion
 
-// Module 11315 (AwaitAnimationContext)
-import importAllResult from "result";
+// Module 11339 (AwaitAnimationContext)
+import importAllResult from "noop";
 import { jsx } from "jsxProd";
 
+let c0 = importAllResult;
 let context = importAllResult.createContext(null);
 const result = require("set").fileFinishedImporting("modules/app_launcher/native/hooks/useAwaitAnimationComplete.tsx");
 
@@ -18,5 +19,10 @@ export const AwaitAnimationContext = function AwaitAnimationContext(children) {
 };
 export const useAwaitAnimationCompletion = function useAwaitAnimationCompletion() {
   const context = importAllResult.useContext(closure_2);
-  return null == context ? ((arg0) => arg0()) : context.handleQueuedCallback;
+  if (null == context) {
+    let fn = (arg0) => arg0();
+  } else {
+    fn = context.handleQueuedCallback;
+  }
+  return fn;
 };

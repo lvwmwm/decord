@@ -1,66 +1,65 @@
-// Module ID: 16499
-// Function ID: 128557
+// Module ID: 16534
+// Function ID: 16535
 // Name: HowItWorksCard
-// Dependencies: [31, 27, 33, 4165, 689, 4161, 5119, 1212, 16500, 1273, 16501, 16502, 2]
+// Dependencies: [19, 17, 21, 4189, 712, 4185, 5141, 1236, 16535, 1297, 16536, 16537, 2]
 // Exports: default
 
-// Module 16499 (HowItWorksCard)
-import "result";
+// Module 16534 (HowItWorksCard)
+import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_4;
-let closure_5;
+let c4;
+let c5;
 const require = arg1;
 function HowItWorksCard(iconSource) {
   let cardNumber;
   let description;
   ({ cardNumber, description } = iconSource);
-  const tmp = _createForOfIteratorHelperLoose();
-  let obj = { style: tmp.card, accessible: true, accessibilityLabel: "" + cardNumber + " - " + description };
+  const tmp = createCacheKey();
+  let obj = { style: tmp.card, accessible: true, accessibilityLabel: "" + cardNumber + " - " + description, children: null };
   obj = { style: tmp.cardNumber, variant: "text-xs/bold", color: "text-overlay-light", children: cardNumber };
-  const items = [callback(require(4161) /* Text */.Text, obj), , ];
-  obj = { style: tmp.container, children: callback(importDefault(5119), obj1) };
+  const items = [callback(require(4185) /* Text */.Text, obj), , ];
+  obj = { style: tmp.container, children: callback(importDefault(5141), obj1) };
   items[1] = callback(View, obj);
-  const obj2 = { style: tmp.howItWorksCardDescription, variant: "text-sm/normal", color: "mobile-text-heading-primary", children: description };
-  items[2] = callback(require(4161) /* Text */.Text, obj2);
-  obj.children = items;
+  items[2] = callback(require(4185) /* Text */.Text, { style: tmp.howItWorksCardDescription, variant: "text-sm/normal", color: "mobile-text-heading-primary", children: description });
+  obj[3] = items;
   return callback2(View, obj);
 }
-({ jsx: closure_4, jsxs: closure_5 } = jsxProd);
-_createForOfIteratorHelperLoose = { container: { flex: 1 }, horizontalContainer: { flex: 1, flexDirection: "row" } };
-_createForOfIteratorHelperLoose = { flex: 1, marginVertical: 6, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SURFACE_HIGH, alignItems: "center", borderRadius: require("_createForOfIteratorHelperLoose").radii.sm, overflow: "hidden" };
-_createForOfIteratorHelperLoose.card = _createForOfIteratorHelperLoose;
-let obj1 = { width: 18, height: 18, position: "absolute", top: 9, start: 9, textAlign: "center", backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BRAND, borderRadius: 9, overflow: "hidden" };
-_createForOfIteratorHelperLoose.cardNumber = obj1;
-let obj2 = { width: "100%", paddingHorizontal: 18, paddingVertical: 8, textAlign: "center", backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_MOD_NORMAL, borderBottomStartRadius: 8, borderBottomEndRadius: 8, overflow: "hidden" };
-_createForOfIteratorHelperLoose.howItWorksCardDescription = obj2;
-_createForOfIteratorHelperLoose.howItWorksCardIcon = { marginVertical: 24 };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+({ jsx: c4, jsxs: c5 } = jsxProd);
+createCacheKey = { container: { flex: 1 }, horizontalContainer: { flex: 1, flexDirection: "row" }, card: null, cardNumber: null, howItWorksCardDescription: null, howItWorksCardIcon: null };
+createCacheKey = { flex: 1, marginVertical: 6, backgroundColor: require("Themes").colors.BACKGROUND_SURFACE_HIGH, alignItems: "center", borderRadius: require("Themes").radii.sm, overflow: "hidden" };
+createCacheKey[2] = createCacheKey;
+createCacheKey[3] = { width: 18, height: 18, position: "absolute", top: 9, start: 9, textAlign: "center", backgroundColor: require("Themes").colors.BACKGROUND_BRAND, borderRadius: 9, overflow: "hidden" };
+let obj1 = { width: 18, height: 18, position: "absolute", top: 9, start: 9, textAlign: "center", backgroundColor: require("Themes").colors.BACKGROUND_BRAND, borderRadius: 9, overflow: "hidden" };
+createCacheKey[4] = { width: "100%", paddingHorizontal: 18, paddingVertical: 8, textAlign: "center", backgroundColor: require("Themes").colors.BACKGROUND_MOD_NORMAL, borderBottomStartRadius: 8, borderBottomEndRadius: 8, overflow: "hidden" };
+createCacheKey[5] = { marginVertical: 24 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let obj2 = { width: "100%", paddingHorizontal: 18, paddingVertical: 8, textAlign: "center", backgroundColor: require("Themes").colors.BACKGROUND_MOD_NORMAL, borderBottomStartRadius: 8, borderBottomEndRadius: 8, overflow: "hidden" };
 const result = require("jsxProd").fileFinishedImporting("modules/guild_role_subscriptions/native/guild_settings/welcome/HowItWorksSection.tsx");
 
 export default function HowItWorksSection() {
-  const tmp = _createForOfIteratorHelperLoose();
-  let obj = { style: tmp.container };
-  obj = { style: tmp.horizontalContainer };
-  obj = { cardNumber: 1 };
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj.description = intl.string(require(1212) /* getSystemLocale */.t.lT0ZNS);
-  obj.iconSource = importDefault(16500);
-  const items = [callback(HowItWorksCard, obj), callback(require(1273) /* Button */.Spacer, { size: 12 }), ];
-  const obj1 = { cardNumber: 2 };
-  const intl2 = require(1212) /* getSystemLocale */.intl;
-  obj1.description = intl2.string(require(1212) /* getSystemLocale */.t.ihN2Wb);
-  obj1.iconSource = importDefault(16501);
+  const tmp = createCacheKey();
+  let obj = { style: tmp.container, children: null };
+  obj = { style: tmp.horizontalContainer, children: null };
+  obj = { cardNumber: 1, description: null, iconSource: null };
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj[1] = intl.string(require(1236) /* getSystemLocale */.t.lT0ZNS);
+  obj[2] = importDefault(16535);
+  const items = [callback(HowItWorksCard, obj), callback(require(1297) /* Button */.Spacer, { size: 12 }), ];
+  const obj1 = { cardNumber: 2, description: null, iconSource: null };
+  const intl2 = require(1236) /* getSystemLocale */.intl;
+  obj1[1] = intl2.string(require(1236) /* getSystemLocale */.t.ihN2Wb);
+  obj1[2] = importDefault(16536);
   items[2] = callback(HowItWorksCard, obj1);
-  obj.children = items;
+  obj[1] = items;
   const items1 = [callback2(View, obj), ];
-  const obj2 = { cardNumber: 3 };
-  const intl3 = require(1212) /* getSystemLocale */.intl;
-  obj2.description = intl3.string(require(1212) /* getSystemLocale */.t.c8krDQ);
-  obj2.iconSource = importDefault(16502);
+  const obj2 = { cardNumber: 3, description: null, iconSource: null };
+  const intl3 = require(1236) /* getSystemLocale */.intl;
+  obj2[1] = intl3.string(require(1236) /* getSystemLocale */.t.c8krDQ);
+  obj2[2] = importDefault(16537);
   items1[1] = callback(HowItWorksCard, obj2);
-  obj.children = items1;
+  obj[1] = items1;
   return callback2(View, obj);
 };

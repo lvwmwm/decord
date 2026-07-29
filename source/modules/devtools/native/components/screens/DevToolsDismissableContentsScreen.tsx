@@ -1,72 +1,46 @@
-// Module ID: 14690
-// Function ID: 111813
+// Module ID: 14715
+// Function ID: 14716
 // Name: DismissableContentsEmpty
-// Dependencies: [57, 31, 27, 1338, 33, 4165, 689, 1334, 14691, 5537, 5536, 13104, 5198, 1331, 4124, 5205, 14692, 9215, 4161, 9369, 5080, 1557, 10705, 566, 14019, 14020, 6655, 2]
+// Dependencies: [32, 19, 17, 1362, 21, 4189, 712, 1358, 14716, 5555, 5554, 13127, 5220, 1355, 4148, 5227, 14717, 9239, 4185, 9393, 5102, 1581, 10729, 589, 14041, 14042, 6676, 2]
 // Exports: default
 
-// Module 14690 (DismissableContentsEmpty)
+// Module 14715 (DismissableContentsEmpty)
 import _slicedToArray from "_slicedToArray";
-import importAllResult from "result";
-import { View } from "set";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import importAllResult from "getSearchEmptySource";
+import { View } from "SearchField";
+import set from "set";
+import jsxProd from "useSafeAreaInsets";
+import createCacheKey from "createCacheKey";
 
-let closure_7;
-let closure_8;
-let closure_9;
+let c9;
+let error;
+let metroImportAll;
 const require = arg1;
 function DismissableContentsEmpty() {
-  let obj = { style: callback4().emptyState };
+  let obj = { style: callback4().emptyState, children: null };
   obj = { style: null, variant: "heading-lg/semibold", children: "No results found" };
-  obj = { marginBottom: importDefault(689).space.PX_16 };
-  obj.style = obj;
-  const items = [callback2(require(4161) /* Text */.Text, obj), callback2(require(9369) /* getSearchEmptySource */.SearchEmpty, {})];
-  obj.children = items;
+  obj = { marginBottom: null };
+  obj[0] = importDefault(712).space.PX_16;
+  obj[0] = obj;
+  const items = [callback2(require(4185) /* Text */.Text, obj), callback2(require(9393) /* getSearchEmptySource */.SearchEmpty, {})];
+  obj[1] = items;
   return callback3(View, obj);
 }
-function filterDismissableContent(str) {
-  const items = [];
-  for (const key10014 in require(1334) /* DismissibleContent */.DismissibleContent) {
-    let tmp9 = key10014;
-    let isNaNResult = tmp;
-    if (!tmp) {
-      let tmp2 = importDefault;
-      let tmp3 = dependencyMap;
-      let tmp4 = importDefault(5080);
-      let formatted = arg0.toLowerCase();
-      isNaNResult = tmp4(formatted, key10014.toLowerCase());
-    }
-    if (isNaNResult) {
-      let _isNaN = isNaN;
-      let _Number = Number;
-      isNaNResult = isNaN(Number(key10014));
-    }
-    if (!isNaNResult) {
-      continue;
-    } else {
-      let arr = items.push(key10014);
-      continue;
-    }
-    continue;
-  }
-  const sorted = items.sort((localeCompare) => localeCompare.localeCompare(arg1));
-  return items;
-}
-({ jsx: closure_7, jsxs: closure_8, Fragment: closure_9 } = jsxProd);
-let obj = {};
-obj = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW, flex: 1 };
-obj.container = obj;
-_createForOfIteratorHelperLoose = { padding: require("_createForOfIteratorHelperLoose").space.PX_16 };
-obj.contentContainer = _createForOfIteratorHelperLoose;
-obj.headerSection = { paddingBottom: require("_createForOfIteratorHelperLoose").space.PX_16 };
-let obj2 = { paddingBottom: require("_createForOfIteratorHelperLoose").space.PX_16 };
-obj.search = { paddingBottom: require("_createForOfIteratorHelperLoose").space.PX_8 };
-let obj3 = { paddingBottom: require("_createForOfIteratorHelperLoose").space.PX_8 };
-obj.sectionHeader = { paddingBottom: require("_createForOfIteratorHelperLoose").space.PX_8 };
-let obj5 = { marginVertical: require("_createForOfIteratorHelperLoose").space.PX_32, justifyContent: "center", alignItems: "center" };
-obj.emptyState = obj5;
-let closure_10 = _createForOfIteratorHelperLoose.createStyles(obj);
+let c4 = importAllResult;
+({ jsx: error, jsxs: metroImportAll, Fragment: c9 } = jsxProd);
+let obj = { container: null, contentContainer: null, headerSection: null, search: null, sectionHeader: null, emptyState: null };
+obj = { backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW, flex: 1 };
+obj[0] = obj;
+createCacheKey = { padding: require("Themes").space.PX_16 };
+obj[1] = createCacheKey;
+obj[2] = { paddingBottom: require("Themes").space.PX_16 };
+let obj2 = { paddingBottom: require("Themes").space.PX_16 };
+obj[3] = { paddingBottom: require("Themes").space.PX_8 };
+let obj3 = { paddingBottom: require("Themes").space.PX_8 };
+obj[4] = { paddingBottom: require("Themes").space.PX_8 };
+let obj4 = { paddingBottom: require("Themes").space.PX_8 };
+obj[5] = { marginVertical: require("Themes").space.PX_32, justifyContent: "center", alignItems: "center" };
+let closure_10 = createCacheKey.createStyles(obj);
 let closure_11 = importAllResult.memo((content) => {
   let end;
   let handleToggleDismissState;
@@ -74,8 +48,8 @@ let closure_11 = importAllResult.memo((content) => {
   let start;
   const label = content.content;
   ({ start, end } = content);
-  ({ isDismissed, handleToggleDismissState } = importDefault(14691)(require(1334) /* DismissibleContent */.DismissibleContent[label]));
-  return callback2(require(5537) /* TableSwitchRow */.TableSwitchRow, { start, end, onValueChange, value, label });
+  ({ isDismissed, handleToggleDismissState } = importDefault(14716)(require(1358) /* DismissibleContent */.DismissibleContent[label]));
+  return callback2(require(5555) /* TableSwitchRow */.TableSwitchRow, { start, end, onValueChange, value, label });
 });
 let closure_12 = importAllResult.memo((arg0) => {
   let dailyCapOverridden;
@@ -86,92 +60,158 @@ let closure_12 = importAllResult.memo((arg0) => {
   let onSearchChange;
   ({ dailyCapOverridden, newUserMinAgeRequiredOverridden, forceBountiesSwipeUpNux, initialSearchQuery, onForceBountiesSwipeUpNuxChange, onSearchChange } = arg0);
   const tmp = callback4();
-  let obj = {};
-  obj = { style: tmp.headerSection };
-  obj = { title: "Global Overrides", hasIcons: false };
-  const obj1 = { onValueChange: require(13104) /* handleDCShownToUser */.overrideDismissibleContentFramework, value: dailyCapOverridden, label: "Daily limit", subLabel: "When enabled, bypass the daily limit of dismissible content shown" };
-  const items = [callback2(require(5537) /* TableSwitchRow */.TableSwitchRow, obj1), , ];
-  const obj2 = { onValueChange: require(13104) /* handleDCShownToUser */.overrideNewUserMinAgeRequired, value: newUserMinAgeRequiredOverridden, label: "New user account minimum age", subLabel: "When enabled, bypass the minimum age requirement for new user accounts" };
-  items[1] = callback2(require(5537) /* TableSwitchRow */.TableSwitchRow, obj2);
-  items[2] = callback2(require(5537) /* TableSwitchRow */.TableSwitchRow, { onValueChange: onForceBountiesSwipeUpNuxChange, value: forceBountiesSwipeUpNux, label: "Force bounties swipe-up NUX", subLabel: "When enabled, treat bounties swipe-up NUX as shown so scroll affordances always appear. Reopen the bounties modal after toggling." });
-  obj.children = items;
-  obj.children = callback3(require(5536) /* TableRowGroupTitle */.TableRowGroup, obj);
+  let obj = { children: null };
+  obj = { style: tmp.headerSection, children: null };
+  obj = { title: "Global Overrides", hasIcons: false, children: null };
+  const obj1 = { onValueChange: null, value: null, label: "Daily limit", subLabel: "When enabled, bypass the daily limit of dismissible content shown" };
+  obj1[0] = require(13127) /* handleDCShownToUser */.overrideDismissibleContentFramework;
+  obj1[1] = dailyCapOverridden;
+  const items = [callback2(require(5555) /* TableSwitchRow */.TableSwitchRow, obj1), , ];
+  const obj2 = { onValueChange: null, value: null, label: "New user account minimum age", subLabel: "When enabled, bypass the minimum age requirement for new user accounts" };
+  obj2[0] = require(13127) /* handleDCShownToUser */.overrideNewUserMinAgeRequired;
+  obj2[1] = newUserMinAgeRequiredOverridden;
+  items[1] = callback2(require(5555) /* TableSwitchRow */.TableSwitchRow, obj2);
+  items[2] = callback2(require(5555) /* TableSwitchRow */.TableSwitchRow, { onValueChange: onForceBountiesSwipeUpNuxChange, value: forceBountiesSwipeUpNux, label: "Force bounties swipe-up NUX", subLabel: "When enabled, treat bounties swipe-up NUX as shown so scroll affordances always appear. Reopen the bounties modal after toggling." });
+  obj[2] = items;
+  obj[1] = callback3(require(5554) /* TableRowGroupTitle */.TableRowGroup, obj);
   const items1 = [callback2(View, obj), , , ];
-  const obj3 = { style: tmp.headerSection };
-  const obj4 = { title: "Bulk actions", hasIcons: true };
-  const obj5 = { label: "Clear all dismissed dismissible contents", onPress: require(1331) /* _createForOfIteratorHelperLoose */.clearDismissedContents, icon: callback2(require(4124) /* TrashIcon */.TrashIcon, {}), trailing: callback2(require(5205) /* TableRowArrow */.TableRowArrow, {}) };
-  const items2 = [callback2(require(5198) /* TableRowInner */.TableRow, obj5), , ];
-  const obj6 = { label: "Clear all guild dismissed dismissible contents", onPress: require(1331) /* _createForOfIteratorHelperLoose */.clearGuildDismissedContents, icon: callback2(require(4124) /* TrashIcon */.TrashIcon, {}), trailing: callback2(require(5205) /* TableRowArrow */.TableRowArrow, {}) };
-  items2[1] = callback2(require(5198) /* TableRowInner */.TableRow, obj6);
-  const obj7 = { label: "Dismiss all dismissible contents", onPress: require(1331) /* _createForOfIteratorHelperLoose */.checkAllDismissedContents, icon: callback2(require(14692) /* DoubleCheckmarkIcon */.DoubleCheckmarkIcon, {}), trailing: callback2(require(5205) /* TableRowArrow */.TableRowArrow, {}) };
-  items2[2] = callback2(require(5198) /* TableRowInner */.TableRow, obj7);
-  obj4.children = items2;
-  obj3.children = callback3(require(5536) /* TableRowGroupTitle */.TableRowGroup, obj4);
+  const obj3 = { style: tmp.headerSection, children: null };
+  const obj4 = { title: "Bulk actions", hasIcons: true, children: null };
+  const obj5 = { label: "Clear all dismissed dismissible contents", onPress: null, icon: null, trailing: null };
+  obj5[1] = require(1355) /* updateUserGuildSettings */.clearDismissedContents;
+  obj5[2] = callback2(require(4148) /* TrashIcon */.TrashIcon, {});
+  obj5[3] = callback2(require(5227) /* TableRowArrow */.TableRowArrow, {});
+  const items2 = [callback2(require(5220) /* TableRowInner */.TableRow, obj5), , ];
+  const obj6 = { label: "Clear all guild dismissed dismissible contents", onPress: null, icon: null, trailing: null };
+  obj6[1] = require(1355) /* updateUserGuildSettings */.clearGuildDismissedContents;
+  obj6[2] = callback2(require(4148) /* TrashIcon */.TrashIcon, {});
+  obj6[3] = callback2(require(5227) /* TableRowArrow */.TableRowArrow, {});
+  items2[1] = callback2(require(5220) /* TableRowInner */.TableRow, obj6);
+  const obj7 = { label: "Dismiss all dismissible contents", onPress: null, icon: null, trailing: null };
+  obj7[1] = require(1355) /* updateUserGuildSettings */.checkAllDismissedContents;
+  obj7[2] = callback2(require(14717) /* DoubleCheckmarkIcon */.DoubleCheckmarkIcon, {});
+  obj7[3] = callback2(require(5227) /* TableRowArrow */.TableRowArrow, {});
+  items2[2] = callback2(require(5220) /* TableRowInner */.TableRow, obj7);
+  obj4[2] = items2;
+  obj3[1] = callback3(require(5554) /* TableRowGroupTitle */.TableRowGroup, obj4);
   items1[1] = callback2(View, obj3);
-  items1[2] = callback2(View, { style: tmp.search, children: callback2(require(9215) /* SearchField */.SearchField, { size: "md", defaultValue: initialSearchQuery, onChange: onSearchChange }) });
-  const obj9 = { style: tmp.sectionHeader, variant: "text-sm/semibold", color: "text-default", children: "Dismissible Contents" };
-  items1[3] = callback2(require(4161) /* Text */.Text, obj9);
-  obj.children = items1;
+  items1[2] = callback2(View, { style: tmp.search, children: callback2(require(9239) /* SearchField */.SearchField, { size: "md", defaultValue: initialSearchQuery, onChange: onSearchChange }) });
+  items1[3] = callback2(require(4185) /* Text */.Text, { style: tmp.sectionHeader, variant: "text-sm/semibold", color: "text-default", children: "Dismissible Contents" });
+  obj[0] = items1;
   return callback3(closure_9, obj);
 });
-let obj4 = { paddingBottom: require("_createForOfIteratorHelperLoose").space.PX_8 };
+let obj5 = { marginVertical: require("Themes").space.PX_32, justifyContent: "center", alignItems: "center" };
 let result = require("get ActivityIndicator").fileFinishedImporting("modules/devtools/native/components/screens/DevToolsDismissableContentsScreen.tsx");
 
 export default function DevToolsDismissableContentsScreen() {
+  let dependencyMap;
+  let tmp5;
   const tmp = callback4();
   const ref = first.useRef(null);
   const importDefault = first.useRef(0);
-  let obj = ref(10705);
-  const tmp4 = callback(obj.useLocalStorageState("devtools-dc-search", ""), 2);
-  const dependencyMap = tmp4[0];
+  let obj = ref(10729);
+  let tmp2 = importDefault(1581)();
+  [dependencyMap, tmp5] = callback(obj.useLocalStorageState("devtools-dc-search", ""), 2);
   callback = tmp5;
   first = callback(first.useState(() => {
-    let str = "";
-    if (null != closure_2) {
-      str = closure_2;
+    let str = closure_2;
+    if (closure_2 == null) {
+      str = "";
     }
     return str;
   }), 1)[0];
   const tmp7 = callback(first.useState(() => {
-    let str = "";
-    if (null != closure_2) {
-      str = closure_2;
+    let str = closure_2;
+    if (closure_2 == null) {
+      str = "";
     }
-    return outer1_14(str);
+    const items = [];
+    for (const key10013 in ref(outer1_2[7]).DismissibleContent) {
+      let tmp9 = key10013;
+      let isNaNResult = tmp;
+      if (!tmp) {
+        let tmp2 = ref;
+        let tmp3 = outer1_2;
+        let tmp4 = ref(outer1_2[20]);
+        let formatted = str.toLowerCase();
+        isNaNResult = tmp4(formatted, key10013.toLowerCase());
+      }
+      if (isNaNResult) {
+        let _isNaN = isNaN;
+        let _Number = Number;
+        isNaNResult = isNaN(Number(key10013));
+      }
+      if (!isNaNResult) {
+        continue;
+      } else {
+        let arr = items.push(key10013);
+        continue;
+      }
+      continue;
+    }
+    const sorted = items.sort((localeCompare) => localeCompare.localeCompare(arg1));
+    return items;
   }), 2);
   const first1 = tmp7[0];
-  let _isNativeReflectConstruct = tmp7[1];
-  let obj1 = ref(566);
-  const items = [_isNativeReflectConstruct];
-  const stateFromStoresObject = obj1.useStateFromStoresObject(items, () => ({ dailyCapOverridden: lib.dailyCapOverridden, newUserMinAgeRequiredOverridden: lib.newUserMinAgeRequiredOverridden }));
+  let set = tmp7[1];
+  let obj1 = ref(589);
+  let items = [set];
+  const stateFromStoresObject = obj1.useStateFromStoresObject(items, () => ({ dailyCapOverridden: set.dailyCapOverridden, newUserMinAgeRequiredOverridden: set.newUserMinAgeRequiredOverridden }));
   const dailyCapOverridden = stateFromStoresObject.dailyCapOverridden;
   const newUserMinAgeRequiredOverridden = stateFromStoresObject.newUserMinAgeRequiredOverridden;
-  const tmp2 = importDefault(1557)();
-  const tmp9 = callback(ref(14019).useForceBountiesSwipeUpNux(), 2);
+  let tmp4 = callback(obj.useLocalStorageState("devtools-dc-search", ""), 2);
+  let tmp9 = callback(ref(14041).useForceBountiesSwipeUpNux(), 2);
   const first2 = tmp9[0];
   callback4 = tmp11;
   const items1 = [tmp9[1]];
   callback = first.useCallback((arg0) => {
     tmp11(arg0);
     if (arg0) {
-      const result = ref(table[25]).clearDismissedScrollAffordanceBountyIds();
-      const obj = ref(table[25]);
+      const result = ref(outer1_2[25]).clearDismissedScrollAffordanceBountyIds();
+      const obj = ref(outer1_2[25]);
     }
   }, items1);
   const callback1 = first.useCallback(() => {
     let current = ref.current;
     const animationFrame = requestAnimationFrame(() => {
       current = current.current;
-      if (null != current) {
-        const obj = { offset: current, animated: false };
+      if (current != null) {
+        const obj = { offset: null, animated: false };
+        obj[0] = current;
         current.scrollToOffset(obj);
       }
     });
   }, []);
-  const items2 = [tmp4[1], callback1];
-  const callback2 = first.useCallback((arg0) => {
-    tmp5(arg0);
-    lib(outer1_14(arg0));
+  const items2 = [tmp5, callback1];
+  const callback2 = first.useCallback((str) => {
+    let tmp5;
+    tmp5(str);
+    const items = [];
+    for (const key10015 in ref(outer1_2[7]).DismissibleContent) {
+      let tmp13 = key10015;
+      let isNaNResult = tmp3;
+      if (!tmp3) {
+        let tmp4 = ref;
+        tmp5 = outer1_2;
+        let tmp6 = ref(outer1_2[20]);
+        let formatted = arg0.toLowerCase();
+        isNaNResult = tmp6(formatted, key10015.toLowerCase());
+      }
+      if (isNaNResult) {
+        let _isNaN = isNaN;
+        let _Number = Number;
+        isNaNResult = isNaN(Number(key10015));
+      }
+      if (!isNaNResult) {
+        continue;
+      } else {
+        let arr = items.push(key10015);
+        continue;
+      }
+      continue;
+    }
+    const sorted = items.sort((localeCompare) => localeCompare.localeCompare(arg1));
+    set(items);
     callback1();
   }, items2);
   const items3 = [dailyCapOverridden, newUserMinAgeRequiredOverridden, first2, first, callback, callback2];
@@ -180,24 +220,24 @@ export default function DevToolsDismissableContentsScreen() {
   }, []);
   const items4 = [first1.length];
   const memo = first.useMemo(() => dailyCapOverridden(callback1, { dailyCapOverridden, newUserMinAgeRequiredOverridden, forceBountiesSwipeUpNux: true === first2, initialSearchQuery: first, onForceBountiesSwipeUpNuxChange: callback, onSearchChange: callback2 }), items3);
-  obj = { style: tmp.container };
+  obj = { style: tmp.container, children: null };
   callback4 = first.useCallback((content) => {
     const index = content.index;
     return dailyCapOverridden(callback, { content: content.item, start: 0 === index, end: index === first1.length - 1 });
   }, items4);
-  obj = { ref, data: first1, contentContainerStyle: null, keyboardShouldPersistTaps: "handled", keyboardDismissMode: "on-drag", automaticallyAdjustKeyboardInsets: true };
+  obj = { ref, data: first1, contentContainerStyle: null, keyboardShouldPersistTaps: "handled", keyboardDismissMode: "on-drag", automaticallyAdjustKeyboardInsets: true, ListHeaderComponent: null, ListEmptyComponent: null, keyExtractor: null, renderItem: null, onScroll: null, scrollEventThrottle: 16 };
   const items5 = [tmp.contentContainer, ];
-  obj1 = { paddingBottom: tmp2.bottom + importDefault(689).space.PX_16 };
+  obj1 = { paddingBottom: null };
+  obj1[0] = tmp2.bottom + importDefault(712).space.PX_16;
   items5[1] = obj1;
-  obj.contentContainerStyle = items5;
-  obj.ListHeaderComponent = memo;
-  obj.ListEmptyComponent = callback2;
-  obj.keyExtractor = function keyExtractor(arg0) {
+  obj[2] = items5;
+  obj[6] = memo;
+  obj[7] = callback2;
+  obj[8] = function keyExtractor(arg0) {
     return arg0;
   };
-  obj.renderItem = callback4;
-  obj.onScroll = callback3;
-  obj.scrollEventThrottle = 16;
-  obj.children = dailyCapOverridden(ref(6655).FlashList, obj);
+  obj[9] = callback4;
+  obj[10] = callback3;
+  obj[1] = dailyCapOverridden(ref(6676).FlashList, obj);
   return dailyCapOverridden(first1, obj);
 };

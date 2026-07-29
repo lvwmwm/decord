@@ -1,25 +1,25 @@
-// Module ID: 4836
-// Function ID: 41860
+// Module ID: 4858
+// Function ID: 4859
 // Name: removePunctuation
 // Dependencies: [2]
-// Exports: getQueriesFromUserInput
+// Exports: getQueriesFromUserInput, removePunctuation
 
-// Module 4836 (removePunctuation)
-function removePunctuation(str) {
-  return str.replace(closure_0, "").replace(closure_1, " ");
-}
+// Module 4858 (removePunctuation)
 const re0 = /(!|\.|;|,|-|—|–|\?|"|')/g;
 const re1 = /(\n|\t|\s)/g;
 const result = require("set").fileFinishedImporting("modules/stickers/StickersSuggestionUtils.tsx");
 
-export { removePunctuation };
-export const getQueriesFromUserInput = function getQueriesFromUserInput(arg0) {
-  if (null == arg0) {
+export const removePunctuation = function removePunctuation(str) {
+  return str.replace(closure_0, "").replace(closure_1, " ");
+};
+export const getQueriesFromUserInput = function getQueriesFromUserInput(str) {
+  if (null == str) {
     let items = [];
   } else {
-    const str = removePunctuation(arg0);
-    items = removePunctuation(arg0).trim().split(" ");
-    const str2 = removePunctuation(arg0).trim();
+    const str2 = str.replace(closure_0, "");
+    const str4 = str.replace(closure_0, "").replace(closure_1, " ");
+    items = str.replace(closure_0, "").replace(closure_1, " ").trim().split(" ");
+    const str5 = str.replace(closure_0, "").replace(closure_1, " ").trim();
   }
   return items;
 };

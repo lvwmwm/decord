@@ -1,22 +1,22 @@
-// Module ID: 14587
-// Function ID: 111254
+// Module ID: 14612
+// Function ID: 14613
 // Name: block
-// Dependencies: [31, 27, 5780, 33, 4165, 689, 566, 5811, 8639, 14588, 14597, 14598, 14600, 14607, 14608, 2]
+// Dependencies: [19, 17, 5798, 21, 4189, 712, 589, 5829, 8663, 14613, 14622, 14623, 14625, 14632, 14633, 2]
 // Exports: default
 
-// Module 14587 (block)
-import result from "result";
+// Module 14612 (block)
+import noop from "noop";
 import { View } from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import updateCategoriesAndProducts from "updateCategoriesAndProducts";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
 const require = arg1;
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { marginTop: require("_createForOfIteratorHelperLoose").space.PX_16 };
-_createForOfIteratorHelperLoose.shopBlockSpacing = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/collectibles/native/ShopBlockItem.tsx");
+createCacheKey = { shopBlockSpacing: null };
+createCacheKey = { marginTop: require("Themes").space.PX_16 };
+createCacheKey[0] = createCacheKey;
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+const result = require("updateCategoriesAndProducts").fileFinishedImporting("modules/collectibles/native/ShopBlockItem.tsx");
 
 export default function _default(block) {
   let framesBannerBlock;
@@ -24,21 +24,23 @@ export default function _default(block) {
   let screen;
   block = block.block;
   ({ screen, preferVCPrice, framesBannerBlock } = block);
-  const tmp = _createForOfIteratorHelperLoose();
+  let stateFromStores;
+  let stateFromStores1;
+  const tmp = createCacheKey();
   let obj = block(stateFromStores1[6]);
-  const items = [_isNativeReflectConstruct];
-  const stateFromStores = obj.useStateFromStores(items, () => outer1_5.categories);
+  const items = [updateCategoriesAndProducts];
+  stateFromStores = obj.useStateFromStores(items, () => updateCategoriesAndProducts.categories);
   let obj1 = block(stateFromStores1[6]);
-  const items1 = [_isNativeReflectConstruct];
-  stateFromStores1 = obj1.useStateFromStores(items1, () => outer1_5.products);
+  const items1 = [updateCategoriesAndProducts];
+  stateFromStores1 = obj1.useStateFromStores(items1, () => updateCategoriesAndProducts.products);
   const items2 = [block, stateFromStores.size, stateFromStores1.size];
   const memo = React.useMemo(() => {
     if (block.type === block(stateFromStores1[7]).ShopBlockType.HERO) {
       const _HermesInternal3 = HermesInternal;
-      let combined = "hero-" + block.categoryStoreListingId;
-    } else if (block.type === block(stateFromStores1[7]).ShopBlockType.REWARD_HERO) {
+      let combined = "hero-" + tmp.categoryStoreListingId;
+    } else if (tmp.type === block(stateFromStores1[7]).ShopBlockType.REWARD_HERO) {
       const _HermesInternal2 = HermesInternal;
-      combined = "reward-hero-" + block.categoryStoreListingId;
+      combined = "reward-hero-" + tmp.categoryStoreListingId;
     } else {
       const _HermesInternal = HermesInternal;
       combined = "" + stateFromStores.size + "-" + stateFromStores1.size;
@@ -47,55 +49,70 @@ export default function _default(block) {
   }, items2);
   const type = block.type;
   if (block(stateFromStores1[7]).ShopBlockType.HERO === type) {
-    obj = {};
-    obj = { pageSection: "top 4" };
-    obj.newValue = obj;
+    obj = { newValue: null, children: null };
+    obj[0] = { pageSection: "top 4" };
     if (null != framesBannerBlock) {
-      obj1 = { heroBlock: block, bannerBlock: framesBannerBlock, preferVCPrice, screen };
-      let tmp36 = jsx(stateFromStores(stateFromStores1[9]), { heroBlock: block, bannerBlock: framesBannerBlock, preferVCPrice, screen }, memo);
+      obj = { heroBlock: null, bannerBlock: null, preferVCPrice: null, screen: null };
+      obj[0] = block;
+      obj[1] = framesBannerBlock;
+      obj[2] = preferVCPrice;
+      obj[3] = screen;
+      let tmp19Result = tmp19(stateFromStores(tmp3[9]), obj, memo);
     } else {
-      const obj2 = { heroBlock: block, preferVCPrice, screen };
-      tmp36 = jsx(stateFromStores(stateFromStores1[10]), { heroBlock: block, preferVCPrice, screen }, memo);
+      obj1 = { heroBlock: null, preferVCPrice: null, screen: null };
+      obj1[0] = block;
+      obj1[1] = preferVCPrice;
+      obj1[2] = screen;
+      tmp19Result = tmp19(stateFromStores(tmp3[10]), obj1, memo);
     }
-    obj.children = tmp36;
-    return jsx(block(stateFromStores1[8]).CollectiblesAnalyticsProvider, { pageSection: "top 4" });
-  } else if (block(stateFromStores1[7]).ShopBlockType.FEATURED === type) {
-    const obj3 = {};
-    const obj4 = { pageSection: "featured_block" };
-    obj3.newValue = obj4;
-    const obj5 = { style: tmp.shopBlockSpacing };
-    const obj6 = { featuredBlock: block };
-    obj5.children = jsx(stateFromStores(stateFromStores1[11]), { featuredBlock: block });
-    obj3.children = <View key={memo} style={tmp.shopBlockSpacing} />;
-    return jsx(block(stateFromStores1[8]).CollectiblesAnalyticsProvider, {});
-  } else if (block(stateFromStores1[7]).ShopBlockType.FEED === type) {
-    const obj7 = {};
-    const obj8 = { pageSection: "popular picks" };
-    obj7.newValue = obj8;
-    const obj9 = { style: tmp.shopBlockSpacing };
-    const obj10 = { feedBlock: block, screen, preferVCPrice, disableBundleStaticBackground: true };
-    obj9.children = jsx(stateFromStores(stateFromStores1[12]), { feedBlock: block, screen, preferVCPrice, disableBundleStaticBackground: true }, memo);
-    obj7.children = <View style={tmp.shopBlockSpacing} />;
-    return jsx(block(stateFromStores1[8]).CollectiblesAnalyticsProvider, {});
-  } else if (block(stateFromStores1[7]).ShopBlockType.FRAMES_PRODUCT_SHELF === type) {
-    const obj11 = {};
-    const obj12 = { pageSection: "frames_product_shelf" };
-    obj11.newValue = obj12;
-    const obj13 = { block, preferVCPrice };
-    obj11.children = jsx(stateFromStores(stateFromStores1[13]), { block, preferVCPrice }, memo);
-    return jsx(block(stateFromStores1[8]).CollectiblesAnalyticsProvider, {});
-  } else if (block(stateFromStores1[7]).ShopBlockType.SHELF === type) {
-    const obj14 = {};
-    const obj15 = { pageSection: block.name };
-    obj14.newValue = obj15;
-    const obj16 = { style: tmp.shopBlockSpacing };
-    const obj17 = { block, preferVCPrice };
-    obj16.children = jsx(stateFromStores(stateFromStores1[14]), { block, preferVCPrice }, memo);
-    obj14.children = <View style={tmp.shopBlockSpacing} />;
-    return jsx(block(stateFromStores1[8]).CollectiblesAnalyticsProvider, {});
+    obj[1] = tmp19Result;
+    return jsx(tmp2(tmp3[8]).CollectiblesAnalyticsProvider, { newValue: null, children: null });
+  } else if (tmp2(tmp3[7]).ShopBlockType.FEATURED === type) {
+    const obj2 = { newValue: null, children: null };
+    obj2[0] = { pageSection: "featured_block" };
+    const obj3 = { style: null, children: null };
+    obj3[0] = tmp.shopBlockSpacing;
+    const obj4 = { featuredBlock: null };
+    obj4[0] = block;
+    obj3[1] = jsx(stateFromStores(tmp3[11]), { featuredBlock: null });
+    obj2[1] = <View key={memo} style={null}>{null}</View>;
+    return jsx(tmp2(tmp3[8]).CollectiblesAnalyticsProvider, { newValue: null, children: null });
+  } else if (tmp2(tmp3[7]).ShopBlockType.FEED === type) {
+    const obj5 = { newValue: null, children: null };
+    obj5[0] = { pageSection: "popular picks" };
+    const obj6 = { style: null, children: null };
+    obj6[0] = tmp.shopBlockSpacing;
+    const obj7 = { feedBlock: null, screen: null, preferVCPrice: null, disableBundleStaticBackground: true };
+    obj7[0] = block;
+    obj7[1] = screen;
+    obj7[2] = preferVCPrice;
+    obj6[1] = jsx(stateFromStores(tmp3[12]), { feedBlock: null, screen: null, preferVCPrice: null, disableBundleStaticBackground: true }, memo);
+    obj5[1] = <View style={null}>{null}</View>;
+    return jsx(tmp2(tmp3[8]).CollectiblesAnalyticsProvider, { newValue: null, children: null });
+  } else if (tmp2(tmp3[7]).ShopBlockType.FRAMES_PRODUCT_SHELF === type) {
+    const obj8 = { newValue: null, children: null };
+    obj8[0] = { pageSection: "frames_product_shelf" };
+    const obj9 = { block: null, preferVCPrice: null };
+    obj9[0] = block;
+    obj9[1] = preferVCPrice;
+    obj8[1] = jsx(stateFromStores(tmp3[13]), { block: null, preferVCPrice: null }, memo);
+    return jsx(tmp2(tmp3[8]).CollectiblesAnalyticsProvider, { newValue: null, children: null });
+  } else if (tmp2(tmp3[7]).ShopBlockType.SHELF === type) {
+    const obj10 = { newValue: null, children: null };
+    const obj11 = { pageSection: null };
+    obj11[0] = block.name;
+    obj10[0] = obj11;
+    const obj12 = { style: null, children: null };
+    obj12[0] = tmp.shopBlockSpacing;
+    const obj13 = { block: null, preferVCPrice: null };
+    obj13[0] = block;
+    obj13[1] = preferVCPrice;
+    obj12[1] = jsx(stateFromStores(tmp3[14]), { block: null, preferVCPrice: null }, memo);
+    obj10[1] = <View style={null}>{null}</View>;
+    return jsx(tmp2(tmp3[8]).CollectiblesAnalyticsProvider, { newValue: null, children: null });
   } else {
-    if (block(stateFromStores1[7]).ShopBlockType.WIDE_BANNER !== type) {
-      const FRAMES_BANNER = block(stateFromStores1[7]).ShopBlockType.FRAMES_BANNER;
+    if (tmp2(tmp3[7]).ShopBlockType.WIDE_BANNER !== type) {
+      const FRAMES_BANNER = tmp2(tmp3[7]).ShopBlockType.FRAMES_BANNER;
     }
     return null;
   }

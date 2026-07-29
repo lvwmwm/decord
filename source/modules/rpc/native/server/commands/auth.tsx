@@ -1,23 +1,23 @@
-// Module ID: 13547
-// Function ID: 103983
-// Dependencies: [4202, 653, 10592, 5674, 1207, 13548, 2]
+// Module ID: 13570
+// Function ID: 13571
+// Dependencies: [4226, 676, 10626, 5692, 1231, 13571, 2]
 
-// Module 13547
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 13570
+import addApplication from "addApplication";
 import ME from "ME";
 
-let closure_4;
-let closure_5;
+let c4;
+let c5;
 let closure_6;
 const require = arg1;
-({ ComponentActions: closure_4, ApplicationFlags: closure_5, RPCErrors: closure_6 } = ME);
+({ ComponentActions: c4, ApplicationFlags: c5, RPCErrors: closure_6 } = ME);
 const tmp3 = require("authorizeWithPrompt")((arg0) => {
   let closure_10;
   let closure_11;
   let closure_12;
   let closure_13;
   let closure_14;
-  let _isNativeReflectConstruct;
+  let addApplication;
   let closure_4;
   let closure_5;
   let closure_6;
@@ -27,53 +27,65 @@ const tmp3 = require("authorizeWithPrompt")((arg0) => {
   let dependencyMap;
   let importDefault;
   let require;
-  ({ clientId: require, authorizations: importDefault, scopes: dependencyMap, parsedPermissions: _isNativeReflectConstruct, responseType: closure_4, redirectUri: closure_5, codeChallenge: closure_6, codeChallengeMethod: closure_7, state: closure_8, guildId: closure_9, channelId: closure_10, prompt: closure_11, disableGuildSelect: closure_12, disclosures: closure_13, integrationType: closure_14 } = arg0);
-  return new Promise((applicationId) => {
-    let closure_0 = applicationId;
+  ({ clientId: require, authorizations: importDefault, scopes: dependencyMap, parsedPermissions: addApplication, responseType: closure_4, redirectUri: closure_5, codeChallenge: closure_6, codeChallengeMethod: closure_7, state: closure_8, guildId: closure_9, channelId: closure_10, prompt: closure_11, disableGuildSelect: closure_12, disclosures: closure_13, integrationType: closure_14 } = arg0);
+  return new Promise((arg0, arg1) => {
+    let closure_0 = arg0;
     let closure_1 = arg1;
-    let tmp;
+    let tmp2;
     if (null != closure_14) {
+      let obj = closure_1;
       let value;
-      if (null != closure_1) {
-        value = closure_1.get(closure_14);
+      if (closure_1 != null) {
+        value = obj.get(tmp);
       }
-      tmp = value;
+      tmp2 = value;
     }
     let application;
-    if (null != tmp) {
-      application = tmp.application;
+    if (tmp2 != null) {
+      application = tmp2.application;
     }
-    if (null == application) {
+    if (application == null) {
       application = outer1_3.getApplication(closure_0);
     }
-    let obj = { clientId: closure_0, scopes: null != closure_2 ? closure_2 : [], responseType: closure_4, redirectUri: closure_5, codeChallenge: closure_6, codeChallengeMethod: closure_7, state: closure_8, guildId: closure_9, channelId: closure_10, permissions: _isNativeReflectConstruct, prompt: closure_11 };
-    if ("boolean" === typeof closure_12) {
-      let tmp10 = closure_12;
-    } else {
-      tmp10 = "true" === closure_12;
+    obj = { clientId: closure_0, scopes: null, responseType: null, redirectUri: null, codeChallenge: null, codeChallengeMethod: null, state: null, guildId: null, channelId: null, permissions: null, prompt: null, disableGuildSelect: null, showLogout: false, callback: null, isEmbeddedFlow: null, disclosures: null, integrationType: null };
+    let items = closure_2;
+    if (closure_2 == null) {
+      items = [];
     }
-    obj.disableGuildSelect = tmp10;
-    obj.showLogout = false;
-    obj.callback = function callback(location) {
+    obj[1] = items;
+    obj[2] = closure_4;
+    obj[3] = closure_5;
+    obj[4] = closure_6;
+    obj[5] = closure_7;
+    obj[6] = closure_8;
+    obj[7] = closure_9;
+    obj[8] = closure_10;
+    obj[9] = addApplication;
+    obj[10] = closure_11;
+    let tmp8 = closure_12;
+    if (typeof closure_12 !== "T") {
+      tmp8 = "true" === tmp7;
+    }
+    obj[11] = tmp8;
+    obj[13] = function callback(location) {
       if (null != location.location) {
-        applicationId(location.location);
+        callback(location.location);
       } else {
-        let tmp4 = outer2_1(outer2_2[2]);
-        const obj = { errorCode: outer2_6.OAUTH2_ERROR };
-        const prototype = tmp4.prototype;
-        tmp4 = new tmp4(obj, "User cancelled authorization");
-        callback(tmp4);
+        const obj = { errorCode: null };
+        obj[0] = outer1_6.OAUTH2_ERROR;
+        const tmp8 = new callback2(outer1_2[2])(obj, "User cancelled authorization");
+        callback2(tmp8);
       }
     };
-    obj.isEmbeddedFlow = outer1_0(outer1_2[3]).hasApplicationFlag(application, outer1_5.EMBEDDED);
-    obj.disclosures = closure_13;
-    obj.integrationType = closure_14;
+    obj[14] = outer1_0(outer1_2[3]).hasApplicationFlag(application, outer1_5.EMBEDDED);
+    obj[15] = closure_13;
+    obj[16] = closure_14;
     const ComponentDispatch = outer1_0(outer1_2[4]).ComponentDispatch;
     ComponentDispatch.dispatch(outer1_4.SHOW_OAUTH2_MODAL, obj);
   });
 }, function onAuthorizeValidationPassed() {
 
 });
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/rpc/native/server/commands/auth.tsx");
+const result = require("prototype").fileFinishedImporting("modules/rpc/native/server/commands/auth.tsx");
 
 export default tmp3;

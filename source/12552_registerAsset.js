@@ -1,11 +1,10 @@
 // Module ID: 12552
-// Function ID: 97079
+// Function ID: 12553
 // Name: registerAsset
-// Dependencies: [1217]
+// Dependencies: [1241]
 
 // Module 12552 (registerAsset)
 import registerAsset from "registerAsset";
 
-const obj = { __packager_asset: true, httpServerLocation: "/assets/images/native/premium/plan_selection", width: 80, height: 80, scales: [1], hash: "efc48aacb0f78e1462efe2b15e5ef702", name: "img_boost", type: "png" };
 
-export default registerAsset.registerAsset(obj);
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/premium/backgrounds", width: 375, height: 301, scales: [2, 3], hash: "66755272db25a38d2c195d1bf5a25e70", name: "img_top_pattern_light", type: "png" });

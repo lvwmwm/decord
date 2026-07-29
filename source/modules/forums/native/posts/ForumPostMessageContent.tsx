@@ -1,17 +1,17 @@
-// Module ID: 11177
-// Function ID: 86732
+// Module ID: 11201
+// Function ID: 11202
 // Name: ForumPostMessageContent
-// Dependencies: [31, 33, 4165, 11178, 4161, 2]
+// Dependencies: [19, 21, 4189, 11202, 4185, 2]
 // Exports: default
 
-// Module 11177 (ForumPostMessageContent)
-import "result";
+// Module 11201 (ForumPostMessageContent)
+import "noop";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
 const require = arg1;
-let closure_4 = _createForOfIteratorHelperLoose.createStyles({ text: { alignSelf: "flex-start" } });
-const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/forums/native/posts/ForumPostMessageContent.tsx");
+let closure_4 = createCacheKey.createStyles({ text: { alignSelf: "flex-start" } });
+const result = require("createCacheKey").fileFinishedImporting("modules/forums/native/posts/ForumPostMessageContent.tsx");
 
 export default function ForumPostMessageContent(senderModifier) {
   let content;
@@ -28,17 +28,16 @@ export default function ForumPostMessageContent(senderModifier) {
     num = 2;
   }
   const tmp = callback();
-  ({ content, style, variant } = importDefault(11178)({ message, messageLoaded, messageContent, isMessageDeleted, senderModifier: senderModifier.senderModifier }));
-  const obj = { variant };
+  ({ content, style, variant } = importDefault(11202)({ message, messageLoaded, messageContent, isMessageDeleted, senderModifier: senderModifier.senderModifier }));
+  const obj = { variant, color: null, lineClamp: null, ellipsizeMode: "tail", style: null, children: null };
   let str = "text-muted";
   if (hasUnreads) {
     str = "text-default";
   }
-  obj.color = str;
-  obj.lineClamp = num;
-  obj.ellipsizeMode = "tail";
+  obj[1] = str;
+  obj[2] = num;
   const items = [style, tmp.text];
-  obj.style = items;
-  obj.children = content;
-  return jsx(require(4161) /* Text */.Text, { variant });
+  obj[4] = items;
+  obj[5] = content;
+  return jsx(require(4185) /* Text */.Text, { variant, color: null, lineClamp: null, ellipsizeMode: "tail", style: null, children: null });
 };

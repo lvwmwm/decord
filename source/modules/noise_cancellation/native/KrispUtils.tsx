@@ -1,14 +1,22 @@
-// Module ID: 12847
-// Function ID: 99868
+// Module ID: 12869
+// Function ID: 12870
 // Name: getKrispModel
-// Dependencies: [2]
+// Dependencies: [4238, 2]
 // Exports: getKrispModel, setKrispModelOverride, setKrispSuppressionLevel
 
-// Module 12847 (getKrispModel)
+// Module 12869 (getKrispModel)
 const result = require("set").fileFinishedImporting("modules/noise_cancellation/native/KrispUtils.tsx");
 
 export const getKrispModel = function getKrispModel() {
-  return Promise.resolve(null);
+  return new Promise((arg0) => {
+    const callback = arg0;
+    const voiceEngine = callback(table[0]).getVoiceEngine();
+    if (null != voiceEngine.getNcModelFilename) {
+      const ncModelFilename = voiceEngine.getNcModelFilename((arg0) => callback(arg0));
+    } else {
+      arg0(null);
+    }
+  });
 };
 export function setKrispSuppressionLevel() {
 

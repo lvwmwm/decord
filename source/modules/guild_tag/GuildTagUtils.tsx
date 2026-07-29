@@ -1,37 +1,28 @@
-// Module ID: 7917
-// Function ID: 62924
-// Name: getUserPrimaryGuild
-// Dependencies: [1918, 1838, 1850, 7701, 653, 566, 3799, 2]
-// Exports: getGuildTagBadgeUrl, guildHasTag, guildSupportsTags, shouldDisplayGuildTag, useShouldDisplayGuildTag, useUserPrimaryGuild
+// Module ID: 7942
+// Function ID: 7943
+// Name: guildHasTag
+// Dependencies: [1942, 1862, 1874, 7724, 676, 589, 3823, 2]
+// Exports: getGuildTagBadgeUrl, getUserPrimaryGuild, guildHasTag, guildSupportsTags, shouldDisplayGuildTag, useShouldDisplayGuildTag, useUserPrimaryGuild
 
-// Module 7917 (getUserPrimaryGuild)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import closure_4 from "_isNativeReflectConstruct";
+// Module 7942 (guildHasTag)
+import trackCommunicationDisabled from "trackCommunicationDisabled";
+import createGuildRecordFromRust from "createGuildRecordFromRust";
+import mergeGuildAvatar from "mergeGuildAvatar";
 import items from "items";
 import { GuildFeatures } from "ME";
 
 let GuildTagBadgeMediaProxySizes;
-let closure_5;
+let c5;
 let closure_6;
 const require = arg1;
-function getUserPrimaryGuild(primaryGuild) {
-  if (null != primaryGuild) {
-    if (primaryGuild.identityEnabled) {
-      const obj = {};
-      ({ identityGuildId: obj.guildId, tag: obj.tag, badge: obj.badge } = primaryGuild);
-    }
-    return {};
-  }
-}
-({ GuildTagBadgeMediaProxySizes, GuildTagBadgeMediaProxySizesMobile: closure_5, GuildTagBadgeSize: closure_6 } = items);
-let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/guild_tag/GuildTagUtils.tsx");
+({ GuildTagBadgeMediaProxySizes, GuildTagBadgeMediaProxySizesMobile: c5, GuildTagBadgeSize: closure_6 } = items);
+let result = require("mergeGuildAvatar").fileFinishedImporting("modules/guild_tag/GuildTagUtils.tsx");
 
 export const guildHasTag = function guildHasTag(guild) {
   let tag;
-  if (null != guild) {
+  if (guild != null) {
     const profile = guild.profile;
-    if (null != profile) {
+    if (profile != null) {
       tag = profile.tag;
     }
   }
@@ -53,38 +44,39 @@ export const getGuildTagBadgeUrl = function getGuildTagBadgeUrl(guildId, badge, 
     }
   }
 };
-export { getUserPrimaryGuild };
+export const getUserPrimaryGuild = function getUserPrimaryGuild(primaryGuild) {
+  if (null != primaryGuild) {
+    if (primaryGuild.identityEnabled) {
+      const obj = { guildId: null, tag: null, badge: null };
+      ({ identityGuildId: obj[0], tag: obj[1], badge: obj[2] } = primaryGuild);
+    }
+    return {};
+  }
+};
 export const useUserPrimaryGuild = function useUserPrimaryGuild(arg0) {
+  let profile;
   let tmp = arg0;
   const _require = arg0;
-  let obj = _require(566);
-  const items = [_createForOfIteratorHelperLoose];
+  let obj = _require(589);
+  const items = [createGuildRecordFromRust];
   const items1 = [arg0];
   const stateFromStores = obj.useStateFromStores(items, () => outer1_3.getGuild(closure_0), items1);
   if (null != arg0) {
     let tmp3 = stateFromStores;
     if (null != stateFromStores) {
-      obj = { identityGuildId: stateFromStores.id, identityEnabled: true };
-      const profile = stateFromStores.profile;
+      obj = { identityGuildId: null, identityEnabled: true, tag: null, badge: null };
+      ({ id: obj2[0], profile } = stateFromStores);
       let tag;
-      if (null != profile) {
+      if (profile != null) {
         tag = profile.tag;
       }
-      let tmp5;
-      if (null != tag) {
-        tmp5 = tag;
-      }
-      obj.tag = tmp5;
+      obj[2] = tag;
       const profile2 = stateFromStores.profile;
       let badge;
-      if (null != profile2) {
+      if (profile2 != null) {
         badge = profile2.badge;
       }
-      let tmp7;
-      if (null != badge) {
-        tmp7 = badge;
-      }
-      obj.badge = tmp7;
+      obj[3] = badge;
       tmp3 = obj;
     }
     tmp = tmp3;
@@ -92,19 +84,19 @@ export const useUserPrimaryGuild = function useUserPrimaryGuild(arg0) {
   return tmp;
 };
 export const useShouldDisplayGuildTag = function useShouldDisplayGuildTag(arg0, arg1, arg2) {
-  let tmp = arg2;
   const _require = arg0;
   const dependencyMap = arg1;
-  const items = [closure_4];
+  let tmp = arg2;
+  let obj = _require(589);
+  const items = [mergeGuildAvatar];
   const items1 = [arg0];
-  const stateFromStores = _require(566).useStateFromStores(items, () => outer1_4.getUser(closure_0), items1);
-  const obj = _require(566);
-  const items2 = [_isNativeReflectConstruct];
+  const stateFromStores = obj.useStateFromStores(items, () => outer1_4.getUser(closure_0), items1);
+  const items2 = [trackCommunicationDisabled];
   const items3 = [arg1, arg0];
-  const stateFromStores1 = _require(566).useStateFromStores(items2, () => {
+  const stateFromStores1 = _require(589).useStateFromStores(items2, () => {
     if (null != table) {
       if (null != callback) {
-        const member = outer1_2.getMember(table, callback);
+        const member = outer1_2.getMember(tmp, tmp2);
         return callback(table[6]).hasAutomodQuarantinedProfile(member);
       }
     }
@@ -112,33 +104,45 @@ export const useShouldDisplayGuildTag = function useShouldDisplayGuildTag(arg0, 
   }, items3);
   if (undefined === arg2) {
     let primaryGuild;
-    if (null != stateFromStores) {
+    if (stateFromStores != null) {
       primaryGuild = stateFromStores.primaryGuild;
     }
     tmp = primaryGuild;
   }
-  const tmp4Result = getUserPrimaryGuild(tmp);
-  return null != tmp4Result.guildId && null != tmp4Result.tag && !stateFromStores1;
+  if (null != tmp) {
+    if (tmp.identityEnabled) {
+      obj = { guildId: null, tag: null, badge: null };
+      ({ identityGuildId: obj4[0], tag: obj4[1], badge: obj4[2] } = tmp);
+    }
+    return null != obj.guildId && null != obj.tag && !stateFromStores1;
+  }
+  obj = {};
 };
 export const shouldDisplayGuildTag = function shouldDisplayGuildTag(id, merged) {
   let tmp = arg2;
   user = user.getUser(id);
   if (undefined === arg2) {
     let primaryGuild;
-    if (null != user) {
+    if (user != null) {
       primaryGuild = user.primaryGuild;
     }
     tmp = primaryGuild;
   }
-  const tmp3Result = getUserPrimaryGuild(tmp);
-  let tmp7 = null != tmp3Result.guildId && null != tmp3Result.tag;
-  if (tmp7) {
-    let result = null != merged && null != id;
-    if (result) {
-      result = require(3799) /* getAutomodQuarantinedProfileFlags */.hasAutomodQuarantinedProfile(member.getMember(merged, id));
-      const obj = require(3799) /* getAutomodQuarantinedProfileFlags */;
+  if (null != tmp) {
+    if (tmp.identityEnabled) {
+      let obj = { guildId: null, tag: null, badge: null };
+      ({ identityGuildId: obj2[0], tag: obj2[1], badge: obj2[2] } = tmp);
     }
-    tmp7 = !result;
+    let tmp5 = null != obj.guildId && null != obj.tag;
+    if (tmp5) {
+      let result = null != merged && null != id;
+      if (result) {
+        result = require(3823) /* GuildMemberFlags */.hasAutomodQuarantinedProfile(member.getMember(merged, id));
+        const obj3 = require(3823) /* GuildMemberFlags */;
+      }
+      tmp5 = !result;
+    }
+    return tmp5;
   }
-  return tmp7;
+  obj = {};
 };

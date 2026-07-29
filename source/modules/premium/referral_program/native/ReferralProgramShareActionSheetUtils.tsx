@@ -1,11 +1,11 @@
-// Module ID: 12456
-// Function ID: 96530
+// Module ID: 12478
+// Function ID: 12479
 // Name: buildReferralUserRow
-// Dependencies: [3802, 8789, 2]
+// Dependencies: [3826, 8813, 2]
 // Exports: buildReferralUserRow
 
-// Module 12456 (buildReferralUserRow)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 12478 (buildReferralUserRow)
+import upsertRelationship from "upsertRelationship";
 import { UserRowModes } from "UserRowModes";
 
 const result = require("set").fileFinishedImporting("modules/premium/referral_program/native/ReferralProgramShareActionSheetUtils.tsx");
@@ -19,24 +19,24 @@ export const buildReferralUserRow = function buildReferralUserRow(selectedNotRes
   if (null != eligibleUsers[row]) {
     let tmp4 = selectedNotResendUsers.selectedNotResendUsers.length >= tmp;
     const hasItem = selectedUserIds.includes(tmp3.id);
-    let obj = { type: "user" };
-    obj = {};
+    let obj = { type: null, user: null, onPress: null, selected: null, disabled: null, mode: null, start: null, end: null };
     const hasItem1 = resendUsers.has(tmp3.id);
-    obj.type = relationshipType.getRelationshipType(tmp3.id);
-    obj.user = tmp3;
-    obj.onPress = tmp2;
-    obj.selected = hasItem;
+    obj[0] = relationshipType.getRelationshipType(tmp3.id);
+    obj[1] = tmp3;
+    obj[2] = tmp2;
+    obj[3] = hasItem;
     if (tmp4) {
       tmp4 = !hasItem;
     }
     if (tmp4) {
       tmp4 = !hasItem1;
     }
-    obj.disabled = tmp4;
-    obj.mode = UserRowModes.TOGGLE;
-    obj.start = 0 === row;
-    obj.end = row === eligibleUsers.length - 1;
-    obj.props = obj;
+    obj = { type: "user", props: null };
+    obj[4] = tmp4;
+    obj[5] = UserRowModes.TOGGLE;
+    obj[6] = 0 === row;
+    obj[7] = row === eligibleUsers.length - 1;
+    obj[1] = obj;
     return obj;
   }
 };

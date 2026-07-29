@@ -1,11 +1,11 @@
-// Module ID: 15386
-// Function ID: 117188
+// Module ID: 15419
+// Function ID: 15420
 // Name: CancelSubscriptionModal
-// Dependencies: [31, 27, 33, 1557, 5485, 14221, 5121, 5552, 2]
+// Dependencies: [19, 17, 21, 1581, 5503, 14243, 5143, 5570, 2]
 // Exports: default
 
-// Module 15386 (CancelSubscriptionModal)
-import "result";
+// Module 15419 (CancelSubscriptionModal)
+import "noop";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
 
@@ -17,25 +17,25 @@ export default function CancelSubscriptionModal(onClose) {
   let initialStack;
   let screens;
   onClose = onClose.onClose;
-  let obj = Object.create(null);
-  obj.onClose = 0;
-  const importDefault = Object.assign(onClose, obj);
+  const importDefault = Object.assign(onClose, Object.create(null));
+  let bottom;
   bottom = importDefault(bottom[3])().bottom;
   ({ screens, initialStack } = importDefault(bottom[4])(() => {
     const screens = {};
     let obj = {
       render(arg0) {
-        obj = { style: obj };
-        obj = { paddingBottom: outer1_2, flex: 1 };
+        obj = { style: obj, children: null };
+        obj = { paddingBottom: closure_2, flex: 1 };
         obj = {};
         const merged = Object.assign(arg0);
-        obj["onClose"] = outer1_0;
-        obj.children = outer2_4(callback(bottom[5]), obj);
-        return outer2_4(outer2_3, obj);
+        obj.onClose = closure_0;
+        obj[1] = outer1_4(outer1_1(outer1_2[5]), obj);
+        return outer1_4(outer1_3, obj);
       },
       title: "Subscriptions",
-      headerLeft: onClose(bottom[6]).getHeaderCloseButton(onClose)
+      headerLeft: null
     };
+    obj[2] = onClose(bottom[6]).getHeaderCloseButton(onClose);
     screens[outer1_5.CANCEL_SUBSCRIPTION] = obj;
     obj = { name: outer1_5.CANCEL_SUBSCRIPTION, params: closure_1 };
     const initialStack = [obj];

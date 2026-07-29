@@ -1,249 +1,127 @@
-// Module ID: 4250
-// Function ID: 36761
-// Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 1194, 4251, 4229, 566, 686, 2]
+// Module ID: 4274
+// Function ID: 4275
+// Name: updateAveragedStatsHelper
+// Dependencies: [1218, 4275, 4253, 589, 709, 2]
 
-// Module 4250 (_isNativeReflectConstruct)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import isStreamKey from "isStreamKey";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
-import closure_7 from "_isNativeReflectConstruct";
-import closure_8 from "_isNativeReflectConstruct";
+// Module 4274 (updateAveragedStatsHelper)
+import fetchFingerprint from "fetchFingerprint";
+import initialize from "initialize";
+import { Store } from "initialize";
 
 const require = arg1;
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
-  }
-  const result = _isNativeReflectConstruct();
-}
-function _createForOfIteratorHelperLoose(iterable) {
-  let closure_0 = iterable;
-  iterable = "undefined" !== typeof Symbol;
-  if (iterable) {
-    const _Symbol = Symbol;
-    iterable = iterable[Symbol.iterator];
-  }
-  if (!iterable) {
-    iterable = iterable[Symbol.iterator];
-  }
-  if (iterable) {
-    const iter = iterable.call(iterable);
-    const next = iter.next;
-    return next.bind(iter);
-  } else {
-    const _Array = Array;
-    let tmp = iterable;
-    if (!Array.isArray(iterable)) {
-      let tmp2;
-      if (iterable) {
-        if ("string" === typeof iterable) {
-          tmp2 = _arrayLikeToArray(iterable, undefined);
-        } else {
-          const toString = {}.toString;
-          const substr = toString.call(iterable).slice(8, -1);
-          let name = substr;
-          if (tmp3) {
-            name = iterable.constructor.name;
-          }
-          if ("Map" !== name) {
-            if ("Set" !== name) {
-              if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(iterable, undefined);
-              } else {
-                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
-              }
-            }
-            tmp2 = arr;
-          }
-          const _Array2 = Array;
-          arr = Array.from(iterable);
-          const callResult = toString.call(iterable);
-          tmp3 = "Object" === substr && iterable.constructor;
-        }
-      }
-      tmp = tmp2;
-      if (!tmp2) {
-        const _TypeError = TypeError;
-        const typeError = new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
-        throw typeError;
-      }
-    }
-    if (tmp) {
-      closure_0 = tmp;
-    }
-    let c1 = 0;
-    return () => {
-      if (closure_1 >= length.length) {
-        let obj = { done: true };
-      } else {
-        obj = { done: false };
-        closure_1 = tmp3 + 1;
-        obj.value = length[+closure_1];
-      }
-      return obj;
-    };
-  }
-}
-function _arrayLikeToArray(arg0, arg1) {
-  let length;
-  if (tmp) {
-    length = arg0.length;
-  }
-  const ArrayResult = Array(length);
-  for (let num = 0; num < length; num = num + 1) {
-    ArrayResult[num] = arg0[num];
-  }
-  return ArrayResult;
-}
-function isStatsOutbound(found) {
-  return "packetsSent" in found;
-}
-function updateAveragedStatsHelper(minVersion, arg1, arg2, arr, arr2) {
+function updateAveragedStatsHelper(arg0, arg1, arg2, arr, arr2) {
   let tmp = arg2;
   const found = arr.find((type) => "video" === type.type);
   if (null == arg2) {
-    const obj = { packetsSentOrReceived: 0, packetsLost: 0, packetLossRate: 0, frameRate: 0, resolution: 0, entropy: 0, numDatapoints: 0, frameRateAggregated: 0, resolutionAggregated: 0, entropyAggregated: 0, minVersion };
+    const obj = { packetsSentOrReceived: 0, packetsLost: 0, packetLossRate: 0, frameRate: 0, resolution: 0, entropy: 0, numDatapoints: 0, frameRateAggregated: 0, resolutionAggregated: 0, entropyAggregated: 0, minVersion: null };
+    obj[10] = arg0;
     tmp = obj;
   }
   if (null == found) {
     return tmp;
   } else {
-    if (isStatsOutbound(found)) {
-      const packetsSent = found.packetsSent;
-      let num2 = 0;
-      if (null != packetsSent) {
-        num2 = packetsSent;
+    if ("packetsSent" in found) {
+      let num2 = found.packetsSent;
+      if (num2 == null) {
+        num2 = 0;
       }
       let num = num2;
     } else {
-      const packetsReceived = found.packetsReceived;
-      num = 0;
-      if (null != packetsReceived) {
-        num = packetsReceived;
+      num = found.packetsReceived;
+      if (num == null) {
+        num = 0;
       }
     }
-    const packetsLost = found.packetsLost;
-    if (isStatsOutbound(found)) {
-      let num4 = 0;
-      if (tmp5) {
-        num4 = packetsLost;
-      }
-      let num3 = num4;
-    } else {
+    let num3 = found.packetsLost;
+    if (num3 == null) {
       num3 = 0;
-      if (tmp5) {
-        num3 = packetsLost;
-      }
     }
-    if (isStatsOutbound(found)) {
-      const frameRateEncode = found.frameRateEncode;
-      let num6 = 0;
-      if (null != frameRateEncode) {
-        num6 = frameRateEncode;
+    if ("packetsSent" in found) {
+      let num5 = found.frameRateEncode;
+      if (num5 == null) {
+        num5 = 0;
       }
-      let num5 = num6;
+      let num4 = num5;
     } else {
-      const frameRateDecode = found.frameRateDecode;
-      num5 = 0;
-      if (null != frameRateDecode) {
-        num5 = frameRateDecode;
+      num4 = found.frameRateDecode;
+      if (num4 == null) {
+        num4 = 0;
       }
     }
     const resolution = found.resolution;
-    let height;
-    if (null != resolution) {
-      height = resolution.height;
+    let num6;
+    if (resolution != null) {
+      num6 = resolution.height;
+    }
+    if (num6 == null) {
+      num6 = 0;
     }
     let num7 = 0;
-    if (null != height) {
-      num7 = height;
-    }
-    let num8 = 0;
-    if (isStatsOutbound(found)) {
-      const videoEntropy = found.videoEntropy;
-      num8 = 0;
-      if (null != videoEntropy) {
-        num8 = videoEntropy;
+    if ("packetsSent" in found) {
+      let num8 = found.videoEntropy;
+      if (num8 == null) {
+        num8 = 0;
       }
+      num7 = num8;
     }
     tmp.numDatapoints = tmp.numDatapoints + 1;
-    tmp.frameRateAggregated = tmp.frameRateAggregated + num5;
-    tmp.resolutionAggregated = tmp.resolutionAggregated + num7;
-    tmp.entropyAggregated = tmp.entropyAggregated + num8;
+    tmp.frameRateAggregated = tmp.frameRateAggregated + num4;
+    tmp.resolutionAggregated = tmp.resolutionAggregated + num6;
+    tmp.entropyAggregated = tmp.entropyAggregated + num7;
     let found1;
-    if (null != arr2) {
+    if (arr2 != null) {
       found1 = arr2.find((type) => "video" === type.type);
     }
     if (null != found1) {
       if (arg1 >= tmp.minVersion) {
         tmp.numDatapoints = tmp.numDatapoints - 1;
-        if (isStatsOutbound(found1)) {
-          const packetsSent2 = found1.packetsSent;
-          let num11 = 0;
-          if (null != packetsSent2) {
-            num11 = packetsSent2;
+        if ("packetsSent" in found1) {
+          let num11 = found1.packetsSent;
+          if (num11 == null) {
+            num11 = 0;
           }
           let num10 = num11;
         } else {
-          const packetsReceived2 = found1.packetsReceived;
-          num10 = 0;
-          if (null != packetsReceived2) {
-            num10 = packetsReceived2;
+          num10 = found1.packetsReceived;
+          if (num10 == null) {
+            num10 = 0;
           }
         }
-        const packetsLost2 = found1.packetsLost;
-        if (isStatsOutbound(found1)) {
-          let num13 = 0;
-          if (tmp13) {
-            num13 = packetsLost2;
-          }
-          let num12 = num13;
-        } else {
+        let num12 = found1.packetsLost;
+        if (num12 == null) {
           num12 = 0;
-          if (tmp13) {
-            num12 = packetsLost2;
-          }
         }
-        if (isStatsOutbound(found1)) {
-          const frameRateEncode2 = found1.frameRateEncode;
-          let num15 = 0;
-          if (null != frameRateEncode2) {
-            num15 = frameRateEncode2;
+        if ("packetsSent" in found1) {
+          let num14 = found1.frameRateEncode;
+          if (num14 == null) {
+            num14 = 0;
           }
-          let num14 = num15;
+          let num13 = num14;
         } else {
-          const frameRateDecode2 = found1.frameRateDecode;
-          num14 = 0;
-          if (null != frameRateDecode2) {
-            num14 = frameRateDecode2;
+          num13 = found1.frameRateDecode;
+          if (num13 == null) {
+            num13 = 0;
           }
         }
-        let num16 = 0;
-        if (isStatsOutbound(found1)) {
-          const videoEntropy2 = found1.videoEntropy;
-          num16 = 0;
-          if (null != videoEntropy2) {
-            num16 = videoEntropy2;
+        let num15 = 0;
+        if ("packetsSent" in found1) {
+          let num16 = found1.videoEntropy;
+          if (num16 == null) {
+            num16 = 0;
           }
+          num15 = num16;
         }
         const resolution2 = found1.resolution;
-        let height1;
-        if (null != resolution2) {
-          height1 = resolution2.height;
+        let num17;
+        if (resolution2 != null) {
+          num17 = resolution2.height;
         }
-        let num17 = 0;
-        if (null != height1) {
-          num17 = height1;
+        if (num17 == null) {
+          num17 = 0;
         }
-        tmp.frameRateAggregated = tmp.frameRateAggregated - num14;
+        tmp.frameRateAggregated = tmp.frameRateAggregated - num13;
         tmp.resolutionAggregated = tmp.resolutionAggregated - num17;
-        tmp.entropyAggregated = tmp.entropyAggregated - num16;
+        tmp.entropyAggregated = tmp.entropyAggregated - num15;
         tmp.packetsSentOrReceived = num - num10;
         tmp.packetsLost = num3 - num12;
       }
@@ -257,215 +135,177 @@ function updateAveragedStatsHelper(minVersion, arg1, arg2, arr, arr2) {
     tmp.packetsLost = num3;
   }
 }
-function updateAveragedStats(closure_10, prop, value, arr) {
-  if (null == closure_10[prop]) {
-    closure_10[prop] = {};
+function updateAveragedStats(arg0, arg1, version, version2) {
+  if (null == arg0[arg1]) {
+    arg0[arg1] = {};
   }
   id = id.getId();
-  let version;
-  if (null != arr) {
-    version = arr.version;
+  let num;
+  if (version2 != null) {
+    num = version2.version;
   }
-  let num = 0;
-  if (null != version) {
-    num = version;
+  if (num == null) {
+    num = 0;
   }
   let outbound;
-  if (null != arr) {
-    outbound = arr.stats.rtp.outbound;
+  if (version2 != null) {
+    outbound = version2.stats.rtp.outbound;
   }
-  closure_10[prop][id] = updateAveragedStatsHelper(value.version, num, closure_10[prop][id], value.stats.rtp.outbound, outbound);
-  const keys = Object.keys(value.stats.rtp.inbound);
-  for (let num2 = 0; num2 < keys.length; num2 = num2 + 1) {
-    let tmp5 = keys[num2];
-    version = value.version;
-    let version1;
+  arg0[arg1][id] = updateAveragedStatsHelper(version.version, num, arg0[arg1][id], version.stats.rtp.outbound, outbound);
+  const keys = Object.keys(version.stats.rtp.inbound);
+  for (const item10043 of keys) {
+    let tmp5 = item10043;
+    version = arg2.version;
+    let num2;
     let tmp6 = updateAveragedStatsHelper;
-    if (null != arr) {
-      version1 = arr.version;
+    if (arg3 != null) {
+      num2 = arg3.version;
+    }
+    if (num2 == null) {
+      num2 = 0;
+    }
+    let tmp7 = item10043;
+    let tmp8 = arg0[arg1][tmp5];
+    let tmp9 = arg2.stats.rtp.inbound[tmp5];
+    let tmp10;
+    if (arg3 != null) {
+      let tmp11 = item10043;
+      tmp10 = arg3.stats.rtp.inbound[tmp5];
     }
     let num3 = 0;
-    if (null != version1) {
-      num3 = version1;
-    }
-    let tmp8 = closure_10[prop][tmp5];
-    let tmp9 = value.stats.rtp.inbound[tmp5];
-    let tmp10;
-    if (null != arr) {
-      tmp10 = arr.stats.rtp.inbound[tmp5];
-    }
-    let tmp11 = version;
-    let tmp12 = num3;
-    let tmp13 = tmp8;
-    let tmp14 = tmp9;
-    let tmp15 = tmp10;
-    closure_10[prop][tmp5] = tmp6(version, num3, tmp8, tmp9, tmp10);
+    let tmp12 = version;
+    let tmp13 = num2;
+    let tmp14 = tmp8;
+    let tmp15 = tmp9;
+    let tmp16 = tmp10;
+    arg0[arg1][item10043] = tmp6(version, num2, tmp8, tmp9, tmp10);
+    continue;
   }
 }
-function resetAccumulatedStats(mediaEngineConnectionId, ownerId) {
-  let tmp5;
-  if (null != dependencyMap2[mediaEngineConnectionId]) {
-    tmp5 = tmp4[ownerId];
-  }
-  if (null != tmp5) {
-    delete tmp3[tmp2];
-  }
-  let tmp9;
-  if (null != dependencyMap3[mediaEngineConnectionId]) {
-    tmp9 = tmp8[ownerId];
-  }
-  if (null != tmp9) {
-    delete tmp[tmp2];
-  }
-}
-function getStatsHistoryAtIndex(prop, arg1) {
-  if (null == prop) {
+function getStatsHistoryAtIndex(arg0, arg1) {
+  if (null == arg0) {
     return null;
   } else {
     let tmp2 = null;
-    if (null != dependencyMap[prop]) {
+    if (null != dependencyMap[arg0]) {
       tmp2 = null;
-      if (arr.length > arg1) {
-        tmp2 = arr[arr.length - arg1 - 1];
+      if (arr.length > 15) {
+        tmp2 = arr[arr.length - 15 - 1];
       }
     }
     return tmp2;
   }
 }
-let closure_9 = {};
-let closure_10 = {};
-let closure_11 = {};
-let tmp2 = ((Store) => {
-  class MediaEngineStatsStore {
-    constructor() {
-      self = this;
-      tmp = outer1_2(this, MediaEngineStatsStore);
-      obj = outer1_5(MediaEngineStatsStore);
-      tmp2 = outer1_4;
-      if (outer1_12()) {
-        tmp6 = globalThis;
-        _Reflect = Reflect;
-        tmp7 = outer1_5;
-        tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, outer1_5(self).constructor);
-      } else {
-        tmp3 = arguments;
-        tmp4 = arguments;
-        constructResult = obj(...arguments);
+let closure_4 = {};
+let closure_5 = {};
+let closure_6 = {};
+class MediaEngineStatsStore extends Store {
+}
+const prototype = MediaEngineStatsStore.prototype;
+prototype["initialize"] = function initialize() {
+  this.waitFor(fetchFingerprint, initialize);
+};
+prototype["getConnectionStats"] = function getConnectionStats(mediaEngineConnectionId) {
+  let tmp = null;
+  if (null != mediaEngineConnectionId) {
+    let tmp3 = null;
+    if (null != dependencyMap[mediaEngineConnectionId]) {
+      tmp3 = null;
+      if (arr.length > 0) {
+        tmp3 = arr[arr.length - 1];
       }
-      return tmp2(self, constructResult);
+    }
+    tmp = tmp3;
+  }
+  return tmp;
+};
+prototype["getLastConnectionStats"] = function getLastConnectionStats(mediaEngineConnectionId) {
+  let tmp = null;
+  if (null != mediaEngineConnectionId) {
+    let tmp3 = null;
+    if (null != dependencyMap[mediaEngineConnectionId]) {
+      tmp3 = null;
+      if (arr.length > 1) {
+        tmp3 = arr[arr.length - 1 - 1];
+      }
+    }
+    tmp = tmp3;
+  }
+  return tmp;
+};
+prototype["getStatsHistory"] = function getStatsHistory(arg0) {
+  if (null == arg0) {
+    let items = [];
+  } else {
+    items = dependencyMap[arg0];
+    if (items == null) {
+      items = [];
     }
   }
-  callback2(MediaEngineStatsStore, Store);
-  let obj = {
-    key: "initialize",
-    value() {
-      this.waitFor(outer1_7, outer1_8);
+  return items;
+};
+prototype["getAccumulatedPerformanceStats"] = function getAccumulatedPerformanceStats(mediaEngineConnectionId, ownerId, long) {
+  if (null == mediaEngineConnectionId) {
+    return null;
+  } else {
+    const tmp2 = "long" === long ? closure_5 : closure_6[mediaEngineConnectionId];
+    let tmp3;
+    if (tmp2 != null) {
+      tmp3 = tmp2[ownerId];
     }
-  };
-  let items = [obj, , , , ];
-  obj = {
-    key: "getConnectionStats",
-    value(arg0) {
-      return outer1_19(arg0, 0);
+    if (tmp3 == null) {
+      tmp3 = null;
     }
-  };
-  items[1] = obj;
-  obj = {
-    key: "getLastConnectionStats",
-    value(arg0) {
-      return outer1_19(arg0, 1);
-    }
-  };
-  items[2] = obj;
-  items[3] = {
-    key: "getStatsHistory",
-    value(arg0) {
-      if (null == arg0) {
-        let items = [];
-      } else {
-        items = outer1_9[arg0];
-        if (null == items) {
-          items = [];
+    return tmp3;
+  }
+};
+MediaEngineStatsStore.displayName = "MediaEngineStatsStore";
+const mediaEngineStatsStore = new MediaEngineStatsStore(require("dispatcher"), {
+  MEDIA_ENGINE_CONNECTION_STATS: function handleMediaEngineConnectionStats(arg0) {
+    const iter = arg0.connectionStats[Symbol.iterator]();
+    const nextResult = iter.next();
+    while (iter !== undefined) {
+      let tmp2 = nextResult;
+      let prop = nextResult.mediaEngineConnectionId;
+      let tmp3 = prop;
+      if (0 !== prop.length) {
+        let tmp26 = prop;
+        let tmp27 = nextResult;
+        {}[tmp3] = tmp2;
+        let tmp28 = closure_4;
+        if (!(tmp3 in closure_4)) {
+          let tmp4 = prop;
+          tmp28[tmp3] = [];
         }
+        let tmp5 = prop;
+        let arr2 = tmp28[tmp3];
+        let tmp6 = nextResult;
+        let arr = arr2.push(tmp2);
+        arr = undefined;
+        if (tmp28[tmp3].length > 30) {
+          let tmp9 = prop;
+          let arr3 = tmp28[tmp3];
+          arr = arr3.shift();
+        }
+        let tmp10 = updateAveragedStats;
+        let tmp11 = closure_6;
+        let tmp14 = getStatsHistoryAtIndex;
+        let tmp12 = prop;
+        let tmp13 = nextResult;
+        let tmp15 = getStatsHistoryAtIndex(tmp3, 15);
+        let num = 0;
+        let tmp16 = tmp11;
+        let tmp17 = tmp3;
+        let tmp18 = tmp2;
+        let tmp19 = tmp15;
+        let tmp10Result = tmp10(tmp11, tmp12, tmp13, tmp15);
+        let tmp21 = closure_5;
+        let tmp22 = prop;
+        let tmp23 = nextResult;
+        let tmp24 = arr;
+        tmp10Result = tmp10(closure_5, tmp3, tmp2, arr);
       }
-      return items;
-    }
-  };
-  items[4] = {
-    key: "getAccumulatedPerformanceStats",
-    value(arg0, arg1, arg2) {
-      let tmp = null;
-      if (null != arg0) {
-        const tmp3 = "long" === arg2 ? outer1_10 : outer1_11[arg0];
-        let tmp4;
-        if (null != tmp3) {
-          tmp4 = tmp3[arg1];
-        }
-        let tmp6 = null;
-        if (null != tmp4) {
-          tmp6 = tmp4;
-        }
-        tmp = tmp6;
-      }
-      return tmp;
-    }
-  };
-  return callback(MediaEngineStatsStore, items);
-})(require("initialize").Store);
-tmp2.displayName = "MediaEngineStatsStore";
-tmp2 = new tmp2(require("dispatcher"), {
-  MEDIA_ENGINE_CONNECTION_STATS: function handleMediaEngineConnectionStats(connectionStats) {
-    let iter3;
-    const tmp = _createForOfIteratorHelperLoose(connectionStats.connectionStats);
-    const iter = tmp();
-    let iter2 = iter;
-    if (!iter.done) {
-      do {
-        let value = iter2.value;
-        let prop = value.mediaEngineConnectionId;
-        if (0 !== prop.length) {
-          {}[prop] = value;
-          let tmp26 = dependencyMap;
-          if (!(prop in dependencyMap)) {
-            let tmp2 = dependencyMap;
-            dependencyMap[prop] = [];
-          }
-          let tmp3 = dependencyMap;
-          let arr2 = dependencyMap[prop];
-          let arr = arr2.push(value);
-          let tmp5 = dependencyMap;
-          arr = undefined;
-          if (dependencyMap[prop].length > 30) {
-            let tmp7 = dependencyMap;
-            let arr3 = dependencyMap[prop];
-            arr = arr3.shift();
-          }
-          let tmp9 = closure_11;
-          let tmp10 = getStatsHistoryAtIndex;
-          let tmp8 = updateAveragedStats;
-          let tmp11 = getStatsHistoryAtIndex(prop, 15);
-          let tmp12;
-          if (null != tmp11) {
-            tmp12 = tmp11;
-          }
-          let tmp13 = tmp9;
-          let tmp14 = prop;
-          let tmp15 = value;
-          let tmp16 = tmp12;
-          let tmp8Result = tmp8(tmp9, prop, value, tmp12);
-          let tmp18 = updateAveragedStats;
-          let tmp19 = closure_10;
-          let tmp20 = prop;
-          let tmp21 = value;
-          let tmp22 = arr;
-          let tmp23 = updateAveragedStats(closure_10, prop, value, arr);
-          let tmp24 = tmp11;
-          let tmp25 = arr;
-        }
-        iter3 = tmp();
-        iter2 = iter3;
-      } while (!iter3.done);
+      continue;
     }
   },
   MEDIA_ENGINE_CONNECTION_STATS_HISTORY_RESET: function handleResetStats(mediaEngineConnectionId) {
@@ -482,25 +322,54 @@ tmp2 = new tmp2(require("dispatcher"), {
     } else {
       rTCConnection = rTCConnection.getRTCConnection(streamKey);
       let mediaEngineConnectionId;
-      if (null != rTCConnection) {
+      if (rTCConnection != null) {
         mediaEngineConnectionId = rTCConnection.getMediaEngineConnectionId();
       }
       if (null == mediaEngineConnectionId) {
         return false;
       } else {
-        resetAccumulatedStats(mediaEngineConnectionId, require(4229) /* isStreamKey */.decodeStreamKey(streamKey).ownerId);
+        const ownerId = require(4253) /* isStreamKey */.decodeStreamKey(streamKey).ownerId;
+        let tmp11;
+        if (dependencyMap2[mediaEngineConnectionId] != null) {
+          tmp11 = tmp10[ownerId];
+        }
+        if (null != tmp11) {
+          delete tmp3[tmp2];
+        }
+        let tmp15;
+        if (dependencyMap3[mediaEngineConnectionId] != null) {
+          tmp15 = tmp14[ownerId];
+        }
+        if (null != tmp15) {
+          delete tmp[tmp2];
+        }
       }
     }
   },
-  RTC_CONNECTION_VIDEO: function handleVideo(mediaEngineConnectionId) {
-    mediaEngineConnectionId = mediaEngineConnectionId.mediaEngineConnectionId;
+  RTC_CONNECTION_VIDEO: function handleVideo(arg0) {
+    let mediaEngineConnectionId;
+    let userId;
+    ({ userId, mediaEngineConnectionId } = arg0);
     if (null == mediaEngineConnectionId) {
       return false;
     } else {
-      resetAccumulatedStats(mediaEngineConnectionId, tmp);
+      let tmp6;
+      if (dependencyMap2[mediaEngineConnectionId] != null) {
+        tmp6 = tmp5[userId];
+      }
+      if (null != tmp6) {
+        delete tmp3[tmp2];
+      }
+      let tmp10;
+      if (dependencyMap3[mediaEngineConnectionId] != null) {
+        tmp10 = tmp9[userId];
+      }
+      if (null != tmp10) {
+        delete tmp[tmp2];
+      }
     }
   }
 });
-let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/media_engine/MediaEngineStatsStore.tsx");
+const result = require("isStreamKey").fileFinishedImporting("modules/media_engine/MediaEngineStatsStore.tsx");
 
-export default tmp2;
+export default mediaEngineStatsStore;

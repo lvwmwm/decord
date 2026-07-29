@@ -1,11 +1,11 @@
-// Module ID: 3800
-// Function ID: 28966
+// Module ID: 3824
+// Function ID: 3825
 // Name: doesThreadMembersActionAffectMe
-// Dependencies: [1194, 2]
+// Dependencies: [1218, 2]
 // Exports: doesThreadMembersActionAffectMe
 
-// Module 3800 (doesThreadMembersActionAffectMe)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 3824 (doesThreadMembersActionAffectMe)
+import fetchFingerprint from "fetchFingerprint";
 
 const result = require("set").fileFinishedImporting("modules/threads/ThreadActionUtils.tsx");
 
@@ -14,14 +14,20 @@ export const doesThreadMembersActionAffectMe = function doesThreadMembersActionA
   let tmp2 = null != id;
   if (tmp2) {
     removedMemberIds = removedMemberIds.removedMemberIds;
-    const tmp3 = null == removedMemberIds || !removedMemberIds.includes(id);
-    let tmp4 = !tmp3;
-    if (tmp3) {
-      const addedMembers = removedMemberIds.addedMembers;
-      tmp4 = !(null == addedMembers || !addedMembers.some((userId) => userId.userId === id));
-      const tmp5 = null == addedMembers || !addedMembers.some((userId) => userId.userId === id);
+    let hasItem;
+    if (removedMemberIds != null) {
+      hasItem = removedMemberIds.includes(id);
     }
-    tmp2 = tmp4;
+    let tmp5 = hasItem;
+    if (!tmp5) {
+      const addedMembers = removedMemberIds.addedMembers;
+      let someResult;
+      if (addedMembers != null) {
+        someResult = addedMembers.some((userId) => userId.userId === id);
+      }
+      tmp5 = someResult;
+    }
+    tmp2 = tmp5;
   }
   return tmp2;
 };

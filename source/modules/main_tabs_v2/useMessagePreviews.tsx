@@ -1,26 +1,31 @@
-// Module ID: 14312
-// Function ID: 109748
-// Name: useMessagePreviewSetting
-// Dependencies: [1316, 4177, 3838, 566, 9108, 3843, 14313, 2]
-// Exports: default
+// Module ID: 14334
+// Function ID: 14335
+// Name: useMessagePreview
+// Dependencies: [1340, 4201, 3862, 589, 9132, 3867, 14335, 2]
+// Exports: default, useMessagePreviewSetting
 
-// Module 14312 (useMessagePreviewSetting)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_4 from "_isNativeReflectConstruct";
+// Module 14334 (useMessagePreview)
+import handleConnectionClosedOrResumed from "handleConnectionClosedOrResumed";
+import generateOldThreadCutoff from "generateOldThreadCutoff";
 
 const require = arg1;
-function useMessagePreviewSetting(guild_id) {
-  const _require = guild_id;
-  const items = [_isNativeReflectConstruct];
-  return _require(566).useStateFromStores(items, () => {
+const result = require("explicitContentFromProto").fileFinishedImporting("modules/main_tabs_v2/useMessagePreviews.tsx");
+
+export default function useMessagePreview(guild_id) {
+  let disabled;
+  let unread;
+  ({ unread, disabled } = arg1);
+  guild_id = guild_id.guild_id;
+  const items = [handleConnectionClosedOrResumed];
+  const stateFromStores = guild_id(589).useStateFromStores(items, () => {
     const guilds = outer1_3.settings.guilds;
     let tmp2 = null;
     if (null != guild_id) {
       let messagePreviews;
-      if (null != guilds) {
-        if (null != guilds.guilds[tmp]) {
+      if (guilds != null) {
+        if (guilds.guilds[tmp] != null) {
           const mobileRedesignChannelListSettings = tmp4.mobileRedesignChannelListSettings;
-          if (null != mobileRedesignChannelListSettings) {
+          if (mobileRedesignChannelListSettings != null) {
             messagePreviews = mobileRedesignChannelListSettings.messagePreviews;
           }
         }
@@ -37,39 +42,59 @@ function useMessagePreviewSetting(guild_id) {
     const MessagePreviewSetting = guild_id(outer1_2[2]).MessagePreviewSetting;
     setting = MessagePreviewSetting.getSetting();
   });
-}
-const result = require("explicitContentFromProto").fileFinishedImporting("modules/main_tabs_v2/useMessagePreviews.tsx");
-
-export default function useMessagePreview(guild_id) {
-  let disabled;
-  let unread;
-  const _require = guild_id;
-  ({ unread, disabled } = arg1);
-  const tmp = useMessagePreviewSetting(guild_id.guild_id);
-  const items = [closure_4];
-  let stateFromStores = _require(566).useStateFromStores(items, () => {
+  const obj = guild_id(589);
+  const items1 = [generateOldThreadCutoff];
+  const stateFromStores1 = guild_id(589).useStateFromStores(items1, () => {
     let hasUnreadResult = null != guild_id;
     if (hasUnreadResult) {
-      hasUnreadResult = outer1_4.hasUnread(guild_id.id);
+      hasUnreadResult = outer1_4.hasUnread(tmp.id);
     }
     return hasUnreadResult;
   });
   if (!disabled) {
-    disabled = importDefault(9108)(guild_id);
+    disabled = importDefault(9132)(guild_id);
   }
   if (!disabled) {
-    disabled = tmp === _require(3843).MessagePreviewTypes.NONE;
+    disabled = stateFromStores === tmp(3867).MessagePreviewTypes.NONE;
   }
   if (!disabled) {
-    let tmp7 = tmp === _require(3843).MessagePreviewTypes.UNREADS;
-    if (tmp7) {
-      if (null != unread) {
-        stateFromStores = unread;
+    let tmp6 = stateFromStores === tmp(3867).MessagePreviewTypes.UNREADS;
+    if (tmp6) {
+      if (unread == null) {
+        unread = stateFromStores1;
       }
-      tmp7 = !stateFromStores;
+      tmp6 = !unread;
     }
-    disabled = tmp7;
+    disabled = tmp6;
   }
-  return importDefault(14313)(guild_id, disabled);
+  return importDefault(14335)(guild_id, disabled);
 };
-export { useMessagePreviewSetting };
+export const useMessagePreviewSetting = function useMessagePreviewSetting(arg0) {
+  const _require = arg0;
+  const items = [handleConnectionClosedOrResumed];
+  return _require(589).useStateFromStores(items, () => {
+    const guilds = outer1_3.settings.guilds;
+    let tmp2 = null;
+    if (null != guild_id) {
+      let messagePreviews;
+      if (guilds != null) {
+        if (guilds.guilds[tmp] != null) {
+          const mobileRedesignChannelListSettings = tmp4.mobileRedesignChannelListSettings;
+          if (mobileRedesignChannelListSettings != null) {
+            messagePreviews = mobileRedesignChannelListSettings.messagePreviews;
+          }
+        }
+      }
+      tmp2 = messagePreviews;
+    }
+    if (null != tmp2) {
+      const ValidMessagePreviewTypes = guild_id(outer1_2[2]).ValidMessagePreviewTypes;
+      if (ValidMessagePreviewTypes.has(tmp2.value)) {
+        let setting = tmp2.value;
+      }
+      return setting;
+    }
+    const MessagePreviewSetting = guild_id(outer1_2[2]).MessagePreviewSetting;
+    setting = MessagePreviewSetting.getSetting();
+  });
+};

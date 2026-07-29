@@ -1,131 +1,234 @@
-// Module ID: 4404
-// Function ID: 38896
+// Module ID: 4427
+// Function ID: 4428
 // Name: _httpGetWithCountryCodeQuery
-// Dependencies: [5, 1194, 3813, 3814, 3817, 653, 4405, 4403, 4484, 1426, 4486, 507, 477, 1212, 2]
+// Dependencies: [5, 1218, 3837, 3838, 3841, 676, 4428, 4426, 4507, 1450, 4509, 530, 500, 1236, 2]
 // Exports: getAssetURL, getPrimarySKUForApplication, httpGetWithCountryCodeQuery, nativePlatformTypeToSKUOperatingSystem, skuOperatingSystemToText
 
-// Module 4404 (_httpGetWithCountryCodeQuery)
+// Module 4427 (_httpGetWithCountryCodeQuery)
 import closure_2 from "ME";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_4 from "_isNativeReflectConstruct";
-import closure_5 from "_isNativeReflectConstruct";
-import closure_6 from "_isNativeReflectConstruct";
+import fetchFingerprint from "fetchFingerprint";
+import handlePaymentSourceCreateEnd from "handlePaymentSourceCreateEnd";
+import handlePaymentSourceUpdate from "handlePaymentSourceUpdate";
+import reset from "reset";
 import ME from "ME";
+import { isMobile } from "isTablet";
 import importDefaultResult from "allSettled";
 
-let closure_7;
-let closure_8;
+let error;
+let metroImportAll;
 const require = arg1;
-async function _httpGetWithCountryCodeQuery(arg0, arg1) {
-  let iter = (function*(url) {
-    let flag = arg1;
-    if (flag === undefined) {
-      flag = true;
-    }
-    yield undefined;
-    if (flag) {
-      if (outer2_3.isAuthenticated()) {
-        const items = [];
-        if (!outer2_5.hasFetchedPaymentSources) {
-          let paymentSourcesFetchRequest = outer2_4.paymentSourcesFetchRequest;
-          if (null == paymentSourcesFetchRequest) {
-            let obj = outer2_0(outer2_1[10]);
-            paymentSourcesFetchRequest = obj.fetchPaymentSources();
-          }
-          items.push(paymentSourcesFetchRequest);
+function _httpGetWithCountryCodeQuery() {
+  let self = this;
+  const tmp = callback((arg0) => {
+    let closure_0 = arg0;
+    let closure_1 = arg1;
+    let c7 = 0;
+    let c8 = 0;
+    const iter = (function*(arg0) {
+      if (merged === 2) {
+        merged = 3;
+        HermesBuiltin.throwTypeError();
+      } else if (tmp4 === 3) {
+        if (arg0 === 1) {
+          throw arg1;
+        } else if (arg0 === 2) {
+          let obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
+        } else {
+          return { value: "HermesInternal", done: null };
         }
-        if (!outer2_4.ipCountryCodeLoaded) {
-          let obj1 = outer2_0(outer2_1[10]);
-          items.push(obj1.fetchIpCountryCode());
-        }
-        items.push((function waitForSubscriptionsToBeFetched() {
-          return new Promise((() => {
-            let closure_0 = outer4_2(async (arg0) => {
-              function wait() { ... }
-              return (/* F38903 */ function*() { ... })();
-            });
-            return function() {
-              return callback(...arguments);
-            };
-          })());
-        })());
-        const items1 = [Promise.allSettled(items), ];
-        const promise = new Promise((arg0) => setTimeout(arg0, 10000));
-        items1[1] = promise;
-        yield Promise.race(items1);
-      }
-    }
-    let defaultBillingCountryCode = outer2_5.getDefaultBillingCountryCode();
-    const defaultPaymentSource = outer2_5.defaultPaymentSource;
-    let id;
-    if (null != defaultPaymentSource) {
-      id = defaultPaymentSource.id;
-    }
-    let paymentSourceId = null;
-    if (null != id) {
-      paymentSourceId = id;
-    }
-    const premiumTypeSubscription = outer2_6.getPremiumTypeSubscription();
-    if (tmp23) {
-      paymentSourceId = premiumTypeSubscription.paymentSourceId;
-    }
-    if (null === defaultBillingCountryCode) {
-      const ipCountryCode = outer2_4.ipCountryCode;
-      let tmp25 = null;
-      if (null != ipCountryCode) {
-        tmp25 = ipCountryCode;
-      }
-      defaultBillingCountryCode = tmp25;
-    }
-    obj = {};
-    if (null != defaultBillingCountryCode) {
-      obj.country_code = defaultBillingCountryCode;
-    }
-    if (null != paymentSourceId) {
-      obj.payment_source_id = paymentSourceId;
-    }
-    if (null != defaultBillingCountryCode) {
-      let tmp27 = url;
-      if ("string" === typeof url) {
-        obj = { url, oldFormErrors: true, rejectWithError: false };
-        tmp27 = obj;
-      }
-      if ("string" === typeof tmp27.query) {
-        const _Error = Error;
-        const error = new Error("string query not supported");
-        throw error;
       } else {
-        obj1 = {};
-        const merged = Object.assign(obj);
-        const merged1 = Object.assign(tmp27.query);
-        tmp27.query = obj1;
-        let tmp26 = tmp27;
+        try {
+          merged = 2;
+          if (0 === closure_7) {
+            if (arg0 === 1) {
+              merged = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              merged = 3;
+              obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            } else {
+              let premiumTypeSubscription = tmp5;
+              let paymentSourceId = tmp2;
+              let flag;
+              if (flag === undefined) {
+                flag = true;
+              }
+              let c2;
+              let arr;
+              let defaultBillingCountryCode;
+              paymentSourceId = undefined;
+              premiumTypeSubscription = undefined;
+              closure_7 = undefined;
+              closure_7 = 1;
+              merged = 1;
+              return { value: "ct", done: null };
+            }
+          } else {
+            if (1 === tmp5) {
+              if (arg0 === 1) {
+                merged = 3;
+                throw arg1;
+              } else if (arg0 === 2) {
+                merged = 3;
+                let obj1 = { value: null, done: true };
+                obj1[0] = arg1;
+                return obj1;
+              } else {
+                c2 = arr.isAuthenticated();
+                if (flag) {
+                  if (c2) {
+                    arr = [];
+                    if (!paymentSourceId.hasFetchedPaymentSources) {
+                      const paymentSourcesFetchRequest = defaultBillingCountryCode.paymentSourcesFetchRequest;
+                      arr = paymentSourcesFetchRequest;
+                      if (paymentSourcesFetchRequest == null) {
+                        let obj2 = obj3(flag[10]);
+                        arr = obj2.fetchPaymentSources();
+                      }
+                      arr = arr.push(arr);
+                    }
+                    if (!defaultBillingCountryCode.ipCountryCodeLoaded) {
+                      obj3 = obj3(flag[10]);
+                      arr = arr.push(obj3.fetchIpCountryCode());
+                    }
+                    arr.push((function waitForSubscriptionsToBeFetched() {
+                      let closure_0;
+                      closure_0 = _null((arg0) => {
+                        let closure_0 = arg0;
+                        let c2 = 0;
+                        let c3 = 0;
+                        return (/* F119018 */ function*() { ... })();
+                      });
+                      return new Promise(function() {
+                        const self = this;
+                        const apply = closure_0.apply;
+                        if (typeof apply === "unknown") {
+                          let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+                        } else {
+                          applyArgumentsResult = apply(self, arguments);
+                        }
+                        return applyArgumentsResult;
+                      });
+                    })());
+                    const items = [Promise.allSettled(arr), ];
+                    const promise = new Promise((arg0) => setTimeout(arg0, 10000));
+                    items[1] = promise;
+                    closure_7 = 2;
+                    merged = 1;
+                    obj2 = { value: null, done: false };
+                    obj2[0] = Promise.race(items);
+                    return obj2;
+                  }
+                }
+              }
+            } else if (arg0 === 1) {
+              merged = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              merged = 3;
+              obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            }
+            defaultBillingCountryCode = paymentSourceId.getDefaultBillingCountryCode();
+            const defaultPaymentSource = paymentSourceId.defaultPaymentSource;
+            let id;
+            if (defaultPaymentSource != null) {
+              id = defaultPaymentSource.id;
+            }
+            c2 = id;
+            if (id == null) {
+              c2 = null;
+            }
+            paymentSourceId = c2;
+            premiumTypeSubscription = premiumTypeSubscription.getPremiumTypeSubscription();
+            let tmp19 = null != premiumTypeSubscription;
+            if (tmp19) {
+              tmp19 = null != premiumTypeSubscription.paymentSourceId;
+            }
+            if (tmp19) {
+              paymentSourceId = premiumTypeSubscription.paymentSourceId;
+            }
+            if (null === defaultBillingCountryCode) {
+              const ipCountryCode = defaultBillingCountryCode.ipCountryCode;
+              defaultBillingCountryCode = ipCountryCode;
+              if (ipCountryCode == null) {
+                defaultBillingCountryCode = null;
+              }
+            }
+            closure_7 = {};
+            if (null != defaultBillingCountryCode) {
+              closure_7.country_code = defaultBillingCountryCode;
+            }
+            if (null != paymentSourceId) {
+              closure_7.payment_source_id = paymentSourceId;
+            }
+            if (null != defaultBillingCountryCode) {
+              if (typeof obj3 !== "init") {
+                obj3 = { url: null, oldFormErrors: true, rejectWithError: false };
+                obj3[0] = obj3;
+              }
+              if (typeof obj3.query === "y") {
+                const _Error = Error;
+                const error = new Error("string query not supported");
+                throw error;
+              } else {
+                const obj4 = {};
+                merged = closure_7;
+                merged = obj4;
+                merged = Object.assign(closure_7);
+                merged = obj3;
+                merged = obj4;
+                merged = Object.assign(obj3.query);
+                obj3.query = obj4;
+              }
+            }
+            const HTTP = obj3(flag[11]).HTTP;
+            merged = 3;
+            const obj5 = { value: null, done: true };
+            obj5[0] = HTTP.get(obj3);
+            return obj5;
+          }
+        } catch (tmp87) {
+          throw tmp87;
+        }
       }
-    } else {
-      tmp26 = url;
-    }
-    const HTTP = outer2_0(outer2_1[11]).HTTP;
-    return HTTP.get(tmp26);
-  })();
-  iter.next();
-  return iter;
+    })();
+    iter.next();
+    return iter;
+  });
+  const _httpGetWithCountryCodeQuery = tmp;
+  let apply = tmp.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
 }
-({ Endpoints: closure_7, OperatingSystems: closure_8 } = ME);
+({ Endpoints: error, OperatingSystems: metroImportAll } = ME);
 require("allSettled").shim();
-let tmp4 = !require("isTablet").isMobile && !require("isTablet").isTablet;
-if (tmp4) {
-  tmp4 = -1 !== require("getChromeVersion").getChromeVersion();
-  let obj2 = require("getChromeVersion");
+let tmp4 = !isMobile;
+if (!isMobile) {
+  tmp4 = !require("isTablet").isTablet;
 }
-let closure_9 = tmp4;
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("utils/StoreUtils.tsx");
+if (tmp4) {
+  tmp4 = -1 !== require("num2").getChromeVersion();
+  let obj2 = require("num2");
+}
+let c9 = tmp4;
+const result = require("handlePaymentSourceCreateEnd").fileFinishedImporting("utils/StoreUtils.tsx");
 
 export const SUPPORTS_WEBP = tmp4;
-export const getAssetURL = function getAssetURL(application_id, thumbnailAssetId, heroWidth, webp) {
-  let str = webp;
-  if (null == webp) {
+export const getAssetURL = function getAssetURL(closure_7, mimeType, arg2, mp4) {
+  let str = mp4;
+  if (null == mp4) {
     str = "mp4";
-    if ("video/quicktime" !== (thumbnailAssetId.mimeType || thumbnailAssetId.mime_type)) {
+    if ("video/quicktime" !== (mimeType.mimeType || mimeType.mime_type)) {
       str = "mp4";
       if ("video/mp4" !== tmp) {
         str = "image/gif" === tmp ? "gif" : "webp";
@@ -135,36 +238,43 @@ export const getAssetURL = function getAssetURL(application_id, thumbnailAssetId
   if (!tmp2) {
     str = "png";
   }
-  let id = thumbnailAssetId;
-  if ("string" !== typeof thumbnailAssetId) {
-    id = thumbnailAssetId.id;
+  let id = mimeType;
+  if (typeof mimeType !== "y") {
+    id = mimeType.id;
   }
   if (null != CDN_HOST) {
     const _HermesInternal2 = HermesInternal;
-    let combined = "" + "https:" + "//" + CDN_HOST + "/app-assets/" + application_id + "/store/" + id + "." + str;
+    let combined = "" + "https:" + "//" + CDN_HOST + "/app-assets/" + closure_7 + "/store/" + id + "." + str;
   } else {
     const _window = window;
     const _HermesInternal = HermesInternal;
-    combined = "" + "https:" + window.GLOBAL_ENV.API_ENDPOINT + closure_7.STORE_ASSET(application_id, id, str);
+    combined = "" + "https:" + window.GLOBAL_ENV.API_ENDPOINT + closure_7.STORE_ASSET(closure_7, id, str);
   }
   let sum = combined;
-  if (null != heroWidth) {
-    const obj = require(1426) /* isAttachmentLadderEnabled */;
+  if (null != arg2) {
+    const obj = require(1450) /* isAttachmentLadderEnabled */;
     const _HermesInternal3 = HermesInternal;
-    sum = combined + "?size=" + obj.getBestMediaProxySize(heroWidth * require(1426) /* isAttachmentLadderEnabled */.getDevicePixelRatio());
-    const obj2 = require(1426) /* isAttachmentLadderEnabled */;
+    sum = combined + "?size=" + obj.getBestMediaProxySize(arg2 * require(1450) /* isAttachmentLadderEnabled */.getDevicePixelRatio());
+    const obj2 = require(1450) /* isAttachmentLadderEnabled */;
   }
   return sum;
 };
 export const httpGetWithCountryCodeQuery = function httpGetWithCountryCodeQuery(result) {
-  return _httpGetWithCountryCodeQuery(...arguments);
+  const self = this;
+  const apply = _httpGetWithCountryCodeQuery.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
 };
 export const nativePlatformTypeToSKUOperatingSystem = function nativePlatformTypeToSKUOperatingSystem(platform) {
-  if (require(477) /* set */.PlatformTypes.WINDOWS === platform) {
+  if (require(500) /* set */.PlatformTypes.WINDOWS === platform) {
     return constants.WINDOWS;
-  } else if (require(477) /* set */.PlatformTypes.OSX === platform) {
+  } else if (tmp(500).PlatformTypes.OSX === platform) {
     return constants.MACOS;
-  } else if (require(477) /* set */.PlatformTypes.LINUX === platform) {
+  } else if (tmp(500).PlatformTypes.LINUX === platform) {
     return constants.LINUX;
   } else {
     return null;
@@ -172,14 +282,14 @@ export const nativePlatformTypeToSKUOperatingSystem = function nativePlatformTyp
 };
 export const skuOperatingSystemToText = function skuOperatingSystemToText(arg0) {
   if (constants.WINDOWS === arg0) {
-    const intl3 = require(1212) /* getSystemLocale */.intl;
-    return intl3.string(require(1212) /* getSystemLocale */.t["0/xHFO"]);
-  } else if (constants.MACOS === arg0) {
-    const intl2 = require(1212) /* getSystemLocale */.intl;
-    return intl2.string(require(1212) /* getSystemLocale */.t.E4u4n5);
-  } else if (constants.LINUX === arg0) {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(require(1212) /* getSystemLocale */.t.tcawo3);
+    const intl3 = require(1236) /* getSystemLocale */.intl;
+    return intl3.string(require(1236) /* getSystemLocale */.t["0/xHFO"]);
+  } else if (tmp.MACOS === arg0) {
+    const intl2 = require(1236) /* getSystemLocale */.intl;
+    return intl2.string(require(1236) /* getSystemLocale */.t.E4u4n5);
+  } else if (tmp.LINUX === arg0) {
+    const intl = require(1236) /* getSystemLocale */.intl;
+    return intl.string(require(1236) /* getSystemLocale */.t.tcawo3);
   } else {
     const _Error = Error;
     const _HermesInternal = HermesInternal;
@@ -187,8 +297,8 @@ export const skuOperatingSystemToText = function skuOperatingSystemToText(arg0) 
     throw error;
   }
 };
-export const getPrimarySKUForApplication = function getPrimarySKUForApplication(applicationId, getApplication, get) {
-  const application = getApplication.getApplication(applicationId);
+export const getPrimarySKUForApplication = function getPrimarySKUForApplication(arg0, getApplication, get) {
+  const application = getApplication.getApplication(arg0);
   let value = null;
   if (null != application) {
     value = null;

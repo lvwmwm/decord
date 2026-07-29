@@ -1,25 +1,21 @@
-// Module ID: 5197
-// Function ID: 45089
+// Module ID: 5219
+// Function ID: 5220
 // Name: context
-// Dependencies: [31, 33, 2]
+// Dependencies: [19, 21, 2]
 // Exports: RedesignCompat
 
-// Module 5197 (context)
+// Module 5219 (context)
 import { jsx } from "jsxProd";
-import importAllResult from "result";
+import importAllResult from "noop";
 
-const context = require("result").createContext(false);
+const context = require("noop").createContext(false);
 const result = require("set").fileFinishedImporting("design/components/RedesignCompat/native/RedesignCompat.native.tsx");
 
 export const RedesignCompatContext = context;
-export const RedesignCompat = function RedesignCompat(enabled) {
-  enabled = enabled.enabled;
-  const obj = {};
-  let tmp2 = null == enabled;
-  if (!tmp2) {
-    tmp2 = enabled;
+export const RedesignCompat = function RedesignCompat(children) {
+  let enabled = children.enabled;
+  if (enabled == null) {
+    enabled = true;
   }
-  obj.value = tmp2;
-  obj.children = enabled.children;
-  return <context.Provider />;
+  return <context.Provider value={enabled}>{arg0.children}</context.Provider>;
 };

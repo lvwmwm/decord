@@ -1,39 +1,39 @@
-// Module ID: 11813
-// Function ID: 91555
+// Module ID: 11838
+// Function ID: 11839
 // Name: HubEmailConnectionSubmitSchool
-// Dependencies: [5, 57, 31, 27, 11796, 653, 33, 4165, 689, 1456, 5193, 11809, 4064, 11804, 1273, 1212, 4161, 8971, 4578, 2]
+// Dependencies: [5, 32, 19, 17, 11821, 676, 21, 4189, 712, 1480, 5215, 11834, 4088, 11829, 1297, 1236, 4185, 8995, 4600, 2]
 // Exports: default
 
-// Module 11813 (HubEmailConnectionSubmitSchool)
+// Module 11838 (HubEmailConnectionSubmitSchool)
 import ME from "ME";
 import _slicedToArray from "_slicedToArray";
-import result from "result";
-import get_ActivityIndicator from "get ActivityIndicator";
+import set from "set";
+import get_ActivityIndicator from "module_8995";
 import { HubEmailConnectionSteps } from "HubEmailConnectionSteps";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_10;
+let c10;
+let c9;
 let closure_6;
-let closure_7;
-let closure_9;
+let error;
 const require = arg1;
-({ View: closure_6, ScrollView: closure_7 } = get_ActivityIndicator);
-({ jsx: closure_9, jsxs: closure_10 } = jsxProd);
-_createForOfIteratorHelperLoose = { container: { paddingHorizontal: 16 } };
-_createForOfIteratorHelperLoose = { fontFamily: require("ME").Fonts.PRIMARY_BOLD, color: require("_createForOfIteratorHelperLoose").colors.MOBILE_TEXT_HEADING_PRIMARY, fontSize: 24, textAlign: "center", marginBottom: 8 };
-_createForOfIteratorHelperLoose.title = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.description = { textAlign: "center", marginBottom: 24 };
-_createForOfIteratorHelperLoose.scrollViewContainer = { flexGrow: 2 };
-_createForOfIteratorHelperLoose.input = { marginBottom: 8 };
-_createForOfIteratorHelperLoose.redesignTextInput = { borderRadius: require("_createForOfIteratorHelperLoose").radii.lg };
-let obj1 = { borderRadius: require("_createForOfIteratorHelperLoose").radii.lg };
-_createForOfIteratorHelperLoose.redesignGrowSpacing = { flexGrow: 2, minHeight: require("_createForOfIteratorHelperLoose").space.PX_24 };
-const obj2 = { flexGrow: 2, minHeight: require("_createForOfIteratorHelperLoose").space.PX_24 };
-_createForOfIteratorHelperLoose.redesignSubmit = { paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16 };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-let obj3 = { paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16 };
-const result = require("result").fileFinishedImporting("modules/hub/native/components/HubEmailConnectionSubmitSchool.tsx");
+({ View: closure_6, ScrollView: error } = get_ActivityIndicator);
+({ jsx: c9, jsxs: c10 } = jsxProd);
+createCacheKey = { container: { paddingHorizontal: 16 }, title: null, description: null, scrollViewContainer: null, input: null, redesignTextInput: null, redesignGrowSpacing: null, redesignSubmit: null };
+createCacheKey = { fontFamily: require("ME").Fonts.PRIMARY_BOLD, color: require("Themes").colors.MOBILE_TEXT_HEADING_PRIMARY, fontSize: 24, textAlign: "center", marginBottom: 8 };
+createCacheKey[1] = createCacheKey;
+createCacheKey[2] = { textAlign: "center", marginBottom: 24 };
+createCacheKey[3] = { flexGrow: 2 };
+createCacheKey[4] = { marginBottom: 8 };
+createCacheKey[5] = { borderRadius: require("Themes").radii.lg };
+let obj1 = { borderRadius: require("Themes").radii.lg };
+createCacheKey[6] = { flexGrow: 2, minHeight: require("Themes").space.PX_24 };
+let obj2 = { flexGrow: 2, minHeight: require("Themes").space.PX_24 };
+createCacheKey[7] = { paddingHorizontal: require("Themes").space.PX_16 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let obj3 = { paddingHorizontal: require("Themes").space.PX_16 };
+const result = require("noop").fileFinishedImporting("modules/hub/native/components/HubEmailConnectionSubmitSchool.tsx");
 
 export default function HubEmailConnectionSubmitSchool(arg0) {
   let c4;
@@ -44,82 +44,178 @@ export default function HubEmailConnectionSubmitSchool(arg0) {
   let dependencyMap;
   let ME;
   let callback;
+  let ref;
   let first;
   function _submitWaitlist() {
-    // CreateGeneratorClosureLongIndex (0x67)
-    const obj = callback(tmp);
-    return obj(...arguments);
+    const self = this;
+    const tmp = callback(function*() {
+      if (c5 === 2) {
+        c5 = 3;
+        HermesBuiltin.throwTypeError();
+      } else if (tmp7 === 3) {
+        if (arg0 === 1) {
+          throw arg1;
+        } else if (arg0 === 2) {
+          let obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
+        } else {
+          return { value: "HermesInternal", done: null };
+        }
+      } else {
+        try {
+          c5 = 2;
+          if (0 === v02) {
+            if (arg0 === 1) {
+              c5 = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              c5 = 3;
+              obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            } else {
+              let closure_1 = tmp4;
+              let closure_0 = tmp8;
+              v02(null);
+              let v0 = 2;
+              v0(true);
+              let obj2 = outer1_1(outer1_2[11]);
+              v02 = 3;
+              c5 = 1;
+              const obj1 = { value: null, done: false };
+              obj1[0] = obj2.signup(outer1_1, outer1_6);
+              return obj1;
+            }
+          } else if (1 === tmp8) {
+            v0 = 0;
+            v0(false);
+            throw arr;
+          } else {
+            if (2 === tmp8) {
+              v0 = 1;
+              const outer1_0 = arr;
+              const aPIError = new outer1_0(outer1_2[12]).APIError(outer1_0);
+              v02(aPIError);
+              v0 = 0;
+              v0(false);
+              c5 = 3;
+            } else if (arg0 === 1) {
+              c5 = 3;
+              throw arg1;
+            } else if (arg0 !== 2) {
+              obj = { school: null, onClose: null };
+              obj[0] = closure_6;
+              obj[1] = closure_0;
+              arr = arr.push(outer1_8.EMAIL_WAITLIST, obj);
+              v0 = 1;
+            }
+            v0 = 0;
+            v0(false);
+            c5 = 3;
+            obj2 = { value: null, done: true };
+            obj2[0] = arg1;
+            return obj2;
+          }
+        } catch (tmp47) {
+          arr = tmp47;
+          if (tmp5 === v0) {
+            c5 = tmp3;
+            throw tmp47;
+          } else if (tmp2 === tmp49) {
+            v02 = tmp2;
+          } else {
+            v02 = tmp;
+          }
+        }
+      }
+    });
+    const _submitWaitlist = tmp;
+    const apply = tmp.apply;
+    if (typeof apply === "unknown") {
+      let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+    } else {
+      applyArgumentsResult = apply(self, arguments);
+    }
+    return applyArgumentsResult;
   }
-  const tmp = _createForOfIteratorHelperLoose();
-  let obj = require(1456) /* useNavigation */;
+  let tmp = createCacheKey();
+  let obj = require(1480) /* useNavigation */;
   dependencyMap = obj.useNavigation();
-  const tmp2 = callback(ref.useState(false), 2);
-  ME = tmp2[1];
+  const tmp4 = callback(ref.useState(false), 2);
+  ME = tmp4[1];
   [obj2, c4] = callback(ref.useState(null), 2);
   ref = ref.useRef(null);
-  const tmp5 = callback(ref.useState(""), 2);
-  first = tmp5[0];
-  obj = {};
-  obj = { ref };
+  const tmp7 = callback(ref.useState(""), 2);
+  first = tmp7[0];
+  obj = { ref, contentContainerStyle: null, children: null };
   const items = [tmp.scrollViewContainer, ];
-  const obj1 = { paddingBottom: importDefault(5193)().insets.bottom + importDefault(689).space.PX_16 };
-  items[1] = obj1;
-  obj.contentContainerStyle = items;
-  obj2 = { style: tmp.container };
-  const obj3 = { style: tmp.title, accessibilityRole: "header" };
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj3.children = intl.string(require(1212) /* getSystemLocale */.t["2FNWBG"]);
-  const items1 = [callback2(require(1273) /* Button */.LegacyText, obj3), , ];
-  const obj4 = { style: tmp.description, variant: "text-sm/medium", color: "text-default" };
-  const intl2 = require(1212) /* getSystemLocale */.intl;
-  obj4.children = intl2.string(require(1212) /* getSystemLocale */.t["/4y6ox"]);
-  items1[1] = callback2(require(4161) /* Text */.Text, obj4);
-  const obj5 = {};
-  const tmp10 = first;
-  const tmp3 = callback(ref.useState(null), 2);
-  const tmp9 = _submitWaitlist;
-  const intl3 = require(1212) /* getSystemLocale */.intl;
-  obj5.label = intl3.string(require(1212) /* getSystemLocale */.t["L+AfJr"]);
-  const intl4 = require(1212) /* getSystemLocale */.intl;
-  obj5.placeholder = intl4.string(require(1212) /* getSystemLocale */.t.Y1btJd);
-  obj5.value = first;
-  obj5.onChangeText = tmp5[1];
-  ({ input: obj9.style, redesignTextInput: obj9.textStyle } = tmp);
-  obj5.clearButtonVisibility = require(1273) /* Button */.ClearButtonVisibility.WITH_CONTENT;
+  obj = { paddingBottom: null };
+  obj[0] = importDefault(5215)().insets.bottom + importDefault(712).space.PX_16;
+  items[1] = obj;
+  obj[1] = items;
+  let obj1 = { style: tmp.container, children: null };
+  obj2 = { style: tmp.title, accessibilityRole: "header", children: null };
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj2[2] = intl.string(require(1236) /* getSystemLocale */.t["2FNWBG"]);
+  const items1 = [callback2(require(1297) /* Button */.LegacyText, obj2), , ];
+  const obj3 = { style: tmp.description, variant: "text-sm/medium", color: "text-default", children: null };
+  const intl2 = require(1236) /* getSystemLocale */.intl;
+  obj3[3] = intl2.string(require(1236) /* getSystemLocale */.t["/4y6ox"]);
+  items1[1] = callback2(require(4185) /* Text */.Text, obj3);
+  const obj4 = { label: null, placeholder: null, value: null, onChangeText: null, style: null, textStyle: null, clearButtonVisibility: null, error: null, onFocus: null, onBlur: null };
+  const tmp11 = _submitWaitlist;
+  const tmp5 = callback(ref.useState(null), 2);
+  const intl3 = require(1236) /* getSystemLocale */.intl;
+  obj4[0] = intl3.string(require(1236) /* getSystemLocale */.t["L+AfJr"]);
+  const intl4 = require(1236) /* getSystemLocale */.intl;
+  obj4[1] = intl4.string(require(1236) /* getSystemLocale */.t.Y1btJd);
+  obj4[2] = first;
+  obj4[3] = tmp7[1];
+  ({ input: obj8[4], redesignTextInput: obj8[5] } = tmp);
+  obj4[6] = require(1297) /* Button */.ClearButtonVisibility.WITH_CONTENT;
   let anyErrorMessage;
-  if (null != obj1) {
+  if (obj1 != null) {
     anyErrorMessage = obj1.getAnyErrorMessage();
   }
-  obj5.error = anyErrorMessage;
-  obj5.onFocus = function onFocus() {
+  const obj5 = { children: null };
+  obj4[7] = anyErrorMessage;
+  obj4[8] = function onFocus() {
     const timerId = setTimeout(() => {
-      const current = outer1_5.current;
-      if (null != current) {
+      const current = ref.current;
+      if (current != null) {
         current.scrollToEnd();
       }
     }, 100);
   };
-  obj5.onBlur = function onBlur() {
+  obj4[9] = function onBlur() {
     const timerId = setTimeout(() => {
-      const current = outer1_5.current;
-      if (null != current) {
+      const current = ref.current;
+      if (current != null) {
         current.scrollToEnd();
       }
     }, 100);
   };
-  items1[2] = callback2(importDefault(8971), obj5);
-  obj2.children = items1;
-  const items2 = [closure_10(tmp10, obj2), callback2(first, { style: tmp.redesignGrowSpacing }), ];
-  const obj7 = { style: tmp.redesignSubmit };
-  const obj8 = { size: "lg", loading: tmp2[0] };
-  const intl5 = require(1212) /* getSystemLocale */.intl;
-  obj8.text = intl5.string(require(1212) /* getSystemLocale */.t.PDsYAo);
-  obj8.onPress = function submitWaitlist() {
-    return _submitWaitlist(...arguments);
+  items1[2] = callback2(importDefault(8995), obj4);
+  obj1[1] = items1;
+  const items2 = [closure_10(first, obj1), callback2(first, { style: tmp.redesignGrowSpacing }), ];
+  const obj7 = { style: tmp.redesignSubmit, children: null };
+  const obj8 = { size: "lg", loading: tmp4[0], text: null, onPress: null };
+  const intl5 = tmp2(1236).intl;
+  obj8[2] = intl5.string(require(1236) /* getSystemLocale */.t.PDsYAo);
+  obj8[3] = function submitWaitlist() {
+    const self = this;
+    const apply = _submitWaitlist.apply;
+    if (typeof apply === "unknown") {
+      let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+    } else {
+      applyArgumentsResult = apply(self, arguments);
+    }
+    return applyArgumentsResult;
   };
-  obj7.children = callback2(require(4578) /* Button */.Button, obj8);
+  obj7[1] = callback2(require(4600) /* Button */.Button, obj8);
   items2[2] = callback2(first, obj7);
-  obj.children = items2;
-  obj.children = closure_10(tmp9, obj);
-  return callback2(require(11804) /* getScreens */.HubEmailConnectionScreen, obj);
+  obj[2] = items2;
+  obj5[0] = closure_10(tmp11, obj);
+  return callback2(require(11829) /* HubEmailConnectionModal */.HubEmailConnectionScreen, obj5);
 };

@@ -1,53 +1,53 @@
-// Module ID: 8431
-// Function ID: 67245
+// Module ID: 8455
+// Function ID: 8456
 // Name: RestrictedGuildProfileView
-// Dependencies: [31, 27, 33, 8432, 4101, 3869, 689, 4589, 5548, 4161, 1212, 2]
+// Dependencies: [19, 17, 21, 8456, 4125, 3893, 712, 4611, 5566, 4185, 1236, 2]
 // Exports: default
 
-// Module 8431 (RestrictedGuildProfileView)
-import "result";
+// Module 8455 (RestrictedGuildProfileView)
+import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
 
-let closure_4;
-let closure_5;
+let c4;
+let c5;
 const require = arg1;
-({ jsx: closure_4, jsxs: closure_5 } = jsxProd);
+({ jsx: c4, jsxs: c5 } = jsxProd);
 const result = require("jsxProd").fileFinishedImporting("modules/guild_profile/native/components/RestrictedGuildProfileView.tsx");
 
 export default function RestrictedGuildProfileView() {
-  let obj = require(8432) /* getBackgroundForProfile */;
+  let obj = require(8456) /* GuildProfileBackground */;
   const styles = obj.useStyles();
-  let obj1 = require(3869) /* map */;
-  obj = { style: styles.container };
-  const token = obj1.useToken(importDefault(689).colors.BACKGROUND_BASE_LOWEST);
-  obj = { style: styles.colorBanner };
-  const tmp2 = importDefault(4101)();
-  obj.start = require(8432) /* getBackgroundForProfile */.DiagonalGradient.START;
-  obj.end = require(8432) /* getBackgroundForProfile */.DiagonalGradient.END;
-  let obj4 = require(8432) /* getBackgroundForProfile */;
-  obj.colors = obj4.getBackgroundForProfile(tmp2, token);
-  const items = [callback(importDefault(4589), obj), , ];
-  obj1 = { style: styles.header };
-  const obj2 = { style: styles.avatarBackground };
-  const obj3 = { size: null, value: "?", selected: false };
-  const tmp4 = importDefault(4589);
-  obj3.size = require(5548) /* makeSizeStyle */.GuildIconSizes.XXLARGE;
-  obj3.textStyle = styles.restrictedAcronym;
-  obj2.children = callback(importDefault(5548), obj3);
-  obj1.children = callback(View, obj2);
+  let obj1 = require(3893) /* map */;
+  obj = { style: styles.container, children: null };
+  const token = obj1.useToken(importDefault(712).colors.BACKGROUND_BASE_LOWEST);
+  obj = { style: styles.colorBanner, start: null, end: null, colors: null };
+  const tmp2 = importDefault(4125)();
+  obj[1] = require(8456) /* GuildProfileBackground */.DiagonalGradient.START;
+  obj[2] = require(8456) /* GuildProfileBackground */.DiagonalGradient.END;
+  let obj4 = require(8456) /* GuildProfileBackground */;
+  obj[3] = obj4.getBackgroundForProfile(tmp2, token);
+  const items = [callback(importDefault(4611), obj), , ];
+  obj1 = { style: styles.header, children: null };
+  const obj2 = { style: styles.avatarBackground, children: null };
+  const obj3 = { size: null, value: "?", selected: false, textStyle: null };
+  const tmp4 = importDefault(4611);
+  obj3[0] = require(5566) /* GuildIconSizes */.GuildIconSizes.XXLARGE;
+  obj3[3] = styles.restrictedAcronym;
+  obj2[1] = callback(importDefault(5566), obj3);
+  obj1[1] = callback(View, obj2);
   items[1] = callback(View, obj1);
-  obj4 = { style: styles.body };
-  const obj5 = { variant: "heading-lg/semibold", color: "mobile-text-heading-primary" };
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj5.children = intl.string(require(1212) /* getSystemLocale */.t.wZmueu);
-  const items1 = [callback(require(4161) /* Text */.Text, obj5), ];
-  const obj6 = { variant: "text-md/medium", color: "text-subtle" };
-  const intl2 = require(1212) /* getSystemLocale */.intl;
-  obj6.children = intl2.string(require(1212) /* getSystemLocale */.t["8mfCqY"]);
-  items1[1] = callback(require(4161) /* Text */.Text, obj6);
-  obj4.children = items1;
+  obj4 = { style: styles.body, children: null };
+  const obj5 = { variant: "heading-lg/semibold", color: "mobile-text-heading-primary", children: null };
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj5[2] = intl.string(require(1236) /* getSystemLocale */.t.wZmueu);
+  const items1 = [callback(require(4185) /* Text */.Text, obj5), ];
+  const obj6 = { variant: "text-md/medium", color: "text-subtle", children: null };
+  const intl2 = require(1236) /* getSystemLocale */.intl;
+  obj6[2] = intl2.string(require(1236) /* getSystemLocale */.t["8mfCqY"]);
+  items1[1] = callback(require(4185) /* Text */.Text, obj6);
+  obj4[1] = items1;
   items[2] = callback2(View, obj4);
-  obj.children = items;
+  obj[1] = items;
   return callback2(View, obj);
 };

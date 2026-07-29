@@ -1,40 +1,63 @@
-// Module ID: 12527
-// Function ID: 96942
+// Module ID: 12549
+// Function ID: 12550
 // Name: getTopPatternSource
-// Dependencies: [31, 27, 33, 6517, 12528, 12529, 12530, 4011, 2]
-// Exports: TopPattern
+// Dependencies: [19, 17, 21, 6538, 12550, 12551, 12552, 4035, 2]
+// Exports: TopPattern, getTopPatternSource, useTopPatternSource
 
-// Module 12527 (getTopPatternSource)
-import "result";
+// Module 12549 (getTopPatternSource)
+import "noop";
 import { Image } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
 
 const require = arg1;
-function getTopPatternSource(theme) {
-  let obj = require(6517) /* getIllustrationSource */;
+const result = require("jsxProd").fileFinishedImporting("design/components/Illustration/native/redesign/generated/TopPattern.tsx");
+
+export const getTopPatternSource = function getTopPatternSource(theme) {
+  let obj = require(6538) /* getIllustrationSource */;
   obj = {
     dark() {
-      return outer1_0(outer1_1[4]);
+      return callback(12550);
     },
     darker() {
-      return outer1_0(outer1_1[5]);
+      return callback(12551);
     },
     light() {
-      return outer1_0(outer1_1[6]);
+      return callback(12552);
     }
   };
   return obj.getIllustrationSource(theme, obj);
-}
-function useTopPatternSource() {
-  return getTopPatternSource(require(4011) /* AccessibilityAnnouncer */.useThemeContext().theme);
-}
-const result = require("jsxProd").fileFinishedImporting("design/components/Illustration/native/redesign/generated/TopPattern.tsx");
-
-export { getTopPatternSource };
-export { useTopPatternSource };
+};
+export const useTopPatternSource = function useTopPatternSource() {
+  let obj = require(4035) /* AccessibilityAnnouncer */;
+  obj = {
+    dark() {
+      return callback(12550);
+    },
+    darker() {
+      return callback(12551);
+    },
+    light() {
+      return callback(12552);
+    }
+  };
+  return require(6538) /* getIllustrationSource */.getIllustrationSource(obj.useThemeContext().theme, obj);
+};
 export const TopPattern = function TopPattern(arg0) {
-  const obj = {};
+  let obj = require(4035) /* AccessibilityAnnouncer */;
+  obj = {
+    dark() {
+      return callback(12550);
+    },
+    darker() {
+      return callback(12551);
+    },
+    light() {
+      return callback(12552);
+    }
+  };
+  obj = {};
+  const illustrationSource = require(6538) /* getIllustrationSource */.getIllustrationSource(obj.useThemeContext().theme, obj);
   const merged = Object.assign(arg0);
-  obj["source"] = useTopPatternSource();
+  obj.source = illustrationSource;
   return <Image />;
 };

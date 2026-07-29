@@ -1,45 +1,42 @@
-// Module ID: 16634
-// Function ID: 129627
-// Name: _isNativeReflectConstruct
-// Dependencies: [7, 6, 15, 17, 18, 3817, 6191, 663, 21, 6483, 16213, 5112, 2]
+// Module ID: 16670
+// Function ID: 16671
+// Name: handleReferralMessages
+// Dependencies: [3841, 6211, 686, 11, 6504, 5134, 16248, 2]
 
-// Module 16634 (_isNativeReflectConstruct)
-import set from "set";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_9 from "_createForOfIteratorHelperLoose";
-import tmp2 from "AutomaticLifecycleManager";
+// Module 16670 (handleReferralMessages)
+import reset from "reset";
+import emitChanges from "emitChanges";
+import "initialize";
 
 const require = arg1;
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
-  }
-  const result = _isNativeReflectConstruct();
-}
 function handleReferralMessages(type) {
-  if (type.type === require(663) /* set */.MessageTypes.PREMIUM_REFERRAL) {
+  if (type.type === require(686) /* set */.MessageTypes.PREMIUM_REFERRAL) {
     if (null != type.content) {
       if (obj3.isProbablyAValidSnowflake(type.content)) {
         premiumTypeSubscription = premiumTypeSubscription.getPremiumTypeSubscription();
-        const obj = importDefault(21);
+        const tmp9Result = tmp9(11);
         if (tmp6) {
-          const userOffer = require(6483) /* _fetchUserOffer */.fetchUserOffer("ReferralMessageManager");
-          const obj2 = require(6483) /* _fetchUserOffer */;
+          const userOffer = require(6504) /* _fetchUserOffer */.fetchUserOffer("ReferralMessageManager");
+          const tmpResult = require(6504) /* _fetchUserOffer */;
         }
-        tmp6 = null == premiumTypeSubscription && closure_9.shouldFetchReferralOffer(importDefault(21).extractTimestamp(type.content));
+        tmp6 = null == premiumTypeSubscription && emitChanges.shouldFetchReferralOffer(tmp9(11).extractTimestamp(type.content));
       }
-      obj3 = importDefault(21);
+      obj3 = importDefault(11);
+      tmp9 = importDefault;
     }
   }
 }
-tmp2 = new tmp2();
-let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/premium/native/referrals/ReferralMessageManager.tsx");
+class ReferralMessageManager extends tmp6 {
+  constructor() {
+    tmp3 = new ReferralMessageManager(tmp2, tmp, new.target);
+    // ThrowIfThisInitialized (0x7c)
+    tmp4 = require("setupLoadFromMessageManagerHandlers")(tmp3, handleReferralMessages);
+    return tmp3;
+  }
+}
+tmp = new tmp(tmp4, tmp3, tmp2, Object, defineProperty, ReferralMessageManager, importDefault);
+// ThrowIfThisInitialized (0x7c)
+require("setupLoadFromMessageManagerHandlers")(tmp, handleReferralMessages);
+const result = require("set").fileFinishedImporting("modules/premium/native/referrals/ReferralMessageManager.tsx");
 
-export default tmp2;
+export default tmp;

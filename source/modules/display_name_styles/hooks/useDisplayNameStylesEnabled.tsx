@@ -1,20 +1,20 @@
-// Module ID: 4397
-// Function ID: 38824
+// Module ID: 4420
+// Function ID: 4421
 // Name: useDisplayNameStylesEnabled
-// Dependencies: [31, 4157, 566, 4398, 2]
+// Dependencies: [19, 4181, 589, 4421, 2]
 // Exports: useDisplayNameStylesEnabled
 
-// Module 4397 (useDisplayNameStylesEnabled)
-import { useContext } from "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 4420 (useDisplayNameStylesEnabled)
+import { useContext } from "noop";
+import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
 
 const result = require("initialize").fileFinishedImporting("modules/display_name_styles/hooks/useDisplayNameStylesEnabled.tsx");
 
 export const useDisplayNameStylesEnabled = function useDisplayNameStylesEnabled(arg0) {
-  const items = [_isNativeReflectConstruct];
-  let overrideSettings = require(566) /* initialize */.useStateFromStores(items, () => outer1_3.displayNameStylesEnabled);
+  const items = [maybeApplyNoTextColorForLightCustomTheme];
+  let overrideSettings = require(589) /* initialize */.useStateFromStores(items, () => obj.displayNameStylesEnabled);
   if (!overrideSettings) {
-    overrideSettings = useContext(require(4398) /* context */.DisplayNameStylesContext).overrideSettings;
+    overrideSettings = useContext(require(4421) /* context */.DisplayNameStylesContext).overrideSettings;
   }
   return overrideSettings;
 };

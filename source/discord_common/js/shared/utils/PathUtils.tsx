@@ -1,23 +1,20 @@
-// Module ID: 484
-// Function ID: 6292
+// Module ID: 507
+// Function ID: 508
 // Name: getAuthenticationPath
-// Dependencies: [6, 7, 2]
+// Dependencies: [2]
 // Exports: getLoginPath, wrapPaths
 
-// Module 484 (getAuthenticationPath)
-import _classCallCheck from "_classCallCheck";
-import _defineProperties from "_defineProperties";
-
+// Module 507 (getAuthenticationPath)
 function getAuthenticationPath(login, arg1, flag, arg3) {
   let tmp = arg1;
-  let str = arg3;
   if (arg1 === undefined) {
     tmp = null;
   }
   if (flag === undefined) {
     flag = true;
   }
-  if (str === undefined) {
+  let str = arg3;
+  if (arg3 === undefined) {
     str = "";
   }
   let str2 = "";
@@ -46,80 +43,75 @@ function getAuthenticationPath(login, arg1, flag, arg3) {
     combined = "&" + str;
   }
 }
-const tmp2 = (() => {
-  class UnescapedPathParam {
-    constructor(arg0) {
-      tmp = UnescapedPathParam(this, UnescapedPathParam);
-      this.value = arg0;
-      return;
-    }
+class UnescapedPathParam {
+  constructor(arg0) {
+    obj = Object.create(new.target.prototype);
+    obj.value = global;
+    return obj;
   }
-  const items = [
-    {
-      key: "toString",
-      value() {
-        return this.value;
-      }
-    }
-  ];
-  return callback(UnescapedPathParam, items);
-})();
-let closure_2 = tmp2;
+}
+UnescapedPathParam.prototype["toString"] = function toString() {
+  return this.value;
+};
 const result = require("set").fileFinishedImporting("../discord_common/js/shared/utils/PathUtils.tsx");
 
 export const getLoginPath = function getLoginPath(arg0, flag) {
-  let str = arg2;
   if (flag === undefined) {
     flag = true;
   }
-  if (str === undefined) {
+  let str = arg2;
+  if (arg2 === undefined) {
     str = "";
   }
   return getAuthenticationPath("login", arg0, flag, str);
 };
 export { getAuthenticationPath };
-export const UnescapedPathParam = tmp2;
+export { UnescapedPathParam };
 export const wrapPaths = function wrapPaths(frozen, arg1) {
-  let length;
-  let _classCallCheck = frozen;
-  let _defineProperties = arg1;
+  let closure_0 = frozen;
+  let closure_1 = arg1;
   const obj = {};
   function _loop() {
-    const table = tmp;
-    if ("function" !== typeof table[closure_3]) {
-      obj[closure_3] = tmp;
+    const table = tmp2;
+    if (typeof table[closure_3] === "_") {
+      obj[tmp] = tmp2;
       return 1;
     } else {
-      obj[closure_3] = (arg0) => tmp(...(function encodePathArguments(arr, outer1_1) {
-        let _classCallCheck = outer1_1;
-        return arr.map((arg0) => {
+      obj[tmp] = () => {
+        const items = [...arguments];
+        return outer1_1(...items.map((arg0) => {
           if (null == arg0) {
             return arg0;
-          } else if (arg0 instanceof obj) {
+          } else if (arg0 instanceof outer1_1) {
             let str = arg0.toString();
-          } else if (null == _classCallCheck) {
+          } else if (null == closure_0) {
             let _encodeURIComponent = encodeURIComponent;
             str = encodeURIComponent(arg0);
           } else {
             const _String = String;
             str = String(arg0);
             const parts = str.split("");
-            const mapped = parts.map(() => { ... });
+            const mapped = parts.map((arg0) => {
+              if (null == closure_0) {
+                const _encodeURIComponent = encodeURIComponent;
+                let encodeURIComponentResult = encodeURIComponent(arg0);
+              } else {
+                encodeURIComponentResult = arg0;
+              }
+              return encodeURIComponentResult;
+            });
             str = mapped.join("");
           }
-        });
-      })(HermesBuiltin.copyRestArgs(), outer1_1));
+        }));
+      };
     }
   }
   const keys = Object.keys(frozen);
-  let num = 0;
-  if (0 < keys.length) {
-    do {
-      let getAuthenticationPath = keys[num];
-      let _loopResult = _loop();
-      num = num + 1;
-      length = keys.length;
-    } while (num < length);
+  const iter = keys[Symbol.iterator]();
+  while (iter !== undefined) {
+    let closure_3 = iter.next();
+    let _loopResult = _loop();
+    continue;
   }
   return obj;
 };

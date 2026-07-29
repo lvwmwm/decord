@@ -1,10 +1,10 @@
-// Module ID: 10148
-// Function ID: 78441
+// Module ID: 10169
+// Function ID: 10170
 // Name: InappropriateConversationBlockAndReportAlert
-// Dependencies: [31, 33, 10135, 10149, 1212, 2]
+// Dependencies: [19, 21, 10156, 10170, 1236, 2]
 
-// Module 10148 (InappropriateConversationBlockAndReportAlert)
-import result from "result";
+// Module 10169 (InappropriateConversationBlockAndReportAlert)
+import noop from "noop";
 import { jsx } from "jsxProd";
 
 const require = arg1;
@@ -19,6 +19,7 @@ class InappropriateConversationBlockAndReportAlert {
     closure_5 = analyticsBlockAndReportContext;
     analyticsCancelContext = global.analyticsCancelContext;
     onDismiss = global.onDismiss;
+    useCallback = undefined;
     items = [, , , ];
     items[0] = channelId;
     items[1] = warningId;
@@ -29,7 +30,7 @@ class InappropriateConversationBlockAndReportAlert {
       obj = { channelId, warningId, senderId, warningType, cta };
       obj.trackCtaEvent(obj);
     }, items);
-    closure_8 = callback;
+    useCallback = callback;
     items1 = [, ];
     items1[0] = callback;
     items1[1] = analyticsCancelContext;
@@ -45,21 +46,21 @@ class InappropriateConversationBlockAndReportAlert {
     items3[1] = callback;
     items3[2] = analyticsBlockAndReportContext;
     callback2 = senderId.useCallback(() => {
-      if (null != onDismiss) {
-        onDismiss();
+      if (onDismiss != null) {
+        tmp();
       }
       callback(analyticsBlockContext);
     }, items2);
     callback3 = senderId.useCallback(() => {
-      if (null != onDismiss) {
-        onDismiss();
+      if (onDismiss != null) {
+        tmp();
       }
       callback(analyticsBlockAndReportContext);
     }, items3);
-    obj = { userId: senderId, channelId, onClose: global.onClose, onCancel: callback1, onBlock: callback2, onBlockAndReport: callback3, blockButtonVariant: "primary" };
+    obj = { userId: senderId, channelId, onClose: global.onClose, onCancel: callback1, onBlock: callback2, onBlockAndReport: callback3, blockButtonVariant: "primary", description: null };
     tmp5 = require("ConfirmBlockUserAlert");
     intl = require("getSystemLocale").intl;
-    obj.description = intl.string(require("getSystemLocale").t["5NhTvu"]);
+    obj[7] = intl.string(require("getSystemLocale").t["5NhTvu"]);
     return analyticsBlockContext(tmp5, obj);
   }
 }

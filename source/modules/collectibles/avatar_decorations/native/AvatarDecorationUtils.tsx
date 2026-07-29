@@ -1,19 +1,19 @@
-// Module ID: 7910
-// Function ID: 62848
+// Module ID: 7935
+// Function ID: 7936
 // Name: getDecorationSizeForAvatarSize
-// Dependencies: [1393, 1273, 4133, 7911, 1935, 2]
+// Dependencies: [1417, 1297, 4157, 7936, 1959, 2]
 // Exports: getDecorationCutoutForAvatarCutout, getDecorationSizeForAvatarSize, openAvatarDecorationActionSheet
 
-// Module 7910 (getDecorationSizeForAvatarSize)
+// Module 7935 (getDecorationSizeForAvatarSize)
 import { DECORATION_TO_AVATAR_RATIO as closure_3 } from "DECORATION_TO_AVATAR_RATIO";
 
-let result = require("showActionSheet").fileFinishedImporting("modules/collectibles/avatar_decorations/native/AvatarDecorationUtils.tsx");
+let result = require("ACTION_SHEET_HEIGHT_HALF").fileFinishedImporting("modules/collectibles/avatar_decorations/native/AvatarDecorationUtils.tsx");
 
-export const getDecorationSizeForAvatarSize = function getDecorationSizeForAvatarSize(closure_10) {
-  if ("number" !== typeof closure_10) {
-    let result = require(1273) /* Button */.AVATAR_SIZE_MAP[closure_10] * closure_3;
+export const getDecorationSizeForAvatarSize = function getDecorationSizeForAvatarSize(NORMAL) {
+  if (typeof NORMAL === "os") {
+    let result = require(1297) /* Button */.AVATAR_SIZE_MAP[NORMAL] * closure_3;
   } else {
-    result = closure_10 * closure_3;
+    result = NORMAL * closure_3;
   }
   return result;
 };
@@ -22,26 +22,25 @@ export const getDecorationCutoutForAvatarCutout = function getDecorationCutoutFo
   const _require = arg1;
   let tmp = memo;
   if (null != memo) {
-    let obj = {};
-    ({ direction: obj.direction, radius: obj.radius, inset } = memo);
-    let num = 0;
-    if (null != inset) {
-      num = inset;
+    let obj = { direction: null, radius: null, inset: null, imageType: null, nativeCutouts: null };
+    ({ direction: obj[0], radius: obj[1], inset } = memo);
+    if (inset == null) {
+      inset = 0;
     }
-    obj.inset = num + arg1;
-    let mapped;
-    obj.imageType = _require(1273).CutoutType.RECTANGULAR;
+    obj[2] = inset + arg1;
+    obj[3] = _require(1297).CutoutType.RECTANGULAR;
     const nativeCutouts = memo.nativeCutouts;
-    if (null != nativeCutouts) {
+    let mapped;
+    if (nativeCutouts != null) {
       mapped = nativeCutouts.map((arg0) => {
         const obj = {};
         const merged = Object.assign(arg0);
-        obj["x"] = arg0.x + closure_0;
-        obj["y"] = arg0.y + closure_0;
+        obj.x = arg0.x + closure_0;
+        obj.y = arg0.y + closure_0;
         return obj;
       });
     }
-    obj.nativeCutouts = mapped;
+    obj[4] = mapped;
     tmp = obj;
   }
   return tmp;
@@ -53,7 +52,7 @@ export const openAvatarDecorationActionSheet = function openAvatarDecorationActi
   let isTryItOut;
   let user;
   ({ user, guildId, currentAvatarDecoration, isTryItOut, analyticsLocations } = arg0);
-  importDefault(4133).hideActionSheet();
-  const obj = importDefault(4133);
-  importDefault(4133).openLazy(require(1935) /* maybeLoadBundle */(7911, dependencyMap.paths), "Edit Avatar Decoration", { user, guildId, currentAvatarDecoration, isTryItOut, analyticsLocations });
+  importDefault(4157).hideActionSheet();
+  const obj = importDefault(4157);
+  importDefault(4157).openLazy(require(1959) /* asyncRequireImpl */(7936, dependencyMap.paths), "Edit Avatar Decoration", { user, guildId, currentAvatarDecoration, isTryItOut, analyticsLocations });
 };

@@ -1,52 +1,29 @@
-// Module ID: 16259
-// Function ID: 125898
-// Name: _isNativeReflectConstruct
-// Dependencies: [7, 6, 15, 17, 18, 3858, 5775, 13877, 5776, 653, 13878, 4133, 16260, 1935, 16262, 5112, 2]
+// Module ID: 16294
+// Function ID: 16295
+// Name: maybePresentModal
+// Dependencies: [3882, 5793, 13898, 5794, 676, 13899, 4157, 16295, 1959, 5134, 16297, 2]
 
-// Module 16259 (_isNativeReflectConstruct)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_4 from "_isNativeReflectConstruct";
-import AutomaticLifecycleManager from "AutomaticLifecycleManager";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
-import closure_8 from "_isNativeReflectConstruct";
-import closure_9 from "_isNativeReflectConstruct";
-import closure_10 from "_isNativeReflectConstruct";
+// Module 16294 (maybePresentModal)
+import setContent from "setContent";
+import freshTeenActivityWithMap from "freshTeenActivityWithMap";
+import initialize from "initialize";
 import items from "items";
 import { AppStates } from "ME";
-import tmp3 from "AutomaticLifecycleManager";
+import "initialize";
 
-let closure_11;
-let closure_12;
+let error;
+let metroImportAll;
 const require = arg1;
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
-  }
-  const result = _isNativeReflectConstruct();
-}
-function hasActiveParentLink(arr) {
-  return arr.some((link_status) => {
-    let tmp = link_status.link_status === outer1_11.ACTIVE;
-    if (tmp) {
-      tmp = link_status.link_type === outer1_12.PARENT;
-    }
-    return tmp;
-  });
-}
-function maybePresentModal(warning) {
-  let daysRemaining;
-  if (null != warning) {
-    daysRemaining = warning.daysRemaining;
+function maybePresentModal(daysRemaining) {
+  daysRemaining = undefined;
+  if (daysRemaining != null) {
+    daysRemaining = daysRemaining.daysRemaining;
   }
   let hasItem;
-  if (null != warning) {
-    const surfaces = warning.surfaces;
-    if (null != surfaces) {
-      hasItem = surfaces.includes(require(13878) /* frozen */.ParentalConsentWarningSurface.MODAL);
+  if (daysRemaining != null) {
+    const surfaces = daysRemaining.surfaces;
+    if (surfaces != null) {
+      hasItem = surfaces.includes(require(13899) /* frozen */.ParentalConsentWarningSurface.MODAL);
     }
   }
   let tmp5 = true === hasItem && null != daysRemaining;
@@ -54,28 +31,104 @@ function maybePresentModal(warning) {
     tmp5 = daysRemaining >= 0;
   }
   if (tmp5) {
-    tmp5 = !closure_10.hasShownModalToday();
+    tmp5 = !initialize.hasShownModalToday();
   }
   if (tmp5) {
     const _Object = Object;
-    tmp5 = !hasActiveParentLink(Object.values(linkedUsers.getLinkedUsers()));
+    const values = Object.values(linkedUsers.getLinkedUsers());
+    tmp5 = !values.some((link_status) => {
+      let tmp = link_status.link_status === constants.ACTIVE;
+      if (tmp) {
+        tmp = link_status.link_type === constants2.PARENT;
+      }
+      return tmp;
+    });
   }
   if (tmp5) {
     tmp5 = !open.isOpen();
   }
   if (tmp5) {
-    let obj = importDefault(4133);
-    obj = { daysRemaining };
-    obj.openLazy(require(1935) /* maybeLoadBundle */(16260, dependencyMap.paths), "ParentalConsentWarningModal", obj);
+    const obj = { daysRemaining: null };
+    obj[0] = daysRemaining;
+    importDefault(4157).openLazy(require(1959) /* asyncRequireImpl */(16295, dependencyMap.paths), "ParentalConsentWarningModal", obj);
+    const obj2 = importDefault(4157);
   }
 }
-function maybePresentFromCache() {
-  if (!closure_10.shouldFetchToday()) {
-    maybePresentModal(closure_10.getWarning());
-  }
+({ UserLinkStatus: error, UserLinkType: metroImportAll } = items);
+let prototype = function ParentalConsentWarningManager() {
+  const applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
+  applyArgumentsResult.actions = {
+    PARENTAL_CONSENT_WARNING_FETCH_SUCCESS(warning) {
+      callback2(warning.warning);
+    },
+    POST_CONNECTION_OPEN() {
+      const values = Object.values(linkedUsers.getLinkedUsers());
+      let closure_3 = values.some((link_status) => {
+        let tmp = link_status.link_status === constants.ACTIVE;
+        if (tmp) {
+          tmp = link_status.link_type === constants2.PARENT;
+        }
+        return tmp;
+      });
+      callback(16297).maybeFetchWarning();
+      if (!initialize.shouldFetchToday()) {
+        callback2(initialize.getWarning());
+      }
+    },
+    APP_STATE_UPDATE(state) {
+      if (state.state === constants.ACTIVE) {
+        callback(16297).maybeFetchWarning();
+        if (!initialize.shouldFetchToday()) {
+          callback2(obj2.getWarning());
+        }
+        const obj = callback(16297);
+        obj2 = initialize;
+      }
+    },
+    CURRENT_USER_UPDATE(user) {
+      user = user.user;
+      if (undefined !== user.linked_users) {
+        const linked_users = user.linked_users;
+        const someResult = linked_users.some((link_status) => {
+          let tmp = link_status.link_status === constants.ACTIVE;
+          if (tmp) {
+            tmp = link_status.link_type === constants2.PARENT;
+          }
+          return tmp;
+        });
+        let closure_3 = someResult;
+        if (tmp) {
+          if (someResult) {
+            const warning = initialize.getWarning();
+            let hasItem;
+            if (warning != null) {
+              const surfaces = warning.surfaces;
+              if (surfaces != null) {
+                hasItem = surfaces.includes(callback(13899).ParentalConsentWarningSurface.BANNER);
+              }
+            }
+            if (true === hasItem) {
+              callback(16297).forceFetchWarning();
+              const obj2 = callback(16297);
+            }
+          } else {
+            callback(16297).forceFetchWarning();
+            const obj = callback(16297);
+          }
+        }
+        tmp = undefined !== closure_3 && closure_3 !== someResult;
+      }
+    },
+    LOGOUT() {
+      let c3;
+      callback(16297).resetFetchState();
+    }
+  };
+  return applyArgumentsResult;
+}.prototype;
+class prototype extends tmp3 {
 }
-({ UserLinkStatus: closure_11, UserLinkType: closure_12 } = items);
-tmp3 = new tmp3();
-let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/parent_tools/native/ParentalConsentWarningManager.tsx");
+prototype = new prototype();
+const result = require("initialize").fileFinishedImporting("modules/parent_tools/native/ParentalConsentWarningManager.tsx");
 
-export default tmp3;
+export default prototype;

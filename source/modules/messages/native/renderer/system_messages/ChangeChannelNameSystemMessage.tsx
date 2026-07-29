@@ -1,11 +1,11 @@
-// Module ID: 7740
-// Function ID: 61647
+// Module ID: 7763
+// Function ID: 7764
 // Name: createChangeChannelNameSystemMessage
-// Dependencies: [1348, 7713, 7720, 7722, 1212, 7723, 7726, 2]
+// Dependencies: [1372, 7736, 7743, 7745, 1236, 7746, 7749, 2]
 // Exports: createChangeChannelNameSystemMessage
 
-// Module 7740 (createChangeChannelNameSystemMessage)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 7763 (createChangeChannelNameSystemMessage)
+import ensureGuildLoaded from "ensureGuildLoaded";
 
 const require = arg1;
 const result = require("getMessageAuthorWithProcessedColor").fileFinishedImporting("modules/messages/native/renderer/system_messages/ChangeChannelNameSystemMessage.tsx");
@@ -15,62 +15,69 @@ export const createChangeChannelNameSystemMessage = function createChangeChannel
   let theme;
   message = message.message;
   ({ theme, roleStyle } = message);
-  const tmp = importDefault(7713)(theme);
-  let obj = require(7720) /* getMessageAuthorWithProcessedColor */;
+  const tmp3 = importDefault(7736)(theme);
+  let obj = require(7743) /* getMessageAuthorWithProcessedColor */;
   const messageAuthorWithProcessedColor = obj.getMessageAuthorWithProcessedColor(message);
-  const tmp3 = importDefault(7722)({ message, author: messageAuthorWithProcessedColor, roleStyle });
+  const tmp6 = importDefault(7745)({ message, author: messageAuthorWithProcessedColor, roleStyle });
   channel = channel.getChannel(message.channel_id);
-  let isGroupDMResult;
-  if (null != channel) {
-    if (null != channel.isGroupDM) {
-      isGroupDMResult = channel.isGroupDM();
+  let flag;
+  if (channel != null) {
+    const isGroupDM = channel.isGroupDM;
+    if (isGroupDM != null) {
+      flag = isGroupDM();
     }
+  }
+  if (flag == null) {
+    flag = false;
   }
   if ("" === message.content) {
-    let rk0be9 = require(1212) /* getSystemLocale */.t.hToFyf;
+    let rk0be9 = tmp4(1236).t.hToFyf;
   } else {
-    rk0be9 = require(1212) /* getSystemLocale */.t.rk0be9;
+    rk0be9 = tmp4(1236).t.rk0be9;
   }
-  const tmp10 = importDefault(7723)(message);
-  obj = {};
-  const intl = require(1212) /* getSystemLocale */.intl;
+  const tmp8 = importDefault(7746)(message);
+  const intl = tmp4(1236).intl;
   const formatToParts = intl.formatToParts;
-  if (null != isGroupDMResult && isGroupDMResult) {
-    obj = { username: messageAuthorWithProcessedColor.nick, usernameOnClick: tmp3, channelName: message.content };
-    const obj1 = { action: "bindOpenGdmCustomizeActionSheet" };
+  if (flag) {
+    obj = { username: null, usernameOnClick: null, channelName: null, onEditGroup: null };
+    obj[0] = messageAuthorWithProcessedColor.nick;
+    obj[1] = tmp6;
+    obj[2] = message.content;
     let linkColor;
-    if (null != tmp) {
-      linkColor = tmp.linkColor;
+    if (tmp3 != null) {
+      linkColor = tmp3.linkColor;
     }
-    obj1.linkColor = linkColor;
-    obj1.messageChannelId = message.channel_id;
-    obj.onEditGroup = obj1;
+    obj = { action: "bindOpenGdmCustomizeActionSheet", linkColor: null, messageChannelId: null };
+    obj[1] = linkColor;
+    obj[2] = message.channel_id;
+    obj[3] = obj;
     let formatToPartsResult = formatToParts(rk0be9, obj);
   } else {
-    const t = require(1212) /* getSystemLocale */.t;
-    const obj2 = { username: messageAuthorWithProcessedColor.nick, usernameOnClick: tmp3, channelName: message.content };
-    formatToPartsResult = formatToParts(message.isForumPost ? t["qa0e/n"] : t.XCPMEG, obj2);
+    const t = tmp4(1236).t;
+    const obj1 = { username: null, usernameOnClick: null, channelName: null };
+    obj1[0] = messageAuthorWithProcessedColor.nick;
+    obj1[1] = tmp6;
+    obj1[2] = message.content;
+    formatToPartsResult = formatToParts(message.isForumPost ? t["qa0e/n"] : t.XCPMEG, obj1);
   }
-  obj.content = formatToPartsResult;
-  const merged = Object.assign(tmp10);
-  let tmp16;
-  if (null != isGroupDMResult && isGroupDMResult) {
-    const obj3 = {};
-    let accessibilityActions = tmp10.accessibilityActions;
-    if (null == accessibilityActions) {
+  const merged = Object.assign(tmp8);
+  let tmp12;
+  if (flag) {
+    let accessibilityActions = tmp8.accessibilityActions;
+    if (accessibilityActions == null) {
       accessibilityActions = [];
     }
+    const obj3 = { accessibilityActions: null };
     const items = [];
+    const obj4 = { label: null, name: null };
+    const intl2 = tmp4(1236).intl;
+    obj4[0] = intl2.string(tmp4(1236).t["5Q9+/L"]);
+    obj4[1] = tmp4(7749).MessageAccessibilityAction.EDIT_GDM;
+    items[HermesBuiltin.arraySpread(accessibilityActions, 0)] = obj4;
+    obj3[0] = items;
+    tmp12 = obj3;
     const arraySpreadResult = HermesBuiltin.arraySpread(accessibilityActions, 0);
-    const obj4 = {};
-    const intl2 = require(1212) /* getSystemLocale */.intl;
-    obj4.label = intl2.string(require(1212) /* getSystemLocale */.t["5Q9+/L"]);
-    obj4.name = require(7726) /* getQuickReactionLabel */.MessageAccessibilityAction.EDIT_GDM;
-    items[arraySpreadResult] = obj4;
-    const sum = arraySpreadResult + 1;
-    obj3.accessibilityActions = items;
-    tmp16 = obj3;
   }
-  const merged1 = Object.assign(tmp16);
-  return obj;
+  const merged1 = Object.assign(tmp12);
+  return { content: formatToPartsResult };
 };

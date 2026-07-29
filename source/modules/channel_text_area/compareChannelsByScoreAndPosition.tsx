@@ -1,87 +1,105 @@
-// Module ID: 12610
-// Function ID: 97483
-// Name: getGuildChannelPosition
-// Dependencies: [1348, 653, 2]
+// Module ID: 12632
+// Function ID: 12633
+// Name: compareChannelsByScoreAndPosition
+// Dependencies: [1372, 676, 2]
 // Exports: default
 
-// Module 12610 (getGuildChannelPosition)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 12632 (compareChannelsByScoreAndPosition)
+import ensureGuildLoaded from "ensureGuildLoaded";
 import { ChannelTypes } from "ME";
 
-function getGuildChannelPosition(record) {
-  if (null == record.parent_id) {
-    if (record.type === ChannelTypes.GUILD_CATEGORY) {
-      let position = 1000 * (record.position + 1);
-    } else {
-      position = record.position;
-    }
-    return position;
-  } else {
-    channel = channel.getChannel(record.parent_id);
-    position = undefined;
-    if (null != channel) {
-      position = channel.position;
-    }
-    let num = 0;
-    if (null != position) {
-      num = position;
-    }
-    const sum = num + 1;
-    const sum1 = 1000 * sum + record.position;
-    if (record.isGuildVocal()) {
-      let sum2 = sum1 + 500;
-    } else {
-      sum2 = sum1;
-    }
-    return sum2;
-  }
-}
 const result = require("set").fileFinishedImporting("modules/channel_text_area/compareChannelsByScoreAndPosition.tsx");
 
 export default function compareChannelsByScoreAndPosition(score, score2) {
   if (score.score !== score2.score) {
     return score2.score - score.score;
   } else {
-    const tmp4 = getGuildChannelPosition(score.record);
-    const tmp5 = getGuildChannelPosition(score2.record);
-    if (tmp4 !== tmp5) {
-      return tmp4 - tmp5;
+    let record = score.record;
+    if (null == record.parent_id) {
+      if (record.type === ChannelTypes.GUILD_CATEGORY) {
+        record = record.position + 1;
+        let position = 1000 * record;
+      } else {
+        position = record.position;
+      }
     } else {
-      let sortable = score.sortable;
-      if (null == sortable) {
-        const comparator = score.comparator;
-        let toLocaleLowerCaseResult;
-        if (null != comparator) {
-          toLocaleLowerCaseResult = comparator.toLocaleLowerCase();
+      const channel = store.getChannel(record.parent_id);
+      let num;
+      if (channel != null) {
+        num = channel.position;
+      }
+      if (num == null) {
+        num = 0;
+      }
+      const sum = num + 1;
+      const sum1 = 1000 * sum + record.position;
+      if (record.isGuildVocal()) {
+        let sum2 = sum1 + 500;
+      } else {
+        sum2 = sum1;
+      }
+      let record2 = score2.record;
+      if (null == record2.parent_id) {
+        if (record2.type === ChannelTypes.GUILD_CATEGORY) {
+          record2 = record2.position + 1;
+          let position2 = 1000 * record2;
+        } else {
+          position2 = record2.position;
         }
-        sortable = toLocaleLowerCaseResult;
-      }
-      let str = "";
-      let str2 = "";
-      if (null != sortable) {
-        str2 = sortable;
-      }
-      let sortable2 = score.sortable;
-      if (null == sortable2) {
-        const comparator2 = score2.comparator;
-        let toLocaleLowerCaseResult1;
-        if (null != comparator2) {
-          toLocaleLowerCaseResult1 = comparator2.toLocaleLowerCase();
+      } else {
+        const channel1 = store.getChannel(record2.parent_id);
+        let num7;
+        if (channel1 != null) {
+          num7 = channel1.position;
         }
-        sortable2 = toLocaleLowerCaseResult1;
-      }
-      if (null != sortable2) {
-        str = sortable2;
-      }
-      let num = -1;
-      if (str2 >= str) {
-        let num2 = 0;
-        if (str2 > str) {
-          num2 = 1;
+        if (num7 == null) {
+          num7 = 0;
         }
-        num = num2;
+        const sum3 = num7 + 1;
+        const sum4 = 1000 * sum3 + record2.position;
+        if (record2.isGuildVocal()) {
+          let sum5 = sum4 + 500;
+        } else {
+          sum5 = sum4;
+        }
+        if (sum2 !== sum5) {
+          return sum2 - sum5;
+        } else {
+          let str = score.sortable;
+          if (str == null) {
+            const comparator = score.comparator;
+            let toLocaleLowerCaseResult;
+            if (comparator != null) {
+              toLocaleLowerCaseResult = comparator.toLocaleLowerCase();
+            }
+            str = toLocaleLowerCaseResult;
+          }
+          if (str == null) {
+            str = "";
+          }
+          let str2 = score.sortable;
+          if (str2 == null) {
+            const comparator2 = score2.comparator;
+            let toLocaleLowerCaseResult1;
+            if (comparator2 != null) {
+              toLocaleLowerCaseResult1 = comparator2.toLocaleLowerCase();
+            }
+            str2 = toLocaleLowerCaseResult1;
+          }
+          if (str2 == null) {
+            str2 = "";
+          }
+          let num13 = -1;
+          if (str >= str2) {
+            let num14 = 0;
+            if (str > str2) {
+              num14 = 1;
+            }
+            num13 = num14;
+          }
+          return num13;
+        }
       }
-      return num;
     }
   }
 };

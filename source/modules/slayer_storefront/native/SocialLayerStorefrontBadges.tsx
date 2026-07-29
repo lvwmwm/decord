@@ -1,41 +1,42 @@
-// Module ID: 9739
-// Function ID: 75722
+// Module ID: 9761
+// Function ID: 9762
 // Name: ExclusiveBadge
-// Dependencies: [31, 27, 33, 4165, 689, 477, 9740, 4161, 1212, 2]
+// Dependencies: [19, 17, 21, 4189, 712, 500, 9762, 4185, 1236, 2]
 // Exports: ExclusiveBadge
 
-// Module 9739 (ExclusiveBadge)
-import "result";
+// Module 9761 (ExclusiveBadge)
+import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 import set from "set";
-import { space } from "_createForOfIteratorHelperLoose";
+import { space } from "Themes";
 import set from "jsxProd";
 
-let closure_4;
-let closure_5;
+let c4;
+let c5;
 const require = arg1;
-({ jsx: closure_4, jsxs: closure_5 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { flexDirection: "row", alignItems: "center", textAlignVertical: "center", alignSelf: "flex-start", gap: require("_createForOfIteratorHelperLoose").space.PX_4, borderRadius: require("_createForOfIteratorHelperLoose").radii.round, paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_8, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BRAND };
-_createForOfIteratorHelperLoose.exclusiveBadge = _createForOfIteratorHelperLoose;
-const obj1 = { textTransform: "uppercase", fontSize: require("_createForOfIteratorHelperLoose").space.PX_12 };
+({ jsx: c4, jsxs: c5 } = jsxProd);
+createCacheKey = { exclusiveBadge: null, exclusiveBadgeText: null };
+createCacheKey = { flexDirection: "row", alignItems: "center", textAlignVertical: "center", alignSelf: "flex-start", gap: require("Themes").space.PX_4, borderRadius: require("Themes").radii.round, paddingHorizontal: require("Themes").space.PX_8, backgroundColor: require("Themes").colors.BACKGROUND_BRAND };
+createCacheKey[0] = createCacheKey;
+const obj1 = { textTransform: "uppercase", fontSize: require("Themes").space.PX_12, lineHeight: null };
 set = set.isAndroid();
-obj1.lineHeight = set ? space.PX_12 : space.PX_16;
-_createForOfIteratorHelperLoose.exclusiveBadgeText = obj1;
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+obj1[2] = set ? space.PX_12 : space.PX_16;
+createCacheKey[1] = obj1;
+createCacheKey = createCacheKey.createStyles(createCacheKey);
 const result = set.fileFinishedImporting("modules/slayer_storefront/native/SocialLayerStorefrontBadges.tsx");
 
 export const ExclusiveBadge = function ExclusiveBadge() {
-  const tmp = _createForOfIteratorHelperLoose();
-  let obj = { style: tmp.exclusiveBadge };
-  obj = { size: "xs", color: importDefault(689).colors.WHITE };
-  const items = [callback(require(9740) /* ClydeIcon */.ClydeIcon, obj), ];
-  obj = { variant: "text-xs/bold", color: "text-overlay-light", style: tmp.exclusiveBadgeText };
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj.children = intl.string(require(1212) /* getSystemLocale */.t.RiDMFz);
-  items[1] = callback(require(4161) /* Text */.Text, obj);
-  obj.children = items;
+  const tmp = createCacheKey();
+  let obj = { style: tmp.exclusiveBadge, children: null };
+  obj = { size: "xs", color: null };
+  obj[1] = importDefault(712).colors.WHITE;
+  const items = [callback(require(9762) /* ClydeIcon */.ClydeIcon, obj), ];
+  obj = { variant: "text-xs/bold", color: "text-overlay-light", style: tmp.exclusiveBadgeText, children: null };
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj[3] = intl.string(require(1236) /* getSystemLocale */.t.RiDMFz);
+  items[1] = callback(require(4185) /* Text */.Text, obj);
+  obj[1] = items;
   return callback2(View, obj);
 };

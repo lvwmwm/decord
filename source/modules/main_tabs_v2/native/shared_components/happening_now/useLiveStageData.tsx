@@ -1,16 +1,16 @@
-// Module ID: 15036
-// Function ID: 114481
+// Module ID: 15066
+// Function ID: 15067
 // Name: useLiveStageData
-// Dependencies: [31, 4986, 1348, 624, 4992, 22, 2]
+// Dependencies: [19, 5008, 1372, 647, 5014, 12, 2]
 // Exports: useLiveStageData
 
-// Module 15036 (useLiveStageData)
-import result from "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_5 from "_isNativeReflectConstruct";
+// Module 15066 (useLiveStageData)
+import noop from "noop";
+import getActiveStageChannelIds from "getActiveStageChannelIds";
+import ensureGuildLoaded from "ensureGuildLoaded";
 
 const require = arg1;
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/main_tabs_v2/native/shared_components/happening_now/useLiveStageData.tsx");
+const result = require("ensureGuildLoaded").fileFinishedImporting("modules/main_tabs_v2/native/shared_components/happening_now/useLiveStageData.tsx");
 
 export const useLiveStageData = function useLiveStageData(stage) {
   const _require = stage;
@@ -19,14 +19,14 @@ export const useLiveStageData = function useLiveStageData(stage) {
   const items1 = [stage.channel_id];
   const stateFromStoresArray = obj.useStateFromStoresArray(items, () => {
     const mutableParticipants = memo1.getMutableParticipants(stage.channel_id, stage(stateFromStoresArray1[4]).StageChannelParticipantNamedIndex.FRIEND);
-    const found = mutableParticipants.filter((type) => type.type === callback(stateFromStoresArray1[4]).StageChannelParticipantTypes.VOICE);
+    const found = mutableParticipants.filter((type) => type.type === callback(table[4]).StageChannelParticipantTypes.VOICE);
     return found.map((user) => user.user);
   }, items1);
   const items2 = [memo1];
   const items3 = [stage.channel_id];
   stateFromStoresArray1 = _require(stateFromStoresArray1[3]).useStateFromStoresArray(items2, () => {
     const mutableParticipants = memo1.getMutableParticipants(stage.channel_id, stage(stateFromStoresArray1[4]).StageChannelParticipantNamedIndex.SPEAKER);
-    const found = mutableParticipants.filter((type) => type.type === callback(stateFromStoresArray1[4]).StageChannelParticipantTypes.VOICE);
+    const found = mutableParticipants.filter((type) => type.type === callback(table[4]).StageChannelParticipantTypes.VOICE);
     return found.map((user) => user.user);
   }, items3);
   const obj2 = _require(stateFromStoresArray1[3]);
@@ -34,7 +34,7 @@ export const useLiveStageData = function useLiveStageData(stage) {
   const items5 = [stage.channel_id];
   const stateFromStoresArray2 = _require(stateFromStoresArray1[3]).useStateFromStoresArray(items4, () => {
     const mutableParticipants = memo1.getMutableParticipants(stage.channel_id, stage(stateFromStoresArray1[4]).StageChannelParticipantNamedIndex.AUDIENCE);
-    const found = mutableParticipants.filter((type) => type.type === callback(stateFromStoresArray1[4]).StageChannelParticipantTypes.VOICE);
+    const found = mutableParticipants.filter((type) => type.type === callback(table[4]).StageChannelParticipantTypes.VOICE);
     return found.map((user) => user.user);
   }, items5);
   const items6 = [stateFromStoresArray, stateFromStoresArray1];

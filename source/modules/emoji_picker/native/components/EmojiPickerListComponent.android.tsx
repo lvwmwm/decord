@@ -1,31 +1,32 @@
-// Module ID: 9375
-// Function ID: 73065
-// Dependencies: [31, 5026, 5030, 9315, 1314, 33, 4165, 4026, 9376, 5223, 1553, 3806, 9231, 9365, 2]
+// Module ID: 9399
+// Function ID: 9400
+// Dependencies: [19, 5048, 5052, 9339, 1338, 21, 4189, 4050, 9400, 5245, 1577, 3830, 9255, 9389, 2]
 
-// Module 9375
-import importAllResult from "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 9399
+import importAllResult from "noop";
+import getEmojiToGroupId from "getEmojiToGroupId";
 import { EmojiCategoryTypes } from "EmojiCategoryTypes";
 import { IMAGE_SIZE } from "IMAGE_SIZE";
 import { PADDING_VERTICAL } from "ExpressionPickerViewType";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 import animatedComponent from "__INTERNAL_VIEW_CONFIG";
 import BottomSheetModal from "BottomSheetModal";
 import isMetaQuest from "isMetaQuest";
-import importDefaultResult from "module_4026";
+import importDefaultResult from "module_4050";
 
-let closure_10;
-let closure_8;
-let closure_9;
+let c10;
+let c9;
+let metroImportAll;
 const require = arg1;
-({ jsx: closure_8, Fragment: closure_9, jsxs: closure_10 } = jsxProd);
-let closure_11 = _createForOfIteratorHelperLoose.createStyles({ container: { flex: 1 } });
+let c3 = importAllResult;
+({ jsx: metroImportAll, Fragment: c9, jsxs: c10 } = jsxProd);
+let closure_11 = createCacheKey.createStyles({ container: { flex: 1 } });
 let closure_12 = BottomSheetModal.createBottomSheetScrollableComponent(require("BottomSheetModal").SCROLLABLE_TYPE.SCROLLVIEW, animatedComponent);
 isMetaQuest = isMetaQuest.isMetaQuest();
 let closure_14 = { code: "function EmojiPickerListComponentAndroidTsx1(){const{bottomSheetIndex}=this.__closure;return bottomSheetIndex.get();}" };
 let closure_15 = { code: "function EmojiPickerListComponentAndroidTsx2(index){const{inPortalKeyboard,IS_META_QUEST,runOnJS,scrollingEnabled}=this.__closure;if(!inPortalKeyboard||index<0||IS_META_QUEST){return;}if(index===0){runOnJS(scrollingEnabled)(false);}else if(index===1){runOnJS(scrollingEnabled)(true);}}" };
-const forwardRefResult = importAllResult.forwardRef((analyticsLocations) => {
+const forwardRefResult = importAllResult.forwardRef((analyticsLocations, ref) => {
   let paddingBottom;
   let paddingTop;
   analyticsLocations = analyticsLocations.analyticsLocations;
@@ -39,8 +40,11 @@ const forwardRefResult = importAllResult.forwardRef((analyticsLocations) => {
   const onLongPressEmoji = analyticsLocations.onLongPressEmoji;
   const onShowNitroUpsell = analyticsLocations.onShowNitroUpsell;
   const useTier0UpsellContent = analyticsLocations.useTier0UpsellContent;
+  ref = undefined;
+  let callback;
+  let callback1;
   ({ paddingTop, paddingBottom } = analyticsLocations);
-  const ref = data.useRef(null);
+  ref = data.useRef(null);
   const items = [ref, data];
   const effect = data.useEffect(() => {
     let hasGuildData = null != ref.current;
@@ -52,7 +56,7 @@ const forwardRefResult = importAllResult.forwardRef((analyticsLocations) => {
       Commands.refreshEmojis(ref.current);
     }
   }, items);
-  const callback = data.useCallback((arg0) => {
+  callback = data.useCallback((arg0) => {
     if (null != ref.current) {
       const Commands = analyticsLocations(categoryIndexActive[8]).Commands;
       Commands.scrollingEnabled(tmp.current, arg0);
@@ -70,33 +74,31 @@ const forwardRefResult = importAllResult.forwardRef((analyticsLocations) => {
   class D {
     constructor(arg0) {
       tmp = !inPortalKeyboard;
-      if (!tmp) {
+      if (inPortalKeyboard) {
         num = 0;
         tmp = analyticsLocations < 0;
       }
       if (!tmp) {
-        tmp = f73071;
+        tmp = f82423;
       }
       if (!tmp) {
         num2 = 0;
         if (0 === analyticsLocations) {
           tmp6 = analyticsLocations;
           tmp7 = categoryIndexActive;
-          num5 = 7;
           obj2 = analyticsLocations(categoryIndexActive[7]);
-          tmp8 = closure_12;
+          tmp8 = c12;
           flag2 = false;
-          tmp9 = obj2.runOnJS(closure_12)(false);
+          tmp9 = obj2.runOnJS(c12)(false);
         } else {
           num3 = 1;
           if (1 === analyticsLocations) {
             tmp2 = analyticsLocations;
             tmp3 = categoryIndexActive;
-            num4 = 7;
             obj = analyticsLocations(categoryIndexActive[7]);
-            tmp4 = closure_12;
+            tmp4 = c12;
             flag = true;
-            tmp5 = obj.runOnJS(closure_12)(true);
+            tmp5 = obj.runOnJS(c12)(true);
           }
         }
       }
@@ -142,14 +144,14 @@ const forwardRefResult = importAllResult.forwardRef((analyticsLocations) => {
   const callback5 = data.useCallback((nativeEvent) => {
     onShowNitroUpsell(nativeEvent.nativeEvent.showNitroUpsell);
   }, items5);
-  const imperativeHandle = data.useImperativeHandle(arg1, () => ({
+  const imperativeHandle = data.useImperativeHandle(ref, () => ({
     scrollToHeaderIndex(animated) {
       let flag = animated.animated;
       if (flag === undefined) {
         flag = true;
       }
-      if (null != outer1_11.current) {
-        const Commands = analyticsLocations(categoryIndexActive[8]).Commands;
+      if (null != ref.current) {
+        const Commands = outer1_0(outer1_2[8]).Commands;
         Commands.scrollToHeaderIndex(tmp.current, animated.index, flag);
       }
     },
@@ -161,42 +163,29 @@ const forwardRefResult = importAllResult.forwardRef((analyticsLocations) => {
     }
   }));
   const items6 = [animateEmoji];
-  obj = {
-    config: data.useMemo(() => {
-      const obj = { animateEmoji, scrollFastOptimizationEnabled: true, scrollFastVelocity: 8000, disableAnimationsOnScroll: true };
-      return obj;
-    }, items6),
-    emojiData: data,
-    emojiMargin: onPressEmoji,
-    emojiSize: inPortalKeyboard,
-    onPressEmoji: callback2,
-    onLongPressEmoji: callback3,
-    onStickyHeaderRender: callback4,
-    onShowNitroUpsell: callback5,
-    paddingTop,
-    paddingBottom,
-    useTier0UpsellContent,
-    ref,
-    style: ref().container
-  };
+  obj = { config: data.useMemo(() => ({ animateEmoji, scrollFastOptimizationEnabled: true, scrollFastVelocity: 8000, disableAnimationsOnScroll: true }), items6), emojiData: data, emojiMargin: onPressEmoji, emojiSize: inPortalKeyboard, onPressEmoji: callback2, onLongPressEmoji: callback3, onStickyHeaderRender: callback4, onShowNitroUpsell: callback5, paddingTop, paddingBottom, useTier0UpsellContent, ref, style: ref().container };
   const items7 = [guildId, analyticsLocations, useTier0UpsellContent, data.hasSearchUpsell];
   let tmp = ref();
-  const obj1 = {};
+  const obj1 = { children: null };
   const items8 = [
     onLongPressEmoji(callback, obj),
     data.useMemo(() => {
       let tmp = null;
       if (data.hasSearchUpsell) {
-        let obj = { portalId: guildId.PREMIUM_UPSELL };
-        obj = { guildId, analyticsLocations, useTier0UpsellContent };
-        obj.children = onLongPressEmoji(analyticsLocations(categoryIndexActive[13]).PremiumSearchUpsell, obj);
+        let obj = { portalId: null, children: null };
+        obj[0] = guildId.PREMIUM_UPSELL;
+        obj = { guildId: null, analyticsLocations: null, useTier0UpsellContent: null };
+        obj[0] = guildId;
+        obj[1] = analyticsLocations;
+        obj[2] = useTier0UpsellContent;
+        obj[1] = onLongPressEmoji(analyticsLocations(categoryIndexActive[13]).PremiumSearchUpsell, obj);
         tmp = onLongPressEmoji(bottomSheetIndex(categoryIndexActive[12]), obj);
         const tmp5 = bottomSheetIndex(categoryIndexActive[12]);
       }
       return tmp;
     }, items7)
   ];
-  obj1.children = items8;
+  obj1[0] = items8;
   return useTier0UpsellContent(onShowNitroUpsell, obj1);
 });
 let result = require("EmojiCategoryTypes").fileFinishedImporting("modules/emoji_picker/native/components/EmojiPickerListComponent.android.tsx");

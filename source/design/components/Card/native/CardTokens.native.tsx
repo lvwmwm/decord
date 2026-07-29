@@ -1,26 +1,26 @@
-// Module ID: 5201
-// Function ID: 45108
+// Module ID: 5223
+// Function ID: 5224
 // Name: createCardShadowToken
-// Dependencies: [4165, 689, 2]
+// Dependencies: [4189, 712, 2]
 // Exports: createCardShadowToken
 
-// Module 5201 (createCardShadowToken)
+// Module 5223 (createCardShadowToken)
 const result = require("set").fileFinishedImporting("design/components/Card/native/CardTokens.native.tsx");
 
 export const createCardShadowToken = function createCardShadowToken(arg0) {
   const _require = arg0;
-  return _require(4165).experimental_createToken((gradient) => {
+  return _require(4189).experimental_createToken((gradient) => {
     if (null == gradient.gradient) {
       if ("none" !== closure_0) {
-        if ("border" === closure_0) {
+        if ("border" === tmp11) {
           return outer1_1(outer1_2[1]).shadows.SHADOW_BORDER;
-        } else if ("high" === tmp12) {
+        } else if ("high" === tmp11) {
           return outer1_1(outer1_2[1]).shadows.SHADOW_HIGH;
-        } else if ("ledge" === tmp12) {
+        } else if ("ledge" === tmp11) {
           return outer1_1(outer1_2[1]).shadows.SHADOW_LEDGE;
-        } else if ("low" === tmp12) {
+        } else if ("low" === tmp11) {
           return outer1_1(outer1_2[1]).shadows.SHADOW_LOW;
-        } else if ("medium" === tmp12) {
+        } else if ("medium" === tmp11) {
           return outer1_1(outer1_2[1]).shadows.SHADOW_MEDIUM;
         }
       }

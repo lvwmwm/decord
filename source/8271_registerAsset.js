@@ -1,11 +1,10 @@
 // Module ID: 8271
-// Function ID: 66163
+// Function ID: 8272
 // Name: registerAsset
-// Dependencies: [1217]
+// Dependencies: [1241]
 
 // Module 8271 (registerAsset)
 import registerAsset from "registerAsset";
 
-const obj = { __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "45c8ad8f30ca8563a8afaab90a692e66", name: "MagnifyingGlassIcon", type: "png" };
 
-export default registerAsset.registerAsset(obj);
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/guild_scheduled_events/native/images", width: 216, height: 80, scales: [2, 3], hash: "0e2ac412c416f1e5e277ac37a8dd593a", name: "stage-channel-upsell", type: "png" });

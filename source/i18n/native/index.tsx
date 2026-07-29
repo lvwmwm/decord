@@ -1,7 +1,7 @@
-// Module ID: 16013
-// Function ID: 123637
-// Dependencies: [16014, 16062, 2]
+// Module ID: 16048
+// Function ID: 16049
+// Dependencies: [16049, 16097, 2]
 
-// Module 16013
+// Module 16048
 require("getMessage").setUpdateRules(require("I18nLink"));
 const result = require("set").fileFinishedImporting("i18n/native/index.tsx");

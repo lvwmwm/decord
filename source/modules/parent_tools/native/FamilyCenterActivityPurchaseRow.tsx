@@ -1,24 +1,24 @@
-// Module ID: 13911
-// Function ID: 106399
+// Module ID: 13932
+// Function ID: 13933
 // Name: FamilyCenterActivityPurchaseRow
-// Dependencies: [31, 27, 33, 4165, 689, 7930, 13912, 5651, 13913, 4161, 2]
+// Dependencies: [19, 17, 21, 4189, 712, 7955, 13933, 5669, 13934, 4185, 2]
 // Exports: default
 
-// Module 13911 (FamilyCenterActivityPurchaseRow)
-import "result";
+// Module 13932 (FamilyCenterActivityPurchaseRow)
+import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_4;
-let closure_5;
+let c4;
+let c5;
 const require = arg1;
-({ jsx: closure_4, jsxs: closure_5 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { display: "flex", flexDirection: "row", alignItems: "center", borderBottomColor: require("_createForOfIteratorHelperLoose").colors.BORDER_SUBTLE, borderBottomWidth: 1, paddingVertical: 12 };
-_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.textContainer = { display: "flex", flexDirection: "column", flexShrink: 1 };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+({ jsx: c4, jsxs: c5 } = jsxProd);
+createCacheKey = { container: null, textContainer: null };
+createCacheKey = { display: "flex", flexDirection: "row", alignItems: "center", borderBottomColor: require("Themes").colors.BORDER_SUBTLE, borderBottomWidth: 1, paddingVertical: 12 };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { display: "flex", flexDirection: "column", flexShrink: 1 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
 const result = require("jsxProd").fileFinishedImporting("modules/parent_tools/native/FamilyCenterActivityPurchaseRow.tsx");
 
 export default function FamilyCenterActivityPurchaseRow(arg0) {
@@ -31,14 +31,14 @@ export default function FamilyCenterActivityPurchaseRow(arg0) {
   let typeName;
   ({ skuId, subscriptionPlanId } = arg0);
   ({ total, currency } = arg0);
-  const tmp = _createForOfIteratorHelperLoose();
-  const product = importDefault(7930)(skuId).product;
-  let obj = require(13912) /* getCollectibleTypeName */;
-  let tmp2 = null;
-  if (null != product) {
-    tmp2 = product;
+  const tmp = createCacheKey();
+  let product = importDefault(7955)(skuId).product;
+  let obj = require(13933) /* getCollectibleTypeName */;
+  let tmp6 = product;
+  if (product == null) {
+    tmp6 = null;
   }
-  const purchaseDisplayInfo = obj.getPurchaseDisplayInfo(tmp2, subscriptionPlanId);
+  const purchaseDisplayInfo = obj.getPurchaseDisplayInfo(tmp6, subscriptionPlanId);
   ({ displayName, typeName, isSubscription } = purchaseDisplayInfo);
   if (null != skuId) {
     if (!isSubscription) {
@@ -51,33 +51,35 @@ export default function FamilyCenterActivityPurchaseRow(arg0) {
     return null;
   } else {
     let combined = displayName;
-    const obj7 = require(5651) /* formatSingleCurrencyPrice */;
+    const tmp5Result = tmp5(5669);
     if (null != typeName) {
       const _HermesInternal = HermesInternal;
       combined = "" + displayName + " \u2022 " + typeName;
     }
-    obj = { style: tmp.container };
-    obj = { displayName };
-    let tmp12 = null;
-    const formatPriceResult = require(5651) /* formatSingleCurrencyPrice */.formatPrice(total, currency);
-    const tmp6 = callback2;
-    const tmp7 = View;
-    const tmp8 = callback;
-    if (null != product) {
-      tmp12 = product;
+    obj = { style: null, children: null };
+    obj[0] = tmp.container;
+    obj = { displayName: null, product: null, isSubscription: null, subscriptionPlanId: null };
+    obj[0] = displayName;
+    const formatPriceResult = tmp5(5669).formatPrice(total, currency);
+    if (product == null) {
+      product = null;
     }
-    obj.product = tmp12;
-    obj.isSubscription = isSubscription;
-    obj.subscriptionPlanId = subscriptionPlanId;
-    const items = [tmp8(importDefault(13913), obj), ];
-    const obj1 = { style: tmp.textContainer };
-    const obj2 = { variant: "text-md/semibold", color: "interactive-text-active", ellipsizeMode: "tail", lineClamp: 1, children: combined };
-    const items1 = [callback(require(4161) /* Text */.Text, obj2), ];
-    const obj3 = { variant: "text-xs/medium", color: "text-muted", children: formatPriceResult };
-    items1[1] = callback(require(4161) /* Text */.Text, obj3);
-    obj1.children = items1;
-    items[1] = callback2(View, obj1);
-    obj.children = items;
-    return tmp6(tmp7, obj);
+    obj[1] = product;
+    obj[2] = isSubscription;
+    obj[3] = subscriptionPlanId;
+    const items = [closure_4(tmp2(13934), obj), ];
+    const obj1 = { style: null, children: null };
+    obj1[0] = tmp.textContainer;
+    const obj2 = { variant: "text-md/semibold", color: "interactive-text-active", ellipsizeMode: "tail", lineClamp: 1, children: null };
+    obj2[4] = combined;
+    const items1 = [closure_4(tmp5(4185).Text, obj2), ];
+    const obj3 = { variant: "text-xs/medium", color: "text-muted", children: null };
+    obj3[2] = formatPriceResult;
+    items1[1] = closure_4(tmp5(4185).Text, obj3);
+    obj1[1] = items1;
+    items[1] = closure_5(View, obj1);
+    obj[1] = items;
+    return closure_5(View, obj);
   }
+  tmp2 = importDefault;
 };

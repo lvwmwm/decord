@@ -1,71 +1,74 @@
-// Module ID: 13939
-// Function ID: 106553
+// Module ID: 13960
+// Function ID: 13961
 // Name: FamilyCenterParentalControlsSettings
-// Dependencies: [57, 31, 27, 653, 5776, 33, 4165, 689, 1456, 5497, 5517, 6309, 5838, 13903, 13921, 1212, 2199, 9094, 13940, 13941, 8200, 5777, 5155, 13942, 8731, 8729, 2]
+// Dependencies: [32, 19, 17, 676, 5794, 21, 4189, 712, 1480, 5515, 5535, 6330, 5856, 13924, 13942, 1236, 2223, 9118, 13961, 13962, 8224, 5795, 5177, 13963, 8755, 8753, 2]
 // Exports: default
 
-// Module 13939 (FamilyCenterParentalControlsSettings)
+// Module 13960 (FamilyCenterParentalControlsSettings)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
-import get_ActivityIndicator from "get ActivityIndicator";
+import FamilyCenterParentalControlsDataAndPrivacy from "FamilyCenterParentalControlsDataAndPrivacy";
+import get_ActivityIndicator from "GenericHeaderTitle";
 import { UserSettingsSections } from "ME";
 import { FamilyCenterSubPages } from "items";
-import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import jsxProd from "maybeFetchCollectiblesForInvoices";
+import createCacheKey from "createCacheKey";
 
-let closure_10;
-let closure_5;
+let c10;
+let c5;
+let c9;
 let closure_6;
-let closure_9;
 const require = arg1;
-({ View: closure_5, ScrollView: closure_6 } = get_ActivityIndicator);
-({ jsx: closure_9, jsxs: closure_10 } = jsxProd);
-_createForOfIteratorHelperLoose = { container: { display: "flex", flex: 1 } };
-_createForOfIteratorHelperLoose = { paddingTop: require("_createForOfIteratorHelperLoose").space.PX_16, paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16 };
-_createForOfIteratorHelperLoose.segmentedControlContainer = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.content = { paddingBottom: require("_createForOfIteratorHelperLoose").space.PX_16 };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-let obj1 = { paddingBottom: require("_createForOfIteratorHelperLoose").space.PX_16 };
+({ View: c5, ScrollView: closure_6 } = get_ActivityIndicator);
+({ jsx: c9, jsxs: c10 } = jsxProd);
+createCacheKey = { container: { display: "flex", flex: 1 }, segmentedControlContainer: null, content: null };
+createCacheKey = { paddingTop: require("Themes").space.PX_16, paddingHorizontal: require("Themes").space.PX_16 };
+createCacheKey[1] = createCacheKey;
+createCacheKey[2] = { paddingBottom: require("Themes").space.PX_16 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let obj1 = { paddingBottom: require("Themes").space.PX_16 };
 const result = require("get ActivityIndicator").fileFinishedImporting("modules/user_settings/family_center/native/UserSettingsFamilyCenterParentalControls.tsx");
 
 export default function FamilyCenterParentalControlsSettings() {
-  let tmp = _createForOfIteratorHelperLoose();
+  let importDefault;
+  let tmp8;
+  let tmp = createCacheKey();
   let obj = stackNavigation(selectedSubPage[8]);
   stackNavigation = obj.useStackNavigation();
-  const tmp4 = callback(isFamilyCenterV3Enabled.useState(0), 2);
-  const importDefault = tmp4[1];
-  let obj1 = stackNavigation(selectedSubPage[11]);
-  const settingNavigationRoute = obj1.useSettingNavigationRoute();
+  let obj1 = isFamilyCenterV3Enabled;
+  const tmp6 = importDefault(selectedSubPage[9]);
+  [tmp8, importDefault] = callback(isFamilyCenterV3Enabled.useState(0), 2);
+  let obj2 = stackNavigation(selectedSubPage[11]);
+  const settingNavigationRoute = obj2.useSettingNavigationRoute();
   const params = settingNavigationRoute.params;
   selectedSubPage = undefined;
-  if (null != params) {
+  if (params != null) {
     selectedSubPage = params.selectedSubPage;
   }
-  if (null == selectedSubPage) {
+  if (selectedSubPage == null) {
     selectedSubPage = items2.CONTENT_AND_SOCIAL;
   }
   const params2 = settingNavigationRoute.params;
   let autoOpenCreate;
-  if (null != params2) {
+  if (params2 != null) {
     autoOpenCreate = params2.autoOpenCreate;
   }
-  callback = tmp9;
-  let obj2 = stackNavigation(selectedSubPage[12]);
-  isFamilyCenterV3Enabled = obj2.useIsFamilyCenterV3Enabled({ location: "FamilyCenterParentalControlsSettings" });
-  let obj3 = stackNavigation(selectedSubPage[13]);
-  const selectedTeenUser = obj3.useSelectedTeenUser();
+  callback = tmp13;
+  let tmp2Result = tmp2(tmp3[12]);
+  isFamilyCenterV3Enabled = tmp2Result.useIsFamilyCenterV3Enabled({ location: "FamilyCenterParentalControlsSettings" });
+  tmp2Result = tmp2(tmp3[13]);
+  const selectedTeenUser = tmp2Result.useSelectedTeenUser();
   let id;
-  if (null != selectedTeenUser) {
+  if (selectedTeenUser != null) {
     id = selectedTeenUser.id;
   }
-  const tmp13 = importDefault(selectedSubPage[14])();
-  let closure_6 = tmp13;
-  callback = isFamilyCenterV3Enabled.useCallback((nativeEvent) => {
+  const tmp17 = importDefault(selectedSubPage[14])();
+  let closure_6 = tmp17;
+  callback = obj1.useCallback((nativeEvent) => {
     callback(nativeEvent.nativeEvent.layout.width);
   }, []);
-  let closure_7 = isFamilyCenterV3Enabled.useRef(false);
+  let closure_7 = obj1.useRef(false);
   const items = [true === autoOpenCreate, id, stackNavigation];
-  const effect = isFamilyCenterV3Enabled.useEffect(() => {
+  const effect = obj1.useEffect(() => {
     let tmp = _slicedToArray;
     if (_slicedToArray) {
       tmp = null != id;
@@ -75,91 +78,101 @@ export default function FamilyCenterParentalControlsSettings() {
     }
     if (tmp) {
       ref.current = true;
-      let obj = { autoOpenCreate: false };
-      stackNavigation.setParams(obj);
-      obj = { teenId: id };
+      stackNavigation.setParams({ autoOpenCreate: false });
+      const obj = { teenId: null };
+      obj[0] = id;
       stackNavigation.navigate(ref.FAMILY_CENTER_SCHEDULE_DOWNTIME, obj);
     }
   }, items);
-  const items1 = [stackNavigation, selectedSubPage, isFamilyCenterV3Enabled, id, tmp13];
-  const layoutEffect = isFamilyCenterV3Enabled.useLayoutEffect(() => {
+  const items1 = [stackNavigation, selectedSubPage, isFamilyCenterV3Enabled, id, tmp17];
+  const layoutEffect = obj1.useLayoutEffect(() => {
     if (isFamilyCenterV3Enabled) {
       if (selectedSubPage === items2.SCREEN_TIME_CONTROLS) {
         if (null != id) {
-          let obj = {};
-          let fn;
+          let obj = { title: null, headerRight: null };
           let intl = stackNavigation(selectedSubPage[15]).intl;
-          obj.title = intl.string(callback(selectedSubPage[16])["1Op+NP"]);
+          obj[0] = intl.string(outer1_1(selectedSubPage[16])["1Op+NP"]);
+          let fn;
           if (!closure_6) {
             fn = (arg0) => {
               const obj = {};
               const merged = Object.assign(arg0);
-              obj["onPress"] = function onPress() {
-                return outer2_0.navigate(constants.FAMILY_CENTER_SCHEDULE_DOWNTIME, { teenId: outer2_5 });
+              obj.onPress = function onPress() {
+                return navigation.navigate(outer1_7.FAMILY_CENTER_SCHEDULE_DOWNTIME, { teenId: closure_5 });
               };
-              const intl = stackNavigation(selectedSubPage[15]).intl;
-              obj["label"] = intl.string(stackNavigation(selectedSubPage[15]).t.OYkgVk);
-              return outer2_9(stackNavigation(selectedSubPage[17]).HeaderTextButton, obj);
+              const intl = outer1_0(outer1_2[15]).intl;
+              obj.label = intl.string(outer1_0(outer1_2[15]).t.OYkgVk);
+              return outer1_9(outer1_0(outer1_2[17]).HeaderTextButton, obj);
             };
           }
-          obj.headerRight = fn;
+          obj[1] = fn;
           stackNavigation.setOptions(obj);
         }
       }
     }
-    stackNavigation.setOptions({ title: undefined, headerRight: undefined });
+    stackNavigation.setOptions({ title: "dispatch", headerRight: "isArray" });
   }, items1);
   if (isFamilyCenterV3Enabled) {
     isFamilyCenterV3Enabled = selectedSubPage === items2.SCREEN_TIME_CONTROLS;
   }
-  obj = {};
-  let intl = stackNavigation(selectedSubPage[15]).intl;
-  obj.label = intl.string(stackNavigation(selectedSubPage[15]).t["+o1pDZ"]);
-  obj.id = items2.CONTENT_AND_SOCIAL;
-  obj.page = callback2(importDefault(selectedSubPage[18]), {});
+  obj = { label: null, id: null, page: null };
+  let intl = tmp2(tmp3[15]).intl;
+  obj[0] = intl.string(stackNavigation(selectedSubPage[15]).t["+o1pDZ"]);
+  obj[1] = items2.CONTENT_AND_SOCIAL;
+  obj[2] = callback2(importDefault(selectedSubPage[18]), {});
   items2 = [obj, ];
-  obj = {};
-  const intl2 = stackNavigation(selectedSubPage[15]).intl;
-  obj.label = intl2.string(stackNavigation(selectedSubPage[15]).t.OAuOHD);
-  obj.id = items2.DATA_AND_PRIVACY;
-  obj.page = callback2(importDefault(selectedSubPage[19]), {});
+  obj = { label: null, id: null, page: null };
+  const intl2 = tmp2(tmp3[15]).intl;
+  obj[0] = intl2.string(stackNavigation(selectedSubPage[15]).t.OAuOHD);
+  obj[1] = items2.DATA_AND_PRIVACY;
+  obj[2] = callback2(importDefault(selectedSubPage[19]), {});
   items2[1] = obj;
-  let obj6 = stackNavigation(selectedSubPage[20]);
+  const tmp7 = callback(isFamilyCenterV3Enabled.useState(0), 2);
   obj1 = {
     items: items2,
     onPageChange(arg0) {
-      const tab = callback(selectedSubPage[21]).selectTab(items2[arg0].id);
+      const tab = outer1_1(selectedSubPage[21]).selectTab(items2[arg0].id);
     },
-    pageWidth: tmp4[0],
+    pageWidth: tmp8,
     defaultIndex: Math.max(items2.findIndex((id) => id.id === selectedSubPage), 0)
   };
-  const segmentedControlState = obj6.useSegmentedControlState(obj1);
-  obj2 = { value: importDefault(selectedSubPage[9])(importDefault(selectedSubPage[10]).FAMILY_CENTER).analyticsLocations };
+  const segmentedControlState = stackNavigation(selectedSubPage[20]).useSegmentedControlState(obj1);
+  obj2 = { value: tmp6(importDefault(selectedSubPage[10]).FAMILY_CENTER).analyticsLocations, children: null };
   if (isFamilyCenterV3Enabled) {
-    obj3 = { style: tmp.container };
-    const obj4 = { bottom: true, style: tmp.content };
-    const obj5 = { readOnly: tmp13 };
-    obj4.children = callback2(importDefault(selectedSubPage[23]), obj5);
-    obj3.children = callback2(stackNavigation(selectedSubPage[22]).SafeAreaPaddingView, obj4);
-    obj2.children = callback2(closure_6, obj3);
-    let tmp26 = obj2;
+    const obj3 = { style: null, children: null };
+    obj3[0] = tmp.container;
+    const obj4 = { bottom: true, style: null, children: null };
+    obj4[1] = tmp.content;
+    const obj5 = { readOnly: null };
+    obj5[0] = tmp17;
+    obj4[2] = tmp22(tmp5(tmp3[23]), obj5);
+    obj3[1] = tmp22(tmp2(tmp3[22]).SafeAreaPaddingView, obj4);
+    obj2[1] = tmp22(closure_6, obj3);
+    let tmp27 = obj2;
   } else {
-    obj6 = { style: tmp.container, onLayout: callback };
-    const obj7 = { style: tmp.segmentedControlContainer };
-    const obj8 = { state: segmentedControlState };
-    obj7.children = callback2(stackNavigation(selectedSubPage[24]).SegmentedControl, obj8);
-    const items3 = [callback2(id, obj7), ];
-    const obj9 = { style: tmp.container };
-    const obj10 = {};
-    const obj11 = { bottom: true, style: tmp.content };
-    const obj12 = { state: segmentedControlState };
-    obj11.children = callback2(stackNavigation(selectedSubPage[25]).SegmentedControlPages, obj12);
-    obj10.children = callback2(stackNavigation(selectedSubPage[22]).SafeAreaPaddingView, obj11);
-    obj9.children = callback2(closure_6, obj10);
-    items3[1] = callback2(id, obj9);
-    obj6.children = items3;
-    obj2.children = callback3(id, obj6);
-    tmp26 = obj2;
+    const obj6 = { style: null, onLayout: null, children: null };
+    obj6[0] = tmp.container;
+    obj6[1] = callback;
+    const obj7 = { style: null, children: null };
+    obj7[0] = tmp.segmentedControlContainer;
+    const obj8 = { state: null };
+    obj8[0] = segmentedControlState;
+    obj7[1] = tmp22(tmp2(tmp3[24]).SegmentedControl, obj8);
+    const items3 = [tmp22(id, obj7), ];
+    const obj9 = { style: null, children: null };
+    obj9[0] = tmp.container;
+    const obj10 = { children: null };
+    const obj11 = { bottom: true, style: null, children: null };
+    obj11[1] = tmp.content;
+    const obj12 = { state: null };
+    obj12[0] = segmentedControlState;
+    obj11[2] = tmp22(tmp2(tmp3[25]).SegmentedControlPages, obj12);
+    obj10[0] = tmp22(tmp2(tmp3[22]).SafeAreaPaddingView, obj11);
+    obj9[1] = tmp22(closure_6, obj10);
+    items3[1] = tmp22(id, obj9);
+    obj6[2] = items3;
+    obj2[1] = callback3(id, obj6);
+    tmp27 = obj2;
   }
-  return callback2(stackNavigation(selectedSubPage[9]).AnalyticsLocationProvider, tmp26);
+  return callback2(stackNavigation(selectedSubPage[9]).AnalyticsLocationProvider, tmp27);
 };

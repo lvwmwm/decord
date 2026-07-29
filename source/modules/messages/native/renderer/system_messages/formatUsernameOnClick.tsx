@@ -1,10 +1,10 @@
-// Module ID: 7722
-// Function ID: 61580
+// Module ID: 7745
+// Function ID: 7746
 // Name: formatUsernameOnClick
-// Dependencies: [7721, 2]
+// Dependencies: [7744, 2]
 // Exports: default
 
-// Module 7722 (formatUsernameOnClick)
+// Module 7745 (formatUsernameOnClick)
 const result = require("set").fileFinishedImporting("modules/messages/native/renderer/system_messages/formatUsernameOnClick.tsx");
 
 export default function formatUsernameOnClick(arg0) {
@@ -18,26 +18,25 @@ export default function formatUsernameOnClick(arg0) {
   ({ userId, message, author, roleStyle, messageChannelId } = arg0);
   const colorString = author.colorString;
   ({ colorStrings, guildId } = author);
-  if (null == userId) {
+  if (userId == null) {
     userId = message.author.id;
   }
-  const obj = { action: "bindUserMenu", userId };
+  const obj = { action: "bindUserMenu", userId, linkColor: null, roleColor: null, roleColors: null, shouldShowRoleDot: null, messageChannelId: null, medium: true };
   let tmp = null;
   if ("username" === roleStyle) {
     tmp = colorString;
   }
-  obj.linkColor = tmp;
-  obj.roleColor = colorString;
+  obj[2] = tmp;
+  obj[3] = colorString;
   let tmp2 = null;
   if (obj2.isNativeMessageEligibleForEnhancedRoleColors(guildId, userId)) {
     tmp2 = colorStrings;
   }
-  obj.roleColors = tmp2;
-  obj.shouldShowRoleDot = "dot" === roleStyle && null != colorString;
-  if (null == messageChannelId) {
+  obj[4] = tmp2;
+  obj[5] = "dot" === roleStyle && null != colorString;
+  if (messageChannelId == null) {
     messageChannelId = message.channel_id;
   }
-  obj.messageChannelId = messageChannelId;
-  obj.medium = true;
+  obj[6] = messageChannelId;
   return obj;
 };

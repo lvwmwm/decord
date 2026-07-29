@@ -1,30 +1,109 @@
-// Module ID: 11656
-// Function ID: 90368
+// Module ID: 11680
+// Function ID: 11681
 // Name: _handleBoostPress
-// Dependencies: [5, 31, 27, 4058, 653, 5003, 1852, 33, 11605, 4372, 5001, 11657, 1456, 5497, 624, 1868, 11604, 4578, 1212, 4687, 2]
+// Dependencies: [5, 19, 17, 4082, 676, 5025, 1876, 21, 11629, 4395, 5023, 11681, 1480, 5515, 647, 1892, 11628, 4600, 1236, 4709, 2]
 // Exports: default
 
-// Module 11656 (_handleBoostPress)
+// Module 11680 (_handleBoostPress)
 import PremiumGuildSubscribeModalScenes from "PremiumGuildSubscribeModalScenes";
-import result from "result";
-import { View } from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import LockIcon from "LockIcon";
+import { View } from "Button";
+import handleGuildBoostsUpdate from "handleGuildBoostsUpdate";
 import ME from "ME";
 import { PremiumGuildSubscribeModalScenes as closure_11 } from "PremiumGuildSubscribeModalScenes";
 import { FractionalPremiumStates } from "GuildFeatures";
 import { jsx } from "jsxProd";
 
-let closure_10;
-let closure_7;
-let closure_8;
-let closure_9;
+let c10;
+let c9;
+let error;
+let metroImportAll;
 const require = arg1;
 function _handleBoostPress() {
-  // CreateGeneratorClosureLongIndex (0x67)
-  const obj = callback(tmp);
-  return obj(...arguments);
+  const self = this;
+  const tmp = callback((arg0, arg1, arg2) => {
+    let closure_0 = arg0;
+    let closure_1 = arg1;
+    let closure_2 = arg2;
+    let c4 = 0;
+    let c5 = 0;
+    return (function*(arg0, arg1, arg2) {
+      if (c5 === 2) {
+        c5 = 3;
+        HermesBuiltin.throwTypeError();
+      } else if (tmp4 === 3) {
+        if (arg0 === 1) {
+          throw arg1;
+        } else if (arg0 === 2) {
+          let obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
+        } else {
+          return { value: "HermesInternal", done: null };
+        }
+      } else {
+        try {
+          c5 = 2;
+          if (0 === c4) {
+            if (arg0 === 1) {
+              c5 = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              c5 = 3;
+              obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            } else {
+              let PremiumGuildSubscribeModalScenes = tmp2;
+              const obj1 = { source: null, analyticsLocations: null, guildId: null, onBack: null };
+              const obj2 = { page: null, section: null, object: null, objectType: null };
+              obj2[0] = outer1_9.PREMIUM_GUILD_USER_MODAL;
+              obj2[1] = dependencyMap;
+              obj2[2] = outer1_7.BUTTON_CTA;
+              obj2[3] = outer1_8.BUY;
+              obj1[0] = obj2;
+              obj1[1] = callback;
+              obj1[2] = closure_1;
+              obj1[3] = function onBack() {
+                return callback(table[9]).pop();
+              };
+              c4 = 1;
+              c5 = 1;
+              const obj3 = { value: null, done: false };
+              obj3[0] = callback(11629).launchGuildBoostFlowOrAlert(obj1);
+              return obj3;
+            }
+          } else if (arg0 === 1) {
+            c5 = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            c5 = 3;
+            const obj4 = { value: null, done: true };
+            obj4[0] = arg1;
+            return obj4;
+          } else {
+            obj = callback(5023);
+            obj.closeApplyBoostModal();
+            c5 = 3;
+            return { value: "HermesInternal", done: null };
+          }
+        } catch (tmp10) {
+          c5 = tmp;
+          throw tmp10;
+        }
+      }
+    })();
+  });
+  const _handleBoostPress = tmp;
+  const apply = tmp.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
 }
-({ AnalyticsObjects: closure_7, AnalyticsObjectTypes: closure_8, AnalyticsPages: closure_9, NOOP: closure_10 } = ME);
+({ AnalyticsObjects: error, AnalyticsObjectTypes: metroImportAll, AnalyticsPages: c9, NOOP: c10 } = ME);
 const result = require("get ActivityIndicator").fileFinishedImporting("modules/guild_boosting/native/GuildBoostingSubscribeButton.tsx");
 
 export default function GuildBoostingSubscribeButton(guild) {
@@ -39,96 +118,98 @@ export default function GuildBoostingSubscribeButton(guild) {
   const intent = guild.intent;
   const View = onResult;
   ({ useShortenedCTA, styles, fractionalPremiumState, premiumGroupRole } = guild);
-  let tmp = previousGuildSubscriptionSlot(analyticsSection[11])();
-  let _isNativeReflectConstruct = tmp;
+  const tmp3 = previousGuildSubscriptionSlot(analyticsSection[11])();
+  let handleGuildBoostsUpdate = tmp3;
   let obj = guild(analyticsSection[12]);
   const navigation = obj.useNavigation();
   const analyticsLocations = previousGuildSubscriptionSlot(analyticsSection[13])().analyticsLocations;
-  let items = [_isNativeReflectConstruct];
+  let items = [handleGuildBoostsUpdate];
   const stateFromStores = guild(analyticsSection[14]).useStateFromStores(items, () => {
-    const keys = Object.keys(tmp.boostSlots);
+    const keys = Object.keys(tmp3.boostSlots);
     return keys.some((arg0) => null == boostSlots.boostSlots[arg0].premiumGuildSubscription && !boostSlots.boostSlots[arg0].isOnCooldown());
   });
   const items1 = [navigation, analyticsSection, onAvailableSlotPress, intent, guild.onResult];
-  const callback = intent.useCallback((guildId) => {
+  const callback = intent.useCallback((arg0, arg1) => {
     if (null != onAvailableSlotPress) {
-      return onAvailableSlotPress(guildId, arg1);
+      return tmp(arg0, arg1);
     } else {
-      let obj = { guildId };
-      let tmp;
+      let obj = { guildId: null, guildBoostSlots: null, location: null, intent: null, onResult: null };
+      obj[0] = arg0;
+      let tmp2;
       if (null != arg1) {
         const items = [arg1];
-        tmp = items;
+        tmp2 = items;
       }
-      obj.guildBoostSlots = tmp;
-      obj = { page: stateFromStores.PREMIUM_GUILD_USER_MODAL, section: analyticsSection, object: navigation.BUTTON_CTA, objectType: analyticsLocations.BUY };
-      obj.location = obj;
-      obj.intent = intent;
-      obj.onResult = closure_5;
+      obj[1] = tmp2;
+      obj = { page: null, section: null, object: null, objectType: null };
+      obj[0] = stateFromStores.PREMIUM_GUILD_USER_MODAL;
+      obj[1] = analyticsSection;
+      obj[2] = navigation.BUTTON_CTA;
+      obj[3] = analyticsLocations.BUY;
+      obj[2] = obj;
+      obj[3] = intent;
+      obj[4] = closure_5;
       navigation.push(shouldUseMobileWebRedirectCheckout.CONFIRMATION, obj);
     }
   }, items1);
-  let tmp5 = !stateFromStores;
-  if (tmp5) {
-    let tmp7 = fractionalPremiumState !== handleMobileWebRedirectCheckout.NONE;
-    if (!tmp7) {
-      tmp7 = premiumGroupRole === guild(analyticsSection[15]).PremiumSubscriptionGroupRole.MEMBER;
-    }
-    tmp5 = tmp7;
+  let tmp8 = !stateFromStores;
+  if (!stateFromStores) {
+    tmp8 = fractionalPremiumState !== handleMobileWebRedirectCheckout.NONE || premiumGroupRole === tmp4(tmp2[15]).PremiumSubscriptionGroupRole.MEMBER;
+    const tmp10 = fractionalPremiumState !== handleMobileWebRedirectCheckout.NONE || premiumGroupRole === tmp4(tmp2[15]).PremiumSubscriptionGroupRole.MEMBER;
   }
-  const tmp10 = previousGuildSubscriptionSlot(analyticsSection[16])("guild_boost_subscribe_button");
-  const shouldUseMobileWebRedirectCheckout = tmp10.shouldUseMobileWebRedirectCheckout;
-  handleMobileWebRedirectCheckout = tmp10.handleMobileWebRedirectCheckout;
-  const items2 = [tmp, shouldUseMobileWebRedirectCheckout, handleMobileWebRedirectCheckout, guild.id, analyticsSection, stateFromStores, previousGuildSubscriptionSlot, analyticsLocations, callback];
-  const jsx = intent.useCallback(() => {
-    if (_isNativeReflectConstruct) {
+  const tmp11 = previousGuildSubscriptionSlot(analyticsSection[16])("guild_boost_subscribe_button");
+  const shouldUseMobileWebRedirectCheckout = tmp11.shouldUseMobileWebRedirectCheckout;
+  handleMobileWebRedirectCheckout = tmp11.handleMobileWebRedirectCheckout;
+  const items2 = [tmp3, shouldUseMobileWebRedirectCheckout, handleMobileWebRedirectCheckout, guild.id, analyticsSection, stateFromStores, previousGuildSubscriptionSlot, analyticsLocations, callback];
+  let closure_13 = intent.useCallback(() => {
+    if (handleGuildBoostsUpdate) {
       let tmp8 = callback;
     } else if (stateFromStores) {
       tmp8 = callback(guild.id, previousGuildSubscriptionSlot);
     } else {
       if (shouldUseMobileWebRedirectCheckout) {
         if (null != guild.id) {
-          tmp8 = handleMobileWebRedirectCheckout(analyticsLocations, guild.id);
+          tmp8 = handleMobileWebRedirectCheckout(analyticsLocations, tmp3.id);
         }
       }
       tmp8 = (function handleBoostPress(analyticsLocations, id, analyticsSection) {
-        return outer2_14(...arguments);
+        const self = this;
+        const apply = closure_14.apply;
+        if (typeof apply === "unknown") {
+          let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+        } else {
+          applyArgumentsResult = apply(self, arguments);
+        }
+        return applyArgumentsResult;
       })(analyticsLocations, guild.id, analyticsSection);
     }
     return tmp8;
   }, items2);
-  obj = { style: styles };
+  obj = { style: styles, children: null };
   obj = {
-    loading: tmp,
+    loading: tmp3,
     variant: "primary",
     onPress() {
       return callback();
     },
-    disabled: tmp5
+    disabled: tmp8,
+    text: null,
+    icon: null
   };
-  const intl = guild(analyticsSection[18]).intl;
+  const intl = tmp4(tmp2[18]).intl;
   const string = intl.string;
-  const t = guild(analyticsSection[18]).t;
+  const t = tmp4(tmp2[18]).t;
   if (useShortenedCTA) {
     let stringResult = string(t.Uj0md3);
   } else {
     stringResult = string(t.gKmQ1G);
   }
-  obj.text = stringResult;
-  let tmp14;
-  if (tmp5) {
-    tmp14 = jsx(guild(analyticsSection[19]).LockIcon, { size: "xs", color: "white" });
+  obj[4] = stringResult;
+  let tmp12Result;
+  if (tmp8) {
+    tmp12Result = tmp12(tmp4(tmp2[19]).LockIcon, { size: "xs", color: "white" });
   }
-  obj.icon = tmp14;
-  obj.children = jsx(guild(analyticsSection[17]).Button, {
-    loading: tmp,
-    variant: "primary",
-    onPress() {
-      return callback();
-    },
-    disabled: tmp5
-  });
-  return <View loading={tmp} variant="primary" onPress={function onPress() {
-    return callback();
-  }} disabled={tmp5} />;
+  obj[5] = tmp12Result;
+  obj[1] = closure_13(guild(analyticsSection[17]).Button, obj);
+  return closure_13(View, obj);
 };

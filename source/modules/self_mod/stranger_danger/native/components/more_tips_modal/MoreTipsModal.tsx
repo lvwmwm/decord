@@ -1,21 +1,21 @@
-// Module ID: 10418
-// Function ID: 80203
+// Module ID: 10442
+// Function ID: 10443
 // Name: MoreTipsModalScreen
-// Dependencies: [31, 27, 9075, 653, 33, 4165, 689, 10158, 4161, 1212, 10419, 6731, 4372, 7676, 1273, 1557, 624, 10135, 5849, 5854, 5552, 2]
+// Dependencies: [19, 17, 9099, 676, 21, 4189, 712, 10179, 4185, 1236, 10443, 6752, 4395, 7699, 1297, 1581, 647, 10156, 5867, 5872, 5570, 2]
 // Exports: default
 
-// Module 10418 (MoreTipsModalScreen)
-import result from "result";
-import get_ActivityIndicator from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 10442 (MoreTipsModalScreen)
+import set from "set";
+import get_ActivityIndicator from "trackViewedEvent";
+import handleConnectionOpen from "handleConnectionOpen";
 import { AnalyticEvents } from "ME";
-import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import jsxProd from "set";
+import createCacheKey from "createCacheKey";
 
-let closure_4;
-let closure_5;
-let closure_8;
-let closure_9;
+let c4;
+let c5;
+let c9;
+let metroImportAll;
 const require = arg1;
 function MoreTipsModalScreen(learnMore) {
   let actionItems;
@@ -26,53 +26,104 @@ function MoreTipsModalScreen(learnMore) {
   let warningId;
   learnMore = learnMore.learnMore;
   ({ channelId, warningId, senderId, description, safetyTips, actionItems } = learnMore);
-  const tmp = _createForOfIteratorHelperLoose();
-  let obj = { keyboardShouldPersistTaps: "handled", style: tmp.scroll };
-  obj = { style: tmp.contentContainer };
-  obj = { style: tmp.tipsContainer };
-  const items = [callback(importDefault(10158), { description, safetyTips, showHeader: true }), ];
-  let tmp8 = null;
+  const tmp = createCacheKey();
+  let obj = { keyboardShouldPersistTaps: "handled", style: tmp.scroll, children: null };
+  obj = { style: tmp.contentContainer, children: null };
+  obj = { style: tmp.tipsContainer, children: null };
+  const items = [callback(importDefault(10179), { description, safetyTips, showHeader: true }), ];
+  let tmp2Result = null;
   if (null != learnMore) {
-    const obj1 = { style: tmp.learnMore, children: learnMore };
-    tmp8 = callback(closure_4, obj1);
+    const obj1 = { style: null, children: null };
+    obj1[0] = tmp.learnMore;
+    obj1[1] = learnMore;
+    tmp2Result = tmp2(tmp5, obj1);
   }
-  items[1] = tmp8;
-  obj.children = items;
-  const items1 = [callback2(closure_4, obj), , ];
-  const obj2 = {};
-  const obj3 = { variant: "eyebrow", color: "text-default", style: tmp.header };
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj3.children = intl.string(require(1212) /* getSystemLocale */.t.K5FKtc);
-  const items2 = [callback(require(4161) /* Text */.Text, obj3), actionItems];
-  obj2.children = items2;
-  items1[1] = callback2(closure_4, obj2);
-  items1[2] = callback(importDefault(10419), { channelId, warningId, senderId });
-  obj.children = items1;
-  obj.children = callback2(closure_4, obj);
+  items[1] = tmp2Result;
+  obj[1] = items;
+  const items1 = [closure_9(closure_4, obj), , ];
+  const obj2 = { children: null };
+  const obj3 = { variant: "eyebrow", color: "text-default", style: tmp.header, children: null };
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj3[3] = intl.string(require(1236) /* getSystemLocale */.t.K5FKtc);
+  const items2 = [callback(require(4185) /* Text */.Text, obj3), actionItems];
+  obj2[0] = items2;
+  items1[1] = closure_9(closure_4, obj2);
+  items1[2] = callback(importDefault(10443), { channelId, warningId, senderId });
+  obj[1] = items1;
+  obj[2] = closure_9(closure_4, obj);
   return callback(closure_5, obj);
 }
-function getScreens(headerStyle) {
-  let AnalyticEvents;
-  let result;
-  let closure_4;
-  let closure_5;
-  let _isNativeReflectConstruct;
-  let dependencyMap;
-  let importDefault;
-  let require;
-  ({ modalKey: require, channelId: importDefault, warningId: dependencyMap, senderId: result, description: closure_4, safetyTips: closure_5, actionItems: _isNativeReflectConstruct, learnMore: AnalyticEvents } = headerStyle);
-  const MORE_TIPS = {
+({ View: c4, ScrollView: c5 } = get_ActivityIndicator);
+({ jsx: metroImportAll, jsxs: c9 } = jsxProd);
+createCacheKey = { scroll: null, contentContainer: null, tipsContainer: null, learnMore: null, header: null };
+createCacheKey = { backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOWER };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { marginHorizontal: require("Themes").space.PX_16, marginBottom: require("Themes").space.PX_16, gap: require("Themes").space.PX_16 };
+let obj1 = { marginHorizontal: require("Themes").space.PX_16, marginBottom: require("Themes").space.PX_16, gap: require("Themes").space.PX_16 };
+createCacheKey[2] = { gap: require("Themes").space.PX_8 };
+createCacheKey[3] = { alignItems: "center" };
+let obj2 = { gap: require("Themes").space.PX_8 };
+createCacheKey[4] = { marginTop: require("Themes").space.PX_16, marginBottom: require("Themes").space.PX_4 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let obj3 = { marginTop: require("Themes").space.PX_16, marginBottom: require("Themes").space.PX_4 };
+const result = require("handleConnectionOpen").fileFinishedImporting("modules/self_mod/stranger_danger/native/components/more_tips_modal/MoreTipsModal.tsx");
+
+export default function MoreTipsModal(channelId) {
+  let c0;
+  let c1;
+  let c2;
+  let c3;
+  let c4;
+  let c5;
+  let c6;
+  let c7;
+  channelId = channelId.channelId;
+  let _require = channelId;
+  const warningId = channelId.warningId;
+  let importDefault = warningId;
+  const senderId = channelId.senderId;
+  let dependencyMap = senderId;
+  let MORE_TIPS = _require(647);
+  const items = [c6];
+  const stateFromStores = MORE_TIPS.useStateFromStores(items, () => _undefined5.getChannelSafetyWarning(c0, c1));
+  let React = stateFromStores;
+  const items1 = [channelId, warningId, senderId, stateFromStores];
+  const effect = React.useEffect(() => {
+    let obj = _undefined(_undefined3[17]);
+    obj = { channelId: _undefined, warningId: _undefined2, senderId: _undefined3, warningType: null };
+    let type;
+    if (_undefined4 != null) {
+      type = _undefined4.type;
+    }
+    obj[3] = type;
+    obj.trackViewedEvent(_undefined6.SAFETY_WARNING_MODAL_VIEWED, obj);
+    obj = { name: _undefined(tmp2[19]).MetricEvents.SAFETY_WARNING_MODAL_VIEW };
+    _undefined2(_undefined3[18]).increment(obj);
+  }, items1);
+  _require = undefined;
+  importDefault = undefined;
+  dependencyMap = undefined;
+  React = undefined;
+  c4 = undefined;
+  c5 = undefined;
+  c6 = undefined;
+  c7 = undefined;
+  ({ modalKey: c0, channelId: c1, warningId: c2, senderId: c3, description: c4, safetyTips: c5, actionItems: c6, learnMore: c7 } = channelId);
+  MORE_TIPS = {
     headerRight() {
       const obj = {
         onPress() {
-          return outer2_1(outer2_2[12]).popWithKey(outer1_0);
+          return outer1_1(outer1_2[12]).popWithKey(closure_0);
         },
-        source: outer1_1(outer1_2[13]),
-        iconSize: outer1_0(outer1_2[14]).IconSizes.MEDIUM
+        source: null,
+        iconSize: null,
+        accessibilityLabel: null
       };
-      const intl = outer1_0(outer1_2[9]).intl;
-      obj.accessibilityLabel = intl.string(outer1_0(outer1_2[9]).t.cpT0Cq);
-      return outer1_8(outer1_0(outer1_2[11]).HeaderActionButton, obj);
+      obj[1] = _undefined2(_undefined3[13]);
+      obj[2] = _undefined(_undefined3[14]).IconSizes.MEDIUM;
+      const intl = _undefined(_undefined3[9]).intl;
+      obj[3] = intl.string(_undefined(_undefined3[9]).t.cpT0Cq);
+      return outer1_8(_undefined(_undefined3[11]).HeaderActionButton, obj);
     },
     headerTitle() {
       return null;
@@ -80,48 +131,10 @@ function getScreens(headerStyle) {
     headerLeft() {
       return null;
     },
-    headerStyle: headerStyle.headerStyle,
+    headerStyle: channelId.headerStyle,
     render() {
-      return outer1_8(outer1_11, { channelId: closure_1, warningId: closure_2, senderId: result, description: closure_4, safetyTips: closure_5, actionItems: _isNativeReflectConstruct, learnMore: closure_7 });
+      return outer1_8(outer1_11, { channelId: c1, warningId: c2, senderId: c3, description: c4, safetyTips: c5, actionItems: c6, learnMore: c7 });
     }
   };
-  return { MORE_TIPS };
-}
-({ View: closure_4, ScrollView: closure_5 } = get_ActivityIndicator);
-({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWER };
-_createForOfIteratorHelperLoose.scroll = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.contentContainer = { marginHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16, marginBottom: require("_createForOfIteratorHelperLoose").space.PX_16, gap: require("_createForOfIteratorHelperLoose").space.PX_16 };
-let obj1 = { marginHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16, marginBottom: require("_createForOfIteratorHelperLoose").space.PX_16, gap: require("_createForOfIteratorHelperLoose").space.PX_16 };
-_createForOfIteratorHelperLoose.tipsContainer = { gap: require("_createForOfIteratorHelperLoose").space.PX_8 };
-_createForOfIteratorHelperLoose.learnMore = { alignItems: "center" };
-let obj2 = { gap: require("_createForOfIteratorHelperLoose").space.PX_8 };
-_createForOfIteratorHelperLoose.header = { marginTop: require("_createForOfIteratorHelperLoose").space.PX_16, marginBottom: require("_createForOfIteratorHelperLoose").space.PX_4 };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-let obj3 = { marginTop: require("_createForOfIteratorHelperLoose").space.PX_16, marginBottom: require("_createForOfIteratorHelperLoose").space.PX_4 };
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/self_mod/stranger_danger/native/components/more_tips_modal/MoreTipsModal.tsx");
-
-export default function MoreTipsModal(channelId) {
-  channelId = channelId.channelId;
-  const warningId = channelId.warningId;
-  const senderId = channelId.senderId;
-  let obj = channelId(senderId[16]);
-  const items = [_isNativeReflectConstruct];
-  const stateFromStores = obj.useStateFromStores(items, () => outer1_6.getChannelSafetyWarning(channelId, warningId));
-  const items1 = [channelId, warningId, senderId, stateFromStores];
-  const effect = stateFromStores.useEffect(() => {
-    let obj = channelId(senderId[17]);
-    obj = { channelId, warningId, senderId };
-    let type;
-    if (null != stateFromStores) {
-      type = stateFromStores.type;
-    }
-    obj.warningType = type;
-    obj.trackViewedEvent(outer1_7.SAFETY_WARNING_MODAL_VIEWED, obj);
-    obj = { name: channelId(senderId[19]).MetricEvents.SAFETY_WARNING_MODAL_VIEW };
-    warningId(senderId[18]).increment(obj);
-  }, items1);
-  obj = { screens: getScreens(channelId), initialRouteName: "MORE_TIPS", headerStatusBarHeight: warningId(senderId[15])().top };
-  return callback(channelId(senderId[20]).Navigator, obj);
+  return callback(_require(5570).Navigator, { screens: { MORE_TIPS }, initialRouteName: "MORE_TIPS", headerStatusBarHeight: importDefault(1581)().top });
 };

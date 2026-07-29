@@ -1,29 +1,28 @@
-// Module ID: 12168
-// Function ID: 95164
+// Module ID: 12192
+// Function ID: 12193
 // Name: WishlistEmptyState
-// Dependencies: [5, 31, 27, 5780, 9751, 8650, 8653, 8655, 8651, 1850, 4210, 5878, 8081, 653, 655, 1852, 33, 3, 4165, 689, 12169, 3877, 4011, 8083, 4133, 5779, 5517, 4161, 1212, 4578, 11831, 4121, 12170, 5497, 6551, 566, 12171, 7865, 12152, 12172, 4017, 3866, 12173, 9677, 478, 6667, 5648, 9732, 8335, 3824, 8745, 11789, 3826, 8707, 12174, 1935, 6661, 9078, 9749, 2]
+// Dependencies: [5, 19, 17, 5798, 9773, 8674, 8677, 8679, 8675, 1874, 4234, 5896, 8105, 676, 678, 1876, 21, 3, 4189, 712, 12193, 3901, 4035, 8107, 4157, 5797, 5535, 4185, 1236, 4600, 11856, 4145, 12194, 5515, 6572, 589, 12195, 7888, 12176, 12196, 4041, 3890, 12197, 9699, 501, 6688, 5666, 9754, 8359, 3848, 8769, 11814, 3850, 8731, 12198, 1959, 6682, 9102, 9771, 2]
 // Exports: default
 
-// Module 12168 (WishlistEmptyState)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import CircleInformationIcon from "CircleInformationIcon";
-import { View } from "Text";
-import closure_6 from "_isNativeReflectConstruct";
-import closure_7 from "_isNativeReflectConstruct";
-import closure_8 from "_isNativeReflectConstruct";
-import { isCollectiblesWishlistItemRecord as closure_9 } from "_createForOfIteratorHelperLoose";
-import { isSKUWishlistItemRecord } from "_isNativeReflectConstruct";
-import { getWishlistProductLines } from "_isNativeReflectConstruct";
-import closure_12 from "_isNativeReflectConstruct";
-import closure_13 from "_isNativeReflectConstruct";
-import closure_14 from "_isNativeReflectConstruct";
+// Module 12192 (WishlistEmptyState)
+import get from "get";
+import Themes from "Themes";
+import { View } from "timestamp";
+import updateCategoriesAndProducts from "updateCategoriesAndProducts";
+import initialize from "initialize";
+import closure_8 from "get";
+import { isCollectiblesWishlistItemRecord as closure_9 } from "createCollectiblesItemFromServerResponse";
+import { isSKUWishlistItemRecord } from "fromServer";
+import { getWishlistProductLines } from "fromServer";
+import mergeGuildAvatar from "mergeGuildAvatar";
+import addSku from "addSku";
+import createUserWidgetFromServer from "createUserWidgetFromServer";
 import USER_PROFILE_TOOLTIP_DELAY from "USER_PROFILE_TOOLTIP_DELAY";
 import ME from "ME";
 import { CollectiblesMobileShopScreen as closure_19 } from "items";
 import GuildFeatures from "GuildFeatures";
-import jsxProd from "mergeLocations";
-import importDefaultResult from "_isNativeReflectConstruct";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import jsxProd from "ManaContext";
+import createCacheKey from "createCacheKey";
 
 let closure_15;
 let closure_16;
@@ -39,151 +38,131 @@ class WishlistEmptyState {
   constructor(arg0) {
     shouldShowMRNotice = global.shouldShowMRNotice;
     c0 = undefined;
+    tmp = c0;
+    tmp2 = closure_2;
     obj = require("useIsMobileWishlistSuggestionsEnabled");
     isMobileWishlistSuggestionsEnabled = obj.useIsMobileWishlistSuggestionsEnabled("WishlistEmptyState");
-    tmp2 = f95167(isMobileWishlistSuggestionsEnabled);
+    tmp4 = f53743(isMobileWishlistSuggestionsEnabled);
     obj2 = require("ManaContext");
     obj3 = require("AccessibilityAnnouncer");
     str = "mobile-text-heading-primary";
     if (obj3.isThemeDark(obj2.useThemeContext().theme)) {
       str = "text-overlay-light";
     }
-    obj4 = require("UserProfileAnalyticsProvider");
-    trackUserProfileWishlistAction = obj4.useUserProfileAnalyticsContext().trackUserProfileWishlistAction;
+    tmpResult = require("UserProfileAnalyticsProvider");
+    trackUserProfileWishlistAction = tmpResult.useUserProfileAnalyticsContext().trackUserProfileWishlistAction;
     c0 = trackUserProfileWishlistAction;
     items = [];
     items[0] = trackUserProfileWishlistAction;
-    tmp4 = jsxs;
-    obj = {};
-    obj1 = { style: tmp2.emptyState };
-    callback = CircleInformationIcon.useCallback(() => {
-      let obj = { action: outer1_15.PRESS_ADD_WISHLIST_ITEM };
+    tmp6 = jsxs;
+    tmp8 = View;
+    obj = { style: tmp4.emptyState, children: null };
+    tmp9 = jsx;
+    callback = Themes.useCallback(() => {
+      let obj = { action: outer1_15.PRESS_ADD_WISHLIST_ITEM, productLines: null };
       const items = [outer1_18.COLLECTIBLES];
-      obj.productLines = new Set(items);
+      obj[1] = new Set(items);
       trackUserProfileWishlistAction(obj);
       const set = new Set(items);
       outer1_1(outer1_2[24]).hideAllActionSheets();
       const obj2 = outer1_1(outer1_2[24]);
-      obj = { analyticsSource: outer1_1(outer1_2[26]).USER_PROFILE_WISHLIST };
+      obj = { analyticsSource: outer1_1(outer1_2[26]).USER_PROFILE_WISHLIST, analyticsLocations: null, screen: null };
       const items1 = [outer1_1(outer1_2[26]).USER_PROFILE_WISHLIST];
-      obj.analyticsLocations = items1;
-      obj.screen = outer1_19.FEATURED_PAGE;
+      obj[1] = items1;
+      obj[2] = outer1_19.FEATURED_PAGE;
       const result = trackUserProfileWishlistAction(outer1_2[25]).openCollectiblesShopMobile(obj);
     }, items);
-    tmp5 = Fragment;
-    tmp6 = View;
-    obj2 = { variant: "text-md/medium", color: null, accessibilityRole: "header" };
-    obj2.color = str;
+    tmp7 = Fragment;
+    obj1 = { variant: "text-md/medium", color: str, accessibilityRole: "header", children: null };
     intl = require("getSystemLocale").intl;
-    obj2.children = intl.string(require("getSystemLocale").t.HGnLLT);
+    obj1[3] = intl.string(require("getSystemLocale").t.HGnLLT);
     items1 = [, , ];
-    items1[0] = jsx(require("Text").Text, obj2);
-    obj3 = { variant: "text-sm/normal", color: "mobile-text-heading-primary" };
-    obj3.style = tmp2.emptyStateText;
+    items1[0] = jsx(require("Text").Text, obj1);
+    obj2 = { variant: "text-sm/normal", color: "mobile-text-heading-primary", style: tmp4.emptyStateText, children: null };
     intl2 = require("getSystemLocale").intl;
-    obj3.children = intl2.string(require("getSystemLocale").t["/X1ny6"]);
-    items1[1] = jsx(require("Text").Text, obj3);
-    tmp7 = !isMobileWishlistSuggestionsEnabled;
-    if (tmp7) {
-      tmp8 = jsx;
-      tmp9 = View;
-      obj4 = {};
-      obj4.style = tmp2.emptyStateCta;
-      tmp10 = jsx;
-      tmp11 = c0;
-      tmp12 = closure_2;
-      num = 29;
-      obj5 = { size: "md", variant: "secondary" };
-      tmp13 = jsx;
-      num2 = 30;
-      obj6 = {};
-      str2 = "xs";
-      obj6.size = "xs";
-      obj5.icon = jsx(require("PlusMediumIcon").PlusMediumIcon, obj6);
+    obj2[3] = intl2.string(require("getSystemLocale").t["/X1ny6"]);
+    items1[1] = jsx(require("Text").Text, obj2);
+    tmp9Result = !isMobileWishlistSuggestionsEnabled;
+    if (!isMobileWishlistSuggestionsEnabled) {
+      obj3 = { style: null, children: null };
+      obj3[0] = tmp4.emptyStateCta;
+      obj4 = { size: "md", variant: "secondary", icon: null, text: null, onPress: null };
+      obj4[2] = tmp9(require("PlusMediumIcon").PlusMediumIcon, { size: "xs" });
       intl3 = require("getSystemLocale").intl;
-      obj5.text = intl3.string(require("getSystemLocale").t.SDUwM0);
-      obj5.onPress = callback;
-      obj4.children = jsx(require("Button").Button, obj5);
-      tmp7 = jsx(View, obj4);
+      obj4[3] = intl3.string(require("getSystemLocale").t.SDUwM0);
+      obj4[4] = callback;
+      obj3[1] = tmp9(require("Button").Button, obj4);
+      tmp9Result = tmp9(tmp8, obj3);
     }
-    items1[2] = tmp7;
-    obj1.children = items1;
+    items1[2] = tmp9Result;
+    obj[1] = items1;
     items2 = [, ];
-    items2[0] = tmp4(tmp6, obj1);
+    items2[0] = tmp6(tmp8, obj);
     if (shouldShowMRNotice) {
-      tmp14 = jsxs;
-      tmp15 = View;
-      obj7 = {};
+      obj5 = { style: null, children: null };
       items3 = [, ];
-      ({ disclaimer: arr4[0], disclaimerBottom: arr4[1] } = tmp2);
-      obj7.style = items3;
-      tmp16 = jsx;
-      tmp17 = c0;
-      tmp18 = closure_2;
-      num3 = 31;
-      obj8 = {};
-      str3 = "sm";
-      obj8.size = "sm";
+      ({ disclaimer: arr4[0], disclaimerBottom: arr4[1] } = tmp4);
+      obj5[0] = items3;
       items4 = [, ];
-      items4[0] = jsx(require("CircleInformationIcon").CircleInformationIcon, obj8);
-      tmp19 = jsx;
-      obj9 = { variant: "text-xs/medium", color: "text-subtle" };
+      items4[0] = tmp9(require("CircleInformationIcon").CircleInformationIcon, { size: "sm" });
+      obj6 = { variant: "text-xs/medium", color: "text-subtle", children: null };
       intl4 = require("getSystemLocale").intl;
-      obj9.children = intl4.string(require("getSystemLocale").t.Wp9bEl);
-      items4[1] = jsx(require("Text").Text, obj9);
-      obj7.children = items4;
-      shouldShowMRNotice = jsxs(View, obj7);
+      obj6[2] = intl4.string(require("getSystemLocale").t.Wp9bEl);
+      items4[1] = tmp9(require("Text").Text, obj6);
+      obj5[1] = items4;
+      shouldShowMRNotice = tmp6(tmp8, obj5);
     }
     items2[1] = shouldShowMRNotice;
-    obj.children = items2;
-    return tmp4(tmp5, obj);
+    return tmp6(tmp7, { children: items2 });
   }
 }
 ({ TrackUserProfileWishlistActions: closure_15, UserProfileSections: closure_16 } = USER_PROFILE_TOOLTIP_DELAY);
 ({ Routes: closure_17, SKUProductLines: closure_18 } = ME);
 ({ GiftingOrigin: closure_20, PremiumSubscriptionSKUToPremiumType: closure_21 } = GuildFeatures);
 ({ jsx: closure_22, jsxs: closure_23, Fragment: closure_24 } = jsxProd);
-importDefaultResult = new importDefaultResult("UserProfileWishlistGrid");
-let closure_26 = _createForOfIteratorHelperLoose.createStyles(() => {
+let closure_25 = new require("updateCategoriesAndProducts")("UserProfileWishlistGrid");
+let closure_26 = createCacheKey.createStyles(() => {
   let flag = arg0;
   if (arg0 === undefined) {
     flag = false;
   }
-  let obj = {};
-  obj = { flexDirection: "row", justifyContent: "space-between", alignItems: "center", marginBottom: importDefault(689).space.PX_12 };
-  obj.headerRow = obj;
-  obj = { flexDirection: "row", alignItems: "center", gap: importDefault(689).space.PX_8 };
-  obj.headerButtons = obj;
-  obj.gridWrapper = { width: "100%", alignItems: "center" };
-  const obj1 = { flexDirection: "row", flexWrap: "wrap", gap: importDefault(689).space.PX_16, justifyContent: "flex-start" };
-  obj.itemsContainer = obj1;
-  const obj2 = { alignItems: "center" };
-  const space = importDefault(689).space;
-  obj2.paddingTop = flag ? space.PX_24 : space.PX_48;
-  const space2 = importDefault(689).space;
-  obj2.paddingBottom = flag ? space2.PX_12 : space2.PX_48;
-  obj2.paddingHorizontal = importDefault(689).space.PX_32;
-  obj2.gap = importDefault(689).space.PX_8;
-  obj.emptyState = obj2;
-  obj.emptyStateText = { textAlign: "center" };
-  obj.emptyStateCta = { marginTop: importDefault(689).space.PX_24 };
-  const obj4 = { padding: importDefault(689).space.PX_8, gap: importDefault(689).space.PX_4, flexDirection: "row", alignItems: "center", justifyContent: "center", borderRadius: importDefault(689).radii.sm, borderWidth: 1, borderColor: importDefault(689).colors.BORDER_SUBTLE };
-  obj.disclaimer = obj4;
-  const obj3 = { marginTop: importDefault(689).space.PX_24 };
-  obj.disclaimerTop = { marginBottom: importDefault(689).space.PX_16 };
-  const obj5 = { marginBottom: importDefault(689).space.PX_16 };
-  obj.disclaimerBottom = { marginTop: importDefault(689).space.PX_16 };
+  let obj = { headerRow: null, headerButtons: null, gridWrapper: null, itemsContainer: null, emptyState: null, emptyStateText: null, emptyStateCta: null, disclaimer: null, disclaimerTop: null, disclaimerBottom: null };
+  obj = { flexDirection: "row", justifyContent: "space-between", alignItems: "center", marginBottom: importDefault(712).space.PX_12 };
+  obj[0] = obj;
+  obj = { flexDirection: "row", alignItems: "center", gap: importDefault(712).space.PX_8 };
+  obj[1] = obj;
+  obj[2] = { width: "100%", alignItems: "center" };
+  obj[3] = { flexDirection: "row", flexWrap: "wrap", gap: importDefault(712).space.PX_16, justifyContent: "flex-start" };
+  const space = importDefault(712).space;
+  const obj2 = { alignItems: "center", paddingTop: flag ? space.PX_24 : space.PX_48, paddingBottom: null, paddingHorizontal: null, gap: null };
+  const space2 = tmp(712).space;
+  obj2[2] = flag ? space2.PX_12 : space2.PX_48;
+  obj2[3] = importDefault(712).space.PX_32;
+  obj2[4] = importDefault(712).space.PX_8;
+  obj[4] = obj2;
+  obj[5] = { textAlign: "center" };
+  const obj1 = { flexDirection: "row", flexWrap: "wrap", gap: importDefault(712).space.PX_16, justifyContent: "flex-start" };
+  obj[6] = { marginTop: importDefault(712).space.PX_24 };
+  const obj3 = { marginTop: importDefault(712).space.PX_24 };
+  obj[7] = { padding: importDefault(712).space.PX_8, gap: importDefault(712).space.PX_4, flexDirection: "row", alignItems: "center", justifyContent: "center", borderRadius: importDefault(712).radii.sm, borderWidth: 1, borderColor: importDefault(712).colors.BORDER_SUBTLE };
+  const obj4 = { padding: importDefault(712).space.PX_8, gap: importDefault(712).space.PX_4, flexDirection: "row", alignItems: "center", justifyContent: "center", borderRadius: importDefault(712).radii.sm, borderWidth: 1, borderColor: importDefault(712).colors.BORDER_SUBTLE };
+  obj[8] = { marginBottom: importDefault(712).space.PX_16 };
+  const obj5 = { marginBottom: importDefault(712).space.PX_16 };
+  obj[9] = { marginTop: importDefault(712).space.PX_16 };
   return obj;
 });
+const tmp6 = new require("updateCategoriesAndProducts")("UserProfileWishlistGrid");
 let result = require("get ActivityIndicator").fileFinishedImporting("modules/user_profile/native/UserProfileWishlistGrid.tsx");
 
 export default function UserProfileWishlistGrid(wishlistId) {
+  let c1;
   let containerWidth;
-  let importDefault;
   let isVisible;
   let maxWidth;
   let rowWidth;
   wishlistId = wishlistId.wishlistId;
+  let _require = wishlistId;
+  let importDefault;
   let context;
   let trackUserProfileWishlistAction;
   let analyticsLocations;
@@ -195,94 +174,96 @@ export default function UserProfileWishlistGrid(wishlistId) {
   let memo1;
   let stateFromStoresArray;
   let memo2;
-  let closure_13;
+  let addSku;
   ({ containerWidth, maxWidth, isVisible } = wishlistId);
-  let tmp = callback3();
-  ({ cardWidth: importDefault, rowWidth } = importDefault(context[32])({ containerWidth, maxWidth }));
+  let tmp = callback2();
+  ({ cardWidth: c1, rowWidth } = importDefault(context[32])({ containerWidth, maxWidth }));
   if (null != rowWidth) {
-    let obj = { width: rowWidth };
-    const tmp3 = obj;
+    let obj = { width: null };
+    obj[0] = rowWidth;
+    let tmp5 = obj;
   }
-  let obj1 = wishlistId(context[23]);
+  let obj1 = _require(tmp3[23]);
   const userProfileAnalyticsContext = obj1.useUserProfileAnalyticsContext();
   context = userProfileAnalyticsContext.context;
   trackUserProfileWishlistAction = userProfileAnalyticsContext.trackUserProfileWishlistAction;
-  analyticsLocations = importDefault(context[33])().analyticsLocations;
-  let obj2 = importDefault(context[34]);
-  storeFront = obj2.useNativeIAPPayments().storeFront;
-  let obj3 = wishlistId(context[35]);
+  analyticsLocations = tmp2(tmp3[33])().analyticsLocations;
+  let tmp2Result = tmp2(tmp3[34]);
+  storeFront = tmp2Result.useNativeIAPPayments().storeFront;
+  let obj3 = _require(tmp3[35]);
   let items = [stateFromStores5];
-  stateFromStores = obj3.useStateFromStores(items, () => stateFromStores5.getWishlist(wishlistId));
-  let obj4 = wishlistId(context[35]);
+  stateFromStores = obj3.useStateFromStores(items, () => stateFromStores5.getWishlist(closure_0));
+  let obj4 = _require(tmp3[35]);
   let items1 = [stateFromStores5];
-  const stateFromStores1 = obj4.useStateFromStores(items1, () => stateFromStores5.isFetching(wishlistId));
-  let obj5 = wishlistId(context[35]);
-  const items2 = [stateFromStores5];
-  const stateFromStores2 = obj5.useStateFromStores(items2, () => stateFromStores5.getError(wishlistId));
-  let obj6 = wishlistId(context[35]);
-  const items3 = [closure_14];
-  const items4 = [stateFromStores, wishlistId];
+  const stateFromStores1 = obj4.useStateFromStores(items1, () => stateFromStores5.isFetching(closure_0));
+  let obj5 = _require(tmp3[35]);
+  let items2 = [stateFromStores5];
+  const stateFromStores2 = obj5.useStateFromStores(items2, () => stateFromStores5.getError(closure_0));
+  let obj6 = _require(tmp3[35]);
+  let items3 = [createUserWidgetFromServer];
+  let items4 = [stateFromStores, wishlistId];
   const stateFromStores3 = obj6.useStateFromStores(items3, () => {
     let wishlistSettings = null;
     if (null != stateFromStores) {
-      wishlistSettings = outer1_14.getWishlistSettings(stateFromStores.userId, wishlistId);
+      wishlistSettings = outer1_14.getWishlistSettings(tmp.userId, closure_0);
     }
     return wishlistSettings;
   }, items4);
   let visibility;
-  if (null != stateFromStores3) {
+  if (stateFromStores3 != null) {
     visibility = stateFromStores3.visibility;
   }
-  let tmp10 = visibility === wishlistId(context[36]).WishlistVisibility.PRIVATE;
-  let obj7 = wishlistId(context[35]);
-  const items5 = [memo2];
-  const stateFromStores4 = obj7.useStateFromStores(items5, () => memo2.getCurrentUser());
+  let tmp6Result = tmp6(tmp3[35]);
+  let items5 = [memo2];
+  const stateFromStores4 = tmp6Result.useStateFromStores(items5, () => memo2.getCurrentUser());
   let id;
-  if (null != stateFromStores4) {
+  if (stateFromStores4 != null) {
     id = stateFromStores4.id;
   }
   let userId;
-  if (null != stateFromStores) {
+  if (stateFromStores != null) {
     userId = stateFromStores.userId;
   }
-  let tmp14 = id === userId;
-  c7 = tmp14;
-  let obj8 = wishlistId(context[35]);
-  const items6 = [memo2];
-  const items7 = [stateFromStores];
-  stateFromStores5 = obj8.useStateFromStores(items6, () => {
+  let tmp41Result = id === userId;
+  c7 = tmp41Result;
+  tmp6Result = tmp6(tmp3[35]);
+  let items6 = [memo2];
+  let items7 = [stateFromStores];
+  stateFromStores5 = tmp6Result.useStateFromStores(items6, () => {
     let user = null;
     if (null != stateFromStores) {
-      user = memo2.getUser(stateFromStores.userId);
+      user = memo2.getUser(tmp.userId);
     }
     return user;
   }, items7);
-  let nsfwAllowed;
-  if (null != stateFromStores5) {
-    nsfwAllowed = stateFromStores5.nsfwAllowed;
+  if (stateFromStores5 != null) {
+    const nsfwAllowed = stateFromStores5.nsfwAllowed;
   }
-  const intl = wishlistId(context[28]).intl;
+  let tmp19 = visibility === tmp6(tmp3[36]).WishlistVisibility.PRIVATE;
+  let intl = tmp6(tmp3[28]).intl;
   const string = intl.string;
-  const t = wishlistId(context[28]).t;
-  if (tmp10) {
+  const t = tmp6(tmp3[28]).t;
+  if (tmp19) {
     let stringResult = string(t.RX7D9h);
   } else {
     stringResult = string(t.d78ChW);
   }
-  let obj9 = wishlistId(context[37]);
-  isEligibleForSocialLayerStorefrontMobilePurchasing = obj9.useIsEligibleForSocialLayerStorefrontMobilePurchasing({ location: "user_profile_wishlist_grid" });
-  const items8 = [stateFromStores, tmp14, isEligibleForSocialLayerStorefrontMobilePurchasing];
+  const tmp13 = memo2;
+  let tmp4 = importDefault(context[32])({ containerWidth, maxWidth });
+  isEligibleForSocialLayerStorefrontMobilePurchasing = _require(context[37]).useIsEligibleForSocialLayerStorefrontMobilePurchasing({ location: "user_profile_wishlist_grid" });
+  let obj10 = analyticsLocations;
+  const items8 = [stateFromStores, tmp41Result, isEligibleForSocialLayerStorefrontMobilePurchasing];
   const memo = analyticsLocations.useMemo(() => {
     let found;
-    if (null != stateFromStores) {
+    if (stateFromStores != null) {
       const items = stateFromStores.items;
       found = items.filter((sku) => {
-        let obj = wishlistId(context[38]);
-        obj = { isWishlistOwner: outer1_7, isSocialLayerStorefrontMobilePurchasingEnabled: outer1_9 };
+        let obj = outer1_0(outer1_2[38]);
+        obj = { isWishlistOwner: initialize, isSocialLayerStorefrontMobilePurchasingEnabled: closure_9 };
         return obj.isEligibleWishlistItemOnMobile(sku, obj);
       });
     }
-    if (null == found) {
+    if (found == null) {
       found = [];
     }
     return found;
@@ -290,96 +271,412 @@ export default function UserProfileWishlistGrid(wishlistId) {
   const items9 = [stateFromStores];
   memo1 = analyticsLocations.useMemo(() => {
     let found;
-    if (null != stateFromStores) {
+    if (stateFromStores != null) {
       const items = stateFromStores.items;
       found = items.filter(isEligibleForSocialLayerStorefrontMobilePurchasing);
     }
-    if (null == found) {
+    if (found == null) {
       found = [];
     }
     return found;
   }, items9);
-  let obj10 = wishlistId(context[35]);
+  const tmp6Result1 = _require(context[37]);
   const items10 = [c7];
   const items11 = [memo1, stateFromStores5];
-  stateFromStoresArray = obj10.useStateFromStoresArray(items10, () => {
+  stateFromStoresArray = _require(context[35]).useStateFromStoresArray(items10, () => {
     if (null == stateFromStores5) {
       let items = [];
     } else {
-      const found = memo1.filter((skuId) => c7.hasSentGift(skuId.skuId, outer1_8.id));
+      const found = memo1.filter((skuId) => outer1_7.hasSentGift(skuId.skuId, id.id));
       items = found.map((skuId) => skuId.skuId);
     }
     return items;
   }, items11);
   const items12 = [stateFromStoresArray];
   memo2 = analyticsLocations.useMemo(() => new Set(stateFromStoresArray), items12);
-  const items13 = [isEligibleForSocialLayerStorefrontMobilePurchasing, stateFromStores, tmp14];
+  const items13 = [isEligibleForSocialLayerStorefrontMobilePurchasing, stateFromStores, tmp41Result];
   const memo3 = analyticsLocations.useMemo(() => {
     let tmp = !isEligibleForSocialLayerStorefrontMobilePurchasing;
-    if (tmp) {
-      let someResult;
-      if (null != stateFromStores) {
+    if (!isEligibleForSocialLayerStorefrontMobilePurchasing) {
+      let flag;
+      if (stateFromStores != null) {
         const items = stateFromStores.items;
-        someResult = items.some(memo1);
+        flag = items.some(memo1);
       }
-      if (someResult) {
-        someResult = c7;
+      if (flag) {
+        flag = c7;
       }
-      tmp = null != someResult && someResult;
-      const tmp7 = null != someResult && someResult;
+      if (flag == null) {
+        flag = false;
+      }
+      tmp = flag;
     }
     return tmp;
   }, items13);
-  obj = { wishlistId, onAction: trackUserProfileWishlistAction };
-  let tmp25 = null;
-  const tmp17 = false === nsfwAllowed;
-  let tmp2 = importDefault(context[32])({ containerWidth, maxWidth });
+  obj = { wishlistId, onAction: trackUserProfileWishlistAction, productLines: null, isVisible: null };
+  let tmp27 = null;
+  tmp2Result = tmp2(tmp3[39]);
   if (null != stateFromStores) {
-    tmp25 = stateFromStoresArray(stateFromStores);
+    tmp27 = stateFromStoresArray(stateFromStores);
   }
-  obj.productLines = tmp25;
-  obj.isVisible = isVisible;
-  importDefault(context[39])(obj);
-  const items14 = [wishlistId, trackUserProfileWishlistAction, tmp14, stateFromStores5, memo2, ];
+  obj[2] = tmp27;
+  obj[3] = isVisible;
+  tmp2Result(obj);
+  _require = undefined;
+  _require = trackUserProfileWishlistAction((arg0) => {
+    let closure_0 = arg0;
+    let c6 = 0;
+    let c7 = 0;
+    let c5 = 0;
+    return (function*(arg0) {
+      if (c7 === 2) {
+        c7 = 3;
+        let throwTypeErrorResult = HermesBuiltin.throwTypeError();
+      } else {
+        throwTypeErrorResult = arg1;
+        throwTypeErrorResult = arg0;
+        throwTypeErrorResult = tmp6;
+        throwTypeErrorResult = null;
+        throwTypeErrorResult = globalThis;
+        if (tmp7 === 3) {
+          if (arg0 === 1) {
+            throw arg1;
+          } else if (arg0 === 2) {
+            let obj = { value: null, done: true };
+            obj[0] = arg1;
+            return obj;
+          } else {
+            return { value: "HermesInternal", done: null };
+          }
+        } else {
+          try {
+            c7 = 2;
+            if (0 === c6) {
+              if (arg0 === 1) {
+                c7 = 3;
+                throw arg1;
+              } else if (arg0 === 2) {
+                c7 = 3;
+                obj = { value: null, done: true };
+                obj[0] = arg1;
+                return obj;
+              } else {
+                let get = tmp3;
+                let closure_2 = tmp5;
+                throwTypeErrorResult = lib;
+                let product;
+                throwTypeErrorResult = outer1_3;
+                let obj1 = { action: null, wishlistId: null, skuId: null, productLines: null };
+                throwTypeErrorResult = outer2_15;
+                obj1[0] = outer2_15.WISHLIST_ITEM_CLICKED;
+                throwTypeErrorResult = lib;
+                obj1[1] = lib;
+                obj1[2] = lib.skuId;
+                const _Set = Set;
+                const items = [lib.skuProductLine];
+                throwTypeErrorResult = new.target;
+                throwTypeErrorResult = new.target;
+                throwTypeErrorResult = items;
+                throwTypeErrorResult = new Set(items);
+                obj1[3] = throwTypeErrorResult;
+                throwTypeErrorResult = outer1_3(obj1);
+                throwTypeErrorResult = lib;
+                throwTypeErrorResult = context;
+                const rootNavigationRef = lib(context[40]).getRootNavigationRef();
+                if (null != rootNavigationRef) {
+                  if (rootNavigationRef.isReady()) {
+                    if (throwTypeErrorResult.skuProductLine !== outer2_18.PREMIUM) {
+                      if (throwTypeErrorResult.skuProductLine !== tmp39.SOCIAL_LAYER_GAME_ITEM) {
+                        if (!c7) {
+                          if (null != outer1_8) {
+                            if (!throwTypeErrorResult.isOwned) {
+                              if (!outer1_12.has(throwTypeErrorResult.skuId)) {
+                                callback(context[24]).hideAllActionSheets();
+                                const obj19 = callback(context[24]);
+                                if (obj20.isCollectibleGiftingSupported()) {
+                                  const obj2 = { analyticsLocations: null, analyticsSource: null, screen: null, onNavigateAway: null };
+                                  const items1 = [callback(context[26]).USER_PROFILE_WISHLIST];
+                                  obj2[0] = items1;
+                                  obj2[1] = callback(context[26]).USER_PROFILE_WISHLIST;
+                                  obj2[2] = outer2_19.FEATURED_PAGE;
+                                  obj2[3] = function onNavigateAway(arg0) {
+                                    callback(8359)({ userId: user.id, initialSection: outer1_16.WISHLIST });
+                                  };
+                                  const result = lib(context[25]).openCollectiblesShopMobile(obj2);
+                                  const obj23 = lib(context[25]);
+                                  const obj3 = { skuId: null, analyticsLocations: null, lockedRecipientUser: null, giftingOrigin: null };
+                                  obj3[0] = throwTypeErrorResult.skuId;
+                                  const items2 = [callback(context[26]).USER_PROFILE_WISHLIST];
+                                  obj3[1] = items2;
+                                  obj3[2] = tmp69;
+                                  obj3[3] = outer2_20.USER_PROFILE_WISHLIST;
+                                  lib(context[50]).openShopGiftModal(obj3);
+                                  c7 = 3;
+                                  let obj4 = { value: null, done: true };
+                                  obj4[0] = undefined;
+                                  return obj4;
+                                } else {
+                                  const _HermesInternal2 = HermesInternal;
+                                  let country = 1;
+                                  const combined = "" + outer2_17.COLLECTIBLES_SHOP + "#itemSkuId=" + throwTypeErrorResult.skuId;
+                                  c6 = 3;
+                                  c7 = 1;
+                                  const obj5 = { value: null, done: false };
+                                  obj5[0] = callback(context[51]).redirectWithHandoffToken(combined, { forceExternalBrowser: true });
+                                  return obj5;
+                                }
+                                obj20 = lib(context[49]);
+                              }
+                            }
+                          }
+                        }
+                        if (obj28.isCollectiblesShopOpen()) {
+                          throwTypeErrorResult = stateFromStores;
+                          product = stateFromStores.getProduct(throwTypeErrorResult.skuId);
+                          throwTypeErrorResult = product;
+                          if (null == product) {
+                            throwTypeErrorResult = lib;
+                            throwTypeErrorResult = context;
+                            c6 = 1;
+                            c7 = 1;
+                            const obj6 = { value: null, done: false };
+                            obj6[0] = lib(context[25]).maybeFetchCollectiblesProduct(throwTypeErrorResult.skuId);
+                            return obj6;
+                          } else {
+                            throwTypeErrorResult = closure_2;
+                            throwTypeErrorResult = product;
+                            if (null != product) {
+                              throwTypeErrorResult = closure_2;
+                              throwTypeErrorResult = get;
+                              throwTypeErrorResult = lib;
+                              throwTypeErrorResult = context;
+                              let obj7 = { product: null, analyticsLocations: null };
+                              throwTypeErrorResult = product;
+                              obj7[0] = product;
+                              throwTypeErrorResult = callback;
+                              throwTypeErrorResult = context;
+                              const items3 = [callback(context[26]).USER_PROFILE_WISHLIST];
+                              obj7[1] = items3;
+                              throwTypeErrorResult = lib(context[53]).openProductDetailsActionSheet(obj7, "stack");
+                              const obj32 = lib(context[53]);
+                            } else {
+                              throwTypeErrorResult = get;
+                              throwTypeErrorResult = callback;
+                              throwTypeErrorResult = context;
+                              throwTypeErrorResult = callback(context[24]).hideAllActionSheets();
+                              const obj31 = callback(context[24]);
+                            }
+                            c7 = 3;
+                          }
+                        } else {
+                          const obj8 = { analyticsLocations: null, analyticsSource: null, initialProductSkuId: null, screen: null };
+                          const items4 = [callback(context[26]).USER_PROFILE_WISHLIST];
+                          obj8[0] = items4;
+                          throwTypeErrorResult = callback;
+                          throwTypeErrorResult = context;
+                          obj8[1] = callback(context[26]).USER_PROFILE_WISHLIST;
+                          obj8[2] = throwTypeErrorResult.skuId;
+                          throwTypeErrorResult = outer2_19;
+                          obj8[3] = outer2_19.SHOP_ALL;
+                          throwTypeErrorResult = lib(context[25]).openCollectiblesShopMobile(obj8);
+                          const obj29 = lib(context[25]);
+                        }
+                        obj28 = lib(context[25]);
+                      } else {
+                        const sku = throwTypeErrorResult.sku;
+                        product = sku;
+                        if (sku == null) {
+                          product = addSku.get(throwTypeErrorResult.skuId);
+                        }
+                        let obj11 = lib(context[44]);
+                        let isAndroidResult = obj11.isAndroid();
+                        if (isAndroidResult) {
+                          isAndroidResult = null != tmp48;
+                        }
+                        if (isAndroidResult) {
+                          isAndroidResult = null == tmp48.googleSkuIds;
+                        }
+                        if (isAndroidResult) {
+                          let obj12 = lib(context[45]);
+                          country = undefined;
+                          if (country != null) {
+                            country = country.country;
+                          }
+                          let obj9 = { withGoogleSkuIds: true, countryCode: null };
+                          obj9[1] = country;
+                          const socialLayerStorefrontSkuForApplication = obj12.fetchSocialLayerStorefrontSkuForApplication(tmp48.applicationId, throwTypeErrorResult.skuId, obj9);
+                        }
+                        let obj14 = lib(context[46]);
+                        if (!c7) {
+                          if (obj14.isSlayerSkuAvailableOnThisPlatform(tmp48)) {
+                            if (null != outer1_8) {
+                              throwTypeErrorResult = callback;
+                              throwTypeErrorResult = context;
+                              throwTypeErrorResult = callback(context[24]).hideAllActionSheets();
+                              throwTypeErrorResult = lib;
+                              throwTypeErrorResult = context;
+                              const obj44 = callback(context[24]);
+                              let obj10 = { skuId: null, analyticsLocations: null, lockedRecipientUser: null, giftingOrigin: null, onGiftModalDismiss: null };
+                              obj10[0] = throwTypeErrorResult.skuId;
+                              throwTypeErrorResult = callback;
+                              throwTypeErrorResult = context;
+                              const items5 = [callback(context[26]).USER_PROFILE_WISHLIST];
+                              obj10[1] = items5;
+                              obj10[2] = tmp59;
+                              throwTypeErrorResult = outer2_20;
+                              obj10[3] = outer2_20.USER_PROFILE_WISHLIST;
+                              obj10[4] = function onGiftModalDismiss(validateRecipient, arg1) {
+                                callback(8359)({ userId: user.id, initialSection: outer1_16.WISHLIST });
+                              };
+                              throwTypeErrorResult = lib(context[47]).openSocialLayerStorefrontGiftModal(obj10);
+                              const obj45 = lib(context[47]);
+                            }
+                          }
+                        }
+                        let obj15 = callback(context[24]);
+                        obj15.hideAllActionSheets();
+                        let obj16 = lib(context[47]);
+                        obj11 = { skuId: null, analyticsLocations: null };
+                        obj11[0] = throwTypeErrorResult.skuId;
+                        const items6 = [callback(context[26]).USER_PROFILE_WISHLIST];
+                        obj11[1] = items6;
+                        const result1 = obj16.openSocialLayerStorefrontProductDetailsModal(obj11);
+                      }
+                    } else {
+                      throwTypeErrorResult = c7;
+                      if (c7) {
+                        obj9 = callback(context[24]);
+                        obj9.hideAllActionSheets();
+                        obj10 = lib(context[42]);
+                        const result2 = obj10.navigateToPremiumHomePage();
+                      } else if (null != outer1_8) {
+                        throwTypeErrorResult = callback;
+                        throwTypeErrorResult = context;
+                        throwTypeErrorResult = callback(context[24]).hideAllActionSheets();
+                        throwTypeErrorResult = lib;
+                        throwTypeErrorResult = context;
+                        const obj41 = callback(context[24]);
+                        obj12 = { recipientUserId: null, premiumType: null, analyticsLocations: null };
+                        obj12[0] = tmp40.id;
+                        throwTypeErrorResult = outer2_21;
+                        obj12[1] = outer2_21[throwTypeErrorResult.skuId];
+                        throwTypeErrorResult = callback;
+                        throwTypeErrorResult = context;
+                        const items7 = [callback(context[26]).USER_PROFILE_WISHLIST];
+                        obj12[2] = items7;
+                        throwTypeErrorResult = lib(context[43]).openGiftModal(obj12);
+                        const obj42 = lib(context[43]);
+                      }
+                    }
+                  }
+                }
+                obj7 = callback(context[41]);
+                const obj13 = { key: "WISHLIST_ITEM_PRESS_ERROR", content: null };
+                const intl2 = lib(context[28]).intl;
+                obj13[1] = intl2.string(lib(context[28]).t["rTU7/z"]);
+                obj7.open(obj13);
+                const obj39 = lib(context[40]);
+              }
+            } else if (1 === tmp8) {
+              if (arg0 === 1) {
+                c7 = 3;
+                throw arg1;
+              } else if (arg0 === 2) {
+                c7 = 3;
+                obj14 = { value: null, done: true };
+                obj14[0] = arg1;
+                return obj14;
+              } else {
+                product = stateFromStores.getProduct(lib.skuId);
+              }
+            } else {
+              if (2 === tmp8) {
+                country = 0;
+                closure_2 = Themes;
+                const _JSON = JSON;
+                const _HermesInternal = HermesInternal;
+                outer2_25.error("Error performing web handoff: " + JSON.stringify(closure_2));
+                obj1 = lib(context[52]);
+                obj15 = { tags: null };
+                obj16 = { source: "UserProfileWishlistGrid", skuId: null };
+                obj16[1] = lib.skuId;
+                obj15[0] = obj16;
+                const result3 = obj1.captureBillingException(closure_2, obj15);
+                obj4 = callback(context[41]);
+                const obj17 = { key: "WISHLIST_ITEM_PRESS_ERROR", content: null };
+                const intl = lib(context[28]).intl;
+                obj17[1] = intl.string(lib(context[28]).t["rTU7/z"]);
+                obj4.open(obj17);
+              } else if (arg0 === 1) {
+                c7 = 3;
+                throw arg1;
+              } else if (arg0 !== 2) {
+                country = 0;
+              }
+              country = 0;
+              c7 = 3;
+              obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            }
+            c7 = 3;
+          } catch (throwTypeErrorResult) {
+            Themes = throwTypeErrorResult;
+            throwTypeErrorResult = country;
+            if (tmp4 === country) {
+              throwTypeErrorResult = tmp2;
+              c7 = tmp2;
+              throw throwTypeErrorResult;
+            } else {
+              c6 = throwTypeErrorResult;
+            }
+          }
+        }
+      }
+    })();
+  });
+  const items14 = [wishlistId, trackUserProfileWishlistAction, tmp41Result, stateFromStores5, memo2, ];
   let country;
-  const tmp24 = importDefault(context[39]);
-  if (null != storeFront) {
+  if (storeFront != null) {
     country = storeFront.country;
   }
   items14[5] = country;
-  closure_13 = analyticsLocations.useCallback((() => {
-    // CreateGeneratorClosureLongIndex (0x67)
-    let closure_0 = trackUserProfileWishlistAction(tmp);
-    return function() {
-      return callback(...arguments);
-    };
-  })(), items14);
+  addSku = obj10.useCallback(function() {
+    const self = this;
+    const apply = closure_0.apply;
+    if (typeof apply === "unknown") {
+      let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+    } else {
+      applyArgumentsResult = apply(self, arguments);
+    }
+    return applyArgumentsResult;
+  }, items14);
   const items15 = [wishlistId, context, analyticsLocations, trackUserProfileWishlistAction, stateFromStores];
   const items16 = [trackUserProfileWishlistAction, wishlistId];
-  const callback = analyticsLocations.useCallback(() => {
-    let obj = { action: outer1_15.PRESS_EDIT_WISHLIST, wishlistId };
-    let tmp2;
+  const callback = obj10.useCallback(() => {
+    let obj = { action: outer1_15.PRESS_EDIT_WISHLIST, wishlistId: callback, productLines: null };
+    let tmp4;
     if (null != stateFromStores) {
-      tmp2 = stateFromStoresArray(stateFromStores);
+      tmp4 = stateFromStoresArray(tmp3);
     }
-    obj.productLines = tmp2;
+    obj[2] = tmp4;
     trackUserProfileWishlistAction(obj);
-    obj = { wishlistId, analyticsContext: context, analyticsLocations };
-    outer1_1(context[24]).openLazy(wishlistId(context[55])(context[54], context.paths), "EditWishlistActionSheet", obj, "stack");
+    obj = { wishlistId: callback, analyticsContext: context, analyticsLocations };
+    _undefined(context[24]).openLazy(callback(context[55])(context[54], context.paths), "EditWishlistActionSheet", obj, "stack");
   }, items15);
-  const callback1 = analyticsLocations.useCallback(() => {
-    let obj = { action: outer1_15.PRESS_ADD_WISHLIST_ITEM, wishlistId };
+  const callback1 = obj10.useCallback(() => {
+    let obj = { action: outer1_15.PRESS_ADD_WISHLIST_ITEM, wishlistId: callback, productLines: null };
     const items = [outer1_18.COLLECTIBLES];
-    obj.productLines = new Set(items);
+    obj[2] = new Set(items);
     trackUserProfileWishlistAction(obj);
     const set = new Set(items);
-    outer1_1(context[24]).hideAllActionSheets();
-    const obj2 = outer1_1(context[24]);
-    obj = { analyticsSource: outer1_1(context[26]).USER_PROFILE_WISHLIST };
-    const items1 = [outer1_1(context[26]).USER_PROFILE_WISHLIST];
-    obj.analyticsLocations = items1;
-    obj.screen = outer1_19.FEATURED_PAGE;
-    const result = wishlistId(context[25]).openCollectiblesShopMobile(obj);
+    _undefined(context[24]).hideAllActionSheets();
+    const obj2 = _undefined(context[24]);
+    obj = { analyticsSource: _undefined(context[26]).USER_PROFILE_WISHLIST, analyticsLocations: null, screen: null };
+    const items1 = [_undefined(context[26]).USER_PROFILE_WISHLIST];
+    obj[1] = items1;
+    obj[2] = outer1_19.FEATURED_PAGE;
+    const result = callback(context[25]).openCollectiblesShopMobile(obj);
   }, items16);
   if (stateFromStores1) {
     if (null == stateFromStores) {
@@ -391,110 +688,107 @@ export default function UserProfileWishlistGrid(wishlistId) {
   } else if (null == stateFromStores) {
     return null;
   } else if (0 === memo.length) {
-    obj = { shouldShowMRNotice: memo3 };
+    obj = { shouldShowMRNotice: null };
+    obj[0] = memo3;
     return callback(WishlistEmptyState, obj);
   } else {
-    obj1 = {};
-    let tmp33 = tmp14;
-    if (tmp14) {
-      if (!tmp10) {
-        tmp10 = tmp17;
+    if (tmp41Result) {
+      if (!tmp19) {
+        tmp19 = false === nsfwAllowed;
       }
-      tmp33 = tmp10;
+      tmp41Result = tmp19;
     }
-    if (tmp33) {
-      obj2 = {};
+    if (tmp41Result) {
+      obj1 = { style: null, children: null };
       const items17 = [, ];
       ({ disclaimer: arr19[0], disclaimerTop: arr19[1] } = tmp);
-      obj2.style = items17;
-      obj3 = { size: "sm" };
-      const items18 = [callback(wishlistId(context[31]).CircleInformationIcon, obj3), ];
-      obj4 = { variant: "text-xs/medium", color: "text-subtle", children: stringResult };
-      items18[1] = callback(wishlistId(context[27]).Text, obj4);
-      obj2.children = items18;
-      tmp33 = callback2(storeFront, obj2);
+      obj1[0] = items17;
+      const items18 = [callback(tmp6(tmp3[31]).CircleInformationIcon, { size: "sm" }), ];
+      let obj2 = { variant: "text-xs/medium", color: "text-subtle", children: null };
+      obj2[2] = stringResult;
+      items18[1] = callback(tmp6(tmp3[27]).Text, obj2);
+      obj1[1] = items18;
+      tmp41Result = tmp41(storeFront, obj1);
     }
-    const items19 = [tmp33, , , ];
-    obj5 = { style: tmp.headerRow };
-    obj6 = { variant: "text-sm/semibold", color: "text-muted" };
-    const intl2 = wishlistId(context[28]).intl;
-    obj7 = { count: memo.length };
-    obj6.children = intl2.formatToPlainString(wishlistId(context[28]).t.r6Y1Lg, obj7);
-    const items20 = [callback(wishlistId(context[27]).Text, obj6), ];
-    if (tmp14) {
-      obj8 = { style: tmp.headerButtons };
-      obj9 = { size: "sm", variant: "secondary" };
-      obj10 = { size: "xs" };
-      obj9.icon = callback(wishlistId(context[30]).PlusMediumIcon, obj10);
-      const intl3 = wishlistId(context[28]).intl;
-      obj9.text = intl3.string(wishlistId(context[28]).t.SDUwM0);
-      obj9.onPress = callback1;
-      const items21 = [callback(wishlistId(context[29]).Button, obj9), ];
-      const obj11 = { size: "sm", variant: "secondary" };
-      const obj12 = { size: "sm", color: importDefault(context[19]).colors.CONTROL_SECONDARY_TEXT_DEFAULT };
-      obj11.icon = callback(wishlistId(context[57]).PencilIcon, obj12);
-      obj11.onPress = callback;
-      const intl4 = wishlistId(context[28]).intl;
-      obj11.accessibilityLabel = intl4.string(wishlistId(context[28]).t.bt75uw);
-      items21[1] = callback(wishlistId(context[56]).IconButton, obj11);
-      obj8.children = items21;
-      tmp14 = callback2(storeFront, obj8);
+    const items19 = [tmp41Result, , , ];
+    obj3 = { style: null, children: null };
+    obj3[0] = tmp.headerRow;
+    obj4 = { variant: "text-sm/semibold", color: "text-muted", children: null };
+    let intl2 = tmp6(tmp3[28]).intl;
+    obj5 = { count: null };
+    obj5[0] = memo.length;
+    obj4[2] = intl2.formatToPlainString(tmp6(tmp3[28]).t.r6Y1Lg, obj5);
+    const items20 = [callback(tmp6(tmp3[27]).Text, obj4), ];
+    if (tmp41Result) {
+      obj6 = { style: null, children: null };
+      obj6[0] = tmp.headerButtons;
+      let obj7 = { size: "sm", variant: "secondary", icon: null, text: null, onPress: null };
+      obj7[2] = tmp37(tmp6(tmp3[30]).PlusMediumIcon, { size: "xs" });
+      const intl3 = tmp6(tmp3[28]).intl;
+      obj7[3] = intl3.string(tmp6(tmp3[28]).t.SDUwM0);
+      obj7[4] = callback1;
+      const items21 = [tmp37(tmp6(tmp3[29]).Button, obj7), ];
+      let obj8 = { size: "sm", variant: "secondary", icon: null, onPress: null, accessibilityLabel: null };
+      let obj9 = { size: "sm", color: null };
+      obj9[1] = tmp2(tmp3[19]).colors.CONTROL_SECONDARY_TEXT_DEFAULT;
+      obj8[2] = tmp37(tmp6(tmp3[57]).PencilIcon, obj9);
+      obj8[3] = callback;
+      const intl4 = tmp6(tmp3[28]).intl;
+      obj8[4] = intl4.string(tmp6(tmp3[28]).t.bt75uw);
+      items21[1] = tmp37(tmp6(tmp3[56]).IconButton, obj8);
+      obj6[1] = items21;
+      tmp41Result = tmp41(tmp36, obj6);
     }
-    items20[1] = tmp14;
-    obj5.children = items20;
-    items19[1] = callback2(storeFront, obj5);
-    const obj13 = { style: tmp.gridWrapper };
-    const obj14 = {};
-    const items22 = [tmp.itemsContainer, tmp3];
-    obj14.style = items22;
-    obj14.children = memo.map((sku) => {
+    items20[1] = tmp41Result;
+    obj3[1] = items20;
+    items19[1] = closure_23(storeFront, obj3);
+    obj10 = { style: null, children: null };
+    obj10[0] = tmp.gridWrapper;
+    let obj11 = { style: null, children: null };
+    const items22 = [tmp.itemsContainer, tmp5];
+    obj11[0] = items22;
+    obj11[1] = memo.map((sku) => {
       let closure_0 = sku;
       let tmp = null;
       if (null != sku.sku) {
-        const obj = {};
-        ({ sku: obj.sku, isOwned: obj.isOwned } = sku);
-        obj.onPress = function onPress() {
+        const obj = { sku: null, isOwned: null, onPress: null, size: null, wishlistOwnerId: null };
+        ({ sku: obj[0], isOwned: obj[1] } = sku);
+        obj[2] = function onPress() {
           return outer1_13(closure_0);
         };
-        obj.size = closure_1;
+        obj[3] = _undefined;
         let id;
-        if (null != stateFromStores5) {
+        if (stateFromStores5 != null) {
           id = stateFromStores5.id;
         }
-        obj.wishlistOwnerId = id;
-        tmp = outer1_22(outer1_1(context[58]), obj, sku.skuId);
+        obj[4] = id;
+        tmp = outer1_22(_undefined(context[58]), obj, sku.skuId);
         const tmp2 = outer1_22;
-        const tmp5 = outer1_1(context[58]);
+        const tmp5 = _undefined(context[58]);
       }
       return tmp;
     });
-    obj13.children = callback(storeFront, obj14);
-    items19[2] = callback(storeFront, obj13);
-    let tmp58 = memo3;
+    obj10[1] = callback(storeFront, obj11);
+    items19[2] = callback(storeFront, obj10);
+    let tmp41Result1 = memo3;
     if (memo3) {
-      const obj15 = {};
+      let obj12 = { style: null, children: null };
       const items23 = [, ];
       ({ disclaimer: arr25[0], disclaimerBottom: arr25[1] } = tmp);
-      obj15.style = items23;
-      const obj16 = { size: "sm" };
-      const items24 = [callback(wishlistId(context[31]).CircleInformationIcon, obj16), ];
-      const obj17 = { variant: "text-xs/medium", color: "text-subtle" };
-      const intl5 = wishlistId(context[28]).intl;
-      obj17.children = intl5.string(wishlistId(context[28]).t.Wp9bEl);
-      items24[1] = callback(wishlistId(context[27]).Text, obj17);
-      obj15.children = items24;
-      tmp58 = callback2(storeFront, obj15);
+      obj12[0] = items23;
+      const items24 = [tmp37(tmp6(tmp3[31]).CircleInformationIcon, { size: "sm" }), ];
+      let obj13 = { variant: "text-xs/medium", color: "text-subtle", children: null };
+      const intl5 = tmp6(tmp3[28]).intl;
+      obj13[2] = intl5.string(tmp6(tmp3[28]).t.Wp9bEl);
+      items24[1] = tmp37(tmp6(tmp3[27]).Text, obj13);
+      obj12[1] = items24;
+      tmp41Result1 = tmp41(tmp36, obj12);
     }
-    items19[3] = tmp58;
-    obj1.children = items19;
-    return callback2(closure_24, obj1);
+    let obj14 = { children: null };
+    items19[3] = tmp41Result1;
+    obj14[0] = items19;
+    return closure_23(closure_24, obj14);
   }
-  const tmp29 = (() => {
-    // CreateGeneratorClosureLongIndex (0x67)
-    let closure_0 = trackUserProfileWishlistAction(tmp);
-    return function() {
-      return callback(...arguments);
-    };
-  })();
+  const tmp6Result2 = _require(context[35]);
 };
 export { WishlistEmptyState };

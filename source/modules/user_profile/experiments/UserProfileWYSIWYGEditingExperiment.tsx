@@ -1,14 +1,15 @@
-// Module ID: 9780
-// Function ID: 75978
+// Module ID: 9802
+// Function ID: 9803
 // Name: useIsEligibleForUserProfileWYSIWYGEditing
-// Dependencies: [1428, 2]
+// Dependencies: [1452, 2]
 // Exports: getIsEligibleForUserProfileWYSIWYGEditing, useIsEligibleForUserProfileWYSIWYGEditing
 
-// Module 9780 (useIsEligibleForUserProfileWYSIWYGEditing)
+// Module 9802 (useIsEligibleForUserProfileWYSIWYGEditing)
 import ApexExperiment from "ApexExperiment";
 
-const obj = { name: "2026-03-wysiwyg-user-profile-editing", kind: "user", defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } };
-let closure_0 = ApexExperiment.createApexExperiment(obj);
+const obj = { 1: null };
+obj[1] = { enabled: true };
+let closure_0 = ApexExperiment.createApexExperiment({ name: "2026-03-wysiwyg-user-profile-editing", kind: "user", defaultConfig: { enabled: false }, variations: obj });
 const result = require("set").fileFinishedImporting("modules/user_profile/experiments/UserProfileWYSIWYGEditingExperiment.tsx");
 
 export const useIsEligibleForUserProfileWYSIWYGEditing = function useIsEligibleForUserProfileWYSIWYGEditing(AutomodQuarantineUtils) {

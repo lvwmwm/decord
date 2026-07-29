@@ -1,12 +1,12 @@
-// Module ID: 477
-// Function ID: 6167
+// Module ID: 500
+// Function ID: 501
 // Name: set
-// Dependencies: [2, 478]
+// Dependencies: [2, 501]
 
-// Module 477 (set)
+// Module 500 (set)
 const result = require("set").fileFinishedImporting("utils/PlatformUtils.tsx");
-for (const key10021 in require("isWindows")) {
-  let tmp3 = key10021;
-  arg5[key10021] = require("isWindows")[key10021];
+for (const key10018 in require("PlatformTypes")) {
+  let tmp3 = key10018;
+  arg5[key10018] = require("PlatformTypes")[key10018];
   continue;
 }

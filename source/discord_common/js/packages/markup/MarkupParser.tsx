@@ -1,18 +1,18 @@
-// Module ID: 7745
-// Function ID: 61666
+// Module ID: 7768
+// Function ID: 7769
 // Name: reactParserFor
-// Dependencies: [7746, 2, 7747, 7748]
+// Dependencies: [7769, 2, 7770, 7771]
 
-// Module 7745 (reactParserFor)
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("../discord_common/js/packages/markup/MarkupParser.tsx");
-for (const key10030 in require("_isNativeReflectConstruct")) {
-  let tmp3 = key10030;
-  arg5[key10030] = require("_isNativeReflectConstruct")[key10030];
+// Module 7768 (reactParserFor)
+const result = require("collectAst").fileFinishedImporting("../discord_common/js/packages/markup/MarkupParser.tsx");
+for (const key10026 in require("collectAst")) {
+  let tmp3 = key10026;
+  arg5[key10026] = require("collectAst")[key10026];
   continue;
 }
-for (const key10035 in require("set")) {
-  let tmp4 = key10035;
-  arg5[key10035] = require("set")[key10035];
+for (const key10030 in require("set")) {
+  let tmp4 = key10030;
+  arg5[key10030] = require("set")[key10030];
   continue;
 }
 

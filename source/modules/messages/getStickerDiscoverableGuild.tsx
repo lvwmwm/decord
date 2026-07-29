@@ -1,27 +1,27 @@
-// Module ID: 9620
-// Function ID: 74882
+// Module ID: 9642
+// Function ID: 9643
 // Name: getStickerDiscoverableGuild
-// Dependencies: [653, 507, 6668, 2]
+// Dependencies: [676, 530, 6689, 2]
 // Exports: default
 
-// Module 9620 (getStickerDiscoverableGuild)
+// Module 9642 (getStickerDiscoverableGuild)
 import { Endpoints } from "ME";
 
 const result = require("_startLurking").fileFinishedImporting("modules/messages/getStickerDiscoverableGuild.tsx");
 
 export default function getStickerDiscoverableGuild(arg0) {
-  const HTTP = require(507) /* _isNativeReflectConstruct */.HTTP;
+  const HTTP = require(530) /* sendRequest */.HTTP;
+  const value = HTTP.get({ url: Endpoints.STICKER_GUILD_DATA(arg0), oldFormErrors: true, rejectWithError: true });
   let obj = { url: Endpoints.STICKER_GUILD_DATA(arg0), oldFormErrors: true, rejectWithError: true };
-  const value = HTTP.get(obj);
   return value.then((body) => {
     body = undefined;
-    if (null != body) {
+    if (body != null) {
       body = body.body;
     }
     let discoverableGuild = null;
     if (null != body) {
-      discoverableGuild = outer1_0(outer1_1[2]).makeDiscoverableGuild(body.body);
-      const obj = outer1_0(outer1_1[2]);
+      discoverableGuild = callback(table[2]).makeDiscoverableGuild(body.body);
+      const obj = callback(table[2]);
     }
     return discoverableGuild;
   }).catch(() => null);

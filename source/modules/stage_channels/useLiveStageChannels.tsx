@@ -1,43 +1,42 @@
-// Module ID: 15123
-// Function ID: 115034
-// Name: useAllVisibleChannels
-// Dependencies: [1348, 3793, 1353, 1356, 566, 1327, 21, 2]
+// Module ID: 15156
+// Function ID: 15157
+// Name: useLiveStageChannels
+// Dependencies: [1372, 3817, 1377, 1380, 589, 1351, 11, 2]
 // Exports: default, getAllLiveStageChannels, useAllLiveStageChannels
 
-// Module 15123 (useAllVisibleChannels)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_4 from "_isNativeReflectConstruct";
-import closure_5 from "_isNativeReflectConstruct";
+// Module 15156 (useLiveStageChannels)
+import ensureGuildLoaded from "ensureGuildLoaded";
+import getUncachedChannelPermissions from "getUncachedChannelPermissions";
+import handleStageInstanceCreateOrUpdate from "handleStageInstanceCreateOrUpdate";
 
 const require = arg1;
-function useAllVisibleChannels(arg0) {
-  const _require = arg0;
-  const items = [_isNativeReflectConstruct];
-  const items1 = [arg0];
-  const stateFromStoresArray = _require(566).useStateFromStoresArray(items, () => {
-    const mapped = lib.map((channelId) => outer2_3.getChannel(channelId));
-    return mapped.filter(lib(outer1_2[5]).isNotNullish);
-  }, items1);
-  const obj = _require(566);
-  const items2 = [closure_4];
-  const items3 = [stateFromStoresArray];
-  return _require(566).useStateFromStoresArray(items2, () => stateFromStoresArray.filter((channel) => outer2_4.can(callback(outer2_2[3]).JOIN_VOCAL_CHANNEL_PERMISSIONS, channel)), items3);
-}
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/stage_channels/useLiveStageChannels.tsx");
+const result = require("handleStageInstanceCreateOrUpdate").fileFinishedImporting("modules/stage_channels/useLiveStageChannels.tsx");
 
 export default function useLiveStageChannels(arg0) {
-  const _require = arg0;
-  const items = [closure_5];
+  let stateFromStoresArray = arg0;
+  const items = [handleStageInstanceCreateOrUpdate];
   const items1 = [arg0];
-  return useAllVisibleChannels(_require(566).useStateFromStoresArray(items, () => outer1_1(outer1_2[6]).keys(outer1_5.getStageInstancesByGuild(closure_0)), items1));
+  stateFromStoresArray = stateFromStoresArray(589).useStateFromStoresArray(items, () => stateFromStoresArray1(outer1_2[6]).keys(outer1_5.getStageInstancesByGuild(stateFromStoresArray)), items1);
+  let stateFromStoresArray1;
+  const obj = stateFromStoresArray(589);
+  const items2 = [ensureGuildLoaded];
+  const items3 = [stateFromStoresArray];
+  stateFromStoresArray1 = stateFromStoresArray(589).useStateFromStoresArray(items2, () => {
+    const mapped = stateFromStores.map((arg0) => channel.getChannel(arg0));
+    return mapped.filter(stateFromStores(outer1_2[5]).isNotNullish);
+  }, items3);
+  const obj2 = stateFromStoresArray(589);
+  const items4 = [getUncachedChannelPermissions];
+  const items5 = [stateFromStoresArray1];
+  return stateFromStoresArray(589).useStateFromStoresArray(items4, () => stateFromStoresArray.filter((arg0) => getUncachedChannelPermissions.can(callback(table[3]).JOIN_VOCAL_CHANNEL_PERMISSIONS, arg0)), items5);
 };
 export const getAllLiveStageChannels = function getAllLiveStageChannels() {
   allStageInstances = allStageInstances.getAllStageInstances();
   return allStageInstances.reduce((arr, channel_id) => {
-    const channel = outer1_3.getChannel(channel_id.channel_id);
+    channel = channel.getChannel(channel_id.channel_id);
     let canResult = null != channel;
     if (canResult) {
-      canResult = outer1_4.can(outer1_0(outer1_2[3]).JOIN_VOCAL_CHANNEL_PERMISSIONS, channel);
+      canResult = getUncachedChannelPermissions.can(callback(table[3]).JOIN_VOCAL_CHANNEL_PERMISSIONS, channel);
     }
     if (canResult) {
       arr.push(channel);
@@ -46,9 +45,21 @@ export const getAllLiveStageChannels = function getAllLiveStageChannels() {
   }, []);
 };
 export const useAllLiveStageChannels = function useAllLiveStageChannels() {
-  const items = [closure_5];
-  return useAllVisibleChannels(require(566) /* initialize */.useStateFromStores(items, () => {
-    const allStageInstances = outer1_5.getAllStageInstances();
+  const items = [handleStageInstanceCreateOrUpdate];
+  stateFromStores = stateFromStores(589).useStateFromStores(items, () => {
+    allStageInstances = allStageInstances.getAllStageInstances();
     return allStageInstances.map((channel_id) => channel_id.channel_id);
-  }, []));
+  }, []);
+  let stateFromStoresArray;
+  const obj = stateFromStores(589);
+  const items1 = [ensureGuildLoaded];
+  const items2 = [stateFromStores];
+  stateFromStoresArray = stateFromStores(589).useStateFromStoresArray(items1, () => {
+    const mapped = stateFromStores.map((arg0) => channel.getChannel(arg0));
+    return mapped.filter(stateFromStores(outer1_2[5]).isNotNullish);
+  }, items2);
+  const obj2 = stateFromStores(589);
+  const items3 = [getUncachedChannelPermissions];
+  const items4 = [stateFromStoresArray];
+  return stateFromStores(589).useStateFromStoresArray(items3, () => stateFromStoresArray.filter((arg0) => getUncachedChannelPermissions.can(callback(table[3]).JOIN_VOCAL_CHANNEL_PERMISSIONS, arg0)), items4);
 };

@@ -1,9 +1,9 @@
-// Module ID: 687
-// Function ID: 8477
+// Module ID: 710
+// Function ID: 711
 // Name: STORAGE_KEY_LOG_DISPATCHES
-// Dependencies: [688, 2]
+// Dependencies: [711, 2]
 
-// Module 687 (STORAGE_KEY_LOG_DISPATCHES)
+// Module 710 (STORAGE_KEY_LOG_DISPATCHES)
 import unsafe_getRawColor from "unsafe_getRawColor";
 
 const result = 2 * unsafe_getRawColor.getRadii().xl;

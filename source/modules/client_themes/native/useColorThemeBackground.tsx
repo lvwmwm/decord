@@ -1,75 +1,84 @@
-// Module ID: 4012
-// Function ID: 33097
+// Module ID: 4036
+// Function ID: 4037
 // Name: getGuildThemeName
-// Dependencies: [31, 1278, 3977, 1212, 3979, 4013, 4015, 624, 4098, 2]
+// Dependencies: [19, 1302, 4001, 1236, 4003, 4037, 4039, 647, 4122, 2]
 // Exports: default
 
-// Module 4012 (getGuildThemeName)
-import result from "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_5 from "_isNativeReflectConstruct";
+// Module 4036 (getGuildThemeName)
+import noop from "noop";
+import handleThemeChange from "handleThemeChange";
+import isSyncedModeThemesEnabled from "isSyncedModeThemesEnabled";
 
 let require = arg1;
 function getGuildThemeName() {
-  const intl = require(1212) /* getSystemLocale */.intl;
-  return intl.string(require(1212) /* getSystemLocale */.t.CFzDOG);
+  const intl = require(1236) /* getSystemLocale */.intl;
+  return intl.string(require(1236) /* getSystemLocale */.t.CFzDOG);
 }
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/client_themes/native/useColorThemeBackground.tsx");
+const result = require("isSyncedModeThemesEnabled").fileFinishedImporting("modules/client_themes/native/useColorThemeBackground.tsx");
 
 export default function useColorThemeBackground() {
-  const tmp = stateFromStores(4015)();
+  const tmp = stateFromStores(4039)();
   const require = tmp;
-  let items = [_isNativeReflectConstruct];
-  stateFromStores = require(624) /* defaultAreStatesEqual */.useStateFromStores(items, () => outer1_4.theme);
-  let obj = require(624) /* defaultAreStatesEqual */;
-  const items1 = [closure_5];
-  let stateFromStores1 = require(624) /* defaultAreStatesEqual */.useStateFromStores(items1, () => outer1_5.gradientPreset);
-  const obj2 = require(624) /* defaultAreStatesEqual */;
-  let customBackgroundGradient = require(4098) /* getCustomThemesName */.useCustomBackgroundGradient();
+  let items = [handleThemeChange];
+  stateFromStores = require(647) /* defaultAreStatesEqual */.useStateFromStores(items, () => theme.theme);
+  let obj = require(647) /* defaultAreStatesEqual */;
+  const items1 = [isSyncedModeThemesEnabled];
+  const stateFromStores1 = require(647) /* defaultAreStatesEqual */.useStateFromStores(items1, () => gradientPreset.gradientPreset);
+  const obj2 = require(647) /* defaultAreStatesEqual */;
   const items2 = [tmp, stateFromStores];
-  const memo = React.useMemo(() => (function getGuildThemeBackground(closure_0, stateFromStores) {
+  const customBackgroundGradient = require(4122) /* getCustomThemesName */.useCustomBackgroundGradient();
+  let memo = React.useMemo(() => {
     let colors;
-    if (null == closure_0) {
-      return null;
-    } else if ("custom" === closure_0.type) {
-      const customUserThemeSettings = closure_0.customUserThemeSettings;
-      let num = 0;
-      let obj = { type: callback(outer2_2[4]).ClientThemeType.CUSTOM_BACKGROUND_GRADIENT, getName: outer2_6, theme: stateFromStores };
-      obj = {};
-      const items = [];
-      HermesBuiltin.arraySpread(callback(outer2_2[5]).getSingleColorGuildThemeGradientColors(customUserThemeSettings.colors[0], stateFromStores), 0);
-      obj.colors = items;
-      obj.gradientColorStops = [];
-      const gradientAngle = customUserThemeSettings.gradientAngle;
-      if (null != gradientAngle) {
-        num = gradientAngle;
+    let tmp3 = null;
+    if (null != tmp) {
+      if ("custom" === tmp.type) {
+        const customUserThemeSettings = tmp.customUserThemeSettings;
+        let obj = { type: null, getName: null, theme: null, customThemeSettings: null };
+        obj[0] = tmp(outer1_2[4]).ClientThemeType.CUSTOM_BACKGROUND_GRADIENT;
+        obj[1] = outer1_6;
+        obj[2] = tmp2;
+        obj = { colors: null, gradientColorStops: null, gradientAngle: null, baseMix: null };
+        const items = [];
+        HermesBuiltin.arraySpread(tmp(outer1_2[5]).getSingleColorGuildThemeGradientColors(customUserThemeSettings.colors[0], tmp2), 0);
+        obj[0] = items;
+        obj[1] = [];
+        let num2 = customUserThemeSettings.gradientAngle;
+        if (num2 == null) {
+          num2 = 0;
+        }
+        obj[2] = num2;
+        let GUILD_THEME_DEFAULT_BASE_MIX = customUserThemeSettings.baseMix;
+        if (GUILD_THEME_DEFAULT_BASE_MIX == null) {
+          GUILD_THEME_DEFAULT_BASE_MIX = tmp(outer1_2[5]).GUILD_THEME_DEFAULT_BASE_MIX;
+        }
+        obj[3] = GUILD_THEME_DEFAULT_BASE_MIX;
+        obj[3] = obj;
+        tmp3 = obj;
+        const obj3 = tmp(outer1_2[5]);
+      } else {
+        const guildThemePresetAppearance = tmp(outer1_2[5]).getGuildThemePresetAppearance(tmp.preset, tmp2);
+        obj = { type: null, getName: null, theme: null, customThemeSettings: null };
+        obj[0] = tmp(outer1_2[4]).ClientThemeType.CUSTOM_BACKGROUND_GRADIENT;
+        obj[1] = outer1_6;
+        obj[2] = tmp2;
+        const obj1 = { colors: null, gradientAngle: null, gradientColorStops: null, baseMix: null };
+        colors = guildThemePresetAppearance.colors;
+        obj1[0] = colors.map((hex) => hex.hex);
+        ({ angle: obj6[1], colors } = guildThemePresetAppearance);
+        obj1[2] = colors.map((stop) => stop.stop);
+        obj1[3] = guildThemePresetAppearance.baseMix;
+        obj[3] = obj1;
+        tmp3 = obj;
+        const obj4 = tmp(outer1_2[5]);
       }
-      obj.gradientAngle = num;
-      let GUILD_THEME_DEFAULT_BASE_MIX = customUserThemeSettings.baseMix;
-      if (null == GUILD_THEME_DEFAULT_BASE_MIX) {
-        GUILD_THEME_DEFAULT_BASE_MIX = callback(outer2_2[5]).GUILD_THEME_DEFAULT_BASE_MIX;
-      }
-      obj.baseMix = GUILD_THEME_DEFAULT_BASE_MIX;
-      obj.customThemeSettings = obj;
-      return obj;
-    } else {
-      const guildThemePresetAppearance = callback(outer2_2[5]).getGuildThemePresetAppearance(closure_0.preset, stateFromStores);
-      obj = { type: callback(outer2_2[4]).ClientThemeType.CUSTOM_BACKGROUND_GRADIENT, getName: outer2_6, theme: stateFromStores };
-      const obj1 = {};
-      colors = guildThemePresetAppearance.colors;
-      obj1.colors = colors.map((hex) => hex.hex);
-      ({ angle: obj6.gradientAngle, colors } = guildThemePresetAppearance);
-      obj1.gradientColorStops = colors.map((stop) => stop.stop);
-      obj1.baseMix = guildThemePresetAppearance.baseMix;
-      obj.customThemeSettings = obj1;
-      return obj;
     }
-  })(closure_0, stateFromStores), items2);
-  if (null != memo) {
-    customBackgroundGradient = memo;
+    return tmp3;
+  }, items2);
+  if (memo == null) {
+    memo = customBackgroundGradient;
   }
-  if (null != customBackgroundGradient) {
-    stateFromStores1 = customBackgroundGradient;
+  if (memo == null) {
+    memo = stateFromStores1;
   }
-  return stateFromStores1;
+  return memo;
 };

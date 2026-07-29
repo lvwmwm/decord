@@ -1,46 +1,33 @@
-// Module ID: 13438
-// Function ID: 102933
-// Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 1194, 1348, 4212, 3793, 4237, 4181, 653, 686, 566, 2]
+// Module ID: 13461
+// Function ID: 13462
+// Name: handleUpdateVADPermission
+// Dependencies: [1218, 1372, 4236, 3817, 4261, 4205, 676, 709, 589, 2]
 
-// Module 13438 (_isNativeReflectConstruct)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_3 from "_isNativeReflectConstruct";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
-import closure_7 from "_isNativeReflectConstruct";
-import closure_8 from "_isNativeReflectConstruct";
-import closure_9 from "_isNativeReflectConstruct";
-import closure_10 from "_isNativeReflectConstruct";
-import closure_11 from "_isNativeReflectConstruct";
-import closure_12 from "_isNativeReflectConstruct";
+// Module 13461 (handleUpdateVADPermission)
+import fetchFingerprint from "fetchFingerprint";
+import ensureGuildLoaded from "ensureGuildLoaded";
+import _detectH265HardwareDecode from "_detectH265HardwareDecode";
+import getUncachedChannelPermissions from "getUncachedChannelPermissions";
+import createRTCConnection from "createRTCConnection";
+import updateVoiceState from "updateVoiceState";
 import ME from "ME";
+import { Store } from "initialize";
 
-let closure_13;
-let closure_14;
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
-  }
-  const result = _isNativeReflectConstruct();
-}
+let c9;
+let metroImportAll;
 function handleUpdateVADPermission() {
   channelId = channelId.getChannelId();
   let flag = true;
   if (null != channelId) {
     channel = channel.getChannel(channelId);
     let guildId;
-    if (null != channel) {
+    if (channel != null) {
       guildId = channel.getGuildId();
     }
     voiceState = voiceState.getVoiceState(guildId, id.getId());
     let canResult = mode.getMode() !== constants.VOICE_ACTIVITY || null == channel || channel.isPrivate() || channel.isGuildStageVoice();
     if (!canResult) {
-      canResult = closure_10.can(constants2.USE_VAD, channel);
+      canResult = getUncachedChannelPermissions.can(constants2.USE_VAD, channel);
     }
     if (!canResult) {
       canResult = null == voiceState || voiceState.suppress || null != voiceState.requestToSpeakTimestamp;
@@ -50,63 +37,31 @@ function handleUpdateVADPermission() {
   }
   let flag2 = flag !== flag;
   if (flag2) {
-    const obj = { type: "SET_VAD_PERMISSION", hasPermission: flag };
-    importDefault(686).dispatch(obj);
+    const obj = { type: "SET_VAD_PERMISSION", hasPermission: null };
+    obj[1] = flag;
+    importDefault(709).dispatch(obj);
     flag2 = true;
-    const obj2 = importDefault(686);
+    const obj2 = importDefault(709);
   }
   return flag2;
 }
-({ InputModes: closure_13, Permissions: closure_14 } = ME);
-let c15 = true;
-let c16 = true;
-let tmp3 = ((Store) => {
-  class PermissionVADStore {
-    constructor() {
-      self = this;
-      tmp = outer1_2(this, PermissionVADStore);
-      obj = outer1_5(PermissionVADStore);
-      tmp2 = outer1_4;
-      if (outer1_17()) {
-        tmp6 = globalThis;
-        _Reflect = Reflect;
-        tmp7 = outer1_5;
-        tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, outer1_5(self).constructor);
-      } else {
-        tmp3 = arguments;
-        tmp4 = arguments;
-        constructResult = obj(...arguments);
-      }
-      return tmp2(self, constructResult);
-    }
-  }
-  callback2(PermissionVADStore, Store);
-  let obj = {
-    key: "initialize",
-    value() {
-      this.waitFor(outer1_7, outer1_8, outer1_9, outer1_10, outer1_11, outer1_12);
-    }
-  };
-  const items = [obj, , ];
-  obj = {
-    key: "shouldShowWarning",
-    value() {
-      return !outer1_16;
-    }
-  };
-  items[1] = obj;
-  obj = {
-    key: "canUseVoiceActivity",
-    value() {
-      return outer1_15;
-    }
-  };
-  items[2] = obj;
-  return callback(PermissionVADStore, items);
-})(require("initialize").Store);
-tmp3.displayName = "PermissionVADStore";
-tmp3 = new tmp3(require("dispatcher"), {
+({ InputModes: metroImportAll, Permissions: c9 } = ME);
+let c10 = true;
+let c11 = true;
+class PermissionVADStore extends Store {
+}
+const prototype = PermissionVADStore.prototype;
+prototype["initialize"] = function initialize() {
+  this.waitFor(fetchFingerprint, ensureGuildLoaded, _detectH265HardwareDecode, getUncachedChannelPermissions, createRTCConnection, updateVoiceState);
+};
+prototype["shouldShowWarning"] = function shouldShowWarning() {
+  return !c11;
+};
+prototype["canUseVoiceActivity"] = function canUseVoiceActivity() {
+  return c10;
+};
+PermissionVADStore.displayName = "PermissionVADStore";
+const permissionVADStore = new PermissionVADStore(require("dispatcher"), {
   RTC_CONNECTION_STATE: handleUpdateVADPermission,
   MEDIA_ENGINE_SET_AUDIO_ENABLED: handleUpdateVADPermission,
   AUDIO_SET_MODE: handleUpdateVADPermission,
@@ -119,20 +74,20 @@ tmp3 = new tmp3(require("dispatcher"), {
   VOICE_STATE_UPDATES: function handleVoiceStateUpdates(voiceStates) {
     voiceStates = voiceStates.voiceStates;
     return voiceStates.some((userId) => {
-      let tmp = userId.userId === outer1_7.getId();
+      let tmp = userId.userId === id.getId();
       if (tmp) {
-        tmp = outer1_18();
+        tmp = callback();
       }
       return tmp;
     });
   },
   AUDIO_TOGGLE_SELF_MUTE: function handleUnclearWarning() {
-    let closure_16 = c15;
+    let closure_11 = c10;
   },
   PERMISSION_CLEAR_VAD_WARNING: function handleClearWarning() {
-    let c16 = true;
+    let c11 = true;
   }
 });
-let result = require("_possibleConstructorReturn").fileFinishedImporting("stores/PermissionVADStore.tsx");
+const result = require("_detectH265HardwareDecode").fileFinishedImporting("stores/PermissionVADStore.tsx");
 
-export default tmp3;
+export default permissionVADStore;

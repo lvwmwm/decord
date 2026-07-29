@@ -1,54 +1,63 @@
-// Module ID: 6533
-// Function ID: 58176
-// Name: checkForCustomCheckoutFlow
-// Dependencies: [4148, 653, 1184, 1553, 3988, 5023, 2]
+// Module ID: 6554
+// Function ID: 6555
+// Name: MOBILE_WEB_REDIRECT_CHECKOUT_ERROR_TAG
+// Dependencies: [4172, 676, 1208, 1577, 4012, 5045, 2]
 // Exports: captureMobileWebRedirectCheckoutSentryError, getCustomCheckoutFlow, getCustomCheckoutFlowForAnalytics, isMobileWebRedirectCheckoutEnabled, useGetCustomCheckoutFlow
 
-// Module 6533 (checkForCustomCheckoutFlow)
+// Module 6554 (MOBILE_WEB_REDIRECT_CHECKOUT_ERROR_TAG)
 import { CustomCheckoutFlow } from "CustomCheckoutFlow";
 import ME from "ME";
 
-let closure_4;
-let closure_5;
-function checkForCustomCheckoutFlow(pathname, deep_link_type, flow_type) {
+let c4;
+let c5;
+({ Routes: c4, LinkingTypes: c5 } = ME);
+const mobile_web_redirect_checkout = "mobile_web_redirect_checkout";
+const result = require("module_1208").fileFinishedImporting("modules/payments/utils/MobileWebRedirectCheckoutUtils.tsx");
+
+export const MOBILE_WEB_REDIRECT_CHECKOUT_ERROR_TAG = "mobile_web_redirect_checkout";
+export const captureMobileWebRedirectCheckoutSentryError = function captureMobileWebRedirectCheckoutSentryError(error, source, tags) {
+  let obj = importDefault(1208);
+  obj = { tags: null, extra: null };
+  obj = { app_context: mobile_web_redirect_checkout, source };
+  const merged = Object.assign(tags.tags);
+  obj[0] = obj;
+  obj[1] = tags.extra;
+  obj.captureException(error, obj);
+};
+export const isMobileWebRedirectCheckoutEnabled = function isMobileWebRedirectCheckoutEnabled() {
+  return require(1577) /* isMetaQuest */.isMetaQuest();
+};
+export const getCustomCheckoutFlowForAnalytics = function getCustomCheckoutFlowForAnalytics() {
+  return require(1577) /* isMetaQuest */.isMetaQuest() ? CustomCheckoutFlow.META_QUEST_WEB_REDIRECT_CHECKOUT : CustomCheckoutFlow.MOBILE_WEB_REDIRECT_CHECKOUT;
+};
+export const useGetCustomCheckoutFlow = function useGetCustomCheckoutFlow() {
+  let deep_link_type;
+  let flow_type;
+  let pathname;
+  let search;
+  const _location = require(4012) /* _extends */.useLocation();
+  ({ pathname, search } = _location);
+  const obj = require(4012) /* _extends */;
+  const parsed = require(5045) /* keysSorter */.parse(search);
+  ({ deep_link_type, flow_type } = parsed);
   if (!pathname.startsWith(constants.BILLING_MANAGE_SUBSCRIPTION)) {
     if (deep_link_type === constants2.MOBILE_WEB_REDIRECT_CHECKOUT) {
       let META_QUEST_WEB_REDIRECT_CHECKOUT = CustomCheckoutFlow.MOBILE_WEB_REDIRECT_CHECKOUT;
     } else if (flow_type === CustomCheckoutFlow.META_QUEST_WEB_REDIRECT_CHECKOUT) {
       META_QUEST_WEB_REDIRECT_CHECKOUT = CustomCheckoutFlow.META_QUEST_WEB_REDIRECT_CHECKOUT;
     }
-    return META_QUEST_WEB_REDIRECT_CHECKOUT;
   }
-}
-({ Routes: closure_4, LinkingTypes: closure_5 } = ME);
-const result = require("isNonEmptyString").fileFinishedImporting("modules/payments/utils/MobileWebRedirectCheckoutUtils.tsx");
-
-export const MOBILE_WEB_REDIRECT_CHECKOUT_ERROR_TAG = "mobile_web_redirect_checkout";
-export const captureMobileWebRedirectCheckoutSentryError = function captureMobileWebRedirectCheckoutSentryError(error, source, tags) {
-  let obj = importDefault(1184);
-  obj = {};
-  obj = { app_context: "mobile_web_redirect_checkout", source };
-  const merged = Object.assign(tags.tags);
-  obj.tags = obj;
-  obj.extra = tags.extra;
-  obj.captureException(error, obj);
-};
-export const isMobileWebRedirectCheckoutEnabled = function isMobileWebRedirectCheckoutEnabled() {
-  return require(1553) /* isMetaQuest */.isMetaQuest();
-};
-export const getCustomCheckoutFlowForAnalytics = function getCustomCheckoutFlowForAnalytics() {
-  return require(1553) /* isMetaQuest */.isMetaQuest() ? CustomCheckoutFlow.META_QUEST_WEB_REDIRECT_CHECKOUT : CustomCheckoutFlow.MOBILE_WEB_REDIRECT_CHECKOUT;
-};
-export const useGetCustomCheckoutFlow = function useGetCustomCheckoutFlow() {
-  let pathname;
-  let search;
-  const _location = require(3988) /* _extends */.useLocation();
-  ({ search, pathname } = _location);
-  const obj = require(3988) /* _extends */;
-  const parsed = require(5023) /* encode */.parse(search);
-  return checkForCustomCheckoutFlow(pathname, parsed.deep_link_type, parsed.flow_type);
 };
 export const getCustomCheckoutFlow = function getCustomCheckoutFlow() {
-  const parsed = require(5023) /* encode */.parse(window.location.search);
-  return checkForCustomCheckoutFlow(window.location.pathname, parsed.deep_link_type, parsed.flow_type);
+  let deep_link_type;
+  let flow_type;
+  const parsed = require(5045) /* keysSorter */.parse(window.location.search);
+  ({ deep_link_type, flow_type } = parsed);
+  if (!pathname.startsWith(constants.BILLING_MANAGE_SUBSCRIPTION)) {
+    if (deep_link_type === constants2.MOBILE_WEB_REDIRECT_CHECKOUT) {
+      let META_QUEST_WEB_REDIRECT_CHECKOUT = CustomCheckoutFlow.MOBILE_WEB_REDIRECT_CHECKOUT;
+    } else if (flow_type === CustomCheckoutFlow.META_QUEST_WEB_REDIRECT_CHECKOUT) {
+      META_QUEST_WEB_REDIRECT_CHECKOUT = CustomCheckoutFlow.META_QUEST_WEB_REDIRECT_CHECKOUT;
+    }
+  }
 };

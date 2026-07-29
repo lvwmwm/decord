@@ -1,11 +1,11 @@
-// Module ID: 15325
-// Function ID: 116640
+// Module ID: 15358
+// Function ID: 15359
 // Name: useICYMIEmptyLoadingAnalytics
-// Dependencies: [31, 8170, 2]
+// Dependencies: [19, 8194, 2]
 // Exports: useICYMIEmptyLoadingAnalytics
 
-// Module 15325 (useICYMIEmptyLoadingAnalytics)
-import result from "result";
+// Module 15358 (useICYMIEmptyLoadingAnalytics)
+import noop from "noop";
 
 const require = arg1;
 let result = require("set").fileFinishedImporting("modules/icymi/useICYMIEmptyLoadingAnalytics.tsx");
@@ -24,11 +24,12 @@ export const useICYMIEmptyLoadingAnalytics = function useICYMIEmptyLoadingAnalyt
         const result = ICYMIAnalytics.trackFeedEmptyLoadingSeen();
       } else if (null != tmp2.current) {
         const _Date2 = Date;
-        const diff = Date.now() - ref.current;
+        const diff = Date.now() - tmp2.current;
         const ICYMIAnalytics2 = loading(isFocused[1]).ICYMIAnalytics;
-        const obj = { dwellTimeMs: diff };
+        const obj = { dwellTimeMs: null };
+        obj[0] = diff;
         const result1 = ICYMIAnalytics2.trackFeedEmptyLoadingComplete(obj);
-        ref.current = null;
+        tmp2.current = null;
       }
     }
   }, items);
@@ -37,11 +38,12 @@ export const useICYMIEmptyLoadingAnalytics = function useICYMIEmptyLoadingAnalyt
     if (!isFocused) {
       if (null != ref.current) {
         const _Date = Date;
-        const diff = Date.now() - ref.current;
+        const diff = Date.now() - tmp.current;
         const ICYMIAnalytics = loading(isFocused[1]).ICYMIAnalytics;
-        const obj = { dwellTimeMs: diff };
+        const obj = { dwellTimeMs: null };
+        obj[0] = diff;
         const result = ICYMIAnalytics.trackFeedEmptyLoadingAbandoned(obj);
-        ref.current = null;
+        tmp.current = null;
       }
     }
   }, items1);

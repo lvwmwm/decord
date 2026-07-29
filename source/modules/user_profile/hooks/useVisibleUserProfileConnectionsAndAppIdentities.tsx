@@ -1,11 +1,11 @@
-// Module ID: 12164
-// Function ID: 95140
+// Module ID: 12188
+// Function ID: 12189
 // Name: useVisibleUserProfileConnectionsAndAppIdentities
-// Dependencies: [31, 12165, 12166, 5503, 1327, 4849, 2]
+// Dependencies: [19, 12189, 12190, 5521, 1351, 4871, 2]
 // Exports: default
 
-// Module 12164 (useVisibleUserProfileConnectionsAndAppIdentities)
-import result from "result";
+// Module 12188 (useVisibleUserProfileConnectionsAndAppIdentities)
+import noop from "noop";
 
 const require = arg1;
 const result = require("useUserProfileConnections").fileFinishedImporting("modules/user_profile/hooks/useVisibleUserProfileConnectionsAndAppIdentities.tsx");
@@ -17,17 +17,17 @@ export default function useVisibleUserProfileConnectionsAndAppIdentities(arg0) {
   const items = [filteredAppIdentities];
   memo = found.useMemo(() => {
     let mapped;
-    if (null != filteredAppIdentities) {
+    if (filteredAppIdentities != null) {
       mapped = filteredAppIdentities.map((application_id) => application_id.application_id);
     }
-    if (null == mapped) {
+    if (mapped == null) {
       mapped = [];
     }
     return new Set(mapped);
   }, items);
   const items1 = [];
   HermesBuiltin.arraySpread(memo, 0);
-  const tmp3 = importDefault(memo[3]);
+  let tmp3 = importDefault(memo[3]);
   found = importDefault(memo[3])(items1).filter(filteredAppIdentities(memo[4]).isNotNullish);
   const tmp3Result = importDefault(memo[3])(items1);
   const items2 = [filteredAppIdentities, found];
@@ -36,25 +36,24 @@ export default function useVisibleUserProfileConnectionsAndAppIdentities(arg0) {
     appIdentities: found.useMemo(() => {
       const mapped = filteredAppIdentities.map((identity) => {
         let closure_0 = identity;
-        return { identity, application: outer1_3.find((id) => id.id === identity.application_id) };
+        return { identity, application: noop.find((id) => id.id === identity.application_id) };
       });
       return mapped.filter((application) => null != application.application);
     }, items2),
     connections: found.useMemo(() => tmp.filter((type) => {
-      const value = callback(memo[5]).get(type.type);
-      let tmp2 = null == value;
-      if (!tmp2) {
+      const value = outer1_1(outer1_2[5]).get(type.type);
+      let migrationExperimentEnabled;
+      if (value != null) {
         const migrationData = value.migrationData;
-        tmp2 = null == migrationData;
-        const obj2 = migrationData;
+        if (migrationData != null) {
+          migrationExperimentEnabled = migrationData.getMigrationExperimentEnabled("useVisibleUserProfileConnectionsAndAppIdentities");
+        }
       }
-      if (!tmp2) {
-        tmp2 = !obj2.getMigrationExperimentEnabled("useVisibleUserProfileConnectionsAndAppIdentities");
+      let tmp3 = !migrationExperimentEnabled;
+      if (migrationExperimentEnabled) {
+        tmp3 = !set.has(value.migrationData.replacedBy);
       }
-      if (!tmp2) {
-        tmp2 = !outer1_2.has(value.migrationData.replacedBy);
-      }
-      return tmp2;
+      return tmp3;
     }), items3)
   };
 };

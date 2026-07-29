@@ -1,81 +1,393 @@
-// Module ID: 9033
-// Function ID: 70975
+// Module ID: 9057
+// Function ID: 9058
 // Name: showRequestFailedAlert
-// Dependencies: [5, 653, 4064, 4505, 1212, 507, 4011, 2]
+// Dependencies: [5, 676, 4088, 4528, 1236, 530, 4035, 2]
 
-// Module 9033 (showRequestFailedAlert)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 9057 (showRequestFailedAlert)
+import sendRequest from "sendRequest";
 import ME from "ME";
 
-let closure_4;
-let closure_5;
+let c4;
+let c5;
 const require = arg1;
 function showRequestFailedAlert(arg0) {
-  const aPIError = new require(4064) /* V6OrEarlierAPIError */.APIError(arg0);
+  const aPIError = new require(4088) /* V6OrEarlierAPIError */.APIError(arg0);
   let anyErrorMessage = aPIError.getAnyErrorMessage();
-  const obj = {};
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj.title = intl.string(require(1212) /* getSystemLocale */.t["328j/I"]);
+  const obj = { title: null, body: null };
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj[0] = intl.string(require(1236) /* getSystemLocale */.t["328j/I"]);
   if (null == anyErrorMessage) {
-    const intl2 = require(1212) /* getSystemLocale */.intl;
-    anyErrorMessage = intl2.string(require(1212) /* getSystemLocale */.t.fEptJP);
+    const intl2 = tmp(1236).intl;
+    anyErrorMessage = intl2.string(tmp(1236).t.fEptJP);
   }
-  obj.body = anyErrorMessage;
-  importDefault(4505).show(obj);
+  obj[1] = anyErrorMessage;
+  importDefault(4528).show(obj);
 }
 function deleteGameRelationship() {
-  return _deleteGameRelationship(...arguments);
+  const self = this;
+  const apply = _deleteGameRelationship.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
 }
 function _deleteGameRelationship() {
-  // CreateGeneratorClosureLongIndex (0x67)
-  const obj = callback(tmp);
-  return obj(...arguments);
+  const self = this;
+  const tmp = callback((arg0) => {
+    let closure_0 = arg0;
+    let c5 = 0;
+    let c6 = 0;
+    let c4 = 0;
+    const iter = (function*(arg0) {
+      let c0;
+      let c1;
+      let c2;
+      if (v0 === 2) {
+        v0 = 3;
+        HermesBuiltin.throwTypeError();
+      } else if (tmp7 === 3) {
+        if (arg0 === 1) {
+          throw arg1;
+        } else if (arg0 === 2) {
+          let obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
+        } else {
+          return { value: "HermesInternal", done: null };
+        }
+      } else {
+        try {
+          v0 = 2;
+          if (0 === c5) {
+            if (arg0 === 1) {
+              v0 = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              v0 = 3;
+              obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            } else {
+              let dependencyMap = tmp3;
+              c1 = tmp5;
+              let callback;
+              c1 = undefined;
+              dependencyMap = undefined;
+              ({ userId: c0, applicationId: c1, onSuccess: c2 } = callback);
+              c5 = 1;
+              v0 = 1;
+              return { value: "ct", done: null };
+            }
+          } else if (1 === tmp8) {
+            if (arg0 === 1) {
+              v0 = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              v0 = 3;
+              const obj1 = { value: null, done: true };
+              obj1[0] = arg1;
+              return obj1;
+            } else {
+              let c4 = 1;
+              const HTTP = callback(530).HTTP;
+              const obj2 = { url: null, oldFormErrors: true, rejectWithError: false };
+              obj2[0] = c4.USER_GAME_RELATIONSHIP(callback, c1);
+              c5 = 3;
+              v0 = 1;
+              const obj3 = { value: null, done: false };
+              obj3[0] = HTTP.del(obj2);
+              return obj3;
+            }
+          } else {
+            if (2 === tmp8) {
+              c4 = 0;
+              v0(sendRequest);
+              v0 = 3;
+            } else if (arg0 === 1) {
+              v0 = 3;
+              throw arg1;
+            } else if (arg0 !== 2) {
+              dependencyMap();
+              c4 = 0;
+            }
+            c4 = 0;
+            v0 = 3;
+            obj = { value: null, done: true };
+            obj[0] = arg1;
+            return obj;
+          }
+        } catch (tmp25) {
+          sendRequest = tmp25;
+          if (tmp4 === c4) {
+            v0 = tmp2;
+            throw tmp25;
+          } else {
+            c5 = tmp;
+          }
+        }
+      }
+    })();
+    iter.next();
+    return iter;
+  });
+  const _deleteGameRelationship = tmp;
+  const apply = tmp.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
 }
 function _removeGameFriend() {
-  // CreateGeneratorClosureLongIndex (0x67)
-  const obj = callback(tmp);
-  return obj(...arguments);
+  const self = this;
+  const tmp = callback((arg0) => {
+    let closure_0 = arg0;
+    let c3 = 0;
+    let c4 = 0;
+    const iter = (function*(arg0) {
+      let c0;
+      let c1;
+      if (c4 === 2) {
+        c4 = 3;
+        HermesBuiltin.throwTypeError();
+      } else if (tmp4 === 3) {
+        if (arg0 === 1) {
+          throw arg1;
+        } else if (arg0 === 2) {
+          let obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
+        } else {
+          return { value: "HermesInternal", done: null };
+        }
+      } else {
+        try {
+          c4 = 2;
+          if (0 === c3) {
+            if (arg0 === 1) {
+              c4 = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              c4 = 3;
+              obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            } else {
+              let closure_2 = tmp5;
+              c1 = tmp2;
+              c0 = undefined;
+              c1 = undefined;
+              ({ userId: c0, applicationId: c1 } = c0);
+              c3 = 1;
+              c4 = 1;
+              return { value: "ct", done: null };
+            }
+          } else if (1 === tmp5) {
+            if (arg0 === 1) {
+              c4 = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              c4 = 3;
+              const obj1 = { value: null, done: true };
+              obj1[0] = arg1;
+              return obj1;
+            } else {
+              const obj2 = { userId: null, applicationId: null, onSuccess: null };
+              obj2[0] = c0;
+              obj2[1] = c1;
+              obj2[2] = function onSuccess() {
+                const AccessibilityAnnouncer = _undefined(tmp5[6]).AccessibilityAnnouncer;
+                const intl = _undefined(tmp5[4]).intl;
+                AccessibilityAnnouncer.announce(intl.string(_undefined(tmp5[4]).t.zRf8cO));
+              };
+              c3 = 2;
+              c4 = 1;
+              const obj3 = { value: null, done: false };
+              obj3[0] = callback(obj2);
+              return obj3;
+            }
+          } else if (arg0 === 1) {
+            c4 = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            c4 = 3;
+            obj = { value: null, done: true };
+            obj[0] = arg1;
+            return obj;
+          } else {
+            c4 = 3;
+            return { value: "HermesInternal", done: null };
+          }
+        } catch (tmp12) {
+          c4 = tmp;
+          throw tmp12;
+        }
+      }
+    })();
+    iter.next();
+    return iter;
+  });
+  const _removeGameFriend = tmp;
+  const apply = tmp.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
 }
 function _cancelGameFriendRequest() {
-  // CreateGeneratorClosureLongIndex (0x67)
-  const obj = callback(tmp);
-  return obj(...arguments);
+  const self = this;
+  const tmp = callback((arg0) => {
+    let closure_0 = arg0;
+    let c3 = 0;
+    let c4 = 0;
+    const iter = (function*(arg0) {
+      let c0;
+      let c1;
+      if (c4 === 2) {
+        c4 = 3;
+        HermesBuiltin.throwTypeError();
+      } else if (tmp4 === 3) {
+        if (arg0 === 1) {
+          throw arg1;
+        } else if (arg0 === 2) {
+          let obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
+        } else {
+          return { value: "HermesInternal", done: null };
+        }
+      } else {
+        try {
+          c4 = 2;
+          if (0 === c3) {
+            if (arg0 === 1) {
+              c4 = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              c4 = 3;
+              obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            } else {
+              let closure_2 = tmp5;
+              c1 = tmp2;
+              c0 = undefined;
+              c1 = undefined;
+              ({ userId: c0, applicationId: c1 } = c0);
+              c3 = 1;
+              c4 = 1;
+              return { value: "ct", done: null };
+            }
+          } else if (1 === tmp5) {
+            if (arg0 === 1) {
+              c4 = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              c4 = 3;
+              const obj1 = { value: null, done: true };
+              obj1[0] = arg1;
+              return obj1;
+            } else {
+              const obj2 = { userId: null, applicationId: null, onSuccess: null };
+              obj2[0] = c0;
+              obj2[1] = c1;
+              obj2[2] = function onSuccess() {
+                const AccessibilityAnnouncer = _undefined(tmp5[6]).AccessibilityAnnouncer;
+                const intl = _undefined(tmp5[4]).intl;
+                AccessibilityAnnouncer.announce(intl.string(_undefined(tmp5[4]).t.XMf21q));
+              };
+              c3 = 2;
+              c4 = 1;
+              const obj3 = { value: null, done: false };
+              obj3[0] = callback(obj2);
+              return obj3;
+            }
+          } else if (arg0 === 1) {
+            c4 = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            c4 = 3;
+            obj = { value: null, done: true };
+            obj[0] = arg1;
+            return obj;
+          } else {
+            c4 = 3;
+            return { value: "HermesInternal", done: null };
+          }
+        } catch (tmp12) {
+          c4 = tmp;
+          throw tmp12;
+        }
+      }
+    })();
+    iter.next();
+    return iter;
+  });
+  const _cancelGameFriendRequest = tmp;
+  const apply = tmp.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
 }
-({ Endpoints: closure_4, RelationshipTypes: closure_5 } = ME);
+({ Endpoints: c4, RelationshipTypes: c5 } = ME);
 const result = require("V6OrEarlierAPIError").fileFinishedImporting("modules/game_relationships/GameRelationshipActionCreators.tsx");
 
 export default {
   removeGameFriend(arg0) {
-    return _removeGameFriend(...arguments);
+    const self = this;
+    const apply = _removeGameFriend.apply;
+    if (typeof apply === "unknown") {
+      let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+    } else {
+      applyArgumentsResult = apply(self, arguments);
+    }
+    return applyArgumentsResult;
   },
-  acceptGameFriendRequest(userId) {
-    return (function addGameRelationship(onSuccess) {
-      let applicationId;
-      let type;
-      let userId;
-      onSuccess = onSuccess.onSuccess;
-      ({ userId, applicationId, type } = onSuccess);
-      const HTTP = outer1_0(outer1_2[5]).HTTP;
-      const obj = { url: outer1_4.USER_GAME_RELATIONSHIP(userId, applicationId), body: { type }, oldFormErrors: true, rejectWithError: false };
-      const putResult = HTTP.put({ url: outer1_4.USER_GAME_RELATIONSHIP(userId, applicationId), body: { type }, oldFormErrors: true, rejectWithError: false });
-      return HTTP.put({ url: outer1_4.USER_GAME_RELATIONSHIP(userId, applicationId), body: { type }, oldFormErrors: true, rejectWithError: false }).then(() => {
-        onSuccess();
-      }).catch((arg0) => {
-        outer2_6(arg0);
-        return Promise.reject(arg0);
-      });
-    })({
-      userId: userId.userId,
-      applicationId: userId.applicationId,
-      type: constants.FRIEND,
-      onSuccess() {
-        const AccessibilityAnnouncer = outer1_0(outer1_2[6]).AccessibilityAnnouncer;
-        const intl = outer1_0(outer1_2[4]).intl;
-        AccessibilityAnnouncer.announce(intl.string(outer1_0(outer1_2[4]).t.taJiuc));
+  acceptGameFriendRequest(arg0) {
+    let applicationId;
+    let userId;
+    function onSuccess(arg0) {
+
+    }
+    ({ userId, applicationId } = arg0);
+    const HTTP = onSuccess(530).HTTP;
+    let obj = { url: closure_4.USER_GAME_RELATIONSHIP(userId, applicationId), body: { type: constants.FRIEND }, oldFormErrors: true, rejectWithError: false };
+    const putResult = HTTP.put({ url: closure_4.USER_GAME_RELATIONSHIP(userId, applicationId), body: { type: constants.FRIEND }, oldFormErrors: true, rejectWithError: false });
+    return HTTP.put({ url: closure_4.USER_GAME_RELATIONSHIP(userId, applicationId), body: { type: constants.FRIEND }, oldFormErrors: true, rejectWithError: false }).then(() => {
+      const AccessibilityAnnouncer = onSuccess(outer1_2[6]).AccessibilityAnnouncer;
+      const intl = onSuccess(outer1_2[4]).intl;
+      AccessibilityAnnouncer.announce(intl.string(onSuccess(outer1_2[4]).t.taJiuc));
+    }).catch((arg0) => {
+      const aPIError = new onSuccess(4088).APIError(arg0);
+      let anyErrorMessage = aPIError.getAnyErrorMessage();
+      const obj = { title: null, body: null };
+      const intl = onSuccess(1236).intl;
+      obj[0] = intl.string(onSuccess(1236).t["328j/I"]);
+      if (null == anyErrorMessage) {
+        const intl2 = tmp(1236).intl;
+        anyErrorMessage = intl2.string(tmp(1236).t.fEptJP);
       }
+      obj[1] = anyErrorMessage;
+      callback(4528).show(obj);
+      return Promise.reject(arg0);
     });
   },
   cancelGameFriendRequest(arg0) {
-    return _cancelGameFriendRequest(...arguments);
+    const self = this;
+    const apply = _cancelGameFriendRequest.apply;
+    if (typeof apply === "unknown") {
+      let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+    } else {
+      applyArgumentsResult = apply(self, arguments);
+    }
+    return applyArgumentsResult;
   }
 };

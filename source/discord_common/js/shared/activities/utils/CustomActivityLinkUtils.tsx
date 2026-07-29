@@ -1,10 +1,10 @@
-// Module ID: 12259
-// Function ID: 95673
+// Module ID: 12283
+// Function ID: 12284
 // Name: CustomLinkType
-// Dependencies: [57, 2]
+// Dependencies: [32, 2]
 // Exports: decodeCustomActivityLink
 
-// Module 12259 (CustomLinkType)
+// Module 12283 (CustomLinkType)
 import _slicedToArray from "_slicedToArray";
 
 let obj = { MANAGED: 0, [0]: "MANAGED", QUICK: 1, [1]: "QUICK" };
@@ -15,8 +15,8 @@ export const decodeCustomActivityLink = function decodeCustomActivityLink(link_i
   if (null == link_id) {
     return null;
   } else {
-    const tmp6 = callback(link_id.split("-"), 2);
-    const first = tmp6[0];
+    const tmp2 = callback(link_id.split("-"), 2);
+    const first = tmp2[0];
     if ("0" === first) {
       let MANAGED = obj.MANAGED;
     } else {
@@ -25,11 +25,14 @@ export const decodeCustomActivityLink = function decodeCustomActivityLink(link_i
         MANAGED = obj.QUICK;
       }
     }
-    let tmp4 = null;
+    let tmp7 = null;
     if (null != MANAGED) {
-      obj = { type: MANAGED, encodedLinkId: link_id, decodedLinkId: tmp6[1] };
-      tmp4 = obj;
+      obj = { type: null, encodedLinkId: null, decodedLinkId: null };
+      obj[0] = MANAGED;
+      obj[1] = link_id;
+      obj[2] = tmp2[1];
+      tmp7 = obj;
     }
-    return tmp4;
+    return tmp7;
   }
 };

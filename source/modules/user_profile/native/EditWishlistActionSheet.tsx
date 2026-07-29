@@ -1,67 +1,65 @@
-// Module ID: 12174
-// Function ID: 95208
+// Module ID: 12198
+// Function ID: 12199
 // Name: exitingAnimation
-// Dependencies: [57, 31, 27, 4157, 8650, 8651, 1850, 5878, 8081, 5222, 33, 4165, 689, 4026, 4166, 566, 1557, 5497, 5517, 12170, 12171, 7865, 12152, 8656, 8084, 11673, 1212, 5223, 5536, 5537, 7656, 9749, 6661, 4124, 2]
+// Dependencies: [32, 19, 17, 4181, 8674, 8675, 1874, 5896, 8105, 5244, 21, 4189, 712, 4050, 4190, 589, 1581, 5515, 5535, 12194, 12195, 7888, 12176, 8680, 8108, 11697, 1236, 5245, 5554, 5555, 7679, 9771, 6682, 4148, 2]
 // Exports: default
 
-// Module 12174 (exitingAnimation)
-import _slicedToArray from "_slicedToArray";
-import WishlistItemCard from "WishlistItemCard";
-import get_ActivityIndicator from "BottomSheetModal";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_8 from "_isNativeReflectConstruct";
-import { getWishlistProductLines } from "_isNativeReflectConstruct";
-import closure_10 from "_isNativeReflectConstruct";
-import closure_11 from "_isNativeReflectConstruct";
+// Module 12198 (exitingAnimation)
+import IconButton from "IconButton";
+import useCardGridLayout from "useCardGridLayout";
+import get_ActivityIndicator from "context";
+import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
+import get from "get";
+import { getWishlistProductLines } from "fromServer";
+import mergeGuildAvatar from "mergeGuildAvatar";
+import createUserWidgetFromServer from "createUserWidgetFromServer";
 import { TrackUserProfileWishlistActions as closure_12 } from "USER_PROFILE_TOOLTIP_DELAY";
 import { ACTION_SHEET_MAX_WIDTH } from "ACTION_SHEET_START_HEIGHT_RATIO";
-import jsxProd from "TrashIcon";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import { LinearTransition } from "module_4026";
+import jsxProd from "apexExperiment";
+import createCacheKey from "createCacheKey";
+import { LinearTransition } from "module_4050";
 import module_300 from "module_300";
 import dampingResult from "module_100";
 
+let c5;
 let closure_14;
 let closure_15;
-let closure_5;
 let closure_6;
 const require = arg1;
-({ ActivityIndicator: closure_5, View: closure_6 } = get_ActivityIndicator);
+({ ActivityIndicator: c5, View: closure_6 } = get_ActivityIndicator);
 ({ jsx: closure_14, jsxs: closure_15 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { flex: 1, paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16 };
-_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
-let obj1 = { flex: 1, justifyContent: "center", alignItems: "center", paddingTop: require("_createForOfIteratorHelperLoose").space.PX_48 };
-_createForOfIteratorHelperLoose.loadingContainer = obj1;
-_createForOfIteratorHelperLoose.toggleRow = { marginBottom: require("_createForOfIteratorHelperLoose").space.PX_16 };
-_createForOfIteratorHelperLoose.itemsContainer = { alignSelf: "center", flexDirection: "row", flexWrap: "wrap", gap: 16 };
-_createForOfIteratorHelperLoose.itemWrapper = { position: "relative" };
-let obj2 = { marginBottom: require("_createForOfIteratorHelperLoose").space.PX_16 };
-_createForOfIteratorHelperLoose.deleteButton = { position: "absolute", top: require("_createForOfIteratorHelperLoose").space.PX_8, right: require("_createForOfIteratorHelperLoose").space.PX_8, zIndex: 1 };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-let obj3 = { position: "absolute", top: require("_createForOfIteratorHelperLoose").space.PX_8, right: require("_createForOfIteratorHelperLoose").space.PX_8, zIndex: 1 };
+createCacheKey = { container: null, loadingContainer: null, toggleRow: null, itemsContainer: null, itemWrapper: null, deleteButton: null };
+createCacheKey = { flex: 1, paddingHorizontal: require("Themes").space.PX_16 };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { flex: 1, justifyContent: "center", alignItems: "center", paddingTop: require("Themes").space.PX_48 };
+let obj1 = { flex: 1, justifyContent: "center", alignItems: "center", paddingTop: require("Themes").space.PX_48 };
+createCacheKey[2] = { marginBottom: require("Themes").space.PX_16 };
+createCacheKey[3] = { alignSelf: "center", flexDirection: "row", flexWrap: "wrap", gap: 16 };
+createCacheKey[4] = { position: "relative" };
+let obj2 = { marginBottom: require("Themes").space.PX_16 };
+createCacheKey[5] = { position: "absolute", top: require("Themes").space.PX_8, right: require("Themes").space.PX_8, zIndex: 1 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let obj3 = { position: "absolute", top: require("Themes").space.PX_8, right: require("Themes").space.PX_8, zIndex: 1 };
 const springifyResult = LinearTransition.springify();
 const massResult = LinearTransition.springify().mass(0.8);
-let closure_18 = { code: "function exitingAnimation_EditWishlistActionSheetTsx1(_values){const{withTiming}=this.__closure;return{animations:{opacity:withTiming(0,{duration:150}),transform:[{scale:withTiming(0.8,{duration:150})}]},initialValues:{opacity:1,transform:[{scale:1}]}};}" };
-let closure_19 = (() => {
-  function exitingAnimation() {
-    let obj = {};
-    obj = { opacity: outer1_0(outer1_2[14]).withTiming(0, { duration: 150 }) };
-    obj = {};
-    const obj3 = outer1_0(outer1_2[14]);
-    obj.scale = outer1_0(outer1_2[14]).withTiming(0.8, { duration: 150 });
-    const items = [obj];
-    obj.transform = items;
-    obj.animations = obj;
-    const items1 = [{ scale: 1 }];
-    obj.initialValues = { opacity: 1, transform: items1 };
-    return obj;
-  }
-  exitingAnimation.__closure = { withTiming: require(4166) /* withTiming */.withTiming };
-  exitingAnimation.__workletHash = 17293915965800;
-  exitingAnimation.__initData = closure_18;
-  return exitingAnimation;
-})();
+function exitingAnimation() {
+  let obj = { animations: null, initialValues: null };
+  obj = { opacity: null, transform: null };
+  obj[0] = require(4190) /* CONFIG_NEVER_ANIMATE_TIMING */.withTiming(0, { duration: 150 });
+  obj = { scale: null };
+  const obj3 = require(4190) /* CONFIG_NEVER_ANIMATE_TIMING */;
+  obj[0] = require(4190) /* CONFIG_NEVER_ANIMATE_TIMING */.withTiming(0.8, { duration: 150 });
+  const items = [obj];
+  obj[1] = items;
+  obj[0] = obj;
+  const items1 = [{ scale: 1 }];
+  obj[1] = { opacity: 1, transform: items1 };
+  return obj;
+}
+exitingAnimation.__closure = { withTiming: require("CONFIG_NEVER_ANIMATE_TIMING").withTiming };
+exitingAnimation.__workletHash = 17293915965800;
+exitingAnimation.__initData = { code: "function exitingAnimation_EditWishlistActionSheetTsx1(_values){const{withTiming}=this.__closure;return{animations:{opacity:withTiming(0,{duration:150}),transform:[{scale:withTiming(0.8,{duration:150})}]},initialValues:{opacity:1,transform:[{scale:1}]}};}" };
+let obj4 = { withTiming: require("CONFIG_NEVER_ANIMATE_TIMING").withTiming };
 let result = require("get ActivityIndicator").fileFinishedImporting("modules/user_profile/native/EditWishlistActionSheet.tsx");
 
 export default function EditWishlistActionSheet(wishlistId) {
@@ -70,6 +68,8 @@ export default function EditWishlistActionSheet(wishlistId) {
   wishlistId = wishlistId.wishlistId;
   const analyticsContext = wishlistId.analyticsContext;
   let analyticsLocations = wishlistId.analyticsLocations;
+  let dependencyMap;
+  let callback;
   analyticsLocations = undefined;
   c5 = undefined;
   let stateFromStores;
@@ -77,32 +77,33 @@ export default function EditWishlistActionSheet(wishlistId) {
   let first;
   let closure_9;
   let isEligibleForSocialLayerStorefrontMobilePurchasing;
-  let closure_11;
-  let tmp = _createForOfIteratorHelperLoose();
-  const dependencyMap = tmp;
-  let obj = wishlistId(566);
+  let createUserWidgetFromServer;
+  let tmp = createCacheKey();
+  dependencyMap = tmp;
+  let obj = wishlistId(589);
   let items = [stateFromStores2];
-  let callback = obj.useStateFromStores(items, () => stateFromStores2.useReducedMotion);
-  if (null == analyticsLocations) {
+  callback = obj.useStateFromStores(items, () => stateFromStores2.useReducedMotion);
+  if (analyticsLocations == null) {
     analyticsLocations = [];
   }
-  analyticsLocations = analyticsContext(5497)(analyticsLocations, analyticsContext(5517).USER_PROFILE_EDIT_WISHLIST_ACTION_SHEET).analyticsLocations;
+  analyticsLocations = analyticsContext(5515)(analyticsLocations, tmp4(5535).USER_PROFILE_EDIT_WISHLIST_ACTION_SHEET).analyticsLocations;
   obj = { maxWidth: ACTION_SHEET_MAX_WIDTH };
-  const tmp2 = analyticsContext(5497);
-  ({ cardWidth: c5, rowWidth } = analyticsContext(12170)(obj));
+  let tmp5 = analyticsContext(5515);
+  ({ cardWidth: c5, rowWidth } = analyticsContext(12194)(obj));
   if (null != rowWidth) {
-    obj = { width: rowWidth };
-    let tmp4 = obj;
+    obj = { width: null };
+    obj[0] = rowWidth;
+    let tmp7 = obj;
   }
-  let obj3 = wishlistId(566);
+  let tmp2Result = tmp2(589);
   const items1 = [first];
-  stateFromStores = obj3.useStateFromStores(items1, () => first.getWishlist(wishlistId));
-  let obj4 = wishlistId(566);
+  stateFromStores = tmp2Result.useStateFromStores(items1, () => first.getWishlist(wishlistId));
+  tmp2Result = tmp2(589);
   const items2 = [first];
-  const stateFromStores1 = obj4.useStateFromStores(items2, () => first.isFetching(wishlistId));
-  let obj5 = wishlistId(566);
-  const items3 = [isEligibleForSocialLayerStorefrontMobilePurchasing, closure_11];
-  stateFromStores2 = obj5.useStateFromStores(items3, () => {
+  const stateFromStores1 = tmp2Result.useStateFromStores(items2, () => first.isFetching(wishlistId));
+  let tmp6 = analyticsContext(12194)(obj);
+  const items3 = [isEligibleForSocialLayerStorefrontMobilePurchasing, createUserWidgetFromServer];
+  stateFromStores2 = wishlistId(589).useStateFromStores(items3, () => {
     const currentUser = isEligibleForSocialLayerStorefrontMobilePurchasing.getCurrentUser();
     let wishlistSettings = null;
     if (null != currentUser) {
@@ -110,153 +111,161 @@ export default function EditWishlistActionSheet(wishlistId) {
     }
     return wishlistSettings;
   });
-  let tmp9 = callback(analyticsLocations.useState(true), 2);
-  first = tmp9[0];
-  closure_9 = tmp9[1];
+  let obj6 = analyticsLocations;
+  const tmp11 = callback(analyticsLocations.useState(true), 2);
+  first = tmp11[0];
+  closure_9 = tmp11[1];
   let visibility;
-  if (null != stateFromStores2) {
+  if (stateFromStores2 != null) {
     visibility = stateFromStores2.visibility;
   }
   const items4 = [visibility];
   const effect = analyticsLocations.useEffect(() => {
     let visibility;
-    if (null != stateFromStores2) {
-      visibility = stateFromStores2.visibility;
+    if (stateFromStores2 != null) {
+      visibility = tmp.visibility;
     }
     if (null != visibility) {
-      callback(stateFromStores2.visibility === wishlistId(tmp[20]).WishlistVisibility.PUBLIC);
+      callback(tmp.visibility === wishlistId(_undefined[20]).WishlistVisibility.PUBLIC);
     }
   }, items4);
-  let obj6 = wishlistId(7865);
-  isEligibleForSocialLayerStorefrontMobilePurchasing = obj6.useIsEligibleForSocialLayerStorefrontMobilePurchasing({ location: "edit_wishlist_action_sheet" });
+  const tmp2Result1 = wishlistId(589);
+  isEligibleForSocialLayerStorefrontMobilePurchasing = wishlistId(7888).useIsEligibleForSocialLayerStorefrontMobilePurchasing({ location: "edit_wishlist_action_sheet" });
   const items5 = [stateFromStores, isEligibleForSocialLayerStorefrontMobilePurchasing];
-  const memo = analyticsLocations.useMemo(() => {
+  const memo = obj6.useMemo(() => {
     let found;
-    if (null != stateFromStores) {
+    if (stateFromStores != null) {
       const items = stateFromStores.items;
       found = items.filter((sku) => {
-        let obj = wishlistId(table[22]);
-        obj = { isWishlistOwner: true, isSocialLayerStorefrontMobilePurchasingEnabled: outer1_10 };
+        let obj = outer1_0(outer1_2[22]);
+        obj = { isWishlistOwner: true, isSocialLayerStorefrontMobilePurchasingEnabled: mergeGuildAvatar };
         return obj.isEligibleWishlistItemOnMobile(sku, obj);
       });
     }
-    if (null == found) {
+    if (found == null) {
       found = [];
     }
     return found;
   }, items5);
   const items6 = [wishlistId, first, stateFromStores, analyticsContext, analyticsLocations];
   const items7 = [wishlistId, analyticsLocations];
-  callback = analyticsLocations.useCallback(() => {
-    const WishlistVisibility = wishlistId(tmp[20]).WishlistVisibility;
-    tmp = first ? WishlistVisibility.PRIVATE : WishlistVisibility.PUBLIC;
+  callback = obj6.useCallback(() => {
+    const WishlistVisibility = wishlistId(_undefined[20]).WishlistVisibility;
     callback(!first);
-    let obj = analyticsContext(tmp[23]);
-    const result = obj.updateWishlistVisibility(wishlistId, tmp);
+    let obj = analyticsContext(_undefined[23]);
+    const result = obj.updateWishlistVisibility(wishlistId, first ? WishlistVisibility.PRIVATE : WishlistVisibility.PUBLIC);
     obj = {};
     const merged = Object.assign(analyticsContext);
-    obj["analyticsLocations"] = analyticsLocations;
-    obj["wishlistId"] = wishlistId;
-    obj["action"] = first ? outer1_12.WISHLIST_TOGGLE_PRIVATE : outer1_12.WISHLIST_TOGGLE_PUBLIC;
-    let tmp6;
+    obj.analyticsLocations = analyticsLocations;
+    obj.wishlistId = wishlistId;
+    obj.action = first ? outer1_12.WISHLIST_TOGGLE_PRIVATE : outer1_12.WISHLIST_TOGGLE_PUBLIC;
+    let tmp8;
     if (null != stateFromStores) {
-      tmp6 = callback(stateFromStores);
+      tmp8 = callback(tmp7);
     }
-    obj["productLines"] = tmp6;
-    const result1 = wishlistId(tmp[24]).trackUserProfileWishlistAction(obj);
+    obj.productLines = tmp8;
+    const result1 = wishlistId(_undefined[24]).trackUserProfileWishlistAction(obj);
   }, items6);
-  closure_11 = analyticsLocations.useCallback((arg0) => {
-    const result = analyticsContext(tmp[23]).removeSkuFromWishlist(wishlistId, arg0, analyticsLocations);
+  createUserWidgetFromServer = obj6.useCallback((outer1_1) => {
+    const result = analyticsContext(_undefined[23]).removeSkuFromWishlist(wishlistId, outer1_1, analyticsLocations);
   }, items7);
-  let obj1 = { scrollable: true, startExpanded: true };
-  const tmp3 = analyticsContext(12170)(obj);
-  let intl = wishlistId(1212).intl;
-  obj1.title = intl.string(wishlistId(1212).t["OEgx/4"]);
-  let obj2 = { contentContainerStyle: { paddingBottom: analyticsContext(1557)().bottom } };
-  obj3 = { style: tmp.container };
-  obj4 = { style: tmp.toggleRow };
-  obj5 = { hasIcons: false };
-  obj6 = {};
-  let intl2 = wishlistId(1212).intl;
-  obj6.label = intl2.string(wishlistId(1212).t.b2nFyA);
-  const intl3 = wishlistId(1212).intl;
-  obj6.subLabel = intl3.string(wishlistId(1212).t.dw58pE);
-  obj6.value = first;
-  obj6.onValueChange = callback;
-  obj5.children = callback2(wishlistId(5537).TableSwitchRow, obj6);
-  obj4.children = callback2(wishlistId(5536).TableRowGroup, obj5);
+  let obj1 = { scrollable: true, startExpanded: true, title: null, children: null };
+  const tmp2Result2 = wishlistId(7888);
+  let intl = tmp2(1236).intl;
+  obj1[2] = intl.string(wishlistId(1236).t["OEgx/4"]);
+  let obj2 = { contentContainerStyle: { paddingBottom: analyticsContext(1581)().bottom }, children: null };
+  let obj3 = { style: tmp.container, children: null };
+  const obj4 = { style: tmp.toggleRow, children: null };
+  const obj5 = { hasIcons: false, children: null };
+  obj6 = { label: null, subLabel: null, value: null, onValueChange: null };
+  let intl2 = tmp2(1236).intl;
+  obj6[0] = intl2.string(wishlistId(1236).t.b2nFyA);
+  const intl3 = tmp2(1236).intl;
+  obj6[1] = intl3.string(wishlistId(1236).t.dw58pE);
+  obj6[2] = first;
+  obj6[3] = callback;
+  obj5[1] = callback2(wishlistId(5555).TableSwitchRow, obj6);
+  obj4[1] = callback2(wishlistId(5554).TableRowGroup, obj5);
   const items8 = [callback2(stateFromStores, obj4), ];
   if (stateFromStores1) {
     if (null == stateFromStores) {
-      const obj7 = { style: tmp.loadingContainer, children: callback2(c5, {}) };
-      let tmp19 = callback2(stateFromStores, obj7);
+      const obj7 = { style: null, children: null };
+      obj7[0] = tmp.loadingContainer;
+      obj7[1] = tmp17(c5, {});
+      let tmp17Result = tmp17(tmp20, obj7);
     }
-    items8[1] = tmp19;
-    obj3.children = items8;
-    obj2.children = closure_15(stateFromStores, obj3);
-    obj1.children = tmp15(wishlistId(5223).BottomSheetScrollView, obj2);
-    return tmp15(tmp16, obj1);
+    items8[1] = tmp17Result;
+    obj3[1] = items8;
+    obj2[1] = closure_15(tmp20, obj3);
+    obj1[3] = tmp17(tmp2(5245).BottomSheetScrollView, obj2);
+    return tmp17(tmp4Result, obj1);
   }
-  tmp19 = null;
+  tmp17Result = null;
   if (0 !== memo.length) {
-    const obj8 = {};
-    const items9 = [tmp.itemsContainer, tmp4];
-    obj8.style = items9;
-    obj8.children = memo.map((sku) => {
+    const obj8 = { style: null, children: null };
+    const items9 = [tmp.itemsContainer, tmp7];
+    obj8[0] = items9;
+    obj8[1] = memo.map((sku) => {
       let skuId = sku;
       let closure_0 = sku;
       if (null == sku.sku) {
         return null;
       } else {
-        let obj = { style: outer1_15.itemWrapper };
+        let str = _undefined;
+        let obj = { style: null, exiting: null, layout: null, children: null };
+        obj[0] = _undefined.itemWrapper;
+        let tmp6;
+        if (!IconButton) {
+          tmp6 = outer1_18;
+        }
+        obj[1] = tmp6;
         let tmp7;
-        if (!_slicedToArray) {
-          tmp7 = outer1_19;
+        if (!tmp5) {
+          tmp7 = outer1_17;
         }
-        obj.exiting = tmp7;
-        let tmp9;
-        if (!_slicedToArray) {
-          tmp9 = outer1_17;
-        }
-        obj.layout = tmp9;
-        obj = {};
-        ({ sku: obj2.sku, isOwned: obj2.isOwned } = skuId);
-        obj.size = c5;
-        obj.accessibilityHidden = true;
-        const items = [outer1_14(analyticsContext(outer1_15[31]), obj), ];
-        obj = { style: outer1_15.deleteButton };
-        let obj1 = { variant: "primary-overlay", size: "sm" };
-        const obj2 = { size: "sm", color: analyticsContext(outer1_15[12]).colors.ICON_FEEDBACK_CRITICAL };
-        obj1.icon = outer1_14(wishlistId(outer1_15[33]).TrashIcon, obj2);
-        obj1.onPress = function onPress() {
+        obj[2] = tmp7;
+        obj = { sku: null, isOwned: null, size: null, accessibilityHidden: true };
+        ({ sku: obj2[0], isOwned: obj2[1] } = skuId);
+        obj[2] = c5;
+        const items = [outer1_14(analyticsContext(str[31]), obj), ];
+        obj = { style: null, children: null };
+        obj[0] = _undefined.deleteButton;
+        let stringResult = wishlistId;
+        let obj1 = { variant: "primary-overlay", size: "sm", icon: null, onPress: null, accessibilityLabel: null };
+        const obj2 = { size: "sm", color: null };
+        obj2[1] = analyticsContext(str[12]).colors.ICON_FEEDBACK_CRITICAL;
+        obj1[2] = outer1_14(wishlistId(str[33]).TrashIcon, obj2);
+        obj1[3] = function onPress() {
           return outer1_11(sku.skuId);
         };
-        let stringResult = wishlistId;
-        let str2 = 26;
-        const intl = wishlistId(tmp[26]).intl;
-        const obj3 = { productName: skuId.skuName };
-        const formatToPlainStringResult = intl.formatToPlainString(wishlistId(outer1_15[26]).t["IBBF8/"], obj3);
+        const intl = wishlistId(str[26]).intl;
+        const obj3 = { productName: null };
+        obj3[0] = skuId.skuName;
+        const formatToPlainStringResult = intl.formatToPlainString(wishlistId(str[26]).t["IBBF8/"], obj3);
         if (skuId.isOwned) {
-          const intl2 = stringResult(tmp18[str2]).intl;
-          stringResult = intl2.string(stringResult(tmp18[str2]).t["6cfuDj"]);
+          const intl2 = stringResult(str[26]).intl;
+          stringResult = intl2.string(stringResult(str[26]).t["6cfuDj"]);
           const _HermesInternal = HermesInternal;
-          str2 = ", ";
+          str = "";
           let combined = "" + formatToPlainStringResult + ", " + stringResult;
         } else {
           combined = formatToPlainStringResult;
         }
-        obj1.accessibilityLabel = combined;
-        obj1 = tmp10(wishlistId(tmp[32]).IconButton, obj1);
-        obj.children = obj1;
-        obj = tmp10(stateFromStores, obj);
+        obj1[4] = combined;
+        obj1 = tmp8(wishlistId(str[32]).IconButton, obj1);
+        obj[1] = obj1;
+        obj = tmp8(stateFromStores, obj);
         items[1] = obj;
-        obj.children = items;
+        obj[3] = items;
         skuId = skuId.skuId;
-        outer1_15(analyticsContext(outer1_15[30]), obj, skuId);
-        const tmp14 = stateFromStores;
-        const tmp4 = analyticsContext(outer1_15[30]);
+        outer1_15(analyticsContext(_undefined[30]), obj, skuId);
+        const tmp = outer1_15;
+        const tmp10 = stateFromStores;
+        const tmp3 = analyticsContext(_undefined[30]);
+        const tmp4 = _undefined;
+        tmp5 = IconButton;
       }
     });
-    tmp19 = callback2(stateFromStores, obj8);
+    tmp17Result = tmp17(tmp20, obj8);
   }
 };

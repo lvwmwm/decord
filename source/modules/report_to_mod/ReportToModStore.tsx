@@ -1,151 +1,96 @@
-// Module ID: 9528
-// Function ID: 74127
-// Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 3982, 566, 686, 2]
+// Module ID: 9552
+// Function ID: 9553
+// Name: handleSelectedGuildChange
+// Dependencies: [4006, 589, 709, 2]
 
-// Module 9528 (_isNativeReflectConstruct)
-import initialize from "initialize";
-import dispatcher from "dispatcher";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 9552 (handleSelectedGuildChange)
+import handleConnectionOpen from "handleConnectionOpen";
+import { PersistedStore } from "initialize";
 
-function _isNativeReflectConstruct() {
-  let initialize = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return initialize;
-  }
-  const result = _isNativeReflectConstruct();
-}
 function handleSelectedGuildChange() {
   lastSelectedGuildId = lastSelectedGuildId.getLastSelectedGuildId();
-  if (lastSelectedGuildId !== c6) {
-    let tmp2 = null;
-    let c7 = null;
-    if (null != lastSelectedGuildId) {
-      tmp2 = lastSelectedGuildId;
+  if (lastSelectedGuildId !== lastSelectedGuildId) {
+    let c2 = null;
+    if (lastSelectedGuildId == null) {
+      lastSelectedGuildId = null;
     }
-    c6 = tmp2;
   }
 }
-let c6 = null;
-let c7 = null;
-let closure_8 = { reportedMessages: {} };
-let tmp2 = ((PersistedStore) => {
-  class ReportToModStore {
-    constructor() {
-      self = this;
-      tmp = ReportToModStore(this, ReportToModStore);
-      obj = outer1_3(ReportToModStore);
-      tmp2 = outer1_2;
-      if (outer1_9()) {
-        tmp6 = globalThis;
-        _Reflect = Reflect;
-        tmp7 = outer1_3;
-        tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, outer1_3(self).constructor);
-      } else {
-        tmp3 = arguments;
-        tmp4 = arguments;
-        constructResult = obj(...arguments);
-      }
-      return tmp2(self, constructResult);
-    }
+let c1 = null;
+let c2 = null;
+let closure_3 = { reportedMessages: {} };
+class ReportToModStore extends PersistedStore {
+}
+const prototype = ReportToModStore.prototype;
+prototype["initialize"] = function initialize(reportedMessages) {
+  if (null != reportedMessages) {
+    const _Object = Object;
+    const _Object2 = Object;
+    const entries = Object.entries(reportedMessages.reportedMessages);
+    closure_3.reportedMessages = Object.fromEntries(entries.map((arg0) => {
+      let tmp;
+      let tmp2;
+      [tmp, tmp2] = arg0;
+      const items = [tmp, new Set(tmp2)];
+      return items;
+    }));
   }
-  callback2(ReportToModStore, PersistedStore);
-  let obj = {
-    key: "initialize",
-    value(reportedMessages) {
-      const self = this;
-      if (null != reportedMessages) {
-        const _Object = Object;
-        const _Object2 = Object;
-        const entries = Object.entries(reportedMessages.reportedMessages);
-        outer1_8.reportedMessages = Object.fromEntries(entries.map((arg0) => {
-          let tmp;
-          let tmp2;
-          [tmp, tmp2] = arg0;
-          const items = [tmp, new Set(tmp2)];
-          return items;
-        }));
-      }
-      let items = [outer1_5];
-      self.syncWith(items, outer1_10);
-    }
-  };
-  let items = [obj, , , , ];
-  obj = {
-    key: "getState",
-    value() {
-      return outer1_8;
-    }
-  };
-  items[1] = obj;
-  obj = {
-    key: "isUserBanned",
-    value(arg0) {
-      let value;
-      if (null != outer1_7) {
-        value = outer1_7.get(arg0);
-      }
-      let tmp3 = null;
-      if (null != value) {
-        tmp3 = value;
-      }
-      return tmp3;
-    }
-  };
-  items[2] = obj;
-  items[3] = {
-    key: "getReportedMessages",
-    value() {
-      return outer1_8.reportedMessages;
-    }
-  };
-  items[4] = {
-    key: "hasReportedMessage",
-    value(arg0, arg1) {
-      let hasItem;
-      if (null != outer1_8.reportedMessages[arg0]) {
-        hasItem = obj.has(arg1);
-      }
-      return null != hasItem && hasItem;
-    }
-  };
-  return callback(ReportToModStore, items);
-})(require("initialize").PersistedStore);
-tmp2.displayName = "ReportToModStore";
-tmp2.persistKey = "ReportToModStore";
+  let items = [handleConnectionOpen];
+  this.syncWith(items, handleSelectedGuildChange);
+};
+prototype["getState"] = function getState() {
+  return closure_3;
+};
+prototype["isUserBanned"] = function isUserBanned(arg0) {
+  let value;
+  if (c2 != null) {
+    value = c2.get(arg0);
+  }
+  if (value == null) {
+    value = null;
+  }
+  return value;
+};
+prototype["getReportedMessages"] = function getReportedMessages() {
+  return closure_3.reportedMessages;
+};
+prototype["hasReportedMessage"] = function hasReportedMessage(channel_id, id) {
+  let flag;
+  if (closure_3.reportedMessages[channel_id] != null) {
+    flag = obj.has(id);
+  }
+  if (flag == null) {
+    flag = false;
+  }
+  return flag;
+};
+ReportToModStore.displayName = "ReportToModStore";
+ReportToModStore.persistKey = "ReportToModStore";
 let items = [
   (reportedMessages) => {
-    const obj = {};
     reportedMessages = undefined;
-    if (null != reportedMessages) {
+    if (reportedMessages != null) {
       reportedMessages = reportedMessages.reportedMessages;
     }
-    if (null == reportedMessages) {
+    if (reportedMessages == null) {
       reportedMessages = {};
     }
-    obj.reportedMessages = reportedMessages;
-    return obj;
+    return { reportedMessages };
   }
 ];
-tmp2.migrations = items;
-tmp2 = new tmp2(require("dispatcher"), {
+ReportToModStore.migrations = items;
+const reportToModStore = new ReportToModStore(require("dispatcher"), {
   REPORT_TO_MOD_REPORT_MESSAGE_SUCCESS: function handleMessageReportSuccess(channelId) {
     channelId = channelId.channelId;
-    if (null == closure_8.reportedMessages[channelId]) {
+    if (null == closure_3.reportedMessages[channelId]) {
       const _Set = Set;
       const set = new Set();
-      closure_8.reportedMessages[channelId] = set;
+      tmp.reportedMessages[channelId] = set;
     }
-    closure_8.reportedMessages[channelId].add(channelId.messageId);
+    closure_3.reportedMessages[channelId].add(channelId.messageId);
   },
   GUILD_BAN_ADD: function handleGuildBanAdd(guildId) {
-    let tmp = guildId.guildId === c6;
+    let tmp = guildId.guildId === c1;
     if (tmp) {
       tmp = null != _null;
     }
@@ -154,7 +99,7 @@ tmp2 = new tmp2(require("dispatcher"), {
     }
   },
   GUILD_BAN_REMOVE: function handleGuildBanRemove(guildId) {
-    let tmp = guildId.guildId === c6;
+    let tmp = guildId.guildId === c1;
     if (tmp) {
       tmp = null != _null;
     }
@@ -167,46 +112,44 @@ tmp2 = new tmp2(require("dispatcher"), {
     let userIds;
     ({ bans, userIds } = guildId);
     let set;
-    if (guildId.guildId === c6) {
+    if (guildId.guildId === c1) {
       const _Set = Set;
       set = new Set(bans.map((user) => {
         user = user.user;
         let id;
-        if (null != user) {
+        if (user != null) {
           id = user.id;
         }
         return id;
       }));
-      let _Set2 = Set;
-      if (null == userIds) {
+      if (userIds == null) {
         userIds = [];
       }
-      const prototype = _Set2.prototype;
-      _Set2 = new _Set2(userIds);
-      const found = Array.from(_Set2).filter((arg0) => !set.has(arg0));
+      const set1 = new Set(userIds);
+      const found = Array.from(set1).filter((arg0) => !set.has(arg0));
       if (null == map) {
         const _Map = Map;
         map = new Map();
       }
       const item = set.forEach((arg0) => {
-        if (null != map) {
+        if (map != null) {
           const result = map.set(arg0, true);
         }
       });
       const item1 = found.forEach((arg0) => {
-        if (null != map) {
+        if (map != null) {
           const result = map.set(arg0, false);
         }
       });
-      const arr = Array.from(_Set2);
+      const arr = Array.from(set1);
     }
   },
   LOGOUT: function handleLogout() {
-    let c6 = null;
-    let c7 = null;
-    closure_8.reportedMessages = {};
+    let c1 = null;
+    let c2 = null;
+    closure_3.reportedMessages = {};
   }
 });
-let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/report_to_mod/ReportToModStore.tsx");
+let result = require("dispatcher").fileFinishedImporting("modules/report_to_mod/ReportToModStore.tsx");
 
-export default tmp2;
+export default reportToModStore;

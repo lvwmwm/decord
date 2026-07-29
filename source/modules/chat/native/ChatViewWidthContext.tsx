@@ -1,12 +1,12 @@
-// Module ID: 10867
-// Function ID: 84086
+// Module ID: 10891
+// Function ID: 10892
 // Name: context
-// Dependencies: [31, 2]
+// Dependencies: [19, 2]
 
-// Module 10867 (context)
-import importAllResult from "result";
+// Module 10891 (context)
+import importAllResult from "noop";
 
-const context = require("result").createContext(null);
+const context = require("noop").createContext(null);
 const result = require("set").fileFinishedImporting("modules/chat/native/ChatViewWidthContext.tsx");
 
 export default context;

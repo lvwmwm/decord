@@ -1,19 +1,19 @@
-// Module ID: 9480
-// Function ID: 73789
+// Module ID: 9504
+// Function ID: 9505
 // Name: handleMessagesTapURLLink
-// Dependencies: [5679, 4202, 7696, 9481, 1858, 1348, 4150, 4384, 1850, 653, 1455, 1355, 5626, 1211, 9485, 4146, 6002, 9486, 8462, 8456, 8176, 9487, 8335, 4133, 8429, 1935, 4979, 4344, 9489, 9079, 9490, 5695, 5517, 7988, 1555, 9491, 4395, 1198, 7750, 9494, 9517, 2]
+// Dependencies: [5697, 4226, 7719, 9505, 1882, 1372, 4174, 4407, 1874, 676, 1479, 1379, 5644, 1235, 9509, 4170, 6020, 9510, 8486, 8480, 8200, 9511, 8359, 4157, 8453, 1959, 5001, 4369, 9513, 9103, 9514, 5713, 5535, 8013, 1579, 9515, 4418, 1222, 7773, 9518, 9541, 2]
 // Exports: handleMessagesTapLink
 
-// Module 9480 (handleMessagesTapURLLink)
-import { getSection } from "_isNativeReflectConstruct";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_5 from "_isNativeReflectConstruct";
-import closure_6 from "_isNativeReflectConstruct";
-import closure_7 from "_isNativeReflectConstruct";
-import closure_8 from "_isNativeReflectConstruct";
-import closure_9 from "_isNativeReflectConstruct";
-import closure_10 from "_isNativeReflectConstruct";
-import closure_11 from "_isNativeReflectConstruct";
+// Module 9504 (handleMessagesTapURLLink)
+import { getSection } from "getIndexKey";
+import addApplication from "addApplication";
+import handleMessageSendFailedAutomod from "handleMessageSendFailedAutomod";
+import handleQuickSwitcherUpdate from "handleQuickSwitcherUpdate";
+import createdAt from "createdAt";
+import ensureGuildLoaded from "ensureGuildLoaded";
+import updateInvite from "updateInvite";
+import reinjectEphemerals from "reinjectEphemerals";
+import mergeGuildAvatar from "mergeGuildAvatar";
 import ME from "ME";
 import { AppLauncherRouteName } from "APP_LAUNCHER_BUILT_IN_SECTION_ICON";
 import { StaticChannelRoute } from "set";
@@ -21,8 +21,8 @@ import { NotificationTypes } from "str2";
 import { OpenThreadAnalyticsLocations as closure_18 } from "AbortCodes";
 
 let closure_12;
-let closure_13;
 let closure_14;
+let map1;
 function handleMessagesTapURLLink(data, channelId) {
   let flag = null != data.url;
   if (flag) {
@@ -32,370 +32,113 @@ function handleMessagesTapURLLink(data, channelId) {
     const node = data.node;
     let flag2 = false;
     if (null != node) {
-      let obj = require(9485) /* isLinkTrusted */;
+      let obj = require(9509) /* isLinkTrusted */;
       flag2 = false;
       if (obj.isLinkTrusted(node)) {
-        const payload = importDefault(4146)(tmp).payload;
+        const payload = importDefault(4170)(tmp).payload;
         flag2 = false;
-        if (payload.type === constants2.INVITE) {
+        if (payload.type === constants.INVITE) {
           flag2 = false;
           if (null != payload.inviteCode) {
             invite = invite.getInvite(payload.inviteCode);
-            let num3 = null == invite;
-            if (!num3) {
-              let obj1 = require(6002) /* isGroupDMInvite */;
-              num3 = !obj1.isGuildScheduledEventInviteEmbed(invite);
+            let num = null == invite;
+            if (!num) {
+              num = !tmp2(6020).isGuildScheduledEventInviteEmbed(invite);
+              const tmp2Result = tmp2(6020);
             }
-            if (!num3) {
-              importDefault(9486)(invite);
-              num3 = 0;
+            if (!num) {
+              tmp4(9510)(invite);
+              num = 0;
             }
-            flag2 = !num3;
+            flag2 = !num;
           }
         }
+        tmp4 = importDefault;
       }
+      tmp2 = require;
     }
     if (!flag2) {
-      const payload2 = importDefault(4146)(data.url).payload;
+      const payload2 = importDefault(4170)(data.url).payload;
       let flag3 = false;
-      if (payload2.type === constants2.GAME_PROFILE) {
+      if (payload2.type === constants.GAME_PROFILE) {
         const gameId = payload2.gameId;
-        let tmp17;
+        let tmp13;
         if (null != channelId) {
           if (null != data.messageId) {
-            const message = message2.getMessage(channelId, data.messageId);
+            message = message.getMessage(channelId, data.messageId);
             let id;
-            if (null != message) {
+            if (message != null) {
               id = message.author.id;
             }
-            tmp17 = id;
+            tmp13 = id;
           }
         }
-        obj = { gameId, source: require(8462) /* GameProfileEmbedAction */.GameProfileSources.Deeplink, sourceUserId: tmp17 };
-        obj = { shouldOpenGameProfile: true, gameId };
-        obj.gameProfileModalChecks = obj;
-        require(8456) /* clearGameProfilePendingReturn */.default.openGameProfileModal(obj);
+        obj = { gameId: null, source: null, sourceUserId: null, gameProfileModalChecks: null };
+        obj[0] = gameId;
+        obj[1] = require(8486) /* GameProfileEmbedAction */.GameProfileSources.Deeplink;
+        obj[2] = tmp13;
+        obj = { shouldOpenGameProfile: true, gameId: null };
+        obj[1] = gameId;
+        obj[3] = obj;
+        require(8480).default.openGameProfileModal(obj);
         flag3 = true;
-        const _default = require(8456) /* clearGameProfilePendingReturn */.default;
+        const _default = require(8480).default;
       }
       flag2 = flag3;
     }
     flag = true;
     if (!flag2) {
-      obj1 = { href: data.url };
+      const obj1 = { href: null, trusted: null, messageId: null, channelId: null };
+      obj1[0] = data.url;
       let isLinkTrustedResult = null != data.node;
       if (isLinkTrustedResult) {
-        isLinkTrustedResult = require(9485) /* isLinkTrusted */.isLinkTrusted(data.node);
-        const obj7 = require(9485) /* isLinkTrusted */;
+        isLinkTrustedResult = tmp19(9509).isLinkTrusted(data.node);
+        const tmp19Result = tmp19(9509);
       }
-      obj1.trusted = isLinkTrustedResult;
-      obj1.messageId = data.messageId;
-      obj1.channelId = channelId;
-      require(8176) /* isLinkTrusted */.handleClick(obj1);
+      obj1[1] = isLinkTrustedResult;
+      obj1[2] = data.messageId;
+      obj1[3] = channelId;
+      require(8200) /* isLinkTrusted */.handleClick(obj1);
       flag = true;
-      const obj5 = require(8176) /* isLinkTrusted */;
+      const obj5 = require(8200) /* isLinkTrusted */;
+      tmp19 = require;
     }
   }
   return flag;
 }
-({ AnalyticsLocations: closure_12, LinkingTypes: closure_13, Routes: closure_14 } = ME);
-let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/messages/native/handlers/handleMessagesTapLink.tsx");
+({ AnalyticsLocations: closure_12, LinkingTypes: map1, Routes: closure_14 } = ME);
+const result = require("handleMessageSendFailedAutomod").fileFinishedImporting("modules/messages/native/handlers/handleMessagesTapLink.tsx");
 
 export { handleMessagesTapURLLink };
 export const handleMessagesTapLink = function handleMessagesTapLink(tapLinkData) {
   let chatInputRef;
+  let handleTransitionToThread;
   let message;
-  let message2;
   let messageChannel;
-  let notificationType;
-  ({ chatInputRef, message, messageChannel } = tapLinkData);
+  ({ chatInputRef, handleTransitionToThread, message, messageChannel } = tapLinkData);
   const data = tapLinkData.tapLinkData.data;
   if (true === tapLinkData.allowWithinModal) {
     let id;
-    if (null != messageChannel) {
+    if (messageChannel != null) {
       id = messageChannel.id;
     }
-    if (!tmp5(data, id)) {
+    if (!tmp4(data, id)) {
       if (null != data.action) {
         const action = data.action;
-        if ("bindUserMenu" === action) {
-          let openLazyResult = importDefault;
-          openLazyResult = dependencyMap;
-          let obj = {};
-          ({ userId: obj30.userId, messageChannelId: obj30.channelId, messageId: obj30.messageId } = data);
-          openLazyResult = importDefault(8335)(obj);
-        } else if ("bindGuildMenu" === action) {
-          if (null != data.messageReference) {
-            let guild_id = data.messageReference.guild_id;
-            if (null != guild_id) {
-              openLazyResult = importDefault;
-              openLazyResult = dependencyMap;
-              openLazyResult = require;
-              openLazyResult = globalThis;
-              const _HermesInternal = HermesInternal;
-              openLazyResult = require(1935) /* maybeLoadBundle */(8429, dependencyMap.paths);
-              obj = { guildId: guild_id };
-              openLazyResult = importDefault(4133).openLazy(openLazyResult, "GuildProfileActionSheet:" + guild_id, obj);
-              const obj28 = importDefault(4133);
+        if (chatInputRef != null) {
+          const current = chatInputRef.current;
+          if (current != null) {
+            let flag = data.addSpace;
+            if (flag == null) {
+              flag = true;
             }
-          }
-        } else if ("bindJoinStream" === action) {
-          const stream = data.stream;
-          if (null != stream) {
-            openLazyResult = importDefault;
-            openLazyResult = dependencyMap;
-            openLazyResult = importDefault(4979).selectVoiceChannel(stream.channelId);
-            openLazyResult = require;
-            const obj26 = importDefault(4979);
-            openLazyResult = require(4344) /* isVoiceChannelFull */.watchStreamAndTransitionToStream(stream);
-            const obj27 = require(4344) /* isVoiceChannelFull */;
-          }
-        } else if ("bindOpenPins" === action) {
-          openLazyResult = importDefault;
-          openLazyResult = dependencyMap;
-          openLazyResult = importDefault(9489)(data.messageChannelId, "pinned-message-system-message");
-        } else if ("bindOpenGdmCustomizeActionSheet" === action) {
-          let obj1 = { channelId: data.messageChannelId };
-          openLazyResult = importDefault(9079)(obj1);
-        } else if ("bindDismissMessage" === action) {
-          const message3 = data.message;
-          let id1;
-          if (null != message3) {
-            id1 = message3.id;
-          }
-          message = message.getMessage(id1);
-          if (null != message) {
-            if (message.isBlockedEdit) {
-              const message4 = data.message;
-              let id2;
-              if (null != message4) {
-                id2 = message4.id;
-              }
-              const result = require(9490) /* removeAutomodMessageNotice */.removeAutomodMessageNotice(id2);
-              const obj24 = require(9490) /* removeAutomodMessageNotice */;
-            }
-          }
-          const result1 = importDefault(5695).dismissAutomatedMessage(data.message);
-          const obj23 = importDefault(5695);
-        } else if ("bindTapUsername" === action) {
-          let obj2 = {};
-          ({ userId: obj22.userId, messageChannelId: obj22.channelId, messageId: obj22.messageId } = data);
-          const items = [importDefault(5517).USERNAME];
-          obj2.sourceAnalyticsLocations = items;
-          importDefault(8335)(obj2);
-          const tmp86 = importDefault(8335);
-        } else if ("bindTapCommandName" === action) {
-          let interaction;
-          if (null != message) {
-            interaction = message.interaction;
-          }
-          if (null != interaction) {
-            if (null != messageChannel) {
-              openLazyResult = user;
-              openLazyResult = user.getUser(data.userId);
-              if (null != openLazyResult) {
-                openLazyResult = require;
-                openLazyResult = dependencyMap;
-                if (obj33.isPrimaryEntryPointCommandMessage(message)) {
-                  if (null != message.applicationId) {
-                    openLazyResult = store;
-                    openLazyResult = store.getChannel(data.messageChannelId);
-                    if (null != openLazyResult) {
-                      openLazyResult = getSection;
-                      let obj3 = { channel: openLazyResult, type: "channel" };
-                      openLazyResult = getSection(obj3, message.applicationId);
-                      const descriptor = openLazyResult.descriptor;
-                      let application;
-                      if (null != descriptor) {
-                        application = descriptor.application;
-                      }
-                      if (null != application) {
-                        let tmp79 = null == chatInputRef;
-                        if (!tmp79) {
-                          const current5 = chatInputRef.current;
-                          tmp79 = null == current5;
-                          const obj19 = current5;
-                        }
-                        if (!tmp79) {
-                          const obj4 = { type: require(1555) /* KeyboardTypes */.KeyboardTypes.APP_LAUNCHER };
-                          let obj5 = { initialRouteName: AppLauncherRouteName.APPLICATION_VIEW, initiallyExpanded: true, application: openLazyResult.descriptor.application, installOnDemand: !openLazyResult.isGuildInstalled && !openLazyResult.isUserInstalled };
-                          obj4.context = obj5;
-                          obj19.openCustomKeyboard(obj4);
-                        }
-                      } else {
-                        let tmp74 = null == chatInputRef;
-                        if (!tmp74) {
-                          const current4 = chatInputRef.current;
-                          tmp74 = null == current4;
-                          let obj15 = current4;
-                        }
-                        if (!tmp74) {
-                          let obj6 = { type: require(1555) /* KeyboardTypes */.KeyboardTypes.APP_LAUNCHER };
-                          let obj7 = { initialRouteName: AppLauncherRouteName.APPLICATION_VIEW, initiallyExpanded: true, applicationId: message.applicationId, installOnDemand: true };
-                          obj6.context = obj7;
-                          obj15.openCustomKeyboard(obj6);
-                        }
-                      }
-                    }
-                  }
-                } else {
-                  let author;
-                  if (null != message) {
-                    author = message.author;
-                  }
-                  if (null != author) {
-                    openLazyResult = importDefault;
-                    openLazyResult = dependencyMap;
-                    const obj8 = {};
-                    openLazyResult = require;
-                    openLazyResult = importDefault(9491);
-                    obj8.author = require(4395) /* useNullableMessageAuthor */.getUserAuthor(message.interaction.user, messageChannel);
-                    obj8.channelId = data.messageChannelId;
-                    obj8.chatInputRef = chatInputRef;
-                    obj8.messageId = data.messageId;
-                    obj8.user = openLazyResult;
-                    openLazyResult = closure_7;
-                    let author1;
-                    if (null != message) {
-                      author1 = message.author;
-                    }
-                    const prototype = openLazyResult.prototype;
-                    openLazyResult = new openLazyResult(author1);
-                    obj8.applicationUser = openLazyResult;
-                    const guildId = messageChannel.getGuildId();
-                    let tmp71;
-                    if (null != guildId) {
-                      tmp71 = guildId;
-                    }
-                    obj8.guildId = tmp71;
-                    obj8.messageType = data.messageType;
-                    openLazyResult(obj8);
-                    const obj35 = require(4395) /* useNullableMessageAuthor */;
-                  }
-                }
-                obj33 = require(7988) /* canViewInteractionInfo */;
-              }
-            }
-          }
-        } else if ("bindTapActivityText" === action) {
-          const application1 = application.getApplication(data.applicationUserId);
-          if (null == application1) {
-            let tmp57 = null == chatInputRef;
-            if (!tmp57) {
-              const current3 = chatInputRef.current;
-              tmp57 = null == current3;
-              let obj12 = current3;
-            }
-            if (!tmp57) {
-              let obj9 = { type: require(1555) /* KeyboardTypes */.KeyboardTypes.APP_LAUNCHER };
-              const obj10 = { initialRouteName: AppLauncherRouteName.APPLICATION_VIEW, applicationId: data.applicationUserId, initiallyExpanded: true };
-              obj9.context = obj10;
-              obj12.openCustomKeyboard(obj9);
-            }
-          } else {
-            let tmp52 = null == chatInputRef;
-            if (!tmp52) {
-              const current2 = chatInputRef.current;
-              tmp52 = null == current2;
-              obj9 = current2;
-            }
-            if (!tmp52) {
-              const obj11 = { type: require(1555) /* KeyboardTypes */.KeyboardTypes.APP_LAUNCHER };
-              obj12 = { initialRouteName: AppLauncherRouteName.APPLICATION_VIEW, application: application1, initiallyExpanded: true };
-              obj11.context = obj12;
-              obj9.openCustomKeyboard(obj11);
-            }
-          }
-        } else if ("bindOpenThreadChannel" === action) {
-          const channel = store.getChannel(data.threadId);
-          if (null != channel) {
-            guild_id = undefined;
-            if (null != channel) {
-              guild_id = channel.guild_id;
-            }
-            openLazyResult(guild_id, channel.id, constants3.EMBED);
-          }
-        } else if ("bindJumpToMessage" === action) {
-          obj7 = importDefault(5695);
-          const obj13 = {};
-          ({ targetChannelId: obj9.channelId, targetMessageId: obj9.messageId } = data);
-          obj13.flash = true;
-          obj13.returnMessageId = data.messageId;
-          obj7.jumpToMessage(obj13);
-        } else if ("bindOpenRoleSubscriptionOverview" === action) {
-          obj5 = require(1198) /* shouldNavigate */;
-          obj5.transitionTo(closure_14.CHANNEL(data.guildId, StaticChannelRoute.ROLE_SUBSCRIPTIONS));
-          obj6 = require(7750) /* identityHook */;
-          const result2 = obj6.trackRoleSubscriptionPurchaseMessageTierClick(data.guildId, data.channelId, data.messageId, data.roleSubscriptionListingId);
-        } else if ("bindUserSurvey" === action) {
-          const channel1 = store.getChannel(data.message.channel_id);
-          let guild_id1;
-          if (null != channel1) {
-            guild_id1 = channel1.guild_id;
-          }
-          if (null != guild_id1) {
-            const notificationType2 = data.notificationType;
-            openLazyResult = NotificationTypes;
-            if (NotificationTypes.TRENDING_CONTENT_PUSH === notificationType2) {
-              obj3 = require(9494) /* openGuildHighlightNotificationForPush */;
-              ({ message: message2, notificationType } = data);
-              const MESSAGE_EMBED = constants.MESSAGE_EMBED;
-              const obj14 = {};
-              const selectedSummaryResult = closure_6.selectedSummary(data.message.channel_id);
-              let id3;
-              if (null != selectedSummaryResult) {
-                id3 = selectedSummaryResult.id;
-              }
-              let str3 = "unknown";
-              if (null != id3) {
-                str3 = id3;
-              }
-              obj14.summary_id = str3;
-              const result3 = obj3.openGuildHighlightNotificationForPush(guild_id1, message2, notificationType, MESSAGE_EMBED, obj14);
-            } else {
-              openLazyResult = NotificationTypes;
-              if (NotificationTypes.TOP_MESSAGE_PUSH === notificationType2) {
-                obj2 = require(9494) /* openGuildHighlightNotificationForPush */;
-                const result4 = obj2.openGuildHighlightNotificationForPush(guild_id1, data.message, data.notificationType, constants.MESSAGE_EMBED);
-              } else {
-                openLazyResult = require;
-                openLazyResult = dependencyMap;
-                openLazyResult = importDefault;
-                openLazyResult = require(1935) /* maybeLoadBundle */(9517, dependencyMap.paths);
-                obj15 = {};
-                openLazyResult = constants;
-                obj15.location = constants.MESSAGE_EMBED;
-                obj15.messageId = data.message.id;
-                let TOP_MESSAGE_PUSH = data.notificationType;
-                if (null == TOP_MESSAGE_PUSH) {
-                  TOP_MESSAGE_PUSH = NotificationTypes.TOP_MESSAGE_PUSH;
-                }
-                obj15.notificationType = TOP_MESSAGE_PUSH;
-                importDefault(4133).openLazy(openLazyResult, "NotificationSurvey", obj15);
-                const obj31 = importDefault(4133);
-              }
-            }
-          }
-        } else if ("bindInsertText" === action) {
-          let tmp8 = null == chatInputRef;
-          if (!tmp8) {
-            const current = chatInputRef.current;
-            tmp8 = null == current;
-            obj1 = current;
-          }
-          if (!tmp8) {
-            const addSpace = data.addSpace;
-            let tmp9 = null == addSpace;
-            if (!tmp9) {
-              tmp9 = addSpace;
-            }
-            obj1.insertText(data.text, null, tmp9);
+            current.insertText(data.text, null, flag);
           }
         }
       }
     }
-    tmp5 = handleMessagesTapURLLink;
+    tmp4 = handleMessagesTapURLLink;
   } else {
-    obj = require(9487) /* isAlertOrActionSheetOpen */;
+    const obj = require(9511) /* isAlertOrActionSheetOpen */;
   }
 };

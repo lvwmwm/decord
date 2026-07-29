@@ -1,53 +1,52 @@
-// Module ID: 12830
-// Function ID: 99695
+// Module ID: 12852
+// Function ID: 12853
 // Name: id
-// Dependencies: [4178, 1194, 4844, 4237, 653, 4183, 566, 8905, 2]
+// Dependencies: [4202, 1218, 4866, 4261, 676, 4207, 589, 8929, 2]
 // Exports: default
 
-// Module 12830 (id)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_4 from "_isNativeReflectConstruct";
-import closure_5 from "_isNativeReflectConstruct";
-import closure_6 from "_isNativeReflectConstruct";
+// Module 12852 (id)
+import getParticipants from "getParticipants";
+import fetchFingerprint from "fetchFingerprint";
+import callConnect from "callConnect";
+import createRTCConnection from "createRTCConnection";
 import ME from "ME";
 import { ParticipantTypes } from "ParticipantTypes";
 
-let closure_7;
-let closure_8;
+let error;
+let metroImportAll;
 let require = arg1;
-({ EMPTY_STRING_SNOWFLAKE_ID: closure_7, RTCConnectionStates: closure_8 } = ME);
+({ EMPTY_STRING_SNOWFLAKE_ID: error, RTCConnectionStates: metroImportAll } = ME);
 let obj = {};
-obj = { initialized: false, callId: undefined };
-const merged = Object.assign(obj);
+const merged = Object.assign({ initialized: false, callId: "r" });
 obj = { DISCONNECTED: "disconneted", DISCONNECTING: "disconnecting", CONNECTING: "connecting", RINGING: "ringing", CONNECTED: "connected" };
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/voice_calls/native/CallStateHooks.tsx");
+const result = require("callConnect").fileFinishedImporting("modules/voice_calls/native/CallStateHooks.tsx");
 
 export default function _default() {
   let tmp = arg0;
-  let flag = arg1;
-  let flag2 = arg2;
   if (arg0 === undefined) {
     tmp = closure_7;
   }
   const require = tmp;
-  if (flag === undefined) {
+  let flag = arg1;
+  if (arg1 === undefined) {
     flag = false;
   }
-  if (flag2 === undefined) {
+  let flag2 = arg2;
+  if (arg2 === undefined) {
     flag2 = false;
   }
   let id;
   let dependencyMap;
   let stateFromStores;
   id = id.getId();
-  let obj = require(566) /* initialize */;
-  const items = [closure_5];
+  const obj = require(589) /* initialize */;
+  const items = [callConnect];
   const items1 = [tmp, id];
   const stateFromStoresArray = obj.useStateFromStoresArray(items, () => {
     const call = outer1_5.getCall(closure_0);
     if (null != call) {
       const ringing = call.ringing;
-      let found = ringing.filter((arg0) => arg0 !== outer1_1);
+      let found = ringing.filter((arg0) => arg0 !== closure_1);
     } else {
       found = [];
     }
@@ -66,68 +65,59 @@ export default function _default() {
     }
     return tmp;
   });
-  const tmp3 = id(8905)();
+  const tmp3 = id(8929)();
   dependencyMap = tmp3;
   const items2 = [getRTCConnectionId];
-  stateFromStores = require(566) /* initialize */.useStateFromStores(items2, getRTCConnectionId.getRTCConnectionId, []);
-  const obj2 = require(566) /* initialize */;
+  stateFromStores = require(589) /* initialize */.useStateFromStores(items2, getRTCConnectionId.getRTCConnectionId, []);
+  const obj2 = require(589) /* initialize */;
   const items3 = [getRTCConnectionId];
   const items4 = [stateFromStores, tmp3, tmp];
-  const stateFromStores1 = require(566) /* initialize */.useStateFromStores(items3, () => {
+  const stateFromStores1 = require(589) /* initialize */.useStateFromStores(items3, () => {
     let channelId;
-    if (null != _undefined) {
+    if (_undefined != null) {
       channelId = _undefined.channelId;
     }
     if (channelId === closure_0) {
       outer1_10.initialized = true;
       return outer1_8.RTC_CONNECTED;
     } else {
-      let tmp4 = null != stateFromStores;
-      if (tmp4) {
-        tmp4 = tmp16 === stateFromStores;
-      }
-      if (!tmp4) {
+      if (!tmp2) {
         outer1_10.initialized = false;
       }
       outer1_10.callId = stateFromStores;
       const state = outer1_6.getState();
       let initialized = outer1_10.initialized;
       if (!initialized) {
-        let tmp11 = state !== outer1_8.DISCONNECTED;
-        if (tmp11) {
-          tmp11 = state !== outer1_8.RTC_DISCONNECTED;
+        let tmp10 = state !== outer1_8.DISCONNECTED;
+        if (tmp10) {
+          tmp10 = state !== outer1_8.RTC_DISCONNECTED;
         }
-        initialized = tmp11;
+        initialized = tmp10;
       }
       outer1_10.initialized = initialized;
       return state;
     }
   }, items4);
-  let initialized = obj.initialized;
-  if (!initialized) {
-    initialized = flag2;
-  }
-  obj.initialized = initialized;
-  let CONNECTED = obj.CONNECTING;
-  const initialized2 = obj.initialized;
+  obj.initialized = obj.initialized || flag2;
+  let state = obj.CONNECTING;
+  let initialized = tmp6.initialized;
   if (flag) {
-    CONNECTED = obj.DISCONNECTING;
+    state = tmp7.DISCONNECTING;
   } else {
-    if (initialized2) {
+    if (initialized) {
       if (stateFromStores1 === constants.DISCONNECTED) {
-        CONNECTED = obj.DISCONNECTED;
+        state = tmp7.DISCONNECTED;
       }
     }
     if (stateFromStoresArray.length > 0) {
       if (found.length === stateFromStoresArray.length) {
-        CONNECTED = obj.RINGING;
+        state = tmp7.RINGING;
       }
     }
     if (stateFromStores1 === constants.RTC_CONNECTED) {
-      CONNECTED = obj.CONNECTED;
+      state = tmp7.CONNECTED;
     }
   }
-  obj = { state: CONNECTED, initialized: initialized2 };
-  return obj;
+  return { state, initialized };
 };
 export const CallStates = obj;

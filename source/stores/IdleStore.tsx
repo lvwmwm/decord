@@ -1,281 +1,283 @@
-// Module ID: 4978
-// Function ID: 42496
-// Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 1194, 653, 4226, 477, 3838, 664, 686, 3776, 4979, 574, 566, 2]
+// Module ID: 5000
+// Function ID: 5001
+// Name: checkIdleAFK
+// Dependencies: [1218, 676, 4250, 500, 3862, 687, 709, 3800, 5001, 636, 589, 2]
 
-// Module 4978 (_isNativeReflectConstruct)
-import closure_3 from "ME";
-import DesktopSources from "DesktopSources";
-import initialize from "initialize";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 5000 (checkIdleAFK)
+import fetchFingerprint from "fetchFingerprint";
 import ME from "ME";
 import { SpeakingFlags } from "DesktopSources";
 
-let closure_10;
-let closure_9;
+let c5;
+let closure_6;
 const require = arg1;
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
-  }
-  const result = _isNativeReflectConstruct();
-}
-function isSystemIdle() {
-  let tmp = c16;
-  if (!c16) {
-    tmp = c17;
-  }
-  if (!tmp) {
-    const obj = require(477) /* set */;
-    tmp = require(477) /* set */.isAndroid() && c18;
-    const tmp4 = require(477) /* set */.isAndroid() && c18;
-  }
-  return tmp;
-}
 function checkIdleAFK() {
-  if (Date.now() - closure_13 <= closure_9) {
-    if (!isSystemIdle()) {
-      if (c14) {
-        let obj = importDefault(686);
-        obj.dispatch({ type: "IDLE", idle: false });
+  if (Date.now() - closure_8 <= closure_5) {
+    let tmp2 = c11;
+    if (!c11) {
+      tmp2 = c12;
+    }
+    if (!tmp2) {
+      let obj = require(500) /* set */;
+      tmp2 = obj.isAndroid() && c13;
+      const tmp5 = obj.isAndroid() && c13;
+    }
+    if (!tmp2) {
+      if (c9) {
+        importDefault(709).dispatch({ type: "IDLE", idle: false });
+        const obj2 = importDefault(709);
       }
     }
-    const AfkTimeout = require(3838) /* explicitContentFromProto */.AfkTimeout;
+    const AfkTimeout = require(3862) /* explicitContentFromProto */.AfkTimeout;
     const setting = AfkTimeout.getSetting();
     if (0 !== setting) {
-      if (null == closure_12) {
+      if (null == closure_3) {
         const _Date = Date;
         const _Math = Math;
-        const diff = Date.now() - closure_13;
-        if (diff <= Math.min(setting * importDefault(664).Millis.SECOND, closure_9)) {
-          if (!isSystemIdle()) {
-            if (c15) {
-              importDefault(686).dispatch({ type: "AFK", afk: false });
-              const obj4 = importDefault(686);
+        const diff = Date.now() - closure_8;
+        if (diff <= Math.min(setting * importDefault(687).Millis.SECOND, tmp)) {
+          let tmp17 = c11;
+          if (!c11) {
+            tmp17 = c12;
+          }
+          if (!tmp17) {
+            const tmp14Result = tmp14(500);
+            tmp17 = tmp14(500).isAndroid() && c13;
+            const tmp18 = tmp14(500).isAndroid() && c13;
+          }
+          if (!tmp17) {
+            if (c10) {
+              tmp28(709).dispatch({ type: "AFK", afk: false });
+              const tmp28Result = tmp28(709);
             }
           }
         }
+        tmp28 = importDefault;
       }
     }
-    if (!c15) {
-      importDefault(686).dispatch({ type: "AFK", afk: true });
-      const obj5 = importDefault(686);
+    if (!c10) {
+      importDefault(709).dispatch({ type: "AFK", afk: true });
+      const obj7 = importDefault(709);
     }
+    tmp14 = require;
   }
-  if (!c14) {
-    obj = { type: "IDLE", idle: true, idleSince: closure_13 };
-    importDefault(686).dispatch(obj);
-    const obj2 = importDefault(686);
+  if (!c9) {
+    obj = { type: "IDLE", idle: true, idleSince: null };
+    obj[2] = closure_8;
+    importDefault(709).dispatch(obj);
+    const obj3 = importDefault(709);
   }
 }
-function handlePowerEvent(arg0) {
-  if (arg0) {
-    const _Date = Date;
-    let closure_12 = Date.now();
-  }
-  checkIdleAFK();
-}
-function handleGenericAction(timestamp) {
-  timestamp = timestamp.timestamp;
-  let tmp = "OVERLAY_SET_NOT_IDLE" === timestamp.type;
-  if (tmp) {
-    tmp = null != timestamp;
-  }
-  let bypassIdleUpdate = tmp;
-  if (tmp) {
-    bypassIdleUpdate = timestamp <= timestamp;
-  }
-  if (!bypassIdleUpdate) {
-    bypassIdleUpdate = timestamp.bypassIdleUpdate;
-  }
-  if (!bypassIdleUpdate) {
-    let c12 = null;
-    if (!tmp) {
-      const _Date = Date;
-      timestamp = Date.now();
-    }
-    checkIdleAFK();
-  }
-  return false;
-}
-({ IDLE_DURATION: closure_9, AppStates: closure_10 } = ME);
-let closure_13 = Date.now();
-let c14 = false;
-let c15 = false;
-let c16 = false;
-let c17 = false;
-let c18 = false;
+({ IDLE_DURATION: c5, AppStates: closure_6 } = ME);
+let closure_8 = Date.now();
+let c9 = false;
+let c10 = false;
+let c11 = false;
+let c12 = false;
+let c13 = false;
 if (require("set").isPlatformEmbedded) {
+  const importDefaultResult = require("set");
   let powerMonitor;
-  if (null != require("set")) {
-    powerMonitor = require("set").powerMonitor;
+  if (importDefaultResult != null) {
+    powerMonitor = importDefaultResult.powerMonitor;
   }
   if (null != powerMonitor) {
     function checkNativeIdle() {
-      function handleIdleTime(systemIdleTimeMs) {
-        const diff = Date.now() - systemIdleTimeMs;
-        let tmp2 = null == outer1_12;
-        if (!tmp2) {
-          tmp2 = diff > outer1_12;
-        }
-        if (tmp2) {
-          const _Math = Math;
-          outer1_13 = Math.max(diff, outer1_13);
-          outer1_12 = null;
-        }
-        outer1_21();
-        const timerId = setTimeout(outer1_24, 10 * outer1_1(outer1_2[10]).Millis.SECOND);
-      }
+      const tmp3 = importDefault(3800);
       let getSystemIdleTimeMs;
-      if (null != importDefault(3776)) {
-        const powerMonitor = importDefault(3776).powerMonitor;
-        if (null != powerMonitor) {
+      if (tmp3 != null) {
+        const powerMonitor = tmp3.powerMonitor;
+        if (powerMonitor != null) {
           getSystemIdleTimeMs = powerMonitor.getSystemIdleTimeMs;
         }
       }
       if (null != getSystemIdleTimeMs) {
-        const powerMonitor2 = importDefault(3776).powerMonitor;
+        const powerMonitor2 = tmp(3800).powerMonitor;
         const systemIdleTimeMs = powerMonitor2.getSystemIdleTimeMs();
         if (systemIdleTimeMs instanceof Promise) {
-          systemIdleTimeMs.then(handleIdleTime);
+          systemIdleTimeMs.then(function handleIdleTime(arg0) {
+            const diff = Date.now() - arg0;
+            let tmp2 = null == c3;
+            if (!tmp2) {
+              tmp2 = diff > c3;
+            }
+            if (tmp2) {
+              const _Math = Math;
+              closure_8 = Math.max(diff, closure_8);
+              c3 = null;
+            }
+            callback2();
+            const timerId = setTimeout(closure_15, 10 * callback(table[5]).Millis.SECOND);
+          });
         } else {
-          handleIdleTime(systemIdleTimeMs);
+          const _Date = Date;
+          let diff = Date.now() - systemIdleTimeMs;
+          let tmp7 = null == c3;
+          if (!tmp7) {
+            tmp7 = diff > c3;
+          }
+          if (tmp7) {
+            let _Math = Math;
+            closure_8 = Math.max(diff, closure_8);
+            c3 = null;
+          }
+          checkIdleAFK();
+          const _setTimeout = setTimeout;
+          let timerId = setTimeout(checkNativeIdle, 10 * tmp(687).Millis.SECOND);
         }
       }
     }
     checkNativeIdle();
     powerMonitor = require("set").powerMonitor;
     powerMonitor.on("resume", () => {
-      let c16 = false;
-      handlePowerEvent(false);
+      let c11 = false;
+      checkIdleAFK();
     });
     let powerMonitor2 = require("set").powerMonitor;
     powerMonitor2.on("suspend", () => {
-      let c16 = true;
-      handlePowerEvent(true);
-      importDefault(4979).disconnect();
+      let c11 = true;
+      let closure_3 = Date.now();
+      checkIdleAFK();
+      importDefault(5001).disconnect();
     });
     const powerMonitor3 = require("set").powerMonitor;
+    class IdleStore extends r10079 {
+    }
     powerMonitor3.on("lock-screen", () => {
-      let c17 = true;
-      handlePowerEvent(true);
+      let c12 = true;
+      let closure_3 = Date.now();
+      checkIdleAFK();
     });
-    const powerMonitor4 = require("set").powerMonitor;
-    powerMonitor4.on("unlock-screen", () => {
-      let c17 = false;
-      handlePowerEvent(false);
+    obj.on("unlock-screen", () => {
+      let c12 = false;
+      checkIdleAFK();
     });
   }
+  function handleGenericAction(timestamp) {
+    timestamp = timestamp.timestamp;
+    let tmp = "OVERLAY_SET_NOT_IDLE" === timestamp.type;
+    if (tmp) {
+      tmp = null != timestamp;
+    }
+    let bypassIdleUpdate = tmp;
+    if (tmp) {
+      bypassIdleUpdate = timestamp <= timestamp;
+    }
+    if (!bypassIdleUpdate) {
+      bypassIdleUpdate = timestamp.bypassIdleUpdate;
+    }
+    if (!bypassIdleUpdate) {
+      let c3 = null;
+      if (!tmp) {
+        const _Date = Date;
+        timestamp = Date.now();
+      }
+      checkIdleAFK();
+    }
+    return false;
+  }
   require("debounce")(() => {
-    handleGenericAction({});
+    const obj = {};
+    let timestamp = obj.timestamp;
+    let tmp = "OVERLAY_SET_NOT_IDLE" === obj.type;
+    if (tmp) {
+      tmp = null != timestamp;
+    }
+    let bypassIdleUpdate = tmp;
+    if (tmp) {
+      bypassIdleUpdate = timestamp <= timestamp;
+    }
+    if (!bypassIdleUpdate) {
+      bypassIdleUpdate = obj.bypassIdleUpdate;
+    }
+    if (!bypassIdleUpdate) {
+      let c3 = null;
+      if (!tmp) {
+        const _Date = Date;
+        timestamp = Date.now();
+      }
+      checkIdleAFK();
+    }
   }, 500);
-  let tmp12 = ((Store) => {
-    class IdleStore {
-      constructor() {
-        self = this;
-        tmp = outer1_3(this, IdleStore);
-        obj = outer1_6(IdleStore);
-        tmp2 = outer1_5;
-        if (outer1_19()) {
-          tmp6 = globalThis;
-          _Reflect = Reflect;
-          tmp7 = outer1_6;
-          tmp8 = arguments;
-          constructResult = Reflect.construct(obj, arguments, outer1_6(self).constructor);
-        } else {
-          tmp3 = arguments;
-          tmp4 = arguments;
-          constructResult = obj(...arguments);
+  const Store = require("initialize").Store;
+  class IdleStore extends r10079 {
+  }
+  const prototype = IdleStore.prototype;
+  prototype["initialize"] = function initialize() {
+    this.waitFor(fetchFingerprint);
+  };
+  prototype["isIdle"] = function isIdle() {
+    return c9;
+  };
+  prototype["isAFK"] = function isAFK() {
+    return c10;
+  };
+  prototype["getIdleSince"] = function getIdleSince() {
+    let tmp = null;
+    if (c9) {
+      tmp = closure_8;
+    }
+    return tmp;
+  };
+  prototype["getSystemSuspended"] = function getSystemSuspended() {
+    return c11;
+  };
+  prototype["getSystemLocked"] = function getSystemLocked() {
+    return c12;
+  };
+  IdleStore.displayName = "IdleStore";
+  obj = { IDLE: null, AFK: null, SPEAKING: null, APP_STATE_UPDATE: null, OVERLAY_SET_NOT_IDLE: null, CHANNEL_SELECT: null, VOICE_CHANNEL_SELECT: null, WINDOW_FOCUS: null, OVERLAY_INITIALIZE: null, OVERLAY_SET_INPUT_LOCKED: null };
+  obj[0] = function handleIdle(idle) {
+    idle = idle.idle;
+  };
+  obj[1] = function handleAFK(afk) {
+    afk = afk.afk;
+  };
+  obj[2] = function handleSpeaking(speakingFlags) {
+    let tmp2 = speakingFlags.speakingFlags !== SpeakingFlags.NONE;
+    if (tmp2) {
+      tmp2 = tmp === id.getId();
+    }
+    if (tmp2) {
+      const obj = {};
+      let timestamp = obj.timestamp;
+      let tmp4 = "OVERLAY_SET_NOT_IDLE" === obj.type;
+      if (tmp4) {
+        tmp4 = null != timestamp;
+      }
+      let bypassIdleUpdate = tmp4;
+      if (tmp4) {
+        bypassIdleUpdate = timestamp <= timestamp;
+      }
+      if (!bypassIdleUpdate) {
+        bypassIdleUpdate = obj.bypassIdleUpdate;
+      }
+      if (!bypassIdleUpdate) {
+        let c3 = null;
+        if (!tmp4) {
+          const _Date = Date;
+          timestamp = Date.now();
         }
-        return tmp2(self, constructResult);
+        checkIdleAFK();
       }
     }
-    callback2(IdleStore, Store);
-    let obj = {
-      key: "initialize",
-      value() {
-        this.waitFor(outer1_8);
-      }
-    };
-    const items = [obj, , , , , ];
-    obj = {
-      key: "isIdle",
-      value() {
-        return outer1_14;
-      }
-    };
-    items[1] = obj;
-    obj = {
-      key: "isAFK",
-      value() {
-        return outer1_15;
-      }
-    };
-    items[2] = obj;
-    items[3] = {
-      key: "getIdleSince",
-      value() {
-        let tmp = null;
-        if (outer1_14) {
-          tmp = outer1_13;
-        }
-        return tmp;
-      }
-    };
-    items[4] = {
-      key: "getSystemSuspended",
-      value() {
-        return outer1_16;
-      }
-    };
-    items[5] = {
-      key: "getSystemLocked",
-      value() {
-        return outer1_17;
-      }
-    };
-    return callback(IdleStore, items);
-  })(require("initialize").Store);
-  tmp12.displayName = "IdleStore";
-  let obj = {
-    IDLE: function handleIdle(idle) {
-        idle = idle.idle;
-      },
-    AFK: function handleAFK(afk) {
-        afk = afk.afk;
-      },
-    SPEAKING: function handleSpeaking(speakingFlags) {
-        let tmp2 = speakingFlags.speakingFlags !== SpeakingFlags.NONE;
-        if (tmp2) {
-          tmp2 = tmp === id.getId();
-        }
-        if (tmp2) {
-          handleGenericAction({});
-        }
-        return false;
-      },
-    APP_STATE_UPDATE: function handleAppStateUpdate(state) {
-        let closure_18 = state.state === constants.BACKGROUND;
-        let c12 = null;
-        let closure_13 = Date.now();
-        checkIdleAFK();
-        return false;
-      },
-    OVERLAY_SET_NOT_IDLE: handleGenericAction,
-    CHANNEL_SELECT: handleGenericAction,
-    VOICE_CHANNEL_SELECT: handleGenericAction,
-    WINDOW_FOCUS: handleGenericAction,
-    OVERLAY_INITIALIZE: handleGenericAction,
-    OVERLAY_SET_INPUT_LOCKED: handleGenericAction
+    return false;
   };
-  const prototype = tmp12.prototype;
-  tmp12 = new tmp12(require("dispatcher"), obj);
-  let result = require("_possibleConstructorReturn").fileFinishedImporting("stores/IdleStore.tsx");
-  exports.default = tmp12;
+  obj[3] = function handleAppStateUpdate(state) {
+    let closure_13 = state.state === constants.BACKGROUND;
+    let c3 = null;
+    let closure_8 = Date.now();
+    checkIdleAFK();
+    return false;
+  };
+  obj[4] = handleGenericAction;
+  obj[5] = handleGenericAction;
+  obj[6] = handleGenericAction;
+  obj[7] = handleGenericAction;
+  obj[8] = handleGenericAction;
+  obj[9] = handleGenericAction;
+  const idleStore = new IdleStore(require("dispatcher"), obj);
+  const result = require("DesktopSources").fileFinishedImporting("stores/IdleStore.tsx");
+  exports.default = idleStore;
 }
 let timerId = setInterval(checkIdleAFK, 30 * require("set").Millis.SECOND);

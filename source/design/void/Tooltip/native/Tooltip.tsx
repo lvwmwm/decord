@@ -1,30 +1,30 @@
-// Module ID: 13121
-// Function ID: 101246
+// Module ID: 13144
+// Function ID: 13145
 // Name: Tooltip
-// Dependencies: [31, 27, 653, 33, 4165, 689, 1327, 4161, 1273, 2]
+// Dependencies: [19, 17, 676, 21, 4189, 712, 1351, 4185, 1297, 2]
 // Exports: default
 
-// Module 13121 (Tooltip)
-import result from "result";
+// Module 13144 (Tooltip)
+import noop from "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_4;
-let closure_5;
+let c4;
+let c5;
 const require = arg1;
-({ jsx: closure_4, jsxs: closure_5 } = jsxProd);
+({ jsx: c4, jsxs: c5 } = jsxProd);
 let obj = { UP: "UP", DOWN: "DOWN" };
 obj = { CENTER: "CENTER", RIGHT: "RIGHT", LEFT: "LEFT" };
-obj = {};
-let obj1 = { padding: 10, borderRadius: require("_createForOfIteratorHelperLoose").radii.xs, alignSelf: "flex-start", minWidth: 60, alignItems: "center", backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BRAND };
-obj.container = obj1;
-_createForOfIteratorHelperLoose = { fontFamily: require("ME").Fonts.PRIMARY_MEDIUM, fontSize: 12, color: require("_createForOfIteratorHelperLoose").colors.WHITE };
-obj.label = _createForOfIteratorHelperLoose;
-obj.title = { marginBottom: 4 };
-let obj3 = { width: 0, height: 0, borderStyle: "solid", borderLeftColor: "transparent", borderRightColor: "transparent", borderTopColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BRAND, borderBottomColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BRAND };
-obj.arrow = obj3;
-let closure_8 = _createForOfIteratorHelperLoose.createStyles(obj);
+obj = { container: null, label: null, title: null, arrow: null };
+obj[0] = { padding: 10, borderRadius: require("Themes").radii.xs, alignSelf: "flex-start", minWidth: 60, alignItems: "center", backgroundColor: require("Themes").colors.BACKGROUND_BRAND };
+createCacheKey = { fontFamily: require("ME").Fonts.PRIMARY_MEDIUM, fontSize: 12, color: require("Themes").colors.WHITE };
+obj[1] = createCacheKey;
+obj[2] = { marginBottom: 4 };
+let obj1 = { padding: 10, borderRadius: require("Themes").radii.xs, alignSelf: "flex-start", minWidth: 60, alignItems: "center", backgroundColor: require("Themes").colors.BACKGROUND_BRAND };
+obj[3] = { width: 0, height: 0, borderStyle: "solid", borderLeftColor: "transparent", borderRightColor: "transparent", borderTopColor: require("Themes").colors.BACKGROUND_BRAND, borderBottomColor: require("Themes").colors.BACKGROUND_BRAND };
+let closure_8 = createCacheKey.createStyles(obj);
+let obj3 = { width: 0, height: 0, borderStyle: "solid", borderLeftColor: "transparent", borderRightColor: "transparent", borderTopColor: require("Themes").colors.BACKGROUND_BRAND, borderBottomColor: require("Themes").colors.BACKGROUND_BRAND };
 const result = require("ME").fileFinishedImporting("design/void/Tooltip/native/Tooltip.tsx");
 
 export default function Tooltip(arrowHeight) {
@@ -61,65 +61,74 @@ export default function Tooltip(arrowHeight) {
   const items = [LEFT, num2];
   const memo = React.useMemo(() => {
     if (outer1_7.LEFT === LEFT) {
-      let obj = { alignSelf: "flex-start", left: num2 };
+      let obj = { alignSelf: "flex-start", left: null };
+      obj[1] = num2;
       return obj;
-    } else if (outer1_7.CENTER === tmp) {
-      obj = { alignSelf: "center" };
+    } else if (tmp2.CENTER === tmp) {
+      return { alignSelf: "center" };
+    } else if (tmp2.RIGHT === tmp) {
+      obj = { alignSelf: "flex-end", right: null };
+      obj[1] = num2;
       return obj;
-    } else if (outer1_7.RIGHT === tmp) {
-      const obj1 = { alignSelf: "flex-end", right: num2 };
-      return obj1;
     } else {
       obj = num2(LEFT[6]);
-      obj.assertNever(LEFT);
+      obj.assertNever(tmp);
     }
   }, items);
-  obj = { style };
-  let tmp7 = UP === obj.UP;
-  if (tmp7) {
-    obj = {};
+  obj = { style, children: null };
+  let tmp8 = UP === obj.UP;
+  if (tmp8) {
+    obj = { style: null };
     const items1 = [tmp3.arrow, , , ];
-    obj = { borderLeftWidth: arrowWidth / 2, borderRightWidth: arrowWidth / 2, borderBottomWidth: num };
+    obj = { borderLeftWidth: null, borderRightWidth: null, borderBottomWidth: null };
+    obj[0] = arrowWidth / 2;
+    obj[1] = arrowWidth / 2;
+    obj[2] = num;
     items1[1] = obj;
     items1[2] = memo;
     items1[3] = arrowStyle;
-    obj.style = items1;
-    tmp7 = callback(View, obj);
+    obj[0] = items1;
+    tmp8 = callback(tmp6, obj);
   }
-  const items2 = [tmp7, , ];
-  let obj1 = { onLayout: arrowHeight.onLayout, style: items3 };
+  const items2 = [tmp8, , ];
+  const obj1 = { onLayout: arrowHeight.onLayout, style: items3, children: null };
   items3 = [tmp3.container, containerStyle];
-  let tmp12 = null;
+  let tmp10 = null;
   if (null != title) {
-    const obj2 = { style: tmp3.title, variant: "text-md/semibold", color: "text-overlay-light", children: title };
-    tmp12 = callback(num2(LEFT[7]).Heading, obj2);
+    const obj2 = { style: null, variant: "text-md/semibold", color: "text-overlay-light", children: null };
+    obj2[0] = tmp3.title;
+    obj2[3] = title;
+    tmp10 = callback(num2(LEFT[7]).Heading, obj2);
   }
-  const items4 = [tmp12, , ];
-  let tmp16 = null;
+  const items4 = [tmp10, , ];
+  let tmp14 = null;
   if (null != label) {
-    const obj3 = {};
+    const obj3 = { style: null, children: null };
     const items5 = [tmp3.label, labelStyle];
-    obj3.style = items5;
-    obj3.children = label;
-    tmp16 = callback(num2(LEFT[8]).LegacyText, obj3);
+    obj3[0] = items5;
+    obj3[1] = label;
+    tmp14 = callback(num2(LEFT[8]).LegacyText, obj3);
   }
-  items4[1] = tmp16;
+  items4[1] = tmp14;
   items4[2] = children;
-  obj1.children = items4;
+  obj1[2] = items4;
   items2[1] = closure_5(View, obj1);
-  let tmp20 = UP === obj.DOWN;
-  if (tmp20) {
-    const obj4 = {};
+  let tmp18 = UP === obj.DOWN;
+  if (tmp18) {
+    const obj4 = { style: null };
     const items6 = [tmp3.arrow, , , ];
-    const obj5 = { borderLeftWidth: arrowWidth / 2, borderRightWidth: arrowWidth / 2, borderTopWidth: num };
+    const obj5 = { borderLeftWidth: null, borderRightWidth: null, borderTopWidth: null };
+    obj5[0] = arrowWidth / 2;
+    obj5[1] = arrowWidth / 2;
+    obj5[2] = num;
     items6[1] = obj5;
     items6[2] = memo;
     items6[3] = arrowStyle;
-    obj4.style = items6;
-    tmp20 = callback(View, obj4);
+    obj4[0] = items6;
+    tmp18 = callback(tmp6, obj4);
   }
-  items2[2] = tmp20;
-  obj.children = items2;
+  items2[2] = tmp18;
+  obj[1] = items2;
   return closure_5(View, obj);
 };
 export const TooltipArrowDirections = obj;

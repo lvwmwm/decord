@@ -1,10 +1,10 @@
-// Module ID: 4507
-// Function ID: 39643
+// Module ID: 4530
+// Function ID: 4531
 // Name: useAlertStore
-// Dependencies: [57, 621, 682, 4508, 4509, 2]
+// Dependencies: [32, 644, 705, 4531, 4532, 2]
 // Exports: dismissAlert, dismissAlerts, openAlert
 
-// Module 4507 (useAlertStore)
+// Module 4530 (useAlertStore)
 import _slicedToArray from "_slicedToArray";
 import keys from "keys";
 
@@ -27,18 +27,19 @@ export const dismissAlerts = function dismissAlerts() {
   }, items), 2);
   const first = tmp[0];
   const arr4 = tmp[1];
-  first(682).batchUpdates(() => {
+  first(705).batchUpdates(() => {
     outer1_4.setState({ alerts: arr4 });
     const item = first.forEach((onDismiss) => {
+      onDismiss = onDismiss.onDismiss;
       let onDismissResult;
-      if (null != onDismiss.onDismiss) {
-        onDismissResult = onDismiss.onDismiss();
+      if (onDismiss != null) {
+        onDismissResult = onDismiss();
       }
       return onDismissResult;
     });
   });
-  if (tmp3) {
-    arr4(4508)();
+  if (tmp4) {
+    arr4(4531)();
   }
 };
 export const dismissAlert = function dismissAlert(c6) {
@@ -50,47 +51,46 @@ export const dismissAlert = function dismissAlert(c6) {
     if (tmp2) {
       const first = alerts[0];
       let key;
-      if (null != first) {
+      if (first != null) {
         key = first.key;
       }
       tmp2 = key === c6;
     }
-    _require(682).batchUpdates(() => {
+    _require(705).batchUpdates(() => {
       outer1_4.setState((alerts) => {
         alerts = alerts.alerts;
-        return { alerts: alerts.filter((key) => key.key !== outer2_0) };
+        return { alerts: alerts.filter((key) => key.key !== closure_0) };
       });
-      if (null != found.onDismiss) {
-        found.onDismiss();
+      const onDismiss = found.onDismiss;
+      if (onDismiss != null) {
+        onDismiss();
       }
     });
     if (tmp2) {
-      found(4508)();
+      found(4531)();
     }
-    const obj = _require(682);
+    const obj = _require(705);
   }
 };
-export const openAlert = function openAlert(VOICE_PANEL_SPOILER_KEY, arg1, onCloseCallback, arg3) {
-  const _require = VOICE_PANEL_SPOILER_KEY;
+export const openAlert = function openAlert(DeleteEventAlert, arg1, onCloseCallback, arg3) {
+  const _require = DeleteEventAlert;
   const importDefault = arg1;
   const dependencyMap = onCloseCallback;
   let _slicedToArray = arg3;
   if (0 === keys.getState().alerts.length) {
-    importDefault(4509)();
+    importDefault(4532)();
   }
-  _require(682).batchUpdates(() => {
+  _require(705).batchUpdates(() => {
     outer1_4.setState((alerts) => {
-      let obj = {};
-      const items = [...alerts.alerts];
-      obj = { key: outer1_0, node: outer1_1, onDismiss: outer1_2 };
+      alerts = [...alerts.alerts];
+      const obj = { key: closure_0, node: closure_1, onDismiss: closure_2, dismissable: null };
       let dismissable;
-      if (null != outer1_3) {
-        dismissable = outer1_3.dismissable;
+      if (dismissable != null) {
+        dismissable = dismissable.dismissable;
       }
-      obj.dismissable = dismissable;
-      items[tmp] = obj;
-      obj.alerts = items;
-      return obj;
+      obj[3] = dismissable;
+      alerts[tmp] = obj;
+      return { alerts };
     });
   });
 };

@@ -1,126 +1,196 @@
-// Module ID: 15384
-// Function ID: 117170
+// Module ID: 15417
+// Function ID: 15418
 // Name: emphasisHook
-// Dependencies: [5, 57, 31, 27, 1907, 3787, 653, 1355, 33, 14222, 566, 6551, 4161, 4506, 1212, 9117, 3747, 1273, 15378, 4133, 15385, 1935, 15374, 4654, 4578, 9341, 2]
+// Dependencies: [5, 32, 19, 17, 1931, 3811, 676, 1379, 21, 14244, 589, 6572, 4185, 4529, 1236, 9141, 3771, 1297, 15411, 4157, 15418, 1959, 15407, 4676, 4600, 9365, 2]
 // Exports: default
 
-// Module 15384 (emphasisHook)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 15417 (emphasisHook)
+import makeGroupListingIndexSubscriptionListingTag from "makeGroupListingIndexSubscriptionListingTag";
 import _slicedToArray from "_slicedToArray";
-import result from "result";
-import { View } from "get ActivityIndicator";
-import closure_8 from "_isNativeReflectConstruct";
-import closure_9 from "_isNativeReflectConstruct";
+import ACTION_SHEET_HEIGHT_HALF from "ACTION_SHEET_HEIGHT_HALF";
+import { View } from "Button";
+import handleConnectionOpen from "handleConnectionOpen";
+import closure_9 from "makeGroupListingIndexSubscriptionListingTag";
 import { AnalyticsLocations } from "ME";
 import { StaticChannelRoute } from "set";
-import jsxProd from "jsxProd";
+import jsxProd from "asyncRequireImpl";
 
 let closure_12;
-let closure_13;
+let map1;
 const require = arg1;
 function emphasisHook(children) {
-  const obj = { variant: "text-xs/semibold", color: "text-default", children };
-  return callback2(require(4161) /* Text */.Text, obj);
+  return callback3(require(4185) /* Text */.Text, { variant: "text-xs/semibold", color: "text-default", children });
 }
 function SwitchTiersButton(activeSubscription) {
   activeSubscription = activeSubscription.activeSubscription;
   const activeListingId = activeSubscription.activeListingId;
   const changeToListingId = activeSubscription.changeToListingId;
-  let obj = changeToListingId(14222);
-  let obj1 = activeListingId(3747)(activeSubscription.currentPeriodEnd);
-  obj = {};
-  obj = { variant: "text-xs/normal", color: "text-muted" };
-  const intl = activeSubscription(1212).intl;
-  obj1 = { activeListingName: callback(obj.useName(activeListingId), 1)[0], billingEndDate: obj1.format("MMMM Do"), emphasisHook };
-  obj.children = intl.format(activeSubscription(1212).t.lA7ztO, obj1);
-  const items = [callback2(activeSubscription(4161).Text, obj), callback2(activeSubscription(1273).Spacer, { size: 16 }), ];
-  const obj2 = {};
-  const intl2 = activeSubscription(1212).intl;
-  obj2.text = intl2.string(activeSubscription(1212).t.SACegK);
-  obj2.onPress = function onPress() {
+  let obj = changeToListingId(14244);
+  let obj1 = activeListingId(3771)(activeSubscription.currentPeriodEnd);
+  obj = { children: null };
+  obj = { variant: "text-xs/normal", color: "text-muted", children: null };
+  const intl = activeSubscription(1236).intl;
+  obj1 = { activeListingName: callback2(obj.useName(activeListingId), 1)[0], billingEndDate: obj1.format("MMMM Do"), emphasisHook };
+  obj[2] = intl.format(activeSubscription(1236).t.lA7ztO, obj1);
+  const items = [callback3(activeSubscription(4185).Text, obj), callback3(activeSubscription(1297).Spacer, { size: 16 }), ];
+  const obj2 = { text: null, onPress: null };
+  const intl2 = activeSubscription(1236).intl;
+  obj2[0] = intl2.string(activeSubscription(1236).t.SACegK);
+  obj2[1] = function onPress() {
     let obj = activeListingId(outer1_3[19]);
     obj = { activeSubscription, activeListingId, changeToListingId };
     obj.openLazy(activeSubscription(outer1_3[21])(outer1_3[20], outer1_3.paths), "ChangeSubscriptionCard:" + changeToListingId, obj);
   };
-  items[2] = callback2(activeSubscription(15378).ArrowButton, obj2);
-  obj.children = items;
-  return callback3(View, obj);
+  items[2] = callback3(activeSubscription(15411).ArrowButton, obj2);
+  obj[0] = items;
+  return callback4(View, obj);
 }
-({ jsx: closure_12, jsxs: closure_13 } = jsxProd);
-const result = require("result").fileFinishedImporting("modules/guild_role_subscriptions/native/purchase_page/SubscribeButton.tsx");
+({ jsx: closure_12, jsxs: map1 } = jsxProd);
+const result = require("noop").fileFinishedImporting("modules/guild_role_subscriptions/native/purchase_page/SubscribeButton.tsx");
 
 export default function SubscribeButton(listingId) {
   let activeSubscription;
   let activeSubscriptionListing;
   listingId = listingId.listingId;
-  let createSubscription;
+  let createSubscription = listingId;
+  let callback;
   let guild_id;
   let showMemberVerificationGate;
-  let obj = listingId(showMemberVerificationGate[10]);
-  let items = [closure_9];
-  let items1 = [listingId];
-  const stateFromStores = obj.useStateFromStores(items, () => outer1_9.getSubscriptionGroupListingForSubscriptionListing(listingId), items1);
+  let obj = createSubscription(showMemberVerificationGate[10]);
+  const items = [closure_9];
+  const items1 = [listingId];
+  const stateFromStores = obj.useStateFromStores(items, () => outer1_9.getSubscriptionGroupListingForSubscriptionListing(createSubscription), items1);
   let id;
-  if (null != stateFromStores) {
+  if (stateFromStores != null) {
     id = stateFromStores.id;
   }
-  const tmp2 = createSubscription(showMemberVerificationGate[22]);
-  ({ activeSubscriptionListing, activeSubscription } = createSubscription(showMemberVerificationGate[22])(id));
+  const tmp5 = callback(showMemberVerificationGate[22]);
+  ({ activeSubscriptionListing, activeSubscription } = callback(showMemberVerificationGate[22])(id));
   let id1;
-  if (null != activeSubscriptionListing) {
+  if (activeSubscriptionListing != null) {
     id1 = activeSubscriptionListing.id;
   }
-  let tmp6 = (function useCreateRoleSubscription(listingId) {
-    let obj = guild_id(showMemberVerificationGate[9]);
-    const applicationId = guild_id(showMemberVerificationGate[9]).useApplicationId(listingId);
-    const obj2 = guild_id(showMemberVerificationGate[9]);
-    const items = [outer1_8];
-    if (obj3.useStateFromStores(items, () => outer2_8.getCurrentlySelectedChannelId()) === outer1_11.ROLE_SUBSCRIPTIONS) {
-      let ROLE_SUBSCRIPTIONS_TAB = outer1_10.ROLE_SUBSCRIPTION_GATED_CHANNEL;
+  let obj1 = guild_id(tmp2[9]);
+  let obj2 = guild_id(tmp2[9]);
+  const applicationId = obj2.useApplicationId(listingId);
+  let tmpResult = tmp(tmp2[10]);
+  const items2 = [handleConnectionOpen];
+  if (tmpResult.useStateFromStores(items2, () => currentlySelectedChannelId.getCurrentlySelectedChannelId()) === StaticChannelRoute.ROLE_SUBSCRIPTIONS) {
+    let ROLE_SUBSCRIPTIONS_TAB = AnalyticsLocations.ROLE_SUBSCRIPTION_GATED_CHANNEL;
+  } else {
+    ROLE_SUBSCRIPTIONS_TAB = AnalyticsLocations.ROLE_SUBSCRIPTIONS_TAB;
+  }
+  let tmp4Result = tmp4(tmp2[11]);
+  obj = { planId: callback2(obj1.useSubscriptionPlan(listingId), 1)[0].id, analyticsLocation: ROLE_SUBSCRIPTIONS_TAB, skuId: listingId, applicationId };
+  createSubscription = tmp4Result.useCreateSubscription(obj);
+  createSubscription = createSubscription.createSubscription;
+  const nativePaymentsConnected = createSubscription.nativePaymentsConnected;
+  const tmp9Result = callback2(React.useState(false), 2);
+  callback = tmp9Result[1];
+  const items3 = [createSubscription];
+  callback = React.useCallback(callback(function*() {
+    if (c4 === 2) {
+      c4 = 3;
+      HermesBuiltin.throwTypeError();
+    } else if (tmp6 === 3) {
+      if (arg0 === 1) {
+        throw arg1;
+      } else if (arg0 === 2) {
+        let obj = { value: null, done: true };
+        obj[0] = arg1;
+        return obj;
+      } else {
+        return { value: "HermesInternal", done: null };
+      }
     } else {
-      ROLE_SUBSCRIPTIONS_TAB = outer1_10.ROLE_SUBSCRIPTIONS_TAB;
+      try {
+        c4 = 2;
+        if (0 === v0) {
+          if (arg0 === 1) {
+            c4 = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            c4 = 3;
+            obj = { value: null, done: true };
+            obj[0] = arg1;
+            return obj;
+          } else {
+            let closure_0 = tmp3;
+            let c3 = 1;
+            v0(true);
+            v0 = 2;
+            c4 = 1;
+            const obj1 = { value: null, done: false };
+            obj1[0] = outer1_0();
+            return obj1;
+          }
+        } else if (1 === tmp7) {
+          c3 = 0;
+          v0(false);
+          throw closure_2;
+        } else if (arg0 === 1) {
+          c4 = 3;
+          throw arg1;
+        } else if (arg0 === 2) {
+          c3 = 0;
+          v0(false);
+          c4 = 3;
+          obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
+        } else {
+          c3 = 0;
+          v0(false);
+          c4 = 3;
+          return { value: "HermesInternal", done: null };
+        }
+      } catch (tmp22) {
+        closure_2 = tmp22;
+        if (tmp4 === c3) {
+          c4 = tmp2;
+          throw tmp22;
+        } else {
+          v0 = tmp;
+        }
+      }
     }
-    obj3 = listingId(showMemberVerificationGate[10]);
-    obj = { planId: outer1_5(obj.useSubscriptionPlan(listingId), 1)[0].id, analyticsLocation: ROLE_SUBSCRIPTIONS_TAB, skuId: listingId, applicationId };
-    createSubscription = createSubscription(showMemberVerificationGate[11]).useCreateSubscription(obj);
-    createSubscription = createSubscription.createSubscription;
-    const tmp6 = outer1_5(outer1_6.useState(false), 2);
-    let closure_1 = tmp6[1];
-    obj = { createSubscription: outer1_6.useCallback(outer1_4(tmp), items1), loading: tmp7 };
-    // CreateGeneratorClosureLongIndex (0x67)
-    items1 = [createSubscription];
-    return obj;
-  })(listingId);
-  createSubscription = tmp6.createSubscription;
+  }), items3);
+  let first = !nativePaymentsConnected;
+  if (nativePaymentsConnected) {
+    first = tmp9Result[0];
+  }
   guild_id = undefined;
-  if (null != stateFromStores) {
+  if (stateFromStores != null) {
     guild_id = stateFromStores.guild_id;
   }
-  let obj1 = listingId(showMemberVerificationGate[23]);
-  showMemberVerificationGate = obj1.useShowMemberVerificationGate(guild_id);
-  const items2 = [createSubscription, guild_id, showMemberVerificationGate];
+  tmpResult = tmp(tmp2[23]);
+  showMemberVerificationGate = tmpResult.useShowMemberVerificationGate(guild_id);
+  const items4 = [callback, guild_id, showMemberVerificationGate];
   if (id1 === listingId) {
-    obj = { text: null, variant: "secondary", disabled: true };
-    let intl2 = listingId(showMemberVerificationGate[14]).intl;
-    obj.text = intl2.string(listingId(showMemberVerificationGate[14]).t.XvAuMo);
-    obj.onPress = function onPress() {
+    obj = { text: null, variant: "secondary", disabled: true, onPress: null };
+    let intl2 = tmp(tmp2[14]).intl;
+    obj[0] = intl2.string(tmp(tmp2[14]).t.XvAuMo);
+    obj[3] = function onPress() {
 
     };
-    let tmp15 = callback2(listingId(showMemberVerificationGate[24]).Button, obj);
+    let tmp22 = callback3(tmp(tmp2[24]).Button, obj);
   } else {
     if (null != activeSubscriptionListing) {
       if (null != activeSubscription) {
-        obj = { changeToListingId: listingId, activeListingId: activeSubscriptionListing.id, activeSubscription };
-        tmp15 = callback2(SwitchTiersButton, obj);
+        obj1 = { changeToListingId: null, activeListingId: null, activeSubscription: null };
+        obj1[0] = listingId;
+        obj1[1] = activeSubscriptionListing.id;
+        obj1[2] = activeSubscription;
+        tmp22 = callback3(SwitchTiersButton, obj1);
       }
     }
-    obj1 = {};
-    let intl = listingId(showMemberVerificationGate[14]).intl;
-    obj1.text = intl.string(listingId(showMemberVerificationGate[14]).t.BEeXib);
-    obj1.onPress = tmp9;
-    obj1.loading = tmp6.loading;
-    tmp15 = callback2(createSubscription(showMemberVerificationGate[25]), obj1);
-    const tmp13 = createSubscription(showMemberVerificationGate[25]);
+    obj2 = { text: null, onPress: null, loading: null };
+    tmp4Result = tmp4(tmp2[25]);
+    let intl = tmp(tmp2[14]).intl;
+    obj2[0] = intl.string(tmp(tmp2[14]).t.BEeXib);
+    obj2[1] = tmp19;
+    obj2[2] = first;
+    tmp22 = callback3(tmp4Result, obj2);
   }
-  return tmp15;
+  return tmp22;
 };

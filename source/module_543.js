@@ -1,7 +1,7 @@
 // Module ID: 543
-// Function ID: 6657
+// Function ID: 544
 // Dependencies: []
 
 // Module 543
 
-export default Math.floor;
+export default Object.getOwnPropertyDescriptor;

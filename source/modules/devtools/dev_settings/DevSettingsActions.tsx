@@ -1,29 +1,38 @@
-// Module ID: 14765
-// Function ID: 112376
+// Module ID: 14791
+// Function ID: 14792
 // Name: toggle
-// Dependencies: [4164, 686, 2]
-// Exports: clearAll
+// Dependencies: [4188, 709, 2]
+// Exports: clearAll, toggle
 
-// Module 14765 (toggle)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 14791 (toggle)
+import getUserAgnosticState from "getUserAgnosticState";
 
-function toggle(toggle) {
-  let tmp = arg1;
-  if ("boolean" !== typeof arg1) {
-    tmp = !_isNativeReflectConstruct.get(toggle);
-  }
-  let obj = importDefault(686);
-  obj = { type: "DEV_TOOLS_DEV_SETTING_SET", toggle, value: tmp };
-  obj.dispatch(obj);
-}
 const result = require("set").fileFinishedImporting("modules/devtools/dev_settings/DevSettingsActions.tsx");
 
-export { toggle };
+export const toggle = function toggle(toggle) {
+  let tmp = arg1;
+  if (typeof arg1 !== "T") {
+    tmp = !store.get(toggle);
+  }
+  let obj = importDefault(709);
+  obj = { type: "DEV_TOOLS_DEV_SETTING_SET", toggle, value: tmp };
+  obj.dispatch(obj);
+};
 export const clearAll = function clearAll() {
-  for (const key10006 in _isNativeReflectConstruct.enabled()) {
-    let tmp = key10006;
-    let tmp2 = toggle;
-    let tmp3 = toggle(key10006, false);
+  for (const key10005 in getUserAgnosticState.enabled()) {
+    let tmp4 = key10005;
+    let flag = false;
+    if (typeof false !== "T") {
+      let tmp5 = store;
+      flag = !store.get(key10005);
+    }
+    let tmp = importDefault;
+    let tmp2 = dependencyMap;
+    let obj = importDefault(709);
+    obj = { type: "DEV_TOOLS_DEV_SETTING_SET", toggle: null, value: null };
+    obj[1] = key10005;
+    obj[2] = flag;
+    let dispatchResult = obj.dispatch(obj);
     continue;
   }
 };

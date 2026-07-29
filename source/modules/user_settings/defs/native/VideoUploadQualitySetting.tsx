@@ -1,47 +1,47 @@
-// Module ID: 14402
-// Function ID: 110165
+// Module ID: 14424
+// Function ID: 14425
 // Name: radio
-// Dependencies: [1280, 7733, 566, 14401, 3838, 1212, 10099, 2]
+// Dependencies: [1304, 7756, 589, 14423, 3862, 1236, 10120, 2]
 
-// Module 14402 (radio)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import { VideoQualitySettings } from "_isNativeReflectConstruct";
+// Module 14424 (radio)
+import CHANNEL_SIDEBAR_WIDTH from "CHANNEL_SIDEBAR_WIDTH";
+import { VideoQualitySettings } from "CHANNEL_SIDEBAR_WIDTH";
 import createToggle from "createToggle";
 
 const require = arg1;
 createToggle = {
   useTitle() {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(require(1212) /* getSystemLocale */.t.PXq9f1);
+    const intl = require(1236) /* getSystemLocale */.intl;
+    return intl.string(require(1236) /* getSystemLocale */.t.PXq9f1);
   },
   parent: require("MobileSetting").MobileSetting.CHAT,
   useValue: function useVideoUploadQualitySettingValue() {
-    const items = [_isNativeReflectConstruct];
-    return require(566) /* initialize */.useStateFromStores(items, () => outer1_2.videoUploadQuality);
+    const items = [CHANNEL_SIDEBAR_WIDTH];
+    return require(589) /* initialize */.useStateFromStores(items, () => videoUploadQuality.videoUploadQuality);
   },
   onValueChange: function onVideoUploadQualitySettingValueChange(videoUploadQuality) {
-    let obj = require(14401) /* trackSettingsUpdated */;
-    obj = { videoUploadQuality };
-    const ViewImageDescriptions = require(3838) /* explicitContentFromProto */.ViewImageDescriptions;
-    obj.viewImageDescriptions = ViewImageDescriptions.getSetting();
-    ({ lowQualityImageMode: obj2.lowQualityImageMode, dataSavingMode: obj2.dataSavingMode } = _isNativeReflectConstruct);
+    let obj = require(14423) /* UserSettingsText */;
+    obj = { videoUploadQuality, viewImageDescriptions: null, lowQualityImageMode: null, dataSavingMode: null };
+    const ViewImageDescriptions = require(3862) /* explicitContentFromProto */.ViewImageDescriptions;
+    obj[1] = ViewImageDescriptions.getSetting();
+    ({ lowQualityImageMode: obj2[2], dataSavingMode: obj2[3] } = CHANNEL_SIDEBAR_WIDTH);
     const result = obj.setVideoUploadQuality(obj);
   },
   useOptions: function useVideoUploadQualitySettingOptions() {
-    let obj = {};
-    const intl = require(1212) /* getSystemLocale */.intl;
-    obj.label = intl.string(require(1212) /* getSystemLocale */.t.cWGW5d);
-    obj.value = VideoQualitySettings.BEST;
+    let obj = { label: null, value: null };
+    const intl = require(1236) /* getSystemLocale */.intl;
+    obj[0] = intl.string(require(1236) /* getSystemLocale */.t.cWGW5d);
+    obj[1] = VideoQualitySettings.BEST;
     const items = [obj, , ];
-    obj = {};
-    const intl2 = require(1212) /* getSystemLocale */.intl;
-    obj.label = intl2.string(require(1212) /* getSystemLocale */.t["5hKnyC"]);
-    obj.value = VideoQualitySettings.STANDARD;
+    obj = { label: null, value: null };
+    const intl2 = require(1236) /* getSystemLocale */.intl;
+    obj[0] = intl2.string(require(1236) /* getSystemLocale */.t["5hKnyC"]);
+    obj[1] = VideoQualitySettings.STANDARD;
     items[1] = obj;
-    obj = {};
-    const intl3 = require(1212) /* getSystemLocale */.intl;
-    obj.label = intl3.string(require(1212) /* getSystemLocale */.t.y5k4ZJ);
-    obj.value = VideoQualitySettings.DATA_SAVER;
+    obj = { label: null, value: null };
+    const intl3 = require(1236) /* getSystemLocale */.intl;
+    obj[0] = intl3.string(require(1236) /* getSystemLocale */.t.y5k4ZJ);
+    obj[1] = VideoQualitySettings.DATA_SAVER;
     items[2] = obj;
     return items;
   }

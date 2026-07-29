@@ -1,47 +1,48 @@
-// Module ID: 15426
-// Function ID: 117464
+// Module ID: 15459
+// Function ID: 15460
 // Name: StyleSheet
-// Dependencies: [57, 31, 27, 9104, 9095, 653, 33, 3, 4165, 689, 4359, 14898, 4019, 4026, 4594, 4101, 5617, 4024, 10865, 1207, 14894, 8094, 10851, 4017, 4016, 4575, 1457, 15368, 5251, 15364, 4697, 5484, 15427, 2]
+// Dependencies: [32, 19, 17, 9128, 9119, 676, 21, 3, 4189, 712, 4384, 14924, 4043, 4050, 4616, 4125, 5635, 4048, 10889, 1231, 14920, 8118, 10875, 4041, 4040, 4597, 1481, 15401, 5273, 15397, 4719, 5502, 15460, 2]
 // Exports: default
 
-// Module 15426 (StyleSheet)
-import _slicedToArray from "_slicedToArray";
-import importAllResult from "Layer";
-import get_ActivityIndicator from "useMainTabsChannelScreenStyles";
-import createChannelState from "createChannelState";
+// Module 15459 (StyleSheet)
+import PX_8 from "PX_8";
+import importAllResult from "ComponentDispatcher";
+import get_ActivityIndicator from "getBestActiveInput";
+import useChannelDetailsStore from "useChannelDetailsStore";
 import { MIDNIGHT_BORDER_WIDTH } from "MIN_HEADER_HEIGHT";
 import ME from "ME";
-import jsxProd from "set";
-import importDefaultResult from "createChannelState";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import jsxProd from "map";
+import createCacheKey from "createCacheKey";
 
-let closure_10;
-let closure_11;
+let c10;
 let closure_12;
-let closure_13;
 let closure_14;
-let closure_7;
-let closure_8;
+let error;
+let map1;
+let metroImportAll;
+let unpackModuleId;
 const require = arg1;
-let StyleSheet = get_ActivityIndicator.StyleSheet;
-let View = get_ActivityIndicator.View;
-({ getIsChannelDetailsSearchActive: closure_7, setIsChannelDetailsSearchActive: closure_8 } = createChannelState);
-({ AnalyticEvents: closure_10, ComponentActions: closure_11, ThemeTypes: closure_12 } = ME);
-({ jsx: closure_13, jsxs: closure_14 } = jsxProd);
-importDefaultResult = new importDefaultResult("SwipeForMemberListWrapper");
+let c4 = importAllResult;
+const StyleSheet = get_ActivityIndicator.StyleSheet;
+const View = get_ActivityIndicator.View;
+({ getIsChannelDetailsSearchActive: error, setIsChannelDetailsSearchActive: metroImportAll } = useChannelDetailsStore);
+({ AnalyticEvents: c10, ComponentActions: unpackModuleId, ThemeTypes: closure_12 } = ME);
+({ jsx: map1, jsxs: closure_14 } = jsxProd);
+let closure_15 = new require("useChannelDetailsStore")("SwipeForMemberListWrapper");
 let context = importAllResult.createContext(undefined);
-let obj = {};
-obj = { flex: 1, justifyContent: "center", alignItems: "flex-start", overflow: "hidden", backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW };
-obj.memberListPreview = obj;
-_createForOfIteratorHelperLoose = {};
+let obj = { memberListPreview: null, content: null, memberListContainer: null, midnightBorder: null, midnightRightOverflow: null };
+obj = { flex: 1, justifyContent: "center", alignItems: "flex-start", overflow: "hidden", backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW };
+obj[0] = obj;
+createCacheKey = {};
 let merged = Object.assign(StyleSheet.absoluteFillObject);
-_createForOfIteratorHelperLoose["overflow"] = "hidden";
-obj.content = _createForOfIteratorHelperLoose;
-let obj2 = { flex: 1, overflow: "hidden", backgroundColor: require("_createForOfIteratorHelperLoose").colors.MODAL_BACKGROUND };
-obj.memberListContainer = obj2;
-obj.midnightBorder = { borderLeftColor: require("_createForOfIteratorHelperLoose").colors.BORDER_STRONG, borderLeftWidth: MIDNIGHT_BORDER_WIDTH };
-obj.midnightRightOverflow = { right: -MIDNIGHT_BORDER_WIDTH };
-let closure_17 = _createForOfIteratorHelperLoose.createStyles(obj);
+createCacheKey.overflow = "hidden";
+obj[1] = createCacheKey;
+const tmp6 = new require("useChannelDetailsStore")("SwipeForMemberListWrapper");
+obj[2] = { flex: 1, overflow: "hidden", backgroundColor: require("Themes").colors.MODAL_BACKGROUND };
+let obj2 = { flex: 1, overflow: "hidden", backgroundColor: require("Themes").colors.MODAL_BACKGROUND };
+obj[3] = { borderLeftColor: require("Themes").colors.BORDER_STRONG, borderLeftWidth: MIDNIGHT_BORDER_WIDTH };
+obj[4] = { right: -MIDNIGHT_BORDER_WIDTH };
+let closure_17 = createCacheKey.createStyles(obj);
 let closure_18 = { code: "function SwipeForMemberListWrapperTsx1(){const{shownPixels}=this.__closure;return shownPixels.get()>0;}" };
 let closure_19 = { code: "function SwipeForMemberListWrapperTsx2(isVisible,wasVisible){const{mainDisallowGesture,stackDisallowGesture,panelDisallowGesture}=this.__closure;var _stackDisallowGesture;if(isVisible===wasVisible)return;mainDisallowGesture.set(isVisible);(_stackDisallowGesture=stackDisallowGesture)===null||_stackDisallowGesture===void 0||_stackDisallowGesture.set(isVisible);if(!isVisible){panelDisallowGesture.set(false);}}" };
 let closure_20 = { code: "function SwipeForMemberListWrapperTsx3(){const{isChatLockedOpen,mainTranslateX,stackTranslateX}=this.__closure;return!isChatLockedOpen&&mainTranslateX.get()>0||stackTranslateX!=null&&stackTranslateX.get()>0;}" };
@@ -49,190 +50,222 @@ let closure_21 = { code: "function SwipeForMemberListWrapperTsx4(isInactive,wasI
 let closure_22 = { code: "function SwipeForMemberListWrapperTsx5(){const{maxWidth,translateX}=this.__closure;return maxWidth-translateX.get();}" };
 let closure_23 = { code: "function SwipeForMemberListWrapperTsx6(){const{theme,ThemeTypes,isChatBesideChannelList,translateX,MIDNIGHT_BORDER_WIDTH}=this.__closure;if(theme!==ThemeTypes.MIDNIGHT||isChatBesideChannelList)return translateX.get();return translateX.get()-MIDNIGHT_BORDER_WIDTH;}" };
 let closure_24 = { code: "function SwipeForMemberListWrapperTsx7(){const{shownPixels,PEEK_PIXEL_THRESHOLD}=this.__closure;const exceedsPeekThreshold=shownPixels.get()>PEEK_PIXEL_THRESHOLD*2;return{display:exceedsPeekThreshold?'none':'flex',opacity:exceedsPeekThreshold?0:1-shownPixels.get()/PEEK_PIXEL_THRESHOLD};}" };
-let obj3 = { borderLeftColor: require("_createForOfIteratorHelperLoose").colors.BORDER_STRONG, borderLeftWidth: MIDNIGHT_BORDER_WIDTH };
+let obj3 = { borderLeftColor: require("Themes").colors.BORDER_STRONG, borderLeftWidth: MIDNIGHT_BORDER_WIDTH };
 let result = require("get ActivityIndicator").fileFinishedImporting("modules/main_tabs_v2/native/channel/SwipeForMemberListWrapper.tsx");
 
 export default function _default(channelId) {
   let children;
+  let gesture;
   let isDragging;
+  let panelGestureContext;
   let style;
   let translateX;
   channelId = channelId.channelId;
+  gesture = channelId;
   const screenIndex = channelId.screenIndex;
-  const isBackEnabled = channelId.isBackEnabled;
+  let derivedValue = screenIndex;
+  let gesture2 = channelId.isBackEnabled;
+  let disallowGesture;
+  let translateX2;
+  let gesture3;
+  let disallowGesture2;
+  let translateX3;
+  let disallowGesture3;
+  let isChatLockedOpen;
+  let maxWidth;
+  derivedValue = undefined;
+  let derivedStateFromSharedValue;
+  let callback2;
+  let callback3;
+  let closure_15;
   ({ children, style } = channelId);
-  let tmp = callback2();
-  const tmp2 = screenIndex(isBackEnabled[15])();
-  let callback = tmp2;
-  const isChatBesideChannelList = screenIndex(isBackEnabled[12])().isChatBesideChannelList;
-  const tmp3 = callback(isChatBesideChannelList.useState(channelId), 2);
-  const StyleSheet = tmp3[1];
-  let items = [channelId];
-  let effect = isChatBesideChannelList.useEffect(() => {
-    let closure_0 = channelId(isBackEnabled[16]).runAfterInteractions(() => {
-      outer1_5(closure_0);
+  let tmp = callback();
+  let tmp4 = derivedValue(gesture2[15])();
+  disallowGesture = tmp4;
+  const isChatBesideChannelList = derivedValue(gesture2[12])().isChatBesideChannelList;
+  translateX2 = isChatBesideChannelList;
+  let obj = translateX2;
+  const tmp5 = disallowGesture(translateX2.useState(channelId), 2);
+  gesture3 = tmp5[1];
+  const items = [channelId];
+  const effect = translateX2.useEffect(() => {
+    let closure_0 = gesture(gesture2[16]).runAfterInteractions(() => {
+      callback(closure_0);
     }, 200);
     return () => {
       closure_0.cancel();
     };
   }, items);
-  callback = isChatBesideChannelList.useCallback(() => {
-    channelId(isBackEnabled[17]).dismissKeyboard();
+  callback = translateX2.useCallback(() => {
+    gesture(gesture2[17]).dismissKeyboard();
   }, []);
-  const tmp6 = screenIndex(isBackEnabled[18])(screenIndex);
-  const View = tmp6;
-  let items1 = [tmp2, tmp6];
+  const tmp8 = derivedValue(gesture2[18])(screenIndex);
+  disallowGesture2 = tmp8;
+  const items1 = [tmp4, tmp8];
   const items2 = [channelId, screenIndex];
-  let memo = isChatBesideChannelList.useMemo(() => {
-    if (_slicedToArray === derivedStateFromSharedValue.MIDNIGHT) {
-      let sum = closure_6 + movePanel;
+  const memo = translateX2.useMemo(() => {
+    if (disallowGesture === derivedStateFromSharedValue.MIDNIGHT) {
+      let sum = disallowGesture2 + isChatLockedOpen;
     } else {
-      sum = closure_6;
+      sum = disallowGesture2;
     }
     return sum;
   }, items1);
-  const callback1 = isChatBesideChannelList.useCallback((arg0) => {
+  const callback1 = translateX2.useCallback((arg0) => {
     if (!arg0) {
-      translateX(channelId, false, "initial");
-      const ComponentDispatch = channelId(isBackEnabled[19]).ComponentDispatch;
-      const obj = { channelId, screenIndex };
+      disallowGesture3(gesture, false, "initial");
+      const ComponentDispatch = gesture(gesture2[19]).ComponentDispatch;
+      const obj = { channelId: null, screenIndex: null };
+      obj[0] = gesture;
+      obj[1] = derivedValue;
       ComponentDispatch.dispatch(derivedValue.CHANNEL_DETAILS_HIDDEN, obj);
     }
   }, items2);
-  let obj = { canDrag: true, onDragStart: callback, onPreMovement: callback1, startShown: false, cancelOnSwipeRightFromStart: true, openWidth: memo };
-  const tmp9 = screenIndex(isBackEnabled[20])(obj);
-  const panelGestureContext = tmp9.panelGestureContext;
-  ({ isDragging, translateX } = tmp9);
-  const movePanel = tmp9.movePanel;
-  const maxWidth = tmp9.maxWidth;
-  let obj1 = channelId(isBackEnabled[13]);
+  const tmp11 = derivedValue(gesture2[20])({ canDrag: true, onDragStart: callback, onPreMovement: callback1, startShown: false, cancelOnSwipeRightFromStart: true, openWidth: memo });
+  ({ gesture, panelGestureContext } = tmp11);
+  translateX3 = panelGestureContext;
+  ({ isDragging, translateX } = tmp11);
+  disallowGesture3 = translateX;
+  const movePanel = tmp11.movePanel;
+  isChatLockedOpen = movePanel;
+  maxWidth = tmp11.maxWidth;
+  let obj1 = gesture(gesture2[13]);
   class X {
     constructor() {
-      return maxWidth - translateX.get();
+      return maxWidth - disallowGesture.get();
     }
   }
   X.__closure = { maxWidth, translateX };
   X.__workletHash = 10842481670591;
   X.__initData = closure_22;
-  const derivedValue = obj1.useDerivedValue(X);
-  let obj2 = channelId(isBackEnabled[21]);
-  const derivedStateFromSharedValue = obj2.useDerivedStateFromSharedValue(derivedValue, (arg0) => arg0 > 0);
+  derivedValue = obj1.useDerivedValue(X);
+  let obj2 = gesture(gesture2[21]);
+  derivedStateFromSharedValue = obj2.useDerivedStateFromSharedValue(derivedValue, (arg0) => arg0 > 0);
   const items3 = [derivedStateFromSharedValue, channelId, screenIndex];
-  let effect1 = isChatBesideChannelList.useEffect(() => {
+  const effect1 = translateX2.useEffect(() => {
     if (derivedStateFromSharedValue) {
-      const ComponentDispatch = channelId(isBackEnabled[19]).ComponentDispatch;
-      const obj = { channelId, screenIndex };
+      const ComponentDispatch = gesture(gesture2[19]).ComponentDispatch;
+      const obj = { channelId: null, screenIndex: null };
+      obj[0] = gesture;
+      obj[1] = derivedValue;
       ComponentDispatch.dispatch(derivedValue.CHANNEL_DETAILS_SHOWN, obj);
     }
   }, items3);
-  let obj3 = channelId(isBackEnabled[13]);
+  let obj3 = gesture(gesture2[13]);
   function te() {
-    if (_slicedToArray === derivedStateFromSharedValue.MIDNIGHT) {
-      if (!isChatBesideChannelList) {
-        let diff = translateX.get() - movePanel;
+    if (disallowGesture === derivedStateFromSharedValue.MIDNIGHT) {
+      if (!translateX2) {
+        let diff = disallowGesture3.get() - isChatLockedOpen;
       }
       return diff;
     }
-    diff = translateX.get();
+    diff = disallowGesture3.get();
   }
-  obj = { theme: tmp2, ThemeTypes: derivedStateFromSharedValue, isChatBesideChannelList, translateX, MIDNIGHT_BORDER_WIDTH: movePanel };
+  obj = { theme: tmp4, ThemeTypes: derivedStateFromSharedValue, isChatBesideChannelList, translateX, MIDNIGHT_BORDER_WIDTH: isChatLockedOpen };
   te.__closure = obj;
   te.__workletHash = 5498466465211;
   te.__initData = closure_23;
   const derivedValue1 = obj3.useDerivedValue(te);
   const items4 = [channelId, screenIndex, movePanel];
-  callback2 = isChatBesideChannelList.useCallback((channelId) => {
-    let tmp = channelId.channelId === channelId;
+  callback2 = translateX2.useCallback((channelId) => {
+    let tmp = channelId.channelId === gesture;
     if (tmp) {
-      tmp = channelId.screenIndex === screenIndex;
+      tmp = channelId.screenIndex === derivedValue;
     }
     if (tmp) {
-      channelId(isBackEnabled[17]).dismissKeyboard();
+      gesture(gesture2[17]).dismissKeyboard();
       if (true === channelId.search) {
-        translateX(channelId.channelId, true, "initial");
+        disallowGesture3(channelId.channelId, true, "initial");
       }
-      movePanel(true, false, 0, true);
-      const obj = channelId(isBackEnabled[17]);
+      isChatLockedOpen(true, false, 0, true);
+      const obj = gesture(gesture2[17]);
     }
   }, items4);
   const items5 = [movePanel];
-  const callback3 = isChatBesideChannelList.useCallback(() => {
-    movePanel(false, false, 0, true);
+  callback3 = translateX2.useCallback(() => {
+    isChatLockedOpen(false, false, 0, true);
   }, items5);
   const items6 = [callback3];
-  const effect2 = isChatBesideChannelList.useEffect(() => {
-    let closure_0 = screenIndex(isBackEnabled[22]).addRouteChangeListener(() => {
-      outer1_14();
+  const effect2 = translateX2.useEffect(() => {
+    let closure_0 = derivedValue(gesture2[22]).addRouteChangeListener(() => {
+      callback2();
     });
     return () => {
       callback();
     };
   }, items6);
   const items7 = [callback2, callback3];
-  const effect3 = isChatBesideChannelList.useEffect(() => {
-    let ComponentDispatch = channelId(isBackEnabled[19]).ComponentDispatch;
+  const effect3 = translateX2.useEffect(() => {
+    let ComponentDispatch = gesture(gesture2[19]).ComponentDispatch;
     const subscription = ComponentDispatch.subscribe(derivedValue.SHOW_CHANNEL_DETAILS, callback2);
-    let ComponentDispatch2 = channelId(isBackEnabled[19]).ComponentDispatch;
+    let ComponentDispatch2 = gesture(gesture2[19]).ComponentDispatch;
     const subscription1 = ComponentDispatch2.subscribe(derivedValue.HIDE_CHANNEL_DETAILS, callback3);
     return () => {
-      const ComponentDispatch = channelId(isBackEnabled[19]).ComponentDispatch;
-      ComponentDispatch.unsubscribe(derivedValue.SHOW_CHANNEL_DETAILS, outer1_13);
-      const ComponentDispatch2 = channelId(isBackEnabled[19]).ComponentDispatch;
-      ComponentDispatch2.unsubscribe(derivedValue.HIDE_CHANNEL_DETAILS, outer1_14);
+      const ComponentDispatch = outer1_0(outer1_2[19]).ComponentDispatch;
+      ComponentDispatch.unsubscribe(outer1_11.SHOW_CHANNEL_DETAILS, closure_13);
+      const ComponentDispatch2 = outer1_0(outer1_2[19]).ComponentDispatch;
+      ComponentDispatch2.unsubscribe(outer1_11.HIDE_CHANNEL_DETAILS, closure_14);
     };
   }, items7);
   const items8 = [derivedValue, callback3, channelId];
-  const callback4 = isChatBesideChannelList.useCallback(() => {
+  const callback4 = translateX2.useCallback(() => {
+    let obj = derivedValue;
     if (derivedValue.get() <= 0) {
-      let obj = { shownPixels: derivedValue.get() };
+      obj = { shownPixels: null };
+      obj[0] = obj.get();
       navigation.verbose("handleBackPress", "shownPixels <= 0", obj);
       return false;
     } else {
-      const rootNavigationRef = channelId(isBackEnabled[23]).getRootNavigationRef();
+      const rootNavigationRef = gesture(gesture2[23]).getRootNavigationRef();
       let currentRoute;
-      if (null != rootNavigationRef) {
+      if (rootNavigationRef != null) {
         currentRoute = rootNavigationRef.getCurrentRoute();
       }
-      obj = channelId(isBackEnabled[12]);
-      const isChatLockedOpen = obj.getChatLayout().isChatLockedOpen;
-      let obj1 = channelId(isBackEnabled[24]);
-      const coerceChannelRouteResult = obj1.coerceChannelRoute(currentRoute);
-      let coerceGuildsRouteResult = coerceChannelRouteResult;
-      if (tmp5) {
-        let obj2 = channelId(isBackEnabled[24]);
-        coerceGuildsRouteResult = obj2.coerceGuildsRoute(currentRoute);
+      let tmp23Result = tmp23(tmp24[12]);
+      const isChatLockedOpen = tmp23Result.getChatLayout().isChatLockedOpen;
+      tmp23Result = tmp23(tmp24[24]);
+      let coerceChannelRouteResult = tmp23Result.coerceChannelRoute(currentRoute);
+      if (tmp3) {
+        coerceChannelRouteResult = tmp23(tmp24[24]).coerceGuildsRoute(currentRoute);
+        const tmp23Result1 = tmp23(tmp24[24]);
       }
-      obj = { route: coerceGuildsRouteResult, channelId, currentRoute, isChatLockedOpen };
+      obj = { route: null, channelId: null, currentRoute: null, isChatLockedOpen: null, routeParams: null };
+      obj[0] = coerceChannelRouteResult;
+      obj[1] = gesture;
+      obj[2] = currentRoute;
+      obj[3] = isChatLockedOpen;
       let params;
-      if (null != coerceGuildsRouteResult) {
-        params = coerceGuildsRouteResult.params;
+      if (coerceChannelRouteResult != null) {
+        params = coerceChannelRouteResult.params;
       }
-      obj.routeParams = params;
+      obj[4] = params;
       navigation.verbose("handleBackPress", obj);
-      if (null == coerceGuildsRouteResult) {
-        obj1 = { currentRoute, isChatLockedOpen };
+      if (null == coerceChannelRouteResult) {
+        const obj1 = { currentRoute: null, isChatLockedOpen: null };
+        obj1[0] = currentRoute;
+        obj1[1] = isChatLockedOpen;
         navigation.verbose("handleBackPress", "route is null", obj1);
         let flag = false;
       } else {
-        const params2 = coerceGuildsRouteResult.params;
-        channelId = undefined;
-        if (null != params2) {
+        const params2 = coerceChannelRouteResult.params;
+        let channelId;
+        if (params2 != null) {
           channelId = params2.channelId;
         }
-        if (channelId !== channelId) {
-          obj2 = {};
-          params = coerceGuildsRouteResult.params;
+        if (channelId !== tmp5) {
+          params = coerceChannelRouteResult.params;
           let channelId1;
-          if (null != params) {
+          if (params != null) {
             channelId1 = params.channelId;
           }
-          obj2.routeChannelId = channelId1;
-          obj2.expectedChannelId = channelId;
+          const obj2 = { routeChannelId: null, expectedChannelId: null };
+          obj2[0] = channelId1;
+          obj2[1] = tmp5;
           navigation.verbose("handleBackPress", "route channelId mismatch", obj2);
           flag = false;
-        } else if (panelGestureContext(channelId)) {
+        } else if (translateX3(tmp5)) {
           navigation.verbose("handleBackPress", "cancelling search before closing panel");
-          translateX(channelId, false, "initial");
+          disallowGesture3(tmp5, false, "initial");
           flag = true;
         } else {
           callback3();
@@ -242,203 +275,207 @@ export default function _default(channelId) {
       return flag;
     }
   }, items8);
-  screenIndex(isBackEnabled[25])(callback4, derivedStateFromSharedValue);
+  derivedValue(gesture2[25])(callback4, derivedStateFromSharedValue);
   const items9 = [channelId, screenIndex, callback3];
-  const effect4 = isChatBesideChannelList.useEffect(() => {
+  const effect4 = translateX2.useEffect(() => {
     callback3();
   }, items9);
-  let obj5 = channelId(isBackEnabled[26]);
-  let closure_15 = obj5.useNavigation();
-  (function useAnalyticsEffect(channelId, screenIndex, isDragging, derivedStateFromSharedValue) {
-    let closure_0 = channelId;
-    let closure_1 = screenIndex;
-    let closure_2 = isDragging;
-    let _slicedToArray = derivedStateFromSharedValue;
-    const items = [channelId, screenIndex, derivedStateFromSharedValue];
-    const effect = isChatBesideChannelList.useEffect(() => {
-      let obj = screenIndex(isBackEnabled[10]);
-      obj = { channel_id: closure_0, screen_index: String(closure_1), member_list_open: _slicedToArray };
-      obj.trackWithMetadata(maxWidth.MEMBER_LIST_SWIPE_TOGGLED, obj);
-    }, items);
-    const items1 = [derivedStateFromSharedValue, channelId, screenIndex, isDragging];
-    const effect1 = isChatBesideChannelList.useEffect(() => {
-      let value = _slicedToArray;
-      if (_slicedToArray) {
-        value = isDragging.get();
-      }
-      if (value) {
-        let obj = screenIndex(isBackEnabled[10]);
-        obj = { channel_id: closure_0 };
-        const _String = String;
-        obj.screen_index = String(closure_1);
-        obj.trackWithMetadata(maxWidth.MEMBER_LIST_SWIPE_PEEK, obj);
-      }
-    }, items1);
-  })(channelId, screenIndex, isDragging, derivedStateFromSharedValue);
-  const items10 = [panelGestureContext, channelId, screenIndex, derivedStateFromSharedValue];
-  const memo1 = isChatBesideChannelList.useMemo(() => {
-    const obj = {};
-    const merged = Object.assign(panelGestureContext);
-    obj["channelId"] = channelId;
-    obj["screenIndex"] = screenIndex;
-    obj["isPanelActive"] = derivedStateFromSharedValue;
-    return obj;
+  let obj5 = gesture(gesture2[26]);
+  closure_15 = obj5.useNavigation();
+  gesture = channelId;
+  derivedValue = screenIndex;
+  gesture2 = isDragging;
+  disallowGesture = derivedStateFromSharedValue;
+  const items10 = [channelId, screenIndex, derivedStateFromSharedValue];
+  const effect5 = translateX2.useEffect(() => {
+    let obj = derivedValue(gesture2[10]);
+    obj = { channel_id: gesture, screen_index: String(derivedValue), member_list_open: disallowGesture };
+    obj.trackWithMetadata(maxWidth.MEMBER_LIST_SWIPE_TOGGLED, obj);
   }, items10);
-  let obj6 = channelId(isBackEnabled[27]);
-  const mainTabsChannelScreenStyles = obj6.useMainTabsChannelScreenStyles(isDragging, derivedValue1, maxWidth);
-  let obj7 = channelId(isBackEnabled[13]);
-  function le() {
-    const tmp = derivedValue.get() > 300;
+  const items11 = [derivedStateFromSharedValue, channelId, screenIndex, isDragging];
+  const effect6 = translateX2.useEffect(() => {
+    let value = disallowGesture;
+    if (disallowGesture) {
+      value = gesture2.get();
+    }
+    if (value) {
+      let obj = derivedValue(gesture2[10]);
+      obj = { channel_id: null, screen_index: null };
+      obj[0] = gesture;
+      const _String = String;
+      obj[1] = String(derivedValue);
+      obj.trackWithMetadata(maxWidth.MEMBER_LIST_SWIPE_PEEK, obj);
+    }
+  }, items11);
+  gesture2 = undefined;
+  disallowGesture = undefined;
+  translateX2 = undefined;
+  gesture3 = undefined;
+  disallowGesture2 = undefined;
+  translateX3 = undefined;
+  disallowGesture3 = undefined;
+  isChatLockedOpen = undefined;
+  const context = translateX2.useContext(derivedValue(gesture2[11]));
+  gesture2 = context.gesture;
+  disallowGesture = context.disallowGesture;
+  translateX2 = context.translateX;
+  let context1 = translateX2.useContext(gesture(gesture2[11]).MainTabsChannelScreenStackContext);
+  if (context1 == null) {
+    context1 = {};
+  }
+  gesture3 = context1.gesture;
+  disallowGesture2 = context1.disallowGesture;
+  translateX3 = context1.translateX;
+  disallowGesture3 = panelGestureContext.disallowGesture;
+  isChatLockedOpen = tmp2(tmp3[12])().isChatLockedOpen;
+  const items12 = [gesture, gesture2, gesture3];
+  const memo1 = obj.useMemo(() => {
+    if (null == gesture3) {
+      let result = gesture.simultaneousWithExternalGesture(gesture2);
+    } else {
+      result = gesture.simultaneousWithExternalGesture(gesture2, tmp);
+    }
+    return result;
+  }, items12);
+  let tmp12Result = tmp12(tmp3[13]);
+  const fn = function c() {
+    return derivedValue.get() > 0;
+  };
+  fn.__closure = { shownPixels: derivedValue };
+  fn.__workletHash = 15116046915956;
+  fn.__initData = closure_18;
+  const fn2 = function o(arg0, arg1) {
+    if (arg0 !== arg1) {
+      const result = disallowGesture.set(arg0);
+      if (disallowGesture2 != null) {
+        const result1 = obj.set(arg0);
+      }
+      if (!arg0) {
+        const result2 = disallowGesture3.set(false);
+      }
+      obj = disallowGesture2;
+    }
+  };
+  fn2.__closure = { mainDisallowGesture: disallowGesture, stackDisallowGesture: disallowGesture2, panelDisallowGesture: disallowGesture3 };
+  fn2.__workletHash = 13681610289748;
+  fn2.__initData = closure_19;
+  const animatedReaction = tmp12Result.useAnimatedReaction(fn, fn2);
+  tmp12Result = tmp12(tmp3[13]);
+  const fn3 = function h() {
+    let tmp = !isChatLockedOpen;
+    if (!isChatLockedOpen) {
+      tmp = translateX2.get() > 0;
+    }
+    if (!tmp) {
+      let tmp4 = null != translateX3;
+      if (tmp4) {
+        tmp4 = obj.get() > 0;
+      }
+      tmp = tmp4;
+      obj = translateX3;
+    }
+    return tmp;
+  };
+  fn3.__closure = { isChatLockedOpen, mainTranslateX: translateX2, stackTranslateX: translateX3 };
+  fn3.__workletHash = 11938850302839;
+  fn3.__initData = closure_20;
+  const fn4 = function u(arg0, arg1) {
+    if (arg0 !== arg1) {
+      const result = disallowGesture3.set(arg0);
+    }
+  };
+  fn4.__closure = { panelDisallowGesture: disallowGesture3 };
+  fn4.__workletHash = 3362957347102;
+  fn4.__initData = closure_21;
+  const animatedReaction1 = tmp12Result.useAnimatedReaction(fn3, fn4);
+  const unmountEffect = gesture(gesture2[14]).useUnmountEffect(() => {
+    const result = disallowGesture3.set(false);
+    const result1 = disallowGesture.set(false);
+    if (disallowGesture2 != null) {
+      const result2 = disallowGesture2.set(false);
+    }
+  });
+  const items13 = [panelGestureContext, channelId, screenIndex, derivedStateFromSharedValue];
+  const memo2 = obj.useMemo(() => {
     const obj = {};
+    const merged = Object.assign(translateX3);
+    obj.channelId = gesture;
+    obj.screenIndex = derivedValue;
+    obj.isPanelActive = derivedStateFromSharedValue;
+    return obj;
+  }, items13);
+  const tmp12Result1 = gesture(gesture2[14]);
+  const mainTabsChannelScreenStyles = gesture(gesture2[27]).useMainTabsChannelScreenStyles(isDragging, derivedValue1, maxWidth);
+  const tmp12Result2 = gesture(gesture2[27]);
+  function le() {
+    let obj = derivedValue;
+    const tmp = derivedValue.get() > 300;
     let str = "flex";
     if (tmp) {
       str = "none";
     }
-    obj.display = str;
+    obj = { display: str, opacity: null };
     let num = 0;
     if (!tmp) {
-      num = 1 - derivedValue.get() / 150;
+      num = 1 - obj.get() / 150;
     }
-    obj.opacity = num;
+    obj[1] = num;
     return obj;
   }
   le.__closure = { shownPixels: derivedValue, PEEK_PIXEL_THRESHOLD: 150 };
   le.__workletHash = 9468759128012;
   le.__initData = closure_24;
-  obj = { value: memo1 };
-  const animatedStyle = obj7.useAnimatedStyle(le);
-  obj1 = {
-    gesture: (function useGestureCompositionEffect(gesture, derivedValue, panelGestureContext) {
-      let closure_0 = gesture;
-      let closure_1 = derivedValue;
-      const context = isChatBesideChannelList.useContext(screenIndex(isBackEnabled[11]));
-      gesture = context.gesture;
-      const disallowGesture = context.disallowGesture;
-      const translateX = context.translateX;
-      let context1 = isChatBesideChannelList.useContext(channelId(isBackEnabled[11]).MainTabsChannelScreenStackContext);
-      if (null == context1) {
-        context1 = {};
-      }
-      const gesture2 = context1.gesture;
-      const disallowGesture2 = context1.disallowGesture;
-      const translateX2 = context1.translateX;
-      const disallowGesture3 = panelGestureContext.disallowGesture;
-      const isChatLockedOpen = screenIndex(isBackEnabled[12])().isChatLockedOpen;
-      const items = [gesture, gesture, gesture2];
-      const memo = isChatBesideChannelList.useMemo(() => {
-        if (null == gesture2) {
-          let result = gesture.simultaneousWithExternalGesture(gesture);
-        } else {
-          result = gesture.simultaneousWithExternalGesture(gesture, gesture2);
-        }
-        return result;
-      }, items);
-      const fn = function u() {
-        return derivedValue.get() > 0;
-      };
-      fn.__closure = { shownPixels: derivedValue };
-      fn.__workletHash = 15116046915956;
-      fn.__initData = outer1_18;
-      const fn2 = function c(arg0, arg1) {
-        if (arg0 !== arg1) {
-          const result = disallowGesture.set(arg0);
-          if (null != disallowGesture2) {
-            const result1 = disallowGesture2.set(arg0);
-          }
-          if (!arg0) {
-            const result2 = disallowGesture3.set(false);
-          }
-        }
-      };
-      fn2.__closure = { mainDisallowGesture: disallowGesture, stackDisallowGesture: disallowGesture2, panelDisallowGesture: disallowGesture3 };
-      fn2.__workletHash = 13681610289748;
-      fn2.__initData = outer1_19;
-      const animatedReaction = channelId(isBackEnabled[13]).useAnimatedReaction(fn, fn2);
-      const obj2 = channelId(isBackEnabled[13]);
-      const fn3 = function _() {
-        let tmp = !isChatLockedOpen;
-        if (tmp) {
-          tmp = translateX.get() > 0;
-        }
-        if (!tmp) {
-          let tmp5 = null != translateX2;
-          if (tmp5) {
-            tmp5 = translateX2.get() > 0;
-          }
-          tmp = tmp5;
-        }
-        return tmp;
-      };
-      fn3.__closure = { isChatLockedOpen, mainTranslateX: translateX, stackTranslateX: translateX2 };
-      fn3.__workletHash = 11938850302839;
-      fn3.__initData = outer1_20;
-      const fn4 = function h(arg0, arg1) {
-        if (arg0 !== arg1) {
-          const result = disallowGesture3.set(arg0);
-        }
-      };
-      fn4.__closure = { panelDisallowGesture: disallowGesture3 };
-      fn4.__workletHash = 3362957347102;
-      fn4.__initData = outer1_21;
-      const animatedReaction1 = channelId(isBackEnabled[13]).useAnimatedReaction(fn3, fn4);
-      const obj3 = channelId(isBackEnabled[13]);
-      const unmountEffect = channelId(isBackEnabled[14]).useUnmountEffect(() => {
-        const result = disallowGesture3.set(false);
-        const result1 = disallowGesture.set(false);
-        if (null != disallowGesture2) {
-          const result2 = disallowGesture2.set(false);
-        }
-      });
-      return memo;
-    })(tmp9.gesture, derivedValue, panelGestureContext)
-  };
+  obj = { value: memo2, children: null };
+  const animatedStyle = gesture(gesture2[13]).useAnimatedStyle(le);
+  obj1 = { gesture: memo1, children: null };
   obj2 = {
     style,
     onAccessibilityEscape() {
-      if (isBackEnabled) {
+      if (gesture2) {
         navigation.goBack();
       }
-    }
+    },
+    children: null
   };
-  obj3 = { style: tmp.content, accessibilityElementsHidden: !!derivedStateFromSharedValue };
+  obj3 = { style: tmp.content, accessibilityElementsHidden: null, importantForAccessibility: null, children: null };
+  obj3[1] = derivedStateFromSharedValue;
   let str;
   if (derivedStateFromSharedValue) {
     str = "no-hide-descendants";
   }
-  obj3.importantForAccessibility = str;
-  const items11 = [children, callback2(channelId(isBackEnabled[29]).MainTabsContentScrim, { translateX: derivedValue1, maxWidth })];
-  obj3.children = items11;
-  const items12 = [callback3(View, obj3), ];
-  const obj4 = {};
-  const items13 = [mainTabsChannelScreenStyles, tmp.memberListContainer, , ];
+  obj3[2] = str;
+  const items14 = [children, callback2(gesture(gesture2[29]).MainTabsContentScrim, { translateX: derivedValue1, maxWidth })];
+  obj3[3] = items14;
+  const items15 = [callback3(disallowGesture2, obj3), ];
+  const items16 = [mainTabsChannelScreenStyles, tmp.memberListContainer, , ];
   let midnightBorder;
-  if (tmp2 === derivedStateFromSharedValue.MIDNIGHT) {
+  if (tmp4 === derivedStateFromSharedValue.MIDNIGHT) {
     midnightBorder = tmp.midnightBorder;
   }
-  items13[2] = midnightBorder;
+  items16[2] = midnightBorder;
   let prop;
   if (!isChatBesideChannelList) {
-    if (tmp2 === derivedStateFromSharedValue.MIDNIGHT) {
+    if (tmp4 === tmp16.MIDNIGHT) {
       prop = tmp.midnightRightOverflow;
     }
   }
-  items13[3] = prop;
-  obj4.style = items13;
-  obj4.accessibilityElementsHidden = !derivedStateFromSharedValue || undefined;
-  obj4.importantForAccessibility = "no-hide-descendants";
-  const items14 = [callback2(screenIndex(isBackEnabled[30]), { absolute: true, withOverlay: true, overlayOpacity: 0.5 }), , ];
-  obj5 = { children: callback2(screenIndex(isBackEnabled[32]), { isShowing: derivedStateFromSharedValue, channelId: tmp3[0], isSearchLocked: false, onBackPress: callback4, componentWidth: tmp6, onChannelDeleted: callback3 }) };
-  items14[1] = callback2(channelId(isBackEnabled[31]).LayerScope, obj5);
-  obj6 = { style: items15 };
-  items15 = [StyleSheet.absoluteFill, animatedStyle];
-  obj7 = { style: tmp.memberListPreview };
-  obj6.children = callback2(View, obj7);
-  items14[2] = callback2(screenIndex(isBackEnabled[13]).View, obj6);
-  obj4.children = items14;
-  items12[1] = callback3(screenIndex(isBackEnabled[13]).View, obj4);
-  obj2.children = items12;
-  obj1.children = callback3(View, obj2);
-  obj.children = callback2(channelId(isBackEnabled[28]).GestureDetector, obj1);
+  const obj4 = { style: items16, accessibilityElementsHidden: null, importantForAccessibility: null, children: null };
+  items16[3] = prop;
+  obj4[1] = !derivedStateFromSharedValue;
+  obj4[2] = "no-hide-descendants";
+  const items17 = [callback2(derivedValue(gesture2[30]), { absolute: true, withOverlay: true, overlayOpacity: 0.5 }), , ];
+  obj5 = { children: null };
+  obj5[0] = callback2(derivedValue(gesture2[32]), { isShowing: derivedStateFromSharedValue, channelId: tmp5[0], isSearchLocked: false, onBackPress: callback4, componentWidth: tmp8, onChannelDeleted: callback3 });
+  items17[1] = callback2(gesture(gesture2[31]).LayerScope, obj5);
+  const obj6 = { style: items18, children: null };
+  items18 = [gesture3.absoluteFill, animatedStyle];
+  obj6[1] = callback2(disallowGesture2, { style: tmp.memberListPreview });
+  items17[2] = callback2(derivedValue(gesture2[13]).View, obj6);
+  obj4[3] = items17;
+  items15[1] = callback3(derivedValue(gesture2[13]).View, obj4);
+  obj2[2] = items15;
+  obj1[1] = callback3(disallowGesture2, obj2);
+  obj[1] = callback2(gesture(gesture2[28]).GestureDetector, obj1);
   return callback2(context.Provider, obj);
 };
 export const SwipeForMemberListContext = context;

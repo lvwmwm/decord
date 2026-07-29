@@ -1,15 +1,15 @@
-// Module ID: 5482
-// Function ID: 46714
+// Module ID: 5500
+// Function ID: 5501
 // Name: BottomSheetBackdrop
-// Dependencies: [31, 33, 4165, 5223, 5251, 4026, 4566, 2]
+// Dependencies: [19, 21, 4189, 5245, 5273, 4050, 4588, 2]
 
-// Module 5482 (BottomSheetBackdrop)
-import importAllResult from "result";
+// Module 5500 (BottomSheetBackdrop)
+import importAllResult from "noop";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
 const require = arg1;
-let closure_4 = _createForOfIteratorHelperLoose.createStyles({ container: { flex: 1 } });
+let closure_4 = createCacheKey.createStyles({ container: { flex: 1 } });
 let closure_5 = { code: "function BottomSheetBackdropNativeTsx1(){const{runOnJS,handleOnPress}=this.__closure;runOnJS(handleOnPress)();}" };
 let closure_6 = { code: "function BottomSheetBackdropNativeTsx2(){const{interpolate,animatedIndex,disappearsOnIndex,appearsOnIndex,opacity}=this.__closure;return{opacity:interpolate(animatedIndex.get(),[-1,disappearsOnIndex,appearsOnIndex],[0,0,opacity])};}" };
 const memoResult = importAllResult.memo((animatedIndex) => {
@@ -45,22 +45,22 @@ const memoResult = importAllResult.memo((animatedIndex) => {
   close = bottomSheet.close;
   let items = [snapToIndex, close, num3, str, onPress];
   callback = num2.useCallback(() => {
-    if (null != onPress) {
-      onPress();
+    if (onPress != null) {
+      tmp();
     }
     if ("close" === str) {
       close();
-    } else if ("collapse" === "collapse") {
+    } else if ("collapse" === tmp3) {
       snapToIndex(num3);
-    } else if ("number" === typeof str) {
-      snapToIndex(str);
+    } else if (typeof tmp3 !== "os") {
+      snapToIndex(tmp3);
     }
   }, items);
   const Gesture = animatedIndex(num[4]).Gesture;
   class I {
     constructor() {
       obj = animatedIndex(c1[5]);
-      tmp = obj.runOnJS(useCallback)();
+      tmp = obj.runOnJS(useBottomSheet)();
       return;
     }
   }
@@ -69,18 +69,19 @@ const memoResult = importAllResult.memo((animatedIndex) => {
   I.__workletHash = 3995467602852;
   I.__initData = onPress;
   const TapResult = Gesture.Tap();
+  const tmp2 = animatedIndex;
+  const tmp3 = num;
   const onEndResult = Gesture.Tap().onEnd(I);
   class S {
     constructor() {
-      obj = {};
+      obj = { opacity: null };
       obj2 = animatedIndex(c1[5]);
-      items = [, , ];
-      items[0] = -1;
+      items = [-1];
       items[1] = c3;
       items[2] = c2;
       items1 = [0, 0];
       items1[2] = c1;
-      obj.opacity = obj2.interpolate(animatedIndex.get(), items, items1);
+      obj[0] = obj2.interpolate(animatedIndex.get(), items, items1);
       return obj;
     }
   }
@@ -94,14 +95,16 @@ const memoResult = importAllResult.memo((animatedIndex) => {
     const items = [_undefined.container, style, animatedStyle];
     return items;
   }, items1);
-  const tmp7 = num3(animatedIndex(num[6]).Backdrop, { blur: "none", style: memo, onDismiss: callback, "aria-hidden": true });
-  let tmp8 = tmp7;
+  const tmp10 = num3(animatedIndex(num[6]).Backdrop, { blur: "none", style: memo, onDismiss: callback, "aria-hidden": true });
+  let tmp9Result = tmp10;
   if ("none" !== str) {
-    const obj1 = { gesture: onEndResult, children: tmp7 };
-    tmp8 = num3(animatedIndex(num[4]).GestureDetector, obj1);
+    const obj1 = { gesture: null, children: null };
+    obj1[0] = onEndResult;
+    obj1[1] = tmp10;
+    tmp9Result = num3(tmp2(tmp3[4]).GestureDetector, obj1);
   }
-  return tmp8;
+  return tmp9Result;
 });
-const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("design/components/Sheet/native/BottomSheetBackdrop.native.tsx");
+const result = require("createCacheKey").fileFinishedImporting("design/components/Sheet/native/BottomSheetBackdrop.native.tsx");
 
 export const BottomSheetBackdrop = memoResult;

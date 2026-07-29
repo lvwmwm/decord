@@ -1,15 +1,15 @@
-// Module ID: 14480
-// Function ID: 110541
+// Module ID: 14502
+// Function ID: 14503
 // Name: route
-// Dependencies: [653, 10099, 1212, 4121, 14481, 2]
+// Dependencies: [676, 10120, 1236, 4145, 14503, 2]
 
-// Module 14480 (route)
+// Module 14502 (route)
 import createToggle from "createToggle";
 
 obj = {
   useTitle() {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(require(1212) /* getSystemLocale */.t.LRmNAl);
+    const intl = require(1236) /* getSystemLocale */.intl;
+    return intl.string(require(1236) /* getSystemLocale */.t.LRmNAl);
   },
   parent: null,
   IconComponent: require("CircleInformationIcon").CircleInformationIcon,
@@ -18,7 +18,7 @@ obj = {
 obj = {
   route: require("ME").UserSettingsSections.CHANGE_LOG,
   getComponent() {
-    return require(14481) /* _callSuper */.ChangeLogScreen;
+    return require(14503) /* ChangeLogScreen */.ChangeLogScreen;
   }
 };
 const route = createToggle.createRoute(obj);

@@ -1,29 +1,29 @@
-// Module ID: 15371
-// Function ID: 117112
+// Module ID: 15404
+// Function ID: 15405
 // Name: UnavailableNotice
-// Dependencies: [31, 27, 33, 4165, 689, 5119, 15177, 4161, 2]
+// Dependencies: [19, 17, 21, 4189, 712, 5141, 15210, 4185, 2]
 // Exports: default
 
-// Module 15371 (UnavailableNotice)
-import "result";
+// Module 15404 (UnavailableNotice)
+import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_4;
-let closure_5;
+let c4;
+let c5;
 const require = arg1;
-({ jsx: closure_4, jsxs: closure_5 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { flex: 1, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW };
-_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.brightTitle = { color: require("_createForOfIteratorHelperLoose").colors.MOBILE_TEXT_HEADING_PRIMARY };
-_createForOfIteratorHelperLoose.unavailableContainer = { justifyContent: "center" };
-_createForOfIteratorHelperLoose.unavailableInfo = { alignItems: "center", justifyContent: "center" };
-_createForOfIteratorHelperLoose.unavailableDescription = { marginTop: 8, marginHorizontal: 16, textAlign: "center" };
-_createForOfIteratorHelperLoose.joinCtaTitle = { alignSelf: "center", marginTop: 16, paddingHorizontal: 24, textAlign: "center" };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-let obj1 = { color: require("_createForOfIteratorHelperLoose").colors.MOBILE_TEXT_HEADING_PRIMARY };
+({ jsx: c4, jsxs: c5 } = jsxProd);
+createCacheKey = { container: null, brightTitle: null, unavailableContainer: null, unavailableInfo: null, unavailableDescription: null, joinCtaTitle: null };
+createCacheKey = { flex: 1, backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { color: require("Themes").colors.MOBILE_TEXT_HEADING_PRIMARY };
+createCacheKey[2] = { justifyContent: "center" };
+createCacheKey[3] = { alignItems: "center", justifyContent: "center" };
+createCacheKey[4] = { marginTop: 8, marginHorizontal: 16, textAlign: "center" };
+createCacheKey[5] = { alignSelf: "center", marginTop: 16, paddingHorizontal: 24, textAlign: "center" };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+const obj1 = { color: require("Themes").colors.MOBILE_TEXT_HEADING_PRIMARY };
 const result = require("jsxProd").fileFinishedImporting("modules/guild_role_subscriptions/native/components/UnavailableNotice.tsx");
 
 export default function UnavailableNotice(brightTitle) {
@@ -31,25 +31,22 @@ export default function UnavailableNotice(brightTitle) {
   let title;
   brightTitle = brightTitle.brightTitle;
   ({ title, description } = brightTitle);
-  const tmp = _createForOfIteratorHelperLoose();
-  let obj = { style: items };
+  const tmp = createCacheKey();
+  let obj = { style: items, children: null };
   items = [, ];
   ({ container: arr[0], unavailableContainer: arr[1] } = tmp);
-  obj = { style: tmp.unavailableInfo };
-  obj = { source: importDefault(15177) };
-  const items1 = [callback(importDefault(5119), obj), , ];
-  const obj1 = { variant: "heading-lg/extrabold", color: "text-default" };
+  obj = { style: tmp.unavailableInfo, children: null };
+  obj = { source: null };
+  obj[0] = importDefault(15210);
+  const items1 = [callback(importDefault(5141), obj), , ];
   const items2 = [tmp.joinCtaTitle, ];
   if (brightTitle) {
     brightTitle = tmp.brightTitle;
   }
   items2[1] = brightTitle;
-  obj1.style = items2;
-  obj1.children = title;
-  items1[1] = callback(require(4161) /* Text */.Text, obj1);
-  const obj2 = { style: tmp.unavailableDescription, variant: "text-sm/medium", color: "text-default", children: description };
-  items1[2] = callback(require(4161) /* Text */.Text, obj2);
-  obj.children = items1;
-  obj.children = closure_5(View, obj);
+  items1[1] = callback(require(4185) /* Text */.Text, { variant: "heading-lg/extrabold", color: "text-default", style: items2, children: title });
+  items1[2] = callback(require(4185) /* Text */.Text, { style: tmp.unavailableDescription, variant: "text-sm/medium", color: "text-default", children: description });
+  obj[1] = items1;
+  obj[1] = closure_5(View, obj);
   return callback(View, obj);
 };

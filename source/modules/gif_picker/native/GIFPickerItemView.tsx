@@ -1,23 +1,24 @@
-// Module ID: 9589
-// Function ID: 74637
+// Module ID: 9611
+// Function ID: 9612
 // Name: GIFPickerItemView
-// Dependencies: [31, 27, 33, 4165, 9579, 689, 1820, 4133, 9590, 1935, 1212, 4695, 5119, 2]
+// Dependencies: [19, 17, 21, 4189, 9600, 712, 1844, 4157, 9612, 1959, 1236, 4717, 5141, 2]
 // Exports: default
 
-// Module 9589 (GIFPickerItemView)
-import importAllResult from "result";
+// Module 9611 (GIFPickerItemView)
+import importAllResult from "noop";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
 const require = arg1;
-let closure_6 = _createForOfIteratorHelperLoose.createStyles((height) => {
-  let obj = {};
-  obj = { paddingBottom: require(9579) /* transformFavoriteGifUrl */.GIF_PICKER_GUTTER_SPACING, paddingHorizontal: require(9579) /* transformFavoriteGifUrl */.GIF_PICKER_GUTTER_SPACING / 2, borderRadius: importDefault(689).radii.xs, width: "100%", height, flex: 1 };
-  obj.container = obj;
-  obj = { backgroundColor: importDefault(689).colors.BORDER_SUBTLE, borderRadius: importDefault(689).radii.xs, flex: 1 };
-  obj.gifImage = obj;
-  obj.gifImageSelected = { borderWidth: 2, borderColor: importDefault(689).colors.BACKGROUND_BRAND };
+let c3 = importAllResult;
+let closure_6 = createCacheKey.createStyles((height) => {
+  let obj = { container: null, gifImage: null, gifImageSelected: null };
+  obj = { paddingBottom: require(9600) /* transformFavoriteGifUrl */.GIF_PICKER_GUTTER_SPACING, paddingHorizontal: require(9600) /* transformFavoriteGifUrl */.GIF_PICKER_GUTTER_SPACING / 2, borderRadius: importDefault(712).radii.xs, width: "100%", height, flex: 1 };
+  obj[0] = obj;
+  obj = { backgroundColor: importDefault(712).colors.BORDER_SUBTLE, borderRadius: importDefault(712).radii.xs, flex: 1 };
+  obj[1] = obj;
+  obj[2] = { borderWidth: 2, borderColor: importDefault(712).colors.BACKGROUND_BRAND };
   return obj;
 });
 const memoResult = importAllResult.memo((height) => {
@@ -51,26 +52,27 @@ export default function GIFPickerItemView(onPressGIF) {
     const parts = item.src.split("/");
     const str2 = parts.pop();
     let first;
-    if (null != str2) {
+    if (str2 != null) {
       first = str2.split(".")[0];
     }
     if (null == first) {
       const intl = onPressGIF(index[10]).intl;
-      const obj = { index: index + 1 };
+      const obj = { index: null };
+      obj[0] = index + 1;
       first = intl.formatToPlainString(onPressGIF(index[10]).t["5iIGZI"], obj);
     }
     return first;
   }, items2);
-  let obj = { style: tmp.container, accessibilityRole: "button", accessibilityLabel: memo };
-  let tmp6;
+  let obj = { style: tmp.container, accessibilityRole: "button", accessibilityLabel: memo, accessibilityState: null, onPress: null, onLongPress: null, children: null };
+  let tmp7;
   if (null != selected) {
-    obj = { selected };
-    tmp6 = obj;
+    obj = { selected: null };
+    obj[0] = selected;
+    tmp7 = obj;
   }
-  obj.accessibilityState = tmp6;
-  obj.onPress = callback;
-  obj.onLongPress = callback1;
-  obj = {};
+  obj[3] = tmp7;
+  obj[4] = callback;
+  obj[5] = callback1;
   if (true === selected) {
     const items3 = [, ];
     ({ gifImage: arr4[0], gifImageSelected: arr4[1] } = tmp);
@@ -78,9 +80,8 @@ export default function GIFPickerItemView(onPressGIF) {
   } else {
     gifImage = tmp.gifImage;
   }
-  obj.style = gifImage;
-  obj.source = { uri: item.src };
-  obj.children = jsx(item(index[12]), {});
-  return jsx(onPressGIF(index[11]).PressableOpacity, {});
+  obj = { uri: item.src };
+  obj[6] = jsx(item(index[12]), { style: gifImage, source: obj });
+  return jsx(onPressGIF(index[11]).PressableOpacity, { uri: item.src });
 };
 export const GIFPickerItemPlaceholder = memoResult;

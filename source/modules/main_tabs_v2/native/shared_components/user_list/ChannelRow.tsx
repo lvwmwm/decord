@@ -1,30 +1,31 @@
-// Module ID: 9072
-// Function ID: 71110
-// Dependencies: [31, 27, 1348, 1838, 4177, 3802, 1850, 8789, 4361, 33, 4165, 689, 566, 4355, 9073, 9908, 4680, 4673, 4161, 3835, 3747, 9068, 5198, 2]
+// Module ID: 9096
+// Function ID: 9097
+// Dependencies: [19, 17, 1372, 1862, 4201, 3826, 1874, 8813, 4386, 21, 4189, 712, 589, 4380, 9097, 9930, 4702, 4695, 4185, 3859, 3771, 9092, 5220, 2]
 
-// Module 9072
-import importAllResult from "result";
-import { View } from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_6 from "_createForOfIteratorHelperLoose";
-import closure_7 from "_isNativeReflectConstruct";
-import closure_8 from "_isNativeReflectConstruct";
-import closure_9 from "_isNativeReflectConstruct";
+// Module 9096
+import importAllResult from "resetCache";
+import { View } from "TextIcon";
+import ensureGuildLoaded from "ensureGuildLoaded";
+import createGuildRecordFromRust from "createGuildRecordFromRust";
+import generateOldThreadCutoff from "generateOldThreadCutoff";
+import upsertRelationship from "upsertRelationship";
+import mergeGuildAvatar from "mergeGuildAvatar";
 import { UserRowModes } from "UserRowModes";
 import { ReadStateTypes } from "ReadStateTypes";
-import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import jsxProd from "TableCheckboxRow";
+import createCacheKey from "createCacheKey";
 
 let closure_12;
-let closure_13;
 let closure_14;
+let map1;
 const require = arg1;
-({ jsx: closure_12, Fragment: closure_13, jsxs: closure_14 } = jsxProd);
-let obj = { guildIcon: { flexShrink: 0, flexGrow: 0 }, subLabel: { display: "flex", flexDirection: "row", alignItems: "center" }, subLabelIcon: { width: 12, height: 12, marginRight: 2 } };
-obj = { marginHorizontal: require("_createForOfIteratorHelperLoose").space.PX_4 };
-obj.subLabelSeparator = obj;
-obj.threadName = { flexShrink: 1 };
-let closure_15 = _createForOfIteratorHelperLoose.createStyles(obj);
+let c3 = importAllResult;
+({ jsx: closure_12, Fragment: map1, jsxs: closure_14 } = jsxProd);
+let obj = { guildIcon: { flexShrink: 0, flexGrow: 0 }, subLabel: { display: "flex", flexDirection: "row", alignItems: "center" }, subLabelIcon: { width: 12, height: 12, marginRight: 2 }, subLabelSeparator: null, threadName: null };
+obj = { marginHorizontal: require("Themes").space.PX_4 };
+obj[3] = obj;
+obj[4] = { flexShrink: 1 };
+let closure_15 = createCacheKey.createStyles(obj);
 const memoResult = importAllResult.memo(function ChannelRow(channel) {
   channel = channel.channel;
   let NONE = channel.mode;
@@ -44,24 +45,22 @@ const memoResult = importAllResult.memo(function ChannelRow(channel) {
   const trailing = channel.trailing;
   const subLabel = channel.subLabel;
   const label = channel.label;
-  let obj = { channel: 0, mode: 0, selected: 0, disabled: 0, onPress: 0, onLongPress: 0, trailing: 0, subLabel: 0, label: 0 };
-  Object.setPrototypeOf(null);
-  const merged = Object.assign(channel, obj);
+  const merged = Object.assign(channel, Object.create(null));
   let c7;
   let stateFromStores;
   let c9;
   stateFromStores1 = undefined;
   let stateFromStores2;
-  const tmp4 = callback2();
-  c7 = tmp4;
-  let obj1 = channel(onPress[12]);
+  let tmp3 = callback2();
+  c7 = tmp3;
+  let obj = channel(onPress[12]);
   let items = [label];
-  stateFromStores = obj1.useStateFromStores(items, () => label.getGuild(channel.guild_id));
-  const tmp6 = flag2(onPress[13])(channel);
-  c9 = tmp6;
-  let obj2 = channel(onPress[12]);
+  stateFromStores = obj.useStateFromStores(items, () => label.getGuild(channel.guild_id));
+  const tmp7 = flag2(onPress[13])(channel);
+  c9 = tmp7;
+  let obj1 = channel(onPress[12]);
   let items1 = [subLabel, c9, stateFromStores];
-  stateFromStores1 = obj2.useStateFromStores(items1, () => {
+  stateFromStores1 = obj1.useStateFromStores(items1, () => {
     channel = subLabel.getChannel(channel.parent_id);
     let channelName = null;
     if (null != channel) {
@@ -75,38 +74,48 @@ const memoResult = importAllResult.memo(function ChannelRow(channel) {
   const items3 = [channel, onPress];
   const items4 = [channel, onLongPress];
   const callback = onLongPress.useCallback(() => {
-    if (null != onPress) {
-      onPress(channel);
+    if (onPress != null) {
+      tmp(channel);
     }
   }, items3);
-  const items5 = [channel, stateFromStores, tmp4.guildIcon];
+  const items5 = [channel, stateFromStores, tmp3.guildIcon];
   const callback1 = onLongPress.useCallback(() => {
     if (null == onLongPress) {
       const result = channel(onPress[14]).openChannelLongPressActionSheet(channel.id);
       const obj = channel(onPress[14]);
     } else {
-      onLongPress(channel);
+      tmp(channel);
     }
   }, items4);
-  const items6 = [tmp6, label];
+  const items6 = [tmp7, label];
   const memo = onLongPress.useMemo(() => {
-    let tmp = null;
+    let tmp2 = null;
     if (null != stateFromStores) {
-      const obj = { "aria-label": "", style: _undefined.guildIcon, guild: stateFromStores, channel, size: channel(onPress[15]).GuildIconWithChannelTypeSizes.SMALL_32 };
-      tmp = outer1_12(channel(onPress[15]).GuildIconWithChannelType, obj);
+      const obj = { "aria-label": "", style: null, guild: null, channel: null, size: null };
+      obj[1] = _undefined.guildIcon;
+      obj[2] = tmp;
+      obj[3] = channel;
+      obj[4] = channel(onPress[15]).GuildIconWithChannelTypeSizes.SMALL_32;
+      tmp2 = outer1_12(channel(onPress[15]).GuildIconWithChannelType, obj);
     }
-    return tmp;
+    return tmp2;
   }, items5);
   const items7 = [channel, , , , , , , , ];
   let name;
-  const memo1 = onLongPress.useMemo(() => undefined !== label ? label : c9, items6);
-  if (null != stateFromStores) {
+  const memo1 = onLongPress.useMemo(() => {
+    let tmp = label;
+    if (undefined === label) {
+      tmp = c9;
+    }
+    return tmp;
+  }, items6);
+  if (stateFromStores != null) {
     name = stateFromStores.name;
   }
   items7[1] = name;
   items7[2] = stateFromStores2;
   items7[3] = stateFromStores1;
-  ({ subLabel: arr8[4], subLabelIcon: arr8[5], subLabelSeparator: arr8[6], threadName: arr8[7] } = tmp4);
+  ({ subLabel: arr8[4], subLabelIcon: arr8[5], subLabelSeparator: arr8[6], threadName: arr8[7] } = tmp3);
   items7[8] = subLabel;
   const items8 = [trailing, flag2];
   const memo2 = onLongPress.useMemo(() => {
@@ -114,73 +123,83 @@ const memoResult = importAllResult.memo(function ChannelRow(channel) {
       return subLabel;
     } else {
       if (!channel.isThread()) {
-        if (!channel.isForumPost()) {
+        if (!obj8.isForumPost()) {
           let name;
-          if (null != stateFromStores) {
+          if (stateFromStores != null) {
             name = stateFromStores.name;
           }
           return name;
         }
       }
       if (channel.isForumPost()) {
-        let TextIcon = tmp7(tmp8[16]).ForumIcon;
+        let TextIcon = tmp3(tmp4[16]).ForumIcon;
       } else {
-        TextIcon = tmp7(tmp8[17]).TextIcon;
+        TextIcon = tmp3(tmp4[17]).TextIcon;
       }
-      let obj = { style: _undefined.subLabel };
-      obj = { color: flag2(onPress[11]).colors.TEXT_SUBTLE, style: _undefined.subLabelIcon };
+      let obj = { style: null, children: null };
+      obj[0] = _undefined.subLabel;
+      obj = { color: null, style: null };
+      obj[0] = flag2(onPress[11]).colors.TEXT_SUBTLE;
+      obj[1] = _undefined.subLabelIcon;
       const items = [outer1_12(TextIcon, obj), , ];
-      obj = { style: _undefined.threadName, variant: "text-xs/medium", color: "text-subtle", lineClamp: 1, ellipsizeMode: "tail", children: stateFromStores1 };
+      obj = { style: null, variant: "text-xs/medium", color: "text-subtle", lineClamp: 1, ellipsizeMode: "tail", children: null };
+      obj[0] = _undefined.threadName;
+      obj[5] = stateFromStores1;
       items[1] = outer1_12(channel(onPress[18]).Text, obj);
-      let tmp20 = null;
+      let tmp5Result = null;
       if (null != stateFromStores2) {
-        const obj1 = {};
-        const obj2 = { style: _undefined.subLabelSeparator, variant: "text-xs/medium", color: "text-subtle", children: "\u2022" };
-        const items1 = [outer1_12(channel(onPress[18]).Text, obj2), ];
-        const obj3 = { variant: "text-xs/medium", color: "text-subtle", children: channel(onPress[19]).calendarFormatCompact(flag2(onPress[20])(stateFromStores2)) };
-        items1[1] = outer1_12(channel(onPress[18]).Text, obj3);
-        obj1.children = items1;
-        tmp20 = outer1_14(outer1_13, obj1);
+        const obj1 = { children: null };
+        const obj2 = { style: null, variant: "text-xs/medium", color: "text-subtle", children: "\u2022" };
+        obj2[0] = _undefined.subLabelSeparator;
+        const items1 = [tmp8(channel(onPress[18]).Text, obj2), ];
+        const obj3 = { variant: "text-xs/medium", color: "text-subtle", children: null };
+        obj3[2] = channel(onPress[19]).calendarFormatCompact(flag2(onPress[20])(tmp14));
+        items1[1] = tmp8(channel(onPress[18]).Text, obj3);
+        obj1[0] = items1;
+        tmp5Result = tmp5(outer1_13, obj1);
         const obj7 = channel(onPress[19]);
       }
-      items[2] = tmp20;
-      obj.children = items;
+      items[2] = tmp5Result;
+      obj[1] = items;
       return outer1_14(trailing, obj);
     }
   }, items7);
   const memo3 = onLongPress.useMemo(() => {
-    if (null != trailing) {
-      let tmp2 = trailing;
-    } else if (flag2) {
-      tmp2 = null;
+    let tmp = trailing;
+    if (null == trailing) {
+      let tmp3;
+      if (flag2) {
+        tmp3 = null;
+      }
+      tmp = tmp3;
     }
-    return tmp2;
+    return tmp;
   }, items8);
-  obj = { lineClamp: 1, variant: "text-md/semibold", color: "mobile-text-heading-primary", children: memo1 };
   obj = {};
-  const obj4 = channel(onPress[12]);
+  let obj3 = channel(onPress[12]);
+  const obj4 = onLongPress;
   const merged1 = Object.assign(merged);
-  obj["disabled"] = flag2;
-  obj["icon"] = memo;
-  obj["onPress"] = callback;
-  obj["onLongPress"] = callback1;
-  obj["label"] = callback(channel(onPress[18]).Text, obj);
-  obj["subLabel"] = memo2;
+  obj.disabled = flag2;
+  obj.icon = memo;
+  obj.onPress = callback;
+  obj.onLongPress = callback1;
+  obj.label = callback(channel(onPress[18]).Text, { lineClamp: 1, variant: "text-md/semibold", color: "mobile-text-heading-primary", children: memo1 });
+  obj.subLabel = memo2;
   if (NONE === stateFromStores1.TOGGLE) {
-    obj1 = {};
+    obj = {};
     const merged2 = Object.assign(obj);
-    obj1["height"] = "100%";
-    obj1["checked"] = flag;
-    let tmp25 = callback(channel(onPress[21]).TableCheckboxRow, obj1);
+    obj.height = "100%";
+    obj.checked = flag;
+    let tmp17Result = tmp17(tmp4(tmp5[21]).TableCheckboxRow, obj);
   } else {
-    obj2 = {};
+    obj1 = {};
     const merged3 = Object.assign(obj);
-    obj2["height"] = "100%";
-    obj2["trailing"] = memo3;
-    tmp25 = callback(channel(onPress[22]).TableRow, obj2);
+    obj1.height = "100%";
+    obj1.trailing = memo3;
+    tmp17Result = tmp17(tmp4(tmp5[22]).TableRow, obj1);
   }
-  return tmp25;
+  return tmp17Result;
 });
-let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/main_tabs_v2/native/shared_components/user_list/ChannelRow.tsx");
+let result = require("ensureGuildLoaded").fileFinishedImporting("modules/main_tabs_v2/native/shared_components/user_list/ChannelRow.tsx");
 
 export default memoResult;

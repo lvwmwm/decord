@@ -1,158 +1,380 @@
-// Module ID: 6311
-// Function ID: 56537
+// Module ID: 6332
+// Function ID: 6333
 // Name: serializePurchaseResponse
-// Dependencies: [5, 27, 4164, 3846, 1850, 5654, 653, 1852, 6312, 3, 44, 477, 6331, 5657, 22, 491, 3826, 566, 6332, 1554, 4145, 6333, 2]
+// Dependencies: [5, 17, 4188, 3870, 1874, 5672, 676, 1876, 6333, 3, 38, 500, 6352, 5675, 12, 514, 3850, 589, 6353, 1578, 4169, 6354, 2]
 // Exports: makeIAPRequest, manageSubscription, shouldMockIAPForceEnable, useCanPurchaseIAP
 
-// Module 6311 (serializePurchaseResponse)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import { convertToAlpha2 } from "getCountryCodeByCountryName";
-import closure_6 from "_isNativeReflectConstruct";
-import closure_7 from "_isNativeReflectConstruct";
+// Module 6332 (serializePurchaseResponse)
+import updateProduct from "updateProduct";
+import { convertToAlpha2 } from "DEFAULT_COUNTRY_CODE_NAME";
+import mergeGuildAvatar from "mergeGuildAvatar";
+import closure_7 from "updateProduct";
 import ME from "ME";
 import { NAMESPACE_SNOWFLAKE_UUID } from "GuildFeatures";
-import importDefaultResult1 from "getCountryCodeByCountryName";
 import set from "set";
-import set from "_isNativeReflectConstruct";
+import set from "getUserAgnosticState";
 
-let closure_11;
+let IOS_BUNDLE_ID;
 let closure_12;
-let closure_8;
-let closure_9;
+let metroImportAll;
+let unpackModuleId;
 const require = arg1;
 function serializePurchaseResponse(originalTransactionDate) {
-  importDefault(44)(null != originalTransactionDate.transactionId, "should have transactionId");
-  const obj = { originalTransactionDate: originalTransactionDate.originalTransactionDateIOS };
+  importDefault(38)(null != originalTransactionDate.transactionId, "should have transactionId");
+  const obj = { originalTransactionDate: originalTransactionDate.originalTransactionDateIOS, originalTransactionIdentifier: null, transactionDate: null, transactionIdentifier: null, productIdentifier: null, transactionReceipt: null, jwsRepresentation: null };
   let parsed;
   if (null != originalTransactionDate.originalTransactionIdentifierIOS) {
     const _parseInt = parseInt;
     parsed = parseInt(originalTransactionDate.originalTransactionIdentifierIOS);
   }
-  obj.originalTransactionIdentifier = parsed;
-  obj.transactionDate = originalTransactionDate.transactionDate;
-  obj.transactionIdentifier = parseInt(originalTransactionDate.transactionId);
-  ({ productId: obj.productIdentifier, transactionReceipt: obj.transactionReceipt, verificationResultIOS: obj.jwsRepresentation } = originalTransactionDate);
+  obj[1] = parsed;
+  obj[2] = originalTransactionDate.transactionDate;
+  obj[3] = parseInt(originalTransactionDate.transactionId);
+  ({ productId: obj[4], transactionReceipt: obj[5], verificationResultIOS: obj[6] } = originalTransactionDate);
   return obj;
 }
-function convertToUUID(id) {
-  return require(491) /* v1 */.v5(id, NAMESPACE_SNOWFLAKE_UUID);
+function convertToUUID(arg0) {
+  return require(514) /* v1 */.v5(arg0, NAMESPACE_SNOWFLAKE_UUID);
 }
-async function _restorePurchases(arg0, arg1) {
-  let iter = (function*(fullRestore) {
-    let closure_0;
-    yield undefined;
-    if (outer2_17()) {
-      let obj = outer2_12;
-      if (fullRestore.fullRestore) {
-        yield obj.sync();
-        const arr4 = outer2_1(outer2_3[14]);
-        obj = { onlyIncludeActiveItems: false };
-        let mapped = arr4.map(yield outer2_0(outer2_3[8]).getAvailablePurchases(obj), (originalPurchase) => ({ originalPurchase, purchaseResponse: outer3_14(originalPurchase) }));
-        const obj4 = outer2_0(outer2_3[8]);
+function _restorePurchases() {
+  const self = this;
+  const tmp = callback((arg0) => {
+    let closure_0 = arg0;
+    let c7 = 0;
+    let c8 = 0;
+    const iter = (function*(arg0) {
+      if (c8 === 2) {
+        c8 = 3;
+        HermesBuiltin.throwTypeError();
+      } else if (tmp4 === 3) {
+        if (arg0 === 1) {
+          throw arg1;
+        } else if (arg0 === 2) {
+          let obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
+        } else {
+          return { value: "HermesInternal", done: null };
+        }
       } else {
-        const tmp2 = yield obj.getPendingTransactions();
-        closure_0 = outer2_1(outer2_3[14]).map(tmp2, (id) => id.id);
-        const arr = outer2_1(outer2_3[14]);
-        const arr2 = outer2_1(outer2_3[14]);
-        obj = { onlyIncludeActiveItems: false };
-        const found = arr2.filter(yield outer2_0(outer2_3[8]).getAvailablePurchases(obj), (transactionId) => {
-          let hasItem = null != transactionId.transactionId;
-          if (hasItem) {
-            const _parseInt = parseInt;
-            hasItem = closure_0.includes(parseInt(transactionId.transactionId));
+        try {
+          c8 = 2;
+          if (0 === c7) {
+            if (arg0 === 1) {
+              c8 = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              c8 = 3;
+              obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            } else {
+              let closure_3 = tmp2;
+              let updateProduct = tmp5;
+              let fullRestore;
+              fullRestore = fullRestore.fullRestore;
+              let callback2;
+              let arr4;
+              closure_3 = undefined;
+              c7 = 1;
+              c8 = 1;
+              return { value: "ct", done: null };
+            }
+          } else if (1 === tmp5) {
+            if (arg0 === 1) {
+              c8 = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              c8 = 3;
+              const obj1 = { value: null, done: true };
+              obj1[0] = arg1;
+              return obj1;
+            } else if (outer1_17()) {
+              let obj8 = closure_12;
+              if (callback) {
+                c7 = 2;
+                c8 = 1;
+                const obj2 = { value: null, done: false };
+                obj2[0] = obj8.sync();
+                return obj2;
+              } else {
+                c7 = 3;
+                c8 = 1;
+                const obj3 = { value: null, done: false };
+                obj3[0] = obj8.getPendingTransactions();
+                return obj3;
+              }
+            } else {
+              c8 = 3;
+              let obj4 = { value: null, done: true };
+              obj4[0] = [];
+              return obj4;
+            }
+          } else if (2 === tmp5) {
+            if (arg0 === 1) {
+              c8 = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              c8 = 3;
+              const obj5 = { value: null, done: true };
+              obj5[0] = arg1;
+              return obj5;
+            } else {
+              const arr2 = outer1_1(outer1_3[14]);
+              obj4 = callback(outer1_3[8]);
+              c7 = 4;
+              c8 = 1;
+              const obj6 = { value: null, done: false };
+              obj6[0] = obj4.getAvailablePurchases({ onlyIncludeActiveItems: false });
+              return obj6;
+            }
+          } else if (3 === tmp5) {
+            if (arg0 === 1) {
+              c8 = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              c8 = 3;
+              const obj7 = { value: null, done: true };
+              obj7[0] = arg1;
+              return obj7;
+            } else {
+              arr4 = arg1;
+              closure_3 = outer1_1(outer1_3[14]).map(arr4, (id) => id.id);
+              arr4 = outer1_1(outer1_3[14]);
+              callback2 = arr4.filter;
+              const arr3 = outer1_1(outer1_3[14]);
+              c7 = 5;
+              c8 = 1;
+              obj8 = { value: null, done: false };
+              obj8[0] = callback(outer1_3[8]).getAvailablePurchases({ onlyIncludeActiveItems: false });
+              return obj8;
+            }
+          } else {
+            if (4 === tmp5) {
+              if (arg0 === 1) {
+                c8 = 3;
+                throw arg1;
+              } else if (arg0 === 2) {
+                c8 = 3;
+                const obj9 = { value: null, done: true };
+                obj9[0] = arg1;
+                return obj9;
+              } else {
+                callback2 = map(arg1, (originalPurchase) => {
+                  let obj = { originalPurchase, purchaseResponse: null };
+                  callback(closure_3[10])(null != originalPurchase.transactionId, "should have transactionId");
+                  obj = { originalTransactionDate: originalPurchase.originalTransactionDateIOS, originalTransactionIdentifier: null, transactionDate: null, transactionIdentifier: null, productIdentifier: null, transactionReceipt: null, jwsRepresentation: null };
+                  let parsed;
+                  if (null != originalPurchase.originalTransactionIdentifierIOS) {
+                    const _parseInt = parseInt;
+                    parsed = parseInt(originalPurchase.originalTransactionIdentifierIOS);
+                  }
+                  obj[1] = parsed;
+                  obj[2] = originalPurchase.transactionDate;
+                  obj[3] = parseInt(originalPurchase.transactionId);
+                  ({ productId: obj2[4], transactionReceipt: obj2[5], verificationResultIOS: obj2[6] } = originalPurchase);
+                  obj[1] = obj;
+                  return obj;
+                });
+                c8 = 3;
+              }
+            } else if (arg0 === 1) {
+              c8 = 3;
+              throw arg1;
+            } else if (arg0 !== 2) {
+              callback2 = callback2(arg1, (transactionId) => {
+                let hasItem = null != transactionId.transactionId;
+                if (hasItem) {
+                  const _parseInt = parseInt;
+                  hasItem = closure_3.includes(parseInt(transactionId.transactionId));
+                }
+                return hasItem;
+              }).map((originalPurchase) => {
+                let obj = { originalPurchase, purchaseResponse: null };
+                callback(closure_3[10])(null != originalPurchase.transactionId, "should have transactionId");
+                obj = { originalTransactionDate: originalPurchase.originalTransactionDateIOS, originalTransactionIdentifier: null, transactionDate: null, transactionIdentifier: null, productIdentifier: null, transactionReceipt: null, jwsRepresentation: null };
+                let parsed;
+                if (null != originalPurchase.originalTransactionIdentifierIOS) {
+                  const _parseInt = parseInt;
+                  parsed = parseInt(originalPurchase.originalTransactionIdentifierIOS);
+                }
+                obj[1] = parsed;
+                obj[2] = originalPurchase.transactionDate;
+                obj[3] = parseInt(originalPurchase.transactionId);
+                ({ productId: obj2[4], transactionReceipt: obj2[5], verificationResultIOS: obj2[6] } = originalPurchase);
+                obj[1] = obj;
+                return obj;
+              });
+              const arr = callback2(arg1, (transactionId) => {
+                let hasItem = null != transactionId.transactionId;
+                if (hasItem) {
+                  const _parseInt = parseInt;
+                  hasItem = closure_3.includes(parseInt(transactionId.transactionId));
+                }
+                return hasItem;
+              });
+            }
+            c8 = 3;
+            obj = { value: null, done: true };
+            obj[0] = arg1;
+            return obj;
           }
-          return hasItem;
-        });
-        mapped = found.map((originalPurchase) => ({ originalPurchase, purchaseResponse: outer3_14(originalPurchase) }));
-        const obj2 = outer2_0(outer2_3[8]);
+        } catch (tmp23) {
+          c8 = tmp;
+          throw tmp23;
+        }
       }
-      return mapped;
-    } else {
-      return [];
-    }
-  })();
-  iter.next();
-  return iter;
+    })();
+    iter.next();
+    return iter;
+  });
+  const _restorePurchases = tmp;
+  const apply = tmp.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
 }
 function isStorekit2Available() {
-  let isIOSResult = require(477) /* set */.isIOS();
+  let isIOSResult = require(500) /* set */.isIOS();
   if (isIOSResult) {
     let isAvailableResult;
-    if (null != closure_12) {
-      isAvailableResult = closure_12.isAvailable();
+    if (closure_12 != null) {
+      isAvailableResult = obj2.isAvailable();
     }
     isIOSResult = 1 === isAvailableResult;
+    obj2 = closure_12;
   }
   return isIOSResult;
 }
 function remapStorefront(countryCode) {
-  const tmp = convertToAlpha2(countryCode.countryCode);
+  const country = convertToAlpha2(countryCode.countryCode);
   if (null == countryCode.currency) {
-    if (null == require(6332) /* GeneratedPaymentCurrencies */.GeneratedPaymentCurrenciesSets.APPLE_STORE_COUNTRY_CURRENCIES[tmp]) {
+    if (null == require(6353) /* GeneratedPaymentCurrencies */.GeneratedPaymentCurrenciesSets.APPLE_STORE_COUNTRY_CURRENCIES[country]) {
       const _Error = Error;
       const _HermesInternal = HermesInternal;
       const error = new Error("Unable to get currency from countryCode " + countryCode.countryCode);
       throw error;
     }
   } else {
-    const tmp3 = table[countryCode.currency.toUpperCase(countryCode.currency)];
+    const currency = table[str.toUpperCase(str)];
   }
-  const obj = { currency: tmp3, country: tmp };
-  return obj;
+  return { currency, country };
 }
-async function _fetchStoreFront() {
-  if (outer2_17()) {
-    const tmp4 = yield outer2_0(outer2_3[8]).getStorefront();
-    if (null != tmp4) {
-      let tmp7 = outer2_18(tmp4);
+function _fetchStoreFront() {
+  const self = this;
+  const tmp = callback(function*() {
+    if (c5 === 2) {
+      c5 = 3;
+      HermesBuiltin.throwTypeError();
+    } else if (tmp6 === 3) {
+      if (arg0 === 1) {
+        throw arg1;
+      } else if (arg0 === 2) {
+        let obj = { value: null, done: true };
+        obj[0] = arg1;
+        return obj;
+      } else {
+        return { value: "HermesInternal", done: null };
+      }
     } else {
-      tmp7 = tmp4;
+      try {
+        c5 = 2;
+        if (0 === c4) {
+          if (arg0 === 1) {
+            c5 = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            c5 = 3;
+            obj = { value: null, done: true };
+            obj[0] = arg1;
+            return obj;
+          } else {
+            let closure_1 = tmp3;
+            let callback = tmp7;
+            callback = undefined;
+            if (outer1_17()) {
+              let dependencyMap = 1;
+              c4 = 2;
+              c5 = 1;
+              let obj1 = { value: null, done: false };
+              obj1[0] = outer1_0(6333).getStorefront();
+              return obj1;
+            } else {
+              c5 = 3;
+              return { value: null, done: true };
+            }
+          }
+        } else if (1 === tmp7) {
+          dependencyMap = 0;
+          closure_1 = closure_2;
+          obj1 = callback(3850);
+          const result = obj1.captureBillingException(closure_1);
+          c5 = 3;
+          return { value: null, done: true };
+        } else if (arg0 === 1) {
+          c5 = 3;
+          throw arg1;
+        } else if (arg0 === 2) {
+          dependencyMap = 0;
+          c5 = 3;
+          obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
+        } else {
+          callback = arg1;
+          if (null != callback) {
+            callback2(callback);
+          }
+          dependencyMap = 0;
+          c5 = 3;
+        }
+      } catch (tmp28) {
+        closure_2 = tmp28;
+        if (tmp4 === dependencyMap) {
+          c5 = tmp2;
+          throw tmp28;
+        } else {
+          c4 = tmp;
+        }
+      }
     }
-    return tmp7;
+  });
+  const _fetchStoreFront = tmp;
+  const apply = tmp.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
   } else {
-    return null;
+    applyArgumentsResult = apply(self, arguments);
   }
+  return applyArgumentsResult;
 }
-function shouldMockIAPForceEnable() {
-  const tmp = !require(477) /* set */.isIOS();
-  let tmp2 = !tmp;
-  if (!tmp) {
-    const Identifier = importAll(1554).getConstants().Identifier;
-    const _HermesInternal = HermesInternal;
-    const tmp7 = !Identifier.startsWith("" + closure_9 + ".local");
-    let isRunningOnSimulator = !tmp7;
-    if (tmp7) {
-      isRunningOnSimulator = require(4145) /* getSystemVersion */.getIsRunningOnSimulator();
-      const obj3 = require(4145) /* getSystemVersion */;
-    }
-    tmp2 = isRunningOnSimulator;
-    const obj2 = importAll(1554);
-  }
-  return tmp2;
-}
-({ CurrencyCodes: closure_8, IOS_BUNDLE_ID: closure_9 } = ME);
-({ InAppUtils: closure_11, RNIapIosSk2: closure_12 } = require("get ActivityIndicator").NativeModules);
-let items = [require("module_6312").ErrorCode.E_USER_CANCELLED, ME.StoreKitErrors.PAYMENT_CANCELED];
+({ CurrencyCodes: metroImportAll, IOS_BUNDLE_ID } = ME);
+({ InAppUtils: unpackModuleId, RNIapIosSk2: closure_12 } = require("initialize").NativeModules);
+let items = [require("module_6333").ErrorCode.E_USER_CANCELLED, ME.StoreKitErrors.PAYMENT_CANCELED];
 let set = new Set(items);
-importDefaultResult1 = new importDefaultResult1("IAPUtils.tsx");
+new require("DEFAULT_COUNTRY_CODE_NAME")("IAPUtils.tsx");
 let _default = {
   loadProducts() {
     if (obj.isIOS()) {
       const _Object = Object;
-      let items = [importDefault(6331).fetchSubscriptions(Object.values(require(5657) /* SubscriptionPlans */.ProductIds)), ];
-      const obj2 = importDefault(6331);
+      let items = [importDefault(6352).fetchSubscriptions(Object.values(tmp(5675).ProductIds)), ];
+      const obj2 = importDefault(6352);
       const _Object2 = Object;
-      items[1] = importDefault(6331).fetchProducts(Object.values(require(5657) /* SubscriptionPlans */.ProductIds));
-      const obj3 = importDefault(6331);
+      items[1] = importDefault(6352).fetchProducts(Object.values(tmp(5675).ProductIds));
+      const obj3 = importDefault(6352);
       let nextPromise = _Promise.all(items).then((arg0) => {
         let tmp;
-        [r10006, tmp] = arg0;
+        [r10007, tmp] = arg0;
         let set;
         set = new Set();
         const items = [...tmp];
-        return outer1_1(outer1_3[14]).filter(items, (identifier) => {
-          let flag = !set.has(identifier.identifier);
-          if (flag) {
+        return callback(table[14]).filter(items, (identifier) => {
+          const hasItem = set.has(identifier.identifier);
+          let flag = !hasItem;
+          if (!hasItem) {
             set.add(identifier.identifier);
             flag = true;
           }
@@ -169,38 +391,133 @@ let _default = {
     let closure_0 = arg0;
     let closure_1 = arg1;
     let closure_2 = arg2;
-    return new Promise((() => {
-      let closure_0 = outer1_4(async (arg0, arg1) => {
-        if (null != outer3_6.getCurrentUser()) {
-          let obj = callback(outer3_3[8]);
-          yield obj.clearTransactionIOS();
-          obj = { sku: callback, appAccountToken: outer2_2, withOffer: outer2_1 };
-          const tmp16 = yield callback(outer3_3[8]).requestPurchase(obj);
-          const _Object = Object;
-          if (tmp16 instanceof Object) {
-            arg0(outer3_14(tmp16));
+    closure_0 = undefined;
+    closure_0 = callback((arg0, arg1) => {
+      let closure_0 = arg0;
+      let closure_1 = arg1;
+      let c6 = 0;
+      let c7 = 0;
+      let c5 = 0;
+      return (function*(arg0, arg1) {
+        if (c7 === 2) {
+          c7 = 3;
+          HermesBuiltin.throwTypeError();
+        } else if (tmp6 === 3) {
+          if (arg0 === 1) {
+            throw arg1;
+          } else if (arg0 === 2) {
+            let obj = { value: null, done: true };
+            obj[0] = arg1;
+            return obj;
           } else {
-            const _Error2 = Error;
-            const error = new Error("Unable to select a platform, no request was made");
-            throw error;
+            return { value: "HermesInternal", done: null };
           }
-          const obj2 = callback(outer3_3[8]);
         } else {
-          const _Error = Error;
-          const error1 = new Error("purchaseProduct: no valid user");
-          arg1(error1);
+          try {
+            c7 = 2;
+            if (0 === c6) {
+              if (arg0 === 1) {
+                c7 = 3;
+                throw arg1;
+              } else if (arg0 === 2) {
+                c7 = 3;
+                obj = { value: null, done: true };
+                obj[0] = arg1;
+                return obj;
+              } else {
+                let closure_3 = tmp3;
+                let closure_2 = tmp7;
+                closure_2 = undefined;
+                if (null != outer2_6.getCurrentUser()) {
+                  let c5 = 1;
+                  c6 = 2;
+                  c7 = 1;
+                  let obj1 = { value: null, done: false };
+                  obj1[0] = callback(outer2_3[8]).clearTransactionIOS();
+                  return obj1;
+                } else {
+                  const _Error2 = Error;
+                  const error = new Error("purchaseProduct: no valid user");
+                  tmp49(error);
+                }
+                tmp49 = callback2;
+              }
+            } else {
+              if (1 === tmp7) {
+                c5 = 0;
+                callback2(updateProduct);
+              } else if (2 === tmp7) {
+                if (arg0 === 1) {
+                  c7 = 3;
+                  throw arg1;
+                } else if (arg0 === 2) {
+                  c5 = 0;
+                  c7 = 3;
+                  const obj2 = { value: null, done: true };
+                  obj2[0] = arg1;
+                  return obj2;
+                } else {
+                  obj1 = callback(outer2_3[8]);
+                  const obj3 = { sku: null, appAccountToken: null, withOffer: null };
+                  obj3[0] = callback;
+                  obj3[1] = outer1_2;
+                  obj3[2] = callback2;
+                  c6 = 3;
+                  c7 = 1;
+                  const obj4 = { value: null, done: false };
+                  obj4[0] = obj1.requestPurchase(obj3);
+                  return obj4;
+                }
+              } else if (arg0 === 1) {
+                c7 = 3;
+                throw arg1;
+              } else if (arg0 !== 2) {
+                closure_2 = arg1;
+                const _Object = Object;
+                if (closure_2 instanceof Object) {
+                  callback(outer2_14(closure_2));
+                  c5 = 0;
+                } else {
+                  const _Error = Error;
+                  const error1 = new Error("Unable to select a platform, no request was made");
+                  throw error1;
+                }
+              }
+              c5 = 0;
+              c7 = 3;
+              obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            }
+            c7 = 3;
+          } catch (tmp38) {
+            updateProduct = tmp38;
+            if (tmp4 === c5) {
+              c7 = tmp2;
+              throw tmp38;
+            } else {
+              c6 = tmp;
+            }
+          }
         }
-      });
-      return function() {
-        return callback(...arguments);
-      };
-    })());
+      })();
+    });
+    return new Promise(function() {
+      const self = this;
+      const apply = closure_0.apply;
+      if (typeof apply === "unknown") {
+        let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+      } else {
+        applyArgumentsResult = apply(self, arguments);
+      }
+      return applyArgumentsResult;
+    });
   },
   canMakePayments() {
     return new Promise((arg0, arg1) => {
       let closure_0 = arg0;
       let closure_1 = arg1;
-      outer1_11.canMakePayments((arg0) => {
+      closure_11.canMakePayments((arg0) => {
         if (!arg0) {
           const _Error = Error;
           const error = new Error();
@@ -211,103 +528,241 @@ let _default = {
     });
   },
   restorePurchases() {
-    return _restorePurchases(...arguments);
+    const self = this;
+    const apply = _restorePurchases.apply;
+    if (typeof apply === "unknown") {
+      let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+    } else {
+      applyArgumentsResult = apply(self, arguments);
+    }
+    return applyArgumentsResult;
   },
   fetchStoreFront() {
-    return _fetchStoreFront(...arguments);
+    const self = this;
+    const apply = _fetchStoreFront.apply;
+    if (typeof apply === "unknown") {
+      let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+    } else {
+      applyArgumentsResult = apply(self, arguments);
+    }
+    return applyArgumentsResult;
   }
 };
-let tmp6 = !set.isIOS();
-let tmp7 = !tmp6;
-if (!tmp6) {
-  const tmp8 = !shouldMockIAPForceEnable();
-  let value = !tmp8;
-  if (tmp8) {
+set = set.isIOS();
+if (set) {
+  let isIOSResult1 = require("set").isIOS();
+  if (isIOSResult1) {
+    let Identifier = require("getConstants").getConstants().Identifier;
+    let _HermesInternal = HermesInternal;
+    let isRunningOnSimulator = Identifier.startsWith("" + IOS_BUNDLE_ID + ".local");
+    if (!isRunningOnSimulator) {
+      isRunningOnSimulator = require("DCDDeviceManager").getIsRunningOnSimulator();
+      let obj6 = require("DCDDeviceManager");
+    }
+    isIOSResult1 = isRunningOnSimulator;
+    const importAllResult = require("getConstants");
+  }
+  let value = isIOSResult1;
+  if (!value) {
     value = importDefaultResult.get("force_mock_iap");
   }
-  tmp7 = value;
+  set = value;
+  let obj4 = require("set");
 }
-if (tmp7) {
-  _default = require("items1").default;
+if (set) {
+  _default = require("items").default;
+}
+function shouldMockIAPForceEnable() {
+  let isIOSResult = require(500) /* set */.isIOS();
+  if (isIOSResult) {
+    const Identifier = importAll(1578).getConstants().Identifier;
+    const _HermesInternal = HermesInternal;
+    let isRunningOnSimulator = Identifier.startsWith("" + IOS_BUNDLE_ID + ".local");
+    if (!isRunningOnSimulator) {
+      isRunningOnSimulator = require(4169) /* DCDDeviceManager */.getIsRunningOnSimulator();
+      const tmpResult = require(4169) /* DCDDeviceManager */;
+    }
+    isIOSResult = isRunningOnSimulator;
+    const obj2 = importAll(1578);
+  }
+  return isIOSResult;
 }
 let result = set.fileFinishedImporting("utils/native/IAPUtils.tsx");
 
 export default _default;
 export { convertToUUID };
-export const makeIAPRequest = function makeIAPRequest(arg0, arg1, arg2) {
-  let closure_0 = arg0;
-  let closure_1 = arg1;
-  let closure_2 = arg2;
-  return new Promise((() => {
-    let closure_0 = outer1_4(async (arg0, arg1) => {
-      const currentUser = outer3_6.getCurrentUser();
-      if (null != currentUser) {
-        let obj = callback(outer3_3[8]);
-        obj = { requestJSONString: callback, sku: outer2_1, appAccountToken: outer3_15(currentUser.id), andDangerouslyFinishTransactionAutomaticallyIOS: false, useACOM: outer2_2 };
-        const tmp15 = yield obj.requestPurchase(obj);
-        const _Object = Object;
-        if (tmp15 instanceof Object) {
-          obj = { purchaseResponse: outer3_14(tmp16) };
-          const _Array = Array;
-          if (Array.isArray(tmp16)) {
-            let first = tmp16[0];
-          } else {
-            first = tmp16;
-          }
-          obj.originalPurchase = first;
-          arg0(obj);
+export const makeIAPRequest = function makeIAPRequest(closure_1, closure_2, closure_3) {
+  let closure_0 = closure_1;
+  closure_1 = closure_2;
+  closure_2 = closure_3;
+  closure_0 = undefined;
+  closure_0 = callback((arg0, arg1) => {
+    let closure_0 = arg0;
+    let closure_1 = arg1;
+    let c6 = 0;
+    let c7 = 0;
+    let c5 = 0;
+    return (function*(arg0, arg1) {
+      if (c7 === 2) {
+        c7 = 3;
+        HermesBuiltin.throwTypeError();
+      } else if (tmp6 === 3) {
+        if (arg0 === 1) {
+          throw arg1;
+        } else if (arg0 === 2) {
+          let obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
         } else {
-          const _Error2 = Error;
-          const error = new Error("Unable to select a platform, no request was made");
-          throw error;
+          return { value: "HermesInternal", done: null };
         }
       } else {
-        const _Error = Error;
-        const error1 = new Error("purchaseProduct: no valid user");
-        arg1(error1);
+        try {
+          c7 = 2;
+          if (0 === c6) {
+            if (arg0 === 1) {
+              c7 = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              c7 = 3;
+              obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            } else {
+              let code = tmp3;
+              let closure_2 = tmp7;
+              closure_2 = undefined;
+              const currentUser = outer2_6.getCurrentUser();
+              if (null != currentUser) {
+                let c5 = 1;
+                let obj3 = callback(outer2_3[8]);
+                const obj1 = { requestJSONString: null, sku: null, appAccountToken: null, andDangerouslyFinishTransactionAutomaticallyIOS: false, useACOM: null };
+                obj1[0] = callback;
+                obj1[1] = callback2;
+                obj1[2] = outer2_15(currentUser.id);
+                obj1[4] = outer1_2;
+                c6 = 2;
+                c7 = 1;
+                let obj2 = { value: null, done: false };
+                obj2[0] = obj3.requestPurchase(obj1);
+                return obj2;
+              } else {
+                const _Error2 = Error;
+                const error = new Error("purchaseProduct: no valid user");
+                tmp62(error);
+              }
+              tmp62 = callback2;
+            }
+          } else {
+            if (1 === tmp7) {
+              c5 = 0;
+              code = updateProduct;
+              if (!outer2_13.has(code.code)) {
+                obj2 = callback(outer2_3[16]);
+                const result = obj2.captureBillingException(code);
+              }
+              callback2(code);
+            } else if (arg0 === 1) {
+              c7 = 3;
+              throw arg1;
+            } else if (arg0 !== 2) {
+              closure_2 = arg1;
+              const _Object = Object;
+              if (closure_2 instanceof Object) {
+                obj = { purchaseResponse: null, originalPurchase: null };
+                obj[0] = outer2_14(closure_2);
+                const _Array = Array;
+                if (Array.isArray(closure_2)) {
+                  let first = tmp19[0];
+                } else {
+                  first = tmp19;
+                }
+                obj[1] = first;
+                callback(obj);
+                c5 = 0;
+                const tmp14 = callback;
+              } else {
+                const _Error = Error;
+                const error1 = new Error("Unable to select a platform, no request was made");
+                throw error1;
+              }
+            }
+            c5 = 0;
+            c7 = 3;
+            obj3 = { value: null, done: true };
+            obj3[0] = arg1;
+            return obj3;
+          }
+          c7 = 3;
+        } catch (tmp49) {
+          updateProduct = tmp49;
+          if (tmp4 === c5) {
+            c7 = tmp2;
+            throw tmp49;
+          } else {
+            c6 = tmp;
+          }
+        }
       }
-    });
-    return function() {
-      return callback(...arguments);
-    };
-  })());
+    })();
+  });
+  return new Promise(function() {
+    const self = this;
+    const apply = closure_0.apply;
+    if (typeof apply === "unknown") {
+      let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+    } else {
+      applyArgumentsResult = apply(self, arguments);
+    }
+    return applyArgumentsResult;
+  });
 };
 export const useCanPurchaseIAP = function useCanPurchaseIAP(productId) {
   const _require = productId;
-  const items = [closure_6];
-  let closure_1 = _require(566).useStateFromStores(items, () => {
-    const currentUser = outer1_6.getCurrentUser();
-    let verified;
-    if (null != currentUser) {
-      verified = currentUser.verified;
+  const items = [mergeGuildAvatar];
+  let closure_1 = _require(589).useStateFromStores(items, () => {
+    currentUser = currentUser.getCurrentUser();
+    let flag;
+    if (currentUser != null) {
+      flag = currentUser.verified;
     }
-    return null != verified && verified;
+    if (flag == null) {
+      flag = false;
+    }
+    return flag;
   }, []);
-  const obj = _require(566);
+  const obj = _require(589);
   const items1 = [closure_7];
-  return !_require(566).useStateFromStores(items1, () => {
-    let tmp = !outer1_7.isReady();
-    if (!tmp) {
-      let isBusyResult = outer1_7.isBusy();
+  return !_require(589).useStateFromStores(items1, () => {
+    const isReadyResult = outer1_7.isReady();
+    let tmp2 = !isReadyResult;
+    if (isReadyResult) {
+      let isBusyResult = obj.isBusy();
       if (isBusyResult) {
-        let tmp6 = null == closure_0;
-        if (!tmp6) {
-          tmp6 = !outer1_7.isPurchasingProduct(closure_0);
-        }
-        isBusyResult = tmp6;
+        isBusyResult = null == closure_0 || !obj.isPurchasingProduct(tmp4);
+        const tmp6 = null == closure_0 || !obj.isPurchasingProduct(tmp4);
       }
-      tmp = isBusyResult;
+      tmp2 = isBusyResult;
     }
-    if (!tmp) {
-      tmp = !closure_1;
+    if (!tmp2) {
+      tmp2 = !closure_1;
     }
-    return tmp;
+    return tmp2;
   });
 };
 export { isStorekit2Available };
 export { remapStorefront };
 export const manageSubscription = function manageSubscription() {
-  if (isStorekit2Available()) {
+  let isIOSResult = require(500) /* set */.isIOS();
+  if (isIOSResult) {
+    let isAvailableResult;
+    if (closure_12 != null) {
+      isAvailableResult = obj2.isAvailable();
+    }
+    isIOSResult = 1 === isAvailableResult;
+    obj2 = closure_12;
+  }
+  if (isIOSResult) {
     let result = closure_12.showManageSubscriptions();
   } else {
     const _Error = Error;

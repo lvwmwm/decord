@@ -1,18 +1,18 @@
-// Module ID: 8165
-// Function ID: 64959
+// Module ID: 8189
+// Function ID: 8190
 // Name: useLabFeature
-// Dependencies: [8163, 566, 2]
+// Dependencies: [8187, 589, 2]
 // Exports: default
 
-// Module 8165 (useLabFeature)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 8189 (useLabFeature)
+import getUserAgnosticState from "getUserAgnosticState";
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/labs/useLabFeature.tsx");
 
 export default function useLabFeature(arg0) {
   const _require = arg0;
-  const items = [_isNativeReflectConstruct];
+  const items = [getUserAgnosticState];
   const items1 = [arg0];
-  return _require(566).useStateFromStores(items, () => outer1_2.get(closure_0), items1);
+  return _require(589).useStateFromStores(items, () => outer1_2.get(closure_0), items1);
 };

@@ -1,14 +1,14 @@
-// Module ID: 14460
-// Function ID: 110406
+// Module ID: 14482
+// Function ID: 14483
 // Name: Row
-// Dependencies: [31, 1838, 5005, 4360, 653, 33, 5113, 5108, 566, 5548, 5537, 7611, 2]
+// Dependencies: [19, 1862, 5027, 4385, 676, 21, 5135, 5130, 589, 5566, 5555, 7634, 2]
 // Exports: default
 
-// Module 14460 (Row)
-import result from "result";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_6 from "_isNativeReflectConstruct";
+// Module 14482 (Row)
+import noop from "noop";
+import createGuildRecordFromRust from "createGuildRecordFromRust";
+import insertUnsortedGuilds from "insertUnsortedGuilds";
+import updateUserGuildSettingsInternal from "updateUserGuildSettingsInternal";
 import { HighlightSettings } from "ME";
 import { jsx } from "jsxProd";
 
@@ -23,17 +23,17 @@ function Row(guildId) {
   ({ isStart, isEnd } = guildId);
   const callback = React.useCallback((arg0) => {
     let obj = outer1_1(outer1_2[6]);
-    obj = { notify_highlights: arg0 ? tmp2.ENABLED : tmp2.DISABLED };
+    obj = { notify_highlights: arg0 ? tmp3.ENABLED : tmp3.DISABLED };
     const NotificationLabel = guildId(outer1_2[7]).NotificationLabel;
     const result = obj.updateGuildNotificationSettings(guildId, obj, NotificationLabel.highlights(!arg0));
   }, items);
-  let obj = guildId(566);
-  const items1 = [closure_6, _createForOfIteratorHelperLoose];
+  let obj = guildId(589);
+  const items1 = [updateUserGuildSettingsInternal, createGuildRecordFromRust];
   const items2 = [guildId];
   const stateFromStoresObject = obj.useStateFromStoresObject(items1, () => ({ guild: outer1_4.getGuild(guildId), muted: outer1_6.isMuted(guildId), notifyHighlights: outer1_6.getNotifyHighlights(guildId) }), items2);
   ({ guild, muted } = stateFromStoresObject);
   let name;
-  if (null != guild) {
+  if (guild != null) {
     name = guild.name;
   }
   if (null == name) {
@@ -42,27 +42,31 @@ function Row(guildId) {
     if (!muted) {
       muted = stateFromStoresObject.notifyHighlights === HighlightSettings.DISABLED;
     }
-    obj = { guild };
-    obj = { label: guild.name };
-    obj.icon = jsx(importDefault(5548), { label: guild.name });
-    obj.value = !muted;
-    obj.onValueChange = callback;
-    obj.start = isStart;
-    obj.end = isEnd;
-    return jsx(guildId(5537).TableSwitchRow, { label: guild.name });
+    obj = { guild: null };
+    obj[0] = guild;
+    obj = { label: null, icon: null, value: null, onValueChange: null, start: null, end: null };
+    obj[0] = guild.name;
+    obj[1] = jsx(importDefault(5566), { label: null, icon: null, value: null, onValueChange: null, start: null, end: null });
+    obj[2] = !muted;
+    obj[3] = callback;
+    obj[4] = isStart;
+    obj[5] = isEnd;
+    return jsx(tmp2(5555).TableSwitchRow, { label: null, icon: null, value: null, onValueChange: null, start: null, end: null });
   }
+  tmp2 = guildId;
 }
-let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/user_settings/notifications/native/UserSettingsHighlightNotifications.tsx");
+let result = require("insertUnsortedGuilds").fileFinishedImporting("modules/user_settings/notifications/native/UserSettingsHighlightNotifications.tsx");
 
 export default function UserSettingsHighlightNotifications() {
-  let obj = stateFromStoresArray(566);
-  const items = [_isNativeReflectConstruct];
-  stateFromStoresArray = obj.useStateFromStoresArray(items, () => outer1_5.getFlattenedGuildIds());
+  let obj = stateFromStoresArray(589);
+  const items = [insertUnsortedGuilds];
+  stateFromStoresArray = obj.useStateFromStoresArray(items, () => flattenedGuildIds.getFlattenedGuildIds());
   [][0] = stateFromStoresArray;
-  let tmp2 = null;
+  let tmp4 = null;
   if (0 !== stateFromStoresArray.length) {
-    obj = { children: tmp };
-    tmp2 = jsx(stateFromStoresArray(7611).Form, { children: tmp });
+    obj = { children: null };
+    obj[0] = tmp3;
+    tmp4 = jsx(stateFromStoresArray(7634).Form, { children: null });
   }
-  return tmp2;
+  return tmp4;
 };

@@ -1,18 +1,20 @@
-// Module ID: 11464
-// Function ID: 88967
+// Module ID: 11488
+// Function ID: 11489
 // Name: useGameMentionSearchBarHeight
-// Dependencies: [27, 9889, 2]
+// Dependencies: [17, 9911, 2]
 // Exports: default
 
-// Module 11464 (useGameMentionSearchBarHeight)
+// Module 11488 (useGameMentionSearchBarHeight)
 import { StyleSheet } from "get ActivityIndicator";
 
+let c3 = "text-sm/semibold";
+let c4 = "text-sm/medium";
 const result = require("set").fileFinishedImporting("modules/game_mentions/hooks/native/useGameMentionSearchBarHeight.tsx");
 
 export default function useGameMentionSearchBarHeight() {
-  const sum = 24 + require(9889) /* scaleLineHeight */.useScaledTextLineHeight("text-sm/semibold");
-  const obj = require(9889) /* scaleLineHeight */;
-  return sum + require(9889) /* scaleLineHeight */.useScaledTextLineHeight("text-sm/medium") + 12 + StyleSheet.hairlineWidth;
+  const sum = 24 + require(9911) /* map */.useScaledTextLineHeight(c3);
+  const obj = require(9911) /* map */;
+  return sum + require(9911) /* map */.useScaledTextLineHeight(c4) + 12 + StyleSheet.hairlineWidth;
 };
 export const GAME_MENTION_SEARCH_BAR_TITLE_VARIANT = "text-sm/semibold";
 export const GAME_MENTION_SEARCH_BAR_DESCRIPTION_VARIANT = "text-sm/medium";

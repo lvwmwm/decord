@@ -1,46 +1,43 @@
-// Module ID: 14325
-// Function ID: 109857
+// Module ID: 14347
+// Function ID: 14348
 // Name: useRoleColorSettingValue
-// Dependencies: [31, 4157, 7733, 566, 13479, 1212, 10099, 2]
+// Dependencies: [19, 4181, 7756, 589, 13502, 1236, 10120, 2]
 // Exports: onRoleColorSettingValueChange, useRoleColorSettingOptions, useRoleColorSettingValue
 
-// Module 14325 (useRoleColorSettingValue)
-import result from "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 14347 (useRoleColorSettingValue)
+import noop from "noop";
+import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
 import createToggle from "createToggle";
 
 const require = arg1;
 function useRoleColorSettingValue() {
-  const items = [_isNativeReflectConstruct];
-  return require(566) /* initialize */.useStateFromStores(items, () => outer1_3.roleStyle);
+  const items = [maybeApplyNoTextColorForLightCustomTheme];
+  return require(589) /* initialize */.useStateFromStores(items, () => roleStyle.roleStyle);
 }
 function onRoleColorSettingValueChange(roleStyle) {
-  require(13479) /* setFontSize */.setRoleStyle(roleStyle);
+  require(13502) /* setFontSize */.setRoleStyle(roleStyle);
 }
 function useRoleColorSettingOptions() {
   return React.useMemo(() => {
-    let obj = {};
-    const intl = outer1_0(outer1_1[5]).intl;
-    obj.label = intl.string(outer1_0(outer1_1[5]).t.YEOEi6);
-    obj.value = "username";
+    let obj = { label: null, value: "username" };
+    const intl = callback(1236).intl;
+    obj[0] = intl.string(callback(1236).t.YEOEi6);
     const items = [obj, , ];
-    obj = {};
-    const intl2 = outer1_0(outer1_1[5]).intl;
-    obj.label = intl2.string(outer1_0(outer1_1[5]).t.mQaro3);
-    obj.value = "dot";
+    obj = { label: null, value: "dot" };
+    const intl2 = callback(1236).intl;
+    obj[0] = intl2.string(callback(1236).t.mQaro3);
     items[1] = obj;
-    obj = {};
-    const intl3 = outer1_0(outer1_1[5]).intl;
-    obj.label = intl3.string(outer1_0(outer1_1[5]).t.Ji2EVJ);
-    obj.value = "hidden";
+    obj = { label: null, value: "hidden" };
+    const intl3 = callback(1236).intl;
+    obj[0] = intl3.string(callback(1236).t.Ji2EVJ);
     items[2] = obj;
     return items;
   }, []);
 }
 createToggle = {
   useTitle() {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(require(1212) /* getSystemLocale */.t.uSOPWm);
+    const intl = require(1236) /* getSystemLocale */.intl;
+    return intl.string(require(1236) /* getSystemLocale */.t.uSOPWm);
   },
   parent: require("MobileSetting").MobileSetting.ACCESSIBILITY,
   useValue: useRoleColorSettingValue,

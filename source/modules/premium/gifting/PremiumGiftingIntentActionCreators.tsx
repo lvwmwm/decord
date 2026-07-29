@@ -1,105 +1,159 @@
-// Module ID: 6161
-// Function ID: 55098
-// Name: dismissGiftIntent
-// Dependencies: [5926, 1194, 4384, 1852, 653, 507, 686, 1184, 675, 6162, 2]
+// Module ID: 6179
+// Function ID: 6180
+// Name: fetchAndReconcileGiftIntentDismissals
+// Dependencies: [5945, 1218, 4407, 1876, 676, 530, 709, 1208, 698, 6180, 2]
 // Exports: fetchAndReconcileGiftIntentDismissals, logFriendsListGiftIntentsShown, logGiftIntentFlowPurchasedGift, logGiftIntentMessageDismissed, logMessageGiftIntentShown
 
-// Module 6161 (dismissGiftIntent)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_4 from "_isNativeReflectConstruct";
-import closure_5 from "_isNativeReflectConstruct";
+// Module 6179 (fetchAndReconcileGiftIntentDismissals)
+import recomputeAffinities from "recomputeAffinities";
+import fetchFingerprint from "fetchFingerprint";
+import reinjectEphemerals from "reinjectEphemerals";
 import { GiftIntentType } from "GuildFeatures";
 import ME from "ME";
 
-let closure_7;
-let closure_8;
+let error;
+let metroImportAll;
 const require = arg1;
-function dismissGiftIntent(FRIEND_ANNIVERSARY, recipientUserId, explicit) {
-  let obj = importDefault(675);
-  obj = { gift_intent_type: FRIEND_ANNIVERSARY, dismiss_type: explicit };
-  userAffinity = userAffinity.getUserAffinity(recipientUserId);
-  let dmProbability;
-  if (null != userAffinity) {
-    dmProbability = userAffinity.dmProbability;
-  }
-  obj.affinity = dmProbability;
-  obj.track(constants.GIFT_INTENT_DISMISSED, obj);
-  let result = require(6162) /* apexExperiment */.isFriendshipAnniversaryBackendPersistenceEnabled("dismissGiftIntent");
-  if (result) {
-    result = FRIEND_ANNIVERSARY !== GiftIntentType.UNSPECIFIED;
-  }
-  if (result) {
-    const HTTP = require(507) /* _isNativeReflectConstruct */.HTTP;
-    obj = { url: constants2.GIFT_INTENTS_DISMISS };
-    const obj1 = { intent_type: FRIEND_ANNIVERSARY, target_id: recipientUserId };
-    obj.body = obj1;
-    obj.oldFormErrors = true;
-    obj.rejectWithError = true;
-    HTTP.post(obj).catch((arg0) => {
-      outer1_1(outer1_2[7]).captureException(arg0, { tags: { feature: "gift_intent" } });
-    });
-    const postResult = HTTP.post(obj);
-  }
-}
-({ AnalyticEvents: closure_7, Endpoints: closure_8 } = ME);
-let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/premium/gifting/PremiumGiftingIntentActionCreators.tsx");
+({ AnalyticEvents: error, Endpoints: metroImportAll } = ME);
+let result = require("reinjectEphemerals").fileFinishedImporting("modules/premium/gifting/PremiumGiftingIntentActionCreators.tsx");
 
 export const fetchAndReconcileGiftIntentDismissals = function fetchAndReconcileGiftIntentDismissals(serverDismissalTimestampMs) {
   const _require = serverDismissalTimestampMs;
   const id2 = id.getId();
-  const HTTP = _require(507).HTTP;
-  let obj = { url: constants2.GIFT_INTENT_DISMISSALS, oldFormErrors: true, rejectWithError: true };
-  const value = HTTP.get(obj);
+  const HTTP = _require(530).HTTP;
+  const value = HTTP.get({ url: constants2.GIFT_INTENT_DISMISSALS, oldFormErrors: true, rejectWithError: true });
   return value.then((body) => {
     if (outer1_4.getId() === callback) {
-      let obj = { type: "GIFT_INTENT_DISMISSALS_FETCH_SUCCESS" };
       let dismissals = body.body.dismissals;
-      if (null == dismissals) {
+      if (dismissals == null) {
         dismissals = [];
       }
-      obj.dismissals = dismissals.map((targetId) => ({ targetId: targetId.target_id, dismissedAtMs: Number(targetId.dismissed_at_ms) }));
-      obj.settingsTimestampMs = closure_0;
+      let obj = { type: "GIFT_INTENT_DISMISSALS_FETCH_SUCCESS", dismissals: null, settingsTimestampMs: null };
+      obj[1] = dismissals.map((targetId) => ({ targetId: targetId.target_id, dismissedAtMs: Number(targetId.dismissed_at_ms) }));
+      obj[2] = closure_0;
       callback(outer1_2[6]).dispatch(obj);
-      const obj3 = callback(outer1_2[6]);
+      const obj2 = callback(outer1_2[6]);
     } else {
       obj = callback(outer1_2[6]);
-      obj = { type: "GIFT_INTENT_DISMISSALS_FETCH_FAILURE" };
-      obj.dispatch(obj);
+      obj.dispatch({ type: "GIFT_INTENT_DISMISSALS_FETCH_FAILURE" });
     }
   }, (arg0) => {
-    callback(outer1_2[7]).captureException(arg0, { tags: { feature: "gift_intent" } });
-    const obj = callback(outer1_2[7]);
-    callback(outer1_2[6]).dispatch({ type: "GIFT_INTENT_DISMISSALS_FETCH_FAILURE" });
+    callback(1208).captureException(arg0, { tags: { feature: "gift_intent" } });
+    const obj = callback(1208);
+    callback(709).dispatch({ type: "GIFT_INTENT_DISMISSALS_FETCH_FAILURE" });
   });
 };
 export const logFriendsListGiftIntentsShown = function logFriendsListGiftIntentsShown() {
-  importDefault(686).dispatch({ type: "FRIENDS_LIST_GIFT_INTENTS_SHOWN" });
+  importDefault(709).dispatch({ type: "FRIENDS_LIST_GIFT_INTENTS_SHOWN" });
 };
-export const logMessageGiftIntentShown = function logMessageGiftIntentShown(recipientUserId, FRIEND_ANNIVERSARY) {
-  if (FRIEND_ANNIVERSARY === undefined) {
+export const logMessageGiftIntentShown = function logMessageGiftIntentShown(recipientUserId) {
+  let FRIEND_ANNIVERSARY = arg1;
+  if (arg1 === undefined) {
     FRIEND_ANNIVERSARY = GiftIntentType.FRIEND_ANNIVERSARY;
   }
-  let obj = importDefault(686);
+  let obj = importDefault(709);
   obj = { type: "MESSAGE_GIFT_INTENT_SHOWN", recipientUserId };
   obj.dispatch(obj);
-  dismissGiftIntent(FRIEND_ANNIVERSARY, recipientUserId, "shown");
+  let obj2 = importDefault(698);
+  obj = { gift_intent_type: FRIEND_ANNIVERSARY, dismiss_type: "shown", affinity: null };
+  const userAffinity = authStore.getUserAffinity(recipientUserId);
+  let dmProbability;
+  if (userAffinity != null) {
+    dmProbability = userAffinity.dmProbability;
+  }
+  obj[2] = dmProbability;
+  obj2.track(constants.GIFT_INTENT_DISMISSED, obj);
+  let result = require(6180) /* apexExperiment */.isFriendshipAnniversaryBackendPersistenceEnabled("dismissGiftIntent");
+  if (result) {
+    result = FRIEND_ANNIVERSARY !== GiftIntentType.UNSPECIFIED;
+  }
+  if (result) {
+    const HTTP = require(530) /* sendRequest */.HTTP;
+    const obj1 = { url: null, body: null, oldFormErrors: true, rejectWithError: true };
+    obj1[0] = constants2.GIFT_INTENTS_DISMISS;
+    obj2 = { intent_type: null, target_id: null };
+    obj2[0] = FRIEND_ANNIVERSARY;
+    obj2[1] = recipientUserId;
+    obj1[1] = obj2;
+    HTTP.post(obj1).catch((arg0) => {
+      callback(table[7]).captureException(arg0, { tags: { feature: "gift_intent" } });
+    });
+    const postResult = HTTP.post(obj1);
+  }
 };
 export const logGiftIntentMessageDismissed = function logGiftIntentMessageDismissed(channel_id, id) {
+  let giftIntentType;
+  let recipientUserId;
   message = message.getMessage(channel_id, id);
   let giftingPrompt;
-  if (null != message) {
+  if (message != null) {
     giftingPrompt = message.giftingPrompt;
   }
   if (null != giftingPrompt) {
-    dismissGiftIntent(giftingPrompt.giftIntentType, giftingPrompt.recipientUserId, "explicit");
+    ({ giftIntentType, recipientUserId } = giftingPrompt);
+    let obj = { gift_intent_type: null, dismiss_type: "explicit", affinity: null };
+    obj[0] = giftIntentType;
+    const userAffinity = authStore.getUserAffinity(recipientUserId);
+    let dmProbability;
+    if (userAffinity != null) {
+      dmProbability = userAffinity.dmProbability;
+    }
+    obj[2] = dmProbability;
+    importDefault(698).track(constants.GIFT_INTENT_DISMISSED, obj);
+    obj = require(6180) /* apexExperiment */;
+    let result = obj.isFriendshipAnniversaryBackendPersistenceEnabled("dismissGiftIntent");
+    if (result) {
+      result = giftIntentType !== GiftIntentType.UNSPECIFIED;
+    }
+    if (result) {
+      const HTTP = tmp5(530).HTTP;
+      obj = { url: null, body: null, oldFormErrors: true, rejectWithError: true };
+      obj[0] = constants2.GIFT_INTENTS_DISMISS;
+      const obj1 = { intent_type: null, target_id: null };
+      obj1[0] = giftIntentType;
+      obj1[1] = recipientUserId;
+      obj[1] = obj1;
+      HTTP.post(obj).catch((arg0) => {
+        callback(table[7]).captureException(arg0, { tags: { feature: "gift_intent" } });
+      });
+      const postResult = HTTP.post(obj);
+    }
+    const obj4 = importDefault(698);
+    tmp5 = require;
   }
 };
-export const logGiftIntentFlowPurchasedGift = function logGiftIntentFlowPurchasedGift(handleGiftCodeCreate, FRIEND_ANNIVERSARY) {
-  if (FRIEND_ANNIVERSARY === undefined) {
+export const logGiftIntentFlowPurchasedGift = function logGiftIntentFlowPurchasedGift(recipientUserId) {
+  let FRIEND_ANNIVERSARY = arg1;
+  if (arg1 === undefined) {
     FRIEND_ANNIVERSARY = GiftIntentType.FRIEND_ANNIVERSARY;
   }
-  let obj = importDefault(686);
-  obj = { type: "GIFT_INTENT_FLOW_PURCHASED_GIFT", recipientUserId: handleGiftCodeCreate };
+  let obj = importDefault(709);
+  obj = { type: "GIFT_INTENT_FLOW_PURCHASED_GIFT", recipientUserId };
   obj.dispatch(obj);
-  dismissGiftIntent(FRIEND_ANNIVERSARY, handleGiftCodeCreate, "gift_sent");
+  let obj2 = importDefault(698);
+  obj = { gift_intent_type: FRIEND_ANNIVERSARY, dismiss_type: "gift_sent", affinity: null };
+  const userAffinity = authStore.getUserAffinity(recipientUserId);
+  let dmProbability;
+  if (userAffinity != null) {
+    dmProbability = userAffinity.dmProbability;
+  }
+  obj[2] = dmProbability;
+  obj2.track(constants.GIFT_INTENT_DISMISSED, obj);
+  let result = require(6180) /* apexExperiment */.isFriendshipAnniversaryBackendPersistenceEnabled("dismissGiftIntent");
+  if (result) {
+    result = FRIEND_ANNIVERSARY !== GiftIntentType.UNSPECIFIED;
+  }
+  if (result) {
+    const HTTP = require(530) /* sendRequest */.HTTP;
+    const obj1 = { url: null, body: null, oldFormErrors: true, rejectWithError: true };
+    obj1[0] = constants2.GIFT_INTENTS_DISMISS;
+    obj2 = { intent_type: null, target_id: null };
+    obj2[0] = FRIEND_ANNIVERSARY;
+    obj2[1] = recipientUserId;
+    obj1[1] = obj2;
+    HTTP.post(obj1).catch((arg0) => {
+      callback(table[7]).captureException(arg0, { tags: { feature: "gift_intent" } });
+    });
+    const postResult = HTTP.post(obj1);
+  }
 };

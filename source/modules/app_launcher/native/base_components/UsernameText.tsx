@@ -1,18 +1,18 @@
-// Module ID: 11335
-// Function ID: 87973
+// Module ID: 11359
+// Function ID: 11360
 // Name: UsernameText
-// Dependencies: [31, 33, 4354, 4161, 2]
+// Dependencies: [19, 21, 4379, 4185, 2]
 // Exports: default
 
-// Module 11335 (UsernameText)
-import "result";
+// Module 11359 (UsernameText)
+import "noop";
 import jsxProd from "jsxProd";
 
-let closure_2;
-let closure_3;
-let closure_4;
+let c3;
+let c4;
+let obj1;
 const require = arg1;
-({ jsxs: closure_2, Fragment: closure_3, jsx: closure_4 } = jsxProd);
+({ jsxs: obj1, Fragment: c3, jsx: c4 } = jsxProd);
 const result = require("getNickname").fileFinishedImporting("modules/app_launcher/native/base_components/UsernameText.tsx");
 
 export default function UsernameText(color) {
@@ -27,37 +27,37 @@ export default function UsernameText(color) {
     str = "text-default";
   }
   let obj = { variant, color: str };
-  let obj1 = require(4354) /* getNickname */;
+  let obj1 = require(4379) /* getNickname */;
   const name = obj1.getName(color.guildId, null, user);
   if (user.hasUniqueUsername()) {
     str = user.toString();
   } else {
-    obj = {};
+    obj = { children: null };
     const items = [user.toString(), ];
     obj = {};
     const merged = Object.assign(obj);
-    obj["color"] = "text-muted";
+    obj.color = "text-muted";
     const items1 = ["#", user.discriminator];
-    obj["children"] = items1;
-    items[1] = callback(require(4161) /* Text */.Text, obj);
-    obj.children = items;
+    obj.children = items1;
+    items[1] = callback(tmp(4185).Text, obj);
+    obj[0] = items;
     str = callback(closure_3, obj);
   }
   obj1 = {};
   const merged1 = Object.assign(obj);
   let tmp13 = str;
-  if (tmp2) {
-    const obj2 = {};
+  if (tmp4) {
+    const obj2 = { children: null };
     const items2 = [name, " ", ];
     const obj3 = {};
     const merged2 = Object.assign(obj);
-    obj3["color"] = "text-muted";
+    obj3.color = "text-muted";
     const items3 = ["(", str, ")"];
-    obj3["children"] = items3;
-    items2[2] = callback(require(4161) /* Text */.Text, obj3);
-    obj2.children = items2;
+    obj3.children = items3;
+    items2[2] = callback(tmp(4185).Text, obj3);
+    obj2[0] = items2;
     tmp13 = callback(closure_3, obj2);
   }
-  obj1["children"] = tmp13;
-  return closure_4(require(4161) /* Text */.Text, obj1);
+  obj1.children = tmp13;
+  return closure_4(require(4185) /* Text */.Text, obj1);
 };

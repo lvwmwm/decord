@@ -1,13 +1,13 @@
-// Module ID: 9491
-// Function ID: 73896
+// Module ID: 9515
+// Function ID: 9516
 // Name: showExecutedApplicationCommandPopout
-// Dependencies: [4133, 9492, 1935, 2]
+// Dependencies: [4157, 9516, 1959, 2]
 // Exports: default
 
-// Module 9491 (showExecutedApplicationCommandPopout)
-const result = require("maybeLoadBundle").fileFinishedImporting("modules/application_commands/native/showExecutedApplicationCommandPopout.tsx");
+// Module 9515 (showExecutedApplicationCommandPopout)
+const result = require("asyncRequireImpl").fileFinishedImporting("modules/application_commands/native/showExecutedApplicationCommandPopout.tsx");
 
 export default function showExecutedApplicationCommandPopout(messageId) {
-  const obj = importDefault(4133);
-  obj.openLazy(require(1935) /* maybeLoadBundle */(9492, dependencyMap.paths), "ExecutedCommandPopout:" + messageId.messageId, messageId);
+  const obj = importDefault(4157);
+  obj.openLazy(require(1959) /* asyncRequireImpl */(9516, dependencyMap.paths), "ExecutedCommandPopout:" + messageId.messageId, messageId);
 };

@@ -1,77 +1,81 @@
-// Module ID: 14583
-// Function ID: 111232
+// Module ID: 14608
+// Function ID: 14609
 // Name: useCollectiblesShopDeepLinkProps
-// Dependencies: [31, 5780, 5797, 566, 5791, 2]
+// Dependencies: [19, 5798, 5815, 589, 5809, 2]
 // Exports: useCollectiblesShopDeepLinkProps
 
-// Module 14583 (useCollectiblesShopDeepLinkProps)
-import { useMemo } from "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_4 from "_isNativeReflectConstruct";
+// Module 14608 (useCollectiblesShopDeepLinkProps)
+import { useMemo } from "noop";
+import updateCategoriesAndProducts from "updateCategoriesAndProducts";
+import items from "items";
 
 let closure_5 = {};
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/collectibles/native/useCollectiblesShopDeepLinkProps.tsx");
+const result = require("items").fileFinishedImporting("modules/collectibles/native/useCollectiblesShopDeepLinkProps.tsx");
 
 export const useCollectiblesShopDeepLinkProps = function useCollectiblesShopDeepLinkProps(categories) {
   categories = categories.categories;
   const products = categories.products;
+  let initialCategorySkuId;
+  let initialBaseProductSkuId;
+  let initialVariantIndex;
   const items = [initialBaseProductSkuId, initialVariantIndex];
   const stateFromStoresObject = categories(products[3]).useStateFromStoresObject(items, () => {
     const initialProductSkuId = initialVariantIndex.initialProductSkuId;
     const product = initialBaseProductSkuId.getProduct(initialProductSkuId);
-    let skuId = initialProductSkuId;
-    let num = 0;
+    initialVariantIndex = 0;
+    initialBaseProductSkuId = initialProductSkuId;
     if (null != product) {
-      skuId = initialProductSkuId;
-      num = 0;
+      initialVariantIndex = 0;
+      initialBaseProductSkuId = initialProductSkuId;
       if (null != product.variantGroupStoreListingId) {
-        const productByStoreListingId = initialBaseProductSkuId.getProductByStoreListingId(product.variantGroupStoreListingId);
+        const productByStoreListingId = obj.getProductByStoreListingId(product.variantGroupStoreListingId);
         let isVariantProduct = null != productByStoreListingId;
         if (isVariantProduct) {
-          let obj = categories(products[4]);
-          isVariantProduct = obj.getIsVariantProduct(productByStoreListingId);
+          isVariantProduct = initialProductSkuId(products[4]).getIsVariantProduct(productByStoreListingId);
+          const obj2 = initialProductSkuId(products[4]);
         }
-        skuId = initialProductSkuId;
-        num = 0;
+        initialVariantIndex = 0;
+        initialBaseProductSkuId = initialProductSkuId;
         if (isVariantProduct) {
-          skuId = productByStoreListingId.skuId;
+          initialBaseProductSkuId = productByStoreListingId.skuId;
           const _Math = Math;
           const variants = productByStoreListingId.variants;
-          num = Math.max(0, variants.findIndex((skuId) => skuId.skuId === initialProductSkuId));
+          initialVariantIndex = Math.max(0, variants.findIndex((skuId) => skuId.skuId === initialProductSkuId));
         }
       }
     }
-    obj = {};
-    const categoryForProduct = initialBaseProductSkuId.getCategoryForProduct(initialProductSkuId);
-    skuId = undefined;
-    if (null != categoryForProduct) {
-      skuId = categoryForProduct.skuId;
+    const categoryForProduct = obj.getCategoryForProduct(initialProductSkuId);
+    let initialCategorySkuId;
+    if (categoryForProduct != null) {
+      initialCategorySkuId = categoryForProduct.skuId;
     }
-    obj.initialCategorySkuId = skuId;
-    obj.initialBaseProductSkuId = skuId;
-    obj.initialVariantIndex = num;
-    return obj;
+    return { initialCategorySkuId, initialBaseProductSkuId, initialVariantIndex };
   });
-  const initialCategorySkuId = stateFromStoresObject.initialCategorySkuId;
+  initialCategorySkuId = stateFromStoresObject.initialCategorySkuId;
   initialBaseProductSkuId = stateFromStoresObject.initialBaseProductSkuId;
   initialVariantIndex = stateFromStoresObject.initialVariantIndex;
   const items1 = [initialBaseProductSkuId, initialVariantIndex, initialCategorySkuId, products, categories];
   return initialCategorySkuId(() => {
     if (null != initialBaseProductSkuId) {
       if (null != initialCategorySkuId) {
-        let obj = { initialProductSkuId: initialBaseProductSkuId, initialVariantIndex, initialCategorySkuId };
+        let obj = { initialProductSkuId: null, initialVariantIndex: null, initialCategorySkuId: null, productIndex: null, categoryIndex: null };
+        obj[0] = tmp;
+        obj[1] = initialVariantIndex;
+        obj[2] = tmp6;
         let bound;
         if (null != products) {
           const _Math = Math;
-          bound = Math.max(0, products.findIndex((skuId) => skuId.skuId === outer1_3));
+          bound = Math.max(0, obj3.findIndex((skuId) => skuId.skuId === updateCategoriesAndProducts));
         }
-        obj.productIndex = bound;
+        obj[3] = bound;
+        obj = categories;
         let bound1;
         if (null != categories) {
           const _Math2 = Math;
-          bound1 = Math.max(0, categories.findIndex((skuId) => skuId.skuId === outer1_2));
+          bound1 = Math.max(0, obj.findIndex((skuId) => skuId.skuId === closure_2));
         }
-        obj.categoryIndex = bound1;
+        obj[4] = bound1;
+        obj3 = products;
       }
       return obj;
     }

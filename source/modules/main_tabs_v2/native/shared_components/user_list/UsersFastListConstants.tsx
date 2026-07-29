@@ -1,11 +1,11 @@
-// Module ID: 8797
-// Function ID: 69442
+// Module ID: 8821
+// Function ID: 8822
 // Name: PX_24
-// Dependencies: [689, 2]
+// Dependencies: [712, 2]
 
-// Module 8797 (PX_24)
-const PX_24 = require("_createForOfIteratorHelperLoose").space.PX_24;
-const PX_8 = require("_createForOfIteratorHelperLoose").space.PX_8;
+// Module 8821 (PX_24)
+const PX_24 = require("Themes").space.PX_24;
+const PX_8 = require("Themes").space.PX_8;
 const sum = 18 + PX_24 + PX_8;
 const result = require("set").fileFinishedImporting("modules/main_tabs_v2/native/shared_components/user_list/UsersFastListConstants.tsx");
 

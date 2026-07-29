@@ -1,220 +1,78 @@
-// Module ID: 5028
-// Function ID: 43303
-// Name: _isNativeReflectConstruct
-// Dependencies: [57, 6, 7, 15, 17, 18, 1389, 1839, 3809, 1842, 2]
+// Module ID: 5050
+// Function ID: 5051
+// Name: fromServer
+// Dependencies: [32, 1413, 1863, 3833, 1866, 2]
 
-// Module 5028 (_isNativeReflectConstruct)
+// Module 5050 (fromServer)
 import _slicedToArray from "_slicedToArray";
-import TypeTag from "TypeTag";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
 import { TypeTag } from "TypeTag";
-import { LibdiscoreBatchStoreRefactorExperiment } from "_callSuper";
+import { LibdiscoreStore } from "identity";
+import { LibdiscoreBatchStoreRefactorExperiment } from "items";
 
 const require = arg1;
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
-  }
-  const result = _isNativeReflectConstruct();
-}
-function _createForOfIteratorHelperLoose(iterable) {
-  let closure_0 = iterable;
-  iterable = "undefined" !== typeof Symbol;
-  if (iterable) {
-    const _Symbol = Symbol;
-    iterable = iterable[Symbol.iterator];
-  }
-  if (!iterable) {
-    iterable = iterable[Symbol.iterator];
-  }
-  if (iterable) {
-    const iter = iterable.call(iterable);
-    const next = iter.next;
-    return next.bind(iter);
-  } else {
-    const _Array = Array;
-    let tmp = iterable;
-    if (!Array.isArray(iterable)) {
-      let tmp2;
-      if (iterable) {
-        if ("string" === typeof iterable) {
-          tmp2 = _arrayLikeToArray(iterable, undefined);
-        } else {
-          const toString = {}.toString;
-          const substr = toString.call(iterable).slice(8, -1);
-          let name = substr;
-          if (tmp3) {
-            name = iterable.constructor.name;
-          }
-          if ("Map" !== name) {
-            if ("Set" !== name) {
-              if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(iterable, undefined);
-              } else {
-                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
-              }
-            }
-            tmp2 = arr;
-          }
-          const _Array2 = Array;
-          arr = Array.from(iterable);
-          const callResult = toString.call(iterable);
-          tmp3 = "Object" === substr && iterable.constructor;
-        }
-      }
-      tmp = tmp2;
-      if (!tmp2) {
-        const _TypeError = TypeError;
-        const typeError = new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
-        throw typeError;
-      }
-    }
-    if (tmp) {
-      closure_0 = tmp;
-    }
-    let c1 = 0;
-    return () => {
-      if (closure_1 >= length.length) {
-        let obj = { done: true };
-      } else {
-        obj = { done: false };
-        closure_1 = tmp3 + 1;
-        obj.value = length[+closure_1];
-      }
-      return obj;
-    };
-  }
-}
-function _arrayLikeToArray(arg0, arg1) {
-  let length;
-  if (tmp) {
-    length = arg0.length;
-  }
-  const ArrayResult = Array(length);
-  for (let num = 0; num < length; num = num + 1) {
-    ArrayResult[num] = arg0[num];
-  }
-  return ArrayResult;
-}
-function fromServer(arg0, arg1) {
-  let done;
+function fromServer(guildId) {
   let obj = {};
-  const tmp = _createForOfIteratorHelperLoose(arg1);
-  let iter = tmp();
-  if (!iter.done) {
-    do {
-      let value = iter.value;
-      obj = {};
-      let tmp2 = TypeTag;
-      obj[TypeTag] = "RawGuildEmoji";
-      obj["guildId"] = arg0;
-      obj["id"] = value.id;
-      obj["animated"] = value.animated;
-      obj["name"] = value.name;
-      obj["require_colons"] = value.require_colons;
-      obj["available"] = value.available;
-      obj["roles"] = value.roles;
-      obj["managed"] = value.managed;
-      obj["version"] = value.version;
-      let tmp3 = require;
-      let tmp4 = dependencyMap;
-      obj["type"] = require(3809) /* EmojiTypes */.EmojiTypes.GUILD;
-      obj[value.id] = obj;
-      let iter2 = tmp();
-      iter = iter2;
-      done = iter2.done;
-    } while (!done);
+  const iter = arg1[Symbol.iterator]();
+  const nextResult = iter.next();
+  while (iter !== undefined) {
+    obj = {};
+    let tmp2 = TypeTag;
+    obj[TypeTag] = "RawGuildEmoji";
+    obj.guildId = guildId;
+    ({ id: obj2.id, animated: obj2.animated, name: obj2.name, require_colons: obj2.require_colons, available: obj2.available, roles: obj2.roles, managed: obj2.managed, version: obj2.version } = nextResult);
+    let tmp3 = require;
+    let tmp4 = dependencyMap;
+    obj.type = require(3833) /* EmojiTypes */.EmojiTypes.GUILD;
+    obj[nextResult.id] = obj;
+    continue;
   }
   return obj;
 }
-function syncEmojis(arg0, op, setPartition) {
-  let done;
-  let done2;
-  if ("full_sync" === op.op) {
-    setPartition.setPartition(arg0, fromServer(arg0, op.items));
+function syncEmojis(id, emojis, setPartition) {
+  if ("full_sync" === emojis.op) {
+    setPartition.setPartition(id, fromServer(id, emojis.items));
   } else {
-    const nullablePartition = setPartition.getNullablePartition(arg0);
+    const nullablePartition = setPartition.getNullablePartition(id);
     if (null == nullablePartition) {
-      setPartition.setPartition(arg0, fromServer(arg0, op.writes));
-    } else if (op.writes.length > 0) {
+      setPartition.setPartition(id, fromServer(id, emojis.writes));
+    } else if (emojis.writes.length > 0) {
       const obj = {};
       const merged = Object.assign(nullablePartition);
-      const tmp7 = _createForOfIteratorHelperLoose(op.deletes);
-      let iter = tmp7();
-      if (!iter.done) {
-        do {
-          let value = iter.value;
-          delete tmp2[tmp];
-          let iter2 = tmp7();
-          iter = iter2;
-          done = iter2.done;
-        } while (!done);
+      const deletes = emojis.deletes;
+      for (const item10016 of deletes) {
+        delete tmp[tmp2];
+        continue;
       }
-      const tmp9 = _createForOfIteratorHelperLoose(op.writes);
-      let iter3 = tmp9();
-      if (!iter3.done) {
-        do {
-          let _Object = Object;
-          let tmp11 = fromServer;
-          let items = [iter3.value];
-          let merged1 = Object.assign(obj, fromServer(arg0, items));
-          let iter4 = tmp9();
-          iter3 = iter4;
-          done2 = iter4.done;
-        } while (!done2);
+      const writes = emojis.writes;
+      const tmp9 = writes[Symbol.iterator]();
+      while (tmp9 !== undefined) {
+        let _Object = Object;
+        let tmp14 = fromServer;
+        let items = [tmp12];
+        let merged1 = Object.assign(obj, fromServer(id, items));
+        continue;
       }
-      setPartition.setPartition(arg0, obj);
+      setPartition.setPartition(id, obj);
     }
   }
 }
-let tmp2 = ((LibdiscoreStore) => {
-  class RawGuildEmojiStore {
-    constructor(arg0) {
-      self = this;
-      items = [...arguments];
-      tmp = outer1_3(this, RawGuildEmojiStore);
-      items1 = [...items];
-      obj = outer1_6(RawGuildEmojiStore);
-      tmp2 = outer1_5;
-      if (outer1_9()) {
-        tmp4 = globalThis;
-        _Reflect = Reflect;
-        tmp5 = outer1_6;
-        constructResult = Reflect.construct(obj, items1, outer1_6(self).constructor);
-      } else {
-        constructResult = obj.apply(self, items1);
-      }
-      tmp2Result = tmp2(self, constructResult);
-      tmp2Result.database = tmp2Result.addKKVDatabase("guild_emojis");
-      return tmp2Result;
-    }
+class RawGuildEmojiStore extends LibdiscoreStore {
+  constructor() {
+    applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
+    applyArgumentsResult.database = applyArgumentsResult.addKKVDatabase("guild_emojis");
+    return applyArgumentsResult;
   }
-  callback3(RawGuildEmojiStore, LibdiscoreStore);
-  let obj = {
-    key: "stateWrapper",
-    value() {
-      return this.database;
-    }
-  };
-  let items = [obj, ];
-  obj = {
-    key: "getGuildEmojis",
-    value(arg0) {
-      const database = this.database;
-      return database.getNullablePartition(arg0);
-    }
-  };
-  items[1] = obj;
-  return callback2(RawGuildEmojiStore, items);
-})(require("_isNativeReflectConstruct").LibdiscoreStore);
-tmp2.displayName = "RawGuildEmojiStore";
-tmp2 = new tmp2({
+}
+const prototype = RawGuildEmojiStore.prototype;
+prototype["stateWrapper"] = function stateWrapper() {
+  return this.database;
+};
+prototype["getGuildEmojis"] = function getGuildEmojis(guildId) {
+  const database = this.database;
+  return database.getNullablePartition(guildId);
+};
+RawGuildEmojiStore.displayName = "RawGuildEmojiStore";
+const rawGuildEmojiStore = new RawGuildEmojiStore({
   LOGOUT(arg0, clear) {
     return clear.clear();
   },
@@ -224,45 +82,30 @@ tmp2 = new tmp2({
   RESET_SOCKET(arg0, clear) {
     return clear.clear();
   },
-  CONNECTION_OPEN(guilds, getPartitionKeys) {
-    let done;
-    let done2;
-    let iter4;
-    guilds = guilds.guilds;
+  CONNECTION_OPEN(arg0, getPartitionKeys) {
+    let guilds;
+    let unavailableGuilds;
+    ({ guilds, unavailableGuilds } = arg0);
     const set = new Set(guilds.map((id) => id.id));
-    const tmp = _createForOfIteratorHelperLoose(guilds.unavailableGuilds);
-    let iter = tmp();
-    if (!iter.done) {
-      do {
-        let addResult = set.add(iter.value);
-        let iter2 = tmp();
-        iter = iter2;
-        done = iter2.done;
-      } while (!done);
+    for (const item10017 of unavailableGuilds) {
+      let addResult = set.add(item10017);
+      continue;
     }
-    const tmp3 = _createForOfIteratorHelperLoose(getPartitionKeys.getPartitionKeys());
-    let iter3 = tmp3();
-    if (!iter3.done) {
-      do {
-        let value = iter3.value;
-        if (!set.has(value)) {
-          let removePartitionResult = getPartitionKeys.removePartition(value);
-        }
-        iter4 = tmp3();
-        iter3 = iter4;
-      } while (!iter4.done);
+    const partitionKeys = getPartitionKeys.getPartitionKeys();
+    for (const item10028 of partitionKeys) {
+      let tmp3 = item10028;
+      if (!set.has(item10028)) {
+        let tmp4 = item10028;
+        let removePartitionResult = arg1.removePartition(tmp3);
+      }
+      continue;
     }
-    const tmp5 = _createForOfIteratorHelperLoose(guilds);
-    let iter5 = tmp5();
-    if (!iter5.done) {
-      do {
-        value = iter5.value;
-        let tmp6 = syncEmojis;
-        let tmp7 = syncEmojis(value.id, value.emojis, getPartitionKeys);
-        let iter6 = tmp5();
-        iter5 = iter6;
-        done2 = iter6.done;
-      } while (!done2);
+    const iter = guilds[Symbol.iterator]();
+    const nextResult = iter.next();
+    while (iter !== undefined) {
+      let tmp7 = syncEmojis;
+      let tmp8 = syncEmojis(nextResult.id, nextResult.emojis, getPartitionKeys);
+      continue;
     }
   },
   OVERLAY_INITIALIZE(emojis, clear) {
@@ -273,28 +116,21 @@ tmp2 = new tmp2({
       let tmp;
       let tmp2;
       [tmp, tmp2] = arg0;
-      partition.setPartition(tmp, outer1_12(tmp, tmp2));
+      partition.setPartition(tmp, outer1_4(tmp, tmp2));
     });
   },
-  CACHED_EMOJIS_LOADED(emojis, setPartition) {
-    let done;
-    const tmp = _createForOfIteratorHelperLoose(emojis.emojis);
-    let iter = tmp();
-    if (!iter.done) {
-      do {
-        let tmp2 = callback;
-        let tmp3 = callback(iter.value, 2);
-        let first = tmp3[0];
-        let tmp5 = fromServer;
-        let setPartitionResult = setPartition.setPartition(first, fromServer(first, tmp3[1]));
-        let iter2 = tmp();
-        iter = iter2;
-        done = iter2.done;
-      } while (!done);
+  CACHED_EMOJIS_LOADED(arg0, setPartition) {
+    while (tmp !== undefined) {
+      let tmp3 = callback;
+      let tmp4 = callback(tmp2, 2);
+      let first = tmp4[0];
+      let tmp6 = fromServer;
+      let setPartitionResult = setPartition.setPartition(first, fromServer(first, tmp4[1]));
+      continue;
     }
   },
-  GUILD_CREATE(guild) {
-    syncEmojis(guild.guild.id, guild.guild.emojis, arg1);
+  GUILD_CREATE(guild, setPartition) {
+    syncEmojis(guild.guild.id, guild.guild.emojis, setPartition);
   },
   GUILD_UPDATE(guild, setPartition) {
     setPartition.setPartition(guild.guild.id, fromServer(guild.guild.id, guild.guild.emojis));
@@ -306,6 +142,6 @@ tmp2 = new tmp2({
     removePartition.removePartition(guild.guild.id);
   }
 }, LibdiscoreBatchStoreRefactorExperiment.getCachedBridgedStoreMode());
-let result = require("_defineProperties").fileFinishedImporting("modules/emojis/RawGuildEmojiStore.tsx");
+const result = require("identity").fileFinishedImporting("modules/emojis/RawGuildEmojiStore.tsx");
 
-export default tmp2;
+export default rawGuildEmojiStore;

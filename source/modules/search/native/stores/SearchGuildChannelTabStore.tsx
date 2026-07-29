@@ -1,213 +1,151 @@
-// Module ID: 11438
-// Function ID: 88702
-// Name: _isNativeReflectConstruct
-// Dependencies: [15, 17, 18, 6, 7, 1908, 4177, 5078, 5009, 22, 21, 566, 686, 2]
+// Module ID: 11462
+// Function ID: 11463
+// Name: search
+// Dependencies: [1932, 4201, 5100, 5031, 12, 11, 589, 709, 2]
 
-// Module 11438 (_isNativeReflectConstruct)
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
-import closure_6 from "_isNativeReflectConstruct";
-import HeaderRecord from "HeaderRecord";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_10 from "_isNativeReflectConstruct";
+// Module 11462 (search)
+import comparator from "comparator";
+import generateOldThreadCutoff from "generateOldThreadCutoff";
+import { Store } from "initialize";
 
-let closure_8;
-let closure_9;
-const require = arg1;
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
-  }
-  const result = _isNativeReflectConstruct();
-}
-({ GUILD_VOCAL_CHANNELS_KEY: closure_8, GUILD_SELECTABLE_CHANNELS_KEY: closure_9 } = _isNativeReflectConstruct);
+let c3;
+let c4;
+({ GUILD_VOCAL_CHANNELS_KEY: c3, GUILD_SELECTABLE_CHANNELS_KEY: c4 } = comparator);
 require("HeaderRecord").AutocompleterResultTypes;
-let closure_12 = [];
-let closure_13 = [];
-let closure_14 = (() => {
-  class GuildChannelSearchManager {
-    constructor() {
-      tmp = outer1_6(this, GuildChannelSearchManager);
-      this.count = null;
-      this.textChannels = [];
-      this.voiceChannels = [];
-      return;
-    }
+let closure_7 = [];
+let closure_8 = [];
+class GuildChannelSearchManager {
+  constructor() {
+    obj = Object.create(new.target.prototype);
+    obj[1] = [];
+    obj[2] = [];
+    return obj;
   }
-  let obj = {
-    key: "search",
-    value(query, guildId) {
-      const self = this;
-      let obj = GuildChannelSearchManager(outer1_2[8]);
-      const boosterMap = obj.getBoosterMap(outer1_11.TEXT_CHANNEL);
-      let obj1 = GuildChannelSearchManager(outer1_2[8]);
-      obj = {
-        query,
-        guildId,
-        limit: 1000,
-        allowEmptyQueries: true,
-        allowSnowflake: true,
-        fuzzy: false,
-        filter() {
-          return true;
-        }
-      };
-      const boosterMap1 = obj1.getBoosterMap(outer1_11.VOICE_CHANNEL);
-      obj = {};
-      const merged = Object.assign(obj);
-      obj["type"] = outer1_9;
-      obj["boosters"] = boosterMap;
-      const obj4 = outer1_1(outer1_2[8]);
-      const queryChannelsResult = outer1_1(outer1_2[8]).queryChannels(obj);
-      obj1 = {};
-      const merged1 = Object.assign(obj);
-      obj1["type"] = outer1_8;
-      obj1["boosters"] = boosterMap1;
-      const obj6 = outer1_1(outer1_2[8]);
-      this.voiceChannels = outer1_1(outer1_2[8]).queryChannels(obj1).map((channel) => ({ channel: channel.record }));
-      const queryChannelsResult1 = outer1_1(outer1_2[8]).queryChannels(obj1);
-      const obj8 = GuildChannelSearchManager(outer1_2[9]);
-      const mapped = GuildChannelSearchManager(outer1_2[9]).chain(queryChannelsResult).map((channel) => {
-        const obj = { channel: channel.record };
-        let lastMessageId = outer2_10.lastMessageId(channel.record.id);
-        if (null == lastMessageId) {
-          lastMessageId = channel.record.lastMessageId;
-        }
-        obj.lastMessageId = lastMessageId;
-        return obj;
-      });
-      const chainResult = GuildChannelSearchManager(outer1_2[9]).chain(queryChannelsResult);
-      this.textChannels = mapped.sort((lastMessageId, lastMessageId2) => outer2_1(outer2_2[10]).compare(lastMessageId2.lastMessageId, lastMessageId.lastMessageId)).value();
-      if (query.length > 0) {
-        self.count = self.textChannels.length + self.voiceChannels.length;
-      } else {
-        self.count = null;
-      }
-    }
-  };
-  const items = [obj, , , ];
+}
+const prototype = GuildChannelSearchManager.prototype;
+prototype["search"] = function search(query, guildId) {
+  const self = this;
+  let obj = require(5031) /* NOOP */;
+  const boosterMap = obj.getBoosterMap(AutocompleterResultTypes.TEXT_CHANNEL);
+  let obj1 = require(5031) /* NOOP */;
   obj = {
-    key: "getTextChannels",
-    value() {
-      return this.textChannels;
+    query,
+    guildId,
+    limit: 1000,
+    allowEmptyQueries: true,
+    allowSnowflake: true,
+    fuzzy: false,
+    filter() {
+      return true;
     }
   };
-  items[1] = obj;
-  obj = {
-    key: "getVoiceChannels",
-    value() {
-      return this.voiceChannels;
+  const boosterMap1 = obj1.getBoosterMap(AutocompleterResultTypes.VOICE_CHANNEL);
+  obj = {};
+  const merged = Object.assign(obj);
+  obj.type = closure_4;
+  obj.boosters = boosterMap;
+  const obj4 = importDefault(5031);
+  const queryChannelsResult = importDefault(5031).queryChannels(obj);
+  obj1 = {};
+  const merged1 = Object.assign(obj);
+  obj1.type = closure_3;
+  obj1.boosters = boosterMap1;
+  const obj6 = importDefault(5031);
+  this.voiceChannels = importDefault(5031).queryChannels(obj1).map((channel) => ({ channel: channel.record }));
+  const queryChannelsResult1 = importDefault(5031).queryChannels(obj1);
+  const obj8 = require(12) /* apply */;
+  const mapped = require(12) /* apply */.chain(queryChannelsResult).map((channel) => {
+    const obj = { channel: channel.record, lastMessageId: null };
+    let lastMessageId = generateOldThreadCutoff.lastMessageId(channel.record.id);
+    if (lastMessageId == null) {
+      lastMessageId = channel.record.lastMessageId;
     }
-  };
-  items[2] = obj;
-  items[3] = {
-    key: "getCount",
-    value() {
-      return this.count;
-    }
-  };
-  return callback2(GuildChannelSearchManager, items);
-})();
+    obj[1] = lastMessageId;
+    return obj;
+  });
+  const chainResult = require(12) /* apply */.chain(queryChannelsResult);
+  this.textChannels = mapped.sort((lastMessageId, lastMessageId2) => callback(table[5]).compare(lastMessageId2.lastMessageId, lastMessageId.lastMessageId)).value();
+  if (query.length > 0) {
+    self.count = self.textChannels.length + self.voiceChannels.length;
+  } else {
+    self.count = null;
+  }
+};
+prototype["getTextChannels"] = function getTextChannels() {
+  return this.textChannels;
+};
+prototype["getVoiceChannels"] = function getVoiceChannels() {
+  return this.voiceChannels;
+};
+prototype["getCount"] = function getCount() {
+  return this.count;
+};
 const map = new Map();
-let tmp4 = ((Store) => {
-  class SearchGuildChannelTabStore {
-    constructor() {
-      self = this;
-      tmp = outer1_6(this, SearchGuildChannelTabStore);
-      obj = outer1_4(SearchGuildChannelTabStore);
-      tmp2 = outer1_3;
-      if (outer1_16()) {
-        tmp6 = globalThis;
-        _Reflect = Reflect;
-        tmp7 = outer1_4;
-        tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, outer1_4(self).constructor);
-      } else {
-        tmp3 = arguments;
-        tmp4 = arguments;
-        constructResult = obj(...arguments);
-      }
-      return tmp2(self, constructResult);
-    }
+class SearchGuildChannelTabStore extends Store {
+}
+const prototype2 = SearchGuildChannelTabStore.prototype;
+prototype2["initialize"] = function initialize() {
+  this.waitFor(generateOldThreadCutoff);
+};
+prototype2["getTextChannels"] = function getTextChannels(arg0) {
+  const value = map.get(arg0);
+  let textChannels;
+  if (value != null) {
+    textChannels = value.getTextChannels();
   }
-  callback(SearchGuildChannelTabStore, Store);
-  let obj = {
-    key: "initialize",
-    value() {
-      this.waitFor(outer1_10);
-    }
-  };
-  const items = [obj, , , ];
-  obj = {
-    key: "getTextChannels",
-    value(arg0) {
-      const value = outer1_15.get(arg0);
-      let textChannels;
-      if (null != value) {
-        textChannels = value.getTextChannels();
-      }
-      if (null == textChannels) {
-        textChannels = outer1_12;
-      }
-      return textChannels;
-    }
-  };
-  items[1] = obj;
-  obj = {
-    key: "getVoiceChannels",
-    value(arg0) {
-      const value = outer1_15.get(arg0);
-      let voiceChannels;
-      if (null != value) {
-        voiceChannels = value.getVoiceChannels();
-      }
-      if (null == voiceChannels) {
-        voiceChannels = outer1_13;
-      }
-      return voiceChannels;
-    }
-  };
-  items[2] = obj;
-  items[3] = {
-    key: "getCount",
-    value(arg0) {
-      const value = outer1_15.get(arg0);
-      let count;
-      if (null != value) {
-        count = value.getCount();
-      }
-      let tmp2 = null;
-      if (null != count) {
-        tmp2 = count;
-      }
-      return tmp2;
-    }
-  };
-  return callback2(SearchGuildChannelTabStore, items);
-})(require("initialize").Store);
-tmp4.displayName = "SearchGuildChannelTabStore";
-tmp4 = new tmp4(require("dispatcher"), {
+  if (textChannels == null) {
+    textChannels = closure_7;
+  }
+  return textChannels;
+};
+prototype2["getVoiceChannels"] = function getVoiceChannels(arg0) {
+  const value = map.get(arg0);
+  let voiceChannels;
+  if (value != null) {
+    voiceChannels = value.getVoiceChannels();
+  }
+  if (voiceChannels == null) {
+    voiceChannels = closure_8;
+  }
+  return voiceChannels;
+};
+prototype2["getCount"] = function getCount(arg0) {
+  const value = map.get(arg0);
+  let count;
+  if (value != null) {
+    count = value.getCount();
+  }
+  if (count == null) {
+    count = null;
+  }
+  return count;
+};
+SearchGuildChannelTabStore.displayName = "SearchGuildChannelTabStore";
+const searchGuildChannelTabStore = new SearchGuildChannelTabStore(require("dispatcher"), {
   SEARCH_GUILD_CHANNEL_TAB_SEARCH: function handleSearchGuildChannelTabSearch(id) {
     let guildId;
     let searchQueryString;
     id = id.id;
+    let obj = map;
     ({ guildId, searchQueryString } = id);
     let value = map.get(id);
-    if (null == value) {
-      const prototype = ctor.prototype;
-      value = new ctor();
+    if (value == null) {
+      if (typeof GuildChannelSearchManager !== "find") {
+        HermesBuiltin.throwTypeError();
+      }
+      obj = Object.create(GuildChannelSearchManager.prototype);
+      obj[1] = [];
+      obj[2] = [];
+      value = obj;
+      const tmp = GuildChannelSearchManager;
     }
-    const result = map.set(id, value);
+    const result = obj.set(id, value);
     value.search(searchQueryString, guildId);
   },
   SEARCH_GUILD_CHANNEL_TAB_CLEANUP: function handleSearchGuildChannelTabCleanup(id) {
     return map.delete(id.id);
   }
 });
-let result = require("_inherits").fileFinishedImporting("modules/search/native/stores/SearchGuildChannelTabStore.tsx");
+let result = require("HeaderRecord").fileFinishedImporting("modules/search/native/stores/SearchGuildChannelTabStore.tsx");
 
-export default tmp4;
+export default searchGuildChannelTabStore;

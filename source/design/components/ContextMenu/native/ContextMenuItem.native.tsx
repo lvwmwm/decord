@@ -1,42 +1,40 @@
-// Module ID: 13186
-// Function ID: 101413
+// Module ID: 13209
+// Function ID: 13210
 // Name: ContextMenuItem
-// Dependencies: [31, 27, 33, 4026, 4165, 9277, 689, 1324, 9276, 4577, 4581, 4580, 4161, 2]
+// Dependencies: [19, 17, 21, 4050, 4189, 9301, 712, 1348, 9300, 4599, 4603, 4602, 4185, 2]
 // Exports: ContextMenuItem
 
-// Module 13186 (ContextMenuItem)
-import result from "result";
+// Module 13209 (ContextMenuItem)
+import noop from "noop";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import importDefaultResult from "module_4026";
+import createCacheKey from "createCacheKey";
+import importDefaultResult from "module_4050";
 
-let closure_4;
-let closure_5;
+let c4;
+let c5;
 const require = arg1;
-({ jsx: closure_4, jsxs: closure_5 } = jsxProd);
-let closure_6 = require("module_4026").createAnimatedComponent(require("get ActivityIndicator").Pressable);
-let closure_7 = _createForOfIteratorHelperLoose.createStyles((arg0) => {
-  let obj = {};
-  obj = { padding: require(9277) /* CONTEXT_MENU_LONG_PRESS_DURATION_MS */.CONTEXT_MENU_ITEM_PADDING, minHeight: require(9277) /* CONTEXT_MENU_LONG_PRESS_DURATION_MS */.CONTEXT_MENU_ITEM_BASE_HEIGHT, flexDirection: "row", justifyContent: "space-between", alignItems: "center", gap: 8 };
-  obj.container = obj;
-  obj.containerRefresh = { justifyContent: "flex-start" };
-  obj = { borderTopLeftRadius: importDefault(689).radii.lg, borderTopRightRadius: importDefault(689).radii.lg };
-  obj.roundedTop = obj;
-  obj.roundedBottom = { borderBottomLeftRadius: importDefault(689).radii.lg, borderBottomRightRadius: importDefault(689).radii.lg };
-  const obj1 = { borderBottomLeftRadius: importDefault(689).radii.lg, borderBottomRightRadius: importDefault(689).radii.lg };
-  obj.border = { borderBottomWidth: 1, borderBottomColor: importDefault(689).colors.BORDER_SUBTLE };
-  const obj2 = { borderBottomWidth: 1, borderBottomColor: importDefault(689).colors.BORDER_SUBTLE };
-  obj.pressed = { backgroundColor: importDefault(689).colors.BACKGROUND_MOD_SUBTLE };
-  const obj4 = { width: 20, height: 20 };
+({ jsx: c4, jsxs: c5 } = jsxProd);
+let closure_6 = require("module_4050").createAnimatedComponent(require("get ActivityIndicator").Pressable);
+let closure_7 = createCacheKey.createStyles((arg0) => {
+  let obj = { container: null, containerRefresh: null, roundedTop: null, roundedBottom: null, border: null, pressed: null, icon: null, label: null, trailingIndicator: null };
+  obj = { padding: require(9301) /* CONTEXT_MENU_LONG_PRESS_DURATION_MS */.CONTEXT_MENU_ITEM_PADDING, minHeight: require(9301) /* CONTEXT_MENU_LONG_PRESS_DURATION_MS */.CONTEXT_MENU_ITEM_BASE_HEIGHT, flexDirection: "row", justifyContent: "space-between", alignItems: "center", gap: 8 };
+  obj[0] = obj;
+  obj[1] = { justifyContent: "flex-start" };
+  obj = { borderTopLeftRadius: importDefault(712).radii.lg, borderTopRightRadius: importDefault(712).radii.lg };
+  obj[2] = obj;
+  obj[3] = { borderBottomLeftRadius: importDefault(712).radii.lg, borderBottomRightRadius: importDefault(712).radii.lg };
+  const obj1 = { borderBottomLeftRadius: importDefault(712).radii.lg, borderBottomRightRadius: importDefault(712).radii.lg };
+  obj[4] = { borderBottomWidth: 1, borderBottomColor: importDefault(712).colors.BORDER_SUBTLE };
+  const obj2 = { borderBottomWidth: 1, borderBottomColor: importDefault(712).colors.BORDER_SUBTLE };
+  obj[5] = { backgroundColor: importDefault(712).colors.BACKGROUND_MOD_SUBTLE };
   if ("destructive" === arg0) {
-    let TEXT_STRONG = importDefault(689).colors.TEXT_FEEDBACK_CRITICAL;
+    let TEXT_STRONG = tmp2(712).colors.TEXT_FEEDBACK_CRITICAL;
   } else {
-    TEXT_STRONG = importDefault(689).colors.TEXT_STRONG;
+    TEXT_STRONG = tmp2(712).colors.TEXT_STRONG;
   }
-  obj4.tintColor = TEXT_STRONG;
-  obj.icon = obj4;
-  obj.label = { flexShrink: 1 };
-  obj.trailingIndicator = { marginLeft: "auto" };
+  obj[6] = { width: 20, height: 20, tintColor: TEXT_STRONG };
+  obj[7] = { flexShrink: 1 };
+  obj[8] = { marginLeft: "auto" };
   return obj;
 });
 let closure_8 = { code: "function ContextMenuItemNativeTsx1(){const{pan}=this.__closure;return pan.get();}" };
@@ -74,8 +72,8 @@ export const ContextMenuItem = function ContextMenuItem(accessibilityRole) {
   let backgroundColor;
   let obj = index(pan[3]);
   animatedRef = obj.useAnimatedRef();
-  const tmp2 = callback(variant);
-  const tmp3 = animatedRef(pan[7])("ContextMenuItem");
+  const tmp4 = callback(variant);
+  const tmp6 = animatedRef(pan[7])("ContextMenuItem");
   pan = state.pan;
   itemMeasurements = state.itemMeasurements;
   activeIndex = state.activeIndex;
@@ -100,15 +98,15 @@ export const ContextMenuItem = function ContextMenuItem(accessibilityRole) {
         const measureResult = index(pan[3]).measure(animatedRef);
         if (null != measureResult) {
           ({ pageX, pageY, width, height } = measureResult);
-          const result = index * index(pan[8]).INDEX_BOUNDS_OFFSET;
+          const result = index * tmp2(tmp3[8]).INDEX_BOUNDS_OFFSET;
           let value = itemMeasurements.get();
-          value[result + index(pan[8]).INDEX_BOUNDS_PAGE_X_OFFSET] = pageX;
+          value[result + tmp2(tmp3[8]).INDEX_BOUNDS_PAGE_X_OFFSET] = pageX;
           value = itemMeasurements.get();
-          value[result + index(pan[8]).INDEX_BOUNDS_PAGE_Y_OFFSET] = pageY;
+          value[result + tmp2(tmp3[8]).INDEX_BOUNDS_PAGE_Y_OFFSET] = pageY;
           const value1 = itemMeasurements.get();
-          value1[result + index(pan[8]).INDEX_BOUNDS_WIDTH_OFFSET] = width;
+          value1[result + tmp2(tmp3[8]).INDEX_BOUNDS_WIDTH_OFFSET] = width;
           const value2 = itemMeasurements.get();
-          value2[result + index(pan[8]).INDEX_BOUNDS_HEIGHT_OFFSET] = height;
+          value2[result + tmp2(tmp3[8]).INDEX_BOUNDS_HEIGHT_OFFSET] = height;
         }
         const obj = index(pan[3]);
       }
@@ -119,7 +117,7 @@ export const ContextMenuItem = function ContextMenuItem(accessibilityRole) {
   fn.__workletHash = 9571959267234;
   fn.__initData = closure_9;
   const animatedReaction = obj2.useAnimatedReaction(U, fn);
-  backgroundColor = tmp2.pressed.backgroundColor;
+  backgroundColor = tmp4.pressed.backgroundColor;
   let obj4 = index(pan[3]);
   class R {
     constructor() {
@@ -129,13 +127,14 @@ export const ContextMenuItem = function ContextMenuItem(accessibilityRole) {
         num = 1;
         tmp = 1 === c5.get();
       }
-      obj = {};
-      obj2 = index(pan[9]);
+      tmp3 = index;
+      tmp4 = pan;
+      obj = index(pan[9]);
       str = "transparent";
       if (tmp) {
         str = backgroundColor;
       }
-      obj.backgroundColor = obj2.withSpring(str, index(pan[10]).SUBTLE_SPRING, "animate-always");
+      obj = { backgroundColor: obj.withSpring(str, tmp3(tmp4[10]).SUBTLE_SPRING, "animate-always") };
       return obj;
     }
   }
@@ -145,19 +144,23 @@ export const ContextMenuItem = function ContextMenuItem(accessibilityRole) {
   R.__initData = closure_10;
   const animatedStyle = obj4.useAnimatedStyle(R);
   if (null != IconComponent) {
-    obj1 = { size: "sm", color: tmp2.icon.tintColor };
-    let tmp7 = activeIndex(IconComponent, obj1);
+    obj1 = { size: "sm", color: null };
+    obj1[1] = tmp4.icon.tintColor;
+    let tmp10 = activeIndex(IconComponent, obj1);
   } else {
-    tmp7 = null;
+    tmp10 = null;
     if (null != iconSource) {
-      obj2 = { source: iconSource, style: tmp2.icon };
-      tmp7 = activeIndex(animatedRef(pan[11]), obj2);
+      obj2 = { source: null, style: null };
+      obj2[0] = iconSource;
+      obj2[1] = tmp4.icon;
+      tmp10 = activeIndex(tmp5(tmp2[11]), obj2);
     }
   }
-  let tmp12 = null;
+  let tmp13 = null;
   if (null != trailingIndicator) {
-    const obj3 = { size: "sm", color: tmp2.icon.tintColor };
-    tmp12 = activeIndex(trailingIndicator, obj3);
+    const obj3 = { size: "sm", color: null };
+    obj3[1] = tmp4.icon.tintColor;
+    tmp13 = activeIndex(trailingIndicator, obj3);
   }
   const items = [index, itemMeasurements];
   const items1 = [activeIndex, index];
@@ -179,58 +182,69 @@ export const ContextMenuItem = function ContextMenuItem(accessibilityRole) {
   const callback1 = itemMeasurements.useCallback(() => {
     const result = activeIndex.set(index);
   }, items1);
-  obj4 = { ref: animatedRef };
-  const items3 = [tmp2.container, , , , , ];
-  let containerRefresh = tmp3;
+  obj4 = { ref: animatedRef, style: null, onLayout: null, onPressIn: null, onPressOut: null, onPress: null, accessibilityRole: null, children: null };
+  const items3 = [tmp4.container, , , , , ];
+  let containerRefresh = tmp6;
   const callback2 = itemMeasurements.useCallback(() => {
     const result = activeIndex.set(-1);
   }, items2);
-  if (tmp3) {
-    containerRefresh = tmp2.containerRefresh;
+  if (tmp6) {
+    containerRefresh = tmp4.containerRefresh;
   }
   items3[1] = containerRefresh;
-  items3[2] = !end && !lastInSection && tmp2.border;
+  let border = !end;
+  if (!end) {
+    border = !lastInSection;
+  }
+  if (border) {
+    border = tmp4.border;
+  }
+  items3[2] = border;
   if (start) {
-    start = tmp2.roundedTop;
+    start = tmp4.roundedTop;
   }
   items3[3] = start;
   if (end) {
-    end = tmp2.roundedBottom;
+    end = tmp4.roundedBottom;
   }
   items3[4] = end;
   items3[5] = animatedStyle;
-  obj4.style = items3;
-  obj4.onLayout = callback;
-  obj4.onPressIn = callback1;
-  obj4.onPressOut = callback2;
-  obj4.onPress = onPress;
-  obj4.accessibilityRole = str;
-  let tmp19 = tmp3;
-  if (tmp3) {
-    const obj5 = { children: tmp7 };
-    tmp19 = activeIndex(animatedRef(pan[3]).View, obj5);
+  obj4[1] = items3;
+  obj4[2] = callback;
+  obj4[3] = callback1;
+  obj4[4] = callback2;
+  obj4[5] = onPress;
+  obj4[6] = str;
+  let tmp20 = tmp6;
+  if (tmp6) {
+    const obj5 = { children: null };
+    obj5[0] = tmp10;
+    tmp20 = activeIndex(tmp5(tmp2[3]).View, obj5);
   }
-  const items4 = [tmp19, , , ];
-  const obj6 = { animated: true, variant: "text-md/medium", style: tmp2.label };
-  let str4 = "text-strong";
+  const items4 = [tmp20, , , ];
+  const obj6 = { animated: true, variant: "text-md/medium", style: tmp4.label, color: null, children: null };
+  let str2 = "text-strong";
   if ("destructive" === variant) {
-    str4 = "text-feedback-critical";
+    str2 = "text-feedback-critical";
   }
-  obj6.color = str4;
-  obj6.children = label;
+  obj6[3] = str2;
+  obj6[4] = label;
   items4[1] = activeIndex(index(pan[12]).Text, obj6);
-  let tmp24 = !tmp3;
-  if (tmp24) {
-    const obj7 = { children: tmp7 };
-    tmp24 = activeIndex(animatedRef(pan[3]).View, obj7);
+  let tmp22Result = !tmp6;
+  if (!tmp6) {
+    const obj7 = { children: null };
+    obj7[0] = tmp10;
+    tmp22Result = tmp22(tmp5(tmp2[3]).View, obj7);
   }
-  items4[2] = tmp24;
-  let tmp28 = null != tmp12;
-  if (tmp28) {
-    const obj8 = { style: tmp2.trailingIndicator, children: tmp12 };
-    tmp28 = activeIndex(animatedRef(pan[3]).View, obj8);
+  items4[2] = tmp22Result;
+  tmp22Result = null != tmp13;
+  if (tmp22Result) {
+    const obj8 = { style: null, children: null };
+    obj8[0] = tmp4.trailingIndicator;
+    obj8[1] = tmp13;
+    tmp22Result = tmp22(tmp5(tmp2[3]).View, obj8);
   }
-  items4[3] = tmp28;
-  obj4.children = items4;
+  items4[3] = tmp22Result;
+  obj4[7] = items4;
   return sharedValue(backgroundColor, obj4);
 };

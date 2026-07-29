@@ -1,23 +1,23 @@
-// Module ID: 9154
-// Function ID: 71758
+// Module ID: 9178
+// Function ID: 9179
 // Name: closeModal
-// Dependencies: [57, 31, 1850, 9155, 653, 33, 9153, 480, 5121, 9156, 9159, 9160, 9162, 9165, 9200, 9205, 9207, 566, 5485, 5552, 1212, 2]
+// Dependencies: [32, 19, 1874, 9179, 676, 21, 9177, 503, 5143, 9180, 9183, 9184, 9186, 9189, 9224, 9229, 9231, 589, 5503, 5570, 1236, 2]
 // Exports: default
 
-// Module 9154 (closeModal)
+// Module 9178 (closeModal)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import { resetChangeEmailStore } from "setChangeEmailError";
+import NavigationStack from "NavigationStack";
+import mergeGuildAvatar from "mergeGuildAvatar";
+import { resetChangeEmailStore } from "ChangeEmailFields";
 import { VerificationModalScenes } from "ME";
-import { jsx } from "jsxProd";
+import { jsx } from "set";
 
 const require = arg1;
 function closeModal() {
   resetChangeEmailStore();
-  importDefault(9153).close();
+  importDefault(9177).close();
 }
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/verification/native/components/EmailVerificationModal.tsx");
+const result = require("mergeGuildAvatar").fileFinishedImporting("modules/verification/native/components/EmailVerificationModal.tsx");
 
 export default function EmailVerificationModal(isChangeEmail) {
   isChangeEmail = isChangeEmail.isChangeEmail;
@@ -25,32 +25,36 @@ export default function EmailVerificationModal(isChangeEmail) {
   let first;
   let callback;
   let obj = isChangeEmail(first[17]);
-  const items = [_isNativeReflectConstruct];
-  const stateFromStores = obj.useStateFromStores(items, () => outer1_5.getCurrentUser());
-  let verified;
-  if (null != stateFromStores) {
-    verified = stateFromStores.verified;
+  const items = [mergeGuildAvatar];
+  const stateFromStores = obj.useStateFromStores(items, () => currentUser.getCurrentUser());
+  let flag;
+  if (stateFromStores != null) {
+    flag = stateFromStores.verified;
   }
-  const tmp2Result = importDefault(first[18])(null != verified && verified);
-  importDefault = tmp2Result;
+  if (flag == null) {
+    flag = false;
+  }
+  const tmp4Result = importDefault(first[18])(flag);
+  importDefault = tmp4Result;
   const tmp6 = callback(React.useState(), 2);
   first = tmp6[0];
   callback = tmp6[1];
-  const items1 = [first, isChangeEmail, tmp2Result];
+  const items1 = [first, isChangeEmail, tmp4Result];
   if (!isChangeEmail) {
     let email;
-    if (null != stateFromStores) {
+    if (stateFromStores != null) {
       email = stateFromStores.email;
     }
     if (null != email) {
-      obj = { screens: tmp8, initialRouteName: VerificationModalScenes.RESEND_EMAIL };
-      const intl = isChangeEmail(first[20]).intl;
-      obj.headerBackTitle = intl.string(isChangeEmail(first[20]).t["13/7kX"]);
-      return jsx(isChangeEmail(first[19]).Navigator, { screens: tmp8, initialRouteName: VerificationModalScenes.RESEND_EMAIL });
+      obj = { screens: null, initialRouteName: null, headerBackTitle: null };
+      obj[0] = tmp8;
+      obj[1] = VerificationModalScenes.RESEND_EMAIL;
+      const intl = tmp(tmp2[20]).intl;
+      obj[2] = intl.string(tmp(tmp2[20]).t["13/7kX"]);
+      return jsx(tmp(tmp2[19]).Navigator, { screens: null, initialRouteName: null, headerBackTitle: null });
     }
   }
-  if (null == stateFromStores) {
-    const ENTER_EMAIL = VerificationModalScenes.ENTER_EMAIL;
+  if (stateFromStores != null) {
+    const verified = stateFromStores.verified;
   }
-  const CONFIRM_EMAIL_CHANGE_START = VerificationModalScenes.CONFIRM_EMAIL_CHANGE_START;
 };

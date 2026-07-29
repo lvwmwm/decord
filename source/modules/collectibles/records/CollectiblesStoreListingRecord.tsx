@@ -1,49 +1,77 @@
-// Module ID: 5789
-// Function ID: 50574
-// Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 1859, 5790, 665, 2]
+// Module ID: 5807
+// Function ID: 5808
+// Name: fromServer
+// Dependencies: [1883, 5808, 688, 2]
 
-// Module 5789 (_isNativeReflectConstruct)
-import tinycolor from "tinycolor";
-import pad2 from "pad2";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
-import tmp2 from "Record";
+// Module 5807 (fromServer)
+import "toJS";
 
 const require = arg1;
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
+let prototype;
+prototype = function CollectiblesStoreListingRecord(styles) {
+  let summary;
+  const tmp2 = new prototype(tmp, new.target, new.target);
+  // ThrowIfThisInitialized (0x7c)
+  ({ storeListingId: tmp2.storeListingId, skuId: tmp2.skuId, name: tmp2.name, summary } = styles);
+  let trimmed;
+  if (summary != null) {
+    trimmed = summary.trim();
   }
-  const result = _isNativeReflectConstruct();
+  tmp2.summary = trimmed;
+  tmp2.styles = styles.styles;
+  return tmp2;
+}.prototype;
+class prototype extends tmp2 {
 }
-function parseStylesResponse(background_colors) {
-  let tmp = background_colors;
-  if (null != background_colors) {
-    const obj = {};
-    background_colors = background_colors.background_colors;
-    obj.backgroundColors = background_colors.map((color) => {
-      const tmp = outer1_1(outer1_2[6]);
-      return tmp(outer1_0(outer1_2[7]).int2hex(color));
+prototype["fromServer"] = function fromServer(styles) {
+  let sku_id;
+  let store_listing_id;
+  let summary;
+  styles = styles.styles;
+  ({ store_listing_id, sku_id } = styles);
+  let obj = Object.create(null);
+  const merged = Object.assign(styles, obj);
+  obj = {};
+  let str = obj;
+  const merged1 = Object.assign(merged);
+  obj.storeListingId = store_listing_id;
+  obj.skuId = sku_id;
+  let tmp5 = styles;
+  if (null != styles) {
+    obj = { backgroundColors: null, buttonColors: null, confettiColors: null };
+    const background_colors = styles.background_colors;
+    obj[0] = background_colors.map((color) => {
+      const tmp = callback2(5808);
+      return tmp(callback(688).int2hex(color));
     });
-    const button_colors = background_colors.button_colors;
-    obj.buttonColors = button_colors.map((color) => {
-      const tmp = outer1_1(outer1_2[6]);
-      return tmp(outer1_0(outer1_2[7]).int2hex(color));
+    const button_colors = styles.button_colors;
+    obj[1] = button_colors.map((color) => {
+      const tmp = callback2(5808);
+      return tmp(callback(688).int2hex(color));
     });
-    const confetti_colors = background_colors.confetti_colors;
-    obj.confettiColors = confetti_colors.map((color) => {
-      const tmp = outer1_1(outer1_2[6]);
-      return tmp(outer1_0(outer1_2[7]).int2hex(color));
+    const confetti_colors = styles.confetti_colors;
+    obj[2] = confetti_colors.map((color) => {
+      const tmp = callback2(5808);
+      return tmp(callback(688).int2hex(color));
     });
-    tmp = obj;
+    tmp5 = obj;
   }
-  return tmp;
-}
-let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/collectibles/records/CollectiblesStoreListingRecord.tsx");
+  obj.styles = tmp5;
+  if (typeof prototype !== "find") {
+    str = "Trying to call a non-function";
+    HermesBuiltin.throwTypeError();
+  }
+  const tmp6 = new prototype(str, merged, obj);
+  // ThrowIfThisInitialized (0x7c)
+  ({ storeListingId: tmp6.storeListingId, skuId: tmp6.skuId, name: tmp6.name, summary } = obj);
+  let trimmed;
+  if (summary != null) {
+    trimmed = summary.trim();
+  }
+  tmp6.summary = trimmed;
+  tmp6.styles = obj.styles;
+  return tmp6;
+};
+const result = require("int2hslRaw").fileFinishedImporting("modules/collectibles/records/CollectiblesStoreListingRecord.tsx");
 
-export default tmp2;
+export default prototype;

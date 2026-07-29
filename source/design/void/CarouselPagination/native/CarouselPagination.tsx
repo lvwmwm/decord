@@ -1,24 +1,27 @@
-// Module ID: 13200
-// Function ID: 101486
+// Module ID: 13223
+// Function ID: 13224
 // Name: CarouselPagination
-// Dependencies: [31, 27, 33, 4165, 689, 4026, 4166, 13140, 13201, 2]
+// Dependencies: [19, 17, 21, 4189, 712, 4050, 4190, 13163, 13224, 2]
 // Exports: default
 
-// Module 13200 (CarouselPagination)
+// Module 13223 (CarouselPagination)
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import importAllResult from "result";
+import createCacheKey from "createCacheKey";
+import importAllResult from "noop";
 
 const require = arg1;
-let obj = { container: { position: "relative", top: -16, marginBottom: -16 } };
-obj = { width: 8, height: 8, borderRadius: require("_createForOfIteratorHelperLoose").radii.xs, marginHorizontal: 4, backgroundColor: require("_createForOfIteratorHelperLoose").colors.ICON_STRONG };
-obj.dot = obj;
-let closure_5 = _createForOfIteratorHelperLoose.createStyles(obj);
+let obj = { container: { position: "relative", top: -16, marginBottom: -16 }, dot: null };
+obj = { width: 8, height: 8, borderRadius: require("Themes").radii.xs, marginHorizontal: 4, backgroundColor: require("Themes").colors.ICON_STRONG };
+obj[1] = obj;
+let closure_5 = createCacheKey.createStyles(obj);
 let closure_6 = { code: "function CarouselPaginationTsx1(){const{withTiming,active,STANDARD_EASING}=this.__closure;return withTiming(active?1:0,{duration:250,easing:STANDARD_EASING},'animate-always');}" };
 let closure_7 = { code: "function CarouselPaginationTsx2(){const{interpolate,progress,interpolateColor,backgroundColor,brand500}=this.__closure;return{width:interpolate(progress.get(),[0,1],[8,16]),backgroundColor:interpolateColor(progress.get(),[0,1],[backgroundColor,brand500]),opacity:interpolate(progress.get(),[0,1],[0.3,1])};}" };
-let closure_8 = require("result").memo((active) => {
+let closure_8 = require("noop").memo((active) => {
   active = active.active;
+  let derivedValue;
+  let BRAND_500;
+  let backgroundColor;
   const tmp = callback();
   let obj = active(BRAND_500[5]);
   const fn = function o() {
@@ -34,16 +37,17 @@ let closure_8 = require("result").memo((active) => {
   fn.__closure = obj;
   fn.__workletHash = 5885711729227;
   fn.__initData = closure_6;
-  const derivedValue = obj.useDerivedValue(fn);
+  derivedValue = obj.useDerivedValue(fn);
   BRAND_500 = derivedValue(BRAND_500[4]).unsafe_rawColors.BRAND_500;
-  const backgroundColor = tmp.dot.backgroundColor;
+  backgroundColor = tmp.dot.backgroundColor;
   const fn2 = function c() {
-    const obj = { width: active(BRAND_500[5]).interpolate(derivedValue.get(), [0, 1], [8, 16]) };
+    const obj = { width: null, backgroundColor: null, opacity: null };
+    obj[0] = active(BRAND_500[5]).interpolate(derivedValue.get(), [0, 1], [8, 16]);
     const obj2 = active(BRAND_500[5]);
     const items = [backgroundColor, BRAND_500];
-    obj.backgroundColor = active(BRAND_500[5]).interpolateColor(derivedValue.get(), [0, 1], items);
+    obj[1] = active(BRAND_500[5]).interpolateColor(derivedValue.get(), [0, 1], items);
     const obj3 = active(BRAND_500[5]);
-    obj.opacity = active(BRAND_500[5]).interpolate(derivedValue.get(), [0, 1], [0.3, 1]);
+    obj[2] = active(BRAND_500[5]).interpolate(derivedValue.get(), [0, 1], [0.3, 1]);
     return obj;
   };
   obj = { interpolate: active(BRAND_500[5]).interpolate, progress: derivedValue, interpolateColor: active(BRAND_500[5]).interpolateColor, backgroundColor, brand500: BRAND_500 };
@@ -64,5 +68,5 @@ export default function CarouselPagination(arg0) {
   const tmp2 = <closure_8 />;
   const tmp = callback();
   const items = [tmp.container, containerStyle];
-  return <View style={items}>{jsx(require(13201) /* Pagination */.Pagination, { dotElement: tmp2, inactiveDotElement: tmp2, dotsLength: numberOfItems, activeDotIndex: currentIndex })}</View>;
+  return <View style={items}>{jsx(require(13224) /* Pagination */.Pagination, { dotElement: tmp2, inactiveDotElement: tmp2, dotsLength: numberOfItems, activeDotIndex: currentIndex })}</View>;
 };

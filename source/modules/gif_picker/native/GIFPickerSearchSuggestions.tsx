@@ -1,61 +1,59 @@
-// Module ID: 9583
-// Function ID: 74612
-// Dependencies: [31, 27, 9572, 33, 4165, 689, 566, 4161, 1212, 4578, 2]
+// Module ID: 9605
+// Function ID: 9606
+// Dependencies: [19, 17, 9596, 21, 4189, 712, 589, 4185, 1236, 4600, 2]
 
-// Module 9583
+// Module 9605
 import { View } from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import getFormatFromUrl from "getFormatFromUrl";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import importAllResult from "result";
+import createCacheKey from "createCacheKey";
+import importAllResult from "noop";
 
-let closure_5;
+let c5;
 let closure_6;
 const require = arg1;
-({ jsx: closure_5, jsxs: closure_6 } = jsxProd);
-let obj = {};
-obj = { justifyContent: "center", flexDirection: "row", flexWrap: "wrap", gap: require("_createForOfIteratorHelperLoose").space.PX_8 };
-obj.suggestionsContainer = obj;
-_createForOfIteratorHelperLoose = { justifyContent: "flex-start", paddingVertical: require("_createForOfIteratorHelperLoose").space.PX_16 };
-obj.footerSuggestionsContainer = _createForOfIteratorHelperLoose;
-obj.footerSuggestionsTitle = { marginBottom: require("_createForOfIteratorHelperLoose").space.PX_16, textAlign: "center" };
-let closure_7 = _createForOfIteratorHelperLoose.createStyles(obj);
-const obj2 = { marginBottom: require("_createForOfIteratorHelperLoose").space.PX_16, textAlign: "center" };
+({ jsx: c5, jsxs: closure_6 } = jsxProd);
+let obj = { suggestionsContainer: null, footerSuggestionsContainer: null, footerSuggestionsTitle: null };
+obj = { justifyContent: "center", flexDirection: "row", flexWrap: "wrap", gap: require("Themes").space.PX_8 };
+obj[0] = obj;
+createCacheKey = { justifyContent: "flex-start", paddingVertical: require("Themes").space.PX_16 };
+obj[1] = createCacheKey;
+obj[2] = { marginBottom: require("Themes").space.PX_16, textAlign: "center" };
+let closure_7 = createCacheKey.createStyles(obj);
+const obj2 = { marginBottom: require("Themes").space.PX_16, textAlign: "center" };
 const memoResult = importAllResult.memo(function GIFPickerSearchSuggestions(onClickSuggestion) {
   onClickSuggestion = onClickSuggestion.onClickSuggestion;
   const tmp = callback3();
-  let obj = onClickSuggestion(566);
-  const items = [_isNativeReflectConstruct];
-  const stateFromStoresArray = obj.useStateFromStoresArray(items, () => outer1_4.getSuggestions());
-  let tmp2 = null;
+  let obj = onClickSuggestion(589);
+  const items = [getFormatFromUrl];
+  const stateFromStoresArray = obj.useStateFromStoresArray(items, () => suggestions.getSuggestions());
+  let tmp4 = null;
   if (0 !== stateFromStoresArray.length) {
-    obj = { style: tmp.footerSuggestionsContainer };
-    obj = { style: tmp.footerSuggestionsTitle, variant: "text-md/medium", color: "text-default" };
-    const intl = onClickSuggestion(1212).intl;
-    obj.children = intl.string(onClickSuggestion(1212).t["3JGJo2"]);
-    const items1 = [callback(onClickSuggestion(4161).Text, obj), ];
-    const obj1 = {
-      style: tmp.suggestionsContainer,
-      children: stateFromStoresArray.map((text) => {
-          let closure_0 = text;
-          const obj = {
-            size: "sm",
-            variant: "secondary",
-            hitSlop: outer1_1(outer1_2[5]).space.PX_8,
-            text,
-            onPress() {
-              return text(text);
-            }
-          };
-          return outer1_5(onClickSuggestion(outer1_2[9]).Button, obj, text);
-        })
-    };
+    obj = { style: null, children: null };
+    obj[0] = tmp.footerSuggestionsContainer;
+    obj = { style: null, variant: "text-md/medium", color: "text-default", children: null };
+    obj[0] = tmp.footerSuggestionsTitle;
+    const intl = tmp2(1236).intl;
+    obj[3] = intl.string(tmp2(1236).t["3JGJo2"]);
+    const items1 = [callback(tmp2(4185).Text, obj), ];
+    const obj1 = { style: null, children: null };
+    obj1[0] = tmp.suggestionsContainer;
+    obj1[1] = stateFromStoresArray.map((arg0) => {
+      let closure_0 = arg0;
+      const obj = { size: "sm", variant: "secondary", hitSlop: null, text: null, onPress: null };
+      obj[2] = outer1_1(outer1_2[5]).space.PX_8;
+      obj[3] = arg0;
+      obj[4] = function onPress() {
+        return callback(callback);
+      };
+      return outer1_5(onClickSuggestion(outer1_2[9]).Button, obj, arg0);
+    });
     items1[1] = callback(View, obj1);
-    obj.children = items1;
-    tmp2 = callback2(View, obj);
+    obj[1] = items1;
+    tmp4 = callback2(View, obj);
   }
-  return tmp2;
+  return tmp4;
 });
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/gif_picker/native/GIFPickerSearchSuggestions.tsx");
+const result = require("getFormatFromUrl").fileFinishedImporting("modules/gif_picker/native/GIFPickerSearchSuggestions.tsx");
 
 export default memoResult;

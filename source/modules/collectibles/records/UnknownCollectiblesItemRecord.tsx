@@ -1,32 +1,39 @@
-// Module ID: 5788
-// Function ID: 50565
-// Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 102, 18, 1876, 1877, 2]
+// Module ID: 5806
+// Function ID: 5807
+// Name: fromServer
+// Dependencies: [1900, 1901, 2]
 // Exports: isUnknownCollectiblesItemRecord
 
-// Module 5788 (_isNativeReflectConstruct)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import CollectiblesItemType from "CollectiblesItemType";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _get from "_get";
-import _inherits from "_inherits";
-import tmp2 from "_isNativeReflectConstruct";
+// Module 5806 (fromServer)
+import "fromServer";
 
 const require = arg1;
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
-  }
-  const result = _isNativeReflectConstruct();
+let prototype;
+prototype = function UnknownCollectiblesItemRecord(arg0) {
+  tmp = new tmp(arg0, new.target, tmp, new.target);
+  // ThrowIfThisInitialized (0x7c)
+  tmp.type = require(1901) /* CollectiblesItemType */.CollectiblesItemType.NONE;
+  return tmp;
+}.prototype;
+class prototype extends tmp2 {
 }
-let closure_8 = tmp2;
-let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/collectibles/records/UnknownCollectiblesItemRecord.tsx");
+prototype["fromServer"] = function fromServer(arg0) {
+  const obj = {};
+  let tmp2 = prototype;
+  const fromServerResult = super.fromServer(arg0);
+  const merged = Object.assign(fromServerResult);
+  obj.type = require(1901) /* CollectiblesItemType */.CollectiblesItemType.NONE;
+  if (typeof prototype !== "find") {
+    HermesBuiltin.throwTypeError();
+  }
+  tmp2 = new tmp2(obj, fromServerResult, this, prototype, obj);
+  // ThrowIfThisInitialized (0x7c)
+  tmp2.type = require(1901) /* CollectiblesItemType */.CollectiblesItemType.NONE;
+  return tmp2;
+};
+const result = require("set").fileFinishedImporting("modules/collectibles/records/UnknownCollectiblesItemRecord.tsx");
 
-export default tmp2;
+export default prototype;
 export const isUnknownCollectiblesItemRecord = function isUnknownCollectiblesItemRecord(arg0) {
-  return arg0 instanceof closure_8;
+  return arg0 instanceof prototype;
 };

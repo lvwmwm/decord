@@ -1,20 +1,20 @@
-// Module ID: 11791
-// Function ID: 91438
+// Module ID: 11816
+// Function ID: 11817
 // Name: SimpleLoadingModal
-// Dependencies: [31, 27, 33, 4165, 5619, 2]
+// Dependencies: [19, 17, 21, 4189, 5637, 2]
 // Exports: default
 
-// Module 11791 (SimpleLoadingModal)
-import result from "result";
+// Module 11816 (SimpleLoadingModal)
+import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_3;
-let closure_4;
+let c3;
+let c4;
 const require = arg1;
-({ Modal: closure_3, View: closure_4 } = get_ActivityIndicator);
-let closure_6 = _createForOfIteratorHelperLoose.createStyles({ modalBackground: { flex: 1, alignItems: "center", flexDirection: "column", justifyContent: "center" } });
+({ Modal: c3, View: c4 } = get_ActivityIndicator);
+let closure_6 = createCacheKey.createStyles({ modalBackground: { flex: 1, alignItems: "center", flexDirection: "column", justifyContent: "center" } });
 let closure_7 = { OPENING: 0, [0]: "OPENING", SHOWN: 1, [1]: "SHOWN", DISMISSED: 2, [2]: "DISMISSED" };
 const result = require("jsxProd").fileFinishedImporting("modules/mobile_web_handoff/native/SimpleLoadingModalUI.tsx");
 
@@ -80,7 +80,7 @@ export default function SimpleLoadingModal(operation) {
   const items3 = [operation, callback1, callback2];
   const effect = React.useEffect(() => {
     const promise = operation();
-    operation().then((arg0) => outer1_7(arg0)).catch((arg0) => outer1_8(arg0));
+    operation().then((arg0) => callback(arg0)).catch((arg0) => callback2(arg0));
   }, items3);
   let obj = {
     transparent: true,
@@ -89,16 +89,17 @@ export default function SimpleLoadingModal(operation) {
       if (ref.current === callback1.DISMISSED) {
         D();
       } else {
-        ref.current = callback1.SHOWN;
+        tmp.current = tmp2.SHOWN;
       }
     },
     onRequestClose() {
       if (cancelable) {
         callback();
       }
-    }
+    },
+    children: null
   };
-  obj = { style: callback().modalBackground, children: jsx(operation(5619).ActivityIndicator, {}) };
-  obj.children = <closure_4 style={callback().modalBackground}>{jsx(operation(5619).ActivityIndicator, {})}</closure_4>;
-  return <cancelable style={callback().modalBackground}>{jsx(operation(5619).ActivityIndicator, {})}</cancelable>;
+  obj = { style: callback().modalBackground, children: jsx(operation(5637).ActivityIndicator, {}) };
+  obj[4] = <closure_4 style={callback().modalBackground}>{jsx(operation(5637).ActivityIndicator, {})}</closure_4>;
+  return <cancelable style={callback().modalBackground}>{jsx(operation(5637).ActivityIndicator, {})}</cancelable>;
 };

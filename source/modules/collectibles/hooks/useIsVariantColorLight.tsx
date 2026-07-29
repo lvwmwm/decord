@@ -1,11 +1,11 @@
-// Module ID: 8704
-// Function ID: 68943
+// Module ID: 8728
+// Function ID: 8729
 // Name: useIsVariantColorLight
-// Dependencies: [31, 665, 2]
+// Dependencies: [19, 688, 2]
 // Exports: default
 
-// Module 8704 (useIsVariantColorLight)
-import result from "result";
+// Module 8728 (useIsVariantColorLight)
+import noop from "noop";
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/collectibles/hooks/useIsVariantColorLight.tsx");
@@ -16,9 +16,9 @@ export default function useIsVariantColorLight(variantValue) {
   return React.useMemo(() => {
     let isValidHexResult = variantValue(outer1_1[1]).isValidHex(variantValue.variantValue);
     if (isValidHexResult) {
-      const obj2 = variantValue(outer1_1[1]);
-      isValidHexResult = obj2.getDarkness(variantValue(outer1_1[1]).hex2int(variantValue.variantValue)) < 0.3;
-      const obj3 = variantValue(outer1_1[1]);
+      let tmpResult = tmp(tmp2[1]);
+      tmpResult = tmp(tmp2[1]);
+      isValidHexResult = tmpResult.getDarkness(tmpResult.hex2int(variantValue.variantValue)) < 0.3;
     }
     return isValidHexResult;
   }, items);

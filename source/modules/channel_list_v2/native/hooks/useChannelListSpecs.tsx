@@ -1,28 +1,28 @@
-// Module ID: 15084
-// Function ID: 114797
+// Module ID: 15117
+// Function ID: 15118
 // Name: useChannelListSpecs
-// Dependencies: [31, 10263, 15085, 1450, 14910, 4584, 1557, 9891, 2]
+// Dependencies: [19, 10284, 15118, 1474, 14936, 4606, 1581, 9913, 2]
 // Exports: default
 
-// Module 15084 (useChannelListSpecs)
-import result from "result";
+// Module 15117 (useChannelListSpecs)
+import noop from "noop";
 import hairlineWidth from "hairlineWidth";
 
-let closure_4;
-let closure_5;
+let c4;
+let c5;
 const require = arg1;
-({ STICKY_BANNER_ASPECT_RATIO: closure_4, BANNER_MAX_HEIGHT_PERCENTAGE: closure_5 } = hairlineWidth);
+({ STICKY_BANNER_ASPECT_RATIO: c4, BANNER_MAX_HEIGHT_PERCENTAGE: c5 } = hairlineWidth);
 const result = require("GuildInfoHeader").fileFinishedImporting("modules/channel_list_v2/native/hooks/useChannelListSpecs.tsx");
 
 export default function useChannelListSpecs(banner) {
-  redesignGuildHeaderHeight = redesignGuildHeaderHeight(15085).useRedesignGuildHeaderHeight(banner);
-  height = height(1450)().height;
-  const tmp2 = height(14910)();
+  redesignGuildHeaderHeight = redesignGuildHeaderHeight(15118).useRedesignGuildHeaderHeight(banner);
+  height = height(1474)().height;
+  const tmp2 = height(14936)();
   const dependencyMap = tmp2;
-  let obj = redesignGuildHeaderHeight(15085);
-  const fontScale = redesignGuildHeaderHeight(4584).useFontScale();
+  const obj = redesignGuildHeaderHeight(15118);
+  const fontScale = redesignGuildHeaderHeight(4606).useFontScale();
   let closure_4 = tmp4;
-  const top = height(1557)().top;
+  const top = height(1581)().top;
   const items = [null != banner.banner, tmp2, height, redesignGuildHeaderHeight, top, fontScale];
   return fontScale.useMemo(() => {
     let num = 0;
@@ -30,7 +30,6 @@ export default function useChannelListSpecs(banner) {
       const _Math = Math;
       num = Math.min(tmp2 / closure_4, height * top);
     }
-    const obj = { bannerHeight: height(tmp2[7])(num), bannerWidth: height(tmp2[7])(tmp2), headerHeight: height(tmp2[7])(redesignGuildHeaderHeight), fontScale, listTop: height(tmp2[7])(num + redesignGuildHeaderHeight), listBottom: 0, listPaddingBottom: height(tmp2[7])(24), listViewportHeight: height(tmp2[7])(height - top) };
-    return obj;
+    return { bannerHeight: height(tmp2[7])(num), bannerWidth: height(tmp2[7])(tmp2), headerHeight: height(tmp2[7])(redesignGuildHeaderHeight), fontScale, listTop: height(tmp2[7])(num + redesignGuildHeaderHeight), listBottom: 0, listPaddingBottom: height(tmp2[7])(24), listViewportHeight: height(tmp2[7])(height - top) };
   }, items);
 };

@@ -1,145 +1,280 @@
-// Module ID: 7919
-// Function ID: 62962
-// Name: trackTryOutFeature
-// Dependencies: [5, 1850, 653, 1852, 1207, 4011, 1212, 675, 7920, 5948, 686, 7921, 507, 7924, 4064, 2]
+// Module ID: 7944
+// Function ID: 7945
+// Name: _saveProfileChanges
+// Dependencies: [5, 1874, 676, 1876, 1231, 4035, 1236, 698, 7945, 5967, 709, 7946, 530, 7949, 4088, 2]
 // Exports: notifyUnsavedUserProfileChangesInModal, pinUserProfileBadgesOnClient, resetAllPendingChanges, resetAllTryItOutChanges, resetPendingProfileChanges, saveProfileChanges, setTryItOutAvatar, setTryItOutAvatarDecoration, setTryItOutBanner, setTryItOutDisplayNameStyles, setTryItOutPreset, setTryItOutProfileEffect, setTryItOutThemeColors
 
-// Module 7919 (trackTryOutFeature)
+// Module 7944 (_saveProfileChanges)
 import AccessibilityAnnouncer from "AccessibilityAnnouncer";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import mergeGuildAvatar from "mergeGuildAvatar";
 import ME from "ME";
 import GuildFeatures from "GuildFeatures";
 
-let closure_10;
-let closure_5;
+let c10;
+let c5;
+let c9;
 let closure_6;
-let closure_7;
-let closure_8;
-let closure_9;
+let error;
+let metroImportAll;
 const require = arg1;
-function trackTryOutFeature(ANIMATED_AVATAR) {
-  let obj = importDefault(675);
-  obj = { feature_name: ANIMATED_AVATAR, feature_tier: constants3.PREMIUM_STANDARD };
-  obj.track(constants2.PREMIUM_FEATURE_TRY_OUT, obj);
-}
-async function _saveProfileChanges(arg0, arg1, arg2, arg3) {
-  let bannerSurface;
-  let url;
-  const currentUser = outer2_4.getCurrentUser();
-  let id;
-  if (null != currentUser) {
-    id = currentUser.id;
+function _saveProfileChanges() {
+  const self = this;
+  const tmp = callback((arg0, arg1, arg2) => {
+    let closure_0 = arg0;
+    let closure_1 = arg1;
+    let closure_2 = arg2;
+    let c8 = 0;
+    let c9 = 0;
+    let c7 = 0;
+    return (function*(arg0, arg1, arg2) {
+      if (c9 === 2) {
+        c9 = 3;
+        HermesBuiltin.throwTypeError();
+      } else if (tmp6 === 3) {
+        if (arg0 === 1) {
+          throw arg1;
+        } else if (arg0 === 2) {
+          let obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
+        } else {
+          return { value: "HermesInternal", done: null };
+        }
+      } else {
+        try {
+          c9 = 2;
+          if (0 === c8) {
+            if (arg0 === 1) {
+              c9 = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              c9 = 3;
+              obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            } else {
+              let body2 = tmp3;
+              let mergeGuildAvatar = tmp7;
+              let headersForMd5 = callback;
+              let bannerSurface = id;
+              callback = id;
+              id = undefined;
+              let body;
+              let AccessibilityAnnouncer;
+              mergeGuildAvatar = undefined;
+              const currentUser = outer1_4.getCurrentUser();
+              id = undefined;
+              if (currentUser != null) {
+                id = currentUser.id;
+              }
+              if (null != id) {
+                let obj7 = callback(body[8]);
+                let shouldConvertBioEmoji = null != headersForMd5.bio;
+                if (shouldConvertBioEmoji) {
+                  shouldConvertBioEmoji = obj7.getShouldConvertBioEmoji();
+                }
+                if (shouldConvertBioEmoji) {
+                  let obj8 = callback2(body[9]);
+                  headersForMd5.bio = obj8.parse(undefined, headersForMd5.bio).content;
+                }
+                let c7 = 1;
+                let obj9 = callback2(body[10]);
+                const obj1 = { type: "USER_PROFILE_UPDATE_START", userId: null, guildId: null };
+                obj1[1] = id;
+                obj1[2] = bannerSurface;
+                obj9.dispatch(obj1);
+                if (null != bannerSurface) {
+                  const obj2 = { url: null, bannerSurface: null };
+                  obj2[0] = c7.USER_GUILD_PROFILE(bannerSurface, c8);
+                  obj2[1] = callback(body[11]).SafetyScannedUploadSurface.USER_GUILD_PROFILE_BANNER;
+                  let obj3 = obj2;
+                } else {
+                  obj3 = { url: null, bannerSurface: null };
+                  obj3[0] = c7.USER_PROFILE(c8);
+                  obj3[1] = callback(body[11]).SafetyScannedUploadSurface.USER_DEFAULT_PROFILE_BANNER;
+                }
+                bannerSurface = obj3.bannerSurface;
+                const HTTP = callback(body[12]).HTTP;
+                let obj4 = { url: null, body: null, headers: null, oldFormErrors: true, rejectWithError: false };
+                obj4[0] = obj3.url;
+                obj4[1] = headersForMd5;
+                const obj5 = {};
+                obj5[bannerSurface] = tmp71;
+                headersForMd5 = callback2(body[13]).buildHeadersForMd5(obj5);
+                obj4[2] = headersForMd5;
+                HTTP.patch(obj4);
+                c8 = 2;
+                c9 = 1;
+                const obj15 = callback2(body[13]);
+              } else {
+                c9 = 3;
+                return { value: "HermesInternal", done: null };
+              }
+              tmp71 = body;
+            }
+          } else if (1 === tmp7) {
+            c7 = 0;
+            body2 = closure_6;
+            const aPIError = new callback(body[14]).APIError(body2);
+            AccessibilityAnnouncer = aPIError;
+            body = undefined;
+            if (body2 != null) {
+              body = body2.body;
+            }
+            AccessibilityAnnouncer = body;
+            if (body == null) {
+              AccessibilityAnnouncer = {};
+            }
+            mergeGuildAvatar = AccessibilityAnnouncer;
+            obj4 = id(body[10]);
+            const obj6 = { type: "USER_PROFILE_UPDATE_FAILURE", guildId: null, errors: null, apiError: null };
+            obj6[1] = callback;
+            obj6[2] = mergeGuildAvatar;
+            obj6[3] = AccessibilityAnnouncer;
+            obj4.dispatch(obj6);
+            c9 = 3;
+            obj7 = { value: null, done: true };
+            obj7[0] = body2;
+            return obj7;
+          } else if (arg0 === 1) {
+            c9 = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            c7 = 0;
+            c9 = 3;
+            obj8 = { value: null, done: true };
+            obj8[0] = arg1;
+            return obj8;
+          } else {
+            body = arg1;
+            obj = id(body[10]);
+            obj9 = { type: "USER_PROFILE_UPDATE_SUCCESS", userId: null, guildId: null };
+            obj9[1] = id;
+            obj9[2] = callback;
+            const merged = Object.assign(body.body);
+            obj.dispatch(obj9);
+            c7 = 0;
+            c9 = 3;
+            const obj10 = { value: null, done: true };
+            obj10[0] = body;
+            return obj10;
+          }
+        } catch (tmp62) {
+          closure_6 = tmp62;
+          if (tmp4 === c7) {
+            c9 = tmp2;
+            throw tmp62;
+          } else {
+            c8 = tmp;
+          }
+        }
+      }
+    })();
+  });
+  const _saveProfileChanges = tmp;
+  const apply = tmp.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
   }
-  if (null != id) {
-    let obj = outer2_0(outer2_2[8]);
-    if (tmp7) {
-      let obj1 = outer2_1(outer2_2[9]);
-      arg0.bio = obj1.parse(undefined, arg0.bio).content;
-    }
-    let obj2 = outer2_1(outer2_2[10]);
-    obj = { type: "USER_PROFILE_UPDATE_START", userId: tmp3, guildId: arg1 };
-    obj2.dispatch(obj);
-    if (null != arg1) {
-      obj = { url: outer2_7.USER_GUILD_PROFILE(arg1, outer2_8), bannerSurface: outer2_0(outer2_2[11]).SafetyScannedUploadSurface.USER_GUILD_PROFILE_BANNER };
-      obj1 = obj;
-    } else {
-      obj1 = { url: outer2_7.USER_PROFILE(outer2_8), bannerSurface: outer2_0(outer2_2[11]).SafetyScannedUploadSurface.USER_DEFAULT_PROFILE_BANNER };
-    }
-    ({ url, bannerSurface } = obj1);
-    const HTTP = outer2_0(outer2_2[12]).HTTP;
-    obj2 = { url, body: arg0 };
-    tmp7 = null != arg0.bio && obj.getShouldConvertBioEmoji();
-    const obj3 = {};
-    obj3[bannerSurface] = arg2;
-    obj2.headers = outer2_1(outer2_2[13]).buildHeadersForMd5(obj3);
-    obj2.oldFormErrors = true;
-    obj2.rejectWithError = false;
-    const tmp28 = yield HTTP.patch(obj2);
-    const obj8 = outer2_1(outer2_2[13]);
-    const obj4 = { type: "USER_PROFILE_UPDATE_SUCCESS", userId: id, guildId: arg1 };
-    const merged = Object.assign(tmp28.body);
-    outer2_1(outer2_2[10]).dispatch(obj4);
-    return tmp28;
-  }
+  return applyArgumentsResult;
 }
-({ ComponentActions: closure_5, AnalyticEvents: closure_6, Endpoints: closure_7, ME: closure_8 } = ME);
-({ AnalyticsPremiumFeatureTiers: closure_9, AnalyticsPremiumFeatureNames: closure_10 } = GuildFeatures);
+({ ComponentActions: c5, AnalyticEvents: closure_6, Endpoints: error, ME: metroImportAll } = ME);
+({ AnalyticsPremiumFeatureTiers: c9, AnalyticsPremiumFeatureNames: c10 } = GuildFeatures);
 const result = require("ME").fileFinishedImporting("modules/user_profile/UserProfileActionCreators.tsx");
 
 export const notifyUnsavedUserProfileChangesInModal = function notifyUnsavedUserProfileChangesInModal() {
-  const ComponentDispatch = require(1207) /* reportDevtoolsEvent */.ComponentDispatch;
+  const ComponentDispatch = require(1231) /* ComponentDispatcher */.ComponentDispatch;
   ComponentDispatch.dispatch(constants.SHAKE_PROFILE_MODAL);
-  const ComponentDispatch2 = require(1207) /* reportDevtoolsEvent */.ComponentDispatch;
+  const ComponentDispatch2 = require(1231) /* ComponentDispatcher */.ComponentDispatch;
   ComponentDispatch2.dispatch(constants.EMPHASIZE_NOTICE);
-  const AccessibilityAnnouncer = require(4011) /* AccessibilityAnnouncer */.AccessibilityAnnouncer;
-  const intl = require(1212) /* getSystemLocale */.intl;
-  const intl2 = require(1212) /* getSystemLocale */.intl;
-  AccessibilityAnnouncer.announce("" + intl.string(require(1212) /* getSystemLocale */.t.GP7JLE) + " " + intl2.string(require(1212) /* getSystemLocale */.t.gKoO1D));
+  const AccessibilityAnnouncer = require(4035) /* AccessibilityAnnouncer */.AccessibilityAnnouncer;
+  const intl = require(1236) /* getSystemLocale */.intl;
+  const intl2 = require(1236) /* getSystemLocale */.intl;
+  AccessibilityAnnouncer.announce("" + intl.string(require(1236) /* getSystemLocale */.t.GP7JLE) + " " + intl2.string(require(1236) /* getSystemLocale */.t.gKoO1D));
 };
-export const saveProfileChanges = function saveProfileChanges(profileChangesForUpdateRequest, id2, bannerOriginalMd5) {
-  return _saveProfileChanges(...arguments);
+export const saveProfileChanges = function saveProfileChanges(outer1_8, id2, c7) {
+  const self = this;
+  const apply = _saveProfileChanges.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
 };
-export const pinUserProfileBadgesOnClient = function pinUserProfileBadgesOnClient(items, ttlInSeconds) {
+export const pinUserProfileBadgesOnClient = function pinUserProfileBadgesOnClient(items, arg1) {
   currentUser = currentUser.getCurrentUser();
   let id;
-  if (null != currentUser) {
+  if (currentUser != null) {
     id = currentUser.id;
   }
   if (null != id) {
-    let obj = importDefault(686);
-    obj = { type: "USER_PROFILE_PIN_BADGES_ON_CLIENT", badges: items, ttlInSeconds, userId: id };
+    let obj = importDefault(709);
+    obj = { type: "USER_PROFILE_PIN_BADGES_ON_CLIENT", badges: null, ttlInSeconds: null, userId: null };
+    obj[1] = items;
+    obj[2] = arg1;
+    obj[3] = id;
     obj.dispatch(obj);
   }
 };
 export const resetPendingProfileChanges = function resetPendingProfileChanges() {
-  importDefault(686).dispatch({ type: "USER_PROFILE_SETTINGS_RESET_PENDING_PROFILE_CHANGES" });
+  importDefault(709).dispatch({ type: "USER_PROFILE_SETTINGS_RESET_PENDING_PROFILE_CHANGES" });
 };
 export const resetAllPendingChanges = function resetAllPendingChanges() {
-  importDefault(686).dispatch({ type: "USER_PROFILE_SETTINGS_RESET_PENDING_CHANGES" });
+  importDefault(709).dispatch({ type: "USER_PROFILE_SETTINGS_RESET_PENDING_CHANGES" });
 };
 export const resetAllTryItOutChanges = function resetAllTryItOutChanges() {
-  importDefault(686).dispatch({ type: "USER_PROFILE_SETTINGS_RESET_TRY_IT_OUT_CHANGES" });
+  importDefault(709).dispatch({ type: "USER_PROFILE_SETTINGS_RESET_TRY_IT_OUT_CHANGES" });
 };
-export const setTryItOutAvatar = function setTryItOutAvatar(pendingImage) {
-  let obj = importDefault(686);
-  obj = { type: "USER_PROFILE_SETTINGS_SET_TRY_IT_OUT_AVATAR", avatar: pendingImage };
+export const setTryItOutAvatar = function setTryItOutAvatar(outer1_4) {
+  let obj = importDefault(709);
+  obj = { type: "USER_PROFILE_SETTINGS_SET_TRY_IT_OUT_AVATAR", avatar: outer1_4 };
   obj.dispatch(obj);
-  trackTryOutFeature(constants4.ANIMATED_AVATAR);
+  obj = { feature_name: constants4.ANIMATED_AVATAR, feature_tier: constants3.PREMIUM_STANDARD };
+  importDefault(698).track(constants2.PREMIUM_FEATURE_TRY_OUT, obj);
 };
 export const setTryItOutAvatarDecoration = function setTryItOutAvatarDecoration(avatarDecoration) {
-  let obj = importDefault(686);
+  let obj = importDefault(709);
   obj = { type: "USER_PROFILE_SETTINGS_SET_TRY_IT_OUT_AVATAR_DECORATION", avatarDecoration };
   obj.dispatch(obj);
-  trackTryOutFeature(constants4.AVATAR_DECORATION);
+  obj = { feature_name: constants4.AVATAR_DECORATION, feature_tier: constants3.PREMIUM_STANDARD };
+  importDefault(698).track(constants2.PREMIUM_FEATURE_TRY_OUT, obj);
 };
 export const setTryItOutProfileEffect = function setTryItOutProfileEffect(profileEffect) {
-  let obj = importDefault(686);
+  let obj = importDefault(709);
   obj = { type: "USER_PROFILE_SETTINGS_SET_TRY_IT_OUT_PROFILE_EFFECT", profileEffect };
   obj.dispatch(obj);
-  trackTryOutFeature(constants4.PROFILE_EFFECT);
+  obj = { feature_name: constants4.PROFILE_EFFECT, feature_tier: constants3.PREMIUM_STANDARD };
+  importDefault(698).track(constants2.PREMIUM_FEATURE_TRY_OUT, obj);
 };
-export const setTryItOutBanner = function setTryItOutBanner(first) {
-  let obj = importDefault(686);
-  obj = { type: "USER_PROFILE_SETTINGS_SET_TRY_IT_OUT_BANNER", banner: first };
+export const setTryItOutBanner = function setTryItOutBanner(c5) {
+  let obj = importDefault(709);
+  obj = { type: "USER_PROFILE_SETTINGS_SET_TRY_IT_OUT_BANNER", banner: c5 };
   obj.dispatch(obj);
-  trackTryOutFeature(constants4.PROFILE_BANNER);
+  obj = { feature_name: constants4.PROFILE_BANNER, feature_tier: constants3.PREMIUM_STANDARD };
+  importDefault(698).track(constants2.PREMIUM_FEATURE_TRY_OUT, obj);
 };
 export const setTryItOutThemeColors = function setTryItOutThemeColors(themeColors) {
-  let obj = importDefault(686);
+  let obj = importDefault(709);
   obj = { type: "USER_PROFILE_SETTINGS_SET_TRY_IT_OUT_THEME_COLORS", themeColors };
   obj.dispatch(obj);
-  trackTryOutFeature(constants4.PROFILE_THEME_COLOR);
+  obj = { feature_name: constants4.PROFILE_THEME_COLOR, feature_tier: constants3.PREMIUM_STANDARD };
+  importDefault(698).track(constants2.PREMIUM_FEATURE_TRY_OUT, obj);
 };
 export const setTryItOutDisplayNameStyles = function setTryItOutDisplayNameStyles(displayNameStyles) {
-  let obj = importDefault(686);
+  let obj = importDefault(709);
   obj = { type: "USER_PROFILE_SETTINGS_SET_TRY_IT_OUT_DISPLAY_NAME_STYLES", displayNameStyles };
   obj.dispatch(obj);
-  trackTryOutFeature(constants4.DISPLAY_NAME_STYLES);
+  obj = { feature_name: constants4.DISPLAY_NAME_STYLES, feature_tier: constants3.PREMIUM_STANDARD };
+  importDefault(698).track(constants2.PREMIUM_FEATURE_TRY_OUT, obj);
 };
 export const setTryItOutPreset = function setTryItOutPreset(arg0) {
-  let obj = importDefault(686);
+  let obj = importDefault(709);
   obj = { type: "USER_PROFILE_SETTINGS_SET_TRY_IT_OUT_PRESET" };
   const merged = Object.assign(arg0);
   obj.dispatch(obj);
-  trackTryOutFeature(constants4.PRESET);
+  obj = { feature_name: constants4.PRESET, feature_tier: constants3.PREMIUM_STANDARD };
+  importDefault(698).track(constants2.PREMIUM_FEATURE_TRY_OUT, obj);
 };

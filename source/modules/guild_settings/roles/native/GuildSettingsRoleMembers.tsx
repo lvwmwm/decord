@@ -1,48 +1,55 @@
-// Module ID: 16439
-// Function ID: 128121
+// Module ID: 16474
+// Function ID: 16475
 // Name: onMembersLoadFail
-// Dependencies: [57, 31, 27, 5182, 653, 33, 4165, 689, 3866, 9148, 1212, 16418, 6052, 566, 4505, 8280, 1273, 675, 4133, 16419, 1935, 10181, 6661, 6715, 9215, 4121, 4161, 5198, 11284, 2]
+// Dependencies: [32, 19, 17, 5204, 676, 21, 4189, 712, 3890, 9172, 1236, 16453, 6070, 589, 4528, 8304, 1297, 698, 4157, 16454, 1959, 10202, 6682, 6736, 9239, 4145, 4185, 5220, 11308, 2]
 // Exports: default
 
-// Module 16439 (onMembersLoadFail)
+// Module 16474 (onMembersLoadFail)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
-import { View } from "TableRowInner";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import _toPropertyKey from "_toPropertyKey";
+import { View } from "expandEventProperties";
+import getRoleMemberCount from "getRoleMemberCount";
 import { AnalyticEvents } from "ME";
-import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import jsxProd from "memoResult1";
+import createCacheKey from "createCacheKey";
 
-let closure_8;
-let closure_9;
+let c9;
+let metroImportAll;
 const require = arg1;
 function onMembersLoadFail() {
-  let obj = importDefault(3866);
-  obj = { key: "ERROR_OCCURRED_TRY_AGAIN", icon: importDefault(9148) };
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj.content = intl.string(require(1212) /* getSystemLocale */.t.fEptJP);
+  let obj = importDefault(3890);
+  obj = { key: "ERROR_OCCURRED_TRY_AGAIN", icon: importDefault(9172), content: null };
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj[2] = intl.string(require(1236) /* getSystemLocale */.t.fEptJP);
   obj.open(obj);
 }
-({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_12, flex: 1 };
-_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.containerSearchBar = { paddingBottom: require("_createForOfIteratorHelperLoose").space.PX_12 };
-let obj1 = { paddingBottom: require("_createForOfIteratorHelperLoose").space.PX_12 };
-_createForOfIteratorHelperLoose.missingMembers = { borderRadius: require("_createForOfIteratorHelperLoose").radii.md, borderWidth: 1, borderColor: require("_createForOfIteratorHelperLoose").colors.ICON_FEEDBACK_INFO, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_FEEDBACK_INFO, marginBottom: require("_createForOfIteratorHelperLoose").space.PX_16, padding: require("_createForOfIteratorHelperLoose").space.PX_8, flexDirection: "row", alignItems: "center" };
-let obj2 = { borderRadius: require("_createForOfIteratorHelperLoose").radii.md, borderWidth: 1, borderColor: require("_createForOfIteratorHelperLoose").colors.ICON_FEEDBACK_INFO, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_FEEDBACK_INFO, marginBottom: require("_createForOfIteratorHelperLoose").space.PX_16, padding: require("_createForOfIteratorHelperLoose").space.PX_8, flexDirection: "row", alignItems: "center" };
-_createForOfIteratorHelperLoose.missingMembersText = { marginLeft: require("_createForOfIteratorHelperLoose").space.PX_8, flex: 1 };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-let obj3 = { marginLeft: require("_createForOfIteratorHelperLoose").space.PX_8, flex: 1 };
+({ jsx: metroImportAll, jsxs: c9 } = jsxProd);
+createCacheKey = { container: null, containerSearchBar: null, missingMembers: null, missingMembersText: null };
+createCacheKey = { paddingHorizontal: require("Themes").space.PX_12, flex: 1 };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { paddingBottom: require("Themes").space.PX_12 };
+let obj1 = { paddingBottom: require("Themes").space.PX_12 };
+createCacheKey[2] = { borderRadius: require("Themes").radii.md, borderWidth: 1, borderColor: require("Themes").colors.ICON_FEEDBACK_INFO, backgroundColor: require("Themes").colors.BACKGROUND_FEEDBACK_INFO, marginBottom: require("Themes").space.PX_16, padding: require("Themes").space.PX_8, flexDirection: "row", alignItems: "center" };
+let obj2 = { borderRadius: require("Themes").radii.md, borderWidth: 1, borderColor: require("Themes").colors.ICON_FEEDBACK_INFO, backgroundColor: require("Themes").colors.BACKGROUND_FEEDBACK_INFO, marginBottom: require("Themes").space.PX_16, padding: require("Themes").space.PX_8, flexDirection: "row", alignItems: "center" };
+createCacheKey[3] = { marginLeft: require("Themes").space.PX_8, flex: 1 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let obj3 = { marginLeft: require("Themes").space.PX_8, flex: 1 };
 const result = require("get ActivityIndicator").fileFinishedImporting("modules/guild_settings/roles/native/GuildSettingsRoleMembers.tsx");
 
 export default function GuildSettingsRoleMembers(guild) {
+  let str;
+  let tmp3;
   guild = guild.guild;
   const role = guild.role;
   const locked = guild.locked;
-  const tmp = _createForOfIteratorHelperLoose();
-  let tmp2 = formatted(found.useState(""), 2);
-  formatted = tmp2[0].trim().toLowerCase();
+  let formatted;
+  let found;
+  let callback;
+  let getRoleMemberCount;
+  const tmp = createCacheKey();
+  [str, tmp3] = formatted(found.useState(""), 2);
+  const tmp2 = formatted(found.useState(""), 2);
+  formatted = str.trim().toLowerCase();
   let obj = guild(locked[11]);
   const queryGuildMembers = obj.useQueryGuildMembers(guild.id, formatted);
   let obj1 = guild(locked[11]);
@@ -55,41 +62,41 @@ export default function GuildSettingsRoleMembers(guild) {
   obj = { [guild.id]: guildRoleMembers.map((id) => id.id) };
   const subscribeGuildMembers = obj2.useSubscribeGuildMembers(obj, "GuildSettingsRoleMembers");
   let obj4 = guild(locked[13]);
-  let items = [_isNativeReflectConstruct];
+  let items = [getRoleMemberCount];
   const items1 = [guild.id, role.id];
   const items2 = [guild.id, , ];
   ({ id: arr5[1], name: arr5[2] } = role);
-  const str = tmp2[0];
-  const str2 = tmp2[0].trim();
-  const callback = found.useCallback((name, arr) => {
+  const str2 = str.trim();
+  callback = found.useCallback((name, arr) => {
     let closure_0 = name;
     const found = arr.filter((arg0) => arg0 !== found.id);
     if (found.length !== arr.length) {
       let obj = role(locked[14]);
-      obj = {};
+      obj = { title: null, body: null, cancelText: null, confirmText: null, onConfirm: null, hideActionSheet: false, confirmColor: null };
       let intl = guild(locked[10]).intl;
-      obj.title = intl.string(guild(locked[10]).t["7sFNfW"]);
+      obj[0] = intl.string(guild(locked[10]).t["7sFNfW"]);
       const intl2 = guild(locked[10]).intl;
-      obj = { username: name.name, roleName: found.name };
-      obj.body = intl2.format(guild(locked[10]).t.scORUv, obj);
+      obj = { username: null, roleName: null };
+      obj[0] = name.name;
+      obj[1] = found.name;
+      obj[1] = intl2.format(guild(locked[10]).t.scORUv, obj);
       const intl3 = guild(locked[10]).intl;
-      obj.cancelText = intl3.string(guild(locked[10]).t["ETE/oC"]);
+      obj[2] = intl3.string(guild(locked[10]).t["ETE/oC"]);
       const intl4 = guild(locked[10]).intl;
-      obj.confirmText = intl4.string(guild(locked[10]).t.N86XcP);
-      obj.onConfirm = function onConfirm() {
+      obj[3] = intl4.string(guild(locked[10]).t.N86XcP);
+      obj[4] = function onConfirm() {
         const items = [found.id];
         let obj = role(locked[15]);
         role(locked[15]).updateMemberRoles(name.id, name.id, found, [], items).catch(() => {
-          let obj = role(locked[8]);
-          obj = { key: "ERROR_OCCURRED_TRY_AGAIN" };
-          const intl = guild(locked[10]).intl;
-          obj.content = intl.string(guild(locked[10]).t.fEptJP);
-          obj.icon = role(locked[9]);
+          let obj = callback2(3890);
+          obj = { key: "ERROR_OCCURRED_TRY_AGAIN", content: null, icon: null };
+          const intl = callback(1236).intl;
+          obj[1] = intl.string(callback(1236).t.fEptJP);
+          obj[2] = callback2(9172);
           obj.open(obj);
         });
       };
-      obj.hideActionSheet = false;
-      obj.confirmColor = guild(locked[16]).ButtonColors.RED;
+      obj[6] = guild(locked[16]).ButtonColors.RED;
       obj.show(obj);
     }
   }, items2);
@@ -102,65 +109,65 @@ export default function GuildSettingsRoleMembers(guild) {
     obj = { guild, role };
     obj2.openLazy(guild(locked[20])(locked[19], locked.paths), "role-add-members-" + guild.id + "-" + role.id, obj);
   }, items3);
-  _isNativeReflectConstruct = found.useCallback((item) => {
+  getRoleMemberCount = found.useCallback((item) => {
     item = item.item;
     const index = item.index;
-    let obj = { end: index === found.length - 1 };
-    let tmp3 = 0 === index;
-    if (tmp3) {
-      tmp3 = locked;
+    let obj = { end: index === found.length - 1, start: null, guildId: null, userId: null, trailing: null };
+    let tmp4 = 0 === index;
+    if (tmp4) {
+      tmp4 = locked;
     }
-    obj.start = tmp3;
-    obj.guildId = item.id;
-    obj.userId = item.user.id;
-    let tmp4 = null;
+    obj[1] = tmp4;
+    obj[2] = item.id;
+    obj[3] = item.user.id;
+    let tmpResult = null;
     if (!locked) {
-      obj = { icon: outer1_8(guild(locked[23]).CircleXIcon, {}) };
-      const intl = guild(locked[10]).intl;
-      obj.accessibilityLabel = intl.string(guild(locked[10]).t["7sFNfW"]);
-      obj.accessibilityRole = "button";
-      obj.onPress = function onPress() {
+      obj = { icon: null, accessibilityLabel: null, accessibilityRole: "button", onPress: null, variant: "icon-only" };
+      obj[0] = tmp(guild(tmp2[23]).CircleXIcon, {});
+      const intl = guild(tmp2[10]).intl;
+      obj[1] = intl.string(guild(tmp2[10]).t["7sFNfW"]);
+      obj[3] = function onPress() {
         return outer1_5(item, item.roles);
       };
-      obj.variant = "icon-only";
-      tmp4 = outer1_8(guild(locked[22]).IconButton, obj);
+      tmpResult = tmp(guild(tmp2[22]).IconButton, obj);
     }
-    obj.trailing = tmp4;
+    obj[4] = tmpResult;
     return outer1_8(role(locked[21]), obj, item.id);
   }, items4);
-  obj = { style: tmp.container };
-  obj1 = { style: tmp.containerSearchBar, children: callback(guild(locked[24]).SearchField, { onChange: tmp2[1] }) };
+  obj = { style: tmp.container, children: null };
+  obj1 = { style: tmp.containerSearchBar, children: callback(guild(locked[24]).SearchField, { onChange: tmp3 }) };
   const items5 = [callback(callback, obj1), ];
-  obj2 = { style: guild.contentContainerStyle };
-  let tmp11 = null;
-  if (tmp6) {
-    const obj3 = { style: tmp.missingMembers };
-    obj4 = { color: role(locked[7]).colors.TEXT_LINK, size: "md" };
-    const items6 = [callback(guild(locked[25]).CircleInformationIcon, obj4), ];
-    const obj5 = { style: tmp.missingMembersText, variant: "text-sm/medium" };
-    let intl = guild(locked[10]).intl;
-    obj5.children = intl.string(guild(locked[10]).t.RQxHZ8);
-    items6[1] = callback(guild(locked[26]).Text, obj5);
-    obj3.children = items6;
-    tmp11 = callback2(callback, obj3);
+  obj2 = { style: guild.contentContainerStyle, children: null };
+  let tmp12Result = null;
+  if (tmp9) {
+    const obj3 = { style: null, children: null };
+    obj3[0] = tmp.missingMembers;
+    obj4 = { color: null, size: "md" };
+    obj4[0] = role(tmp6[7]).colors.TEXT_LINK;
+    const items6 = [tmp14(tmp5(tmp6[25]).CircleInformationIcon, obj4), ];
+    const obj5 = { style: null, variant: "text-sm/medium", children: null };
+    obj5[0] = tmp.missingMembersText;
+    let intl = tmp5(tmp6[10]).intl;
+    obj5[2] = intl.string(tmp5(tmp6[10]).t.RQxHZ8);
+    items6[1] = tmp14(tmp5(tmp6[26]).Text, obj5);
+    obj3[1] = items6;
+    tmp12Result = tmp12(tmp13, obj3);
   }
-  const items7 = [tmp11, , ];
-  let tmp18 = null;
+  const items7 = [tmp12Result, , ];
+  let tmp14Result = null;
   if (!locked) {
-    const obj6 = { arrow: true };
-    let intl2 = guild(locked[10]).intl;
-    obj6.label = intl2.string(guild(locked[10]).t.ZYOK46);
-    const obj7 = { size: "md" };
-    obj6.icon = callback(guild(locked[28]).CirclePlusIcon, obj7);
-    obj6.onPress = callback1;
-    obj6.start = true;
-    obj6.end = 0 === found.length;
-    tmp18 = callback(guild(locked[27]).TableRow, obj6);
+    const obj6 = { arrow: true, label: null, icon: null, onPress: null, start: true, end: null };
+    let intl2 = tmp5(tmp6[10]).intl;
+    obj6[1] = intl2.string(tmp5(tmp6[10]).t.ZYOK46);
+    obj6[2] = tmp14(tmp5(tmp6[28]).CirclePlusIcon, { size: "md" });
+    obj6[3] = callback1;
+    obj6[5] = 0 === found.length;
+    tmp14Result = tmp14(tmp5(tmp6[27]).TableRow, obj6);
   }
-  items7[1] = tmp18;
+  items7[1] = tmp14Result;
   items7[2] = found.map((item, index) => roleMemberCount({ item, index }));
-  obj2.children = items7;
-  items5[1] = callback2(callback, obj2);
-  obj.children = items5;
-  return callback2(callback, obj);
+  obj2[1] = items7;
+  items5[1] = closure_9(callback, obj2);
+  obj[1] = items5;
+  return closure_9(callback, obj);
 };

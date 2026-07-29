@@ -1,198 +1,135 @@
-// Module ID: 7698
-// Function ID: 61430
-// Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 57, 1194, 1348, 664, 4392, 1882, 5695, 566, 686, 2]
+// Module ID: 7721
+// Function ID: 7722
+// Name: deleteNonce
+// Dependencies: [32, 1218, 1372, 687, 4415, 1906, 5713, 589, 709, 2]
 
-// Module 7698 (_isNativeReflectConstruct)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_4 from "_isNativeReflectConstruct";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
+// Module 7721 (deleteNonce)
 import _slicedToArray from "_slicedToArray";
-import closure_9 from "_isNativeReflectConstruct";
-import closure_10 from "_isNativeReflectConstruct";
+import fetchFingerprint from "fetchFingerprint";
+import ensureGuildLoaded from "ensureGuildLoaded";
+import { Store } from "initialize";
 
 const require = arg1;
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
-  }
-  const result = _isNativeReflectConstruct();
-}
-function markInteractionByNonceCompleted(nonce) {
-  if (null == nonce) {
-    return false;
-  } else if (null == dependencyMap[nonce]) {
-    return false;
-  } else {
-    if (null != obj.onSuccess) {
-      obj.onSuccess();
-    }
-    deleteNonce(nonce);
-  }
-}
-function deleteNonce(nonce) {
-  if (null == dependencyMap3[nonce]) {
-    delete tmp4[tmp2];
-    if (null != dependencyMap2[nonce]) {
-      delete tmp[tmp4];
+function deleteNonce(first) {
+  if (null == dependencyMap4[first]) {
+    delete tmp[tmp2];
+    if (null != dependencyMap3[first]) {
+      delete tmp[tmp3];
     }
     delete tmp[tmp2];
-    const obj = {};
+    const obj = { insertedAt: null, nonce: null, messageId: null, interaction: null };
     const _Date = Date;
-    obj.insertedAt = Date.now();
-    obj.nonce = nonce;
-    obj.messageId = dependencyMap2[nonce];
-    obj.interaction = dependencyMap[nonce];
-    dependencyMap3[nonce] = obj;
+    obj[0] = Date.now();
+    obj[1] = first;
+    obj[2] = dependencyMap3[first];
+    obj[3] = dependencyMap[first];
+    dependencyMap4[first] = obj;
   } else {
-    delete tmp3[tmp2];
+    delete tmp[tmp2];
   }
 }
-let result = 5 * require("set").Millis.MINUTE;
+const result = 5 * require("set").Millis.MINUTE;
 const result1 = 10 * require("set").Millis.SECOND;
+let closure_8 = {};
+let closure_9 = {};
+let closure_10 = {};
+let c11;
+let c12;
 let closure_13 = {};
-let closure_14 = {};
-let closure_15 = {};
-let c16;
-let c17;
-let closure_18 = {};
-let tmp4 = ((Store) => {
-  class InteractionStore {
-    constructor() {
-      self = this;
-      tmp = outer1_3(this, InteractionStore);
-      obj = outer1_6(InteractionStore);
-      tmp2 = outer1_5;
-      if (outer1_19()) {
-        tmp6 = globalThis;
-        _Reflect = Reflect;
-        tmp7 = outer1_6;
-        tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, outer1_6(self).constructor);
-      } else {
-        tmp3 = arguments;
-        tmp4 = arguments;
-        constructResult = obj(...arguments);
+class InteractionStore extends Store {
+}
+const prototype = InteractionStore.prototype;
+prototype["initialize"] = function initialize() {
+  this.waitFor(fetchFingerprint, ensureGuildLoaded);
+};
+prototype["getInteraction"] = function getInteraction(closure_0) {
+  let tmp2 = null;
+  if (null != dependencyMap2[closure_0.id]) {
+    tmp2 = dependencyMap[tmp];
+  }
+  return tmp2;
+};
+prototype["getMessageInteractionStates"] = function getMessageInteractionStates() {
+  const obj = {};
+  const entries = Object.entries(closure_8);
+  while (tmp2 !== undefined) {
+    let tmp4 = callback;
+    let tmp5 = callback(tmp3, 2);
+    let tmp6 = tmp5[1];
+    let tmp7 = dependencyMap3;
+    let tmp8 = dependencyMap3[tmp5[0]];
+    if (null != tmp8) {
+      let tmp10 = tmp8;
+      let tmp11 = tmp6;
+      obj[tmp9] = tmp6.state;
+    }
+    continue;
+  }
+  return obj;
+};
+prototype["canQueueInteraction"] = function canQueueInteraction(c1, closure_9) {
+  let tmp2 = null != tmp;
+  if (tmp2) {
+    tmp2 = null != dependencyMap[tmp];
+  }
+  if (tmp2) {
+    tmp2 = dependencyMap[tmp].state !== require(4415) /* InteractionState */.InteractionState.FAILED;
+  }
+  if (!tmp2) {
+    let tmp9 = null != dependencyMap[closure_9];
+    if (tmp9) {
+      tmp9 = dependencyMap[closure_9].state !== require(4415) /* InteractionState */.InteractionState.FAILED;
+    }
+    tmp2 = tmp9;
+  }
+  return !tmp2;
+};
+prototype["getIFrameModalApplicationId"] = function getIFrameModalApplicationId() {
+  return c12;
+};
+prototype["getIFrameModalKey"] = function getIFrameModalKey() {
+  return c11;
+};
+prototype["getInteractionDebugContext"] = function getInteractionDebugContext(nonce) {
+  if (null != nonce) {
+    if (null != dependencyMap[nonce]) {
+      let obj = { interaction: null, messageId: null };
+      obj[0] = tmp2;
+      obj[1] = dependencyMap3[nonce];
+      return obj;
+    } else {
+      let tmp5;
+      if (null != dependencyMap4[nonce]) {
+        obj = { interaction: null, messageId: null };
+        ({ interaction: obj[0], messageId: obj[1] } = tmp4);
+        tmp5 = obj;
       }
-      return tmp2(self, constructResult);
+      return tmp5;
     }
   }
-  callback2(InteractionStore, Store);
-  let obj = {
-    key: "initialize",
-    value() {
-      this.waitFor(outer1_9, outer1_10);
-    }
-  };
-  const items = [obj, , , , , , ];
-  obj = {
-    key: "getInteraction",
-    value(arg0) {
-      let tmp2 = null;
-      if (null != outer1_14[arg0.id]) {
-        tmp2 = outer1_13[tmp];
-      }
-      return tmp2;
-    }
-  };
-  items[1] = obj;
-  obj = {
-    key: "getMessageInteractionStates",
-    value() {
-      const obj = {};
-      const entries = Object.entries(outer1_13);
-      for (let num = 0; num < entries.length; num = num + 1) {
-        let tmp = outer1_8;
-        let tmp2 = outer1_8(entries[num], 2);
-        let tmp3 = outer1_15;
-        let tmp4 = outer1_15[tmp2[0]];
-        if (null != tmp4) {
-          obj[tmp4] = tmp2[1].state;
-        }
-      }
-      return obj;
-    }
-  };
-  items[2] = obj;
-  items[3] = {
-    key: "canQueueInteraction",
-    value(arg0, arg1) {
-      let tmp2 = null != tmp;
-      if (tmp2) {
-        tmp2 = null != outer1_13[tmp];
-      }
-      if (tmp2) {
-        tmp2 = outer1_13[tmp].state !== InteractionStore(outer1_2[9]).InteractionState.FAILED;
-      }
-      if (!tmp2) {
-        let tmp8 = null != outer1_13[arg1];
-        if (tmp8) {
-          tmp8 = outer1_13[arg1].state !== InteractionStore(outer1_2[9]).InteractionState.FAILED;
-        }
-        tmp2 = tmp8;
-      }
-      return !tmp2;
-    }
-  };
-  items[4] = {
-    key: "getIFrameModalApplicationId",
-    value() {
-      return outer1_17;
-    }
-  };
-  items[5] = {
-    key: "getIFrameModalKey",
-    value() {
-      return outer1_16;
-    }
-  };
-  items[6] = {
-    key: "getInteractionDebugContext",
-    value(arg0) {
-      if (null != arg0) {
-        if (null != outer1_13[arg0]) {
-          let obj = { interaction: tmp2, messageId: outer1_15[arg0] };
-          return obj;
-        } else {
-          let tmp5;
-          if (null != outer1_18[arg0]) {
-            obj = {};
-            ({ interaction: obj.interaction, messageId: obj.messageId } = tmp4);
-            tmp5 = obj;
-          }
-          return tmp5;
-        }
-      }
-    }
-  };
-  return callback(InteractionStore, items);
-})(require("initialize").Store);
-tmp4.displayName = "InteractionStore";
-tmp4 = new tmp4(require("dispatcher"), {
+};
+InteractionStore.displayName = "InteractionStore";
+const interactionStore = new InteractionStore(require("dispatcher"), {
   LOGOUT: function handleInit() {
+    let closure_8 = {};
+    let closure_9 = {};
+    let closure_10 = {};
     let closure_13 = {};
-    let closure_14 = {};
-    let closure_15 = {};
-    let closure_18 = {};
     const timerId = setInterval(() => {
       const timestamp = Date.now();
-      const entries = Object.entries(closure_18);
-      for (let num = 0; num < entries.length; num = num + 1) {
-        let tmp4 = outer1_8;
-        let tmp5 = outer1_8(entries[num], 2);
-        let first = tmp5[0];
-        let tmp7 = outer1_12;
-        if (timestamp - tmp5[1].insertedAt > outer1_12) {
-          let tmp8 = closure_18;
-          delete tmp[tmp2];
+      const entries = Object.entries(closure_13);
+      while (tmp5 !== undefined) {
+        let tmp7 = callback;
+        let tmp8 = callback(tmp6, 2);
+        let tmp10 = closure_7;
+        if (timestamp - tmp8[1].insertedAt > closure_7) {
+          let tmp11 = closure_13;
+          let tmp12 = tmp9;
+          delete tmp2[tmp];
         }
+        continue;
       }
-    }, closure_11);
+    }, closure_6);
   },
   INTERACTION_QUEUE: function handleInteractionQueue(arg0) {
     let data;
@@ -205,10 +142,10 @@ tmp4 = new tmp4(require("dispatcher"), {
     ({ nonce, messageId } = arg0);
     ({ data, onCreate, onCancel, onSuccess, onFailure } = arg0);
     if (null != messageId) {
-      closure_14[messageId] = nonce;
-      closure_15[nonce] = messageId;
+      closure_9[messageId] = nonce;
+      closure_10[nonce] = messageId;
     }
-    closure_13[nonce] = { state: require(4392) /* InteractionState */.InteractionState.QUEUED, data, onCreate, onCancel, onSuccess, onFailure };
+    closure_8[nonce] = { state: require(4415) /* InteractionState */.InteractionState.QUEUED, data, onCreate, onCancel, onSuccess, onFailure };
   },
   INTERACTION_CREATE: function handleInteractionCreate(nonce) {
     nonce = nonce.nonce;
@@ -216,18 +153,44 @@ tmp4 = new tmp4(require("dispatcher"), {
       return false;
     } else {
       if (null != dependencyMap[nonce]) {
-        if (obj.state === require(4392) /* InteractionState */.InteractionState.QUEUED) {
-          obj.state = require(4392) /* InteractionState */.InteractionState.CREATED;
-          if (null != obj.onCreate) {
-            obj.onCreate(tmp);
+        if (tmp3.state === require(4415) /* InteractionState */.InteractionState.QUEUED) {
+          tmp3.state = tmp4(4415).InteractionState.CREATED;
+          const onCreate = tmp3.onCreate;
+          if (onCreate != null) {
+            onCreate(tmp);
           }
         }
+        tmp4 = require;
       }
       return false;
     }
   },
   INTERACTION_SUCCESS: function handleInteractionSuccess(nonce) {
-    markInteractionByNonceCompleted(nonce.nonce);
+    nonce = nonce.nonce;
+    if (null != nonce) {
+      if (null != dependencyMap[nonce]) {
+        const onSuccess = tmp16.onSuccess;
+        if (onSuccess != null) {
+          onSuccess();
+        }
+        if (null == dependencyMap4[nonce]) {
+          delete tmp[tmp2];
+          if (null != dependencyMap3[nonce]) {
+            delete tmp[tmp3];
+          }
+          delete tmp[tmp2];
+          const obj = { insertedAt: null, nonce: null, messageId: null, interaction: null };
+          const _Date = Date;
+          obj[0] = Date.now();
+          obj[1] = nonce;
+          obj[2] = dependencyMap3[nonce];
+          obj[3] = dependencyMap[nonce];
+          dependencyMap4[nonce] = obj;
+        } else {
+          delete tmp[tmp2];
+        }
+      }
+    }
   },
   INTERACTION_FAILURE: function handleInteractionFailure(arg0) {
     let errorCode;
@@ -241,18 +204,34 @@ tmp4 = new tmp4(require("dispatcher"), {
     } else if (null == dependencyMap[nonce]) {
       return false;
     } else {
-      if (null != obj2.onFailure) {
-        obj2.onFailure(errorCode, errorMessage, status, reasonCode);
+      const onFailure = tmp27.onFailure;
+      if (onFailure != null) {
+        onFailure(errorCode, errorMessage, status, reasonCode);
       }
-      if (obj2.data.interactionType === require(1882) /* PermissionOverwriteType */.InteractionTypes.APPLICATION_COMMAND) {
-        deleteNonce(nonce);
+      if (tmp27.data.interactionType === require(1906) /* PermissionOverwriteType */.InteractionTypes.APPLICATION_COMMAND) {
+        if (null == dependencyMap4[nonce]) {
+          delete tmp[tmp2];
+          if (null != dependencyMap3[nonce]) {
+            delete tmp[tmp3];
+          }
+          delete tmp[tmp2];
+          let obj = { insertedAt: null, nonce: null, messageId: null, interaction: null };
+          const _Date = Date;
+          obj[0] = Date.now();
+          obj[1] = nonce;
+          obj[2] = dependencyMap3[nonce];
+          obj[3] = dependencyMap[nonce];
+          dependencyMap4[nonce] = obj;
+        } else {
+          delete tmp[tmp2];
+        }
       } else {
-        const obj = {};
-        const merged = Object.assign(obj2);
-        obj["state"] = require(4392) /* InteractionState */.InteractionState.FAILED;
-        obj["errorCode"] = errorCode;
-        obj["errorMessage"] = errorMessage;
-        obj["reasonCode"] = reasonCode;
+        obj = {};
+        const merged = Object.assign(tmp27);
+        obj.state = require(4415) /* InteractionState */.InteractionState.FAILED;
+        obj.errorCode = errorCode;
+        obj.errorMessage = errorMessage;
+        obj.reasonCode = reasonCode;
         dependencyMap[nonce] = obj;
       }
     }
@@ -264,10 +243,27 @@ tmp4 = new tmp4(require("dispatcher"), {
     } else if (null == dependencyMap[message.nonce]) {
       return false;
     } else {
-      if (null != obj.onSuccess) {
-        obj.onSuccess();
+      const onSuccess = tmp16.onSuccess;
+      if (onSuccess != null) {
+        onSuccess();
       }
-      deleteNonce(message.nonce);
+      const nonce = message.nonce;
+      if (null == dependencyMap4[nonce]) {
+        delete tmp[tmp2];
+        if (null != dependencyMap3[nonce]) {
+          delete tmp[tmp3];
+        }
+        delete tmp[tmp2];
+        const obj = { insertedAt: null, nonce: null, messageId: null, interaction: null };
+        const _Date = Date;
+        obj[0] = Date.now();
+        obj[1] = nonce;
+        obj[2] = dependencyMap3[nonce];
+        obj[3] = dependencyMap[nonce];
+        dependencyMap4[nonce] = obj;
+      } else {
+        delete tmp[tmp2];
+      }
     }
   },
   CHANNEL_SELECT: function handleChannelSelect(channelId) {
@@ -275,39 +271,93 @@ tmp4 = new tmp4(require("dispatcher"), {
       return false;
     } else {
       const _Object = Object;
-      const entries = Object.entries(closure_13);
-      for (let num = 0; num < entries.length; num = num + 1) {
-        let tmp = callback3;
-        let tmp2 = callback3(entries[num], 2);
-        let tmp3 = require;
-        let tmp4 = dependencyMap;
-        if (tmp2[1].state === require(4392) /* InteractionState */.InteractionState.FAILED) {
-          let tmp5 = deleteNonce;
-          let tmp6 = deleteNonce(tmp2[0]);
+      const entries = Object.entries(closure_8);
+      const tmp16 = entries[Symbol.iterator]();
+      while (tmp16 !== undefined) {
+        let tmp4 = callback;
+        let tmp5 = callback(tmp2, 2);
+        let first = tmp5[0];
+        let tmp7 = require;
+        let tmp8 = dependencyMap;
+        if (tmp5[1].state === require(4415) /* InteractionState */.InteractionState.FAILED) {
+          let tmp9 = deleteNonce;
+          let tmp10 = first;
+          let tmp11 = deleteNonce(first);
+        }
+        continue;
+      }
+    }
+  },
+  INTERACTION_IFRAME_MODAL_CREATE: function handleIFrameModalCreate(nonce) {
+    nonce = nonce.nonce;
+    const id = nonce.application.id;
+    if (null != nonce) {
+      if (null != dependencyMap[nonce]) {
+        const onSuccess = tmp16.onSuccess;
+        if (onSuccess != null) {
+          onSuccess();
+        }
+        if (null == dependencyMap4[nonce]) {
+          delete tmp[tmp2];
+          if (null != dependencyMap3[nonce]) {
+            delete tmp[tmp3];
+          }
+          delete tmp[tmp2];
+          const obj = { insertedAt: null, nonce: null, messageId: null, interaction: null };
+          const _Date = Date;
+          obj[0] = Date.now();
+          obj[1] = nonce;
+          obj[2] = dependencyMap3[nonce];
+          obj[3] = dependencyMap[nonce];
+          dependencyMap4[nonce] = obj;
+        } else {
+          delete tmp[tmp2];
         }
       }
     }
   },
-  INTERACTION_IFRAME_MODAL_CREATE: function handleIFrameModalCreate(application) {
-    const id = application.application.id;
-    markInteractionByNonceCompleted(application.nonce);
-  },
   INTERACTION_IFRAME_MODAL_CLOSE: function handleIFrameModalClose() {
-    let c16;
-    let c17;
+    let c11;
+    let c12;
   },
   INTERACTION_IFRAME_MODAL_KEY_CREATE: function handleIFrameModalKeyCreate(modalKey) {
     modalKey = modalKey.modalKey;
   },
   INTERACTION_MODAL_CREATE: function handleInteractionModalCreate(nonce) {
-    markInteractionByNonceCompleted(nonce.nonce);
+    nonce = nonce.nonce;
+    if (null != nonce) {
+      if (null != dependencyMap[nonce]) {
+        const onSuccess = tmp16.onSuccess;
+        if (onSuccess != null) {
+          onSuccess();
+        }
+        if (null == dependencyMap4[nonce]) {
+          delete tmp[tmp2];
+          if (null != dependencyMap3[nonce]) {
+            delete tmp[tmp3];
+          }
+          delete tmp[tmp2];
+          const obj = { insertedAt: null, nonce: null, messageId: null, interaction: null };
+          const _Date = Date;
+          obj[0] = Date.now();
+          obj[1] = nonce;
+          obj[2] = dependencyMap3[nonce];
+          obj[3] = dependencyMap[nonce];
+          dependencyMap4[nonce] = obj;
+        } else {
+          delete tmp[tmp2];
+        }
+      }
+    }
   },
   EMBEDDED_ACTIVITY_UPDATE_V2: function handleEmbeddedActivityUpdateV2(instance) {
     let interaction;
     let messageId;
+    let sessionId;
+    let importDefault;
     const participants = instance.instance.participants;
-    const sessionId = store.getSessionId();
-    const importDefault = store.getId();
+    sessionId = store.getSessionId();
+    importDefault = store.getId();
     const found = participants.find((user_id) => {
       let tmp = user_id.user_id === closure_1;
       if (tmp) {
@@ -317,30 +367,46 @@ tmp4 = new tmp4(require("dispatcher"), {
     });
     if (null != found) {
       if (null != found.nonce) {
-        if (null == dependencyMap3[found.nonce]) {
-          messageId = dependencyMap2[found.nonce];
+        if (null == dependencyMap4[found.nonce]) {
+          messageId = dependencyMap3[found.nonce];
           interaction = dependencyMap[found.nonce];
         } else {
-          ({ messageId, interaction } = tmp12);
+          ({ messageId, interaction } = tmp23);
         }
-        if (tmp4) {
-          deleteNonce(found.nonce);
-          let tmp7 = null != messageId;
-          if (tmp7) {
-            tmp7 = "channelId" in interaction.data;
+        if (tmp7) {
+          const nonce = found.nonce;
+          if (null == dependencyMap4[nonce]) {
+            delete tmp[tmp2];
+            if (null != dependencyMap3[nonce]) {
+              delete tmp[tmp3];
+            }
+            delete tmp[tmp2];
+            const obj = { insertedAt: null, nonce: null, messageId: null, interaction: null };
+            const _Date = Date;
+            obj[0] = Date.now();
+            obj[1] = nonce;
+            obj[2] = dependencyMap3[nonce];
+            obj[3] = dependencyMap[nonce];
+            dependencyMap4[nonce] = obj;
+          } else {
+            delete tmp[tmp2];
           }
-          if (tmp7) {
-            importDefault(5695).deleteMessage(interaction.data.channelId, messageId, true);
-            const obj = importDefault(5695);
+          let tmp18 = null != messageId;
+          if (tmp18) {
+            tmp18 = "channelId" in interaction.data;
+          }
+          if (tmp18) {
+            importDefault(5713).deleteMessage(interaction.data.channelId, messageId, true);
+            const obj2 = importDefault(5713);
           }
         }
-        tmp4 = null != interaction && null != messageId;
+        tmp7 = null != interaction && null != messageId;
       }
     }
   }
 });
-const result2 = require("_possibleConstructorReturn").fileFinishedImporting("modules/interactions/InteractionStore.tsx");
+const result2 = require("ensureGuildLoaded").fileFinishedImporting("modules/interactions/InteractionStore.tsx");
 
-export default tmp4;
+export default interactionStore;
 export const STALE_INTERACTION_INTERVAL = result;
 export const STALE_INTERACTION_DURATION = result1;

@@ -1,19 +1,19 @@
-// Module ID: 8321
-// Function ID: 66626
+// Module ID: 8345
+// Function ID: 8346
 // Name: DeleteEventAlert
-// Dependencies: [5, 31, 5761, 33, 4165, 566, 8184, 4133, 4510, 1212, 4161, 2]
+// Dependencies: [5, 19, 5779, 21, 4189, 589, 8208, 4157, 4533, 1236, 4185, 2]
 // Exports: default
 
-// Module 8321 (DeleteEventAlert)
+// Module 8345 (DeleteEventAlert)
 import initialize from "initialize";
-import "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import "noop";
+import scheduledEventSort from "scheduledEventSort";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
 const require = arg1;
-let closure_6 = _createForOfIteratorHelperLoose.createStyles({ contentText: { textAlign: "center" } });
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/guild_scheduled_events/native/components/DeleteEventAlert.tsx");
+let closure_6 = createCacheKey.createStyles({ contentText: { textAlign: "center" } });
+const result = require("scheduledEventSort").fileFinishedImporting("modules/guild_scheduled_events/native/components/DeleteEventAlert.tsx");
 
 export default function DeleteEventAlert(eventException) {
   let importDefault;
@@ -22,64 +22,152 @@ export default function DeleteEventAlert(eventException) {
   ({ eventId: require, guildId: importDefault, recurrenceId } = eventException);
   eventException = eventException.eventException;
   let c4;
-  function _handleConfirmClick(AlertActionButton, arg1, cancel) {
-    // CreateGeneratorClosureLongIndex (0x67)
-    const obj = eventException(tmp);
-    return obj(...arguments);
+  function _handleConfirmClick() {
+    const self = this;
+    const tmp = eventException(function*() {
+      if (dependencyMap === 2) {
+        dependencyMap = 3;
+        HermesBuiltin.throwTypeError();
+      } else if (tmp3 === 3) {
+        if (arg0 === 1) {
+          throw arg1;
+        } else if (arg0 === 2) {
+          let obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
+        } else {
+          return { value: "HermesInternal", done: null };
+        }
+      } else {
+        try {
+          dependencyMap = 2;
+          if (0 === v0) {
+            if (arg0 === 1) {
+              dependencyMap = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              dependencyMap = 3;
+              obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            } else {
+              let closure_0 = tmp4;
+              const obj8 = v0(8208);
+              if (outer1_4) {
+                v0 = 2;
+                dependencyMap = 1;
+                let obj1 = { value: null, done: false };
+                obj1[0] = obj8.deleteRecurrence(v0, outer1_0, dependencyMap, outer1_3);
+                return obj1;
+              } else {
+                v0 = 1;
+                dependencyMap = 1;
+                const obj2 = { value: null, done: false };
+                obj2[0] = obj8.deleteGuildEvent(outer1_0, v0);
+                return obj2;
+              }
+            }
+          } else {
+            if (1 === tmp4) {
+              if (arg0 === 1) {
+                dependencyMap = 3;
+                throw arg1;
+              } else if (arg0 === 2) {
+                dependencyMap = 3;
+                const obj3 = { value: null, done: true };
+                obj3[0] = arg1;
+                return obj3;
+              }
+            } else if (arg0 === 1) {
+              dependencyMap = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              dependencyMap = 3;
+              obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            }
+            obj1 = v0(4157);
+            obj1.hideActionSheet();
+            dependencyMap = 3;
+            return { value: "HermesInternal", done: null };
+          }
+        } catch (tmp16) {
+          dependencyMap = tmp;
+          throw tmp16;
+        }
+      }
+    });
+    const _handleConfirmClick = tmp;
+    const apply = tmp.apply;
+    if (typeof apply === "unknown") {
+      let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+    } else {
+      applyArgumentsResult = apply(self, arguments);
+    }
+    return applyArgumentsResult;
   }
   let obj = require(recurrenceId[5]);
   const items = [c4];
   const stateFromStores = obj.useStateFromStores(items, () => _undefined.getGuildScheduledEvent(closure_0));
   let recurrence_rule;
-  if (null != stateFromStores) {
+  if (stateFromStores != null) {
     recurrence_rule = stateFromStores.recurrence_rule;
   }
-  c4 = tmp5;
-  obj = {};
-  const intl = require(recurrenceId[9]).intl;
+  c4 = tmp7;
+  const intl = tmp2(tmp3[9]).intl;
   const string = intl.string;
-  const t = require(recurrenceId[9]).t;
+  const t = tmp2(tmp3[9]).t;
   if (null != recurrenceId) {
     let stringResult = string(t.tqClly);
-  } else if (tmp4) {
+  } else if (tmp6) {
     stringResult = string(t.wr33rW);
   } else {
     stringResult = string(t.B9sJLX);
   }
-  obj.title = stringResult;
-  const intl2 = tmp7(tmp8[9]).intl;
-  obj.content = intl2.string(require(recurrenceId[9]).t.v2GWNQ);
-  let tmp10 = null;
+  obj = { title: stringResult, content: null, extraContent: null, actions: null };
+  const intl2 = tmp2(tmp3[9]).intl;
+  obj[1] = intl2.string(require(recurrenceId[9]).t.v2GWNQ);
+  let tmp8Result = null;
   if (null != recurrence_rule) {
-    tmp10 = null;
-    if (!tmp5) {
-      obj = { variant: "text-md/medium", color: "text-default", style: tmp.contentText };
-      const intl3 = require(recurrenceId[9]).intl;
-      obj.children = intl3.format(require(recurrenceId[9]).t.ZcpcyO, {});
-      tmp10 = _handleConfirmClick(require(recurrenceId[10]).Text, obj);
+    tmp8Result = null;
+    if (!tmp7) {
+      obj = { variant: "text-md/medium", color: "text-default", style: null, children: null };
+      obj[2] = tmp.contentText;
+      const intl3 = tmp2(tmp3[9]).intl;
+      obj[3] = intl3.format(tmp2(tmp3[9]).t.ZcpcyO, {});
+      tmp8Result = tmp8(tmp2(tmp3[10]).Text, obj);
     }
   }
-  obj.extraContent = tmp10;
-  const obj1 = {
+  obj[2] = tmp8Result;
+  let obj1 = {
     variant: "destructive",
     onPress: function handleConfirmClick() {
-      return _handleConfirmClick(...arguments);
-    }
+      const self = this;
+      const apply = _handleConfirmClick.apply;
+      if (typeof apply === "unknown") {
+        let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+      } else {
+        applyArgumentsResult = apply(self, arguments);
+      }
+      return applyArgumentsResult;
+    },
+    text: null
   };
   if (null != recurrence_rule) {
-    if (!tmp5) {
-      const intl4 = require(recurrenceId[9]).intl;
-      let stringResult1 = intl4.string(require(recurrenceId[9]).t["8ZsNv5"]);
+    if (!tmp7) {
+      const intl4 = tmp2(tmp3[9]).intl;
+      let stringResult1 = intl4.string(tmp2(tmp3[9]).t["8ZsNv5"]);
     }
-    obj1.text = stringResult1;
-    const items1 = [_handleConfirmClick(tmp15, obj1, "delete"), ];
-    const obj2 = { variant: "secondary" };
-    const intl6 = require(recurrenceId[9]).intl;
-    obj2.text = intl6.string(require(recurrenceId[9]).t.oEAioF);
-    items1[1] = _handleConfirmClick(require(recurrenceId[8]).AlertActionButton, obj2, "cancel");
-    obj.actions = items1;
-    return _handleConfirmClick(require(recurrenceId[8]).AlertModal, obj);
+    obj1[2] = stringResult1;
+    const items1 = [tmp8(tmp11, obj1, "delete"), ];
+    let obj2 = { variant: "secondary", text: null };
+    const intl6 = tmp2(tmp3[9]).intl;
+    obj2[1] = intl6.string(tmp2(tmp3[9]).t.oEAioF);
+    items1[1] = tmp8(tmp2(tmp3[8]).AlertActionButton, obj2, "cancel");
+    obj[3] = items1;
+    return tmp8(tmp2(tmp3[8]).AlertModal, obj);
   }
-  const intl5 = require(recurrenceId[9]).intl;
-  stringResult1 = intl5.string(require(recurrenceId[9]).t.B9sJLX);
+  const intl5 = tmp2(tmp3[9]).intl;
+  stringResult1 = intl5.string(tmp2(tmp3[9]).t.B9sJLX);
 };

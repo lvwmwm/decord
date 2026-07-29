@@ -1,12 +1,13 @@
-// Module ID: 12943
-// Function ID: 100422
+// Module ID: 12966
+// Function ID: 12967
 // Name: getNvencReconstructedFrameExperimentConfig
-// Dependencies: [1325, 2]
+// Dependencies: [1349, 2]
 // Exports: getNvencReconstructedFrameExperimentConfig
 
-// Module 12943 (getNvencReconstructedFrameExperimentConfig)
-let obj = { kind: "user", name: "2026-07-nvenc-reconstructed-frames", defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } };
-let closure_0 = require("getUnitId")(obj);
+// Module 12966 (getNvencReconstructedFrameExperimentConfig)
+let obj = { 1: null };
+obj[1] = { enabled: true };
+let closure_0 = require("getUnitId")({ kind: "user", name: "2026-07-nvenc-reconstructed-frames", defaultConfig: { enabled: false }, variations: obj });
 const result = require("set").fileFinishedImporting("modules/media_engine/NvencReconstructedFrameExperiment.tsx");
 
 export const getNvencReconstructedFrameExperimentConfig = function getNvencReconstructedFrameExperimentConfig(disable) {
@@ -18,7 +19,8 @@ export const getNvencReconstructedFrameExperimentConfig = function getNvencRecon
   if (flag) {
     let defaultConfig = obj.definition.defaultConfig;
   } else {
-    obj = { location: disable.location };
+    obj = { location: null };
+    obj[0] = disable.location;
     defaultConfig = obj.getConfig(obj);
   }
   return defaultConfig;

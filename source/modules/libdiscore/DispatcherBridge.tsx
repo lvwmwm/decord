@@ -1,108 +1,27 @@
-// Module ID: 16722
-// Function ID: 130220
-// Name: _createForOfIteratorHelperLoose
-// Dependencies: [6, 7, 4164, 5028, 5071, 12022, 1194, 1911, 1838, 653, 3, 1844, 1842, 675, 686, 6307, 1184, 2]
+// Module ID: 16758
+// Function ID: 16759
+// Name: importDefaultResult2
+// Dependencies: [4188, 5050, 5093, 12046, 1218, 1935, 1862, 676, 3, 1868, 1866, 698, 709, 6328, 1208, 2]
 
-// Module 16722 (_createForOfIteratorHelperLoose)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import closure_5 from "_isNativeReflectConstruct";
-import importDefaultResult from "_isNativeReflectConstruct";
-import importDefaultResult1 from "_isNativeReflectConstruct";
-import closure_6 from "_isNativeReflectConstruct";
-import importDefaultResult2 from "_isNativeReflectConstruct";
-import importDefaultResult3 from "_createForOfIteratorHelperLoose";
+// Module 16758 (importDefaultResult2)
+import getUserAgnosticState from "getUserAgnosticState";
+import importDefaultResult from "fromServer";
+import importDefaultResult1 from "parseServerGuildSticker";
+import fetchFingerprint from "fetchFingerprint";
+import importDefaultResult2 from "getNote";
+import importDefaultResult3 from "createGuildRoleRecordFromRust";
 import { AnalyticEvents } from "ME";
-import importDefaultResult5 from "_isNativeReflectConstruct";
-import set from "_isNativeReflectConstruct";
+import importDefaultResult4 from "createGuildRecordFromRust";
+import set from "parseServerGuildSticker";
 
 const require = arg1;
-function _createForOfIteratorHelperLoose(iterable) {
-  let closure_0 = iterable;
-  iterable = "undefined" !== typeof Symbol;
-  if (iterable) {
-    const _Symbol = Symbol;
-    iterable = iterable[Symbol.iterator];
-  }
-  if (!iterable) {
-    iterable = iterable[Symbol.iterator];
-  }
-  if (iterable) {
-    const iter = iterable.call(iterable);
-    const next = iter.next;
-    return next.bind(iter);
-  } else {
-    const _Array = Array;
-    let tmp = iterable;
-    if (!Array.isArray(iterable)) {
-      let tmp2;
-      if (iterable) {
-        if ("string" === typeof iterable) {
-          tmp2 = _arrayLikeToArray(iterable, undefined);
-        } else {
-          const toString = {}.toString;
-          const substr = toString.call(iterable).slice(8, -1);
-          let name = substr;
-          if (tmp3) {
-            name = iterable.constructor.name;
-          }
-          if ("Map" !== name) {
-            if ("Set" !== name) {
-              if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(iterable, undefined);
-              } else {
-                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
-              }
-            }
-            tmp2 = arr;
-          }
-          const _Array2 = Array;
-          arr = Array.from(iterable);
-          const callResult = toString.call(iterable);
-          tmp3 = "Object" === substr && iterable.constructor;
-        }
-      }
-      tmp = tmp2;
-      if (!tmp2) {
-        const _TypeError = TypeError;
-        const typeError = new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
-        throw typeError;
-      }
-    }
-    if (tmp) {
-      closure_0 = tmp;
-    }
-    let c1 = 0;
-    return () => {
-      if (closure_1 >= length.length) {
-        let obj = { done: true };
-      } else {
-        obj = { done: false };
-        closure_1 = tmp3 + 1;
-        obj.value = length[+closure_1];
-      }
-      return obj;
-    };
-  }
-}
-function _arrayLikeToArray(arg0, arg1) {
-  let length;
-  if (tmp) {
-    length = arg0.length;
-  }
-  const ArrayResult = Array(length);
-  for (let num = 0; num < length; num = num + 1) {
-    ArrayResult[num] = arg0[num];
-  }
-  return ArrayResult;
-}
-importDefaultResult5 = new importDefaultResult5("DispatcherBridge");
-let items = [importDefaultResult2, require("_createForOfIteratorHelperLoose"), importDefaultResult3, importDefaultResult, importDefaultResult1];
-let closure_9 = {
+let closure_6 = new require("getNote")("DispatcherBridge");
+let items = [importDefaultResult2, importDefaultResult4, importDefaultResult3, importDefaultResult, importDefaultResult1];
+let closure_7 = {
   GUILD_MEMBER_ADD(arg0) {
     const obj = {};
     const merged = Object.assign(arg0);
-    obj["currentUserId"] = id.getId();
+    obj.currentUserId = id.getId();
     return obj;
   },
   CONNECTION_OPEN(guilds) {
@@ -118,146 +37,133 @@ let closure_9 = {
     return { guilds: guilds.guilds };
   }
 };
-let tmp9 = (() => {
-  class DispatcherBridge {
-    constructor(arg0) {
-      self = this;
-      self = this;
-      tmp = arg0;
-      tmp2 = outer1_3(this, self);
-      map = new Map();
-      this.tokenToStore = map;
-      this.disabledFromFatalError = false;
-      if (0 !== arg0.length) {
-        tmp34 = DispatcherBridge;
-        tmp35 = outer1_2;
-        num3 = 11;
-        FLUX_API = DispatcherBridge(outer1_2[11]).FLUX_API;
-        obj2 = FLUX_API;
-        tmp36 = null;
-        if (null != FLUX_API) {
+let set = new Set(["libdiscore", "typescript-libdiscore-dual-read"]);
+_instance_members_initializer_DispatcherBridge_ = function() {
+  this.tokenToStore = new Map();
+  this.disabledFromFatalError = false;
+};
+class DispatcherBridge {
+  constructor(arg0) {
+    obj = Object.create(new.target.prototype);
+    __esModule = obj;
+    tmp2 = _instance_members_initializer_DispatcherBridge_();
+    closure_0 = obj;
+    if (0 !== global.length) {
+      tmp32 = closure_0;
+      tmp33 = actionHandler;
+      FLUX_API = require("fluxApi").FLUX_API;
+      tmp34 = null;
+      if (null != FLUX_API) {
+        try {
           items = [];
-          tmp6 = outer1_11;
-          tmp7 = arg0;
-          tmp8 = outer1_11(tmp);
-          tmp9 = tmp8;
-          iter = tmp8();
-          iter2 = iter;
-          str2 = "";
-          str3 = " => [token: ";
-          str4 = ", mode: ";
-          str5 = "]";
-          if (!iter.done) {
-            do {
-              tmp10 = iter2;
-              value = iter2.value;
-              name = value.getName();
-              tmp12 = FLUX_API;
-              result = value.connectWithLibdiscore(obj2);
-              tokenToStore = this.tokenToStore;
-              result1 = tokenToStore.set(result, value);
-              tmp15 = items;
-              _HermesInternal = HermesInternal;
-              str6 = "";
-              tmp16 = name;
-              str7 = " => [token: ";
-              tmp17 = result;
-              str8 = ", mode: ";
-              str9 = "]";
-              arr = items.push("" + name + " => [token: " + result + ", mode: " + value.getMode() + "]");
-              tmp19 = tmp8;
-              iter3 = tmp9();
-              iter2 = iter3;
-              done = iter3.done;
-            } while (!done);
+          tmp5 = global;
+          iter = global[Symbol.iterator]();
+          tmp6 = globalThis;
+          str2 = "]";
+          str3 = ", mode: ";
+          str4 = " => [token: ";
+          str5 = "";
+          tmp7 = global;
+          nextResult = iter.next();
+          tmp8 = iter;
+          while (iter !== undefined) {
+            name = nextResult.getName();
+            result = nextResult.connectWithLibdiscore(FLUX_API);
+            tokenToStore = obj.tokenToStore;
+            result1 = tokenToStore.set(result, nextResult);
+            tmp12 = items;
+            _HermesInternal = HermesInternal;
+            str6 = "";
+            tmp13 = name;
+            str7 = " => [token: ";
+            tmp14 = result;
+            str8 = ", mode: ";
+            str9 = "]";
+            arr = items.push("" + name + " => [token: " + result + ", mode: " + nextResult.getMode() + "]");
+            continue;
           }
-          tmp20 = outer1_8;
-          length = arg0.length;
-          tmp21 = items;
+          tmp16 = AnalyticEvents;
+          length = global.length;
+          tmp17 = items;
           str10 = ", ";
           _HermesInternal2 = HermesInternal;
-          str11 = "Connected ";
+          str11 = ".";
           str12 = " store(s), mapping: ";
-          str13 = ".";
-          tmp22 = length;
+          str13 = "Connected ";
+          tmp18 = length;
           str14 = ".";
-          infoResult = outer1_8.info("Connected " + length + " store(s), mapping: " + items.join(", ") + ".");
-          tmp24 = FLUX_API;
-          registeredActionTypes = obj2.getRegisteredActionTypes();
+          infoResult = AnalyticEvents.info("Connected " + length + " store(s), mapping: " + items.join(", ") + ".");
+          registeredActionTypes = FLUX_API.getRegisteredActionTypes();
           length2 = registeredActionTypes.length;
           _HermesInternal3 = HermesInternal;
-          str15 = "Registering ";
-          str16 = " bridged action(s): ";
-          tmp25 = length2;
-          infoResult1 = outer1_8.info("Registering " + length2 + " bridged action(s): " + registeredActionTypes.join(", ") + ".");
+          str15 = " bridged action(s): ";
+          str16 = "Registering ";
+          tmp20 = length2;
+          infoResult1 = AnalyticEvents.info("Registering " + length2 + " bridged action(s): " + registeredActionTypes.join(", ") + ".");
           actionHandler = function actionHandler(actionHandler) {
-            let iter3;
-            let length;
-            let length2;
-            const _self = actionHandler;
-            if (!_self.disabledFromFatalError) {
+            let metrics;
+            let storeResults;
+            let closure_0 = actionHandler;
+            if (!obj.disabledFromFatalError) {
               const _performance = performance;
               const nowResult = performance.now();
-              if (null != outer2_9[actionHandler.type]) {
+              if (null != outer1_7[actionHandler.type]) {
                 const _JSON2 = JSON;
-                let obj = { type: actionHandler.type };
-                const merged = Object.assign(tmp2(actionHandler));
+                obj = { type: null };
+                obj[0] = actionHandler.type;
+                const merged = Object.assign(tmp3(actionHandler));
                 let json = JSON.stringify(obj);
               } else {
                 const _JSON = JSON;
                 json = JSON.stringify(actionHandler);
               }
-              obj = { kind: "json_stringify_action" };
+              obj = { kind: "json_stringify_action", durationMillis: null };
               const _performance2 = performance;
-              obj.durationMillis = performance.now() - nowResult;
-              const TelemetryExperiment = DispatcherBridge(outer2_2[12]).TelemetryExperiment;
+              obj[1] = performance.now() - nowResult;
+              const TelemetryExperiment = obj(actionHandler[10]).TelemetryExperiment;
               const shouldCollectMetricsResult = TelemetryExperiment.shouldCollectMetrics();
               const iter = FLUX_API.dispatchAction(json, shouldCollectMetricsResult);
               if (iter.ok) {
                 const _performance3 = performance;
                 const diff = performance.now() - nowResult;
-                let value = iter.value;
-                const metrics = value.metrics;
+                ({ metrics, storeResults } = iter.value);
                 const items = [];
-                const tmp17 = outer2_11(value.storeResults);
-                let iter2 = tmp17();
-                if (!iter2.done) {
-                  do {
-                    value = iter2.value;
-                    if (null != value.error) {
-                      let tmp19 = _self;
-                      let handleStoreErrorResult = _self.handleStoreError(value, actionHandler.type);
-                    } else {
-                      let arr = items.push(value);
-                    }
-                    iter3 = tmp17();
-                    iter2 = iter3;
-                  } while (!iter3.done);
+                for (const item10056 of storeResults) {
+                  let tmp19 = item10056;
+                  if (null != item10056.error) {
+                    let tmp22 = obj;
+                    let tmp23 = obj;
+                    let tmp24 = item10056;
+                    let handleStoreErrorResult = obj.handleStoreError(tmp19, arg0.type);
+                  } else {
+                    let tmp20 = item10056;
+                    let arr = items.push(tmp19);
+                  }
+                  continue;
                 }
-                let num3 = 0;
-                if (0 < items.length) {
-                  do {
-                    let tmp21Result = tmp21(items[num3]);
-                    num3 = num3 + 1;
-                    length = items.length;
-                  } while (num3 < length);
+                function _loop(iter2) {
+                  iter2.withStoreToken(iter2.storeToken, iter2.type, (applyChanges) => {
+                    applyChanges.applyChanges(iter2.databaseChanges);
+                  });
                 }
-                let num4 = 0;
-                if (0 < items.length) {
-                  do {
-                    let tmp23 = _self;
-                    let withStoreTokenResult = _self.withStoreToken(items[num4].storeToken, actionHandler.type, (doEmitChanges) => {
-                      doEmitChanges.doEmitChanges(closure_0);
-                    });
-                    num4 = num4 + 1;
-                    length2 = items.length;
-                  } while (num4 < length2);
+                const iter2 = items[Symbol.iterator]();
+                while (iter2 !== undefined) {
+                  let _loopResult = _loop(iter2.next());
+                  continue;
+                }
+                for (const item10082 of items) {
+                  let tmp32 = obj;
+                  let tmp33 = obj;
+                  let withStoreTokenResult = obj.withStoreToken(item10082.storeToken, arg0.type, (doEmitChanges) => {
+                    doEmitChanges.doEmitChanges(closure_0);
+                  });
+                  continue;
                 }
                 if (null != metrics) {
                   if (shouldCollectMetricsResult) {
                     const items1 = [obj];
                     HermesBuiltin.arraySpread(metrics.timings, 1);
-                    if (outer2_5.get("libdiscore_verbose_telemetry_logging")) {
+                    if (_default.get("libdiscore_verbose_telemetry_logging")) {
                       let mapped = items1.map((kind) => " - " + kind.kind + ": " + kind.durationMillis + "ms");
                       const items2 = ["Timings", mapped.join("\n")];
                       const items3 = [items2, , ];
@@ -304,186 +210,166 @@ let tmp9 = (() => {
                         return "" + tmp + ":\n" + tmp2;
                       });
                       const _HermesInternal = HermesInternal;
-                      outer2_8.info("Handling action " + actionHandler.type + " took " + diff + "ms\n" + mapped3.join("\n\n"));
+                      outer1_6.info("Handling action " + actionHandler.type + " took " + diff + "ms\n" + mapped3.join("\n\n"));
                     }
-                    obj = { action_type: actionHandler.type, total_duration_millis: diff };
+                    const obj1 = { action_type: null, total_duration_millis: null, timings: null, mutations: null, memory_usage: null };
+                    obj1[0] = actionHandler.type;
+                    obj1[1] = diff;
                     const _JSON3 = JSON;
-                    obj.timings = JSON.stringify(items1);
+                    obj1[2] = JSON.stringify(items1);
                     const _JSON4 = JSON;
-                    obj.mutations = JSON.stringify(metrics.mutations);
+                    obj1[3] = JSON.stringify(metrics.mutations);
                     const _JSON5 = JSON;
-                    obj.memory_usage = JSON.stringify(metrics.memory);
-                    outer2_1(outer2_2[13]).track(outer2_7.LIBDISCORE_DISPATCH_BRIDGE_TELEMETRY, obj);
-                    const TelemetryExperiment2 = DispatcherBridge(outer2_2[12]).TelemetryExperiment;
+                    obj1[4] = JSON.stringify(metrics.memory);
+                    FLUX_API(actionHandler[11]).track(outer1_5.LIBDISCORE_DISPATCH_BRIDGE_TELEMETRY, obj1);
+                    const TelemetryExperiment2 = obj(actionHandler[10]).TelemetryExperiment;
                     TelemetryExperiment2.didEmit();
-                    const obj7 = outer2_1(outer2_2[13]);
+                    const obj8 = FLUX_API(actionHandler[11]);
                   }
                 }
               } else {
-                _self.handleFatalError(iter.error, actionHandler.type);
+                obj.handleFatalError(iter.error, actionHandler.type);
               }
             }
           };
-          tmp27 = outer1_1;
-          tmp28 = outer1_2;
-          num = 14;
-          obj = outer1_1(outer1_2[14]);
+          tmp22 = FLUX_API;
+          tmp23 = actionHandler;
+          obj2 = require("dispatcher");
           _Object = Object;
-          tmp30 = DispatcherBridge;
+          tmp25 = closure_0;
           fromEntriesResult = Object.fromEntries(registeredActionTypes.map((arg0) => {
             const items = [arg0, actionHandler];
             return items;
           }));
           str17 = "LibDiscoreDispatcherBridge";
-          tmp31 = obj;
-          registerResult = obj.register("LibDiscoreDispatcherBridge", fromEntriesResult, () => {
+          tmp26 = obj2;
+          registerResult = obj2.register("LibDiscoreDispatcherBridge", fromEntriesResult, () => {
 
-          }, DispatcherBridge(outer1_2[14]).DispatchBand.Database);
-          num2 = 15;
-          _default = DispatcherBridge(outer1_2[15]).default;
-          f130243 = _default;
+          }, require("dispatcher").DispatchBand.Database);
+          _default = require("getState").default;
+          f100443 = _default;
           addChangeListenerResult = _default.addChangeListener(() => {
             if ("active" !== _default.getState()) {
               let _Date = Date;
               let closure_0 = Date.now();
               const result = FLUX_API.flushReplicationStates();
-              if (null != result) {
+              if (result != null) {
                 result.then((arg0) => {
                   if (arg0) {
                     const _Date = Date;
                     const _HermesInternal = HermesInternal;
-                    outer3_8.info("Successfully flushed replication states in " + Date.now() - closure_0 + "ms");
+                    outer1_6.info("Successfully flushed replication states in " + Date.now() - closure_0 + "ms");
                   }
                 });
               }
             }
           });
-        } else {
-          tmp4 = outer1_8;
-          str = "Not initializing DispatcherBridge, because kvStoreApi is unavailable.";
-          infoResult2 = outer1_8.info("Not initializing DispatcherBridge, because kvStoreApi is unavailable.");
+        } catch (tmp29) {
+          tmp30 = AnalyticEvents;
+          str18 = "Failed to initialize the dispatcher bridge";
+          errorResult = AnalyticEvents.error("Failed to initialize the dispatcher bridge", tmp29);
         }
+      } else {
+        tmp3 = AnalyticEvents;
+        str = "Not initializing DispatcherBridge, because kvStoreApi is unavailable.";
+        infoResult2 = AnalyticEvents.info("Not initializing DispatcherBridge, because kvStoreApi is unavailable.");
       }
-      return;
+    }
+    return obj;
+  }
+}
+const prototype = DispatcherBridge.prototype;
+prototype["handleFatalError"] = function handleFatalError(error, type) {
+  const self = this;
+  error = new Error(error);
+  const result = this.hasAnyAuthoritativeStore();
+  let obj = tmp7;
+  tmp7.error("Fatal dispatch error for action", type, "hasAuthoritativeStore:", result, error);
+  obj = { actionType: type, hasAuthoritativeStore: result };
+  importDefault(1208).captureException(error, { extra: obj, tags: { source: "libdiscore", errorKind: "fatal_dispatch" } });
+  if (result) {
+    const result1 = require(1866) /* items */.clearLibdiscoreExperimentCache();
+    throw error;
+  } else {
+    obj.warn("Disabling DispatcherBridge until restart");
+    self.disabledFromFatalError = true;
+    const tokenToStore = self.tokenToStore;
+    const values = tokenToStore.values();
+    for (const item10040 of values) {
+      let result2 = item10040.disableDualReadValidation();
+      continue;
     }
   }
-  let obj = {
-    key: "handleFatalError",
-    value: function handleFatalError(error, type) {
-      let done;
-      const self = this;
-      error = new Error(error);
-      const result = this.hasAnyAuthoritativeStore();
-      outer1_8.error("Fatal dispatch error for action", type, "hasAuthoritativeStore:", result, error);
-      let obj = outer1_1(outer1_2[16]);
-      obj = { actionType: type, hasAuthoritativeStore: result };
-      obj.captureException(error, { extra: obj, tags: { source: "libdiscore", errorKind: "fatal_dispatch" } });
-      if (result) {
-        const result1 = DispatcherBridge(outer1_2[12]).clearLibdiscoreExperimentCache();
-        throw error;
-      } else {
-        outer1_8.warn("Disabling DispatcherBridge until restart");
-        self.disabledFromFatalError = true;
-        const tokenToStore = self.tokenToStore;
-        const tmp8 = outer1_11(tokenToStore.values());
-        let iter = tmp8();
-        if (!iter.done) {
-          do {
-            let value = iter.value;
-            let result2 = value.disableDualReadValidation();
-            let iter2 = tmp8();
-            iter = iter2;
-            done = iter2.done;
-          } while (!done);
-        }
-      }
+  const obj2 = importDefault(1208);
+};
+prototype["handleStoreError"] = function handleStoreError(storeToken, type) {
+  const tokenToStore = this.tokenToStore;
+  const value = tokenToStore.get(storeToken.storeToken);
+  let name;
+  if (value != null) {
+    name = value.getName();
+  }
+  if (name == null) {
+    const _HermesInternal = HermesInternal;
+    name = "unknown(token:" + storeToken.storeToken + ")";
+  }
+  let mode;
+  if (value != null) {
+    mode = value.getMode();
+  }
+  let str3 = storeToken.error;
+  if (str3 == null) {
+    str3 = "unknown store error";
+  }
+  const error = new Error(str3);
+  tmp7.error("Store", name, "failed to handle action", type, "mode:", mode, error);
+  importDefault(1208).captureException(error, { extra: { actionType: type, storeName: name, storeMode: mode }, tags: { source: "libdiscore", errorKind: "store_dispatch" } });
+  if ("typescript-libdiscore-dual-read" !== mode) {
+    if ("libdiscore" === mode) {
+      const result = require(1866) /* items */.clearLibdiscoreExperimentCache();
+      let error1 = error;
+      const obj5 = require(1866) /* items */;
+    } else {
+      const _Error = Error;
+      const _HermesInternal3 = HermesInternal;
+      error1 = new Error("unexpected storeMode '" + mode + "' for store " + name);
     }
-  };
-  let items = [obj, , , ];
-  obj = {
-    key: "handleStoreError",
-    value: function handleStoreError(value, type) {
-      const tokenToStore = this.tokenToStore;
-      value = tokenToStore.get(value.storeToken);
-      let name;
-      if (null != value) {
-        name = value.getName();
-      }
-      if (null == name) {
-        const _HermesInternal = HermesInternal;
-        name = "unknown(token:" + value.storeToken + ")";
-      }
-      let mode;
-      if (null != value) {
-        mode = value.getMode();
-      }
-      let error = value.error;
-      let str3 = "unknown store error";
-      if (null != error) {
-        str3 = error;
-      }
-      error = new Error(str3);
-      outer1_8.error("Store", name, "failed to handle action", type, "mode:", mode, error);
-      const obj = { actionType: type, storeName: name, storeMode: mode };
-      outer1_1(outer1_2[16]).captureException(error, { extra: obj, tags: { source: "libdiscore", errorKind: "store_dispatch" } });
-      if ("typescript-libdiscore-dual-read" !== mode) {
-        if ("libdiscore" === mode) {
-          const result = DispatcherBridge(outer1_2[12]).clearLibdiscoreExperimentCache();
-          let error1 = error;
-          const obj4 = DispatcherBridge(outer1_2[12]);
-        } else {
-          const _Error = Error;
-          const _HermesInternal3 = HermesInternal;
-          error1 = new Error("unexpected storeMode '" + mode + "' for store " + name);
-        }
-        throw error1;
-      } else {
-        const _HermesInternal2 = HermesInternal;
-        outer1_8.warn("Store: " + name + " had unexpected error in Rust implementation, disabling moving forward");
-        if (null != value) {
-          const result1 = value.disableDualReadValidation();
-        }
-      }
-      const obj2 = outer1_1(outer1_2[16]);
+    throw error1;
+  } else {
+    const _HermesInternal2 = HermesInternal;
+    obj2.warn("Store: " + name + " had unexpected error in Rust implementation, disabling moving forward");
+    if (value != null) {
+      const result1 = value.disableDualReadValidation();
     }
-  };
-  items[1] = obj;
-  obj = {
-    key: "withStoreToken",
-    value: function withStoreToken(storeToken, type, arg2) {
-      const tokenToStore = this.tokenToStore;
-      const value = tokenToStore.get(storeToken);
-      if (null == value) {
-        outer1_8.warn("When dispatching action", type, "we got a store token", storeToken, "that is unknown");
-      } else {
-        arg2(value);
-      }
+  }
+  const obj = { actionType: type, storeName: name, storeMode: mode };
+  obj2 = tmp7;
+  const obj3 = importDefault(1208);
+};
+prototype["withStoreToken"] = function withStoreToken(storeToken, type, arg2) {
+  const tokenToStore = this.tokenToStore;
+  const value = tokenToStore.get(storeToken);
+  if (null == value) {
+    storeToken.warn("When dispatching action", type, "we got a store token", storeToken, "that is unknown");
+  } else {
+    arg2(value);
+  }
+};
+prototype["hasAnyAuthoritativeStore"] = function hasAnyAuthoritativeStore() {
+  const tokenToStore = this.tokenToStore;
+  const values = tokenToStore.values();
+  const iter = values[Symbol.iterator]();
+  while (iter !== undefined) {
+    if ("libdiscore" === nextResult.getMode()) {
+      let tmp2 = iter;
+      iter.return();
+      let flag = true;
+      return true;
     }
-  };
-  items[2] = obj;
-  items[3] = {
-    key: "hasAnyAuthoritativeStore",
-    value: function hasAnyAuthoritativeStore() {
-      const tokenToStore = this.tokenToStore;
-      const tmp = outer1_11(tokenToStore.values());
-      let iter = tmp();
-      if (!iter.done) {
-        const value = iter.value;
-        while ("libdiscore" !== value.getMode()) {
-          let iter2 = tmp();
-          iter = iter2;
-        }
-        return true;
-      }
-      return false;
-    }
-  };
-  return callback(DispatcherBridge, items);
-})();
-let set = new Set(["libdiscore", "typescript-libdiscore-dual-read"]);
-tmp9 = new tmp9((function filterStores(items) {
-  return items.filter((getMode) => outer1_10.has(getMode.getMode()));
-})(items));
+  }
+  return false;
+};
+const dispatcherBridge = new DispatcherBridge(items.filter((getMode) => set.has(getMode.getMode())));
 let result = set.fileFinishedImporting("modules/libdiscore/DispatcherBridge.tsx");
 
-export default tmp9;
+export default dispatcherBridge;

@@ -1,52 +1,51 @@
-// Module ID: 14778
-// Function ID: 112492
-// Dependencies: [31, 33, 9085, 5552, 9094, 10163, 14779, 2]
+// Module ID: 14804
+// Function ID: 14805
+// Dependencies: [19, 21, 9109, 5570, 9118, 10184, 14805, 2]
 
-// Module 14778
+// Module 14804
 import { jsx } from "jsxProd";
 import createNativeStackNavigator from "createNativeStackNavigator";
-import importAllResult from "result";
+import importAllResult from "noop";
 
 const require = arg1;
 createNativeStackNavigator = createNativeStackNavigator.createNativeStackNavigator();
-const memoResult = require("result").memo(function DevToolsGuildTagBadgesModal() {
+const memoResult = require("noop").memo(function DevToolsGuildTagBadgesModal() {
   let Navigator;
   let Screen;
-  let obj = _require(5552);
+  let obj = _require(5570);
   _require = obj.useAccessibilityNativeStackOptions();
   obj = {
     screenOptions(navigation) {
-      let obj = {
+      const obj = {
         headerTitle(children) {
-          let obj = Object.create(null);
-          obj.children = 0;
-          const merged = Object.assign(children, obj);
-          obj = { title: children.children };
+          const merged = Object.assign(children, Object.create(null));
           const merged1 = Object.assign(merged);
-          return outer2_3(callback(outer2_2[4]).GenericHeaderTitle, obj);
+          return callback2(callback(table[4]).GenericHeaderTitle, { title: children.children });
         },
-        headerLeft: callback(outer1_2[4]).getRenderModalCloseImage(navigation.navigation),
+        headerLeft: null,
         headerTitleAlign: "center"
       };
+      obj[1] = callback(outer1_2[4]).getRenderModalCloseImage(navigation.navigation);
       let merged = Object.assign(callback);
       let merged1 = Object.assign(outer1_1(outer1_2[5])());
       return obj;
-    }
+    },
+    children: null
   };
   obj = {
     name: "DevToolsGuildTagBadges",
     options() {
       return { title: "Guild Tag Badges" };
     },
-    component: importDefault(14779)
+    component: importDefault(14805)
   };
   ({ Navigator, Screen } = createNativeStackNavigator);
-  obj.children = <Screen name="DevToolsGuildTagBadges" options={function options() {
+  obj[1] = <Screen name="DevToolsGuildTagBadges" options={function options() {
     return { title: "Guild Tag Badges" };
-  }} component={importDefault(14779)} />;
+  }} component={importDefault(14805)} />;
   return <Navigator name="DevToolsGuildTagBadges" options={function options() {
     return { title: "Guild Tag Badges" };
-  }} component={importDefault(14779)} />;
+  }} component={importDefault(14805)} />;
 });
 const result = require("createNativeStackNavigator").fileFinishedImporting("modules/devtools/native/components/screens/DevToolsGuildTagBadgesModal.tsx");
 

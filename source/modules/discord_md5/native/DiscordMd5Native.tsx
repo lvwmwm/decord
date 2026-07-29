@@ -1,27 +1,37 @@
-// Module ID: 4727
-// Function ID: 40976
-// Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 27, 477, 1247, 4728, 2]
+// Module ID: 4749
+// Function ID: 4750
+// Name: fromFileUri
+// Dependencies: [17, 4750, 500, 1271, 2]
 
-// Module 4727 (_isNativeReflectConstruct)
-import set from "set";
-import enforcing from "enforcing";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
+// Module 4749 (fromFileUri)
 import { NativeModules } from "get ActivityIndicator";
-import tmp2 from "DiscordMd5";
+import "fromBlob";
 
-const require = arg1;
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
-  }
-  const result = _isNativeReflectConstruct();
+const prototype = function DiscordMd5Native() {
+  return HermesBuiltin.applyArguments(new.target, new.target);
+}.prototype;
+class prototype extends tmp2 {
 }
-let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/discord_md5/native/DiscordMd5Native.tsx");
+prototype["fromFileUri"] = function fromFileUri(uri) {
+  let num = arg1;
+  if (arg1 === undefined) {
+    num = 4096;
+  }
+  if (obj.isAndroid()) {
+    if (null == importDefault(1271)) {
+      const _Error = Error;
+      const error = new Error("RTNFileManager doesn't exist?");
+      let rejectResult = Promise.reject(error);
+    } else {
+      rejectResult = tmp3(1271).getFileHash(uri, "md5", num);
+      const tmp3Result = tmp3(1271);
+    }
+    tmp3 = importDefault;
+  } else {
+    const DCDFileManager = NativeModules.DCDFileManager;
+    return DCDFileManager.getFileHash(uri, "md5", num);
+  }
+};
+const result = require("set").fileFinishedImporting("modules/discord_md5/native/DiscordMd5Native.tsx");
 
-export default tmp2;
+export default prototype;

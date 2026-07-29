@@ -1,15 +1,15 @@
-// Module ID: 9946
-// Function ID: 76868
+// Module ID: 9968
+// Function ID: 9969
 // Name: useEmojisForReactionRow
-// Dependencies: [31, 1853, 9316, 1450, 3810, 2]
+// Dependencies: [19, 1877, 9340, 1474, 3834, 2]
 // Exports: useEmojisForReactionRow
 
-// Module 9946 (useEmojisForReactionRow)
-import result from "result";
+// Module 9968 (useEmojisForReactionRow)
+import noop from "noop";
 import { EmojiIntention } from "set";
 
 const require = arg1;
-const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/reactions/native/useEmojisForReactionRow.tsx");
+const result = require("initializeSearch").fileFinishedImporting("modules/reactions/native/useEmojisForReactionRow.tsx");
 
 export const useEmojisForReactionRow = function useEmojisForReactionRow(channel, closure_4, arg2) {
   const _require = channel;
@@ -20,8 +20,8 @@ export const useEmojisForReactionRow = function useEmojisForReactionRow(channel,
   const memo = React.useMemo(() => {
     let length;
     const found = frequentlyUsedReactionEmojis.filter((emoji) => {
-      let obj = frequentlyUsedReactionEmojis(rounded[4]);
-      obj = { emoji, channel: outer1_0, intention: outer2_4.REACTION };
+      let obj = outer1_1(outer1_2[4]);
+      obj = { emoji, channel: closure_0, intention: outer1_4.REACTION };
       return !obj.isEmojiFilteredOrLocked(obj);
     });
     if (found.length < rounded) {

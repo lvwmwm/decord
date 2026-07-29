@@ -1,45 +1,41 @@
-// Module ID: 8224
-// Function ID: 65756
+// Module ID: 8248
+// Function ID: 8249
 // Name: useChannelsUserCanStartStageIn
-// Dependencies: [1908, 3793, 1356, 566, 2]
+// Dependencies: [1932, 3817, 1380, 589, 2]
 // Exports: useChannelsUserCanStartStageIn
 
-// Module 8224 (useChannelsUserCanStartStageIn)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import { GUILD_VOCAL_CHANNELS_KEY } from "_isNativeReflectConstruct";
-import closure_4 from "_isNativeReflectConstruct";
+// Module 8248 (useChannelsUserCanStartStageIn)
+import comparator from "comparator";
+import { GUILD_VOCAL_CHANNELS_KEY } from "comparator";
+import getUncachedChannelPermissions from "getUncachedChannelPermissions";
 
-let require = arg1;
+const require = arg1;
 const result = require("Permissions").fileFinishedImporting("modules/guild_scheduled_events/useGuildsUserCanStartStageIn.tsx");
 
 export const useChannelsUserCanStartStageIn = function useChannelsUserCanStartStageIn(guild) {
   let id;
-  if (null != guild) {
+  if (guild != null) {
     id = guild.id;
   }
-  let tmp2 = null;
-  if (null != id) {
-    tmp2 = id;
+  if (id == null) {
+    id = null;
   }
-  const require = tmp2;
-  const items = [_isNativeReflectConstruct, closure_4];
-  const items1 = [tmp2];
-  return require(566) /* initialize */.useStateFromStoresArray(items, () => outer1_2.getChannels(closure_0)[outer1_3].reduce((arr, channel) => {
+  const items = [comparator, getUncachedChannelPermissions];
+  const items1 = [id];
+  return id(589).useStateFromStoresArray(items, () => outer1_2.getChannels(id)[outer1_3].reduce((arr, channel) => {
     channel = channel.channel;
     if (channel.isGuildStageVoice()) {
       const channel2 = channel.channel;
-      let obj = outer2_4;
-      if (outer2_4 === undefined) {
-        obj = outer2_4;
+      if (getUncachedChannelPermissions !== undefined) {
+        let canResult = channel2.isGuildStageVoice();
+        if (canResult) {
+          canResult = obj.can(callback(table[2]).MODERATE_STAGE_CHANNEL_PERMISSIONS, channel2);
+        }
+        if (canResult) {
+          arr.push(channel);
+        }
       }
-      const tmp = !channel2.isGuildStageVoice();
-      let canResult = !tmp;
-      if (!tmp) {
-        canResult = obj.can(callback(outer2_1[2]).MODERATE_STAGE_CHANNEL_PERMISSIONS, channel2);
-      }
-      if (canResult) {
-        arr.push(channel);
-      }
+      obj = getUncachedChannelPermissions;
     }
     return arr;
   }, []), items1);

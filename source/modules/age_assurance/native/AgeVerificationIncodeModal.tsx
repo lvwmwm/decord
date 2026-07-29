@@ -1,83 +1,80 @@
-// Module ID: 6730
-// Function ID: 59181
-// Name: getScreens
-// Dependencies: [31, 33, 4165, 689, 4372, 1212, 6731, 6732, 6737, 5552, 2]
+// Module ID: 6751
+// Function ID: 6752
+// Name: AgeVerificationIncodeModal
+// Dependencies: [19, 21, 4189, 712, 4395, 1236, 6752, 6753, 6758, 5570, 2]
 // Exports: default
 
-// Module 6730 (getScreens)
-import result from "result";
+// Module 6751 (AgeVerificationIncodeModal)
+import noop from "noop";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
 const require = arg1;
-function getScreens(headerStyle, headerTitle) {
-  const _require = arg2;
-  let closure_1 = arg3;
-  const dependencyMap = arg4;
-  function handleClose() {
-    dependencyMap();
-    let arr = callback2(4372);
-    arr = arr.pop();
-  }
-  const uRL = new URL(arg2);
-  const origin = uRL.origin;
-  let obj = {};
-  obj = { headerStyle: headerStyle.headerStyle };
-  let intl = _require(1212).intl;
-  obj.headerTitle = intl.string(_require(1212).t.wJVyYR);
-  obj.headerLeft = function headerLeft() {
-    const obj = { onPress: handleClose };
-    const intl = callback(1212).intl;
-    obj.text = intl.string(callback(1212).t.cpT0Cq);
-    return handleClose(callback(6731).HeaderActionButton, obj);
-  };
-  obj.render = function render(arg0, arg1) {
-    let closure_0 = arg1;
-    return handleClose(callback2(6732), {
-      onClose: handleClose,
-      trustedOrigin: origin,
-      onMethodSelected(injectedJavaScriptBeforeContentLoaded) {
-        return navigation.navigate(outer2_5.VERIFY_AGE, { injectedJavaScriptBeforeContentLoaded });
-      }
-    });
-  };
-  obj[constants.METHOD_SELECT] = obj;
-  obj = {
-    headerStyle: headerStyle.headerStyle,
-    headerTitle,
-    headerLeft() {
-      const obj = { onPress: handleClose };
-      const intl = callback(1212).intl;
-      obj.text = intl.string(callback(1212).t.cpT0Cq);
-      return handleClose(callback(6731).HeaderActionButton, obj);
-    },
-    render(injectedJavaScriptBeforeContentLoaded) {
-      return handleClose(callback2(6737), { webviewUrl: closure_0, onComplete: callback2, onClose: handleClose, injectedJavaScriptBeforeContentLoaded: injectedJavaScriptBeforeContentLoaded.injectedJavaScriptBeforeContentLoaded });
-    }
-  };
-  obj[constants.VERIFY_AGE] = obj;
-  return obj;
-}
 let closure_5 = { METHOD_SELECT: "METHOD_SELECT", VERIFY_AGE: "VERIFY_AGE" };
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWER };
-_createForOfIteratorHelperLoose.headerStyle = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/age_assurance/native/AgeVerificationIncodeModal.tsx");
+createCacheKey = { headerStyle: null };
+createCacheKey = { backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOWER };
+createCacheKey[0] = createCacheKey;
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+const result = require("createCacheKey").fileFinishedImporting("modules/age_assurance/native/AgeVerificationIncodeModal.tsx");
 
 export default function AgeVerificationIncodeModal(webviewUrl) {
   webviewUrl = webviewUrl.webviewUrl;
   const onComplete = webviewUrl.onComplete;
   const onClose = webviewUrl.onClose;
-  const tmp = _createForOfIteratorHelperLoose();
-  const React = tmp;
-  const intl = webviewUrl(onClose[5]).intl;
+  let React;
+  let jsx;
+  const tmp = createCacheKey();
+  React = tmp;
+  let intl = webviewUrl(onClose[5]).intl;
   const stringResult = intl.string(webviewUrl(onClose[5]).t.wJVyYR);
-  const jsx = stringResult;
+  jsx = stringResult;
   const items = [tmp, webviewUrl, onComplete, onClose, stringResult];
-  const memo = React.useMemo(() => outer1_7(result, closure_4, webviewUrl, onComplete, onClose), items);
-  const obj = { screens: memo, initialRouteName: constants.METHOD_SELECT };
+  const memo = React.useMemo(() => {
+    function handleClose() {
+      dependencyMap();
+      let arr = callback2(4395);
+      arr = arr.pop();
+    }
+    const uRL = new URL(closure_0);
+    const origin = uRL.origin;
+    let obj = {};
+    obj = { headerStyle: origin.headerStyle, headerTitle: null, headerLeft: null, render: null };
+    let intl = webviewUrl(onClose[5]).intl;
+    obj[1] = intl.string(webviewUrl(onClose[5]).t.wJVyYR);
+    obj[2] = function headerLeft() {
+      const obj = { onPress: handleClose, text: null };
+      const intl = callback(1236).intl;
+      obj[1] = intl.string(callback(1236).t.cpT0Cq);
+      return handleClose(callback(6752).HeaderActionButton, obj);
+    };
+    obj[3] = function render(arg0, arg1) {
+      let closure_0 = arg1;
+      return handleClose(callback2(6753), {
+        onClose: handleClose,
+        trustedOrigin: origin,
+        onMethodSelected(injectedJavaScriptBeforeContentLoaded) {
+          return navigation.navigate(outer1_5.VERIFY_AGE, { injectedJavaScriptBeforeContentLoaded });
+        }
+      });
+    };
+    obj[outer1_5.METHOD_SELECT] = obj;
+    obj[outer1_5.VERIFY_AGE] = {
+      headerStyle: origin.headerStyle,
+      headerTitle: handleClose,
+      headerLeft() {
+        const obj = { onPress: handleClose, text: null };
+        const intl = callback(1236).intl;
+        obj[1] = intl.string(callback(1236).t.cpT0Cq);
+        return handleClose(callback(6752).HeaderActionButton, obj);
+      },
+      render(injectedJavaScriptBeforeContentLoaded) {
+        return handleClose(callback2(6758), { webviewUrl: closure_0, onComplete: callback2, onClose: handleClose, injectedJavaScriptBeforeContentLoaded: injectedJavaScriptBeforeContentLoaded.injectedJavaScriptBeforeContentLoaded });
+      }
+    };
+    return obj;
+  }, items);
+  let obj = { screens: memo, initialRouteName: constants.METHOD_SELECT, headerBackTitle: null };
   const intl2 = webviewUrl(onClose[5]).intl;
-  obj.headerBackTitle = intl2.string(webviewUrl(onClose[5]).t["13/7kX"]);
-  return jsx(webviewUrl(onClose[9]).Navigator, { screens: memo, initialRouteName: constants.METHOD_SELECT });
+  obj[2] = intl2.string(webviewUrl(onClose[5]).t["13/7kX"]);
+  return jsx(webviewUrl(onClose[9]).Navigator, { screens: memo, initialRouteName: constants.METHOD_SELECT, headerBackTitle: null });
 };

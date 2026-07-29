@@ -1,102 +1,109 @@
-// Module ID: 15718
-// Function ID: 121089
+// Module ID: 15754
+// Function ID: 15755
 // Name: AppIconsCoachmarkActionSheet
-// Dependencies: [31, 27, 1850, 1345, 33, 4165, 689, 566, 3811, 4133, 5221, 15719, 1273, 9382, 4161, 1212, 4578, 6561, 2]
+// Dependencies: [19, 17, 1874, 1369, 21, 4189, 712, 589, 3835, 4157, 5243, 15755, 1297, 9406, 4185, 1236, 4600, 6582, 2]
 // Exports: default
 
-// Module 15718 (AppIconsCoachmarkActionSheet)
-import result from "result";
-import get_ActivityIndicator from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 15754 (AppIconsCoachmarkActionSheet)
+import noop from "noop";
+import get_ActivityIndicator from "fetchCurrentAppIcon";
+import mergeGuildAvatar from "mergeGuildAvatar";
 import { ContentDismissActionType } from "ContentDismissActionType";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_4;
-let closure_5;
-let closure_8;
-let closure_9;
+let c4;
+let c5;
+let c9;
+let metroImportAll;
 const require = arg1;
-({ Image: closure_4, View: closure_5 } = get_ActivityIndicator);
-({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { padding: require("_createForOfIteratorHelperLoose").space.PX_16, paddingBottom: 0 };
-_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.info = { alignItems: "center" };
-_createForOfIteratorHelperLoose.image = { alignSelf: "center", marginBottom: 20 };
-_createForOfIteratorHelperLoose.nitroWheel = { marginRight: 8 };
-_createForOfIteratorHelperLoose.titleContainer = { display: "flex", flexDirection: "row", alignItems: "center" };
-_createForOfIteratorHelperLoose.subtitle = { marginTop: 8, textAlign: "center" };
-_createForOfIteratorHelperLoose.footer = { marginTop: 20, gap: require("_createForOfIteratorHelperLoose").space.PX_8 };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-let obj1 = { marginTop: 20, gap: require("_createForOfIteratorHelperLoose").space.PX_8 };
-let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/app_icons/native/AppIconsCoachmark.tsx");
+({ Image: c4, View: c5 } = get_ActivityIndicator);
+({ jsx: metroImportAll, jsxs: c9 } = jsxProd);
+createCacheKey = { container: null, info: null, image: null, nitroWheel: null, titleContainer: null, subtitle: null, footer: null };
+createCacheKey = { padding: require("Themes").space.PX_16, paddingBottom: 0 };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { alignItems: "center" };
+createCacheKey[2] = { alignSelf: "center", marginBottom: 20 };
+createCacheKey[3] = { marginRight: 8 };
+createCacheKey[4] = { display: "flex", flexDirection: "row", alignItems: "center" };
+createCacheKey[5] = { marginTop: 8, textAlign: "center" };
+createCacheKey[6] = { marginTop: 20, gap: require("Themes").space.PX_8 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let obj1 = { marginTop: 20, gap: require("Themes").space.PX_8 };
+let result = require("mergeGuildAvatar").fileFinishedImporting("modules/app_icons/native/AppIconsCoachmark.tsx");
 
 export default function AppIconsCoachmarkActionSheet(markAsDismissed) {
   markAsDismissed = markAsDismissed.markAsDismissed;
-  const tmp = _createForOfIteratorHelperLoose();
-  let obj = markAsDismissed(566);
-  const items = [_isNativeReflectConstruct];
-  const stateFromStores = obj.useStateFromStores(items, () => outer1_6.getCurrentUser());
-  let obj1 = importDefault(3811);
+  let tmp = createCacheKey();
+  let obj = markAsDismissed(589);
+  const items = [mergeGuildAvatar];
+  const stateFromStores = obj.useStateFromStores(items, () => currentUser.getCurrentUser());
+  let obj1 = importDefault(3835);
   const items1 = [markAsDismissed];
   const callback = React.useCallback(() => {
     outer1_1(outer1_2[9]).hideActionSheet();
-    if (null != markAsDismissed) {
-      markAsDismissed(outer1_7.DISMISS);
+    if (markAsDismissed != null) {
+      tmp2(outer1_7.DISMISS);
     }
   }, items1);
   obj = {
     onDismiss() {
       return markAsDismissed(outer1_7.DISMISS);
     },
-    contentStyles: tmp.container
+    contentStyles: tmp.container,
+    children: null
   };
-  obj = { style: tmp.info };
-  obj1 = { source: importDefault(15719), style: tmp.image };
+  obj = { style: tmp.info, children: null };
+  obj1 = { source: null, style: null };
+  obj1[0] = importDefault(15755);
+  obj1[1] = tmp.image;
   const items2 = [callback(closure_4, obj1), , ];
-  const obj2 = { style: tmp.titleContainer };
-  const obj3 = { source: importDefault(9382), size: markAsDismissed(1273).IconSizes.MEDIUM, style: tmp.nitroWheel, disableColor: true };
-  const items3 = [callback(markAsDismissed(1273).Icon, obj3), ];
-  const obj4 = { variant: "heading-xl/extrabold", color: "mobile-text-heading-primary" };
-  const intl = markAsDismissed(1212).intl;
-  obj4.children = intl.string(markAsDismissed(1212).t.EfA4Cq);
-  items3[1] = callback(markAsDismissed(4161).Text, obj4);
-  obj2.children = items3;
+  const obj2 = { style: tmp.titleContainer, children: null };
+  const obj3 = { source: null, size: null, style: null, disableColor: true };
+  obj3[0] = importDefault(9406);
+  obj3[1] = markAsDismissed(1297).IconSizes.MEDIUM;
+  obj3[2] = tmp.nitroWheel;
+  const items3 = [callback(markAsDismissed(1297).Icon, obj3), ];
+  const obj4 = { variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: null };
+  const intl = markAsDismissed(1236).intl;
+  obj4[2] = intl.string(markAsDismissed(1236).t.EfA4Cq);
+  items3[1] = callback(markAsDismissed(4185).Text, obj4);
+  obj2[1] = items3;
   items2[1] = callback2(closure_5, obj2);
-  const obj5 = { variant: "text-md/normal", color: "text-default", style: tmp.subtitle };
-  const intl2 = markAsDismissed(1212).intl;
+  const obj5 = { variant: "text-md/normal", color: "text-default", style: tmp.subtitle, children: null };
+  const intl2 = markAsDismissed(1236).intl;
   const string = intl2.string;
-  const t = markAsDismissed(1212).t;
+  const t = markAsDismissed(1236).t;
   if (isPremiumResult) {
     let stringResult = string(t.IgchKK);
   } else {
     stringResult = string(t.D0XzaS);
   }
-  obj5.children = stringResult;
-  items2[2] = callback(markAsDismissed(4161).Text, obj5);
-  obj.children = items2;
+  obj5[3] = stringResult;
+  items2[2] = callback(markAsDismissed(4185).Text, obj5);
+  obj[1] = items2;
   const items4 = [callback2(closure_5, obj), ];
-  const obj6 = { style: tmp.footer };
-  const obj7 = {};
-  const intl3 = markAsDismissed(1212).intl;
-  obj7.text = intl3.string(markAsDismissed(1212).t.Pt547C);
-  obj7.onPress = function onPress() {
+  const obj6 = { style: tmp.footer, children: null };
+  const obj7 = { text: null, onPress: null };
+  const intl3 = tmp2(1236).intl;
+  obj7[0] = intl3.string(markAsDismissed(1236).t.Pt547C);
+  obj7[1] = function onPress() {
     outer1_1(outer1_2[9]).hideActionSheet();
-    if (null != markAsDismissed) {
-      markAsDismissed(outer1_7.PRIMARY);
+    if (markAsDismissed != null) {
+      tmp3(outer1_7.PRIMARY);
     }
     const obj = outer1_1(outer1_2[9]);
+    const tmp = outer1_2;
     const result = markAsDismissed(outer1_2[17]).navigateToAppIconSettings();
   };
-  const items5 = [callback(markAsDismissed(4578).Button, obj7), ];
-  const obj8 = { variant: "secondary" };
-  const intl4 = markAsDismissed(1212).intl;
-  obj8.text = intl4.string(markAsDismissed(1212).t.iSrIIZ);
-  obj8.onPress = callback;
-  items5[1] = callback(markAsDismissed(4578).Button, obj8);
-  obj6.children = items5;
+  const items5 = [callback(markAsDismissed(4600).Button, obj7), ];
+  const obj8 = { variant: "secondary", text: null, onPress: null };
+  const intl4 = tmp2(1236).intl;
+  obj8[1] = intl4.string(markAsDismissed(1236).t.iSrIIZ);
+  obj8[2] = callback;
+  items5[1] = callback(markAsDismissed(4600).Button, obj8);
+  obj6[1] = items5;
   items4[1] = callback2(closure_5, obj6);
-  obj.children = items4;
-  return callback2(markAsDismissed(5221).BottomSheet, obj);
+  obj[2] = items4;
+  return callback2(markAsDismissed(5243).BottomSheet, obj);
 };

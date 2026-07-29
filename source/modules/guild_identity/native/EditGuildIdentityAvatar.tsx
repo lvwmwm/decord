@@ -1,28 +1,28 @@
-// Module ID: 13727
-// Function ID: 105262
+// Module ID: 13748
+// Function ID: 13749
 // Name: EditGuildIdentityAvatar
-// Dependencies: [31, 1918, 1850, 653, 1852, 33, 4165, 566, 5497, 5517, 7912, 13687, 7926, 3811, 7918, 6171, 4133, 13688, 1935, 13689, 13689, 7910, 4695, 1212, 7951, 13690, 2]
+// Dependencies: [19, 1942, 1874, 676, 1876, 21, 4189, 589, 5515, 5535, 7937, 13708, 7951, 3835, 7943, 6191, 4157, 13709, 1959, 13710, 13710, 7935, 4717, 1236, 7976, 13711, 2]
 // Exports: default
 
-// Module 13727 (EditGuildIdentityAvatar)
-import result from "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_5 from "_isNativeReflectConstruct";
+// Module 13748 (EditGuildIdentityAvatar)
+import ProfileGIFSelectActionSheet from "ProfileGIFSelectActionSheet";
+import trackCommunicationDisabled from "trackCommunicationDisabled";
+import mergeGuildAvatar from "mergeGuildAvatar";
 import ME from "ME";
 import { PremiumUpsellTypes } from "GuildFeatures";
-import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import jsxProd from "getDecorationSizeForAvatarSize";
+import createCacheKey from "createCacheKey";
 
-let closure_10;
-let closure_11;
+let c10;
 let closure_6;
-let closure_7;
-let closure_8;
+let error;
+let metroImportAll;
+let unpackModuleId;
 const require = arg1;
-({ AnalyticsSections: closure_6, AnalyticsObjects: closure_7, UpsellTypes: closure_8 } = ME);
-({ jsx: closure_10, jsxs: closure_11 } = jsxProd);
-let closure_12 = _createForOfIteratorHelperLoose.createStyles({ editAvatarIcon: { position: "absolute", right: 0 } });
-let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/guild_identity/native/EditGuildIdentityAvatar.tsx");
+({ AnalyticsSections: closure_6, AnalyticsObjects: error, UpsellTypes: metroImportAll } = ME);
+({ jsx: c10, jsxs: unpackModuleId } = jsxProd);
+let closure_12 = createCacheKey.createStyles({ editAvatarIcon: { position: "absolute", right: 0 } });
+let result = require("mergeGuildAvatar").fileFinishedImporting("modules/guild_identity/native/EditGuildIdentityAvatar.tsx");
 
 export default function EditGuildIdentityAvatar(userId) {
   let avatarStyle;
@@ -57,77 +57,81 @@ export default function EditGuildIdentityAvatar(userId) {
     let member = null;
     if (null != stateFromStores) {
       let id;
-      if (null != stateFromStores) {
-        id = stateFromStores.id;
+      if (tmp != null) {
+        id = tmp.id;
       }
       member = setPendingAvatar.getMember(guildId, id);
-      const tmp3 = guildId;
+      const tmp4 = guildId;
     }
     return member;
   });
-  let tmp = callback2();
+  let tmp = callback();
   analyticsLocations = stateFromStores(stateFromStores1[8])(stateFromStores(stateFromStores1[9]).EDIT_AVATAR).analyticsLocations;
-  const tmp4 = stateFromStores(stateFromStores1[8]);
+  const tmp7 = stateFromStores(stateFromStores1[8]);
   ({ pendingAvatar, pendingAvatarDecoration, setPendingAvatar } = stateFromStores(stateFromStores1[10])({ guildId, analyticsLocations }));
-  const tmp6 = stateFromStores(stateFromStores1[11])({ guildId, analyticsLocations });
-  c5 = tmp6;
-  const tmp5 = stateFromStores(stateFromStores1[10])({ guildId, analyticsLocations });
+  const tmp9 = stateFromStores(stateFromStores1[11])({ guildId, analyticsLocations });
+  c5 = tmp9;
+  const tmp8 = stateFromStores(stateFromStores1[10])({ guildId, analyticsLocations });
   const pendingAvatarSrc = guildId(stateFromStores1[12]).getPendingAvatarSrc({ userId: userId.userId, image: pendingAvatar });
   const obj3 = guildId(stateFromStores1[12]);
   let result = stateFromStores(stateFromStores1[13]).canUsePremiumGuildMemberProfile(stateFromStores);
   c6 = result;
   const obj4 = stateFromStores(stateFromStores1[13]);
-  const tmp9 = !stateFromStores(stateFromStores1[13]).canUseAnimatedAvatar(stateFromStores);
-  c7 = tmp9;
+  const tmp12 = !stateFromStores(stateFromStores1[13]).canUseAnimatedAvatar(stateFromStores);
+  c7 = tmp12;
   const obj5 = stateFromStores(stateFromStores1[13]);
   let avatar;
-  if (null != stateFromStores1) {
+  if (stateFromStores1 != null) {
     avatar = stateFromStores1.avatar;
   }
   const showRemoveAvatarResult = guildId(stateFromStores1[14]).showRemoveAvatar(pendingAvatar, avatar);
   c8 = showRemoveAvatarResult;
-  let tmp12 = pendingAvatarDecoration;
+  let tmp15 = pendingAvatarDecoration;
   if (undefined === pendingAvatarDecoration) {
     let avatarDecoration;
-    if (null != stateFromStores1) {
+    if (stateFromStores1 != null) {
       avatarDecoration = stateFromStores1.avatarDecoration;
     }
-    tmp12 = avatarDecoration;
+    tmp15 = avatarDecoration;
   }
-  c9 = tmp12;
-  const items2 = [guildId, stateFromStores1, stateFromStores, result, tmp9, showRemoveAvatarResult, tmp12, analyticsLocations, tmp6, setPendingAvatar];
-  let tmp16Result = null;
+  c9 = tmp15;
+  const items2 = [guildId, stateFromStores1, stateFromStores, result, tmp12, showRemoveAvatarResult, tmp15, analyticsLocations, tmp9, setPendingAvatar];
+  let tmp19Result = null;
   if (null != stateFromStores) {
-    obj = { style, disabled, onPress: tmp14, accessibilityRole: "button" };
-    const intl = guildId(stateFromStores1[23]).intl;
-    obj.accessibilityLabel = intl.string(guildId(stateFromStores1[23]).t["70lEQe"]);
-    obj = { user: stateFromStores };
+    obj = { style: null, disabled: null, onPress: null, accessibilityRole: "button", accessibilityLabel: null, children: null };
+    obj[0] = style;
+    obj[1] = disabled;
+    obj[2] = tmp17;
+    const intl = tmp2(tmp3[23]).intl;
+    obj[4] = intl.string(tmp2(tmp3[23]).t["70lEQe"]);
+    obj = { user: null, guildId: null, pendingAvatarSrc: null, pendingAvatarDecoration: null, statusStyle: null, disableStatus: null, style: null };
+    obj[0] = stateFromStores;
     let tmp23;
     if (null !== pendingAvatar) {
       tmp23 = guildId;
     }
-    obj.guildId = tmp23;
+    obj[1] = tmp23;
     let tmp24;
     if (null !== pendingAvatar) {
       tmp24 = pendingAvatarSrc;
     }
-    obj.pendingAvatarSrc = tmp24;
-    obj.pendingAvatarDecoration = pendingAvatarDecoration;
-    obj.statusStyle = statusStyle;
-    obj.disableStatus = disableStatus;
-    obj.style = avatarStyle;
-    const items3 = [callback(stateFromStores(stateFromStores1[24]), obj), ];
-    let tmp25 = !disabled;
-    if (tmp25) {
-      obj1 = { style: tmp.editAvatarIcon };
-      tmp25 = callback(stateFromStores(stateFromStores1[25]), obj1);
+    obj[2] = tmp24;
+    obj[3] = pendingAvatarDecoration;
+    obj[4] = statusStyle;
+    obj[5] = disableStatus;
+    obj[6] = avatarStyle;
+    const items3 = [closure_10(tmp6(tmp3[24]), obj), ];
+    let tmp20Result = !disabled;
+    if (!disabled) {
+      obj1 = { style: null };
+      obj1[0] = tmp.editAvatarIcon;
+      tmp20Result = tmp20(tmp6(tmp3[25]), obj1);
     }
-    items3[1] = tmp25;
-    obj.children = items3;
-    tmp16Result = closure_11(guildId(stateFromStores1[22]).PressableOpacity, obj);
-    const tmp16 = closure_11;
-    const tmp19 = callback;
-    const tmp21 = stateFromStores(stateFromStores1[24]);
+    items3[1] = tmp20Result;
+    obj[5] = items3;
+    tmp19Result = closure_11(tmp2(tmp3[22]).PressableOpacity, obj);
+    const tmp19 = closure_11;
+    const tmp6Result = tmp6(tmp3[24]);
   }
-  return tmp16Result;
+  return tmp19Result;
 };

@@ -1,102 +1,54 @@
-// Module ID: 8163
-// Function ID: 64947
-// Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 8164, 566, 686, 2]
+// Module ID: 8187
+// Function ID: 8188
+// Name: getUserAgnosticState
+// Dependencies: [589, 8188, 709, 2]
 
-// Module 8163 (_isNativeReflectConstruct)
-import initialize from "initialize";
-import dispatcher from "dispatcher";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
+// Module 8187 (getUserAgnosticState)
+import { DeviceSettingsStore } from "initialize";
 
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
-  }
-  const result = _isNativeReflectConstruct();
+let closure_2 = {};
+class LabFeatureStore extends DeviceSettingsStore {
 }
-let closure_7 = {};
-let tmp2 = ((DeviceSettingsStore) => {
-  class LabFeatureStore {
-    constructor() {
-      self = this;
-      tmp = outer1_2(this, LabFeatureStore);
-      obj = outer1_5(LabFeatureStore);
-      tmp2 = outer1_4;
-      if (outer1_8()) {
-        tmp6 = globalThis;
-        _Reflect = Reflect;
-        tmp7 = outer1_5;
-        tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, outer1_5(self).constructor);
-      } else {
-        tmp3 = arguments;
-        tmp4 = arguments;
-        constructResult = obj(...arguments);
+const prototype = LabFeatureStore.prototype;
+prototype["getUserAgnosticState"] = function getUserAgnosticState() {
+  return { toggleStates: closure_2 };
+};
+prototype["initialize"] = function initialize(toggleStates) {
+  for (const key10008 in importDefault(8188)) {
+    let tmp = key10008;
+    let flag;
+    let tmp2 = closure_2;
+    if (arg0 != null) {
+      toggleStates = arg0.toggleStates;
+      if (toggleStates != null) {
+        flag = toggleStates[key10008];
       }
-      return tmp2(self, constructResult);
     }
+    if (flag == null) {
+      flag = false;
+    }
+    tmp2[key10008] = flag;
+    continue;
   }
-  callback2(LabFeatureStore, DeviceSettingsStore);
-  let obj = {
-    key: "getUserAgnosticState",
-    value() {
-      return { toggleStates: outer1_7 };
-    }
-  };
-  const items = [obj, , , ];
-  obj = {
-    key: "initialize",
-    value(toggleStates) {
-      for (const key10010 in LabFeatureStore(outer1_1[5])) {
-        let tmp5 = key10010;
-        let tmp2;
-        let tmp6 = outer1_7;
-        if (null != arg0) {
-          toggleStates = arg0.toggleStates;
-          let tmp = toggleStates;
-          if (null != toggleStates) {
-            tmp2 = toggleStates[key10010];
-            let tmp3 = toggleStates;
-          }
-        }
-        let tmp4 = null != tmp2;
-        if (tmp4) {
-          tmp4 = tmp2;
-        }
-        tmp6[key10010] = tmp4;
-        continue;
-      }
-    }
-  };
-  items[1] = obj;
-  obj = {
-    key: "get",
-    value(arg0) {
-      return null != outer1_7[arg0] && outer1_7[arg0];
-    }
-  };
-  items[2] = obj;
-  items[3] = {
-    key: "set",
-    value(arg0, arg1) {
-      outer1_7[arg0] = arg1;
-      return arg1;
-    }
-  };
-  return callback(LabFeatureStore, items);
-})(require("initialize").DeviceSettingsStore);
-tmp2.displayName = "LabFeatureStore";
-tmp2.persistKey = "LabFeatureStore";
-tmp2 = new tmp2(require("dispatcher"), {
+};
+prototype["get"] = function get(arg0) {
+  let flag = table[arg0];
+  if (flag == null) {
+    flag = false;
+  }
+  return flag;
+};
+prototype["set"] = function set(arg0, arg1) {
+  closure_2[arg0] = arg1;
+  return arg1;
+};
+LabFeatureStore.displayName = "LabFeatureStore";
+LabFeatureStore.persistKey = "LabFeatureStore";
+const labFeatureStore = new LabFeatureStore(require("dispatcher"), {
   LAB_FEATURE_TOGGLE: function handleLabFeatureToggleSet(labFeature) {
-    closure_7[labFeature.labFeature] = labFeature.enabled;
+    closure_2[labFeature.labFeature] = labFeature.enabled;
   }
 });
-let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/labs/LabFeatureStore.tsx");
+const result = require("dispatcher").fileFinishedImporting("modules/labs/LabFeatureStore.tsx");
 
-export default tmp2;
+export default labFeatureStore;

@@ -1,23 +1,23 @@
-// Module ID: 13990
-// Function ID: 106868
+// Module ID: 14011
+// Function ID: 14012
 // Name: route
-// Dependencies: [31, 1850, 3817, 653, 33, 12422, 3811, 1212, 6270, 6335, 13991, 10099, 6606, 13993, 2]
+// Dependencies: [19, 1874, 3841, 676, 21, 12444, 3835, 1236, 6291, 6356, 14012, 10120, 6627, 14014, 2]
 
-// Module 13990 (route)
-import result from "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_5 from "_isNativeReflectConstruct";
+// Module 14011 (route)
+import noop from "noop";
+import mergeGuildAvatar from "mergeGuildAvatar";
+import reset from "reset";
 import { jsx } from "jsxProd";
 import createToggle from "createToggle";
 
 const require = arg1;
 createToggle = {
   useTitle: function getPremiumSettingTitle() {
-    const mobileNitroManageSubscriptionsSettingsExperiment = require(12422) /* apexExperiment */.getMobileNitroManageSubscriptionsSettingsExperiment({ location: "PremiumSetting" });
-    const obj = require(12422) /* apexExperiment */;
+    const mobileNitroManageSubscriptionsSettingsExperiment = require(12444) /* apexExperiment */.getMobileNitroManageSubscriptionsSettingsExperiment({ location: "PremiumSetting" });
+    const obj = require(12444) /* apexExperiment */;
     currentUser = currentUser.getCurrentUser();
-    const result = require(3811) /* _createForOfIteratorHelperLoose */.hasPremiumSubscriptionToDisplay(currentUser, premiumTypeSubscription.getPremiumTypeSubscription());
-    const intl = require(1212) /* getSystemLocale */.intl;
+    const result = require(3835) /* getPremiumPlanItem */.hasPremiumSubscriptionToDisplay(currentUser, premiumTypeSubscription.getPremiumTypeSubscription());
+    const intl = require(1236) /* getSystemLocale */.intl;
     const string = intl.string;
     if (result) {
       if (mobileNitroManageSubscriptionsSettingsExperiment) {
@@ -33,26 +33,27 @@ createToggle = {
   IconComponent: require("NitroWheelIcon").NitroWheelIcon,
   usePreNavigationAction: function useCanNavigateToPaymentSetting() {
     return React.useCallback(() => {
-      let flag = !outer1_0(outer1_2[8]).getIsPaymentsBlocked();
-      if (!flag) {
-        outer1_1(outer1_2[9])();
+      const isPaymentsBlocked = callback(table[8]).getIsPaymentsBlocked();
+      let flag = !isPaymentsBlocked;
+      if (isPaymentsBlocked) {
+        callback2(table[9])();
         flag = false;
       }
       return flag;
     }, []);
   },
   useTrailing: function usePremiumSettingTrailing() {
-    return jsx(importDefault(13991), {});
+    return jsx(importDefault(14012), {});
   },
   screen: createToggle
 };
 createToggle = {
   route: require("ME").UserSettingsSections.PREMIUM,
   getComponent() {
-    return require(13993) /* PremiumScreen */.default;
+    return require(14014) /* PremiumScreen */.default;
   }
 };
 createToggle = createToggle.createRoute(createToggle);
-let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/user_settings/defs/native/PremiumSetting.tsx");
+let result = require("reset").fileFinishedImporting("modules/user_settings/defs/native/PremiumSetting.tsx");
 
 export default createToggle;

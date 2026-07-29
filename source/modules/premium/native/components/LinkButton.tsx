@@ -1,20 +1,20 @@
-// Module ID: 6535
-// Function ID: 58190
+// Module ID: 6556
+// Function ID: 6557
 // Name: LinkButton
-// Dependencies: [31, 33, 4165, 4695, 4161, 2]
+// Dependencies: [19, 21, 4189, 4717, 4185, 2]
 // Exports: LinkButton
 
-// Module 6535 (LinkButton)
-import "result";
+// Module 6556 (LinkButton)
+import "noop";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_2;
-let closure_3;
+let c3;
+let obj1;
 const require = arg1;
-({ jsx: closure_2, jsxs: closure_3 } = jsxProd);
-let closure_4 = _createForOfIteratorHelperLoose.createStyles({ defaultContainerStyle: { display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "center" }, disabledContainerStyle: { opacity: 0.5 } });
-const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/premium/native/components/LinkButton.tsx");
+({ jsx: obj1, jsxs: c3 } = jsxProd);
+let closure_4 = createCacheKey.createStyles({ defaultContainerStyle: { display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "center" }, disabledContainerStyle: { opacity: 0.5 } });
+const result = require("createCacheKey").fileFinishedImporting("modules/premium/native/components/LinkButton.tsx");
 
 export const LinkButton = function LinkButton(textColor) {
   let containerStyle;
@@ -33,22 +33,15 @@ export const LinkButton = function LinkButton(textColor) {
     str = "text-link";
   }
   const tmp = callback2();
-  let obj = {};
   const items = [tmp.defaultContainerStyle, , ];
   let disabledContainerStyle = disabled;
   if (disabled) {
     disabledContainerStyle = tmp.disabledContainerStyle;
   }
+  const obj = { style: items, hitSlop: { top: 8, right: 8, bottom: 8 }, accessibilityRole: "button", activeOpacity: 0.2, disabled, onPress, children: null };
   items[1] = disabledContainerStyle;
   items[2] = containerStyle;
-  obj.style = items;
-  obj.hitSlop = { top: 8, right: 8, bottom: 8 };
-  obj.accessibilityRole = "button";
-  obj.activeOpacity = 0.2;
-  obj.disabled = disabled;
-  obj.onPress = onPress;
-  obj = { style: textStyle, variant, color: str, children: text };
-  const items1 = [callback(require(4161) /* Text */.Text, obj), textColor.iconRight];
-  obj.children = items1;
-  return closure_3(require(4695) /* PressableBase */.PressableOpacity, obj);
+  const items1 = [callback(require(4185) /* Text */.Text, { style: textStyle, variant, color: str, children: text }), textColor.iconRight];
+  obj[6] = items1;
+  return closure_3(require(4717) /* PressableBase */.PressableOpacity, obj);
 };

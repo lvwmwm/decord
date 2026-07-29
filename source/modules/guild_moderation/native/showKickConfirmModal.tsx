@@ -1,14 +1,14 @@
-// Module ID: 11022
-// Function ID: 85530
+// Module ID: 11046
+// Function ID: 11047
 // Name: showKickConfirmModal
-// Dependencies: [4133, 4372, 11023, 1935, 2]
+// Dependencies: [4157, 4395, 11047, 1959, 2]
 // Exports: default
 
-// Module 11022 (showKickConfirmModal)
+// Module 11046 (showKickConfirmModal)
 const result = require("KickConfirmModal").fileFinishedImporting("modules/guild_moderation/native/showKickConfirmModal.tsx");
 
-export default function showKickConfirmModal(merged) {
-  importDefault(4133).hideActionSheet();
-  const obj = importDefault(4133);
-  importDefault(4372).pushLazy(require(1935) /* maybeLoadBundle */(11023, dependencyMap.paths), merged);
+export default function showKickConfirmModal(closure_0) {
+  importDefault(4157).hideActionSheet();
+  const obj = importDefault(4157);
+  importDefault(4395).pushLazy(require(1959) /* asyncRequireImpl */(11047, dependencyMap.paths), closure_0);
 };

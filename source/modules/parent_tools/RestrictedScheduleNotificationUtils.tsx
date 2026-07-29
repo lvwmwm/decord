@@ -1,101 +1,22 @@
-// Module ID: 10225
-// Function ID: 78910
-// Name: _createForOfIteratorHelperLoose
-// Dependencies: [22, 2199, 1212, 10226, 2]
+// Module ID: 10246
+// Function ID: 10247
+// Name: isOnlyDayLoss
+// Dependencies: [12, 2223, 1236, 10247, 2]
 // Exports: diffSchedules, getRestrictedScheduleNotificationSubtitle, getRestrictedScheduleNotificationTitle, restrictedScheduleNotificationKey, toScheduleSnapshot
 
-// Module 10225 (_createForOfIteratorHelperLoose)
+// Module 10246 (isOnlyDayLoss)
 let Created;
 let Disabled;
 let Enabled;
 let Multiple;
 let Removed;
 let Updated;
-function _createForOfIteratorHelperLoose(iterable) {
-  let closure_0 = iterable;
-  iterable = "undefined" !== typeof Symbol;
-  if (iterable) {
-    const _Symbol = Symbol;
-    iterable = iterable[Symbol.iterator];
-  }
-  if (!iterable) {
-    iterable = iterable[Symbol.iterator];
-  }
-  if (iterable) {
-    const iter = iterable.call(iterable);
-    const next = iter.next;
-    return next.bind(iter);
-  } else {
-    const _Array = Array;
-    let tmp = iterable;
-    if (!Array.isArray(iterable)) {
-      let tmp2;
-      if (iterable) {
-        if ("string" === typeof iterable) {
-          tmp2 = _arrayLikeToArray(iterable, undefined);
-        } else {
-          const toString = {}.toString;
-          const substr = toString.call(iterable).slice(8, -1);
-          let name = substr;
-          if (tmp3) {
-            name = iterable.constructor.name;
-          }
-          if ("Map" !== name) {
-            if ("Set" !== name) {
-              if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(iterable, undefined);
-              } else {
-                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
-              }
-            }
-            tmp2 = arr;
-          }
-          const _Array2 = Array;
-          arr = Array.from(iterable);
-          const callResult = toString.call(iterable);
-          tmp3 = "Object" === substr && iterable.constructor;
-        }
-      }
-      tmp = tmp2;
-      if (!tmp2) {
-        const _TypeError = TypeError;
-        const typeError = new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
-        throw typeError;
-      }
-    }
-    if (tmp) {
-      closure_0 = tmp;
-    }
-    let c1 = 0;
-    return () => {
-      if (closure_1 >= length.length) {
-        let obj = { done: true };
-      } else {
-        obj = { done: false };
-        closure_1 = tmp3 + 1;
-        obj.value = length[+closure_1];
-      }
-      return obj;
-    };
-  }
-}
-function _arrayLikeToArray(arg0, arg1) {
-  let length;
-  if (tmp) {
-    length = arg0.length;
-  }
-  const ArrayResult = Array(length);
-  for (let num = 0; num < length; num = num + 1) {
-    ArrayResult[num] = arg0[num];
-  }
-  return ArrayResult;
-}
 function isOnlyDayLoss(label, label2) {
   if (label.label !== label2.label) {
     return false;
   } else {
     if (obj2.isEqual(label.startTime, label2.startTime)) {
-      if (obj.isEqual(label.endTime, label2.endTime)) {
+      if (tmp7Result.isEqual(label.endTime, label2.endTime)) {
         const _Set = Set;
         const set = new Set(label.days);
         let everyResult = label2.days.length < label.days.length;
@@ -107,11 +28,12 @@ function isOnlyDayLoss(label, label2) {
       } else {
         return false;
       }
-      obj = importDefault(22);
+      tmp7Result = tmp7(12);
     } else {
       return false;
     }
-    obj2 = importDefault(22);
+    obj2 = importDefault(12);
+    tmp7 = importDefault;
   }
 }
 let obj = { Created: "created", Enabled: "enabled", Disabled: "disabled", Updated: "updated", Removed: "removed", Multiple: "multiple" };
@@ -122,11 +44,11 @@ let result = require("getSystemLocale").fileFinishedImporting("modules/parent_to
 
 export const RestrictedScheduleNotificationKind = obj;
 export const EMPTY_SCHEDULE_SNAPSHOT = map;
-export const toScheduleSnapshot = function toScheduleSnapshot(currentRestrictedSchedule) {
-  if (null != currentRestrictedSchedule) {
-    if (0 !== currentRestrictedSchedule.rules.length) {
+export const toScheduleSnapshot = function toScheduleSnapshot(rules) {
+  if (null != rules) {
+    if (0 !== rules.rules.length) {
       const _Map = Map;
-      const rules = currentRestrictedSchedule.rules;
+      rules = rules.rules;
       const map = new Map(rules.map((ruleId) => {
         const items = [ruleId.ruleId, ruleId];
         return items;
@@ -135,27 +57,26 @@ export const toScheduleSnapshot = function toScheduleSnapshot(currentRestrictedS
     return map;
   }
 };
-export const diffSchedules = function diffSchedules(EMPTY_SCHEDULE_SNAPSHOT, toScheduleSnapshotResult) {
-  let iter2;
-  let tmp45;
-  let tmp46;
+export const diffSchedules = function diffSchedules(arr, toScheduleSnapshotResult) {
+  let tmp53;
+  let tmp54;
   function record(Created, value) {
     if (0 === closure_4) {
       let closure_0 = Created;
       let closure_1 = value;
     }
     closure_4 = closure_4 + 1;
-    if (Created === _null.Removed) {
+    if (Created === _null3.Removed) {
       closure_5 = closure_5 + 1;
-    } else if (Created === _null.Created) {
+    } else if (Created === tmp2.Created) {
       let closure_2 = value;
       closure_6 = closure_6 + 1;
-    } else if (Created === _null.Updated) {
+    } else if (Created === tmp2.Updated) {
       let closure_3 = value;
       closure_7 = closure_7 + 1;
     } else {
       const items = [, ];
-      ({ Enabled: arr[0], Disabled: arr[1] } = _null);
+      ({ Enabled: arr[0], Disabled: arr[1] } = tmp2);
       if (items.includes(Created)) {
         closure_8 = closure_8 + 1;
       }
@@ -166,163 +87,185 @@ export const diffSchedules = function diffSchedules(EMPTY_SCHEDULE_SNAPSHOT, toS
   const dependencyMap = null;
   let obj = null;
   let c4 = 0;
-  let c5 = 0;
-  const _createForOfIteratorHelperLoose = 0;
-  let c7 = 0;
   const isOnlyDayLoss = 0;
+  let c6 = 0;
+  let c7 = 0;
+  let c8 = 0;
   let items = [];
-  const items1 = [...EMPTY_SCHEDULE_SNAPSHOT.keys(), ...toScheduleSnapshotResult.keys()];
-  const tmp2 = _createForOfIteratorHelperLoose(new Set(items1));
-  let iter = tmp2();
-  if (!iter.done) {
-    do {
-      let value = iter.value;
-      value = EMPTY_SCHEDULE_SNAPSHOT.get(value);
-      value = toScheduleSnapshotResult.get(value);
+  const items1 = [...arr.keys(), ...toScheduleSnapshotResult.keys()];
+  for (const item10030 of set) {
+    let value = arg0.get(item10030);
+    value = arg1.get(item10030);
+    let tmp4 = value;
+    if (null == value) {
+      let tmp42 = value;
+      let enabled;
+      if (value != null) {
+        enabled = value.enabled;
+      }
+      if (enabled) {
+        let tmp44 = obj;
+        let tmp45 = value;
+        let recordResult = record(obj.Removed, value);
+      }
+    } else {
+      let tmp66 = value;
       if (null == value) {
-        let tmp33 = null != value && value.enabled;
-        let tmp22 = tmp3;
-        let tmp23 = tmp4;
-        if (tmp33) {
-          let tmp34 = obj;
-          let recordResult = record(obj.Removed, value);
-          tmp22 = tmp3;
-          tmp23 = tmp4;
+        let tmp38 = value;
+        if (tmp4.enabled) {
+          let tmp39 = obj;
+          let tmp40 = value;
+          let recordResult1 = record(obj.Created, tmp4);
         }
-      } else if (null == value) {
-        tmp22 = tmp3;
-        tmp23 = tmp4;
-        if (value.enabled) {
-          let tmp31 = obj;
-          let recordResult1 = record(obj.Created, value);
-          tmp22 = tmp3;
-          tmp23 = tmp4;
-        }
-      } else if (value.enabled !== value.enabled) {
-        let tmp27 = obj;
-        let tmp29 = value;
-        let tmp28 = value.enabled ? tmp27.Enabled : tmp27.Disabled;
-        if (value.enabled) {
-          tmp29 = value;
-        }
-        let recordResult2 = record(tmp28, tmp29);
-        tmp22 = tmp3;
-        tmp23 = tmp4;
       } else {
-        let tmp19 = !value.enabled;
-        let tmp20 = tmp3;
-        let tmp21 = tmp4;
-        if (!tmp19) {
-          let isEqualResult = value.label === value.label;
-          if (isEqualResult) {
-            let tmp8 = importDefault;
-            let tmp9 = dependencyMap;
-            obj = importDefault(22);
-            isEqualResult = obj.isEqual(value.startTime, value.startTime);
+        let tmp67 = value;
+        let tmp68 = value;
+        if (value.enabled !== tmp4.enabled) {
+          let tmp33 = value;
+          let tmp34 = obj;
+          if (tmp4.enabled) {
+            let Disabled = tmp34.Enabled;
+          } else {
+            Disabled = tmp34.Disabled;
           }
-          if (isEqualResult) {
-            let tmp10 = importDefault;
-            let tmp11 = dependencyMap;
-            let obj1 = importDefault(22);
-            isEqualResult = obj1.isEqual(value.endTime, value.endTime);
+          let tmp35 = value;
+          if (tmp4.enabled) {
+            let tmp36 = value;
+          } else {
+            tmp36 = value;
           }
-          if (isEqualResult) {
-            let tmp12 = importDefault;
-            let tmp13 = dependencyMap;
-            let obj2 = importDefault(22);
-            let items2 = [];
-            let tmp14 = items2;
-            let num = 0;
-            let arraySpreadResult = HermesBuiltin.arraySpread(value.days, 0);
-            let items3 = [];
-            let tmp17 = items3;
-            let sorted = items2.sort();
-            arraySpreadResult = HermesBuiltin.arraySpread(value.days, 0);
-            isEqualResult = obj2.isEqual(sorted, items3.sort());
+          let recordResult2 = record(Disabled, tmp36);
+        } else {
+          let tmp69 = value;
+          enabled = tmp4.enabled;
+          let tmp27 = !enabled;
+          if (enabled) {
+            let tmp5 = value;
+            let tmp6 = tmp4;
+            let tmp7 = value;
+            let tmp8 = value;
+            let isEqualResult = value.label === tmp4.label;
+            if (isEqualResult) {
+              let tmp10 = importDefault;
+              let tmp11 = dependencyMap;
+              obj = importDefault(12);
+              let tmp12 = tmp7;
+              let tmp13 = tmp5;
+              isEqualResult = obj.isEqual(tmp8.startTime, tmp6.startTime);
+            }
+            if (isEqualResult) {
+              let tmp14 = importDefault;
+              let tmp15 = dependencyMap;
+              let obj1 = importDefault(12);
+              let tmp16 = tmp7;
+              let tmp17 = tmp5;
+              isEqualResult = obj1.isEqual(tmp8.endTime, tmp6.endTime);
+            }
+            if (isEqualResult) {
+              let tmp18 = importDefault;
+              let tmp19 = dependencyMap;
+              let obj2 = importDefault(12);
+              let tmp20 = tmp7;
+              let items2 = [];
+              let tmp21 = items2;
+              let num = 0;
+              let arraySpreadResult = HermesBuiltin.arraySpread(tmp8.days, 0);
+              let tmp24 = tmp5;
+              let items3 = [];
+              let tmp25 = items3;
+              let sorted = items2.sort();
+              arraySpreadResult = HermesBuiltin.arraySpread(tmp6.days, 0);
+              isEqualResult = obj2.isEqual(sorted, items3.sort());
+            }
+            tmp27 = isEqualResult;
           }
-          tmp19 = isEqualResult;
-          tmp20 = value;
-          tmp21 = value;
-        }
-        tmp22 = tmp20;
-        tmp23 = tmp21;
-        if (!tmp19) {
-          let tmp24 = obj;
-          let recordResult3 = record(obj.Updated, value);
-          obj = { oldRule: value, newRule: value };
-          let arr = items.push(obj);
-          tmp22 = tmp20;
-          tmp23 = tmp21;
+          if (!tmp27) {
+            let tmp28 = obj;
+            let tmp29 = value;
+            let recordResult3 = record(obj.Updated, tmp4);
+            obj = { oldRule: null, newRule: null };
+            let tmp31 = value;
+            obj[0] = value;
+            obj[1] = tmp4;
+            arr = items.push(obj);
+          }
         }
       }
-      iter2 = tmp2();
-      tmp3 = tmp22;
-      tmp4 = tmp23;
-      iter = iter2;
-    } while (!iter2.done);
+    }
+    continue;
   }
   if (0 === c4) {
     return null;
   } else {
-    if (1 === _createForOfIteratorHelperLoose) {
-      if (0 === isOnlyDayLoss) {
-        if (tmp59) {
-          obj = {};
-          obj.kind = obj.Created;
-          obj.rule = dependencyMap;
+    if (1 === c6) {
+      if (0 === c8) {
+        if (tmp70) {
+          obj = { kind: null, rule: null };
+          obj[0] = obj.Created;
+          obj[1] = dependencyMap;
           return obj;
         }
       }
     }
     if (1 === c7) {
-      if (0 === _createForOfIteratorHelperLoose) {
-        if (c5 >= 1) {
-          if (0 === isOnlyDayLoss) {
-            obj1 = { kind: obj.Updated, rule: obj };
+      if (0 === tmp71) {
+        if (1 <= isOnlyDayLoss) {
+          if (0 === c8) {
+            obj1 = { kind: null, rule: null };
+            obj1[0] = obj.Updated;
+            obj1[1] = obj;
             return obj1;
           }
         }
       }
     }
     if (2 === c7) {
-      if (0 === _createForOfIteratorHelperLoose) {
-        if (0 === c5) {
-          if (0 === isOnlyDayLoss) {
-            [tmp45, tmp46] = items;
-            if (isOnlyDayLoss(tmp45.oldRule, tmp45.newRule)) {
-              obj2 = { kind: obj.Updated, rule: tmp46.newRule };
+      if (0 === tmp71) {
+        if (0 === isOnlyDayLoss) {
+          if (0 === c8) {
+            [tmp53, tmp54] = items;
+            if (isOnlyDayLoss(tmp53.oldRule, tmp53.newRule)) {
+              obj2 = { kind: null, rule: null };
+              obj2[0] = obj.Updated;
+              obj2[1] = tmp54.newRule;
               return obj2;
-            } else if (isOnlyDayLoss(tmp46.oldRule, tmp46.newRule)) {
-              const obj3 = { kind: obj.Updated, rule: tmp45.newRule };
+            } else if (tmp55(tmp54.oldRule, tmp54.newRule)) {
+              const obj3 = { kind: null, rule: null };
+              obj3[0] = obj.Updated;
+              obj3[1] = tmp53.newRule;
               return obj3;
             }
+            tmp55 = isOnlyDayLoss;
           }
         }
       }
     }
-    if (c4 > 1) {
-      const obj4 = { kind: obj.Multiple, rule: null };
+    if (1 < c4) {
+      const obj4 = { kind: null, rule: null };
+      obj4[0] = obj.Multiple;
       let obj5 = obj4;
     } else {
-      obj5 = { kind: c0, rule: importDefault };
+      obj5 = { kind: null, rule: null };
+      obj5[0] = c0;
+      obj5[1] = importDefault;
     }
     return obj5;
   }
-  const set = new Set(items1);
+  let set = new Set(items1);
 };
 export const getRestrictedScheduleNotificationTitle = function getRestrictedScheduleNotificationTitle(kind) {
-  const intl = require(1212) /* getSystemLocale */.intl;
+  const intl = require(1236) /* getSystemLocale */.intl;
   return intl.string(obj[kind]);
 };
 export const getRestrictedScheduleNotificationSubtitle = function getRestrictedScheduleNotificationSubtitle(rule) {
   let result = null;
   if (null != rule) {
-    result = require(10226) /* _createForOfIteratorHelperLoose */.formatRestrictedScheduleInAppSubtitle(rule);
-    const obj = require(10226) /* _createForOfIteratorHelperLoose */;
+    result = require(10247) /* setsEqual */.formatRestrictedScheduleInAppSubtitle(rule);
+    const obj = require(10247) /* setsEqual */;
   }
-  if (null == result) {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    result = intl.string(importDefault(2199)["8OlpoY"]);
+  if (result == null) {
+    const intl = require(1236) /* getSystemLocale */.intl;
+    result = intl.string(importDefault(2223)["8OlpoY"]);
   }
   return result;
 };

@@ -1,20 +1,20 @@
-// Module ID: 8095
-// Function ID: 64232
+// Module ID: 8119
+// Function ID: 8120
 // Name: IncrementableMediaViewerActions
-// Dependencies: [1348, 653, 621, 675, 2]
+// Dependencies: [1372, 676, 644, 698, 2]
 
-// Module 8095 (IncrementableMediaViewerActions)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 8119 (IncrementableMediaViewerActions)
+import ensureGuildLoaded from "ensureGuildLoaded";
 import ME from "ME";
 import keys from "keys";
 
-let closure_3;
-let closure_4;
-({ AnalyticEvents: closure_3, AnalyticsSections: closure_4 } = ME);
+let c3;
+let c4;
+({ AnalyticEvents: c3, AnalyticsSections: c4 } = ME);
 let obj = { VIEWER_SWIPE: "number_viewer_swipes", THUMBNAIL_SWIPE: "number_thumbnail_swipes", SELECTED_ITEM_CHANGE: "number_selected_item_changes", ZOOM_IN_BUTTON_PRESSED: "number_zoom_in_button_pressed", ZOOM_IN_IMAGE_PRESSED: "number_zoom_in_image_pressed", ZOOM_OUT_BUTTON_PRESSED: "number_zoom_out_button_pressed", ZOOM_OUT_IMAGE_PRESSED: "number_zoom_out_image_pressed", FORWARD_PRESSED: "number_forward_button_pressed", SAVE_MEDIA_PRESSED: "number_save_media_button_pressed", OPEN_LINK_PRESSED: "number_open_link_button_pressed", MORE_BUTTON_PRESSED: "number_more_button_pressed", COPY_IMAGE_PRESSED: "number_copy_image_more_menu_pressed", COPY_LINK_PRESSED: "number_copy_link_more_menu_pressed", CONTEXT_MENU_OPENED: "number_context_menu_opened" };
-obj = { guildId: undefined, channelId: undefined, channelType: undefined, numMediaItems: 0, hasMediaOptions: undefined, source: undefined };
+obj = { guildId: "disabled", channelId: "isArray", channelType: "isArray", numMediaItems: "Array", hasMediaOptions: "call", source: "<string:1895895543>", incrementableActions: "e" };
 const values = Object.values(obj);
-obj.incrementableActions = Object.fromEntries(values.map((arg0) => {
+obj[6] = Object.fromEntries(values.map((arg0) => {
   const items = [arg0, 0];
   return items;
 }));
@@ -22,38 +22,38 @@ let closure_6 = keys.create(() => obj);
 obj = {
   markSessionStarted(channelId) {
     channel = channel.getChannel(channelId.channelId);
-    let obj = importDefault(675);
-    obj = { type: constants2.MEDIA_VIEWER, source: channelId.source, channel_id: channelId.channelId };
+    let obj = importDefault(698);
+    obj = { type: constants2.MEDIA_VIEWER, source: channelId.source, channel_id: channelId.channelId, channel_type: null, guild_id: null };
     let type;
-    if (null != channel) {
+    if (channel != null) {
       type = channel.type;
     }
-    obj.channel_type = type;
+    obj[3] = type;
     let guild_id;
-    if (null != channel) {
+    if (channel != null) {
       guild_id = channel.guild_id;
     }
-    obj.guild_id = guild_id;
+    obj[4] = guild_id;
     obj.track(constants.OPEN_MODAL, obj);
     obj = {};
     const merged = Object.assign(obj);
     const merged1 = Object.assign(channelId);
-    obj["channelId"] = channelId.channelId;
+    obj.channelId = channelId.channelId;
     let type1;
-    if (null != channel) {
+    if (channel != null) {
       type1 = channel.type;
     }
-    obj["channelType"] = type1;
+    obj.channelType = type1;
     let guild_id1;
-    if (null != channel) {
+    if (channel != null) {
       guild_id1 = channel.guild_id;
     }
-    obj["guildId"] = guild_id1;
+    obj.guildId = guild_id1;
     store.setState(obj);
   },
   markSessionCompleted() {
     const state = store.getState();
-    let obj = importDefault(675);
+    let obj = importDefault(698);
     obj = { source: state.source, guild_id: state.guildId, channel_id: state.channelId, channel_type: state.channelType, number_media_items: state.numMediaItems, has_media_options: state.hasMediaOptions };
     const merged = Object.assign(state.incrementableActions);
     obj.track(constants.MEDIA_VIEWER_SESSION_COMPLETED, obj);
@@ -64,11 +64,11 @@ obj = {
   markActionPerformed(SELECTED_ITEM_CHANGE) {
     let closure_0 = SELECTED_ITEM_CHANGE;
     store.setState((incrementableActions) => {
-      let obj = {};
+      let obj = { incrementableActions: null };
       obj = {};
       const merged = Object.assign(incrementableActions.incrementableActions);
       obj[closure_0] = incrementableActions.incrementableActions[closure_0] + 1;
-      obj.incrementableActions = obj;
+      obj[0] = obj;
       return obj;
     });
   },
@@ -77,7 +77,7 @@ obj = {
     let url;
     ({ url, success } = arg0);
     const state = store.getState();
-    let obj = importDefault(675);
+    let obj = importDefault(698);
     obj = { url, success, channel_id: state.channelId };
     obj.track(constants.MEDIA_VIEWER_IMAGE_SAVED, obj);
   },
@@ -86,7 +86,7 @@ obj = {
     let url;
     ({ url, success } = arg0);
     const state = store.getState();
-    let obj = importDefault(675);
+    let obj = importDefault(698);
     obj = { url, success, channel_id: state.channelId };
     obj.track(constants.MEDIA_VIEWER_IMAGE_COPIED, obj);
   },
@@ -95,25 +95,25 @@ obj = {
     let success;
     ({ href, success } = arg0);
     const state = store.getState();
-    let obj = importDefault(675);
+    let obj = importDefault(698);
     obj = { href, success, channel_id: state.channelId };
     obj.track(constants.MEDIA_VIEWER_LINK_COPIED, obj);
   },
   trackMediaViewerLinkOpened(href) {
     const state = store.getState();
-    let obj = importDefault(675);
+    let obj = importDefault(698);
     obj = { href: href.href, channel_id: state.channelId };
     obj.track(constants.MEDIA_VIEWER_LINK_OPENED, obj);
   },
   trackMediaViewerDownloadButtonTapped() {
     const state = store.getState();
-    let obj = importDefault(675);
+    let obj = importDefault(698);
     obj = { guild_id: state.guildId, channel_id: state.channelId, channel_type: state.channelType };
     obj.track(constants.MEDIA_VIEWER_DOWNLOAD_BUTTON_TAPPED, obj);
   },
   trackMediaViewerShareButtonTapped() {
     const state = store.getState();
-    let obj = importDefault(675);
+    let obj = importDefault(698);
     obj = { guild_id: state.guildId, channel_id: state.channelId, channel_type: state.channelType };
     obj.track(constants.MEDIA_VIEWER_SHARE_BUTTON_TAPPED, obj);
   },
@@ -122,7 +122,7 @@ obj = {
     let error;
     let platform;
     ({ platform, action, error } = arg0);
-    importDefault(675).track(constants.MESSAGE_EMBEDS_ACTION_COMPLETED, { platform, error, action });
+    importDefault(698).track(constants.MESSAGE_EMBEDS_ACTION_COMPLETED, { platform, error, action });
   }
 };
 const result = require("keys").fileFinishedImporting("modules/media_viewer/MediaViewerAnalyticsManager.tsx");

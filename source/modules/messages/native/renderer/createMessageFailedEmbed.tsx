@@ -1,10 +1,10 @@
-// Module ID: 7907
-// Function ID: 62843
+// Module ID: 7932
+// Function ID: 7933
 // Name: createMessageFailedEmbed
-// Dependencies: [7691, 653, 7706, 7908, 1212, 7909, 4705, 2]
+// Dependencies: [7714, 676, 7729, 7933, 1236, 7934, 4727, 2]
 // Exports: createAutomodBlockedMessageEmbed, default
 
-// Module 7907 (createMessageFailedEmbed)
+// Module 7932 (createMessageFailedEmbed)
 import { MessageFailureState } from "Changeset";
 import { MessageEmbedTypes } from "ME";
 
@@ -16,41 +16,45 @@ export default function createMessageFailedEmbed(useAttachmentUploadPreview) {
   ({ uploaderFile, colors } = useAttachmentUploadPreview);
   if (null != uploaderFile) {
     if (useAttachmentUploadPreview.useAttachmentUploadPreview) {
-      let obj = { type: MessageEmbedTypes.TEXT };
-      const intl3 = require(1212) /* getSystemLocale */.intl;
-      obj.messageSendError = intl3.string(require(1212) /* getSystemLocale */.t.lBLP4u);
-      obj.failureState = MessageFailureState.UNSPECIFIED;
-      obj.disableBackgroundColor = true;
-      obj.bodyTextColor = colors.failedMessageBodyTextColor;
-      colors = require(7706) /* frozen */.getAssetUriForEmbed;
-      obj.iconURL = colors(importDefault(7909));
-      const tmp16 = require(7706) /* frozen */;
+      let obj = { type: null, messageSendError: null, failureState: null, disableBackgroundColor: true, bodyTextColor: null, iconURL: null };
+      obj[0] = MessageEmbedTypes.TEXT;
+      const intl3 = require(1236) /* getSystemLocale */.intl;
+      obj[1] = intl3.string(require(1236) /* getSystemLocale */.t.lBLP4u);
+      obj[2] = MessageFailureState.UNSPECIFIED;
+      obj[4] = colors.failedMessageBodyTextColor;
+      colors = require(7729) /* frozen */.getAssetUriForEmbed;
+      obj[5] = colors(importDefault(7934));
+      const tmp14 = require(7729) /* frozen */;
     } else {
-      obj = { type: MessageEmbedTypes.TEXT };
-      const intl2 = require(1212) /* getSystemLocale */.intl;
-      const obj1 = { count: uploaderFile.attachmentsCount };
-      obj.numAttachments = intl2.formatToPlainString(require(1212) /* getSystemLocale */.t.D0noUt, obj1);
-      obj.failureState = MessageFailureState.UPLOAD_FAILED;
+      obj = { type: null, numAttachments: null, failureState: null, attachmentsSize: null, bodyTextColor: null };
+      obj[0] = MessageEmbedTypes.TEXT;
+      const intl2 = require(1236) /* getSystemLocale */.intl;
+      const obj1 = { count: null };
+      obj1[0] = uploaderFile.attachmentsCount;
+      obj[1] = intl2.formatToPlainString(require(1236) /* getSystemLocale */.t.D0noUt, obj1);
+      obj[2] = MessageFailureState.UPLOAD_FAILED;
       let str = "";
       if (0 !== uploaderFile.currentSize) {
         const _HermesInternal = HermesInternal;
-        str = " (" + require(4705) /* _createForOfIteratorHelperLoose */.sizeString(uploaderFile.currentSize) + ")";
-        const obj4 = require(4705) /* _createForOfIteratorHelperLoose */;
+        str = " (" + tmp6(4727).sizeString(uploaderFile.currentSize) + ")";
+        const tmp6Result = tmp6(4727);
       }
-      obj.attachmentsSize = "" + str;
-      obj.bodyTextColor = colors.embedBodyTextColor;
+      obj[3] = "" + str;
+      obj[4] = colors.embedBodyTextColor;
+      tmp6 = require;
     }
   } else {
-    obj = { type: MessageEmbedTypes.TEXT };
-    const intl = require(1212) /* getSystemLocale */.intl;
-    obj.messageSendError = intl.string(require(1212) /* getSystemLocale */.t.lBLP4u);
-    obj.failureState = MessageFailureState.UNSPECIFIED;
-    obj.disableBackgroundColor = true;
-    obj.bodyTextColor = colors.failedMessageBodyTextColor;
+    obj = { type: null, messageSendError: null, failureState: null, disableBackgroundColor: true, bodyTextColor: null };
+    obj[0] = MessageEmbedTypes.TEXT;
+    const intl = require(1236) /* getSystemLocale */.intl;
+    obj[1] = intl.string(require(1236) /* getSystemLocale */.t.lBLP4u);
+    obj[2] = MessageFailureState.UNSPECIFIED;
+    obj[4] = colors.failedMessageBodyTextColor;
     return obj;
   }
 };
 export const createAutomodBlockedMessageEmbed = function createAutomodBlockedMessageEmbed(errorMessage) {
-  const obj = { type: MessageEmbedTypes.TEXT, messageSendError: errorMessage.errorMessage, failureState: MessageFailureState.AUTO_MODERATION_BLOCKED_MESSAGE, disableBackgroundColor: true, bodyTextColor: errorMessage.colors.automodBlockedBodyTextColor, iconURL: require(7706) /* frozen */.getAssetUriForEmbed(importDefault(7908)) };
+  const obj = { type: MessageEmbedTypes.TEXT, messageSendError: errorMessage.errorMessage, failureState: MessageFailureState.AUTO_MODERATION_BLOCKED_MESSAGE, disableBackgroundColor: true, bodyTextColor: errorMessage.colors.automodBlockedBodyTextColor, iconURL: null };
+  obj[5] = require(7729) /* frozen */.getAssetUriForEmbed(importDefault(7933));
   return obj;
 };

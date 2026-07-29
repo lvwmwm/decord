@@ -1,58 +1,66 @@
-// Module ID: 6528
-// Function ID: 58151
+// Module ID: 6549
+// Function ID: 6550
 // Name: SubscriptionAccountHoldNotice
-// Dependencies: [31, 27, 653, 33, 4165, 689, 1273, 6529, 4161, 1212, 3811, 4578, 2]
+// Dependencies: [19, 17, 676, 21, 4189, 712, 1297, 6550, 4185, 1236, 3835, 4600, 2]
 // Exports: default
 
-// Module 6528 (SubscriptionAccountHoldNotice)
-import "result";
+// Module 6549 (SubscriptionAccountHoldNotice)
+import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { SubscriptionStatusTypes } from "ME";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_3;
-let closure_4;
+let c3;
+let c4;
 let closure_6;
-let closure_7;
+let error;
 const require = arg1;
-({ Linking: closure_3, View: closure_4 } = get_ActivityIndicator);
-({ jsx: closure_6, jsxs: closure_7 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { padding: 8, margin: 8, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SURFACE_HIGH };
-_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.textContainer = { flexDirection: "row" };
-_createForOfIteratorHelperLoose.icon = { marginRight: 4 };
-_createForOfIteratorHelperLoose.text = { marginBottom: 8, flex: 1 };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+({ Linking: c3, View: c4 } = get_ActivityIndicator);
+({ jsx: closure_6, jsxs: error } = jsxProd);
+createCacheKey = { container: null, textContainer: null, icon: null, text: null };
+createCacheKey = { padding: 8, margin: 8, backgroundColor: require("Themes").colors.BACKGROUND_SURFACE_HIGH };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { flexDirection: "row" };
+createCacheKey[2] = { marginRight: 4 };
+createCacheKey[3] = { marginBottom: 8, flex: 1 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
 const result = require("ME").fileFinishedImporting("modules/premium/native/SubscriptionAccountHoldNotice.tsx");
 
 export default function SubscriptionAccountHoldNotice(subscription) {
   subscription = subscription.subscription;
-  const tmp = _createForOfIteratorHelperLoose();
+  const tmp = createCacheKey();
   let tmp2 = null;
   if (subscription.status === SubscriptionStatusTypes.ACCOUNT_HOLD) {
-    let obj = { style: tmp.container };
-    obj = { style: tmp.textContainer };
-    obj = { size: subscription(1273).IconSizes.MEDIUM, style: tmp.icon, source: importDefault(6529) };
-    const items = [callback(subscription(1273).Icon, obj), ];
-    const obj1 = { style: tmp.text, variant: "text-sm/medium" };
-    const intl = subscription(1212).intl;
-    const obj2 = { endDate: subscription.currentPeriodEnd, planDescription: subscription(3811).getDisplayName(subscription.planId) };
-    obj1.children = intl.format(subscription(1212).t["7I21Iz"], obj2);
-    items[1] = callback(subscription(4161).Text, obj1);
-    obj.children = items;
+    let obj = { style: null, children: null };
+    obj[0] = tmp.container;
+    obj = { style: null, children: null };
+    obj[0] = tmp.textContainer;
+    obj = { size: null, style: null, source: null };
+    obj[0] = subscription(1297).IconSizes.MEDIUM;
+    obj[1] = tmp.icon;
+    obj[2] = importDefault(6550);
+    const items = [callback(subscription(1297).Icon, obj), ];
+    const obj1 = { style: null, variant: "text-sm/medium", children: null };
+    obj1[0] = tmp.text;
+    const intl = subscription(1236).intl;
+    const obj2 = { endDate: null, planDescription: null };
+    obj2[0] = subscription.currentPeriodEnd;
+    obj2[1] = subscription(3835).getDisplayName(subscription.planId);
+    obj1[2] = intl.format(subscription(1236).t["7I21Iz"], obj2);
+    items[1] = callback(subscription(4185).Text, obj1);
+    obj[1] = items;
     const items1 = [callback2(closure_4, obj), ];
-    const obj3 = { size: "sm" };
-    const intl2 = subscription(1212).intl;
-    obj3.text = intl2.string(subscription(1212).t.VJmUNy);
-    obj3.onPress = function onPress() {
+    const obj3 = { size: "sm", text: null, onPress: null };
+    const intl2 = subscription(1236).intl;
+    obj3[1] = intl2.string(subscription(1236).t.VJmUNy);
+    obj3[2] = function onPress() {
       return outer1_3.openURL(subscription(outer1_2[10]).getExternalSubscriptionMethodUrl(subscription.paymentGateway, "PAYMENT_SOURCE_MANAGEMENT"));
     };
-    items1[1] = callback(subscription(4578).Button, obj3);
-    obj.children = items1;
+    items1[1] = callback(subscription(4600).Button, obj3);
+    obj[1] = items1;
     tmp2 = callback2(closure_4, obj);
-    const obj6 = subscription(3811);
+    const obj6 = subscription(3835);
   }
   return tmp2;
 };

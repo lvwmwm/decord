@@ -1,44 +1,44 @@
-// Module ID: 15185
-// Function ID: 115405
+// Module ID: 15218
+// Function ID: 15219
 // Name: items
-// Dependencies: [1391, 1838, 1850, 653, 566, 12600, 2]
+// Dependencies: [1415, 1862, 1874, 676, 589, 12622, 2]
 // Exports: canSeeCreatorMonetizationOnboardingV2Upsell, useCanSeeCreatorMonetizationOnboardingV2Upsell
 
-// Module 15185 (items)
-import { isGuildOwner } from "isGuildOwner";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 15218 (items)
+import { isGuildOwner } from "GuildNSFWContentLevel";
+import createGuildRecordFromRust from "createGuildRecordFromRust";
+import mergeGuildAvatar from "mergeGuildAvatar";
 
 let items = [, , , , ];
 ({ CREATOR_MONETIZABLE_PROVISIONAL: arr[0], CREATOR_MONETIZABLE: arr[1], CREATOR_MONETIZABLE_WHITEGLOVE: arr[2], CREATOR_MONETIZABLE_DISABLED: arr[3], CREATOR_MONETIZABLE_RESTRICTED: arr[4] } = require("ME").GuildFeatures);
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/creator_monetization_eligibility/feature_education/OnboardingV2Utils.tsx");
+const result = require("mergeGuildAvatar").fileFinishedImporting("modules/creator_monetization_eligibility/feature_education/OnboardingV2Utils.tsx");
 
 export const useCanSeeCreatorMonetizationOnboardingV2Upsell = function useCanSeeCreatorMonetizationOnboardingV2Upsell(id) {
   const _require = id;
-  const items = [_createForOfIteratorHelperLoose];
+  const items = [createGuildRecordFromRust];
   stateFromStores = _require(stateFromStores[4]).useStateFromStores(items, () => outer1_3.getGuild(closure_0));
   const obj = _require(stateFromStores[4]);
-  const items1 = [_isNativeReflectConstruct];
-  const stateFromStores1 = _require(stateFromStores[4]).useStateFromStores(items1, () => outer1_4.getCurrentUser());
+  const items1 = [mergeGuildAvatar];
+  const stateFromStores1 = _require(stateFromStores[4]).useStateFromStores(items1, () => currentUser.getCurrentUser());
   const obj2 = _require(stateFromStores[4]);
   const guildRoleSubscriptionSettingsVisibility = _require(stateFromStores[5]).useGuildRoleSubscriptionSettingsVisibility(stateFromStores);
-  let tmp4 = guildRoleSubscriptionSettingsVisibility === _require(stateFromStores[5]).GuildRoleSubscriptionSettingsVisibility.VISIBLE;
   if (null == stateFromStores) {
     return false;
   } else {
-    const tmp6 = isGuildOwner(stateFromStores, stateFromStores1);
-    if (tmp4) {
-      tmp4 = tmp6;
+    let tmp5 = guildRoleSubscriptionSettingsVisibility === tmp4;
+    const tmp7 = isGuildOwner(stateFromStores, stateFromStores1);
+    if (tmp5) {
+      tmp5 = tmp7;
     }
-    if (tmp4) {
-      tmp4 = everyResult;
+    if (tmp5) {
+      tmp5 = everyResult;
     }
-    return tmp4;
+    return tmp5;
   }
   const obj3 = _require(stateFromStores[5]);
 };
-export const canSeeCreatorMonetizationOnboardingV2Upsell = function canSeeCreatorMonetizationOnboardingV2Upsell(guildId) {
-  guild = guild.getGuild(guildId);
+export const canSeeCreatorMonetizationOnboardingV2Upsell = function canSeeCreatorMonetizationOnboardingV2Upsell(arg0) {
+  guild = guild.getGuild(arg0);
   if (null == guild) {
     return false;
   } else {
@@ -46,9 +46,9 @@ export const canSeeCreatorMonetizationOnboardingV2Upsell = function canSeeCreato
     if (null == currentUser) {
       return false;
     } else {
-      const guildRoleSubscriptionSettingsVisibility = guild(12600).getGuildRoleSubscriptionSettingsVisibility(guild);
-      let tmp5 = guildRoleSubscriptionSettingsVisibility === guild(12600).GuildRoleSubscriptionSettingsVisibility.VISIBLE;
-      const obj = guild(12600);
+      const guildRoleSubscriptionSettingsVisibility = guild(12622).getGuildRoleSubscriptionSettingsVisibility(guild);
+      let tmp5 = guildRoleSubscriptionSettingsVisibility === guild(12622).GuildRoleSubscriptionSettingsVisibility.VISIBLE;
+      const obj = guild(12622);
       const tmp7 = isGuildOwner(guild, currentUser);
       if (tmp5) {
         tmp5 = tmp7;

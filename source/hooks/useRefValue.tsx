@@ -1,10 +1,10 @@
-// Module ID: 5156
-// Function ID: 44532
+// Module ID: 5178
+// Function ID: 5179
 // Name: useRefValue
 // Dependencies: [2]
 // Exports: default
 
-// Module 5156 (useRefValue)
+// Module 5178 (useRefValue)
 const result = require("set").fileFinishedImporting("hooks/useRefValue.tsx");
 
 export default function useRefValue(current) {

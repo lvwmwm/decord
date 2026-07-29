@@ -1,59 +1,50 @@
-// Module ID: 10676
-// Function ID: 83094
+// Module ID: 10700
+// Function ID: 10701
 // Name: ScheduleEventPrompt
-// Dependencies: [31, 33, 4165, 689, 8242, 7611, 8205, 8302, 1212, 3835, 3747, 2]
+// Dependencies: [19, 21, 4189, 712, 8266, 7634, 8229, 8326, 1236, 3859, 3771, 2]
 // Exports: ScheduleEventPrompt, StartEventPrompt
 
-// Module 10676 (ScheduleEventPrompt)
-import "result";
+// Module 10700 (ScheduleEventPrompt)
+import "noop";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
 const require = arg1;
-_createForOfIteratorHelperLoose = { actionBarCTAContainer: { marginVertical: 4 } };
-_createForOfIteratorHelperLoose = { tintColor: require("_createForOfIteratorHelperLoose").colors.WHITE, width: 20, height: 20 };
-_createForOfIteratorHelperLoose.iconStyle = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.iconContainerStyle = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BRAND, borderRadius: require("_createForOfIteratorHelperLoose").radii.lg, padding: 4 };
-let obj1 = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BRAND, borderRadius: require("_createForOfIteratorHelperLoose").radii.lg, padding: 4 };
-_createForOfIteratorHelperLoose.greenIcon = { backgroundColor: require("_createForOfIteratorHelperLoose").unsafe_rawColors.GREEN_360 };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-const obj2 = { backgroundColor: require("_createForOfIteratorHelperLoose").unsafe_rawColors.GREEN_360 };
-let result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/guild_scheduled_events/native/components/GuildScheduledEventPrompts.tsx");
+createCacheKey = { actionBarCTAContainer: { marginVertical: 4 }, iconStyle: null, iconContainerStyle: null, greenIcon: null };
+createCacheKey = { tintColor: require("Themes").colors.WHITE, width: 20, height: 20 };
+createCacheKey[1] = createCacheKey;
+createCacheKey[2] = { backgroundColor: require("Themes").colors.BACKGROUND_BRAND, borderRadius: require("Themes").radii.lg, padding: 4 };
+let obj1 = { backgroundColor: require("Themes").colors.BACKGROUND_BRAND, borderRadius: require("Themes").radii.lg, padding: 4 };
+createCacheKey[3] = { backgroundColor: require("Themes").unsafe_rawColors.GREEN_360 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+const obj2 = { backgroundColor: require("Themes").unsafe_rawColors.GREEN_360 };
+let result = require("createCacheKey").fileFinishedImporting("modules/guild_scheduled_events/native/components/GuildScheduledEventPrompts.tsx");
 
 export const ScheduleEventPrompt = function ScheduleEventPrompt(isLive) {
   let channel;
   let require;
   ({ guild: require, channel } = isLive);
-  const tmp = _createForOfIteratorHelperLoose();
-  let obj = require(8242) /* canManageResource */;
-  let tmp2 = null;
+  const tmp = createCacheKey();
+  let obj = require(8266) /* canManageResource */;
+  let tmp4 = null;
   if (obj.useManageResourcePermissions(channel).canCreateGuildEvent) {
-    obj = {
-      style: tmp.actionBarCTAContainer,
-      onPress() {
-          let obj = outer1_0(outer1_2[6]);
-          obj = { channel };
-          const result = obj.openCreateOrEditGuildEventModal(closure_0, obj);
-        },
-      iconSource: channel(8302)
+    obj = { style: null, onPress: null, iconSource: null, iconStyle: null, iconContainerStyle: null, completed: null, title: null, subtitle: null };
+    obj[0] = tmp.actionBarCTAContainer;
+    obj[1] = function onPress() {
+      let obj = outer1_0(outer1_2[6]);
+      obj = { channel };
+      const result = obj.openCreateOrEditGuildEventModal(closure_0, obj);
     };
-    ({ iconStyle: obj2.iconStyle, iconContainerStyle: obj2.iconContainerStyle } = tmp);
-    obj.completed = isLive.isLive;
-    const intl = require(1212) /* getSystemLocale */.intl;
-    obj.title = intl.string(require(1212) /* getSystemLocale */.t["60lJ0C"]);
-    const intl2 = require(1212) /* getSystemLocale */.intl;
-    obj.subtitle = intl2.string(require(1212) /* getSystemLocale */.t["EYn7/y"]);
-    tmp2 = jsx(require(7611) /* Form */.FormCTA, {
-      style: tmp.actionBarCTAContainer,
-      onPress() {
-          let obj = outer1_0(outer1_2[6]);
-          obj = { channel };
-          const result = obj.openCreateOrEditGuildEventModal(closure_0, obj);
-        },
-      iconSource: channel(8302)
-    });
+    obj[2] = channel(8326);
+    ({ iconStyle: obj2[3], iconContainerStyle: obj2[4] } = tmp);
+    obj[5] = isLive.isLive;
+    const intl = tmp2(1236).intl;
+    obj[6] = intl.string(tmp2(1236).t["60lJ0C"]);
+    const intl2 = tmp2(1236).intl;
+    obj[7] = intl2.string(tmp2(1236).t["EYn7/y"]);
+    tmp4 = jsx(tmp2(7634).FormCTA, { style: null, onPress: null, iconSource: null, iconStyle: null, iconContainerStyle: null, completed: null, title: null, subtitle: null });
   }
-  return tmp2;
+  return tmp4;
 };
 export const StartEventPrompt = function StartEventPrompt(event) {
   let channel;
@@ -63,31 +54,32 @@ export const StartEventPrompt = function StartEventPrompt(event) {
   event = event.event;
   const recurrenceId = event.recurrenceId;
   ({ channel, isLive } = event);
-  const tmp = _createForOfIteratorHelperLoose();
+  const tmp = createCacheKey();
   ({ name, scheduled_start_time } = event);
-  let obj = event(8242);
-  let tmp2 = null;
+  let obj = event(8266);
+  let tmp4 = null;
   if (obj.useManageResourcePermissions(channel).canManageGuildEvent(event)) {
-    obj = {
-      style: tmp.actionBarCTAContainer,
-      onPress() {
-          const result = event(outer1_2[6]).openStartGuildEventModal(event, recurrenceId);
-        },
-      iconSource: recurrenceId(8302),
-      iconStyle: tmp.iconStyle
+    obj = { style: null, onPress: null, iconSource: null, iconStyle: null, iconContainerStyle: null, completed: null, title: null, subtitle: null };
+    obj[0] = tmp.actionBarCTAContainer;
+    obj[1] = function onPress() {
+      const result = event(outer1_2[6]).openStartGuildEventModal(event, recurrenceId);
     };
+    obj[2] = recurrenceId(8326);
+    obj[3] = tmp.iconStyle;
     const items = [, ];
     ({ iconContainerStyle: arr[0], greenIcon: arr[1] } = tmp);
-    obj.iconContainerStyle = items;
-    obj.completed = isLive;
-    const intl = event(1212).intl;
-    obj = { eventName: name };
-    obj.title = intl.formatToPlainString(event(1212).t["1vGXqM"], obj);
-    const intl2 = event(1212).intl;
-    const obj1 = { startTime: event(3835).calendarFormat(recurrenceId(3747)(scheduled_start_time)) };
-    obj.subtitle = intl2.formatToPlainString(event(1212).t.PTebCR, obj1);
-    tmp2 = jsx(event(7611).FormCTA, { eventName: name });
-    const obj5 = event(3835);
+    obj[4] = items;
+    obj[5] = isLive;
+    const intl = tmp2(1236).intl;
+    obj = { eventName: null };
+    obj[0] = name;
+    obj[6] = intl.formatToPlainString(tmp2(1236).t["1vGXqM"], obj);
+    const intl2 = tmp2(1236).intl;
+    const obj1 = { startTime: null };
+    obj1[0] = tmp2(3859).calendarFormat(recurrenceId(3771)(scheduled_start_time));
+    obj[7] = intl2.formatToPlainString(tmp2(1236).t.PTebCR, obj1);
+    tmp4 = jsx(tmp2(7634).FormCTA, { eventName: null });
+    const tmp2Result = tmp2(3859);
   }
-  return tmp2;
+  return tmp4;
 };

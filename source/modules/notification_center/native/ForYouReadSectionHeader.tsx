@@ -1,31 +1,33 @@
-// Module ID: 15272
-// Function ID: 116127
+// Module ID: 15305
+// Function ID: 15306
 // Name: ForYouReadSectionHeader
-// Dependencies: [31, 27, 33, 4165, 689, 4161, 1212, 2]
+// Dependencies: [19, 17, 21, 4189, 712, 4185, 1236, 2]
 // Exports: ForYouReadSectionHeader
 
-// Module 15272 (ForYouReadSectionHeader)
-import "result";
+// Module 15305 (ForYouReadSectionHeader)
+import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
+let StyleSheet;
+let obj1;
 const require = arg1;
-const View = get_ActivityIndicator.View;
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { borderTopWidth: get_ActivityIndicator.StyleSheet.hairlineWidth, borderTopColor: require("_createForOfIteratorHelperLoose").colors.BORDER_SUBTLE, marginVertical: 8, paddingHorizontal: 24 };
-_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.textHeader = { color: require("_createForOfIteratorHelperLoose").colors.TEXT_SUBTLE, marginTop: 20 };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-const obj1 = { color: require("_createForOfIteratorHelperLoose").colors.TEXT_SUBTLE, marginTop: 20 };
+({ View: obj1, StyleSheet } = get_ActivityIndicator);
+createCacheKey = { container: null, textHeader: null };
+createCacheKey = { borderTopWidth: StyleSheet.hairlineWidth, borderTopColor: require("Themes").colors.BORDER_SUBTLE, marginVertical: 8, paddingHorizontal: 24 };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { color: require("Themes").colors.TEXT_SUBTLE, marginTop: 20 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+obj1 = { color: require("Themes").colors.TEXT_SUBTLE, marginTop: 20 };
 const result = require("jsxProd").fileFinishedImporting("modules/notification_center/native/ForYouReadSectionHeader.tsx");
 
 export const ForYouReadSectionHeader = function ForYouReadSectionHeader() {
-  const tmp = _createForOfIteratorHelperLoose();
-  let obj = { style: tmp.container };
-  obj = { style: tmp.textHeader, variant: "text-sm/semibold" };
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj.children = intl.string(require(1212) /* getSystemLocale */.t.hftC1K);
-  obj.children = jsx(require(4161) /* Text */.Text, { style: tmp.textHeader, variant: "text-sm/semibold" });
-  return <View style={tmp.textHeader} variant="text-sm/semibold" />;
+  const tmp = createCacheKey();
+  let obj = { style: tmp.container, children: null };
+  obj = { style: tmp.textHeader, variant: "text-sm/semibold", children: null };
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj[2] = intl.string(require(1236) /* getSystemLocale */.t.hftC1K);
+  obj[1] = jsx(require(4185) /* Text */.Text, { style: tmp.textHeader, variant: "text-sm/semibold", children: null });
+  return <closure_2 style={tmp.textHeader} variant="text-sm/semibold">{null}</closure_2>;
 };

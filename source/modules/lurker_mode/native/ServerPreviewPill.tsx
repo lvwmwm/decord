@@ -1,30 +1,30 @@
-// Module ID: 8435
-// Function ID: 67260
+// Module ID: 8459
+// Function ID: 8460
 // Name: ServerPreviewPill
-// Dependencies: [31, 27, 33, 4165, 689, 4161, 1212, 2]
+// Dependencies: [19, 17, 21, 4189, 712, 4185, 1236, 2]
 // Exports: default
 
-// Module 8435 (ServerPreviewPill)
-import "result";
+// Module 8459 (ServerPreviewPill)
+import "noop";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
 const require = arg1;
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { position: "absolute", top: 16, left: 16, paddingHorizontal: 10, paddingVertical: 4, borderRadius: require("_createForOfIteratorHelperLoose").radii.lg, backgroundColor: require("_createForOfIteratorHelperLoose").colors.WHITE };
-_createForOfIteratorHelperLoose.pill = _createForOfIteratorHelperLoose;
-const obj1 = { color: require("_createForOfIteratorHelperLoose").colors.BLACK, textTransform: "uppercase", letterSpacing: 0.5 };
-_createForOfIteratorHelperLoose.text = obj1;
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+createCacheKey = { pill: null, text: null };
+createCacheKey = { position: "absolute", top: 16, left: 16, paddingHorizontal: 10, paddingVertical: 4, borderRadius: require("Themes").radii.lg, backgroundColor: require("Themes").colors.WHITE };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { color: require("Themes").colors.BLACK, textTransform: "uppercase", letterSpacing: 0.5 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+const obj1 = { color: require("Themes").colors.BLACK, textTransform: "uppercase", letterSpacing: 0.5 };
 const result = require("jsxProd").fileFinishedImporting("modules/lurker_mode/native/ServerPreviewPill.tsx");
 
 export default function ServerPreviewPill() {
-  const tmp = _createForOfIteratorHelperLoose();
-  let obj = { style: tmp.pill, accessibilityRole: "text" };
-  obj = { variant: "text-xs/bold", style: tmp.text };
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj.children = intl.string(require(1212) /* getSystemLocale */.t.KNhFgD);
-  obj.children = jsx(require(4161) /* Text */.Text, { variant: "text-xs/bold", style: tmp.text });
-  return <View variant="text-xs/bold" style={tmp.text} />;
+  const tmp = createCacheKey();
+  let obj = { style: tmp.pill, accessibilityRole: "text", children: null };
+  obj = { variant: "text-xs/bold", style: tmp.text, children: null };
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj[2] = intl.string(require(1236) /* getSystemLocale */.t.KNhFgD);
+  obj[2] = jsx(require(4185) /* Text */.Text, { variant: "text-xs/bold", style: tmp.text, children: null });
+  return <View variant="text-xs/bold" style={tmp.text}>{null}</View>;
 };

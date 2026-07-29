@@ -1,32 +1,32 @@
-// Module ID: 8215
-// Function ID: 65730
+// Module ID: 8239
+// Function ID: 8240
 // Name: HeaderButton
-// Dependencies: [31, 33, 4582, 4161, 4165, 4579, 2]
+// Dependencies: [19, 21, 4604, 4185, 4189, 4601, 2]
 
-// Module 8215 (HeaderButton)
-import "result";
+// Module 8239 (HeaderButton)
+import "noop";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
 const require = arg1;
 class HeaderButton {
   constructor(arg0) {
-    tmp = c4();
+    tmp = lineHeight();
     obj = { accessibilityRole: "header" };
     merged = Object.assign(global);
-    obj["pillStyle"] = tmp.pill;
-    obj["size"] = "sm";
-    obj["textVariant"] = c3;
-    obj["variant"] = "secondary-overlay";
+    obj.pillStyle = tmp.pill;
+    obj.size = "sm";
+    obj.textVariant = c3;
+    obj.variant = "secondary-overlay";
     return jsx(require("CollapsingText").BaseTextButton, obj);
   }
 }
 let c3 = "heading-md/bold";
-const diff = require("getButtonPadding").SMALL_BUTTON_HEIGHT - 2 * require("getButtonPadding").BUTTON_BORDER_WIDTH;
+const diff = require("MINIMUM_HIT_AREA").SMALL_BUTTON_HEIGHT - 2 * require("MINIMUM_HIT_AREA").BUTTON_BORDER_WIDTH;
 const diff1 = diff - require("Text").TextStyleSheet["heading-md/bold"].lineHeight;
-_createForOfIteratorHelperLoose = { paddingVertical: diff1 / 2 };
-let closure_4 = _createForOfIteratorHelperLoose.createStyles({ pill: _createForOfIteratorHelperLoose });
+createCacheKey = { paddingVertical: diff1 / 2 };
+let closure_4 = createCacheKey.createStyles({ pill: createCacheKey });
 HeaderButton.Icon = require("CollapsingText").BaseTextButton.Icon;
-const result = require("getButtonPadding").fileFinishedImporting("design/components/experimental/Button/native/HeaderButton.native.tsx");
+const result = require("MINIMUM_HIT_AREA").fileFinishedImporting("design/components/experimental/Button/native/HeaderButton.native.tsx");
 
 export { HeaderButton };

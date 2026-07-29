@@ -1,12 +1,37 @@
-// Module ID: 1833
-// Function ID: 20049
+// Module ID: 1857
+// Function ID: 1858
 // Name: cssValueToNumber
-// Dependencies: [1834, 2, 1835]
+// Dependencies: [1858, 2, 1859]
 // Exports: getAcronym, truncateText, upperCaseFirstChar
 
-// Module 1833 (cssValueToNumber)
+// Module 1857 (cssValueToNumber)
 const re2 = /[\u0300-\u036f]/g;
 const re3 = /[\uD800-\uDBFF][\uDC00-\uDFFF]/;
+if (null == String.prototype.normalize) {
+  let fn = (arg0) => arg0;
+} else {
+  fn = (str) => {
+    const replaced = str.normalize("NFD").replace(closure_2, "");
+    return replaced.normalize("NFC");
+  };
+}
+if (null == String.prototype.normalize) {
+  let fullNormalize = (arg0) => arg0;
+} else {
+  fullNormalize = function fullNormalize(str) {
+    _require = _require(1858);
+    const dependencyMap = "";
+    const items = [...str.normalize("NFD")];
+    const item = items.forEach((arg0) => {
+      let tmp2 = table[arg0];
+      if (tmp2 == null) {
+        tmp2 = arg0;
+      }
+      closure_1 = closure_1 + tmp2;
+    });
+    return dependencyMap.normalize("NFD").toLocaleLowerCase();
+  };
+}
 const result = require("set").fileFinishedImporting("../discord_common/js/shared/utils/StringUtils.tsx");
 
 export const cssValueToNumber = require("set").cssValueToNumber;
@@ -21,13 +46,13 @@ export const upperCaseFirstChar = function upperCaseFirstChar(str) {
   return str;
 };
 export const truncateText = (arg0, arg1) => {
-  let concat = arg0;
   let str = arg2;
   if (arg2 === undefined) {
     str = "\u2026";
   }
+  let concat = arg0;
   let str2 = "";
-  if (null != concat) {
+  if (null != arg0) {
     str2 = "";
     if (null != arg1) {
       if (concat.length <= arg1) {
@@ -49,29 +74,14 @@ export const truncateText = (arg0, arg1) => {
   }
   return str2;
 };
-export const getAcronym = function getAcronym(str) {
-  str = "";
-  if (null != str) {
-    const str3 = str.replace(/'s /g, " ");
-    str = str.replace(/'s /g, " ").replace(/\w+/g, (arg0) => arg0[0]).replace(/\s/g, "");
-    const str4 = str.replace(/'s /g, " ").replace(/\w+/g, (arg0) => arg0[0]);
+export const getAcronym = function getAcronym(name) {
+  let str = "";
+  if (null != name) {
+    const str3 = name.replace(/'s /g, " ");
+    str = name.replace(/'s /g, " ").replace(/\w+/g, (arg0) => arg0[0]).replace(/\s/g, "");
+    const str4 = name.replace(/'s /g, " ").replace(/\w+/g, (arg0) => arg0[0]);
   }
   return str;
 };
-export const stripDiacritics = null == String.prototype.normalize ? ((arg0) => arg0) : ((str) => {
-  const replaced = str.normalize("NFD").replace(closure_2, "");
-  return replaced.normalize("NFC");
-});
-export const normalize = null == String.prototype.normalize ? ((arg0) => arg0) : (function fullNormalize(str) {
-  _require = _require(1834);
-  const dependencyMap = "";
-  const items = [...str.normalize("NFD")];
-  const item = items.forEach((arg0) => {
-    let tmp = arg0;
-    if (null != table[arg0]) {
-      tmp = tmp3;
-    }
-    closure_1 = closure_1 + tmp;
-  });
-  return dependencyMap.normalize("NFD").toLocaleLowerCase();
-});
+export const stripDiacritics = fn;
+export const normalize = fullNormalize;

@@ -1,28 +1,105 @@
-// Module ID: 16011
-// Function ID: 123564
+// Module ID: 16046
+// Function ID: 16047
 // Name: executeRunnable
-// Dependencies: [5, 16012, 3, 12705, 652, 25, 14, 20, 566, 2]
+// Dependencies: [5, 16047, 3, 12727, 675, 15, 9, 10, 589, 2]
 // Exports: default
 
-// Module 16011 (executeRunnable)
-import prepareIdentify from "prepareIdentify";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+// Module 16046 (executeRunnable)
+import createFastConnectSocket from "createFastConnectSocket";
+import linkFromAppsFlyer from "linkFromAppsFlyer";
 
-let closure_5;
+let c5;
 let closure_6;
 const require = arg1;
-({ init: closure_5, applicationReady: closure_6 } = _createForOfIteratorHelperLoose);
+({ init: c5, applicationReady: closure_6 } = linkFromAppsFlyer);
 const result = require("timestamp").fileFinishedImporting("modules/app_startup/native/executeRunnable.tsx");
 
 export default function executeRunnable(arg0, arg1) {
   let closure_0 = arg0;
   const importDefault = arg1;
-  let tmp2 = importDefault(3);
-  tmp2 = new tmp2(arg0);
-  tmp2.log("Loading the " + arg0 + " Discord runnable");
-  importAll(12705).setIsPaused(false);
-  const obj2 = importAll(12705);
-  // CreateGeneratorClosureLongIndex (0x67)
+  new importDefault(3)(arg0).log("Loading the " + arg0 + " Discord runnable");
+  let obj = new importDefault(3)(arg0);
+  importAll(12727).setIsPaused(false);
+  let obj2 = importAll(12727);
   const combined = "executeRunnable:" + arg0;
-  return importAll(652).withRequest(combined, callback(tmp));
+  return importAll(675).withRequest(combined, callback(function*() {
+    if (dependencyMap === 2) {
+      dependencyMap = 3;
+      HermesBuiltin.throwTypeError();
+    } else if (tmp3 === 3) {
+      if (arg0 === 1) {
+        throw arg1;
+      } else if (arg0 === 2) {
+        let obj = { value: null, done: true };
+        obj[0] = arg1;
+        return obj;
+      } else {
+        return { value: "HermesInternal", done: null };
+      }
+    } else {
+      try {
+        dependencyMap = 2;
+        if (0 === v0) {
+          if (arg0 === 1) {
+            dependencyMap = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            dependencyMap = 3;
+            obj = { value: null, done: true };
+            obj[0] = arg1;
+            return obj;
+          } else {
+            let closure_1 = tmp4;
+            let closure_0 = tmp4;
+            let obj4 = outer1_0(15);
+            obj4.identifyWebSocket();
+            const init = outer1_1(9).init;
+            v0 = 1;
+            dependencyMap = 1;
+            const obj1 = { value: null, done: false };
+            obj1[0] = init.measureAsync(outer1_5);
+            return obj1;
+          }
+        } else if (1 === tmp4) {
+          if (arg0 === 1) {
+            dependencyMap = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            dependencyMap = 3;
+            const obj2 = { value: null, done: true };
+            obj2[0] = arg1;
+            return obj2;
+          } else {
+            v0 = 2;
+            dependencyMap = 1;
+            const obj3 = { value: null, done: false };
+            obj3[0] = outer1_6.promise;
+            return obj3;
+          }
+        } else if (arg0 === 1) {
+          dependencyMap = 3;
+          throw arg1;
+        } else if (arg0 === 2) {
+          dependencyMap = 3;
+          obj4 = { value: null, done: true };
+          obj4[0] = arg1;
+          return obj4;
+        } else {
+          const _HermesInternal = HermesInternal;
+          v0(675).startBridgeTo("AppContainer:" + closure_0.toLowerCase());
+          const obj9 = v0(675);
+          dependencyMap = 3;
+          obj = { value: null, done: true };
+          obj[0] = outer1_1(10).time("\u{1F3C3}", "Run", () => {
+            const Emitter = tmp4(table[8]).Emitter;
+            return Emitter.batched(tmp4);
+          });
+          return obj;
+        }
+      } catch (tmp13) {
+        dependencyMap = tmp;
+        throw tmp13;
+      }
+    }
+  }));
 };

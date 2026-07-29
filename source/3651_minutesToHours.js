@@ -1,0 +1,22 @@
+// Module ID: 3651
+// Function ID: 3652
+// Name: minutesToHours
+// Dependencies: [3269, 3447]
+// Exports: default
+
+// Module 3651 (minutesToHours)
+import requiredArgs from "requiredArgs";
+
+if (!requiredArgs) {
+  const obj = { default: null };
+  obj[0] = requiredArgs;
+  let tmp3 = obj;
+} else {
+  tmp3 = requiredArgs;
+}
+
+export default function minutesToHours(arg0) {
+  tmp3.default(1, arguments);
+  return Math.floor(arg0 / require(3447) /* keys */.minutesInHour);
+};
+export default exports.default;

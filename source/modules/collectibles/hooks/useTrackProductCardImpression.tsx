@@ -1,21 +1,21 @@
-// Module ID: 11892
-// Function ID: 92005
+// Module ID: 11916
+// Function ID: 11917
 // Name: useTrackProductCardImpression
-// Dependencies: [31, 5780, 653, 8639, 566, 8640, 3811, 5792, 675, 2]
+// Dependencies: [19, 5798, 676, 8663, 589, 8664, 3835, 5810, 698, 2]
 // Exports: useTrackProductCardImpression
 
-// Module 11892 (useTrackProductCardImpression)
-import result from "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 11916 (useTrackProductCardImpression)
+import noop from "noop";
+import updateCategoriesAndProducts from "updateCategoriesAndProducts";
 import { AnalyticEvents } from "ME";
 
 const require = arg1;
 const result = require("ME").fileFinishedImporting("modules/collectibles/hooks/useTrackProductCardImpression.tsx");
 
 export const useTrackProductCardImpression = function useTrackProductCardImpression(categoryStoreListingId, mobile_home, hero_block) {
-  let str = hero_block;
   const _require = categoryStoreListingId;
   const importDefault = mobile_home;
+  let str = hero_block;
   if (hero_block === undefined) {
     str = "product";
   }
@@ -35,27 +35,27 @@ export const useTrackProductCardImpression = function useTrackProductCardImpress
   c5 = canUseShopDiscountsResult;
   closure_6 = collectiblesAnalyticsContext.useRef(null);
   let sessionId;
-  if (null != collectiblesAnalyticsContext) {
+  if (collectiblesAnalyticsContext != null) {
     sessionId = collectiblesAnalyticsContext.sessionId;
   }
   const items1 = [sessionId, , , , , , , , , ];
   let categoryPosition;
-  if (null != collectiblesAnalyticsContext) {
+  if (collectiblesAnalyticsContext != null) {
     categoryPosition = collectiblesAnalyticsContext.categoryPosition;
   }
   items1[1] = categoryPosition;
   let pageCategory;
-  if (null != collectiblesAnalyticsContext) {
+  if (collectiblesAnalyticsContext != null) {
     pageCategory = collectiblesAnalyticsContext.pageCategory;
   }
   items1[2] = pageCategory;
   let pageSection;
-  if (null != collectiblesAnalyticsContext) {
+  if (collectiblesAnalyticsContext != null) {
     pageSection = collectiblesAnalyticsContext.pageSection;
   }
   items1[3] = pageSection;
   let tilePosition;
-  if (null != collectiblesAnalyticsContext) {
+  if (collectiblesAnalyticsContext != null) {
     tilePosition = collectiblesAnalyticsContext.tilePosition;
   }
   items1[4] = tilePosition;
@@ -68,79 +68,77 @@ export const useTrackProductCardImpression = function useTrackProductCardImpress
     let priceForCollectiblesProduct = null;
     if (null != stateFromStores) {
       let obj = categoryStoreListingId(str[7]);
-      priceForCollectiblesProduct = obj.getPriceForCollectiblesProduct(stateFromStores, _undefined, true);
+      priceForCollectiblesProduct = obj.getPriceForCollectiblesProduct(tmp, _undefined, true);
     }
     let strikeThroughPriceAmountForCollectiblesProduct;
     if (null != stateFromStores) {
-      strikeThroughPriceAmountForCollectiblesProduct = categoryStoreListingId(str[7]).getStrikeThroughPriceAmountForCollectiblesProduct(stateFromStores, _undefined, true);
+      strikeThroughPriceAmountForCollectiblesProduct = categoryStoreListingId(str[7]).getStrikeThroughPriceAmountForCollectiblesProduct(tmp, _undefined, true);
       const obj2 = categoryStoreListingId(str[7]);
     }
-    obj = {};
     let sessionId;
-    if (null != collectiblesAnalyticsContext) {
-      sessionId = collectiblesAnalyticsContext.sessionId;
+    if (collectiblesAnalyticsContext != null) {
+      sessionId = tmp10.sessionId;
     }
-    obj.collectibles_shop_session_id = sessionId;
-    obj.sku_id = categoryStoreListingId;
+    obj = { collectibles_shop_session_id: sessionId, sku_id: categoryStoreListingId, display_price: null, display_price_currency: null, display_price_strikethrough: null, position: null, page_type: null, page_category: null, page_section: null, type: null, category_position: null };
     let amount;
-    if (null != priceForCollectiblesProduct) {
+    if (priceForCollectiblesProduct != null) {
       amount = priceForCollectiblesProduct.amount;
     }
-    obj.display_price = amount;
+    obj[2] = amount;
     str = undefined;
-    if (null != priceForCollectiblesProduct) {
+    if (priceForCollectiblesProduct != null) {
       str = priceForCollectiblesProduct.currency;
       str = str.toString();
     }
-    obj.display_price_currency = str;
-    obj.display_price_strikethrough = strikeThroughPriceAmountForCollectiblesProduct;
+    obj[3] = str;
+    obj[4] = strikeThroughPriceAmountForCollectiblesProduct;
     let tilePosition;
-    if (null != collectiblesAnalyticsContext) {
-      tilePosition = collectiblesAnalyticsContext.tilePosition;
+    if (collectiblesAnalyticsContext != null) {
+      tilePosition = tmp10.tilePosition;
     }
-    obj.position = tilePosition;
-    obj.page_type = mobile_home;
+    obj[5] = tilePosition;
+    obj[6] = mobile_home;
     let pageCategory;
-    if (null != collectiblesAnalyticsContext) {
-      pageCategory = collectiblesAnalyticsContext.pageCategory;
+    if (collectiblesAnalyticsContext != null) {
+      pageCategory = tmp10.pageCategory;
     }
-    obj.page_category = pageCategory;
+    obj[7] = pageCategory;
     let pageSection;
-    if (null != collectiblesAnalyticsContext) {
-      pageSection = collectiblesAnalyticsContext.pageSection;
+    if (collectiblesAnalyticsContext != null) {
+      pageSection = tmp10.pageSection;
     }
-    obj.page_section = pageSection;
-    obj.type = str;
+    obj[8] = pageSection;
+    obj[9] = str;
     let categoryPosition;
-    if (null != collectiblesAnalyticsContext) {
-      categoryPosition = collectiblesAnalyticsContext.categoryPosition;
+    if (collectiblesAnalyticsContext != null) {
+      categoryPosition = tmp10.categoryPosition;
     }
-    obj.category_position = categoryPosition;
+    obj[10] = categoryPosition;
     mobile_home(str[8]).track(_undefined.COLLECTIBLES_TILE_IMPRESSION, obj);
   }, items1);
   const items2 = [callback];
   const items3 = [categoryStoreListingId];
-  const handleCardVisibilityChange = collectiblesAnalyticsContext.useCallback((arg0) => {
+  const handleCardVisibilityChange = obj5.useCallback((arg0) => {
     const current = ref.current;
     if (arg0) {
       if (null === current) {
         const _setTimeout = setTimeout;
-        ref.current = setTimeout(() => {
-          outer1_7();
-          outer1_6.current = null;
+        tmp.current = setTimeout(() => {
+          callback();
+          closure_6.current = null;
         }, 1000);
       }
     } else if (null !== current) {
       const _clearTimeout = clearTimeout;
-      clearTimeout(ref.current);
-      ref.current = null;
+      clearTimeout(tmp.current);
+      tmp.current = null;
     }
   }, items2);
-  const effect = collectiblesAnalyticsContext.useEffect(() => () => {
-    if (null !== outer1_6.current) {
+  const effect = obj5.useEffect(() => () => {
+    if (null !== ref.current) {
       const _clearTimeout = clearTimeout;
-      clearTimeout(outer1_6.current);
-      outer1_6.current = null;
+      clearTimeout(tmp.current);
+      tmp.current = null;
     }
   }, items3);
   return { handleCardVisibilityChange };

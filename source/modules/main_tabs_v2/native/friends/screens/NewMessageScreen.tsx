@@ -1,125 +1,47 @@
-// Module ID: 15550
-// Function ID: 119356
-// Name: _createForOfIteratorHelperLoose
-// Dependencies: [5, 57, 31, 27, 1352, 1348, 3802, 5636, 8789, 653, 33, 4026, 4161, 4165, 689, 477, 4175, 5639, 686, 566, 675, 15551, 15552, 4166, 9094, 1212, 10389, 15553, 5497, 5517, 5193, 4594, 9103, 1198, 3865, 10202, 10201, 4104, 4103, 9892, 4578, 11441, 2]
+// Module ID: 15584
+// Function ID: 15585
+// Name: isPrivateChannelMatch
+// Dependencies: [5, 32, 19, 17, 1376, 1372, 3826, 5654, 8813, 676, 21, 4050, 4185, 4189, 712, 500, 4199, 5657, 709, 589, 698, 15585, 15586, 4190, 9118, 1236, 10413, 15587, 5515, 5535, 5215, 4616, 9127, 1222, 3889, 10223, 10222, 4128, 4127, 9914, 4600, 11465, 2]
 // Exports: default
 
-// Module 15550 (_createForOfIteratorHelperLoose)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import _slicedToArray from "_slicedToArray";
-import useMountLayoutEffect from "useMountLayoutEffect";
-import { View } from "transitionGroupGetItemKey";
-import { PrivateChannelRecord } from "_callSuper";
-import closure_8 from "_isNativeReflectConstruct";
-import closure_9 from "_isNativeReflectConstruct";
-import closure_10 from "_isNativeReflectConstruct";
+// Module 15584 (isPrivateChannelMatch)
+import ensureGuildLoaded from "ensureGuildLoaded";
+import JoinCallButton from "JoinCallButton";
+import initialize from "initialize";
+import { View } from "FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID";
+import { PrivateChannelRecord } from "createChannelRecord";
+import closure_8 from "ensureGuildLoaded";
+import upsertRelationship from "upsertRelationship";
+import makeSortedChannel from "makeSortedChannel";
 import { UserRowModes } from "UserRowModes";
 import ME from "ME";
-import jsxProd from "shouldNavigate";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import jsxProd from "useOnMessageSend";
+import createCacheKey from "createCacheKey";
 import set from "set";
-import set from "result";
+import set from "noop";
 
 let closure_12;
-let closure_13;
 let closure_14;
 let closure_15;
 let closure_16;
 let closure_17;
 let closure_18;
+let map1;
 const require = arg1;
-function _createForOfIteratorHelperLoose(iterable) {
-  let closure_0 = iterable;
-  iterable = "undefined" !== typeof Symbol;
-  if (iterable) {
-    const _Symbol = Symbol;
-    iterable = iterable[Symbol.iterator];
-  }
-  if (!iterable) {
-    iterable = iterable[Symbol.iterator];
-  }
-  if (iterable) {
-    const iter = iterable.call(iterable);
-    const next = iter.next;
-    return next.bind(iter);
-  } else {
-    const _Array = Array;
-    let tmp = iterable;
-    if (!Array.isArray(iterable)) {
-      let tmp2;
-      if (iterable) {
-        if ("string" === typeof iterable) {
-          tmp2 = _arrayLikeToArray(iterable, undefined);
-        } else {
-          const toString = {}.toString;
-          const substr = toString.call(iterable).slice(8, -1);
-          let name = substr;
-          if (tmp3) {
-            name = iterable.constructor.name;
-          }
-          if ("Map" !== name) {
-            if ("Set" !== name) {
-              if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(iterable, undefined);
-              } else {
-                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
-              }
-            }
-            tmp2 = arr;
-          }
-          const _Array2 = Array;
-          arr = Array.from(iterable);
-          const callResult = toString.call(iterable);
-          tmp3 = "Object" === substr && iterable.constructor;
-        }
-      }
-      tmp = tmp2;
-      if (!tmp2) {
-        const _TypeError = TypeError;
-        const typeError = new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
-        throw typeError;
-      }
-    }
-    if (tmp) {
-      closure_0 = tmp;
-    }
-    let c1 = 0;
-    return () => {
-      if (closure_1 >= length.length) {
-        let obj = { done: true };
-      } else {
-        obj = { done: false };
-        closure_1 = tmp3 + 1;
-        obj.value = length[+closure_1];
-      }
-      return obj;
-    };
-  }
-}
-function _arrayLikeToArray(arg0, arg1) {
-  let length;
-  if (tmp) {
-    length = arg0.length;
-  }
-  const ArrayResult = Array(length);
-  for (let num = 0; num < length; num = num + 1) {
-    ArrayResult[num] = arg0[num];
-  }
-  return ArrayResult;
-}
 function isPrivateChannelMatch(arr, recipients) {
   recipients = recipients.recipients;
   if (recipients.length !== arr.length) {
     return false;
   } else {
-    const tmp2 = _createForOfIteratorHelperLoose(recipients);
-    let iter = tmp2();
-    if (!iter.done) {
-      while (arr.includes(iter.value)) {
-        let iter2 = tmp2();
-        iter = iter2;
+    for (const item10009 of recipients) {
+      if (arg0.includes(item10009)) {
+        continue;
+      } else {
+        let tmp3 = obj;
+        obj.return();
+        let flag = false;
+        return false;
       }
-      return false;
     }
     return true;
   }
@@ -128,60 +50,294 @@ function findLocalMatchingPrivateChannelId(arg0) {
   let closure_0 = arg0;
   if (1 === arg0.length) {
     dMFromUserId = dMFromUserId.getDMFromUserId(arg0[0]);
-    let tmp8 = null;
-    if (null != dMFromUserId) {
-      tmp8 = dMFromUserId;
+    if (dMFromUserId == null) {
+      dMFromUserId = null;
     }
-    return tmp8;
+    return dMFromUserId;
   } else {
-    let num2 = 0;
     const items = [, ];
     [arr[0], arr[1]] = callback2(sortedChannels.getSortedChannels(), 2);
-    if (0 < items.length) {
-      const found = items[num2].find((channelId) => {
+    const iter = items[Symbol.iterator]();
+    const tmp3 = callback2(sortedChannels.getSortedChannels(), 2);
+    while (iter !== undefined) {
+      let found = nextResult.find((channelId) => {
         const channel = outer1_8.getChannel(channelId.channelId);
         const tmp = null == channel || !channel.isPrivate();
         let tmp2 = !tmp;
         if (!tmp) {
-          tmp2 = outer1_24(closure_0, channel);
+          tmp2 = outer1_21(closure_0, channel);
         }
         return tmp2;
       });
-      while (null == found) {
-        num2 = num2 + 1;
+      let tmp9 = found;
+      if (null != found) {
+        let tmp10 = iter;
+        iter.return();
+        return found.channelId;
       }
-      return found.channelId;
     }
     return null;
   }
 }
 function _findMatchingPrivateChannelId() {
-  // CreateGeneratorClosureLongIndex (0x67)
-  const obj = callback(tmp);
-  return obj(...arguments);
+  const self = this;
+  const tmp = callback((arg0) => {
+    let closure_0 = arg0;
+    let c2 = 0;
+    let c1 = 0;
+    let c4 = 0;
+    return (function*(arg0) {
+      if (v0 === 2) {
+        v0 = 3;
+        HermesBuiltin.throwTypeError();
+      } else if (tmp5 === 3) {
+        if (arg0 === 1) {
+          throw arg1;
+        } else if (arg0 === 2) {
+          let obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
+        } else {
+          return { value: "HermesInternal", done: null };
+        }
+      } else {
+        try {
+          v0 = 2;
+          if (0 === table) {
+            if (arg0 === 1) {
+              v0 = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              v0 = 3;
+              obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            } else {
+              const tmp20 = outer1_22(closure_0);
+              if (null != tmp20) {
+                v0 = 3;
+                const obj1 = { value: null, done: true };
+                obj1[0] = tmp20;
+                return obj1;
+              } else if (arr.length > 1) {
+                v0 = 3;
+                return { value: null, done: true };
+              } else {
+                let c4 = 1;
+                let obj2 = v0(table[16]);
+                table = 2;
+                v0 = 1;
+                obj2 = { value: null, done: false };
+                obj2[0] = obj2.getDMChannel(arr[0]);
+                return obj2;
+              }
+            }
+          } else if (1 === tmp6) {
+            c4 = 0;
+            v0 = 3;
+            return { value: null, done: true };
+          } else if (arg0 === 1) {
+            v0 = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            c4 = 0;
+            v0 = 3;
+            const obj3 = { value: null, done: true };
+            obj3[0] = arg1;
+            return obj3;
+          } else {
+            c4 = 0;
+            v0 = 3;
+            obj = { value: null, done: true };
+            obj[0] = arg1;
+            return obj;
+          }
+        } catch (tmp10) {
+          let ensureGuildLoaded = tmp10;
+          if (tmp3 === c4) {
+            v0 = tmp2;
+            throw tmp10;
+          } else {
+            table = tmp;
+          }
+        }
+      }
+    })();
+  });
+  const _findMatchingPrivateChannelId = tmp;
+  const apply = tmp.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
 }
-function useChannelForParticipants(first) {
-  const _require = first;
-  let tmp = callback2(React.useState(null), 2);
-  first = tmp[0];
-  const dependencyMap = tmp[1];
-  const items = [first];
+function Header(title) {
+  const numInGroup = title.numInGroup;
+  const items = [numInGroup];
+  const memo = React.useMemo(() => outer1_1(outer1_2[22])() - (numInGroup + 1), items);
+  let obj = numInGroup(4050);
+  const fn = function s() {
+    let obj = numInGroup(outer1_2[23]);
+    let num = 0;
+    if (numInGroup >= 5) {
+      num = 1;
+    }
+    obj = { opacity: obj.withTiming(num), maxHeight: null };
+    let num2 = 0;
+    if (numInGroup >= 5) {
+      num2 = 20;
+    }
+    obj[1] = numInGroup(outer1_2[23]).withTiming(num2);
+    return obj;
+  };
+  obj = { numInGroup, NUM_IN_GROUP_THRESHOLD: 5, withTiming: numInGroup(4190).withTiming };
+  fn.__closure = obj;
+  fn.__workletHash = 12426216833792;
+  fn.__initData = closure_24;
+  obj = { style: callback5().header, children: null };
+  const animatedStyle = obj.useAnimatedStyle(fn);
+  const items1 = [callback3(numInGroup(9118).GenericHeaderTitle, { title: title.title }), ];
+  const obj1 = { style: animatedStyle, variant: "text-xs/medium", color: null, children: null };
+  let str = "text-muted";
+  if (0 === memo) {
+    str = "text-feedback-critical";
+  }
+  obj1[2] = str;
+  const intl = tmp3(1236).intl;
+  if (0 === memo) {
+    let stringResult = intl.string(tmp3(1236).t.yiQW1O);
+  } else {
+    const obj2 = { number: null };
+    const _HermesInternal = HermesInternal;
+    obj2[0] = "" + memo;
+    stringResult = intl.formatToPlainString(tmp3(1236).t.HrSDPF, obj2);
+  }
+  obj1[3] = stringResult;
+  items1[1] = callback3(closure_19, obj1);
+  obj[1] = items1;
+  return closure_18(View, obj);
+}
+function ChatPreview(channelId) {
+  channelId = channelId.channelId;
+  const navigateToChannel = channelId.navigateToChannel;
+  const tmp = callback5();
+  const items = [channelId];
   const effect = React.useEffect(() => {
+    if (null != channelId) {
+      navigateToChannel(outer1_2[16]).preload(outer1_15, tmp);
+      const obj = navigateToChannel(outer1_2[16]);
+    }
+  }, items);
+  const items1 = [channelId, navigateToChannel];
+  const callback = React.useCallback(() => {
+    let obj = navigateToChannel(outer1_2[20]);
+    obj = { channel_id: channelId };
+    obj.track(outer1_12.MESSAGE_COMPOSER_TRANSITIONED, obj);
+    navigateToChannel(channelId);
+  }, items1);
+  navigateToChannel(15585)(callback);
+  let obj = { style: tmp.background, children: null };
+  obj = { style: tmp.container, children: null };
+  obj = { guildId: closure_15, channelId, chatInputRef: React.useRef(null), HACK_fixModalInteraction: true, alwaysRespectKeyboard: true, screenIndex: "new-message", secondaryTextFieldRef: channelId.tagListInputRef };
+  const items2 = [callback3(navigateToChannel(10413), obj), ];
+  const obj1 = { portal: null };
+  const ref = React.useRef(null);
+  obj1[0] = channelId(500).isAndroid();
+  items2[1] = callback3(channelId(15587).PortalKeyboardRenderer, obj1);
+  obj[1] = items2;
+  obj[1] = callback4(View, obj);
+  return callback3(View, obj);
+}
+({ AnalyticEvents: closure_12, AnalyticsSections: map1, ChannelTypes: closure_14, ME: closure_15, Routes: closure_16 } = ME);
+({ jsx: closure_17, jsxs: closure_18 } = jsxProd);
+let closure_19 = require("module_4050").createAnimatedComponent(require("Text").Text);
+let obj = { container: { flex: 1 }, background: null, header: null, emptyContainer: null, emptyKeyboardView: null, addFriendsButtonContainer: null };
+obj = { flex: 1, backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW };
+obj[1] = obj;
+let str = "center";
+if (set.isAndroid()) {
+  str = "flex-start";
+}
+obj[2] = { flexDirection: "column", alignItems: str };
+obj[3] = { flexGrow: 1, justifyContent: "center" };
+obj[4] = { flexGrow: 1 };
+createCacheKey = { marginBottom: require("Themes").space.PX_16, flexDirection: "row", justifyContent: "center", width: "100%" };
+obj[5] = createCacheKey;
+let closure_20 = createCacheKey.createStyles(obj);
+let closure_24 = { code: "function NewMessageScreenTsx1(){const{numInGroup,NUM_IN_GROUP_THRESHOLD,withTiming}=this.__closure;const show=numInGroup>=NUM_IN_GROUP_THRESHOLD;return{opacity:withTiming(show?1:0),maxHeight:withTiming(show?20:0)};}" };
+const result = set.fileFinishedImporting("modules/main_tabs_v2/native/friends/screens/NewMessageScreen.tsx");
+
+export default function NewMessageScreen(navigation) {
+  let FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID;
+  let c6;
+  let c7;
+  let defaultSelectedUserId;
+  let tmp10;
+  let tmp8;
+  navigation = navigation.navigation;
+  let _require = navigation;
+  ({ defaultSelectedUserId, sourcePage: FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID } = navigation.route.params);
+  let dependencyMap;
+  let stateFromStores;
+  let first;
+  let React;
+  c6 = undefined;
+  c7 = undefined;
+  FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID = undefined;
+  let callback;
+  let c10;
+  let stateFromStores1;
+  let tmp = callback5();
+  dependencyMap = tmp;
+  const insets = FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID(5215)({ includeKeyboardHeight: true }).insets;
+  stateFromStores = insets;
+  FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID(4616)(() => {
+    let obj = FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID(lib[20]);
+    obj = { source_page: FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID };
+    obj.track(outer1_12.MESSAGE_COMPOSER_OPENED, obj);
+  });
+  let obj = React;
+  if (null != defaultSelectedUserId) {
+    let items = [defaultSelectedUserId];
+    let items1 = items;
+  } else {
+    items1 = [];
+  }
+  const tmp6 = first(React.useState(items1), 2);
+  first = tmp6[0];
+  React = tmp6[1];
+  let tmp2 = FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID;
+  let tmp4 = FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID(5515);
+  [tmp8, c6] = first(obj.useState(false), 2);
+  let tmp7 = first(obj.useState(false), 2);
+  [tmp10, c7] = first(obj.useState(false), 2);
+  _require = first;
+  FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID = undefined;
+  dependencyMap = undefined;
+  stateFromStores = undefined;
+  const tmp11 = first(obj.useState(null), 2);
+  FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID = tmp11[0];
+  dependencyMap = tmp11[1];
+  const items2 = [first];
+  const effect = obj.useEffect(() => {
     function handleChannelCreate(channel) {
       channel = channel.channel;
-      if (channel.id !== handleChannelCreate(5639).FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID) {
+      if (channel.id !== handleChannelCreate(outer1_2[17]).FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID) {
         if (channel.isPrivate()) {
-          if (outer2_24(handleChannelCreate, channel)) {
-            outer1_2(outer2_25(handleChannelCreate));
+          if (outer1_21(handleChannelCreate, channel)) {
+            dependencyMap(outer1_22(tmp2));
           }
+          tmp2 = handleChannelCreate;
         }
       }
     }
     function handleChannelDelete(arg0) {
       let closure_0 = arg0;
-      outer1_2((arg0) => {
+      dependencyMap((arg0) => {
         let tmp = arg0;
-        if (arg0 !== lib(table[17]).FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID) {
+        if (arg0 !== lib(outer1_2[17]).FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID) {
           let tmp3 = null;
           if (arg0 !== lib.channel.id) {
             tmp3 = arg0;
@@ -191,357 +347,399 @@ function useChannelForParticipants(first) {
         return tmp;
       });
     }
-    const subscription = first(686).subscribe("CHANNEL_CREATE", handleChannelCreate);
-    let obj = first(686);
-    const subscription1 = first(686).subscribe("CHANNEL_DELETE", handleChannelDelete);
+    const subscription = FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID(lib[18]).subscribe("CHANNEL_CREATE", handleChannelCreate);
+    let obj = FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID(lib[18]);
+    const subscription1 = FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID(lib[18]).subscribe("CHANNEL_DELETE", handleChannelDelete);
     return () => {
-      first(686).unsubscribe("CHANNEL_CREATE", handleChannelCreate);
-      const obj = first(686);
-      first(686).unsubscribe("CHANNEL_DELETE", handleChannelDelete);
+      FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID(709).unsubscribe("CHANNEL_CREATE", handleChannelCreate);
+      const obj = FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID(709);
+      FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID(709).unsubscribe("CHANNEL_DELETE", handleChannelDelete);
     };
-  }, items);
-  const items1 = [closure_8];
-  const stateFromStores = _require(566).useStateFromStores(items1, () => outer1_8.getChannel(first));
-  const items2 = [first, stateFromStores];
-  const effect1 = React.useEffect(() => {
+  }, items2);
+  let obj1 = _require(589);
+  const items3 = [FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID];
+  stateFromStores = obj1.useStateFromStores(items3, () => FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID.getChannel(FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID));
+  const items4 = [first, stateFromStores];
+  const effect1 = obj.useEffect(() => {
     function _doAction() {
-      // CreateGeneratorClosureLongIndex (0x67)
-      const obj = stateFromStores(tmp);
-      return obj(...arguments);
+      let self = this;
+      const tmp = stateFromStores(function*() {
+        if (c3 === 2) {
+          c3 = 3;
+          HermesBuiltin.throwTypeError();
+        } else if (tmp5 === 3) {
+          if (arg0 === 1) {
+            throw arg1;
+          } else if (arg0 === 2) {
+            let obj = { value: null, done: true };
+            obj[0] = arg1;
+            return obj;
+          } else {
+            return { value: "HermesInternal", done: null };
+          }
+        } else {
+          try {
+            c3 = 2;
+            if (0 === c2) {
+              if (arg0 === 1) {
+                c3 = 3;
+                throw arg1;
+              } else if (arg0 === 2) {
+                c3 = 3;
+                obj = { value: null, done: true };
+                obj[0] = arg1;
+                return obj;
+              } else {
+                let closure_1 = tmp2;
+                let callback = tmp3;
+                callback = undefined;
+                c2 = 1;
+                c3 = 1;
+                const obj1 = { value: null, done: false };
+                obj1[0] = (function findMatchingPrivateChannelId(outer1_0) {
+                  const self = this;
+                  const apply = closure_23.apply;
+                  if (typeof apply === "unknown") {
+                    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+                  } else {
+                    applyArgumentsResult = apply(self, arguments);
+                  }
+                  return applyArgumentsResult;
+                })(outer1_0);
+                return obj1;
+              }
+            } else if (arg0 === 1) {
+              c3 = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              c3 = 3;
+              obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            } else {
+              callback = arg1;
+              if (null == callback) {
+                let FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID = callback(outer2_2[17]).FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID;
+              } else {
+                FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID = callback;
+              }
+              c2(FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID);
+              c3 = 3;
+              const tmp9 = c2;
+            }
+          } catch (tmp18) {
+            c3 = tmp;
+            throw tmp18;
+          }
+        }
+      });
+      const _doAction = tmp;
+      let apply = tmp.apply;
+      if (typeof apply === "unknown") {
+        let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+      } else {
+        applyArgumentsResult = apply(self, arguments);
+      }
+      return applyArgumentsResult;
     }
     if (0 !== _doAction.length) {
-      let isPrivateResult = null != stateFromStores;
-      if (isPrivateResult) {
-        isPrivateResult = stateFromStores.isPrivate();
+      let isPrivateResult;
+      if (stateFromStores != null) {
+        isPrivateResult = obj.isPrivate();
       }
       if (isPrivateResult) {
-        isPrivateResult = outer1_24(_doAction, stateFromStores);
+        isPrivateResult = outer1_21(tmp, obj);
       }
       if (!isPrivateResult) {
         (function doAction() {
-          return _doAction(...arguments);
+          const self = this;
+          const apply = _doAction.apply;
+          if (typeof apply === "unknown") {
+            let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+          } else {
+            applyArgumentsResult = apply(self, arguments);
+          }
+          return applyArgumentsResult;
         })();
       }
     } else {
-      dependencyMap(null);
+      lib(null);
     }
-  }, items2);
-  const items3 = [first, first];
-  const effect2 = React.useEffect(() => {
-    if (null == first) {
-      if (null == outer1_25(lib)) {
-        let obj = first(686);
-        obj = { type: "CHANNEL_CREATE" };
-        let tmp8 = outer1_7;
-        obj = { id: lib(5639).FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID };
-        if (1 === lib.length) {
+  }, items4);
+  const items5 = [first, FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID];
+  const effect2 = obj.useEffect(() => {
+    if (null == FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID) {
+      if (null == outer1_22(navigation)) {
+        let obj = FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID(lib[18]);
+        obj = { id: null, type: null, name: "", guild_id: null, recipients: null };
+        let tmp7 = c7;
+        obj[0] = navigation(lib[17]).FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID;
+        if (1 === arr.length) {
           let GROUP_DM = outer1_14.DM;
         } else {
           GROUP_DM = outer1_14.GROUP_DM;
         }
-        obj.type = GROUP_DM;
-        obj.name = "";
-        obj.guild_id = null;
-        obj.recipients = lib;
-        const prototype = tmp8.prototype;
-        tmp8 = new tmp8(obj);
-        obj.channel = tmp8;
+        obj = { type: "CHANNEL_CREATE", channel: null };
+        obj[1] = GROUP_DM;
+        obj[4] = arr;
+        tmp7 = new tmp7(obj);
+        obj[1] = tmp7;
         obj.dispatch(obj);
         return () => {
-          let obj = first(686);
-          obj = { type: "CHANNEL_DELETE" };
-          obj = { id: callback(5639).FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID, guild_id: undefined, parent_id: undefined };
-          obj.channel = obj;
+          let obj = callback2(709);
+          obj = { type: "CHANNEL_DELETE", channel: null };
+          obj = { id: callback(5657).FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID, guild_id: "Array", parent_id: "isArray" };
+          obj[1] = obj;
           obj.dispatch(obj);
         };
       }
     }
-  }, items3);
-  const items4 = [stateFromStores];
-  const effect3 = React.useEffect(() => {
-    let tmp = null != stateFromStores;
-    if (tmp) {
-      tmp = stateFromStores.id === lib(5639).FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID;
+  }, items5);
+  const items6 = [stateFromStores];
+  const effect3 = obj.useEffect(() => {
+    let tmp2 = null != stateFromStores;
+    if (tmp2) {
+      tmp2 = tmp.id === navigation(lib[17]).FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID;
     }
-    if (tmp) {
-      let obj = first(686);
-      obj = { type: "LOAD_MESSAGES_SUCCESS", channelId: stateFromStores.id, messages: [], isBefore: false, isAfter: false, hasMoreBefore: false, hasMoreAfter: false, limit: 0, jump: undefined, isStale: false };
+    if (tmp2) {
+      let obj = FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID(lib[18]);
+      obj = { type: "LOAD_MESSAGES_SUCCESS", channelId: null, messages: null, isBefore: false, isAfter: false, hasMoreBefore: false, hasMoreAfter: false, limit: 0, jump: "ct", isStale: "custom" };
+      obj[1] = tmp.id;
+      obj[2] = [];
       obj.dispatch(obj);
     }
-  }, items4);
-  return first;
-}
-function Header(title) {
-  const numInGroup = title.numInGroup;
-  const items = [numInGroup];
-  const memo = React.useMemo(() => outer1_1(outer1_2[22])() - (numInGroup + 1), items);
-  let obj = numInGroup(4026);
-  const fn = function a() {
-    const obj = {};
-    let num = 0;
-    if (numInGroup >= 5) {
-      num = 1;
-    }
-    obj.opacity = numInGroup(outer1_2[23]).withTiming(num);
-    const obj2 = numInGroup(outer1_2[23]);
-    let num2 = 0;
-    if (numInGroup >= 5) {
-      num2 = 20;
-    }
-    obj.maxHeight = numInGroup(outer1_2[23]).withTiming(num2);
-    return obj;
-  };
-  obj = { numInGroup, NUM_IN_GROUP_THRESHOLD: 5, withTiming: numInGroup(4166).withTiming };
-  fn.__closure = obj;
-  fn.__workletHash = 12426216833792;
-  fn.__initData = closure_21;
-  obj = { style: callback5().header };
-  const animatedStyle = obj.useAnimatedStyle(fn);
-  const items1 = [callback3(numInGroup(9094).GenericHeaderTitle, { title: title.title }), ];
-  const obj1 = { style: animatedStyle, variant: "text-xs/medium" };
-  let str = "text-muted";
-  if (0 === memo) {
-    str = "text-feedback-critical";
-  }
-  obj1.color = str;
-  const intl = numInGroup(1212).intl;
-  if (0 === memo) {
-    let stringResult = intl.string(tmp9(1212).t.yiQW1O);
-  } else {
-    let obj2 = {};
-    const _HermesInternal = HermesInternal;
-    obj2.number = "" + memo;
-    stringResult = intl.formatToPlainString(tmp9(1212).t.HrSDPF, obj2);
-  }
-  obj1.children = stringResult;
-  items1[1] = callback3(closure_19, obj1);
-  obj.children = items1;
-  return closure_18(View, obj);
-}
-function ChatPreview(channelId) {
-  let navigateToChannel;
-  let tagListInputRef;
-  channelId = channelId.channelId;
-  ({ navigateToChannel, tagListInputRef } = channelId);
-  const tmp = callback5();
-  let items = [channelId];
-  const effect = React.useEffect(() => {
-    if (null != channelId) {
-      outer1_1(outer1_2[16]).preload(outer1_15, channelId);
-      const obj = outer1_1(outer1_2[16]);
-    }
-  }, items);
-  (function useRedirectToChannelOnMessage(channelId, navigateToChannel) {
-    let closure_0 = channelId;
-    let closure_1 = navigateToChannel;
-    const items = [channelId, navigateToChannel];
-    const callback = outer1_5.useCallback(() => {
-      let obj = outer2_1(outer2_2[20]);
-      obj = { channel_id: closure_0 };
-      obj.track(outer2_12.MESSAGE_COMPOSER_TRANSITIONED, obj);
-      navigateToChannel(closure_0);
-    }, items);
-    outer1_1(outer1_2[21])(callback);
-  })(channelId, navigateToChannel);
-  let obj = { style: tmp.background };
-  obj = { style: tmp.container };
-  obj = { guildId: closure_15, channelId, chatInputRef: React.useRef(null), HACK_fixModalInteraction: true, alwaysRespectKeyboard: true, screenIndex: "new-message", secondaryTextFieldRef: tagListInputRef };
-  const items1 = [callback3(importDefault(10389), obj), ];
-  const obj1 = {};
-  const ref = React.useRef(null);
-  obj1.portal = channelId(477).isAndroid();
-  items1[1] = callback3(channelId(15553).PortalKeyboardRenderer, obj1);
-  obj.children = items1;
-  obj.children = callback4(View, obj);
-  return callback3(View, obj);
-}
-({ AnalyticEvents: closure_12, AnalyticsSections: closure_13, ChannelTypes: closure_14, ME: closure_15, Routes: closure_16 } = ME);
-({ jsx: closure_17, jsxs: closure_18 } = jsxProd);
-let closure_19 = require("module_4026").createAnimatedComponent(require("Text").Text);
-let obj = { container: { flex: 1 } };
-obj = { flex: 1, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW };
-obj.background = obj;
-_createForOfIteratorHelperLoose = { flexDirection: "column" };
-let str = "center";
-if (set.isAndroid()) {
-  str = "flex-start";
-}
-_createForOfIteratorHelperLoose.alignItems = str;
-obj.header = _createForOfIteratorHelperLoose;
-obj.emptyContainer = { flexGrow: 1, justifyContent: "center" };
-obj.emptyKeyboardView = { flexGrow: 1 };
-let obj2 = { marginBottom: require("_createForOfIteratorHelperLoose").space.PX_16, flexDirection: "row", justifyContent: "center", width: "100%" };
-obj.addFriendsButtonContainer = obj2;
-let closure_20 = _createForOfIteratorHelperLoose.createStyles(obj);
-let closure_21 = { code: "function NewMessageScreenTsx1(){const{numInGroup,NUM_IN_GROUP_THRESHOLD,withTiming}=this.__closure;const show=numInGroup>=NUM_IN_GROUP_THRESHOLD;return{opacity:withTiming(show?1:0),maxHeight:withTiming(show?20:0)};}" };
-const result = set.fileFinishedImporting("modules/main_tabs_v2/native/friends/screens/NewMessageScreen.tsx");
-
-export default function NewMessageScreen(navigation) {
-  let c7;
-  let defaultSelectedUserId;
-  let importDefault;
-  let tmp8;
-  navigation = navigation.navigation;
-  ({ defaultSelectedUserId, sourcePage: importDefault } = navigation.route.params);
-  let first;
-  let React;
-  let closure_6;
-  c7 = undefined;
-  let FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID;
-  let callback;
-  let c10;
-  let stateFromStores;
-  let tmp = callback5();
-  const dependencyMap = tmp;
-  const insets = importDefault(5193)({ includeKeyboardHeight: true }).insets;
-  importDefault(4594)(() => {
-    let obj = outer1_1(tmp[20]);
-    obj = { source_page: closure_1 };
-    obj.track(outer1_12.MESSAGE_COMPOSER_OPENED, obj);
-  });
-  if (null != defaultSelectedUserId) {
-    let items = [defaultSelectedUserId];
-    let items1 = items;
-  } else {
-    items1 = [];
-  }
-  const tmp5 = first(React.useState(items1), 2);
-  first = tmp5[0];
-  React = tmp5[1];
-  const tmp6 = first(React.useState(false), 2);
-  closure_6 = tmp6[1];
-  const tmp2 = importDefault(5497);
-  [tmp8, c7] = first(React.useState(false), 2);
-  FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID = useChannelForParticipants(first);
-  const ref = React.useRef(null);
-  const items2 = [navigation, first.length, FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID];
-  const layoutEffect = React.useLayoutEffect(() => {
+  }, items6);
+  const ref = obj.useRef(null);
+  const items7 = [navigation, first.length, FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID];
+  const layoutEffect = obj.useLayoutEffect(() => {
     navigation.setOptions({
       headerTitle(children) {
-        return outer2_17(outer2_28, { numInGroup: outer1_4.length, title: children.children });
+        return outer1_17(outer1_25, { numInGroup: length.length, title: children.children });
       },
       headerRight() {
-        let tmp = null;
-        if (null !== outer1_8) {
-          tmp = null;
-          if (outer1_8 !== navigation(5639).FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID) {
-            const obj = { channelId: outer1_8, screenIndex: "new-message" };
-            tmp = outer2_17(outer2_1(9103), obj);
+        let tmp2 = null;
+        if (null !== closure_8) {
+          tmp2 = null;
+          if (tmp !== outer1_0(outer1_2[17]).FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID) {
+            const obj = { channelId: null, screenIndex: "new-message" };
+            obj[0] = tmp;
+            tmp2 = outer1_17(outer1_1(tmp4[32]), obj);
           }
+          tmp4 = outer1_2;
         }
-        return tmp;
+        return tmp2;
       }
     });
-  }, items2);
-  const items3 = [navigation];
-  callback = React.useCallback((arg0) => {
+  }, items7);
+  const items8 = [navigation];
+  callback = obj.useCallback((arg0) => {
     navigation.goBack();
-    navigation(tmp[33]).transitionTo(outer1_16.CHANNEL(outer1_15, arg0));
-  }, items3);
-  const items4 = [first, callback];
-  const callback1 = React.useCallback((() => {
-    // CreateGeneratorClosureLongIndex (0x67)
-    let closure_0 = insets(tmp);
-    return function(arg0) {
-      return callback(...arguments);
-    };
-  })(), items4);
-  const callback2 = React.useCallback(() => {
-    _undefined((arg0) => !arg0);
+    navigation(lib[33]).transitionTo(outer1_16.CHANNEL(outer1_15, arg0));
+  }, items8);
+  _require = undefined;
+  _require = stateFromStores((arg0) => {
+    let closure_0 = arg0;
+    let c3 = 0;
+    let c4 = 0;
+    return (function*(arg0) {
+      if (c4 === 2) {
+        c4 = 3;
+        HermesBuiltin.throwTypeError();
+      } else if (tmp5 === 3) {
+        if (arg0 === 1) {
+          throw arg1;
+        } else if (arg0 === 2) {
+          let obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
+        } else {
+          return { value: "HermesInternal", done: null };
+        }
+      } else {
+        try {
+          c4 = 2;
+          if (0 === c3) {
+            if (arg0 === 1) {
+              c4 = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              c4 = 3;
+              obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            } else {
+              const dependencyMap = tmp2;
+              let closure_1 = tmp3;
+              let callback;
+              if (callback instanceof c7) {
+                FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID(698).track(outer2_12.MESSAGE_COMPOSER_SEARCH_RESULT_CLICKED);
+                outer1_9(tmp49.id);
+                c4 = 3;
+                const obj1 = { value: null, done: true };
+                obj1[0] = undefined;
+                return obj1;
+              } else if (callback.isFriend(tmp49.id)) {
+                let arr = c4;
+                const index = c4.indexOf(tmp49.id);
+                const items = [];
+                HermesBuiltin.arraySpread(c4, 0);
+                if (-1 === index) {
+                  if (arr.length >= FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID(15586)() - 1) {
+                    let obj5 = callback(3889);
+                    obj5.showMaxGroupMembers();
+                    FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID(698).track(outer2_12.MESSAGE_COMPOSER_MAX_USERS_ADDED);
+                    c4 = 3;
+                    const obj2 = { value: null, done: true };
+                    obj2[0] = undefined;
+                    return obj2;
+                  } else {
+                    arr = items.push(tmp49.id);
+                  }
+                } else {
+                  items.splice(index, 1);
+                }
+                outer1_5(items);
+                arr = outer1_7;
+                outer1_7(false);
+                c4 = 3;
+              } else {
+                let obj3 = FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID(4199);
+                c3 = 1;
+                c4 = 1;
+                obj3 = { value: null, done: false };
+                obj3[0] = obj3.getOrEnsurePrivateChannel(tmp49.id);
+                return obj3;
+              }
+            }
+          } else if (arg0 === 1) {
+            c4 = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            c4 = 3;
+            const obj4 = { value: null, done: true };
+            obj4[0] = arg1;
+            return obj4;
+          } else {
+            callback = arg1;
+            obj = FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID(698);
+            obj.track(outer2_12.MESSAGE_COMPOSER_SEARCH_RESULT_CLICKED);
+            outer1_9(callback);
+            c4 = 3;
+            obj5 = { value: null, done: true };
+            obj5[0] = undefined;
+            return obj5;
+          }
+        } catch (tmp43) {
+          c4 = tmp;
+          throw tmp43;
+        }
+      }
+    })();
+  });
+  const items9 = [first, callback];
+  const callback1 = obj.useCallback(function(arg0) {
+    const self = this;
+    const apply = closure_0.apply;
+    if (typeof apply === "unknown") {
+      let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+    } else {
+      applyArgumentsResult = apply(self, arguments);
+    }
+    return applyArgumentsResult;
+  }, items9);
+  const callback2 = obj.useCallback(() => {
+    _undefined2((arg0) => !arg0);
   }, []);
   [][0] = first;
-  const callback3 = React.useCallback((arg0) => {
-    _undefined(false);
-    callback(arg0.length > 0);
+  const callback3 = obj.useCallback((arg0) => {
+    _undefined2(false);
+    _undefined(arg0.length > 0);
   }, []);
-  let tmp17Result;
-  if (!tmp6[0]) {
-    if (!tmp8) {
+  let tmp26Result;
+  if (!tmp8) {
+    if (!tmp10) {
       if (first.length > 0) {
-        let obj = {};
         if (null == FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID) {
-          FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID = navigation(5639).FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID;
+          FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID = tmp13(5657).FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID;
         }
-        obj.channelId = FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID;
-        obj.navigateToChannel = callback;
-        obj.tagListInputRef = ref;
-        tmp17Result = callback3(ChatPreview, obj, tmp15);
-        const tmp17 = callback3;
-        const tmp18 = ChatPreview;
+        obj = { channelId: null, navigateToChannel: null, tagListInputRef: null };
+        obj[0] = FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID;
+        obj[1] = callback;
+        obj[2] = ref;
+        tmp26Result = callback3(ChatPreview, obj, tmp24);
+        const tmp26 = callback3;
+        const tmp27 = ChatPreview;
       }
     }
   }
-  c10 = tmp21;
-  const tmp7 = first(React.useState(false), 2);
-  const items5 = [callback];
-  stateFromStores = navigation(566).useStateFromStores(items5, () => callback.getRelationshipCount() > 0);
-  const items6 = [navigation, stateFromStores, 0 === first.length];
-  const items7 = [navigation];
-  const memo = React.useMemo(() => {
+  c10 = tmp28;
+  let tmp9 = first(obj.useState(false), 2);
+  const items10 = [callback];
+  stateFromStores1 = _require(589).useStateFromStores(items10, () => callback.getRelationshipCount() > 0);
+  const items11 = [navigation, stateFromStores1, 0 === first.length];
+  const items12 = [navigation];
+  const memo = obj.useMemo(() => {
     const items = [];
     if (c10) {
-      if (stateFromStores) {
-        let obj = { icon: outer1_1(tmp[35]), IconComponent: navigation(tmp[36]).GroupPlusIcon };
-        const intl = navigation(tmp[25]).intl;
-        obj.label = intl.string(navigation(tmp[25]).t["3hF1W4"]);
-        obj.iconVariant = "default";
-        obj.onPress = function onPress() {
-          return outer1_0.navigate("gdm", { allowNameEdit: false, locationPage: outer2_13.NEW_MESSAGE_COMPOSER });
+      if (stateFromStores1) {
+        let obj = { icon: null, IconComponent: null, label: null, iconVariant: "default", onPress: null };
+        obj[0] = FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID(lib[35]);
+        obj[1] = navigation(lib[36]).GroupPlusIcon;
+        const intl = navigation(lib[25]).intl;
+        obj[2] = intl.string(navigation(lib[25]).t["3hF1W4"]);
+        obj[4] = function onPress() {
+          return navigation.navigate("gdm", { allowNameEdit: false, locationPage: outer1_13.NEW_MESSAGE_COMPOSER });
         };
         items.push(obj);
       }
-      obj = { icon: outer1_1(stateFromStores[37]), IconComponent: navigation(stateFromStores[38]).UserPlusIcon };
-      const intl2 = navigation(tmp[25]).intl;
-      obj.label = intl2.string(navigation(stateFromStores[25]).t["9nbDJx"]);
-      obj.iconVariant = "default";
-      obj.onPress = function onPress() {
-        outer1_0.navigate("add-friends", { sourcePage: "New Message Composer" });
+      obj = { icon: null, IconComponent: null, label: null, iconVariant: "default", onPress: null };
+      obj[0] = FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID(lib[37]);
+      obj[1] = navigation(lib[38]).UserPlusIcon;
+      const intl2 = navigation(lib[25]).intl;
+      obj[2] = intl2.string(navigation(lib[25]).t["9nbDJx"]);
+      obj[4] = function onPress() {
+        navigation.navigate("add-friends", { sourcePage: "New Message Composer" });
       };
       items.push(obj);
     }
     return items;
-  }, items6);
-  const items8 = [navigation, tmp, insets.bottom];
-  const memo1 = React.useMemo(() => {
-    const obj = { icon: outer1_1(tmp[37]), IconComponent: navigation(tmp[38]).UserPlusIcon };
-    const intl = navigation(tmp[25]).intl;
-    obj.label = intl.string(navigation(tmp[25]).t["9nbDJx"]);
-    obj.iconVariant = "default";
-    obj.onPress = function onPress() {
-      outer1_0.navigate("add-friends", { sourcePage: "New Message Composer" });
+  }, items11);
+  const items13 = [navigation, tmp, insets.bottom];
+  const memo1 = obj.useMemo(() => {
+    const obj = { icon: FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID(lib[37]), IconComponent: navigation(lib[38]).UserPlusIcon, label: null, iconVariant: "default", onPress: null };
+    const intl = navigation(lib[25]).intl;
+    obj[2] = intl.string(navigation(lib[25]).t["9nbDJx"]);
+    obj[4] = function onPress() {
+      navigation.navigate("add-friends", { sourcePage: "New Message Composer" });
     };
     const items = [obj];
     return items;
-  }, items7);
-  const memo2 = React.useMemo(() => {
-    let obj = { style: items };
-    items = [tmp.emptyKeyboardView, ];
-    obj = { paddingBottom: insets.bottom };
+  }, items12);
+  const memo2 = obj.useMemo(() => {
+    let obj = { style: items, children: null };
+    items = [lib.emptyKeyboardView, ];
+    obj = { paddingBottom: stateFromStores.bottom };
     items[1] = obj;
-    obj = {};
-    tmp = outer1_1(tmp[39]);
-    const intl = navigation(tmp[25]).intl;
-    obj.title = intl.string(navigation(tmp[25]).t["1ESycm"]);
-    const intl2 = navigation(tmp[25]).intl;
-    obj.subtitle = intl2.string(navigation(tmp[25]).t["5IlFpu"]);
-    obj.containerStyle = tmp.emptyContainer;
-    obj.fullHeight = true;
-    const obj1 = { style: tmp.addFriendsButtonContainer };
-    const obj2 = {};
-    const intl3 = navigation(tmp[25]).intl;
-    obj2.text = intl3.string(navigation(tmp[25]).t.zIJnA6);
-    obj2.size = "lg";
-    obj2.onPress = function onPress() {
-      return outer1_0.navigate("add-friends", { sourcePage: "New Message Composer No Results" });
+    obj = { title: null, subtitle: null, containerStyle: null, fullHeight: true, children: null };
+    const intl = navigation(lib[25]).intl;
+    obj[0] = intl.string(navigation(lib[25]).t["1ESycm"]);
+    const intl2 = navigation(lib[25]).intl;
+    obj[1] = intl2.string(navigation(lib[25]).t["5IlFpu"]);
+    obj[2] = lib.emptyContainer;
+    const obj1 = { style: lib.addFriendsButtonContainer, children: null };
+    const obj2 = { text: null, size: "lg", onPress: null, grow: true };
+    const intl3 = navigation(lib[25]).intl;
+    obj2[0] = intl3.string(navigation(lib[25]).t.zIJnA6);
+    obj2[2] = function onPress() {
+      return navigation.navigate("add-friends", { sourcePage: "New Message Composer No Results" });
     };
-    obj2.grow = true;
-    obj1.children = outer1_17(navigation(tmp[40]).Button, obj2);
-    obj.children = outer1_17(closure_6, obj1);
-    obj.children = outer1_17(tmp, obj);
-    return outer1_17(closure_6, obj);
-  }, items8);
-  obj = { value: tmp2(importDefault(5517).NEW_MESSAGE_COMPOSER).analyticsLocations };
-  obj = { actions: memo, noResultActions: memo1, rowMode: stateFromStores.NONE, tagListInputRef: ref, onSelectUser: callback1, onQueryChanged: callback3, selectedUserIds: first, withAffinitySuggestions: true, overrideResults: tmp17Result, withGuildMembers: 0 === first.length, withGDMNames: true, forceSearchResults: tmp8, onForceSearchResults: callback2, defaultNoResultsFound: memo2, autoFocusSearch: true };
-  obj.children = callback3(importDefault(11441), obj);
-  return callback3(navigation(5497).AnalyticsLocationProvider, obj);
+    obj1[1] = outer1_17(navigation(lib[40]).Button, obj2);
+    obj[4] = outer1_17(c6, obj1);
+    obj[1] = outer1_17(FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID(lib[39]), obj);
+    return outer1_17(c6, obj);
+  }, items13);
+  obj = { value: tmp4(FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID(5535).NEW_MESSAGE_COMPOSER).analyticsLocations, children: null };
+  obj1 = { actions: memo, noResultActions: memo1, rowMode: stateFromStores1.NONE, tagListInputRef: ref, onSelectUser: callback1, onQueryChanged: callback3, selectedUserIds: first, withAffinitySuggestions: true, overrideResults: tmp26Result, withGuildMembers: tmp28, withGDMNames: true, forceSearchResults: tmp10, onForceSearchResults: callback2, defaultNoResultsFound: memo2, autoFocusSearch: true };
+  obj[1] = callback3(tmp2(11465), obj1);
+  return callback3(_require(5515).AnalyticsLocationProvider, obj);
 };

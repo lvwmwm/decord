@@ -1,32 +1,32 @@
-// Module ID: 16531
-// Function ID: 128664
+// Module ID: 16566
+// Function ID: 16567
 // Name: FormBigRadioBox
-// Dependencies: [31, 27, 33, 4165, 689, 3883, 8316, 1273, 4161, 2]
+// Dependencies: [19, 17, 21, 4189, 712, 3907, 8340, 1297, 4185, 2]
 // Exports: default
 
-// Module 16531 (FormBigRadioBox)
-import "result";
+// Module 16566 (FormBigRadioBox)
+import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_4;
-let closure_5;
+let c4;
+let c5;
 const require = arg1;
-({ jsx: closure_4, jsxs: closure_5 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SURFACE_HIGH, borderRadius: require("_createForOfIteratorHelperLoose").radii.sm, alignSelf: "stretch", alignItems: "flex-start", padding: 16 };
-_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.containerSelected = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWEST, borderWidth: 1, borderColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BRAND };
-_createForOfIteratorHelperLoose.indicator = { position: "absolute", right: 18, top: 18 };
-let obj2 = { height: 40, width: 40, alignItems: "center", backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWEST, borderRadius: 20, justifyContent: "center", marginBottom: 16 };
-_createForOfIteratorHelperLoose.iconContainer = obj2;
-let obj1 = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWEST, borderWidth: 1, borderColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BRAND };
-_createForOfIteratorHelperLoose.iconContainerSelected = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW };
-_createForOfIteratorHelperLoose.title = { marginBottom: 2 };
-_createForOfIteratorHelperLoose.disabled = { opacity: 0.5 };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-let obj3 = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW };
+({ jsx: c4, jsxs: c5 } = jsxProd);
+createCacheKey = { container: null, containerSelected: null, indicator: null, iconContainer: null, iconContainerSelected: null, title: null, disabled: null };
+createCacheKey = { backgroundColor: require("Themes").colors.BACKGROUND_SURFACE_HIGH, borderRadius: require("Themes").radii.sm, alignSelf: "stretch", alignItems: "flex-start", padding: 16 };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOWEST, borderWidth: 1, borderColor: require("Themes").colors.BACKGROUND_BRAND };
+createCacheKey[2] = { position: "absolute", right: 18, top: 18 };
+const obj1 = { backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOWEST, borderWidth: 1, borderColor: require("Themes").colors.BACKGROUND_BRAND };
+createCacheKey[3] = { height: 40, width: 40, alignItems: "center", backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOWEST, borderRadius: 20, justifyContent: "center", marginBottom: 16 };
+const obj2 = { height: 40, width: 40, alignItems: "center", backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOWEST, borderRadius: 20, justifyContent: "center", marginBottom: 16 };
+createCacheKey[4] = { backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW };
+createCacheKey[5] = { marginBottom: 2 };
+createCacheKey[6] = { opacity: 0.5 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+const obj3 = { backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW };
 const result = require("jsxProd").fileFinishedImporting("modules/guild_role_subscriptions/native/components/FormBigRadioBox.tsx");
 
 export default function FormBigRadioBox(arg0) {
@@ -44,12 +44,10 @@ export default function FormBigRadioBox(arg0) {
   if (disabled === undefined) {
     disabled = false;
   }
-  const tmp = _createForOfIteratorHelperLoose();
-  let obj = require(3883) /* useCheckboxA11yNative */;
-  obj = { selected, disabled };
-  const radioA11yNative = obj.useRadioA11yNative(obj);
+  const tmp = createCacheKey();
+  let obj = require(3907) /* useCheckboxA11yNative */;
+  const radioA11yNative = obj.useRadioA11yNative({ selected, disabled });
   ({ accessibilityRole, accessibilityState } = radioA11yNative);
-  obj = {};
   const items = [tmp.container, , , ];
   let containerSelected = selected;
   if (selected) {
@@ -60,31 +58,27 @@ export default function FormBigRadioBox(arg0) {
   if (disabled) {
     disabled2 = tmp.disabled;
   }
+  obj = { style: items, accessibilityRole, accessibilityState, onPress: null, children: null };
   items[2] = disabled2;
   items[3] = style;
-  obj.style = items;
-  obj.accessibilityRole = accessibilityRole;
-  obj.accessibilityState = accessibilityState;
-  let tmp5;
+  let tmp7;
   if (!disabled) {
-    tmp5 = onPress;
+    tmp7 = onPress;
   }
-  obj.onPress = tmp5;
-  const obj1 = { style: tmp.indicator, active: selected };
-  const items1 = [callback(require(1273) /* Button */.RadioIndicator, obj1), , , ];
-  const obj2 = {};
+  obj[3] = tmp7;
+  obj = { style: tmp.indicator, active: selected };
+  const items1 = [callback(require(1297) /* Button */.RadioIndicator, obj), , , ];
   const items2 = [tmp.iconContainer, ];
   if (selected) {
     selected = tmp.iconContainerSelected;
   }
+  const tmp5 = closure_5;
+  const tmp6 = importDefault(8340);
+  const tmp9 = View;
   items2[1] = selected;
-  obj2.style = items2;
-  obj2.children = callback(require(1273) /* Button */.Icon, { source: icon });
-  items1[1] = callback(View, obj2);
-  const obj3 = { style: tmp.title, accessibilityRole: "header", variant: "text-md/semibold", color: "interactive-text-default", children: title };
-  items1[2] = callback(require(4161) /* Text */.Text, obj3);
-  const obj4 = { variant: "text-sm/medium", color: "interactive-text-default", children: description };
-  items1[3] = callback(require(4161) /* Text */.Text, obj4);
-  obj.children = items1;
-  return closure_5(importDefault(8316), obj);
+  items1[1] = callback(tmp9, { style: items2, children: callback(require(1297) /* Button */.Icon, { source: icon }) });
+  items1[2] = callback(require(4185) /* Text */.Text, { style: tmp.title, accessibilityRole: "header", variant: "text-md/semibold", color: "interactive-text-default", children: title });
+  items1[3] = callback(require(4185) /* Text */.Text, { variant: "text-sm/medium", color: "interactive-text-default", children: description });
+  obj[4] = items1;
+  return tmp5(tmp6, obj);
 };

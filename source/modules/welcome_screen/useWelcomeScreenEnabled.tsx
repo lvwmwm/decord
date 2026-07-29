@@ -1,26 +1,26 @@
-// Module ID: 11724
-// Function ID: 90796
+// Module ID: 11749
+// Function ID: 11750
 // Name: useWelcomeScreenEnabled
-// Dependencies: [1352, 1348, 1838, 1907, 653, 566, 2]
+// Dependencies: [1376, 1372, 1862, 1931, 676, 589, 2]
 // Exports: default
 
-// Module 11724 (useWelcomeScreenEnabled)
-import { isGuildTextChannelType } from "_callSuper";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import closure_5 from "_isNativeReflectConstruct";
+// Module 11749 (useWelcomeScreenEnabled)
+import { isGuildTextChannelType } from "createChannelRecord";
+import ensureGuildLoaded from "ensureGuildLoaded";
+import createGuildRecordFromRust from "createGuildRecordFromRust";
+import handleConnectionOpen from "handleConnectionOpen";
 import { GuildFeatures } from "ME";
 
-const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/welcome_screen/useWelcomeScreenEnabled.tsx");
+const result = require("createGuildRecordFromRust").fileFinishedImporting("modules/welcome_screen/useWelcomeScreenEnabled.tsx");
 
 export default function useWelcomeScreenEnabled(arg0, arg1) {
   const _require = arg0;
   const dependencyMap = arg1;
-  const items = [_isNativeReflectConstruct, _createForOfIteratorHelperLoose, closure_5];
-  return _require(566).useStateFromStores(items, () => {
+  const items = [ensureGuildLoaded, createGuildRecordFromRust, handleConnectionOpen];
+  return _require(589).useStateFromStores(items, () => {
     const guild = outer1_4.getGuild(closure_1);
     let hasItem;
-    if (null != guild) {
+    if (guild != null) {
       const features = guild.features;
       hasItem = features.has(outer1_6.WELCOME_SCREEN_ENABLED);
     }
@@ -28,17 +28,18 @@ export default function useWelcomeScreenEnabled(arg0, arg1) {
       const features2 = guild.features;
       if (features2.has(outer1_6.COMMUNITY)) {
         const features3 = guild.features;
-        if (features3.has(outer1_6.GUILD_SERVER_GUIDE)) {
+        if (features3.has(tmp5.GUILD_SERVER_GUIDE)) {
           return false;
         } else {
           const channel = outer1_3.getChannel(closure_0);
-          let tmp10 = closure_0 === outer1_5.getChannelId(closure_1) && null != channel && channel.getGuildId() === guild.id;
-          if (tmp10) {
-            tmp10 = outer1_2(channel.type);
+          let tmp9 = closure_0 === outer1_5.getChannelId(closure_1) && null != channel && channel.getGuildId() === guild.id;
+          if (tmp9) {
+            tmp9 = outer1_2(channel.type);
           }
-          return tmp10;
+          return tmp9;
         }
       }
+      tmp5 = outer1_6;
     }
     return false;
   });

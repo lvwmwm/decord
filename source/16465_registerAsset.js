@@ -1,11 +1,10 @@
 // Module ID: 16465
-// Function ID: 128380
+// Function ID: 16466
 // Name: registerAsset
-// Dependencies: [1217]
+// Dependencies: [1241]
 
 // Module 16465 (registerAsset)
 import registerAsset from "registerAsset";
 
-const obj = { __packager_asset: true, httpServerLocation: "/assets/images/native/guild_settings/community_settings", width: 375, height: 212, scales: [2, 3], hash: "032d875e012f721658a4a3ff0300b2d2", name: "intro_header_light", type: "png" };
 
-export default registerAsset.registerAsset(obj);
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/icons", width: 24, height: 24, scales: [2, 3], hash: "cbab82e40d604a026003b3db68edd6bb", name: "ic_icon_upload", type: "png" });

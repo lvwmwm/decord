@@ -1,33 +1,139 @@
-// Module ID: 14918
-// Function ID: 113664
+// Module ID: 14944
+// Function ID: 14945
 // Name: getGuildFolderMenuItems
-// Dependencies: [5, 5005, 653, 9238, 1212, 13075, 1935, 8987, 14919, 2]
+// Dependencies: [5, 5027, 676, 9262, 1236, 13098, 1959, 9011, 14945, 2]
 // Exports: getGuildFolderMenuItems
 
-// Module 14918 (getGuildFolderMenuItems)
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 14944 (getGuildFolderMenuItems)
+import markGuildsAsRead from "markGuildsAsRead";
+import insertUnsortedGuilds from "insertUnsortedGuilds";
 import { AnalyticsSections } from "ME";
 
 const require = arg1;
-const result = require("ME").fileFinishedImporting("modules/guilds_bar/native/GuildsBarFolderMenuItems.tsx");
+let result = require("ME").fileFinishedImporting("modules/guilds_bar/native/GuildsBarFolderMenuItems.tsx");
 
 export const getGuildFolderMenuItems = function getGuildFolderMenuItems(guildFolderMenuItems) {
   const _require = guildFolderMenuItems;
-  let obj = { IconComponent: _require(9238).EnvelopeIcon };
-  const intl = _require(1212).intl;
-  obj.label = intl.string(_require(1212).t.e6RscS);
-  obj.action = function action() {
-    // CreateGeneratorClosureLongIndex (0x67)
-    return outer1_2(tmp)();
+  let obj = { IconComponent: _require(9262).EnvelopeIcon, label: null, action: null };
+  const intl = _require(1236).intl;
+  obj[1] = intl.string(_require(1236).t.e6RscS);
+  obj[2] = function action() {
+    return outer1_2(function*() {
+      if (guildFolderById === 2) {
+        guildFolderById = 3;
+        HermesBuiltin.throwTypeError();
+      } else if (tmp5 === 3) {
+        if (arg0 === 1) {
+          throw arg1;
+        } else if (arg0 === 2) {
+          let obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
+        } else {
+          return { value: "HermesInternal", done: null };
+        }
+      } else {
+        try {
+          guildFolderById = 2;
+          if (0 === c2) {
+            if (arg0 === 1) {
+              guildFolderById = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              guildFolderById = 3;
+              obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            } else {
+              let closure_1 = tmp3;
+              guildFolderById = tmp2;
+              guildFolderById = undefined;
+              guildFolderById = guildFolderById.getGuildFolderById(outer1_0);
+              if (null != guildFolderById) {
+                c2 = 1;
+                guildFolderById = 1;
+                const obj1 = { value: null, done: false };
+                obj1[0] = outer1_0(outer1_1[6])(outer1_1[5], outer1_1.paths);
+                return obj1;
+              } else {
+                guildFolderById = 3;
+              }
+            }
+          } else if (arg0 === 1) {
+            guildFolderById = 3;
+            throw arg1;
+          } else if (arg0 !== 2) {
+            arg1.default(guildFolderById.guildIds, outer1_4.GUILD_LIST);
+          }
+          guildFolderById = 3;
+          obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
+        } catch (tmp14) {
+          guildFolderById = tmp;
+          throw tmp14;
+        }
+      }
+    })();
   };
   const items = [obj, ];
-  obj = { IconComponent: _require(8987).SettingsIcon };
-  const intl2 = _require(1212).intl;
-  obj.label = intl2.string(_require(1212).t.Dx7im5);
-  obj.action = function action() {
-    // CreateGeneratorClosureLongIndex (0x67)
-    return outer1_2(tmp)();
+  obj = { IconComponent: _require(9011).SettingsIcon, label: null, action: null };
+  const intl2 = _require(1236).intl;
+  obj[1] = intl2.string(_require(1236).t.Dx7im5);
+  obj[2] = function action() {
+    return outer1_2(function*() {
+      if (c2 === 2) {
+        c2 = 3;
+        HermesBuiltin.throwTypeError();
+      } else if (tmp3 === 3) {
+        if (arg0 === 1) {
+          throw arg1;
+        } else if (arg0 === 2) {
+          let obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
+        } else {
+          return { value: "HermesInternal", done: null };
+        }
+      } else {
+        try {
+          c2 = 2;
+          if (0 === paths) {
+            if (arg0 === 1) {
+              c2 = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              c2 = 3;
+              obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            } else {
+              let closure_0 = tmp4;
+              paths = 1;
+              c2 = 1;
+              const obj1 = { value: null, done: false };
+              obj1[0] = outer1_0(paths[6])(paths[8], paths.paths);
+              return obj1;
+            }
+          } else if (arg0 === 1) {
+            c2 = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            c2 = 3;
+            obj = { value: null, done: true };
+            obj[0] = arg1;
+            return obj;
+          } else {
+            const result = arg1.showGuildsBarFolderModal(closure_0);
+            c2 = 3;
+            return { value: "HermesInternal", done: null };
+          }
+        } catch (tmp10) {
+          c2 = tmp;
+          throw tmp10;
+        }
+      }
+    })();
   };
   items[1] = obj;
   return items;

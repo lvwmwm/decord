@@ -1,32 +1,55 @@
-// Module ID: 4840
-// Function ID: 42002
+// Module ID: 4862
+// Function ID: 4863
 // Name: insertionIndex
 // Dependencies: [2]
-// Exports: insert
+// Exports: insert, insertionIndex
 
-// Module 4840 (insertionIndex)
-function insertionIndex(arr, arg1, arg2) {
-  let tmp2;
+// Module 4862 (insertionIndex)
+const result = require("set").fileFinishedImporting("utils/SortedArrayUtils.tsx");
+
+export const insertionIndex = function insertionIndex(arg0, arg1, arg2) {
+  let sum;
+  let tmp4;
+  let length = arg0.length;
+  let num = 0;
+  let num2 = 0;
+  if (0 < length) {
+    do {
+      let tmp = num + length >>> 1;
+      let tmp2 = length;
+      sum = num;
+      tmp4 = tmp;
+      if (arg2(arg0[tmp], arg1) < 0) {
+        sum = tmp + 1;
+        tmp4 = length;
+      }
+      length = tmp4;
+      num = sum;
+      num2 = sum;
+    } while (sum < tmp4);
+  }
+  return num2;
+};
+export const insert = function insert(arr) {
+  let sum;
+  let tmp4;
   let length = arr.length;
   let num = 0;
   let num2 = 0;
   if (0 < length) {
     do {
       let tmp = num + length >>> 1;
-      tmp2 = tmp;
+      let tmp2 = length;
+      sum = num;
+      tmp4 = tmp;
       if (arg2(arr[tmp], arg1) < 0) {
-        num = tmp + 1;
-        tmp2 = length;
+        sum = tmp + 1;
+        tmp4 = length;
       }
-      length = tmp2;
-      num2 = num;
-    } while (num < tmp2);
+      length = tmp4;
+      num = sum;
+      num2 = sum;
+    } while (sum < tmp4);
   }
-  return num2;
-}
-const result = require("set").fileFinishedImporting("utils/SortedArrayUtils.tsx");
-
-export { insertionIndex };
-export const insert = function insert(arr) {
-  arr.splice(insertionIndex(arr, arg1, arg2), 0, arg1);
+  arr.splice(num2, 0, arg1);
 };

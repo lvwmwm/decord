@@ -1,10 +1,10 @@
-// Module ID: 5885
-// Function ID: 51729
-// Dependencies: [5, 1850, 653, 686, 507, 1184, 2]
+// Module ID: 5903
+// Function ID: 5904
+// Dependencies: [5, 1874, 676, 709, 530, 1208, 2]
 
-// Module 5885
-import isNonEmptyString from "isNonEmptyString";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 5903
+import module_1208 from "module_1208";
+import mergeGuildAvatar from "mergeGuildAvatar";
 import { Endpoints } from "ME";
 
 const require = arg1;
@@ -12,110 +12,335 @@ const result = require("ME").fileFinishedImporting("modules/user_profile/WidgetA
 
 export default {
   setPendingWidgets(items) {
-    let obj = importDefault(686);
+    let obj = importDefault(709);
     obj = { type: "WIDGET_PENDING_SET", widgets: items };
     obj.dispatch(obj);
   },
   savePendingWidgets(arg0) {
     let closure_0 = arg0;
-    return callback(async () => {
-      const currentUser = outer2_4.getCurrentUser();
-      let id;
-      if (null != currentUser) {
-        id = currentUser.id;
-      }
-      if (null != id) {
-        let obj = outer2_1(outer2_2[3]);
-        obj = { type: "WIDGET_PENDING_SAVE_START" };
-        obj.dispatch(obj);
-        const mapped = outer1_0.map((toSubmission) => toSubmission.toSubmission());
-        const HTTP = callback(outer2_2[4]).HTTP;
-        obj = { url: outer2_5.USER_PROFILE_WIDGETS };
-        const obj1 = { widgets: mapped };
-        obj.body = obj1;
-        obj.oldFormErrors = true;
-        obj.rejectWithError = true;
-        const tmp11 = yield HTTP.put(obj);
-        const obj2 = { type: "WIDGET_PENDING_SAVE_SUCCESS", userId: id, widgets: tmp11.body.widgets };
-        outer2_1(outer2_2[3]).dispatch(obj2);
-        return tmp11.body;
+    return callback(function*() {
+      if (constants === 2) {
+        constants = 3;
+        HermesBuiltin.throwTypeError();
+      } else if (tmp7 === 3) {
+        if (arg0 === 1) {
+          throw arg1;
+        } else if (arg0 === 2) {
+          let obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
+        } else {
+          return { value: "HermesInternal", done: null };
+        }
+      } else {
+        try {
+          constants = 2;
+          if (0 === currentUser) {
+            if (arg0 === 1) {
+              constants = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              constants = 3;
+              obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            } else {
+              let closure_1 = tmp3;
+              let id = tmp5;
+              id = undefined;
+              closure_1 = undefined;
+              currentUser = currentUser.getCurrentUser();
+              id = undefined;
+              if (currentUser != null) {
+                id = currentUser.id;
+              }
+              if (null != id) {
+                let obj5 = outer1_1(outer1_2[3]);
+                obj5.dispatch({ type: "WIDGET_PENDING_SAVE_START" });
+                let c3 = 1;
+                const mapped = outer1_0.map((toSubmission) => toSubmission.toSubmission());
+                const HTTP = outer1_0(outer1_2[4]).HTTP;
+                const obj1 = { url: null, body: null, oldFormErrors: true, rejectWithError: true };
+                obj1[0] = constants.USER_PROFILE_WIDGETS;
+                const obj2 = { widgets: null };
+                obj2[0] = mapped;
+                obj1[1] = obj2;
+                currentUser = 2;
+                constants = 1;
+                const obj3 = { value: null, done: false };
+                obj3[0] = HTTP.put(obj1);
+                return obj3;
+              } else {
+                constants = 3;
+                return { value: "HermesInternal", done: null };
+              }
+            }
+          } else if (1 === tmp8) {
+            c3 = 0;
+            let obj4 = outer1_1(outer1_2[3]);
+            obj4.dispatch({ type: "WIDGET_PENDING_SAVE_FAILURE" });
+            throw closure_2;
+          } else if (arg0 === 1) {
+            constants = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            c3 = 0;
+            constants = 3;
+            obj4 = { value: null, done: true };
+            obj4[0] = arg1;
+            return obj4;
+          } else {
+            closure_1 = arg1;
+            obj = outer1_1(outer1_2[3]);
+            obj5 = { type: "WIDGET_PENDING_SAVE_SUCCESS", userId: null, widgets: null };
+            obj5[1] = id;
+            obj5[2] = closure_1.body.widgets;
+            obj.dispatch(obj5);
+            c3 = 0;
+            constants = 3;
+            const obj6 = { value: null, done: true };
+            obj6[0] = closure_1.body;
+            return obj6;
+          }
+        } catch (tmp34) {
+          closure_2 = tmp34;
+          if (tmp4 === c3) {
+            constants = tmp2;
+            throw tmp34;
+          } else {
+            currentUser = tmp;
+          }
+        }
       }
     })();
   },
   clearPendingWidgets() {
-    importDefault(686).dispatch({ type: "WIDGET_PENDING_CLEAR" });
+    importDefault(709).dispatch({ type: "WIDGET_PENDING_CLEAR" });
   },
   uploadWidgetAsset(arg0) {
     let closure_0 = arg0;
-    return callback(async () => {
-      let upload_filename;
-      let upload_url;
-      const HTTP = callback(outer2_2[4]).HTTP;
-      obj = { url: outer2_5.USER_PROFILE_WIDGET_ASSET_UPLOAD, body: obj, rejectWithError: true };
-      obj = { filename: outer1_0.name, file_size: outer1_0.size };
-      obj = { method: "PUT", body: outer1_0 };
-      const obj1 = {};
-      let str = "application/octet-stream";
-      ({ upload_url, upload_filename } = yield HTTP.post(obj).body);
-      if ("" !== outer1_0.type) {
-        str = outer1_0.type;
-      }
-      obj1["Content-Type"] = str;
-      obj.headers = obj1;
-      const tmp2 = yield fetch(upload_url, obj);
-      if (tmp2.ok) {
-        return upload_filename;
+    return callback(function*() {
+      if (c3 === 2) {
+        c3 = 3;
+        HermesBuiltin.throwTypeError();
+      } else if (tmp4 === 3) {
+        if (arg0 === 1) {
+          throw arg1;
+        } else if (arg0 === 2) {
+          let obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
+        } else {
+          return { value: "HermesInternal", done: null };
+        }
       } else {
-        const _Error = Error;
-        const _HermesInternal = HermesInternal;
-        const error = new Error("Failed to upload widget asset: " + tmp2.status);
-        throw error;
+        try {
+          c3 = 2;
+          if (0 === table) {
+            if (arg0 === 1) {
+              c3 = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              c3 = 3;
+              obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            } else {
+              let upload_url = tmp2;
+              let body = tmp5;
+              body = undefined;
+              upload_url = undefined;
+              table = undefined;
+              c3 = undefined;
+              const HTTP = outer1_0(table[4]).HTTP;
+              const obj1 = { url: null, body: null, rejectWithError: true };
+              obj1[0] = outer1_5.USER_PROFILE_WIDGET_ASSET_UPLOAD;
+              const obj2 = { filename: null, file_size: null };
+              obj2[0] = outer1_0.name;
+              obj2[1] = outer1_0.size;
+              obj1[1] = obj2;
+              table = 1;
+              c3 = 1;
+              const obj3 = { value: null, done: false };
+              obj3[0] = HTTP.post(obj1);
+              return obj3;
+            }
+          } else if (1 === tmp5) {
+            if (arg0 === 1) {
+              c3 = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              c3 = 3;
+              const obj4 = { value: null, done: true };
+              obj4[0] = arg1;
+              return obj4;
+            } else {
+              body = arg1.body;
+              upload_url = body.upload_url;
+              table = body.upload_filename;
+              const obj5 = { method: "PUT", body: null, headers: null };
+              obj5[1] = body;
+              let str2 = "application/octet-stream";
+              if ("" !== body.type) {
+                str2 = body.type;
+              }
+              const obj6 = { "Content-Type": null };
+              obj6[0] = str2;
+              obj5[2] = obj6;
+              table = 2;
+              c3 = 1;
+              const obj7 = { value: null, done: false };
+              obj7[0] = fetch(upload_url, obj5);
+              return obj7;
+            }
+          } else if (arg0 === 1) {
+            c3 = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            c3 = 3;
+            const obj8 = { value: null, done: true };
+            obj8[0] = arg1;
+            return obj8;
+          } else {
+            c3 = arg1;
+            if (c3.ok) {
+              c3 = 3;
+              obj = { value: null, done: true };
+              obj[0] = table;
+              return obj;
+            } else {
+              const _Error = Error;
+              const _HermesInternal = HermesInternal;
+              const error = new Error("Failed to upload widget asset: " + c3.status);
+              throw error;
+            }
+          }
+        } catch (tmp17) {
+          c3 = tmp;
+          throw tmp17;
+        }
       }
     })();
   },
   fetchSuggestedGames() {
-    return callback(async () => {
-      let obj = outer2_1(outer2_2[3]);
-      obj.dispatch({ type: "WIDGET_SUGGESTED_FETCH_START" });
-      const HTTP = outer2_0(outer2_2[4]).HTTP;
-      obj = { url: outer2_5.USER_PROFILE_SUGGESTED_GAMES, rejectWithError: true };
-      const tmp2 = yield HTTP.get(obj);
-      const body = tmp2.body;
-      let suggested_games;
-      if (null != body) {
-        suggested_games = body.suggested_games;
-      }
-      let tmp6 = tmp5;
-      if (null != suggested_games) {
-        const body2 = tmp3.body;
-        let prop;
-        if (null != body2) {
-          prop = body2.suggested_wishlist_games;
+    return callback(function*() {
+      if (c7 === 2) {
+        c7 = 3;
+        HermesBuiltin.throwTypeError();
+      } else if (tmp6 === 3) {
+        if (arg0 === 1) {
+          throw arg1;
+        } else if (arg0 === 2) {
+          let obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
+        } else {
+          return { value: "HermesInternal", done: null };
         }
-        tmp6 = null != prop;
+      } else {
+        try {
+          c7 = 2;
+          if (0 === c6) {
+            if (arg0 === 1) {
+              c7 = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              c7 = 3;
+              obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            } else {
+              let module_1208 = tmp3;
+              const dependencyMap = tmp7;
+              let closure_0;
+              outer1_1(outer1_2[3]).dispatch({ type: "WIDGET_SUGGESTED_FETCH_START" });
+              let constants = 1;
+              const HTTP = outer1_0(outer1_2[4]).HTTP;
+              let obj1 = { url: null, rejectWithError: true };
+              obj1[0] = constants.USER_PROFILE_SUGGESTED_GAMES;
+              c6 = 2;
+              c7 = 1;
+              const obj2 = { value: null, done: false };
+              obj2[0] = HTTP.get(obj1);
+              return obj2;
+            }
+          } else if (1 === tmp7) {
+            constants = 0;
+            let callback = mergeGuildAvatar;
+            let obj4 = callback(709);
+            obj4.dispatch({ type: "WIDGET_SUGGESTED_FETCH_FAILURE" });
+            callback(1208).captureException(callback);
+            throw callback;
+          } else if (arg0 === 1) {
+            c7 = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            constants = 0;
+            c7 = 3;
+            const obj3 = { value: null, done: true };
+            obj3[0] = arg1;
+            return obj3;
+          } else {
+            closure_0 = arg1;
+            const body4 = closure_0.body;
+            let suggested_games;
+            if (body4 != null) {
+              suggested_games = body4.suggested_games;
+            }
+            let tmp9 = null != suggested_games;
+            if (tmp9) {
+              const body = closure_0.body;
+              let prop;
+              if (body != null) {
+                prop = body.suggested_wishlist_games;
+              }
+              tmp9 = null != prop;
+            }
+            if (!tmp9) {
+              obj = callback(1208);
+              obj.captureMessage("Suggested games or wishlist games not found");
+            }
+            obj1 = callback(709);
+            const body2 = closure_0.body;
+            let suggested_games1;
+            if (body2 != null) {
+              suggested_games1 = body2.suggested_games;
+            }
+            closure_0 = suggested_games1;
+            if (suggested_games1 == null) {
+              closure_0 = [];
+            }
+            obj4 = { type: "WIDGET_SUGGESTED_FETCH_SUCCESS", suggestedGamesIds: null, suggestedWishlistGamesIds: null };
+            obj4[1] = closure_0;
+            const body3 = closure_0.body;
+            let prop1;
+            if (body3 != null) {
+              prop1 = body3.suggested_wishlist_games;
+            }
+            callback = prop1;
+            if (prop1 == null) {
+              callback = [];
+            }
+            obj4[2] = callback;
+            obj1.dispatch(obj4);
+            constants = 0;
+            c7 = 3;
+            return { value: "HermesInternal", done: null };
+          }
+        } catch (tmp41) {
+          mergeGuildAvatar = tmp41;
+          if (tmp4 === constants) {
+            c7 = tmp2;
+            throw tmp41;
+          } else {
+            c6 = tmp;
+          }
+        }
       }
-      if (!tmp6) {
-        outer2_1(outer2_2[5]).captureMessage("Suggested games or wishlist games not found");
-        const obj3 = outer2_1(outer2_2[5]);
-      }
-      obj = { type: "WIDGET_SUGGESTED_FETCH_SUCCESS" };
-      const body3 = tmp3.body;
-      let suggested_games1;
-      if (null != body3) {
-        suggested_games1 = body3.suggested_games;
-      }
-      obj.suggestedGamesIds = null != suggested_games1 ? suggested_games1 : [];
-      const body4 = tmp2.body;
-      let prop1;
-      if (null != body4) {
-        prop1 = body4.suggested_wishlist_games;
-      }
-      obj.suggestedWishlistGamesIds = null != prop1 ? prop1 : [];
-      outer2_1(outer2_2[3]).dispatch(obj);
     })();
   },
   removeGameFromSuggestedGames(applicationId) {
-    let obj = importDefault(686);
+    let obj = importDefault(709);
     obj = { type: "WIDGET_SUGGESTED_REMOVE_GAME", applicationId };
     obj.dispatch(obj);
   }

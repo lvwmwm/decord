@@ -1,12 +1,12 @@
 // Module ID: 8575
-// Function ID: 68034
+// Function ID: 8576
 // Name: __INTERNAL_VIEW_CONFIG
-// Dependencies: [42]
+// Dependencies: [65]
 
 // Module 8575 (__INTERNAL_VIEW_CONFIG)
-import get from "get";
+import setRuntimeConfigProvider from "setRuntimeConfigProvider";
 
-const obj = { uiViewClassName: "RNSVGFilter", validAttributes: { name: true, x: true, y: true, height: true, width: true, filterUnits: true, primitiveUnits: true } };
+const obj = { uiViewClassName: "RNSVGFeComposite", validAttributes: { x: true, y: true, width: true, height: true, result: true, in1: true, in2: true, operator1: true, k1: true, k2: true, k3: true, k4: true } };
 
-export default get.get("RNSVGFilter", () => obj);
+export default setRuntimeConfigProvider.get("RNSVGFeComposite", () => obj);
 export const __INTERNAL_VIEW_CONFIG = obj;

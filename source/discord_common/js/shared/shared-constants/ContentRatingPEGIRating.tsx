@@ -1,15 +1,15 @@
-// Module ID: 5895
-// Function ID: 51798
+// Module ID: 5914
+// Function ID: 5915
 // Name: set
 // Dependencies: [2]
 
-// Module 5895 (set)
+// Module 5914 (set)
 import set from "set";
 
-const obj = {};
+const obj = { ALL: null, IS_ADULT_ONLY: null };
 let set = new Set([1, 2, 3, 4, 5]);
-obj.ALL = set;
-obj.IS_ADULT_ONLY = new Set([]);
+obj[0] = set;
+obj[1] = new Set([]);
 const result = set.fileFinishedImporting("../discord_common/js/shared/shared-constants/ContentRatingPEGIRating.tsx");
 
 export const ContentRatingPEGIRating = { UNKNOWN_RATING: 0, [0]: "UNKNOWN_RATING", THREE: 1, [1]: "THREE", SEVEN: 2, [2]: "SEVEN", TWELVE: 3, [3]: "TWELVE", SIXTEEN: 4, [4]: "SIXTEEN", EIGHTEEN: 5, [5]: "EIGHTEEN" };

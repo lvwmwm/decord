@@ -1,28 +1,28 @@
-// Module ID: 6653
-// Function ID: 58639
+// Module ID: 6674
+// Function ID: 6675
 // Name: BuyNitroPerk
-// Dependencies: [31, 27, 33, 4165, 689, 5198, 6654, 2]
+// Dependencies: [19, 17, 21, 4189, 712, 5220, 6675, 2]
 // Exports: default
 
-// Module 6653 (BuyNitroPerk)
-import "result";
+// Module 6674 (BuyNitroPerk)
+import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_3;
-let closure_4;
-let closure_5;
+let c3;
+let c4;
+let c5;
 let closure_6;
 const require = arg1;
-({ StyleSheet: closure_3, View: closure_4 } = get_ActivityIndicator);
-({ jsx: closure_5, jsxs: closure_6 } = jsxProd);
+({ StyleSheet: c3, View: c4 } = get_ActivityIndicator);
+({ jsx: c5, jsxs: closure_6 } = jsxProd);
 let closure_7 = { x: 0, y: 0 };
 let closure_8 = { x: 1, y: 1 };
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { width: require("_createForOfIteratorHelperLoose").modules.mobile.TABLE_ROW_ICON_SIZE, height: require("_createForOfIteratorHelperLoose").modules.mobile.TABLE_ROW_ICON_SIZE, borderRadius: require("_createForOfIteratorHelperLoose").radii.round, alignItems: "center", justifyContent: "center", overflow: "hidden" };
-_createForOfIteratorHelperLoose.iconTile = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+createCacheKey = { iconTile: null };
+createCacheKey = { width: require("Themes").modules.mobile.TABLE_ROW_ICON_SIZE, height: require("Themes").modules.mobile.TABLE_ROW_ICON_SIZE, borderRadius: require("Themes").radii.round, alignItems: "center", justifyContent: "center", overflow: "hidden" };
+createCacheKey[0] = createCacheKey;
+createCacheKey = createCacheKey.createStyles(createCacheKey);
 const result = require("jsxProd").fileFinishedImporting("modules/premium_marketing/native/components/BuyNitroPerk.tsx");
 
 export default function BuyNitroPerk(perk) {
@@ -32,26 +32,27 @@ export default function BuyNitroPerk(perk) {
   perk = perk.perk;
   const onOpenDetails = perk.onOpenDetails;
   ({ selectedTier, start, end } = perk);
-  let tmp2 = !perk.disabled;
-  if (tmp2) {
+  const disabled = perk.disabled;
+  let tmp2 = !disabled;
+  if (!disabled) {
     tmp2 = null != perk.detail;
   }
-  let obj = { label: perk.label, subLabel: perk.subLabel, disabled: perk.disabled };
-  obj = { style: _createForOfIteratorHelperLoose().iconTile };
+  let obj = { label: perk.label, subLabel: perk.subLabel, disabled: perk.disabled, icon: null, arrow: null, onPress: null, start: null, end: null };
+  obj = { style: createCacheKey().iconTile, children: null };
   obj = { selectedTier, nitroColors: perk.iconGradient, basicColors: perk.iconGradientBasic, start: closure_7, end: closure_8, style: absoluteFill.absoluteFill };
-  const items = [callback(onOpenDetails(6654), obj), ];
-  const tmp = _createForOfIteratorHelperLoose();
+  const items = [callback(onOpenDetails(6675), obj), ];
+  const tmp = createCacheKey();
   const tmp4 = callback;
-  items[1] = callback(perk.IconComponent, { size: "sm", color: onOpenDetails(689).colors.WHITE });
-  obj.children = items;
-  obj.icon = callback2(closure_4, obj);
-  obj.arrow = tmp2;
+  items[1] = callback(perk.IconComponent, { size: "sm", color: onOpenDetails(712).colors.WHITE });
+  obj[1] = items;
+  obj[3] = callback2(closure_4, obj);
+  obj[4] = tmp2;
   let fn;
   if (tmp2) {
     fn = () => onOpenDetails(perk);
   }
-  obj.onPress = fn;
-  obj.start = start;
-  obj.end = end;
-  return tmp4(perk(5198).TableRow, obj);
+  obj[5] = fn;
+  obj[6] = start;
+  obj[7] = end;
+  return tmp4(perk(5220).TableRow, obj);
 };

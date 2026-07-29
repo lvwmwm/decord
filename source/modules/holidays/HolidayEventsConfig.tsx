@@ -1,9 +1,9 @@
-// Module ID: 16173
-// Function ID: 125181
-// Name: useIsExperimentEligible
-// Dependencies: [10252, 1212, 16174, 16175, 1334, 2]
+// Module ID: 16208
+// Function ID: 16209
+// Name: HolidayEmojiAnimationType
+// Dependencies: [10273, 1236, 16209, 16210, 1358, 2]
 
-// Module 16173 (useIsExperimentEligible)
+// Module 16208 (HolidayEmojiAnimationType)
 let obj = {
   experiment: null,
   useIsExperimentEligible() {
@@ -16,12 +16,14 @@ let obj = {
   endTimeMs: 1767632400000,
   isDesktopOnly: true,
   soundpack: require("Soundpacks").Soundpacks.WINTER_HOLIDAY,
-  soundpackLabel: require("getSystemLocale").t.Z5OQNp
+  soundpackLabel: require("getSystemLocale").t.Z5OQNp,
+  appSpinnerSources: null,
+  coachmarkDismissibleContent: null,
+  coachmarkBackgroundColor: "#1170ed"
 };
 obj = { webmDark: require("registerAsset"), webmLight: require("registerAsset") };
-obj.appSpinnerSources = obj;
-obj.coachmarkDismissibleContent = require("DismissibleContent").DismissibleContent.HOLIDAY_COACHMARK_WINTER_2025;
-obj.coachmarkBackgroundColor = "#1170ed";
+obj[8] = obj;
+obj[9] = require("DismissibleContent").DismissibleContent.HOLIDAY_COACHMARK_WINTER_2025;
 const result = require("registerAsset").fileFinishedImporting("modules/holidays/HolidayEventsConfig.tsx");
 
 export default obj;

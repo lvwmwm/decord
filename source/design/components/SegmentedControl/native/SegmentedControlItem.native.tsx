@@ -1,40 +1,35 @@
-// Module ID: 8732
-// Function ID: 69120
+// Module ID: 8756
+// Function ID: 8757
 // Name: SegmentedControlItem
-// Dependencies: [31, 27, 33, 4165, 689, 8094, 4026, 4577, 477, 1212, 4161, 2]
+// Dependencies: [19, 17, 21, 4189, 712, 8118, 4050, 4599, 500, 1236, 4185, 2]
 // Exports: SegmentedControlItem
 
-// Module 8732 (SegmentedControlItem)
-import "result";
+// Module 8756 (SegmentedControlItem)
+import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
+import createCacheKey from "createCacheKey";
 
-let closure_3;
-let closure_4;
-let closure_5;
+let c3;
+let c4;
+let c5;
 let closure_6;
 const require = arg1;
-({ Pressable: closure_3, View: closure_4 } = get_ActivityIndicator);
-({ jsx: closure_5, jsxs: closure_6 } = jsxProd);
+({ Pressable: c3, View: c4 } = get_ActivityIndicator);
+({ jsx: c5, jsxs: closure_6 } = jsxProd);
 let closure_7 = { mass: 0.3, damping: 13, stiffness: 250, overshootClamping: true };
-let closure_8 = _createForOfIteratorHelperLoose.createStyles((arg0) => {
-  let obj = {};
-  obj = { borderRadius: importDefault(689).radii.lg };
+let closure_8 = createCacheKey.createStyles((arg0) => {
+  const item = { borderRadius: importDefault(712).radii.lg, paddingVertical: null, flexDirection: "row", justifyContent: "center" };
   let num = 8;
   if ("experimental_Small" === arg0) {
     num = 4;
   }
-  obj.paddingVertical = num;
-  obj.flexDirection = "row";
-  obj.justifyContent = "center";
-  obj.item = obj;
-  obj.label = { flexDirection: "column", alignItems: "center", gap: 8 };
-  return obj;
+  item[1] = num;
+  return { item, label: { flexDirection: "column", alignItems: "center", gap: 8 } };
 });
-_createForOfIteratorHelperLoose = { inactive: require("_createForOfIteratorHelperLoose").colors.TEXT_MUTED, active: require("_createForOfIteratorHelperLoose").colors.INTERACTIVE_TEXT_ACTIVE, pressed: require("_createForOfIteratorHelperLoose").colors.INTERACTIVE_TEXT_ACTIVE };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyleProperties(_createForOfIteratorHelperLoose);
+createCacheKey = { inactive: require("Themes").colors.TEXT_MUTED, active: require("Themes").colors.INTERACTIVE_TEXT_ACTIVE, pressed: require("Themes").colors.INTERACTIVE_TEXT_ACTIVE };
+createCacheKey = createCacheKey.createStyleProperties(createCacheKey);
 let closure_10 = { code: "function SegmentedControlItemNativeTsx1(){const{colors,pressed,index,activeIndex,withSpring,SPRING_CONFIG}=this.__closure;let color=colors.inactive;const isPressActive=pressed.get()>=0;const isPressed=pressed.get()===index;const isActive=Math.round(activeIndex.get())===index;if(isPressed){color=colors.pressed;}else if(isPressActive){color=colors.inactive;}else if(isActive){color=colors.active;}return{color:withSpring(color,SPRING_CONFIG,'animate-always')};}" };
 const result = require("jsxProd").fileFinishedImporting("design/components/SegmentedControl/native/SegmentedControlItem.native.tsx");
 
@@ -49,55 +44,59 @@ export const SegmentedControlItem = function SegmentedControlItem(index) {
   index = index.index;
   const pressed = index.pressed;
   const variant = index.variant;
-  const activeIndex = index.state.activeIndex;
+  let activeIndex;
+  let c3;
+  activeIndex = index.state.activeIndex;
   ({ label, itemCount, icon, onPress, onPressIn, onPressOut, style } = index);
-  let tmp = callback(variant);
-  const tmp2 = _createForOfIteratorHelperLoose();
-  let closure_3 = tmp2;
+  const tmp = callback(variant);
+  let tmp2 = createCacheKey();
+  c3 = tmp2;
   let obj = index(activeIndex[5]);
   const derivedStateFromSharedValue = obj.useDerivedStateFromSharedValue(activeIndex, (arg0) => ({ selected: arg0 === index }));
   let obj1 = index(activeIndex[6]);
   const fn = function b() {
-    let active = tmp2.inactive;
+    let active = _undefined.inactive;
     const value = pressed.get();
     if (value === index) {
-      active = tmp2.pressed;
-    } else if (tmp) {
-      active = tmp2.inactive;
-    } else if (tmp4 === tmp3) {
-      active = tmp2.active;
+      active = tmp.pressed;
+    } else if (tmp2) {
+      active = tmp.inactive;
+    } else if (tmp5 === tmp4) {
+      active = tmp.active;
     }
-    const obj = {};
-    tmp = pressed.get() >= 0;
-    tmp3 = index;
-    obj.color = index(activeIndex[7]).withSpring(active, outer1_7, "animate-always");
+    const obj = { color: null };
+    tmp2 = pressed.get() >= 0;
+    tmp4 = index;
+    obj[0] = index(activeIndex[7]).withSpring(active, outer1_7, "animate-always");
     return obj;
   };
   obj = { colors: tmp2, pressed, index, activeIndex, withSpring: index(activeIndex[7]).withSpring, SPRING_CONFIG: closure_7 };
   fn.__closure = obj;
   fn.__workletHash = 9369301431547;
   fn.__initData = closure_10;
-  obj = { style: items, onPress, onPressIn, onPressOut, accessibilityRole: "tab", accessibilityState: derivedStateFromSharedValue };
+  obj = { style: items, onPress, onPressIn, onPressOut, accessibilityRole: "tab", accessibilityState: derivedStateFromSharedValue, accessibilityHint: null, children: null };
   items = [tmp.item, style];
   const animatedStyle = obj1.useAnimatedStyle(fn);
   let formatToPlainStringResult;
   if (obj5.isAndroid()) {
-    const intl = index(activeIndex[9]).intl;
-    obj1 = { position: index + 1, tabCount: itemCount };
-    formatToPlainStringResult = intl.formatToPlainString(index(activeIndex[9]).t["4EsQA1"], obj1);
+    const intl = tmp3(tmp4[9]).intl;
+    obj1 = { position: null, tabCount: null };
+    obj1[0] = index + 1;
+    obj1[1] = itemCount;
+    formatToPlainStringResult = intl.formatToPlainString(tmp3(tmp4[9]).t["4EsQA1"], obj1);
   }
-  obj.accessibilityHint = formatToPlainStringResult;
-  const obj2 = { style: tmp.label };
+  obj[6] = formatToPlainStringResult;
+  const obj2 = { style: tmp.label, children: null };
   const items1 = [icon, ];
-  const obj3 = { animated: true, variant: "text-sm/semibold", style: animatedStyle, lineClamp: 1 };
-  let num3;
+  const obj3 = { animated: true, variant: "text-sm/semibold", style: animatedStyle, lineClamp: 1, maxFontSizeMultiplier: null, children: null };
+  let num2;
   if ("experimental_Large" === variant) {
-    num3 = 1.5;
+    num2 = 1.5;
   }
-  obj3.maxFontSizeMultiplier = num3;
-  obj3.children = label;
+  obj3[4] = num2;
+  obj3[5] = label;
   items1[1] = closure_5(index(activeIndex[10]).Text, obj3);
-  obj2.children = items1;
-  obj.children = closure_6(closure_4, obj2);
-  return closure_5(closure_3, obj);
+  obj2[1] = items1;
+  obj[7] = closure_6(closure_4, obj2);
+  return closure_5(c3, obj);
 };

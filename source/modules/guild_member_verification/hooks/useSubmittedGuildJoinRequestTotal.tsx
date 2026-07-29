@@ -1,23 +1,23 @@
-// Module ID: 15149
-// Function ID: 115205
+// Module ID: 15182
+// Function ID: 15183
 // Name: useSubmittedGuildJoinRequestTotal
-// Dependencies: [5696, 566, 2]
+// Dependencies: [5714, 589, 2]
 // Exports: useSubmittedGuildJoinRequestTotal
 
-// Module 15149 (useSubmittedGuildJoinRequestTotal)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 15182 (useSubmittedGuildJoinRequestTotal)
+import updateSubmittedGuildJoinRequestTotal from "updateSubmittedGuildJoinRequestTotal";
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/guild_member_verification/hooks/useSubmittedGuildJoinRequestTotal.tsx");
 
 export const useSubmittedGuildJoinRequestTotal = function useSubmittedGuildJoinRequestTotal(guildId) {
   guildId = guildId.guildId;
-  const items = [_isNativeReflectConstruct];
+  const items = [updateSubmittedGuildJoinRequestTotal];
   const items1 = [guildId];
-  return guildId(566).useStateFromStores(items, () => {
+  return guildId(589).useStateFromStores(items, () => {
     let submittedGuildJoinRequestTotal;
     if (null != guildId) {
-      submittedGuildJoinRequestTotal = outer1_2.getSubmittedGuildJoinRequestTotal(guildId);
+      submittedGuildJoinRequestTotal = outer1_2.getSubmittedGuildJoinRequestTotal(tmp);
     }
     return submittedGuildJoinRequestTotal;
   }, items1);

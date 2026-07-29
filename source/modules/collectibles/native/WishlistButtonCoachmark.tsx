@@ -1,57 +1,60 @@
-// Module ID: 14591
-// Function ID: 111281
+// Module ID: 14616
+// Function ID: 14617
 // Name: WishlistButtonCoachmark
-// Dependencies: [57, 31, 1345, 8643, 1334, 8417, 14589, 1212, 8406, 2]
+// Dependencies: [32, 19, 1369, 8667, 1358, 8441, 14614, 1236, 8430, 2]
 // Exports: default
 
-// Module 14591 (WishlistButtonCoachmark)
+// Module 14616 (WishlistButtonCoachmark)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
+import noop from "noop";
 import { ContentDismissActionType } from "ContentDismissActionType";
 
 const require = arg1;
 const result = require("ContentDismissActionType").fileFinishedImporting("modules/collectibles/native/WishlistButtonCoachmark.tsx");
 
 export default function WishlistButtonCoachmark(anchorRef) {
-  hasNeverWishlisted = hasNeverWishlisted(8643).useHasNeverWishlisted();
+  let hasNeverWishlisted;
+  let dependencyMap;
+  let callback;
+  let registerDismiss;
+  hasNeverWishlisted = hasNeverWishlisted(8667).useHasNeverWishlisted();
   let items = [hasNeverWishlisted];
   const memo = registerDismiss.useMemo(() => {
     if (hasNeverWishlisted) {
-      const items = [hasNeverWishlisted(tmp4[4]).DismissibleContent.WISHLIST_MOBILE_NUX_PRODUCT_CARD_COACHMARK];
+      const items = [hasNeverWishlisted(_undefined[4]).DismissibleContent.WISHLIST_MOBILE_NUX_PRODUCT_CARD_COACHMARK];
       let items1 = items;
     } else {
       items1 = [];
     }
     return items1;
   }, items);
-  let obj = hasNeverWishlisted(8643);
-  const tmp3 = callback(hasNeverWishlisted(8417).useSelectedDismissibleContent(memo), 2);
-  const dependencyMap = tmp4;
-  const tmp5 = tmp3[0] === hasNeverWishlisted(1334).DismissibleContent.WISHLIST_MOBILE_NUX_PRODUCT_CARD_COACHMARK;
+  let obj = hasNeverWishlisted(8667);
+  const tmp3 = callback(hasNeverWishlisted(8441).useSelectedDismissibleContent(memo), 2);
+  dependencyMap = tmp4;
+  const tmp5 = tmp3[0] === hasNeverWishlisted(1358).DismissibleContent.WISHLIST_MOBILE_NUX_PRODUCT_CARD_COACHMARK;
   callback = tmp5;
-  const obj2 = hasNeverWishlisted(8417);
-  registerDismiss = hasNeverWishlisted(14589).useCollectiblesCoachmarkScrollDismissContext().registerDismiss;
+  const obj2 = hasNeverWishlisted(8441);
+  registerDismiss = hasNeverWishlisted(14614).useCollectiblesCoachmarkScrollDismissContext().registerDismiss;
   let items1 = [tmp5, registerDismiss, tmp3[1]];
   const effect = registerDismiss.useEffect(() => {
-    if (_slicedToArray) {
-      return registerDismiss(() => outer1_1(outer2_4.INDIRECT_ACTION));
+    if (c2) {
+      return registerDismiss(() => callback(outer1_4.INDIRECT_ACTION));
     }
   }, items1);
   const items2 = [tmp5, tmp3[1]];
   const memo1 = registerDismiss.useMemo(() => {
-    const obj = {};
-    const intl = hasNeverWishlisted(tmp4[7]).intl;
-    obj.title = intl.string(hasNeverWishlisted(tmp4[7]).t["47Rhc3"]);
-    const intl2 = hasNeverWishlisted(tmp4[7]).intl;
-    obj.description = intl2.string(hasNeverWishlisted(tmp4[7]).t.PXjA0b);
-    obj.position = "top";
-    obj.visible = _slicedToArray;
-    obj.onDismiss = function onDismiss() {
-      return outer1_1(outer2_4.USER_DISMISS);
+    const obj = { title: null, description: null, position: "top", visible: null, onDismiss: null };
+    const intl = hasNeverWishlisted(_undefined[7]).intl;
+    obj[0] = intl.string(hasNeverWishlisted(_undefined[7]).t["47Rhc3"]);
+    const intl2 = hasNeverWishlisted(_undefined[7]).intl;
+    obj[1] = intl2.string(hasNeverWishlisted(_undefined[7]).t.PXjA0b);
+    obj[3] = c2;
+    obj[4] = function onDismiss() {
+      return callback(outer1_4.USER_DISMISS);
     };
     return obj;
   }, items2);
-  const obj3 = hasNeverWishlisted(14589);
-  const coachmark = hasNeverWishlisted(8406).useCoachmark(anchorRef.anchorRef, memo1);
+  const obj3 = hasNeverWishlisted(14614);
+  const coachmark = hasNeverWishlisted(8430).useCoachmark(anchorRef.anchorRef, memo1);
   return null;
 };

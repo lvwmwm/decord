@@ -1,23 +1,23 @@
-// Module ID: 11961
-// Function ID: 92404
+// Module ID: 11985
+// Function ID: 11986
 // Name: useShouldShowMutualInfo
-// Dependencies: [1850, 566, 11962, 2]
+// Dependencies: [1874, 589, 11986, 2]
 // Exports: default
 
-// Module 11961 (useShouldShowMutualInfo)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 11985 (useShouldShowMutualInfo)
+import mergeGuildAvatar from "mergeGuildAvatar";
 
 const require = arg1;
 const result = require("useIsUserProfileObfuscated").fileFinishedImporting("modules/user_profile/hooks/useShouldShowMutualInfo.tsx");
 
 export default function useShouldShowMutualInfo(id) {
+  const items = [mergeGuildAvatar];
+  const stateFromStores = require(589) /* initialize */.useStateFromStores(items, () => currentUser.getCurrentUser());
   id = undefined;
-  const items = [_isNativeReflectConstruct];
-  const stateFromStores = require(566) /* initialize */.useStateFromStores(items, () => outer1_3.getCurrentUser());
-  const obj = require(566) /* initialize */;
-  if (null != stateFromStores) {
+  const obj = require(589) /* initialize */;
+  if (stateFromStores != null) {
     id = stateFromStores.id;
   }
-  const tmp3 = importDefault(11962)(id);
-  return id !== id.id && !importDefault(11962)(id);
+  const tmp2 = importDefault(11986)(id);
+  return id !== id.id && !importDefault(11986)(id);
 };

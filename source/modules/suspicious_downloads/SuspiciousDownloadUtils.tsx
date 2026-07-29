@@ -1,28 +1,28 @@
-// Module ID: 12262
-// Function ID: 95680
+// Module ID: 7906
+// Function ID: 7907
 // Name: set
-// Dependencies: [12263, 1443, 2]
+// Dependencies: [7907, 1467, 2]
 // Exports: isSuspiciousDownload
 
-// Module 12262 (set)
+// Module 7906 (set)
 import set from "set";
 
-let set = new Set(require("module_12263"));
-let obj = {};
+let set = new Set(require("module_7907"));
+let obj = { "github.com": null, "bitbucket.org": null, "gitlab.com": null };
 const regExp = new RegExp("/releases\\S*/download|archive/refs/\\S*|/i/raw/i/\\S*|/user-attachments\\S*");
-obj["github.com"] = regExp;
+obj[0] = regExp;
 const regExp1 = new RegExp("/downloads\\S*/[^/]*");
-obj["bitbucket.org"] = regExp1;
+obj[1] = regExp1;
 const regExp2 = new RegExp("/downloads\\S*/[^/]*");
-obj["gitlab.com"] = regExp2;
+obj[2] = regExp2;
 const result = set.fileFinishedImporting("modules/suspicious_downloads/SuspiciousDownloadUtils.tsx");
 
-export const isSuspiciousDownload = function isSuspiciousDownload(outer1_0) {
+export const isSuspiciousDownload = function isSuspiciousDownload(localUri) {
   let hostname;
   let pathname;
-  const obj = importDefault(1443);
-  let toURLSafeResult = obj.toURLSafe(outer1_0);
-  if (null == toURLSafeResult) {
+  const obj = importDefault(1467);
+  let toURLSafeResult = obj.toURLSafe(localUri);
+  if (toURLSafeResult == null) {
     toURLSafeResult = {};
   }
   ({ pathname, hostname } = toURLSafeResult);
@@ -39,91 +39,61 @@ export const isSuspiciousDownload = function isSuspiciousDownload(outer1_0) {
     if (null == pathname) {
       return null;
     } else {
-      const _decodeURIComponent = decodeURIComponent;
-      const str6 = decodeURIComponent(pathname);
-      while (true) {
-        let tmp4 = str6;
-        let str = "/";
-        let parts = str6.split("/");
-        let tmp6 = null;
-        let num = 0;
-        let num2 = 0;
+      try {
+        const _decodeURIComponent = decodeURIComponent;
+        const str = decodeURIComponent(pathname);
+        const parts = str.split("/");
         let diff = parts.length - 1;
-        let tmp8 = diff;
-        let str2 = "..";
-        let str3 = ".";
-        let str4 = "";
-        if (diff < 0) {
-          break;
-        } else {
+        let tmp4 = null;
+        let num3 = 0;
+        if (0 <= diff) {
           while (true) {
-            let tmp9 = parts;
-            let tmp10 = tmp8;
-            let tmp11 = tmp5[tmp8];
-            let tmp12 = tmp11;
-            if ("" !== tmp11) {
-              let tmp13 = tmp11;
-              if ("." !== tmp12) {
-                let tmp14 = tmp11;
-                if (".." !== tmp12) {
+            let tmp5 = parts[diff];
+            let tmp6 = diff;
+            let tmp7 = num3;
+            let sum = num3;
+            if ("" !== tmp5) {
+              sum = num3;
+              if ("." !== tmp5) {
+                if (".." !== tmp5) {
                   break;
                 } else {
-                  let tmp15 = num2;
-                  num2 = num2 + 1;
+                  sum = num3 + 1;
                 }
               }
-              break label0;
             }
-            let tmp16 = tmp8;
-            let diff1 = tmp8 - 1;
-            tmp8 = diff1;
-            if (diff1 >= 0) {
-              continue;
-            } else {
-              break label0;
-            }
-            break label0;
+            diff = diff - 1;
+            num3 = sum;
+            tmp4 = null;
           }
-          let tmp18 = num2;
-          let tmp19 = tmp8;
-          if (num2 > tmp8) {
-            break;
-          } else {
-            tmp6 = parts[tmp8 - num2];
-            break;
+          tmp4 = null;
+          if (diff >= num3) {
+            tmp4 = parts[diff - num3];
           }
         }
-        let tmp20 = tmp6;
-        if (null == tmp6) {
+        if (null == tmp4) {
           return null;
         } else {
-          let tmp21 = tmp6;
-          let parts1 = tmp6.split(".");
-          let arr3 = parts1;
-          let num3 = 2;
+          const parts1 = tmp4.split(".");
           if (parts1.length < 2) {
             return null;
           } else {
-            let tmp22 = parts1;
-            let arr = arr3.pop();
-            let str5 = arr;
+            const str6 = parts1.pop();
             let formatted;
-            if (null != arr) {
-              let tmp25 = arr;
-              formatted = str5.toLowerCase();
+            if (str6 != null) {
+              formatted = str6.toLowerCase();
             }
-            let tmp27 = null;
+            let tmp10 = null;
             if (null != formatted) {
-              let tmp28 = set;
-              let tmp29 = formatted;
-              tmp27 = null;
-              if (set.has(tmp26)) {
-                tmp27 = formatted;
+              tmp10 = null;
+              if (set.has(formatted)) {
+                tmp10 = formatted;
               }
             }
-            return tmp27;
+            return tmp10;
           }
         }
+      } catch (err) {
       }
     }
   }

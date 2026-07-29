@@ -1,20 +1,15 @@
-// Module ID: 4095
-// Function ID: 33948
-// Name: items
-// Dependencies: [653, 4077, 4096, 2]
+// Module ID: 4119
+// Function ID: 4120
+// Name: experiment
+// Dependencies: [676, 4101, 4120, 2]
 // Exports: getServerThemeEnabled, useServerThemeEnabled
 
-// Module 4095 (items)
+// Module 4119 (experiment)
 import { EMPTY_STRING_SNOWFLAKE_ID } from "ME";
 import createExperiment from "createExperiment";
 
-let obj = { kind: "guild", id: "2026-04_server_theme", label: "Server Theme", defaultConfig: { enabled: false, inExperiment: false, gatesApex: false } };
-obj = { id: 0, label: "Control", config: { enabled: false, inExperiment: true, gatesApex: false } };
-const items = [obj, ];
-const obj1 = { id: 1, label: "Enable Server Theme", config: { enabled: true, inExperiment: true, gatesApex: false } };
-items[1] = obj1;
-obj.treatments = items;
-let experiment = createExperiment.createExperiment(obj);
+const items = [{ id: 0, label: "Control", config: { enabled: false, inExperiment: true, gatesApex: false } }, { id: 1, label: "Enable Server Theme", config: { enabled: true, inExperiment: true, gatesApex: false } }];
+let experiment = createExperiment.createExperiment({ kind: "guild", id: "2026-04_server_theme", label: "Server Theme", defaultConfig: { enabled: false, inExperiment: false, gatesApex: false }, treatments: items });
 const result = require("apexExperiment").fileFinishedImporting("modules/premium/powerups/experiments/ServerThemeExperiment.tsx");
 
 export const ServerThemeExperiment = experiment;
@@ -23,18 +18,17 @@ export const getServerThemeEnabled = function getServerThemeEnabled(guildId, Gui
   const currentConfig = experiment.getCurrentConfig(obj, { autoTrackExposure: false });
   let enabled = currentConfig.enabled;
   if (null != guildId) {
-    const ServerThemeApexShadowExperiment = require(4096) /* apexExperiment */.ServerThemeApexShadowExperiment;
-    obj = { guildId, location: GuildPowerupsConstants };
+    const ServerThemeApexShadowExperiment = require(4120) /* apexExperiment */.ServerThemeApexShadowExperiment;
+    obj = { guildId: null, location: null };
+    obj[0] = guildId;
+    obj[1] = GuildPowerupsConstants;
     let config = ServerThemeApexShadowExperiment.getConfig(obj);
   } else {
     config = { enabled: false, gatesApex: false };
   }
   if (!currentConfig.inExperiment) {
-    let tmp6 = !tmp5;
-    if (!!config.gatesApex) {
-      tmp6 = tmp4;
-    }
-    enabled = tmp6;
+    enabled = config.gatesApex && tmp4;
+    const tmp5 = config.gatesApex && tmp4;
   }
   return enabled;
 };
@@ -42,23 +36,18 @@ export const useServerThemeEnabled = function useServerThemeEnabled(guildId, use
   let obj = { guildId, location: useGuildPowerupNewPerkMarketingVersion };
   experiment = experiment.useExperiment(obj, { autoTrackExposure: false });
   let enabled = experiment.enabled;
-  const ServerThemeApexShadowExperiment = require(4096) /* apexExperiment */.ServerThemeApexShadowExperiment;
-  obj = {};
+  const ServerThemeApexShadowExperiment = require(4120) /* apexExperiment */.ServerThemeApexShadowExperiment;
   let tmp2 = guildId;
-  if (null == guildId) {
+  if (guildId == null) {
     tmp2 = EMPTY_STRING_SNOWFLAKE_ID;
   }
-  obj.guildId = tmp2;
-  obj.location = useGuildPowerupNewPerkMarketingVersion;
+  obj = { guildId: tmp2, location: useGuildPowerupNewPerkMarketingVersion };
   const config = ServerThemeApexShadowExperiment.useConfig(obj);
   if (!experiment.inExperiment) {
     let tmp6 = null != guildId;
     if (tmp6) {
-      let tmp8 = !tmp7;
-      if (!!tmp5) {
-        tmp8 = tmp4;
-      }
-      tmp6 = tmp8;
+      tmp6 = tmp5 && tmp4;
+      const tmp7 = tmp5 && tmp4;
     }
     enabled = tmp6;
   }
